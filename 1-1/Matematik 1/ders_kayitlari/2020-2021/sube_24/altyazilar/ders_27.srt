@@ -1,0 +1,1315 @@
+1
+00:01:04,019 --> 00:01:06,879
+Merhaba arkadaşlar. Ses geliyor mu?
+
+2
+00:01:09,359 --> 00:01:10,399
+Geliyor hocam.
+
+3
+00:01:10,939 --> 00:01:11,799
+Merhaba hocam, geliyor.
+
+4
+00:01:14,879 --> 00:01:23,419
+Nasılsınız, iyi misiniz? İyisiniz inşallah. Evet, bu hafta son haftamız. Dönemimizi bitiriyoruz hayırlısıyla.
+
+5
+00:01:24,115 --> 00:01:32,775
+Evet, en son genelleştirilmiş integralde kalmıştık. Yüzey alanını verdik, yay uzunluğu, hacimi onları konuşmuştuk arkadaşlar.
+
+6
+00:01:33,456 --> 00:01:39,096
+Şimdi genelleştirilmiş integral ya da diğer bir adıyla improbile integraller diyoruz bunlara da.
+
+7
+00:01:39,596 --> 00:01:46,715
+Bildiğimiz aslında bir tek biraz farklılık olacak. Yoksa gene yani belirli integral hesaplamış gibi olacağız. Çok da zor değil.
+
+8
+00:01:47,219 --> 00:02:10,199
+Ama dediğim, yani geçen derse de konuştuk, son işlenen konulardan finalde ille sorular çıkacaktır. Yani alandır, yay uzunlu, yüzey alanı, improper integraller karşımıza çıkması gerekir. Yani %99 sormaları gerekir. Çünkü sorulmamış konular. Onun için son haftalarda öğrenciler pek dikkat etmiyorlar ama biraz dikkat etmemiz gerekir.
+
+9
+00:02:11,199 --> 00:02:13,039
+Evet, başlayalım mı? Bekleyelim mi?
+
+10
+00:02:14,963 --> 00:02:34,144
+Geçen haftaki pdf'i atacağım arkadaşlar. Hatta bugün olmadı. Size whatsapp'tan buradan da chatten atarım. Diğer bölüme bitirdiğimde avasisi hepsini yükleyeceğim zaten. Bugün de atabilirim size. Tamam mı? Evet, başka var mı soracağınız yoksa konuya geçelim.
+
+11
+00:02:35,524 --> 00:02:40,103
+Bugün zaten çok az bir konu kaldı arkadaşlar. Biraz işleyeceğim.
+
+12
+00:02:40,563 --> 00:02:43,603
+Yani 1 saate yakın bir ders yapacağım. Bir de yarın.
+
+13
+00:02:43,984 --> 00:03:00,124
+işte yüzey alanlarıyla ilgili hacim ve yay uzunluğuyla ilgili birkaç tane de soru çözmek istiyorum. Yarın öylece dersi bitirmiş oluruz. Yoksa bugün aslında hepsini bitirmiş olabiliriz ama yarın da dersimiz var. Öyle olsun. Tamam mı arkadaşlar?
+
+14
+00:03:00,744 --> 00:03:07,184
+Evet, şimdi başlık olarak genelleştirilmiş integraller dedik. Diğer bir adıyla improbile integraller diye de geçer.
+
+15
+00:03:11,984 --> 00:03:23,884
+işleyeceğiz. 2. tipi, improf, integral. 1. tip de 3 şekilde karşımıza çıkacaktır. Eğer diyoruz ki, 1. durumda, fx fonksiyonu, a kapalı, sonsuz aralığında sürekli ise,
+
+16
+00:03:24,372 --> 00:03:26,592
+Böyle bir integrali şöyle ifade ederiz.
+
+17
+00:03:26,652 --> 00:03:29,952
+Integral A'dan sonsuza kadar fx'de x şeklinde.
+
+18
+00:03:30,432 --> 00:03:34,412
+İşte bize söyleseler böyle bir integrali hesaplayın dediğimizde
+
+19
+00:03:34,412 --> 00:03:42,492
+diyeceğim ki bu fonksiyon yani fx fonksiyonu A ile sonsuz aralığında sürekli ama üst sınırında sonsuz olduğu için
+
+20
+00:03:42,492 --> 00:03:49,352
+sadece yani fonksiyon sonsuzda süreksiz olduğu için bunu ben birinci tip impropri integraller diyeceğim.
+
+21
+00:03:49,352 --> 00:03:51,352
+Bunu da hesaplarken şöyle diyoruz.
+
+22
+00:03:52,372 --> 00:04:12,172
+R'de, B'de fark etmez. Örneğin bakın, şunu kabaca böyle bir çizmiş olsak, şöyle bir eğri bakın. x'ı A'dan sonsuza doğru giden bir eğri. Bunun alanını hesapladığını varsayarsan dersin ki işte A'dan şurada bir tane kestin diyelim. B'de, R'de hiç fark etmez. İşte bunu belirli integral şeklinde hesaplayabilmek için.
+
+23
+00:04:12,659 --> 00:04:40,500
+Limit, R sonsuza giderken burada B demişiz. Bazı kitaplarda B de görebilirsiniz. Biz burada R'yi kullanmışız. İstediğim sembolü kullan. Hiç önemli değil, limit, R sonsuza giderken diyeceğiz ki integral işte sıfırdan R'ye kadar fx'de 2 şeklinde hesaplayacağız. Ne yapacağım? Limit önce görmeyeceğim. Sıfırdan R'ye kadar şu belirli integral hesaplarım. Sonra da limitini aldıktan sonra bu belli bir değer çıkarsa integral yakın saklayacağım.
+
+24
+00:04:40,660 --> 00:05:05,840
+x kare artı 2x, f'se de raksak diyeceğim. İşte tekrar söylersek, bu sadece fonksiyon üst sınırında sonsuz olduğu için biz buna birinci tipi proper integral diyeceğiz. Bunu da hesaplarken diyoruz ki limit diyoruz. R sonsuza giderken, işte sıfırdan R'ye kadar şöyle bir belirli integral gibi yazıp hesaplayacağız. Sonra da limitini aldıktan sonra yakınsak mı, raksak mı olduğunu söyleyeceğiz. Bir de şöyle çıkabilir karşımıza.
+
+25
+00:05:06,836 --> 00:05:24,776
+Eğer fx olsun, bu sefer eksi sonsuzla a aralığında sürekliyse, o zaman, hocam a'dan değil mi? Evet, a'dan. Şu a sıfır mı dedim? Evet hocam sıfır dediniz. A'dan sonsuza kadar.
+
+26
+00:05:26,483 --> 00:05:33,704
+Aralığım a, sıfır da olabilir fark etmez ama genel tanım verdiğime göre sıfır dediysem özür dilerim, farkında değilim.
+
+27
+00:05:33,723 --> 00:05:35,663
+Yok hocam ben kural olarak anladım.
+
+28
+00:05:36,343 --> 00:05:37,524
+Kural olarak sıfırdan aldım.
+
+29
+00:05:37,524 --> 00:05:40,103
+A ile sonsuz aralığında bir fx fonksiyonu verilmiş.
+
+30
+00:05:40,503 --> 00:05:48,003
+Fonksiyon bu aralıkta sürekli sadece uç noktasında süreksiz yani sonsuzda süreksiz olduğu için diyorum ki bunun adı birinci tip impropri integral.
+
+31
+00:05:48,003 --> 00:05:52,824
+Zaten birinci tip impropri integral ben buradayım der tanırsın yani hiçbir problem yok.
+
+32
+00:05:53,123 --> 00:05:54,483
+Ya alt sınırda sonsuz olur.
+
+33
+00:05:54,483 --> 00:05:58,264
+yüce 3x, f'nin ısırında sonsuz olur. O zaman bunları da hesaplarken
+
+34
+00:05:58,836 --> 00:06:25,735
+Diyoruz ki limit, R, D, B de hiç önemli değil. Limit, R sonsuza giderken diyoruz, integral A'dan R'ye kadar fx'de x. Böyle bir A'dan R'ye kadar belirli integralı bildiğimiz kurallarla hesaplarız. Hesapladıktan sonra limitini alırız. Sonuç belli bir değer çıkarsa, yakınsa, değilse de ıraksaktır diyoruz. Tekrar diyorum A dedim. Yani sıfır da denebilir ama örnekler de karşımıza çıkar. Tanım verdiğim için A demeliyim.
+
+35
+00:06:26,836 --> 00:06:30,456
+İkinci durumda da ne olabilir? Alt sınırında sonsuzluk olabilir.
+
+36
+00:06:30,636 --> 00:06:35,596
+Yani bunu da ifade ederken fx diyoruz ki eksi sonsuzluğa a aralığında sürekli bir fonksiyon.
+
+37
+00:06:35,675 --> 00:06:42,615
+Yani aralık da sürekli sadece şu sol uç noktada süreksiz olduğu için bu da benim için birinci tip impropi integral.
+
+38
+00:06:42,615 --> 00:06:44,896
+Bunu da bir integral olarak şöyle diyeceğiz.
+
+39
+00:06:45,016 --> 00:06:48,376
+İntegral eksi sonsuzdan a'ya kadar fx dx.
+
+40
+00:06:48,776 --> 00:06:50,156
+Bunu da yine baktık.
+
+41
+00:06:50,475 --> 00:06:54,216
+Fonksiyon sadece alt sınırında sonsuz olduğu için ne yapıyorum?
+
+42
+00:06:54,836 --> 00:07:22,136
+de geçiyorum. Limit, R, eksi sonsuza giderken integral R'den A'ya kadar fx'de x. İşte gene bu belirli integralı. Ben bir şekilde hesaplarım verilen neyse integral artık. Oradan çıkan sonuçta da R sonsuza giderken limitine bakarım. Sonlu bir değer çıkarsa yakınsak, değilse bıraksaktır diyeceğiz. Üçüncü bir tipte ne olabilir? Real eksende sürekli olabilir fonksiyon. Yani fx diyoruz eğer.
+
+43
+00:07:22,836 --> 00:07:31,776
+artı sonsuz aralığında sürekli ise, işte c'de herhangi bir real sayı olmak üzere, yani bana diyelim şöyle bir integral verildi.
+
+44
+00:07:31,956 --> 00:07:37,055
+İntegral eksi sonsuzdan artı sonsuza kadar fx'de eksi integralini hesapla diyor. Bakıyorum.
+
+45
+00:07:37,620 --> 00:08:05,620
+Önce fonksiyonu bu aralıkta süreksiz yapan hiçbir değeri yok. Sadece uç noktalarında sonsuz olduğu için diyorum ki bu gene birinci tip improfil integral. Bunu hesaplayabilmek için ne yapmam gerekir? Arada bir, çünkü süreksiz değil ya, arada bir noktada parçalayabilirim. Burada da c demiş olalım noktaya. Örneklerdeki yerine göre sıfırı kullanırım, bir kullanırım. Ya örneğine göre. Burada diyoruz ki herhangi bir c real sayısı olmak üzere ne yaptım? Bu integral.
+
+46
+00:08:05,620 --> 00:08:16,800
+integralı parçaladık toplanabilirdik özelliğinden. Integral eksi sonsuzdan c'ye kadar fx'de x diyorum. Artı c'den sonsuza kadar fx'de x. Şimdi ne yapacağız? Bunları hesaplamaya çalışıyorum.
+
+47
+00:08:17,259 --> 00:08:25,560
+Birinciye gelirsem buna baktım. Fonksiyonum nedir? Bakın alt sınırda eksi sonsuz olduğu için bu gene birinci tipi improfor integral'dir.
+
+48
+00:08:25,560 --> 00:08:33,559
+Onu da hesaplarken şu ikinci kuralı uygulayacağım değil mi? Diyeceğim ki limit R eksi sonsuza giderken integral R'den...
+
+49
+00:08:33,620 --> 00:08:35,539
+c'ye kadar fx, dx diyeceğim.
+
+50
+00:08:35,839 --> 00:08:36,480
+Artı
+
+51
+00:08:36,947 --> 00:08:45,067
+Sonra ikinciye geliyorum bakın ikinci de birinci de 2 gibi. Bu da sadece 3 sınırında sonsuz olduğu için gene birinci tipim proper integral'dir.
+
+52
+00:08:45,508 --> 00:08:53,807
+Gene R diyeceğim sonsuza kadar integral C'den R'ye kadar fx dx. İşte ne yapacağım? Önce şu belirli integralleri kurallarına göre hesaplarım.
+
+53
+00:08:53,807 --> 00:09:04,907
+Sonra limitini alırım. Her ikisi de belli değer çıkıyorsa yakınsak diyeceğim. Değilse raksaktır diyeceğim. Şuraya da yazdım. Bakın her bir durumda limit sonucu.
+
+54
+00:09:04,947 --> 00:09:10,647
+sonlu ise improper integraller yakınsaktır ve limit değeri integralin değeridir.
+
+55
+00:09:10,988 --> 00:09:16,427
+Eğer limit yoksa veya x artı sonsuz ise ıraksaktır diyeceğiz.
+
+56
+00:09:16,887 --> 00:09:21,248
+İşte bunlara biz birinci tip improper integral diyeceğiz arkadaşlar.
+
+57
+00:09:21,248 --> 00:09:22,008
+Tamam mı?
+
+58
+00:09:23,887 --> 00:09:27,407
+Şimdi o zaman şununla bir örnek verelim. Sonra ikinci tipi söyleyelim.
+
+59
+00:09:29,683 --> 00:09:31,543
+Bakın bir tane örneğimiz şu olsun.
+
+60
+00:09:31,943 --> 00:09:42,183
+y eşittir ln x bölü x kare eğrisi altında x eşittir birden x eşittir artı sonuçta kadar olan alanı hesaplayınız diyor.
+
+61
+00:09:42,772 --> 00:09:51,892
+Ne yapıyorum? Verilen ifadeyi hiç şekli bile çizmeme gerek yok. Aralığı da vermiş bana. I dedim integraline. Birden sonsuza kadar.
+
+62
+00:09:52,352 --> 00:09:58,712
+fx dx. Lmx böyle x kare dx. Şimdi yani şunu şöyle de yazabilirdim. Bu integralin sonucu nedir?
+
+63
+00:09:58,712 --> 00:10:00,000
+Veya bu integral yakın sağ.
+
+64
+00:10:00,000 --> 00:10:28,000
+bu kadar mıdır diye de bana sorabilirdi. Şimdi bakıyorum, verilen fonksiyon nedir? Lnx bölü x kare fonksiyonudur. Aralığımızda 1 ile sonsuz aralığında fonksiyon nedir? Süreklidir. Sadece üst sınırında süreksiz olduğu için sonsuzda. Bu yine diyorum ki bu birinci tip infokür integralı. Bunu hesaplarken yukarıda söylediğimiz gibi diyeceğim ki limit R sonsuza giderken integral 1'den R'ye kadar Lnx bölü x kare dx integral.
+
+65
+00:10:28,000 --> 00:10:43,000
+şeklinde ifade etmem gerekir. Arkadaşlar, burada R, D, M, B, D, A, D ne dersen de hiç önemli değil. Tamam, sembollere çok takılmıyoruz. Ama limitlemek zorundayım. Klasik bir sınav olsaydı arkadaşlar, çoğu öğrencinin yaptığı hata...
+
+66
+00:10:43,572 --> 00:11:11,512
+şu limiti söylemiyor. Bunu diyor ki ben nasıl hesapladım. Yani sonsuz şeklinde belirli integral gibi hesaplıyor. Sıfır puanla alıyor. Onun için amaç burada impropri integraldir. Bu mantıkla bu şeyle yazılması gerekir. Çünkü üst sınırında sonsuz olduğu için ne yapıyoruz? Burada limitle yaklaşıyoruz. O yüzden ne yapacaksın? Önce sen integral 1'den R'ye kadar ln x böyle x kare integralini bildiğin kurallı hesaplayıp en son limitini alacaksın. O zaman limitimiz şu.
+
+67
+00:11:11,572 --> 00:11:36,372
+kalsın. Biz diyoruz ki bu integralı nasıl hesaplarız? Dönüşüm yaparız mı? Ya da kısmı integrasyonu. Baktık. Ne yapacağım? Kısmı integrasyonu. Çünkü bu x olsaydı dönüşüm yapardım. Olmaz. O zaman ne yapıyorum? L'nx'e u diyeceğim. Geriye kalan dx bölü x kare de benim için dv olur. Pardon şurada. O zaman L'nx'in türevi ne olur? 1 bölü x. Yani dx bölü x de u diyeceğim.
+
+68
+00:11:36,847 --> 00:11:40,887
+1 bölü x karenin de integralini aldığımı düşünürsem o da ne olur?
+
+69
+00:11:41,047 --> 00:11:43,887
+x'i 1 bölü x'tir. Yani v'de x'i 1 bölü x olacak.
+
+70
+00:11:44,047 --> 00:11:46,427
+Kısmı integrasyonu uyguluyoruz. Geldim şuraya bakın.
+
+71
+00:11:46,527 --> 00:11:52,347
+Limit, R'e sonluza giderken, aç parantez, kısım integrasyon formülümüz neydi?
+
+72
+00:11:52,467 --> 00:11:58,927
+U çarpı ve x'i 1 bölü x, L'n x değil mi? Sınırım 1'den R'ye kadar.
+
+73
+00:11:59,344 --> 00:12:01,744
+eksi v çarpı
+
+74
+00:12:01,744 --> 00:12:03,124
+du diyeceğim. O da
+
+75
+00:12:03,124 --> 00:12:04,964
+formülden eksi artı olur.
+
+76
+00:12:05,104 --> 00:12:06,704
+Lnx pardon.
+
+77
+00:12:07,284 --> 00:12:07,744
+Pardon.
+
+78
+00:12:08,371 --> 00:12:18,731
+v çarpı b uçunu yapıyoruz. x artı oldu. İntegral birden R'ye kadar. dx bölü x kare olur. Değil mi? Şu. Kısmı integrasyonu uyguladım.
+
+79
+00:12:19,231 --> 00:12:29,031
+E şimdi limite bakın hiç dokunmuyorum. Parantezi açtım. Buradan üst sınır, x alt sınır diyorum. x gördüğüm yere R yazıyorum. x ln R bölü R.
+
+80
+00:12:29,488 --> 00:12:57,268
+x'i alt sınır diyeceğim. L'en 1, 0 olduğu için artık bir terim gelmez, 0 olur. Bitti yani şununla işin. Geldik şuraya. 1 bölü x karenin integralı zaten yukarıda söylemiştim. x'i 1 bölü x'ti değil mi? x'i 1 bölü x sınırım 1'den R'ye kadar. Yine bakın, integral'e dokunmuş, pardon, limite dokunmadım. Aç parantez diyorum. x'i L'en R bölü R'ye geldi. Şimdi şuradan 1 bölü x'e 3 sınırı yazarsam R'yi, x'i 1 bölü R.
+
+81
+00:12:57,488 --> 00:13:14,168
+eksi alt sınır, bir de şuradan eksi mi var? Artı olur, 1 gelir. Şu. Köşeli parantez. Şimdi işte bakın, integral hesaplamış olduk, belirli integrali. Köşeli parantezin içi, belirli integralin sonucu budur diyoruz. Ne yapıyoruz? Limit R'ye sonsuza giderken, limitine bakacağız şimdi bunun.
+
+82
+00:13:15,108 --> 00:13:22,307
+Şimdi buradan L'en R sonsuza giderken nedir? L'en sonsuz, sonsuzdur değil mi? Payda da sonsuza gidiyor. Burada ne var aslında?
+
+83
+00:13:23,475 --> 00:13:51,475
+sonsuz bölü sonsuz belirsizliği var arkadaşlar şurada. Onu bir kenarda halledip getir buraya da yazabilirsiniz. Ama biz şurada bakın göstermeye çalıştık. Yani bu sonsuz bölü sonsuz olduğu için hoptal uygularsam payın türevi, L'en R'nin türevine gelir. 1 bölü R. Paydanın türevi de 1'dir. Yani sonuçta 1 bölü R. R sonsuzda giderken nereye gitti? 0'a gitti. Yani şu belirsizliği giderdik. Değeri de nedir? 0'dır. Devam ediyoruz. 0-1 bölü R. Bu da R sonsuzda giderken.
+
+84
+00:13:51,475 --> 00:14:14,615
+derken sıfıra gitti, bu da sıfır oldu. Sonuç sadece 1 oldu değil mi? Demek ki verilen integralin sonucu 1'dir. O halde diyeceğiz ki yakınsaktır. Tamam mı? Sonuç yakınsaktır diyeceğiz. Oldu mu arkadaşlar? Birinci tipim profil integraldi. Hesapladık. Belli bir değer çıktığı için yakınsak, çıkmasaydı, aksak diyecektik. Var mı problem?
+
+85
+00:14:17,844 --> 00:14:30,824
+Evet, devam edelim. Şimdi şöyle bir integral verilmiş bakın. İntegrel eksi sonsuzdan artı sonsuza kadar dx bölü 1 artı x kare integralini hesaplayınız diyor.
+
+86
+00:14:34,163 --> 00:15:02,163
+Yani R eksenle 1 bölü 1 artı x kare değil midir benim fonksiyonum? Süreklidir. Sadece bakın uçlarında süreksiz olduğu için bu gene bizim için diyeceğim ki birinci tip infopri integral'dir. Bunu hesaplayabilmek için yukarıda dedik ki arada bir c noktasında bunu parçalayabiliriz. İşte ben de bunu istediğim şekilde toplamabilirlik özelliğinden parçalayabilirim sınırını. Sıfır alırım, bir alırım ama bu sıfır da uygun oluyor. Çünkü bir tanımsız yapan bir noktam yok. Daha kolay hesaplayabilmek.
+
+87
+00:15:02,163 --> 00:15:22,503
+seçmek için 0'ı seçtim. Ama sen de de ki, ben de 1 olsun ne olur ne fark eder? Hiçbir şey fark etmez. Arada herhangi bir noktadan parçalayabilirsin. O halde 0'a karar verdim. Diyorum ki, eksi sonsuzdan 0'a kadar dx bölü 1 artı x kare artı 0'dan sonsuza kadar dx bölü x kare şeklinde ne yaptık? Ayırdık.
+
+88
+00:15:23,091 --> 00:15:51,091
+Her ikisi de benim için aslında birinci tipi improfor integral'dir. Buna dikkat edersen alt sınırında süreksizlik olduğu için birinci tipi improfor integral. Bunu hesaplarken diyeceğim ki limit, R eksi sonsuza giderken integral R'den sıfıra kadar diyorum. dx bölü 1 artı x kare. Artı geldim ikinciye. Bunun da sadece üst sınırında fonksiyon süreksiz olduğu için bu da birinci tipi improfor integral. O zaman limit, R sonsuza giderken sıfırdan...
+
+89
+00:15:51,091 --> 00:16:04,752
+x kare artı 3x'e kadar bx bölü 1 artı x kare şeklinde yazdık. E şimdi bunları artık şu belirli integralleri ne yapacağız? Hesaplamaya çalışacağız. Bunlar da bildiğimiz integraller değil mi? Neyin türevi 1 bölü 1 artı x kare artı tanjanttır biliyoruz.
+
+90
+00:16:04,752 --> 00:16:13,471
+Onu da hemen yazarsak bakın. Limit, R, eksi sonsuza giderken artı tanjant x'tir. Sınırın R'den sıfıra kadar.
+
+91
+00:16:14,035 --> 00:16:42,035
+ikinci aynen R artı sonsuza giderken art tanjanttır gene integralim. Sıfırdan R'ye kadar. E şimdi şuradan kontrol ediyoruz. Üst sınırı eksi alt sınır. Art tanjant sıfır nedir? Tanjant sıfır olan açı sıfırdır. Art tanjant R'ye gelecek değil mi alt sınırdan? İşte limiti gene aynen yazdım. Bakın eksi art tanjant R alt sınır. Şuradan geliyorum. Üst sınıra yazdım. Limit R'ye sonsuza giderken art tanjant.
+
+92
+00:16:42,035 --> 00:16:50,795
+x kare artı tanjant 0, 0 olduğu için yazmıyorum. Şimdi artı limite geçebilirim. Bakın, R- sonsuza gittiğinde.
+
+93
+00:16:51,668 --> 00:17:19,668
+ne olacaktır? Tanjant sonsuz olan açı neydi? pi bölü 2 idi. x olduğuna göre x'i pi bölü 2 diyeceğim. Bir de önünde x var, artı pi bölü 2'ye gitmiş olacak. Burada da gene R sonsuza giderken artı tanjant sonsuz nedir? Pi bölü 2'dir. Yazarsak sonuç ne olur? Pi'dir. Gene yakınsak bir integraldir. Sonuç belli bir değer çıktığı için. Onun için dediğim gibi birinci tipi improfil integraller ben buradayım der. Hiç de kafam.
+
+94
+00:17:19,667 --> 00:17:34,347
+yapmamız karışmaz. Herhangi bir sınırında sonsuz veya her iki sınırında da sonsuz varsa hemen diyeceğiz ki birinci tip infilfli integraller. İkinciler biraz kafayı karıştırır, masum gibi gözükürler. Ama hani sinsi integraller de bazen deriz onlara.
+
+95
+00:17:34,816 --> 00:18:01,016
+Bizi kandırırlar, normal atıyorum işte, der ki sıfırdan bire kadar verilen integral hesapla der. Hemen öğrenci ona saldırıp belirli integral gibi hesapla. Hiç kontrol etmez acaba uçlarda var mıdır, fonksiyonu süreksiz yapan değer veya ara bir noktada var mıdır. İşte onlar biraz kafamızı karıştırıyor. İşte bunlara da ikinci tip improper integraller diyeceğiz arkadaşlar. Bunları da verelim karşımıza çıkacak durumları. Bir de tamamız değil mi? Anladık.
+
+96
+00:18:01,428 --> 00:18:29,428
+kolay da hemen görebiliyoruz. Sınırlarında sonsuz olunca birinci tip diyoruz. İkinci tip improfile integraller ise birinci durumda şu olabilir. Eğer fx fonksiyonu a açık, b kapalı, aralığında sürekli, burada gördüğüme göre a da süreksiz ise, yani verilen aralıkta sürekli ama a da süreksiz ise, o zaman böyle bir integralı diyelim ki integral a'dan b'ye kadar fx dx integralını hesapla diye bana soracağız.
+
+97
+00:18:29,428 --> 00:18:36,748
+Bakıyorum fonksiyon sadece alt sınırında fonksiyon süreksiz olduğu için diyeceğim ki bu ikinci tipi impropi integraldir.
+
+98
+00:18:36,748 --> 00:18:43,888
+Genel limite geçeceğim. Limit bu sefer c, aralıkta bakın açık olduğu için soldan yaklaşamayacağım.
+
+99
+00:18:44,248 --> 00:18:51,968
+a'ya sağdan yaklaşacağım. Limit c, a'ya sağdan gittiğinde integral c'den b'ye kadar fx'de x.
+
+100
+00:18:52,087 --> 00:18:57,428
+Genel aynı mantıkla şu c'den b'ye kadar belirli integral hesaplayacağım. Sonra limite geçeceğim.
+
+101
+00:18:57,428 --> 00:19:13,208
+sonuç belli bir değer çıkarsa, yakınsak değilse raksaktır diyeceğim. Tek dikkat etmemiz gereken, bakın, bu sol uç noktada süreksiz olduğu için ne yapıyorum? C dedim, B de fark etmez. Burada A'ya sağdan yaklaşmak.
+
+102
+00:19:14,163 --> 00:19:42,104
+Tamam mı? İkinci durumda da ne olacak? 3 sınırında olabilir süreksizlik. Yani fx fonksiyonu bu sefer a kapalı, b açıkta sürekli, b de süreksiz ise. Gene verilmiş böyle bir integral diyelim. İntegral a'dan b'ye kadar fx, bx integrali. Baktık fonksiyonu aralıkta sürekli. Sadece uç noktada yani üst uç noktasında süreksiz olduğu için diyorum ki bu ikinci de bir infopri integraldir. Limit c.
+
+103
+00:19:42,163 --> 00:19:46,604
+Bu sefer b'ye nereden yaklaşacak? Soldan. Sağa açık olduğu için.
+
+104
+00:19:47,163 --> 00:19:54,163
+B'ye soldan yaklaştığında integral a'dan c'ye kadar fx dx şeklinde belirli integral hesaplarım.
+
+105
+00:19:54,983 --> 00:19:59,943
+Sonra limite geçerim. Sonlu bir değer çıkarsa yakılsak değilse de ıraçsak diye.
+
+106
+00:20:00,000 --> 00:20:19,400
+bilirim. Birinci bu da her ikisi de ikinci tipi integral değil. Üçüncü durumda da ne olabilir? Ara bir noktada fonksiyon süreksiz olabilir. Yani diyelim ki fx a küçük c küçük b iken c de süreksiz. Yani c de tabi aralıkta olması için. O halde bunu nasıl ifade ederim?
+
+107
+00:20:19,955 --> 00:20:23,775
+a kapalı, c açık, birleşim c açık, b kapalı.
+
+108
+00:20:24,315 --> 00:20:28,055
+Fonksiyon sürekli ama ara bir noktada süreksizse.
+
+109
+00:20:28,395 --> 00:20:35,895
+O zaman benden gene isteyecek, diyecek ki a'dan b'ye kadar integral, fx'tx integralini ne yap, hesapla diyecek.
+
+110
+00:20:35,895 --> 00:20:42,535
+E diyorum ki baktım fonksiyona, ara bir noktada c noktasında fonksiyon süreksiz olduğu için ne yapmam gerekir?
+
+111
+00:20:42,615 --> 00:20:44,455
+Bunu o şekilde parçalamam gerekir.
+
+112
+00:20:44,515 --> 00:20:47,855
+Süreksiz olduğu nokta, bakın a'dan integral c'ye kadar.
+
+113
+00:20:47,955 --> 00:21:11,275
+x kare artı c'den b'ye kadar fx, dx. İşte bunlar yukarıdaki 1, 2'de olduğu gibi yazarken nasıl düşüneceğim? Burada diyeceğim ki bu c noktasında süreksiz olduğu için işte burada tabi c'yi kullanamayacağım. Başka bir sembol kullanırım. İşte derim ki limit u derim c'ye nereden yaklaşacak?
+
+114
+00:21:11,923 --> 00:21:31,804
+soldan değil mi? Burada da sağdan yaklaşacak. Bunları yukarıdaki 1-2'de olduğu gibi hesaplayacağım. Eğer belli değer çıkarsa yakınsak değilse raksaktır diyeceğim. Her bir durumda da bakın limit sonlu ise integral yakınsak ve değeri limit değeridir. Limit yoksa veya sonuç artı eksi sonlu ise integral raksaktır diyeceğim.
+
+115
+00:21:34,067 --> 00:22:00,548
+Improper alanı bulmak için kullanabilir miyiz hocam? Tabii ki öyle örneklerimi de sonra yapacağım. Alanda da karşına çıkabilir. Her türlü kullanabilirsiniz bunu. İşte ikinci tip improper integraller de bunlar arkadaşlar. Biraz masum gözükürler. Onun için hiç size verilen belirli integral hemen hesaplamadan bakacaksın fonksiyonu sürekli yapan bir nokta var mıdır yok mudur diye tamam mı? Evet şimdi buna da bir örnek.
+
+116
+00:22:00,980 --> 00:22:13,659
+alalım hemen aşağıda. Şunları çözdük zaten. Şimdi geldi. Bakın, gayet basum. İntegra 0'dan 1'e kadar dx bölü 1-x belirli integralini hesapla der.
+
+117
+00:22:14,159 --> 00:22:22,220
+İşte buradan diyeceğim ki kimse bana doğrudan hemen belirli integral hesapla demez. Bir kontrol edelim. Benim fonksiyonum nedir? 1 bölü 1-x'tir fonksiyon.
+
+118
+00:22:22,451 --> 00:22:50,451
+aralığında 0-1. 0-1 aralığında bu fonksiyonu tanımsız yapan, yani süreksiz yapan bir nokta var mıdır? Ki var değil mi? Bakın, 1'dir. 1 bu fonksiyonu süreksiz yapar. 1 bölü 1-x'i. O zaman bu ne diyorum? Bu ikinci tip improper integraldir. O zaman bunu hesaplarken diyoruz ki, limit c, c dedik. Onu kullanalım. 1'e nereden yaklaşacak? Soldan. 1'e soldan yaklaştığında 0'dan c'ye kadar dx bölü 1-x.
+
+119
+00:22:50,451 --> 00:23:06,112
+x x integral. İşte bu öyle bir belirli integral'i bildiğimiz kurallı hesaplayacağız. Hesaplayalım. Dimit buna dokunmadıkça, vire soldan yapmazsın. Bunun da integral'in ne olur? Bir daha dönüşüm de yapmaya gerek yok. Değil mi?
+
+120
+00:23:06,771 --> 00:23:32,611
+Bunun türevi nedir? x1, xs, x burada. Değil mi? Yani L'n'e gideceği için x'i L'n, 1-x diye doğrudan yazarım. Ya da 1-x'e t deyip, belirsiz integral gibi çözüp, getirip burada sonucu yazabilirsiniz. Nasıl istiyorsanız ki kolay, yani gerek yok burada. Yani köşeli parantez dedik. x'i L'n, 1-x, sınırım 0'dan c'ye kadar. Şimdi üst sınırı, eksi alt sınırı diyelim. Bakın limit duruyor hala.
+
+121
+00:23:33,299 --> 00:23:48,119
+x gördüğüm yere c yazıyorum. Eksi elen, 1 eksi c, eksi alt sınır. x'e de sıfır yazarsam elen bir sıfırdır. Yazmadık şu. Şimdi atıplimite geçebiliriz. C1'e giderken.
+
+122
+00:23:48,915 --> 00:24:06,476
+Bu ne olur? 0 olur. O zaman elen 0'da sonsuz olduğu için, eksi sonsuz, bir dönümde eksi var, artı sonsuzdur. Yani verilen integral bakın, sonsuz çıktı. O zaman ne diyorum? İntegral, ıraksaktır. Belli bir değer çıkmadığı için verilen integral, ikinci tepki integral, ıraksaktır dedi.
+
+123
+00:24:07,756 --> 00:24:08,716
+Sağdan neden?
+
+124
+00:24:09,523 --> 00:24:37,023
+yaklaşmadık. Ama bu aralığı yazarken ne diyeceksin sen? 0 kapalı, 1 açık değil mi? 1 açık aralık. Çünkü 1'de fonksiyon süreksiz. O yüzden sağdan yaklaşıyoruz. Bakın yukarıda söyledim ya. Şuradan. Şu. Bakın bunun gibi. Burada problem var. Onun için sağ açık olduğu için buna soldan yaklaşırım. Eğer A'da olsaydı sağdan yaklaşacak. Şimdi mitten hatırlayalım. Tamam. Oldu mu?
+
+125
+00:24:39,892 --> 00:24:41,451
+Evet, bir tane daha bakalım.
+
+126
+00:24:42,652 --> 00:24:52,951
+İşte, şimdi, yine bakın, masumca diyor ki, belirli integral sıfırdan 3'e kadar diyor, dx bölü x eksi 1 üzeri 2 bölü 3 integralini hesaplayınız diyor.
+
+127
+00:24:53,031 --> 00:24:56,852
+Böyle soracaksan veya bir şekilde sorar, alan der belki de bazen.
+
+128
+00:24:57,412 --> 00:24:59,791
+İşte bakacağım, diyorsun ki, benim fonksiyonum nedir burada?
+
+129
+00:25:00,011 --> 00:25:04,892
+1 bölü fx eşittir, 1 bölü x eksi 1 üzeri 2 bölü 3'tir değil mi? Şu.
+
+130
+00:25:05,491 --> 00:25:11,912
+Burada tanımsız yapan bir değer varmış şu 0-3 aralığında. Bakıyoruz burada bir de tanımsız değil mi fonksiyon?
+
+131
+00:25:12,788 --> 00:25:19,667
+O halde diyorum ki fonksiyon aradaki yani 0-3 aralığındaki bir noktada ne yaptı?
+
+132
+00:25:19,667 --> 00:25:24,008
+Tanımsız olduğu için yani süreksiz olduğu için bu ikinci tipin türev integraldir.
+
+133
+00:25:24,087 --> 00:25:28,467
+Ne yapacağım? Bu tanımsız yapan bir noktada bunu parçalamam gerekir.
+
+134
+00:25:28,627 --> 00:25:30,847
+Hatta bir daha şuraya yazdım, şurada bakın ne diyeceğim?
+
+135
+00:25:31,107 --> 00:25:37,927
+İntegral 0'dan 1'e kadar artı integral 1'den 3'e kadar bu şekilde ayırmış olmamız gerekir.
+
+136
+00:25:37,987 --> 00:25:39,528
+Bir parça verdiğimiz kurala göre.
+
+137
+00:25:40,051 --> 00:25:59,051
+O halde ne diyoruz? Şimdi bu birinciyi düşündüğümde ne dedik? 1'de süreklili fonksiyon 3 sınırında yani şurada. O zaman ne diyeceğim? Limit c1'e soldan yaklaşırken integral sıfırdan c'ye kadar dx bölü x eksi 1 üzeri 2 bölü 3 diyorum. Artı.
+
+138
+00:25:59,508 --> 00:26:24,968
+1'den 3'e kadar şeklinde parçaladığımda, bunun da alt sınırında değil mi süreksizliği? O zaman burada da sağdan yaklaşacağım. Limit c, bire sağdan yaklaştığında integral c'den 3'e kadar, dx bölü x-1 üzeri 2 bölü 3 şeklinde yazmış olduk. Şu, improborengide konumuz bitmesin. Değil mi? Asıl. Anladık değil mi şurayı? O zaman ne yapıyorum? Şimdi bunları tek tek hesaplayacağım.
+
+139
+00:26:25,523 --> 00:26:40,303
+O halde limit c1'e soldan yaklaştığında bunun integralini dediğim gibi dönüşümde yapabilirsin. Yani x-1'e t desen dx ne olur? dt olur. Yani bunu dt bölü t üzeri 2 bölü 3.
+
+140
+00:26:40,788 --> 00:26:51,727
+integraline getirmiş olursun. Onun da integraline olur t üzeri eksi 2 bölü 3 üzerinde bir arttırırsa t üzeri 1 bölü çarpı 3 şeklinde integralini alırsın.
+
+141
+00:26:52,087 --> 00:27:03,847
+Ki basit aslında dönüşüm yapmaya da gerek yok. Çünkü şu x'in kat sayısı 1 olduğu için bunu x üzeri 2 bölü 3 gibi düşünerek de integralini alabilirsin. Tamam mı? Bu. Bu da aynı şekilde yazdık.
+
+142
+00:27:04,192 --> 00:27:28,051
+şu sınırlarımız 0'dan c'ye, burada c'den 3'e kadar. Şimdi o zaman ne diyorum? 3 sınır, eksi alt sınır. Limit c'ye biraz soldan yaklaştı. Açtık parantezi. 3 çarpı x yerine c yazıyorum. c-1 üzeri 1 bölü 3. Eksi alt sınırdan 0 yazarsak ne olur? Eksi bir de şuradan gelecek alt sınırdan artı 3 olur.
+
+143
+00:27:28,480 --> 00:27:43,980
+artı, buradan da limit c'ye bile sağdan yatmazsın. 3 sınır dedik. 3'ü yazarsam 2 üzeri 1 bölü 3 gelir. Eksi alt sınırdan c'ye yazacağım. c-1 üzeri 1 bölü 3. Başındaki zaten 3'ü var, şu.
+
+144
+00:27:44,500 --> 00:28:12,240
+Şimdi artık limite geçebiliriz. Belirli integrallerimizi hesapladık. İşte C1'e giderken şu ne oldu? 0 oldu. Buradan ne geldi? Sadece 3 geldi. Şuraya geliyorum. Bu tamam. Şuradan C1'e giderken bu terim de 0'a gitti. Yani sonuçta 3x2 üzeri 1,3 şeklinde sonlu bir değer çıktığına göre bu integral nedir? Yakın saktır diyeceğiz. İkinci tip intro bir integraldir.
+
+145
+00:28:12,500 --> 00:28:16,500
+ama yakın saat 1.2.3 diyeceğiz arkadaşlar.
+
+146
+00:28:16,500 --> 00:28:19,500
+Şimdi var mı burada takıldığımız bir yer?
+
+147
+00:28:19,500 --> 00:28:24,000
+Ben birkaç tane kendim soru yazdım. Onları tekrar çözmek istiyorum.
+
+148
+00:28:24,000 --> 00:28:25,500
+Var mı sorunuz?
+
+149
+00:28:27,500 --> 00:28:33,500
+Evet, dediğim gibi birinci tip ve ikinci tip, başka da karşımıza çıkacak 1.2.3 yok.
+
+150
+00:28:41,875 --> 00:28:44,875
+Evet şimdi ilk örneğimiz şöyle olsun.
+
+151
+00:28:45,683 --> 00:28:53,903
+integral, ör integrale sıfırdan sonsuza kadar dx bölü e üzeri eksi x artı x integralini hesaplayız.
+
+152
+00:28:54,223 --> 00:28:59,364
+Şimdi bakıyorum benim fonksiyonum 1 bölü e üzeri eksi x artı e üzeri x'tir.
+
+153
+00:28:59,824 --> 00:29:10,483
+Aralıkta sıfır sonsuz olduğuna göre aralıkta fonksiyonum sürekli süreksizlik sadece üst sınırında sonsuz olduğu için buna diyorum ki ben birinci tipi improtörü integralı.
+
+154
+00:29:11,443 --> 00:29:29,443
+Şimdi ne yapmalıyım? Bunu bildiğim kuralla, birinci koltuğuna göre şöyle yazıyoruz. I eşittir diyorum. Limit, R sonsuza giderken, integral sıfırdan R'ye kadar, dx bölü, e üzeri x, x artı, e üzeri x şeklinde yazmış olduk. Bu integralin özelliğini kullandık.
+
+155
+00:29:29,443 --> 00:29:39,443
+E şimdi karşıma çıkan nedir? Sıfırdan R'ye kadar şu belirli integral hesapla diyor. Bundan sonrası benim integral bilgimi girmiş oluyor. Bunu hesaplarken, isterse
+
+156
+00:29:39,443 --> 00:29:49,823
+sınırları, dönüşüm yapacağım ya, sınırı da kullanabilirsiniz. Uzun diye ben ne yaptım? Şunu belirsiz integral gibi parantez içinde çözdüm bakın ne yaptım?
+
+157
+00:29:50,124 --> 00:29:58,124
+Karşınıza da çıkmıştı önceden de. Payı paydayı e üzeri x ile çarptın ya da şunu bir görev üzeri x diye payda eşitlersen şu hale gelir.
+
+158
+00:29:58,124 --> 00:30:00,000
+Payı paydayı e üzeri x ile çarptın.
+
+159
+00:30:00,000 --> 00:30:16,699
+yapmış gibi düşünün. İntegrel e üzeri x bölü 1 artı e üzeri 2x dx. Şimdi bu integrale 2 tane dx yazmışım arkadaşlar. Evet, bu integrale ne yapıyoruz? Dönüşüm yapacağız. Yani e üzeri x'e u dersem e üzeri x dx ne olur? du olur.
+
+160
+00:30:16,980 --> 00:30:34,920
+getirip yerine yazarsam, işte du bölü 1 artı u'nun karesi. Bu da neyin integralidir? Artı tanjant u'nun integralidir. Artı c. U yerine de e üzeri x'i yazarsam, yani şu belirsiz integral olsaydı sonucum bu olacaktı. Şimdi ben konuma dönüyorum, bakın şuradayım.
+
+161
+00:30:35,420 --> 00:30:44,960
+İşte ben bunu hesaplarken diyeceğim ki limit rs olsa giderken bunun integral neymiş? Artı tanjant e üzeri x, sınırım sıfırdan r'ye kadar değil.
+
+162
+00:30:44,980 --> 00:30:49,200
+Üç sınır, ne diyorum, x yerine v yazıyorum.
+
+163
+00:30:49,420 --> 00:30:54,059
+Arktanjant e üzeri r, eksi alt sınır, e üzeri 0, 1'dir.
+
+164
+00:30:54,139 --> 00:30:57,559
+Arktanjant 1'de nedir? Tanjantı 1 olan açı demektir.
+
+165
+00:30:57,659 --> 00:30:58,519
+Pi bölü 4'tür.
+
+166
+00:30:58,675 --> 00:31:02,155
+İşte limit R sonsuza giderken şu ifadeyi buydu.
+
+167
+00:31:02,455 --> 00:31:06,276
+Şimdi R sonsuza giderken E üzeri sonsuz nedir? Sonsuzdur.
+
+168
+00:31:06,395 --> 00:31:08,776
+A tanjan sonsuza nedir? Pi bölü 2'dir.
+
+169
+00:31:08,776 --> 00:31:13,579
+O halde pi bölü 2, eksi pi bölü 4'ten pi bölü 4 olarak...
+
+170
+00:31:13,907 --> 00:31:29,248
+karşımıza çıkacaktır. Dediğim gibi, ama burada sınırı dönüştürerek de yapabilirsiniz arkadaşlar. O zaman ne olur? Bakın x0 olursa, dönüşüm yaparak gitsem, sınırları da kullanmak istersen, x0 ise u ne olur? 1 olur.
+
+171
+00:31:29,907 --> 00:31:38,887
+R ise de, e üzeri r şeklinde karşına çıkacak. Ama eğer kafan karışıyorsa, belirsiz integral gibi çözersin, getir şurada yerine yazarsınız.
+
+172
+00:31:39,344 --> 00:31:47,344
+O halde sonuç belli bir değer çıktığına göre yorumda sormak istese yakın saktır diyeceğim. Anladık mı arkadaşlar?
+
+173
+00:31:49,344 --> 00:31:51,344
+Var mı problem?
+
+174
+00:31:51,344 --> 00:31:58,344
+Dediğim gibi burada sadece iyi integral bilmek gerekiyor. Başka da bir şey yok tipi de bildikten sonra.
+
+175
+00:32:00,084 --> 00:32:07,084
+birinci tip olduğunu nereden anladık? E birinci tipler dedik ki, integralin sınırlarında sonsuz varsa bunların adı birinci tip oluyor.
+
+176
+00:32:07,519 --> 00:32:35,519
+Tamam mı? İsmi de senin için önemli değil. Hesaplar. Sen zaten test olacağı için amaç şu şekilde yazabilmek. Yani işte üstte sonsuz olabilir, üst sınırında. Alt sınırında eksi sonsuzluk olabilir veya parçalaman gerekebilir. Yani 3 tip verdim sana, birinci tip dedim ona. Eğer sınırları da belirli oluyorsa, hep sayılardan ibaretse onları da ikinci tip dedik. Yani onun da gene uç noktalarında fonksiyon süreksiz olabilir, ara bir noktasında olabilir ama sonsuzluk olmayacaktı sınırlarında.
+
+177
+00:32:35,519 --> 00:32:45,279
+Tamam mı? Evet. Şimdi gelelim ikinci. Benim son örneklerim hep sınavda sorumlu sorular arkadaşlar.
+
+178
+00:32:46,003 --> 00:33:13,703
+sınavın sonucunu yorumlayınız veya diyor ki işte integralin sonucu aşağıdakilerden hangisidir? Şimdi ben testlerle bir daha o kadar cevapları yazmak istemediğim için yalnız amaç burada bir soruları klasik olarak çözüp bir şeyler anlayabilmek. Bunların hepsi sınavda sorumlu sorular. Buraya yazdığım soruların hepsi yani yıllarında böyle sorulmuş arkadaşlar. Evet şöyle bir integral daha var. 1'den e'ye kadar dx bölü, ln x üzeri x. İşte gördüğünüz gibi.
+
+179
+00:33:14,003 --> 00:33:34,003
+belirli bir integral. İşte bu belirli integral verildiğinde bunun integralini hesaplamak için bir kere düşüneyim. Acaba burada bir tanımsızlık var mı? Yani fonksiyon süreksiz yapan bir değerin var mıdır? Bunu daha kolay yazmak için ne yaparım? x lnx derim değil mi? Sınırımda bir e var. Burada süreksiz yapan bir nokta var mıdır bu aralıkta sizce?
+
+180
+00:33:36,948 --> 00:33:37,768
+Yok hocam.
+
+181
+00:33:37,768 --> 00:33:58,647
+Nedir? 1 bölü x lnx'tir değil mi? Evet. Doğru 1'de tanımsız oluyor değil mi? Bu kadar işte. Bu da ne olacak? Bunun da tipi, ikinci tip diyorum. Yani ismi de önemli değil. Maksat onu hesaplayabilmek. Ama hani bir klasik sınav olsaydı tipini belirleyip işte integral çözdünüz, yorum yapın derse o zaman arardı senden ikinci, birinci tip diye.
+
+182
+00:33:58,647 --> 00:34:04,708
+Biliyorum tabii ki testte de belki bir şekilde sorabilirler. Onun için hep sürekli konuşuyorum. Dersiniz hocam.
+
+183
+00:34:04,948 --> 00:34:27,748
+sonuçları konuşayım, yapacak bir şey yok demek zorundayım, kafamızda kalsın diye. Evet, ne yaptık? Fonksiyonu dedim ki, düzgün yazdım, 1 bölü x ln x fonksiyonu, baktım, aralığımda 1 e, 1 de süreksiz olduğundan diyorum ki, bu ikinci tip, bir integral bir. Bunları hesaplarken yukarıda tanımda vermiştik, ne diyeceğiz? I dedim, yazdım, bakın, limit x.
+
+184
+00:34:28,143 --> 00:34:38,143
+pardon c, birelerden yaklaşacak sağdan. Çünkü sol noktada süreksizlik olduğuna göre sağdan yaklaşıyoruz.
+
+185
+00:34:38,143 --> 00:34:46,143
+c'den e'ye kadar dx bölü x lnx. İşte şimdi burada şübeleri integral hesaplar. Bu da bizim integral bilgimize bağlı.
+
+186
+00:34:46,143 --> 00:34:56,143
+Limitimiz duruyor kenarda. Bunu da nasıl hesaplarız? Değişken dönüşümüyle. O zaman lnx'a u dersem, dx bölü x de ne olur? du olur. Ben sınırlarım da değiştireyim.
+
+187
+00:34:56,143 --> 00:35:20,663
+her zaman belirsiz çözeceğiz anlamayalım diye. Burada da böyle gittim. Bakın, sınır da değiştiyorum. x c neye dönüşecek? x eşittir c, L'n c'ye dönüştü. x e ne olur? L'n e de 1'dir. O halde bir daha hiç geriye dönmeden şöyle diyorum. Limit c 1'e sağdan yaklaşsın. İntegral L'n c'den 1'e kadar.
+
+188
+00:35:21,556 --> 00:35:38,096
+x bölü x de d uydu zaten. Değil mi? d u bölü u. İşte bu da ne oldu? Limit c bile sağdan yaklaştı. İntegrinin nedir? L'n u'dur. Sınırım L'n c'den bire. 3 sınır, eksi a sınır. L'n bir sıfırdır.
+
+189
+00:35:46,452 --> 00:36:06,192
+Şuradan görelim hemen. Elen bir sıfır. C'de 1'e giderse, elen C'de 1 olduğuna göre sıfırdır. Elen sıfırda nedir? Eksi sonsuldur. Yani sonuçta ne oldu? Bakın sonsuz. Limit sonsuz olduğundan gelen, genelleştirmiş ya da intro integral ne diyeceğim? Raksat diyeceğim.
+
+190
+00:36:07,059 --> 00:36:18,679
+Tamam mı? Anlaşıldı mı arkadaşlar? Bakın, belirli bir integral verilmiş. Buna hesapladıyor. Baktık, fonksiyon alt sınırında süreksiz olduğundan dedim ki ikinci tipi, profil integraldir.
+
+191
+00:36:19,039 --> 00:36:31,400
+Bunu da hesaplarken mantığını kavramıştık zaten dedik. Limit C1'e sağdan yaklaştı. Şöyle bir belirli integral hesapladık. Limite geçtiğimizde de sonsuz çıktığı için ıraksaktır diyeceğim.
+
+192
+00:36:31,400 --> 00:36:34,539
+Evet, şimdi geldik şuraya.
+
+193
+00:36:35,059 --> 00:36:48,880
+I eşittir integral sıfırdan sonsuza kadar artı tanjant x bölü 1 artı x kare bx integralini hesaplarınız diye bakın. Bunu hemen zaten görüyorsun değil mi? İnpropro olduğunuz üstünün de sonsuz var.
+
+194
+00:36:50,820 --> 00:36:55,380
+O zaman diyoruz ki bu birinci tık inpropro integraldi. Bu aralıkta başka.
+
+195
+00:36:55,956 --> 00:37:18,956
+süreklif yapan bir değer yok zaten. Şu, birinci tip, integral dedik. O zaman bunu hesaplarken ne diyoruz? I eşittir, limit, R sonsuza giderken 0'dan R'ye kadar, art tanjant x bölü 1 artı x kare 1x. İşte bu integral hesaplayacağız, belirli integralı. Hesaplayalım, ne yapacağız? Dönüşüm yapalım.
+
+196
+00:37:22,771 --> 00:37:39,191
+dx bölü 1 artı x kare de du olur. Sınırları da değiştirmişiz burada bakın. x sıfır için artı tanjant sıfır nedir? Tanjant sıfır olan açı sıfırdır. u eşittir sıfır. R için bakalım. Artı tanjant r'de.
+
+197
+00:37:39,603 --> 00:38:07,603
+ne diyeceğim? Art tanjant R diyeceğim. Ona bir şey diyemem. O zaman bir daha hiç geriye dönmeden şuradan yerine yazacağım işte. Sıfırdan art tanjant R'ye kadar deyip yazacağız. Bakın limit R sonsuza giderken integral sıfırdan art tanjant R'ye kadar. İntegranın içine bakın. Bakın dx bölü bir artı x karemiz var. O du oldu. Art tanjant adı u demiştim. U çarpı du geldi. Buradan da limit R sonsuza giderken integralin
+
+198
+00:38:07,603 --> 00:38:23,503
+ne gelir? u kare bölü 2 olur. Üst sınır, sıfırdan pardon, art tanjant C'ye kadar ne diyeceğim? Üst sınır eksi alt sınır. 1 bölü 2'yi dışarı attık. Limitimiz zaten duruyor. Bir şey yapmadık şu an. Ne diyeceğim? Art tanjant C'nin karesidir.
+
+199
+00:38:24,596 --> 00:38:27,356
+Evet, şimdi artık limite geçebilirim.
+
+200
+00:38:28,155 --> 00:38:32,596
+Arkt tanjant R sonsuzsa, tanjant, arkt tanjant sonsuz nedir?
+
+201
+00:38:33,195 --> 00:38:34,115
+Pi bölü 2 idi.
+
+202
+00:38:34,715 --> 00:38:38,315
+Onu da yerine yazarsam, pi bölü 2'nin karesi, 1 bölü 2'si vardı.
+
+203
+00:38:38,456 --> 00:38:41,096
+Yani sonuç pi bölü, pi kare bölü 8.
+
+204
+00:38:41,096 --> 00:38:42,576
+O da ne diyeceğim?
+
+205
+00:38:42,735 --> 00:38:47,496
+Sonlu bir değer olduğuna göre, verilen integral yakın sattır diyeceğiz.
+
+206
+00:38:48,775 --> 00:38:49,836
+Tamam mı arkadaşlar?
+
+207
+00:38:50,579 --> 00:39:00,059
+Yani dikkat ederseniz konuda bir şey yok. İki tane tanım bileceksin. Gerisi integralı çözmek başka da bir şey değil. İyi bir integral bilmek gerekir. O kadar.
+
+208
+00:39:00,059 --> 00:39:11,199
+Evet, şimdi gene bu da bir test sorusu sanırım. İntegral sıfırdan bire kadar x ln x dx integralını çözüp yorumlayınız.
+
+209
+00:39:11,940 --> 00:39:17,719
+Evet, şimdi benim fonksiyonum burada nedir? Bakın x ln x fonksiyonu aralığında 0, 1.
+
+210
+00:39:18,192 --> 00:39:21,652
+aralığında bu fonksiyon önce sürekli midir diye bakarım.
+
+211
+00:39:21,971 --> 00:39:22,851
+0-1 aralığında.
+
+212
+00:39:25,531 --> 00:39:29,031
+Evet, süreksiz yapan değer nedir bu aralıkta?
+
+213
+00:39:29,271 --> 00:39:30,271
+0-1 aralığında.
+
+214
+00:39:32,051 --> 00:39:32,871
+0 hocam.
+
+215
+00:39:35,632 --> 00:39:36,311
+0.
+
+216
+00:39:37,271 --> 00:39:38,891
+Evet, ne diyeceksiniz?
+
+217
+00:39:43,059 --> 00:40:00,000
+Evet, sıfır değil mi? Alt sınırında. Bu gene ikinci tiptir. Bakın, masum duruyor. Belirli integral gibi. Onun için buna dikkat ediyoruz. Sonsuz olunca zaten biliyoruz onun nasıl çözüleceğini. Sadece belirli integral, yani sayılar olunca dikkat etmemiz gerekiyor. Burada da dedik ki fonksiyonun...
+
+218
+00:40:00,000 --> 00:40:20,180
+benim. x lnx fonksiyonu x eşittir 0'da süreksiz olduğundan bu nedir? İkinci tipin profil integral'dir. O zaman şöyle hesaplayacağım diyorum. Limit c0'a soluş nokta olduğu için sağdan yaklaşacak. İntegrel c'den 1'e kadar x lnx dx şeklinde yazdık. Tamam mı?
+
+219
+00:40:20,500 --> 00:40:42,759
+Burada da ne yapacağım? Kısmı integrasyonu hesaplayacağız bunu. L'nx'e u diyorsam, x'de x'de ne olur? dv olur. dx bölü x'de v ise integralden de x kare bölü 2'de v gelecek. O zaman yazalım. Bakın limit c sıfıra hesağdan yaklaştığında açlık parantez u çarpı ve x kare bölü 2 L'nx sınırın c'den 1'e kadar.
+
+220
+00:40:43,284 --> 00:40:46,684
+eksi v çarpı du diyeceğim.
+
+221
+00:40:47,184 --> 00:40:48,844
+eksi 1 bölü 2 dışarı atalım.
+
+222
+00:40:48,943 --> 00:40:52,544
+integral c'den bire kadar çarptığında x dedi değil mi?
+
+223
+00:40:52,624 --> 00:40:53,564
+x de x olur.
+
+224
+00:40:54,224 --> 00:40:55,024
+Devam edelim.
+
+225
+00:40:55,564 --> 00:40:56,544
+Limite dokunmadım.
+
+226
+00:40:56,824 --> 00:40:58,344
+Parantez, üst sınır.
+
+227
+00:40:58,684 --> 00:41:02,004
+x gördüğüm yere biri yazarsam, elen 1 sıfırdır arkadaşlar.
+
+228
+00:41:02,164 --> 00:41:02,484
+Gitti.
+
+229
+00:41:03,024 --> 00:41:05,344
+eksi alt sınırdan x yerine c yazıyorum.
+
+230
+00:41:05,584 --> 00:41:08,184
+eksi c kare bölü 2, elen c.
+
+231
+00:41:08,423 --> 00:41:08,884
+Tamam mı?
+
+232
+00:41:09,235 --> 00:41:36,515
+Şuradan geliyorum, eksisi ayırdım hatta. Limit C sıfıra sağdan yaklaştı. Yok pardon şuradayım. Sonra ayırmışız. Şuradayız arkadaşlar. x kare bölü 2'dir değil mi oğlum? İntegrali. Şu 2'de var. x kare bölü 4'tür. Sınırım C'den 1'e kadar. Buradan da üst sınırı eksi alt sınırdan. Bakın 1 bölü 4, eksiyi dışarıya attım. Alt sınırdan da eksi C kare bölü 2.
+
+233
+00:41:37,235 --> 00:41:38,355
+Şimdi şuradayız bakalım.
+
+234
+00:41:38,804 --> 00:42:06,804
+Şunları ayırarak yazdım. Şöyle ayır. Şu. Şunda problemim yok dedim. 1 bölü 4, eksi parantezini aldığım için alt sınırı da şu. Şimdi şuradan geliyoruz. Şimdi ne yapıyorum? C sıfıra giderken bunun limitine bakıyorum. Bakın bu sıfır, elen sıfır da sonsuz değil midir? Bakın burada sıfır çarpı sonsuz belirsizliğine geldim. Arada böyle işlemlere dikkat ediyoruz. Bu bir belirsizliktir bizim için. Bunu ya sıfır bölü sıfır ya da sonsuz bölü sonsuz.
+
+235
+00:42:06,804 --> 00:42:33,104
+sonuç haline getirip ne yapacağım? Opital'i uygulayacağım. Sağdakine dokunmuyorum. Bakın buradan c0'a giderken şu terim 0'a gitti. Burada sadece 1 bölü 4'ümüz kaldı. Eksi 1 bölü 4. O dursun. Şimdi şunu ne yapıyorum? Şu köşeli parantezin içinde bir belirsizlik olduğu için bunu ne yaptım? L'nc bölü eksisi de dursun. 2 bölü ckare şeklinde ne yaptım? Sonsuz bölü sonsuz şeklinde ifade ettim arkadaşlar. Şurayı.
+
+236
+00:42:34,195 --> 00:42:42,195
+oldu mu? Şimdi Hospital'ı uygulayabilirim. Yani payın türevi, bakın, limit C0'a sağdan yaklaştı. LMC'nin türevi nedir?
+
+237
+00:42:42,708 --> 00:42:59,088
+x1 bölü c, x1 bölü c, bölü, 2 bölü c karenin türevini alacağım. O da ne olur? Payın türevi 0 çarpı payda, x4, c çarpı c üzeri 4'ten bir tanesi gitsin, x4 bölü c küp kalır.
+
+238
+00:42:59,508 --> 00:43:10,628
+Köşeli parantezin için nefopitali uyguladık, şu payın türevi bölü, paydanın türevi diyorum. Buradan eksi'ler artı gelir, c kare bölü 2, pardon c kare bölü 4 kalacak.
+
+239
+00:43:10,708 --> 00:43:32,988
+Eksi 1 bölü 4'ümüz değil mi? Şimdi artık limite geçebilirim. C20 yazarsak bu 0. Yani sonuç ne çıktı bakın. Eksi 1 bölü 4. İşte bunu ne demiştik? Çözümü çözüp yorumluyoruz. Belli bir değer çıktığı için integral, ikinci tip intro problemi tekrar nedir? Yakın saktır diyoruz.
+
+240
+00:43:34,291 --> 00:43:52,691
+Anlaştın mı arkadaşlar? Bakın, arada belirsizlik çıktı, o belirsizliği de bildiğim yöntemle hesapladım. Giderdik, sonucu da sıfırmış. Yani sonuç ne geldi? Eksi 1 bölü 4 olarak karşımıza çıktı. Anladık mı? Var mı takıldınız diye?
+
+241
+00:43:53,972 --> 00:44:02,412
+dikkat ederseniz örneklerde hep integral çözüyoruz. Başka da bir şeyimiz yok. İyi bir integral bilmek gerekir. Başka da hiçbir şey yok arkadaşlar.
+
+242
+00:44:02,412 --> 00:44:15,492
+Evet şimdi şöyle bir örneğimiz var. İntegral sıfırdan pi bölü 2'ye kadar kosinüs x bölü 3. kökten 1-sinüs x'in karesi dx integralini hesaplayınız diyelim.
+
+243
+00:44:16,832 --> 00:44:19,072
+Hadi ben bir iki dakika bekliyorum arkadaşlar.
+
+244
+00:44:19,764 --> 00:44:36,604
+Peki bu fonksiyonumuzu tanımsız yapan üç noktalarda mı, ara noktada mı? Bir bakın bakalım. Nedir tanımsız yapan değer? Fonksiyonum kosinüs x bölü, 3. kökten 1-sünüs x'in karesi değil mi? Tanımsız yapan değer nedir? Sıfırda yok değil mi problemin?
+
+245
+00:44:36,604 --> 00:44:37,524
+1 bölü 2 hocam.
+
+246
+00:44:37,524 --> 00:44:38,364
+Nerede var problemin?
+
+247
+00:44:38,867 --> 00:45:03,288
+p bölü 2 değil mi? Yani diyeceğim ki bu benim için ikinci tip improfil integraldir. İşte limit c, p bölü 2'ye soldan yaklaştığında 0'dan c'ye kadar bu integrali, belirli integrali hesaplayıp sonra limitini alacaksınız. Hadi bekliyorum sonucu ne bulacaksınız? İntegrali de nasıl hesaplayacağınızı düşünün bakalım. Yani 0'dan c'ye olan belirli integrali hesaplayın.
+
+248
+00:45:45,204 --> 00:45:47,164
+Çözüyoruz değil mi arkadaşlar? Bekliyorum.
+
+249
+00:45:56,980 --> 00:45:59,780
+sonuç ne çıkıyor onu bana söylerim sonuçta.
+
+250
+00:46:03,123 --> 00:46:05,123
+yakın saat mi, rahat saat mi?
+
+251
+00:46:41,076 --> 00:46:43,076
+Bu kadar uzun mu süre ya? Bulamadık mı?
+
+252
+00:46:46,579 --> 00:46:50,219
+x kare artı 3x, hocam buldum. x kare artı 3x, f'
+
+253
+00:46:56,307 --> 00:46:57,963
+ve süreklik,
+
+254
+00:47:09,263 --> 00:47:27,383
+x kare artı 3x, f'
+
+255
+00:47:03,699 --> 00:47:31,639
+x 3 gördüm. Ben 3 diye hatırlıyorum ama olabilir. Ama doğru gitmişsindir muhakkak. Ben de hata yapmışımdır. Bilmiyorum yani şu an öyle hatırlıyorum. Üçlü bir şey çıkacaktı. O zaman yakınsak diyeceksin. Bakalım sağ ol. Bir arkadaş cevap verdi. Diğerleri gerek görmedi sanırım. Evet. Şimdi baktık. Tekrar konuşuyoruz bakın. Fonksiyonumuzu söyledik. Dedi ki fonksiyon üst sınırda yani pi bölü 2'ye tabii soldan giderken düşünüyorum. Limiti.
+
+256
+00:47:31,699 --> 00:47:47,999
+sonsuz olduğu için ikinci tipi improfil integraldir diyoruz. Bunu hesaplarken diyeceğiz limit c, pi bölü 2'ye soldan yaklaşırken integral sıfırdan c'ye kadar kosinüs x bölü 3. kökten 1-sinüs x'in karesi dx integrali şeklinde hesaplayacağız.
+
+257
+00:47:47,999 --> 00:47:59,699
+İşte önce şu belirli integrali hesaplayıp sonra limit'e bakacağım. Bak, bu da dedi ki değişken dönüşümü yapılarak hesaplanacak. 1-sinüs x'e t dersem, eksi kosinüs x dx ne olur? dt olur.
+
+258
+00:47:59,699 --> 00:48:26,499
+İşte burada sınırımda hazır integralde yazacağım yerine eksi df diye yazarım. Hatta ben belirsiz integral gibi çözmüşüm. Sınırı da değiştirmemişim. Değiştirebilirsiniz. Bakın x'e 0 verirsem f ne olur? 1 olur. c verirsem 1-c diye gidersin. O öyle uzadığı için yazmamışım. Ben bunu belirsiz integral gibi bakın parantez içinde çözdüm. Tamam mı arkadaşlar?
+
+259
+00:48:27,380 --> 00:48:35,659
+Bir arkadaş da 3 bölü 5. Bakarız, şimdi bakarız. Önemli değil. Amaçım sizin uğraşmanız. Ben de arada hatalar yapabilirim. Evet.
+
+260
+00:48:36,320 --> 00:48:45,599
+İntegral dedik, belirsiz integral gibi çözüyoruz. Eksi dt dedik, t üzeri 2 bölü 3 oldu değil mi? Bunun da integralini faya aldım. Eksiyi dışarıya attım.
+
+261
+00:48:45,720 --> 00:48:55,320
+T üzeri eksi 2 bölü 3 dedim. Üstünü bir arttırırsam 1 bölü 3, 1 bölü 3'e de bölersem 3 çarpana gelir. Eksi 3 çarpı t üzeri 1 bölü 3 artı c.
+
+262
+00:48:55,380 --> 00:49:08,380
+f'ye dedim, tamam mı? f'ye yerine de ne yazıyorum? 1-sinüs x'i yazdım. x'i çarpı, 1-sinüs x üzeri 1 bölü 3 artı c. Belirsiz integral gibi çözdüğümde, tamam mı? Bu.
+
+263
+00:49:08,884 --> 00:49:17,844
+Sonra dönüyorum, kendi soruma. Şuradayım bakın. Limit c, pi bölü 2'ye soldan yakmazsın. İntegrelin sonucunu şuradan hemen yazdım.
+
+264
+00:49:17,963 --> 00:49:23,923
+x 3 parantez 1-sınıf x üzeri 1 bölü 3. Sınırım 0'dan c'ye kadar. Tamam mı? Bu.
+
+265
+00:49:25,203 --> 00:49:28,503
+Şimdi gene limite yazdık. 3 sınır diyorum.
+
+266
+00:49:29,300 --> 00:49:42,480
+eksi 3x, x yerine c'yi yazıyorum, 1-c, c üzeri 1 bölü 3 diyorum. Alt sınırda sinüs 0, 0'dır. 1 gelir, değil mi? Eksi 3, bir de eksi alt sınırdan dolayı artı 3 geldi.
+
+267
+00:49:43,039 --> 00:49:56,139
+Şimdi bakıyorum, c, pi bölü 2'ye giderken limitine bakıyorum. Sinüs pi bölü 2 ne oldu? 1'dir. Şu terim 0 gitti. Tamam mı? O halde 0 artı 3'den 3 buldum.
+
+268
+00:49:57,427 --> 00:49:59,987
+Siz herhalde alt sınırı
+
+269
+00:50:00,000 --> 00:50:09,860
+dikkat etmediğinizi yazarken, bakın, üst sınır değil mi? Eksi alt sınır artı oluyor. Yani sonuçta 3'ü buldum. Ama tabii bu test sorusu olduğu için,
+
+270
+00:50:10,300 --> 00:50:16,259
+eksi 3 cevabı da vardır orada arkadaşlar, artı 3 de vardır. Onun için dikkat edelim. Hani burada bizi kurtarıyor sonuç.
+
+271
+00:50:16,719 --> 00:50:23,079
+Eğer yakınsak, ratsak diye sorsa tamam ama sormazsa gittik değil mi? Eksi 3 desek gitmiş oldu cevap.
+
+272
+00:50:23,079 --> 00:50:27,940
+Ki koyarlar öyle bir şeyde. Eksisini de koyarlar, artısını da öğrenci dikkat etsin.
+
+273
+00:50:28,000 --> 00:50:40,259
+yok ben anladım zaten sonucun 3 olduğunu biliyorum ama yine ben de işlem hatası yapabiliyorum. Olur ama uğraşmak. Tamam, sağ olun. Evet, şimdi bir tane de şöyle bir örneğimiz olsun.
+
+274
+00:50:41,715 --> 00:51:03,175
+fx fonksiyonu parçalı verilmiş. 0 ile 1 aralığında 1 bölü kök x, 1 ile 2 aralığında da x eksi 1. Tabii 0'da eşitlik yok, 1 de şurada yok. Olmak üzere bizden istenen diyor ki integral sıfırdan 2'ye kadar fx'de x integralini hesaplayınız. Tamam mı? E şimdi ne yapıyorum? Şunu basit olduğu için çizmek de istedim diyelim.
+
+275
+00:51:03,795 --> 00:51:16,815
+y'şittir, 1 bölü kökük serisi. Bir şöyle gelir. Bir de simetriy şöyle. Ama bizi ilgilendiren kısım 0 ile 1 olduğu için aralığın, yani 0 ile 1 aralığında, şurası 1 tabii. Tamam mı? Şu.
+
+276
+00:51:18,931 --> 00:51:32,043
+Sonra doğruyu çizeceğiz. 1 ile 2 aralığında. 1 verdiğimizde zaten 0, şurada 2 verirsem 1. Yani şekil şu kabaca. Şurada tabii eşitlik olmadığı için açıklık var.
+
+277
+00:51:33,043 --> 00:51:41,503
+Evet, şimdi ne yapıyoruz? Verilen integral bir sormuştu bana şunu diyorum ki integral sıfırdan ikiye kadar fx dx yazarken nasıl yazacağım?
+
+278
+00:51:41,503 --> 00:51:50,323
+integral sıfırdan bire kadar dx bölü kök içinde x artı birden ikiye kadar x eksi bir dx şu.
+
+279
+00:51:52,103 --> 00:51:55,283
+E şimdi bakıyorum. Verilen fonksiyon
+
+280
+00:51:56,403 --> 00:52:08,204
+Dikkat ederseniz 0'da süreksiz değil mi? 1 bölü, küp içindeki x ifade mi? x eşittir 0'da nedir? Süreksiz olduğu için bu benim için ikinci tipi inkroflim integral.
+
+281
+00:52:08,204 --> 00:52:19,084
+Ama burada bir problemim yok. 1 ile 2 aralığında süreksiz yapan hiçbir yol da yok. Fonsiyon x-1. O zaman hesaplarken ona göre dikkat edeceğim. Bunu inkroflim integral gibi düşüneceğim.
+
+282
+00:52:19,184 --> 00:52:23,744
+Bunu normal. Hesaplayacağım. Yani şurada bakın buna dikkat edin. O yüzden bu soruyu aldım.
+
+283
+00:52:24,128 --> 00:52:30,028
+Sadece sıfır noktasında fonksiyon süreksiz olduğu için ikinci tipin profi integraldir.
+
+284
+00:52:30,347 --> 00:52:37,528
+Yani şöyle diyeceğim, limit c sıfıra sağdan yaklaştığında c'den integral 1'e kadar dx bölü kök x.
+
+285
+00:52:37,948 --> 00:52:43,948
+Normal, integralini alıyorum. Bakın x'in integral x kare veriyor ki, eksi 1'in integraline ne gelecek?
+
+286
+00:52:44,468 --> 00:52:46,568
+Eksi x, sınırın 1'den 2'ye kadar.
+
+287
+00:52:47,251 --> 00:52:48,751
+şu önemli olan değil mi? Şu.
+
+288
+00:52:49,391 --> 00:52:50,411
+Devam ediyoruz bakın.
+
+289
+00:52:50,771 --> 00:52:52,092
+Bunun da integraline gelecek.
+
+290
+00:52:53,172 --> 00:53:04,572
+x üzeri 1 bölü 2 dersen, üstünü 1 arttırırsan, 2 köp x olur integrali. Sınırım c'den 1'e kadar. Şunun da 3 sınırından 4, 2 gelecek. Değil mi?
+
+291
+00:53:05,112 --> 00:53:14,772
+Eksi 2 dedim. Tamam. Eksi alt sınırı, x yerine 1 yazıyorum. 1 bölü 2 artı 1 olur. Şu. Doğru gelmiş. Şuraya dikkat ediyorum şimdi.
+
+292
+00:53:21,172 --> 00:53:43,392
+sınır 2 kökçe ediyorum. Parantezi kapattım. Artı şuradan da 2'ler gitti. 1 bölü 2 kaldı. Şimdi buradan artık limite geçebilirim. C0'ya yaklaşırken şu terim 0'a gitti. Sonuç 2 kaldı. 4, 5 bölü 2. İşte verilen integralin sonucu 5 bölü 2'dir diyeceğiz. Oldu mu?
+
+293
+00:53:45,972 --> 00:54:07,472
+Evet, gene bu da bir sınav sorusu. Integralinin değeri nedir? Hadi ben bunu bekliyorum. Siz hesaplayıp bana söyleyin. Bakın bu zaten ben buradayım diyor. Birincisi pinproprintegral değil mi? Ama bunu böyle yazamayız değil mi? Arada bir noktada parçalamak gerekir. Nasıl parçalarız en kolay?
+
+294
+00:54:08,755 --> 00:54:12,436
+her noktada sürekli olduğu için aralıkta sıfırdan parçalar değil mi?
+
+295
+00:54:12,715 --> 00:54:16,855
+İşte x sıfır sonsuzdan sıfıra, sıfırdan sonsuza kadar.
+
+296
+00:54:17,255 --> 00:54:20,315
+Tabii mutlak değer ifadesi de var. Ona göre düşürün.
+
+297
+00:54:58,068 --> 00:55:04,188
+Evet, lütfen uğraşın, sonuç bekliyorum. 3-5 neyse bana sonucu şu çıktı, yakın saat veya araç saat.
+
+298
+00:55:41,331 --> 00:55:42,851
+Hocam, bende 2 çıktı.
+
+299
+00:55:45,592 --> 00:55:49,612
+Onsuz mu çıkma, dikkat et. Bak, mutlak değer var.
+
+300
+00:55:54,516 --> 00:56:03,996
+Evet, 2 olması gerekiyor. 2. Doğru söylüyorsunuz. Son sizi nasıl buldu arkadaş?
+
+301
+00:56:04,500 --> 00:56:32,179
+Evet, bak, 2 olacak. Bir tek işte dedim ya, hem improper integralli test edildiği hem de mutlak değer olayı var. Onun için diyorsun ki bu birinci tip improper integraldir. Ne yapmadım? Ara bir noktada parçalamam gerekecek. Yani eksi sonsuzdan sıfır diyorum daha kolay hesaplayabilmek için. Sıfırdan sonsuza kadar diye parçalıyoruz. Eksi sonsuzdan sıfıra kadar parçaladığında şu mutlak değerin içinde olur arkadaşlar? Negatif işaret değiştirerek dışarı çıkacak değil mi?
+
+302
+00:56:32,500 --> 00:56:38,339
+sıfırdan küçük değerler için. O zaman ne olur? Üzeri artı gelecek. Yani e üzeri x olacak değil.
+
+303
+00:56:38,759 --> 00:56:46,299
+Artı sıfırdan sonsuza kadar da zaten sıfırdan büyük değerler içinde pozitif olduğu için aynen dışarı çıkacak mutlak değer.
+
+304
+00:56:46,900 --> 00:56:53,159
+Eksi x olacak o zaman. İşte püf nokta bu. Sadece şu mutlak değer olması arkadaşlar. Başka da bir şey yok.
+
+305
+00:56:53,159 --> 00:57:00,500
+İşte şimdi artık diyoruz ki bunların her ikisi de birinci tipin profil integraldir. Hesaplarken limit, R ne diyeceğim?
+
+306
+00:57:00,500 --> 00:57:27,679
+eksi sonsuza giderken integral v'den sıfıra kadar e üzeri x, tx artı limit, r sonsuza giderken sıfırdan r'ye kadar e üzeri eksi x, tx diyeceğiz. Tamam mı? Bunların da integralini alırsam neyin integralidir? Bu e üzeri x'dir. Bu da e üzeri eksi x olduğu için eksi e üzeri eksi x'in integralidir. Yazdık. Üst sınır 1.
+
+307
+00:57:28,112 --> 00:57:35,612
+x'ı alt sınır, e üzeri R'dir. Limitimiz duruyor başta. Artı limit, R sonsuza giderken, üst sınır, x'e R'ye yazıyorum.
+
+308
+00:57:35,731 --> 00:57:43,692
+x'e üzeri, x'e artı, pardon, x'ı alt sınırdan ne gelir? 1 olacak. Bir de şu x'i kare artı 1 diyeceğim.
+
+309
+00:57:44,072 --> 00:57:52,971
+E şimdi R sonsuza giderken, burada x'i sonsuza, bu ne olur? E üzeri, eksi sonsuza, bir bölü, e üzeri sonsuza, o da 0 oldu. 1'e gitti şurası.
+
+310
+00:57:53,523 --> 00:58:13,063
+1'i yazdım. Geldim şuraya. R artı sonsuza gittiğinde bu da yine sıfıra gitti. Burada da 1 kaldı. Yani sonuç nedir? 2'dir. Verilen integralin değeri belli bir değer çıktığı için ne diyorum? Yakınsaktır diyoruz. Yani birinci tip, introfri integral yakınsaktır, integraldir diyoruz. Evet.
+
+311
+00:58:14,324 --> 00:58:22,824
+Tamam mı? Var mı burada takıldığımız bir yer? Evet, genelleştirilmiş ya da improprietive integral dediğimiz ifade mi bu arkadaşlar?
+
+312
+00:58:22,824 --> 00:58:29,104
+Konuları bitirdik. Ben burada bırakacağım. Yarın da dediğim gibi birkaç tane soru çözeceğim.
+
+313
+00:58:29,104 --> 00:58:35,484
+Ya uzunluğu, yüzey alanı ve hacimlerle ilgili. Öylece konuyu bitirmiş olacak. Yani dönemi bitirmiş olacağız.
+
+314
+00:58:35,484 --> 00:58:40,224
+Konu demin de konu bitti itibariyle. Evet, var mı sorumuz?
+
+315
+00:58:42,099 --> 00:58:43,299
+takıldığımız bir yer.
+
+316
+00:58:45,799 --> 00:58:53,399
+Yarın da işleyelim arkadaşlar. Bütün en son hafta konularını Avesize yüklerim veya size chatten de atarım. Tamam mı?
+
+317
+00:58:55,319 --> 00:59:03,439
+Şimdi mi istiyorsun? Bu örnekleri atamayacağım şimdi çünkü devamı var. Yarın hepsini atabilir miyim? Bir günden bir şey olmaz. Nasılsa finaliniz.
+
+318
+00:59:03,824 --> 00:59:15,724
+ne zaman final? Salı günü değil mi arkadaşlar? Finaliniz salıydı diye hatırlıyorum saat 9'da. Hepsini yarın 11'den sonra yüklerim. Yüklemediğim hepsini tamam mı?
+
+319
+00:59:17,864 --> 00:59:29,704
+Yarın alan çözeceğim, hacim çözeceğim, yüzey alanı çözeceğim, bir de yay uzunluğuyla ilgili sorular çözeceğim. Final tabii en baştan işlediğimiz yere kadar olacaktır.
+
+320
+00:59:30,420 --> 00:59:34,019
+Ama son işlediğimiz konular ağırlıklı olacaktır.
+
+321
+00:59:34,860 --> 00:59:40,679
+Yani ben mesela, işte, inproper integralden 1-2 soru beklerim. Nasıl soracaklar?
+
+322
+00:59:40,679 --> 00:59:45,679
+Alan, hacim, yüzey alanı, yay uzunluğu. Yani 5-6 sorun hazır şu anda.
+
+323
+00:59:46,324 --> 00:59:54,124
+test olacağı için birkaç tane bile sorabilirler onu. Diğerlerini de artık baştan karıştırıp soracaklar her yerden.
+
+324
+00:59:54,124 --> 01:00:04,324
+Şimdi sana desem ki, bir de ne vardı finale dahil olmam? Pardon, basit kesirlere ayırma var, ondan kesin soru çıkması gerekir. Bir de ne kalmıştı?
+
+325
+01:00:04,324 --> 01:00:09,324
+Trigonometrik dönüşümler değil mi? Onlarla ilgili de soru çıkabilir.
+
+326
+01:00:10,963 --> 01:00:18,344
+onlar finale dahil değildi. Düşün, işte sana 8 tane soru bulmuş oldum ben kafadan hani bu şekilde sorular.
+
+327
+01:00:21,423 --> 01:00:27,784
+Evet, yarın konu anlatmayacağım artık. Uygulama yapacağım arkadaşlar. Konuları bitirdik.
+
+328
+01:00:30,643 --> 01:00:48,783
+Konular bu kadar en son. Hatta bugün bir arkadaşınız hangisini hatırlamıyorum mail atmış bana. Haftalarına yani ders içeriklerini nereden bulabilirim? Ben Avesiz'e zaten dönemin başında yüklemiştim. Hatta bugün kontrol ettim. Duruyor orada. Bakabilirsiniz haftalarına göre. Yani konular hepsi orada var.
+
+329
+01:00:51,923 --> 01:01:11,824
+yok bir şey demedim zaten, baktım acaba hani silinmiş mi arada karışmış mı? Gördüm, tekrardan yazdım o arkadaşı. Evet, başka? Tamam, yarın görüşürüz, sorular çözeriz, konuşuruz gene. Tamam, kendinize iyi bakın, görüşmek üzere, iyi günler.
