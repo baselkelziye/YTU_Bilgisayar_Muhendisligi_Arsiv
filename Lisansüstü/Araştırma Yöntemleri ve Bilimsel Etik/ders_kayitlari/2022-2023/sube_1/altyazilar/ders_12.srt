@@ -1,0 +1,2823 @@
+1
+00:00:03,508 --> 00:00:06,288
+Adı mı kalın?
+
+2
+00:00:14,836 --> 00:00:15,836
+Bu kompletonlar.
+
+3
+00:00:38,612 --> 00:00:39,451
+Merhaba hocam.
+
+4
+00:00:40,951 --> 00:00:52,552
+Bir saniye. Şu an seni göremiyorum. Birazdan görebilir olacağım. Bir şey yapmaya çalışıyorum. Bir taraftan da ama merhaba. [öğrenci] sen misin o?
+
+5
+00:00:53,132 --> 00:00:54,012
+Evet hocam benim.
+
+6
+00:00:56,512 --> 00:00:58,612
+Yüzüne asret kalıp diyeceğim ama.
+
+7
+00:01:00,492 --> 00:01:01,332
+Estağfurullah hocam.
+
+8
+00:01:02,323 --> 00:01:07,243
+Yani bilmiyorum, ne yaptın? [kişisel bilgi] Başka bir şey mi oldu? Ne oldu?
+
+9
+00:01:08,024 --> 00:01:19,524
+[kişisel bilgi] Projeyle de uğraşırken, o ara bir BAPI'da yaparım diye şeye baktım. TÜBİTAK BİM bir formuna bakarken BAPI'da inceledim.
+
+10
+00:01:20,308 --> 00:01:37,408
+Tabii karar inesinizde olacak da bunu doğru yaptıysam, eğer bir şeyler doğru olduysam muhtemelen o tarafı da bir güzel yaparım o BAP raporu işini. Ondan sonra kodu devam ettireceğim. Kodu bir belli bir olukluma getirirsem sizinle bir görüşüm diyorum.
+
+11
+00:01:37,408 --> 00:01:39,688
+Tamam, bekliyorum.
+
+12
+00:01:47,956 --> 00:01:55,216
+Kandırabiliriz. Bir ortamı rahat tutalım. Bugün ayın 18'i, 8 ve 12. gruplarda.
+
+13
+00:02:07,924 --> 00:02:08,884
+1, 2, 5.
+
+14
+00:02:19,379 --> 00:02:24,500
+1, 2, 5 ve 7'yi geçen hafta sunumlarını yapmıştık. Doğru mu?
+
+15
+00:02:26,000 --> 00:02:29,079
+Doğrudur hocam. Bugün de 8-10 vardı. Birer ikisini unuttum.
+
+16
+00:02:30,599 --> 00:02:35,959
+8. grubun ekip nerede? Burada mısınız?
+
+17
+00:02:40,060 --> 00:02:42,719
+8. grubun burada hocam.
+
+18
+00:02:43,987 --> 00:02:55,487
+Tamam, ben ekran paylaşımı hakkı verdim. Ekranınızı paylaşın en azından. Daha sunum için dersin başlamasına vakit var ama ekran paylaşımı vesaire kısmını hazır edin isterseniz.
+
+19
+00:02:55,487 --> 00:03:00,487
+Ah, o iş, virüsü.
+
+20
+00:03:12,211 --> 00:03:12,531
+Ya.
+
+21
+00:07:43,860 --> 00:07:45,600
+Evet, ekibin tamamı burada mı?
+
+22
+00:07:52,531 --> 00:07:54,991
+Bir arkadaşımız daha gelmedi hocam.
+
+23
+00:07:59,411 --> 00:08:04,731
+Yani saat bir, arkadaşınız gelecek mi, gelmeyecek mi? Projenin içinde mi, dahil mi?
+
+24
+00:08:08,231 --> 00:08:11,891
+Evet, dahil bir hemen yazalım kendisine.
+
+25
+00:08:11,891 --> 00:08:13,771
+Tamam, o zaman şöyle.
+
+26
+00:08:17,471 --> 00:08:19,351
+Sekizden sonraki grubumuz neydi?
+
+27
+00:08:19,371 --> 00:08:20,491
+Geldi hocam şu an.
+
+28
+00:08:21,692 --> 00:08:22,371
+Efendim?
+
+29
+00:08:22,871 --> 00:08:24,731
+Geldi hocam, sekizinci grubu.
+
+30
+00:08:26,132 --> 00:08:27,771
+Tamam o zaman lütfen başlayın.
+
+31
+00:08:36,916 --> 00:08:51,116
+Saygıdalar hocam, sevgili arkadaşlar. Bizim konumuz mobil alet veri madenciliği. Ben [öğrenci], grubumda [öğrenci], [öğrenci] ve Üsame [öğrenci] ile bu projeyi hazırladık.
+
+32
+00:09:05,460 --> 00:09:12,680
+Sunum içeriğimiz şu şekilde olacak. Öncelikle ben projemiz hakkında genel bir bilgi vereceğim. Amaçlarımızdan, hedeflerimizden bahsedeceğim.
+
+33
+00:09:13,235 --> 00:09:29,515
+Daha sonra projemizin içeriğiyle dahil olacak şekilde mobil operatörlerin altyapısını, RF optimizasyonu ve amaçlarını, mobil RF'in verilerini ve bu verilerin nasıl toplanılacağı hakkında uygulamamız için bu verilerin toplama yöntemlerini konuşacağız.
+
+34
+00:09:30,155 --> 00:09:39,296
+Benchmarking'den sonra ise mobil RF ölçüm uygulaması yapacağız. Daha sonra bu yapacağımız uygulamanın kullanıcı kazanımlarını,
+
+35
+00:09:39,696 --> 00:09:48,875
+bahsedecek arkadaşlarımız. Diğer çok örneklerinden bahsettikten sonra ise RSR PMAP örneklerini sizinle paylaşacağız.
+
+36
+00:09:49,596 --> 00:09:53,776
+Son olarak proje mimarimizi detaylı bir şekilde açıklayıp sonuçla bitireceğiz.
+
+37
+00:09:58,115 --> 00:10:04,036
+Projemizin en temel olarak amaçlarından ve genel olarak özetleyecek olursak,
+
+38
+00:10:04,403 --> 00:10:29,743
+Günümüzde mobil telekom operatörleri sürekli olarak kullanıcıya sağladıkları servisleri geliştirmeye çalışmaktadırlar. Bunu hem daha yeni müşterileri kazanmak hem de kendilerinde olan potansiyel müşterileri bulmak için yapmak zorundalar. Operatörler bu geliştirmeler için RF verilerine ihtiyaç duyuyorlar. Bu veriler mobil operatörlerin ağ performansını ölçmek, sorunları tespit etmek ve ağ optimizasyonu yapmak için kullanılıyor.
+
+39
+00:10:30,548 --> 00:10:38,187
+Projemizin en temel amacı bu verileri kullanıcılardan direkt toplayabilmeyi ve operatörlerin kullanımına sunmayı sağlamak.
+
+40
+00:10:38,964 --> 00:10:56,084
+Bu verilerin yardımıyla telefon operatörleri baz istasyonlarının hangi bölgelerde olması gerektiğini veya hangi bölgelerdeki baz istasyonlarının yeterli seviyede çalışmadığını veya kullanıcı sayısını karşılayamadığını tespit edip o bölgeye yatırım yapmalarını kolaylaştıracak.
+
+41
+00:10:56,084 --> 00:11:01,984
+Yani işin operatör kısmında kazancı bu olacak projenin.
+
+42
+00:11:02,355 --> 00:11:14,435
+Kullanıcıların bu uygulamayı kullanmasındaki avantajı ise operatörlerin bu uygulamayı indirme karşılığında kullanıcılara ücretsiz internet vermesi şeklinde bir planlama yaptık.
+
+43
+00:11:17,235 --> 00:11:20,655
+Böylece uygulamanın yaygınlaştırılmasını planlıyoruz.
+
+44
+00:11:22,355 --> 00:11:26,675
+Şimdi o konu başlıklarını ufak ufak incelemeye başlayacağız beraber.
+
+45
+00:11:27,155 --> 00:11:36,255
+Mobil operatörlerin A altyapısıyla başlayacağım. Günümüzde mobil telekom operatörleri sürekli olarak kullanıcı sağladıkları servisleri geliştirmeye çalışmaktadırlar.
+
+46
+00:11:36,316 --> 00:11:43,296
+Çünkü pazarda ciddi bir rekabet söz konusu. Kullanıcı deneyimindeki olumlu gelişmeler doğrudan abone sayısındaki artışla doğru orantılı.
+
+47
+00:11:43,296 --> 00:11:47,296
+O yüzden operatörlerin bu taraftaki yatırımları...
+
+48
+00:11:48,096 --> 00:11:59,716
+En büyük gider kalemleri olarak düşünülüyor. Kullanıcıların uygulama indirimi, video izleme, web tarama gibi işlemlerini daha hızlı ve sorunsuz bir şekilde gerçekleştirebilmesi için altyapısını şüphesiz geliştirmesi gerekiyor.
+
+49
+00:12:05,355 --> 00:12:07,816
+RF optimizasyonu, radyo frekansı.
+
+50
+00:12:08,176 --> 00:12:16,456
+Mobil operatörler yüksek kalitedeki hizmetleri sunabilmek için mobil ağların güvenliğini, performansını ve verimliğini arttırmak için çeşitli teknikler kullanılıyorlar.
+
+51
+00:12:16,916 --> 00:12:20,756
+Bu tekniklerin arasında en önemlisi radyo frekansı optimizasyonu oluyor.
+
+52
+00:12:20,756 --> 00:12:32,976
+Bu baz istasyonlarının kullanıcı sayısını arttırmak için veya kesintisiz iletişimi sağlayabilmek için en önemli yapmak zorunda oldukları şey bu RF optimizasyonu.
+
+53
+00:12:33,696 --> 00:12:34,596
+Burayı da geçebiliriz.
+
+54
+00:12:36,403 --> 00:12:50,983
+Bu optimizasyonun temel amaçları, az önce kısaca söyledim ama burada kapsam alanını arttırmak, basitasyonlarının daha büyük, geniş alanlarda etkinliğini sağlamak en önemli amaçlarından bir tanesidir.
+
+55
+00:12:50,983 --> 00:13:04,384
+Kapasiteyi arttırmak, kalabalık yerlerde mesela bir maç organizasyonda, statlarda telefonlarının daha az çekmesinin nedeni aslında bu optimizasyon çalışmasının yeterli seviyede yapılmaması oluyor. Bu kapasiteyi arttırmak.
+
+56
+00:13:04,403 --> 00:13:25,884
+Arapya optimizasyonu yapmak zorunda operatörler. Tabii ki iletişimin kalitesini arttırmak, yine aynı şekilde bu optimizasyonun amaçlarından biri. Enerji tasarruf sağlamak ve kaynak yönetimini optimize etmek. Sonuçta belli bir bank genişliği sunuyor bu bazı istasyonları bize ve bu bank genişliğini en optimiz şekilde kullanmamız gerekiyor.
+
+57
+00:13:28,500 --> 00:13:35,220
+Bu mobil RF verilerini mobil cihazların kullanımı sırasında üretilen ve mobil A tarafından toplanan veriler olarak adlandırıyoruz.
+
+58
+00:13:35,740 --> 00:13:42,339
+Bu veriler, mobil operatörlerin A performansını ölçmek, sorunları tespit etmek ve A optimizasyonunu yapmak için kullanılıyor.
+
+59
+00:13:42,339 --> 00:13:49,079
+Bizim amacımız bu verileri kullanıcılara yükleteceğimiz, yani telefonlarına yükleyecekleri direkt bir uygulama sayesinde alabilmek.
+
+60
+00:13:49,220 --> 00:13:56,500
+Bu verileri operatörler aslında farklı şekillerde zaten toplayabiliyor. Bunlardan biraz sonra arkadaşım bahsedecek. Bunların dezavantajlarından da bahsedeceğim.
+
+61
+00:13:56,500 --> 00:14:03,000
+Zorluğundan bahsedecek. Biz bunları bir çözüm getirmek için aslında bu projeyi düşündük. Böyle geçebiliriz.
+
+62
+00:14:04,579 --> 00:14:08,659
+Herkese merhaba. Ben [öğrenci]. Buradan sonrasından ben devam ediyor olacağım.
+
+63
+00:14:09,860 --> 00:14:18,000
+Mobil Arap belirlerini belli parametreler cinsinden elde ediyoruz. Bu parametreler de A performansını değerlendirmek için önem taşıyor.
+
+64
+00:14:18,580 --> 00:14:24,400
+Bu parametreler farklı teknolojilerde kullanılan ve farklı değerleri ölçen parametreler.
+
+65
+00:14:24,740 --> 00:14:29,300
+Şimdi detaylarına bakacak olursak, birincisi Received Signal Code Power.
+
+66
+00:14:29,820 --> 00:14:36,580
+Bu 3G teknolojisinde kullanılan ve kablosuz sinyal gücünü ölçerek kapsama alanını belirleyen bir parametredir.
+
+67
+00:14:37,000 --> 00:14:39,600
+İkincisi Reference Signal Received Power.
+
+68
+00:14:39,600 --> 00:14:46,580
+Bu da LT yani 4G teknolojisinde kullanılan ve yine kablosuz sinyal gücünü ölçerek kapsama alanını belirleyen bir parametredir.
+
+69
+00:14:46,580 --> 00:14:48,580
+Üçüncü parametremiz...
+
+70
+00:14:49,524 --> 00:15:03,303
+Signal to Interference plus Noise Ratio. Bu da LTE teknolojisinde kullanılıyor. Sinyal kalitesini ölçmeye yarıyor ve sinyal ile girişim ve gürültü arasındaki oranı bize ifade ediyor.
+
+71
+00:15:04,043 --> 00:15:12,943
+Dördüncü parametremiz Downlink Career to Interference Ratio. Bu 2G, 3G ve LTE teknolojilerinde ortak olarak kullanılan bir parametre.
+
+72
+00:15:12,943 --> 00:15:17,524
+Sinyal kalitesini ölçüyor ve taşıyıcı sinyal ile girişim arasındaki oranı.
+
+73
+00:15:17,524 --> 00:15:40,443
+gösteriyor. Beşinci parametre Received Signal Strength Indication. Bu da yine önceki gibi 2G, 3G ve LTE teknolojilerinde ortak olarak kullanılan bir parametre. Sinyal gücünü yine aynı şekilde ölçüyor. Ve son parametremiz de Reference Signal Received Quality. Bu da LTE teknolojisinde kullanılan ve sinyal kalitesini ölçen bir parametredir.
+
+74
+00:15:42,443 --> 00:15:43,243
+Geçebiliriz.
+
+75
+00:15:45,556 --> 00:16:02,416
+RF verilerini toplamak için çeşitli yöntemler bulunuyor. Bu yöntemlerin detaylarına bakacak olursak, birinci yöntem cihazların sim kartları. Bu yöntem sayesinde kullanıcıların cihazlarındaki sim kartlar bağlı oldukları cihazın RF verilerini operatörlere gönderiyor.
+
+76
+00:16:13,556 --> 00:16:14,916
+defterlerini kullanıyor.
+
+77
+00:16:15,696 --> 00:16:17,615
+İçinci yöntem kullanıcıların mobil
+
+78
+00:16:17,615 --> 00:16:19,816
+uygulamaları. Burada bazı
+
+79
+00:16:19,816 --> 00:16:21,876
+mobil uygulamalar kullanıcı cihazlarının
+
+80
+00:16:21,876 --> 00:16:24,096
+ARP verilerini topluyor ve operatörlere
+
+81
+00:16:24,096 --> 00:16:25,796
+gönderiyor. Bunu da hem
+
+82
+00:16:25,796 --> 00:16:27,996
+A-Performance'ını test etmek için
+
+83
+00:16:27,996 --> 00:16:29,956
+hem de kullanıcıların hizmet kalitesini
+
+84
+00:16:29,956 --> 00:16:31,296
+ölçmek için kullanılıyor.
+
+85
+00:16:31,776 --> 00:16:33,615
+Bizim de projemizde kullandığımız
+
+86
+00:16:33,615 --> 00:16:34,836
+yöntem bu yöntem.
+
+87
+00:16:35,443 --> 00:16:48,563
+Dördüncü son olan yöntem ise ağ üzerinden toplama. Burada operatörler ağ cihazlarından ARAP verilerini topluyor. Bu yöntemde ağın belirli noktalardaki performansını ve trafik yükünü analiz etmek için kullanılıyor.
+
+88
+00:16:51,063 --> 00:16:52,063
+Geçabiliriz.
+
+89
+00:16:53,427 --> 00:17:06,268
+Az önce mobil operatörlerin RF verilerini nasıl toplayabileceğinden bahsettik. Bunun yanında operatörler kendi A6 yapısını diğer operatörlerle kıyaslamak istiyor ve bunun için de benchmarkingten yararlanıyor.
+
+90
+00:17:06,268 --> 00:17:14,668
+Burada iki farklı benchmarking yönteminden bahsedebiliriz. Birincisi Drive Test Benchmarking, ikincisi ise Wallcrown Benchmarking.
+
+91
+00:17:15,284 --> 00:17:27,164
+Bu yöntemleri hakkında biraz detay verecek olursak, Drive Test Benchmarking'de araç ile bir test yapılıyor. Araç belli bir yolu takip ediyor ve bu yol üstündeki verileri topluyor.
+
+92
+00:17:27,164 --> 00:17:39,864
+Yani daha geniş bir alanda gerçekleştirilen bir benchmarking yöntemi. İkinci yöntem Walk-Round Benchmarking ise yürüyerek veya ofis gibi sınırlı bir alanda dolaşarak yapılan bir benchmarking yöntemi.
+
+93
+00:17:43,284 --> 00:17:46,724
+daha az belli toplanmış oluyor. Geçebiliriz.
+
+94
+00:17:48,627 --> 00:17:52,987
+Bu Benchmarking yöntemlerinden bahsettikten sonra dezavantajlarına bakacak olursak,
+
+95
+00:17:53,467 --> 00:17:58,248
+Walkround Benchmarking'in yürüyerek veya sınırlı bir alanda gerçekleştiğini söylemiştik.
+
+96
+00:17:58,587 --> 00:18:04,327
+Bu yüzden sınırlı bir bölgeden veri topluyor. Yani ağın tüm performansını değerlendirmek için yeterli değil.
+
+97
+00:18:04,748 --> 00:18:09,567
+Bu yüzden de geniş bölge planlamaları ve optimizasyon için uygun olmadığını söyleyebiliriz.
+
+98
+00:18:12,096 --> 00:18:18,596
+Yol üzerinden veri toplanıyor, geniş bir alandan veri toplanıyor. Bu yüzden geniş bölgede optimizasyon mümkün.
+
+99
+00:18:18,996 --> 00:18:26,795
+Fakat verileri sadece yol üzerinden aldığı için rota dışında kalan alanlardan veri toplayamıyor. Bu yüzden detaylı bir optimizasyon için.
+
+100
+00:18:27,284 --> 00:18:40,403
+Yeterli veri olmadığını söyleyebiliriz. Bunun yanında araç ve ekipman gerektirdiği için de maliyet açısından yüksek bir yöntem. Bu yüzden çok sık bu testin yapılmasına mümkün olmadığını söyleyebiliriz.
+
+101
+00:18:43,796 --> 00:18:46,375
+Merhabalar, geri kalanla ben devam edeceğim.
+
+102
+00:18:52,135 --> 00:19:02,215
+Bundan sonraki kısımda Şeyman bahsettiği gibi Volker Hunt test ve Drive test test olarak RF optimizasyonunda kullanılıyor.
+
+103
+00:19:02,416 --> 00:19:10,936
+Yalnız burada Volker Hunt testin bir tez avantajı zaten öncesinde de Şeyman'ın bahsettiği gibi küçük alanlarda.
+
+104
+00:19:11,827 --> 00:19:22,827
+sağlıyor bu çalışmayı. Küçük alanlarda bu test gerçeklendiği için bizim aslında o yüzden Drive Test'e odaklanmamız daha mantıklı olacak bu konuda.
+
+105
+00:19:22,827 --> 00:19:34,827
+Drive Test'in birden fazla yöntemi mevcut. Bu yöntemlerden birincisi SSV. SSV yani Single Site Verification açılımı bu şekilde.
+
+106
+00:19:34,827 --> 00:19:38,827
+Ve tek bir baz istasyonu üzerinden testler gerçekleniyor.
+
+107
+00:19:39,571 --> 00:19:48,951
+Sonrasında Dynamic Dry Test var. Burada da araçlar üzerinde, otoyoldaki, otoyol üzerinde araç üzerinde bir test durumu var.
+
+108
+00:19:48,951 --> 00:19:56,371
+Ve burada da birden fazla baz istasyonu test ediliyor ve baz istasyonlar arasındaki geçişler özellikle dikkat alınıyor.
+
+109
+00:19:58,132 --> 00:20:03,672
+Üçüncü yöntem de MSV ya da Cluster Dry Test olarak geçiyor. Bu da Multiple Site.
+
+110
+00:20:04,115 --> 00:20:30,355
+Veri bir keşfini olarak geçiyor. Bu aslında şu demek oluyor. Belli bir bölgede bulunan baz istasyonlarını bir küme olarak düşünürsek, sadece bu kümedeki baz istasyonları baz alınarak bu baz istasyonlarına yakın bölgelerden araç geçiyor ve bu baz istasyonlar arasında kullanıcı geçiş yapıyor ve buradan veriler toplanıyor ve baz istasyonları bu şekilde değerlendiriliyor.
+
+111
+00:20:31,807 --> 00:20:52,548
+Burada da Drive Testing'in yaşam döngüsü bulunmakta. Burada görüldüğü üzere Drive Test verileri araçlardaki özel telefonlar vasıtasıyla toplanıyor. Bu telefonlara gelen veriler loglar halinde bulunuyor ve bu loglar daha sonrasında belli yazılımlarla açılıyor.
+
+112
+00:20:52,991 --> 00:21:04,391
+Açılan veriler, yani bu loglar anlamlı hale getirilip analiz ediliyor. Analiz edildikten sonra belli parametreler elde ediliyor.
+
+113
+00:21:04,391 --> 00:21:16,571
+Bu parametreler zaten öncesinde de belirtildiği gibi RSP, RSRP, SNR gibi parametreler mevcut. Burada elde ettiği parametrelerle problemli sağlar.
+
+114
+00:21:17,715 --> 00:21:33,735
+baz istasyonları da diyebiliriz. Belirleniyor. Belirlenen baz istasyonları, bundaki problemler, neden kaynaklı? Root cause bulunuyor. Daha sonrasında alınacak aksiyon belirlenip, bu düzeltme yapıldığı tansiyon tekrar drive test işlemi yapılıyor.
+
+115
+00:21:34,259 --> 00:21:45,840
+Ve böylece bu döngüde sürekli bir optimizasyon mevcut. Yalnız drive testin dezavantajlarını da Şeyman'ın bahsettiği gibi maliyet açısından belli problemler mevcut.
+
+116
+00:21:47,039 --> 00:21:54,420
+Bu nedenle sürekli aracı içerisinde bir çalışan ve yakıt gideri gibi maliyetli problemleri mevcut.
+
+117
+00:21:54,740 --> 00:22:21,740
+Zaten telekom operatörleri de bu tarz drive test projelerini genel olarak belli bir taşeron firmaya, bir üçüncü parti firmaya veriyor ve onlardan elde ediyor. Sonuçta yine bir maliyet söz konusu. Bir diğer dezavantajı ise sadece belirli bölgelerde, sadece yollar üzerinde, araçların girebileceği yerler üzerinde veriler toplanması.
+
+118
+00:22:22,451 --> 00:22:36,612
+Kullanıcıların yaya haldeyken ya da evdeyken ya da başka bir bölgedeyken bulunduğu veriler mevcut değil orada. Bundan kaynaklı olarak da Dry Test tam optimal bir çözüm sağlamıyor.
+
+119
+00:22:37,751 --> 00:22:48,332
+Görüldüğü üzere bu da bu ekrandaki görselde de görüldüğü üzere burada bir harita mevcut ve Dry Test verisinden elde edilen bir sample'ların bulunduğu her bir nokta bir.
+
+120
+00:22:48,980 --> 00:22:58,559
+RSRP değerine karşılık geliyor ve yeşil olan bölgelerde kapsam alanı iyiyken kırmızı bölgelerde gördüğü üzere kapsam alanı düşük.
+
+121
+00:22:59,380 --> 00:23:04,140
+Yalnız gördüğü üzere de sadece yollar üzerinde bu test yapılmış, küçük bir bölgede yapılmış.
+
+122
+00:23:04,900 --> 00:23:14,880
+Bunun nedeni de zaten sınırlı olmaz kaynağı, kaynağı sınırından kastığımız tek bir araçla ya da maksimum ne kadar araçla yapabiliriz.
+
+123
+00:23:15,667 --> 00:23:30,667
+Bunu düşünmek lazım bu konuda. Dediğim gibi burada Dry Test verisi mevcut ve dediğim gibi sınırlı bir alanda. O yüzden biz uygulamamızda Dry Test'in dezavantajını...
+
+124
+00:23:32,756 --> 00:23:43,736
+Kendi, acaba dedik ki kullanıcılar kendi uygulama üzerinden veriler, operatöre veriler sağlayarak giderebilir miyiz? Yani drive test yerine böyle bir uygulama gerçekleyebilir miyiz?
+
+125
+00:23:43,736 --> 00:23:53,155
+Ve bununla ilgili de bir arkitektür oluşturduk. Proje mimarimiz burada. En sağdan başlayacak olursak.
+
+126
+00:23:53,619 --> 00:24:00,419
+Baz istasyonları mevcut. Bu baz istasyonlarından bağlantısı arasında kullanıcılar zaten veri topluyor oluyor.
+
+127
+00:24:00,739 --> 00:24:07,739
+Ve bu verileri öncesinde de bahsedildiği gibi kullanıcı kayıt defterlerinde, direkt mobil uygulamalarda bu veriler çekiliyor.
+
+128
+00:24:08,559 --> 00:24:10,319
+Her türlü alınıyor kullanıcı tarafından.
+
+129
+00:24:11,399 --> 00:24:16,139
+Yalnız şöyle bir durum var. Normal zaten mobil operatörler bu verileri elde edebiliyor.
+
+130
+00:24:16,139 --> 00:24:20,399
+Ama farklı bir operatörün verisini elde etmekte.
+
+131
+00:24:21,011 --> 00:24:24,731
+Güçlük çekiyor, neden derseniz paylaşmıyorlar birbirleriyle.
+
+132
+00:24:25,631 --> 00:24:35,551
+Ve Dry Test'te her ne kadar optimizasyon için yapılmış olsa da bir yapılma sebebi de Dry Test'in Benchmarking öncesinde anlatıldığı üzere.
+
+133
+00:24:36,192 --> 00:24:42,131
+Benchmarking yani kıyaslama, kendi operatörüyle o bölgede başka bir operatörün verileri kıyaslanıyor.
+
+134
+00:24:42,131 --> 00:24:45,131
+Bu kıyaslamaya göre...
+
+135
+00:24:45,172 --> 00:24:52,632
+Hangisi daha iyi? Bu tespit ediliyor ve kullanıcı davranışı bu konuda değişir mi? Endişesiyle orada bir optimizasyon gerçekleşiyor.
+
+136
+00:24:54,412 --> 00:25:00,991
+Dediğimiz gibi operatörler kendi verilerini alırken dry testte ihtiyaç duyuyor, benchmarking için, başka operatörlerin vektörünü almak için.
+
+137
+00:25:01,091 --> 00:25:04,491
+Bu yüzden de biz uygulamamızda...
+
+138
+00:25:04,531 --> 00:25:13,932
+Direkt tüm operatörlere, bir operatöre tüm operatörlerin verilerini sunabilecek bir hizmet olarak sunmayı planladık.
+
+139
+00:25:14,751 --> 00:25:20,291
+Buradaki telefon simgelerinde de gördüğünüzde burayı bir mobil uygulama olarak düşünebiliriz.
+
+140
+00:25:20,831 --> 00:25:25,131
+Kullanıcı mobil uygulamaları mevcut ve bazı stasyonlarından veriler toplanıyor.
+
+141
+00:25:25,907 --> 00:25:33,327
+Toplanan veriler daha sonra API vasıtasıyla uygulama serverında bulunan bir API vasıtası, bir request atılıyor.
+
+142
+00:25:33,728 --> 00:25:38,667
+RF verileri API vasıtasıyla uygulama serverına iletiliyor.
+
+143
+00:25:39,748 --> 00:25:45,288
+İletilen veri işlenmesi gerekiyor. İşlenme sürecinde bir gecikme olmaması için.
+
+144
+00:25:45,907 --> 00:26:07,807
+Daha doğrusu işlemme süresinde bir gecikme olabilme ihtimalinde mesajların kaybolma ihtimali var. Yani verilerin kaybolma ihtimali var. Bundan kaynaklı olarak arada bir Message Queue Tool'u kullanmayı planladık. Bu Tool yüksek veri hızlarına olmak sağlığı için apacikafka olabilir diye düşünmüştük.
+
+145
+00:26:08,372 --> 00:26:30,172
+Diğer message queue uygulamaları da olabilir tabii. Bunu detaylı da incelememiz gerekir. RabbitMQ gibi olabilir. Daha sonrasında bir kuyruktan alınan veriler stream processing'de raw data işleniyor. İşlenen datayla parametreler oluşturuluyor. Yani daha doğrusu performans metrikleri oluşturuluyor veriler kullanılarak.
+
+146
+00:26:30,963 --> 00:26:52,364
+İşlenen veriler daha sonrasında bir time series database'de saklanıyor. Time series database'de saklanan veriler daha sonrasında kullanıcının web arayüzü, web yönetim arayüzünde, kullanıcıların, pardon, operatörlerin web arayüzünde görsellerinmek üzere.
+
+147
+00:26:52,847 --> 00:27:04,587
+Ostar Uçtan Restap'ı vasıtasıyla tekrar veriler çekiliyor. Bu şekilde operatöre bu veriler sunulmuş oluyor. Mimarimiz de bu şekilde diyebiliriz.
+
+148
+00:27:08,276 --> 00:27:13,056
+Ben Hüsami [öğrenci]. Ben de kullanıcı tarafından...
+
+149
+00:27:13,056 --> 00:27:13,996
+Ama sesin gelmiyor.
+
+150
+00:27:15,836 --> 00:27:17,156
+Sesin geliyor, bana geliyor.
+
+151
+00:27:18,296 --> 00:27:18,736
+En azından.
+
+152
+00:27:20,396 --> 00:27:21,036
+Pardon.
+
+153
+00:27:22,256 --> 00:27:26,956
+Kullanıcı tarafından RF belirlerin nasıl alınacağından bahsedeceğim.
+
+154
+00:27:26,956 --> 00:27:27,956
+Burada...
+
+155
+00:27:28,692 --> 00:27:42,872
+Speedtest uygulamasıyla kullanıcı tarafından daha önce RF parametrelerinde bahsettiğimiz RSRP, RSRQ gibi RF parametrelerini Restable vasıtasıyla yine operatör tarafına aktarılacak.
+
+156
+00:27:43,432 --> 00:27:48,692
+Burada biliyorsunuz Upload ve Download verileri Speedtest vasıtasıyla, yani Okla Speedtest uygulamasına benzer bir...
+
+157
+00:27:49,296 --> 00:28:12,576
+uygulamayla elde edebiliyoruz. Burada aynı zamanda kullanıcı, yani speed test uygulaması birçok kullanıcı tarafından, birçok insan tarafından kullanılıyor. Bu da birçok müşteriye, müşterinin uygulamaya kullanmasına sebep olacak. Bu sayede verileri hangi koordinatlarda, hangi zamanda elde edildiğini de tespit ederek operatör tarafına aktarılması sağlanacak.
+
+158
+00:28:16,211 --> 00:28:21,351
+Birçok insan tarafından kullanılması sebebiyle de birçok veriye elde etmemizi sağlayacak.
+
+159
+00:28:22,311 --> 00:28:23,471
+Diğer sayfaya geçebiliriz.
+
+160
+00:28:25,432 --> 00:28:26,811
+Sayfaya geçebiliriz.
+
+161
+00:28:28,435 --> 00:28:34,755
+Network Cell Unifolight uygulamasına benzer bir uygulamayla da yine RF verilerini elde edebiliriz.
+
+162
+00:28:34,755 --> 00:28:51,735
+Burada komşu baz istasyonların sinyal seviyeleri, kullanıcının bağlı olduğu operatörün o bölgede nasıl bir bağlantı seviyesi sağladığı ve diğer operatörlerin de bu bölgede nasıl bir bağlantı seviyesi sağladığı 4G, 2G, 3G bağlantı sağlıyor.
+
+163
+00:28:54,099 --> 00:29:07,259
+Güç seviyesi var. Bunları tespit etmemize yardımcı olacak. Bu mobil uygulamalar sayesinde hem operatör tarafında hem de kullanıcı tarafında birçok veriyi elde etmemizi sağlayacak.
+
+164
+00:29:07,779 --> 00:29:20,299
+Kullanıcı tarafında da bulunduğu koordinatlarda, bulunduğu ortamda diğer operatörler ve bu operatör, bağlı olduğu operatör nasıl bir bağlantı seviyesi sağlıyor haritalar üzerinden bunu gözlemleyebilecek.
+
+165
+00:29:20,692 --> 00:29:45,251
+Böylece hangi operatör, hangi bölgelerde diğer operatörlere üstünlük sağladığını tespit etmiş olacağız. Bu RF planlama ve RF optimizasyon için önemli. Bu kısımda bize yardımcı olacak bu mobil uygulamalardan elde ettiğimiz veriler. Aynı zamanda verinin web tarafında, görselleştirilmesi tarafında da verilerin elde etmesini sağlayacak. Sayfayı değiştirebiliriz.
+
+166
+00:29:48,180 --> 00:29:52,339
+Kullanıcı peki bu mobil uygulamayı kullanarak ne elde edecek? Yani kazanımı ne olacak?
+
+167
+00:29:53,299 --> 00:30:03,619
+Baktığımızda kullanıcı müşterisi olduğu mobil operatörün hangi bölgelerde kapsama sorunu yaşadığını ve hangi mobil ağ teknolojisini kullandığını haritalar üzerinde gözlemleyebilecek.
+
+168
+00:30:03,619 --> 00:30:14,980
+Aynı zamanda Speedtest uygulamasını örneğin kullandığında belli periyodlarda Speedtest yapması durumunda hediye olarak mobil servisler verilecek.
+
+169
+00:30:15,508 --> 00:30:25,107
+Mesela örneğin, belli perioklarda haftada bir yaptığında, 1 GB internet hediye edilmesi gibi, mobil servisler hediye edilecek, operatör tarafından.
+
+170
+00:30:25,107 --> 00:30:31,307
+Bu sayede, kullanıcıların uygulamaya aktif olarak girilmesi ve gerçek zamanlı verilerin elde edilmesi sağlanacak.
+
+171
+00:30:31,539 --> 00:30:47,339
+Tabi burada servisler hediye edildiği için proje bütçesinde bir bütçek gider olacak. Bu gider de operatörün bu proje uygulaması durumunda elde edeceği verim, yani maliyet veriminden öbür tarafa aktarılabilir.
+
+172
+00:30:48,459 --> 00:30:49,399
+Sayfaya geçelim.
+
+173
+00:30:50,963 --> 00:31:16,463
+Burada download verim örneklerini görüyoruz, kazanç örneklerini haritalar üzerinde. Burada hem kullanıcı hem de operatör tarafından haritalar üzerinde bağlantı durumu gözlemlenebilecek. Bu sayede operatör hangi koordinatlarda bağlantı durumu nasıl, bağlantı durumunu nasıl düzeltebiliriz? Belki teknik bir arıza var, belki bir arif optimizasyonları sıkıntı, planlama ve optimizasyonla ilgili bir sıkıntı var.
+
+174
+00:31:18,963 --> 00:31:28,443
+tespit ederek anında reaksiyon alabilecek, daha hızlı reaksiyon alabilecek harita rögrüzünden hızlıca tespit ederek sayfaya geçebiliriz.
+
+175
+00:31:30,103 --> 00:31:37,343
+Yine RSI PM'ye yapan örnekleri. Burada da gördüğümüz üzere güç değerlerini görüyoruz.
+
+176
+00:31:37,343 --> 00:31:46,583
+Güç değerleri bakımından operatörlerin hangi bölgede sorun yaşadı, hangi bölgede güçlü, hangi bölgede zayıf oldu, gözlemlenebilmekte geçebiliriz.
+
+177
+00:31:48,788 --> 00:32:05,708
+Evet, bir sonuç kısmı var. Burada tüm slide boyunca bahsettiğimiz gibi asıl amaç bir operatöre rakip operatörlerin verilerini sunabilme ve bunu da kullanıcılar vasıtasıyla yapabilme.
+
+178
+00:32:06,168 --> 00:32:15,307
+Kullanıcılara da bunun açısından, Şurkan'ın bahsettiği gibi de bunu da kullanıcılara belli avantajlar sağlayarak yapabilmekte.
+
+179
+00:32:15,663 --> 00:32:25,723
+Bu şekilde birden fazla bölgede çok sayıda veriyi aynı uygulama üzerinden operatörlere sunmayı hedefliyoruz. Dinlediğiniz için teşekkür ederiz.
+
+180
+00:32:36,276 --> 00:32:37,756
+Kurusu olan yok mu arkadaşlar?
+
+181
+00:32:42,579 --> 00:32:46,379
+Peki, o zaman ben sorayım, bu projenin bin birlik tarafı neresi?
+
+182
+00:32:49,139 --> 00:32:56,459
+Hocam, amaç yeni bir proje oluşturup bunu geliştirmek değil mi?
+
+183
+00:32:58,279 --> 00:33:02,139
+Bu noktada soru sorma hakkın yok, soruya cevap vermek durumun var.
+
+184
+00:33:02,511 --> 00:33:18,751
+Yani Binbir'in ne olduğunu, başka destek programlarının ne olduğunu vesaire her şeyi konuştuk. Sonra sizin Binbir projesi hazırlamanızı istedim. Birbirini de uzatma, okumanızı istedim. Haftalar boyu soru cevap kısmında konuşuyor olmamız gerekiyordu vesaireydi.
+
+185
+00:33:20,031 --> 00:33:25,811
+Soru şu, bu sunduğunuz projenin Binbir'lik tarafı neresi?
+
+186
+00:33:26,591 --> 00:33:27,831
+Binbir'lik cevabımız.
+
+187
+00:33:28,276 --> 00:33:39,776
+Desteklediği, girişim destekleri sonucu verdiği destek tanımlarsak eğer biz de böyle bir proje oluşturup bundan...
+
+188
+00:33:39,776 --> 00:33:45,196
+Proje notunuz sıfır. Onu rahatlıkla söyleyebilirim. Yani raporunuzla ilgili notunuz sıfır.
+
+189
+00:33:45,596 --> 00:33:49,776
+Sunumla ilgili sunum performansınıza dair notunuzu alacaksınız ama proje notunuz sıfır.
+
+190
+00:33:51,436 --> 00:33:55,276
+Yani biz öyle proje yazdık, destek olsun, bilim ne yapalım.
+
+191
+00:33:55,604 --> 00:34:21,104
+Hedefimiz bu değil arkadaşlar. Her destek programının kapsamı belli, sizden istenenler belli, değerlendirme metodologisi belli. Bunu uygun olarak bir proje önermeniz ve hazırlamanız için konuştuk. Ama bu projenin şu anlattığınız haliyle bin bir projesi olabilmesi mümkün değil. Bunu ticari bir faaliyet olarak yerine getirip yapmaya kalkarsanız yaparsınız.
+
+192
+00:34:22,483 --> 00:34:47,323
+Yani bunu mesela 1512 başbürosu olarak yapacağız deseydiniz, okey gayet güzel olur, tamam denenir falan derdim ama onda bile en azından şunu isterdim. Rakibiniz var mı? Başka kim? Ne yapıyor? Ne üzerinden? Ne ödeyeceksiniz? Ne yapacaksınız? Başkasının buna yaptığı ödeme ne? Sizin yaptığınız ödeme ne? Ne kadar geliriniz olacak? Ne kadar gideriniz olacak? Başa baş noktanız ne olacak? Falan gibi şeyleri sorardım.
+
+193
+00:34:48,083 --> 00:34:59,083
+Ama yani bunun şu anlattığınız haliyle binbir olabilmesi zaten mümkün değil. Binbir araştırma projesi ya. Arkadaşlar yani hani...
+
+194
+00:34:59,860 --> 00:35:06,039
+Hocam, bu proje zaten hem bir araştırma projesi şu an hem de piyasaya, sanayiye yönelik bir proje.
+
+195
+00:35:06,199 --> 00:35:09,079
+Ama araştırmasının ne olduğunu anlatıyor musunuz?
+
+196
+00:35:09,079 --> 00:35:20,900
+Evet, onu bahsettik. Hocam, onu anlattık zaten projenin başında. Benchmarking olayından bahsettik, Tri-Caster'den bahsettik, veri toplama yöntemlerinden bahsettik ve tüm bunları sanayiye yönelik bir şekilde çözüme kavuşturdum.
+
+197
+00:35:20,920 --> 00:35:22,619
+Bir şey soracağım, şu an kim konuşuyor?
+
+198
+00:35:23,020 --> 00:35:24,280
+[öğrenci], ben Yusuf Hocam.
+
+199
+00:35:24,740 --> 00:35:27,860
+Senin mikrofonun kapalı gözüküyor bende ama bir taraftan da...
+
+200
+00:35:27,860 --> 00:35:29,699
+Yalnız hocam ama emin olamadığım için.
+
+201
+00:35:29,720 --> 00:35:31,020
+Bir tane açtık.
+
+202
+00:35:31,579 --> 00:35:36,060
+Ha tamam yani hayal mi görüyorum gerçekten sen mi konuşuyorsun?
+
+203
+00:35:36,579 --> 00:35:38,780
+Yani ismini söyleyeceğim o yüzden söyleyemedim.
+
+204
+00:35:38,780 --> 00:35:45,500
+YouTube bak bunun araştırma projesi olması için söylediğiniz şeylerin hiçbir anlam ve önemi yok.
+
+205
+00:35:46,880 --> 00:35:50,460
+Neden yok sence? Niye bunu bu kadar çok net söyleyebiliyorum?
+
+206
+00:35:52,820 --> 00:35:56,800
+Binbir'in proje dokümanına baktınız mı?
+
+207
+00:35:58,039 --> 00:35:59,440
+Evet, doldurduk da hocam zaten.
+
+208
+00:35:59,920 --> 00:36:02,560
+Çok güzel. Peki o dokümanda hangi alanlar var?
+
+209
+00:36:09,811 --> 00:36:12,011
+Amaç, hedef, özgün, değer.
+
+210
+00:36:13,112 --> 00:36:14,131
+Evet, devam.
+
+211
+00:36:16,211 --> 00:36:21,112
+State of Art desem bir şey ifade eder mi size?
+
+212
+00:36:23,011 --> 00:36:24,652
+Duyamadım hocam, tekrar eder misiniz?
+
+213
+00:36:25,291 --> 00:36:28,251
+State of Art. Sesim gelmiyorsa chatten yazayım.
+
+214
+00:36:29,072 --> 00:36:29,871
+Duydum şu an.
+
+215
+00:36:31,251 --> 00:36:39,471
+Yani benim telaffuzum kötü olabilir, ses parezi yapabilir, şey yapmamış olabilirsiniz. State of heart desem, proje başvurusu desem ne ifade eder?
+
+216
+00:36:47,476 --> 00:36:50,076
+Şimdi, hadi bunu da geçtim.
+
+217
+00:36:52,235 --> 00:36:55,115
+Sunumunuzla ilgili de şundan çok rahatsız oldum.
+
+218
+00:36:55,796 --> 00:36:56,695
+Net söyleyebilirim.
+
+219
+00:36:58,815 --> 00:37:00,195
+En başından beri söylüyorum size.
+
+220
+00:37:00,296 --> 00:37:04,216
+Sunum teknikleriyle ilgili yapmanız ve yapmamanız gereken şeyleri söylüyorum.
+
+221
+00:37:05,496 --> 00:37:13,115
+Slidelerinizin tasarımı da, içeriği de, yani neredeyse dördünüzde slide'da ne yazıyorsa, [öğrenci] hariç.
+
+222
+00:37:13,652 --> 00:37:24,132
+[öğrenci]'ın daha şekilli grafikleri vardı. O kendi konuştu. Ama hani ekranda ne yazıyorsa onu çoğu zamanda başka yere bakarak okudunuz.
+
+223
+00:37:25,771 --> 00:37:34,351
+Artı hazırladığınız slide'lara bakın. Arkadaşlar dört kişisiniz. Düz fon üzerine full yazı ya da grafik.
+
+224
+00:37:35,188 --> 00:38:01,164
+Daha önce yapılan slide'ları gördünüz, vesaireyi gördünüz, neler olması, neler olmaması gerektiğini vesaire konuştunuz. Şu an sizin üzerinizden gidiyor gibi olabilirim, amacım o değil. Ama somut örnek üzerinden ne beklediğimi, ne istediğimi anlatmak istiyorum. Geçen hafta da benzer şeyler vardı. Bunun dışında en temel şeylerden biri, süreniz var, belli bir süreniz var. Ama o süreyi...
+
+225
+00:38:01,619 --> 00:38:09,619
+Çok kötü kullanıyorsunuz. Bu sefer bölmedim. Geçen hafta arkadaşları böldüm. Hadi dedim bu sefer bölmeyeyim. Güzel başlayalım bu haftaya.
+
+226
+00:38:11,119 --> 00:38:22,380
+Ama hani sanki hiç süre sınırı yokmuş gibi, her şey sizinmiş gibi. Yani bitmedi bir türlü. [öğrenci] yazıya bakmadan konuştu ama [öğrenci] bu sefer çok konuştu mesela.
+
+227
+00:38:23,284 --> 00:38:24,164
+Öyle söyleyeyim.
+
+228
+00:38:24,644 --> 00:38:25,623
+Sınıf tekrar kaçtı.
+
+229
+00:38:25,724 --> 00:38:28,123
+Hocam ben bu konuda bir şey değinmek istiyorum da.
+
+230
+00:38:28,744 --> 00:38:30,524
+Bir saniye.
+
+231
+00:38:31,423 --> 00:38:34,083
+Bunları sizin özelinizde söylüyorum.
+
+232
+00:38:34,244 --> 00:38:35,484
+Çünkü şöyle bir sıkıntı var.
+
+233
+00:38:36,583 --> 00:38:39,364
+Ama hani derdim sizin özelinizde söylemek değil.
+
+234
+00:38:39,884 --> 00:38:42,704
+Herkes muhteşem yaptı da siz yanlış yaptınız vesaire değil.
+
+235
+00:38:43,104 --> 00:38:44,484
+Herkes aynı hataları yapıyor.
+
+236
+00:38:45,204 --> 00:39:10,112
+Bu beşinci grubu dinlediysek, beş grupta da aynı, benzer, bir aşağısı, bir fazlası aynı hatalar var, aynı şeyler var. Bunu feedback olması adına söylüyorum. Çünkü ortaya söyleyince kimse üstüne alınmıyor. Biz yaptık, biz güzel yaptık, dönüyorsunuz galiba. Böyle bir şey oluyor, bir iyileşme olmuyor çoğu zaman. Kimse alınmıyor, aynen devam ediyor. Dolayısıyla...
+
+237
+00:39:10,112 --> 00:39:22,592
+Beklenti ya da istenen bu değil, bu seviyeler değil, çok daha yukarısı. Onu kesin söyleyebilirim. Buyur [öğrenci], sen de söyle, ondan sonra diğer gruba geçelim.
+
+238
+00:39:24,431 --> 00:39:30,771
+Sunumu kapatın, size zahmet, diğer grup paylaşmaya başlasın. Biz konuşurken o işte yürüsün.
+
+239
+00:39:31,411 --> 00:39:39,411
+Hocam benim bahsetmek istediğim konu burada, hani Bidebbinbir'in tam olarak amaçını anlayamamış olabiliyoruz ama biz yaklaşık...
+
+240
+00:39:39,744 --> 00:39:47,984
+Bir ay oldu sanırım. Bir ay önce bu dokümentasyonu yolladık, proje başlığını yolladık, bu projenin amacıyla ilgili bilgileri yolladık.
+
+241
+00:39:48,484 --> 00:39:55,824
+Bu amaçla ilgili bize bir feedback verseydiniz, biz de ona göre belki bir dönüşü değişiklik yaparız dedik.
+
+242
+00:39:56,284 --> 00:40:02,704
+Şimdi hazırlandıktan sonra, demek o zaman okunmadı bizim dokümanlarımız, öyle anlıyorum ben.
+
+243
+00:40:03,347 --> 00:40:07,788
+Yani hiçbiri okunmamış ki biz de şu an direkt projeden sıfır almak.
+
+244
+00:40:09,807 --> 00:40:16,688
+Sizin sıfır almanızın okunmuş, okunmamış olmasıyla bir alakası yok. Okunmadan sıfır almazsınız zaten. O bir.
+
+245
+00:40:16,688 --> 00:40:25,268
+İki, şimdi okumaktan bahsediyorsak dersin sılabısından tut, dersin ilk altı haftasında anlattığım şeylerin hiçbiri dinlenmemiş ki.
+
+246
+00:40:26,643 --> 00:40:36,043
+Bunların hiçbiri uygulamaya dökülmemiş. Bunlar hiç uygulamaya dökülmemiş ki soru cevap haftalarında gelip bana bununla ilgili hiçbir şey sorulmamış. Değil mi?
+
+247
+00:40:36,663 --> 00:40:38,203
+Yani biz... Pardon.
+
+248
+00:40:38,343 --> 00:40:43,383
+Bunun da hani mantığı hala oturtulmamış ki bak ne yapıyoruz bir deadline var.
+
+249
+00:40:43,760 --> 00:40:47,340
+O gün herkes teslim edecek, ondan sonra da sunumunu yanıza yapacaksınız.
+
+250
+00:40:47,880 --> 00:40:52,280
+Oradan sonra ben size hiçbir şey, feedback vereceğim demedim, vermeyeceğim de, vermem de.
+
+251
+00:40:52,340 --> 00:40:59,900
+Çünkü sen bir projeyi submet ettikten sonra sunumuna gidene kadar sana, ay burasını da böyle yapsaydım daha iyi olurdu, [öğrenci] demez kimse.
+
+252
+00:41:00,780 --> 00:41:03,099
+Çünkü o zamana kadar o işi yapmış olman gerekir.
+
+253
+00:41:03,619 --> 00:41:09,960
+Dolayısıyla neymiş? Kendi eksiklerini görmeden, fark etmeden, bunların farkında bile olmadan,
+
+254
+00:41:10,335 --> 00:41:13,535
+Başkalarına böyle şeylerle gelmeyecek misin? Tamam mı?
+
+255
+00:41:14,255 --> 00:41:17,495
+Yok, yani daha yardımsever olabilirdiniz dedim. Tabii bu sizin kararınız.
+
+256
+00:41:17,495 --> 00:41:26,955
+Yok, ben yardımsever olmak durumunda değilim. Ben bilmem kaç hafta ders anlatmışım. Sen dinleyebilirdin. Bu tartışmayı burada bırakıyorum. Bundan sonra kalp kıracağım artık.
+
+257
+00:41:27,615 --> 00:41:36,447
+Ya bu başka bir haksizliğe gidiyor olan şu an. İşinizi doğru düzgün yapmayıp ondan sonra da değerlendirilmesi noktasında böyle...
+
+258
+00:41:36,447 --> 00:41:47,027
+Alınganlık gösteriyorsanız, böyle üste çıkmak için tuhaf sebepleri üretiyorsanız, başka bir yere gider o iş. O yüzden bu konuşmayı burada kesiyorum. O yüzden de ikinci gruba geçiyoruz.
+
+259
+00:41:47,927 --> 00:41:49,147
+Teşekkürler, sağ olun.
+
+260
+00:41:52,659 --> 00:41:58,920
+Ben maalesef teşekkür edemeyeceğim. Beklentimin çok altında. Üstüne yapılan tavır da hiç hoş değil.
+
+261
+00:42:01,980 --> 00:42:02,579
+Evet.
+
+262
+00:42:04,639 --> 00:42:05,980
+Merhaba hocam, başlayayım mı ben?
+
+263
+00:42:07,139 --> 00:42:08,420
+Ekip tamam mı herkes?
+
+264
+00:42:08,720 --> 00:42:17,159
+Ekip şöyle, grup ondan ben varım. Döküman da ben hazırladım. Sunumu da ben hazırladım. Arkadaşlar, katılım sağlamak var. O yüzden tek yapacağım.
+
+265
+00:42:17,240 --> 00:42:18,659
+Tek kişi. Peki, tamam.
+
+266
+00:42:18,960 --> 00:42:19,159
+Aynen.
+
+267
+00:42:19,668 --> 00:42:46,188
+Öncelikle kendimi tanıtayım. [öğrenci] ben. [kişisel bilgi] CEC++'la haberleşme uygulamaları yapıyorum. Benim projem host-based IZS implemented in the Linux kernel using outfile dataset. Basitçe yani Linux kernelunda oluşturulmuş bir tane antivirüs sistemi diyebiliriz.
+
+268
+00:42:46,543 --> 00:42:59,223
+Anlattıkça daha da netleşecek. Sunum şöyle ilerleyecek. İlk önce amaçtan bahsedeceğim. Daha sonra Dataset'ten konuşacağım biraz. İş paketleri ve risklerden de bahsettikten sonra sunumu bitireceğim.
+
+269
+00:43:01,563 --> 00:43:08,023
+Siber güvenlik tabii bizim hayatımızın bir parçası. İşte ağlar oluşturduk, bu ağları birbirine bağladık.
+
+270
+00:43:08,403 --> 00:43:18,024
+Öyle bir hale geldi ki neredeyse herkes birbirine bağlandı. Burada bir sürü kaynak paylaşımı var. Bu kaynak sizin gizlileriniz de olabilir. Buraya bir sınır koymanız lazım.
+
+271
+00:43:18,164 --> 00:43:26,864
+Tabii bu sınır firewalllarla başladı. Daha öncesinde de başladı da firewalllar örneğin bir network için ilk giriş katmanı olabilir, güvenlik katmanı.
+
+272
+00:43:27,315 --> 00:43:44,556
+Bu fireball'ların kabiliyetleri tabii gelişmiş saldırıları engellemeye yetmiyor. Tanım gereği çünkü zaten onu yapmak zorunda da değil. Tanım gereği onları yapmayacak da, gelişmiş saldırılara karşı bir savunma getirmeyecek de. Bunun için ayrı sistemler var. Bunlar intrusion deduction ve presentation system deniliyor genelde.
+
+273
+00:43:45,235 --> 00:43:53,895
+Intrusion Detection Systems, sisteminizde konumlandırdığınız yere göre host-based ve network-based ikiye ayrılıyor.
+
+274
+00:43:54,175 --> 00:44:05,055
+Network-based olan örneğin kendi ağınızı monitör ettirip, gelip giden paketleri, network flow'larını falan analiz ettirip, çeşitli karar mekanizmaları aldığınız sistemler.
+
+275
+00:44:05,675 --> 00:44:11,135
+Bunun host-based olanı da bir host da işte belki log analizi yapıyordur, belki başka bir şey yapıyordur.
+
+276
+00:44:11,184 --> 00:44:32,184
+Belki benim yapacağım sistemdeki de sistem çağrılarını takip ediyordur. Bu da host tarafında bir karar almaya çalışan sistemler. Bunlar tabii sistemde kuruldukları yere göre iki aradılar. Şimdi de veri işleme tekniklerine göre, hani neye göre intrujim var, yok demesine göre de genel olarak iki aradılar. Bunlardan bir tane signature based. Diğeri de...
+
+277
+00:44:32,335 --> 00:44:54,815
+Anomali-based. Signature-based olanlar bir prior bilgi bekliyor sizden. Yani belki bir string matching yapıyordur çok basit bir şekilde. Belki uzman sistemdir. Belki rule kural tabanıdır. Ama oraya nasıl bir şey olacağını sizin vermeniz lazım. Önceden bir şeyler vermeniz lazım o sisteme. Bu bir imza tabanı oluyor genelde. Signature tabanı.
+
+278
+00:44:57,331 --> 00:45:11,911
+İşte bunun signature basen dışında da anomali tabanlı sistemler var. Anomali tabanlı sistemlerde genelde siz normal diye tanımladığınız bir şey belirliyorsunuz, bir kullanım, bir davranış belirliyorsunuz. Bunun dışına çıkıyorsa da anomali de işaretliyorsunuz.
+
+279
+00:45:12,692 --> 00:45:24,571
+Buradan neden bir sıkıntı var? Çünkü zero day denilen örneğin bir malware çıktı ortaya. İlk çıktığı zaman bununla ilgili bilgi yok. Bir imzası var. Herhangi bir bilgi yok muhtemelen kimsede olmayacak. Sadece malware yazanları da olacak.
+
+280
+00:45:24,992 --> 00:45:29,412
+Bunu tabii ki signature-based yakalayamayacak. Çünkü bir signature yok. Yani onu tanımayacak bir şey yok.
+
+281
+00:45:29,932 --> 00:45:36,172
+Burada bu 0D atakları engelleyen get-anomali detection modelleri engelliyor bu IDS'lerden.
+
+282
+00:45:38,112 --> 00:45:42,752
+Burada tabii bizim projemizde de anomali detection yaptık. Çünkü ben anomali detection yaptım.
+
+283
+00:45:43,692 --> 00:45:45,932
+Çünkü 0D atakları engellemek istiyorum.
+
+284
+00:45:49,619 --> 00:46:11,639
+Şimdi veri setinden bahsedecek olursak, intrusyon, animal detection denilen bir sürü güvenlik veri seti var, siber günlükle ilgili. Bu KDD var, DARPA var. ATFA da onlardan bir tanesi, Australian Defense Force. Bunlar, 2014'te yayınladılar bunu, yanlış hatırlamıyorsam. KDD 99'da mesela, bunun temel meselesi yeni olması.
+
+285
+00:46:12,244 --> 00:46:21,244
+Tabii güncel bir sistem, çağrılar değişmiş olabilir en basitinden. Bunun için güncel bir veri seti kullanmak istedim. Burada...
+
+286
+00:46:21,711 --> 00:46:40,731
+Gördüğünüz trace yazan yerler şey oluyor, bir trace, yani sekans oluyor aslında. Mesela onun içerisinde 833 tane sekans varmış. Burada kusura bakmayın şey de çıkmamış herhalde. Örneğin o trace'den 833 tane trace'den, training datadan toplamda 338077 tane sistem çağrısı var.
+
+287
+00:46:41,172 --> 00:46:53,352
+Validation Data'da işte 4370 iken trace var. Bu bir sekans. Bunun toplamında 2 milyon tane sistem çağrısı varmış. Burada hem sistem çağrıları işaretti hem de trace'ler işaretti.
+
+288
+00:46:54,068 --> 00:47:12,268
+Tabii bir sonraki slide'da da göstereceğim. Burada ben trace'lere baktım. Çünkü benim için bence bir sekans önemli. Hani sistem çağrıları tek başına elbette belki bir şey göstermeye de olabilir ama modeller var ona bakın. Yani bir trace başladı bitene kadar işte yaptığı sistem çağrıları bence orada bir davranış belirtiyor olacak.
+
+289
+00:47:15,059 --> 00:47:29,299
+Şimdi iş paketlerine bakacağız. İlk iş paketi bu veri setini kullanarak bir LSTM modeli oluşturma. Bu veri set üzerinde yapılmamış model yok neredeyse. Bir sürü model yapılmış. SVM'den tutun, KNN, rojistik regülasyonlar.
+
+290
+00:47:29,679 --> 00:47:57,679
+Hidden Marco modeller, hepsi yapılmış. Zaten benim projenin Unique tarafı bu değil, LSTM'de yapılmış bu arada. Bunların hepsinin test başarı çok yüksek ama saha başarıları yok. Oluşturulan modeller sahada şey olmamış, denenmemiş. Burada benim projenin koca şey bu başka modeller içinde olabilmiş. Bunu sahada denemek. Çünkü bu inhai üründe, linkscanlarında implement edilecek ve sahadaki şeyleri yakalamaya çalışacak. O modeliniz testte çok başarılı olabilir ama sahada denemek.
+
+291
+00:47:57,679 --> 00:48:04,419
+Bu proje modeli değiştirerek başka modelleri de sahada deneyebileceksiniz burada. Aslında onu demeye çalışıyorum.
+
+292
+00:48:05,859 --> 00:48:15,019
+Tabi bu model oluşturulduktan sonra ilk olarak UserSpace'de yapılacak bir programın yaptığı sistem çağrılarını bulup modele input olarak verebilmek.
+
+293
+00:48:15,019 --> 00:48:20,139
+Bunu S3S programı yapıyor zaten. S3S'e bir işte burada oluşan sistem çağrılarını.
+
+294
+00:48:20,500 --> 00:48:33,120
+Çok basit bir şekilde stringten integer'a çevireceksiniz. Çünkü veri setinde yapılan her sistemçi alanına bir integer karşılığı var. Integer sekansı var aslında veri setinde. Burada basit bir şekilde bunu alıp şeye çevireceksiniz.
+
+295
+00:48:33,780 --> 00:48:43,860
+Ben çevireceğim. Bunu basit bir şekilde yaptığı sistemçi alanına alıp bir tane integer sekansına çevirip onu modele vereceğim. Ama burada oluşturmak var. Üçüncü üç paketinde de.
+
+296
+00:48:44,436 --> 00:48:57,635
+Tabi, users az önceki iş paketi 2'deki işlem, userspace tarafında yapılıyordu, S3S'de. Bunu İHA üründe, kernel taramında yapılacağı için, kernel'da nasıl bir sistemle biz proseslerin sistem çağrılığını bulabiliriz diye araştırdım.
+
+297
+00:48:58,536 --> 00:49:08,396
+DoSysCold 64 rutini, kernel'ın yapılan bütün 64 bit sistem çağrılığını şey yapabiliyor, handle adam rutini orası.
+
+298
+00:49:09,043 --> 00:49:17,323
+Bunun içerisinde kernel proplarla şey yapabiliyormuşsunuz, debug amaçlı müdahale edebiliyorsunuz oraya.
+
+299
+00:49:18,963 --> 00:49:28,363
+Tabii ben de oraya müdahale ederek yapılan her sistem çağrısının hem prosesini hem de sistem çağrısı id'sini alıp kernel da bir yere koyayım.
+
+300
+00:49:28,363 --> 00:49:31,043
+Kernel Space'de yine bir veri yapısına koyacağım.
+
+301
+00:49:33,876 --> 00:49:40,416
+Bir sonraki iş paketinde de, dördüncü iş pakette de bu az önce Visual Space'te bu uygulama çalıştırdık.
+
+302
+00:49:40,476 --> 00:49:41,756
+S-System çalanı bulduk.
+
+303
+00:49:42,115 --> 00:49:44,796
+Bunu tabii modele feedleyip cevabını almak.
+
+304
+00:49:45,016 --> 00:49:45,716
+Bu da bir iş paketi.
+
+305
+00:49:45,776 --> 00:49:51,836
+Bu da yapıldıktan sonra Visual Space'te bir programın anomallik olmadığını bulabiliyorsunuz.
+
+306
+00:49:51,896 --> 00:49:53,176
+Ama hala Kernel Space'te değilsiniz.
+
+307
+00:49:54,416 --> 00:49:59,956
+İş paketi 5'te de Kernel Space'te bu iş paketi 4'teki Kernel Space'te bunu aktarmak.
+
+308
+00:50:00,000 --> 00:50:10,420
+Dörtte ne yapıyorduk? User Space'te anomalip olmadık buluyorduk. Üçte Kernel Space'te bu nasıl yapılacağını anladık. Beşte de bu bilgilerini tamamıyla birleştirip Kernel Space'te çalışan bir model geliştiriyoruz.
+
+309
+00:50:12,180 --> 00:50:25,059
+Risklerden bahsedecek olursak, ilk oluştuğu analizye modelinin yüzde seksen altında çıkması. Yüzde seksen genel olarak en düşük yüzde seksen çalışmalarda gördüğüm için benim de en az yüzde seksen yapmam gerektiğini düşündüm.
+
+310
+00:50:25,844 --> 00:50:37,244
+Tabii bu çok düşük bir risk. Çünkü bir sürü model yapılmış ve hepsinin test başarısı gayet yüksek. Bunun çıkması düşük. Ama çıkarsa bile test başarısı daha yüksek olan bir model seçilip devam edilebilir.
+
+311
+00:50:38,144 --> 00:50:45,584
+İkinci riskimiz ise sahada bunun düşük olması. Çünkü animal detection'ların zaten genel meselesi bu pozitif ve false negatifler yüksek çıkar.
+
+312
+00:50:46,003 --> 00:50:53,744
+Bunun da bir şekilde belki destek alınarak ya da durumun kendisi incelenip daha yükseltilmesi gerekecektir.
+
+313
+00:50:55,043 --> 00:50:56,844
+Anlatacaklarım bu kadar. Teşekkür ediyorum.
+
+314
+00:51:00,724 --> 00:51:03,164
+Selam [öğrenci]. Benim sorum var mı?
+
+315
+00:51:04,044 --> 00:51:04,584
+Evet, bu yüzden.
+
+316
+00:51:08,144 --> 00:51:14,004
+[öğrenci] ben. Bir şey soracağım önce abi. Bu Trace'den kastım tam olarak nedir?
+
+317
+00:51:16,884 --> 00:51:20,304
+Benim görüntü gitti galiba. Yo. Cihan mı gitti?
+
+318
+00:51:21,344 --> 00:51:24,604
+Yo, senin görüntün var da [öğrenci] dondu galiba.
+
+319
+00:51:28,755 --> 00:51:30,355
+Çok da zor sormamıştım ama.
+
+320
+00:51:31,215 --> 00:51:31,835
+Efendim?
+
+321
+00:51:32,415 --> 00:51:33,955
+Çok da zor sormamıştım ama dedim.
+
+322
+00:51:35,295 --> 00:51:37,875
+Yok öyle bir şey değil. Herhalde teknik bir sıkıntı.
+
+323
+00:51:37,875 --> 00:51:38,175
+Yok yok.
+
+324
+00:51:41,175 --> 00:51:43,855
+Sen tam ne sordun? Ben başını kaçırdım yani.
+
+325
+00:51:44,715 --> 00:51:47,995
+Trace'den kastının ne olduğunu sordum aslında. Düştü.
+
+326
+00:51:48,615 --> 00:51:49,375
+Geldi.
+
+327
+00:51:50,867 --> 00:51:52,867
+Yöntemleri.
+
+328
+00:51:52,867 --> 00:51:55,987
+Pardon, şey gitti bir anda, ben mi gittim, siz mi gittiniz?
+
+329
+00:51:55,987 --> 00:51:57,987
+Sitesini de buraya mı getirdin?
+
+330
+00:51:59,987 --> 00:52:01,708
+Şöyle şey edeyim ben bunu.
+
+331
+00:52:02,507 --> 00:52:04,507
+Şurada S-stress-ls yapılmış.
+
+332
+00:52:05,507 --> 00:52:07,188
+Şimdi sistem çaresi ne demek?
+
+333
+00:52:07,427 --> 00:52:09,887
+Aslında sizi user space'dan, kernel space'e geçiren mekanizma.
+
+334
+00:52:10,420 --> 00:52:34,139
+Biri ring 0, işte ring meselesi var burada, biri ring 3. Kaynağı kernel kullanıyor. İşte kernel IO yapıyor. Ondan sonra yeni proses oluşturup, proses table'na, proses bloğuna koyan kernel bu işlerinde tamam, kernel kaynak yönetiyor. Bir user space programı şey istediği zaman kernel'a gidiyor ve bundan bunu yapmasını istiyor. İşte IO'ya gidecek, kernel IO'ya gidiyor, getiriyor, veriyor.
+
+335
+00:52:34,527 --> 00:52:42,187
+Bu geçişi sağlayan şeyler sistem çağrıları. Örneğin işte bizim sende atılıyorsun mikro işlemci dersinde int21 vardı.
+
+336
+00:52:42,927 --> 00:52:50,367
+Yılsız'da biz ders alırken int21 ne yapıyordu? Ekrana yazdıran şeydi. İşte bunun gibi int80 var.
+
+337
+00:52:50,607 --> 00:52:56,627
+User Space'den. Kernel Space'e geçerken int80'e atıyorsunuz. O interrupt, işte gerekli rezistörler dolayı bunu sistem çağrıları yapıyor.
+
+338
+00:52:57,527 --> 00:52:58,827
+Kernel Space'e geçiyor.
+
+339
+00:52:59,731 --> 00:53:13,851
+Örneğin işte printf yaptığınızda, siz ekrana bir şey yazacaksınız. Printf gidiyor, write sistem çağrısı çağırıyor. Write sistem çağrısı gerekli, registrarları set ediyor, libc yapıyor bunu. Ondan sonra kontrolü kernel'a veriyor, sohtenin tarafta. Kernel'ı hallediyor, gene kontrol kendisine döndürüyor.
+
+340
+00:53:15,072 --> 00:53:25,052
+Bir, ls'de diyelim ki şey yapacaksınız, işte bir file sistemde bir şey listeleyeceksiniz. Bu ls'nin kendisi şurada yapılan sistem çağrılarını yapıyor.
+
+341
+00:53:25,619 --> 00:53:30,220
+İşte bu execvi forkladıktan sonra içerisine şeyle dolduruyor.
+
+342
+00:53:30,360 --> 00:53:31,199
+Shelliflock diyor orada.
+
+343
+00:53:31,380 --> 00:53:34,159
+BRK hipten şey alan sistem çağrısı.
+
+344
+00:53:34,340 --> 00:53:36,400
+Mallock arka tarafta BRK'yi kullanıyor.
+
+345
+00:53:37,000 --> 00:53:38,519
+Akses sistem çağrısı ben de bilmiyorum ama.
+
+346
+00:53:38,940 --> 00:53:41,000
+Ben burada bir müdahale edeceğim artık ya.
+
+347
+00:53:41,559 --> 00:53:42,840
+Bir durduracağım seni.
+
+348
+00:53:43,860 --> 00:53:45,440
+Yoksa o iş bitmeyecek.
+
+349
+00:53:46,260 --> 00:53:47,860
+Soruyu bir daha alabilir miyim?
+
+350
+00:53:48,596 --> 00:53:57,135
+Buradaki trace'den kastın nedir demiştim. Bu soru çok basit bir soru. Cevabı daha da basit. Ama sen dolanıp dolanıp duruyorsun. Farkında mısın?
+
+351
+00:53:57,536 --> 00:54:00,855
+Evet hocam. Trace şurada yazılan şeyler işte. Sistem çağrılarının arka arkaya sekansı.
+
+352
+00:54:01,775 --> 00:54:07,775
+Yani bir programın gerçekleştiği sistem çağrılarının sekansına trace diyoruz bu.
+
+353
+00:54:08,096 --> 00:54:08,395
+Evet.
+
+354
+00:54:08,395 --> 00:54:15,556
+Yani hani cihanı bıraksam galiba iki saat kadar daha anlatacak ama tam da ne olduğunu söylemeyecek.
+
+355
+00:54:15,923 --> 00:54:35,324
+Bütün sistem çağrılarını da tek tek örnekleyecek. Sorulara cevap, yani soruya cevap net, temiz, anlaşılır olmalı. Cevap verebilmek güzel, çeşitlendirmek, anlatmak, ekstra anlatmak güzel, okey. Ama yani hedefe bağırmalı. O hedefin etrafında böyle zikzak çizerek.
+
+356
+00:54:35,827 --> 00:54:56,728
+Olmuyor, tamam mı? Yani şu söylediğin net cümleyi bir türlü kurmadın. O yapar, bu bunu yapar diye gidiyoruz. Bunun dışında şeyi de söyleyeyim, bugün herkese şeyinden gideceğim, birebir geri dönüşünü vereceğim çünkü öbür türlü kimse bir şey almıyor anladığım kadarıyla.
+
+357
+00:54:58,579 --> 00:55:22,579
+Tamam, tek başına kalmışsın. Tek başına ilk dev kadro olmuş. Orada biraz zorlamıştır. Ama bir taraftan da bu iş senin yabancı olduğun bir iş değil. Biraz yeniden ısıtılıp karşıma gelme durumu var. Dolayısıyla burada beklediğim şey, özellikle sunum...
+
+358
+00:55:23,123 --> 00:55:29,703
+Evet, bir tarz tarafı var ama daha sonra ona bir şeyler itelenmiş, biraz gece kondu vari hale gelmiş.
+
+359
+00:55:30,863 --> 00:55:37,843
+Yani bir diğer şey, bir şekilde sunumunu template halinden gösteriyorsun.
+
+360
+00:55:38,003 --> 00:55:41,343
+Yani şeyden play'e basıp da sunumu başlatmak bile.
+
+361
+00:55:42,923 --> 00:55:48,403
+Yani öyle bile olsa ama koyduğun ekran görüntüleri vesaire doğru düzgün görünmüyor da zaten.
+
+362
+00:55:48,847 --> 00:55:59,727
+Artı yani iş paketleriyle ilgili az şey yazmak okey güzel ama hani en azından o iş paketlerinde ne yapacağını söylüyorsun da hiç nasıl yapacağına dair bir şey söylemedim.
+
+363
+00:55:59,727 --> 00:56:11,627
+Yani mesela user space'de ya da başka bir noktada trace ettiğin şeyi kendine space'de yapabilir hale geleceğim. Tamam ama nasıl yani ne kullanarak kısmını net.
+
+364
+00:56:12,467 --> 00:56:22,587
+Söylemedin. Bir iş paketinin de daha 3'te ya da 4'teydi galiba. Yani sayıları vesaireyi karıştırmış olabilirim.
+
+365
+00:56:25,167 --> 00:56:29,547
+3'te kernel toplarla kernel da o sistem tarasını almam var hocam.
+
+366
+00:56:31,168 --> 00:56:48,848
+Anomalinin nasıl anomali olup olmayacağını anlayacağına dair, yani şu ana kadar ne yapılmış, en çok neyle başarılı görülüyor, hani sen burada nasıl bir fark yaratacaksın, mesela ya bin bir projesi, araştırma projesi, araştırma kısmı, temelde bu tarafı aslında.
+
+367
+00:56:48,848 --> 00:56:58,088
+Hani bunun detayıyla ilgili, hani bütün detayı buraya koy demiyorum ama en azından keywordlerin burada olması, bunları bize söylemen pek söylemedin.
+
+368
+00:56:58,452 --> 00:57:13,492
+Eğer ben bir yerlerde bir şeyleri kaçırmadıysam, söylemedin, asıl bunların olması lazımdı, bunları bekliyordum, onu da söyleyeyim. Sana da geçmiş olsun diyeyim. Diğer gruba geçelim.
+
+369
+00:57:13,492 --> 00:57:18,152
+Teşekkür ederim hocam. Bir şey daha sorabilir miyim? Projeyi de yaptım ya.
+
+370
+00:57:19,923 --> 00:57:27,563
+Buradaki bir literatür taraması ben onu anladım. Gerçi ben kendim yaptım da onu burada size gösteremedim. O bir sıkıntı değil mi? Hani daha önce neler yapıldı?
+
+371
+00:57:28,803 --> 00:57:43,983
+Ya bunu, yani şimdi herkesin bir raporunu ezbere hatırlayamıyorum ama raporunda şey olduğunu hatırlıyorum. En azından yöntemlerle ilgili bazı bilgilerin olduğunu hatırlıyorum. Ha, şeyini kontrol edemedim daha.
+
+372
+00:57:44,403 --> 00:57:51,823
+O tura daha sıra gelmedi. Hani yaptığın literatür taraması ne kadar güncelinin kontrolünü daha yapamadım.
+
+373
+00:57:52,223 --> 00:57:58,323
+Anladım. Orada bir sıkıntı var. Anladım hocam, teşekkür ediyorum. Kapatıyorum ben o zaman şiirin.
+
+374
+00:57:58,323 --> 00:57:59,083
+Peki.
+
+375
+00:58:02,804 --> 00:58:04,663
+Nasıl? Kapandı mı? Ben şu an bilmiyorum.
+
+376
+00:58:06,284 --> 00:58:16,923
+Kapandı. Evet, şey, şu an bir dakika. Diğer grup başladı galiba. 11. grup değil mi arkadaşlar?
+
+377
+00:58:18,324 --> 00:58:18,884
+Evet hocam.
+
+378
+00:58:19,403 --> 00:58:20,743
+Evet, evet hocam.
+
+379
+00:58:22,103 --> 00:58:22,364
+Evet.
+
+380
+00:58:22,824 --> 00:58:25,163
+Sesim geliyor değil mi? Sonuna görüntümle geliyorum.
+
+381
+00:58:25,652 --> 00:58:27,331
+Evet, [öğrenci]. Buyurun.
+
+382
+00:58:27,851 --> 00:58:34,531
+Evet. Merhabalar herkese. Ben [öğrenci]. [kişisel bilgi]
+
+383
+00:58:35,132 --> 00:58:46,851
+Bugün ekip arkadaşları [öğrenci], [öğrenci] ve [öğrenci] ile beraber İstanbul Havalimanı'nda uçaklardan kaynaklanan karbon ayık izinin belirlenmesi konulu projemizin sunumunu gerçekleştireceğiz.
+
+384
+00:58:47,376 --> 00:59:09,376
+Bu projeyi gerçekleştirmek istememizdeki temel motivasyon kaynağımız, son yıllarda gündeme gelen ve önemi gittikçe artan sürdürülebilirlik konusundaki çalışmalara katkı sağlayabilmek ve küresel iklim değişikliğiyle ilgili yapılabilecek araştırmalara destek olabilmek olmuştur.
+
+385
+00:59:14,675 --> 00:59:23,395
+Küresel iklim değişikliğine yol açan sebeplerden en büyük payın karbondioksit gazı salınımları olduğu ortaya çıkmıştır.
+
+386
+00:59:23,935 --> 00:59:30,795
+Bu durumda etrafımızda karbondioksit gazı salınımlarının ölçülmesine, odaklanılmasına neden olmuştur.
+
+387
+00:59:31,435 --> 00:59:40,056
+Diğer ulaşım türleriyle karşılaştırdığımızda havayolu taşımacılığının uçuşlarda yanan yakıttan oluşan sere gazları nedeniyle
+
+388
+00:59:40,820 --> 00:59:47,820
+Diğer tüm ulaşım türlerinden daha fazla karbondioksit gazı salımına neden olduğu görülmektedir.
+
+389
+00:59:48,780 --> 00:59:59,820
+Günden güne hava taşımacılığına olan talebin artması, havalimanı sayılarının artması, uçuş trafiğinin artmasından dolayı.
+
+390
+01:00:04,148 --> 01:00:11,027
+Taşımacılığı kaynaklı karbondioksit emisyonlarının ölçülmesi ve azaltılması daha da önemli hale geliyor.
+
+391
+01:00:11,987 --> 01:00:18,228
+Uluslararası Sivil Havacılık Örgütü 2050 yılına kadar ek bir önlem alınmazsa,
+
+392
+01:00:18,947 --> 01:00:25,208
+havayolu kaynaklı emisyon miktarlarının %300'ün üzerinde artabileceğini tahmin ediyor.
+
+393
+01:00:25,208 --> 01:00:29,208
+Bu bizim yapacağımız çalışmada bu...
+
+394
+01:00:29,684 --> 01:00:37,704
+gibi çalışmalara katkı sağlayabileceği için, alınabilecek ek önlemlere katkı sağlayabileceği için bir özgün değer üretiyor aslında.
+
+395
+01:00:38,844 --> 01:00:46,943
+Proje bizde neden İstanbul Havalimanı'na odaklandığınıza gelirsek, İstanbul Havalimanı dünya çapında
+
+396
+01:00:47,568 --> 01:00:55,128
+Önemli bir hava trafiği merkezi olması sebebiyle havacılık kaynaklı emisyonların ölçülmesinde katik bir rol oynuyor.
+
+397
+01:00:56,048 --> 01:01:04,927
+Uluslararası Havalimanları Konseyi tarafından 2021 yılında İstanbul Havalimanı dünyanın en yoğun ilk 10 havalimanı arasında gösterilmiş.
+
+398
+01:01:06,048 --> 01:01:15,228
+Yolcu trafiği bakımından da 26,5 milyon yolcu sayısıyla dünyanın en yoğun ikinci havalimanı olarak açıklanmıştır.
+
+399
+01:01:15,568 --> 01:01:33,248
+Daha önce literatürde 2018 yılında açılan bu havalimanına ait karbondioksit emisyonlarının ölçülmesiyle ilgili herhangi bir çalışma bulunması da bizim projemizin yarattığı özgün değerlerinden bir diğeridir.
+
+400
+01:01:35,123 --> 01:01:50,324
+Projemizin amaç ve hedeflerine ulaşabilmek için veri toplama, karbonhik gizli hesaplama, karşılaştırmalı analiz, istatistiksel analiz, strateji politika yönelileri geliştirme ve sonuçların paylaşımı raporlama olarak 6 tane iş paketi belirledik.
+
+401
+01:01:50,943 --> 01:02:03,123
+Bu iş paketlerinden ilki olan veri toplama aşamasının projemize özgü bir data seti oluşturmamız gerektiğinden ve farklı birçok data kaynağından beslenmesi gerektiğinden 12 ay üstü bir isimli planımız.
+
+402
+01:02:03,123 --> 01:02:14,603
+Hesaplama ve analiz aşamalarının 3'er ay, öneri geliştirme ve sonuçların raporlanması aşamalarının ise 4'er ay sürmesini öndürüyoruz.
+
+403
+01:02:15,603 --> 01:02:18,824
+İlk iş paketimiz olan veri toplama aşamasında
+
+404
+01:02:19,539 --> 01:02:34,680
+Kalkan ve inen uçaklara yakıt tüketimi, hava durumu, uçuş dataları, uçuş direleri gibi karbon emisyon faktörünü hesaplanmamıza yardımcı olabilecek dataları toplayıp bir datasette oluşturmayı hedefliyorduk.
+
+405
+01:02:35,280 --> 01:02:44,060
+Bu datasetini oluştururken elenecek kirli datanın %5'in altında olmasını bir başarı ölçütümüz olarak belirledik.
+
+406
+01:02:44,608 --> 01:02:49,827
+Bundan sonraki iş paketlerimizi anlatmak üzere Mehdi devam edecek sunma.
+
+407
+01:02:51,888 --> 01:02:55,648
+Selamlar, ben Mehdi. [kişisel bilgi]
+
+408
+01:02:56,148 --> 01:03:15,867
+Şimdi ikinci iş paketimiz karbonhavet giz hesaplama. Önceki iş paketinde aslında biz verimizi toplamıştık. Farklı kaynaklardan veri setimizi elde etmiştik. Bu iş pakette ise biz burada state of the art dediğimiz en modern, en yeni literatürdeki en iyi modeller kullanarak buradaki karbonhavet gizini hesaplamayı planlıyoruz.
+
+409
+01:03:15,867 --> 01:03:24,148
+Aynı zamanda bunu yaparken işte veri ön işleme, veri temizleme ve gülüpten arındırma gibi çeşitli teknikleri kullanarak en uygun ve doğru veriyi saplamıyoruz.
+
+410
+01:03:24,148 --> 01:03:31,648
+Bu iş paketimizin aslında amacı karbonhaya krizinin elde ettiğimiz veriden hesaplanması. Diğer iş paketine geçebiliriz.
+
+411
+01:03:33,268 --> 01:03:44,527
+Üçüncü iş paketimiz karşılaştırma analiz. Bu iş paketinde aslında farklı uçuş otorları, hava durumu ve uçak modelleri temelinde kaybona ayak izinin analizini yapacağız.
+
+412
+01:03:44,527 --> 01:04:01,268
+Bunu yaparken kaybona ayak izinin bu uçuş otorlarıyla beraber aralarındaki çeşitli patternleri, yani algılayabildiğimiz patternleri ve aradaki korrelasyonları algılayıp buradan ileride sunacağımız raporda aslında daha doğru ve daha düzgün, daha uygun.
+
+413
+01:04:01,268 --> 01:04:07,207
+uygulanabilir bir öneri sunmak için bu karşılaşmalarınız gerekiyor. Geçebiliriz.
+
+414
+01:04:09,847 --> 01:04:14,228
+Tabii bu elde ettiğimiz veri ve hesaplamalar dahil de istiksel analizler de yapacağız.
+
+415
+01:04:15,695 --> 01:04:28,675
+Bu analizi yaparken farklı havalimanlarında daha önce yapılan analizleri göz önünde bulundurarak ve farklı taşımacılık yollarında harcayan karbon emisyon değerleri karşılaştırılarak yapılacaktır.
+
+416
+01:04:29,175 --> 01:04:35,576
+Bu da ileride yapacağımız önerilerde daha uygulanabilir öneri sunmamız açısından gerekli olduğunu düşünüyoruz.
+
+417
+01:04:36,915 --> 01:04:37,596
+Devam edebiliriz.
+
+418
+01:04:38,835 --> 01:05:04,516
+Stratiç ve politika önleri geliştirme. Şimdi ne yapmıştık? Verileri topladık. Daha sonra analizlerimizi yaptık. Hem istatiksel hem karşılaştırma analizimizi yaptık. Verimizi de temizlemiştik. Daha sonra bütün bu elimizdeki duruma baktığımızda ve hali hazırda uygulan politika ve yol haritaları incelendiğinde burada uygun bir yol haritası, daha uygulanabilir ve daha mümkün bir yol haritası sunmayı planlıyoruz. Biz aslında burada çeşitli öneriler sunacağız.
+
+419
+01:05:06,835 --> 01:05:12,135
+Ne kadar uygulanabilir ve ne kadar mümkün olduğunu test etmek için hem saha testi hem de simülasyon testleri yapmaya planlıyoruz.
+
+420
+01:05:12,556 --> 01:05:16,436
+Aslında bizim projemizdeki farklı yanlarımızdan bir tanesi de bu.
+
+421
+01:05:17,635 --> 01:05:27,436
+Genelde literatüre baktığımızda buradaki emisyon ölçümleri yapılıyor fakat bu öneriler çok fazla sunulmuyor veya bu önerileri ne kadar uygulanabilir veya ne kadar...
+
+422
+01:05:28,019 --> 01:05:37,659
+Simülasyon da düzgün sonuç verdiği veya mümkün olup olmadığı fazla üzerine gidilmiş bir durum değil. Geçebiliriz bu kısmına.
+
+423
+01:05:38,419 --> 01:05:46,739
+Bütün bu işlemlerden sonra, bu önerileri sunduktan ve bu önerilerin hesaplamalarını yaptıktan sonra bunları çeşitli otoritelere ve çeşitli kurumlara sunmayı planlıyoruz.
+
+424
+01:05:47,099 --> 01:05:54,019
+Aynı şekilde buradan çıkacak bilimsel araştırmalar, bilimsel postel araştırmalar yayınlanması planlanmaktadır.
+
+425
+01:05:55,411 --> 01:05:57,451
+Buradan sonrası [öğrenci]'ı arkadaşlara ödüyorum.
+
+426
+01:05:59,291 --> 01:06:11,251
+Herkese merhaba, ben [öğrenci]. [kişisel bilgi] Araştırma olanaklarından ben devam edeceğim. Araştırma olanakları kuruluştan bağımsız olduğu için kuruluşları yazmadık.
+
+427
+01:06:11,668 --> 01:06:19,967
+Uçak marka ve model tipine göre karbon emisyon verisi temini için hükümetler arası iklim değişikliği emisyon faktörleri tabanını kullanmayı planlıyoruz.
+
+428
+01:06:20,107 --> 01:06:27,067
+Hava kalitesi ölçümleri temini için çevre şericilik ve iklim değişikliği bakanlığı sürekli izleme merkezi veri tabanını kullanmayı düşünüyoruz.
+
+429
+01:06:27,807 --> 01:06:30,107
+Uçak tiplerine göre yakıt tüketim verisi için.
+
+430
+01:06:30,867 --> 01:06:43,787
+Uluslararası Sivil Havacılık Örgütü'nün yakıt tüketim tablosunu, gene uçuş mesafeleri verisi temini içinde aynı örgütün yer bildirimleri veri tabanını kullanmayı düşünüyoruz.
+
+431
+01:06:43,787 --> 01:06:51,807
+İstanbul Havalimanı Uçak Kalkış Verisi temini içinde devlet hava meydanları işletmesi istatistiklerini kullanacağız.
+
+432
+01:06:52,427 --> 01:06:54,787
+İsteliksel analiz içinde...
+
+433
+01:06:55,284 --> 01:06:59,184
+Yazılım dili olarak SPSS, R veya FIIT kullanmayı planlıyoruz.
+
+434
+01:07:01,504 --> 01:07:03,744
+Risk yönetimi tablosundan devam edelim.
+
+435
+01:07:04,744 --> 01:07:09,524
+Veri toplama sürecinde aksaklar yaşanması durumunda alternatif veri kaynaklarına yönelmeyi planlıyoruz.
+
+436
+01:07:09,524 --> 01:07:18,124
+Karbon ayak izi hesaplamalarında hatalar olursa, uzman görüşü doğrultusunda düzeltmeye ya da farklı hesaplama yöntemleri kullanmaya gidebiliriz.
+
+437
+01:07:18,483 --> 01:07:24,563
+Karşılaştırma ve aneyizde eksikleri olduğu durumlarda veri kaynağı ya da aneyiz yöntemini güncellemeyi düşünüyoruz.
+
+438
+01:07:25,163 --> 01:07:30,623
+Stratiksel aneyizde hatalar olsa gene o zaman görüşün doğrultusunda farklı aneyiz yöntemleri kullanabiliriz.
+
+439
+01:07:31,383 --> 01:07:42,763
+Strateji ve politika önerinin uygun olabildiği testinde bir problem yaşanırsa da önerileri paydaşlarla paylaşarak girebildiğimlere göre gerçekçi ve uygun olabildiği hale getirmeyi planlıyoruz.
+
+440
+01:07:45,204 --> 01:08:06,244
+Sonuçların paylaşımında ve raporlamanda gecikmeler olmasın diye zaman yönetimi, ölçeklendirme, raporlama ve paylaşım sürecini titizlikle takip etmeyi planlıyoruz. Bir sonraki slide'a geçerleriz. Projeyi elde edilmesi öngörülen çıktılar. Bunların hepsi projenin son 6 ayında beklenen çıktılar. Bilimsel Akademik çıktılar.
+
+441
+01:08:06,655 --> 01:08:15,175
+Başlığında uluslararası hakemli dergilerde makale yayınlamayı, ulusal ve uluslararası konferanslarda da bildiriler sunmayı planlıyoruz.
+
+442
+01:08:15,335 --> 01:08:23,935
+Ekonomik Ticari Sosyal Çıkkıları başlığında karbon emisyon veri tabanı envanteli oluşturmayı, sürdürülebilir havalimanı bir yöntemi için politik ve strateji yöneliliği geliştirmeyi düşünüyoruz.
+
+443
+01:08:24,675 --> 01:08:32,876
+Araştırmacı yetiştirme için de ilgili anlarda yeni projenin geliştirmesine katkı sağlayabilecek bir yüksek bir sat tizi oluşturmayı düşünüyoruz.
+
+444
+01:08:32,876 --> 01:08:33,796
+Yine son altı ayı.
+
+445
+01:08:35,731 --> 01:08:37,351
+Diğer slide'a geçebiliriz.
+
+446
+01:08:38,551 --> 01:08:46,431
+Çıktıların paylaşım ve yayın tablosunda da proje süresi boyunca tüm paylaşımın paylaşabileceği bir web sitesi yapmayı planlıyoruz.
+
+447
+01:08:47,271 --> 01:08:55,111
+Havalimanı yönetimi, hava yolu şirketleri ve sağlayıcılarla projenin ilk 6 ayında bir günlük en az bir toplantı yapmayı planlıyoruz.
+
+448
+01:08:55,636 --> 01:09:04,276
+Toplantı katılımcının dışında karar aracılarında katıldığı projenin 3. 6 ayında 2 günlük bir çalıştay düzenlemeyi düşünüyoruz.
+
+449
+01:09:05,256 --> 01:09:17,695
+Proje süresi boyunca gene genel 6 sektör temsilcili ve ilgili kurumlar için görsel ve yazılı medyada yayınlar yapmayı, son 6 aylık kesiminde de gene 3 günlük en az bir puart düzenlemeyi düşünüyoruz.
+
+450
+01:09:18,856 --> 01:09:21,896
+Buradan sonra [öğrenci] devam edecek. Dinlediğiniz için teşekkür ederim.
+
+451
+01:09:23,412 --> 01:09:39,452
+Merhaba, ben [öğrenci]. [kişisel bilgi] Projemizin öngörülen etkilerini paylaşacağım. Projemizin kapsamında bulunan iş planı, veri toplamadan strateji ve politika önerileri geliştirmeye kadar geniş bir yelpazeye sahip.
+
+452
+01:09:40,192 --> 01:09:49,731
+Öncelikle toplumsal ve kültürel etkilerimizden bahsetmek istiyorum. Proje sonuçlarımız yaşam kalitesine katkı sağlamak adına önemli bir role sahip olacak.
+
+453
+01:09:50,195 --> 01:10:04,376
+Ayrıca sürdürülebilir çevre ve enerji kullanımına katkı sağlayacak şekilde tasarlandı. Bu hem refah seviyesinin iyileştirilmesine katkı sağlayacak hem de ülke ve dünya düzeyinde önemli bir sosyal soruna getirilecek çözüm sunacaktır.
+
+454
+01:10:04,787 --> 01:10:20,827
+Projenin sonuçlarını uygulayan kurum veya kuruluş, İstanbul Havalimanı'ndaki karbon ayak izinin azaltılmasına yönelik strateji ve politik önerilerimizi kullanabilir. Bu etkileri 18-24 aylık bir zaman diliminde projenin sonrasında görmeyi bekliyoruz.
+
+455
+01:10:21,608 --> 01:10:27,487
+Ekonomik etki açısından bakacak olursak, projemiz birden fazla potansiyel sektörel uygulama alanı oluşturabilir.
+
+456
+01:10:27,935 --> 01:10:33,275
+Havacılık sektöründe uygulanabilecek çevre dost uygulamaların geliştirilmesine öncülük etmeye hedefliyoruz.
+
+457
+01:10:34,055 --> 01:10:40,855
+Bununla birlikte projemiz sonuçlarının sektörel uygulamalara dönüşmesiyle yeni istihdam alanları oluşturulabilir.
+
+458
+01:10:41,915 --> 01:10:47,055
+Türk Hava Yolu Şirketlerinin uluslararası rekabetçiliğini artırabilir ve yabancı yatırımcıların dikkatini çekebilirler.
+
+459
+01:10:47,796 --> 01:10:52,155
+Bu etkileri de projenin sonrasında 18-24 aylık bir zaman diliminde görmeyi öngörüyoruz.
+
+460
+01:10:52,659 --> 01:11:04,800
+Son olarak ulusal güvenlik etkisine değinmek istiyorum. Projemiz havacılık sektörünün enerji verimliliğini artırarak ekonomik güvenliğe katkı sağlayabilir. İklim değişikliği ve doğanın korunması ile.
+
+461
+01:11:05,363 --> 01:11:15,523
+İnsanın çevre üzerindeki olumsuz etkisini azaltılması konusunda katkı sağlaması planlanıyor. Bu etkilerin projenin tamamlanmasının hemen ardından görülmesini bekliyoruz.
+
+462
+01:11:16,283 --> 01:11:26,203
+Bu çerçevede projemizin genel etkileri sürdürülebilir çevre ve enerji politikalarına, ekonomik büyümeye ve ulusal güvenliğe doğrudan katkı sağlamak üzerine odaklanmakta.
+
+463
+01:11:26,203 --> 01:11:33,363
+Bu etkiler özellikle sürdürülebilir kalkınma hedefleri ve çevre dostu stratejilerle paralel bir çizgi değil.
+
+464
+01:11:33,363 --> 01:11:33,763
+İlaliyor.
+
+465
+01:11:34,644 --> 01:12:02,644
+Sonuç olarak projemizin hedefi hem yerel hem de global ölçekte çevresel sürdürülebilirlik ve ekonomik kalkınmayı desteklemekte. İstanbul Havalimanı özelinde uçaklardan kaynaklanan karbon ayak izini belirleyerek bu konuda stratejik önerileri geliştireceğiz. Bu öneriler havacılık sektöründe çevre dostu uygulamaların geliştirilmesine yol açar ve Türkiye'nin uluslararası rekabetçilik pozisyonunu güçlendirir. Ayrıca projemizle havacılık sektörünün enerji verimliliğini artırmayı ve bu sayede ekonomik...
+
+466
+01:12:02,644 --> 01:12:19,543
+Bu projenin tüm etkilerini bir sonraki 18-24 aylık sürezartında gerçekleşmesini umuyoruz. Bir sonraki slide'a geçersek.
+
+467
+01:12:20,500 --> 01:12:29,840
+Şimdi de projemizde ihtiyaç duyacağımız makine ve teçhizat giderlerine bakalım. Bu ekipmanlar projemizin başarıyla tamamlanması için ve gerekli ve doğrudan projemizin çeşitli evrelerinde kullanılacak.
+
+468
+01:12:29,840 --> 01:12:39,360
+Projemizde iki adet Asus marka bilgisayar kullanmayı planlıyoruz. Bu bilgisayarlar veri toplama, analiz yapma, veri analizi yapma, sunum yapma süreçlerinde aktif olarak kullanılacak.
+
+469
+01:12:41,876 --> 01:12:53,956
+Bilgisayarların teknik özelliklerine gelecek olursak her biri 16 GB RAM, 1 TB SSD disk ve Intel Core i5 9. nesli işlemciye sahip özellikler projemizin tüm gereksinimlerini karşılayacak kapasitede.
+
+470
+01:12:53,956 --> 01:13:02,556
+Her bir bilgisayarın bedeli 16.000 lira. Ayrıca projemizin sunum aşamasında kullanmak üzere bir tane de projeksiyon cihazı almayı düşünüyoruz. Projeksiyon cihazının bedeli ise 9.250 lira.
+
+471
+01:13:02,927 --> 01:13:08,028
+Bu ekipmanların tümü projemizin etkin ve verimli bir şekilde yürütülmesi için kritik bir öneme sahip.
+
+472
+01:13:08,307 --> 01:13:11,547
+Bu yüzden bu maliyetler genel proje bütçemizin önemli bir kısmını oluşturuyor.
+
+473
+01:13:11,788 --> 01:13:13,247
+Bir sonraki slide'a şimdi geçersek.
+
+474
+01:13:14,268 --> 01:13:20,948
+Bu bölümümüz projemizde yer alacak yüksek lisans öğrencilerine ödenecek bursiyer ücretleri ve projemizin tanıtım ve temsil giderleri hakkında bilgi veriyor.
+
+475
+01:13:20,948 --> 01:13:22,948
+Öncelikle projemizde...
+
+476
+01:13:23,828 --> 01:13:51,828
+Dört yüksek lisans öğrencisi görev alacak. Her bir öğrenci projede 12 ay boyunca aktif olarak yer alacak ve aylık 7 bin lira burs alacak. Dolayısıyla bu dört öğrencinin toplam burs miktarı 336 bin liraya ulaşacak. Bunun yanı sıra projemizin tanıtım ve temsil giderleri de önemli bir yer tutuyor. Bu kapsamda projenin çıktı sonuçlarının paylaşılması için, katılımcıların yurt içi seyahat masraflarını karşılanması için, bu konferans sunum ve fuar ulaşım için 8 bin liralık bir maliyet oluşturacak. Ayrıca projemizin sonuçlarını...
+
+477
+01:13:51,828 --> 01:14:03,648
+yaymak, poster ve bildiri sunumları yapmayı planlıyoruz. Bu amaçla kırtasiye malzemeleri için 500 liralık da bir bütçe ayırdık. Sonuç olarak bu projemizin bursiyel ücretleri ve temsil tanıtma giderleri toplamda 344.500 liraya ulaşıyor.
+
+478
+01:14:04,968 --> 01:14:05,748
+Bir sonraki slide.
+
+479
+01:14:06,996 --> 01:14:34,855
+Son olarak genel bütçemizi ele alalım. Projemizin toplam maliyeti çeşitli kategorilere göre ayrılmış ve toplamda 385.750 liraya ulaşıyor. Makine ve teşhisat giderlerimiz 41.250 lirayı kapsıyor. Bu projemizde ihtiyaç duyacağımız bilgisayarlar ve projeksiyon cihazı için ayırdığımız bütçeyi içeriyor. Temsil ve tanıtma giderlerimiz projemizin çıktı ve sonuçlarının yayılmasını sağlamak için ayrılmış olan 8.500 lirayı içeriyor. Bu kısım katılımcıların yurt içi seyahat masrafları.
+
+480
+01:14:34,996 --> 01:14:45,615
+tavsiye masrafları gibi giderleri kapsıyor. Bursiyar ücretlerimiz ise toplam bütçemizin en büyük kısmını oluşturuyor. Bu miktar projemizde yer alacak dört yüksek lisans öğrencisine ödenecek bursları kapsıyor.
+
+481
+01:14:46,095 --> 01:14:52,515
+Özetlemek gerekirse genel bütçemiz üç yüz seksen beş bin yedi yüz elli lira ve bu bütçenin tamamını talep edilen katkıyı oluşturuyor.
+
+482
+01:14:53,135 --> 01:15:00,375
+Sunumumuz bu kadar. Sorularınızı sormaktan çekinmeyin. Projemiz hakkında daha fazla bilgi vermekten mutluluk duyarız. Teşekkür ederiz.
+
+483
+01:15:03,220 --> 01:15:14,900
+Ben bir şey söyleyebilir miyim hocam? O bilgisayar galiba 8'di, remi 16 değildi. Onu fark ettim. Sesim geliyor mu?
+
+484
+01:15:15,920 --> 01:15:18,800
+Ben duyuyorum sesini ama arkadaşlar duyuyor mu?
+
+485
+01:15:20,140 --> 01:15:29,020
+Bir tane de kaçırdıysam kusura bakmayın. Bu örneğin İstanbul Havaalan'ın bir sorununu var mı böyle işte karbon ayakisinin suç değerler arasında olacak diye?
+
+486
+01:15:30,003 --> 01:15:49,463
+Aslında tüm havalimanlarında bu çalışmalar yapılmış durumda ve gerçekten de dünyada önem verilen çalışmalar bunlar. Ama İstanbul Havalimanı daha yeni bir havalimanı ve bu çalışma henüz İstanbul Havalimanı'nda başlamamış. Biz de böyle bir açık olduğu için böyle bir araştırma projesi o yüzden sunuk.
+
+487
+01:15:49,923 --> 01:15:51,864
+Yok yok, sorumluluk var mı? Onu merak etmeyin.
+
+488
+01:15:53,332 --> 01:16:00,351
+Avrupa Birliği'ne girecek, onun bir zorunluluğu vardır ya da Türkiye koymuştur. Öyle bir şey var mı?
+
+489
+01:16:01,132 --> 01:16:08,972
+Havalimanlarının çevresel bazı sertifikalarını almasında bildiğim kadarıyla zorunluluğu var ama onun dışında böyle bir zorunluluk yok.
+
+490
+01:16:09,052 --> 01:16:12,132
+Ama tüm havalimanlarında standart olarak yapılan bir çalışma olur.
+
+491
+01:16:12,752 --> 01:16:13,992
+Anladım, teşekkür ederim.
+
+492
+01:16:15,112 --> 01:16:15,992
+Aslında şöyle...
+
+493
+01:16:19,572 --> 01:16:43,652
+Dolaylı yoldan zorunluluğu var. Şöyle dolaylı yoldan, yani baya dolaylı bir yoldan. Var ise iklim anlaşması var ve Green Deal var. Biliyorsunuz, Yeşil Mutabakat. Onların tarafıyız ülke olarak. Onların tarafı olduğumuz için aslında o anlaşmalardaki maddelere bağlıyız.
+
+494
+01:16:44,064 --> 01:17:08,864
+Hangisindeydi emin değilim, o yüzden yalan olmasın. İkisinden birinin bir maddesi şunu diyor, bütün ticari faaliyet gösteren firmaların kendi karbon ayak izlerini belirlemesi ve bunlarla ilgili sayıyı yanlış hatırlayabilirim.
+
+495
+01:17:09,587 --> 01:17:23,867
+Ona bakmak lazım ama 5 yıl galiba, 5 yıllık hedefler koyması gerekiyor. Ama hani maksimum 5 yıl mı, minimum 5 yıl mı, 5 değil 3 yıl mı falan ya orası muğlak şu an net hatırlamıyorum. Ve şunu yapıyor olman lazım.
+
+496
+01:17:25,587 --> 01:17:44,947
+Parzimsel 100 birim harcıyorum ben, ben bunu 50'ye indireceğim vs. yapacağım. Bir hedef koyuyor ve onun için uğraşıyor olman lazım. Son noktada çünkü gelinen yerde şu olacak, sen Avrupa Birliği'nin belirlediği sınırın üstünde kaldığın zaman bunun cezasını ödeyeceksin.
+
+497
+01:17:45,395 --> 01:18:04,195
+Bu ceza zaman zaman maddi olacak, zaman zaman yaptırım olacak. Oralar biraz açık, belki de açık değil, daha başka anlaşmalarda bağlanmıştır, emin değilim. Ben o kadarına vakıf değilim en azından. Dolayısıyla yapılması önemli ve fakat, burada da yine aynı yerde takılıyoruz.
+
+498
+01:18:13,684 --> 01:18:24,484
+Sizin araştırma tarafınızın olması lazım. Yani bu proje kapsamında gerçekleştirdiğiniz bir araştırma, bir deneme, bir argeniteli bir şey olması lazım.
+
+499
+01:18:25,144 --> 01:18:33,043
+Şimdi olan sistemleri alıp bir araya getirip oraya kuracağız ve kullanacağız dediğiniz zaman bin bir olmaz. Bu başka bir yerde, başka bir proje olur.
+
+500
+01:18:38,228 --> 01:18:41,768
+Onda da biraz zorlar ama ilk aklıma o geldiği için söyledim.
+
+501
+01:18:41,847 --> 01:18:46,988
+1003 projesi yapıyorlar. Özel sektör, üniversitede kamuyu bir araya getirirsiniz.
+
+502
+01:18:47,268 --> 01:18:54,568
+İşte özel sektörü üniversitenin katacağı argeniteliyle buraya neresine nasıl katacaksınız onu belirlersiniz.
+
+503
+01:18:54,568 --> 01:18:59,847
+Belki algılayıcının tasarımı, yapımı ya da kullanımı vesaireyle ilgili olur.
+
+504
+01:18:59,948 --> 01:19:05,547
+Belki bunun daha uzaktan algılanmasıyla ilgili olur. Belki başka bir şey olur.
+
+505
+01:19:05,952 --> 01:19:20,992
+Belki ortamın dijital ikizinin oluşturulup o dijital ikiz üzerinde uçuş sayısının değişmesi, yönetiminin değişmesi vesairesi durumunda karbon salımının nasıl değişeceğine dair bir şeyler geliştirmekte olur. Uçuruyorum şu an.
+
+506
+01:19:21,427 --> 01:19:36,728
+Sallıyorum yani tamamen, o miktarda. O zaman ar-gen niteliğinden bahsedebiliriz ama bu haliyle çok böyle uygulama projesi, hani onu aldım oradan, bunu buradan koydum, onu yaptım, bunu yaptım, hani birleştirdim, oldu gibi duruyor.
+
+507
+01:19:36,728 --> 01:19:43,728
+Yani şey noktalarında da, yani sunumda da, raporda da...
+
+508
+01:19:45,108 --> 01:20:02,788
+ARGE tarafı bana pek şey gelmedi. Ağırlıklı, öncelikli ya da kendini hissettim ben. Onu söyleyebilirim. O yüzden biraz sıkıntılı bence. Bunun dışında şeyi söyleyeceğim. [öğrenci], yani [öğrenci] mi [öğrenci]'yi mi kullanıyorsun bilmiyorum.
+
+509
+01:20:03,307 --> 01:20:03,948
+Mehdi, evet.
+
+510
+01:20:04,768 --> 01:20:09,087
+Sol profilin güzel ama seni karşıdan görmeyi tercih ederdim.
+
+511
+01:20:09,524 --> 01:20:12,244
+Yani öyle söyleyeyim.
+
+512
+01:20:12,923 --> 01:20:14,204
+Hocam iki tane ekran var da o işi şey.
+
+513
+01:20:14,204 --> 01:20:32,204
+Yani bir tercih miydi, dalgınlık mıydı bilmiyorum ama hani sizden istenen ve beklenen bu kapsamda, bu projede konuştuğumuz her şeyi bir şekilde işin içerisine katmanız ve uygulamanız, değerlendirmesi de bunun üzerinden olacaktı.
+
+514
+01:20:32,204 --> 01:20:33,024
+Tamam mı?
+
+515
+01:20:35,636 --> 01:20:37,296
+Geçmiş olsun, teşekkürler.
+
+516
+01:20:37,496 --> 01:20:38,876
+Hocam ben teşekkür ederim hocam.
+
+517
+01:20:38,916 --> 01:20:39,996
+Ben de bir cevap vermek istiyorum.
+
+518
+01:20:39,996 --> 01:20:44,756
+Argenti'yle ilgili ben bir cevap vermek istiyorum da. Aslında burada evet, karbonhaya kizm, söyleyebilir miyim?
+
+519
+01:20:45,895 --> 01:20:47,615
+Kim konuşuyor onu anlayamadığım için.
+
+520
+01:20:47,615 --> 01:20:48,476
+Ben konuşuyorum, [öğrenci].
+
+521
+01:20:48,976 --> 01:20:50,235
+Mehdi, evet buyurun.
+
+522
+01:20:50,416 --> 01:20:55,775
+Şimdi burada karbonhaya kizm hesaplanması, analizi var. Fakat aslında burada çok vurguladığımız başka bir nokta daha var.
+
+523
+01:20:55,855 --> 01:21:01,435
+Biz burada öneri sunup, bu öneriyi simülasyonun üzerinde gerçekleştirip, bunun ne kadar uygulanabilir olduğunu da aslında sunmaya çalışıyoruz.
+
+524
+01:21:01,516 --> 01:21:03,136
+Buradaki aslında araştırma kısmı bir yandan da orada.
+
+525
+01:21:03,859 --> 01:21:14,279
+Aslında literatüre baktığımızda öneriler var fakat bunu çok simil edilmiyor. Öneriler analiz üzerinden yapılıyor. Bizim buradaki araştırma kısımımız bir yandan da o tarafta aslında. Bu tarafı da şey yapabiliriz.
+
+526
+01:21:16,399 --> 01:21:21,139
+Şimdi şöyle söyleyeyim. O zaman onların vurgulanmasını beklerdim.
+
+527
+01:21:21,971 --> 01:21:35,071
+Yani hani karbon ayak izinin ölçümünün neden önemli olduğunu dinlemek güzel. Çünkü motivasyonunuzu ortaya koyuyor. Niye yaptığını anlamak güzel. Ama bunu uzun uzun dinlemek yerine.
+
+528
+01:21:37,300 --> 01:21:55,100
+Argenizi ya da bunu gerçekten binbir yapacak olan şeyi daha çok dinlemek isterdim. Mesela analiz yapacağız. Peki, o analizi hangi yöntemle yapacaksınız? Mevcutta hangi yöntemlerle yapılmış? Sizin yaptığınız yöntemin katkısı ne olacak? Farkı ne olacak? Anlatabildim mi?
+
+529
+01:22:03,315 --> 01:22:16,396
+Ben, yani şu devirde aklınıza ne geliyorsa aslında, çok da kasmama da gerek yok, araba yapacağım dediğiniz zaman bile, evet, hani baktığınız zaman çok arge işi de olabilir ama hiç arge işi de olmayabilir.
+
+530
+01:22:16,396 --> 01:22:30,856
+Neden bahsediyorum? Hazır şasi arabalar var. Yani alıp tamamen üzerine bir etiket basarak bile araba yaptım diyebilirsiniz. Ya da bilgisayar.
+
+531
+01:22:31,412 --> 01:22:46,412
+Yani ben bilgisayar alacağım, üreteceğim, satacağım desem size belki argo olarak aklınıza gelebilir. Normalde olabilir. Çünkü bir şeyleri benim üreteceğimi, tasarlayacağımı, bununla ilgili uğraşacağımı falan düşünebilirsiniz. Ama arka tarafında...
+
+532
+01:22:47,252 --> 01:23:15,232
+Aslında ben Çin'de yaptıracağım, üstüne etiketi basacağım, satacağım da olabilir ya da şu da olabilir. Ben gerçekten burada bir arvi unsuru yaratacağımdır ama nasıl yaratacağım? Bununla ilgili kısıtları koymam gerekir. Yani ne demek istiyorum? Ben öyle bir bilgisayar yapacağım ki, bariz misal, çok dayanıklı olacak. 8. kattan düşse bile devam edecek ya da ben çok esnek bir bilgisayar yapacağım.
+
+533
+01:23:15,252 --> 01:23:37,492
+ekranını böyle katlamayacaksınız da böyle dörde bile börekli katlayabileceksiniz falan gibi bir şeylere geçersem, yani olmayan, kullanılmayan ama üzerine çalışılması gereken, o çalışma sırasında da o teknolojinin ya da yapının problemleri olan ve onları da çözeceğim bir şeyden bahsettiğimiz zaman RG işin içerisine giriyor.
+
+534
+01:23:37,939 --> 01:23:45,220
+yaptığınız işin içerisinde böyle bir şeyler varsa, böyle bir durumlar varsa da bunları vurgulamanız gerekir.
+
+535
+01:23:46,300 --> 01:23:50,819
+Yani öbür türlü şöyle oluyor, egzecere ederek örnekleyeyim.
+
+536
+01:23:50,960 --> 01:23:55,840
+Şimdi açın herhangi bir X, Y, Z televizyonunu, işte belli bir saatten sonra siyaset tartışıyorlar ya,
+
+537
+01:23:56,539 --> 01:23:59,439
+işte efendim o öyle olmaz, böyle yapılır, şöyle yapılır falan filan.
+
+538
+01:23:59,880 --> 01:24:02,500
+Dikkat edin, orada kimse hiçbir şeyin altını doldurmaz.
+
+539
+01:24:03,283 --> 01:24:10,603
+İşte bu böyle olmaz, şöyle yapılması lazım da öyle nasıl olacağı kimse anlatmaz adım adım. Ama bizim burada bunları anlatıyor olmamız gerekir.
+
+540
+01:24:11,343 --> 01:24:19,003
+Yani şunu dersiniz, işte biz burada bir analiz çalışması yapacağız. Bu analiz şimdi normal şartlarda bir yerde [öğrenci] söyledi galiba.
+
+541
+01:24:19,543 --> 01:24:22,863
+SPSS kullanacağız dedi, Python kullanacağız dedi, bir şey daha kullanacağız.
+
+542
+01:24:25,363 --> 01:24:25,883
+Pardon.
+
+543
+01:24:27,359 --> 01:24:30,439
+Değil mi? Ardından kastın, re olan mı?
+
+544
+01:24:30,439 --> 01:24:30,579
+Evet.
+
+545
+01:24:31,159 --> 01:24:43,239
+Ha, tamam. Ardınca benim aklıma otoregresyon geliyor da o yüzden hani o yöntemi mi, aracımı söyledi acaba diye kafama çünkü bir yere şey oldu.
+
+546
+01:24:44,099 --> 01:24:47,479
+Ya, inanın onların benim gözümde hiç önemi yok.
+
+547
+01:24:49,599 --> 01:24:53,399
+Ne zaman önemli olur biliyor musunuz? Şimdi çorba içeceğim dediniz.
+
+548
+01:24:54,068 --> 01:25:17,167
+Bunu da çatalla içeceğim dediğiniz zaman bayağı yazık, garibana bak, çok saçma bir şey deneyecek galiba demek için önemli olur. Önemli olan şu aslında, yani şimdi siz orada bir analiz yapacaksınız, yapacağınız analizin tipine göre bir yöntem, metot kullanacaksınız. O metodu kendiniz oluşturabilirsiniz, hazır olanlardan da kullanabilirsiniz.
+
+549
+01:25:17,391 --> 01:25:32,011
+Kendiniz yeni bir metot oluşturmak üzerine bir planınız varsa o zaten ayrı bir değer. Mevcut metotları orada değerlendireceksiniz de hangilerini değerlendireceksiniz, neden de onları uygun gördünüz, onları anlatıyor olmanız gerekiyor.
+
+550
+01:25:32,011 --> 01:25:43,091
+Yani, burada şöyle şöyle bir problem var. Bu aslında, pardon mesela, sallıyorum şu an, tamamen uyduruyorum. Bağlayıcı olarak düşünmeyin.
+
+551
+01:25:43,923 --> 01:26:02,823
+İşte ziraat mühendisliğindeki bilimlemle problemine çok benziyor. Orada da bunu yapmak için şöyle şöyle bir yöntem var. Dolayısıyla onun burada başarılı olabileceğini düşünüyoruz. O yüzden de bunu deneyeceğiz. Ya da bu problemin bir benzeri şuradaki bilimlemle probleminde var. Onun için de bu yöntem kullanılıyor. Biz bir alternatif bunu deneyeceğiz. Bir alternatif bunu deneyeceğiz.
+
+552
+01:26:03,283 --> 01:26:13,183
+Bunları denediğimiz zaman şöyle şöyle bir problem olabilir. Dolayısıyla çıktığı ya da başarımımızda %80'in, %70'in altında kalabiliriz.
+
+553
+01:26:13,303 --> 01:26:19,243
+Öyle bir durumda da aslında şurada mesela bir healing algoritması bulacağız. Bir bilimsel ne kullanmayı deniyoruz gibi.
+
+554
+01:26:21,384 --> 01:26:29,884
+Yöntem ve teknikten kasıt, Python'da mı yapacaksın, CV'de mi kodlayacaksın vesaire değil de.
+
+555
+01:26:30,292 --> 01:26:49,092
+O problemi çözmek için kullanacağın tekniğin, yöntemin ismi ne? Onları duymak istiyorum. Yani mesela sizde duyamadığım gibi sizden önceki gruplarda da duyamadım. Ama somut olması adına sizin üzerinizden gidiyorum. Bir de bir diğer şey var.
+
+556
+01:26:58,931 --> 01:27:13,791
+Bir giderlerden bahsediyorum. Tanıtım gideri. Tanıtım giderinde anlatırken buna seyahatler vesaireler, tanıtım toplantılar dahil dedin. Seyahat gideri sıfır yazıyor tabloda.
+
+557
+01:27:14,515 --> 01:27:20,576
+8 bin küsur lira tanıtım mı? 80 bin mi? 8 bin mi? Ondan emin olur.
+
+558
+01:27:20,576 --> 01:27:29,956
+500 lira toplam gider vardı hocam. 500 lirası kırtasiye masrafıydı. 8 bin lirası aslında bu uçak biletleri için vesaire ayrılmış bütçeyle.
+
+559
+01:27:29,975 --> 01:27:31,416
+Ama seyahat kaleminde yazmıyor.
+
+560
+01:27:32,836 --> 01:27:35,155
+Yok, seyahatte yazıyor hocam. Katılımcılığı...
+
+561
+01:27:35,155 --> 01:27:40,395
+Slide'ı ilerle. İlerle.
+
+562
+01:27:43,731 --> 01:27:45,051
+Seyahat giderleri boş.
+
+563
+01:27:46,771 --> 01:27:49,851
+Aa, oraya atlamışız hocam. Şöyle aslında temsil etrafım.
+
+564
+01:27:49,851 --> 01:27:51,511
+Bu tabloda yok da öncekinde var.
+
+565
+01:27:53,152 --> 01:27:55,652
+Ama şöyle bir şey söyleyeyim. Tabloya geri gel.
+
+566
+01:27:57,684 --> 01:28:22,804
+Çok hızlı geçtiği için arada anlamaya çalışırken, mesela yaparken geçirilmiş olabilir. Bir de noktaları yok ya, yani o 4 bin mi, 41 bin mi falan diye böyle bakıyorum bazen, gözlüğümü de unutmuşum. Bunları toplayınca bu değer ediyor. Yani zaten seyahat lideri yok burada, hiç yazılmamış. Ya da bu tabloyu burada jenerat edip tekrar topladığınızsa bilmiyorum da, yani burada bir terslik var.
+
+567
+01:28:23,283 --> 01:28:39,903
+Şöyle düşünmüştük hocam sanırım onu. Bayağı oldu. Gerçi arkadaşlarla yapalı. Belki onların da yorumları olacaktır. Bu temsil ve tanıtım giderlerinin içerisindeki bir parça olduğu için onu oraya eklemiştik ama onu ayırmamız gerekiyordu.
+
+568
+01:28:42,043 --> 01:28:45,563
+Onun dışında da bir sürü daha söyleyeceğim.
+
+569
+01:28:51,188 --> 01:28:58,228
+Hocam, ben cevap vereyim. Buradaki seyahat giderini biz yurt dışı seyahatleri olarak değerlendirmiştik de o yüzden sanırım.
+
+570
+01:28:58,247 --> 01:28:58,927
+Neleri, pardon?
+
+571
+01:28:59,387 --> 01:29:05,768
+Buradaki seyahat giderlerine yurt dışında katılınacak etkinlikler, toplantılar gibi seyahat.
+
+572
+01:29:05,768 --> 01:29:14,608
+Pardon, güldüm de şeyden dolayı, öyle bir yerden yaklaştın ki şey gibi oldu, yurt dışına çıkmıyorsam ben seyahat ediyorum demem falan gibi oldu.
+
+573
+01:29:15,387 --> 01:29:18,847
+Buradaki seyahat, bunun içinde de seyahatle ilgili bir kalem vardı.
+
+574
+01:29:19,188 --> 01:29:27,827
+Çünkü bunu tartıştığımızı hatırladın. Değil mi sanki öyle bir şey var? Yani öyle değerlendirdiğimiz için temsil tanıtma giderlerini yazdım.
+
+575
+01:29:28,507 --> 01:29:37,448
+Tamam, o artık ona bir şey demiyorum. Ama gençler, Slyt'ın tasarımı sizce çok güzel olmamış mı?
+
+576
+01:29:41,779 --> 01:29:45,739
+Siz de bu slide'lara baktığınızda vurulmadınız mı hemen? Öyle söyleyeyim.
+
+577
+01:29:50,068 --> 01:29:58,148
+Ben öyle söyleyeyim, siz şey yapın, olur mu? Peki, teşekkürler, geçmiş olsun gençler.
+
+578
+01:29:58,587 --> 01:29:59,747
+Sağ olun hocam, teşekkürler.
+
+579
+01:30:00,347 --> 01:30:02,047
+Kaçtı? 12 idi değil mi?
+
+580
+01:30:02,287 --> 01:30:02,648
+11.
+
+581
+01:30:03,528 --> 01:30:05,488
+Yok, siz 11'siniz de diğer bir 12 idi.
+
+582
+01:30:07,627 --> 01:30:09,488
+Karıştırmadım, yani siz 11'diniz.
+
+583
+01:30:10,268 --> 01:30:11,707
+12 burada mı?
+
+584
+01:30:23,188 --> 01:30:24,427
+Evet hocam buradayız.
+
+585
+01:30:24,967 --> 01:30:27,487
+Oh sonunda ses geldi. Hadi bakalım.
+
+586
+01:30:29,907 --> 01:30:31,787
+Aha görüntü gitti. Ses gelince de görüntü.
+
+587
+01:30:31,787 --> 01:30:32,807
+Çok pardon.
+
+588
+01:30:37,684 --> 01:30:48,943
+Önce ekibiye tanıtayım. [öğrenci] [kişisel bilgi] [öğrenci] Bey yanımda.
+
+589
+01:30:49,524 --> 01:30:52,823
+Merhaba. [öğrenci], [kişisel bilgi]
+
+590
+01:30:53,923 --> 01:30:55,163
+[öğrenci] Hanım da diğer ekip.
+
+591
+01:31:00,819 --> 01:31:02,819
+Görüntü dondu galiba, ben de...
+
+592
+01:31:21,395 --> 01:31:24,495
+Görüntü bende de dondu sadece, sizde de dondum mu hocam?
+
+593
+01:31:26,735 --> 01:31:27,875
+Kim konuştu?
+
+594
+01:31:28,255 --> 01:31:28,995
+Ben [öğrenci].
+
+595
+01:31:30,475 --> 01:31:36,495
+Sen de çok sabit oldunca acaba sen, [öğrenci]'in görüntüsü bende dondu, o yok.
+
+596
+01:31:36,915 --> 01:31:37,995
+Bende de öyle oldu.
+
+597
+01:31:38,355 --> 01:31:40,915
+Ama ekran da yok bizde bu arada, bir ara o da gitti.
+
+598
+01:31:41,315 --> 01:31:42,675
+Geri geldi [öğrenci]ler.
+
+599
+01:32:14,100 --> 01:32:18,260
+Irmak Hanım, buyurun siz isterseniz özetle başlayın. Sonrasında [öğrenci] Bey devam edecek.
+
+600
+01:32:19,539 --> 01:32:36,579
+Tabii, ben [öğrenci]. Bugün [öğrenci], [öğrenci], [öğrenci], [öğrenci] ile birlikte uzaktan algılama yöntemleriyle av balıklarının anlık bölgesel tahmini projemizle ilgili bir sunu yapacağız.
+
+601
+01:32:37,427 --> 01:32:56,728
+Projenin özetiyle ben başlıyorum. Projemiz aslında balıkçılık sektöründe belimli avlanmanın sağlanması, av maliyetlerinin düşürülmesini ve çevre kediğinin azaltılmasını, aynı zamanda da yapılacak yeni av araçlarının önüne geçen bir ürün sağlamayı amaçlıyor.
+
+602
+01:33:00,500 --> 01:33:08,199
+Bunun için yapay zeka ve öğrenme yöntemlerini kullanan bir karar destek sistemi ürünü oluşturmaya yetkildi biz bu projede.
+
+603
+01:33:10,760 --> 01:33:17,920
+Yurt dışında yapılan bazı çalışmalar var aslında bu konuda. Onlardan önce bahsedebilirim.
+
+604
+01:33:19,819 --> 01:33:26,699
+Yurt dışında yapılan çalışmalarda uydu ve diğer biyolojik verileri kullanan bazı uygulamalar var.
+
+605
+01:33:27,119 --> 01:33:47,539
+Bunlar örneğin tuzluluk ve plankton yoğunluğu gibi dataları kullanıyorlar. Yalnız bu uygulamalarda tuzluluk için ayrı, örneğin plankton yoğunluğu için ayrı grafikler oluşturulup daha sonra uzman bir mühendis ya da işin uzmanı bir kişi tarafından bu grafikler yorumlanıyor.
+
+606
+01:33:50,420 --> 01:33:58,899
+Ve daha sonra anlamlı bir sonuç elde edilip, ağ sahasının bu şekilde kararlaştırılması üzerine çalışmalar ediliyor.
+
+607
+01:33:59,800 --> 01:34:09,699
+Bu uygulamalar uygun verilerle bir uzman bir kişinin yorumuyla birlikte kullanıldığında tabii verimli sahalar tespit edilebiliyor.
+
+608
+01:34:09,699 --> 01:34:16,779
+Yani doğruluk payı yüksek uygulamalar ama bu uygulamalar pratik değil anladığımız üzere.
+
+609
+01:34:17,184 --> 01:34:23,104
+Ve burada alanında uzman bir kişinin manuel bir müdahalesine gerek duyuluyor.
+
+610
+01:34:24,963 --> 01:34:27,003
+Sanırım bu nedenle biraz zor olur.
+
+611
+01:34:29,064 --> 01:34:37,184
+Bizimse bu alanda geliştireceğimiz uygulama için kullandığımız çok daha fazla çeşitli veriler olacak öncelikle.
+
+612
+01:34:37,823 --> 01:34:40,423
+Bu verileri örnek olarak uzaktan algılama verileri.
+
+613
+01:34:41,076 --> 01:35:01,456
+Uydu verileri, plan konu yoğunlukları söylediğim gibi. Onun dışında deniz yüzey sıcak değişimleri, denizdeki tuzluk seviyelerinin değişiklikleri, derinlik farklılıkları gibi, termotin katmanları gibi, meteorolojik değişimler gibi.
+
+614
+01:35:02,036 --> 01:35:21,855
+Hatta ayı şekillerine göre değişen balık yoğunlukları olduğu söyleniyor bazı araştırmalarda. Hareketi ve şekil şekline göre. Bu tip çok farklı verileri bir araya getirip bu verileri kullanmak istiyoruz biz. Bunları otomatize etmek istiyoruz.
+
+615
+01:35:26,515 --> 01:35:49,175
+Karasal alanlarda statik olan, tarımsal alan, deniz alanlarında dinamik bir yapıya sahip. Bu yüzden de verimli alanların iz düşümüyle birçok noktasal parametrinin işlenerek bulunması gerekiyor. Bu işlem ancak yapay zeka ile ve öğrenme yöntemleriyle çözülebilir seviyede.
+
+616
+01:35:49,939 --> 01:35:56,380
+Yapay zekalı biz milyonlarca noktası var dediği harmanlayıp bir sonuç üreteceğiz aslında burada.
+
+617
+01:35:59,500 --> 01:36:09,639
+Bu verilerin önemli bir kısmı da şu an aslında kurumlarca, farklı yetkili kurumlarca, çeşitli sektörler tarafından toplanıyor.
+
+618
+01:36:10,199 --> 01:36:12,719
+Özellikle yurt dışında bahsettiğim gibi.
+
+619
+01:36:13,460 --> 01:36:24,140
+Biz bu toplanan verileri de kullanıp özellik çıkarımı yapacağız bu verilerden ve uygun olan özellikleri modeli dahil etmeyi planlıyoruz.
+
+620
+01:36:24,779 --> 01:36:34,779
+Örneğin ayın hareketi belki de balık yoğunluğu için çok da önemli bir özellik değildir ya da tam tersi belki çok kritik bir özelliktir.
+
+621
+01:36:35,000 --> 01:36:37,840
+Bunların hepsini bu modellerle tespit etmiş olacağız.
+
+622
+01:36:40,256 --> 01:36:45,395
+Böylelikle derin öğrenme yöntemleriyle model oluşturup ağ sağlarının yoğunluğunu tespit edeceğiz.
+
+623
+01:36:48,235 --> 01:36:57,435
+Av balıkçılığında kullanılan, şu anda günümüzde av balıkçılığında kullanılan çok büyük ve çok motorlu gemiler var.
+
+624
+01:37:02,515 --> 01:37:25,195
+Hem avsa havalarını tespit etmek açısından zaman ve maliyet açısından çok verimsiz. Hem de çok fazla ekip yapıyorlar. Bu da doğamıza, çevremize, denizler imzasında çok büyük zararlar veriyor. Sürdürülebilir olmuyor bu durumda bu işlemler. Bizim geliştireceğimiz ürünle de...
+
+625
+01:37:25,492 --> 01:37:34,612
+Bu ürünü kullanan filolar direkt av sahasına yönlenebilecek ve avına daha düşük maliyetle, doğaya minimum etkiyle yapılabilecekler.
+
+626
+01:37:35,952 --> 01:37:43,172
+Şu anki durumda balıkçılarımız 5-10 km alanlarda ellerindeki cihazlarla taramayacaklar.
+
+627
+01:37:53,811 --> 01:37:59,871
+dalıkçılarımızın önünde olacak ve optimal alt sahalarını aslında tespit edebilecekler.
+
+628
+01:38:05,971 --> 01:38:25,151
+Bunun dışında bir de dünyamızda gittikçe büyüyen bir gıda sorunu mevcut. Tarım arazilerinin birbirinden güne daralmasıyla, şu anki zamanın ve geleceğin de en önemli sektörlerinden biri aslında su ürünleriyle ilgili olan gıda sektörü nedenle.
+
+629
+01:38:25,931 --> 01:38:31,431
+Fakat bu sektör yeterince şu an ödeme sahip değil.
+
+630
+01:38:32,851 --> 01:38:48,692
+Bu konuda yatırımlar yeterli değil. Çoğunlukla bu yatırımlar daha büyük uzay savunma, havacılık gibi bu sanayi sektörlerinde yapılan verilerden elde edilen veriler de ediyor.
+
+631
+01:38:49,572 --> 01:38:56,212
+Yani örneğin sonarlar, radarlar, dokter cihazlar gibi farklı cihazlar kullanılıyor bu almanın çıkında.
+
+632
+01:38:59,060 --> 01:39:17,739
+Cihazlar aslında diğer sektörde için geliştirilmiş ve av balıkçılığı da kullanılıyor. Bizim geliştireceğimiz sistemle bizim sektörü, yani av balıkçılığı sektörüne özel veriler kullanılacak ve direkt balıkçılık endüstrisiye hedefi olunacaktır aslında.
+
+633
+01:39:22,547 --> 01:39:32,387
+Bu projeyle birlikte avlanma takvimi ve Türk popülasyonu da kontrol altında tutulursa gıda, kayıp ve israfları da engellenilecek.
+
+634
+01:39:32,387 --> 01:39:37,067
+Proje balıkçılık av yönetimine bütüncül bir çözüm getirecek böylelikle.
+
+635
+01:39:37,619 --> 01:39:50,220
+Bu sektörden beslenen balık işletme sektörü de örneğin daha stabil olacak bu şekilde. Fabrika kapasitelerini örneğin kullanmaları bu şekilde ayarlanabilecek.
+
+636
+01:39:51,820 --> 01:39:59,460
+Bu projeyle uzaktan algılama, derin öğrenme, jeolojik, biyolojik ve meteorolojik unsurlar birleştirilecek.
+
+637
+01:40:00,020 --> 01:40:13,340
+Balıkçılara böylelikle anlık av bölgelerinin koordinatları ile birlikte tahmini av balık miktarı, hava durum verileri gibi birçok ek veri de tek bir arayüzde sunulmuş olacak.
+
+638
+01:40:14,580 --> 01:40:19,800
+Benim sunumum bu kadar. [öğrenci] Bey projemizle ilgili detayları paylaşacak sizinle.
+
+639
+01:40:23,444 --> 01:40:37,124
+Ben şu an [öğrenci] Hanım'a teşekkür ediyorum. Irmak Hanım'ın bıraktığı yerden devam edeceğim. Şu an aslında bu bir Avukararı Destek Sistemi yazılımı.
+
+640
+01:40:38,484 --> 01:40:57,704
+Fakat içeriğine baktığımızda yalnızca balıkçılarımıza değil, devlet otoritelerine de, balıkçılık otoritelerine de veri sağlayabilecek, üniversitelerimize bilimsel araştırmalar sağlayabilecek bir altyapı, bir platform bizim projemiz.
+
+641
+01:41:04,756 --> 01:41:22,896
+Özellikle endüstriyel balıkçılık, Japonya'da üretilen veya Amerika'da üretilen denizlerimize tamamen zararlı, yani yüksek desibelde, yüksek frekansla balık popülasyonlarının dokusunu bozan, balıkların göçlerinin yolunu değiştiren sistemlerle yapılıyor.
+
+642
+01:41:22,896 --> 01:41:32,756
+Dolayısıyla bu hem iktisadi anlamda balıkçıların balık bulma noktasındaki sorunu olmakla beraber denizlerimizin popülasyon dinamikleri.
+
+643
+01:41:32,756 --> 01:41:51,696
+Bu projemizle balıkçılık anlamında sektöre, daha doğrusu sektöre getirdiğimiz gibi gıda sorununa da bir çözüm getirmiş olacağız. Nasıl gıda sorununa da bir çözüm getirmiş olacağız?
+
+644
+01:41:52,595 --> 01:42:11,756
+Şu an av balık tekneleri ülkemizde 50 metreye 60 metreye kadar olan tekneler. Bunların içerisinde 5000 beygir motor olan tekneler var. Yani günümüzde arabalarımızın beygirine baktığımızda 100 beygir, 150 beygir bir araçla bir seyahat yaptığımızdaki maliyetlerimizi düşünün. Bu araçlar 5000 beygir.
+
+645
+01:42:12,127 --> 01:42:33,367
+Güçle yol almaya ve balık bulmaya çalışıyor. Dolayısıyla av çabası dediğimiz bir maliyet unsuru var. Av çabası maliyeti artarsa balıkçının denizden daha fazla balık alması mutlak hale geliyor. Aksi takdirde hayatiyetini devam ettirecek. Bu da popülasyonlar üzerinde ciddi bir problem.
+
+646
+01:42:35,539 --> 01:42:52,979
+Aynı zamanda devlet otoriteleri bugün Türkiye'de yok ama kuzey ülkelerinde, balıkçılığın gelişmiş olduğu ülkelerde bir yıl önceden popülasyonları açıklıyor ve buna göre bir kota veriyor. Diyor ki siz bu kotaya göre av yapabilirsiniz. Kotanızı tamamladığınızda geri dönün.
+
+647
+01:42:53,908 --> 01:43:06,128
+Bitirin, al balığınızı bitirin. Şimdi böyle bir durumda teknelerimiz, Kuzey ülkelerinde tekneler çıkıyor, yalnızca 5 kilometre önünü gören, yani 5 kilometrelik bir farla denizde yol almaya çalışıyorlar.
+
+648
+01:43:06,748 --> 01:43:12,908
+Buldukları zaman denize dönüyorlar. Bunu 6 ayda da bulabilirler, 3 ayda da bulabilirler ya da bir yazılımla...
+
+649
+01:43:14,260 --> 01:43:28,180
+15 gün içerisinde de bulup bu avını yakalayıp karbon salınımını denize vermeden, denize sonar problemlerini yaşatmadan geri dönebilir.
+
+650
+01:43:38,355 --> 01:43:55,775
+Görevinin ötesinde çevre anlamında da bir uygulama olacak. Bunu nasıl yapacak? Bugün uzaktan algılama yöntemleri kullanılıyor. Fakat uzaktan algılama yöntemleri [öğrenci] Hanım'ın söylediği gibi bir bütün içerisinde değil, belli uzmanlar tarafından yorumlanarak kullanılabiliyor.
+
+651
+01:43:59,872 --> 01:44:11,992
+Başarıya ulaşamıyor. Ben bu uzmanları kullanmış, bu daha önce balıkçılara Amerika'dan veri satın alarak balıkçılık yaptırmış birisi olarak söylüyorum.
+
+652
+01:44:13,192 --> 01:44:21,391
+Biz insan bağımlı ve insana göre değişen, yani oradaki mühendisin altyapısına göre değişen şekilde performans alıyoruz.
+
+653
+01:44:27,872 --> 01:44:31,431
+Ve onlarca yıllık çalışmanın kendini geliştirebilen bir çalışma olacak.
+
+654
+01:44:31,431 --> 01:44:37,271
+Çünkü yıllar içerisinde yaşadığı tecrübeleri kendi içerisinde büyütüp büyütüp büyütüp bir yapı oluşturacak.
+
+655
+01:44:37,372 --> 01:44:46,792
+Dolayısıyla da bu sistem kullanılmaya başlandığında verimli bir pozisyon ortaya çıkmış olacak.
+
+656
+01:44:49,844 --> 01:45:00,623
+Bugün ülkemizde de mikro uygu uydu projeleri başladı. Dolayısıyla çözünürlükler yüksek, uydular Allah nasip ederse.
+
+657
+01:45:01,011 --> 01:45:23,731
+yukarıya doğru çıkacak. Bunların içerisinde işte IMC uydusu fırlatıldı, veriler alınmaya başlandı. Bu projeler, bu uydular yukarıya atıldıkça bu uygulamanın, bu uygulamaya veri oluşturacak altyapı da gelişecek. Dolayısıyla da hani önümüzdeki yıllar için daha rantabıl bir şekilde kullanacak bir projeksiyon olacak.
+
+658
+01:45:24,756 --> 01:45:37,376
+Sorun, çözümü anlattık. Sorunu anlattık. Çözümü nasıl yapacağız? Çözüm sahada, uzaktan algılama yöntemleriyle elde edilen veriler sahada test edilecek.
+
+659
+01:45:40,047 --> 01:45:54,448
+pH'i eğer analiz ediyorsak pH'in kalibrasyonu, oksijenin kalibrasyonu, tuzluluğun kalibrasyonu gibi veya klorofilin kalibrasyonu gibi veriler kalibredilmesinin ötesinde bir de proje çalıştığında, uygulama çalıştığında
+
+660
+01:45:54,863 --> 01:46:07,764
+Bu algoritma, orada balık var, şu kadar popülasyonda bir balık var ve şu bölgede, şu zamanda olacak dediğindeki gerçekliğini de yine biz sahada fesledeceğiz ve sisteme eğiteceğiz.
+
+661
+01:46:08,844 --> 01:46:12,203
+Sistem eğitildikçe de başarı oranı artacak.
+
+662
+01:46:21,520 --> 01:46:29,420
+elde etmesi olduğunu düşünüyorum. Önemli olan veri. Biz bu veriyi sürekli elde edeceğiz. Bu verilerle de sistemi güçlendireceğiz.
+
+663
+01:46:30,060 --> 01:46:40,340
+Amerika'da bu tür şeyler dediğim gibi hala hazırda uygulama olmadan yapılıyor. Uygulaması olan şeyler de var. Amatör balıkçılar için kronobiyoloji dediğimiz,
+
+664
+01:46:40,340 --> 01:46:49,340
+bizim astronominin biyolojiye olan etkisini araştıran bir bilim kronobiyoloji. Kronobiyolojik veriler...
+
+665
+01:46:49,520 --> 01:46:55,880
+Bu konuların yöntem, küçük balıkçılar için, onta balıkçıları için uygulamalar var.
+
+666
+01:46:56,240 --> 01:47:06,920
+Yani ayın pozisyonuna göre veya gelgit olaylarının pozisyonuna göre balığın nerede olacağı, nasıl olacağı, gidilerileri gösteren bir uygulama var.
+
+667
+01:47:06,920 --> 01:47:11,920
+Ama dediğim gibi çok küçük bir ölçekte uygulama bizim...
+
+668
+01:47:13,492 --> 01:47:24,852
+Söylediğimiz ise bütün okyanusları, bütün denizleri bir veritabanı içerisinde mekansal ve zamansal boyutta.
+
+669
+01:47:24,852 --> 01:47:28,452
+Yani şöyle bir şey var.
+
+670
+01:47:29,363 --> 01:47:48,683
+Bir çöl tozunu düşünün. Çöl tozu hamsinin popülasyonu oluşmadan belki altı ay önce Karadeniz'e iner ama eğer tam vaktinde, tam zamanında inmemişse ve orada bir elektriklenme yani şimşek ya da yıldırım gibi olaylar olmadıysa hamsi popülasyon o sene düşüp gider.
+
+671
+01:47:48,683 --> 01:47:52,363
+Ama bunu bizim eski balıkçılarımız işte Haziran'da...
+
+672
+01:47:52,435 --> 01:48:05,615
+Gökyüzünde kırmızı bulutlar varsa, işte şimşek de çakmışsa bu sene balık çok olur diye nitelendirir. Biz ise bu zamanı uydularla ve meteorolojik verileri birleştirerek yönetebilirsek.
+
+673
+01:48:05,935 --> 01:48:27,215
+O eski balıkçılarımızın yerine bu kararı biz vereceğiz. Veya sistem verecek, diyecek ki bu sene çok balık olacak. Bu sene çok balık olacak dediği zaman sistem, devlet otoritesi de diyecek ki bu sene balık popülasyonu yüksek olacak. Siz 100 bin ton al kotası veriyorum, bunu dağıtın ya da bunu satın alın.
+
+674
+01:48:27,572 --> 01:48:44,012
+diyebilecek. Yani balıkçılığın, dünyanın en büyük sorunu olan gıda sorununun, en büyük çözümü olan balıkçılığın, denizin çözümü noktasında tüm taraflara, tüm otoritelere bilgi verecek bir platformu planlıyoruz.
+
+675
+01:48:46,012 --> 01:48:53,312
+Projemiz bu ölçekten. Ben [öğrenci] Hanım'a devredeyim. Sorunuz varsa soruları sonra mı alıyoruz hocam?
+
+676
+01:48:59,604 --> 01:49:07,824
+Sorundan çözümü kısaca özetledik, state of art durumunu özetledik, yurt dışındaki durumuna baktık.
+
+677
+01:49:08,884 --> 01:49:23,904
+Şimdi burada bahsettiğimiz işte oseanolojik yani klorofil, deniz, yüzey, sıcaklığı, tuzluluk, akıntı verileri, sonra işte meteorolojik veriler, çöl tozları, bilim yüzeydeki yağ.
+
+678
+01:49:24,319 --> 01:49:36,319
+miktarı bile bize balıkların oradaki biomasıyla ilgili bilgiler veriyor. Peki biz bu doğrusal olmayan parametreler arasında nasıl bir ilişki kuracağız? Bunu da gam analizi yöntemiyle yapacağız.
+
+679
+01:49:37,140 --> 01:50:00,079
+Gam analizi yönteminde França'nın makalesindeki analiz yönteminden buradan faydalanacak. Buradan bir prodüksiyon tahmin modeli geliştirecek. Model projede geliştirecek derin öğrenme anları ile elde edilen sonuçlar karşılaştırılarak deneysel olarak aslında model seçimi yapılacak.
+
+680
+01:50:02,003 --> 01:50:21,864
+Burada MODIS verilerinden, Aİ'nin yönteminde MODIS verilerinden faydalanarak bir gam analizi hesaplaması yapılmış. Biz burada sadece klorofil ve deniz yüzey sıcaklığı değil, bahsettiğim gibi kronobiolojik veriler, çöl tozları.
+
+681
+01:50:22,271 --> 01:50:33,771
+Balıkların göç yolları, bu da bentik ve nektonik verilerin, parametrelerin gam analizine dahil edilmesiyle yapılacak.
+
+682
+01:50:34,271 --> 01:50:42,271
+Normalde şu an bu yöntem gam analizi yapılmış ama bir ya da iki parametrenin gam analizi çıkartılarak,
+
+683
+01:50:42,271 --> 01:50:46,811
+yani parametre arasında ilişki kurularak bu yönteme çözüm oluşturulmuş.
+
+684
+01:50:47,292 --> 01:50:50,271
+Bir de tabii ki işte Amerika'da ya da Japon ya da yurt dışında.
+
+685
+01:50:50,271 --> 01:51:01,231
+Buradaki okyanusta ve kıyılarda yapılmış bizim buradaki ARGE'deki farklılığımızdan biri de bunu Marmara ve Karadeniz'de deneyecek olmamız.
+
+686
+01:51:01,231 --> 01:51:16,872
+Bentik, nektonik veriler dediğimizde bentik deniz dibindeki balıkların, nektonik yüzen balıkların, göç yolları, yumurtlama zamanları gibi parametrelerin alınıp gam analiziyle aralarında bir ilişkisel.
+
+687
+01:51:17,652 --> 01:51:35,431
+Veri seti oluşturma. Daha sonra bu veri setleri yer gerçeklik verileriyle doğrulanacak. Bizim yüzeyde zaten şu anda da mevcut şamandıralarımız var. Bu şamandıralarımız üzerinde oksijen, klorofil, pH, tuzluluk gibi gibi problar mevcut.
+
+688
+01:51:35,531 --> 01:51:45,011
+Bu problardan alınan veriler, uydunun geçiş zamanlarıyla uydunun alınan veriler ve o bölgenin verileri birebir çapraz kontrol edilecek.
+
+689
+01:51:46,355 --> 01:51:59,416
+AİN'in burada önerilen yöntemi uygulanacak. Modest görüntülerinden elde edilen band parametreleri girdi ve deniz yüzey sıcaklığı ve diğer parametreler de çıktığı olarak kullanılacak.
+
+690
+01:51:59,416 --> 01:52:12,304
+Bunun yanında 2016'da yine bir makalede GURS Kütüphanesi ve SİDAS yazılımı normalize edilerek %90 doğrulukta...
+
+691
+01:52:12,304 --> 01:52:30,523
+Bir hesaplama yapılmış. Biz bunun tabii ki %90, biz de hedefimiz %90. Çünkü bizim burada parametrelerimiz daha fazla ve kullandığımız, kullanacağımız coğrafyada farklı olacağı için biz de %90 doğruluk hesaplarını hedefliyoruz.
+
+692
+01:52:31,155 --> 01:52:44,756
+Sistem geliştirilirken işte ResNet, Unet ya da yapay sinir ağları gibi model seçimi, hiperparametrelerin seçimi tamamen o aşamada deneysel olarak belirlenecek.
+
+693
+01:52:46,135 --> 01:52:52,836
+Projemizde uydu verilerin işlenmesinin yanı sıra dedik ki işte yer gerçeklik verileri çapraz kontrol olarak.
+
+694
+01:52:53,492 --> 01:53:02,512
+Bu da aslında doğruluğu, çıkacak aksaklıkları bir nebze daha ortadan kaldırmak için B planı olarak düşünüldü.
+
+695
+01:53:03,512 --> 01:53:08,992
+Su altı dronelarımız, multispektral kameralarımız, kara teleskobumuz, kara teleskobumuz.
+
+696
+01:53:10,452 --> 01:53:24,612
+Kronobiolojik veriler içindi. Mikroskopumuz plankton yoğunluğunu incelemek için. Su üstü, su üstü, nasıl diyeyim, hava dronlarımız, multispektrel kameramız için bu projede kullanılacak.
+
+697
+01:53:26,492 --> 01:53:32,612
+Biz normalde dört kişiydik hocam. Bir arkadaşımız iptal etti, katılmadı. O yüzden...
+
+698
+01:53:32,979 --> 01:53:34,939
+Arkadaş yolda düştü herhalde.
+
+699
+01:53:36,379 --> 01:53:39,479
+Yok yok, yani katılmayacağım direkt.
+
+700
+01:53:40,419 --> 01:53:44,799
+Tamam, okey. Evet, var mı sorusu olan?
+
+701
+01:53:50,676 --> 01:54:04,396
+Burada uydu verilerinin hangi çözünürlükte olduğu gösteriliyor. Bunlar yine 2013 ve 2016'da makalelerde kullanılmış bant genişlikleri. Biz bunlardan faydalanacağız.
+
+702
+01:54:11,667 --> 01:54:17,807
+Buralar zaten deneysel olarak belirlenecek dedik. Teşekkür ederiz.
+
+703
+01:54:20,908 --> 01:54:21,867
+Teşekkürler.
+
+704
+01:54:22,867 --> 01:54:23,707
+Rica ederiz.
+
+705
+01:54:25,307 --> 01:54:30,988
+Sonunda herkese iyi günler arkadaşlar. Finans sınavımızda görüşmek üzere.
+
+706
+01:54:33,268 --> 01:54:35,427
+Görüşürüz hocam. Görüşürüz.
