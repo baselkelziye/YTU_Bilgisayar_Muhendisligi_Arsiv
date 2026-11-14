@@ -1,0 +1,1843 @@
+1
+00:02:22,707 --> 00:02:23,948
+Hocam sesim geliyor mu?
+
+2
+00:02:24,307 --> 00:02:26,487
+Geliyor hocam, merhabalar, hoş geldiniz.
+
+3
+00:02:26,927 --> 00:02:27,608
+Merhaba.
+
+4
+00:02:30,788 --> 00:02:32,300
+Şey olarak...
+
+5
+00:02:38,484 --> 00:02:41,243
+Çocuklar katılmalı var.
+
+6
+00:02:46,548 --> 00:02:48,927
+Sen bitirince ben devam ederim hocam.
+
+7
+00:03:04,051 --> 00:03:14,051
+Hocam başlangıçta şimdi işte Table Generator'den, Excel to Latex'den, Latex Dokumentasyondan.
+
+8
+00:03:14,912 --> 00:03:15,491
+Evet.
+
+9
+00:03:15,951 --> 00:03:17,811
+Hızlıca bir geçtirip geçeceğim.
+
+10
+00:03:18,651 --> 00:03:18,931
+Aynen.
+
+11
+00:03:19,331 --> 00:03:20,512
+Tamam hocam.
+
+12
+00:04:01,524 --> 00:04:03,804
+Arkadaşlar, merhaba, hoş geldiniz. Sesimiz geliyor mu?
+
+13
+00:07:28,788 --> 00:07:31,048
+Evet arkadaşlar, merhabalar, sesimiz geliyor mu?
+
+14
+00:07:35,699 --> 00:07:36,500
+Geliyor hocam.
+
+15
+00:07:37,500 --> 00:07:48,360
+Tamamdır. Şimdi bugün İdris hocamızla başlayacaksınız. Yaklaşık bir 40-50 dakika latex konusunda size bir şeyler anlatacak.
+
+16
+00:07:49,459 --> 00:07:58,399
+Onun akabinde ben normal haftalık konumuzu anlatacağım. Projelerle alakalı da dersin sonrasında bir duyuru yapacağız.
+
+17
+00:07:59,279 --> 00:08:03,079
+Ben şimdilik sözü hocama devrediyorum. Hocam buyurun ekran paylaşabilirsiniz.
+
+18
+00:08:10,196 --> 00:08:11,276
+Merhaba arkadaşlar.
+
+19
+00:08:17,076 --> 00:08:22,196
+Latex'i Overlift'te yazıyoruz. Overlift'te Overlift yazıyorsunuz internetle.
+
+20
+00:08:25,296 --> 00:08:30,596
+Benim Google hesabım olduğu için Google'dan direkt giriş yapabiliyorum. Siz de o şekilde yapabilirsiniz.
+
+21
+00:08:34,836 --> 00:08:38,355
+Ondan sonra size bazı kısa yollar...
+
+22
+00:08:38,355 --> 00:08:43,135
+Önce şöyle yapalım. Arkadaşlar Overleaf'i elbette kullanacaklar da.
+
+23
+00:08:44,076 --> 00:08:48,936
+Şimdi ilk defa latek görecek olanlar vardır. Öyle başlayalım.
+
+24
+00:08:49,796 --> 00:09:01,196
+Şimdi arkadaşlar, bir tez yazımı, makale yazımı, bildiri yazımında, aklınıza ilk gelecek paket program Word veya Google dokümanlar olabilir.
+
+25
+00:09:01,844 --> 00:09:14,804
+Fakat metnin boyutu çok aşırı büyüdüğünde bu yönetilemez hale geliyor. Bir de her derginin, her tezin kendine göre formatı var. Bu formatı uygun yazmanız gerekir.
+
+26
+00:09:15,504 --> 00:09:25,516
+Örneğin bizim enstitünün yüksek lisans doktora için tez formatı var. Bu elbette Word formatıyla da hazırlanmış ama bu metni çok...
+
+27
+00:09:25,556 --> 00:09:40,316
+Böyle 30-40 sayfalık bir metin falan yazacaksanız, hatta 20-25 sayfalık metin yazacaksanız, yönetmesi çok zor. İçindekiler tablosu, şekil listesi, tablo listesi, bunları oluşturmak çok zor.
+
+28
+00:09:41,516 --> 00:09:53,056
+İşte Latex, bunu daha böyle pratize halde size sunabilen bir araç, bir işaretleme dili. HTML nasıl bir işaretleme diliyse, bu da bir işaretleme dili.
+
+29
+00:09:53,504 --> 00:09:58,504
+Çok daha rahat bir şekilde bu tarz akademik metinleri yazmanızı sağlıyor.
+
+30
+00:09:58,864 --> 00:10:08,224
+Daha da güzel tarafı, hangi dergiye, hangi teze uygun yazı yazacaksanız, bu yapacağınız şeyin zaten şablonu baştan hazır.
+
+31
+00:10:08,224 --> 00:10:16,303
+O şablona uygun siz sadece bir metin belgesine veri girer gibi yazmaya başlıyorsunuz ve o şekilde devam ediyorsunuz.
+
+32
+00:10:16,964 --> 00:10:20,024
+Şimdi bunun örneğini hocamız size bahsedecek.
+
+33
+00:10:20,303 --> 00:10:20,824
+Overleaf.
+
+34
+00:10:21,203 --> 00:10:30,023
+latex ile alakalı kod yazıp, scriptler yazıp, bunları değerleyeceğiniz ve pdf olarak sonucu üretebileceğiniz bir sayfa.
+
+35
+00:10:30,803 --> 00:10:36,943
+edu uzantılı mailinizle buraya üye olmanızı tavsiye ederim. İleride çünkü hepiniz kullanacaksınız.
+
+36
+00:10:37,743 --> 00:10:41,763
+Tezli yapanlar zaten illaki tez yazacaklar, makale yapacaklar.
+
+37
+00:10:42,543 --> 00:10:47,963
+Testsiz yapanlar dönem projesi yapacaklar. Bir şekilde karşınıza gelecek.
+
+38
+00:10:48,464 --> 00:10:55,663
+Şimdi bunun nasıl kullanılacağını hocamız anlatmaya başlasın. Ben daha sonra devam ederim. Kolay gelsin.
+
+39
+00:11:00,784 --> 00:11:09,924
+Önce boş bir proje oluşturacağım deneme diye. Burada bazı bir iki komuttan hemen hızlıca komutu göstereyim.
+
+40
+00:11:11,796 --> 00:11:23,636
+Bakın, orada bir makale yazıyoruz. Şurada Begum Dokument'ın altında, mesela biz tezimizde veya yayınımızda seksiyonlar açacağız.
+
+41
+00:11:23,636 --> 00:11:27,896
+Seksiyon, mesela introduction.
+
+42
+00:11:31,475 --> 00:11:56,196
+Veya bunun altında da işte alt seksiyonlar olacak. Subsection. İşte ne olsun? Ön inceleme gibi. Mesela burada recompile yaptıktan sonra bakın gördüğünüz gibi şu sağ tarafta introduction ve ön inceleme şeklinde gözüküyor.
+
+43
+00:11:57,235 --> 00:12:18,596
+Bizim tablo ve figürler oluşturmamız gerekecek. Buradan hemen Insert Table'a ne kadar tablo eklemek istiyorsak, yani kaçak açlık olacaksa o kadarlık hemen buradan oluşturuyoruz. Ve buraya verilerimizi giriyoruz. Ben örnek göstermek adına küçük bir şey oluşturayım. Mesela ikiye kilik.
+
+44
+00:12:24,864 --> 00:12:37,844
+C, C harfi var iki tane. Bu iki tane sütundan oluşacağını gösteriyor ve o sütundaki değerlerin, hücredeki değerlerinde merkezde olması için C konulmuş.
+
+45
+00:12:37,963 --> 00:12:44,304
+Oraya L ve R'de yazabilirdiniz. Left, right şeklinde.
+
+46
+00:12:49,875 --> 00:13:08,615
+Tabloda düz çitunlardan düz bir çizgi oluşturmak için. Şöyle göstereyim hatta önce de. Şuraya mesela isim, soy isim şeklinde olsun. İdris Demir. Mesela böyle oluşturdum.
+
+47
+00:13:17,812 --> 00:13:36,511
+yazdı. Ama ben bunu tam bir tablo şeklinde göstermek için, bakın buradan düz çizgiler çiziyorum. Burada sütunların çizgilerini çizdi. Şuradan da hyseline komutuyla her satır sonunda yatay çizgiler çiziyorum.
+
+48
+00:13:42,836 --> 00:14:10,216
+Böylelikle bir tablo oluşturmuş oluyorum. Caption'ın yukarıda olması lazım tablolarda. Dolayısıyla da bunu buraya taşın. Figür de aynı mantık. Buradan insert figure diyorsunuz. Bilgisayarınızdan resmi indirebilirsiniz. Şuradan.
+
+49
+00:14:10,932 --> 00:14:22,312
+Resim örnek koymadım. Neyse. Bu şekilde yapabilirsiniz. Bunun tablolarla ilgili kısa bir şey göstereceğim. Mesela
+
+50
+00:14:22,312 --> 00:14:37,451
+Table Generator diye bir site var. Latex Table Generator. Burada kaça kaçlık bir tablo oluşturmak istediğinizi seçiyorsunuz.
+
+51
+00:14:38,451 --> 00:15:02,072
+Zaten rate'e bastınız. Ve buradan da tablonun içeriğini dolduruyorsunuz. Mesela bakın ben 1, 2, 3, 4'ü doldurmuşum burada. Burada size latex kodu olarak gösteriyor. 1, 2, 3, 4 dolu. Gerisi de şu şekilde bir şablon olarak burada duruyor. Bunu alırsınız.
+
+52
+00:15:06,995 --> 00:15:12,596
+Buraya yapıştırırsınız ve buradan normal bir şekilde aslında siz tablo yazıyorsunuz.
+
+53
+00:15:12,655 --> 00:15:21,556
+İşte 1, 2, 3, 5, 7 ve bu şekilde generate deyip latex komutunu elde ediyorsunuz.
+
+54
+00:15:21,556 --> 00:15:28,056
+Aynı şekilde convert excel to latex var.
+
+55
+00:15:30,036 --> 00:15:34,375
+Burada da sizin bir excel dosyanız var.
+
+56
+00:15:35,347 --> 00:15:41,947
+Ben şuraya koymuştum bir tane deneme adımda. Bunu aldım, buraya sürükledim.
+
+57
+00:15:46,899 --> 00:15:58,980
+Bakın, burada bunun tablo olarak nasıl gözüktüğünü, şurada da latex komutunu yazmış oldum.
+
+58
+00:16:02,644 --> 00:16:25,364
+Bir de arkadaşlar, latex ile ilgili tez veya yayın yazım sürecinde birçok problemle karşılaşacaksınız ve bir şeyleri öğrenmek isteyeceksiniz genel olarak. Latex Dokument, şöyle buradan şuraya, latex doküment diyorsunuz. Buradan bu siteye ulaşıp,
+
+59
+00:16:25,716 --> 00:16:35,035
+Özellikle başlangıç için şurada çok ayrıntılı olarak bazı konular yer alıyor. Bunlara bakarsınız. Genel olarak öğrenmiş olursunuz.
+
+60
+00:16:36,475 --> 00:16:40,975
+Şimdi ben size şey göstereceğim.
+
+61
+00:16:50,836 --> 00:17:00,836
+Mesela, IEEE CU 2023 veya 2024.
+
+62
+00:17:22,067 --> 00:17:22,788
+Bakın burada.
+
+63
+00:17:26,387 --> 00:17:28,147
+CueLatex formatını indirdim.
+
+64
+00:17:32,500 --> 00:17:45,960
+Şuraya new project diyorum, upload project, zipli haliyle, hiç zipli açmadan zipli haliyle upload project deyip bu şablonu indirmiş oluyorum.
+
+65
+00:17:55,476 --> 00:18:02,516
+Burada, bunlar bizimle ilgili değil. Bunlar zaten şablonun genel yapısı.
+
+66
+00:18:10,516 --> 00:18:37,956
+Burada, bagan dokümentin altında gerekli yerleri dolduracağım. Mesela bildiri başlığı diyor. Bildiri başlığı Türkçe. Title of paper in English diyor. Burada sizin başlığınızı, mesela ne olsun, derin öğrenme yöntemleriyle değişim tespit.
+
+67
+00:18:40,756 --> 00:18:48,336
+Recompile ediyorum. Bakın burada değişti. Aynısının İngilizcesini buraya yazıyoruz. Burası da değişecek.
+
+68
+00:18:52,531 --> 00:19:04,211
+Make title göstermek için. Burada özet kısmı var. Bu arada şunu da göstereyim. Mesela PDF halindeki herhangi bir yere iki kere tıklıyorsunuz.
+
+69
+00:19:05,211 --> 00:19:19,451
+Sol tarafta, o oradaki yere geliyor. Veyahut da bu latex kısmında, kod kısmında herhangi bir yere tıklayıp, go to code location in PDF diyorsunuz. Bakın burada şu.
+
+70
+00:19:19,892 --> 00:19:25,632
+Şu sağ tarafa gösteren oku bastığınız zaman buradaki kısmın pdf'deki yerini görüyorsunuz.
+
+71
+00:19:29,811 --> 00:19:33,011
+Şuraya bastım mesela şimdi. Burada özetiniz var sizin.
+
+72
+00:19:36,132 --> 00:19:39,731
+Mesela bakın, bu şablonlarda şurada yazmışlar.
+
+73
+00:19:39,911 --> 00:19:44,672
+Dikkat, bildiri başlığında ve özetlerde sembol, özel ve matematiksel karakterler kullanmayınız.
+
+74
+00:19:44,672 --> 00:19:49,891
+Atıf vermeyiniz. Bunlara da dikkat ederek, buraya okuyarak, buna göre dolduruyorsunuz.
+
+75
+00:19:49,931 --> 00:19:53,672
+Özet kısmına, özet altında, özetinizi yazıyorsunuz.
+
+76
+00:19:54,996 --> 00:20:01,655
+Sonra, itriple anahtar diyor. Buraya sizin anahtar kelimelerinizi yazıyorsunuz çalışmanızla ilgili.
+
+77
+00:20:02,675 --> 00:20:06,436
+Abstract İngilizcesi, özetinizin İngilizcesi.
+
+78
+00:20:10,644 --> 00:20:28,183
+Şeklinde oluyor. Mesela bakın, burada işte giriş yazmış ama şurada footnote size diyor. Bu i harfiyle alakalı, Türkçe karakterlerle alakalı bir şey olsa gerek.
+
+79
+00:20:33,971 --> 00:20:47,392
+Burada section mesela bakın section da göstermiş. Sonra yine bir section açmış kullanım. Bakın şurada kullanım. Sonra subsection bu kullanımın altında taslak seçmek şeklinde bakın bir subsection var.
+
+80
+00:20:49,892 --> 00:20:59,231
+Yine yeni bir section. Kısaltmalar, bilimler. Bakın mesela bir liste oluşturmuş şurada.
+
+81
+00:21:03,220 --> 00:21:09,159
+BeganItemize ile bir liste oluşturuyorsunuz. Item, item, item. Sizin liste elemanlarınız yazıyor. Bakın burada.
+
+82
+00:21:12,220 --> 00:21:18,159
+Denklem oluşturabiliyorsunuz. Bunun içinde bakın BeganEquation var. Bu arada şu da vardı.
+
+83
+00:21:19,740 --> 00:21:21,740
+Atex Equation
+
+84
+00:21:26,612 --> 00:21:36,532
+Buraya matematiksel şeylerinizi yazıyorsunuz ve latex komutunu çıkartıyor.
+
+85
+00:21:42,900 --> 00:21:56,440
+Mesela bakın, şimdi şu ifadeye gelelim. Şurada x sonsuza giderken, pdf tarafında x sonsuza giderken diyor, bakın bunu şu şekilde yazıyor.
+
+86
+00:21:57,960 --> 00:22:08,200
+Limit yazısının altında olduğu için şurada alt tire kullanıyor ve birden fazla karakter kullandığı için de süslü parantez açıyor.
+
+87
+00:22:09,619 --> 00:22:12,659
+X diyor, to ile oku gösteriyor.
+
+88
+00:22:13,819 --> 00:22:15,439
+Infinity ile de sonsuzu.
+
+89
+00:22:19,092 --> 00:22:23,992
+Sonra da işte exp parantez içerisinde xx.
+
+90
+00:22:34,708 --> 00:22:42,388
+Bu şekilde oluyor. Şekil ve tablolar kısmı burada gösterdiğimiz gibi arkadaşlar.
+
+91
+00:22:47,923 --> 00:22:49,963
+Bakın, mesela bir tablo var.
+
+92
+00:22:51,723 --> 00:22:52,003
+Burada.
+
+93
+00:22:53,344 --> 00:22:57,384
+Çok satırlı ve çok sütunlu tablolar oluşturabiliyorsunuz.
+
+94
+00:22:57,443 --> 00:22:58,804
+Multi column ile.
+
+95
+00:23:01,083 --> 00:23:05,623
+Şurada da tablonun nerede duracağı ile ilgili bilgiler veriyor.
+
+96
+00:23:10,612 --> 00:23:14,552
+Bunu zaten gösterdik. Figür de aynı şekilde.
+
+97
+00:23:19,635 --> 00:23:25,375
+Şunlar Türkçe ile alakalı şeyler. Şartından eşittir.
+
+98
+00:23:31,251 --> 00:23:34,072
+Onun dışında bir de kaynak verme meselesi var arkadaşlar.
+
+99
+00:23:35,351 --> 00:23:48,632
+Şimdi mesela siz bir byte'ımla şuradan bakın sizin referansa sayt ettiğiniz makaleleri buraya yazabiliyorsunuz.
+
+100
+00:23:52,051 --> 00:23:59,951
+Bir makaleyi site etmek için, mesela metninizin belli bir yerinde, bir makaleyi ya da bir çalışmayı site edeceksiniz.
+
+101
+00:24:01,091 --> 00:24:11,591
+Oradan alıntı yaptıktan sonra, tabii ki kendi cümlelerinizle, site, sonra o çalışmayı yazıyorsunuz.
+
+102
+00:24:18,675 --> 00:24:30,455
+Tez şablonu ile ilgilenelim. Ona bakalım. Şurada mezuniyet, tez yazım kuralları, latex, tez şablonu en güncel haline tıklıyoruz.
+
+103
+00:24:32,235 --> 00:24:38,775
+Bunu indirdik. Şuradan tekrardan New Project diyoruz. Upload Project.
+
+104
+00:24:40,275 --> 00:24:42,215
+Yeterotez latex template.
+
+105
+00:24:56,019 --> 00:25:14,319
+Şimdi burada bir klasör var, test chapters diye. Siz burada chapter'larınızı yazıyorsunuz. Mesela birinci chapter. İşte burada ne var? Introduction var. Çeşitli şeyler var. Onların içini dolduruyorsunuz burada. Teoremler.
+
+106
+00:25:22,291 --> 00:25:37,211
+tezinizde görüntü ekleyeceksiniz, resim ekleyeceksiniz. Görüntüler önce buraya projeye ekliyorsunuz. Sonra buradan, buraya yol göstererek, şurada figure dedik ya, insert figure.
+
+107
+00:25:38,672 --> 00:25:47,091
+Şurada from project files'ı seçeceğiz. Mesela bakın, şurada picture bir png.
+
+108
+00:25:47,635 --> 00:26:00,155
+Şuradan da boyutlarını seçiyorsunuz. Mesela bir görüntü, ekranın pdf'deki full genişliği mi alsın, oranın yarısını mı alsın, dörtte birini mi alsın seçiyorsunuz.
+
+109
+00:26:02,395 --> 00:26:03,996
+Insert figure diyorsunuz ve ekliyorsunuz.
+
+110
+00:26:10,067 --> 00:26:16,548
+Bu front page ile ilgili bizim yapacak bir işimiz yok. Burada information text var.
+
+111
+00:26:18,067 --> 00:26:29,427
+Information text var. Burada sizin tez başlığınız, adınız, soyadınız, işte şurada bölümünüzle ilgili bilgileri doldurduğunuz kısım burası.
+
+112
+00:26:35,284 --> 00:26:49,564
+Tezinizin konusunu yazacaksınız. Change Detection. Değişim tespiti diyelim. Çünkü tr diyor. Buraya İngilizcesini yazacaksınız. Şuraya işte isim soy ismi yazıyorsunuz.
+
+113
+00:26:51,704 --> 00:26:57,624
+İyiler istedim. Şuraya işte Computer Science.
+
+114
+00:27:02,836 --> 00:27:09,476
+Aynı şekilde ana bilim dalı da konuttu. Gerçi hiç Türkçesi biliyorum ben. XCR mühendisi.
+
+115
+00:27:13,779 --> 00:27:20,900
+Program, aynı şekilde yazıyorsunuz. Teziniz yazdın, tarihi yazıyorsunuz. Tesnaf tarihinizi.
+
+116
+00:27:25,779 --> 00:27:33,779
+Eğer eş danışmanınız varsa bakın burada zaten yorum satırlarıyla da yazmış. Eş danışmanınız varsa 1 yoksa 0 yazıyorsunuz.
+
+117
+00:27:37,519 --> 00:27:49,779
+Tez danışmanınızı burada giriyorsunuz. Eş danışmanınız olmadığı için bu kısmı atlıyorsunuz. Hiç buraya girmenize gerek yok. Şurada jüri üyelerinizle ilgili kısım.
+
+118
+00:27:50,163 --> 00:27:57,844
+Bunları dolduruyorsunuz. Bunlar burada nereye tekabül ediyor? PDF'de onları da göstereyim. Tez başlığını ve isim suya ismi gösterdim zaten.
+
+119
+00:28:01,004 --> 00:28:09,504
+Şu doktora tezi olduğu bir yerde yazıyorsunuz. Burada her yerde onu yazıyor. Jüriler ve danışmanınızla ilgili kısım şu kısım yani.
+
+120
+00:28:11,644 --> 00:28:15,223
+Bu kısım. Burada değişiyor.
+
+121
+00:28:16,980 --> 00:28:20,159
+Mesela, onu da şey yapayım.
+
+122
+00:28:23,059 --> 00:28:24,480
+Mesela buraya yazalım işte.
+
+123
+00:28:27,480 --> 00:28:32,000
+Ali, of, [öğrenci], [öğrenci], Karaca.
+
+124
+00:28:37,556 --> 00:28:39,195
+Buraya da aynı şekilde yazdınız.
+
+125
+00:28:41,195 --> 00:28:42,235
+Recompile ettiniz.
+
+126
+00:28:43,915 --> 00:28:45,875
+Bakın burada değişti.
+
+127
+00:28:47,276 --> 00:28:49,175
+Eş danışmanınız yok, o yüzden geçtiniz.
+
+128
+00:28:49,255 --> 00:28:51,115
+Ya da var, o zaman burayı dolduracaksınız.
+
+129
+00:28:52,435 --> 00:28:53,635
+Jüriyesini yazacaksınız.
+
+130
+00:28:53,635 --> 00:28:54,556
+Mesela şuraya.
+
+131
+00:29:02,195 --> 00:29:08,955
+Bakın burada, Ahmet Albir çıktı. Aynı şekilde şuralarda da bu şekilde dolduracaksınız. Böyle devam.
+
+132
+00:29:10,556 --> 00:29:26,395
+Teşekkür metninizi buraya yazıyorsunuz. Burası İngilizcesi. Burası abstrak kısmı, özür dilerim. Yani özetinizin İngilizcesi. Burada anahtar kelimeler.
+
+133
+00:29:27,508 --> 00:29:50,788
+Abstract Keyword kısmında. Yani şöyle, mesela bakın, bu kısım biraz daha sonra geliyordu. Mesela teşekkür kısmı, bakın burası. Bak knowledge, text dediğimizde, burayı yazıyorsunuz, teşekkür kısmını, burada değişiyor.
+
+134
+00:29:53,107 --> 00:30:02,788
+İçindekiler otomatik oluşuyor. İçindekiler sayfası. Siz chapter, section ekledikçe aynı şekilde sizin gelin istedim.
+
+135
+00:30:10,003 --> 00:30:11,763
+Burada özet kısmı mesela.
+
+136
+00:30:15,508 --> 00:30:18,648
+Önce buraya abstrak kısmını yazıyorsunuz. O şuradaki kısım.
+
+137
+00:30:21,088 --> 00:30:26,508
+Burada tezinizin, özetinin İngilizcesini burada yazıyorsunuz.
+
+138
+00:30:27,468 --> 00:30:31,248
+Ve burada, şurada yazıyorsunuz özür dilerim. Ve burada gözüküyor.
+
+139
+00:30:33,448 --> 00:30:39,048
+Anahtar kelimeler. Bakın burada gözüküyor. Hatta şurayı değiştireyim mesela.
+
+140
+00:30:43,316 --> 00:30:44,316
+Siyanım, birbirine.
+
+141
+00:30:50,451 --> 00:30:51,371
+Yönümeyorsan.
+
+142
+00:30:56,084 --> 00:30:58,824
+İngilizce dediği için derin oran mı değil de.
+
+143
+00:31:11,539 --> 00:31:13,960
+Buraya da özetinizin Türkçesini yazıyorsunuz.
+
+144
+00:31:14,220 --> 00:31:16,159
+Mesela, burayı da değiştireyim.
+
+145
+00:31:19,460 --> 00:31:24,500
+Bakın o da şurada değişecek.
+
+146
+00:31:33,044 --> 00:31:38,084
+Buraya da Türkçesini yazıyorsunuz ve burası değişecek.
+
+147
+00:31:48,307 --> 00:31:52,827
+Eğer burada işte destek almadıysanız, şurayı siliyorsunuz.
+
+148
+00:31:53,447 --> 00:31:56,727
+Aldıysanız onu da desteğinize göre yazıyorsunuz.
+
+149
+00:31:59,147 --> 00:32:02,027
+İşte şurada dedik ki, şurada şurası arkadaşlar.
+
+150
+00:32:02,027 --> 00:32:08,107
+Bir yayın yaptığınız zaman, bunu görürsünüz kitaplara falan bakıldığında.
+
+151
+00:32:13,332 --> 00:32:19,152
+[kişisel bilgi]
+
+152
+00:32:19,932 --> 00:32:22,971
+Şeyler görürsünüz, burada onu yazıyorsunuz.
+
+153
+00:32:24,771 --> 00:32:29,471
+Burada kısaltmalar var, siz buraya ekliyorsunuz kısaltmalarınıza.
+
+154
+00:32:30,312 --> 00:32:32,112
+O da az önce geçmişti.
+
+155
+00:32:38,163 --> 00:32:38,884
+Burası.
+
+156
+00:32:45,811 --> 00:32:49,271
+Burası, burası. Tamam.
+
+157
+00:32:52,091 --> 00:32:53,451
+Bunları bir kürlüm.
+
+158
+00:32:55,192 --> 00:32:56,351
+Main Text.
+
+159
+00:32:57,912 --> 00:33:02,451
+Burada işte sizin, yine sizinle ilgili şeyler değil.
+
+160
+00:33:02,892 --> 00:33:04,731
+Şurada arkadaşlar, şurası.
+
+161
+00:33:05,371 --> 00:33:08,791
+Mesela siz doktora yapıyorsanız, PhD olacak.
+
+162
+00:33:09,132 --> 00:33:12,051
+Eğer ki yüksek lisans yapıyorsanız, şurası.
+
+163
+00:33:12,564 --> 00:33:24,504
+ms olacak. Eğer tezinizi İngiliz yapıyorsanız, buraya enge yazacaksınız. Türkçe yapıyorsanız dere yazacaksınız. Bakın burada zaten örnekler var.
+
+164
+00:33:29,748 --> 00:33:31,868
+Bakın burada da bu bir şey.
+
+165
+00:33:34,567 --> 00:33:39,567
+Ana bir yapı. Mesela sizin şurada dört tane chapter'ınız var.
+
+166
+00:33:40,448 --> 00:33:42,807
+Ama siz yeni bir chapter eklemek istiyorsunuz diyelim.
+
+167
+00:33:44,048 --> 00:33:50,208
+Şuradan new file deyip mesela 5-chap ya da şey yapayım.
+
+168
+00:33:52,928 --> 00:33:54,368
+New file deyip
+
+169
+00:33:55,571 --> 00:34:07,331
+5-tire, şey yapabilir, nokta text. Bakın oluşturdunuz. Ama bu gözükmeyecektir. Burada yaptığınız, şuraya yazdığınız şeyler, burada gözükmeyecektir.
+
+170
+00:34:08,791 --> 00:34:19,711
+Neden? Çünkü burada, onu şurada, input deyip, tezviz chapters'ın altında, bu klasörün altında.
+
+171
+00:34:20,244 --> 00:34:46,923
+5-chapter.text diye eklemeniz gerekiyor. O zaman gözükecektir. Bakın mesela burada ek a.text var. Onu da en son buraya ekliyorsunuz. Eğer yeni bir ek yapmak isterseniz işte b.appendix.text yine buraya input tezis chapter sınav altında b.appendix.text diyeceksiniz. Burası
+
+172
+00:34:47,443 --> 00:34:51,623
+En alt, tezin en altında gözüküyor olacak.
+
+173
+00:35:03,923 --> 00:35:14,943
+Burası da arkadaşlar sizin tezinizi yazarken en azından yüksek lisans yapıyor olsanız bile bir bildiri yapmanızı istiyorlar.
+
+174
+00:35:15,344 --> 00:35:19,844
+Burada da sizin yaptıktan sonra bildirinizi buraya ekleyeceksiniz.
+
+175
+00:35:24,820 --> 00:35:43,659
+Burası referanssız bir. Az önce gösterdiğim CU formatında bu yoktu. Ama burada var. Mesela siz bir referans vermek istediğiniz zaman yapacağınız şey, mesela Google Scholar'a gireceğiz.
+
+176
+00:35:50,164 --> 00:36:16,164
+Remote Sensing'den, mesela şu kitap ya da şu yayından bir alıntı yapmak istiyoruz. Burada alıntı yap diyorsunuz, bip text diyorsunuz. Bakın burada bunu alıp kopyalayıp şuraya da yapıştır deyip buraya ekliyorsunuz. Sonra buradan site edeceğiniz yere, bakın burada bir label var. Bunu kopyalıyorsunuz.
+
+177
+00:36:17,492 --> 00:36:29,532
+Siz mesela diyelim ki işte bir chapter'da şurada burada değil şurada mesela şurada bunu site etmek istiyorum.
+
+178
+00:36:29,771 --> 00:36:37,112
+Site deyip bu etiketi bu labeli buraya ekliyorsunuz. Böylece site etmiş olacaksınız.
+
+179
+00:36:42,420 --> 00:36:51,239
+Burada ise genel olarak sizin çalışmanızda hangi kaynaklardan faydalandıysanız onların şeylerini buraya koyuyorsunuz.
+
+180
+00:36:55,956 --> 00:37:01,135
+Şimdi burada tezinizi yazacaksınız diyelim işte. Birinci chapter.
+
+181
+00:37:05,139 --> 00:37:28,439
+Buraya tıkladım. Bakın, Code, Code, Location, PDF dedim. Giriş, burada işte mesela, yine giriş olabilir, bilmiyorum. Sizin yazacağınıza göre artık. Yazdınız, buraya yazılarınızı yazdınız. Bakın işte, teoremler var. Teorem nasıl yazılıyor, burada gösteriyorum.
+
+182
+00:37:34,675 --> 00:37:38,255
+Mesela, bakın bir şekil ekleyeceksiniz. Aynı şekilde burada.
+
+183
+00:37:42,547 --> 00:37:45,627
+Bunu göstermiştim zaten. Şekil nasıl ekledir? Haritada.
+
+184
+00:37:49,627 --> 00:37:51,207
+Bakın denklemler.
+
+185
+00:37:53,007 --> 00:37:56,467
+Began Equation. İşte burada denklemleri eklemiş ve şu şekilde
+
+186
+00:37:56,467 --> 00:38:00,887
+denklemleri otomatik olarak numaralandırıyor.
+
+187
+00:38:12,532 --> 00:38:18,452
+Bakın mesela tablonun caption'ı yukarıda. Buna dikkat edin.
+
+188
+00:38:24,083 --> 00:38:42,323
+Ve işte kaynakça kısmı. Şimdi siz bir yerleri site ettiğiniz zaman sırasıyla şurada yazdığınız sıradan bağımsız. Burada referanssız nokta bipteki nereye koyduğunuzun bir önemi yok.
+
+189
+00:38:52,340 --> 00:38:54,340
+Dedim. Az önceki yeri
+
+190
+00:38:54,340 --> 00:38:57,160
+site etmiş oldum.
+
+191
+00:39:08,563 --> 00:39:25,783
+Bakın burada, bu birinci chapter olduğu için ilk başta ilk saytım bu. En son eklediğim, nereye koydum, hiçbir önemi yok. İlk saytım bu olduğu için otomatik olarak kaynakça kısmında da buraya onu getirdim. Sonra ikinci saytım bu olduğu zaman buraya bunu getirdim.
+
+192
+00:39:26,703 --> 00:39:34,003
+Üçüncü vesaire vesaire böyle. Şimdi siz araya ekleme yapacaksınız mesela işte.
+
+193
+00:39:35,188 --> 00:39:39,868
+Sonradan şuraya yine bir şeyler ekleyeceksiniz ve yine bir yerden site edeceksiniz.
+
+194
+00:39:41,467 --> 00:39:49,948
+Burada 1, 2, 3, 4 yazısı var. Lateksli olunca bunlar mesela çok rahat bir şekilde otomatik olarak oluyor ama siz Word'de falan yapmak istesiniz.
+
+195
+00:39:49,948 --> 00:39:54,387
+Otur bunların hepsini tek tek uğraşacaksınız.
+
+196
+00:40:02,132 --> 00:40:02,731
+Evet.
+
+197
+00:40:05,731 --> 00:40:07,751
+Benim anlatacaklarım bu kadar.
+
+198
+00:40:09,692 --> 00:40:10,831
+Sorumuz var mı arkadaşlar?
+
+199
+00:40:18,324 --> 00:40:19,604
+Evet, teşekkür ederim.
+
+200
+00:40:19,623 --> 00:40:21,864
+Hocam merhaba, bir küçük bir sorum vardı da benim.
+
+201
+00:40:22,184 --> 00:40:22,704
+Tabii, buyurun.
+
+202
+00:40:23,684 --> 00:40:32,963
+Daha doğrusu soru değil de, şey, bu latex, şey, bizim enstitünün web sitesinde olan latex formatı her sene mi güncelleniyor yoksa en azından iki senede falan mı yoksa?
+
+203
+00:40:32,963 --> 00:40:42,963
+Sene bazında değil de, açıkçası orada bir düzensiz bir güncelleme şeyi var. Yani belki iki ayda bir güncellendiği zaman bile oluyor. Çünkü...
+
+204
+00:40:43,539 --> 00:40:55,199
+Şablonda ufak bir hata oluyor. O hatayı işte bir uzman kişi var orada, bilimci. Ona gönderiyorlar. O bir güncelleme yapıyor. Sonra bir başka patlak daha çıkıyor.
+
+205
+00:40:55,891 --> 00:41:11,511
+Halbuki ilk versiyonları biraz daha stabildi ama sonradan işte dediler ki işte kaynakça şekli şöyle olsun, şu böyle olsun. Sürekli yeni gereksinimler ortaya atıldı. Sonra baktılar ki bu gereksinimler bazıları gereksiz gereksinimlermiş.
+
+206
+00:41:11,887 --> 00:41:23,667
+Onları geri aldılar. Bu da sürekli bir güncelleme, versiyonlama demektir. Bunun en başına bir gelebilir miyiz hocam? Var mı orada main text'in içerisinde bir versiyon güncellemesi yazmışlar mı?
+
+207
+00:41:25,068 --> 00:41:35,987
+Yani o bir düzenli main text'e yazmamışlar galiba. Normalde bunun başında biz de bunun çok benzerini şey olarak kullanıyoruz.
+
+208
+00:41:36,563 --> 00:41:39,663
+Bölüm olarak lisans projelerinde kullanıyoruz.
+
+209
+00:41:40,543 --> 00:41:45,043
+Yani olması gereken oldukça stabil bir şeyin olması ama işte yeni yeni şeyler çıkıyor.
+
+210
+00:41:45,943 --> 00:41:48,184
+Bu tarz güncellemeler yapılabiliyor.
+
+211
+00:41:48,184 --> 00:41:48,903
+Tamamladım hocam.
+
+212
+00:41:49,043 --> 00:41:51,703
+Yüksek lisans tezimi yazarken önce bunu da yazmıştım.
+
+213
+00:41:51,764 --> 00:41:57,703
+Latex formatıyla sonra kontrol eden asistan yanlışların olduğunu söylemişti.
+
+214
+00:41:57,783 --> 00:41:59,083
+Yeniden Word'te yazmıştım.
+
+215
+00:41:59,724 --> 00:42:02,184
+Bu yüzden güncelleme süreleri...
+
+216
+00:42:03,251 --> 00:42:06,771
+Soru iyi oldu. Şu bilgiyi vereyim arkadaşlar hepinize.
+
+217
+00:42:07,771 --> 00:42:12,652
+Şimdi yüksek lisans tezleri veya doktora tezi için, tezsizler için söylemiyorum.
+
+218
+00:42:13,672 --> 00:42:18,231
+Yüklediğinizde bir lisansüstü.yıldız.editör diye bir sayfanız var.
+
+219
+00:42:18,931 --> 00:42:24,551
+Oradan tezinizi jüriden geçiyorsunuz ve tezinizi teslim eder gibi yüklüyorsunuz.
+
+220
+00:42:24,632 --> 00:42:26,332
+Şablon kontrolünün yapılması için.
+
+221
+00:42:27,795 --> 00:42:34,576
+Bu süreçte bir asistana, üniversite bünyesinde çalışan bir araştırma görevlisine bu tez rastgele gönderiliyor.
+
+222
+00:42:36,115 --> 00:42:47,195
+Genellikle latek kullananlar, latek yazarak tez oluşturanlar, çok küçük hatalarla, çok küçük düzeltmelerle veya hiç düzeltmeye gerek kalmadan,
+
+223
+00:42:48,052 --> 00:42:54,612
+Bu süreci atlatabiliyorlar. Çünkü Word gibi değil. Yani içindekiler tablosunu elle düzeltmiyoruz.
+
+224
+00:42:54,612 --> 00:43:04,612
+İşte ne bileyim şekilleri çok elle düzeltmiyoruz. Genel anlamda sıkıntı olmuyor. Word ile yazdıysanız biraz daha problem olma ihtimali yüksek. Örneğin mesela...
+
+225
+00:43:05,076 --> 00:43:20,655
+Word'ün ilk sayfasında sayfa numarası görünmeyecek. Üçüncü sayfadan itibaren işte roman rakamıyla başlayacak. Ondan sonra işte klasik Latin rakamlarıyla, Latin alfabesiyle devam edecek. Böyle kriterler var. Latek bunu otomatik düzeltiyor.
+
+226
+00:43:21,796 --> 00:43:30,256
+Latek bu kadar güzel ama enstitü işleyişinde şöyle bir aksaklık biz daha önce tecrübe ettik öğrencimle beraber, yüksek istansı öğrencimle beraber.
+
+227
+00:43:31,027 --> 00:43:43,407
+Latex bilmeyen bir kişiye sizin teziniz gittiyse, o zannediyor ki bu tez Word'te yazılmış, şeye bakıyor. Hocam, ilk başlangıç sayfasına gelir misiniz? Şu pdf'in olduğu yerde.
+
+228
+00:43:45,527 --> 00:43:53,527
+Şimdi Word şablonuyla, örneğin şimdi Fen Bilimleri Enstitü yazıyor, aşağıda da değişim tespiti yazıyor. Bu arada bir boşluk miktarı olacak.
+
+229
+00:43:54,324 --> 00:44:10,864
+Word'tekiyle bu birebir tutmuyormuş. Sizin raporunuzu Word'te yazılmış gibi değerlendirip, sonuçta siz PDF yüklüyorsunuz oraya. Size doğrudan diyor ki bir sürü düzeltme, böyle 20 satır, 30 satır, işte 30 kalem diyelim, düzeltme gönderen olabiliyor.
+
+230
+00:44:11,344 --> 00:44:36,663
+Orada şunu söylemek iyi olur. Tezi yazarken işte latex formatında yazılmıştır. Hatta bir dosya başlığı altında bu bilgiyi söylerseniz. Yani latex kullanmayı bilmeyip bu şekilde bilip bilmeden de değerlendirme yapan oluyor. Sonra ikinci revizyonda tekrar düzeliyor ama gereksiz yere insanları telaşa sokup veya endişe içerisine sokup böyle yanlış yapan insanlar var.
+
+231
+00:44:37,039 --> 00:44:55,319
+Bizde işte şey olmuştu, mimarlıktan bir şeye gitmiş. Yani Word kullanmayı bile bilmeyen birinin karşısına gidiyor tezimiz. Orada bir sürü sıkıntı yaşadık ama daha sonradan görevli değişti ve düzeltme yapıldı. Bu soru sorunca aklıma geldi, iyi oldu söylediniz. Başka sorumuz var mı?
+
+232
+00:44:59,827 --> 00:45:17,887
+Evet, Hidris Hocam, sizden ben ekran görüntüsünü alayım, devralayım. Şimdi arkadaşlar, derste devam edeceğim ve blog yapacağım, öyle bitireceğiz. Bu arada hocam, isterseniz siz ayrılabilirsiniz, teşekkür ederiz tekrardan.
+
+233
+00:45:19,108 --> 00:45:20,228
+Ben teşekkür ederim.
+
+234
+00:45:20,228 --> 00:45:20,927
+Peki.
+
+235
+00:45:22,907 --> 00:45:25,788
+Şöyle bir ekran paylaşımı yapayım bir saniye.
+
+236
+00:45:26,907 --> 00:45:27,208
+Şimdi.
+
+237
+00:45:28,403 --> 00:45:51,264
+Tabii Latex de kendi içinde birazcık zorluklara sahip bir şey. Ben bir örnekte size başka bir şeyden göstereceğim. İşte Types diye farklı bir işaretleme dili diyelim. Şu an herhalde ekran görüntüsü geldi karşınıza. Bire bir biz şu an onun üzerinde kendi bölüm lisans projemiz için çalışıyoruz.
+
+238
+00:45:51,795 --> 00:46:01,435
+Öğrencinin, yazan kişinin daha az kod yazarak böyle daha sade bir şekilde rapor yazmasını sağlayacak bir şey üzerinde çalışıyoruz.
+
+239
+00:46:02,275 --> 00:46:05,815
+Yani bakıldığı zaman elbette yine bir işaretleme dili var bunun.
+
+240
+00:46:05,815 --> 00:46:10,475
+İşte Type Sistemi'ne üye olursanız zaten karşılaştırma imkanınız olur.
+
+241
+00:46:11,555 --> 00:46:18,715
+Ve bu gelişiyor. Yeni bir proje ama son birkaç yıldır gayet, bana da öğrencilerim bu arada tavsiye ettiler.
+
+242
+00:46:19,219 --> 00:46:35,879
+Başka üniversiteler bunlara adaptasyon sağlamaya başlamışlar. Amerika'dan, Avrupa'dan üniversitelerin burada formatları, şablonlarını bulabiliyoruz. Mesela şuradan Template Types'in sayfasına gelelim. Templates destek herhalde.
+
+243
+00:46:46,291 --> 00:47:02,291
+Buraya gelmiş, yüklenmiş gördüm ben. Bakayım burada görebilecek miyim? Neyse, bu tarz uygulamalar var. Bazı dergilere yayın gönderecekseniz illaki latex şablonu olmak zorunda değil. Bazıları çok eskidir, Word üzerinden ilerliyordur.
+
+244
+00:47:03,011 --> 00:47:11,191
+Veya başka bir böyle işaretleme diliyle, yani latex burada açıkçası şeyi domine etmiş vaziyette. Birçok şeyin latex şablonunu bulabilirsiniz.
+
+245
+00:47:11,632 --> 00:47:22,252
+Ama yeni yeni bu tarz farklı şeyler, çözümler var. Araştırmanızı, özellikle doktor yapacak arkadaşlarım, makale yazacak arkadaşlarının araştırmasını tavsiye ederim.
+
+246
+00:47:22,832 --> 00:47:28,432
+Mesela biraz önce hoca şey yaptı, işte section demişti. Burada section yerine sadece şöyle eşittir koyuyorsunuz.
+
+247
+00:47:28,432 --> 00:47:37,952
+Yani bir spesifik karakter, tabii ben şu an düzenleyemiyorum burayı. Öğrencimin bir paylaştığı şeydi bu. Bizim şablonu taklit ediyoruz.
+
+248
+00:47:38,384 --> 00:47:45,264
+Bu şekilde doğrudan bir şey oluşturabilme imkanı var. Başlıklar falan oluşturulabiliyor diyelim.
+
+249
+00:47:46,584 --> 00:47:57,584
+Evet, şimdi bugün benim anlatacağım kısım değerlendirme süreçleri, araştırma yöntemleri, bilimsel etiğin normal konularına geliyoruz.
+
+250
+00:47:58,184 --> 00:48:03,644
+Tabii değerlendirme süreci derken bir kere neler değerlendirme sürecine tabi tutulabilir?
+
+251
+00:48:04,307 --> 00:48:09,987
+Bugün de ben sabahtan beri işte Binbir Projesi değerlendirme şeyindeydim, jürisindeydim, bir paneldeydim.
+
+252
+00:48:10,667 --> 00:48:15,228
+Bir kere TÜBİTAK'ın verdiği destekleri kendi içinde şurada gruplamış arkadaşlar.
+
+253
+00:48:16,047 --> 00:48:19,447
+Akademik programlar sizin yapacağınız Binbir mesela bunun altında.
+
+254
+00:48:21,268 --> 00:48:23,167
+Sonra Bin-İki-Bin-İş böyle devam edip gidiyor.
+
+255
+00:48:23,167 --> 00:48:28,167
+Sonra uluslararası destek programları, sanayi programları şunlara...
+
+256
+00:48:28,692 --> 00:48:47,812
+Akademiklere daha çok T-DEP mi deniyordu? Bunun bir kısaltma ismi de vardı, tam şu an hatırlayamadım. Bir de Ardep, pardon bunlar Ardep arkadaşlar. Şu kısım Ardep diye kısaltılıyor. Şunlar da sanayi programları T-DEP. Eski isimleri olabilir ama şu an bu şekilde sınıflandırma yapılmış.
+
+257
+00:48:56,016 --> 00:49:17,635
+Mesela 1507'ye başlıyorsunuz. Bunların farklı dönemleri var. Üniversite sanayi yapacaksanız 1505 oluyor. Veya 1501 RG projesi, TÜBİTAK'ın sanayideki RG projeleri için biraz daha gelişmiş projeler diyebiliriz. Sonra bakın, uluslararası ortak destek programları, kamu destekleri gibi gibi böyle farklı sınıflandırma şeyler var.
+
+258
+00:49:23,603 --> 00:49:36,603
+Ve o formun değerlendirilmesi sürecinden bahsediyoruz. Aynısı COSCEP için, Sanayi Bakanlığı için, Kalkınma Ajanstığı için geçerli. Bir de bizim en çok üzerinde çalıştığımız şey akademik metinler, bildiri ya da...
+
+259
+00:49:37,300 --> 00:49:52,840
+makaleler. Şimdi birazcık bildiri veya makale üzerinde bunu anlatacağım. Son kısımda da işte 1001 ile alakalı bazı, hani bugün de birazcık dikkatimi çeken şeyler vardı. Onlardan bahsedip dersleri tamamlayacağız. Şöyle bir ekran slide yansıtması yapalım.
+
+260
+00:49:52,840 --> 00:49:59,480
+Bir kere sizin yazdığınız akademik metni, buradaki akademik metninden kastım şu slide için.
+
+261
+00:50:00,000 --> 00:50:15,300
+Yastım. Makale ya da bildiri arkadaşlar. Yani ikisinden bir tanesini düşünemiz. Çoğunlukla da %90'ı da makale gibi düşünelim. Bir kere bizim öncelikle submission yapmamız, yazdığımız şeyi yüklememiz lazım. Teslim etmemiz lazım.
+
+262
+00:50:15,300 --> 00:50:25,820
+Bunun öncesinde de hangi makaleye yükleme yapacaksak, onun formatını aldınız, indirdiniz, latekte, wordte nasıl yazdıysanız yazdınız. İçerik tamamen uygun.
+
+263
+00:50:26,291 --> 00:50:49,751
+Bunu submission yapıyorsunuz. Submission yaptığınızda karşınıza şu gelecek. Ben nereye submit edebilirim bu yayını? Bunun merkezi bir sistemi yok. Her derginin üye olduğu management sistemleri var. Buralara yükleme genellikle yapılıyor. Sonra bu çalışmanız review ve değerlendirme sürecine gelecek. Değerlendirme sürecinden sonra da son karar noktasına geliyoruz.
+
+264
+00:50:50,420 --> 00:50:56,880
+Bir kere manuscript, submission sistem, buradaki manuscript'ten kastımız genel anlamda makaleler, çoğunlukla makaleler.
+
+265
+00:50:57,539 --> 00:51:00,800
+Bazen şeyler de buraya dahil olabiliyor, konferans bildirileri.
+
+266
+00:51:01,820 --> 00:51:03,740
+Mesela ASU konferansı yapacaksınız.
+
+267
+00:51:04,559 --> 00:51:07,719
+Önceden Easy Chair sistemi vardı, submission sistemi vardı.
+
+268
+00:51:08,400 --> 00:51:09,960
+Konferanslar onun üzerinden yönetiliyor.
+
+269
+00:51:09,960 --> 00:51:13,539
+Bu sene Microsoft'un bir tane şeyi var, onun üzerinden yönetiliyor.
+
+270
+00:51:14,003 --> 00:51:27,383
+Dergiler de bu şekilde teslimat sistemleri kullanıyorlar. Mesela 10 tane derginin ortak kullandığı bir tane sistem vardır. Bunlardan bir tanesi Manuscript Central dediğimiz bir online sistem.
+
+271
+00:51:28,963 --> 00:51:41,383
+Sizin yazar olarak çalışmalarınızı yükleyip, yükledikten sonra bir hakeme, önce bir editöre, ondan sonra bir hakeme atanıp, daha sonra karar sonucunu göreceğiniz, karşılıklı yazışmaları yapacağınız aslında bir...
+
+272
+00:51:41,940 --> 00:51:58,420
+Submission Sistemi diyebiliriz. Thompson Routers tarafından yönetiliyor. Bunu işte SC konusunu anlatırken zaten anlatmıştık. Bu şeyin bir ürünü arkadaşlar, işte Tyler Francis tarafından kullanılmış falan dermiş. Sonra Scholar One Manuscriptler var.
+
+273
+00:51:58,867 --> 00:52:15,487
+Bu da farklı bir şey diyebiliriz. Bir Clarivate Analitik tarafından, IEEE tarafından da kullanılıyor. Yayınlanmış bir başka sistem. Bunun gibi bir sürü çeşit çeşit sistem var. Siz mesela herhangi bir dergiye yayınınızı submit etmek isterseniz,
+
+274
+00:52:16,115 --> 00:52:25,776
+Sizi ya kendi sayfasındaki online submission bölümüne aktaracaktır ya da olacak şey şudur, başka bir web sayfasına sizi yönlendirir.
+
+275
+00:52:25,956 --> 00:52:29,556
+Oradan submission işlemini yaparsınız. Öncelikle bunu bilelim.
+
+276
+00:52:31,115 --> 00:52:36,316
+Peki, bunu yaparken bizim karşımıza ne gelecek? O sisteme bir kere üye olmanız gerekiyor.
+
+277
+00:52:36,416 --> 00:52:40,296
+Yani şunlardan birisi olabilir veya bir başka sistem olabilir.
+
+278
+00:52:40,296 --> 00:52:43,115
+Şimdi burada da şöyle bir problem var.
+
+279
+00:52:43,507 --> 00:52:59,447
+Biliyorsunuz yani bir sürü ticaret sayfası var. Hepsine ayrı ayrı üye olmanız gerekiyor. Burada da durum aynı. Bir de bir tane yayın kabul ettirmek için belki bazen birkaç farklı yere göndermeniz gerekiyor. Bir yerden ret alıyorsunuz, sonra başka bir yere gönderiyorsunuz. Baya bir meşakkatli bir süreç.
+
+280
+00:53:09,360 --> 00:53:35,039
+Dünyanın her yerinde yürürlüğe girmiş bir sistem. Bir kere tez yazan arkadaşların, hem yüksek sans hem de doktora yapan arkadaşların tezlerini teslim etmeden önce bu ID'yi alıp YÖK sistemine bunları kaydetmeleri gerekiyor. Onun için şimdiden mesela kayıt olabilirsiniz tez yapan arkadaşlar. Tez yapmayacaklar da kayıt olsun. Sonuçta makaleleriniz bir yerde yayınlanabilir. Onları kendiniz ileride çok rahat yönetebiliyorsunuz.
+
+281
+00:53:36,960 --> 00:53:55,200
+Örneğin aramızda iki isimli arkadaşlar var. Mesela işte Ali, Hasan, bilmem ne diyelim. Şimdi burada farklı isim yazma şeyleri olabiliyor dergilerde. Diyor ki mesela A.Hasan yazıyorsunuz bir dergide şablon gereği. Öbür dergide Ali Hasan yazıyorsunuz.
+
+282
+00:54:04,704 --> 00:54:23,423
+Submission sırasında isminizi nasıl yazarsanız yazın, şablon ne olursa olsun sizin bir ID'niz o dergiye gönderileceği için o ID üzerinden bundan sonraki süreç sağlıklı bir şekilde yürütecektir. Onun için bu User Information özellikle şeyi çok çok önemseyi şimdiden almanızı isterim.
+
+283
+00:54:23,423 --> 00:54:29,423
+Bu login işlemini kayıt yaptıktan sonra bir kere sisteme login alıyorsunuz.
+
+284
+00:54:29,983 --> 00:54:41,983
+Ve çoğu şeyde dergi sisteminde şöyle bir şeyle karşılaşırsınız. Bir karşınıza form çıkacaktır. O formu dolduracaksınız. Bir kere makalenizin, çalışmanızın başlığı.
+
+285
+00:54:42,764 --> 00:54:52,403
+Yazarların bilgileri. Yazarların bilgileri tabi burada edit box'lar şeklinde veya metin kutuları şeklinde ayrı ayrı kaç tane yazarsa bunları ekliyorsunuz.
+
+286
+00:54:53,396 --> 00:55:16,936
+Bakın, abstractı veya Türkçe ise özeti ayrı bir bölüme kopyala yapıştır yapıyorsunuz. Form sizden neleri istiyorsa bunları bir kere eksiksiz bir şekilde doldurmanız lazım. Bunun dışında attachment olarak bir kere kaynak metin, yani yazdığınız bir metnin Word hali veya PDF hali neyse, bunu olduğu gibi yüklüyorsunuz.
+
+287
+00:55:21,748 --> 00:55:30,508
+Geçen grafikleri, yani görselleri veya tabloları ayrı ayrı dosyalar şeklinde yüklemenizi de isteyebilir.
+
+288
+00:55:30,508 --> 00:55:37,807
+Yani Word'ün içinde bir tane veya PDF'ün içinde bir tane görsel var. O görseli resim dosyası olarak kaydediyorsunuz.
+
+289
+00:55:37,867 --> 00:55:43,508
+Onu da sisteme artık zip formatında veya başka formatta neyse yükleyebiliyorsunuz.
+
+290
+00:55:47,072 --> 00:56:05,132
+Bazı highlight'lar istiyor, işte vurgular istiyor sizden. Bunları da mesela şeye ayrıca bir ek dosy olarak yüklemeniz gerekiyor. Yine ayrıca bazı dergilerde bir cover letter hazırlamanızı isteyebilir. Bu tamamen derginin yayın politikasıyla alakalı bir şey.
+
+291
+00:56:14,036 --> 00:56:37,516
+Sizin şu derginize şu başlıkla yüklüyorum. Burada bundan bahsediyor. Ondan sonra yayın hangi konuları ele almış, neler var, yayının içerisinde mesela kaç tane figür var, ondan sonra başka başka hangi bölümlerde nelerden bahsediliyor, böyle kısaca yayınınızı özetleyen bir letter yazıyorsunuz ve gönderiyorsunuz.
+
+292
+00:56:41,427 --> 00:56:52,188
+Eğer herhangi bir formu bir yerde yayınlanmışsa, örneğin bir bildiri yaptınız, bir konferansta bir şey yaptınız, siz bunu burada belirtmeniz gerekiyor.
+
+293
+00:56:52,288 --> 00:56:56,228
+Ben bu yaptığım çalışmanın daha böyle bir alt hükümesini daha önce bir yerde yaptım.
+
+294
+00:56:57,028 --> 00:57:03,367
+Peki burada yeni olan nedir? İşte o yeni olanları burada ifade etmek gerekiyor cover letterlarda.
+
+295
+00:57:03,827 --> 00:57:19,659
+Eğer ilk defa yeni bir çalışma ise, bununla alakalı çalışmanın katkıları nelerdir? Kısaca bunları söylemek gerekiyor. Bunu ilk hakeme atarken veya editöre atarken, editör özetin özeti kabiliğinden bunları dikkate alarak bir...
+
+296
+00:57:19,987 --> 00:57:35,667
+planlama veya hakem ataması yapabilir. Her dergi bu arada bunu istemeyebiliyor. İlla ki cover letter yazılması gerekmiyor ama istenirse buna benzer bir kapsam mektubu mu diyelim artık Türkçesi, böyle bir şey yazmak lazım.
+
+297
+00:57:41,972 --> 00:58:06,012
+Under Review sürecine giriyorsunuz. Tabi bu süreç kendi içinde alt basamaklara ayrılan bir yapıda. Birinci basamak şu, şimdi derginin başındaki editör illaki gelen her makaleye anında bakacak diye bir şey yok. Orada görevliler var. Bu görevliler ilk başta belli şekilsel kontrollerden bir eleme yapmak için yayınınızı geçirebiliyor. Bu nedir? Mesela şablona uygun bir şekilde.
+
+298
+00:58:06,579 --> 00:58:23,260
+Yayın yüklenmiş mi? İstenen ek belgeler, yüklenmesi gereken belgeler yüklenmiş mi? Ondan sonra mesela Turnitin gibi bir sisteme intihal oranları kabul edilebilir oranların içerisinde mi? Bu ön kontrolleri yapan bir süreçten geçiyorsunuz.
+
+299
+00:58:23,635 --> 00:58:36,155
+Örneğin intihal oranınız çok yüksek. Doğrudan hiç daha editöre veya hakemlere atanmadan size bir geri dönüş olabiliyor ve red, bunu tekrardan yükleyin şeklinde geri dönüş olabiliyor.
+
+300
+00:58:36,155 --> 00:58:50,815
+Veya yüklemeniz gereken bir tane belgeyi unuttunuz, bunu şey yapabiliyorsunuz. Bu daha sonra bir hakeme, bir editöre derginin, yani dergi içerisinde farklı konular olabilir, o konularla sorumlu.
+
+301
+00:58:51,215 --> 00:58:58,016
+Hakemlerin tepesinde bulunan kişi diyelim, bir denetleyici diyelim, bu editöre gönderiliyor.
+
+302
+00:58:58,755 --> 00:59:15,835
+Editör, daha sonra bu çalışmada ele alınan konularla alakalı olabilecek, derginin de politikasına uygun şekilde artık iki tane, üç tane, beş tane, dört tane artık nasıl bir şey uyguluyorsa, hakeme bu yayını gönderiyor.
+
+303
+00:59:16,371 --> 00:59:32,331
+Tabi bu yayın hakemlere gidenek kadar işte dediğimiz gibi bir sürü kontrolden geçmiş oluyor. En son hakeme atanması artık sizin çalışmanızın iş yerinin değerlendirileceğine dair size bir fikir verecektir. Bu iyi bir şeydir. Hakeme gitmeden geri dönüyorsa baya bir eksik var demektir.
+
+304
+00:59:41,556 --> 00:59:43,735
+atandığını görebiliyordunuz.
+
+305
+00:59:43,855 --> 00:59:48,275
+Tabi bu etik kurallara çok aykırı bir şey olduğu için zamanla bu sistem revize ediliyor.
+
+306
+00:59:49,295 --> 00:59:58,255
+Kör review etme, kör değerlendirme veya çift katlı kör değerlendirme şeklinde, double blind review şeklinde iki farklı yaklaşım izleniyor.
+
+307
+00:59:58,556 --> 01:00:03,255
+Burada kör değerlendirme şu, reviewler yani hakemlerimiz,
+
+308
+01:00:04,148 --> 01:00:28,328
+yazarlardan gizleniyor. Olması gereken de bu. Yani ben bir yayınımı kimin değerlendireceğini biliyorsam burada çok sıkıntılı olaylar döner. Bu şekilde oluyorsa bu bir kör değerlendirme. Ama reviewerler, hakemler, yazarların kim olduğunu görebiliyorlar. Dolayısıyla yine her ne kadar açık bir değerlendirme sürecinden iyiyse de sıkıntılı tarafları var.
+
+309
+01:00:28,688 --> 01:00:36,368
+Çünkü belli bir spesifik alanda çalışıyorsanız ve o alanda çok az kişi varsa yine etik olmayan durumlarla karşılaşma ihtimali olabiliyor.
+
+310
+01:00:36,488 --> 01:00:45,548
+Double Blunt Review'de ise, şu bölümde ise kimse kimseyi göremiyor. Ne ben değerlendirdiğim kişiyi görüyorum ne değerlendirdiğim kişi de beni görüyor.
+
+311
+01:00:46,168 --> 01:00:48,688
+Olması gereken en temel şey bu. Şimdi mesela IEEE...
+
+312
+01:00:49,472 --> 01:01:09,132
+Konferans standartları var. Bir konferansın IEEE'de yayınlanacak mı, yayınlanmayacak mı standartları? Bunlardan bir tanesi de bütün değerlendirme sürecinin double blind şeklinde yapılması. Yani bunu sağlıyorsa, diğer şartları da elbette sağlıyorsa ne olabilir? IEEE standartlarına uygundur denilebiliyor.
+
+313
+01:01:16,596 --> 01:01:34,496
+Daha işte hakemlere gitmediğini kabul edelim. Bir kere elinizde bir metin var. O ilk metni teslim alanlar tamam şekil kontrolü yaptı, turnitin kontrolü yaptı ama o metnin içeriğini anlayabilecek yetenekte veya işte eğitimde birisi değiller, o konuya hakim değiller.
+
+314
+01:01:35,295 --> 01:01:37,695
+Editör şuna bakıyor, bu çalışmanın kapsamı nedir?
+
+315
+01:01:38,420 --> 01:01:49,800
+Çalışmayla alakalı etik durumlar var mı? Yani bir daha önce şekilsel kontrolü, bir de kendi çapında, kendi açısından tekrar bir şekilsel kontrole veya biraz da içerik kontrolüne tabi tutuyor.
+
+316
+01:01:50,320 --> 01:01:55,840
+Mesela bu çok olur, bir dergiye gönderirsiniz, editör atanır, editörden kısa sürede size yanıt gelir.
+
+317
+01:01:56,360 --> 01:01:59,219
+Bu çalışma bu derginin konusuyla alakalı değildir.
+
+318
+01:01:59,603 --> 01:02:07,563
+şu şu dergilere gönderebilirsiniz diye size bir yanıt gelir. Bu da süreci geciktirmeyi önleyen güzel bir uygulama aslında.
+
+319
+01:02:08,323 --> 01:02:18,083
+Sonra bu işlem yapıldıktan sonra sizin yayınınız bir editör tarafından şeye gönderiliyor. Dedik ki hakemlere gönderilecek.
+
+320
+01:02:19,023 --> 01:02:26,723
+Editöre atandığında tabii şu olabilir, yani burada anlattık ama hızlı bir şekilde çalışmanızı reject edebilir.
+
+321
+01:02:27,476 --> 01:02:41,556
+Ondan sonra gerekirse bir review hakem atayabilir. Hatta belli işte suggested review'ler veya blacklist review'lerden yola çıkarak bu yayını birazcık da farklı kişilere gönderebilir.
+
+322
+01:02:42,547 --> 01:02:50,147
+Şu oluyor, dergiye yayın gönderirken bu yayının değerlendirilmesi muhtemelen hakemleri de sizden istiyorlar bazı dergiler.
+
+323
+01:02:50,627 --> 01:02:54,147
+Çünkü diyor ki, uzman bulmak her zaman benim için kolay bir şey değil.
+
+324
+01:02:54,807 --> 01:02:58,768
+Uzmanları da, muhtemel uzmanları da sen bulacaksın diyebiliyorlar.
+
+325
+01:02:58,768 --> 01:03:00,748
+Tabi burada şuna dikkat etmek lazım.
+
+326
+01:03:01,235 --> 01:03:10,956
+Kişi kendi çıkar çatışması olabilecek, yakınıdır, şudur, budur, danışmanı, öğrencisi, bu tarz ilişkileri olmayan kişileri hakem olarak önermesi lazım.
+
+327
+01:03:11,496 --> 01:03:18,275
+Burada da ne yapacağız? Literatür tarıyoruz. O alanda zaten literatüre sahip olan hakemler veya yazarlar belli.
+
+328
+01:03:18,936 --> 01:03:24,315
+Onları öneriyoruz literatür taramasıyla paralel olması için.
+
+329
+01:03:24,315 --> 01:03:27,076
+Bir de şeye bakıyor editörler.
+
+330
+01:03:27,376 --> 01:03:52,315
+Yani bu kişiyle normal yazar arasında organik bir bağ var. İşte nedir? Danışmandır, eşidir, ne bileyim başka ilişkileri vardır. İşte bu tarz durumlarda o review'a, hakeme atanmama olabiliyor. Daha sonra hakeme gittikten sonra review süreci başlıyor arkadaşlar. Bu yine dergi politikasına, dergi kurallarına göre yapılacak bir şey.
+
+331
+01:03:52,788 --> 01:04:05,628
+Öncelikle ilk başta birinci tur, review dediğimiz değerlendirme sürecine alınıyor. Bu süreç içerisinde çalışmanızın içeriği, yani abstractından en son conclusion'una kadar
+
+332
+01:04:06,164 --> 01:04:34,164
+Bir yenilik içeriyor mu? Ele aldığınız problemde bir orijinallik, yani önerdiğiniz yöntem bir orijinallik içeriyor mu? Hakikaten bu dergide yayınlanmaya değer bir çalışma mı? Elde edilen sonuçlar tutarlı mı? İkna edici mi? Bunlar açısından değerlendirme yapılıyor. Mesela bir yöntem kullanıyorsunuz, o yöntemin metodolojisi doğru mu? Yani doğru düzgün bir çalışma yapılmış mı? Bu çalışmadaki yapılan öneriyi tekrar deneylesek aynı sonuçları.
+
+333
+01:04:34,164 --> 01:04:38,124
+sonuçları veya benzer sonuçları elde edebilir miyiz? Bu açıdan bir değerlendirme yapılıyor.
+
+334
+01:04:38,724 --> 01:04:47,884
+Bu değerlendirme sürecinde şu olabiliyor, hakemler için belli bir süre veriliyor. Diyor ki bir ay içerisinde bunu yapacaksın ve bitireceksin.
+
+335
+01:04:48,704 --> 01:04:53,164
+Bir ay içerisinde bu kararlar verildiğinde şöyle bir ihtimal var.
+
+336
+01:04:53,780 --> 01:05:03,180
+Karar tipi olarak, minor revision dediğimiz çok küçük hataların olduğu ama bu hatalar düzeltilirse, hani accept edilebilir bir ara karar veriliyor.
+
+337
+01:05:04,039 --> 01:05:11,600
+Burada amaç, çalışmayı tamamen öldürmemek, yazarların emeğini boşa çıkarmamak ve süreci kısaltmak için verilen bir karardır.
+
+338
+01:05:12,380 --> 01:05:17,660
+Şimdi bu minor revision, major revision, işte bu dört şey her dergide olacak diye bir şey yok.
+
+339
+01:05:18,200 --> 01:05:20,400
+Bazı dergiler yüzlerinden puan istiyorlar.
+
+340
+01:05:21,043 --> 01:05:28,883
+Ve daha sonra dergi editörü diyor ki bu puana bakaraktan kendisi minor revision, major revision, accept, reject gibi karar verecekler.
+
+341
+01:05:29,443 --> 01:05:38,903
+Demek ki birincisi revizyon. Şimdi birinci revizyona girdiğinizde minor revision veya major revision olursa ikinci seviyeden, ikinci defa tekrar bir reviveden geçiyorsunuz.
+
+342
+01:05:39,483 --> 01:05:45,603
+Bazı dergilerin üçüncü veya daha fazla revive tahammülleri yok. Bir defa revive yapıyorsunuz.
+
+343
+01:05:45,936 --> 01:05:53,615
+İkincisine bile izin vermeden eğer söylenenler yapılmadıysa, hala eksik görüyorsa doğrudan reject verilebiliyor.
+
+344
+01:05:54,496 --> 01:06:04,976
+Yine burada işte gramerinize bakılır, işte şekillerin, tabloların, organizasyonu, çalışmanın orijinalliği gibi gibi farklı şeyler yapılıyor.
+
+345
+01:06:05,175 --> 01:06:07,536
+En son mesela çalışmanız kabul edildi.
+
+346
+01:06:08,019 --> 01:06:17,420
+basıma hazır kopya oluşturulması için tekrardan o derginin formatına uyumluluk daha detaylı bir şekilde, ufak tefek hatalar illaki olur.
+
+347
+01:06:17,420 --> 01:06:23,659
+Bunları daha detaylı bir şekilde kontrol etmek için tekrardan editör şekilleri falan gerçekleştiriliyor arkadaşlar.
+
+348
+01:06:24,403 --> 01:06:40,583
+Reject olması demek şu demek, çalışmanızın artık bu dergiyle herhangi bir o yüklemenizin bir ilişkisi kalmadı. Buna itiraz hakkınız falan olmuyor. Doğrudan başka bir dergiye göndereceksiniz veya aynı dergiye başka bir...
+
+349
+01:06:40,628 --> 01:06:57,428
+içerik yükleyip, yani ciddi bir revizyon yapıp tekrar yükleme süreciniz gerekiyor. Mesela majör revizyon yapıp red aldınız, tekrar revizyon yaptınız, tekrar aynı dergiye yüklediniz. Bu dergi birazcık size bazen şey bakabiliyor, böyle bir önyargıyla bakabiliyor. Zaten daha önceden reddetmişiz.
+
+350
+01:06:58,943 --> 01:07:09,903
+Çok böyle bu seferlik dikkatli bir hakeme atamadan önce dikkatli bir inceleme yapıp doğrudan dergiyi tekrardan veya yayını tekrardan reject edebiliyorlar.
+
+351
+01:07:10,463 --> 01:07:18,903
+Temel karar tiplerimiz dört tane. Majör revizyon ne durumlarda olur? Kısaca onu da söyleyelim. Örneğin metodolojik hatanız vardır.
+
+352
+01:07:19,443 --> 01:07:38,443
+Mesela makine öğrenmesi yapıyorsunuz. İşte biz makine öğrenmesinde ne yaparız? Verileri alıyoruz. Train, test diye bölüyoruz. Carfold Cross Validation yapıyoruz. Yöntemler belli. Yöntemleri kullanıp sonuçları işte belli kriterlere göre karşılaştırıyoruz. Mesela bu metodolojik işlemlerde ciddi bir hata vardır. Örneğin...
+
+353
+01:07:38,867 --> 01:08:01,708
+Çok yapılan bir hata. Veri setini alıyor bir kişi, bir defa %90'a %10 ayırıyor, tek bir denemede diyor ki ben %95 başarılı buldum. Bu bir mesela revizyon sebebidir. Elde ettiği başarının ikna edileceğiyle böyle tek bir deneyle göstermez. Bu deneyin tekrarlı bir şekilde yapılması ve deneyler arasında tutarlı bir sonucun bulunduğunun gösterilmesi lazımdır. Bu bir revizyon sebebi olabilir.
+
+354
+01:08:03,380 --> 01:08:26,399
+Çok eski çalışmaları birbirine karıp katıp, hiç böyle yenilik olmayan bir çalışma yüklenmiştir. Ama ele alınan konu önemli bir konudur. Denir ki, şu şu yöntemleri de buraya eklenirse ancak belki kabul edilir. Hakemlerin bu yönde istekleri olabilir. Bunlar Macar Revizyon altında değerlendirilebiliyor. Kabul edilirse zaten basım sürecine geçecek diyebiliriz.
+
+355
+01:08:27,347 --> 01:08:39,927
+Tabi burada reviewer ile alakalı buradaki sürecin hepsinde arkadaşlar, örneğin bir revizyon yediniz, revizyonla alakalı bir letter yazmanız gerekiyor. Neden?
+
+356
+01:08:40,528 --> 01:08:52,528
+Minor veya Major revision da size diyecek ki, hakem şu eksik, niye böyle, bu burada yanlış yazılmış, bu neden böyle, işte şurada şu yazılmamış, işte yazılabilirdi, neden yazılmamış.
+
+357
+01:08:52,988 --> 01:09:01,808
+Sizin bu revize ettiğiniz şeyleri ayrı bir metin, ayrı bir word dosyası olarak sisteme tekrar, yani hem metnin orijinalini değiştiriyorsunuz,
+
+358
+01:09:01,808 --> 01:09:08,288
+hem de yaptığınız değişiklikleri ayrı bir pdf veya işte word dosyası olarak tekrar sisteme geri yüklemeniz gerekiyor.
+
+359
+01:09:08,528 --> 01:09:23,188
+Ben geçen haftalarda size sınavdan önce bir tablo göstermiştim. Sol taraftaki üstünde hakemlerin söylediği, sağ tarafta da onlara cevap vardı. Bunların hepsinin yerli yerince anlatılması veya açıklanması lazım.
+
+360
+01:09:25,188 --> 01:09:34,568
+Eğer mesela siz bir size yapılan yorumlarla alakalı şeyleri çok doğru görmüyorsunuz veya alakasız görüyorsanız,
+
+361
+01:09:34,720 --> 01:09:59,960
+Bununla alakalı genellikle çok fazla bir şansınız olmuyor açıkçası. Elbette bir itiraz imkanınız var. Ama şunu da diyemiyorsunuz. Bu hakemin söylediği şey de benim burada yaptığım çalışma tamam alakasız. Yine ona uygun bir üslupla cevap yazabilirsiniz ama burada bu hakem bu konuyu bilmiyor. Benim bilmediği konuda ahkam kesiyor tarzında biraz sert ifadeler kullanılırsa o da orada.
+
+362
+01:10:00,000 --> 01:10:21,960
+İstihal, bu yüzden editöre takılıp hiç hakemlere bile gitmeden tekrardan reject olabilir. Olabildiğince polite bir şekilde, uygun bir şekilde, alakasız yorumları burada bir şekilde yumuşatarak itirazımızı dile getirmek lazım. Bu bizim başımıza bir konferansta gelmişti. Metinde yazan bir şeyi hoca muhtemelen okumamış.
+
+363
+01:10:22,707 --> 01:10:46,547
+Veya sadece özet kısmını okuduğu için biz metinde açıklıyoruz ama yazan kişi işte diyor ki şöyle şöyle şöyle durumlarda ne yapılır? Bununla alakalı yeterli açıklama veya hiç açıklama yoktur o tarz bir şey söylemişti. Halbuki okusa açıklama var. Diğer iki hakemden de, sonuçta üç hakem vardı bizde. O iki hakemden böyle bir eleştiri gelmediği için bunu uygun bir şekilde editöre ifade ettik.
+
+364
+01:10:47,344 --> 01:10:56,543
+Alan konusunda birazcık uzman olduğu için o konuda anlayış gösterdi ve o hakemin o değerlendirmesini birazcık şey yaptı.
+
+365
+01:10:56,664 --> 01:11:01,003
+Daha değersiz, daha etkisiz kıldı diyebiliyoruz.
+
+366
+01:11:02,084 --> 01:11:13,104
+Genellikle hakemler 3 kişi olabiliyor ama bazı çalışmalarda 5 kişinin, 7 kişinin olabildiği çok ciddi dergilerde veya ciddi konferanslarda böyle komiteler olabiliyor.
+
+367
+01:11:13,876 --> 01:11:22,816
+Bunları söyleyebiliriz. Tabi bir de bunlar şey, makale ve bildirilerin değerlendirme süreciyle yakalı genel yaşanacak şeyler.
+
+368
+01:11:24,435 --> 01:11:32,676
+Şu an mesela herhangi bir, yani elimizde yayın olsa bir online submission yapabiliriz ama zaten bunları çoğunuz size ileride danışmanlarınız yardımcı olacaktır.
+
+369
+01:11:32,676 --> 01:11:41,156
+Çoğu web sitesi işte ne yapıyor? Submit, manuscript diye orada bir menü göreceksiniz. Orada açıp verileri yükleyeceksiniz.
+
+370
+01:11:41,503 --> 01:11:56,503
+Oldu'da reject yediniz. Bu sefer başka bir dergiye göndereceksiniz. İşte burada sıkıntı ve latekin kolaylığı burada ortaya çıkıyor. Sonuçta yazdığınız metin latekte sabit. Sadece format değişiyor. Latekte o kodun yazdığınız kısımlarını taşıyıp...
+
+371
+01:11:57,460 --> 01:12:17,000
+Formata uygun hale getirip tekrardan aynı sürece başlamanız gerekiyor. Özellikle doktora yapan arkadaşlara tavsiyem yayın konusunda gecikmeyin arkadaşlar. Çünkü bir dergi ben işte diyor ki bir ayda iki ayda size cevap vereceğim diye sayfalarında yazıyorlar. Şu an birçok derginin sayfasında ne kadar sürede yayınlar.
+
+372
+01:12:17,359 --> 01:12:23,859
+Yayıma hazır hale gelmiş, doyu ne zaman almış bunların bilgileri var ama onlarda ciddi sapmalar olabiliyor.
+
+373
+01:12:24,579 --> 01:12:31,920
+Yani bin tane yayın gelmiştir, o bin tanenin 900 tanesi hakikaten bir ay içerisinde sisteme yüklenmiştir.
+
+374
+01:12:32,000 --> 01:12:38,260
+Bunda sıkıntı yok ama o kalan 100 tanenin içerisinde bir yıl bekleyen, daha uzun süreler bekleyen şeyler var.
+
+375
+01:12:38,859 --> 01:12:43,680
+Bu da tekrardan bizim başımıza geldi. Bir yayınımız mesela bir buçuk yılda anca basıma hazır hale geldi.
+
+376
+01:12:45,359 --> 01:12:54,420
+Yeterince vakit bulup da karar verme noktasında yeterince hızlı davranamıyorlar gibi burada insan kaynaklı faktörler çok fazla.
+
+377
+01:12:55,899 --> 01:13:00,619
+Evet, herhangi bir projenin değerlendirmesine gelecek olursak biraz da bunları sözel ifade edelim.
+
+378
+01:13:00,719 --> 01:13:02,359
+Örneğin 1001 projesi.
+
+379
+01:13:03,059 --> 01:13:07,819
+Şimdi sizin 1001 projelerinizde biz hocalarınızla beraber değerlendireceğiz.
+
+380
+01:13:08,019 --> 01:13:10,479
+İşte 3 hoca olacağız yüklediğinizde.
+
+381
+01:13:10,912 --> 01:13:32,672
+Bu tabii gerçekten nasıl oluyor? İşte TÜBİTAK tarafına yükleniyor. TÜBİTAK hangi konuda yüklendiyse o konuda hakemler buluyorlar ve 5 hakem yanılmıyorsam 5 hakem bulunuyor 1001 kapsamında. O alanla alakalı çalışmaları olan, o alanla yakın çalışmaları olan 5 tane hakem bulunuyor. Sonra bunlar bir panel düzenliyorlar.
+
+382
+01:13:33,108 --> 01:13:57,528
+Bugün mesela ben sabah katıldım, onun için daha taze bilgilerle açıklayayım istedim. Panelde şu oluyor, daha önceden bu kişilere yayınınızı, projenizle alakalı başvuru formunu zaten ulaşmış oluyor. O güne kadar, artık ne kadar sürede yükleniyorsa, belki 10 gün önce, 15 gün önce yüklenmiştir. O güne kadar bu panelistler şeye katılıyorlar arkadaşlar.
+
+383
+01:13:58,387 --> 01:14:23,127
+oturuma katılıyorlar. Bu online yapılmıştı. Bu oturumda herkes özgün değer, ondan sonra Binbir Projesi'nin 5 tane alt bölümü vardı ya, bunlardan bir tanesi özgün değer, öbürü yaygın etki, öbürü literatür, sonra proje planlaması, fizibilitesi gibi alt bölümler var. Bu alt bölümlerin her biriyle alakalı her bir hakem görüşünü ortaya koyuyor.
+
+384
+01:14:23,456 --> 01:14:51,456
+Diyor ki, öncelikle özgün değerle başlıyorsunuz. Özgün değer, birinci hakem diyor ki, ben burada şu açılardan bunu yeterli görüyorum ama şu açılardan yetersiz. Daha sonra bunlar kapalı oylamayla sisteme oylar veriliyor. Herkes önce görüşünü söylüyor, karşılıklı tartışıyor hocalar. Mesela beş hocanın beşi de görüşünü söylüyor. Sonra bu diğer maddeye geçiliyor. Özgün değerden sonra mesela literatür analizine geçiliyor diyebiliriz.
+
+385
+01:14:51,456 --> 01:15:07,115
+Bütün başlıklar tartışıldıktan sonra da bir oylama sürecine giriliyor. Oylama sürecinde de herkes o projenin o 5-6 kademesine, 6 birimine farklı puanlar veriyor ve ondan sonra ortalama puanlar ortaya çıkıyor.
+
+386
+01:15:07,876 --> 01:15:17,036
+Bundan sonra da şu gerçekleşiyor. Kabul olmuş olabilir, ret olmuş olabilir. Yani proje başarılıdır veya başarısızdır diye iki farklı karar var.
+
+387
+01:15:17,524 --> 01:15:42,204
+Sonra bu kararlara gerekçe yazılıyor. Orada da aynı bir hani şey filmlerden veya mahkemelerde yaz kızım denir ya bir tane şey var, raportörümüz var, TÜBİTAK'ın bir memuru. İşte her hakem diyor ki daha önceden de zaten bir ön hazırlıkları var hakemlerin. İşte özgün değerle alakalı benim görüşüm, işte onun görüşü, başkasının görüşü. O bir Word formatı üzerinde bu yorumlar birleştiriliyor.
+
+388
+01:15:42,836 --> 01:15:57,876
+Tabii yorumları birleştirirken de şöyle bir şey var. Tekrardan bütün kişiler o yazılan yorumu bir gözden geçiyorlar. Aynı şey gibi, şurayı tekrar düzeltelim, şurayı şöyle yapalım. O metin tekrardan gözden geçirip ve işlem sonuçlandırılıyor.
+
+389
+01:15:58,304 --> 01:16:22,404
+Bir projenin değerlendirmesi, bugün ne kadar sürdü? Yaklaşık bir buçuk saat, iki saat arasında bir şey aldı. Yani bakın, sadece bir bin birin baştan sona beş hakem tarafından değerlenmesi. Ortada bir konsensus olana kadar, konsensusdan kastım şu, yani şuraya şu metni yazacağız, işte bu metnin doğru mudur? Bazen kullandıkları kelimeye bile özenle yazmaya çalışıyorlar, bunu da söyleyebilirim.
+
+390
+01:16:26,304 --> 01:16:48,083
+Kobi projesi için sizin önerdiğiniz projeyi hakem size bu sefer ziyarete geliyor. Yani bir şirket yeriniz var, sizde hakemin ziyarete geliyor, incelemeler yapıyor, teknik olanakları bu firmanın yerinde mi, iyi mi? Ondan sonra size sorular yapıyor, sizin onlara sunum yapmanızı bekliyorlar. Cosgap gibi sistemlerde de bu var arkadaşlar.
+
+391
+01:16:49,171 --> 01:17:15,171
+Bunlar tabii daha başvuru aşamasındaki şeyler. Eğer kabul almış bir projeniz varsa bundan sonraki süreçte de şu olacak. Bu projenin 6 aylık dönemlerde takip edilmesi, incelenmesi söz konusu. O da ayrı bir hakem tarafından izleyici diyorlar genellikle. Projenin o 6 aylık süreçteki beklenen çıktıları doğru düzgün elde edilmiş mi, eksik bir şeyler var mı? Bununla alakalı kontroller yapılıyor.
+
+392
+01:17:16,180 --> 01:17:18,980
+diyebiliriz. Evet, sizin bir sorunuz var mı?
+
+393
+01:17:27,315 --> 01:17:46,175
+Evet, şimdi arkadaşlar, kısaca projelerle alakalı bundan sonraki süreci özetleyeyim. Ondan sonra yoklama alıp tamamlayacağız. Şimdi ocağın 10'unda okul kapanıyor. Yani 2, 4, 5, 6 haftamız var bu haftanın haricinde.
+
+394
+01:17:46,855 --> 01:17:53,595
+Benim de anlatacağım size iki konu var. Bu iki konuyu muhtemelen gelecek hafta tamamlayacağız.
+
+395
+01:17:54,739 --> 01:18:03,579
+Son 3 haftada da, ayın 24'ünde, ayın 31'inde ve ocağın 7'sinde sizlerin sunumlarını alacağız.
+
+396
+01:18:04,739 --> 01:18:18,979
+Ayın 23'ünde, bunu herkes not etsin, yani 23 Aralık tarihinde bütün ekiplerin proje raporlarının ve proje sunumlarının online yıldız sistemine yüklenmesi gerekiyor.
+
+397
+01:18:19,539 --> 01:18:25,699
+Sonra sunum yapacak kişi sonradan yüklemeyecek. Ayın 23'ünde herkes bütün belgelerini toparlamış olacak.
+
+398
+01:18:26,719 --> 01:18:31,420
+Yani bugünden ayın 23'üne kadar ki süreci siz düşünün artık.
+
+399
+01:18:32,559 --> 01:18:39,619
+Ondan sonra da, şimdi bunu da gelecek hafta sizinle kura usulüyle veya işte gönüllü olanlar önce sunum yapacak şekilde usulle,
+
+400
+01:18:39,619 --> 01:18:43,299
+ayın 17'sinde hangi ekipler projesini sunacak?
+
+401
+01:18:44,083 --> 01:18:53,123
+Ayın 24'ünde hangi ekipler projesini sunacak? Ayın 31'inde hangi ekipler sunacak? Ayın 7'sinde hangi ekipler sunacak? Haftaya bunları belirleyeceğiz.
+
+402
+01:18:54,083 --> 01:19:11,064
+Tekrar söylüyorum, ayın 23'ünde online yıldızla herkesin projesinin raporunu ve sunumunu, sunum tekniklerini anlatınca zaten nasıl bir sunum hazırlayacağınızı az çok orada konuşuruz. Bunları yüklemeniz lazım.
+
+403
+01:19:11,764 --> 01:19:12,884
+Bunu söylemiş olalım.
+
+404
+01:19:13,984 --> 01:19:20,444
+Bunun dışında, şimdi bir saniye sorum var, yok.
+
+405
+01:19:21,604 --> 01:19:22,484
+23 dedik.
+
+406
+01:19:23,404 --> 01:19:26,244
+Proje ekibinde 3 kişi olabilir, 4 kişi olabilir.
+
+407
+01:19:27,123 --> 01:19:29,684
+Genellikle 3 veya 4 kişilik ekipler var.
+
+408
+01:19:30,363 --> 01:19:34,564
+Herkes bu sunum ve rapor dosyasını sisteme yükleyecek.
+
+409
+01:19:34,664 --> 01:19:35,923
+Ben oraya bir tanımlama yapacağım.
+
+410
+01:19:35,923 --> 01:19:37,524
+Tek bir zip altında.
+
+411
+01:19:37,971 --> 01:19:44,671
+hem rapor dosyası hem de word dosyası hem de bir ppt sunum dosyasını yüklemenizi bekliyoruz.
+
+412
+01:19:45,211 --> 01:19:51,231
+Sadece proje ekibinin başındaki kişi değil, ileriye yönelik burada bir veri gerekirse,
+
+413
+01:19:51,911 --> 01:19:57,211
+aynı dosyanın 4 kişide 4 defa ayrı ayrı kişiler tarafından yüklenmesi lazım.
+
+414
+01:19:57,891 --> 01:19:58,811
+Bunu da söylemiş olayım.
+
+415
+01:19:59,091 --> 01:20:01,072
+Oraya yüklenmezse sıkıntı arkadaşlar.
+
+416
+01:20:01,231 --> 01:20:05,152
+Onun için şimdiden herkes çalışmalarını buna göre yapsın.
+
+417
+01:20:05,811 --> 01:20:07,271
+Sorumuz var mı? Başka?
+
+418
+01:20:11,507 --> 01:20:14,487
+Kısa bir yoklamayı alıp hemen bitireceğim arkadaşlar.
+
+419
+01:20:16,967 --> 01:20:21,667
+Sınavla alakalı bugün ben bu işimden dolayı yetişemedim.
+
+420
+01:20:22,068 --> 01:20:26,127
+Sınavla alakalı bir sıkıntısı olan varsa gelecek hafta okulda konuşuruz.
+
+421
+01:20:26,207 --> 01:20:27,047
+Bunu söyleyebilirim.
+
+422
+01:20:28,927 --> 01:20:30,608
+Şimdi [öğrenci] burada mı?
+
+423
+01:20:31,287 --> 01:20:31,967
+Buradayım hocam.
+
+424
+01:20:32,987 --> 01:20:34,407
+[öğrenci] yoktur.
+
+425
+01:20:35,127 --> 01:20:36,827
+[öğrenci] yoktur.
+
+426
+01:20:36,827 --> 01:20:39,027
+Herhalde [öğrenci] yoktur.
+
+427
+01:20:39,475 --> 01:21:04,155
+[öğrenci]. Buradayım hocam. [öğrenci]. Buradayım hocam. [öğrenci]. [öğrenci]. [öğrenci]. Hocam ben [öğrenci] buradayım, mikrofonu açamadım da. Tamam. [öğrenci] yoktur. [öğrenci] yok. [öğrenci].
+
+428
+01:21:07,636 --> 01:21:08,736
+[öğrenci]
+
+429
+01:21:12,435 --> 01:21:13,475
+[öğrenci].
+
+430
+01:21:14,975 --> 01:21:19,296
+Arkadaşlar, chatten yazmayın çünkü chat'e bakamıyorum.
+
+431
+01:21:20,456 --> 01:21:22,376
+[öğrenci], burada mı? Yok.
+
+432
+01:21:23,695 --> 01:21:24,475
+[öğrenci].
+
+433
+01:21:26,695 --> 01:21:27,876
+[öğrenci].
+
+434
+01:21:29,416 --> 01:21:30,615
+[öğrenci].
+
+435
+01:21:34,163 --> 01:21:36,883
+[öğrenci] [öğrenci], buradayım hocam.
+
+436
+01:21:38,363 --> 01:21:41,043
+[öğrenci], buradayım hocam.
+
+437
+01:21:42,443 --> 01:21:49,203
+[öğrenci], [öğrenci], buradayım hocam.
+
+438
+01:21:49,203 --> 01:21:51,203
+[öğrenci],
+
+439
+01:21:54,612 --> 01:22:20,911
+[öğrenci]. Buradayım hocam. [öğrenci]. Buradayım hocam. [öğrenci]. Buradayım hocam. [öğrenci]. [öğrenci]. Buradayım hocam. [öğrenci]. Buradayım hocam. [öğrenci]. Buradayım hocam.
+
+440
+01:22:21,363 --> 01:22:48,163
+[öğrenci] burada. [öğrenci]. [öğrenci]. [öğrenci]. [öğrenci]. [öğrenci] [öğrenci]. [öğrenci]. [öğrenci].
+
+441
+01:22:51,699 --> 01:22:59,899
+[öğrenci], [öğrenci], [öğrenci],
+
+442
+01:23:03,283 --> 01:23:04,344
+[öğrenci]
+
+443
+01:23:08,627 --> 01:23:18,747
+[öğrenci], [öğrenci], Buradayım, [öğrenci].
+
+444
+01:23:22,804 --> 01:23:25,923
+Evet, var mı arkadaşlar sormak istediğiniz herhangi bir şey?
+
+445
+01:23:26,604 --> 01:23:28,404
+Hocam ben bir şey sormak istiyorum.
+
+446
+01:23:28,704 --> 01:23:29,003
+Buyurun.
+
+447
+01:23:30,524 --> 01:23:37,904
+Gruplarımızdan eksilenler olursa, atıyorum tek başımıza kaldık, tek başımıza mı sunum yapıyoruz yoksa farklı bir düşünceniz var mı?
+
+448
+01:23:37,904 --> 01:23:40,284
+Yani grupun hepsi bitti bir siz mi kaldınız?
+
+449
+01:23:41,108 --> 01:23:43,387
+Olursa diye sordum aslında.
+
+450
+01:23:43,547 --> 01:23:48,747
+Yani evet, çünkü o planlamayı tekrardan değiştirmek pek mümkün değil.
+
+451
+01:23:49,507 --> 01:23:54,987
+Yani bir kişi de olsa artık orada size, işin çoğu size düşüyor.
+
+452
+01:23:55,627 --> 01:23:56,728
+Keşke öyle bir şey olmasa.
+
+453
+01:23:57,363 --> 01:24:02,903
+Anladım. Değerlendirme de peki bunun için yapabileceğiniz bir şey olur mu? Ona göre bir değerlendirme vs.
+
+454
+01:24:03,163 --> 01:24:09,783
+Yani en azından raporun tam olmasını bekleriz. Sunumda da ona göre değerlendirme yaparız. Çünkü rapor, en önemli şey burada rapor.
+
+455
+01:24:11,303 --> 01:24:12,963
+Anladım hocam. Teşekkür ediyorum.
+
+456
+01:24:13,263 --> 01:24:13,803
+Rica ederim.
+
+457
+01:24:14,996 --> 01:24:34,596
+Aslında şey, ekibin dağılmış olması mesela o da bir şey. Şu an proje ekibinin yeterliliği bu bin bir projesinde bir şey, bir kalem, değerlendirme kalemi. Yani kaç kişi çalışacak, çalışanların eğitim durumları veya işe uygunluk durumları, yapılacak konuya uygunluk durumları nelerdir?
+
+458
+01:24:34,596 --> 01:24:42,176
+Tabii burada o şeyi birazcık göz ardı edebiliriz. Çünkü bir anlamda simülasyon yapıyoruz.
+
+459
+01:24:42,771 --> 01:24:48,992
+Çok sıkıntı olmaz ama rapor noktasında eksik olmamasını bekleriz tabii ki.
+
+460
+01:24:50,912 --> 01:24:52,412
+Anladım hocam, teşekkürler.
+
+461
+01:24:53,631 --> 01:24:57,331
+Peki, haftaya görüşmek üzere arkadaşlar. Kendinize iyi bakın, hoşçakalın.

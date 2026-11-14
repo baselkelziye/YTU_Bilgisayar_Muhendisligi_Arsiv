@@ -1,6 +1,6 @@
 # Araştırma Yöntemleri ve Bilimsel Etik Ders Kayıtları Altyazıları
 
-Bu klasör, 2024-2025 eğitim öğretim yılı Güz dönemindeki Araştırma Yöntemleri ve Bilimsel Etik (BLM5004 - 1. şube) ders kayıtlarının altyazılarını içerir.
+Bu klasör, 2024-2025 eğitim öğretim yılı Güz dönemindeki Araştırma Yöntemleri ve Bilimsel Etik (BLM5004 - 1. şube) ders kayıtlarının altyazılarını içerir. Aynı yılın diğer şube ya da dönem kayıtları bir üst klasördedir (`../`).
 
 * **Dersi Veren Akademisyen:** Dr. Ahmet Elbir
 
