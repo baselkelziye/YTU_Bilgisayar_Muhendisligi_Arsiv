@@ -1,0 +1,879 @@
+1
+00:00:28,179 --> 00:00:30,140
+Merhaba arkadaşlar, kolay gelsin.
+
+2
+00:00:34,067 --> 00:00:35,547
+Sesim geliyor mu arkadaşlar?
+
+3
+00:00:36,327 --> 00:00:37,408
+Merhaba hocam, geliyor.
+
+4
+00:00:38,667 --> 00:00:43,588
+Grubunuza da belki duymayan olabilir. Okuldan da posta geldi mi?
+
+5
+00:00:45,027 --> 00:00:49,688
+Classroom haricinde okul mailinden de mail geldi mi sizlere acaba?
+
+6
+00:00:50,567 --> 00:00:51,567
+Evet, geldi hocam.
+
+7
+00:00:51,567 --> 00:01:01,427
+Tamam. Başka gelmeyen oldu mu bu katılan arkadaşlar arasında? Okul mailinden dersin online yapılacağıyla alakalı mail geldi mi?
+
+8
+00:01:02,259 --> 00:01:03,199
+Geldi hocam.
+
+9
+00:01:03,799 --> 00:01:22,859
+Tamamdır. Bu arada önümüzdeki hafta da online olacak arkadaşlar, alınan kararla. Önümüzdeki hafta tatil planlarınız falan varsa online olacak bütün dersler. Perşembe ve Cuma günkü dersler online olacak, aklınızda olsun. Bu duyuru yapıldı mı arkadaşlar size?
+
+10
+00:01:24,579 --> 00:01:25,340
+Yapıldı hocam.
+
+11
+00:01:25,759 --> 00:01:29,159
+Tamamdır. Planlarınızı ona göre düzenlersiniz.
+
+12
+00:01:30,164 --> 00:01:45,904
+Şimdi onu 5 geçe kadar bir bekleyelim. Gelenler bir gelsin. Siz de eğer gruplarınızdan atabiliyorsanız dersin linkini atın veya dersin başladığına haber verin. Ondan sonra vize sorularını çözerek devam edeceğiz arkadaşlar.
+
+13
+00:04:14,132 --> 00:04:23,351
+Herkese merhabalar tekrar arkadaşlar. Katılan sayısı baya az online olması rağmen. Acaba bir sorun mu var?
+
+14
+00:04:27,379 --> 00:04:33,480
+Hocam birçok kişi memleketine geri döndü. Dün derslerde az kişi vardı bayağı. Ondan olabilir belki.
+
+15
+00:04:34,000 --> 00:04:37,159
+Tamamdır. Biz şimdi sorularımızı çözmeye başlayalım.
+
+16
+00:04:38,019 --> 00:04:45,819
+Şimdi burada bir tablo verilmiş ve de bu tablonun içini iletim ve kesim şeklinde doldurmamız isteniyor.
+
+17
+00:04:46,355 --> 00:05:13,196
+Şimdi ilkinde A'ya ve B'ye ground bağlanmış. Şurada ground, şurada ground. Yani yaptıkları şey şu aslında. GND demek. Aslında ground'a bağladın demek. Şimdi burada ground'a bağlandığı zaman, burada bir gerilim olacağı zaman, gerilim var. R'nin üzerinden giderek her ikisi üzerinden de ne yapıyor? Akım akıyor. Buradan akım akması demek şu not, şu ortak not demek. Buradan akım geçmesi demek.
+
+18
+00:05:13,584 --> 00:05:36,844
+Ve de buradan da akımın akmasına müsaade etmesi demek. Bu durumda D1 ve D2 iletimde, D3 de aynı şekilde iletimde. Bizim T dediğimiz transistör de çalışır durumda mı? İletimde mi yani? İletim yapıyor mu? Evet, iletimde. Çünkü baz akımı attığı zaman iletimdedir o.
+
+19
+00:05:40,403 --> 00:05:43,423
+Bu anlaşıldı mı arkadaşlar? İkincisine geçeceğim.
+
+20
+00:05:47,444 --> 00:06:09,544
+Anlaşılır hocam. Burada iki tarafa yani akımın buradaki Vcc akımının boşalabileceği A veya B üzerinden boşalabileceği her durumda D3 üzerinden şurayı ortak not kabul edin şöyle. Akım akacaktır. O da transistörün çalışmasını sağlayacaktır. Mesela A'ya ground bağlamış şu şekilde.
+
+21
+00:06:10,127 --> 00:06:37,548
+Burada ise bir Vcc gelin var. Yani şöyle bir gelin bağlamış. Şurası Vcc gelin. Buradaki gelin, buraya ne diyelim Y ucu. Y ucundaki gelin B ucundaki gelinden yüksek. Aynı olacağı için veya daha düşük olacağı için. Çünkü biraz da direncin üzerinden kaybediyor değil mi? Dolayısıyla bu D2 iletimde olmayacak. Yani D2 kesimde olacak.
+
+22
+00:06:38,132 --> 00:06:49,912
+Peki D1 iletimde olacak mı? Ground'a bağlandığı için her halükarda bizim şu Y ucu, şuradaki buraya da ne diyelim? X ucundaki gelin muhakkak ki A ucundan büyük olacaktır.
+
+23
+00:06:49,992 --> 00:06:56,252
+R'nin üzerinde, şuradaki R'nin üzerinde direnç şey düşse bile gelin düşse bile. Dolayısıyla orası iletimde olacak.
+
+24
+00:06:56,252 --> 00:07:06,132
+Burada şuradaki hatta, yeşil olarak çizdiğim hatta iletim olması durumunda şuradaki, şuradan da belli bir miktar baz alacak.
+
+25
+00:07:06,132 --> 00:07:17,052
+Bu rakamı akacaktır arkadaşlar. Dolayısıyla benim transistörüm D3 diyotum aynı zamanda transistörüm de iletimde olmuş olacak.
+
+26
+00:07:17,971 --> 00:07:29,512
+Şimdi bir de bunun tam tersi bir durum var. Aynı şey bu sefer ama iletimde olan benim D2 diyotum olmuş olacak.
+
+27
+00:07:31,060 --> 00:07:33,840
+Evet, şunları bir daha bir sileyim bakayım.
+
+28
+00:07:38,004 --> 00:07:51,884
+Evet. Şimdi de arkadaşlar, A'ya Vcc'ye bağlanıyor. Şurada bir Vcc gelimi var. B değilse Grant var. Dolayısıyla ne olacak arkadaşlar? Buradan başlayacak.
+
+29
+00:07:52,723 --> 00:08:15,744
+Gelecek, bakacak Vcc var D1'in eksi ucunda. Şurası eksi, burası artı ucu. Belli bir gerilim düşümü olacak. Vcc'den küçük bir gerilim gelmiş olacak buraya. Yani buraya x ucu dersem küçüktür. Küçük eşit Vcc. En küçük. Niye küçük eşit dedim? R'nin üzerinden akım akmazsa orada Vcc bulunur. Her halükarda D1 kesimde olacak.
+
+30
+00:08:16,744 --> 00:08:19,524
+Şurası, şurasını düzeltiyorum.
+
+31
+00:08:20,980 --> 00:08:48,320
+Şurada bozukluk olmuş anladığım kadarıyla. Bu durumda D1'de kesim var. D2'de iletim var. Gördüğünüz gibi şuradan D2'yi de iletim var. Burada iletim olması şuradaki Y nodu üzerinden belli bir baz akımının akmasını sağlayacaktır. Sadece diyot var çünkü orada. Baz akımının akmasını sağlayacak ve transistörü iletime geçirecektir. Dolayısıyla bunların hepsi iletimde.
+
+32
+00:08:49,203 --> 00:08:53,144
+Peki ne zaman bu sistem bozulur arkadaşlar?
+
+33
+00:08:59,028 --> 00:09:01,768
+Silgide bir gariplik var. Bazı yerleri silmiyor çünkü.
+
+34
+00:09:11,796 --> 00:09:35,576
+Yanlış yerleri siliyor şuradaki. Neyse. Şimdi ben her halükarda her ikisine de Vcc bağlarsam şu şekilde. Her iki ucada Vcc bağlarsam. Onu da yeşille, turuncu ile çizeyim şöyle. Her ikisinde de Vcc var. Bu uçta da Vcc var.
+
+35
+00:09:36,916 --> 00:09:59,256
+Dolayısıyla benim ne D1 ne de D2 diyotumdan akım akmayacak. Öyle değil mi? Yani yine buradaki X noktasındaki, şuradaki X düğümündeki elim küçük eşittir. Vcc olacağı için akım akmayacak. Dolayısıyla ne diyeceğim burada? D1 ve D2 kesimde ondan sonra böyle olunca...
+
+36
+00:10:00,000 --> 00:10:07,440
+Oradan akım akmayınca arkadaşlar ne olması lazım? İletime geçmeyeceği için bir şekilde şey boşalmayacak.
+
+37
+00:10:07,440 --> 00:10:11,259
+Burada şöyle bir şey olması lazım yalnız.
+
+38
+00:10:12,139 --> 00:10:20,960
+Belli bir burada orada oralar iletim olmayınca buralardan ne olması lazım?
+
+39
+00:10:21,819 --> 00:10:23,720
+Akım akabilir öyle değil mi arkadaşlar?
+
+40
+00:10:24,244 --> 00:10:37,484
+Çünkü direnç üzerinden geliyor, belli bir akım akıyor. Belli bir akım, Vcc gelimi var, belli bir R gelimi var ve de buradan iletime geçiyor her ikisi de.
+
+41
+00:10:40,484 --> 00:10:46,004
+Evet, şimdi ikinci soruya geçelim. Sormak istediğiniz bir şey var mı burada?
+
+42
+00:10:50,004 --> 00:10:59,844
+Hocam, az önceki soruda T'ye, pardon X'e GND'ye vermeniz şey tarafından yukarıdan transistöre bir şey akmasını engellemez mi?
+
+43
+00:10:59,844 --> 00:11:03,624
+Pardon, pardon. Orayı ben dikkate almadım. Özür dilerim. Doğru söylüyorsun.
+
+44
+00:11:05,084 --> 00:11:14,464
+Şimdi X'e, X'te o arayda GND olması demek, pardon özür dilerim, orayı gözden kaçırmışım. Şuralar da varmış.
+
+45
+00:11:14,868 --> 00:11:26,588
+X'te, VG, X'te yani şurada VCC olması demek ki buradan belli bir akım ne yapmıyor demektir arkadaşlar akım.
+
+46
+00:11:30,580 --> 00:11:55,320
+Geçiyor buradan. Vcc gelimi. Vcc çok düşük olabilir burada. Vcc gelimi oluşuyor. Şimdi burada Grant varsa şayet burada. Grant varsa. Demek ki burası ne olmuş arkadaşlar? Buradan belli bir miktar kapalı durumdaymış. D3 de kapalı, T de kapalı duruma gelir o zaman. Onu dikkate almamız lazım.
+
+47
+00:11:56,467 --> 00:11:59,648
+Anlaştık mı? Bu derste çözülmüş müydü bu soru arkadaşlar?
+
+48
+00:12:03,700 --> 00:12:10,840
+Çözülmedi hocam. Tamam. Bu şekilde bunu bir görmüş olalım. Yapabildiniz mi bu soruyu?
+
+49
+00:12:15,668 --> 00:12:17,467
+Bu şekilde yapabildiniz mi arkadaşlar?
+
+50
+00:12:19,648 --> 00:12:21,327
+Genel hatlarıyla evet hocam.
+
+51
+00:12:21,627 --> 00:12:24,788
+Tamamdır. Şimdi burada başka bir sorumuz var bizim.
+
+52
+00:12:26,927 --> 00:12:29,467
+20 voltluk bir sinüs dalgası veriliyor.
+
+53
+00:12:30,467 --> 00:12:35,768
+Şimdi şeyini çizelim bunun. Daha doğrusu şunun üzerine de çizebilirim.
+
+54
+00:12:35,768 --> 00:12:40,967
+Şöyle. Şimdi pozitif kısımdayken, pozitifteyken böyle geliyor.
+
+55
+00:12:41,748 --> 00:13:09,348
+Şöyle geçiyor ve buradan tamamlanıyor. Şimdi burada iki tane durum söz konusu. Bir, böyle baktığımızda eğer bu şekliyle çizecek olursam bakın geldim. 2.2'lik direncinin üzerinden geçtim. Buna A direnci diyeyim. Ondan sonra dikkat edin bir taraftan şöyle gidiyorum.
+
+56
+00:13:10,419 --> 00:13:21,320
+Şöyle geldim. Burada bir direnç var. Burası artı eksi V0. Ondan sonra bir diyot var ve toprağa gidiyorum.
+
+57
+00:13:22,480 --> 00:13:31,919
+Yalnız burası diyot iletime geçtiği zaman bu uçla bu uç birbirine kısa devreymiş gibi. İletime geçtiği zaman kısa devreymiş gibi düşüneceksiniz.
+
+58
+00:13:32,436 --> 00:13:41,656
+O durumda ne olacak arkadaşlar? Şuradaki 2.2'lik direnç de şu şekilde toprağa gidiyor.
+
+59
+00:13:41,656 --> 00:13:50,615
+Burada iki türlü yaklaşım var. Diyot iletime geçtiği için bunu kısa devre kabul edebilirsiniz.
+
+60
+00:13:50,615 --> 00:13:58,936
+Veya burada diyot üzerinde 0.7 volt düşüyor gibi de kabul edebilirsiniz. Önce şey şeklinde yapalım.
+
+61
+00:13:59,668 --> 00:14:11,468
+Diyotun üzerinde geldim düşmüyor gibi kabul edelim. Onu bir geri alalım şöyle.
+
+62
+00:14:15,860 --> 00:14:37,080
+İdeal durumu kabul edelim. Böyle olduğu zaman burada da 2.2, burada da 2.2'lik bir direnç var. Bunlar paralel olduğu için birbirine aslında şuna dönmüş oluyor devlet. Şöyle bir 2.2K. Ondan sonra burada eş değer direnç bulurken ne yapıyorduk? 2.2K ile iki, bir bölü R eş, eşittir.
+
+63
+00:14:37,491 --> 00:14:46,971
+1 bölü V1 artı 1 bölü 1 bölü V2 şeklinde bulduğumuz an burada da yaklaşık yarısına düşecektir. 1.1K'ya düşecektir.
+
+64
+00:14:47,711 --> 00:14:54,891
+Dolayısıyla ben buradan 20 volt uyguladığımda 2 birim buraya, 1 burun buraya düşecektir.
+
+65
+00:15:00,179 --> 00:15:20,919
+B uçları arasındaki gerilimim, yani şurası olmuş oluyor A ve B. Uçlarındakinin üçte biri, yilminin üçte biri. O da neye eşit? Yani V artı V, V sıfır eşittir, yirmi bölü üç. Buradan ne bulacağız? Altı nokta altmış yedi şeklinde bulacağız.
+
+66
+00:15:27,956 --> 00:15:41,975
+Çıkışım maksimum 6.67 volt olacak. Peki, negatife geçelim arkadaşlar. Bu anlaşıldı mı? Ona göre negatife geçeyim.
+
+67
+00:15:46,067 --> 00:15:54,947
+Anlaşıldığını varsayıyorum. Negatife geçtiğimde ise arkadaşlar, şu şekilde düşüneceğim.
+
+68
+00:15:58,388 --> 00:16:06,252
+Negatifte, şöyle bakalım. Yani şu kısımdayım. Benim...
+
+69
+00:16:06,323 --> 00:16:19,783
+Bu durumda sadece hangisi çalışacak arkadaşlar? Şöyle, şu diyot çalışacak ve şunun üzerinden çalışacak.
+
+70
+00:16:19,783 --> 00:16:25,344
+Buradaki VI diyotu ise negatiften dolayı burası iptal, açık devre gibi olacak.
+
+71
+00:16:26,083 --> 00:16:31,803
+Bu durumda çizecek olursam devreye arkadaşlar nasıl olacak? Yukarıdan itibaren çiziyorum.
+
+72
+00:16:32,371 --> 00:16:48,751
+Benim şu diyotum iletime geçtiği için sadece burada geldim. Şu eksi uçtan geldim. Bakalım şurayı doğru halletmiş miyiz?
+
+73
+00:16:57,779 --> 00:17:18,340
+Burası kısa devre olduğu için şöyle bir direncim var. Şurası eksi, burası artı olmak üzere V0. Bir de buna paralel 2.2 kilo var. Yani bu A direnci, buradaki A direnci olmuş oluyor.
+
+74
+00:17:18,932 --> 00:17:29,192
+Peki, burada açık devre olduğu için burada ne olacak? Bir direncim var. Bu da B direncim olsun. Bu da B direncim. O da 2.2K. Ve böylece toprağa gidiyor.
+
+75
+00:17:29,192 --> 00:17:46,031
+Dikkat edin arkadaşlar, burada negatif gerilim verildiği için şuradaki X ucu Y ucundan daha düşük gerilimde. Negatif uygulandığı için. Toprak demeyeyim şuraya, burası yanlış anlaşılır.
+
+76
+00:17:46,384 --> 00:18:08,124
+Burası da bir uç. X ucu, Y ucundan daha düşük gerilimli. Dolayısıyla şöyle düşünebilirim. Akım gidiyorsa şu şekilde gitmesi lazım. Yani benim önce B direncinden geçecek, V0'nın artı ucundan gidecek, Eksi ucuna gidecek. Dolayısıyla ters bir gerilimleme var.
+
+77
+00:18:08,531 --> 00:18:24,751
+Yani benim y ucu x ucundan yüksek olduğu için y büyüktür x olduğu için benim v0'ın artı ucundaki gelinim daha fazla ve 0'ın eksi ucundaki gelinim daha az.
+
+78
+00:18:25,132 --> 00:18:28,771
+Oysa orada pozitif bir gelinim var. Peki nasıl bunu hesaplayacağız arkadaşlar?
+
+79
+00:18:29,491 --> 00:18:52,731
+Burada da 2.2 vardı. Dolayısıyla bunun eş değer direnci şöyle düşünebilirsin. Şöyle eş değer direnci 1.1 kilo ohm. İki tane 2.2 kilo ohm birbirine paralel. Daha sonra burayı verdik. 2.2k da burada var. Dolayısıyla V0 yani şurası eksi artı V0 yine paralel olduğu için.
+
+80
+00:18:53,183 --> 00:19:00,324
+Bunun üzerinde 20'nin 3'te 1'i kadar düşecek ve de pozitif tarafında. Yani bu da şöyle pozitif tarafında.
+
+81
+00:19:00,324 --> 00:19:02,324
+Peki bu...
+
+82
+00:19:03,571 --> 00:19:23,871
+Soru bu kadar mı? Demek ki bu köprü, diyot ve direnç yapısı bize tepesi 6.67'de olan tam dalga doğrultucu vermiş oluyor. Peki bunun DC seviyesi deyince ne yapmamız lazım? 6.67'ye.
+
+83
+00:19:24,372 --> 00:19:37,932
+Kaç ile çarpmamız lazım arkadaşlar? 0.636 ile çarpmamız lazım. Yani bunun DC seviyesi yaklaşık bunun altta kalanının şu yeşil gibi bir çizgide oluyor.
+
+84
+00:19:37,932 --> 00:19:46,652
+DC seviyesi. Onu da nasıl buluyorduk arkadaşlar? 667 çarpı 0.636.
+
+85
+00:19:47,476 --> 00:19:56,396
+Peki, yarı dalga doğrultucuda karşıya çarpıyor. 0.318'de çarpıyor. Bu da yaklaşık 4.2 volt civarı falan oluyor.
+
+86
+00:19:56,396 --> 00:20:14,195
+Bu arada bazı arkadaşlarımız, şuradaki Diotu'da 0.7 volt olan gerilimini de hesaba katıp bu değerlerden çıkarmış.
+
+87
+00:20:14,644 --> 00:20:28,483
+Onları da doğru olarak kabul edeceğiz arkadaşlar. Eğer böyle bir durumda ne olacak? Şurada 0.7'lik bir direnç düşmüş olacak. Yani 6.67'den 0.7'yi çıkaran arkadaşlar da bizim için doğru yapmış oluyor.
+
+88
+00:20:30,932 --> 00:20:43,271
+0.7 çıkarsa ne olur arkadaşlar? 7, burada da 5.97 gibi bir değer oluyor. Bunun üzerinden yapan arkadaş renkini de doğru kabul edeceğiz.
+
+89
+00:20:45,711 --> 00:20:47,672
+Hocam zaten soruda öyle istermemiş mi?
+
+90
+00:20:48,412 --> 00:20:48,711
+Nasıl?
+
+91
+00:20:50,552 --> 00:20:56,352
+Yani bazı arkadaşlar dikkatten kaçırıyor. İdeal olarak değerlendirmeyecekler aslında bu.
+
+92
+00:20:56,788 --> 00:21:11,388
+Ama ben her ikisini de doğru kabul edeceğim. Yani okurken. Ama dediğin gibi, daha doğrusu ideal olarak değerlendirilmeyecektir şeklinde daha doğru hesap yapanlara tam puan vereceğim. Öbüklerine biraz düşüreceğim.
+
+93
+00:21:13,148 --> 00:21:13,648
+Tamamdır öyle.
+
+94
+00:21:13,648 --> 00:21:14,807
+Tamamdır.
+
+95
+00:21:16,028 --> 00:21:24,648
+Geldik. Burada bizim bazı arkadaşlarımızın takıldığı bir soru bu. Şimdi demiş ki...
+
+96
+00:21:25,044 --> 00:21:45,424
+IC akımını bulunuz. Yani şuradaki akımı bulunuz demiş. Tamam, gidelim. Önce bize yardımcı olacak şey şu. Şu VL direnci, yani VL'deki gelim değeri nedir? Aslında biz VL'in eğer burada silisyum transistör kullanmışsa demek ki burada 0.7 volt düşecek.
+
+97
+00:21:49,008 --> 00:22:09,988
+Transiz, şeyde, zener diyotum nasıl çalışıyordu arkadaşlar? Maksimum 8.2 volt üzerinde gerilim düşecek gibi çalışıyor. Öyle değil mi? Gerisini nereye atıyor? Direncin üzerine atıyor. 22 volt da 8.2 den düşeceği için muhakkak ki burası daima 10 durumunda olacak. Daima üzerinde 8.2 volt olacak.
+
+98
+00:22:17,008 --> 00:22:37,367
+Şuraya baktığımızda şu uçların hepsi birbirinin aynı. Öyle değil mi arkadaşlar? Hepsi VL. Burada 8.2'yi daima göreceğiz. Bunun üzerinden akım atacak şekilde. Ondan sonra 8.2 voltumuz olacak orada daima. 0.7 voltumuz da.
+
+99
+00:22:38,036 --> 00:22:53,395
+Ne olacak arkadaşlar? Transistör silisyum olduğu için geliyor. Buradaki değer 8.9 volt şeklinde. Yani şu görmüş olduğunuz bütün uçlarda A, B ve de VL uçlarının hepsinde 8.9 volt var.
+
+100
+00:23:03,763 --> 00:23:31,163
+Buradan da ne diyeceğiz? Il 89 mA diyebiliriz. Şimdi geldik. Ic'yi bulabilmek için burada not olarak baktığımızda Ic neye eşit? Şuradan gelen akıma öyle değil mi? Oradan gelecek olan akım ne arkadaşlar? Ia diyelim ona. Ia, B diyelim. A'dan B'ye gelen akım.
+
+101
+00:23:31,635 --> 00:23:49,536
+Ic eşittir. Şöyle baktığımızda akım şöyle devam edecek. Ic eşittir. Ic, Ile artı şey. Iab-Ile şeklinde yazabiliriz.
+
+102
+00:23:49,536 --> 00:23:59,215
+Bu nottaki bütün gelinimler, akımların toplamını. Şimdi Iab'yi bulalım arkadaşlar. Iab'yi.
+
+103
+00:23:59,763 --> 00:24:16,144
+Onu da nasıl bulacağız? Şuradaki V'in eksi V'a bölü, direncin değeri, R değeri diyelim ona da.
+
+104
+00:24:16,144 --> 00:24:24,703
+O da 22 volt eksi, V'a'da ne var? 8.9 volt bölü 120 ohm.
+
+105
+00:24:25,236 --> 00:24:39,676
+Buradan 109 mA geliyor. IB çok düşük bir akım olduğu için, hani Zenenin üstünden çok düşük bir akım geçeceği için IB daima şey yapılabilir.
+
+106
+00:24:42,708 --> 00:24:48,908
+Elimine edilebilir, görülmeyebilir. Bu durumda şuradaki değerlerden ne diyeceğiz?
+
+107
+00:24:49,908 --> 00:24:52,788
+IAB neydi? 109 mA.
+
+108
+00:24:54,788 --> 00:24:58,408
+Eksi IL neydi? 89 mA.
+
+109
+00:24:59,968 --> 00:25:07,348
+Dolayısıyla IC'imiz bizim 20 mA civarında bulunmuş oluyor. Cevap da bu zaten.
+
+110
+00:25:08,852 --> 00:25:10,352
+Bu anlaşıldı mı arkadaşlar?
+
+111
+00:25:11,812 --> 00:25:22,352
+Hocam burada ilk kısmı bir daha söyleyebilir misiniz? Şey anlamadım. Bu Base Emitter Loop'u ile RL'yi paralel mi kabul ettik birbirine orada?
+
+112
+00:25:22,972 --> 00:25:30,512
+Şurayı söylüyorsun sen değil mi? Yani şöyle baktığında A ucuyla.
+
+113
+00:25:31,380 --> 00:25:36,140
+Mesela VA eşittir, VL dedim yani. Bunu kastediyorsun değil mi?
+
+114
+00:25:36,740 --> 00:25:38,019
+Evet, onu kastediyorum hocam.
+
+115
+00:25:38,039 --> 00:25:45,700
+Evet, evet. Çünkü ne bu? A noktası, bakın burada hep kısa devre var. A noktası VL ucuyla aynı demektir.
+
+116
+00:25:47,000 --> 00:25:48,480
+B ucuyla da aynı demektir.
+
+117
+00:25:49,059 --> 00:25:49,559
+Kısa devre.
+
+118
+00:25:51,039 --> 00:25:56,799
+Kısa devre. Aslında buna VL de diyebilirim. Şuraya hepsine VL de diyebilirim. VA, VB diyeceğimi.
+
+119
+00:25:57,652 --> 00:26:03,772
+Dolayısıyla o uçtan hepsi paralel şekilde ground'a gidiyor. Dolayısıyla hepsi birbirine eşitler.
+
+120
+00:26:06,292 --> 00:26:07,972
+Sağ olun hocam. Teşekkür ederim.
+
+121
+00:26:08,392 --> 00:26:08,932
+Rica ederim.
+
+122
+00:26:10,036 --> 00:26:13,976
+Bu halloldu mu? Sormak istediğin soru var mı bununla alakalı olarak?
+
+123
+00:26:14,456 --> 00:26:29,596
+Hocam 0-109'u buldum. Hamza Hoca'ya yalvardım. Yani dedim bunun betanın sıfır olması. Hocam diyorum orada bir cümleyi kaçırdım ben herhalde. O ihmal edilebilir cümlesi sorunun devamını getirmedi. Alamadım Hamza Hoca'dan.
+
+124
+00:26:30,544 --> 00:26:38,943
+He şöyle, zenerin ucundan belli bir akım olacak ama ıb akımı biliyorsunuz çok az çekiyor şeyin üzerinden.
+
+125
+00:26:39,384 --> 00:26:45,403
+İşte o beta değeri olmayınca ihmal edilebilirmiş. Ben de diyorum ki ya diyorum bunu ihmal ettiğiniz zaman…
+
+126
+00:26:45,403 --> 00:26:47,344
+Beta değerine hiç ihtiyacın yok.
+
+127
+00:26:47,344 --> 00:26:55,844
+İşte transtörün ne anlamı kalıyor diye Hamza Hoca'ya da sordum ama demek ki biz ihmal etmişiz o cümleyi öyle oldu maalesef.
+
+128
+00:26:55,943 --> 00:26:58,403
+Ic-H'tir beta çarpı ıb'dir ya.
+
+129
+00:26:58,544 --> 00:27:18,744
+Beta çarpı IB. Buradaki beta 10 bile olsa çok düşük bir değer bile olsa ihmal edebilirsin bunu yani. Ama genellikle hani zaten beta belli bir kazanç katsayısı da olacağı için bir olmayacağı için muhakkak ihmal edilir şekilde hesaplamayı yapmak gerekiyor.
+
+130
+00:27:19,163 --> 00:27:20,004
+Aynen öyle hocam.
+
+131
+00:27:20,144 --> 00:27:20,884
+Teşekkür ederiz.
+
+132
+00:27:21,324 --> 00:27:24,244
+Rica ederim. Şimdi buradan gelelim.
+
+133
+00:27:25,236 --> 00:27:48,635
+Şimdi bu transistörü çözerken şöyle gelip ilk alacağımız loop şu şekilde. Önce ne demiş? I, B, I, C, V, C, V, E, V, C değerini bulmuş. Şöyle gelelim. Şuradaki şeyi yazalım. 10 volt neye eşitmiş arkadaşlar? 4.7 kilo ohm çarpı I, C değil mi?
+
+134
+00:27:49,332 --> 00:28:10,392
+Artı 250 kilo ohm çarpı IB artı, devam ediyorum buradan, artı VBE artı IE çarpı IE çarpı 1.2 kilo ohm.
+
+135
+00:28:16,627 --> 00:28:34,147
+Ic yerine ne yazıyorum burada? Beta çarpı Ib. Ie de Ic'ye eşit. Dolayısıyla beta çarpı Ib burada da geçerli. Ib'yi çekecek olursam arkadaşlar, genellikle hani geçerli dersler ıb eşittir.
+
+136
+00:28:44,307 --> 00:29:11,488
+250 kilo mu kastediyorum? Artı beta çarpı RC artı RE'ydi. Bu şey çözümüydü. Ne derler? Herhangi bir değer vermediğimiz. Benim buradaki RE değerim ne arkadaşlar? RE değerim 1.2 kilo ohm. RB değerim ne? 250 kilo ohm. RC değerim ne? 4.7K. Hepsini yerine koyduğum da şu şekilde.
+
+137
+00:29:11,983 --> 00:29:32,003
+10-0.7 bölü 250 kilo ohm artı 90 ile neyi çarpıyoruz? 90 ne benim betam? 90 çarpı 4.7k artı 1.2k 10 olmuş olur.
+
+138
+00:29:32,531 --> 00:29:47,672
+Buradan da biraz işlem yapmanız gerekecek. 9.3 volt bölü 781 kilo ohm. Bu da yaklaşık arkadaşlar 11.91 mikro amper.
+
+139
+00:29:48,771 --> 00:29:59,851
+I b'yi bulduk. Yani şeyi bulduk. Bundan bir adım sonrası ne olacak? Bir adım sonrasımız I c eşittir beta çarpı I b.
+
+140
+00:30:00,000 --> 00:30:25,879
+Buradan da Ic'ye çıkar. 90 katı bunun. 1.07 mA. Ic'yi de bulduk. Ib ve Ic'ye gittiler. Sıra geldi Vce'ye. Vce'yi nasıl biliyoruz? Artık buralardan akan akımları biliyoruz. Ic ve Ie birbirine eşit olduğu için. Onu da şöyle hesaplarız o zaman. 10 volt ne eşit orada?
+
+141
+00:30:26,516 --> 00:30:49,576
+10 volt eşittir. Ic çarpı 4.7k artı Vce artı ne demem lazım orada? Bir de Ie çarpı 1.2 kilo.
+
+142
+00:30:51,251 --> 00:30:58,651
+1.2 Kilo. Biraz dibine geldi böyle. Bunu baştan yazayım. Şöyle temiz bir şekilde.
+
+143
+00:31:00,651 --> 00:31:04,871
+Evet. Şöyle ikisinin de göründüğü bir yerde yapayım şöyle.
+
+144
+00:31:06,291 --> 00:31:09,991
+Tekrar bu hesabı yaptığımda 10 V eşittir.
+
+145
+00:31:10,483 --> 00:31:22,683
+4.7 çarpı Ic artı Vce artı 1.2 kilo ohm 1.2 kilo ohm çarpı Ie.
+
+146
+00:31:23,263 --> 00:31:28,403
+Ie ile Ic'ye birbirine eşit. Bu durumda ne diyebilirim ben burada?
+
+147
+00:31:28,403 --> 00:31:36,503
+Ic'yi yazacak olursam Vcc eksi Ic çarpı Rc.
+
+148
+00:31:37,203 --> 00:31:43,943
+Artı RE diyebilirim. Bundan sonra ne olacak? Bunların değinlerini koyalım.
+
+149
+00:31:43,943 --> 00:32:00,943
+O-1.07 mA. Buranın toplamı da arkadaşlar 4.7k artı 1.2k ne eder? 5.9k.
+
+150
+00:32:01,971 --> 00:32:10,312
+Ondan sonra burası da 10V. Burası çok kalın oldu ya. Şunu biraz boyutunu düşüreyim.
+
+151
+00:32:16,627 --> 00:32:18,387
+Tiknesi bir aldım şöyle.
+
+152
+00:32:19,268 --> 00:32:19,467
+Tamam.
+
+153
+00:32:20,528 --> 00:32:21,847
+Şöyle silelim şöyle.
+
+154
+00:32:25,971 --> 00:32:45,192
+Eşittir. 10 volt eksi 6.31. Şurada 1.07 mA. Ic ile şunların toplamını çarptı. 6.31. Buradan da 3.69 volt gelmiş oldu. Bu ne? Vce diyelim. Bu anlaşıldı mı arkadaşlar?
+
+155
+00:32:47,347 --> 00:33:01,995
+Vc değeri de gitti. Sırasıyla şunları soruyor. Vc değeri burası bakın. Vc değeri burası. Ve değeri ise burası. Şurası. Oranın ayrı ayrı şeylerini soruyor. Bu arada...
+
+156
+00:33:02,099 --> 00:33:23,160
+Şuradan gelen akım aslında I, C üssü akımı. Şuradaki akım aslında I, C akımı. Ama derste de görmüştük. I, B'den geçecek akım çok düşük olduğu için I, C üssü aslında eşittir. I, B artı I, C eşittir. I, B çok düşük olduğu için buradan gelen akımı şuna eşit kabul ediyoruz.
+
+157
+00:33:24,160 --> 00:33:28,160
+Şimdi V, E'yi çözebilmek için elimizde V, C, E değerimiz var.
+
+158
+00:33:28,723 --> 00:33:53,463
+VCE değerimiz nedir bizim? Şurayı yapayım, şurayı sileyim. Benim VCE değerim var. Eşittir. VCE eksi VE değerim var. Peki. Benim buradaki VCE değerim kaçtı? Demin buldum. 3.69. Bu oldu.
+
+159
+00:33:54,036 --> 00:33:57,236
+Peki ben burada başka neyi biliyorum arkadaşlar?
+
+160
+00:33:58,476 --> 00:34:01,615
+VC değerini nasıl bulabilirim?
+
+161
+00:34:02,296 --> 00:34:04,456
+Yani tam şuradaki değeri nasıl bulabilirim?
+
+162
+00:34:05,375 --> 00:34:06,536
+O da neye eşit?
+
+163
+00:34:06,536 --> 00:34:08,735
+10 volt, şöyle yapayım.
+
+164
+00:34:09,336 --> 00:34:13,775
+10 volttan sadece şuradaki direncin değerini çıkarmama bağlı.
+
+165
+00:34:14,096 --> 00:34:20,056
+Yani şu direncin üzerinde düşen gerilimi 10 volttan çıkardığım zaman işi halledeceğim.
+
+166
+00:34:20,431 --> 00:34:47,192
+Onu da nasıl yapabilirim? 10 volt eksi 4.7 k'nın üzerinde 4.7 k'nın üzerinde 4.7 k'yı çarparsanız yaklaşık olarak
+
+167
+00:34:47,536 --> 00:35:07,216
+Şunun sonucu 4.98'miş. Bir doğrulamasını yapalım bakalım. 4.7K, 4.7 çarpı, 4.7 çarpı, direncin değeri neydi?
+
+168
+00:35:07,956 --> 00:35:30,076
+4.7 çarpı IC ise 1.07 idi. 1.07 eşitti. 5.0'un eksi 10 dediğimiz zaman 4.97 çıkmış. 4.98 çekmiş. 97 çıkmış. 4.98 diyelim oraya. Burası 4.97 eksi RE.
+
+169
+00:35:34,867 --> 00:35:59,367
+Ve'yi bulalım artık. Burası 4.97'dir. Burası 3.69'dur. Ve neye eşit? Ve eşitti. 4.97-3.69. Bu da arkadaşlar yaklaşık olarak 1.2928 volta denk geliyor.
+
+170
+00:36:01,427 --> 00:36:19,387
+Böylece VE'yi de bulmuş olduk. VC'yi de bulmuş olduk arkadaşlar. Yaklaşık 40 dakikada gördüğünüz gibi açıklamalı olarak çizebildik. Çok zor bir sınav değildi bu arkadaşlar. Umarım sizler için de başarılı geçmiştir.
+
+171
+00:36:28,052 --> 00:36:35,072
+Özellikle şurada vize için verdiğimiz kısımda.
+
+172
+00:36:35,592 --> 00:36:41,412
+Sormak istediğiniz sorular var mı? Aklınıza takılan, çözmemi istediğiniz sorular var mı?
+
+173
+00:36:42,172 --> 00:36:43,192
+Açayım ben onu.
+
+174
+00:36:44,731 --> 00:36:50,192
+Zaten sınavdan önce büyük ihtimalle buna çalışmışsınızdır diye tahmin ediyorum.
+
+175
+00:36:51,192 --> 00:36:52,752
+Şuradaydı onlar.
+
+176
+00:36:58,387 --> 00:37:08,067
+Şöyle. Burada. Yine aynı şey açıldı. Farkım atlandırmıştım ben bunu. Pardon.
+
+177
+00:37:15,827 --> 00:37:32,068
+Soruların puan değerleri şu şekilde arkadaşlar. İlk soruya 20, ikinci soruya 30. Çünkü biraz ayrıntılı çözmek gerekiyor. Üçüncü soru 25, dördüncü soru 25 olacak şekilde ayırttık arkadaşlar.
+
+178
+00:37:34,788 --> 00:37:36,167
+3 ve 4, 25.
+
+179
+00:37:36,820 --> 00:37:41,180
+İkinci soru 30, birinci soru ise 20 puan olacak şeklinde.
+
+180
+00:37:42,039 --> 00:37:45,079
+Evet, burayla alakalı benim çözmemi istediniz.
+
+181
+00:37:45,800 --> 00:37:49,460
+Hamza Hoca ile çözdünüz değil mi? Bu konular sonuna kadar çözüldü.
+
+182
+00:37:50,900 --> 00:37:51,300
+Öyle değil mi?
+
+183
+00:37:53,340 --> 00:37:55,220
+Buradaki soruların hepsi çözüldü mü arkadaşlar?
+
+184
+00:38:00,596 --> 00:38:01,356
+[öğrenci]?
+
+185
+00:38:03,456 --> 00:38:09,716
+Hocam, hepsi değil galiba ama bayağı bir çözüldü. En altta birkaç tanesi kaldı sanırım.
+
+186
+00:38:10,256 --> 00:38:14,416
+Anladım. Ama onların çözümü de var zaten. Sizlere bunları dağıtmıştık.
+
+187
+00:38:15,656 --> 00:38:20,696
+Canlı ders ortamın şeyde var herhalde. Bakalım online'de var mı bu?
+
+188
+00:38:21,556 --> 00:38:25,416
+Yine bunlara ikinci sınavda da çalışacağınızda arkadaşlar...
+
+189
+00:38:25,492 --> 00:38:35,992
+Muhakkak ki bunları tekrar bir gözden geçirin diyorum ben size. Bakalım ders duvarında var mı? Evet, elektronik devreler sorular 1 olarak var arkadaşlar.
+
+190
+00:38:37,907 --> 00:38:57,168
+Evet, benim bu haftalık anlatacaklarım bunlar arkadaşlar. Sizlerin sormak istediği sorular var mı? Şimdi öbür tarafta da sorular soruluyormuş. Size benim anlattığım transistörlerle alakalı bir kısım vardı. Şu kısım, onu bir göstereyim.
+
+191
+00:38:59,268 --> 00:39:03,548
+7'de zannedersem, 7 veya 8'de olması lazım.
+
+192
+00:39:06,516 --> 00:39:20,496
+Sekizdeymiş zannedersem. Öbür sınıfta sekiz anlatılmadığı için, yani şu kısım ben anlatmıştım hatırlarsanız. Sırasıyla değişik.
+
+193
+00:39:20,847 --> 00:39:33,707
+Yapılarda Voltaj Divider yapısı, Base Emeterler, çözümleri sayı vermeden yaptığım kısmı anlatıyorum. En son Switch'inki de anlatmıştım hatırlarsanız.
+
+194
+00:39:33,707 --> 00:39:44,487
+Farklı transistör yapılarının çözümlerini anlatmıştım ki şu son sorumuz da aslında bizim anlattığım kısımdan geldi değil mi?
+
+195
+00:39:46,900 --> 00:39:54,580
+Şu son soru da aynı benim derste anlattığım soruydu. Şu soruydu o da, onu da göstereyim.
+
+196
+00:39:54,580 --> 00:40:03,040
+Baktığımızda, o sorusunu nerede yapmıştık?
+
+197
+00:40:11,251 --> 00:40:29,811
+Evet, şurada. DC Bias with Voltage Feedback. Bu soru soruldu şimdi size arkadaşlar. Sınavda da bu soru oldu. Çözümü de burada var aynı şekilde. Buna benzer bir soru da soruların içerisinde vardı zannedersem.
+
+198
+00:40:29,811 --> 00:40:36,071
+Bakalım. Elektronik Devre sorular. Bakalım.
+
+199
+00:40:37,588 --> 00:40:40,927
+Evet, burada da varmış. Şurada var gördüğünüz gibi.
+
+200
+00:40:44,980 --> 00:41:04,920
+Burada sadece ekstradan şurada direnç eklenmemiş. Re direnci eklenmemiş. Burada da re direnci eklenmiş hali var. Bakın. Demin sınavda çıkan soru burada çözülmüş hepsi. Dolayısıyla buna çalışan rahatlıkla iyi bir not alabilir diye düşünüyorum. Sizlerin sorusu var mı?
+
+201
+00:41:04,920 --> 00:41:07,039
+Gençler.
+
+202
+00:41:10,260 --> 00:41:12,960
+Gençler derken ben giremiyor muyum aşağı?
+
+203
+00:41:13,740 --> 00:41:15,480
+Sınıfta olan herkes genç.
+
+204
+00:41:15,800 --> 00:41:16,320
+Ben de daha iyi.
+
+205
+00:41:16,320 --> 00:41:17,920
+Eyvallah hocam, çok teşekkür ediyorum.
+
+206
+00:41:18,400 --> 00:41:19,539
+Ben de daha iyi olmuyor.
+
+207
+00:41:20,200 --> 00:41:23,599
+Sadece kendi adıma şu kadarını söylüyorum, ben sınavla alakalı.
+
+208
+00:41:24,119 --> 00:41:28,840
+Hocam, diyot mantığını ve transitor mantığını anlamış olmam bile bana keyif verdi.
+
+209
+00:41:29,300 --> 00:41:46,660
+Belki tam öyle, tam soruları böyle. Ama o devreye bakış açısını bilebilmem. O diyotun açma-kapaması, transistörün, işte base emitteri, konnekti çok keyif verdi. Sınav da öyle çok kasıntı bir sınav değil diye çok teşekkür ediyorum. Ben kendi adıma.
+
+210
+00:41:47,040 --> 00:41:52,500
+Rica ederim. Sen dedin ya herkes genç mi diye. Öğrenen herkes genç bence. Yaşı kaç olursa olsun.
+
+211
+00:41:52,520 --> 00:41:56,780
+Aynen öyle düşünüyorum hocam. O yüzden her geçen gün daha bir genç yaşıyorum gibi geliyor.
+
+212
+00:41:57,300 --> 00:42:04,860
+Böyle duymak ne güzel. Genç arkadaşlar da örnek alır senden de yaşça daha genç olanlar değil mi inşallah.
+
+213
+00:42:05,540 --> 00:42:06,380
+Eyvallah hocam.
+
+214
+00:42:07,400 --> 00:42:14,320
+O zaman hepinize arkadaşlar iyi bayramlar diyorum veya şu anda tam kapamadan şu kısımları ben anlamamıştım.
+
+215
+00:42:14,320 --> 00:42:20,520
+Hocam şu konuyu tekrar eder misiniz diyebileceğiniz bir şey varsa onlarının da üstlerinden geçelim.
+
+216
+00:42:20,880 --> 00:42:39,460
+Eğer yoksa şayet, hepinize iyi bayramlar dileyelim arkadaşlar. Güzel dinlenin. En azından yarı dönem ortasında, bağrım başlamasıyla güzel bir zaman geçirin. En azından relax bir halde yeni döneme tekrar ikinci dönemin ikinci kısmına başlayalım bakalım.
+
+217
+00:42:39,460 --> 00:42:45,359
+Hocam kesinlik olsun diye size de iyi bayramlar. Önümüzdeki hafta Perşembe, Cuma'yı hep online yapıyoruz değil mi hocam?
+
+218
+00:42:45,748 --> 00:43:00,268
+Aynen, aynen. Yani önümüzdeki hafta eğer planınız varsa uzak bir yerden de olsan, internet bağımsızla planlarınızı değiştirmenize gerek yok. Bütün dersler, yüksek lisans, lisans veya akşam dersler hepsi online olacak arkadaşlar.
+
+219
+00:43:00,548 --> 00:43:02,128
+Çok teşekkür ediyoruz hocam. Sağ olun.
+
+220
+00:43:02,228 --> 00:43:08,288
+Rica ederim. Görüşmek üzere. Kendinize çok iyi bakın. Hepinize iyi günler, iyi bayramlar. Görüşmek üzere.
