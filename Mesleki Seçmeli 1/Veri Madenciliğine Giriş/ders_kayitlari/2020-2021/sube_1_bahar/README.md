@@ -7,6 +7,7 @@
 * **Ders:** Veri Madenciliğine Giriş
 * **Hoca:** Songül Varlı
 * **Dönem:** Bahar
+* **Şube:** BLM4800 - 1
 * **Akademik Yıl:** 2020-2021
 
 Bu dizin, ilgili ders kayıtlarının altyazı özetlerini, çalışma notlarını ve PDF kaynaklarını içermektedir.

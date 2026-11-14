@@ -7,6 +7,7 @@
 * **Ders:** Alt Seviye Programlama
 * **Hoca:** Dr. Furkan Çakmak
 * **Dönem:** Güz
+* **Şube:** BLM2021 - 2
 * **Akademik Yıl:** 2020-2021
 
 Bu dizin, ilgili ders kayıtlarının altyazı özetlerini, çalışma notlarını ve PDF kaynaklarını içermektedir.

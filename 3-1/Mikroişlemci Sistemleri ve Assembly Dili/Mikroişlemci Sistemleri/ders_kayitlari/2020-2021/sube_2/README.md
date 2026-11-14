@@ -7,6 +7,7 @@
 - **Ders Adı:** Mikroişlemci Sistemleri
 - **Dersi Veren Akademisyen:** Hamza Osman İlhan
 - **Dönem:** Güz
+- **Şube:** BLM3031 - 2
 - **Akademik Yıl:** 2020-2021
 
 ## Müfredat ve Belge Dizini

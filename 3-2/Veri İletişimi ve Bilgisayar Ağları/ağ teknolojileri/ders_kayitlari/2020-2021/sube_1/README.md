@@ -6,6 +6,7 @@
 * **Ders:** Ağ Teknolojileri
 * **Hoca:** Ali Gökhan Yavuz
 * **Dönem:** Bahar
+* **Şube:** BLM3022 - 1
 * **Akademik Yıl:** 2020-2021
 
 Bu dizin, ilgili ders kayıtlarının altyazı özetlerini, çalışma notlarını ve PDF kaynaklarını içermektedir.

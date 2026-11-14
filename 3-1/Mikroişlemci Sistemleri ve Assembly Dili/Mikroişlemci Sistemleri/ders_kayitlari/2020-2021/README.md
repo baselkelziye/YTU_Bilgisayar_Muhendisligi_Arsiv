@@ -4,5 +4,5 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
-| — | Güz | — | [sube_bilinmeyen/](sube_bilinmeyen/) |
 | 1 | Güz | Dr. Erkan Uslu | [sube_1/](sube_1/) |
+| 2 | Güz | — | [sube_2/](sube_2/) |

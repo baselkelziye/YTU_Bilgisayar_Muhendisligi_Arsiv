@@ -6,6 +6,7 @@
 * **Ders:** Veri Yapıları ve Algoritmalar
 * **Hoca:** Dr. Göksel Biricik
 * **Dönem:** Güz
+* **Şube:** BLM2512 - 1
 * **Akademik Yıl:** 2020-2021
 * **İlk Uygulama/Lab Kaydı:** 7 Ekim 2020 Çarşamba
 * **İlk Teorik Ders Kaydı:** 8 Ekim 2020 Perşembe
