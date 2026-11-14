@@ -1,0 +1,3087 @@
+1
+00:02:57,491 --> 00:02:59,251
+Everybody, can you hear me?
+
+2
+00:03:23,379 --> 00:03:25,259
+Evet, tamam, teşekkür ederim.
+
+3
+00:03:29,780 --> 00:03:36,460
+So today, let's continue with the subjects we have learned before.
+
+4
+00:03:38,460 --> 00:03:46,620
+Before midterms, we have been looking at functions of continuous random variables.
+
+5
+00:03:48,620 --> 00:03:49,060
+And
+
+6
+00:03:54,099 --> 00:04:06,099
+If x is a continuous random variable and y is some function g of x, then y itself is a random variable.
+
+7
+00:04:07,099 --> 00:04:18,100
+And we can find the cumulative distribution function of y, and from then on we can find everything about y.
+
+8
+00:04:21,043 --> 00:04:27,043
+We drew a general framework to approach this problem.
+
+9
+00:04:27,043 --> 00:04:47,043
+So we said that first we should try to understand the range of y, and range of y is that function g of x such that the density of original is greater than zero.
+
+10
+00:04:48,851 --> 00:05:00,139
+Ve bu y'un y'
+
+11
+00:05:05,684 --> 00:05:13,124
+Cumulative distribution of any random variable is defined as probability of that random variable
+
+12
+00:05:15,124 --> 00:05:18,484
+having values less than or equal to that y.
+
+13
+00:05:20,084 --> 00:05:31,044
+And once we find the cumulative distribution, we can find its probability density function by taking the derivative.
+
+14
+00:05:31,827 --> 00:05:34,227
+O da kümülatif tüslü bir şey.
+
+15
+00:05:37,492 --> 00:05:49,492
+We did an example of that using this uniform distribution and y was it to the x.
+
+16
+00:05:52,492 --> 00:06:04,012
+Now, this idea can be formalized using this thing called the method of
+
+17
+00:06:04,192 --> 00:06:05,552
+Transformations.
+
+18
+00:06:07,552 --> 00:06:09,172
+Let's look at that.
+
+19
+00:06:13,012 --> 00:06:19,612
+The method of transformations.
+
+20
+00:06:27,283 --> 00:06:42,644
+ve now, you can read the logic of this in the book, in Pişrunik's book.
+
+21
+00:06:50,196 --> 00:06:55,396
+But the theorem, the final method says that
+
+22
+00:07:02,067 --> 00:07:05,587
+Assume that you have a function.
+
+23
+00:07:11,923 --> 00:07:15,644
+You have some function of x.
+
+24
+00:07:19,636 --> 00:07:21,876
+ve somehow this is like a function.
+
+25
+00:07:24,036 --> 00:07:26,115
+And this is your G of x.
+
+26
+00:07:30,867 --> 00:07:46,867
+Now, you can divide this range, this x into ranges where the function is monotonically increasing or monotonically decreasing.
+
+27
+00:07:46,867 --> 00:07:54,507
+So if you think about it, in this part,
+
+28
+00:07:56,596 --> 00:07:59,596
+G is monotonically increasing.
+
+29
+00:08:10,324 --> 00:08:16,764
+meaning, monotonically meaning, it always increases on this part.
+
+30
+00:08:19,603 --> 00:08:33,884
+And similarly, if you think about this range, the function g of x is monotonically decreasing.
+
+31
+00:08:45,364 --> 00:08:50,644
+And finally, for this function, this range is again monotonically
+
+32
+00:08:55,124 --> 00:08:56,124
+İntro
+
+33
+00:09:00,052 --> 00:09:19,112
+And also, we see that in all these three parts, g is continuous and differentiable. So in all of these parts, the derivative of g of x exists.
+
+34
+00:09:23,635 --> 00:09:24,635
+G
+
+35
+00:09:24,635 --> 00:09:25,635
+Derawattı
+
+36
+00:09:25,635 --> 00:09:26,635
+X
+
+37
+00:09:26,635 --> 00:09:26,827
+Exist
+
+38
+00:09:33,299 --> 00:09:43,419
+So, if you have this kind of situation, now we can give numbers to these ranges.
+
+39
+00:09:43,419 --> 00:09:47,220
+For example, let's say this is range 1.
+
+40
+00:09:48,000 --> 00:09:50,720
+Okay, this is range 1.
+
+41
+00:09:55,124 --> 00:09:57,124
+Bu bölümde bu bölümde de Rang2.
+
+42
+00:10:02,899 --> 00:10:06,220
+ve bu partijden, range 3.
+
+43
+00:10:08,720 --> 00:10:09,220
+Now,
+
+44
+00:10:13,812 --> 00:10:18,491
+The theorem for the method of transformations says that
+
+45
+00:10:23,860 --> 00:10:25,100
+Bu
+
+46
+00:10:36,371 --> 00:10:47,091
+Theorem of Method of Transformations
+
+47
+00:10:50,836 --> 00:10:51,836
+Sesi de,
+
+48
+00:10:58,899 --> 00:11:18,099
+Let's say let x be continuous, random variable, and x has range r of x.
+
+49
+00:11:35,412 --> 00:11:36,396
+Now,
+
+50
+00:11:40,436 --> 00:11:41,436
+suppose,
+
+51
+00:11:43,676 --> 00:11:46,196
+we can partition
+
+52
+00:11:53,299 --> 00:12:00,299
+bu
+
+53
+00:12:15,283 --> 00:12:16,283
+such that
+
+54
+00:12:19,827 --> 00:12:21,827
+GFX
+
+55
+00:12:23,507 --> 00:12:26,067
+is strictly
+
+56
+00:12:29,759 --> 00:12:37,163
+GFX
+
+57
+00:12:29,524 --> 00:12:30,524
+Monoton
+
+58
+00:12:30,524 --> 00:12:34,403
+And
+
+59
+00:12:34,403 --> 00:12:36,763
+Differentiable
+
+60
+00:12:43,187 --> 00:12:46,187
+GFX
+
+61
+00:12:43,091 --> 00:12:44,779
+On each partition.
+
+62
+00:12:55,039 --> 00:12:57,387
+GFX
+
+63
+00:12:54,131 --> 00:12:56,811
+Let me add some pages.
+
+64
+00:13:06,740 --> 00:13:11,740
+Ve bu image.
+
+65
+00:13:11,740 --> 00:13:16,740
+Bu bir 3D monotonik.
+
+66
+00:13:16,740 --> 00:13:22,740
+Bu bir monotonik.
+
+67
+00:13:22,740 --> 00:13:28,740
+Monotonik.
+
+68
+00:13:28,740 --> 00:13:30,740
+Ve g of x.
+
+69
+00:13:34,836 --> 00:13:35,836
+Dön.
+
+70
+00:13:39,251 --> 00:14:06,731
+We can write the probability dense the function directly. Probable dense the function of y is, we will have a summation from i to n, and n here is this range, number of these ranges. So for this example we have,
+
+71
+00:14:07,251 --> 00:14:11,251
+n equals to three ranges.
+
+72
+00:14:11,251 --> 00:14:12,251
+Okay.
+
+73
+00:14:12,251 --> 00:14:17,251
+Or, instead of range, let me say partitions.
+
+74
+00:14:32,148 --> 00:14:39,028
+partitions. So we have n equals three partitions for this example. So i will be from one to n.
+
+75
+00:14:40,347 --> 00:14:41,748
+So for each partition,
+
+76
+00:14:43,908 --> 00:14:46,548
+we will find
+
+77
+00:14:52,596 --> 00:14:55,975
+We will use density of x.
+
+78
+00:15:02,932 --> 00:15:11,091
+it's and give it's eye to eat and excited will be the inverse of function we will see what
+
+79
+00:15:12,692 --> 00:15:21,412
+x is just in a minute just in a minute and we will divide that to the absolute value of
+
+80
+00:15:26,611 --> 00:15:27,412
+derivative of
+
+81
+00:15:32,211 --> 00:15:49,091
+g of x at x i. This is also equal to the same summation and the same f of x, so the same derivative.
+
+82
+00:15:54,548 --> 00:16:19,307
+So, this absolute value, divided by absolute value of G of x's derivative is the same as taking the derivative of x i with respect to d y.
+
+83
+00:16:21,427 --> 00:16:39,115
+Bu, bu, bu, x1, x2, x1, x2, x1, x1, x2, x1, x1, x1, x2, x1, x
+
+84
+00:16:42,995 --> 00:16:43,995
+2
+
+85
+00:16:47,124 --> 00:16:50,804
+g of x equals to y.
+
+86
+00:16:54,580 --> 00:17:21,220
+So, let's try to look at an example for this. This is kind of, this may be kind of confusing at first. So, let's look at this example. So, let x be, let x be the continuous
+
+87
+00:17:21,875 --> 00:17:22,875
+variable
+
+88
+00:17:27,827 --> 00:17:33,148
+random variable, with probability density function.
+
+89
+00:17:44,243 --> 00:18:00,503
+f of x is equal to 1 over 2 pi's square root e to the minus x square divided by 2.
+
+90
+00:18:04,211 --> 00:18:12,731
+for all x in r real numbers.
+
+91
+00:18:12,731 --> 00:18:30,011
+And let let random variable y be square of the random variable x.
+
+92
+00:18:31,284 --> 00:18:34,956
+Şimdi soru
+
+93
+00:18:40,756 --> 00:19:07,052
+Probabilirsiniz, y'e de y'e
+
+94
+00:19:10,675 --> 00:19:16,675
+find the partitions of this function.
+
+95
+00:19:16,675 --> 00:19:22,675
+So, y is x squared, right?
+
+96
+00:19:22,675 --> 00:19:27,675
+So, we will solve this.
+
+97
+00:19:35,059 --> 00:19:45,960
+So, we see that y, which is equal to g of x is x squared here.
+
+98
+00:19:49,460 --> 00:19:55,720
+So, if you draw x squared, how is it?
+
+99
+00:20:13,332 --> 00:20:26,472
+So, it increases from 0 to positive infinity and it decreases from negative infinity to 0.
+
+100
+00:20:28,972 --> 00:20:38,032
+So, first of all, we see that we have two partitions here, right?
+
+101
+00:20:38,032 --> 00:20:39,403
+So, we have...
+
+102
+00:20:41,428 --> 00:20:44,208
+ve iki parçası.
+
+103
+00:20:51,092 --> 00:20:52,572
+ve now
+
+104
+00:21:02,003 --> 00:21:03,723
+So, what are Xi?
+
+105
+00:21:09,332 --> 00:21:26,972
+x i are real solutions to the g of x equals to y. So let's say this is partition one from minus infinity to zero is partition one.
+
+106
+00:21:31,827 --> 00:21:35,788
+ve 0'e de 0'
+
+107
+00:21:39,539 --> 00:21:53,679
+Now, x1 is the solution to g of x equals to y on partition one.
+
+108
+00:21:57,619 --> 00:22:01,619
+X1
+
+109
+00:22:08,819 --> 00:22:23,579
+is solution to g of x equals to y.
+
+110
+00:22:30,675 --> 00:22:40,675
+On this range, for any given y, let's say this is your y.
+
+111
+00:22:44,276 --> 00:22:49,956
+G of y, for any given G of y, how can you find corresponding y, right?
+
+112
+00:22:55,284 --> 00:23:09,364
+We will take the, so g of y, we will take the square root, right, and we will put a negative in front of it, right, so x1,
+
+113
+00:23:16,627 --> 00:23:22,627
+This is lowercase x, x1 is the...
+
+114
+00:23:30,259 --> 00:23:35,579
+negative of y, negative function of y,
+
+115
+00:23:41,107 --> 00:24:00,395
+Ve bu, bu, y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e
+
+116
+00:24:04,243 --> 00:24:09,284
+ve on partition one,
+
+117
+00:24:12,884 --> 00:24:22,243
+these values, they have a negative, so we will have a negative here, right? So negative, and sorry, this should be y.
+
+118
+00:24:28,339 --> 00:24:35,739
+So, for any given, and this should be x, I'm kind of,
+
+119
+00:24:39,284 --> 00:24:58,984
+Messing up x and y here and there. So we are talking about g of x, which is y. Okay. So any, for any y, we want to find the corresponding x1, right?
+
+120
+00:25:03,124 --> 00:25:06,124
+ve en a way x1 is a function like this.
+
+121
+00:25:07,443 --> 00:25:13,184
+So x1 is solution to g of x equals to y in partition one.
+
+122
+00:25:18,548 --> 00:25:45,387
+Similarly, x2 is solution to g of x, 1 equal to y, where in partition 2. So x2 or inverse of y, inverse of g,
+
+123
+00:25:46,003 --> 00:25:49,963
+y is, so in partition two,
+
+124
+00:25:54,844 --> 00:25:56,324
+for any given y,
+
+125
+00:25:57,523 --> 00:26:06,243
+you will have a corresponding x2, right? And how can you calculate that x2? You use the inverse function,
+
+126
+00:26:07,603 --> 00:26:11,163
+and inverse function in this case is square root of x.
+
+127
+00:26:12,788 --> 00:26:20,708
+So we have square root of y and we don't need a negative here because the values on this partition are positive.
+
+128
+00:26:21,768 --> 00:26:29,107
+So we found x1 and x2 on this xi's are okay.
+
+129
+00:26:29,367 --> 00:26:30,428
+We have xi's.
+
+130
+00:26:31,048 --> 00:26:32,948
+We have this function.
+
+131
+00:26:40,019 --> 00:26:50,779
+We either need to take the derivative of x, 1 and 2 with respect to y, or we can use the derivative of g of x with respect to x.
+
+132
+00:26:51,460 --> 00:26:57,579
+So we have two alternative years. So in this case, let's use this one.
+
+133
+00:27:03,316 --> 00:27:08,196
+So, we are preparing the solution.
+
+134
+00:27:10,276 --> 00:27:15,476
+G of x is x squared.
+
+135
+00:27:16,675 --> 00:27:16,956
+Then,
+
+136
+00:27:19,076 --> 00:27:20,395
+it's
+
+137
+00:27:27,508 --> 00:27:33,508
+İçin derivitif is...
+
+138
+00:27:34,508 --> 00:27:37,508
+Ve derivitif is...
+
+139
+00:27:37,508 --> 00:27:41,388
+X'e sadece 2x'e.
+
+140
+00:27:48,115 --> 00:27:52,355
+So, now let's try to write this equation here.
+
+141
+00:28:00,915 --> 00:28:12,915
+F of y is equal to sum over from i equal to 1 to 2 because we have two partitions.
+
+142
+00:28:15,795 --> 00:28:27,915
+F of x, x i divided by absolute value of g of x i.
+
+143
+00:28:31,667 --> 00:28:42,647
+And for i equals to 1, we have, what was the original f of x?
+
+144
+00:28:43,167 --> 00:28:44,707
+And what was the original pdf?
+
+145
+00:28:45,707 --> 00:28:51,548
+1 over 2 pi e to the minus x squared over 2.
+
+146
+00:28:51,548 --> 00:28:54,268
+So 1 over.
+
+147
+00:28:55,988 --> 00:29:18,407
+Let me write it down. Probably will not have enough space there. So this is 1 over 2 pi in square root e to do minus x squared divided by 2, right?
+
+148
+00:29:23,092 --> 00:29:32,212
+So now, instead of x, I will rule, I am saying this will be x1 square, right?
+
+149
+00:29:33,992 --> 00:29:38,332
+And g of x is 2x.
+
+150
+00:29:39,252 --> 00:29:46,792
+So we will divide this by 2x1.
+
+151
+00:29:46,792 --> 00:29:48,792
+And we will take a...
+
+152
+00:29:49,268 --> 00:30:16,667
+absolute value, you'll take its absolute, right? Plus, plus now for the partition two, we have similarly, one over two pi e to the minus x two square divided by two. We will divide that, divide that with two to the x two.
+
+153
+00:30:17,268 --> 00:30:18,268
+Right?
+
+154
+00:30:18,268 --> 00:30:25,648
+Now, let's see what those are actually.
+
+155
+00:30:25,648 --> 00:30:38,608
+For x1, we had minus square root of y, so we have 1 over 2 pi.
+
+156
+00:30:38,608 --> 00:30:43,268
+Let me take that out of the division.
+
+157
+00:30:44,500 --> 00:30:46,124
+ve
+
+158
+00:30:53,587 --> 00:31:21,307
+e to the minus x1 is minus square root of y, okay? And we will take a derivative and we will divide by 2, okay? And then we will divide that by absolute value of 2.
+
+159
+00:31:22,612 --> 00:31:28,251
+X1 is again, minus square root of y.
+
+160
+00:31:28,251 --> 00:31:30,251
+Okay.
+
+161
+00:31:35,188 --> 00:31:41,908
+We will write the next part similarly, 1 over 2Pi.
+
+162
+00:31:46,036 --> 00:31:57,316
+e to the minus square root of y's square divided by two.
+
+163
+00:32:01,556 --> 00:32:04,476
+Absolute value 2.
+
+164
+00:32:06,355 --> 00:32:07,395
+And this time,
+
+165
+00:32:10,355 --> 00:32:12,436
+we don't need to put a parenthesis
+
+166
+00:32:15,556 --> 00:32:16,996
+square root of y.
+
+167
+00:32:29,811 --> 00:32:31,811
+Do I have a mistake here?
+
+168
+00:32:54,003 --> 00:32:54,563
+Now,
+
+169
+00:32:58,836 --> 00:33:01,956
+From here is,
+
+170
+00:33:05,203 --> 00:33:08,083
+We have 1 over 2 pi.
+
+171
+00:33:10,183 --> 00:33:13,043
+And this absolute value here,
+
+172
+00:33:14,803 --> 00:33:17,463
+this is negative 2 y.
+
+173
+00:33:18,043 --> 00:33:20,703
+And this is from partition 1.
+
+174
+00:33:20,763 --> 00:33:22,563
+This comes from partition 1, right?
+
+175
+00:33:22,563 --> 00:33:25,143
+And in the partition 1,
+
+176
+00:33:35,700 --> 00:33:39,299
+The absolute value will make this positive.
+
+177
+00:33:48,884 --> 00:33:49,884
+So,
+
+178
+00:33:54,003 --> 00:34:11,684
+We have positive y squared up here, e to the minus y, right? Positive square root of y squared is y, and we have divided by 2 here.
+
+179
+00:34:14,684 --> 00:34:15,963
+And here,
+
+180
+00:34:21,556 --> 00:34:25,556
+2 sq. rüt y.
+
+181
+00:34:29,108 --> 00:34:30,108
+plus
+
+182
+00:34:33,268 --> 00:34:47,347
+Similarly, here we have this square, so we have e to the minus y, divided by 2, divided by 2 square root of y.
+
+183
+00:34:49,547 --> 00:34:57,228
+So, we came to the same, so both terms are same now, we can just sum them up.
+
+184
+00:34:57,876 --> 00:35:02,376
+ve sum, we have two of these terms, two simplify.
+
+185
+00:35:02,376 --> 00:35:17,076
+So, we can say 2 pi y inside the square e to the minus y over 2.
+
+186
+00:35:17,076 --> 00:35:23,076
+And this is for
+
+187
+00:35:24,596 --> 00:35:29,556
+y in the range 0 to infinity.
+
+188
+00:35:32,435 --> 00:35:37,315
+So you need to make sure what the range of y is.
+
+189
+00:35:44,083 --> 00:35:45,083
+Okay.
+
+190
+00:35:46,884 --> 00:35:54,083
+So make sure you check out range of yi, okay?
+
+191
+00:35:57,940 --> 00:36:01,867
+Bu, bu
+
+192
+00:36:13,556 --> 00:36:37,556
+It may be a little like, it may look like a long method, but if we didn't use it, we needed to think about this function like we did here, up here.
+
+193
+00:36:41,331 --> 00:36:56,032
+So, depending on the complexity of the function we want to find PDF, it may be quite complex.
+
+194
+00:36:56,032 --> 00:37:01,971
+So, method of transformation gives us a nice method.
+
+195
+00:37:03,171 --> 00:37:04,171
+If you have...
+
+196
+00:37:04,788 --> 00:37:11,467
+Geofax'ın bu kadar yüksekliğe yüksekliğe yüksekliğe.
+
+197
+00:37:14,739 --> 00:37:16,739
+Any questions so far?
+
+198
+00:37:24,340 --> 00:37:33,779
+No, okay. So, I will move on to next section.
+
+199
+00:37:39,619 --> 00:37:42,659
+We will look at some special distributions.
+
+200
+00:37:57,523 --> 00:37:58,891
+ve bu
+
+201
+00:38:04,179 --> 00:38:13,099
+So, let's say this is prop 3, special…
+
+202
+00:38:17,331 --> 00:38:19,331
+Continuous Random Variables.
+
+203
+00:38:24,244 --> 00:38:26,244
+Let me add some pages here.
+
+204
+00:38:42,708 --> 00:38:46,708
+Spatial distributions are
+
+205
+00:38:57,907 --> 00:39:01,907
+kontinu sıra anlamı netmişseydir.
+
+206
+00:39:10,963 --> 00:39:16,784
+These are some distributions that you will see often.
+
+207
+00:39:17,784 --> 00:39:19,663
+So they are kind of important.
+
+208
+00:39:19,903 --> 00:39:24,384
+So they have these nice names and their properties are calculated.
+
+209
+00:39:27,123 --> 00:39:31,384
+So first of all, we will see uniform distribution.
+
+210
+00:39:43,155 --> 00:39:46,036
+So, I will just directly give the definition.
+
+211
+00:39:49,076 --> 00:39:53,235
+So, we say that a continuous random variable x,
+
+212
+00:39:56,235 --> 00:39:59,475
+continuous random variable x
+
+213
+00:40:01,475 --> 00:40:02,115
+is
+
+214
+00:40:04,835 --> 00:40:05,835
+uniform.
+
+215
+00:40:10,547 --> 00:40:16,867
+or continuous random variable is said to have a, so it has.
+
+216
+00:40:27,155 --> 00:40:36,155
+So, a continuous random variable x has a uniform distribution.
+
+217
+00:40:42,260 --> 00:40:43,659
+[öğrenci]
+
+218
+00:40:48,884 --> 00:40:53,003
+over the range A, B.
+
+219
+00:40:59,668 --> 00:41:09,668
+If, it's probable to dense to function is like this. If x.
+
+220
+00:41:13,588 --> 00:41:14,588
+Bayes,
+
+221
+00:41:17,907 --> 00:41:25,587
+1 over b minus a, if x is,
+
+222
+00:41:30,132 --> 00:41:36,132
+between a and b, 0 otherwise.
+
+223
+00:41:47,092 --> 00:41:51,980
+ve say that,
+
+224
+00:41:57,844 --> 00:41:59,755
+Orada, be right, let's say.
+
+225
+00:42:03,572 --> 00:42:06,572
+ve show this as, or we write.
+
+226
+00:42:09,811 --> 00:42:14,251
+x is distributed by uniform
+
+227
+00:42:17,780 --> 00:42:19,780
+A, B.
+
+228
+00:42:21,780 --> 00:42:29,780
+So, x has the distribution, uniform distribution, with parameters A and B.
+
+229
+00:42:29,780 --> 00:42:36,780
+And this graph is quite simple actually.
+
+230
+00:42:36,780 --> 00:42:44,780
+So, this variable has
+
+231
+00:42:46,612 --> 00:42:58,612
+is or takes values between a and b okay and the density
+
+232
+00:43:03,443 --> 00:43:06,764
+is constant meaning uniform.
+
+233
+00:43:08,284 --> 00:43:11,364
+The uniform comes from there it's always the same.
+
+234
+00:43:12,724 --> 00:43:13,123
+Okay.
+
+235
+00:43:15,364 --> 00:43:18,963
+And everywhere else, the dance is just zero.
+
+236
+00:43:24,628 --> 00:43:35,868
+ve, if you think about it, it's easy to find what value here is because this area should be 1.
+
+237
+00:43:37,988 --> 00:43:50,868
+The area under the curve must be 1 because the probabilities integrate to 1 and that value is 1 over b minus a.
+
+238
+00:43:57,588 --> 00:44:07,588
+ve normal dağılımı ile
+
+239
+00:44:07,588 --> 00:44:24,588
+ve
+
+240
+00:44:26,356 --> 00:44:54,188
+ve, you should kind of find yourself, find these values yourself later. Okay? It's very easy. So these are like some exercises for you. So, and we also have seen uniform distribution previously, so I will not spend any more time on this.
+
+241
+00:44:55,764 --> 00:45:03,660
+So, let's move to another spatial distribution. We will look at exponential distribution.
+
+242
+00:45:15,956 --> 00:45:20,956
+So, again, this is widely used distribution and this is used...
+
+243
+00:45:24,947 --> 00:45:52,427
+Time for time elapsed with be between events so used for time. Okay, time between events. So if you want to model waiting times, et cetera, you may use exponential distribution. And let's directly look at the definition.
+
+244
+00:45:58,675 --> 00:46:12,076
+So, a continuous random variable, x, has an exponential distribution.
+
+245
+00:46:19,603 --> 00:46:20,603
+Dissiliyiyon,
+
+246
+00:46:22,603 --> 00:46:23,203
+Ve
+
+247
+00:46:25,243 --> 00:46:26,643
+Parameter Lambda
+
+248
+00:46:31,380 --> 00:46:36,340
+0. So it has a positive lambda parameter.
+
+249
+00:46:38,740 --> 00:46:40,260
+Shown as,
+
+250
+00:46:42,740 --> 00:46:50,340
+so we will we will show this as x is distributed by exponential.
+
+251
+00:46:57,652 --> 00:47:02,532
+Parameter is Lambda, so we will show it like that.
+
+252
+00:47:05,971 --> 00:47:06,532
+If
+
+253
+00:47:09,172 --> 00:47:11,172
+Its probability density is
+
+254
+00:47:20,755 --> 00:47:35,395
+Lambda times e to the minus Lambda x for x larger than zero, zero otherwise.
+
+255
+00:47:40,148 --> 00:47:44,648
+Okay, so basically it's probability density is like this.
+
+256
+00:47:46,648 --> 00:47:49,248
+And its graph
+
+257
+00:47:50,847 --> 00:47:51,847
+is
+
+258
+00:47:54,948 --> 00:47:58,347
+notice that we have this e to the negative
+
+259
+00:47:59,547 --> 00:48:00,547
+e to the negative
+
+260
+00:48:04,724 --> 00:48:27,984
+E to the negative x there. So when x goes to infinity, this value will go to zero. And when x goes to zero, this will be lambda times e to the minus lambda. Sorry, this will be lambda.
+
+261
+00:48:31,764 --> 00:48:34,684
+Let's try to see what this does.
+
+262
+00:48:35,724 --> 00:48:43,284
+So we want to find x and here we have the density function.
+
+263
+00:48:44,124 --> 00:48:46,923
+So we want to dance the graph here.
+
+264
+00:48:48,204 --> 00:48:57,444
+And as x goes to infinity, e to the minus infinity
+
+265
+00:48:57,599 --> 00:49:04,599
+ve 0'ı
+
+266
+00:49:10,804 --> 00:49:36,804
+If x is, notice that this is waiting time, so x cannot be negative here, right? So the x is positive always and zero otherwise. So negative value says density of zero, okay?
+
+267
+00:49:39,380 --> 00:49:50,740
+And from then on, if x is 0, we have lambda times e to the 0, meaning lambda.
+
+268
+00:49:51,740 --> 00:49:55,400
+So we have lambda here at 0.
+
+269
+00:49:56,320 --> 00:49:59,880
+And this function will decrease like this.
+
+270
+00:50:01,519 --> 00:50:01,760
+Okay.
+
+271
+00:50:02,460 --> 00:50:05,780
+And it will go to, it will reach to.
+
+272
+00:50:11,476 --> 00:50:13,476
+0 at infinity.
+
+273
+00:50:20,467 --> 00:50:51,287
+ve
+
+274
+00:50:33,139 --> 00:50:49,339
+Sometimes when you are defining functions, it's easy to use a function called unit step function. Let's try to use unit step function to define exponential distribution.
+
+275
+00:50:53,556 --> 00:50:59,056
+So we will see unit step function.
+
+276
+00:51:10,612 --> 00:51:25,672
+Unit step function is defined as this, u of x is 1 if x is positive or 0.
+
+277
+00:51:30,420 --> 00:51:32,880
+0 if x is negative.
+
+278
+00:51:36,659 --> 00:51:39,900
+So, if you think of this, this is a very simple function.
+
+279
+00:51:39,900 --> 00:51:40,340
+So,
+
+280
+00:51:45,652 --> 00:51:57,771
+So, up to zero, it's always zero, right? But at zero, we have a hole here.
+
+281
+00:52:05,204 --> 00:52:16,804
+At 0, the function value jumps to 1, right? So this is a very simple function.
+
+282
+00:52:28,563 --> 00:52:45,804
+Bu simple function can sometimes be used for defining other functions, and especially if you have this kind of piecewise functions,
+
+283
+00:52:52,148 --> 00:52:58,948
+You can just use step function. So, let's try to write exponential distribution.
+
+284
+00:53:04,115 --> 00:53:08,195
+using the unit step function.
+
+285
+00:53:18,835 --> 00:53:39,435
+So what was the original exponential distribution? It was like this. We have a piecewise function, so we have to use this large parentheses and we have lambda times e to the minus lambda x here.
+
+286
+00:53:45,108 --> 00:53:47,188
+Lerger than or equal to zero.
+
+287
+00:53:50,248 --> 00:53:50,887
+Right?
+
+288
+00:53:52,208 --> 00:53:54,048
+So, larger than zero.
+
+289
+00:53:56,387 --> 00:54:00,048
+In the definition, it says larger than zero.
+
+290
+00:54:01,748 --> 00:54:04,168
+And zero otherwise.
+
+291
+00:54:10,260 --> 00:54:26,579
+Now, when x is the x is larger than so if you look at the unit step function when x is larger than one. Okay. So when x is larger than one.
+
+292
+00:54:38,068 --> 00:55:03,756
+So, we can say this is equivalent to lambda times e to the minus lambda x like here times u x. So, basically we are saying that
+
+293
+00:55:08,244 --> 00:55:13,284
+The function value is this value here.
+
+294
+00:55:17,139 --> 00:55:21,800
+Bu, X is greater than zero and that is UX, right?
+
+295
+00:55:25,940 --> 00:55:28,340
+Bir konfusion might be
+
+296
+00:55:32,179 --> 00:55:35,480
+here we have a greater than zero
+
+297
+00:55:35,480 --> 00:55:38,340
+but in the definition of units step function
+
+298
+00:55:38,340 --> 00:55:43,340
+we have when it is larger than or greater zero.
+
+299
+00:55:44,559 --> 00:55:48,539
+So we are kinda in this definition
+
+300
+00:55:48,539 --> 00:55:52,739
+we have just one point is different, right?
+
+301
+00:55:53,523 --> 00:55:56,523
+bir sürü point is different.
+
+302
+00:55:56,523 --> 00:55:58,523
+Ama, if you think about it,
+
+303
+00:56:00,523 --> 00:56:02,523
+Probabiliterle of
+
+304
+00:56:03,523 --> 00:56:05,523
+0, what is it?
+
+305
+00:56:07,523 --> 00:56:10,523
+Probabiliterle of 0 is 0.
+
+306
+00:56:12,523 --> 00:56:16,523
+So this shouldn't make any difference in our calculations.
+
+307
+00:56:42,483 --> 00:57:00,483
+Now, exponential value, exponential distribution has expected value and varians as this.
+
+308
+00:57:22,996 --> 00:57:31,755
+So it has expected value, 1 over lambda, and variance.
+
+309
+00:57:39,699 --> 00:57:42,460
+1 over lambda squared.
+
+310
+00:57:42,460 --> 00:57:45,940
+And again, these are homework for you.
+
+311
+00:57:49,811 --> 00:57:51,811
+find yourself.
+
+312
+00:57:55,284 --> 00:58:00,284
+You may need to use this thing called integration by parts.
+
+313
+00:58:20,371 --> 00:58:33,331
+Now, exponential distribution, let's, before continuing, let's give a break. Do you have any questions up to this point?
+
+314
+00:58:41,043 --> 00:58:48,715
+No? Okay. Let's give a break. Let's give a 10-minutes break. We will come when...
+
+315
+00:58:57,619 --> 00:58:58,619
+357.
+
+316
+01:09:44,180 --> 01:09:51,180
+So, I hope my voice is coming, you can hear me.
+
+317
+01:10:02,195 --> 01:10:06,195
+We were talking about exponential distribution.
+
+318
+01:10:08,195 --> 01:10:21,644
+Exponential distribution has this lambda times e to the minus lambda x as its density function when x is larger than zero.
+
+319
+01:10:26,068 --> 01:10:35,907
+ve ve ve ve saw that its expectans is 1 over lambda.
+
+320
+01:10:41,203 --> 01:10:43,051
+Its varian is this.
+
+321
+01:10:48,275 --> 01:10:50,275
+1 over lambda square.
+
+322
+01:10:50,275 --> 01:11:02,275
+Now, there is an interesting property of exponential distribution and it's called the memoryless property.
+
+323
+01:11:04,275 --> 01:11:06,275
+The memoryless...
+
+324
+01:11:18,707 --> 01:11:20,707
+Exponential distribution.
+
+325
+01:11:29,300 --> 01:11:32,899
+ve I'll directly write the definition of this thing.
+
+326
+01:11:40,756 --> 01:11:50,756
+It says that if x is a as distributed by exponential distribution,
+
+327
+01:11:55,444 --> 01:11:57,444
+with parameter lambda,
+
+328
+01:12:00,444 --> 01:12:01,444
+then
+
+329
+01:12:05,300 --> 01:12:08,300
+Probabilitiyoğ
+
+330
+01:12:08,300 --> 01:12:12,300
+X having a value larger than
+
+331
+01:12:12,300 --> 01:12:15,300
+X plus A
+
+332
+01:12:15,300 --> 01:12:18,300
+given that
+
+333
+01:12:18,300 --> 01:12:20,300
+X is
+
+334
+01:12:20,300 --> 01:12:20,619
+X
+
+335
+01:12:24,372 --> 01:12:36,891
+already larger than a is equal to probability of x larger than a.
+
+336
+01:12:43,060 --> 01:12:52,060
+A and X larger than or equal to zero.
+
+337
+01:12:54,060 --> 01:12:56,060
+So what does this say?
+
+338
+01:12:56,060 --> 01:13:07,060
+This says that, remember that exponential distribution is used for waiting times.
+
+339
+01:13:11,507 --> 01:13:12,652
+Ağızın,
+
+340
+01:13:16,404 --> 01:13:28,084
+Let's say you are a business, you are operating a call center.
+
+341
+01:13:37,427 --> 01:13:44,427
+ve
+
+342
+01:13:50,292 --> 01:13:51,052
+Customer.
+
+343
+01:13:54,192 --> 01:13:54,592
+To.
+
+344
+01:13:55,752 --> 01:13:56,271
+Call.
+
+345
+01:13:57,352 --> 01:13:57,731
+Right.
+
+346
+01:13:58,872 --> 01:13:59,352
+Now.
+
+347
+01:14:03,252 --> 01:14:04,972
+How much time.
+
+348
+01:14:05,912 --> 01:14:07,072
+Will you wait.
+
+349
+01:14:08,352 --> 01:14:08,652
+So.
+
+350
+01:14:09,311 --> 01:14:14,132
+Let's say.
+
+351
+01:14:15,992 --> 01:14:17,311
+You came to the office.
+
+352
+01:14:17,844 --> 01:14:20,844
+ve
+
+353
+01:14:20,844 --> 01:14:21,844
+başkası için
+
+354
+01:14:21,844 --> 01:14:23,844
+bekletmek için
+
+355
+01:14:23,844 --> 01:14:25,844
+ve
+
+356
+01:14:25,844 --> 01:14:44,876
+bir süreç
+
+357
+01:14:45,140 --> 01:14:47,140
+10 more minutes.
+
+358
+01:14:53,332 --> 01:14:55,332
+ve 10'e, let's say x.
+
+359
+01:14:56,332 --> 01:14:59,332
+We have already waited 5 minutes,
+
+360
+01:15:00,332 --> 01:15:06,332
+and probability of waiting 15 or more minutes.
+
+361
+01:15:08,332 --> 01:15:13,332
+Okay, so let's say a is 5 here, and x is 10, let's say.
+
+362
+01:15:14,332 --> 01:15:19,332
+So, the probability of waiting 15 minutes
+
+363
+01:15:21,011 --> 01:15:48,768
+Oral, so x is being larger than 15. Given that you already waited five minutes, so you have already waited five minutes. Given that you have waited five minutes, probability of
+
+364
+01:15:48,768 --> 01:16:00,768
+15minnit or more is equivalent to or equal to probability of waiting 10minnit or more.
+
+365
+01:16:07,988 --> 01:16:14,468
+Bu, bu, 5 minuteni bir şey değil.
+
+366
+01:16:19,667 --> 01:16:42,268
+This is called the memoryless probability of exponential distribution and you can recommend that read the proof or prove yourself or read the proof.
+
+367
+01:16:48,979 --> 01:16:52,979
+Bişronik ve Barun'in bu.
+
+368
+01:16:52,979 --> 01:16:56,363
+Bu bir de.
+
+369
+01:17:01,811 --> 01:17:13,131
+Okay, so this was one of the special distributions. Another special distribution is called, do you have any question about exponential distribution? I will move on.
+
+370
+01:17:16,979 --> 01:17:21,979
+Another special distribution is called normal distribution.
+
+371
+01:17:32,627 --> 01:17:35,627
+Sometimes this is called Gaussian distribution.
+
+372
+01:17:46,068 --> 01:17:48,827
+ve bu çok önemli bir düşünce.
+
+373
+01:18:15,155 --> 01:18:29,836
+We will see why it is important later. So let's first start with the standard normal random variables. So let's define standard.
+
+374
+01:18:33,332 --> 01:18:34,188
+ve normal
+
+375
+01:18:39,572 --> 01:18:46,532
+So here we have just not normal but a standard normal, okay, standard normal random variable.
+
+376
+01:18:46,532 --> 01:18:51,811
+We will see non-standard normal variables a little minute.
+
+377
+01:18:51,811 --> 01:18:53,532
+So,
+
+378
+01:18:58,100 --> 01:18:59,100
+Definition
+
+379
+01:19:16,787 --> 01:19:39,987
+Continuous random variable z, so we are not using x but z here, because a lot of the times when we are solving a problem, you will have some random variable x and you will convert from x to z.
+
+380
+01:19:42,899 --> 01:19:52,459
+So, it's customer to use the letter Z for standard normal distribution variable.
+
+381
+01:19:52,459 --> 01:20:07,739
+So, because continuous random variable Z is a standard normal.
+
+382
+01:20:11,796 --> 01:20:14,796
+Or, it's also called standard Gaussian.
+
+383
+01:20:22,612 --> 01:20:24,612
+random variable
+
+384
+01:20:26,612 --> 01:20:28,612
+if
+
+385
+01:20:30,612 --> 01:20:33,612
+its density is given by
+
+386
+01:20:44,148 --> 01:20:46,708
+1 over 2 pi
+
+387
+01:20:46,708 --> 01:20:51,268
+exponential
+
+388
+01:20:55,731 --> 01:21:00,291
+minus z square divided by 2.
+
+389
+01:21:06,931 --> 01:21:19,692
+Ve bu şekilde altyazı
+
+390
+01:21:27,380 --> 01:21:44,180
+Z is distributed by, is distributed by, so we just write an N here, from normal distribution, and 0, 1.
+
+391
+01:21:46,680 --> 01:21:51,300
+And this 0 and 1 makes it standard.
+
+392
+01:21:52,275 --> 01:22:00,615
+If we don't use 0 and 1, for example, if the value here is 1 and 2, let's say, this will not be standard.
+
+393
+01:22:00,615 --> 01:22:07,115
+Okay, the values 0 and 1 make this a standard distribution.
+
+394
+01:22:18,228 --> 01:22:22,427
+If you look at the graph of this distribution,
+
+395
+01:22:31,796 --> 01:22:33,796
+We see that it's symmetric.
+
+396
+01:22:37,619 --> 01:22:41,219
+It's symmetric around z equals to zero.
+
+397
+01:22:41,219 --> 01:22:43,539
+So this should be z, right?
+
+398
+01:22:43,539 --> 01:22:48,100
+So instead of x here, I should have written z.
+
+399
+01:22:48,100 --> 01:22:52,460
+And that's zero.
+
+400
+01:22:52,460 --> 01:23:00,380
+At zero, we have the peak, and around the peak, it has this bell shape.
+
+401
+01:23:00,380 --> 01:23:05,020
+And it's symmetric, okay?
+
+402
+01:23:05,395 --> 01:23:07,115
+This is symmetric.
+
+403
+01:23:11,091 --> 01:23:14,572
+ve zımetlik alan 0.
+
+404
+01:23:39,412 --> 01:23:41,996
+ve, bu dağılım,
+
+405
+01:23:59,123 --> 01:23:59,979
+Şimdi,
+
+406
+01:24:05,555 --> 01:24:06,555
+Evet.
+
+407
+01:24:10,163 --> 01:24:16,043
+As usual, we will need to find the expected value and variance of
+
+408
+01:24:27,828 --> 01:24:28,828
+Z.
+
+409
+01:24:28,828 --> 01:24:36,828
+An expect value of Z, or
+
+410
+01:24:36,828 --> 01:24:47,564
+Z to the 3, or Z to the 5, are all 0.
+
+411
+01:24:53,203 --> 01:24:57,384
+So, expected value of z is zero.
+
+412
+01:25:10,676 --> 01:25:11,916
+ve varyans.
+
+413
+01:25:17,524 --> 01:25:18,524
+1.
+
+414
+01:25:18,524 --> 01:25:23,524
+Hence, standard deviation is 1.
+
+415
+01:25:23,524 --> 01:25:25,524
+So remember variances.
+
+416
+01:25:38,868 --> 01:25:51,168
+SIGMA SQAE, so, so, standard deviation is also one, right? And again, you can just read.
+
+417
+01:25:55,699 --> 01:25:57,699
+Bu, Pichonik'in book.
+
+418
+01:26:02,100 --> 01:26:07,780
+Nefes de proof in Pishwa Niki book.
+
+419
+01:26:17,908 --> 01:26:33,908
+Now, this is expected value, varians, we have the density here. Now, what is the cumulative distribution? Or CDF?
+
+420
+01:26:38,195 --> 01:26:58,515
+Now, cumulative distribution, unfortunately, cannot be, it does not have a closed form solution. So, normally, we don't have no closed form solution.
+
+421
+01:27:01,460 --> 01:27:16,800
+So, we just write its definition, but we cannot solve it. So, we can say f of z is for integration, right, from minus infinity.
+
+422
+01:27:24,243 --> 01:27:25,243
+Z
+
+423
+01:27:32,083 --> 01:27:49,003
+We will integrate the density and let's not use that, let's use u as the integration variable. So let's use u because we are using z here.
+
+424
+01:27:52,243 --> 01:27:56,243
+And if you write this, we have
+
+425
+01:27:56,659 --> 01:28:16,059
+From minus infinity to positive infinity, 1 over 2 pi in square root, then we have e to do minus u square divided by 2, then we have a du.
+
+426
+01:28:21,811 --> 01:28:25,811
+Biztöp here, we have no solution for this.
+
+427
+01:28:29,811 --> 01:28:36,811
+No solution for this, but this is the normal distribution is very important.
+
+428
+01:28:36,811 --> 01:28:46,811
+So people obtained approximate numerical solutions.
+
+429
+01:28:48,800 --> 01:28:56,300
+No closed form, no closed form solution, so no closed form solution.
+
+430
+01:29:00,435 --> 01:29:10,915
+But we have, we do have, numerical, approximations.
+
+431
+01:29:20,404 --> 01:29:33,744
+You can find those numerical approximations at the end of some books.
+
+432
+01:29:38,260 --> 01:29:41,260
+Bu, eksempel, Barun has aist.
+
+433
+01:29:47,188 --> 01:29:49,188
+[öğrenci] et iyice yer.
+
+434
+01:29:57,203 --> 01:30:02,663
+Some books, for example, Barun.
+
+435
+01:30:05,543 --> 01:30:11,203
+Or you can use software packages.
+
+436
+01:30:12,144 --> 01:30:17,144
+So software packages.
+
+437
+01:30:19,843 --> 01:30:23,543
+You can have it as
+
+438
+01:30:24,020 --> 01:30:26,020
+As related functions.
+
+439
+01:30:29,020 --> 01:30:33,020
+Related, how should I say, functions or methods.
+
+440
+01:30:37,779 --> 01:30:38,619
+Öğ...
+
+441
+01:30:45,140 --> 01:30:46,923
+Bir şey...
+
+442
+01:30:50,707 --> 01:31:16,707
+So, one thing that you should notice is this CDF has a special name because it's very important. A special name is given to it and it's capital V is the letter or symbol.
+
+443
+01:31:19,636 --> 01:31:28,996
+for CDF of normal, standard normal distribution.
+
+444
+01:31:28,996 --> 01:31:30,996
+Okay.
+
+445
+01:31:30,996 --> 01:31:38,596
+So, when we are talking about standard normal CDF,
+
+446
+01:31:52,083 --> 01:31:56,583
+Instead of writing this way, we will just write
+
+447
+01:32:01,263 --> 01:32:02,703
+Phi of
+
+448
+01:32:18,676 --> 01:32:19,676
+ve...
+
+449
+01:32:22,739 --> 01:32:27,739
+ve Cumülatif Distribution isimli olarak,
+
+450
+01:32:38,068 --> 01:32:46,288
+Probabiliteli, random variable, having value less than or equal to this z value.
+
+451
+01:32:57,844 --> 01:33:11,443
+So, this might be, let's not forget this. This is the usual cumulative distribution function, but we have a special symbol for it because it's used a lot.
+
+452
+01:33:11,443 --> 01:33:21,443
+Now what were we saying? We were saying that we can, we can obtain these.
+
+453
+01:33:21,443 --> 01:33:25,292
+So, obtain
+
+454
+01:33:28,212 --> 01:33:29,212
+Obtaining
+
+455
+01:33:31,772 --> 01:33:33,652
+This capital V of Z
+
+456
+01:33:40,564 --> 01:34:04,564
+For example, what is the few of z for, or what is the cumulative value for 1.6, right? Now, this, there are two ways, as I said here, up here.
+
+457
+01:34:10,452 --> 01:34:16,891
+Look at a fee table.
+
+458
+01:34:22,003 --> 01:34:28,123
+For example, there is such a table at Barone's book.
+
+459
+01:34:34,515 --> 01:34:39,275
+Or, use your favorite languages.
+
+460
+01:34:46,003 --> 01:34:55,603
+And I see programming language here. Favorite programming language. Favorite programming.
+
+461
+01:34:59,220 --> 01:35:20,460
+...
+
+462
+01:35:28,243 --> 01:35:30,243
+You can do this.
+
+463
+01:35:32,243 --> 01:35:40,243
+First, you need to import norm module from scipy stats package.
+
+464
+01:35:40,243 --> 01:35:54,219
+So from scipy stats import norm.
+
+465
+01:35:54,644 --> 01:36:22,484
+So, it's Python code here. And now you can say norm CDF and 1.6. And this will give you phi 1.6. And you can go to the other side. So, you can say
+
+466
+01:36:23,859 --> 01:36:26,859
+norm PPF
+
+467
+01:36:29,859 --> 01:36:31,859
+for
+
+468
+01:36:33,859 --> 01:36:37,859
+forgetting the inverse of the CDF.
+
+469
+01:36:37,859 --> 01:36:40,859
+So, in Python
+
+470
+01:36:47,220 --> 01:36:57,220
+FUFZ is norm CDFZ.
+
+471
+01:37:00,916 --> 01:37:05,916
+ve negatif, ve inverse bu function,
+
+472
+01:37:05,916 --> 01:37:10,916
+let's say you have some probability value,
+
+473
+01:37:10,916 --> 01:37:13,916
+and you want its inverse,
+
+474
+01:37:13,916 --> 01:37:18,916
+you can use norm PPF,
+
+475
+01:37:18,916 --> 01:37:21,916
+p,
+
+476
+01:37:21,916 --> 01:37:25,916
+okay.
+
+477
+01:37:28,435 --> 01:37:42,595
+So, again, this, you need to know Python for this, also you need to install this scipy package in Python.
+
+478
+01:37:42,595 --> 01:37:44,195
+And then,
+
+479
+01:37:50,068 --> 01:37:56,288
+Here, for example, I have those installed here.
+
+480
+01:37:59,923 --> 01:38:11,603
+So this is a python read available loop and scipy is installed here.
+
+481
+01:38:15,123 --> 01:38:20,724
+So I can say from scipy.
+
+482
+01:38:25,876 --> 01:38:29,876
+So now I have the normal module, okay?
+
+483
+01:38:32,876 --> 01:38:40,876
+And now from there, let's say I want to find the fee of 1.6.
+
+484
+01:38:43,876 --> 01:38:45,876
+Fee of 1.66.
+
+485
+01:38:45,876 --> 01:38:47,876
+So I'll say norm.
+
+486
+01:38:50,876 --> 01:38:51,876
+Feebf.
+
+487
+01:38:54,007 --> 01:39:00,007
+...
+
+488
+01:38:53,747 --> 01:39:05,268
+onces and this will give me a numerical approach approximation right and let me assign this to a value
+
+489
+01:39:08,867 --> 01:39:09,268
+i will say
+
+490
+01:39:23,028 --> 01:39:37,028
+Now, sometimes you will need inverse of the standard distribution, standard normal distribution cumulative function.
+
+491
+01:39:39,028 --> 01:39:49,028
+So you will need that PPF, for example, is this value, let's try.
+
+492
+01:39:50,195 --> 01:40:16,695
+I will give a, now I want to, I hope to obtain 1.6 and I get it. And there is a small, small error here, but those are normal. These are numerical approximations and such small errors happen.
+
+493
+01:40:21,876 --> 01:40:45,876
+So, if you are doing C or Java or whatever language you have, just search for it in the internet and I am sure that you can find a package for finding cumulative distribution function values for standard normals.
+
+494
+01:40:46,612 --> 01:40:53,612
+ve
+
+495
+01:41:19,283 --> 01:41:24,083
+So, let's continue with the with the third part.
+
+496
+01:41:38,899 --> 01:41:40,100
+This should be a favorite.
+
+497
+01:41:57,235 --> 01:42:09,956
+Ok, so, let's look at some properties of the cumulative distribution function.
+
+498
+01:42:14,835 --> 01:42:18,915
+Notice that the graph
+
+499
+01:42:33,939 --> 01:42:35,939
+On the graph of density,
+
+500
+01:42:38,579 --> 01:42:42,179
+in pdf graph, let's say.
+
+501
+01:42:45,716 --> 01:42:57,156
+Remember that normal distribution has this symmetric form, and it is symmetric around zero.
+
+502
+01:43:04,404 --> 01:43:06,004
+This is Densed Graph.
+
+503
+01:43:10,387 --> 01:43:51,343
+ve
+
+504
+01:43:35,923 --> 01:43:49,923
+The area under the curve from minus infinity up to x gives us this fee, right? So, and this is just the definition of normal. So,
+
+505
+01:44:02,804 --> 01:44:03,804
+Just a cumulative
+
+506
+01:44:03,804 --> 01:44:10,804
+Value of x, which is probable to of
+
+507
+01:44:10,804 --> 01:44:28,804
+Z being less than or equal to x, right? And if you try to calculate this probability, since this is a continuous distribution, we have the integration from minus infinity to x.
+
+508
+01:44:31,539 --> 01:44:41,960
+F of z u du, and this is the area, right? This area.
+
+509
+01:44:56,627 --> 01:44:58,627
+Bu, bu, area under the curve.
+
+510
+01:45:05,332 --> 01:45:11,332
+ve if you draw the graph itself
+
+511
+01:45:34,100 --> 01:45:41,220
+Graph of phi itself, you get something like this.
+
+512
+01:45:44,819 --> 01:45:45,819
+So,
+
+513
+01:45:55,859 --> 01:46:02,340
+As a CDF, it starts as 0 at infinity, okay?
+
+514
+01:46:02,340 --> 01:46:04,340
+And it...
+
+515
+01:46:08,148 --> 01:46:09,988
+Passes from 1 over 2
+
+516
+01:46:18,899 --> 01:46:19,259
+Evet.
+
+517
+01:46:36,020 --> 01:46:39,820
+Bir interesting thing about this is so at zero.
+
+518
+01:46:42,720 --> 01:46:44,820
+Fee zero is one over two.
+
+519
+01:46:45,820 --> 01:46:49,020
+And few of minus.
+
+520
+01:46:53,844 --> 01:47:08,863
+X is 1 minus few of x. So we have few of minus x is equal to, so this is a property.
+
+521
+01:47:15,539 --> 01:47:16,427
+Kofi.
+
+522
+01:47:21,332 --> 01:47:29,652
+Fu of x is 1 minus Fu of x.
+
+523
+01:47:35,252 --> 01:47:36,492
+x in r.
+
+524
+01:47:45,524 --> 01:47:55,532
+Ve bu,
+
+525
+01:48:00,307 --> 01:48:02,467
+in this symmetric graph.
+
+526
+01:48:03,467 --> 01:48:07,108
+So, you can check this out.
+
+527
+01:48:12,692 --> 01:48:17,692
+in the density.
+
+528
+01:48:23,060 --> 01:48:26,060
+So you can check this out in the density graph, I think.
+
+529
+01:48:37,363 --> 01:48:42,219
+Söylesilik et, normal, random, variable.
+
+530
+01:48:54,804 --> 01:48:57,283
+I guess, hmm.
+
+531
+01:49:11,347 --> 01:49:13,347
+Normal random vereyiniz.
+
+532
+01:49:25,939 --> 01:49:30,319
+Now, so far we have learned standard normal variable.
+
+533
+01:49:32,379 --> 01:49:33,000
+And
+
+534
+01:49:40,500 --> 01:49:49,500
+Let's say z is a standard normal variable.
+
+535
+01:49:55,572 --> 01:50:20,291
+Then let's define x such that we multiply z with some sigma, then we sum it with some mu, and here sigma will be greater than zero.
+
+536
+01:50:22,260 --> 01:50:27,260
+So this x itself is another random variable.
+
+537
+01:50:27,260 --> 01:50:43,260
+And its expected value is mu and its variance is sigma square.
+
+538
+01:50:43,260 --> 01:50:45,260
+Okay.
+
+539
+01:50:45,260 --> 01:50:49,132
+And x is called.
+
+540
+01:50:49,908 --> 01:50:51,908
+Normal random variables.
+
+541
+01:51:02,292 --> 01:51:03,115
+ve
+
+542
+01:51:06,260 --> 01:51:08,260
+ve write it as
+
+543
+01:51:16,692 --> 01:51:42,492
+X is distributed by N from normal. And remember, for standard normal distribution, we had 0 and 1 here. Now 0 is the mean. Okay. So this time, instead of 0, we will write mu. And instead of 1, we will write sigma squared.
+
+544
+01:51:44,051 --> 01:51:47,451
+So, we are basically writing mean and variance.
+
+545
+01:51:50,331 --> 01:51:57,611
+So, we will write mu, which is the mean, and variance.
+
+546
+01:52:14,515 --> 01:52:20,515
+The density of this variable is
+
+547
+01:52:24,948 --> 01:52:52,844
+Very similar to the density of standard normal distribution, but it's like this, 1 over 2 pi sigma exponential x minus mu square, we have a negative here, over 2,
+
+548
+01:52:53,140 --> 01:52:54,860
+Sigma Sıkıyor.
+
+549
+01:52:59,604 --> 01:53:10,804
+ve Cumulatif Density, Cumulatif Density, X, again, this is,
+
+550
+01:53:15,923 --> 01:53:19,923
+Bu da bir formu yok.
+
+551
+01:53:23,475 --> 01:53:49,175
+So we cannot write a nice equation based on x here, okay? There is no such thing. So what we will do is we will write this in terms of standard normal distribution or phi, right? We will write it in terms of phi.
+
+552
+01:53:50,420 --> 01:53:52,819
+And how can we do that?
+
+553
+01:53:54,779 --> 01:54:02,619
+Well, this cumulative distribution is probability of X having
+
+554
+01:54:02,619 --> 01:54:09,119
+value less than or equal to lowercase x.
+
+555
+01:54:10,180 --> 01:54:16,699
+So capital X or random variable having value less than or equal to x.
+
+556
+01:54:18,323 --> 01:54:19,851
+ve
+
+557
+01:54:23,636 --> 01:54:24,636
+Şimdi,
+
+558
+01:54:30,612 --> 01:54:49,492
+Remember that x is obtained by summing the mu and multiplying z by sigma and then summing with mu.
+
+559
+01:54:58,612 --> 01:55:08,392
+X minus mu divided by sigma, right? If we take out z, we have that.
+
+560
+01:55:15,091 --> 01:55:40,571
+So, we can use that idea. So, the probability that x is smaller than x is same as probability of z having value less than x minus mu divided by sigma.
+
+561
+01:55:41,876 --> 01:55:47,876
+Ve bu
+
+562
+01:55:47,876 --> 01:55:50,516
+X minus mu
+
+563
+01:55:50,516 --> 01:55:51,076
+Dividi
+
+564
+01:55:51,076 --> 01:55:51,815
+Sigma
+
+565
+01:55:59,956 --> 01:56:12,956
+And here, as I said, we use the fact that x equals to sigma times z plus mu.
+
+566
+01:56:12,956 --> 01:56:25,456
+We know that, so we define x this way at the beginning. So then if we take out z here, z will be
+
+567
+01:56:26,676 --> 01:56:31,676
+X minus Mu divided by sigma.
+
+568
+01:56:31,676 --> 01:56:33,676
+And
+
+569
+01:56:33,676 --> 01:56:35,660
+and
+
+570
+01:56:42,484 --> 01:56:55,904
+So, we can, we can subtract mu and divide by sigma in both sides, okay?
+
+571
+01:56:58,043 --> 01:57:00,064
+And then we will get z.
+
+572
+01:57:02,104 --> 01:57:07,904
+And when we get z here, it means we are talking about phi, okay?
+
+573
+01:57:20,372 --> 01:57:45,228
+Bu, bu
+
+574
+01:57:51,859 --> 01:57:52,359
+So,
+
+575
+01:58:04,275 --> 01:58:27,676
+We also know that so using this fact this cumulative probability idea we can also write probability of a or x and values probability a and b x having value between a and b sorry is
+
+576
+01:58:30,612 --> 01:58:57,484
+F of x, if you remember, I'm a little tired here, x b, so cumulative value of b, minus cumulative value of a, and from here, if I use the previous property,
+
+577
+01:59:01,268 --> 01:59:28,207
+I have a phi of b minus mu divided by standard deviation minus phi b minus mu divided by standard deviation. So really here you have to know this idea.
+
+578
+01:59:29,235 --> 01:59:44,235
+Okay. If you need a cumulative distribution, just subtract mu and divide by sigma and then you can use standard distribution cumulative values.
+
+579
+01:59:50,131 --> 01:59:51,131
+Um...
+
+580
+01:59:57,268 --> 01:59:58,268
+So...
+
+581
+02:00:09,203 --> 02:00:13,203
+[öğrenci]. Ne soruyorsun [öğrenci]?
+
+582
+02:00:17,555 --> 02:00:38,555
+A minus mu mu olacak? Evet, ikisine de b yazmışım, haklısın. Sorry, so we are, this should be a, because we look for cumulative value of a. Thank you.
+
+583
+02:00:43,315 --> 02:00:46,016
+So, if you look at the graph,
+
+584
+02:00:50,899 --> 02:00:57,819
+Normal variable, normal distribution.
+
+585
+02:01:13,939 --> 02:01:38,179
+The graph is symmetric, just like a standard normal distribution, okay? And the center of graph is at x equals to mu, okay? And the variance defines how spread the graph is. For example,
+
+586
+02:01:39,636 --> 02:01:56,956
+Here we see, let's say, high standard deviation or variance value, or less, a low, how will a low value be?
+
+587
+02:02:01,492 --> 02:02:16,692
+A low variance will be. The variance is low, so that means all the probability will be squeezed into a small area, so you will have something like this.
+
+588
+02:02:31,347 --> 02:02:56,948
+So, again, x will be, or the center will be on mu, and again, we have a symmetric, about mu, and variance, more variance means the probability varies or spreads more.
+
+589
+02:02:58,612 --> 02:03:04,412
+Çünkü, sometimes, varianç, is also called spread.
+
+590
+02:03:06,452 --> 02:03:11,811
+So, it determines how spread the probabilities are.
+
+591
+02:03:31,028 --> 02:03:46,068
+Let's do an example, or let's give a 10 minutes break and then when we come we will give the example. So do you have any questions up to this point? No.
+
+592
+02:03:51,572 --> 02:03:55,092
+Okay, so 10 minutes break till
+
+593
+02:14:16,692 --> 02:14:17,692
+Hello again.
+
+594
+02:14:24,340 --> 02:14:30,700
+So, we are going to look at an example, an numerical example.
+
+595
+02:14:35,060 --> 02:14:37,460
+Let me add some pages here.
+
+596
+02:14:59,636 --> 02:15:02,636
+So, let's say you want to find probability of...
+
+597
+02:15:13,619 --> 02:15:15,619
+Let's say x is
+
+598
+02:15:19,091 --> 02:15:30,251
+X is distributed by normal distribution and its mean is 5 and its variances for.
+
+599
+02:15:32,371 --> 02:15:45,371
+And we want to find a probability of x saving value between minus 7 and minus 3.
+
+600
+02:15:53,652 --> 02:15:57,811
+So, let's draw this.
+
+601
+02:16:03,475 --> 02:16:05,475
+ve aksiyomu ile bu.
+
+602
+02:16:09,203 --> 02:16:18,323
+ve mean is minus 5 ve variyans is 4 ve mean is minus 5.
+
+603
+02:16:20,123 --> 02:16:20,603
+Now,
+
+604
+02:16:27,091 --> 02:16:53,891
+If you convert this, so this is normal distribution, if you convert this into standard normal distribution, we will have, we should have, so variable will be z and mean must be zero and variance must be one.
+
+605
+02:16:54,611 --> 02:17:01,211
+So, varians, sorry, varians must be one and here varians is four.
+
+606
+02:17:01,211 --> 02:17:18,131
+And to, to convert, so this is the graph of x, cumulative, so this is pdf of x.
+
+607
+02:17:21,427 --> 02:17:27,427
+ve want to convert is to standard normal distribution.
+
+608
+02:17:31,427 --> 02:17:44,427
+What we need to do is, we need to standardize these values because minus seven here,
+
+609
+02:17:46,427 --> 02:17:48,427
+and they say,
+
+610
+02:17:49,108 --> 02:17:53,727
+Minus 3, so it should be here, minus 3, right?
+
+611
+02:17:55,907 --> 02:18:00,148
+So, we are asked the probability of this area.
+
+612
+02:18:02,388 --> 02:18:16,492
+Now, the probability of this area is same as the probability of this range, which is area of...
+
+613
+02:18:18,164 --> 02:18:19,164
+bu bölümde.
+
+614
+02:18:24,371 --> 02:18:25,611
+ve
+
+615
+02:18:29,299 --> 02:18:54,939
+Here, what is the value here? And what is the value on the right side of the range? That corresponds to minus seven. So the value that corresponds to minus three would be minus three minus, we will subtract mu, which is minus five.
+
+616
+02:18:56,724 --> 02:19:21,291
+ve 2 ve
+
+617
+02:19:22,611 --> 02:19:24,611
+And what do we have here?
+
+618
+02:19:26,611 --> 02:19:32,611
+We have positive 5 minus 3.
+
+619
+02:19:35,611 --> 02:19:39,611
+So we have 2 divided by 2.
+
+620
+02:19:39,611 --> 02:19:41,611
+That means 1.
+
+621
+02:19:42,611 --> 02:19:48,611
+So this guy is minus 7.
+
+622
+02:19:56,308 --> 02:20:03,427
+5-2, 2-2, we have minus 1. Okay?
+
+623
+02:20:06,628 --> 02:20:21,028
+So, now instead of the cumulative value of x, now we have, we can use cumulative value of standard normal. So, probability of
+
+624
+02:20:27,379 --> 02:20:55,259
+X'e halde var, between minus seven and minus three is, this graph I think is wrong by the way, now I understand that sorry, so minus three is larger than minus five right, so the graphs are wrong, let me redraw this.
+
+625
+02:20:56,788 --> 02:21:10,087
+So, minus seven is smaller than minus five, but minus three is larger.
+
+626
+02:21:10,087 --> 02:21:14,087
+So, and we have a symmetric situation here.
+
+627
+02:21:14,087 --> 02:21:15,087
+Okay.
+
+628
+02:21:15,087 --> 02:21:24,087
+So, similarly, let's, let's,
+
+629
+02:21:24,564 --> 02:21:26,164
+Let's draw this part.
+
+630
+02:21:29,587 --> 02:21:33,587
+So, let me draw in black.
+
+631
+02:21:33,587 --> 02:21:38,587
+So,
+
+632
+02:21:50,739 --> 02:21:52,579
+I need more space there.
+
+633
+02:21:58,548 --> 02:22:02,388
+Let me take this.
+
+634
+02:22:07,316 --> 02:22:08,236
+Teşekkürler.
+
+635
+02:22:23,123 --> 02:22:24,123
+So, um...
+
+636
+02:22:27,796 --> 02:22:31,796
+Minus, instead of minus seven, we will use minus one.
+
+637
+02:22:33,556 --> 02:22:43,796
+And here, for the minus three, we will use minus three minus minus five divided by two, which is one.
+
+638
+02:22:45,236 --> 02:22:51,556
+So now, we will calculate the probability of
+
+639
+02:22:55,924 --> 02:23:00,284
+Z being between minus one and one.
+
+640
+02:23:00,284 --> 02:23:02,564
+So,
+
+641
+02:23:10,355 --> 02:23:21,556
+So, this is equivalent to probability of z being between minus 1 and 1.
+
+642
+02:23:25,012 --> 02:23:30,532
+Or, let me write it more in a more obvious way.
+
+643
+02:23:33,532 --> 02:23:46,012
+This is probability of x being less than minus 3 minus probability of x being less than 7.
+
+644
+02:23:58,164 --> 02:24:08,164
+We have f cumulative value of minus 3 minus cumulative value of minus 7.
+
+645
+02:24:08,164 --> 02:24:19,164
+And now, instead of minus 3, we can have minus 3 minus mu sigma.
+
+646
+02:24:26,195 --> 02:24:49,995
+Hmm, so this should be phi. Minus, phi minus seven minus mu over sigma, which is phi of one minus phi of minus one.
+
+647
+02:24:59,763 --> 02:25:09,683
+Now, the values, these phi values, again, you need to look somewhere.
+
+648
+02:25:17,139 --> 02:25:19,360
+I will use the Python
+
+649
+02:25:27,156 --> 02:25:39,156
+Here, so I will say mom CDF1.
+
+650
+02:25:45,940 --> 02:25:52,940
+Norm CDF1-Norm CDF-1
+
+651
+02:25:57,811 --> 02:26:11,191
+So, in Python, that will mean norm CDF1 minus norm CDF-1.
+
+652
+02:26:11,191 --> 02:26:12,711
+So, this is Python.
+
+653
+02:26:18,899 --> 02:26:30,891
+ve 0.6827.
+
+654
+02:26:40,211 --> 02:26:41,211
+So, let's continue.
+
+655
+02:26:51,827 --> 02:27:06,307
+So, there is an important property of normal distribution, and that is normal distribution is a linear transformation.
+
+656
+02:27:15,891 --> 02:27:16,683
+Mürayet.
+
+657
+02:27:37,811 --> 02:27:38,796
+So,
+
+658
+02:27:46,708 --> 02:27:51,708
+Linear Transformation
+
+659
+02:27:57,747 --> 02:27:58,572
+Ooof.
+
+660
+02:28:08,628 --> 02:28:09,628
+Normal.
+
+661
+02:28:15,891 --> 02:28:16,891
+numarable
+
+662
+02:28:20,331 --> 02:28:21,651
+is itself
+
+663
+02:28:28,948 --> 02:28:30,308
+Normal random vereyim.
+
+664
+02:28:37,940 --> 02:28:39,940
+What does this mean?
+
+665
+02:28:43,940 --> 02:28:45,940
+So, if
+
+666
+02:28:47,940 --> 02:28:51,940
+we have x, which is a normal random variable
+
+667
+02:28:52,940 --> 02:28:56,940
+that has a mean of, let's say, x
+
+668
+02:28:56,940 --> 02:28:58,940
+and varians
+
+669
+02:28:58,940 --> 02:29:00,940
+of x
+
+670
+02:29:05,012 --> 02:29:32,364
+Ve y'e
+
+671
+02:29:32,435 --> 02:29:35,876
+So, we just have linear values there.
+
+672
+02:29:41,811 --> 02:29:44,108
+Bu, bu
+
+673
+02:29:49,108 --> 02:29:51,567
+ve yine de bu ve linear transformation.
+
+674
+02:30:00,468 --> 02:30:05,968
+Now, then,
+
+675
+02:30:11,507 --> 02:30:14,507
+Y itself is a normal random variable.
+
+676
+02:30:15,507 --> 02:30:16,268
+Okay.
+
+677
+02:30:20,275 --> 02:30:31,876
+y is distributed by normal and its mean is a times mu x plus b
+
+678
+02:30:31,876 --> 02:30:41,876
+and its variance is a square variance of x
+
+679
+02:30:41,876 --> 02:30:44,876
+okay
+
+680
+02:30:52,691 --> 02:31:00,691
+So, we can find the mean of the new y just by this calculation.
+
+681
+02:31:00,691 --> 02:31:02,691
+Sorry.
+
+682
+02:31:02,691 --> 02:31:09,675
+And we can find its variance by multiplying by a squared.
+
+683
+02:31:16,564 --> 02:31:22,564
+Bu, bu normal distribution. Any questions up to this point?
+
+684
+02:31:44,340 --> 02:31:49,680
+Then let's look at another distribution, we will call it the gamma distribution.
+
+685
+02:32:09,523 --> 02:32:16,843
+Now, the gamma distribution is kinda complicated.
+
+686
+02:32:23,507 --> 02:32:24,556
+ve
+
+687
+02:32:34,804 --> 02:32:36,564
+Let me just write the definition.
+
+688
+02:32:44,755 --> 02:32:46,699
+Let me add some pages.
+
+689
+02:32:53,747 --> 02:33:05,628
+So, a continuous random variable, x has a gamma distribution.
+
+690
+02:33:17,236 --> 02:33:19,052
+met parametres
+
+691
+02:33:25,236 --> 02:33:32,236
+Alpha, 0 ve Lambda, 0 ve
+
+692
+02:33:48,628 --> 02:34:14,907
+This will be a long expression, you don't need to memorize this. Lambda to the alpha, x to the alpha minus 1, e to the minus lambda x, divided by,
+
+693
+02:34:16,244 --> 02:34:30,028
+Gamma of alpha. I will explain what this gamma means in a minute. If x is larger than zero, zero otherwise.
+
+694
+02:34:35,188 --> 02:34:48,188
+So, we have two parameters here. One is this alpha parameter, and the other one is this lambda parameter.
+
+695
+02:34:50,188 --> 02:34:55,188
+And we have also this curious gamma function.
+
+696
+02:34:55,188 --> 02:34:55,788
+Okay.
+
+697
+02:34:58,484 --> 02:35:07,484
+So, let's look at the gamma function. So, we need to know gamma function to understand gamma distribution.
+
+698
+02:35:15,924 --> 02:35:17,924
+gama function.
+
+699
+02:35:32,371 --> 02:35:54,572
+For any positive real numbers, r. So, for alpha greater than zero and alpha in real numbers,
+
+700
+02:35:59,603 --> 02:36:26,963
+Gamma is defined as, Gamma of Alpha is defined as, from minus to infinity, you will integrate x alpha minus 1, x alpha minus 1, e to do minus,
+
+701
+02:36:27,316 --> 02:36:29,316
+X, Dx.
+
+702
+02:36:36,051 --> 02:36:39,731
+So, this is the definition.
+
+703
+02:36:44,131 --> 02:36:47,331
+Now, if
+
+704
+02:36:50,932 --> 02:36:57,572
+alpha is a natural number, if alpha is in
+
+705
+02:37:02,420 --> 02:37:29,060
+1, 2, 3, et cetera. So, it's a natural number. It's an integer like 1, 2, 3. Then we have gamma n is equal to n minus 1 factorial.
+
+706
+02:37:30,739 --> 02:37:34,899
+Gamma function and factorial function are related.
+
+707
+02:37:36,180 --> 02:37:39,779
+For integers, we can just use factorials.
+
+708
+02:37:40,579 --> 02:37:48,579
+For non-integer values, we have to use this integration to calculate the values.
+
+709
+02:37:54,036 --> 02:38:20,636
+So, for example, what is the gamma? Gamma of 3, right? Since 3 is an integer, we can just use this expression, factorial expression, and that means this is equal to 2 factorial, right?
+
+710
+02:38:21,040 --> 02:38:22,280
+ve 2.
+
+711
+02:38:28,755 --> 02:38:29,755
+Um...
+
+712
+02:38:44,468 --> 02:38:55,948
+So, the Pichonit book explains gamma function in detail, so, you should,
+
+713
+02:39:04,244 --> 02:39:08,244
+You should read Pişranik.
+
+714
+02:39:21,139 --> 02:39:28,340
+So, we have this gamma function and now using that we define gamma distribution.
+
+715
+02:39:36,628 --> 02:39:38,628
+Gamma-distribution
+
+716
+02:39:45,427 --> 02:39:50,427
+is equivalent to sum of exponentials.
+
+717
+02:39:52,827 --> 02:40:01,927
+And it has very, it has a flexible graph. So let's write the graph.
+
+718
+02:40:10,868 --> 02:40:21,548
+So, based on these alpha and lambda variables or parameters, let's say, its value changes a lot.
+
+719
+02:40:23,548 --> 02:40:29,148
+So, for example, you might have something like this.
+
+720
+02:40:42,835 --> 02:40:51,851
+Bu, bu
+
+721
+02:40:57,396 --> 02:40:58,924
+Bu
+
+722
+02:41:04,819 --> 02:41:14,819
+So, if you have alpha equals to one and lambda equals to one, you have this graph.
+
+723
+02:41:14,819 --> 02:41:20,652
+Okay, and notice that this really looks like exponential distribution.
+
+724
+02:41:28,788 --> 02:41:30,788
+Ve bu bir dakika.
+
+725
+02:41:31,988 --> 02:41:34,788
+Ve bu, eğer
+
+726
+02:41:40,388 --> 02:41:43,788
+alfa 2 ve lambda 1 over 2,
+
+727
+02:41:43,788 --> 02:41:45,788
+bu bir şey gibi.
+
+728
+02:41:50,515 --> 02:41:58,155
+Now, here, alpha is 2, lambda is 1 over 2.
+
+729
+02:42:01,971 --> 02:42:07,971
+ve alfa
+
+730
+02:42:17,780 --> 02:42:45,340
+3, lambda 1 over 2, you have a graph like this. So if you look at these graphs, when lambda is 1, alpha is 1 and lambda is 1, we have the exponential distribution. When you increase alpha more and more, when you have more alpha,
+
+731
+02:42:47,252 --> 02:42:51,412
+What happens? The graph looks like
+
+732
+02:42:57,012 --> 02:42:59,012
+Normal distribution graph.
+
+733
+02:43:02,012 --> 02:43:03,012
+Okay.
+
+734
+02:43:04,012 --> 02:43:05,012
+And
+
+735
+02:43:37,459 --> 02:43:51,779
+And if you look at this equation here, if you take alpha equals to 1 and lambda equals to 1, what happens?
+
+736
+02:43:54,739 --> 02:44:00,059
+Or just take alpha 1, not lambda, but just alpha 1.
+
+737
+02:44:04,564 --> 02:44:27,644
+If you take alpha equals to one, what happens to this? First of all, gamma of one. This becomes zero factorial, and zero factorial is one by definition. So here we will have one. And this alpha will be one. So we have an alpha there.
+
+738
+02:44:28,691 --> 02:44:50,572
+ve x to the minimum 1 minus 1, so x to the 0, so we will this this part will be 1, e to the minus lambda x, e to the minus lambda x. Notice that this is just exponential distribution. Okay.
+
+739
+02:44:59,636 --> 02:45:01,636
+Let me delete this part.
+
+740
+02:45:12,340 --> 02:45:20,139
+So, let me write here, Gamma and Exponential.
+
+741
+02:45:24,211 --> 02:45:25,211
+Dissimations
+
+742
+02:45:28,788 --> 02:45:48,628
+So, first point is, if alpha is 1, gamma becomes, gamma distribution becomes, or gamma random variable becomes, exponential distribution.
+
+743
+02:45:54,227 --> 02:46:08,467
+So, Gamma, 1, Lambda, and here 1 is Alpha, is exponential.
+
+744
+02:46:14,164 --> 02:46:17,484
+Second point is, let me add some pages.
+
+745
+02:46:21,620 --> 02:46:23,380
+Second point is
+
+746
+02:46:30,164 --> 02:46:31,524
+If you some
+
+747
+02:46:37,716 --> 02:46:44,716
+İndependent, Exponential Random Variables, if you sum n independent.
+
+748
+02:46:48,724 --> 02:46:50,188
+Exponential.
+
+749
+02:47:00,564 --> 02:47:02,103
+You will get
+
+750
+02:47:06,772 --> 02:47:17,772
+You will get gamma and lambda distribution.
+
+751
+02:47:23,731 --> 02:47:24,731
+So,
+
+752
+02:47:30,260 --> 02:47:32,860
+En gamla ile say random vereyim olsun.
+
+753
+02:47:40,755 --> 02:47:41,707
+Vereyim bu.
+
+754
+02:47:48,468 --> 02:48:03,724
+Bu, bu
+
+755
+02:48:17,427 --> 02:48:38,427
+You will see that expectation of gamma variable is alpha over lambda and variance of x is alpha over lambda square.
+
+756
+02:48:47,636 --> 02:48:51,636
+ve yine, bu bir eğitim için bir eğitim için.
+
+757
+02:48:57,940 --> 02:49:00,860
+Bu da bu da.
+
+758
+02:49:00,860 --> 02:49:04,140
+Ve bu bir şey bir şey.
+
+759
+02:49:08,948 --> 02:49:16,948
+At least for alpha in 1, 2, 3.
+
+760
+02:49:23,763 --> 02:49:33,403
+You can use the fact that sum of exponentials is gamma.
+
+761
+02:49:39,379 --> 02:49:48,180
+Okay, so this is the end of this part. We have finished the special distributions.
+
+762
+02:50:00,691 --> 02:50:03,723
+Bu, bu
+
+763
+02:50:12,852 --> 02:50:15,632
+Chapter Four
+
+764
+02:50:21,652 --> 02:50:25,092
+What is it? Chapter, what chapter is this?
+
+765
+02:50:36,051 --> 02:50:38,152
+4.2, I think.
+
+766
+02:50:45,363 --> 02:50:47,564
+Bu, bu
+
+767
+02:50:52,819 --> 02:51:00,819
+Anyway, you can find where we finished. So study the book and...
+
+768
+02:51:08,435 --> 02:51:10,435
+Sövbe de problemi.
+
+769
+02:51:12,435 --> 02:51:14,435
+So, we finished this part.
+
+770
+02:51:19,603 --> 02:51:27,443
+Spatial Continuous Distributions
+
+771
+02:51:33,780 --> 02:51:36,780
+Any question? Any questions?
+
+772
+02:51:39,780 --> 02:51:42,780
+No? Okay, then see you next week.
