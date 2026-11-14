@@ -7,3 +7,4 @@
 | 1 | Güz | — | [sube_1/](sube_1/) |
 | 10 | Güz | — | [sube_10/](sube_10/) |
 | 12 | Güz | — | [sube_12/](sube_12/) |
+| 14 | Güz | Esra Keskin Korumaz | [sube_14/](sube_14/) |
