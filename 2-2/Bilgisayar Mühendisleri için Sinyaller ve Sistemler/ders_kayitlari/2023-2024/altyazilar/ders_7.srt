@@ -1,0 +1,3579 @@
+1
+00:00:38,259 --> 00:00:40,140
+Günaydın arkadaşlar, ses geliyor mu?
+
+2
+00:00:43,140 --> 00:00:44,119
+Geliyor hocam.
+
+3
+00:00:44,939 --> 00:00:45,719
+Teşekkür ederim.
+
+4
+00:00:47,060 --> 00:00:48,299
+Bir iki dakikaya başlıyoruz.
+
+5
+00:02:10,675 --> 00:02:18,835
+Son dersimizde Laplace Transform'una giriş yapmıştık. Şimdi kaldığımız yerden devam edeceğiz.
+
+6
+00:02:20,835 --> 00:02:27,475
+Laplace Transform'u Fourier Transform'unun genelleştirilmiş bir haliydi. Fourier Transform'un da
+
+7
+00:02:27,715 --> 00:02:34,835
+DRIV ve şartlarından 3'ü sağlanmadığı durumda Laplace Transform'u da bu işi yapabilmek mümkündü.
+
+8
+00:02:35,412 --> 00:02:45,592
+Bu diriyle şartları, birincisi işaretin sonsuz enerjiye sahip olmaması, sonlu enerjiye sahip olması, yani Absolutely Integrable dediğimiz özellik.
+
+9
+00:02:46,812 --> 00:02:57,752
+Belli bir sınırlı aralıkta, sınırlı sayıda şurada olduğu gibi maksimum ve minimumlar olması gerekiyor. Şurası mesela normal bir şey.
+
+10
+00:02:58,292 --> 00:03:06,731
+Bu problem değil, buralar normal ama şuralara baktığımızda sınırsız minimumlar veya sınırsız maksimumlar görüyoruz.
+
+11
+00:03:07,771 --> 00:03:14,932
+Yine belli bir aralıkta sonlu sayıda süreksizlikler olması gerekir.
+
+12
+00:03:15,451 --> 00:03:24,652
+Eğer burada olduğu gibi şöyle bir süreksizlik noktası, şöyle bir süreksizlik noktası, hani 3 oldu, 4 oldu ama böyle devam edip gidiyor, sonsuza doğru gidiyor.
+
+13
+00:03:25,044 --> 00:03:37,044
+Bakın bir kare dalgada da süreçsizlik var. Bu kare dalgayı biz Fourier serileriyle açabiliriz veya Fourier transformuyla analiz edebiliriz. Hep aynı katsayıları buluruz.
+
+14
+00:03:37,044 --> 00:03:46,044
+Ama iki tane olduğu için problem değil. Ama böyle sonsuza gittiği durumda Fourier transformu çalışmayacaktır dedik.
+
+15
+00:03:46,484 --> 00:03:54,164
+Bunun genelleştirmiş halinin Laplace transformunu kullanacağımızı söyledik. Laplace transformunu geçen dönemden eşitlik olarak biliyorsunuz.
+
+16
+00:03:54,424 --> 00:03:59,024
+İşareti e üzeri eksi st işaretiyle aslında konvolüsyon yapıyoruz.
+
+17
+00:03:59,284 --> 00:04:04,144
+Buradaki S ifademiz en genel hali sigma artı j omega idi.
+
+18
+00:04:04,924 --> 00:04:08,504
+Bu sigma'ya real part diyorduk, buna da imajinari part diyorduk.
+
+19
+00:04:08,764 --> 00:04:12,843
+Eğer bu S'nin real partı sıfırsa
+
+20
+00:04:13,204 --> 00:04:19,504
+Laplace transformu, Fourier transformu aynı oluyordu. Bunun şartlarını konuşmuştuk. Geçen dersimizin kayıtlarında var.
+
+21
+00:04:20,724 --> 00:04:28,783
+Tabi burada Region of Convergence dediğimiz, integralin belli aralıkta yakınsadığı, belli aralıkta ıraksadığı örneklere baktık.
+
+22
+00:04:28,864 --> 00:04:36,124
+Şimdi kısaca onlardan alıp ilerleyeceğim. Biz size geçen dönem Laplace'ı anlatırken işaretlerimizi hep şu şekilde verdik.
+
+23
+00:04:36,915 --> 00:04:41,276
+Orada tabii denklemler vardı, işte e üzeri eksi x falan demiştik.
+
+24
+00:04:41,276 --> 00:04:52,276
+Şimdi bundan sonra artık burada UT gibi veya U-T gibi yan şeyler olacak. Bunlar işaretin sağ taraflı, sol taraflı olması halleri.
+
+25
+00:04:52,276 --> 00:04:58,276
+Şimdi bu işaretin Laplace transformunu almak istersek...
+
+26
+00:05:08,244 --> 00:05:09,544
+Neyse dönüşürüz.
+
+27
+00:05:11,944 --> 00:05:17,444
+Bu işaretini Laplace transformunu almak istersek, normalde integralimiz eksi sonsuzdan artı sonsuza.
+
+28
+00:05:17,444 --> 00:05:23,244
+Ama şu UT'den dolayı sıfırdan sonsuz olacak. Çünkü UT sıfırdan sonraki değerlerde birdi.
+
+29
+00:05:23,744 --> 00:05:27,944
+Dolayısıyla bu integral E üzeri eksi BT, E üzeri eksi ST şeklinde.
+
+30
+00:05:28,844 --> 00:05:33,944
+Eksi T parantezini alırsak da S artı B şeklinde bir şey olacak.
+
+31
+00:05:34,163 --> 00:05:42,163
+Bu integralin hesabına baktığımızda da, eksi bir bölü S artı bir öbürü, E üzeri eksi S artı BT, sonsuzdan sıfıra.
+
+32
+00:05:42,163 --> 00:05:49,163
+Şimdi buranın sınırlarını yerine yazdığımızda, sonsuz yazar yazacağız, bir de sıfır yazacağız.
+
+33
+00:05:49,163 --> 00:05:53,163
+Şimdi sonsuz yazdığımız durumda ve sıfır yazdığımız durumda neler elde edeceğiz?
+
+34
+00:05:53,163 --> 00:06:00,163
+Sıfır yazdığımız durumda sonuç zaten bir. Aradaki eksiden dolayı bir. Alt sınırda doğrudan problem yok.
+
+35
+00:06:00,500 --> 00:06:02,680
+Ama sonsuz yazdığımızda şöyle bir durumdur.
+
+36
+00:06:04,240 --> 00:06:12,899
+Şimdi, şu ifadenin içerisinde eğer S artı B, küçük sıfır olursa, yani negatif olursa, negatif çarpı negatif pozitif.
+
+37
+00:06:13,600 --> 00:06:17,000
+O zaman şuradan gelecek ifade artı sonsuz gibi ifade olur.
+
+38
+00:06:17,879 --> 00:06:24,480
+Dolayısıyla E üzeri sonsuz da bizi sonsuza götüreceği için mutlak integrallenebilir bir sonuç elde etmiyoruz.
+
+39
+00:06:25,620 --> 00:06:34,560
+Dolayısıyla içerinin S artı B'nin ancak pozitif olduğu durumlarda, çünkü burası eksi olursa, burası artı olursa bu ikisinin çarpımı eksi olacak.
+
+40
+00:06:35,220 --> 00:06:39,520
+E üzeri eksi sonsuz bulacağız. E üzeri eksi sonsuz da bir bölü E üzeri sonsuzdur.
+
+41
+00:06:40,200 --> 00:06:43,860
+Bir bölü E üzeri sonsuz da bir bölü sonsuzdur. Sayı bölü sonsuz da sıfırdır.
+
+42
+00:06:44,320 --> 00:06:48,560
+Dolayısıyla burası sıfır gelebilir. Hangi şartta? Bu şartta.
+
+43
+00:06:49,139 --> 00:07:14,560
+S artı B ifadesini biraz açarsak, S yerine biraz önce Sigma artı J Omega artı B demiştik. Büyüktür sıfır olacak. J Omega burada imajiner part olduğu için dikkate almayacağız. Yani burada Sigma'mız eksi B'den büyük olacak. İşte buna biz yakınsaklık bölgesi diyoruz. Şurada zaten bunu uzun uzun izah etmiş. Şimdi Sigma'nın eksi B'den büyük olduğu durumda
+
+44
+00:07:15,124 --> 00:07:20,804
+Böyle bir şey ortaya çıkıyor işaret. Sigma'nın eksi b'nden küçük olduğunda böyle bir işaret çıkıyor.
+
+45
+00:07:20,804 --> 00:07:27,603
+Şu şeyin integrali alınabilirken bunun integrali alınamaz. Çünkü sonsuza gidiyor.
+
+46
+00:07:27,603 --> 00:07:33,283
+Dolayısıyla Region of Convergence sayesinde, bu bilgi sayesinde buna da şunu diyeceğiz.
+
+47
+00:07:33,283 --> 00:07:42,484
+S'nin real partı yani sigma kısmı büyüktür, eksi b olduğu durumda ancak bu dönüşme var diyoruz.
+
+48
+00:07:42,932 --> 00:07:58,972
+Geçen dönem biz size ders anlatıyken, e üzeri eksi x, e üzeri eksi 5x veya e üzeri eksi t, e üzeri 5t gibi şeylerin Fourier, Laplace transformu doğrudan e üzeri 1 bölü s artı 1, 1 bölü s artı 5 gibi şeyler söylüyorduk.
+
+49
+00:08:01,588 --> 00:08:28,708
+güç, diğer şartları dikkate alınca, şöyle şeyler de gelince, bu bilgilerle ancak Laplace Transform'u saklayacağız. Dolayısıyla biz Laplace Transform tablolarında hem dönüşümün kendisini hem de yakın saklık bölgesine dair bir bilgiyi bulacağız. Şimdi buna dikkat edelim, e üzeri eksi bt işaretinin dönüşümü bu. Bu b'nin sıfırdan büyük olduğu durumda,
+
+50
+00:08:30,259 --> 00:08:54,379
+Şöyle bir şey çıkıyor. B0'dan büyükken eksi B negatife düşecek demektir. Dolayısıyla şöyle bir yakın saklık bölgesi elde ediyoruz. Bu yakın saklık bölgesi Reginald Convergence, J omega eksenini dahil ettiği için burada hem Fourier transformu vardır hem de Laplace transformu vardır diyor. Çünkü zaten işaret şöyle bir işaret.
+
+51
+00:08:55,028 --> 00:09:00,028
+Bu da nedir? Bunun Fourier transformunu almıştık. Laplace ve Fourier birbirine eşit olur.
+
+52
+00:09:00,028 --> 00:09:08,028
+Ama B'nin sıfırdan küçük olduğu durumda, bu sefer Reginald-Como örnüsü şuradan başlayacağı için, yani J omega eksenini içermeyeceği için,
+
+53
+00:09:08,028 --> 00:09:19,028
+bunun Fourier transformu alınamaz ama Laplace transformu alınabilir. Bunları konuştuk geçenlerse.
+
+54
+00:09:20,980 --> 00:09:30,720
+Şimdi az önceki örneğe tekrar dikkat edersek, e üzeri eksi b, eksi bt için zaten bir bölü S artı b olacağını biliyorduk. Yanında şöyle bir bilgi ekledik.
+
+55
+00:09:31,360 --> 00:09:41,140
+Şimdi şu integrali hesapladığımızda, bunun da işte e üzeri eksi alfa demişiz, sadece alfa yerine beta koyun. Birebir aynı dönüşüm olduğunu görüyoruz.
+
+56
+00:09:41,740 --> 00:09:46,879
+İşte burada ikisini birbirinden ayırt eden şey, bu yakın saklık bölgesine dair verilen ekstra bilgi.
+
+57
+00:09:47,475 --> 00:10:06,855
+Dolayısıyla size böyle bir bilgi verildiğinde, 1 bölü S artı 5, bunun ters Laplace dönüşümü nedir dediğinizde, E üzeri eksi 5T de olabilir, yanında UT ile beraber, E üzeri eksi 5T, U eksi T, eksi E üzeri 5T de olabilir.
+
+58
+00:10:07,496 --> 00:10:12,816
+İki şarttan bir tanesi olabilir. Neye bakacaksınız? Buradaki ekstra bilgiye bakmanız gerekiyor.
+
+59
+00:10:14,899 --> 00:10:21,779
+Sıklıkla kullanılan Laplace transformlarının bir tablosu var. Bu tablonun içerisinde ekstra bilgi olarak şunları da görüyoruz.
+
+60
+00:10:21,779 --> 00:10:28,579
+Geçen dönemden farklı olarak biz 1'in Laplace'ı, T'nin Laplace'ı, T üzeri L'in Laplace'ı falan bakmıştık.
+
+61
+00:10:28,724 --> 00:10:37,044
+Burada ekstra olarak bir drag delta işaretimiz var. Bunun Laplace'ın 1 olduğunu bilmeniz gerekiyor. Geçen dönemdenkiden farklı olarak.
+
+62
+00:10:37,044 --> 00:10:43,604
+UT işaretimiz, UT zaten şöyle bir 1 gibi işaretti. 1'in Laplace'ı 1 bölü S'ti. Bu da böyle.
+
+63
+00:10:43,604 --> 00:10:51,764
+T'nin Laplace'ı nasıl hesaplıyorduk? T üzeri n'in Laplace'ını. Gerçi burada tabloda var mıymış, yokmuş.
+
+64
+00:10:55,572 --> 00:11:06,692
+1 bölü S'in karesi şeklinde. T üzeri n deyince ne yazacaktık? Şuraya T üzeri 1 diyelim.
+
+65
+00:11:08,692 --> 00:11:15,252
+T üzeri n'in Laplace nasıl hesaplanıyordu arkadaşlar? Geçen dönemden hatırlıyor olmamız lazım.
+
+66
+00:11:25,364 --> 00:11:37,563
+n! bölü S üzeri n artı bir. Yani burada bir! bölü S üzeri iki. Zaten o da buradan geliyor.
+
+67
+00:11:38,364 --> 00:11:43,864
+Veyahut T üzeri sıfır için de aynı şeyi söyleyebiliriz. Sıfır! bölü S üzeri sıfır artı birden bir.
+
+68
+00:11:43,864 --> 00:11:50,663
+T üzeri sıfır da zaten bir demek. O da şuna karşılık geliyor. Pardon, şuna karşılık geliyor.
+
+69
+00:11:51,796 --> 00:12:04,796
+Diğer ifadelerde çok bir farklılık yok. Zaten UT olmasının etkisiyle bakın UT olan bütün durumlarda Sigma'nın eksi alfadan büyük olduğu durumlar.
+
+70
+00:12:04,796 --> 00:12:13,635
+Eğer burada U eksi T eksi işaret varsa o zaman eksi alfadan küçük olduğu durumları göreceğiz. Bunları bilmek gerekiyor dedik.
+
+71
+00:12:14,548 --> 00:12:22,187
+Şimdi Laplace transformu, Fourier transformu da olduğu gibi bazı şeyleri kolaylaştırıyor. Bunlardan bir tanesi de konvolüsyon demiştik.
+
+72
+00:12:24,107 --> 00:12:34,548
+Bunları geçen hafta anlatmam ama kısaca tekrar edeyim. Örneğin sizin XT işaretiniz UT olsun, HT işaretiniz de E üzeri XT UT olsun.
+
+73
+00:12:35,168 --> 00:12:39,408
+Ve biz de YT'yi bulmak istesiz. YT'yi bulmak için yapmamız gereken şey konvolüsyon almak.
+
+74
+00:12:40,067 --> 00:12:42,048
+HT ile X'lerin konvolüsyonunu almak.
+
+75
+00:12:42,419 --> 00:12:54,100
+Ama burada bazen işaretler çok zorlayıcı olabiliyordu. Bakın burada konvolüsyon integralinin adım adım hesaplamasını analitik olarak gerçekleştiriyor.
+
+76
+00:12:54,100 --> 00:13:07,700
+Ve bir sonuca varıyor. Şu şekilde sonucu görüyoruz. Bir de bunu Laplace transformunun özelliğinden ben XT'yi biliyorsam XT'nin Laplace'ın XS olduğunu biliyorum.
+
+77
+00:13:07,892 --> 00:13:19,892
+HD'yi biliyorsam HD'nin Laplace'ın da HS olduğunu biliyorum. Burada YS eşittir. XS çarpı HS diyeceğim. Yani ikisini doğrudan birbiriyle çarpacağım.
+
+78
+00:13:19,892 --> 00:13:27,892
+Şimdi UT'nin Laplace'ı nedir? 1 bölü S'tir. HT'nin Laplace'ı 1 bölü S artı 4'tür.
+
+79
+00:13:28,788 --> 00:13:56,187
+Sadece yanında yakın saklık bölgesi bilgisini tutmamız gerekiyor. Şimdi bu ikisi de UT'ye içerdiği için zaten hep pozitif yönlü işaretler olacak. O zaman ben 1 bölü S ile 1 bölü S artı 4'ü çarpacağım. Bu çarpımın sonucunun eğer ben ters laplasını alırsam Y, T'yi bulurum. Burada kısmi kesirlere, parçalı kesirlere ayırma özelliğimizi uyguluyoruz. Bu da nedir? 1 bölü 4 bölü S, eksi 1 bölü 4 bölü S artı 4.
+
+80
+00:13:56,820 --> 00:14:19,379
+Şu neye benziyor? Bu bir bölü dört çarpı UT aslında. Önünde sadece bir kat sayı var. Şu da bir bölü şeyden bakarsak, tablodan da bakabilirsin ama şey bir bölü dört yine bir kat sayı, bir bölü S artı dört. Bu da E üzeri eksi dört T'dir.
+
+81
+00:14:19,860 --> 00:14:33,200
+Tabi bu da UT olarak verildi ki buna da UT diyeceğiz. UT parantezini ve 1 bölü 4 parantezini alırsak, 1 bölü 4 ve UT parantezinde 1 eksi e üzeri eksi 4'te bunun konvolüsyon sunucu.
+
+82
+00:14:34,200 --> 00:14:37,280
+Şimdi şu bilgilere de dikkat edelim, bunlar da önemliydi.
+
+83
+00:14:39,120 --> 00:14:41,280
+Region of convergence eğer böyle size...
+
+84
+00:14:42,067 --> 00:14:49,387
+Biraz önceki örneklerde olduğu gibi tek bir işaretten oluşuyorsa, Region of Pomba Öncez tek bir noktadan oluşuyor.
+
+85
+00:14:49,907 --> 00:14:55,527
+Bunlara kutup diyoruz. Şunlar kutup arkadaşlar, pole. Ve çarpıyla gösterilir.
+
+86
+00:14:56,387 --> 00:15:04,087
+Bunu nereden elde edeceğiz? Bizim bir Hs'imiz olacak. Bu Hs, Ys'in Xs oranı.
+
+87
+00:15:09,268 --> 00:15:15,268
+Paydalarının sıfıra eşitlediği noktalar, Xs'in sıfır olduğu noktalarda bunun kökleri
+
+88
+00:15:16,168 --> 00:15:18,168
+Pols oluyor kutuplar.
+
+89
+00:15:18,168 --> 00:15:24,268
+Ys'in sıfıra eşit olduğu durumda bunun kutu şeyleri de bunlarda zeros diyoruz.
+
+90
+00:15:25,067 --> 00:15:30,268
+Zero pole diagram dediğimiz şeyler de vardı. Birazdan gelecek zero pole diagram.
+
+91
+00:15:30,868 --> 00:15:33,868
+Siz bir sisteme ait
+
+92
+00:15:33,971 --> 00:15:46,771
+HES'i bu şekilde S düzleminde veriyorsanız, bu sistemin kutuplarını ve sıfırlarını kullanarak sistemin yakın saklık bölgesi hakkında bilgi sahibi olabiliyorsunuz.
+
+93
+00:15:47,611 --> 00:15:57,572
+Bir de bunun dışında şu özelliği var. Sistemin BIBO kararlılığını ifade etmiştik. Bu BIBO kararlılığı hakkında da bilgi elde edebiliyoruz.
+
+94
+00:16:00,596 --> 00:16:15,596
+Az önceki örneğimizde gördüğümüz gibi yakın saklık bölgesi, işte ya şu kökse, çünkü buranın kökü eksi B, işte bunun sağ tarafında veya sol tarafında. Peki iki veya daha fazla olursa, o zaman kesişimlerine bakacağız arkadaşlar.
+
+95
+00:16:16,496 --> 00:16:25,256
+Bu örneklere baktığımızda E üzeri eksi T, UT. Bunun yakın saklık bölgesi, işte önce buranın köküne bakarsak eksi 1.
+
+96
+00:16:25,875 --> 00:16:33,475
+Yakın saklık bölgesi bu UT olduğu için sağ taraflı olduğu için eksi birden büyük değerler bunun yakın saklık bölgesidir.
+
+97
+00:16:35,475 --> 00:16:38,275
+Eksi birden artı sonsuza kadar bütün değerdir.
+
+98
+00:16:38,275 --> 00:16:45,075
+Buraya baktığımızda E üzeri 2T bunun U eksi T dikkat edelim.
+
+99
+00:16:45,075 --> 00:16:52,115
+Kökü 2, eksi T sol taraflı olduğu için bunun yakın saklık bölgesi de
+
+100
+00:16:52,244 --> 00:16:54,244
+İkiden küçük olan değerler.
+
+101
+00:16:54,244 --> 00:16:58,244
+Hem bunu hem de bunu sağladığı için ne yapıyoruz?
+
+102
+00:16:58,244 --> 00:17:02,244
+Yakın saklık bölgesini bu ikisinin arasında tutuyoruz. İkisinin kesişimi olarak tutuyoruz.
+
+103
+00:17:02,244 --> 00:17:10,244
+Aynı işte çok dereceli eşitsizliklerde çözüm yaparken tablo yapıyorsunuz ya, burada da ona benzer bir mantık var.
+
+104
+00:17:10,244 --> 00:17:12,244
+İkisinin kesişimini dikkate alıyoruz.
+
+105
+00:17:12,244 --> 00:17:15,244
+Ve işin sonundaki yakın saklık bölgesi de,
+
+106
+00:17:17,056 --> 00:17:42,316
+Sigma'nın eksi birden büyük olduğu, Sigma'nın ikiden küçük olduğu şeklinde böyle yazılıyor. Çünkü size bunu verildiğinde, tekrar ters dönüşüm yapmak istediğinizde, tamam bu bir e üzeri eksi t ama acaba sağ tarafı mı sol tarafı mı? Sigma eksi birden, bunun payından, yani kökünün, şey paydasının kökünden büyük olduğu için, onu sıfırlayan değerden büyük olduğu için buna
+
+107
+00:17:42,736 --> 00:18:05,675
+UT diyeceğiz. Aynı şeyi zaten elde ediyoruz. Eksi, bu da E üzeri artı 2T. Eksi ise artı, artı ise eksi. Peki bu Sigma 2'den küçükse o zaman bu U-T sol taraflı bir işaret diyeceğiz. Bunları birlikte kullanmaya dikkat edelim. Şurada bir diğer örnek var.
+
+108
+00:18:07,571 --> 00:18:33,411
+4 bölü S artı 3, bu nedir? E üzeri eksi 3T'nin laplasıdır. 4 olunca da başına 4 gelecek. Peki, sigma burada bunun kökünden büyük mü? Baktığım zaman bize verilen ifade, evet. O zaman bu sağ taraflı işaret UT. Şurada baktığımızda E üzeri 6T, bu da sol taraflı işaret, U eksi T diyeceğiz.
+
+109
+00:18:33,907 --> 00:18:40,387
+Arada bir normalde bakın, bunun önünde bir eksi var. Bir eksi de şuradan geleceği için bu artı buradan giriyor. Buna dikkat edelim.
+
+110
+00:18:41,447 --> 00:18:52,847
+Çünkü şunun ters taplası, eksi 10 çarpı e üzeri 6t çarpı u eksi t. Bir de arada kendisinden bir eksi var.
+
+111
+00:18:53,527 --> 00:18:54,788
+Dolayısıyla burayı artı yapıyoruz.
+
+112
+00:18:56,819 --> 00:19:09,539
+Şöyle bir ifadenin inverse taplası nedir? Bakın iki farklı eşitlik var ama Sigma'yı doğrudan 6'dan büyük vermiş. O zaman bunların ikisi de sağ taraflı bir işaret diyebiliriz.
+
+113
+00:19:09,539 --> 00:19:19,539
+E üzeri eksi 3'te, E üzeri 6'te, 4'ler ve 10'lar başa gelecek. Bu da Sigma'sı...
+
+114
+00:19:19,731 --> 00:19:32,731
+3'den büyük, yani eksi 3'den büyük olacak, 6'dan da büyük olacak, e ikisinden de büyük, o zaman ikisi de UT diyebiliyoruz. Şöyle baktığımızda, bu sefer de ikisinden de küçükse, o zaman bunlar sol taraflı işaret.
+
+115
+00:19:32,731 --> 00:19:45,731
+Eksi 3'den de küçük, 6'dan da küçük, o zaman bu U eksi de, o zaman başına gelecek bir tane eksi var. Şurada da zaten 2 eksi burayı art yapacak, böyle bir sonuç elde edeceğiz.
+
+116
+00:19:46,579 --> 00:20:04,779
+Şimdi bu transfer fonksiyonu, frekans responsu diye bir şey konuşmuştuk Fourier transformunda. Tekrar edelim. Şimdi bir XT işaretini şuraya yazayım. Fourier transformu X omega idi.
+
+117
+00:20:06,379 --> 00:20:13,779
+HT bizim impuls responsumuzdu. Buna da H omega demiştik.
+
+118
+00:20:16,627 --> 00:20:25,927
+Peki biz Y, T'yi hesaplarken X, T ile H, T'yi konvolüsyon etmemiz gerektiğini biliyoruz.
+
+119
+00:20:27,127 --> 00:20:30,527
+Ama Fourier Transformer'ın da bir özelliği vardı.
+
+120
+00:20:31,867 --> 00:20:39,527
+Bunları birbirine çarparak şeyi bulabiliyorduk. O zaman çarparsak X omega çarpı H omega.
+
+121
+00:20:40,327 --> 00:20:42,327
+O zaman bu da ne olacak? Y omega olacak.
+
+122
+00:20:42,867 --> 00:20:48,427
+Zaman düzleminde konvolüsyon yapmak yerine, frekans düzleminde çarpma yapabiliyoruz.
+
+123
+00:20:48,427 --> 00:20:55,747
+Şimdi burada H-Omega'yı yalnız bırakmak için iki tarafı da X-Omega'ya bölersen bu işi olur.
+
+124
+00:20:55,747 --> 00:20:58,867
+Y-Omega bölü X-Omega.
+
+125
+00:20:58,867 --> 00:21:04,867
+Buradan elde ettiğim şey frekans-response oluyor arkadaşlar.
+
+126
+00:21:04,867 --> 00:21:06,867
+Bakın bu impuls-response.
+
+127
+00:21:11,827 --> 00:21:13,827
+Kuda frekans, seskunt, frekans, ce var.
+
+128
+00:21:17,652 --> 00:21:20,451
+Bu Laplace tarafında ne olacak?
+
+129
+00:21:21,451 --> 00:21:28,251
+YT eşittir, XT çarpı konvolüsyon HT yerine
+
+130
+00:21:29,051 --> 00:21:31,551
+YT'nin Laplace'ı büyük YS
+
+131
+00:21:32,152 --> 00:21:37,851
+XT'nin Laplace'ı büyük XS çarpı büyük HSS diyeceğiz.
+
+132
+00:21:37,851 --> 00:21:43,652
+Yani buradan HS'imiz eğer bu buradaki gibi Omega'ya bağlı da S'ye bağlı bir şey ise
+
+133
+00:21:46,099 --> 00:21:54,259
+X dergesi. Burada bunun adı da arkadaşlar transfer fonksiyonu. Transfer fonksiyonu şu demek.
+
+134
+00:21:56,000 --> 00:22:03,680
+Devre dersi gördüğümüz için söyleyebiliriz. Herhangi bir elektrik devreniz var. Bunun bir girdisi var, inputu var, bir de outputu var.
+
+135
+00:22:05,059 --> 00:22:10,420
+İşte arada dirençler, bobinler, şunlar, bunlar neler, kondansatörler, ne kullanıyorsanız kullanıyorsunuz.
+
+136
+00:22:11,028 --> 00:22:22,628
+Siz buraya bir girdi uyguladığınızda, buradan bir çıktı elde edeceksiniz. Bu çıktının, girdiye oranı ama S-düzlemindeki oranı, size transfer fonksiyonunu söyler.
+
+137
+00:22:22,628 --> 00:22:32,228
+Dolayısıyla bir girdiye kaçlık, nasıl bir çıktı elde edeceğinizi bu tarz durumlarda elde edebilirsiniz. Şimdi MATLAB'de ve Python'da tf dediğimiz bir şey var, transfer function.
+
+138
+00:22:33,107 --> 00:22:57,207
+Bu transfer fonksiyonunun payını ve paydasını nominator ve denominator olarak kat sayılar şeklinde, genellikle burada da polinomları görürüz, verdiğinizde size bu transfer fonksiyonunu otomatik olarak analiz eden araçlar var. Örneğin bu sonlu bir işaret midir? Bibo kararlılığı var mıdır? Sıfırları, kutupları nelerdir? Bunları size söylüyor.
+
+139
+00:22:57,748 --> 00:23:01,748
+Şöyle bir örnek yapalım. İşte H1S'imiz kabul edelim ki şöyle bir şey olsun.
+
+140
+00:23:01,748 --> 00:23:04,748
+Normalde bunun ters laplasını almak için biz ne yapıyoruz?
+
+141
+00:23:04,748 --> 00:23:10,748
+İşte basit kesirlere ayırma yöntemi, işte integral tablolarına göre birbirine özelliklere bakma yöntemi falan diyoruz.
+
+142
+00:23:10,748 --> 00:23:15,748
+Bu araçlar size ters laplas dönüşümünü de doğrudan alabiliyor.
+
+143
+00:23:15,748 --> 00:23:20,748
+Nominator kısmında ne var? Burası ikinci derecede ne olduğu için 1.04 diyeceğiz.
+
+144
+00:23:21,395 --> 00:23:28,395
+Şurada da 1 var, 4 var, 7 var, 15 var. Bütün terimler olduğu için 31 var, 75 var.
+
+145
+00:23:28,395 --> 00:23:31,395
+Bunun transfer fonksiyonu bu şekilde çıkıyor.
+
+146
+00:23:31,395 --> 00:23:42,395
+Sonra bunun üzerinde yine bu fonksiyonun devamında 0'ları, yani şurayı 0 yapan 0'lar elde edilebiliyor.
+
+147
+00:23:45,332 --> 00:23:59,192
+İki taraflı bilaterel ve unilaterel Laplace dönüşüm demiştik geçenlerde. Bunların bazı özelliklerine bakalım. Fourier ile aynı olduğu için çok hızlı geçeceğiz. Linerlik var arkadaşlar. Yani böyle bir işaret varsa bunların ayrı ayrı Laplace'larını alabiliyorsunuz.
+
+148
+00:24:00,672 --> 00:24:11,912
+Zamanda geciktirme özelliği. Bir şeyi Fourier transferinde zamanda geciktirince E üzeri xc omega gibi bir şeyle çarpıyorduk. Eğer siz burada işareti xc'yi c kadar ötelerseniz
+
+149
+00:24:12,435 --> 00:24:28,435
+X'nin Laplace xs'ti, işarete e-e-cs kadar bir çarpan ekliyorsunuz. Bunun tersi de doğru. Eğer işarete e-cs, e-c-t gibi bir şey yapacaksanız da o zaman bu da ne oluyor?
+
+150
+00:24:28,435 --> 00:24:35,147
+S dizleminde o zaman s-c yazıyorsunuz. Birbirini aslında tamamlayan şeyler.
+
+151
+00:24:36,147 --> 00:24:57,827
+Zamanında türev aldığımızda J omega ile çarpıyorduk. Burada da S ile çarpıyoruz. Ama bu bilateral dönüşümde. Geçen dönem size bu tarz türevli uygulamalarda bir de bunun S0, pardon Y0 gibi değerlerini, tek taraflı dönüşümdeki değerlerini çıkartmayı göstermiştik. Onlar geçir ama iki taraflı olursa doğrudan S ile çarpmak mümkün.
+
+152
+00:24:58,548 --> 00:25:03,288
+İntegralini aldığımızda da S'e bölüyoruz. Bu da bu şekilde.
+
+153
+00:25:03,892 --> 00:25:08,492
+Bunlar birbirini simetrik olarak sağlayan özelliklerdir.
+
+154
+00:25:08,492 --> 00:25:17,332
+Zamanda ölçekleme yaparsanız, bir x işaretinin alfa kadar ölçeklenmesi Laplace düzleminde buna karşılık geliyor.
+
+155
+00:25:17,332 --> 00:25:22,692
+Veya t üzeri n ile çarparsanız bunu n'inci dereceden türevini alıyorsunuz.
+
+156
+00:25:22,692 --> 00:25:26,492
+S düzleminde ama bir de eksi bir üzeri n ile çarpıyorsunuz.
+
+157
+00:25:26,492 --> 00:25:30,692
+Eksponansiyelle çarpımı biraz önce söylediğimiz şu özelliğin birebir.
+
+158
+00:25:31,028 --> 00:25:33,707
+Zıttı diyebiliriz.
+
+159
+00:25:34,447 --> 00:25:39,707
+İşareti zaman düzleminde E üzeri alfa t ile çarptığımıza S düzleminde S x'e olacak.
+
+160
+00:25:39,947 --> 00:25:42,508
+Sinüsle çarptığımızı geçen hafta konuşmuştuk zaten.
+
+161
+00:25:43,508 --> 00:25:53,207
+İki farklı J omega kadar, buradaki kat sayı kadar omega düzleminde veya S düzleminde belli miktar öteleme yapmış oluyoruz.
+
+162
+00:25:55,539 --> 00:26:02,639
+Konvolüsyonu zaten söyledik. Transfer fonksiyonunu az önce anlattım. Bunların nereden geldiğini söyledim. Burayı geçiyorum.
+
+163
+00:26:03,139 --> 00:26:08,639
+Inverse-Laplace transform var. Inverse-Laplace transform bakın şu şekilde hesaplanıyor. Biraz doğru bir şey.
+
+164
+00:26:09,039 --> 00:26:19,839
+Çünkü burada integralin sınırlarında imajiner sayılar kullanıyorsunuz. Dolayısıyla bunu kullanmak çok kolay değil. Bunun yerine biz
+
+165
+00:26:20,019 --> 00:26:27,500
+Böyle bir YS elde ettiğimizde veya bir eşitlik elde ettiğimizde bunu kısmi kesirlere, parçalı kesirlere ayıracağız.
+
+166
+00:26:27,500 --> 00:26:34,700
+Ve Laplace transformu ikillerini kullanarak çok rahat analiz edeceğiz. Zaten size verilen sorular da bununla ilgili. Örnek.
+
+167
+00:26:34,700 --> 00:26:43,220
+En son burada kalmıştık iç anahtar. Şunun ters Laplace dönüşümü nedir diye aldığımızda. Şimdi burada farklı durumlar var.
+
+168
+00:26:43,955 --> 00:26:53,955
+Bunu ifadeye, aşağıdaki ifade doğrudan çarpanlarına ayrılıyorsa ve herhangi bir katlı kök yoksa, çarpanlarına ayrılacak ve katlı kök olmayacak bu bir.
+
+169
+00:26:53,955 --> 00:27:07,955
+Çarpanlarına ayrılınca katlı kök olma durumu var. Çarpanlarına ayrıldığında bir de şuradakinin real kökü değil de imajinal kökü olma durumu var. Bunları şimdi ayrı ayrı örneklerle inceleyeceğiz.
+
+170
+00:27:08,528 --> 00:27:15,968
+Hepsinin matematiğini teker teker çarpanları ayırmak için yapılması gereken şeyler anlatmayacağım. Çünkü geçen dönemden zaten gördük.
+
+171
+00:27:17,647 --> 00:27:19,647
+Genel olarak nasıl alınıyordu?
+
+172
+00:27:19,647 --> 00:27:28,528
+Şimdi bu ifade A bölü S artı 1 ile B bölü S artı 2'nin faydalarının eşitlenmiş halidir.
+
+173
+00:27:28,852 --> 00:27:39,192
+Yani ben burayı S artı 2 ile burayı S artı 1 ile bir şeyler yapmışım. Ne olmuş? Bu A çarpı S artı 2 artı B çarpı S artı 1. O da ne olmuş? 3S eksi 1.
+
+174
+00:27:39,951 --> 00:27:46,792
+Burada S'nin yerine, A'nın yerine, B'nin değerine değerler vererek işte bir şekilde eşitlikler bularak A'yı bulursunuz, B'yi bulursunuz.
+
+175
+00:27:46,991 --> 00:27:51,572
+Bu A bölü S artı 1 ise A çarpı E üzeri eksi T ile bir şeydir.
+
+176
+00:27:52,084 --> 00:27:55,864
+Bu da B bölü S artı 2 ise B çarpı E üzeri eksi 2T'dir.
+
+177
+00:27:56,424 --> 00:28:11,744
+Eğer bunun yakın saklık bölgesine dair bilgiler de veriliyorsa, işte Sigma eksi 1'den küçük, artı 2'den büyük, eksi 1 artı 2 arasında o zaman UT, U eksi T gibi bilgiler yazarak işaretten YS'den YT'yi elde edeceğiz.
+
+178
+00:28:12,980 --> 00:28:31,579
+Şu A ve B'lerin bulunmasına rezilidiler diyoruz. Şimdi bunların bulunması için adım adım ilerlemiş. Geçelim. Örnek olarak RC devresinin bir transfer fonksiyonu size veriliyor. Burada 1 bölü RC bölü S artı 1 bölü RC çarpı S var.
+
+179
+00:28:37,940 --> 00:29:01,620
+RC'ler kafanızı karıştırmasın, bunlar sabit sayılar. Artı B bölü S artı 1 bölü RC. O zaman bizim bu A ve B'yi bulmamız lazım. Benzer şekilde bulduğumuzda bunlar 1 geliyormuş, ikisi de güzel. Şimdi 1 bölü S neyin laplasıdır? 1 bölü S doğrudan UT'nin laplasıdır. 1 bölü S artı 1 bölü RC. Bu da E üzeri eksi.
+
+180
+00:29:02,740 --> 00:29:27,740
+T çarpı, T bölü RC olur. Şu ifadenin eksi t'li'sini yazıyoruz, o kadar. Peki bu, Laplace-Trans şey, RC devresi olduğu için, bir devrenin negatif gibi bir durumu olmaz. Yani devreyi çalıştırırsanız, T eşittir, sıfırandır. Daha sonra devam eder. O zaman bu UT olacaktır zaten. Bu ikisini bir araya getirdiğinizde UT parantezine de alırsanız,
+
+181
+00:29:28,372 --> 00:29:33,771
+Ne geliyor? 1-e-t bölü RC.
+
+182
+00:29:34,791 --> 00:29:38,152
+Oradaki RC devresinin analizini mesela bu şekilde yapabilmek mümkün.
+
+183
+00:29:38,412 --> 00:29:39,592
+Şimdi biraz daha ilerleyelim.
+
+184
+00:29:41,791 --> 00:29:44,791
+Kabul edelim ki, YS'imiz şöyle bir şey çıktı.
+
+185
+00:29:46,412 --> 00:29:50,231
+2 bölü S artı 3, 4 bölü S artı 5, bir de şurada artı 2 var.
+
+186
+00:29:51,352 --> 00:29:53,251
+Şuna direct term diyoruz arkadaşlar.
+
+187
+00:29:54,751 --> 00:29:54,951
+Şimdi
+
+188
+00:29:55,571 --> 00:30:02,571
+Bunu eğer doğru düzgün bir ys formatında yazmak istiyorsak bir kere payda eşitleme yapacağız.
+
+189
+00:30:02,571 --> 00:30:14,571
+Payda eşitleme yaptığımızda, yani şurayı S artı 5 ile eşitleyeceğiz, burayı S artı 3 ile eşitleyeceğiz, şurayı da S artı 3 çarpı S artı 5 ile eşitleyeceğiz.
+
+190
+00:30:14,571 --> 00:30:21,571
+Ve şunu elde edeceğiz. Tamam mı? Başka yaptığı bir şey değil yani şu aradaki adımlar size bunu söylüyor.
+
+191
+00:30:22,324 --> 00:30:32,403
+Peki, böyle bir ifadeyi bulduktan sonra ne yapmamız gerekiyor? Bunu parçalı basit kesirlere ayırmaya çalışacağız.
+
+192
+00:30:35,683 --> 00:30:37,124
+Başka da bir şey yok.
+
+193
+00:30:39,403 --> 00:30:42,663
+Şurada başka özellik ne varmış? Bir ona bakalım.
+
+194
+00:30:42,663 --> 00:30:44,663
+Ha, burada...
+
+195
+00:30:46,259 --> 00:31:05,259
+Şu R1, R2 değerleri nasıl bulunur? Şimdi bunun en kolay yolu, R1'i bulmak için şu içeriği S'nin yerine eksi bir verirseniz burası sıfır olur. R2'yi bulmak için eksi bir verirseniz S'nin yerine burası sıfır olur. E burada da zaten bir eksi bir verdiğiniz buradan bir sayı gelecek, R2'yi bulsunuz.
+
+196
+00:31:05,259 --> 00:31:11,051
+Artı bir verirseniz öbürünü bulabilirsiniz. Ve bu şekilde direkt R1, R2 değerleri çıkar.
+
+197
+00:31:11,092 --> 00:31:25,092
+Burada sadece bunların nasıl bulunacağını söylüyor. Yani payda eşitleme yaptıktan sonra, şurada söylediğim gibi, burada mesela S'nin yerine eksi 2 verirsek, burası sıfır olur. O zaman B'yi buluruz.
+
+198
+00:31:25,092 --> 00:31:36,652
+Şurada da zaten 3 çarpı eksi 2, eksi 1 eşittir. Ne oluyor? Eksi 1 verdiğimizde, eksi 1 oluyor, eksi B olacak.
+
+199
+00:31:36,852 --> 00:31:40,852
+Şuradaki sayının tam negatifini aldığınızda doğrudan B'yi bulursunuz.
+
+200
+00:31:41,452 --> 00:31:46,812
+S'nin yerine burada eksi 1 verirseniz de bu gider. Bu sefer A'yı bulursunuz.
+
+201
+00:31:47,432 --> 00:31:50,032
+Şurada anlattığımız mevzu bundan başka bir şey değil.
+
+202
+00:31:52,432 --> 00:32:02,312
+Dolayısıyla biz YS'i bu şekilde bulduktan sonra, yani biraz önce şurada anlattığı şöyle bir ifadeyi, R1 ve R2'yi bulduktan sonra, R1'i eksi 4 buluyormuş bakın.
+
+203
+00:32:02,867 --> 00:32:05,807
+R2'yi de 7 buluyormuş, burada olduğu gibi.
+
+204
+00:32:06,647 --> 00:32:07,127
+Bu nedir?
+
+205
+00:32:07,127 --> 00:32:11,427
+Eksi 4 bölü E üzeri eksi T.
+
+206
+00:32:12,927 --> 00:32:19,647
+Artı 7 eksi 4 bölü, eksi 4 çarpı E üzeri eksi T, artı 7 çarpı E üzeri eksi 2T.
+
+207
+00:32:20,407 --> 00:32:27,008
+Muhtemelen bununla alakalı yakın sağlık bölgesi vermediği için doğrudan bunu pozitif taraflı UT olarak düşünüp,
+
+208
+00:32:27,039 --> 00:32:40,159
+Bu şekilde vereceğiz. Eğer size bir yakın saklık bölgesi sigma, şu aralıklardaysa, örneğin 2'den küçükse, 1'den büyükse deseydik, şimdi 1'den, eksi 1'den büyükse, pardon, eksi 1'den büyük olduğu için şurası doğru.
+
+209
+00:32:41,079 --> 00:32:52,799
+O zaman şöyle bir şey verseydik de ne olacaktı? Eksi 7 çarpı E üzeri eksi 2T U eksi T derdi. Eğer böyle bir sigma bilgisi verilmiş olsaydı. Burada anlaşılmayan bir şey var mı?
+
+210
+00:32:54,771 --> 00:33:00,771
+Bakın en çok hata burada yapılıyor. Yani size Sigma verildiğinde bunu dikkate almanız gerekecek arkadaşlar.
+
+211
+00:33:05,556 --> 00:33:11,775
+Daha kapsamlı olarak kısmı keserlere ayırmanın nasıl olacağını, şimdi birazcık bakalım örnekler üzerinde.
+
+212
+00:33:12,635 --> 00:33:28,855
+Şimdi ayırdığınız bu payda kısmı, şu kısım, şöyle birbirinden farklı ve hiçbir şekilde katlı olmuyor. Yani karesi, küpü bir şey yok. Burada doğrudan birinci dereceden şeyler var.
+
+213
+00:33:31,059 --> 00:33:57,160
+Bu A bölü SP-1, yani bir köküne P1 dedik, öbürüne P2 dedik. Bunlar oldu. Peki bunların sonucu nedir? K1 çarpı E üzeri artı P1 T. Sonra P2 T, E üzeri P2 T, E üzeri P3 T böyle devam eder gider. P'nin değerlerine gelir. Kiminde eksi olur, kiminde artı olur ona göre de zaten işareti değiştirirsiniz. Bu bir.
+
+214
+00:33:58,036 --> 00:34:18,596
+Burada onun yine nasıl yapıldığından falan anlatıyor. Buralara geçelim. Örnek. Bakın bu sefer Sigma bilgisini de vermiş. 10S bölü S artı 4 çarpı S artı 9. Biz buradan K1 bölü S artı 4, K2 bölü S artı 9 diye neyi bulacağız? Kısmi kesilere ayırmaya bulacağız.
+
+215
+00:34:24,947 --> 00:34:29,427
+Artı K2 çarpı S artı 4 diye bir şey. Bu da eşittir 10S.
+
+216
+00:34:31,007 --> 00:34:39,068
+S'in yerine eksi 9 verdiğimizde K2'yi buluruz. S'in yerine eksi 4 verdiğimizde de K1'i buluruz.
+
+217
+00:34:39,807 --> 00:34:46,768
+Bunlar sağolsunlar bulmuşlar. Eksi 8 ve 18'miş. Demek ki bu ifade ne oluyormuş arkadaşlar?
+
+218
+00:34:47,667 --> 00:34:49,648
+Eksi 8 bölü S artı 4.
+
+219
+00:34:51,123 --> 00:35:03,963
+18 bölü S artı 9. Güzel. Şimdi, S artı 4 bana 1 bölü S artı 4, E üzeri eksi 4 T'yi söylüyor. 1 bölü S artı 9, E üzeri eksi 9 T'yi söylüyor. Bunda bir şey yok.
+
+220
+00:35:05,063 --> 00:35:13,603
+Şimdi Sigma, eksi 4'ten büyükse. Şimdi bunun kutuplarına bakalım. Bunun yakın saklık bölgesi eksi 4'ten yani.
+
+221
+00:35:13,603 --> 00:35:18,403
+Bunu sıfırlayan şey eksi 4'ten başlıyor. Bu da eksi 9'dan başlıyor.
+
+222
+00:35:18,579 --> 00:35:39,300
+İkisi de eksi 4'ten büyük durumlar olacak. Şimdi eksi 4 burada, eksi 9 burada sayı doğrusunda. Yakın saklık bölgesi de bundan büyük şey. O zaman bu sağ taraflı bir işarettir doğrudan. Eksi 8, eksi 7 olarak aynen kalacak. Orada 18, 18 olarak aynen kalacak. Buraya da bir UT'ye getireceğiz. Bu kadar basit.
+
+223
+00:35:42,516 --> 00:35:53,275
+Sizin köklerinizden bir tanesi veya birkaç tanesi bu şekilde bir karesi küpü gibi tekrarlı bir kök içeriyorsa, o zaman yapacağımız şey biraz değişiyor.
+
+224
+00:35:53,775 --> 00:36:00,436
+Burada uzun uzun anlatmışlar, işin örneğine baktığımızda aslında kolay.
+
+225
+00:36:00,956 --> 00:36:06,456
+O zaman şunu yapacağız arkadaşlar. 10S bölü S artı 4'ün karesi bölü S artı 9.
+
+226
+00:36:06,836 --> 00:36:08,376
+S artı 9 kolay.
+
+227
+00:36:08,980 --> 00:36:28,319
+İşte K2 demiş buna, K2 böyle S artı 9 yazıp bırakıyoruz. Eğer böyle katlı kök varsa, bunun birin biri, birin ikisi, birinci kök, birinci kökün ikinci durumu gibi, bir kendisini yazıyoruz, bir de kareli olanı yazıyoruz. Dolayısıyla bizim 3 tane burada parçamız olacak.
+
+228
+00:36:28,840 --> 00:36:35,820
+Şimdi şunların ters tatlısı kolay. E üzeri eksi 4D, E üzeri eksi 9D. Şu neye benziyor?
+
+229
+00:36:37,139 --> 00:36:48,820
+Bunun neye benzediğine bakarken şimdi Laplace Transform'da 1 bölü S²'nin Laplace'ı nedir? Bu aklımıza gelsin. Ters Laplace. Bu neyin ters Laplace'ıydı?
+
+230
+00:36:55,123 --> 00:37:01,344
+Pardon, Main Laplace'ıydı. Bazen terimler karışıyor. Bu T değil mi arkadaşlar?
+
+231
+00:37:01,344 --> 00:37:11,623
+T'nin Laplace'ını aldığınızda T üzeri 1, yani 1! bölü, S üzeri 1! artı 1! Yani 1 bölü S² elde ediyoruz.
+
+232
+00:37:11,623 --> 00:37:22,003
+Ama burada bir S'de dönüşüm var. Biraz önce E üzeri alfa T ile XT işaretini çarparsak
+
+233
+00:37:22,324 --> 00:37:28,523
+Bunun Laplace dönüşümünde XS-alpha kadar öteleme olduğunu ifade etmiştik.
+
+234
+00:37:28,603 --> 00:37:38,344
+Dolayısıyla biz bu T işaretini E üzeri eksi 4T gibi bir şeyle çarpmışız ki S yerine S artı 4 gelmiş.
+
+235
+00:37:40,603 --> 00:37:46,143
+Dışarıdaki K12 ne olacak hocam? O da dışarıya zaten K12 olarak bir çarpan olarak gelecek.
+
+236
+00:37:46,143 --> 00:37:48,284
+Yani şuraya K12 çarpanı ekleyeceğiz.
+
+237
+00:37:49,204 --> 00:38:13,104
+Peki, paydaları nasıl eşitleyeceğiz? Paydaları eşitlemek de çok zor değil. Yani K12, K11 ve K2 değerleri nasıl bulunacak dersek, şurayı S9 ile çarpacağız. Burayı S4 ve S9 ile çarpacağız. Yani payda eşitleme yapacağız. Buradaki yapılan işlemler bunu söylüyor size. Şurayı da S4'ün karesi ile çarpacağız. Başka bir şey değil.
+
+238
+00:38:16,532 --> 00:38:29,652
+Sayısal değerleri hesapladığımızda, K12 dediğim şey, eksi 8 geliyormuş. Şimdi, eksi 8 bölü, S artı 4'ün karesi.
+
+239
+00:38:32,172 --> 00:38:43,412
+Buradan, bunun ters laplasını alırsak, alalım. Eksi 8 çarpı, T çarpı, E üzeri eksi 4, T gelecek.
+
+240
+00:38:45,523 --> 00:38:58,923
+Burada da Sigma'yı 4'ten büyük vermiş. Şimdi Sigma 4'ten büyük olduğu için nedir diyeceğiz? Şu payda eksi 4. Bundan büyükse bu UT gibi bir işarettir. Yanında da UT'ye ekliyoruz. Bu kadar.
+
+241
+00:39:00,264 --> 00:39:05,923
+K11'i arıyor size. K11 18 bölü 5'miş. Şimdi 18 bölü 5 olunca...
+
+242
+00:39:06,516 --> 00:39:20,516
+18 bölü 5 bölü S artı 4'tir. Bu zaten 18 bölü 5 çarpı E üzeri eksi 4T'dir. E bu da eksi 4 Sigma 4'ten büyük olduğu için ne olacak? Bu da ULTI olacak.
+
+243
+00:39:22,916 --> 00:39:29,676
+K2'de neyse artık o da K2 çarpı E üzeri eksi 9T şimdi çözümü de var. Böyle bakarız.
+
+244
+00:39:30,164 --> 00:39:40,164
+Dolayısıyla bakın böyle bir şey geldiğinde bizim elde ettiğimiz sonuç, x8xTxE4T dedik, o şuradan geliyor.
+
+245
+00:39:40,164 --> 00:39:48,164
+Şunlar zaten 18 bölü 5, 18 bölü 5 diye gelmiş. Hepsine de UT yazıyoruz. Niye? Eksi 4'ten büyük.
+
+246
+00:39:48,164 --> 00:39:55,164
+Bu, eksi 4'ten, bir dakika, sigma 4'ten büyük olduğu durum demiş.
+
+247
+00:40:00,000 --> 00:40:02,000
+Niye eksi 4 yazdı? Bir dakika.
+
+248
+00:40:03,759 --> 00:40:11,659
+Sigma 4'ten büyük olduğu için, evet, hepsinde eksi 4, eksi 9, hepsi de bu eksi 4'ten büyük değerler. Yani 4'ten büyükse eksi 4'ten zaten büyük.
+
+249
+00:40:12,239 --> 00:40:17,239
+Dolayısıyla ne oluyor? Buna doğrudan UT deyip, pozitif sağ tarafta işaret diyoruz.
+
+250
+00:40:18,879 --> 00:40:26,579
+Şu önemli bakın, yani böyle bir S artı 4'ün karesi gibi bir ifade varsa, bunun yanına bir T çarpmanı mutlaka ekleyeceğiz.
+
+251
+00:40:29,907 --> 00:40:32,028
+Bir başka örnek.
+
+252
+00:40:34,768 --> 00:40:39,827
+Bunun polinom bölmesi yardımıyla yapılması da mümkün mü? Mümkün.
+
+253
+00:40:40,488 --> 00:40:45,648
+Yani böyle bir eşitlik verildiğinde uzun uzun parçalı kesirlere bölmek birazcık zor olabilir.
+
+254
+00:40:46,648 --> 00:40:52,268
+İşte şu kısımla şu kısım üzerinde polinom bölmesi yapıp adım adım götürüp yine buraya getirebilirsiniz.
+
+255
+00:40:53,288 --> 00:40:57,367
+Buraya getirdikten sonra da örneğin Hs'i bu şekilde buluyorsanız.
+
+256
+00:40:57,824 --> 00:41:16,824
+Bu nedir? 10, Drak Delta 10'dur. Şu e üzeri eksi 4T'dir, eksi 32 çarpanıyla. Şu da e üzeri eksi 9T'dir, 162 çarpanıyla. Şimdi Sigma burada eksi 4'ten büyükmüş. Şimdi bunun şeyi eksi 4, bununki eksi 9.
+
+257
+00:41:16,976 --> 00:41:26,336
+eksi 4'ten büyükse ikisinden de büyük demek. Dolayısıyla bu da sağ taraflı bir işaret olacak. Sağ taraflı işaret olduğu için UT'ye getireceğiz ve bu şekilde ters dönüşümü alacağız.
+
+258
+00:41:27,336 --> 00:41:39,096
+Şimdi burada bazı örnekler eklemiştim ben. Bu bir yöntem yani partial fraction'ı yapmadan işte polinom bölmesi yardımıyla yapmanın bir yöntemi.
+
+259
+00:41:39,668 --> 00:41:45,168
+Her zaman tabi kolay değil, onun için asf olan bu yöntemlerdir, bunları bilmeniz yeterli.
+
+260
+00:41:45,168 --> 00:41:57,168
+Şimdi eğer ki köklerimiz kompleks köke sahipse, burada olduğu gibi S²-2S-17 o zaman ne yapacağız?
+
+261
+00:41:57,168 --> 00:42:01,368
+Şimdi birinci kök bu, ikinci kök bu. Bunu şu şekilde yazamıyoruz arkadaşlar.
+
+262
+00:42:06,068 --> 00:42:13,028
+Artı ne bileyim B bölü, eksi bir, eksi dört, i şeklinde yazıp bunun ters Laplace'ını alabilmemiz kolay değil.
+
+263
+00:42:13,908 --> 00:42:18,148
+Bu biraz önce söylediğimiz Laplace dönüşüm özelliklerinin aslında bir uygulaması.
+
+264
+00:42:18,868 --> 00:42:19,788
+Burada şuna bakıyoruz.
+
+265
+00:42:20,688 --> 00:42:27,148
+Şimdi şurası bir tam kara ifade olsaydı, tam kara ifade nasıl olur?
+
+266
+00:42:27,668 --> 00:42:34,188
+Şunun yarısının karesi kadar bir ifade olsa, yani bu nedir? S artı 1'in karesine benzetilebilir.
+
+267
+00:42:34,807 --> 00:42:39,168
+Burası S artı 1'in karesi olduğunda ne olur? S kare artı 2S artı 1.
+
+268
+00:42:40,128 --> 00:42:45,788
+Şu artı 1'den sonra bir artı 17 varsa o zaman bu da 16 olarak gelecek.
+
+269
+00:42:47,387 --> 00:42:52,427
+O zaman böyle bir dönüşüm yapmak yerine biz paydayı şu şekilde tekrar düzenliyoruz.
+
+270
+00:42:52,568 --> 00:42:54,847
+S artı 1'in karesi artı 16 şeklinde.
+
+271
+00:42:55,635 --> 00:43:16,036
+Peki bu bize neyi söylüyor? Yukarıda S artı 1 var. Güzel. Aşağıda S artı 1'in karesi var. Güzel. E şurada zaten 4'ün karesi. 16 olmasaydı da, hocam bu 17 olsaydı hiç sorun değil. O da köp 17'nin karesi olurdu. Yani şurada alfa gibi bir şey olsa o da köp alfanın karesi şekli olacak.
+
+272
+00:43:16,275 --> 00:43:26,675
+Peki bu bize neyi ifade ediyor? Şimdi S bölü S kare artı alfanın karesinin biz kosünüs alfa T olduğunu biliyoruz Laplace dönüşümde.
+
+273
+00:43:26,675 --> 00:43:41,875
+E S yerine S artı 1 yazıldıysa bu da E üzeri eksi T ile çarpılmış bir işarettir. Şu artı 1 den dolayı E üzeri eksi T çarpanı, şu dördün karesi S olduğunda da kosünüs 4 T olduğunu bulacağız.
+
+274
+00:43:42,547 --> 00:44:05,547
+Bu bir yaklaşım. Şimdi bir diğeri, S-3 bölü, S-6x artı 34. Şimdi bunun kökleri de iki tane kompleks kök. Bu şekilde yapmak yerine S-3'ün yarısının karesi kadar buradan bir tam kare tamamladığımızda, S-3'ün karesi artı 5'in karesi.
+
+275
+00:44:10,547 --> 00:44:32,547
+S yerine S x3 yazılmışsa, bu E üzeri 3 ile çarpılmış demektir. Şuraya bakalım, bu da sinüslü olanı. Bakın yukarıda S olduğunda aklımıza kosinüs gelsin. Ama yukarıda sadece S olacak. Yukarıda S kareli bir şey olmaması lazım. Yukarıda S kareli bir şeyler varsa o zaman başka yöntemler denemek gerekiyor. Böyle bir durumda paydaya baktığımız zaman...
+
+276
+00:44:33,460 --> 00:44:38,620
+S-3'ün karesi artı 4 diye burayı düzenleyebiliriz. Yani bunu kullanmayacağız. Böyle bir şey yok.
+
+277
+00:44:38,620 --> 00:44:42,100
+Pi'de ne var? 2 var. O zaman biz burada
+
+278
+00:44:42,100 --> 00:44:51,940
+sinüs ikili, 2T'li bir şey alıyoruz. Mesela pi'de 2 olmasaydı, pi'de 4 olsaydı olabilir miydi? Olabilirdi. O zaman onu çarpan olarak
+
+279
+00:44:51,940 --> 00:44:57,380
+2 çarpı yani 2'yi şuraya dışarıya atıp, 2 çarpı bir şey diye alabilirdik.
+
+280
+00:44:57,780 --> 00:45:01,980
+Bunların çoğunu geçen dönem derste anlattığım için arkadaşlar, tekrar uzun uzun anlatmıyoruz.
+
+281
+00:45:02,980 --> 00:45:03,900
+Peki ne olacak burada?
+
+282
+00:45:04,780 --> 00:45:08,179
+2 var, S-3'ün karesi var, artı 2'nin karesi var.
+
+283
+00:45:08,280 --> 00:45:09,760
+Yani şu şekilde bir şey elde ettik.
+
+284
+00:45:09,800 --> 00:45:11,099
+O zaman bu sinüs 2T'dir.
+
+285
+00:45:12,480 --> 00:45:16,760
+Ama E üzeri 3T ile çarpılmış bir sinüs 2T'dir diyeceğiz.
+
+286
+00:45:21,219 --> 00:45:23,260
+Aynı örnekler burada devam ediyor.
+
+287
+00:45:24,199 --> 00:45:24,559
+Mesela
+
+288
+00:45:25,619 --> 00:45:27,619
+Gs'i size bu şekilde vermiş.
+
+289
+00:45:30,019 --> 00:45:31,659
+3 bölü 2s x 3
+
+290
+00:45:31,659 --> 00:45:36,719
+Mesela böyle bir ifadede ne yapabiliriz?
+
+291
+00:45:38,059 --> 00:45:40,619
+Bir kere arkadaşlar, şurayı iki farklı şekilde yazabiliriz.
+
+292
+00:45:41,679 --> 00:45:43,759
+Eksi 3 bölü 2s bölü
+
+293
+00:45:43,759 --> 00:45:46,759
+s kare eksi 4s artı 5
+
+294
+00:45:46,759 --> 00:45:49,059
+Biraz öncekilerin hepsinin karmaşık hali.
+
+295
+00:45:49,059 --> 00:45:50,839
+5 bölü 2 bölü
+
+296
+00:45:51,188 --> 00:46:01,128
+S²-4S artı 5. Bu böyle bir şey gelir. Şurası zaten kolay. E üzeri eksi 3'te başında 3 bölü 2 çarpanı var.
+
+297
+00:46:01,128 --> 00:46:07,688
+Pardon, evet, E üzeri eksi 3'te o şuradan gelecek. Peki burası ne olabilir?
+
+298
+00:46:07,688 --> 00:46:17,088
+Şimdi bakın burada biraz önce karşılaştığımız şeylerin birebir aynısını görüyoruz. Burayı parça çarpanlarını ayırabilir miyiz? S-4
+
+299
+00:46:17,748 --> 00:46:44,288
+Çarpı, S artı, 1 gibi bir şey olmuyor. Mecburen burada yine kompleks köklü duruma bakacağız. Az önceki örneklere bakacağız. Yarısının karesi kadar yani S eksi 2'nin karesi var burada. Artı 1 var. O zaman yukarıda da S varsa bu kosinus T'li bir şey söyleyecek. Ama kosinus T'yi E üzeri 2T ile şundakinden dolayı çarpmışız demektir.
+
+300
+00:46:45,172 --> 00:46:53,672
+Peki buraya baktığımızda, yine aynısı var bu da, S-2'nin karesi artı 1, yukarıda da 5 bölü 2, o zaman bu da sinüs t'dir.
+
+301
+00:46:54,172 --> 00:47:02,172
+Bu sinüs t'nin de yine e üzeri 2t ile çarpılmış hali. O zaman e üzeri 2t ile bir kosünüsü bir de sinüsü çarpmışız demektir.
+
+302
+00:47:02,172 --> 00:47:04,172
+Bakın buradan doğrudan çıkıyor.
+
+303
+00:47:05,172 --> 00:47:06,172
+Bunu geçiyorum.
+
+304
+00:47:07,795 --> 00:47:13,916
+Peki, Laplace transformunu başka nerede kullanabiliriz? Bir kere diferansiyel denklemlerin çözümünde de kullanabiliyorduk.
+
+305
+00:47:14,516 --> 00:47:24,315
+Biz bir YT'nin Laplace'ın YS olduğunu biliyorsak, Y3T'nin Laplace'ı S çarpı YS olacak. Fourier'in çok çok benziği.
+
+306
+00:47:25,235 --> 00:47:29,596
+O zaman buradan yola çıkarak biz YS'e bağlı bir denklem bulacağız.
+
+307
+00:47:30,675 --> 00:47:35,155
+YS'in yalnız bırakılması sayesinde elde edeceğimiz ters dönüşümle de
+
+308
+00:47:35,507 --> 00:47:39,887
+Bifaransiyel denklemeleri çözebiliyoruz. Ama burada şöyle bir durum var.
+
+309
+00:47:41,288 --> 00:47:44,208
+Şimdi eğer bir fiziksel sistemi inceliyorsak,
+
+310
+00:47:44,927 --> 00:47:46,587
+Örneğin elektrik devresi,
+
+311
+00:47:46,947 --> 00:47:51,547
+o zaman hani burada tek taraflı, iki taraflı Laplace dönüşümü kullanmaya gerek yok.
+
+312
+00:47:51,547 --> 00:47:55,228
+T eşittir sıfır anında devreyi açarsınız veya sistemi açarsınız,
+
+313
+00:47:55,228 --> 00:47:58,547
+sistem çalışmaya başlar. Buna göre analiz yapılır.
+
+314
+00:48:00,976 --> 00:48:10,976
+Laplace dönüşümünden bahsediyoruz. Differansiyel denklemeyi genel olarak bunu kullanacağız. Örnek, böyle bir RC devrimiz var.
+
+315
+00:48:10,976 --> 00:48:17,976
+İşte burada bir gerilim kaynağı oluşmuş, şurada X değerlediğimiz şey. Burada ayrıca bir kaynak var.
+
+316
+00:48:17,976 --> 00:48:25,976
+İşte şu anahtarı açtığımda elde edeceğim çiftli ne olur? Şimdi bunun denklemini bir şekilde yazdığınızda şöyle bir denklem çıkıyor.
+
+317
+00:48:25,976 --> 00:48:28,780
+Bu bir diferansiyel denklem mi? Differansiyel denklem.
+
+318
+00:48:29,331 --> 00:48:38,331
+Ama bu devrenin t eşittir sıfır anında devre üzerindeki yükü size başlangıç kuşu olarak vermesi lazım bunu çözmeniz için.
+
+319
+00:48:38,331 --> 00:48:43,331
+Sıfırdan önceki değerler, işte size böyle bir şekilde v uc şeklinde verilebilir.
+
+320
+00:48:43,331 --> 00:48:49,331
+Çünkü burada bir kondansatör var, kondansatörün içerisinde bir gerilim olabilir.
+
+321
+00:48:49,331 --> 00:48:55,331
+Yani çalışmaya başlamayınca o gerilim ne olacak? Sistemden hariç tutulacaktır.
+
+322
+00:48:57,268 --> 00:49:04,948
+Size böyle bir birinci dereceden diferansiyel denklem verildiğinde, ne yapıyorsunuz? Direkt Laplace dönüşümünü alıyorsunuz. Laplace dönüşümünü aldığınızda ne olur?
+
+323
+00:49:04,948 --> 00:49:18,508
+YS çarpı, şu türevli bir şey olduğu için S olur. Artı, YT'nin Laplace dönüşümü YS çarpı alfa olur, eşittir. XS'nin Laplace dönüşümü XS olur. Yanında da bir tane B var.
+
+324
+00:49:23,891 --> 00:49:33,311
+xs zaten şey. Peki buradan biz hs'i bulmak istersek, o zaman ys'e hs'e oranlayacağız. ys bölü hs lazım, xs lazımdır işte burada.
+
+325
+00:49:34,351 --> 00:49:42,771
+Peki bunu bulmak için ne yaparız? Şurayı xs'e bölsem, burayı da s artı alfaya bölsem bu olur. O zaman ne olur? b bölü s artı alfa.
+
+326
+00:49:43,931 --> 00:49:50,331
+Demek ki hs'ımız buymuş. E bu da nedir? b çarpı e üzeri eksi alfa t gibi bir şeydir.
+
+327
+00:49:51,059 --> 00:49:55,559
+Başka bir şey değil. Demek ki bizim sistem böyle çalışıyormuş. Yani bu da HT oluyor.
+
+328
+00:49:56,699 --> 00:50:06,159
+Bunun girdisine uygulayacağınız herhangi bir XT işaretleri artık YT'yi doğrudan bulabiliyorsunuz veya konvolüsyon işlemi gibi şeyleri yapabiliyorsunuz.
+
+329
+00:50:06,940 --> 00:50:09,739
+Bakalım, burada zaten şunu söyleyecek.
+
+330
+00:50:10,259 --> 00:50:13,079
+Dikkat ederseniz ben burada YS çarpı S dedim.
+
+331
+00:50:13,579 --> 00:50:16,659
+İki taraflı düşün. Ama böyle bir sistem eğer
+
+332
+00:50:17,619 --> 00:50:21,119
+Tek taraflı bir Laplace dönüşümü varsa, geçen dönemden bunu söyledik.
+
+333
+00:50:22,059 --> 00:50:30,839
+Yapacağınız şey, şu türevi alırken S çarpı Y S diyorsunuz ama Y'nin sıfırdan önceki değerlerini hariç tutuyorsunuz.
+
+334
+00:50:31,599 --> 00:50:33,839
+Bu da zaten size sayısal olarak veriliyor arkadaşlar.
+
+335
+00:50:36,119 --> 00:50:40,960
+Tekrar edeyim, Y, T'nin türevinin Laplace'ı
+
+336
+00:50:42,867 --> 00:50:55,588
+S çarpı YS eksi Y0. Şimdi bunun bir Laplace'ını daha alırsak, ikinci dereceden Türev'in Laplace'ı, şu ifadenin Laplace'ı demektir.
+
+337
+00:50:55,588 --> 00:51:08,547
+Y'nin birinci dereceden Türev. O zaman S kare YS, SY Türev 0, eksi Y0 gibi şeyler geliyor.
+
+338
+00:51:08,884 --> 00:51:14,843
+Geçen dönemki noktalarınızda, onun için bu ders adına da tekrar etmenizde fay var. Zaten burada da bunun örnekleri var.
+
+339
+00:51:16,083 --> 00:51:23,443
+Peki, şu ifade de bize Y0 verildiyse, yani 3, 5, 10 gibi veya 0 gibi bir sayı şeklinde verilecek.
+
+340
+00:51:24,183 --> 00:51:31,203
+Hiçbir şey değişmeyecek. Bu ifade, YS'i yalnız bıraktığınızda şurada pi D'ye gelecek. Bu pi D'ye gelen değer de nedir?
+
+341
+00:51:31,668 --> 00:51:36,367
+Y0'ın değeri neyse, işte buna A diyelim, A bölü S eksi alfa demiş.
+
+342
+00:51:36,927 --> 00:51:38,188
+Bu da nedir ters dönüşümü?
+
+343
+00:51:38,827 --> 00:51:41,347
+A çarpı E üzeri eksi alfa T'dir.
+
+344
+00:51:42,127 --> 00:51:45,688
+Şu zaten doğrudan sayısal bir ifade.
+
+345
+00:51:46,327 --> 00:51:50,668
+Bunun da ayrıca çözümünü bulup, biraz önceki yöntemlerine doğrudan çözüme ulaşabiliyoruz.
+
+346
+00:51:51,947 --> 00:51:52,327
+Örnek.
+
+347
+00:51:53,396 --> 00:51:58,715
+Bize verilen bu RC devresinin girdisine biz XTE işareti olarak şunu uyguluyormuşuz.
+
+348
+00:51:58,715 --> 00:52:03,836
+Acaba bu XTE'ye karşılık devrenin çıkışından nasıl bir şey görürüz?
+
+349
+00:52:03,836 --> 00:52:08,715
+Yapacağımız şey şunların tek tek Laplace transformunu aldık.
+
+350
+00:52:08,715 --> 00:52:11,836
+Biraz önce aldığımız için uzun söylemeye gerek yok.
+
+351
+00:52:11,836 --> 00:52:15,155
+Bu ifadenin Laplace transformu YS buymuş.
+
+352
+00:52:15,155 --> 00:52:18,596
+XTE'nin Laplace'ı da buymuş.
+
+353
+00:52:18,867 --> 00:52:25,467
+Normalde biz YT'yi hesaplamak için XT konvolüsyon, HT uygulamamız gerekir.
+
+354
+00:52:25,467 --> 00:52:31,167
+Ama burada hiç, yani zaten Laplace dönüşümü bunun için vardı.
+
+355
+00:52:31,167 --> 00:52:36,667
+YS eşittir, XS çarpı, HS'e bakacağız.
+
+356
+00:52:36,667 --> 00:52:38,667
+XS'imiz bir bölü S'miş.
+
+357
+00:52:38,667 --> 00:52:42,167
+YS'de size şunu söylüyor.
+
+358
+00:52:42,452 --> 00:52:52,072
+Yani HS dediğimiz ifade bunun şu kısmı. O zaman ben buraya XS çarpanı olarak bunu getirirsem, bu ifadeyi 1 bölü S ile çarparsam, ne yapmış olacağız? Sonucu bulmuş olacağız.
+
+359
+00:52:52,192 --> 00:53:01,272
+Burayı 1 bölü S ile çarpınca da Y0 bölü S artı 1 bölü RC artı 1 bölü RC çarpı S artı 1 bölü RC çarpı 1 bölü S.
+
+360
+00:53:02,212 --> 00:53:08,232
+Bunun tersi Laplace dönüşümünü aldığınızda neyi bulacaksınız? Yt'nin sonucunu bulacaksınız.
+
+361
+00:53:09,108 --> 00:53:35,788
+Bakalım, burada alıyor mu? Evet, alıyormuş. Peki, bu ifadenin ters Laplace dönüşümü, burası ayrı alınır. Şurayı da ayrı alırız. Bu nedir? Y0'ın sonucunu size vermiş mi burada? Şu an çim vermemiş herhalde. Herhalde 0 olarak vermiş. Bu, E üzeri 1 bölü RC'dir. Şurası. E üzeri 1 bölü RC, T'dir.
+
+362
+00:53:36,563 --> 00:53:45,583
+Şurada da bakın ne var? Parçalı kesirleri ayırmanız gereken bir durum var. Yani 1 bölü RC bölü S artı 1 bölü RC çarpı S.
+
+363
+00:53:46,963 --> 00:53:58,843
+Bu da, bakın burası şu kısmı almış, şu şekilde Y0 çarpı, Y0'ın değeri neyse, E üzeri eksi T bölü RC.
+
+364
+00:53:59,635 --> 00:54:07,535
+çarpı UT size birinci kısmı bunu veriyor. İkinci kısma geldiğimizde, şu kısma geldiğimizde de, burayı da parçalı kesirlere ayırıyoruz.
+
+365
+00:54:07,535 --> 00:54:14,535
+1 bölü S eksi 1 bölü S artı 1 RC'dir. 1 bölü S dediğim şey UT'dir.
+
+366
+00:54:14,535 --> 00:54:20,735
+Şu da E üzeri eksi T bölü RC UT'dir. Ters taplası dönüşüm. Bunu da yerine getirip yazıyoruz.
+
+367
+00:54:20,735 --> 00:54:24,835
+Şu dönüşümle şununla bu ikisini birleştiriyoruz.
+
+368
+00:54:25,139 --> 00:54:31,139
+Bu ikisini birleştirdiğimizde elde ettiğimiz sonuçta şunu veriyor. Yani sizin sisteminizin davranışı buymuş.
+
+369
+00:54:31,139 --> 00:54:40,139
+t eşittir sıfır anında açtınız, sıfırı gördünüz. Daha sonra t sonsuza giderken böyle bir davranış gösteriyormuş.
+
+370
+00:54:40,139 --> 00:54:48,139
+Tamam mı? Zero state part ve input part'ın olduğu durum, yani girdiğe bunu uyguladığınızda elde edeceğiniz durum grafiği size bunu söylüyor.
+
+371
+00:54:48,563 --> 00:54:58,563
+T eşittir mesela 10 anında, buradan bir şey bulmak isterseniz, bunun şeydeki yerine T'yi yazıyorsunuz ve sonucu doğrudan buluyorsunuz.
+
+372
+00:55:00,563 --> 00:55:09,563
+Burada zaten bunları söylüyoruz. İşte RC'nin 0.5 saniye olduğunda, gir diye de böyle bir 5 volt uyguladığımızda elde edeceğimiz sonuç ne?
+
+373
+00:55:09,563 --> 00:55:12,563
+Burada en genel haliyle yazdık. Burada daha genel şey.
+
+374
+00:55:15,284 --> 00:55:42,724
+Süremiz biraz daha var. Peki, devreler her zaman bu şekilde birinci dereceden mi olur? Olmaz. İkinci dereceden, üçüncü dereceden diferansiyel denklemlerle de ifade edilebilir. O zaman bize başlangıç koşulları olarak Y0 verdiğine göre ikinci dereceden bir şeyse Y3F0 da vermesi gerekecek. Buna bakalım. Şimdi şurada eğer bu çift taraflı bir Laplace dönüşüm olsaydı S²YS deyip işi bırakacaktık.
+
+375
+00:55:43,219 --> 00:55:52,219
+Ama tek taraflı olduğu için hem sıfırdan önceki değerleri yani t eşittir sıfırdan önceki değerleri hariç tutmamız gerekiyor.
+
+376
+00:55:52,219 --> 00:56:10,219
+E bu da nedir? S kare ys eksi s çarpı y türev sıfır eksi y pardon s ys şurada türev yok arkadaşlar y türev sıfır.
+
+377
+00:56:10,387 --> 00:56:12,387
+Yani şuradaki durumun aynısı.
+
+378
+00:56:13,587 --> 00:56:19,187
+Y-türev 0 size verilmiş durumda, Y-sıfır da size verilmiş durumda. Bunları sadece sayısal olarak yerine koyuyorsunuz.
+
+379
+00:56:19,187 --> 00:56:23,187
+E şurası zaten birinci mertebeden, bu da zaten biraz önce konuştuğumuzun aynısı.
+
+380
+00:56:23,187 --> 00:56:28,887
+Şunların zaten Laplace dönüşümleri, Y-t'nin Laplace dönüşümü Y-s'tir.
+
+381
+00:56:28,887 --> 00:56:34,387
+X-t'nin türevinin Laplace dönüşümü de aynı şekilde burada baktığımız zaman, bakın burada girdi olduğu için
+
+382
+00:56:34,387 --> 00:56:38,284
+burada X-türev 0 gibi bir değer vermesine gerek yok.
+
+383
+00:56:38,804 --> 00:56:47,804
+bunu causal input olarak veriyoruz. Dolayısıyla bu da oradan aslında sıfır olacaktır. Bunu da getirip buraya yazdığımızda burası S çarpı XS olacak.
+
+384
+00:56:47,804 --> 00:57:01,804
+Şu ifadenin karşılığında B0 çarpı XS. Sonra YS'leri ve XS'leri birbiriyle ortak parantez alıp, YS bölü XS oranını buluyoruz burada da. Yani sistemin transfer fonksiyonunu buluyoruz.
+
+385
+00:57:03,827 --> 00:57:20,428
+Onu bulduktan sonra da, Y, S, X, S, oranladıktan sonra, sistemin şu köklerine bakarak, köklerden yola çıkarak ters daplace dönüşümü biliriz. Şimdi buradaki kökler, ne olabilir? Her kök, real kısımlardan oluşabilir veya imajiner kısımlardan oluşabilir.
+
+386
+00:57:20,428 --> 00:57:28,428
+Eğer imajiner ise tam kareye tamamlayacağız. Real kısımlar ise zaten doğrudan daha basit bir şey çıkacak. Çünkü şurası bize ne söylüyor?
+
+387
+00:57:28,884 --> 00:57:35,764
+Burada bir S veya sayısal bir şey var. Bakın burada da benzer bir şey var. Paydadan yola çıkarak doğrudan çözüme gidebiliyoruz.
+
+388
+00:57:36,864 --> 00:57:43,143
+Daha karmaşık bir devre, yani sistem olsa, n. dereceden bir şey olsa, o zaman hepsini uzun uzun yazmak gerekiyor.
+
+389
+00:57:43,244 --> 00:57:48,284
+Bu çok hani size sorduğumuz bir şey değil. Hani sadece bilgi olsun diye verdik.
+
+390
+00:57:48,903 --> 00:57:54,824
+Şurada S üzeri n'li bir ifade, S üzeri n-1'li bir ifade Laplace dönüşümlerini de bulacağız.
+
+391
+00:57:57,268 --> 00:58:04,108
+Şunları geçebiliriz. Bunlar zaten ekstra açıklamalar. Bunlarla kalan söylemiş şeyler.
+
+392
+00:58:04,908 --> 00:58:13,827
+Peki, burayı özetleyecek olursak, bize HS ne anlam ifade ediyor? Bir kere konvolüsyon işlemi için kullandık.
+
+393
+00:58:14,708 --> 00:58:19,548
+Diferansiyel denklemin çözümü için kullandık. Sistemin kararlılığını görmek adına kullandık.
+
+394
+00:58:19,548 --> 00:58:24,548
+Şimdi kararlılıkla alakalı ekstra bazı bilgiler de gelecek. Bir iki üç dakika sonra ara veririz.
+
+395
+00:58:25,300 --> 00:58:35,800
+yaptığımız şey bir şekilde ys ve xs elde edip bunları birbirine oranlamak ve bir, böyle burada olduğu gibi bir kesir elde etmek arkadaşlar.
+
+396
+00:58:35,800 --> 00:58:45,300
+Buradaki kesirin paydaları özetleyecek olursak, real köklere sahip olabilir paydası veya imajiner köklere sahip olabilir.
+
+397
+00:58:45,300 --> 00:58:50,124
+Real köklere sahipse işte parçalı kesirlerden basit kesirler şeklinde yazıyoruz.
+
+398
+00:58:50,291 --> 00:59:02,472
+Eğer imajineli köprüler sahipsiz, köprüler varsa, Laplace dönüşüm özelliklerinden, özellikle E üzeri eksi alfa T gibi bir şeyle işaretin şarpımını, bunun Laplace dönüşümünü aklımıza gelecek.
+
+399
+00:59:03,412 --> 00:59:11,791
+Genellikle burada da işaretimiz, sinüs bilmem ne veya kosinüs bir şey oluyor, çarpı E üzeri alfa T gibi bir şey karşınıza gelecek.
+
+400
+00:59:12,724 --> 00:59:19,284
+Şimdi bu HS bize ekstra bazı bilgiler de veriyor. Slide'ıma bakayım kaç sayfa kalmış.
+
+401
+00:59:21,043 --> 00:59:26,084
+Neyse, bunu bitirelim, öyle ara verelim arkadaşlar. Geldiğimizde yeni konuya geçeceğiz.
+
+402
+00:59:27,844 --> 00:59:37,844
+Biraz önce söylediğimiz gibi bu HS'in payında ve paydasında ekstra bilgiler var. Biz bu bilgileri zaman düzleminde göremiyoruz.
+
+403
+00:59:38,356 --> 00:59:47,796
+Hatırlarsanız, dersin ilk haftalarında zaman düzleminde bir işareti incelediğimizde bazı bilgileri görebildiğimiz ama bazı şeyleri göremediğimizi söylemiştik.
+
+404
+00:59:48,376 --> 00:59:54,216
+İşte bakın bunlardan bir tanesinin uygulaması buradaki paydaları, paydayı incelemek veya payı incelemek olacak.
+
+405
+00:59:55,656 --> 01:00:00,956
+Şimdi bu transfer fonksiyonu biz HS diferansiyel denklemden bir şekilde buluyorsak,
+
+406
+01:00:02,156 --> 01:00:05,456
+şunlara az önce söylediğimiz gibi,
+
+407
+01:00:05,936 --> 01:00:12,156
+Zero'lar, Bunlar da Pol diyoruz. Sizin S düzleminizde
+
+408
+01:00:15,476 --> 01:00:17,476
+S-plane demiştik buna.
+
+409
+01:00:19,476 --> 01:00:27,476
+Bu ifadenin payını sıfır yapan şeyleri, işte B1S artı B0'ı sıfır yapalım burada.
+
+410
+01:00:27,476 --> 01:00:30,476
+B1S eşittir, eksi B0.
+
+411
+01:00:30,476 --> 01:00:36,476
+S'i, yani burada nasıl diyebiliriz?
+
+412
+01:00:37,844 --> 01:00:44,844
+Örneğin buradan gerçi sayısal örnek olsa daha rahat oldu da S yerine S eşittir, eksi B'ye sıfır bölü B1 bulacağız.
+
+413
+01:00:45,704 --> 01:00:55,483
+Bu ne olsun mesela? A gibi bir sayı olsun. O zaman gidiyorsun A gibi bir sayıya, o da hani pozitif olsun, şöyle yuvarlak içerisinde alıyorsunuz. Bu sistemin bir sıfırıdır.
+
+414
+01:00:57,144 --> 01:01:04,864
+Bazı durumlarda arkadaşlar, az önceki örneklerde vardı, oraya bir geri geleyim de rahat anlaşılması için.
+
+415
+01:01:05,715 --> 01:01:08,215
+Artı ikili bir örneğimiz vardı hatırlarsanız.
+
+416
+01:01:10,775 --> 01:01:13,496
+Bu da çok yanlış yapılan bir şey.
+
+417
+01:01:14,096 --> 01:01:18,835
+Şimdi şu sistemin sıfırlarına bakın dediğimizde,
+
+418
+01:01:20,215 --> 01:01:22,916
+yani YS'e bu şekilde bakarsanız herhangi bir sıfırı var mı?
+
+419
+01:01:23,135 --> 01:01:24,795
+Payı sıfır yapan değer görünüyor mu burada?
+
+420
+01:01:26,436 --> 01:01:30,175
+Bu bir matematik sorusu yani herhangi bir sinyal dersimizle alakalı bir şey değil.
+
+421
+01:01:31,764 --> 01:01:34,324
+Burada payı sıfır yapan bir değer görebiliyor musunuz?
+
+422
+01:01:37,264 --> 01:01:42,403
+Yani 2 bölü S artı 3 artı 4 bölü S artı 5 artı ne var? 2 bölü 1 var.
+
+423
+01:01:43,224 --> 01:01:46,163
+Bu şekilde bakıldığında elbette payı sıfır yapan bir şey görülmez.
+
+424
+01:01:46,304 --> 01:01:49,784
+Ama burada payda eşitlemek zorundasınız.
+
+425
+01:01:51,163 --> 01:01:53,623
+Paydayı eşitlediğinizde şöyle bir şey bulacaksınız.
+
+426
+01:01:56,083 --> 01:02:05,563
+2S² artı 22S artı 47 deyip 0'a eşitleyip, burada bir payı 0 yapan değer bulabiliyorsunuz.
+
+427
+01:02:05,563 --> 01:02:09,563
+Dolayısıyla böyle bir şey verildiğinde sizi yanıltıcı olmasın.
+
+428
+01:02:09,663 --> 01:02:12,863
+Mesela paydayı 0 yapan değer de burada sıkıntılı, tam görünmüyor.
+
+429
+01:02:13,423 --> 01:02:15,063
+Payı 0 yapan değer de tam görünmüyor.
+
+430
+01:02:15,163 --> 01:02:16,723
+Mecburen bu şekilde dönüşmek gerekir.
+
+431
+01:02:17,523 --> 01:02:19,623
+YS'in bu formu bizim için lazım.
+
+432
+01:02:19,763 --> 01:02:21,103
+Transfer fonksiyonu dediğimiz bir şey.
+
+433
+01:02:21,440 --> 01:02:28,260
+Bütün terimler pay ve payda şeklinde olacak. Böyle artı iki artı bilmem ne bir şey olmayacak. İkisi de böyle polinom şeklinde görünecek.
+
+434
+01:02:29,000 --> 01:02:41,579
+Çünkü biz kosünüstü bir şeyi Laplace transform'u alarak işte bir bölü kosünüstü neydi? S bölü. S artı işte kosünüstü alfa diyelim alfanın karesi şeklinde yazıyorduk.
+
+435
+01:02:43,420 --> 01:02:47,760
+Trigonometrik bir ifadeyi burada polinomsal bir ifadeye dönüştürüyoruz.
+
+436
+01:02:48,371 --> 01:02:52,811
+İşin sonunda mutlaka burada da bakın böyle bir polinom elde ediyoruz. Devam edelim.
+
+437
+01:03:02,068 --> 01:03:27,108
+Burada bulacağınız kökler, tabi burada şey de olabilir. Hani burası Sigma tarafı, burası J Omega tarafı. Örneğin, Pi'in kökleri, yani burada birinci dereceden olduğu için real bir kökümüz var. Ama ikinci dereceden bir ifade olsaydı imajiner kök de olabilir. Yani köklerimiz burada S düzleminde real partı ile imajiner partı olan şekilde de yazabilirdi.
+
+438
+01:03:27,603 --> 01:03:39,943
+Paydanın köklerinde kutuplar diyoruz. Kutuplar da şöyle çarpı işaretiyle, işte artık burada, şurada olmazlar. Yani yine burada kompleks olabilir, işte şey olabilir. Bunlara bakacağız.
+
+439
+01:03:42,643 --> 01:03:54,903
+AS ve BS şeklinde söyledik. Bu şekilde yazdığım şey, işte payın kökleri, işte şeyler dedi, zirolar, paydanın köklerinde de pollar dedi. Bu size neyi söyler?
+
+440
+01:03:55,347 --> 01:04:01,347
+Şimdi paydayı sıfır yapan bir değer sistemi sonsuza götürür. Onun için bu kutuptur.
+
+441
+01:04:01,347 --> 01:04:08,347
+Payı sıfır yapan değer sistemi sıfıra götürür, sıfır gösterir. O da onun için 0'dur diyoruz.
+
+442
+01:04:11,347 --> 01:04:18,092
+Peki buradan baktığımız zaman şöyle bir şey bulduğumuzda ne var böyle bir haşes verildiğinde size?
+
+443
+01:04:18,387 --> 01:04:45,268
+Şuranın köklerine bakarsak S artı 3 eksi C, S artı 3 artı C var. O zaman bu köklerden bir tanesi S artı 3 eksi C'yi sıfıra eşitlersek, S'i yalnız bıraktığımızda eksi 3 artı C geliyor. O zaman eksi 3 artı C, eksi 3 artı C'ye dersek, eksi 3 şurası dersek, C'ye de şurası olursa şurada bir sıfır var, yani 0 var.
+
+444
+01:04:45,972 --> 01:05:12,872
+E bu da bunun şuradakine bakarsak S eşittir, eksi 3, eksi C. Yani bunun tam bir eşleniği, kompleks eşleniği ise bu da tam şurada oluyor. Bu bir. Başka sıfır var mı? Yok. Yani buradan başka sıfır çıkmaz. Peki kutuplara bakalım. İşte şurayı sıfır yapan bir tane eksi 4 var. O muhtemelen şu. Şurayı sıfır yapan bir tane kompleks şey var. Bu da o. O da diğeri de onun eşleniği oluyor.
+
+445
+01:05:13,327 --> 01:05:22,807
+Bunlardan bakarak arkadaşlar, sıfır ve kutuplar şirası. Bu bize Zero Fall Diagram diye ifade ediliyor.
+
+446
+01:05:24,087 --> 01:05:33,288
+Bunun daha genelleştirilmiş hali, sistem hangi noktalarda sıfıra gidiyor, hangi noktalarda kutuba gidiyor, bunları görebiliyoruz.
+
+447
+01:05:33,288 --> 01:05:38,168
+Şimdi bununla alakalı aradan sonra geldiğimizde ekstra birkaç açıklamam olacak.
+
+448
+01:05:38,643 --> 01:05:50,643
+Sizin bir eğer Laplace dönüşümü ve frekans, yani Fourier dönüşümü üzerinde değişiklik yapmak istiyorsanız, Zero-Poll diagramına bakabiliyorsunuz. Sistemin kararlılığına bakabiliyorsunuz.
+
+449
+01:05:51,023 --> 01:06:04,543
+Sistem kararlıysa hangi aralıklarda kararlı çalışıyor, bunlara bakabiliyoruz. Buradaki açıklamaları da okuyabilirsiniz. Ben aradan sonra ayrıca size ufak bazı örnek şeyler göstereceğim. Onlara bakarız.
+
+450
+01:06:04,980 --> 01:06:30,239
+Laplace dönüşümü bu dersimiz için temel olarak bu kadar. Çoğu konuyu, özellikle türev konusu olsun, çarpım konusu olsun, bunların çoğunu geçen dönemden bilmeniz gerekiyor. Aynı şeyleri sıfırdan anlatmamamızın nedeni bu. Burada sorumuz yoksa bir 10 dakika ara verelim 45 geçeğe kadar. Geldiğimizde konumuzdan devam edeceğiz.
+
+451
+01:18:02,036 --> 01:18:10,615
+Evet arkadaşlar, şimdi size dönem başında da söylediğim kitaptan bazı örnekler göstereceğim.
+
+452
+01:18:13,236 --> 01:18:17,216
+Burada Laplace Transform, işte şu kısımda anlatılıyor, örnekleri de var baya.
+
+453
+01:18:28,115 --> 01:18:29,275
+Şunu bir indireyim de.
+
+454
+01:18:30,435 --> 01:18:32,115
+Bu brozu da çok iyi açılıyor.
+
+455
+01:19:46,963 --> 01:19:52,604
+Evet bakın burada Region of Convergence'ın ne olduğunu falan anlatmış. Şu an görüyorsunuz değil mi arkadaşlar? Bir sıkıntı yok.
+
+456
+01:19:55,923 --> 01:20:10,244
+Örneğin böyle bir işaret verildiğinde Laplace transform'un nasıl alındığı ve Region of Convergence'ın ne olabileceği? Şimdi A'nın değerine göre, yani şuradaki alfanın değerine göre olay değişir.
+
+457
+01:20:10,804 --> 01:20:16,043
+Eğer negatif bir şey ise Regional Convergence bu tarafta, pozitif ise bu tarafta olacak.
+
+458
+01:20:16,043 --> 01:20:20,804
+Ve buna göre de S-düzleminde Convergence bölgesi değişecek.
+
+459
+01:20:20,804 --> 01:20:29,443
+İşte şu durumda hem Fourier transformu hem de Laplace transformu alabiliyoruz. Burada sadece Laplace transformu vardır demiştik.
+
+460
+01:20:29,443 --> 01:20:34,164
+Burada da tam tersi sol taraflı olan durum.
+
+461
+01:20:34,836 --> 01:20:40,976
+Zero Poll'lar demiş. Burada önce konuyu anlatıyor sonra örneklere geliyor. Bakın burada da şeyler var.
+
+462
+01:20:41,756 --> 01:20:51,976
+Dönüşüm tabloları var. Özelliklerinden bahsetmiş. Bunu geçebiliriz. Bunları söyledim. Konvolüsyon, Unverse, Laplace.
+
+463
+01:20:54,296 --> 01:21:01,195
+Şimdi, doğrusal zamanla değişmez sistemlerin özelliği neydi?
+
+464
+01:21:01,555 --> 01:21:07,315
+Hem doğrusalık hem de zamanla değişmeyen. Bunun için de nedensellikten bahsetmiştik.
+
+465
+01:21:07,315 --> 01:21:18,195
+Burada Kozalite dediğimiz şey LTI sistemi HT'sinin T'nin 0'dan küçük olduğu durumlarda 0 olma durumuna bakacağız.
+
+466
+01:21:18,195 --> 01:21:28,915
+Dolayısıyla bizim burada HS'i inceliyorsak, buradaki HS'in real partının, S'nin real partının
+
+467
+01:21:29,332 --> 01:21:41,332
+Sigma Maksimum'dan büyük olması lazım. Şimdi Sigma Maksimum ne? Siz işaretin köklerine, yani S üzerindeki köklerine baktığınızda,
+
+468
+01:21:41,332 --> 01:21:51,332
+en büyük Sigma'dan daha büyük Sigma değerlerine sahip oluyorsanız bunu S'nin real partında, o zaman bu sağ taraflı bir işaret oluyor.
+
+469
+01:21:51,332 --> 01:21:55,332
+HS üzerinden bunu elde edebiliriz.
+
+470
+01:21:56,627 --> 01:22:08,847
+Eğer bu tam tersindeyse, yani şöyle diyelim, şu bir kutup, bu bir kutup, sonuçta paydanın köklerine kutup demiştik az önce.
+
+471
+01:22:10,108 --> 01:22:23,708
+Eğer sizin en büyük kutbunuzdan, Region of Convergence'niz örneğin şurada, en büyük kutuptan büyükse bu sağ taraflı bir işaret.
+
+472
+01:22:24,307 --> 01:22:25,307
+Şurada olduğu gibi.
+
+473
+01:22:25,307 --> 01:22:32,307
+Eğer Region of Convergence'niz en küçük kutuptan küçükse, o zaman da sol taraflı işaret.
+
+474
+01:22:32,307 --> 01:22:35,307
+Bu ikisi arasındaysa sağ taraflı, sol taraflı diyemiyoruz.
+
+475
+01:22:35,307 --> 01:22:39,307
+Ona göre zaten işaretin az önce örneklerini gösterdik.
+
+476
+01:22:39,307 --> 01:22:47,307
+Hani şöyle bir aralıkta eğer Region of Convergence'niz varsa, o zaman ne oluyordu?
+
+477
+01:22:47,307 --> 01:22:51,307
+Şuna göre ve şuna göre ayrı ayrı iki veya daha fazla parçayı değerlendirmek gerekiyordu.
+
+478
+01:22:52,340 --> 01:23:18,340
+Bu bir. Şimdi, Stabilite dediğimiz, sistemin Stable olmak özelliğine baktığımızda, ne vardı? Bounded input, bounded input, output özelliğini sağlaması gerekiyordu. Bu zamanın üzerinde bakmamız gereken bir şeydi. Peki, bunu acaba Causal ve Stable sistemlerde HS üzerinden nasıl yapabiliriz? Şurayı okuyalım.
+
+479
+01:23:18,560 --> 01:23:44,160
+Sistem hem causal'dır hem de stable'dır. Ne zaman? Bütün kutuplar S düzlemindeki sol yarı düzlemde olacak. Yani bütün negatif real parçalar, yani şöyle, bunun da S'nin real kısımları, şundan en büyük kutuptan büyük olacak. Dolayısıyla
+
+480
+01:23:44,659 --> 01:23:57,659
+Bu da ne demek? J omega ekseni dahil olursa bir şeye Sistem Stability. Region of Converse üzerinden bu bilgiyi de elde edebiliyoruz. Tamam mı?
+
+481
+01:23:57,659 --> 01:24:08,659
+Bu da böyle. Sonra zaten şu HS'in nasıl elde edildiğine falan bakmış. Bunlar geçebiliriz.
+
+482
+01:24:08,851 --> 01:24:19,851
+Unilateral Atlas Transform ve bunun özelliklerini anlattığımız şeyler tekrar etmiyorum. İşte devrelerin üzerinde bazı örnekleri var. Şimdi şurada örnek problemlerden birine bakalım.
+
+483
+01:24:26,387 --> 01:24:29,967
+Şöyle bir işaretimiz olsun diyor, XT işareti.
+
+484
+01:24:31,768 --> 01:24:36,108
+Bu XT işaretinin Laplace transformunu almış ve şunu bulmuş.
+
+485
+01:24:41,748 --> 01:24:46,347
+Bu sonlu bir sinyal olduğu için
+
+486
+01:24:48,148 --> 01:24:53,008
+buradaki Laplace transformunda buna baktığımızda bunun kökü nerede? Eksi A'da.
+
+487
+01:24:53,747 --> 01:25:15,847
+elde edeceğiz. Şu S-A'da bulacak. Dolayısıyla A'nın değerine göre, hani bunun sonsuza mı gidiyor, şey mi gidiyor, bunun değeri elde edilebiliyor. Yani Region of Convergence bilgisini elde edebiliyoruz. Şurada da bunun sağ taraflı olup olmadığını gösterelim demiş. Bakın burada adım adım hepsini anlatıyor.
+
+488
+01:25:18,036 --> 01:25:23,036
+Mesela şöyle bir xt verildiğinde, bunun zero pole diagramını çizin.
+
+489
+01:25:23,036 --> 01:25:34,036
+İşte üç farklı durum var. Şimdi baktığımız zaman e üzeri eksi 2t, eksi 3t, e üzeri eksi 3t, eksi 2t, ama yandaki u t'ler, u eksi t'ler olayı değiştirecek.
+
+490
+01:25:34,420 --> 01:25:48,659
+Yani hepsi için biliyoruz ki E üzeri eksi 2T elbette 1 bölü S artı 2. Ama UT ile beraber geldiğinde o zaman diyeceğiz ki bu region of convergence'ı yani S'nin real partı eksi 2'den büyük olacak.
+
+491
+01:25:49,480 --> 01:25:56,420
+Eksi 3T için baktığımızda da şurada yine bu UT ile beraber geldiği için eksi 3'den büyük olacak. Dolayısıyla bunun...
+
+492
+01:25:57,811 --> 01:26:09,211
+1 bölü S artı 2 ve 1 bölü S artı 3 olarak dönüşümünü bulduk. Bakın bu biraz önce size örnekte göstermiştim. Size kutupları söyler, sıfırları söylemez. O zaman ne yapacağız? Payda işleyeceğiz.
+
+493
+01:26:09,211 --> 01:26:25,291
+1 bölü S artı 2 artı 1 bölü S artı 3. Ne yapacağız? S artı 2S artı 5 oluyor herhalde. S artı 3, S artı 2S artı 5 bölü. S artı 2 çarpı.
+
+494
+01:26:25,492 --> 01:26:26,492
+S artı 3.
+
+495
+01:26:26,492 --> 01:26:33,492
+Burada da ortak çarpan parantezini aldığımda bunun zero'larının ne olduğunu görüyoruz.
+
+496
+01:26:33,492 --> 01:26:36,492
+Bir tanesi işte eksi 5 bölü 2 olacak.
+
+497
+01:26:36,492 --> 01:26:39,492
+Kutupları zaten eksi 2 ve eksi 3 olarak bulduk.
+
+498
+01:26:39,492 --> 01:26:46,492
+Şimdi bunun tek bir sıfırı var. İki tane kutbu var.
+
+499
+01:26:46,492 --> 01:26:51,492
+Peki burada baktığım zaman Region of Convergence nasıl olacak?
+
+500
+01:26:52,564 --> 01:26:56,564
+Şöyle bakarsak, bir tane kutbu
+
+501
+01:26:56,564 --> 01:27:01,064
+eksi 2'de, öbürsü de eksi 3'de diyelim.
+
+502
+01:27:01,064 --> 01:27:04,064
+İkisi de UT olduğu için
+
+503
+01:27:04,064 --> 01:27:09,064
+eksi 2'den de büyük, eksi 3'den de büyük. Dolayısıyla ikisinden de büyük olan kısım
+
+504
+01:27:09,064 --> 01:27:19,056
+yani hem şundan büyük hem de bundan büyük. İkisinin de kesiştiği kısım ne oluyor? Burası oluyor. Burası olduğu için j omega eksenini içeriyor. Dolayısıyla Fourier transformu da var.
+
+505
+01:27:19,055 --> 01:27:21,555
+Ve bu işaret stable bir işarettir.
+
+506
+01:27:21,555 --> 01:27:25,055
+Bounded input, bounded output özelliğini sağlar.
+
+507
+01:27:25,055 --> 01:27:29,055
+B maddesinde bakın bunun yine devamını getirmiş.
+
+508
+01:27:29,055 --> 01:27:35,555
+Şurada da zaten eksi 2'den büyük olduğu durumda yani region of convergence'in ne olduğunu söylüyor.
+
+509
+01:27:35,555 --> 01:27:41,555
+B maddesinde öbürü var. Biri UT'li, biri U-T'li. Bu bu şekilde olacak.
+
+510
+01:27:41,555 --> 01:27:44,555
+Diğer madde de zaten aşağıda devam edip gidiyor.
+
+511
+01:27:48,275 --> 01:27:53,555
+Başka başka ne özellik var? Yani buradaki örnek sorulara bakmanız faydanız olur arkadaşlar.
+
+512
+01:27:54,323 --> 01:28:21,483
+Çünkü size vereceğimiz, özellikle finalde vereceğimiz sorular böyle birkaç maddeyi içerecek şekilde, işte diferansiyel denklem verilebilir veya bir eşitlik verilebilir. Buradan Hs'i bulun, Hs'den Hd'ye geçin, sıfır kutup diagramını çizin, sistem kararlı mıdır, kararlı değil midir bununla alakalı sıfır kutup diagramı üzerinden yorum yapın gibi farklı sorular gelebilir. Başka burada Immersed Atlas Translom demiş. Şunları anlattığımız şeyler tekrar tekrar söylemiyorum.
+
+513
+01:28:22,804 --> 01:28:36,604
+Bakın mesela böyle bir şey verildiğinde, XS verilmiş, bunun şey yani şu RS yerine bazen kaynaklarda biz genellikle şunu kullanıyoruz. Burada RS demiş, yani ikisi aynı şey.
+
+514
+01:28:36,604 --> 01:28:50,203
+Region of Convergence'da buradan itibaren olacakmış. O zaman bunu basit kesirlere ayırırsak, ne olur? Basit kesirlere ayırılmış hali şu gelecek. Her durum için bunu söyleyebiliriz. Şimdi burada
+
+515
+01:28:51,091 --> 01:29:17,971
+Bunun paydası eksi bir, bunun paydası eksi üç. Dolayısıyla eksi birden büyük olan bir Region of Convergence söylenmiş. O zaman ikisinden de büyük olduğu için UT UT deyip tamamlıyoruz. Ama mesela eksi üçten büyük olduğu durumunu söylemiş. Eksi üçten büyük olduğu durumda eksi birden büyük olmayacağı için şu kısım eksili olacak. Eksi T.
+
+516
+01:29:18,431 --> 01:29:21,032
+Öbürü diğer türlü olacak.
+
+517
+01:29:21,831 --> 01:29:28,032
+Evet, eksi üçten küçük olanı söylemiş, yanlış söylemiş. O zaman ikisi de eksi t, sol taraflı olacak.
+
+518
+01:29:28,631 --> 01:29:35,231
+Eksi üçten büyük, eksi birden küçük olan kısımda da bir tarafı sol taraflı, bir tarafı sağ taraflı olacak. Burada olduğu gibi.
+
+519
+01:29:38,644 --> 01:29:40,824
+Şöyle bakıyorum, farklı bir örnek var mı diye.
+
+520
+01:29:44,787 --> 01:30:00,427
+Sistem fonksiyonları zaten bu bizim yaptığımız örneğin şeyi çok benzeri. Kitaplar birbirinden böyle kopya olduğu için arkadaşlar, bizim ders kaynağımızın asıl kitabı Openheim. Bu kitap da ona çok çok benzer. Zaten aynı şeyleri tekrar tekrar görüyoruz dikkat ederseniz.
+
+521
+01:30:06,739 --> 01:30:08,739
+Tamam, çok farklı bir şey yok.
+
+522
+01:30:09,739 --> 01:30:17,239
+Şimdi bu gördüğümüz Fourier Transformer sürekli zamanda.
+
+523
+01:30:17,739 --> 01:30:23,739
+Bir de discrete time Fourier Transformer arkadaşlar.
+
+524
+01:30:24,739 --> 01:30:31,739
+Şimdi ayrık bir işaret için Fourier Transformer almadık. XT dedik zaten. XN'e bağlı bir şey görmedik.
+
+525
+01:30:32,239 --> 01:30:34,239
+Kısaca bundan bahsedeceğim.
+
+526
+01:30:34,260 --> 01:30:37,960
+Bunun, mesela şuradaki örnekten bakabiliriz.
+
+527
+01:30:43,956 --> 01:30:54,456
+İşaretiniz eğer sürekli ise, bu şekilde, gerçi buradaki gibi değil, ayrık bir işaret elde ediyorsa XN elde ediyorsunuz.
+
+528
+01:30:55,475 --> 01:31:01,355
+Bakın biraz önce ben MIT'nin bir kaynağını bulmuştum da onun üzerinden Allah'a sallallahu.
+
+529
+01:31:06,996 --> 01:31:11,095
+Discretive time Fourier transform ayrık işaretler üzerinde.
+
+530
+01:31:11,252 --> 01:31:15,252
+Zaman düzlemi, frekans düzlemine geçmenizi sağlayın.
+
+531
+01:31:15,252 --> 01:31:25,252
+Şimdi sürekli olanı yazarsak, XT çarpı E üzeri eksi J omega T integraliyle hesaplanıyordu.
+
+532
+01:31:25,252 --> 01:31:34,252
+XT çarpı E üzeri eksi J omega T DT integraliyle biz X omega'yı buluyorduk.
+
+533
+01:31:34,252 --> 01:31:38,956
+Şimdi burada işaret artık T olmadığı için ayrık bir işaretteyiz.
+
+534
+01:31:39,123 --> 01:31:45,423
+xn var. Buradaki omega yerine, işte Grek alfabeksindeki büyük harf olan omega'yı kullanacağız.
+
+535
+01:31:46,163 --> 01:31:52,723
+Eksi sonsuzdan artı sonsuza xn çarpı e üzeri j omega n ifadelerini buluyoruz.
+
+536
+01:31:53,283 --> 01:31:55,063
+Şimdi şöyle bir şey açayım.
+
+537
+01:32:00,787 --> 01:32:22,287
+x sonsuzdan artı sonsu da xn çarpı e üzeri x j omega n. Bu da bizim x omega'mız. Bakın sürekli de kullandığımız omega bu, ayrıkta kullandığımız omega bu. Bu discontinuous, bu discrete diye. Örneğin sizin işaretiniz xn şöyle verilmiş olsun.
+
+538
+01:32:28,372 --> 01:32:52,952
+eksi sonsuzdan artı sonsuzluğa değil. Ne olacak? x0 çarpı e üzeri eksi c çarpı omega çarpı 0 artı x1 e üzeri eksi c çarpı omega çarpı 1. Şuradaki ifade nedir? e üzeri bilmem ne bir şeydir. Yani bu x0'ın değerine eşittir.
+
+539
+01:32:54,804 --> 01:33:04,804
+x1 çarpı e üzeri eksi j omega'dır. Demek ki bizim işaretimiz omega düzleminde böyle bir şeye gelecekmiş.
+
+540
+01:33:04,804 --> 01:33:18,304
+Tabi bunun Fourier transformunu almak kolay. Mesela ben xn'in e üzeri eksi alfa n şeklinde veya u n şeklinde böyle bir işaret verseydim. Bu nedir?
+
+541
+01:33:22,420 --> 01:33:46,579
+Artı desek o zaman da büyüyen bir işaret oluyor. Bu tarz örnekler farklı şekillerde verilebiliyor. Bakın bu da bizim frekans sünemindeki karşılık. Şimdi bunun biraz kitaptan da ilerleyerek birkaç bir şeyini anlatacağım. Sonra başka bir konuya geleceğiz. Asıl konumuz bu değil. Çünkü biz bu müfredat değişimiyle beraber bu konuların bir kısmını sayısal işaret işleme dersine bu dönem seçimlik olarak açılıyor.
+
+542
+01:33:47,007 --> 01:33:51,807
+Önceden ben veriyordum, Ali Can Hoca veriyordu. Bu dönemde Erkan Hoca veriyor.
+
+543
+01:33:53,547 --> 01:33:57,667
+Bu şekilde bir dönüşüm yaptığımızda da bazı sorunlar var.
+
+544
+01:33:59,127 --> 01:34:04,108
+Şimdi özelliklerine bakarsak yine frekans düzleminde olduğumuzu görebiliriz.
+
+545
+01:34:04,108 --> 01:34:05,867
+İşte işaretimiz buysa.
+
+546
+01:34:06,131 --> 01:34:20,731
+Bakın bunu frekans düzlemine aldığımızda 1-A-E-E-J-Omega şeklinde bir şey çıkıyor. Bakın işaretin kendisi ayrık ama frekans düzlemindeki görüntüsü nasıl sürekli?
+
+547
+01:34:20,731 --> 01:34:32,572
+Frekans düzleminde biz sadece bazı bilgileri inceliyoruz. Burada sürekli görüntüyü örneklemiş. Yine burada konvolüsyon işlemi için bunu kullanma imkanımız var. Aynı Fourier'de olduğu gibi veya diğer bazı
+
+548
+01:34:32,787 --> 01:34:41,247
+Fark denklemleri dediğimiz şeylerin çözümünü de var. Dolayısıyla Discrete Time Fourier Transform, DTFT diye bir dönüşümünü de bilmemiz gerekiyor.
+
+549
+01:34:42,148 --> 01:34:51,707
+Nasıl ki Fourier dönüşümünde her işaretin Fourier dönüşümü işte bu Griplet şartlarından kaynaklı olarak alınamıyorsa,
+
+550
+01:34:52,587 --> 01:34:59,488
+burada da alınamama durumu var. O zaman da Discrete Time Fourier Transform'ı genelleştirilmiş haline bakacağız.
+
+551
+01:35:00,307 --> 01:35:06,307
+Şimdi Laplace, Continuous Time Fourier Transform'u genelleştirmiş haliydi.
+
+552
+01:35:08,307 --> 01:35:13,307
+Continuous Time Fourier Transform, Laplace Transform olarak genelleştirmişti.
+
+553
+01:35:13,307 --> 01:35:18,307
+Discrete Time Fourier Transform'da da Z-Transform karşımıza gelecek.
+
+554
+01:35:18,307 --> 01:35:24,307
+Yine bu konuda, yani şu iki konu sayısal işaret işleme dersinden anlatıyorum.
+
+555
+01:35:26,260 --> 01:35:34,260
+Müdek açısından bir giriş yapacağız. Müdek için çünkü bu müfredatta geçiyor. Buna birazdan bakacağız. Şimdi şu şeyden...
+
+556
+01:35:39,891 --> 01:35:42,692
+Öğrgür füriyek transformanını ödeyeyim yarakımını.
+
+557
+01:35:53,043 --> 01:36:02,543
+Bakın Fourier analizi, yani Fourier serileri ne için yaptık biz? Continuous time sinyaller için yaptık. Bunların periyodik olduğu durumda Fourier serilerine baktık.
+
+558
+01:36:02,543 --> 01:36:08,543
+Periyodik olmadığı durumda Fourier dönüşümüne bakmıştık.
+
+559
+01:36:15,543 --> 01:36:17,543
+Aslında discrete Fourier demesi de biraz...
+
+560
+01:36:18,163 --> 01:36:21,764
+An değil de, en discrete time Fourier transform demesi peyarın bu.
+
+561
+01:36:26,452 --> 01:36:27,892
+275
+
+562
+01:36:33,779 --> 01:36:35,779
+Bakın az neçin doğaç.
+
+563
+01:36:51,796 --> 01:36:58,796
+Yine aynı şekilde sürekli zamandaki Fourier serilerinde olduğu gibi, ayrık zamanda Fourier serileri de bulunabiliyor.
+
+564
+01:36:58,796 --> 01:37:03,796
+Oradaki CK'lara çok benzer bir formül burada da var arkadaşlar.
+
+565
+01:37:05,939 --> 01:37:25,579
+Ama hani Discrete Time, Fourier transform'u bilmeniz gerekmiyor. Hani sınav içinde, sınavda öyle bir şey sormayacağız. Zaten diğer grup belki oraya kadar gelmedi. Aynı şeyleri Discrete Time üzerinde yaptığımız bu konvolüsyon işlemini ayrık zamanda olduğu gibi bakın biraz önce içine çok çok benziyor. Böyle birbirine oranlayarak baş omegayı bulabiliyoruz.
+
+566
+01:37:27,680 --> 01:37:36,920
+Orada diferansiyel denklemler çözmüştük. Burada da Difference Equation dediğimiz, fark denklemlerini çözebiliyoruz. Böyle özellikleri var.
+
+567
+01:37:41,140 --> 01:37:44,220
+Burada örnek çözümlü problemlere bir bakayım.
+
+568
+01:37:50,036 --> 01:37:52,036
+Örneğin böyle bir işaretimiz varmış.
+
+569
+01:37:52,735 --> 01:38:04,036
+Bunu çizdirdiğinizde nasıl bir işarettir? Her 4 durumda, 0, 4, 8 diye gittiğinde bir işaretini verecek.
+
+570
+01:38:04,735 --> 01:38:08,036
+Bunun peki Fourier kat sayılarını bulmak istersek?
+
+571
+01:38:08,372 --> 01:38:14,192
+Bu sürekli belli aralıklarla kendilerini tekrar eden aslında şöyle bir şeye karşılık geliyor.
+
+572
+01:38:14,792 --> 01:38:16,192
+Fourier kats sayıları bunu söylüyor.
+
+573
+01:38:17,032 --> 01:38:20,452
+Veya bakın şurada şöyle ayrı işaretler verilmiş, kosünüs işareti.
+
+574
+01:38:21,052 --> 01:38:22,752
+Birden fazla kosünüsünü toplamış.
+
+575
+01:38:22,892 --> 01:38:26,652
+Mesela ödevde, ikinci ödevde buna benzer bir şey yapacaksınız.
+
+576
+01:38:26,812 --> 01:38:29,052
+Sadece zaman düzleminde yapacaksınız.
+
+577
+01:38:29,532 --> 01:38:31,932
+Bunun frekans düzleminde elbette karşılığı var.
+
+578
+01:38:32,384 --> 01:38:37,183
+Sadece sürekli işaretlerin, frekans cüzdenin karşılığı yok, ayrık işaretlerin de karşılığı var.
+
+579
+01:38:37,183 --> 01:38:46,384
+Zaten ses işleme, bilgisayar ortamında algoritmik olarak işlemler bunu kullanıyor ama dediğim gibi onu biz artık sayısal işaret işleme konusuna attık.
+
+580
+01:38:46,384 --> 01:38:51,384
+Peki gelelim z-transform konusuna.
+
+581
+01:39:25,971 --> 01:39:33,651
+Bu çok uzun bir slide. Sadece size PDF olarak paylaştık. Yani hepsinden sorumlu olmazsınız arkadaşlar.
+
+582
+01:39:34,931 --> 01:39:42,611
+Temel olarak nedir, ne değildir? Özellikle konvolüsyon işleminin, ayrık zamandaki konvolüsyonun bir çözüm yöntemini ilk görüceğiz.
+
+583
+01:39:42,611 --> 01:39:49,011
+Normalde ayrık zamanda bir işaret verildiğinde işte 1-2-3 ile birbirinin konvolüsyonu alın dediğimizde ne yapıyorduk?
+
+584
+01:39:49,011 --> 01:39:53,611
+İşte ya böyle tablo metoduyla, işte bunları karşılıklı olarak
+
+585
+01:39:54,003 --> 01:40:12,844
+Önce çarptığımızda 0, sonra birer birim kaydırdığımızda 1, sonra bir birim kaydırdığımızda ne oluyor? 3, bir daha kaydırdık 5, bir daha kaydırdık ne oluyor? 3, ondan sonra 0. Böyle bir çıktı elde ediyorduk 5, 3 diye. Bunun bir başka yolunu burada göreceğiz.
+
+586
+01:40:12,844 --> 01:40:20,644
+Asıl Z-transform'u sayısal filtrelerde, derin öğrenme olsun veya görüntü işlemede olsun filtrelerde kullanılıyor.
+
+587
+01:40:21,043 --> 01:40:28,723
+Bizim işaretlerimiz xn düzleminde ise xz düzlemine geçiş yapıyor. Bu geçişin yolu da şurada olduğu gibi.
+
+588
+01:40:30,003 --> 01:40:43,563
+İşareti z üzeri n gibi, z burada yine bizim Laplace'daki S'imiz sigma artı j omega ise z de burada kompleks bir sayı farklı bir düzleme geçiş yapıyoruz.
+
+589
+01:40:44,340 --> 01:40:59,779
+Herhangi bir işte HN işareti, XN işareti neyse, bunu Z üzeri eksi N'lerle şu toplama işlemine soktuğumuzda elde edeceğimiz şey, bakın bu bir toplam dönüşümü, aynı integral dönüşümü gibi, işin sonunda N'ler gidecek, yarına Z'ler gelecek demektir.
+
+590
+01:41:01,659 --> 01:41:05,980
+Üç farklı domeynden bahsettik. Zaman düzlemi, frekans düzlemi,
+
+591
+01:41:06,355 --> 01:41:14,036
+Burada sayısal bir işaret varsa, bunun frekans düzlemindeki karşılığına E üzeri J omega veya H omega diyebiliriz.
+
+592
+01:41:14,756 --> 01:41:21,836
+Aynı şekilde bunun üçüncü gösterimi, nasıl ki Laplace varsa, bunun da genel hali Z olacak.
+
+593
+01:41:23,315 --> 01:41:33,315
+Daha basit işlemler sunuyor. Özellikle sayısal işaret işleme tasarımlarında, donanım tasarımlarında veya derin öğrenme gibi konularda çok çok bize fayda sağlıyor.
+
+594
+01:41:33,315 --> 01:41:35,315
+Zero call burada da var.
+
+595
+01:41:38,804 --> 01:41:47,304
+Ve işin güzel tarafı şu, hangi işaretiniz olursa olsun Z-transform'u hesapladığınızda polinomlarla uğraşıyorsunuz.
+
+596
+01:41:47,364 --> 01:41:51,503
+Polinomlarla uğraşmak, diğer karmaşık işaretlere uğraşmaktan çok çok daha kolay.
+
+597
+01:41:53,324 --> 01:41:59,844
+Bu işte Z-düzlemine geçiş, bu da Z-düzleminden N-düzlemine geçiş şeklinde oluyor.
+
+598
+01:42:00,564 --> 01:42:02,264
+Örnek olarak birkaç şey bakalım.
+
+599
+01:42:02,543 --> 01:42:04,043
+Şimdi Haşen işaretimiz şuymuş.
+
+600
+01:42:04,564 --> 01:42:09,684
+aşının vektör gösterimine bakarsak, n eşittir 0 noktasında bir 1 var.
+
+601
+01:42:11,984 --> 01:42:18,024
+Onu görüyoruz. Bir de n eşittir 1 noktasında ne görüyoruz? Şey var, eksi 1 var.
+
+602
+01:42:19,144 --> 01:42:20,024
+Bu işaret böyle bir şey.
+
+603
+01:42:20,024 --> 01:42:21,676
+Şimdi şu...
+
+604
+01:42:21,844 --> 01:42:35,703
+Bunun bu kısmını çizlersek, böyle bir işaret, işte şeyde, n eşittir sıfırda, şu da n eşittir eksi bir de, şey n eşittir bir noktası, şey eksi bir, ikisini bir araya getirdiğimizde bir ve eksi bir, sıfır noktası şöyle olan bir şey.
+
+605
+01:42:36,663 --> 01:42:43,304
+Bunun frekans düzlemine geçiş yaparsak, şeyde, Discretime Fourier Transformer'ında şöyle bir şey elde ederiz.
+
+606
+01:42:44,043 --> 01:42:44,644
+E bu da nedir?
+
+607
+01:42:45,332 --> 01:42:58,132
+Şurada formülde yerine koyarsak 1 çarpı E üzeri sıfır, n eşittir sıfır için, artı 1 çarpı E üzeri eksi c omega ile, o da 1 eksi, şöyle bir şeye geçiş yapmış oluruz.
+
+608
+01:42:58,851 --> 01:43:11,372
+Aynı mantıkla z dönüşümde bunun aynısı da oluyor, sadece 1 çarpı E üzeri sıfır yerine 1 çarpı z üzeri sıfır artı 1 çarpı z üzeri eksi bir şeklinde bir polinom elde edeceğiz.
+
+609
+01:43:12,180 --> 01:43:25,780
+Hocam, ne anlamı var? İkisi de aynı şey değil mi? Jω ile z. Bu yakınsama, raksama nedenlerinden dolayı, aynı Dirichler şartlarında olduğu gibi, bazı durumlarda z dönüşümü Fourier dönüşümüne birebir eşit oluyor.
+
+610
+01:43:25,860 --> 01:43:29,400
+Ama bazı durumlarda olmuyor, z dönüşümü daha genelleştirmiş halidir diyoruz.
+
+611
+01:43:31,740 --> 01:43:35,080
+Ve işin sonunda bulacağım şey dediğim gibi, polinomsal bir representation.
+
+612
+01:43:37,300 --> 01:43:56,180
+Örnek olarak şöyle bir hn verildiğinde, siz doğrudan hani şu formülü işletmeden eğer sizin z eşittir sıfır, x eşittir sıfır noktanız buysa, bunun z dönüşümü doğrudan şudur dersiniz. Çünkü bu neler cinsinden yazılıyor? Sigma n artı sigma n eksi.
+
+613
+01:43:57,235 --> 01:44:07,235
+3 çarpıp başında x3 var. Şöyle Sigma'lar cinsinden yazılabiliyor. Bu Sigma'lar cinsinden yazılmış ifadeyi doğrudan polinoma hastalıkta dönüştürebiliyoruz. Bakın daha kolay.
+
+614
+01:44:07,235 --> 01:44:22,735
+Tabi burada polinomun dereceleri x1, x2, x3 şeklinde olacak. İşte bu sıfır, şu n-1 de 0 üzeri z-1, n-2 idi, x3 üzeri z-2 böyle devam edip gidiyor.
+
+615
+01:44:23,539 --> 01:44:26,559
+Biraz daha toparlarsak şöyle bir işaret elde ediyoruz.
+
+616
+01:44:27,599 --> 01:44:36,000
+Şimdi bu Z düzlemindeki bu ifadeyi tam bir polinom formatına çevirmek istersek,
+
+617
+01:44:36,819 --> 01:44:43,699
+eksi bir parantezine alırsak bu ifadeleri, z eksi bir çarpanla ayırırsak,
+
+618
+01:44:44,359 --> 01:44:49,179
+şu eksi bir çarpı iki, bu da eksi bir çarpı iki, tam bir polinom şeklinde görünüyor arkadaşlar.
+
+619
+01:44:51,891 --> 01:44:54,891
+Şöyle bir işaret verildiğinde, bunun z-transform nedir?
+
+620
+01:44:54,891 --> 01:45:00,031
+İşte zaten n eşittir, n'den küçük değer, eksi birden küçük değerler için sıfırmış.
+
+621
+01:45:01,051 --> 01:45:04,111
+Şuradaki değer de sıfırmış, eksi birde sıfırmış.
+
+622
+01:45:04,731 --> 01:45:12,691
+2 çarpı 4 çarpı z üzeri eksi 1, 6 çarpı z eksi 2, 4 çarpı z eksi 3, 2 çarpı z eksi 4 yazıyoruz.
+
+623
+01:45:16,948 --> 01:45:20,028
+Tam tersinden verilmiş olsa, o zaman bunun da tam tersi ne olacak?
+
+624
+01:45:20,268 --> 01:45:22,007
+İşte z üzeri eksi bir nedir?
+
+625
+01:45:22,747 --> 01:45:26,047
+Eksi iki çarpı sigma n eksi bir şeklinde.
+
+626
+01:45:27,387 --> 01:45:29,867
+Zaman düzleminde de böyle ifade edebiliyoruz.
+
+627
+01:45:31,408 --> 01:45:40,127
+Şöyle bir eksponansiyel olarak azalan bir sinyalimiz varsa, 1, 0.8, 0.64 böyle devam edip gidiyorsa, bunun acaba z dönüşümü nedir?
+
+628
+01:45:40,627 --> 01:45:46,127
+Bunun zaman düzlemindeki eşitliği, denklemi nedir arkadaşlar?
+
+629
+01:45:48,827 --> 01:45:51,127
+X'in için ne yazar, ne yazabiliriz?
+
+630
+01:45:56,372 --> 01:46:02,212
+Nasıl gidiyor? 1.0.8, 0.64. Buradan ne söylenebilir?
+
+631
+01:46:07,507 --> 01:46:14,107
+Yani 0.8 üzeri n desek ve u n desek herhalde yanlış bir şey olmaz.
+
+632
+01:46:14,867 --> 01:46:20,907
+n eşittir 0'da 1 verecek, sonra 0.8, 0.64, 0.512 diye devam edip gidecek.
+
+633
+01:46:21,768 --> 01:46:31,147
+Peki işaretimiz buysa, biz bunu ayrık zamanla, şunu hiç görmeden doğrudan buradaki değerleri denklemde yerine yazarsak şurada.
+
+634
+01:46:31,147 --> 01:46:33,768
+Ne vardı? 1 çarpı z üzeri 0.
+
+635
+01:46:34,323 --> 01:46:40,383
+0.8 x z-1 artı 0.8 x z-2 böyle devam edip gidiyor.
+
+636
+01:46:41,223 --> 01:46:52,163
+Peki bunu geometrik serilerden hatırlayın. Şu formülü polinom formatına çevirdiğimizde 0.8 x z-1 x 1
+
+637
+01:46:52,163 --> 01:46:56,223
+Ondan sonra 0.64 x z-1 x 1
+
+638
+01:46:56,756 --> 01:47:03,756
+Yani aslında ne var? Şurada bir de 0.8xz üzeri eksi 1x üzeri 0 gibi şeyler var.
+
+639
+01:47:03,756 --> 01:47:13,756
+Böyle devam ediyor. Demek ki bu sonlu serilerden de çıkan bir şey. Yani isterseniz şu ifadeyi alın, 0.8xn, u,n'i alın, burada yerine koyun, yine bulursunuz.
+
+640
+01:47:13,756 --> 01:47:20,556
+Veya şuradaki görünümde ise neyi söyler? Geometrik seri açılımını söyler. Bu da ne oluyordu?
+
+641
+01:47:20,627 --> 01:47:30,867
+1. terim bölü 1- terimler arasındaki farka bakıyorsunuz. 1 bölü 1-0.8 z üzeri eksi. Bu bir gösterimdir.
+
+642
+01:47:30,867 --> 01:47:39,268
+Biraz önce Laplace'da olduğu gibi burada da zero-pol ayrımı yapabiliriz ama zero'yu ve pol'u buradan bulabilmek biraz zor oluyor.
+
+643
+01:47:39,268 --> 01:47:48,228
+Altı ve üstü z ile çarpıyoruz. Hem burayı z ile çarpırır, hem de burayı z ile çarparsanız oluruz. Z bölü z-0.8. Bakın bu size
+
+644
+01:47:48,271 --> 01:47:53,551
+hem kutupları hem de polları söyleyen bir eşitlik oluyor. Ve bu bir z dönüşümü arkadaşlar.
+
+645
+01:47:55,192 --> 01:48:01,831
+Peki bunun acaba z dönüşümü böyle olan bir şeyin ters dönüşümü nasıl hesap edilecek?
+
+646
+01:48:02,351 --> 01:48:05,931
+Bunu da tam tersinden açarsak, yani şöyle verilmiş bir şeyi.
+
+647
+01:48:06,952 --> 01:48:11,831
+Önce 1 bölü z bu şekilde verilse bunu bu sefer z-1 ile çarpıyoruz.
+
+648
+01:48:12,148 --> 01:48:31,608
+Payı ve paydayı. Dolayısıyla ne oluyor? Z-1 bölü, 1 artı 1.2 z üzeri eksi 1 geliyor. Peki bu ifadeyi biraz daha düzgün bir şekilde yazarsak, şunu paya atarsak, z üzeri eksi 1 çarpı 1 artı 1.2 z üzeri eksi 1, eksi 1 olacak. Peki bunun açılımına bakarsak,
+
+649
+01:48:32,275 --> 01:48:48,996
+Bu 1.2, 1.2'nin karesi, 1.2'nin küpü diye devam eden sıfırıncı kuvveti. Dolayısıyla ilk başta sıfır kabul edersek, 1.2'nin karesi, 1.2'nin küpü falan diye böyle devam edecek.
+
+650
+01:48:49,155 --> 01:48:59,216
+Tabi sadece bir önünde bir artı, bir eksi, bir artı, bir eksi var. Şu işaretlere dikkat etmemiz gerekiyor. Bu da bir matematiksel bir manipülasyonla bulunan bir şey. Demek ki işaretimiz aslında şöyle bir şeymiş.
+
+651
+01:49:00,212 --> 01:49:06,092
+Tabi böyle basit denklemlerde bu matematiksel çıkarımları yapabilmek mümkün. Her zaman yapmak mümkün değil.
+
+652
+01:49:06,872 --> 01:49:12,672
+Burada da arkadaşlar Z-transformunun şu elde ettiğimiz şeye bakın biraz önce
+
+653
+01:49:13,592 --> 01:49:17,952
+HS'e biz ne dedik? Transfer fonksiyonu dedik.
+
+654
+01:49:20,952 --> 01:49:24,271
+Burada da System Function deniyor. Şuradaki şeklinde.
+
+655
+01:49:27,028 --> 01:49:50,307
+Şimdi bu sistem functionları Finite Impulse Response dediğimiz sonlu Impulse Response filtrelerin olduğu filtrelerde kullanılıyor. Ve aslında bu bir fark denklemi. Biraz önceki türevli denklemlere çok benziyor.
+
+656
+01:49:50,676 --> 01:49:58,116
+Ve bunun biraz daha ilerletilmiş hali konvolüsyon oluyor. Çünkü bakın şu ifade konvolüsyona çok çok benziyor. Sayısal konvolüsyonu benzeri.
+
+657
+01:49:59,396 --> 01:50:03,980
+Örnek olarak şöyle bir YN işaretiniz var. Bunun kat sayıları işte...
+
+658
+01:50:04,243 --> 01:50:31,764
+Bakın, pardon, böyle bir sistemimiz var, işaret değil. Yani YN 6XN-5XN-1 artı XN-2. Bu bakın sizin birinci ödevde yaptığınız şeye çok benziyor. Orada N, N-5000, N-10000 gibi şeyler vardı. Burada da ona benzer. Yani ödevde de mesela onun cevabını da vermiş olayım. Bir XN işaretiniz var girdi olarak uyguluyorsunuz. Böyle bir sisteme sokarsanız, bu nedir? Tabi arada orada artı, eksi yoktu. Hepsi artı artıydı.
+
+659
+01:50:32,851 --> 01:50:52,851
+Bu sizin sesinizin yankılandırılmış haldir. Örneğin x n-5500 sesinizi geciktirir. Ama x n artı x n-500 derseniz, önce sesinizi duyarsınız, belli bir zaman geçer hatta 5000 diyelim. Sonra yankılı bir halini daha duyarsınız. Buna bir şey daha eklerseniz.
+
+660
+01:50:53,108 --> 01:51:09,347
+işte en eksi 15000, biraz süre sonra tekrar bir yankılı halini duyarsınız. Eğer bu sesin önüne 2 gibi, 6 gibi şey eklerseniz, biraz süre geçtikten sonra daha kuvvetlendirilmiş bir yankı gelmesi lazım.
+
+661
+01:51:09,347 --> 01:51:16,627
+Veya şurada çok çok daha kuvvetlendirilmiş bir yankı duymanız gerekir. Çünkü ne yapıyorsunuz? Orijinal vektörün üzerine
+
+662
+01:51:17,108 --> 01:51:24,427
+Biraz geciktirilmiş ama belli bir süre sonra geciktirilmiş yeni bir vektör ekliyorsunuz. Konvolüsyon da zaten bu işle yapılıyordu.
+
+663
+01:51:25,427 --> 01:51:37,108
+Şimdi bazı z-dönüşüm çiftlerine bakalım. Yani nasıl ki bir drag, delta, t'nin Laplace dönüşümü birse, burada da bunların temel şeyleri var.
+
+664
+01:51:37,587 --> 01:51:42,228
+Şimdi drag n'in z-dönüşümü aslında bir.
+
+665
+01:51:43,380 --> 01:52:00,380
+Eğer bu işaret, xn işareti şu şekilde zaman düzleminde bir işaretle konvolüsyon yapılırsa ne oluyordu? xn'i belli bir miktar geciktirme yapıyorduk.
+
+666
+01:52:00,380 --> 01:52:06,380
+Bunu z-düzleminde yapmanın yolu arkadaşlar, xn'i z üzeri eksi 1 ile çarpmaktır.
+
+667
+01:52:06,380 --> 01:52:10,380
+Şurada konvolüsyonla yaptığımız şeyi bakın burada çarpma ile yapabiliyoruz.
+
+668
+01:52:11,252 --> 01:52:17,252
+Çünkü yerine yazdığınızda elde edeceğiniz şey doğrudan bir çarpma işlemiyle dönmüş oluyor z üzeri eksi bir.
+
+669
+01:52:17,252 --> 01:52:23,252
+Örneğin böyle bir şey verildiğinde, x'en bu şekilde verildiğinde 3, 1, 4 diye devam ediyor.
+
+670
+01:52:23,252 --> 01:52:30,252
+Siz bunu z üzeri eksi bir ile çarparsanız ne olur? 3 çarpı z üzeri eksi bir.
+
+671
+01:52:30,252 --> 01:52:34,252
+Yani önceden z üzeri sıfırdı, 3 çarpı z üzeri eksi bir olacak.
+
+672
+01:52:34,252 --> 01:52:37,900
+Dolayısıyla elde edeceğiniz şey bir birim geciktirilmiş.
+
+673
+01:52:37,939 --> 01:52:41,119
+bir işaret olmuş oluyor. Eğer biz burada
+
+674
+01:52:41,119 --> 01:52:47,239
+şu noktaya sıfır noktası dersek artık burada bu noktası sıfır noktası olacaktır.
+
+675
+01:52:49,099 --> 01:52:49,720
+Dolayısıyla ben
+
+676
+01:52:49,720 --> 01:52:55,239
+bir birim geciktirmede, eksi bir kadar geciktirmede, z üzeri eksi bir ile çarpıyorsam,
+
+677
+01:52:55,380 --> 01:52:58,880
+eksi n sıfır kadar geciktirmede, z üzeri eksi n sıfır ile yani
+
+678
+01:52:59,347 --> 01:53:09,747
+n-k diyelim, burada da z üzeri k gibi bir şey olacak. Bakın burada zamanda yaptığımız şey, aslında z düzleminde basit bir polinom çarpması gibi bir şey oluyor.
+
+679
+01:53:09,747 --> 01:53:23,867
+Peki bunu şeyde nasıl kullanabiliriz? Input'umuz x'en ve hn size verildiğinde yn'i bulun dediğimizde, normalde bunu konvolüsyonla yapmıştık. Hatta birkaç farklı yoldan yaptık.
+
+680
+01:53:26,100 --> 01:53:33,100
+X'nin Laplace dönüşümü, X'et. H'nin Z dönüşümü, H'zet. E bu nedir?
+
+681
+01:53:33,100 --> 01:53:43,100
+Z üzeri eksi 1, z üzeri eksi 2, önünde eksi var. Z üzeri eksi 3, z üzeri eksi 4. Yani şu 1'leri yazmaya gerek yok. Önüne art eksi yazsak yeterli.
+
+682
+01:53:43,100 --> 01:53:45,612
+Bu, z üzeri 0 yani 1.
+
+683
+01:53:45,684 --> 01:53:50,184
+2xz-1, 3xz-2, 4xz-3.
+
+684
+01:53:50,184 --> 01:53:52,984
+Şunları doğrudan çarpıyoruz, polinom çarpması.
+
+685
+01:53:52,984 --> 01:53:58,184
+Tabi polinom çarpması yaparken, bunları tek tek bütün kas sayıları karşılıklı olarak çarpacaksınız.
+
+686
+01:53:58,184 --> 01:54:02,684
+Çarptığınızda, zamanda şu şekilde yaptığımız konvolüsyon,
+
+687
+01:54:02,684 --> 01:54:10,184
+burada aynı mantıkla neye karşılık gelecek, şurada hızlıca yazalım.
+
+688
+01:54:10,420 --> 01:54:15,420
+İşte burada karşılıklı olarak çarparsınız, size bunu veriyor. Peki bunun karşılığı nedir?
+
+689
+01:54:15,420 --> 01:54:19,420
+z üzeri eksi 1'de 1 varmış, o zaman bu drak n artı 1'dir.
+
+690
+01:54:19,420 --> 01:54:25,420
+z üzeri eksi 2'de, pardon, z üzeri n eksi 1'dir, yalnız söyledim.
+
+691
+01:54:25,420 --> 01:54:31,420
+z üzeri artı 1 olsaydı o zaman drak n artı 1 olacak derken. Doğrudan eksi 1 eksi 1, eksi 2 eksi 2.
+
+692
+01:54:31,420 --> 01:54:36,971
+z üzeri eksi 1 eksi 2 varsa drak n eksi 2 böyle devam edip gidiyor.
+
+693
+01:54:37,587 --> 01:54:41,688
+Yani elde edeceğiniz Yn'de daha kolay hesaplanabiliyor bakın.
+
+694
+01:54:43,728 --> 01:54:55,007
+Eğer bu şekilde ayrık keskek sistemleriniz varsa, önce bununla bunu konvolüsyon yap, sonra diğerini konvolüsyon yap, doğrudan çarpma işlemiyle bu işin içerisinden çıkabiliyorsunuz Z düzleminde.
+
+695
+01:54:55,948 --> 01:54:56,627
+Bunlara geçelim.
+
+696
+01:55:01,235 --> 01:55:19,036
+Mesela bakın, VN çıktığımız şuymuş, XN ile XN-1'in arasındaki farkmış. O zaman bu nedir? XN'in kendisi aynen kalacaksa, yani burada biz H seti bulurken ne yapıyorduk? X yerine Drak yazıyorduk.
+
+697
+01:55:19,475 --> 01:55:29,075
+Bu Draq n çarpı eksi Draq n eksi bir demektir. Bunların z dönüşümü Draq'ın z dönüşümü bir, şunun z dönüşümü de z üzeri eksi bir.
+
+698
+01:55:29,075 --> 01:55:38,675
+Bunun z dönüşümü nedir? Bu da bir artı z üzeri eksi bir. Yani burada Omega yerine ne yapıyoruz? Direkt Draq işaretini koyuyoruz. Çünkü bunlar LTI sistemler.
+
+699
+01:55:38,675 --> 01:55:47,275
+Bu genel şey ne olacak? Şuranın transfer fonksiyonu da buranın sistem fonksiyonu da buranın sistem fonksiyonu da çarpılın.
+
+700
+01:55:47,412 --> 01:56:09,092
+O zaman 1-z, z-2. Yani buradan girilen işaret, buradan çıkarken aslında böyle bir sistemden geçiyormuş. Bunun da ters thread dönüşümünü aldığınızda size z dönüşümü ne verecek? Bu drag n verecektir. Bu da drag n-2 verecektir. Eğer bu herhangi bir drag işareti değil de
+
+701
+01:56:09,427 --> 01:56:22,427
+xn işareti olursa, drag yerine bu sefer şurada nasıl x yerine drag yazıyorduk, burada da drag yerine x yazıp çözüme gidiyoruz. Demek ki bu sistem aslında xn ile yn arasındaki şu ilişki şundan ibaretmiş.
+
+702
+01:56:23,827 --> 01:56:34,427
+Aynı şey burada zero pole şeyde de var arkadaşlar. Kısaca buna bakalım. Her slide'ı tek tek anlatmayacağım.
+
+703
+01:56:38,355 --> 01:56:41,235
+Nasıl birbirinden üretildiklerini falan gösteriyor.
+
+704
+01:56:46,676 --> 01:56:53,676
+Böyle bir şey verildiğinde Z'yi bulunuz, işte HZ'i sıfıra eşitleyiniz ve bunun zero kollarını bulunuz.
+
+705
+01:56:53,676 --> 01:57:01,676
+Şimdi bu şekilleri ifadenin, isterseniz Z ile çarpın, isterseniz Z'i üzeri eksi birden gidin, sıfırları ve kutupları...
+
+706
+01:57:02,159 --> 01:57:29,399
+Şimdi şöyle baktığınızda 0'yu bulmak için ne yapmanız lazım? İşte z ile çarparsanız z eksi 1 bölü 2 eşittir 0 daha kolay. İki tarafı da z ile çarptınız. Sonra z'i yalnız bıraktınız. 1 bölü 2 kalıyor. Demek ki burada bir 0'su var. Böyle bir şey verildiğinde şimdi bu biraz önce S düzleminde gördüğümüz şey artık burada unit birim çember dediğimiz bir şeyle inceleniyor.
+
+707
+01:57:30,484 --> 01:57:42,363
+Çünkü burada periyodik bir durum var arkadaşlar. Şu ifadenin sıfırları ve kutuplarını incelerken birim çember üzerine düşük düşmediğiyle alakalı bakılıyor.
+
+708
+01:57:42,944 --> 01:57:48,543
+Birim çemberin içindeyse veya değilse kararlılık analizleri yapılıyor. Bunlar bu dersin konusu olmadığı için bunları geçiyorum.
+
+709
+01:57:48,543 --> 01:57:57,463
+Örnek olarak şu ifadenin köklerine baktığınızda işte 1'de ve 1 bölü 2 artı eksi j kök 3 bölü 2'de
+
+710
+01:57:57,488 --> 01:58:20,087
+Bunun ziroları varmış. Bir de bunun z eşittir tam şu noktada üç tane kutlu varmış. Çünkü z üzeri üçlü bir ifade, z üzeri eksi üçlü bir ifade. Bunun kaygılarına bakarsanız üç tane kırk üç çıkacak. Üç tane de kutlu olduğunu görüyoruz.
+
+711
+01:58:20,500 --> 01:58:45,100
+Bunların kutup sıfır diagramının incelenmesi, filtrelerde kullanılması alakalı bir sürü detay var ama dediğimiz gibi bu dersle alakalı bir şey değil. Birim kember olduğunu bilelim. Yeterli. Sıfır kutup diagramları, bunları geçebiliriz. Sonra mesela fazla alakalı bilgiler elde edilebiliyor. Nasıl ki frekans analizinde genlik frekans.
+
+712
+01:58:45,587 --> 01:58:49,747
+Faz frekans inceliyorsak, burada da faz inceleme yapılabiliyor.
+
+713
+01:58:51,587 --> 01:58:54,627
+Başta burada ne varmış? Şöyle hızlı ilerleyeceğim.
+
+714
+01:58:56,547 --> 01:59:00,347
+Bu slide'in çoğu kısmını biz diğer derse aktardığımız için
+
+715
+01:59:02,027 --> 01:59:06,027
+sadece burada işimize yarayacak bazı şeyleri gösterebilirim.
+
+716
+01:59:09,027 --> 01:59:11,747
+Mesela bakın böyle bir fark denklemi var.
+
+717
+01:59:13,716 --> 01:59:23,016
+Bunun acaba HN'i nedir? İşte Fourier transformu veya Laplace transformu olduğu gibi LED transformunu kullanarak HN'i bu şekilde elde ediyoruz.
+
+718
+01:59:23,016 --> 01:59:35,616
+Sonra da herhangi bir XN inşaatını bu sisteme uygularak sistemin çıktısını elde ediyoruz. Bakın aynısı XN ile HN'in konvolüsyonu YN ediyorsa YZ eşittir.
+
+719
+01:59:37,779 --> 01:59:51,539
+çarpı x, z deyip bunun üzerinden devam edeceğiz. Şunları geçebiliriz. Yine benzer şekilde ters dönüşüm özellikleri de var. Sadece burada biraz daha ekstra kavramlar gerekiyor.
+
+720
+01:59:52,900 --> 01:59:58,579
+Merak eden kişi bakabilir. Hani burada filtre tasarımlarla alakalı bazı kavramları da eklemiştik.
+
+721
+02:00:00,083 --> 02:00:26,104
+Bu da bu şekilde. Şimdi dönemin son konusu ona giriş yapacağım. Ondan sonra sınav vesaire onunla alakalı açıklama yapacağım. Aslında dönemin son konusu değil de teorik olarak son konusu. Çünkü biz size anlatacağımız bir de uygulama şeyi var. Onu da birazdan ilerleriz. Şimdi geldik sampling'e. Biz sampling'i nereden biliyoruz? XT gibi işaret verildiğinde buradan X'nin elde edilmesi.
+
+722
+02:00:26,899 --> 02:00:38,899
+Ama bu işlemi yaparken, belli bir örnekleme frekansı seçmemiz gerekiyordu. Eğer örnekleme frekansını uygun seçmezsek de, Elizing dediğimiz durum oluşuyordu.
+
+723
+02:00:38,899 --> 02:00:50,411
+Şimdi bu olmasın diye, acaba sampling teoremi neyi bize söylüyor? Burada size dersin başında ilk haftalığında söylediğimiz 2x f max.
+
+724
+02:00:50,771 --> 02:01:00,171
+FS 2 çarpı f max'dan büyük olmalıdır. Bununla alakalı nereden bazı şeyler geliyor? Bunun temellerine biraz bakacağız. Basit bir konu şu anki haliyle.
+
+725
+02:01:02,171 --> 02:01:10,571
+Şimdi normalde arkadaşlar biz X'ten işaretini örnekleyebilmemiz için, X'te işaretini örnekleyebilmemiz için f max'ı bilmemiz lazım.
+
+726
+02:01:11,271 --> 02:01:14,571
+f max'ı bilmemiz için de frekans düzlemine geçmemiz gerekiyor.
+
+727
+02:01:14,963 --> 02:01:21,463
+Çünkü doğrudan size her zaman periyodik işaret verilmez örneklemesi için. Herhangi bir işaret verilir.
+
+728
+02:01:22,344 --> 02:01:25,803
+Dolayısıyla Fourier dönüşümüyle frekans düzlemine bir şekilde geçmeniz gerekiyor.
+
+729
+02:01:26,743 --> 02:01:38,143
+Frekans düzlemine geçtiğinizde, şimdi biz örnekleme yaparken T yerine N çarpı TS veya T yerine N bölü FS ifadesini yazıyoruz.
+
+730
+02:01:39,380 --> 02:01:43,579
+Sizin bulduğunuz bu FS değerine göre bir değişken dönüşüm yapılıyor.
+
+731
+02:01:44,600 --> 02:01:54,440
+Burada herhangi bir işaretin frekansı Omega çarpı TS diye ifade ederse, şimdi Omega dediğimiz şey 2PF'di.
+
+732
+02:01:54,980 --> 02:01:57,039
+TS dediğimiz şey de 1 bölü FS'di.
+
+733
+02:01:57,880 --> 02:02:00,039
+Şöyle bir şey geliyor, 2PF bölü FS.
+
+734
+02:02:01,039 --> 02:02:06,899
+Şimdi bu 2PF bölü FS'e artı 2P çarpı L gibi, L integer olmak üzere,
+
+735
+02:02:07,539 --> 02:02:09,880
+Farklı eklemeler yaptığımızda hiçbir şey değişmiyor.
+
+736
+02:02:10,880 --> 02:02:12,239
+Bu da şundan geliyor arkadaşlar.
+
+737
+02:02:12,840 --> 02:02:14,619
+Şimdi cos x diye bir açımız var.
+
+738
+02:02:15,640 --> 02:02:21,060
+Bu x diye bir açımıza biz 2p eklersek, hatta 2p çarpı k eklersek.
+
+739
+02:02:22,119 --> 02:02:23,100
+Örneğin şöyle bir açı.
+
+740
+02:02:25,500 --> 02:02:29,340
+x açısı. Bunun cos değeri nedir? Şuradaki sayısal değer neyse odur.
+
+741
+02:02:30,380 --> 02:02:34,340
+Peki biz bu açıya 2p kadar daha eklersek aynı noktaya geri gelmez miyiz?
+
+742
+02:02:34,899 --> 02:02:36,899
+Şöyle bir tur daha şey.
+
+743
+02:02:36,899 --> 02:02:40,899
+4P eklesek yine aynı noktaya geleceğiz. Aslında bu buradan kaynaklı.
+
+744
+02:02:40,899 --> 02:02:54,899
+Dolayısıyla siz XT işaretinde bir örnekleme yaptığınızda elde ettiğiniz yeni frekans, çünkü biz ne dedik? Cos2PFT artı Fi dedik. Şuradaki bir frekansımız.
+
+745
+02:03:01,876 --> 02:03:11,195
+L artı Fi gibi bir şey gelir. Şimdi bu bir şey bir şey ölü de, ne var? Bazı kat sayıları olacak. Yani T yerine siz n bölü Efes yazdınız.
+
+746
+02:03:11,195 --> 02:03:19,376
+Buradaki şey yine iki Pi'ler belki olacak da, burada bir frekans bilgisi olacak. İşte bu frekans bilgisi şununla şunun arasında,
+
+747
+02:03:19,376 --> 02:03:26,976
+şu eşitlikten kaynaklı bir, yani şu kosünüstü olduğu gibi bir örtüşme meydana gelirse buna Elayiz'i gidiyoruz.
+
+748
+02:03:27,891 --> 02:03:29,891
+Şimdi nasıl olduğunu birkaç örneklerine görelim.
+
+749
+02:03:31,492 --> 02:03:47,891
+Peki, niye örnekleme yapıyoruz? Bir kere, yani XT'de dururken niye X'lerine geçiyoruz? Bir kere bilgisayarda işleme yapacaksak, yani bir sayısal işaret işleme, bilgisayar programı yazacaksak, bir de X'en lazım. Onun için bir şekilde T düzleminden kurtulmamız gerekiyor.
+
+750
+02:03:47,891 --> 02:03:54,891
+Burada analog dünyadan, dijital dünyadan örnekleme ile alakalı bazı şeyler söylenmiş. Örneğin bir sesimiz var.
+
+751
+02:03:55,444 --> 02:04:05,444
+Bunu dijitale çevirdiniz, bilgisayarda temizlik yaptınız, gerekirse filtreleme yaptınız, bunu tekrar sayısalığa çevirebiliyorsunuz. Basit bir anti-sistemi diyebiliriz.
+
+752
+02:04:05,444 --> 02:04:15,444
+Bunlar işin temelleri, ilk hafta konular olduğu için bunları geçiyorum, yani çok basit şeyler. Normal bir sampling yaparken, uniform sampling yapıyorsanız, T yerine N çarpı TS yapıyorsunuz.
+
+753
+02:04:15,444 --> 02:04:19,444
+Birinci sınavda zaten bunu ilk haftada anlattığım için bir benzerini sormuştuk.
+
+754
+02:04:20,627 --> 02:04:29,507
+veya n bölü fs yaparsınız. Örneğin işaretimiz cos 1000πT olsun.
+
+755
+02:04:29,507 --> 02:04:42,947
+1000πT. Bunu fs eşittir 500 Hz ile örneklersek ne olacak? cos 2xπ 500x t'lik bir işarettir bu.
+
+756
+02:04:46,515 --> 02:05:01,996
+2 çarpı pi çarpı 500 çarpı t yerine n bölü fs yazıyoruz 500. Bunlar birbirini götürüyor. Ne oluyor? Kosünüs 2 pi n işareti kalıyor. Bu 2 pi n de nedir?
+
+757
+02:05:01,996 --> 02:05:10,195
+İşte n eşittir 0 da kosünüs 0, yani şöyle bakacak olursak 0 ve 2 pi buradaydı.
+
+758
+02:05:12,564 --> 02:05:23,384
+Sıfırdır, yani birdir. En eşittir bir de cos 2P yine birdir. Yanlış yapmıyorsam. En eşittir ikide 4P'dir, yani yine birdir. Bu 1, 1, 1 diye bir işarettir.
+
+759
+02:05:24,423 --> 02:05:32,243
+Sürekli olarak bu şekilde cos 1000PT diye ifade eden bir işaret ne oluyormuş? Aslında şöyle 1, 1, 1, 1, 1 ayrık bir işaret haline geliyormuş.
+
+760
+02:05:36,020 --> 02:05:42,420
+Örneğin sizin örnekleme periyodunuz TS ise, FS'i buradan 1 bölü TS de bulursunuz.
+
+761
+02:05:42,940 --> 02:05:49,340
+Veya FS verildiğinde periyodu isterse 1 bölü FS de bulursunuz. Bunlar zaten bildiğiniz şeylerdir dedik.
+
+762
+02:05:51,640 --> 02:05:55,739
+Şimdi, XT işareti şuymuş.
+
+763
+02:05:57,020 --> 02:06:01,880
+Biz bu işareti şu örnekleme periyoduyla örneklersek, o zaman ne yapacağız?
+
+764
+02:06:02,100 --> 02:06:11,399
+T yerine n çarpı TS yazacağız. İşte 2P100T'nin yerine 2P100 çarpı n çarpı 0.05 yazarsınız, şunu buluyorsunuz.
+
+765
+02:06:11,399 --> 02:06:17,699
+Şimdi bu çok sıkı bir örnekleme. İyi de bir örnekleme. Normalde bunun frekansı kaç? 50 Hz.
+
+766
+02:06:17,699 --> 02:06:28,600
+Dolayısıyla periyodu nedir? 1 bölü 50'den 0.02 saniye olur. Siz bunu 0.02'nin çok çok üstünde aralıklarla
+
+767
+02:06:28,851 --> 02:06:52,731
+örnekleme yapıyorsunuz. Güzel bir örnekleme. 0.002 ile örnekleme yaptığınızda bu da makul bir örnekleme. Çünkü şunun en azından iki katından fazla olmasın. Bu yaklaşık 10 katı kadar bir örnekleme şeyi var. Daha iyi diyebiliriz. Bunlar tek bir bileşene sahip olduğu için kendisini geri oluşturabiliyorsunuz. Zaten bir alay zikli oluşmuyor.
+
+768
+02:06:54,515 --> 02:06:58,875
+Şurada 2 kHz de örneklemişiz, burada 500 Hz de örneklemişiz diyoruz.
+
+769
+02:07:02,163 --> 02:07:15,163
+Bu iki kat oranı ile alakalı asıl mesele şu. Şimdi siyahla çizilmiş olan işareti, kırmızıda çizilen şeylerle, şu noktalarla örnekleme yaptığımı düşün.
+
+770
+02:07:15,163 --> 02:07:29,099
+Şimdi bu noktaları birleştirdiğimde siyah çizgilerle, kırmızı çizgiler birbirine benzemiyor. Hem aradaki detayları kaçırıyorum, yani orijinal veriyi kaybediyorum. İkincisi, gördüğüm şey
+
+771
+02:07:29,171 --> 02:07:32,351
+Gördüğüm işaret çok çok daha farklı bir işaret haline geldi.
+
+772
+02:07:33,231 --> 02:07:39,891
+Şimdi bunu şununla görürsünüz, işte cep telefonunuzu bir monitöre tuttuğunuzda böyle çizgi çizgi şeyler görürsünüz.
+
+773
+02:07:40,571 --> 02:07:46,571
+LISing dediğimiz. Hatta şöyle Google görsellerde bulabilirsem, Signol LISing diyelim.
+
+774
+02:08:05,619 --> 02:08:06,819
+Bakıyorum arkadaşlar.
+
+775
+02:08:08,340 --> 02:08:08,960
+Yol layım.
+
+776
+02:08:21,043 --> 02:08:22,543
+Böyle bir YouTube buldum.
+
+777
+02:08:27,091 --> 02:08:29,091
+Şöyle biraz ilerleyelim.
+
+778
+02:08:29,091 --> 02:08:35,091
+Bunun matematiksel ispatı da nereden geliyor? Discrete Time Fourier Transformundan geliyor.
+
+779
+02:08:35,091 --> 02:08:40,076
+Yani o da ayrı çünkü ayrık bir işareti elde etme sürece ona burada yine girmiyoruz.
+
+780
+02:08:46,804 --> 02:08:54,463
+Bakın, şimdi şu uçağın pervanesi, bu tarz şeylere dikkat etmişsinizdir belki.
+
+781
+02:08:56,463 --> 02:09:02,743
+Pervanenin bazen saat yönünde veya bazen de saat yönün tersinde döndüğünü görürsünüz.
+
+782
+02:09:03,443 --> 02:09:07,023
+Veya işte telefonla baktığınızda farklı, telefonla bakmadan farklı görürsünüz.
+
+783
+02:09:07,023 --> 02:09:11,020
+Veya işte şu görüntüye baktığınızda...
+
+784
+02:09:11,091 --> 02:09:16,492
+monitöre baktığınızda ekranda böyle bir çizgiler, yatay çizgiler görülebilir.
+
+785
+02:09:16,492 --> 02:09:25,492
+Örneğin telefonla bir yerin fotoğrafını çekiyorsunuz. Bakın şuradaki doku ile şuradaki doku birbirinden farklı şeyler oluyor.
+
+786
+02:09:25,492 --> 02:09:36,492
+Bunları yanlış örneklemenin sonucu oluşan Ally-Zing'in şeyleri. Bunları isterseniz videoyu daha sonra paylaşırız, inceleyebilirsiniz.
+
+787
+02:09:38,547 --> 02:09:47,367
+Bunun nedeni şu, şimdi siz bir işareti aldınız, örneğin cos, bilmem ne işareti, örnekleme yaptınız 0.4pn buluyoruz.
+
+788
+02:09:48,147 --> 02:09:54,027
+Şimdi 0.4pn aynı zamanda cos 2.4pn'dir. İkisi birbirinin matematikleri aynısı.
+
+789
+02:09:54,907 --> 02:10:02,347
+Eğer sizin işaretinizde cos bir şey bir şey bir şey var, artı cos bir başka bir şey var.
+
+790
+02:10:03,347 --> 02:10:07,948
+Şunu örneklediğinizde ne olsun? Cosinus 0.4 Pn olsun.
+
+791
+02:10:08,988 --> 02:10:12,828
+Bunu da örneklediğinizde cosinus 2.4 Pn olsun.
+
+792
+02:10:13,328 --> 02:10:14,608
+Olabilir mi? Olabilir.
+
+793
+02:10:15,628 --> 02:10:21,268
+Öyle bir örnekleme frekansı seçersiniz ki bu cosinus 0.4 Pn, şu 2.4 Pn olur.
+
+794
+02:10:22,028 --> 02:10:26,388
+Bunun sonucu olarak bu ikisi birbirinin aynısı olacağı için, şu ikisi birbirinin aynısı olacağı için,
+
+795
+02:10:26,908 --> 02:10:28,948
+Dolayısıyla ne oluyor? Burada aslında bir örtüş mü oluyor?
+
+796
+02:10:29,652 --> 02:10:31,652
+En basit matematiksel ispatı budur.
+
+797
+02:10:32,452 --> 02:10:36,072
+Hocam peki bunların birbirinden farklı olması mümkün mü? Elbette mümkün.
+
+798
+02:10:36,792 --> 02:10:40,792
+Şunun F2 diyelim, buna da F1 diyelim.
+
+799
+02:10:40,792 --> 02:10:51,792
+Şimdi maksimum F1, F2 hesabı yapıp, 2 çarpı maksimum F1, F2 alıp bunu Fs olarak alırsanız,
+
+800
+02:10:52,492 --> 02:10:56,172
+şuradan yapacağınız örneklemeden 0.4 Pn elde edemezsiniz.
+
+801
+02:10:57,235 --> 02:11:08,735
+Buradan elde edeceğiniz şeyden de örneklemeden 2.4 PN elde edemezsiniz. Dolayısıyla birbirine karışmayacak iki tane en düzlemde farklı işaret elde edilir. Onun bir örneği vardı galiba.
+
+802
+02:11:10,315 --> 02:11:19,515
+Tabi burada şeyler, ilk haftalarda da anlattığımız işte bir işaret verildiğinde 44.100 tane CD kalitesinde şey alınıyor.
+
+803
+02:11:19,988 --> 02:11:45,668
+Her CD kalitesindeki her bir veri 14 bit ile saklanıyor. Bazen iki kanallı saklanıyor. Örneğin siz bir dakikalık bir müzik kaydetmek istiyorsanız, bir dakika 60 saniye, 60 saniyenin her birinde 44100 tane örnek var. Bu 44100 tane örnekten ikişer tane alınıyor. Yani iki mikrofonlu gibi düşünebilirsiniz. Her bir örnekte 16 bitlik bir gelişiriyor. O zaman nedir bu?
+
+804
+02:11:46,515 --> 02:11:53,755
+60x44100 x 4 byte'dır arkadaşlar.
+
+805
+02:11:55,015 --> 02:12:01,635
+Bu da nedir? 240x44100 tane byte'dır.
+
+806
+02:12:02,115 --> 02:12:07,995
+Şimdi 44100 ve 240'ı yaklaşık olarak 2'nin katları şeklinde yazarsınız.
+
+807
+02:12:07,995 --> 02:12:11,995
+Şimdi 240 dediğim şey 256'e yakın, bu 2 üzeri 8 demek.
+
+808
+02:12:12,467 --> 02:12:39,108
+44100'de ne oluyor? 65500'da 36. Şurada yaklaşık olarak 2 üzeri 11 diyebiliriz. 2 üzeri 12 falan oluyor. Artık şu sayısal sunucu 2 üzeri 10, 1024, 2048, 4096, 8192, 16. Yaklaşık 16 olacak arkadaşlar. Bu da 2 üzeri 14.
+
+809
+02:12:39,891 --> 02:12:58,292
+2 üzeri 14 byte ile 2 üzeri 4 çarpı 2 üzeri 10 byte diye ifade ederseniz 16 kilobyte yaklaşık olarak. Tabi şu aradaki işlemleri geçtik. Böyle bir veri elde ederek. Bir dakika, neyi yanlış yaptık?
+
+810
+02:13:00,979 --> 02:13:08,539
+10.3 megabyte dediğim şeyde düzeltirseniz yaklaşık olarak o kadar kilobyte gelir. Yani şuradaki hesabımız aynı.
+
+811
+02:13:10,579 --> 02:13:20,779
+Sadece işte megabyte'lı şey, byte'lı farklı. Peki, XT'yi X'e çevirdiğimizde şöyle bir şeyden böyle bir şeye geçeceğimizi konuştuk.
+
+812
+02:13:21,779 --> 02:13:24,380
+Şimdi burada şöyle bir şey yapıyoruz.
+
+813
+02:13:25,140 --> 02:13:50,079
+N'i dışarıda tutarsak V çarpı TS çarpı N artı Fi. Şimdi şu V çarpı TS'e Omega hat diyoruz. Buna dijital frekans deniyor arkadaşlar. Bu dijital frekansın tam ispatı Discrete Time Fourier Transformer'dan geliyor. Dediğim gibi bu dersin konusu değil. Yani şu ikisi örnekleme yaptığımız sırasında elde edildiğimiz şu oran şey oluyor.
+
+814
+02:13:51,060 --> 02:14:00,060
+Şimdi bu dijital frekansın yine Fourier transformındaki karşılığı 0 ile 2P arasında değişiyor.
+
+815
+02:14:00,060 --> 02:14:08,060
+Çünkü siz burada bir açı var, bu açıya 2P eklediğinizde bu kosünüs işaretine hiçbir şey değiştirmeyecek.
+
+816
+02:14:08,060 --> 02:14:11,060
+Dolayısıyla biz bunu 0-2P arasında normalize ediyoruz.
+
+817
+02:14:11,060 --> 02:14:13,060
+İşte bu normalizasyon sırasında...
+
+818
+02:14:13,555 --> 02:14:23,035
+gerçekleşen şey eğer iki işaret birbiriyle bu 2P, 4P, 6P veya eksi 2P, eksi 4P şekilde eşleşiyorsa, çakışıyorsa buna El Isaac deniyor.
+
+819
+02:14:23,035 --> 02:14:40,175
+Örnek üzerinde bir tane gösterebilirsek, şimdi bu işaretin örnekleme yapılmadan önce, yani kosinus 2P 100'müş frekansa, bunu n bölü 1000 ile şu kadar frekansla örnekleme yapmışlar.
+
+820
+02:14:40,787 --> 02:14:46,787
+Fourier dönüşümünü aldığınızda, Omega-Hat düzleminde yani frekans düzlemine gittiğinizde şöyle bir şey göreceksiniz.
+
+821
+02:14:46,787 --> 02:14:52,787
+Şimdi bu aralık ne olursa olsun 0,2P aralığında değişecek.
+
+822
+02:14:52,787 --> 02:14:57,787
+Sadece, şurada var mıydı bir örnek?
+
+823
+02:14:57,787 --> 02:15:03,787
+Eğer siz mesela burada 1000 Hz ile örnekleme yaparsanız şöyle bir şey yapabiliyorsunuz.
+
+824
+02:15:03,787 --> 02:15:05,787
+2P çarpı 0.1.
+
+825
+02:15:05,787 --> 02:15:08,715
+Eğer 100 Hz ile şey yaparsanız 2P çarpı 1 oluyor.
+
+826
+02:15:09,043 --> 02:15:17,503
+Dolayısıyla burada elde edeceğiniz sonuç aslında 2P, 0P arasında veya eksi 2P, artı 2P arasında değişen bir şey göreceksiniz.
+
+827
+02:15:20,063 --> 02:15:30,663
+Bu olaya işte birden fazla işaretin bileşeni varsa, bu bileşenlerin birbiriyle örnekleme sonrası, çakışması olayına şey diyoruz, helal ediyoruz.
+
+828
+02:15:30,764 --> 02:15:33,183
+İşin temel matematiği de, en basit matematiği de bu.
+
+829
+02:15:35,347 --> 02:15:40,147
+Omega n yerine Omega artı 2pi n yazdığımda hiçbir şey sonuç değişmeyecek.
+
+830
+02:15:41,228 --> 02:15:48,967
+Mesela şu, Xt eşittir kosinüs 400pt imiş. Ben bunu 1000 Hz ile örneklersem 0.4pm bulurum.
+
+831
+02:15:49,807 --> 02:16:02,007
+Örneğin diğer işaretinde, yani ben Xt eşittir X1t artı X2t gibi bir işaret olsun. X1 kısmını 1000 Hz ile örnekledim.
+
+832
+02:16:02,387 --> 02:16:14,547
+x2'yi de Binars'le örnekle dediğimi düşüneyim. Binars'le örnekle de bunu buluyorum. Şimdi bu ikisi birbirinin tamamen aynısı. Tamamen aynısı olduğu için oluşan bu şeye biz Alizing diyoruz arkadaşlar.
+
+833
+02:16:15,327 --> 02:16:27,387
+Peki en az kaç olması lazım? Bu işaretin örneklendirmesi için, Alizing oluşmaması için. Efes burada bu örnekte kaç olur? Şunun frekansı 200.
+
+834
+02:16:28,500 --> 02:16:42,180
+Bunun frekansı 1200, 2 çarpı maksimum 200, 1200 diyeceğiz. O da ne oluyor? 2400. Şimdi 2400'de örneklediğimizi düşünelim.
+
+835
+02:16:43,219 --> 02:16:55,500
+2400'de örneklediğimizde, cos 400 çarpı pi çarpı n bölü 2400 elde edeceğiz. Ne olacak? cos
+
+836
+02:16:56,852 --> 02:17:20,612
+n çarpı pi çarpı n bölü 6'yı buluyoruz. Şunu örneklediğimizde, cos 2400 çarpı pi çarpı n bölü 2400 yazacağız, np'yi bulacağız. Şimdi np'ye, 2p eklediğinizde np artı 2pn
+
+837
+02:17:20,819 --> 02:17:33,020
+Yani iki pi'ye en katlı iki pi'ler eklediğiniz için hiçbir şekilde şu ikisinin birbirine örtüşmediğini görürsünüz. Bakın iki kat oranında bir şey seçmiş olmak ne yaptı? Sizi örtüşmeden korudu.
+
+838
+02:17:35,020 --> 02:17:46,220
+Az bir kısım kaldı, bitiriyorum onu arkadaşlar. Bu da işte biraz önce söylediğimiz şey, yani matematik olarak biraz daha derinlerine giriyor. Yani ben burada seçtiğim bir frekansa
+
+839
+02:17:46,515 --> 02:17:57,515
+Örnekleme frekansının belli bir katı kadar ekleme yaptığında, eğer bu frekansı doğru bir şey seçmişsem, 2P'ye yaklaşmayacak bir şey seçmişsem,
+
+840
+02:17:57,515 --> 02:18:05,815
+örnekleme, şey, Elizing olmayacak. Ama eğer böyle bir şey seçmişsem, 2P'ye yakın bir şey seçmiş, olacak bir şey seçmişsem, Elizing olabilir.
+
+841
+02:18:08,216 --> 02:18:11,216
+Şu normalize frekans falan bunları geçebiliriz.
+
+842
+02:18:16,084 --> 02:18:20,164
+Bunlar yine diğer derse aldığımız konular, bakayım.
+
+843
+02:18:23,043 --> 02:18:26,484
+Tamam, bunlar zaten hariç tutmuştuk bu derste.
+
+844
+02:18:27,123 --> 02:18:35,043
+Olay en basit anlamda, cos'ünün herhangi bir açısının iki katıyla eklenmesi olan bir şekil.
+
+845
+02:18:35,860 --> 02:18:51,139
+Konularımız bu kadar teorik olarak. Şimdi gelecek hafta quizimiz var. Quizde bu teorik konuların Z-transform'u, discrete time, Fourier transform sorulmaz. Belki Z-transform'u sorabiliriz. O konuda da bilgi veririm. Ali Can Hoca hangi konuya geldiyse ona göre ayarlayacağız.
+
+846
+02:18:52,340 --> 02:19:01,400
+Gördüğümüz her konudan soru sorulabilir. Bugün yarın en son konu şu konudur. İşte Laplace'dır veya sampling'tir diye size bilgi vereceğim.
+
+847
+02:19:02,548 --> 02:19:19,988
+Test sınavı olacak. Bu bir quiz. Yaklaşık olarak 35-40 dakikalık, belki 20 soruluk bir sınav olacak. Zaten sınıfımız vs. her şey belli. O nedenle burada ekstra bir açıklamaya gerek yok. Sizin sorunuz varsa quizle alakalı yine ayrıca birazdan sorabilirsiniz.
+
+848
+02:19:20,888 --> 02:19:28,388
+Ödev size ilan edildi arkadaşlar. Ödevde yapmanız gereken şey bir grafik arayüz tasarlamak. Bu bir komut satıra arayüzü olmayacak.
+
+849
+02:19:29,012 --> 02:19:39,551
+Örneğin ben 3 tane, orada 3 ile sınırlı bıraktık da isteyen biraz daha fazla yapabilir. 3 tane kosünüsün toplamı için AK, BK kat sayılarına, işte sinüs de olabilir.
+
+850
+02:19:40,272 --> 02:19:54,992
+Kullanıcıdan işte grafik arayüzünü de alacaksınız. Sonra onun işte 3 taneden 1 tanesi varsa ki plotu, 2 tane varsa onunla alakalı plot, 3 tane varsa, 4 tane varsa, daha fazla varsa bu plotları grafik arayüzü de gösteriyoruz.
+
+851
+02:19:55,471 --> 02:20:17,871
+Şimdi size bir ödev metninde şey paylaşıldı. Örnek paylaşıldı. Ben mesela şurada tekrar bunun bir benzerini göstereyim. Örneğin bir analiz yaptığınızda işte bilinci harmonik oluştuğunda şöyle bir görüntü oluyormuş.
+
+852
+02:20:18,548 --> 02:20:43,548
+Pardon, şu birinci harmoniye kadar böyle bir şey. 3 harmonik eklerseniz, 3 tane kosünüs eklerseniz böyle bir şey. 5 tane eklerseniz böyle bir şey. 21 tane eklerseniz böyle bir şey. Burada çok da etkileşim yok. Bu sadece hangi butona basarsanız farklı bir resim gösteriyor. Onun için buradan çok bir yararlanmaya kalkmayın. Doğrudan 21 tane sinüs ve kosünüsleri toplayacak bir şey. Şimdi 21 sinüs ve kosünüsün...
+
+853
+02:20:43,567 --> 02:20:49,727
+21 tane AK kat sayısı kosinüs için var, 21 tane BK kat sayısı sinüs için var.
+
+854
+02:20:50,448 --> 02:20:52,587
+Tabii biz onun için 3 veya 5 tane yapın dedik.
+
+855
+02:20:53,268 --> 02:21:02,987
+3 tane AK, 3 tane BK alacaksınız kullanıcıdan ve bunları kümülatif bir şekilde ben 3 tane seçersem 3 tanesini gösterecek, 2 tane seçersem 2 tanesini gösterecek.
+
+856
+02:21:03,567 --> 02:21:08,347
+Bunun bir grafik arayüzünü yapmanızı, programlamamızı istiyoruz. İster MATLAB'da isterseniz Python'da.
+
+857
+02:21:08,884 --> 02:21:31,384
+Bir de işte orada şey vardı, size bir üçgen eşitlik vermiş, dalga formu. Onu elle önce CK'ları çözersiniz, sonra CK'lardan AK'ları ve BK'lara geçiş yaparsınız. Sonra AK ve BK'ları bu arayüzde, test ettiğiniz arayüzde ilk üç tane terimi içerecek şekilde kullanarak çizim yapabilirsiniz. Ödevimiz de bu şekildeydi. Burada bir sorumuz var mı?
+
+858
+02:21:39,667 --> 02:21:55,747
+Birinci ve ikinci soru için iki ayrı arayüz değil, tek arayüz olacak. Yani oradaki soru birincisinde bir arayüz tasarlayacak genel bir şey yapıyorsunuz, ikincisinde de o arayüzü kullanıyorsunuz. Tek bir program istiyoruz, tek bir arayüz olacak. Çünkü ikisi birbirinden ayrı şeyler değil.
+
+859
+02:21:59,987 --> 02:22:01,167
+Başka sorumuz var mı?
+
+860
+02:22:05,108 --> 02:22:29,168
+Şimdi, sinyal türünü kullanıcıdan almak diye bir şey yoktu. Oradan AK kat sayıları, kosinüslerin, yani bakın ders notlarımızda olan şey şu arkadaşlar, herhangi bir XT işareti, K eşittir, eksi sonsuzdan artı sonsuza kadar AK dediğimiz, gerçi bu büyük AK ile yazılıyordu.
+
+861
+02:22:31,603 --> 02:22:54,223
+Kosinus 2Pi F0T artı fi k ak fi k artı k eşittir. Eksi sonsudan artı sonsa Bk çarpı sinüs 2Pi F0. Hatta şurada bir de bir k'da şurada var. F0KT.
+
+862
+02:22:56,223 --> 02:22:57,504
+F0KT.
+
+863
+02:22:58,708 --> 02:23:05,407
+Artı TK. Denklemler, slide'larda var. Şunlar küçük B ve küçük A olabilir, onu tam hatırlayamadım.
+
+864
+02:23:07,747 --> 02:23:13,808
+Sinüs ve kosünüs ama küçük AK alırsanız bu kosünüslerle alakalı, küçük BK'lar da sinüslerle alakalı.
+
+865
+02:23:14,567 --> 02:23:25,108
+Bunların toplamını alıp XTI, işte kümünatif şekilde sadece bir tane harmonik, işte 3 harmonik, 5 harmonik şeklinde bir grafik arayıp yapmanızı bekliyoruz.
+
+866
+02:23:27,252 --> 02:23:36,252
+Bir de burada şey, kullanıcıdan elbette şey almanız gerekiyor, F0'ı alacaksınız. Çünkü F0 ile K kadar, işte K'nın değeri birse 1 katı, 2 katı, 4 katı.
+
+867
+02:23:36,252 --> 02:23:44,252
+Yani kullanıcıdan F0 alınacak, AK'lar, BK'lar alınacak, bir de FIK'lar alınacak. Bunlar da mesela alınması gereken değerler.
+
+868
+02:23:44,252 --> 02:23:49,252
+İşte artık bunu grafik arayüzüde kendiniz nasıl tasarlarsınız tasarlayabilirsiniz.
+
+869
+02:23:49,940 --> 02:23:58,940
+Bir de video çekmenizi istedi asistan hocalarınız. Çünkü bazı kodlar çalışmıyormuş. Doğru günün çalıştığını gösteren iki dakikalık bir video çekmenizi istiyoruz.
+
+870
+02:23:58,940 --> 02:24:05,940
+Eğer öyle bir video yoksa eksiktir deyip ona göre değerlendirme yapılabilir. Eğer kodunuzda çalışmıyorsa tabii ki.
+
+871
+02:24:05,940 --> 02:24:11,940
+Çalışan kod için elbette video olmasa da belki problem değil de bazı kodlar hakikaten çalıştırılamıyor.
+
+872
+02:24:15,476 --> 02:24:26,515
+İkinci soruda V0'a kullanıcı verdiği için zaten periyod T var hocam. Şimdi o T başka T. Şimdi şuradaki T plot edeceğiniz zamana göre değişen T.
+
+873
+02:24:28,376 --> 02:24:31,736
+V0 ve T değerleri dediğim şey, bakayım.
+
+874
+02:24:35,443 --> 02:24:44,004
+O grafikli sorudaki T'den mi bahsediyorsun? Şöyle üçgen şeyde T görünüyor ya.
+
+875
+02:24:49,075 --> 02:24:51,855
+Şu an bende soru açık değil de bir dakika açayım hemen.
+
+876
+02:24:56,211 --> 02:24:57,211
+SAS
+
+877
+02:24:57,211 --> 02:25:06,211
+V0 başka, o T0'dır muhtemelen.
+
+878
+02:25:16,755 --> 02:25:30,335
+V0 ve T0. Evet, buradaki T0 olacak. Yani ben bir de şurada bir yerde T vardı. Aynen, şuradaki yani şuradaki T başka bir şey. Şunu T0 gibi düşünebilirsiniz.
+
+879
+02:25:33,195 --> 02:25:33,835
+Tamam.
+
+880
+02:25:36,115 --> 02:25:44,556
+Dolayısıyla bir tanesini almanız, öbürünü ne yapacaktır? Sağlayacaktır. İkisi birbirine zaten içeren şeyler. Ama şurada
+
+881
+02:25:45,236 --> 02:26:10,876
+A ve T değerlerini kullanıcıdan almak gerekiyor. Örneğin, yani ben A0'ı aldım, AK'ları, BK'ları aldım, F0'ı... Zaten A ve T'yi alarak aslında, şey T'yi alarak F0'ı bulabilirsiniz burada, periyodik işareti olduğu için. Bir diğer örnek de bakın şu, buradaki de fena değil. Yani bunları inceleyerek bir GUI tasarlayabilirsiniz. Bu da böyle. Başka sorusu olan var mı?
+
+882
+02:26:18,100 --> 02:26:21,420
+Python'da yapmanızı tavsiye ederim. Bu iyi tasarlamak Python'da daha kolay.
+
+883
+02:26:21,920 --> 02:26:25,840
+MetTap biraz daha karmaşık ama isteyen MetTap'e de bakabilir.
+
+884
+02:26:27,159 --> 02:26:27,479
+Bu bir.
+
+885
+02:26:29,040 --> 02:26:35,380
+Şimdi bir ek dersimiz olacak arkadaşlar. Haftaya sınavımız olduğu için 22'sinde.
+
+886
+02:26:36,299 --> 02:26:42,319
+Ek dersi 23'ünde yapacağım. 23'ünde saat 1'de ama belki Ali Can Hoca ile beraber.
+
+887
+02:26:43,028 --> 02:26:55,028
+Bu ek dersi iki grubu tek grubu olacak şekilde yapabiliriz. Orada da bu derste teorik olarak gördüğümüz şeyin sayısal işaret işleme, DSP farklı uygulamalar şeklinde biraz uygulama temelli bir ders olacak.
+
+888
+02:26:55,028 --> 02:27:08,811
+Oradan da sınavda soru gelebilir özellikle finalde veya işte yani quiz de gelmez de artık, finalde gelebilir. Bunun duyurusunu size yapacağım ama olursa 23'ünde belki 24'ünde de olabilir ama genelde siz 23'ünde uygun dediniz.
+
+889
+02:27:08,852 --> 02:27:31,612
+Diğer önceki derslerde. Yarın herhangi bir ek dersimiz yok. Bugün Ali Can Hoca ile dersten sonra konuşuruz. Gelecek hafta ayın 23'ünde yaparsak ikimiz ayrı veya ikimiz birlikte onu da size ilan edeceğiz. Ek derslere kalı durum da bu. Projeyi söyledim, ek dersi söyledim, quizi söyledim. Finalde de zaten ek derste konuşuruz artık.
+
+890
+02:27:36,084 --> 02:27:39,444
+Evet, başka sorumuz yoksa dersi birazcık doldurduk.
+
+891
+02:27:41,384 --> 02:27:49,463
+Quiz çoktan çok seçmeli olabilir. Yani o konuda duyuru yaparız tekrardan. Yani bir şey şu an için tam sorular belli değil.
+
+892
+02:27:50,604 --> 02:27:55,904
+Çoktan çok seçmeli yaptığımız oldu da bir durum değerlendirmesi yapalım, size bilgi veririz.
+
+893
+02:27:57,164 --> 02:28:01,484
+Mailden veya Whatsapp'tan takip edin. Yani sen hatırlattın artık [öğrenci], bilmiyorum.
+
+894
+02:28:03,347 --> 02:28:05,808
+Peki var mı bir istenen sorunuz arkadaşlar?
+
+895
+02:28:09,716 --> 02:28:21,756
+Teşekkür ederim. Ben okuldayım ama bugün konuşmada biraz zorluk yaşadığım için mecburen online yaptık. Konularımızı da bu şekilde tamamlamış olduk. Hepinize iyi günler. Görüşmek üzere arkadaşlar.
