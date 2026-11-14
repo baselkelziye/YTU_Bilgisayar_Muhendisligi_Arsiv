@@ -1,0 +1,1511 @@
+1
+00:06:46,708 --> 00:06:50,548
+Evet, günaydın arkadaşlar. Sesimi duyuyorsunuz değil mi?
+
+2
+00:07:00,564 --> 00:07:02,104
+Teşekkürler, sağ olun.
+
+3
+00:07:05,164 --> 00:07:14,044
+Şimdi bugün anahtarlama konuşacağız. Sonrasında belki biraz Broadband Network konuşuruz.
+
+4
+00:07:15,364 --> 00:07:22,684
+Ama öncesinde şeyi sormak istiyorum. Duyurular vesaire her şey geldi. Gruplarınızı seçtiğiniz bir problem yok. Değil mi?
+
+5
+00:07:22,684 --> 00:07:25,424
+Yani problem olup da bana ulaşan olmadı zaten.
+
+6
+00:07:25,908 --> 00:07:29,548
+Şu ana kadar ama ben geldi garanti olmasının adına sorayım dedim.
+
+7
+00:07:34,228 --> 00:07:37,028
+Herhalde o konuyla ilgili de bir problem yok bu durumda.
+
+8
+00:07:38,828 --> 00:07:41,228
+Şimdi, bugün anahtarlama konuşacağız.
+
+9
+00:07:42,588 --> 00:07:52,788
+Aslında, bu dersin yapısından başlamak gerekirse, doğrudan bizim dersimizin kapsamı ya da konutu değil.
+
+10
+00:07:53,588 --> 00:07:54,867
+Şundan dolayı.
+
+11
+00:07:55,136 --> 00:08:07,796
+Normalde biz buradaki network dersini iki parçaya bölmüştük zamanında. Biri datacom, yani veri iletişimi, biri de ki datacomun temel görevi aslında ikinci katmana kadar.
+
+12
+00:08:07,796 --> 00:08:17,796
+Sonrasında network katmanı ve üstü içinde ağ teknolojileri dersini organize etmiştik. Dolayısıyla anahtarlama burada...
+
+13
+00:08:17,903 --> 00:08:23,603
+Böyle full detayına gireceğimiz bir konu değil ama genelde biraz konuşmakta fayda var.
+
+14
+00:08:23,683 --> 00:08:28,343
+Bazı şeylerin yerlerine oturabilmesi için ara ara katmanlar arası geçişler yapacağız.
+
+15
+00:08:29,783 --> 00:08:40,344
+Anahtarlama dediğim gibi ağ katlama fonksiyonları arasında aslında çok sayıda cihazın iletişim içinde olabilmesi için.
+
+16
+00:08:40,847 --> 00:08:43,867
+Ne yapmamız lazım? Bunları bir şekilde birbirine bağlamamız gerekiyor.
+
+17
+00:08:44,207 --> 00:08:54,168
+Eğer iki cihaz söz konusuysa, ki hani Wide Area Network'ta aslında baktığımızda hep yaptığımız şeyine point-to-point bağlantılar yapmak.
+
+18
+00:08:54,227 --> 00:08:58,168
+Yani noktadan noktaya bağlantı yapabiliriz iki cihaz söz konusu. Bir sıkıntı yok.
+
+19
+00:08:58,487 --> 00:09:02,747
+Ama cihaz sayısı arttığında bu modeli devam ettirmek çok kolay değil.
+
+20
+00:09:03,407 --> 00:09:03,607
+Neden?
+
+21
+00:09:04,980 --> 00:09:09,000
+Böyle bir yapıyı devam ettirdiğimizde
+
+22
+00:09:13,556 --> 00:09:30,276
+Ne olacak? Herkesin herkese bağlı olduğu bir mesh topolojisi ortaya çıkacak. Bu da baktığınız zaman belli açılardan oldukça maliyetli bir durum. Etkin bir şey değil, yani efektif değil.
+
+23
+00:09:32,692 --> 00:09:45,451
+Alternatif ne olabilir? Yani mesh oluşturmak yerine merkezi bir nokta alıp, merkezi nokta üzerinden her cihaza bağlantı yapmak olabilir.
+
+24
+00:09:48,032 --> 00:09:54,432
+Benzer bir başka yapı ne olabilir? Bir yol topolojisi, bas topolojisi oluşturmak olabilir.
+
+25
+00:09:55,892 --> 00:09:59,471
+Ama bunların hepsinde ne sıkıntısı yaşayacağız?
+
+26
+00:10:00,000 --> 00:10:12,960
+topolojisinde cihaz başına düşen kapasite kullanımı oldukça azalacak. Bir de tabii ki mesafe sınırlanmamız olacak.
+
+27
+00:10:18,676 --> 00:10:43,596
+Bunları konuşacağız aslında. Bunlara karşılık ne üretebileceğimizi konuşacağız. Baktığımızda Bilgisayar Ağları dediğimiz zaman yapı nasıl oluşuyor? İki farklı yapı var aslında. Biri Broadcast, yayınlamalı, diğeri de anahtarlamalı, Switch olarak gördüğümüz.
+
+28
+00:10:45,600 --> 00:10:54,879
+Yayınlama dediğimiz şey ne? Paylaşılan bir iletim ortamını kullanma kavramı üzerine.
+
+29
+00:10:58,995 --> 00:11:16,855
+Oturuyor aslında. Hani önceki derste 8211'i konuştuk. Hatırlayın. Local Area Network'te genelde nasıl bir ortam var diye konuştuk. Zaten paylaştığımız bir ortam var. Herkesin aynı anda eriştiği bir ortam var.
+
+30
+00:11:20,340 --> 00:11:33,355
+Ve fakat bu yayınlamalı ortamda nasıl sıkıntılar var? Bu yayınlamalı illa 802.11 konuşurken en son Wi-Fi konuştuğumuz için aklınızda sadece Wi-Fi kalmış olabilir ama...
+
+31
+00:11:33,652 --> 00:11:43,792
+Hatırlatayım, Ethernet'i de konuştuk, BAS, token rejimindeki Ethernet'i de konuştuk, Ticbet'in Ethernet'i de konuştuk, token ringi ve token BAS'ı da konuştuk.
+
+32
+00:11:43,892 --> 00:11:48,272
+Bunların hepsi aslında yayınlamalı, ortak bir medyaya ilişkiliyorsunuz.
+
+33
+00:11:49,912 --> 00:11:50,812
+Öyle yapılar.
+
+34
+00:11:55,451 --> 00:12:00,172
+Diğer yapı, anahtarlamalı yapı ise ne yapıyoruz?
+
+35
+00:12:06,355 --> 00:12:13,395
+Aslında ekstra, nasıl ifade edelim?
+
+36
+00:12:17,331 --> 00:12:18,751
+Şöyle söyleyebiliriz.
+
+37
+00:12:23,187 --> 00:12:32,067
+Ara elemanlar üzerinden atlamalar yaparak iki ucu konuşturduğumuz bir yapı, anahtarlamalı yapı.
+
+38
+00:12:32,488 --> 00:12:42,107
+Yani bu mesela devre anahtarlama olabilir, paket anahtarlama olabilir, mesaj anahtarlamalı olabilir.
+
+39
+00:12:42,268 --> 00:12:43,827
+Detaylarını birazdan konuşacağız.
+
+40
+00:12:45,716 --> 00:13:05,756
+Ki o detaylarda şeyi göreceğiz. Aslında biz A'dan Z'ye bir veri iletmek istiyorsak, bilgi iletmek istiyorsak, bunu paket, mesaj ya da fiziksel hat anlamında anahtarlayarak gidiyoruz.
+
+41
+00:13:05,756 --> 00:13:13,676
+Yani A'dan önce C'ye atlayacak diyoruz, C'den T'ye gidecek diyoruz, T'den X'e gidecek, X'den Z'ye varacak.
+
+42
+00:13:13,716 --> 00:13:22,436
+Bunlar arasında bir yapının ne olduğuna bağlı olarak, belki dinamik şekilde paketler bazında anahtarlama yapıyoruz.
+
+43
+00:13:22,576 --> 00:13:30,855
+Belki önden bir hat oluşturulması, bir switch oluşturulması şeklinde.
+
+44
+00:13:31,379 --> 00:13:34,200
+devre oluşturulması şeklinde bir hareket yapıyoruz.
+
+45
+00:13:34,759 --> 00:13:36,480
+Duruma göre bakıyoruz aslında.
+
+46
+00:13:36,700 --> 00:13:38,960
+Yani duruma göre derken tabii oradaki durum şu.
+
+47
+00:13:39,480 --> 00:13:41,920
+Kullandığımız altyapının teknolojinin durumu.
+
+48
+00:13:45,920 --> 00:13:49,299
+Şimdi anahtarlama ya baktığımız zaman.
+
+49
+00:13:53,011 --> 00:14:12,291
+Demin söylediğim gibi, işte veri bir uçtan diğerine Ağ oluşturan ara elemanlar. Bunlar, bir router cinsi bir cihaz da olabilir. Doğrudan bir bilgisayar sistemi vesaire de olabilir.
+
+50
+00:14:18,100 --> 00:14:20,820
+Nedir o? Karşılığı.
+
+51
+00:14:28,019 --> 00:14:44,180
+Aslında iki farklı şekilde karşımıza çıkıyor. Nedir? Bir tanesi devre anahtarlama, biri de paket anahtarlama. İnternet ortamında kullandığımız şey paket anahtarlama. Ama devre anahtarlama yapılarını da hala kullanıyoruz.
+
+52
+00:14:48,180 --> 00:14:52,180
+Devre anahtarlama özellikle...
+
+53
+00:14:58,131 --> 00:15:06,571
+Wide Area Network anlamında kullandığımız ISP'lerin bize sunduğu bağlantı türlerinde mümkün.
+
+54
+00:15:08,631 --> 00:15:17,571
+Şimdi devre anahtarlamanın yapısına baktığımızda...
+
+55
+00:15:21,427 --> 00:15:31,228
+Devre anahtarlamalı ağda aslında ağ haberleşecek iki düğüm arasında doğrudan fiziksel bir hattın oluşturulmasından sorumlu.
+
+56
+00:15:31,347 --> 00:15:36,208
+Bunun için dersin ilk haklılarında kesin örneğini vermişimdir.
+
+57
+00:15:36,288 --> 00:15:39,867
+Nostaljik bir film izlerseniz görürsünüz.
+
+58
+00:15:40,403 --> 00:15:57,423
+İşte telefonu kaldırır adam, der ki işte bana bilmem nereyi bağla, parzım sen Mersin'den Ankara'yı bağlatır, İstanbul'dan Adana'yı bağlatır vs. Bunun için ama arka tarafta ne olur? İşte santraldeki biri bir görevli.
+
+59
+00:15:59,039 --> 00:16:03,399
+Elinde de böyle kablolar vardır. Bir kabloyu bir yere takar, bir ucunu öbür tarafa takar.
+
+60
+00:16:03,399 --> 00:16:24,639
+İşte o uçtan uca konuşacak olan işte İstanbul'daki kişiyle Adana'daki kişi arasındaki hattı aslında bağlamak için o atlama kablolarını kullana kullana işte sizin telefon sinyalinizi bir üst santrale, o üst santraldeki yerleri sizi bir üste, o bir daha üste.
+
+61
+00:16:27,039 --> 00:16:51,779
+iletinize doğru biraz aşağıya, biraz aşağıya falan derken en uç noktaya kadar bağlarlar. Bundan ibaret aslında yaptığımız şey. Günümüzde de bu iş sadece telefon üzerinden gitmiyor. Başka şekillerde de gidiliyor. Başka şekillerden kastımız ne?
+
+62
+00:16:53,683 --> 00:17:05,884
+Aslında farklı ASP'lerden aldığınız farklı hizmetlerde de devre anahtarlama yapısı var en azından bir yere kadar.
+
+63
+00:17:05,884 --> 00:17:08,884
+Daha sonrasında üstüne...
+
+64
+00:17:09,940 --> 00:17:15,619
+Bildirdiğimiz IP sayesinde paket anahtarlamanı olarak devam ediyoruz.
+
+65
+00:17:15,619 --> 00:17:23,559
+Yani mesela şey de ne bileyim, dial-up interneti de anahtarlaman olarak düşünebilirsiniz.
+
+66
+00:17:23,759 --> 00:17:25,660
+En azından lokal loop kısmında.
+
+67
+00:17:26,240 --> 00:17:28,259
+İşte ISD'ni de öyle düşünebilirsiniz.
+
+68
+00:17:28,460 --> 00:17:30,660
+ADS'ni de öyle düşünebilirsiniz gibi.
+
+69
+00:17:31,960 --> 00:17:33,259
+Ama lokal loop kısmında.
+
+70
+00:17:33,748 --> 00:17:38,068
+Yani lokal lobtan sonrasında aslında başka bir şeye geçiyoruz.
+
+71
+00:17:40,548 --> 00:17:42,768
+Bunları konuştuk galiba.
+
+72
+00:17:45,008 --> 00:17:53,367
+Yani devre anahtarlama dediğimiz zaman aslında aklınıza gelmesi gereken şey tamamında büyük resimde.
+
+73
+00:17:54,208 --> 00:18:00,068
+Konuşacak haberleşik cihazlar arasında bir şekilde ara düğümleri kullanarak
+
+74
+00:18:02,579 --> 00:18:04,000
+şeyin oluşturulması.
+
+75
+00:18:08,788 --> 00:18:12,967
+Nedir o? Haberleşmenin sağlanması, hattının oluşturulması.
+
+76
+00:18:13,688 --> 00:18:21,108
+Şimdi bunun yapılması için aslında farklı teknikler kullanmak mümkün.
+
+77
+00:18:28,468 --> 00:18:31,887
+Neden bahsediyorum farklı teknikler derken?
+
+78
+00:18:32,528 --> 00:18:42,307
+Şimdi şurada gördüğünüz aslında 1, 2, 3, 4, 5, 6, 7 vs. diye giden yapı bir bulut içerisinde gözükmüş.
+
+79
+00:18:42,387 --> 00:18:46,548
+Çünkü bu bir servis sağlayacağını kendi iç network olarak düşünebilirsiniz.
+
+80
+00:18:47,327 --> 00:18:50,588
+Bu yapı içerisinde ne var? A'dan işte B'ye gidilecekse.
+
+81
+00:18:51,251 --> 00:19:04,291
+Önce 1'e, oradan 2'ye, sonra 5'e, sonra B'ye olabilir. 1, 3, 4, 2, 5 olabilir. 1, 3, 6, 5 vs. olabilir. Dolayısıyla daha çok fantezide kurmak mümkün.
+
+82
+00:19:04,291 --> 00:19:12,672
+Şimdi bunun nasıl yapılacağıyla ilgili olarak aslında altta kullanılan sistemin ne olduğu.
+
+83
+00:19:13,299 --> 00:19:27,739
+Doğrudan ilişkili. Ne yapabiliriz? Sonuçta bu bir düğümüne bağlı olan tek nokta tahminen A olmayacaktır. Bunun dışında başka bağlantılar da olacak. 2, 3, 4, 5 vesaire için başka aboneler de olacaktır.
+
+84
+00:19:27,739 --> 00:19:38,099
+Ve her zaman içinde var, normal karasal telefon hatlarını konuşurken konuşmuştuk. Trank hatlar, T2, T2, T3 vesaireyi konuşmuştuk.
+
+85
+00:19:38,836 --> 00:19:57,715
+Burada sizin en tane aboneniz var. Bununla ilgili bunların oluşturduğu trafiğin ne olması lazım? Bu birden yukarı doğru uplink şeklinde çıkabiliyor olması lazım. O zaman da burada daha yüksek kapasiteli bir hat kullanıyorsunuz. Bu aşağıya doğru olan bağlantıya nazaran.
+
+86
+00:20:00,000 --> 00:20:09,539
+Aptın ne yapılması lazım? Paylaşılması lazım. O paylaşım işlemi nasıl olabilir? Daha önce konuştuk. Multiplexing tekniklerini konuştuk.
+
+87
+00:20:09,539 --> 00:20:16,139
+Ne vardı orada? TDM vardı, Time Division Multiplexing vardı, FDM vardı, Frequency Division Multiplexing vardı.
+
+88
+00:20:16,840 --> 00:20:21,980
+Ki onunla ilgili bana bir şeyler göndermiş olmanız gerekiyordu bugün ders öncesi itibariyle.
+
+89
+00:20:23,028 --> 00:20:36,327
+Hatırlarsanız, OFDM, FDM farkı ne? Niye OFDM kullanıyoruz? Neden dolayı kullanıyoruz? Nasıl öyle bir avantajı var? Niye öyle bir avantajı var? diye sormuştum.
+
+90
+00:20:36,988 --> 00:20:47,427
+Kimisi tamamen kitabi bilgiler, oradan buradan copy paste ettiğini yapıştırmış. Onların bir espirisi ya da kıymeti yok. Onu baştan söyleyeyim. Aklınızda olsun.
+
+91
+00:20:47,872 --> 00:20:53,711
+Yorumluyor olmanız, bir şeyleri, niye böyle olduğunu cevaplıyor olmanız lazımdı.
+
+92
+00:20:55,132 --> 00:21:06,711
+Şimdi bu yapıyı oluşturabilmek için, yani A ile B arasında bir anahtarlama yapabilmek için aslında ne yapmamız lazım?
+
+93
+00:21:06,711 --> 00:21:08,412
+Bir bağlantının kurulması lazım.
+
+94
+00:21:09,743 --> 00:21:18,423
+2'ye mi gideceğim, 3'e mi gideceğim, 3'den 4'e mi, 6'ya mı gideceğim, 2'den 5'e 4'de mi gideceğim, nereye gideceğim, nasıl gideceğim.
+
+95
+00:21:18,423 --> 00:21:25,743
+Tabii ki bunun şeyi nedir o?
+
+96
+00:21:27,955 --> 00:21:39,275
+Detayını Ağ Teknoloji dersinde konuşacaksınız ama bu kararı almanıza neden olacak olan kesinlikle bir kriteriniz olacak.
+
+97
+00:21:39,275 --> 00:21:44,775
+Nedir o? Şimdi buradan bir trafik geliyor. Bu trafiğin, mesela, quality of service metrikleri olabilir.
+
+98
+00:21:44,975 --> 00:21:49,576
+İşte 1 megabitlik bir bandbit istiyor olabilir. 10 megabitlik bir bandbit istiyor olabilir.
+
+99
+00:21:49,795 --> 00:21:53,275
+İşte delay'nin ya da jitter'ının belli...
+
+100
+00:21:53,683 --> 00:22:15,683
+şeylerin, sınırların altında, üstünde, arasında olmasını istiyor olabilir. Bu hattın bir kapasitesi var. Daha önce bu hat üzerinden kurulmuş olan bağlantılar var. Dolayısıyla kalan kapasitelerin ne olduğu önemli. Buradaki kalan kapasite mesela bandbit anlamında bir megabit'i karşılamıyorsa o zaman buradan gitmeyi deneyecek. Buradan gittikten sonra bu tarafta...
+
+101
+00:22:15,827 --> 00:22:40,768
+Duruma bakacak. Oradan duruma göre 4'ü seçtiyse tekrar 2'ye gelip 2'den 5'e gidiyor olabilir. 4'den 6'ya 6'dan 5'e gidiyor olabilir. Bu tamamen aslında sizin anahtarlama sırasında bu yapı içerisinde kullandığınız kriterle alakalı. Ama öncelikle bir bağlantının kurulması lazım. Bağlantı kurulduktan sonra, yani şey gibi düşünebilirsiniz, telefon...
+
+102
+00:22:40,819 --> 00:23:02,360
+Durumu ne yapıyorsunuz? Kaldırıyorsunuz, dıt dıt sinyalini alıyorsunuz, ondan sonra telefonu çeviriyorsunuz. Siz o çevirme işlemini yaparken bekliyorsunuz bir müddet. O bekleme sırasında aslında bir anahtarlama yapılıyor ve karşı tarafa ulaşıyorsunuz. Ondan sonrası da karşı tarafın telefonunun çalması, sizin telefonunuzun çalması ki onlar asenkron aslında aynı anda çalmıyor.
+
+103
+00:23:07,508 --> 00:23:16,648
+Sonunda karşı taraf bu bağlantıyı kabul ederse ne olacak? Bir adım sonrasında veri iletimi başlayacak.
+
+104
+00:23:22,932 --> 00:23:27,692
+göndermeniz gereken ne varsa, alınacak ne varsa bunları alıp veriyor olacaksınız.
+
+105
+00:23:29,612 --> 00:23:33,251
+Peki, haberleşme, yani size bir kanal tahsil edildi.
+
+106
+00:23:33,251 --> 00:23:37,311
+Siz iletimi, yani 1 megabit istediniz ama bunun onda birini kullandınız.
+
+107
+00:23:37,432 --> 00:23:38,851
+Kullanın, o sizi bağlar.
+
+108
+00:23:39,432 --> 00:23:40,831
+Fakat sonrasında ne olacak?
+
+109
+00:23:41,072 --> 00:23:46,031
+Bir yerde işiniz bittiği zaman bu bağlantının sonlandırılması gerekiyor.
+
+110
+00:23:49,844 --> 00:24:09,744
+Bunun için de tabii ki ne yapılması lazım? Bu bağlantı, bu devre, ne derseniz, dahil olan herkesin bundan haberdar olması, bunu onaylaması ve orada kullandıkları kapasiteyi de boşa çıkartmaları lazım. Önemli noktalardan biri bu. Bunu zaten konuşmuştuk.
+
+111
+00:24:14,132 --> 00:24:24,692
+Şimdi devre anahtarlamalı yapılara baktığımız zaman kendi içerisinde Space Division ve Time Division olmak üzere iki grup altında inceleyebiliyoruz.
+
+112
+00:24:24,692 --> 00:24:25,692
+Space Division'da...
+
+113
+00:24:29,299 --> 00:24:37,299
+Baktığımızda telefon şebekeleri için tasarlanmış olan anahtarlamanın en böyle genel ismi.
+
+114
+00:24:39,920 --> 00:24:44,779
+Bu genel ismi, bu genel ismi altında aslında farklı modlar ve yapılar var.
+
+115
+00:24:46,519 --> 00:24:50,380
+Bunlardan bir tanesi crossbar, diğeri de multistage switch.
+
+116
+00:24:54,644 --> 00:25:13,624
+Crossbar dediğimiz şey aslında M tane şey için, giriş için M tane çıkış bulunuyor ve bunlar arasında anahtarlama yapmak üzerine kurulu.
+
+117
+00:25:19,859 --> 00:25:21,639
+Bir yerde fotoğrafı var mıydı?
+
+118
+00:25:26,387 --> 00:25:39,527
+Bu yapının temel sorunu ya da problemi ne diyecek olursak.
+
+119
+00:25:44,243 --> 00:25:46,220
+Bir kere...
+
+120
+00:25:46,771 --> 00:25:56,771
+N tane giriş, N tane çıkış arasında anahtarlama yapabilmek için, yani şey gibi düşünebilirsiniz, satırlar, N tane satır, N tane sütun şeklinde düşünün.
+
+121
+00:25:57,271 --> 00:26:04,271
+Her birinin ne olması lazım? Her hattın birbiriyle kesiştiği noktada bir tane anahtarlama elemanı lazım.
+
+122
+00:26:04,431 --> 00:26:07,991
+Dolayısıyla N çarpı N tane anahtarlama elemanı gerekiyor.
+
+123
+00:26:08,791 --> 00:26:12,471
+Bu biraz tabii her zaman olduğu gibi ne diyeceğiz?
+
+124
+00:26:16,243 --> 00:26:35,703
+Maliyet diyeceğiz. Maliyet olmasının ötesinde bir de ne sıkıntısı var? Bu maliyetin bir kısmı aslında boşa yapılıyor. Boşa yapılıyor derken, evet, anahtarlamanın bu şekilde yapılabilmesi için bu kadar gerekli nedir o?
+
+125
+00:26:39,955 --> 00:26:54,395
+Eleman gerekli. Ama herhangi bir T anında bütün girişlerinizden bilgi çıkartıyor olsanız bile N tane girişiniz varsa, N tane çıkışınız varsa sonuçta toplamda N tanesini anahtarlayacaksınız.
+
+126
+00:26:54,955 --> 00:27:00,576
+Yani N giriş N tane çıkışa anahtarlanmış olacak. Dolayısıyla N tane.
+
+127
+00:27:01,715 --> 00:27:11,556
+devreyi anahtarlayacaksınız. N tane anahtarlama elemanı kullanacaksınız. Ama toplam eleman sayınız ne? N çarpı M.
+
+128
+00:27:11,895 --> 00:27:20,515
+Dolayısıyla gerçek anlamda herhangi bir T anında kullandığınız maksimum eleman sayısı N ama bulundurduğunuz eleman sayısı N çarpı M.
+
+129
+00:27:20,515 --> 00:27:25,675
+Burada özellikle M sayısı yüksek ise sıkıntı büyük.
+
+130
+00:27:26,099 --> 00:27:31,960
+Neden? Çünkü aslında yatırımınızın çoğunu pek de kullanmıyorsunuz demek.
+
+131
+00:27:38,804 --> 00:27:42,704
+Buna alternatif olarak ne var demiştik.
+
+132
+00:27:44,284 --> 00:27:46,024
+Çok kanemeli anahtarlar var.
+
+133
+00:27:46,624 --> 00:27:49,324
+Çok kanemeli anahtarlarda şöyle bir şey yapıyoruz.
+
+134
+00:27:49,324 --> 00:27:50,324
+Aslında...
+
+135
+00:27:58,036 --> 00:28:06,036
+Tek bir tane crossbar kullanmak yerine crossbarları kademeli şekilde kullanıyoruz. Böylece anahtarladıkça anahtarlıyoruz.
+
+136
+00:28:09,107 --> 00:28:29,768
+Anahtarlama sonucunda, daha doğrusu şöyle söyleyeyim, girişlerle çıkışlar arasında anahtarlama yapıyorsunuz. Normal şartlarda mesela 15 giriş, 15 çıkışınız varken 255 tane anahtarlama elemanına ihtiyacınız var. Çok kademeli bir yapı oluşturdunuz diyelim.
+
+137
+00:28:31,667 --> 00:28:55,435
+O zaman işler biraz değişiyor. Yani nasıl değişiyor? Giriş sayınızı, 15 tane girişi aslında 3 tane 5'lik giriş haline getirip onların çıkışını ikili tutup o ikililerin çıkışlarını 3'ü giriş...
+
+138
+00:28:55,508 --> 00:29:10,268
+3'ü çıkış olan ayrı komponentlere bağlayıp falan filan yapıp böyle kat kat kat böyle böyle biraz parçalı bir yöntemiyle giderseniz sayıyı işte mesela bu örnekte olduğu gibi 78'e indirmek mümkün oluyor.
+
+139
+00:29:12,408 --> 00:29:21,268
+Bir diğer nokta tabii burada şey yapısı da var. Bu katmanlı yapıdan dolayı.
+
+140
+00:29:22,771 --> 00:29:42,771
+Failover şansı da sunuyor size. Yani herhangi bir 15 girişin tamamını tek bir noktada toplamadığınız için, işte mesela 3 tane 5'liğe böldüğünüz için, o 5'liklerin şeyi...
+
+141
+00:29:48,180 --> 00:30:03,840
+Çıkışlarında da ikilik olduğu için ara elemanlardan herhangi biri bozulduğunda, parçalandığında, bir şey olduğunda asla anahtarlamaya devam etme şansınız da artı öyle bir ek bir şey de var, faydası da var.
+
+142
+00:30:04,256 --> 00:30:11,256
+Bunun dışında olabilecek anahtarlamada kullanabileceğimiz şeylerden bir diyette, Time Division Multiplexing demiştik.
+
+143
+00:30:11,596 --> 00:30:19,456
+Time Division Multiplexing'de ne yapıyoruz? Bunu zaten aslında belli açılardan konuştuk. Farklı noktalarda konuştuk.
+
+144
+00:30:25,907 --> 00:30:47,787
+Kaynağı doğrudan bir şeylere bölmek değil, kaynağı kullanım süresini bölmek, slotlara bölmek. Bu slotları farklı kullanıcılara tahsis etmek. Bu tahsisi yaptığınız zaman, daha önce de konuşmuştuk, hatırlayın.
+
+145
+00:30:56,564 --> 00:30:59,204
+Nasıl artılarımız ve eksilerimiz vardı?
+
+146
+00:31:12,468 --> 00:31:28,307
+Artısı, kollijon oluştuma ihtimali düşüktü. Ama dezavantajı da söyleyecek bir şey olmayanları bekliyorduk. Eğer sadece bir kişinin söyleyecek bir şey varsa diğerlerini beklemek zorunda kalıyordu.
+
+147
+00:31:29,044 --> 00:31:50,204
+Evet, ben statik bir slot ataması yaparsam ne oluyordu? İşte A, B, C, D diye dört tane elemanım var. Farz misal bu hattı kullanan her birini işte A birinci, B ikinci, C üçüncü, D de dördüncü slotta kullanıyor dedim. Bu durumda ne olacak?
+
+148
+00:31:50,708 --> 00:32:06,328
+A'nın söyleyecek çok şey var. B'nin, C'nin ve D'nin söyleyecek hiçbir şey yok. Ama ne olacak? A iki tane bilgi göndermek, iki tane slot kullanmak için arada üç slot beklemesi gerekecek gibi bir dezavantajdan bahsediyorduk.
+
+149
+00:32:19,731 --> 00:32:21,731
+Dolayısıyla böyle bir...
+
+150
+00:32:22,804 --> 00:32:26,504
+Sıkıntı ya da problem var ama bunun içinde ne yapabiliriz?
+
+151
+00:32:26,684 --> 00:32:29,064
+Hani statik değil, bu işi dinamiğe çevirebiliriz.
+
+152
+00:32:29,124 --> 00:32:31,864
+İhtiyacı olan, ihtiyacı olduğu zaman bunu söyleyebilir.
+
+153
+00:32:32,004 --> 00:32:33,464
+Ama o zaman da ne yapmamız lazım?
+
+154
+00:32:33,604 --> 00:32:41,944
+Bu time division'ı yaparken, hani statik yaparken hangi slotta kimin geldiği, bilginin nereden geldiğini aynı anda söylüyordu.
+
+155
+00:32:42,564 --> 00:32:47,784
+Dinamiğe çevirdiğimiz zaman bir de ne eklememiz gerekiyor o slotun içerisinde, aktarılan bilginin içerisine?
+
+156
+00:32:48,444 --> 00:32:50,804
+Adres bilgisi koymamız lazım diye konuşuyoruz.
+
+157
+00:32:50,804 --> 00:33:07,984
+Şimdi burada şöyle bir şey daha var. Normal şartlarda, pure time division multiplexing'den bahsediyorsak, yapı içerisinde, şurada grafiği var mı? Bakayım.
+
+158
+00:33:10,124 --> 00:33:16,944
+Yapı içerisinde aslında ABCD'den gelen bilgi geldiği sırayla tıkır tıkır hatta çıkıyor.
+
+159
+00:33:17,652 --> 00:33:30,852
+Ve fakat her zaman bazı özel durumlarda vs. de biz bunun bu şekilde olmasını istemeyebiliriz.
+
+160
+00:33:31,220 --> 00:33:46,899
+Bunda farklı değişiklikler yapılmasını isteyebiliriz. Bunun için de Time Slot Interface adı verilen TSE diye küçültülmüş. Şöyle yapılar kullanılıyor bazen. Bu aslında üzerinde bellek olan basit bir cihaz.
+
+161
+00:33:59,220 --> 00:34:08,699
+C ve D öne geçecekse A'yı ve B'yi buffer koyup C'yi çıkartıp D'yi çıkartıp sonrasında da A'yı ve B'yi çıkartmak.
+
+162
+00:34:08,800 --> 00:34:15,000
+Yani bunu yapan bir cihaz böyle zamanında ihtiyaç duyulmuş ve kullanılmış.
+
+163
+00:34:15,000 --> 00:34:25,680
+Şimdi buraya kadar konuştuğumuz anahtarlama yapılarını düşünecek olursanız, bir de tabii ki bunların bir arada
+
+164
+00:34:27,251 --> 00:34:29,271
+kullanıldığı melez yapılar var.
+
+165
+00:34:29,632 --> 00:34:55,652
+Hem Time Division Multiplexing kullanabilirsiniz hem de Space'si kullanabilirsiniz. Bunu kullanarak ne seviyede ne kadar kaç kez kullandığınıza bağlı olarak farklı yapılar oluşturmak mümkün. Mesela önce Time Division Multiplexing sonra Space Division Multiplexing sonra Space Multiplexing sonra Time Division Multiplexing yapıp TSD diye bir şey oluşturabilirsiniz.
+
+166
+00:34:57,632 --> 00:35:09,632
+TSS gibi bir şey oluşturabilirsiniz. TSST oluşturabilirsiniz. Bunları yapmanın artısı ve şeyine...
+
+167
+00:35:11,764 --> 00:35:18,583
+Çok daha fazla sayıda, yani 15'i 15'i işte anahtarlamaya kalktığında 255 demiştik.
+
+168
+00:35:18,583 --> 00:35:31,123
+İşte bunu hani 78'e indirdik ama şöyle düşünün, bine binlik bir şey anahtarlamaya kalktığınız zaman milyon indirebileceğiniz yer ise hani çok daha az tek bir multiplexing de.
+
+169
+00:35:31,583 --> 00:35:34,163
+Birden fazla multiplexing'i bir arada uygulayıp,
+
+170
+00:35:35,027 --> 00:35:45,307
+Ne yapmaya çalışıyoruz? İhtiyaç duyulan anahtarlama yapısının sayısını azaltmaya çalışıyoruz. Farklı domenlerde yaparak bu işi.
+
+171
+00:35:47,427 --> 00:35:53,307
+Şimdi devre anahtarlama dediğimiz zaman devre anahtarlama içerisinde...
+
+172
+00:35:53,407 --> 00:36:01,047
+bağlantının oluşturması, test edilmesi, yönetilmesi ve sonlandırılması amacıyla ne yapmamız lazım?
+
+173
+00:36:01,247 --> 00:36:05,987
+Özel kontrol sinyalleşmelerine ihtiyacımız var aslında. Bunların kullanılması lazım.
+
+174
+00:36:08,067 --> 00:36:13,507
+Bu sinyalleşmeyi de aslında farklı domenlere bölebiliriz.
+
+175
+00:36:13,507 --> 00:36:19,967
+Yani uç noktadaki abone ile santral veririz. Santral ve diğer bir santral arası.
+
+176
+00:36:21,460 --> 00:36:26,460
+yönetim merkezleri arasında gibi düşünebilirsiniz. Baktığınız zaman...
+
+177
+00:36:33,940 --> 00:36:43,380
+Burada tabii ki bu üç domeynde farklı sinyalleşme, daha doğrusu sinyalleşme ile aktarılmak istenen bilgide farklılıklar var.
+
+178
+00:36:44,060 --> 00:36:49,619
+Ama bizim için temel olan abone, santral kısmı, santral, santral arasında da benzer şeyler var.
+
+179
+00:36:50,000 --> 00:36:52,480
+Ama santral yönetim mesela çok daha farklı bir şey.
+
+180
+00:36:52,619 --> 00:36:59,960
+Genellikle hat kapasitesi, cihazın durumu, performans vs. falan gibi telemetri ile alakalı.
+
+181
+00:37:01,460 --> 00:37:04,180
+Bilgilerin de taşındığı sinyalleşmeler.
+
+182
+00:37:04,780 --> 00:37:12,180
+Ama hani asıl konudaki esas olan diyebileceğimiz hani abone santrana kısımına baktığımız zaman
+
+183
+00:37:12,180 --> 00:37:19,220
+abone tarafına çevir meşgul ve karşı tarafı çalmasını ifade eden sesleri vermek lazım.
+
+184
+00:37:20,860 --> 00:37:22,100
+Bunun dışında ne var?
+
+185
+00:37:22,100 --> 00:37:28,420
+Galip telefon üzerinden gidiyoruz bu örnekle ama abone ne yapacak?
+
+186
+00:37:28,519 --> 00:37:29,460
+Bir hattın oluşturulması.
+
+187
+00:37:29,460 --> 00:37:42,180
+Bu numara tuşlamasının santrale aktarılması, yani adamın nereye erişmek istediğini, ne yapmak istediğini belirtmek.
+
+188
+00:37:48,179 --> 00:38:07,199
+Abonenin tuşlarına bir santrale aktardınız. O santral diğer santrale, o santral bir başka santrale. Böyle böyle sonuna kadar gitmesi lazım. Burada bir bağlantının kurulamadığını, sonlandırıldığını vesaireyi belirten bilgilerin iletilmesi lazım.
+
+189
+00:38:10,579 --> 00:38:34,159
+Tabii ki lazım. Uç noktaya eriştiniz. Bu sefer uç noktaya o telefon sinyalinin, yani telefon sesinin çıkması için bir çalma hareketi lazım. Accounting bu işin içerisinde var. Yani nedir o? Siz herhangi bir servis kullandığınız zaman mutlaka ve mutlaka parasını ödüyorsunuz. O paranın neye göre ödünüyor olması lazım?
+
+190
+00:38:38,579 --> 00:38:56,720
+Anlarsanız, daha doğrusu eski demeyeyim ya, farklı ülkelerde, farklı şekillerde, kimi mesela Prepaid kartlarda, özellikle Amerika gibi ülkelerde, o gün içerisinde telefonunu bir kere kullanmış olman hakkından düşüyor gibi.
+
+191
+00:38:56,720 --> 00:39:04,720
+Yani 30 günlük kart alıyorsun ya da 40 günlük kart alıyorsun. O gün boyunca kimseyi aramazsan sıkıntı yok ama sen birini ararsan...
+
+192
+00:39:05,780 --> 00:39:13,800
+haklarından biri düşüyor. Bizim ülkede nasıl kontör sistemi var. Kontör ne? 6 saniyede bir kontör düşüyor.
+
+193
+00:39:13,800 --> 00:39:23,700
+Dolayısıyla tüm bu bilginin faturalandırma bilgilerinin ne yapılması lazım? Merkeze arttırılması lazım. Bunun için bir sinyalleşme gerçekleştirilmeli.
+
+194
+00:39:25,620 --> 00:39:27,500
+Bunun dışında...
+
+195
+00:39:28,500 --> 00:39:43,480
+Yine santraller arasında aslında nelerimiz var? Trank hatlarımız var. Bu trank hatlarının hiçbir bilgi aktarılmasa bile ne olması lazım? Çalışıp çalışmadığını kontrol edebilmek adına bir sinyalleşme olması lazım.
+
+196
+00:39:43,480 --> 00:39:49,159
+Yani iki tane santral düşünün birbirine bağlı ama kimse telefonu kaldırıp da arama yapmıyor.
+
+197
+00:39:49,744 --> 00:40:00,784
+O bağlantının, yani ara bağlantının çalışıp çalışmadığını ne durumda olduğunu bilmek, tespit etmek, görmek için de şey lazım.
+
+198
+00:40:01,423 --> 00:40:03,604
+Nedir o? Bir sinyalleşme lazım.
+
+199
+00:40:04,884 --> 00:40:12,744
+Bunun dışında sistemi ya da yapıyı oluşturan tüm şeylerin...
+
+200
+00:40:15,059 --> 00:40:21,619
+Cihazların durumlarıyla, sıkıntılar olup olmadığıyla vesaireyle ilgili kontrol mesajları da lazım.
+
+201
+00:40:22,340 --> 00:40:29,340
+Östelikler bu ve benzeri tüm özellikleri yerine getirebilecek bir sinyalleşme mekanizması lazım.
+
+202
+00:40:29,819 --> 00:40:36,819
+Şimdi bu sinyalleşme mekanizması farklı şekillerde gerçekleştirilebilir.
+
+203
+00:40:50,195 --> 00:41:10,015
+Hiyerarşik olarak böyle organize edeceksek, kimin nasıl, ne yaptığı vesaireyle alakalı olarak, biri yani kanal sinyalleşmesi, ortak kanal sinyalleşmesiyle olabilir, Common Channel'la ya da In Channel'la kanal içi sinyalleşmesiyle olabilir.
+
+204
+00:41:18,003 --> 00:41:27,563
+karşımıza çıkabilir. Kanal içine baktığınız zaman, yani veri aktarımı için kullandığınız,
+
+205
+00:41:30,195 --> 00:41:34,996
+Ortamla kontrol sinyalleri aslında aynı kanun üzerinden taşınmakta.
+
+206
+00:41:36,335 --> 00:41:42,695
+Band içi sinyalleşimde, yani ses taşıyan sıklık bandları aynı zamanda kontrol sinyallerini de taşıyor.
+
+207
+00:41:44,195 --> 00:41:48,755
+Yani kısaca ses ya da veriyle kontrol sinyali bir arada yollanıyor.
+
+208
+00:41:51,668 --> 00:42:00,988
+Band dışı haberleşmede, band dışı sinyalleşmede kontrol sinyalleri ve ses sinyalleri aynı kanalı kullanıyor.
+
+209
+00:42:01,587 --> 00:42:09,047
+Fakat farklı bir frekans bandından gönderiyorsunuz.
+
+210
+00:42:10,195 --> 00:42:32,175
+Yani belli bir frekans aralığını ses için, belli bir frekans aralığını kontrol sinyalleri için kullanıyorsunuz. Bu durum size ne sağlıyor avantaj olarak? Inband'e göre şunu sağlıyor. Ses iletimi yapmasanız bile kontrol sinyali gönderebiliyorsunuz. Inband olduğu zaman kontrol bilgisinin gitmesi için de ses aktarımının olması gerekiyor.
+
+211
+00:42:35,572 --> 00:42:46,012
+Ortak kanal sinyalleşmesi tekniğinde ise bunu ayrı bir kanal üzerinden gerçekleştiriyorsunuz sinyalleşmeyi.
+
+212
+00:42:47,891 --> 00:43:04,051
+Bunun artısı ya da güzelliğine, işte ISDN'de bunu kullanıyoruz. ISDN'de farklı kanallar var. B kanalı, D kanalı vs. gibi. Bu kanalların her biri spesifik özelliğe sahip.
+
+213
+00:43:04,340 --> 00:43:18,320
+Sifesifik bir göreve sahip. Bu sayede bağlantı kurma ya da kontrolle ilgili verenin aktarılması, şey yapılması gibi işlerin hızlanması mümkün oluyor.
+
+214
+00:43:20,320 --> 00:43:22,340
+Paket anahtarlamaya...
+
+215
+00:43:28,052 --> 00:43:29,812
+Az kalmış, bunu bitirelim.
+
+216
+00:43:34,492 --> 00:43:39,452
+Paket anahtarlamaya baktığımız zaman neyi görüyoruz?
+
+217
+00:43:54,324 --> 00:44:03,864
+Aslında şunu görüyoruz. Mesela internet için öncelikle telefon hatları üzerinden serilmiş, bölünmeye başlanmış.
+
+218
+00:44:10,291 --> 00:44:18,092
+Analog yapı üzerinden servis verilmeye başlanmış. Ondan sonra dijital'e geçmişiz. Neyle, ISTN'le, ADSL'de.
+
+219
+00:44:20,592 --> 00:44:26,472
+Bu yapı içerisinde aslında telefon yapısına baktığınız zaman hep nasıl bir durum var?
+
+220
+00:44:27,592 --> 00:44:35,179
+Devre anahtarlamalı bir yapı zaten ama oradaki anahtarlama yapısından öte şöyle bir...
+
+221
+00:44:35,188 --> 00:44:42,048
+aktarıdan verinin karakteristiği var. Konuşma olduğu için belli bir sampling rate'i var. Dolayısıyla belli bir bandwidth'i var.
+
+222
+00:44:42,867 --> 00:44:48,128
+Bu bandwitte sadece siz konusunda da konuşmasanız da aslında aynı veri aktarılıyor.
+
+223
+00:44:48,248 --> 00:44:51,567
+Ama bilgisayar ağına baktığınız zaman nasıl bir durum var?
+
+224
+00:44:52,107 --> 00:45:01,547
+Durst de bir durum var. Yani herhangi bir T anında siz bir anda 4K video izlemeye başlayıp bandwiti canavarca kullanabilirsiniz.
+
+225
+00:45:01,907 --> 00:45:07,768
+Ama yani bundan yarım saat sonra ya da beş dakika sonra kısa bir reklamdır bir şeydir izlediniz.
+
+226
+00:45:08,596 --> 00:45:14,636
+Biraz sonra ne yapabilirsiniz? Neredeyse yok bazında kullanabilirsiniz.
+
+227
+00:45:14,976 --> 00:45:19,776
+Yani tamamen tekstabanlı bir haberleşme yapıyorsunuzdur. Çok küçük.
+
+228
+00:45:20,336 --> 00:45:31,956
+Dolayısıyla şeyiniz nedir o? Hattı kullanım şekliniz burstedir. Yani devamlı olarak değişkenlik gösteriyordur.
+
+229
+00:45:34,291 --> 00:45:43,291
+Dolayısıyla devre anahtarlamalı yapılar baktığınız zaman doğrudan günümüzde...
+
+230
+00:45:47,699 --> 00:45:57,259
+kullandığımız veri trafiği açısından doğrudan en temiz ya da en güzel çözüm değil, çok uygun değil yapı olarak.
+
+231
+00:45:58,559 --> 00:46:10,859
+O yüzden de bizim bunu değiştirecek, farklılaştıracak bir yapıya ihtiyacımız var. O da ne? Paket anahtarlamalı yapı.
+
+232
+00:46:11,347 --> 00:46:17,827
+Paket anahtarlamalı yapıya baktığınız zaman aslında siz devre anahtarlamada ne yapıyorsunuz?
+
+233
+00:46:17,867 --> 00:46:23,027
+Devreyi kullandığınız sürece bir şey iletebilmek için devreyi kullanmanız lazım.
+
+234
+00:46:23,148 --> 00:46:25,668
+Devreyi kullandığınız sürece de ödeme yapmanız lazım.
+
+235
+00:46:25,867 --> 00:46:28,788
+Paket anahtarlamalı yapılarda ise ne yapıyoruz?
+
+236
+00:46:31,027 --> 00:46:34,507
+Fiyatlandırmayı, ücretlendirmeyi neye göre yapıyoruz?
+
+237
+00:46:34,668 --> 00:46:36,748
+Aktarılan verinin miktarına göre yapıyoruz.
+
+238
+00:46:37,940 --> 00:46:39,360
+Bunun dışında
+
+239
+00:46:43,731 --> 00:46:52,652
+Ne şansımız var? Kapasitede, kullanılan hattın kapasitesinde tabii ki fiziksel kapasitenin sınırı içerisindeyiz.
+
+240
+00:46:53,007 --> 00:46:54,088
+O ayrı bir konu.
+
+241
+00:46:55,467 --> 00:47:05,548
+Fakat o devre anahtarlamanın en temel örneği olan ses yapısına baktığınızda zaten belli bir kapasiteyle şey anlamında sınırlısınız.
+
+242
+00:47:05,548 --> 00:47:12,228
+Yani o kullandığınız ortamın kapasitesi daha yüksek olsa da sizin göndereceğiniz kapasite açısından sınırlısınız.
+
+243
+00:47:12,367 --> 00:47:15,048
+Hatta kullanabileceğiniz kapasite açısından sınırlısınız.
+
+244
+00:47:16,827 --> 00:47:18,608
+Bir diğer nokta ne?
+
+245
+00:47:18,992 --> 00:47:30,992
+Paket anahtarlamında, devre anahtarlamında baştan sona fiziksel bir bağlantı oluşturuyorsunuz ve bu bağlantının herhangi bir noktasında, herhangi bir sıkıntı olduğunda devre ortadan kalkıyor.
+
+246
+00:47:31,452 --> 00:47:42,952
+Yani daha doğrusu devrenin tamamen ortadan kaldırılması, sonra yeniden bir devre oluşturulması, iletime de şansınız varsa ya da yapı destekliyorsa kaldığınız yerden devam ediyor olmanız lazım.
+
+247
+00:47:43,771 --> 00:47:46,412
+Paket anahtarlamında ise olay böyle değil.
+
+248
+00:47:46,992 --> 00:48:05,751
+Anahtarlamada baktığınızda ne yapıyoruz? Anahtarlamaya, yani bir verinin ne yöne gideceğine, veri elimize ulaştığı zaman karar veriyoruz. Bu kararı verirken de dinamik bir şekilde veriyoruz dolayısıyla.
+
+249
+00:48:05,751 --> 00:48:08,072
+Yani nedir o?
+
+250
+00:48:08,400 --> 00:48:35,619
+Elimize paket geldi. Daha önceki benzer bir yerden, benzer bir paket geldiğinde işte A tarafına doğru gönderdiyorduk. Bu sefer B tarafına gönderebiliyoruz. Neden? Çünkü artık A tarafı mesela çalışmıyor. Ya da A tarafındaki şey nedir o? Hat. Bakıyorsunuz orada bufferlarınız dolmuş. Oradan bu paketi çıkartmanız mümkün değil. Cihazın kendi bufferları dolmuş. Orada bir congestion var zaten.
+
+251
+00:48:36,400 --> 00:48:40,159
+Ama yangına kürükle gitmeyeyim deyip öbür tarafa yollayabiliyorsunuz.
+
+252
+00:48:40,240 --> 00:48:46,820
+Dolayısıyla bir şeyleri kurtarma, devam ettirme, sürdürebilme ihtimali daha yüksek.
+
+253
+00:48:46,820 --> 00:48:55,980
+Zaten A teknolojileri dersinde daha detaylı konuşursunuz ama internet fikrinin ortaya çıkmasının temelinde de bu yatıyor.
+
+254
+00:48:57,579 --> 00:48:58,820
+Yani şöyle...
+
+255
+00:49:00,148 --> 00:49:24,488
+Daha önce konuşmuştuk yanlış hatırlamıyorsam. Telefon hattı yapısına baktığınız zaman toll box ve toll office'ler var. Yani kademe kademe. Onda da 5 seviye orijinalinde. Ne yapıyorsunuz? Sizin mahallede bir yerde kenarda bir tane bir telefon santrali var. O bir üst seviyede başka bir santrali bağlı. O bir başka santrali, o bir başka santrali. Hep böyle uplinklerle gidiyor.
+
+256
+00:49:24,864 --> 00:49:35,123
+Ama sonunda bir yerlerde bir merkezde toplanıyor belli bir ölçekte ve bir başka merkeze bağlanıyor. O merkezlerde tekrar aşağı doğru dağılımlar var.
+
+257
+00:49:35,507 --> 00:49:46,847
+Şimdi ilk zamanlar 1960'larda Amerika'nın şey paranoyası, işte bir saldırı olursa, öyle olursa, böyle olursa bu telefon network ile biz nasıl haberleşeceğiz?
+
+258
+00:49:47,407 --> 00:49:53,227
+Çünkü bu yapıya baktığınızda aslında lokal yıldızlar gibi bir şey var, yıldız topolojileri var.
+
+259
+00:49:53,227 --> 00:50:00,000
+Bir tane ofis, ona bağlı en tane yapı, o ofisin üstünde bağlı olduğu bir başka ofis, o hafız açısından...
+
+260
+00:50:00,000 --> 00:50:11,879
+Baktığınız zaman kendisine bağlı en tane başka ofis. Dolayısıyla özellikle üst seviyelerde bir ofisin bozulması, arıza yapması, saldırıya uğraması vs. durumunda ne olacak?
+
+261
+00:50:12,399 --> 00:50:16,939
+Sizin grafiğiniz birbirinden kopup en az iki tane.
+
+262
+00:50:17,972 --> 00:50:31,972
+Ağ dönüşecek. Dolayısıyla bunu nasıl çözebiliriz, bunu nasıl farklılaştırabiliriz, bunu nasıl değiştirebiliriz diye ortaya çıkıyor olay. Bunun için de aslında...
+
+263
+00:50:33,043 --> 00:50:56,403
+1960'ların sonunda bir fikir ortaya atılıyor ama daha sonrası şu ortaya çıkıyor. Ortaya atılan fikir daha öncesinde Baran isimli bir araştırmacı var. Onun ortaya attığı fikre dayanıyor. O yüzden de Baran's Network diye bakarsanız daha detaylı bilgi de görürsünüz.
+
+264
+00:50:58,387 --> 00:51:02,708
+Orada yapılan, yapılmaya çalışılan, oluşturulmaya çalışılan şey şu.
+
+265
+00:51:03,407 --> 00:51:11,648
+Ben cihazları meşe yakın bir topolojiyle bağlayayım ve yönlendirmeyi de dinamik olarak yapabileyim.
+
+266
+00:51:11,748 --> 00:51:15,648
+Aslında bütün fikir de bu. Paket anahtarlamalığı da yapmaya çalıştığımız.
+
+267
+00:51:24,403 --> 00:51:46,824
+DARPANET, ARPANET, ondan sonra internet falan diye giden yapıya da baktığınızda aslında olan da tam olarak bu. Önce üniversiteler birbirine böyle PC ve modemlerden oluşan şu an hani kutu gibi gördüğünüz router'ın dev hali şeklinde cihazlarla birbirine bağlamaya çalışıp sonra bu bağlantıları daha böyle
+
+268
+00:51:47,827 --> 00:51:54,768
+Point to Point'tan çıkartıp, daha meşe doğru çevirip, meşe doğru derken, herkese herkese bağlamaktan bahsetmiyorum ama,
+
+269
+00:51:55,288 --> 00:52:09,688
+işte parzı misal, İstanbul'daki bir üniversiteye, hem Ankara'ya hem İzmir'e, Ankara'dakini İzmir'e ve Adana'ya, Adana'dakini Ankara'ya, Ağrı'ya ve Malatya'ya falan bağlayarak,
+
+270
+00:52:09,688 --> 00:52:15,827
+yani çoklu bağlantılar yapıp, bu bağlantılar üzerinden de farklı yerlere bilgiyi aktarabilme.
+
+271
+00:52:15,827 --> 00:52:17,068
+kafasıyla geliyor.
+
+272
+00:52:19,648 --> 00:52:27,488
+Bu paket anahtarlamalı yapılara baktığınız zaman
+
+273
+00:52:27,488 --> 00:52:32,768
+buradaki
+
+274
+00:52:34,804 --> 00:52:43,464
+kullanılan yapı sonucu oluşan network'e ya da bu yapı içerisinde kullanılan servisi zaman zaman datagram denir.
+
+275
+00:52:43,844 --> 00:52:50,044
+Yani ya datagram network olarak duyarsınız ya da paket yerine datagram ismini duyarsınız.
+
+276
+00:52:50,224 --> 00:52:56,044
+Örneğin TCP, IP'ye baktığınız zaman IP katlamında paket anahtarlamalı bir yapı var.
+
+277
+00:52:57,364 --> 00:53:06,304
+Üstünde TCP var, Transport Control Protocol. Ne yapıyor? Sizin yerinize bağlantı oluşturuyor sanal olarak.
+
+278
+00:53:06,900 --> 00:53:27,280
+Yani o devre anahtarlamalı değil, connection oriented bir yapı. Gene bağlantı oluşturuyor. O bağlantıyı maintain etmek için, paket kaybolursa, bağlantı koparsa, o olursa, bu olursa, bunların hepsini yönetecek yapıya sahip. Ama öbür taraftan da bir de UDP var. O da User Datagram Protocol.
+
+279
+00:53:28,371 --> 00:53:51,571
+Yani siz UDP ile bir şey gönderdiğiniz zaman tamamen paket anahtarlama olarak karşıya gidiyor ya da gitmiyor. Gitmesinden, gitmemesinden, hatalı gitmesinden kimse sorumlu değil. Yapmak istiyorsanız sizin yapmanız gerekiyor. Bu datagram ismi de şuradan geliyor. Hani her ülkede PTT olması gibi bir şey bu aslında. Belli bir noktada oraya varacak.
+
+280
+00:53:54,835 --> 00:53:57,795
+Orjinal haberleşme servisi elimizde ne var?
+
+281
+00:53:59,075 --> 00:54:03,095
+Posta, telefon, telgraf, telegram yani.
+
+282
+00:54:07,315 --> 00:54:29,955
+Orada gönderdiğiniz şey bir yazı, burada gönderdiğiniz şey ise bir veri. Dolayısıyla Telegram buradan geliyor. Daha doğrusu Datagram buradan geliyor. Artık şey değil, ses değil, onun ya da yazı değil, onun yerine veri gönderiyoruz. O yüzden buna Datagram diyoruz.
+
+283
+00:54:30,271 --> 00:54:46,611
+Ya da benzeştiği ya da benzetilme nedeni ne? Şimdi siz bir telgraf gönderdiğiniz zaman, işte İstanbul'dan var, mesela Adana'ya, bu Ankara üzerinden de gidebilir, Malatya üzerinden de gidebilir, arada Bursa'ya da uğrayabilir, vesaire de olabilir. Farklı noktalardan gidebilir.
+
+284
+00:54:47,171 --> 00:54:53,271
+Datagram bir network ya da paketler farklı noktalardan gidebilir. Neye göre? O anki duruma göre.
+
+285
+00:54:58,643 --> 00:55:07,764
+Bunun için de, yani dedik ya, duruma göre her düğümde farklı yerlerden gönderilebilir, aktarılabilir vs.
+
+286
+00:55:08,583 --> 00:55:16,603
+Bunun yapılabilmesi için de aslında her düğüm üzerinde bir rotalama yapılması lazım, routing yapılması lazım.
+
+287
+00:55:16,724 --> 00:55:22,643
+Routing dediğiniz zaman da, onu da tabii detaylarını A teknolojileri dersinde konuşacaksınız ama...
+
+288
+00:55:23,795 --> 00:55:36,915
+Çok farklı sayıda, yani ratolama algoritmaları farklı şekillerde sınıflandırılmaz mümkün. Mesela reaktif olanlar var, proaktif olanlar var.
+
+289
+00:55:37,311 --> 00:55:44,731
+Proaktif dediğiniz zaman adam önceden bununla ilgili bir hazırlık yapıyor.
+
+290
+00:55:44,731 --> 00:55:56,892
+Hazırlık yapmaktan kasıtlı bir kriteri var rotolama için. Bu maliyet olabilir, hop sayısı olabilir, süre olabilir, gecikme olabilir, bent root olabilir, olabilir de olabilir.
+
+291
+00:55:58,739 --> 00:56:22,619
+Ve fakat bunların her biri için neye ihtiyacı var? Güncel olarak bilginin devamlı tutulması, yani devamlı toplanması tutulmasına ihtiyaç var. Yani diyelim ki ben bir routerum ve 3 ayrı bağlantım var. Bu 3 ayrı bağlantının mesela delay ile ilgili bilgiyi güncel olarak tutmam gerekiyor.
+
+292
+00:56:26,739 --> 00:56:47,459
+Piyodik olarak bir sonraki bağlantı, karşı tarafına, o bağlantının diğer ucunda kim var, kim yok, biri var mı, yok mu, bilgi değişti mi, değişmedi mi gibi şeylere bakıyor olmam lazım. Bunları güncel olarak tutup bu bilgileri bir noktada saklıyor olmam lazım.
+
+293
+00:56:47,459 --> 00:56:52,259
+O sakladığım yerde aslında bir son noktaya baktığınızda bir routing table.
+
+294
+00:56:56,244 --> 00:57:02,264
+O routing table'ın belli açılardan optimizasyonu ayrı bir problem.
+
+295
+00:57:02,423 --> 00:57:05,483
+Mesela TCP, IP'ye bakacak olursanız ne yapıyoruz?
+
+296
+00:57:05,983 --> 00:57:22,623
+Gene A teknolojilerinde konuşacaksınız ama orada classless diye iki farklı yönlendirme, rotalama grubu var diyeyim.
+
+297
+00:57:23,027 --> 00:57:31,628
+İlk kullanılan Classful Addressing, adresinizin hangi aralıkta olduğu sizin coğrafya olarak nerede olduğunuza dair bir ipucu veriyor.
+
+298
+00:57:32,628 --> 00:57:46,188
+Dolayısıyla buna göre rotulama yapılıyor. İşler daha kolay belli açılardan ama o yapıyla adres bloklarını tutmak, o adres bloklarını dağıtmak, adresleri efektif kullanmak mümkün değil.
+
+299
+00:57:46,188 --> 00:57:48,648
+Ondan sonra neye dönüyoruz? Subnetting'e dönüyoruz.
+
+300
+00:57:50,516 --> 00:57:54,436
+Şu an olduğu gibi IP adresleri tek başına kullanılıyor. Yanında bir de subnet.
+
+301
+00:57:55,539 --> 00:58:04,139
+O, SAP Net Mask ile beraber adresleri bölüyoruz, parçalıyoruz vs. Ama böyle yaptığımız zaman da iş şöyle bir noktaya geliyor.
+
+302
+00:58:04,259 --> 00:58:12,319
+İşte bilmem kaç milyon adres varsa her bir adres için bir tane routing table'da bilgi tutmak gibi bir noktaya geliyor.
+
+303
+00:58:12,439 --> 00:58:18,199
+Bu da ne demek? Her cihazın, her ağ cihazının böyle fantastik memorilere sahip olması demek.
+
+304
+00:58:18,199 --> 00:58:23,159
+Bu olası değil. Orada ne yapıyoruz? Bunu optimize etmek için aggregation'dan faydalanıyoruz.
+
+305
+00:58:23,539 --> 00:58:27,379
+Diyelim ki İstanbul'dan kalktınız.
+
+306
+00:58:31,379 --> 00:58:32,379
+Çanakkale'nin...
+
+307
+00:58:33,876 --> 00:58:52,655
+İşte Ayvacık ilçesinde Ahmetçe köyüne gideceksiniz. İstanbul'dan çıkarken doğrudan şeyi sormuyorsunuz. Ahmetçe köyü nerede diye sormuyorsunuz da Çanakkale'ye nereden giderim diye bakıyorsunuz. Çanakkale'ye geldiğiniz zaman Ayvacı'ya nasıl giderim diye bakıyorsunuz. Yani böyle bir aggregation yapıp.
+
+308
+00:58:53,139 --> 00:59:02,760
+İşi bağlayıp, yani belki de yüzlerce adresi tek bir enterde tutabileceğiniz noktaya getiriyorsunuz gibi gibi gibi.
+
+309
+00:59:07,920 --> 00:59:11,139
+Bu noktada...
+
+310
+00:59:14,260 --> 00:59:23,440
+Datagram Network üzerinde aslında anahtar, yani devre anahtarlamalı yapıya benzer yapılar oluşturmak mümkün.
+
+311
+00:59:23,620 --> 00:59:26,200
+Ama tabii ki bunu fiziksel olarak oluşturmanız mümkün değil.
+
+312
+00:59:26,740 --> 00:59:31,720
+Onun yerine ne yapıyorsunuz? Sanal olarak oluşturuyorsunuz. Virtual Circuit diyoruz buna.
+
+313
+00:59:34,720 --> 00:59:38,720
+Ve fakat bu Virtual Circuit yapısı içerisinde...
+
+314
+00:59:41,811 --> 00:59:52,391
+Nasıl bir şey yapıyoruz? Şunu yapıyoruz. Aslında normalde tabii ki hala paket anahtarlamalı bir yapıdasınız. Dolayısıyla bilgi paket pakete aktarılacak.
+
+315
+00:59:52,391 --> 00:59:59,391
+Ama aktarılacağı rotayı önden sabitleyip A'dan B'ye bir...
+
+316
+01:00:00,000 --> 01:00:09,359
+Sanal devre oluşturuyorsunuz ve bu devre içerisinde bütün paketlerinizin aynı devreyi izleyerek gitmesini sağlıyorsunuz.
+
+317
+01:00:14,835 --> 01:00:41,835
+Yaptığımız şey bu. Bunun alt bölümleri de var. Yani nasıl alt bölümleri var? Switched Virtual Circuit ve sabit Permanent Virtual Circuit olarak iki alt grubu da var ama yani bence onlar çok da...
+
+318
+01:00:43,635 --> 01:00:51,175
+kullanacağınız ya da şey yapacağınız detay, yani bilmeniz gereken detaylar değil bence.
+
+319
+01:00:51,175 --> 01:01:00,215
+Virtual Circuit kavramını şu an biliyor olmanız yeterli. Ondan sonrasını A teknolojileri de görmeniz daha makul ve mantıklı.
+
+320
+01:01:01,907 --> 01:01:09,008
+Paket anahtarlamalı sistemleri konuşurken şunu da konuşmamız lazım. Paket büyüklüğünün başarımı üzerine etkisi.
+
+321
+01:01:09,948 --> 01:01:18,288
+Şimdi bu aslında grafik her şeyi özetliyor.
+
+322
+01:01:18,288 --> 01:01:20,508
+Bir dakika ne oldu?
+
+323
+01:01:27,284 --> 01:01:32,943
+Şimdi burada gördüğünüz kırmızı, ay pardon, kırmızı nereden çıktı?
+
+324
+01:01:33,744 --> 01:01:34,603
+Niye? Şey yok.
+
+325
+01:01:35,411 --> 01:01:37,271
+Mouse'u kullanamıyorum.
+
+326
+01:01:38,071 --> 01:01:42,491
+Siyah ve beyaz kutucuklara baktığınız zaman siyah kutucuklar aslında başlık bilgisi.
+
+327
+01:01:42,591 --> 01:01:45,652
+Yani paket anahtarlama yaptığınız zaman otomatikman neye ihtiyacınız var?
+
+328
+01:01:45,711 --> 01:01:50,371
+Bu paketin nereden geldiği, nereye gideceği gibi temel bilgileri bir header oluşturulması lazım.
+
+329
+01:01:50,511 --> 01:01:53,331
+Bunun dışında bir de kullanıcı verisi var. Beyaz kısım.
+
+330
+01:01:53,331 --> 01:02:02,391
+Şimdi beyaz kısım küçükken aktarabileceğiniz bilgiyle
+
+331
+01:02:02,900 --> 01:02:11,340
+Büyükken aktarabileceğiniz bilgi, birim zamandaki bilgi arasında ciddi bir fark olduğunu görüyor olmanız lazım. Ne demek istiyorum?
+
+332
+01:02:18,164 --> 01:02:33,984
+Şunu demek istiyorum. Bakın, bir en üstteki örnekte bilgi X'den çıkıyor, A'ya, A'dan B'ye, B'den de Y'ye gidiyor. Her üç örnekte de.
+
+333
+01:02:33,984 --> 01:02:41,464
+Birim zamanda gönderebileceğiniz bilgiye baktığınızda,
+
+334
+01:02:41,844 --> 01:02:51,844
+Küçük paketler halinde gönderirseniz aslında gönderdiğiniz bilginin, toplam bilginin büyük bir kısmının...
+
+335
+01:02:56,179 --> 01:02:58,179
+Ne olduğunu görüyorsunuz.
+
+336
+01:03:00,179 --> 01:03:02,179
+Header için kullanıldığını görüyorsunuz.
+
+337
+01:03:15,188 --> 01:03:19,648
+Şimdi şöyle bir hesap da yapacak olursak aslında.
+
+338
+01:03:24,659 --> 01:03:30,820
+Yani, biraz şeysel olacak tabi, hattının hızlı dinlenmesi vesaire olmadan.
+
+339
+01:03:30,980 --> 01:03:34,659
+Diyelim ki, şeyde kullandığınız...
+
+340
+01:03:43,092 --> 01:03:55,612
+Ya da boşverin yapmayalım. Çok önemli değil. Bu grafik kendi kendine zaten bazı şeyler alınıyor. Şu an böyle yüz yüze değilken sayılara gömülüp anlatmaya kalkarsam daha kokacağını düşünüyorum.
+
+341
+01:03:59,212 --> 01:04:07,407
+Buradan sonra konuşabileceğimiz devre anahtarlılığı ve pıkan anahtarlılığı ağları karşılaştıracak olursak temel olarak...
+
+342
+01:04:07,407 --> 01:04:20,187
+Birkaç tane şey söyleyebiliriz. Devre anahtarlamalarda paket bağlantı kurulamı diye bir şey var. Dolayısıyla herhangi bir iletime başlamadan önce belli bir süre bağlantının kurulmasını beklemek durumundasınız.
+
+343
+01:04:21,235 --> 01:04:49,155
+Ama bağlantı kurulduktan sonra artık veri aktarırken arada herhangi bir ek zaman kaybınız yok. Ne demek istiyoruz? Paket anahtarlamada rota belirliyorsunuz. Her paket için belirliyorsunuz. Dolayısıyla ne oluyor? Evet, başlangıç anında doğrudan paket göndererek başlıyorsunuz ve ilk paketiniz bağlantı connection oriented bir yapıya, yani devre anahtarlamalı bir yapıya göre çok daha hızlı yerine varıyor.
+
+344
+01:04:49,235 --> 01:05:05,035
+Fakat bundan sonra ne yaşayacaksınız? Her gönderdiğiniz paket farklı noktalarda, farklı şekillerde anahtarlanabilir. Dolayısıyla paketleriniz artık karşı tarafa böyle tıkır tıkır gitmeyecek.
+
+345
+01:05:16,559 --> 01:05:22,239
+Barış zamanı açısından böyle değişiklikler oluşmaya başlayacak.
+
+346
+01:05:22,339 --> 01:05:25,439
+Zaten hani ona da ne diyoruz? Hatırlayın jitter diyoruz.
+
+347
+01:05:26,239 --> 01:05:28,939
+Paket gecikmesindeki varyasyonu jitter diyoruz.
+
+348
+01:05:29,159 --> 01:05:31,439
+Dolayısıyla bu jitter'ı zaten şeyde konuşabiliriz.
+
+349
+01:05:31,899 --> 01:05:33,899
+Paket anahtarlamalı bir yerde konuşabiliriz.
+
+350
+01:05:34,019 --> 01:05:35,639
+Bunun dışında neye ihtiyacımız var?
+
+351
+01:05:36,339 --> 01:05:43,079
+Devre anahtarlamalı bir yapıda zaten A'dan B'ye kendisine özel bir hat oluşturdunuz.
+
+352
+01:05:43,731 --> 01:05:57,516
+Bilginin nereden geldiği belli, nereye gittiği belli. Dolayısıyla bir adres bilgisine ihtiyaç yok. Adresleme bilgisine ihtiyaç yok. Buna karşılık olarak...
+
+353
+01:05:58,387 --> 01:06:11,267
+Paket anahtarlamalı da adres ihtiyaç var. Çünkü bir paketin nerelerden geçebileceğini gönderim olarak biz de bilmiyoruz. Alıcı da bilmiyor. Dolayısıyla her an her yerden geçebilir. Dolayısıyla kimden geldi, nereye gidiyor bu bilgi önemli.
+
+354
+01:06:15,155 --> 01:06:23,915
+Devre anahtarlamalı bir yapıda siz hani first in, first out gibi düşünebilirsiniz ya da işte first out, first in gibi düşünebilirsiniz.
+
+355
+01:06:24,535 --> 01:06:33,135
+Göndericiden ilk çıkan paket karşı tarafa ilk varan paket oluyor. Gayet sıralı tıkır tıkır gidiyor ama paket anahtarlamalı bir yapıda ne olacak?
+
+356
+01:06:33,135 --> 01:06:43,155
+Sizin gönderdiğiniz bir paket işte A'dan B'ye, B'den C'ye, C'den D'ye giderken bir diğer paket A'dan B'ye, B'den Z'ye, Z'den X'e, X'den.
+
+357
+01:06:43,155 --> 01:06:46,175
+Ben T'ye falan diye geçip giderken
+
+358
+01:06:47,476 --> 01:07:04,696
+Bir bakacaksınız, kendisinden sonraki paketten daha da sonra gelmiş. Dolayısıyla sıralı olmayabilir. Bunu nasıl çözüyoruz? Genellikle eğer sıralı ve düzgün bir iletişim yapıyorsak, mesela demin IP, TCP, IP örneğinde konuşurken söyledim, TCP bunu bizim için yapıyor.
+
+359
+01:07:04,696 --> 01:07:15,476
+Ne yapıyor? Alıcı tarafta bir buffer oluşturuyor. O buffer içerisinde de paketlerin sıralanmasını sağlıyor. Sıralandıktan sonra üst tarafa...
+
+360
+01:07:15,476 --> 01:07:32,156
+application katmanına aktarıyor. Değişen ağ durumlarına uyum noktasında, paket anahtarlamanın çok daha avantajlı olduğunu söylemiştik. Ne olabilir değişen ağ durumu? Aslında farklı noktalar olabilir.
+
+361
+01:07:32,156 --> 01:07:40,636
+Bir, örneğin devre anahtarlamalı da olsanız, paket anahtarlamalı da olsanız aslında ne yapıyoruz?
+
+362
+01:07:42,132 --> 01:08:03,371
+Arada atlamalı bir yapı kullanıyoruz. Arada bizim routerlarımız, nodlarımız, düğünlerimiz ne tersimiz onlar var. Bunlardan herhangi biri sonuçta bir cihaz olduğu için resetlenmesi gerekebilir, patlayabilir, çatlayabilir, bozulabilir, arıza yapabilir. Böyle bir şey olduğu zaman devre anahtarlamalı yapıda yapabileceğiniz bir şey yok. Devre koptu.
+
+363
+01:08:04,692 --> 01:08:11,032
+Yani iki nokta arasında ip çekmiştiniz, o ip koptu. Yapacağınız tek şey o ipi tekrar çekmek.
+
+364
+01:08:13,172 --> 01:08:32,351
+Paket anahtarlamalık değilse hani şey gibi düşünün, sıraya dizilmiş bir grup çocuk gibi düşünün. Arada çocuğun biri çıktı gitti ben oynamıyorum dedi. Yapacağınız şey onun eksikliğini giderecek şekilde topu işte daha uzağa atmak, başkası üzerinden atmak vs. bir şey yapmak. Burada da aynı şey.
+
+365
+01:08:41,171 --> 01:08:47,051
+Adaptif, tabii ki bu anlık bir adaptiflikten bahsetmiyoruz.
+
+366
+01:08:47,131 --> 01:08:54,551
+Sadece arada böyle bir yapı içerisinde de paket kaybedebilirsiniz.
+
+367
+01:08:54,912 --> 01:08:55,931
+Sıkıntı olabilir. Neden?
+
+368
+01:08:56,451 --> 01:08:58,631
+Diyelim ki paketleriniz ilerliyordu.
+
+369
+01:08:58,771 --> 01:08:59,811
+C düğümündeydi.
+
+370
+01:09:00,412 --> 01:09:01,992
+Buffer'ında bekliyordu iletim için.
+
+371
+01:09:03,051 --> 01:09:04,731
+Router gitti, kapandı.
+
+372
+01:09:05,631 --> 01:09:07,691
+Oradaki paket zaten gitti, onu kaybettiniz.
+
+373
+01:09:08,239 --> 01:09:18,779
+Ama hani ondan sonra devam eden paketleri ne yapabileceksiniz? Başka yollardan bir şekilde hedefe ulaştırma şansınız olacak. Böyle düşünün.
+
+374
+01:09:20,779 --> 01:09:26,180
+Şimdi buradan sonra aslında bir de şey konuşacağız.
+
+375
+01:09:26,804 --> 01:09:32,304
+Negro sizinle geniş alan ağlarını konuşacağız ama onu bu hafta konuşmayalım.
+
+376
+01:09:32,384 --> 01:09:37,884
+Önümüzdeki hafta yapalım. Hem yarım kalmasın hem de yüz yüzeyken konuşalım istiyorum.
+
+377
+01:09:38,443 --> 01:09:39,984
+O yüzden bugünlük bu kadar diyeceğim.
+
+378
+01:09:41,503 --> 01:09:43,764
+Haftaya görüşmek üzere sınıfta arkadaşlar.
