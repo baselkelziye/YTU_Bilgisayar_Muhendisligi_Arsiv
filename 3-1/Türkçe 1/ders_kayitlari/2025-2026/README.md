@@ -7,3 +7,4 @@
 | 1 | Güz | — | [sube_1/](sube_1/) |
 | 10 | Güz | Arzuhan Kocabaş | [sube_10/](sube_10/) |
 | 11 | Güz | Arzuhan Kocabaş | [sube_11/](sube_11/) |
+| 12 | Güz | Hilal Tufan | [sube_12/](sube_12/) |
