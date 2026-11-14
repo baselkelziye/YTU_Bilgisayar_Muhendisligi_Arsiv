@@ -1,0 +1,3795 @@
+1
+00:05:05,843 --> 00:05:06,403
+Arkadaşlar.
+
+2
+00:05:09,939 --> 00:05:11,019
+Kestim edersin.
+
+3
+00:05:15,956 --> 00:05:20,235
+Zilal vektör değerli fonksiyonlar değil mi? Vektör fonksiyonları kısaca görmüştük.
+
+4
+00:05:21,556 --> 00:05:23,795
+Ondan türevler hakkında biraz bir biçimde.
+
+5
+00:05:25,176 --> 00:05:27,316
+İlci türev işte, normalde,
+
+6
+00:05:28,376 --> 00:05:33,216
+D eşitir, Ft şeklinde, Ft, Ft'yi, Gtc artı,
+
+7
+00:05:34,076 --> 00:05:36,996
+Vt, K şeklinde, verildiği zaman uzayda verilir.
+
+8
+00:05:38,036 --> 00:05:39,596
+Vektör değerli fonksiyonumuz,
+
+9
+00:05:40,956 --> 00:05:43,336
+katlıktı işlemli, ama değerli vektör değerli.
+
+10
+00:05:44,403 --> 00:06:01,803
+Birinci türev hareketin hızına, büyük bir dom, hızın büyük bir mecikisinde bir vektörün uzunluğu olarak. İlk türevde iğme hareketin ilmesini de onunla uzunluğu aldığımızda iğmenin değerini elde edip şöyle oldu.
+
+11
+00:06:01,803 --> 00:06:10,803
+Şimdi bu vektör fonksiyonunun türev için kuralları var, onları bileceğim. Kısaca biraz bahsedeyim. Arkasından bir yay uzunluğu.
+
+12
+00:06:11,475 --> 00:06:22,675
+Konusuna geleceğim. Yani uzayda yaylıyorsunuz. Konusuna değil, bu arkasında. Bu kısım bitireceğiz artık. Yeni değişkenli, pardon, iki değişkenli, daha çok değişkenli fonksiyonuna geçeceğiz ki.
+
+13
+00:06:23,536 --> 00:06:37,295
+Bu hafta dileyen 7. haftamız. Dolayısıyla bu haftanın sonuna kadar, ki olan konuda bitirmemiz dedim ve sınav, bize sınavımızda, bize sınavımızda bu konularda sorumlusunuz, onu söyleyelim.
+
+14
+00:06:37,295 --> 00:06:39,196
+Tamam mı? 7. ahtan sonra aktardık.
+
+15
+00:06:41,875 --> 00:06:47,375
+Evet, katalımı, yavaş yavaş yaparsanız yapıyorlar. Biraz birkaç dakika da geçelim. Tam gelin.
+
+16
+00:06:47,375 --> 00:06:53,875
+Gerçi videoda kanımdan takabiliriz ama. Bir saniye, bir bağlan. Şöyle.
+
+17
+00:06:55,875 --> 00:06:57,875
+Beyaz da bir de.
+
+18
+00:07:08,596 --> 00:07:10,995
+vektör fonksiyonlar için türev kralar veriyoruz.
+
+19
+00:07:31,220 --> 00:07:31,780
+Teşekkürler.
+
+20
+00:07:38,004 --> 00:07:41,804
+Birinci UV ve senin distansiyelik vektör fonksiyonları.
+
+21
+00:07:46,963 --> 00:07:51,163
+Senin türev ve katlı sayı bir türev ve katlı aynen anlatılmıyoruz.
+
+22
+00:07:52,163 --> 00:07:56,824
+Türev ve vektör fonksiyonları.
+
+23
+00:08:03,252 --> 00:08:05,112
+C bir sabit bir vektör.
+
+24
+00:08:14,644 --> 00:08:15,443
+Direktör
+
+25
+00:08:20,500 --> 00:08:22,800
+Ve küçükçe ile skaler olarak alalım.
+
+26
+00:08:24,759 --> 00:08:25,759
+Gelecek skaler.
+
+27
+00:08:31,220 --> 00:08:39,220
+Ayrıca net fonksiyonunda, scale fonksiyonlar yaptık. Yani, real değeri, real değişkenli fonksiyonlar.
+
+28
+00:08:39,220 --> 00:08:42,220
+Şimdi türev ve önerim.
+
+29
+00:08:47,059 --> 00:08:48,699
+Evet, ne? Sıkaya fonksiyonlar.
+
+30
+00:08:52,820 --> 00:08:56,400
+Yani şu ana kadar gördüğümde zaten fonksiyon tarzalarını çekiliyor.
+
+31
+00:09:01,524 --> 00:09:04,083
+O zaman açıkça sabit vektörün kürevi.
+
+32
+00:09:08,115 --> 00:09:08,615
+Sıfı ve
+
+33
+00:09:13,427 --> 00:09:19,887
+Yani sabit, ettir ya, birikmiş, türev ve sıvı. Her bir bireşin türev aldığımızda bunlar.
+
+34
+00:09:21,887 --> 00:09:36,788
+2, D bölü DT, C çarpı UT. Eşit C çarpı U üstü T. Artık bu da U üstü T'nin T'ye göre T olduğunu unutmayalım.
+
+35
+00:09:47,155 --> 00:09:51,295
+Aslında skaler çarpma da bir şey daha söyleyebiliriz, onu da yanına söyleyelim.
+
+36
+00:09:52,735 --> 00:09:54,555
+Öyle geçelim, altıma yazalım.
+
+37
+00:09:55,435 --> 00:09:58,235
+Ft çarpı ud normal çarpım türev tatüsü konulacak.
+
+38
+00:09:59,836 --> 00:10:00,795
+B bölü tt.
+
+39
+00:10:02,596 --> 00:10:04,135
+Ft çarpı ud.
+
+40
+00:10:04,135 --> 00:10:06,235
+Ama bu u tabii bizim vektör değerli.
+
+41
+00:10:06,336 --> 00:10:12,555
+O yüzden şöyle başına bu türev samori vektör samori koymamızda.
+
+42
+00:10:13,172 --> 00:10:16,172
+Ne var? Fayda var. Bu ayrı bir yapımda için değil.
+
+43
+00:10:16,172 --> 00:10:21,172
+Şu türev de biraz sıkıntı olabilir. O yüzden o biraz sıkıntı yapabilir.
+
+44
+00:10:21,172 --> 00:10:27,172
+Yani o anlaşılıyorsa bence onun için koymayalım çünkü türev, u3 yuklandığımız zaman sıkıntı olacak.
+
+45
+00:10:27,172 --> 00:10:30,172
+u3 ya da v3 yuklandığımız zaman sıkıntı olacak.
+
+46
+00:10:30,172 --> 00:10:32,172
+Tamam mı? Evet.
+
+47
+00:10:33,172 --> 00:10:35,172
+Eşittir.
+
+48
+00:10:35,172 --> 00:10:38,028
+f'in türevi çarpı ut.
+
+49
+00:10:43,764 --> 00:10:47,844
+Artı f çarpı, ut, u üstü t.
+
+50
+00:10:49,024 --> 00:10:49,604
+Tamam mı?
+
+51
+00:10:49,604 --> 00:10:51,884
+Bu yakıtacak, belki birisi.
+
+52
+00:10:52,663 --> 00:11:03,564
+Üç, toplamın türevi kurabildiğimiz zaman, yani d bölü dt, bunlar artık bilinen şey var aslında ama burada da geçer.
+
+53
+00:11:04,644 --> 00:11:09,844
+Vt eşittir, u üstü t artı ve üstü t.
+
+54
+00:11:11,379 --> 00:11:13,940
+ve aynı şey, işinlik çarşı.
+
+55
+00:11:26,388 --> 00:11:35,388
+Aynı şeyi şöyle, renkte koyalım. Eksi ise burada eksi olur.
+
+56
+00:11:39,475 --> 00:11:43,475
+4 farklı yazdık, çarpım kuralı.
+
+57
+00:11:45,475 --> 00:11:51,475
+D bölü DT, UT çarpı VT.
+
+58
+00:11:52,475 --> 00:11:58,475
+Yanık olarak da daha ses olduğu için sıkıntılı.
+
+59
+00:11:58,475 --> 00:12:07,179
+U üstü T çarpı, tabi bu da çarpımdan arkadaşları kasıp nokta çarpım yani.
+
+60
+00:12:07,251 --> 00:12:08,531
+Skate çatı, tamam mı?
+
+61
+00:12:09,172 --> 00:12:10,371
+Nocta'ya koyalım şurada.
+
+62
+00:12:11,451 --> 00:12:18,531
+Ve T, artı, biliyorsunuz Skate çatıda değişim üzerinde var, zorunda size bir gün önce bitirin sona etmemiz lazım.
+
+63
+00:12:18,811 --> 00:12:19,971
+Bize bir zararı yok.
+
+64
+00:12:20,731 --> 00:12:21,692
+Büyük üstü T.
+
+65
+00:12:23,651 --> 00:12:25,651
+Çarpımı türev yapalım, böyle tamamen.
+
+66
+00:12:29,107 --> 00:12:32,707
+Vektörel bölüm olmak için bölüm bölümleri tamam mı değil.
+
+67
+00:12:33,387 --> 00:12:36,147
+Sonra vektörel çarpı bir kuralı var bir de.
+
+68
+00:12:36,927 --> 00:12:37,447
+Beş diyelim.
+
+69
+00:12:39,487 --> 00:12:41,227
+D bölü D T.
+
+70
+00:12:43,507 --> 00:12:46,407
+U T çarpı V T.
+
+71
+00:12:48,007 --> 00:12:50,147
+Burada sadece sırayı korumamız lazım.
+
+72
+00:12:51,087 --> 00:12:54,387
+U üstü T çarpı V T.
+
+73
+00:12:56,115 --> 00:12:58,115
+Artı, uçerse, akı veşte.
+
+74
+00:13:03,956 --> 00:13:06,276
+Te çarpanı bir üst.
+
+75
+00:13:08,115 --> 00:13:08,475
+Şöyle.
+
+76
+00:13:16,148 --> 00:13:34,928
+Altı, yani bu birer sincır planı geldi kalır türev. D bölü D F T dersin şöyle. Nedir? U F T değil mi? F T'ler tabi. T'ye var konusiyonlar.
+
+77
+00:13:34,928 --> 00:13:42,307
+Bersede U T'ye bölüktüleri, U'nun işte T'ye bölüktüleri, çarpanı felin de T'ye bölüktüleri şeklindedir.
+
+78
+00:13:42,676 --> 00:13:43,716
+Bu eşittir.
+
+79
+00:13:44,076 --> 00:13:45,496
+Şunu şöyle bir dışarı.
+
+80
+00:13:46,576 --> 00:13:47,336
+Şöyle yazalım.
+
+81
+00:13:47,416 --> 00:13:48,875
+1, 2, 3 bari.
+
+82
+00:13:49,115 --> 00:13:49,355
+Değil mi?
+
+83
+00:13:50,176 --> 00:13:51,436
+F üstü, 3 çarpı.
+
+84
+00:13:52,596 --> 00:13:54,476
+Yani içininkilerin çarpı, kendini içininkilerin.
+
+85
+00:14:01,043 --> 00:14:04,763
+Üstü t çarpı, u üstü e t.
+
+86
+00:14:06,144 --> 00:14:06,483
+Şöyle.
+
+87
+00:14:09,124 --> 00:14:10,683
+Bu şekilde kullanılır.
+
+88
+00:14:27,379 --> 00:14:28,379
+Mesela şöyle
+
+89
+00:14:35,412 --> 00:14:41,012
+Bunların ispatı ya da sağlaması mı yapmaz mümkün?
+
+90
+00:14:43,332 --> 00:14:44,372
+Değil mi?
+
+91
+00:14:44,372 --> 00:14:44,932
+Bak.
+
+92
+00:14:54,227 --> 00:14:59,347
+Türev'i zaten gördük. Uğuramızda anlına kaşınlayabilir.
+
+93
+00:15:02,836 --> 00:15:13,375
+Burada belki sadece şunu belirtiriz. Stabil run vektör fonksiyonları düşündüğümüz zaman, onların türev ve çarpımı sıfır bize dayak.
+
+94
+00:15:17,908 --> 00:15:20,768
+Şimdi de duralım. R ve
+
+95
+00:15:20,768 --> 00:15:24,927
+Şöyle yine ben bekliyorum.
+
+96
+00:15:25,927 --> 00:15:30,587
+Sabit uzunluklu türev ve sabit uzunluklu fonksiyonu ise
+
+97
+00:15:43,028 --> 00:15:44,468
+Sabit uzunluktu,
+
+98
+00:15:47,388 --> 00:15:49,087
+bir fonksiyonu ise,
+
+99
+00:15:56,724 --> 00:15:57,344
+Bu zaman.
+
+100
+00:16:02,196 --> 00:16:03,676
+V nokta çarpı,
+
+101
+00:16:05,336 --> 00:16:06,375
+V bölüketi.
+
+102
+00:16:25,812 --> 00:16:31,132
+Gerçekten, biliyorsunuz vektörlerin kendisiyle nokta çarpımı,
+
+103
+00:16:35,668 --> 00:16:38,587
+Huzurunun karısıdır. Değil mi? Tüm seneler.
+
+104
+00:16:45,172 --> 00:16:50,172
+Tabi tutulunlukta olduğu için, buna CHPC'den CK deyabiliriz değil mi?
+
+105
+00:16:53,556 --> 00:17:06,375
+Şimdi iki tarafı türev alırsak, az önceki türev kuralı gereği, re üstü t çarpı re t, altı, re t çarpı re üstü t.
+
+106
+00:17:09,316 --> 00:17:12,115
+Eşitli sıfır. Bundan iki tane değil mi?
+
+107
+00:17:12,115 --> 00:17:13,776
+R t çarpı re üstü t.
+
+108
+00:17:15,115 --> 00:17:18,296
+Bir tane re t çarpı.
+
+109
+00:17:19,028 --> 00:17:29,028
+D üstü t eşit sıfır, ya da kısaca, R teşavru, R üstü dediğimizde bir patayla da, D regüle D, eşit sıfır.
+
+110
+00:17:30,028 --> 00:17:41,028
+Hem de bir örnek olmuş oldu. Yani, iki vektörü, skalet çarpımın türevine, türev kullanı olmamızda bir örnek olmuş.
+
+111
+00:17:47,220 --> 00:17:52,519
+vektör varsa, türev ve katlı varsa, bu vektörde türev ve çarpma yazılmasıdır.
+
+112
+00:17:59,988 --> 00:18:06,688
+Tabii tersine her zaman söylemek doğru değil. Bunun sıkılması, rektörün mutlaka sabık durumuna sahip olmasını gerektirmez.
+
+113
+00:18:12,692 --> 00:18:15,791
+Şimdi uzayda yay özünlüğü verici arkadaşlar.
+
+114
+00:18:15,791 --> 00:18:17,412
+Ben bunları bir sorunuz.
+
+115
+00:18:35,220 --> 00:18:44,159
+Yani bir uzay eşi koyuyorsa, y yüzünü unutma istiyoruz. Biliyoruz ki, e, z, t, şekilte, x, t, artı, y, t, artı, z, t.
+
+116
+00:18:57,107 --> 00:18:59,467
+ve t'de belli bir
+
+117
+00:19:00,427 --> 00:19:02,228
+A ve aralığında verilmiş.
+
+118
+00:19:03,248 --> 00:19:04,028
+Düzgün.
+
+119
+00:19:07,635 --> 00:19:08,536
+İlilin olsun.
+
+120
+00:19:14,132 --> 00:19:23,452
+Yani türev'in sıfırdaki değeri, patlı olsun. Türev'in sıfırdaki değeri patlı olsun.
+
+121
+00:19:24,652 --> 00:19:34,452
+Büyük haber alında kesin olmasın. Türev sıfırı mı? Türev sıfırdan patlı olsun. Türev sıfırda hangi noktası sıfırdan patlı olsun?
+
+122
+00:19:34,452 --> 00:19:36,452
+Düzgünlük o demek ki.
+
+123
+00:19:39,316 --> 00:19:42,316
+Abi Ararı'ndaki bu eğrinin uzunluğu.
+
+124
+00:19:53,779 --> 00:20:01,779
+vektör fonksiyonları, anemizimiz bilin, leş, a'dan b, f'de, a'da f'de, f'de, f'de, f'de.
+
+125
+00:20:02,779 --> 00:20:11,779
+Hatta z'nin türev'inin uzunluğu, f'de diyebiliriz, kısaca öyle bir sayedebiliriz.
+
+126
+00:20:41,715 --> 00:20:43,855
+Bunu da biz biliyoruz ki, A'dan B'ye,
+
+127
+00:20:48,276 --> 00:20:50,396
+Kök içinde, türevimiz de bir üstü.
+
+128
+00:20:51,635 --> 00:20:55,155
+X üstü kare, y üstü kare, z üstü kare şeklinde.
+
+129
+00:21:01,587 --> 00:21:03,288
+Şöyle bir tabla ekledim.
+
+130
+00:21:10,355 --> 00:21:22,955
+x virüdeti kalip artı, d virüdeti kalip artı, cz virüdeti kalip artı.
+
+131
+00:21:26,451 --> 00:21:28,231
+Evet, bu iyi bir gün.
+
+132
+00:21:31,152 --> 00:21:31,871
+Bir gün önce.
+
+133
+00:21:35,604 --> 00:21:40,304
+Tabii fonksiyon, türkün evde olduğu için türev ve sıvıdan taklıyoruz.
+
+134
+00:21:40,304 --> 00:21:42,304
+Tamam, bunları hendik ediyoruz.
+
+135
+00:21:43,304 --> 00:21:44,104
+AB adlandı.
+
+136
+00:21:51,443 --> 00:22:00,183
+Yani hız vektör anlamında bu zaten B derseniz yani, direkt, aslında A'dan beriye, B'nin uzunluğu değil mi? Hız vektör anlamında.
+
+137
+00:22:01,963 --> 00:22:03,124
+B, T, D, D.
+
+138
+00:22:04,744 --> 00:22:06,023
+Şu anlamda gelir.
+
+139
+00:22:08,764 --> 00:22:09,344
+V, T, D.
+
+140
+00:22:18,036 --> 00:22:19,615
+Senavir, reks konular.
+
+141
+00:22:26,675 --> 00:22:28,036
+Örnek olarak şey edelim.
+
+142
+00:22:32,051 --> 00:22:33,291
+İlk randı, ne?
+
+143
+00:22:36,980 --> 00:22:43,259
+Sabit bunu ne alabilirse, neydi olur mu? Bakın, bunları tutma şeyleri, onu kullanabilirsiniz.
+
+144
+00:22:43,259 --> 00:22:45,019
+Bir planlıyoruz.
+
+145
+00:22:47,019 --> 00:23:00,159
+R eşittir, x te i artı, y te j artı, z te k.
+
+146
+00:23:02,771 --> 00:23:04,692
+Eliksi boyunca tırmanışa geçiyor.
+
+147
+00:23:29,268 --> 00:23:32,968
+Planörün 0-2 aralığındaki kadar aldığı yolumuz ödü.
+
+148
+00:23:40,564 --> 00:23:46,084
+Teştik tipiye.
+
+149
+00:23:52,468 --> 00:23:54,128
+Alda yorum, işbiye kadar.
+
+150
+00:24:01,140 --> 00:24:02,140
+Kutuzunlar,
+
+151
+00:24:08,084 --> 00:24:19,244
+Biliyorsunuz, LX denklemi, posilus de artı simte, artı teşvikli.
+
+152
+00:24:19,244 --> 00:24:25,563
+Dolayısıyla onun üzerinde de, LX'in bir zapta şöyle,
+
+153
+00:24:27,144 --> 00:24:30,144
+çok uzak da ben ne zaman, takısına çalışacağım.
+
+154
+00:24:32,543 --> 00:24:33,384
+Şöyle.
+
+155
+00:24:35,635 --> 00:24:39,375
+Yani, ve sıfırdan iki bir yakın bir dönme sonucunda.
+
+156
+00:24:42,735 --> 00:24:45,336
+R tehlitsi kendimiz.
+
+157
+00:24:47,536 --> 00:24:54,596
+Post t'i artı, sin tc artı t.
+
+158
+00:24:55,735 --> 00:24:57,355
+Kart, değil mi? Böyle ki.
+
+159
+00:24:58,255 --> 00:24:59,655
+Ve t'de sıfır iki bir atı.
+
+160
+00:25:01,779 --> 00:25:03,779
+Aslında bu eğilin direkt uzunluğunu işleyeceğiz.
+
+161
+00:25:06,179 --> 00:25:10,579
+Dolayısıyla bir eğilisi katı direnge anlamda, az önceki söyledikçe sıkıları çıkıyor.
+
+162
+00:25:11,380 --> 00:25:12,880
+Bu uzunluğunun kalitesi.
+
+163
+00:25:13,880 --> 00:25:16,380
+Türev tabakçı içinde eksisinti.
+
+164
+00:25:26,836 --> 00:25:34,836
+artı, siviz ünlü türev ile kosta gelecek, artı, yukarıdaki kalesi.
+
+165
+00:25:36,836 --> 00:25:38,836
+Evet.
+
+166
+00:25:39,836 --> 00:25:43,836
+Çerisi, 1 artı 1 de 2 olacaktır, kökü 2 oldu çerisi.
+
+167
+00:25:43,836 --> 00:25:46,572
+Çünkü siviz ünlü türev ile kosta ile bir olur.
+
+168
+00:25:52,627 --> 00:25:54,627
+Bizden bir artı denetiyoruz.
+
+169
+00:25:56,087 --> 00:26:03,127
+0'dan 2 pi'ye, şöyle, kök 2 t diyoruz.
+
+170
+00:26:04,447 --> 00:26:08,227
+Bu da artık, integral bir kök 2 t değil mi?
+
+171
+00:26:08,307 --> 00:26:18,547
+Kök 2 çarptı integral isek, 0'dan 2 pi'ye, yerine yalasak, 2 kök 2 t yerine 2 pi yalasak,
+
+172
+00:26:20,051 --> 00:26:30,051
+T 2 kök 2 pi olur değil mi? T eksi sıfır için sıfır. Demek ki bu birim. Artık ölçü neyse beklemiştim. 2 kök 2 birim.
+
+173
+00:26:33,051 --> 00:26:38,051
+Evet, 2 bir kök 2 defa neyse 2 pi bizim durumda bir yol katılmış olur.
+
+174
+00:26:48,180 --> 00:26:50,180
+Böylece biraz
+
+175
+00:26:53,780 --> 00:26:55,180
+el uzunluğu
+
+176
+00:26:57,080 --> 00:26:58,080
+birlikte
+
+177
+00:26:58,080 --> 00:26:59,280
+spektör fonksiyonlar
+
+178
+00:26:59,280 --> 00:27:00,280
+bir şekilde
+
+179
+00:27:00,980 --> 00:27:01,980
+bu akıma
+
+180
+00:27:02,180 --> 00:27:03,180
+el uzunluğu işte
+
+181
+00:27:04,880 --> 00:27:08,180
+bu anlamda düşünelim ki, bektör fonksiyonlar bu şekilde düşünelim.
+
+182
+00:27:20,692 --> 00:27:23,132
+Yani burada bir dünya da çekin.
+
+183
+00:27:23,132 --> 00:27:24,632
+Bu taraftan bir dünya da değil tabi.
+
+184
+00:27:24,632 --> 00:27:25,451
+Eğitim sunuyorum.
+
+185
+00:27:25,451 --> 00:27:27,152
+Bu taraftan tutulandık.
+
+186
+00:27:27,152 --> 00:27:29,751
+Yani nasıl bir zeta değil?
+
+187
+00:27:29,751 --> 00:27:30,412
+Z.
+
+188
+00:27:30,412 --> 00:27:32,372
+Başka bir şey.
+
+189
+00:27:32,372 --> 00:27:34,491
+Başka bir programları var mı?
+
+190
+00:27:34,491 --> 00:27:35,872
+Ama bu da bir süre.
+
+191
+00:27:35,872 --> 00:27:39,751
+Bu da böyle bir şey.
+
+192
+00:27:39,751 --> 00:27:41,751
+Bu da bir süre.
+
+193
+00:27:41,751 --> 00:27:41,912
+Tamam.
+
+194
+00:27:41,912 --> 00:27:45,951
+Şimdi bir süre.
+
+195
+00:27:49,140 --> 00:27:51,920
+Evet, çok değişkenli fonksiyonlar başlayacağız.
+
+196
+00:27:51,920 --> 00:27:59,860
+Yani bunun için bir değişiklik değişkenli fonksiyonlara kazanıklar, oradan da bir dünya için mükendir.
+
+197
+00:27:59,860 --> 00:28:01,860
+Bu da bir seviyeye istedim.
+
+198
+00:28:02,780 --> 00:28:05,420
+Yani bir tanı falan var, bir karar vermeyeceğim.
+
+199
+00:28:05,420 --> 00:28:06,860
+Tabi ona geçtik.
+
+200
+00:28:08,940 --> 00:28:11,900
+Tanım küresi ve değer küresi.
+
+201
+00:28:11,900 --> 00:28:15,140
+Bu konusunda tebrik yapalım.
+
+202
+00:28:20,243 --> 00:28:20,824
+Ben uçanım.
+
+203
+00:28:56,980 --> 00:29:00,700
+Peki, yeni bölüm başlığımız, yani kısmi türevler.
+
+204
+00:29:02,539 --> 00:29:06,700
+Yani, mevcut, kısmi türevler, bu bakıma da çok değişkenli fonksiyonlar.
+
+205
+00:29:08,759 --> 00:29:11,340
+Çok değişkenli fonksiyonlar, kısmi türevler.
+
+206
+00:29:30,195 --> 00:29:33,955
+Önce, çok değişkenli fonksiyonlar da istedim.
+
+207
+00:29:45,683 --> 00:29:46,183
+Tamam.
+
+208
+00:29:57,011 --> 00:30:03,011
+D şöyle bir hüküm olsun.
+
+209
+00:30:05,011 --> 00:30:08,011
+x1, x2, nokta nokta, x.
+
+210
+00:30:10,011 --> 00:30:13,011
+En koordinatı değil mi?
+
+211
+00:30:14,011 --> 00:30:16,011
+1, nokta değil mi?
+
+212
+00:30:16,011 --> 00:30:21,011
+Her biri tabii x'ler, x'i diyelim bundan, eleman r.
+
+213
+00:30:21,011 --> 00:30:22,011
+Her biri r'si.
+
+214
+00:30:31,892 --> 00:30:32,972
+İyi bir denene kadar.
+
+215
+00:30:41,875 --> 00:30:42,675
+Çıklarım.
+
+216
+00:30:55,028 --> 00:30:58,147
+Şimdi amacımız böyle bir direktim eşlerinde bir f fonksiyonu tanımak.
+
+217
+00:31:00,008 --> 00:31:04,028
+f fonksiyonu d'den alıp, tabi l'e seriler ötülecek.
+
+218
+00:31:04,788 --> 00:31:05,407
+Bir fonksiyon.
+
+219
+00:31:06,107 --> 00:31:08,427
+Ve bunun tek bir x'e götürüyor.
+
+220
+00:31:08,427 --> 00:31:09,488
+Bunu alacak.
+
+221
+00:31:10,867 --> 00:31:13,587
+F altındaki değeri tabi aslında şöyle.
+
+222
+00:31:14,067 --> 00:31:17,567
+f, x1, x2, xn.
+
+223
+00:31:17,967 --> 00:31:19,347
+Değil mi? En değişkenli bir fonksiyon.
+
+224
+00:31:20,339 --> 00:31:31,659
+Her bir x'e karşı gelen böyle bir noktaya karşılaşırız. Yalnız ve yalnız bir f, bu kuralı tabii. Karşılık ki de fonksiyonlar belki buna y işçil et diyebiliriz.
+
+225
+00:31:31,659 --> 00:31:37,039
+U işçil et demek daha büyük. Bazen W mesela burada W demiş. W işçil et.
+
+226
+00:31:41,556 --> 00:31:53,675
+Şöyle diyelim, her bir x eleman d elemanına, vektörüne, noktasına diyelim, noktasına, yalnız ve yalnız
+
+227
+00:32:00,211 --> 00:32:02,432
+Bir W eşittir.
+
+228
+00:32:03,991 --> 00:32:07,532
+Fx sayısını karşı ketiren.
+
+229
+00:32:27,251 --> 00:32:30,631
+Tabii bu Kural'ı dedim. Yalnız bir işten.
+
+230
+00:32:33,091 --> 00:32:34,091
+Evet, dedim, Büyük Kural'ı dedim.
+
+231
+00:32:34,192 --> 00:32:35,591
+Sayısıyla kaç soru ketten Büyük Kural'ı?
+
+232
+00:32:44,884 --> 00:32:45,884
+Bir funcions.
+
+233
+00:32:52,084 --> 00:32:53,324
+ve akura almasa şükür.
+
+234
+00:33:04,948 --> 00:33:07,508
+Burada D fonksiyonumuzun tam ütümesidir.
+
+235
+00:33:11,316 --> 00:33:12,355
+Atın tüm lise.
+
+236
+00:33:17,332 --> 00:33:20,812
+Ormadan D altında eklebiliriz, daha fazla gösterirsin diye.
+
+237
+00:33:21,792 --> 00:33:23,252
+D onun görüntü kümesi vardır.
+
+238
+00:33:24,152 --> 00:33:26,632
+D eklebiliriz, değiştir, D eklemek.
+
+239
+00:33:34,228 --> 00:33:45,996
+Bu da eğitim değer cümesi.
+
+240
+00:33:52,211 --> 00:33:58,611
+Yani buradaki aldığımız her x'e karşı elde ettiğimiz bir w değeri, ne dedi? Bu değişimde geliyordur.
+
+241
+00:33:58,611 --> 00:34:02,211
+x'ler buraya ait, w'ya w'ya ait.
+
+242
+00:34:02,211 --> 00:34:08,211
+Tamam, w'ya da bu. Yani w'dan oluşturduk gibi her bir x eleman değişir.
+
+243
+00:34:08,211 --> 00:34:16,211
+w'dan oluşturduk gibi. Bunlara lokma çıktı ve girdi ve çıktı diyebilirsiniz. Şöyle bir mekalde düşünüyorum, basit bir anlamda.
+
+244
+00:34:18,211 --> 00:34:19,755
+Şöyle bir çıktığını görüyorsunuz.
+
+245
+00:34:20,820 --> 00:34:24,820
+Oraya x'ler atıyorsun, işte tamam mı? Burada da w'yı açıklıyor.
+
+246
+00:34:25,820 --> 00:34:27,820
+Evlikse açıklıyor şu kuralla.
+
+247
+00:34:28,820 --> 00:34:30,820
+W eşittir,
+
+248
+00:34:30,820 --> 00:34:33,820
+x kuralı, burada w'yı açıklıyor.
+
+249
+00:34:33,820 --> 00:34:41,708
+Buna girdileriniz, işte tanık mesela aldınız, her bir tanıklar için, her bir an bu kurala yalnız bir w'yı açıklıyor.
+
+250
+00:34:53,300 --> 00:34:55,360
+Mesela kolay örnekler olarak.
+
+251
+00:34:59,731 --> 00:35:01,492
+Hanım ve değerli hükümelerini de eminim.
+
+252
+00:35:08,179 --> 00:35:10,079
+Aynı fonksiyonun tanık gümesi ve değer etmesi.
+
+253
+00:35:10,079 --> 00:35:19,079
+Fonksiyon, tanık gümesi ve değer etmesi.
+
+254
+00:35:29,172 --> 00:35:34,052
+Dedim ki, z eşittir, değişkenli fonksiyonlar.
+
+255
+00:35:34,052 --> 00:35:34,452
+Şimdi.
+
+256
+00:35:41,907 --> 00:35:43,947
+Kök içinden her dedim, y'ye eksi x kare.
+
+257
+00:35:48,532 --> 00:36:04,532
+Ne demek ki? Yani x kareden, senin koşulması gerekiyor ya, yani x kareden büyük olma. Yani y eşit x kareliyesinin bildiğim zaman y eşit x kareliyesi var ya, o iki tane üstüne kalan bütün y değerleri içindedir, bunu sağlayacaktır.
+
+258
+00:36:04,532 --> 00:36:12,532
+Y büyük eşit x kare. Değer hükümetçi, tabii x kareden de geç konulacağız değil mi?
+
+259
+00:36:13,012 --> 00:36:17,012
+0 da alabiliriz. 0 ve 0'dan büyük olan tüm değerlerine kadar alır.
+
+260
+00:36:19,012 --> 00:36:21,012
+0 son soran.
+
+261
+00:36:23,012 --> 00:36:30,012
+Sonra z eşittir, yani burada tabi şuna bakıyorum. İçerinin ne olmasın? Büyük eşit 0 olması lazım.
+
+262
+00:36:34,012 --> 00:36:36,012
+Başka konuçu, bir böyle x'ye.
+
+263
+00:36:37,139 --> 00:36:47,960
+Haydar'ın ne olması lazım? Sıfırdan farklı olması lazım. Çünkü bir bölü x'i değil. Dolayısıyla x'i sıfırdan farklı yapan, çarpımını sıfırdan farklı yapan tüm noktalar örtüyoruz.
+
+264
+00:37:02,068 --> 00:37:04,387
+İkse düzen değil mi?
+
+265
+00:37:04,387 --> 00:37:08,188
+x ekseni ve y ekseni hariciz. Sadece 0, 0 noktası değil, orijinal.
+
+266
+00:37:08,188 --> 00:37:10,188
+x ve y ekseni hariciz.
+
+267
+00:37:10,828 --> 00:37:14,988
+Çünkü ondan bir üzerinde y 0, diğer üzerinde y 0 şeklinde karşımıza geçiyor.
+
+268
+00:37:17,427 --> 00:37:25,828
+Ve tam değer ücmesi olarak da, nedir? Sadece 0 değerini alamayacaktır. Dolayısıyla 0 üzerinde bütün değer de doğrusu.
+
+269
+00:37:26,188 --> 00:37:28,548
+A x sonsuz 0.
+
+270
+00:37:28,704 --> 00:37:31,003
+Birleşik Sıfır Sonuçları yazılır.
+
+271
+00:37:34,452 --> 00:37:42,592
+Öte yandan z eşittir, sinüs x'ye diyelim. Nedir? Bu da tüm d'leri alır. Tüm d'ler.
+
+272
+00:37:44,192 --> 00:37:47,512
+Tanrı tümesi tüm d. Tüm x'ye d'ler.
+
+273
+00:37:52,532 --> 00:37:55,811
+Diğer hükümetse, biliyoruz ki sizin x'i bir artı birazdan aşağıacaktır.
+
+274
+00:37:57,392 --> 00:37:58,712
+x'i bir ve bir kapatalım.
+
+275
+00:38:02,592 --> 00:38:04,132
+Bunlar iki değişiklikler için.
+
+276
+00:38:04,632 --> 00:38:10,032
+Yani z eşittir, burada fx'ye iki değişiklikler için.
+
+277
+00:38:11,152 --> 00:38:12,712
+Mesela üç değişkenli ses çek.
+
+278
+00:38:13,811 --> 00:38:16,992
+W eşittir mesela diyelim, fx'ye z değil.
+
+279
+00:38:19,956 --> 00:38:31,956
+Bu iki değişkenli fonksiyonumuz. Özellikle bu da üç değişkenli. Üst değişkenli fonksiyon.
+
+280
+00:38:35,987 --> 00:38:40,467
+İstihar etmemizin mahsulü yok. Hayır, birisi size, birini W'ye kütüldür.
+
+281
+00:38:55,539 --> 00:39:05,140
+İçerinin pozitif olacağı yer, değil mi? Büyügeç sıfır olacağı yer. Sıfır için negatif olacağınızı takipte, yine tümdüzde.
+
+282
+00:39:10,036 --> 00:39:12,755
+Değer hükümet, değer hükümet bir yere sınırı bir şey de sınırı.
+
+283
+00:39:21,523 --> 00:39:35,144
+Kıraksik faydesi var ya, denetmesi, 0 olarak istekatrik olmaz. 0 olarak sonuçta var.
+
+284
+00:39:37,963 --> 00:39:42,724
+0 daha iyi. Mesela bu payda doksan bir risk atrikal var sadece 0 almayacak. 0 sonuç diyecek.
+
+285
+00:39:44,844 --> 00:39:48,943
+Mesela W eşittir, x'ye lnz olsun.
+
+286
+00:39:51,987 --> 00:40:03,987
+Bu da 3 çeşitli. Z'nin pozit olması gerekir. 0 ve negatif sayıda da elen tanımı değil. Z'nin pozit olması gerekir.
+
+287
+00:40:03,987 --> 00:40:09,987
+Yani Z büyük 0. Dolayısıyla uzayın yarısı değil mi? Yani x'e düzlemin üstü.
+
+288
+00:40:21,972 --> 00:40:25,972
+Biz hep bir c-0 değerini alabiliriz, değil mi?
+
+289
+00:40:26,972 --> 00:40:29,972
+Tabii, ikisi için.
+
+290
+00:40:32,972 --> 00:40:45,972
+Evet, bütün 0-1 aralığında ne göstereceğim, diyelim ki, diyecek bu tolgazda, ne yapan, ne yapan, ne tanımışı, yapan bir değer yok, x-0, x-0, x-0 diyebiliriz.
+
+291
+00:40:47,092 --> 00:40:49,892
+Eksiyon ve aksiyon olarak tüm girece alakalı arkadaşlarım.
+
+292
+00:40:51,231 --> 00:40:53,592
+Boşun, eksiyon ve aksiyon olarak tüm girece alakalı arkadaşlarım.
+
+293
+00:41:22,164 --> 00:41:40,164
+Özellikle iki değişkenli fonksiyonlar gözünü alırsak, devamlı fonksiyonlar, zaten şurada yazdım zaten, düzlemin mecbur bir geçiştirinde tanımlanacak. Çünkü isteyen noktalar, bir bölge oluşturabiliyor. Bunlar için özellikle daha önceden...
+
+294
+00:41:45,204 --> 00:41:49,724
+Atılıyorum yani, iş noktası, sırrı noktası, sırrı noktası gibi noktalar değil mi?
+
+295
+00:41:49,963 --> 00:41:50,423
+Vermiştik.
+
+296
+00:41:51,304 --> 00:41:53,444
+Güven açıkçası da kapatılmadığımdan vermiştik.
+
+297
+00:41:59,188 --> 00:42:00,967
+Şöyle bir başlık asalım hayatımdan.
+
+298
+00:42:03,088 --> 00:42:04,168
+İki değişkenli
+
+299
+00:42:24,851 --> 00:42:32,671
+Tabii bu iki değişkenli fonksiyonlar için arkadaşlar, bütün teoriye, üç yıl daha çok değişkenli fonksiyonlar için netesinde yeterli olacak.
+
+300
+00:42:38,900 --> 00:42:40,900
+Biliyorsunuz üzerindeki bölgeler normalde
+
+301
+00:42:45,396 --> 00:42:57,695
+Yani, R-'in üzerindeki mesela aralıklara benzer, iç noktalarına, sınır noktalarına sahip olabiliyor. Ödeyce AB kapalı aralıkları, kendi sınır noktalarını içeri hatırlasınız yani.
+
+302
+00:42:57,695 --> 00:43:04,056
+Ama AB açık aralıkları, kendi sınır noktalarını içermez. Bir de, yarı açık, yarı kapalı durum vardır.
+
+303
+00:43:04,056 --> 00:43:13,195
+Burada da bende şeyi yapacağız yani, eğer x-0, yarı şartı bütünüyle bir R-böget içinde bulunan bir dayanım mektisiyse, o zaman
+
+304
+00:43:13,460 --> 00:43:29,800
+X'e üzerindeki bir R bölgesindeki X'e bu, R'nin iç noktası olarak kabul edebiliriz. Yani düzlemde şöyle, düşündüğümüz zaman, çünkü şu an fonksiyonun tanıtması ile biraz ilgilendiriz. Şöyle bir şey var.
+
+305
+00:43:36,307 --> 00:43:40,587
+Burada hangi nokta asanız alın, bu nokta almanızsak değil.
+
+306
+00:43:40,587 --> 00:43:43,228
+Dengi bir P noktası, hatta P1 diyelim.
+
+307
+00:43:43,228 --> 00:43:51,547
+Bunun etrafında küçük bir çember çizdiğimizi, açık çemberlere şöyle.
+
+308
+00:43:51,547 --> 00:43:54,547
+Sınırlara dahil olmayabilir çember.
+
+309
+00:43:57,940 --> 00:44:05,000
+Bakın bu tamamen nerede? Böycem bu D bölgesinin neyini içeriyor? D bölgesinin noktalarını içeriyor.
+
+310
+00:44:07,039 --> 00:44:12,420
+Şuna komşuluk diyebiliriz. Yani benim komşuluğu. Bu da tam bir şey. Buradaki bir şey. İzledelim.
+
+311
+00:44:14,560 --> 00:44:19,480
+Kanun edelim. P'ye çarptı. P'ye bir komşuluğu.
+
+312
+00:44:21,779 --> 00:44:22,920
+Şunu öyle edelim.
+
+313
+00:44:24,211 --> 00:44:30,091
+Yani şuradan, şuradan, şuradan, şu anlanan nedir? Şu, re kadar. Bu bizim KDP1'imiz.
+
+314
+00:44:31,532 --> 00:44:37,532
+Eğer D için de hangi noktaya alırsak alalım, bu KDP1, nerede? Buradaki gibi.
+
+315
+00:44:38,331 --> 00:44:46,412
+D'nin alt kümesi oluyor ise, bu P1 noktasına bir iş nokta, D'nin bir iş nokta tıklıyoruz.
+
+316
+00:44:51,188 --> 00:45:00,188
+P1 civarında böyle küçük bir açık civar aldığımızda, açık, açık dizik diyelim şimdi, aldığımızda şu R, yada çabuk.
+
+317
+00:45:00,188 --> 00:45:05,188
+Tamam. Yine değişince kalıyorsan, yöntemde değişik noktası diyoruz.
+
+318
+00:45:05,188 --> 00:45:14,188
+Sonra, şöyle mesela sınırda bir nokta, şurada bir nokta var mı? Şunu seçelim, orada mesela şöyle baktık.
+
+319
+00:45:14,188 --> 00:45:17,867
+Sarı diyelim şöyle.
+
+320
+00:45:20,532 --> 00:45:23,492
+Şöyle küçük bir versin. Buna da değişik değil mi ses?
+
+321
+00:45:27,123 --> 00:45:37,363
+Bakın bu P2 noktasında komşuluğumuz hem D'nin içindeki noktaları içeriyor hem de D'nin içindeki noktaları içeriyor.
+
+322
+00:45:41,331 --> 00:45:45,711
+Yani ona da K, R, P2 diyelim.
+
+323
+00:45:47,652 --> 00:45:48,911
+Hem D'deki noktaları
+
+324
+00:45:54,036 --> 00:46:03,615
+Hem de, D'ye ait olmayan noktalar var. D dışındaki noktalar da içerik.
+
+325
+00:46:11,347 --> 00:46:18,807
+ise işte P2 noktası bizim P2 noktası. Böyle noktada D'nin sınır noktasıdır.
+
+326
+00:46:29,876 --> 00:46:36,356
+Bir de dış nokta var. O arada işte P3CB'sinde çalışıyor da. Ne olacak?
+
+327
+00:46:38,356 --> 00:46:42,796
+D'nin dışında bir nokta. D'nin iç noktadan içermeyen bir yuvarası.
+
+328
+00:46:48,788 --> 00:46:58,268
+D'de hiçbir noktası içermeyi var. Değil mi? D'nin hiçbir noktasını içermez.
+
+329
+00:46:59,827 --> 00:47:01,707
+D'nin hiçbir noktasını içermez.
+
+330
+00:47:01,707 --> 00:47:05,387
+D'nin hiçbir noktasını içermeyi.
+
+331
+00:47:08,228 --> 00:47:13,307
+İse, D3 burada, D'nin dış noktası.
+
+332
+00:47:17,460 --> 00:47:18,300
+Birleşik Devletler.
+
+333
+00:47:28,275 --> 00:47:38,996
+Öneride burada olduğu gibi, eğer iç noktaları içerisiniz arkadaşlar, iç noktaları tüm ya da tüm noktaları iç noktadan kümeyi açık küme edeceğiz. Açık haralık gibi.
+
+334
+00:48:01,588 --> 00:48:06,988
+Mesela açık, işte bu şey, bir risk açık hükümetir.
+
+335
+00:48:13,235 --> 00:48:18,515
+Sınır noktaları içeren bu şekilde düşeceğim, seri, bir bölge nedir? Kapalık nedir?
+
+336
+00:48:20,395 --> 00:48:31,916
+Tüm sınır noktalarını, sınır noktalarını, içeri, düşmeye, kapalık.
+
+337
+00:48:41,235 --> 00:48:49,235
+Şimdi, hastalık kapalı kümbeli, açık kümbeli gibi bir tümleyi var, tümleyini açık olan kümbeli, hastalık kapalı kümbeli.
+
+338
+00:48:51,235 --> 00:48:54,987
+Tümleyini açık olarak.
+
+339
+00:49:08,563 --> 00:49:09,063
+Bakın.
+
+340
+00:49:21,172 --> 00:49:28,172
+Tabi normalde ikili eşkenli fonksiyonlar arkadaşlar, grafiklerin, baktığımız zaman,
+
+341
+00:49:30,372 --> 00:49:33,471
+ne tabi değer hükümetse bahsetmiyor, değer hükümeler de neyse, ilerlerdir ama,
+
+342
+00:49:34,532 --> 00:49:39,072
+işte ikili eşken, bir de üçüncü eşkenlik zaman üç değişken, üç değişkenin gösterdiği,
+
+343
+00:49:39,572 --> 00:49:45,771
+nerede bunu böyle gösterir, ancak uzay da değil mi, şu koordinatı, ökütü zayını gösteririz, yani rükküpte.
+
+344
+00:49:46,675 --> 00:49:57,635
+Dolayısıyla o zaman çizdiğimiz orada her bir yüzeyi, düzler, bu tarz şeyler, bölge, aslında iki değişkenin fonksiyonu grafiktir.
+
+345
+00:49:59,015 --> 00:50:04,155
+Bu açıda bir iki değişkenin fonksiyonu grafiğini elitmek hem kolay hem zorlanır.
+
+346
+00:50:04,875 --> 00:50:06,475
+Mesela biraz önce örneğinizi verdik ya.
+
+347
+00:50:17,331 --> 00:50:18,331
+Z eşittir.
+
+348
+00:50:19,331 --> 00:50:21,692
+Ama adresette ya da etikseli de bir çevresiniz.
+
+349
+00:50:23,791 --> 00:50:24,811
+Kök içimde ne dedik?
+
+350
+00:50:25,152 --> 00:50:26,431
+Y-x-x kalbin de eşit.
+
+351
+00:50:26,431 --> 00:50:27,952
+İlk örneğimiz tabi tanık eser.
+
+352
+00:50:29,831 --> 00:50:31,851
+Fonksiyonun tanık misini...
+
+353
+00:50:36,211 --> 00:50:37,211
+Bun.
+
+354
+00:50:39,211 --> 00:50:43,211
+Tamamen olması için içerisinin büyügeşitli olması lazım, biliyorsunuz.
+
+355
+00:50:44,211 --> 00:50:47,211
+Zorası y eksi x kare büyügeşitlidir.
+
+356
+00:50:48,211 --> 00:50:52,211
+Sıfırdır, bu demektir ki y büyügeşitlidir x kare.
+
+357
+00:50:53,211 --> 00:50:57,211
+Şimdi düzen aldığımız zaman, arkadaşlar, düzen de x'e düzen de şöyle.
+
+358
+00:50:58,211 --> 00:51:00,108
+Y eşit x kare ile eşleşir.
+
+359
+00:51:08,371 --> 00:51:09,452
+Bu yeşilis kayı.
+
+360
+00:51:10,492 --> 00:51:16,811
+Şimdi yeni, bunun üstte kalan tüm, buna eşit de üstte kalan noktalara bakacağız.
+
+361
+00:51:18,051 --> 00:51:19,731
+Yani şöyle tarih yapıştır.
+
+362
+00:51:22,731 --> 00:51:23,431
+Şey dahil var.
+
+363
+00:51:24,371 --> 00:51:24,971
+Değil dahil.
+
+364
+00:51:39,891 --> 00:51:41,891
+Bunun altına hiçbir süreç değil.
+
+365
+00:51:44,211 --> 00:51:52,211
+Bu evlilere, üstteki alan tüm ve genedir bizim, işte tam hükümetiz. Yani buradaki x'lerinin hükümeti aslında bunlar.
+
+366
+00:51:52,771 --> 00:51:58,291
+Burada hangi x'ler noktasına alırsanız, bunlar bizim bu fonksiyonun şeyini sağlar.
+
+367
+00:51:59,011 --> 00:52:01,331
+Tanımını tanımlayabilir, fonksiyonu tanımlayabilir.
+
+368
+00:52:19,284 --> 00:52:21,124
+Bir tane küçük bir tanım vereceğim.
+
+369
+00:52:29,556 --> 00:52:32,195
+Bir düzen sebebgesi, bir de bölgesi diyelim.
+
+370
+00:52:40,532 --> 00:52:53,351
+Sabitliği açıcı bir dairenin, yani belli bir yapsaklığı, tabii bir dairenin açık yada koordinatı değil. İçinde kalıyorsa,
+
+371
+00:53:01,427 --> 00:53:02,807
+D ne diye sınırlıdır.
+
+372
+00:53:06,028 --> 00:53:07,927
+D bölgesi, genç sınırlıdır.
+
+373
+00:53:09,268 --> 00:53:11,148
+Yani sınırlı var, sınırlı var.
+
+374
+00:53:11,248 --> 00:53:14,447
+Mesela şurada sinoktan okuyorduk, sınırlı değil mi?
+
+375
+00:53:14,587 --> 00:53:15,188
+Bunu paylaşabilir.
+
+376
+00:53:16,108 --> 00:53:19,068
+Bunu sabit yaşam bir içermek için alamıyoruz.
+
+377
+00:53:28,083 --> 00:53:29,384
+Peki, bir araya gidelim.
+
+378
+00:53:29,543 --> 00:53:30,523
+Arada daha sonra.
+
+379
+00:53:32,023 --> 00:53:32,603
+Devam edelim.
+
+380
+01:03:42,804 --> 01:03:55,583
+Şimdi basitçe bu fonksiyonlar grafik yandan basit birisi arkadaşlar. Mesela, ne olsun? İki değişikliğe fonksiyon olarak. Detestir, yüz eksi, x kare eksi, yakın olsun.
+
+381
+01:04:09,108 --> 01:04:11,828
+En kök iştini daha başlıyorum. İlk karı eksiklik.
+
+382
+01:04:17,940 --> 01:04:18,539
+Şimoyen.
+
+383
+01:04:25,331 --> 01:04:27,331
+10-x2-x2
+
+384
+01:04:28,132 --> 01:04:31,132
+Şimdi tabi x'ye değerlerine bıraktığın zaman
+
+385
+01:04:32,251 --> 01:04:34,251
+bu ifadenin
+
+386
+01:04:35,412 --> 01:04:40,412
+çünkü z fonksiyonu normalde x'ye z düzlemine baktığım zaman şöyle
+
+387
+01:04:40,971 --> 01:04:42,971
+koordinatislerin itesini
+
+388
+01:04:57,588 --> 01:05:03,988
+Ne yapacak değerlerine baktığın zaman? x'ye değerlerine verdikçe x'ye bir zaman negatif olmayacak ama 10x'ye.
+
+389
+01:05:05,588 --> 01:05:19,188
+Yani x'nin toplamı, x'nin karelerinin toplamı eğer 10 olursa fark ne olacaktır? 0 olacaktır. Dolayısıyla 10 aşamayacak. 10'un içine çıkmayacak. 10'dan küçük ya da büyük o zaman değerli ifadesi, tak olmaz mı olacaktır?
+
+390
+01:05:19,588 --> 01:05:22,788
+x'ye kare, x'ye değer, 1'in kareleri toplamı düşünürsen.
+
+391
+01:05:26,547 --> 01:05:30,947
+Demek ki tepe noktası 10 olacak ve bundan aşağıya işte.
+
+392
+01:05:33,827 --> 01:05:39,907
+Tabii nerede 0 olacak? Baktığın zaman, x hat yapar işte, hatta bunu 9 yapalım veya daha büyük bir noktası.
+
+393
+01:05:43,603 --> 01:05:47,743
+Düzlemde 2 saat yekareti 9 semberi.
+
+394
+01:05:48,743 --> 01:05:49,503
+Şurası.
+
+395
+01:06:01,043 --> 01:06:10,043
+ve buradan aşağıda şöyle, işte bu yüceğimiz, şöyle bir şey buradan aşağıya, buradan aşağıya doğru geçecek.
+
+396
+01:06:11,423 --> 01:06:13,224
+İkse düzlemde çünkü 0 olduğu yerde.
+
+397
+01:06:31,987 --> 01:06:32,367
+Next.
+
+398
+01:07:08,340 --> 01:07:12,700
+Bu aşağı doğru gidiyor. Bunun sınırı yok. Sadece x'e düz denince kısımı bir sınırı.
+
+399
+01:07:13,700 --> 01:07:17,020
+Bu aşağı doğru nerede düz yere gidiyorsa, x'e sonsa kadar değerler olacak.
+
+400
+01:07:18,660 --> 01:07:22,100
+x'e'nin x'e altı sonuçlu büyük değerler için bu aşağı doğru gidiyor.
+
+401
+01:07:23,220 --> 01:07:27,380
+Para boşun aşağı doğru. Kolların 10 noktasında aşağı doğru olan para boşun.
+
+402
+01:07:32,596 --> 01:07:40,155
+Tam burada köşe. Yarı çarpı 9 olan tember. Y-senetini sıkıntı köşe.
+
+403
+01:07:50,164 --> 01:07:53,563
+Şimdi burada, böyle bir şey var arkadaşlar.
+
+404
+01:07:55,884 --> 01:07:57,483
+Bir seviyesi alınacağız.
+
+405
+01:08:02,452 --> 01:08:03,692
+Şuraya tanım diyelim.
+
+406
+01:08:04,572 --> 01:08:06,372
+Ve bu ürün etkiliyle aynı zamanda konuşalım.
+
+407
+01:08:10,099 --> 01:08:11,639
+F2C fonksiyonunun
+
+408
+01:08:16,916 --> 01:08:21,136
+Fx, Strij.
+
+409
+01:08:27,283 --> 01:08:28,863
+Tabit değerine sahip olduğu
+
+410
+01:08:40,756 --> 01:08:44,336
+Düzlendeki noktaların hükümetli.
+
+411
+01:09:03,412 --> 01:09:06,372
+F fonksiyonunun seviye edilisi olarak tanınır.
+
+412
+01:09:21,684 --> 01:09:24,344
+Hatta şu başı hiç yazmam da gerek yok. Şuna hiç gerek yok.
+
+413
+01:09:25,184 --> 01:09:30,084
+Etiketçi, sabit diyene sahip olduğu, hatta fonksiyonu diyebiliriz.
+
+414
+01:09:31,824 --> 01:09:32,543
+Fonksiyonu.
+
+415
+01:09:37,619 --> 01:09:46,619
+Tabi ki, sabah olmalı, özgürlük noktadan kümesi, f fonksiyonu, yani zc, zf fonksiyonu, nesel, seviyesidir.
+
+416
+01:09:48,619 --> 01:09:53,619
+Kümesi, kümesine f fonksiyonu seviyesidir.
+
+417
+01:09:54,619 --> 01:09:55,619
+Eriştir.
+
+418
+01:10:07,412 --> 01:10:33,612
+Bu ne demek? Bu aslında kolay bir şey arkadaşlar. Yani, ZT-Cir Z fonksiyonumuz bu. Mesela ZT-Cir 9 seviyesinde sabit ya. ZT-Cir 9 seviyesinde nedir? Tek bir nokta. Bu nokta, X-Z üzerinde nereye verir bana, onları kırmızı yere götüreceğim. Şuraya verir. Sonra,
+
+419
+01:10:35,604 --> 01:10:47,844
+Z eşitir mesela, 50 bin nöktede ne olsun? Burası 9'du ya, 6 olsun mesela, 6 olsun.
+
+420
+01:10:47,844 --> 01:10:49,844
+Şimdi bunun ilişimi...
+
+421
+01:10:56,212 --> 01:10:57,712
+İsteriz düzlemine.
+
+422
+01:10:58,372 --> 01:10:59,112
+İçembel değil mi?
+
+423
+01:11:01,672 --> 01:11:02,311
+İsterim onu.
+
+424
+01:11:04,311 --> 01:11:05,471
+Şöyle bir çember.
+
+425
+01:11:11,347 --> 01:11:13,347
+Başka, farkını görelim.
+
+426
+01:11:16,347 --> 01:11:20,347
+Bu alttaki kırmızılı olan çember, bizim z eşittir.
+
+427
+01:11:23,347 --> 01:11:28,347
+Altı seviyesindeki, z eşittir altı seviyesinin yüksekliği, düzlem.
+
+428
+01:11:29,347 --> 01:11:32,347
+Z eşittir altı seviyesinde, düzlemimizin paraleliklerimizin.
+
+429
+01:11:33,347 --> 01:11:38,347
+Karşılıklara, çember üzerinde tabi bu, eylül üzerindeki artı onun ve fiş şu.
+
+430
+01:11:56,787 --> 01:12:00,727
+Bunun iyi düşün.
+
+431
+01:12:03,307 --> 01:12:04,427
+Bunu iyi düşün.
+
+432
+01:12:09,300 --> 01:12:11,600
+Kırmızı atabiliriz artık.
+
+433
+01:12:13,819 --> 01:12:14,640
+Şunu atabiliriz.
+
+434
+01:12:14,920 --> 01:12:21,440
+Bunun için de testik altı serisindeki düzlemin kestiği zaman bu bizim testik kararitik şekeri.
+
+435
+01:12:21,620 --> 01:12:23,220
+Böyle bir düzlem var.
+
+436
+01:12:23,319 --> 01:12:25,280
+Bunun böyle bir eğitimi var.
+
+437
+01:12:25,840 --> 01:12:26,840
+Bu eğitimi ne yapıyoruz?
+
+438
+01:12:26,840 --> 01:12:29,340
+İşte bir düştüğümüz zaman bize bunu serileriz.
+
+439
+01:12:33,268 --> 01:12:37,368
+Bu şekilde devam ederek, bir sürü seviyeler serdedebiliriz.
+
+440
+01:12:39,987 --> 01:12:42,028
+Sonra farklı bir tonla seviyeler serdedebiliriz.
+
+441
+01:12:42,028 --> 01:12:43,108
+Denk olarak geliştirme.
+
+442
+01:12:44,127 --> 01:12:47,368
+Şu seviyede bakın daha büyük bir seviyeler serdedeceğiz.
+
+443
+01:12:49,587 --> 01:12:49,788
+Evet.
+
+444
+01:12:51,448 --> 01:12:54,288
+Bunun mesela aşağıdaki ifadesi.
+
+445
+01:12:55,087 --> 01:12:57,007
+Bunun üzerinde bundan büyük olacak tabii.
+
+446
+01:12:59,847 --> 01:13:00,847
+Şunu aşacak benim.
+
+447
+01:13:01,908 --> 01:13:02,908
+Bakın şuraca.
+
+448
+01:13:05,628 --> 01:13:07,688
+Bakın Z eşittir, neredeki?
+
+449
+01:13:09,468 --> 01:13:12,188
+En dıştaki de tabii, en büyük çemberimiz aslında bizim o.
+
+450
+01:13:12,948 --> 01:13:15,788
+Z eşittir sıfıra denk gelen kısım.
+
+451
+01:13:16,748 --> 01:13:19,548
+Ona mesai diyelim, Z eşittir 9'e 4 diyelim atıyorum.
+
+452
+01:13:21,648 --> 01:13:23,088
+Z eşittir 4'e 4'e 4.
+
+453
+01:13:28,435 --> 01:13:32,675
+Bu da şu da ZTS0'ı denir.
+
+454
+01:13:36,467 --> 01:13:44,167
+Şu seyir. Demek ki iç içe böyle ne elde ettik? Eğiletmesi. Bunu ben x'ler üstlemler size korsam doğru.
+
+455
+01:13:59,956 --> 01:14:00,676
+Bu, Elvide.
+
+456
+01:14:07,315 --> 01:14:08,435
+Ektere göre bir seyit.
+
+457
+01:14:13,268 --> 01:14:21,907
+İlk sayede STDP, STD4, 9 çember, 3 çember pardon. Gerçekten sonra çember. Sonraki bir üteki sarı mı var? Sarı yer al.
+
+458
+01:14:35,475 --> 01:14:37,475
+Çenekleri, elektrik bir göz yok çenekleri.
+
+459
+01:14:38,475 --> 01:14:39,475
+Tamam, bir şey değil.
+
+460
+01:14:39,475 --> 01:14:41,475
+Tek bir değil çenekleri.
+
+461
+01:14:42,475 --> 01:14:43,475
+Sonra kıncı.
+
+462
+01:14:53,332 --> 01:14:55,212
+En iyi akın da bizim noktamız.
+
+463
+01:15:14,484 --> 01:15:25,284
+Bunlar ne? Bir seviye. Mesela bu, en üstteki ZHT0 için karşılık gelen. Bu sonraki sarı olan mesela ZHT4 için.
+
+464
+01:15:27,344 --> 01:15:41,604
+Sonra kırmızı olan ZHT6 için. Ve noktamız da ZHT9 seviyesindedir. İstediğiniz kadar seviyesinde de üretebiliriz. Bundan sonra
+
+465
+01:15:42,064 --> 01:15:45,264
+Tabi bir anlamı olacak, bir ifade edecek ama. En azından şu aşamada.
+
+466
+01:15:47,344 --> 01:15:48,344
+Peki.
+
+467
+01:15:49,264 --> 01:15:51,463
+Bu tanımladığımız seriler aslında arkadaşlar.
+
+468
+01:15:52,864 --> 01:15:57,064
+3 değişkenli fonksiyonlar için de geçerli. Onu söyleyeyim hemen.
+
+469
+01:16:22,260 --> 01:16:28,260
+Yani W eşitci mesela işte, Fx, Z, aldığımız zamanki duruma baktığımız zaman.
+
+470
+01:16:29,480 --> 01:16:30,260
+Uzayda,
+
+471
+01:16:33,200 --> 01:16:35,260
+3 bağımsı değişkenli bir fonksiyonun,
+
+472
+01:16:38,000 --> 01:16:39,440
+3 değişkenli kısaca bölüm.
+
+473
+01:16:43,315 --> 01:16:44,315
+Beautiful, sir.
+
+474
+01:16:48,756 --> 01:16:52,695
+fx, c, z, eşitir, c, değil mi?
+
+475
+01:16:54,016 --> 01:16:55,376
+Değerine sahip olduğu,
+
+476
+01:17:09,876 --> 01:17:11,515
+İkci ziyanotranışma, sınır.
+
+477
+01:17:23,252 --> 01:17:26,752
+F'in seri yüzüğü olarak, tamam bak bu defa seri yüzüğü diyeceğiz.
+
+478
+01:17:28,332 --> 01:17:31,712
+F'in seri yüzüğü.
+
+479
+01:17:36,500 --> 01:17:39,039
+Çünkü üç noktaların hükümeti değil mi? Yüzey belirtir.
+
+480
+01:17:40,059 --> 01:17:42,539
+Bu rakaman tek tek iki dersken fonksiyonun grafiği gibi düşünüyor.
+
+481
+01:17:43,819 --> 01:17:46,960
+Seri yüzey olarak tamamdır.
+
+482
+01:17:52,659 --> 01:17:55,979
+Bu çizim olarak biraz daha olur.
+
+483
+01:17:55,979 --> 01:17:57,539
+Yani, şak edeyim.
+
+484
+01:18:03,155 --> 01:18:05,155
+Ama görsel olarak tabii.
+
+485
+01:18:06,155 --> 01:18:12,155
+Çok güzel, sevgili yüzeyleri falan bulmak için, ikisi adancı yapacaklar, bunları başlarımız.
+
+486
+01:18:14,155 --> 01:18:17,155
+Kitabımıza baktığınız zaman, kitabı da kazan kitapta var.
+
+487
+01:18:22,771 --> 01:18:29,672
+Tabii iç nokta, dış nokta, açıklık vesaire bunlar. Bir defa bir tane küçük daire alıyorduk, açık daire alıyorduk.
+
+488
+01:18:30,711 --> 01:18:35,672
+Burada işte onun yerine başka bir şey alacağız. Yani onu içeren bir açık yuvar diyeceğiz.
+
+489
+01:18:35,871 --> 01:18:40,752
+Açık küreye de bazen de mi falan dedi. Kümenin noktanın komşuru olarak.
+
+490
+01:18:41,311 --> 01:18:42,931
+Bu da mesela tok demiş mesela.
+
+491
+01:18:46,291 --> 01:18:49,231
+Yuvarlı da küre dersiniz.
+
+492
+01:18:50,644 --> 01:18:53,644
+Görse olarak tam dola benziyordur.
+
+493
+01:18:56,644 --> 01:19:16,644
+Özellikle bu arkadaşlar, seviye eğrilerini kullanımı, mesela hayata açıkta çok şey, o dağların ya da yerin, müdeyillik, bir takım bölgeleri, bir şekillendirilmesi tefreti olarak, meydana geldi, çok güzel.
+
+494
+01:19:16,948 --> 01:19:18,708
+Büyüsün, bir de bir de.
+
+495
+01:19:19,347 --> 01:19:21,568
+Ben şuradan mesela göstermeye çalışayım.
+
+496
+01:19:29,587 --> 01:19:33,207
+mesela şu seviyelerini yapalım.
+
+497
+01:19:35,788 --> 01:19:36,707
+Böyledik mi arkadaşlar?
+
+498
+01:19:37,368 --> 01:19:39,567
+Bakın, her bir çiftin altındaki şey.
+
+499
+01:19:43,572 --> 01:19:58,912
+Her bir şekil atmak şey. Ben deslim yerine, o zaman görüntüm yerine bunu gösteriyorum. Gördün mü? Bunların tabii 3 boyutu olduğu için. 3 boyutu şekildi mi? Onların tabii seviye yüzeyleri de var.
+
+500
+01:19:58,912 --> 01:20:08,731
+Her bir şeyin aşağıdaki o kırmızı ile şey yapmanın yerler var, seviye yüzeyleri. Şöyle bir adet açısından bir tanesini söyleyeyim.
+
+501
+01:20:10,836 --> 01:20:15,456
+Kolay bir
+
+502
+01:20:27,155 --> 01:20:33,036
+Muhtesef tabi gösterip olarak, muhtesef dediği şeyler var, görüntüler var.
+
+503
+01:20:38,323 --> 01:20:45,203
+Şimdi gelelim artık, bu ikili eşçerin ya da üç eşçerin fonksiyonu da limit kavramına göre.
+
+504
+01:20:55,572 --> 01:20:57,572
+Şuraya şunu oturuyoruz.
+
+505
+01:21:03,572 --> 01:21:15,572
+R yarı çarplı mesela, R yarı çarplı, P merkezi bir noktalar, komşulur dediğimiz zaman, şöyle düşünebilirsiniz aslında arkadaşlar.
+
+506
+01:21:16,572 --> 01:21:18,572
+Nasıl alalım?
+
+507
+01:21:18,572 --> 01:21:22,572
+Noktalar kümesi, mesela X, Y, Z.
+
+508
+01:21:23,155 --> 01:21:25,155
+nokta hükümeti, küçük oluktu, tabi.
+
+509
+01:21:28,355 --> 01:21:29,956
+Uzayda gözümden arıyoruz.
+
+510
+01:21:30,755 --> 01:21:32,755
+X, Y, Z nokta hükümeti.
+
+511
+01:21:33,755 --> 01:21:41,556
+Öyle ki bu noktanın orijinal olan ya da P'yi olan uzaklığı ne yapmayacak, neyi aşmayacak?
+
+512
+01:21:41,556 --> 01:21:46,355
+İsteyelim, kıtada da, isteyebilir mi? İsteyelim, kıtada da, isteyebilir mi?
+
+513
+01:21:46,755 --> 01:21:47,956
+Daha kolay olsun.
+
+514
+01:21:48,755 --> 01:21:50,731
+Ya da başka bir P'yi süperymişiz.
+
+515
+01:21:51,220 --> 01:21:53,539
+Q diyelim ya, benim değil mi?
+
+516
+01:21:54,539 --> 01:21:56,619
+Q noktalarını keseceğim, tamam.
+
+517
+01:21:57,979 --> 01:22:03,059
+Öyle ki, P ile Q arasından uzaklık ne yapacak? D'yi açmayacak.
+
+518
+01:22:03,819 --> 01:22:06,619
+P ile Q uzaklığa ne yapacak? D'yi açmayacak.
+
+519
+01:22:12,595 --> 01:22:19,895
+Dolayısıyla o şeyin içerisinde kibir, ne denir, yuvar edilmiş, top tutmuştu yani, mas sınırlar, gayet değiştiriyorlar falan.
+
+520
+01:22:20,716 --> 01:22:21,995
+Bunu açık kıvara görüyorsunuz.
+
+521
+01:22:23,935 --> 01:22:25,315
+Açık kıvara yuvar, yuvar da küver.
+
+522
+01:22:30,515 --> 01:22:42,515
+Toplarımızdan. Eğer bu, kısa olursa, yani, şöylet küçük eşli olursa, kapalı oluyor. Şöylet küçük eşli. Şöylet küçük eşli. Şöyletin kapalı oluyor.
+
+523
+01:22:49,395 --> 01:22:52,275
+Sadece PQ'ye eşitlediğimiz zaman siz sınır noktalarınız.
+
+524
+01:23:23,028 --> 01:23:25,808
+Şimdi iki değişkenli fonksiyonları da birleştirelim.
+
+525
+01:23:46,036 --> 01:23:54,036
+Şimdi arkadaşlar, zaten teşkilin fonksiyonları, yani y eşittir, fx fonksiyonları, mesela herhangi bir noktada limiti düştüğümüz zaman,
+
+526
+01:23:56,036 --> 01:24:00,036
+diyelim ki bunun ise tamam arakları var değil mi, belli arakları var.
+
+527
+01:24:02,036 --> 01:24:10,036
+Bu araktaki bir noktada kimizin üstündüğümüz zaman, şuna bakıyoruz yani, limit x, x, y, y, mesela değil mi?
+
+528
+01:24:10,771 --> 01:24:19,271
+fx fonksiyonun limitinin d olduğunu söyleyebiliriz. Şimdi bir defa, bu x'i bununla okuyorsan, biz iki türlü yaklaşım vardı. Bir sağdan, bir soldan yaklaşım vardı.
+
+529
+01:24:20,271 --> 01:24:32,271
+Zorası x, x sıfıra sağdan giderken fonksiyonun limiti eşitliği ile bu değişikliği ile fonksiyonun soldan limiti değil mi? x, x sıfıra soldan giderken şöyle bir diyoruz.
+
+530
+01:24:32,971 --> 01:24:36,072
+fx'ini bir diyoruz. Bu bunu sağlıyor. Karşı bak.
+
+531
+01:24:40,627 --> 01:24:55,827
+Tadamensu'da 2. Ancak şimdi bizden tanıştığımız zaman, eteşitir, eteşitir gibi bir iltiliye şirketli fonksiyon aldığımız zaman, fonksiyonun belli bir bölge özelliğinden tanımlı olduğunu bahsediyoruz da, o noktadaki yani tanımlı olmadığı noktaya tabii ki.
+
+532
+01:24:57,527 --> 01:25:05,827
+Diyelim ki veriliği bir teböge eskisi, açık teböge. Açık yata kalabilir. Bir, herhangi bir x0 noktaya bir metin var olduğu şey.
+
+533
+01:25:06,868 --> 01:25:09,208
+x0, 6 bizim x0, x0 olacak.
+
+534
+01:25:10,347 --> 01:25:10,668
+Şöyle.
+
+535
+01:25:13,368 --> 01:25:15,328
+Şimdi bu noktaya...
+
+536
+01:25:15,328 --> 01:25:16,788
+Şöyle bir daha geldim arkadaşlar.
+
+537
+01:25:17,408 --> 01:25:18,248
+Devir kesimler.
+
+538
+01:25:18,248 --> 01:25:19,548
+Sizinlikle olmadı.
+
+539
+01:25:20,988 --> 01:25:21,927
+Tabii bir de bize.
+
+540
+01:25:32,435 --> 01:25:37,315
+Fonksiyonu, belli bir P0, X0, Y0 değil.
+
+541
+01:25:43,699 --> 01:26:09,699
+Bu noktası nedir? Yaklaşım yapmamız lazım. Bu noktadaki limitini inceleyebilmemiz için yani limit, böyle bir fonksiyon verildiyle limit, xx0'a, yy0'a yaklaşıkça fxf fonksiyonunun limitinden, limiti ne zaman, ne anlıyoruz değil mi? Dediğim için.
+
+542
+01:26:12,243 --> 01:26:19,243
+Şimdi bunu nasıl kanıtlayabiliriz? Bir defa fonksiyonun bu noktadaki limitini söyleyebiliriz için,
+
+543
+01:26:19,243 --> 01:26:27,243
+bütün, nerede yaklaşacak yaklaşalım, bütün limitlerin ayrılması lazım eğer tek teşkendeki mantığı kullanırsak değil.
+
+544
+01:26:27,243 --> 01:26:38,891
+O yüzden bu mümkün değil. Neden mümkün değil? Çünkü böyle bir noktaya düzlem değer değil mi? Sonsuz yönde, yok. Şimdi ne var bizim? Yani 0,2,2,2 açıyla düşünüyoruz.
+
+545
+01:26:41,235 --> 01:26:52,636
+Her yönde yaklaşım var. Ve bu yaklaşımdan bütün limitlerin aynı olduğunu göstermekleri mümkün değildir. O yüzden buna net bir editur almaya çalışır, tanımımı vermek lazım.
+
+546
+01:26:52,636 --> 01:27:05,235
+Bu yönde ne olur? İki farklı yaklaşım yaparsanız, limitler farklı çıkar, o zaman da siz limit yok aynı olsun. Yani çift költesi diyoruz ben değil mi? Bu yönde yapabiliriz.
+
+547
+01:27:05,811 --> 01:27:13,971
+Dolayısıyla düzlemdeki bir noktada ikile ikili fonksiyonunun belikini bulmak, evet oldukça zor bir işler. İnflans değerine doğru bir işler.
+
+548
+01:27:14,931 --> 01:27:16,252
+O halde şu tanımı yapalım.
+
+549
+01:27:18,832 --> 01:27:20,652
+E-repsiyon pozisyon sayısına karşılık.
+
+550
+01:27:29,555 --> 01:27:38,636
+f'nin tanık kümesindeki her x'e noktası için, ona df dedim, df dedi ki, artık onu tanıkması olduğunu biliyoruz.
+
+551
+01:27:40,175 --> 01:27:53,095
+Her x'i için, şuna bakacağız, 0 küçük, şu yakışma yapacağız, x-x'in 0 karesi, artı y-x'in 0 karesi.
+
+552
+01:27:54,895 --> 01:27:55,475
+Bunun kare kısmı.
+
+553
+01:27:56,020 --> 01:27:57,740
+Küçük ne diyelim? Delta.
+
+554
+01:28:00,780 --> 01:28:02,000
+Evet, daha belediyeyim.
+
+555
+01:28:02,180 --> 01:28:03,140
+Bulmamız gereken bir ser.
+
+556
+01:28:04,140 --> 01:28:05,140
+Olduğu yerde...
+
+557
+01:28:09,939 --> 01:28:17,339
+fx'i, x'i, ona istediği bir şey. Küçük fx'i bu.
+
+558
+01:28:28,595 --> 01:28:29,876
+C'ye eksi L.
+
+559
+01:28:30,415 --> 01:28:31,695
+Mutlaka de küçük ödü.
+
+560
+01:28:31,956 --> 01:28:32,136
+Evet.
+
+561
+01:28:33,136 --> 01:28:33,835
+Oca şekilde
+
+562
+01:28:38,996 --> 01:28:40,896
+Bir de ete de a post-saysa.
+
+563
+01:28:49,811 --> 01:28:51,051
+bulunabilirse
+
+564
+01:28:57,395 --> 01:29:02,895
+X'ye noktası, X0'ya 0 yaklaşırken, F fonksiyonunun lelibitine yaklaşırız.
+
+565
+01:29:05,636 --> 01:29:16,595
+O zaman X'ye diyelim, şöyle yaklaşırken, X0'ya 0'yken, Fx'ye fonksiyonu da şöyle lelibitine yaklaşırız.
+
+566
+01:29:20,372 --> 01:29:21,311
+Şur, bir gün.
+
+567
+01:29:29,908 --> 01:29:30,628
+yapacaktım.
+
+568
+01:29:33,488 --> 01:29:33,807
+Şöyle.
+
+569
+01:29:35,248 --> 01:29:35,988
+Yaklaşımıyla.
+
+570
+01:29:36,188 --> 01:29:37,868
+Tamam. Bu limtanın. Etkisizliğimi
+
+571
+01:29:37,868 --> 01:29:39,668
+şu ifade gösteremem lazım.
+
+572
+01:29:39,768 --> 01:29:41,648
+Bu buna. Şu ifade
+
+573
+01:29:41,648 --> 01:29:41,887
+buna.
+
+574
+01:29:44,028 --> 01:29:45,568
+Deniz.
+
+575
+01:29:47,188 --> 01:29:48,088
+Bir.
+
+576
+01:29:48,248 --> 01:29:48,608
+Deniz.
+
+577
+01:29:50,748 --> 01:29:51,048
+Tamam.
+
+578
+01:29:53,684 --> 01:30:07,404
+Demek ki, x0, y0, l1 dersi, yavaş çarptır bir komşunum var ki, yola yaklaşımdaki hangi yaklaşımda alırsa kalalım, fx, y'le o l olacak serilerden takip edelim, bu başta aldığımız f-10 sayısı başta.
+
+579
+01:30:07,543 --> 01:30:11,264
+Takip edelim, dediğim gibi, mukayeseci kısa yaslaması çok zor.
+
+580
+01:30:12,944 --> 01:30:16,584
+Boydan boyu, çuyu, katak gibi, bazen böyle, bazen tek türü de olabilir.
+
+581
+01:30:19,524 --> 01:30:20,984
+Şöyle yazarız, ümit.
+
+582
+01:30:22,228 --> 01:30:28,747
+x, y, x, 0, y, 0 derken, eşittir.
+
+583
+01:30:29,067 --> 01:30:29,768
+Tabii şu da eşittir.
+
+584
+01:30:35,412 --> 01:30:37,612
+eşitleriyle çekilebilir.
+
+585
+01:30:48,692 --> 01:30:49,692
+Kötü müşterin.
+
+586
+01:31:14,899 --> 01:31:27,899
+Tek çizgi fonksiyonu atan sabitin türevi her zaman sabitin türevi, sabitin sabitin fonksiyonu, limiti hangi noktaya olsun o zaman yine kendisi verir değil.
+
+587
+01:31:28,899 --> 01:31:33,899
+Dolayısıyla sabit fonksiyon için bu kıyas ne değil, çok bilhami gibi genelleme yerleşti.
+
+588
+01:31:34,899 --> 01:31:37,899
+Ama mesela fx'i şöyle x olarak alalım.
+
+589
+01:31:43,347 --> 01:31:56,507
+Olamaz mı? İç zaman bir kereçteyip düşünüyoruz değil mi? Z eşitir x. Z eşitir x düz demedim artık. Baktığımız zaman nerede? X, Y, Z kodinasyonlarında. Z eşitir x düz demedir.
+
+590
+01:32:05,108 --> 01:32:27,448
+Bunun mesela herhangi bir noktadaki limiti, yani y 0, y zaten serdef, burada y yok. Böyle sadece x'e bağlı. Limit x, y, x 0, y 0'a giderken, x koordinatı bu değiştirme olur. x 0. Yani limitimiz aslında bu da nedir? x 0 kadındır.
+
+591
+01:32:29,888 --> 01:32:31,667
+Bunun gerçekten doğruluğunun,
+
+592
+01:32:32,083 --> 01:32:36,304
+Yukarıdaki fareyle, nasıl gösterir, tanıma biraz gözünün olsa.
+
+593
+01:32:38,804 --> 01:32:40,363
+Diye, hepsi o pozitif verirsin.
+
+594
+01:32:45,011 --> 01:32:47,611
+Böyle bir delta, bunun alınmı lazım ki.
+
+595
+01:32:49,611 --> 01:32:53,011
+Mesela delta'yı eşittir, eftör seçelim.
+
+596
+01:32:54,611 --> 01:32:56,211
+Acaba bunu sağlamak.
+
+597
+01:32:58,011 --> 01:33:06,211
+Başka sıfır küçük, x eksi x sıfırın karesi artı, y eksi y sıfırın karesi.
+
+598
+01:33:09,844 --> 01:33:18,443
+Bu da x0, y0 siz bu zaman sabitliğiniz olsun ama biz hiç önemli değil. Küçük delta eşitir yani eşitir önemi bu seçimde.
+
+599
+01:33:22,355 --> 01:33:26,355
+Bu neye yol açar? Ona bakmamızda fayda var değil.
+
+600
+01:33:27,956 --> 01:33:36,355
+Bir defa bu toplamın karesi bundan küçükse, yurtdurundan, şu tek başına hayal bir küçük olur.
+
+601
+01:33:36,355 --> 01:33:40,355
+x, x, x0'ın karesi. Çünkü y bağlı değil.
+
+602
+01:33:40,355 --> 01:33:47,019
+Ondan bağlı, sadece x0'a bağlı olduğu için, bu bizim için daha değer dolayı.
+
+603
+01:33:51,507 --> 01:34:02,827
+Bu da ne demek? Mutlak değerinin, pardon, kalenin, kalenin, kalenin mutlak değerini, x, x, x, 0, mutlak değeri demek. Bu, bu demek.
+
+604
+01:34:08,051 --> 01:34:11,951
+Demek ki x eksi sıfır küçük epsilon ke? Neye geldik?
+
+605
+01:34:13,211 --> 01:34:18,051
+F x'ye eksi kim? x sıfır küçük epsilon.
+
+606
+01:34:23,475 --> 01:34:34,155
+fx'emiz nerede? fx'emiz x sadece değil mi? xx, x0, küçük epsilon da bu mudur? fx'emiz bu x'te. x'e'nin fx'e'na bölünür küçük epsilon.
+
+607
+01:34:35,195 --> 01:34:42,115
+Demek ki aradığım bir şey aslında, gerçekten bu ifade, yani köklü ifade, delta'nın küçük olduğu yerde fx'e'nin x0 ne yapacaktır?
+
+608
+01:34:42,835 --> 01:34:44,036
+Eptom'dan küçük kalacaktır.
+
+609
+01:34:45,115 --> 01:34:49,475
+Bir şey diyeyim, yani, şöyle,
+
+610
+01:34:50,996 --> 01:35:08,172
+x x x 0 kare artı y eksi y 0 kare
+
+611
+01:35:11,604 --> 01:35:16,424
+Eptisi eksi, iki sıvıfı bırakır. Her zaman epsinin küçük kaldırır.
+
+612
+01:35:24,819 --> 01:35:25,119
+Evet.
+
+613
+01:35:29,300 --> 01:35:33,579
+Yani bu aslında limitrik gerçekten fonksiyonun x0 olduğunu söyler.
+
+614
+01:35:56,724 --> 01:35:59,264
+Şöyle bir kontrol ettim, yakınsak, bir sade edelim. Tamam mı?
+
+615
+01:35:59,984 --> 01:36:01,283
+Şimdi, kurallarını vereceğim.
+
+616
+01:45:52,659 --> 01:45:54,260
+Peki, devam edelim arkadaşlar, neyse.
+
+617
+01:45:56,639 --> 01:45:59,360
+Demek ki, ne olarak?
+
+618
+01:46:00,219 --> 01:46:02,819
+Fikir olarak, iki teşkilin fonksiyonlarıyla bir tıkartan bu.
+
+619
+01:46:04,279 --> 01:46:08,619
+Şimdi benzerliğim bir tık kuralları, iki teşkilin olduğu gibi, burada da aynı şekilde var.
+
+620
+01:46:18,804 --> 01:46:23,603
+Çünkü, L, M, V, K sayılar olsun, küçük K.
+
+621
+01:46:25,603 --> 01:46:26,844
+R sayılar.
+
+622
+01:46:31,155 --> 01:46:41,655
+Ve üstelik de, iki fonksiyonumuz olsun, bir etiksiyel fonksiyonumuzun, bunun hem x0, y0'daki,
+
+623
+01:46:47,572 --> 01:47:05,051
+limiti L olsun. Ve aynı noktada, x'ye, yani 0, 0'a giderken, x'e 0, y'ye 0'a giderken, tabii 0, 0 kolay açıklıyor de, o da GX'ye olsun, başka bir fonksiyonlar. Bu da M olsun.
+
+624
+01:47:07,451 --> 01:47:13,871
+L, M, K, L'ye sayı olmak üzere, bunların göz önüne alalım. O zaman 1.
+
+625
+01:47:15,123 --> 01:47:30,884
+Kolayca toplam kural hemen geçerli. Limit, fxy artı gxy eşittir, diyelim, l artı ne yazalım, dümün taktadan için.
+
+626
+01:47:33,623 --> 01:47:34,724
+xy
+
+627
+01:47:38,931 --> 01:47:42,332
+x'ı fülyesi kaydıyken yaklaşık.
+
+628
+01:47:44,131 --> 01:47:51,131
+x'ı fülyesi bulatırsak yaklaşıkken, fx'ı artı x'ı limiti eşittir.
+
+629
+01:47:51,371 --> 01:47:55,131
+f'in limiti artı gelin limiti de bulmasında. Bu anlamda.
+
+630
+01:47:56,811 --> 01:48:01,531
+Aynı şekilde fark kuralı var. Farkı yazmayalım, ona kısadan gösterir.
+
+631
+01:48:01,851 --> 01:48:05,131
+Çarpım kuralı, mesela sabitre çarpımda f'in limit.
+
+632
+01:48:05,395 --> 01:48:18,395
+K çarpı fx y dersek, aynı nokta bu iş de K çarpı ile olur. 3 açıdaki bir şeyden ben yazıyorum, fonları yazın. Limit fx y çarpı x y.
+
+633
+01:48:25,524 --> 01:48:44,664
+Eşittir, L çarpı M. Hatta bölüm için, Fx, y bölü tabaydan limiti sıfırdan farklı olmak hoşbuğuyla. Bu değiştir, L bölü M. Burada M farklı sıfır diyebilirim.
+
+634
+01:48:45,584 --> 01:48:51,703
+Hepsini x, y, x, 0, y, 0, y, k. Tamam mı? Hepsini öyledim.
+
+635
+01:48:59,188 --> 01:49:01,927
+Çapma kuranı, bölüm kuranı, kuvvet kuranı verebiliriz.
+
+636
+01:49:03,507 --> 01:49:05,048
+5, hemen şuraya yazalım.
+
+637
+01:49:06,548 --> 01:49:09,468
+Bimit x'e sıfır da gireken fx'e'nin eninci kuvveti.
+
+638
+01:49:11,648 --> 01:49:12,488
+Bimit'inin
+
+639
+01:49:12,488 --> 01:49:17,468
+Tamam, eninci kuvveti, eşitliği derece.
+
+640
+01:49:26,515 --> 01:49:29,195
+Yani bir mesin, da gelenekte burada, tuğun çıstayla kapatıyor.
+
+641
+01:49:29,195 --> 01:49:31,015
+Değil mi?
+
+642
+01:49:46,804 --> 01:49:54,804
+Bir de kök kuralım. 6. Limit. 1 bölü N diyelim. En kök diyelim.
+
+643
+01:49:54,804 --> 01:49:57,804
+Etikisi yani.
+
+644
+01:49:57,804 --> 01:50:06,804
+Bu dersi L üzeri 1 bölü R ya da N kök.
+
+645
+01:50:06,804 --> 01:50:11,804
+Yani L üzeri 1 bölü R.
+
+646
+01:50:24,435 --> 01:50:26,335
+x'ye x'ı fız ve sifreyle.
+
+647
+01:50:32,275 --> 01:50:32,775
+Hepsini.
+
+648
+01:50:35,595 --> 01:50:38,895
+Burada özellikle n'in x'te de n pozitif tam sayı.
+
+649
+01:50:41,675 --> 01:50:43,996
+Pozitif tam sayı.
+
+650
+01:50:45,376 --> 01:50:46,876
+Burada n pozitif tam sayı.
+
+651
+01:50:49,796 --> 01:50:55,655
+Özellikle n çift ise bir de n'in içerdeki yani b ifadesinin pozitif olması olabilir.
+
+652
+01:50:57,655 --> 01:50:59,275
+n çift ise
+
+653
+01:51:01,716 --> 01:51:03,376
+Ne büyük bir sıfır kalıcıdır.
+
+654
+01:51:08,851 --> 01:51:09,851
+Öyle de yapıyorlar.
+
+655
+01:51:11,031 --> 01:51:15,912
+Şu birincide sadece toplamın fark yerini yazabilirsiniz.
+
+656
+01:51:16,051 --> 01:51:17,752
+X koyduğunuz zaman da aynı şey getirdik.
+
+657
+01:51:17,752 --> 01:51:19,671
+Fark yeri X koyduğunuz zaman da geçer.
+
+658
+01:56:37,140 --> 01:56:37,720
+Evet.
+
+659
+01:56:58,707 --> 01:56:59,247
+Çak.
+
+660
+01:57:04,595 --> 01:57:05,595
+ve sütupak edilmiş.
+
+661
+01:57:34,260 --> 01:57:37,979
+Demek ki da almış.
+
+662
+01:58:04,627 --> 01:58:16,567
+Şimdi özellikle rasyonel fonksiyonların, iki değişkenin de tabii rasyonel fonksiyonları olabilir değil mi? X, Y, Y'ye, konu var.
+
+663
+01:58:16,567 --> 01:58:24,067
+Özellikle paydanın, verilen notu da sıfırdan farklı olması durumda neyi söz konusunda bir mittele söz konusu var.
+
+664
+01:58:28,340 --> 01:58:29,640
+Başka bir seriler geçeceğiz.
+
+665
+01:58:30,640 --> 01:58:32,020
+Şimdi şimdi denge değiştirelim.
+
+666
+01:58:33,860 --> 01:58:34,840
+Ağzı diye bir örnek.
+
+667
+01:58:39,315 --> 01:58:45,655
+Mesela limit x'e 0'e giderken
+
+668
+01:58:58,260 --> 01:59:03,800
+Kimmiş x eksi x ye, artı 3.
+
+669
+01:59:07,859 --> 01:59:12,119
+Bölü x kare ye, artı 5 x ye,
+
+670
+01:59:15,956 --> 01:59:20,175
+Payday 0'dan farklıysa, değil mi?
+
+671
+01:59:21,316 --> 01:59:24,796
+X 0 olduğu zaman payday 0'dan farklı. Demek ki bunun için bir limit durumu var.
+
+672
+01:59:25,775 --> 01:59:27,355
+Direkler nedir? Tanrı oldu 7.
+
+673
+01:59:28,155 --> 01:59:29,976
+Bildiğiniz gibi direklerine koyup yazıyoruz.
+
+674
+01:59:29,976 --> 01:59:41,456
+0, x'i 0 çarpı 1, artı 3 bölü, 0'ın karesi çarpı 1, öyle alalım.
+
+675
+01:59:43,764 --> 01:59:50,324
+1, artı 5 çarpı 0 çarpı 1, eksi, eksi birin küpü.
+
+676
+01:59:52,564 --> 02:00:00,184
+Yukarıda 3 gelecektir. 3 bölü, eksi birin küpü, eksi bir, önünde eksi var, artı bir olur, demek ki sonuç.
+
+677
+02:00:01,744 --> 02:00:04,123
+Bir dakika, artı birinden de var.
+
+678
+02:00:05,404 --> 02:00:09,104
+Birin küpü olacak bu, tamam mı? Eşitir bir, doğasıyla 3.
+
+679
+02:00:10,384 --> 02:00:10,863
+Eksi 3.
+
+680
+02:00:12,083 --> 02:00:13,804
+Şuradık, sürede sesimle, yakınsak.
+
+681
+02:00:26,323 --> 02:00:29,343
+Demek Tanrı'nın oğluyunu altında dileklerine koyup yazıyoruz.
+
+682
+02:00:30,304 --> 02:00:37,343
+Başka bir örnek, mesela bazen bizler işlemler yaparak hani, XCX00'a ederken,
+
+683
+02:00:41,716 --> 02:00:46,076
+Ne bileyim, eşlerinde çarpak, bilmek yani testi, bakmabiliyor.
+
+684
+02:00:46,836 --> 02:00:48,076
+Bir şey bize doğru.
+
+685
+02:00:48,076 --> 02:00:59,716
+Ölük kök x, eksi köke, paydayı mesela paydayı rasyonel değil, paydayı rasyonel şüme yaparak ne yapabilir?
+
+686
+02:01:04,659 --> 02:01:07,399
+Mesela 0-0 koyduğumuzda 0-1-0 geliyor.
+
+687
+02:01:11,123 --> 02:01:17,123
+Bu tek değişken olmadığı için burada, yani, türev ve katlı alanda, kutaklığa falan çalışmaz. O zaman ne yapacağız arkadaşlar?
+
+688
+02:01:17,123 --> 02:01:27,123
+Mesela işte, faydanın tersiyle, yani kök x, y ile çarpıp böyle. Yukarıda x parnezimde aslında x, y olur.
+
+689
+02:01:27,123 --> 02:01:34,123
+İki türlü söz konusu olabilir. Bu da şöyle, kök x, eksi kök y.
+
+690
+02:01:35,444 --> 02:01:39,844
+Çapalarca şu x x senin kök x eksiye kök x artı ne olduğunu biliyoruz biz.
+
+691
+02:01:42,264 --> 02:01:54,324
+Eşitir limit x çarpı kök x artı kök y çarpı kök x eksi kök y.
+
+692
+02:01:55,724 --> 02:01:56,344
+Doğru olmaz mı?
+
+693
+02:01:58,804 --> 02:02:00,344
+Kök x x geldi.
+
+694
+02:02:01,684 --> 02:02:07,404
+Bunu da bunu yapacak, kök, kök, kök çarpımda, x'i, olanlarla mutlaka ne yapacak, birbirini götürecektir.
+
+695
+02:02:28,847 --> 02:02:33,568
+Köpük saati köpük ifade çarptığınız zaman da benzer şeyde zaten görüşürüz.
+
+696
+02:02:40,307 --> 02:02:42,628
+Taylor X, X, X, Y'dir. Bu arada düşünüyorum.
+
+697
+02:02:43,467 --> 02:02:49,128
+Yani o X, X, Y'nin ilk kare farklı bir açılışını yüzünden yaptık.
+
+698
+02:03:12,212 --> 02:03:17,212
+Şimdi mesela bu, tabi delta S yöntemini kullanarak, bu limiti bulmak çok zor.
+
+699
+02:03:17,212 --> 02:03:28,212
+Dediğim gibi ama, yani bulmayacak bazı cepsi yöntemleri de bulmamıza zor olmayabilir. Hemen. Bir örnekte ona yapalım mesela.
+
+700
+02:03:45,652 --> 02:03:48,731
+Limitin yoktuğu için çift protesto edeceğiz.
+
+701
+02:03:50,252 --> 02:03:53,112
+Peki. En azından bunu vermiş olmamız gerekir.
+
+702
+02:03:55,371 --> 02:03:57,072
+Bir şey kontrol edelim.
+
+703
+02:04:12,851 --> 02:04:19,627
+İlginçler, katlı
+
+704
+02:04:23,444 --> 02:04:29,984
+Evet, yani bu hafta söyleyeceğiz.
+
+705
+02:04:31,064 --> 02:04:32,324
+İki kolorunu çıkacağız.
+
+706
+02:04:34,044 --> 02:04:38,204
+Peki, örnek.
+
+707
+02:04:40,884 --> 02:04:41,484
+Varsayalım.
+
+708
+02:04:46,260 --> 02:04:47,659
+x'i sıfır sıfır ederek,
+
+709
+02:04:53,844 --> 02:04:54,884
+4x yakan edildi.
+
+710
+02:04:58,676 --> 02:05:00,676
+x²'ye kadar.
+
+711
+02:05:01,676 --> 02:05:04,676
+Fonksiyon bir de sıfır sıfır da tamam değil değil mi?
+
+712
+02:05:05,676 --> 02:05:09,676
+Yani bunu f-sef, fonksiyon...
+
+713
+02:05:10,676 --> 02:05:13,676
+Bir dakika bunu şey yapabilir mi? Fars ettim.
+
+714
+02:05:13,676 --> 02:05:14,676
+Eğer başla.
+
+715
+02:05:15,676 --> 02:05:16,676
+Limitini buluruz.
+
+716
+02:05:26,707 --> 02:05:40,427
+Bir defa, mesela, x-y-0 doğrusu boyunca yaklaşıyorsak, fonksiyonun değerinin 0 olduğunu gördüm.
+
+717
+02:05:40,427 --> 02:05:43,948
+Şimdi pi direkt 0 olacak, y-0 da farklı olduğu durumda olabilir.
+
+718
+02:05:44,868 --> 02:05:51,868
+y-0 boyunca kısma, yine aynı şekilde, x-farkı sıfır ama koşuldan, değer var.
+
+719
+02:05:53,300 --> 02:06:09,300
+Yani 0-0 yaklaştığında limit mevcut ise limitin değeri ne olmalı? 0 olmalı değil mi? Bunun için, ork olmadığını anlamak için limit tanımına bakar. Bunun bütün yaklaşımları ne yapmamız lazım? Bulmalısın şimdi.
+
+720
+02:06:10,300 --> 02:06:13,300
+Epsilon pozitif alalım.
+
+721
+02:06:17,460 --> 02:06:19,360
+ve Delta'yı bulmak istiyoruz.
+
+722
+02:06:25,939 --> 02:06:27,939
+Böyle bir delta var mı?
+
+723
+02:06:29,939 --> 02:06:31,939
+Açıda koşur, sağlama koşur.
+
+724
+02:06:32,939 --> 02:06:39,939
+0 küçük, 0 sıfır olduğu için değil mi? x kare eksiye at, bunu yazmanın. x eksi sıfırın karesi x kare olur.
+
+725
+02:06:39,939 --> 02:06:42,939
+Artı y eksi sıfırın y kare olur. O da bu.
+
+726
+02:06:43,939 --> 02:06:52,939
+Küçük delta iken, oğlu y'e de diyelim, fonksiyonun 4xy kare, bölü x kare artı y kare.
+
+727
+02:06:54,452 --> 02:07:03,952
+Eksi sıfır, limitin sıfır olmasını niye? Niye sıfırı nereden buldun? Aslında şöyle, eşli sıfır olduğunda bir şey diyebiliriz.
+
+728
+02:07:05,271 --> 02:07:06,572
+Dedim şimdi akıllı.
+
+729
+02:07:08,512 --> 02:07:10,452
+Muhafak mı böyle olsun, o önemli değil.
+
+730
+02:07:12,211 --> 02:07:13,492
+Küçük eksi olma değil mi?
+
+731
+02:07:15,092 --> 02:07:21,231
+Niye sıfırı bu, L'nin sıfır olması gerektiğini nereden görüyoruz? Mesela
+
+732
+02:07:21,811 --> 02:07:25,992
+x ekseni boyunca yaklaşırsak, x ekseni boyunca y sıfırda değil mi?
+
+733
+02:07:26,692 --> 02:07:28,531
+Dolayısıyla bu limit direkt sıfıra gider.
+
+734
+02:07:29,891 --> 02:07:35,492
+x sıfıra giderken, otomatik olarak y sıfırdan farklı olmak uçuyor tabii.
+
+735
+02:07:36,471 --> 02:07:38,231
+Limit sıfır olur.
+
+736
+02:07:38,971 --> 02:07:42,451
+Aynı şekilde y sıfır ederken de x farklı sıfır olmak uçuyor.
+
+737
+02:07:42,572 --> 02:07:43,531
+Ne limit sıfır olur?
+
+738
+02:07:43,591 --> 02:07:47,152
+Demek ki eğer limit varsa bu l'ye eşitir sıfır olmalı.
+
+739
+02:07:47,791 --> 02:07:48,811
+Değil mi? Her noktada.
+
+740
+02:07:49,300 --> 02:07:51,200
+O zaman bunu geri hale götürmemiz lazım.
+
+741
+02:07:52,600 --> 02:07:52,979
+Şurada.
+
+742
+02:07:54,760 --> 02:07:55,380
+Tamam arkadaşlar.
+
+743
+02:07:56,680 --> 02:07:59,039
+Şimdi baktığımız zaman ifademize,
+
+744
+02:08:00,399 --> 02:08:01,880
+burası bana neyi öneriyor?
+
+745
+02:08:04,780 --> 02:08:05,800
+Bunlar pozisyon zaten.
+
+746
+02:08:05,940 --> 02:08:14,780
+4 mutlak tere x, çarkı y kare, bölü, x kare artı y kare, küçük eş tiyonu bana önerildi.
+
+747
+02:08:15,979 --> 02:08:16,280
+Kolay.
+
+748
+02:08:17,235 --> 02:08:27,036
+Bir defa y kare her zaman x kare y kareden küçük olduğu için değil, bunu atarsak, yukarıdaki ifademizi büyütmüş oluruz.
+
+749
+02:08:28,476 --> 02:08:33,275
+Şöyle edelim, y kare küçük etir, x kare artı y kare olup,
+
+750
+02:08:35,695 --> 02:08:43,496
+4 x mutlak değer y kare bölü x kare artı y kare.
+
+751
+02:08:44,275 --> 02:08:46,275
+Küçük eşit değil mi? Öyle diyelim.
+
+752
+02:08:46,775 --> 02:08:49,275
+Ne diyelim? 4 çarpı x'i mutlak değer.
+
+753
+02:08:50,476 --> 02:08:52,476
+Yakınca daha küçük yönden.
+
+754
+02:08:54,275 --> 02:08:57,275
+Paydaki büyük değer atıyoruz. O aslında saatler büyümüşür.
+
+755
+02:09:04,595 --> 02:09:11,215
+Bakıma, y kare bölü x kare tepere küçük iski bir. Onu oradan da ne görelim? İfadeyi gezmemiz. Daha kolay olur.
+
+756
+02:09:13,215 --> 02:09:19,775
+Oysa, x'in mutlak değer ifadesi aslında, x kare tepere'nin kare tepeminden daha küçüktür değil mi? Dört katlı kalmak uçlu.
+
+757
+02:09:21,815 --> 02:09:23,215
+Daha küçüktürler olabilir.
+
+758
+02:09:28,340 --> 02:09:55,280
+Bakın biz neyi biliyoruz arkadaşlar? Baştan. Diyoruz ki x kare artı y kare, şunu sana şeyini alayım, kırmızı, yorlarla bir şeyine bak, şu ne? Bakın burada bunu yapalım değil mi? Diyoruz ki, bunun gerçekten küçük olduğu yerde, şu sağlanır diye. Bakın zaten bu sağlanması gereken ifadeyi güzel aldığımızda, direkt o ifadenin kendisini buldu diyeyim.
+
+759
+02:09:56,083 --> 02:10:08,363
+Şimdi bu küçük, stöpbis epsilon, 4 çarpı delta pardon, bu da küçük, ne zaman bu epsilon bize verir? Delta yerine epsilon bölü 4 alışsak değil mi?
+
+760
+02:10:09,243 --> 02:10:14,363
+İşte 4 çarpı epsilon bölü 4 alışsak, bu küçük epsilon yerine geçtirebiliriz.
+
+761
+02:10:15,483 --> 02:10:21,083
+Eğer ben delta'yı epsilon bölü 4 seçersem, bu ifadem ne de bu epsilon da küçük kalacak.
+
+762
+02:10:22,579 --> 02:10:23,919
+Kuru sağlıkmaya çalışıyorum.
+
+763
+02:10:26,919 --> 02:10:29,299
+Eğer dersayı ben ne seçmeliyim ki?
+
+764
+02:10:29,879 --> 02:10:32,279
+Bu efsone, seçtim bulduk, efsone bölüm.
+
+765
+02:10:33,119 --> 02:10:34,279
+Demek ki,
+
+766
+02:10:35,399 --> 02:10:40,079
+DT efsone bölümse 4 seçtim de, şıkkımız ifade koşulu sağlandığında,
+
+767
+02:10:41,219 --> 02:10:42,839
+ondan sonra bizim bu ifademiz,
+
+768
+02:10:43,376 --> 02:10:53,876
+eksi sıfır, küçük epsilon doyunu her zaman sağlar. Bu da bize ne söyler? Limitin aslında, gerçekten sıfır sıfır etlimitin, sıfır olduğunu bana söyler.
+
+769
+02:10:53,876 --> 02:11:01,976
+Bunu söyler. Çünkü burada L'yi sıfır aldık ya, sıfır olsa. Her verilen epsilon için bu, yani bu yedi kuruşu sağlar.
+
+770
+02:11:01,976 --> 02:11:05,876
+Ama biraz daha azı sınır için, o yüzden daha akışları geçireceğiz.
+
+771
+02:11:05,876 --> 02:11:09,876
+Tamam, arkadaşlar.
+
+772
+02:11:14,355 --> 02:11:15,336
+Başka bir şeye bakalım.
+
+773
+02:11:18,275 --> 02:11:19,355
+Anlatırsam.
+
+774
+02:11:20,096 --> 02:11:21,336
+Ve kendin sürekli tanımlı.
+
+775
+02:11:31,412 --> 02:11:38,051
+Tamam, şuraya sorun. Eğer fonksiyon tam aslında yani hepsinin diğer devrimi dersek yeterli olacak.
+
+776
+02:11:44,467 --> 02:11:57,587
+fx y, end limiti x y sıfır sıfır sıfır derken, x sıfır y sıfır derken sıfır derken sıfır derim ama, bu eşitli fonksiyon x sıfır y sıfırda bir değer ise,
+
+777
+02:12:00,547 --> 02:12:08,228
+ise f fonksiyonuna x sıfır y sıfırda sürekli olur.
+
+778
+02:12:20,884 --> 02:12:22,884
+x0 yedi noktası yedi.
+
+779
+02:12:24,384 --> 02:12:32,884
+Yani bir defa bu ne demektir? Bir defa sağdan ortadaki etik 0 yedi yazabiliyorsak, fonksiyonu bir defa x0 yedi tanımdığını buluyor.
+
+780
+02:12:32,884 --> 02:12:38,884
+Sol tarafta limiti yazıyorsak böyle bir değer varsa, sol tarafta fonksiyonun limiti o noktada mevcut.
+
+781
+02:12:38,884 --> 02:12:44,884
+Ve bu limit değeriyle fonksiyonu tanım oldu, tanım oldu der birbirine eşit. Demek ki bu üç kurşu oldu.
+
+782
+02:12:44,884 --> 02:12:46,859
+Bana zaten bu eşitlikle çıkıyorsun.
+
+783
+02:12:47,283 --> 02:12:50,283
+Bu durumda fonksiyonu eksiklidir noktada sürekli.
+
+784
+02:12:51,483 --> 02:12:57,283
+Yani fonksiyon eğer tam hükümesinin her noktasında sürekli ise o zaman, kısaca fonksiyonu sürekli.
+
+785
+02:13:01,268 --> 02:13:05,868
+Evet, tam üstesini.
+
+786
+02:13:18,676 --> 02:13:19,395
+Evet, güzel.
+
+787
+02:13:24,243 --> 02:13:26,023
+Of option, sürekli dizi.
+
+788
+02:13:40,340 --> 02:13:42,340
+Bir dakika, bir dakika, bir dakika, bir dakika, bir dakika.
+
+789
+02:13:49,235 --> 02:13:54,235
+Bir an önce 4x'ye kareyi aldık.
+
+790
+02:13:56,235 --> 02:13:58,235
+Şimdi başka bir fonksiyon var.
+
+791
+02:13:58,235 --> 02:14:00,235
+Aslında onu böyle tanımlayabiliriz.
+
+792
+02:14:03,235 --> 02:14:04,235
+Bakalım.
+
+793
+02:14:06,235 --> 02:14:10,235
+Bir önceki örnekte fx'ye fonksiyonumuzu şöyle alalım.
+
+794
+02:14:12,235 --> 02:14:15,235
+0-0'dan farklı olduğu yerde 4x'ye kare.
+
+795
+02:14:17,332 --> 02:14:19,332
+Böyle x karar diye kalıyor.
+
+796
+02:14:21,332 --> 02:14:24,332
+x, y, farkla 0, 0.
+
+797
+02:14:29,076 --> 02:14:39,576
+x'ye eşittir 0, 0 ise, bu bizim fonksiyonun değil 0'su, yani parçalı tanımlı fonksiyonu.
+
+798
+02:14:43,676 --> 02:14:53,376
+Şimdi fonksiyonumuz, nereden? 0, 0'da sürekli bir dönem alıyor. Daha doğrusu her rata 0, 0 için her ortada tanımlı oluyor.
+
+799
+02:14:55,828 --> 02:15:07,228
+Özellikle, belki bir adı yakın oldu ama, sıfır sıfır da sürekli midir? Aslında fonksiyonunu yaptık. Sürekli kalıp bu vakit.
+
+800
+02:15:07,228 --> 02:15:19,748
+Bir önceki örnekte fonksiyon sıfır sıfır da limitin sıfır olduğunu gördük. Limit değerine sıfır. Fonksiyonun sıfır sıfır da değerine sıfır.
+
+801
+02:15:27,699 --> 02:15:47,819
+Limit xy sıfır sıfıra gereken, değil mi? 4xy kare bölü, x kare altı y kare, bu eşittir, sıfır, bu değiştir, fonksiyonun sıfır sıfırsı bak değil. Çünkü sıfır sıfır istiyorsan fonksiyonu sıfırsı bak değil, sıfır sıfırsı bak değil.
+
+802
+02:15:53,619 --> 02:15:54,820
+Yani fonksiyonun tanımları.
+
+803
+02:15:56,500 --> 02:15:58,699
+Şunun biz tabii sıfır olduğunu gösterdik.
+
+804
+02:15:59,060 --> 02:16:00,320
+Bir önceki örnekte gösterdim.
+
+805
+02:16:03,380 --> 02:16:06,039
+Fonksiyonun sıfırdaki limitin sıfır sıfır olduğunu gösterdim.
+
+806
+02:16:06,199 --> 02:16:07,000
+Bu eşitlik de var.
+
+807
+02:16:08,020 --> 02:16:08,940
+O hal f nedir?
+
+808
+02:16:09,619 --> 02:16:11,140
+Özellikle sıfır sıfırda süreklidir.
+
+809
+02:16:27,572 --> 02:16:30,491
+ve, sınıfı, sınıfı, sınıfı, yakın.
+
+810
+02:16:51,924 --> 02:16:55,024
+Şimdi bir dönem limitin yoktu, için çift o testini vereceğim.
+
+811
+02:17:00,308 --> 02:17:02,788
+Çok başkası, Taylor'ın veri.
+
+812
+02:17:04,587 --> 02:17:08,188
+Dimit'in doktrum, yani Dimit'in meclis olmaması. Bunu göstereyim.
+
+813
+02:17:13,716 --> 02:17:15,372
+ve çift katlı
+
+814
+02:17:21,172 --> 02:17:30,060
+Bu ne demek ki, iki farklı yaklaşımlı yönden yaklaşsın zaman, eğer iki farklı sonuç buluyorsanız ama demek. Çünkü limit varsa tektir. Bir de babunun gözünü inanmaz.
+
+815
+02:17:36,915 --> 02:17:37,795
+Şöyle yazalım.
+
+816
+02:17:40,515 --> 02:17:43,355
+Eğer bir etkisiye fonksiyonunun
+
+817
+02:17:54,355 --> 02:17:56,855
+Tarım kümesindeki XT noktası
+
+818
+02:18:07,956 --> 02:18:09,076
+fonksiyon diyelim.
+
+819
+02:18:11,195 --> 02:18:12,855
+Tanım hükümesinde ilgisi noktası.
+
+820
+02:18:19,283 --> 02:18:21,043
+Mestim bir ekip sınır, sınır.
+
+821
+02:18:27,700 --> 02:18:30,920
+İki, baktık yok boyunca.
+
+822
+02:18:42,388 --> 02:18:45,948
+x0, y0'a, noktasını emin.
+
+823
+02:18:45,948 --> 02:18:46,448
+Teşekkürler.
+
+824
+02:18:53,363 --> 02:18:55,543
+Park limitleri, arz.
+
+825
+02:19:02,355 --> 02:19:09,896
+Farklı limitler, farklı limitler, fonksiyonunu, etikse fonksiyonunu, tanışmadan, sene tutarsam.
+
+826
+02:19:12,515 --> 02:19:16,175
+Farklı, çiyor boyunca eksibetler koşar geldi, değil mi?
+
+827
+02:19:17,135 --> 02:19:22,315
+Farklı limitler ortaya çıkıyorsa, farklı miktar bunu şöyle verin.
+
+828
+02:19:33,459 --> 02:19:34,459
+Limit yoktur.
+
+829
+02:19:35,700 --> 02:19:36,899
+Fonksiyonun
+
+830
+02:19:38,599 --> 02:19:40,099
+bu noktada limit yoktur.
+
+831
+02:19:41,759 --> 02:19:42,759
+Limit meclis değil.
+
+832
+02:19:53,556 --> 02:19:54,436
+Sözlerle limit yoktur.
+
+833
+02:19:56,015 --> 02:19:57,056
+Ama bizim kötü değil.
+
+834
+02:20:05,747 --> 02:20:07,747
+Bu nasıl bir soru?
+
+835
+02:20:09,747 --> 02:20:11,747
+Bunu çift sotezi yiyordu arkadaşlar.
+
+836
+02:20:18,291 --> 02:20:21,932
+Hemen bir örnek yapalım. Bu önlükle de bugünkü testimizi taşlanmış olalım.
+
+837
+02:20:26,963 --> 02:20:27,963
+Ne dedi o?
+
+838
+02:20:39,603 --> 02:20:50,804
+2x kareye bölüm, x'e 4 artı, y kare. Şimdi fonksiyon sıfır sıfır da tamamlı değil değil mi?
+
+839
+02:20:52,123 --> 02:20:55,304
+Bu da ne göstereceğiz? Fonksiyonun sıfır sıfır da limitli olmanı göstereceğiz.
+
+840
+02:20:56,923 --> 02:21:02,863
+Fonksiyonunun hatta sıfır sıfırdaki devarası, sıfır sıfırdaki limitli.
+
+841
+02:21:19,347 --> 02:21:25,168
+Bir defa fonksiyon F00'da, tanımlı bekleme.
+
+842
+02:21:30,131 --> 02:21:35,011
+Mesela y eşit x kare boyunca yaklaşsak, değil mi?
+
+843
+02:21:35,511 --> 02:21:37,131
+Hatta y eşit x kare boyunca.
+
+844
+02:21:38,491 --> 02:21:44,831
+Ama sıfır sıfırda limit baktığımız için sıfır sıfıra yaklaşan eğililerle mesela, yaklaşabilirsiniz, doğrularla yaklaşabilirsiniz.
+
+845
+02:21:46,271 --> 02:21:48,691
+Çünkü sonuçta sıfır sıfır dediğimiz burası.
+
+846
+02:21:51,871 --> 02:21:52,551
+Mesela
+
+847
+02:21:54,164 --> 02:21:59,283
+Kx kare dediğimiz, ifade edelim, K point, pardon böyle, mekaklost açtığınızda.
+
+848
+02:22:00,904 --> 02:22:03,044
+Bunun gibi evliler mesela yaklaşma yapalım mesela.
+
+849
+02:22:04,144 --> 02:22:04,984
+Üçlük evliler.
+
+850
+02:22:14,995 --> 02:22:17,775
+Şöyle, yakıştınız, bunaltılacak.
+
+851
+02:22:37,683 --> 02:22:47,683
+Nandar kaşımı yapacağız. K eşittir. K eşittir. K eşittir. Hepsi ojiden geçtiği için sıfır sıkıla karşıma olabiliyoruz.
+
+852
+02:22:47,683 --> 02:23:02,683
+Kaptıda bir saat. Dolayısıyla baktığımız zaman ifadeyi sapırsak, 2x kare çarpı y yerine kayıt kare yazarsak, k x kare bölüğü.
+
+853
+02:23:03,572 --> 02:23:21,252
+Burası x'e 4 artı, k kare a çarpı x'e 4. Bakın yukarısı 2k x'e 4 olur. Bölü, x'e 4 parçalıkta 1 artı k kare olur.
+
+854
+02:23:22,252 --> 02:23:26,152
+Şu x'e 4'te gider. Sonuç neye bağlı? Bakın k'ya bağlı bir sanat.
+
+855
+02:23:29,780 --> 02:23:38,580
+Öyle değil mi? Evet. Mesela k1 için, k2 için değil mi? k1 için x kare, k2 için 2x kare yaklaşmıştır.
+
+856
+02:23:38,580 --> 02:23:43,580
+Çünkü hepsi orşundan geçiyor, sıra sıra dönemden geçiyor. Ama yaklaşım yaptığımızda ne oluyor?
+
+857
+02:23:43,580 --> 02:23:50,780
+Her birinde farklı bir iş. Mesela 1 için farklı bir sayı, 2 için farklı bir sayı. Yani sonuçta olma nedir? K'ya bağlı bir sayı.
+
+858
+02:23:56,564 --> 02:23:57,564
+Ne yapacaktı?
+
+859
+02:23:57,564 --> 02:24:00,564
+Ne olacaksa onları tutuyor.
+
+860
+02:24:00,564 --> 02:24:04,564
+Dileklerden aynı sonucu yapabileceğin için yaklaşımımız net olacaktı.
+
+861
+02:24:04,564 --> 02:24:05,564
+Tek bir yaklaşım olacak.
+
+862
+02:24:05,564 --> 02:24:07,564
+Burada farklı yaklaşım.
+
+863
+02:24:09,564 --> 02:24:11,564
+Dolayısıyla k farklı olup,
+
+864
+02:24:13,564 --> 02:24:16,564
+k'nın farklı değerleri için,
+
+865
+02:24:17,564 --> 02:24:21,564
+farklı değerleri için,
+
+866
+02:24:21,564 --> 02:24:23,564
+farklı bir miktar.
+
+867
+02:24:27,092 --> 02:24:27,572
+Bun.
+
+868
+02:24:31,540 --> 02:24:45,540
+O halde çift noktası gereği nedir? Mesela iki tane gerekli durumda bir sürü noktaya. İki tane farklı değer verdiğim zaman, o yüzden geçen olarak iki farklı bir değer. Ama bunu yapar, fonksiyon bir dilim ve üç çoğunları biriktir.
+
+869
+02:24:46,540 --> 02:24:50,444
+Bu da, çift noktası gereği.
+
+870
+02:24:54,227 --> 02:24:54,948
+Testine göre,
+
+871
+02:24:57,268 --> 02:24:58,647
+tabi test gelmesi biraz çok,
+
+872
+02:24:58,887 --> 02:24:59,307
+geçiyorum.
+
+873
+02:25:00,687 --> 02:25:01,807
+Diz sıfır sıfır da,
+
+874
+02:25:03,268 --> 02:25:04,247
+müddet yok denedir.
+
+875
+02:25:08,020 --> 02:25:09,020
+Değil mi?
+
+876
+02:25:17,172 --> 02:25:25,152
+Sıvıstalim, komisyonun Sıvıstalim'in olmadığı anlamı taşıyor. Metin beş olmadığı anlamı.
+
+877
+02:25:35,219 --> 02:25:42,219
+Yani görünen akıl kısmı aşağıya kadar da anladık. Yarın, yarın ötürüyeceğiz.
+
+878
+02:25:42,219 --> 02:25:45,219
+Önce geçeceğim.
+
+879
+02:25:45,219 --> 02:25:54,219
+Yani çok değişkenleri, ikiden başka saddın fonksiyonu da belli şekilde göz önüne alabilir.
+
+880
+02:25:54,219 --> 02:26:00,219
+Tabii, ilk de iki değişkenleri söylememiz gereken şu olabilir.
+
+881
+02:26:01,268 --> 02:26:05,268
+İki sürekli fonksiyonun birleşkesini sürekli olarak söyleyelim.
+
+882
+02:26:07,268 --> 02:26:10,268
+Çok zamanı sıv sayı yok ama öyle.
+
+883
+02:26:11,268 --> 02:26:22,268
+Sonra ikiden değişken, fazla değişken fonksiyonlar veren altımızda, üç değişken, dört değişken fonksiyonlar veren altımızda, ondan da belli bir noktada sürekli teri ve seriler incinemeliyiz.
+
+884
+02:26:23,268 --> 02:26:28,268
+Yani bu iki değişken de gördüğümüz bütün şeyler diğer değişken fonksiyonlar için.
+
+885
+02:26:29,108 --> 02:26:31,108
+Kesinlikle geçen.
+
+886
+02:26:32,508 --> 02:26:38,108
+Tamam arkadaşlar, hemen bu konuyu, bu haftanın konusunu toparlamış olduk.
+
+887
+02:26:38,108 --> 02:26:41,108
+Bakın, amacımız teorisini verdik, uygulamasını tamamlayalım.
+
+888
+02:26:41,108 --> 02:26:43,108
+Yarınlar, bunlarla ben de.
+
+889
+02:26:43,108 --> 02:26:45,108
+Ne çıkacağız?
+
+890
+02:26:45,108 --> 02:26:51,108
+Ya bilmiyorum yani tabii, şimdi geçen hafta işte denemeyen 3 arkadaşımız vardı.
+
+891
+02:26:52,275 --> 02:26:58,275
+Yani gelip de gelmemek arasında bir şey yok. Yani hani gelmeyecek senin boş boşuna bakım değil. Ben burada dağılattım.
+
+892
+02:26:59,275 --> 02:27:05,275
+Çünkü bir sürü düzenek kuruyoruz. Bir kişiyi bir kişiye edeceksin.
+
+893
+02:27:07,275 --> 02:27:13,275
+O yüzden hani ben gelmeyi falan da demiyorum. Ama aradaki farkın olmadığını sadece söylüyorum.
+
+894
+02:27:26,995 --> 02:27:28,195
+Şöyle başlarımı bir çek edelim.
+
+895
+02:27:34,708 --> 02:27:36,648
+Yardım içeri, kutup yapalım.
+
+896
+02:27:59,572 --> 02:28:08,351
+Çiz at, ya da biraz at gibi düşündüğüm için çok da aşırı bir yazıya da düz dikkat etmiyorum ama,
+
+897
+02:28:09,432 --> 02:28:11,512
+bilmiyorum bunlar sizin direk yoktur.
+
+898
+02:28:13,652 --> 02:28:18,172
+Şurada kaybedecek bir yer var, eksiste de var, kaybedecek bir yer.
+
+899
+02:28:19,112 --> 02:28:21,211
+Belki bu yazıdanları kaybedebilirsiniz.
+
+900
+02:28:22,492 --> 02:28:23,952
+Bu da sizin için bir adımlaş olur.
+
+901
+02:28:26,131 --> 02:28:31,131
+Yani bu dizinin bir çantanın yaz konusunda kalan kısmını biraz şey yaptık.
+
+902
+02:28:32,131 --> 02:28:38,131
+Yani, işte, bir tane örnek yaptık.
+
+903
+02:28:52,147 --> 02:28:55,147
+Te de...
+
+904
+02:29:00,051 --> 02:29:03,171
+Kalın, polk bir.
+
+905
+02:29:10,260 --> 02:29:16,380
+Böyle bir uzunluk, bir ay bir uzunluk elde ediyoruz.
+
+906
+02:29:17,540 --> 02:29:22,260
+Sonra arkasından kısım türev ve katlı, kısım türev ve katlı, şöyle biz.
+
+907
+02:30:02,227 --> 02:30:04,768
+Çok değişkenli fonksiyonlar işlemi yaptık.
+
+908
+02:30:04,768 --> 02:30:06,268
+Biraz da kapatır da.
+
+909
+02:30:29,716 --> 02:30:31,956
+Tanım kinesi varmıyor.
+
+910
+02:30:31,956 --> 02:30:37,995
+Fonksiyon tanıması, tek bir iş.
+
+911
+02:30:37,995 --> 02:30:40,156
+Fonksiyon tanıması, uygulaması.
+
+912
+02:30:40,156 --> 02:30:42,156
+Tek bir işkenli ilgisi.
+
+913
+02:30:43,995 --> 02:30:46,716
+Fonksiyon tanıması, tek bir iş için örnekler veriyoruz.
+
+914
+02:30:46,716 --> 02:30:48,316
+İki işkenli ve üç işkenli için.
+
+915
+02:30:48,316 --> 02:30:49,316
+Önce üç tane.
+
+916
+02:30:50,116 --> 02:30:53,772
+İlk üç örnek, iki işkenli için. Sonra iki örnek, üç işkenli için.
+
+917
+02:30:54,355 --> 02:30:58,435
+tanımcılığına ve değerlendirmelerini beklemez. Tep değişken koordinat benzeriz.
+
+918
+02:31:03,860 --> 02:31:11,860
+Sonra iki değişkenli fonksiyonlar gözünden. Delikleri ayrıca el aldık. Bu da komşuluk kavramı tanımadık, açık konuluk kavramı tanımadık.
+
+919
+02:31:11,860 --> 02:31:13,860
+İş noktayı delik.
+
+920
+02:31:13,860 --> 02:31:18,860
+Ve her noktada iş noktadan kümeye denilmiştir. Açık kümeyindeki.
+
+921
+02:31:18,860 --> 02:31:25,860
+Birer eşliyen, kapalı kümeyi devamlı tümleyen olarak tanımadık. Tümleyen açık olan kümeyen kapalı kümeyindeki.
+
+922
+02:31:25,860 --> 02:31:30,860
+Ve ondan sonra sıkın noktayı, şu gördüğüm şekilde sıkın noktaya bir ilgi.
+
+923
+02:31:31,731 --> 02:31:35,131
+Bunlar tek tek yazılımın, bir detayını yazılacak.
+
+924
+02:31:36,131 --> 02:31:41,531
+Sonra sonra bakalım. Örnek vermiştim. Tam kinesi vermek için açık bir detay var.
+
+925
+02:31:43,131 --> 02:31:47,331
+Bölgenin sınırını düşündük, yani sabit çalışan bir daire içindeyiz.
+
+926
+02:31:47,331 --> 02:31:51,331
+Haps ediliyoruz ama sınırla da sınırlı kalan meleklerinde başlayalım.
+
+927
+02:31:54,579 --> 02:31:58,860
+Sonra bu da seviyesi, tavşıcısı, konuşması, yıkılardır.
+
+928
+02:32:00,700 --> 02:32:05,260
+İlileşkenin fonksiyonu, seviyeler, herküllerin, çiftliğinin seyitleri, önerilerin.
+
+929
+02:32:05,780 --> 02:32:08,700
+Bak, üç değişkenin daha çok farklı ortamda var.
+
+930
+02:32:09,400 --> 02:32:10,579
+Yüzeyler var, biliyorsunuz.
+
+931
+02:32:11,840 --> 02:32:13,220
+Sevim, yüzey görüyorsunuz.
+
+932
+02:32:18,644 --> 02:32:20,324
+Sonra limit kavramı da geldik.
+
+933
+02:32:20,324 --> 02:32:26,484
+Limit kavramı da bir tabi eskiden ama limit kavramı da şeritliği bu kadar gayret ediyoruz.
+
+934
+02:32:28,963 --> 02:32:30,783
+İşlemle tekleşmemek gibi kolay.
+
+935
+02:32:40,691 --> 02:32:43,131
+Burada bir epsilon-deltalı bir şey yaptık.
+
+936
+02:32:44,572 --> 02:32:45,572
+Tabii yaptık.
+
+937
+02:32:45,572 --> 02:32:48,171
+Bunun için ben önce genel aramadık.
+
+938
+02:32:49,691 --> 02:32:52,092
+Bu akitif ilişkilerin tabii eskidenin zor.
+
+939
+02:32:52,092 --> 02:32:59,611
+Çünkü bir haftadaki bir iki kısaltışmak için bütün yönde de yaklaşımın ayrı değerlerini istedim ki
+
+940
+02:33:00,371 --> 02:33:04,412
+sonuç yönlerden bulmak çok zor ama onun için belli bir tereler sağlaması lazım.
+
+941
+02:33:04,412 --> 02:33:05,851
+Böyle bir telefon ayı.
+
+942
+02:33:06,572 --> 02:33:07,971
+Eksyon-deltalı atan.
+
+943
+02:33:31,891 --> 02:33:33,511
+Evet, bunları müdebilirsinler.
+
+944
+02:33:38,260 --> 02:33:56,979
+Tamam mı arkadaşlar? Peki, son zamanım yoktur.
+
+945
+02:33:58,451 --> 02:34:07,572
+Güzel güzel, bunları geldiğiniz şu ana kadar bütün konular bol bol çalışın. Örnek diyorsun, başka başka kaynaklarda örnek diyorsun, internetten, kitaplardan, nereden buluyorsunuz, tamam.
+
+946
+02:34:08,451 --> 02:34:14,451
+Anlamadığını çözemeziniz ki bana, ne yaparız, olabiliriz, her türlü ulaşabilirsiniz, GDK'ine geri gittin, tamam mı?
+
+947
+02:34:14,451 --> 02:34:16,451
+Yani, bir yol.
+
+948
+02:34:16,451 --> 02:34:20,451
+Peki, kendinize iyi bakın, bir ayın görüşürüz.
+
+949
+02:34:20,451 --> 02:34:22,451
+Üçte.
