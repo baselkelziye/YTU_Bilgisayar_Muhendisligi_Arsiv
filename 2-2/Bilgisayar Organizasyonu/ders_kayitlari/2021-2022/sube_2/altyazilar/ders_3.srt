@@ -1,0 +1,3275 @@
+1
+00:03:07,635 --> 00:03:12,975
+Merhaba [öğrenci], sesim geliyor mu acaba? Önce onu bir check etmek için bir bakayım dedim.
+
+2
+00:08:05,908 --> 00:08:07,927
+Merhaba arkadaşlar. Sesim geliyor mu acaba?
+
+3
+00:08:09,128 --> 00:08:09,648
+Geliyor hocam.
+
+4
+00:08:10,408 --> 00:08:23,747
+Tamam. Öğleden önce yaptığım derste sesle ilgili ara ara problemler yaşadım. O yüzden sizden eğer ki sesle ilgili bir sorun varsa bana ders içerisinde söylemenizi rica edeceğim.
+
+5
+00:08:25,908 --> 00:08:32,567
+Genel olarak dersle ilgili sormak istediğiniz bir şey var mı? Birkaç kişi gelene kadar konuşabiliriz.
+
+6
+00:08:43,860 --> 00:09:07,860
+Geçtiğimiz derste aslında Filip Filoplarla ilgili bir yerde kalmıştık. Özetlemişti Filip Filopları. Onunla ilgili küçük bir uygulama yapmamız gerekirken o kısmı es geçmişiz. Onun için OBS'den bir 5 dakikalık video kesitini izlemenizi istemiştim. Ama izlemeyenler de burada çok rahat bir şekilde...
+
+7
+00:09:09,235 --> 00:09:14,115
+Şimdi yapacağımız, çözeceğimiz örnekleri takip edebilecekler. Onda da sorun olmayacak.
+
+8
+00:09:15,556 --> 00:09:24,115
+Bir soru geldi [öğrenci]'dan. Ödevler ne zaman verilecek? İki ödev olacak demiştiniz diye söylemiş.
+
+9
+00:09:31,604 --> 00:09:36,604
+Ders tanıtım formu üzerinde göstermiştik ama bir daha hemen hızlıca gösterebilirim.
+
+10
+00:09:37,764 --> 00:09:41,204
+Hocam 15 Nisan ödevinin teslim tarihi mi, veriliş tarihi mi olacak?
+
+11
+00:09:41,784 --> 00:09:42,884
+Veriliş tarihi olacak.
+
+12
+00:09:46,544 --> 00:09:48,644
+Görebiliyor musunuz? Bilmiyorum şu anda.
+
+13
+00:09:51,124 --> 00:09:51,944
+Gözüküyor hocam.
+
+14
+00:09:52,183 --> 00:10:13,464
+Ödeve daha aslında çok var. Şu an için ödev hakkında endişelenmenize gerek yok. Şu an yapmanız gereken şey aslında dersi takip etmek. Bugün saklayıcı sayıcılar ve ardışık lojik devreler biraz daha fazla konumuz var. Bunlar hakkında konuşacağız. Yine zamanı geldikçe devam edeceğiz. Bu arada şunun altını kesinlikle çizmek istiyorum.
+
+15
+00:10:14,067 --> 00:10:33,067
+Hala Mano ve Kime'nin chapter'larını takip ediyoruz. Yanlış hatırlamıyorsam 5. chapter'dayız şu anda. Dolayısıyla bizim bugün işleyeceğimiz şeyleri oradan da takip edebilirsiniz. Ve ekstra örnek isterseniz onlara bakabilirsiniz. Bu da bir hatırlatma olsun. Başka sorusu olan var mı acaba?
+
+16
+00:10:42,163 --> 00:10:45,743
+Hocam haftaya sınav var galiba değil mi? Kısa sınav yazmış.
+
+17
+00:10:46,104 --> 00:10:47,503
+Evet haftaya kısa sınav var.
+
+18
+00:10:50,104 --> 00:10:53,443
+Bu ilk üç haftanın konularından sorumluyuz değil mi hocam?
+
+19
+00:10:54,683 --> 00:11:02,644
+İlk üç hafta ve o gün ki istediğimiz konuda tabii doğal olarak derse geldiğiniz için onu da kapsayacak gibi düşünebiliriz.
+
+20
+00:11:03,884 --> 00:11:05,563
+Dersin hemen sonunda yapacaksınız değil mi?
+
+21
+00:11:05,563 --> 00:11:09,403
+Evet dersin son kısmında, son 30 dakikalık kısmında belki olacak.
+
+22
+00:11:09,940 --> 00:11:30,200
+[öğrenci] yazmış, OBS'den bize herhangi bir posta iletilmiyor demiş. Evet, onu unutmuşum. Ama dediğim gibi bugünkü çözeceğimiz soru zaten onu da kapsayacak. Bir problem yaşarsak oraya geri dönüş yapabiliriz. Vakit kaybetmeden derse hemen başlayalım. Çünkü bayağı bir yolumuz var.
+
+23
+00:11:31,604 --> 00:11:39,204
+Şimdi öncelikle kombinasyonel devre tasarımını zaten yapmıştık geçtiğimiz derslerde onları biliyoruz.
+
+24
+00:11:39,204 --> 00:11:47,484
+Ve aslında ardışıl devre tasarımına girmiştik. Ardışık, lojik devre tasarımı hatta, circuit demeyelim de işte lojik circuit diyelim.
+
+25
+00:11:48,052 --> 00:12:14,072
+Burada tek fark aslında kombinasyonel lojiye ek olarak bir de depolama elemanlarını kullanacağız. Bir giriş var ve depolama elemanından gelen bir giriş var. Bunları kullanarak bir çıkış üretiyoruz ve buradaki durumu bir sonraki işlem için feed ediyoruz içeri tekrar. Bir loopback ya da feedback gibi düşünebilirsiniz.
+
+26
+00:12:14,559 --> 00:12:20,559
+Tabii ki bu storage elemanları ne olabilir diye düşündüğümüzde flip-floplar olabileceğinizi düşünmüştük.
+
+27
+00:12:22,500 --> 00:12:29,740
+Örnek aklına gelen var mı? Yani sequential devre nasıl bir şey yapılabilir, uygulama yapılabilir?
+
+28
+00:12:30,919 --> 00:12:39,500
+Şu uygulamayı sequential circuit analiziyle yapabiliriz dediğiniz, artificial devre tasarımıyla yapabiliriz dediğiniz bir şey var mı?
+
+29
+00:12:43,731 --> 00:12:47,692
+Aklınıza gelmiyor olabilir. Hız ayarlama devresi olabilir tabii ki.
+
+30
+00:12:48,552 --> 00:12:56,731
+Kullanıcı burada bir hız set ediyor olabilir. Çıkışta bir hız var. Sonuçta buradaki durumu girişe adam yansıtıyor olabilir.
+
+31
+00:12:58,091 --> 00:13:06,271
+Veya biraz daha basit düşüncek olursak aslında mikro açılamcıların içerisindeki timer ya da sayıcı devreleri doğrudan bu.
+
+32
+00:13:06,676 --> 00:13:21,076
+Kapsamda geçiyor. Çünkü hatta onlarda çoğunlukla bir giriş de verilmeyebiliyor. Girişi sıfır verdiğinde bu adam otomatikmen her clockta 1, 2, 3, 4 diye çıkışı arttırması lazım.
+
+33
+00:13:22,676 --> 00:13:25,276
+Gibi bir şeyden bahsedebiliriz.
+
+34
+00:13:26,655 --> 00:13:29,276
+Şimdi hemen şu ekran paylaşımına geçeyim.
+
+35
+00:13:35,412 --> 00:13:58,652
+Bunlar hakkında konuşmuştuk. Şuraları hep geçmiştik yani. Kaldığımız nokta aslında registerlar öncesiydi. Yani bu da demek oluyor ki flip flopları gördük ama onlarla ilgili uygulama çözmedik. Bizim bu derste ilk kısmında yapmamız gereken şey bu flip flopları biraz daha iyi bir şekilde öğrenip uygulamaya geçmek.
+
+36
+00:13:59,028 --> 00:14:13,248
+Geçtiğimiz ders sonunda biz biliyoruz bunların filflopların ileri tanım bağlantıları. Dolayısıyla hangi durumdan ne geleceğini bunları elimizin altında bulunduğunu düşünelim.
+
+37
+00:14:14,292 --> 00:14:28,552
+Ve genellikle JK, T, D, D kullanarak biz işlemlerimizi devam ettireceğiz. Bunların çünkü ileritanın bağımsızlarını şu şekilde yazmıştık.
+
+38
+00:14:29,731 --> 00:14:33,372
+Çözeceğimiz sorularda zaten bunları tekrar yazabiliriz.
+
+39
+00:14:37,011 --> 00:14:43,692
+Az önce de gördüğümüz gibi aslında bir durumun bir sonraki duruma geri beslemesi söz konusu.
+
+40
+00:14:44,392 --> 00:14:50,392
+Dolayısıyla durumlar hakkında konuşuyorsak aklımıza durum diagramları gelmesi gerekiyor.
+
+41
+00:14:51,131 --> 00:14:54,091
+Durum diagramlarında hatırlayan var mı? Neler vardı?
+
+42
+00:14:55,692 --> 00:14:58,251
+State machine olarak geçen şeyler.
+
+43
+00:14:59,131 --> 00:15:00,271
+Mali ve Mor vardı.
+
+44
+00:15:00,271 --> 00:15:03,531
+Evet, Mali ve Mor makineleri vardı.
+
+45
+00:15:04,019 --> 00:15:19,680
+Meli makinesinde çıkış hem girişe hem de duruma bağlıydı. Ama mor makinesinde ise sadece duruma bağlı bir yapı söz konusuydu. Şimdi ikisi için de birer soru çözeceğiz. O yüzden daha iyi anlama söz konusu olacak.
+
+46
+00:15:32,532 --> 00:15:43,152
+Ardışı devreyi T-flipflop kullanarak tasarlayınız.
+
+47
+00:15:44,772 --> 00:15:50,572
+Tabii şu anda biz bilmiyoruz seri toplayıcı dediğimiz şey nasıl çalışıyor. Onların hepsinin tanımını yapacağız.
+
+48
+00:15:51,192 --> 00:15:59,412
+Seri toplayıcı aslında şöyle bir şey. Bir devreye sürekli X'ler ve Y'ler geliyor.
+
+49
+00:16:01,908 --> 00:16:11,807
+Bu ardışıl devre çalışıyor ve bunun sonrasında bir S çıktısı üretiyor. S biliyorsunuz aslında sonucu gösteriyor.
+
+50
+00:16:12,508 --> 00:16:21,067
+Ama daha önceden de bildiğimiz gibi Fleder'da vardı. Bu iki bitin toplamı sonrasında çıkış dışında bir de elde biti olabilir.
+
+51
+00:16:21,067 --> 00:16:26,067
+Dolayısıyla bu devre içerisinde elde bitini tekrar bir sonraki işlem için...
+
+52
+00:16:26,227 --> 00:16:29,607
+Geriye döndürmesini istiyoruz. Böyle bir beklentimiz var.
+
+53
+00:16:30,247 --> 00:16:36,028
+Tabii kutu içerisinde kaldığı için bunu böyle açık bir şekilde gösteremiyoruz.
+
+54
+00:16:36,647 --> 00:16:40,367
+Ama seri toplayıcı dediğimiz şeyde ilk anlamamız gereken şey şu olacak.
+
+55
+00:16:41,207 --> 00:16:45,907
+Ben X'in sıfırıncı bitini ve Y'nin sıfırıncı bitini sokacağım.
+
+56
+00:16:46,707 --> 00:16:49,407
+Burada S'nin sıfırıncı biti çıkacak.
+
+57
+00:16:51,956 --> 00:17:05,996
+X'in birinci biti, Y'nin birinci bitini sokacağım. Sonra S'nin sıfırı, S'nin birinci bitini elde edeceğim. Böyle arka arkaya bunun bir dizi şeklinde aslında devreye beslendiğini düşünün.
+
+58
+00:17:06,536 --> 00:17:15,756
+Ve sonuç olarak çıkışta da bunu böyle seri olarak arka arkaya göreceğiz. Tabii ki tek bir seferde çalışmayacak. Adı üstünde seri toplayıcı.
+
+59
+00:17:16,276 --> 00:17:43,596
+İlk önce ilk bitleri toplayacak, topladığı şey burada, eldeyi bir sonraki adım için şuraya geri besleyecek. Bunlar toplandıktan sonra S1 oluşacak. Buradaki eldeyi bir sonraki geri beslemesini istiyoruz. Böyle bir aslında basit, kısmen basit bir şey var. Planımız var yani. Tamam, toplayıcı mantığını da biliyorum. Şimdi bunu nasıl yapabilirim diye bir düşüneyim.
+
+60
+00:17:44,051 --> 00:18:04,571
+Burada aslında şey elemanı nasıl diyelim, storage element olarak bahsettiğimiz eleman ne olması gerekiyor? Burada durum diagramı belireceğiz ama bu durum hangi bilgiyi temsil edecek? Ne dersiniz?
+
+61
+00:18:09,140 --> 00:18:24,120
+Başka bir soru, yani yine aynı şeyi başka türlü, şöyle sorabiliriz. Buradaki bir bilgiyi şuraya geri besliyoruz ya, bu geri beslediğimiz bilgi nedir aslında? Eldeyi depolamamız lazım, kesinlikle.
+
+62
+00:18:25,280 --> 00:18:32,140
+Dolayısıyla elde durumlarına bakıyorum, ne olabilir diye bakıyorum. Elde olabilir.
+
+63
+00:18:36,403 --> 00:18:58,104
+Veya olmayabilir. Toplama sonrasında elde olabilir veya olmayabilir. Yani oldukça basit bir aslında ardışıl devre tasarımı olacak gibi planlıyorum kendimce. Çünkü benim burada iki farklı durumum var. Bu iki durumu kaç tane flip-flopla depolayabiliriz? Ne dersiniz?
+
+64
+00:19:01,104 --> 00:19:02,784
+Bir tanesiyle, evet.
+
+65
+00:19:03,316 --> 00:19:21,396
+Birini sıfır değerini bir gibi düşünebilirsiniz veya biraz daha teorik olarak gitmek gerekirse bu bir, bu iki. Toplam iki durum var. Dolayısıyla log2, ikiden aslında burada bir flip-flop kullanılacağını sizin zaten görmeniz gerekiyor.
+
+66
+00:19:28,723 --> 00:19:37,003
+Bir durum diagramına gitmem gerekecek. Durum diagramı ile ilgili konuşurken ne demiştik? Mili ve mor makineleri var demiştik.
+
+67
+00:19:37,463 --> 00:19:43,943
+Peki bu bizim tasarlayacağımız yapı sizce hangisine daha yatkın oluyor? Ne dersiniz?
+
+68
+00:19:51,539 --> 00:19:53,920
+[öğrenci] demiş. Başka fikri olan var mı?
+
+69
+00:19:57,875 --> 00:20:02,875
+Hocam biz minimum orada sadece gösterimsel bir fark olarak görmüştük de yani başka...
+
+70
+00:20:04,336 --> 00:20:09,855
+Tamam, zaten bu dersi her ikisini de yaptığımız için anlayacağız. O yüzden onu o zaman tekrar söyleyeyim.
+
+71
+00:20:10,755 --> 00:20:15,875
+Şuraya not alayım hatta. Çıkış. Hem girişe...
+
+72
+00:20:19,571 --> 00:20:22,891
+Hem de duruma bağlıysa
+
+73
+00:20:29,875 --> 00:20:32,615
+Mili makinesini tercih etmemiz lazım.
+
+74
+00:20:33,476 --> 00:20:42,516
+Yok, çıkış sadece girişe bağlıysa, aslında kısmen bir kombinasyonel devre gibiyse diyoruz,
+
+75
+00:20:43,336 --> 00:20:54,375
+ise girişe bağlıysa, pardon duruma bağlıysa diyelim, giriş demeyelim, duruma bağlıysa, bu durumda buna da mur diyoruz.
+
+76
+00:20:54,456 --> 00:20:57,556
+Çünkü durum makineleri ya giriş demememiz lazım, durum dememiz lazım.
+
+77
+00:20:58,195 --> 00:21:06,335
+Dolayısıyla bakıyoruz, şimdi toplamada elde geri besleniyor, toplama sırasında girdiler kullanılıyor, artı bir de durum da kullanılıyor.
+
+78
+00:21:06,516 --> 00:21:12,415
+Yani çıkış hem girişe hem de duruma bağlı. O zaman tamam, ben burada mili makinesini kullanmam lazım.
+
+79
+00:21:13,495 --> 00:21:21,775
+Bunun üzerinden bir konuşalım ve düşünelim, mili makinesini nasıl kullanmam lazım ve durum diagramını nasıl tasarlamam lazım.
+
+80
+00:21:21,775 --> 00:21:24,895
+Şimdi iki farklı durum olduğunu düşünüyorum.
+
+81
+00:21:25,523 --> 00:21:48,863
+Birincisi, son işlemde elde yok. Yani sıfır durumu falan diye düşünebilirsiniz bunun için. Bir tanesi de son işlemde, biraz uzun yazıyorum ama olsun, daha açık olması açısından, elde var. Bu da birinci durum diye düşünüyorum.
+
+82
+00:21:53,364 --> 00:21:56,864
+Yuvarlığa alayım, daha iyi ifade etmek adına.
+
+83
+00:21:59,644 --> 00:22:01,463
+Şimdi hemen şeyi düşünüyorum.
+
+84
+00:22:04,463 --> 00:22:12,884
+X, Y girişi olduğunda, buradaki neydi?
+
+85
+00:22:15,463 --> 00:22:18,684
+C'in diyorduk, aslında şey girişi.
+
+86
+00:22:20,723 --> 00:22:37,303
+elde girişi. Bu da Cout'a S diyorduk. Bunlar da bizim çıkışlarımızı oluşturuyor. Şu çıkışımız, bu çıkışımızın eldesi C. Bu ise bunlar girişimiz ve bu da geriye beslenen aslında eldeyi gösteriyor.
+
+87
+00:22:38,003 --> 00:22:49,903
+Buna göre pek çok şeyi doldurabiliriz. Zaten daha önce de bunun tablosunu oluşturmuştuk. Ama bunu açık açık yazmak yerine ben bir iki tanesini de yapıp sonrasını sizin tahmin etmenizi isteyeceğim.
+
+88
+00:22:49,903 --> 00:23:01,603
+Şimdi şöyle düşünelim. 0-0 olduğu durumda, elde de 0 ise, yani şu anki durum daha doğrusu 0 ise, çıkış ne olması gerekiyor?
+
+89
+00:23:04,948 --> 00:23:26,648
+Hepsini topladık. Sonuçta çıkışta elde de sıfır olması lazım. Doğru değil mi? Bir sorun yok diye düşünüyorum. Dolayısıyla bunu şöyle göstermemiz gerekiyor. Buradan geliyor tekrar kendine dönüyor. Neden? Çünkü durumu değişmemiş. Bakın elde durumu sıfırken bir sonraki elde durumu tekrar sıfır olmuş.
+
+90
+00:23:29,587 --> 00:23:42,648
+Bu okun üstüne de girişleri ve çıkışları gösterebiliriz. Yani giriş ve çıkış, giriş slash çıkış şeklinde gösterebiliriz. Bunu da belki farklı bir kalemle göstermek daha iyi olacaktır.
+
+91
+00:23:47,892 --> 00:24:06,672
+Yani şöyle diyeceğiz. 0-0 girdiğinde çıkış değerimiz 0 olur. Bakın 0-0 girdiğinde çıkış değerimiz 0 oluyor. Buradaki C'leri elde durumu olduğu için durumla ilişkilendiriyorum. Bir sonraki durum, bir önceki durum gibi ilişkilendiriyorum.
+
+92
+00:24:07,532 --> 00:24:14,852
+Bunun üzerine size sorsam mesela şu kısmı aslında artık silebilirim. Çünkü buradaki mantığı anladık gibi düşünüyorum.
+
+93
+00:24:17,715 --> 00:24:21,576
+Bu şekilde bu makineyi dolduracağız. Buradaki durum makinesini dolduracağız.
+
+94
+00:24:22,635 --> 00:24:34,975
+Eğer ki girişim 0'a 1 ise giriş ve içinde elde olmadığını da biliyorsam çıkışım ne olur?
+
+95
+00:24:41,844 --> 00:24:54,684
+Çıkışın 1 olur, toplama sonrasında 1 olur. Elde de olmadığı için yine kendisine durum olarak dönmüş oluyor. Aynen öyle. Yazdınız, teşekkürler. Ben de sonradan gördüm.
+
+96
+00:24:55,403 --> 00:25:04,943
+Şimdi yine aynı şekilde 1-0'ı bu kez düşünelim. 1-0'a 1'i düşünelim. Aslında X veya Y'ye girişinde 1'e 0 olması hiç fark etmez.
+
+97
+00:25:04,943 --> 00:25:08,524
+Çünkü sonuçta 1 ile 0'ı topladık, elde de 0'mış.
+
+98
+00:25:08,948 --> 00:25:14,528
+Toplam bir olacak ve yine burada aynı duruma dönecek gibi düşünmemiz gerekiyor.
+
+99
+00:25:16,148 --> 00:25:19,347
+Şimdi artık bir tane daha farklı durum kaldı burada.
+
+100
+00:25:20,528 --> 00:25:26,468
+Diyelim ki birebir giriş verdim. Elde de yok.
+
+101
+00:25:29,387 --> 00:25:33,887
+Şöyle geldi. Ne yapmam gerekiyor? Buradaki çıkışın ne olması lazım?
+
+102
+00:25:35,347 --> 00:25:45,228
+Bakın çıkış sıfır oldu ama elde bir tane oldu. Elde bir tane olduğu için hemen diğer duruma bağlamamız gerekiyor bunu.
+
+103
+00:25:47,708 --> 00:26:02,548
+Yine burada elde bir varken, elde bir varken diyelim sıfıra bir topladım. Elde bir vardı, burada da bir var, iki şey olmuş oldu dolayısıyla.
+
+104
+00:26:03,155 --> 00:26:27,895
+Yine hala elde durumu elimde olmuş oldu ama toplam sıfır oldu. Bunu hızlandırabilirim. Yine bir sıfır olması durumu da simetrikliği koruyor. Yine aynı durumu gösterir. Başka ne var? Bire bir olması durumunda girişte bir var. Diğer girişte de bir var. Topladığı zaman zaten elde olacak. Bir de burada bir var. Dolayısıyla çıkışın da bir olacağını gösterir.
+
+105
+00:26:29,107 --> 00:26:31,988
+Eldesinin de yine kendine döneceğini gösterir.
+
+106
+00:26:33,708 --> 00:26:37,268
+Son bir tane durum kaldı. O da 0-0 olma durumu.
+
+107
+00:26:38,448 --> 00:26:42,127
+Bakın elde 1 var, girişte 0-0 var.
+
+108
+00:26:42,768 --> 00:26:46,567
+Çıkışın 1 olacağını düşünüyorum ve elde burada kalmayacak artık.
+
+109
+00:26:47,327 --> 00:26:52,288
+Oysa durum diagramı, yani mili makinesini bu şekilde göstermiş oldum.
+
+110
+00:26:52,688 --> 00:26:54,167
+Anlamayan varsa şu an sorabilir.
+
+111
+00:27:06,740 --> 00:27:09,500
+Biraz bekledim. Herhalde bir sorun yok gibi düşünüyorum.
+
+112
+00:27:10,660 --> 00:27:18,640
+Şimdi buradaki bu muhabbeti, buradaki olayı bizim gelip aslında bir tabloya dökmemiz lazım.
+
+113
+00:27:18,640 --> 00:27:20,960
+Lojik tablosuna dökmemiz gerekiyor.
+
+114
+00:27:22,279 --> 00:27:27,920
+Bu lojik tablosunun değerleri hemen şunun altına özellikle küçük yazmaya çalışayım.
+
+115
+00:27:28,059 --> 00:27:32,759
+Çünkü ikisini bir de görme olayımız olabilir.
+
+116
+00:27:34,355 --> 00:27:53,756
+Bunu nasıl yapmam lazım? Az önceki tabloya benzer bir şey yapmam lazım. Bir kere X girişi var, Y girişi var. Aslında C'in var burada ama C'in yerine ben küçük Q ile isimlendiriyorum. Bu önceki durumu gösteriyor. Önceki elde durumu.
+
+117
+00:27:57,556 --> 00:28:04,096
+Sonraki elde durumunda Q ile ifade edeceğim. Sonraki durum diyelim.
+
+118
+00:28:07,316 --> 00:28:17,195
+Peki, aslına bakarsanız, şuradaki X, Y, Q girecek. Bunun sonrasında yeni Q oluşmuş olacak.
+
+119
+00:28:21,940 --> 00:28:42,680
+Bir de buraya S koymam lazım. S'de çıkışı gösteriyor sonuç olarak. Şöyle S'de çıkışı gösteriyor diyelim. Zaten S'yi genel olarak çıkışı gösterdiğimi bildiğim için onu yazmayacağım. Bu aslında bizim şimdiye kadar düşündüğümüz mantık ama buna ek olarak bir şey daha gelmesi lazım. Kim söyleyebilir?
+
+120
+00:28:54,836 --> 00:29:03,296
+Bu tabloda buna ek olarak bir de T flip-flop'un girişine ne uygulanacak onu seçmem lazım.
+
+121
+00:29:04,136 --> 00:29:12,836
+Aslında zaten bütün mantığım bu. Yani burada bütün isteğim şu olacak. T flip-flop'a uygulanan değerin...
+
+122
+00:29:14,163 --> 00:29:30,783
+X, Y, Q cinsinden yani girişler cinsinden ifadesini bulmaya çalışıyorum. Birinci fonksiyon olarak. İkinci fonksiyon olarak ise çıkışın X, Y, Q cinsinden değerini bulmaya çalışıyorum.
+
+123
+00:29:35,508 --> 00:29:46,807
+Şimdi hemen buraya hızlıca doldurayım. Her türlü durumu buraya yazacağım. 0 0, hatta şuraya yazayım. 0 0 0 0 1 1 1 1 bunları yazdım.
+
+124
+00:29:49,807 --> 00:30:02,268
+0 0 1 1 0 0 1 1 yazdım. Şuraya 0 1 0 1 0 1 0 1 yazdım. Yeni Q'lar ne olacak onlara bakıyorum.
+
+125
+00:30:02,708 --> 00:30:10,148
+Yeni Q'ları benim oluşturduğum durum diagramından izlenen lazım. Hatta S'leri de o şekilde. Şöyle bir bakıyorum.
+
+126
+00:30:11,048 --> 00:30:27,108
+Eldem sıfırmış, girişlerim de sıfır sıfırmış. Hemen bakıyorum. Eldem sıfır, şurada. Girişlerim sıfır sıfır. Çıkışım sıfır olur, yine eldem olmaz. Dolayısıyla eldem olmaz, sonraki durumum sıfır.
+
+127
+00:30:27,731 --> 00:30:33,312
+Ve çıkışım 0 olacak. Bakın T ile ilgilenmiyorum şu anda. Onu en son bakacağım.
+
+128
+00:30:35,031 --> 00:30:45,112
+Eldem'in 1 olduğu durumda giriş 0,0 olursa ne oluyormuş? Eldem varken giriş 0,0 olduğunda çıkış 1 üretilir ve elde olmaz.
+
+129
+00:30:46,011 --> 00:30:53,531
+Yani çıkış 1 üretilir ve elde olmaz. Bunu bu şekilde hızlıca doldurabiliriz.
+
+130
+00:30:54,228 --> 00:30:57,988
+Şuradan da aynı şey gelecek sonuçta. Birbirinin simetriği gibi oluyor.
+
+131
+00:30:59,367 --> 00:31:07,807
+1-0, 0-1, 1-0, 1-0, 1-1.
+
+132
+00:31:08,048 --> 00:31:17,407
+Aslında Fullheader'daki diagramı aynısını C'in ve C'out olmadan önceki ve sonraki durum şeklinde ilişkilendirerek gidiyoruz.
+
+133
+00:31:17,748 --> 00:31:21,607
+Şuradaki tablo aslında Fullheader tablosu gibi düşünebilirsiniz.
+
+134
+00:31:24,211 --> 00:31:32,872
+Şimdi burada T'yi nasıl bulmam lazım? Orada asıl kritik nokta zaten bu derste öğrendeceğimiz şey bu olacak.
+
+135
+00:31:34,211 --> 00:31:41,071
+Normalde T flip-flop şöyle çalışıyor. T flip-flop'un girişine sıfır verirsen ne elde ediyordun?
+
+136
+00:31:46,516 --> 00:32:04,215
+Aynısını, yani bir önceki durumun aynısını. Bir verilsem de bir önceki durumun değilini veriyordu. Şimdi burada benim buna benzetmem için bir tane ileri tanım bağıntısı gibi, geri tanım bağıntısı gibi yapmam lazım.
+
+137
+00:32:04,215 --> 00:32:14,048
+Burada ileri tanım bağıntısı var. T verildiğinde Q'nun ne olacağını görebiliyorsunuz. Bir de bunu şöyle...
+
+138
+00:32:14,048 --> 00:32:20,327
+İzah etmeye çalışalım. Şunu buradan alalım bu arada. Şöyle bu tarafa alalım.
+
+139
+00:32:23,827 --> 00:32:30,488
+Şimdi ters tanım bağıntısını yazayım. Aslında aynı şey ama daha kolay görebilmemizi sağlayacak.
+
+140
+00:32:31,508 --> 00:32:44,048
+Önceki giriş Q, sonraki durum Q, sonraki durum büyük Q olmak üzere T ne olmalı sorusunu burada bize getiriyor.
+
+141
+00:32:45,968 --> 00:32:48,807
+Burada bütün kombinasyonları yazalım ve sonra konuşalım.
+
+142
+00:32:49,299 --> 00:32:55,299
+Bunun hakkında, pardon 0, 1, 1, 0 ve 1, 1 şeklinde bunu yazdım.
+
+143
+00:32:56,720 --> 00:33:07,119
+Şimdi bakıyorum, önceki durum 0'mış, sonraki durum 0 olmuş, hangi T'yi vermem gerekiyor ki ben bu ikiliyi sağlayabileyim?
+
+144
+00:33:07,720 --> 00:33:08,299
+Ne dersiniz?
+
+145
+00:33:09,659 --> 00:33:16,279
+Evet, bakın T eğer 0'sa aynı kalması gerekiyordu.
+
+146
+00:33:16,688 --> 00:33:20,268
+Burada da durum aynı kalmış. Dolayısıyla T'ye sıfır vermiş demek ki adam.
+
+147
+00:33:21,928 --> 00:33:33,008
+Veya diğer taraftan şuna bakın. Q sıfırdan bire geçmiş. Yani toggle etmiş. Dolayısıyla adam buna bir vermiş herhalde ki bu durum değiştirmiş.
+
+148
+00:33:33,948 --> 00:33:39,328
+Aynı şeyi burada düşünebilirsiniz. Aynı şeyi burada düşünebilirsiniz. İlk zora benziyor.
+
+149
+00:33:43,571 --> 00:33:47,211
+Ters tanım bağıntısı da çıkartmanın kolay olduğunu görmüş olduk.
+
+150
+00:33:48,111 --> 00:33:55,871
+Buna göre şuradaki ters tanım bağıntısını kullanarak artık şuradaki T'leri doldurabilirim.
+
+151
+00:33:57,731 --> 00:33:59,723
+Bakın, Q...
+
+152
+00:34:02,740 --> 00:34:28,939
+Q0, büyük Q0 ise demek ki buradaki T0 olmuş. Birbirinden farklı ise toggle ettiği anlamına gelir. Bir vardır demektir. Birbiriyle aynı ise aynı 0, birbiriyle aynı ise 0, 0, 0, 1, 0 şeklinde çakış T'leri doldurmuş oldu.
+
+153
+00:34:29,619 --> 00:34:31,119
+Bu toch nesilat bir şey korkma?
+
+154
+00:34:42,739 --> 00:35:04,380
+Herhalde yok. O zaman ben hızlıca bunu karno haritasına dökeyim. Çünkü bunun üzerinden artık sonuca gideceğim. Ne istiyordum? Bir tanesi S ile ilişkiliydi, bir tanesi de T ile ilişkiliydi. Hadi T için bir karno çıkartayım. Girişler X'e, çıkışlarda önceki Q durumu olmak üzere.
+
+155
+00:35:04,884 --> 00:35:28,364
+Karnoda 0, 0, 1, 1, 1, 1, 0 yazıyordum. Q durumu da 0'ya 1 olabilir. Burada hemen bunu doldurabilirim hızlıca. Hemen bakayım. X'ye 0 olduğu durumda Q da 0 ise aslında T'de sadece 1 olan durumları yazsak geri kalanı 0 doldursak sanki daha hızlı olacak gibi.
+
+156
+00:35:28,784 --> 00:35:54,024
+T1 hangi durumda varmış? Q1 iken 0, 0 olduğu durumda. Burada 1 varmış. Bir de hangi durumda varmış? Şurada var. XC1 1 iken Q'nun 0 olduğu durum. XC1 1 iken Q'nun 0 olduğu durum. Tamam. Geri kalanları 0 olacak zaten. Hemen yazıyorum. 0, 0, 0. Buradan çok rahat bir şekilde yazabilmemiz mümkün. Bir gruplama yapamıyoruz.
+
+157
+00:35:54,643 --> 00:35:59,183
+Onu zaten gördük. Yani karnonun özelliğini kullanamadık ama olsun.
+
+158
+00:36:00,183 --> 00:36:10,643
+Buradaki T'nin aslında X, Y, Q üstü artı X üstü, Y üstü Q olduğunu bunları ayrı ayrı yazarak görebilirsiniz.
+
+159
+00:36:10,903 --> 00:36:13,823
+Dolayısıyla Q'nun birinci ifadesi elimde olmuş oldu.
+
+160
+00:36:15,263 --> 00:36:19,723
+Bu birinci ifadesi. Bunu ben yine buradan alayım. Aşağıya bir yere taşıyayım.
+
+161
+00:36:20,148 --> 00:36:25,408
+Çünkü bir sonraki S'yi yazmak için sıkıntı yaşamayayım.
+
+162
+00:36:29,396 --> 00:36:40,176
+Bu şekildeydi. Şimdi aynısını S için yapacağım. S durumunu X, Y ve bir önceki durumdan tahmin edecek.
+
+163
+00:36:42,176 --> 00:36:49,195
+Logik devre tasarımını bulmaya çalışıyorum. 1, 0, 0, 1. Pardon, 1 şeklinde.
+
+164
+00:36:56,467 --> 00:37:00,747
+Hemen S'ye bakıyorum. S'de bir durumlarını yazsam iyi olabilir.
+
+165
+00:37:02,807 --> 00:37:08,207
+Bir olduğu durum burası. 0,0'a bir durumu. Yani X'ye 0,0 iken Q'nun bir olduğu durum.
+
+166
+00:37:09,287 --> 00:37:11,827
+0,0 iken bir olduğu durum şurası.
+
+167
+00:37:13,527 --> 00:37:20,027
+Sonra başka S'nin bir olduğu durum burası. 0,1 iken 0 olduğu durum. 0,1 iken 0 olduğu durum şurası.
+
+168
+00:37:20,980 --> 00:37:27,739
+Diğer durum, biri sıfırken sıfır olduğu durum, biri sıfırken sıfır olduğu durum. Bir de burada var.
+
+169
+00:37:29,360 --> 00:37:34,199
+Bunu nasıl yazabiliriz arkadaşlar? Gerçi az önce arkadaşımız söyledi kısmen ama.
+
+170
+00:37:36,400 --> 00:37:41,739
+XOR ile böyle çapraz olan karno haritasındaki yapıları XOR ile yazabiliyorduk.
+
+171
+00:37:48,608 --> 00:37:50,868
+Y ile ifade edebilirim.
+
+172
+00:37:52,828 --> 00:37:56,608
+Tüm bunları kullanarak artık bu devreyi çizebilmem mümkün.
+
+173
+00:37:57,128 --> 00:37:59,347
+Şimdi bu devrenin çizimini de size göstereyim.
+
+174
+00:38:00,328 --> 00:38:02,188
+Bir tane ne demiştik?
+
+175
+00:38:02,688 --> 00:38:06,307
+T fil filogu var. Zaten bütün olay onun üstüne dönüyor aşağı yukarı.
+
+176
+00:38:07,387 --> 00:38:10,528
+T fil filogunun bir tane T girişi olur biliyorsunuz.
+
+177
+00:38:11,387 --> 00:38:13,188
+Bir Q bir de Q üstü çıkışı olur.
+
+178
+00:38:13,387 --> 00:38:15,507
+Yani değilini de kendi içinde bulabilirsiniz.
+
+179
+00:38:18,612 --> 00:38:44,152
+Şimdi şu önce elde ettiğimiz T'yi burada çizmeye çalışalım. Ne yapıyor adam? Bakın ilk önce Q'nun değilini alıyor. Yani şuradan almış bir tanesini. Buradan getirmiş, almış. Girişlerde burada X ve Y olarak bulunduğunu düşünelim. X'i almış, Y'yi almış, bir de Q'nun değilini almış. Tamam. Bunları endlemiş.
+
+180
+00:38:45,940 --> 00:38:49,059
+Şurada bir AND kapısına uyguluyor.
+
+181
+00:38:51,100 --> 00:38:54,159
+Bir de bunun Q'sundan bir değer almış.
+
+182
+00:38:56,800 --> 00:38:58,480
+Şuradan atlama yapayım.
+
+183
+00:38:59,699 --> 00:39:02,940
+X'in ve Y'nin D'liyle şey yapmış.
+
+184
+00:39:05,220 --> 00:39:11,119
+Yani şuradan X'i aslında aldıktan sonra bir D'li kapısına sokabiliriz.
+
+185
+00:39:11,539 --> 00:39:29,355
+Buradan yukarı verebiliriz. Buradan y'yi aldıktan sonra bir NAT alabiliriz. Bunu da yukarı verebiliriz. Sonuç olarak bunları da yine bir AND kapısıyla birleştirmemiz mümkün. Sonra yapacağımız şey bunların ikisini...
+
+186
+00:39:40,211 --> 00:39:54,871
+Bir tane OR kapısına koymak ve bu T'ye gidecek. Bakın. Buradaki zaten ardışık devre tasarımında bunu görüyorsunuz. Çıkışı bir şekilde kullanıp girişe tekrar beslemem lazım. Bakın girişe besledim bunu.
+
+187
+00:39:57,831 --> 00:40:06,871
+Peki S'yi nasıl elde ediyordum? Hemen bakıyorum. Q, Y ve X'i XOR'luyorum. Tamam o çok kolaymış.
+
+188
+00:40:07,264 --> 00:40:33,064
+Y'yi buradan aldım. X'i de buradan aldım diyelim. Bir de bir önceki durumu almam gerekiyor. Q durumunu almam gerekiyor. Şu anki durumu da kullanabilirsin orada. Buradan almışım. Bunları birleştirmişim. Ve bunları bir XOR kapısına sokup S değerini elde etmişim.
+
+189
+00:40:34,164 --> 00:40:41,104
+Çizim çok iyi olmadı, farkındayım. Ama herhalde anlatmak istediğimi anlattım diye düşünüyorum.
+
+190
+00:40:42,484 --> 00:40:44,024
+Soru var mı arkadaşlar?
+
+191
+00:40:51,284 --> 00:40:55,104
+Durum diagramı oluşturması ve ileri geri bağlantılarını tekrar edebilirsiniz.
+
+192
+00:40:58,024 --> 00:41:08,043
+Şimdi önce bakıyoruz. Toplama yapacağız. Toplama sonrasında iki farklı durum olabilir. Dolayısıyla LOG2'den bir tane flip-flop kullanmamız lazım. Bu tamam.
+
+193
+00:41:11,539 --> 00:41:18,920
+Durum makinesinde iki farklı durumu önce bir çiziyorum ve kendime açık olması açısından bunu paylaşıyorum.
+
+194
+00:41:19,199 --> 00:41:20,559
+Üstüne yazı da yazabilirim.
+
+195
+00:41:21,519 --> 00:41:30,980
+Sonra giriş durumlarına göre çıkış ve elde ne olacak? Bir sonraki elde durumunu anlamaya çalışıyorum.
+
+196
+00:41:31,900 --> 00:41:37,440
+Full header da böyle değil miydi? Giriş XC'yi aldıktan sonra giriş eldesini de alıyordu.
+
+197
+00:41:37,907 --> 00:41:50,528
+Çıkışı ve çıkışın eldesini buluyordu. Dolayısıyla şuradan çıkardığımız yer aslında girişin eldesi, bunun döndüğü yerde çıkışın eldesi gibi yorumlamanız lazım.
+
+198
+00:41:51,528 --> 00:42:04,528
+Bu diagramı böyle tüm kombinasyonlar için, tüm durumlar için yapıyorsunuz. Sonuçta giriş var, çıkış var, bir de elde durumu var.
+
+199
+00:42:04,980 --> 00:42:31,140
+3 farklı durum var. 2 üzeri 3'ten 8 tane burada bağlantı çizmeniz lazım. Bunu zaten aklınızda tutuyorsunuzdur diye düşünüyorum. Sonra getirdik burada bunun doğruluk tablosunu oluşturduk. Şu kısım girişler. Bu önceki durum. Bu da sonraki durum olacak şekilde. Bu sonraki durumu tabii ki yukarıdaki mantıktan besledik.
+
+200
+00:42:32,052 --> 00:42:43,052
+Şuradan besledik. Çıkışı ve T filflobun, benim tasarladığım filflobun içerisinde ne girecek, hangi bağlantı girmesi lazım onu anlamaya çalışıyorum.
+
+201
+00:42:44,672 --> 00:42:50,112
+Gördüğünüz gibi bu sonuçları ilerlettiğimizde zaten çıkışı bu şekilde bulduğumuzu görüyoruz.
+
+202
+00:42:50,112 --> 00:42:56,672
+Ters tanım bağlantısında da hiçbir sorun yok. Sadece bu T filflobu ile ilişkili bir şey.
+
+203
+00:42:57,056 --> 00:43:17,315
+Bakın tüm durumları önceki durum ve sonraki durum şeklinde yazdık. Bu da T'ye ne gelir ki bunlar sağlansın? Yani şöyle bir şey. Önceki durum sıfırmış, sonraki durum sıfırmış. Ben hangi durumla T'ye ne vereyim ki bunu sağlasın gibi düşünmemiz lazım.
+
+204
+00:43:24,980 --> 00:43:32,640
+Önceki durum Q iken, sonraki durumda yine Q kalıyor. Dolayısıyla buna sıfır uygulandığını buradan anlamış oluyorum.
+
+205
+00:43:34,619 --> 00:43:35,880
+Başka sorusu olan var mı?
+
+206
+00:43:43,699 --> 00:43:52,800
+Meli ve Mor'u siz göstermiş miydiniz, bilmeniz mi bekleniyordu demişsin Kayra. Ben zaten şu anda Mili'yi anlatıyorum aslında.
+
+207
+00:43:53,199 --> 00:43:59,079
+Mili'yi nasıl tasarladığımızı şurada dersin önceki kısmına belki sonradan katıldıysan diye diyorum.
+
+208
+00:43:59,979 --> 00:44:04,039
+Takip edersen Mili'yi nasıl tasarladığımızı burada sen zaten öğreneceksin.
+
+209
+00:44:05,076 --> 00:44:17,395
+Mur'la ilgili de birazdan örnek çözeceğiz. Orada da onu anlama ve yorumlama becerinin olacak. Daha önceden biliyorsanız tabii onu da kullanabilirsiniz. Çünkü aynı şeyi anlatıyoruz.
+
+210
+00:44:22,324 --> 00:44:33,304
+Konusu gelmişken, şu anki yaptığımız tasarımın mili olduğunu, birazdan yapacağımız şeyin de mur makinesiyle yapılacağını söyleyebiliriz. Hatta başlayalım.
+
+211
+00:44:35,463 --> 00:44:48,163
+Çok zor olmadığını görmeniz gerekiyor. Bir sorun varsa da söyleyin. Sayıcı tasarlayacağız. Sayıcı şöyle sayacak. 1, 2, 3, 4, sonra tekrar 1'e düşecek. 2, 3.
+
+212
+00:44:48,576 --> 00:45:12,955
+Sonra tekrar bir de düşecek. Böyle periyodik olarak devam etmesi gerekiyor. Şeklinde sayan, senkron, ardışıl devreyi, JK flip-flop kullanarak tasarlayınız.
+
+213
+00:45:16,692 --> 00:45:22,952
+Şimdi bakıyorum, bir sayıcı mantığında giriş kullanıyor muyuz?
+
+214
+00:45:26,612 --> 00:45:50,291
+Az önce toplamada kullanıyorduk biliyorsunuz ki. X ve Y'ye göre çıkış belirleniyordu sonuçta. Ama bu sayıcıya bağlanan bir şey yok. Kendi durumunu bir öncekine feed ederek hep aslında arttırması gerekecek. Genel olarak böyle bir mantık kurmamız lazım. Dolayısıyla çıkış girişe bağlı değil. Sadece duruma bağlı.
+
+215
+00:45:50,643 --> 00:45:59,623
+Buradan hemen düşünerekten bunun bir mur makinesiyle yapılabileceğini düşünmeniz ve yorumlamanız gerekiyor.
+
+216
+00:46:00,223 --> 00:46:02,903
+Şimdi mur makinesini çizince de zaten daha iyi oturacak.
+
+217
+00:46:03,543 --> 00:46:06,703
+Ama daha öncesinde ilk adımda yaptığımız bir şey vardı.
+
+218
+00:46:06,703 --> 00:46:07,683
+Soru şuydu.
+
+219
+00:46:09,963 --> 00:46:14,283
+Biz buradaki bu olayı kaç fil filopla yapabiliriz?
+
+220
+00:46:22,708 --> 00:46:24,768
+[öğrenci] 2 demiş. Başka fikri olan var mı?
+
+221
+00:46:27,987 --> 00:46:29,987
+Evet, [öğrenci]'ın söylediği doğru aslında.
+
+222
+00:46:31,027 --> 00:46:34,467
+Durum sayısına bakıyoruz. 1, 2, 3, 4. 4 tane durum var.
+
+223
+00:46:34,887 --> 00:46:42,807
+Dolayısıyla log 2, 4 dediğimiz zaman 2 tane flip-flop aslında bizim için yeterli olmuş olacak.
+
+224
+00:46:43,788 --> 00:46:47,748
+Biraz da bir tık daha karmaşık bir yapıya geçiyoruz gibi düşünebilirsiniz.
+
+225
+00:46:50,079 --> 00:47:02,179
+Aslında yukarıdaki gibi böyle çok fazla birbirine feed eden, besleyen, şuradaki gibi karışık şeyler görmeyeceğiz. Bakın ne kadar basit olduğunu biraz göreceğiz şu anda.
+
+226
+00:47:04,179 --> 00:47:10,079
+Mur makinesini genelde giriş bir şeyi etkilemediği için şöyle çiziyoruz.
+
+227
+00:47:12,079 --> 00:47:13,003
+Yukarıya...
+
+228
+00:47:13,139 --> 00:47:34,099
+Bir değerini söyleyebiliriz. Aşağıya da onun durumunu söyleyebiliriz. Ya da şöyle diyelim, en başta normal ben göstereyim. Bir durumu var, şurada bir iki durumu var, şurada bir üç durumu var, şurada da bir dört durumu var. Ne yapmasını bekliyorum? Bir durumundan iki durumuna geçecek adam.
+
+229
+00:47:34,835 --> 00:47:40,036
+İki durumundan üç durumuna geçecek, üç durumundan dört durumuna, dört durumundan bir durumuna.
+
+230
+00:47:40,036 --> 00:47:46,576
+Gördüğünüz gibi bağlantılar oldukça basit olduğunu düşünebilirsiniz.
+
+231
+00:47:47,275 --> 00:47:56,815
+Gerçi bir durumu iki durumu demek burada doğru olmuyor. Bunları binary şeklinde temsil etmemiz lazım.
+
+232
+00:48:00,916 --> 00:48:07,976
+Diyoruz. Çıkışta bunu görmeye bekliyoruz ama bunların hangi durumla ilişkilendireceğini bizim burada belirlememiz lazım.
+
+233
+00:48:08,676 --> 00:48:16,676
+Ne demiştik? Kaç fili flop? İki fili flop. Dolayısıyla 0, 1, 1, 0 falan şeklinde bunları temsil etmemiz lazım.
+
+234
+00:48:16,676 --> 00:48:28,176
+Bir durumunu, bir sayısını temsil etmek için 0, 0 durumunu söyleyeceğiz. İki sayısını temsil etmek için 0, 1'i.
+
+235
+00:48:28,512 --> 00:48:52,952
+Burada yine KarnoMap'te daha kolay şeyler bize karşımıza çıkabilir diye aslında 1-0 diye devam etmem lazım ama buraya 1-1 diyorum. Yine buraya da 1-0 diyorum. İsterseniz böyle yapmayabilirsiniz bu arada. Ben sadece KarnoMap'te bizim işlerimiz kolaylaşabilir diye bunu göstermek istedim.
+
+236
+00:48:54,516 --> 00:49:04,056
+Dolayısıyla durum üzerinde bakacak olursak, kırmızılara bakmamız lazım. 0-0 durumdan 0-1'e geçecek. 0-1'den 1-1'e, 1-1'den 1-0'a geçmesi lazım.
+
+237
+00:49:05,275 --> 00:49:11,615
+Sayı anlamında bakacak olursak, çıktı anlamında bakacak olursak, 1'den 2'ye, 2'den 3'e, 3'den 4'e geçmemiz lazım.
+
+238
+00:49:12,615 --> 00:49:20,715
+Burada şunu da anlıyoruz. Bu sayı sistemi 1-2-3-4 diye değil, başka türlü saysaydı da,
+
+239
+00:49:20,851 --> 00:49:33,831
+Yine 4 tane 4'ten 8'e kadar saysaydı da bu kez buraya sadece şuradaki kısmı değiştirerek müdahale edebilecektik. Bakın 5 diyecektik, 6 diyecektik falan gibi devam edebilecektik.
+
+240
+00:49:35,831 --> 00:49:42,731
+Yani çıkışla ilişkisi vardı onun, durumla ilişkisi yoktu gibi düşünebilirsiniz.
+
+241
+00:49:45,231 --> 00:49:48,391
+Neyse biz ilerleyelim zaten daha iyi görmüş olacağız.
+
+242
+00:49:48,884 --> 00:50:07,303
+Şimdi J.K. Filipilob'u bir hatırlamak ve onun ters tanım bağıntısını yazmak gerekebilir. Önce J.K. Filipilob'un düz tanım bağıntısı, yani bizim hep gördüğümüz tanım bağıntısını söyleyebilir misiniz? Kim söylemek ister?
+
+243
+00:50:16,820 --> 00:50:28,480
+Bir kere bir clock ile çalışıyordu. Eğer clock varsa buradaki JK durumlarına göre bir şey üretiyordu. Clock yoksa hiçbir şeyde çıkış olmuyordu zaten.
+
+244
+00:50:29,740 --> 00:50:38,320
+Ya da don't carry durumu gibi düşünebilirsiniz. Buralarda hiçbir şey olmuyor. Bu da zaten bir önceki hiçbir şey olmadığı için bir önceki durumda kalıyor gibi düşünebilirsiniz.
+
+245
+00:50:40,307 --> 00:50:57,528
+Kimse söylemedi, ben yazayım o zaman hızlıca. 0-0 durumda GK Filip logo Q verir, 0-1 durumda 0 verir, 1-0 durumda 1 verir ve 1-1 durumda da Q üstü verir. Bu zaten geçtiğimiz derste yazdığımız tabloda var.
+
+246
+00:50:57,528 --> 00:51:07,468
+Şimdi bunu kullanarak ters tanım bağımsını yazmaya çalışalım. Önceki durumum buyken, sonraki durumum buna geçiyor.
+
+247
+00:51:09,427 --> 00:51:14,887
+Bunu sağlayan girişler neler olabilir diye tersten soruyorum bu kez kendine.
+
+248
+00:51:16,167 --> 00:51:21,207
+Buradaki tüm kombinasyonları yazıyorum. 0, 1, 1, 0, 1, 1 şeklinde.
+
+249
+00:51:22,747 --> 00:51:30,067
+Şimdi yukarıdaki tabloyu yorumlayarak sizden beklentim şu. Buradaki JKI ne yazmam lazım?
+
+250
+00:51:37,235 --> 00:51:44,936
+Sonraki durumum sıfır olarak kalmaya devam ettiyse buradaki JK ikilisi ne olabilir? Ne dersiniz?
+
+251
+00:51:48,628 --> 00:51:51,608
+J0, K'da don't care olabilir.
+
+252
+00:51:52,268 --> 00:51:56,148
+Evet, çok doğru. Hemen bu duruma bakıyorum.
+
+253
+00:51:58,128 --> 00:52:03,088
+Şimdi, önceki durum sıfırmış, sonraki durum sıfır olarak kalmaya devam etmiş.
+
+254
+00:52:04,708 --> 00:52:13,668
+Bakın, şu önceki durumun aynısını çıkardığını söylüyor. Dolayısıyla burada J, K ikilisine sıfır sıfır.
+
+255
+00:52:14,483 --> 00:52:39,543
+Bir de giriş ne olursa olsun sıfır değeri üreten başka bir giriş var. Bu da JK ikilisinde sıfır bir olarak geçiyor. Bunu böyle bir karnı haritasında gibi düşünürseniz bu iki durumda aynı şeyi ifade etmesi için ortak elemanı sıfır ve K değişse de çıkış yine sıfır olarak geliyor. Dolayısıyla J sıfır, K'nın da don't care durumu olduğunu biliyorum.
+
+256
+00:52:41,268 --> 00:52:49,488
+Aynı şekilde bir önceki durum sıfırmış, bir sonraki durum bire geçmiş. Bu hangi durumda sağlanabilir?
+
+257
+00:52:56,563 --> 00:52:59,324
+1'e don't care şeklinde sağlanabilir.
+
+258
+00:53:02,483 --> 00:53:10,503
+Önceki durum 1 iken tekrar 0'a dönmesi hangi JK girişleriyle sağlanabilir?
+
+259
+00:53:13,784 --> 00:53:18,623
+Don't care'e 1 ile sağlanabilir. Son durumda da direkt ben yazayım.
+
+260
+00:53:19,251 --> 00:53:24,192
+Don't Gehre sıfır durumuyla sağlanmış oldu. Bu da ters tanım bağıntısı.
+
+261
+00:53:29,092 --> 00:53:32,532
+Ezberlemenize gerek yok. Gördüğünüz gibi kendiniz çıkartabilirsiniz bunun.
+
+262
+00:53:33,652 --> 00:53:38,771
+Önemli olan J.K.'nın tablosunun, J.K.'nın nasıl çalıştığını anlamak.
+
+263
+00:53:39,771 --> 00:53:41,831
+Bunu bu şekilde söyleyebiliriz.
+
+264
+00:53:42,420 --> 00:53:54,180
+Hocam, şu ters tanımı bir daha anlatabilir misiniz? Özellikle 0-1, yani küçük Q0, büyük Q1 olduğu zamanki durumu nasıl çıkardıktan tam yakalayamadım.
+
+265
+00:53:54,180 --> 00:54:07,100
+Şimdi küçük Q, şurada kenara yazıyorum, üstüne yazmıyorum. Küçük Q0, büyük Q1. Hangi durumlarda büyük Q'nun bir olma durumu söz konusu olabilir?
+
+266
+00:54:07,956 --> 00:54:25,856
+Bakıyorum JK, flip-flop tablosunu şu kırmızıyla çizdiğim tabloya. Hangi durumda 1 geliyor? Şurada 1, 1 geliyor. Tamam. Bir de eğer ki JK, 1, 1 olursa Q'nun değilini alıyor.
+
+267
+00:54:27,056 --> 00:54:34,836
+Demek ki ikisi de benim işimi görüyor. Aslında bunu sağlayabilecek iki tane JK girişi var. Yani 1'e 0 gelebilir.
+
+268
+00:54:35,443 --> 00:54:44,884
+Bu beni kurtarıyor. Veya birebir gelse de aslında yine aynı şekilde buradan Q'nun değilini aldığı için aynı yere gitmiş oluyoruz.
+
+269
+00:54:45,983 --> 00:54:52,523
+Bunun ikisini, yani Karno'daki gibi düşünürsek, bakın J'nin 1 olması aslında yeterli.
+
+270
+00:54:52,623 --> 00:55:02,804
+Çünkü K0 olsa da 1 olsa da aynı işi görmüş oluyor. Bu yüzden K'ya don't carry durumu diyoruz, J'ye de 1 diyoruz. Anlaşıldı mı?
+
+271
+00:55:03,380 --> 00:55:05,559
+Tamam hocam, şimdi daha iyi oldu. Anladım hocam.
+
+272
+00:55:05,559 --> 00:55:22,079
+Tamam, süper. Ters kılın bağıntısı bu şekilde. Bunları önce elimizin altında tutuyoruz ki çalıştığımız zaman otomatikman bunu kullanacağız. Sorun olmasın diye. Şuraları basitleştirmek için siliyorum.
+
+273
+00:55:26,547 --> 00:55:30,967
+Şimdi gelelim bunun durum tablosunu oluşturmaya.
+
+274
+00:55:32,887 --> 00:55:33,547
+Burada biraz...
+
+275
+00:55:38,324 --> 00:55:42,344
+Ne yapmamız gerektiğini düşünmemiz lazım. Tabloyu nasıl oluşturmamız gerekiyor?
+
+276
+00:55:43,304 --> 00:55:51,324
+Şimdi önce de şurada yaptığımızda, pardon, bakın en başa girişleri yazmıştık, sonra devam etmiştik yolumuza.
+
+277
+00:55:51,984 --> 00:55:54,924
+Ama burada girişler yok. Dolayısıyla benim giriş yazmama gerek yok.
+
+278
+00:55:55,504 --> 00:56:00,784
+Burada sadece durumlar var. Dolayısıyla önceki durum ve sonraki durum şeklinde yazmam gerekecek.
+
+279
+00:56:00,784 --> 00:56:02,464
+İki tane durum olduğu için.
+
+280
+00:56:02,931 --> 00:56:13,471
+Yani bit bazında 0, 0 mesela bir çift, dolayısıyla Q1, Q0 şeklinde bir çift yazabilir, pardon Q2 yazalım daha iyi olsun.
+
+281
+00:56:15,711 --> 00:56:20,111
+Bunlar tamamen önceki durum ikilisini gösteriyor.
+
+282
+00:56:24,692 --> 00:56:40,931
+Bunun yanına tabii ki de bir de sonrakine yazmam lazım. Sonrakinde büyük harfle yazıyorum. Q1, Q2. Bu da sonraki durumda ne olması gerektiğini yazacak. Bunları hatta dolduralım ki aklınıza ne anlama geldiğini hemen şey yapın.
+
+283
+00:56:41,451 --> 00:56:51,511
+Önceki durum 0, 0 ise bakıyorum durum diagramına 0, 0'dan 0, 1'e geçmişim. Sonraki durumum 0, 1 olması lazım. Hemen geldim yazdım. 0, 1.
+
+284
+00:56:52,244 --> 00:57:19,724
+Önceki durumum 01 ise, bakıyorum 01 ise ne sonraki durumum? 11. Geldim buraya yazdım. 11. Önceki durumum 01 ise, sonraki durumum 00'a gidiyorum. Tamam. 00'a gittim. Önceki durumum 01 ise, bakıyorum 01'den nereye gitmişim? 01.00'a.
+
+285
+00:57:20,563 --> 00:57:31,844
+1-0'a gittim. Gördüğünüz gibi çok zor değil buradaki mantığı kavramak. Girişler olmadığı için onu tabloya eklemiyoruz. O kesinlikle olması gereken bir şey.
+
+286
+00:57:32,983 --> 00:57:47,583
+Sonra yine bir öncekinden kopya çekelim. Ne yapmıştık burada? Bakın çıkışı bakmıştık. Çıktılar var burada. S çıktısı. Bir de T flip flop'un girişine ne bağlanması lazım diye sorgulamıştık.
+
+287
+00:57:47,923 --> 00:58:01,923
+Şimdi flip flop'u düşündüğümüzde, burada iki tane flip flop kullanacağımızı düşündük. Her bir flip flop'un kendi içerisinde K ve J bağlantıları var. Bunlara ne koymamız gerektiğini düşünmemiz lazım.
+
+288
+00:58:01,923 --> 00:58:12,083
+Bu yüzden hemen birinci flip flop için J1 ve K1 girişlerini, ikinci flip flop için konuşamıyorum.
+
+289
+00:58:15,219 --> 00:58:16,940
+İkisini koymam lazım.
+
+290
+00:58:20,596 --> 00:58:37,415
+Bunlar tamamen bu filiplopların girişleri nereye bağlanacak sorusuna cevap arayacak. Aslında şurada mavi ile belirttiğim şeyler fonksiyon olarak sonradan elde etmem gereken şeyler olmuş oluyor.
+
+291
+00:58:48,563 --> 00:58:55,844
+Tek bir bit olduğu için bir sefer de göstermiştik. Peki buradaki çıkışı kaç bitle ifade etmem gerekecek?
+
+292
+00:58:56,463 --> 00:58:57,264
+Kim söyleyebilir?
+
+293
+00:59:12,019 --> 00:59:14,019
+Değer bazında düşünün arkadaşlar.
+
+294
+00:59:15,799 --> 00:59:18,779
+Hocam 4'ü yazacağımız için belki 3 bit olabilir.
+
+295
+00:59:19,239 --> 00:59:20,719
+Evet, öyle düşünmemiz lazım.
+
+296
+00:59:20,719 --> 00:59:31,628
+Yani eğer ki şöyle başlıyor olsaydı, 0, 1, 2, 3 diye duruyor olsaydı, o zaman biz bunu 0...
+
+297
+00:59:31,635 --> 00:59:55,956
+Evet, 0, 1, 2, 3, doğru. 2 bitle biz bunu gösterebilecektik ama 4'ün olması orada işi bozdu biraz. O yüzden mecburen 3 bite dönmemiz lazım. Hatta burada göreceksiniz şimdi R1, Z2, Z3 şeklinde. Bunların da çıktığı gösterdiğini, bunun birinci flip lobu, şunun da ikinci flip lobu gösterdiğini aklımızda bulunduralım.
+
+298
+00:59:55,956 --> 00:59:57,456
+Şimdi bakıyorum.
+
+299
+00:59:58,835 --> 01:00:08,775
+Burada aslında şu ara Jika ters tanım bağıntısını da şurada görüyorsunuz. Bir yandan oradan kopya çekerek doldurmamız gerekecek.
+
+300
+01:00:12,788 --> 01:00:37,768
+Birinci flip-flop aslında birinci durumlara değişimine bakacak. Q1'den büyük Q1'e geçişi hangi JK ile sağlıyordum? Önceki durum sıfır, sonraki durum sıfır. Bakın, önceki durum sıfıra sıfırsa, J'ye sıfır, K'ya don't care bağlamam lazım. Bunu herkes görebildi mi? Sorun var mı burada?
+
+301
+01:00:39,603 --> 01:00:41,903
+Tamamen testanın bağıntısını kullandım.
+
+302
+01:00:44,823 --> 01:00:45,843
+Sanırım yok.
+
+303
+01:00:47,083 --> 01:00:51,423
+Peki, aynı şekilde diğer Q'lara bakabilirim.
+
+304
+01:00:51,783 --> 01:00:56,483
+Önceki durum sıfır, sonraki durum bir ise, bir'e don't care'ı kullanmam gerekiyor.
+
+305
+01:00:56,943 --> 01:01:03,043
+Bir'e sıfırsa, şuradan bakıyorum, hangi çifti kullanmam gerektiğine, X'e 1'i kullanmam lazım.
+
+306
+01:01:03,923 --> 01:01:06,163
+Ve son durumda X'e sıfırı kullanmam lazım.
+
+307
+01:01:07,668 --> 01:01:22,887
+İkinci Q2 durumlarına bakalım. Q2 0'a 1 olduğu durumda 1'e don't gear. Sırasıyla yazıyorum. Buraları hızlandırıyorum. Çünkü bir daha aynı şeyleri tekrar etmiş olacağım.
+
+308
+01:01:25,547 --> 01:01:32,827
+İkinci flip-flop'un nasıl bağlanması gerektiğini de buradan görmüş olduk. Peki çıktılar ne olacak? Çıktılar çok basit.
+
+309
+01:01:33,940 --> 01:01:57,680
+Zaten ilk adımda 1 diye, sonraki adımda 2, sonra 3, sonra 4 diye sayması lazım. Bu durumda buradaki kombinasyon ne olacak? 0, 0, 1. Şu Z3'ü en düşük anlamlı bit olarak düşünün. Buna 0, 1, 0. Şuna 0, 1, 1. Yani buradakinin aslında binary karşılığını yazıyoruz. 4 için de 1, 0, 0 şeklinde yazmış oldum.
+
+310
+01:01:58,519 --> 01:02:00,039
+Burada bir sorun var mı?
+
+311
+01:02:01,907 --> 01:02:06,028
+Hocam neden 3 bit kullandığımızı tamamlamadım? Tekrar edebilir misiniz acaba?
+
+312
+01:02:06,248 --> 01:02:13,488
+Tamamen sayıyla ilişkili. Nereden saymasını istiyoruz, başlamasını istiyoruz. 1, 2, 3, 4 diye istiyoruz.
+
+313
+01:02:14,268 --> 01:02:22,168
+Birin 2 bitlik karşılığını yazabilirim. 0, 1. 2'nin yazabilirim. 1, 0. 3'ü yazdım. 1, 1 ve 4.
+
+314
+01:02:24,532 --> 01:02:30,851
+4'ü yazarken mecburen 3. haneye denk gelmesi gerekiyor. Burada bir sıkıntı var yani.
+
+315
+01:02:33,751 --> 01:02:40,572
+Burada mecburen 1.00 yapmam lazım. 3 bit kullandıktan sonra geri kalanlar için de mecburen 3 bit kullanıyor gibi oluyor.
+
+316
+01:02:40,572 --> 01:02:47,851
+Bu adam şöyle saysaydı 1, 2, 3 diye o zaman 2 bit kullanmamız bizim için yeterli olacaktı.
+
+317
+01:02:51,572 --> 01:02:55,392
+[öğrenci] yazmış ne demiş bir terslik var gibi.
+
+318
+01:02:57,112 --> 01:03:04,711
+Q1, Q2, 0, 0, 0, 1, 1, 1, 1, 0 olmayacak mıydı?
+
+319
+01:03:07,472 --> 01:03:09,692
+Durum diagramında o şekilde gidiyordu.
+
+320
+01:03:09,692 --> 01:03:10,692
+Aslında...
+
+321
+01:03:12,179 --> 01:03:17,159
+Biz onu durum diagramına taşırken şuradaki sonraki durum diagramına göre taşıdık.
+
+322
+01:03:17,259 --> 01:03:24,919
+Bakın şurada dikkat edin Q1, Q2'nin 0, 0 olduğu durumda durum diagramı nereye besliyor? 0, 1'e besliyor.
+
+323
+01:03:26,019 --> 01:03:30,039
+İkinci duruma. Sonra 0, 1'den nereye besliyor? 1, 1'e.
+
+324
+01:03:30,619 --> 01:03:34,579
+Bakın 0, 1 olduğu durumda bir sonraki durum 1, 1'e beslenmiş oldu.
+
+325
+01:03:37,652 --> 01:03:49,952
+Bir bir durumu nereye besliyor? Bir sıfıra dönüştürüyor. Yani önceki durum bir birse, sonraki durum bir sıfır oluyor. Bir terslik yok aslında. Orada herhangi bir problem bulunmuyor.
+
+326
+01:03:55,699 --> 01:04:01,699
+Fazla gitti. Keşke silmeseydik. Şöyle hep olmaz.
+
+327
+01:04:04,400 --> 01:04:08,699
+Şimdi, toparlayacak olursak, hemen hızlıca.
+
+328
+01:04:10,879 --> 01:04:17,699
+Benim yapmam gereken şey, JK, flip-flop girişlerini bulmak. Dolayısıyla, J1 için...
+
+329
+01:04:18,675 --> 01:04:41,395
+Aslında girişlerin Q1 ve Q2'nin bir fonksiyonu olacak bir fonksiyon üretmem lazım. Bu bir, birinci fonksiyonu. İkincisi, J2 için tabii ki, hatta K1 için diyeyim, çok karışmasın. Birinci flip-flop'un ikinci girişi için ikinci fonksiyonu üretmem lazım. Bunlar bir önceki durumlara bağlı.
+
+330
+01:04:44,447 --> 01:04:46,607
+K2'yi de aynı şekilde bulmam lazım.
+
+331
+01:04:48,847 --> 01:04:54,147
+Ve bunların haricinde Z1, Z2 ve Z3'ü de
+
+332
+01:04:58,164 --> 01:05:10,924
+Girişlerin fonksiyonu halinde bulmam lazım. Yani bayağı bir şey yapacağım ben burada. Her birini bulmak için biraz uğraşacağım ama işin kolay kısmı ne? Sadece iki tane değer üzerinden yapacağım bunu.
+
+333
+01:05:11,484 --> 01:05:25,624
+Şimdi bunu hemen yapmaya çalışayım. Şu kısmı sileyim ki çünkü yer kaygım oluyor aşağıda. Zaten yazdığımda anlayacaksınız. J1 için.
+
+334
+01:05:25,967 --> 01:05:37,527
+Mesela hemen bir karno map yapalım. Karno map yapmaya bile gerek yok ama yine de ben burada gösteriyorum. 0, 1, 0, 1 olma durumlarını çizeceğim.
+
+335
+01:05:40,347 --> 01:05:50,987
+G1, Q1'e Q2 durumunda nasıl değerler alıyor? Bakın doldurmamız lazım. Şurada farklı bir renkle göstereyim ben bunu. Morla göstereceğim şimdi.
+
+336
+01:05:55,764 --> 01:06:05,824
+Q1 0 iken, Q1 0 ise, J1'in alması gereken değer 0. Dolayısıyla şurası 0 koydum. Tamam.
+
+337
+01:06:07,143 --> 01:06:19,943
+Q1 0 iken, Q1 1 iken, J1 1 alıyormuş. Yani Q1 0, Q1. Bir dakika ben burada yanlış yapıyorum şu anda.
+
+338
+01:06:20,692 --> 01:06:29,132
+Büyük Q1'e baktım. Büyük Q1'le ilişkim olmaması lazım. Bu yüzden burada bir hata yaptım. Hemen geri dönüş yapacağım.
+
+339
+01:06:31,251 --> 01:06:46,751
+Aslında şuradaki ikiliğe karşılık J'nin ne olduğunu bakmaya çalışıyorum. 0, 0 olduğu durumda 0, 0, 1 olduğu durumda yani Q1, 0, Q2, 1 iken J1, 1.
+
+340
+01:06:48,307 --> 01:06:51,768
+Şurası don't care, burası don't care olduğunu görüyorsunuz.
+
+341
+01:06:52,948 --> 01:06:59,888
+Buna göre şuradaki fonksiyonu yazabilir misiniz? G1'i nasıl yazabiliriz?
+
+342
+01:07:05,556 --> 01:07:12,896
+Şunları birleştirebiliriz. Aslında doğrudan bunun da Q2'ye bağlı olduğunu görebilirsiniz.
+
+343
+01:07:14,916 --> 01:07:28,596
+Aynı şekilde bunu K1 için de yapabilirsiniz. K1 için Q2'ye Q1 durumlarını çizelim. 0'a 1, 0'a 1 olacak şekilde.
+
+344
+01:07:30,596 --> 01:07:32,536
+Hemen hızlıca yapalım.
+
+345
+01:07:33,396 --> 01:07:37,716
+0'a 0 durumunda don't care'miş, 0'a 1 durumunda don't care'miş.
+
+346
+01:07:40,236 --> 01:07:44,996
+Bir dakika, evet doğru. Burası da 1'e 0 olacak şekilde geliyor.
+
+347
+01:07:47,816 --> 01:07:50,636
+Burada nasıl yazabiliriz C1'i? Ne dersiniz?
+
+348
+01:07:51,816 --> 01:07:52,796
+Şey, K1'i pardon.
+
+349
+01:07:56,755 --> 01:08:06,076
+Şöyle toplayabiliriz. Dolayısıyla Q1'e göre değişmiyor. Q2'nin de D'li olacak şekilde bu belirlenebilir.
+
+350
+01:08:07,596 --> 01:08:20,056
+Aynı yapıları hemen ben şuraya J2 için, K2 için yapmaya çalışayım. 0'a 1, 0'a 1 şeklinde koyayım. Hızlıca yapmak adına yapıyorum bunu.
+
+351
+01:08:22,131 --> 01:08:27,371
+J2, bakıyorum sıfıra sıfırken bir, sıfıra birken don't carry.
+
+352
+01:08:28,551 --> 01:08:32,691
+Sıfıra sıfırken bir, sıfıra birken don't carry.
+
+353
+01:08:36,212 --> 01:08:45,231
+Diğer durumda da 0'a X şeklinde oluyor. Burada da bunu böyle bağlayabilirim. Dolayısıyla buradaki J2'nin de ne olduğunu söyleyeceğim.
+
+354
+01:08:48,756 --> 01:08:53,256
+Q2'ye göre değişmediğini söyleyeceğim. Q1'in D ili ile ilişkili olduğunu söyleyeceğim.
+
+355
+01:08:55,176 --> 01:08:58,256
+K2'yi de hemen 0, 1 şeklinde yazabilirim.
+
+356
+01:09:00,176 --> 01:09:00,816
+0, 1.
+
+357
+01:09:02,796 --> 01:09:11,076
+K2'ye geliyorum. K2'nin 0'a 0 olduğu durumda X'miş. 0'a 1 olduğu durumda 0'miş. Yani şöyle.
+
+358
+01:09:12,496 --> 01:09:13,416
+X, 0.
+
+359
+01:09:14,579 --> 01:09:32,579
+1'e 0 olduğu durumda x'miş, 1'e 1 olduğumda 1'miş. O zaman x'e 1 şeklinde olacak. Bu durumda bunu elde etmek için de şöyle almam lazım. Burada da K2'nin aslında Q1'e eşit olduğunu görmem gerekiyor.
+
+360
+01:09:33,360 --> 01:09:40,539
+Dolayısıyla flip-flopların içerisine girişine bağlanması gereken değerleri aslında buradan bulmuş oldum.
+
+361
+01:09:41,492 --> 01:09:53,351
+Bir de durumlara bakmam lazım. Bu durumları da doğrudan kolay bir şekilde yazabilir miyim acaba bir şey yapmadan? Bakalım.
+
+362
+01:10:11,252 --> 01:10:16,212
+Bunu biraz aşağıya kaydırsam, çünkü hem tabloyu hem de şeyi almaya çalışıyorum.
+
+363
+01:10:17,492 --> 01:10:24,231
+Hepsini aynı anda size gösteremediğim için sorun çıkıyor. Bunu aşağıya kaydırsam aslında her şey kolay olacak.
+
+364
+01:10:25,152 --> 01:10:34,811
+Çünkü bunları bulduk zaten. Evet. Şimdi Z1, Z2, Z3'ü bulmam lazım. Z1'i yazacak olursam, Z1'in 1 olduğu tek bir tane yer var.
+
+365
+01:10:34,811 --> 01:10:37,912
+Dolayısıyla onun min termine göre gidebilirim aslında.
+
+366
+01:10:39,572 --> 01:10:42,712
+Bir bakalım doğru mu yaptık? Bir yerde hatamız mı var?
+
+367
+01:10:58,996 --> 01:11:00,996
+Yok, bir yerde hatamız gözükmüyor şu anda.
+
+368
+01:11:02,656 --> 01:11:07,156
+Önceki durumla sonraki durumu endlersek Z1'i elde ettiğimizi görüyoruz.
+
+369
+01:11:07,216 --> 01:11:11,496
+Çünkü diğer durumlarda bakın Z1'in zaten 0, 0, 0 olduğunu görüyorsunuz.
+
+370
+01:11:11,496 --> 01:11:17,176
+İsterseniz bunu şeyle de yapabilirsiniz, az önce yaptığımız gibi de yapabilirsiniz.
+
+371
+01:11:18,115 --> 01:11:22,496
+Mesela Z2 için hemen Carnot çıkarabiliriz.
+
+372
+01:11:23,188 --> 01:11:29,788
+Ama burada don't care durumları olmadığı için karno yazmamıza gerek yok ya. Böyle bir şeye gitmeyelim. Olabildiğince bizim için kolay olsun.
+
+373
+01:11:31,067 --> 01:11:35,007
+Z2. Z2'yi nasıl yazabiliriz?
+
+374
+01:11:39,060 --> 01:12:04,200
+Yine min termlerle yazacak olursak iki tane aslında bir değeri var. Dolayısıyla Q1'in değili çarpı Q2 artı Q1 çarpı Q2'nin değili halinde yazılabilir. Dolayısıyla Q1'le aslında Q2'nin XOR'u haline gelmiş oldu. Doğru mu yaptık bilmiyorum. Dur bakalım.
+
+375
+01:12:22,771 --> 01:12:33,572
+Burada tekrar bir şey yapalım. Karnoya da bakalım. Çünkü burada bir hata yapmış olmayalım diye şey yapıyorum. Z2.
+
+376
+01:12:37,747 --> 01:12:43,147
+0'a 1, Q2'nin 0'a 1 olma durumlarında.
+
+377
+01:12:53,652 --> 01:13:07,851
+Q0, 0 ise zaten Z2, 0. Orada sorun yok. 1, 1 ise zaten o da 0. Buna bakalım. Bu da 0. Ama çaprazda kalıyorsa, şurada veya şuradaysa o zaman XOR durumu oluşmuş oluyor.
+
+378
+01:13:15,347 --> 01:13:32,847
+Hocam biz on biri üçe vermiştik, onu dörde vermiştik. Bir sıfırı, bir biri üçe vermiştik, bir sıfırı dörde vermiştik ama yanlış çıktı veriyoruz şu an. Tam anlayamadım.
+
+379
+01:13:42,036 --> 01:13:45,355
+Çıktıları yanlış yazdık. Ondan dolayı oluyor değil mi bu?
+
+380
+01:13:51,764 --> 01:13:55,203
+Oto'nun söylemek istediği şey buydu sanırım. Ben bunu çok anlayamadım.
+
+381
+01:14:01,524 --> 01:14:04,184
+Şimdi şöyle tekrar bakalım.
+
+382
+01:14:10,996 --> 01:14:24,996
+Önceki durumdan, sonraki duruma geldik ya, 0-1 durumundayız. 0-1 durumunu ne gösterecek? 2 gösterecek. Dolayısıyla benim buraya 2 yazmam lazım. Problem buradan çıktı sanki.
+
+383
+01:14:30,100 --> 01:14:31,120
+Doğru değil mi arkadaşlar?
+
+384
+01:14:41,460 --> 01:14:42,440
+Bir tepki alamadım.
+
+385
+01:14:47,539 --> 01:14:49,559
+Biraz kafam karıştıracağım, ben onu düşünüyorum.
+
+386
+01:14:50,920 --> 01:14:57,620
+Şimdi şöyle, önceki durumlara karşı sonraki durumu belirledik ya, sonraki durum bu adamın ne? 0-1.
+
+387
+01:14:59,440 --> 01:15:04,720
+Bu adamın sonraki durumu 0-1 ise, sonraki olması gereken değeri de 2 olması lazım.
+
+388
+01:15:15,315 --> 01:15:19,215
+Burada bir bir durumuna karşılık gelen çıkış ne?
+
+389
+01:15:23,283 --> 01:15:30,804
+Bir dakika, iki olması lazım dedim. Ben gittim, şey yazmışım, orada sıkıntı oldu. Sıfır bir yazmam lazım. İkiye karşılık gelecek.
+
+390
+01:15:31,904 --> 01:15:37,123
+Dolayısıyla şu durumdan bu duruma geçtiğim zaman birbirinin karşısındaki numara üç olacak.
+
+391
+01:15:39,023 --> 01:15:44,603
+Bir birden bir sıfıra geçtiğim durumda bunun karşılığında aslında dört olacak.
+
+392
+01:15:45,923 --> 01:15:50,804
+Yani bir birden bir sıfıra geçtiğimde evet bunun karşılığında dört olacak.
+
+393
+01:15:51,764 --> 01:15:56,264
+1, 0'dan 0, 0'a geçtiğinde 0, 0 zaten 1'i göstermesi gerekecek.
+
+394
+01:15:57,064 --> 01:16:00,244
+Dolayısıyla bunların hemen karşılıklarını buraya yazmam gerekiyor.
+
+395
+01:16:01,203 --> 01:16:07,684
+0, 1, 1, 0, 0, 1 ve 1, 0, 0 şeklinde bunu yazmam lazım.
+
+396
+01:16:08,684 --> 01:16:10,623
+Buradaki Z'ler o zaman şey oldu.
+
+397
+01:16:25,844 --> 01:16:30,043
+Z1 için kim söyleyebilir, nasıl yazmamız lazım?
+
+398
+01:16:49,652 --> 01:16:54,731
+Q1 çarpı Q2 oldu. Z2 için ne yazmamız gerekiyor?
+
+399
+01:17:05,427 --> 01:17:08,127
+Q1'in D ile yazmamız gerekiyor.
+
+400
+01:17:12,467 --> 01:17:36,768
+Aslında şöyle yazabiliriz. Z2 için Q1'in değil çarpı Q2'nin değil artı Q1'in değil çarpı Q2. Dolayısıyla buradan Q1'in değil olacağını görebilirsiniz. Z3 için ne yazmamız gerekiyor?
+
+401
+01:17:40,948 --> 01:17:58,568
+Q1'in değili çarpı Q2 artı Q1 çarpı Q2'nin değili haline gelmiş oluyor. Bu da XOR şeklinde bunu düşünebilirsiniz.
+
+402
+01:18:06,547 --> 01:18:08,627
+Burada sorusu olan var mı arkadaşlar?
+
+403
+01:18:24,884 --> 01:18:30,904
+Hocam, eğer düz, hani, 2-3-4 şeklinde, düz bir şekilde gitseydik, JK, flip, blockları farklı çıkar mıydı?
+
+404
+01:18:35,904 --> 01:18:43,363
+Hocam, hani biz, Tarno'ya daha uygun olsun diye değiştirmiştik ya, onu düz bir şekilde devam etseydik, JK, flip, blockları farklı çıkar mıydı?
+
+405
+01:18:46,103 --> 01:18:52,023
+Çıkar mıydı? Çıkabilirdi tabii ki, evet. Yani ona göre sonuçta her şey değişecekti.
+
+406
+01:18:52,756 --> 01:19:11,296
+CK uygulamam gereken şeyler değişecekti, durumlar değişecekti. Tasarım olarak çok değişmeyecekti. Tabii ki kalıp anlamında benzer yapılar çıkacaktı ama hangi girişi nereye beslemen gerektiği belki değişebilirdi. Değilleri değişebilirdi mesela. Onları takip etmek gerekiyor.
+
+407
+01:19:13,435 --> 01:19:16,935
+Şöyle bir hızlıca toparlayacak olursak, kafamız karışmış olabilir.
+
+408
+01:19:18,847 --> 01:19:43,387
+Ben de şu anda 6. 7. dersimi anlattığım için biraz yorulmuş olabilirim. O yüzden hemen hızlıca şey yapayım. 1-2-3, 1-2-3-4, 1-2-3-4 diye sayan bir senkron ardaşıl devre tasarlamamız gerekiyor. Bunu J.K. Filip Filip'la tasarlayınız demiştim. Öncelikle buradaki durumları belirledik.
+
+409
+01:19:44,212 --> 01:20:04,052
+Nasıl sayması gerektiğini belirdik daha doğrusu. 1'den 2'ye, 2'den 3'e, 3'den 4'e şeklinde. Peki 1'i göstermesi için hangi durumu yapabiliriz? Sonuçta 2 fil flop kullanmam lazım. 0-0-0-1, 1-0-1-1 şeklinde bunu durumlar halinde yazabilirim. Karnoya uygun olsun diye arkadaşımızın dediği gibi burayı 1-1 yapmıştık.
+
+410
+01:20:05,332 --> 01:20:27,392
+Ne demişti adam? JK flip-flop kullanınız demişti. Ben JK flip-flop bunu kullanıyorum şurada. Ama bunun ters tanım bağımsını kullanıyorum her zaman aşağıdaki gibi. Nasıl çıkaracağımı görmüş oldum. Burada amacım bir giriş olmadığı için önceki durumu ve sonraki durumu koymak.
+
+411
+01:20:27,796 --> 01:20:52,615
+Bu önceki durumdan sonraki duruma beni getirebilecek JK girdilerini bulmaya çalışıyorum. Bunu da terstanın bağlantısıyla yapıyorum. Bunun haricinde bir de çıktılar olması lazım. Çıktılar da sonuçta sonraki çıktı gibi düşünmeniz gerekiyor. Yani giriş 0-0 iken beni 0-1'e getirdi. Evet, buradan buraya geldim.
+
+412
+01:20:53,011 --> 01:21:03,091
+Bu adımı attıktan sonra yeni değeri ne göstermesi lazım? İkiyi göstermesi lazım. Dolayısıyla ben geldim buraya iki gösterecek binary karşılığı yazdım.
+
+413
+01:21:04,131 --> 01:21:17,631
+Yine 1-0 girişi varken önceden yeni durumun 1-1 olmasını bekliyorum. 1-0'dan 1-1'e beni aslında 3'e getirmiş oldu. O zaman benim buraya 3'ü yazmam lazım falan gibi devam ediyorum.
+
+414
+01:21:18,068 --> 01:21:41,068
+Buradaki tüm girdiler üzerinden bunları kullanarak aslında JK filpflopu, iki filpflopla bunları tasarlayabilirsiniz. Genel olarak şöyle hepsini çizmeyeceğim. Siz zaten geri kalanı nasıl bağlayacağını bir öncekinden gördünüz. İki tane JK filpflop olacak biliyorsunuz. Bunların klopları
+
+415
+01:21:41,524 --> 01:21:50,924
+Mutlaka aynı olması lazım. En kritik nokta burası. Çünkü senkron devre yapıyoruz. Aynı anda işlemleri devam etmesi için böyle bir şey yapmamız lazım.
+
+416
+01:21:50,924 --> 01:21:54,604
+Ve bunların çıkışlarında Q ve Q üstüleri var.
+
+417
+01:21:59,283 --> 01:22:09,703
+Sonuçta buradan istediğiniz şeyi alıp geriye besleme durumu söz konusu olabilir. Mesela J1'e ne bağlanması gerekiyormuş? Q2 bağlanması gerekiyormuş.
+
+418
+01:22:09,703 --> 01:22:18,123
+Yani bu ikinci flip flop olduğu için Q2'yi doğrudan getirip şuradan J1'in girişine bağlamanız gerekiyor.
+
+419
+01:22:21,908 --> 01:22:46,327
+Başka ne var? İşte K1'e ne bağlanması lazım? Q2'nin değili. Değili zaten burada elimde var. Dolayısıyla ben şurada farklı bir renkle yapayım bunu. Buradan atlayarak şöyle şuraya birinci girişe bunu bağlayabilirim. Başka ne vardı? Buraları ben karıştırmışım. Q1'in değili ve Q1 mi var? Evet.
+
+420
+01:22:48,115 --> 01:22:50,796
+Q1'in deyilini bunun G'sine
+
+421
+01:22:55,988 --> 01:23:19,167
+Şöyle göstereyim. Bunu da bunun K'sına bağlıyorum. Ve bu şekilde fil-flop bağlantılarını yapmış oluyorum. Tek yapmam gereken Z çıktılarını buradan nasıl sağlayacağım? Z çıktılarını da bunları, bunlar üzerinde işlem yaparak elde edebilirim. Mesela Q1'in değilinden alıp, bu da oradan Z2'dir diyebilirim. Ve bunun üzerinden şu işlemleri yaparak da,
+
+422
+01:23:19,796 --> 01:23:25,416
+Z2, Z1 ve Z3 çıktıkları nasıl elde edileni gösterebilirim.
+
+423
+01:23:26,796 --> 01:23:27,775
+Sorusu olan var mı?
+
+424
+01:23:33,747 --> 01:23:39,927
+Peki o zaman bir ara verelim. 10 dakikalık bir ara olsun. 25 geçe tekrar başlarız.
+
+425
+01:23:40,768 --> 01:23:41,907
+Burası açık kalsa olur mu?
+
+426
+01:23:43,167 --> 01:23:43,787
+Tabii olur.
+
+427
+01:33:30,100 --> 01:33:31,480
+Tekrar merhaba arkadaşlar.
+
+428
+01:33:33,060 --> 01:33:36,520
+Şimdi burada bir hata yapmışım. Az önce fark ettim.
+
+429
+01:33:38,180 --> 01:33:40,700
+Cevap kağıdıyla karşılaştırdığım zaman.
+
+430
+01:33:42,659 --> 01:33:47,140
+Problem şu. Az önce benim yorumlarken yaptığım hata şuydu.
+
+431
+01:33:48,220 --> 01:33:56,159
+Önceki durumdan sonraki duruma geçtikten sonra bu durumun çıktığına yansıtılmış halini düşünmüştüm.
+
+432
+01:33:56,884 --> 01:34:06,264
+Ama cevap kağıdında şöyle bir durum var. Aslında bu duruma geçtiğime göre ben bu duruma karşılık gelen çıktığı görmek istemem lazım.
+
+433
+01:34:07,083 --> 01:34:14,304
+Yani giriş sıfır sıfır geldiği zaman çıkışın bana zaten bir üretmesi lazım. Bu yüzden ben bunu buraya koyuyorum.
+
+434
+01:34:15,463 --> 01:34:24,244
+Orada bir hata yapmışım ve dolayısıyla bu adamın sıfır sıfıra karşılık gelen durumda bir, sıfır bire karşılık gelen durumda iki.
+
+435
+01:34:24,787 --> 01:34:31,387
+1-0'a karşılık gelen durumda 4. Çünkü o şekilde zaten planladım durum makinesinden.
+
+436
+01:34:32,647 --> 01:34:36,887
+Ve en son 1-1'e karşılık gelen durumda da 3 koymam gerekiyor.
+
+437
+01:34:36,987 --> 01:34:43,087
+Buna göre çözerseniz zaten şurada benim yazdığım çıktıları göreceksiniz. Açık bir şekilde de yazdım.
+
+438
+01:34:45,107 --> 01:34:49,787
+Şimdi burada benim size iki sorum olacak. Bakalım bunu nasıl...
+
+439
+01:34:50,676 --> 01:34:52,596
+Yorumlayacaksınız.
+
+440
+01:34:53,916 --> 01:35:04,776
+Buradaki toplayıcı, bu şekilde 1, 2, 3, 4 diye değil de, şöyle saysaydı acaba nasıl bunu planlamamız gerekirdi?
+
+441
+01:35:06,176 --> 01:35:13,336
+0, 1, 2, 3, 4, 5, 0, 1, 2, 3, 4, 5.
+
+442
+01:35:14,496 --> 01:35:16,396
+Bu şekilde sürekli saydığını düşünün.
+
+443
+01:35:17,716 --> 01:35:21,036
+Az önce tasarladığımızla nasıl bir farkı var sizce?
+
+444
+01:35:26,963 --> 01:35:29,083
+Fili flop kullanırdık. Doğru.
+
+445
+01:35:32,104 --> 01:35:34,543
+Altı tane durumu var. O da doğru.
+
+446
+01:35:38,579 --> 01:35:45,880
+İkisi de doğru aslında ama başka bir şey daha var. Kalan durumlar için her şeye don't care verirdik diyorsun.
+
+447
+01:35:48,760 --> 01:35:52,300
+Evet dışarıda kalan durumlar aslında burada biraz daha kritik olmuş oluyor.
+
+448
+01:35:52,300 --> 01:36:00,460
+Biz ilk etapta fil filobu enerji verdiğimizde fil filobların içerisinde hangi değerin tutulduğunu bilmiyoruz.
+
+449
+01:36:05,716 --> 01:36:10,356
+Biliyorsunuz JK, flip-flop'un JK girişi bir de clock girişi var.
+
+450
+01:36:11,756 --> 01:36:14,096
+İşte çıkışları ve çıkışın değili var.
+
+451
+01:36:15,256 --> 01:36:21,356
+Ama bunun haricinde bir de set reset uçları var.
+
+452
+01:36:22,356 --> 01:36:24,695
+Şuralarda uçlar var biliyorsunuz ki.
+
+453
+01:36:32,528 --> 01:36:50,148
+Önce set reset'e 1-1 verip, sonra set reset nasıl yapıyorduk buradaki işi? Pardon, 1-1 yaparsak zaten çalışıyordu. Set reset'e önce 0-0 verip, sonra 0-1 verip, sonra 1-1 verirsek arka arkaya bunları.
+
+454
+01:36:51,108 --> 01:36:58,608
+Aslında ilk bu flip lobun içerisinde 1'i initialize etmiş oluyoruz. Yani ilklendirmiş oluyoruz.
+
+455
+01:36:58,960 --> 01:37:09,980
+Set reset'in içine ilk önce 0, 0, 1, 0 veya 1, 1 verirsek, yani arka arkaya bunları verirsek, o zaman da 0 ile ilklendirmiş oluyoruz.
+
+456
+01:37:11,360 --> 01:37:17,960
+Biz dolayısıyla daha bu sayma işine başlamadan entegre veya işte lojik kapı, buradaki...
+
+457
+01:37:18,511 --> 01:37:28,511
+Tüm durumlarda set resetleri 0-0'dan başlatırsam aslında şurada 0-0'da başlamış oluyor ve bu düzgün bir şekilde saymaya devam ediyor zaten.
+
+458
+01:37:29,511 --> 01:37:37,511
+Dediğiniz gibi 3 flip flop kullanırdık, devam ederdik, orada bir sorun yok. Ama kritik şey buradaki ilk durumun ne olacağı.
+
+459
+01:37:37,511 --> 01:37:42,511
+Eğer ki dediğim gibi şöyle set reset işlerini kullanmadık.
+
+460
+01:37:43,475 --> 01:37:51,055
+Tamamen şansa bir şekilde gidiyoruz. Flip-flopların içerisinde öyle bir kombinasyon oluştu ki ilk değeri 6 olmuş oldu.
+
+461
+01:37:51,836 --> 01:37:57,935
+Şimdi 6'dan itibaren adam saymaya başlayacak ama nasıl bir çıkış sağlayacağı burada soru işareti.
+
+462
+01:37:58,796 --> 01:38:06,475
+O yüzden bunu çözmenin yolu kesinlikle ilk etapta bunları initialize etmek.
+
+463
+01:38:10,899 --> 01:38:15,379
+Bunu hiç böyle bir durum oluşmadan çözebilme imkanımız var.
+
+464
+01:38:17,219 --> 01:38:20,699
+Başka ne diyebiliriz? Başka bir şey söylememize gerek yok burada.
+
+465
+01:38:24,404 --> 01:38:42,543
+Şu anki yaptığımız sayıcı bir asenkron sayıcı olmuş oldu. Senkron demesinin nereden geliyor? Tüm devre tek bir klo paylaşıyor ve bu kloğun yükselen kenarı ile birlikte hepsi aynı anda bir adım işlemini yapıyor.
+
+466
+01:38:45,543 --> 01:38:50,923
+Evet, [öğrenci]'ın az önce sorduğu soruyu unutmuşum. Mesela burada sıfırdan başlaması için.
+
+467
+01:38:51,380 --> 01:39:02,319
+Bunu tabii ki hepsini bütün free-flop olarak sıfırla initialize etmemiz gerekiyor. Ondan sonra adam zaten kendi bildiği gibi çalışacak. Orada bir sorun yok yani.
+
+468
+01:39:03,559 --> 01:39:10,639
+Problem ne? Herhangi bir durumda bizim isteğimiz dışında 6'dan başlarsa sıkıntı olabilir. Problem bu.
+
+469
+01:39:17,460 --> 01:39:32,920
+Evet, ne diyorduk? Bu senkron bir sayıcı diyorduk. Senkron bir şekilde sayıyor. Ama bazı durumda asenkron sayıcılar da karşımıza çıkabiliyor. Şimdi asenkron sayıcılardan bahsedelim.
+
+470
+01:39:38,996 --> 01:39:47,836
+Aslında ripple counter dediğimiz şey, ripple counter dediğimiz şey, senkron bir sayıcı oluyor.
+
+471
+01:39:49,856 --> 01:39:56,916
+Senkronda tüm clocklar ortakken, asenkronda diğer clock veya clocklar diğer yerlerden beslenebilir.
+
+472
+01:39:57,696 --> 01:40:01,616
+Tüm sistem aynı kare dalgayı kullanmıyor olabilir burada clock açısından.
+
+473
+01:40:02,163 --> 01:40:07,663
+Şimdi senkon sayıcıyı genel olarak düşünürken hemen şöyle bir şey aklımızda canlandıralım.
+
+474
+01:40:08,283 --> 01:40:17,644
+Sıfırdan yediye kadar bir sayıcı yapmak istiyoruz. Çok basit. Bir, iki, üç, dört, beş, altı, yedi şeklinde gidiyor.
+
+475
+01:40:18,344 --> 01:40:24,003
+Bunların karşılığında bitlerini de düşünüyorum. Z3, Z2, Z1 şeklinde.
+
+476
+01:40:24,623 --> 01:40:29,163
+Buradaki kombinasyonlar nasıl olacak? Tabii ki bunların binary karşılıkları olacak. Sıfır, sıfır, bir.
+
+477
+01:40:29,568 --> 01:40:54,408
+0, 1, 0. Bu şekilde doldurabilirim. 1, 1, 1, 1. Sonra 1, 1, 0, 0, 1, 1. Şurada 0, 1, 0, 1, 0, 1 şeklinde. Genel olarak buradaki değişimlere şöyle bir göz atacak olursak aslında Z1'in daha hızlı değiştiğini düşünebiliriz.
+
+478
+01:40:57,779 --> 01:41:17,199
+1'den 0'a, 0'dan 1'e, 1'den 0'a sürekli kendini toggle eden bir yapı var. Bunu görebiliyorsunuzdur. Ama Z2 de öyle bir şey değil. İki adım bekliyor, sonra değiştiriyor. İki adım bekliyor, sonra değiştiriyor. Burada ise dört adım bekliyor, sonra değiştiriyor gibi bir durum var.
+
+479
+01:41:25,076 --> 01:41:42,496
+Ya da 4 Hz diyeyim. Buradaki değişme sıklığı 4 Hz ise bunun yarısı frekansta değişiyor. Daha yavaş değişiyor yani. Z3 de aslında onun daha da yarısı halinde değişecek. 1 Hz de değişmiş olacak.
+
+480
+01:41:44,496 --> 01:41:52,236
+Genel olarak benim buna göre asenkron şekilde bunu tasarlayabilir miyim düşüncesi buradan aklımda çıkıyor.
+
+481
+01:41:52,851 --> 01:42:07,351
+Genel yapım şu olacak. Dıştan gelen bir kuluğu tekrar girişe besleyeceğim ve böylelikle çıkışı girişe besleyeceğim ve bu şekilde bir sayıcı yapabilir miyim bunu düşünmek istiyorum.
+
+482
+01:42:07,571 --> 01:42:20,471
+En başta farklı kuluğunları TfD'yi yapabiliriz sanırım. Aslında yapılabilir. Şu an ben en basitinden başlayacağım. Yani şuradaki Z1 işini halletmeye çalışıyorum.
+
+483
+01:42:21,171 --> 01:42:46,692
+0, 1, 0, 1, 0, 1 diye saysın istiyorum. Ve bunu D-Fill Flop'la yapmak istiyorum. Bakalım nasıl basit bir şekilde bunu yapabiliriz. Öncelikle D-Fill Flop'u çizmem gerekir. Şuraya bir çiziyorum. Şuraya bir clock ucu koydum. Düzgün çizebilmek için şu kenarı biraz büyütsem iyi olur aslında. Şöyle.
+
+484
+01:42:50,612 --> 01:42:53,851
+Şu Q, bu Q'nun D ile çıkışı olacak.
+
+485
+01:42:56,471 --> 01:43:00,131
+Burada da D flip-flop'un zaten tek bir girişi vardı, onu biliyoruz.
+
+486
+01:43:06,707 --> 01:43:09,927
+Şimdi buna dışarıdan bir clock vereceğiz. Bu sorun değil.
+
+487
+01:43:13,363 --> 01:43:16,603
+Dev flip-flop'un çalışma mantığı nasıldı arkadaşlar?
+
+488
+01:43:22,036 --> 01:43:30,675
+Clock verildiğinde çıkış girişe eşit oluyordu. Basit bir çalışma mantığı vardı yani.
+
+489
+01:43:32,315 --> 01:43:43,315
+Buna göre o zaman benim burada nasıl bir bağlantı yapmam lazım ki bu yapı 0101 diye saysın. Ne dersiniz? Nasıl bir şey yapabiliriz?
+
+490
+01:43:44,515 --> 01:43:48,315
+Yani hangi çıkışı girişe bağlayayım ki böyle bir şey yapsın?
+
+491
+01:43:49,876 --> 01:43:51,175
+Q'nun değeri olabilir hocam.
+
+492
+01:43:51,735 --> 01:44:03,036
+Evet, çok doğru. Q'nun değini getirip D'ye bağlarsam, bakın şimdi, herhangi bir durumda sonuçta bu flip-flop içerisinde bir değer var. Herhangi bir değer var. Ne olduğunu bilmiyoruz.
+
+493
+01:44:03,815 --> 01:44:11,175
+1 ya da 0 olabilir sonuçta. Diyelim ki 1 var. Buradaki 1 nereye geldi? D'ye geldi.
+
+494
+01:44:16,948 --> 01:44:28,608
+D flip-flop'un yapısına göre çıkışa aktarılır. Çıkış 1 olmuş oluyor, giriş 0'a düşmüş oluyor. Pardon, pardon. Çıkış 1 olmuş oluyor, çıkışın değil 0'a düşmüş oluyor.
+
+495
+01:44:29,448 --> 01:44:40,128
+Artık 0'ı buraya besliyorum. Dolayısıyla şuradaki Q değeri 1, 0, 1, 0 olarak toggle edecek her seferinde.
+
+496
+01:44:40,756 --> 01:45:00,716
+Q'nun değil de 0, 1, 0, 1 diye toggle etmeye devam edecek. En basit bir clock işaretinden sayıcı böyle yapılabilir. Tabii ki bu sayma gibi olmuyor şu anda ama 0'dan 1'e kadar saymış oluyor. Öyle düşündüğümüz zaman da bir sayıcı mantığına girmiş oluyor.
+
+497
+01:45:05,076 --> 01:45:09,215
+Z2 ve Z3'ü de sağlayacak hale nasıl getirebilirim? Ne dersiniz?
+
+498
+01:45:41,171 --> 01:45:50,811
+Daha uzun periyoda sahip clocklarla demiş. [öğrenci] da o şekilde söylemiş. Aslında doğru. Olabilir. Bunların hepsi bir çözüm.
+
+499
+01:45:56,884 --> 01:46:12,004
+Burada, bu arada hüristik olarak az önce arka defizimiz şunu demişti, Q üstünü getirip D'ye bağlarız demişti. Bunu aslında yapabilmenin, düşünebilmenin başka bir yolu da var. Bunu da size göstereyim.
+
+500
+01:46:12,504 --> 01:46:23,124
+Ters tanım bağlantısını kullanmak. Eski Q'dan yeni Q'ya hangi D durumunda geçmem gerekiyor? Bakın, eski durum sıfırken,
+
+501
+01:46:23,764 --> 01:46:32,344
+Burada 1'e geçmem lazım değil mi? Toggle etmek için yani değiştirmek için. Bu durumda benim D'ye ne vermem lazım? 1 vermem lazım.
+
+502
+01:46:34,904 --> 01:46:44,644
+Eski durumum 1 iken 0'a geçmesini istiyorum bu basit sayıcının. Bu durumda D'ye ne vermem lazım? 0 vermem lazım.
+
+503
+01:46:48,416 --> 01:46:57,056
+Q'nun cinsinden yazacak olursak, Q'da ne varsa değilini kullanıyorum gibi görebilirsiniz.
+
+504
+01:46:58,696 --> 01:47:11,176
+Yani arkadaşımız orada hüristik olarak kendi aklından geçeni basit bir şekilde paylaştı ama bunu tersten gidecek olursak da terstenin bağıntısından böyle kullanabileceğimizi görüyoruz.
+
+505
+01:47:12,083 --> 01:47:33,524
+Veya aynı yapıyı mesela T free flop'la da tasarlama imkanımız var. T free flop'ta genel tanım, düz tanım bağıntısını hemen yazalım. T'ye karşılık Q ne oluyordu? T0 ise çıkış eski durumu şey yapıyor. T1 ise de eski durumun değilini alıyor otomatikman.
+
+506
+01:47:34,547 --> 01:47:42,307
+Bunun ters tanım bağıntısında önceki durum, sonraki durum ve buna göre T ne olmalı diye soracak olursak.
+
+507
+01:47:43,147 --> 01:47:49,487
+Önceki durum sıfırken bire dönüşmesi lazım. İstediğim şey bu. Bunu hangi T durumunda alırım?
+
+508
+01:47:51,728 --> 01:47:57,547
+T'ye birken alırım. Peki önceki durum, şu anki durum sıfırken sonraki durum...
+
+509
+01:47:59,315 --> 01:48:19,655
+Birken sıfır olmasını istiyorum. Burada da yine T'yi bir seçmem gerekiyor. Dolayısıyla T'ye sabit bir bağlarsam burada da sürekli sıfır bir sıfır bir sayıcı bir yapıya gitmiş oluyorum. Oldukça basit görebiliyorsunuz. Aynı şeyi JK flip-flop içinde düşünebilirsiniz. Hızlıca onu da yazalım.
+
+510
+01:48:21,648 --> 01:48:34,487
+Ne karşı Q nasıl değişiyordu? İşte 0, 0, 0, 1, 1, 0, 1, 1 şeklinde düşündüğümüzde J, K'nın 0, 0 olması durumunda bu Q'ydü. 0, 1 ve Q'yü südü.
+
+511
+01:48:36,108 --> 01:48:47,887
+Buna göre ters tanım bağıntısından Q, büyük Q, J ve K. Benim burada istediğim şey 0'dan 1'e dönüşmesi veya 1'den 0'a geçmesi.
+
+512
+01:48:48,884 --> 01:48:53,384
+Burada nasıl bir şey yaparsak bunları sağlayabiliriz, düşünüyorum.
+
+513
+01:48:55,004 --> 01:48:59,644
+Sıfırdan 1'e geçmesini istiyorsam, sıfırdan 1'e geçmesi şöyle olabilir.
+
+514
+01:49:02,824 --> 01:49:10,304
+Değilini alabilir, çıkışın değilini. Yani 1'e 1 durumunda olabilir veya 1, 0 durumunda olabilir.
+
+515
+01:49:10,304 --> 01:49:14,224
+Dolayısıyla J'nin 1'e don't care durumunda olabilir.
+
+516
+01:49:16,948 --> 01:49:21,688
+1'den 0'a geçmesi yine 1'e don't care 1 durumunda oluyor.
+
+517
+01:49:27,060 --> 01:49:44,020
+Bu kez bu da don't care'e bir durumunda oluyor. Bunlar don't care olduğu için sorun yok. Yukarıda nasıl T'ye bir veriyorsak, burada da J ve K uçlarına bir bir vererek aslında bunu 0-1-0-1 şeklinde saydırabiliriz.
+
+518
+01:49:44,860 --> 01:49:49,480
+Yani arkadaşımızın söylediği şey doğru, [öğrenci] doğru yolda ilerliyor bu açıdan.
+
+519
+01:49:50,963 --> 01:49:55,903
+Tüm bunların üstüne bir çizgi çektim ve tekrar şeyi düşünmeye çalışıyorum.
+
+520
+01:49:56,724 --> 01:50:09,224
+Aslında 3 bitlik yani 0'dan 7'ye arası sayacak asenkron sayıcı tasarlayacağım.
+
+521
+01:50:12,819 --> 01:50:19,439
+Ve bu asenkron sayıcı aslında D flip flop'ları kullanacak.
+
+522
+01:50:24,275 --> 01:50:32,416
+Dolayısıyla az önce söylemiştik, bakın, D filklobu bağlantısını söylemiştik, arkadaşımız da yardımcı olmuştu.
+
+523
+01:50:33,435 --> 01:50:45,615
+Şuraya bir clock koyduğumuzda, şuraya bir Q, buraya da Q üstü koyduğumuzda, Q üstüden aldığım değeri D'ye geri besleme yaparak, şuraya da bir clock verdiğimi düşünün.
+
+524
+01:50:46,655 --> 01:50:49,775
+Ben burada 0, 1, 0, 1 saydırabildiğimi söylemiştim.
+
+525
+01:50:52,532 --> 01:51:04,912
+Şimdi hemen şuraya bakıyorum. Ben kulağa 16 Hz'lik bir sinyal versem, buradaki kulağın her yükselen kenarında bu adam bir değişim yapacak değil mi?
+
+526
+01:51:11,988 --> 01:51:16,248
+Şuradaki çıkış kaç hertz olur? Ne dersiniz?
+
+527
+01:51:30,771 --> 01:51:45,372
+16 herse olmaz mı diyor. Şimdi düşünelim. Önce birinci yükselen kenar geldi. Bu adamın da içerisinde sıfır vardı diyelim. Sıfır varsa değilinden bir gelecek. Şurada da sıfır var.
+
+528
+01:51:49,171 --> 01:51:51,551
+Bu bir girişte tekrar beslendi.
+
+529
+01:51:58,868 --> 01:52:10,968
+Bir sonraki yükselen kenarı bekliyor. Bir sonraki yükselen kenarda bu kez bu bir çıkışa aktarılacak. Q değilini alacak sıfır olarak.
+
+530
+01:52:13,048 --> 01:52:20,628
+Tekrar bir sonraki yükselen kenarda resetlemiş olacak. Yani netice olarak aslında bakarsanız clue düşürmüş oluyorsunuz.
+
+531
+01:52:20,628 --> 01:52:24,628
+Cue düşürmüş değil de frekansı düşürmüş oluyorsunuz.
+
+532
+01:52:25,140 --> 01:52:27,960
+8 Hz'e düşürmüş oldunuz buradaki sinyali.
+
+533
+01:52:29,340 --> 01:52:31,980
+Bakın oldukça ilginç bir durum söz konusu burada.
+
+534
+01:52:33,720 --> 01:52:37,659
+Yani buradaki bu kulağa karşılık Q'nun değişimini çizecek olursak,
+
+535
+01:52:39,420 --> 01:52:40,780
+şuradaki Q'nun değişimi,
+
+536
+01:52:42,260 --> 01:52:46,460
+aslında bakarsanız şurada önce 1'e çıkıyor,
+
+537
+01:52:47,560 --> 01:52:50,400
+sonra bu 1 durumunu şuraya kadar koruyor.
+
+538
+01:52:51,283 --> 01:52:56,524
+Çünkü bir sonraki yükselen kenara kadar beklemesi gerekiyor. Durumunu güncellemesi için.
+
+539
+01:52:57,104 --> 01:53:04,623
+Bundan sonra diğer yükselen kenarda tekrar bir sonraki yükselen kenara kadar bu adamın off kalması gerekecek.
+
+540
+01:53:05,283 --> 01:53:12,423
+Dolayısıyla yukarıdaki klon frekansıyla aşağıdaki çıkışın frekansına bakarsanız yarı yarıya olduğunu görmeniz lazım.
+
+541
+01:53:13,844 --> 01:53:17,363
+Şimdi ne yapmamız lazım bu sayıcıda?
+
+542
+01:53:18,036 --> 01:53:22,155
+Fikri olan var mı? Bu söylediğimle ilişkili bir şeye gideceğiz aslında.
+
+543
+01:53:30,644 --> 01:53:46,644
+Peki, söyleyecek olan yoksa ben hemen söyleyeyim. Buradaki çıkışı aslında bir sonraki D flip-flop'un kloğuna bağlarsam o zaman işte asenkron bir sayıcı yapmış oluyorum. Şuraya Q, buraya Q üstü diyelim.
+
+544
+01:53:48,583 --> 01:53:53,483
+Bakın, burada da aynı şeyi yapıyorum. Buradaki Q üstünü getirdim, buraya bağladım.
+
+545
+01:53:54,996 --> 01:53:58,996
+Bu adam saymaya başlayacak ama artık bunun girişi 8 Hz'de.
+
+546
+01:53:59,996 --> 01:54:05,996
+Dolayısıyla çıkışı bunun ne yapacak? 4 Hz'e düşecek. Daha yavaş saymaya başlayacak bu tarafı.
+
+547
+01:54:05,996 --> 01:54:11,996
+Bu da bir sonraki CLOE'un, daha doğrusu Flipp-Flop'un girişine bağlanacak.
+
+548
+01:54:11,996 --> 01:54:16,996
+Yine buradaki Q'yu buradaki Q üstünden geri besleyebiliriz.
+
+549
+01:54:18,996 --> 01:54:20,996
+Sizce oldu mu bu iş?
+
+550
+01:54:21,300 --> 01:54:23,580
+Sayma işini yaptık mı? Ne dersiniz?
+
+551
+01:54:27,891 --> 01:54:31,012
+Şu D bu arada, Q değil, şu Q.
+
+552
+01:54:40,595 --> 01:54:47,315
+Eğer oldu mu oldu mu olmadı mı bilemezsek çıkışları nereden alacağız kısmını düşünelim.
+
+553
+01:54:48,275 --> 01:54:54,815
+Birinci çıkışı buradan alacağımı düşünebilirim. Çünkü zaten birinci çıkış 1.0 1.0 sürekli burada değişecek.
+
+554
+01:54:55,555 --> 01:55:05,295
+İkincisi, ikinci çıkışı şu kablodan alacağım. Şu kulağa bağlanan kabloda. Üçüncü çıkışı da buradan aldığımı düşünelim.
+
+555
+01:55:05,295 --> 01:55:08,035
+Şimdi bunun dalga şeklini analiz edelim bakalım.
+
+556
+01:55:08,692 --> 01:55:14,511
+Önce şuraya bir clock koyuyorum. Clockları şöyle düzgün çizmeye çalışayım.
+
+557
+01:55:23,347 --> 01:55:36,528
+Sonuncu Q'dan olmayacak mı? Evet, Q'dan olacak. Pardon, çok teşekkür ederim. Şuradaki Z3 Q'dan alınacak gibi düşünmemiz gerekiyor.
+
+558
+01:55:38,747 --> 01:55:47,768
+Birazdan onunla ilgili soru var. Sonuçta hepsinin Q'sundan aldık çıkışı. Burada da Q'dan almamız gerekiyor. Birazdan göreceğiz.
+
+559
+01:55:48,435 --> 01:56:15,795
+Klor yükselen kenarında saymaya başlıyor mu adam? Başlıyor. Peki burada Z1 nasıl sayacak? Yükselen kenarla birlikte bu adam 1'e yükselecek. Nereye kadar? Bir sonraki yükselen kenara kadar. Çünkü bir sonraki yükselen kenarda toggle ettiği için 0'a düşmesi gerekiyor. 0'a düştü. Nereye kadar? Bir sonraki yükselen kenara kadar. Bakın buradan net bir şekilde görüyorsunuz ki zaten frekans yarısına düştü.
+
+560
+01:56:16,180 --> 01:56:18,700
+Az önce söylediğimizin devamı şeklinde.
+
+561
+01:56:20,840 --> 01:56:27,340
+Şimdi Z2'ye bakalım. Z2 bu clockla besleniyor. Yani Z1'den gelen clockla besleniyor.
+
+562
+01:56:29,860 --> 01:56:32,700
+Z1'in yükselen kenarında Z2 de yükseldi.
+
+563
+01:56:34,980 --> 01:56:37,800
+Ve bir sonraki yükselen kenarına kadar bu 10 oldu.
+
+564
+01:56:38,239 --> 01:56:44,719
+Bir sonraki yükselen kenara kadar OFF, tekrar bir sonraki yükselen kenara kadar ON şeklinde ilerliyor.
+
+565
+01:56:45,539 --> 01:56:49,839
+Peki Z3'te nasıl bir şey olacak? Bakın bu yükselen kenarla bu da yükseldi.
+
+566
+01:56:50,879 --> 01:56:56,999
+Ta bir sonraki yükselen kenara kadar bu ON, sonra diğer yükselen kenara kadar OFF şeklinde ilerliyor.
+
+567
+01:56:57,839 --> 01:57:01,099
+Peki gerçekten düzgün sayıyor mu acaba bu? Ne dersiniz?
+
+568
+01:57:11,155 --> 01:57:12,655
+Düzgün saydım mı arkadaşlar?
+
+569
+01:57:15,556 --> 01:57:19,016
+Şu aralıkta bakalım mesela. Burada bunun aldığı değerleri.
+
+570
+01:57:19,476 --> 01:57:21,655
+Bu bir almış, bu bir almış, bu bir almış. Yedi.
+
+571
+01:57:22,796 --> 01:57:25,456
+Bir sonraki kısma bakalım. Şu aralığa.
+
+572
+01:57:26,996 --> 01:57:31,916
+Bu sıfır almış, bu bir almış, bu bir almış. Altı.
+
+573
+01:57:33,036 --> 01:57:36,716
+Geriye doğru sayıyor sanki bu. Bu geriye doğru sayıyor.
+
+574
+01:57:37,747 --> 01:57:42,407
+Peki bunu ileri doğru sayan yani bizim istediğimiz hale nasıl dönüştürebiliriz?
+
+575
+01:57:44,187 --> 01:57:44,807
+Soru bu.
+
+576
+01:57:58,036 --> 01:58:05,876
+Evet, [öğrenci]'in söylediği gibi aslında burada ilklendirmenin çok önemli olmadığını anlıyoruz.
+
+577
+01:58:06,056 --> 01:58:16,336
+Çünkü adam mesela ilklendirmeyle sıfırdan başlayacağına diyelim ki beşten başladı ama karakteri hep aynı yine geriye doğru saymak isteyecek.
+
+578
+01:58:16,336 --> 01:58:19,336
+Ama [öğrenci]'in dediği gibi bunun değillerini kullanırsam...
+
+579
+01:58:20,435 --> 01:58:33,876
+O zaman buradan geriye doğru sayacağını söyleyebilirim. Yani birincisi Q üstüleri kullan. Bu şekilde yukarı doğru sayabilir. Başka bir çözüm var mı?
+
+580
+01:58:40,595 --> 01:58:43,296
+Ne dersiniz? Şöyle bir bakın tekrar bakalım.
+
+581
+01:58:44,935 --> 01:58:47,536
+Not alsak hepsinin. Aslında [öğrenci]'in söylediği aynı şey.
+
+582
+01:58:51,115 --> 01:58:53,615
+Başka çözüm de şu, ben onu söyleyeyim.
+
+583
+01:58:54,175 --> 01:59:04,195
+Clock'ta yükselen kenar yerine düşen kenar tetiklemeli bir flip-flop seçerseniz, o zaman da yine aynı şey olacağını göreceksiniz.
+
+584
+01:59:04,315 --> 01:59:06,536
+Yani clock düşen kenarlı.
+
+585
+01:59:12,212 --> 01:59:14,992
+Olursa o zaman işimiz çözülmüş olacak.
+
+586
+01:59:16,472 --> 01:59:19,712
+Peki bu durumda nasıl? Düşen kenarlı olursa nasıl olacak?
+
+587
+01:59:20,312 --> 01:59:25,512
+Şöyle bunu silmem gerekiyor. Düşen kenarlı olursa diye çizeceğim.
+
+588
+01:59:31,572 --> 01:59:36,192
+Tabii şuradaki şeyleri o zaman komple silelim.
+
+589
+01:59:46,131 --> 01:59:52,491
+Bu düşen kenarda, bu düşen kenarda, düşen kenarda, düşen kenarda bu adamın çalışması gerekecek.
+
+590
+01:59:54,291 --> 01:59:57,551
+Şimdi bu düşen kenarla birlikte bu adam ne yapacak?
+
+591
+02:00:01,876 --> 02:00:08,856
+Yükselecek. Bir sonraki duruma kadar böyle devam edecek. Bir sonraki, pardon, evet.
+
+592
+02:00:10,456 --> 02:00:16,056
+Hep yükselen kenara göre çizmeye alıştığımız için biraz şey yaptık, afalladık.
+
+593
+02:00:20,756 --> 02:00:21,756
+Şeklinde gidiyor.
+
+594
+02:00:23,276 --> 02:00:27,776
+Bunun düşen kenarında bu aktif olması lazım.
+
+595
+02:00:28,736 --> 02:00:33,716
+Bir sonraki düşen kenara kadar aktif, bir sonraki düşen kenara kadar aktif gibi.
+
+596
+02:00:35,016 --> 02:00:38,636
+Şuradan sonra tekrar toggle edecek.
+
+597
+02:00:41,636 --> 02:00:42,636
+Burada ise...
+
+598
+02:00:45,716 --> 02:00:50,976
+Bunun düşen kenarında bu başlayacak ve böyle devam edecek gibi.
+
+599
+02:00:51,516 --> 02:00:56,156
+İlk duruma bakacak olursanız şurada hemen şuna bakabilirsiniz.
+
+600
+02:00:56,156 --> 02:00:58,496
+1-0 bakalım.
+
+601
+02:01:00,356 --> 02:01:04,976
+Şu kısmı 0-0-0 gibi düşünürseniz 1-0-0 ile başladı.
+
+602
+02:01:06,056 --> 02:01:08,936
+Sonra 0-1-0 ile başladı.
+
+603
+02:01:09,976 --> 02:01:10,636
+Devam ediyor.
+
+604
+02:01:11,283 --> 02:01:21,383
+1, 1, 0 oldu. Demek ki bu yukarıya doğru sayıyor gibi düşünebilirsiniz. Düşen kenar clockta bizi bu şekilde kurtarmış oldu arkadaşlar.
+
+605
+02:01:22,583 --> 02:01:23,523
+Sorusu olan var mı?
+
+606
+02:01:49,076 --> 02:02:10,456
+Evet, artık aslında hem Moore makinesiyle hem de Millie makinesiyle bir çözüm yaptık, senkron devre tasarımı. Bir de asenkron devre tasarımının nasıl olduğunu gördük. Gördük ki clocklara bağlanan şeyler hep aynı frekanstan gelmiyor, aynı kaynaktan gelmiyor. Hep değişik kaynaklı, hep değişik frekanslı clocklar kullandık.
+
+607
+02:02:14,228 --> 02:02:29,148
+Normalde D fil fil fil obu kullandığımız zaman ya da Jika fil fil obu kullandığımız zaman aslında bunlar bize bir bitlik hafıza sağlıyor. Sadece tek bir bitlik hafıza sağlıyor. Ama gerçek dünyadaki hiçbir şey tek bit üzerinden işlem yapmıyor.
+
+608
+02:02:41,779 --> 02:03:03,319
+İşlemci diyelim, 64 bitlik ve hatta onun daha üstleri de üretilmeye başlanıyor. Dolayısıyla bir bilgiyi tutarken çoklu tutmamız lazım, çok bitlik tasarımlar yapmamız lazım. Aynı zamanda işlemleri yaparken de çok bitlik işlemleri aynı registerlar üzerinden yapmamız gerekiyor.
+
+609
+02:03:09,332 --> 02:03:36,132
+Mikro işlemci işlerin hızlı yapılmasını istiyorsanız registerlar üzerinden yapmanız iyi oluyor. Ya da zaten registerlar üzerinden yapmaya bağımlı oluyorsunuz. Çünkü ALU dediğiniz aritmetik lojik birim registerlar üzerinden çalışıyor. Peki o zaman bunu nasıl yapabiliriz? Çok basit. Bu da bir senkron devre tasarımı gibi düşünebilirsiniz. Bunların clocklarının hepsini aynı yere koyuyorsunuz.
+
+610
+02:03:36,500 --> 02:04:02,840
+Ve girişlerine D'nin sıfırıncı bitini, birinci bitini, ikinci ve üçüncü bitini besliyorsunuz. Böylelikle herhangi bir yükselen kenar olma durumunda buraya verilen girişler çıkışa aktarıldığı için siz bu bilgiyi register'da depolamış oluyorsunuz. Çok basit ama yine de bunu söylemek gerekiyor.
+
+611
+02:04:04,435 --> 02:04:20,095
+Şimdi burada tabii şöyle bir şey söz konusu. Senklon bir devre söz konusu ve es zamanlı olarak, CLO'ya bağlı olarak, CLO'nun yükselen kenarıyla birlikte tüm bilgileri dışarı yansıtıyorsunuz aslında burada.
+
+612
+02:04:21,495 --> 02:04:28,755
+Paralel yüklemeli bir yazmaç gibi düşünebilirsiniz. Paralel bir şekilde dışarı bunu yansıtmış oluyorsunuz.
+
+613
+02:04:34,260 --> 02:04:36,760
+Bir de bunun Shift Register versiyonu var.
+
+614
+02:04:38,140 --> 02:04:40,579
+Shift Register versiyonunda da
+
+615
+02:04:40,579 --> 02:04:45,880
+bakalım S2 sayfa 52'ye gitmişiz.
+
+616
+02:04:51,636 --> 02:04:52,956
+Perfei, izatans.
+
+617
+02:04:58,163 --> 02:05:21,443
+Yani aslında bunu bloklaştıracak olursak şöyle bir şeye dönüşmüş oluyor. Hani hep inşa blokları halinde getirip soyutlama seviyesine getiriyorduk. İçeride bunlar sonuçta D3, D2, D1, işte D0 olacak şekilde bir blok haline geldi.
+
+618
+02:05:22,260 --> 02:05:45,800
+Ve bunun çıkışında da Q3, Q2, Q1 ve Q0 olacak şekilde bir blok haline gelmiş oldu bu adam. Bir de ne var burada? Tabii ki clock şartı var. Ben burada clock verdiğim an girişler çıkışa yansıyor, bit bit yansıyor. Dolayısıyla paralel yüklemeli bir yazmaç haline geliyor.
+
+619
+02:05:49,171 --> 02:05:50,412
+paralel yüklemeli.
+
+620
+02:05:55,123 --> 02:05:57,583
+Yazmaç aslında ya da register.
+
+621
+02:06:09,076 --> 02:06:19,136
+Shift register'da ise şöyle bir şey var. Bakın burada genel olarak flip-flopları alt alta dizip baktık.
+
+622
+02:06:20,356 --> 02:06:30,596
+Hocam bu register senkron oluyor değil mi? Evet senkron oluyor. Çünkü bütün hepsi, tüm flip-floplar aynı kuluğu paylaşıyor arkadaşlar. Buna özellikle dikkat edin.
+
+623
+02:06:32,276 --> 02:06:35,036
+Shift register'da ise bunları yan yana dizmişiz. Bakın.
+
+624
+02:06:35,380 --> 02:06:45,200
+Çok farklı bir tasarım var aslında. Birinde alt alta yani paralel dizerken burada ise seri bir bağlantı söz konusu. Dirençleri seri bağlamış gibi düşünebilirsiniz.
+
+625
+02:06:45,920 --> 02:06:56,740
+Bakın bu adamın genel blok gösterimi nasılmış? Yine bir clock alıyor, aynı zamanda S in alıyor. Aslında bu S in'in açılımı serial in.
+
+626
+02:07:00,020 --> 02:07:22,720
+Seri bir şekilde veriyi alıyor. Nasıl seri toplayıcıdan aklınıza gelsin, bit bit her clockta işleri yapıp çalıştırıyordu. Burada da seri bir giriş dışarıdan aktığını düşünün. Burada aynı anda bir veri gelmiyor yukarıdaki gibi. Mesela 0, 1, 1, 0, 0 bilgisi seri bir şekilde geliyor.
+
+627
+02:07:23,155 --> 02:07:33,996
+1, 1, 0, 0. Önce 0 geliyor, sonra 1 geliyor, sonra böyle devam ediyor şeklinde düşünün. Sıra sıra görüyoruz çıkışlarda dolayısıyla.
+
+628
+02:07:34,756 --> 02:07:45,956
+Şimdi burada çıkışları, peki bu şifrecisinin genel olarak anlamı ya da kullanılma tarafı ne olabilir? Kullanılma durumu. Çok basit.
+
+629
+02:07:47,676 --> 02:07:50,636
+Bakın şimdi burada nasıl çalıştığını anlamaya çalışalım.
+
+630
+02:07:51,507 --> 02:07:57,547
+Serial unit en başta T0 anında 1 uygulanmış olur.
+
+631
+02:08:01,171 --> 02:08:08,151
+Ve buradaki clock'larda bakın ne yapmışız? Senkron devre tasarımdaki gibi bütün hepsinin clock'larını aynı yere bağlamışız.
+
+632
+02:08:10,011 --> 02:08:15,451
+Ve buradaki flip-flop'ların içerisinde hepsinde sıfır bulunduğunu düşünüyoruz.
+
+633
+02:08:16,371 --> 02:08:25,091
+Initialize edilme durumunu yani set reset'leri öyle vermişiz ki biz bunları en başta sıfır sıfır sıfır şeklinde vermişiz.
+
+634
+02:08:25,908 --> 02:08:30,228
+Buradan bir klop geldiğinde aslında hepsine aynı anda bu klop uygulanıyor.
+
+635
+02:08:31,868 --> 02:08:39,948
+Ne yapıyor? Birinci flip-flop girişte bir varsa çıkışa bunu yansıtıyor. Yani Q1 ne olacak? Bir olacak.
+
+636
+02:08:44,467 --> 02:09:00,667
+Ama bu daha çıkış vermeden ikinci flüflop da o an çalışmış oluyor. Çünkü tam yükselen kenar anına bakıyorsunuz. Yani böyle arka arkaya onun çıkışı bunun girişine bağlanacak gibi düşünmeyin. Bu flüflopun içerisinde hangi değer vardı? Sıfır vardı.
+
+637
+02:09:02,047 --> 02:09:09,347
+Girişinde hala sıfır kalmaya devam edecek. Çünkü burada şunun bir kapı gecikmesi var.
+
+638
+02:09:10,515 --> 02:09:19,095
+Bunun çıkışı anında olmadığı için bu hala 0, 0, Q2, 0, 0 kalmaya devam ediyor.
+
+639
+02:09:20,235 --> 02:09:28,775
+Bir clock sonra artık burada bir zaten bulunduğu için bu kez buradaki bir dışarıya, Q2'ye aktarılmış oluyor.
+
+640
+02:09:30,435 --> 02:09:36,655
+Bir kaydırıyorsunuz aslında. Bu durumda tüm değerleri bir kaydırmış oluyorsunuz.
+
+641
+02:09:38,228 --> 02:09:49,587
+Kapı gecikmeleri kendi içlerinde farklı mı? Olabilir, farklı olabilir, farklı olmayabilir. Biz burada en kötü durumu düşünerek devam etmemiz gerekiyor.
+
+642
+02:09:51,948 --> 02:10:02,608
+Neticede benim burada söylemek istediğim şey aslında her bir clock işaretinde tüm bilgileri bir sağa kaydırmış oluyorsunuz.
+
+643
+02:10:03,891 --> 02:10:22,032
+Bakın mesela T2 anında 1 gelmiş buraya. O anda ne varmış? 0, 1, 0, 1 varmış. Bir sonraki anda ne olur diye düşündüğümde buradaki 1 buraya kayacak, buradaki 0 buraya kayacak, buradaki 1 buraya kayacak gibi düşünmemiz gerekiyor.
+
+644
+02:10:24,171 --> 02:10:28,791
+Peki bu nerede kullanılır diye düşündüğümüzde de o zaman şunu söylememiz lazım.
+
+645
+02:10:31,731 --> 02:10:36,452
+Bir şekilde gelen veriyi aslında burada paralelleştirmeyi sağlıyor.
+
+646
+02:10:37,351 --> 02:10:43,131
+4 klok sonra aslında buradaki bilgi şu Q'ları üstünde bulunmuş olacak.
+
+647
+02:10:45,532 --> 02:10:50,731
+Ve artık ben buradan bunları paralel bir şekilde alıp bir yere depolama yapabilirim.
+
+648
+02:10:51,711 --> 02:10:57,011
+Veya bu noktalardan bunları kullanma imkanım olur. Yani bir işlem için falan kullanabilirim.
+
+649
+02:10:57,876 --> 02:11:07,516
+Dolayısıyla tekrar kıyaslayacak olursak buradaki register'ı giriş verilerini paralel bir şekilde çıkışa yansıtmak ya da yüklemek için kullanırken,
+
+650
+02:11:08,716 --> 02:11:13,796
+shift register'ı seri bir şekilde gelen veriyi paralelleştirmek için kullanıyoruz.
+
+651
+02:11:14,476 --> 02:11:25,115
+Her zaman en sonra gelen most significant biti, en önce gelen de least significant biti gösteriyor gibi düşünebilirsiniz.
+
+652
+02:11:26,676 --> 02:11:38,696
+Tabi burada 4 bitlik bir yükleme için 4 çarpı clock süresi gerekiyor. N bitlik bir yüklemek için de N çarpı clock süresi gerekiyor diye düşünebilirsiniz.
+
+653
+02:11:40,696 --> 02:11:42,016
+Buna geleceğiz.
+
+654
+02:11:46,420 --> 02:12:09,579
+Diyelim ki elinizde 8 bitlik shift register'lar var. Ama siz bunu 16 bitlik yapmak istiyorsunuz. Burada da zaten genel mantık seri bağlandığı için, burada mesela şu yapının 4 bitlik olmasının sebebi ne? 4 tane arka arkaya eklenmiş olması.
+
+655
+02:12:10,068 --> 02:12:24,707
+10 bitlik istesek 10 tane arka arkaya eklememiz gerekirdi. Aynı mantıkla 8 bitlik bir shift register'ı şöyle şey yapalım, 8 bit sr diyelim kısaltmasına.
+
+656
+02:12:25,907 --> 02:12:33,667
+İşte burada bir clo var adamın, burada da bir serial ini var ve bunun sonrasında Q elde ediyor.
+
+657
+02:12:36,692 --> 02:12:44,251
+Şuradaki clock sinyalini şuradan alıyor gibi düşünün. Şu serial in de dışarıdan geliyor gibi düşünün.
+
+658
+02:12:45,811 --> 02:12:55,871
+Sonuçta siz burada bu işlem sonucunda Q'da 8 bitlik bir veri aslında tutuyorsunuz ya da kaydıracaksınız.
+
+659
+02:12:56,652 --> 02:13:03,692
+Nasıl burada flip-flopları arka arkaya eklediyseniz aynı bu seri şifrejistrı da
+
+660
+02:13:03,988 --> 02:13:13,308
+Birinin çıkışını diğerinin girişini alacak şekilde ve clockları da aynı şekilde ortak olacak şekilde bağlayabilirsiniz.
+
+661
+02:13:15,308 --> 02:13:29,068
+Ve bunun çıkışında bakın şurada most significant 8 biti tutarken şurada da least significant 8 biti tutmuş oluyorsunuz.
+
+662
+02:13:30,963 --> 02:13:45,683
+Sonuçta biz burada iki tane 8 bitlik şifre cisterden 16 bitli çok basit bir şekilde ikisine seri bağlayarak yapabiliriz. Çünkü zaten şifre cisterin mantığında seri bağlama mevzusu var. Yani çok düşünmeme gerek yok bunun.
+
+663
+02:13:57,108 --> 02:14:19,388
+Başka bir yapı, acaba biz nasıl daha önceden konuşmuştuk, hem toplama işini hem de çıkarma işini aynı yapı yürütsün diye düşünmüştük. Bunun için bir tasarım yapmıştık. Burada da sorumuz şu, istediğimiz şey şu, hem istediğimde paralel yükleme yapabilsin, istediğimde de shift register olarak çalışabilsin.
+
+664
+02:14:24,148 --> 02:14:26,548
+tasarlayabilmem gerekiyor.
+
+665
+02:14:27,688 --> 02:14:29,608
+Şimdi burada hemen bakıyorum.
+
+666
+02:14:36,819 --> 02:14:38,572
+Aslında istediğim şey...
+
+667
+02:14:48,595 --> 02:15:04,235
+Sonuçta shift register gibi çalışmasını istiyorsam seri giriş olması lazım. Az önce gördüm. Ama yok paralel yüklemeli çalışmasını istiyorsam da paralel giriş olması lazım. Bakın 4 bitlik olduğunu buradan bana söylüyor zaten.
+
+668
+02:15:04,895 --> 02:15:14,715
+Clock zaten olması lazım. Bir de ekstradan seçim ucu var burada. Yani shift mi load mı edeceksin bunu seçmen lazım diyor.
+
+669
+02:15:15,091 --> 02:15:20,911
+Bu gösterime göre shift'i 0, okul girişi 0 verirsem hangi işlemi yapar? Ne dersiniz?
+
+670
+02:15:26,547 --> 02:15:33,648
+Shift register yapar değil mi? Çünkü ben burada Shift'in üstünde çizgi görüyorum ve 0 olduğunda aktif olacağını söyleyebilirim.
+
+671
+02:15:34,167 --> 02:15:41,768
+Yani şu giriş 0 ise Shift yapacak. Aslında 1 ise Parallel Load yapacak.
+
+672
+02:15:54,260 --> 02:15:55,180
+Bunu nasıl yapabilir?
+
+673
+02:16:06,323 --> 02:16:14,463
+Hemen şurada biraz daha yaklaşarak bunun doğruluk tablosunu oluşturmaya çalışalım birlikte.
+
+674
+02:16:17,383 --> 02:16:31,163
+Sonuçta clock burada önemli. Clock yükselen kenarında çünkü bir işlerin dönmesi lazım. Yükselen kenar yoksa o zaman hiçbir şey zaten aktif olmayacak gibi düşünebilirsiniz. Şunu düzgün çizeyim, çizemedim.
+
+675
+02:16:32,435 --> 02:16:49,556
+Bunun dışında ne var burada? Sonuçta shift ve load ucu bulunması lazım. Bunun durumlarına göre zaten işleri yapacak. Shift ucu sıfırsa bir de şey olması lazım şurada.
+
+676
+02:16:59,603 --> 02:17:11,703
+Bir de ne girişi var? Paralel in var. Yani buna da paralel in 4 bitlik olduğu için bunları D3'den D3, D2, D1, D0 şeklinde koyabilirim.
+
+677
+02:17:13,183 --> 02:17:20,763
+Tüm bunların sonrasında da çıkışı burada yazmam gerekiyor. Genel doğruluk tablosunu oluşturmaya çalışıyorum şimdi.
+
+678
+02:17:25,332 --> 02:17:37,191
+Shift and load 0 ise serial 0 ise, Shift and load 0 ise serial in 1 ise, bu 1 ise falan gibi durumları konuşmam lazım.
+
+679
+02:17:38,671 --> 02:17:39,891
+Şimdi hemen bakıyorum.
+
+680
+02:17:41,871 --> 02:17:50,332
+Eğer ki shift load kısmında bu bit 0 ise, burada shift yapacağım anlamına gelir.
+
+681
+02:17:51,507 --> 02:17:59,448
+Ve seri yılını de sıfırsa, dolayısıyla bunun çıkışı ne olması lazım arkadaşlar? Ne dersiniz?
+
+682
+02:18:08,500 --> 02:18:16,780
+Önceki durumlarında şöyle olduğunu düşünün. Q3, Q2, Q1, Q0. Çünkü ne olduğunu bilmiyoruz. Böyle sembolik yazalım.
+
+683
+02:18:22,644 --> 02:18:49,364
+Shift edecek. Dolayısıyla Q3, Q2, Q1 diyecek. Q0'ı atmış oldu. 0'ı en başa almış oldu. Çünkü shift ettiği değer 0. Burada ise shift ederken ilk yükleyeceği değer 1 olduğu için 1 ile birlikte sağa kaydırmış oldu. Dolayısıyla bunların 0 olması durumda shift işleminin yürüdüğünü görebildiniz herhalde burada.
+
+684
+02:18:53,396 --> 02:19:06,855
+Shift and load ucu bir ise, diğeri ne olursa olsun bu adamın burada her durumda yükleme yapması lazım. Paralel yükleme yapması gerekiyor.
+
+685
+02:19:07,376 --> 02:19:17,736
+Yani diyelim ki burada A, B, C, D değeri var. Bu yüklemeyi aynen buraya taşıması lazım. A, B, C, D şeklinde bunu yüklemesi gerekiyor.
+
+686
+02:19:18,579 --> 02:19:43,659
+Diğer durumlarda zaten önceki durumu koruyacak gibi düşünün. Yani Q3, Q2, Q1 ve Q0 şeklinde önceki durumu koruyacak. Dolayısıyla doğrult tablosu dediğimizde bu karşımıza çıkıyor. Shiftten VU'nun 0 veya 1 olmasına göre bu adam shift edecek veya paralel yükleyecek.
+
+687
+02:19:45,075 --> 02:19:46,915
+şeklinde düşünmemiz gerekiyor.
+
+688
+02:19:47,855 --> 02:19:48,895
+Şimdi hemen bakalım.
+
+689
+02:20:01,843 --> 02:20:09,963
+Shift and Load ucu burada var. DI, SI ve D var diyelim.
+
+690
+02:20:16,468 --> 02:20:18,388
+Bu bağlantıları anlamaya çalışacağız.
+
+691
+02:20:24,435 --> 02:20:46,036
+Aslında şu seçim ucu gibi düşünüyorduk. Bu sıfırsa ne yapıyorduk? Serial in değeri dışarı çıkıyor. Bu birse aslında di'deki değer dışarı çıkıyor gibi bir durum oluşuyor. Yani en basit mantıkla böyle düşünecek olursak şu kısımlar önemli olmuyor neticede.
+
+692
+02:20:50,963 --> 02:21:08,583
+Yapısını çıkaracak olursak, aslında min termler cinsinden yazacak olursak, C üstü çarpı SI artı C çarpı DI şeklinde yazabiliriz.
+
+693
+02:21:19,059 --> 02:21:26,700
+DI şeklinde yazabiliriz. Aslında bu yapıları uygulayarak şuradaki kapılar oluşmuş durumda.
+
+694
+02:21:26,700 --> 02:21:39,119
+Hemen bakın, Serial Input'tan adam getirmiş, şu kısım var.
+
+695
+02:21:39,520 --> 02:22:06,120
+Bir de C'nin değilini almış. C neydi? Shift and load ucu. Shift and load ucunun değilini almış getirmiş. Şurada bulunuyor. Bakın bunlara endlemiş. Endlediği kısmı. Sonra ne yapmış? C ile DI'yi endlemiş. Yani shift and load ucunu aynen beslemiş. DI dediği şey de bu paralel inputlardan gelen bilgi.
+
+696
+02:22:06,675 --> 02:22:26,615
+Sonuçta ilgili paralel input'u almış, endlemiş ve bunların sonucunu topladığı için de bir OR kapısına tabi tutmuş. Bu artık benim D'ye girecek değerimi oluşturmuş oldu. Aynısını diğerler için de devam ettirebiliriz.
+
+697
+02:22:27,283 --> 02:22:48,384
+Tabi burada serial input, burada SEI dediğimiz şey aslında ilk etapta buradaki ilk flip flop'ta dışarıdan beslenen seri giriş oldu. Ama ikinci flip flop'ta bu giriş, bu girişin bağlı olduğu yapı bir sonrakinin çıktısı olmuş olacak. Zaten bunu böyle tasarlıyordum.
+
+698
+02:22:55,219 --> 02:22:56,680
+Burada bir şey var mı?
+
+699
+02:23:12,884 --> 02:23:37,824
+Peki. Bu aynı şeyi MUX kullanarak da yapabilirdik bu arada. Hatta MUX kullanarak nasıl yapabiliriz bunu bir şey yapalım isterseniz. Tasarımını yapalım. Bu yapım şekli şurada flip-floplar kullanarak yapım. Bir de bunu aynısını MUX kullanarak tasarlayabiliriz.
+
+700
+02:23:41,332 --> 02:24:03,851
+Soru şu, paralel yüklemeli, ötelemeli yazmacı ya da register'ı DFLFLOP ve MUX kullanarak ile tasarlayınız.
+
+701
+02:24:09,332 --> 02:24:30,072
+Böyle bir şey gördüğümde bakın paralel yüklemeli, ötelemeli diyor. Yani hem shift hem de paralel yükleme olması gerektiğini söylüyor adam bize. Kaç bitlik olduğunu da söylese iyiydi aslında. Söylememiş. Hadi ben şuraya yazayım. Dört bitlik. Dört bitlik bir paralel yüklemeli, ötelemeli yazma istiyoruz.
+
+702
+02:24:33,907 --> 02:24:44,047
+Bir tane kontrol sinyali olacak yani shift and load ucu mutlaka olması lazım. İkincisi bir clock girişi mutlaka olması gerekiyor.
+
+703
+02:24:46,387 --> 02:24:54,347
+Buralarda birer kablo var, bekliyor hali hazırda. Bir de bu adamın bunu paralel yükleme yapabilmesi gerekiyor değil mi?
+
+704
+02:24:55,167 --> 02:25:01,468
+Sonuçta bir paralel girişe sahip olması lazım. 4 bitlik bir paralel yükleme için.
+
+705
+02:25:01,840 --> 02:25:11,479
+4 tane paralel giriş, yani D3, D2, D1 ve D0'ın dışarıdan gelebiliyor olması lazım buraya.
+
+706
+02:25:12,319 --> 02:25:17,920
+Buna ek olarak, diyelim ki ben paralel yüklemeyi seçmedim, seri yüklemeyi seçtim.
+
+707
+02:25:17,920 --> 02:25:26,780
+O zaman burada bir S'in bulunması lazım. Bakın, bayağı bir şey söyledik burada. Girişte neler olabileceğini söylemiş olduk.
+
+708
+02:25:27,700 --> 02:25:52,319
+CLOB zaten her senkron devrede var. Burada bir seçim ucu mutlaka olması lazım. Seri mi olacak yoksa şu 4 biti mi kullanacak onu söylüyor. Peki bu kadar. Evet [öğrenci] demiş 4 tane 2x1'lik MUX kullanırız. Her MUX'a da aynı seçim ucunu veririz demiş. Nasıl yapmamız lazım? Arkadaşımız doğru mu söylüyor?
+
+709
+02:26:01,139 --> 02:26:25,439
+Mantıklı. Şimdi çıkışa bakıyorum. Kaç tane flip flop olması lazım? Bir kere 4 bitlik bir işlem yapıyorsam, adam demiş bana 4 bitlik paralel yükleme, 4 tane flip flop kesin olması lazım yani. Bunu çok düşünmeye gerek yok. Dolayısıyla çizerken isterseniz ilk etapta buradan başlayabilirsiniz. Bir tane D flip flop şuraya çizelim. D diyelim.
+
+710
+02:26:26,420 --> 02:26:39,340
+Q diyelim, şuraya bir clock çizelim. Şuraya başka bir tane D çizelim. D, Y, Q. Şuraya bir clock girişi. Aynı şekilde şuraya da.
+
+711
+02:26:43,316 --> 02:26:46,296
+Aynı şekilde şuraya da çizdik.
+
+712
+02:26:57,396 --> 02:27:08,996
+Sonuçta buradan bunların çıkışlarını kullanabilirim. Paralel yükleme durumunda bu çıkışlar zaten doğrudan paralel değerleri oluşturacak.
+
+713
+02:27:10,496 --> 02:27:13,015
+Futban'ın söylediği gibi o zaman devam edelim.
+
+714
+02:27:15,276 --> 02:27:17,076
+Çok pardon, şu yanlış oldu.
+
+715
+02:27:17,996 --> 02:27:20,015
+4 tane 2x1'lik MUX olsun diyor.
+
+716
+02:27:20,736 --> 02:27:24,556
+Yani şuralara ben 2x1'lik MUX'ları çizeyim.
+
+717
+02:27:25,203 --> 02:27:31,384
+MUX'un 2x1'lik olması zaten adı üstünde iki tane girişinin olmasını söyleyecek.
+
+718
+02:27:32,504 --> 02:27:38,583
+Ve bir tane de seçim ucunun olmasını söyleyecek. Şöyle biraz daha aslında büyük çizsem daha iyi olacak.
+
+719
+02:27:42,739 --> 02:27:54,399
+Şuraya bir tane MUPS çizeyim. Her filip lobun yanına bir tane MUPS çiziyorum. Çünkü o filip loba hangi kaynaktan değerlerin geleceğini çözmem lazım.
+
+720
+02:27:54,399 --> 02:28:08,880
+Şimdi en basit yapıda bunu nasıl tasarlıyorduk? 2x1'lik filip lobda iki girişi seçebilmek için bir tane seçim ucu yeterli oluyordu.
+
+721
+02:28:09,280 --> 02:28:14,000
+Bu seçim uçlarının hepsini birbirine bağladığımızı düşünelim arkadaşlar.
+
+722
+02:28:15,380 --> 02:28:20,819
+Ve bu seçim ucunu da en son getirip ne yapacağız?
+
+723
+02:28:22,380 --> 02:28:24,220
+Shift'den load ucuna bağlayacağız.
+
+724
+02:28:25,180 --> 02:28:29,639
+Böylelikle seçmeyi zaten MUX'u kullanmamızın sebebi bu oluyor.
+
+725
+02:28:30,580 --> 02:28:32,400
+Buradan seçimi sağlayabiliyoruz.
+
+726
+02:28:32,860 --> 02:28:35,960
+Mesela sıfır verdiğimiz durumda ne yapması lazım?
+
+727
+02:28:37,108 --> 02:28:43,628
+C0 ise shift register gibi davranması lazım. Yani shift etmesi lazım.
+
+728
+02:28:46,387 --> 02:28:49,547
+Ne yapmamız gerekiyor peki bu durumda?
+
+729
+02:28:54,963 --> 02:29:04,583
+Yani şuradaki her mux'un bir sıfır bir girişi var. Bunun sıfır veya bir girişi var. Bunun sıfır veya bir girişi var. Bunun da aynı şekilde sıfır veya bir girişi var.
+
+730
+02:29:07,324 --> 02:29:17,744
+Şimdi bir kere şu durumu düşünüyorum. C'nin sıfır olma durumu. Yani shift etme durumu. Shift etme durumunda ne yapacak? Bu adam seri girişi kullanacak.
+
+731
+02:29:21,332 --> 02:29:35,371
+Şuraya sıfır gelirse bu sıfırıncı kısmını kullanacak. Diğerleri de aynı şekilde sıfırları kullanacak oluyor. Dolayısıyla ben buradaki MUX'un sıfırlarını aslında shift amaçlı kullanmam gerekiyor.
+
+732
+02:29:35,371 --> 02:29:43,572
+O zaman ne yapacağım? Hemen shift amaçlı kullanacaksam ilk sıfıra getirdim.
+
+733
+02:29:44,244 --> 02:30:05,864
+Aslında şuraya değil de buraya yazsam çok daha iyi olacaktı. Çünkü Serial in çok aşağıda kalmış. Şuraya Serial in'i koydum. Bakın Serial in'in girişini ilk MOOCs'un 0. girişine bağladım. Bunun çıkışını nereye bağlayacağım? Getirdim, D'ye bağladım.
+
+734
+02:30:07,827 --> 02:30:12,268
+Çünkü zaten MUX'un çıkışı flip-flop'u beslemesi lazım. Bunu çok düşünmeme gerek yok.
+
+735
+02:30:13,647 --> 02:30:20,827
+Buradaki çıkışı ben bir sonrakine feed etmem gerekiyor ki bu shift akışı bozulmasın.
+
+736
+02:30:20,827 --> 02:30:33,827
+Aynı şekilde bunun girişi, bunun çıkışı, bunun girişi olacak şekilde şu anda aslında shift işlemini şu yapıyla sağlayabiliyoruz.
+
+737
+02:30:35,924 --> 02:30:45,604
+0 seçildiği durumda bu adam shift ediyor. Peki 1 seçildiği zaman ne yapması lazımdı? 1 seçildiğinde paralel load işlemi yapması lazımdı.
+
+738
+02:30:47,164 --> 02:30:59,864
+Yani aslında bu en kolay kısım belki. D3'ü şuraya bağlayacağız, D2'yi buraya bağlayacağız, D1'i buraya bağlayacağız ve D0'ı da buraya bağlamış olacağız.
+
+739
+02:31:00,288 --> 02:31:12,948
+Bir seçtiğimizde böylelikle doğrudan şeye gitmiş oluyor. Adamın yükleme işine gitmiş oluyor. Son olarak, clocklar ne olacak? Ne dersiniz?
+
+740
+02:31:19,860 --> 02:31:34,360
+Aynı olması lazım. Sonuçta biz bir senkron devre tasarlıyoruz. Bütün clockların aynı yerde birleşip tek bir kaynak tarafından sağlanıyor olması lazım.
+
+741
+02:31:52,531 --> 02:32:02,951
+Mesela burada ben size bir soru sorsam. Diyelim ki C eşittir 1 olduğunda load işlemi yapmasın da çıkışı sıfırlasın. Onu nasıl yapabilirdik?
+
+742
+02:32:10,420 --> 02:32:27,200
+Yani şu anki tasarladığımız yapıyı, evet, girişlerin hepsine sıfır bağlarsak, şuradaki kısımları sıfır sıfır sıfır bağlarsak, bu durumda C eşittir 1 olduğunda çıkışı anında adam paralel bir şekilde sıfır yapmış oluyor. Dolayısıyla bunu bir resetleme gibi düşünebilirsiniz.
+
+743
+02:32:32,884 --> 02:32:47,203
+Burada MOOC'su kullanmanın pek çok avantajı var arkadaşlar. Bu MOOC'su mesela 2x1'lik değil, 4x1'lik veya daha büyük seçerseniz ona göre kaynak sayınızı arttırmış oluyorsunuz.
+
+744
+02:32:49,556 --> 02:33:00,636
+Çıkışa yansıtma imkanınız oluyor. Dolayısıyla Muxlu yapıların çok daha genel bir yapısının olduğunu ve daha kullanışlı olduğunu aslında burada görmemiz iyi olur.
+
+745
+02:33:01,796 --> 02:33:07,436
+Para verecek miyiz? Bir verelim arkadaşlar. 10 dakika ara verelim sonra devam ederiz.
+
+746
+02:33:09,276 --> 02:33:11,156
+35 geçe başlayabiliriz.
+
+747
+02:44:26,291 --> 02:44:38,752
+Evet, tekrar merhaba arkadaşlar. Şimdi son kısımda birkaç şey kaldı. Onlara da üstünden geçip devam edeceğiz ama sorunuz varsa anlamadığınız bir kısım oraya geri dönüş yapabiliriz.
+
+748
+02:45:00,948 --> 02:45:08,128
+Evet, o zaman buradan devam edelim. Zaten dediğim gibi çok az bir kısım kaldı. Onlara baktıktan sonra bitireceğiz.
+
+749
+02:45:10,347 --> 02:45:25,188
+Senkron yukarı sayıcı. Biliyorsunuz senkron sayıcı yukarı sayıcı nasıl yapılır? Bunu zaten bir mur makinesiyle tasarlamıştık. Sıfırdan dörde kadar sayıyordu. Pardon birden dörde kadar sayıyordu.
+
+750
+02:45:25,716 --> 02:45:40,056
+Bu tarz yapıları bir blok haline getirip aslında şu şekilde de gösterebiliriz. Bakın bir senkron yukarı sayıcı inşa bloğu halinde gösterebiliriz.
+
+751
+02:45:41,195 --> 02:45:48,056
+Senkron olduğu için bir kere zaten bir kulak ucu olması lazım ve sayacağı değerlerin de...
+
+752
+02:45:48,659 --> 02:45:59,420
+durumuna göre burada 4 bitlik bir sayıcı var. Dolayısıyla en fazla 0'dan 15'e kadar bir sayma işlemi gerçekleşebilir gibi düşünebilirsiniz.
+
+753
+02:46:00,639 --> 02:46:07,720
+Buna göre bunu çoğulayabilirsiniz. 4 bitlik, 5 bitlik, 6 bitlik sayıcı halini dönüştürmeniz mümkün.
+
+754
+02:46:08,760 --> 02:46:13,060
+Bunun dışında burada ekstra ne var? Enable ucu var.
+
+755
+02:46:13,471 --> 02:46:38,971
+Enable ucu bütün neredeyse entegrelerde veya bu tasarladığımız inşa bloklarında oluyordu. Neydi? Enable eğer sıfırsa çıkışları hiçbir zaman değer almıyordu. Yani aslında bu çalışma bloğunu aktif etmemiş oluyorduk. Böyle bir şey vardı. Başka bizim burada görmediğimiz veya düşünce, aklımıza takılan şey ne olabilir? Load ucu olabilir.
+
+756
+02:46:40,051 --> 02:47:06,272
+Bakın, load ucu aslında bizim senkron sayıcıda düşündüğümüz mevzuyla ilişkili bir şey. Ne demiştik? 1, 2, 3, 4, 5, 6 diye gidebilir. Ben sürekli bu şekilde saymasını istiyorum mesela bir sayıcının. 5, 6 diye. Ama bu adam tut ki başlangıç noktası 8 olduğu durumda ne yapacak?
+
+757
+02:47:07,572 --> 02:47:16,252
+Öyle bir durum oluştu ki, fil filopların daha önce içerisinde tanımlanan değerler gereği, başlangıç değeri 8 oldu.
+
+758
+02:47:16,752 --> 02:47:22,752
+Dolayısıyla zaten ben tasarımı buna göre yapmadığım için burada bir problem olabilmesi durumu söz konusuydu.
+
+759
+02:47:23,412 --> 02:47:25,231
+Bunun önüne geçebilmek için ne yapıyorduk?
+
+760
+02:47:27,092 --> 02:47:38,812
+Set, reset uçlarını belirli kombinasyonla kaydırıp buradaki flip-flopların içerisini aslında ön koşulluyorduk ya da initialize ediyorduk.
+
+761
+02:47:39,772 --> 02:47:44,752
+Burada ne yapmamız gerekiyor? Burada da ona karşılık bakın hem load var.
+
+762
+02:47:44,752 --> 02:47:53,711
+Buraya load'u 1 verdiğiniz zaman aslında D0, D1, D2'deki şeyler ilgili flip-floplara set edilmiş oluyor otomatikman.
+
+763
+02:47:54,131 --> 02:48:03,652
+Bunun üzerinden aslında devam etmiş oluyoruz. Çok zor bir şey değil. Bir önceki söylediğimizi aslında destekleyen bir yapı olduğunu söyleyebiliriz.
+
+764
+02:48:03,652 --> 02:48:18,211
+Ceri de burada bunları kaskat bağlama durumlarında yani arkasına başka sayıcılar bağlama durumlarında bunu aktif etmek için kullanılabilir şeklinde verilmiş.
+
+765
+02:48:18,623 --> 02:48:26,344
+Bunu şu anda nasıl kullanıldığını paylaşmayacağım. Genel olarak diğer kısımlarla ilgilenmemiz gerekiyor.
+
+766
+02:48:28,283 --> 02:48:41,903
+Burada şunu söylemiş. Kerim aslında sayıcının bir taşma olması durumunda veya sıkıntılı bir duruma girmesi durumunda bir olarak set edileceğini söylemiş.
+
+767
+02:48:45,268 --> 02:48:54,927
+Evet, şimdi bu kısımda bizim bunu nasıl kullanacağımızı bir düşünmemiz gerekiyor.
+
+768
+02:48:59,123 --> 02:49:08,224
+Şöyle bir soru gelse, bu bloğu kullanarak buradaki değerleri nasıl sağlayabiliriz onu düşünelim.
+
+769
+02:49:09,504 --> 02:49:11,443
+4 bit yukarı sayıcı.
+
+770
+02:49:15,891 --> 02:49:20,092
+Kullanarak 0-15 arası sayan
+
+771
+02:49:24,659 --> 02:49:25,420
+Sayıcıyı
+
+772
+02:49:29,652 --> 02:49:31,791
+0-10 arası sayan
+
+773
+02:49:35,316 --> 02:49:37,256
+sayıcı haline getirebilir miyiz?
+
+774
+02:49:45,747 --> 02:49:46,547
+Ne dersiniz?
+
+775
+02:49:55,059 --> 02:50:05,040
+Zaten şunu 4 bitlik yukarı sayıcı kullanarak 0-15 arası sayan sayıcı ediyor ya, şu kısım zaten sol tarafta bulunuyor. Bunu otomatik yapıyor bu adam.
+
+776
+02:50:09,203 --> 02:50:18,923
+Bizim yapmamız gereken şey bunu 10'a kadar sayıp 10'dan sonra tekrar 0'a dönmesini sağlamak. Nasıl yapabiliriz?
+
+777
+02:50:21,484 --> 02:50:36,403
+Evet, [öğrenci]'in söylediği gibi kesinlikle aslında 10'a kadar sayınca yani 10'a geldiği durumda 0'a dönmesi için şu D0'dan D1'e kadar olan kısımlara
+
+778
+02:50:37,268 --> 02:50:55,667
+0 verecek şekilde load yapmam lazım. Buraların 0 olması gerektiğini biliyorum. Çünkü başa döndürmem gerektiği için bunu biliyorum. Ama ona gelince, yani şuradaki load ona gelinceyi nasıl sorgulayabiliyorum? Ne dersiniz?
+
+779
+02:51:01,203 --> 02:51:07,844
+Q3 ve Q2'nin endini load'a veririz demişsin. Bunu nasıl yorumluyorsun? Q1 demişsin sonra.
+
+780
+02:51:19,924 --> 02:51:24,264
+Şimdi onun iki bitlik karşılığını bana söyleyin öncelikle arkadaşlar.
+
+781
+02:51:25,684 --> 02:51:34,884
+Q3, Q2, Q1, Q0 olacak şekilde most significant bitten least significant bit'e doğru yazıyoruz bunu.
+
+782
+02:51:34,884 --> 02:51:39,804
+1, 0. 1, 0 verirsek bunun onluk tabandaki karşılığı 10 oluyor.
+
+783
+02:51:41,384 --> 02:51:44,164
+O zaman nasıl bir şey yazmam lazım?
+
+784
+02:51:47,956 --> 02:51:57,495
+Durumda load'u yapan bir şeye bakmamız lazım. Bu yüzden de bunun hemen min termini yazabiliriz. İlgili min termini yazabiliriz.
+
+785
+02:51:58,716 --> 02:52:08,615
+Buradan Q0 üstü çarpı Q1 çarpı Q2 üstü çarpı Q3 şeklinde yazabiliriz.
+
+786
+02:52:15,028 --> 02:52:42,528
+Q3'i direkt aldım. Q2'nin D'liğini aldım. Q1'i direkt aldım. Q0'ın da D'liğini aldım. Bunları ne yapmam gerekiyor? End'lemem gerekiyor. Şurada bir End kapısına sokup geriye beslediğimde yapmasını bekliyorum. Ona gelince loadlamaya çalışınca on olmadan sıfırlama durumu oluşmaz. Kesinlikle oluşmaz.
+
+787
+02:52:43,123 --> 02:52:50,463
+Çünkü zaten çıkış 10 olarak belirlenmiş oluyor. Eğer 11 yaparsan zaten 11'i görmüş olacaksın yani.
+
+788
+02:52:53,004 --> 02:52:59,363
+[öğrenci]'ın söylediği şey sadece Q3 ve Q1'i yapsak yetmez mi? Sonrasına zaten geçmeyecek diyor.
+
+789
+02:53:08,564 --> 02:53:13,524
+Orada bakman lazım. Q3 ile Q1'in 1-1 olduğu farklı bir durum var mı?
+
+790
+02:53:15,924 --> 02:53:18,584
+Hocam öyle olması için ondan büyük olması lazım zaten ya.
+
+791
+02:53:19,544 --> 02:53:19,804
+Nasıl?
+
+792
+02:53:21,504 --> 02:53:24,344
+İkisinin de 1 olması için ya 10 ya da ondan büyük olması lazım.
+
+793
+02:53:24,744 --> 02:53:30,744
+Evet doğru. Bir kere zaten şu, no significant bit 1'e çıkmış durumda.
+
+794
+02:53:31,860 --> 02:53:44,040
+Burada sayabileceğimiz durumlarda 9'da vardı böyle bir şey ama o burada 0'dı. Dolayısıyla sizin söylediğiniz şey doğru aslında Q1 ile Q3'ü de doğrudan kullanarak bu işi yapabiliriz.
+
+795
+02:53:44,640 --> 02:53:58,580
+Veya en güzeli bunun diğerlerini don't carry durumu olarak düşünüp karno haritasında bakıp en uygun seçeneği bulmak. Biz sadece burada en basit haliyle bunu nasıl yapabiliriz diye düşünmüş olduk.
+
+796
+02:53:59,443 --> 02:54:05,943
+Şimdi o zaman başka bir soru gelsin. Şimdiki sorumuz da şu. 12 deseydi ne yapabilirdik?
+
+797
+02:54:21,620 --> 02:54:44,139
+Q2 ile Q3'ü aslında kullanmamız yeterli olurdu. Zaten Q2 ile Q3 sadece 1-1 durumunu orada görüyor. Daha fazla görmeyecek. Sadece Q2 ve Q3 durumunu görmem yeterli olurdu. Peki bu sayıcıyı o zaman artık istediğim gibi çalıştırabileceğim gibi düşünüyorum.
+
+798
+02:54:50,100 --> 02:54:53,299
+Deseydim, ne yapmam gerekirdi?
+
+799
+02:54:56,979 --> 02:55:22,000
+12'ye kadar sayması için arkadaşımızın da dediği gibi Q3 ile Q2'yi aslında burada bir AND lesek ve bunu LOAD'a versek iş çözecek ama 5'ten başlaması için de tabii ki buradaki paralel LOAD uçlarını en küçük significant bitten başlayarak 0, 1, yok pardon.
+
+800
+02:55:22,835 --> 02:55:24,835
+Beşikin karşılığını nasıl yapacağız?
+
+801
+02:55:33,492 --> 02:55:47,432
+1-0-1-0, 1-0-1-0 şeklinde vermemiz lazım. Bu şekilde bu sayıcı aslında 5 ile 12 arasında sayan bir sayıcı haline dönebilir.
+
+802
+02:56:00,948 --> 02:56:02,727
+Burada bir sorusu olan var mı arkadaşlar?
+
+803
+02:56:15,252 --> 02:56:19,711
+Peki, şimdiye kadar ki kısımla ilgili sorunuz var mı? Herhangi bir kısımla ilgili?
+
+804
+02:56:22,932 --> 02:56:25,891
+Hocam, haftaya quiz gibi bir şey yapacak dediniz ya.
+
+805
+02:56:26,252 --> 02:56:26,512
+Evet.
+
+806
+02:56:26,752 --> 02:56:30,551
+Şimdi o nasıl olacak? Biz classroom'dan vesaire mi gireceğiz yoksa yazılım olacak?
+
+807
+02:56:31,672 --> 02:56:41,391
+Yüz yüze zaten ders yapacağımızı düşünüyoruz. Dolayısıyla yazılı gibi olacak diye düşünmüştük. En son daha sonra konuşmadık.
+
+808
+02:56:42,548 --> 02:56:57,808
+Ama bununla ilgili eğer ekstra böyle farklı bir şey olursa ders haricinde getirmenizi istediğiniz bir şey veya istediğimiz bir şey veya classroomdan bağlanacağınız bir şey olursa onu zaten ekstradan duyuru halinde sizlerle paylaşırız.
+
+809
+02:56:59,648 --> 02:57:02,540
+Hiçbir şey belli değil ya [öğrenci]. Şu anda...
+
+810
+02:57:02,772 --> 02:57:21,252
+Ben bu derse ilk kez veriyorum ve daha önceki senelerde nasıl yapıldığını bilmediğim için orada bir soru işareti var aklımda. Ama çok uzun olmaması gerekiyor sonuçta kısa sınav. Muhtemelen bir tane bir soru verilir. Bu soruyu çözmeniz istenebilir.
+
+811
+02:57:27,507 --> 02:57:38,807
+Zor olmasın diyorsun. Bilmiyorum vallahi. Onu şu anda, ben kendim karar veremediğim için. Nasıl adaletsiz olur [öğrenci]? Anlamadım.
+
+812
+02:57:41,747 --> 02:57:54,527
+Tek soru mu? Çok soru belki şıklı falan gibi olabilir. Bilmiyorum yani. Konuşacağız onu Erkan Hoca ile birlikte. Herkese aynı olacağı için.
+
+813
+02:57:55,731 --> 02:58:17,272
+Sorun olmayacaktır. Sorular o günkü dersteki konuyla da ilgili olacak. Belki sadece onunla da ilgili olabilir. O zamana kadar ki tüm işlenen konularla ilişkili gelebilir. Zaten hepsinin birbiriyle ilişkisi olduğunu görüyorsunuz yani. Hala daha end kapıları, or kapılarını kullanıyoruz neticede.
+
+814
+02:58:23,379 --> 02:58:47,919
+Aslında bu slide'ın devamında hafızalar kısmı geliyor ama biz bunlarla ilgili çok fazla konuşacağız zaten. Uzun uzadıya konuşacağımız için çok fazla bunları şu anda geçiyoruz. Dolayısıyla bu logic review olarak paylaştığımız ve 3 haftaları işlediğimiz slide'ı aslında bitirmiş olacağız. Yeni kaynağı paylaşacağız haftaya sizlerle.
+
+815
+02:58:50,324 --> 02:58:52,463
+Konusu olan varsa sorabilir arkadaşlar.
+
+816
+02:59:09,747 --> 02:59:29,707
+Bu slide'a şuradan erişebilirsiniz. Classroom'da aslında bu slide paylaşıldı. En alt kısmında kaldığı için belki gözünüzden kaçırmış olabilirsiniz. Birazdan da zaten bu dersin videosu kayıt olduğunda linkini de sizlerle paylaşayım.
+
+817
+02:59:35,316 --> 02:59:42,316
+Senin sistemin yeni aktif oldu. O zaman Classroom'da yok musun? Yoksan bana mail at, ben seni oraya ekleyeyim.
+
+818
+02:59:48,500 --> 02:59:53,399
+Tamamdır. Görüşmek üzere arkadaşlar. Kendinize iyi bakın.
+
+819
+02:59:54,520 --> 02:59:55,700
+İyi akşamlar hocam. Kendinize iyi bakın.
