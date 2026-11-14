@@ -1,0 +1,1939 @@
+1
+00:01:48,212 --> 00:01:57,391
+Sevgili arkadaşlar, tekrar merhaba. Epey ara oldu. Sınav, arkasından bir Mayıs tatili falan uzun zamandır bir araya gelemedik.
+
+2
+00:01:57,391 --> 00:02:03,392
+Bu hafta size Deep Learning'de...
+
+3
+00:02:03,731 --> 00:02:12,211
+Bir segmentation problemi, bir de detection problemi için çözüm yöntemlerinden bahsedeceğiz.
+
+4
+00:02:12,211 --> 00:02:24,912
+Bu hafta ben bu dersi anlatmak üzere bizim TV mezunlarımızdan sınıfı da burada yaptı.
+
+5
+00:02:24,972 --> 00:02:27,051
+Yüksek lisans doktorasını.
+
+6
+00:02:27,439 --> 00:02:34,719
+Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde tamamlayan Dr. Abbas Memiş'ten rica ettim. Kendisi sağ olsun kabul etti.
+
+7
+00:02:35,939 --> 00:02:44,699
+Ve bugün bu iki konuda çok güzel, detaylı bir sunum yapacak. Ben kısaca size şunu özetlemek isterim.
+
+8
+00:02:45,331 --> 00:02:56,371
+Bu segmentation'da yaptığımız iş nedir? Detection'da yaptığımız iş nedir? Kısaca bundan bahsedeceğim. Ondan sonra sözü Abbas Hoca'ya bırakacağız.
+
+9
+00:03:09,268 --> 00:03:23,627
+Object Just Pixels diyor. Piksel bazında bir pikselin hangi kategoriye ya da gruba ait olduğunu etiketliyorsunuz. Semantik işleminde.
+
+10
+00:03:23,627 --> 00:03:30,828
+Görüntü üzerindeki bir piksel bir objekt ile sahip.
+
+11
+00:03:35,443 --> 00:03:43,503
+Ağaçların ve gırıksızın ayrı ayrı renklerle kodlandığı, yani etiketlendiği bir segmentation işlemi.
+
+12
+00:03:43,503 --> 00:03:57,663
+Semantic segmentation işleminden bahsediyoruz. Bununla ilgili yaygın kullanılan UNET dediğimiz bir model var. Onu Abbas Hoca anlatacak.
+
+13
+00:04:03,635 --> 00:04:19,776
+Mouthful Objects için bir detektion kavramına ait bir örnek gösterilmiş. Mouthful Objects için bir tanesinin aynı görüntü üzerinde.
+
+14
+00:04:21,971 --> 00:04:28,931
+Ve aynı zamanda bir bounding box ile işaretlendiği bir çözümden bahsediyoruz.
+
+15
+00:04:29,051 --> 00:04:36,331
+Object detection dediğimizde. Yani bu arada doğru yere çizilmesi hem de doğru etiketle etiketlenmesi.
+
+16
+00:04:36,331 --> 00:04:40,011
+Yani iki parçadan gerçekleştirilmiş.
+
+17
+00:04:49,139 --> 00:04:52,459
+Semantik Segmentation'da böyle.
+
+18
+00:04:53,279 --> 00:05:07,139
+Instance Segmentation dediğimiz, gördüğümüz gibi her köpeği ayrı renge boyayarak örnek bazında segmentation işlemi gerçekleştirebiliyoruz.
+
+19
+00:05:07,540 --> 00:05:29,620
+Yani nihayi aradığımız çözüm aslında çoğu problemde. Instance Segmentation şeklinde oluyor. Bu dersin 2018 yılı şeyi Stanford Üniversitesi'nde bahsettiğim bu CS231 kodlu dersin slide'ları.
+
+20
+00:05:31,475 --> 00:05:44,475
+Daha önce bahsetmiştim. Onları faydalı olabilir. Tavsiye ederim. Ben ilk çalıştığım dönemde...
+
+21
+00:05:47,175 --> 00:05:50,475
+Şimdi sözü...
+
+22
+00:05:51,475 --> 00:05:56,135
+...büyükleme ile mi başlıyoruz?
+
+23
+00:06:01,620 --> 00:06:04,620
+Bu arada online'da ders yapan...
+
+24
+00:06:23,732 --> 00:06:24,672
+Ses gelmiyor.
+
+25
+00:06:26,672 --> 00:06:28,572
+Paylaşımı durdurup bir daha bakayım.
+
+26
+00:06:33,139 --> 00:06:53,779
+Arkadaşlar, ses geliyor mu? Evet hocam ama sık sık kesiliyor veya azalıyor sesiniz. Sık sık kesiliyor ya da azalıyor. Peki. Mouse hareketlerinde galiba biraz sıkıntı olabiliyor. Mouse hareket ettirmeden de ders anlatmak çok kolay değil tabii.
+
+27
+00:06:56,435 --> 00:06:59,835
+İstersen kulaklık tutabilirim ama çok o hareketini kısıtlar.
+
+28
+00:06:59,835 --> 00:07:00,015
+Yok.
+
+29
+00:07:00,015 --> 00:07:01,975
+Bu şekilde devam.
+
+30
+00:07:02,355 --> 00:07:02,515
+Tamam.
+
+31
+00:07:03,415 --> 00:07:12,295
+O zaman söz Abbas Hoca'da sadece şey, ha tamam, ekran değiştiğinde de zaten bir saat sonra yapabilirim.
+
+32
+00:07:12,435 --> 00:07:14,395
+Hareket ettirmek için hocam.
+
+33
+00:07:14,455 --> 00:07:16,055
+Kaç bez?
+
+34
+00:07:16,216 --> 00:07:17,395
+Ha, tuşlarla da.
+
+35
+00:07:26,995 --> 00:07:28,315
+Yok sadece şeyleri.
+
+36
+00:07:28,455 --> 00:07:28,776
+Başka.
+
+37
+00:07:45,939 --> 00:07:54,039
+Merhaba arkadaşlar, ben Dr. Abbas Memiş. İstanbul Sağlık ve Teknoloji Üniversitesi Yazılım Mühendisliği bölümünde öğretim üyesiyim.
+
+38
+00:07:54,979 --> 00:08:02,519
+Az evvel Songül Hocamızın da bahsettiği gibi yüksek lisans ve doktora derecelerimi buradan Bilgisayar Mühendisliği bölümünden aldım.
+
+39
+00:08:03,479 --> 00:08:09,060
+2020 yılında doktora programından mezun oldum. Hali hazırda.
+
+40
+00:08:09,875 --> 00:08:23,015
+Sağlık ve Teknoloji Üniversitesi'nde görev yapıyorum. Aynı zamanda Bilgisayar Mühendisliği bölümünde burada Bilgisayarla Görme Araştırma Laboratuvarı'nda bir araştırmacısıyım. Orada da çalışmalarımıza devam ediyoruz.
+
+41
+00:08:23,956 --> 00:08:50,855
+Bugün iki başlık hakkında bir konuşma yapacağım. Birincisi medikal görüntülerde bölükleme, özel olarak da yönet mimarisi. Medikal görüntülerin bölüklenmesinde oldukça sık bir biçimde kullanılan, yani sadece medikal görüntülerin değil, farklı tipteki görüntülerin bölüklenmesinde de kullanılan bir yöntem. Diğer konuşma başlığında nesne tespiti üzerine olacak.
+
+42
+00:08:51,412 --> 00:08:53,971
+Şimdi GeoNet ile başlayacak olursak.
+
+43
+00:08:57,364 --> 00:09:23,443
+UNED ilk olarak 2015 senesinde Rona Berger, Fischer ve Thomas Brox tarafından önerildi. Bir konferans paperda sunulan bu çalışmada medikal görüntülerin hızlı ve başarılı bir biçimde büdüklenmesi için o zamana göre oldukça yeni ve başarımı yüksek bir model önerildi.
+
+44
+00:09:23,988 --> 00:09:29,168
+Modelin adı UNET. Şurada genel mimarisini görüyoruz.
+
+45
+00:09:29,508 --> 00:09:30,968
+Hocam, bizde ekran gözükmüyor ama.
+
+46
+00:09:38,932 --> 00:09:40,332
+Hektan gözükmüyor dedi.
+
+47
+00:09:46,196 --> 00:09:48,635
+Bu, sonra açmadım değil mi?
+
+48
+00:09:49,236 --> 00:09:50,635
+Hı hı, doğru.
+
+49
+00:09:51,276 --> 00:09:52,076
+Pardon.
+
+50
+00:09:53,076 --> 00:09:53,772
+Bu, bu, bu.
+
+51
+00:10:12,596 --> 00:10:13,596
+Tamam mı?
+
+52
+00:10:15,596 --> 00:10:16,596
+Evet, teşekkür ederim.
+
+53
+00:10:16,596 --> 00:10:17,596
+Tamam.
+
+54
+00:10:33,299 --> 00:10:53,460
+Evet. Bu benim dört gün önce yaklaşık baktığım altı sayısıydı. Buraya not almışım. Orada gözüküyorum 4 Mayıs 2023 tarihinde 61 bin 184 olarak gözüküyordu. İki gün önce baktığımda bir 300 falan artmıştı. Hani bugün de bir 500 falan artmış olabilir.
+
+55
+00:10:58,419 --> 00:10:59,259
+Evet.
+
+56
+00:11:02,355 --> 00:11:10,355
+Gerçekten birkaç seneler içerisinde belki de tarihte en çok atıf falan...
+
+57
+00:11:10,611 --> 00:11:24,432
+Paper'lar listesine girebilecek seviyede bir çalışma. Mimarinin adı şeklinden geliyor. Baktığımız zaman U şekline benzer bir yapısı var. Bu yüzden UNET olarak adlandırılmış.
+
+58
+00:11:24,432 --> 00:11:36,411
+Tabi bu şekli normal düz bir biçimde göstermek de mümkün ama bu şekilde anlaşımı biraz daha kolay olduğu için ilk bu şekilde ifade edilmiş. Temel olarak bir decoder, encoder yapısı aslında.
+
+59
+00:11:38,611 --> 00:11:56,391
+Onlar Encoder Decoder Networkler olarak geçiyor. Bunun farkı, bu daralan katman dediğimiz ve genişleyen katman dediğimiz kısımda oluşan çıktı görüntülerini diğer tarafa aktarması aslında. Biraz daha baskın özelliği yönetim o.
+
+60
+00:11:58,240 --> 00:12:15,040
+Pattern Recognition ve Image Processing Laboratuvarında, University of Freiburg'da aynı ekip UNET'le alakalı farklı tipte modellerde önermiş. Bunlar 2016, 2017, 2018 ve sonrasında yayınlanan çalışmalarda da mevcut.
+
+61
+00:12:15,475 --> 00:12:30,936
+Bizim bugün üzerine konuşacağımız yapı iki boyutlu Yönet ama Yönet'in üç boyutlu mimarisi de yine aynı ekip tarafından başka bir araştırmacının yürüttüğü bir çalışmada Özgün Çiçek'ti yanlış hatırlamıyorsam onun yaptığı çalışmada sunulmuştu.
+
+62
+00:12:38,451 --> 00:13:00,072
+UNET temel olarak bir semantik bölütleme yöntemi aslında. Biraz önce Songül Hoca da bahsetmişti. Bölütleme yaklaşımlarını farklı kategorilere bölme imkanımız var hedeflerine göre. Bunlardan bir tanesi de semantik segmentasyon, farklı olarak instant segmentation gibi yaklaşımlar da mevcut.
+
+63
+00:13:00,628 --> 00:13:20,827
+Semantik bölüklemede amacımız, bir görüntüdeki her bir pikselin ayrı bir sınıfa kategorize edilmesinin amaçlandığı bir yöntem. Bir bilgisayarla görme görevi bu. Bir input görüntüsündeki her bir pikseli hedeflediğimiz sınıflardan bir tanesine atamak istiyoruz aslında.
+
+64
+00:13:26,355 --> 00:13:35,895
+Semantik segmentasyon, yani bütün görüntü, bütün pikselleri atamadan önce yapılan segmentasyon çalışmalarında bir objenin sınırlarını belirlemek aslında.
+
+65
+00:13:36,456 --> 00:13:39,692
+Biz görüntü üzerindeyiz ki bu objenin segmentasyon çalışmalarını belirlemek aslında.
+
+66
+00:13:42,196 --> 00:13:59,635
+Fakat derin öğrenme yaklaşımları ortaya çıktıktan sonra, hani böyle yapmak yerine biz görüntüdeki bütün pikselleri bir sınıfa atayalım. Zaten bir sınıfa atadıktan sonra bunun sınırları ortaya çıkacaktır. Basit bir Edge Teknik işlemiyle de sınırlarda tespit edilir hale gelebileceğiz demektir bu aynı zamanda.
+
+67
+00:14:01,716 --> 00:14:25,696
+Dört sınıflı bir problemimiz var. Burada verdiğimiz input görüntüsündeki her bir pikseli bir sınıfa atacağız. Amacımız bu. Görüntüdeki bütün pikselleri önceden belirlemiş olduğumuz sınıflara atamak bizim amacımız. Bu sayede ne yapacağız? Görüntüdeki bütün pikselleri sınıflandırmış olacağız aslında.
+
+68
+00:14:28,755 --> 00:14:40,735
+Multi-class problemlere uyarlama imkanımız olduğu gibi, binary-class problemlere de uyarlama imkanımız var. Yani UNET, multi-class problemlere açık bir çözüm sunuyor.
+
+69
+00:14:45,524 --> 00:15:01,524
+Tabii bölükleme yapmak için mimari eğitmemiz gerekecek. Mimari eğitirken belli bir eğitim veri kümesi belirlememiz önceden gerekiyor ve bu eğitim veri kümesinde...
+
+70
+00:15:01,552 --> 00:15:22,932
+Eğitim veriklimesindeki resimlere karşılık gelen etiket bilgilerini de ayrıca modele vermemiz gerekecek ki model öğrensin. Daha sonra test aşamasında vereceğimiz input görüntülerini başarılı bir biçimde segmente edebilsin. Burada eğitim aşamasında vereceğimiz görüntülerin bir de etiketlerini oluşturmamız gerekiyor.
+
+71
+00:15:23,412 --> 00:15:45,432
+Evet, şunun gibi bir görüntümüz olduğunu düşünelim. Bu görüntüdeki her bir pikseli etiketlememiz gerekecek. Bu oldukça zorlu bir işlem. Bunun için çeşitli araçlar var. Label AI gibi bir takım tool'lar var. Bu tool'ları kullanarak görüntüdeki her bir pikseli kolaylıkla etiketleme işlemi de gerçekleştirebilmemiz mümkün aynı zamanda.
+
+72
+00:15:49,940 --> 00:16:08,080
+Un-supervised olarak bazı yöntemler UNET'le alakalı çalışmalar vardı ama ben onların detaylarına çok hakim değilim. Un-supervised olarak çalışanların. Daha çok benim takip ettiklerim supervised olarak önerilen yöntemlerle alakalı.
+
+73
+00:16:16,467 --> 00:16:36,087
+Çalışma ilk olarak biyomedikal görüntülerin bölütlenmesi üzerine önerilmişti 2015'te yapılırken. Burada isminin International Symposium of Biomedical Imaging, bu medikal görüntü işleme alanında önemli konferanslardan, international konferanslardan bir tanesi.
+
+74
+00:16:36,543 --> 00:17:02,543
+Burada 2015 senesinde bir açılan challenge'da bu yöntem oldukça başarılı sonuçlar verdi. Burada cell tracking ve cell segmentation problemlerinde o zaman öncesinde önerilen yöntemlere göre çok bariz bir fark ortaya koydu. Burada aslında çok büyük bir dikkat çekti. Çünkü öncesinde önerilen yöntemler...
+
+75
+00:17:03,316 --> 00:17:25,355
+Bu problemlerin cell tracking ve cell segmentation problemlerinde çok düşük başarımlardı. UNET ortaya çıktıktan sonra çok başarılı bir biçimde segmentasyon yapınca oldukça dikkat çekti. Hani bu başarılı modeli biz farklı problemlerin uygulanmasına da uyarlayabilir miyiz bir düşünceyle ondan sonraki süreçte artık.
+
+76
+00:17:25,811 --> 00:17:34,511
+Çok fazla çalışma yapıldı. İşte biraz önce bahsetmiştik. Yaklaşık 61 bin çalışmadan atıf almış bir paper bu.
+
+77
+00:17:38,996 --> 00:17:49,936
+Bu çalışmalar arasında çok çeşitli çalışmalar var. UNET daha çok medikal görüntülerin bölüklendirilmesinde kullanılıyor ama farklı alanlarda da UNET'in kullanıldığını görüyoruz.
+
+78
+00:17:49,936 --> 00:18:00,135
+İşte topraktaki köklerin bölüklendirilmesi, şurada görüntüler var. Toprağın içerisinde kılcal damar şeklindeki bunu daha çok o alanda çalışan araştırmacılar kullanıyor.
+
+79
+00:18:00,216 --> 00:18:05,416
+Onların bölüklendirilmesinde bu görüntüler çekildikten sonra tabii o araştırmacılar için.
+
+80
+00:18:05,844 --> 00:18:32,784
+Bunları hesaplamak zor. Onlar görüntülerini çekiyorlar. Biz de onların problemlerine genelde çözüm üretmeye çalışıyoruz. Asfalt çatlaklarının bölütlenmesi, binalardaki yapı çatlaklarının, köprü çatlaklarının vesaire bölütlenmesi, bunların belirlenmesinde. Bunun haricinde tarımsal ürünlerin görüntüler varsa, tarlada fotoğraf çekiyorsunuz diyelim, elma ağaçları, domatesler, biberler vesaire.
+
+81
+00:18:33,523 --> 00:18:56,783
+Buradan mesela üretimin ne kadar rekortesini ölçmek amacıyla yapılan bazı çalışmalar var. Orada ürünlerin bölüklenmesinde de yönetik kullanılıyor. Normal doğal ortam görüntülerindeki objelerin segmente edilmesinde de insanlar, hayvanlar, araçlar, ağaçlar, dağ, ova vs. onların bölüklenmesinde.
+
+82
+00:19:00,915 --> 00:19:22,536
+Yolun algıladığı görüntülerin bölüklenmesine dair çalışmalar da var. Bunun dışında radar görüntüleri ve hiperspektral görüntülerin bölüklenmesinde de yönet tercih ediliyor. Burada mesela yolların bölüklenmesi. Şuradaki çalışmada yolların bölüklenmesine dair bir çalışma yapılmış. Yukarıdan havadan çekilmiş görüntüler üzerinden yolların bölüklenmesi.
+
+83
+00:19:25,428 --> 00:19:45,108
+Geomatik mühendisi alanında yapılan çalışmalarda binaların çatılarının bölüklenmesine dair yapılmış çalışmalar da var. Uydu görüntülerinde. Bunun dışında hareket tanıma, yüz tanıma gibi problemlerde yüzün, ellerin ve diğer nesnelerin bölüklenmesinde de kullanılıyor.
+
+84
+00:19:48,084 --> 00:19:59,144
+Dikkatimi çekmişti. Maden cehberlerinin bölütlenmesinde altın çıkarıyorlar, demir çıkarıyorlar madenlerden. Bunları taşları bölütleyebiliriz falan diye buna yönelik çalışmalar da vardı.
+
+85
+00:20:05,428 --> 00:20:09,428
+Burada yönetin temel mimarisini görüyoruz arkadaşlar.
+
+86
+00:20:09,428 --> 00:20:15,428
+Bu şekilde yönetin olarak mimarisi, bu iki bölümü ayırabilmemiz gerekiyor.
+
+87
+00:20:15,428 --> 00:20:20,428
+Yönetin ilimci bölümün zaralar yolu belirtilmiştir.
+
+88
+00:20:20,428 --> 00:20:23,428
+Burada verilen iki bölümün.
+
+89
+00:20:23,428 --> 00:20:32,352
+Bu yolu evya çolgulmuyor ve arkasından komolyon katmanlarından ve kolşun katmanlarından geçirdikten sonra.
+
+90
+00:20:32,352 --> 00:20:48,892
+Belirleyen bir boyutu da indiriliyor. Daha sonra ekran bir kesteyi, yani ekran yol boyutu da boyutu da bozlanmış olan görüntü, bu sefer konvolüsyon işleminin tam tersi olan ad konvolüsyon işlemiyle tekrar decode ediliyor.
+
+91
+00:20:51,347 --> 00:21:03,807
+Verilen bir girdi görüntüsü kodlanıyor, özellikleri çıkarılıyor ve tekrar dipot edildikten sonra orijinal boyutlarında segment edilmiş görüntüyü elde edebilmemize olanak sağlıyor.
+
+92
+00:21:03,807 --> 00:21:09,708
+Şu kısma bakarsak neden zaralan yol olarak adlandırıldığını biraz daha rahat anlayabiliriz.
+
+93
+00:21:09,788 --> 00:21:14,807
+Çünkü verilen girdi görüntüsü komvolüsyon tatmanlarından geçirildikten sonra...
+
+94
+00:21:15,667 --> 00:21:22,467
+ve funik operasyona tabi çıkıldıktan sonra görüntünün size azalıyor.
+
+95
+00:21:22,467 --> 00:21:30,707
+Ve bu diyon boyunca ilerlerken sürekli size azaldığı için genişliğinin daraldığını görüyoruz.
+
+96
+00:21:30,707 --> 00:21:35,587
+Dolayısıyla bu ilerleme feti daralando olarak adlandırılıyor.
+
+97
+00:21:35,587 --> 00:21:42,315
+Aynı şekilde expanding fetleriğimizde ışıklıkla kadar dolanmış olan görüntü bu.
+
+98
+00:21:42,387 --> 00:21:52,387
+Daha sonra, kral onları içeride tarzı görüntü boyutları tekrar etki boyutuna getirildiği için expanding bed olarak adlandırılıyor.
+
+99
+00:21:56,147 --> 00:22:07,307
+UNET aynı zamanda bir encoding-decoding network tipi. UNET'e benzer şekilde encoder-decoder networkler de mevcut.
+
+100
+00:22:10,612 --> 00:22:34,471
+Yirdi görüntüsü daha küçük boyutlu görüntülere dönüştürüyor arkadaşlar bu encoding padde, yani contracting padde. Bu işlem görüntünün podlanması aslında. Bir görüntüyü daha küçük boyutlu görüntülere konvolüsyon işlemleri ve polling işlemlerini sıralı olarak devam ettirip, arka arkaya gelen bu yolday içerisinde görüntüyü kodlamış oluyoruz.
+
+101
+00:22:36,788 --> 00:22:49,188
+Burada şöyle bir soru sorabiliriz. Görüntüyü kodlamadan da yol boyunca aynı işlemleri girdi görüntüsüne uygulayamaz mıdır? Yani neden görüntüyü kodlama ihtiyacı hissediyoruz? Hani size'ın neden küçültü?
+
+102
+00:22:49,188 --> 00:23:02,248
+Burada popolistik işlem, bu yüzden sonraki bir şey var. Şurada kırmızı bir tane kop var. Bunun karşılığı biraz küçük gözüküyor ama yansı var.
+
+103
+00:23:04,084 --> 00:23:26,624
+Üçlü işlemi uygulamıyor ve görüntüden boyutu küçültülüyor, kodlanıyor. Biz normalde bu görüntüyü doğrudan sıralı olarak komponisyon işlemine de tabi tutardık. Tasarlayanlar bu şekilde bir yol da izleyebilirlerdi ama bu şekilde bir yol izlememişler aslında. Bir avantaj mı sağlıyor görüntüyü kodlamak? Sizin bir düşünceniz var mı?
+
+104
+00:23:28,624 --> 00:23:29,903
+Evet.
+
+105
+00:23:32,307 --> 00:23:35,488
+İki tane söyleyebiliriz. Aslında bir tanesi hızlandırıcı.
+
+106
+00:23:39,667 --> 00:23:57,907
+Evet. Birincisi hız. Dediğimiz gibi konvolüsyon işlemi maliyetli bir işlem aslında. Hani bunu çok büyük görüntülere uygulamak bize çok fazla zaman kaybettirecek. Ama küçük görüntülere uygularsak zamandan da bir kazınım sağlayacağız.
+
+107
+00:23:57,907 --> 00:24:05,807
+Diğeri de performansla alakalı. Şöyle ki, görüntüyü yol boyunca kodluyoruz ve daha küçük görüntüler elde ediyoruz.
+
+108
+00:24:06,867 --> 00:24:21,867
+Görüntü çok büyük olursa içerisinde çok fazla detay barındırır. Ama biz bunları daha küçük görüntülere dönüştürürsek detaylar biraz azalacaktır. Dolayısıyla aynı sınıfa ait görüntülerin boyutları küçüldükçe...
+
+109
+00:24:23,028 --> 00:24:41,988
+Küçük boyutlu görüntülerden benzer özellikleri çıkarma olasılığımız da artacaktır aynı zamanda. Bu sebeple bu kodlama işlemi bize iki yönden avantaj sağlıyor diyebiliriz. Birincisi alıntı hızını artırıyor hem de daha iyi özellikler çıkarmamızı ve iyi bir sınıflandırma yapmamızı sağlıyor.
+
+110
+00:24:48,435 --> 00:25:02,295
+Contracting PAD'de yani encoding işlemini yaptığımız daralan yolda arsa arkaya gelen köpekler ve blokeler, işte mavi gibi süpermer birer arkadaşlar, diğer bir yok.
+
+111
+00:25:02,295 --> 00:25:15,515
+Bu blokelerin her birisi arsa arkaya kompozit işlemleri uygulamıyor ve arkasından value ve kodit işlemleriyle görüntü bir sonraki bloğa kaydırılmış oluyor.
+
+112
+00:25:17,491 --> 00:25:34,951
+İntro görüntüsü üzerinde filtre çekirdekleri gezdirilerek konvolüsyon işlemi yapılıyor. Daha sonra pooling işlemi ile konvolüsyon işlemi sonucunda elde edilmiş olan çıktının boyutları azaltılıyor.
+
+113
+00:25:34,951 --> 00:25:44,652
+Peşi sıra gelen bir tane relü fonksiyonu da bu bir aktivasyon fonksiyonu. Bu fonksiyonun da şu şekilde bir çıkışı olabilir.
+
+114
+00:25:45,523 --> 00:25:58,644
+Yani 0'dan büyük bir değer geldiği zaman bu değerin kendisini biz doğrudan network update etmek için kullanalım diyeceğiz. Ve bu şekilde ağırlıklarını güncelleyelim.
+
+115
+00:26:06,132 --> 00:26:17,852
+Devamında, Udink işlemi var. Temelinde Dropout uygulanmıyor ama çoğu çalışmada Dropout'u uygulandığını da göreceğiz.
+
+116
+00:26:19,988 --> 00:26:31,008
+Bir katmandaki nöronların bazılarının eğitim işlemi sırasında aslında devre dışı bırakılması işlemi, alın nöronlarının bazılarının söndürülmesi işlemi.
+
+117
+00:26:31,008 --> 00:26:42,008
+Yani bizim bir katmandımızda diyelim ki bin tane nöronumuz varsa biz bunların eğitim aşamasında belli bir oranda kadarını seçip bunların ağırlıklarını...
+
+118
+00:26:42,708 --> 00:27:07,968
+Sisteme aktarmayacağız. Bunları pasif hale getireceğiz demektir. Dropout işlemi bu. Daha önce yapılan çalışmalarda Dropout'un sistemlerin başarımlarını bir ölçüde artırdığı gözlemlenmiş. Dolayısıyla UNET'te yapılan çalışmalarda da Dropout'un pozitif bir etkisi var. Çok yüksek olmayabilir ama segmentasyonun başarımında birkaç puanlık bir artış yapması söz konusu. Aynı zamanda ağın daha stabil.
+
+119
+00:27:08,432 --> 00:27:17,072
+Stabil bir hale gelmesini de sağlıyor. Overpitting dediğimiz ezberlemenin de önüne geçmeye yardımcı olan bir işlem aynı zamanda bu.
+
+120
+00:27:17,912 --> 00:27:26,011
+Burada ağdaki bazı durumları söndürüyoruz ve bu sayede alın daha stabil hale gelmesini sağlıyoruz.
+
+121
+00:27:26,692 --> 00:27:31,991
+Bu kısıtta uyguladığımız, şu blokların sonuçta uyguladığımız bu link yöntemi de...
+
+122
+00:27:32,660 --> 00:27:43,660
+Bu kompozisyon işleminde uygulanmış olan görüntüde seçtiğimiz boyunlara bağlı olarak 2x2'lik bir maksimum balızama işlemi yapacaklar.
+
+123
+00:27:43,791 --> 00:27:55,051
+Burada resmi bölmüş olduğumuz küçük karelerden maksimum olan değeri alıp resmin boyutuna küçültmüş oluyoruz. Bu sayede resmi kodlamış oluyoruz.
+
+124
+00:27:55,432 --> 00:28:01,771
+Bazı bilgiyi kaybediyoruz aslında ama bu bizim için faydalı bir işlem olmuş oluyor. Çünkü resmi kodlamış oluyoruz.
+
+125
+00:28:02,371 --> 00:28:09,051
+Kodlamış olduğumuz için de daha küçük bir boyuta indirgemiş oluyoruz. Resmin detaylarından kurtulmuş oluyoruz bir nevi.
+
+126
+00:28:19,923 --> 00:28:38,604
+Buradaki örnekte arkadaşlar, ben girdi görüntülerine 128 x 128 tip olarak aldım. Tabii siz uygulayacağınız yönteme bağlı olarak, özür dilerim yönteme değil, yaklaşıma bağlı olarak farklı boyutlarda girdi görüntülerinde sisteme verebilirsiniz.
+
+127
+00:28:39,316 --> 00:28:52,299
+Buradaki örnekte birinci blokta 128x128'lik input görüntüsü verilmiş. Bunun üzerinde 64 filtre getirilerek, kompozisyon filtresi getirilerek 64 kat...
+
+128
+00:28:52,788 --> 00:29:16,627
+Derinliğinde bir görüntü elde edilmiş çift olarak. Daha sonra bu şekilde arka arkaya gelen bütün konvolüsyon çift bloklarında görüntü boyutları yarı yarıya indirgenmiş ve devamında uygulanan titrelere bağlı olarak en son şu tasında o zaman yolun görüntüle 8 çarpı, 5 çarpı bir görüntümüz var.
+
+129
+00:29:19,635 --> 00:29:29,115
+24.5'inde bir görüntü. Biz görüntüyü ne yaptık? Aslında boyutlarını küçülttük. Çok fazla özellik elde etmiş olduk görüntü üzerinde.
+
+130
+00:29:29,115 --> 00:29:35,115
+Görüntüyü bu şekilde podladıktan sonra...
+
+131
+00:29:37,236 --> 00:29:49,276
+Contracting Beddi, yani görüntüyü UNET'e veriyoruz. UNET bu görüntüyü arka arkaya gelen konvolüsyon bloklarıyla kodladı ve 16x1024'lik bir görüntü haline getirdi.
+
+132
+00:30:02,516 --> 00:30:22,316
+Devamında da, yeni değerli olduğumuzda da arkadaşlar, kodlamış olduğumuz görüntüyü bu sefer depot edeceğiz. Yine özelliklerini çıkarmaya devam edeceğiz. Bunun için de UpConvolution işlemi dediğimiz işlemi uygulayacağız. Yani coding işleminde ne yapmıştık?
+
+133
+00:30:22,867 --> 00:30:30,867
+Görüntünün boyutlarına indirgemiştik. Burada da görüntünün boyutlarını tekrar kademe kademe artıracağız.
+
+134
+00:30:40,307 --> 00:30:56,548
+Burası Up Convolution dediğimiz işlem. Burada 122x122x64'lik bir örnek görüntü var. Bunun üzerine Up Convolution işlemi bulandığı zaman 2x2'lik, havuzlamada 2x2'lik bir maksimum havuzlama yapıyoruz.
+
+135
+00:30:56,948 --> 00:31:04,828
+Abtompoloji işleminize 2 çarpı 2 birlikte abtompoloji yaparak, 112 çarpı 112'lük bir görüntü, örnek veriyoruz.
+
+136
+00:31:04,828 --> 00:31:12,188
+24 çarpı 24, burada da filtre çekirdekleriyle aynı kalacak, boyutumuz bir katına çıkarmış oluyoruz aslında.
+
+137
+00:31:18,355 --> 00:31:20,355
+En son şu kısımda kalmıştık.
+
+138
+00:31:20,355 --> 00:31:23,355
+Konpolisyonun gibi olarak bu örneğe gördüğümüzde,
+
+139
+00:31:23,355 --> 00:31:26,355
+tabi bir örneğe gördüğümüzde bir görüntü vardı.
+
+140
+00:31:26,355 --> 00:31:29,355
+Bu konlanmış görüntüydü. O hale gelişti.
+
+141
+00:31:29,355 --> 00:31:35,355
+Gelişleyen yolda, 6. konpolisyonun gibi orda, yani şurada, şu kısımda,
+
+142
+00:31:35,355 --> 00:31:42,355
+bu görüntü tekrar, daha çok şey, hipode edilecek. Hipode edilirken de,
+
+143
+00:31:43,028 --> 00:31:55,088
+Görüntünün boyutları iki katına çıkarılacak ve kompozisyon işlemleriyle yine üzerinde özellik çıkarma işlemi yapılacak.
+
+144
+00:31:55,088 --> 00:32:00,328
+En son bakmana geldiği zaman da, 30. kompozisyon gülübünün, yani şuraya.
+
+145
+00:32:01,428 --> 00:32:24,332
+Bizim örneğe görüntümüzde görebilecek bir çarpı ikili bir çarpı ikili bir çarpı elde etmiş olacağız. Bu tabi binary bir problem için elde edildiği için de eğer bir çarpı almışlıkta veya onun için bir çarpı da bu durumda yeti görüntülebiliriz.
+
+146
+00:32:25,044 --> 00:32:48,908
+Çiftimiz 1-
+
+147
+00:32:58,163 --> 00:33:20,523
+Normal Defoder, Enfoder Networklerden bir farkı da var. O da, şurada zararlar yol bulunca elde edilen çiftli görüntüleri var. Bu çiftli görüntülerini her bir blokdaki bu geniş iler katmanda mutluluk olarak tekrar işleme veriyor. Yani şu birinci blokdaki görüntüleri,
+
+148
+00:33:22,003 --> 00:33:43,563
+Expand FES'te tam parçasına geldiği şekilde olan blog da girdi olarak tekrar kullanıyor. İkincisini de konuklanma göre girdi olarak kullanıyor. Bu şekilde daralan yoldaki bilgiyi de genişleyen yolda özellik çıkarıma yaparken tekrar inputlara aktarıyor.
+
+149
+00:33:46,420 --> 00:33:54,520
+Enkoder, Dekoder'dan farklı olarak böyle avantajlı bir yaklaşımı var. Bu ne tarz bir avantaj sağlıyor olabilir bize?
+
+150
+00:34:01,140 --> 00:34:09,619
+Evet. Aslında şu, şimdi görüntüyü kodlarken özelliklerin bazılarını kaybediyoruz.
+
+151
+00:34:11,240 --> 00:34:25,240
+Kodladık, küçük hale getirdik. Görüntüyü açarken, Up Convolution işlemi yaparken aslında daha güzel bir görüntü elde edebilmek için biz o inputlardaki görüntüleri de dahil ederek
+
+152
+00:34:25,588 --> 00:34:40,807
+Yol göstermiş oluyoruz aslında. Bak, bu görüntüyü kollarken sen şöyle bir görüntü elde ettin. Şimdi görüntüyü açarken bu görüntüyü de göz önüne al, daha güzel bir biçimde görüntüyü oluştur.
+
+153
+00:34:41,300 --> 00:34:58,600
+Çünkü görüntüyü tekrar küçük bir boyuttan büyük bir boyuta hale getirirken, görüntü çok farklı bir görüntüye dönüşmesin aslında. Bu katmandaki görüntüyü alıp, burada birleştirip daha iyi bir segmentasyon yapmayı sağlıyor bu sayede yöntem.
+
+154
+00:35:03,699 --> 00:35:24,439
+Yönetim birçok avantajı var başarılı olması ile ilgili. Biraz da bunlardan bahsedelim. Yüksek başarımlarla bölütleme gerçekleştiriyor. Özellikle medikal görüntülerde. Fakat sadece medikal görüntülerde değil, farklı tipteki görüntülerde de yüksek başarımları göz önüne alınabilir.
+
+155
+00:35:24,884 --> 00:35:44,284
+Bununla birlikte multi-class problemler için oldukça uygun. Sadece binary değil, sıfır ve birlerden oluşan görüntüler için değil, farklı sayıda çok sınıflı problemler için de UNET kolaylıkla uygulanabilir. Basit bir mimari yapısı var UNET'in diğer networklere göre.
+
+156
+00:35:44,768 --> 00:36:11,708
+Bloklarda da tekrarlayan yapılar mevcut. Yani arka arkaya gelen iki tane konvolisyon işlemi, bir tane pooling işlemi. Bu zaten alın ilerlemesi boyunca genelde çok benzer. Bu sebeple implement edilmesi aslında oldukça kolay. Hazır bir biçimde implement edilmiş kaynak kodları da zaten mevcut. Gerek işte Keras'ta yazılmış, gerek PyTorch'ta implement edilmiş halleri mevcut yönetin.
+
+157
+00:36:12,659 --> 00:36:27,399
+Bununla birlikte öne çıkan en önemli avantajlarından bir tanesi de şu, az miktarda eğitim verisiyle oldukça başarılı çalışabiliyor. Bu durum özellikle medikal görüntülerin bölütlenmesinde yarar sağlıyor.
+
+158
+00:36:28,275 --> 00:36:50,135
+Az miktarda veriyle çalışmamız gereken durumlar olabilir. Mesela benim doktora test çalışmamda bir hastalıkla ilgili, tertesi hastalığıyla alakalı görüntüler üzerinde çalışmıştık. Bu hastalık çocuklarda görülen bir kalça eklemi rahatsızlığı ve çok nadir görülen bir hastalık. Nadir görülen bir hastalık olduğu için...
+
+159
+00:36:50,771 --> 00:36:58,431
+Görüntüyü bulabilmek zor aslında. Çok kısıtlı bir görüntü var. Bizim elimizde mesela 13 tane hastaya ait görüntüler var.
+
+160
+00:36:58,431 --> 00:37:06,411
+13 hasta. Dolayısıyla az sayıda veriniz varsa, görüntünüz varsa...
+
+161
+00:37:06,420 --> 00:37:26,000
+Unet ve Unet'i temel alan bir benzer bir mimari kullanarak başarılı bir bölütleme gerçekleştirebilirsiniz. Bu farklı alanlardaki problemlere de uyarlanabilir aslında. Az verinin olduğu, az görüntünün olduğu bölütleme çalışmalarında Unet tercih sebebi olarak öne çıkıyor biraz daha.
+
+162
+00:37:32,403 --> 00:37:54,704
+Bir de şu kısım var. Anotasyonla alakalı az miktarda eğitim verisi demek, aynı zamanda az sayıda anotasyon görüntüsü demek. Çünkü siz görüntü bölütlemek istiyorsanız, bir ağı eğitecekseniz, input olarak vereceğiniz görüntülerle birlikte o input görüntülerine karşılık gelen Grand Truth, gerçek referans dediğimiz segmentasyon görüntüleri de vermeniz lazım.
+
+163
+00:37:59,059 --> 00:38:25,920
+Orjinal segmentasyonu bu diye bunları vermemiz ve öğretmemiz gerekecek. Dolayısıyla az görüntüyle çalışırken az segment edilmiş anotasyon görüntüsüyle de görüntüsü de kullanacağız. Dolayısıyla anotasyon çok yorucu bir işlem. Çok fazla görüntüyle çalışacaksanız çok fazla anotasyon yapmanız gerekecek. Yani oturup her bir input görüntüsüne karşılık gelen görüntüleri etiketlemeniz gerekecek.
+
+164
+00:38:26,483 --> 00:38:36,224
+Dolayısıyla az veriyle UNET başarılı olduğu için sizi bu şekilde bir zahmetten de ayrıca kurtaracaktır. Onu da belirtmekte fayda var.
+
+165
+00:38:37,203 --> 00:38:42,603
+Mimari yapısı ölçeklenebilir. Girdi ve çıktı boyutlarını, hitle sayılarını değiştirebilirsiniz.
+
+166
+00:38:42,844 --> 00:38:52,603
+Mesela burada 128x128'lik bir input görüntüsü vermiştik. Siz bunu farklı boyutlara da çevirebilirsiniz. Mesela 512x512 olabilir.
+
+167
+00:38:53,108 --> 00:39:02,608
+Buna bağlı olarak kodlamadaki blok sayısını da arttırabilirsiniz. Bu şekilde modifikasyonlar da yapabilirsiniz.
+
+168
+00:39:02,608 --> 00:39:06,148
+Mimari kolay modifiye edilebilir.
+
+169
+00:39:14,516 --> 00:39:26,396
+Mimariyi modifiye edebilme imkanınız var. Yani farklı konvolüsyon blokları, inputlar ekleyebilirsiniz katmanlar arasına. Farklı bilgiler ekleyebilirsiniz başka bloklardan gelen.
+
+170
+00:39:27,396 --> 00:39:31,775
+Bu biçimde modifiye edebilme imkanı da var. Açık.
+
+171
+00:39:34,036 --> 00:40:00,000
+Güncel literatüre baktığınız zaman UNED'le alakalı çok fazla varyant çalışma da var. Bu temel UNED mimarisiydi. Ama mesela UNED, Inception UNED, Residual UNED, Dance UNED, UNED++ gibi bu şekilde farklı farklı UNED modelleri de önerilmiş. Bunlar temel UNED mimarisine aslında kendi problemlerine...
+
+172
+00:40:00,000 --> 00:40:26,460
+Bu örneklerinin çözümlerini kolaylaştırmak adına UNET'in avantajlarından faydalanıp bir de kendi problemlerinin çözümünü, başarımını artırmak için bazı modifikasyonlar yapmışlar. Mesela buradaki çalışmada input olarak blokların arasındaki görüntüleri bir sonraki katmanda tekrar kullanmışlar. Bu şekilde başarımı biraz daha artırmaya çalışmışlar. Bu örnek bir çalışma.
+
+173
+00:40:29,300 --> 00:40:32,660
+Almış olduğu paper'ın bilgileri de var.
+
+174
+00:40:34,160 --> 00:40:43,120
+Mimarileriyle alakalı 2021'de yayınlanmış bir tane makale var. Bu makaleden de dilerseniz daha detaylı bilgileri elde edebilirsiniz arkadaşlar.
+
+175
+00:40:48,436 --> 00:40:58,636
+Burada son kısımda da Keras kütüphanesi kullanılarak aslında modelin nasıl oluşturulacağına dair bir kod eklemesi yapmıştım.
+
+176
+00:41:00,756 --> 00:41:04,916
+Bu Keras kütüphanesi kullanılarak yazılmış bir kod arkadaşlar.
+
+177
+00:41:11,027 --> 00:41:24,227
+Burada dikkat edeceğimiz noktalardan bir tanesi UNET'le başarılığını etkileyebilecek ağırlıkların ilk atanması işlemi. Bunun için TensorFlow kütüphanesinde Random Seat...
+
+178
+00:41:25,907 --> 00:41:50,727
+Fonksiyonunu kullanarak ağırlıkları düzgün bir biçimde ilklendirmemiz gerekecektir. Buna dikkat etmemiz iyi olur. Çünkü yöntemi tekrar tekrar çalıştıracağınız zaman farklı yerlere gitmemek için, yani farklı farklı başarımlar gözlememek adına bu şekilde ağırlıkları her çalıştırmada stabil bir biçimde sağlamak için bu şekilde bir ayarlama yapmamız gerekecektir.
+
+179
+00:41:53,076 --> 00:42:06,996
+Konvolüsyon katmanlarını oluşturmak için bu keras kütüphanesinde com2d isminde bir tane fonksiyon var. Bu fonksiyonu kullanarak siz aslında bir tane konvolüsyon katmanı oluşturabilirsiniz hızlı bir biçimde.
+
+180
+00:42:06,996 --> 00:42:18,135
+Bunun aktivasyon fonksiyonunu, spellingini ve kernel initial metodunu belirleyebilmeniz mümkün.
+
+181
+00:42:20,563 --> 00:42:30,563
+Alt alta gelen dörtlü pol bloklarının her biri bizim UNET mimarimizdeki aslında o arka arkaya gelen mavi çizgilerin her birini gösteriyor.
+
+182
+00:42:30,563 --> 00:42:40,556
+Burada her bir konvolisyon katmanından sonra ulaşacak görüntüyü bir sonraki katmana aktaracağız. Bu şekilde görüntüyü ikodeler hale getireceğiz.
+
+183
+00:42:44,244 --> 00:42:54,124
+Bu kısımda Expanding Pet dediğimiz kısım, burada da Up Convolution işlemiyle aslında sıralı olarak görüntülere dipot edeceğiz.
+
+184
+00:43:01,492 --> 00:43:21,632
+Model isminde bir sınıfla modelimizi compile edip, return edip kullanabilir hale geleceğiz. Bu örnek bir kod parçası. Bu kitapla da mevcut. Dolayısıyla siz de yöneti indirip kendi problemlerinizde görüntü bölüklemek amacıyla kullanır.
+
+185
+00:43:25,588 --> 00:43:43,888
+Şimdi bir de kısaca training, validation ve test işlemlerinden bahsedelim. Tabii bölütleme yapabilmek için öncesinde modeli eğitmemiz gerekecek. Bunun için eğitim verisi adını vereceğimiz bir veri setini kullanarak modeli eğiteceğiz.
+
+186
+00:43:44,628 --> 00:44:11,547
+Şöyle ki, bir çalışma yapacaksak elimizde veri olması lazım. Öncelikle verinin ne kadarını eğitim, ne kadarını validasyon, ne kadarını da test yapmak için kullanacağız. Bunu belirlememiz lazım. Şöyle bir soru sorabiliriz. Ya benim verim var zaten. Ben hiç validasyon veri seti kullanmayayım. Doğrudan şu kadarını train edeyim, şu kadarıyla da test edeyim. Bu biraz sakıncalı olabilir. Verini öğrenme tabanlı çalışmalarda şöyle ki.
+
+187
+00:44:11,952 --> 00:44:39,192
+Eğitirsiniz, ekürisleri gözlemlersiniz, lossları gözlemlersiniz eğittikten sonra. Ondan sonra testi verirsiniz. Başarılı bir bölükleme gerçekleştirebilirsiniz. Ama validasyon setini kullanırsanız yapacağınız çalışmalarda, bölükleme çalışmalarında train setini test etmeden önce bir validasyon seti üzerinde test edersiniz. Böylece ağın parametrelerini ayarlama imkanınız olur.
+
+188
+00:44:39,572 --> 00:44:54,331
+Validasyon seti bir ayarlama setiniz olacaktır. Bu eğitim verisi üzerinde validasyon setini verirsiniz, test edersiniz. Daha sonra ağın parametrelerini değiştirirsiniz. Tekrar validasyon setini de test edersiniz.
+
+189
+00:45:05,460 --> 00:45:08,539
+sağlayacağı parametreleri gözlemleyip
+
+190
+00:45:08,539 --> 00:45:10,260
+ondan sonraki süreçte
+
+191
+00:45:10,260 --> 00:45:12,440
+o parametrelerle test veri seti
+
+192
+00:45:12,440 --> 00:45:14,300
+üzerinde eğitip maksimum
+
+193
+00:45:14,300 --> 00:45:16,280
+performansı alabilirsiniz böylece.
+
+194
+00:45:16,720 --> 00:45:17,699
+Bu size şu
+
+195
+00:45:17,699 --> 00:45:19,940
+yönde fayda sağlayabilir.
+
+196
+00:45:21,059 --> 00:45:22,340
+Belki çok daha fazla
+
+197
+00:45:22,340 --> 00:45:23,079
+bir başarımla
+
+198
+00:45:23,079 --> 00:45:26,320
+gerçekleştirme imkanı
+
+199
+00:45:26,320 --> 00:45:28,360
+olacak. Bunu validasyon seti
+
+200
+00:45:28,360 --> 00:45:30,260
+kullanarak çok daha kolay bir biçimde
+
+201
+00:45:30,260 --> 00:45:31,900
+aslında yapabilirsiniz demek oluyor.
+
+202
+00:45:32,436 --> 00:45:44,795
+Yapılan çalışmalarda genellikle işte train seti yüzde seksen bir veri seti varsa tabii sizin sahip olduğunuz verinin sayısı da önemli burada. Az veriniz varsa.
+
+203
+00:45:45,427 --> 00:46:10,847
+Doğrudan %80'ini belki şey yapmanız sakıncalı olabilir. Ama genelde yüksek veriye sahip veri setlerinde %80'lik bir kısmı train set olarak ayrılıyor. %10'luk bir kısmı validation set yani doğrulama seti %10'luk bir kısmı da test. Tabi bunları 15-20 gibi oranlar haline de veri setinin size ne bağlı olarak güncellemek.
+
+204
+00:46:11,923 --> 00:46:13,123
+Gerekir, bilet.
+
+205
+00:46:15,824 --> 00:46:16,784
+Evet, on üç.
+
+206
+00:46:21,460 --> 00:46:48,340
+Orada 13 tane hasta vardı aslında. 13 tane hastanın MR görüntüsü. Her bir MR görüntüsünde de farklı sayıda kesitler var. Arka arkaya gelen kesitlerden oluşuyor MR görüntüleri. 3 boyutlu bir görüntü aslında. Bir hastanın mesela bir tane MR görüntüsünde diyelim ki 20 tane kesit var. Arka arkaya gelen 20 kesit. 13 hastadan 300 civarında yaklaşık bir resim aslında. 2 boyutlu resim.
+
+207
+00:46:48,916 --> 00:46:57,636
+Bu da az aslında, derin öğrenmeyle yapabilir bir çalışma için. Siz orada ne söylemiştiniz? Nasıl?
+
+208
+00:47:04,576 --> 00:47:12,916
+Evet. Biz şöyle bir yaklaşım uygulamıştık orada. Veri sayımız az. 13 tane hasta var. Biz bunu...
+
+209
+00:47:13,907 --> 00:47:38,068
+Live One Out Cross Validation ile test ettik. Yani 12 tane hastanın görüntüleriyle sistemi eğittik. 13. hastanın görüntüsünü 20 tane kesimde test olarak verdik. Sonra diğer hastaları bu şekilde 13 tane model oluşturduk her bir hasta için. 13 modeli test ettik. Daha sonra bunların ortalamalarını hesapladık. Veri sayımız azsa zaten.
+
+210
+00:47:38,447 --> 00:47:44,447
+İşte leave one out cross-validation yöntemi en mantıklı yöntemlerden bir tanesi onu uygulamak iyi olur.
+
+211
+00:47:47,668 --> 00:47:50,867
+Benim anlatacaklarım Yönet'le ilgili bu kadar arkadaşlar.
+
+212
+00:48:11,284 --> 00:48:18,284
+Şimdi ona makale yazarken...
+
+213
+00:48:24,284 --> 00:48:31,624
+Tabii şöyle, şimdi biz çalışmayı yaptıktan sonra dergiye, işte makaleyle yazmıştık hocamla birlikte.
+
+214
+00:48:32,464 --> 00:48:34,544
+İşte dergiye gönderelim dedik.
+
+215
+00:48:35,064 --> 00:48:37,844
+Tabii gelen eleştiriler arasında bu da hani şey oluyor.
+
+216
+00:48:38,324 --> 00:49:05,583
+Ama burada şu da önemli. Mesela sizin veri toplama imkanlarınız, kısıtlarınız da. Mesela bu daha çok review süreciyle alakalı bir review. Yani makalenin hakemlerin nasıl değerlendirdiğiyle alakalı. Onlar zaten hakemler genelde soruyorlar. Yani veri sayısı biraz az değil mi? Ama bunu mesela makalenizde de belirtmek faydalı olabilir. Mesela bizim üzerinizde çalıştığımız hastalık.
+
+217
+00:49:05,887 --> 00:49:18,443
+Nadir görülen bir hastalık. Dolayısıyla veri toplamak zaten zor. Bir de şöyle bir durum var. Bu rahatsızlık, çocuklarda görülen bir rahatsızlık. Şimdi MR çekebilirsiniz ama...
+
+218
+00:49:18,452 --> 00:49:39,252
+Bir de hastanedeki etik kurul izni tarafı var. Yani çocuklara kafanıza göre gidip onların MR görüntüsünü çekemiyorsunuz. İşte kapalı alanda kalma korkusu, işte ailelerinin izni gerekiyor. Hani siz rica etseniz bile işte hastanede hekimler uygun görmeyebiliyorlar.
+
+219
+00:49:45,652 --> 00:50:00,791
+Hastadan çok fazla kesit almak istiyorsanız, diyelim ki 100-200 tane kesit alacaksınız. Bu çocuğun yarım saat, bir saat makinenin içinde kalması demek. Bu çocuk için çok kötü bir şey olur. Süreyi uzatıyor.
+
+220
+00:50:07,827 --> 00:50:26,827
+Tabii bunları açıklamak gerekiyor mesela. Tabii bunları belirtince zaten nadir görülen bir rahatsızlık bu. Veri seti toplamak da çok kısımlı. Aslında o 15 tane veri bile, 15 hastalığının verisi bile çok kıymetli bir veri olmuş oluyor aslında.
+
+221
+00:50:34,291 --> 00:50:35,831
+Merianler, birçok bir şey.
+
+222
+00:50:40,467 --> 00:50:43,467
+Siz buyrun acan.
+
+223
+00:51:07,476 --> 00:51:22,936
+Evet. Mesela hastalık %90 oranında mesela tek bir kalç ekleminde görülüyor. Mesela 100 tane hasta varsa dünyada bunların 90 tanesinde 90 hastanın tek bir kalç ekleminde görülüyor. Yani diğeri sağlıklı.
+
+224
+00:51:35,668 --> 00:51:36,556
+Teşekkürler.
+
+225
+00:51:50,675 --> 00:51:53,975
+Bir de şöyle bir şey var. Zaten hasta olmadığı zaman hastaneye gelmiyor.
+
+226
+00:52:42,771 --> 00:52:48,211
+Yani, Asya'yı da görülecek ama evrensizde külmüzü de var.
+
+227
+00:52:53,076 --> 00:53:18,996
+Bir de bizim çalıştığımız problem ikili bir sınıflandırma problemiydi. Bir binary idi. Dolayısıyla iki sınıf olduğu için piksel bazında sample sayıları da biraz daha yüksek oluyor. Hani background mı, chemik mi?
+
+228
+00:53:19,827 --> 00:53:21,827
+O şekilde biz kemiği...
+
+229
+00:53:21,827 --> 00:53:26,827
+Yok, kemiğin şeklinden bakarak bu şekilde anlatmak için...
+
+230
+00:53:26,827 --> 00:53:38,827
+Biz daha çok kemiğin şeklini analiz etmek üzerine bir çalışma yapmıştık. Tabii şeklini analiz etmek için önce bir kemiği ödütlemek gerekiyor dolayısıyla.
+
+231
+00:53:38,827 --> 00:53:44,827
+Bu bir ana işlem, segmentasyon işlemi ama bizim için bir ara işlem.
+
+232
+00:53:44,827 --> 00:53:46,827
+Efendim?
+
+233
+00:53:50,195 --> 00:53:57,635
+Aslında şey, orada segmentasyon yaptıktan sonra bizimkisi quantification üzerine bir çalışmaydı.
+
+234
+00:53:57,635 --> 00:53:58,795
+Yani kemiklerin.
+
+235
+00:53:58,795 --> 00:54:01,035
+Evet.
+
+236
+00:54:09,460 --> 00:54:34,079
+Bu Pertis hastalığı 8-12 yaş aralığında gördü. Bu temur başındaki kan damarlarının kemiği yetersiz beslenmesi sonucu temur başının üzerindeki o kemiğin baş kısmındaki büyüme hücreleri ölmeye başlıyor. Daha sonra büyüme hücreleri ölmeye başladığı için
+
+237
+00:54:34,463 --> 00:55:01,063
+Vücudun biyomekanizması orada yeni hücreler üretmeye çalışıyor. Yeni hücreler de çok bebek oldukları için aslında, çelimsiz oldukları için yumuşuyor oradaki doku. Onlar yumuşaklar. Yumuşak olduğu için vücudun ağırlığıyla kalça eklemi vücudun ağırlığının çok büyük bir kısmını taşıyor aynı zamanda. Gelen baskıyla üst kısmı bu sefer yumuşak olduğu için yeni hücreler çökmeye başlıyor.
+
+238
+00:55:01,427 --> 00:55:26,387
+Dolayısıyla o kalçadaki ekleme giren top kısım top şekli değişmeye başlıyor, çöküntü oluşuyor. Şeklinin değişmesi de, o yuvarlak şeklini kaybetmesi de bu sefer eklemi doğrudan etkiliyor. Bacağınızı rahat hareket ettiremiyorsunuz. Yani belli açılarda hareket ettirmeye başlıyorsunuz. Çocuklar topallanmaya başlıyor mesela bu sebepten dolayı.
+
+239
+00:55:26,804 --> 00:55:38,183
+Hücreler öldüğü için, çökmeye başladığı için o kalça ekleminde mesela büyüme de yavaşlıyor. Bacağın bir tanesi uzarken diğeri kısa kalıyor. Bu topallamaya sebebiyet veriyor.
+
+240
+00:55:38,183 --> 00:55:41,523
+İşte böyle bir rahatsızlık.
+
+241
+00:55:47,380 --> 00:55:49,380
+...
+
+242
+00:56:14,900 --> 00:56:27,900
+İntişlemi yapıyoruz. Her varalarda da mahkum ilk işleminde, bir ikinci kısım an üzerinde en güç konu atlarına göre bu konu koordinat ikinci kısım an üzerinde.
+
+243
+00:56:27,900 --> 00:56:37,420
+Ve diğer sahte örneğe geçmişinden dolayı, sen burada geliştirden bir de mahkum an üzerinde.
+
+244
+00:56:40,532 --> 00:56:43,532
+O bağlamak kısmı,
+
+245
+00:56:43,532 --> 00:56:46,532
+İsaçin gibi bir soru,
+
+246
+00:56:46,532 --> 00:56:48,532
+[öğrenci] bir soru.
+
+247
+00:56:48,532 --> 00:56:50,532
+Evet, çok önemli.
+
+248
+00:56:50,532 --> 00:56:51,532
+Yok,
+
+249
+00:56:51,532 --> 00:56:53,532
+orası,
+
+250
+00:56:53,532 --> 00:56:55,532
+derdoluşu.
+
+251
+00:56:55,532 --> 00:56:58,532
+Bugün elinin imarası olmadığında,
+
+252
+00:56:58,532 --> 00:57:00,532
+emrede,
+
+253
+00:57:00,532 --> 00:57:04,532
+bir soru,
+
+254
+00:57:04,532 --> 00:57:06,532
+asker,
+
+255
+00:57:25,427 --> 00:57:28,588
+Ben hatırladım. [öğrenci] değil mi?
+
+256
+00:57:28,588 --> 00:57:29,588
+[öğrenci].
+
+257
+00:57:57,235 --> 00:58:05,456
+O dağışıklık ve bu
+
+258
+00:58:05,456 --> 00:58:08,396
+ve bu
+
+259
+00:58:08,396 --> 00:58:09,516
+ve
+
+260
+00:58:09,516 --> 00:58:15,516
+bu
+
+261
+00:58:17,396 --> 00:58:19,916
+objektif
+
+262
+00:58:19,916 --> 00:58:23,715
+bu
+
+263
+00:58:26,931 --> 00:58:32,131
+Ben biraz daha genel hazırlamaya çalışacağım. Diğer mimarları falan da katarak.
+
+264
+00:58:41,940 --> 00:58:47,220
+Çocuklara bunlar da unutmadı. Sorumlu yok olsam. Çekil de soru buluyor.
+
+265
+01:20:24,467 --> 01:20:31,768
+Merhaba arkadaşlar. Dersin ikinci bölümünde Object Detection konusuyla devam edeceğiz.
+
+266
+01:20:33,467 --> 01:20:34,448
+Duyabiliyor musunuz beni?
+
+267
+01:20:36,567 --> 01:20:37,747
+Evet hocam sesiniz geliyor.
+
+268
+01:20:38,067 --> 01:20:38,967
+Geliyor hocam sesiniz.
+
+269
+01:20:41,108 --> 01:20:42,967
+Ekran paylaşımı yapalım.
+
+270
+01:20:52,083 --> 01:20:52,484
+Tamam.
+
+271
+01:20:56,819 --> 01:20:59,279
+Bir de şu kapanmış. Bunu açalım.
+
+272
+01:21:01,600 --> 01:21:01,940
+Doğru.
+
+273
+01:21:01,940 --> 01:21:04,119
+Tamam sanırım.
+
+274
+01:21:05,559 --> 01:21:05,819
+Evet.
+
+275
+01:21:06,779 --> 01:21:07,500
+Hatta söyleyeceğim.
+
+276
+01:21:51,956 --> 01:22:10,796
+Tekrar merhaba arkadaşlar. Bu saatte de nesne tespitiyle alakalı yapılan çalışmalar, kullanılan yöntemler, performans değerlendirme metrikleri, karşılaşılan zorluklar bir de uygulamalarından bahsedeceğim.
+
+277
+01:22:14,452 --> 01:22:37,592
+Nesnet Aspiti, yani Object Detection, belki de üzerine en çok çalışma yapılan konulardan bir tanesi Computer Vision'da. Öncelikle bazı temel tanımlardan bahsetmek istedim. Çünkü mesela Object Recognition, Object Detection, Object Localization gibi kavramlar var. Genelde bu kavramları birbirine karıştırıyoruz.
+
+278
+01:22:42,448 --> 01:22:53,068
+Hem lokalize etme hem sınıflandırma problemi. Ama biz mesela lokalize edeceğimiz, sadece lokalizasyon bilgisini kullanacağımız zaman bile Objective Action tabirini kullanıyoruz.
+
+279
+01:22:53,068 --> 01:23:04,128
+Bu sebeple önce bazı kısa tanımlara yer vermiştim. Bunlardan bir tanesi, birincisi Image Classification yani görüntüyü sınıflandırma.
+
+280
+01:23:04,496 --> 01:23:11,895
+Bu işlem, görüntüye bir sınıf etiketinin atanması işlemi, aynı zamanda görüntüdeki bir bölgenin sınıfını tahmin etmek.
+
+281
+01:23:11,895 --> 01:23:24,335
+Mesela biz Object Detection yaparken aslında bir nesnenin etrafına bounding box, yani sınırlayıcı kutu çiziyoruz. Daha sonra bu sınırlayıcı kutu içerisinde kalan alanı sınıflandırıyoruz.
+
+282
+01:23:26,003 --> 01:23:44,423
+Dolayısıyla bu işlem bir Object Detection işleminin bir parçası aslında Image Classification işlemi. Nesnenin yerini belirleme işlemi de Object Localization'da bir görüntüdeki bir veya daha fazlanın etrafına bir sınırlayıcı kutu çizmek ve nesnelerin yerini belirlemek aslında.
+
+283
+01:23:44,787 --> 01:23:55,663
+Sınıf bilgisinin haricinde. Burada bir nesne var mı? Onu bir kutu içerisine alalım ve bunun lokalizasyon bilgilerini yani merkez koordinatlarıyla...
+
+284
+01:23:55,663 --> 01:24:18,543
+Genişlik, yükseklik bilgilerini elde edelim. Bu işlem Image Object Localization işlemi. Object Detection işlemi ise, yani nesne tespiti ise, görüntüdeki her nesnenin etrafına bir sınırlayıcı putu çizmek ve onlara bir sınıf etiketi atamak aynı zamanda. Yani Object Detection dediğimiz işlem, Localization Artı Classification işlemi.
+
+285
+01:24:19,923 --> 01:24:33,104
+Sözlerinden gidersek, mesela bir görüntü üzerinde, sandırma yaptığımız zaman, bu görüntü ne görüntü dediğimiz zaman, bu bir classification problemi.
+
+286
+01:24:33,523 --> 01:24:37,984
+İşte bu bir köpeğe ait bir görüntü. Burada image classification problemi.
+
+287
+01:24:42,292 --> 01:24:56,292
+Kutu içerisine alırsak, bounding box içerisine alırsak sadece köpek olup olmadığı bilgisi değil. Yani bu bir nesne olarak etrafına sınırlayıcı bir kutu çizersek image localization olmuş oluyor, object localization olmuş oluyor.
+
+288
+01:24:59,292 --> 01:25:08,372
+Sadece etrafına sınırlayıcı bir kutu çizdik ve aslında sınırlayıcı kutu çizerek objenin yerini belirledik. Yani lokalizasyonunu.
+
+289
+01:25:08,787 --> 01:25:33,707
+WhatsApp'tan falan da diyoruz ya bir location atar mısın falan diye aslında sadece yerini belirlemiş olduk. Ve o sınırlı bounding box içerisindeki görüntüyü sınıflandırmadık. Sınıflandırırsak bu object detection olacak. Dolayısıyla bir görüntü içerisindeki nesnelerin hem yerini tespit edip hem de bu kutucuklara bir sınıf etiketi atarsak bu object detection işlemi olmuş olacak.
+
+290
+01:25:34,676 --> 01:25:48,695
+Buradaki görüntüde mesela iki tane nesnemiz var. Bir tanesi kedi, bir tanesi de köpek. Her bir nesneyi bir bounding box içerisine aldık ve bunlara karşılık gelen sınıf etiketlerini atlayarak da objektif işlemini gerçekleştirmiş olacağız.
+
+291
+01:25:54,963 --> 01:26:00,663
+Burada Object Detection, bar stomları yani kilomekse taşları.
+
+292
+01:26:00,948 --> 01:26:23,847
+2001 senesinden yani 2000 milenyumdan, başlangıcından, bugün günümüze kadar yaklaşık bir 25 senelik süreçteki kilometre taşları, tabii bunun daha öncesi de var. 70'lere kadar falan gidiyor ama Object Detection'la alakalı yapılmış çalışmalar. Ben en son bir sunum dinlemiştim. O zamanları Dark Ages olarak, Karanlık Çağlar olarak adlandırıyorlar.
+
+293
+01:26:28,431 --> 01:26:35,431
+80'li neden falan bahsederken, objekt detection'de karanlık çağlar, taş teybi falan gibi tabirler kuruluyor.
+
+294
+01:26:36,431 --> 01:26:49,431
+Ama işte 2010 öncesinde belki hani bu şey de burada mesela 2012'de Alex Smith'in, Image Live'in çıkışı, Chris Evans'in, o paper'ın yayınlanmasından önceki süreç de aslında şey.
+
+295
+01:26:49,431 --> 01:26:56,239
+Biz o zamanlarda feature extraction ve classification üzerine çalışıyorduk objekt detection yapmak için.
+
+296
+01:26:56,239 --> 01:27:04,619
+O zaman en üst seviye şeyler onlardı ama bugün geriye baktığımız zaman o zaman bile taş devri gibi gelebiliyor.
+
+297
+01:27:06,680 --> 01:27:16,199
+Burada bazı kilometre taşları var. Mesela bunlardan bir tanesi 2001 senesinde Viola Johnson'un meşhur Face Detection'la alakalı paper'ı.
+
+298
+01:27:28,051 --> 01:27:28,971
+Evet.
+
+299
+01:27:37,876 --> 01:27:52,855
+20 senelik bir süreç. Aslında çok uzun bir zaman dilimi değil ama çok fazla şey yapıldı gibi aslında. Belki önümüzdeki 20 senelinde gidişat çok hızlı bir değişim olacak gibi de onu da yaşayarak göreceğiz zannederse.
+
+300
+01:28:04,000 --> 01:28:29,059
+bug feature'ları, kullanımları. Bunlar geleneksel detection yöntemleri. 2012'ye kadar bu şekilde yapıyorduk. Bir nesne tespiti yapacaksak bununla alakalı feature'ları çıkaralım. Ondan sonra bu feature'ları güzel bir biçimde ayıracak, sınıflandıracak bir tane classifier, yani sınıflandırıcı kullanalım. O şekilde objeyi tespit etmeye çalışalım.
+
+301
+01:28:29,524 --> 01:28:53,104
+Sonraki süreçte, tabii derin öğrenme tabanlı yöntemler çıkınca, hem veri setleri büyüdü, hem yeni modeller geliştirilmeye başlandı. O kırılım yarattı 2012'den sonra. Gelen süreçte 10 senede Object Detection ile alakalı çok fazla sayıda nesne tespiti, algoritması.
+
+302
+01:28:53,663 --> 01:29:06,304
+Tabii bu kırınımdan önce işler biraz daha şöyleydi. Feature Engineering tarzındaydı. Yani iyi olan özellikleri çıkarmaya çalışalım.
+
+303
+01:29:07,155 --> 01:29:26,855
+Derin öğrenme kısmında özellikler doğrudan modelin içerisinde çıkarıldığı için, bugün daha çok uğraştığımız problem Network Engineering kısmı. Artık özellikler Network'ün içinde zaten hallediliyor. Biz Network'ı iyi bir biçimde kurgulamaya çalışalım ki, güzel bir tespit, bir sınıflandırma yapabilelim diye.
+
+304
+01:29:28,148 --> 01:29:51,487
+Burada ilk çalışmalardan bir tanesi Roz Girşi'nin makalesiydi. Bu CVPR'da yayınlanmıştı, yanlış hatırlamıyorsam. RCNN. Region Based Convolutional Neural Network olması lazım. Ondan sonraki süreçte YOLO, SSD, Single Shot Detector.
+
+305
+01:29:51,887 --> 01:30:17,268
+Retinonet, Cornonet, Centernet. Bunlardan bir kısmı Keypoint tabanlı yöntemler. İlerleyen yansıtlarda da özetleri var. Bu şekilde ilerleye ilerleye geldi. 2014'den sonra 2015-2016 CVPR'da, ECCV'de, onun dışında farklı konferanslarda da peş peşe yayınlanan makaleler ortaya çıktı.
+
+306
+01:30:17,908 --> 01:30:28,828
+Bu derin öğrenmenin yarattığı kırılımdan sonra ortaya çıkan object classifier'ları genel olarak iki kategoriye ayırabiliriz.
+
+307
+01:30:29,148 --> 01:30:34,948
+Birincisi two-stage object detector'lar, ikincisi de single-stage object detector'lar.
+
+308
+01:30:35,539 --> 01:30:59,199
+Birinci yaklaşım yani iki kademeli nesne tespit edindiler Object Detection işlemini iki aşamada gerçekleştiriyorlar. Öncesinde görüntülerde bir objenin olup olmadığını tespit edip daha sonraki süreçte bunu sınıflandırma yoluna gidiyorlar. Single Stage olanlarda doğrudan işte biz görüntüyü verelim.
+
+309
+01:31:00,051 --> 01:31:10,951
+İç regionları falan objekt olarak sınıflandırmadan görüntüyü tespit edebilir miyiz? Bu program üzerine düşünmüşler ve üretmişler.
+
+310
+01:31:22,452 --> 01:31:39,592
+Burada algoritmaların genel bir sınıflandırması var. İki kısmı ayırırsak öncelikle bir tanesi Handcrafted Features'lar. Bunları kullanan Objective Vektörler. Yani derin öğrenmeden aslında önce kullanılan nesne tespit ediciler bunlar.
+
+311
+01:31:39,592 --> 01:31:49,132
+İşte bir özellik çıkarma yöntemi kullanıp devamında bir tane sınıflandırıcıyla nesneleri tespit edebiliriz. Mesela yüzü tespit etmek için.
+
+312
+01:31:49,524 --> 01:32:07,664
+Violet Johnson Pfeiffer'ında mesela yüzle alakalı bazı özellikleri çıkarıp daha sonra bir Adablus Classifier'la bunları sınıflandırıp yüzleri hızlı bir biçimde tespit etmeye çalışıyordu. Bunlar handcrafted feature'ları kullanıyorlardı. Derin öğrenme kısmında da...
+
+313
+01:32:07,920 --> 01:32:19,680
+Bunlar da Learn Features'lar, yani derin öğrenme ile alakalı Object Detector'ları da biraz önce bahsetmiştik. Two Stage Object Detection ve One Stage Object Detection olarak iki kademe ayırabiliriz.
+
+314
+01:32:19,680 --> 01:32:33,279
+Two Stage'ler RCNN, SPP.NET, Fast RCNN, Faster RCNN ve Mat RCNN. Bunlar RCNN'in versiyonları. Zaten hepsi peş peşe çıkmaya başladı 2015'ten sonra.
+
+315
+01:32:35,988 --> 01:32:48,068
+Single Stage olanlar da SSD ve en çok belki bilinen, şu anda da kullanılanlar yolu. Şu anda en son galiba 8. versiyona çıkmış değil mi hocam?
+
+316
+01:32:48,068 --> 01:32:50,168
+Geçen ay değil mi?
+
+317
+01:32:57,171 --> 01:33:02,031
+Evet. 5 de bayağı hızlıydı.
+
+318
+01:33:11,859 --> 01:33:12,859
+Direkt yazmışım.
+
+319
+01:33:37,043 --> 01:33:49,503
+Bu kısımda şöyle bir yansı da koymak istedim. Derin öğrenmeden önce biz ne yapıyorduk? Onunla alakalı derin öğrenme kısmı. Bu genelde Object Detection'la alakalı bir lecture varsa genelde bu tarz bir yansı da vardır.
+
+320
+01:33:49,503 --> 01:34:03,064
+Yani belki şu anda öğrenimi gören arkadaşlarım bir kısmı doğrudan derin öğrenmek içerisinde öğrenmeye başladılar ama derin öğrenmenin öncesinde biz bu tarz şeyler de yapıyorduk mesela.
+
+321
+01:34:03,636 --> 01:34:27,876
+Bir nesnini tespit edeceksek, bir sınıflandırma işlemi yapacaksak, görüntüleri alıyorduk. Bu görüntülerden hangi özellikleri çıkarabiliriz diyorduk. Bunun üzerine düşünüyorduk. O alanda mesela, o görüntünün tıkmanlık alanında birileri varsa, siz ne tarz özellikleri kullanıyorsunuz bu görüntülerde? Biz de onları çıkarmaya çalışıyorduk. Mesela doku özellikleri.
+
+322
+01:34:28,500 --> 01:34:45,300
+Histogram Bilgisi vs. bu özellikleri çıkardıktan sonra bir tane sınıflandırıcıya, KNN gibi, Bayez sınıflandırıcıya verip sınıfını tahmin etmek çalışıyorduk. Objective Action işlemini de genelde bu şekilde yapıyorduk.
+
+323
+01:34:52,576 --> 01:35:00,876
+Bir görüntü üzerinde bir tane pencere getirip, çıkarıp, karşılaştırıp, sınıflandırma işlemi gerçekleştiriyoruz.
+
+324
+01:35:01,435 --> 01:35:05,515
+Tabi bugünden geriye bakınca biraz daha taş devri gibi geliyor aslında.
+
+325
+01:35:06,195 --> 01:35:08,036
+Derin öğrenme kısmında da ne yapıyoruz?
+
+326
+01:35:08,615 --> 01:35:12,536
+Doğrudan network'ü kendisine veriyoruz. Network özellikleri zaten çıkarıyor.
+
+327
+01:35:19,123 --> 01:35:23,003
+Hangi olasılıkla tahmin edildiğine dair bir bilgi sağlıyor.
+
+328
+01:35:28,148 --> 01:35:35,108
+Bu bizim bildiğiniz gibi beynimizin çalışma prensibi gibi aslında derin öğrenme yaklaşıma.
+
+329
+01:35:35,448 --> 01:35:41,827
+Biz de görüntüyü doğrudan alıyoruz, doğrudan beynimize gidiyor. Onun özellikleri işlemi çıkarılıyor, sınıflandırma işlemi yapıyoruz.
+
+330
+01:35:45,140 --> 01:35:54,280
+İki kademeli ve tek kademeli mesle tespit edicilere bakacak olursak, şurada sarı tutukla odaklanmamızı göstermek için çizmiştim.
+
+331
+01:35:55,900 --> 01:36:02,340
+Bu tespit ediciler, Object Detector'lar iki aşamada gerçekleştiriyor Object Detector işlemini.
+
+332
+01:36:02,340 --> 01:36:07,600
+İlk olarak model seçmeli arama veya bölgesel öneri ağıyla.
+
+333
+01:36:08,340 --> 01:36:34,340
+Bir dizi ilgi bölgesi öneriyor. Bu bölgesel öneri ağı dediğimiz Regional Proposal Network. Bir network aslında, bir ağ yapısı. Siz görüntüyü veriyorsunuz. O ağ, işte görüntü üzerinde şu, şu, şu, şu objeler olabilir. Bounding Box'ları çıkıp, çıkarıp size bunları sunuyor aslında. Birinci aşaması bu. Aslında şunu sorunun cevabını veriyor. Bu resimde...
+
+334
+01:36:35,060 --> 01:36:52,280
+Obje var mı? Obje varsa o objeleri sınıfını belirtmeden, bak burada, burada, burada sınırlayıcı kutular çizip aslında lokalizasyon yapıp bu kutucukları dikkate alıyor. Bu şekilde bir öneri sunuyor. Regional Proposal Network dediğimiz network yapısı. Bu birinci aşaması.
+
+335
+01:36:53,043 --> 01:37:00,744
+Daha sonra bu önerilen ilgi bölgeleri bir sınıflandırıcı tarafından işleniyor ve sınıflandırılıyor.
+
+336
+01:37:01,283 --> 01:37:08,503
+Lokalizasyon işlemi Regional Proposal Network dedi ki şu şu şu kutucuklar bir objedir.
+
+337
+01:37:08,503 --> 01:37:13,583
+Daha sonra onlar görüntünün içerisinden kırpılıyor. Bu objelere sınıflar atanıyor.
+
+338
+01:37:21,043 --> 01:37:28,543
+Siz bu görüntüyü bir tane Tool Stage Detector'da işleyeceksiniz, nesneleri tespit edeceksiniz köpekleri mesela.
+
+339
+01:37:28,543 --> 01:37:34,543
+Regional Proposal Network size okutuları çilecek, bunları öneri olarak sunacak.
+
+340
+01:37:34,543 --> 01:37:40,543
+Bu birinci aşaması. İki aşamalı bir Object Detector olduğunu bahsetmiştik. İkinci aşamadayız da...
+
+341
+01:37:40,916 --> 01:37:48,595
+İki bölgelerin her yerine bir tane tıp atılacak ve Object Detection işlemi gerçekleştirilecek.
+
+342
+01:37:48,595 --> 01:37:53,155
+Bu yüzden bunlara Two-Stage Object Detector'lar deniyor.
+
+343
+01:38:00,115 --> 01:38:14,115
+Burada biraz daha detaylı bir görünüm var. Şimdi burada işte R-CNN gibi, Pester R-CNN gibi mimarilerin Two-Stage Objective Teknikler olduğunu bahsetmiştik.
+
+344
+01:38:14,115 --> 01:38:19,115
+Verdiğimiz, bağ verdiğimiz bir tane görüntünün özellikleri çıkardık.
+
+345
+01:38:19,115 --> 01:38:26,988
+Video Extraction Modules üzerinden. Daha sonra do Proposal Generator'ı biraz önce bahsetmiştik.
+
+346
+01:38:27,283 --> 01:38:53,423
+Proposal Network'tü. Tekeden bilgi sonrasında Classification ve Bug Regression dediğimiz iki tane bilgiyi sağlayacak bize. Yani görüntü üzerinde kutucuklar çizecek, size birkaç tane kutucuk önerecek, bunların ojolun olasılığı bilgilerini verecek ve kutucukların yani ne kadarlık alan kaplanına enerjiler bilgilerini sunacak.
+
+347
+01:38:54,355 --> 01:39:04,435
+Buradan bu network'ın ürettiği bilgi biraz öncesi örneğe şu şekilde bilgiye. Objeleri fotoğuklar için aldı.
+
+348
+01:39:05,435 --> 01:39:11,735
+Tüm türlü fotoğuklar mevcut. Daha etiket bilgisi yok. Sınıflandırma işlemi için de ayrı bir işlem yapmamız gerektirir.
+
+349
+01:39:11,735 --> 01:39:21,235
+Şimdi bu bilgi geldi. Daha sonra bu buzz classifier ismi verilen network ile de
+
+350
+01:39:21,939 --> 01:39:45,719
+Bu objeler sınıflandırılacak. Buradan gelen şu bilgiler, bu tıklar. Bu görüntülerin, her bir görüntü sınıflandırılacak. Hangisi fayda olduğu tahmin edilmiş olacak. Böylece Object Detection işlemi gerçekleştirilmiş olacak.
+
+351
+01:39:49,171 --> 01:39:56,371
+Aslında Object Localization, Turing kısmında tam Object Seeking.
+
+352
+01:40:08,212 --> 01:40:35,551
+Burada da tek kademeli nesne tespit edicilerin çalışma mantığı. Bunlar da şu şekilde çalıştık arkadaşlar. Biraz önce ilk kademelinde ne demiştik? Görüntüyü verici, Regional Proposal Network, ojelere fotoğraflarını çizecek, ondan sonra o başka bir netördünün içerisine verilecek, sınıf etiketleri tahmin edilecek. Bu mimariye sahip ojelik sektörlerde doğrudan bir görüntüsü veriyoruz.
+
+353
+01:40:36,275 --> 01:40:50,636
+O size doğrudan bir teknik konuşlarını veriyor. Hem kutucukları çiziyor hem etiket bilgilerini atıyor. Tek bir işlemle bu yüzden de single stage, one stage detektörler olarak anılıyor bu tarz yöntemler.
+
+354
+01:40:50,636 --> 01:41:02,735
+Burada da biraz önceki şekilde benzer şekilde mimari yapısının çizimi var. Görüntü A veriliyor. Özellikleri çıkartıyor. Daha sonra bir tek bir denere.
+
+355
+01:41:04,148 --> 01:41:13,628
+Bunun hangisi sahip olduğu ve bu yokun bilgileri network'ten output olarak işarıya veriliyor.
+
+356
+01:41:18,515 --> 01:41:39,515
+Burada da derin öğrenmeye dayalı tespit yöntemlerinin bir timeline var. 2014'ten sonra RCNN ile başlangıcı gösterilmiş burada. One Stage Detektörler, şurada üç ilginin timeline bölgüsünün üst kısmında olanlar.
+
+357
+01:41:46,228 --> 01:42:03,747
+Yöntemler, Single Stage Detektörler, RCNN, STPNet, PestRCNN, PesterRCNN gibi yöntemler de Two Stage Detektörler. İlerleyen slideler de zaten bunların genel mimari hatlarına dair bilgiler de var.
+
+358
+01:42:05,347 --> 01:42:12,268
+Bu da ayrıca şöyle bir bilgi verilmiş. Anchor Based Detection ve Anchor Based Detection diye.
+
+359
+01:42:13,171 --> 01:42:20,971
+Bunlardan yeşil olanlar, anchor-based sektörler, kılıncı olanlar, kırmızı olanlar da anchor-biri.
+
+360
+01:42:21,251 --> 01:42:32,532
+Anchor'dan kastımız burada şu, işlemleri hızlandırmak adına anchor-based sektörler de görüntü üzerinde temel bazı kutucuklar çiziliyor.
+
+361
+01:42:32,711 --> 01:42:39,711
+O kutucukların üzerinden de tespit işlemini bir nebde daha hızlı yapmak adına bir yaklaşım uygulanıyor.
+
+362
+01:42:44,659 --> 01:42:45,659
+Efendim?
+
+363
+01:42:47,159 --> 01:42:54,159
+Tabii, Anchor Box dediğimiz Anchor Base'in vektörler Anchor Box'in yaklaşımını kullanıyoruz.
+
+364
+01:42:54,159 --> 01:42:56,659
+Bunlar da görüntüler üzerinde...
+
+365
+01:42:59,123 --> 01:43:08,643
+İntekşin işlerini kolaylaştırmak için kutucuklar veriyor. Aslında regional proposal networkler kutucuk çizmeye çalışıyordu ya.
+
+366
+01:43:08,643 --> 01:43:20,883
+Görüntü üzerine kutucukları biz koyalım, bu koyduğumuz kutucuklar üzerinden aslında daha uzun tespit edebilir miyiz? Bu yaklaşımı kullanıyorlar.
+
+367
+01:43:30,260 --> 01:43:39,100
+Bu kutucukları koyduktan sonra bu kutucukların içerisinde nesne olup olmama olasılığını sorguluyor aslında.
+
+368
+01:43:39,899 --> 01:43:44,659
+Böylece kutucukların içinde nesne var mı daha hızlı bir biçimde, kolay bir biçimde tespit edebiliyor.
+
+369
+01:43:49,140 --> 01:44:06,480
+Şimdi derneğe kısaca bir bakalım. RCNR. Bu, ROZ girişin 2014'te CVPR'da sunmuş olduğu paperdan alınmış bir şekil değil. Bu şekli. Aşağıdaki yeni bir sörveyden almıştım.
+
+370
+01:44:07,123 --> 01:44:20,623
+Bu oldukça basit bir gösterim. Çünkü genelde networklerin çok karmaşık bir yapısı var. Dolayısıyla bunları ifade ederken mümkün olan en basit şekilde ifade etmemiz anlamımızı kolaylaştıracaktır.
+
+371
+01:44:22,623 --> 01:44:24,763
+Toz teşkili tekrar da.
+
+372
+01:44:25,167 --> 01:44:28,967
+İnput görüntüsü veriliyor. Regional Proposal Network'u var.
+
+373
+01:44:28,967 --> 01:44:34,767
+Bundan elde edilen çiftli olarak gelen görüntü üzerinde Boundic Box'a tiziliyor.
+
+374
+01:44:34,767 --> 01:44:38,967
+Daha sonra kırıkılmış görüntü bir tane CNN Network'a veriliyor.
+
+375
+01:44:38,967 --> 01:44:41,767
+Biraz önceki şekilde daha güzel görüntü.
+
+376
+01:44:41,767 --> 01:44:50,767
+Sonra buradan ESPN Kılıçları ve Boundic Box Regresör ile bunun Detection bilgileri elde edilmiş oluyor.
+
+377
+01:44:50,963 --> 01:44:58,463
+Şu ilk kısım birinci stek, sırtında da nırtlandırma stek'i iki aşamalı bir network.
+
+378
+01:45:02,463 --> 01:45:05,463
+Şimdi bu ar sinyalendi.
+
+379
+01:45:09,963 --> 01:45:11,963
+Yine input image var.
+
+380
+01:45:13,463 --> 01:45:17,963
+Regional proposal bilgisi geliyor. Fakat bir kompozisyon...
+
+381
+01:45:18,420 --> 01:45:28,339
+Yapısı üzerinden özellikler çıkarılıyor. Bunun üzerinde özellik haritaları üzerinde Bağımlı Kıfak'slar ifade ediliyor. Daha sonra,
+
+382
+01:45:28,339 --> 01:45:36,659
+buradan ilk bu işleminden sonra bu mikronik değerlerle sıflandırma işlemi yapılıyor.
+
+383
+01:45:38,644 --> 01:45:46,844
+Burada farklı bir özellik haritasının çıkarılması aslında. Yine iki aşamalı bir detection işlemi gerçekleştiriyor.
+
+384
+01:45:48,884 --> 01:45:55,544
+Bu da üçüncüsü 2015'te çıkan Fester. Artık Fester'den sonra Fester R-CNN'de.
+
+385
+01:45:57,324 --> 01:46:06,044
+Burada görüntü kompozisyon katmanlarına veriliyor. Özellik haritaları çıkarılıyor.
+
+386
+01:46:06,452 --> 01:46:26,452
+Bunun üzerinde Regional Proportion Network, Royal Building Layer var. Burada her bir görüntü belli boyutlara indirgeniyor aslında. Şöyle ki Regional Proportion Network'te her bir orcu için farklı saytlarda elde ediliyor.
+
+387
+01:46:32,404 --> 01:46:41,604
+Bunlar sınıflandırılmadan önce, boydik işlemine tarzı tutulara, büyük olanlar, tam olarak boydulara çeviriyor.
+
+388
+01:46:41,604 --> 01:46:51,664
+Mesela, bin çarpı, bine binde verilen, 200 çarpı 200'lük bir bounding boxımız var. Bütün bounding boxları boydik işlemiyle 100 çarpı yüzeyindiriyor.
+
+389
+01:46:51,988 --> 01:47:00,988
+Bu link yaparak hepsini aynı boyutta indiriyorsunuz. Daha sonra bunu sınıflandırıcıya veriyorsunuz ve o size skorları vermiş oluyor.
+
+390
+01:47:05,427 --> 01:47:14,708
+OneStage'ler arasında da YOLO SSD vardı. YOLO'nun farklı versiyonları mevcut. Biraz önce söylemiştik, 8. versiyonuna gelmişti.
+
+391
+01:47:17,908 --> 01:47:23,748
+Burada da Edmund'un CVPR 2019'daki safer'ı vardı. Biraz önce bahsetmiştik.
+
+392
+01:47:24,064 --> 01:47:27,543
+İmput görüntüsü bir kompolytüsü verilecek.
+
+393
+01:47:27,543 --> 01:47:49,484
+Altında kompolytüsü üzerinden, sandırıcı ve regresyonla tek aşamada, yani Regional Proposal Network veya Bound-Lick Box Selection algoritması kullanılmadan doğrudan görüntüyü network'e verip, o network'un çıkışında da hangi objelerin hangi olasılıklarla tespit edilmeye dair bilgiler verilecek.
+
+394
+01:47:49,971 --> 01:47:57,571
+Yolunun çalışma yapısında daha detaylı anlatımı da mevcut. Kısaca özetlersek, görüntüyü gridlere bölüyordu.
+
+395
+01:47:59,251 --> 01:48:15,467
+Gridlere böldükten sonra her bir grid için objekt skorlarını hesaplıyordu. Daha sonra bunları classification mapleriyle birleştirip nesnelerin lokalitesi...
+
+396
+01:48:22,036 --> 01:48:31,036
+Single Shot Detektör'da da, burada da bunun mimari yapısının çok özet bir hali var. Temel yapısı şu şekilde.
+
+397
+01:48:31,036 --> 01:48:39,036
+Input görüntüsü, sinir havada veriliyor. Tahtada komolyisyon değerlerindeki farklı katmanlardaki bilgiler,
+
+398
+01:48:39,036 --> 01:48:45,036
+bu sessizlandırıcıya ve bounding box regresöre geliyor ve objekt tespit sağlanıyor.
+
+399
+01:48:45,439 --> 01:49:07,880
+Burada her bir konvolizyon katmanın sonuna gelen bilgiler bir teşkil kıyaslığı sınıflandırıcı katmanında. Bir konvolizyon işlemi yapılıyor. Ondan sonra bu çıkan bilgi sınıflandırıcıya geliyor. Dördüncü, beşinci, altıncı katmanlarda gelen bilgilerden ne oluyor? Sınıflandırıcıya gidiyor. Bunun üzerinden bir Object Detection işlemi gerçekleştiriliyor.
+
+400
+01:49:13,395 --> 01:49:22,836
+Performans ve doğruluk analizlerine bakacak olursak, burada yöntemlerin çıktıkları tarifler alt kısmında gösterilmiş.
+
+401
+01:49:23,436 --> 01:49:29,256
+Bu Y-Exte'nin de de Mean Average Precision doğruluk değerleri mevcut.
+
+402
+01:49:33,203 --> 01:49:42,063
+Farklı veri setlerini temsil ediyor. Mesela mavi, Koko veri seti üzerindeki başarımları gösteriyor. Açık mavi.
+
+403
+01:49:45,524 --> 01:49:49,243
+05095 doğruluk metrikleri esas alınarak
+
+404
+01:49:53,747 --> 01:49:56,047
+Veri setleri üzerindeki performans.
+
+405
+01:49:59,887 --> 01:50:08,787
+Yaklaşık %20'ler civarında bir mean average precision. Bu aslında o zaman için yüksek. Ama bugün baktığımız zaman düşük kalıyor.
+
+406
+01:50:16,979 --> 01:50:32,719
+Internet, DefineNet, DefineNet gibi networkler devam edip sonra YOLO V4, Transformer'larla Mean Average Precision değerlerinin aslında %50, %60, %70, %80, bazı veri setlerinde de %80'lere kadar geldiğini görürüz.
+
+407
+01:50:32,719 --> 01:50:40,519
+Bu oldukça yüksek bir oran aslında Mean Average Precision değerlerine baktığımız zaman bu oran 0 ile 1 arasında bir değerdir.
+
+408
+01:50:40,576 --> 01:50:46,715
+Bir değerine ne kadar yakın olursak Detection işleminin o derece başarılı olduğu manasına geliyor aslında.
+
+409
+01:50:52,180 --> 01:51:08,539
+Tablo olarak gösterimleri mevcut. Bu güzel bir tablo. Bunu 2022 yılında yayınlanmış olan Digital Signal Processing dergisinden referans aldım. Şu alt kısımdaki mavi kutucukta paper'ın adı ve yazarları da yer alıyor.
+
+410
+01:51:15,891 --> 01:51:22,771
+Backbone mimarileri, Size'ları ve Average Precision değerleriyle FPS yani Frame Per Second değerleri var.
+
+411
+01:51:23,412 --> 01:51:31,952
+FPS değerleri bize yöntemin gerçek zamanlı çalışıp çalışmadığını, ne kadar hızlı çalıştığına dair bir bilgi sunduğunu ifade ediyor.
+
+412
+01:51:32,692 --> 01:51:37,391
+Average Precision değerleri de başarım değerleri yani yüzde kaçlık bir başarım sergiliyor.
+
+413
+01:51:37,391 --> 01:51:41,212
+Burada gri ile olan satırlar.
+
+414
+01:51:41,652 --> 01:52:00,072
+YOLO, SSC, YOLO V2, V3, EFİNŞEN, D2, NETROS'u ve YOLO V4. Bunlar gri ile arka planı belirtilmiş olan bu satırlar gerçek zamanlı çalışabilme kapasitesine sahip detektörler.
+
+415
+01:52:01,300 --> 01:52:10,180
+FPS değerleri 30'dan büyük olduğu için bunlar gri ile boyanmış. Yani gerçek zamanlı olarak bu detektörleri çalıştırabilirsiniz.
+
+416
+01:52:11,140 --> 01:52:26,720
+Mesela R-CNN, SPP-Net, Fast R-CNN gibi yöntemlerde frame FPS değerleri çok düşük kalmış. Bunları gerçek zamanlı çalıştırmak dolayısıyla biraz zor olacak.
+
+417
+01:52:28,500 --> 01:52:41,559
+MS-Coco veri seti üzerinde yapılmış analizler. Dolayısıyla bir Objective Tector'ı kullanacaksak şöyle bir soru karşımıza çıkabilir ya hangisini kullanabiliriz?
+
+418
+01:52:41,559 --> 01:52:50,899
+Eğer gerçekleştireceğimiz çalışma gerçek zamanlı bir çalışma ise işte bir otonom araç.
+
+419
+01:52:51,347 --> 01:53:17,587
+Çalışacak bir programsa, gerçek zamanlı olarak nesneleri tespit etmek gerekiyorsa, bunun için hızlı olan objekt detektörleri kullanmak gerekecek. Ama burada şöyle bir problem ortaya çıkıyor. Hızlıların başarımları daha düşük genelde. O yüzden mesela R-CNN, FEST R-CNN'in burada başarımlarına baktığımız zaman %60'lar, %65'ler seviyesinde ama
+
+420
+01:53:18,036 --> 01:53:28,336
+Hızlı olanlar da var aşağıda. Diğerleri de bir nebze düşük kalabiliyor. Burada biz hangisini kullanacaksa ihtiyacımıza göre aslında bir defektör kullanmamız daha faydalı olacak.
+
+421
+01:53:34,676 --> 01:53:41,476
+Burada bir objekt detektörü neye göre değerlendireceğiz? Bunun sorusunu soruyoruz aslında.
+
+422
+01:53:41,476 --> 01:53:49,896
+Performans değerlendirme metrikleri. Bir tane objekt detektör problemini ele aldık diyelim. Objekt detektörü yapacağız.
+
+423
+01:53:50,376 --> 01:53:59,956
+Diyelim ki trafikte trafik levhalarını tespit edeceğiz veya bir bölgedeki ağaçları tespit edeceğiz diyelim.
+
+424
+01:54:00,787 --> 01:54:19,608
+Bir uygulama yazdık. Bunun başarımı nasıl ölçeceğiz? Bunun için genelde hızını değerlendirmek için FPS Rate, yani Frame Per Second, diğer doğruluk başarımlarını değerlendirmek için de keskinlik ve duyarlılık metrikleri kullanılıyor. Precision ve Recol ismini verdiğimiz.
+
+425
+01:54:19,987 --> 01:54:26,987
+Ancak en yaygın değerlendirme ölçütü Meal Average Precision dediğimiz metrik.
+
+426
+01:54:27,764 --> 01:54:37,764
+Bu metrik gerçek referans bounding box ile tespit edilen bounding box arasındaki intersection over union kesişimi üzerinden hesaplanıyor.
+
+427
+01:54:37,764 --> 01:54:48,764
+Bildiğiniz üzere bir objenin gerçekte olması gereken bir bounding box'ı vardır. Bir de bizim tespit ettiğimiz bounding box'ı vardır.
+
+428
+01:54:50,644 --> 01:55:04,644
+Tespit işleminin başarını ölçebilmek için temelde Intersection over Union değerini ölçeriz. Yani gerçek referans objenin gerçek bounding box ile bizim tespit ettiğimiz bounding box'u üst üste koyarız. Şuradaki gibi.
+
+429
+01:55:05,644 --> 01:55:16,644
+Şurada tekrardan olan bounding box'u gerçek eder. Yani olması gereken tespit olduğu düşünmesi bizim...
+
+430
+01:55:17,140 --> 01:55:42,579
+Bu tek örneğe bakalım. Bu ikisi yüzükte koyduğumuz zaman belli oranda kesiştiklerini göreceğiz. Bu kesişimi Intersection over Union üzerinden bir yüzde olarak hesaplayabiliriz. Eğer bizim kesişimimiz belli bir eşik seviyesinin üzerindeyse ki bu genelde yüzde elli olarak kabul edilir, bu tespit doğru bir tespit olarak sınıflandırılır.
+
+431
+01:55:44,340 --> 01:55:49,460
+İkin doğruluk olmadığını belirlemek için Intersection Over Union eşiği kullanılacak.
+
+432
+01:55:50,079 --> 01:55:58,900
+Biz burada 3'i okuyarak, yetişimlerinin yüzleşimlerinin oranı hesaplayıp Intersection Over Union skorunu elde edelim.
+
+433
+01:55:59,680 --> 01:56:02,460
+Sonrasındaki aşamada işte şunu yapmamız gerekecek.
+
+434
+01:56:03,160 --> 01:56:08,440
+İkin Intersection Over Union skoru 0 ile 1 arasında bir yüzdelik değer.
+
+435
+01:56:08,600 --> 01:56:11,840
+Yani 0 ile 1 arasında 0-2 ise bir yüzde yirmi istiyoruz.
+
+436
+01:56:12,435 --> 01:56:21,515
+Eğer ki yetişemimiz %50'nin üzerindeyse o doğru bir tespit diyeceğiz. Değilse yanlış bir tespit olarak adlandıracağız.
+
+437
+01:56:23,655 --> 01:56:33,275
+Ölçülen Intersection Over Union değeri eşiğin üzerindeyse biz bunu True Positive yani doğru tespit olarak sınıflandıracağız.
+
+438
+01:56:33,275 --> 01:56:39,775
+Eğer eşiğin altında kalıyorsa Post Positive olarak yazacağız.
+
+439
+01:56:41,811 --> 01:57:07,351
+Peki şöyle bir durum da olabilir mi? Model girdi görüntüsünde bulunan bir nesneyi tespit edemedi diyelim. Hani nesne var ama detektör tespit edemedi. Bu durum false negatif hanesine yazılacak. Yanlış negatif olarak. Çünkü mevcut bir nesne var, detektör bunu tespit edemedi. Yani bir bounding box içerisine alamadı. Bunu false negatif hanesine yazacağız.
+
+440
+01:57:08,916 --> 01:57:16,255
+Konfusion Matrix'e oluşturduk zamanında Precision ve Recall değerlerini hesaplamamız kolaylaşacak.
+
+441
+01:57:17,175 --> 01:57:23,076
+Diğer derslerden veya konulardan da bunlara muhtemelen aşinansınızdır arkadaşlar.
+
+442
+01:57:23,235 --> 01:57:28,416
+Precision ve Recall'un Class Confusion Matrix üzerinden nasıl hesaplandık.
+
+443
+01:57:29,635 --> 01:57:32,115
+Bize şu bilgiyi verecek Object Detection'da.
+
+444
+01:57:32,916 --> 01:57:35,275
+Tespit ettiğim nesnelerden ne kadarı doğru?
+
+445
+01:57:36,212 --> 01:57:59,032
+Görüntüde kaç tane nesne tespit ettim? Bunlardan ne kadarı doğru? Bu bilgi sunacak aslında bize. Recall da yani duyarlılık da tüm nesnelerin ne kadarını tespit ettim? Bu bilgiyi bize verecek. Dolayısıyla biz bir tespit edicinin başarımını ifade edebiliriz.
+
+446
+01:58:01,779 --> 01:58:27,000
+Tabii nesne tespiti burada anlatıyoruz ama o kadar kolay bir işlem değil. Genelde ilk bir nesne tespit edeceğimiz zaman güzel güzel görüntülerde çalışıyoruz. Böyle parlak bir sıkıntısı olmayan günlük güneşlik görüntüler diyelim onlara. Ama gerçek dünya öyle değil maalesef. Nesne tespitinde karşılaşılan bir sürü zorluk var. Bunlardan bir kısmı burada.
+
+447
+01:58:27,488 --> 01:58:34,327
+Şimdi ideal bir detektörün, yani nesne tespit edicinin yüksek başarımla çalışması beklenir.
+
+448
+01:58:35,188 --> 01:58:39,408
+İşte bütün nesneleri bir görüntü verdiğimiz zaman doğru bir biçimde tespit etsin.
+
+449
+01:58:39,967 --> 01:58:42,228
+Değil mi? Hani hiçbir nesneyi atlamasın.
+
+450
+01:58:43,387 --> 01:58:49,127
+İşte trafikte araçların plakasını tespit edecekseniz bazı araçları atlamasın.
+
+451
+01:58:49,127 --> 01:58:51,747
+Mesela otomatik ödeme sistemlerinde vs. değil mi?
+
+452
+01:58:52,547 --> 01:58:54,827
+Bunun haricinde efektif olması lazım.
+
+453
+01:58:55,283 --> 01:59:22,343
+Mesela hızlı çalışması lazım. Ama bunlar gerçekleştirilecek uygulamaya göre bir terazi gibi düşünürsek, bazen sizin için önemli olan ne? Yüksek başarımla çalışması mı, hızlı çalışması mı? Çünkü bazı yerlerden fedakarlık yapabilirsiniz. Mesela sizin için hız önemliyse, doğruluk o kadar önemli olmayabilir. Bu durumda hız kısmını dikkate alırsınız. Ona uygun bir detektör seçme imkanınız olabilir.
+
+454
+01:59:23,252 --> 01:59:43,091
+Benim için doğruluk önemli. Yavaş çalışması hiçbir sıkıntı değil derseniz de o kısımda da yüksek başarım veren detektörü kullanmanız daha iyi olabilir. Bir de bunların arasında biraz daha dengil olan bir şey vardır. Hem hızı yüksek olsun hem de doğruluğu yüksek olsun. Bu her zaman olmayabiliyor.
+
+455
+01:59:47,828 --> 02:00:11,608
+Sağlayan yöntemler de var. Çok çok hızlı değil ama çok çok düşükte değil başarımı oranı. Bu tarz detektörler de var. Görüntülerde birçok sıkıntıyla karşılaşabiliriz. İlemni yaşından kaynaklanan, parlaklıktan kaynaklanan sıkıntılar olabilir. Her çektiğiniz görüntüde her nesne düzgün görünmeyebilir. Bu Object Detection'da bir problemdir mesela.
+
+456
+02:00:12,275 --> 02:00:36,195
+Onun dışında ölçek problemi vardır. Çok küçük objeler vardır, büyükleri de vardır. Mesela burada şu kısımda bir çayırlıkta koyunlar var. Yayılmış koyunlar, çayıra. İki tanesi çok yakındırıyor. Arkada bir sürü minik minik gözüken koyunlar var. Bunlar belki birkaç pikselle gözüken şeyler ama onlar da koyunlar.
+
+457
+02:00:38,739 --> 02:00:51,159
+Dolayısıyla ölçeklemede bir problem, hani nesne tespit ederken, ideal bir detektörün farklı ölçeklerdeki nesneleri de tespit edebilmesi iyi bir şey.
+
+458
+02:00:51,419 --> 02:00:59,579
+Mesela burada çünkü bir türü onlarca küçük küçük koyunlar var, onları da tespit etmesi önemli.
+
+459
+02:01:00,275 --> 02:01:06,795
+Bunun haricinde nesnenin bir kısmı görüntüde görünebilir. Bir kısmı görünmüyor. Kapanmıştır mesela.
+
+460
+02:01:07,455 --> 02:01:17,115
+Mesela burada bir trafik görüntüsü var. Bir tane otobüs arkadaki araçların bir kısmını kapatmış. Araçların mesela bagajı gözüküyor veya tabakın bir kısmı gözüküyor.
+
+461
+02:01:22,836 --> 02:01:30,456
+Dolayısıyla tespit edeceğiniz nesnenin bir kısmı farklı bir obje tarafından kapatılmış olabilir.
+
+462
+02:01:31,515 --> 02:01:33,296
+Onun da göz önünde bulundurmak gerekiyor.
+
+463
+02:01:34,376 --> 02:01:36,235
+Nesneler iç içe geçmiş olabilir.
+
+464
+02:01:36,235 --> 02:01:43,076
+Mesela bir doğadaki hayvanları tespit edecekseniz, bunlar genelde toplu halde gezen hayvanlar.
+
+465
+02:01:43,336 --> 02:01:45,555
+Sayıları önemliyse sizin için mesela.
+
+466
+02:01:46,420 --> 02:02:07,079
+Bunlar iç içe geçmişse bu bir problemdir tespit etmek için. Bunun dışında mesela blurring problemi vardır. Görüntüyü çekerken hareket olmuştur. Flu bir görüntü vardır. Bu nesneyi tespit etmekte zor. Hareket blurra sebep olan.
+
+467
+02:02:14,292 --> 02:02:38,572
+Aynı kategoride olan ama çok farklı şekillerde olan nesneler de var. Mesela sandalye, burada bir örneği var veya koltuk. Hepsi koltuk veya sandalyesinin ama şurada bir sandalye, bu da bir sandalye, bir koltuk, bu da bir koltuk, bu da bir koltuk, bir arz koltuk, bir sütlar da koltuk.
+
+468
+02:02:39,475 --> 02:03:00,171
+Aynı sınıf altında varyansları çok yüksek. Dolayısıyla bu bir problem yaratabiliyor. Bunun haricinde farklı sınıflarda olan ama varyansları çok düşük olan nesneler de var. Mesela sınıflar her gün farklı. Ama baktığınız zaman...
+
+469
+02:03:00,787 --> 02:03:14,367
+Bir tanesi köpek, bir tanesi kurt, bir tanesi başka bilgisayar. Hepsi birbirine çok yüksek oranda benziyor. Bu da nesne tespit ederken dikkate almamız gereken bir durum.
+
+470
+02:03:14,367 --> 02:03:27,047
+Tabii derin öğrenme çıktığı zaman, o gelişim sürecinde bu problemlerin önemli bir kısmını çok iyi öğrendiği için aslında elemine etmeye başladı. Ama önceden bunlar çok önemli problemler.
+
+471
+02:03:28,051 --> 02:03:48,992
+Bir objenin bir kısmı kapanmışsa bir görüntüde, o kapanmayı elemine etmek için mesela oturup ayrı bir çalışma yapmanız gerekebiliyordu. İç içe geçmişse onları ayırmak için farklı bir çalışma yapmanız gerekebiliyordu. Derin öğrenme aslında buradaki problemlerin önemli bir kısmını ortadan kaldırmış oldu.
+
+472
+02:03:53,363 --> 02:04:16,963
+Uygulama alanları çok fazla. Burada bu çok yeni yayınlanmış bir paper. 2023 yılında. Object Detection konusunda yayınlanmış olan paperların, makalelerin sayısını gösteriyor. Bu veriler Google Scholar'dan alınmış. 1998'de 2021 yılları arasındaki istatistikleri gösteriyor.
+
+473
+02:04:20,448 --> 02:04:35,108
+100 civarında paper yayınlanıyorsa mesela senede, bugün 3500 civarında paper makale yayınlanıyor.
+
+474
+02:04:35,108 --> 02:04:47,927
+Bu uygulama alanları da çok fazla. Araçların tespit edilmesi, ulaşımda takip edilmesi, trafikteki yayaların tespit edilmesi.
+
+475
+02:04:48,435 --> 02:05:12,075
+Sayılması, hayvanların tespit edilmesi, askeri uygulamalar, sağlık hizmetlerinde, medikal görüntülerde hücrelerin tespit edilmesi, organların tespit edilmesi, otonom araçlarda yolun bölgülenmesi demeyelim mi, trafik levhalarının tespit edilmesi.
+
+476
+02:05:12,851 --> 02:05:27,291
+Gelen kamera görüntüsünden yayaların tespit edilmesi, diğer aracın dikkat edeceği bilgilerin tespit edilmesi, güvenlik uygulamaları, surveillance görüntülerindeki hedeflenen nesnelerin tespit edilmesi ve ulaşım.
+
+477
+02:05:27,532 --> 02:05:36,351
+Bunun gibi birçok alanda da object detection problemini kullanıyoruz, göz önünde bulunduruyoruz.
+
+478
+02:05:40,819 --> 02:05:50,219
+Ben bu kadar arkadaşlar sunumu. Teşekkür ederim. Sizin sorularınız varsa yanıtlamaya çalışın.
+
+479
+02:06:53,043 --> 02:06:54,043
+Hoşçakalın.
+
+480
+02:07:19,155 --> 02:07:24,908
+Yani, bu konu anlarınızı özgürlük, bu konuyu örneğe özgürlük.
+
+481
+02:07:29,844 --> 02:07:53,783
+Orada küçük bir şey ekleyebilir miyim? Mesela orada eşik seviyesini belirlerken şu da önemli olabiliyor. Genelde objeyi teslim etmemek %50 barajı kullanılıyor ama MHP 0.50 diye geçiyor. Öyle kezler var ki, senaryolar var ki sizin objeyi bir ucundan yakalamanız bile bir başarı aslında. Mesela %10'luk kesişim bile sizin için çok önemli bir başarı olabilir.
+
+482
+02:08:23,604 --> 02:08:24,784
+Yani, olaçlar da.
+
+483
+02:09:14,452 --> 02:09:22,032
+Tez yapacak arkadaşlar için birbiriyle çalışıyorum.
+
+484
+02:10:05,971 --> 02:10:06,471
+Vabok.
+
+485
+02:11:23,475 --> 02:11:45,195
+Tahtadaki arkadaşlar, sunumları çevrim içi yapmaya karar verdik. Sınıfta ders yapmayacağım. Herkes evinden, iş yerinden bağlanıp kendi proje sunumunu, incelediğim makaryosunumunu yapabiliyor. Hepinize iyi günler diliyorum. Hoşçakalın.

@@ -1,0 +1,3579 @@
+1
+00:02:46,996 --> 00:02:51,876
+Bilgisayarla Görme dersinin proje sunumlarına bu hafta devam edeceğiz.
+
+2
+00:02:53,415 --> 00:03:03,116
+Geçen hafta 9 öğrenci sunum yapmıştı. Bu hafta da en az 9 kişinin sunum yapmasını bekliyorum.
+
+3
+00:03:03,956 --> 00:03:11,516
+Geçen hafta yaptığımız gibi sohbet bölümünde bu hafta sunum yapacak kişiler isimlerini yazarsa,
+
+4
+00:03:12,116 --> 00:03:18,996
+Ben o sıraya göre sizi sunum yapmak üzere davet edeyim.
+
+5
+00:03:28,084 --> 00:03:38,484
+Türkiye ile başlayacağım o zaman. [öğrenci]. İlk sırada. İkinci sırada [öğrenci].
+
+6
+00:03:43,156 --> 00:03:48,175
+Sonra [öğrenci], [öğrenci].
+
+7
+00:03:58,259 --> 00:04:03,539
+[öğrenci], [öğrenci], [öğrenci].
+
+8
+00:04:11,123 --> 00:04:22,743
+[öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci].
+
+9
+00:04:27,348 --> 00:04:51,268
+4, 4, 4, 5, 6, 8, 9 [öğrenci]. Evet, güzel tam. 9'u yakaladık bu haftada. İyi oldu. Şu anda derse katılan 13 kişi var ama yavaş yavaş toplanacağımızı ümit ediyorum. [öğrenci] seninle başlayalım. Ben ekran paylaşım izni verdim.
+
+10
+00:04:53,139 --> 00:04:55,019
+Hocam, merhaba.
+
+11
+00:04:55,939 --> 00:05:06,039
+Merhaba. Evet, seni dinliyoruz [öğrenci]. Geçen hafta sorduğum soruları hatırlayın. Neden bu konuyu seçtiniz? Bir de onu söyleyin başta. Oldu mu?
+
+12
+00:05:06,039 --> 00:05:10,799
+Tamam. Hocam, şu an görebiliyor musunuz?
+
+13
+00:05:11,299 --> 00:05:14,399
+Evet, ekranını görüyor. Tam ekranda oldu, güzel.
+
+14
+00:05:18,899 --> 00:05:37,500
+Ben Robust Optimization as Data Augmentation for Large Scale Graphs makalesini inceledim. Neden bu makaleyi inceledim? [kişisel bilgi]
+
+15
+00:05:46,899 --> 00:05:51,019
+için incelemek için bu makaleyi seçtim.
+
+16
+00:05:54,132 --> 00:06:13,012
+Devam edecek olursam, bu makalede geçen terimler GNN problemleri olarak overfitting problemini inceliyor ve bunun için data augmentation yöntemlerini çözüm olarak sunuyor.
+
+17
+00:06:13,012 --> 00:06:18,012
+Bu makalede de graflar için flag yöntemini...
+
+18
+00:06:18,687 --> 00:06:24,347
+Flag yöntemini öneriyor. Ve OGB veri seti üzerinde de deneyler yapıyor.
+
+19
+00:06:25,300 --> 00:06:41,580
+Bunları detaylı olarak inceleyeceksek, ilk olarak derin öğrenme uygulamalarında büyük veri setleriyle ve çeşitli veri setleriyle çalışmak modelin performansı açısından oldukça önemlidir.
+
+20
+00:06:42,899 --> 00:06:52,560
+Çünkü elimizde eğer çok fazla sayıda veri olmazsa ve bu veriler çeşitli olmazsa, overfit problemiyle karşı karşıya kalırız.
+
+21
+00:06:53,300 --> 00:07:11,360
+Bu problemi çözmek için de data augmentation yöntemlerine başvururuz. Nedir data augmentation? Aslında elimizde var olan verileri çeşitli yöntemlerle değiştirerek yeni ve sentetik veri oluşturma işlemidir.
+
+22
+00:07:11,800 --> 00:07:20,420
+Örneğin mesela ben buraya bir görsel eklerim daha iyi anlaşılması açısından. El yazısıyla yazılmış bir altı rakımını görüyoruz.
+
+23
+00:07:21,300 --> 00:07:37,360
+Başarılı bir yapay zeka modelinden beklediğimizde bu elle yazılan altı rakımının hangi şekilde olursa olsun doğru tanımasını istiyoruz, bekliyoruz.
+
+24
+00:07:37,360 --> 00:07:48,980
+Fakat çalıştığımız veri setlerinde çok fazla veri olmayabiliyor. Bu sebepten de biz şey yapıyoruz.
+
+25
+00:07:49,300 --> 00:07:59,360
+Çok fazla veri olmayabiliyor fakat elimizde olan verileri değiştirerek çeşitli verisiyeti elde etmiş oluyoruz.
+
+26
+00:07:59,360 --> 00:08:13,379
+Mesela resim verileri için rotation, flip gibi işlemler ya da metin verileri için eş anlamlısını ekleme gibi.
+
+27
+00:08:14,740 --> 00:08:22,920
+Ses verileri için de yine bu şekilde data augmentation yöntemleri oluyor.
+
+28
+00:08:22,920 --> 00:08:35,000
+Fakat bu makalede de özellikle graf için hangi data augmentation yöntemi öneriliyor ona bakıyoruz.
+
+29
+00:08:35,180 --> 00:08:42,740
+Yani bu makale graflar üzerinde flag için veri artırma yöntemini öneriyor.
+
+30
+00:08:42,740 --> 00:08:51,860
+Flag, açılımı Free Large Scale, Adversarial Augmentation on Graphs'tır.
+
+31
+00:08:54,163 --> 00:09:09,503
+Diğer graf veri artırma yöntemlerinden farklı olarak, mevcut literatürdeki o yöntemlerde genelde veri artırırken graf yapılarını değiştirmeye odaklanıyor.
+
+32
+00:09:09,503 --> 00:09:22,163
+Fakat bu önerilen yöntemde de bu grafik yapıları değiştirilmeden, kenar ekleme gibi bir şeyler yapılmadan giriş düğümü özelliklerine rakip...
+
+33
+00:09:22,163 --> 00:09:27,203
+Perturbasyonlar ekleyerek tamamen düğüm özellik uzayında çalışıyorlar.
+
+34
+00:09:28,104 --> 00:09:33,803
+FLAG, Adversarial Training yöntemlerinden, FRI yönteminden de faydalanıyor.
+
+35
+00:09:34,604 --> 00:09:38,264
+Bununla ilgili de bir görsel var bir sonraki slide'da ona da bakacağız.
+
+36
+00:09:38,264 --> 00:09:44,483
+Adversarial Training'in aslında ana fikri de eğitilen modelin gelecekteki,
+
+37
+00:09:50,163 --> 00:10:05,104
+Bu şekilde çevrilmiş hali. Tam olarak emin olamadım bu kelimeden doğru kullanılıyor mu ama düşmanca örnekleri doğru bir şekilde sınıflandırabilmesi için eğitim setine bu örnekleri enjekte etmesi.
+
+38
+00:10:05,104 --> 00:10:11,104
+Aslında Adversarial Training'de. Buradaki görselde...
+
+39
+00:10:12,083 --> 00:10:39,644
+En üstte orijinal veri setini görüyoruz. Yani orijinal görüntüleri görüyoruz. İkincide değiştirilmiş yani data augmentation edilmiş veriyi görüyoruz. En altta da free yöntemini kullanarak, free trainingi kullanarak olan veri görselleri görüyoruz. Bu aslında makalede yoktu fakat ben free trainingi daha iyi anlamak için.
+
+40
+00:10:40,083 --> 00:10:41,603
+Bu görseli ekledim buraya.
+
+41
+00:10:44,980 --> 00:11:12,519
+Bu değişik güncellediğim slide'ı paylaşmamışım burada. Eski şey kalmış ama devam edeyim. Burada mevcut çalışmadan bahsedecek olursak, çok büyük ölçekli veri seti olan OGB üzerinde bu yöntemin etkinliği doğrulanıyor.
+
+42
+00:11:12,980 --> 00:11:17,980
+Burada farklı GNN modellerine işte
+
+43
+00:11:19,316 --> 00:11:32,276
+Mesela GI, N, Graph, Sage gibi temel modellere bu flag'i uygulayarak OGB veri hükümeleri üzerinde deneyler yapılıyor.
+
+44
+00:11:33,556 --> 00:11:41,656
+Burada da, bu deneylerin sonucunda da çoğu durumda iyileştirmeler olduğunu söylüyorlar.
+
+45
+00:11:41,656 --> 00:11:46,756
+Bu deneylere sonrasında, sonraki slaytlarda bakacağız.
+
+46
+00:11:47,316 --> 00:11:52,316
+Flag'in avantajlarına bakacak olursak da flag...
+
+47
+00:11:53,491 --> 00:12:21,491
+Basittir. Yani şöyle, çok az bir kod satırı eklenerek modellere, yani kullanımı kolaydır. Geneldir. Çünkü birden fazla genel modellerine rahatça entegre edilebilir. Çok yönlüdür ve verimlidir. Verimli olması da çok fazla maliyet gerektirir.
+
+48
+00:12:21,491 --> 00:12:26,371
+İyileştirmeden modeli iyileştirme sağlaması.
+
+49
+00:12:28,115 --> 00:12:42,375
+Çalışmanın önemine bakacak olursak da, yani ana katkılarına bakacak olursak da bu yöntemin graf verileri üzerindeki ilk genel amaçla özellik tabanlı veri artırma yöntemi olduğu söyleniyor.
+
+50
+00:12:43,135 --> 00:12:52,316
+Deneylerde de diğer veri artırma yöntemlerinden daha iyi olduğu sonucu ortaya çıkıyor. Bunu da göreceğiz.
+
+51
+00:12:56,115 --> 00:13:06,615
+Yani adversarial artırmaların model doğruluğu üzerindeki farklı etkilerini işte gözlemlemişler. Bununla da ilgili yine çalışmalara bakacağız.
+
+52
+00:13:07,956 --> 00:13:30,015
+Literatür kısmında incelediklerinde de, good follower arkadaşlarının, sınıflandırıcının başarısız olmasına neden olan küçük hataları tespit ederek, adversarial eğitimin bu doğruluğu artıracağını düşünüyorlar.
+
+53
+00:13:35,956 --> 00:13:47,716
+Eğer veri seyrekse rakip pertürbasyonların yani adversarial pertürbasyonların genelleme üzerinde olumlu etkisi olduğunu söylüyorlar.
+
+54
+00:13:49,096 --> 00:13:58,735
+Yani genel olarak literatürde adversarial trainingin model üzerinde olumlu etkileri olduğunu söylenmiştir.
+
+55
+00:14:00,884 --> 00:14:22,443
+Önerilen yöntemde de free training yöntemi kullanılıyor. Az önce de söylediğim gibi. Burayı da geçiyorum. Bu aslında slide'ın sunumun son hali değil. O yüzden biraz şu an karmaşık gibi gözükebilir. Eğer istiyorsanız hocam son halini de açabilirim. Ya da böyle de devam edebilirim.
+
+56
+00:14:29,076 --> 00:14:31,696
+İse eğer hemen açabilirsin.
+
+57
+00:14:31,895 --> 00:14:32,855
+Değiştir istersen.
+
+58
+00:14:33,216 --> 00:14:34,776
+Tamam hocam. Bir dakika.
+
+59
+00:14:47,155 --> 00:14:49,515
+Ekranım gözüküyor mu hocam?
+
+60
+00:14:50,715 --> 00:14:55,615
+Eski şeyin gözüküyor sanırım. Yani bunu paylaşımı durdurman gerekiyor önce.
+
+61
+00:15:01,908 --> 00:15:08,948
+Şöyle kapatsam. Tamam, şimdi kapandı. Tekrar yeni sunumu aç.
+
+62
+00:15:08,948 --> 00:15:11,427
+Tamam, canım sen var.
+
+63
+00:15:11,427 --> 00:15:13,768
+Açalım.
+
+64
+00:15:28,244 --> 00:15:30,504
+Şu an gözüküyor mu? Evet.
+
+65
+00:15:43,028 --> 00:15:59,827
+Evet, deneysel sonuçlarda da hangi veri kümesini kullandıklarını, kurulum aşamasında hangi aşamalardan geçtiğini ve 3 farklı özellik tahmini içinde bu deneyleri yaptıklarını.
+
+66
+00:16:00,851 --> 00:16:17,911
+Veri kümesi olarak büyük ölçekli olan OGB veri kümesini, yani içerisinde çok farklı çeşitli olan veri kümesini kullandıklarını, böylece deneylerini yaptıklarını söylüyorlar.
+
+67
+00:16:17,911 --> 00:16:28,851
+Kurulum aşamasında yapılan deneylerin herkesin ulaşabileceği uygulamaları kullanarak gerçekleştirdiğini söylüyorlar.
+
+68
+00:16:28,851 --> 00:16:38,111
+Bunun dışında da farklı rastgele kaynaklarla yapılan 10 çalışmanın ortalama ve standart sapmalarını rapor ediyorlar.
+
+69
+00:16:38,111 --> 00:16:55,111
+Ve bu flag yöntemini temel olan GNN modellerine yani GCN, GraphSage, GAT ve GIN modellerine uygulayarak deneylerini gerçekleştiriyorlar.
+
+70
+00:16:56,851 --> 00:17:15,911
+Ve buna ek olarak da yine Deeper GSM modeline de uyguladıklarını söylüyorlar. Basitlik açısından da M eşittir 3 yükselme adımını kullanıyorlar. Bununla ilgili çok daha fazla detay makalede yer almadığı için bu tam olarak anlamamıştım bu M eşittir 3 yükselme adımını.
+
+71
+00:17:17,107 --> 00:17:43,827
+Çok bahsetmiyorlar. Ama genel olarak deneydeki sonuçlara bakacak olursak, burada tabloda şunu görüyoruz. Şöyle masumla görüyorsanız eğer, 3 farklı sütünde 3 farklı ver hükümesi var, OrgbN ver hükümesine ait. Burada da 4 tane deney yapılmış.
+
+72
+00:17:45,107 --> 00:18:06,107
+Bu biraz farklı modele flag yöntemi eklenerek test doğruluğunu artırıp artırmadığını görebiliyoruz. Burada mesela GAT modeline flag eklendiğinde %2,31 oranında bir test doğruluğu elde ediliyor.
+
+73
+00:18:13,107 --> 00:18:39,647
+Burada gördüğünüz üzere bir artış olmadığını görüyoruz. Yani flag yöntemi bu modele eklendiğinde bir artış olmadığını görüyoruz. Bunu da şuna bağlıyorlar. Bu veri kümesi, girdi düğüm özelliğine sahip olmadığı için olmadığını ve bunu daha sonraki makalenin ilerleyen kısmında bunu tartışıyorlar ve buna bir çözüm getiriyorlar aslında.
+
+74
+00:18:40,448 --> 00:18:53,868
+Ama genel olarak büyük ölçekte düğüm özellik tahmini deneyinde flag modele eklendiğinde test doğruluğunu artırdığını söylüyorlar.
+
+75
+00:18:55,268 --> 00:19:06,848
+Daha sonra alttaki tabloda da yine farklı bir veri seti üzerinde giysiyen modeline flag eklendiğinde yine bir artış olduğunu.
+
+76
+00:19:07,955 --> 00:19:15,955
+Farklı farklı veri kümesinde bu yöntemi incelemelerde yani bunlar için...
+
+77
+00:19:16,784 --> 00:19:44,564
+Çok yönlülüğü aslında, yani bu yöntemin çok yönlülüğünü gösteriyor. Sonraki deneylerde de bunu göreceğiz. Burada aslında daha çok gözle görülür bir artış oluyor. Bu da büyük ölçekli bağlantı özelliği tahmini deneyi. Burada da yine bu modellere flag eklendiğinde, yani şurada en azından %14'e yakın bir artış olduğunu.
+
+78
+00:19:44,784 --> 00:19:52,824
+Bu deney için özellikle bu flag yöntemi çok daha başarılı sonuçlanıyor.
+
+79
+00:19:54,384 --> 00:20:00,824
+Büyük ölçekli grafik özellik tahminine bakacak olursak da burada da...
+
+80
+00:20:01,844 --> 00:20:21,344
+Yine dört farklı veri kümesi için beş farklı modele flag ekleyerek yine test doğruluklarına bakıyorlar. Yani iyileştirme olmuş mu olmamış mı sonuçlarını paylaşıyorlar.
+
+81
+00:20:21,344 --> 00:20:29,344
+Burada da genelde bir artış oluyor. Yani çok büyük bir artış olmasa da flag'in...
+
+82
+00:20:29,844 --> 00:20:33,943
+İşe yaradığını, iyi olduğunu söylüyorlar.
+
+83
+00:20:33,943 --> 00:20:34,963
+Flag yönteminin.
+
+84
+00:20:37,784 --> 00:20:40,983
+Son olarak da burada şöyle bir şey yapıyorlar.
+
+85
+00:20:42,364 --> 00:20:43,943
+Flag dışındaki...
+
+86
+00:20:44,948 --> 00:21:12,948
+Bu veri artırma yani graflar için veri artırma yöntemlerini modellere ekliyorlar. İşte mesela PGD model yöntemini ekliyorlar. İşte diğer bütün birkaç tane yöntemi ekleyip karşılaştırmalarını yapıyorlar. Burada en yüksek yine flag ile çıkmış oluyor. Bu da yine onların başarılarını gösteriyor.
+
+87
+00:21:12,948 --> 00:21:33,248
+Daha sonra bir ablasyon çalışması yapıyorlar. Ablasyon çalışması da makine öğrenmesi uygulamalarında genelde öğrenme için, öğrenmeyi etkilen birçok faktör olduğunu biliyoruz.
+
+88
+00:21:38,256 --> 00:21:54,596
+Performansa ne derece etki ettiğini ölçmek için bu ablasyon çalışmasını yapıyorlar. Burada mesela batch norm ile uyumluluk demişler. Bu da yani ikili BN'leri kullanmayı öneriyorlar.
+
+89
+00:22:01,652 --> 00:22:10,992
+Bu adversarial olan değiştirilmiş veri, bu ikisini birlikte kullanınca modelin daha iyi olduğunu söylüyorlar.
+
+90
+00:22:10,992 --> 00:22:21,772
+İşte yine ağırlıklı perturbasyonu kullanmanın da modeli iyileştirdiğini, onun dışında mini-batch yöntemlerini kullanmak da şöyle.
+
+91
+00:22:26,387 --> 00:22:41,227
+Veri setini bölmek için, maliyet ve zaman açısından kazanmak için mini batch işlemi yapılıyor. Bu işleminde yine bu yönteme katkı sağladığını söylüyorlar.
+
+92
+00:22:41,227 --> 00:22:47,447
+Drop out ile uyumluluk, yani Türkçe'de seyreltme gibi. Onu da şöyle yapıyorlar.
+
+93
+00:22:51,251 --> 00:23:04,251
+Belli bir şeyin altındaki verileri azaltma işlemi diyebiliriz. Bunu da yaptıklarında yine şeyi...
+
+94
+00:23:05,428 --> 00:23:22,788
+Yani modeli iyileştirdiğini söylüyorlar. Free olmaya doğru dedikleri işte bu ilk başta söylediğimiz free training yöntemini kullanmaları bu da pozitif anlamda etkiliyor yöntemi.
+
+95
+00:23:30,036 --> 00:23:48,416
+Yine flag'e iyileştirme sağlıyor diyeyim. Ve son olarak da bazı analizlere bakıyorlar. Bunu bir önceki slide'da da söylemiştim. Diğer robust optimizasyon yöntemleriyle karşılaştırma yapıyorlar.
+
+96
+00:23:57,715 --> 00:24:07,475
+Bir tane tabloda artma olmamıştı. Onun sebebini araştırıp nasıl bir yol izlenebilir diye bakıyorlar.
+
+97
+00:24:07,475 --> 00:24:25,475
+Bazı yazarlar düğüm özelliği olmayan veri kümelerinde bu flag yöntemi uygulandığında kenarların toplamını alıp ilk düğümü oluşturmak için kenarlarına alıyorlar.
+
+98
+00:24:25,715 --> 00:24:38,115
+Toplamını alıyorlar ya da ortalamalarını alıyorlar. Toplamını aldıklarında daha başarılı sonuç elde ediyorlar. Böyle bir çözüm getirmişler bunun içinde.
+
+99
+00:24:40,564 --> 00:24:54,544
+Son olarak da sonuç kısmında zaten daha iyi bir GNN genellemesi için basit ölçeklenebilir bir veri artırma yöntemi olan flag'ı sunduklarını söylüyorlar.
+
+100
+00:24:54,544 --> 00:25:05,624
+Ve bu flag'in herhangi bir GNN modeline kolayca entegre edilebildiğini söylüyorlar.
+
+101
+00:25:07,347 --> 00:25:22,508
+Bunun dışında, diğer graf veri artırma yöntemlerine göre daha iyi iyileştirmeler sağladığını tespit ediyorlar.
+
+102
+00:25:23,587 --> 00:25:29,008
+Benim anlatacaklarım bu kadar hocam. Genel olarak özetlemeye çalıştım ama.
+
+103
+00:25:30,132 --> 00:25:36,412
+Teşekkür ederiz [öğrenci]. Neden bu konuyu seçtin diye soracağım hemen.
+
+104
+00:25:36,852 --> 00:26:01,272
+Bu konuyu aslında ilk başta da söylemeye çalıştım. [kişisel bilgi] Bu konferans makalelerinden de seçerken bu graf üzerinden tarattım. Bu konu hakkında bilgi sahibi olmak istedim. Araştırırken de öğrenmek için.
+
+105
+00:26:04,852 --> 00:26:07,412
+Önemli bir kavramdı. O sebepten olacağım.
+
+106
+00:26:08,072 --> 00:26:13,232
+Peki, teşekkür ediyoruz [öğrenci] ve seni alkışlıyoruz sunumun için.
+
+107
+00:26:13,752 --> 00:26:14,452
+Teşekkür ederim.
+
+108
+00:26:16,932 --> 00:26:20,792
+Evet, ekran paylaşımını sonlandırabilirsin.
+
+109
+00:26:21,392 --> 00:26:21,692
+Tamam.
+
+110
+00:26:21,912 --> 00:26:26,972
+Sırada [öğrenci] var. [öğrenci], seni dinliyoruz.
+
+111
+00:26:32,788 --> 00:26:44,387
+[öğrenci], [kişisel bilgi].
+
+112
+00:26:44,387 --> 00:26:52,747
+I'm going to introduce to you a paper entitled, Label Verify Correct, A Simple Few Shot Object Detection Method.
+
+113
+00:26:54,771 --> 00:27:01,771
+I will go through introductory about the paper and general introduction about object detection and few-shot learning.
+
+114
+00:27:01,771 --> 00:27:07,771
+Then I will introduce proposed methodology and implementation results and conclusion as well.
+
+115
+00:27:10,771 --> 00:27:17,771
+The paper provided by Computer Vision Foundation and also it's published in IEEE Xeplor.
+
+116
+00:27:37,811 --> 00:27:57,803
+Bu konceptörde çok
+
+117
+00:27:58,420 --> 00:28:04,420
+Bir-stage detectors, bir-stage detectors, bir-stage detectors.
+
+118
+00:28:04,420 --> 00:28:06,500
+Bir-stage detectors, bir-stage bir-stage
+
+119
+00:28:06,500 --> 00:28:11,340
+bir-stage bir-stage bir-stage
+
+120
+00:28:11,340 --> 00:28:15,500
+bir-stage bir-stage
+
+121
+00:28:15,500 --> 00:28:23,820
+bir-stage
+
+122
+00:28:23,827 --> 00:28:30,788
+Bu, iki-stage detektor, or many-stage detektors, FASTER-RCNN is a type of it.
+
+123
+00:28:30,788 --> 00:28:40,708
+In first stage, the region proposal method generates potential object proposal, which is region of interest.
+
+124
+00:28:40,708 --> 00:28:50,708
+And then after that, in second stage, these proposals, object detection, these proposals region of interest are classified.
+
+125
+00:30:00,099 --> 00:30:03,099
+bir-stage
+
+126
+00:30:00,000 --> 00:30:04,000
+Ayrıca bir şekilde görmek için bir şekilde görmek için.
+
+127
+00:30:08,564 --> 00:30:35,884
+Bu birçok
+
+128
+00:30:42,084 --> 00:30:46,084
+Şimdi metodoloji.
+
+129
+00:30:46,192 --> 00:31:13,516
+Bu, bu
+
+130
+00:31:13,715 --> 00:31:19,215
+İlk olarak, üniversite altyazı ve üniversite altyazı.
+
+131
+00:31:19,215 --> 00:31:25,715
+İlk olarak, bu süredir, bu süredir, bilgisayar ve bilgisayar ve bilgisayar ve bilgisayar.
+
+132
+00:31:26,483 --> 00:31:35,783
+Bu, BCD labeling, or candidate sourcing, it's used to mine instant into novel categories.
+
+133
+00:31:35,783 --> 00:31:43,283
+And then after that, or the goal in general is to improve the precision of this candidate detection
+
+134
+00:31:43,283 --> 00:31:48,183
+by filtering out the incorrect classes label, and then refining the bounding box.
+
+135
+00:31:51,347 --> 00:32:17,419
+Bu label verifikasyon, bir k2g k2
+
+136
+00:32:18,675 --> 00:32:26,675
+Bu birçok korrektör, r-CNN is used.
+
+137
+00:32:26,675 --> 00:32:34,675
+Ve regressor is generally the verified candidate detector region of interest.
+
+138
+00:32:34,675 --> 00:32:38,675
+It takes the feature and passes it through the regressor.
+
+139
+00:32:38,675 --> 00:32:42,675
+And then after that it correct the bounding box.
+
+140
+00:32:44,980 --> 00:32:52,920
+Bu model model ve modelde de
+
+141
+00:33:12,980 --> 00:33:19,980
+As I said, and also for box correction, they make a three shot of 30, 50, and 70.
+
+142
+00:33:22,180 --> 00:33:27,579
+For result, the author showed the performance of two data sets separately.
+
+143
+00:33:28,220 --> 00:33:33,579
+So as we can see here, here are the few shot detection performance for MS CUCU benchmark.
+
+144
+00:33:35,259 --> 00:33:38,140
+It's compared to its different literature review.
+
+145
+00:33:40,180 --> 00:33:48,300
+Bu bir
+
+146
+00:33:48,300 --> 00:33:51,259
+ve
+
+147
+00:33:51,259 --> 00:33:53,779
+bir
+
+148
+00:33:53,779 --> 00:33:55,180
+ve
+
+149
+00:33:55,180 --> 00:34:08,108
+bir
+
+150
+00:34:08,467 --> 00:34:17,483
+Yeni birçok
+
+151
+00:34:28,340 --> 00:34:29,900
+[öğrenci] sesin gitti.
+
+152
+00:34:33,980 --> 00:34:34,700
+[öğrenci].
+
+153
+00:34:37,579 --> 00:34:43,460
+Now you can hear me well?
+
+154
+00:34:44,340 --> 00:34:52,140
+Yes, I can hear. But what about the others? Are there any problem for [öğrenci]'s sound?
+
+155
+00:34:52,140 --> 00:34:53,460
+Gelmiyor.
+
+156
+00:34:53,900 --> 00:34:54,880
+Gelmiyor değil mi?
+
+157
+00:34:55,731 --> 00:34:58,532
+Son 1-2 dakika dur, kesik kesik geliyor bende.
+
+158
+00:34:58,532 --> 00:35:06,211
+Şimdi beni iyi dinlebilir miyim? Evet, şimdi dinlebiliriz. Tamam, devam edin.
+
+159
+00:35:21,972 --> 00:35:28,332
+Bu da
+
+160
+00:35:28,332 --> 00:35:31,572
+yöntemlerle anlatacağım.
+
+161
+00:35:31,572 --> 00:35:33,972
+Bu da
+
+162
+00:35:33,972 --> 00:35:37,972
+yöntemlerle anlatacağım.
+
+163
+00:35:37,972 --> 00:35:40,972
+Bu da
+
+164
+00:35:40,972 --> 00:35:45,972
+yöntemlerle anlatacağım.
+
+165
+00:35:49,188 --> 00:35:50,188
+bir
+
+166
+00:35:48,755 --> 00:35:55,755
+Bu bir şekilde bu şekilde
+
+167
+00:36:02,003 --> 00:36:16,683
+Average perception also for the three spilets or three novel spilets. As we can see here for the proposed method, it also have the best or the second best according to the old literature review.
+
+168
+00:36:23,027 --> 00:36:47,819
+Bu da bu
+
+169
+00:36:48,052 --> 00:36:53,052
+Verified and acceptable label verification.
+
+170
+00:36:53,052 --> 00:37:01,052
+For the qualitative result of label verification, also here in the four row, you can see that it predicted well.
+
+171
+00:37:01,052 --> 00:37:08,052
+And here in the second last, they didn't predict it well.
+
+172
+00:37:08,052 --> 00:37:10,412
+So they take the upper one.
+
+173
+00:37:11,827 --> 00:37:19,907
+Bu bir
+
+174
+00:37:19,907 --> 00:37:41,351
+bu
+
+175
+00:37:35,251 --> 00:37:42,251
+Bu koncusunda, bu koncusunda,
+
+176
+00:37:42,251 --> 00:37:58,251
+bu koncusunda,
+
+177
+00:38:43,092 --> 00:39:02,668
+[öğrenci], bir soru sor
+
+178
+00:39:08,820 --> 00:39:09,820
+Söyleyeyim?
+
+179
+00:39:09,820 --> 00:39:12,820
+R-C-N-N, evet.
+
+180
+00:39:12,820 --> 00:39:21,820
+I think a few shot object detection is faster than R-C-N-N.
+
+181
+00:39:21,820 --> 00:39:25,820
+I see. But are there any comparisons in this paper?
+
+182
+00:39:25,820 --> 00:39:27,820
+No, there is not.
+
+183
+00:39:27,820 --> 00:39:35,660
+No, okay. And the second question, why did you select this paper?
+
+184
+00:39:36,148 --> 00:39:44,148
+Bu konuda bir soru var, çünkü bu konuda çalışmaların çalışmaların çalışması için çalışmaların çalışmalarını çalışmak için çalışmaların.
+
+185
+00:39:44,148 --> 00:39:49,148
+Bu konuda daha iyi bir soru var.
+
+186
+00:39:49,148 --> 00:39:51,148
+I see.
+
+187
+00:39:51,148 --> 00:39:56,148
+Bu konuda, bu konuda?
+
+188
+00:39:56,148 --> 00:40:00,000
+Evet, bu konuda.
+
+189
+00:40:00,000 --> 00:40:06,800
+Thank you for your presentation and congratulations.
+
+190
+00:40:08,759 --> 00:40:09,159
+Thank you.
+
+191
+00:40:09,880 --> 00:40:15,840
+Now, şimdi [öğrenci]. [öğrenci] sunu yapacak. Buyurun.
+
+192
+00:40:15,840 --> 00:40:22,099
+Paylaşayım ekranını ben de. Şu an geldi mi ekran?
+
+193
+00:40:22,820 --> 00:40:26,480
+Evet, bir sunum ekranı yaparsanız tam ekran.
+
+194
+00:40:27,411 --> 00:40:31,491
+Yapacağım şimdi. Şu an olması gerekiyor. Oldu. Tamamdır.
+
+195
+00:40:31,791 --> 00:40:55,411
+Evet, merhabalar. Ben [öğrenci]. Benim konum Multitask Learning Transformer. Aslında bu konuyu neden seçtiğimi şöyle anlatabilirim. Ben daha çok dil işleme üzerine çalışıyorum ve Transformer yapılayla çalışıyorum. Bunun görüntüde kullanıldığını bilmiyordum. Biraz böyle araştırdığımda Multitask Learning'i gördüm makaleler arasında. Hani hem Transformer kullanıyor hem de
+
+196
+00:40:55,411 --> 00:41:05,871
+Bu multi task kullanılıyor. Açıkçası bunu nasıl yaptılar diye kendi kendime bir soru sordum ve o yüzden bu makalayı seçtim. Hani biraz böyle beni de aydınlatır belki diye neyin nasıl yapıldığını.
+
+197
+00:41:06,652 --> 00:41:22,951
+Ufaktan başlayayım konuma. Aslında bu multi yapısında amaç iki boyutlu, üç boyutlu ve semantik alanları kapsayan çoklu görüntü tasklarının birbirine bağlanması. Bunu nasıl yapıyorlar? Bunu aslında transformer yapısını kullanarak yapıyorlar.
+
+198
+00:41:23,411 --> 00:41:43,291
+Transformer yapısı görüntü işlemede daha önce Detection Transformer, Vision Transformer gibi modellerde de kullanılıyor aslında. Ama bu Transformer yapılarının farkı hem multitask yapıda olmamasını, yani Detection Transformer'da da Vision Transformer'da da aslında şöyle ilerliyor.
+
+199
+00:41:51,411 --> 00:42:09,131
+Forward bir network ile nesneyi algılıyor. Vision Transformer'da da bu enkodera patch ile birlikte position bilgisinde koyuyor. Ama bizim yapımız multi yapısı bu semantik alanları da öğreniyor. Bunun da en büyük farklılığını attention mekanizmasında ortaya koyuyor aslında.
+
+200
+00:42:10,351 --> 00:42:18,991
+Burada çalışmamızı yaparken aslında bazı soruları ele alıyoruz. Bunlar şu şekilde. Ortaklaşa eğitilen bir Transformer modeli.
+
+201
+00:42:19,411 --> 00:42:44,391
+Single Task dediğimiz tek yönlü Transformer'a göre başarıyı arttırabiliyor mu? Bu Transformer tabanlı modeller arasında, tasklar arasında bir bağlılık var ve bu bağlılık arttıkça bu kodlanabilir hale geliyor mu ya da kodlanabilir yapıdan çıkıyor mu? Ve Multi Task Transformer'da görünmeyen alanlar genellenebilir mi? Aslında bu üç motivasyon üzerinden bu çalışmayı ele alıyorlar.
+
+202
+00:42:45,268 --> 00:43:05,827
+Bizim multi modelimizde aslında bu bağımlılıkları modellemek için bir encoder-decoder yapısı kullanıyoruz transformer aracılığıyla. Bu bağımlılıklar için de kodlama yaparken encoder yapısında daha önce hep kullandığımız self-attention yani öz dikkat yerine shared attention dediğimiz paylaşımlı bir dikkat yapısı kullanıyorlar.
+
+203
+00:43:05,827 --> 00:43:12,248
+Ve daha sonra tasklar üzerinde self-attention ile çözümleme yapıyorlar. Burada decoder yapısı bu şekilde.
+
+204
+00:43:13,268 --> 00:43:36,588
+Böyle biraz mimarisinden bahsetmek istiyorum. Bizim bu yeşil alanlarda gördüğümüz encoder, maviler ise decoder. İki hafta önce işlediğimiz derste unit yapısından biraz bahsetmiştik. Aslında bu unit mantığıyla çalışıyor. Kodlanırken gittikçe küçülen bir pipe, bir vektör oluşturuyor. Burada query ve keylerle shared attention mekanizması kullanılıyor.
+
+205
+00:43:41,268 --> 00:44:08,847
+TASK için ayrı ayrı decoderler kullanılıyor ve genişleyen bir mimar oluyor. Burada biraz daha böyle shared attention mekanizmasının da mimarisinden bahsetmek istiyorum. Onu ayrı bir şekilde ele almak istiyorum. Normalde attention kavramında bizim bu öz dikkat dediğimiz self attention bilinen kısımda kueyler ve key vektörleri kendi decoder yapısının çıktısından elde ediyor. Ancak shared attention mekanizması böyle değil.
+
+206
+00:44:09,268 --> 00:44:17,788
+Burada kueriler ve key vektörler bir önceki aşamanın çıktısından elde ediliyor ve bu sayede bu aradaki anlamlardaki bağlılıklar sağlanıyor aslında.
+
+207
+00:44:19,347 --> 00:44:47,347
+Burada kullanılan yöntemlerden biraz bahsetmek istiyorum. Multitask Learning dediğimiz şöyle bir yapı. Girde olarak bu paylaşılan enkodarı birden fazla çıktığıyla temsil ediyor aslında. Transformer dediğimiz zaten dil modellerinden de bildiğimiz bir yapı ama görüntü işlemede bu. Nesne algılama, görüntü sınıflandırma ve segmentasyon gibi problemler de aslında son dönemlerde CNN'lerin yerini alan bir yapı.
+
+208
+00:44:47,347 --> 00:45:11,327
+Ve çok da başarılı sonuçlar elde ediyor. Learning Task Interdependency dediğimiz yapı ise burada CNN'in yerine tasarlanan multimodeli sayesinde Vision Task'lar arasındaki bağımlılıkları öğrenmeyi sağlıyor. Burada yine Transformer'ın bize sunduğu attention mekanizması sayesinde bu bağımlılıkları öğreniliyor aslında. CNN'den farkı bu şekilde.
+
+209
+00:45:15,347 --> 00:45:31,788
+Normalde bu multi-task learninglerde bu transformer mekanizması eklenmeden önce attention kullanılmıyordu. Bizim modelimizin böyle bir farkı var. Attention kullanılması. Burada multi yapısında 6 farklı task'ı birlikte öğreniyor.
+
+210
+00:45:43,347 --> 00:45:52,847
+En sonunda gördüğümüz re-sharing, yani yeniden gölgelendirme yapısı. Burada 6 tane tas aynı anda birbiriyle bağımlı bir şekilde öğreniliyor.
+
+211
+00:45:54,164 --> 00:46:13,463
+Bu multi yapısında, bu encoder yapısında aslında bu taskları birlikte paylaşarak öğreniyoruz. Aynı mimariye sahip farklı tasklara özel her taskın kendi özel decoder var aslında. Bu decoderleri de şu şekilde seçiyoruz ya da çözüyoruz diyebilirim.
+
+212
+00:46:22,164 --> 00:46:42,384
+Daha böyle ayırt edici olsun. Yüksek seviyedeki, yüksek çözünürlükteki ve kaliteli görüntülerde aslında daha sığ enkoder kullanılıyor. Çünkü görüntü kaliteli olduğu için daha rahat ayrıştırılabiliyor. O yüzden çok derin enkoder kullanmamıza burada gerek yok. Bu sayede de bilgiyi kademeli olarak algılıyoruz aslında.
+
+213
+00:46:42,963 --> 00:47:10,943
+Baseline kısmından biraz bahsedeyim. Biraz önce mimarda da anlattığım gibi aslında UNED tabanlı, CNN tabanlı bir temel oluşturuluyor. UNED mimarisine benziyor. Bu temelde Sivin Transformer'larla da Single Task Transformer'ın temelini oluşturuyor. Burada Sivin Transformer dediğimizde şu şekilde bir yapı. Shifted Window Transformer diye geçiyor. Pencereler var. Bunlar ardışık serpetenşin katmanları arasında.
+
+214
+00:47:10,963 --> 00:47:34,684
+Kaydılarak aslında öğrenim sağlıyor. Multi-task learning'de burada her bir taska ayrılmış shared attention'lar var. Ve bunlar çok sayıda dikodurla birbirleriyle bağlı olup olmadığını tanımlıyoruz. Taskonomy'de de bu yapıdan da transfer learning için bu multiple task'lar arasındaki ilişkiyi aslında inceliyoruz.
+
+215
+00:47:37,108 --> 00:48:00,428
+Bu multitask yapılar arasında bir uyum var mı yok mu buna bakıyoruz ve ayrı olarak ve ortaklaşı olarak eğitilecek taskları bu şekilde belirliyoruz. Cross task consistency'de de aslında bu biraz taskonomi yapısına benziyor. Ancak işte consistency kelimesi burada bizim için bir keyword. Burada da ortaklaşı öğrenme için bir tutarlık kısıtlaması koyuyoruz.
+
+216
+00:48:01,364 --> 00:48:14,664
+Bu yapılan çalışmanın niceliksel karşılaştırması aslında bu şekilde. Burada şey yapıyor, multimodelimizin tek göreve ayrılmış bir sivin transformerla karşılaştırmasını yapıyoruz.
+
+217
+00:48:15,364 --> 00:48:22,744
+Burada sütunlarda test edilen görevleri, satırlarda ise eğitim için kullanılan diğer görevleri görüyoruz.
+
+218
+00:48:24,596 --> 00:48:36,236
+Burada birinci satır, ikinci sütuna baktığımızda semantik segmentasyon ve derinlik ile eğitilmiş ve derinlik üzerine tahminleme yapan bir modelin sonuçlarını görebiliyoruz.
+
+219
+00:48:36,576 --> 00:48:54,776
+Burada key dediğimiz key point detection ve n dediğimiz % normalleri surface normal. Burada birlikte eğitilip test edildiğinde %91.2'lik bir başarı elde etmiş. Bu ikisi birlikte eğitildiğinde çok iyi sonuçlar alınabiliyor tespit edilirken.
+
+220
+00:48:55,155 --> 00:49:13,675
+Biz diğer niceliksel sonuçlara baktığımız zaman burada 6 görev için ortaklaşı eğitilen multi yapısını aslında karşılaştırmasını görebiliyoruz. Bizim burada multi yapımız aslında One Task Sivin Transformer dediğimiz ve One Task CNN'e göre daha başarılı sonuçları da ediyor.
+
+221
+00:49:23,155 --> 00:49:36,655
+Eğittiğimizde olan sonuçlara baktığımız zaman Maltı model hepsinden daha başarılı sonuçlar veriyor. Gördüğünüz gibi diğerlerinden çok daha iyi sonuçlar almışız. Bütün modellerin Maltı olarak eğitilmesinde.
+
+222
+00:49:37,780 --> 00:50:00,000
+Daha sonra iki tane farklı data seti için bunları tekrar çalıştırıyorlar. Bir işte bu taskonomi blurlanmış bir data seti, bir de kokodum dediğimiz bir data setiyle burada hem işte fayntun edilmiş hem de fayntun edilmemiş sonuçlarda multi modeline, cross task'a ve task gruba baktığımız zaman aslında hem fayntun edilmiş...
+
+223
+00:50:00,000 --> 00:50:09,000
+Bu modelde, multi yapısının diğerlerinden daha az bir hata payı olduğunu ve daha başarılı sonuçlar verdiğini görüyoruz.
+
+224
+00:50:09,619 --> 00:50:26,279
+Burada biraz önce tabloda gösterdiğim şeyleri biraz da görseller üzerinde göstermek istedim. Açıkçası makaleden alınan görsellerde. Bu yüzey normallerinde fine tune edilmiş ve edilmemiş modellere baktığımız zaman fine tune edilmiş modeller doğal olarak daha iyi sonuçlar veriyor.
+
+225
+00:50:34,815 --> 00:50:59,795
+Yine %2 normallerinde Keypoint Detection'larda aslında multimodeli daha iyi sonuçlar veriyor. Buralarda baktığımız zaman mesela şu bölgelerde ya da işte burada mesela şurada Edge Detection daha iyi yapmış. Bu bölgede daha böyle görüntü bulurken CrossTask'da multimodellerde aslında bunları daha iyi ayırt edebiliyor. Segmentasyonu da daha iyi sağlıyor.
+
+226
+00:51:02,815 --> 00:51:08,295
+Aşağıdaki gölgelendirme kısmında multimodeli cross-task'a göre daha başarılı sonuçlar veriyor.
+
+227
+00:51:10,771 --> 00:51:23,692
+Bu niteliksel sonuçlara da biraz bakalım istedim. Burada multi modeli aslında biraz önce de tekrarladığım gibi hem single task modellerden hem de multi task CNN modellerden çok daha iyi sonuçlar veriyor.
+
+228
+00:51:23,692 --> 00:51:36,192
+CNN modellerle karşılaştırdığımız zaman özellikle bu shared attention mekanizması hem diğer transformer modellerine hem de CNN modellerinin önüne geçmesinde aslında çok önemli bir nokta.
+
+229
+00:51:38,771 --> 00:51:52,311
+Sonuçlar daha başarılı oluyor. Biz mesela 6 tane taskla eğitilen modelleri gördük. 6 tasklı model, 5 tasklı eğitilen model, 4 tane taskla eğitilen modelden daha başarılı sonuçlar veriyor.
+
+230
+00:51:52,916 --> 00:52:04,336
+Sonuç olarak baktığımızda ise aslında bu multi yapısı bizden fazla görev ağ yerine bizden fazla görme işlemini tek seferde ele alıyor ve bunu paylaşımlı bir şekilde öğreniyor.
+
+231
+00:52:04,336 --> 00:52:12,615
+Bu yüzden diğer çok görevli multi task yapılardan ve diğer single task yapılardan daha başarılı sonuçlar elde ediyor.
+
+232
+00:52:13,748 --> 00:52:41,608
+Ancak bunun da bazı kısıtlamaları var. CNN tabanlı modellerden daha başarılı olmasına rağmen sınırlı sayıda veri ile elde ettiği veri ile aynı performansı elde edemiyoruz. Veri sayısının çok olması gerekiyor. Ve CNN tabanlı multitask modeller gibi aslında bu da eşleştirilmiş label dediğimiz veri setleri gerekiyor bunun için. Yani unsupervised modellerde ne yazık ki çalışamıyoruz bu tarafta da.
+
+233
+00:52:41,748 --> 00:52:52,748
+Ben Kaynak Cama model çalıştığım makaleyi ekledim. Ve Vision Transformer ve bir diğer nesne algılamadaki...
+
+234
+00:52:54,612 --> 00:53:10,052
+Modelin ismini unuttum, çok özür dilerim. Detr dediğimiz Detection Transformer ile karşılaştırdığımızda elde ettiğimiz böyle ufak bir benchmark yapmıştım. O ikisini de kaynakçılarıma ekledim. Dinlediğiniz için teşekkür ederim. Benim sunumum bu kadardı.
+
+235
+00:53:14,771 --> 00:53:31,112
+Ben de aslında böyle hem multitask hem de işte bunu shared attention'a nasıl yaptığını başta anlarken çok zorlandım. Hatta ilk okuduğumda hiçbir şey anlamamıştım makaleyi. Dürüst olmak gerekirse. Biraz zor ve güzel bir konu benim de ilgimi çekti.
+
+236
+00:53:31,112 --> 00:53:40,112
+Ve değişik bir konu yani bu multitask tek bir modelle çözmeye çalışmak hakikaten zor bir iş.
+
+237
+00:53:41,844 --> 00:53:59,523
+Ve daha başarılı sonuçlar veriyor. O da çok etkili. Ama verinin çok olması şartıyla tabii. Her şey veriye dayanıyor. Evet, her şey veriye dayanıyor. Peki, teşekkür ediyoruz ve seni alkışlıyoruz sunumun için.
+
+238
+00:54:09,248 --> 00:54:29,307
+Sonra [öğrenci], sonra [öğrenci] sunum yapacak. Üç tane sunumu dinleyeceğiz. Tekrar ara vereceğiz. Ondan sonra [öğrenci], [öğrenci] ve [öğrenci] var. [öğrenci] ve [öğrenci] sunum yapmak istediler ama sanıyorum yetişmeyecek. Onları bir sonraki hafta dinleyeceğiz. Şimdi 10 dakika ara.
+
+239
+01:04:10,291 --> 01:04:13,311
+Bilgisayarın başında bakayım, elleri görelim.
+
+240
+01:04:18,420 --> 01:04:22,699
+Sekiz, dokuz kişi, on kişi parmak kaldırdı.
+
+241
+01:04:24,199 --> 01:04:29,360
+Dersde on sekiz kişi var. Geri kalan altı kişi nerede?
+
+242
+01:04:35,731 --> 01:04:38,132
+13 Peki.
+
+243
+01:04:40,052 --> 01:04:56,872
+Ama sunumların çok değerli olduğunu düşünüyorum. Yani bir makaleyi anlamak için çaba harcadığınız ve bunu diğer arkadaşlara anlatmak için buradasınız. Dolayısıyla diğerlerini de dinlemesi çok faydalı olacaktır diye düşünüyorum.
+
+244
+01:04:56,872 --> 01:05:08,052
+Evet [öğrenci] seni dinliyoruz. Kameranı açıyorsun. Evet az önce uyarmayı unuttum ben. Teşekkürler [öğrenci].
+
+245
+01:05:08,052 --> 01:05:11,192
+Ekran paylaşımı yapabilirsin.
+
+246
+01:05:14,931 --> 01:05:18,192
+Geldi sanırım. Evet, görebiliyoruz.
+
+247
+01:05:20,851 --> 01:05:21,751
+Buyurun.
+
+248
+01:05:22,091 --> 01:05:36,692
+Sunacağım çalışma metinden görsel üretmeyle alakalı. [kişisel bilgi] O yüzden bu yazıyı seçtim.
+
+249
+01:05:41,811 --> 01:06:08,192
+Bu metin açıklamalarından görüntü oluşturma hem bilgisayarlara görme ve energi alanında bu iki alanın boşluğu doldurduğu için ve bir görselin tanıtımında metin kullanma insanların ilk kullandığı ve en doğal betimleme yöntemi olduğu için bu topluluklarda bu alan artık biraz ilgi görmeye başladı.
+
+250
+01:06:08,851 --> 01:06:22,151
+Text-to-image oluşturulan görüntüyü verilen metinle hem bütünsel hem de yarar olarak anlamsal tutarlılık göstermesi açısından biraz zorlu bir alan. Mesela buna örnek olarak Bycrum.
+
+251
+01:06:22,804 --> 01:06:38,784
+Metnini örnek vermişler. Burada white crown deyince direkt akla beyaz bir taç geliyor ama ileride deneyde bir veri setinde görüleceği gibi aslında bir kuşun başının tepesine beyaz olduğunun anlamını içeriyor.
+
+252
+01:06:38,784 --> 01:06:44,864
+Bu gibi anlamsal tutarlılıkların diktat edilmesi gereken noktaları var.
+
+253
+01:06:45,940 --> 01:07:03,760
+Mevcut yöntemlerde genelde GAN adı verilen koşulu üretken çekişmeli ağlar kullanılıyor. Bu yöntemde cümle yerleştirme ile görüntüden bir görüntü başlatılıyor ve ardından yine lemeli olarak kelime yerleştirilmesi ile özelliklerin iyileştirilmesi.
+
+254
+01:07:11,311 --> 01:07:23,032
+Tanımla bütünsel olarak eşleşse de bölgesel olarak bakıldığında ya da bilgisayarın parçaları olarak bakıldığında ya tanınmıyor ya da tutarlı olmadığı sonuçlarına varılıyor.
+
+255
+01:07:24,884 --> 01:07:48,884
+Bu çalışmada da metin özelliklerini ve görüntü özelliklerini etkili bir şekilde birleştirmek için metne bağlı, anlamsal uyumlu dönüşümü öğrenen ve dönüşümü uzamsal olarak yönlendirmek için mevcut metin görüntü kaynaştırma sürecine bağlı zayıf denetimli bir şekilde anlamsal bir maske öğrenen bir semantik uzamsal farkındalık bulunuyor.
+
+256
+01:07:48,884 --> 01:07:52,884
+Daha sonradan bu önerilen model...
+
+257
+01:07:52,884 --> 01:07:59,083
+Koko ve TAP kuş verileri setleri kullanılarak deneyler yapılmıştır üstünde.
+
+258
+01:07:59,083 --> 01:08:09,364
+Ve sonrasında başka mevcut son teknoloji başka GNN modelleri ile nicel ve niter karşılaştırmaları yapılıyor.
+
+259
+01:08:10,483 --> 01:08:21,363
+Demin bahsettiğim gibi en yeni yöntemlerde cümle yerleştirme ile gürültüden bir görüntü oluşturuyor. Sonrasında kelime yerleştirme ile.
+
+260
+01:08:22,832 --> 01:08:33,731
+Görüntü işleniyor. Bu yüksek çözünürlüklü görüntülerin sentezlenmesine etkili ancak hem yüksek hesaplamaya hem de istikrarsız eğitim süreçlerine yol açıyor.
+
+261
+01:08:34,652 --> 01:08:39,592
+Ayrıca önceki oluşturucu tarafından oluşturulan görüntünün kalitesi son çıktığı belirtiyor.
+
+262
+01:08:39,592 --> 01:08:47,672
+Yani eğer erken çıktılar kalitesi düşükse sonraki oluşturucular bu kaliteyi yükseltemiyor.
+
+263
+01:08:48,243 --> 01:08:58,623
+Bu sorununu gidermek için de bir üreti daylıca çifti 2020 yılındaki bir çalışmada tanıtılıyor. Bu çalışma da ona uygun şekilde ilerlemiş.
+
+264
+01:08:59,283 --> 01:09:07,844
+Bu çalışmada önerilen Method Semantic Special Aware Generative Adversarial Network.
+
+265
+01:09:08,144 --> 01:09:17,684
+Bu tek aşamalı bir çerçeve olarak öneriliyor. Çok aşamalılara göre daha az hesaplama gerektiriyor ve daha verimli, istikrarlı bir şekilde eğitilebiliyor.
+
+266
+01:09:18,484 --> 01:09:26,283
+Metosantez işlemi sırasında sadece cümle yerleştirilme kullanılıyor. Bu sayede hem daha basit hem de daha düşük hesaplama maliyetine sahip oluyor.
+
+267
+01:09:26,283 --> 01:09:36,144
+Piksel seviyesinde öğrenebilen metne uyarlanabilir, akönü dönüşümlere rehberlik edilecek bir semantik maskeyi tahmin ederek metin ve görüntü özelliklerini...
+
+268
+01:09:36,144 --> 01:09:41,104
+En etkili ve derin bir şekilde birleştirmek için yeni bir SSI bloğu tanıtılmıştı.
+
+269
+01:09:42,744 --> 01:09:48,144
+Bu blok diğer Text-to-Image veri kümelerine uygulanma özelliğine de sahipti.
+
+270
+01:09:49,144 --> 01:09:53,123
+Bu şekil bir de metodun işlenişi aslında gösteriliyor.
+
+271
+01:09:54,064 --> 01:10:00,884
+Girdi olarak bir metin açıklaması, input text ve normal dağılmış bir virültü vektörü.
+
+272
+01:10:01,395 --> 01:10:25,115
+Çıkta olarak da bir RGB görüntü elde ediliyor. Generator denilen alanda bir metin temsillerini öğrenmek için bir Text Enkoder var. Daha sonra metnin görüntü birleştirmesini hem derinleştirmek hem de çözünürlüğü iyileştirmek için 7 adet bir SSA bloğu kullanılmıştır.
+
+273
+01:10:25,811 --> 01:10:36,252
+Sonrasında oluşturulan görüntüyü de verilen metinle anlamsa olarak tutarlı mı, buna bakmak için bir diskriminatör kullanılıyor.
+
+274
+01:10:37,692 --> 01:10:52,072
+Bu çalışmada kullanılan metin kodları da çift yönlü bir LSTM'dir ve derin dikkatli çok mutlu benzerlik modeli kaybını en azından indirerek gerçek görüntü metin çiftleri kullanılmalı olarak önceden eğitilmiştir.
+
+275
+01:10:52,916 --> 01:11:02,515
+Şimdi şekildeki de de SSI bloğunun çalışma tensibi gösteriliyor. Bu SSI-CI'nin çekirdeği bu bloğla.
+
+276
+01:11:04,096 --> 01:11:18,176
+Giriş olarak son SSI bloğundan kodlanmış metin özellik vektörü ve görüntü özellik haritalarını alıyor ve metin özellikleriyle daha kaynaşmış olan görüntü özellik haritalarını çıkartıyor çift olarak.
+
+277
+01:11:21,108 --> 01:11:47,007
+Zayıf dönemizli semantik maske tahmincisi kullanılıyor. Burada mask predektör denilen yerde. Yukarı örneklenmiş görüntü özelliği haritalarını girdi olarak alıyor ve çıktı olarak bir semantik maske haritasını tahmin ediyor. Çıkan her değer yükseklik ve genişlik konumunda dönüşümün ne kadar çalıştırılacağına karar veriyor.
+
+278
+01:11:48,020 --> 01:12:00,280
+Hangi bölümlerin hala metin bilgileriyle güçlendirilmesi gerektiğini sezgisel olarak gösterir. Böylece rafine görüntü özellik haritaları anlamsal olarak belirlenmedine daha tutarlı oluyor.
+
+279
+01:12:00,420 --> 01:12:12,220
+Belirli bir kayıp fonksiyonu olmadan tüm aile birlikte eğitiliyor ve tek denetimcisi diskriminatör denilen ayrımcı tarafından yapıldığı için zayıf denetimli bir öğrenme süreci olarak geçiyor.
+
+280
+01:12:12,756 --> 01:12:24,775
+Bu diskriminatör de oluşturulan görüntüden çıkan özellikleri ve iki konvolüsyon katmanı aracılığıyla çekişmeli kalbi hesaplama için metin vektörünü birleştiriyor.
+
+281
+01:12:24,775 --> 01:12:34,496
+Eşleşme sorucunda jeneratöre temaltik tutarlılığı hakkında daha gerçekçi görüntüleri sentezlemesi için yönlendirme veriyor.
+
+282
+01:12:36,787 --> 01:12:43,287
+7 tane son teknoloji GAN metotları ile kıyaslar yapılıyor sonuçlar sanırım da.
+
+283
+01:12:43,604 --> 01:13:09,404
+İki tane veri seti var. KAP veri setinde 150 tür içeren 8.855 eğitim görüntüsü ve 50 tür içeren 2.900 küsur test görüntüsü bulunuyor. KOKO veri seti de KAP'a göre daha karmaşık görsel sahneler içiriyor. Böylece hani text to image oluşturma görevleri için daha zorlu bir veri seti. 80.000 eğitim ve 40.000 test görüntüsü içeriyor.
+
+284
+01:13:10,228 --> 01:13:18,228
+Değerlendirme mektikleri olarak da başlangıç puanını, fresh head başlangıç mesafesini ve art position'ı ölçmüşler.
+
+285
+01:13:19,347 --> 01:13:27,188
+Metin açıklamalarından rastgele seçtikleri her modelden 30K görüntü oluşturulmuştur.
+
+286
+01:13:27,188 --> 01:13:31,188
+Bir tek eski çalışmalardan da görüldüğü üzere.
+
+287
+01:13:31,988 --> 01:13:41,608
+FocoVeri Set'inde IS metreyinin sonuçları çalışmadığı için o puanı FocoVeri Set'inde göstermemişler.
+
+288
+01:13:41,608 --> 01:13:46,828
+Burada nicel sonuçları tablo olarak veriliyor. En iyi sonuçlar tablo şeklinde belirtilmiş.
+
+289
+01:13:46,828 --> 01:13:59,108
+Görüldüğü üzere önerilen metot, çoğu metoddan daha iyi sonuçlar veriyor. Ya en iyi sonucu vermiş ya da ikinci olarak en iyi vermiş.
+
+290
+01:13:59,604 --> 01:14:10,224
+Hatta genelde en iyi sonuç verenden de mesela IS puanı olarak iyileştirme olduğu görülmüş CAP veri seti üzerindeki çalışmada.
+
+291
+01:14:10,224 --> 01:14:21,363
+Bir de nitel sonuçlar da karşılaştırılmış. Burada CAP veri seti için generated edilen görsellerine bakıldığında
+
+292
+01:14:22,003 --> 01:14:35,363
+SSA-CY'nin metin açıklamalarıyla semantik olarak tutarlı, daha canlı ayrıntılı, daha net arka planlı, daha yüksek metin görüntü tutarlılığına sahip olduğu görülmüştü.
+
+293
+01:14:35,363 --> 01:14:49,304
+Mesela bazı metotlar DF-CY'ne bakıldığında mesela ilk metinde turuncu gazalı, diri tepeli ve göğüslü küçük bir kuş.
+
+294
+01:14:49,971 --> 01:14:59,971
+generate edilmesi istenilmiş ancak bakıldığında üçüncü satırın ilk resminde kuşun başının turuncu renkte olduğu görülüyor veya
+
+295
+01:14:59,971 --> 01:15:11,403
+burada kırmızı renkli gözlü bir kuş generate edilmesi istenilirken gene Dfgy'nin öyle bir sonuç vermediği görülüyor.
+
+296
+01:15:11,988 --> 01:15:33,888
+Koko Veri Seti içine bakıldığında daha karmaşık görseller sonuç, daha karmaşık görseller hakkında bakıldığında da SSG yayın birden fazla nesne ve karşılık gelen arka plan ile karmaşık bir görüntü oluşturabildiği görülüyor.
+
+297
+01:15:37,555 --> 01:16:00,475
+Kelimelerle hem yerel hem de bütünsel anlamda daha tutarlı sonuçlar vermiştir. Diğerleriyle karşılaştırıldığında DMG'ye bakarsak eğer, bir fil sürüsünün nehirden geçerkenki görselinin üretilmesi istenilmiş. Ancak bu ikinci satırın dördüncü sütununa bakılma fil sürüsü pek belli değil.
+
+298
+01:16:06,195 --> 01:16:12,755
+Önerilen metod da hem arka planın hem de önerilen nesnenin daha iyi sonuçlar verdiği görülmüş.
+
+299
+01:16:14,515 --> 01:16:25,536
+Sonuç olarak bu çalışmada Text Duyum İç üretimi için yeni bir semantik uzamsal farkında GAN çerçevesi önerilmiştir.
+
+300
+01:16:25,920 --> 01:16:38,380
+Uçlanınca eğitilmiş ve üretici ayıtıcı çiftine sahip bir çerçevede çekirdek modülü de olarak oluşturulan geçerli görüntü özelliklerine dayalı anlamsal maskeyi tahmin ederek
+
+301
+01:16:38,735 --> 01:16:56,796
+Kodlanmış metin vektöründen afin parametrelerini öğrenen bir semantik uzamsal farkındalık bloğu oluşturulmuştur. SSA bloğu da görüntü oluşturma süreci aracılığıyla metin görüntü kaynaşmasını derinleştirir ve metin görüntü tutarlılığını garanti eder.
+
+302
+01:17:05,395 --> 01:17:10,355
+Son teknoloji yaklaşımlara göre daha gelişmeler gösterildiği anlaşılmıştı.
+
+303
+01:17:11,235 --> 01:17:12,655
+Benim sunumum bu kadar.
+
+304
+01:17:20,979 --> 01:17:38,539
+Bir resim 1000 kelimeye bedeldir diye. Yani bir resmi anlatmak öyle kolay bir şey değil. O yüzden bunun verisetin hazırlanması da, başarının ölçülmesi de ayrıca zor diye düşünüyorum.
+
+305
+01:17:39,252 --> 01:17:46,452
+Teşekkür ediyoruz [öğrenci]. Doğal dil işlemeye ilgim var dedin. O yüzden bu konuyu seçtim dedin. Değil mi?
+
+306
+01:17:46,972 --> 01:17:47,172
+Evet.
+
+307
+01:17:47,172 --> 01:17:55,252
+Peki. Sunumun için seni alkışlıyoruz. Tebrikler. Şimdi sırada kim var? [öğrenci].
+
+308
+01:17:57,632 --> 01:17:59,012
+Evet hocam buradayım.
+
+309
+01:17:59,672 --> 01:18:02,932
+Tamam. Ekran paylaşma yapabilirsin [öğrenci].
+
+310
+01:18:07,188 --> 01:18:09,568
+Kameramı daha tamam açtım şimdi.
+
+311
+01:18:10,028 --> 01:18:20,788
+Tamam. Süremiz 15 dakika. Hani ben dersin başında söylemedim ama genelde uyuyorsunuz gördüğüm kadarıyla. Evet. Sizi dinliyoruz [öğrenci].
+
+312
+01:18:25,908 --> 01:18:42,748
+Ben bugün Multilabel Iterate Learning for Image Classification with Label Ambiguity diye bir makara seçmiştim. Onu sunacağım size. İçeriğimiz bu şekilde olacak. Giriş, ilgili çalışmalar, yöntem, deneyler ve sonuç şeklinde.
+
+313
+01:18:43,699 --> 01:18:51,680
+Önceden eğitilmiş büyük ölçekli modellerden öğrenmeyi aktarmak birçok bilgisayarla görme görevi için gerekli hale gelmiştir.
+
+314
+01:18:51,680 --> 01:18:55,680
+Ve son çalışmalarda ImageNet gibi veri kümelerinin...
+
+315
+01:18:56,239 --> 01:19:06,000
+Zayıf bir şekilde etiketlendiğini göstermiştir. Bunun sebebi de birden çok nesne içeren görüntülerin tek bir etiketle açıklanmasından dolayıdır.
+
+316
+01:19:06,000 --> 01:19:18,819
+Ve bu belirsizlik modelleri tek bir tahmine doğru yönlendirir. Ve bu da verilerle birlikte ortaya çıkma eğiliminde olan sınıfların bastırılmasına neden olabilir.
+
+317
+01:19:19,891 --> 01:19:37,871
+Bu çalışmada yinelemeli öğrenme çerçevesi kullanılarak çok etiketli yinelemeli öğrenme yani MIL diye kısaltacağız sunumda. MIL önerilmiştir. Yani tek etiketli eğitim verilerinden çok etiketli temsilleri tahmin etmeyi öğrenmek için bu yöntem öneriliyor.
+
+318
+01:19:38,707 --> 01:19:59,007
+Bu yöntem iki farklı öğrenme sunularak yapılmakta. İlk olarak softmax, sabit birçok etiketli binary tahminle değiştirilmiştir. İkinci olarak da bu ikili tahminler her nesil arasında sınırlı bir eğitimin elemesiyle iletilmektedir.
+
+319
+01:20:00,180 --> 01:20:10,539
+Bu çalışmayla zayıf tekli etiketlerden gelen verilerin zengin çoklu etiket temsilini oluşturan MIL dediğimiz yöntem önerilmektedir.
+
+320
+01:20:10,619 --> 01:20:15,280
+Görüntü sınıflandırılması için çok etiketli, inerlemeli bir öğrenme algoritmasıdır.
+
+321
+01:20:15,280 --> 01:20:25,920
+MIL ile eğitilen modellerin gürültüye karşı daha dayanıklı olduğu ve aynı zamanda ImageNet, ImageNet, Neal, Real, Web Vision.
+
+322
+01:20:26,416 --> 01:20:33,435
+Ve denetimli öğrenme gibi çoklu kurulumlarda daha iyi performans gösteriliyor bu çalışmayla.
+
+323
+01:20:35,115 --> 01:20:43,816
+İlgili çalışmalara da bakacak olursak aslında yinelemeli öğrenme hipotezi ilk olarak kör bir tarafından önerilmiştir.
+
+324
+01:20:44,212 --> 01:20:59,072
+Daha sonra birçok nesne içeren görüntülerin tek bir etiketli açıklanması sorununa karşı da Lucas Bayer ve Olivier Hinaf, onların önceki çalışmaları ImageNet doğrulama setini yeniden etiketledi.
+
+325
+01:20:59,072 --> 01:21:10,992
+Ve bir görüntünün atanabileceği birden çok etikete hesaba katan Real adı verilen yeni bir doğruluk önerdi. Bu deneylilerin sonuçlarını da zaten inceleyeceğiz.
+
+326
+01:21:11,775 --> 01:21:32,815
+Ama yeni, yani veri kümeleri büyüdükçe veri kümelerini yeniden etiketlemenin maliyeti de giderek arttı. Bu nedenle tek etiketli veri kümelerinden çok etiketli ek açıklamaları oluşturmak için otomatik ve yinelemeli bir süreç olan Mild adında bir yöntem bulunuyor ve bu sunuluyor.
+
+327
+01:21:33,652 --> 01:21:43,352
+Mild birbirini izleyen ve etiketleri birden fazla nesil boyunca ileten öğretmen ve öğrenci sinir ağları nesilleriyle bu süreci taklit etmektedir.
+
+328
+01:21:44,652 --> 01:21:54,292
+Buradaki öğrenme prosedürü iki aşamadan oluşmaktadır. İlk aşamada bir öğretmen modeli tahminlerini iyileştirmek için tek etiketli verilerle etkileşime girer.
+
+329
+01:21:55,123 --> 01:22:12,884
+İki etkileşim, ikili sınıflandırma modelinin fazla uyumasını önlemek için birkaç yinelemeyle sınırlandırılıyor. İkinci aşamada da öğretmenin çok etiketli tahminleri üzerinde farklı bir model olan öğrenciyi eğitmek için edinilen bilgiler kullanılır.
+
+330
+01:22:12,884 --> 01:22:21,144
+Bu iki aşamalı öğrenme birçok kez tekrarlandığı için daha sonraki iterasyonlar için modelin daha iyi başlatılmasını da sağlar.
+
+331
+01:22:21,908 --> 01:22:22,908
+Ön...
+
+332
+01:22:23,315 --> 01:22:32,895
+Burada da şu genel olarak yöntemden bahsedeceğim. Spesifik olarak bir öğretmen ve öğrenci parametreleri alınıyor burada.
+
+333
+01:22:33,536 --> 01:22:38,775
+Öğretmenin parametreleri yinelemede öğrenci parametreleri kullanılarak başlatılıyor.
+
+334
+01:22:38,775 --> 01:22:48,415
+Hem öğretmen hem de öğrenci aynı D veri kümesi üzerinde eğitiliyor. Öğretmen P olasılığını maksimize edecek şekilde eğitilir.
+
+335
+01:22:51,315 --> 01:23:18,115
+Bu formülde gördüğümüz C sınıf sayısı, B'de sample sayısıdır. Öğrenci eğitimi sırasında öğretmenin çıkış sigmoid aktivasyonları eşiklenir ve aksi belirtilmedikçe eşik 0.25 olarak verilmiş.
+
+336
+01:23:19,060 --> 01:23:40,539
+Burada da Miley'ın genel bir algoritmasını, yinelemeli algoritmasını koymuşlar. Buna da bir yer vermek istedim. Makaledeydi direkt bu. Yani orijinal etiketlerle eğitilmiş bir öğretmen ağı ve öğretmen tarafından üretilen etiketler var. Bunlarla eğitilmiş bir öğrenci ağı var. İkisi yinelemeli olarak iyileştiriliyor.
+
+337
+01:23:42,131 --> 01:23:49,591
+Yinelemelerin her biri model geliştirme ve model taklidi olmak üzere iki sonlu döngüden oluşuyor.
+
+338
+01:23:51,331 --> 01:23:53,911
+Burada da yine bunu da makaleden aldım.
+
+339
+01:23:55,171 --> 01:24:00,311
+Bir model gelecek nesil için çok etiketli ikili tahminler üretiyor.
+
+340
+01:24:00,311 --> 01:24:06,451
+Ve aslında sadece evle zayıf bir şekilde etiketlenmiş bir görüntü var.
+
+341
+01:24:06,591 --> 01:24:09,611
+Bunu ev ve araba olarak elde ediyor.
+
+342
+01:24:10,676 --> 01:24:36,496
+Yani öncelikle ImageNet etiketlerine uymaması için birkaç yenileme için. Burada stigmoid fonksiyonu var. Stigmoid çıktı aktivasyonları olan bir öğretmen ağı öncelikle eğitiliyor. Daha sonra öğretmenden yeni bir öğrenci ağı oluşturuluyor. Ve öğrenci, öğretmen tarafından oluşturulan sözlü etiketlerle eğitiliyor. Son olarak öğrenci öğretmen oluyor ve işlem tekrarlanıyor.
+
+343
+01:24:37,684 --> 01:24:45,144
+Burada da bir deney sonuçlarında göreceğiniz için sigmoid fonksiyonunu böyle bir genel olarak koymuştum.
+
+344
+01:24:45,704 --> 01:24:51,764
+Sigmoid şöyle diyebilirim kısaca, yalnızca iki sınıf olan ikili sınıflandırma yöntemleri için kullanılıyor.
+
+345
+01:24:51,904 --> 01:24:58,964
+Softmax ise çok sınıflı problemler için geçerli ve aslında softmax işlevi sigmoidin bir uzantısı.
+
+346
+01:24:59,796 --> 01:25:13,636
+Burada da ImageNet veri seti kullanıldığı için çalışmada ona bir yer vermek istedim. ImageNet zaten diğer sunumlarda da gördük. Sıkça kullanılan bir veri seti. Aynı zamanda Web Vision da aynı şekilde.
+
+347
+01:25:14,515 --> 01:25:40,155
+Deneylerden öncesinde bir başlamadan önce Real F1 hesabını buraya koymuşum. Bunu da önceki derslerimizden de biliyoruz. Deneyler kısmına gelecek olursam, bunlar Miley ile etiketlenmiş görüntüler. Real yazanlar çalışmanın başında anlattığım bu BR ve diğerleri tarafından ImageNet'i yeniden etiketlemişlerdi. Onların etiketleri sonucu.
+
+348
+01:25:42,515 --> 01:25:54,735
+Bizim makalede inceleyeceğimiz sonuç. Mild'i buradaki ImageNet örnekleri üzerinde çalıştırmışlar. Ve tahmin edilen etiketler bu şekilde ortaya çıkmış.
+
+349
+01:25:55,075 --> 01:26:09,735
+İlginç bir şekilde Mild, insanlar tarafından açıklama etkilenmiş etiketlerin çoğunu, yani Real. Hatta bazen de etiketlenmemiş. Alternatifleri bile buluyor. Mesela ilk örneğe bakacak olursak, Real'da...
+
+350
+01:26:09,855 --> 01:26:24,215
+Laptop ve balta etiketlenmiş ama mesela Mile burada balta, laptop bir de notebook bulmuş. İlk real kısmında notebook diye bir etiket yok ama Mile böyle bir etiket de tahmin edebilmiş.
+
+351
+01:26:24,215 --> 01:26:33,815
+Genel olarak deneylere baktığımızda Mile'ın birden çok etiket bulduğunu ve çoğu şeyi tespit edebildiğini görüyoruz.
+
+352
+01:26:34,131 --> 01:26:43,931
+Bu tahminlerde Mild'in tahminlerinin tek etiketli ek açıklamalardan, görüntülerin çok etiketli açıklamalarını oluşturabildiğini gösteriyor bize.
+
+353
+01:26:45,051 --> 01:26:59,531
+Burada da başka bir deney var. Burada ResNet 50 ve ResNet 18 üzerindeki sonuçlara bakarsak, Accuracy ve Real F1 için en iyi sonuçlar yine Mild'a elde edilmiştir.
+
+354
+01:27:00,212 --> 01:27:17,692
+Buradaki ilk satır modelleri eğitmek için kullanılan ImageNet verilerinin oranını gösterir. Ve tüm modeller 100 dönem için eğitilmiştir. Sadece burada aşağıdaki sonuca bakarsak label coverage anlamında sigmoidle başa baş olduğunu söyleyebiliriz.
+
+355
+01:27:17,692 --> 01:27:28,212
+Aslında bu makalede benim anlayamadığım ve kafamı karıştıran şeylerden biri bu oldu. Zaten makalenin amacı etiketlemek olduğu için aslında...
+
+356
+01:27:28,212 --> 01:27:32,472
+Sigma It'in de bu konuda başarılı sonuçlar verdiğini söyleyebiliriz.
+
+357
+01:27:32,832 --> 01:27:38,572
+Zaten makalenin eleştirilerini de incelediğimde genelde bu açıdan birazcık eleştiri almış.
+
+358
+01:27:38,731 --> 01:27:41,892
+Yani ilginç bulunmakla birlikte çok fazla yenilikçi bulunmamış.
+
+359
+01:27:42,992 --> 01:27:47,312
+Burada da başka bir deney var. Web Vision sonuçları var.
+
+360
+01:27:49,408 --> 01:27:56,208
+1000 üzerinde eğitilir. Yani burada öyle eğitilmiş ve hem Web Vision hem de ImageNet üzerinde doğrulanmış.
+
+361
+01:27:56,979 --> 01:28:08,159
+Burada ResNet 50 ve ResNet 50'de mimarisi üzerindeki test sonuçlarına bakacak olursak hem WebVision hem de ImageNet için en iyi sonuçlar yine Mile ile elde edilmiştir.
+
+362
+01:28:08,679 --> 01:28:16,859
+Sadece buradaki bir tane metotta, ImageNet'teki bu metotta bunun daha iyi bir sonuç verdiğini görüyoruz.
+
+363
+01:28:16,859 --> 01:28:23,699
+Onun dışında Mile yüksek sonuçlar vermiş. Buradaki iki sonuca da baktığımızda zaten çok küçük bir fark var aslında.
+
+364
+01:28:24,979 --> 01:28:28,139
+Mile daha iyi sonuçlar vermiş olarak gözüküyor.
+
+365
+01:28:28,919 --> 01:28:34,379
+Burada da yine farklı yöntemlerle Mile'ın ekürüsü ve real F1 sonuçları karşılaştırılmış.
+
+366
+01:28:35,739 --> 01:28:39,039
+En iyi sonuçlar yine Mile ile elde edilmiş.
+
+367
+01:28:39,956 --> 01:28:51,796
+Burada da farklı bir veri seti üzerindeki sonuçlar var. Burada birazcık da şeyden dolayı bunu koydum kısa ama eşik değeri 0.25 azınır söylenmediği sürece denilmişti.
+
+368
+01:28:51,796 --> 01:29:01,796
+Burada 0.5 ve 0.25'in kıyasını görmek için aslında koymak istedim. 0.25'te daha yüksek bir oran elde edebilmişiz.
+
+369
+01:29:07,764 --> 01:29:13,404
+Sistematik faydalar sergilediğini göstermiştir. Yani accuracy ve real F1 üzerinde.
+
+370
+01:29:14,384 --> 01:29:25,503
+Sonuçlara da bakacak olursak, özet olarak MILE, çok etiketli temsiller oluşturmak için tek etiket açıklamalarından yararlanan yinelemeli bir algoritmadır.
+
+371
+01:29:25,503 --> 01:29:32,503
+Ve genel olarak yinelemeli öğrenmenin zayıf şekilde etiketlenmiş verilerle eğitilen modellerin performansını...
+
+372
+01:29:33,039 --> 01:29:44,400
+İyileştirdiğini ve etiket belirsizliği, aynı zamanda da gürültüyle ilgili sorunların üstesinden gelmelerine yardımcı olduğu bulundu çalışmayla.
+
+373
+01:29:45,860 --> 01:29:54,380
+Tek etiketlerden bir görüntünün çok etiketli bir tanımını oluşturmak için bir öğretmen ve öğrenci ağının eğitimini değiştirir.
+
+374
+01:29:54,380 --> 01:30:00,000
+Mail ayrıca öğretmenin çıktılarından soyu da etiketler üretmek için kullanılan tira.
+
+375
+01:30:00,000 --> 01:30:01,340
+Şört değerine bağlıdır.
+
+376
+01:30:01,747 --> 01:30:09,007
+Hesaplama maliyetiyle ilgili olarak da Mayl'ın yine daha iyi sonuçlar verdiğini makalede söylemişler.
+
+377
+01:30:09,148 --> 01:30:14,188
+Ama bununla ilgili herhangi bir karşılaştırma bir çalışma yoktu makalenin içinde.
+
+378
+01:30:15,327 --> 01:30:19,427
+Gelecekteki çalışmalar için de şöyle bir yorumlar olmuş.
+
+379
+01:30:19,427 --> 01:30:29,747
+Gelecekte çalışmaların nesne algılama, segmentasyon ve çoklu örnek öğrenme gibi aynı varsayımlara dayanan diğer görevlere uygulanabileceğini düşünüyorum.
+
+380
+01:30:29,747 --> 01:30:51,908
+Ve Mile gibi yaklaşımların bunları geliştirmek için web üzerinden denetlenen büyük miktarda veriden yararlanma kapısını açacağı umulmaktadır aynı zamanda. Bunlar da makaleyi anlamak için kullandığım kaynaklar genellikle. Benim sunumum bu kadardı.
+
+381
+01:30:57,332 --> 01:31:25,132
+Bence bu da ilginç bir konu. Çünkü belirttiğin gibi ImageNet kütüphanesinde var olan resimlerde birden fazla nesne var ama ana nesne olarak bir tanesi sadece etiketlenmiş. Doğru. O açıdan böyle bir zenginleştirilmiş bir veri seti gibi olmuş Miles dediğin yöntem ve veri seti.
+
+382
+01:31:25,332 --> 01:31:28,132
+Neden bu konuyu seçmiştin?
+
+383
+01:31:28,463 --> 01:31:56,463
+Yani hocam benim bu konularda henüz bir deneyimim yok. Çok fazla. O yüzden şey, derste gördüğünüz birkaç terimi aratarak hareket ettim ben. Karşıma da çıkan makyajlar arasında en ilgimi çeken bu oldu. Çünkü yeni bir metot keşfedilmiş. Hani birden çok deneyle de nesnel sonuçları elde edilmiş. O yüzden bunu seçmek istedim. Yani aslında şey, eleştirilerde şey de vardı, deneyleri yeterli bulmamışlar. Ama ben baktığım makyajlar arasında fazla deney olduğu için hani kendim de çıkarım yapıp yorum yapabilirim diye bunu seçmek istedim.
+
+384
+01:31:56,463 --> 01:32:01,783
+Evet, güzel. Teşekkür ediyoruz [öğrenci] ve seni alkışlıyoruz.
+
+385
+01:32:02,043 --> 01:32:02,403
+Aynen.
+
+386
+01:32:03,063 --> 01:32:07,443
+Evet. Şimdi sırada kim var? [öğrenci].
+
+387
+01:32:12,435 --> 01:32:15,256
+Evet, sizi dinliyoruz.
+
+388
+01:32:32,916 --> 01:32:34,176
+[öğrenci] ses gelmiyor.
+
+389
+01:32:38,131 --> 01:32:40,731
+Ekranını görebiliyoruz ama sesini alamıyoruz.
+
+390
+01:32:47,475 --> 01:32:48,415
+Alayok.
+
+391
+01:33:00,051 --> 01:33:01,471
+Mikrofonunu...
+
+392
+01:33:01,471 --> 01:33:02,611
+Şu an duyabiliyor musunuz hocam?
+
+393
+01:33:02,951 --> 01:33:04,731
+Tamam, şimdi geldi. Evet.
+
+394
+01:33:05,471 --> 01:33:06,831
+Kulaklığa geçeceğim o zaman hocam.
+
+395
+01:33:07,171 --> 01:33:08,471
+Tamam, seni dinliyoruz.
+
+396
+01:33:09,251 --> 01:33:11,791
+Tabii bir saniye tekrar paylaşım yapayım.
+
+397
+01:33:18,931 --> 01:33:20,372
+Tamamen bir sorun yoktur umarım.
+
+398
+01:33:21,091 --> 01:33:22,532
+Evet, gayet güzel görüyoruz.
+
+399
+01:33:23,791 --> 01:33:31,771
+Herkese merhabalar. Ben [öğrenci]. Bugün AdaFace Quality Adaptive Margin for Face Recognition bildirisinden bahsedeceğim.
+
+400
+01:33:32,891 --> 01:33:37,912
+[kişisel bilgi]
+
+401
+01:33:38,391 --> 01:33:45,931
+Bu bildiri de biyometrik sistemlere yakın bir alanda olduğu için benim ilgimi çekti ve bunun üzerine konuşmak istedim.
+
+402
+01:33:47,188 --> 01:34:08,868
+Burada yazarları görüyoruz. Sorumlu yazar Minchul Kim olarak karşımıza çıkıyor. Onun yanında Anil K. Jane var. Xiaoming Liu gibi 3 tane yazardan oluşuyor. En son baktığımda da çalışmanın 52 tane atıfı vardı. Aslında bu çalışma 2021 CVPR'da sunulan ArcFace çalışmasının biraz ilerletilmiş hali olarak tanımlanmış.
+
+403
+01:34:09,684 --> 01:34:15,064
+İçeriğine baktığımızda da bu konuda çeşitli yorumlar olduğunda yazarlardan görmekteyiz.
+
+404
+01:34:16,083 --> 01:34:22,784
+Sunumun içeriğine bakacaksak, ilk olarak ise bir giriş yapacağım. Daha sonra yüz tanıma sistemlerinden bahsetmek istiyorum.
+
+405
+01:34:22,923 --> 01:34:28,064
+Çünkü bu çalışmayı anlayabilmek için yüz tanıma sistemleri hakkında belirli bir bilgimizin olması gerekiyor.
+
+406
+01:34:28,824 --> 01:34:30,844
+Daha sonra görüntü kalitesinden bahsedeceğim.
+
+407
+01:34:31,604 --> 01:34:45,084
+Sonra bu görüntü kalitesini etkileyen faktörlerden, kayıp fonksiyonlarından, marş zamanlı kayıp fonksiyonları ve adaptif kayıp fonksiyonlar üzerine kısaca konuşmaya çalışacağım. Daha sonra da çalışmanın sonuçlarından bahsedeceğim.
+
+408
+01:34:46,612 --> 01:35:00,792
+Burada özellikle görüntü işleme çalışmalarında olduğu gibi yüz tanıma üzerine yapılan çalışmalarda da derin öğrenme metotlarının ve büyük verilerin işlenebileceği hesaplama gücünün gelişmesiyle beraber başarımın çok ciddi seviyede arttığını görmekteyiz.
+
+409
+01:35:01,731 --> 01:35:08,692
+Burada özellikle öne çıkan bir ağ modeli var. Bu da Convolutional Neural Network yani CNN ağları buradan çıkıyor.
+
+410
+01:35:09,492 --> 01:35:23,252
+Literatürde yapılan çalışmalara baktığımızda da CNN ağlarının kullanımında çok ciddi başarımların sağlandığını görüyoruz. Yine CNN ağlarından esinlenerek yapılan algoritmaların da çok ciddi başarımlar sağladığını görmekteyiz.
+
+411
+01:35:24,351 --> 01:35:34,992
+Buradaki algoritma da aslında dediğim gibi CVPR 2021'de sunulan ArcPace algoritmasının biraz daha geliştirilmiş bir hali. Buradaki asıl hedef şu olarak gösterilmiş.
+
+412
+01:35:35,796 --> 01:36:00,976
+Bu, literatürde kullanılan veri setleri genellikle yüksek görüntü kalitesine sahip veri setleri. Fakat gerçek hayat uygulamalarında her zaman yüksek görüntü kalitesine sahip veri setlerine sahip olamıyoruz. Veya gelen görüntülerin yüksek kalitede olması her zaman mümkün olmuyor. Burada tabii ki düşük görüntü kalitesine sahip veri setlerinde de başarımın öneminden bahsediliyor. Bu çalışmada bunun üzerine yapılan bir vurgudu.
+
+413
+01:36:01,939 --> 01:36:18,399
+Burada yapılan tabii ki asıl katkı adaptif bir marş tabanlı kayıp fonksiyonu tanımlanmış. Bu kayıp fonksiyonu içerisinde de görüntü kalitesi bir parametre olarak atanıyor. Bu parametreyle beraber de düşük kaliteli görüntü setlerinde daha yüksek başarımlar hedefleniyor.
+
+414
+01:36:20,404 --> 01:36:34,884
+İlk olarak bir yüz tanıma sistemlerine bakalım. Yüz tanıma sistemlerinde hedef, yüzdeki ayırt edici noktalar üzerinde özellik çıkarımları yapmak ve bu çıkarımlar üzerinden de başarılı bir şekilde eşleşme veya eşleşme yok çıkılarını sağlamak.
+
+415
+01:36:35,444 --> 01:36:43,844
+Aslında temel olarak baktığımızda bir binary sınıflandırma algoritması olarak görebiliriz ya da bir çalışması olarak görebiliriz biz yüz tanıma sistemlerini.
+
+416
+01:36:45,076 --> 01:36:56,456
+Burada sonuçta sizin elde edebileceğiniz iki tane çıktım olduğunu görüyoruz. Bunlar ya eşleşme var ya da eşleşme yok çıktıkları. Burada ekrandaki şekilde de görebiliyor olmanız lazım.
+
+417
+01:36:57,011 --> 01:37:18,871
+Burada landmarkları gösteriyoruz görüntü üzerinde. Yüz tanıma çalışmalarında öz niteliklerin çıkarımında landmark noktalarını, yani öz niteliklerin ayırt edici olduğu noktaların büyük bir önemini görmekteyiz. Literatüre baktığımızda da en çok kullanılan landmark noktası sayısı 68 olarak karşımıza çıkıyor. En yüksek başarımda yine bu noktalarla karşılaştırılıyor.
+
+418
+01:37:20,307 --> 01:37:44,307
+Yüz tanıma sistemlerine baktığımızda iki farklı işlemin yapıldığını görmekteyiz. Bu işlemler doğrulama yani verification işlemleri ve tanımlama identification işlemleri. Doğrulama işlemlerinde sisteme gelen kişinin, sisteme örnek veren kişinin iddia ettiği kişi olup olmadığını kontrol ediyoruz biz burada. Birebir bir karşılaştırma yapıyoruz. Tanımlama işlemine baktığımızda da...
+
+419
+01:37:44,692 --> 01:38:00,532
+Bir veri tabanımız var bizim. Gelen kişi, mesela bir okulda olduğumuzu düşünelim. Gelen kişi okulda bir öğrenci olduğunu iddia ediyor. Burada okuldaki tüm öğrencilerin görüntülerine bakıp gelen kişinin gerçekten bu veri tabanında olup olmadığını karşılaştırıyoruz.
+
+420
+01:38:00,712 --> 01:38:12,192
+Tabii ki ikinci kısım, yani tanımlama kısmı biraz daha maliyetli bir kısım. Daha çok görüntüye bakılması gerekiyor burada. Daha çok gecikme gibi çeşitli etmenlerin de burada rol oynadığını görüyoruz.
+
+421
+01:38:12,564 --> 01:38:26,204
+Burada Rankings adını verdiğimiz yani sıralama sistemi de aynı şekilde konuşulmakta. Burada 5 kişiye kadar mesela bir ranking yapıyoruz ve belirli bir eşlik değerin üzerindeyse gelen örneği biz sisteme kabul ediyoruz.
+
+422
+01:38:27,904 --> 01:38:36,404
+Burada da yüz tanıma sistemlerinin şablonunu vermiş bulunmaktayız. Yüz tanıma sistemlerine baktığımızda ilk önce sisteme bir görüntü geliyor.
+
+423
+01:38:36,851 --> 01:39:04,271
+Bu görüntü ön işleme adımlarına tabi tutuluyor. Bu ön işleme adımları ne olabilir? Görüntünün boyutunun reside edilmesi olabilir. Histogramı çıkarılıp histogram işleme tekniklerinin uygulanması olabilir. Çeşitli ön işleme adımları burada uygulanıyor. Daha sonra feature extraction dediğimiz öz nitelik çıkarım yöntemlerini uygulanmaktayız. Tabii eğer burada derin ağları kullanıyorsak, derin ağlar içerisinde bu işlemler otomatik olarak yapılıyor. Bu adıma gerek kalmıyor.
+
+424
+01:39:04,787 --> 01:39:13,127
+Daha sonra kullandığımız sınıflandırıcı sistem veri tabanından gereken örnekleri alıyor ve çıkış olarak da ikili bir sonuç veriyor.
+
+425
+01:39:14,047 --> 01:39:18,567
+Ya bir eşleşme oluyor ya da bir eşleşme yok sonucunu burada elde ediyoruz.
+
+426
+01:39:20,747 --> 01:39:30,487
+Görüntü kalitesine baktığımız zaman aslında tüm görüntü işleme çalışmalarında olduğu gibi yüz tanıma sistemlerinde de görüntü kalitesi çok önemli bir yere sahip.
+
+427
+01:39:30,899 --> 01:39:40,899
+Burada çünkü öz nitelik çıkarımları üzerinden yapılan bir işlem söz konusu ve eğer sizin görüntünüzün kalitesi düşükse bu öz nitelik çıkarımını başarılı bir şekilde yapamayabiliyorsunuz.
+
+428
+01:39:41,619 --> 01:39:47,279
+Bunun önüne geçmek için de genellikle yüksek görüntü kalitesine sahip veri setler üzerinde çalışmaların olduğunu görmekteyiz.
+
+429
+01:39:47,988 --> 01:40:05,568
+Burada tabii ki bu çalışma özelinde daha gerçek hayata uygun, daha düşük görüntü kalitesinin de veri setlerin içerisinde ağırlıkta olduğu veri setlere hedef alınmakta. Bunun için de yine ileride göreceğimiz çeşitli parametrelerin kullanımı söz konusu.
+
+430
+01:40:06,768 --> 01:40:14,648
+Bu çalışmanın yaptığı bir diğer işlem de bu yandaki şekilde olduğu gibi görüntüleri kaliteleriyle göre sınıflandırmak.
+
+431
+01:40:15,091 --> 01:40:40,211
+Yüksek kalitede görüntü ve düşük kalitedeki görüntüler için sınıflandırma yapıyor. Daha sonra bu sınıflandırmalar üzerinden tanınabilirlik sınıflandırması yapıyor. Bunlar nasıl oluyor? Yüksek kalite görüntüler genellikle tanınması kolay olan görüntüler veya tanınması zor olan görüntüler olarak sınıflandırılmış. Düşük kaliteli görüntülere baktığımız zaman da tanınması zor olan görüntüler veya tanınması neredeyse imkansız olan görüntülerin olduğunu görüyoruz.
+
+432
+01:40:40,787 --> 01:40:49,247
+Bu çalışmada bu tanınması imkansız olan görüntüleri ağırlıklandırarak daha düşük bir ağırlık vermesine dayanmakta.
+
+433
+01:40:49,868 --> 01:40:52,587
+Bu sayede bu görüntülerin etkisinin azaltılması sağlanıyor.
+
+434
+01:40:55,688 --> 01:40:59,028
+Burada yine görüntü kalitesini etkileyen faktörlerden bahsediyoruz.
+
+435
+01:40:59,827 --> 01:41:03,528
+Bu faktörler özellikle yüz tanıma işlemleri için ışıklandırma.
+
+436
+01:41:03,887 --> 01:41:30,087
+Buradaki ışıklandırma tabii ki görüntünün ya çok karanlık ya da çok parlak olması özelinde gerçekleşen bir işlem. Eğer görüntünüz çok parlaksa istediğiniz öz nitelikleri çıkaramayabilirsiniz. Aynı şekilde çok karanlık olduğu durumda da. Burada da yine ön işleme adımlarıyla çeşitli ayarlamaların yapılması söz konusu olabilir. Bu ne olabilir mesela? Histogram Equalization. Histogram işitleme tekniğini biz de görmüştük. Bu teknik üzerinden bir işlem yapılabilir.
+
+437
+01:41:30,739 --> 01:41:56,639
+Okluzyonun çok büyük bir problem olduğunu görmekteyiz. Burada okluzyon dediğimiz sistem, görüntü üzerinde çeşitli nesnelerin olmasıyla beraber çeşitli öz niteliklerin tanılamaması durumu. Bunlar yüz tanıma işlemlerinde neler olabilir diye bakarsak, mesela bir atkı olabilir, bir maske olabilir veya güneş gözüyle yine yüz görüntüsünde çeşitli öz nitelikleri çıkarmamıza engel olabilir.
+
+438
+01:41:57,395 --> 01:42:15,635
+Tabii çözünürlükten bahsetmekteyiz. Yüz ifadesi yine görüntü kalitesi üzerinde bir etken. Gürültü her zaman bir etken. Gürültü için mesela SMR üzerinden bir tanımlama yapılabilir. Burada verilen örneğin pozu da yine aynı şekilde. Yüz tanıma işlemlerinde bizim için görüntü kalitesine etkilen bir faktör.
+
+439
+01:42:25,108 --> 01:42:26,928
+Etmenlerden bir tanesi.
+
+440
+01:42:27,828 --> 01:42:31,188
+Burada literatürde kullanılan çok sayıda kayıp fonksiyonunu görmekteyiz.
+
+441
+01:42:31,188 --> 01:42:37,108
+Bunlar marş tabanlı kayıp fonksiyonları, çapraz entropi, adaptif ve softmax olarak karşımıza çıkıyor.
+
+442
+01:42:37,788 --> 01:42:39,268
+Kayıp fonksiyonları ne işe yarıyor?
+
+443
+01:42:39,828 --> 01:42:47,188
+Özellikle derin ağların kullanılmadığı sistemlerde burada biz özitelik çıkarımlarını ve çeşitli parametrenin ağırlıklandırmasını yapabiliyoruz.
+
+444
+01:42:48,275 --> 01:42:57,536
+Burada tabii modelin eğitim sürecinde gerçekleşen bir sistem. Yine dediğim gibi parametrelerinde optimizasyonuna izin veren bir sistem bu.
+
+445
+01:42:59,336 --> 01:43:07,015
+Marştabanlı kayıp fonksiyonlarına bakalım. Özellikle ikili sınıflandırma problemlerine oldukça uygun bir fonksiyon türü olduğunu görmekteyiz.
+
+446
+01:43:07,576 --> 01:43:11,935
+Aslında yapılarak baktığımızda destek vektör makinelerine oldukça benzer bir yapıya sahip.
+
+447
+01:43:12,340 --> 01:43:16,180
+Burada 100'den elde ettiğimiz ön nitelikler birer vektör olarak tanımlanıyor.
+
+448
+01:43:16,699 --> 01:43:21,520
+Ve bu vektörlerin ağırlıkları var. Bu vektörlerin pardon uzunlukları var.
+
+449
+01:43:21,980 --> 01:43:28,779
+Bu uzunluklar arasındaki mesafeler üzerinden de gelen görüntünün eşleşip veya eşleşmediği yönünde bir çıkarım yapabiliyoruz.
+
+450
+01:43:28,779 --> 01:43:34,760
+Mesela farklı kişilere ait örnekler değerlendirdiğinde vektörler arası mesafenin oldukça büyük olduğunu görmekteyiz.
+
+451
+01:43:35,087 --> 01:43:40,667
+Tabi ki bu büyüklüğü neye göre tanımlıyoruz? Burada bir threshold belirliyoruz. Bu threshold'a göre bir tanımlama var.
+
+452
+01:43:42,127 --> 01:43:51,547
+Adaptif kayıp fonksiyonuna bakalım. Adaptif kayıp fonksiyonları genellikle düşük kaliteli veri setlerinde performansı artırmak için kullanıldığından bahsedilmiş.
+
+453
+01:43:52,307 --> 01:43:57,427
+Aslında bu da şu yönden çok mantıklı. Çünkü sizin istediğiniz bir parametreyi burada ağırlıklandırmanız mümkün oluyor.
+
+454
+01:43:57,427 --> 01:44:01,427
+Bu çalışma üzerinde de görüntü kalitesi ağırlıklandırılmış durumda.
+
+455
+01:44:01,908 --> 01:44:11,348
+Aykırı değerlere karşı en dayanıklı fonksiyon olduğu söylenilmiş. Çeşitli aslında avantajların olduğunu, adaptif kayıp fonksiyonlarını görmekteyiz.
+
+456
+01:44:13,488 --> 01:44:21,248
+Çalışmanın sonuçlarına bakacak olursak, buradaki asıl amaç aslında düşük kaliteli görüntülerin ağırlıkta olduğu veri setlerinde başarımı sağlamak.
+
+457
+01:44:21,248 --> 01:44:26,228
+Ama tabii ki bunun yanında da yüksek kaliteli görüntü setlerindeki başarımdan ödün verilmemek isteniyor.
+
+458
+01:44:26,868 --> 01:44:51,648
+Burada aslında görüntüm varım net gözüküyordur. Çeşitli metotlarla kıyaslama var. Burada eğitim veri setinin farklı veri setleri üzerindeki performansın değerlendirilmesi mevcut. Burada AdaFace'e baktığımız zaman 99.82'lik bir mesela performans sağlamış ki en yüksek performansı burada BroadFace algoritmuzun 99.85'lik bir ekürüsüyle sağladığını görüyoruz.
+
+459
+01:44:51,988 --> 01:44:57,507
+Mesela buradaki veri seti Labeled Faces in the Wild diye geçiyor ve çok kullanılan bir veri seti aslında.
+
+460
+01:44:58,748 --> 01:45:01,927
+Buradaki tabii ki eğitim verilerinde çok büyük bir önemi var.
+
+461
+01:45:02,387 --> 01:45:08,228
+Bu MS1, MV2 veri seti oldukça yüksek sayıda veriye sahip bir veri seti.
+
+462
+01:45:08,728 --> 01:45:12,988
+3,5 milyon görüntü içerdiğini görmekteyiz ve 85 bin kişiye ait.
+
+463
+01:45:12,988 --> 01:45:18,148
+Yani her kişinin çok sayıda burada aslında görüntüsü mevcut ve bir çeşitlilik sağlıyor burada.
+
+464
+01:45:18,804 --> 01:45:30,423
+Bu eğitim veri setleri 3 içinde konuşabilirim. MS1, MV2, MS1, MV3 ve Web Face Program veri setleri oldukça yüksek kaliteye sahip görüntülerden oluşuyor.
+
+465
+01:45:31,043 --> 01:45:35,903
+Bu yüzden modellerin eğitiminde de oldukça yüksek başarım sağlayabiliyorlar.
+
+466
+01:45:37,884 --> 01:45:46,363
+Burada çalışmanın diğer sonucundan bahsedeceğim. Aslında bizim için bu kısım oldukça önemli. Çünkü gerçek hayat uygulamalarına bu kısım daha yaygın bir durumda.
+
+467
+01:45:46,836 --> 01:46:12,615
+Gerçek hayat uygulamalarından kastımız ne? Mesela güvenlik kameralarından alınan görüntüler veya akıllı şehirlerde belirli bir mobesa kamerası düşünelim. Buradan alınan görüntüler üzerinden yapılan çalışmalar için. Burada da tabii ki belirli algoritmalarla kıyaslamalar var. Özellikle ben bu algoritmanın ArcFace üzerinde geliştirildiğinden bahsetmiştim. Umarım masum gözüküyordur. ArcFace algoritmasının buradaki başarımını mesela görebiliyorum.
+
+468
+01:46:13,140 --> 01:46:31,600
+Rank 1, Rank 5 ve %1'lik bir kısım olarak belirtilmiş. Bunlar dediğim gibi bu daha çok identification kısmında, yani tanımlama kısmında kullanıldığı için belirli sayıdaki görüntüyle kıyaslama yapılıyor burada. Bu görüntülerle yapılan kıyaslamada yine en yüksek performansın Adaface algoritmasında sağlandığı görülüyor.
+
+469
+01:46:32,340 --> 01:46:47,160
+Bunun dışında MS-1 MV3 eğitim seti içinde denenmiş ve en son olarak da WebFace 4.md veri setiyle de denenmiş tüm algoritmalarda en yüksek performans sağlayan metodun Adaface metodu olduğunu görüyoruz.
+
+470
+01:46:47,891 --> 01:47:00,572
+Bu da zaten aslında bu çalışmanın hedefiydi. Daha düşük kalitedeki görüntülerin olduğu veri setlerinde daha yüksek performans sağlamak. Bunun için de kayıp fonksiyonlarındaki görüntü kalitesini bir parametre olarak tanımlıyorlar.
+
+471
+01:47:02,192 --> 01:47:03,811
+Sonuçlara gelecek olursak.
+
+472
+01:47:04,659 --> 01:47:30,240
+Özellikle biyometrik sistemlerde ve görüntü işleme çalışmalarında yüz tanıma işlemleri oldukça önemli bir yere sahip. Burada güvenliğin arttığı sistemlerde hatanın daha düşük olması ve başarının daha yüksek olması hedefleniyor. Tabii ki böyle sistemlerde düşük kaliteli görüntüler de olabilir. Bu yüzden Adaface gibi algoritmaların, yüksek başarıya sahip olan algoritmaların kullanılması daha realistik sistemler oluşturmamızı sağlayabilir.
+
+473
+01:47:31,091 --> 01:47:50,831
+Onun dışında tabii ki çeşitli algoritmalarla kıyaslaması var. Adaface'in burada daha yüksek bir başarı sağlığını görüyoruz. Buradaki kayıp fonksiyonu adaptif tabanlı bir, adaptif marş tabanlı bir kayıp fonksiyonu. Bu kayıp fonksiyonun da bu algoritmayla gayet yüksek bir başarı sergilediğini görmekteyiz.
+
+474
+01:47:53,247 --> 01:48:01,587
+Ağırlıklı olduğu veri setlerinin dışında yüksek kaliteli görüntülerin ağırlıklı olduğu veri setlerinde de başarımda ödün verilmediğini görüyoruz.
+
+475
+01:48:03,007 --> 01:48:09,528
+Bunlar da sunumda kullandığım kaynaklar. Dinlediğiniz için teşekkür ederim. Sorunuz varsa alabilirim.
+
+476
+01:48:12,692 --> 01:48:28,131
+Teşekkürler [öğrenci]. Bu düşük kaliteli görüntülerde kimliklendirme oldukça zor bir problem aslında. Burada çözümün tek kayıp fonksiyonu mu diyorsunuz?
+
+477
+01:48:29,311 --> 01:48:37,692
+Derin öğrenme kullanırsak aslında kayıp fonksiyonlarının dışında derin öğrenmenin kendi çıkarımlarıyla beraber, otomatik özetlik çıkarımlarıyla beraber buna çok gerek kalmıyor.
+
+478
+01:48:38,047 --> 01:49:01,747
+Buradaki Adaface algoritması aslında bir makine öğrenmesi algoritması. Ama bu yandan Adabound dediğimiz bir kayıp tabanlı marş fonksiyonunu Arkface ile birleştirmiş ve Adaface adını veren bir algoritma oluşturmuşlar. Benim görüşüm, kendi görüşüm derin öğrenme algoritmaları hala daha yüksek performans sergileyebilir burada. Ama bu çalışmada gayet başarılı olmuş.
+
+479
+01:49:03,572 --> 01:49:08,112
+Peki, teşekkürler Aytu. Neden bu çalışmayı seçtin? Bir de onu soralım.
+
+480
+01:49:08,671 --> 01:49:18,271
+Ben elektronik haberleşme bölümündeyim hocam. Biometrik sistem tasarımı dersi almıştım. Oradan biraz aşina oldum konular bunlar aslında. O yüzden bu çalışmanın üstüne gitmeyi tercih ettim.
+
+481
+01:49:19,371 --> 01:49:23,491
+Peki, teşekkürler. Alkışlıyoruz seni de sunumunu için.
+
+482
+01:49:26,015 --> 01:49:34,395
+Ne yapıyoruz? Ara veriyoruz değil mi? Peki bir 10 dakika ara verelim. Ondan sonra [öğrenci], [öğrenci] ve [öğrenci]'yı dinleyeceğiz sırasıyla.
+
+483
+01:49:34,395 --> 01:49:37,395
+Evet.
+
+484
+02:00:33,171 --> 02:00:42,451
+Evet arkadaşlar, şimdi dersimizin üçüncü saatine başlayalım. On dakika aramızda oldu. [öğrenci].
+
+485
+02:00:46,899 --> 02:00:51,939
+Evet, ekran paylaşımı yaparak başlayabilirsin. Sesim biraz zayıf geliyor.
+
+486
+02:00:55,667 --> 02:00:56,567
+Nasıl hocam?
+
+487
+02:00:57,347 --> 02:00:59,387
+Tamam. Duyabiliyoruz.
+
+488
+02:01:03,956 --> 02:01:10,436
+Bugün Transio yani Transformative is All Unit for Cross-Wave Image Geolocalization Paper'ından bahsedeceğim.
+
+489
+02:01:11,176 --> 02:01:20,896
+Benim bu paper'ı seçmemdeki amaç aslında bu paper'da araç lokalizasyonu yani GNSS kestilmeye dair yöntemler ifade edilmekte.
+
+490
+02:01:20,896 --> 02:01:29,596
+[kişisel bilgi] Bundan dolayı inceleme gereği duyduk.
+
+491
+02:01:31,188 --> 02:01:37,927
+Şimdi devam edeyim. İçerikte neler var? Önce Crossview Image Requisition yönteminden bahsedeceğim.
+
+492
+02:01:37,927 --> 02:01:43,688
+Yani biz bununla ne ifade etmeye çalışıyoruz veya hangi problemleri çözmeye çalışıyoruz, ondan bahsedeceğim.
+
+493
+02:01:44,408 --> 02:01:54,247
+Daha sonra ilgili çalışmalarda Bigor'dan bahsedeceğim. Bigor, Transcio'dan önce önerilen ve Paper'da da oldukça fazla geçen bir çalışma.
+
+494
+02:01:54,988 --> 02:01:57,547
+Ondan bahsedeceğim. Transcio'dan bahsedeceğim.
+
+495
+02:01:57,952 --> 02:02:03,131
+Kullanılan dataset'i, Computer Vision, USA ve Bigor dataset'lerinden bahsedeceğim.
+
+496
+02:02:04,131 --> 02:02:11,471
+[öğrenci], kameranı açmayı unutmuşsun. Şimdi aklıma geldi. Sunum yaparken lütfen kameramızı açalım.
+
+497
+02:02:21,300 --> 02:02:23,600
+Tamam, seni gördük. Evet.
+
+498
+02:02:30,676 --> 02:02:31,636
+İş yerinde misin?
+
+499
+02:02:32,296 --> 02:02:32,515
+Evet.
+
+500
+02:02:33,475 --> 02:02:34,376
+Tamam, peki.
+
+501
+02:02:36,596 --> 02:02:40,115
+CrossFit B. İmetçeli'ye gazetişim nedir? Ondan bahsedeyim öncelikle.
+
+502
+02:02:40,115 --> 02:02:48,115
+Bizim şöyle bir problemimiz var. Araçlara dair araçlar şehir içerisinde etraftaki...
+
+503
+02:02:49,524 --> 02:03:00,764
+Radyo frekansları dalgalanmalarından dolayı CNSS kestirme pek iyi olamıyor. Bundan dolayı da yüksek doğruluk oranı sağlamak için bu tür yaklaşımlara yönelilmiş.
+
+504
+02:03:01,779 --> 02:03:27,340
+Çalışmalar var. Statifik görüntülere karşılık düşen havadan, yani harita görsellerinin eşleştirilmesi sonucu arasında belirleme yaklaşımı aslında. Benim sağ tarafta gördüğüm görsellerde de üst taraftaki görselde sift tabanlı bir yaklaşım sunulmuş. Sol tarafta benim sokak görüntüm var. Sağ tarafta ise uydu görüntüm var ve havadan görüntüm var. Bu görüntünün arasında eşleştirme yaparak
+
+505
+02:03:28,020 --> 02:03:34,420
+Konum kestirme sağlanmaya çalışıyor. Daha iyi bir cinsiz kestirme yapılmaya çalışıyor.
+
+506
+02:03:35,520 --> 02:03:44,420
+Aşağıda ise Detection tabanının yaklaşımından bahsedilmiş ve tekrardan uydu görüntüleri üzerindeki ifadelendirmesi var.
+
+507
+02:03:46,228 --> 02:04:07,648
+Tranquil'dan önce bahsedilen veya Paper'da da çok sık bahsedilen Vigor yaklaşımdan bahsettim. Vigor çalışmasından. Vigor'da şöyle bir detaylandırma var. Benim sokak görüntümün ilk olarak polar transforma alınıyor veya şu görüntüye şeyde söylenebiliyor, balık gözü.
+
+508
+02:04:07,967 --> 02:04:19,068
+Görüntü veya panoramik görselde söylenebiliyor. Bu dış bükey bir görsel. Bu görsel CNN backbone'a veriliyor. Tabi ResNet olabilir veya benzeri backbone'lar olabilir.
+
+509
+02:04:19,068 --> 02:04:27,188
+Sonrasında Safa Bloğu'ndan bahsediliyor. Bu Safa Bloğu Special Aware Embedding ve Feature Aggregation işlemini yapıyor.
+
+510
+02:04:27,728 --> 02:04:33,068
+Special Aware Embedding işlemi farklı ölçeklerdeki katmaların aslında...
+
+511
+02:04:33,631 --> 02:04:37,831
+Birleştirilmesi ile net bir feature elde edilmesi diye anladım ben.
+
+512
+02:04:37,831 --> 02:04:42,331
+İlgili paperda. Sonrasında feature aggregation yapılıyor ve
+
+513
+02:04:42,331 --> 02:04:45,532
+lat-on bilgilerinin tahmin edilmeye çalışılıyor.
+
+514
+02:04:45,532 --> 02:04:48,532
+Peki Vigor burada...
+
+515
+02:04:48,659 --> 02:04:51,520
+Neyi çözmeye çalışmış? Oraya odaklanmaya çalışayım.
+
+516
+02:04:52,319 --> 02:04:57,300
+Vigor önceki çalışmalarda iyi hizalanmış, sokak ve havadan görsellere odaklanmıştır.
+
+517
+02:04:57,579 --> 02:05:01,819
+Önceki çalışmalarda. Ancak bu çalışmalar gerçek ortamlar için uygun sonuçlar vermemektedir.
+
+518
+02:05:02,399 --> 02:05:05,199
+Yani şöyle bir problemimiz var Vigor'dan önce.
+
+519
+02:05:06,380 --> 02:05:11,380
+Genelde merkeze odaklanmış, sokak görselleri oluyor ve uydu görüntüleri de merkeze odaklanmış oluyor.
+
+520
+02:05:11,923 --> 02:05:28,824
+Ancak sokak görsellerin, merkez odaklığının, uydu görselinin semipozitif formda verilmesi daha kötü sonuçlar elde edilmesine sebep oluyor veya benzer yaklaşımda kötü sonuçlar üretmesine sebep oluyor.
+
+521
+02:05:38,703 --> 02:05:42,343
+uygulayarak daha iyi kestirme yönelik bir çalışma sunuyor.
+
+522
+02:05:43,243 --> 02:05:48,623
+Tabii burada Safa Ablo'nun da büyük bir avantajı var önceki çalışmalara göre.
+
+523
+02:05:50,183 --> 02:05:55,483
+Şimdi transiyodan bahsedeyim. Neden transiyodan bahsedeyim?
+
+524
+02:05:55,483 --> 02:06:00,483
+CNN ve kola koordinat tabanlı yaklaşımlar genelde global korrelasyonu modelleyemezler.
+
+525
+02:06:00,623 --> 02:06:04,183
+Yani CNN tabanlı yaklaşımlarında şöyle problemlerimiz var.
+
+526
+02:06:05,076 --> 02:06:07,076
+İlk Layers'larda
+
+527
+02:06:07,507 --> 02:06:33,727
+Kernel boyutundan dolayı lokal bilgiye odaklanılır. Sonradan global bilgiye odaklanılıyor. Bu indiktive basis avantajı sağlıyor serenlerde. Transformer tabanlı yaklaşımlarda ise Positional Encoding işlemi benzer lokalizasyon bilgiyi sağlayabiliyor aslında. Burada da global bilgi aslında pozisyon bilgisi modellenmesi için Transformer tabanlı yaklaşımdan yararlanıldıkları ifade ediliyor.
+
+528
+02:06:35,507 --> 02:06:42,627
+Birinci işlemin global bilginin çıkarılmasında büyük avantaj sağladığı için transformer tabanlı yöntem kullanmak istediklerini ifade ediyorlar.
+
+529
+02:06:43,727 --> 02:06:51,967
+Ayrıca hesaplama maliyetini düşürmek için, gerekli speçleri değerlendirmemek için Attention Guidance 1-4-Propping yaklaşımı ifade edilmiştir.
+
+530
+02:06:51,967 --> 02:07:01,887
+Bu yaklaşım şurada ifade ediliyor. Aslında havadan görseller Attention haritası ile ilgilenilmeyen düşük.
+
+531
+02:07:02,176 --> 02:07:12,436
+İlişkili modellerin, bölgelerin kapatılması ile daha iyi odaklanılabilir ve model daha iyi eğitimi sürecine ilerletilebilir. Yani götürülebilir.
+
+532
+02:07:14,195 --> 02:07:16,076
+Söylenmeye çalışmış burada.
+
+533
+02:07:17,756 --> 02:07:19,195
+Neden Vision Transformer?
+
+534
+02:07:20,916 --> 02:07:27,155
+Burada ifade etmiştim aslında Poisson Encoding, geometrik temsileri daha iyi öğrenebiliyor.
+
+535
+02:07:27,155 --> 02:07:35,395
+Multi-detention yapısı Global Length-Long Range Correlation Modelliği bildiğinden dolayı tüm patchler arası değişiklik yapabiliyor.
+
+536
+02:07:35,395 --> 02:07:39,395
+CNN yanıcı üst katmanlarda global bilgiyi öğrenebilmekte.
+
+537
+02:07:40,675 --> 02:07:44,515
+Benzer Poisson Encoding avantajından bahsettim.
+
+538
+02:07:45,108 --> 02:07:52,108
+Daha sonra metot nasıl, paper'da nasıl bir çalışmadan bahsedilmiş, onu ifade etmeye çalışayım.
+
+539
+02:07:52,108 --> 02:07:59,108
+Aslında paper'ın çözmek istediği şey, havadan görselin eşleşebildiği bir embedding space oluşturmak.
+
+540
+02:07:59,108 --> 02:08:08,108
+Yani benim sokak görüntüm var ve havadan görselim var. Bu iki görselin eşleşebildiği bir embedding space oluşturmak istiyorum.
+
+541
+02:08:08,787 --> 02:08:13,287
+Bunu da optimum düzeyde yapmak isteyeceğim. Paper'daki amaç o.
+
+542
+02:08:13,287 --> 02:08:23,787
+Tabi ilk olarak 16'ya 16'lık peşlere bölünüyor görüntü. Bu tabi bir görüntü 16'ya 16'lık kelimeleri tarzında bir paper vardı.
+
+543
+02:08:23,787 --> 02:08:32,787
+O paper'ın baz aldıklarını ifade ediyorlar. Yani Vision Transformer tabanında bir tarafında bir geliştirme yapmadıklarını,
+
+544
+02:08:34,868 --> 02:08:38,448
+Tabanlı bir yaklaşım sunmak istediklerini ifade ediyorlar.
+
+545
+02:08:39,148 --> 02:08:43,568
+Buradaki sokak görselleri 16-16'lık peşlere bölünüyor.
+
+546
+02:08:43,708 --> 02:08:46,268
+Ordinal projeksiyon ve posisiyon embedding ekleniyor.
+
+547
+02:08:46,708 --> 02:08:48,568
+Tabi klas bilgisi de başı ekleniyor.
+
+548
+02:08:48,668 --> 02:08:51,928
+Ben kod tarafına baktığımda klas bilgisi sadece ID olarak bilinmişti.
+
+549
+02:08:51,928 --> 02:08:54,428
+Pek de şey değildi yani.
+
+550
+02:08:55,008 --> 02:08:57,788
+Klasifikasyon tabanlı bir network veya çalışma olmadığı için.
+
+551
+02:08:58,484 --> 02:09:06,924
+Önemsenmediği veya o şekilde bırakıldığını gördüm. Burada Start Street View Transform Encoder'a veriliyor.
+
+552
+02:09:06,924 --> 02:09:12,444
+Bu patchler ve sonrasında Multilayer Persephone Heading'den Embedding'e veriliyor.
+
+553
+02:09:12,444 --> 02:09:16,924
+Tabi burada Encoder yapısını da detaylıca görebilmekteyiz.
+
+554
+02:09:16,924 --> 02:09:24,084
+Encoder Input Layer Normalization, Multilayer Normalization ve Multilayer Persephone fark ediyor.
+
+555
+02:09:26,452 --> 02:09:30,231
+Saf Vision Transform tabanlı yöntemlerin içeriği zaten.
+
+556
+02:09:31,632 --> 02:09:35,851
+Sonrasında burada farklı olarak Triple Loss'tan bahsediliyor.
+
+557
+02:09:35,851 --> 02:09:41,771
+Triple Loss, Soft Margin Triple Loss fonksiyonu olarak ifade ediliyor farklı çalışmalarda da.
+
+558
+02:09:42,231 --> 02:09:45,811
+Ve bu üç breng arasındaki benzer öyeleri yakınlaştırırken,
+
+559
+02:09:46,512 --> 02:09:49,971
+farklı öyeleri uzaklaştırmaya tabanlı bir loss fonksiyonu hesaplıyor.
+
+560
+02:09:50,112 --> 02:09:53,851
+Yani loss fonksiyonun amacını üç breng'e böldüklerini...
+
+561
+02:09:54,287 --> 02:10:06,287
+veya 3 branch ile input aldıklarında nasıl o sonuçlarını uygulamaları gerektiğini bir çalışma sonuçlar veya bir formül ifade etmişler.
+
+562
+02:10:06,387 --> 02:10:14,807
+Burada E üzeri A'nın veya şu kısmın sıfıra yakın bir sonuç vereceğinden dolayı bir eklemenin yeterli olabileceği öngörülmüş.
+
+563
+02:10:16,800 --> 02:10:25,000
+Buradaki pozitif örneklerin neykin normalizasyon değeri, DNK'te negatif örneklerin neykin normalizasyon değerini ifade ediyor.
+
+564
+02:10:26,800 --> 02:10:29,220
+Kısımdaki input triplet loss'a veriliyor.
+
+565
+02:10:30,020 --> 02:10:36,820
+Ve hava görüntülerindeki çıktı da benzer şekilde D-pos ve DNK olarak triplet loss'a veriliyor.
+
+566
+02:10:38,079 --> 02:10:43,720
+Sonrasında burada belli bir eğitim sonrasında bu ağırlıklar paylaştırılıyor ikinci aşama için.
+
+567
+02:10:44,340 --> 02:10:56,340
+İkinci aşamada da Attention Katmalı. Buradaki Soundstage'in Attention haritası hava görüntülerini proklamak için kullanılıyor. Hava görüntülerini proklandıktan sonra tekrar bir eğitimden geçiriliyor.
+
+568
+02:10:57,340 --> 02:11:09,292
+Genel yaklaşımı bu şekilde. Tabi şeyden bahsettiğim Non-Inform Cropping yaklaşımdan, bunu detaylendireyim isterseniz. İlk olarak Enkodur'a...
+
+569
+02:11:09,652 --> 02:11:27,912
+Enkodur yapımızın içeriği şu şekilde gözüküyor. İlk patch bizim class tokenimizde. Sonraki patchler ise bizim enkodur yapısındaki çıktı patchleri. Malte Perseptoran vermek üzere.
+
+570
+02:11:28,979 --> 02:11:33,779
+Burada son staj'ten elde edilen attention haritasını görüyorum.
+
+571
+02:11:33,779 --> 02:11:37,979
+Bu attention haritası resize and binary yapıldıktan sonra
+
+572
+02:11:39,979 --> 02:11:45,979
+şey yapmak için, croplamak için yeterli boyuta ulaşmış oluyor. Daha sonra croplama işlemi yapılıyor.
+
+573
+02:11:47,028 --> 02:12:14,868
+Aslında kroplama yaklaşımı nereden isimlenmiş, ondan bahsedeyim. İnsanlar öncelikle önemli bölgeye bakınıyorlar, sonrasında ise odaklanır ve daha fazla için yakınlaşıyorlar. Burada da benzer bir durum ifade edilmeye çalışılıyor. Önemli bölgeler genellikle resmin her yerine dağılmıştır. Bu nedenle senelerdeki dörtgen bölgeler gibi üniform tutma dağılmış bölgenin çıkılması için yeter değildir. Bundan dolayı da attention guide planing from cropping.
+
+574
+02:12:15,028 --> 02:12:33,028
+Bu metodu önerilmiştir. Yani hem global korelasyon hem de odaklanmış bilginin dahi çıkarılması için non-year-phone cropping yaklaşımdan yaklaşımı ifade edilmiş çalışmada. Kullanılan datasetleri burada görmekteyiz.
+
+575
+02:12:37,716 --> 02:12:45,636
+Burada sokak görüntüsüne dair bir görsel var. Balık gözü kamerasından. Sağ tarafta, aşağıda ise uydu görüntüleri var.
+
+576
+02:12:45,636 --> 02:12:56,196
+Eğitim için komputer güzünün üyesiydi, 35.532 ve test için ise 8.884 görüntü çifti kullanıldı.
+
+577
+02:12:56,196 --> 02:12:59,396
+Kısma geçeyim.
+
+578
+02:13:00,115 --> 02:13:07,036
+Şimdi transtronu değerlendirme kısmında mevcut çalışmaları böyle getirleri üzerine yollaşırsak,
+
+579
+02:13:16,787 --> 02:13:28,967
+Kadet referans görseli, yani en yakın Kadet referans görseli vermişler. Benim sokak görüntüme karşılaşan en yakın Kadet uydu görseli olarak anlayabiliriz biz bunu.
+
+580
+02:13:35,539 --> 02:13:40,219
+41'e karşılık 61'lik ikol ekirisi, ben burada gözlemliyorum.
+
+581
+02:13:40,219 --> 02:13:45,979
+5 görsel verildiğinde ise 87'ye 65 değerlerini görmek değil.
+
+582
+02:13:45,979 --> 02:13:53,539
+Tabi aynı bölgeler üzerinde bir de cross bölgeler üzerinde değerlendirmeler var.
+
+583
+02:13:53,539 --> 02:13:59,539
+Onu da ifadelendirmeyi bu şekilde, yani yüksek başarımı burada görmek değil.
+
+584
+02:14:03,252 --> 02:14:11,552
+Kaç metre sapma olduğunu veya o sapmayı ne kadar iyileştirdiğini kürsü üzerinden değerlendirmesi var.
+
+585
+02:14:12,472 --> 02:14:23,732
+Bu genelde Vigor ve diğer çalışmalara göre, Transjion'un ön plana çıktığı şey, 15 metre bir ötesi sapmalarda büyük miktarda getirisi olduğu gözükmekte.
+
+586
+02:14:27,507 --> 02:14:46,127
+SIP Scale Average Feature Aggregation bloğuna göre ise hesaplama maliyeti açısından 10 mil saniye kazanç, bellik açısından yaklaşık 1 GB ve hesaplama, floating operation miktarı açısından ise oldukça fazla bir el getirisi olduğu gözüküyor.
+
+587
+02:14:48,187 --> 02:14:53,787
+Sonuç olarak Tent Show bize neler sağladı veya ne gibi avantajlar sağladı?
+
+588
+02:14:54,355 --> 02:14:59,855
+Bunu değerlendirmeye çalışıyorum. Data Argumentation ya da Polar Transforma gerek almadan,
+
+589
+02:14:59,855 --> 02:15:04,855
+Transformator tabanlı yaklaşım ile önerilmiştir.
+
+590
+02:15:04,855 --> 02:15:13,855
+Yani Transformator tabanlı ilk yaklaşım ifade ediyor ve bu yaklaşıma bağlı olarak da Polar Transforma ihtiyaç duyulmuyor.
+
+591
+02:15:14,484 --> 02:15:16,244
+Önceki yaklaşımlarda oluydu.
+
+592
+02:15:16,644 --> 02:15:20,764
+Gereksiz hesaplan maliyetini azaltmak için havadan görüntülerde bilgi vermeyen alanlar,
+
+593
+02:15:21,204 --> 02:15:24,084
+retention guide plan uniform cropping yaklaşımıyla kaldırıldı.
+
+594
+02:15:24,084 --> 02:15:30,084
+Bu hesaplan maliyetini azalttı ve daha yüksek ekürsi sonuç üretmenize sağladı.
+
+595
+02:15:30,564 --> 02:15:35,724
+Senel tabanlı yöntemlere göre daha düşük hesaplan maliyeti var ve global ilişkiyi daha iyi yorumlayabiliyoruz.
+
+596
+02:15:36,756 --> 02:15:44,076
+Demişler. Burada ise Enkoder çıktığının kod tarafında gözlemlemeye çalıştım.
+
+597
+02:15:44,076 --> 02:15:50,676
+Aslında Enkoder'un Queryb'i şeyleri bu şekilde veriliyordu. Enkoder yapısından.
+
+598
+02:15:50,676 --> 02:15:58,235
+Görsellerde ve çıktığı için, Feature Embedding çıktısı ise şu şekildeydi.
+
+599
+02:15:58,235 --> 02:16:01,516
+Bu her bir satır, burada yüz satır var.
+
+600
+02:16:01,971 --> 02:16:16,971
+Her bir satır, yeni bir test görüntümü ifade ediyor. Bu test görüntü 128 dimension ile eğitim yapıldığı için, 128 uzunluğunda vektör elde ediyoruz. Bu vektör zaten şurada ifade etmeye çalıştığım,
+
+601
+02:16:16,971 --> 02:16:24,971
+attention haritasının flat edilmiş hali. Daha sonra attention haritasının elde edilip, resizing and finalize yapıldığı.
+
+602
+02:16:29,427 --> 02:16:35,427
+Bu bölümde ise eğitim aşamasını kod tarafında çalıştırdığıma dair bir video koydum.
+
+603
+02:16:35,427 --> 02:16:39,427
+Datasik olarak Computer Vision GSI'yi kullandım.
+
+604
+02:16:39,427 --> 02:16:46,427
+Learning Rate 0.03, Momentum zaten standart Vision Transformer hiperparametreleri bunlar.
+
+605
+02:16:46,427 --> 02:16:54,427
+Epoch tilli ve Optimizer olarak Mabler Perceptronlarda Edim Optimizer kullanıyordu.
+
+606
+02:16:54,963 --> 02:17:09,963
+Şuradaki loss fonksiyonunu değerlendirmek için ise, Asam kullandığını söylenmişti. Asam ise lokal minimumlara takılmayı engelleyen bir yaklaşım. Çok popüler.
+
+607
+02:17:14,772 --> 02:17:29,272
+Sonda ise referansları verdim. Kullandığım transform tabanlı paper'ı, bir görüntü 16 ve 16'lı kelimelerdir adlı çalışma paper'ı ve Vigor'un paper çalışması.
+
+608
+02:17:34,644 --> 02:17:36,144
+Vardı galiba, öyle mi?
+
+609
+02:17:36,484 --> 02:17:36,783
+Kendi.
+
+610
+02:17:37,404 --> 02:17:44,184
+Evet, GitHub kodu vardı. Ben GitHub kodunu şey yaptım, çalıştırdım ama Trin kısmını sadece çalıştırabildim.
+
+611
+02:17:44,184 --> 02:17:54,703
+Yani aslında çalışmaya dair bir sonuç görsel elde edilmiyor. Amaç buradaki Safa Buluğun'a ders alıp bir araştırma sunmak.
+
+612
+02:17:54,923 --> 02:18:02,243
+Yani şey değil, doğrudan platform bilgisini vereyim değil de aslında bu Safa Buluğun'u geliştirmekmiş amaç.
+
+613
+02:18:02,708 --> 02:18:04,288
+Ben bunu gözlemlemiş oldum.
+
+614
+02:18:07,488 --> 02:18:09,788
+Peki, neden bu konuyu seçtin?
+
+615
+02:18:10,907 --> 02:18:11,688
+Neden seçtin?
+
+616
+02:18:12,328 --> 02:18:18,648
+Sunumun başında da ifade ettiğim gibi, ben cennet ses kestirme üzerine, görüntü abone cennet ses kestirme üzerine çalışmalar yapmak istiyordum.
+
+617
+02:18:18,648 --> 02:18:19,887
+Ses üzerinde de.
+
+618
+02:18:21,188 --> 02:18:24,288
+Bundan dolayı bunu seçmek istedim.
+
+619
+02:18:24,847 --> 02:18:26,387
+Farklı bir çalışma olduğu için anlattım.
+
+620
+02:18:29,716 --> 02:18:31,756
+Lisans senin hangi bölümdü?
+
+621
+02:18:32,675 --> 02:18:34,236
+Lisans Bilgisayar Mühendisliği.
+
+622
+02:18:34,515 --> 02:18:38,256
+Bilgisayar Mühendisliği. Bu konuya ama ilgilisin. Çok ilginç, güzel.
+
+623
+02:18:39,376 --> 02:18:46,916
+Peki. Daha çok böyle jeodezi, fotogrametri bölümleri ilgileniyor ya o yüzden dedim.
+
+624
+02:18:46,916 --> 02:18:52,175
+Ama tabii ilginç bir konu.
+
+625
+02:18:53,012 --> 02:18:59,711
+Konumu daha hassas ölçmeyi sağlayacak bir iyileştirme sunuyor, değil mi?
+
+626
+02:19:00,312 --> 02:19:00,532
+Evet.
+
+627
+02:19:02,871 --> 02:19:06,371
+Şu an neyi hesaplıyor? Train modülü mü?
+
+628
+02:19:07,172 --> 02:19:15,452
+Evet. Şu an işlemini görüyoruz. Yanlışa yaptığımı veya kod tarafında çalışmayı incelediğime dair bir sade.
+
+629
+02:19:18,012 --> 02:19:18,891
+Peki.
+
+630
+02:19:20,020 --> 02:19:35,819
+Teşekkür ediyoruz [öğrenci]. Sunumun için seni alkışlıyoruz hemen. Evet, [öğrenci]. Sırada [öğrenci] var. [öğrenci] burada mı?
+
+631
+02:19:36,540 --> 02:19:38,520
+Merhaba hocam. Merhaba herkese.
+
+632
+02:19:38,520 --> 02:19:43,860
+Evet, [öğrenci] merhaba. Evet, sunumunu dinliyoruz. Kameranı da açıyoruz.
+
+633
+02:19:43,860 --> 02:19:47,280
+Ekranımı paylaşarak başlıyorum. Kameramı da açayım.
+
+634
+02:19:47,615 --> 02:19:48,115
+Mhm.
+
+635
+02:19:52,884 --> 02:19:54,364
+Sanırım oldu hocam.
+
+636
+02:19:55,504 --> 02:19:56,664
+Tam ekran olmadı.
+
+637
+02:20:02,195 --> 02:20:03,736
+Şimdi oldu. Tamam.
+
+638
+02:20:03,736 --> 02:20:16,435
+Evet. Benim konum Skech Edit Mask Fill Pre-Local Image Manipulation with Particial Sketches Supplementary Material.
+
+639
+02:20:17,216 --> 02:20:29,475
+Bu makale genel olarak resimler üzerinde bir takım çizimler yaparak manipüle etme üzerinde ve değişiklik yapma üzerine yapılmış bir çalışma.
+
+640
+02:20:30,675 --> 02:20:54,275
+Kısaca öncelikle bir giriş yapacağım ve bu makalene üzerine çalışmakta. Bundan bahsedeceğim. Ardından kullanmış oldukları dataset'lerden örnek vereceğim, göstereceğim ve metotları açıklayacağım ve sonuç olarak da deneyleri açıklayıp sonucumu ileteceğim.
+
+641
+02:20:55,507 --> 02:21:05,647
+Öncelikle bu çalışma dediğim gibi fotoğraflar üzerinde bir takım oynamalarla fotoğrafların değişimini konu almakta.
+
+642
+02:21:07,047 --> 02:21:11,007
+Bunun için de fotoğraflar üzerine elle çizim kullanılıyor.
+
+643
+02:21:11,007 --> 02:21:16,507
+Aslında bunu bir çeşit veri doldurma olarak da düşünebiliriz.
+
+644
+02:21:21,652 --> 02:21:30,612
+Çizdiğimiz bölgeye göre veri arttırımı, görüntü üzerindeki objelerin arttırımı konu alınmaktadır.
+
+645
+02:21:31,347 --> 02:21:59,308
+Bunun için de tabii ki derin öğrenme yöntemlerinden yararlanılıyor. Klasik yöntemlerde öncelikle bunun gerçekleşebilmesi için bir maske ihtiyaç var. Yani çizimle birlikte bir maskenin de verilmesi gerekiyor input'a. Ancak sunmuş olan, önerilen bu metotta sadece çizim yapmak yeterli oluyor ve bunu derin öğrenme yöntemleriyle içeriğinin doldurulması.
+
+646
+02:21:59,347 --> 02:22:14,788
+Görüntü üzerinde çizilen bölgenin içerdiği objelerin veri arttırımı sağlanarak içeride bir maske oluşturuluyor ve yeni bir Output Image ortaya çıkıyor.
+
+647
+02:22:17,236 --> 02:22:29,776
+Görüntü üzerindeki bu lokal düzenlemeler orijinal görüntünün içeriğini çoğu zaman korumak ve yalnızca çizim girdisi çevresindeki ilgili görüntünün bölgesini değiştirmek istenmektedir.
+
+648
+02:22:30,116 --> 02:22:39,676
+Bu nedenle de önce bir maske tahmin edicisiyle değiştirme bölgesi tahmin edilir ve ardından bir üreteçle içerideki yeni içerik sentezlenmiş olur.
+
+649
+02:22:39,676 --> 02:22:45,195
+Manipüle edilmiş, değiştirilmiş bu görüntü tahmin edilen maske kullanılarak da ürete.
+
+650
+02:22:45,236 --> 02:22:48,336
+çiftasıyla orijinal görüntüye karıştırılarak üretilir.
+
+651
+02:22:48,788 --> 02:23:07,207
+Bu sentezlenen içerik, içeriğin yapısı, yani görüntünün yapısı sadece orijinal görüntü stilini korurken üzerinde çizim yapılmış bölgenin de takip edilmesini teşvik etmek için giriş görüntüsünün değiştirme bölgesi bir stil kodlayıcı ile stil vektörüne kodlanır.
+
+652
+02:23:07,207 --> 02:23:16,207
+Burada önemli olan nokta sistem stil vektörü ve çizimlere dayanarak hedef değiştirme bölgesini yeniden oluşturmayı öğrenerek kendiliğinden...
+
+653
+02:23:16,788 --> 02:23:18,788
+Gözetimli bir şekilde eğitebilir.
+
+654
+02:23:20,948 --> 02:23:36,888
+Bu yöntemin avantajları ve literatüre katkısına bakacak olursak, kullanıcıların sadece kısmı çizim girdileri gerektiren maskesiz yerel görüntü manipülasyonu için yeni bir paradigmadır.
+
+655
+02:23:36,888 --> 02:23:48,948
+A mimarisi, veri toplama ve eğitim stratejisi dahil olmak üzere de maske olmadan çizim tabanlı, yerel bir yani lokal görüntü üzerindeki manipülasyonu gerçekleştirilir.
+
+656
+02:23:50,899 --> 02:23:59,079
+Çeşitli veri kümeleri üzerinde kapsamlı deneyler yapılmıştır ve önerilen bu yöntem üstünlük sağlamıştır.
+
+657
+02:23:59,079 --> 02:24:13,000
+Kullanılan data sete bakacak olursak, çalışmada eğitim için Celebration HQ verileri veri seti üzerinde çalışılmıştır, model eğitilmiştir.
+
+658
+02:24:13,579 --> 02:24:18,659
+Bu veri seti 1024'e 1024 boyutundaki 30 bin görüntüden oluşmaktadır.
+
+659
+02:24:18,899 --> 02:24:25,899
+Sadece facelere içermektedir. Ünlülerin yüzlerini içeren bir datasetti.
+
+660
+02:24:26,559 --> 02:24:37,920
+Yapılan deneyler Stacey Caves ve Coco Staff ve AD20K veri kümeleri üzerinde gerçekleştirilmiştir.
+
+661
+02:24:37,920 --> 02:24:46,299
+Bu veri kümeleri farklı görüntü üzerindeki gerçek dünya görüntülerini içerir. Yani fake görüntüler değildir.
+
+662
+02:24:46,899 --> 02:25:05,779
+Gerçek fotoğraf görüntüleridir. Bu görüntülerin performansını yansıtmak için de yapay örnekler kullanılmasının yanı sıra yüz ve genel görüntü manipülasyonu için SketchMate ve SketchFace isimli iki dataset oluşturulmuştur.
+
+663
+02:25:05,779 --> 02:25:14,899
+Bu veri kümeleri kullanıcılar tarafından çizilen yüz doğal görüntü ve dört yüz yüz görüntüsü ile bunlara karşılık gelen çizimleri içine kullanılıyor.
+
+664
+02:25:14,899 --> 02:25:25,899
+Bu çizimler de maske oluşturacak daha sonra. Kullanılan yöntemlere bakacak olursak, Warping algoritması...
+
+665
+02:25:26,579 --> 02:25:47,959
+Genel görüntüler ve yüz görüntülerinin, yani doğa görüntüleri olabilir bunlar ve yüz görüntülerinin arka plan bölgeleri için çeşitli bozulmuş, yani aslında manipüle edilmiş bir versiyon oluşturmak için değiştirme alanındaki köşeleri rastgele yerleştirilerek görüntü üzerinde hareket ettirilir.
+
+666
+02:25:47,959 --> 02:25:54,579
+Her yüz görüntüsünün yüz bölgesi için bozulmuş sonucun görsel olarak geçerli olmasını sağlamak.
+
+667
+02:25:54,579 --> 02:26:01,579
+Yüzün genel ifadesini ve lokal ifadelerini...
+
+668
+02:26:02,644 --> 02:26:13,203
+İfadelerin bir çeşit varyasyonlarını üretmek için de Landmark kılavuzu sürükleme ve Blend Shaped kılavuzu sürükleme kullanılmıştır bu yöntemde.
+
+669
+02:26:13,824 --> 02:26:21,443
+Şimdi görselde göreceğimiz üzere orijinal resimleri manipüle edildikten sonraki yeni hallerini görüyoruz.
+
+670
+02:26:21,443 --> 02:26:29,603
+Örneğin birinci ve ikinci resime bakacak olursak bunlar birer genel görüntü dediğimiz normal fotoğraflar.
+
+671
+02:26:30,644 --> 02:26:48,423
+Üniversitesi de bir çukur çizimi yapılarak aslında buradaki dağın veya tepenin boyutunda bir azalma olmuştur. Aynı şekilde burada da pencereye bir manipülasyon söz konusu. En çok dikkat çekici olan yüz görüntüleri üzerindeki oynamalar.
+
+672
+02:26:58,644 --> 02:27:13,423
+Yuvarlak bir şekil çiziminde bunları birazdan deneyeceğim. Sanki ağzı açıkmış gibi, o kişinin ağzı açıkmış gibi ama bir sonraki resimde mesela ağzı açık bir görüntüye, ağzı kapalı bir görüntü manipüle edilmiş.
+
+673
+02:27:14,739 --> 02:27:26,159
+Bu makalde yer verilen yöntemler kullanıcının yalnızca birkaç çizim yaparak görüntü üzerindeki bölgesel manipülasyonlarına imkan verir.
+
+674
+02:27:26,779 --> 02:27:37,040
+İki aşamalı bir yaklaşıma dayanmaktadır. Birincisi, kullanıcı önce görüntüyü manipüle etmek istediği bölgeyi seçer ve bunun üzerine bir çizimde bulunur.
+
+675
+02:27:42,739 --> 02:28:03,259
+Değişime söz konusudur. Bu işlem önceden belirlenmiş işlevleri kullanarak gerçekleştirir. Peki bunlar nedir? Önceden eğitilmiş bir derin öğrenme modeli olan Spatial Adaptive Denormalization yöntemi modeli kullanılarak manipülasyonların gerçekleştiği belirtilmektedir makalede.
+
+676
+02:28:10,739 --> 02:28:15,219
+Birçok görüntü manipülasyonu görevi içinde oldukça başarılı sonuçlar vermiştir.
+
+677
+02:28:15,700 --> 02:28:22,319
+Makalede sunulan bu yöntem, görüntü manipülasyonunu yaparken maske kullanım gereksinini de ortadan kaldırır.
+
+678
+02:28:22,319 --> 02:28:27,759
+Zaten çalışmanın amacı da bu. Bunun yerine kullanıcının çizimlerini kullanıyor.
+
+679
+02:28:28,700 --> 02:28:35,680
+Sonuç olarak, maske kullanım gereksinini ortadan kaldırarak manipülasyon işlemini daha kolay hale getirmektedir.
+
+680
+02:28:36,540 --> 02:28:38,739
+Sonuçlarımıza bakacak olursak, deney sonucu.
+
+681
+02:28:38,739 --> 02:29:02,099
+Öncelikle maske tahmin doğruluğunu, ardından da bu çalışmanın başarısız olduğu veya sınırlı olduğu durumlardan bahsedeceğim. Öncelikle maske tahmin doğruluğu. Burada karşılaştırdığımız aslında bir Grand Truth maskeleri ve bizim çizimimiz sonucunda oluşturulmuş olan maskeler.
+
+682
+02:29:03,667 --> 02:29:14,587
+Kullanıcıların bu görüntüler üzerinde yaptığı manipülasyonlardaki örneğin ben bu çiçeğin boyutunu değiştirmek istiyorum.
+
+683
+02:29:16,979 --> 02:29:21,959
+Birazdan deneylerini yapacağım. Farklı çizimler çok farklı sonuçlara yol açabiliyor.
+
+684
+02:29:22,479 --> 02:29:36,899
+Buradaki maske kullanmadan yaptığımız bu çalışmanın daha doğru bir sonuç vermesi için derin öğrenme yöntemleriyle bunun maskesinin tahmin edilmesi doğruluğu arttırmaktadır.
+
+685
+02:29:36,899 --> 02:29:40,899
+Ne kadar iyi tahmin edebilirse doğruluk o kadar yüksek çıkacaktır.
+
+686
+02:29:43,667 --> 02:30:00,887
+İki veri seti üzerinde denenmiş maske tahmin doğruluğu sonuçlarını görüyoruz. Bunlar kullanıcı tarafından çizilmiş maskelerle tahmin edilen maskenin Precision, Recall ve MIU değerleri.
+
+687
+02:30:02,515 --> 02:30:13,755
+Gördüğünüz gibi aslında Precision çok fazla yüksek değil ama Recool değerleri daha iyi bir sonuç olduğunu görebiliyoruz.
+
+688
+02:30:13,896 --> 02:30:18,815
+Tabi burada eşik değer olarak maskelerde 0.5 kullanılmış.
+
+689
+02:30:20,716 --> 02:30:26,615
+Çalışmanın bazı başarısız olduğu durumlar ve kısıtlamaları şu şekilde.
+
+690
+02:30:28,691 --> 02:30:48,072
+Düzenlenmiş görüntülerin orijinal kenarlardan ne kadar sapabileceğini bulmak için, üzerine çizmiş olduğunuz çizginin etrafından ne kadar sapabileceğini bulmak için farklı standart sapma oranlarına sahip veri kümese dizileri sentezlenmiştir.
+
+691
+02:30:50,352 --> 02:31:03,552
+Farklı boyutlardaki görüntüler de denedim. Eğer görüntünün boyutu ne kadar büyük olursa ortalama standart sapma oranı o kadar artıyor. Ortalama karisel hatası o kadar artıyor.
+
+692
+02:31:04,915 --> 02:31:19,056
+Figür 4'te de bunu görebiliriz sayısal oranlarla. Farklı sapma oranlarına sahip veri kümesindeki karesel hata sonuçlarını göstermektedir.
+
+693
+02:31:19,056 --> 02:31:29,056
+Yaklaşık olarak görüntünün boyutunun %70 oranında ne kadar çok artarsak...
+
+694
+02:31:29,716 --> 02:31:38,615
+Kenar sapma miktarında yaklaşık olarak %70'inin %70 oranında bozulmaya yol açtığını görebiliriz.
+
+695
+02:31:40,275 --> 02:31:52,576
+Başarısız olduğu durumlardan biri, önerilen bu yöntemde tüm görüntüleri girdi olarak kullandığı için giriş görüntüsünün değiştirilmesi gereken bölgedeki orijinal görünümü daha iyi koruyabilir.
+
+696
+02:31:52,576 --> 02:31:55,256
+Örneğin, ilk satıra bakalım.
+
+697
+02:31:57,012 --> 02:32:01,172
+Kişinin kaş boyutu ve şekli değiştirilmeye çalışılmış.
+
+698
+02:32:04,551 --> 02:32:13,612
+Ve ikinci satırdaki dudak rengine baktığımızda da en sonda renginin oldukça daha belirgin olduğunu görüyoruz.
+
+699
+02:32:13,612 --> 02:32:16,352
+Çocuğun dudak renginin daha belirgin olduğunu görüyoruz.
+
+700
+02:32:17,492 --> 02:32:27,632
+Burada aslında bizim sonucumuz daha iyi bir sonuç vermiş oluyor. Makalenin çalışması daha belirgin bir sonuç vermiş oluyor.
+
+701
+02:32:29,752 --> 02:32:34,311
+Burada da yine diğer örneklerden yer vermiştim.
+
+702
+02:32:40,115 --> 02:32:47,835
+Şöyle yapacağım hocam. Görüntüyü paylaşmaya devam ediyor sanırım. Burada bir çalışmaya ait demo var.
+
+703
+02:32:48,835 --> 02:32:55,736
+Ve burada farklı görüntülere uygulanan manipülasyonlar sonucu görüntünün değişimi söz konusu olacak.
+
+704
+02:32:55,736 --> 02:33:00,956
+Örneğin yüklenmiş bir görüntü üzerinden devam edeceğim. Sanırım görebiliyorsunuz ekranımı.
+
+705
+02:33:03,412 --> 02:33:19,072
+Tamam. Yüklenmiş bir görüntü. Bu tamamıyla çalışmayı yapanların oluşturmuş olduğu bir program. Örneğin saç üzerinde bir arttırmaya gideceğim. Şöyle, aslında bunu birazcık deneyerek buldum.
+
+706
+02:33:20,340 --> 02:33:31,760
+Hangi bölgenin arttırılmasını istiyorsak birazcık o bölgeden başlayarak çalışmayı yapmaya başlıyoruz ve yine o bölgeyle bitirmek istiyoruz. Saç arttırımı yapacağım.
+
+707
+02:33:37,299 --> 02:33:41,699
+Gördüğünüz gibi farklı şeyler deneyelim.
+
+708
+02:33:43,259 --> 02:33:47,959
+Örneğin, bu yine doğa resmi. Bir önceki bir yüz üzerindeki oynamaydı.
+
+709
+02:33:47,959 --> 02:34:02,419
+Bu doğa resminde de buradaki yeşilliklerin arttırımını sağlayacağız ve görüntünün aslında ne kadar da ayırt edilebilirliğinin, oynanmış görüntünün ayırt edilebilirliğinin düşük olduğunu göreceğiz.
+
+710
+02:34:17,396 --> 02:34:30,256
+Burası biraz check-in oldu ama genel olarak deseni tamamlama olarak ve bozuk olmadığı için güzel sonuç veriyordu. Bir daha şöyle bir tamamlamak istiyorum.
+
+711
+02:34:36,180 --> 02:34:46,979
+Bu nispeten daha iyi bir sonuç verdi. Şimdi buradaki görüntüler programın içerisinde yer alan görüntüler. Ben başka farklı görüntüler denemiştim.
+
+712
+02:34:50,420 --> 02:34:57,840
+Örneğin şu resim olsun. Bu resimlerin boyutları nispeten daha büyük oluyor.
+
+713
+02:34:59,987 --> 02:35:08,187
+Ve görüntü üzerindeki yaptığımız manipülasyonlar bu durumda çok daha kötü sonuç veriyor aslında.
+
+714
+02:35:09,027 --> 02:35:18,867
+Örneğin Russell Crowe'un gözleriyle oynamaya çalışalım. Şuradaki düşüklüğü yok etmeye çalışacağım.
+
+715
+02:35:32,659 --> 02:35:54,680
+Gördüğünüz gibi oynadığım bölgede değil de daha farklı bölgelerde bir takım blurlanma görüyorum. Hatta buralarda bile var. Aslında bu sistemin bu görüntü boyutunda çok da verimli olmadığını gösteriyor. Nispeten daha küçük resimlerde çok daha etkili sonuç veriyor.
+
+716
+02:35:57,876 --> 02:36:03,416
+Yani bu resmi alıp bir resize edip küçültüp versen daha mı iyi olacak yani?
+
+717
+02:36:04,916 --> 02:36:13,155
+Evet, çünkü kendi demo içerisinde paylaştıkları resimlerin boyutları hep 1024'den daha düşük.
+
+718
+02:36:13,155 --> 02:36:18,615
+1024'de 1024'den daha düşük boyutta. Bu nispeten daha büyük kalıyor.
+
+719
+02:36:19,987 --> 02:36:30,647
+Tamam, bir dene o zaman bunu olur mu? Küçült yani bir image editörde aç görüntüyü. Küçülterek kaydet. Bak bakalım ne oluyor?
+
+720
+02:36:31,587 --> 02:36:32,307
+Tamam hocam.
+
+721
+02:36:32,467 --> 02:36:34,147
+Teori doğru mu? Görelim.
+
+722
+02:36:34,247 --> 02:36:34,448
+Tamam.
+
+723
+02:36:35,763 --> 02:36:51,763
+Sonuç olarak Skeç Edith adlı bu görüntü manipülasyon yöntemi, görüntüleri üzerinde manipülasyon yapmak için çizmiş olduğumuz kısmi çizimlerle maske gereksinini ortadan kaldırmaktadır.
+
+724
+02:36:52,804 --> 02:36:59,763
+Yöntem gerçek dünya görüntülerinde bir çeşit manipülasyonlar yapmak için etkili bir yaklaşım sunmaktadır.
+
+725
+02:37:01,075 --> 02:37:17,795
+Makalede sunulan yöntemin performansı da çeşitli deneyler kullanılarak değerlendirilmiş ve sonuçları iletilmiştir. Sonuç olarak bu makale yeni bir görüntü manipülasyonu yöntemi sunarak da görüntü manipülasyonu alanında bir adım daha ileriye götürmüştür.
+
+726
+02:37:17,795 --> 02:37:28,615
+Ben bu makaleyi şundan dolayı da seçtim. Birincisi bu çalışmanın bir demosunun olması benim de bir ilgimi çekmişti.
+
+727
+02:37:29,075 --> 02:37:49,735
+Ne yapıyoruz diye fiziki olarak da görebiliyoruz. Bir ikincisi de öğrencilerle yaptığımız bir open filter uygulayarak yaptığımız bir face detection, face üzerindeki filtrelerin gerçek görüntüler üzerinde karşılaştırmasını yapıyorduk.
+
+728
+02:37:50,067 --> 02:38:01,707
+O yüzden de biraz bağlantılı gibi de geldi. Burada çalışma tam anlamıyla, düzgün çizimlerle yapıldığında aslında bir data augmentation da sağlayabilir.
+
+729
+02:38:02,507 --> 02:38:10,847
+Kısıtlı veriler için. Örneğin, sağlık alanındaki bir takım verilerin arttırımı için belki kullanılabilir.
+
+730
+02:38:11,047 --> 02:38:17,147
+Tabii oradaki doğruluk da önemlidir muhtemelen. Bu şekilde benim sunumum.
+
+731
+02:38:19,219 --> 02:38:39,759
+Teşekkürler [öğrenci]. Konuyu neden seçtiğini de böylece açıklamış oldun. Aslında internette ben çok yakın bir zamanda bununla ilgili yeni geliştirilmiş bir demo gördüm. Mesela bir köpeğin burnuyla ağzı arasına iki nokta koyuyor ve onu açıyor.
+
+732
+02:38:40,308 --> 02:38:51,388
+Köpek ağzını açıyor falan. Bayağı ciddi şeyler var. Demek ki bu alanda çalışmalar var. Tavsiye ederim bir bak istersen.
+
+733
+02:38:52,128 --> 02:38:55,308
+Teşekkür ederim hocam. Çok teşekkür ederim. Sağ olun.
+
+734
+02:38:55,308 --> 02:39:03,148
+Seni de alkışlıyoruz sunumun için. Ve günün son sunumu [öğrenci]. [öğrenci] hazır mıyız?
+
+735
+02:39:03,828 --> 02:39:04,488
+Evet hocam.
+
+736
+02:39:05,648 --> 02:39:06,668
+Tamam, hadi bakalım.
+
+737
+02:39:07,156 --> 02:39:09,156
+Başka bunca mende?
+
+738
+02:39:09,156 --> 02:39:11,156
+Mühendisliğin.
+
+739
+02:39:17,716 --> 02:39:20,556
+Şuna ulaşamadım. O yüzden büyütemedim hocam ben.
+
+740
+02:39:24,476 --> 02:39:37,115
+Nasıl? Oradan büyütmeyeceksin. Şurada slide show var ya. Slide show'a basacaksın. Bak sola gel. Sola gel. O ruler'ın yani o çektiğin metrenin yanında az aşağıda.
+
+741
+02:39:37,195 --> 02:39:39,216
+Bir de klavyeden F5 de olabilir aslında.
+
+742
+02:39:39,495 --> 02:39:41,815
+Doğru o da olur. F5 yap.
+
+743
+02:39:43,796 --> 02:39:46,036
+Şey, FNF5 sizin kılavir.
+
+744
+02:39:46,036 --> 02:39:47,416
+Yok, aynen olmuyor.
+
+745
+02:39:48,396 --> 02:39:49,355
+Nasıl olmuyor?
+
+746
+02:39:49,355 --> 02:39:51,496
+Bu FNF5 benimkimde olmadı da.
+
+747
+02:39:51,956 --> 02:39:56,316
+Hocam şöyle yapayım, bir saniye şuradan olduğu için biraz sıkıntı yaşadım.
+
+748
+02:39:56,695 --> 02:40:00,355
+Yani şu tam dair ekran paylaşımı yeri denk geldi de hocam.
+
+749
+02:40:00,436 --> 02:40:02,996
+Şuradaki yeri bozdum sanırım.
+
+750
+02:40:05,492 --> 02:40:06,672
+Kaydıramıyor muyum acaba?
+
+751
+02:40:07,211 --> 02:40:16,832
+Ya orada onun az soluna gel [öğrenci]. Az önce değiştirdiğin zoom'u yapıyorsun ya, onun hemen sol tarafında.
+
+752
+02:40:17,792 --> 02:40:21,452
+Evet. Ona hocam şeyden dolayı ulaşamıyorum bu şeyden.
+
+753
+02:40:21,971 --> 02:40:22,912
+Zoom'un şeyisi mi?
+
+754
+02:40:23,632 --> 02:40:24,952
+Evet, zoom'dan dolayı ulaşamıyorum.
+
+755
+02:40:24,952 --> 02:40:27,252
+Ya ekranı. Onu kenara çek, öbür tarafa at.
+
+756
+02:40:27,792 --> 02:40:28,691
+Şimdi oldu.
+
+757
+02:40:32,628 --> 02:40:48,268
+Evet, çekemedim. Yapamadım. Peki, o zaman bak yukarıda menüde, ana menüde slide gösterisi yazıyor. En üstte iki, dört, altı, yedi, sekizinci. Orada. Evet, hangisiydi burada slide gösterisi?
+
+758
+02:40:49,811 --> 02:40:53,772
+Başla. Başla nerede? Başla. Evet, işte orada.
+
+759
+02:40:54,231 --> 02:40:55,412
+Biraz zor oldu, özür diliyorum.
+
+760
+02:40:57,031 --> 02:40:57,831
+Hadi bakalım.
+
+761
+02:40:58,592 --> 02:41:00,971
+Merhaba arkadaşlar, ben [öğrenci].
+
+762
+02:41:01,691 --> 02:41:05,231
+Bugünkü slide'ımda da... Hocam bunlar görünüyor mu? Şunları...
+
+763
+02:41:05,396 --> 02:41:10,596
+Buradan aşağı atayım. Yok, biz ekranını tam ekran görüyoruz. Hiçbir soru yok.
+
+764
+02:41:10,596 --> 02:41:25,636
+Tamam, ben kenarlardaki şeyleri görünce siz de görüyormuşsunuz gibi hissettim. Benim bugün anlatmak istediğim makale Lifelong Graph Learning. Bu makaleyi şu yüzden seçtim. [kişisel bilgi]
+
+765
+02:41:26,236 --> 02:41:32,855
+Biomedikal görüntülerde. Bu yüzden ilgimi çekmişti. Bu sebeple bu makaleyi özetlemek istedim.
+
+766
+02:41:33,236 --> 02:41:39,736
+Burada Lifelong Graph Learning'de önce bir Graph Neural Network, bu ağlar üzerinde biraz bir background vermiş.
+
+767
+02:41:39,736 --> 02:41:52,756
+Ve ayrıca Lifelong Learning, yaşam boyu öğrenmenin zaten bu makalede Graph Neural Network, hani graph datalar üzerinde nasıl uygulayabiliriz problemi çözülüyor.
+
+768
+02:41:53,236 --> 02:41:56,936
+Bu yüzden biraz Lifelong öğrenmeyle ilgili bir şeyler bahsedeceğiz.
+
+769
+02:42:01,236 --> 02:42:17,076
+Biz aslında çizge yapılı datalara nasıl adapte edebiliriz bakış açısıyla da yeni bir topoloji olan, yeni bir graf topolojisi olan özellik çizgesi yani graf feature, graf propositmişler, önermişler.
+
+770
+02:42:17,175 --> 02:42:21,015
+Bunlardan bahsediyor ve deneylerden ve sonuçlardan bahsedeceğim. Ben de bu şekilde devam edeceğim.
+
+771
+02:42:21,843 --> 02:42:35,743
+Hocam, bu makalede yoktu ama ben kendim eklemek istedim. Çünkü makalede sanki Graph Neural Network kısmı biraz biliniyormuş gibi anlatılıyor. Ama birazdan buradaki feature notları falan anlatırken çok etkili olmayabilir diyerekten ben kendi hazırlamış olduğum önceki sunumlarından birkaç slide ekledim bu Graph'la ilgili.
+
+772
+02:42:35,743 --> 02:42:49,463
+Aslında Graph dediğimiz şey de bizim etrafımızda bulunan birçok problem Graph olarak reprezent edilebiliyor. Moleküller zaten Graph yapısında gibi görünüyor ya da tekstler Graph gibi ifade edilebiliyor ya da sosyal networklerdeki.
+
+773
+02:42:49,843 --> 02:42:57,443
+Arkadaşlık ilişkileri de graf olarak ifade edilebiliyor. Bunların hepsi zaten normalde problemin doğasında bir graf ifade ediyor.
+
+774
+02:42:57,443 --> 02:43:10,323
+Bu graf nöron network mantığı da bu problemin doğasındaki graf yapısını bozmadan, biz nöron network bunun üzerine nasıl çalıştırabiliriz mantığıyla da graf nöron networks uygulamaları ortaya çıkıyor.
+
+775
+02:43:10,863 --> 02:43:16,223
+Burada biraz şundan bahsetmek istiyorum. Elimizde bir şekilde graf ifade ettiğimiz zaman bir notlar bir de hani etçler.
+
+776
+02:43:16,608 --> 02:43:30,368
+Olması gerekiyor. Ve her bir nodun aslında bir feature dediğimiz, şurada ifade edilen feature'ları olması gerekiyor. Yani elimizde bir graph dediğimiz zaman bir nodlar, onlara bağlı age'ler ve her bir nodun da bir feature'ları olabiliyor.
+
+777
+02:43:30,368 --> 02:43:44,608
+Bu, bunun hani hepsinin sayısı değişebiliyor. Burada age'lerin de sayısı çok fazla olabiliyor. Direction'ın undirected olabiliyor. Notların hepsi aynı türde olabiliyor olmuyor gibi bir sürü bunun ifade ediş şekli var ve bunlara göre de zaten.
+
+778
+02:43:44,608 --> 02:44:12,448
+üzerinde uygulamalar yapılabiliyor. Ben buraya biraz şundan dolayı bahsetmek istedim. Burada da neural network çalışırken mesela biz C nodunun bir sonraki adımında itereşinlığında güncellerken onun komşu nodlarındaki tüm bilgileri topluyoruz ve hani aggregate ediyoruz ve aslında burada A nodunda örnek yapmıştım. C nodununla eski bilgisiyle komşulardan aldığı bilgileri toplayıp bu C nodunun yeni feature'ını çıkartmış oluyoruz. Bunlar da aslında şurada.
+
+779
+02:44:12,608 --> 02:44:17,608
+Şu feature vektörlerin değişmesiyle meydana geliyor. Burada bunun formalizasyonunu veriyoruz.
+
+780
+02:44:18,515 --> 02:44:21,515
+Ben bunu biraz kendim anlatmak istedim. Background olması açısından hocam.
+
+781
+02:44:21,976 --> 02:44:24,095
+Ve burada da zaten sadece isimlerini veriyor makalede.
+
+782
+02:44:24,236 --> 02:44:29,556
+Graph Neural Network uygulamalarında bir çok şit graph yöntemleri var.
+
+783
+02:44:29,636 --> 02:44:32,336
+Graph Convolution Networkler var. Graph Attention Networkler var.
+
+784
+02:44:32,336 --> 02:44:46,336
+Graph Convolution mantığı bu şey. Zaten normalde CNN'deki mantığı, CNN'de etrafındaki hani biz Convolution mantığında alırken mesela 3'e 3'lük aldığımız zaman bir orta pikselin...
+
+785
+02:44:46,515 --> 02:44:51,376
+Bütün kenarlarındaki not pikselleri de alıp onu ortadakine birleştiriyoruz.
+
+786
+02:44:51,416 --> 02:44:52,496
+Orada bir aggregation yapıyoruz.
+
+787
+02:44:53,076 --> 02:44:58,036
+Biraz önce şurada bahsettiğimizde bu hemen orta notdaki çevren komşuluklardan alınan.
+
+788
+02:44:58,036 --> 02:45:01,956
+Bu aslında bir konvolüsyon mantığı. Bunun adaptasyonuyla zaten ortaya çıkıyor.
+
+789
+02:45:02,556 --> 02:45:06,576
+Konvolüsyon graf networkler.
+
+790
+02:45:07,275 --> 02:45:09,056
+Graf convolution networkler var.
+
+791
+02:45:09,416 --> 02:45:10,996
+Ayrıca graf attention networkler var.
+
+792
+02:45:11,156 --> 02:45:13,935
+Buradaki hepsi şu formalizasyon değişmesiyle farklılaşıyor hocam.
+
+793
+02:45:14,036 --> 02:45:14,515
+Burada aggregation.
+
+794
+02:45:14,515 --> 02:45:25,236
+ve update fonksiyonlarında kullanılan fonksiyonlara göre bizim burada kullanılan Graph Sage, Gnet, FastGNL, daha bunun bir sürü ya da Graph Isomorphism Network gibi networkları oluşturabiliyoruz.
+
+795
+02:45:25,595 --> 02:45:34,916
+Bu Graph Attention biraz burada önemli. Diğerden buna da bahsettim. Graph Attention'da da aslında bizim şuradaki edge'lerimizde ağırlığı oluyor.
+
+796
+02:45:34,916 --> 02:45:42,296
+Mesela konvizyonda bu ağırlık önemsiz ama buradaki attention'da bu ağırlıklar var ve bu her bir nodun başka bir nodla ne kadar?
+
+797
+02:45:42,515 --> 02:45:49,816
+F nodu, C nodu için ne kadar önemli gibi bir etensin kat sayısı hesaplıyoruz. Bunlar da graf etensin networkler oluyor.
+
+798
+02:45:50,484 --> 02:46:09,703
+Bunların Graphs HD bu mini batch uygulamasını değiştirerek ortaya çıkıyor. Ben biraz bu kısmı hakimdim ama yaşam boyu öğrenme kısmına çok hakim değilim. O yüzden biraz da makalede biliniyormuş gibi anlatıyor. Burada biraz basic bir information'a devam etmiş gibi olacağım.
+
+799
+02:46:18,484 --> 02:46:25,684
+50 bin. Bu hiç değişmiyor. Bunun üzerine biz bir ne yapıyoruz? Sürekli bir test verişse. O öğrenmiş olduğu tren verişse hiç değişmeden devam ediyor.
+
+800
+02:46:26,260 --> 02:46:52,420
+Ama yaşam boyu öğrenme dediğimiz zaman aslında train bittikten sonra da bazı küçük eklemelerle, biz insanda sürekli experience'ler kazandı gibi küçük eklemelerle, küçük veriler vererek de biz bu train'i değiştirmek istiyoruz. Oradaki bilgiyi de eklemek istiyoruz buna. Buna yaşam boyu öğrenme deniliyor. Bunun için farklı yöntemler var. Non-rehearsal metotlar ya da reharsal metotlar diye ifade ediliyor burada.
+
+801
+02:46:54,260 --> 02:47:01,460
+Metotlar diye ifade ediliyor. Bunlar da mesela non-rehearsal metotlarda eski veriler saklanmıyor.
+
+802
+02:47:01,739 --> 02:47:12,840
+Bediğim zamandan sonra da zaten unutuluyor gibi ifade ediliyor. Rehearsal metotlarda ise ya bu trende hep sürekli yeni bir veri ekleme olayı oluyor bu yaşam ve öğrenmede.
+
+803
+02:47:13,620 --> 02:47:21,380
+Buna şunu da söyleyecektim. Continual Learning ya da Incremental Learning de deniliyor. Incremental Learning de şu yüzden ifade etmek istedim.
+
+804
+02:47:22,260 --> 02:47:28,400
+Eğne bittikten sonra da bir tane daha eklenerek, inkrement edilerek learning devam ediyor mantığından kaynaklı.
+
+805
+02:47:28,900 --> 02:47:33,640
+Burada ise şöyle yapılıyor. Ya eski data provaya ekleniyor diye bahsediyor.
+
+806
+02:47:33,640 --> 02:47:39,840
+Ya da önceden kullanılmış bir datayı biz tekrardan eğitime eklersek gündüzünden bir metotlar var.
+
+807
+02:47:39,940 --> 02:47:42,800
+Burada da söylenen birkaç metot var ama isimlerini yazmamışım hocam buraya.
+
+808
+02:47:43,507 --> 02:48:08,087
+Buradaki asıl sundukları onların özellik çizgisi. Feature Graph sunuyorlar. Biraz önceki şeyleri de bu yüzden göstermiştim. Burada şu şekilde bir ifade var. Elimizde bizim normalde bir Graph var. Regular Graph diyoruz. Her Graph'ın mesela A nodu. Bu A nodunun 1.001 dediğimiz, bunların Feature'ları biraz önce göstermiş olduğumuz. Bunlar da B nodu. Bunlar da onun komşulukları.
+
+809
+02:48:09,363 --> 02:48:32,903
+Bu şu manatıktan ortaya çıkıyor feature graph. Normalde biz bir graph oluşturduğumuz zaman mesela feature'ları şunlar alacağız diyoruz. Diyelim ki mesela sosyal network'lerden bahsedecek olursak mesela her kişi bir not ifade ederken orada mesela diyelim ki bunun yaşı, cinsiyeti gibi ifade ettiğimiz, belirlediğimiz özellikler aslında bizim buradaki feature vektörümüzü ifade ediyor.
+
+810
+02:48:33,459 --> 02:48:47,639
+Bu feature vektörü her zaman sabittir aslında. Biraz daha stable diye düşünüyoruz. Ama number of nodes dediğimiz, buraya girebilecek kişi sayısı artabiliyor. Ama her kişinin aslında özelliği belli ve bizim feature'ımız sabit.
+
+811
+02:48:48,719 --> 02:49:01,420
+Ve bu bakış açısıyla feature graph'ı oluşturmak istiyorlar. Aslında diyoruz ki bizim number of node feature'larımız daha stable. O yüzden biz bunu feature graph haline geçirelim diyorlar. Ve şöyle yapıyorlar burada da.
+
+812
+02:49:01,459 --> 02:49:08,600
+Burada alıyorlar mesela anın biri dediğimiz bu bizim için yeni bir node oluşuyor. Yani bütün feature'lar aslında bir node oluyor.
+
+813
+02:49:09,059 --> 02:49:18,879
+Node'ların hepsi de aslında ayrı bir graph oluyor burada. Şurada ifade ettiğimizde. Normalde bunlar node iken bunların hepsi ayrı bir graph ifade ediyor ve feature graph'ları oluşturuyorlar.
+
+814
+02:49:19,539 --> 02:49:28,379
+Ve şunu da söyleyecektim biraz önce unuttum ama bu graph problemlerinde 3-5 tane problem çözüyoruz. Mesela hani şuradan bahsedeyim hocam.
+
+815
+02:49:28,688 --> 02:49:36,368
+Şimdi biz bu şekilde bir graf ifade ettiğimiz zaman graf classification yapabiliriz. Elimizde birden çok graf olup, bunun arasında graf classification işlemi yapabiliriz.
+
+816
+02:49:36,627 --> 02:49:41,627
+Ya da elimizde bir tane graf ama bir sürü nodu olup, çok büyük miktarda bu social networklerde oluyor.
+
+817
+02:49:41,967 --> 02:49:47,587
+Burada not classification yapabiliriz. Ya da elimizde yine büyük bir graf var.
+
+818
+02:49:48,007 --> 02:49:52,987
+Edge prediction gibi işlemlerde, aradaki edge'leri tahmin etme gibi işlemlerde yapabiliyoruz.
+
+819
+02:49:52,987 --> 02:49:56,688
+Bunu şuradan, bu yüzden söylemek istedim. Elimizde şöyle bir regular graf.
+
+820
+02:49:56,688 --> 02:50:05,268
+varken bu problem bizim için not classification problemiyken biz bunu feature graph haline çevirdiğimiz an artık bizim problemimiz graph classification problemine gelmiş oluyor.
+
+821
+02:50:06,804 --> 02:50:20,043
+Burada da şeyi kısmını anlatıyor. Bu graflarda, bu graflar arasında age var demiştik. Bu age'lerin hepsini biz ecesiz matrisde tutuyoruz. Buradaki feature grafın ecesiz matrisi nasıl oluşturuyoruz diye bakıyor.
+
+822
+02:50:20,043 --> 02:50:34,804
+Burada da bizim şurada oluşturmuş olduğumuz bir tanesinin channel'ları, burada channel diye ifade etmiş, feature diye ifade ediyorum. Ve onun komşularının o channeldaki değerlerini alıp, komşuların değerlerini alıp, bunun arasında çarptık.
+
+823
+02:50:34,804 --> 02:50:50,703
+F çarpı F'lik bir feature matriksini oluşturmuş oluyor. Bu zaten şu sine root dediğimiz işlemde bunlar arasındaki çarpık uzaklıklarını alma işlemini yapan bir işlem. Demin de ifade ettiğim bir yere gelmiş oluyor.
+
+824
+02:50:51,379 --> 02:51:02,440
+Bu feature graph bizim için notların graf haline geldi. Feature'ların not haline geldi. Edge'ler yine edge olarak kalıyor ama her bir graph bizim için bir sample haline dönüşmüş oluyor.
+
+825
+02:51:02,440 --> 02:51:10,239
+Ve buradaki ilişkiden dolayı da bizim not klasifikasyonumuz graph klasifikasyon problemlerine dönüyor. Fixed feature'larımız aslında bizim için fixed node oluyor.
+
+826
+02:51:10,459 --> 02:51:19,200
+Bunun da bize şöyle bir faydası oluyor. Bunun üzerinden de devam ediyor. Bizim aslında bu bizim parametre sayımız.
+
+827
+02:51:19,379 --> 02:51:34,579
+sayımızı azaltıyor. Çünkü bizim artık fixed feature'larla oluştuğu, hani not sayısımız hep sabit olduğu için bizim burada computational'ımız da azalıyor ve bu da bizim parametre sayımızın azalmasına sebep oluyor. Bu da bu hani prost diye anlattıkları yönlerinden bir tanesi.
+
+828
+02:51:35,796 --> 02:52:03,015
+Bir de şu şekilde bir karşılaştırma yapacak olursak hocam, aslında regular lifelong learninglerde elimizde her bir item ve bunların ait oldukları output diyelim, label da diyebiliriz. Artık bu probleme göre değişir. Ve bunların zamana göre artık ifadeleri var. Biz bunu eğer regular graflarda yapmak istersek, elimizde X dediğimiz bizim nodlarımız oluyor. Ve bizim aslında tutmamız gereken bir de bunların neighborları, komşularını tutmamız gerekiyor. Ve bunların ait oldukları outputları ifade ediyoruz.
+
+829
+02:52:03,796 --> 02:52:20,595
+Zamanına göre ifadesi bu şekilde ifade ediliyor. Peki biz lifelong learning'i feature graph ile yapacak olursak aslında şurada hepsini tek seferde birleştiriyorlar. Ve aslında bunun ikisi aynıdır. Aslında biz bunun üzerine lifelong learning'i uygulamamız daha kolaydır diye bir yaklaşımları var hocam burada.
+
+830
+02:52:21,735 --> 02:52:28,595
+Şimdi normalde graph neural network'lerde biraz önce küçük bir şekilde göstermiştim buradaki matematik altyapısını.
+
+831
+02:52:29,744 --> 02:52:44,763
+Graf Convaluysiyon Network, Graf Attention Network gibi daha versiyonlu Graf Isomorphism Network gibi versiyonları var ve oradaki komşulukların hani aggregate etme dek kullanıcıları fonksiyonlara göre bunlar değişiyor demiştik zaten ama mantıkları aynı. Hepsi komşulukları birleştiriyor.
+
+832
+02:52:45,172 --> 02:52:50,172
+Şimdi burada da Feature Graph'ta uygulayabilmek için üç tane layer ifade etmişler.
+
+833
+02:52:50,172 --> 02:52:57,172
+Hani hepsini kullanmamışlar ama biz eğer bunları uygulamak istersek böyle bir formülize edebiliriz mantığıyla çıkmışlar yola.
+
+834
+02:52:57,172 --> 02:53:02,172
+Feature Broadcast Layer'da sadece mesela şunu almışlar. Hani bunu SigmaVity kullanarak,
+
+835
+02:53:02,172 --> 02:53:09,172
+Adjacency Feature'lerini, kendi X notlarını ve weightlerini alarak oluşturuyorlar.
+
+836
+02:53:13,172 --> 02:53:18,612
+Hani konvasyonlara, network'ta yapılan mantığı yapmaya çalışıyorlar. Burada yine aynı şekilde hocam şuraları.
+
+837
+02:53:18,612 --> 02:53:23,912
+Hani yine üçü bir şekilde, üçü toplanıp hani bizim sigma öneğe girip bir sonraki layer'ımızı belirliyor.
+
+838
+02:53:23,992 --> 02:53:30,212
+Ama burada bir şundan önce bizim Eccs Matrix'in sayısını da azaltabiliriz diyerekten bu şekilde bir işlemden geçiriyorlar.
+
+839
+02:53:30,292 --> 02:53:37,232
+Yani bizim Eccs Matrix'in boyutunu da küçültmemiz gerekirse diyerekten bu şekilde bir layer ekliyorlar.
+
+840
+02:53:37,852 --> 02:53:40,772
+Eternet şınarlarda da weight'leri aslında sabit weight'ler.
+
+841
+02:53:41,172 --> 02:53:52,752
+İfade edildi diye düşünülüyor. Burada da weight'i represent ederken kullanılan yöntemler. Bu zaten normal graph, attention network'ta da kullanılan, hani linkleriyle kullanılarak bu şekilde ifade ediliyor. Buna feature base'i çeviriyorlar burada da.
+
+842
+02:53:53,172 --> 02:54:10,072
+Deneylerde hocam hepsini kullanmamışlar. Bazılarında iki tane broadcast layer kullanmışlar. Bu şekilde ifade etmişler sadece. Biz bu şekilde üç tane layer tasarladık diyerekten ifade edilmiş ama deneylerin hepsinde şu şu kullanılıyor diye bazılarında sadece broadcast'ı kullanmışlar. Bu şekilde bir karşılaştırma yapmışlar.
+
+843
+02:54:11,219 --> 02:54:24,219
+Bu deney yapılırken de üç farklı bir deney stratejisi kuruyorlar. Birinci deneyimiz zaten var olan grap veri setleri var. Cora, Stizer, Publet. Bunlar zaten...
+
+844
+02:54:24,852 --> 02:54:31,532
+Çok büyük miktarda bir tane graftan değil, bir tane graftan oluşuyor ama buradaki not sayısı oldukça yüksek.
+
+845
+02:54:31,632 --> 02:54:38,652
+Not classification yapılan citation grafları hepsi. Bu graflar üzerinde bir çalışma yapılıyor.
+
+846
+02:54:38,772 --> 02:54:43,332
+Buradaki tasklar önemli. R dediğimiz normal regular, hiçbir şey değişiklik yapmadan.
+
+847
+02:54:43,332 --> 02:54:52,852
+Biz bu sistemleri, graph convolutional, saga, attention ve feature graph network dediğimiz network'ı kullanarak bu feature graph network hem feature graph...
+
+848
+02:54:52,852 --> 02:54:59,072
+Hem de aslında burada oluştururken mesela burada iki tane broadcast layer kullandık diye ifade edildi bu deneyde.
+
+849
+02:54:59,212 --> 02:55:04,592
+Diğer layer'lerin hepsi de kullanılmadı. Kendi kullanıcıları deneylerden ifade edilirken.
+
+850
+02:55:05,472 --> 02:55:10,372
+Bu regular bir şekilde ifade ediliyor. Bu dediğimiz şey data incremental.
+
+851
+02:55:10,672 --> 02:55:14,492
+Bu incremental learning de ya data ekliyoruz ya da class ekliyoruz.
+
+852
+02:55:14,492 --> 02:55:18,492
+İki tane versiyonu var. Data incremental, class incremental diye ifade ediliyor.
+
+853
+02:55:18,863 --> 02:55:46,823
+Bunun da şöyle bir farkı var. Data Incremental olduğunda eklenen, bir sonra sürekli öğrenmede eklenen verinin klası bizi ilgilendirmiyor. Randomda karışmış bir veri var. Biz bunlardan random bir şekilde ekleyebiliriz diye ifade edildiği Data Incremental Module ile sonuçlarında veriliyor. Bir de Class Incremental Module var. Bu önemli. Bunda ise şöyle oluyor. Class Incremental Module'da veriler, mesela bizim elimizde 3 tane bir klas var. Önce klaslarına aydınıyor.
+
+854
+02:55:46,863 --> 02:55:59,863
+Birinci klasın verileri bitiyor bu incremental şeklinde verilirken. Sonra ikinci klasın verilerine geçilerek devam ediyor. Bunda bir anlamlı yok. Burada klas klas ekleme yapılıyor incremental olarak. Ve sonuçlara baktığımızda da aslında...
+
+855
+02:56:01,683 --> 02:56:20,323
+Bu Feature Graph Learning Network'lerde oldukça başarılı sonuçlar veriyor hocam. Yani Graph Attention Network normal zamanda burada baya ön planda olurken diğer veri setlerinde de gayet yüksek bir miktarda doğruluk oranı veriyor. Bu zaten bizim overall doğruluk oranını veren bir tablo.
+
+856
+02:56:24,048 --> 02:56:33,528
+İki tane broadcast layer kullanılıyor ama bu dataset'in biraz daha özelliklerini sayarak söylüyor.
+
+857
+02:56:33,608 --> 02:56:38,068
+Buraya bir tane de graph transform layer ekledik diye ifade ediliyor deneylerde.
+
+858
+02:56:38,848 --> 02:56:40,288
+Bu şekilde hocam.
+
+859
+02:56:40,648 --> 02:56:47,128
+Ve sonuçlar aslında üç yöntemde de feature graph network başarılı sonuçlar veriyor ama
+
+860
+02:56:47,128 --> 02:56:51,448
+bunun üçü arasında karşılaştığı zaman data incremental model'un daha başarılı olduğu söyleniyor.
+
+861
+02:56:52,048 --> 02:57:07,868
+Burada önemli bir detay da şu. Aslında evet, Grab Attention Network ya da Grab Convention Network'ler de Grab Attention sanırım daha iyi sonuçlar verirken aslında Feature Grab Network'ler burada kullanılan parametre sayısını oldukça azaltıyor. Yani burada mesela şurada ben kıpırdattım diye görünmüyor sanırım.
+
+862
+02:57:09,012 --> 02:57:24,692
+35 bin parametre sayısı var iken ama artık Feature Graph Network'lerde 21 bin parametre sayısına kadar inebiliyor. Bu önde konulan başarıdan bir tanesi bu.
+
+863
+02:57:25,087 --> 02:57:43,547
+Diğer bir örnek ise Distributed Action Recognition da kullanılıyor. Burada da bir feature graph network nasıl uygularız diye yapılıyor. Burada şu şekilde giyilebilir sensörler var elimizde. Beş tane. Sağ sol kol, melde ve ayaklarda sensörlerimiz var.
+
+864
+02:57:46,623 --> 02:57:57,083
+Yani bir veri verdiğinde bize beş tane data stream veriyor ve her class içinde 25 tane bunlardan alınıyor.
+
+865
+02:57:57,224 --> 02:58:04,283
+Hani 25 defa alınarak. Bizim burada growing graph diye bir mantık var. Bunu oluşturuyorlar.
+
+866
+02:58:04,852 --> 02:58:17,172
+Bunların hepsi aslında bizim için bir not oluyor ve bunların üzerinde bir klasifikasyon yapıyorlar. Detaylarını çok vermemişler. Ben uygulayabilmek için biraz detaylarına baktım ama biraz üst seviyeye anlatıp geçmişler yüzeysel.
+
+867
+02:58:18,324 --> 02:58:29,324
+Bunların da üzerinde Graph Convolutional, Graph Attention, ve Graph Neuronic uygulamaları uygulanıyor.
+
+868
+02:58:29,324 --> 02:58:34,324
+Ve buradaki şu üç table'da bize şey veriyor.
+
+869
+02:58:35,860 --> 02:58:55,680
+Forgetting Rate diye bir mantık var Life Learning'de. Onu veriyor her bir klasa. Hani burada da zaten rest durumu, rest sağ durumu gibi ifadeler var. Bu durumların hepsi 13 taneydi sanırım. 13 durumun ayrı ayrı Forgetting Rate'lerini veriyor bize. Burada overall'da baktığımız zaman Forgetting Rate'e en düşük olan FeatureGraph Network olmuş oluyor.
+
+870
+02:58:56,079 --> 02:59:20,699
+Ve burası da bizim için Precision. Precision değerlerini veriyor bize burada. Burada iki şekilde baktık diyor. Bir regular olarak baktığımız zaman, regular learning yaptığımız zaman Precision bu şekilde olurken, lifelong, incrementable learning yaptığımız zaman ise burada da bu şekilde bir öğrenme performansı aldıklarını söylüyorlar.
+
+871
+02:59:21,587 --> 02:59:40,567
+Burada bir de çok 3 farklı bence deney yapmışlar. Bir de şu şekilde bir deney var. Image Feature Matching yapıyorlar. Bu da Tartan Air Dataset'in üzerinde yapıyorlar. Bu Tartan Air Dataset'i bir Slam Dataset'i. 3D alınmış ve içlerinde çok farklı veriler var. Hani indoor, outdoor.
+
+872
+02:59:42,227 --> 02:59:59,867
+İndoor, Outdoor, ondan sonra Naturalistik, Wood ve Sea olan, Artificial olanlar var. Bu şekilde çok geniş ve oldukça büyük bir dataset. Ben bu dataset'i biraz indirip kendimde feature matching algoritmaları uygulamaya çalıştım ama indirmekte zor.
+
+873
+03:00:00,000 --> 03:00:27,859
+İndiremedim şu ana kadar. O yüzden küçük bir örnekler üzerinde yaptım. Burada da iki tane yöntem yapıyorlar. Graph Attention Matching diye ifade ediliyor burada. Artık Network'ın bu match yaparken Graph Attention Matching diye uyguluyorlar. Bir de Feature Graph Network uyguluyorlar. Bu da bizim zaten Mean Error Pixel bazında. Burada iki yaklaşım olabilir denildi. Bir subfeature.
+
+874
+03:00:28,000 --> 03:00:46,979
+Süperpiksel aslında. Daha büyük pikseller bazında ya da piksel bazında yapılabilir gibi bir bakış açıları var ama burada piksel bazındaki sonuçları vermişler. Buradaki mean errorları veriyor. Buradaki mean error'a baktığımız zaman da aslında Feature Graph Network güzel sonuçlar daha düşük sonuç vermiş durumunda.
+
+875
+03:00:47,603 --> 03:01:11,123
+Bu sonuca gelecek olursak, burada bu makalede aslında en önemli olan yeni bir topoloji ifade ediyorlar Feature Graph olarak. Ve bu da aslında bizim Not Classification Problemimizin Graph Classification Problemine döndürdüğünü ifade ediyorlar. Ve buna da aslında lifelong metodlar, regular lifelong metodlar daha uygulanabilir olarak gösteriliyor.
+
+876
+03:01:13,843 --> 03:01:39,843
+Bu performanslarda aslında data incremental ve cross incremental taslarda uygulanabilirliğini gösterdik diye ifade ediliyor. Ama birkaç limitation var. Birincisi, şu ana kadar number of neighbor komşu sayısının değişiklik gösterebileceği için aslında bu daha kompetenasyonla yapış...
+
+877
+03:01:40,275 --> 03:01:45,935
+Hesaplaması çok daha düşük sonuçlar elde ediyorlar. Bunu limitation olarak koymuşlar.
+
+878
+03:01:45,935 --> 03:02:00,036
+Ve kendileri bu düzeneye oluştururken aslında weight'in her zaman bisikreler olduklarını düşünüyor ama aslında çoğu durumlarda, var olan graph durumlarında bu bir vektör olabiliyor, eşler ifade eden. Bunun için düzenlemeler yapılması gerektiğini söylüyorlar.
+
+879
+03:02:02,195 --> 03:02:03,775
+Benim sunumum bu kadar hocam.
+
+880
+03:02:06,420 --> 03:02:33,899
+Ben şöyle bir şeyler yaptım. Bu çok küçük kaldı. Ben daha büyük yapmayı planlıyordum hocam burada. Ben SIFT algoritmasını aslında iki tane bu left-right alabildiğim bir örnekte karşılaştırdım. Amacım aslında tüm veri sesini yapmaktı ama bu Tartan Air veri seti, oldukça büyük bir veri set indirmekle biraz zorlandım. O yüzden şöyle küçük bir örneğini yapayım dedim SIFT ile. Ama aslında bu da bu şekilde. Sorunuz varsa alabilirim.
+
+881
+03:02:36,180 --> 03:02:48,299
+Teşekkürler [öğrenci]. Evet, soru var mı? Sınıfa sormadık hiç. [öğrenci] sunumunda İngilizceden İngilizce'ye yapmışsın.
+
+882
+03:02:49,119 --> 03:02:55,719
+Hocam, böyle şey yaşadım biraz. Türkçe mi anladın? Bazı şeyleri de Türkçeleştirmekle zorlandım ifadeleri.
+
+883
+03:02:56,899 --> 03:03:00,819
+Yok, slide'larını hep İngilizce yazmışsın, onu dedim.
+
+884
+03:03:00,819 --> 03:03:02,819
+Evet, bazı yerlerde hocam.
+
+885
+03:03:03,507 --> 03:03:10,688
+Böyle şey yapamıyorum. Öyle öğrendiğim zaman sanki öyleymiş doğrusu, öyleymiş gibi hissediyorum. Kamullenmekte zorlanıyorum bazı Türkçe ifadelerini.
+
+886
+03:03:10,688 --> 03:03:14,988
+Sona doğru hele tümüyle İngilizce gördüm sanki. Evet.
+
+887
+03:03:16,948 --> 03:03:37,288
+Yani graf tarafından problemi çözmek ayrı bir bakış açısı. Buradaki başarı artışları çok çok çarpıcı değil ama parametre sayısının azalması önemli. Tabii ki oradaki süreyi kısaltıyor bence. O açıdan bir avantaj mutlaka sağlıyor.
+
+888
+03:03:37,948 --> 03:03:44,408
+Tabii grafa yatkınlığım var. O yüzden bu konuyu seçtim dedin belli oluyor. Güzel.
+
+889
+03:03:44,948 --> 03:03:59,368
+Teşekkür ediyoruz [öğrenci]. Sana da şöyle alkışlıyoruz. Bu haftaki sunumlarımız da güzel oldu bence. 9 kişi sunum yaptı. Hepinize teşekkür ediyorum.
+
+890
+03:04:00,368 --> 03:04:10,988
+Ve önümüzdeki hafta yine gönüllü bir 9 kişiyi dinleyeceğim ama ondan sonra bir 10 kişi kalacak gibi görünüyor.
+
+891
+03:04:11,700 --> 03:04:18,680
+Haftaya konuşuruz detayları ama önümüzdeki hafta herkes hazırlıklı gelsin. Son hafta sunumları olacak.
+
+892
+03:04:20,000 --> 03:04:27,380
+Peki, görüşmek üzere o zaman. Hepinize iyi bir hafta diliyorum. Hoşçakalın arkadaşlar.
+
+893
+03:04:29,220 --> 03:04:30,740
+Teşekkürler, görüşmek üzere.
+
+894
+03:04:31,480 --> 03:04:33,240
+Teşekkür ederiz hocam, görüşmek üzere.
+
+895
+03:04:33,480 --> 03:04:35,140
+Görüşürüz, hoşçakalın.

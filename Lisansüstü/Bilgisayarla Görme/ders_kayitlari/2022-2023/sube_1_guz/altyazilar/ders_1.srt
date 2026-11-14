@@ -1,0 +1,2587 @@
+1
+00:02:41,972 --> 00:02:42,272
+Teşekkürler.
+
+2
+00:02:56,692 --> 00:02:57,652
+Merhabalar.
+
+3
+00:06:23,156 --> 00:06:24,656
+Sesim geliyor mu arkadaşlar?
+
+4
+00:06:29,620 --> 00:06:30,560
+Aynen geliyor.
+
+5
+00:06:31,160 --> 00:06:31,540
+Geliyor.
+
+6
+00:06:31,540 --> 00:06:32,540
+Tamam.
+
+7
+00:06:36,480 --> 00:06:38,480
+Sunum gözüküyor mu?
+
+8
+00:06:40,500 --> 00:06:41,040
+Gözüküyor.
+
+9
+00:06:42,259 --> 00:06:43,420
+Tamam.
+
+10
+00:06:45,280 --> 00:06:48,620
+Bugün kaldığımız yerden devam edelim.
+
+11
+00:06:50,920 --> 00:06:56,220
+Geçen dersimizde nörel networklere başlamıştık.
+
+12
+00:06:57,459 --> 00:07:00,699
+Kalem.
+
+13
+00:07:04,915 --> 00:07:25,836
+Neural Network'lere başlamıştık. Neural Network'ler bir Supervised Learning örneğiydi. Eğitimli eğitim. Elimizde X-A şeklinde girişler var.
+
+14
+00:07:27,283 --> 00:07:33,683
+Her bir XI içinde bir YYI label etiketi var.
+
+15
+00:07:35,043 --> 00:07:43,564
+Ve I birden P'ye kadar gidiyor. Yani elimizde P tane observation örnek var.
+
+16
+00:07:43,564 --> 00:07:47,743
+Bu bizim training setimiz oluyor. Training dataset, eğitim setimiz.
+
+17
+00:07:57,812 --> 00:08:22,072
+Supervised modeli veriyoruz. Burada model bir şekilde modelin parametreleri olur. Model parametrelerini eğitmemiz lazım. X'i veriyoruz. Y çıkışı bekliyoruz. Öyle bir model eğiteceğiz ki X'i verdiğimizde doğru Y'yi bize verecek.
+
+18
+00:08:27,636 --> 00:08:36,756
+Örneklerine baktığımızda, sınıflama mesela, bir supervised learning örneği.
+
+19
+00:08:39,196 --> 00:08:45,416
+Sınıflamada bir resim alıyoruz ve bu resmi direkt sınıflıyoruz. Yani köpek diyoruz.
+
+20
+00:08:46,456 --> 00:08:54,596
+Hani köpek, yanında şurada da işte çim var falan gibi bir şey demiyoruz. Tüm resme birden köpek diyoruz.
+
+21
+00:08:56,788 --> 00:09:11,468
+Regresyon yine yapılabiliyor. Regresyon sınıflama sonucunun bir veya birden fazla sayı vermesi.
+
+22
+00:09:15,347 --> 00:09:37,947
+Burada da mesela denoizing için düşünürseniz, esasen burada ne var? Resmin her bir pikseli için karşılık gelen pikselde bir sayı çıkacak ve doğru sayıyı çıkartmasını istiyoruz. Resimler sayılardan oluştuğu için bu bir regresyon programı olarak düşünülebilir denoizing.
+
+23
+00:09:41,620 --> 00:10:08,340
+Gürültüden arındırma. Bunun yanında daha ayrıntılı, yani burada 2 de var, 3 de var, 4 de var gibi uygulamalara Structured Prediction denilebiliyor. OCR bunun bir örneği mesela. Bu tabii daha ileri bir uygulama olmuş oluyor.
+
+24
+00:10:13,107 --> 00:10:29,847
+Deep dediğimiz zaman öğrenmeye nöral networkler aklımıza geliyor. Ve nöral networklerin de şuradaki katman sayısının çokça olduğu networkler geliyor.
+
+25
+00:10:29,847 --> 00:10:37,167
+Yani bunlar 16 gibi, 256 gibi, 100 gibi, 200 gibi en son.
+
+26
+00:10:37,567 --> 00:10:56,408
+Takip etmiyorum, maksimum kaç katman var gibi büyük sayıda katmanlardan oluşan yapılar oluyor. Bu yapılar sayesinde yapılanı öğrenmeye genelde deep ismi veriliyor.
+
+27
+00:11:03,155 --> 00:11:09,475
+Bir giriş yapalım Nural Network'e.
+
+28
+00:11:12,755 --> 00:11:18,115
+Varsayımlarımız, giriş imgesinin vektörize olduğunu varsayıyoruz.
+
+29
+00:11:30,131 --> 00:11:42,731
+Satır haline getirdiniz, vektör haline getirdiniz. Böyle bir vektör haline getirdiniz indiği. Bu varsayılıyor. Bu gelecek slide'larda.
+
+30
+00:11:44,311 --> 00:11:52,551
+Hedef etikette sınıflama yani diskrit. Yani köpek, kedi falan gibi.
+
+31
+00:11:57,971 --> 00:12:07,251
+Giriş vereceğiz, çıkış alacağız. Dolayısıyla bu bir fonksiyon.
+
+32
+00:12:09,251 --> 00:12:14,991
+Fonksiyonumuza girişi vereceğiz ve çıkış alacağız.
+
+33
+00:12:16,111 --> 00:12:19,551
+Nasıl fonksiyonlar kullanılabilir?
+
+34
+00:12:21,360 --> 00:12:32,039
+Basit fonksiyonların kompozisyonu, birleşiminden oluşan bir sistem tercih ediliyor neural networklerde.
+
+35
+00:12:32,039 --> 00:12:45,720
+Ve bu non-linear bir kompozisyon oluyor. Lineer kombinasyon olmuyor. Neden? Bunu birazdan göreceğiz.
+
+36
+00:12:47,700 --> 00:13:12,240
+Burada bir neural network örneği görüyoruz. X girişi var. Şu kutulardan her biri bir katmanı temsil eder. Neural network terminolojisinde. X girişi bu birinci katmanda. X'i bir dikine vektör olarak düşünün.
+
+37
+00:13:15,316 --> 00:13:18,196
+W matrisiyle çarpılıyor.
+
+38
+00:13:18,196 --> 00:13:20,236
+Şu şekilde.
+
+39
+00:13:32,148 --> 00:13:47,048
+Bu bize bir ne verir? İkinci katmanda kaç tane boyut olmasını istiyorsak şu W maddesinin boy sayısını ona göre ayarlarız.
+
+40
+00:13:48,988 --> 00:13:58,388
+Diyelim ki 400'e 400'lük girişimiz olsun. 400'e 400'lük bir girişte.
+
+41
+00:13:59,731 --> 00:14:08,851
+Ne yapıyor? 16'nın arkasında 4 tane 0 oluyor. 160.000. 160.000'lik bir piksel sayımız var.
+
+42
+00:14:15,155 --> 00:14:38,455
+Eğer birinci ve çıktığımızda diyelim ki 10. 10 çıktığa indireceğiz. Outputta 10. Dolayısıyla 160.000'den bir step sonra bir step sonra 10'a olacak. Mesela 160.000'den mantıklı bir şey bana ne gibi geliyor? 160.000'de 10'un arasındaki bir sayı. Mesela 80.000 diyelim.
+
+43
+00:14:40,179 --> 00:14:51,500
+Birinci adımda 80.000'lik bir çıktı elde edeceğiz. Yani şu H1 çıksıtı 80.000 pikselden oluşsun.
+
+44
+00:14:55,956 --> 00:15:04,196
+Bunu yapabilmek için W'nun boyutu ne olması lazım? 80.000 olması lazım satır sayısı.
+
+45
+00:15:07,635 --> 00:15:21,096
+Tabii ki sütün sayısı 160 bin olması lazım. Çarpım yapıyoruz. Bunu yaptığımızda ne oluyor? 80 bin bize ne verecek?
+
+46
+00:15:25,652 --> 00:15:30,292
+80.000 satıra sahip bir vektör verecek.
+
+47
+00:15:32,932 --> 00:15:35,751
+Ve bu bizim H1 çıktığımız olacak.
+
+48
+00:15:40,628 --> 00:15:52,048
+olmayacak, pardon. H1 çıktığımız olmayacak. Neden? Sonra da onu bir non-linear fonksiyona veriyoruz. Şuradaki gibi.
+
+49
+00:15:52,048 --> 00:16:06,628
+Bu non-linear fonksiyon, relü buradaki max 0 veya değerin kendisi.
+
+50
+00:16:07,668 --> 00:16:22,108
+Buradaki başka non-linearitiler de kullanılabiliyor. Önemli olan burada bir non-linear kullanmak. Tabii farklı non-linearitilerin başarısı farklı olabiliyor.
+
+51
+00:16:25,108 --> 00:16:28,988
+Bunu devam ettiriyoruz.
+
+52
+00:16:31,956 --> 00:16:42,456
+H1 bu sefer ikinci katmana bir girdi olarak çıkıyor. Diyelim ki 80.000'den buradan 40.000'e indireceğiz.
+
+53
+00:16:45,275 --> 00:16:56,235
+H2'nin 40.000 olması için bu sefer W2'nin eleman satır sayısı 40.000 olacak. Sütün sayısı 80.000 olacak.
+
+54
+00:16:57,043 --> 00:17:23,683
+H1 ile çarpıyoruz. Yine non-linearity. Çıktı H2 oluyor. Sonuncu da 40.000'i de 10'a indirmek için W3'ün satır sayısı 10 oluyor. Sütün sayısı 40.000 oluyor. Çarpıyoruz. Burada non-linearity koymamış son katmanda. Sonucu output çıktı olarak veriyor. Böyle bir...
+
+55
+00:17:24,276 --> 00:17:37,936
+Neural Network. Bu Neural Network'e bazıları iki hidden layer der. Bazıları dört layer diyebiliyor.
+
+56
+00:17:39,556 --> 00:17:49,135
+Input katmanını da bir layer sayıyorlar. Giriş katmanı bir, şurası iki, şurası üç, şurası dört gibi.
+
+57
+00:17:51,347 --> 00:17:54,147
+sayılabiliyor. Toplamda
+
+58
+00:17:54,147 --> 00:18:01,188
+4 layer. Ne demiş? X input, O output.
+
+59
+00:18:12,084 --> 00:18:21,204
+Burada ileride anlatmış mı, anlatmamış mı? Anlatmış. Bir yazıda aradan bahsediyor ileride. Orada görürüz.
+
+60
+00:18:24,204 --> 00:18:27,124
+Şimdi böyle bir network'ünüz var.
+
+61
+00:18:40,147 --> 00:18:47,447
+O'yu elde etmeye forward propagation deniliyor. İleri yayalım.
+
+62
+00:18:59,443 --> 00:19:13,423
+Boyutları burada açıklamış. Boyutları az önce örnekle verdim. Burada şu katmanların her birinde ihmal edilen bir şey var. Söylenmeyen.
+
+63
+00:19:25,364 --> 00:19:50,064
+Uydurduğumuz fonksiyon eğer bir yaz olmazsa her zaman merkezden geçmek zorunda olur. Şu çarpım. Bu kısıtı kaldırmak için bir yaz eklediğiniz zaman fonksiyon aşağı veya yukarı shift olur. Dolayısıyla bir yaz o işe yarıyor.
+
+64
+00:19:53,236 --> 00:20:14,736
+Dolayısıyla, beyazı da göz önünde bulundurmamız lazım. Yani şuradaki katmanların esasen her biri W1X artı beyaz, W2H1 artı beyaz 2, W3H2 artı beyaz 2 gibi düşünebilirsiniz.
+
+65
+00:20:14,736 --> 00:20:17,556
+Ya da beyaz 3 gibi düşünebilirsiniz.
+
+66
+00:20:21,172 --> 00:20:48,052
+Bazen de beyaz direkt W'nun içine entegre edilebilir. O yüzden de böyle yazmış olabilir buraya. Şöyle ki, X'i bir argument ederseniz, yani şurada mesela 400'e 400'lük birinde 160 bin girdi var. X 160 bin demiştik.
+
+67
+00:20:48,500 --> 00:21:14,220
+Onun yerine 160.000 bir boyutlu bir x düşünelim. Bunun son değeri ne olacak? 1 olacak. Yalnız ilk 160.000 tanesi bizim resmimizin pikselleri son değeri 1 olacak.
+
+68
+00:21:15,604 --> 00:21:31,104
+X'i bu şekilde tanımlarsak, bir yazı ne yapabiliyoruz? W'ye katabiliyoruz. Yani şöyle yapıp, burası daha önce bahsettiğimiz W.
+
+69
+00:21:35,251 --> 00:21:39,251
+Şu W yapmaya çalıştım ama üç tane şey koydum.
+
+70
+00:21:39,251 --> 00:21:41,251
+W.
+
+71
+00:21:44,531 --> 00:21:46,379
+Sen de var mı?
+
+72
+00:22:00,660 --> 00:22:01,160
+Pardon.
+
+73
+00:22:03,019 --> 00:22:06,260
+Neyse, siz anlıyorsunuz. Nasıl ilgi buradaymış.
+
+74
+00:22:16,339 --> 00:22:29,380
+W1, öyle bir matriz düşünün ki, matrizin bu kısmı W1, şurada da Bias değerleri, Bias 1 değerleri.
+
+75
+00:22:31,279 --> 00:22:37,639
+Dolayısıyla Bias bu W'nun bir parçasıymış gibi de davranılabilir.
+
+76
+00:22:43,284 --> 00:23:08,004
+X bu şekilde bir eklenerek X'e, bir büyütülerek. Ne dedik? X'i veriyoruz, H1'i elde ediyoruz. Sonra H1'i veriyoruz, H2'yi elde ediyoruz. Sonra
+
+77
+00:23:09,011 --> 00:23:24,311
+H2'yi veriyoruz. O'yu yani output'u elde ediyoruz. Burada da max'ı yazmamış ama en son şurada yazmış gördüğünüz gibi. Yani şurası biraz böyle eksik kalmış ama.
+
+78
+00:23:35,539 --> 00:23:49,539
+Birbirinin slide'ını kullanıyor. Ortada bu slide'ı internette bulabilirsiniz mesela. Sonuçta output'u elde ediyoruz.
+
+79
+00:23:55,731 --> 00:24:10,971
+Reprezentasyon, biz bugün şu tarz bir reprezentasyon gördük. Ama bu hikayeyi, bu denklemleri, bu işlemleri farklı gösterimlerle görebilirsiniz.
+
+80
+00:24:23,392 --> 00:24:32,652
+Vektörün her bir bileşenini bir nokta ile göstermiş.
+
+81
+00:24:34,731 --> 00:24:41,492
+Veya şurada yine vektörün her bir bileşenini bir nokta ile göstermiş.
+
+82
+00:24:41,492 --> 00:24:47,612
+Sonra da iki noktayı birbirine bağlayan.
+
+83
+00:24:50,579 --> 00:25:08,319
+Çizgiler, bağlantılar göstermiş. Her bir bağlantı bizim bahsettiğimiz W1 matrisinin bir bileşeni. Yani W11 yazmış mesela.
+
+84
+00:25:10,079 --> 00:25:17,399
+O işte bahsettiğim W matrisinin neyi oluyor? Şuradaki bileşeni oluyor.
+
+85
+00:25:18,932 --> 00:25:41,411
+Burada W34 demiş mesela. Buradaki gösterim nöral networklerin biyolojik benzerliğinden geliyor. İnsan beyninde bulunan sinir hücreleri.
+
+86
+00:25:42,163 --> 00:25:51,644
+Sinir hücreleri arasındaki sinapslar gibi böyle bir benzerlikten yola çıkılarak ilk başlarda çıkmış nöraldine networkler.
+
+87
+00:25:51,644 --> 00:25:58,544
+Ama zaman içinde bu benzerlikten daha çok şimdilerde şey daha çok kullanılıyor.
+
+88
+00:25:59,903 --> 00:26:03,284
+Olayın bir fonksiyonların kompozisyonu oluşu.
+
+89
+00:26:06,771 --> 00:26:19,291
+O kompozisyonların, küçük fonksiyonların kompozisyonlarının kullanılarak output çıkışı, sonra işte backpropagation birazdan göreceğiz.
+
+90
+00:26:20,371 --> 00:26:30,451
+Hatanın geriye yayılımı, türev ile geriye yayılımı gibi fonksiyon tarafına bir yoğunlaşma var yaklaşımda.
+
+91
+00:26:31,604 --> 00:26:44,824
+Şu gösterim de işte şu ikisi arası bir şey oluyor. Yani aradaki böyle bağlantıları göstermemişler ama yine her bir şey için.
+
+92
+00:26:48,500 --> 00:27:15,980
+Vektör birleşeni için bir nokta koymuşlar. Tabi az önceki gibi resim, hani şu tarz bir şey elinizde 3-5 tane giriş varken olası da bizim resimlerde az önce gördük 160 bin tane giriş var. 160 bin girişi bu şekilde çizmek falan mümkün değil. Bu da mümkün değil. Dolayısıyla şu şekilde blok şeklinde göstermek daha mantıklı.
+
+93
+00:27:27,443 --> 00:27:43,523
+Bir soru, neden non-linearity kullanıyoruz? Neden linear fonksiyonlar ile işi bitirmiyoruz? İlla oradaki non-linearity'yi kullanıyoruz.
+
+94
+00:27:43,523 --> 00:27:54,144
+Çünkü linear fonksiyonların kompozisyonu yine bir linear fonksiyona dönüşüyor.
+
+95
+00:27:54,836 --> 00:28:19,175
+Yani aldığınızda bütün bu orijinal X'i sanki almışsınız önce W1 ile sonra W2 ile sonra ne bileyim kaç tane varsa W3 ile mesela çarpmışsınız ve output'u elde etmişsiniz gibi bir durum oluşuyor.
+
+96
+00:28:19,923 --> 00:28:31,203
+Bütün bu matrislerin çarpımı da yine bir matris verir. Dolayısıyla orijinal x'inizi alıp bir matrisle çarpıp o oyu bulmuşsunuz gibi bir durum oluşuyor.
+
+97
+00:28:31,203 --> 00:28:41,663
+Bu da lineer bir fonksiyon. Lineer bir fonksiyonla her şeyi sınıflayamazsınız.
+
+98
+00:28:47,955 --> 00:29:09,175
+Probleminiz var. Bu artılarla daireleri birbirinden ayırmak istiyorsunuz. Lineer tek bir çizgiyle ne yapamıyorsunuz? Lineer bir çizgiyle ayıramıyorsunuz.
+
+99
+00:29:10,163 --> 00:29:35,864
+İki boyutlu da bir çizgi oluyor. Üç boyutlu da o liner bir düzlem haline geliyor. Dört boyutlu da artık dört beş altı en boyutlu da hiper düzlem diyoruz biz onlara. Artık hayal edebilirsiniz, hayal edin. Yirmi boyutlu olabilirim ama hala bir düzlem o. Yani düz bir şey.
+
+100
+00:29:37,460 --> 00:29:47,720
+Dolayısıyla probleminiz bu şekilde non-lineerse lineer bir ayraç ile problemi ayıramıyorsunuz.
+
+101
+00:29:57,203 --> 00:30:02,283
+Ne yapmanız gerekiyor? Non-linear bir fonksiyon kullanmanız gerekiyor.
+
+102
+00:30:08,243 --> 00:30:18,843
+Örneğin, az önce kullandığımız relu fonksiyonu nasıl bir fonksiyon?
+
+103
+00:30:24,023 --> 00:30:32,023
+Sıfıra kadar sıfır, sıfırdan sonra şu şekilde devam eden bir fonksiyon.
+
+104
+00:30:34,291 --> 00:30:54,411
+0'dan sonra x eşittir y olarak devam ediyor. 0'a kadar x eşittir 0'a kadar 0. Dolayısıyla şöyle bir şeyimiz var, elimizde fonksiyon var. Dolayısıyla ne yapabilirsiniz bu fonksiyonu kullanarak?
+
+105
+00:31:04,307 --> 00:31:26,307
+Mesela bu fonksiyondan birkaç tanesini kullanarak şöyle bir şey yapabilirsiniz. İki tane kullandık mesela. Böyle yaptık. Sonra bir tanesini daha kullandık. Böyle oldu falan. Mesela uzayı birden fazla böyle non-linear fonksiyon kullanarak bölebiliyorsunuz.
+
+106
+00:31:32,147 --> 00:31:57,567
+Relu seviliyor. Neden seviliyor? Lokal olarak lineer. O tarafı güzel. Türevleri falan güzel. Türev burada sıfır, burada bir sabit bir.
+
+107
+00:31:58,612 --> 00:32:16,692
+Dolayısıyla türevi basit. Relu seviliyor. Relu'nun benzerleri var. Mesela şurası tak diye burada bir discontinuity var ya, tam bu sıfır noktasında türevi tanımlı değil Relu'nun.
+
+108
+00:32:22,900 --> 00:32:32,960
+Continuous olarak devam ettiren böyle bazı versiyonları var, bir şeyler var falan ama sonuçta Relu ve benzerleri kullanılıyor.
+
+109
+00:32:42,612 --> 00:32:59,112
+Neden birçok katman kullanıyoruz? Çünkü katmanlar hiyerarşik bir yapı oluşturmamızı sağlıyor.
+
+110
+00:33:10,132 --> 00:33:12,592
+Ne yapabiliyoruz? İfade edebiliyoruz.
+
+111
+00:33:19,092 --> 00:33:26,572
+Bir de dağıtık reprezentasyondan bahsetmiş. Onu hatırlamıyorum veya ne demek istiyor onu bilmiyorum.
+
+112
+00:33:26,572 --> 00:33:29,752
+Ne diyor?
+
+113
+00:33:30,392 --> 00:33:43,212
+Deep learning architectures are efficient also because they use distributed representations which are shared across classes.
+
+114
+00:33:46,451 --> 00:34:05,251
+Yani şunu mu demek istiyor? Mesela bu tekerlek mesela kamyonlarda da var ve işte motorsikletlerde de var. Bunu mu demek istiyor acaba? Distributed Representation derken.
+
+115
+00:34:08,791 --> 00:34:11,572
+Burada emin değilim. Ona bakmak lazım.
+
+116
+00:34:20,980 --> 00:34:39,820
+Burada o bahsettiğim şeyi anlatıyor. Mesela şurası katmanların birinde şuradaki büyük bir değer bir tekerin olduğu anlamına gelebilir.
+
+117
+00:34:47,443 --> 00:35:01,724
+Kamyon için faydalı olabilir. Katman katman daha kompleks, daha bilgili şeyler, daha anlamlı şeyler oluşuyor.
+
+118
+00:35:06,164 --> 00:35:22,984
+Şimdi hiyerarşik yapı, bundan bahsetmiştim, katman katman yukarıya doğru gittikçe sonraki katmanlarda daha kompleks bileşenler ortaya çıkıyor.
+
+119
+00:35:34,612 --> 00:36:00,672
+Ne oluyor ilk katmanlarda? Mesela buradaki çıktılar neye benziyor? Şöyle bir güzelce düzenlerseniz bu çıktıları. Bunlar convolutional neural networkler. Henüz bunları görmedik ama birazdan göreceğiz veya ileride göreceğiz.
+
+120
+00:36:03,092 --> 00:36:09,872
+Bunlar Sobel filtresi gibi kenar bulma filtrelerine benziyor.
+
+121
+00:36:11,372 --> 00:36:20,872
+Bir ortadaki katmana baktığınızda biraz daha üst düzey. Mesela şurada neyi görebiliyorsunuz?
+
+122
+00:36:23,372 --> 00:36:25,311
+İşte tekerlek.
+
+123
+00:36:26,195 --> 00:36:45,015
+Şurada mesela şuralarda yuvarlaklar bu sefer. Dairesel şeyler ortaya çıkmaya başlamış. Veya şurada arkılar var böyle. Yarım daireler gibi. Biraz daha mesela dikdörtgen gibi yapılar ortaya çıkmaya başlıyor.
+
+124
+00:36:54,356 --> 00:37:11,676
+Siz söyleyin, daha kompleks özellikler. En son katmanında da daha da yüksek özellikler bir araya gelmeye başlıyor. Böyle bir yapı olduğu gözlemlenmiş.
+
+125
+00:37:21,235 --> 00:37:38,235
+Bu aradaki hidden yani gizli üniteler ne yapıyor diye baktığınızda, isterseniz bunu bir sınıflayıcı olarak görebilirsiniz ama isterseniz bir de özellik bulucu olarak görebilirsiniz.
+
+126
+00:37:48,947 --> 00:38:08,788
+Key Nearest Neighborhood gibi hatta orijinal yapay sinir ağları, şimdiki yapay sinir ağlarının ilk versiyonları gibi yöntemler ne üzerinde çalışırdı? Feature'lar üzerinde çalışırdı.
+
+127
+00:38:10,367 --> 00:38:15,587
+Yani resminizi alırsınız, resimden özellikler çıkarırsınız.
+
+128
+00:38:17,268 --> 00:38:41,947
+Dersimizin daha önceki bölümünde gördüğümüz mesela bölgeler çıkarırsınız. Haris bölgeleri gibi. Haris bölgelerinden Sift özellikleri çıkarırsınız mesela. Sift özellikleri 128'e 1'dir hatırlarsanız. 128'e 1'lik Sift özellikleri çıkarırsınız. Bir sürü böyle.
+
+129
+00:38:42,547 --> 00:39:06,807
+Bunları ne yaparsınız? Sınıflayıcıya verirsiniz. O size sınıfı verir. Ama biz bugün ne yaptık? Yapay sinir ağına imgeyi, resmi olduğu gibi verdik. Olduğu gibi verdik. O zaman bu aradaki özellik çıkartmayı kim yapıyor?
+
+130
+00:39:07,923 --> 00:39:25,403
+Yapay sinir ağının işte o gizli katmanları yapıyor. Yapay sinir ağının ilk katmanları bize o özellikleri ne yapıyor? Çıkarıyor. Son katmanda da zaten çoğu zaman klasik yapay sinir ağa olur.
+
+131
+00:39:28,851 --> 00:39:48,032
+Baktığınızda popüler mimarilere son katmana dikkat edin. Bildiğiniz YSA'dır. Dolayısıyla sanki feature'lar çıkarılıp YSA'ya veriliyormuş gibi bir durum oluşur.
+
+132
+00:39:54,547 --> 00:40:02,447
+Kaç layer olmalı, kaç gizli ünite olmalı gibi sorular. Bunlar kesin cevap yok bunlara.
+
+133
+00:40:04,447 --> 00:40:10,787
+Cross validation ile ya da hiperparametre arama yöntemleri ile.
+
+134
+00:40:14,228 --> 00:40:33,208
+Bunlar bulunmaya çalışılıyor. Daha geniş ve daha derin olursa network'ünüz daha komplike cevaplar verebiliyor genel olarak. Bu da birçok faktöre bağlı oluyor.
+
+135
+00:40:41,364 --> 00:41:07,944
+Veya problemin ne kadar zor olduğu veya ne kadar veriniz var falan gibi. Burası biraz daha şeye dönüşüyor artık. Sanatçılığa, ustalığa dönüşüyor. Yani deneyimle, çalışa çalışa, triklerini bile bile kaç layer var, kaç idim yönet gerekli bunları biliyorsunuz.
+
+136
+00:41:09,780 --> 00:41:35,980
+İlk başlarda tabii bu W'ları direk var dedik. W1'i veya B1'i. X ile çarpıyoruz, topluyoruz mesela. Buradaki değerler nereden geliyor? Başlangıç değerleri, ilk başta rastgele küçük değerler atılıyor. Sıfıra yakın değerler.
+
+137
+00:41:36,851 --> 00:41:42,431
+Daha sonra zaten Neural Network bu matrislerin değerlerini öğreniyor.
+
+138
+00:41:44,532 --> 00:41:55,631
+Yani bizim zaten öğrenme dediğimiz, birazdan göreceğiz, Back Provocation sayesinde W'yu ve B'yi ne yapıyoruz?
+
+139
+00:41:55,631 --> 00:41:57,771
+Update ediyoruz, öğreniyoruz.
+
+140
+00:42:04,052 --> 00:42:20,192
+Öğrenmek için nasıl yapacağız, bakacağız. Zaman nasıl? Ne kadar oldu derse başlayalım. 43 geçiyor şimdi. Biraz daha devam edelim.
+
+141
+00:42:20,711 --> 00:42:21,971
+40 dakika geçiyor canım.
+
+142
+00:42:22,912 --> 00:42:24,612
+Evet, 45 falan geçiyor.
+
+143
+00:42:26,132 --> 00:42:36,751
+Geçen hafta sınavdan önceki haftayı hızlıca tekrar etmiş oluyorum burada. Unutulmuş olabilir tak diye başlamayalım diye.
+
+144
+00:42:38,172 --> 00:42:38,992
+Ne oldu hocam?
+
+145
+00:42:39,412 --> 00:42:39,771
+Evet.
+
+146
+00:42:44,148 --> 00:42:46,768
+Biraz daha devam edelim. Sonra bir ara verelim.
+
+147
+00:42:51,347 --> 00:42:51,927
+Evet.
+
+148
+00:43:00,052 --> 00:43:21,872
+Bu W ve B'leri öğreneceğiz. Öğrenme nasıl oluyor peki? Yani öğrenme demek zaten başlangıç bir değeriyle başlatıyoruz bunları. Sıfır olmayan ama sıfıra yakın değerlerle. Öğrenmek demek o değerleri update etmek demek. Değiştirmek. Birazcık birazcık değiştireceğiz. Nasıl yapacağız?
+
+149
+00:43:26,132 --> 00:43:27,132
+Öncelikle...
+
+150
+00:43:27,132 --> 00:43:29,192
+Hocam, Slide gitti.
+
+151
+00:43:30,592 --> 00:43:32,252
+Slide gitti mi? Tamam.
+
+152
+00:43:38,867 --> 00:43:52,287
+Teşekkürler. Geldi mi slide? Geldi. Tamam. Çizdiklerim geliyor mu? Geliyoruz. Evet.
+
+153
+00:43:53,967 --> 00:44:04,967
+Şimdi öncelikle bir measure of quality. Yani eşleme ne kadar iyi? Yani çıkı verilen o ne kadar iyi?
+
+154
+00:44:05,780 --> 00:44:23,840
+X'i veriyoruz yapay sinir ağına. O'yu alıyoruz. O ne kadar iyi? Bunu belirlememiz lazım. Sonra da bu iyiliğe bağlı olarak W ve B'yi update edecek bir yöntem geliştirmemiz lazım.
+
+155
+00:44:27,635 --> 00:44:41,376
+Bu iyilik onun ne kadar iyi oluşunu bir loss fonksiyonu tanımlayarak öncelikle belirleyeceğiz.
+
+156
+00:44:41,376 --> 00:44:50,136
+Bu loss fonksiyonu bir tane x için bize ne kadar tahminimizin iyi olduğunu söyleyecek.
+
+157
+00:44:53,012 --> 00:44:59,512
+Bütün bu loss fonksiyonlarını toplayacağız. P tane örneğimiz vardı hatırlarsanız.
+
+158
+00:45:02,352 --> 00:45:13,232
+Hepsini birden, yani veri setimizin hepsinin loss'unu minimize etmeye çalışacağız. Azaltmaya çalışacağız.
+
+159
+00:45:18,771 --> 00:45:34,451
+Uygun hareket eden bir ne istiyoruz? İşte W değerleri istiyoruz. Burada tabii farklı loss fonksiyonları değerlendirilebilir, kullanılabilir.
+
+160
+00:45:45,811 --> 00:45:59,552
+Kalesi, artı falan gibi böyle bileşen bileşen toplayıp kare kökünü alırdım. Los fonksiyonum o olurdu. Öklü tuzaklığı.
+
+161
+00:45:59,552 --> 00:46:12,492
+Fakat tabii yıllar içerisinde nörel networklerde çok ciddi araştırılmalar yapılmış. Hangi nonlinearlık?
+
+162
+00:46:12,980 --> 00:46:18,280
+Hangi loss fonksiyonu başarılı birçok şey denenmiş.
+
+163
+00:46:19,820 --> 00:46:38,640
+Eğer sınıflama yapıyorsanız şu negatif loglikelihood fonksiyonunun iyi sonuç verdiği görülmüş.
+
+164
+00:46:40,467 --> 00:47:05,507
+Bu fonksiyon biraz karışık. Bunu biraz anlamaya çalışalım. Öncelikle O çıktığımız ve Y'ler gerçekler nedir? Şu şekilde. Y'yi şu şekilde reprezent ediyoruz. Bizim diyelim ki 10 tane sınıfımız var. C10.
+
+165
+00:47:12,916 --> 00:47:34,596
+Dolayısıyla K'da sınıfımızın hangisi ise, mesela burası köpek olabilir. Köpeğin denk geldiği yere bir koyuyoruz. Diğerlerine sıfır koyuyoruz. Bu bizim doğru çıktığımız.
+
+166
+00:47:36,340 --> 00:47:56,160
+Output'umuz da 10 tane değere indirdik hatırlarsanız. Yani 160.000 girişi 10 tane değere çıktık. Dolayısıyla output'umuz da ne olacak? Her bir bunların karşılığı için bir tane bize ne verecek? Değer verecek.
+
+167
+00:48:01,715 --> 00:48:17,555
+Kesin olarak 0, 1 gibi değerler olmayacak. Birçok farklı negatif değerler olabilir, pozitif değerler olabilir veya 1000 gibi, 100.000 gibi büyük değerler olabilir, küçük değerler olabilir.
+
+168
+00:48:17,555 --> 00:48:28,015
+Output'umuz böyle değerler olacak. Ama bizim ümidimiz ne bir kere? Neyi istiyoruz?
+
+169
+00:48:30,068 --> 00:48:42,068
+Eğer iyi çalışıyorsa bizim network'ümüz, şuradaki değer her neyse diğer şuradaki değerlere göre büyük gelecek.
+
+170
+00:48:45,188 --> 00:48:56,548
+Yani sıfır ve bir, birebir harika bir şekilde sıfır bir gelmeyebilir. Ama biz şunu istiyoruz, ümit ediyoruz. Bu değer büyük gelecek.
+
+171
+00:48:58,996 --> 00:49:22,296
+Dolayısıyla esasen şöyle karar verebiliriz biz. En büyüğünü bulup, maksimumunu bulup, bu çıktının hangisi maksimumu? Bir, köpek. Dolayısıyla burası maksimum, bu yüzden biz bu çıktığı köpek diyoruz. Bu imge köpektir diyebiliriz.
+
+172
+00:49:23,764 --> 00:49:33,623
+Fakat bunu diyebilmemiz işin daha oraya geleceğiz ama ondan önce bizim buradaki amacımız ne?
+
+173
+00:49:33,623 --> 00:49:37,403
+Bir hata fonksiyonu tanımlamak.
+
+174
+00:49:38,324 --> 00:49:43,184
+Hata fonksiyonunu tanımlamak için ne yapıyoruz?
+
+175
+00:49:44,023 --> 00:49:46,623
+Öncelikle şu değerleri...
+
+176
+00:49:48,532 --> 00:50:08,632
+Öyle bir modifiye ediyoruz ki bu değerler olasılık haline dönüyor. Nasıl olasılık haline dönüyor? Olasılık nasıldır? Olasılık da öncelikle tüm değerler pozitiftir. Yani bir olasılıktan bahsedecekseniz olasılığın özelliği nedir?
+
+177
+00:50:14,483 --> 00:50:21,884
+Güneş görme olasılığımız. Bir kere negatif olamaz değil mi? Pozitiftir olasılıklar.
+
+178
+00:50:25,588 --> 00:50:37,528
+İkincisi, olasılıklarda örneklem uzayımız, yani şurada aniden tak diye yana kayıyor bu şey. Neden oluyor onu da bilmiyorum.
+
+179
+00:50:50,132 --> 00:50:56,811
+Olasılıkta örnekler uzayınız böyle sigma ile gösterilir. Düzgün yere de yazmadım ama.
+
+180
+00:50:59,931 --> 00:51:11,132
+Örnekler uzayınızı yazarsınız, çıktıları tanımlarsınız. Mesela dersiniz ki işte bugün hava güneşli olabilir. G diyeyim.
+
+181
+00:51:17,940 --> 00:51:40,940
+Açık bulut, yani bulutlu olabilir. Diyelim ki üç tane şey var. Örneklem uzayı belirlersiniz. Ve bütün bu olasılıkların toplamı, yani güneşli olma olasılığının toplamı artı yağmurlu olma olasılığı artı bulutlu olma olasılığı. Bunları topladığınızda...
+
+182
+00:51:42,420 --> 00:52:06,140
+Olasıklılıkları topladığınızda ne verir arkadaşlar? Bir verir. Dolayısıyla biz öyle bir şey yapmak istiyoruz ki bir, buradaki ne olsun? Değerlerin hepsi pozitif olsun.
+
+183
+00:52:09,652 --> 00:52:31,711
+Buradaki değerlerin toplamı bir olsun. Üç, buradaki değerlerin hala en büyüğü şu olsun. Hala en büyüğü eğer doğru bildiysek şu bire karşılık gelen olsun. Bize böyle bir sistem lazım.
+
+184
+00:52:39,251 --> 00:52:48,492
+Bunu nasıl yapıyoruz? Düşünelim. Öncelikle output'umuzun k numaralı elemanını düşünelim.
+
+185
+00:52:49,492 --> 00:53:05,231
+k zaten birden c'ye kadar gidiyor. Bu ne demek? Yani her biri için demek. Yani k numaralı elemanın olasılık değerini bulacağız.
+
+186
+00:53:06,420 --> 00:53:22,760
+Öncelikle exponential'ını alıyoruz. Exponential nasıl bir fonksiyondur? Exponential her zaman pozitif bir fonksiyondur. Doğru mu?
+
+187
+00:53:26,643 --> 00:53:32,803
+Negatif bir değerin eksponensiyeli ne olur? X negatifse ne olur?
+
+188
+00:53:38,612 --> 00:54:03,911
+Mesela eksi 2 olsun. E üzeri eksi 2. Ne olur bu? Bir bölü e kare olur. Dolayısıyla eksilikte büyüdükçe hızla aşağı giden, çok hızlı bir şekilde aşağı giden ama pozitif kalan
+
+189
+00:54:04,563 --> 00:54:26,463
+Yani sıfıra giden, aşağı derken sıfıra giden ama pozitif kalan bir fonksiyondan bahsediyoruz. Dolayısıyla eksi bini düşünün mesela. Nedir eksi bin? Sıfıra çok yakın bir sayıdır ama negatif değildir. Peki pozitifte ne oluyor? E üzeri mesela bin olunca ne oluyor?
+
+190
+00:54:28,467 --> 00:54:34,467
+Çok büyük bir sayı oluyor ve pozitif oluyor. Dolayısıyla exponential'ın grafiği nasıl?
+
+191
+00:54:34,467 --> 00:54:43,467
+Baktığımızda sıfıra giden, beceremedim ama siz anlıyorsunuz.
+
+192
+00:54:43,467 --> 00:54:54,467
+Şöyle son derece hızlı büyüyen, sıfırda ne oluyor? E üzeri sıfırda? 1 oluyor. Şurası 1.
+
+193
+00:54:58,643 --> 00:55:09,063
+Şurası 1. Dolayısıyla sıfıra yakın bir şekilde geliyor. Tam x eşittir. Sıfırda y 1 oluyor. Sonra da hızla büyüyor.
+
+194
+00:55:10,663 --> 00:55:19,803
+Şimdi eksponansiyel verince ne yapmış olduk arkadaşlar? Bütün olasılıklar pozitif oldu mu? Oldu.
+
+195
+00:55:25,396 --> 00:55:48,456
+Orijinal değer büyükse eksponansiyel de daha büyük mü? Evet büyük. Gördüğünüz gibi eksponansiyel ne oluyor? E x, e üzeri x monoton olarak büyüyen bir fonksiyon. Yani ok en büyükse, şuradaki k en büyükse eksponansiyeli de yine en büyüktür.
+
+196
+00:55:50,420 --> 00:56:11,840
+Hatta büyüklük biraz da ne oluyor? Abartılıyor. Yani lineerden de öte eksponansiyel bir büyüklük olduğu için eğer sizin buradaki değeriniz şuradaki değerden birazcık büyük diyelim ki eksponansiyelini aldığınız zaman daha da büyük oluyor.
+
+197
+00:56:15,795 --> 00:56:41,795
+Fark ne oluyor? Açılıyor. Daha da artıyor. Dolayısıyla ikinci isteğimiz de oldu. Pozitif bir değer. Büyük değer hala büyük. Hatta daha da büyük. En son ne yapmamız lazım arkadaşlar? İsteğimiz ne? Bütün bunların toplamı ne olacak? Olasılık olması için tüm...
+
+198
+00:56:42,387 --> 00:57:08,007
+Değerlerin toplamı ne olur? 1'dir. Bunu nasıl sağlayabiliriz? Bunu da şunu yaparız. Buradaki 10 tane değerin hepsini toplarız. Bütün değerleri o toplama böleriz. Şuradaki toplama ne yaparız? J1'den C'ye kadar.
+
+199
+00:57:09,012 --> 00:57:30,831
+E üzeri O, J. Yani tüm değerlerin toplamını alıyor burası. Bütün değerlerin toplamını aldık. Her bir elemanı böldük. Ne olur arkadaşlar? Toplam ne olur? O birden O ona kadar toplamımız neye eşit olur? Bire eşit olur.
+
+200
+00:57:34,099 --> 00:57:41,179
+Toplamı 1'e eşit olduğu için de artık buradaki sayılara nasıl davranabiliriz?
+
+201
+00:57:43,320 --> 00:57:51,039
+Birer olasılık olarak davranabiliriz. Yani ilk değer neye denk düşüyor?
+
+202
+00:57:51,039 --> 00:58:00,400
+Bu bir uçaksa resmin uçak olma olasılığı. İkinci değer resmin kedi olma olasılığı.
+
+203
+00:58:00,916 --> 00:58:11,996
+Kanuncı değer resmin köpek olma olasılığı ve gerçekten de köpekse bu olasılığın en büyük olmasını istiyoruz.
+
+204
+00:58:17,268 --> 00:58:37,167
+İşimiz bitti mi? Henüz bitmedi. Şuradaki notasyonu biliyor musunuz? Buradaki notasyon, olasılığın da bir tekrarını yapmış oluyoruz burada biraz. Given demek. Şartlı olasılık var burada.
+
+205
+00:58:44,532 --> 00:58:45,992
+Given demek mi bu ya?
+
+206
+00:58:57,139 --> 00:59:03,460
+Bu parametreleri ayırmak için de böyle çizgi kullanılıyor mu acaba?
+
+207
+00:59:04,639 --> 00:59:05,639
+Bazı...
+
+208
+00:59:05,639 --> 00:59:07,840
+Bayağı gibi.
+
+209
+00:59:07,840 --> 00:59:08,840
+Yani...
+
+210
+00:59:10,340 --> 00:59:15,840
+Birinci koşul sağlanırsa, ikisi geçmeyecek gibi.
+
+211
+00:59:18,639 --> 00:59:19,340
+Evet.
+
+212
+00:59:19,940 --> 00:59:23,039
+Birinci koşul sağlanmazsa, ikisi geçer.
+
+213
+00:59:23,039 --> 00:59:24,139
+İkisi değil.
+
+214
+00:59:24,755 --> 00:59:43,655
+Ya bu şu demek. Şimdi şartlı olasılık diye bir şey var. Şartlı olasılıkta şöyle yazarsınız. Mesela bugün pencereyi açtınız ve bulutları gördünüz.
+
+215
+00:59:54,324 --> 00:59:58,923
+Ve şuraya da Yağmur yazdık diyelim ki.
+
+216
+01:00:03,572 --> 01:00:17,572
+Bu nedir arkadaşlar? Pencereyi açtınız, bulut gördünüz. Bugün yağmur olma olasılığı. Buradaki dik çizgi şartlı olasılığı belirtir.
+
+217
+01:00:18,572 --> 01:00:23,572
+Eğer bunu koymasaydık, sadece şöyle yazsaydık, P yağmur deseydik.
+
+218
+01:00:31,443 --> 01:00:50,864
+Yağmur deseydik. Bu, bugün yağmur olma olasılığı. Bulutu falan göz önünde bulundurmuyorsunuz. Yani bugün diyelim ki yataktan kalktınız, pencereyi, perdeyi daha açmadınız. Bugün yağmur olasılığı nedir?
+
+219
+01:00:52,864 --> 01:00:54,704
+Yağmur yağma olasılığı.
+
+220
+01:00:55,795 --> 01:01:22,016
+Nedir? Baktınız, yani hiçbir şeye bakmadınız daha. Diyelim ki yüzde beş olsun, yüzde elli olsun, yarı yarıya. Ama diyelim ki kalktınız, perdeleri açtınız, pencereyi açtınız, şöyle bir gökyüzüne baktınız. Bulutlar, kara kara bulutlar var.
+
+221
+01:01:23,123 --> 01:01:33,783
+Yağmur olasılığı ne olabilir mesela? %50'den büyük mü olur, küçük mü olur? Büyük olur. %80 dersiniz mesela.
+
+222
+01:01:36,523 --> 01:01:46,403
+Buna şartlı olasılık deniliyor. Bu çizgi şartlı olasılıkta kullanılıyor notasyon olarak. Şuradaki çizgi.
+
+223
+01:01:48,115 --> 01:02:14,175
+Bazen de ama şunu da gördüm ben. Bir fonksiyonun özellikle olasılıkta belirli parametreler altında gibi falan kullanıldığını da görmüşlüğüm var burayı.
+
+224
+01:02:15,923 --> 01:02:17,420
+Ön...
+
+225
+01:02:21,876 --> 01:02:35,036
+Şuradaki bir de şey anlamına gelebilir. Class'ın bir olma olasılığı. Yani şunu şöyle yorumlayabiliriz burayı. X girişi için.
+
+226
+01:02:41,844 --> 01:03:09,543
+K sınıfının bir olma olasılığı. K sınıfının bir olma olasılığı. K sınıfı birse de o sınıf diyeceğiz. Y'de çünkü ya sıfırlar ya da birler var ya, notasyonumuz o şekilde. Dolayısıyla köpek sınıfının bir olma olasılığı. Yani köpek olma olasılığı.
+
+227
+01:03:10,195 --> 01:03:23,835
+Matematiksel olarak o şekilde ifade ediliyor diye düşünüyorum. Veya şöyle düşünebilirsiniz şartlı olasılık için. Giriş x ise falan gibi de düşünebilirsiniz.
+
+228
+01:03:37,972 --> 01:03:46,972
+Bir olasılık neyi elde ettik O'dan? Vektörü.
+
+229
+01:03:49,492 --> 01:03:53,352
+Yani elimizde şöyle bir P vektörü var şimdi.
+
+230
+01:03:55,352 --> 01:03:57,412
+Şuraya çizeyim.
+
+231
+01:04:01,268 --> 01:04:11,427
+Bir P vektörü var. Her biri karşılık gelen sınıfın bir olma olasılığını gösteriyor.
+
+232
+01:04:13,507 --> 01:04:20,107
+Şimdi bu P vektöründen de yola çıkarak bir sayı elde etmemiz lazım.
+
+233
+01:04:21,447 --> 01:04:28,268
+Y ile P'nin uzaklığını ya da Y ile O'nun uzaklığını verecek bir...
+
+234
+01:04:28,755 --> 01:04:41,635
+İfadeye ihtiyacımız var. Onu da nasıl yapıyor? Toplama var burada gördüğünüz gibi. Y ile o P'nin logaritmasını çarpıyor.
+
+235
+01:04:43,075 --> 01:04:50,955
+Şimdi P'den de bir logaritm of P vektörü elde ediyor. Log P diyebilirsiniz buna.
+
+236
+01:04:55,251 --> 01:04:58,351
+LogP ile Y'yi çarpıyor.
+
+237
+01:04:59,591 --> 01:05:05,051
+Şimdi Y'yi zaten 0, 0, 0 sadece bizim sınıfta 1 dedik ya.
+
+238
+01:05:05,991 --> 01:05:08,771
+Dolayısıyla bu çarpım sonucu ne verecektir?
+
+239
+01:05:10,391 --> 01:05:14,491
+Şuradaki tüm değerler, outputların hepsi ne yapıyor?
+
+240
+01:05:16,251 --> 01:05:16,891
+Çöpe gidiyor.
+
+241
+01:05:17,651 --> 01:05:19,631
+Sadece 1 olan değer kalıyor.
+
+242
+01:05:21,172 --> 01:05:41,291
+O bir olan değer, diyelim ki köpek değeri, bu bir. Sonra da olasılık değeri var. Olasılık değerinin logaritmasını alıyoruz. Logaritmada nasıl bir fonksiyon arkadaşlar?
+
+243
+01:05:46,931 --> 01:05:53,111
+1'in logaritması x eşittir. 1'in logaritması 0.
+
+244
+01:05:59,603 --> 01:06:23,583
+Şu şekilde gelen, sonra şöyle hızla aşağı doğru inen bir fonksiyon. Hatta şöyle galiba. Yani şu şekilde. Aşağı inen bir fonksiyon. Ama şurada da bir negatiflik var. Eksi logunu alıyoruz. Yani eksi log.
+
+245
+01:06:25,076 --> 01:06:39,395
+Dolayısıyla aslında en son fonksiyon ne oluyor? Şunun tersi şu şekilde gelen, şöyle devam eden bir fonksiyon oluyor.
+
+246
+01:06:45,492 --> 01:06:46,592
+Öğ...
+
+247
+01:07:06,963 --> 01:07:24,403
+Tam doğruysa ne oluyor? Diyelim ki biz en büyük değer, o en büyük burada çıktı. Bu 1 olacaktır. Logaritması 0 olacaktır. 0, 0 daha. Bu loss 0 olacak.
+
+248
+01:07:24,903 --> 01:07:30,043
+Yani loss demek uzaklık diye düşünün. Öyle bir değer lazım ki.
+
+249
+01:07:30,867 --> 01:07:42,148
+Yakınsa küçük çıkacak. Küçük değerler çıkacak. İki değer birbirine yakınsa küçük olacak. İki değer birbirinden uzaksa büyük değerler çıkacak. Öyle bir fonksiyona ihtiyacımız var.
+
+250
+01:07:45,748 --> 01:07:51,427
+Bu fonksiyon öyle mi? Biraz karıştırdım şimdi. Böyle çizgiler falan her şey birbirine girdi.
+
+251
+01:08:08,436 --> 01:08:15,736
+Yani log fonksiyonundan başlıyor ama eksi log.
+
+252
+01:08:15,736 --> 01:08:19,564
+Yani...
+
+253
+01:08:25,140 --> 01:08:32,120
+Logaritma şöyle gidiyorsa, yanlış hatırlamıyorum değil mi arkadaşlar? Eksi log böyle gidecek.
+
+254
+01:08:37,555 --> 01:08:58,115
+X, şu eksi log fonksiyonu. Ama değerler sıfırla bir arasında. Bak orayı unuttuk. Tamam oldu şimdi. Olasılık ya bu. Değerler sıfırla bir arasında. Oldu şimdi oldu.
+
+255
+01:08:59,015 --> 01:09:04,735
+Sıfırla bir arasındaki logaritmadan bahsediyoruz. Yani şöyle olacak bu.
+
+256
+01:09:13,844 --> 01:09:26,844
+Şu, tam sıfırda logaritma birdir. Oradan sonra da hızla aşağıya iniyor. Negatifi de hızla yukarıya çıkar. Dolayısıyla...
+
+257
+01:09:36,340 --> 01:09:54,299
+Bir de büyük değerlerde olasılık büyükse 1'e yaklaşıyor demektir. Değer de logaritmada 0'a yaklaşıyor. Yani x büyürken y azalıyor.
+
+258
+01:10:04,275 --> 01:10:23,695
+Uzaklık az. Bunları topluyoruz. Çarpıp topladığımız zaman zaten gördüğünüz gibi eğer bu şekilde bir sıfırı kullanırsak direkt bir tanesi kalıyor zaten. Ona da bizim loss değerimiz diyoruz.
+
+259
+01:10:26,868 --> 01:10:37,908
+Buradaki notasyonda her şeyi yazmış. Yani X girişlerimiz, Y işte bu gerçek çıkış.
+
+260
+01:10:40,548 --> 01:10:50,988
+Teta da arkadaşlar, teta nereden çıktı diyebilirsiniz. Biz bir sürü W'lardan bahsetmiştik ya. Şurada W1 var, W2 var.
+
+261
+01:10:51,572 --> 01:11:07,932
+Hatta bir beyazlar vardır. Beyaz 1, beyaz 2, beyaz 3 gibi. Bunların hepsini içeren bir vektör gibi düşünebilirsiniz. O parametreler. O parametreleri çünkü değiştireceğiz birazdan.
+
+262
+01:11:14,547 --> 01:11:18,087
+Öğrenme nasıl olacak?
+
+263
+01:11:18,087 --> 01:11:21,087
+İşte bu şeyleri...
+
+264
+01:11:21,087 --> 01:11:24,007
+Şunları bir sileyim.
+
+265
+01:11:30,100 --> 01:11:56,880
+Bu loss fonksiyonunu ne yapacağız? Tüm girişler için hesap edeceğiz, toplayacağız. Elimizde böyle bir toplam değer olacak. Bu değerleri minimize eden theta'yı, theta dediğimiz neydi hatırlayalım tekrar, o W ve B'lerde bulacağız.
+
+266
+01:11:57,908 --> 01:12:23,908
+Loss'umuzu minimize eten tetaları bulacağız. W ve B'leri bulacağız. Onları bulunca da artık eğitmiş olacağız. Sonra test x'ini verdiğimiz zaman o elde ettiğimiz yeni W'larla, B'lerle işlemi yapıp çıktığı bulacağız. Bu da bizim işte sonucumuzdur diyeceğiz. Kullanma zamanında modeli.
+
+267
+01:12:25,492 --> 01:12:40,131
+Şuradaki yıldız da optimizasyon terminolojisinde bu minimuma, optimuma yıldız denilir. Optimum değer demektir. Yani tetaların optimum değeri. O minimum değeri.
+
+268
+01:12:49,619 --> 01:13:06,619
+Optimum Teta olarak alacağız. Burayı bu şekilde okuyabiliriz. Şimdi burada bir ara vereceğiz. Ondan önce şu girişi yapalım. Gördüğümüz gibi fonksiyonumuz son derece komplike.
+
+269
+01:13:17,427 --> 01:13:37,207
+Sonra onun maksimum 0 dedik. Sonra bunu tekrar W2 ile çarptık falan. Böyle baya komplike bir fonksiyon var. Böyle bir fonksiyonu nasıl minimize edebiliriz?
+
+270
+01:13:43,444 --> 01:14:07,884
+Türev'de zincir kuralı diye bir kural var. Zincir kuralı sayesinde kompozit fonksiyonların türevi ne yapılabilir? Adım adım alınabilir. Türev nereden geldi işin içine? Çünkü türevi kullanarak optimizasyon yaparız zaten.
+
+271
+01:14:13,235 --> 01:14:30,555
+Diyelim ki şöyle bir fonksiyonumuz var. Şöyle bir fonksiyon var. İteratif optimizasyonda rastgele bir x0 değeriyle başlarız.
+
+272
+01:14:36,083 --> 01:14:38,884
+Sonra x0'da türevi buluruz.
+
+273
+01:14:40,683 --> 01:14:53,163
+Türev, fonksiyonu o noktada şey olan, t olan doğrunun eğimi olarak değerlendirilebilir.
+
+274
+01:15:03,859 --> 01:15:10,959
+Delta X'e neyidir? Oranıdır türev. Delta X sıfıra giderken
+
+275
+01:15:19,412 --> 01:15:20,032
+İnteklerisi.
+
+276
+01:15:25,427 --> 01:15:38,724
+Türev nedir?
+
+277
+01:15:46,771 --> 01:15:49,211
+Delta X 0'a giderken
+
+278
+01:15:52,787 --> 01:15:54,887
+Delta Y bölü Delta X'dir.
+
+279
+01:16:00,372 --> 01:16:27,811
+Eğimdir yani. Şimdi türev dolayısıyla şuradaki eğim pozitif. Buralarda türev pozitif. Şöyle bir eğimde ise negatif bir eğim var. Türev negatiftir. Dolayısıyla bu bize iteratif optimizasyonda fikir verir.
+
+280
+01:16:28,692 --> 01:16:34,692
+Deriz ki, türev pozitifse ben şunu yapsam. X sıfırdan...
+
+281
+01:16:42,068 --> 01:16:53,988
+Bir miktar türev çıkartsam? Ne yöne giderim? Bu yöne giderim. Türenin bir miktarını çıkartacağım.
+
+282
+01:17:01,076 --> 01:17:13,076
+O bir miktarı ayarlamak için de şuraya bir ağırlık parametresi koyayım. Herhangi bir isim verilebilir ama ben New diyeyim buna. New'um de iğrenç oldu.
+
+283
+01:17:23,475 --> 01:17:24,075
+Nu.
+
+284
+01:17:29,492 --> 01:17:33,212
+Ve bu benim yeni X birim olsa.
+
+285
+01:17:36,152 --> 01:17:38,252
+Yani iterasyonun.
+
+286
+01:17:42,676 --> 01:18:08,195
+İlk adımındaki, yani birinci iterasyonumun sonundaki x'in bu olsa, ne oldum? Biraz buraya geldim. x1'im bu oldu. Bu işlemi iteratif olarak, yani bir döngü içerisinde devam ettirirsem, adım adım ben ne yaparım? Yavaş, yavaş, yavaş, yavaş, yavaş, yavaş, yavaş, minimuma ulaşırım. İteratif optimizasyondur bu.
+
+287
+01:18:09,171 --> 01:18:35,351
+Ne de denilir buna? Gradiyent Descent Optimizasyonu da denilir buna. Türevin çok boyutlusuna biliyorsunuz gradient diyoruz. Bir boyutlu da bu şekilde görünür. Çok boyutlu da, mesela iki boyutlu da şöyle bir çukura doğru yavaş yavaş adım adım ne yaparsınız?
+
+288
+01:18:37,171 --> 01:18:52,691
+Zikzak zikzak gider. Çukura doğru, çukurun dibine doğru yavaş yavaş inersiniz. Burada da bu sefer türev değil de ne kullanılır? Gradiyant kullanılır.
+
+289
+01:19:04,948 --> 01:19:15,968
+x2 gibi bir fonksiyon varsa bunun türevi nasıl olur? Bir vektördür. x1'e göre türevi.
+
+290
+01:19:22,739 --> 01:19:27,180
+Yine x2'ye görültürelim.
+
+291
+01:19:31,539 --> 01:19:35,659
+Bu türevlerden oluşan fonksiyona biz gradyant diyoruz.
+
+292
+01:19:38,440 --> 01:19:49,440
+Ve şu mantık iteratif olarak türevin eksi yönüne gidersen fonksiyonun azalacağı mantığı burada da geçerli.
+
+293
+01:19:49,440 --> 01:19:52,619
+Bunu bilim adamları ispat etmişler.
+
+294
+01:19:54,159 --> 01:19:56,760
+Dolayısıyla direkt bu mantığı kullanacağız.
+
+295
+01:19:58,068 --> 01:20:21,827
+Bu şeyimiz ne? Fonksiyonumuz ne? İşte şu fonksiyonu. Şu büyük toplama fonksiyonu. Peki neye göre türevini alacağız? İşte şu teta'ya göre. Yani şunu bilmek istiyoruz. Türevin, yani şu toplam losa s diyeyim ben.
+
+296
+01:20:25,427 --> 01:20:39,368
+S'nin türevi, gradiyantı şöyle gösterilir. Bir ters üçgen ile gösterilir.
+
+297
+01:20:45,043 --> 01:20:46,863
+Şu çizgi nereden geliyor anlamanı.
+
+298
+01:20:51,507 --> 01:20:52,907
+Öğneğin,
+
+299
+01:21:02,676 --> 01:21:24,036
+S'nin gradyantını alacağız. Ama neye göre alacağız arkadaşlar? Teta'ya göre. Elimizdeki parametreleri değiştirmek istiyoruz. Yani W'nun parametrelerini. Yani bu nasıl bir şey olacak? Bir vektör olacak mesela. S'nin neye göre türevi gerekecek mesela burada?
+
+300
+01:21:25,555 --> 01:21:50,175
+W1 vardı ya bizde bir tane. W1'in diyelim ki ilk elemanı, virgül, S'nin, işte W2'nin ikinci elemanı, virgül, S'nin, diyelim ki biraz 3 vardı bir yerlerde hatırlarsınız.
+
+301
+01:21:50,804 --> 01:22:08,783
+Biraz üçün diyelim ki onuncu elemanı falan gibi bütün bu eğitmek istediğimiz parametreleri içeren böyle bir neye ihtiyacımız var? Gradiyana ihtiyacımız var.
+
+302
+01:22:11,184 --> 01:22:13,804
+İşte sorun burada ortaya çıkıyor. Niye?
+
+303
+01:22:15,091 --> 01:22:28,111
+Basit bir fonksiyonun türevini almak tamam, alabilirsiniz. Ama son derece komplike bir fonksiyonun türevini, yani gradiyantını nasıl alırız?
+
+304
+01:22:30,111 --> 01:22:37,191
+Burada 1986'da yayınlanmış, Rümer Halt et al tarafından.
+
+305
+01:22:38,631 --> 01:22:40,351
+Backpropagating.
+
+306
+01:22:42,452 --> 01:22:54,012
+Şeklinde bir Learning Internal Representations by Backpropagating diye bir yayında dahice bir fikir çıkıyor.
+
+307
+01:22:56,012 --> 01:23:05,152
+Bu fikir Türev'in adım adım alınmasını sağlıyor. Zincir kuralı sayesinde.
+
+308
+01:23:05,152 --> 01:23:07,391
+Bunu kullanacağız.
+
+309
+01:23:07,904 --> 01:23:12,564
+Buna geçmeden önce tabii bir ara verelim.
+
+310
+01:23:17,587 --> 01:23:39,087
+Saatimiz 10.30 olmuş. 9'da 9 gibi başladık. 1.30 saate yakın bir ders yapmışız. Şimdi 25 geçiyor benim saatime göre. Ne yapalım? 15 dakikalık bir ara verelim. Yani ne yapar?
+
+311
+01:23:39,891 --> 01:23:46,212
+15, 25, 30, 40, 40 geçe dönmek üzere bir ara verelim arkadaşlar.
+
+312
+01:43:46,228 --> 01:43:47,887
+Tekrar merhabalar arkadaşlar.
+
+313
+01:44:01,332 --> 01:44:03,592
+Evet, bu slide'da kalmıştık.
+
+314
+01:44:05,592 --> 01:44:07,612
+Şu an slide gözükmüyor hocam.
+
+315
+01:44:08,132 --> 01:44:10,592
+Tamam, teşekkürler onu paylaşayım.
+
+316
+01:44:18,452 --> 01:44:19,372
+Gerçekten.
+
+317
+01:44:25,460 --> 01:44:26,680
+Çizimde geliyor mu?
+
+318
+01:44:30,676 --> 01:44:31,615
+Geliyor hocam.
+
+319
+01:44:33,176 --> 01:44:52,836
+Şimdi ne dedik? Bunu minimize eden TETA'yı bulacağız. Bunun için bunun türemine ihtiyacımız var. TETA'ya göre.
+
+320
+01:44:58,899 --> 01:45:16,819
+Şimdi şöyle başlıyor olaya. Öncelikle Loss'un O'ya göre türevini buluyor. Burada analitik olarak buluyorum bunu.
+
+321
+01:45:18,679 --> 01:45:25,119
+Bir ara bunu ben çalıştım diye hatırlıyorum ama şu anda emin değilim nasıl çıkartıyor bunu.
+
+322
+01:45:26,163 --> 01:45:44,943
+Kağıt kalemi elinize alıp şöyle güzelce uğraşırsanız nasıl çıkarttığını bulursunuz. Yalnız benim sorunum şu burada. Öncelikle şeyi bulması lazımdı.
+
+323
+01:45:52,404 --> 01:46:08,224
+Şuraya S dedim ya ben. Şu toplama. Sum. Bu toplamın L'ye göre türevini alması lazım diye düşünüyorum ben. Ama onu yapmamış. Neden olabilir?
+
+324
+01:46:28,595 --> 01:46:31,375
+Ben de emin değilim ama sanki şey gibi geliyor.
+
+325
+01:46:36,115 --> 01:46:53,576
+Burada L'yi şey gibi düşünsek, büyük L'yi bir vektör gibi düşünsek, L1, L2, L3 gibi.
+
+326
+01:46:57,460 --> 01:46:59,059
+Toplam P tane olacak.
+
+327
+01:47:02,420 --> 01:47:10,439
+Ve şu sum'ın, S'nin türevi tabii bir gradiyana olacak.
+
+328
+01:47:11,960 --> 01:47:17,899
+L'ye göre türevi, şimdi L1'e göre türevi aldığımızda, burası bir toplama.
+
+329
+01:47:20,019 --> 01:47:21,399
+Ne gelecek?
+
+330
+01:47:24,020 --> 01:47:42,840
+Sadece L1'in kendisinden bir gelecek. Diğerlerinden. L2, L3, bu şey ya, S eşittir. L1 artı L2 artı Lp'ye kadar.
+
+331
+01:47:44,980 --> 01:47:50,800
+L1'e göre türev aldığımızda şuradan bir gelecek.
+
+332
+01:47:51,604 --> 01:48:18,923
+Diğerleri hep 0 olacak. Çünkü buralarda L1 yok. L2'ye göre türev aldığımızda buradan bir gelecek. Diğerleri hep 0 olacak. Dolayısıyla bu türev 1, 1, 1. Bu da değil esasen. Düşünelim ne olacak.
+
+333
+01:48:20,148 --> 01:48:30,548
+Evet. 1-1-1, evet. 1-1-1'den 1-1-1'e eşit bir vektör.
+
+334
+01:48:34,644 --> 01:48:52,784
+Birle de herhangi bir şeyi çarparsanız kendisi oluyor ya, birazdan göreceğiz. Bunlar çarpım işlemine giriyor. Dolayısıyla sanırım o nedenle gerek duymamış. Yani S'nin L'ye göre türevini almaya gerek duymamış.
+
+335
+01:49:02,771 --> 01:49:15,231
+Analitik sonucu nasıl buldu şu anda takip edemiyorum ama L'yi şu formülü buraya yazdım diyor ve şu O'ya göre türev aldım diyor.
+
+336
+01:49:17,932 --> 01:49:22,012
+Dolayısıyla mesela ne olacak? L eşittir.
+
+337
+01:49:24,712 --> 01:49:30,231
+Eksi Y bir logaritma.
+
+338
+01:49:34,228 --> 01:50:00,748
+P C1 X Eksi Y2 Logaritma P C2 X Bu P C1 X de E üzeri
+
+339
+01:50:01,332 --> 01:50:10,912
+O, bir, bölü toplam, şu toplam, o toplama s, küçük s diyeyim ya da t diyeyim şöyle.
+
+340
+01:50:15,859 --> 01:50:23,420
+Mesela ne yapıyor? O'ya göre türev alınmak ne demek?
+
+341
+01:50:30,963 --> 01:50:33,024
+O1'e göre önce türev almak demek.
+
+342
+01:50:34,264 --> 01:50:39,764
+Şimdi O1'e göre türev aldığında şu ifade çıkıyormuş.
+
+343
+01:50:42,064 --> 01:50:47,104
+Yani bunu kağıt kalemle, matematikle bir güzel oturup çıkartmanız lazım.
+
+344
+01:50:49,304 --> 01:50:54,583
+Tabii bu analitik olarak bunları çıkartma oldukça zor.
+
+345
+01:50:58,387 --> 01:51:14,688
+Fakat yapılabilir. Modern Neural Network kütüphaneleri bu işlemi de sizin için yapıyor. Yani bu analitik olarak bu şekilde çıkartmanıza da gerek kalmıyor.
+
+346
+01:51:14,688 --> 01:51:23,747
+Ama normalde o özellikleri olmasaydı o kütüphanelerin ne yapmamız gerekecekti?
+
+347
+01:51:24,916 --> 01:51:30,435
+O'ya göre L'nin türevi şu şekilde analitik olarak bulmamız gerekecekti.
+
+348
+01:51:31,895 --> 01:51:37,155
+Bu da neyle olacak? Aslında şu ifade.
+
+349
+01:51:38,635 --> 01:51:47,255
+O'ya göre türev alıyoruz. Aslında çok zor olmaması lazım da işte duramıyorum da.
+
+350
+01:51:50,579 --> 01:51:58,739
+Şurada E üzeri O1 var. Yoksa kolay diyecektim de. Artı E üzeri O2 falan var.
+
+351
+01:51:59,940 --> 01:52:08,840
+Ama burada logaritmi olması işimizi kolaylaştırıyor. Normalde zor bir şey. Zor bir ifade gibi ama.
+
+352
+01:52:13,359 --> 01:52:15,539
+Mesela şurasına biraz bakalım.
+
+353
+01:52:17,171 --> 01:52:34,492
+Eksiyi şimdilik bir tarafa bırakalım. Eksi Y1. Logaritma olduğu için ne yapabiliriz? Logaritma E üzeri O1. Eksi.
+
+354
+01:52:45,363 --> 01:53:06,043
+sum e üzeri, yani sum'ı da şöyle yazayım da, o bir artı e üzeri o iki artı şeklinde gidiyor. Yani bu ilk ifade.
+
+355
+01:53:07,507 --> 01:53:32,827
+Bunu şimdi O1'e göre trav alacağız. Şu kısım çok cici oluyor. O1 logaritmanın başına geliyor. Eksi, Y1, O1, Eksi. Şurası kolaylaşabilir mi? Çarpım durumunda olsaydı güzeldi de toplama durumunda ne olacak burası?
+
+356
+01:53:36,212 --> 01:53:38,212
+Parantezin içinin türevi
+
+357
+01:53:43,475 --> 01:53:50,555
+Burada da zincir kuralı kullanmamız gerekecek. Bunun türevi çarpı bu.
+
+358
+01:53:53,971 --> 01:53:55,971
+Gibi.
+
+359
+01:54:01,747 --> 01:54:02,667
+Uğraşacağız.
+
+360
+01:54:07,315 --> 01:54:14,636
+Türevalma notlarıma falan bakmam lazım da şurada zincir kuralını nasıl uyguluyorduk falan gibi.
+
+361
+01:54:16,655 --> 01:54:20,536
+Fakat logaritmanın türeğini de alacağız bir yerde.
+
+362
+01:54:21,936 --> 01:54:28,235
+Sonuçta tekrar sanırım bir toparlayacağız falan. Olasılık tekrar ortaya çıkıyor. Şu bölüm demek ki tekrar geliyor.
+
+363
+01:54:30,644 --> 01:54:35,384
+Bundan yeğenin çıkarılması, şu yeğenin çıkarılması haline dönüşüyor.
+
+364
+01:54:42,739 --> 01:54:58,680
+Ama sonuçta ne yapmış oluyor? L'nin O'ya göre türevini almış oluyor. Buna gradiyan desek daha doğru. Buradaki notasyonda gradiyan kullanmamış. Ama bu bir vektör vermesi lazım diye düşünüyorum.
+
+365
+01:55:02,640 --> 01:55:04,420
+Şuda bir vektör değil mi?
+
+366
+01:55:09,716 --> 01:55:11,716
+Şu bir vektör olduğunu gösteriyor.
+
+367
+01:55:16,243 --> 01:55:29,023
+Şimdi ne yaptık? L'nin O'ya göre türevini aldık. Bir sonraki aşamada ne yapıyoruz?
+
+368
+01:55:33,939 --> 01:55:53,140
+L'nin W'ye göre türevi lazım bize. L'nin W'ye göre türevini bulurken zincir kuralını uyguluyoruz. Diyoruz ki L'nin W'ye göre türevi, L'nin O'ya göre türevi çarpı O'nun W'ye göre türevidir.
+
+369
+01:55:58,484 --> 01:56:24,524
+Ve L'nin H2'ye göre türevi lazım. H2'ye göre türevi de yine L'nin O'ya göre türevi çarpı O'nun H2'ye göre türevi. Ama işin güzel tarafı L'nin O'ya göre türevini zaten az önce hesap etmiştik. Şurada hesap etmiştik bir önceki satırda. Şurada hesap etmiştik.
+
+370
+01:56:26,515 --> 01:56:38,015
+Şimdi Backpropagation burada güzellik ortaya çıkıyor. Bir önceki şey, türev ne yapılabiliyor? Kullanılabiliyor.
+
+371
+01:56:38,015 --> 01:56:49,015
+Pardon şu. Bir önceki adımda kullandığınız türev ifadesini ne yapmak için? Şuralar için kullanabiliyorsunuz.
+
+372
+01:56:49,115 --> 01:56:51,376
+Burada sadece ne yapmanız gerekiyor?
+
+373
+01:56:52,532 --> 01:57:19,271
+O'nun W'ye göre türevini almanız gerekiyor. Hatırlarsanız burada ne var? Buranın çıktısı O. Dolayısıyla sadece yerel olarak bizim burada yaptığımız hesaplamayı göz önünde almanız yeterli. O'nun W'ye göre türevini alıyorsunuz. O'nun H2'ye göre türevini alıyorsunuz. L'nin O'ya göre ve türevi de zaten burada.
+
+374
+01:57:19,796 --> 01:57:31,115
+Bu çarpımı yaptığınızda L'nin W'ye göre türevini burada ve L'nin H2'ye göre olan türevini buluyorsunuz.
+
+375
+01:57:32,695 --> 01:57:36,096
+Bunlar da yine analitik olarak hesaplanmış burada.
+
+376
+01:57:37,936 --> 01:57:46,828
+Bunu da kağıt kalemle güzelce düşünerek işte matematik notlarımızı eğer matematiğiniz çok çok...
+
+377
+01:57:46,868 --> 01:58:00,408
+Taze değilse yanına alarak zincir kuralını, işte ne bileyim, trevleri falan göz önüne alarak yaparsanız ne olacaktır?
+
+378
+01:58:01,128 --> 01:58:02,887
+Bu ifadeleri elde edeceksiniz.
+
+379
+01:58:04,108 --> 01:58:06,248
+Şimdi olayı sanırım anladınız.
+
+380
+01:58:06,248 --> 01:58:08,128
+Şimdi ne olacak?
+
+381
+01:58:12,819 --> 01:58:37,460
+H1'e göre türevini bulmak istediğimizde neyi kullanacağız? Bunu ve bunu kullanacağız. Sonra L'nin W1'e göre türevini bulmak istediğimizde buradan geleni kullanacağız şeklinde bu türev ifadeleri geriye doğru ne yapılıyor? Dağıtılıyor.
+
+382
+01:58:37,872 --> 01:58:45,412
+Backward Propagation, Backpropagation buradan geliyor. Türevi geriye doğru hesap ederek gidiyorsunuz.
+
+383
+01:58:50,771 --> 01:58:59,112
+Dolayısıyla tüm parametreler için L'nin parametreye göre türevini elde etmiş oluyorsunuz.
+
+384
+01:59:03,475 --> 01:59:10,475
+Evet, burada da bahsettiğim gibi yavaş yavaş geriye doğru gidiyorsunuz.
+
+385
+01:59:11,475 --> 01:59:15,475
+Ve ne oldu? Tüm türevleri elde ettiniz.
+
+386
+01:59:17,475 --> 01:59:21,475
+L'nin tüm parametrelere göre türevini elde ettiniz.
+
+387
+01:59:23,475 --> 01:59:29,475
+Soru var. Backpropagation sadece redo ile mi çalışır? Hayır.
+
+388
+01:59:31,699 --> 01:59:47,579
+Türevi alınabilir bir non-linearity olması oranın. Relo yerine başka şeyler de kullanılabiliyor ama deneysel çalışmalarda Relo'nun iyi sonuç verdiği de görülmüş.
+
+389
+01:59:49,479 --> 01:59:57,699
+Backpropagation pahalı bir şey mi? Hayır, tam tersi özelliği o. Çok hızlı olması özelliği.
+
+390
+01:59:58,355 --> 02:00:16,055
+Yani ileri propagation'ın iki katı kadar bir hesaplamaya ihtiyacınız var. Bu da esasen çok düşük bir şey. Backpropagation'ın özelliği zaten çok hızlı bir şekilde alabilmesi bu türevleri.
+
+391
+02:00:21,524 --> 02:00:28,304
+Back-forward Propagation ve Back-Propagation esasen birbirinin duali olarak düşünülebiliyor.
+
+392
+02:00:29,304 --> 02:00:37,564
+Forward Propagation'da sum yapıyorsanız, Back-Propagation'da işte buraya gelen ve buraya gelen.
+
+393
+02:00:38,123 --> 02:00:40,003
+Türevi ikiye ayırmanız gerekiyor.
+
+394
+02:00:40,003 --> 02:00:48,083
+Yani bunun için de türev olmanız gerekiyor, bunun için de türev olmanız gerekiyor gibi düşünebilirsiniz.
+
+395
+02:00:53,908 --> 02:01:18,688
+Peki, optimizasyon nasıl olacak? Bunu zaten daha önce anlattım. Parametrelerimizin yeni değerini nasıl hesap edeceğiz? Bu parametrelerden gradyantı, o parametreye göre loss'un değişme miktarını
+
+396
+02:01:19,859 --> 02:01:35,340
+Yani o parametreye göre olan türevini çıkaracağız. Tabii direkt tak diye çıkarmayacağız. Ne olacağız? Bir sayıyla ağırlıklayacağız. 0 ile 1 arasındaki bir sayı kullanılıyor genelde.
+
+397
+02:01:35,859 --> 02:01:46,460
+Yani çok direkt çıkarırsanız ne oluyor? Şu şekilde yavaş yavaş gitmeniz lazımken, böyle böyle böyle böyle.
+
+398
+02:01:46,836 --> 02:02:05,216
+Çok hızlı bir şekilde atlama yaparsınız, karşı tarafa geçersiniz. Böyle gereksiz tak tak tak tak atlamalar olabilir. O yüzden minik minik adımlarla gidilmesi istemiliyor. Dolayısıyla ne? Küçük bir sayı oluyor.
+
+399
+02:02:06,676 --> 02:02:13,616
+Pratikte kaç kullanılıyor onu tam olarak bilmiyorum. 0-25 gibi bir sayı olabilir gibi hatırlıyorum.
+
+400
+02:02:14,771 --> 02:02:31,752
+Bu iterasyon, tabii nöral networkler çok ciddi çalışılmış. Bu iterasyonun yerine birçok farklı iterasyon şekli düşünülmüş.
+
+401
+02:02:31,752 --> 02:02:39,891
+Mesela şunu kullansak demişler, teta'yı şöyle yapsak.
+
+402
+02:02:42,387 --> 02:03:07,847
+Önce bir delta gibi bir şey var. O deltayı değiştiriyor. Yani son ifade ne oluyor? Theta eşittir. Theta eksi nu 0.9.
+
+403
+02:03:09,619 --> 02:03:33,879
+Delta. Bu delta ne acaba? Artı gradiyan. L'nin gradiyanı. Teta'ya göre. Bunu bilen var mı arkadaşlar? Nörel Networklerle uğraşmış olup da bu delta nedir bilen var mı?
+
+404
+02:03:40,500 --> 02:03:45,500
+Sanki bir o da katsayı gibi geldi bana. Yani çünkü...
+
+405
+02:03:51,636 --> 02:03:55,636
+Şunu yazmadığımı düşünün. Orada yanlış düşünmüş olabilirim.
+
+406
+02:04:05,939 --> 02:04:15,659
+Sanki bir katsayı gibi geldi. O katsayı da zaman içinde değişiyor çünkü. Yani bir nevi hız gibi bir şey oluyor sanki.
+
+407
+02:04:19,539 --> 02:04:26,400
+Hani şu nü'yü de ne yapmış oluyor? Katsayı bir nevi değiştirmiş oluyor bu delta aracılığıyla.
+
+408
+02:04:28,340 --> 02:04:40,440
+Neyse. Standartına Stochastic Gradient Descent deniliyor. Diğerine Stochastic Gradient Descent with Momentum deniliyor.
+
+409
+02:04:40,440 --> 02:04:44,500
+Ve birçok farklı varyantı var. Bu update.
+
+410
+02:04:45,395 --> 02:04:50,595
+Update kuralının. Bir de pratikte
+
+411
+02:04:50,595 --> 02:04:58,235
+ne yapılıyor?
+
+412
+02:05:04,020 --> 02:05:24,680
+Şu update hangi sıklıkla yapılacak? Bununla ilgili de birçok çalışma yapılmış mini-batchler tavsiye ediliyor. Yani diyelim ki bizim elimizde P eşittir diyelim ki bir milyon tane imge var.
+
+413
+02:05:26,340 --> 02:05:28,120
+Bir milyon imge var.
+
+414
+02:05:34,003 --> 02:05:35,500
+1 milyon indi.
+
+415
+02:05:38,612 --> 02:05:57,992
+Bir milyon imgenin eğitime sokulup daha sonra mı TETA Update'i yapılmalı? Yoksa tek bir imgeyi eğitime sokup TETA Update'ini ondan sonra mı yapmalı? gibi bunun üzerine düşünmüşler.
+
+416
+02:05:58,804 --> 02:06:20,784
+Şu kullanılıyor. Bir milyon değil de bunu mini-batchlere ayırıyorsunuz. Mesela binlik batchlere ayırabilirsiniz. Bin tane imgeyi sokuyorsunuz. Daha sonra TETA'nın update'ini yapıyorsunuz. Gradient update'ini yapıyorsunuz gibi.
+
+417
+02:06:24,851 --> 02:06:30,851
+Buna mini batchler üzerinde gradiyent desen deniliyor. Stokastik gradiyent desen deniliyor.
+
+418
+02:06:34,484 --> 02:06:51,984
+Burada bu çıkarttığı formüllerle Matlab'da yazmış. Aslında ödev olarak da size verebileceğim bir şey ama şu anda iki ödev verdim. Yeni ödev vermek istemiyorum.
+
+419
+02:06:54,124 --> 02:06:59,704
+Python'da mesela bunu evde kendiniz gerçekleştirmeyi düşünebilirsiniz.
+
+420
+02:07:00,404 --> 02:07:24,463
+Tabii bunu yapabilmek için o şeyleri, şu denklemleri çıkarabilmeniz lazım. Şu denklemleri kağıt üzerinde çıkartmayı deneyin. Sonra da o denklemlere göre çünkü bu backdrop agation'ı falan hazırlıyorsunuzdur diye düşünüyorum.
+
+421
+02:07:27,507 --> 02:07:51,828
+Backpropagation'ı nasıl yapmış? Prediction'dan target'i çıkartmış. Her bir layer için. DH'larla H'ları çarpmış. H'lar, o H'ler herhalde. H'ler. DH'lar da türevleridir. DH'ı nerede hesap etmiş? Şurada.
+
+422
+02:08:13,587 --> 02:08:16,768
+Ama hiç oradaki denklemleri falan kullanmış mı ki?
+
+423
+02:08:31,667 --> 02:08:33,667
+LR nereden geliyor?
+
+424
+02:08:40,083 --> 02:08:41,844
+LR bölü 5 sayısı.
+
+425
+02:08:53,395 --> 02:08:57,395
+Beş sayısını mesela 1000 alırsak, yani 1000 adımda...
+
+426
+02:09:01,492 --> 02:09:03,492
+Bir update edecek ya.
+
+427
+02:09:05,492 --> 02:09:08,492
+LR nerede? LR'yi göründüm ya.
+
+428
+02:09:25,555 --> 02:09:26,495
+Şunlar, zaman.
+
+429
+02:09:32,148 --> 02:09:46,607
+Bu slide'da bir hata olabilir. Loss'u şöyle tak diye hesap ediyor ama hiçbir yerde de kullanamıyor. Acaba LR dediği loss mu?
+
+430
+02:10:13,587 --> 02:10:15,547
+Açıklama var mı? Slaikta bakalım.
+
+431
+02:10:17,707 --> 02:10:18,327
+Not yok.
+
+432
+02:10:28,532 --> 02:10:49,051
+Ne oluyor? I1'den Number of Layers'e kadar, katman sayısına kadar, 1-1 haricinde. Forward Propagation'ı ne yapıyor? Nasıl yapıyor? W'lerle, o katmandaki W'yla.
+
+433
+02:10:50,003 --> 02:11:13,743
+Bir önceki katmandaki H'i çarpıyor. Bir yasla toplayıyor. Yani burası şey. W çarpı H artı B. Şurası. Non-minarity'ye veriyor. Yani az önceki relü'ye veriyor. Bu da bize neyi verecek?
+
+434
+02:11:16,916 --> 02:11:29,996
+O katmanın çıktısı olan H'ı verecek. Bir de non-dinearity'den dolayı JAK'ı veriyor. O fonksiyonu bilmiyoruz.
+
+435
+02:11:33,716 --> 02:11:53,256
+Jak, Jakobyan'dır. Direkt orada türevi de mi veriyor acaba? Yerel türev gerekli zaten. Burada ne yaptığı da belli. Yerel türev değerlerini direkt şurada Jak'a veriyor olabilir. Sonra ne yapıyor?
+
+436
+02:12:06,260 --> 02:12:12,260
+Bir Forward Propagation yaptı burada tüm layer'lar için. Sonra,
+
+437
+02:12:16,260 --> 02:12:19,260
+H'ı elde ettim dedi tekrar.
+
+438
+02:12:23,475 --> 02:12:24,376
+Tahminler etti.
+
+439
+02:12:32,275 --> 02:12:35,975
+Evet, yani burayı tabii tam olarak çözemedim.
+
+440
+02:12:44,115 --> 02:13:00,655
+Biraz şu şaşırttı beni. Önce bir Forward Propagation'da bu hash'ları buldu. Sonra hash'ın en sonuncusunu buldu. Ha doğru. Hash'ın en sonuncusu. En sondan bir öncekisi.
+
+441
+02:13:00,655 --> 02:13:11,596
+Yani Number of Layers'ı diyelim ki 4 alsak. Üçüncü katmanınkini direkt buldu.
+
+442
+02:13:14,355 --> 02:13:16,355
+Bu zaten Forward Propagation.
+
+443
+02:13:18,355 --> 02:13:19,995
+E artıyor.
+
+444
+02:13:42,547 --> 02:14:06,787
+Ne yapıyor? İleriye doğru gidiyor burada. Diyelim ki 4 katmanımız var. H1'i buluyor. Jacobian 1'i buluyor. H2'yi buluyor. Jacobian 2'yi buluyor. H3'ü buluyor. Jacobian 3'ü buluyor.
+
+445
+02:14:09,076 --> 02:14:11,996
+And the number of layers eksi bir dediği için.
+
+446
+02:14:14,175 --> 02:14:14,775
+Sonra
+
+447
+02:14:20,627 --> 02:14:22,627
+H0 nasıl yapıyor?
+
+448
+02:14:22,627 --> 02:14:23,627
+H0
+
+449
+02:14:28,404 --> 02:14:33,384
+Birden başladığı için h1-1-0 edecektir. h0 nedir?
+
+450
+02:14:37,011 --> 02:14:50,692
+Bu psidokot gibi yazılmış belki de. Yani tam olarak bir şey olarak yazmamış bunu. Bu zaten H0 dediğimiz şey input olacak. X olacak. X girişi. H0.
+
+451
+02:14:56,020 --> 02:15:17,260
+Ondan sonra H3'ü tekrar buluyor. Nandinerit'i kullanmadan buluyor bu sefer. O yüzden tekrar yapmış. Enteresan.
+
+452
+02:15:21,971 --> 02:15:47,471
+Yani sonuç olarak türevini non-linearity ile buluyor ama türevsiz bir şekilde şeyini buluyor. Non-linearitysiz son katmanı kullanıyor. Softmax fonksiyonuna veriyor. Az önceki şu kompleks fonksiyon softmax fonksiyonuydu arkadaşlar.
+
+453
+02:15:50,707 --> 02:15:54,807
+Şu fonksiyon zaten yazıyormuş. Softmax fonksiyonu.
+
+454
+02:16:00,020 --> 02:16:09,560
+Elinde tahminler oluyor. Yani bu bizim O'muz. Az önceki Softmax O'yu mu veriyor bize?
+
+455
+02:16:15,315 --> 02:16:16,556
+P'yi veriyor aslında.
+
+456
+02:16:22,323 --> 02:16:40,043
+Neyse, Prediction diyoruz buna. Sonra nasıl yaptı? Prediction'ın logaritmasını aldı. Tamam. Target'le yani Y ile çarptı. Tamam. Az önce bunu konuşmuştuk.
+
+457
+02:16:51,700 --> 02:17:02,819
+Topluyor. İkili bir toplama yaptı. Değil mi? Samsam. Demek ki bu bir matriz.
+
+458
+02:17:18,484 --> 02:17:21,884
+Yani tek bir değer elde etmek için burada toplamayı yaptı.
+
+459
+02:17:24,344 --> 02:17:27,204
+Sonra da ne yaptı? 5 size'a böldü.
+
+460
+02:17:28,783 --> 02:17:33,584
+5 size'ımız mesela biner biner. 5 size'ımız bin diyelim ki.
+
+461
+02:17:34,404 --> 02:17:37,064
+Bine böldü. Bu bizim loss'umuz dedi.
+
+462
+02:17:40,084 --> 02:17:44,504
+Sonra DH dedi. H'ın türevi.
+
+463
+02:17:47,603 --> 02:17:50,603
+Bizim prediction'ın...
+
+464
+02:17:54,675 --> 02:18:12,315
+Yani P'lerden targeti çıkarttı. Sonra geriye doğru gidiyor şimdi. Backpropagation yapacak. Matlab'da bu notasyon geriye geriye gitme notasyonudur. Tek tek.
+
+465
+02:18:19,219 --> 02:18:44,759
+W grad, yani W'nun gradiyanı şöyle elde etti. D, H ile H'ları çarptı. B'nin gradiyanı D, H'ın ne bu? 2 ile topladı. D, H, E'yi 2 ile topladı.
+
+466
+02:19:03,763 --> 02:19:08,963
+DHİ'yi 2 ile topladı. Nereden geldi bu iki?
+
+467
+02:19:17,747 --> 02:19:22,467
+Matris, bu bir vektör veya matris. Bunun tüm elemanlarını ikinciyle topladım.
+
+468
+02:19:32,884 --> 02:19:59,943
+DHİ. O katmandaki DH'ın. Şurada DHL-1 diyor. Bu da bir döngünün içerisinde galiba. Yani esasen şurada bir döngüde olması lazım muhtemelen. L-1 diyor çünkü. Ama burayı neyle? Bir fikriniz var mı? Niye ikiyle?
+
+469
+02:20:09,940 --> 02:20:31,780
+Ve en son DHI-1'i buluyor. Nasıl? DHI ile W'ların transpozunu çarpıyor. Bu da şey çarpımı. Birleşen birleşen çarpım matlapta. Jacobian'ın bir öncekisiyle. Jacobian'da şey.
+
+470
+02:20:35,252 --> 02:20:42,752
+Vektörün vektöre göre türevini alırsanız bir matriz çıkıyor. Türev matrizi yani.
+
+471
+02:20:47,891 --> 02:20:57,772
+Bu şekilde DH'ı buldu. En son update için tekrar baştan sona tekrar bir update yapıyor.
+
+472
+02:21:01,876 --> 02:21:23,515
+L, R bölü 5 sayıs buradaki gradiyanlarla çarparak W'ları ve B'leri ne yapıyor? Çarpmadan önce gradiyanı ağırlıklandırıyor. L, R bölü 5 sayısıyla.
+
+473
+02:21:30,772 --> 02:21:52,672
+Learning Rate. Learning Rate bu. N demiştim ya ben oraya. O kat sayıdır LR. LR'yi 5 sayıza 1000'e bölüyor mesela. Sonra topluyor. Bayağı çözdük ama şu şeyi çözemedim.
+
+474
+02:21:55,636 --> 02:21:58,976
+Beyazın gradiyonunu hesap ederken,
+
+475
+02:22:02,484 --> 02:22:03,864
+O2 nereden geliyor?
+
+476
+02:22:08,244 --> 02:22:10,924
+Ama genel olarak ne yaptığını anladık herhalde.
+
+477
+02:22:15,987 --> 02:22:17,667
+Saatımızda 11.30 olmuş.
+
+478
+02:22:21,332 --> 02:22:31,432
+Evet arkadaşlar, nörel networklerle ilgili başka daha önce standart nörel networklerle ilgili bir ders görmüş müydünüz?
+
+479
+02:22:44,852 --> 02:22:53,612
+Umarım oturmuştur kafada. Genel olarak ne yaptığını ayrıntılı bir şekilde incelemeye çalıştık.
+
+480
+02:22:55,891 --> 02:23:02,932
+Hocam, bunu payton ve şey çalışalım mı? İdeal olarak.
+
+481
+02:23:03,132 --> 02:23:05,932
+Ödev vermiyorum. Ödev vermiyorum.
+
+482
+02:23:07,371 --> 02:23:10,412
+Orada rahma incelememiz lazım değil mi? Matmatiği.
+
+483
+02:23:12,020 --> 02:23:33,659
+Faydalı olur. Yani şunu mesela Python'a çevirmeye çalışsanız. Bir burada şeyi anlamadım ben. Tabii şunların linearity fonksiyonunu içinde şu Jacobian'ı nasıl döndürüyor? Jacobian, yani o katmanın Jacobian'ını döndürüyor.
+
+484
+02:23:36,051 --> 02:23:41,131
+Daha sonra da o Jakobyan'ı şurada kullanıyor. Hala görüyor musunuz şeyi?
+
+485
+02:23:41,131 --> 02:23:42,731
+Evet, evet. Görüyor.
+
+486
+02:23:43,652 --> 02:23:46,171
+O Jakobyan'ı şurada kullanıyor.
+
+487
+02:23:50,231 --> 02:23:54,711
+Onun haricinde şu iki nereden geliyor onu anlamadım.
+
+488
+02:23:56,092 --> 02:23:58,932
+Jakobyan Türev zaten sonuç itibariyle.
+
+489
+02:24:04,915 --> 02:24:17,395
+İşte burada tabii kağıt kalemi alıp güzelce ne nedir şuradaki denklemlerle ilişkilendirerek, şuradaki mantıkla ilişkilendirerek ne nedir anlamak lazım.
+
+490
+02:24:18,595 --> 02:24:28,455
+Biraz neden iki olarak geliyor? Birazın gradyantı niye iki olarak geliyor? Onu anlamak lazım falan.
+
+491
+02:24:31,156 --> 02:24:48,096
+İmplementasyon tabii zaten toy code demiş. Yani oyuncak kod. Buradan devam edelim artık. Daha fazla burada durmak istemiyorum. Nereye varıyoruz? Convolutional neural networklere geliyoruz.
+
+492
+02:24:54,131 --> 02:24:58,272
+Zamanı da kaybediyorum. Maksimaliz edince şu şeyi.
+
+493
+02:25:11,156 --> 02:25:15,156
+Bir ara şey yapmamız gerekiyor. Proje için...
+
+494
+02:25:19,763 --> 02:25:40,163
+Nasıl yapacağız? Onu konuşmamız gerekiyor. Convolution neural networklere girmeyeyim. Çünkü zaten az bir vakit kalmış. O konu da yarım kalır. Sonra tekrar başlarız, tekrar ederiz. Buna girmeyeyim.
+
+495
+02:25:47,092 --> 02:25:48,332
+Raman da doldu hocam.
+
+496
+02:25:49,252 --> 02:25:50,952
+Evet, zaman da doldu.
+
+497
+02:25:54,952 --> 02:25:58,551
+Gelecek hafta aynı devam edeceğiz hocam.
+
+498
+02:25:59,472 --> 02:26:12,692
+Gelecek hafta normal ders saatinde şimdilik öyle oluyor. Bugün ben biraz şeyim, hafif rahatsız gibiyim. Ondan sonra.
+
+499
+02:26:16,628 --> 02:26:33,148
+Şimdi şunu istiyorum sizden. Kod ve paper'ı birleştirip bize anlatmanızı istiyorum. Yani öyle paper'lar bulun ki bana. Projeniz var biliyorsunuz değil mi?
+
+500
+02:26:34,968 --> 02:26:36,168
+Nereye ilgili hocam proje?
+
+501
+02:26:37,168 --> 02:26:39,328
+Şu anda ekranı görüyor musunuz?
+
+502
+02:26:39,328 --> 02:26:39,808
+Evet.
+
+503
+02:26:43,920 --> 02:27:02,420
+Şimdi sizden Computer Vision'ın belirli konularında paper'lar bulun. Şöyle bir yere yazayım ben şimdi. Önce ne yapalım? Ben önce bir Google'uma gideyim.
+
+504
+02:27:17,396 --> 02:27:28,675
+Yeni bir sheet açayım. Buna ne diyeyim? Bilgisayarla Görme.
+
+505
+02:27:28,675 --> 02:27:43,956
+2022-2023-100
+
+506
+02:27:46,227 --> 02:27:47,707
+Proje listesi.
+
+507
+02:27:51,316 --> 02:27:51,816
+İyi.
+
+508
+02:27:59,540 --> 02:28:03,780
+Ve bunun adresini sizinle paylaşayım.
+
+509
+02:28:03,780 --> 02:28:05,380
+Share diyeyim.
+
+510
+02:28:10,291 --> 02:28:15,752
+Bunu size yazma izni de vereyim. Nasıl yapacağız onu?
+
+511
+02:28:28,051 --> 02:28:31,371
+Can open with the link. Onun yerine sizin...
+
+512
+02:28:35,891 --> 02:28:36,971
+Editör dedim.
+
+513
+02:28:39,671 --> 02:28:40,492
+Link dedim.
+
+514
+02:28:44,092 --> 02:28:46,191
+Çete yazıyorum şimdi.
+
+515
+02:28:47,851 --> 02:28:49,272
+Linki çete kopyalıyorum.
+
+516
+02:28:50,971 --> 02:28:53,412
+Siz de bu linki kopyalayın arkadaşlar.
+
+517
+02:28:55,572 --> 02:28:57,731
+Çete kopyaladım bu linki.
+
+518
+02:28:57,731 --> 02:28:58,791
+Tamam.
+
+519
+02:29:00,092 --> 02:29:01,731
+Bu linke şimdi
+
+520
+02:29:03,188 --> 02:29:08,648
+Ad, soyad diyelim.
+
+521
+02:29:12,819 --> 02:29:18,279
+Aynı isimli arkadaşımız yoktur diye tahmin ediyorum. Varsa numarasını da yazabilir.
+
+522
+02:29:20,340 --> 02:29:24,540
+Ve paper diyorum. Paper ya da konu diyorum.
+
+523
+02:29:28,119 --> 02:29:31,939
+Paper ve konunuzu ne yapacaksınız?
+
+524
+02:29:33,799 --> 02:29:35,779
+Buraya yazacaksınız.
+
+525
+02:29:37,427 --> 02:30:04,027
+Adınızı yazın, paper konunuzu yazın. Medeni insanlar olalım. Diyelim ki bir paper var. A kişisi seçti. B kişisi gelip onu silip o paperı kendisine yazmasın. Zaten böyle bir şey olursa şikayet ederseniz. Versiyon history var burada.
+
+526
+02:30:05,620 --> 02:30:16,819
+Kim hangi editi yapmış. Kim olduğu belli olmasa da en azından önce kimin yanında yazılı onu görüyoruz.
+
+527
+02:30:18,100 --> 02:30:24,159
+Hocam, Büyüter Hocam'la ilgili herhangi bir konu belirleyelim değil mi?
+
+528
+02:30:24,159 --> 02:30:32,920
+Konularla ilgili. Şimdi bilgisayarla görüyle ilişkili konular.
+
+529
+02:30:33,427 --> 02:30:50,528
+Olması lazım. Paper'ler. Ve yeni paper olsun. Yani milattan öncesine gerek yok. En fazla dört yıllık olsun. En fazla dört yıllık.
+
+530
+02:31:00,468 --> 02:31:06,068
+Image Generation.
+
+531
+02:31:09,848 --> 02:31:15,908
+Since 2018 dediğiniz zaman zaten Google bunu yapıyor sizin için.
+
+532
+02:31:17,368 --> 02:31:19,288
+Şu anda görüyor musunuz?
+
+533
+02:31:19,688 --> 02:31:19,908
+Evet.
+
+534
+02:31:20,328 --> 02:31:20,988
+Görüyorsunuz.
+
+535
+02:31:25,108 --> 02:31:26,868
+İki şey istiyorum.
+
+536
+02:31:28,468 --> 02:31:35,008
+Bir, Bilgisayarla Görü konusu olacak. Bilgisayarla Görü'de ne konu var?
+
+537
+02:31:37,608 --> 02:31:38,808
+Bir sürü şey var hocam.
+
+538
+02:31:38,808 --> 02:31:45,208
+Image Classification. Başka?
+
+539
+02:31:48,188 --> 02:31:55,128
+Object Detection. Başka?
+
+540
+02:31:55,667 --> 02:32:16,547
+Image Stitching Başka 2D Image Generation Başka 2D to 3D Ne demek istediğimi anladınız mı? 2D to 3D ile.
+
+541
+02:32:16,547 --> 02:32:20,148
+3 boyutlu, 2 boyutlu, 3 boyutlu.
+
+542
+02:32:20,724 --> 02:32:35,844
+İki boyutlu resimlerden üst boyutlu cisim oluşturma. Başka mesela şey bile girebilir.
+
+543
+02:32:46,739 --> 02:32:51,860
+Teaching or Learning.
+
+544
+02:32:57,043 --> 02:33:14,623
+Mesela şeyler var. Reinforcement Learning ile ajanı öğretiyorlar. Ama giriş tamamen resim. Başka konular da olabilir.
+
+545
+02:33:15,103 --> 02:33:16,963
+Structured Prediction olur mu hocam?
+
+546
+02:33:16,963 --> 02:33:19,144
+Olur. Structured Prediction olur.
+
+547
+02:33:23,507 --> 02:33:45,628
+Şimdi zaten bunları gelecek haftadan itibaren siz yazdıkça sorarsınız. Şöyle bir bakarız. Yani siz yazdınız diye direkt olacak değil. Benim de okey vermem lazım. Onu da işte derslerde beraber bakarız. Ders sonunda, derste. Ara ara.
+
+548
+02:33:52,884 --> 02:34:04,824
+Karar veririz. Ama bir şart var. Şart şu. Kodu olacak. Ve o kodla o paper'ı ilişkilendirerek anlatacaksınız.
+
+549
+02:34:05,943 --> 02:34:12,183
+Tamam hocam. Bir konu olması lazım değil mi hocam? Herkes için.
+
+550
+02:34:12,724 --> 02:34:36,283
+Kendisi seçecek bir konu olması lazım. Evet, herkes kendisi konusunu belirleyebilir. Ama paperın GitHub'tadır, Colab'tadır veya siz kendiniz yazabilirsiniz. O da olur. Bir şekilde paper'ı anlatacaksınız. Konusu nedir? Bir sunum hazırlayacaksınız.
+
+551
+02:34:37,652 --> 02:35:04,932
+Denklemleri nedir? Nasıl elde edilmiş? Ne yandan ilgimizi çekti? Sonra da bir taraftan da kodunu bir çalıştıracaksınız. Göreceğiz çalıştığını. Kolapta çalışabilir veya lokalinizde çalışabilir. Sonra da kodu açacaksınız. Diyeceksiniz ki kodun şu satırları, paperda şu denkleme denk geliyor.
+
+552
+02:35:05,843 --> 02:35:32,483
+Anladınız mı? Mesela Generative Adversarial Networkler olabilir. Stable Diffusion olabilir. Başka popüler şu anda aklıma gelen YOLO falan gibi şeyler olabilir.
+
+553
+02:35:34,868 --> 02:35:42,868
+Hocam, burada ad, suyat, paper, konu seçtim demişsiniz. Adımızı yazdık. Sonra da konuyu...
+
+554
+02:35:42,868 --> 02:35:44,548
+Paper'ın linki ya da adı.
+
+555
+02:35:45,868 --> 02:35:46,587
+Tamam.
+
+556
+02:35:47,228 --> 02:35:49,668
+Yani diyelim ki şu paper'ı seçtin değil mi?
+
+557
+02:35:50,108 --> 02:35:50,407
+Evet.
+
+558
+02:35:51,108 --> 02:35:55,128
+Bu paper'ın bir pdf'ine link vermeni istiyorum.
+
+559
+02:35:55,788 --> 02:35:56,587
+Tamam hocam.
+
+560
+02:35:57,008 --> 02:35:58,128
+Ya da şey...
+
+561
+02:35:58,128 --> 02:36:00,048
+Birden fazla link de koyabiliriz değil mi?
+
+562
+02:36:00,628 --> 02:36:02,927
+Bir link yeter. Niye birden fazla koyacaksın?
+
+563
+02:36:02,927 --> 02:36:04,648
+Tamam. Bir link tamam.
+
+564
+02:36:05,328 --> 02:36:13,347
+Ya da işte bir tekst bilgisini ver. Yani işte şu şekilde referansını ver yani.
+
+565
+02:36:13,948 --> 02:36:14,288
+Tamam.
+
+566
+02:36:14,608 --> 02:36:19,968
+Paper'ın ne olduğunu anlayalım. İdeal olarak da link ver yani. Şu linki mesela hemen kopyalayıver.
+
+567
+02:36:20,907 --> 02:36:21,328
+Tamam.
+
+568
+02:36:21,628 --> 02:36:21,988
+Kopi.
+
+569
+02:36:23,268 --> 02:36:25,788
+Şuraya paste ettin mi bitmiştir.
+
+570
+02:36:26,708 --> 02:36:30,488
+Yanına da isminiz neydi? [öğrenci] mıydı?
+
+571
+02:36:30,828 --> 02:36:31,067
+Evet.
+
+572
+02:36:33,288 --> 02:36:35,188
+[öğrenci] mesela.
+
+573
+02:36:36,148 --> 02:36:40,308
+Ben hocam, ben konumunu düşündüm şimdi.
+
+574
+02:36:40,847 --> 02:36:46,708
+Anladınız mı? Bir, kodur olmalı. İki, son dört yılda olmalı.
+
+575
+02:36:48,468 --> 02:36:52,328
+Tamam. PİPR'ın çıktığına dört yıl olmalı.
+
+576
+02:36:52,328 --> 02:36:53,688
+Efendim?
+
+577
+02:36:54,131 --> 02:36:56,671
+Paper'ın yazıldığına da ortaya olman değil mi?
+
+578
+02:36:57,211 --> 02:37:17,912
+Son dört yılda yayınlanmış bir paper olmalı. Yani bir konferansta ya da bir dergide yayınlanmış olmalı. Yani öyle rapor mapor olmayacak. Son dört yılda yayınlanmış paper veya bildiri.
+
+579
+02:37:18,515 --> 02:37:21,775
+Makale paper'ı ya da bildirisi olacak.
+
+580
+02:37:26,355 --> 02:37:31,275
+Ve hoca ile görüşülecek, hoca kabul edecek.
+
+581
+02:37:34,655 --> 02:37:42,095
+Bir şekilde imge işlemeyle, yani computer vision ile bir yerden ilişkisi olmalı.
+
+582
+02:37:42,095 --> 02:37:45,076
+Ve şey bile olabilir, reinforcement learning bile olabilir.
+
+583
+02:37:46,004 --> 02:37:46,764
+Evet.
+
+584
+02:37:50,611 --> 02:38:05,811
+Birçok konu olabilir. Kaç kişi var dersimizde şu anda 16 kişi var. Yarımşar saatten olsa bir derste 6 kişi anlatabiliyor.
+
+585
+02:38:07,811 --> 02:38:13,391
+6 bölü 18 eşittir 3.
+
+586
+02:38:14,131 --> 02:38:18,351
+Son üç haftayı bu şekilde bir konferans şeklinde geçireceğiz.
+
+587
+02:38:23,092 --> 02:38:46,891
+Tamam mı arkadaşlar? Şimdi bunu sizinle paylaştım. Bunu artık haftaya tekrar açarız beraber derste. Ne yazmışsınız, ne yazmamışsınız. Bakarız biraz içeriye. Görüşürüz. Yavaş yavaş projeniz de bu şekilde belirlenmiş olur. Bu konuda başka sormak istediğiniz bir şey var mı?
+
+588
+02:38:52,051 --> 02:39:00,031
+Peki, öyleyse başka söyleyeceğiniz bir şey var mı? Dersi bitireceğim.
+
+589
+02:39:04,435 --> 02:39:27,775
+Mesela şey diyecektim hocam, bir konu vardı, sürekli geliştirilmeye çalışılıyor. Sonra yeni enansmentler, iyileştirmeler, improvementler üzerinde makaleler yayınlanmış. Öyle bir şey olsa olur değil mi son dört yede?
+
+590
+02:39:27,775 --> 02:39:29,915
+Zaten her şey öyle ki.
+
+591
+02:39:30,355 --> 02:39:37,355
+Bilim zaten öyle. Her konu devamlı geliştiriliyor.
+
+592
+02:39:38,075 --> 02:39:55,135
+Sunumları uzaktan mı yapacağız demiş arkadaşınız. Normalde yüz yüze yapıyoruz ama uzaktan yapalım daha iyi olur falan derseniz, herkes katılırsa belki sunumları uzaktan falan da yapabiliriz.
+
+593
+02:39:58,067 --> 02:40:17,108
+Herkesin bilgisayarını kurması, orada çalıştırması vakit kaybı oluyor. Bu arada eğer herkes okeyse bu sunumları uzaktan yapabiliriz.
+
+594
+02:40:24,211 --> 02:40:43,051
+Paper'ı, sunumunuzu, o kodu yükleyeceksiniz. Onu zaman içinde ayarlarız. Daha vaktimiz var. Bu sunumlar başlamadan onları yüklemeniz gerekecek. Zamanlamayı falan ayarlarız. Şu anda dokuzuncu haftadayız.
+
+595
+02:40:47,252 --> 02:40:51,432
+Tanışmamı yazdım hocam. O konuyu silip konumuna ekleyeceğim. Tamam mı?
+
+596
+02:40:52,932 --> 02:40:53,772
+Konu bu mu peki?
+
+597
+02:40:54,132 --> 02:40:56,211
+Yok, yok, yok. Bu değil. Başka üstüme.
+
+598
+02:40:56,731 --> 02:40:59,191
+Tamam, o zaman silelim. Şimdi ben rastgele yazdım.
+
+599
+02:41:01,012 --> 02:41:03,912
+Yani ismin kalsın, soru yok.
+
+600
+02:41:05,680 --> 02:41:06,240
+Evet.
+
+601
+02:41:07,000 --> 02:41:10,780
+Koruya yazıyorum hocam. Konuyu yazacağım, linkini de vereceğim.
+
+602
+02:41:10,979 --> 02:41:16,760
+Tamam, sıkıntı yok. Sırayı da şey yapabiliriz, hani tekrar değerlendiririz.
+
+603
+02:41:17,079 --> 02:41:17,600
+Tamam hocam.
+
+604
+02:41:17,700 --> 02:41:20,479
+Kim önce anlatmak istiyor, kim sonra anlatmak istiyor.
+
+605
+02:41:22,299 --> 02:41:25,360
+Iris recognition diye yazma ama, konu bu.
+
+606
+02:41:25,843 --> 02:41:27,283
+Paper yaz, paper.
+
+607
+02:41:27,623 --> 02:41:30,963
+Buraya hocam link vereceğim bunu tamam mı?
+
+608
+02:41:31,283 --> 02:41:34,003
+Evet, çünkü irisricognition çok büyük bir şey.
+
+609
+02:41:34,003 --> 02:41:42,203
+Evet, oran inansımın geliştirilmiş, autenticajan sistemlerde kullanılmış bir şeyini seçeceğim.
+
+610
+02:41:42,903 --> 02:41:52,403
+Paper, paper linki ver. Şimdi irisricognition yazarsam başkası irisricognition yazamaz olur. Öyle değil. Başkası o paper'ı yazamaz.
+
+611
+02:41:52,896 --> 02:41:54,076
+Tamam, anladım hocam.
+
+612
+02:41:54,716 --> 02:41:58,216
+Anladın mı? Direkt paper yazacak mısınız buraya?
+
+613
+02:41:58,936 --> 02:42:02,316
+Ben makaralarını bağıracağım. Ondan sekiyorum şimdi.
+
+614
+02:42:04,175 --> 02:42:20,116
+11, 12, 13, 14. Son üç haftayı bu işe ayırsak, bu hafta da bitti. İki hafta daha konu işleyeceğiz demektir.
+
+615
+02:42:21,459 --> 02:42:31,779
+Dolayısıyla iki haftanız var. Yani çok zamanınız yok. Bunu hemen bulup, hazırlayıp, çalışıp iki hafta içinde toparlamanız gerekiyor arkadaşlar.
+
+616
+02:42:33,399 --> 02:42:34,239
+İki hafta içinde.
+
+617
+02:42:35,559 --> 02:42:41,639
+Tamam. On ikinci haftanın başında da vereceğim linki yüklemiş olmanız gerekiyor.
+
+618
+02:42:46,100 --> 02:42:55,420
+Bazıları hocam teyze olarak geliştirmiş, bazıları iyileştirmeye gitmiş. Bu fark etmez değil mi? Yani yayınlanmış olsa.
+
+619
+02:42:59,667 --> 02:43:15,467
+Bak ne diyorum? [öğrenci]. Yayınlanmış paper diyorum zaten. Bak şu şekilde bir konferansla ya da bir dergide yayınlanmış paper olmalı diyorum.
+
+620
+02:43:15,467 --> 02:43:16,867
+Tamam hocam oldu.
+
+621
+02:43:19,667 --> 02:43:45,527
+Bir arkadaşınız [öğrenci]'nun hüperspektral görüntülerin sınıflandırılması ile ilgili. Bu uygun olur mu? Konu olarak bakmayın. Paper olarak bakın. O konuda güncel bir paper anlatabilirsin. Şeyi olacak, onu unutmayın ama.
+
+622
+02:43:47,188 --> 02:44:08,448
+Şunu unutmayın. Kodu olacak. Bize kod göstereceksiniz. Ya siz yazacaksınız ya da GitHub'da şurada burada bir kod olacak. Onu çözeceksiniz o kodu. Yani denklem kod, denklem kod. Ne nereden gelmiş güzelce anlatacaksınız bize. O şekilde olur.
+
+623
+02:44:12,180 --> 02:44:15,739
+Evet, kodu var. Üzerinde çalışıyorum şu anda demiş.
+
+624
+02:44:23,443 --> 02:44:49,043
+Tezinizin değil mi bu? Bir ders değil, tez. Olabilir. Bir ders olsaydı olmaz diyecektim. Çünkü bir dersin çalışmasını başka bir derste kullanmamak lazım. Ama şimdi bu tez olduğu için sizin tez çalışmanız çok daha büyük bir şey olacaktır.
+
+625
+02:44:50,420 --> 02:44:55,139
+[kişisel bilgi]
+
+626
+02:45:00,691 --> 02:45:25,991
+Yani orada siz birçok paper inceleyeceksinizdir zaten. Onlardan biri olduğu için kabul edelim. Ama yine paperı da bir görürüz. Şu anda artık dersimiz bitti. Sen buraya link yapmışsın ama dediğim gibi bu şeye link yap. Paylaştığım dökümana link yapın. Sonra açıp beraber bakalım.
+
+627
+02:45:26,739 --> 02:45:42,459
+Şu haftaya da 12. haftaya ne diyorum? Ders öncesi sunum, paper, code, yüklenecek.
+
+628
+02:45:43,459 --> 02:45:45,920
+Code da yüklenmesi lazım, değil mi hocam?
+
+629
+02:45:54,932 --> 02:46:01,972
+Ve 12. haftadan itibaren ne yapacağız arkadaşlar? Sunumlarımız başlayacak.
+
+630
+02:46:08,659 --> 02:46:10,659
+Tamam mı?
+
+631
+02:46:10,659 --> 02:46:12,659
+Teşekkürler.
+
+632
+02:46:14,659 --> 02:46:19,659
+Evet, öyleyse size iyi günler diyorum, iyi çalışmalar diyorum.
+
+633
+02:46:19,659 --> 02:46:21,659
+Teşekkürler.
+
+634
+02:46:21,659 --> 02:46:27,659
+Bu linki genel grubunuz varsa derse gelmeyen arkadaşlarla da paylaşabilir misiniz?
+
+635
+02:46:29,659 --> 02:46:32,659
+Onlarla da WhatsApp'ta falan varsa paylaşırsanız.
+
+636
+02:46:34,324 --> 02:46:35,864
+Hatta ben direkt OBS'de...
+
+637
+02:46:35,864 --> 02:46:38,824
+Paylaştı hocam. Bir arkadaş [öğrenci] paylaştı.
+
+638
+02:46:38,824 --> 02:46:43,623
+Ben OBS'den atayım da her ihtimale karşı şey yapmayalım.
+
+639
+02:47:01,427 --> 02:47:04,347
+Ters kapatmadan onu da bitireyim de kafam rahat etsin.
+
+640
+02:47:04,347 --> 02:47:09,528
+Evet.
+
+641
+02:47:09,528 --> 02:47:11,227
+Ben yedirmeyiz.
+
+642
+02:47:38,932 --> 02:47:41,211
+Gönderdiğim linki kopyalayayım.
+
+643
+02:47:44,152 --> 02:47:45,472
+Kopyalım mı abi?
+
+644
+02:47:57,012 --> 02:48:02,672
+Tamam, haftaya görüşürüz arkadaşlar. Kapatıyorum.
+
+645
+02:48:04,672 --> 02:48:05,712
+Görüşmek üzere hocam.
+
+646
+02:48:05,952 --> 02:48:06,532
+İyi günler.
+
+647
+02:48:06,672 --> 02:48:07,332
+Görüşmek üzere.
