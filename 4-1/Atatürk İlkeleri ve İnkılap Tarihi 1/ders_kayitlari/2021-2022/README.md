@@ -7,3 +7,4 @@
 | 3 | Güz | Zafer Doğan | [sube_3/](sube_3/) |
 | 5 | Güz | — | [sube_5/](sube_5/) |
 | 20 | Güz | Zafer Doğan | [sube_20/](sube_20/) |
+| 25 | Güz | Zafer Doğan | [sube_25/](sube_25/) |
