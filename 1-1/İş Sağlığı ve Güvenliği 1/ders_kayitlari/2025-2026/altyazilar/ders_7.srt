@@ -1,0 +1,987 @@
+1
+00:00:36,179 --> 00:00:37,679
+Herkese merhabalar gençler.
+
+2
+00:00:38,359 --> 00:00:49,079
+Şimdi malum sınavın önceki son dersimiz olduğu için öncelikle söz verdiğim gibi geçen yılın bir sınav sorusunu çözerek başlayacağım.
+
+3
+00:00:49,079 --> 00:00:53,359
+Şimdi ve böylece de bir genel hatırlatma yapacağız.
+
+4
+00:00:53,920 --> 00:00:59,899
+Biz sizinle geçen hafta ve önden önceki haftalarda dedik ki sınavda karşıma bir fotoğraf gelebilir.
+
+5
+00:01:00,340 --> 00:01:10,219
+Sonra bir senaryo gelebilir. Benden istenilen şey bu fotoğraf ya da bu senaryoda iş kazasıyla ilgili ya da risklerle ilgili soruları cevaplayabilmem dedik.
+
+6
+00:01:11,039 --> 00:01:24,080
+Mesela şimdi önceki derslerde yaptığımız gibi bir fotoğraf görüyorsunuz. Bu soruda da denmiş ki bu görseldeki risk ve risk tespit edip L matriz kullanılarak risk analizi yapın demiş.
+
+7
+00:01:26,067 --> 00:01:29,707
+Risk ve risk çeşitlerini öğrenmiştik hatırlarsanız.
+
+8
+00:01:30,548 --> 00:01:39,347
+Bize zarar verebilen, kazayla, yaralanmayla sonuçlanan her türlü parametreye riskliyorduk.
+
+9
+00:01:39,908 --> 00:01:42,347
+Bu riski de kendi içerisinde çeşitlere ayırıyorduk.
+
+10
+00:01:42,447 --> 00:01:45,827
+Fiziksel, kimyasal, biyolojik, ergonomik, psikososyal gibi.
+
+11
+00:01:45,827 --> 00:01:50,608
+O zaman demek ki öncelikle ilk başta sizin...
+
+12
+00:01:50,608 --> 00:01:59,588
+Riski, sonra bu risk çeşidini yazmanız gerekiyormuş. Mesela, bak burada sigara içen bir adam.
+
+13
+00:01:59,968 --> 00:02:16,968
+Burada gözünde gözlük olmadan, koruyucu gözlüğü olmadan, maskesi olmadan kaynak yapan bir adam. Ne bileyim, burada sabitlenmemiş bir merdiven. Ne bileyim, burada mesela çıfıkla ayakkabı giyen bir kadın. Böyle bir sürü riskler bulabilirsiniz.
+
+14
+00:02:17,768 --> 00:02:25,108
+Peki yazdınız, mesela dediniz ki adamın sigara içmesi. Risk çeşidi ne? Kimyasal. Bunu da yazdınız. Tamam.
+
+15
+00:02:25,683 --> 00:02:51,084
+Gelelim olasılık, şiddet ve risk skoru. Şimdi soru da sende diyor ki, L matriz kullan diyor. Hatırlarsan yine sizinle şöyle bir şey konuşmuştuk. Risk analiz çeşitleri sözel, sayısal ve karmaydı. Eğer iş yeri böyle küçük bir iş yeriyse, bina küçük bir binaysa, riskler çok fazla yoksa, kişi sayısı azsa, sözel yöntemleri kullanabiliyalım.
+
+16
+00:02:51,424 --> 00:02:58,924
+Ama risk sayısı arttıkça artık benim sayısal yöntemler, hatta bazı yerlerde karma yöntemler kullanmam gerekiyordu.
+
+17
+00:02:59,603 --> 00:03:13,924
+İşte L matris benim bu öğrendiğim yöntemlerden en basitlerinden biriydi. Size demiştim ki, olasılığa birden 5'e değer veririz, şiddete birden 5'e değer veririz, bu ikisini çarparız ve skorları görürüz demiştim.
+
+18
+00:03:13,924 --> 00:03:14,524
+Şimdi.
+
+19
+00:03:15,764 --> 00:03:31,343
+Olasılık 1'den 5'e skor vermek demek, en düşükten çok yükseğe gitmek demek. Yani bu kazanın burada olma ihtimali çok az. Ya da bunun patlama ihtimali çok yüksek gibi.
+
+20
+00:03:32,051 --> 00:03:55,411
+Şiddet de eğer olursa bana verebileceği zarardı. Bu da yine birden beşe numaralandırılıyordu. Şimdi sana ben demiştim ki, tabloyu ezberlemene gerek yok, onu zaten ben sınavda veririm demiştim. Sen bu olasılık ve şiddeti çarptığında sonuçlara göre bazı sonuçlar yeşil, bazıları sarı, bazıları kırmızı çıkıyordu.
+
+21
+00:04:00,051 --> 00:04:24,491
+Peki, adamın sigara içmesi dedin, risk çeşinde kimyasal dedin, olasılığına gelelim şimdi. Sigara içiyor. Nerede içiyor? Kapalı bir mekanda. Hem de patlayıcıların ya da işte tahriş edicilerin yanında. E demek ki burada bir yangın çıkma ya da patlama olasılığı oldukça yüksek. Tamam mı? Mesela ne dedin? 3 dedim. İşte yazdık 3. Tamam mı?
+
+22
+00:04:25,012 --> 00:04:51,231
+E peki şiddet ne olacak? Yangın, patlama, bu tarz şeyler olduğunda yaralanma ihtimali yüksektir, ölüm ihtimali yüksektir, hatta çoklu ölüm vardır. Mesela sen gidip de bunun şiddetine 1 diyemezsin. O zaman mesela ne dedik? 5 dedik işte, tamam mı? 3 çarpı 5. Şimdi skoru ne oldu? 15. E bakıyorum, 15 nerede çıktı? Kırmızı bölgede çıktı.
+
+23
+00:04:51,891 --> 00:05:05,812
+Kırmızı bölge olduğunda ne yapmam gerekiyordu? İşi durdurmam gerekiyordu. İş durdurmak şu demek, adam sigarayı içemez. O bölgede adam sigara içemez. Bu kadar net. Anlaştık mı?
+
+24
+00:05:06,324 --> 00:05:23,103
+Yeşil çıktığında sonucunuz mevcut düzende devam edebilir. Sarı çıktığında önlem alması gerekir. Kırmızı çıktığında iş durdurulabilir ifadelerini bilmek zorundasınız. Tamam mı?
+
+25
+00:05:23,863 --> 00:05:27,884
+Yalnız şunu da hatırlatmak isterim. Mesela özellikle geçen seneden.
+
+26
+00:05:28,692 --> 00:05:45,331
+Hatırlatmak isterim. Sarı bölgede buluyor. Diyelim ki işte 12 bulmuş, 10 bulmuş, her neyse. Ve demiş ki önlem alınmalı. Puan alamamış tabii ki. Çünkü önlem alınmalı da ne almalısın? Yani önlem almaktan kastın de.
+
+27
+00:05:45,331 --> 00:05:56,192
+Mesela demelisin ki işte adam gözlük takmalı, merdiven duvara sabitlenmeli, ne bileyim adam baret giymeli gibi.
+
+28
+00:05:56,692 --> 00:05:58,791
+Önlemin adını yazmak zorundasın.
+
+29
+00:05:59,252 --> 00:06:09,012
+Şimdi, geçen hafta da ve hatta ondan önceki haftalarda da konuştuğumuz için artık bu konunun herkes tarafından anlaşıldığını düşünüyorum.
+
+30
+00:06:09,012 --> 00:06:15,291
+Bir fotoğrafı gördüğünde o fotoğraftaki riski, risk çeşidini söyleyebilmelisin.
+
+31
+00:06:15,615 --> 00:06:19,455
+Olasılığına, şiddetine değer verip önlem yazabilmelisin.
+
+32
+00:06:19,995 --> 00:06:23,115
+Hocam ben bu fotoğrafa baktım, 25 tane risk gördüm.
+
+33
+00:06:23,635 --> 00:06:25,055
+Olabilir, görebilirsin.
+
+34
+00:06:25,536 --> 00:06:29,355
+Sınavda senden kaç tane istiyorsan, 5 mi 10 mu, onu yazıyorsun.
+
+35
+00:06:29,355 --> 00:06:30,435
+Tamam mı?
+
+36
+00:06:31,455 --> 00:06:33,855
+Çok pardon, bir saniye.
+
+37
+00:06:34,596 --> 00:06:36,795
+Bu kısım, bir taraftan şeyi almayı unuttum tabii.
+
+38
+00:06:37,695 --> 00:06:39,315
+Yoklamayı almayı unuttum, hemen onu yapacağım.
+
+39
+00:06:39,835 --> 00:06:40,355
+Şimdi...
+
+40
+00:06:41,267 --> 00:07:01,727
+Bu kısımda gençler, anlaşılmayan bir şey yok artık diye düşünüyorum. Çünkü rahatlıkla siz şey yapabilirsiniz, bunlarla ilgili işlem yapabilirsiniz ya da sorular geldiğinde cevaplayabilirsiniz. Çok şey değil, zor ya da yapılmayacak bir şey değil.
+
+41
+00:07:09,267 --> 00:07:28,927
+Fotoğraf vermek zorunda değiliz. Yani belki rakamı da verebiliriz. Olasılık ortalama olarak kendimiz bir karar vereceğiz. Net bir kural var mı? Olasılığa kendiniz, olasılık ve şiddete kendiniz karar vereceksiniz. Derslerden birinde şöyle bir şeyden bahsetmiştim. Gençler.
+
+42
+00:07:29,295 --> 00:07:52,175
+Zaten hani olayın kilit noktası orasıydı. Yani senin buna yorum yapabiliyor olman idi. Tamam mı? O nedenle zaten bize ait. Şimdi, benimki fotoğraf verilmedi de bir senaryo verildi. Pardon.
+
+43
+00:07:53,172 --> 00:08:21,172
+Kırmızı ve Yeşil Bölge'lerde çıktığında alınacak önlem kısmına ne yazmamız gerekiyor? [öğrenci] bunu bütün derslerimizde biz konuştuk. O yüzden yani şunu demelisin. Yeşil Bölge demek kabul edilebilir risk seviyesi demekti. Yani işimizi yapmaya devam edebiliriz. Ekstra bir önlem almaya gerek yok. Kırmızı Bölge demek işin durdurulması demekti. Diyeceksin ki o bölgede sigara içme yasak.
+
+44
+00:08:21,172 --> 00:08:47,352
+Kişi uyarılmalı, ceza verilmeli. Kesin o işi durduracak bir şeyler söylemelisin. Tamam. Peki, şimdi gelelim şeye. Ben teşekkür ederim. Tekrar geldim buraya, tekrar geldim buraya. Diyelim ki bir senaryo verildi. Bu senaryoyla ilgili soruları cevaplamanız istendi. Bakalım senaryomuza.
+
+45
+00:08:48,563 --> 00:08:57,024
+Ayşe Hemşire gece nöbeti sırasında hastaneye trafik kazası sonucu getirilen 6 kritik hasta ile ilgilenmek zorunda kalmıştır.
+
+46
+00:08:58,443 --> 00:09:02,864
+Bu hastaların durumu acil serviste olağan dışı bir yoğunluğa neden olmuştur.
+
+47
+00:09:03,423 --> 00:09:11,283
+Nöbet sırasında hemşireler arası iş bölümü yeterince yapılamamış ve Ayşe ciddi bir şekilde iş yükü altında kalmıştır.
+
+48
+00:09:11,923 --> 00:09:20,744
+Ayşe bir hastanın açık yara tedavisi için dezenfektan hazırlarken havalandırma sistemi bozuk olduğu için yoğun kimyasal buharına maruz kalmıştır.
+
+49
+00:09:21,303 --> 00:09:30,563
+Bu sırada kullanılması gereken N95 maske ve gözlük depoda kilitli olduğu için erişememiştir.
+
+50
+00:09:31,283 --> 00:09:43,123
+Trafik kazansından kurtululan bir hastanın hızlı şekilde röntgüle alasına taşınması gerekmiş ve uygun transfer seviyesi bulunamadığı için Ayşe, hastayı bir teknisyenle birlikte kaldırmak zorunda kalmıştır.
+
+51
+00:09:43,923 --> 00:09:48,563
+Bu işlem sırasında Ayşe'nin belinde ciddi bir kas yırtılması meydana gelmiştir.
+
+52
+00:09:48,983 --> 00:09:55,843
+Kanamalı bir hasta ile ilgilenirken Ayşe'nin ellerine koruyucu eldiven kullanmamasından ötürü hasta kanı bulaşmıştır.
+
+53
+00:09:56,724 --> 00:10:08,043
+Gördüğünüz gibi Ayşe'nin başına gelmeyen kalmamış. Bu sırada hastanenin kay yoluyla bulaşan hastalıklar prosedürünün güncel olmadığı ve çalışanlara yeterli bilgilendirmenin yapılmadığı belirlenmiştir.
+
+54
+00:10:08,703 --> 00:10:14,583
+Ayşe'nin nöbet saatlerinin aşırı uzun olduğu ve dinlenme oranısı verilmeden çalıştığı ortaya çıkmıştır.
+
+55
+00:10:15,104 --> 00:10:23,543
+Psikolojik olarak stres altında olan Ayşe, iletişim hatası yaparak bir hastaya yanlış ilaç hazırlamış ve bu hata son anda fark edilmiştir.
+
+56
+00:10:24,083 --> 00:10:31,963
+Olay sonrasında Ayşe Hemşire hem kimyasal buhara maruz kalması nedeniyle hem de hasta bulaşı nedeniyle hastaneye başvurdu.
+
+57
+00:10:32,783 --> 00:10:41,543
+Kendisinin geçici iş göremezlik raporu almasına neden olan bu olayların ardından iş müfettişleri tarafından inceleme başlatılmıştır.
+
+58
+00:10:41,543 --> 00:10:46,043
+Şimdi bu sevgili hemşiremizin başına gelen olaylara bir bakalım.
+
+59
+00:10:46,707 --> 00:10:51,247
+Ki onun başına gelen olaylar bizim bütün dönemimizi özetliyor aslında.
+
+60
+00:10:51,247 --> 00:11:07,667
+Bir, bu bir hemşire yani sağlık çalışanı. Yani çok riskli iş grubunda çalışıyor ve gece nöbetinde, gece nöbeti ne? Psikososyal problemlerden biri. Devam ediyorum.
+
+61
+00:11:08,724 --> 00:11:14,364
+Ciddi bir iş yükü altına kalmış. Al sana bir psikososyal daha. Devam ediyorum.
+
+62
+00:11:14,868 --> 00:11:42,848
+Havalandırma sistemi bozuk olduğu için kimyasala maruz kalmış. Havalandırma, iklimlendirme neydi? Fiziksel riskler. Bunlar olduğu için kimyasala maruz kalmış. Kimyasal buharına maruz kalmış. Kimyasal bir riske maruz kalmış. Bu arada maske ve gözlük de bir depoda kilitli olduğu için kullanamamış. Yani yüzünde maske yokmuş, suratında gözlük yokmuş. Bunlar yetmez mi?
+
+63
+00:11:42,868 --> 00:11:56,108
+gibi bir hastayı teknisyenle birlikte kaldırırken kas yırtılması yaşamış. Kanamalı bir hastayla ilgilenirken de elinde de eldiven olmadığından hastadan kan bulaşı gelmiş.
+
+64
+00:11:56,720 --> 00:12:12,100
+Artık daha fazla ne olabilir diye düşünürken biz, nöbet saatleri aşırı uzun olduğu için, kafası karışık olduğu için, dinlenemediği için, stres altında olduğu için tam o arada bir iletişim hatası yaşamış ve bir hastaya yanlış ilaç hazırlamış.
+
+65
+00:12:12,620 --> 00:12:15,680
+Ama bu son anda fark edilmiş, Allah'tan hastaya vermemiş.
+
+66
+00:12:16,148 --> 00:12:33,528
+Şimdi bütün bu olaylar bittikten sonra Ayşe hem o kimyasaldan dolayı, buhardan dolayı etkilendiği için hem de kendine hasta bulaşı geldiği için hastaneye başvurmuş, rapor almış ve doğal olarak iş kazası olduğu için müfettişler de inceleme başlatmışlar.
+
+67
+00:12:33,528 --> 00:12:38,508
+Şimdi, madem böyle bakalım biz birinci soruya hemen.
+
+68
+00:12:39,288 --> 00:12:39,727
+Diyor ki,
+
+69
+00:12:40,179 --> 00:12:51,819
+Ayşe Hemşire'nin yaşadığı kas yırtılması durumu hangi tür risk etmeniyle ilişkilendirilir ve bu tür risklerin önlenmesi için hangi adımlar alınmalıdır?
+
+70
+00:12:51,819 --> 00:13:02,019
+Şimdi tatlım, dönem boyunca sen şunu gördün. Fiziksel, kimyasal, ergonomik, psikososyal, biyolojik bu riskleri gördün.
+
+71
+00:13:02,303 --> 00:13:19,543
+Eğer ortamdan kaynaklı risklerse fizikseldi, yanıcı, yakıcı, patlayıcı şeylerden kaynaklıysa kimyasaldı, virüsler, bakteriler, parazitler, bulaşlar, kan, sıvı, gözyaşı bunlarsa biyolojikti.
+
+72
+00:13:20,275 --> 00:13:31,175
+Vücudunla ilgili bir problemse, yani işin, yaptığın işin vücuduna uygun olmayan hareketler, davranışlar sonucu ortaya çıktıysa ergonomikti.
+
+73
+00:13:31,175 --> 00:13:43,215
+O yüzden bizim bu Ayşe'nin yaşadığı kas yırtılması ergonomik bir risk. Nasıl üzerinden gelirim, yani nasıl çözerim bu problemi? Tabii ki toplum.
+
+74
+00:13:43,604 --> 00:13:56,284
+Uygun ekipmanla çözebilirsin. Asansör mü lazım, sedyemi lazım, sandalye yeme lazım, askı mı lazım, ne lazım? Uygun ekipmanla bunları halledebilirsin. Devam ediyorum.
+
+75
+00:13:57,331 --> 00:14:07,091
+Ayşe'nin kimyasal buhara maruz kalması hangi tür maruziyet riski oluşturur ve bu riskin yönetimi için hangi tedbirler alınmalıdır?
+
+76
+00:14:07,772 --> 00:14:17,432
+Adı üstünde kimyasal buhara maruz kalmışım. Yani kimyasal bir risk, kimyasal maruziyet olmuş. Peki niye olmuş bu?
+
+77
+00:14:18,355 --> 00:14:33,055
+Bu, havalandırma sistemi düzenli çalışmadığı için, yani havalandırma sistemi bozuk olduğu için olmuş. Demek ki çözüm ne? Havalandırma sisteminin düzenli olarak bakımının yapılması.
+
+78
+00:14:33,595 --> 00:14:44,255
+Devam ediyorum. Kanamalı bir hastaya koruyucu eldiven kullanmadan müdahale edilmesi, biyolojik riskler açısından ne tür tehlikeler oluşturur?
+
+79
+00:14:45,011 --> 00:15:11,152
+Kanamalı bir hasta, benden ona, ondan bana geçebilecek olan şeyler, bunlar nedir? Kan yoluyla bulaşan enfeksiyon riskidir. Belki adam hepatitti, belki ne bileyim HIV vardı mesela adamda ya da başka bir şey vardı, Kırım Kongosu şusu busu, kan yoluyla bulaşan enfeksiyon riski diyoruz biz buna.
+
+80
+00:15:12,436 --> 00:15:21,076
+Ayşe Hemşire'nin iş yükü ve psikolojik baskı altında çalışması hangi tür iş sağlığı, güvenliği, riskini artırır?
+
+81
+00:15:21,636 --> 00:15:30,116
+Adı üstünde bak, iş yükü, psikolojik baskı altında çalışması yani bunlar psikososyal risktir.
+
+82
+00:15:30,116 --> 00:15:37,536
+Ve tahmin edeceğin gibi psikososyal riskler iş kazasını ve hata yapma oranını artırır.
+
+83
+00:15:37,756 --> 00:15:40,116
+Tatlım, biz seninle çalışırken ne dedik?
+
+84
+00:15:40,436 --> 00:16:05,736
+Çok çalışmak, gece çalışmak, çok fazla mesai yapmak, mobbing'e maruz kalmak, tamam mı? Zaman kısıtlamasının olması, bunların hepsi psikososyal riskli. Uykusuzluk, düşük ücret, çok vardiya, bunların hepsi psikososyal riskli. Çok uykuluyken çalışırsan kaza olur.
+
+85
+00:16:06,323 --> 00:16:16,623
+Aklın başka yere takılmışken çalışırsan kaza olur. Doğal olarak bu psikosofteristler iş kazası ve hata oranını artırırlar. Devam ediyorum.
+
+86
+00:16:17,875 --> 00:16:27,375
+Çalışma saatlerinin uzun olması, dinlenme molalarının verilmemesi, iş sağlığı ve güvenliği bakımından hangi tür problemleri artırabilir?
+
+87
+00:16:27,795 --> 00:16:30,975
+Bir önceki soruda bunu detaylı detaylı açıkladık.
+
+88
+00:16:31,395 --> 00:16:36,255
+Eğer çalışma saatlerim çok uzunsa, mola veremiyorsam yorgun olurum.
+
+89
+00:16:36,575 --> 00:16:41,295
+Yorgunluk kaynaklıda iş kazası yaşarım, hata yaparım.
+
+90
+00:16:42,740 --> 00:16:50,740
+Bir diğer soru, KKD'ye kolay erişim sağlanamaması hangi iş sağlığı ve güvenliği prensibine aykırıdır?
+
+91
+00:16:53,200 --> 00:16:56,460
+Peki, bakalım.
+
+92
+00:16:57,680 --> 00:17:00,760
+KKD'ye kişisel koruyucu donanım.
+
+93
+00:17:01,235 --> 00:17:11,415
+Kişisel koruyucu donanıma bizim Ayşe ulaşamamıştı. Maskesi ve gözlüğü dolapta kilitliydi. Bu ne demektir? Bu şu demektir.
+
+94
+00:17:12,516 --> 00:17:22,155
+Patron bana yaptığım işteki risklerle ilgili olarak KKD vermek zorunda. Tamam mı? Mecbur.
+
+95
+00:17:27,667 --> 00:17:49,407
+Öncelikli, mesela şıklara bakalım. Çalışma ortamında kimyasal madde kontrolü. Kimyasal madde kontrolü, ortamda kimyasal risk var mı yok mu bununla alakalı. Teknik ekipmanlarının düzenli bakımının yapılması. Teknik ekipmanlarının düzenli bakım yapılması, mühendislik kontrolü yapılıyor mu yapılmıyor mu bununla alakalı.
+
+96
+00:17:50,132 --> 00:17:57,192
+Çalışanların güvenliğinin öncelikli olması, bu zaten bizim cevabımız. Çalışanların güvenliğinin öncelikli olması.
+
+97
+00:17:58,036 --> 00:18:20,036
+İş kazalarının raporlanması bu bambaşka bir şey. İş kazalarının raporlanması demek bir kazayı yaşadım artık o kazanın bildirimini yapıyorum demek. Öyleyse KKD'ye kolaycıkla böyle hemencecik erişim sağlayamamam demek benim güvenliğimin öncelikle olması ilkesiyle ters düşüyor demek.
+
+98
+00:18:21,076 --> 00:18:29,116
+Devam ediyorum. Ha mesela bu olayla ilgili sorularımız bu kadarmış mesela. Bitti. Başka bir olaya geçelim. Başka bir senaryoya geçelim.
+
+99
+00:18:31,036 --> 00:18:42,536
+30 yaşındaki Ahmet iş bilir. Bir inşaat firmasında 10 yıldır elektrik teknisyeli olarak çalışmaktadır. Ahmet Bey'i arkadaşı Faruk Yorgun iş yerinde ziyarete gelir.
+
+100
+00:18:42,928 --> 00:18:59,088
+Arkadaşını şantiyede bulunan bir odaya çay içmeye davet eden Ahmet Bey'in tam odaya girerken ayağı kabloları takılır. Düşecek gibi olur ama kendini son anda toparlar. Bak buraya çok dikkat et. Düşecek gibi olur ama kendini son anda toparlar.
+
+101
+00:18:59,667 --> 00:19:06,547
+Ancak arkadaşı Faruk Bey, Ahmet'i tutmak isterken dengesini kaybeder, ayağı kayar ve düşer.
+
+102
+00:19:07,287 --> 00:19:11,927
+Ayağı burkulan Faruk Bey, bir hastanenin acil servisine götürülür.
+
+103
+00:19:12,287 --> 00:19:15,707
+Şimdi, olayı şöyle bir gözünde bir canlandır.
+
+104
+00:19:16,147 --> 00:19:34,687
+Bizim elimizde bir Ahmet var. 30 yaşında, elektrik teknisini, bir inşaatla da 10 yıldır çalışıyor. Sonra günlerden bir gün arkadaşı Faruk Ahmet'i ziyarete geliyor. Hazır oraya kadar gelmiş Ahmet'le diyor ki ofise geçelim bir çay içelim.
+
+105
+00:19:34,687 --> 00:19:44,107
+Ve birlikte çay içmek için ofise doğru giderlerken hemen o yerde bulunan dağınık bir şekilde olan kabloları Ahmet'in ayağı takılıyor.
+
+106
+00:19:44,147 --> 00:19:56,887
+Düşecek gibi oluyor ama kendini toparlıyor. Ne diyoruz biz bu olaya? Ramakkala. Ramakkala neydi? Bir şey oluyordu ama sen zarar görmüyordun ondan.
+
+107
+00:19:58,267 --> 00:20:08,027
+Tamam Ahmet kurtarmış kendini ama Faruk o kadar şanslı değil. Çünkü Ahmet'i tutmak isterken dengesini kaybetmiş düşmüş. Bir de üstelik hastanelik olmuş.
+
+108
+00:20:08,980 --> 00:20:21,059
+Böyle bir olay verildiğinde, bu olay iş kazası mıdır, değil midir diye sorulduğunda ya da ne yapmak gerekir diye sorulduğunda, tatlım senin şunu bilmen gerekiyor.
+
+109
+00:20:21,059 --> 00:20:34,819
+Bir şeyin iş kazası olabilmesi için kanunda belirtilen iş kazası şartlarının hepsini sağlaması gerekir. Tamam mı? Devam edelim şimdi biz. Yeni geldikçe açıklarız.
+
+110
+00:20:35,443 --> 00:20:47,543
+Ahmet Bey'in ayağının kablolara takılması ancak düşmekten son anda kurtulması durumu iş sağlığı ve güvenliği kapsamında hangi tanımla ilişkilidir?
+
+111
+00:20:48,603 --> 00:20:56,364
+Kabloya ayağım takıldı ama son anda kurtuldum. Biz buna ramak kala diyoruz. Tamam mı? Ramak kala.
+
+112
+00:21:03,059 --> 00:21:19,940
+Bir heyetten rapor almam lazım. Tamam demeliler. Evet tatlım sen meslek hastası oldun. Meslek hastası öyle hemen pazar gibi bir anda olabilecek bir şey değil. Bir zaman geçirmesi lazım. Risk değerlendirmesi zaten bambaşka bir şey.
+
+113
+00:21:20,372 --> 00:21:41,372
+Peki, geliyorum, devam ediyorum. Faruk Bey'in ayağını buruklası iş kazası olarak değerlendirilir mi? Artık hepinizin kesinlikle doğru yapması gereken bir soru. İş yerinde çalışan kim? Ahmet. Sigortalı olan kim? Ahmet. Faruk kim? Ahmet'in arkadaşı.
+
+114
+00:21:41,715 --> 00:22:09,715
+Faruk o iş yerinde çalışıyor mu? Hayır. Faruk o iş yerinde sigortalı mı? Hayır. Faruk o iş yerinde görevlendirmede mi? Hayır. Yani iş kazası tanımına uymuyor. Bu adamın yaşadığı sadece bir kaza. Arkadaşının, işte bahtsız bir deviymiş, arkadaşını ziyarete gelmiş, onu kurtarayım derken kendi olmuş. Biz buna sadece kaza diyoruz, iş kazası demiyoruz. Peki bir iş kazası olsaydı...
+
+115
+00:22:09,715 --> 00:22:33,335
+Eğer bu, Sosyal Güvenlik Kurumu'na bildirilmesi ne kadar süre içinde olacaktı? Unutma, bizim 3 iş günümüz var, tamam mı? Sadece 3 gün. 3 gün içerisinde biz bildirmek zorundayız. Kaza pazartesi mi oldu? Geç pazartesi, salı, çarşamba, perşembe. Perşembe son gün, tamam mı?
+
+116
+00:22:34,740 --> 00:22:46,440
+İş kazasının meydana gelmesinde Ahmet Bey'in çalışma ortamındaki kabloların dağınık bırakılması etkili olmuştur. Bu durum iş sağlığı ve güvenliği kapsamındaki hangi eksikliktir?
+
+117
+00:22:46,900 --> 00:22:54,780
+Eğitim eksikliği mi? Kişisel koruyucu donanım eksikliği mi? Güvenli çalışma ortamı eksikliği mi? Risk değerlendirmesi yapılmaması eksikliği mi?
+
+118
+00:22:54,780 --> 00:23:00,780
+Her ne kadar hepsine bağlı olsa da öncelikle güvenli çalışma ortamı sağlama eksikliği.
+
+119
+00:23:02,740 --> 00:23:11,160
+Etrafta, sağda, solda alet, edevat varsa, benim yürüme yolumda sıkıntılar varsa, güvenli bir çalışma ortamı yoktur gençlik.
+
+120
+00:23:11,960 --> 00:23:25,080
+Devam ediyorum. Faruk Bey iş yerinde ziyaretçi olarak bulunduğu sırada zarar görmüş, iş sağlığı ve güvenliği mevzuatına göre işveren, iş yerinde bulunan ziyaretçiler için hangi sorumluluğa sahiptir?
+
+121
+00:23:28,884 --> 00:23:44,923
+İş kazası olması için benim iş kazasıyla ilgili tüm parametreleri karşılamam lazım. Sigortalı olmam lazım, iş yerinde olmam lazım, o işle ilgili bir şey yapıyor ya da bekliyor olmam lazım. E tamam bunlar var ama bir de ziyaretçiler var.
+
+122
+00:23:45,491 --> 00:23:59,871
+İşverenin ziyaretçiye karşı hiç mi sorumluluğu yok? Tabii ki var. Bakalım. Ziyaretçilere iş sağlığı eğitimi verme. Hayır. Yani ben beni ziyaret eden herkese iş sağlığı, güvenliği eğitimi vermek zorunda değilim.
+
+123
+00:24:00,432 --> 00:24:08,271
+Ziyaretçilerin güvenliğini sağlama, evet güvenli bir ortam buluşturmak zorundayım. Ziyaretçileri sigortalama,
+
+124
+00:24:09,523 --> 00:24:13,884
+Hani çok şükür böyle bir mecburiyetimiz yok ziyaretçileri sigortalamak gibi.
+
+125
+00:24:14,763 --> 00:24:18,523
+Ziyaretçileri iş yerinin dışında tutma, hani...
+
+126
+00:24:18,771 --> 00:24:31,052
+Böyle bir mantık yok zaten. Ne olabilir mesela? Hani nasıl bir iş yeri olabilir? Şöyle düşün, sizin Beşiktaş kampüste tarihi yerler var, orayı görmek isteyenler var, bu yüzden gelmek istiyorlar.
+
+127
+00:24:31,412 --> 00:24:38,592
+Ya da işte Davut Paşa kışlada, adam vakti zamanında askerliğini yapmış, geleyim bir askerliğimi yaptığım yerleri bir göreyim demiş.
+
+128
+00:24:39,112 --> 00:24:41,852
+Ya da benim üniversitemi düşün, Sağlık Bilimleri Üniversitesi.
+
+129
+00:24:42,867 --> 00:24:55,867
+Geleyim de şu ikinci Abduramit neler yapmış, işte masası nasılmış, sırası nasılmış, hangi eserleri bırakmış diye bir ziyaret etmek istedi adam. E tamam, güzel, ziyaret olabilir, mantıklı ama...
+
+130
+00:24:56,596 --> 00:25:23,556
+Dışarıdan ziyaretçiyi aldığım zaman, mesela kendi üniversitem için konuşuyorum, benimki zaten şantiye sahası. Yani ben dışarıdan ziyaretçi aldığım zaman ona kişisel koruyucu donanım vermek, ona bir refakatçi vermek zorundayım. O zaman başka türlü güvenliğini de sağlayamayacağıma göre bana düşen sorumluluk burada ya hep ziyaretçi kabul etmeyeceğim ya da istiyorsam güvenliğini sağlayacağım.
+
+131
+00:25:24,596 --> 00:25:36,036
+Ziyaretçilere karşı sorumluluğum böyle. O yüzden ziyaretçi sevmiyoruz. Kendisini derdiyoruz. Çünkü zaten kendi derdimiz bize yetiyor diyoruz arkadaşlar.
+
+132
+00:25:37,056 --> 00:25:41,395
+Tabii siz gelebilirsiniz ya. Siz iş güvenliği dersi aldınız. Yolunuz düşerse kaliköye beklerim.
+
+133
+00:25:42,235 --> 00:25:51,915
+Ramakkala olaylar iş kazalarının önlenmesi için neden önemlidir? Ramakkala neydi? Kaza oluyordu ama sen zarar görmüyordun.
+
+134
+00:25:52,192 --> 00:26:02,211
+Şimdi, Ramakkalalar sana asıl kaza hakkında istatistik veriyordu, bir bilgi veriyordu. Mühendis adam değil miyiz biz?
+
+135
+00:26:02,675 --> 00:26:20,675
+Bize bir veri tabanı lazım değil mi? Bize bir istatistik lazım değil mi? Adam bana diyor ki, bak 30 tane az yaralanmalı kaza olduğunda 10 tane ciddi yaralanmalı kazan olur. 10 tane ciddi yaralanmalı kazan olduğunda 1 tane ölümlü kazan olur. Söylüyor. Matematik bu. E o zaman...
+
+136
+00:26:21,748 --> 00:26:45,148
+Demek ki Ramakalı olaylar bize maddi zararları önlediği için değil, sonuçta oluyor. Çalışanların iş yükünü azalttığı için değil, azaltmıyor, artırıyor. Çalışma saatlerini düzenlemek zaten çok alakasız kalmış. Gelecekteki potansiyel kazaları ölçmek, önlemek, yönetmek için bana fikir veriyor. Bu yüzden önemli.
+
+137
+00:26:45,632 --> 00:26:55,072
+Peki, Ahmet Bey'in ayağının kanunlara takılması durumu risk değerlendirmesi yapılırken hangi başlık altında ele alınmalıdır?
+
+138
+00:26:56,912 --> 00:27:12,092
+Ortamda problem var. Ortam karışık, ortam dağınık, yani düzensiz. Yani organizasyon sıkıntısı var burada. Demek ki düzensizlik ve organizasyon riskleri gündemdeymiş.
+
+139
+00:27:12,948 --> 00:27:20,708
+Gelelim 14'e. İş kazası sonrasında işverenin yerine getirmesi gereken ilk adım nedir?
+
+140
+00:27:21,408 --> 00:27:25,368
+Şimdi hemen hatırlıyorum. Hoca sana dönem boyunca ne anlattı?
+
+141
+00:27:25,368 --> 00:27:34,368
+Hoca dedi ki, eğer bir yerde iş kazası varsa dedi, olduysa dedi, öncelikle olay yerini...
+
+142
+00:27:34,900 --> 00:28:02,900
+Her yerden korumalısın, her şeyden korumalısın, olay yerini kimsenin değiştirmesine müsaade etmemelisin, kayıt altına almalısın, yapabiliyorsan fotoğraf çekmelisin, rapor tutmalısın, şahitlerin bilgilerini almalısın, inceleme yapmalısın, tamam mı? Çünkü aksi takdirde sen gol yiyeceksin, 1-0 yenik başlayacaksın olaya, bir şekilde kaza alanına giriş çıkış olduysa, insanlar dokunduysa, parmak izleri çoğaldıysa, ne bileyim...
+
+143
+00:28:02,900 --> 00:28:20,940
+Yaralının şekli değiştiyse, ölünün şekli değiştirildiyse ne demek ölünün şekli değiştirmek? Mesela biz öyle şeyler görüyoruz ki adam ölmüş, yüksekten düşmüş, şantiyede, eskeleden düşmüş ve ölmüş. Bunları anlatmıştım size.
+
+144
+00:28:21,556 --> 00:28:27,895
+Adam öldükten sonra hız limitleyici takıyorum mesela, kemer takıyor mesela. Tamam mı? Öyle fotoğrafını çekiyor.
+
+145
+00:28:28,296 --> 00:28:32,336
+Bak diyor işte bunda kemer vardı ama işte Allah'ın işi düştü öldü gibi.
+
+146
+00:28:33,135 --> 00:28:39,756
+O nedenle gençlik iş kazasını kayıt altına almak ve inceleme yapmak yapmamız gereken ilk şey.
+
+147
+00:28:39,756 --> 00:28:49,375
+Peki sonra ne yapıyoruz? Sonra tabii ki rapor tutuyoruz. Sonra olayı SGK'ya bilgiriyoruz. O arada zaten savcı devreye giriyor.
+
+148
+00:28:49,556 --> 00:29:03,355
+O arada kazadan sorumlu kişilere cezai işlemler başlıyor ve bu olay böyle gidiyor. İş kazası sonrasında işverenin yapması gereken ilk adım kazayı kayıt altına alıp inceleme yapmak.
+
+149
+00:29:03,355 --> 00:29:15,476
+Peki, geliyorum bir diğer soruya. Ramak kala olayların kayıt altına alınması ve analiz edilmesi iş yerinde hangi uygulama kapsamında değerlendirilir?
+
+150
+00:29:16,660 --> 00:29:28,100
+Güzel. Ramak Kala olayı kayıt altına almak. Ramak Kala olayın neden raporunu tutarım? Çünkü bana gelecekteki kazalar hakkında bilgi verir.
+
+151
+00:29:28,627 --> 00:29:53,988
+Peki bunu ne zaman yaparım? Canım sıkılınca mı? Yok. Bugün işte canım isteyince mi? Hayır. Bunu risk değerlendirmesi yaparken yaparım. Yani risk değerlendirmesi aşamasında onları kayıt altına alırım ve analiz ederim. Tamam mı? O zaman çünkü bu istatistikleri toplamış ve yorumlamış olurum.
+
+152
+00:29:54,516 --> 00:30:03,396
+İş kazası bildirimi başka bir şey. İş kazası demek, bildirimi demek, iş kazası oldu, ben de SGK'ya bildirim yapıyorum demek.
+
+153
+00:30:04,135 --> 00:30:12,896
+Meslek hastalığı tespiti başka bir şey. Yani çalışanımda bir hastalık çıkmış, bu hastalığın yaptığı işten olduğunu iddia ediyor.
+
+154
+00:30:13,375 --> 00:30:21,216
+Bu yüzden ben de onu heyet, büyük hastanelere gönderiyorum, heyet raporu aldırıyorum. Gerçekten öyle mi değil mi diye.
+
+155
+00:30:21,779 --> 00:30:34,539
+Sağlık-Güvenlik eğitimleri, iş sağlığı-Güvenliği eğitimleri bunlar bambaşka. Bunlar benim her sene ya da 2 yılda bir, 3 yılda bir aldırmak zorunda, yaptırmak zorunda olduğum eğitimler.
+
+156
+00:30:34,539 --> 00:30:40,039
+Durum böyle gençler. Şimdi burası da anlaşıldığına göre, şurayı bir kapatalım.
+
+157
+00:30:41,940 --> 00:31:09,940
+Şöyle bir özetleyelim durumu. Sana dedim ki, karşına fotoğraf çıktığında o fotoğraftaki riskleri ve risk çeşitlerini yazabilmelisin. Sana bir senaryo verildiğinde o senaryodaki bahsedilen riskleri, hastalıkları, iş kazası mı değil mi tarzı, soruları rahatlıkla cevaplayabilmelisin ki artık bunlar senin yapabileceğin şey.
+
+158
+00:31:09,940 --> 00:31:13,940
+Diğer taraftan arkadaşlarım...
+
+159
+00:31:17,523 --> 00:31:24,903
+Hemen bir daha paylaşıp bir özetlemek istiyorum. Böylece daha fazla vaktinizi de almayacağım zaten.
+
+160
+00:31:26,836 --> 00:31:36,515
+Şimdi biz seninle ne çalıştık? Biz seninle 6331 sayılı İş Sağlığı ve Güvenliği Yasası çalıştık. Tamam mı?
+
+161
+00:31:37,715 --> 00:31:50,715
+6331 sayılı İş Sağlığı ve Güvenliği Yasası sana diyordu ki, kamu ve özel ayırmaksızın herkesi kapsıyorum ben. Çıraklar ve stajyerler de dahil olmak üzere.
+
+162
+00:31:50,715 --> 00:31:54,495
+Ha, kapsamadığım bazı gruplar vardı. Emniyet gibi.
+
+163
+00:31:54,836 --> 00:32:07,735
+Silahat Kuvvetleri gibi, MIT gibi, sporcular gibi, evlere temizliğe giden insanlar gibi, onları kapsamamamın nedeni de kendilerine özgü kanunların olması ya da zaten sigortaların olmamasıydı.
+
+164
+00:32:08,535 --> 00:32:20,755
+Başka ne çalıştık? 4877 sayılı İş Kanunu, 5510 sayılı Sigortalar Kanunu çalıştık. Zaten bu kanunlar sana iş kazasının tanımını yapıyordu.
+
+165
+00:32:21,332 --> 00:32:43,112
+Diyordu ki, sigortalının, sigortalının, bak ilk şart sigortalı olmak. Sana sürekli şu örneği verdim. Davut Paşa kampüste dolanırken bahçede ben düşersem iş kazası, sen düşersem kaza. Niye? Birimiz iş yerinin sigortalı çalışanı, birimiz sadece öğrencisi.
+
+166
+00:32:43,604 --> 00:33:07,364
+Neyse, devam ediyorum. Sigortalının iş yerinde bulunduğu sırada işini yaparken ya da beklerken ya da emziren bir anneyse bebeğine süt verdiği saatte ya da servisle gidip gidiyorsa o serviste ya da patronun verdiği aracı kullanıyorsa o aracı kullanırken ya da görevlendirmede bunlar da başına gelen her şey iş kazasıydı.
+
+167
+00:33:08,339 --> 00:33:33,619
+Bir şeyin iş kazası olabilmesi için yasada belirtilen şeylerin gerçekleşmesi ve kişinin tabii ki yaşadığı kazanın işle ilgili olması gerekiyordu. Bunu zaten özetledik artık herkes biliyor bunu. Sonra seninle tehlike ve riski çalıştık. Dedik ki tehlike bizim iş yerimizde olan beni hemen etkileyebilecek. Zararı ya da hasar verme potansiyeli.
+
+168
+00:33:34,163 --> 00:33:44,584
+Ne zaman ki bunlardan, bu potansiyellerden kaynaklı kayıplar, yaralanmalar başlıyor, işte o zaman biz buna risk diyoruz dedik.
+
+169
+00:33:45,604 --> 00:33:50,024
+Seninle sağlık, iş sağlığı ve iş güvenliği tanımlarını yaptık.
+
+170
+00:33:50,604 --> 00:33:56,544
+Sağlık için fiziksel, ruhsal ve sosyal açıdan tam olarak iyi olma hali dedik.
+
+171
+00:33:56,663 --> 00:33:58,403
+Çünkü Dünya Sağlığı Örgütü böyle kabul ediyordu.
+
+172
+00:33:58,900 --> 00:34:08,460
+İşte bu fiziksel, sosyal ve ruhsal açıdan tam iyi olmayı işimde karşılıyorsam, çalıştığım alandaysa biz buna iş sağlığı diyorduk.
+
+173
+00:34:09,300 --> 00:34:15,960
+İş sağlığımızı korumak için yaptığım tüm faaliyetlere de hatırla iş güvenliği diyorduk.
+
+174
+00:34:15,960 --> 00:34:16,820
+Peki.
+
+175
+00:34:17,588 --> 00:34:25,468
+İş Sağlığı ve Güvenliği'nin paydaşları kimdi? Devlet, çalışanlar, işverenler ve sendikalardı.
+
+176
+00:34:26,008 --> 00:34:34,508
+Devlet en büyüktü, değil mi? Kanun koyuyordu, kural koyuyordu, hesap soruyordu, ceza kesiyordu, bu öyle olacak diyordu, öyle oluyordu.
+
+177
+00:34:35,307 --> 00:34:40,168
+İşveren, devletin koyduğu kuralları, kanunları uyguluyor idi.
+
+178
+00:34:40,755 --> 00:34:48,355
+Çalışanlar da kendilerine verilen görevleri ve sorumlulukları yerine getiriyor, haklarına riayet ediyorlar idi.
+
+179
+00:34:49,556 --> 00:35:12,056
+İşte benim yüce devletim ülkemdeki iş yerlerini az tehlikeli, tehlikeli ve çok tehlikeli yani C sınıfı, B sınıfı, A sınıfı diye 3'e bölmüştü. Nasıl karar veriyordu bir şeyin az tehlikeli, tehlikeli ya da çok tehlikeli olduğuna? O ortamdaki, o iş kulundaki risklere göre bakıyordu.
+
+180
+00:35:12,056 --> 00:35:17,556
+Yani bana diyordu ki işte sen bir muhasebecisin, bir ofistesin ya da ne bileyim avukatsın.
+
+181
+00:35:17,556 --> 00:35:45,556
+2-3 arkadaş birlikte bir ofis kiralamışsınız, bir hukuk bürosu açmışsın. Buradaki risklerle bir hastanedeki riskler aynı değil diyordu. O yüzden az tehlikeli, tehlikeli ve çok tehlikeli olarak ayırmıştı. Uzmanlarımız da CBA, yani az tehlikeli yerlerde çalışabilecek uzman, tehlikeli yerlerde çalışabilecek uzman ve çok tehlikeli yerlerde çalışabilecek uzman diye ayırmıştı. A sınıfı uzman.
+
+182
+00:35:45,556 --> 00:36:02,175
+çok tehlikeli yerde çalışabileceği için kendinden sonraki tüm küçüklerde çalışabilirdi. Yani CBA'nın hepsinde. Doğal olarak çok tehlikeli bir iş kolundaysam sana dönem boyunca dedim ki benim üniversitem sağlık bilimleri.
+
+183
+00:36:03,539 --> 00:36:21,559
+Biz hastaneyle bağlıyız. Bendeki bütün bölümler sağlıkla ilgili. Yani benim bulunduğum korum A sınıfı. Çok tehlikeli. O yüzden ben personelime her sene eğitim vermek zorundayım. Ben personelimin sağlık tepkiklerini her sene yapmak zorundayım.
+
+184
+00:36:22,579 --> 00:36:44,799
+Binaların acil durum eylem planını 2 yılda bir, risk değerlendirmesini 2 yılda bir yapmak zorundayım. Ama mesela böyle daha minnoş bir yerde çalışsaydım, daha böyle tehlike seviyesi düşük olsaydı, o zaman eğitim tekrar saatlerim, yıllarım, işte tepkikleri yapacağım zaman dilimleri.
+
+185
+00:36:45,715 --> 00:37:00,076
+Acil durum ya da risk değerlendirmesi yapacağın zaman dilimleri değişecekti. Peki, sonra biz seninle şöyle bir şey daha çalıştık. Dedik ki, ben bir ortamdaki riskten nasıl kurtulurum?
+
+186
+00:37:00,659 --> 00:37:17,679
+Yani ortamda risk var. Eyvallah, bundan kurtulmak istiyorum. En etkili yöntem toplu koruma demiştik biz. Yani ortadan kaldırma. Canını mı sıktı, at gitsin demiştik. Ortadan kaldır. Niye? Başka türlü o riskten kurtulamam.
+
+187
+00:37:18,228 --> 00:37:36,228
+Ama her zaman ortadan kaldırma gibi bir durumum yoktu. Bazen de yer değiştirme, ikame diyoruz buna. Yer değiştirme yapacaktım. Yani çok tehlikeli bir şeyi daha az tehlikeli bir şeyle değiştirecektim. Olmadı mı? Yani ortadan kaldırmış.
+
+188
+00:37:36,820 --> 00:37:49,019
+Düşünsene, devasa bir makine almışım. Kaç milyon dolar? Öyle canım istediği zaman çat diye atamam. Çat diye başka bir şeyleri de değiştiremiyorum. Üzerinde mühendislik kontrolleri yapıyordum.
+
+189
+00:37:49,652 --> 00:38:07,112
+Mesela makineye susturucu takıyordum, onu büyük ayrı bir odaya koyuyordum. Eğer bu çok gültüyle kaynaklanıyorsa insanla arasına engeller koyuyordum. Değil mi? Bu da mühendislik kontrollerdi. Ya da KKD veriyordum, yönetsel önlemler alıyordum.
+
+190
+00:38:07,972 --> 00:38:16,892
+Sıralamaya baktığın zaman en etkili toplu koruma, en az etkili KKD yani kişisel koruyucu kullanmaktı. Neden?
+
+191
+00:38:17,652 --> 00:38:29,831
+Çünkü sana güvenmiyordum. Sana verdiğim eldiveni takacak mısın? Sana verdiğim gözlüğü takacak mısın? Baret'i giyecek misin? Ayakkabıyı giyecek misin? Hız limitleyici kemeri takacak mısın? Bunları bilmiyordum.
+
+192
+00:38:29,831 --> 00:38:44,271
+Onun için de KKD bizim en az etkili yöntemlerimiz olarak listemizde son sırada yer alıyordu. Kontrol hiyerarşisini unutma tatlım. Önemli. Riskleri anlatırken.
+
+193
+00:38:45,139 --> 00:39:01,740
+Riskleri anlatırken dedim ki sana artık kaç tane soru çözdük biliyorsun. Fiziksel risk etmenleri, gürültü, titreşim, aydınlık, karanlık, soğuk, sıcak, basınç, radyasyon bunlar fiziksel etmenlerdi.
+
+194
+00:39:02,324 --> 00:39:20,124
+Her türlü patlayıcı, yanıcı, yakıcı gazlar, asitler, bazlar, tozlar, solventler bunların hepsi madenler. Bunların hepsi kimyasal riskli. Yani sen şöyle diyecektin. Yanabilen, yakabilen, patlayabilen her şey kimyasal riskli.
+
+195
+00:39:20,851 --> 00:39:39,051
+Virüsler, bakteriler, bunların hepsi yolojik riskti. Ardından da psikososyal ve ergonomik riskler gelmiş idi. O nedenle sen gürültü, basınç, titreşim, radyasyon, aydınlatma, termal konfor geldiğinde bunun fiziksel olduğunu bileceksin.
+
+196
+00:39:39,795 --> 00:39:52,955
+Toksik, ne demek toksik? Hani toksik ilişki falan diyorsun ya, zehirli. Toksik maddeler olduğunda, pestisitler, asitler, bazlar, alkaliler, gazlar, çözücüler olduğunda bunların kimyasal olduğunu bileceksin.
+
+197
+00:39:53,915 --> 00:40:04,555
+Bakteriler, virüsler, mantarlar, parazitler, insandan bulaşanlar, hayvandan bulaşanlar, kandan geçenler, sıbıdan, gözyaşından geçenler dendiğinde biyolojik olduğunu bileceksin.
+
+198
+00:40:07,668 --> 00:40:11,947
+İşin sana uygun hale gelmesi için.
+
+199
+00:40:12,320 --> 00:40:37,840
+Tam o esnada yaşadığım tüm sorunlar ergonomik sorunlardı. Hatırlarsam, sana derste dedim ki, bak ideal erkek bu dedim, değil mi? Oturma şekli, bilgisayar olan göz uzaklığı, alt ucuna olan uzaklık, elin klavyede duruş şekli, ayağın yerden yüksekliği, ideal pozisyon bu dedim. Ama biz bu ideal pozisyonu çok bulamıyoruz. Kendi günlük hayatımızda çok dikkat etmiyoruz.
+
+200
+00:40:40,320 --> 00:40:56,460
+Önce Ayşe Hemşire'nin hastayı böyle ya Allah deyip kendi kendine kaldırıp sonra kasının yırtılması ergonomideki hata, ergonomideki stres, ergonomideki yanlışlık senin vücuduna yansıyan bir rahatsızlık demek idi.
+
+201
+00:40:57,660 --> 00:40:59,380
+Psikososyal risk etmenleri.
+
+202
+00:40:59,956 --> 00:41:19,576
+Çok şenlik de hatırlarsan, senin düşük ücret almandan gece çalışmana kadar, çok fazla nöbet tutmandan adam kayrılmasına kadar, senin arkandan kuyunun kazılmasından, iş güvencenin olmamasına, sürekli atılma korkusuna kadar her şey psikososyal riskletmanları grubundaydı.
+
+203
+00:41:20,532 --> 00:41:34,792
+Ve son olarak ya da işte sondan bir önce seninle güvenlik işaretleri çalışmıştık. Sana demiştim ki ben, renkler çok kolay. 4 tane temel renk, kırmızı, sarı, mavi, yeşil. Bitti.
+
+204
+00:41:35,315 --> 00:41:55,635
+Sınavda gördüğünde bunlara çok rahat yorum yapabileceksin. Kırmızının iki tane anlamı vardı. Bir tanesi yasak, bir tanesi yangın. Yasak demek şu demekti. Dur, girilmez, içilmez, yakılmaz, su dökülmez, yetkisiz giremez. Yasakları söylüyordu sana.
+
+205
+00:41:56,115 --> 00:42:08,455
+Ve bir de yangını söylüyordu. Yangın tüpü, yangın dolabı, yangın musluğu, yangın telefonu, yangın yönlendirmeleri, yangınla ilgili her şeyi kırmızı görüyordun sen.
+
+206
+00:42:09,172 --> 00:42:32,872
+Sarı, uyarı demekti. Uyarı işareti. Sarı siyah. Kenarlara böyle siyah üçgen, içi sarı zemin, siyah da sembolü var. Dikkatli ol demekti. Baksana deminden beri sana dikkatli ol, dikkatli ol deyip duruyorum. Belli ki bunları soracağında aslınavda ki bunları sana bir daha bir daha anlatıp unutma, şöyle yapma, böyle yapma diye tekrarlıyorum.
+
+207
+00:42:33,331 --> 00:42:53,711
+Mavi, zorunluluk, emredici işaretti. Gözlük, tak, baret, giy, kulaklık, kullan, ayakkabı, giy, önlük, giy, ne bileyim, kemer, tak gibi zorunlu olduğun eylemleri, ekipmanları anlatan işaret ve renkti mavi.
+
+208
+00:42:54,131 --> 00:42:59,791
+Yeşilin iki anlamı vardı. Birincisi diyordu ki bana,
+
+209
+00:43:00,371 --> 00:43:24,751
+Acil kaçışlar, çıkışlar, exitler tamam mı? Bunların hepsi toplanma alanları. Bunların hepsi yeşille ifade ediliyordu. Bir de tabii ki ilk yardım işaretleri. Yani bak şimdi ekranda beni görüyor musun bilmiyorum şurada. Bak toplanma alanı yeşil.
+
+210
+00:43:25,684 --> 00:43:34,304
+Hekim işareti, ilk yardım, yeşil. Çıkış kapısı gösteriyor, yeşil. Efendim, göz duşu gösteriyor, yeşil.
+
+211
+00:43:34,639 --> 00:43:58,259
+Acil çıkış gösteriyor, yeşil. Yani yeşil adı üstünde böyle bir ferahlık falan var ya, her türlü çıkışı, kaçışı yeşille gösteriyor. İlk yardım, göz duşu, boy duşu vesaire yeşille gösteriyordu. Renkleri ve onların anlamlarını unutma. Onlardaki slide'lara bak. Çünkü karşına çıkacak. Benden söylemesi.
+
+212
+00:43:59,539 --> 00:44:24,940
+Ve kırmızı dedik ki, kırmızı bir iki anlamı var, bir yasak bir yanma dedik. Yangın olabilmesi için, ki biliyorsun yanma olayı kimyasal bir olay, sana bir yakacak adam lazım, bir yanacak adam lazım, bir de ortamda uygun ısı lazım. Yakacak olan kim? Oksijen, değil mi? Yanacak olan kim? Sen, ben, su, benzin, ne bileyim.
+
+213
+00:44:25,556 --> 00:44:28,556
+Kolonya, kapı perde cam, her şey.
+
+214
+00:44:29,776 --> 00:44:35,936
+Oksijenle yanıcı madde uygun ısıda bir araya geldiğinde yanma olayı gerçekleşiyordu.
+
+215
+00:44:36,416 --> 00:44:40,135
+Biz bunun iş güvenliği kısmında şuna bakıyorduk.
+
+216
+00:44:40,576 --> 00:44:42,316
+Yangınların çeşitleri vardı.
+
+217
+00:44:43,036 --> 00:44:51,796
+Katılar yanıyorsa A sınıfı, sıvılar yanıyorsa B sınıfı, gazlar yanıyorsa C sınıfı diyorduk.
+
+218
+00:44:51,796 --> 00:44:52,916
+A, B, C.
+
+219
+00:44:53,523 --> 00:45:09,764
+Ahşap, kağıt, kömür, kumaş, pencere, tahta, sen, ben, katı maddeyiz biz. A sınıfıyız. Ama gidip de kolonya, benzin, mazot, tiner, alkol, solvent bunlar sıvı. B sınıfı.
+
+220
+00:45:19,699 --> 00:45:21,879
+[öğrenci] bana bir şey söylüyorsa anlayamadım.
+
+221
+00:45:26,260 --> 00:45:28,220
+Sıra bakmayın hocam, ben de süper şey yapıyorum.
+
+222
+00:45:29,240 --> 00:45:41,260
+Yok, estağfurullah. Hani sorusuz şey yapıyorsanız anlamadım. Neyse, ne dedim? Katı, sıvı, gaz yangınları. A sınıfı, B sınıfı, C sınıfı yangınlar. Bizi ilgilendiren şey zaten...
+
+223
+00:45:41,684 --> 00:46:07,084
+Hani o hangi sınıf yangında olduğu, neden hangi sınıf yangın olduğu önemli? Çünkü ona uygun yangın söndürücüm var, tamam mı? Hani mesela ocakta patates kızartacaksın şimdi dersten sonra, yağ koydun, yağ kızdı, o kadar kızdı ki sen telefonda konuşurken unuttun onu ve yangın başladı.
+
+224
+00:46:07,539 --> 00:46:27,519
+O yağın üstüne su dökemezsin, olmaz. Söndürmez onu, patlatır. O nedenle hangi sınıf yangını neyi kullanacağını bilmem işyeri ortamı için önemliydi. Sadece işyeri ortamı değil, tabii ki normal hayatımda da önemliydi.
+
+225
+00:46:28,460 --> 00:46:33,740
+Evet gençlik, hızlandırılmış iş sağlığı ve güvenliği turumuzun sonuna geldik.
+
+226
+00:46:35,027 --> 00:46:36,987
+Ana fikri anladığınızı düşünüyorum.
+
+227
+00:46:39,768 --> 00:46:40,947
+Var mı sorusu olan.
+
+228
+00:46:41,907 --> 00:46:45,867
+Perşembe günü sınavınız 20 Kasım biliyorsunuz.
+
+229
+00:46:46,420 --> 00:47:03,640
+Derslerde çözdüğümüz gibi çıkacak. Bunu da biliyorsunuz. Bugün çözdüğümü yine o ders duvarına atarım. Oradan bakarsınız. Sakın şöyle bir şey düşünmeyin. Üzülürüm. Yani, aa hoca bunu verdi, bunun aynısını soracak falan. Öyle bir dünya yok. Hani örnek olsun diye atıyorum.
+
+230
+00:47:12,596 --> 00:47:14,215
+Hayatta başarılar dileyeyim.
+
+231
+00:47:15,155 --> 00:47:19,255
+Hocam sınav süresi ne kadar? Sınav süresi 1,5 saat diyebiliyorum ben.
+
+232
+00:47:23,891 --> 00:47:30,611
+Bir saniye, bir bakayım hemen. Yanlışlık olmasın. Her bölümünki farklı farklı [öğrenci]. Bir dakika bekle.
+
+233
+00:47:53,940 --> 00:48:01,099
+1 saatmiş. Yani sizinki 1.30'da başlıyor, 2.30'da bitiyor, öyle görüyorum.
+
+234
+00:48:14,356 --> 00:48:18,476
+Buna göre artık şey yaparsın, ayarlarsın.
+
+235
+00:48:20,756 --> 00:48:22,896
+Evet gençlik, var mıdır başka soru?
+
+236
+00:48:35,476 --> 00:48:51,076
+Yok sanırım. O zaman herkese güzel bir hafta sonu, ardından da güzel bir sınav haftası diliyorum. Allah yardımcınız olsun. Sınav haftasından sonra görüşürüz gençler. İyi akşamlar herkese, hoşçakalın. İyi akşamlar [öğrenci], herkese iyi akşamlar.
+
+237
+00:48:56,436 --> 00:48:57,836
+İyi akşamlar hocam.
+
+238
+00:48:58,276 --> 00:48:59,036
+İyi akşamlar.
+
+239
+00:49:16,500 --> 00:49:28,440
+Efendim [öğrenci], en başta bir soru vardı. En baştaki soru şeydi, fotoğraftan riskleri bulmaydı. Orası diyordun sanırım.
+
+240
+00:49:35,923 --> 00:49:36,784
+Onunla ilgili.
+
+241
+00:49:41,907 --> 00:49:42,967
+Evet, doğru.
+
+242
+00:49:55,539 --> 00:50:01,300
+He, şeyi mi diyeceksin? Diğer şıkta da şey vardı, adam ziyaretçi değil.
+
+243
+00:50:02,452 --> 00:50:26,232
+Diğer şıkdaki, evet evet, onu diyeceksin, tamam. Şöyle, bazen ziyaretçi ya da çalışan olmadığı halde hakimlerimizin iş kazası olarak nitelendirdiği durumlar olabiliyor. Yani orası biraz muallak. O yüzden bir şeyin iş kazası olabilmesi için biz risk almamak adına şey diyoruz, iş kazası tanımına
+
+244
+00:50:26,643 --> 00:50:32,403
+O 5510 sayılı yasanın tanımına uymamaktadır diyoruz. Tamam mı?
+
+245
+00:50:41,012 --> 00:51:06,472
+Güzel yakalamışsın, orası tam çeldirici bir şey. Mesela herkesin aklına önce şey gelebilir, ya bu adam orada sigortalı değil, sadece ziyaretçi, o zaman zaten iş kazası sayılmaz. Evet, böyle, doğru. Ama hukuksal olarak diyoruz ki, iş kazasının maddelerini, gereksinimlerini, kanunda anlatılanı karşılamamaktadır. Bu yüzden iş kazası değildir, deyip sıyrılıyoruz olayın içerisinden.
+
+246
+00:51:07,795 --> 00:51:10,155
+Tamamdır. Var mı başka soru gençlik?
+
+247
+00:51:25,364 --> 00:51:26,664
+O zaman herkese iyi akşamlar.
