@@ -1,0 +1,2587 @@
+1
+00:14:54,740 --> 00:14:58,200
+Arkadaşlar, merhabalar. Sesim geliyor mu?
+
+2
+00:15:04,179 --> 00:15:04,819
+Yönü.
+
+3
+00:15:53,107 --> 00:15:54,587
+Herhalde duyuluyordur sesim.
+
+4
+00:15:54,927 --> 00:15:56,107
+Şimdi...
+
+5
+00:16:12,436 --> 00:16:26,796
+Geçen hafta CNN'leri görmüştük. Yine bu şeyi takip ediyoruz. Bu hafta CNN mimarilerine bakacağız.
+
+6
+00:19:42,867 --> 00:19:43,427
+Şöyle.
+
+7
+00:19:50,099 --> 00:19:58,099
+İki, üç.
+
+8
+00:22:50,963 --> 00:22:57,963
+CNN ve CNN mimarileri ve CNN'lerin eğitimi üzerine
+
+9
+00:22:57,963 --> 00:23:03,963
+yani
+
+10
+00:23:11,604 --> 00:23:19,423
+Şimdi geçen derste CNN'lerin yapı taşı, convolution layer'ı görmüştük.
+
+11
+00:23:27,476 --> 00:23:33,876
+Yine pooling layer'ı görmüştük. Havuz katmanı mı diyoruz?
+
+12
+00:23:37,779 --> 00:23:46,299
+Şimdi bu derste bir kısım ek şeyler göreceğiz.
+
+13
+00:23:54,228 --> 00:23:59,228
+Normalization Layers, Dropout gibi.
+
+14
+00:24:16,627 --> 00:24:34,947
+Bu slide'ı da yeni gördüm. Yani temelde veriyi normalize etmeniz tüm şeyde makine öğrenmesi işlerinde işe yarıyor. Tabii farklı normalizasyonlar var.
+
+15
+00:24:38,451 --> 00:24:39,291
+Öğ...
+
+16
+00:25:04,500 --> 00:25:17,140
+Normalize etmek, tabi çok popüler bir şey. Min'i çıkarıyorsunuz x'ten. Yani verinizden, verinizin ortalamasını çıkarıyorsunuz.
+
+17
+00:25:20,339 --> 00:25:23,859
+Ve verinizin standart sapmasına bölüyorsunuz.
+
+18
+00:25:27,827 --> 00:25:32,587
+Bunu eğitim sırasında yaptınız.
+
+19
+00:25:39,124 --> 00:26:06,264
+Şimdi test sırasında ne yapmanız lazım? Test sırasında bu müyü hatırlamanız lazım. Yani ortalamayı hesap edeceksiniz ya veri setinden. Eğitim veri setinin ortalaması, yine eğitim veri setinin standart sapması. Bunları hatırlayıp
+
+20
+00:26:07,028 --> 00:26:11,028
+Test sırasında yine ne yapmanız lazım?
+
+21
+00:26:13,028 --> 00:26:19,028
+Aynı işi yapmanız lazım ki aynı uzaya indirgeyesiniz.
+
+22
+00:26:19,028 --> 00:26:33,867
+Burada normalizasyonu nereden, bu µ'yü ve sigma'yı ne üzerinden hesap edeceksiniz sorusu var.
+
+23
+00:26:34,867 --> 00:26:45,987
+Şimdi burada da input verinizi şu şekilde, her bir satırı yeni bir input olsun. Yani her bir satırı bir inge mesela.
+
+24
+00:26:49,947 --> 00:26:56,687
+Şöyle direkt burada normalize edebilirsiniz.
+
+25
+00:27:01,364 --> 00:27:08,804
+Her pikseli tüm pikseller üzerinden normalize edebilirsiniz.
+
+26
+00:27:08,804 --> 00:27:13,443
+Gibi birçok farklı normalizasyon yaklaşımı var.
+
+27
+00:27:13,443 --> 00:27:18,324
+Yani en az 2-3 tane var.
+
+28
+00:27:22,324 --> 00:27:25,124
+Bir de şu var.
+
+29
+00:27:31,539 --> 00:27:46,740
+Bu parametrelerin, münün ve alfanın nörel networklerde öğrenilmesi de var. Bu tarz birçok ayrıntılı işler yapmışlar.
+
+30
+00:27:49,420 --> 00:27:56,079
+Geçtiğimiz yıllarda bu slide'ların versiyonlarında çok daha ayrıntılı anlatıyorlardı.
+
+31
+00:28:01,556 --> 00:28:16,175
+Beş Normalizasyon, Layer Normalizasyon, Instance Normalizasyon, Grup Normalizasyon şeklinde hepsini tek tek anlatıyorlardı. Bu yıl hızlı geçmişler burayı. Size bırakmışlar. Ben de size bırakıyorum.
+
+32
+00:28:20,147 --> 00:28:21,548
+Ö
+
+33
+00:28:32,372 --> 00:28:36,731
+Bir başka fikir, Dropout.
+
+34
+00:28:39,372 --> 00:28:41,372
+Dropout şöyle bir şey.
+
+35
+00:28:45,172 --> 00:28:49,012
+Sırasında, Network'nizi eğitirken,
+
+36
+00:28:58,067 --> 00:29:02,087
+Bileşenlerden bir kısmını yok varsayıyorsunuz.
+
+37
+00:29:06,355 --> 00:29:10,355
+Bu genelde mesela p eşittir 1 bölü 2 gibi.
+
+38
+00:29:10,355 --> 00:29:13,355
+Yani
+
+39
+00:29:16,980 --> 00:29:34,059
+Buradaki nodelerin yarısını olasılıksal olarak, yani hep aynı değil, rastgele yarısını görmezden geliyorsunuz her bir eğitim aşamasında.
+
+40
+00:29:40,051 --> 00:29:47,051
+ve daha başarılı sonuçlar verebiliyor.
+
+41
+00:29:49,271 --> 00:29:55,051
+Burada tabi nasıl oluyor da bu çalışıyor olabilir gibi bir soru sormuş.
+
+42
+00:29:58,516 --> 00:30:12,196
+Aslında bir nevi buna şöyle bakılabilir. Ensemble modeller var. Yani
+
+43
+00:30:19,347 --> 00:30:26,347
+Birçok zayıf sınıflayıcıyı eğitim veriyorsunuz.
+
+44
+00:30:26,347 --> 00:30:40,347
+Veri üzerinde. Sonra bu sınıflayıcıların yardımı ile karar veriyorsunuz. Onların ortalaması gibi.
+
+45
+00:30:46,548 --> 00:30:54,867
+Beraber, onların yardımıyla hepsini kullanarak bir sonuca varıyorsunuz. Bu Ensemble modeller diye geçiyor.
+
+46
+00:31:03,316 --> 00:31:14,916
+Dropout da esasen bir ensemble model gibi görülebilir. Yani her attığınızda geriye kalanlar yeni bir küçük model olmuş oluyor. Bütün bu modelleri...
+
+47
+00:31:18,451 --> 00:31:19,991
+Ne yapıyorsunuz?
+
+48
+00:31:23,508 --> 00:31:28,508
+İyi. Kullanmış oluyorsunuz.
+
+49
+00:31:35,251 --> 00:31:35,947
+Öğ...
+
+50
+00:31:39,380 --> 00:31:45,060
+Test zamanında ama şey yapmak gerekiyor. Diyelim ki bir bölü...
+
+51
+00:31:50,579 --> 00:31:55,019
+Eğittiniz bu şekilde Dropout'lu. Şimdi test yaparken
+
+52
+00:32:01,460 --> 00:32:04,019
+Testte Dropout yapmıyorsunuz.
+
+53
+00:32:06,579 --> 00:32:10,940
+Testte Network'ün tüm nodlarını kullanıyorsunuz.
+
+54
+00:32:11,960 --> 00:32:13,240
+Öyle olunca
+
+55
+00:32:19,476 --> 00:32:32,036
+Aslında direk kullanırsanız eğitim, eğitimdeki network ile testdeki network'ünüz aynı network olmuyor.
+
+56
+00:32:32,836 --> 00:32:42,356
+Farklı network ile test etmeye çalışıyorsunuz. Doğal olarak sonuç aynısı olmayacaktır. Çıktılar aynı çıktılar olmayacaktır.
+
+57
+00:32:43,516 --> 00:32:44,476
+Ne yapılıyor?
+
+58
+00:32:46,740 --> 00:32:47,940
+Öğ...
+
+59
+00:32:54,324 --> 00:33:08,824
+Diyelim ki Dropout'ta her iterasyonda nodeların yarısını attınız. Bu ne demek? Network'ün çıktısını aslında yarıya düşürdünüz.
+
+60
+00:33:08,824 --> 00:33:19,824
+Yani test sırasında nodeları atmadığınız için çıktıyı yarıya bölmeniz gerekiyor.
+
+61
+00:33:22,867 --> 00:33:25,307
+Şuralarda P çarpımı var.
+
+62
+00:33:32,115 --> 00:33:41,415
+Dolayısıyla test sırasında çıktığı ona göre ayarlamanız gerekiyor.
+
+63
+00:33:41,415 --> 00:33:44,316
+P 1 bölü 5 diyelim ki.
+
+64
+00:33:45,336 --> 00:33:47,155
+1 bölü 2 diyelim ki.
+
+65
+00:33:50,836 --> 00:34:10,456
+Dolayısıyla ne oluyor? O olasılıkla tekrar çarparak çıktığı ayarlamanız gerekiyor. Her bir katmanda yapmış bunu. Çünkü her bir katmanda şey var. Dropout kullanmış diyelim ki.
+
+66
+00:34:21,108 --> 00:34:46,208
+Burada daha ayrıntılı olarak da vermiş. Training Time'da şeylerin yarısını atmak oldukça kolay aslında. Ne yapıyorsunuz? Rastgele bir matriks oluşturuyorsunuz. U1 matriksi numpy ile.
+
+67
+00:34:48,947 --> 00:35:11,327
+Sonra, 0-1 arasında bu değerler. Bu değerlerin, diyelim ki 1 bölü 2 olasılığınız. 1 bölü 2'den küçük olanları 1 olarak kalıyor. 1 bölü 2'den büyük olanları 0 olarak kalıyor.
+
+68
+00:35:15,956 --> 00:35:24,655
+Önce normal yapıyorsunuz. Sonra bu Dropout Maskı ile çarpıveriyorsunuz. O zaman rastgele
+
+69
+00:35:26,195 --> 00:35:31,836
+çıktıların yarısını sıfırlamış oluyorsunuz. Sıfırlamak da kullanmamak oluyor.
+
+70
+00:35:38,483 --> 00:36:02,063
+Yani Dropout çok kolay bir şekilde implemente edilebiliyor. Ama test zamanında bunun tam tersini yapmayı da unutmamak lazım. Test zamanında da tekrar P ile çarpmanız gerekiyor.
+
+71
+00:36:06,835 --> 00:36:12,715
+Aktivasyon fonksiyonlarına bakılacak biraz.
+
+72
+00:36:16,715 --> 00:36:28,835
+Şimdi hatırlarsanız aktivasyon fonksiyonlarının amacını non-linear fonksiyonlar gerekiyor bize.
+
+73
+00:36:32,019 --> 00:36:47,019
+Sadece linear fonksiyonlar kullanırsak, sınıflama yüzeyini sadece linear şekilde bölebiliyoruz. Bu da birçok problem için iyi olmuyor.
+
+74
+00:36:49,019 --> 00:36:58,891
+Birçok problem direk linear olarak çözülemiyor. En basit problemler bile, mesela XOR problemi var, o bile çözülmüyor.
+
+75
+00:37:01,780 --> 00:37:05,360
+Yani teorik olarak bu şekilde çözülemeyen problemler var.
+
+76
+00:37:06,780 --> 00:37:11,960
+Dolayısıyla aktivasyon fonksiyonları kullanılıyor.
+
+77
+00:37:11,960 --> 00:37:20,960
+Burada tarihi olarak sigmoid ile başlamış grafı bu.
+
+78
+00:37:21,320 --> 00:37:26,440
+Bu da denklemi.
+
+79
+00:37:27,284 --> 00:37:29,963
+1 bölü 1 artı e üzeri eksi x.
+
+80
+00:37:31,963 --> 00:37:33,784
+x değiştikçe
+
+81
+00:37:33,784 --> 00:37:35,943
+şu şekilde
+
+82
+00:37:42,452 --> 00:37:46,811
+Yani büyük ve çok büyük ve çok küçük değerler için 0 ve 1'e gidiyor.
+
+83
+00:37:49,152 --> 00:37:56,172
+Tam x eşittir 0'da 1 ne oluyor? 1 bölü 2'de oluyor.
+
+84
+00:37:57,912 --> 00:37:59,972
+Çünkü burası 1 oluyor.
+
+85
+00:38:01,892 --> 00:38:04,172
+Ve gördüğünüz gibi...
+
+86
+00:38:06,195 --> 00:38:10,295
+Şu aralıkta böyle neredeyse doğrusal bir büyüme var.
+
+87
+00:38:17,652 --> 00:38:32,012
+Neural Networkler ilk tarihi olarak biyolojiden esinlenerek çıktığı için biraz biyolojideki firing rate'e benziyor. O yüzden bununla başlanılmış.
+
+88
+00:38:36,012 --> 00:38:42,971
+Ama bir kısım problemleri olduğu görülmüş zaman içinde deneye deneye denendikçe.
+
+89
+00:38:46,835 --> 00:38:56,835
+Şimdi sigmoidleri üst üste koyduğunuzda, hatırlarsanız çok derin katma, çok derin networkler oluşturuyoruz. Çok layer'lı.
+
+90
+00:38:59,215 --> 00:39:03,215
+Gradyanların gittikçe küçüldüğü ve yok olduğu görülmüş.
+
+91
+00:39:07,036 --> 00:39:12,715
+Burada mesela soruyor, hangi bölgelerde gradyan küçüktür demiş.
+
+92
+00:39:13,876 --> 00:39:25,376
+Mesela şurada gradiyan sıfır gibi bir şey değil mi? Şurada da gradiyan sıfır gibi bir şey. Sadece şurada bir gradiyan var yani.
+
+93
+00:39:45,235 --> 00:39:57,055
+Zaman içinde birçok farklı şey denenmiş. Şu sıralar. Relu'nun çok başarılı olduğu görülüyor.
+
+94
+00:40:02,235 --> 00:40:05,175
+İsmi Relu, grafiği bu şekilde.
+
+95
+00:40:06,775 --> 00:40:09,715
+Sıfıra kadar sıfır.
+
+96
+00:40:10,835 --> 00:40:13,475
+x eşittir 0'a kadar 0 olarak geliyor.
+
+97
+00:40:15,076 --> 00:40:20,055
+x eşittir 0'dan itibaren linear bir şey. Çok basit aslında.
+
+98
+00:40:21,635 --> 00:40:25,036
+Hesaplaması da max fonksiyonu ile oluyor matematiksel olarak.
+
+99
+00:40:26,755 --> 00:40:27,576
+Max 0.
+
+100
+00:40:29,915 --> 00:40:34,576
+Yani değer 0'dan büyükse o değeri veriyorsunuz.
+
+101
+00:40:34,576 --> 00:40:37,576
+Değer 0'dan küçükse 0 atıyorsunuz.
+
+102
+00:40:39,699 --> 00:40:42,319
+Matematiksel olarak böyle ifade edilebiliyor.
+
+103
+00:40:47,699 --> 00:40:51,340
+Güzel özellikleri var. Saturate olmaz diyor.
+
+104
+00:40:53,779 --> 00:41:00,239
+Sanırım işte o gradyanların sıfıra gitme sorunu yok yani.
+
+105
+00:41:01,639 --> 00:41:02,380
+Çok hızlı.
+
+106
+00:41:03,572 --> 00:41:12,192
+Öbüründe eksponansiyeller var, bölmeler var hatırlarsanız. Burada sadece bir sıfırdan büyük mü, küçük mü ona bakılıyor.
+
+107
+00:41:15,192 --> 00:41:25,192
+Ve pratikte de sigmoitten çok daha, 6 kat daha hızlı konverj ettiği görülmüş.
+
+108
+00:41:33,780 --> 00:41:44,100
+Tabii bir kısım sıkıntıları var. Mesela, çıktığı gördüğünüz gibi sıfır merkezli değil.
+
+109
+00:41:48,371 --> 00:42:09,891
+Ve x sıfırdan küçük olduğunda, şuralarda, burası gördüğünüz gibi, gradiyan sıfır burada. Değerler de sıfır. Yani x'ler de sıfır, gradiyan da sıfır.
+
+110
+00:42:18,643 --> 00:42:32,183
+Buradaki nodlar, buradaki sinir hücreleri hiçbir katkıda bulunmuyor. Bir nevi ölü. Eğitime katkıda bulunmuyor yani.
+
+111
+00:42:35,731 --> 00:42:36,748
+Ö
+
+112
+00:42:41,619 --> 00:42:48,139
+İşte Relu'nun çeşitli şeyleri geliştirilmiş zaman içinde. Böyle başarılı olunca.
+
+113
+00:42:51,719 --> 00:42:56,859
+Mesela GELU geliştirilmiş.
+
+114
+00:43:00,539 --> 00:43:02,699
+Grafiği bu yeşildeki gibi.
+
+115
+00:43:04,599 --> 00:43:08,819
+Relu'da şöyle bir sıkıntı da var. Şurada discontinuity var.
+
+116
+00:43:09,396 --> 00:43:15,376
+Yani sıfırdan önce, tam sıfır noktasında türevi yok.
+
+117
+00:43:16,276 --> 00:43:16,816
+Relu'nun.
+
+118
+00:43:18,816 --> 00:43:21,976
+Bunun sıfır noktasında türevi var.
+
+119
+00:43:22,076 --> 00:43:26,176
+Gördüğünüz gibi böyle bir süreksizlik yok.
+
+120
+00:43:28,695 --> 00:43:30,936
+Burada güzel bir şekli var.
+
+121
+00:43:37,139 --> 00:43:38,840
+Burada fi x ne acaba?
+
+122
+00:43:41,840 --> 00:43:45,460
+x çarpı fi x olarak hesap ediliyor diyor.
+
+123
+00:43:52,244 --> 00:43:58,704
+Ve buradaki smoothness pratikte iyi bir şey eğitimde diyor.
+
+124
+00:44:08,500 --> 00:44:13,039
+Ve yine bunun hesaplaması da Ralu'ya göre daha pahalı.
+
+125
+00:44:15,880 --> 00:44:27,420
+Negatif gradyanlar da yine hala burada ölü hücreler olabiliyor. Ölü hücrelere neden olabiliyor.
+
+126
+00:44:30,139 --> 00:44:35,880
+Bu fi nedir emin değilim. Yani bilmiyorum. Buraya da yazmamış. Bakarsınız siz.
+
+127
+00:44:44,244 --> 00:44:54,484
+Bununla ilgili birçok farklı şey var. Çıkmış insanlar çalışıyorlar ama Relu tabanlı şeyler var işte.
+
+128
+00:44:56,284 --> 00:44:58,324
+Likureli'yi görüyoruz.
+
+129
+00:45:03,184 --> 00:45:08,043
+Max 0.1xx diyor. Yani direk sıfır atmıyor da buraya.
+
+130
+00:45:11,956 --> 00:45:13,556
+Negatif değerler için
+
+131
+00:45:21,139 --> 00:45:26,039
+Dolayısıyla bu hücrelerin ölümüyle ilgili sanırım burada bir şey yapmaya çalışıyorlar.
+
+132
+00:45:27,220 --> 00:45:30,059
+Sıfır değil de negatif de olsa. Oradan bilgi gelecek.
+
+133
+00:45:32,460 --> 00:45:37,940
+Elu, şuradaki Discontinuity'yi çözmeye çalışmış.
+
+134
+00:45:40,279 --> 00:45:42,300
+Gelu'dan bahsetmiştik.
+
+135
+00:45:42,960 --> 00:45:46,220
+Silu, yine Gelu'ya benzeyen bir şey gibi gözüküyor.
+
+136
+00:45:48,148 --> 00:46:03,708
+Sigma X demiş. X çarpı Sigma X. Sigma, Sigmaid fonksiyonu. Dolayısıyla X ile Sigmaid'in çarpımı demiş. Bu da böyle bir şey vermiş.
+
+137
+00:46:27,635 --> 00:46:29,435
+Şimdi.
+
+138
+00:46:34,036 --> 00:46:35,315
+2000'li
+
+139
+00:46:44,820 --> 00:46:46,820
+Derin öğrenme patlamadan önce...
+
+140
+00:46:52,596 --> 00:47:12,015
+Layer sayılarına shallow diyoruz. Yani sığ networkler. Bunların oldukça başarısız olduğu görülüyordu. Yani burada mesela ImageNet denilen bir veri seti var. Oldukça büyük bir veri seti.
+
+141
+00:47:14,015 --> 00:47:19,635
+Bu konferansta bunun yarışması yapılıyordu yıl yıl.
+
+142
+00:47:21,300 --> 00:47:44,360
+Ve 2010'larda hata %28'lerdeydi. Yani %30 hata, %70 başarı yaklaşık. O zamanlar hatta nörel networklerle dalga geçilmeye falan başlamıştı. Yani insanlar nörel networkleri çok kullanmamaya başlamışlardı.
+
+143
+00:47:57,652 --> 00:48:13,152
+Sonra, 2012'de ilk derin ağa geliyor. AlexNet. Birden başarıyı %16'ya düşürüyor.
+
+144
+00:48:13,152 --> 00:48:19,751
+Tabii ondan sonra herkes, vav bir dakika ya ne oluyor diyor. Herkes derin öğrenme çalışmaya başlıyor.
+
+145
+00:48:26,003 --> 00:48:47,943
+Düşünüyor. Yine 8 Layer. 8 Katman. 2014'te 19 Katman. Başarı 7'ye iniyor. 2014'te yine bu VGG. Çok bilinen bir şey. 2014'te yine Google Net.
+
+146
+00:48:51,731 --> 00:48:56,851
+Google'ın çıkarttığı bir şey. O da 22 Layer. Biraz daha düşürüyor, başarıyor.
+
+147
+00:48:57,612 --> 00:49:01,851
+2015'te ResNet çıkıyor. Bu
+
+148
+00:49:03,131 --> 00:49:08,971
+22 Layer'dan 152 Layer'a çıkarıyor. Müthiş bir şey.
+
+149
+00:49:10,492 --> 00:49:12,427
+Yani Layer'ları...
+
+150
+00:49:14,963 --> 00:49:19,963
+150 olmuş ne oldu? Ben de 500 layer yapacağım diyemiyorsunuz.
+
+151
+00:49:20,644 --> 00:49:25,344
+Yani layer'ları artırabilmek için çözmeniz gereken problemler var.
+
+152
+00:49:25,503 --> 00:49:34,423
+Layer ekledikçe eğitim zorlaşıyor. Gradiyan akışı zorlaşıyor.
+
+153
+00:49:36,203 --> 00:49:40,423
+Dolayısıyla bu ResNet devrim niteliğinde baya büyük bir başarı.
+
+154
+00:49:42,963 --> 00:50:06,123
+22 katmandan 150 katmana çıkartması. Başarı da %3'lere iniyor. Ondan sonra işte Snet ile %2'ye kadar iniyor. Bu sırada insan başarısının da o veri setinde %5'lerde olduğu görülmüş.
+
+155
+00:50:12,371 --> 00:50:17,891
+İnsan başarısını yeniyor. ImageNet üzerinde.
+
+156
+00:50:21,556 --> 00:50:43,336
+CNN'ler ve derin öğrenme, derin networkler. ImageNet artık küçük kaldı. Cagle'a kaldırmışlar onu. Cagle'da bulabilirsiniz. Yarışması artık yapılmıyor. Bugünün networkleri, veri setleri çok büyük.
+
+157
+00:50:48,019 --> 00:51:02,779
+Önemli devrim niteliğindeki networklere bir bakalım. Bunlardan bir tanesi VGG. 2014'te çıkıyor dediğimiz gibi.
+
+158
+00:51:09,779 --> 00:51:12,859
+VGG'den önce AlexNet var.
+
+159
+00:51:13,619 --> 00:51:16,619
+İlk böyle dediğim gibi...
+
+160
+00:51:23,315 --> 00:51:25,455
+Şunu bir büyüteyim ben de tam görmüyorum.
+
+161
+00:51:51,572 --> 00:52:01,952
+Şimdi AlexNet inputu alıyorsunuz. 11'e 11'lik konvolüsyon kernelinden geçiriyorsunuz. 96 tane.
+
+162
+00:52:04,132 --> 00:52:15,292
+5'e 5'lik yine konvolüsyon kernellerinden geçiriyorsunuz. 256 tane. Yani bu çıktıları buna veriyorsunuz. Burada katman katman gidiyor.
+
+163
+00:52:15,292 --> 00:52:17,752
+Bir pooling layer var.
+
+164
+00:52:19,059 --> 00:52:36,819
+Boyutu yarıya düşmüş oluyor. Sonra 3'e 3'lük bir konvolüsyon filtreleri var. 384 filtre. Yine pooling yapıyorsunuz. 3'e 3'lük konvolüsyonlar. 384'lük sonra 256'lık pooling yapıyorsunuz.
+
+165
+00:52:37,359 --> 00:52:46,019
+Fully connected katmanlar var. Yani CNN gibi değil de Neural Network gibi, MLP gibi.
+
+166
+00:52:46,516 --> 00:53:10,516
+Tüm katmanlar tüm katmanlara bağlı. Yine bir F fully connected daha var. Bir fully connected daha var. Bunlar 4096'lık. Çıktı 1000 olması gerekiyor. ImageNet'de 1000 tane şey var. 1000 sınıf var. Dolayısıyla son fully connected network çıktı sayısını 1000 yapıyor.
+
+167
+00:53:11,219 --> 00:53:14,819
+Oradan da Softmax'la bunları olasılıklara çeviriyorlar.
+
+168
+00:53:17,479 --> 00:53:19,359
+AlexNet bu esasen.
+
+169
+00:53:21,179 --> 00:53:23,899
+Şimdi buradaki sorunlar ne?
+
+170
+00:53:25,679 --> 00:53:29,199
+Bir, biraz niye böyle yapıldığına dair bir şey yok.
+
+171
+00:53:29,339 --> 00:53:34,019
+Yani burada niye 11'e 11, niye 7'e 7 değil?
+
+172
+00:53:35,500 --> 00:53:36,339
+Niye 5'e 5?
+
+173
+00:53:38,356 --> 00:53:51,736
+Bir mantığı yok. Bir de çıktıdaki şu fulli konnektetler çok büyük şey getiriyor.
+
+174
+00:53:55,635 --> 00:54:03,255
+Bu konuda hesaplama maliyeti getiriyor. Çünkü orada kaç parametre var diye bakarsanız,
+
+175
+00:54:05,675 --> 00:54:09,975
+Fully Connected olduğu için iki katman arasında
+
+176
+00:54:16,820 --> 00:54:19,119
+Çok fazla sayıda ağırlık var.
+
+177
+00:54:19,640 --> 00:54:24,239
+Çok fazla sayıda dolayısıyla parametre var.
+
+178
+00:54:27,060 --> 00:54:32,940
+Bu kadar parametreyi eğitmek tabi ki zaman alıyor.
+
+179
+00:54:34,480 --> 00:54:36,539
+Aynı zamanda hafıza istiyor.
+
+180
+00:54:38,060 --> 00:54:41,400
+Çok fazla işlem var, çok fazla parametre var.
+
+181
+00:54:43,443 --> 00:55:03,083
+VGG net, bunu birazcık çözmeye çalışıyor. VGG'de girişi alıyorsunuz. Ondan sonra konvolüsyonlar hep 3'e 3'lük. Yani bir mantığı var. 3'e 3'lük konvolüsyon da olabilecek en küçük konvolüsyondur.
+
+182
+00:55:09,780 --> 00:55:11,780
+Girdiğinin aynısını verir.
+
+183
+00:55:13,619 --> 00:55:19,860
+Dolayısıyla 3'e 3'lük konvolüsyon kullanabileceğiniz en küçük kernel.
+
+184
+00:55:21,280 --> 00:55:23,860
+Ve hep belirli bir mantığı var.
+
+185
+00:55:24,000 --> 00:55:29,960
+Mesela 64 tanelik, sonra bir 64'lük daha.
+
+186
+00:55:32,724 --> 00:55:46,324
+pooling yapılıyor. Boyut yarıya indiriliyor. Bir sonraki katmada filtre sayıları 64'den 128'e çıkıyor. Buradaki mantık şu. Hacmi sabit tutmaya çalışıyorlar.
+
+187
+00:55:46,324 --> 00:55:57,444
+Yani imge pooling ile imgenin x ve y'deki spatiğer koordinatlarda boyutu yarıya iniyor.
+
+188
+00:55:58,963 --> 00:56:23,384
+Boyutları yarıya iniyor. Bununla bu nedenle kernel sayısını artırınca her bir kernel için bir çıktı oluyor. Kanal sayısı demektir bu. Dolayısıyla kanal sayısını iki katına çıkarıyorlar. Yani hacim sabit kalmış oluyor.
+
+189
+00:56:24,148 --> 00:56:31,748
+Sonra yine pooling, yine konvolisyonlar, konvolisyon sayısı artmış. Bu şekilde gidiyor.
+
+190
+00:56:37,208 --> 00:56:48,688
+Ondan sonra yine 3, hep 3'e 3'lü konvolisyon farklı. 512'lik 3 farklı şey var.
+
+191
+00:56:51,827 --> 00:56:53,108
+Kanal var.
+
+192
+00:56:56,188 --> 00:56:57,467
+3 farklı
+
+193
+00:56:58,228 --> 00:56:59,768
+filtre seti var.
+
+194
+00:57:00,268 --> 00:57:02,587
+Sonra yine pooling. İki tane de bu.
+
+195
+00:57:04,628 --> 00:57:05,908
+Yine pooling.
+
+196
+00:57:06,427 --> 00:57:07,188
+Sonra
+
+197
+00:57:07,448 --> 00:57:08,467
+Burası direkt
+
+198
+00:57:08,728 --> 00:57:10,768
+buradan geliyor gördüğünüz gibi.
+
+199
+00:57:12,307 --> 00:57:14,108
+Burayı değiştirmemişler.
+
+200
+00:57:15,284 --> 00:57:40,284
+Full Connected katmanlar ve Softmax. Bu 16 katman ediyor VGG. Hala insanlar VGG 16'yı kullanabiliyor. Şöyle ki, bu eğitilen VGG gibi modellerin eğitilmiş o...
+
+201
+00:57:40,288 --> 00:57:53,927
+Ağırlıkları çöpe atılmıyor. Yani yayınlanıyor. Arattırabilirsiniz. VGG16 modelinin ağırlıkları şu anda internette vardır. Çünkü bunların eğitilmesi çok zaman alıyor zaten.
+
+202
+00:57:58,452 --> 00:58:22,572
+Şimdilerde, yani o hazır bir modeli, eğitilmiş bir modeli alıp direkt kullanabilirsiniz. Bir de VGG16 şu yapılabiliyor. Mesela şu kadar katmanı alıyorsunuz. Baştan itibaren. Şurayı çöpe atıyorsunuz.
+
+203
+00:58:26,324 --> 00:58:38,484
+Bu size bir özellik çıkarıcı olabiliyor. Bu özellik çıkarıcının üzerine isterseniz başka bir sınıflayıcı, yani bu özellikleri başka sınıflayıcıya verebilirsiniz.
+
+204
+00:58:38,484 --> 00:58:51,604
+Veya transfer yaparak şuraya yeni bir katman ekleyip eğitebilirsiniz gibi. VGG hala bu amaçla kullanılabiliyor.
+
+205
+00:58:54,164 --> 00:58:59,164
+VGG19'un çok büyük bir farkı yok.
+
+206
+00:58:59,164 --> 00:59:00,908
+Yani...
+
+207
+00:59:04,692 --> 00:59:08,532
+Neden daha küçük filtre kullanalım demiş.
+
+208
+00:59:15,452 --> 00:59:17,231
+Ekranı küçükmüştüm.
+
+209
+00:59:40,851 --> 00:59:41,971
+List Hits
+
+210
+01:00:07,284 --> 01:00:25,284
+Neden daha küçük filtreler kullanalım? Çünkü zaten konvolisyon üzerine koydukça Receptive Field büyüyor zaten.
+
+211
+01:00:28,596 --> 01:00:44,135
+Dolayısıyla filtreleri büyük almanın bir gereği yok. En küçük filtreyi kullanıp daha çok Layer kullanalım. Layer kullandıkça istenilen Receptive Size ulaşacak.
+
+212
+01:00:50,132 --> 01:01:15,572
+Daha derin olması neden daha çok isteniyor? Yani daha derin niye daha çok başarı veriyor? Çünkü her katmanda ne yapıyoruz? Yeni bir non-linearite ekliyoruz. Dolayısıyla daha derin katmanlar daha çok non-linearite. Dolayısıyla daha kompleks problemler çözülebiliyor.
+
+213
+01:01:17,427 --> 01:01:42,607
+Ayrıca parametre sayısı da azalıyor. Çünkü mesela 7x7 olduğu zaman filtre yapmanız gereken işlem sayısı 3x3 kullanıp aynı fil sayısı o şekilde elde ederseniz ondan daha fazla.
+
+214
+01:01:51,251 --> 01:01:57,251
+Dolayısıyla derinlik, derinliğin o ResNet'ten itibaren
+
+215
+01:02:03,315 --> 01:02:06,135
+Derinlik olayı geliyor ve çok başarılı oluyor yani.
+
+216
+01:02:11,443 --> 01:02:20,564
+Yeni katman demek, yeni non-linearite demek. Non-linearite de daha kompleks problemleri çözebiliyorsun demek.
+
+217
+01:02:28,052 --> 01:02:53,351
+Şimdi, ResNet'e biraz bakalım. Nasıl olmuş da böyle 150'ye çıkabilmişler. Ondan önce 20-19-20 civarıydı katman sayısı. Normalde ResNet'te özel bir şeyler yapacaklar. Onu yapmazlarsa, şunu görmüşler.
+
+218
+01:02:55,327 --> 01:02:57,327
+Ne görmüşlerdi?
+
+219
+01:03:08,596 --> 01:03:10,895
+Belirli bir noktadan sonra
+
+220
+01:03:16,211 --> 01:03:26,032
+Başarının çok da düşmediğini görmüşlerdi sanırım. Burayı tam hatırlamıyorum. Şu grafiklerin tam anlamını hatırlayamadım. Siz bir bakarsınız.
+
+221
+01:03:42,643 --> 01:03:55,403
+Şunu görüyorlar, yani 20 layer'dan sonra başarının düştüğünü görüyorlar. Zaten o zamana kadar maksimum layer sayısının 20 olmasının sebebi de odur muhtemelen.
+
+222
+01:03:56,844 --> 01:04:04,844
+20 layer'dan sonra Google nette, VGG'de falan bakıyorlar, başarı düşüyor. 20 layer'da bırakıyorlar.
+
+223
+01:04:10,547 --> 01:04:13,367
+Daha başarılı değil, daha kötü.
+
+224
+01:04:16,688 --> 01:04:21,047
+Ama bu bir overfitting nedeniyle olmadığını fark ediyorlar.
+
+225
+01:04:21,047 --> 01:04:25,147
+Overfitting nedeniyle olmadığını nasıl fark ediyorlar emin değilim.
+
+226
+01:04:33,619 --> 01:04:45,939
+Normalde overfitting ona bakmak lazım. Yani overfitting nedeniyle olmadığını nasıl fark ediyorlar onu bilmiyorum. Geçeceğim.
+
+227
+01:04:55,188 --> 01:05:08,347
+Burada şöyle bir şey düşünüyorlar. Diyorlar ki, bu bir optimizasyon problemi. Yani biz optimizasyonu beceremiyoruz, başaramıyoruz burada.
+
+228
+01:05:11,407 --> 01:05:16,548
+Daha derin modellerin muhtemelen optimizasyonla ilgili bir sorunu var.
+
+229
+01:05:19,548 --> 01:05:20,507
+Dolayısıyla,
+
+230
+01:05:22,099 --> 01:05:23,900
+Bir şey yapılması lazım.
+
+231
+01:05:32,083 --> 01:05:46,784
+Ve şu soru var, diyor ki, daha derin modelin en azından sığ model kadar başarılı olmasını, yani başarının düşmemesini nasıl garanti edebiliriz?
+
+232
+01:05:46,784 --> 01:05:52,824
+Yani sen layer ekledikçe başarı düşmeyecek.
+
+233
+01:05:59,891 --> 01:06:12,511
+Burada şöyle bir şey yapıyorlar. Daha sığ modelden öğrenilen layer'ları olduğu gibi kopyalıyorlar.
+
+234
+01:06:23,668 --> 01:06:29,308
+Ek layerları Identity Mapping
+
+235
+01:06:30,068 --> 01:06:38,268
+olarak yani giriş ve çıkış aynı şey. Böyle de layer'lar ekliyorlar.
+
+236
+01:07:18,804 --> 01:07:26,544
+Burada Residual Block denilen bir block tipi geliştirmiş oluyorlar. Yani isim olarak o veriliyor.
+
+237
+01:07:29,064 --> 01:07:34,864
+Şimdi giriş X bir konvolüsyondan geçirdiniz.
+
+238
+01:07:38,164 --> 01:07:43,463
+Non-Linearity'den geçirdiniz. Bir konvolüsyon daha yaptınız.
+
+239
+01:07:46,612 --> 01:08:02,612
+Bir sonraki relü'den önce şöyle bir şey yapıyorlar. X'i getirip buraya olduğu gibi topluyorlar. Yani şu çıktı ya. X'i direkt ekliyorlar.
+
+240
+01:08:08,788 --> 01:08:13,788
+Sonra onun üzerinden tekrar bir non-linearity den geçiriyorlar.
+
+241
+01:09:01,524 --> 01:09:22,644
+Dolayısıyla Network neyi öğreniyor? Direkt H2'si öğrenmektense, yani şunu direkt öğrenmektense, bu ikisinin farkını bulmayı öğrenmiş oluyor.
+
+242
+01:10:05,971 --> 01:10:11,851
+ResNet blokları, ResNet blokları deniliyor.
+
+243
+01:10:16,471 --> 01:10:19,031
+Bu şekilde staklanarak
+
+244
+01:10:21,331 --> 01:10:24,412
+ResNet mimarisi elde edilmiş.
+
+245
+01:10:33,876 --> 01:10:34,716
+Giriş.
+
+246
+01:10:36,916 --> 01:10:41,656
+Sonra bir 7x7 konvolisyon var.
+
+247
+01:10:43,656 --> 01:10:45,195
+Bir pooling var.
+
+248
+01:10:48,016 --> 01:10:52,216
+Ondan sonrası standart resnet blokları.
+
+249
+01:10:54,115 --> 01:10:57,456
+Yine 3x3'lü konvolisyonlar. 64 tane.
+
+250
+01:11:02,260 --> 01:11:22,220
+Arada, işte bu iki şey bir ResNet bloğu olmuş oluyor. ResNet bloklarını üst üste koyarak gidiyor. Üç ResNet bloğundan sonra ne yaptı?
+
+251
+01:11:29,043 --> 01:11:32,623
+Şu ne demek? Bir ikiye bölme var ama tam emin değilim oradan.
+
+252
+01:11:35,503 --> 01:11:40,183
+Bu şekilde ama 150'ye kadar gidebilmişler. Yani bu ResNet blokları
+
+253
+01:11:40,183 --> 01:11:45,163
+bir önceki katmanın çıktısını olduğu gibi
+
+254
+01:11:45,163 --> 01:11:48,904
+bir sonraki katmana ekliyor.
+
+255
+01:11:49,763 --> 01:11:50,543
+Toplama yapıyor.
+
+256
+01:12:03,220 --> 01:12:06,860
+Bölü 2 sanırım pooling yapıyor. Yani küçültüyor.
+
+257
+01:12:11,180 --> 01:12:14,579
+X ve Y de küçültüyor. Pooling yapıyordur o.
+
+258
+01:12:15,659 --> 01:12:18,960
+Dolayısıyla pooling yaptıktan sonra yine aynı hikaye.
+
+259
+01:12:18,960 --> 01:12:27,139
+Volümü, hacmi sabit tutmak için 64, 128 kanal sayısı artırılıyor.
+
+260
+01:12:28,851 --> 01:12:46,851
+En son yine bir pooling yapılıyor. 1000 sınıf istediğimiz için bir FC1000 ile sınıf sayısı ayarlanmış oluyor. Softmax ile olasılıklara çevriliyor.
+
+261
+01:12:46,851 --> 01:12:56,427
+Buradaki ResNet de aynı VGG gibi bu şekilde kullanılıyor hala.
+
+262
+01:12:58,739 --> 01:13:03,179
+İnsanlar işte ResNet'in...
+
+263
+01:13:06,547 --> 01:13:13,268
+Kayıtlı ağırlıklarını alıyorlar. Şurayı çöpe atıyorlar. Kendi problemleri için.
+
+264
+01:13:14,227 --> 01:13:23,827
+Fully Connected yeni bir artık kaç tane sınıfa ihtiyaçları varsa onu ekliyorlar. Biraz eğitiyorlar. Kullanabiliyorlar.
+
+265
+01:13:40,404 --> 01:13:44,504
+Evet, açıklamada yapmış. Ne diyor?
+
+266
+01:13:48,979 --> 01:14:01,299
+Her rezidüel blok 3'e 3'lük konvolüsyonlara sahip demiştik. Belirli periyotlarla yani 3 rezidüelde bir.
+
+267
+01:14:06,979 --> 01:14:11,159
+Pooling değil de Down Sampling yapılıyor. Yani Pooling'e benzer.
+
+268
+01:14:14,159 --> 01:14:16,279
+Down Sampling ne demek? Yani
+
+269
+01:14:17,076 --> 01:14:32,115
+Elinizdeki satırların yarısını atıyorsunuz. Bir tanesini bırakıyorsunuz, bir tanesini atıyorsunuz, bir tanesini bırakıyorsunuz, bir tanesini atıyorsunuz. Benzer şekilde kolonlarda da aynısını yapıyorsunuz.
+
+270
+01:14:34,235 --> 01:14:40,335
+Hacmi korumak için ama filtre sayısını ikiye çıkarıyorsunuz.
+
+271
+01:14:44,275 --> 01:14:45,635
+Ö...
+
+272
+01:14:49,524 --> 01:14:57,064
+En başta buraya kök, sistem diyor. Kök değil de gövde kısmını diyeceğiz.
+
+273
+01:14:57,863 --> 01:15:05,384
+Sistemde bir konvolüsyon lehiri var. 7'ye 7'lik. Neden onu öyle yapmışlar bilmiyoruz.
+
+274
+01:15:09,427 --> 01:15:18,448
+18, 34, 50, 101, 152 katmanlık imiznetleri paperda sanırım göstermişler.
+
+275
+01:15:25,427 --> 01:15:46,807
+O yıl her şeyi alıp götürüyor. Yani ne kadar sınıflama yarışmasına girdiyse, ne kadar işte detection varsa, COCO 15 ve şu iki farklı konferansta hep birinci oluyor.
+
+276
+01:15:52,595 --> 01:15:56,435
+Bir ara verelim.
+
+277
+01:16:02,644 --> 01:16:18,963
+Şimdi biraz daha neural networklerin eğitilmesiyle ilgili biraz ayrıntıya girilecek. Ona bakacağız. Şu anda saat 10'u 10 geçiyor gibi gözüküyor.
+
+278
+01:16:23,844 --> 01:16:29,404
+10.25'e kadar ara verelim.
+
+279
+01:33:06,036 --> 01:33:07,675
+Arkadaşlar, merhabalar tekrar.
+
+280
+01:33:12,756 --> 01:33:13,775
+Şimdi
+
+281
+01:33:20,435 --> 01:33:30,895
+Nörel Networklerin, Deep Networklerin eğitilmesi için dikkat edilmesi gereken bir kısım ayrıntılara bakacağız.
+
+282
+01:33:47,060 --> 01:33:49,060
+Şimdi,
+
+283
+01:33:51,860 --> 01:33:55,460
+Optimizasyonda bu weightleri
+
+284
+01:33:56,260 --> 01:33:57,860
+optimize ederken,
+
+285
+01:33:58,760 --> 01:34:03,860
+iteratif bir optimizasyon kullanıyoruz. Belirli bir noktadan başlatıyoruz.
+
+286
+01:34:05,159 --> 01:34:07,760
+Sonra yavaş yavaş değiştiriyoruz.
+
+287
+01:34:08,860 --> 01:34:10,860
+Bu başlatma şeklinin
+
+288
+01:34:11,155 --> 01:34:16,155
+Nasıl olması gerektiği ile ilgili düşünmüşler, araştırma yapmışlar.
+
+289
+01:34:18,155 --> 01:34:27,796
+Şunu görmüşler, çok düşük veyitlerle, çok küçük değerlerle başlatırsanız, mesela burada ne yapıyor?
+
+290
+01:34:29,995 --> 01:34:37,796
+0 ile 0-1 arasındaki değerlerle başlatıyor. Değil mi? Şurası 0 ile 1 arasındaki değerleri döndürüyor.
+
+291
+01:34:42,739 --> 01:34:44,959
+0 ile 0 1 arasına çekmiş.
+
+292
+01:34:45,819 --> 01:34:56,559
+Şimdi, 6 katmanlı bir networkte zaman içinde neyi çiziyorlar?
+
+293
+01:35:09,844 --> 01:35:12,084
+Sanırım aktivasyonları çiziyorlar.
+
+294
+01:35:20,275 --> 01:35:30,076
+Ve zaman içinde aktivasyonların gittikçe küçüldüğünü, yani yok olduğunu görüyorlar.
+
+295
+01:35:37,524 --> 01:35:49,824
+Dolayısıyla aktivasyonların yok olması ne demek? Network artık yavaş yavaş öğrenmeyi bırakıyor. Yani öğrenmiyor.
+
+296
+01:36:01,844 --> 01:36:10,844
+0.01 yerine 0.05 ile çarpıp, değerleri 0.05 maksimum minimum 0 olacak şekilde yaptıklarında bu sefer...
+
+297
+01:36:14,100 --> 01:36:28,659
+İstediğinde, gitgide aktivasyonların büyüdüğünü ve standart sapmalarının ve ortalamalarının gitgide büyüdüğünü görüyorlar.
+
+298
+01:36:33,652 --> 01:36:40,652
+Bu da yine istenen bir şey değil. Aktivasyonların düzgün bir aralıkta olmasını istiyorlar.
+
+299
+01:36:42,652 --> 01:36:44,587
+Sonra bunun...
+
+300
+01:36:48,115 --> 01:37:01,115
+O layer'ın size ile ilişkilendirilerek düzeltilebileceğini buluyorlar. Nasıl bir ilişkilendirme?
+
+301
+01:37:09,235 --> 01:37:33,576
+İki bölü D'in, D'nin karesiyle çarpıyorlar. Yani D'in, D'out, input boyutları, input ve output boyutları, input boyutlarının karesiyle bölerek bir şey buluyorlar.
+
+302
+01:37:34,771 --> 01:37:43,112
+Başlatmayı tavsiye ediyorlar ve 6 Layer'da aktivasyonların...
+
+303
+01:37:47,283 --> 01:37:57,763
+Ortalamasının 0.57, 0.50 civarı kaldığı ve standart sakmanın da yine 0.8 civarı kaldığını görüyorlar. 6 layer için.
+
+304
+01:38:07,220 --> 01:38:09,220
+Dolayısıyla bunu yapmak mantıklı.
+
+305
+01:38:12,420 --> 01:38:14,860
+Başka çözümler de vardır belki.
+
+306
+01:38:20,115 --> 01:38:38,595
+Şöyle bir özet vermiş. Her bir kanal için Center ve Scale diyor. Yani Center dediği ortalamayı çıkart. Sonra da Standart yapmayla Scale et.
+
+307
+01:38:42,452 --> 01:38:56,391
+Tüm modern modeller bunu yapıyor diyor. Her kanalın ortalamasını çıkart. Kanal başına ortalama ve standart satma kullan.
+
+308
+01:39:05,203 --> 01:39:07,203
+Veri seti için önceden
+
+309
+01:39:07,203 --> 01:39:09,463
+standart ve
+
+310
+01:39:09,463 --> 01:39:13,644
+ortalamayı hesap etmeniz gerekiyor.
+
+311
+01:39:24,500 --> 01:39:30,559
+Şimdi birkaç farklı regularization görmüş olduk.
+
+312
+01:39:32,840 --> 01:39:39,799
+Orijinalde regularization terimleri direkt loss fonksiyonuna ekleniyordu.
+
+313
+01:39:41,859 --> 01:39:47,840
+L1 regularization, L2 regularization gibi, L1 regularization, L2 regularization gibi.
+
+314
+01:39:49,747 --> 01:39:55,347
+Sonra Dropout'la sayılıyor.
+
+315
+01:40:04,884 --> 01:40:20,963
+Yani veyitleri eğitim haricinde bir yöntemle veya bir şekilde veyitleri bir yöne doğru kaydırıyorsanız buna regularization diyebilirsiniz.
+
+316
+01:40:24,532 --> 01:40:36,231
+Standart sapmasını daha az olacak şekilde böyle yayıyorsanız, daha küçük değerler elde etmeye çalışıyorsanız bir şekilde bu regularization sayılabiliyor.
+
+317
+01:40:45,332 --> 01:41:08,672
+Genel olarak Normalization'da bir regularization sayılıyor. Genel olarak şunu yapıyoruz. Bir şekilde Training'de Normalization sayılmıyor. Sayılmasın. Bir rastgelelik katıyorsunuz genel olarak.
+
+318
+01:41:13,779 --> 01:41:26,779
+Eğitim sırasında, test sırasında da bu rastgeleliği ne yapıyorsunuz? Ortalamasını alarak yok ediyorsunuz.
+
+319
+01:41:26,779 --> 01:41:33,819
+Bunun bir örneği işte Dropout'ta gördük.
+
+320
+01:41:39,155 --> 01:41:56,855
+Atılıyordu, belirli olasılıkla. Test sırasında da bu rastgelelik iki aynı olasılıkla çarpılarak bir nevi yok ediliyordu.
+
+321
+01:42:18,260 --> 01:42:22,100
+Bir başka Regularization'da Data Augmentation.
+
+322
+01:42:27,636 --> 01:42:49,076
+Ne yapıyorsunuz? Veriyi çoğaltıyorsunuz. Veriyi birazcık değiştiriyorsunuz rastgelelikle. Örneğin burada bir kedi imgesi var. Veri setine bunun bir transform edilmiş halini de koyuyorsunuz.
+
+323
+01:42:50,931 --> 01:43:07,332
+Ne oldu? Veri setinize çoğaltmış oluyorsunuz. Bir de veri setinde bu kedinin farklı versiyonları olduğu için model bunu da öğreniyor, bunu da öğreniyor.
+
+324
+01:43:12,756 --> 01:43:31,796
+Bu şekilde daha robust bir hale geliyor. Genel olarak böyle bir şey var. Eğitim sırasında gürültü eklerseniz, model o gürültüyle baş etmeyi öğreniyor.
+
+325
+01:43:41,652 --> 01:44:06,332
+Burada yatayda bir flip yapmış. Başka şekilde de veri çoğaltması yapılabilir. Biraz hayal gücünüze kalmış. Burada mesela rastgele bölümlerini alma ve rastgele scale etme.
+
+326
+01:44:07,699 --> 01:44:18,099
+Bunları işte her bir parçasını bir resimmiş gibi. Yani kedinin belirli parçalarını bu şekilde tek resimmiş gibi olma, eğitime koyma.
+
+327
+01:44:28,724 --> 01:44:30,923
+ResNet mesela böyle bir şey yapmış.
+
+328
+01:44:49,619 --> 01:44:56,739
+Test zamanında ama buna karşılık bir şey yapmanız gerekiyor genel olarak. Onu unutmamanız gerekiyor.
+
+329
+01:44:58,020 --> 01:45:00,059
+Mesela ne yapmışlar?
+
+330
+01:45:02,180 --> 01:45:03,340
+Resnet'te.
+
+331
+01:45:07,988 --> 01:45:12,427
+256-408 arasında rastgele bir L seçin diyor.
+
+332
+01:45:16,819 --> 01:45:28,319
+Eğitim imgesini Resize ediyorsunuz. Yani yeniden boyutlandırıyorsunuz. Küçük tarafı L olacak şekilde.
+
+333
+01:45:31,667 --> 01:45:43,268
+Sonra da oradan 224'lük rastgele bir patch alan seçiyorsunuz.
+
+334
+01:45:45,268 --> 01:45:55,667
+Bir yama seçiyorsunuz. Test zamanında bunları evric etmeniz lazım.
+
+335
+01:45:57,667 --> 01:45:59,595
+Nasıl bir şey yapmışlar?
+
+336
+01:46:01,555 --> 01:46:06,675
+Test imgesini 5 boyutta Scale ediyorlar.
+
+337
+01:46:12,148 --> 01:46:16,148
+5 farklı boyuta scale ediyorlar. Her boyut için
+
+338
+01:46:17,148 --> 01:46:18,648
+10 tane
+
+339
+01:46:21,939 --> 01:46:25,939
+224'e 224'lük crop alıyorlar.
+
+340
+01:46:29,171 --> 01:46:36,451
+Dört köşe, merkez ve flipler diyor. İşte ters çevirmeler.
+
+341
+01:46:40,212 --> 01:46:43,792
+Sonra bunları, bunların hepsini test ediyorsunuz.
+
+342
+01:46:44,572 --> 01:46:51,212
+Onların artık ne yapıyorsanız oradan ya ortalamasını alıyorsunuz ya işte...
+
+343
+01:46:57,203 --> 01:47:04,783
+Oylamasını alabilirsiniz. Bir şekilde onu tekrar bir evrice ağıt etmiş oluyorsunuz.
+
+344
+01:47:17,908 --> 01:47:28,507
+Bir başka Augmentation için renklendirme değişimleri mesela, kontrastı ve
+
+345
+01:47:31,539 --> 01:47:34,979
+Aydınlığı randomize edebilirsiniz.
+
+346
+01:47:37,860 --> 01:47:44,619
+Code resmin bir kısmını, rastgele bir kısmını kapatıyorsunuz.
+
+347
+01:47:49,844 --> 01:47:55,024
+Küçük veri setlerinde çok iyi çalışıyor ama büyük veri setlerinde çok kullanılmıyor diyor.
+
+348
+01:48:02,868 --> 01:48:08,588
+Neyi gördük? Şimdi Data Pre-processing'de Data Augmentation gördük.
+
+349
+01:48:09,948 --> 01:48:19,808
+Pre-processing'i gördük. Normalization. Transfer platform'un ikiye bakacağız.
+
+350
+01:48:21,868 --> 01:48:26,888
+Şimdi CNN'leri eğitmek için çok miktarda veriye ihtiyaç var.
+
+351
+01:48:28,083 --> 01:48:30,763
+Yeterli veriliniz yoksa ne yapacaksınız?
+
+352
+01:48:33,103 --> 01:48:35,323
+Şunu görmüşler.
+
+353
+01:48:37,283 --> 01:48:41,423
+Başarılı olan networklerin içeriğine bakmışlar.
+
+354
+01:48:41,583 --> 01:48:42,823
+Mesela AlexNet.
+
+355
+01:48:44,963 --> 01:48:49,943
+Burada 11.11'lik şeyler var.
+
+356
+01:48:52,023 --> 01:48:53,663
+Filtreler var.
+
+357
+01:48:54,228 --> 01:48:56,667
+Renkli filtreler, 64 tane.
+
+358
+01:48:59,568 --> 01:49:02,568
+Bu filtreleri görselleştirmişler.
+
+359
+01:49:03,068 --> 01:49:05,788
+Resim gibi bakmışlar yani.
+
+360
+01:49:07,628 --> 01:49:08,868
+Ve şunu görmüşler.
+
+361
+01:49:10,228 --> 01:49:14,968
+Network'ün input'a yakın giriş taraflarında
+
+362
+01:49:14,968 --> 01:49:17,528
+bu filtreler
+
+363
+01:49:22,771 --> 01:49:28,192
+Daha basit özelliklere karşılık geliyor.
+
+364
+01:49:30,612 --> 01:49:37,852
+Noktalar, köşeler, çeşitli açılardaki çizgiler.
+
+365
+01:49:40,711 --> 01:49:49,131
+Yani kendi başına pek bir şey ifade etmeyen fakat o piksellerde bir anlam ifade eden.
+
+366
+01:49:49,908 --> 01:50:11,888
+Bu tarz patternler, bu tarz küçük filtrelere dengelen yapılar oluşmuş. Neural Network eğitiminde biliyorsunuz neyi eğitiyoruz? Bu filtreleri eğitiyoruz değil mi? CNN'lerde. Bu filtreleri öğreniyoruz yani.
+
+367
+01:50:16,564 --> 01:50:18,623
+Böyle şeyler öğrenilmiş.
+
+368
+01:50:19,144 --> 01:50:20,564
+Üst katmanlara gelindiğinde...
+
+369
+01:50:25,076 --> 01:50:25,771
+Ön...
+
+370
+01:50:30,931 --> 01:50:32,311
+Şunu fark ediyorlar.
+
+371
+01:50:33,412 --> 01:50:34,572
+Daha kompleks.
+
+372
+01:50:37,051 --> 01:50:40,747
+Diyelim ki test imgesi böyle bir...
+
+373
+01:50:44,724 --> 01:50:54,724
+Fil, baktıklarında orada kompleks şeyler olduğu görülmüş.
+
+374
+01:50:56,724 --> 01:51:08,203
+Yani alttan yukarıya filtreler daha basitten daha karmaşığa doğru giden bir şekilde öğreniyor.
+
+375
+01:51:09,268 --> 01:51:24,167
+Ve bu alttaki basit şeyler, esasen basit filtreler birçok farklı amaç için kullanılabilir. Birçok farklı problemde kullanılabilir.
+
+376
+01:51:24,167 --> 01:51:33,108
+Yani araba tıklanırken de önce bir kenarları bulmanız faydalı olabilir.
+
+377
+01:51:36,979 --> 01:51:50,199
+İlk yöntemlerden birçok farklı probleme uygulanabileceği fark edilmiş.
+
+378
+01:51:55,891 --> 01:52:09,512
+Dolayısıyla diyorlar ki, madem öyle, biz bu alttaki yapılar, hem ki farklı problemlerde kullanılabilir, alttaki yapıları duralım.
+
+379
+01:52:11,912 --> 01:52:17,192
+Yani daha önce yetinmiş bir modeli alalım, alttaki yapılar sabit kalsın.
+
+380
+01:52:24,532 --> 01:52:28,072
+Yeniden başlatalım ve eğitelim.
+
+381
+01:52:31,072 --> 01:52:33,292
+Transfer Learning deniliyor.
+
+382
+01:53:05,363 --> 01:53:13,043
+Veri setiniz küçükse bu tavsiye ediliyor.
+
+383
+01:53:27,891 --> 01:53:32,112
+Veri seti daha büyükse, diyelim ki bayağı bir veriniz var.
+
+384
+01:53:35,192 --> 01:53:36,891
+O zaman direkt...
+
+385
+01:53:40,467 --> 01:53:47,467
+Burayı dondurmayın. Alt katmanları, yeterli veriniz var diyelim ki alt katmanları da eğitiyorsunuz.
+
+386
+01:53:49,467 --> 01:54:02,467
+Yani tüm veri setini olduğu gibi başlatıp sadece şu en sondaki katmanı sizin probleminize göre değiştirip fakat yine hepsine eğitiyorsunuz.
+
+387
+01:54:05,363 --> 01:54:09,963
+Tabi daha çok veri ve daha çok donanıma ihtiyacınız oluyor.
+
+388
+01:54:14,420 --> 01:54:16,380
+Yani şu şekilde düşünülebilir.
+
+389
+01:54:19,300 --> 01:54:32,100
+Diyelim ki probleminiz eldeki şeye benziyor. Elinizdeki modelin problemine benziyor.
+
+390
+01:54:34,100 --> 01:54:37,860
+Az bir veriniz varsa elinizde.
+
+391
+01:54:39,507 --> 01:54:54,147
+Son leğiri sadece değiştirmeniz yeterli. Eğer yeterince veriniz varsa tüm modeli eğitiyorsunuz.
+
+392
+01:55:38,163 --> 01:56:04,023
+Eğer probleminiz bambaşka bir problemse, yani elinizdeki veri seti bu orijinal modelin eğitildiği veri setinden bambaşkaysa ve veriniz de yeterli değilse o zaman transfer learning kullanmak pek mantıklı olmayabilir.
+
+393
+01:56:04,851 --> 01:56:21,291
+Yani ne yapabilirsiniz? Bu modeli kullanmak pek mantıklı olmayabilir. İki alternatifiniz var. Ya daha benzer bir eğitim setinde eğitilmiş bir model bulacaksınız veya daha fazla veri toplayacaksınız.
+
+394
+01:56:30,131 --> 01:56:46,751
+Tüm veriyi yine eğitebilirsiniz veya mademki yeterli veriniz var, Transfer Learning'den vazgeçip sıfırdan eğitebilirsiniz.
+
+395
+01:57:17,300 --> 01:57:23,680
+Yani sayısal olarak baktığımızda elinizde diyelim ki 1 milyondan daha az imgeniz var.
+
+396
+01:57:28,307 --> 01:57:29,507
+O zaman,
+
+397
+01:57:35,764 --> 01:57:59,363
+Transfer Learning yapmak mantıklı. Benzer bir veri seti üzerinde, benzer bir model üzerinde. Şu anda model zoo'ları var. Mesela PyTorch'un kendi model zoo'su var.
+
+398
+01:58:00,659 --> 01:58:04,200
+Bir de şimdi Hugging Face diye bir web sitesi var, duymuşsunuzdur.
+
+399
+01:58:06,260 --> 01:58:11,680
+Tamamen bu bir model zoo. Yani pre-trained modellerle dolu.
+
+400
+01:58:15,440 --> 01:58:20,479
+Dolayısıyla günümüzde önceden eğitilmiş bir model bulmak zor değil.
+
+401
+01:58:26,739 --> 01:58:34,379
+Transfer Learning'e de artık Fine Tuning deniliyor. Dolayısıyla...
+
+402
+01:58:39,507 --> 01:58:41,420
+Bunu kullanabilirsiniz.
+
+403
+01:58:45,235 --> 01:58:49,496
+Şimdi hiperparametre seçimine bir bakalım.
+
+404
+01:59:04,532 --> 01:59:07,672
+Şöyle bir tavsiyede bulunmuşlar.
+
+405
+01:59:07,672 --> 01:59:09,672
+Önce...
+
+406
+01:59:18,163 --> 01:59:21,623
+Bir modeli eğitiyorsunuz. Küçük bir sample üzerinde.
+
+407
+01:59:23,903 --> 01:59:26,963
+Bir learning rate buluyorsunuz.
+
+408
+01:59:28,483 --> 01:59:32,543
+Loss'un azalmasını sağlayan küçük bir sample üzerinde.
+
+409
+01:59:39,956 --> 01:59:46,355
+Sonra tüm veri setinizi kullanıyorsunuz.
+
+410
+01:59:49,175 --> 01:59:53,775
+Biraz küçük bir Weight Dikey ekliyorsunuz.
+
+411
+01:59:57,235 --> 02:00:15,235
+İlk 100 iterasyonda eğitim lossunu ciddi şekilde düşüren bir learning rate buluyorsunuz. Şu learning rate'ler genelde başarılı oluyormuş. Tavsiye ediyorum. Yani bunlar biraz şey...
+
+412
+02:00:19,699 --> 02:00:24,659
+Tecrübe esasen bilim, bilimden çok tecrübe ya da sanat.
+
+413
+02:00:28,404 --> 02:00:37,744
+Çünkü eğitimi bir mesele. Çok fazla sayıda veri var. Eğitimi çok zaman alıyor.
+
+414
+02:00:46,836 --> 02:01:08,556
+Sonra yeni şeyler eklemiş. Learning Rate'i bulduk. Hiperparametreleriniz için şöyle kaba bir grid tanımlıyorsunuz. Yani grid ne demek?
+
+415
+02:01:11,220 --> 02:01:33,060
+Standart aralıklara bölüyorsunuz. Hiperparametrelerin geçerli olduğu aralığı. 4'e, 5'e, 6'a, 10'a neyse gücünü elinizdeki donanıma göre. Sonra her birine işte bir veya beş epok gibi eğitiyorsunuz.
+
+416
+02:01:36,275 --> 02:02:03,456
+En iyi hiperparametreleri seçiyorsunuz. 1-5 epok gibi kısa bir eğitimden sonra. Sonra o grid'i biraz daha ne yapıyorsunuz? Refine ediyorsunuz. Yani diyelim ki A hiperparametreniz işte 5 çıktı. 5 ile 6 arasında iyi değerler veriyor.
+
+417
+02:02:03,923 --> 02:02:17,683
+Diyelim ki, şimdi 5 ile 6 arasını tekrar 10 parçaya bölüp, 5.1, 5.2, 5.3, 5.5.1 aralığı, 5.1, 5.2 aralığı gibi.
+
+418
+02:02:20,343 --> 02:02:30,363
+Daha küçük bir grid seçip, biraz daha fazla eğitip, hiperparametre seçimini yapabilirsiniz. Böyle bir şeyi tavsiye etmişler.
+
+419
+02:02:32,115 --> 02:02:34,115
+Bu sırada
+
+420
+02:02:36,115 --> 02:02:40,115
+Loss ve Eccuristic Örgülerine
+
+421
+02:02:40,115 --> 02:02:44,115
+Bakın diyor. Bakalım ne diyecek.
+
+422
+02:02:55,091 --> 02:02:56,231
+İleriye bir baktım.
+
+423
+02:02:58,371 --> 02:02:58,971
+Şimdi
+
+424
+02:03:05,043 --> 02:03:20,743
+Train Set üzerinde Eccurisy'ye bakıyorsunuz. Bir de elinizde bir Validation Set tutuyorsunuz. Ayrı. Train Set'ten ayrı bir şey. Validation Set üzerinde Eccurisy'ye bakıyorsunuz.
+
+425
+02:03:34,579 --> 02:03:42,579
+Siz eğitim yaptıkça. O zaman eğitime devam etmeniz lazım gibi gözüküyor.
+
+426
+02:03:45,039 --> 02:03:47,579
+Yani Converge olmamış.
+
+427
+02:03:53,587 --> 02:04:07,907
+Şöyle bir durum görebiliyorsunuz. Eğitim setinde accuracy artıyor. Ama validation setinde düşmeye başlıyor.
+
+428
+02:04:11,891 --> 02:04:18,311
+Bu ne demek? Burada overfitting var demek.
+
+429
+02:04:23,988 --> 02:04:28,328
+Yani model veri setini ezberlemeye başlamış.
+
+430
+02:04:32,115 --> 02:04:44,415
+Yeni verileri genelleyemiyor. Yeni veriler için yeterince genel bir model değil. Aşırı spesifik olmuş.
+
+431
+02:04:50,739 --> 02:04:52,500
+Bu durumda ne yapmanız lazım?
+
+432
+02:04:56,212 --> 02:05:15,551
+Regularization yapabilirsiniz. Ya da daha fazla veri ekleyebilirsiniz. Bunlar epok epok gidiyor. Her epokta veriyi baştan sona bir kere veriyorsunuz. Karıştırıp tekrar veriyorsunuz.
+
+433
+02:05:23,091 --> 02:05:28,871
+Regülerizasyon yapmanız gerekebilir. Bunun çeşitli yöntemlerini gördük.
+
+434
+02:05:37,203 --> 02:05:50,644
+Şöyle bir şey görüyorsanız, yani train ile validation birbirine çok yakın. O zaman belki burada underfitting olabilir.
+
+435
+02:06:02,739 --> 02:06:06,420
+Daha fazla katman belki kullanmanız mantıklı olabilir.
+
+436
+02:06:10,819 --> 02:06:16,979
+Daha uzun belki eğitime devam etmeniz gerekebilir. Belki ileride bu açılabilir.
+
+437
+02:06:21,587 --> 02:06:28,067
+Dolayısıyla Train ve Validation setleri arasındaki o fark size bayağı bir fikir veriyor.
+
+438
+02:06:33,268 --> 02:06:45,567
+Dolayısıyla bunu yapıyorsunuz. Sonra tekrar adım 5'e geri dönüyorsunuz. Yani tekrar hiperparametreleri değiştiriyorsunuz.
+
+439
+02:06:49,108 --> 02:07:13,908
+İşte belki modelinizi biraz değiştiriyorsunuz. Modeldeki katman sayısını biraz değiştiriyorsunuz vs. Bunlar hep hiperparametre esasen. Böyle bir döngü içerisinde ne yapmaya çalışıyorsunuz? En iyi hiperparametreleri bulmaya çalışıyorsunuz.
+
+440
+02:07:15,667 --> 02:07:18,207
+Hiperparametre ve en iyi mimari.
+
+441
+02:07:18,547 --> 02:07:20,807
+Mimariyi bulmaya çalışıyorsunuz.
+
+442
+02:07:24,819 --> 02:07:40,779
+Bu arada burada grid search'ü söyledi ama esasen random search'ün daha iyi sonuç verdiğini söyleyen çalışmalar var.
+
+443
+02:07:44,359 --> 02:07:49,819
+Şöyle ki, şimdi grid layout'ta...
+
+444
+02:07:51,764 --> 02:07:57,203
+Diyelim ki, önemli bir parametreniz var.
+
+445
+02:08:00,164 --> 02:08:05,783
+Yani, hiperparametrelerimizin birisi önemli, birisi çok önemli değil.
+
+446
+02:08:05,783 --> 02:08:08,783
+İki parametre olduğunu düşünelim, basit olsun.
+
+447
+02:08:11,384 --> 02:08:15,923
+Şimdi, düzenli yaptığınız için Grid Search'te, diyelim ki,
+
+448
+02:08:16,115 --> 02:08:20,595
+Toplam 9 tane hiperparametre kombinasyonu oluyor.
+
+449
+02:08:21,996 --> 02:08:23,095
+3'e 3'ten.
+
+450
+02:08:24,095 --> 02:08:30,735
+Bu 9 kombinasyonun 3 değeri hep aynı.
+
+451
+02:08:31,895 --> 02:08:34,195
+Yani bu önemli parametre açısından.
+
+452
+02:08:36,755 --> 02:08:43,435
+Dolayısıyla bu önemli parametre esasen değiştirince asıl sonucu etki eden bu.
+
+453
+02:08:44,851 --> 02:08:49,551
+Siz gereksiz şu 6 tanesini gereksiz yapmış oluyorsunuz.
+
+454
+02:08:55,188 --> 02:09:00,568
+Eğer böyle bir durum varsa, illa olacak diye bir şey yok ama olabilir.
+
+455
+02:09:02,988 --> 02:09:07,188
+Onun yerine rastgele random search yaparsanız,
+
+456
+02:09:11,748 --> 02:09:17,948
+her bir denemenizde önemli parametre hep farklı olacak.
+
+457
+02:09:22,676 --> 02:09:50,036
+Dolayısıyla daha iyi bir arama yapmış olabileceksiniz. Önemli parametrenin kendi uzayında. Toplamda belki yine aynı sayıda bakacaksınız. Ama 3 değil de 9 farklı değerini denemiş olacaksınız. Dolayısıyla Grid Search yerine de esasen Random Search'ı kullanmanız daha mantıklı olabilir.
+
+458
+02:09:51,412 --> 02:10:01,332
+Belirli aralık seçip o aralıkta rastgele random değerler almak daha mantıklı olabilir.
+
+459
+02:10:06,100 --> 02:10:30,039
+Dolayısıyla işte ne yapmış olduk? CNN katmanları, aktivasyon fonksiyonları, çok önemli olan CNN mimarileri, ağırlık başlatması gibi.
+
+460
+02:10:36,307 --> 02:10:53,028
+Veri Ön İşleme, Veri Çoğaltma, Veri Artırma, İyileştirme, Transfer Learning, Hiperparameter Tuning gibi şeylere bakmış olduk.
+
+461
+02:11:33,108 --> 02:11:35,083
+Şimdi nereye geldik?
+
+462
+02:12:07,891 --> 02:12:26,911
+CNN Mimarilerine bakmış olduk bu ders. Gelecek ders, RNN'lere bakmış olacağız. Sonraki ders, Attention ve Transformers'lar.
+
+463
+02:12:38,068 --> 02:12:41,688
+Bu zamana kadar, şu ana kadar hep sınıflama üzerinden gittik.
+
+464
+02:12:43,688 --> 02:12:59,388
+Bu noktada nesne bulma, nesne belirleme, imge bölütleme, görselleştirme, feature visualization demiş.
+
+465
+02:13:05,939 --> 02:13:09,859
+Network'ün iç yapısını görselleştirme.
+
+466
+02:13:12,859 --> 02:13:17,859
+Lecture on Video Understanding.
+
+467
+02:13:19,239 --> 02:13:23,279
+Lecture on Large Scale Distributed Training.
+
+468
+02:13:24,279 --> 02:13:28,819
+Büyük ölçekli dağıtık eğitim.
+
+469
+02:13:34,612 --> 02:13:38,012
+Lecture 13 Self-supervised Learning
+
+470
+02:13:52,051 --> 02:14:11,011
+Lecture 13'te Generative Modellere bakmaya başlıyorlar. Variational Auto Encoderlar, GAN'lar, Autoregressive Modeller. Yine Generative Modellere devam ediyorlar. 1-2 Lecture.
+
+471
+02:14:14,771 --> 02:14:22,692
+Lecture 15'te 3 boyutlu görüntüleme.
+
+472
+02:14:24,692 --> 02:14:33,051
+3D Shape Representations, Shape Reconstruction, Neural Implicit Representations.
+
+473
+02:14:33,051 --> 02:14:37,792
+Yani 3 boyutlu nesne oluşturma gibi.
+
+474
+02:14:44,884 --> 02:14:48,764
+Lecture 13 Vision and Language diye bir şey yapmışlar.
+
+475
+02:14:55,956 --> 02:14:58,176
+Lecture 17 Robot Learning
+
+476
+02:15:07,923 --> 02:15:09,204
+Robotlara giriyorlar.
+
+477
+02:15:21,140 --> 02:15:23,440
+Geriye almak isterken kapattım.
+
+478
+02:15:44,404 --> 02:15:46,084
+Şimdi biz
+
+479
+02:16:08,467 --> 02:16:09,488
+Böyle yapalım.
+
+480
+02:16:24,115 --> 02:16:51,376
+Ödevlere bir bakalım öncelikle. Birinci ödevi verdim ben. Geçen hafta WhatsApp grubuna atmıştım. Ama WhatsApp grubunda birisi şey olarak sormuş. Ödev bir tam olarak nedir falan diye. Yani şöyle, ödevleri direkt bu sitedeki ödevleri yapıyoruz.
+
+481
+02:16:56,115 --> 02:17:16,396
+Yani direkt şu 1, 2, 3'ü yapacaksınız. Burada %12 birinci ödev, %18 ikinci ödev, %15 üçüncü ödev. Toplam 30-45 ediyor. %45 ders notunuz buradan gelecek.
+
+482
+02:17:19,396 --> 02:17:21,976
+%15 bir sunum yapmanızı istiyorum.
+
+483
+02:17:24,147 --> 02:17:25,747
+Bilgilendirme sunumu.
+
+484
+02:17:29,203 --> 02:17:29,868
+Ön...
+
+485
+02:17:34,036 --> 02:17:40,056
+Ne oldu? %60, %40 da bir proje yapıyor olmanız gerekiyor.
+
+486
+02:17:42,495 --> 02:17:47,296
+Grup halinde yapabilirsiniz. İki kişilik bir grup olabilir.
+
+487
+02:17:51,123 --> 02:17:54,943
+Şimdi
+
+488
+02:18:08,435 --> 02:18:13,635
+Final projesi ile ilgili bir slide'lar koymuşlar esasen. Onlara da baksak güzel olur.
+
+489
+02:19:09,427 --> 02:19:11,028
+Neydi onun ismi?
+
+490
+02:19:13,367 --> 02:19:16,227
+Section 3 PDF diye geçiyor.
+
+491
+02:19:18,707 --> 02:19:20,347
+Section 3.
+
+492
+02:20:08,948 --> 02:20:10,927
+Şimdi bir bakalım ne demişler.
+
+493
+02:20:14,675 --> 02:20:38,855
+Evet. Beklentilerimiz ne? Açık uçlu, görüntü ile ilişkili her şey olabilir demişler. Görsel veri içermesi lazım demişler. Bir ila üç kişi arasında yapılabilir demişler. Peki öyle yapalım biz de.
+
+494
+02:20:45,811 --> 02:21:00,092
+grup elemanı varsa içerikte daha fazla bekliyoruz. Yani beklenti daha büyük oluyor demek istediğimiz.
+
+495
+02:21:04,788 --> 02:21:22,668
+Bir şeyi seviyorum, bir tema belirlemeyi seviyorum. Yani her şey değil de bu yıl resimden yazıya temasını belirledim. Yani resim açıklama gibi.
+
+496
+02:21:32,628 --> 02:21:39,507
+Bir öğrenci sisteme tanımlı olmadığım için ödevimi mail ile göndersem sıkıntı olur mu demiş.
+
+497
+02:21:41,368 --> 02:21:48,368
+Onu daha ödevler nasıl gönderilecek onu da belirlemedik.
+
+498
+02:21:55,700 --> 02:22:03,860
+Ama eğer sistemden toplayacaksak ve sizin böyle bir sorununuz varsa, siz mail ile gönderebilirsiniz.
+
+499
+02:22:04,080 --> 02:22:13,060
+Ben bu hafta içinde WhatsApp grubuna nasıl yazacağınızı, nasıl göndereceğinizi, yükleyeceğinizi bildiririm.
+
+500
+02:22:14,840 --> 02:22:17,400
+Bugün asistanlarla bir toplantı yapacağız.
+
+501
+02:22:17,400 --> 02:22:21,580
+Orada ödevlerin nasıl toplanacağını.
+
+502
+02:22:21,951 --> 02:22:23,711
+Belirleriz.
+
+503
+02:22:30,963 --> 02:22:48,384
+İki tip projeden bahsediyor. Application yani belirli bir alana bu görsel teknikleri yani vision tekniklerini uygulamak.
+
+504
+02:22:49,304 --> 02:22:52,704
+Yani sağlık olabilir, fizik olabilir herhangi bir alana.
+
+505
+02:22:59,028 --> 02:23:22,628
+Model, yeni bir algoritma geliştirmek. Bu tabi daha zor bir şey olabilir. Belki de yaptığınız iş yayınlanabilir. Burada yaptığınız projeleri sadece bu ders için
+
+506
+02:23:23,188 --> 02:23:36,688
+Benimle yapmanızı istiyorum. Başka bir hocayla, başka bir proje kapsamında yapmakta olduğunuz veya eskiden yapmış olduğunuz bir projeyi veremezsiniz. Bu derse özel bir şey olacak.
+
+507
+02:23:42,963 --> 02:23:57,043
+Sonuçta bildiğiniz bir yayın yazmanızı istiyorum. Bir paper yazmanızı isteyeceğiz. O paper'ı sunmanızı da isteyeceğiz. Hem yazacaksınız hem sunacaksınız.
+
+508
+02:23:59,923 --> 02:24:07,283
+Dolayısıyla iki sunum olacak bu dönem. Bir, bir konu anlatımı gibi bir sunum.
+
+509
+02:24:08,147 --> 02:24:14,367
+Ya da bir paper tanıtımı gibi bir, literatür tanıtımı gibi bir sunum. 15 puanlık.
+
+510
+02:24:14,367 --> 02:24:33,647
+Bir de 40 puanlık projenizin tanıtımı olan, 40 puanlık projenizin de bir sunumu olacak, demosu olacak.
+
+511
+02:24:36,948 --> 02:24:54,567
+Beklentileri karşılıyor mu acaba projen diye düşünürseniz, genel olarak şu, yeterince iş yapıyorsanız, yeterince yoruluyorsanız, çaba sarf ediyorsanız muhtemelen projeniz yeterlidir.
+
+512
+02:25:05,203 --> 02:25:10,203
+Bir tekniğin bir varyantını geliştirebilirsiniz.
+
+513
+02:25:10,203 --> 02:25:14,203
+Bayağı aslında çok kolay bir şey değil bu.
+
+514
+02:25:18,203 --> 02:25:25,203
+Veya var olan bir tekniği tamamen yeni bir problemi uygulama.
+
+515
+02:25:26,203 --> 02:25:30,203
+Bu da yine bayağı bir uğraştırıyormuş.
+
+516
+02:25:30,995 --> 02:25:36,235
+Ama dediğimiz gibi, ne kadar uğraşıyorsanız, demek ki iyi bir proje yapıyorsunuz.
+
+517
+02:25:40,084 --> 02:25:45,084
+Daha basit projeler, mesela...
+
+518
+02:25:48,340 --> 02:26:03,340
+Bir sürü böyle veri temizleme ile falan uğraşıyorsanız, zamanınızı onunla harcıyorsanız aslında iyi bir proje yapmıyorsunuz. Yani anlamlı bir şey yapmıyorsunuz.
+
+519
+02:26:13,971 --> 02:26:16,011
+Ufak tefek değişiklikler yap.
+
+520
+02:26:17,471 --> 02:26:21,592
+Sonra bir Kaggle Veri Setine uyarla alsana proje.
+
+521
+02:26:23,191 --> 02:26:24,871
+Bu da biraz zayıf kalıyor yani.
+
+522
+02:26:31,956 --> 02:26:50,736
+Tabii bu şöyle. İlla böyle novel, yepyeni bir şey getireceksiniz demek zor. Çünkü o zaten master seviyesi bir şey oluyor. Doktora seviyesi bir şey oluyor.
+
+523
+02:26:59,156 --> 02:27:21,876
+O modelin state of the artı yenmesi. Yani yeni model geliştirirsiniz ama en iyiden daha iyi mi? İlla bunu da istemiyoruz. Çünkü yine dediğimiz gibi bunlar master seviyesi, doktora seviyesi çalışmalar. Hani bir ders projesi.
+
+524
+02:27:23,443 --> 02:27:26,863
+seviyesinin üzerinde. Yani bunlar olursa süper.
+
+525
+02:27:31,443 --> 02:27:57,663
+Bunlar olursa süper ama illa olmak zorunda değil. Fakat, 40 puanlık bir projeden bahsediyoruz. Dolayısıyla ciddi bir orada çalışma görmek isteyeceğim. Farklı şeyleri denemiş olmanız lazım. Yenilik yapmaya çalışmış olmanız lazım.
+
+526
+02:27:58,644 --> 02:28:12,344
+Başaramazsanız da yapmaya çalışmış olmanız lazım. Bunu bana göstermeniz lazım. Şunu denedik, bunu denedik, olmadı. Şöyle yaptık, şöyle oldu. Sunum sırasında bunu anlatmanız lazım.
+
+527
+02:28:14,484 --> 02:28:18,144
+Bir analiz içermesi lazım.
+
+528
+02:28:23,476 --> 02:28:41,276
+Diyelim ki bir kısım sonuçlar var. Sonuçlar, tablolar elde ettiniz. Bu tabloları yorumlayabiliyor musunuz? Anlayabiliyor musunuz? Yani bu tablodaki bu sayılar niye geldi?
+
+529
+02:28:45,652 --> 02:28:59,671
+Bir yöntem diğerine göre neden daha düşük başarı gösteriyor? Başarısız olduysa yönteminiz neden başarısız olmuş olabilir?
+
+530
+02:29:16,691 --> 02:29:36,611
+Başarılı örnekler neler? Başarısız örnekler neler? Yani veri setinde bir kısım örnekler başarılı olacak, bir kısım örnekler başarısız olacak. Bunların başarılı olanları neden başarılı? Başarısız olanları neden başarısız?
+
+531
+02:29:46,164 --> 02:29:47,424
+eee
+
+532
+02:29:53,012 --> 02:30:02,012
+Basit bir loss curve'ü mü print ediyorsunuz yoksa farklı açılardan değerlendiriyor musunuz?
+
+533
+02:30:02,012 --> 02:30:05,012
+Gibi devam etmiş.
+
+534
+02:30:07,012 --> 02:30:16,012
+Proje Fikri seçerken ben zaten bir tema belirledim.
+
+535
+02:30:18,012 --> 02:30:20,012
+Resimden tekste.
+
+536
+02:30:23,412 --> 02:30:46,092
+Pratik olarak ama şu çok önemli. Veri var mı? Yani zamanınız yok zaten. Dolayısıyla hazır bir veri olması lazım. Ve oldukça da büyük bir veri olması lazım.
+
+537
+02:30:49,843 --> 02:30:51,083
+Öğ...
+
+538
+02:30:55,507 --> 02:30:56,507
+Kodu var mı?
+
+539
+02:30:58,507 --> 02:31:04,268
+Yani kodu olan paperlardan yola çıkarsanız üzerine bir şey katmak daha kolay olabilir.
+
+540
+02:31:08,268 --> 02:31:15,528
+Birçok artık yöntemin, paperın, projenin kodu var.
+
+541
+02:31:18,608 --> 02:31:22,528
+İnternette öyle bir yerden başlamanız sizin için mantıklı olabilir.
+
+542
+02:31:25,652 --> 02:31:37,871
+Fikir edinmeniz açısından şu konferanslarda yayınlanmış paperlara bakabilirsiniz.
+
+543
+02:31:44,371 --> 02:31:58,072
+Tabi çok fazla paper var burada. Tek tek isimlerini bile okumaya başlasanız yetişmez demiş. Çok fazla paper oluyor.
+
+544
+02:32:04,211 --> 02:32:13,131
+Direkt paper isimleri içerisinde arama yapın diyor. Anahtar kelimelerle arama yapabilirsiniz.
+
+545
+02:32:14,991 --> 02:32:24,951
+Mesela Captioning diye geçer. Image Captioning. Resimden yazıya çevirme. Image Captioning.
+
+546
+02:32:26,951 --> 02:32:29,951
+Ve benzeri keywordler artık biraz...
+
+547
+02:32:32,948 --> 02:32:35,768
+literatür taraması yaptığınızda bulunur.
+
+548
+02:32:41,236 --> 02:33:05,636
+Yine başka kaynaklar da var. Stanford kendi laplarını mı demişler? Avsum deyip Vision'ı bilmiyorum. Genelde GitHub'da Avsum, Avsum repoları oluyor. Öyle bir repo olabilir bu.
+
+549
+02:33:07,379 --> 02:33:09,979
+Önceki projelere bakabilirsiniz.
+
+550
+02:33:12,219 --> 02:33:14,639
+Papers with Code bir web sitesiydi.
+
+551
+02:33:14,639 --> 02:33:29,619
+Bu Meta'nın tuttuğu çok güzel paperları bu şekilde sınıflıyorlardı da.
+
+552
+02:33:29,619 --> 02:33:32,559
+İşte problemler.
+
+553
+02:33:33,843 --> 02:33:51,143
+O problemlerde en başarılı paperlar, veri setleri, yani harika bir şeydi. Ama onu indirmişler şimdi. Bir tarafta kopyası duruyor ama güncelliğini kaybedecektir o. Yani yenilemiyorlar.
+
+554
+02:33:52,723 --> 02:33:56,923
+Şimdi Hugging Face'de Trending Papers diye bir şey çıkmış.
+
+555
+02:33:58,579 --> 02:34:25,760
+Ona bakabilirsiniz. Hugging Face Trending Papers. Yani Papers with Code kadar iyi değil ama şöyle iyi. GitHub'ta kodu olan paperları listeliyorlar. Dolayısıyla yine anahtar kelime araması yapıp direkt GitHub'ta
+
+556
+02:34:25,971 --> 02:34:48,031
+Kodu olan çalışmaları bulabilirsiniz. Bu da tabii çok faydalı bir şey. Yani hani paper okuduğunuz zaman müphem çok kısımları oluyor. Bir paper okuyorsunuz her şeyi yazamıyor. Çünkü sayfa sınırı var. Her şeyi yazmıyorlar.
+
+557
+02:34:53,268 --> 02:34:55,407
+Tahmin etmeniz gerekebiliyor.
+
+558
+02:34:59,028 --> 02:35:12,968
+Elinizde kod olduğu zaman ne yapıldığını tak görüyorsunuz. Dolayısıyla bu tarz paperlardan başlamanızı tavsiye ederim.
+
+559
+02:35:21,808 --> 02:35:24,968
+Paperları bir okumanız lazım ama okurken...
+
+560
+02:35:26,868 --> 02:35:31,468
+Daha efektif olabilmek için şöyle bir şey demiş.
+
+561
+02:35:33,587 --> 02:35:36,948
+Yani ilk okuyuşta böyle linear okuma.
+
+562
+02:35:38,108 --> 02:35:41,168
+Düz böyle roman okur gibi okumayın diyor.
+
+563
+02:35:43,268 --> 02:35:45,788
+Önce bir abstractını bir okuyun.
+
+564
+02:35:47,368 --> 02:35:50,220
+Çünkü abstract paper'ın çok böyle...
+
+565
+02:35:51,347 --> 02:36:07,907
+Güzel bir özeti olması gerekir. Dolayısıyla abstractı güzel bir okuyun. Sonra bir figürlere bakın. Captionlara bakın. Resimlere bakın. Tablolara bakın. Altyazılarına bir bakın.
+
+566
+02:36:11,907 --> 02:36:14,488
+Hala anlamlı bir paper mı?
+
+567
+02:36:16,500 --> 02:36:32,239
+Ne demek istemiş olabilir burada? Birkaç paper'a bakarsanız birbiri arasında karşılaştırabilirsiniz. Bazı paper'lar çok hızlı bir şekilde güncelliğini kaybediyor. Her an paper çıktığı için.
+
+568
+02:36:34,380 --> 02:36:42,239
+Baktınız ki bu paper'ın sonuçları artık düşük kalmış. Paper'ı okumaktan vazgeçebilirsiniz.
+
+569
+02:36:44,915 --> 02:36:56,455
+Eğer okuyacaksanız şöyle bir metodlarına bir bakın. Yani tüm paper'ı okumadan önce yine bir metod kısmında ne yapmışlar?
+
+570
+02:36:56,455 --> 02:37:08,395
+Yani çünkü yenilik metottadır. Onun haricinde bir sürü işte literatür taraması olur, özetler olur, giriş olur, introduction olur.
+
+571
+02:37:11,763 --> 02:37:20,863
+Yenilik varsa metottadır yani. Metoda şöyle bir bakabilirsiniz. Ne yapmışlar gibi. Yine sonuçlara bir bakabilirsiniz.
+
+572
+02:37:26,227 --> 02:37:52,027
+Yine tabi paper okumak biraz zor. Günümüzde çok fazla şey var. Ek, konuşmalar, videolar, özellikle lisans seviyesindeki öğrenciler için bloglar, teknik blog yazıları.
+
+573
+02:37:56,211 --> 02:37:58,211
+Fakat tabi...
+
+574
+02:38:05,139 --> 02:38:07,000
+Teknik blok yazıları
+
+575
+02:38:11,092 --> 02:38:24,092
+Bunlar güzel olabilir fakat kendinizi buraya hapsetmeyin. Yani paper okumanız gerekiyor. Eğer bilim adamı olacaksanız, master yapacaksanız, doktora yapacaksanız.
+
+576
+02:38:26,352 --> 02:38:37,852
+Bir noktada çünkü bunlar çok sulandırılmış şeyler. Bir de genel olarak çok zaten popüler şeylerin blogları yazılır. Videosu olur, talku olur.
+
+577
+02:38:40,308 --> 02:38:47,808
+Sizin spesifiye gitmeniz gerekir. Yani literatür taramanızı darlaştırmanız gerekir.
+
+578
+02:38:47,808 --> 02:38:51,808
+Dolayısıyla...
+
+579
+02:39:03,572 --> 02:39:13,252
+Literatür taramanızı darlaştırabilmeniz için ve ayrıntıyı görebilmeniz için o matematiğe dalmanız gerekir, o paperları okumanız gerekir.
+
+580
+02:39:17,747 --> 02:39:24,308
+Yine GitHub repoları faydalı olabilir.
+
+581
+02:39:28,211 --> 02:39:29,231
+Şimdi.
+
+582
+02:39:32,340 --> 02:39:45,880
+Bir proje Proposal'ı yapmanız isteniliyor. Bir paragraf. 200 ile 400 kelime arasında.
+
+583
+02:39:49,940 --> 02:39:59,940
+Bunun son gününü belirleriz. Bir iki hafta içinde son günü olabilir.
+
+584
+02:39:59,940 --> 02:40:06,940
+Dolayısıyla kafanızda proje fikri olsun. Ne yapacağım, ne edeceğim düşünün.
+
+585
+02:40:06,940 --> 02:40:13,940
+Bir taraftan hangi veri setleri var. Bakmaya başlayın.
+
+586
+02:40:16,659 --> 02:40:37,059
+Yani veri seti olmazsa çünkü hiçbir şey yapamazsınız. Bir proje dersi içinde de veri seti toplayacak zamanınız olmaz. Dolayısıyla hangi veri setleri var? Kaggle'da birçok veri seti bulabilirsiniz. Hugging Face'de yine veri setleri var.
+
+587
+02:40:42,131 --> 02:40:49,051
+Sonra bir Project Milestone var. Yani birinci rapor gibi düşünebilirsiniz. 2-3 sayfalık.
+
+588
+02:40:53,131 --> 02:40:56,731
+Ön deneysel sonuçlar içeren.
+
+589
+02:40:59,531 --> 02:41:03,891
+Sonra da son rapor. 6-8 sayfa olacak.
+
+590
+02:41:04,651 --> 02:41:09,271
+Template'e uyan paper formatında, bildiri formatında.
+
+591
+02:41:10,835 --> 02:41:12,255
+eee
+
+592
+02:41:17,043 --> 02:41:19,043
+Bunlar poster demişler.
+
+593
+02:41:31,796 --> 02:41:36,716
+Biz böyle bir şey yapalım mı? Yani sunumu posterle mi yaptırsak?
+
+594
+02:41:42,291 --> 02:42:04,231
+Ders sunumları aslında bitirme projelerini bir poster sesyonu haline getirip sunuyor öğrenciler bizde. Güzel oluyor.
+
+595
+02:42:07,092 --> 02:42:19,572
+Acaba onların aynı günü bizde poster sesini mi yapsak veya başka bir gün? Hani sunumunuzu poster üzerinden mi yapsanız?
+
+596
+02:42:29,587 --> 02:42:42,108
+Burayı daha biraz düşünelim. Ama sonuçta yani bir sunum olacak. PowerPoint gibi bir şey mi olsun yoksa poster mi olsun? Ona karar vermemiz lazım.
+
+597
+02:42:43,387 --> 02:42:53,507
+Bölümle de bir konuşayım. Belki bölümde buna sıcak bakabilir. Belki diğer hocalar da poster günü yapabiliriz bölüm içerisinde.
+
+598
+02:42:55,123 --> 02:43:01,804
+Kim ne yapıyor? Hangi derste ne yapılmış? Belki böyle bir şey yapılabilir.
+
+599
+02:43:05,083 --> 02:43:07,051
+O konuyu...
+
+600
+02:43:12,531 --> 02:43:14,031
+Sonraya bırakmış olalım.
+
+601
+02:43:17,716 --> 02:43:22,916
+Ama yani bir sunum olacak, bir paper olacak. Bunu sunum olarak görün.
+
+602
+02:43:30,355 --> 02:43:41,595
+Burada bunlar bizimle ilişkili değil. Bir kısım sıkça sorulan sorular var herhalde.
+
+603
+02:43:45,876 --> 02:43:56,095
+Proposal ile Mindstone arasında değiştirebilir miyim projeyi diye soruyorlarmış.
+
+604
+02:44:00,595 --> 02:44:10,576
+Olabilir diyor. Projenizi değiştirebilirsiniz. Ama bir proposal yapmanız lazım ki o sizi bir yola soksun.
+
+605
+02:44:18,004 --> 02:44:42,564
+Milestone'dan sonra değiştirebilir misin? Bunu pek istemiyoruz diyor. Yani o birinci raporu verdikten sonra artık yeni bir projeyi sıfırdan geliştirmek için yeterli zaman olmayacaktır. Muhtemelen mevcut projenizi tamamlamanız daha doğru olacaktır.
+
+606
+02:44:45,268 --> 02:44:50,227
+Cloud Compute kreditlerinden bahsetmişler. Ne yazık ki bizde bu yok.
+
+607
+02:44:56,371 --> 02:45:00,051
+Evet, böyle güzel oldu projeyle ilgili.
+
+608
+02:45:04,468 --> 02:45:09,668
+Bayağı bir bilgi olmuş oldu.
+
+609
+02:45:12,108 --> 02:45:19,848
+Şimdi projeden önce bir literatür sunumu gibi veyahut anlatım sunumu gibi bir şey de yapmanızı istiyorum.
+
+610
+02:45:21,568 --> 02:45:23,748
+Onu da şunu yapmaya karar verdim bugün.
+
+611
+02:45:30,611 --> 02:45:33,871
+Son gelişmeleri çok takip etmediğim şeyler var.
+
+612
+02:45:48,020 --> 02:45:49,300
+Şurada...
+
+613
+02:46:17,683 --> 02:46:19,723
+Ekran paylaşımı yapıyorum tekrar.
+
+614
+02:46:38,036 --> 02:46:43,495
+Kaçıncı haftadayız? Çete yazabilir misiniz? Akademik takvimde kaçıncı haftadayız?
+
+615
+02:47:03,443 --> 02:47:19,903
+5 diyorlar. Bizde neyi bitirdik? 15 lecture var burada. Fena gitmiyoruz aslında. 6. şeyi bitirdik. Güzel.
+
+616
+02:47:23,860 --> 02:47:33,299
+Şimdi gelecek hafta için esasen assignment 1'i toplayalım demiş. Biz de o şekilde verdik zaten. Orada da tam tutturmuşuz. O da iyi.
+
+617
+02:47:35,120 --> 02:47:47,740
+Gelecek hafta perşembe akşamı assignment 1'in yüklenmesi için son gün. Ben zaten 1-2 haftadır başlayın demiştim. Uzun bir ödev.
+
+618
+02:47:54,131 --> 02:48:00,252
+WhatsApp grubuna nasıl yükleyeceğinizi yazacağım.
+
+619
+02:48:04,180 --> 02:48:13,439
+Arenenlerden sonra ilk ödevinizi de açıklayacağız. İkinci ödevi açıklamış olacağız.
+
+620
+02:48:16,040 --> 02:48:19,819
+Bir sonraki hafta proje proposal'larınızı istiyoruz.
+
+621
+02:48:22,939 --> 02:48:31,060
+Şimdi şuradan itibaren aslında Attention ve Transformers'tan itibaren yeni bir şey yok. Yani şöyle yeni bir şey yok.
+
+622
+02:48:32,308 --> 02:48:45,028
+Yeni, temel yeni bir şey yok. Enteresan yeni bir şey yok. Var olan şeylerin farklı açıdan tekrar kullanılması.
+
+623
+02:48:46,468 --> 02:48:52,068
+Yani Object Detection yaparken aslında sınıflamada öğrendiğimiz şeyler kullanılacak.
+
+624
+02:48:52,068 --> 02:48:58,168
+Ve buralar çok değişiyor. Çok da takip de edemiyorum ben.
+
+625
+02:48:59,476 --> 02:49:07,476
+Burayı şey yaptıralım. Her dersi bir öğrenci anlatsın. 15 puanını böyle alsın.
+
+626
+02:49:14,956 --> 02:49:26,536
+Araştırsın kendisi. Öğrencilerin bir kısmı bu şekilde. Yani burada her öğrenciye yetecek kadar slide yok ama
+
+627
+02:49:30,420 --> 02:49:52,940
+15 puanını öğrencilerin bir kısmı buradan alsın. Bana Whatsapp'tan ya da e-mail ile bunların hangisini almak istersiniz? Yazanlara, ilk yazana onu vereceğim.
+
+628
+02:49:55,567 --> 02:50:01,387
+Lecture 9'u ben anlatmak istiyorum derse birisi, ilk yazan Lecture 9'u almış olacak.
+
+629
+02:50:14,708 --> 02:50:35,328
+Hatta ikişer kişi atayalım. Birisi gelemezse, katılamazsa diğeri anlatsın bunu. Yani her ders için iki kişi ayarlayacağız. Yarısını bir, birisi yarısını birisi anlatacak ama hepsini anlatabilir olacak.
+
+630
+02:50:44,595 --> 02:50:52,895
+Bununla ilgili de hangisini Lecture 9'dan itibaren, Lecture 8'i ben anlatayım.
+
+631
+02:50:52,895 --> 02:51:00,716
+Lecture 9'dan itibaren hangi Lecture'i almak istediğinizi bana atın lütfen.
+
+632
+02:51:05,235 --> 02:51:08,295
+E-mail ile olabilir ya da Whatsapp ile olabilir.
+
+633
+02:51:10,388 --> 02:51:24,048
+İsteme sırasına göre. Ya da direkt WhatsApp'la yapın da karışmasın. Sadece WhatsApp'la atın. İsteme sırasına göre verelim. WhatsApp ana grubu atabilirsiniz.
+
+634
+02:51:33,620 --> 02:51:35,700
+Konuşacağımız bir şey kaldı mı arkadaşlar?
+
+635
+02:51:41,683 --> 02:52:08,144
+Bu sunum yerine ikinci seçenek olarak diye sormuş birisi. Şöyle, öncelikle bunları doldurmak isterim. Bunları doldurduktan sonra yer kalırsa, bunları almayan öğrenciler için, sunumayı olmayan öğrenciler için literatür taramalarından bir paper.
+
+636
+02:52:10,835 --> 02:52:18,036
+Bir veya iki paper anlatmalarını isteyeceğiz. Yani sonuçta bu baya uzun bir şey.
+
+637
+02:52:21,415 --> 02:52:27,415
+Ne kadar bunun bir tanesi? Bir saat, bir buçuk saat rahat alıyor.
+
+638
+02:52:29,915 --> 02:52:32,995
+Bir paper'ı hemen yarım saatte anlatabilirsiniz.
+
+639
+02:52:36,371 --> 02:52:41,231
+Dolayısıyla nasıl bir şey yapsak, nasıl bir şey yapsak, nasıl bir şey yapsak.
+
+640
+02:53:05,075 --> 02:53:09,635
+Bunu yapmayan öğrencinin 3 tane paper anlatmasını isteyelim.
+
+641
+02:53:19,028 --> 02:53:29,028
+Ama zaten bunu ikiye böleceğiz. Zaten iki öğrenci anlatacak. Paper okumak daha zor olabilir. Aslında bunlar...
+
+642
+02:53:48,340 --> 02:54:11,880
+Evet, bir paper anlatmaları yeterli olur herhalde. Yani yarım ders anlatacak bir öğrenci veyahut yarım ders derken yarım slide'lardan bir tanesinin yarısını anlatacak ya da bir tane paper anlatacak.
+
+643
+02:54:12,915 --> 02:54:26,015
+Bu slide'ları beraber çalışabilirsiniz. Yani kişinin diğer kişi gelmezse onu da anlatabilmesi için böyle yapıyorum. Yani kişinin tüm slide'ı bilmesi gerekiyor.
+
+644
+02:54:28,595 --> 02:54:39,935
+Ama zaten derste öğreneceğimiz şey olduğu için orada bir kazancı var. Yani bunu zaten öğrenmesi gerekiyor kişinin. Ama önceden kendisi bir çalışacak yani.
+
+645
+02:54:49,907 --> 02:54:51,387
+Başka bir soru var mı?
+
+646
+02:54:55,287 --> 02:54:55,887
+Arkadaşlar.
+
+647
+02:55:01,427 --> 02:55:22,527
+Peki. O zaman bu hafta noktayı koyalım. WhatsApp grubunu takip edin. Bu hafta sonunda proje bir yüklemeniz var. Nasıl yükleneceğini WhatsApp grubuna yazacağım. İyi hafta sonları diliyorum arkadaşlar.

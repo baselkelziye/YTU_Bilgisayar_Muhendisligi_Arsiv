@@ -1,0 +1,2319 @@
+1
+00:02:42,771 --> 00:02:45,691
+Arkadaşlar, proje sunumları için toplandık.
+
+2
+00:03:13,716 --> 00:03:29,616
+Bir kere daha şöyle yapalım. Sisteme proje raporlarınızı ve geliştirdiğimiz kodları yüklediniz. Bu hafta proje sunumlarına başlıyorum.
+
+3
+00:03:35,764 --> 00:03:49,924
+Bu hafta ben hazırım, sunum yapmak istiyorum diyen arkadaşlardan rica, online Yıldız Edüter'e ders duvarına isimlerinizi sırayla yazın.
+
+4
+00:03:51,604 --> 00:03:58,664
+Ders duvarında ben bu isim sırasına göre sizlere söz vereyim.
+
+5
+00:04:02,548 --> 00:04:16,827
+Böylece bir akış oluşturmuş olalım. İlk hafta sunum yapmak isteyen, ben hazırım diyenler lütfen ders duvarına yavaş yavaş isim yazarak eklenelim.
+
+6
+00:04:17,408 --> 00:04:29,827
+İlk hafta için 6 tane sunum yapılmasını bekliyorum. Eğer gönüllü olarak 6 kişi çıkmazsa,
+
+7
+00:04:30,548 --> 00:04:39,867
+Ben random olarak listeden seçim yapacağım. O şekilde bir yol izleyeceğiz.
+
+8
+00:04:41,947 --> 00:04:56,747
+Şimdi sunumlarla ilgili önce makalenin bu incelediğimiz CVPR konferans bildirisinin diyelim.
+
+9
+00:04:57,684 --> 00:05:12,044
+Hangi ülkede kimler tarafından yapıldığını ve sizin bu çalışmayı neden tercih ettiğimizi de sunumun başında açıklamamızı rica ediyorum.
+
+10
+00:05:12,044 --> 00:05:24,724
+Bu ne olabilir? İleride çalışmak istediğiniz bir alandır. Bir ön çalışma olsun istiyor olabilirsiniz. Bu şekilde bana bütün sınıfa tabii.
+
+11
+00:05:25,235 --> 00:05:43,355
+Neden bu konuyu seçtiğinizi de açıklarsanız sevinirim. [öğrenci] hazırım diyor birinci sırada. Sonra [öğrenci] okumuş. Sonra da [öğrenci]'nı gören ilk üç belli oldu. Üç kişiden daha sunum için isim yazmalarını bekliyorum.
+
+12
+00:05:50,163 --> 00:05:52,223
+Çette yazılanlara bakıyorum.
+
+13
+00:05:56,180 --> 00:06:02,580
+Repo ve sürdü. Sadece kodu GitHub'a ekleyip size mail alabilsem.
+
+14
+00:06:02,580 --> 00:06:08,300
+Çok karışacak ortalık ama olur. Şöyle yapalım.
+
+15
+00:06:12,300 --> 00:06:20,240
+Kodu ürünmedim. Eğer GitHub'a benzeri bir platformdaysa oradan linki atabilirsiniz bana ünlüyle.
+
+16
+00:06:21,139 --> 00:06:25,360
+Zaten burada da sonuçları paylaşacaksınız.
+
+17
+00:06:29,579 --> 00:06:37,399
+İlk sırada [öğrenci] bir ekran paylaşımını yapmayı deneyin. Bakalım açık mı size?
+
+18
+00:06:40,519 --> 00:06:43,720
+Merhaba hocam. Hemen dinliyorum. Bir saniye.
+
+19
+00:06:45,588 --> 00:06:49,067
+Direkt desktop olarak paylaştım.
+
+20
+00:06:49,848 --> 00:06:52,468
+Tamamdır. Bilmiyorum geldi mi?
+
+21
+00:06:52,488 --> 00:06:57,728
+Direkt arkadaşlardan ricam lütfen kameramızı açın. Sizi de gelin.
+
+22
+00:06:57,728 --> 00:07:00,548
+Tabii. Sadece. Tamam.
+
+23
+00:07:07,860 --> 00:07:09,899
+Önemli açtım ama bilmiyorum şu an geliyor mu.
+
+24
+00:07:10,360 --> 00:07:17,539
+Evet, görebiliyoruz sizi. Tamamdır. Süre dediğim gibi 15 dakika. Buyurun, söz sizde.
+
+25
+00:07:18,539 --> 00:07:21,699
+Tamamdır. Şu ekranımdaki eklentileri bir çıkarayım hocam.
+
+26
+00:07:23,444 --> 00:07:35,724
+Merhabalar, ben Bilgisayarla Görme dersi kapsamında CVPR içerisinde A Distractor Aware Memory for Visual Object Tracking, VITS-M2 makalesini anlatmaya çalışacağım.
+
+27
+00:07:35,903 --> 00:07:41,444
+Lübriyana Üniversitesi tarafından, iki kişiler tarafından aslında yapılmış bir çalışma.
+
+28
+00:07:41,704 --> 00:07:47,444
+Buradaki aslında çalışmayı seçme sebeplerimden birisi, lisans döneminde ben...
+
+29
+00:07:47,795 --> 00:08:15,656
+Bir Robotaksi, Teknofest'e Robotaksi yarışmasında görev alıyordum. Hani oradaki gibi böyle bir nesne takibi, işte nesne segmentasyonu üzerine biraz daha bakmak istemiştim. Aynı zamanda orada daha çok ben Yolo kullanıyordum. İşte Yolo'nun ve son versiyonunda SEM3 mimarisi üzerine de bir geliştirmeler olduğunu görünce, burada da SEM2 mimarisinde bir eşleşme olduğunu yakalayınca, hani buradan devam etmek istedim biraz.
+
+30
+00:08:15,795 --> 00:08:37,135
+Daha çok. Devam etmeden önce hocam, şurada ben bir yapıyı daha iyi anlatabilmek için bir web servisi kurmuştum. Onu göstereceğim. Ama şuradan bir ürün seçip sonrasında bunu bir başlatayım. Bu arkada çalışsın. Sonrasında tekrar buna dönüyor olurum.
+
+31
+00:08:39,236 --> 00:08:42,196
+Şunları tekrar yukarı kaydırıyorum. Kusura bakmayın.
+
+32
+00:08:43,059 --> 00:08:58,939
+İçeriğimizde ilk olarak yine problemimizi ele alacağız. Sonrasında makaleyi yazan kişilerin yaklaşımını, kullandıkları veri setlerini, karşı yöntem olarak oluşturduğum bir yöntemi ve diğer model, iki model daha eksadan deneyelim. Onu koymaya çalıştım.
+
+33
+00:08:58,939 --> 00:09:09,399
+Genel sonuçları ve bu oluşturulan veri seti içerisinde aslında beş farklı senaryo var. Bunlara da bakıyor olacağız. Son aşamada da aslında sonuç ve çıkarımlarımıza yöneleceğiz.
+
+34
+00:09:10,515 --> 00:09:32,475
+Günsel'in de aslında biz en temelden başlayacak olursak görsel nesne takip, yani Visual Object Tracking yapıyor olacağız. Burada amacımız videonun başında biraz önce benim seçtiğim gibi bir kutuyla seçilen kısmın, objenin bir sonraki sekanslarda da başarılı bir şekilde takibinin sağlanmasını istiyoruz. En temelde amacımız bu.
+
+35
+00:09:33,076 --> 00:09:39,276
+Fakat burada belli çalışılarımız var. Bunlar işte bu videodaki objenin sonuçta...
+
+36
+00:09:39,276 --> 00:09:42,975
+Basım, bu sunumu tam ekran yapabilir misin?
+
+37
+00:09:43,816 --> 00:09:51,816
+Hocam, tabii şuradan kenar çubuğunu gizleyeyim. Açıkçası Macbook'umu çok kullanmadığım için...
+
+38
+00:09:51,816 --> 00:09:54,755
+Biraz daha büyüdü. Tamam, biraz daha büyüdü. Tamam. Lütfen.
+
+39
+00:09:57,675 --> 00:09:58,415
+Tamam, daha iyi.
+
+40
+00:09:59,195 --> 00:09:59,716
+Tamamdır.
+
+41
+00:10:00,000 --> 00:10:01,319
+Öncelikle örneğe.
+
+42
+00:10:01,716 --> 00:10:29,556
+Az önce de dediğim gibi belli çalışmalarımız var. Bunlar neler olabiliyor? Bu seçtiğimiz buradaki kutucuktaki, ilk karedeki seçtiğimiz kutucuktaki bu cisim sonuçta hareket ettiği için bu şeklinde değişmeler olabilir. En azından en basit. Ben şu an bir şeyler anlatıyorum. Kendi şeklimde de bir değişimler oluyor. Deformasyona aslında uğruyor. Şekil aslında ekrandan kaybolabilir veya önüne bir cisim yeni bir nesne geçebilir. Bu da aslında yine bizim için bir çalışmalar olabiliyor.
+
+43
+00:10:29,716 --> 00:10:32,395
+Aslında hedefin kaymaması da gerekiyor.
+
+44
+00:10:33,175 --> 00:10:36,956
+Şekle zoom in, zoom out yapılıyor olabilir.
+
+45
+00:10:37,115 --> 00:10:41,735
+Bunlar da yine bizim için ufak, artık basit challenge'lar olsa da önemli challenge'lardan birisi.
+
+46
+00:10:41,735 --> 00:10:49,355
+Asıl önemli kısım da şekle benzer görünümlü farklı nesnelerin de devreye girmesi oluyor.
+
+47
+00:10:49,495 --> 00:10:52,895
+Yani az önceki videodaki gibi işte bir şişe var.
+
+48
+00:10:53,016 --> 00:10:53,895
+Yanında bir şişe daha var.
+
+49
+00:10:54,036 --> 00:10:56,135
+Ya da bu şişeler birbirinin içine giriyor olabilir.
+
+50
+00:10:56,615 --> 00:10:57,716
+Daha farklı şekillerde.
+
+51
+00:10:57,716 --> 00:11:08,235
+Önemli olan aslında bu biri biri içerisine girdiği anlarda hedefin, objenin kaymamasını da sağlamak. Bu tarz problemlerimiz var aslında en temelde.
+
+52
+00:11:09,655 --> 00:11:24,216
+Biraz önce de dediğim gibi en adım adım temelden gidiyoruz. Az önce işte problemimize temelde baktık. Şimdi de makaleyi yazan kişilerin baseline olarak kullandığı model yaklaşımı SEM2'ye bakıyor oluyoruz.
+
+53
+00:11:24,755 --> 00:11:32,596
+Semi 2 meta tarafından geliştirilmiş bir aslında Encoder Decoder mimarisiyle işte bellek tabanlı bir model olarak bizi karşılıyor.
+
+54
+00:11:32,696 --> 00:11:39,355
+İsmini de Segment Entity Model. İsminden de anladığımız gibi aslında bir sadece objeğin tracking'i yapmıyor.
+
+55
+00:11:39,355 --> 00:11:46,355
+Aynı zamanda yani sadece kutu çizip o kutuyu takip etmiyoruz da o kutunun içerisinde objeyi de...
+
+56
+00:11:46,960 --> 00:12:10,680
+Maskeli bir şekilde buluyoruz. Aslında bize maske üretiyor diyebiliriz. Çalışma mimarisi de aslında bir memory bankı, diğer modellerden ayrı olarak bir memory bankı bulunuyor. Bu memory aslında fixed size ve parametre olarak baştan belirtiliyor. Yani örnek veriyorum sağ taraftaki örneğe bakarsak burada 5 olarak vermişiz ve bu en başta fixed olarak belirtiliyor.
+
+57
+00:12:12,724 --> 00:12:22,084
+Güncel tüm, yani her sekans geçtikçe bu belliğe yeni sekanslar geliyor. Eski karelerde bellekten çıkartılıyor.
+
+58
+00:12:22,084 --> 00:12:32,104
+Ve beslenirken de, yani en başta Memory Attention kısmında da bu Memory Bank'taki güncel görüntüdeki sekanslar bilgi olarak kullanılıyor.
+
+59
+00:12:32,224 --> 00:12:36,084
+Bu sayede de aslında diğer modellerle karşılaştırıldığı zaman...
+
+60
+00:12:37,172 --> 00:12:56,751
+Özellikle bu Disruptor tarafında önemli bir başarı elde ediyor Semiki Üniversitesi. Çünkü son güncel görünümünü de nesnenin, objenin hep hafızasında tutuyor oluyor. Buradaki problem de aslında yine bu Disruptor tarafından geliyor. Yani eğer iç içe giren, örnek veriyorum iki tane sarışın ve ikisi de ikiz olsun.
+
+61
+00:13:14,004 --> 00:13:33,764
+Bu bellek aslında hatalı maskeyle bir yandan dolmaya başlıyor. Bunun hatalı dolması da aslında gün sonunda belliğin hatalı bilgiyle kirlenmesine ve hataların birikmesine sebep oluyor. Ben gün sonunda görünümü aynı olan ama tamamen istediğimin dışında farklı bir nesneyi takip etmeye başlıyorum.
+
+62
+00:13:33,764 --> 00:13:38,764
+Aslında çıkarım yerleri ana mantıkta burası diyebilirim.
+
+63
+00:13:40,083 --> 00:13:55,083
+Makaleyi yazanların çözümü ise aslında şu. Sol taraf aslında benim az önce anlattığım kısım SEM2 mimarisi. Daima güncellenen, son güncel sekansla beraber güncellenen bir sabit, fixed size bir memorimiz bulunuyor.
+
+64
+00:14:02,515 --> 00:14:17,255
+Bu çözümü ise aslında modelin tamamen içerisinde bir yaklaşım değil de memory management tarafında. Yani bu always update tarafında oluyor. Buradaki aslında memory tarafını yine tutuyorlar. RAM FIFA olarak bu burada geçiyor.
+
+65
+00:14:19,279 --> 00:14:37,620
+Bu DRM mimarisindeki ilk bilgi, ilk sabit görüntümüz benim objemin en baştaki görüntüsü oluyor. O doğrudan bana verilen kare görüntü benim DRM'imde sabit olarak kesin olarak yer alıyor ve burası aslında süreli bir şekilde takip olmuyor.
+
+66
+00:14:37,620 --> 00:14:45,399
+Yani burada T-1, T-2, T-3 diye gidiyor ama burada bir süre kontrolü vs. olmadan doğrudan DRM'e yazım oluyor.
+
+67
+00:14:47,279 --> 00:14:56,799
+Aslında mantığı da şu. Amaçları suçu aslında. Diyarem belleği tanım olarak şöyle tutuyorlar.
+
+68
+00:14:58,227 --> 00:15:26,227
+Disruptor'ın olduğu, yani görüntüde alt maske oluşturduğum ama buna rağmen kendi maskemi doğru bir şekilde bulduğum görüntüleri diğer mime yazayım. Böylelikle görüntüde farklı disruptor'ın olduğu ama benim yine de tutarlı bir şekilde bulduğum görseller burada bulunsun ki sonraki aşamalarda, sonraki gelen sekanslarda ben bu bilgiyi kullanarak bilgim yani obje...
+
+69
+00:15:26,227 --> 00:15:32,127
+Bilgim kaymasın. Böylelikle aslında doğru objeyi takip edebilmeyi sağlıyorlar. En azından düşünceleri bu.
+
+70
+00:15:33,652 --> 00:16:01,652
+Burada aslında çift tampon tutuyorlar. Yani aslında burada bir anchor memory olarak kullanıyorlar. İlk fixed size olarak. Sonrası geri kalan kısmı DRM bilgileriyle dolduruyorlar. Tabi onu da belli bir kurala göre seçici olarak yazıyorlar. Yani belli bir kuralları var. Ve herhangi bir eğitim aslında bulunmuyor. Yani dediğim gibi aşağı tarafta bu always update tarafa karşı gelen kısmı yani memory management tarafında bir güncelleme yapıyorlar ki Samiki tarafındaki birçok...
+
+71
+00:16:01,652 --> 00:16:18,412
+Modelde de böyle oluyor. Ben makaleyi araştırırken bu makalede kullanılan bir yöntemi de buna ekstradan yine makaleyi yazanlar denemesine rağmen denemek istedim. Samuray modeliydi o da. Onda da yine benzer şekilde gün sonunda hep böyle bu memory management tarafıyla alakalı bir düzenlemeler olduğunu gördüm.
+
+72
+00:16:19,827 --> 00:16:35,707
+Bu Anchor Memory'deki ve Distraction Resolution Memory yani DRM tarafındaki amaç da aslında başka nesnelerin olduğu ama hedefin hala daha doğru takip edildiği karelerin DRM'e yazılarak modelin ayırt edebilme gücünü artırabilmek gün sonunda.
+
+73
+00:16:35,707 --> 00:16:44,707
+Bu DRM ise 5 farklı aslında maddeye göre yazım yapıyorlar. Bir kere kesinlikle benim predicted mask'ım...
+
+74
+00:16:45,716 --> 00:16:51,755
+Boş Olmaması Gerektiği Kuralını Koyuyorlar. Yani Ben Predicted Mask'ım Bulunmuyorsa DRM'le Güncelleme Yapmıyorum.
+
+75
+00:16:53,395 --> 00:17:03,096
+Güncellemeleri Arasına 5 Kare Sekans Fark Koyuyorlar. Yani Ben DRM'de Bir Güncelleme Yaptıysam Minimum 5 Karesinin Geçmiş Olma Kuralını Ekliyorlar.
+
+76
+00:17:04,096 --> 00:17:11,615
+Ekstradan Disruptor Sinyali Olmalı Kuralını Koyuyorlar. Yani Ben Alt Maske Üretmeliyim ve Bu Alt Maskenin De Bir
+
+77
+00:17:12,564 --> 00:17:24,704
+Sinyali olması gerektiği belli bir seviyede 0.7 olarak bunu belirliyorlar sabit olarak. Ana maskeden ayrışma kuralı olarak yani 0.7 oranında ana maskeden ayrışmalı şeklinde bir kural koyuyorlar.
+
+78
+00:17:25,524 --> 00:17:40,564
+Takip güvenilir olmalı. Bu da aslında şu, benim tahmin ettiğim Predicted IOU skoru 0.8 değerinden yüksek olmalı. O da aslında temeldeki görselle karşılaştırıyorlar ve eğer bu 0.8 değerinden daha yakın oranda...
+
+79
+00:17:40,564 --> 00:18:08,364
+Benziyorsa yine hala daha takip ediyorum diye yorumluyorlar. Ve son 10 karenin medyan maske alanına bakıyorlar. Ve bu eğer medyan maske alanından sonuç olarak cisim hareket ediyor olabilir hala. Bu alan değişiyor olabilir. Bu değişim oranında %20 oranında tutuyorlar. Yani artı eksi olarak değişim şeklinde. Bu 5 kural da eğer sağlanırsa az önceki buradaki DRM tarafıma ben yazı kayıt yapabilirim.
+
+80
+00:18:08,564 --> 00:18:14,943
+Eğer 5 kural sağlanmıyorsa DRM tarafında bir kayıt yapamam şeklinde aslında ilerletiyorlar.
+
+81
+00:18:16,468 --> 00:18:37,407
+Şimdi aslında önemli olan kısım burada Disruptor. Yani aslında nesnelerin birbirine girdiği, aynı nesnelerin olduğu ve farklı sekansların yer aldığı bir veri setine ihtiyaç duyuyorlar. Böyle veri seti sıfırdan da bulamadıklarını belirtmişler. Kendileri aslında bir veri seti oluşturuyorlar. Buna da Didi diyorlar. Disruptor, Distillat veri seti olarak.
+
+82
+00:18:37,407 --> 00:18:44,448
+Burada farklı veri kaynaklarından toplamda 5 veri kaynağından toplam 180 tane sekans.
+
+83
+00:18:44,468 --> 00:18:45,928
+Aslında elde ediyorlar.
+
+84
+00:18:46,788 --> 00:18:50,468
+Farklı challenge'lardan, Visual Object Tracking 2020 Challenge'ını koyuyorlar.
+
+85
+00:18:51,028 --> 00:18:52,588
+2022 Challenge'ını koyuyorlar.
+
+86
+00:18:52,688 --> 00:18:57,148
+Veya farklı, düşük görünürlüklü UTB 180'ini koyuyorlar gibi.
+
+87
+00:18:57,827 --> 00:19:04,827
+Totalde aslında 180 farklı veri setini, sekansı, videoyu beraber inceliyorlar.
+
+88
+00:19:06,028 --> 00:19:08,648
+Genel makale sonucunu da zaten paylaşıyor olacağım.
+
+89
+00:19:08,788 --> 00:19:10,468
+Ben detayda hem de...
+
+90
+00:19:11,059 --> 00:19:27,059
+Tüm genel özetiyle de Excel'dan kendi bilgisayarımda çalıştırdım. Değerlendirirken de 3 farklı metrikle bakıyorlar tüm değerlendirme şeyine. 3'ünü birlikte değerlendiriyorlar genel olarak. Birincisi quality, yani aslında tüm karelerdeki ortalama IOS skoruna bakıyorlar.
+
+91
+00:19:34,867 --> 00:19:40,788
+İşte doğrudan ortalamasını alıyorlar. O benim doğrudan kalite metriyimi belirtiyor.
+
+92
+00:19:41,327 --> 00:19:46,487
+Ecurisi, IO'nun sıfırdan yüksek olduğu ortalamaya bakıyor.
+
+93
+00:19:46,548 --> 00:19:49,107
+Yani ben aslında bir predicted mass üretebilmişim.
+
+94
+00:19:50,048 --> 00:19:56,407
+Üretebildiğim daha doğrusu sekanslarda ne kadar başarılı bir şekilde üretmişim ona bakıyorum Ecurisi tarafında.
+
+95
+00:19:57,027 --> 00:20:00,000
+Robustness ise IO'nun sıfır olduğu karelerin...
+
+96
+00:20:00,000 --> 00:20:23,039
+Bu da aslında şu, sağlamlık olarak geçiyor ama daha temelde şöyle anlatabilirim. Ben görüntüyü bulmuşum ama ne kadar başarılı bir şekilde takip edebilmişimi aslında buradan da yakalıyorlar. Yani görüntüyü sadece bulmak değil, onu takip edebilmem de önemli. Bunu da robustness'ı aslında sağlıyorlar. Totalde 3 metreyi birlikte inceliyorlar.
+
+97
+00:20:23,731 --> 00:20:35,652
+Ve az önce de belirttiğim gibi makalede kendi deney sonuçları bu şekilde. SEM2 bir baseline üzerinde çalışıyor. Az önce bahsettiğim en temeldeki baseline'ımız bu.
+
+98
+00:20:37,536 --> 00:20:57,375
+Bunun üzerinde inşa ettikleri Denforsem'de, Kölite Akürist'e hemen hemen birbirine yakın olsa da asıl iyileşmeyi Robustness tarafında sağlıyorlar 0.94'de. Burada aslında bir diğer iyi model yine bellek modeli Samurai'da iyi sonuç veriyor. Zaten ben de aynı şekilde Samurai'da denemek istemiştim.
+
+99
+00:20:58,375 --> 00:21:03,615
+Şimdi burada hem yani şunu gözlemledim hocam daha çok.
+
+100
+00:21:04,788 --> 00:21:29,327
+Daha çok bu bellek yönetisinin iki tarafındaki çözümlerde bellek tarafında bir değişimli değişiklikler olduğunu gördüm. Dolayısıyla aslında tamamen kendim değil de yapay zeka ile beraber konuşarak da bu denforseme ne eklenebilir bunun araştırmasını yaptım. Burada bir çözüm üretmeye çalıştım. Bir diğeri samuray yöntemi. Az önce de dediğim gibi burada biraz daha hareket tabanlı bir yaklaşım sağlanıyor.
+
+101
+00:21:32,788 --> 00:21:39,587
+Yani Denforsem buradaki çözüm ve Samurai'da 3'ü de Sem 2 tabanında çalışıyor.
+
+102
+00:21:39,708 --> 00:21:40,748
+Bazen'in de çalışıyor.
+
+103
+00:21:41,228 --> 00:21:48,307
+Dolayısıyla burada bir de farklı bir mimariden, segmentar işin mimar modelinden bir model denemek istedim.
+
+104
+00:21:48,367 --> 00:21:51,908
+Burada da CVPR 2024'te QT modeli çok popülerdi.
+
+105
+00:21:52,008 --> 00:21:53,968
+Bunu da bir gözlemlemek istedim.
+
+106
+00:21:53,968 --> 00:22:00,468
+Total'da aslında Bazen bunu alarak, o makaledeki çalışmaya ek olarak bunların hepsini karşılaştırmak istedim.
+
+107
+00:22:00,788 --> 00:22:18,887
+Burada eklediğim yöntemi elimden geldiğince anlatmaya çalışacağım. Şimdi burada yukarıda zaten şu tarafta Sam'de always daima bir update vardı. Burada da memory management az önce bahsettiğim o kurala göre bir güncelleme yapılıyordu.
+
+108
+00:22:23,584 --> 00:22:34,347
+Görüntünün eğer uzun süreli olmadığı durumlarda da DRM tarafında problemler olabileceğini düşündüm. Dolayısıyla burada iki aşamalı bir...
+
+109
+00:22:35,124 --> 00:22:50,484
+Yani iki fonksiyonlu bir kontrol eklemek istedim. Sonuç olarak şöyle aslında bir mavi araba, bir kırmızı araba vesaire olabilir. Bunlara da yine kayma sağlayabilir diye düşündüğümden burada histogramdan yürümek istedim. HSV histogram almaya çalıştım.
+
+110
+00:22:50,484 --> 00:23:03,124
+Yani hem işte rengini hem işte ışık parlama değerlerini vesaire tuttuğumuz bir histogram değeri oluşturuyoruz. Bu bizim doğrudan ilk neslinin aslında ilk objenin.
+
+111
+00:23:03,124 --> 00:23:22,104
+İstagram değeri oluyor. Bunu bir ema ile ema kas sayısıyla da hareket ettiriyoruz. Yani bu aslında görüntünün hareket edebileceği ihtimalinden dolayı geliyor. Bir de mevcut istagram değerini elde ediyoruz. Sonrasında bunları aslında benzerlik durumuna göre karşılaştırıyoruz.
+
+112
+00:23:22,644 --> 00:23:33,603
+Buradaki karşılaştırdığımız değer gün sonunda Current'la bir EMA'yı hareket etmiş olma ihtimaline karşın bir de Current'la aslında en başta tahmin edilen görüntüyü alıyorum.
+
+113
+00:23:37,587 --> 00:23:55,487
+Histogramların benzerlik oranını 0.55'den yüksekse buradan bu A fonksiyonunda onay alıyorum aslında. Eğer arda arda 3 kere benzer sekans gelmezse o zaman buradan daha evet onayı alamıyorum ve DRM yazma şeyim tamamen kapanıyor.
+
+114
+00:24:05,587 --> 00:24:08,327
+Aslında daha yüksek başarı getiriyor.
+
+115
+00:24:09,647 --> 00:24:17,167
+Bir diğer taraftan biraz ufak yukarı çıkıp şunu tekrar göstermek istiyorum.
+
+116
+00:24:20,435 --> 00:24:41,695
+Şimdi burada DRM yazarken iki farklı aşama vardı. Biri distraktor sinyalinin 0.7 olması ve takip güvenilir, takip güvenilirinde 0.8 değerinden yüksek olması kuralı. Burada aslında sabit değer olması da yine bir problem oluşturabilir diye düşündüm.
+
+117
+00:24:47,796 --> 00:25:02,696
+Bunlar çok daha katı kurallar gibi geldi. Çünkü ne videodan videoya, gelen testten teste işte buradaki değerler bizim için çok büyük olabilir ve dolayısıyla buradan normalde...
+
+118
+00:25:02,932 --> 00:25:13,652
+Belki de ben şeye evet yazmam gerekirken, diğerime buradan onay vermem gerekirken bu aşamalarda doğrudan sabit değer kullanmak belki beni aslında sıkıntıya sokabilir diye düşündüm.
+
+119
+00:25:18,516 --> 00:25:32,216
+I.O. değerlerini alıyorum. Bunların ilk önce Predictive I.O. değerlerini küçükten büyüye doğru sıralıyorum ve küçükten büyüye doğru sıraladığımız değerde %40. değerimizin 0.70 ile karşılaştırıyorum ve bunun maksimum değerini alıyorum.
+
+120
+00:25:33,416 --> 00:25:37,896
+Alt maske içinde yani Disruptor olma ihtimalini içinde
+
+121
+00:25:39,135 --> 00:25:45,035
+%60. yüzdeliğini alıp 0.80 ile karşılaştırıp o değeri alıyorum.
+
+122
+00:25:45,155 --> 00:25:55,555
+Ve aslında karşılaştırmaları sabit 0.7 ve 0.8 değil de değişebilecek ama maksimum ve minimumu ayarlanabilmiş değerler üzerinden gerçekleştirmeye çalıştım.
+
+123
+00:25:55,555 --> 00:26:00,475
+Gün sonunda bu üçüne de, üçünden de evet alıyorsa burada artık DRM'e yazıyor.
+
+124
+00:26:00,575 --> 00:26:07,135
+Yani aslında yine biz, bu yöntemde yine bir RAM ve DRM bulunuyor ama sadece DRM.
+
+125
+00:26:07,135 --> 00:26:24,135
+Bu Memory Management tarafındaki fonksiyon yazma kuralını değiştirmeye çalıştım. Bunlara ek olarak Samuray ve Küt'e, az önce bahsettiğim gibi iki farklı yöntemi daha karşılaştırdım. Zaten aslında Samuray'ı kendileri karşılaştırmıştı ama yani...
+
+126
+00:26:25,299 --> 00:26:34,939
+Çok daha iyi bir model diye benim de aklımda, yani araştırmalarımda görmüştüm. Dolayısıyla bunu da tekrardan ben kendi deney, en azından kendi deney ortamında da denemek istedim.
+
+127
+00:26:35,619 --> 00:26:45,719
+Kütü de tamamen farklı bir mimaride ve daha güncel bir çalışma diye, daha güncelden kastım, farklı bir mimarideki güncel bir çalışma diye onu da dahil etmeye çalıştım projede.
+
+128
+00:26:53,299 --> 00:27:07,939
+Veri setinde genel performanslarını ölçmeye çalıştım. Quality tarafında 3'ü de benzer sonuç. Aslında Sam 2 mimarisini kullanan 3 modelde benzer sonuç aldı. Samurai biraz daha yüksek aldı ve Küt'ü oldukça düşük bir sonuç elde etti.
+
+129
+00:27:08,511 --> 00:27:24,831
+Ecurisi kısmında yine 3'ü de benzerken, Robustness tarafında 0.8, yine aslında Robustness tarafı da çok değişmedi diyebilirim. Makaleyi yazan kişilerin özellikle Robustness tarafında çok büyük bir artısı vardı. 0.94'lerdeydiler.
+
+130
+00:27:27,796 --> 00:27:31,416
+Bu arada en son kısımda FPS'lerini de göstereceğim.
+
+131
+00:27:31,856 --> 00:27:42,076
+SEM 2 tarafında FPS'ler çok düşük olduğu için tüm şeyi, 180 sekansı her biriyle bir daha baştan yanlış yapmışımdır diye bir daha baştan çalıştırdım sürekli.
+
+132
+00:27:42,076 --> 00:27:46,256
+Ama hep böyle yakın skorlar elde ettim. Hiç 0.94'lere erişemedim.
+
+133
+00:27:47,696 --> 00:27:53,296
+Sebebini de çok açıkçası bulamadım ama makaledeki o sonuca erişemedim diyebilirim.
+
+134
+00:27:53,456 --> 00:27:55,796
+Danforth SEM tarafında yani makale.
+
+135
+00:27:55,796 --> 00:27:57,996
+Bu model tarafında.
+
+136
+00:28:00,056 --> 00:28:01,956
+Burada da...
+
+137
+00:28:02,099 --> 00:28:10,439
+Bu sefer genel performansa değil de bu 5 tane model 5 veri setinin ayrı ayrı durumları nasıl onu incelemeye çalıştım.
+
+138
+00:28:11,019 --> 00:28:14,459
+Yine sol tarafta metriklerimiz ve onların yanında yöntemlerimiz yer alıyor.
+
+139
+00:28:15,259 --> 00:28:21,659
+Teker teker bakacak olursak bu ilk veri setinde çok bir farklılığın olmadığını görüyoruz.
+
+140
+00:28:21,659 --> 00:28:30,099
+Diğer Lasot ve UTV'de görüntünün yani hareketli nesne takibinin çok bozulmadığı ama hareketin sürekli olduğu durumlarda.
+
+141
+00:28:30,099 --> 00:28:44,099
+Bu da aslında Samurai'ın motion aware yönteminden geliyor. Özellikle Volt 2020'de...
+
+142
+00:28:44,596 --> 00:28:55,695
+Ürettiğimiz yeni yöntemin daha yüksek başarı elde ettiğini görüyoruz. En azından SEM2 mimarileri içerisinde ve özellikle Robustness tarafında iyi geliştirme sağladığını görüyoruz.
+
+143
+00:28:55,695 --> 00:29:12,496
+VOD 2020'nin ben özel olarak teker teker görsellerini incelemiştim bu arada. Çok uzun, uzak bir açıdan bir nesne var ve o nesne atıyorum bir şemsiyenin altına giriyor, tamamen kayboluyor, belli bir saniye sonra tekrar geliyor, sonra koşmaya başlıyor.
+
+144
+00:29:12,596 --> 00:29:27,475
+Böyle daha uzun soluklu kayıpların olduğu, distraktorların olduğu bir veri seti genel olarak. Burada ürettiğimiz bu çözüm aslında robustness ile beraber iyi bir başarı sağlıyor diyebilirim.
+
+145
+00:29:27,475 --> 00:29:31,836
+%10 civarında maksimum, %7 civarında olması lazım.
+
+146
+00:29:34,640 --> 00:29:53,580
+Temelinde de. Burada daha kısa süreli ama daha yoğun disfraktörler bulunuyor. Burada Denforsem'in başarısı daha yüksek geldi. Tüm şeylerde hem quality'de hem accuracy'de hem de robustness'de. Genel olarak baktığımızda da Küt'ü hepsinde daha başarısız bir sonuç elde etti diyebilirim.
+
+147
+00:30:00,000 --> 00:30:27,960
+Başarı eğrilerini gösterdim. Burada açıkça aslında en bariz, net olan Küt'in genel olarak, yani farklı mimarinin genel olarak daha altlarda kaldığı. VOD 2020 temelinde bizim ürettiğimiz çözümün daha başarılı olduğunu ama VOD 2022 üzerinde Denfor Sem'in, yani asıl makale yaratanların daha başarılı olduğunu, diğer çözümlerde de neredeyse yakın, birebir bir üst üste, neredeyse üst üste geleceksin.
+
+148
+00:30:28,000 --> 00:30:32,099
+Bir sonuç ürettiğini söyleyebilirim.
+
+149
+00:30:37,811 --> 00:30:57,451
+Burası aslında az önce ucundan da bahsettiğim kısım. Bizim FPS tarafı. Yani genel olarak SEM2 tarafındaki tüm mimariler en azından benim bilgisayarımda 3.7 FPS ile maksimum 4 FPS arasında hatta hiçbiri 5'i görmemiş neredeyse o aralıklardaydı.
+
+150
+00:31:03,124 --> 00:31:29,223
+Bu üç arasından bu arada. Diğerleri daha fazla işlem ürettiği için, daha fazla işlem yaptığı için diğerlerinde daha düşük performanslar elde ettim. Kuti genel olarak hepsinden çok daha performanslı çalışıyor. Neredeyse işte 20-25 FPS'leri ağırlıklı olarak gördüm. Burada 15 FPS'in hep üstündeydi genel olarak. Ama baktığım zaman ortalama başarı da ciddi bir aslında kayıp olduğunu görüyoruz.
+
+151
+00:31:31,124 --> 00:31:58,483
+0.65'lerde isem burada 0.50'lerde oluyorum. Ve sabit 480 piksellik bir çözünürlük de oluyor. Belki onun da desteğiyle bu kadar hızlı çalışıyor ama gün sonunda kütüde çok daha yüksek hızlar elde etsem bile. Yani ben tüm 180 dataset'i bu 3 modelde de çalıştırıp yani 5 gün falan beklemiştim ortalama totalinde. Burada bir saatte falan hepsi bittiğini hatırlıyorum.
+
+152
+00:31:59,220 --> 00:32:01,879
+O açıdan çok hızlı bir şekilde tamamlandı.
+
+153
+00:32:04,084 --> 00:32:24,524
+Burada min ranking. Bu da aslında her bir dataset subset'i içerisinde ortalama sıralamalarını gösteriyor. Ne kadar aş yukarıya yakınsa o kadar iyi. Baktığım zaman aslında yani ürettiğimiz çözüm ana çözümle neredeyse yarışır seviyede. Zaten VOD 2020'de bariz bir şekilde geçiyor.
+
+154
+00:32:25,744 --> 00:32:31,403
+Genel olarak Küt'ün de benzer şekilde çok daha kötü kaldığını söyleyebilirim diğer yöntemlere göre.
+
+155
+00:32:32,084 --> 00:32:33,463
+Açısından.
+
+156
+00:32:39,220 --> 00:32:40,940
+Sonraki sayfaya geçmeye çalışıyorum.
+
+157
+00:32:42,100 --> 00:32:44,220
+Bulgularımıza bakacak olursak da...
+
+158
+00:32:45,076 --> 00:33:13,076
+Kütü'nün boyutu çok daha yüksek bir boyut ama bakınca en azından bu dataset üzerinde biz yüksek sonuçlar elde edemedik. Burada da makaleyi yazan kişilerin zaten ürettiği dataset aslında Kütü'nün işine gelmeyen bir dataset oluyor. Çünkü oldukça distractor'ın olduğu, yoğun bulunduğu bir veri seti oluşturmuşlar. Dolayısıyla aslında burada bellik yönetimli modellerin daha iyi olduğunu, daha iyi çalıştığını...
+
+159
+00:33:13,076 --> 00:33:28,176
+Bu çözüm özellikle VOD 2020'de az önce bahsettiğim temelde iyi bir başarı sağlayabildiğini söyleyebilirim. Ama diğerlerinde çok da bir değişim yapmıyor. Zaten Denforce M'de bu açıdan yaklaşım olarak oldukça iyi bir çözüm zaten.
+
+160
+00:33:29,656 --> 00:33:40,016
+Burada az önce de dediğim gibi FPS bilgisi, yani FPS tamam bizim için çok hızlı bir şekilde çalışıyor ama başarı onunla bağlantılı olarak doğru orantılı bir şekilde gelmiyor.
+
+161
+00:33:41,076 --> 00:33:43,076
+Devam edecek olursam.
+
+162
+00:33:47,092 --> 00:33:48,332
+Pütürle aşağı inemiyorum.
+
+163
+00:33:49,683 --> 00:34:13,203
+Aslında biraz önce söylediğim gibi, Kütü çok daha hızlı çalışıyor ama başarıdan ciddi bir kayıp elde ediyoruz. Samuray'da hareket bilgisinin olduğu diğer datasetlerinde genel olarak daha iyi geliyordu. Çünkü oralarda obje hiç ekrandan kaybolmuyor ve nesne sürekli ekranda bir şekilde hareket ediyor. Bu hareket yönteminin kullanıldığı model tarafında da, bellek yönetiminde de Samuray iyi sonuç veriyor.
+
+164
+00:34:13,203 --> 00:34:17,684
+Danforsam ve AC Danforsam'da veri setinden farklı veri setinden...
+
+165
+00:34:17,684 --> 00:34:41,684
+Birbirine yakın sonuçlar elde ediyorlar. Burada son olarak eğer sonuçlandıysa bunu göstereceğim. Ama sonuçlanamamış galiba bilgisayar aynalarında sunum yaptığım için. Burada aslında amacım şeydi hocam. Hangi sekanslarda DRM eklenmiş? İşte aralarında beş sekans vesaire oluyordu ama normalde...
+
+166
+00:34:42,420 --> 00:34:49,680
+Kendi lokal bilgisayarımda olsaydım belki daha iyi olurdu. Ofiste olduğum için şu an burada takılmış maalesef.
+
+167
+00:34:50,228 --> 00:35:11,328
+O yüzden gösteremiyorum şimdilik. Ama burada normalde hangi sekansla diğerime girmiş, hangi sekansla normal FIFA'ya girmiş, diğerime girdiği kareyi seçme gibi şeyler yapabiliyorduk. Burada kalmış büyük ihtimalle bir yerde bir hata vermiştir. Ama basitçe anlayacaklarım, yaklaşımım vs. çözüm bu şekilde diyebilirim.
+
+168
+00:35:12,548 --> 00:35:17,148
+Şükür ediyoruz [öğrenci]. Evet, demoyu görsek daha güzel olurdu tabii ama.
+
+169
+00:35:17,664 --> 00:35:42,083
+Ve güzel, senin sunumundan dolayı alkışlıyoruz. Sunumu biraz uzattın. 15 dakika dedim, 25 dakikaya çıktık. Bundan sonraki sunumlarda sizden ricam lütfen evde bir prova yapın. 15 dakikayı aşmasın. İkinci önemli konu, şeyi soracaktım.
+
+170
+00:35:43,168 --> 00:35:50,868
+[öğrenci]'ın sunumu güzeldi. Soru sormak isteyen var mı aranızda? Soru sorabilirsiniz.
+
+171
+00:35:55,155 --> 00:36:07,036
+Ben mesela şeyi soracağım. VOT 2022'deki dataset'inde onlar, orijinal makaleyi yazan kişi bu dataset'le deneme yapmamış mı? Yapmış mı?
+
+172
+00:36:07,036 --> 00:36:18,496
+Yok yok yapmışlar. Hepsini de yapmışlar. Evet ama subset üzerinde söylemiyorlardı. Sadece genel performans olarak değerlendiriyorlar. Değerlendirmişler ağırlıklı olarak.
+
+173
+00:36:18,911 --> 00:36:41,692
+Anladım. Peki. Güzel, eline sağlık. Size şöyle bir şey söyleyeceğim. Bu arada tüm arkadaşlar hepiniz için geçerli. Okuduğunuz makale ve buna ilişkin yapmış olduğunuz çalışmayı kaydeder sonuçlar varsa, ulusal bir kongrede sunabilirsiniz.
+
+174
+00:36:46,036 --> 00:37:12,695
+İki UBMK 2026, iki ASYU 2026. İkisi de Haziran ayı. ASYU 10 Haziran'da deadline'ı var. UBMK'nın 30 Haziran'da deadline'ı var. Buraya bildiri göndere lütfen. [öğrenci] sen de gönderebilirsin. Çalışmalarını karşılaştırmalı falan da bir şey yaptığın için gönderilebilir olduğunu düşünüyorum.
+
+175
+00:37:13,204 --> 00:37:33,664
+Ders duvarına bu iki konferansın sayfasının linkini bırakacağım. Oradan bakın. Hatta bunu teşvik etmek için ve motive etmek için size bu konferansa bildiri gönderen arkadaşlara finalde ek puan vereceğimi de söyleyeyim.
+
+176
+00:37:34,356 --> 00:37:45,716
+Ne kadar ek puan diye soracaksınız. Ne diyelim, yani bir yüzde on olabilir mesela. Umarım motive edici olur.
+
+177
+00:37:46,336 --> 00:37:49,876
+Gayret edeyim. Linklerinizi de paylaşırsanız zaten bir inceleriz kesinlikle.
+
+178
+00:37:49,876 --> 00:37:53,756
+Ders duvarına bırakacağım şimdi. Teşekkürler.
+
+179
+00:37:53,756 --> 00:38:00,916
+Tekrar teşekkür ediyoruz bunun için. Şimdi ikinci sırada kim vardı?
+
+180
+00:38:01,523 --> 00:38:02,523
+Tamam, tamam.
+
+181
+00:38:14,963 --> 00:38:16,384
+Geldi değil misin hocam?
+
+182
+00:38:18,835 --> 00:38:20,115
+Evet, görebiliyoruz.
+
+183
+00:38:20,115 --> 00:38:44,415
+Tamamdır. Şimdi öncelikle ben makaleden bahsedeceğim. Adaptive Rectangular Convolution for Remote Sensing, Pan-Sharpening makalenin asıl ismi. Ben kendim bir group-based approach ekledim. En başına modelim. Modeli modifike ettim birazcık. Kendi düşündüğüm yöntemle.
+
+184
+00:38:46,291 --> 00:38:55,751
+Çin'den çıkıyor. Electrical Science and Technology of China University'den çıkan bir makale.
+
+185
+00:38:56,731 --> 00:39:00,672
+Öncelikle, bunu neden seçtiğimden de bahsedeyim.
+
+186
+00:39:01,011 --> 00:39:07,911
+Birinci olarak, remote sensing ile alakalı olmasından dolayı daha yeni başladım ama bu alanda kendimi geliştirmek istiyorum.
+
+187
+00:39:14,291 --> 00:39:38,951
+İlgi çekici bulduğum için ve buradaki konvoyüsyon işleminde direkt olarak pan-sharpening üzerinde bir çözüm sağlamaya çalıştığı için ilgimi çekti. Öncelikle birazcık pan-sharpeningden bahsetmem lazım. Çünkü bilmeden devam etmek çok da anlam ifade etmiyor. Öncelikle multispektral imajçlerden bahsedeceğim. Bu görseller kısaca aslında RGB'lerden daha detaylı spektral.
+
+188
+00:39:39,347 --> 00:39:58,548
+Daha detaylı spektral özellikler içeren görüntüler sadece 3 değil 4 veya 10 arasında channel bulunabiliyor. Fakat çok sayıda spektral detaya sahip olsa bile fiziksel kısıtlamalardan dolayı spatial yani resolution olarak zayıf oluyor.
+
+189
+00:39:59,028 --> 00:40:06,008
+Pankromatik görüntüler ise multispektral görüntülerin tam tersi. Onlarda sadece tek bir channel var.
+
+190
+00:40:06,420 --> 00:40:11,000
+Ve çok yüksek bir spatial resolution'a sahipler.
+
+191
+00:40:11,619 --> 00:40:19,420
+Pan-sharpening dediğimiz şeyde aslında biz bu iki görüntünün iyi yanlarını alıp tek bir görüntüde nasıl temsil edebiliriz?
+
+192
+00:40:19,519 --> 00:40:20,460
+Kısaca bu şekilde.
+
+193
+00:40:22,059 --> 00:40:24,359
+Literatürde birkaç çalışma var bunların.
+
+194
+00:40:24,579 --> 00:40:28,259
+Pan-sharpening üzerine. Pan-net var mesela önce örnek olarak.
+
+195
+00:40:28,259 --> 00:40:30,259
+High-pass filtresinden geçirip.
+
+196
+00:40:31,027 --> 00:40:48,548
+Pan ve MS görüntülerini daha sonrasında modeli eğitiyor. Bu önemli çünkü pan şarpı linkte en büyük sıkıntılardan bir tanesi keskin kenarların tekrardan oluşturulması. Bunun üzerine bir çalışma.
+
+197
+00:40:49,300 --> 00:41:13,120
+Daha sonrasında böyle bir çalışma var. Detail Injection Based Deep Conversion Neural Networks. Burada da FusionNet diye bir model var. Burada da farklı kullanılan bir yöntem. Direkt olarak verileri yüklemektense network'e, panchromatik ve multispektral görüntülerin farkını alarak bunu yapması ve diğer CNN çözümlerine göre daha...
+
+198
+00:41:13,684 --> 00:41:39,164
+Az iterasyonda konverge etmesi. Bir başka yöntem de Kan Conversion. Burada da aynı channel'da normalde konverisyonda ağırlıklar channel bazlı öğreniliyor. Ama burada segmentasyon yaparak aynı channel'da farklı ağırlıklar öğrenebiliyor. İşte ağaç düzlemi için farklı, çöl için farklı, deniz için farklı. Bu şekilde.
+
+199
+00:41:40,052 --> 00:41:52,652
+Şimdi metodolojiden bahsederken ben yaptığım şey temelde aslında modelin üzerinde bir modifikasyon olduğu için öncelikle bu modifikasyondan bahsedeceğim ve ondan sonra kalanında modelin nasıl çalıştığını bahsedeceğim.
+
+200
+00:41:52,652 --> 00:42:00,652
+Ama önce bir basitçe anlatacağım. Bu yazarların ortaya koyduğu çalışma temelde aslında her bir piksel için...
+
+201
+00:42:02,099 --> 00:42:18,459
+Uygulanacak olan konvolüsyonun kernel uzunluklarını kendi başına öğreniyor. Yani normalde işte 3-3, 5-5, 9-9 uygularken burada bu konvolüsyon işlemleri 3-5, 1 piksel için, 1 piksel için başka bir boyutta olabiliyor. Bunu sağlıyor.
+
+202
+00:42:23,923 --> 00:42:33,224
+Farklı skellerde olan çok fazla görüntü var. Arabalar çok küçükken, binalar çok büyük. O yüzden burada farklı kör nosajlarıyla öğrenmenin performansı attıracağını düşünüyorlar.
+
+203
+00:42:35,204 --> 00:42:46,884
+Şimdi benim de burada grup bazlı öğrenmeyi düşünmemin temel sebeplerinden birisi bu görsel. Bu görselde gördüğünüz üzere öğrenilen height ve width değerleri var farklı layerler için.
+
+204
+00:42:48,275 --> 00:43:09,775
+Geliştirdikleri konvolüsyonu UNET mimarisinde kullanıyorlar ve buradaki height ve width değerlerini çıkartmışlar. Burada benim fark ettiğim şey şu oldu. Buradaki değerler genelde objelerin çevrelerinde objelerin şekillerine göre öğrenilmiş. Mesela örnek olarak birinci height'ta buradaki binanın üstünü direkt olduğu gibi görebiliyoruz.
+
+205
+00:43:16,275 --> 00:43:19,295
+O zaman bunları gruplayalım ve o gruplar için öğrenelim.
+
+206
+00:43:20,692 --> 00:43:39,911
+Kısaca bu şekilde. Benim kendi ilk kısmında Group Learner diye bir layer var. Bu Group Learner'ın temelde öğrendiği şey her bir piksel için offsetlerini öğreniyor. Yani o pikselin sahip olduğu grubun merkezine olan uzaklığını öğreniyor.
+
+207
+00:43:40,211 --> 00:43:48,632
+Fakat burada tabii şöyle bir şey var. En başta ben dedim piksel bazlı öğreniyor işte height ve width değerlerini. Yine aslında piksel bazlı öğreniyor burada.
+
+208
+00:43:48,692 --> 00:43:51,692
+Bu aslında bizim...
+
+209
+00:43:53,460 --> 00:44:19,300
+Tam tersine gitmek istediğimiz bir şeydi ama niye peki böyle var? Ben böyle olduğu için bir pooling ve unpooling stratejisi düşündüm ki boyutunu küçültüp ondan sonra yapalım. Ama burada şöyle bir sıkıntı var. Bizim burada temelde öğrendiğimiz şeyler aslında feature map değil. Bunlar direkt olarak boylar ve bunlar olduğu gibi pooling veya unpooling uygulamak biraz sıkıntılı.
+
+210
+00:44:20,692 --> 00:44:38,892
+O yüzden şimdi buradaki pooling ve unpooling stratejilerinden bahsedeceğim. Öncelikle birinci olarak Max Magnitude Pooling diye bir şey var. Normalde Max Pooling, yani default versiyonu her bir channel için ayrı piksellerin maksimum değerlerini alıyor.
+
+211
+00:44:48,692 --> 00:45:03,492
+Bu şekilde pooling sonucunda alınıyor. Yani bütün bir channel var. Daha sonrasında da işte grup offsetleri öğreniliyor ve bu grup offsetlerine göre height ve width değerleri öğreniliyor.
+
+212
+00:45:04,172 --> 00:45:13,324
+Fakat şimdi bizim bu öğrendiğimiz değerleri unpooling ile geri döndürmemiz gerekiyor. Fakat sıkıntı şu, bunlar dediğim gibi...
+
+213
+00:45:13,364 --> 00:45:39,483
+Uzunluk değerleri, Feature Map değil. O yüzden direkt burada Max Unpooling uygulamak çok da mantıklı değil. Çünkü iki temel sebe var. Bir, öğrenilen height ve width değerlerinde ikiye ikilik katı alanlar oluşturuyor. İkinci olarak da çok yüksek frekanslı değişimlere sebebiyet veriyor. Burada bunu daha iyi anlatabilmek için bir sayısal örnek üzerinden gideceğim.
+
+214
+00:45:39,956 --> 00:46:02,796
+Mesela örnek olarak 2-5-5 sayıları ile öğrenilmiş yükseklikler var. Bunları max pooling uyguluyoruz. Ardından burada bilinear kernel var. Bu kernel ile konvolüsyon işlemi yapıyoruz. Ardından da ağırlıklar, yani bu değerlerin hesaplanılması için kullanılan ağırlıklarla normalize ediyoruz.
+
+215
+00:46:05,043 --> 00:46:25,804
+Kırmızı kare içerisindeki öğrenilen height değeri 4.5 oluyor. Normalde Max Ampullim kullansaydık 2 olacaktı ve bu da doğal olarak çok yüksek frekanslı height ve width kernel'larının oluşmasına sebebiyet verecekti. Aslında burada kenarlardaki kernel değerlerinin yumuşatılması söz konusu birazcık daha.
+
+216
+00:46:29,204 --> 00:46:51,124
+Mimari olduğu gibi devam ediyor. Yani benim yaptığım modifikasyon buraya kadardı. Devamında buradaki height ve width değerleri öğreniliyor fakat şöyle bir problem var. Her bir piksel için ayrı boyutlarda konvolüsyon işlemi yapamayız. GPU'nun doğası buna uygun değil. O yüzden şöyle bir yöntem geliştiriliyor.
+
+217
+00:46:56,115 --> 00:47:11,615
+İşte global koordinatları çıkartılıyor. Daha sonrasında bu örnek olarak bu arada 5'e 3 verilmiş. 5'e 3'lük kernel met, constant bir boyut bu.
+
+218
+00:47:12,224 --> 00:47:29,224
+Her bir piksel için, her bir pikselin öğrendiği boyutlarda genişletiliyor ve burada turuncu pikselleri görebiliyorsunuz. Oradaki değerler Bilinear Interpolation kullanılarak hesaplanıyor. Daha sonrasında bu çıkartılan 5'e 3'lük...
+
+219
+00:47:29,248 --> 00:47:47,708
+Kernel, pikselle yer değiştiriyor. Yani biz aslında o pikselde öğrendiği değerlerle konvolisyon uyguladığımızda elde edeceğimiz çıktığı temsil ediyoruz bu 5'e 3'lük alanla. Daha sonrasında boyut büyüyor. Burada mesela 5'e 3'lük olduğu için 15 katına çıkıyor örnek olarak.
+
+220
+00:47:52,688 --> 00:48:00,528
+Konvolüsyon boyutu kullanarak, kernel size ve stride burada yazdığı gibi konvolüsyon işlemini gerçekleştirebiliyoruz.
+
+221
+00:48:02,347 --> 00:48:15,028
+Şimdi dataset'ten bahsedeceğim birazcık. Normalde 3 dataset kullanıyor orijinal çalışmada ama bir tanesi Çinli bir tane Google Drive linkine yolluyordu. Çok güvenemedim açıkçası ona.
+
+222
+00:48:15,507 --> 00:48:39,587
+İkinci olarak da zamansal sıkıntılardan dolayı ikinci dataset yapmadım. Sadece bir dataset üzerine eğitim şeyler yaptım. Testleri gerçekleştirdim. QuickBird dataset. QuickBird aslında bir uydu ve bu uydudan elde edilen görüntülerin çok bunlar geniş bir alanı kapsıyor. Oradan kesilerek alınmış bölgeleri içeriyor. 1905'e de Training Sample mevcut.
+
+223
+00:48:40,596 --> 00:49:04,556
+Buradaki veri setini test edeceğiz ama birazdan metriklerden bahsetmem lazım. Çünkü farklı metrikler kullanılıyor diğer alanlara kıyasla. Bunlardan bir tanesi Spectral Angle Mapper. Bu temelde aslında piksellerdeki renk değerlerini bir vektör gibi ele alıyor ve bu vektörler arasındaki açıları karşılaştırıyor.
+
+224
+00:49:08,115 --> 00:49:19,115
+Vektörlerin açılarıyla karşılaştırdığı için siz bir görüntü %50'ün karanlıklaştırdığınızda aslında rengin...
+
+225
+00:49:19,360 --> 00:49:47,340
+Şeyi değişmiyor, sadece magnitudu değişiyor. Bu yüzden buradaki renksel farklılıklarını algılayamıyor. Bunun için Ergas kullanılıyor daha çok. Bu Ergas ise temelde ortalama spektral hatayı ölçüyor. Ama bunun da bir eksikliği var. O da ortalamaya göre ölçtüğü için farklı çenillarda corruption gerçekleşmiş olsa bile bunu açıklayamıyor. Her iki görüntüyü de aslında bir bakalım.
+
+226
+00:49:47,360 --> 00:50:08,039
+Aynı olarak değerlendiriyor. Ve Q4 değeri var. Bu normalde Qindex diye geçiyor. Universal Image Quality Index. Bu daha genel geçer bir metrik. Çünkü hem special hem de spectral özelliklerin kalitesini verebiliyor bize.
+
+227
+00:50:08,947 --> 00:50:30,367
+Bu şekilde. Şimdi yaptığım çalışmalardan nasıl yaptığım test ve train süreçte nasıl yaptığımdan bahsedeceğim. Ama burada önemli bir nokta var. Az önce bahsettiğim gibi veri setinde 1905 adet sample vardı. Orijinalde 9000 tane var. Çünkü QuickBird uydusu aslında ticari bir uydu. O yüzden halka açık değil veri setleri.
+
+228
+00:50:33,204 --> 00:50:52,204
+Benim elde ettiğim sonuçlar paperdaki sonuçlarla maalesef uyuşmuyor. Yaptığım çalışmayı temelde şu şekilde yaptım. Orjinal paperda da R Convolution'u alıp UNET'teki normal konvolution'lara yer değiştiriyordum. Ben de bunu...
+
+229
+00:50:52,500 --> 00:51:10,519
+Birden fazla konvolüsyon işlemi için yaptım. İşte benim Group Based Art Convolution, Art Convolution, Deformable Convolution, Multiscale Convolution ve Normal Default Convolution kullandım. Ve bu farklı konvolüsyon yöntemlerinin UNET mimarisinde nasıl bir başarı çıkarttığını ölçtüm.
+
+230
+00:51:13,588 --> 00:51:20,568
+Sonuçlarım bu şekilde. Gördüğünüz üzere burada Multinet sonuçlarının daha iyi olduğunu görebiliyoruz spektral anlamda.
+
+231
+00:51:20,688 --> 00:51:33,628
+Senler de spektral özelliklerle alakalı. Bunun temel sebebi aslında Multinet'te bulunan multiskele konvolüsyonlarının yoğun konvolüsyon katmanlarından oluşması.
+
+232
+00:51:33,628 --> 00:51:37,628
+Q4'e baktığımızda ama birinci olan Propos...
+
+233
+00:51:38,420 --> 00:51:57,900
+Bu metot garnet olduğunu görüyoruz. Bu şunu gösteriyor. Garnet köşeler gibi keskin noktaları tekrardan birleşip oluşturma konusunda daha iyi. Neden? Çünkü sen ve Ergas da diğerlerine göre daha kötü sonuçlar çıkartmış.
+
+234
+00:51:58,512 --> 00:52:15,652
+Q4 hem spektral hem speciall özellikleri değerlendiriyordu. Doğal olarak spektral konularda kötüyken, Q4'te bu kadar iyi alması speciall olarak yerlerine karşı çok fazla iyi oldu. Çok daha iyi bir performans gösterdiğini gösteriyor.
+
+235
+00:52:16,472 --> 00:52:23,752
+Burada da bu şekilde bir görselin tekrardan oluşturulmuş halleri var. Fakat insan gözüne çok da fark etmediği için.
+
+236
+00:52:24,340 --> 00:52:43,340
+Fark edemeyeceğim buradaki değişiklikleri. Ben Absolute Error Mean Map'ini oluşturdum. Burada biraz daha belli oluyor. Burada özellikle baktığımızda Garnet'in köşelerde, işte binaların köşeleri olsun, yolların köşeleri olsun, o bölgelerde daha az hata...
+
+237
+00:52:43,391 --> 00:53:11,011
+Oranı aldığını görebiliyoruz. Özellikle mesela UNET'te, yani normal CNN kullanılarda yolun ortasında böyle bir sürü küçük küçük noktalar çıkmış. UNET her yere ağaç koymaya başlamış. Neden bilmiyorum. Öyle bir şey yapmış. Burada ise OYOK ve genel olarak DAAS dediğim gibi köşelerde ve kenarlarda hatası var. Ayrıca ben de yine buradaki öğrenilen Hight ve Wid değerlerini çıkarttım.
+
+238
+00:53:11,391 --> 00:53:15,152
+Ve Arnet'le karşılaştırın. Burada Sarnet yazıyor onu değiştirmeyi unutmuşum kusura bakmayın.
+
+239
+00:53:17,139 --> 00:53:43,199
+Benim bahsettiğim bu grupsal öğrenme aslında bir bakıma kendini gösteriyor. Mesela burada karşılaştırdığımızda R-Net aslında bir sürü spike var. Yani birbiri arasına geçmiş çok yüksek frekanslı değişiklikler gösteriyor height ve height değerlerinde. Ama Sarnet'te buradaki değişiklikler genelde biraz daha yumuşak olduğunu görebiliyoruz. Özellikle şu su kısmında bu rahatça görülebiliyor.
+
+240
+00:53:45,139 --> 00:53:49,399
+Ben buradaki grupların merkezlerinin nereye düştüğünü map ettim.
+
+241
+00:53:51,599 --> 00:53:55,139
+Sağda görürdüğü gibi. İşte bu yüzden aslında burada segment yapıyor.
+
+242
+00:53:55,279 --> 00:54:00,859
+Çünkü ben en başta anlatırken bunların objelere göre olacağını varsayarak düşünmüştüm.
+
+243
+00:54:00,939 --> 00:54:04,859
+Yani objelerin merkezlerine toplanacak pikseller şeklinde.
+
+244
+00:54:04,859 --> 00:54:10,795
+Ama böyle olmadı. Tam tersine çoğu piksel kendi grup center'ını...
+
+245
+00:54:11,251 --> 00:54:25,371
+Görselin dışında olduğu için ve onlar kliplendiği için en çok piksele sahip olan grup genelde görüntülerin köşesinde toplanmış.
+
+246
+00:54:25,451 --> 00:54:35,251
+Mesela burada kırmızı noktada gösterilen grupta 14.240 piksel mevcut. Bu dediğim gibi benim düşündüğüm gibi çıkmadı.
+
+247
+00:54:36,115 --> 00:55:00,296
+Aynı zamanda şu da gözüküyor. Burada mesela elimizde 512'ye 512'lik bir görsel var. Burada 262 bin tane farklı height ve width değeri demek. Ama burada gördüğünüz üzere toplamda 11 bin 456 grup var. Buradaki n onu gösteriyor. Bu şunu gösteriyor aslında öğrenilen height ve width değerleri kritik bir biçimde düşmüş. Daha sonrasında bu şekilde level 5.
+
+248
+00:55:00,884 --> 00:55:02,864
+Peki layer bu.
+
+249
+00:55:03,483 --> 00:55:05,164
+Ve yine uniform ve öğrenme var.
+
+250
+00:55:06,884 --> 00:55:09,083
+Daha sonrasında level 9'da da önemli bir şey var.
+
+251
+00:55:09,204 --> 00:55:09,523
+O da şu.
+
+252
+00:55:10,463 --> 00:55:11,144
+Bahsetmiştim.
+
+253
+00:55:11,244 --> 00:55:13,103
+Burada öğrenilen height ve width değerleri.
+
+254
+00:55:13,652 --> 00:55:41,632
+Genelde objelere şeklini çıkartacak şekilde öğreniyor. Burada sadece height ve width değerleri değil, aynı zamanda bu grupların merkezleri de şeklini alacak şekilde öğrenilmiş. Mesela burada sahada görüldüğü gibi oradaki o limanı ve denizi aslında bir bakıma seçebiliyorsunuz. Ve yine burada köşede öğrenmiş. Az önce bahsettiğim sebepten dolayı. Beni dinlediğiniz için teşekkür ederim. Referanslarım bu şekilde. Sorunuz varsa cevaplayabilirim.
+
+255
+00:55:45,427 --> 00:55:50,907
+Teşekkürler [öğrenci]. Sunumun için seni anlaşıyoruz.
+
+256
+00:55:52,188 --> 00:55:53,347
+Teşekkür ederim hocam.
+
+257
+00:55:54,007 --> 00:55:58,668
+Şimdi ben bir soru soracağım. Arkadaşlar soru sorabilirsiniz lütfen.
+
+258
+00:56:00,108 --> 00:56:06,507
+Amacımız kimseyi sıkıştırmak değil. Sadece konuyu daha net anlamak için bir soru soruyorum.
+
+259
+00:56:07,027 --> 00:56:14,027
+Burada senin katkı yaptığın ve geliştirdiğin model adı neydi? En son yazdığın…
+
+260
+00:56:14,027 --> 00:56:23,027
+Garnet, yani işte bu Group Based Adaptive Rectangular Konvolüsyonu…
+
+261
+00:56:23,603 --> 00:56:40,403
+U.NET'te işte default konvolüsyonlarının yer değiştirilmesi. Yani o normal konvolüsyonlar yerine bu konvolüsyonu kullandım. Normal, orijinal paperda da böyle yapıyorlar. Arf konvolüsyonu, kendi geliştirdikleri metodu U.NET'te kullanıyorlar.
+
+262
+00:56:43,635 --> 00:56:55,235
+Ve Qder-Tatas şeyini ölçtüğümde, performans metriğine baktığımızda orada üste çıktı dediğim gibi.
+
+263
+00:56:55,235 --> 00:56:56,195
+Evet.
+
+264
+00:56:56,195 --> 00:57:01,215
+Bu diğer metriklerde de çok kötü bir durum.
+
+265
+00:57:02,036 --> 00:57:27,896
+Şöyle, UNET temelde aynı mimariyi kullandığım için farklı konvolüsyon işlemleri kullanılsa bile sonuçlar birbirine çok yakın çıktı. Hatta şöyle, ben sonuçları elde edemediğimden bahsetmiştim aynı sonuçları. Q4 değeri daha kötü orijinal paper'a göre. ARNET için konuşuyorum. Paper'ı nasıl orijinal sunduğu çözüm.
+
+266
+00:57:30,036 --> 00:57:48,916
+Daha iyi çıktı. Büyük ihtimalle dataset'te genel olarak benzer renkler içerdi. Daha küçük bir kısmını kullandığım için ben. O yüzden spektral anlamda daha iyi korudu. Ama daha az veri olduğu için spatial or reconstruction olayını çözemedi bence model. O yüzden böyle çıktı.
+
+267
+00:57:51,219 --> 00:57:58,500
+Bu kendi kullandıkları veri setine erişim yok dedi. O yüzden run'u seçti.
+
+268
+00:57:59,939 --> 00:58:09,019
+Şöyle hayır, onlar bunu da kullanıyor. Fakat public halka açık olan kısmı belli bir subseti sadece. Onu kullanma.
+
+269
+00:58:11,891 --> 00:58:14,111
+O da daha az veri içeriyordu. O yüzden böyle çıksın.
+
+270
+00:58:14,111 --> 00:58:21,611
+Şimdi onu diyecektim. Yani subset dediğine göre sayı olarak daha az. O sonuçta daha büyük bir veriyle bunu eğitmiş olduk.
+
+271
+00:58:21,611 --> 00:58:28,391
+Evet. Peki. Güzel. Yani benzer şekilde siz de düşünebilirsiniz konferans sunumu.
+
+272
+00:58:29,231 --> 00:58:35,211
+Mutsal bir konferansa katılmayı. Teşekkür ediyoruz sunumunuz için.
+
+273
+00:58:35,664 --> 00:58:37,304
+Ben de teşekkür ederim hocam.
+
+274
+00:58:37,324 --> 00:58:47,744
+Bir ara verelim. 10 dakika ara. Ondan sonra [öğrenci] sizi denileceğiz.
+
+275
+00:58:47,744 --> 00:58:58,504
+Ve listeye lütfen yeni gelen arkadaşlar da eklensinler. En az 6 kişi sunum yapsın istiyorum.
+
+276
+00:58:59,284 --> 00:59:04,784
+Şu anda üç kişi gönüllü oldu. Aradan sonra bir üç daha bekliyoruz.
+
+277
+01:08:58,996 --> 01:09:02,595
+Tekrar merhaba arkadaşlar. Kaldığımız yerden devam ediyoruz.
+
+278
+01:09:05,095 --> 01:09:09,576
+Reyhan'ımız, Gören, hazırsanız sizi dinleyeceğiz.
+
+279
+01:09:09,876 --> 01:09:10,716
+Merhaba hocam.
+
+280
+01:09:11,376 --> 01:09:15,496
+Merhaba. Kameramızı açalım, ekran paylaşımı yapalım lütfen.
+
+281
+01:09:16,036 --> 01:09:16,296
+Tabii.
+
+282
+01:09:22,484 --> 01:09:25,123
+Merhaba hocam, tekrardan ekranımı paylaşayım.
+
+283
+01:09:29,123 --> 01:09:38,703
+15 dakika süremiz var ve neden bu konuyu seçtiğinizi de açıklayarak başlayın lütfen.
+
+284
+01:09:42,228 --> 01:09:59,728
+Şimdi benim seçilmek hale MRDTR, Instructive Moodle Training for Detection Transformers. Bu Hong Kong Üniversitesi Visual AI Lab tarafından gerçekleştirilmiş bir çalışma. Object Detection alanında çalışılmış.
+
+285
+01:10:00,000 --> 01:10:24,720
+Benim bu makaleyi seçme nedenim de lisansdayken bitirme projemde çekilmelik tespit üzerine bir proje gerçekleştirmiştik. Orada programlar üzerinde CNN'ler ile feature çıkartıp uzatma, tekrarlama ve benzeri durumları tespit etmeye çalışmıştık. Bu da Object Detection üzerine bir makale olunca ilgimi çekti. Bu nedenle tercih ettim.
+
+286
+01:10:25,716 --> 01:10:52,096
+Sınımaların yerinden bahsetmek istiyorum. Şimdi MRDTR, Object Detection tabanlı ve DETR modelinden üretilmiş bir mimarı olduğu için onları bir kısaca açıklamak istiyorum. Ardından MRDTR'da kullanılan işte multi-road training nedir? Bundan bahsedeceğim. Benim yaptığım deney ortamım, elde eden sonuçlarım, analizlerimden ve ardından da genel yorumlarımı anlatacağım.
+
+287
+01:10:53,779 --> 01:11:05,879
+İlk olarak Object Detection nedir? Object Detection'ı bir resim üzerindeki nesneleri classification ve lokalizasyon yaparak bulma süreci gibi düşünebiliriz.
+
+288
+01:11:05,879 --> 01:11:16,699
+Genelde bounding box'lar kullanılıyor ve bunların üzerinde de etiketleri ya da karar sporları oluyor. Gerçi kayatta kullanım örnekleri oturt sürüşlerde kullanılıyor.
+
+289
+01:11:16,799 --> 01:11:21,760
+Tesla gibi arabalarda trafik ışıkları ya da trafik levhaları insanlar.
+
+290
+01:11:21,779 --> 01:11:32,679
+tespiti gibi güvenlik ve gözetim sistemleri tıbbi görüntüleme ve teşhislerde kullanılıyor. Doktarlardan önce tıbbi görüntülerin ne olduğunun belirlenmesi gibi süreçlerde.
+
+291
+01:11:33,908 --> 01:11:57,368
+DTR'dan bahsetmek istiyorum. Neden DTR? DTR neden kullanılıyor? İlk olarak onu açıklamak istiyorum. Şimdi DTR'den önceki geleneksel modeller çok fazla aşama içeriyorlar. Bunlar en çör tabanlı oluyor. En çör taban dediğimiz şey de gültüleri çok sayıda hazır kutu konuluyor ve her kutu burada nesne var mı diye kontrol ediliyor.
+
+292
+01:12:01,908 --> 01:12:28,448
+vesaire şeklinde birçok kutu kullanılıyor. Bu kutular düzenleniyor. Fakat bu çok fazla hesaplama yaptırtıyor. Çok fazla aday kutu oluyor ve çok karmaşık bir yapı sunuyor. Ve gelenekler modellerde non-maksimum separation de oluyor. NMS. Non-maksimum separation dediğimiz şey de aynı nesne için birden fazla kutu üretiliyor. Ve bu kutularda en yüksek skorlu olan seçiliyor. Diğerleri de siliniyor.
+
+293
+01:12:29,908 --> 01:12:44,608
+Yaptığımız zaman DTR Prediction yapıyor. Yani nesneleri tek tek tahmin etmeye çalışıyor. Her object query bir nesneyi temsil etmeye öğreniyor. Yani yüzlerce entry box yerine doğrudan nesne ve bounding box tahmin yapılıyor.
+
+294
+01:12:45,167 --> 01:12:57,228
+Burada non-maximal separation gerekli değil. Çünkü aynı nesne için 10 kutu üretmeye çalışmıyor. Training sırasında Hungarian matching denilen bir teknik kullanılıyor.
+
+295
+01:12:57,908 --> 01:13:07,507
+Bununla da bir nesne bir tahmin şeklinde öğrenim gerçektiriliyor. Ayrıca burada ekstra kutu temizleme de gerekmiyor.
+
+296
+01:13:07,507 --> 01:13:14,507
+Burada bir end to end yaklaşım var. Yani tek bir model giriş görüntüsünden doğrudan son nesne tahminini yapabiliyor.
+
+297
+01:13:14,507 --> 01:13:19,108
+Yani tek bir pipeline var. Daha sade, daha modern ve transformer tabanlı.
+
+298
+01:13:19,252 --> 01:13:38,752
+Bir mimarı içeriyor. Burada da DTR'ın paynından bahsetmek istiyorum size. İlk olarak burada gördüğünüz gibi giriş görüntüsü alınıyor. Ardından bir CNN Backbone kullanılarak görüntüden feature map'ler çıkartılıyor. Yani işte görüntüdeki kenar, şekil, nesne özellikleri nelerdir? Bunlar bakılıyor.
+
+299
+01:13:47,252 --> 01:13:59,532
+İlişkiler öğreniliyor. Yani nesnelerin birbirine göre konumu, global'daki bağlamları nedir? Aslında bu kısmı pikseller aynı objeyime ait gruplanması olarak düşünebiliriz.
+
+300
+01:13:59,892 --> 01:14:15,252
+Decoder kısmında da objekt kureler atılıyor. Yani bunlar aslında objekt kure dediğimiz şey öğrenilebilir vektörler olarak geçiyor. Her kureli bir nesneyi temsil etmeyi öğreniyor. Bu kureler ile de görüntüdeki nesneler bulunuyor.
+
+301
+01:14:15,252 --> 01:14:40,731
+Burada prediction help dediğimiz bir kavram da var. Bu da meslenin sınıfı ve bounding box'ının tahmini yapılma kısmı olarak düşünülebilir. Az önce bahsettiğim hangar yeme için de burada kullanılıyor. Modelin once one yani bir tahmin bir ne için gerçekleştirilen algoritmasının kullanıldığı kısım da burası aslında.
+
+302
+01:14:42,547 --> 01:15:00,387
+Fakat DTR'ın dezavancıları da var. İlk olarak Convergence'u yavaş kalıyor. Burada Convergence dediğimiz şey modelin iyi sonuç vermeye başlaması. Yani öğrenme sürecinde modelin stabilize olması demek. DTR modelleri geleneksel modellere göre daha yavaş kalıyor.
+
+303
+01:15:10,547 --> 01:15:38,547
+Bu nesnelerin saptamada güçlük çekiyor. Çünkü küçük nesneler görüntüden feature çıkarım kısmında küçük olmalarından dolayı daha az featureler çıkarılıyor. Bu da modelin tahminini zorlaştırıyor. Eğitim süreci de oluyor. Çünkü burada DTR modellerinin iyi performans verebilmesi için daha uzun effort sayılarıyla eğilmesi gerekiyor. İlk DTR modelleri yüzlerce effort ile training ediliyor muyum?
+
+304
+01:15:38,960 --> 01:16:04,300
+Kurya optimizasyonunda da zorluk oluyor. Çünkü sınırlı supervision nedeniyle query learning süreci stabil olmayabiliyor. MRDTR'da aslında bu problemi ortadan kaldırmaya çalışıyor. Şimdi MRDTR nedir? Model training sırasında tek bir supervision yolu yerine birden fazla training yolu root kullanmak tercih ediyor.
+
+305
+01:16:06,960 --> 01:16:19,239
+Bunu ileride anlatacağım. Böylelikle model Türk sırasında daha fazla öğrenme sinyali alıyor ve sadece one to one değil, one to many per vision de kullanılmış oluyor.
+
+306
+01:16:20,020 --> 01:16:26,700
+Ayrıca çoğu yöntem performansı arattırırken modeli ağırlaştırıyor. Yani tahmin süresini uzatıyor.
+
+307
+01:16:26,700 --> 01:16:34,220
+Fakat MRDTR bu multi road trainingi, az üzerinde de geçtiği gibi sadece training aşamasında kullanıyor.
+
+308
+01:16:34,960 --> 01:16:41,420
+Bu kısmına dahil etmediği için tahmin süresinde de herhangi bir uzama vesaire olmuyor.
+
+309
+01:16:43,060 --> 01:16:49,960
+Şimdi burada size 1 to 1, 1 to many ve multi road nedir? Ondan bahsetmek istiyorum.
+
+310
+01:16:50,360 --> 01:16:57,480
+Şimdi bu 1 to 1 da her nesnenin yalnızca bir tane prediction oluyor. Yani bir prediction query ile eşleşiyor.
+
+311
+01:16:57,480 --> 01:17:02,880
+Fakat model sınırlı supervision aldığı için convergence süresi yavaşlayabiliyor.
+
+312
+01:17:03,420 --> 01:17:07,940
+1 to many de de bir nesne bir daha fazla prediction ile eşleştirilebiliyor.
+
+313
+01:17:11,060 --> 01:17:36,900
+Bu konuda daha hızlı öğreniyor. Fakat burada da aynı nesli için birden fazla tahmin oluşabileceğinden dolayı duplicate prediction problemi ortaya çıkıyor. Bundan dolayı da ek bir filtraleme yöntemi gerekiyor. Bunların loss hesapları da farklı oluyor. Normalde one to one'da loss hesaplarken tahmindeki hem classification hem de bonding box'ın loss hesapları toplanarak ortaya çıkıyor.
+
+314
+01:17:39,060 --> 01:17:49,400
+ROT için ROT'ların bir kat sayıları oluyor genelde. Tahmini ne kadar etki ediyor diye ve bütün ROT'ların Lof hesapları toplanarak bir Lof hesabı yapılıyor.
+
+315
+01:17:50,180 --> 01:17:57,520
+MRDTR'ın Multi-ROT'da aslında bu iki yaklaşımın avantajını kullanmayı hedefliyor.
+
+316
+01:17:57,520 --> 01:18:05,460
+Training aşamasında Acceleration Provision ROT'ları ekleyip Influence sırasında çıkararak da 1-2-1 yapıya dönüyor.
+
+317
+01:18:06,100 --> 01:18:34,000
+MRDTR'ın şimdi metodundan bahsetmek istiyorum size. Şimdi normalde 1-to-1 ve 1-to-man'i aynı decoder içinde tamamen paylaştırıldığında birbirleriyle çakışabiliyorlar. Bunun nedeni de mesela bir query pozitif sonuç verirken öbürü mesela negatif dönebiliyor. Bu yüzden learning karışıyor, query optimization zorlaşabiliyor. MRDTR'da çözümlüde farklı görevleri, farklı rulara öğretelim.
+
+318
+01:18:34,100 --> 01:18:53,000
+Bu ikinci ruttan başlamak istiyorum. Bu ana prediction rutu yani klasik DT pipeline'ını temsil eden rut bu kısım. One to one matching kullanıyor ve inference sırasında aktif kalan tek rut bu ikinci rut.
+
+319
+01:19:02,100 --> 01:19:14,740
+Root 1, Feed Forward Network aşamasında diğerlerinden ayrılıyor. Çünkü bu anı root'u bozması istenmiyor. Onu engellemek amacıyla ayrılıyor.
+
+320
+01:19:14,740 --> 01:19:26,420
+Burada root 3 var. Root 3'de Instruction Token, Instructive Step Attention kısmı var burada. Aslında bunu yönlendirici root olarak düşünebiliriz.
+
+321
+01:19:26,899 --> 01:19:54,819
+Transformer'da self-attention var. Self-attention normalde hangi feature hangi feature ile ilgili ona bakıyor. Mesela bir insanın bir masada da oturduğu bir görüntü varsa o feature'lar, çıkan feature'lar arasındaki ilişkilerle bunu çözmeye çalışıyor. Buradaki Instructive self-attention, Instruction tokenları kullanarak Object Query'lerin öğrenme sürecini yönlendiriyor. Cross-attention aşaması var. Burada da query ile görüntü.
+
+322
+01:19:54,899 --> 01:20:02,079
+İçerilerinin aslında yetişim kurduğu kısım gibi düşünebiliriz. Birbirleriyle etkileşime geçiyorlar.
+
+323
+01:20:02,868 --> 01:20:29,307
+Ben deney ortamından bahsetmek istiyorum. Google Colab kullandım. Nvidia T4 GPU ile çalıştım. Burada çalışmada Coco 2017 Valide Datasetini kullandım. Bu biraz büyük bir veri seti. Valide Eşim'de yaklaşık 5000 civarı bir sample vardı. Burada MRDTR'ın Alip Hugging Face'de yayınlanmıştı. Oradan çektim.
+
+324
+01:20:30,868 --> 01:20:58,868
+DTR'da GitHub riposundan modeli çalıştım. Kullanan modellerde de bu DTR aleli normalde MR DTR çalışmasında geçmiyor. Fakat ben DTR'ın pipeline'ın çalışmasını için kendim ekstra olarak test ettim. Bu Align DTR'ı da karşılaştırma modeli olarak tercih ettim. Bunun da ayrı bir GitHub riposu vardı. Bunun ağırlıkları kendi GitHub riposunda vardı. Oradan çektim ve ipo farkına...
+
+325
+01:20:58,868 --> 01:21:02,868
+Burada görmek için hem 12 ipoç hem de 24 ipoç.
+
+326
+01:21:03,028 --> 01:21:21,288
+Sınır halleri ile test ettim. Kullandığım mesleklerde AP, AP50, 75, Small, Medium ve Large bunlardan da bir tık bahsedeyim. Aslında burada Average Precision ne kadar doğru nesne buluyor, ne kadar doğru lokalizasyon yapıyor. Bunu ölçen bir meslek.
+
+327
+01:21:31,028 --> 01:21:56,948
+Üzerindeyse kabul et başarılıyor. Burada da %75. Bu daha katı bir bakış aslında. Bunlar daha çok bounding box'ı gerçek görüntüyle ne kadar eşleştiğini kont ediyorlar. Buradaki SML de, buradaki small, medium ve large aslında küçük nesnelerdeki başarısını ölçüyor. Orta boyutlardaki nesnelerdeki başarısını ve büyük boyutlardaki nesnelerdeki başarısını ölçüyor.
+
+328
+01:21:57,555 --> 01:22:23,095
+Benim elde ettiğim sonuçlar ve makaledeki sonuçların karşılaştırılması için bir tablo oluşturdum. Ben oldukça yakın neredeyse aynı sonuçları elde ettim. Bunda tabii hazır ağırlıkları kullanmamın büyük etkisi olduğunu düşünüyorum. Sadece şurada Align DTR'da ufak bir farklılık var ama onda da kullandığım GPU'dan ve ortamdan kaynaklı olabilir düşünüyorum.
+
+329
+01:22:25,555 --> 01:22:41,355
+Baktığımız zaman, yani nesnenin klasik ve lokalizasyonlar doğru genel tahminizde, bu DTR-based model, ilk modellerde baktığımızda aslında elantilerle beraber yaklaşık %10'luk ciddi bir artış var.
+
+330
+01:22:41,995 --> 01:22:49,175
+MRDTR'la da yani multilatının gelmesiyle de %1 civarlarında artış oluyor.
+
+331
+01:22:49,175 --> 01:22:53,515
+Burada IP75 de önemli. Bu çünkü lokalizasyonu az.
+
+332
+01:22:53,555 --> 01:23:08,715
+Yani benim olumluğum bounding box'ım ne kadar doğru. Burada da aslında yine multi-road ile beraber başarının arttığını gözlemleyebiliyoruz. DTR'in küçük objektlerdeki başarısına düşük olduğundan bahsetmiştik.
+
+333
+01:23:09,171 --> 01:23:31,131
+Aslında airline DTR'la bu da yine ciddi bir oranda artmış. Fakat multi-road ile ve effort sayısının artımı ile bu sayının da daha iyileştirilebildiğini görüyoruz. Ekstra görsel olarak da göstermek için belirli yine COCO 2017'den seçtiğim resim üzerinde çıkartma yaptım.
+
+334
+01:23:31,247 --> 01:23:41,247
+İlk olarak burada ELIN DTR'in 12 Epoçluk ve ELIN DTR'in MRDTR metodu ile çalıştırılmış 12 Epoçluk halini karşılaştırmak istedim.
+
+335
+01:23:41,247 --> 01:23:50,807
+Mesela burada gördüğünüz gibi buz dolabının tespit edilmiş fakat burada edilmemiş.
+
+336
+01:23:50,947 --> 01:23:55,787
+Aynı şekilde burada mesela camdaki insan tespit edilmiş fakat burada yok.
+
+337
+01:23:59,247 --> 01:24:14,687
+Kararlılık skorlarının da daha iyileştiğini görebiliriz. Sadece burada LIDTR'da bazı olduğunu saptamış etiketinin. Fakat buddle olarak yani şişe olarak işaretlemiş bu yanlış bir tahmin aslında.
+
+338
+01:24:15,315 --> 01:24:36,675
+Burada ise 12 Epoç ve 24 Epoçluk karşılaştırmalarını yapmak istedim. Mesela 12 Epoç'ta masayı tahmin edememişti fakat 24 Epoç'ta bunu saptayabildi. Aynı şekilde burada mesela Refugee Rait'ın Banding Box'ına baktığımız zaman daha iyileşme olduğunu görebiliyoruz.
+
+339
+01:24:39,296 --> 01:24:57,096
+Buradaki isimlerini unuttum. Dolapları da içerisindeyiz. Fakat burada refüjeritliği sınırlarını daha iyi şekilde çiziyor. Aynı şekilde skorlarda da iyi iletmeler görebiliyoruz. Özellikle matada içmiş sandalyelere baktığımız zaman da.
+
+340
+01:24:57,971 --> 01:25:25,971
+Benim genel yorumum bu araştırma sonucunda. Multi-road ile DTR'ın aid iyileştiriliyor. Aslında yani daha fazla star vision ile daha fazla sinyal gidiyor modeli. Bu da training sürecini iyileştiriyor. Ve multi-road ile daha iyi precision ve daha iyi bonding box çıkarımı yapılıyor. Daha iyi lokal değişme, daha iyi classification yapılıyor. Ve burada bir ad inference maliyeti yok. Bunu çok önem...
+
+341
+01:25:25,971 --> 01:25:40,451
+Çünkü genelde bahsettiğim gibi modeller iyileştirildiğinde model aslında bir tık daha ağırlaşıyor. Tahmin süreci uzayabiliyor. Fakat burada training aşamasına bıraktıkları için inference sürecinde herhangi bir uzama değişim olmuyor.
+
+342
+01:25:41,451 --> 01:25:52,311
+Ve makale sonuçlarıyla benim deney sonuçlarım neredeyse aynı diyebilirim. Oldukça yakınlar. Benim sınavım bu şekildeydi. Dinlediğiniz için teşekkür ederim.
+
+343
+01:25:54,707 --> 01:25:57,147
+Teşekkür ediyoruz.
+
+344
+01:25:57,147 --> 01:25:57,587
+Teyze.
+
+345
+01:26:00,167 --> 01:26:00,607
+Yürü.
+
+346
+01:26:01,127 --> 01:26:03,867
+Şimdi altı şey yürüdü.
+
+347
+01:26:07,487 --> 01:26:10,827
+Hangi data sözü üzerinde denenmişti?
+
+348
+01:26:13,567 --> 01:26:16,347
+Topu 2017 veri sözü üzerinde hocam.
+
+349
+01:26:17,908 --> 01:26:24,568
+Peki, senin burada mevcut modelleri denemeyin nefesinde bir katkın var mı?
+
+350
+01:26:29,939 --> 01:26:31,299
+Neyse, sen alamadım ama.
+
+351
+01:26:31,979 --> 01:26:39,679
+Mevcut makalede önerilen yöntemlerin üstüne ilave bir katkın var mı diye sordum.
+
+352
+01:26:43,179 --> 01:26:50,399
+Makalede elen dt sesim geliyor mu?
+
+353
+01:26:50,399 --> 01:26:52,099
+Evet, duyabiliyorum.
+
+354
+01:26:53,555 --> 01:27:14,375
+Tamam. Makalede Align DTR'ın çalışması vardı fakat DTR R50'nin çalışması yoktu. Ben bununla da karşılaşmasını gerçekleştirdim ve bir tık daha validasyon aslati sürecine odaklandım. Birbirleriyle karşılaştırmalarını yaptım diyebilirim.
+
+355
+01:27:17,363 --> 01:27:19,963
+Peki, hepinizle sağlık, teşekkür ediyoruz.
+
+356
+01:27:20,623 --> 01:27:21,303
+Soru var mı?
+
+357
+01:27:23,583 --> 01:27:28,763
+Evet, sevgili arkadaşlar, sunum yapmak için aday aranıyor. Var mı gönüllü?
+
+358
+01:27:30,223 --> 01:27:32,143
+Bugün hazırım, ben de sunayım diyen.
+
+359
+01:27:34,143 --> 01:27:36,583
+Sadece üç arkadaşımız sunum yaptı.
+
+360
+01:27:50,836 --> 01:27:52,836
+Ben bunu yapmak isteyemle bu için.
+
+361
+01:28:01,011 --> 01:28:02,771
+Hocam ben adımı yazdım ama.
+
+362
+01:28:04,511 --> 01:28:05,971
+Öyle mi? Göremedim.
+
+363
+01:28:05,971 --> 01:28:06,152
+Evet.
+
+364
+01:28:06,851 --> 01:28:07,811
+Ders kularına.
+
+365
+01:28:08,671 --> 01:28:08,891
+Evet.
+
+366
+01:28:08,891 --> 01:28:08,952
+Tamam.
+
+367
+01:28:11,251 --> 01:28:15,791
+Okey, o zaman siz dinleyelim. Sama Hızasınız. Duydum.
+
+368
+01:28:29,811 --> 01:28:31,811
+Evet, kanayı açtınız.
+
+369
+01:28:31,811 --> 01:28:34,811
+Şimdi bir okran alınlaşalım.
+
+370
+01:28:37,811 --> 01:28:38,811
+Geldim şu an.
+
+371
+01:28:38,811 --> 01:28:40,811
+Evet, görebiliyoruz.
+
+372
+01:28:40,811 --> 01:28:43,811
+Tam ekran yapabilecek misiniz?
+
+373
+01:28:48,212 --> 01:28:49,836
+Evet, ben tamam.
+
+374
+01:29:02,100 --> 01:29:19,979
+Öncelikle makalemden bahsedeyim. Makalem karmaşık senaryolarda veri seti damıtmayla ilgili ve bunların ayrıntı özelliklerinin vurgulanmasıyla ilgili Toronto Üniversitesi'nde çalışılmış. Amerika'dan başka üniversitelerden de katılınçlar var ama orada gerçekleştirilmiş.
+
+375
+01:29:20,787 --> 01:29:33,127
+Öncelikle DataSense Distillation'ın ne olduğundan bahsedeceğim. Sonra baseline modellerden, sonra makalenin önerdiği yöntemlerden ve kendi yaptığım deneylerden, sonuçlardan bahsedeceğim.
+
+376
+01:29:36,727 --> 01:29:40,207
+DataSense Distillation yani veri seti damıtma.
+
+377
+01:29:42,387 --> 01:30:01,928
+Büyük eğitim veri setlerinin daha küçük sentetik veriler oluşturulması ve bu oluşturulan küçük sentetik verilerin o büyük gerçek veri setleriyle performansının ne kadar yakın olduğunun verilenmesi.
+
+378
+01:30:02,588 --> 01:30:05,628
+Bu konu çok ilgimi çektiği için bu makaleyi seçtim.
+
+379
+01:30:06,739 --> 01:30:16,180
+Burada kritik bir durum var. IPC, yani Image First Class, yani sınıf başına ne kadar görüntü sentistikleri olarak oluşturacağım.
+
+380
+01:30:16,180 --> 01:30:25,579
+Mesela 10 tane klasımız varsa IPC'yi 1'i 1 seçtiğimizde 10 tane görüntü oluşturmuş oluyoruz her sınıf için. Her sınıf için bir tane toplam 10 tane sentistik görüntü.
+
+381
+01:30:26,079 --> 01:30:34,739
+IPC 50'yi seçtiğimizde de toplam 500 görüntü oluşturmuş oluyoruz. Yani gerçek verimiz 50 bin görüntü ise bunu damıtarak 10 ya da 500 tane.
+
+382
+01:30:34,739 --> 01:30:36,587
+Aynı görüntü oluşturmuş oluyoruz.
+
+383
+01:30:42,003 --> 01:30:45,163
+Kendi ilerliyor slide ama kendi kendine ilerliyor.
+
+384
+01:30:45,923 --> 01:30:51,963
+İlgili çalışmalarda baseline modellerden bahsedeceğim. Bu referans olarak en temel yöntem random.
+
+385
+01:30:52,203 --> 01:30:57,043
+Yani bir distillation yapmadan gerçek verikten sadece bir tane rastleri seçiyor.
+
+386
+01:30:57,804 --> 01:31:02,083
+Bu yöntemlerin atası niteliğinde. Yani böyle yapsak nasıl olur demişler.
+
+387
+01:31:02,904 --> 01:31:05,783
+Diğer yöntemlerde gradden eşitleme.
+
+388
+01:31:10,003 --> 01:31:17,083
+Gerçekleriyle eğitilmiş modelin öğrenme ünlü sentetik verilerimiz ne kadar taklit edebiliyor bununla ilgili.
+
+389
+01:31:18,543 --> 01:31:21,823
+Yani modelin ağırlıkları sanki gerçekleriyle eğitiyormuş gibi oluyor.
+
+390
+01:31:22,579 --> 01:31:42,860
+Disti dağılım eşitleme yönteminde de gerçek verinin öz nitelik bilgileri, yani katmanlardaki oluşan doku örneği, dokusu, kenar kısımları, bunları taklit ederek sentistikleri oluşturmaya çalışıyoruz. Burada klatyen olmadığı için tabii ki bu daha hızlı çalışıyor ve yüksek alpistik değerlerine daha iyi sonuçlar veriyor.
+
+391
+01:31:49,779 --> 01:32:01,960
+Diğer yöntem bu yörünge eşitliği demek. Diğer yöntemlerde şöyle bir sıkıntı vardı. O yöntemler sadece o anki katmana bakıyordu. Sonra tekrardan başa dönüp.
+
+392
+01:32:02,260 --> 01:32:08,140
+Bu yörün değişikliğinde de bir buffer oluşturuluyor, bir uzman modeli oluşturuluyor.
+
+393
+01:32:08,140 --> 01:32:15,380
+Sentitikleri de öğrenci model olarak bu modelden oluşan sonunda DOS değeriyle tekrardan gradyanlar hesaplıyor.
+
+394
+01:32:15,380 --> 01:32:17,380
+Buraya da bunun simülasyonunu koydum.
+
+395
+01:32:18,452 --> 01:32:30,452
+Şu an fareyle gösterebiliyor muyum bilmiyorum ama gerçek görüntüden bir modelimiz buffer olarak, buffer üzerinde oluşturduğumuz modeller eğitiliyor.
+
+396
+01:32:30,452 --> 01:32:42,380
+Sonra sentitik görüntülerle, burada gösterdiği gibi sentitik görüntülerle eğitiyor. Bu ikisi arasındaki ne kadar yakınlaşmış onu hesaplanıyor ve tekrardan gradiyanlarla geri döndü.
+
+397
+01:32:45,011 --> 01:32:51,611
+Makalenin kendi önerdiği yönteme bakınca da bu şöyle bir durum olduğunu söylüyor.
+
+398
+01:32:53,108 --> 01:33:11,587
+Veri seti damıtma yöntemlerinde, önceki yöntemlerde hep bütün resimdeki bütün pikselleri aynı önemi verdik. Yani hepsine aynı şekilde baktık diyor. Ama bu yöntem diyor ki biz sadece o resmin olduğu bölgeye bakalım. Yani mesela buradaki resimde gökyüzüne bakmayalım, sadece uçağa bakalım demek istiyorlar.
+
+399
+01:33:12,448 --> 01:33:14,948
+Bunu yapanda iki tane modülü var.
+
+400
+01:33:18,644 --> 01:33:25,644
+İlk modül, sınıflardaki ortak olan gereksiz desenleri...
+
+401
+01:33:25,648 --> 01:33:53,648
+Gereklisiz desenleri elemek için geliştirilmiş bir modül. Yani uçak resimlerinde, mesela gökyüzü hepsinde ortak. Onları elemek için geliştirilmiş bir modül. Yani her parametre için bir kayıp hesaplanıyor. Yörünge eşleştirme kaybı. O kayıplar küçükse, yani hepsinde mavi gökyüzünü görmüş oluyor. O küçük kayıplar elenmiş oluyor. Sonuç olarak sadece sınıfı ayırt edici kısımlar kalmış oluyor. Diğer modülde de bu işlemi yaptık.
+
+402
+01:33:53,648 --> 01:33:58,648
+Daha sonra diğer modülde de resimde model...
+
+403
+01:33:59,859 --> 01:34:25,899
+Resmi tanınmasına gerek kalan, yani resmi neye bakarak tanıyacak? Yani mesela kedinin kafasına, kulağına falan bakarak tanıyacak. Bu bölgeleri tespit edip onlara göre gradyanları değiştiriyor. Bunun için Gretken kullanıyor. Buradaki görseldeki gibi bir ısı haritası ile aktivasyonlarla resimlerin olduğu bölgeleri, oradaki gradyanları güçlendiriyor.
+
+404
+01:34:30,739 --> 01:34:44,399
+Makalenin diğer sunduğu bir yöntem de kompleks yani karışık veri setlerinde, yani içindeki nesnenin küçük olduğu veri setlerinde bir benchmark oluşturmuşlar.
+
+405
+01:34:45,159 --> 01:34:46,379
+Çok özür dilerim.
+
+406
+01:34:48,115 --> 01:35:01,096
+Bir benchmark oluşturmuşlar. Bunu Imaginet'te 8 tane ana kategori de zorluk seviyesine göre 2 gruba ayrılmışlar. Bu zorluk seviyesi de şu şekilde. İlk başta kolay. Yani nesnenin belirgin olduğu kısımlar.
+
+407
+01:35:03,636 --> 01:35:15,796
+Nesnenin belirgin olduğu ve merkezi olduğu kısımlar kolay set olarak adlandırılmış. Nesnenin küçük kaldığı, arka planın daha ön planda olduğu kısımlar da zor veri set olarak adlandırılmış.
+
+408
+01:35:20,627 --> 01:35:35,987
+Makale performansına baktığımız zaman da makale hem Sifar 10'da deneme yapmış, hem Tiny ImageNet'de yapmış, hem kendi oluşturduğu Benchmark'ta yapmış, hem de ImageNet'te gibi yöntemlerde, veri setlerinde çalışmalar yapmış.
+
+409
+01:35:37,447 --> 01:35:38,987
+Gördüğünüz gibi şey...
+
+410
+01:35:40,020 --> 01:35:59,279
+Kendi oluşturduğu Benchmark'ta kolay ve zor kısımlarında yaptığı karşılaştırmalarda sadece aradığı bir %5'lik fark var. Bu da zor yani karmaşık veri setlerinde de iyi performans gösterdiğini ortaya koymuş bunun. Makalenin IPC50 değerinde bulduğu en yüksek sonuç %77.
+
+411
+01:36:01,971 --> 01:36:09,492
+Sifar 10 veri setinde de denemeler yapmış. Ben de Sifar 10 veri setinde yaptığım denemeler. Onlardan bahsedeceğim.
+
+412
+01:36:12,011 --> 01:36:17,992
+Dene kurulumunda Sifar 10 kullandım ben de. İmejnet çok büyük olduğu için Sifar 10 kullandım.
+
+413
+01:36:18,631 --> 01:36:22,692
+Modern mimarisi olarak 4 katmanlı Covnet mimarisi kullandım.
+
+414
+01:36:24,144 --> 01:36:49,524
+Sifaron'a gerçekten daha uygun olacağını düşündüm. Yöntemlerde bahsettiğim Beislaan yöntemlerini denedim. Senaryolarımda da aynı şekilde IPC1 ve IPC50'yi denedim. Ve türevlenimli veri arttırımı denedim. Makale de bunu denemiş. Ama ben hem denedim hem denememiş bir şekilde karşılaştırma yaptım bunun için. Sonuçları da üç kez bağımsız çalıştırıp ortalama iki sürü aldım makaledeki gibi.
+
+415
+01:36:52,979 --> 01:36:55,979
+IPC1 sonuçlarına baktığımız zaman...
+
+416
+01:36:57,684 --> 01:37:08,344
+İlk başlarda Augmentation olmadığı zaman random'ın yüksek olduğunu görüyoruz. Bu da random'ın rastgele bir tane resim seçtiği için küçük veri setlerin de daha başarılı olduğunu gösteriyor.
+
+417
+01:37:08,604 --> 01:37:15,484
+Yani rastgele bir tane şansa bağlı olarak veri seti seçmiş oluyor. Augmentation eklendiği zaman bunun düştüğünü görüyoruz.
+
+418
+01:37:15,484 --> 01:37:24,064
+Çünkü Augmentation'da bu türevlenebilir Augmentation olduğu için ve random'da da distillation yapılmadığı için piksellerin şeylerini bozmuş oluyor.
+
+419
+01:37:25,076 --> 01:37:32,195
+Burada baktığımız zaman augmentation'da dağılım eşitlemenin, DNA'nin daha yüksek olduğunu görüyoruz.
+
+420
+01:37:32,536 --> 01:37:40,716
+Çünkü veri çeşitliliği arttığı zaman bilgi olarak alacağı kısımlar da arttığı için bu daha yüksek sonuç vermiş oluyor.
+
+421
+01:37:40,716 --> 01:37:46,855
+Ama EDF tabii ki önerilen yöntem daha yüksek, makalede gösterildiği gibi daha yüksek sonuçlar vermiş.
+
+422
+01:37:47,283 --> 01:38:04,984
+Burada yörünge eşitlemenin düşük görmesinin sebebi benim bufferımın düşük olmasından kaynaklanıyor. Makale 100 expert buffer kullanmış. Ben 10 expert buffer kullanmıştım. O kadar çalıştırabildim. O yüzden biraz yörünge eşitleme düşük sonuç verdi.
+
+423
+01:38:07,444 --> 01:38:27,324
+IPC'li sonuna baktığımız zaman da DM'nin hala lider olduğunu görüyoruz ama bu sefer yörünge eşitleme ile arasında az bir fark var. İkinci sıra yörünge eşitleme. Bu şekilde. Ama IDF %77 ile lider konumunda.
+
+424
+01:38:30,804 --> 01:38:53,604
+Sentitik görüntülere baktığımız zaman da bu makaleden aldığım bir görüntü. Bu da kendi oluşturduğum, yan tarafta kendi oluşturduğum sentitik görüntülerin çıktısı. Burada gördüğünüz gibi biraz karmaşık gibi görünse de aslında bunun model, yani 5-50 bin bir tane görüntüdeki o bilgilerin hepsini sıklaştırılmış bir şekilde bir tane görüntüye aktarmış oluyor.
+
+425
+01:38:55,604 --> 01:38:56,284
+Bu şekilde.
+
+426
+01:38:58,484 --> 01:39:13,624
+Sonuç değerlendirme kısmına baktığımız zaman da veri seti damatma aslında 50 tane resmi saklamak yerine bu görüntüyü bizim 50 tane resme, içindeki bilgileri 50 tane resme aktarmamızı mümkün kalmış oluyor.
+
+427
+01:39:14,944 --> 01:39:21,684
+Ve bunun içinde augmentation yani sürebilir bir augmentation bunun içinde genelleme yeteneğini çok yükseğe çıkarıyor.
+
+428
+01:39:23,347 --> 01:39:38,228
+Bu şekilde. Ama EDF yöntemi benim sonuçlarımdan tabii ki daha yüksek sonuç verdi. Bu da piksellerin sadece o önemli olan, nesnenin olduğu piksellere bakması işte bu durumu yüksek sonuç olarak sonuçlar düz ötebilir.
+
+429
+01:39:39,828 --> 01:39:41,847
+Bu kadardı. Teşekkür ederim.
+
+430
+01:39:42,968 --> 01:39:47,948
+Teşekkürler Semo. Şimdi de sunumundan böyle diye alkışlıyoruz.
+
+431
+01:39:52,051 --> 01:39:56,412
+Tabii sonuçlarda geçemedik diyorsun.
+
+432
+01:39:56,412 --> 01:40:18,051
+Evet. Hocam, buffer'ı 10 ekspertle oluşturmama rağmen 23 saat sürdü. İlk başta collab'de çalıştırdım ama collab'de kendi kendine durdu birkaç iterasyon sonra. Sonra kendi makinemde çalıştırınca sadece 23 saat sürdü. Yani o yüzden 100 ekspertle çalıştırmadım maalesef.
+
+433
+01:40:19,828 --> 01:40:41,468
+Sonuçları iyileştirerek belki sen de bir konferansa gönderebilirsin. Mevcut şekliyle çok yakın durmuyor sonuçlar. Bayağı belirgin bir fark var önerilen. Önerilen modeli belki biraz modifiye ederek...
+
+434
+01:40:42,547 --> 01:40:44,747
+İşte kısıtlı kaynaklar.
+
+435
+01:40:44,747 --> 01:40:58,507
+Hocam, EDF'i çalıştıracaktım. Bu en son yörünge işlemini çalıştırdıktan sonra. Ama benim bufferım çok düşük olduğu için EDF hiç çalışmadı. Yani o sonucu hiç vermedi. Yüzde kırıkı da hiç vermedi.
+
+436
+01:41:00,532 --> 01:41:24,912
+Biraz daha dediğim gibi konferansların zamanı var. 10 Haziran'a kadar zamanı var. Orada bir iyileşme kaydedersen sen de gönderebilirsin. Ama mevcut durumda çok bir şey yok. Ekleyici bir sonuç yok. Ama dediğim gibi daha vakit de var. Üzerinde çalışmaya devam edin bence.
+
+437
+01:41:26,195 --> 01:41:27,716
+Tamamdır. Teşekkür ederim.
+
+438
+01:41:28,336 --> 01:41:43,296
+Evet, biz teşekkür ediyoruz sunumumuz için. Peki, dördüncü sunumu da dinledik. Evet, kim sunum yapacak? Hadi bakalım. İki sunum daha bekliyoruz.
+
+439
+01:41:47,315 --> 01:41:52,376
+Sevgili arkadaşlar, ben mi oturum şimdi size burada listeden isim? Ne yapalım?
+
+440
+01:41:58,612 --> 01:42:00,612
+Random olarak seçeceğim o zaman.
+
+441
+01:42:11,220 --> 01:42:22,019
+Bu sırada iki arkadaş dedim. Olmak üzere mi için hemen bir üstüne geçtim. [öğrenci].
+
+442
+01:42:22,019 --> 01:42:27,439
+Evet hocam.
+
+443
+01:42:28,479 --> 01:42:34,720
+Evet. Listeden rastgele seçim yaptım [öğrenci].
+
+444
+01:42:35,347 --> 01:42:38,347
+Evet, sunumumuz hazırsa...
+
+445
+01:42:38,347 --> 01:42:41,347
+Ne yapayım, ne yazık ki sunumunda hazır değil mi?
+
+446
+01:42:41,347 --> 01:42:43,347
+Ne? Sunumda hazır değil.
+
+447
+01:42:43,347 --> 01:42:46,347
+Evet hocam daha değil. Yani raporları yükledim ama...
+
+448
+01:42:47,347 --> 01:42:50,347
+Evet. Sunumumuz hazır değil sadece.
+
+449
+01:42:50,347 --> 01:42:51,347
+Evet.
+
+450
+01:42:52,347 --> 01:42:54,347
+Peki.
+
+451
+01:42:54,347 --> 01:42:55,851
+Aklı rakip...
+
+452
+01:43:03,060 --> 01:43:07,560
+Sonraki seçimim 5. sıradan istedi. [öğrenci].
+
+453
+01:43:07,560 --> 01:43:08,620
+Burada mı?
+
+454
+01:43:20,372 --> 01:43:26,172
+Bir sürü sözler de, ama sunum yapan çıkmadı. Varmı başka bir ünlü sunum yaparım diyen.
+
+455
+01:43:32,851 --> 01:43:54,491
+Peki, o zaman dersi ben kapatıyorum. Daha fazla isim okuyup da uzatmayalım. Haftaya hiç şey yapmam, listeden seçerim ve hazır değilseniz sunum yapmamış kabul ederim.
+
+456
+01:43:55,315 --> 01:44:07,115
+Derste, derse katılım proje notunun %10'unu, sunum yapmış olmak ise proje notunun %30'unu oluşturuyor.
+
+457
+01:44:07,115 --> 01:44:12,695
+Rapor içeriği ise geriye kalan %60'ını oluşturuyor.
+
+458
+01:44:19,252 --> 01:44:36,771
+Hafta boyunca, beş hafta boyunca katılımımız önemli. Birinci, bravo. İki, sunum yapmış olmak. Yüzde otuz. Sadece rapor verirseniz eğer, proje notunun yüzde altmışını alışveriyorsunuz. Bunu da belirtmiş olayım.
+
+459
+01:44:37,363 --> 01:44:39,604
+Peki, hepinize...
+
+460
+01:44:39,604 --> 01:44:43,463
+Hocam, eğer başka sunum yapacak olan yoksa ben de yapabilirim aslında diyecektim.
+
+461
+01:44:43,463 --> 01:44:44,703
+Biram çıktı.
+
+462
+01:44:45,703 --> 01:44:52,423
+Hadi bakalım Miram, o zaman son haftaları sıkıştırmamak adına bu hafta sunum yapılmasını istiyorum.
+
+463
+01:44:53,264 --> 01:44:55,163
+Sizi de dinleyelim. Buyurun.
+
+464
+01:44:56,403 --> 01:44:59,363
+Tamamdır hocam, hemen ekran paylaşım başına geçiyorum.
+
+465
+01:45:14,804 --> 01:45:18,123
+Ekranım geldi mi hocam? Evet geldi.
+
+466
+01:45:18,123 --> 01:45:22,123
+Ama ekranım varsa, çek.
+
+467
+01:45:22,123 --> 01:45:26,444
+Kamerayı da kapama gelmedim hocam.
+
+468
+01:45:26,444 --> 01:45:28,444
+Kameramız kapalı.
+
+469
+01:45:28,444 --> 01:45:31,444
+Yine kapalı.
+
+470
+01:45:31,444 --> 01:45:35,444
+Bir daha basın.
+
+471
+01:45:36,979 --> 01:46:03,059
+Aslında ben açıyorum ama burada gözükmüyor. Bekleyin. Defalarca basınca şey oluyor belki. Tamam. Evet [öğrenci]. Şimdi gördük seni de. Merhaba. Hocam diyerek bakıyorum ama sıkıntı olur mu? Benim bilgisayarım diyerek size bakıyorum. Sorun değil. Ben seni gördüm. Dersten de hatırlıyorum. O yüzden bir yüzünüzü görmek istedim. Sorun değil tabii ki farklı ekrana bakabilirsin.
+
+472
+01:46:03,583 --> 01:46:11,104
+Neden bu konuyu seçtiğinizi belirterek sunuma başlayabilirsiniz? Bir de bu daha tam ekran oluyor mu acaba?
+
+473
+01:46:11,984 --> 01:46:13,663
+Evet hocam, varsız satmadım henüz.
+
+474
+01:46:13,663 --> 01:46:16,864
+Tamam, tamam. Peki, söz sizde. Buyurun.
+
+475
+01:46:17,684 --> 01:46:27,283
+Tamamdır hocam. Hocam, benim makalemin başlığı Molmo ve Piximo, Open Data for State of Dark Vision Language Models başlığı.
+
+476
+01:46:27,923 --> 01:46:37,323
+Burasının seçmemiz gereken bir tanesi de şuydu. 2025 CVPR yayınları arasında Best Paper Unorable Mention ödülü aldığı yayınlardan bir tanesiydi.
+
+477
+01:46:37,724 --> 01:46:45,283
+Hem bunun için, hem de açık bir versiyonu sunduğu için, literatüre, bunun için kullandım.
+
+478
+01:46:45,684 --> 01:46:55,043
+Bu da çalışmanın en önemli getirisi aslında gördüğümüz bizim için. Piximo itinli bir veri seti kazandırıyorlar literatüre.
+
+479
+01:46:55,043 --> 01:47:09,163
+Ve bununla eğitildikleri tamamen açık kaynaklı. Ve şu an günümüzde kapalı modellerle yarışan GP, G4O ve Cloud gibi bunların neredeyse benzer başarısına ya da hemen yakın bir başarısına yer alan bir model olması.
+
+480
+01:47:11,028 --> 01:47:36,888
+Bu şekilde bir çalışma. Çalışmamın içeriği de şu şekilde. İlk olarak Pixi Models setinden bahsedeceğim. Daha sonra Monoma modeli ve mimarisinden. Devamında eğitim ve değerlendirme metriklerinden. Burada yapılmış olan aplasyon deneylerinden bahsedeceğim. Sonrasında benim denediğim Mundream 2 modeli ve Chart-Corever setinden. Bunun üzerinde yapmaya çalıştığım Function sisteminden ve sonuçlarımdan bahsedeceğim.
+
+481
+01:47:37,971 --> 01:47:55,467
+İlk olarak veri setinin yapısından bahsedeyim. Piximo oldukça büyük ve detaylı bir veri seti aslında. Bunun en önemlisiyle gelen bir tanesi verinin ilk olarak toplanma aşaması. Burada Piximo veri seti normalde bir görsel için caption toplamak insan anlatörlerden oldukça...
+
+482
+01:47:55,667 --> 01:48:00,988
+Zor ve uzun açıklamalar alabilmek de insanlardan zor. Bunun için farklı bir yol izlenmiş.
+
+483
+01:48:01,347 --> 01:48:09,188
+İnsanlara, yani anatörlere görsel verdikten sonra demişler ki 60-80 saniye gibi bir aralıkta bu resmi hakkında konuşun, açıklama yapın.
+
+484
+01:48:09,467 --> 01:48:11,568
+Bu şekilde ses kayıtlarıyla veriler toplanmış.
+
+485
+01:48:12,148 --> 01:48:21,448
+Dolayısıyla bu ses verileri daha sonra LLM ya da yapay zeka benzeri araçlarla yazı captionlarına aktarılmış.
+
+486
+01:48:22,108 --> 01:48:29,268
+Yine farklı veri seti alt setlenen bir tanesi Piximo AskModelAnything veri seti.
+
+487
+01:48:29,268 --> 01:48:38,848
+Burası da modelin daha çok günlük kullanıma uygun, daha soru cevap şeklinde insanlarla doğal etkileşime girebilmesi için Fianton işleminde kullanılan veri seti.
+
+488
+01:48:40,148 --> 01:48:52,648
+XmallDox, Sound, GloX ve CapQ dediğim bu dört veri seti de oluşturulmuş sentitik veri setleri. Ben de bunun DoX kısmını kullandım. Aynı zamanda GloX kısmı mesela özellikle modelin...
+
+489
+01:48:54,003 --> 01:48:59,363
+Ve diğer bütün karşılıklı modelleri geçen performansında bir veri seti.
+
+490
+01:48:59,783 --> 01:49:05,844
+Fakat bunları geçiyor ama sadece özel olarak saat verileriyle eğitilmiş kapalı modellerin performansını yine geçemiyor.
+
+491
+01:49:06,264 --> 01:49:06,963
+Bunu da belirtelim.
+
+492
+01:49:07,583 --> 01:49:11,884
+En önemli katkılarından bir tanesi ise çalışmanın point veri seti.
+
+493
+01:49:11,884 --> 01:49:20,344
+Burada normalde biliyorsunuz genelde görsel nesnelerin şey yapılmasında, terletlenmesinde balonik boxlar kullanılıyor.
+
+494
+01:49:20,663 --> 01:49:22,003
+Burada ise şöyle bir görsel.
+
+495
+01:49:22,003 --> 01:49:23,644
+Görsel üzerinden göstereceğim bunu.
+
+496
+01:49:25,844 --> 01:49:27,243
+Geldim ekranıma hocam.
+
+497
+01:49:30,868 --> 01:49:32,108
+Evet, biliyoruz.
+
+498
+01:49:32,908 --> 01:49:33,468
+Tamamdır.
+
+499
+01:49:33,468 --> 01:49:40,528
+Bağınlık baksay yerine bu şekilde nesnelerin orta noktalarının gösterilerek ver sitesinde bir eğitim gerçekleştiriliyor.
+
+500
+01:49:40,988 --> 01:49:50,188
+Ve bu şekilde etiketlemenin modelin özellikle sayma konusunda performansında oldukça büyük bir artışa sebep olduğu ve performans iyileştirdiğim gözlemleniyor.
+
+501
+01:49:51,608 --> 01:49:53,268
+Bu verisette bu şekilde.
+
+502
+01:49:53,760 --> 01:50:05,939
+MoMo'nun yapısına gelecek olursak mimari özelliklerine. Bu dört tümel birleşenden oluşmakta. Ön işleyici dediğimiz preprocessor kısmı overlap tekniğiyle resmi karelere bölüyor.
+
+503
+01:50:06,840 --> 01:50:17,179
+VIT dediğimiz kısım görselin daha çok renk şekil ve benzeri özelliklerini çıkaran kısım. Bağlayıcı kısmı da bu görselden çıkarılan bilgilerin el elemini anlayabilmesi.
+
+504
+01:50:17,652 --> 01:50:25,412
+C bir formata çevrildiği kısım. En son olan erileme kısmı da modelin beğeni diyebileceğimiz son nihai çıktığı üreten kısım.
+
+505
+01:50:25,412 --> 01:50:33,992
+Bu bahsettiğim overlap kısmı için de yine şu şekilde bir görsel üzerinden gösteriden hemen açıyorum.
+
+506
+01:50:39,412 --> 01:50:42,332
+Hatta şuradan göstersem hocam daha kolay olur.
+
+507
+01:50:45,332 --> 01:50:51,952
+Şu şekilde bir görsel. Normalde overlap olmadan kırpma verdiğimizde hani kırpılık veriliyor demiştim,
+
+508
+01:50:51,952 --> 01:50:58,231
+bu şekilde resmin parçaları veriliyor ve burada mesela marka ismine baktığımızda
+
+509
+01:50:58,231 --> 01:51:02,971
+bunun sadece üç karede görüldüğünü ve yarım yarım görüldüğünü görüyoruz.
+
+510
+01:51:05,235 --> 01:51:29,975
+Daha iç içe geçilen şekilde bir bölünme işlemi sağlanıyor ve burada işte markanın tamamının karelerde gözükmesi sağlanıyor. Bu şekilde modelin bütüncül olarak marka ismini okuyabilmesi sağlanıyor. Diğer resimde bunu yapamazken model. Burada daha çok bütüncül bilgiye hakim. Bu pembe olarak verilen kısımlar ise eleleme verilen kısımlar. Yani bunun tamamı VIT'ye veriliyor ama sürekli tekrar eden kısımlar eleleme tekrar tekrar verilmiyor. Hani tekrar tekrar işlenmesi sağlanmasın diye.
+
+511
+01:51:31,315 --> 01:51:51,855
+Yine bir başka nokta model mimarisinde tokenların sıralı olarak verilmesi, random verilmek yerine. Burada bahsettiğimiz tokenların el eleme verecek tokenlar bir sırayla özellikle önce düşük çözünürlü daha sonra yüksek çözünürlü kısımlar verilecek şekilde sıralanıyor.
+
+512
+01:51:57,395 --> 01:52:10,475
+Öneme iletilecek bu token'a sıkıştırılırken, görselde gösterdiğim az önce 4 tane görselde, bunların tek bir vektöre indirgenerek ortalama alınıp, tek bir vektöre indirgenerek o şekilde el ödeme vetmesi sağlanıyor.
+
+513
+01:52:11,475 --> 01:52:39,435
+Pre-training aşamasında bir dropout kullanılmıştır ama sadece metin tokenlarında kullanılmıştır model eğitiminde. Bunun sebebi de şudur, el elemenin dil alışkanlıklarına güvenip kolaya kaçmasını engellemek için burada dropout uygulanmıştır ama fine tune aşamasında dropout uygulanmamıştır. Bunun sebebi de fine tune'da zaten hedeflenen kısa cevaplar olduğu için dropout ile performansının daha kötüleşmesi istenmemiştir ve gerçekten daha sonra ablasyon deneyimlerinde de görüntülenmiş gibi performansın en verimli kısmı budur.
+
+514
+01:52:39,475 --> 01:52:44,655
+Hani Fynf'ın da kapatılıp Dropout'un Pre-Training'de açılması en yüksek performansı vermiştir.
+
+515
+01:52:45,427 --> 01:53:11,227
+Yine burada önemli bir kısım stil etiketleri kısmı. Normalde akademik testlerde, akademik veri setlerinde çok farklı stillerde cevaplar var. Yani çok kısa cevaplar ya da çok daha robot, insan dilinden uzak cevaplar var. Bu şekilde eğitilen modellerde yine benzer şekilde çok kısa, tuhaf ve robotlu cevaplar veriyor. Bunun önüne geçmek için de modele göreve özgü bir stil etiketi veriliyor.
+
+516
+01:53:13,427 --> 01:53:18,027
+QA2 etiketi. Yani burada diyor ki Modera, sen şu an akademik veri setlerinde yetineceksin.
+
+517
+01:53:18,187 --> 01:53:22,527
+Hani buna uygun olarak şu şekilde cevap ver gibi sit etiketleri veriliyor.
+
+518
+01:53:22,867 --> 01:53:24,867
+Bu da başarıyı artıran önemli bir etken.
+
+519
+01:53:25,427 --> 01:53:48,927
+Yine değerlendirme başarısında birçok değerlendirme metriyle değerlendirme yapıyor çalışmacılar. Ve bunlarda da ELO dediğimiz insan beğenisi testi önemli şeylerden bir tanesi. Burada da ilk başta mesela şeyin, Momo'nun başarısı düşük çıkıyor. Yani çok robot cevaplardı ama bu Ask, Mother, Anything dediğim kısım daha insan diline yakın soru cevap kısmıyla fayda edildiğinde ELO başarısının da önemli ölçüde arttığı gözlemleniyor.
+
+520
+01:53:49,427 --> 01:54:04,788
+Ablasyon deneylerine baktığımızda, ablasyon deneyleri şu şekilde, farklı şeylerin denenerek, metriklerin, yani mimariden şu çıkarılsın, bu kalsın, veriden bu çıkarılsın, şu kalsın gibi, neyin ne kadar etkisi var bu model üzerinde, bunların yapıldığı deneyler.
+
+521
+01:54:04,788 --> 01:54:14,007
+Bununla ilgili birçok deneyi var, ben birkaç tanesinden bahsedeceğim, özetli önemli olanlardan. İlki görüntü kodlayıcı seçimi. Burada farklı görüntü kodlayıcılar denenerek,
+
+522
+01:54:14,420 --> 01:54:40,220
+Modelin performans üzerindeki etkilerine bakılıyor. Burada aslında yakın olarak, denenenlerin hepsinin hemen hemen yakın performans gösteriyor. Çok yüksek ve yakın performans gösteriyorlar birbirinden farklı olmaya. En şaşırtıcı sonuç burada, Dino versiyon 2 dediğimiz bir modelin, bu model normalde sadece görüntü verileri üzerinde eğitilmiş, bir metin verisi olmadan öyle bir model. Buna rağmen Molmo kullanıldığında oldukça yüksek bir sonuç veriyor, çok düşük bir sonuç vermiyor.
+
+523
+01:54:42,420 --> 01:54:48,079
+Kullandığı kaliteli Pixmo Veris açı sayesinde bu eksiği nasıl kapattığını gösteriyor bize.
+
+524
+01:54:48,079 --> 01:54:55,020
+Bir diğer nokta bahsettiğim kırpma stratejisi. Bu da özellikle ablasyon deneylerinde ölçülüyor.
+
+525
+01:54:55,520 --> 01:55:00,460
+Eğer hiç kırpma yapılmadan verilse modelin performansı 46.7 başarıda kalırken,
+
+526
+01:55:01,619 --> 01:55:09,699
+overlap olmadan yapılan bir kırpma 53.4, overlapli kırpma yani gösterdiğim iç içe geçmeli de 54.1 ile en yüksek başarıyı veriyor.
+
+527
+01:55:10,355 --> 01:55:24,515
+Yine bir diğer noktada, modele istenilen cevabın uzunluğuyla alakalı ipucu vermekte başarıyı artıran bir parametre. Burada da normalde ipucu verilmediğinde 53 başarı verilirken, ipucu verildiğinde 54'e çıktığını görüyoruz model başarısının.
+
+528
+01:55:25,795 --> 01:55:28,895
+Bir diğer kısım, abla sünnelerinde veri ve sayma ile ilgili kısımlar.
+
+529
+01:55:31,252 --> 01:55:48,432
+İşte şeyin CPT410 gibi oradan milyarlarca hani şeyin sentrik verinin çekilip kullanıldığında elde edilen başarıyla PIXMOL kullandığımız yani kendimiz daha doğal insan verilerinden ve çok daha az sayıda veriyle yaptığımız çalışmayla aynı başarı oranın yakaladığı görülmüştür MOLMA modelinin.
+
+530
+01:55:48,432 --> 01:55:59,252
+Yine burada bir diğer nokta şey çok fazla gürültülü ama çok sayıda verinin de denenmesi yapılmıştır ve çok düşük başarıda kaldığı görülmüştür bu veri setinin MOLMA modeli.
+
+531
+01:55:59,252 --> 01:56:20,452
+Burada anlaşık çıkarma yapabiliriz. Gürültüden ayrındırılmış az sayı devirinin, gürültünün çok sayı devirinden çok daha iyi performans gösterdiği gözlemlenmişti. Bir diğer nokta Chain of Talk dediğimiz sayma stratejisi. Burada yine Ableton'ın ellerinde denendiği üzere şu şekilde bir şeyimiz var.
+
+532
+01:56:21,908 --> 01:56:36,108
+Point ve Count. Yani sayma işaretleyip sayması modelin bir disince zinciri oluşturarak önce işte noktaları bulması, bunları işaretlemesi ve daha sonra sayması başarıyı çok önemli ölçüde arttırıyor. Çalışmanın en önemli noktalarından bir tanesi.
+
+533
+01:56:37,939 --> 01:56:52,819
+Burada benim denediğim modeller Monderim 2 modeli ve ChartQA veri seti. Yine bu işte bir VIT modeli olduğu için bu modeli tercih ettim. Bunun yanı sıra, şey VLM modeli olduğu için pardon, bunu tercih ettim.
+
+534
+01:56:53,268 --> 01:57:14,847
+Bu monodermik modeli aynı zamanda kullanması ve fanatral etmesi daha kolay. Parametreleri daha az sayıda ve güncel bir model diye kullanmıştım. Ben hatta ilk başta bunun en güncel modeli olan Haziran 2025 versiyonunu kullanmayı dinledim. İmplemente etmeyi. Fakat fanatral kısmında ve parametreleri güncellemiş modelde henüz stabil olmadığı için hataları aldım. O yüzden Ağustos 2024 versiyonunu kullandım.
+
+535
+01:57:15,475 --> 01:57:42,916
+Yine bunları Pixmo verileriyle fançın ettim ve çarpık veri seti üzerinde hem Pixmo'nun hem Mundir'imin fançın edilmiş ve edilmemiş hallerini karşılaştırdım. Burada bu verisini kullanmamın sebebi aslında ilk başta Pixmo'yu kullanmayı hedeflemiştim. Ondan yapacaktım ama bu sefer Pixmo veri setiyle eğitilen Molmo modeli çok belki avantajlı kalır Mundir'imin yanında. O sadece fançın dediğimde bu verilerle.
+
+536
+01:57:43,475 --> 01:58:07,315
+Dezavantajlı kalabilir diye düşündüğüm için, yine akademik veri seti olan Chartfaya veri setini kullandım. Bu veri seti hem aynı zamanda tamamen Pixi Mo'nun akademik kısmıyla aynı formatta da değil. Bu da aslında hem Mo'nu için belli bir zorluk derecesi yaratıyor. İkisi için de farklı formatlarda olduğu için.
+
+537
+01:58:08,724 --> 01:58:11,363
+Fanchin işleminde de şöyle.
+
+538
+01:58:12,404 --> 01:58:24,724
+Bu, yaklaşık 600 veriyi 5 apok ile eğittim. Mundurum 2 modelini bu şekilde. Burada tamamını açamadığım için blokların, donanım sağ kısılar yüzünden 8 transformer bloğunu eğitimde ağırlık incelemesini açtım.
+
+539
+01:58:25,284 --> 01:58:33,884
+Lost grafine baktığımda ilk yüz adımda özellikle Lost'un ilk başta oldukça sert bir düşüş yaşadığını sonra da yine stabil bir şekilde düştüğünü gözlemledim.
+
+540
+01:58:33,884 --> 01:58:40,384
+Bu da işte modelin bize öğrendiğini gösteriyor. Burada bir örnek vermek istiyorum denediğim test etleri üzerinde.
+
+541
+01:58:40,404 --> 01:58:45,444
+Burada sorular, grantrout ve şeylerin cevapları var.
+
+542
+01:58:45,908 --> 01:59:13,828
+Bale modelin ve function edilmiş modelin. Normalde eşleşmeye baktığınızda aslında en iyi cevabı veren genelde Molmo modeli. Ama burada baktığınızda sanki Molmo eşleşmemiş gibi gözüküyor. Burada maalesef değerlendirme metriklerindeki bir sorun yüzünden şöyle. Molmo modeli çok daha uzun ve açıklayıcı cevap verdiği için model bunu yanlış kabul ediyor. Aslında doğru cevabı veriyor Molmo ama değerlendirme metriği bunu yanlış kabul ettiği için, bundan ileride bahsedeceğim tekrardan, bir yanlış eşleşme gözüküyor.
+
+543
+01:59:15,347 --> 01:59:33,047
+Mesela yine burada ileride de stil metrikleri görürken göreceğiz. İşte E, M ve F1 dediğimiz skorlarda Moldu çok geride çıkmış gözüküyor. Direkt mundurin modelleri onun çok daha ilerisinde gözüküyor. Yine bunun sebebi de bahsettiğimiz kesin eşleşmeye bakan metrikler.
+
+544
+01:59:43,347 --> 01:59:48,387
+Bu da başarının düşmesinin sebeplerinden bir tanesi.
+
+545
+01:59:49,828 --> 01:59:56,448
+Bunu yine farklı metrikale baktığımızda ama tam tersi. Mesela VQA dediğimiz skorda, MoMA'nın 45'te oldukça önde olduğunu görüyoruz.
+
+546
+01:59:56,847 --> 01:59:58,887
+Yine bu skor hakkında da şöyle bilgi verebilirim.
+
+547
+02:00:00,000 --> 02:00:03,539
+Biraz daha insan değerlendirmesine yakın, daha esnek ve uygun bir metrik.
+
+548
+02:00:04,399 --> 02:00:11,500
+Yani uzun cevabın içinde bu kısa cevap geçiyor mu? Bunları falan da kontrol ederek daha değerlendirmede kullanılan uygun bir metrik.
+
+549
+02:00:13,460 --> 02:00:18,340
+Bunlar Bayes, Fynetun edilmiş ve Mol modelinin sonuç tablosu.
+
+550
+02:00:18,707 --> 02:00:46,707
+Belli skor metriklerinde. Yine burada çok akademik versetlerinde oldukça tercih edilen numeration tool dediğimiz bir metrik var. Bu da aslında sına bakıyor. Yani sayısal verileri okurken özellikle modelin işte grand truth'un 100 olan bir cevaba 101 demesi de yanlış sayılıyor. 1 demesi de yanlış sayılıyor ama aslında 101 olduğuna çok yakın vermiş oluyor. Burada bunu yanlış kabul etmemek için akademik şeylerde özellikle veri testlerinde çokça tercih edilen bir metrik. Burada yine mol molun oldukça yüksek.
+
+551
+02:00:46,707 --> 02:00:56,347
+Teknik Performans Verdiğini Görüyoruz. Moon Dream'in Base ve Function Dream'in şahidine göre. Yine burada en çok dikkat çeken kısım ise ortalama hata metriği.
+
+552
+02:00:57,207 --> 02:01:09,587
+Molmon'un neredeyse 80 kat daha iyi sonuç verdiğini görüyoruz. Özellikle bu da şeyi bize gösteriyor. Sayısal, point verisinin de katkısıyla yapılan bu sayama görevlerinde ne kadar başarılı bir model olduğunu tanıtmamış oluyor.
+
+553
+02:01:10,676 --> 02:01:38,676
+Burada şöyle bir sıkıntı var. Farnetine işlemi evet başarıyı artırıyor ama ben çok daha ciddi bir artış beklemiştim. Bunun sebebi tabii biraz donanımysal kısıtlarcımdan da çok fazla veriyle hani farnetine işlemi yapamamam. Hani ben 600'e yakın veri kullandım. Ama burada da hem de işte çok fazla katmanı da açamadım. Bir de şeyin sıkıntısı oldu. Üç tane modeli aynı anda GPU'da tuttuğum için hani A100 bile kullansa arada böyle şeyin sıkıntısı oldu donanımysal. Hani Note defterinin birden çalışmayı hani bırakması hani GPU'da olduğu için bu şekilde soru.
+
+554
+02:01:38,676 --> 02:02:01,476
+Yine sonuçlara baktığımızda son olarak, genel bir değerlendirme olarak, şunları söyleyebiliriz. Pixmo seti organik verinin ne kadar değerli olduğunu kanıtlıyor bize. Aynı zamanda Chain of Stock yöntemi de başarıyı arttırmakta kullanan oldukça önemli bir etkili bir strateji. Gerçekten özellikle point verisinin kullanılması başarılığını sayma konusunda önemli ölçüde arttırmıştır.
+
+555
+02:02:01,939 --> 02:02:15,599
+Bir diğer önemli husus değerlendirme metriği kullanımı. F1 mesela burada hiç doğru bir metrik değil. Sonuçları değerlendirirken bunun için daha uygun olan VQA ya da numarayışın tol gibi metriklerin kullanılması önemli bir husus.
+
+556
+02:02:16,243 --> 02:02:35,943
+Yine ileriki çalışmalarda fanatim işlemleri çok daha geliştirilebilir. Ve işte Mundirim gibi yine bu okumak görevlerinde nispeten iyi bir performans gösteren bir modelin Piximo gibi oldukça felçli veriyle çok daha yüksek performans alması sağlanabilir diye düşünüyorum. Dinlediğiniz için teşekkürler.
+
+557
+02:02:39,003 --> 02:02:43,643
+Teşekkür ediyoruz [öğrenci]. Senin için seni alışıyoruz.
+
+558
+02:02:44,595 --> 02:02:53,435
+Ben bir şey soracağım. Kaçırdım da ekle. Bu Pixmo veri seti public domain'de yok mu şu anda?
+
+559
+02:02:53,996 --> 02:02:54,555
+Var hocam.
+
+560
+02:02:54,975 --> 02:02:55,235
+Var.
+
+561
+02:02:56,695 --> 02:03:01,355
+Kullandı. Tamam. Çünkü farklı veri setleriyle de deneme yapmışsın da.
+
+562
+02:03:01,355 --> 02:03:11,916
+Hocam şöyle, Mundiri'nin modeli ayrı bir model. Makalede kesinlikle bahsedilmeyen. Ben bunu makalede sunulan Pixmo veri setiyle fayn'tın ettim. Sonra çarkı üzerinde de test ettim.
+
+563
+02:03:12,224 --> 02:03:32,983
+Pixmo ve bu karşılaştırmaları şey üzerinde yapayım diye. Aslında ben Pixmo'nun testini bile test etmek istemiyorum ama bir test şeyse yayınlamamışlar. Sadece Sireyn ve Evaluation setleri vardı. Onlarda da bir şeyler yaptım ama sonuç kısmına da koymadım Evaluation kısmındaki ama zaten çok farklı çıkmadı. Yine benzer sonuçlar çıktı. Bu çarşı kür asetinde yapılmış çalışmalarla.
+
+564
+02:03:35,855 --> 02:03:39,715
+Sonuçlar yayınlanmaya değer mi?
+
+565
+02:03:41,171 --> 02:04:08,751
+Hocam, şu şekilde ben çok az veri, mesela test kısmı özellikle çok az veriyle yapıldığı için ve çok şey olduğu için belki geliştirebilir. Bu haliyle bence değil. Birazcık daha yüksek performanslaması lazım. Çünkü Molmon'un ciddi yüksek başarı aldığı. Float ve GPT-4O ile yarışacak şekilde görülüyor. Ben sadece bu sentitik kısım, DOGS kısmını kullandım. Bu bile çok küçük ama yine de büyük bir kısım. Normalde baktığımızda oldukça büyük bir veri seti, oldukça kapsamlı.
+
+566
+02:04:09,171 --> 02:04:16,131
+Bunun belki farklı, özellikle poyentik verisi üzerine yoğunlaşılarak, belki daha farklı şeyler yapılabilir bu kısım kullanılarak.
+
+567
+02:04:17,991 --> 02:04:28,331
+Vakit var ama test için kullandığın veriyi arttırma ya da modeller üzerinde belli modifikasyonlarla sen de bir gayret et o zaman olur mu?
+
+568
+02:04:30,011 --> 02:04:32,692
+Peki, tekrar teşekkür ediyoruz [öğrenci].
+
+569
+02:04:32,692 --> 02:04:33,971
+Teşekkür ederim hocam.
+
+570
+02:04:34,963 --> 02:04:36,963
+Evet, sevgili sınıfım.
+
+571
+02:04:39,963 --> 02:04:42,263
+Sınıfı sonlandırırsam.
+
+572
+02:04:50,996 --> 02:04:53,216
+[öğrenci] sunumu sonlandırabilir misin?
+
+573
+02:04:54,756 --> 02:04:55,396
+Tamam.
+
+574
+02:04:56,436 --> 02:04:59,016
+Evet, kaç kişi kalmışsınız da? 18 kişi.
+
+575
+02:04:59,016 --> 02:05:05,775
+Evet, derse katılımınızı veriyor bize.
+
+576
+02:05:10,547 --> 02:05:23,747
+Hangi öğrenciler derse bağlanmış, ne zaman girmiş, ne zaman çıkmış görebiliyoruz. O yüzden tekrar söyleyeceğim. Katılım ve derse devam, özellikle proje sunumlarında önemli.
+
+577
+02:05:24,372 --> 02:05:40,092
+Bundan sonraki haftalarda hepinize tam hazır bir şekilde derste görmeyi ümit ediyorum. Şu anda beş tane sunum dinledik. Bu hafta bu kadar diyelim. Bir haftaya görüşmek üzere. Hoşçakalın arkadaşlar.
+
+578
+02:05:41,672 --> 02:05:42,672
+Hoşçakalın hocam.
+
+579
+02:05:42,771 --> 02:05:46,832
+İyi günler hocam.
+
+580
+02:05:47,372 --> 02:05:48,492
+İyi günler.
