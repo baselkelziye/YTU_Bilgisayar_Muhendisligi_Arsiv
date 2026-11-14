@@ -1,0 +1,2363 @@
+1
+00:01:08,403 --> 00:01:11,024
+[öğrenci], can you hear me?
+
+2
+00:01:15,284 --> 00:01:15,603
+Ok.
+
+3
+00:01:19,219 --> 00:01:29,219
+Last week, we talked about matrices, we introduced the matrix addition and some properties of matrices.
+
+4
+00:01:30,219 --> 00:01:39,219
+Today, we are going to talk about the matrix multiplication and some special square matrices.
+
+5
+00:01:49,939 --> 00:01:52,739
+Now, what is Matrix Multiplication?
+
+6
+00:02:19,316 --> 00:02:35,084
+Öncelikle, bu oluşturma oluşturma, bu oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluşturma oluştur
+
+7
+00:02:44,563 --> 00:02:46,103
+That product was
+
+8
+00:02:55,572 --> 00:02:57,003
+Init product
+
+9
+00:03:03,379 --> 00:03:03,959
+Of.
+
+10
+00:03:09,491 --> 00:03:11,491
+n-vektörs.
+
+11
+00:03:12,491 --> 00:03:18,491
+I mean, these are n-by-one matrices.
+
+12
+00:03:20,491 --> 00:03:21,491
+OK.
+
+13
+00:03:23,491 --> 00:03:25,491
+In R to the n,
+
+14
+00:03:30,132 --> 00:03:31,432
+Use the find pipe.
+
+15
+00:03:36,436 --> 00:03:40,436
+These are n vektörs of m by one matrices.
+
+16
+00:03:41,636 --> 00:03:44,036
+Each entries are real numbers.
+
+17
+00:04:05,524 --> 00:04:08,524
+We denote the inner product by a dot.
+
+18
+00:04:10,524 --> 00:04:13,524
+A dot B equals
+
+19
+00:04:15,524 --> 00:04:18,524
+A1 times B1 plus
+
+20
+00:04:19,524 --> 00:04:22,524
+A2 times B2
+
+21
+00:04:23,524 --> 00:04:24,524
+plus
+
+22
+00:04:25,524 --> 00:04:26,524
+blah blah
+
+23
+00:04:27,524 --> 00:04:29,524
+A M times
+
+24
+00:04:30,524 --> 00:04:31,524
+B L
+
+25
+00:04:33,043 --> 00:04:45,043
+So, this is the inner product or that product of two vectors or two environments.
+
+26
+00:04:45,043 --> 00:04:47,043
+Okay.
+
+27
+00:05:13,267 --> 00:05:15,467
+Matriks Multiplication
+
+28
+00:05:27,091 --> 00:05:30,931
+I'll show it in this presentation.
+
+29
+00:05:35,603 --> 00:05:36,084
+Ok.
+
+30
+00:05:39,084 --> 00:05:39,764
+Let
+
+31
+00:05:39,764 --> 00:05:41,384
+A
+
+32
+00:05:46,740 --> 00:05:59,540
+B is M by P matrix, and B is P by M matrix.
+
+33
+00:06:04,819 --> 00:06:10,819
+Then, the product of A and B
+
+34
+00:06:14,228 --> 00:06:16,228
+Matris C,
+
+35
+00:06:17,827 --> 00:06:19,228
+which is
+
+36
+00:06:28,148 --> 00:06:33,148
+m-bine, m-matrix, and defined as follows.
+
+37
+00:06:33,148 --> 00:06:42,148
+Now, above we learned the dot product of two matrices.
+
+38
+00:06:43,148 --> 00:06:55,148
+The matrix matriplication of, or the matriplication of two matrices is dot product of the first matrix.
+
+39
+00:06:56,052 --> 00:07:03,752
+Each row of the first matrix and each column of the second matrix.
+
+40
+00:07:03,752 --> 00:07:08,752
+So, Cij.
+
+41
+00:07:13,588 --> 00:07:40,364
+İhterelikle
+
+42
+00:07:42,163 --> 00:07:54,163
+ve
+
+43
+00:08:09,524 --> 00:08:10,244
+plus
+
+44
+00:08:10,244 --> 00:08:14,564
+ai2
+
+45
+00:08:14,564 --> 00:08:15,403
+times
+
+46
+00:08:19,060 --> 00:08:23,019
+B to j plus plus
+
+47
+00:08:27,315 --> 00:08:33,415
+Aip times BPj, this equals to this sum.
+
+48
+00:08:33,415 --> 00:08:42,415
+Okay, so, if you want to multiply two matrices, first,
+
+49
+00:08:47,379 --> 00:08:48,600
+Tamam mısın of?
+
+50
+00:08:55,956 --> 00:08:59,875
+To number, of the,
+
+51
+00:09:08,019 --> 00:09:11,539
+Kolumns of the first matris.
+
+52
+00:09:19,539 --> 00:09:20,539
+Herkese
+
+53
+00:09:27,764 --> 00:09:28,764
+Burst matris.
+
+54
+00:09:34,035 --> 00:09:35,755
+must equal to the
+
+55
+00:09:40,307 --> 00:09:41,228
+Numbers
+
+56
+00:09:47,988 --> 00:09:54,540
+Number of the Robes of the Second one.
+
+57
+00:10:02,772 --> 00:10:03,252
+Son.
+
+58
+00:10:13,652 --> 00:10:26,932
+If A is M times P or M by P matrix and D is P by M matrix,
+
+59
+00:10:33,299 --> 00:10:37,119
+We say that the columns of the first one,
+
+60
+00:10:51,028 --> 00:10:56,347
+İzlediğiniz için de aynı şekilde, de aynı şekilde, de aynı şekilde.
+
+61
+00:11:02,131 --> 00:11:08,131
+ve bu dağımsızlık, özdeğer vektör konularını işleyeceğiz.
+
+62
+00:11:13,395 --> 00:11:14,556
+a times p.
+
+63
+00:11:27,091 --> 00:11:27,572
+Ok?
+
+64
+00:11:36,052 --> 00:11:44,632
+Does it make sense? Have you got any questions? Is it clear?
+
+65
+00:11:48,179 --> 00:11:48,500
+Ok.
+
+66
+00:11:51,988 --> 00:11:52,988
+For example,
+
+67
+00:11:59,316 --> 00:12:15,016
+A and B are matrices like this and let us find the product of A and B. So, first write A.
+
+68
+00:12:24,371 --> 00:12:34,371
+A is 2x2 matris, ve B is 2x3 matris.
+
+69
+00:12:34,371 --> 00:12:47,371
+So, the columns of A and the rows of B are equal, so we can apply the multiplication for these matrices.
+
+70
+00:13:01,139 --> 00:13:14,680
+There's a problem in Zoom, I think, because I cannot see your comments or questions.
+
+71
+00:13:33,652 --> 00:13:34,052
+Ok.
+
+72
+00:13:39,220 --> 00:13:41,980
+If P is bigger than others, does it change?
+
+73
+00:13:45,812 --> 00:13:46,692
+Otarumi.
+
+74
+00:13:51,604 --> 00:14:07,004
+P is in integers, so if P is bigger than others, it doesn't matter, [öğrenci]. P can be greater or smaller than the others, okay.
+
+75
+00:14:17,844 --> 00:14:20,744
+I say or I write
+
+76
+00:14:24,340 --> 00:14:31,000
+The columns of the first one must equal to the rows of the second one.
+
+77
+00:14:31,000 --> 00:14:31,340
+Okay.
+
+78
+00:14:39,187 --> 00:14:43,187
+Bu, bu aynı şekilde yazıyor.
+
+79
+00:14:46,187 --> 00:14:48,187
+Birkaç bir kolum var,
+
+80
+00:14:48,187 --> 00:14:52,187
+o kolum var.
+
+81
+00:14:52,187 --> 00:14:53,187
+Tamam.
+
+82
+00:14:53,620 --> 00:15:00,440
+A ve B are like this. A is 2 by 2, and B is 2 by 3 matris.
+
+83
+00:15:00,859 --> 00:15:07,620
+So, the columns and the rows of the columns of the first one is equal to the rows of the second one.
+
+84
+00:15:07,839 --> 00:15:10,000
+So, we can multiply these two matrices.
+
+85
+00:15:13,683 --> 00:15:18,124
+A, B is this.
+
+86
+00:15:26,932 --> 00:15:27,491
+Now,
+
+87
+00:15:31,796 --> 00:15:38,796
+Eta bölümünün ilk matriksinin
+
+88
+00:15:38,796 --> 00:15:57,196
+bölümünün ilk matriksinin
+
+89
+00:15:58,196 --> 00:16:05,696
+2, plus 3 times 5, 15, so it gives 17.
+
+90
+00:16:09,331 --> 00:16:14,796
+vekiz
+
+91
+00:16:50,611 --> 00:17:02,851
+C12, we apply inner product for the first row of A and the second column of B.
+
+92
+00:17:03,512 --> 00:17:12,652
+So this is 1 times 0, 0 plus 3 times minus 2, it gives minus 6.
+
+93
+00:17:21,172 --> 00:17:33,483
+Bu bölümün
+
+94
+00:17:37,748 --> 00:17:53,008
+Now, we again apply inner product for the second column, sorry, second row of the first matris to do each column of the second one.
+
+95
+00:17:58,291 --> 00:18:15,371
+Bu, 2 x 2, 4, plus, minus 1, times 5, minus 1. 2 x 0, 0, minus, minus 1, times minus 2, gives 2.
+
+96
+00:18:16,371 --> 00:18:25,051
+And the last entry, which is minus 8, plus, minus 6, minus 14.
+
+97
+00:18:26,579 --> 00:18:30,579
+ve bu 2x3 matris.
+
+98
+00:18:35,347 --> 00:18:35,807
+Ok?
+
+99
+00:18:42,324 --> 00:18:43,115
+vektör,
+
+100
+00:18:47,316 --> 00:18:48,516
+Another example.
+
+101
+00:18:59,028 --> 00:19:02,708
+A and B are matrices as follows.
+
+102
+00:19:05,067 --> 00:19:10,847
+This is 2 by 2 matrix, this is 2 by 2 matrix.
+
+103
+00:19:11,927 --> 00:19:20,148
+So, we can multiply A and B, and also B and A.
+
+104
+00:19:22,347 --> 00:19:26,367
+First, let us find A times B.
+
+105
+00:19:27,316 --> 00:19:33,867
+which is one, two, three, four times.
+
+106
+00:19:49,332 --> 00:19:50,711
+Sonu iki kepsi.
+
+107
+00:19:57,844 --> 00:19:58,344
+Svai,
+
+108
+00:20:04,211 --> 00:20:04,632
+Su
+
+109
+00:20:09,203 --> 00:20:10,203
+15
+
+110
+00:20:20,788 --> 00:20:28,288
+Since these are square matrices of the same size, we can also multiply ba.
+
+111
+00:20:31,892 --> 00:20:45,132
+Çünkü, the column of the first matrix, which is B, for BA, is same with this rows of the second one, which is A.
+
+112
+00:20:45,132 --> 00:20:47,412
+So, we can multiply B and A.
+
+113
+00:20:49,311 --> 00:20:50,851
+B times A.
+
+114
+00:21:13,172 --> 00:21:23,711
+Thank you, [öğrenci]. I see now your answer. And what about B-A?
+
+115
+00:21:32,211 --> 00:21:51,271
+5, 18, 23, 10, 24, 34, 0-6, 0-8.
+
+116
+00:21:59,635 --> 00:22:07,335
+AB is not equal to BA.
+
+117
+00:22:22,003 --> 00:22:26,884
+Ok, so, from this example,
+
+118
+00:22:31,443 --> 00:22:44,723
+We see that, in general, the matrix multiplication does not have a commutative property.
+
+119
+00:22:44,723 --> 00:22:45,344
+Okay.
+
+120
+00:22:54,804 --> 00:23:00,780
+Şimdi, ne bu
+
+121
+00:23:05,268 --> 00:23:07,268
+İki adı ile ilgili bir adı var.
+
+122
+00:23:09,268 --> 00:23:10,268
+Yani,
+
+123
+00:23:10,268 --> 00:23:16,268
+daha fazla 2 adı var.
+
+124
+00:23:17,268 --> 00:23:23,268
+İki adı ile ilgili adı var.
+
+125
+00:23:25,268 --> 00:23:27,268
+İki adı var.
+
+126
+00:23:32,468 --> 00:23:48,367
+If you multiply the matrix by the zero matrix, then you have zero matrix, and, and, and.
+
+127
+00:23:54,163 --> 00:24:18,463
+Now, let A, P, A, M by P matrix, P, P by M matrix,
+
+128
+00:24:26,740 --> 00:24:27,740
+then
+
+129
+00:24:30,340 --> 00:24:31,840
+a, b is
+
+130
+00:24:34,139 --> 00:24:35,139
+m by
+
+131
+00:24:40,468 --> 00:24:49,468
+matris. Şimdi, BA'ya ne? Biz 4 farklı situasyonu var.
+
+132
+00:25:01,652 --> 00:25:08,012
+First, Ba may not be defined.
+
+133
+00:25:17,652 --> 00:25:27,652
+This will take place if n is different from m.
+
+134
+00:25:28,652 --> 00:25:38,952
+So, if m is not equal to m, we cannot define ba because the columns of the first one is not equal to the rows of the second one.
+
+135
+00:25:44,915 --> 00:25:47,935
+n has to be equal to the m.
+
+136
+00:25:49,135 --> 00:25:51,195
+So, if ba is defined,
+
+137
+00:26:10,996 --> 00:26:18,996
+if the ba is defined, then it means that
+
+138
+00:26:23,443 --> 00:26:27,443
+which means n equals n.
+
+139
+00:26:27,443 --> 00:26:29,291
+then
+
+140
+00:26:34,867 --> 00:26:35,987
+P-A-E-s
+
+141
+00:26:39,380 --> 00:26:43,700
+P by P matriks, y.
+
+142
+00:26:47,796 --> 00:26:48,996
+AB is
+
+143
+00:26:48,996 --> 00:26:53,516
+M by M matris
+
+144
+00:26:57,011 --> 00:27:08,132
+So, although you can define the multiplication of ba, but the size of the a, b, and pa are different.
+
+145
+00:27:10,871 --> 00:27:11,431
+And,
+
+146
+00:27:14,172 --> 00:27:15,172
+third one,
+
+147
+00:27:18,311 --> 00:27:18,751
+if,
+
+148
+00:27:21,751 --> 00:27:22,431
+a, b,
+
+149
+00:27:23,155 --> 00:27:23,655
+Sorry.
+
+150
+00:27:24,155 --> 00:27:26,056
+Al-B is M or MN?
+
+151
+00:27:27,955 --> 00:27:28,556
+Yes.
+
+152
+00:27:29,655 --> 00:27:30,516
+Al-B.
+
+153
+00:27:30,816 --> 00:27:31,215
+A-B.
+
+154
+00:27:31,875 --> 00:27:33,875
+I cannot hear you.
+
+155
+00:27:35,215 --> 00:27:36,735
+Now, is it clear?
+
+156
+00:27:37,175 --> 00:27:37,435
+Yeah.
+
+157
+00:27:37,435 --> 00:27:42,536
+Yeah, I'm saying that A-B is M-M or M-N?
+
+158
+00:27:43,495 --> 00:27:45,695
+M multiply M or M multiply N?
+
+159
+00:27:49,288 --> 00:27:54,127
+Al-B is M or MN?
+
+160
+00:27:47,571 --> 00:27:51,071
+AB is M times M by M matriks.
+
+161
+00:27:52,271 --> 00:27:59,652
+If, if, N is equal to M, then, we can define ba.
+
+162
+00:27:59,971 --> 00:28:05,891
+So, since N equal to the M, AB is M by M or M by M matriks.
+
+163
+00:28:06,251 --> 00:28:06,491
+Okay.
+
+164
+00:28:07,271 --> 00:28:08,471
+So, M equals to M.
+
+165
+00:28:10,371 --> 00:28:12,511
+You asked the second condition, right?
+
+166
+00:28:14,511 --> 00:28:15,111
+Yeah.
+
+167
+00:28:16,468 --> 00:28:17,847
+I cannot hear you.
+
+168
+00:28:18,847 --> 00:28:20,148
+Yeah, I'm asking you the second one.
+
+169
+00:28:20,708 --> 00:28:20,887
+Yeah.
+
+170
+00:28:22,668 --> 00:28:33,188
+If, for the first condition, if n is not equal to the n, so we want to multiply b and a.
+
+171
+00:28:34,407 --> 00:28:34,748
+Okay.
+
+172
+00:28:36,887 --> 00:28:42,048
+Since b is p by m matrix and a is
+
+173
+00:28:43,124 --> 00:28:44,723
+m by P matris.
+
+174
+00:28:46,003 --> 00:28:57,763
+For the matris multiplication, the columns of the first one, which is n, has to be equal to the rows of the second one.
+
+175
+00:28:58,144 --> 00:29:02,284
+So, if n is not equal to the n, we cannot define matris multiplication.
+
+176
+00:29:02,683 --> 00:29:02,903
+Okay?
+
+177
+00:29:15,476 --> 00:29:16,476
+Ok.
+
+178
+00:29:19,176 --> 00:29:29,476
+And if AB and BA are both of the same size,
+
+179
+00:29:42,804 --> 00:29:45,524
+They may be equal.
+
+180
+00:29:57,652 --> 00:29:58,332
+Oz
+
+181
+00:30:06,420 --> 00:30:10,120
+They may be unequal.
+
+182
+00:30:11,260 --> 00:30:11,620
+Okay.
+
+183
+00:30:16,468 --> 00:30:17,468
+Evet, [öğrenci].
+
+184
+00:30:19,868 --> 00:30:29,468
+What do you mean? M equals M equals P? They have the same size?
+
+185
+00:30:32,468 --> 00:30:33,468
+Teacher.
+
+186
+00:30:34,468 --> 00:30:40,468
+Okay, if M equals M equals P, then AB and BA have the same size.
+
+187
+00:30:41,652 --> 00:30:44,812
+Teacher, can I ask you a question?
+
+188
+00:30:45,932 --> 00:30:48,132
+Yes, but I cannot hear you.
+
+189
+00:30:49,092 --> 00:30:56,132
+Please speak with high volume or
+
+190
+00:30:56,132 --> 00:30:59,852
+1 max r.
+
+191
+00:31:00,276 --> 00:31:13,316
+[öğrenci], we need to password for download this PDF from your AWS's page. Can you say password us? I guess [şifre] password is wrong.
+
+192
+00:31:15,316 --> 00:31:25,636
+The password for the first week notes is [şifre].
+
+193
+00:31:28,115 --> 00:31:29,615
+Satteş, metsis.
+
+194
+00:31:37,044 --> 00:31:37,684
+[öğrenci].
+
+195
+00:31:40,284 --> 00:31:40,964
+First week.
+
+196
+00:31:43,164 --> 00:31:44,224
+Group, yeah, yeah.
+
+197
+00:31:44,704 --> 00:31:49,664
+[şifre].
+
+198
+00:31:54,771 --> 00:31:59,131
+No, [öğrenci], matris, matriplation has not commutative property.
+
+199
+00:32:02,071 --> 00:32:07,231
+Yes, yes, the passport is for the last week notes.
+
+200
+00:32:09,931 --> 00:32:13,011
+[öğrenci], tüm şifreleri aynı yapmıyoruz, şöyle yapıyoruz.
+
+201
+00:32:14,611 --> 00:32:16,051
+Nasıl kaybet olmuş ki?
+
+202
+00:32:18,311 --> 00:32:20,011
+Tüm şifreler şöyle oluyor.
+
+203
+00:32:40,788 --> 00:32:41,687
+[şifre]
+
+204
+00:32:48,115 --> 00:32:49,115
+[şifre]
+
+205
+00:32:52,076 --> 00:32:53,115
+[şifre]
+
+206
+00:32:56,355 --> 00:32:56,955
+[şifre]
+
+207
+00:33:00,339 --> 00:33:00,839
+Okey.
+
+208
+00:33:04,200 --> 00:33:09,680
+[öğrenci], [şifre] Tamam mı?
+
+209
+00:33:10,799 --> 00:33:15,059
+Hocam, bu şifreye girdiğim zaman ama şifre yanlış diyor şu anda üstede.
+
+210
+00:33:16,240 --> 00:33:19,039
+Geçen hafta noktalarına erişmeyi çalıştığımızda Türkçe yanlış diyor.
+
+211
+00:33:19,220 --> 00:33:20,400
+Türkçe'ye bakıyorsundur.
+
+212
+00:33:22,680 --> 00:33:27,319
+Türkçe noktada var. Yani evet, Türkçe için farklı. Siz Türkçe değilsiniz ki.
+
+213
+00:33:29,140 --> 00:33:32,680
+Peki, iki sız onu da söyleyeyim. Tamam. Tamam.
+
+214
+00:33:33,400 --> 00:33:36,200
+Yani çok iyi olur hocam Türkçe'de yani. Bazı eğerleri çevremekte.
+
+215
+00:33:36,500 --> 00:33:36,760
+Peki.
+
+216
+00:33:49,460 --> 00:33:50,660
+Zaten aynı noktalar.
+
+217
+00:33:57,844 --> 00:33:59,684
+Orada da sadece grup 1 Türkçe.
+
+218
+00:34:00,764 --> 00:34:01,484
+Konu başlığı.
+
+219
+00:34:05,587 --> 00:34:06,508
+Thank you so much.
+
+220
+00:34:06,968 --> 00:34:07,168
+Tamam.
+
+221
+00:34:09,408 --> 00:34:12,467
+Berkant yazıyor orada, for the Turkish notes yazıyor, passport yazıyor.
+
+222
+00:34:15,827 --> 00:34:16,387
+Okey.
+
+223
+00:34:16,387 --> 00:34:16,748
+Now.
+
+224
+00:34:23,668 --> 00:34:32,688
+[öğrenci], what means equal, unequal means not equal, okay?
+
+225
+00:34:40,244 --> 00:34:43,684
+I gave the transpose of the matris last week.
+
+226
+00:34:56,500 --> 00:35:14,180
+Evet, if the size of AB and BA are equal, then these matrices may be the same matrix or equal, it means, or they not be the same matrix as the example [öğrenci].
+
+227
+00:35:17,060 --> 00:35:18,739
+Look at this example.
+
+228
+00:35:21,172 --> 00:35:25,711
+A is 2x2 matrix, B is 2x2 matrix, ok.
+
+229
+00:35:27,211 --> 00:35:43,731
+Then we multiply A and B, which gives 2x2 matrix, and we multiply BA, which gives 2x2 matrix, but AB is not equal to BA, but the size are equal, ok.
+
+230
+00:35:48,467 --> 00:35:48,967
+Güzel.
+
+231
+00:35:49,887 --> 00:35:50,307
+Now,
+
+232
+00:35:54,643 --> 00:35:56,823
+We gave the transpose of the matrix.
+
+233
+00:35:59,763 --> 00:36:00,763
+And...
+
+234
+00:36:06,132 --> 00:36:11,112
+Şimdi bu teorema teorema da
+
+235
+00:36:46,068 --> 00:37:07,052
+Maktik, Maktik
+
+236
+00:37:22,483 --> 00:37:33,604
+[öğrenci], we gave the definition of the transpose of the matrix last week, so maybe we can remind it.
+
+237
+00:37:34,604 --> 00:37:49,364
+Transpose of the matrix A, written as A to the T, or A transpose, we change the columns of A.
+
+238
+00:37:50,420 --> 00:38:05,340
+Bu, bu matriz, ilk bölümde, ilk bölümde, ikinci bölümde, ikinci bölümde, ikinci bölümde, ikinci bölümde, ikinci bölümde.
+
+239
+00:38:06,619 --> 00:38:09,180
+Bu matriz, bu matriz, bu.
+
+240
+00:38:09,180 --> 00:38:10,180
+Tamam mı?
+
+241
+00:38:17,523 --> 00:38:22,523
+We talk about the square matrices in the first lecture.
+
+242
+00:38:23,523 --> 00:38:38,523
+If the rows of the matris is equal to the columns of, sorry, if the rows and the columns of the matris are the same, then we say that this matrix is square matrix.
+
+243
+00:38:39,523 --> 00:38:40,268
+So,
+
+244
+00:38:45,556 --> 00:38:58,355
+If rows equals to the columns, so a is m by n, süken matris.
+
+245
+00:39:03,059 --> 00:39:03,519
+Ok?
+
+246
+00:39:10,900 --> 00:39:11,680
+Çın!
+
+247
+00:39:16,083 --> 00:39:21,583
+Bu, 3x3² matrisler.
+
+248
+00:39:38,068 --> 00:39:52,748
+Ve, ve, talk about, the, vemonel pot, trace.
+
+249
+00:39:59,219 --> 00:40:00,219
+Evet.
+
+250
+00:40:00,219 --> 00:40:02,219
+Bu ne bu Trace Automatik?
+
+251
+00:40:02,219 --> 00:40:04,219
+Bu ne?
+
+252
+00:40:04,219 --> 00:40:06,219
+Do you know the Trace Automatik?
+
+253
+00:40:11,476 --> 00:40:14,476
+Evet. Evet.
+
+254
+00:40:14,476 --> 00:40:37,476
+Evet.
+
+255
+00:40:45,492 --> 00:40:54,172
+Condition 4 is, I think, the most important one, because the trace of AB equals the trace of BA.
+
+256
+00:40:59,991 --> 00:41:03,991
+Evet.
+
+257
+00:40:59,315 --> 00:41:09,315
+Ve bu örneğin bazı örnekleri ve skaterin metriksiyonu konuşuyoruz.
+
+258
+00:41:23,123 --> 00:41:23,603
+Não.
+
+259
+00:41:28,083 --> 00:41:33,083
+We solved an example last week, [öğrenci].
+
+260
+00:41:35,083 --> 00:41:42,083
+And there are many examples in these nodes. You can also see from here.
+
+261
+00:41:44,083 --> 00:41:52,083
+Because these nodes are from the first week and we are now in the second week, so we have to
+
+262
+00:42:07,380 --> 00:42:25,380
+Ok, what is invertible matris, or non-singular matris? In some Turkish book, it's also say as regular matris.
+
+263
+00:42:27,380 --> 00:42:28,268
+If...
+
+264
+00:42:28,500 --> 00:42:35,380
+A times B equals B times A, and this is also equal to the identity matrix.
+
+265
+00:42:35,380 --> 00:42:51,400
+Then we say that A is inverse of B, or B is inverse of A, and we denote this as A to the minus 1.
+
+266
+00:42:58,003 --> 00:43:00,323
+B is the universal of A,
+
+267
+00:43:04,788 --> 00:43:14,228
+Then, a times b equals b times a and this is equal to the identity matrix.
+
+268
+00:43:18,195 --> 00:43:29,195
+For example, A and B are like this. If you multiply A and B, then you have the identi matrix.
+
+269
+00:43:30,875 --> 00:43:43,956
+And if you multiply BA, then you have also the identi matrix. So we say from this example, B is the inverse of A or A is the inverse of B. This is the same.
+
+270
+00:43:46,996 --> 00:43:53,996
+ve bu özellikler de çok önemli.
+
+271
+00:44:11,891 --> 00:44:23,011
+inverse of this matrix multiplication equals this. So we product the matrices in reverse order.
+
+272
+00:44:23,572 --> 00:44:29,331
+Okay? So these two properties are very important.
+
+273
+00:44:32,452 --> 00:44:37,572
+If A times B equals to identity matrix, then we say
+
+274
+00:44:38,804 --> 00:44:45,324
+D is the inverse of A, or A is the inverse of B.
+
+275
+00:44:46,503 --> 00:44:55,724
+And we say that A is an invertible or non-singular matris, or B is non-singular or invertible matris.
+
+276
+00:45:00,307 --> 00:45:00,788
+Ok.
+
+277
+00:45:06,132 --> 00:45:06,632
+No.
+
+278
+00:45:31,411 --> 00:45:36,364
+Şimdi, birçok farklı türlü birçok türlü matrisler hakkında konuşuyoruz.
+
+279
+00:45:51,027 --> 00:45:55,027
+Let A be a square matrix.
+
+280
+00:45:55,027 --> 00:46:09,027
+If A to the K plus one is equal to A, then we say that A is a periodic matrix.
+
+281
+00:46:19,987 --> 00:46:37,987
+The least positive integer which satisfies this condition is the period of A. So here, K is the period of A.
+
+282
+00:46:40,987 --> 00:46:41,987
+Period.
+
+283
+00:46:47,347 --> 00:46:48,347
+Bu smallest
+
+284
+00:46:56,916 --> 00:46:58,615
+Positiv integer,
+
+285
+00:47:02,963 --> 00:47:04,940
+Resatisfy,
+
+286
+00:47:13,300 --> 00:47:13,720
+Hoş.
+
+287
+00:47:19,987 --> 00:47:20,607
+See you.
+
+288
+00:47:24,820 --> 00:47:31,916
+Bu adı, bu adı
+
+289
+00:47:37,556 --> 00:47:41,855
+a to the k plus 1 equals a.
+
+290
+00:47:42,496 --> 00:47:49,556
+For example, a is matrix like this.
+
+291
+00:47:50,456 --> 00:47:53,855
+Let us find a cube here.
+
+292
+00:47:55,855 --> 00:47:56,695
+Okay.
+
+293
+00:47:57,855 --> 00:47:58,396
+What is a?
+
+294
+00:48:07,923 --> 00:48:11,144
+1, minus 2, minus 6.
+
+295
+00:48:31,956 --> 00:48:43,956
+Tamam, şimdi, A3'i bulmak isteriz.
+
+296
+00:48:45,956 --> 00:48:58,956
+Önce, hayır [öğrenci], daha fazla break var, bu bölümünün 12.30'da başlayacağız.
+
+297
+00:49:02,483 --> 00:49:15,483
+Şimdi, A3'ı bulmaktan, ilk defa, A ile A, bu da A2'ı da verir.
+
+298
+00:49:28,371 --> 00:49:41,971
+So, I apply the inner product for each row of the first matrix with each column of the second one.
+
+299
+00:49:43,172 --> 00:49:56,331
+So, this gives 1, plus 6, 7, plus, minus, 12, minus 5.
+
+300
+00:50:00,563 --> 00:50:09,403
+This gives minus 2, minus 4, minus 6.
+
+301
+00:50:12,403 --> 00:50:14,184
+Sorry, sorry, sorry.
+
+302
+00:50:14,184 --> 00:50:27,403
+Yes, and this gives minus 6, minus 18, minus 24, plus...
+
+303
+00:50:29,139 --> 00:50:34,059
+18 minus, sorry, 6.
+
+304
+00:50:41,235 --> 00:50:42,456
+Arkadaşlar, dizki biz.
+
+305
+00:50:49,876 --> 00:50:58,996
+9, this gives 10, and this gives
+
+306
+00:51:03,219 --> 00:51:05,219
+Sırr, there's a mistake.
+
+307
+00:51:05,219 --> 00:51:07,219
+Which one?
+
+308
+00:51:07,219 --> 00:51:11,219
+The 6 must be minus 6.
+
+309
+00:51:11,219 --> 00:51:15,219
+Okay, thank you.
+
+310
+00:51:15,219 --> 00:51:17,219
+No problem.
+
+311
+00:51:17,219 --> 00:51:29,219
+And for the last row, we have 2, minus 6, minus 4.
+
+312
+00:51:33,811 --> 00:51:37,771
+minus 4 ve bu,
+
+313
+00:51:40,788 --> 00:51:49,307
+Minus? Minus 3. Minus 3. Ok, thank you. Now, we multiply this matrix bit.
+
+314
+00:52:03,284 --> 00:52:05,284
+bitKey, which is
+
+315
+00:52:24,692 --> 00:52:32,292
+İndir product to the each row of the first matrix to the each column of the second one.
+
+316
+00:52:32,292 --> 00:52:49,092
+So this gives minus 5 plus 18, 13 plus minus 12, 1.
+
+317
+00:52:50,900 --> 00:52:55,260
+This gives 10 minus 12.
+
+318
+00:52:58,199 --> 00:52:58,740
+Oh.
+
+319
+00:53:02,516 --> 00:53:02,956
+San?
+
+320
+00:53:06,900 --> 00:53:08,060
+Minus 2, ok.
+
+321
+00:53:09,680 --> 00:53:21,659
+And this gives 30, minus 54, plus 18.
+
+322
+00:53:27,251 --> 00:53:35,532
+Minus 6. So, if you multiply this matrix with this, then you have the matrix A, which is
+
+323
+00:53:42,579 --> 00:53:49,219
+A is a periodic matrix with the period 2.
+
+324
+00:53:49,219 --> 00:53:50,219
+Okay?
+
+325
+00:53:54,324 --> 00:53:58,384
+[öğrenci] ne oldu?
+
+326
+00:54:01,744 --> 00:54:04,724
+Yazdıklarınızı göremiyorum, sonradan görüyorum, bir şeyler oldu.
+
+327
+00:54:05,304 --> 00:54:06,544
+Niye iptal oldun [öğrenci]?
+
+328
+00:54:09,344 --> 00:54:11,744
+Anlamadım yani. Zor mu oldu?
+
+329
+00:54:20,275 --> 00:54:45,275
+Peki. [öğrenci], you cannot easily multiply these two matris, but if you write some programs in internet, or in matematica, or matlab, you can multiply the matris. So if you use the mat program, you can multiply easily. Okay.
+
+330
+00:54:52,115 --> 00:54:55,916
+ve bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde bir yüzeyde
+
+331
+00:55:04,851 --> 00:55:23,652
+If k is 1, then it means that a square equals a, if matrix satisfies this condition, then we say that the matrix a is idempotent matrix.
+
+332
+00:55:24,571 --> 00:55:31,611
+Okay? If a square equals a, then the matrix is idempotent.
+
+333
+00:55:35,476 --> 00:55:48,996
+For example, the matrix A, if you multiply A with itself, multiply with itself, then you have A, so this is the idempotent matrix.
+
+334
+00:56:03,219 --> 00:56:16,139
+Evet arkadaşlar, ben dediğim gibi yazdıklarınızı sonradan görüyorum. Bu Zoom'da bir şeyler oldu. Önceden görüyordum şurada şeyin üstünde. O yüzden sorularınıza belki cevap veremiyor olabilirim arkadaşlar. [öğrenci].
+
+335
+00:56:17,652 --> 00:56:19,251
+Hocam, buradan sorayım mı?
+
+336
+00:56:19,251 --> 00:56:21,971
+Tabi tabi, siz soru sorabilirsiniz, çekinmeyin yani.
+
+337
+00:56:21,971 --> 00:56:25,172
+Türkçe sorarım da, böyle hataya yer vermemek için özür dilerim.
+
+338
+00:56:25,172 --> 00:56:27,172
+Ama Türkçe'de sor, İngilizce'de soru önemli değil.
+
+339
+00:56:27,172 --> 00:56:33,251
+Hocam, bu dedik ya, periyodik, onun sadece şey, metrisin kuvveti olması yetiyor, değil mi?
+
+340
+00:56:33,251 --> 00:56:34,451
+Evet, evet, evet.
+
+341
+00:56:34,451 --> 00:56:35,652
+Tamam, teşekkür ederim.
+
+342
+00:56:38,291 --> 00:56:39,291
+And...
+
+343
+00:56:40,092 --> 00:56:42,291
+İzaretin, sorry. Sorry.
+
+344
+00:56:45,139 --> 00:57:12,339
+[öğrenci], ask, or I don't know, but one of your friends ask me that for the periodic matrix, we only take the power of the matrix and if the any power of the matrix equal itself, then we say that it is periodic. Okay, [öğrenci].
+
+345
+00:57:15,699 --> 00:57:17,699
+Hayır, bu ne?
+
+346
+00:57:17,699 --> 00:57:19,699
+Evet, bu ne?
+
+347
+00:57:19,699 --> 00:57:21,699
+Bu ne?
+
+348
+00:57:21,699 --> 00:57:23,699
+Evet.
+
+349
+00:57:23,699 --> 00:57:25,699
+Ve
+
+350
+00:57:25,699 --> 00:57:29,699
+aile matriz A
+
+351
+00:57:29,699 --> 00:57:31,699
+Eğer
+
+352
+00:57:46,164 --> 00:57:53,932
+ve k'ın
+
+353
+00:57:57,492 --> 00:58:00,492
+is the non-potency index of A.
+
+354
+00:58:00,852 --> 00:58:01,132
+Okay.
+
+355
+00:58:01,852 --> 00:58:02,752
+So, here,
+
+356
+00:58:04,232 --> 00:58:07,592
+K is the non-potency index of A.
+
+357
+00:58:08,932 --> 00:58:09,912
+But,
+
+358
+00:58:16,916 --> 00:58:17,916
+Smallest,
+
+359
+00:58:21,115 --> 00:58:22,316
+positive integer.
+
+360
+00:58:25,715 --> 00:58:26,215
+Okey.
+
+361
+00:58:30,228 --> 00:58:40,228
+For example, for the matrix A, if you multiply A with itself, then you have the zero matrix.
+
+362
+00:58:40,228 --> 00:58:47,228
+So A is the nonpotent matrix of width or the nonpotency index 2.
+
+363
+00:58:47,228 --> 00:58:54,228
+Because we have A square equals zero. This is zero matrix.
+
+364
+00:59:00,692 --> 00:59:16,692
+ve, if the square of the matrix, any matrix A, which is a square matrix, equals the identity matrix, then we say this matrix is invalid or involuntary matrix.
+
+365
+00:59:25,076 --> 00:59:31,935
+For example, for matrix A, the square of A equals to identity matrix.
+
+366
+00:59:34,415 --> 00:59:39,435
+So, we say that A is involute matrix.
+
+367
+00:59:52,307 --> 01:00:01,008
+[öğrenci], kinematrix both needpotent and idempotent at the same time.
+
+368
+01:00:02,708 --> 01:00:10,307
+Okay, [öğrenci], what is idempotent matrix?
+
+369
+01:00:17,652 --> 01:00:22,152
+a2 equals a. This is idempotent.
+
+370
+01:00:26,036 --> 01:00:27,815
+And, what's your question?
+
+371
+01:00:32,148 --> 01:00:33,008
+And
+
+372
+01:00:37,235 --> 01:00:39,235
+You see that?
+
+373
+01:00:40,635 --> 01:00:47,235
+Okay, let the matrix A be the item-quotant matrix, so A square equals A.
+
+374
+01:00:48,835 --> 01:00:49,708
+Right?
+
+375
+01:00:53,427 --> 01:00:55,427
+Ve nevi olmalı?
+
+376
+01:00:58,579 --> 01:01:02,519
+a to the n power k equals zero.
+
+377
+01:01:02,519 --> 01:01:24,579
+But, but, [öğrenci], a to the one, sorry, a to the one equals a, a to the two equals a, a to the three equals
+
+378
+01:01:26,164 --> 01:01:40,324
+a2 times a. a2 is a. So this is a times a. So this is a2. So this is a again.
+
+379
+01:01:43,860 --> 01:01:55,380
+So, you cannot find, if the matrix is idempotent, then you cannot find any power of this matrix, which equals to zero.
+
+380
+01:01:55,380 --> 01:02:01,539
+So, the answer for your question is no.
+
+381
+01:02:03,119 --> 01:02:03,880
+Okay?
+
+382
+01:02:11,539 --> 01:02:18,539
+ve
+
+383
+01:02:23,635 --> 01:02:26,076
+Şimdi, ne? Diagonal matris?
+
+384
+01:02:30,387 --> 01:02:31,047
+Net!
+
+385
+01:02:35,219 --> 01:02:38,819
+A, B, a square matriks, M, N, square matriks.
+
+386
+01:03:21,076 --> 01:03:25,076
+Bu, n by n, square matrisi.
+
+387
+01:03:26,076 --> 01:03:38,076
+Ve, we say this, the elements, aii, form the main diagonal of the matris.
+
+388
+01:03:38,076 --> 01:03:44,076
+So, these are the elements in main diagonal.
+
+389
+01:03:48,115 --> 01:03:48,576
+Ok?
+
+390
+01:03:52,307 --> 01:04:00,684
+If a süker matris A, if the elements on the...
+
+391
+01:04:04,179 --> 01:04:30,315
+non-diagonal, sorry, sorry, if the elements of the square matrix are all zero except the main diagonal, then we say that this matrix is a diagonal matrix. So, in the diagonal matrix, the entries
+
+392
+01:04:30,579 --> 01:04:45,719
+Differents from the main diagonal are all zero. So these are all zero. We only have the elements on the main diagonal. But, but.
+
+393
+01:04:51,092 --> 01:05:02,172
+Ok, [öğrenci], yes, sorry for this. I upload all lecture notes before the lesson. Ok.
+
+394
+01:05:08,755 --> 01:05:22,576
+For example, or location for you. Is the zero matrix, is the end by end zero matrix diagonal or not?
+
+395
+01:05:27,476 --> 01:05:31,096
+Deniz jest, no.
+
+396
+01:05:35,476 --> 01:05:37,596
+Özgür Züromatrix, tarikonel, ornat.
+
+397
+01:05:44,115 --> 01:05:45,476
+Anyone? Not?
+
+398
+01:05:50,771 --> 01:05:51,291
+Ok.
+
+399
+01:05:57,300 --> 01:06:00,060
+Diagonal Matrix,
+
+400
+01:06:00,060 --> 01:06:01,800
+aslında,
+
+401
+01:06:01,800 --> 01:06:05,800
+it is important,
+
+402
+01:06:05,800 --> 01:06:08,800
+the entries
+
+403
+01:06:08,800 --> 01:06:13,300
+except the main diagonal are all 0.
+
+404
+01:06:13,300 --> 01:06:14,300
+So,
+
+405
+01:06:14,300 --> 01:06:18,800
+the entries on the main diagonal may be 0 or not.
+
+406
+01:06:18,800 --> 01:06:23,800
+So, it means that 0 matrix is also a diagonal matrix.
+
+407
+01:06:23,800 --> 01:06:24,652
+Okay?
+
+408
+01:06:26,452 --> 01:06:53,388
+Çünkü bu noktaların 0'ı 0
+
+409
+01:06:53,492 --> 01:07:00,612
+Çünkü bu
+
+410
+01:07:00,612 --> 01:07:03,932
+diğer altı altı altı altı altı.
+
+411
+01:07:03,932 --> 01:07:06,452
+Bu, bu diagonal matrix.
+
+412
+01:07:06,452 --> 01:07:09,492
+Ve bu,
+
+413
+01:07:09,492 --> 01:07:11,492
+bu,
+
+414
+01:07:23,380 --> 01:07:25,380
+Evet, evet, [öğrenci].
+
+415
+01:07:27,380 --> 01:07:33,380
+Diagonal matrisi, matrisi must be a square matrisi.
+
+416
+01:07:34,380 --> 01:07:37,380
+Last week, we also learned the scalar matrisi,
+
+417
+01:07:38,380 --> 01:07:41,380
+which is the enemy multiple of the identity matrisi.
+
+418
+01:07:42,380 --> 01:07:43,380
+So,
+
+419
+01:07:44,380 --> 01:07:45,380
+so,
+
+420
+01:07:48,380 --> 01:07:50,336
+are the scalar matrisi
+
+421
+01:07:50,335 --> 01:07:51,815
+diagonal or nice.
+
+422
+01:07:59,539 --> 01:08:01,339
+Otavattus keylir matrisis.
+
+423
+01:08:04,884 --> 01:08:06,963
+Skelin matris R diagonal ornak.
+
+424
+01:08:13,652 --> 01:08:14,331
+Dövbe manav?
+
+425
+01:08:15,231 --> 01:08:15,771
+Yes.
+
+426
+01:08:18,072 --> 01:08:18,631
+Dövbe manav.
+
+427
+01:08:22,931 --> 01:08:26,931
+Çünkü, bu şekilde matrisi,
+
+428
+01:08:32,819 --> 01:08:34,840
+Skalmatsa en umaltır love.
+
+429
+01:08:38,420 --> 01:08:42,420
+Identity Matrix
+
+430
+01:08:42,420 --> 01:08:44,420
+So
+
+431
+01:08:44,420 --> 01:08:46,420
+It has the form like this
+
+432
+01:08:46,420 --> 01:08:48,420
+K
+
+433
+01:08:48,420 --> 01:08:52,172
+0
+
+434
+01:09:01,587 --> 01:09:12,387
+So, the main diagonal has the elements or entries, and all other entries are zero. So, the scalar matris are also diagonal matris.
+
+435
+01:09:15,587 --> 01:09:21,587
+This is also diagonal matris, this is also diagonal matris.
+
+436
+01:09:25,587 --> 01:09:26,788
+Sometimes,
+
+437
+01:09:27,636 --> 01:09:33,935
+We can skip the zeros for the diagonal matrices, like here.
+
+438
+01:09:37,684 --> 01:09:40,783
+You can write like this sometimes, dayımlamakısız.
+
+439
+01:09:49,011 --> 01:09:58,911
+Ok. And what about the triangular matrices? Again, again.
+
+440
+01:09:58,911 --> 01:10:01,911
+Let.
+
+441
+01:10:15,507 --> 01:10:21,507
+Let a be a n by n square matrix.
+
+442
+01:10:55,028 --> 01:10:58,708
+This is Embalene Sikör matriks, and
+
+443
+01:11:02,515 --> 01:11:07,275
+This is the main diagonal of this matrix.
+
+444
+01:11:08,275 --> 01:11:11,155
+So, if
+
+445
+01:11:14,579 --> 01:11:20,420
+If the entries below the main diagonal
+
+446
+01:11:27,475 --> 01:11:30,475
+İlk diagonalda, bu da,
+
+447
+01:11:36,819 --> 01:11:57,819
+If all entries below the main diagonal, which means that here i is greater than j, for i is greater than j, all
+
+448
+01:12:03,859 --> 01:12:14,359
+IJs are zero. Then we say that this matrix is upper triangular.
+
+449
+01:12:22,515 --> 01:12:32,515
+So, for the upper triangular matrices, we have non-zero entries on the main diagonal and above the main diagonal.
+
+450
+01:12:32,515 --> 01:12:45,515
+Okay? All the entries below the main diagonal are zero, so we have only the entries, non-zero entries on the main diagonal and above the main diagonal.
+
+451
+01:12:45,515 --> 01:12:49,515
+This matrix is called upper triangular.
+
+452
+01:12:50,420 --> 01:13:02,340
+And similarly, if all entries
+
+453
+01:13:10,100 --> 01:13:15,100
+A'ın başkaların 0'a, bu anlamda,
+
+454
+01:13:16,100 --> 01:13:20,100
+i'ye yukarıdan j'ye,
+
+455
+01:13:21,100 --> 01:13:23,100
+A'ı, j'ye 0'a,
+
+456
+01:13:24,100 --> 01:13:28,100
+sonra, matrizin,
+
+457
+01:13:29,100 --> 01:13:32,100
+lower-trianguları.
+
+458
+01:13:37,908 --> 01:13:49,108
+So, for the lower triangular matrix, we have only non-zero entries on the main diagonal and below the main diagonal.
+
+459
+01:13:50,108 --> 01:13:50,507
+Okay.
+
+460
+01:13:54,068 --> 01:13:57,068
+So, what about the...
+
+461
+01:13:57,068 --> 01:13:58,228
+Doctor, I have a question.
+
+462
+01:13:59,007 --> 01:13:59,507
+Sorry?
+
+463
+01:14:00,308 --> 01:14:01,208
+I have a question.
+
+464
+01:14:01,548 --> 01:14:02,308
+Yeah, please.
+
+465
+01:14:03,108 --> 01:14:11,728
+What is the difference between this example and the upper triangle and the diagonal matrix?
+
+466
+01:14:12,648 --> 01:14:13,028
+Okay.
+
+467
+01:14:14,108 --> 01:14:15,927
+There is a question for you.
+
+468
+01:14:16,587 --> 01:14:17,747
+What is the difference, I mean?
+
+469
+01:14:17,847 --> 01:14:18,548
+Yeah, I see.
+
+470
+01:14:19,347 --> 01:14:24,087
+Is the diagonal matrix is upper triangular or lower triangular?
+
+471
+01:14:28,595 --> 01:14:48,456
+Diagonal matrisi, upper triangular, or lower triangular. Diagonal matrisi, yes, both. Diagonal matrisi, both lower triangular and upper triangular.
+
+472
+01:14:48,979 --> 01:14:57,979
+Bu, mesela, bana sorunla ilgili farkı soruyorsunuz.
+
+473
+01:14:58,979 --> 01:15:04,979
+Bu, 2x2 metriksin.
+
+474
+01:15:15,412 --> 01:15:23,012
+Bu, bu, bu, upper triangular matris. Bu, bu, upper? Upper, ok.
+
+475
+01:15:24,532 --> 01:15:34,412
+Bu, bu, non-zero, enris, bu, main diagonal. Ama bu, bu, diğer diagonal matris değil, değil mi? Evet.
+
+476
+01:15:34,412 --> 01:15:38,412
+Bu, bu, A1, 2.
+
+477
+01:15:38,836 --> 01:15:41,836
+Burada, bu değil, bu değil, bu değil.
+
+478
+01:15:41,836 --> 01:15:43,836
+Ama bu, bu, bu, bu, bu, bu.
+
+479
+01:15:43,836 --> 01:15:44,836
+Tamam mı?
+
+480
+01:15:44,836 --> 01:15:45,836
+Tamam.
+
+481
+01:15:45,836 --> 01:15:47,836
+May I ask you a question?
+
+482
+01:15:47,836 --> 01:15:49,836
+Evet.
+
+483
+01:15:49,836 --> 01:15:53,836
+Eğer 0 numarını değiştirebilir,
+
+484
+01:15:53,836 --> 01:15:55,836
+ne oluyor?
+
+485
+01:15:55,836 --> 01:15:56,836
+Evet.
+
+486
+01:16:00,627 --> 01:16:08,347
+But the diagonal matris must be zero, isn't it?
+
+487
+01:16:10,307 --> 01:16:22,507
+If non-diagonal entries of a square matris are all zero, then we say that this matris is
+
+488
+01:16:23,155 --> 01:16:38,195
+Diagonal. Ok. Ok. Ok. Ok. Ok. Ok. Ok. Ok. Ok. Thank you sir. You are welcome. And this for this one.
+
+489
+01:16:41,076 --> 01:16:48,195
+This is the main diagonal. So all entries below the main diagonal are zero. So this is also upper triangle.
+
+490
+01:16:55,891 --> 01:17:01,412
+ve bu bir diğer tarafı, bu bir diğer tarafı,
+
+491
+01:17:02,412 --> 01:17:07,331
+ve bu diğer tarafı, bu diğer tarafı,
+
+492
+01:17:07,331 --> 01:17:10,931
+bu, bu diğer tarafı, bu diğer tarafı,
+
+493
+01:17:11,452 --> 01:17:12,452
+OK?
+
+494
+01:17:22,036 --> 01:17:29,036
+Ve vekizdeğer, Gauss'in matrisler, vekizdeğer,
+
+495
+01:17:50,292 --> 01:18:06,592
+What is symmetric matris? If the transpose of the matrix equals itself, then we say that the matrix is symmetric.
+
+496
+01:18:09,939 --> 01:18:17,100
+If the transpose of the matrix equals itself, then the matrix is symmetric.
+
+497
+01:18:20,180 --> 01:18:32,139
+So, you can conclude from here that the symmetric matrix has to be a square matrix.
+
+498
+01:18:33,340 --> 01:18:34,340
+Let
+
+499
+01:18:37,652 --> 01:18:39,652
+ABS-Cure Matrix
+
+500
+01:19:01,108 --> 01:19:09,747
+So, for M by M matrix, if the transpose of A equals A, which means that
+
+501
+01:19:14,387 --> 01:19:15,567
+Ya, [öğrenci].
+
+502
+01:19:17,028 --> 01:19:20,127
+He will change the rows of...
+
+503
+01:19:24,819 --> 01:19:41,319
+We will change the rows by the columns of this matrix. So, A transpose will be like this. We write the first row to the first column of A transpose.
+
+504
+01:19:47,155 --> 01:19:52,524
+ve ilk ve
+
+505
+01:20:01,076 --> 01:20:03,576
+ve last row to the last column.
+
+506
+01:20:14,579 --> 01:20:22,579
+Now, if this matrix is equal to this one, so...
+
+507
+01:20:28,115 --> 01:20:31,435
+Let us look here, this is the main diagram.
+
+508
+01:20:32,556 --> 01:20:40,676
+So, if you take the transpose of the matrix, then the main diagram of this matrix doesn't change.
+
+509
+01:20:55,796 --> 01:20:57,716
+This is named evenim.
+
+510
+01:21:04,020 --> 01:21:31,620
+So, it means that if a is a symmetric matrix, then this is a square matrix and also aij is equal to the aji. So, it means that let us look. Please look at here. This is the main diagonal.
+
+511
+01:21:32,372 --> 01:21:38,432
+And these are a1,2 and a2,1.
+
+512
+01:21:39,512 --> 01:21:45,072
+Again here, this is a2,1, a1,2.
+
+513
+01:21:45,771 --> 01:21:52,352
+So, if aij equals aji, then we say that this is symmetric.
+
+514
+01:21:59,072 --> 01:22:18,832
+A1-2, A2-1, vektör uzay, am1-1, a1-2, eksektör.
+
+515
+01:22:31,828 --> 01:22:33,828
+Oh, there is no example.
+
+516
+01:22:35,427 --> 01:22:39,028
+Okay, we will give the examples later.
+
+517
+01:22:39,427 --> 01:22:40,927
+And what about...
+
+518
+01:22:42,128 --> 01:22:47,828
+No, zereptin. We finished lecture in five minutes. Okay.
+
+519
+01:22:50,728 --> 01:22:52,028
+Identifaction.
+
+520
+01:22:56,851 --> 01:23:05,951
+What do you mean? Identifaction, yes, it is symmetric, but it is not about matrices.
+
+521
+01:23:08,591 --> 01:23:18,091
+Okay, and what about the skew symmetric matrix, if the transpose of the matrix equals is negative?
+
+522
+01:23:21,076 --> 01:23:37,804
+If A transpose equals minus A, then we say that the matrix is the key symmetric. And what about the key symmetric matrices?
+
+523
+01:23:42,707 --> 01:23:49,467
+A transpose equals minus A.
+
+524
+01:23:49,467 --> 01:23:51,547
+Orada skew simetrik matris.
+
+525
+01:24:02,452 --> 01:24:13,092
+So, minus A is this, we have all, okay.
+
+526
+01:24:16,404 --> 01:24:25,584
+We have minus or negative of all these elements.
+
+527
+01:24:29,235 --> 01:24:44,675
+Since the main diagonal doesn't change, for the Skiw symmetric matrix, we have Aij equals minus Aji.
+
+528
+01:24:44,675 --> 01:24:48,515
+And also it means from here,
+
+529
+01:24:53,076 --> 01:25:03,076
+A11 equals minus A11, Ann equals minus Ann.
+
+530
+01:25:05,076 --> 01:25:20,076
+For the skew symmetric case, so the only case for this equation satisfies is Aii.
+
+531
+01:25:20,500 --> 01:25:22,100
+0.
+
+532
+01:25:24,860 --> 01:25:26,720
+So, thank you, [öğrenci].
+
+533
+01:25:26,920 --> 01:25:29,440
+So, for the skew symmetric matrix,
+
+534
+01:25:30,619 --> 01:25:34,360
+for the skew symmetric matrix,
+
+535
+01:25:36,100 --> 01:25:37,760
+Aij equals
+
+536
+01:25:37,760 --> 01:25:41,059
+minus Aji,
+
+537
+01:25:41,059 --> 01:25:43,880
+and for the diagonal,
+
+538
+01:25:43,880 --> 01:25:45,399
+for the main diagonal,
+
+539
+01:25:47,060 --> 01:25:51,560
+The elements on the main diagonal are all zero.
+
+540
+01:25:51,560 --> 01:25:52,560
+OK?
+
+541
+01:25:57,395 --> 01:26:08,515
+So, you can determine the matrix, whether it is symmetric or stiff symmetric, first looking at its main diagram.
+
+542
+01:26:09,796 --> 01:26:10,675
+For example,
+
+543
+01:26:16,180 --> 01:26:39,500
+We have three matrices in this example. These are A is square, B is square, but C is not square. So this is neither symmetric nor skew symmetric.
+
+544
+01:26:44,500 --> 01:26:51,659
+since it is not secure matris.
+
+545
+01:26:51,659 --> 01:26:52,659
+OK.
+
+546
+01:26:52,659 --> 01:26:59,739
+And what about the first one or the matris A?
+
+547
+01:27:03,444 --> 01:27:04,884
+Bu, bu, main diagonal.
+
+548
+01:27:11,539 --> 01:27:14,539
+Now, we look at...
+
+549
+01:27:22,036 --> 01:27:30,355
+ve
+
+550
+01:27:30,355 --> 01:27:33,355
+bu, minus 3.
+
+551
+01:27:37,779 --> 01:27:40,199
+5
+
+552
+01:27:47,859 --> 01:27:59,199
+7, 7. So, the elements of the entries of the matrix A are all symmetric to the main diagram.
+
+553
+01:28:00,579 --> 01:28:04,000
+So, this is symmetric matrix.
+
+554
+01:28:09,555 --> 01:28:16,675
+And for b, the elements on the main diagonal are all 0.
+
+555
+01:28:17,395 --> 01:28:21,956
+So, it can be a candidate for the skew symmetric matrix.
+
+556
+01:28:23,135 --> 01:28:33,315
+Again, we look at the other entries, which are skew symmetric or negatively symmetric to the main diagonal.
+
+557
+01:28:33,939 --> 01:28:51,115
+Bu, bu
+
+558
+01:28:54,163 --> 01:28:59,203
+Main diagonal, 0.
+
+559
+01:29:01,844 --> 01:29:10,324
+Other elements, Aij equals minus Aji. So this is secure symmetric.
+
+560
+01:29:22,100 --> 01:29:22,600
+Ok.
+
+561
+01:29:25,600 --> 01:29:30,860
+We will talk about the orthogonal matches next week.
+
+562
+01:29:32,040 --> 01:29:32,659
+Sorry.
+
+563
+01:29:33,940 --> 01:29:35,840
+Do you have to be zero in skip symmetric?
+
+564
+01:29:37,020 --> 01:29:38,300
+Yes, yes, [öğrenci].
+
+565
+01:29:41,971 --> 01:30:05,912
+Ok, I finished the lecture here today. If you have any questions or comments, you can send me an email or there is no other.
+
+566
+01:30:07,283 --> 01:30:13,283
+e-mail adresine sende mi e-mail adresine
+
+567
+01:30:17,747 --> 01:30:32,448
+Ama, please, bana password'ı sorun, çünkü, en büyük bir şey, ben bunu 100回'ı söyledim.
+
+568
+01:30:42,547 --> 01:30:51,188
+Evet, ben de bu kitabı, [öğrenci], bu kitabı, İngilizce kitabı,
+
+569
+01:30:51,188 --> 01:30:55,403
+İlkeler Algebra'ı
+
+570
+01:31:07,060 --> 01:31:07,680
+Varmut.
+
+571
+01:31:11,252 --> 01:31:11,872
+Teşekkürler.
+
+572
+01:31:18,771 --> 01:31:20,771
+Tamam, [öğrenci].
+
+573
+01:31:20,771 --> 01:31:24,771
+Elemental, benot here, and...
+
+574
+01:31:24,771 --> 01:31:28,771
+Benot here, and...
+
+575
+01:31:41,619 --> 01:31:44,459
+Sorry, ben not kolmun en teiva til.
+
+576
+01:31:53,844 --> 01:31:59,344
+Final Formant, add, devlet here.
+
+577
+01:32:02,484 --> 01:32:10,644
+And there is also a Turkish book which have a lot of sample examples.
+
+578
+01:32:10,644 --> 01:32:17,304
+If you know Turkish, çözümlü net yok.
+
+579
+01:32:20,484 --> 01:32:27,564
+Liner Cebir çözümlü problemleri.
+
+580
+01:32:32,243 --> 01:32:32,844
+From
+
+581
+01:32:41,395 --> 01:32:47,055
+Teşekkür ederim [öğrenci]. Şimdi gördüm. Evet, sana sorsun herkes. Pasaport bana sormasınlar bir daha.
+
+582
+01:32:52,627 --> 01:32:54,788
+Sen de bana sor eğer sıkıntı olursa olur mu?
+
+583
+01:33:08,180 --> 01:33:10,079
+Til siguridurum er hans sálu.
+
+584
+01:33:19,764 --> 01:33:25,984
+Bu Türkçe, Türkçe, Türkçe, kullanılan Türkçe, bu Türkçe, kullanılan Türkçe.
+
+585
+01:33:27,963 --> 01:33:28,503
+Ok.
+
+586
+01:33:30,783 --> 01:33:35,984
+Bu gününün günü, ve hala bir gün görüşmek üzere.
+
+587
+01:33:42,771 --> 01:33:46,471
+İyi günler arkadaşlar hepinize, dikkat edin kendinize, sağlıcakla kalın.
+
+588
+01:33:48,612 --> 01:33:49,951
+Görüşürüz hocam, hoşçakalın.
+
+589
+01:33:49,971 --> 01:33:50,511
+Hoşçakalın.
+
+590
+01:33:52,511 --> 01:33:53,631
+İyi günler hocam.
+
+591
+01:33:53,851 --> 01:33:54,771
+İyi günler arkadaşlar.

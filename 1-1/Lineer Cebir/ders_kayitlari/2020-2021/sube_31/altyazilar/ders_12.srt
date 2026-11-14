@@ -1,0 +1,1783 @@
+1
+00:02:54,195 --> 00:02:54,695
+Good morning!
+
+2
+00:03:25,812 --> 00:03:44,812
+I have uploaded two or three files to your lesson wall, which are related to exam. One of them is a review paper, which is Turkish, but here now...
+
+3
+00:03:47,379 --> 00:03:54,379
+İngilizce, ve
+
+4
+00:03:54,379 --> 00:04:09,707
+İngilizce,
+
+5
+00:04:03,443 --> 00:04:09,283
+Did you look at the sample exam questions that I uploaded to your wall?
+
+6
+00:04:34,779 --> 00:04:38,956
+İngilizce,
+
+7
+00:04:32,307 --> 00:04:38,668
+Who did look at the sample exam questions that I uploaded to lesson room?
+
+8
+00:04:46,132 --> 00:04:46,531
+Ok.
+
+9
+00:05:17,267 --> 00:05:34,267
+We can do a quick review of the lecture then, if we have a time later, we will solve some example questions, sample example questions.
+
+10
+00:05:39,475 --> 00:05:46,475
+Öncelikle, geniş sistemi, ve
+
+11
+00:05:46,475 --> 00:05:50,475
+geniş sistemi, ve
+
+12
+00:05:50,475 --> 00:06:03,180
+geniş sistemi,
+
+13
+00:05:59,220 --> 00:06:02,700
+Want to solve this linear equation systems?
+
+14
+00:06:25,651 --> 00:06:27,147
+Here we have...
+
+15
+00:06:34,064 --> 00:06:34,764
+geniş sistemi,
+
+16
+00:06:32,180 --> 00:06:34,399
+A lineer equation system with
+
+17
+00:06:38,100 --> 00:06:39,852
+M-equations
+
+18
+00:06:48,915 --> 00:06:50,096
+En annons.
+
+19
+00:07:15,636 --> 00:07:43,436
+Çünkü 1, 2, 3, 4 m
+
+20
+00:07:43,956 --> 00:07:57,676
+We have to write its coefficient matrix A, which consists of elements or the coefficients of each equation.
+
+21
+00:07:59,816 --> 00:08:07,116
+So the first row of the coefficient matrix is include
+
+22
+00:08:07,956 --> 00:08:17,796
+The first, the constants of the first equation, a11, a12, a10. So this is the coefficient matrix.
+
+23
+00:08:24,819 --> 00:08:28,399
+Coefficient matrix of the linear equation system.
+
+24
+00:08:29,480 --> 00:08:42,439
+And if you add the matrix B to the right side of the coefficient matrix, you have the augmented matrix of the linear system.
+
+25
+00:08:45,120 --> 00:08:51,319
+So we will use the augmented matrix to solve the linear equation system.
+
+26
+00:08:51,892 --> 00:08:54,060
+Bu, bu, aki, matrisler, vektör uzayları,
+
+27
+00:09:10,388 --> 00:09:23,028
+So, we have three different methods solving linear equation systems.
+
+28
+00:09:57,875 --> 00:10:03,576
+First, Gauss Jordan, reduction, method.
+
+29
+00:10:21,139 --> 00:10:30,139
+Öncelikle, we write the augmented matrix of the linear system and using elemental raw operations.
+
+30
+00:10:49,652 --> 00:10:52,451
+We use only role operations here.
+
+31
+00:11:00,755 --> 00:11:03,755
+We put this matrix into the...
+
+32
+00:11:07,572 --> 00:11:09,572
+Reduce row eşelon form
+
+33
+00:11:23,764 --> 00:11:28,264
+Put this matrix into the reduced row echelon form.
+
+34
+00:11:31,892 --> 00:11:34,211
+By using elemental role operations,
+
+35
+00:11:49,331 --> 00:12:05,031
+Looking at the reduced row echelon form of the matrix AB, we can conclude, or we can say, what is the rank of this matrix?
+
+36
+00:12:05,192 --> 00:12:15,131
+Because we know that the rank of the matrix is the non-real rows in each row echelon form or reduced row echelon form.
+
+37
+00:12:16,083 --> 00:12:19,583
+Bu, bu metriksin,
+
+38
+00:12:27,572 --> 00:12:28,172
+IF
+
+39
+00:12:36,307 --> 00:12:55,687
+If the rank of the matrix AB, which is augmented matrix of the linear system, is different from the rank of the matrix A, then the system has no solution.
+
+40
+00:13:27,124 --> 00:13:32,884
+We also say this, in this case, the system is inconsistent.
+
+41
+00:13:41,812 --> 00:13:59,511
+If the rank of the matrix AB, or if the rank of the augmentive matrix is equal to the rank of the matrix A, which we say R,
+
+42
+00:14:09,971 --> 00:14:14,152
+Here
+
+43
+00:14:20,532 --> 00:14:21,532
+A ne?
+
+44
+00:14:22,432 --> 00:14:23,432
+Kangri?
+
+45
+00:14:31,124 --> 00:14:31,663
+Kötü zin!
+
+46
+00:14:38,515 --> 00:14:43,515
+Ve use the coefficient matris. Evet, [öğrenci], Kazısaydar matrisi.
+
+47
+00:14:59,539 --> 00:15:12,039
+If the rank of the augmented matrix is equal to the rank of the coefficient matrix A, which we say R, then the system has a solution.
+
+48
+00:15:16,916 --> 00:15:17,956
+In this case,
+
+49
+00:15:50,163 --> 00:15:54,091
+Orada sistem
+
+50
+00:16:03,604 --> 00:16:10,484
+In this case, if the system has a solution, we have three different, sorry, two different cases.
+
+51
+00:16:13,443 --> 00:16:15,124
+If the rank of
+
+52
+00:16:18,244 --> 00:16:25,364
+the system or the augmented matrix or the coefficient matrix is equal to the number of unknowns,
+
+53
+00:16:26,724 --> 00:16:27,524
+which is n,
+
+54
+00:16:28,755 --> 00:16:31,355
+Then the system has a unique solution.
+
+55
+00:16:41,844 --> 00:17:14,107
+If r is equal to n, then
+
+56
+00:17:17,652 --> 00:17:19,652
+Sistem sisteminin,
+
+57
+00:17:21,652 --> 00:17:22,652
+unik bir solucu.
+
+58
+00:17:32,211 --> 00:17:35,851
+If r is smaller than n,
+
+59
+00:17:42,036 --> 00:17:56,716
+Actually, this is take place where, when the number of the equations in the system is smaller than the number of the unknowns, actually.
+
+60
+00:17:56,716 --> 00:18:07,496
+If r is smaller than n, then the system has infinitely many solutions.
+
+61
+00:18:31,028 --> 00:18:35,188
+If r is smaller than n, then
+
+62
+00:18:45,652 --> 00:18:57,652
+System has infinitely many solutions.
+
+63
+00:19:05,587 --> 00:19:07,468
+With respect to...
+
+64
+00:19:15,667 --> 00:19:20,967
+lineer minus R, arbitrary variables.
+
+65
+00:19:36,211 --> 00:19:40,852
+Okay, this is the Gauss-Jordan-Reduction method.
+
+66
+00:19:47,604 --> 00:19:50,403
+[öğrenci], what about the grammar rule?
+
+67
+00:19:52,804 --> 00:19:53,403
+And...
+
+68
+00:20:14,291 --> 00:20:15,791
+ve çok link
+
+69
+00:20:18,963 --> 00:20:27,844
+Linear systems, via the inverse of the coefficient matrix.
+
+70
+00:20:49,299 --> 00:21:00,299
+In these two cases, both these two cases, if you want to use,
+
+71
+00:21:06,420 --> 00:21:19,140
+If you want to use Kramers rule or if you want to solve the linear equation system via the inverse of the coefficient matrix, first, the system must be
+
+72
+00:21:24,915 --> 00:21:31,915
+ve
+
+73
+00:21:32,915 --> 00:21:36,915
+ilk kondition
+
+74
+00:21:36,915 --> 00:21:38,700
+ve
+
+75
+00:21:42,804 --> 00:21:46,483
+in, and, unknowns.
+
+76
+00:21:51,124 --> 00:21:56,604
+Çünkü, we use the determinant of the coefficient matrix.
+
+77
+00:21:58,804 --> 00:22:07,983
+If the coefficient matrix is not a square matrix, then we cannot talk about the determinant of a coefficient matrix.
+
+78
+00:22:07,983 --> 00:22:17,044
+So, it is important here, if you use the Kramers rule, or if you solve the inverse of the coefficient matrix,
+
+79
+00:22:18,036 --> 00:22:24,036
+Linear system must be, and equations in and unknowns.
+
+80
+00:22:24,036 --> 00:22:34,036
+And the second important condition to use the Kremes rule or inverse matrix, inverse coefficient matrix.
+
+81
+00:22:55,571 --> 00:23:05,811
+To determinant of the coefficient matrix A must be non-zero.
+
+82
+00:23:46,324 --> 00:23:58,324
+If these two cages hold, we say that this linear system has a unique solution.
+
+83
+00:24:26,900 --> 00:24:32,900
+Eğer A'a 0'a değiştirmek için,
+
+84
+00:24:33,900 --> 00:24:37,900
+bu sistem...
+
+85
+00:24:42,996 --> 00:24:46,276
+as a unit solution.
+
+86
+00:24:54,291 --> 00:24:55,211
+Ama,
+
+87
+00:24:58,259 --> 00:25:22,099
+If you have n equations in unknowns, n unknowns, sorry, then you look at the determinant of the coefficient matrix A, then you find determinant S0.
+
+88
+00:25:28,403 --> 00:25:36,003
+Bu, bu sistem sistemden birleştirilmiştir.
+
+89
+00:25:54,400 --> 00:26:11,600
+In the case where the coefficient matrix, the determinant of the coefficient matrix is zero, then you cannot use the Kremes rule or the inverse matrix method. You use, or you can use the Gauss reduction method.
+
+90
+00:26:23,059 --> 00:26:24,259
+Lineer System
+
+91
+00:26:30,420 --> 00:26:35,820
+Y, Gauss, Jordan, FedEx,
+
+92
+00:26:42,132 --> 00:26:59,692
+Okay. If you have M equations, if you have M equations in an almost and you can use, you use Gauss short induction.
+
+93
+00:27:00,276 --> 00:27:13,115
+If you have n equations in n unknowns and the determinant of the coefficient matrix is different from zero, you can use the Kramers rule or you can solve this linear system by inverse matrix.
+
+94
+00:27:21,971 --> 00:27:27,371
+is zero, then you cannot use the Kremers rule or the inverse matrix method.
+
+95
+00:27:27,371 --> 00:27:27,912
+Okay.
+
+96
+00:27:32,884 --> 00:27:34,124
+İncremeslu
+
+97
+00:27:47,380 --> 00:27:59,780
+We find the unknowns x1 to the xn, divining the determinant of the coefficient matrix to the determinant A1 here for x1.
+
+98
+00:28:00,500 --> 00:28:08,740
+A1 is the matrix which will delete the first column of the matrix A and
+
+99
+00:28:09,332 --> 00:28:21,872
+Or, we replace the first column of the matrix A by the matrix B, which is on the right side of the equation.
+
+100
+00:28:22,872 --> 00:28:24,452
+This is matrix B.
+
+101
+00:28:25,231 --> 00:28:25,472
+Okay.
+
+102
+00:28:26,612 --> 00:28:35,312
+So, you can find each unknown X1 to the Xn by using Cremest rule.
+
+103
+00:28:37,364 --> 00:28:38,304
+And also,
+
+104
+00:28:45,140 --> 00:28:59,039
+By multiplying, if we have a linear equation system, then we can write this system as Ax equals B in the matrix form.
+
+105
+00:29:10,708 --> 00:29:21,208
+Then, if you multiply this equation, if you multiply both sides of this equation,
+
+106
+00:29:24,468 --> 00:29:24,928
+Bye!
+
+107
+00:29:29,107 --> 00:29:30,127
+Egin var.
+
+108
+00:29:40,403 --> 00:30:06,003
+Then you have the matrix of the unknown X is equal to A inverse times B. So in Kramas rule, you see that the determinant is on the denominator, on the denominator of the this rational number. So
+
+109
+00:30:06,387 --> 00:30:10,987
+If the determinant A is 0, then this is undefined.
+
+110
+00:30:10,987 --> 00:30:20,587
+So in gramastral and also solving via inverse matrix here, we multiply both sides by the inverse of the matrix.
+
+111
+00:30:20,587 --> 00:30:27,587
+But if the determinant of A is 0, then the matrix has no inverse.
+
+112
+00:30:27,587 --> 00:30:32,788
+So it is important in gramastral and solving via inverse matrix.
+
+113
+00:30:33,044 --> 00:30:38,084
+Determinant of the coefficient matrix must be non-zero.
+
+114
+00:30:38,903 --> 00:30:39,224
+Ok.
+
+115
+00:30:46,516 --> 00:30:52,516
+And the last one, homogenous systems.
+
+116
+00:31:34,548 --> 00:31:35,168
+If
+
+117
+00:31:45,428 --> 00:32:02,628
+If the right side of the linear equation system has all zero, which means that b1, b2, b2, n is zero, then we have a homogenous linear system.
+
+118
+00:32:07,380 --> 00:32:27,700
+Since the augmented matrix of a homogeneous system is A0, so we have rank A0 is equal to rank A always. So the homogeneous system has always a solution.
+
+119
+00:32:39,955 --> 00:32:40,955
+Música
+
+120
+00:32:48,468 --> 00:32:57,968
+System has, or always has a solution.
+
+121
+00:33:10,804 --> 00:33:11,804
+6
+
+122
+00:33:17,779 --> 00:33:21,380
+rank a, 0 is equal to rank a.
+
+123
+00:33:26,963 --> 00:33:29,523
+Then this solution is called
+
+124
+00:33:56,819 --> 00:34:01,679
+[öğrenci], yazlığını yeni görüyorum. Çünkü yazlıklarınız gelmiyor bana. Ancak bakmam lazım.
+
+125
+00:34:03,339 --> 00:34:03,920
+Ne demişin?
+
+126
+00:34:09,172 --> 00:34:35,132
+[öğrenci] nasıl öyle oluyor? Her zaman A, B'nin rank A'ya eşit olur mu ya? Onun örneğini yaptık. Neden A, B'ye eşit olsun? Mesela A'nın son satırı sıfır, A'nın hepsi sıfır. B'de bir tane sayı olsa nasıl eşit olacak? Eşit olur mu sence? Olmaz. Yaptık onunla alakalı örnek.
+
+127
+00:34:37,523 --> 00:34:39,443
+Sadece omicin sistemlerinde olur.
+
+128
+00:34:50,996 --> 00:34:57,056
+Since rank A0 always equal to rank A, the homogene system always has a solution.
+
+129
+00:34:59,396 --> 00:35:03,019
+Again, if this rank...
+
+130
+00:35:06,228 --> 00:35:26,228
+Say this rank as R. If the rank is equal to the number of unknowns, then we have a unique solution, which is called the zero solution.
+
+131
+00:35:33,235 --> 00:35:34,235
+or trivial.
+
+132
+00:35:36,235 --> 00:35:37,235
+if rank
+
+133
+00:35:39,235 --> 00:35:41,235
+this is very very important
+
+134
+00:35:44,235 --> 00:35:47,235
+if rank is equal to n
+
+135
+00:36:03,123 --> 00:36:04,483
+Homingini sistem.
+
+136
+00:36:12,820 --> 00:36:14,659
+System has...
+
+137
+00:36:18,675 --> 00:36:19,876
+Oni
+
+138
+00:36:23,507 --> 00:36:30,827
+Zero, Osh, Trivial, Solution.
+
+139
+00:36:35,827 --> 00:36:45,547
+If rank is smaller than the number of unknowns, then the homogenist system...
+
+140
+00:36:49,172 --> 00:36:59,931
+has infinitely many solutions with respect to m-r arbitrary variables.
+
+141
+00:37:13,972 --> 00:37:14,572
+Evet.
+
+142
+00:37:24,724 --> 00:37:32,104
+System, Gormesini System, S.
+
+143
+00:37:37,907 --> 00:37:43,528
+infinitely, many solutions.
+
+144
+00:37:48,851 --> 00:37:49,992
+[öğrenci], [öğrenci].
+
+145
+00:37:58,260 --> 00:38:04,900
+R-R, arbitrary variables.
+
+146
+00:38:07,060 --> 00:38:16,579
+So, in homogenes case, we have always a solution, one of them is trivial solution.
+
+147
+00:38:37,204 --> 00:38:38,892
+Açık
+
+148
+00:38:47,507 --> 00:38:56,047
+3.0, 0, non-treviven.
+
+149
+00:39:00,340 --> 00:39:02,340
+or non-zero.
+
+150
+00:39:03,340 --> 00:39:09,340
+In this case, the system has infinitely many solutions.
+
+151
+00:39:11,340 --> 00:39:13,340
+Okay.
+
+152
+00:39:15,340 --> 00:39:21,068
+Let us look at the sample exam equations.
+
+153
+00:40:07,923 --> 00:40:33,724
+Okay, look at this linear equation system. Here it is asked, find the unknown t by using the Kramas rule. So, first of all, we have to write its coefficient matrix. What is A, the coefficient matrix?
+
+154
+00:40:34,547 --> 00:40:39,447
+A is the coefficients of the each equations.
+
+155
+00:40:39,447 --> 00:40:40,527
+So,
+
+156
+00:40:44,596 --> 00:40:51,296
+To use the Kremers rule, we have to compute the term of the coefficient matrix.
+
+157
+00:40:52,755 --> 00:41:08,556
+So, the coefficient matrix of this linear equation system, 1, the coefficient of x is 1, minus 2, sorry, sorry.
+
+158
+00:41:14,547 --> 00:41:20,547
+Unnones are x, y, z, t.
+
+159
+00:41:20,947 --> 00:41:26,427
+So, we have to write the coefficients of each unknowns in order.
+
+160
+00:41:26,607 --> 00:41:29,228
+So, what is the coefficients of the y here?
+
+161
+00:41:29,447 --> 00:41:32,287
+There is no y here, so the coefficient of y is 0.
+
+162
+00:41:33,507 --> 00:41:37,587
+And the coefficients of z is minus 2, and t is 1.
+
+163
+00:41:40,659 --> 00:41:51,940
+İzlediğiniz için, or in the second row, or in the second equation, the coefficient of x is 2, y is minus 1, there is no z here, so it's 0.
+
+164
+00:41:55,507 --> 00:42:05,507
+ve üçüncü ekonomik, 4, 1, minus 2, sorry, yes, t is 0.
+
+165
+00:42:08,507 --> 00:42:14,507
+ve last row, 3, minus 1, 0.
+
+166
+00:42:19,284 --> 00:42:33,284
+So, so, the coefficient matrix of this equation system is like this. We have to compute the term of this matrix.
+
+167
+00:42:35,284 --> 00:42:39,284
+You can use, you can use,
+
+168
+00:42:44,596 --> 00:42:45,896
+You can use
+
+169
+00:42:52,244 --> 00:43:10,744
+The properties of determinant to use to compute to the term of this matrix here it is computed. So, what is the result of this determinant? It is 14.
+
+170
+00:43:14,452 --> 00:43:28,452
+Şimdi, bu, t'yi bilmek istiyoruz. T'yi bilmek istiyoruz. T'yi bilmek istiyoruz.
+
+171
+00:43:33,748 --> 00:43:53,508
+We can say that this is x1, x2, x3, x4. So, we write the matrix B on the fourth column.
+
+172
+00:43:58,547 --> 00:44:10,127
+t is equal to determinant a4 over determinant a, which we found as 14.
+
+173
+00:44:19,635 --> 00:44:20,476
+Hoşçakalın.
+
+174
+00:44:29,091 --> 00:44:33,152
+Ve
+
+175
+00:44:28,275 --> 00:44:31,335
+Matris B on the last column.
+
+176
+00:44:48,596 --> 00:44:58,596
+So, the determinant of A4 is 28.
+
+177
+00:45:02,520 --> 00:45:15,820
+Ve
+
+178
+00:45:02,164 --> 00:45:13,404
+Then, c is 28 over 14, which gives 2.
+
+179
+00:45:15,404 --> 00:45:16,224
+Okay.
+
+180
+00:45:25,460 --> 00:45:37,279
+[öğrenci], it is not important to how to compute your determinant. It is important computing to determine correctly. Okay.
+
+181
+00:45:41,279 --> 00:45:51,360
+In computing determinant, you can use both the raw operation and also
+
+182
+00:45:51,795 --> 00:45:59,275
+Column operation, and using the other properties of the determinant, not in element role operations.
+
+183
+00:46:00,536 --> 00:46:02,295
+This is computing the determinant.
+
+184
+00:46:02,295 --> 00:46:02,876
+Okay.
+
+185
+00:46:08,851 --> 00:46:11,831
+So, the Kremes rule is like here.
+
+186
+00:46:16,340 --> 00:46:25,100
+So, in this equation, first you have to compute the determinant of the coefficient matrix.
+
+187
+00:46:25,800 --> 00:46:37,300
+After finding the coefficient matrix is non-zero, different from zero, then you can compute that this linear equation system has a unique solution.
+
+188
+00:46:38,820 --> 00:46:42,400
+Then you can find each unknowns x.
+
+189
+00:46:42,784 --> 00:46:46,704
+y, z, and t by using the Cramers rule.
+
+190
+00:47:11,059 --> 00:47:13,059
+Maybe, okay.
+
+191
+00:47:14,500 --> 00:47:23,059
+Here, find the solution of the given linear system by using the
+
+192
+00:47:27,092 --> 00:47:29,092
+Inverse of the Coaching Matrix.
+
+193
+00:47:36,403 --> 00:47:45,003
+[öğrenci] eğer Z'yi sormuş olsaydı, evet 3'ek koyacaktın. Aynen öyle. B'yi 3. stona yazacaktın, onun determinantını hesaplayacaktın.
+
+194
+00:47:48,628 --> 00:48:15,128
+Now, again, write the coefficient matrix of this system. So, the coefficient matrix of this linear system is, so, 1, minus 1, 1, minus 1, 1, 1, 1.
+
+195
+00:48:15,568 --> 00:48:16,568
+Minus 2.
+
+196
+00:48:18,927 --> 00:48:26,868
+X is equal to A inverse times B, so we have to find the A inverse.
+
+197
+00:48:29,528 --> 00:48:38,328
+A inverse is equal to 1 over the terminal A times A joint A.
+
+198
+00:48:43,059 --> 00:48:46,059
+You have, this is a joint, A.
+
+199
+00:48:49,559 --> 00:48:54,059
+Then you have, the inverse of A is a matrix like this.
+
+200
+00:48:54,059 --> 00:48:58,059
+Multiplying this matrix by B, you have,
+
+201
+00:49:01,059 --> 00:49:03,059
+matrix X, which is,
+
+202
+00:49:05,059 --> 00:49:08,059
+X, Y, and Z.
+
+203
+00:49:54,739 --> 00:50:10,739
+Again, it is asked here that using the inverse of the coefficient matrix solve the linear equation system, write the coefficient matrix.
+
+204
+00:50:21,972 --> 00:50:23,972
+Find a inverse
+
+205
+00:50:33,811 --> 00:50:45,511
+X is equal to A inverse times B, B is this matrix.
+
+206
+00:50:45,511 --> 00:50:46,112
+Okay.
+
+207
+00:50:55,699 --> 00:50:56,219
+Maybe.
+
+208
+00:51:01,972 --> 00:51:06,972
+Some other examples about...
+
+209
+00:51:20,436 --> 00:51:25,316
+Consider the following lineer system, find y by using Kramers rule.
+
+210
+00:51:25,316 --> 00:51:33,636
+Again, write the coefficient matrix of A, this one, and find its determinant.
+
+211
+00:51:34,436 --> 00:51:38,036
+You can use the properties of determinant here.
+
+212
+00:51:40,036 --> 00:51:44,636
+Then the determinant of the coefficient matrix is 16.
+
+213
+00:51:44,916 --> 00:52:12,096
+0'a 0
+
+214
+00:52:12,096 --> 00:52:17,695
+And, completing the determinant of this matrix, we have minus 80.
+
+215
+00:52:19,056 --> 00:52:24,256
+Therefore, y is minus 80 over 16.
+
+216
+00:52:24,256 --> 00:52:25,615
+Okay.
+
+217
+00:53:08,820 --> 00:53:32,940
+Again, here, we have a linear system. Find the solution of the system by the inverse of the coefficient matrix. Write the coefficient matrix A, like this, and find its inverse by using this rule. Then, x is equal to A inverse times matrix B.
+
+218
+00:53:35,956 --> 00:53:41,536
+These are very easy, not too complicated.
+
+219
+00:54:07,507 --> 00:54:13,627
+Bakın 18, bu önemli, bu önemli.
+
+220
+00:54:15,907 --> 00:54:23,547
+Considered the linear system, find the relation between A, B, and C, so that the system is consistent.
+
+221
+00:54:24,268 --> 00:54:28,307
+Consistent means the system has a solution.
+
+222
+00:54:28,947 --> 00:54:33,507
+We have x, y, z, three unknowns.
+
+223
+00:54:34,587 --> 00:54:48,907
+123. Equations, you can use here. You can use here both the Kremel's rule or the inverse of the coefficient matrix.
+
+224
+00:54:48,907 --> 00:54:58,547
+But, but if you use Kremel's rule, you will have only the coefficient matrix, but it is asking the question that
+
+225
+00:54:59,891 --> 00:55:14,851
+find the relation between A, B, and C. So, it is easy to solve this linear system by Gauss-Jordan deduction.
+
+226
+00:55:16,531 --> 00:55:27,331
+Therefore, write the augmented matrix, which is, this is coefficient matrix A here, and this is the matrix B.
+
+227
+00:55:30,804 --> 00:55:38,744
+And using elemental row operations, put this matrix into the row echelon form, reduced row echelon form.
+
+228
+00:55:38,744 --> 00:55:47,304
+So, we have to make this 0, this 0, and this 1.
+
+229
+00:55:50,867 --> 00:55:52,867
+bu 0, bu 0
+
+230
+00:55:54,867 --> 00:55:55,867
+ve
+
+231
+00:55:57,867 --> 00:56:00,867
+bu matrizi var.
+
+232
+00:56:01,867 --> 00:56:04,867
+[öğrenci], bu kadar dikkat edin.
+
+233
+00:56:05,867 --> 00:56:06,867
+Eğer
+
+234
+00:56:10,867 --> 00:56:13,867
+sistem bir solucu var,
+
+235
+00:56:19,092 --> 00:56:24,092
+Matris AB is equal to the rank of matrix A.
+
+236
+00:56:24,092 --> 00:56:29,092
+Here, what is the rank of A? This is the matrix A.
+
+237
+00:56:29,092 --> 00:56:31,628
+What is the rank of A?
+
+238
+00:56:35,923 --> 00:57:00,003
+2. So, if this number is different from 0, then the rank of AB is 3, but the rank of A is 2. So, the system has no solution. But in the equation, it says that the system has a solution. So,
+
+239
+00:57:00,447 --> 00:57:02,447
+Bu, bu, 0.
+
+240
+00:57:02,447 --> 00:57:04,447
+Çünkü bu, 0.
+
+241
+00:57:04,447 --> 00:57:07,447
+Bu, AB'ye de 2.
+
+242
+00:57:07,447 --> 00:57:09,447
+Bu, A'B'ye de 2.
+
+243
+00:57:09,447 --> 00:57:23,723
+A'B'ye de 2.
+
+244
+00:57:29,331 --> 00:57:33,631
+Maybe there are some others.
+
+245
+00:57:39,539 --> 00:57:41,420
+questions, spot...
+
+246
+00:58:25,108 --> 00:58:31,508
+Ok, bu da aynı soru, bu da aynı soru, bu da aynı soru.
+
+247
+00:58:46,387 --> 00:58:48,715
+Sizinle
+
+248
+00:59:06,931 --> 00:59:07,331
+Okay.
+
+249
+00:59:09,371 --> 00:59:12,731
+There is a linear equation system here.
+
+250
+00:59:14,251 --> 00:59:29,251
+Then, find all of t, which make, in the first case, which make the system
+
+251
+00:59:33,235 --> 00:59:35,235
+Inconsistent
+
+252
+00:59:38,675 --> 00:59:53,556
+Or has no solution, which make the system unique solution, which make the system infinitely many.
+
+253
+01:00:00,820 --> 01:00:02,060
+Mini Solutions
+
+254
+01:00:08,083 --> 01:00:29,563
+We have actually, we have x, y, z, and one, two, three, four, sorry, three unknowns in three equations.
+
+255
+01:00:35,007 --> 01:00:49,207
+This linear system, by kremest rule or by via the inverse of the coefficient matrix, but I recommend you to solve these systems by Gauss-Jordan reduction.
+
+256
+01:00:50,207 --> 01:00:53,747
+So, write the augmented matrix AB.
+
+257
+01:00:54,747 --> 01:01:00,467
+This is the coefficient matrix A, and this is the matrix B.
+
+258
+01:01:03,764 --> 01:01:10,304
+ve, using elemental operations, put this matrix into the
+
+259
+01:01:19,827 --> 01:01:21,827
+Seduce, draw, eşelon form.
+
+260
+01:01:31,731 --> 01:01:45,731
+Now, for the case A, the system is inconsistent. In which case the system is inconsistent? If the rank of A
+
+261
+01:01:51,603 --> 01:02:18,283
+is different from the rank of a, b, then the system has no solution. It means that, it means that, if, if t is 3 or t is minus 2 and t is not, okay, yes, if t is 3 or t is minus 2,
+
+262
+01:02:18,655 --> 01:02:28,555
+Then, this is 0, but this is not 0, means that rank A is different from rank AB.
+
+263
+01:02:28,555 --> 01:02:38,935
+So in this case, the system has no solution if t is minus 2 or 3.
+
+264
+01:02:40,935 --> 01:02:42,055
+And
+
+265
+01:02:45,940 --> 01:02:48,400
+Unix Solution, for Unix Solution,
+
+266
+01:02:59,891 --> 01:03:26,951
+Unik solution, what is the number of unknowns? And is equal to 3. If the number of unknowns is equal to the rank A, which is equal to the rank AB, then we have a Unik solution. So, it means that this is different from 0 and this is different from 0.
+
+267
+01:03:28,851 --> 01:03:53,931
+So, t is not equal to 3 or minus 2, then the rank of this system is 3, which is equal to the n, it means that the system has a unique solution.
+
+268
+01:03:53,931 --> 01:03:56,091
+Okay.
+
+269
+01:04:00,604 --> 01:04:04,604
+A'B'ye de 2.
+
+270
+01:03:59,380 --> 01:04:04,720
+Ve ne kadar çok ilginç bir solucu?
+
+271
+01:04:08,052 --> 01:04:08,692
+If
+
+272
+01:04:14,547 --> 01:04:15,587
+Ağır iş
+
+273
+01:04:21,108 --> 01:04:29,387
+If r is smaller than the number of unknowns, then the system has infinitely many solutions.
+
+274
+01:04:30,528 --> 01:04:38,347
+But here, but here, we have n is equal to 3.
+
+275
+01:04:39,628 --> 01:04:46,988
+So, the rank of this matrix must be 2, because 2 is smaller than.
+
+276
+01:04:47,923 --> 01:04:51,523
+3, or must be 1, it's not important.
+
+277
+01:04:52,723 --> 01:05:00,123
+So, this must be 0, and this also must be 0.
+
+278
+01:05:00,523 --> 01:05:06,023
+4 makes this 0, but 4 doesn't make this 0.
+
+279
+01:05:06,123 --> 01:05:14,123
+3 and minus 2 makes here 0, but 3 or minus 2 doesn't make this 0.
+
+280
+01:05:16,244 --> 01:05:25,364
+We have no t such that the system has infinitely many solutions.
+
+281
+01:05:26,083 --> 01:05:33,324
+So there is no such a t that the system has infinitely many solutions.
+
+282
+01:05:34,203 --> 01:05:36,264
+Okay, this question is very important.
+
+283
+01:05:36,264 --> 01:05:38,264
+Now,
+
+284
+01:05:47,731 --> 01:05:51,612
+Bayram [öğrenci], şimdi gördüm yazdığını.
+
+285
+01:05:53,211 --> 01:05:57,552
+Rav eşelon değil, yani siz benim söylediklerimi mi anlamıyorsunuz?
+
+286
+01:05:57,652 --> 01:06:00,751
+Yani ben anlamıyorum arkadaşlar, niye böyle yapıyorsunuz?
+
+287
+01:06:01,952 --> 01:06:05,152
+Reduce Rav eşelon forma getiriyoruz dedik ya, [öğrenci].
+
+288
+01:06:06,331 --> 01:06:13,811
+Hatta bir de şey dedim, eğer çözmek istiyorsanız, bir de Gauss eliminasyon yöntemi var dedim.
+
+289
+01:06:14,867 --> 01:06:24,728
+Orada dedim, önemsiz değil, önemsiz olur mu? Burada önemli, şey de önemli değil, Gauss eliminasyonu da önemli değil.
+
+290
+01:06:29,588 --> 01:06:35,608
+Ama rankı değiştirmediği için tabii çok da şey yapacak bir durum yok. Hani mesela burada da öyle.
+
+291
+01:06:39,764 --> 01:06:40,344
+Nerede?
+
+292
+01:06:42,023 --> 01:06:43,724
+Sonuçta biz rankı...
+
+293
+01:06:49,844 --> 01:07:14,103
+Biz rankı, reduce row, tamam tamam anladım ben seni. Rankı, matrisin rankını, reduce row eşelon form ya da row eşelon formdaki sıfırdan farklı satır sayısı olarak aldık. Yani ranka bakmak için illa reduce row eşelon formuna getirmene gerek yok, row eşelon form da olur. Tamam, o da olur yani, sıkıntı yok.
+
+294
+01:07:19,092 --> 01:07:40,692
+O determinantla [öğrenci], şimdi onu da getirirsek daha yapacak birçok şeyimiz var. Determinanta bakıyordunuz. Determinant eğer ne çarpı neydi, determinant sıfırdan farklıysa rankı ne oluyordu? Eğer ne çarpı neydi, mesela burada, burada olmaz da.
+
+295
+01:07:42,804 --> 01:07:48,024
+Determinantı sıfırdan farklı en büyük karesel matrisin boyutuna rank diyorduk.
+
+296
+01:07:49,024 --> 01:07:50,244
+Tamam mı?
+
+297
+01:07:54,132 --> 01:08:21,711
+Now, what about the vectors? I cannot here write the English version because we have no time. We have many, many questions to solve. So we know that the norm or the modulus of the vectors, if we have two points P and Q in R cube,
+
+298
+01:08:22,195 --> 01:08:33,935
+Then, we can write the vector, where the P is the initial point, and the Q is the terminal point of this vector.
+
+299
+01:08:33,935 --> 01:08:48,775
+So, PQ vector, determined by the points P and Q is A1 minus A0, B1 minus B0, and C1 minus C0.
+
+300
+01:08:50,355 --> 01:08:58,076
+And the mom, or the modulus of a vector is defined as here.
+
+301
+01:09:03,091 --> 01:09:04,832
+If to mom
+
+302
+01:09:09,747 --> 01:09:18,059
+ve 1'e saygı, bu ve 1'e saygı, bu ve 1'e saygı, bu ve 1'e saygı, bu ve 1'e saygı, bu ve 1'e saygı, bu ve 1'e saygı, bu ve 1'e saygı, bu ve 1'e saygı, bu ve 1'e saygı, bu ve 1'e saygı, bu ve 1'e saygı, bu ve 1'e saygı, bu ve 1'e saygı, bu ve 1'e saygı, bu ve 1'e saygı, bu ve 1'e saygı, bu ve 1'e saygı, bu ve 1'e saygı, bu ve 1'e saygı, bu ve 1'e saygı, bu ve 1'e saygı, bu ve 1'e saygı, bu ve 1'e saygı, bu ve 1'e saygı
+
+303
+01:09:25,747 --> 01:09:27,435
+İstim magnitud
+
+304
+01:09:30,484 --> 01:09:35,484
+Eğer bir vektörün 1 veya non
+
+305
+01:09:41,876 --> 01:09:50,996
+Every vector v can be written as a unit vector by dividing it to its norm.
+
+306
+01:09:50,996 --> 01:09:55,876
+So, v over norm v is a unit vector.
+
+307
+01:10:03,028 --> 01:10:28,139
+Let i, j, and k are like this vectors in R cube. These are the basis vectors in R cube. So every vector in R cube, every vector v in R cube can be written by using, sorry, by the linear combination of
+
+308
+01:10:28,692 --> 01:10:44,492
+So, if v is abc, we can write this in the basis a i plus b j plus g k, c k, sorry.
+
+309
+01:10:51,507 --> 01:10:56,907
+Scalar, inner, or dot product, which is very, very important.
+
+310
+01:10:59,307 --> 01:11:03,547
+This is defined all over the R to the n.
+
+311
+01:11:05,667 --> 01:11:11,747
+And the result of a scalar product or inner product is a real number.
+
+312
+01:11:12,347 --> 01:11:17,067
+So, for vectors,
+
+313
+01:11:17,876 --> 01:11:21,076
+u and v in r to the n,
+
+314
+01:11:24,076 --> 01:11:29,076
+for vectors u and v in r to the n,
+
+315
+01:11:29,476 --> 01:11:35,676
+we define the scalar product or inner product of these two vectors like this.
+
+316
+01:11:36,076 --> 01:11:38,275
+So the result is a real number.
+
+317
+01:11:39,476 --> 01:11:44,275
+You have to know, you must know all of the
+
+318
+01:11:45,587 --> 01:12:07,371
+Bu, bu
+
+319
+01:12:08,500 --> 01:12:18,500
+norm u times norm v times cosine theta, where the theta is the angle between directors u and v.
+
+320
+01:12:19,159 --> 01:12:31,939
+So, you can find the angle theta between u and v by using this formula or theorem.
+
+321
+01:12:35,667 --> 01:12:48,287
+Here, if the inner product of these two vectors is zero, then these two vectors are perpendicular to each other.
+
+322
+01:12:52,372 --> 01:13:01,372
+ve 2 vectores ile ilgili bir noktası var.
+
+323
+01:13:22,420 --> 01:13:34,739
+on the vectors r cube the result of a vector sorry vector product is again a vector product
+
+324
+01:13:38,771 --> 01:13:52,652
+We denote direktör product like this. U product V is both perpendicular to,
+
+325
+01:13:58,420 --> 01:14:08,420
+Bu, bu, ortogonal ve perpendicular to u ve v.
+
+326
+01:14:08,420 --> 01:14:10,420
+Ok.
+
+327
+01:14:27,444 --> 01:14:37,043
+Entrees, or the elements of the first vector in the second, and the last row to the second vector's entries.
+
+328
+01:14:37,043 --> 01:14:40,444
+Then compute the determinant.
+
+329
+01:14:40,444 --> 01:14:54,043
+Then also, there are very, very, very important properties of vector product.
+
+330
+01:14:56,212 --> 01:15:05,212
+Bir de bu, bu, normal vektör konuları.
+
+331
+01:15:11,252 --> 01:15:21,332
+Vektör product u v is equal to the norm u times u, norm v times sin theta. We also have another.
+
+332
+01:15:26,899 --> 01:15:28,219
+Important Törem
+
+333
+01:15:42,547 --> 01:15:52,387
+So, you can find the angle between two vectors by using these two terms.
+
+334
+01:15:53,747 --> 01:16:02,387
+Here, it is also very important, the norm of the vector product of u and v is equal to the...
+
+335
+01:17:02,036 --> 01:17:04,036
+Bu çok önemli.
+
+336
+01:17:13,639 --> 01:17:13,931
+Bu çok önemli,
+
+337
+01:17:11,891 --> 01:17:13,891
+The alien...
+
+338
+01:17:25,036 --> 01:17:30,036
+Bu çok önemli,
+
+339
+01:17:23,828 --> 01:17:28,507
+B of a triangle
+
+340
+01:17:37,199 --> 01:17:37,483
+Bu çok önemli,
+
+341
+01:17:35,667 --> 01:17:37,087
+Edition size.
+
+342
+01:17:48,691 --> 01:17:51,691
+Bu çok önemli,
+
+343
+01:17:47,475 --> 01:17:50,255
+U, V, vektör vektör konularını işleyeceğiz.
+
+344
+01:17:56,840 --> 01:18:03,840
+Bu çok önemli,
+
+345
+01:17:55,060 --> 01:17:56,060
+R³.
+
+346
+01:17:59,060 --> 01:18:02,060
+So, the area B,
+
+347
+01:18:04,060 --> 01:18:06,060
+the area of a triangle,
+
+348
+01:18:07,060 --> 01:18:09,060
+with adjacent size U and V,
+
+349
+01:18:13,076 --> 01:18:14,836
+Eğiz.
+
+350
+01:18:18,292 --> 01:18:20,792
+B is equal to one over two.
+
+351
+01:18:26,963 --> 01:18:28,963
+2, 2, 3
+
+352
+01:18:28,963 --> 01:18:30,963
+ok
+
+353
+01:18:30,963 --> 01:18:32,939
+and the area
+
+354
+01:18:36,340 --> 01:18:47,280
+2b, because the area of the parallelogram, which is determined by u and v, is 2 times the area of the triangle, the area 2b,
+
+355
+01:18:57,203 --> 01:18:58,891
+Paragragram
+
+356
+01:19:12,243 --> 01:19:13,243
+8
+
+357
+01:19:17,587 --> 01:19:19,587
+ve dizon sites
+
+358
+01:19:21,587 --> 01:19:22,587
+uv
+
+359
+01:19:23,587 --> 01:19:24,587
+is
+
+360
+01:19:29,971 --> 01:19:37,171
+A equals to norm, u, vektör product, b.
+
+361
+01:19:37,171 --> 01:19:45,351
+These two properties are very, very, very, very, very important.
+
+362
+01:19:46,271 --> 01:19:46,591
+Okay.
+
+363
+01:19:57,716 --> 01:19:58,896
+Ben, güven.
+
+364
+01:20:02,579 --> 01:20:08,699
+VFCK.TripleProduct
+
+365
+01:20:08,699 --> 01:20:12,579
+This gives
+
+366
+01:20:16,787 --> 01:20:17,427
+Skiller
+
+367
+01:20:25,652 --> 01:20:28,152
+Skeletri put product, biz kips.
+
+368
+01:20:31,764 --> 01:20:32,844
+Volumen of el?
+
+369
+01:20:38,612 --> 01:20:39,592
+Karillapeit
+
+370
+01:20:55,220 --> 01:20:57,340
+Bu, bu, Scala triple product.
+
+371
+01:21:11,315 --> 01:21:21,315
+Bu, bu, volumeliyonu, parodapyde, vekıdaki, u, v, ve, w.
+
+372
+01:21:44,724 --> 01:21:45,443
+Veyaç!
+
+373
+01:21:56,372 --> 01:22:07,912
+If the vectors u, v, and w lie in the same plane, then
+
+374
+01:22:11,347 --> 01:22:19,347
+The scalar triple product of these three vectors is zero.
+
+375
+01:22:19,347 --> 01:22:24,347
+This is very very important.
+
+376
+01:22:24,347 --> 01:22:35,787
+If U, V, and W lie in the same plane,
+
+377
+01:22:53,171 --> 01:22:56,171
+Sonra,
+
+378
+01:22:56,671 --> 01:23:01,171
+Perlepite'in volumlu bir yerine 0.
+
+379
+01:23:02,171 --> 01:23:03,171
+Bu anlamda,
+
+380
+01:23:04,671 --> 01:23:09,171
+bu üçe 3 vektörlerden bir yerine 0.
+
+381
+01:23:09,171 --> 01:23:11,171
+Bakın bu soru.
+
+382
+01:23:33,555 --> 01:23:36,595
+Determine question 4
+
+383
+01:23:41,363 --> 01:23:47,763
+Determine, if the three vectors a, b, and c lie in the same plane or not.
+
+384
+01:23:48,403 --> 01:24:02,043
+So, if the volume of the pearlopite formed by these three vectors is zero, or if the scale triple product of these three vectors is zero, then they lie in the same plane.
+
+385
+01:24:03,507 --> 01:24:03,847
+Eğer bu
+
+386
+01:24:31,699 --> 01:24:39,859
+Ve bu üçe
+
+387
+01:24:39,859 --> 01:24:42,779
+üçe
+
+388
+01:24:57,268 --> 01:25:05,028
+Look at the example 5. These are actually exam questions.
+
+389
+01:25:08,028 --> 01:25:09,507
+Find a vector.
+
+390
+01:25:16,532 --> 01:25:26,532
+find a vector that is orthogonal to the plane containing the points P, Q, R.
+
+391
+01:25:26,532 --> 01:25:42,532
+So, we need a plane that contains these three vectors, these three points, and after that, we find a vector that is orthogonal to this plane.
+
+392
+01:25:43,252 --> 01:25:59,852
+Using these three points, we can write two vectors, PQ and PR.
+
+393
+01:25:59,852 --> 01:26:10,092
+So, we have two vectors in the plane, PQ and PR.
+
+394
+01:26:10,836 --> 01:26:28,836
+Yani, u ve v ve v ve v ve v ve v ve v ve v.
+
+395
+01:26:39,220 --> 01:26:47,940
+find the vector product of these two vectors this is both perpendicular to you and v
+
+396
+01:26:49,860 --> 01:26:50,180
+okay
+
+397
+01:26:52,980 --> 01:26:54,124
+and
+
+398
+01:27:06,292 --> 01:27:08,292
+What about...
+
+399
+01:27:09,412 --> 01:27:11,020
+...liktör spaces?
+
+400
+01:27:17,043 --> 01:27:40,043
+If a set V satisfies all these 10 conditions with respect to the vector addition and scalar multiplication, then we say that the set V is a vector space or real vector space with the vector addition and scalar multiplication.
+
+401
+01:27:43,028 --> 01:27:46,588
+Bu ilk konusunda
+
+402
+01:27:51,604 --> 01:28:02,783
+If uv in v, u plus v in v, then we say that closed.
+
+403
+01:28:06,420 --> 01:28:07,960
+Under Edition
+
+404
+01:28:13,011 --> 01:28:23,531
+If u plus v is equal to v plus u, then we say that it has a committative property.
+
+405
+01:28:26,031 --> 01:28:32,811
+If the second property holds, then we say that the associative property holds.
+
+406
+01:28:36,851 --> 01:28:42,471
+ve üçüncü, aditiv identit.
+
+407
+01:28:49,619 --> 01:28:55,380
+Force, Editive, Inverse.
+
+408
+01:29:02,547 --> 01:29:23,447
+So, if you asked a given set is a vector space or not, first check if it is closed under addition.
+
+409
+01:29:27,188 --> 01:29:42,092
+...
+
+410
+01:29:48,768 --> 01:29:49,768
+vektör uzayları,
+
+411
+01:29:45,171 --> 01:29:48,171
+additive identity exists or not.
+
+412
+01:29:59,188 --> 01:29:59,587
+Ok.
+
+413
+01:30:06,211 --> 01:30:14,211
+vektör uzayları,
+
+414
+01:30:05,876 --> 01:30:08,956
+Then, examples of vector spaces.
+
+415
+01:30:12,155 --> 01:30:13,796
+Here, it is important.
+
+416
+01:30:14,636 --> 01:30:17,095
+We know this one, this one, and this one.
+
+417
+01:30:19,275 --> 01:30:20,615
+The rational numbers.
+
+418
+01:30:36,020 --> 01:31:01,760
+Dirational numbers, the set of Dirational numbers is not a vector space under the usual addition and usual multiplication, because taking a scalar in R to square root 2 and multiplying an element of Q by
+
+419
+01:31:04,467 --> 01:31:14,707
+Sq. root 2, we have not an element of q, so this is not closed under multiplication.
+
+420
+01:31:28,435 --> 01:31:33,435
+And what about subspaces?
+
+421
+01:31:35,435 --> 01:31:45,435
+We use subspace theorem or subspace test, determining if a subset of a vector space is subspace or not.
+
+422
+01:31:45,435 --> 01:31:49,435
+Let V be a vector space.
+
+423
+01:31:52,884 --> 01:31:57,043
+and W is a subset of this vector space.
+
+424
+01:31:58,304 --> 01:31:58,663
+If
+
+425
+01:31:58,663 --> 01:32:04,724
+U, V in W,
+
+426
+01:32:05,224 --> 01:32:08,384
+then U plus V is also in W,
+
+427
+01:32:08,604 --> 01:32:11,003
+and for a real number C,
+
+428
+01:32:11,003 --> 01:32:12,743
+if C
+
+429
+01:32:12,743 --> 01:32:17,844
+multiple by U is also in W,
+
+430
+01:32:18,444 --> 01:32:19,503
+then we say that
+
+431
+01:32:21,011 --> 01:32:25,271
+W is a subspace of
+
+432
+01:32:29,587 --> 01:32:33,427
+Ok.
+
+433
+01:32:36,788 --> 01:32:40,228
+It is over today because I have another lecture.
+
+434
+01:32:42,067 --> 01:32:43,268
+Fifteen minutes later.
+
+435
+01:32:45,028 --> 01:32:48,307
+I wish you have a good life in your exam.
+
+436
+01:32:54,292 --> 01:33:03,672
+Hop to see you with good exam scores next week. Hayır [öğrenci], lineer bağımsızlık yok sınavda.
+
+437
+01:33:10,420 --> 01:33:12,520
+Do you have any questions or comments?
+
+438
+01:33:20,275 --> 01:33:20,956
+Evet.
+
+439
+01:33:22,956 --> 01:33:26,615
+2 soru.
+
+440
+01:33:27,235 --> 01:33:27,775
+[öğrenci].
+
+441
+01:33:37,363 --> 01:33:52,403
+Okey. Again, wish you have a good exam. Yok yok, özdeğerler de yok. Onuncu hafta kadar dedim ya.
+
+442
+01:33:57,971 --> 01:34:02,231
+Arkadaşlar, bu soruların hepsi şeyde var, ders duvarınızda var.
+
+443
+01:34:03,391 --> 01:34:12,912
+All of the sample exam questions that we solve in this lecture are already in your lesson mode.
+
+444
+01:34:13,031 --> 01:34:19,351
+Okay, you can find them at your lesson mode.
+
+445
+01:34:19,351 --> 01:34:20,152
+Okay.
+
+446
+01:34:24,787 --> 01:34:43,608
+[öğrenci], zaten bu saatten sonra yani onlara bak yani. Çünkü sınav bugün değil mi? Olur olur, bak yeter. Tamam. Peki. Okey. Hope to see you. Good luck in your exam.
