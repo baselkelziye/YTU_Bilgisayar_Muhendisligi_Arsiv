@@ -1,0 +1,3595 @@
+1
+00:07:19,540 --> 00:07:20,972
+Herkese merhaba.
+
+2
+00:07:33,139 --> 00:07:35,139
+Şimdi Magnavalo beni duyabiliyor musun?
+
+3
+00:07:38,291 --> 00:07:39,291
+Merhaba hocam.
+
+4
+00:07:40,291 --> 00:07:45,291
+Evet, senden başka katılan olmadı şimdiye kadar. Biraz bekleyin istersen.
+
+5
+00:07:45,291 --> 00:07:48,291
+Hocam, bir saniye, duyamadım da sesinizi.
+
+6
+00:07:48,291 --> 00:07:51,291
+Sesim geliyor mu? Sorun varsa değiştireyim.
+
+7
+00:07:51,291 --> 00:07:54,291
+Evet, evet, geliyor şu an. Ama böyle uzaktan geliyor gibi biraz.
+
+8
+00:07:54,291 --> 00:07:58,291
+Ha, tamam. O zaman değiştireyim ben en iyisi sesimi.
+
+9
+00:07:58,291 --> 00:07:59,291
+Tamamdır.
+
+10
+00:08:15,572 --> 00:08:17,572
+Sanki böylesi daha iyi olacak gibi.
+
+11
+00:08:17,572 --> 00:08:19,572
+Biraz daha iyi eve.
+
+12
+00:08:19,572 --> 00:08:21,572
+Tamam.
+
+13
+00:08:21,572 --> 00:08:23,572
+Tekrar bir bakayım.
+
+14
+00:08:23,572 --> 00:08:26,572
+Hah, iyi, güzel. Birkaç kişi daha gelmiş.
+
+15
+00:08:31,572 --> 00:08:36,371
+Şimdi aslında ben bu derse genel olarak katılım bekliyordum. Şu açıdan.
+
+16
+00:08:38,572 --> 00:08:45,371
+Pratik tarafını, dersin pratik tarafını görebileceğiniz bir kısım olacak.
+
+17
+00:08:45,371 --> 00:08:52,772
+[öğrenci] var, [öğrenci] var ve [öğrenci] var. Bu üç kişi dışında şu ana kadar gelen olmadı.
+
+18
+00:08:53,772 --> 00:08:58,731
+Ben tekrar bir şey mi yazsam, hatırlatma mı yazsam acaba?
+
+19
+00:09:16,340 --> 00:09:19,160
+Hocam biz de WhatsApp grubuna yazabiliriz aslında.
+
+20
+00:09:19,160 --> 00:09:21,160
+Tamam çok güzel olur.
+
+21
+00:09:24,692 --> 00:09:27,491
+Belki görmeyenler vardır dün attığım için.
+
+22
+00:09:28,292 --> 00:09:30,292
+Böyle bir ihtimalle söz konusu.
+
+23
+00:10:22,611 --> 00:10:24,459
+Herkese mail gönderdim.
+
+24
+00:10:36,788 --> 00:10:39,368
+Herkes beni rahatlıkla duyabiliyor mu arkadaşlar?
+
+25
+00:10:41,368 --> 00:10:42,927
+Program sesiniz nevk geliyor.
+
+26
+00:10:43,707 --> 00:10:44,988
+Tamam, teşekkürler.
+
+27
+00:10:53,683 --> 00:10:57,683
+Şimdi ekran paylaşımını durdurup bütün ekranımı paylaşacağım.
+
+28
+00:10:57,683 --> 00:11:05,683
+Dersin tamamı pratik uygulamalar içerecek.
+
+29
+00:11:05,683 --> 00:11:11,683
+Ses işleme ve görüntü işleme ile ilgili temel uygulamalar yapacağız.
+
+30
+00:11:11,683 --> 00:11:16,459
+Ve bizim gördüğümüz teoride bunlar ne kısımda kalıyor, onlarla ilgili konuşacağız.
+
+31
+00:11:16,659 --> 00:11:26,779
+Bu sırada, bu esnada lütfen herhangi bir sorunuz olursa beni bölüp doğrudan sorun. Böylelikle daha etkileşimli gidebilir.
+
+32
+00:11:29,000 --> 00:11:37,879
+İlk uygulama ses işleme ile ilgili olacak. Şöyle yapalım. Bir ses işleme. Şu anda ekran paylaşımı yapıyorum. Sanırım geliyordur.
+
+33
+00:11:39,980 --> 00:11:40,599
+Geliyor hocam.
+
+34
+00:11:47,283 --> 00:12:01,283
+Şimdi aslında hep dersin başından sonuna kadar sinyal sistem konuşurken standart bildiğimiz bir diagram vardı. Block diagram diyorduk biz buna.
+
+35
+00:12:01,283 --> 00:12:09,283
+Girdileri, çıktıları bunun üstünde gösterebiliyorduk. Genelde tek girdi, tek çıktılı sistemler hakkında konuştuk.
+
+36
+00:12:15,316 --> 00:12:22,176
+Sistemin davranışını en iyi ifade edebilecek fonksiyon neydi, ne diyorduk biz buna? Hatırlayan var mı?
+
+37
+00:12:32,244 --> 00:12:33,683
+Birşey fonksiyonu
+
+38
+00:12:37,683 --> 00:12:39,683
+Birim dürtü cevabı olabilir mi hocam?
+
+39
+00:12:39,683 --> 00:12:50,683
+Evet, birim dürtü cevabı HD ile ifade ediyorduk. Bir sistemin nasıl çalıştığını, ne yaptığını aslında HD'nin içinde gömüldüğünü düşünün.
+
+40
+00:12:50,683 --> 00:13:02,683
+Yani öyle bir HD seçelim ki biz, bu XT bizim sesimiz olsun, sese echo ekleyebilsin mesela. Bu iyi ki birinci ödevimizde gördüğümüz şeydi.
+
+41
+00:13:03,475 --> 00:13:13,076
+Öyle bir HT ekliyorduk, öyle bir HT seçiyorduk ki, YT'yi biz ekolu bir ses olarak duyuyorduk.
+
+42
+00:13:14,676 --> 00:13:17,676
+Bu başka türlü bir işe de yarayabilir.
+
+43
+00:13:17,676 --> 00:13:23,475
+Örneğin, bugünkü konumuz biraz da aslında gürültü süzme olacak.
+
+44
+00:13:23,475 --> 00:13:28,475
+XT işaretinin herhangi bir sebeple gürültüden etkilendiğini düşünün.
+
+45
+00:13:28,475 --> 00:13:30,475
+Tabii şimdi bunu bu şekilde söyleyince,
+
+46
+00:13:30,740 --> 00:13:38,139
+Genel olarak kişilerin aklında bir şey canlanmıyor. O yüzden ben bir senaryo üzerinden bunu anlatmaya çalışacağım.
+
+47
+00:13:38,139 --> 00:13:54,340
+Şimdi sizin telefonlarınız var. Telefonlarınızın şu kısmında bir hoparlör var. Hoparlör. Alt kısmında çoğunlukla olur. Ve şurada bir mikrofon var. Hemen onun yan tarafında. Görüşme yaparken.
+
+48
+00:13:54,368 --> 00:14:02,768
+Bunu bu şekilde duyabilmenizi sağlıyor. Aynı zamanda şu kulak kısmında da bir hoparlör bulunur. Aynı sesi aşağı yukarı oraya da basabilir.
+
+49
+00:14:02,768 --> 00:14:18,768
+Şimdi problem şu, herhangi bir ortamda siz konuşuyorsunuz ama eğer oda içerisinde benim gibi şu an bulunduğum oda gibi bir kontrollü ortam içerisindeyseniz o zaman bu sesiniz gürültüden etkilenmeyecektir.
+
+50
+00:14:18,964 --> 00:14:24,724
+Ama bir fabrika içerisinde telefonunuz acil bir telefon geldi, açmanız gerekiyor.
+
+51
+00:14:24,724 --> 00:14:36,084
+Mecburen açıyorsunuz ve sizin sesinizin üstüne bir gürültü, arka plan gürültüsü veya ortam gürültüsü de eklenmiş oluyor.
+
+52
+00:14:36,084 --> 00:14:40,403
+Ama karşı taraf sizi dinlerken...
+
+53
+00:14:40,532 --> 00:14:46,252
+Bu gürültüyü duymak istemez. Tabii ki sizin sesinizin net gelmesini ister. Dolayısıyla telefon burada bir
+
+54
+00:14:48,211 --> 00:15:00,252
+Noise Cancellation işlemi yapıyor. Bunu literatürde bu şekilde bulabilirsiniz. Noise Cancellation. Yani gürültü giderme yapması lazım. Ya da gürültüyü süzmesi lazım.
+
+55
+00:15:02,932 --> 00:15:04,332
+Çok affedersiniz.
+
+56
+00:15:04,659 --> 00:15:09,519
+Olan olayı bir blok diagram şeklinde şöyle izah edebiliriz aslında.
+
+57
+00:15:10,539 --> 00:15:14,139
+Şurada bir XT var. Bu sizin gerçek
+
+58
+00:15:14,379 --> 00:15:16,440
+Temiz sesinizi göstersin.
+
+59
+00:15:17,720 --> 00:15:21,559
+Hatta buna ne XT diyelim sorun değil.
+
+60
+00:15:23,339 --> 00:15:24,379
+Sonuçta
+
+61
+00:15:24,576 --> 00:15:33,236
+Ortamın da bir gürültüsü var ve ortamın gürültüsü sizin sesinizin üstüne aslında ekleniyor.
+
+62
+00:15:33,236 --> 00:15:44,676
+Buna additive noise ismi de veriliyor. Yani eklenen gürültü. Ve neticesinde burada bambaşka bir bilgi elde ediyorsunuz.
+
+63
+00:15:44,676 --> 00:15:51,176
+Şuraya Y-mic diyebiliriz, mikrofon.
+
+64
+00:15:52,115 --> 00:15:56,475
+Dan alınan ses şeklinde. Bunu şöyle de düşünebilirsiniz.
+
+65
+00:16:00,947 --> 00:16:04,028
+Bunu modellemek için yapılan şeylerden birisi.
+
+66
+00:16:05,168 --> 00:16:06,327
+Hoparlörde
+
+67
+00:16:07,087 --> 00:16:08,627
+sabit bir ses
+
+68
+00:16:09,147 --> 00:16:10,427
+ortama basıyorsunuz.
+
+69
+00:16:11,187 --> 00:16:13,228
+Yani şöyle bir şey diyebilirim.
+
+70
+00:16:14,008 --> 00:16:16,048
+XT 2 çarpı cos
+
+71
+00:16:16,567 --> 00:16:18,347
+işte 2P
+
+72
+00:16:18,607 --> 00:16:20,147
+10 üzeri 3T şeklinde.
+
+73
+00:16:20,500 --> 00:16:46,299
+0 ile 3 saniye arasında böyle bir ses bastınız. Bir yandan da mikrofondan dinliyorsunuz. Mikrofondan dinlediğiniz şey aslında YT, sizin kendi sesiniz ya da bastığınız yukarıdaki sabit ses üstüne bir gürültünün eklenmiş hali oluyor. Çok basit temel bir ifade. Bunu bu şekilde anlatabiliriz. Peki istediğimiz şey ne?
+
+74
+00:16:46,803 --> 00:16:53,283
+Karşı tarafa göndereceğim YT sesinin gürültüden arındırılması gerekiyor.
+
+75
+00:16:54,243 --> 00:16:58,243
+Bunun için yöntemden birisi bunu bir sisteme sokarım diyor adam.
+
+76
+00:16:58,563 --> 00:17:03,523
+Bir sisteme, öyle bir sisteme sokarım ki bu üstündeki gürültüyü süzerim.
+
+77
+00:17:06,048 --> 00:17:15,168
+Aslında konumuz bununla ilgili olacak temelde. Buradaki hashtag'nin nasıl acaba seçilmesi gerektiği ile ilgili biraz kafa yoracağız.
+
+78
+00:17:20,127 --> 00:17:22,168
+Başka ne söyleyebiliriz?
+
+79
+00:17:23,667 --> 00:17:47,667
+dürtü yanıtı demiştik, tamam. İlk etapta aşama aşama gideceğiz. Bir ses elimde var zaten şu anda. İşte örnek nokta wow dosyası gibi, size verdiğim bir dosya gibi bir ses dosyası elimizde var. Önce bu ses dosyasını açacağız. Bunun Fourier dönüşümüne bakacağız. Bir yorum yapmaya çalışacağız. Sonra eklenen gürültüyü kendimiz...
+
+80
+00:17:49,619 --> 00:17:55,000
+Oluşturup eklemeye çalışacağız. Buraya rastgele değerler aslında oluşturup ekleyebiliriz.
+
+81
+00:17:55,259 --> 00:18:01,139
+Ve bu rastgele oluşturduğumuz değerin de Fourier dönüşününün deki karşılığını anlamaya çalışacağız.
+
+82
+00:18:02,159 --> 00:18:07,279
+Şimdi normalde elde edeceğimiz şeyler,
+
+83
+00:18:07,799 --> 00:18:14,699
+Bu zaten orijinal verildi. Bunu biz sentetik olarak üreteceğiz. Çünkü benim şu anda ortamımda bir gürültü yok.
+
+84
+00:18:14,932 --> 00:18:28,251
+Kendim gürültü yapmak istesem kendi sesimle karışmış olacak. O yüzden ben burada Random, Can bilgisayar üzerinde bir simülasyonla Random sayılar atayarak ekleme yapacağım.
+
+85
+00:18:28,251 --> 00:18:33,612
+Ve gürültüden etkilenmiş işaretin de Fourier dönüşümüne bakacağız. Dolayısıyla
+
+86
+00:18:33,903 --> 00:18:43,344
+Fourier dönüşümleri arasındaki farkları ilk etapta inceleyeceğiz. Birinci case'miz bu olacak. Hatta, şuraya A diyerek başlayalım bu işlere.
+
+87
+00:18:43,344 --> 00:19:01,104
+Metlab ortamında bu işleri yapacağım. XT'yi, YmikT'yi ve Nt'yi hem zamanda hem de frekansta incelemeye çalışayım.
+
+88
+00:19:02,996 --> 00:19:09,996
+Şu an bu kısım aslında düşünme aşaması olarak düşünebilirsiniz.
+
+89
+00:19:11,996 --> 00:19:12,996
+Ne demek bu?
+
+90
+00:19:15,996 --> 00:19:18,996
+Siz şu sistemi çözümlemek için
+
+91
+00:19:20,564 --> 00:19:33,364
+Sistemin tüm birleşenlerini ayrı ayrı inceleyip durumu anlamaya çalışıyorsunuz. Mesela giriş sesi, sesinin frekansları neler, gürültünün özellikle baskın olduğu bir frekans var mı?
+
+92
+00:19:34,644 --> 00:19:43,684
+Ki ona göre bir süzme yapayım gibi bazı incelemelerde bulunacaksınız. Şimdi bunu anlatabilmek için ben bir yandan MATLAB tarafını açıyorum.
+
+93
+00:19:45,044 --> 00:19:46,864
+Şurada Demo 1 isimli bir kod var.
+
+94
+00:19:47,635 --> 00:19:50,635
+Şunu şöyle aşağıya indirerek
+
+95
+00:19:51,835 --> 00:19:55,036
+Göstereceğim. Şu an MATLAB ekranı geliyor mu acaba?
+
+96
+00:19:56,835 --> 00:19:58,235
+Baroja'm ekranı.
+
+97
+00:19:58,635 --> 00:20:01,835
+Tamam, ben onun fontunu biraz büyüteyim çünkü
+
+98
+00:20:02,835 --> 00:20:07,036
+Bir sorun yaşamayalım. Herkes net bir şekilde görebilsin.
+
+99
+00:20:07,635 --> 00:20:13,235
+Bir yandan da sesin paylaşımı için bir şey yapmam lazım sanırım.
+
+100
+00:20:14,003 --> 00:20:18,803
+Şuradan daha fazla deyip, sesi paylaştırım. Tamam. Süper.
+
+101
+00:20:22,803 --> 00:20:29,603
+TnO-cs.wav uzantılı bir ses dosyası var. Burada ses dosyasını görebiliyorsunuz.
+
+102
+00:20:30,803 --> 00:20:35,003
+Herhangi bir ses dosyasını Audio Read ile alabileceğinizi söylemiştik.
+
+103
+00:20:35,104 --> 00:20:51,903
+Ses dosyası eğer çok uzunsa, sizin işlemleriniz uzun sürecektir. O yüzden şu kod satırında, belirli sayıda örneği kırpacak şekilde bir işlem yapıyorum. Yani bunu şöyle düşünebilirsiniz. C normalde rastgele bir vektör olsun.
+
+104
+00:20:51,903 --> 00:20:58,784
+Birden, 1x1000'lik bir rastgele vektör oluşturduğunu düşünün. C'yi.
+
+105
+00:21:03,284 --> 00:21:09,044
+Bakın 1000 tane değer içeren rastgele bir vektör oluşturdu. Sıfırla bir aralığında değerleri değişiyor.
+
+106
+00:21:09,044 --> 00:21:10,164
+Tamam sorun yok.
+
+107
+00:21:10,164 --> 00:21:24,724
+Sen dersen ki C'nin ben 1000 elemanı değil de çok fazla 1000 eleman, ilk 10 elemanını almak istiyordun. O zaman 1000 birden 10'a kadar ki değerleri alıp tekrar C'ye atayabilirsin.
+
+108
+00:21:24,915 --> 00:21:38,915
+Kolay bir şekilde, sağ üst tarafta görebilirsiniz 1000 uzunlukta normalde, şurada Workspace altında gözüküyor uzunluğu. Bunu yaptığınız zaman artık C'nin uzunluğu 10'a düşecek ve yine Plot C dediğinizde
+
+109
+00:21:40,415 --> 00:21:46,915
+Bu şekilde göreceksiniz. Aslında şu an temel methub komutlarını anlatıyorum. Tamam, bu bu şekilde.
+
+110
+00:21:48,019 --> 00:22:07,740
+Siz AudioRead ne ile yaparsanız yapın, şurada bir FS mutlaka okursunuz. Bu aslında ilgili sesin örneklendiği frekansı, sampling frekansı bilgisini içerir. Bu sesi XFS diyerek seslendirebilirsiniz. Şimdi sesi çalacağım. Tabi sesin kırpılmış halini çalacağım.
+
+111
+00:22:07,740 --> 00:22:15,740
+İlk aslında 200.000 örnekle sınırlandırıyorum. Çünkü X çok büyük olursa benim yapacağım işler de uzayacak.
+
+112
+00:22:15,988 --> 00:22:17,988
+Ben o kadar uzasın istemiyorum.
+
+113
+00:22:18,488 --> 00:22:25,588
+Sadece ses dosyasının ilk 200.000 örneği üzerinden bir işlem yapacağım.
+
+114
+00:22:26,888 --> 00:22:30,388
+Çalıştırıyorum, sesin gelip gelmediğini siz söyleyin lütfen.
+
+115
+00:22:40,915 --> 00:22:50,915
+Ses var, demişsin tamam. Okey. Şimdi bu ses var, tamam. Biz bunu bir çizdirmeye çalışsak, acaba nasıl bir şey karşımıza çıkar?
+
+116
+00:22:52,915 --> 00:23:00,915
+O zaman float x dememiz lazım. Float x dersek, bunun çizimini de aynı şekilde göreceğiz. Sound'u kapatıyoruz.
+
+117
+00:23:02,915 --> 00:23:03,915
+Evet.
+
+118
+00:23:04,180 --> 00:23:13,900
+Burada o arka planda bir çalan, piyono sesini görebiliyorsunuz. İşte aslında sıfır nokta... Şöyle bir bakalım.
+
+119
+00:23:16,220 --> 00:23:20,560
+Alt eksen burada neyi gösteriyor sizce? Kim söyleyebilir?
+
+120
+00:23:24,243 --> 00:23:25,243
+Zaman.
+
+121
+00:23:26,743 --> 00:23:32,243
+Zamandan ziyade örneği gösteriyor aslında. Kaçıncı örnek oldu? Şuraya bakabilirsiniz.
+
+122
+00:23:32,243 --> 00:23:37,243
+0, 2, çarpı 10 üzeri eksi 5. Yani burada bir ölçek faktörü var.
+
+123
+00:23:38,243 --> 00:23:46,243
+Bu, aslında o yaklaşık 10.000 örneğe kadar sıfırda kalıyor. Yani sessizmiş bir S var belli ki.
+
+124
+00:23:47,059 --> 00:23:54,480
+Bekleme var. Ondan sonra şarkıya giriyor ve şarkıda her notaya basıldığında farklı bir titreşim oluşuyor.
+
+125
+00:23:54,739 --> 00:24:00,879
+Mesela burada başka sert bir şekilde notaya basılmış ve bu titreşim giderek azalmış.
+
+126
+00:24:01,399 --> 00:24:07,539
+Şimdi buradaki kilit şey şu, adamın ilk bastığı nota aslında
+
+127
+00:24:07,799 --> 00:24:13,679
+Bellili bir aralığında küt diye kesilmiyor. Onun titreşimi uzun bir süre boyunca devam ediyor.
+
+128
+00:24:13,971 --> 00:24:27,791
+Yani bir notanın aslında etkisi zamana yayılmış durumda. Şeklinde düşünebiliriz. Biraz daha yakınlaşıp görmeye çalışalım. Çünkü çok dışarıdan baktığımız için, şu anda burada 200.000 örnek olduğu için
+
+129
+00:24:27,791 --> 00:24:36,831
+Çok anlayamıyoruz. Şurada zoom seçeneğini aldım. Biraz daha sesin içini anlamaya, incelemeye çalıştım. Bakın.
+
+130
+00:24:37,652 --> 00:24:45,652
+Aslında sese bakacak olursanız, bizim Fourier dönüşümünde yapmak istediğimiz şeyin ne kadar mantıklı olduğunu burada siz de görürsünüz.
+
+131
+00:24:45,652 --> 00:24:49,652
+Neden böyle diyorum? Söyleyebilecek olan var mı?
+
+132
+00:24:52,652 --> 00:25:01,355
+Çünkü burada ayırt edici hiçbir yan yok. Yani sesin kendine has özelliklerini hiçbir şekilde göremez. Sadece kendinlik var.
+
+133
+00:25:01,652 --> 00:25:06,092
+Ha, anladım. Sen başka bir şeye cevap verdin ama o da önemli bir şey.
+
+134
+00:25:06,092 --> 00:25:10,291
+Benim burada söylemek istediğim şey Fourier dönüşümü dediğimiz şey ne yapıyordu?
+
+135
+00:25:10,291 --> 00:25:19,172
+Sesin frekanslarını ve hatta bir işareti sinüslerin toplamı şeklinde bulmaya çalışıyordu. Bakın gerçekte piyano sesi de sinüs.
+
+136
+00:25:19,172 --> 00:25:27,451
+Şuradaki nerede bir sinüs aslında? Ne oluyor? 2-3 sinüsün toplamı şeklinde bir işaret, grafik oluşturmuş.
+
+137
+00:25:27,763 --> 00:25:48,243
+Böyle devam ediyor. Fark edecek olursanız zaman aktıkça sağa doğru gidiyorum. Sağa doğru gittikçe işaretin frekansı değişiyor. Sonuçta yeni notalara basılıyor. Falan filan diye devam ediyor. Ama arkadaşımızın da söylediği gibi ben burada hiçbir bilgi bulamıyorum.
+
+138
+00:25:48,756 --> 00:26:05,655
+Şu genel olarak bana belki hangi noktalarda daha kuvvetli notaya basıldığını, hangi noktalarda daha az basıldığını, bir notanın ne kadar geçerli süresi olduğunu yani ne kadar zamanla azaldığı ile ilgili temel bilgiler veriyor.
+
+139
+00:26:05,655 --> 00:26:14,096
+Bazı konularda işte ilk 10.000 örnekte hiç ses olmadığı ile ilgili bilgi verdi gibi şeyler var. Okey.
+
+140
+00:26:14,259 --> 00:26:16,699
+Şimdi bu konu bu şekilde.
+
+141
+00:26:16,699 --> 00:26:21,420
+Hocam ben şey soracağım, buradaki grafikte negatifçe inme sebebi ne?
+
+142
+00:26:22,699 --> 00:26:27,699
+Ya bu negatif, sonuçta ses sinyalleri sinizoidal bir sinyalle şey yapılabilir.
+
+143
+00:26:27,699 --> 00:26:31,420
+Her durumda pozitif ve negatif alternans oluyor.
+
+144
+00:26:31,420 --> 00:26:33,739
+Tamamı pozitif olmuyor yani.
+
+145
+00:26:33,739 --> 00:26:39,859
+Herhangi bir siniz sinyalini düşün, onda da aynı durum söz konusu.
+
+146
+00:26:42,740 --> 00:26:50,220
+Hocam, aslında orada negatifliği dersi bahsetmiştik şeyde, Doppler'da, yönü belirti aslında, o tarz bir şey mi?
+
+147
+00:26:51,340 --> 00:26:52,039
+Hayır, bu.
+
+148
+00:26:52,039 --> 00:26:53,039
+Negatif olmasını söyledi.
+
+149
+00:26:55,639 --> 00:27:04,039
+Aslında negatiflik ve pozitiflik zaten aynı frekansı gösteriyor. Bir sinüsü düşünün, sinüsün bir pozitif alternansı, bir de negatif alternansı var.
+
+150
+00:27:04,340 --> 00:27:09,340
+Sinüsü, sinüsü yapan şey bu zaten. Bizim ses birleşenlerimiz de o şekilde.
+
+151
+00:27:10,099 --> 00:27:13,099
+O yüzden bunu bu şekilde düşünmemiz gerekiyor.
+
+152
+00:27:15,099 --> 00:27:16,099
+Bilmiyorum anlatabildim mi?
+
+153
+00:27:18,099 --> 00:27:22,099
+Şurada Plot X kısmını artık anladık. İşte bir sorun yok.
+
+154
+00:27:26,451 --> 00:27:47,951
+Sesi de dinledik. Şimdi yapmamız gereken şey, bu sinyalin ilk 200.000 örneğinin Fourier dönüşümünü bulmaya çalışalım. Bakalım siz bu kısmı sizin ödevinizdekinde de böyle yaptınız. Şimdi kod kısmını gösteriyorum.
+
+155
+00:27:53,203 --> 00:28:02,923
+Bu da verilmişti, az önce çizdirdik zaten. Bunu FFT fonksiyonuna vereceksiniz. Bu FFT hızlı Fourier dönüşümü olarak geçiyor. Yani
+
+156
+00:28:03,443 --> 00:28:07,283
+Bizim derste yaptığımız sürekli zamandaki
+
+157
+00:28:07,543 --> 00:28:14,203
+Fourier dönüşümünü aylık zamanla yapıyor. Çünkü biz şu anda bir bilgisayarda yani dijital bir sistem üzerinde çalışıyoruz.
+
+158
+00:28:14,703 --> 00:28:20,844
+Bunun sonrasında ben burada XF elde ediyorum. Bir bakın istiyorsanız XF nasıl bir şey. Çalıştırayım bu kısmı.
+
+159
+00:28:21,071 --> 00:28:30,071
+Bakın XF'i göreceğiz birazdan. Biraz uzun sürdü, bitti şimdi. XF'in üstüne tıkladım. Nasıl sayılar var burada?
+
+160
+00:28:32,071 --> 00:28:46,071
+Karmaşık sayılar var. Evet, karmaşık sayılar var. Zaten bundan dolayıdır ki, biz bir şeyin Fourier'ini aldığımızda doğrudan çizdirmiyoruz. Nasıl çizdiriyorduk? Bir bunun genliği, bir de fazı şeklinde çizdiriyorduk.
+
+161
+00:28:47,316 --> 00:28:58,675
+Herhangi bir karmaşık sayıyı yazayım ben buraya. 3 artı 4 i işte içinde. Bakın karmaşık sayıyı tanımladım MATLAB'ta. Command Window'da yazıyorum alt kısımda.
+
+162
+00:28:58,675 --> 00:29:11,316
+Bunun genliğini bulmak istesem MATLAB'ta absz diyerek genliğini bulabiliyorum. Demek ki ben burada karmaşık sayı elde ettim. Bunun genliğini bulmam lazım. abs yazdım o yüzden.
+
+163
+00:29:11,316 --> 00:29:14,092
+Peki FFT Shift neden yapıyorum?
+
+164
+00:29:20,307 --> 00:29:22,867
+Frekans domenine geçmek için değil mi?
+
+165
+00:29:23,387 --> 00:29:27,467
+Aslında frekans domenine geçmek için FFT'yi yaptık. Burada elimizde var.
+
+166
+00:29:30,028 --> 00:29:38,987
+FFT, şu algoritma Fourier dönüşümünü hesaplarken, bir sohbette bir şey gelmiş, 0 frekansı ile başa almak için.
+
+167
+00:29:40,028 --> 00:29:41,807
+Doğru, [öğrenci]'in söylediği şey.
+
+168
+00:29:43,607 --> 00:29:45,387
+Burada normalde
+
+169
+00:29:46,132 --> 00:29:49,732
+Bakın FFT Shift yapmadan çizdiğim öncelikle.
+
+170
+00:29:57,652 --> 00:29:59,652
+Bakın böyle saçma bir şey çıkıyor.
+
+171
+00:29:59,652 --> 00:30:06,652
+Yani ne oluyor? Aslında bu, şu kısmın tam ortada olması lazım. Şu sıfırda olması lazım.
+
+172
+00:30:06,652 --> 00:30:18,652
+Bu kısmın tam yine sıfırın sağ tarafında olması lazım ama bu işlem sonrasında, şu fonksiyonun yaptığı bir şey. Ondan dolayı düzgün çalışmıyor.
+
+173
+00:30:18,652 --> 00:30:23,307
+Sanki burada bu bir şeyin Fourier frekansı...
+
+174
+00:30:23,859 --> 00:30:29,859
+Bir şeyin Fourierini göstersin herhangi bir işaretin. Sanki yüksek frekanslarda değeri varmış gibi gözüküyor.
+
+175
+00:30:30,759 --> 00:30:41,771
+Yani siz kendi çalışmanızda, uygulamanızda efekli shift kullanmadıysanız, belki diğer kısımlarda kodlar yazarak şuralarda falan toparlamış olabilirsiniz.
+
+176
+00:30:42,259 --> 00:30:52,259
+Ama normal koşulda FFT Shift kullanarak bu işi yapmanız lazım. Bir bakalım FFT Shift kullanarak nasıl çıkıyor sonuç? Bakın, olması gereken şey bu.
+
+177
+00:30:53,259 --> 00:31:03,259
+Zaten, sinyal nasıl bir sinyal olursa olsun çoğunlukla düşük frekanslarda değerleri vardır. Özellikle bir nesan sesi veya bir enstrüman sesi ise.
+
+178
+00:31:04,259 --> 00:31:07,259
+Şimdi hemen şunu anlamaya çalışalım. Bu bizim...
+
+179
+00:31:07,955 --> 00:31:14,016
+Sesimiz, piyano sesi. Piyano sesindeki frekanslar bunlarmış.
+
+180
+00:31:15,016 --> 00:31:19,816
+Bu şeklinde düşünebiliriz. Yani şöyle bir yorumlayacak olursak ne diyebiliriz?
+
+181
+00:31:20,355 --> 00:31:22,355
+Frekansları görebiliyorsunuz.
+
+182
+00:31:24,756 --> 00:31:27,355
+Nasıl bir yorum yapıyorsunuz bu sesle ilgili?
+
+183
+00:31:36,564 --> 00:31:45,844
+Ben şunu diyebilir miyim? Neredeyse 2000 Hz'e kadar sinizoidal bileşenler var içerisinde.
+
+184
+00:31:46,403 --> 00:31:50,084
+2 kHz'den sonra çok fazla bileşeni yok diyebilir miyim?
+
+185
+00:31:52,723 --> 00:31:53,804
+Sinyazı mı?
+
+186
+00:31:54,163 --> 00:32:00,403
+Tamam, diyebiliriz. Okey. Sesi anladık. Sesin genel olarak anatomisine baktık. Bir sorun yok.
+
+187
+00:32:00,915 --> 00:32:07,475
+Fourier dönüşümün nasıl yapılabileceğini, kod parçası şeklinde yazdık. Aslında iki satırda yapıyorsunuz bu işi. Hatta üç satır diyelim.
+
+188
+00:32:07,475 --> 00:32:18,155
+Okey. Şimdi hemen bir önceki şeye geliyorum. XT'ye okey. Sesi anladım. Fourier dönümünde baktım. Şimdi bir de gürültüyü bakalım.
+
+189
+00:32:18,155 --> 00:32:26,715
+Gürültü nasıl ses üstüne eklenir? Ve gürültü eklenmiş haliyle normal...
+
+190
+00:32:27,188 --> 00:32:29,188
+İşaret arasında nasıl bir fark var?
+
+191
+00:32:30,188 --> 00:32:32,188
+Bunu yapabilmek için
+
+192
+00:32:33,188 --> 00:32:39,188
+AVGN ismiyle bir kod kullanıyorum. Bu ne yapıyor? Hemen alt kısmından bakabilirsiniz.
+
+193
+00:32:46,067 --> 00:33:10,067
+Add White Gaussian Noise to Signal diyor. Yani sinyalin üstüne Gaussian bir noise ekliyor. Şimdi Gaussian deyince insanın aklına kötü korkunç şeyler geliyor. Çoğunlukla olasılık derslerimizden çekindiğimiz için. Temel olarak şunu düşünün. Herhangi bir Gauss'un eğer NT sinyalinin bir...
+
+194
+00:33:10,612 --> 00:33:22,291
+Normal dağılımdan geldiğini düşünüyorsanız, bir normal ya da Gauss olasılık yoğunluk fonksiyonuna sahip işaretin kaç tane parametresi bulunuyordu?
+
+195
+00:33:25,811 --> 00:33:38,091
+Var mı olasılık alan? İki tane hocam. İki tane. Birisi ortalama, biri standart sapma. Ortalamasını sıfır, standart sapmasını bir dersek, aslında ortaya çıkacak şey şu şekilde bir işaret oluyor.
+
+196
+00:33:40,151 --> 00:33:49,871
+Siz zaman içerisinde tabii ki rastgele bir sinyal olduğu için random değişecek ama ortalamasını ne yapmışsınız? Sıfır seçmişsiniz.
+
+197
+00:33:50,891 --> 00:33:52,907
+Yani şu civarda salıncak.
+
+198
+00:33:53,556 --> 00:34:05,556
+Standart sapmasını bir seçmişsiniz. Yani artı eksi, şu aralıkta çoğunlukla şöyle salınabilecek rastgele sinyaller içeride.
+
+199
+00:34:05,556 --> 00:34:14,556
+Bunu her çalıştırdığınızda farklı şey çıkacak. Çünkü her seferinde bir randomlıktan dolayı bir ses üretmiş oluyorsunuz. Tamam ürettik.
+
+200
+00:34:15,155 --> 00:34:25,155
+Böyle bir şey elde ettik. Dolayısıyla burada standart satmayı büyük seçersek, şu anda bir ama, yüksek seçersek aslında gürültünün etkisini de artırmış olacaksınız.
+
+201
+00:34:25,155 --> 00:34:35,155
+Neticede bu işaretin üstüne kendi sesinizi koyacaksınız ve sonradan gürültülü bir ses ortaya çıkacak.
+
+202
+00:34:35,155 --> 00:34:42,699
+Bunu yapabilecek fonksiyon burada AVG mi. İstiyorsanız çalıştıralım, sesi duyalım.
+
+203
+00:34:42,900 --> 00:34:44,844
+Orijinal ses böyleydi.
+
+204
+00:34:48,563 --> 00:34:50,884
+Sadece orijinal sesi çalıştırıyorum.
+
+205
+00:34:57,523 --> 00:35:06,884
+Evet, ses bitti. Şimdi şurada bir parametre var. O parametreye göre sesin nasıl değiştiğini göreceksiniz. 25 iken nasıl oluyor?
+
+206
+00:35:13,172 --> 00:35:15,172
+Ses geliyor mu bu arada?
+
+207
+00:35:16,172 --> 00:35:17,172
+Geliyor hocam geliyor.
+
+208
+00:35:17,172 --> 00:35:18,172
+Geldi hocam.
+
+209
+00:35:19,172 --> 00:35:22,172
+Tamam. Bir gürültü terimi gördük değil mi? Duyduk.
+
+210
+00:35:28,563 --> 00:35:29,764
+Evet gördük hocam.
+
+211
+00:35:30,403 --> 00:35:33,523
+Neden? Ekranın tam ortasında bir çizik oluştu.
+
+212
+00:35:39,092 --> 00:35:41,532
+Silmek istesem silebilecek miyim acaba?
+
+213
+00:35:41,811 --> 00:35:45,012
+Hocam sınıftan biri Zoom üzerinden yaptı onları ama
+
+214
+00:35:45,652 --> 00:35:47,652
+Yalnız işte yaptı bir ihtimalle.
+
+215
+00:35:48,372 --> 00:35:49,372
+Öyle mi?
+
+216
+00:35:51,292 --> 00:35:53,492
+Bunu nasıl şey yapabiliriz?
+
+217
+00:36:00,788 --> 00:36:05,467
+Hocam belki ekranı tekrar kapatıp tekrar paylaşırsanız, güzel olur.
+
+218
+00:36:05,467 --> 00:36:07,467
+Teşekkürler.
+
+219
+00:36:07,467 --> 00:36:10,188
+Güzel çocuk. Evet, güzeldi.
+
+220
+00:36:14,003 --> 00:36:18,003
+Peki buradaki parametre düşük tutsam, bakalım ses nasıl olacak.
+
+221
+00:36:24,052 --> 00:36:48,731
+Daha mı iyi daha kötü? Daha kötü. Yani burada gürültü aslında sinyal gürültü olanı ne olarak geçiyor? SNR olarak geçiyor bunun şeyi. Signal to Noise Ratio diye düşünüyor. Bunu düşünürseniz sinyalin kalitesi azalıyor. Şimdi bunu söyledik. Okey. Burada bir sorun yok. Hemen geldik.
+
+222
+00:36:49,619 --> 00:36:54,619
+Buradaki Y ile, yani üstüne gürültü eklenmiş sinyalle,
+
+223
+00:36:57,619 --> 00:37:04,619
+orijinal sinyali zaman ekseninde ya da örnek ekseninde çizdirip yorumlamak istiyorum. Acaba nasıl bir etki oluştu? Gürültü eklenmiş.
+
+224
+00:37:10,867 --> 00:37:25,867
+Bakın böyle bir şey karşıma çıktı. Şimdi kırmızıyla neyi çizmişim? Aslında kırmızıyla çizdiğim gürültü eklenmiş hali. Peki orijinali neydi? O da maviyle çizildi.
+
+225
+00:37:26,260 --> 00:37:38,860
+Çünkü bir şey yazmadığın zaman mavi ile çizim yapıyor. Göremiyorum işaretini mavi veya kırmızı sadece kırmızı görüyorum. O da çok yoğun bir şekilde görüyorum. O yüzden yakınlaşık bir yerlere bakmak istiyorum.
+
+226
+00:37:38,860 --> 00:37:52,260
+Bir kere şunu söyleyebiliriz. Şöyle geri çıkayım. Mesela ilk sıfır anında, ilk 10.000 örnek neydi? Sıfırdı.
+
+227
+00:37:52,467 --> 00:38:03,467
+Ses gecikmeli başlıyordu ama gürültü o kadar etkilemiş ki, bu sesi artı eksi 0-2 bandında olacak şekilde rastgele bir bilgi eklemiş. Bu bir.
+
+228
+00:38:03,467 --> 00:38:10,467
+İkincisi, sesin şöyle herhangi bir kısmını alıyorum. Biraz daha yakınlaşıyorum sese. Biraz daha yakınlaşıyorum.
+
+229
+00:38:10,467 --> 00:38:18,411
+Bakın daha da yakınlaşayım. Çok iyi bir şekilde görüyorum. Buradaki mavi işaret, benim orijinal işaretim.
+
+230
+00:38:18,963 --> 00:38:26,963
+Ben bu işaretin üstüne additive noise yani üstüne rastgele değişen bir şey eklersem böyle bir bilgiye gitmiş oluyorum.
+
+231
+00:38:28,264 --> 00:38:30,963
+Herhalde herkes anlamıştır diye düşünüyorum.
+
+232
+00:38:31,463 --> 00:38:46,795
+Güzel. Demek ki böyle bir değişim oluyormuş. Rastgele bir şey eklersem altında ve üstünde böyle aynı ortalaması işaret olan ama etrafında böyle rastgele değişen bir bilgi elde etmiş oluyorum.
+
+233
+00:38:47,635 --> 00:38:50,195
+Zaman düzlemindeki şeyi gördüm.
+
+234
+00:38:50,456 --> 00:38:53,015
+Peki şimdi şöyle düşüneyim.
+
+235
+00:38:53,515 --> 00:38:55,576
+Benim daha önceki elde ettiğim
+
+236
+00:38:57,355 --> 00:39:01,715
+giriş işaretinin, orijinal işaretinin, Fourier dönüşümü burada kalsın bir kenarda.
+
+237
+00:39:02,235 --> 00:39:02,996
+Kalsın.
+
+238
+00:39:03,515 --> 00:39:06,576
+Bir de gürültülü için elde edeyim bakalım.
+
+239
+00:39:06,835 --> 00:39:08,635
+İkisi arasındaki nasıl bir fark var?
+
+240
+00:39:10,068 --> 00:39:21,068
+Bu kez tek yapmam gereken şey, FFT aldığım şey Y üzerinden alacağım. Yani gürültülü veri üzerinden. Onun bir gürültülü sesini görelim bakalım nasıl çıkacak.
+
+241
+00:39:24,403 --> 00:39:31,403
+Ben ikisini yan yana açayım, siz yorumlamaya çalışın. Doğru ya da yanlış artık birlikte orta yolu buluruz.
+
+242
+00:39:37,588 --> 00:39:39,588
+Ne dersiniz? Nasıl bir etki var?
+
+243
+00:39:39,588 --> 00:39:49,588
+Hocam, 2000 Hz dışında normalde herhangi bir şey yoktu. Değerler yoktu ama gürültü ekleyince olmuş.
+
+244
+00:39:49,588 --> 00:39:52,588
+Tamam, güzel, süper. Başka?
+
+245
+00:39:53,588 --> 00:40:01,588
+Ama burada sesin özümseri pek değişmemiş. Yani baskın olan frekans yine gürültü sesle baskın durumunda hala duruyor.
+
+246
+00:40:01,588 --> 00:40:04,108
+O yüzden de duyabiliyoruz aslında.
+
+247
+00:40:04,211 --> 00:40:15,891
+Yani gürültüyü, şuradaki SNR değerini, bir de düşürüp bakalım. Düşünce çok gürültü geliyordu ya, acaba o durumda nasıl oluyor?
+
+248
+00:40:24,596 --> 00:40:26,596
+Şöyle kapatıp tekrar çalıştırıyorum.
+
+249
+00:40:32,019 --> 00:40:38,819
+Bakın, aslında şimdi şuradaki salınımların daha da fazla olduğunu fark etmişsinizdir diye düşünüyorum.
+
+250
+00:40:40,819 --> 00:40:43,220
+Diğer frekanslardaki şu değişimler.
+
+251
+00:40:44,420 --> 00:40:46,420
+Bir şeyleri bozmuş.
+
+252
+00:40:46,420 --> 00:40:49,220
+Peki, şunu söylüyorum.
+
+253
+00:40:50,619 --> 00:40:53,220
+Şurada bir bileşen seçeyim kendimi.
+
+254
+00:40:53,220 --> 00:40:54,420
+2000...
+
+255
+00:40:56,148 --> 00:41:00,108
+2100 Hz'teki ses frekansını ben duyabilir miyim?
+
+256
+00:41:01,367 --> 00:41:03,208
+Gürültülü ses içerisinde
+
+257
+00:41:06,900 --> 00:41:08,900
+Hocam sanki duyamayız gibi.
+
+258
+00:41:08,900 --> 00:41:09,900
+Hocam alsın bu durum.
+
+259
+00:41:09,900 --> 00:41:11,900
+Biraz yaklaşalım bakalım istiyorsanız.
+
+260
+00:41:11,900 --> 00:41:13,900
+2100 Hz'de bir şey var mı?
+
+261
+00:41:13,900 --> 00:41:17,900
+2000, 2100.
+
+262
+00:41:17,900 --> 00:41:20,900
+Var gibi de yok gibi de.
+
+263
+00:41:20,900 --> 00:41:25,900
+Çünkü onunla eşdeğer yükseltide bir şeyler olmuş.
+
+264
+00:41:25,900 --> 00:41:28,900
+Yani ne olmuş genel olarak şunu söyleyebiliriz.
+
+265
+00:41:28,900 --> 00:41:32,900
+Sesin bazı bileşenlerin daha fazla etkilemiş.
+
+266
+00:41:32,900 --> 00:41:34,764
+Bunun sebebi?
+
+267
+00:41:35,668 --> 00:41:45,908
+Aslında, gürültünün tipinde geçiyor. Bu gürültünün tipini ne dedik? Additive White Gaussian Noise dedik. White.
+
+268
+00:41:45,908 --> 00:41:56,908
+A, V, G, N. Şuradaki V. White'i gösteriyor. Beyaz. Neden beyaz demişler? Çünkü her frekanstan eşit şiddette bozuyor.
+
+269
+00:41:56,908 --> 00:41:59,908
+Burada gürültüde onu görebiliyorsunuz aslında.
+
+270
+00:42:00,307 --> 00:42:05,688
+Yüksek frekansları da aynı ölçüde bozuyor, düşük frekansları da aynı ölçüde bozuyor.
+
+271
+00:42:06,448 --> 00:42:14,648
+Ama bu aynı ölçüde bozarken, şuradaki sesin frekansı çok küçük genlikte olduğu için onu tabi kolaylıkla bozabiliyor.
+
+272
+00:42:15,408 --> 00:42:18,748
+Ama diğerlerini çok da kolay bozamıyor.
+
+273
+00:42:21,547 --> 00:42:24,108
+Başka yorum olan var mı bunlar üzerinden?
+
+274
+00:42:29,619 --> 00:42:34,019
+Hocam aslında bir tür yüksek geçiren filtre diyebilir miyiz biz buna?
+
+275
+00:42:34,619 --> 00:42:39,019
+Bu bir filtre değil. Burada sadece gürültü ekliyorsun üstüne.
+
+276
+00:42:42,900 --> 00:42:50,579
+Bunu neden yapıyoruz? Ben şeyi simüle etmeye çalışıyorum. Şimdi önce orijinal bir sesim vardı. Üstüne bir gürültü bindirdim.
+
+277
+00:42:51,340 --> 00:42:55,699
+Birazdan yapacağımız, birlikte ayağa kaldıracağımız sistemde...
+
+278
+00:42:58,260 --> 00:43:00,820
+Eğer ki şey varsa...
+
+279
+00:43:01,840 --> 00:43:02,860
+Bu sistem...
+
+280
+00:43:03,640 --> 00:43:04,920
+Neden şey çıkmadı ya?
+
+281
+00:43:07,980 --> 00:43:09,779
+Şunu elde etmiş oldum dolayısıyla.
+
+282
+00:43:10,739 --> 00:43:13,219
+Sentetik olarak da olsa bunu elde ettim.
+
+283
+00:43:13,739 --> 00:43:17,179
+Ortam gürültüsü yoktu ama kendim bir gürültü oluşturup ekledim.
+
+284
+00:43:17,779 --> 00:43:23,219
+Ben bunu öyle bir sisteme koyacağım ki buradaki gürültüyü süzmeye çalışacağım. Şimdi yapacağım şey o.
+
+285
+00:43:23,579 --> 00:43:28,379
+Aslında B şıkkında söylemek istediğim ya da üzerine düşüneceğim şey o olacak.
+
+286
+00:43:29,259 --> 00:43:37,579
+Nasıl bir filtre oluşturmalıyım ki, nasıl HT yapmalıyım ki, bu işi çözebileyim.
+
+287
+00:43:38,420 --> 00:43:44,720
+Şimdi genel olarak bir önceki duruma geri dönelim. Bu çok yüksek bir gürültü. Önce bir kolay veride çalışalım.
+
+288
+00:43:46,019 --> 00:43:51,720
+25 SNR'lı biraz daha düşük olan bir şeyde çalışalım.
+
+289
+00:43:55,092 --> 00:43:57,092
+Veri üzerinde çalışalım.
+
+290
+00:43:57,092 --> 00:44:03,092
+Burada, bu veride, gürültüyü nasıl süzebiliriz?
+
+291
+00:44:03,092 --> 00:44:05,092
+Pratik bir yöntem söyleyebilir misiniz bana?
+
+292
+00:44:05,092 --> 00:44:12,092
+Eşik frekans belirleriz, eşik frekansın üstündekiler ses de devam eder, diğerleri sinirlen.
+
+293
+00:44:12,092 --> 00:44:17,092
+Çok güzel. Eşik frekans ne olmalı sence burada?
+
+294
+00:44:29,876 --> 00:44:33,876
+2000 falan diyor. Ben bunu 3000 deyip garantiye alayım mı?
+
+295
+00:44:33,876 --> 00:44:35,876
+Olur hocam.
+
+296
+00:44:35,876 --> 00:44:40,876
+Yani arkadaşımızın söylediği şey şu, pratik olarak şunu yapabilirim hocam diyor.
+
+297
+00:44:40,876 --> 00:44:43,876
+Ben diyor bu sesin Fourier dönüşünü açtım.
+
+298
+00:44:43,876 --> 00:44:48,876
+3 kHz'in sonrasını sıfırlarım diyor frekans domeninde.
+
+299
+00:44:48,876 --> 00:44:52,876
+Bunun öncesini de aynen korurum diyor.
+
+300
+00:44:53,972 --> 00:45:00,472
+Ters Fourier dönüşümü aldığım zaman, sesi filtrelemiş olurum diyor. Bu uygun mu?
+
+301
+00:45:08,820 --> 00:45:10,820
+Bakın bunu şöyle yapabilirsiniz.
+
+302
+00:45:11,380 --> 00:45:14,199
+YF'nin yani bu sinyalin,
+
+303
+00:45:14,960 --> 00:45:17,520
+Az önce gösterdiğimiz şuradaki sinyalin,
+
+304
+00:45:19,060 --> 00:45:24,699
+Bu sonuçta çift yanlı olduğu için simetrik olarak değerlendirmeniz lazım. Ne diyeceksiniz?
+
+305
+00:45:25,460 --> 00:45:32,119
+Eğer buradaki frekans eksi 3000'den ya da eksi 3 kHz'den düşükse ya da veya
+
+306
+00:45:33,140 --> 00:45:35,692
+F 3000 Hz'den
+
+307
+00:45:35,891 --> 00:45:38,451
+Büyükse, sıfırlan.
+
+308
+00:45:40,491 --> 00:45:46,131
+Bakın bu sıfırlanmış halini de başka bir plotta çizdirelim. Böylelikle daha iyi görme imkanımız olur.
+
+309
+00:45:50,036 --> 00:45:54,036
+Acaba istediğim şeyi elde edecek miyim? Ben o kısmı düşünüyorum şu anda.
+
+310
+00:45:55,036 --> 00:45:56,036
+Bir dakika...
+
+311
+00:45:57,036 --> 00:45:59,036
+Şöyle baştan başlayalım.
+
+312
+00:46:12,211 --> 00:46:16,211
+Hatta ilk çizimi de yapalım. Figure 1.
+
+313
+00:46:18,211 --> 00:46:19,788
+Load X diyelim.
+
+314
+00:46:26,452 --> 00:46:30,132
+CloudX değildi. Diğeri yok elimizde.
+
+315
+00:46:34,291 --> 00:46:36,612
+Şurada diğerini elde edelim. Neyse tamam.
+
+316
+00:46:37,811 --> 00:46:39,332
+Bunu koymayalım o zaman.
+
+317
+00:46:39,731 --> 00:46:52,211
+Bu görüntü, bu da yaptığımız filtreleme sonrası, arkadaşınızın önerisi üzerine yaptığımız filtreleme sonrasında elde ettiğimiz frekans eksenindeki işaret.
+
+318
+00:46:55,092 --> 00:46:58,371
+Burada tabi çok yaklaştık diye öyle gözükmedi.
+
+319
+00:46:58,547 --> 00:47:06,547
+Burada niye şey oldu? Bir ölçek farkımız oldu. Ölçek farkımız neden oldu? Neden oldu? Bakıyoruz.
+
+320
+00:47:06,547 --> 00:47:13,547
+Şurada özellikle bir limit koymuşum. Burada da aynı limiti koyup çizimi tekrarlayabilirim.
+
+321
+00:47:13,547 --> 00:47:14,699
+Evet.
+
+322
+00:47:18,036 --> 00:47:23,416
+Sizce bu filtreyle sesi süzebildik mi? Ne dersiniz?
+
+323
+00:47:24,176 --> 00:47:25,976
+Tam anlamıyla süzemedik.
+
+324
+00:47:26,236 --> 00:47:32,376
+Tam anlamıyla süzemedik. Şimdi bunu bir de sesi dinleyerek yapmaya çalışıyorum.
+
+325
+00:47:33,136 --> 00:47:44,156
+Tabii ne yapmamız lazım? Buradaki frekansta karşılığı bulunan şeyi ters FFT ile zaman ekserine çevirmemiz lazım ki dinleyelim. Bakın burada öyle yapmışız.
+
+326
+00:47:44,371 --> 00:47:58,871
+Immerse FFT Shift, Immerse FFT yapıp sesin kendisini elde etmişiz. Şimdi sırasıyla dinleteceğim. Önce gürültülü olan ses, sonra da gürültülü süzdüğümüz ses. Bakalım başarabilmiş miyiz?
+
+327
+00:48:03,764 --> 00:48:05,452
+Bu gürültü bir sesti.
+
+328
+00:48:10,675 --> 00:48:11,675
+Olmuş mu?
+
+329
+00:48:14,675 --> 00:48:16,675
+Tam olarak olmasa da yine başarılı.
+
+330
+00:48:17,675 --> 00:48:19,675
+Tamam, arkadaşınız başarılı dedi.
+
+331
+00:48:22,675 --> 00:48:23,675
+Başka fikri olan?
+
+332
+00:48:31,795 --> 00:48:36,955
+Hocam düşük frekansları sönümlendiren bir filtre kullanabiliriz demiş [öğrenci]. Tamam.
+
+333
+00:48:36,955 --> 00:48:41,955
+Ama hocam o zaman da orijinal sesteki düşük frekansları yok etmiyor muyuz yani?
+
+334
+00:48:42,955 --> 00:48:47,947
+Evet. Dediğin gibi. Aslında öyle bir durum oluşuyor.
+
+335
+00:48:52,083 --> 00:49:00,083
+Şimdi, bizim şu anki yaptığımız şey, neye karşılık geliyor? Derste gördüğümüz hangi duruma karşılık geliyor?
+
+336
+00:49:03,083 --> 00:49:05,083
+Frekans uzayında filtreleme yaptık biz.
+
+337
+00:49:06,083 --> 00:49:09,083
+Aslında yaptığımız şey, temelde şuydu.
+
+338
+00:49:09,083 --> 00:49:13,083
+Biz bir tane haş oluşturmuş olduk.
+
+339
+00:49:14,083 --> 00:49:17,931
+Bu haşın, eksi 3000'den,
+
+340
+00:49:18,516 --> 00:49:22,516
+3000'e kadarki frekansları
+
+341
+00:49:23,796 --> 00:49:25,836
+fhertz frekansları
+
+342
+00:49:26,076 --> 00:49:28,076
+şurasında hf diyelim
+
+343
+00:49:28,956 --> 00:49:30,476
+aynen geçirip
+
+344
+00:49:31,036 --> 00:49:33,036
+1 ile yani çarpıp
+
+345
+00:49:33,036 --> 00:49:34,556
+geri kalanlarını
+
+346
+00:49:34,956 --> 00:49:36,956
+0 ile çarpmış olduk.
+
+347
+00:49:37,516 --> 00:49:40,635
+ut fonksiyonu falan kullanmış olabiliriz.
+
+348
+00:49:41,755 --> 00:49:43,052
+ut değil.
+
+349
+00:49:43,188 --> 00:50:06,588
+Şunun yaptığımız şeye dikkatli bakın arkadaşlar. Ne yaptık burada? 3000, eksi 3000'in altı ve artı 3000'in üstünü sıfırla dedik. Dolayısıyla aslında şununla çarpmış gibi oldunuz. Şurada verdiğim filtreyle çarpmış gibi oldunuz. Yani bu nedir? Alçak geçiren filtre yaptınız aslında.
+
+350
+00:50:06,996 --> 00:50:11,216
+Peki bunu nasıl uyguladınız? Bakın yaptığımız şeyi açık bir şekilde yazayım.
+
+351
+00:50:12,076 --> 00:50:20,116
+XT'den ya da YT diyeyim bunu. Gürültü eklenmiş işareti YT idi. Bunun Fourier dönüşümünü aldık.
+
+352
+00:50:20,776 --> 00:50:26,816
+Aslında YF'i elde ettik. Ve daha sonra bu YF üzerinden gördük ki, dedik ki
+
+353
+00:50:26,816 --> 00:50:32,756
+Gürültüler var ama sanki 3-3000 ile eksi 10.000 arasında
+
+354
+00:50:34,068 --> 00:50:56,988
+Ve, artı 3000 ile artı 10.000 arasında daha bir baskın gibi düşünüp, buradaki şeyle, sinyalin frekansıyla, şurada oluşturduğumuz kendimiz bir filtre, frekansta bir filtre yanıtıyla çarpıp sonucu elde ettik.
+
+355
+00:50:57,907 --> 00:51:24,108
+Aslında kullandığımız şey şu oldu, XF çarpı HF eşittir, çıkışın frekans yanıtı olmuş oldu. Sonra çıkışın frekans yanıtının ters FFTC'ni olarak ya da Fourier dönüşümünü alarak YT'yi elde ettik. Bakın şu an aslında biz derste gördüğümüz Fourier dönüşümünün frekans ekseninde ya da bir sistemin frekans ekseninde nasıl uygulanır?
+
+356
+00:51:24,628 --> 00:51:27,248
+Kısmını böylelikle doğrulamış olduk.
+
+357
+00:51:29,128 --> 00:51:30,048
+Anlaşıldı mı?
+
+358
+00:51:34,547 --> 00:51:36,168
+Anlaşıldı hocam, teşekkür ederiz.
+
+359
+00:51:38,027 --> 00:51:45,847
+Şöyle aşağılara inelim. Peki, biraz da zamandan konuşalım. Zaman ekseninde biz bunu yapamaz mıydık? C diyelim.
+
+360
+00:51:48,067 --> 00:51:57,347
+Zamanda konvolüsyonla biz bunu nasıl halledebiliriz? Konvolüsyon ile çözüm üretme diyelim.
+
+361
+00:52:02,099 --> 00:52:05,099
+Biraz daha iyi bir çözüm bulmaya çalışıyorum.
+
+362
+00:52:05,099 --> 00:52:06,099
+Ama
+
+363
+00:52:09,099 --> 00:52:11,099
+Problem de zor bir problem, bunu da söyleyeyim.
+
+364
+00:52:13,099 --> 00:52:15,099
+Bunu nasıl yaparız? Bunu bir konuşalım.
+
+365
+00:52:16,099 --> 00:52:18,099
+Öncelikle şunu tekrar yapacağım.
+
+366
+00:52:19,099 --> 00:52:20,099
+Şurada
+
+367
+00:52:21,099 --> 00:52:23,099
+İşaretleri tekrar çizdireceğim.
+
+368
+00:52:24,099 --> 00:52:25,900
+Şu kısmı özellikle benim için.
+
+369
+00:52:30,708 --> 00:52:34,251
+Bu işi elde etmediğim için herhalde şey yaptım. Çizdim.
+
+370
+00:52:39,827 --> 00:52:45,107
+Sizden burada bir geri besleme bekliyorum. Şu kısım 25.
+
+371
+00:53:01,076 --> 00:53:12,235
+Nasıl bu sinyali süzebiliriz? Yani nasıl? Verimizin genliklerini belli aralıklarla ortalamasına alıp yeni bir diz oluşursak, ortalaması zaten eski veriye eşit olduğu için düzelmez mi?
+
+372
+00:53:14,076 --> 00:53:15,436
+Evet, kim konuştu?
+
+373
+00:53:16,115 --> 00:53:17,036
+Ben hocam.
+
+374
+00:53:17,596 --> 00:53:18,235
+İsim?
+
+375
+00:53:18,356 --> 00:53:19,356
+[öğrenci].
+
+376
+00:53:19,996 --> 00:53:23,755
+Evet, güzel çözüm. Ortalama filtresi uygularım diyorsun değil mi?
+
+377
+00:53:25,715 --> 00:53:50,507
+Aslında bir şey şu, mesela herhangi bir yere bak, buradaki sinyalin bu değerini elde edebilmek için, giriş sinyalinin şu değerini, bu değerini, bu değerini, bu değerini, bu değerini, bu değerini alıp, şunların hepsini alıp, eleman sayısına bölersem diyorsun şuranın ortasında bir şey çıkar. Ve bunu,
+
+378
+00:53:50,835 --> 00:53:54,835
+Yol boyunca yaparsam, aslında ortalama filtresi oluşturmuş olur.
+
+379
+00:53:54,835 --> 00:54:00,835
+Güzel. Hemen o zaman ortalama filtresi kavramına gitmemiz lazım.
+
+380
+00:54:00,835 --> 00:54:05,835
+Bir ortalama filtresi nasıl oluşturulabilir? Denklemini yazmaya çalışmam lazım.
+
+381
+00:54:05,835 --> 00:54:07,835
+Çıkış, aslında...
+
+382
+00:54:08,532 --> 00:54:19,532
+Ne olabilir? Mesela kaç noktayı alıp ortalama alacak? Bunu düşünmem lazım öncelikle. Diyelim ki iki noktalı, üç noktalı bir ortalama alıcı olsun.
+
+383
+00:54:19,532 --> 00:54:35,532
+Sinyalin NA'nın bir önceki örneğini, o anki örneğini ve bir sonraki örneğini alabilir. Sonra bunları alıp üçe bölebilir mesela. Bu üç noktalı oluyor.
+
+384
+00:54:35,956 --> 00:54:37,396
+3 noktalı
+
+385
+00:54:38,276 --> 00:54:39,476
+Ortalama
+
+386
+00:54:41,716 --> 00:54:46,036
+İstersen daha da büyük bir pencere seçebilirsin.
+
+387
+00:54:46,956 --> 00:54:52,876
+Yani 5 önceki örnekten 5 önceki sonraya kadar o zaman da 11 noktalı olur.
+
+388
+00:54:53,635 --> 00:54:54,836
+Ona bakacağız.
+
+389
+00:54:55,059 --> 00:55:01,539
+Şimdi böyle bir şey veriliyorsa, bunun dürtü yanıtını elde etmem lazım. Çünkü konvolüsyon da adam bana onu soracak.
+
+390
+00:55:01,539 --> 00:55:11,300
+Konvolüsyon diyeceğim, x diyeceğim. Tamam sinyalimi koydum. H diyeceğim sonra. H'ı belli etmem lazım. H'ı buradan nasıl bulabilirim?
+
+391
+00:55:16,884 --> 00:55:31,083
+Aslında 1 bölü 3 çarpı delta n-1 artı 1 bölü 3 çarpı delta n artı 1 bölü 3 çarpı delta n artı 1 şeklinde yazabilirim.
+
+392
+00:55:42,260 --> 00:55:48,260
+Peki bunu Netlab'da bir dizi halinde nasıl yazabilirim? Söyleyebilecek olan var mı?
+
+393
+00:55:55,764 --> 00:55:57,463
+Bu da ödevleri...
+
+394
+00:55:57,463 --> 00:56:01,264
+0, eksi 1 ve 1 de 1 bölü 3 değeri olacak.
+
+395
+00:56:03,543 --> 00:56:07,184
+Aslında şöyle yazabilirim. 1 bölü 3, 1 bölü 3, 1 bölü 3 yazabilirim.
+
+396
+00:56:10,516 --> 00:56:18,195
+Şu an tabii ki merkezi şey yap, kaçırmış oldum ama, bir an için merkez benim umrumda değil diyerek yola çıktığınızı düşünün.
+
+397
+00:56:19,735 --> 00:56:33,036
+Bakın, aslında 3 değerinde 1 bölü 3 olduğunu görüyorsunuz. O zaman ben bunu şöyle de yazabilir miyim? Kodda o şekilde gösterdim çünkü. 1 bölü 3 çarpı once
+
+398
+00:56:34,003 --> 00:56:44,243
+1'e 3 yazabilir miyim? Evet yazabilirim. Şu once 1'e 3 dediği şey aslında içi tamamen birlerle dolu, 1 çarpı 3'lük bir vektör oluşturuyor.
+
+399
+00:56:44,243 --> 00:56:51,043
+Bunu bir skalerle çarptığı zaman aynı yere gidiyor. Neden böyle yazıyorum? Çünkü ben bunu 3 uzunlukta değil de,
+
+400
+00:56:51,043 --> 00:57:01,603
+20 uzunlukta, 21 uzunlukta yapmak istediğim zaman da o zaman şöyle diyeceğim. 1 bölü 21 çarpı once 1'e 21 diyeceğim.
+
+401
+00:57:02,996 --> 00:57:09,135
+Hepsini teker teker elimle girip 1 bölü 21, 1 bölü 21 yazmayacağım. Bu açıdan kolaylık oluyor.
+
+402
+00:57:09,916 --> 00:57:16,316
+Dolayısıyla şimdi bununla bir filtreleme yapalım. Acaba gerçekten bu iş çalışacak mı onu görmeye çalışalım.
+
+403
+00:57:18,096 --> 00:57:22,956
+Gideceğimiz aşamalar ne olacak ona bir bakalım hemen. Demo 3'te bulunması lazım bu.
+
+404
+00:57:24,496 --> 00:57:29,115
+Sinyalini ilk 200.000 kısmını aldık. Tekrar gürültü ekledik aynı gürültü.
+
+405
+00:57:29,327 --> 00:57:36,827
+Bakın burada 1 bölü 15, Vans 1'e 15 demişim. Bu ortalama filtresinin uzunluğu nedir?
+
+406
+00:57:44,724 --> 00:57:45,923
+Kim söyleyebilir?
+
+407
+00:57:50,228 --> 00:57:51,248
+Şurada yazıyor.
+
+408
+00:57:56,500 --> 00:58:13,099
+İsterseniz bunu çalıştırıp, haşın elemanlarını da görebilirsiniz. Bakın, haşın elemanları hepsi 1 bölü 15 olan bir vektör içeriyor. Ortalama filtresinin haşı bu şekilde bulunup hesaplanabilir. Oldukça kolaydır.
+
+409
+00:58:13,099 --> 00:58:23,300
+Şimdi bununla konvolüsyonu soktuğumuzda bakalım ses gerçekten düzelecek mi, düzelmeyecek mi, bir öncekiyle de kıyaslayabiliriz. Daha mı iyi oldu, daha mı kötü oldu şeklinde düşünebiliriz.
+
+410
+00:58:24,244 --> 00:58:35,044
+Ürettiğim sesi şurada çizdirdim. Tamam. Hepsini çalıştırsam olur mu? Olmayacak. Teker teker çalıştırayım çünkü sesler karışacak. Önce görüntülü...
+
+411
+00:58:39,923 --> 00:58:41,923
+Sonra, süzülmüş hali.
+
+412
+00:58:47,443 --> 00:58:48,443
+Çalıştı mı?
+
+413
+00:58:58,708 --> 00:59:02,468
+Sonuç diğerinden daha kötüydü ama yani idare bir çözüm.
+
+414
+00:59:05,108 --> 00:59:07,408
+Evet, peki bunun
+
+415
+00:59:09,208 --> 00:59:12,528
+15 örnek değil de daha fazla örnek üzerinden ortalama alsa
+
+416
+00:59:13,548 --> 00:59:14,588
+Mesela
+
+417
+00:59:15,088 --> 00:59:17,908
+57 örnek üzerinden alsa, sallıyorum tamamen.
+
+418
+00:59:18,668 --> 00:59:19,708
+Tam iyi olurdu acaba?
+
+419
+00:59:20,208 --> 00:59:21,228
+Bir de ona bakalım.
+
+420
+00:59:32,179 --> 00:59:34,659
+Oldu mu? Bu sefer çok daha iyi hocam.
+
+421
+00:59:34,979 --> 00:59:42,979
+Çok daha iyi. Demek ki burada ortalama sayısını biraz daha arttırmamız bizim için iyi oluyormuş.
+
+422
+00:59:44,499 --> 00:59:50,979
+Çizdirilin bir de, gerçekten zamanda yapılan ortalama işe yaradı mı yaramadı mı onu görmeye çalışalım.
+
+423
+00:59:53,859 --> 00:59:56,499
+Şu çizimi kapattım, tekrar çiziyorum.
+
+424
+01:00:01,907 --> 01:00:05,407
+Şimdi hangisi hangisi o karışıklık olmasın?
+
+425
+01:00:06,907 --> 01:00:10,407
+Orjinal ses siyah ile çizilmiş, K black.
+
+426
+01:00:11,407 --> 01:00:14,907
+Y dediğim şey gürültü eklenmiş kırmızıyla.
+
+427
+01:00:16,407 --> 01:00:19,907
+En son elde ettiğim sonuç ise mavi ile.
+
+428
+01:00:19,907 --> 01:00:23,907
+Yani mavi ile elde ettiğim sonucu şey yapmam lazım. Bakıyorum.
+
+429
+01:00:26,407 --> 01:00:28,331
+Aslında ses...
+
+430
+01:00:30,708 --> 01:00:34,468
+Sanki olmamış gibi değil mi? Ne dersiniz?
+
+431
+01:00:42,036 --> 01:00:43,235
+Fikro olan var mı?
+
+432
+01:00:44,195 --> 01:00:48,275
+Biraz ileriden mi gidiyor hocam? Geriden mi geliyorsa siz?
+
+433
+01:00:49,795 --> 01:00:52,275
+Yani bu ortalamasını aldığınızda yani.
+
+434
+01:00:53,155 --> 01:00:56,836
+Ortalamasını aldığınızda biraz geriden mi geliyor diyor arkadaşımız.
+
+435
+01:01:05,364 --> 01:01:10,043
+Evet, mesela kaydırmaya çalışsak tam üstüne oturur mu? Nasıl olur?
+
+436
+01:01:11,803 --> 01:01:16,683
+Sağa kaydırsak olmaz, sola kaydırsak olabilir. Biraz genişlemiş gibi sanki.
+
+437
+01:01:23,668 --> 01:01:27,748
+Nasıl kaydırabiliriz? Tabi orada ne kadar gecikmenin olduğunu anlamamız lazım.
+
+438
+01:01:30,628 --> 01:01:34,947
+Mesela 57 kadar bir gecikme mi var?
+
+439
+01:01:41,811 --> 01:01:43,811
+Bu şeyden dolayı...
+
+440
+01:01:45,251 --> 01:01:49,811
+Bir tane tepe belirleyeyim kendimi. Şu tepeyi mesela belirleyeyim. Kaç? 191.
+
+441
+01:01:50,811 --> 01:01:55,811
+Şurada bir tepe belirleyeyim kendimi. 148.
+
+442
+01:01:56,811 --> 01:02:06,572
+191-148 diyeyim. 43 gibi bir gecikme. Mesela bir tanesini 43 öteleyerek ciz desem. Üst üste gelmesini sağlamak için.
+
+443
+01:02:06,900 --> 01:02:12,811
+Bu 43'den 43'e kadar gitse, acaba olacak mı?
+
+444
+01:02:16,820 --> 01:02:20,812
+Sabit bir kayma var mı? Onu görmeye çalışıyorum. Oldu mu?
+
+445
+01:02:28,275 --> 01:02:43,275
+Sanki tam olmadı gibi bir şeyler var. Bunu anlamaya çalışıyoruz. Bunu birden başlatsak belki daha iyi görünürüz. Birden ilk 1000 tanesini alalım. Çizdirelim.
+
+446
+01:02:47,476 --> 01:02:51,156
+Birde de zaten değer olmadığı için çok bir şey göremiyoruz.
+
+447
+01:02:52,996 --> 01:02:56,756
+Bunun neyse ben genel olarak sebebini söyleyeyim. Burada doğrudan gösteremedim.
+
+448
+01:02:56,756 --> 01:03:01,796
+Şimdi arkadaşlar, bir filtre uyguluyorsunuz. Bu filtre
+
+449
+01:03:02,675 --> 01:03:15,796
+Filtrenin iki tane cevabı oluyor aslında. Bu filtrenin frekans yanıtına geçecek olursanız, işte HF deyip bunu bir hesaplayabilirsiniz. Çoğunlukla şöyle devam eden bir şey olacak herhalde. SYNC'e benzer bir şeyler olacak.
+
+450
+01:03:16,876 --> 01:03:27,596
+Neden böyle olacağını da düşünebilirsiniz. Bakın H, HN'i çizecek olursanız, aslında HN sizin için şöyle bir şey.
+
+451
+01:03:31,284 --> 01:03:35,884
+Kare dalga gibi ya da dikdörtkansel darbe gibi bir şey oluyor. Bunun Fourier dönüşümü,
+
+452
+01:03:36,144 --> 01:03:38,963
+Bileceğiniz üzere SYNC fonksiyonu elde eder.
+
+453
+01:03:39,224 --> 01:03:42,543
+Muhtemelen biz de burada SYNC ile ilgili bir şeyle karşılaşacağız. Ama
+
+454
+01:03:43,063 --> 01:03:44,844
+Burada kilit başka bir şey daha var.
+
+455
+01:03:45,364 --> 01:03:46,644
+Bu işçinin,
+
+456
+01:03:46,903 --> 01:03:48,943
+Sistemin bir de faz yanıtı var.
+
+457
+01:03:50,224 --> 01:03:51,003
+Ne oluyor bu?
+
+458
+01:03:52,023 --> 01:03:53,043
+Sistemin
+
+459
+01:03:54,063 --> 01:03:57,644
+Giriş frekansına göre farklı bir faz koyabiliyor.
+
+460
+01:03:58,547 --> 01:04:02,907
+Yani mesela şuradaki adam buraya Pi bölü 2 koymuş.
+
+461
+01:04:04,427 --> 01:04:12,367
+Bu frekansa Pi bölü 2 kadar gecikme koyarken, şu frekanstaki şeye gidip, eksi Pi bölü 2 kadar gecikme koyabiliyor.
+
+462
+01:04:12,887 --> 01:04:19,287
+Bu gecikmelerden dolayı, sanki bir önceki işaretteki gibi, üst üste binmiyormuşçasına,
+
+463
+01:04:21,012 --> 01:04:42,512
+Sağa sola ötelenmeler meydana gelebilir. Bunda fazla gecikme diyoruz ya da faz eklenmesi durumu diyoruz. Sesi gördüğünüz üzere bir miktar etkiliyor ama çok temelde bozmuyor. Demek ki bu şeyin, bizim şu an burada rastgele oluşturduğumuz bir dürtü yanıtının
+
+464
+01:04:43,155 --> 01:04:53,155
+Frekans domeninde, özellikle FAS kısmında çok fazla bozucu bir etkisi yokmuş. Burası okey, burası da okey ki, demek ki sesi güzel bir şekilde duyabiliyoruz.
+
+465
+01:04:53,155 --> 01:05:03,155
+Diğer türlü ne olurdu? Sesler arasında kopukluk olurdu. Çok fazla duyamazdık. Yani bir şey sürüzeceğiz derken daha da beter edebilirdik. İşin o tarafı da var.
+
+466
+01:05:04,307 --> 01:05:18,388
+Bu yaptığımız şey de frekansta değil, zamanda filtrelim oldu. Neden? Bunu HN olarak burada elimize aldık, konvolüsyon yaptık ve doğrudan sonucu bulduk. Bakın frekans hiç işin ortasında yok, işin içerisinde yok.
+
+467
+01:05:19,408 --> 01:05:21,708
+Bu kısım OK mi? Sorumlusu olan var mı?
+
+468
+01:05:34,387 --> 01:05:49,748
+Bir de şöyle bir şey düşünebilirsiniz. Ya hocam, ben bu kadar basit çözümlerle devam etmek istemiyorum. Benim için daha iyi, daha güçlü bir filtre lazım ki bunun tamamını güzel bir şekilde süzeyin.
+
+469
+01:05:51,547 --> 01:05:59,867
+O zaman işte eğer böyle bir şey düşünüyorsanız, Sayısal İşaret İşleme diye bir ders var bizde. Seçmeli ders.
+
+470
+01:06:00,063 --> 01:06:04,563
+O derste bunun daha ayrıntılı ve filtre tasarımlarını gösteriyoruz.
+
+471
+01:06:04,563 --> 01:06:08,063
+Bilgeli filtre tasarımı nasıl olması gerektiğini konuşuyoruz.
+
+472
+01:06:08,063 --> 01:06:16,063
+Onu da derseniz ki, ya hocam ders mi alıp ben bu işi yapacağım, kendim bilgisayarda bir şekilde öğrenemez miyim? Öğrenebilirsin.
+
+473
+01:06:16,063 --> 01:06:19,563
+Hatta bununla ilgili application'lar var MATLAB üzerinde.
+
+474
+01:06:19,563 --> 01:06:26,563
+Burada mesela şurada bir sürü farklı application görebilirsiniz. Sizin işinize yaran şey...
+
+475
+01:06:27,123 --> 01:06:42,324
+Filter Designer var burada. Herhalde herkes görebiliyordur. Buna tıklarsan, sana bir pencere açılacak, GUI. Bu grafik arayüzde kendi filtrenin tasarlama olanağı sunacak sana.
+
+476
+01:06:44,324 --> 01:06:53,324
+Ama burada olayı çok güzel bilmen lazım. Yani hangi aralıkta geçireceksin, hangi aralıkta durduracaksın?
+
+477
+01:06:53,652 --> 01:06:59,291
+şeklinde bir düşünme gerektiriyor. Diyelim ki sen burada
+
+478
+01:07:00,572 --> 01:07:05,692
+alçak geçiren bir filtre yapmak istiyorsun, Low Pass filtre yapacaksın dolayısıyla. Bunu seçtin.
+
+479
+01:07:06,711 --> 01:07:09,012
+Sonra gittin, dedin ki
+
+480
+01:07:09,532 --> 01:07:15,411
+benim örnekleme frekansım 48000, evet bizim az önceki sesin de 48000'di.
+
+481
+01:07:16,692 --> 01:07:17,211
+Ben
+
+482
+01:07:17,492 --> 01:07:19,992
+3000 Hz'e kadar bunu geçireyim.
+
+483
+01:07:19,992 --> 01:07:21,592
+Etwas 3000.
+
+484
+01:07:21,851 --> 01:07:25,432
+Yani şuraya kadar geçirecek. Sıfırla 3000'e kadar geçirecek.
+
+485
+01:07:26,192 --> 01:07:27,472
+3000'den
+
+486
+01:07:27,992 --> 01:07:29,532
+Ya da şöyle diyelim
+
+487
+01:07:30,032 --> 01:07:32,092
+5000'den sonrasında sıfırlayacak.
+
+488
+01:07:33,612 --> 01:07:35,412
+Fark ettiyseniz şöyle bir şey yaptım.
+
+489
+01:07:35,672 --> 01:07:36,692
+Şuradaki
+
+490
+01:07:36,952 --> 01:07:38,992
+geçirme şeyine
+
+491
+01:07:39,251 --> 01:07:40,532
+3000 yazdım.
+
+492
+01:07:40,791 --> 01:07:44,632
+Durdurma bandının başladığı yere de 5000 yazdım. Neden böyle bir şey yaptım?
+
+493
+01:07:46,003 --> 01:07:47,596
+Ya da bu neyi sağlayacak?
+
+494
+01:07:54,387 --> 01:07:58,707
+3000-5000 arası geçiş noktasını yumuşatmaya mı çalışıyorsunuz?
+
+495
+01:07:58,707 --> 01:08:05,187
+Evet, 3000-5000 arasında geçiş noktasını yumuşatıyor aslında. Şurada Design Filter değil, bir bakın istiyorsanız.
+
+496
+01:08:05,187 --> 01:08:12,387
+Adam tasarlasın, sonra size söyleyecek, diyecek ki bu bu şekilde. Bakın, böyle bir şey tasarladı.
+
+497
+01:08:12,387 --> 01:08:19,387
+Ne yapıyor aslında? Şunun lütfen desibel olduğunu unutmayın. 0dB aslında aynen geçirdiğini söylüyor.
+
+498
+01:08:20,340 --> 01:08:24,940
+Yani herhangi bir şey yapmıyor. 5000 sonrasını da
+
+499
+01:08:25,979 --> 01:08:28,020
+eksi 80 dB
+
+500
+01:08:29,039 --> 01:08:31,100
+decibel derecesinde zayıflatıyor.
+
+501
+01:08:31,340 --> 01:08:32,880
+Dolayısıyla süzmüş oluyor.
+
+502
+01:08:33,139 --> 01:08:35,180
+Şurada filtre karakterini görebiliyorsunuz.
+
+503
+01:08:35,699 --> 01:08:39,280
+Adam şurada 3000'den itibaren azalmaya başlamış ama
+
+504
+01:08:40,059 --> 01:08:43,380
+5000'den itibaren asıl efektif şekilde çalışıyor.
+
+505
+01:08:43,899 --> 01:08:45,180
+Görebiliyorsunuz değil mi?
+
+506
+01:08:46,699 --> 01:08:47,739
+Evet hocam gözüküyor.
+
+507
+01:08:48,435 --> 01:08:53,675
+Şimdi hemen burada şuna bakacaksınız. Order. Derecesi 61 diyor.
+
+508
+01:08:55,115 --> 01:08:56,675
+Yani ne demek bu?
+
+509
+01:08:57,235 --> 01:09:02,155
+Hemen bunun bizim dersimizdeki şeyini konuşalım.
+
+510
+01:09:02,155 --> 01:09:05,155
+H'ın uzunluğu buradan başlıyor.
+
+511
+01:09:05,555 --> 01:09:13,355
+61 tane değer varmış burada. 1 çarpı 61'lik bir vektörmüş.
+
+512
+01:09:14,163 --> 01:09:18,763
+Bu bize hangi açıdan yarar ya da zarar sağlayabilir?
+
+513
+01:09:19,543 --> 01:09:22,863
+Mesela burada 1 bölü 3'müş, burada 61.
+
+514
+01:09:23,884 --> 01:09:25,423
+İyi mi, kötü mü sizce?
+
+515
+01:09:27,224 --> 01:09:28,763
+Yani kötü çünkü
+
+516
+01:09:29,263 --> 01:09:31,323
+işlemlerimiz daha uzun düşüyor.
+
+517
+01:09:31,564 --> 01:09:32,603
+Yani verimle keskin.
+
+518
+01:09:33,332 --> 01:09:46,012
+Konvolüsyon yapacağınız şeyi gezdiriyorsunuz ya, sağa doğru kaydırıp, karşılıklı elemanlarını çarpıyorsunuz. İşte bu, haşın büyük olması, çarpımın da fazla olması anlamına geliyor. Çok uğraşacağınız anlamına gelir.
+
+519
+01:09:46,012 --> 01:10:00,000
+Yani bilgisayarınız varsa, bilgisayarınız bunu yapmak için uğraşacak biraz. Diğerine göre daha fazla hesapsal yükü var, diyorsunuz. Bu arada tasarladığımız filtre de kabaca şu hale gelmiş oldu. Şu anki.
+
+520
+01:10:00,000 --> 01:10:10,199
+Burada tasarladığımız şekliyle. Şöyle geldi geldi geldi. 3 kHz'den sonrası, 3K'dan sonra 5K'ye kadar düştü.
+
+521
+01:10:11,639 --> 01:10:18,840
+5K'dan sonra da sönümlü bir şekilde devam ediyor. Filtre bu. Bunun simetriğini düşünebilirsiniz.
+
+522
+01:10:19,239 --> 01:10:23,399
+Abi ben bu filtreyi böyle değil, daha düzgün elde etmek istiyorum hocam ben dersem.
+
+523
+01:10:24,440 --> 01:10:26,639
+O zaman şöyle yapabilirsin.
+
+524
+01:10:28,372 --> 01:10:46,311
+3K'ya kadar gelir. Şuraya da hemen 3100 Hz dersin. Çok hızlı bir düşüş olur. Buradan sonra devam eder. Peki bunun derecesi nasıl olur sizce? Yukarıdaki 61 uzunluktaydı. Bunun uzunluğu ne olur sizce?
+
+525
+01:10:46,311 --> 01:10:48,311
+Daha düşük olmaz mı?
+
+526
+01:10:48,311 --> 01:10:50,311
+Siz, öyle mi olur?
+
+527
+01:10:59,604 --> 01:11:03,604
+Böyle bir şey düşünüyorsanız hemen aklınıza şey getireceksiniz.
+
+528
+01:11:03,604 --> 01:11:07,467
+Ark... Şöyle bir tarafta yazayım.
+
+529
+01:11:11,220 --> 01:11:18,220
+Eğer ki ben frekansta ideal bir filtre yapacak olsam, şöyle bir şey yapmam gerekir.
+
+530
+01:11:21,747 --> 01:11:27,827
+Qt de iniyor şurada. Direkt 3K'da iniyor. Bunun zamandaki karşılığı ne olur?
+
+531
+01:11:29,347 --> 01:11:30,147
+HD.
+
+532
+01:11:32,347 --> 01:11:38,147
+Burada dikdörtgensel bir darbe varsa, Fourier dönüşümünden gördüğüm kadarıyla bunun SYNC olması lazım.
+
+533
+01:11:39,147 --> 01:11:44,147
+Şöyle sonsuza kadar elemanları devam eden bir şeyden bahsediyoruz.
+
+534
+01:11:44,787 --> 01:11:49,027
+Bakın sonsuza kadar elemanları devam ediyor. HD'nin, Dürt Yenit'nin.
+
+535
+01:11:49,087 --> 01:12:09,087
+Demek ki neymiş? Benim eğer burada çok keskin bir şey elde etmek istiyorsam o zaman bir yerlerden ödün vereceğim ve çok daha yüksek dereceli bir şey, bir filtre elde edeceğim anlamına geliyor. İstiyorsanız bunu deneyip görün. Buraya Band Stop'u 3100 yazın.
+
+536
+01:12:11,087 --> 01:12:16,043
+Ve Design Filter deyin, bir yandan Order'a bakın. Şu an 61'di. Bakıyoruz.
+
+537
+01:12:20,307 --> 01:12:27,807
+1215 oldu. Çok yüksek, çok uzun bir aslında filtreden bahsediyoruz burada.
+
+538
+01:12:29,807 --> 01:12:36,208
+Şimdi bir an için bu filtreyle işlem yapmak isteseniz nasıl yaparsınız? Sanırım şöyle yapıyorduk.
+
+539
+01:12:36,208 --> 01:12:44,487
+File deyip, Export mu diyorduk? Export desek. Export workspace.
+
+540
+01:12:47,444 --> 01:12:49,444
+Export edeyim.
+
+541
+01:12:49,444 --> 01:12:57,444
+Yani burada filtre tasarladım. Bu filtrenin kat sayılarını Workspace'e export ettim. Şurada bulunuyor artık.
+
+542
+01:12:59,444 --> 01:13:06,444
+Dolayısıyla ben burada şey yapacağım. Demo 4 var mıydı acaba? Bakıyorum. Ha varmış şuralar.
+
+543
+01:13:07,444 --> 01:13:09,036
+Sesi burada aldım.
+
+544
+01:13:13,587 --> 01:13:25,987
+Sese bir gürültü ekledim. Sonra konvolüsyon yaptığım şeyi benim oradan export ettiğim, uygulama içerisinden oluşturduğum, dizayn ettiğim haşla konvolüsyonu sokacağım.
+
+545
+01:13:31,828 --> 01:13:34,148
+şeklinde bir çıkış alabilirim.
+
+546
+01:13:34,708 --> 01:13:38,868
+Ha, diyebilirsiniz ya hocam iyi çıkmadı yine aynı sorun var.
+
+547
+01:13:39,108 --> 01:13:41,908
+O zaman şeyi çözümleyemediniz.
+
+548
+01:13:42,788 --> 01:13:45,988
+Veriyi güzel bir şekilde çözümleyemediğiniz anlamına gelir.
+
+549
+01:13:45,988 --> 01:13:50,228
+Demek ki buraya koyduğun 3000, 3100 değil de başka bir şey seçmen lazım.
+
+550
+01:13:50,788 --> 01:13:54,148
+2000 mesela, 2100 seçmen gerekebilir belki.
+
+551
+01:13:54,788 --> 01:13:55,988
+Hemen bunu deneyelim.
+
+552
+01:13:58,707 --> 01:14:00,387
+Export filtre diyelim.
+
+553
+01:14:03,796 --> 01:14:07,796
+Overwrite diyelim, üstüne yazsın. Tekrar aynı şeyi yapalım.
+
+554
+01:14:12,020 --> 01:14:13,020
+Tamam iyi.
+
+555
+01:14:19,667 --> 01:14:21,387
+Bir geri dönüş alamadım.
+
+556
+01:14:27,891 --> 01:14:29,891
+Daha iyi gibi geldi de bu zaman.
+
+557
+01:14:29,891 --> 01:14:30,891
+Tamam.
+
+558
+01:14:32,891 --> 01:14:35,891
+Yani işin filtre kısmı bu şekilde.
+
+559
+01:14:35,891 --> 01:14:41,891
+Daha da ileri konular dediğim gibi sayısal işaret işleme içerisinde anlatılacak.
+
+560
+01:14:41,891 --> 01:14:45,891
+Şu an sessiz işleme ile ilgili bir uygulama yapmış olduk.
+
+561
+01:14:50,891 --> 01:14:52,891
+Başka ne yapacağız bakalım.
+
+562
+01:14:54,579 --> 01:15:08,579
+Tamam, bir de görüntüyle ilgili bir sonraki aradan sonra devam edeceğiz. Çok uzun olmayacak o da zaten. İstiyorsanız bir 10 dakika ara verelim, ondan sonra yine devam edebiliriz.
+
+563
+01:15:10,579 --> 01:15:16,579
+Hocam, ben şey soruyorum, bu sayısal işaret işleme dersinde görüntü işleme mi daha ağırlıklı yoksa ses işleme?
+
+564
+01:15:16,979 --> 01:15:23,459
+Ses işleme daha ağırlıklı gidiyor. Çünkü görüntü işleme dersinin konularından çalmak istemiyoruz.
+
+565
+01:15:24,819 --> 01:15:28,659
+İki ayrı ders olduğu için çakışma oluyor ders içerikleri konusunda.
+
+566
+01:15:29,779 --> 01:15:38,100
+Ama ara ara yer buldukça videoda anlattığımız oluyor, görüntüde anlattığımız oluyor.
+
+567
+01:15:39,219 --> 01:15:40,340
+Düşünebilirsiniz.
+
+568
+01:15:43,380 --> 01:15:47,979
+Saat 3'e 10 kala tekrar bu platformdan görüşürüz.
+
+569
+01:27:01,939 --> 01:27:20,299
+Evet, tekrar merhabalar. Dersin ikinci kısmında görüntü işleme ile ilgili bazı temel bilgiler ve bunun aslında bizim sinyal işleme dersi ile ne kadar bağlantılı ve ilgili olduğunu gösterecek bazı örnekler vereceğiz.
+
+570
+01:27:21,299 --> 01:27:29,039
+İlk etapta bir görüntü yükleyerek Metap'ta başlayalım. Bütün ekranı paylaşıyorum.
+
+571
+01:27:30,996 --> 01:27:38,315
+MATLAB kısmına, evet başladım. Tamam. Şunu da şöyle aşağıya, yok çekemiyorum, okey.
+
+572
+01:27:39,755 --> 01:27:48,996
+Eğer MATLAB'da veya farklı programlama dillerinde de fark etmez, Python'da da ilgili kütüphane yüklerseniz,
+
+573
+01:27:48,996 --> 01:27:54,996
+IMRI türevi bir tek satırlık bir kodla görüntüyü U değişkenine atayabilirsiniz.
+
+574
+01:27:55,380 --> 01:28:22,380
+Burada şunu, sadece bunu yapıp çalıştırırsanız, sağ taraftaki workspace'den boyutunu, çözünürlüğünü, görüntünün çözünürlüğünü ve her pixel için kaç bit ayırdığını görebilirsiniz. Mesela uint 8. Yani unsigned integer, sıfırdan küçük olamayacak. Integer değerleri bulunuyormuş, 8 bitlikmiş. Yani sıfır ile 255 arasında değişiyor. İstiyorsan,
+
+575
+01:28:22,528 --> 01:28:45,528
+İnanmıyorsan içine bak diyor. Bakıyorum. En sol üst köşedeki pikselin değeri 156 imiş. Bir altında 160 imiş falan filan filan. Gidiyor. Sonuçta bir matriz oluştu bizim gözümüzün önünde. Şimdi imshow dediğimde aslında görüntüyü anlama ve anlamlandırma kısmının...
+
+576
+01:28:46,131 --> 01:28:53,811
+Ortaya çıkacak. Mim Show bu görüntüyü gösterecek kendi parçayı, penceresi içerisinde. Göstersin, gösterdim.
+
+577
+01:28:54,331 --> 01:28:59,691
+Kameraman noktası TIF dediği şey, hakikaten kameraman görüntüsünü içeriyormuş.
+
+578
+01:29:01,231 --> 01:29:13,771
+Ben buna yakınlaşıp mesela ilk, en üst köşedeki pikselini görmeye çalışsam, görebilir miyim? Gidiyorum, tıklıyorum, tıklıyorum, tıklıyorum. Bakın piksel piksel olmaya başladı.
+
+579
+01:29:14,131 --> 01:29:29,072
+Tıklıyorum, tıklıyorum, tıklıyorum, tıklıyorum, tıklıyorum, çok tıkladım. Şöyle yapalım. Herhalde en sol üst köşesi şurası. Yok, 1'e 4'müş bu. Daha bile aşağıya gitmişiz.
+
+580
+01:29:31,011 --> 01:29:40,072
+Bakın bunlar hep gri tonlarını gösteriyor. 157, 154 biraz daha koyu olan. Daha koyu olan var, 153.
+
+581
+01:29:41,076 --> 01:30:04,836
+Neymiş? Demek ki siyaha doğru gittikçe ton değeri düşüyormuş. Beyaza doğru gittikçe de ton değeri artıyormuş. Bunu zaten derste söylemiştik ama şöyle en genel durumda kameramanın üstündeki montun siyah olmasından üstüne tıklayıp seçtiğim pikselin değerini görüyorum. 15 değerine sahipmiş. Hangisi?
+
+582
+01:30:05,043 --> 01:30:10,283
+İşte X'e Y koordinatı 76'ya 96 olan piksel.
+
+583
+01:30:10,923 --> 01:30:16,283
+Bir yanındaki piksel 13'müş, bir yanındaki piksel 12.
+
+584
+01:30:16,724 --> 01:30:21,003
+Neymiş demek ki siyah tonları genelde düşük olma eğiliminde.
+
+585
+01:30:21,003 --> 01:30:23,644
+12, 12, 12, 13, 14, gidiyor.
+
+586
+01:30:23,644 --> 01:30:26,523
+Buraya bakabilirsiniz, sağa doğru kayduruyorum.
+
+587
+01:30:26,707 --> 01:30:35,007
+Geçmiyor. Bir an için şöyle dışarı doğru çıkmaya çalışayım. Kameranın kolundan dışarı çıkıyorum. Ne olmasını bekliyorum. Ne dersiniz?
+
+588
+01:30:42,323 --> 01:30:43,804
+Hiç ses gelmedi.
+
+589
+01:30:44,603 --> 01:30:49,963
+Yani hocam bu RGB değerleri değişecek. 255, 255, 255'e yaklaşacak.
+
+590
+01:30:50,363 --> 01:30:57,163
+Bu RGB değil gri tonlu bir görüntü. O yüzden şu RGB kısmına dikkat etmeyin lütfen. Şurasını çizin üstünde.
+
+591
+01:30:58,043 --> 01:31:02,203
+Index dediği değer ne olacak bakıyorum.
+
+592
+01:31:02,403 --> 01:31:03,523
+255 artı.
+
+593
+01:31:03,523 --> 01:31:05,363
+8 oldu, 180 oldu.
+
+594
+01:31:05,939 --> 01:31:11,619
+Bakın gri tonlu bölgede de çok değişim yok. 160-180 aralığında geziniyor olabilir.
+
+595
+01:31:13,139 --> 01:31:17,059
+Çok parlak bir yer görüldünüz mü bu görüntüde? Bir de oraya bakalım.
+
+596
+01:31:18,299 --> 01:31:29,099
+Mesela şurası olabilir mi? Bakın 230. 255'e yakın. Burada herhalde genel anlamda şeyi görmüşsünüzdür. Bir görüntünün.
+
+597
+01:31:29,203 --> 01:31:38,203
+Nasıl değerler alabileceği ile ilgili bilgi sahibi olmuşsunuzdur. Siz görüntü işleme daha önce almadığınız için biraz daha temelden göstermek istedim.
+
+598
+01:31:38,203 --> 01:31:46,203
+Sorunuz varsa çekinmeyi sorun. Sonuçta bilmediğiniz için bir sorun olmazdı benim adıma.
+
+599
+01:31:46,203 --> 01:31:53,131
+Evet, böyle bir görüntü var. Şimdi bu görüntüde bir filtreleme yapacağım.
+
+600
+01:31:53,268 --> 01:32:09,268
+Şimdi ilk kıyaslayacağım şey ses sinyali ile görüntü sinyalini kıyaslıyorum. Ses sinyalinde değerler zamana göre ya da örneğe göre değişirken burada neye göre değişiyor acaba? Sorun bu.
+
+601
+01:32:16,979 --> 01:32:19,899
+Ses sinyalinde tek boyutlu bir sinyal olduğu için
+
+602
+01:32:20,340 --> 01:32:26,340
+Altı eksen zaman oluyordu ve zamana göre ses sonuçta değerleri değişebiliyordu. Burada neye göre değişiyor?
+
+603
+01:32:30,931 --> 01:32:32,587
+[öğrenci], varmı?
+
+604
+01:32:36,884 --> 01:32:38,884
+Ben fotoğrafa göre değişmiyor mu hocam?
+
+605
+01:32:40,484 --> 01:32:46,244
+Fotoğrafa göre değil de aynı fotoğraf içerisinde konuma göre değişiyor şeklinde bir cevap bekledim.
+
+606
+01:32:46,884 --> 01:32:51,523
+Buradaki konum iki eksenli. Yani bu iki boyutlu bir sinyal aslında.
+
+607
+01:32:52,203 --> 01:32:56,324
+Neden? Fonksiyonumuz sadece sağ tarafa doğru giderek değişmiyor.
+
+608
+01:32:56,923 --> 01:33:00,043
+Böyle de değişiyor. Aşağı doğru indiğinde de değişiyor.
+
+609
+01:33:00,963 --> 01:33:04,324
+Dolayısıyla görüntü dediğim şey aslında iki boyutlu bir sinyali oluşturuyor.
+
+610
+01:33:05,524 --> 01:33:13,204
+İkisi arasındaki temel fark bu. Birisi tek boyutlu bir şeyse, şeyken bu iki boyutlu bilgiyi kastediyor.
+
+611
+01:33:13,204 --> 01:33:22,764
+Peki ortalama alırken, acaba nasıl kullanılacak bu iki boyutlu bilgi? Normalde ortalama alırken, atıyorum şu noktanın ortalamasını almak için şöyle yapıyorduk.
+
+612
+01:33:22,764 --> 01:33:31,524
+Bunu, bunu, bunu, yan yana olan beş tanesini alıp, ortalama hesaplıyorduk. Beş noktalı için.
+
+613
+01:33:31,956 --> 01:33:33,956
+Burada nasıl hesaplamamız gerekiyor?
+
+614
+01:33:33,956 --> 01:33:38,956
+Burada 3'e 3'lük 3'lük 3'lük 3'lük şeklinde yapabiliyoruz.
+
+615
+01:33:40,956 --> 01:33:42,956
+Çok doğru, birebir söylediğiniz gibi.
+
+616
+01:33:43,956 --> 01:33:48,956
+Bakın, aslında bir öncekiyle çok benzer olduğunu düşünebilirsiniz.
+
+617
+01:33:48,956 --> 01:33:55,956
+Bir önceki H filtremiz tek boyutluydu. Seste uyguladığımız neydi? 1 bölü 3, 1 bölü 3, 1 bölü 3'tü.
+
+618
+01:33:55,956 --> 01:33:56,956
+Burada ise...
+
+619
+01:33:57,652 --> 01:34:05,051
+3 pencere boyutu istiyorsan, 3 genişlik, 3 yükseklik olacak. Dolayısıyla 3x3'ten 9 tane piksel olması gerekiyor.
+
+620
+01:34:05,051 --> 01:34:18,652
+9 değerini ortalamasını alıp 9'a bölmesi gerektiği için, sizin filtreniz artık şu oldu. Bakın ortalama alacağınız filtre, 1x9x1111111 oldu ya da
+
+621
+01:34:18,996 --> 01:34:25,595
+İçinde tamamı 1 bölü 9 olan 3x3'lük bir matris haline geldi.
+
+622
+01:34:25,595 --> 01:34:31,796
+Şimdi bunu nasıl uyguluyoruz? Bakın aşağıda konvolüsyon şeyini görebilirsiniz, matanışsal eşitliğini.
+
+623
+01:34:31,796 --> 01:34:42,996
+Buradaki durumlar biraz değişti. Sebebi, iki boyutlu olmasından dolayı toplam sembolünün hem
+
+624
+01:34:44,115 --> 01:34:47,115
+Şurada gitsin alt taraftaki diye bekliyorum.
+
+625
+01:34:48,115 --> 01:34:55,115
+Hem toplamın K hem de L üzerinden aslında iki tane iç içe sigma var toplam var ama onu şu anda dikkate almıyorum.
+
+626
+01:34:55,115 --> 01:35:05,115
+Neyse biz bu formülü de çok dikkate almayalım. Madem şu anda bir laboratuvar dersi gibi pratik ders işliyoruz, bu nasıl hesaplanır? Bunu anlamaya çalışalım.
+
+627
+01:35:05,115 --> 01:35:09,115
+Yapacağın şey şu, görüntüm bu mu? Evet bu.
+
+628
+01:35:10,131 --> 01:35:19,131
+Filtren ne bu? Tamam, bu filtreyi götür, en sol üst köşeye yerleştir, üstüne ve karşılıklı gelen elemanlarını çarpıp topla.
+
+629
+01:35:19,131 --> 01:35:30,131
+Konvolüsyon bunu yapıyordu ya. Şu anda bu kezde elde edeceğin değer, aslında şu kaydırdığın pencerenin orta değerini bulmuş oluyorsun.
+
+630
+01:35:30,131 --> 01:35:32,971
+Bakın, tam da buraya yazılacak.
+
+631
+01:35:33,171 --> 01:35:38,171
+Peki bunun ortalaması ne olur? Şuradaki kırmızı bölgenin ortalaması?
+
+632
+01:35:38,171 --> 01:35:40,671
+Sıfır.
+
+633
+01:35:41,371 --> 01:35:44,171
+Bu bölgenin ortalaması 10 çıkmış, doğru mu?
+
+634
+01:35:44,171 --> 01:35:46,171
+Doğru.
+
+635
+01:35:46,171 --> 01:35:51,671
+Neden bakıyorum? 0 artı 0 artı 0 artı 0 artı 0 hepsini topladım 90.
+
+636
+01:35:51,671 --> 01:35:56,171
+O yüzden 90 değeri ne? Kaç tane elemanı var? 9. 9'a böldüğümde 10 çıkacak.
+
+637
+01:35:56,171 --> 01:35:58,091
+Ha kolaymış.
+
+638
+01:35:58,260 --> 01:36:21,460
+Kaydırayım, 180 çıktı, 180'i 9'a böleyim, 20. Kaydırayım, 270 çıktı, 9'a böldüm, 30 gibi. Bunu kaydırıyorsunuz. Bakın, kaydırdınız. Sonra ne yapacaksınız? Aynı işi bittikten sonra bu kez bir alt satıra gelip, yani şurada benim çizme imkanım olur mu?
+
+639
+01:36:24,051 --> 01:36:27,051
+Şurada bir çizme imkanı olur mu acaba?
+
+640
+01:36:31,028 --> 01:36:32,307
+Şöyle diyelim.
+
+641
+01:36:34,608 --> 01:36:35,127
+Yok.
+
+642
+01:36:37,168 --> 01:36:41,268
+Mümza şeyleri falan var. Yok. Bunlar da olmuyor.
+
+643
+01:36:42,028 --> 01:36:45,627
+Neyse, şöyle kalemle göstermeye çalışayım.
+
+644
+01:36:47,927 --> 01:36:49,208
+Şu üçlü,
+
+645
+01:36:49,708 --> 01:36:52,528
+bu üçlü ve bu üçlü ile başlayacaksınız.
+
+646
+01:36:52,788 --> 01:36:55,087
+Yani şu kırmızıyı ilk
+
+647
+01:36:55,608 --> 01:36:56,627
+kademeden
+
+648
+01:36:56,671 --> 01:37:18,271
+Buradan bir alt satıra kaydırarak devam edeceksiniz. Önce bu satır bitti. Satır bittikten sonra bir alta gittiniz yaptınız, tüm görüntüyü böyle tarıyorsunuz. Böylelikle gidip onun merkez konumunu, onun ortalamasını yazıyorsunuz. Bakın yazdınız. Sonuç elde ettiğiniz sonuç böyle oldu. Ortalama filtresi uygulamış olduğunuz dolayı size.
+
+649
+01:37:20,671 --> 01:37:24,271
+Bunu MATLAB'da yapmak için ne yapmanız lazım?
+
+650
+01:37:25,011 --> 01:37:36,692
+Conv2 komutunu kullanmanız lazım. Bakın birlikte yazalım görelim. Şimdi normalde tek boyutlu bir konvolüsyon olsa o zaman şunu yazacaktım Conv diyecektim.
+
+651
+01:37:36,692 --> 01:37:51,115
+Burada ise iki boyutlu bir konvolüsyon yapmam gerekiyor. Ne yapacağım? I görüntüsüyle işte H denilen bir filtreyi konvolüsyona sokacağım ve sonucunda işte sonuç denilen bir şey elde edeceğiz. Sonuç.
+
+652
+01:37:52,115 --> 01:38:01,475
+Bu kadar basit aslında yapacağın şey. Başı tanımlaman lazım tabii ki. Başı tanımlayayım. Şimdi 1 bölü 9 olacak.
+
+653
+01:38:02,835 --> 01:38:07,475
+Daha iyi anlayabilmeniz için hepsini 1 bölü 9, 1 bölü 9 yapayım.
+
+654
+01:38:09,395 --> 01:38:12,915
+Şöyle diyeyim. Bu bir matriz.
+
+655
+01:38:19,699 --> 01:38:36,559
+Şöyle sadece bu kısmı çalıştırayım, bir görün haşı. Bakın. 3'e 3'lük ve değerleri 1 bölü 9 olan tamamı bir matris oluşturmuş oldu. Bunun dürtü yanıtı, ortalama filtresinin dürtü yanıtını koyacağız.
+
+656
+01:38:37,639 --> 01:38:46,459
+Bu görüntüsünü konvolüsyona sokacağız ama burada kilit şey şu, çoğunlukla yapılan hata, bu unsigned integer ya.
+
+657
+01:38:46,836 --> 01:38:54,436
+Çoğunlukla buraya Unsigned Integer şeklinde giriyor ve konvolüsyon komutu içerisinde Unsigned şekilde çalışıyor.
+
+658
+01:38:54,436 --> 01:39:03,436
+Bunu en başta bir Double'a çevirip, böyle işleme almak gerekiyor, icap ediyor gibi düşünebilirsiniz.
+
+659
+01:39:06,235 --> 01:39:11,628
+Ya da istiyorsanız bunu buraya koymayın. Görüntüyü daha yüklerken Double'a çevirin.
+
+660
+01:39:14,036 --> 01:39:16,475
+Sonra zaten kullanacaksınız o görüntüyü.
+
+661
+01:39:18,036 --> 01:39:22,475
+Bunu yaptık. Şunu bir figürde bastıralım. Önceki görüntü.
+
+662
+01:39:22,475 --> 01:39:29,395
+Filtrelenmiş görüntüyü de sonra da şurada sonuç ismiyle bastıralım.
+
+663
+01:39:29,395 --> 01:39:36,876
+Sizce görüntü nasıl olur? Görüntüde nasıl bir etki oluşur? Bunu uygularsam?
+
+664
+01:39:40,564 --> 01:39:44,224
+Geçişler yumuşar.
+
+665
+01:39:45,524 --> 01:39:47,224
+Düşüneyim mi istiyorsanız.
+
+666
+01:39:48,104 --> 01:39:49,104
+Şurada.
+
+667
+01:39:51,104 --> 01:39:54,284
+Ya da düşünmeme gerek yok, şurada düşünebilirim.
+
+668
+01:39:56,264 --> 01:39:59,564
+Bakın normalde şu noktanın değeri neydi? Sıfırdı.
+
+669
+01:39:59,804 --> 01:40:02,684
+Ama burada elde ettiğim şey ne oldu? 30 oldu.
+
+670
+01:40:03,724 --> 01:40:06,404
+Geçişleri yumuşattığını buradan görebiliyorum.
+
+671
+01:40:06,836 --> 01:40:12,836
+Peki homojen bölgelerde nasıl çalışacak? Mesela şöyle 3'e 3'lük bunun üstünde olursa ne olur?
+
+672
+01:40:18,612 --> 01:40:22,612
+Şu çizdiğim çerçeve içerisinde bir konvolüsyon olur.
+
+673
+01:40:22,612 --> 01:40:23,612
+Değeri aynı kalır.
+
+674
+01:40:23,612 --> 01:40:26,612
+Aynı kalır. Dolayısıyla homojeni etkilemiyor aslında.
+
+675
+01:40:28,612 --> 01:40:32,612
+En baştaki gibi tamamı sıfır. Elde ettiğim değer sıfır.
+
+676
+01:40:34,612 --> 01:40:38,612
+Kenar geçişlerini yumuşatacak. Ben buradan bunu anlıyorum.
+
+677
+01:40:38,612 --> 01:40:40,612
+Çalıştıralım, bir görelim.
+
+678
+01:40:45,363 --> 01:40:46,363
+Oldu mu?
+
+679
+01:40:58,515 --> 01:40:59,715
+Ne dersiniz?
+
+680
+01:41:00,515 --> 01:41:02,515
+Oldu hocam bence.
+
+681
+01:41:02,915 --> 01:41:05,915
+Evet, yani bizim beklediğimiz gibi çalıştı aslında.
+
+682
+01:41:05,915 --> 01:41:07,915
+Homojen bölge hala homojen.
+
+683
+01:41:08,715 --> 01:41:17,915
+Ama kenar bölgelerinde, şurada mesela bir bakacak olursak, gelmiş gelmiş gelmiş, 180'den bir anda onlara düşüyor.
+
+684
+01:41:17,915 --> 01:41:20,515
+Burada ise kademeli düşüyor, olacak.
+
+685
+01:41:21,515 --> 01:41:23,515
+180...
+
+686
+01:41:23,988 --> 01:41:30,988
+Bakın 150, 150, 20, 16 gibi kademeli bir şekilde düşüyor değer.
+
+687
+01:41:30,988 --> 01:41:34,988
+Kenarları dolayısıyla göremiyoruz, bulanık bir hale gelmiş oluyor.
+
+688
+01:41:35,988 --> 01:41:42,636
+Bu televizyonda canlandırma diye koyup hani bulanıklaştırıyorlar ya kişilerin yüzlerini vesaire.
+
+689
+01:41:42,899 --> 01:42:02,159
+Bunu da incili bir bölge içerisinde yapabilirsin. Tam görüntüye tamamına değil, yapmak yerine, atıyorum kameranın yüzünü, kameraman kişisinin yüzünü bulanıklaştırmak istiyorsan, sadece şu aralıkta bir konvolüsyon çakarsın. Dolayısıyla yüzü bulanıklaşmış olur. Peki daha da bulanık hale getirmek istiyorsan ne yapmam lazım?
+
+690
+01:42:06,003 --> 01:42:18,323
+Nasıl bir filtre seçmem lazım? Maddesi büyütmem lazım. Evet. Yani şurada, aslında normalde bunun kısa yazım hali şuydu, bir once 3'e 3'tü.
+
+691
+01:42:19,804 --> 01:42:29,484
+Biz burada bunu parametrik yapabiliriz. Şurası k3 diyelim. Şuna k'ya k diyelim. Bu da k kare gibi oluyor.
+
+692
+01:42:31,804 --> 01:42:33,283
+Parametrik yaptık.
+
+693
+01:42:33,587 --> 01:42:35,587
+Aynı sonucu verecek.
+
+694
+01:42:35,587 --> 01:42:37,587
+Aynı sonucu.
+
+695
+01:42:37,587 --> 01:42:39,587
+Daha iyi arttırırsam burada,
+
+696
+01:42:39,587 --> 01:42:44,555
+diyelim ki 21 yaparsam, bakalım bulanıklık nasıl değişecek.
+
+697
+01:42:48,435 --> 01:42:55,035
+Demek ki bu gerçekten bulanıklığı etkileyen bir faktörmüş. Ortalamayı daha fazla örnek üzerinden aldığım için
+
+698
+01:42:56,035 --> 01:43:00,035
+Sadece kişinin silüeti kalmış oldu şu anda elimde.
+
+699
+01:43:01,435 --> 01:43:11,435
+Gibi düşünebilirsiniz. Bakın, aslında ses işleme ile çok benzer paralel gittiğini görebiliyorsunuz. Haç filtresinin tanımından.
+
+700
+01:43:12,635 --> 01:43:14,835
+Peki, şöyle bir şey de söylemiştik.
+
+701
+01:43:17,011 --> 01:43:19,011
+Bir işarete.
+
+702
+01:43:21,612 --> 01:43:25,452
+Öyle bir sisteme sokarım ki, kendi istediğim sonucu alabilirim.
+
+703
+01:43:25,971 --> 01:43:30,572
+Yani XT sinyalim benim artık burada bir I görüntüsü haline geldi.
+
+704
+01:43:30,832 --> 01:43:34,931
+YT sinyali benim sonuç dediğim bilgi haline geldi.
+
+705
+01:43:35,192 --> 01:43:38,511
+Burada sistemin davranışını hala H ile özetliyorum.
+
+706
+01:43:38,612 --> 01:43:52,231
+H'ı dedim ki işte 1 bölü 9, 1 bölü 9 şeklinde seçip bir şey yapabilirim. Peki H'ı şöyle seçsem, başka bir amaca mı gitmiş olur mu?
+
+707
+01:43:52,231 --> 01:44:06,231
+Eksi 1, eksi 2, eksi 1, sıfır sıfır sıfır, yine 3'e üçlük bakın. 1, 2, 1. Sizce bu filtre çekirdeği şu ortalama alıyor. Şu an artık biliyoruz. Bu ne yapar?
+
+708
+01:44:09,939 --> 01:44:11,939
+Hocam bu Gauss filtresi miydi?
+
+709
+01:44:13,939 --> 01:44:15,939
+Yok, öyle bir şey değil.
+
+710
+01:44:15,939 --> 01:44:18,939
+Dikey geçişleri belginleştiriyordu galiba, öyle bir şey miydi yani?
+
+711
+01:44:18,939 --> 01:44:20,939
+Bir yerde mi görmüştünüz?
+
+712
+01:44:20,939 --> 01:44:21,939
+Evet.
+
+713
+01:44:22,939 --> 01:44:23,939
+Nerede gördünüz?
+
+714
+01:44:24,939 --> 01:44:26,939
+Ahmet Hoca bir yer anlatmıştı sanki.
+
+715
+01:44:26,939 --> 01:44:28,844
+Ha tamam, okey.
+
+716
+01:44:28,948 --> 01:44:37,948
+O zaman şey yapalım, bir bakalım. Şöyle bir görüntü olsun elimizde. Homojen bölge ve kenar bölgesini simüle etmeye çalışıyorum. Tamam mı?
+
+717
+01:44:37,948 --> 01:44:43,948
+Homojen bölge olsa ne olur? Bunların hepsinin değeri 200 olur. Diyelim ki.
+
+718
+01:44:45,948 --> 01:44:50,948
+Bir an için nasıl çalışır anlamaya çalışıyorum. 200, 200, okey.
+
+719
+01:44:50,948 --> 01:44:55,500
+Şimdi bu I görüntü parçası ile, bir kenarıyla, H'ı
+
+720
+01:44:56,564 --> 01:45:00,104
+Eleman elemanı çarpıp toplasak, ne gelir?
+
+721
+01:45:06,387 --> 01:45:09,387
+Nasıl yapacağız? Hemen göstereyim.
+
+722
+01:45:12,487 --> 01:45:15,607
+Eksi 1 ile 200'ü çarpacağız.
+
+723
+01:45:16,827 --> 01:45:19,768
+Eksi 2 ile 200'ü çarpacağız.
+
+724
+01:45:21,067 --> 01:45:25,487
+Yani onun karşılığına denk gelen değeri çarpacağız. Eksi 1 ile 200'ü çarpacağız.
+
+725
+01:45:26,587 --> 01:45:30,768
+O zaman ben şöyle söylüyorum. Eşittir o sonucu. Eksi 1 çarpı 200.
+
+726
+01:45:31,768 --> 01:45:32,447
+Artı
+
+727
+01:45:32,815 --> 01:45:38,536
+x2x200 artı x1x200
+
+728
+01:45:39,735 --> 01:45:44,855
+Orta x200 ile 0'ın çarpımı 0
+
+729
+01:45:45,095 --> 01:45:49,975
+0 ile 200'ün çarpımı 0 ile 200'ün... Yani orta kısımdan hiçbir şey gelmiyor. Okey.
+
+730
+01:45:50,475 --> 01:45:59,695
+Alt kısımda da 1x200 artı 2x200 artı 1x200
+
+731
+01:45:59,855 --> 01:46:00,935
+Ne çıkıyor sonuç?
+
+732
+01:46:05,043 --> 01:46:08,043
+Sıfır.
+
+733
+01:46:11,043 --> 01:46:15,043
+Yani homojen bir bölge ise değeri sıfır çıkacakmış.
+
+734
+01:46:16,043 --> 01:46:20,043
+Peki bir kenar bölgesiyse nasıl değer çıkarır acaba?
+
+735
+01:46:21,043 --> 01:46:23,043
+Bir an için onu anlamaya çalışacağım.
+
+736
+01:46:23,043 --> 01:46:25,043
+Kenar bölgesi olması nasıl oluyordu?
+
+737
+01:46:25,043 --> 01:46:27,043
+Değerler aniden düşüyordu.
+
+738
+01:46:27,043 --> 01:46:29,043
+Mesela 100, 100, 100, 100, 100.
+
+739
+01:46:30,676 --> 01:46:42,975
+Bunlar gri tonlarına sahip. Şurada bir anda sıfıra düşüyor. Yani siyah tonuna düşüyor. Bununla bunu karşılıklı elemanlarını çarparsak sonuçunu elde ederiz.
+
+740
+01:46:48,595 --> 01:46:49,915
+Şöyle yapacak olan
+
+741
+01:46:53,587 --> 01:46:55,988
+400 bölü 9 ama eksi negatif.
+
+742
+01:46:56,547 --> 01:47:02,707
+Eksi 1 ile 100'ü çarpacağız. Eksi 2 ile 100'ü çarpacağız. Eksi 1 ile 100'ü çarpacağız.
+
+743
+01:47:02,988 --> 01:47:08,367
+Genel olarak genliğine bakacak olursak, bu 400 oluyor, eksi 400 oluyor ama genliği 400.
+
+744
+01:47:08,507 --> 01:47:12,068
+Yani yüksek bir değer elde etmiş oluyorsa. Ne oluyormuş demek ki?
+
+745
+01:47:13,068 --> 01:47:19,768
+Bu filtre tipi de aslında kenarları bulmamı sağlıyor.
+
+746
+01:47:20,180 --> 01:47:26,180
+Ya da kenarları ön plana çıkarıyor. Bakın kenar olan bölgesinin tonunu yükseltiyor.
+
+747
+01:47:28,180 --> 01:47:31,180
+Kenar olmayan düz bölgenin ise düşürüyor.
+
+748
+01:47:31,180 --> 01:47:36,680
+Peki, şimdi bu kadar konuştuktan sonra, bunun uygulamasını da yapalım.
+
+749
+01:47:38,180 --> 01:47:42,180
+Ondan sonra size bir soru sorup şey yapacağım.
+
+750
+01:47:44,180 --> 01:47:46,892
+Yapmam gereken şey, burada K
+
+751
+01:47:47,028 --> 01:47:49,028
+Artık bu değil de şöyle olacak.
+
+752
+01:47:49,028 --> 01:47:57,028
+Yazıyorum, eksi 1, eksi 2, eksi 1, sıfır sıfır sıfır, sıfır, bir, iki, bir.
+
+753
+01:48:02,068 --> 01:48:06,868
+Şimdi eksiler artılar karıştırmasın diyorsam ben bunu mutlak değeri içerisine alabilirim.
+
+754
+01:48:06,868 --> 01:48:11,068
+Öyle gösterebilirim sonucu. En güzel şekilde öyle gözüküyor.
+
+755
+01:48:14,739 --> 01:48:17,739
+Bakın, çalıştı mı? Ne yaptı? Neyi buldu?
+
+756
+01:48:26,260 --> 01:48:27,260
+Ne dersiniz?
+
+757
+01:48:34,547 --> 01:48:35,567
+Kenarları bulduk.
+
+758
+01:48:36,587 --> 01:48:39,407
+Şimdi bu görüntü de çok belli olmuyor ama
+
+759
+01:48:41,207 --> 01:48:44,267
+Bir tane görüntü vardı, şu
+
+760
+01:48:49,363 --> 01:48:57,804
+Bu görüntüde plaka görüntüsü bu. Bakın plaka görüntüsünün orijinalini açayım ben size. Bu standart plakalar var.
+
+761
+01:48:58,583 --> 01:49:01,144
+Bunun kenarlarına bakalım.
+
+762
+01:49:04,307 --> 01:49:06,307
+Bakın bu şekilde bir kenar buluyor.
+
+763
+01:49:07,667 --> 01:49:09,307
+Peki, bu adam
+
+764
+01:49:10,307 --> 01:49:12,307
+Dikey kenarlarımı buluyor, yatay kenarlarımı.
+
+765
+01:49:17,747 --> 01:49:29,187
+Yatay kenarları daha iyi bulmuyor mu? Evet, yatay kenarları buluyor. Peki bunun dikeyini bulmak istesem ne yaparım? Aynı mantıkla.
+
+766
+01:49:37,076 --> 01:49:41,556
+Bakın burada yatay kenarı olduğunu aşağı yukarı görebiliyorsunuz. Neden?
+
+767
+01:49:42,275 --> 01:49:47,556
+Çünkü burada gri tonları varken alt satırda sıfırlar, siyahlar var.
+
+768
+01:49:48,516 --> 01:49:53,476
+Ben bunun yatay kenarını bulmak istiyorsam da o zaman filtremi değiştireceğim. Nasıl yapacağım filtremi?
+
+769
+01:49:53,476 --> 01:49:55,796
+Bu kez Dickeydekilere yazacağım bunu.
+
+770
+01:49:57,076 --> 01:49:58,435
+0 0 0
+
+771
+01:49:58,996 --> 01:50:00,000
+Ve diğer son...
+
+772
+01:50:00,000 --> 01:50:14,680
+Bunun dikey elemanını 0, 2, 1, 1, 2, 1 yazıyor. Ne yapıyor aslında? Bu sol taraftaki değerle sağ tarafın farkını almış oluyor. Bu sayede şeyi ön plana çıkarıyor. Transpozunu alsak da yine aynı şeyi bulacağız bu arada.
+
+773
+01:50:14,680 --> 01:50:26,440
+Yani şöyle diyebilirsiniz, bunun transposunu, H'ın transposu dersek, şuraya yazdım transposu. Ya da H2 diyelim, fark etmez.
+
+774
+01:50:26,612 --> 01:50:28,612
+Kafanız karışmasın.
+
+775
+01:50:29,932 --> 01:50:31,992
+H2D'ye yeni bir filtre koydum.
+
+776
+01:50:32,492 --> 01:50:36,332
+Bunu şöyle yazacağım, 1-0 değil, 1-0-0.
+
+777
+01:50:36,332 --> 01:50:38,332
+Nasıl yazacağım?
+
+778
+01:50:38,332 --> 01:50:41,332
+Eksi 1, 0-1.
+
+779
+01:50:45,076 --> 01:50:48,395
+eksi 2, 0, 2
+
+780
+01:50:50,956 --> 01:50:53,516
+eksi 1, 0, 1 şeklinde
+
+781
+01:50:58,323 --> 01:51:05,083
+Yazacağım. Buna H2 ile konvolüsyon sokarsam, bu kez elde ettiğim şey, bakın dikey kenarları oldu.
+
+782
+01:51:06,123 --> 01:51:14,323
+Peki, ben bir plaka tespiti yapmak istiyorum. Benim için yatay kenar, düşer kenar değil, hepsi önemli. O zaman ne yapmam lazım?
+
+783
+01:51:24,020 --> 01:51:26,020
+Takip edebiliyor musunuz bilmiyorum.
+
+784
+01:51:27,020 --> 01:51:28,020
+Takip ediyoruz hocam.
+
+785
+01:51:31,020 --> 01:51:33,020
+Çok temel şunu yapabilirim.
+
+786
+01:51:34,020 --> 01:51:39,020
+Önce biriyle dike kenarları bulurum, sonra diğeriyle yatağı kenarları bulurum. Bunları toplarım.
+
+787
+01:51:41,020 --> 01:51:43,020
+Yani linear bir sistem gibi düşünüp bunları.
+
+788
+01:51:44,020 --> 01:51:49,020
+Yapacağım şey şu olacak. Bakın ilk işlemin sonucunu H filtresiyle yapacağım.
+
+789
+01:51:49,631 --> 01:52:12,872
+İşlem sonucu diye alacağım bunu. İkinci filtre de bunu kullanacağım H2'yi. İşlem sonucu 2. Sonra bunları toplayacağım. Bunun toplamı artı, ikincisinin toplamı şeklinde toplayacağım. Bakalım tüm kenarları görebiliyor muyum? Yok olmadı. Bir yerde hata yaptım demek ki.
+
+790
+01:52:13,524 --> 01:52:20,984
+H2 demişim, işlem sonucu 2 demişim. Nereden hata yapıyorum? Görebiliyor musunuz?
+
+791
+01:52:22,984 --> 01:52:25,784
+Hocam H2'nin transposunu almışsınız.
+
+792
+01:52:26,664 --> 01:52:28,924
+Aa evet. Sağ olun. Teşekkürler.
+
+793
+01:52:33,011 --> 01:52:34,507
+Şimdi çok güzel çıktı.
+
+794
+01:52:37,908 --> 01:52:48,708
+Kenar bölgeleri, aslında görüntüdeki en anlamlı bölgeler oluyor. Çünkü arka plan zaten sıfırsa ya da sabitse, bir anlamı yok bunun, bilgi olarak anlamı yok.
+
+795
+01:52:49,508 --> 01:52:55,908
+Hep aynı ton içerdiği için, buralarda bir farklaşma olduğu için aslında o kısımları ön plana çıkarmış oldu.
+
+796
+01:52:57,308 --> 01:53:05,308
+Gördüğünüz üzere, biz bir filtreleme işlemi yaptık aslında, görüntüde de daha iyi olsa. Bu da sonuçta bir sinyal ve
+
+797
+01:53:05,684 --> 01:53:16,556
+H4'ü yanıtımızı düzgün bir şekilde seçip bunu sağladık. Peki bu yaptığımız iş, sizce yüksek geçiren filtre mi yoksa düşük geçiren filtre mi?
+
+798
+01:53:23,252 --> 01:53:25,812
+Yüksek geçiren filtre olabilir mi?
+
+799
+01:53:27,092 --> 01:53:29,132
+Neden öyle düşündün? Yorumla bakalım.
+
+800
+01:53:29,912 --> 01:53:39,372
+Çünkü keskin tam geçişlerde oraları alıyor, diğer yerleri almıyor. Yani homojen dağılımlara bir etkisi yok. Sadece keskin.
+
+801
+01:53:39,892 --> 01:53:42,712
+Evet, birebir söylediğin şey aslında doğru.
+
+802
+01:53:43,472 --> 01:53:45,012
+Hemen şuna bakacaksın.
+
+803
+01:53:45,108 --> 01:53:59,268
+Düzgün yerler ya da birbirine benzer tonlu yerler nasıl geçer? Aslında az değişimin olduğu yerler diye geçer. Dolayısıyla düşük frekanslar. Düşük frekans bölgeleri hep burada beyaz olan tonlar vs.
+
+804
+01:53:59,268 --> 01:54:09,588
+Yüksek frekans bölgesi geçişin olduğu yerler. Frekans adı üstünde geçiş var. Bakın burası burası. Buraları ön plana çıkarıyor. Geri kalan yerleri sıfırlıyor.
+
+805
+01:54:09,811 --> 01:54:13,412
+Bu sayede adam bunu sağlıyor. Peki ortalama filtresi ne yapıyor?
+
+806
+01:54:18,003 --> 01:54:21,323
+Ortalama filtresi de kenarları yumuşatıyor.
+
+807
+01:54:23,123 --> 01:54:25,684
+Dolayısıyla nasıl bir filtredir?
+
+808
+01:54:27,724 --> 01:54:29,524
+Düşük değil, düşük geçirgen değil mi?
+
+809
+01:54:30,283 --> 01:54:37,203
+Evet, düşük geçiren bir filtredir. Çünkü kenarları bastırıyor, bu kez o alçak şeyleri,
+
+810
+01:54:37,963 --> 01:54:39,243
+kenarları götürüyor.
+
+811
+01:54:41,304 --> 01:54:43,344
+Tam ifade edemedim, bir dakika.
+
+812
+01:54:43,988 --> 01:54:46,307
+Şurada bir açıp göstermek isteyeceğim.
+
+813
+01:54:47,708 --> 01:54:51,068
+Mesela şu 41x41'lik ortalama filtresine bakın.
+
+814
+01:54:51,428 --> 01:54:52,708
+Kenarlar yok.
+
+815
+01:54:53,228 --> 01:54:56,908
+Tamamen alçak frekanslar bulunuyor.
+
+816
+01:55:01,332 --> 01:55:08,752
+Burada H'ın çok önemli olduğunu söyleyebiliriz. Görüntü işlemede de bu filtre çekirdeği diye geçer. Kerner olarak geçer ama
+
+817
+01:55:09,011 --> 01:55:14,132
+Biz bunu genelde H dürtü yanıtı ismiyle gördük sinyal işlemede.
+
+818
+01:55:15,152 --> 01:55:18,231
+Mesela delta fonksiyonu bir şeyi
+
+819
+01:55:20,532 --> 01:55:26,172
+Herhangi bir işareti delta ile konvolüsyonu sokmak ne anlama geliyordu? Hatırlayabilen var mı?
+
+820
+01:55:30,131 --> 01:55:32,931
+Sadece Drak-Deltan'ın olduğu yerinde değerimi koruyordum.
+
+821
+01:55:34,131 --> 01:55:35,731
+Konvolüsyonu sokmak diyorum.
+
+822
+01:55:36,131 --> 01:55:39,131
+Onu ötebiyorduk. Drak-Deltan'ın içindeki değerine.
+
+823
+01:55:40,131 --> 01:55:46,731
+Onu şöyle yazarak ifade edebiliriz. Herhangi bir işareti, şunu söyleyelim, iki farklı şey soralım.
+
+824
+01:55:48,131 --> 01:55:54,131
+Delta ile çarparsan, o zaman t eşittir sıfır anındaki değeri...
+
+825
+01:55:54,739 --> 01:55:58,339
+x'in 0 anındaki değer ortaya çıkar.
+
+826
+01:55:59,500 --> 01:56:09,539
+Ama xT'yi, herhangi bir xT'yi delta ile konvolüsyona sokarsan, o zaman işaretin kendisini elde edersin.
+
+827
+01:56:10,819 --> 01:56:12,539
+Bu çok kilit bir şey.
+
+828
+01:56:12,539 --> 01:56:15,539
+Ve hatta bunun farklı bir özelliğini de yazmıştık.
+
+829
+01:56:15,539 --> 01:56:20,268
+xT'yi t-2 ile konvolüsyona sokarsam da o zaman
+
+830
+01:56:21,555 --> 01:56:29,555
+İki birim gecikmiş halini elde ederdim. Bu iki farklı önemli özellikti. Delta ile konvolüsyonu sokmak, hatta bizim için iyi bir şeydir dedik.
+
+831
+01:56:29,555 --> 01:56:38,555
+Çünkü çok kolay bir şekilde bunu yorumlayabiliriz diye düşünüyorum. Şimdi buradan yola çıkarak bakın, bu adamın delta fonksiyonu ne? Hemen bakıyorsunuz.
+
+832
+01:56:39,555 --> 01:56:49,515
+Şurada tam bir olması. Bununla konvolüsyonu sokarsam bakın görüntünün aynısı çıkmış. İstiyorsanız şöyle düşünebilirsiniz. Köşe
+
+833
+01:56:49,587 --> 01:56:57,087
+ileri bulmak istiyorum dersiniz. O zaman buraya 1 buraya eksi 1 yazarsanız filtre çekirdeğiniz değişti. Bakın aldığınız sonuç da değişiyor.
+
+834
+01:56:58,087 --> 01:57:05,387
+Kenar bulmak istiyorsanız bunu yapabilirsiniz. Kenarlar bulanık, pekiştirmek istiyorsanız şuraya k yerine bir şey değer yazıp sabit bir değer.
+
+835
+01:57:06,387 --> 01:57:08,387
+Kenarı pekiştirebilirsiniz.
+
+836
+01:57:09,387 --> 01:57:16,587
+Bir tane daha örnek vardı bununla ilgili. Onu atlamış olmayayım. Hemen şöyle hızlıca bakayım.
+
+837
+01:57:16,756 --> 01:57:18,756
+Burada başka şeyler var.
+
+838
+01:57:19,756 --> 01:57:23,756
+Acaba diğer sınırında mıydı diye düşünüyorum.
+
+839
+01:57:23,756 --> 01:57:24,756
+Bakayım.
+
+840
+01:57:30,739 --> 01:57:54,140
+Mesela kenarlar nerede işe yarıyor derseniz, diyelim ki bir görüntü elde ettiniz, bulanık bir görüntü ama. Siz bunu keskinleştirmek istiyorsunuz. Ne yapacaksınız? İşte burada elde ettiğiniz görüntü, orijinal görüntü üstüne, kenar bilgilerini toplarsanız, eklerseniz o zaman keskinleştirilmiş görüntü elde edebiliyorsunuz.
+
+841
+01:57:55,604 --> 01:57:59,684
+Bu görüntü işleme şeylerinden, yaklaşımlarından birisi.
+
+842
+01:58:03,188 --> 01:58:05,747
+Ve son olarak da şunu da söyleyelim.
+
+843
+01:58:08,307 --> 01:58:10,108
+Şu kısmın sonunda.
+
+844
+01:58:11,627 --> 01:58:18,807
+Bunların artık çok hayati şeyler olduğu Haşikar, çünkü derin öğrenme içerisinde konvolüsyonları kullanıyor.
+
+845
+01:58:19,307 --> 01:58:25,207
+Aslında biz orada az önce gösterdiğimiz şeyde her bir Haş'ı kendimiz seçtik fark ettiyseniz.
+
+846
+01:58:25,707 --> 01:58:28,028
+Haş şu olsun, Haş bu olsun dedik değil mi?
+
+847
+01:58:28,819 --> 01:58:31,819
+Peki derin öğrenme bağışı nasıl belirliyor acaba?
+
+848
+01:58:33,819 --> 01:58:39,692
+Sabit mi alıyor, yoksa kendi içerisinde değiştiriyor mu? En uygun olanı mı buluyor? Ne dersiniz?
+
+849
+01:58:50,612 --> 01:58:53,432
+Hocam fotoğraftan gördüğünüz kadarı da değiştiriyor.
+
+850
+01:58:53,932 --> 01:58:54,972
+Evet.
+
+851
+01:58:55,212 --> 01:58:59,572
+Aslına bakarsanız, burada bir 5x5'lik konvolüsyon uyguluyor.
+
+852
+01:59:00,592 --> 01:59:03,152
+Bir tane filtre ile herhangi bir filtre,
+
+853
+01:59:04,172 --> 01:59:08,271
+diyelim ki başlangıçta bütün filtre katsayıları eşit başlıyor.
+
+854
+01:59:08,792 --> 01:59:12,892
+Sonra ilgili sonuca çıkışa ulaşabilmek adına
+
+855
+01:59:13,332 --> 01:59:19,472
+Sürekli buradaki konvolüsyon filtre içerisindeki ya da H4'ü yanıtlarını değiştiriyor.
+
+856
+01:59:19,992 --> 01:59:21,771
+Burada tabi bir sürü filtre var.
+
+857
+01:59:22,032 --> 01:59:27,932
+İlk katmanda mesela 1, 2, 3, 4, 5, 6 tane farklı filtreyle konvolüsyonu sokmuş.
+
+858
+01:59:28,692 --> 01:59:31,512
+Bunların çıkışlarını daha sonra subsampling yapmış.
+
+859
+01:59:32,012 --> 01:59:38,172
+Örnek azaltma aslında biz bunu, bir örneği tutup diğerini atıyorsun gibi düşünün. Basit bir işlem bu.
+
+860
+01:59:39,060 --> 01:59:47,500
+Sonra bakın kaç tane, yaklaşık 20 tane farklı bir çekirdekle ya da 20 farklı dürtü fonksiyonuyla tekrar konvolüsyonu sokuyor.
+
+861
+01:59:48,280 --> 01:59:52,620
+Dolayısıyla her bir filtrenin de farklı bir bilgi verdiğini düşünün.
+
+862
+01:59:53,140 --> 01:59:58,520
+Nasıl ki bizim burada ortalama filtresinde yumuşatılmış halini elde ediyoruz.
+
+863
+02:00:00,000 --> 02:00:22,000
+Bu görüntüleri ayrı filtreyle elde ediyoruz. Burada da elinizde yüzlerce farklı filtre var. Dolayısıyla bu görüntünün her türlü frekanstaki yanıtını ve farklı bilgilerini ortaya çıkarmış oluyorsun. Göremediğin dahi bilgileri ortaya çıkarmış oluyorsun. Böylelikle...
+
+864
+02:00:22,707 --> 02:00:31,507
+Uygun bir şekilde öz nitelik çıkarmış oluyorsun ya da bu görüntüyü ifade edebilecek özellikleri ortaya koymuş oluyorsun.
+
+865
+02:00:32,228 --> 02:00:35,507
+Diyerek dersi burada bitirmek istiyorum.
+
+866
+02:00:38,131 --> 02:00:50,612
+Sinyaller Sistemler dersinin içerisinde normalde böyle bir ders yoktu ama laboratuvar dersi olması gerekiyor gibi düşünüp Ahmet Hoca ile bunu da koyduk. Umarım faydalı olmuştur.
+
+867
+02:00:51,731 --> 02:00:55,692
+Hocam çok faydalı oldu gerçekten. Ayrıca teşekkür ederiz bu ders işleriniz için.
+
+868
+02:00:57,032 --> 02:01:05,751
+Ben de teşekkür ederim. Çoğu zaman ders dönem sırasında boyunca böyle bazı kopukluklar oluyor doğal.
+
+869
+02:01:06,228 --> 02:01:08,528
+Dersin teorisi biraz ağır.
+
+870
+02:01:09,548 --> 02:01:14,928
+Ama bunu şu gözle de değerlendirmenizi istiyorum. Siz sonuçta
+
+871
+02:01:15,448 --> 02:01:18,508
+Bu alanda uzman birer mühendis olacaksınız.
+
+872
+02:01:19,288 --> 02:01:22,347
+Sizin yaptığınız bir şeyi diğerlerinin yapamaması lazım.
+
+873
+02:01:22,608 --> 02:01:24,908
+Sizin onu zor anlamanız, öğrenmeniz
+
+874
+02:01:25,688 --> 02:01:27,728
+O an için zor olacak ama sonrasında
+
+875
+02:01:27,988 --> 02:01:31,568
+Sizi diğerlerinden ön plana çıkaracak bir şey olacak diye düşünüyorum.
+
+876
+02:01:32,275 --> 02:01:38,275
+Dersle ilgili olumsuz yorumları da son olarak alayım, sonra dersleri, dersi bitireyim.
+
+877
+02:01:38,275 --> 02:01:42,275
+Olumsuz bir yorum var mı dersle ilgili?
+
+878
+02:01:44,275 --> 02:01:51,275
+Hocam bir tek ikinci quizin çoktan çok seçmeli olması olumsuz yorum olarak sayılabilir.
+
+879
+02:01:51,275 --> 02:01:56,275
+Onun dışında dersin teori kısmını sizin dediğiniz gibi hak veriyorum size, yani olması gereken bir şey.
+
+880
+02:01:57,108 --> 02:02:06,707
+Bu uygulamalar da çok faydalı oldu açıkçası. Ve ödevlerin de öğreticinin telifte olması da çok iyiydi. Ben teşekkür ederim tüm bu dönem boyunca verdiğiniz derslerden dolayı.
+
+881
+02:02:08,307 --> 02:02:09,707
+Ben de teşekkür ederim.
+
+882
+02:02:10,907 --> 02:02:24,043
+Evet, bu Online Yıldızı 2.tr'den açtığımız için ulaşabileceksin. İstersen tekrarlı bir şekilde izleyip, belki ara dönemde bu konularda çalışmak istersen, ne bileyim aklına iste, açıp bakabilirsin yani.
+
+883
+02:02:25,652 --> 02:02:26,652
+Rica ederim.
+
+884
+02:02:28,532 --> 02:02:30,532
+Başka varmıyorum arkadaşlar?
+
+885
+02:02:31,332 --> 02:02:33,091
+Hocam ben bir şey söyleyebilir miyim?
+
+886
+02:02:33,091 --> 02:02:34,060
+Tabii.
+
+887
+02:02:34,068 --> 02:02:59,787
+[öğrenci]'in söylediklerine ben de katılıyorum. Sadece ek olarak mesela bu uygulama sizden görmek çok faydalıydı. Ödevler öncesinde de ödevlere yönelik uygulamalar artırılabilirse çok faydalı olur bence. Çünkü şahsen ben ödevler öncesinde hiç MedLab kullanmamıştım ve ilk ödeve adaptasyonda çok büyük sıkıntı yaşadım daha önce hiç görmediğim için. Hani dersteki uygulamalar da bu şekilde bir tık artırılabilirse çok daha verimli geçecektir bence.
+
+888
+02:03:00,404 --> 02:03:01,904
+Tamam, çok teşekkür ederim.
+
+889
+02:03:02,244 --> 02:03:03,624
+Ben teşekkür ederim her şey için.
+
+890
+02:03:05,104 --> 02:03:15,384
+Başka var mıdır arkadaşlar? Ben bir yandan not alıyorum bunları. Çünkü bir sonraki dönem, sene, tekrar bizim verme durumumuzda iyileştirme yoluna gidebiliriz.
+
+891
+02:03:19,956 --> 02:03:23,956
+Peki, başka yoksa teşekkür ediyorum. Görüşmek üzere.
+
+892
+02:03:23,956 --> 02:03:29,956
+Hocam, son olarak final sınavıyla ilgili bir bilgi verir misiniz? Nasıl olacağıyla alakalı?
+
+893
+02:03:29,956 --> 02:03:33,956
+Final sınavında da vizeye benzer bir yol izleyeceğiz.
+
+894
+02:03:35,956 --> 02:03:43,956
+50 puan veya 60 puan klasik, 40 puan test şeklinde ilerlemeyi düşünüyoruz.
+
+895
+02:03:46,735 --> 02:03:50,076
+Başka bir şey yok aklımda söyleyebileceğim şu anda.
+
+896
+02:03:52,376 --> 02:03:53,976
+Tamamdır hocam, teşekkür ederim.
+
+897
+02:03:54,396 --> 02:04:03,275
+Tamamdır. Zaten bir şey, ortak bir karar alınırsa, adaleti sağlamak adına Ahmet Hoca'nın Classroom'undan herkese paylaşım yapıyoruz.
+
+898
+02:04:04,235 --> 02:04:05,396
+Oradan takip edersiniz.
+
+899
+02:04:09,076 --> 02:04:09,956
+Kolaylıklar.
