@@ -1,0 +1,4455 @@
+1
+00:00:20,019 --> 00:00:21,500
+Çalışın, aç Allah.
+
+2
+00:00:24,420 --> 00:00:24,980
+Lâchite.
+
+3
+00:00:35,124 --> 00:00:36,124
+Şeyh Hazır Bitti.
+
+4
+00:00:36,664 --> 00:00:38,624
+Bir hafta gerektiği zaman açarız.
+
+5
+00:02:33,268 --> 00:02:34,747
+Bu da kaç kişi faalda.
+
+6
+00:04:27,156 --> 00:04:30,615
+olmak üzere sadece beş kişi mesafı.
+
+7
+00:04:58,387 --> 00:04:59,387
+Tamam.
+
+8
+00:06:15,603 --> 00:06:19,644
+Evet arkadaşlar, vakit yaptık bence. Derse başlayabiliriz artık.
+
+9
+00:06:21,384 --> 00:06:31,524
+Şimdi şey rica ediyorum, aramızda dün katılanlar şöyle bir el kaldırsın.
+
+10
+00:06:31,704 --> 00:06:36,884
+Şu el kaldırma tepkisi var ya, bir görelim bakalım kaç kişi dünden katılanlardan.
+
+11
+00:06:36,884 --> 00:06:42,884
+Bir, iki, üç, üç olduk.
+
+12
+00:06:44,403 --> 00:06:47,863
+4 ve 5 olabilir de olmayabilir de. Peki, tamam.
+
+13
+00:06:48,244 --> 00:06:55,124
+Şimdi, bu saatte de katılım sayımız az ama ben anlatmaya başlayacağım.
+
+14
+00:06:56,424 --> 00:07:01,164
+Şimdi, onun dışında, başka bir şey var mı? Başka bir şey yok. Tamam, peki.
+
+15
+00:07:02,524 --> 00:07:07,124
+Belki, inşallah, ümit ediyorum, saat 10'da katılacaklar olabiliriz.
+
+16
+00:07:07,204 --> 00:07:12,324
+Hani, dersi fiziksel olarak onu da yapıyoruz diye, online de 10'da başlar diye düşünen olabilirim.
+
+17
+00:07:12,403 --> 00:07:16,244
+Belki, ama ben böyle bir ihtimalle olduğunu dün akşamki ders...
+
+18
+00:07:16,244 --> 00:07:18,804
+Derste ağırladım arkadaşlarla.
+
+19
+00:07:19,944 --> 00:07:24,804
+Hoş çarşamba günü dersinde hani pazartesi günden yapacağız diye mail atmıştım.
+
+20
+00:07:25,024 --> 00:07:26,584
+Ama buna rağmen devam azdı.
+
+21
+00:07:27,024 --> 00:07:30,384
+Neyse, kendi temponuza göre seyredebilirsiniz olabilir.
+
+22
+00:07:31,044 --> 00:07:32,624
+Belki şöyle de düşünülmüş olabilir.
+
+23
+00:07:33,064 --> 00:07:35,584
+Ya nasıl olsa çarşambadaki dersi kaçırdık.
+
+24
+00:07:35,704 --> 00:07:38,864
+Perşembe dersi de kayıttan izleriz diye düşünenler olabilir.
+
+25
+00:07:38,864 --> 00:07:40,704
+Tamam, onlar da haklılar.
+
+26
+00:07:41,584 --> 00:07:44,244
+Ama o zaman bu durumda sondaki...
+
+27
+00:07:44,244 --> 00:07:50,324
+Önümüzdeki çarşamba yapacağımız dersi bütün öğrencilerden sorular bekliyor.
+
+28
+00:07:50,824 --> 00:07:54,244
+Kafalarına yatmayan yerlerden, anlaşılmayan yerlerden.
+
+29
+00:07:54,664 --> 00:07:57,744
+Çünkü aslında sağlam başlığı, sağlam gitmek lazım.
+
+30
+00:07:58,044 --> 00:08:03,924
+Özellikle böyle programlamayla ilgili derslerde her gördüğünüz konu bir önceliklerin üstüne inşa ediliyor.
+
+31
+00:08:03,924 --> 00:08:07,304
+O yüzden temel sağlam değilse soruları zorlanabiliyor.
+
+32
+00:08:07,463 --> 00:08:09,984
+Daha fazla uğraşmak zorunda kalıyorsunuz.
+
+33
+00:08:10,144 --> 00:08:11,744
+Konulara hakim olmak için.
+
+34
+00:08:12,915 --> 00:08:33,355
+Şimdi, dün ne yaptık? Dün nesne yönelime giriş yaptık. Nesne nedir? Sınıf nedir? Ondan bahsettik. Biz aslında nesneler üstünden konuşuyor olacağız. Hep düşüneceğimiz nesneler. Çünkü bir nesne yönelik program, adı üstünde nesne yönelik, nesnelerin birbirlerinin metotlarını çağırması şeklinde yürürüz dedik.
+
+35
+00:08:33,355 --> 00:08:39,296
+Ve çok hızlıca bir aslında üstünden geçeyim şuradan şu şekilde inerekten.
+
+36
+00:08:40,692 --> 00:08:44,812
+Ama tabii bir nesnenin davranışını kodlayabilmek için de sınıf kodu yazıyoruz dedik.
+
+37
+00:08:45,432 --> 00:08:53,412
+Sınıf, çekirdekteki verisi, member field ve onu sarmalayan metotlar, member method.
+
+38
+00:08:54,323 --> 00:08:57,463
+Ayrılmaz bir biriktirildiğidir dedik.
+
+39
+00:08:57,963 --> 00:09:00,423
+Ve şu terminal açıdan bahsettik.
+
+40
+00:09:00,783 --> 00:09:03,783
+İşte bir nesnenin verileri onun member field bir alanları.
+
+41
+00:09:04,183 --> 00:09:07,183
+Bir nesnenin metotları onun member metotları.
+
+42
+00:09:07,743 --> 00:09:13,644
+Kısaca member istersen hem üye alanları hem üye metotları kastediyorum demektir dedik.
+
+43
+00:09:14,183 --> 00:09:18,923
+Class yerine type, Türkçe'de tip ya da tür diyebileceğimiz dedik.
+
+44
+00:09:18,923 --> 00:09:20,743
+En temel şeyler bunlar.
+
+45
+00:09:22,611 --> 00:09:36,271
+Ondan sonra acaba bir de state kodlarından bahsettik. Bir neslinin üye alanlarının tümünün bu andaki değeri şeklinde bir küme oluşturduğumuzda ona da neslinin durumu diyoruz demiştik.
+
+46
+00:09:36,639 --> 00:09:41,139
+Ve nesnelerin üyelerine doğrudan erişilmez demiştik.
+
+47
+00:09:41,139 --> 00:09:45,439
+Ve dur bakayım nerelerde, şuralarda bir yerde, daha başlarda olacak.
+
+48
+00:09:46,980 --> 00:09:51,399
+Nesnenin üyelerine doğrudan erişilmez, metotları üzerinden erişilir dedik.
+
+49
+00:09:51,919 --> 00:09:57,419
+Nesnenin üye alanlarından birinin teke tanımlayıcı olmasının öneminden bahsetmiştik.
+
+50
+00:09:57,500 --> 00:10:00,000
+Ve ders kapısında bunu sürekli vurgulayacağız.
+
+51
+00:10:00,000 --> 00:10:01,360
+Söylemiştik.
+
+52
+00:10:01,759 --> 00:10:05,740
+Örneğin bir arabanın plaka numarası onun tekil tanımayıcısıdır.
+
+53
+00:10:06,240 --> 00:10:09,180
+Bir öğrencinin tekil tanımayıcısı onun öğrenci numarasıdır.
+
+54
+00:10:09,779 --> 00:10:14,039
+Bir çalışanın tekil tanımayıcısı onun sicil numarasıdır.
+
+55
+00:10:17,268 --> 00:10:22,468
+Ondan sonra cuman nesneleri üye alanlar üzerinden erişilir dedik.
+
+56
+00:10:22,688 --> 00:10:23,867
+Nelerde geldik mi? Evet.
+
+57
+00:10:24,268 --> 00:10:26,408
+Nesneleri üye alanlar üzerinden erişilir dedik.
+
+58
+00:10:26,827 --> 00:10:32,448
+Ve bu üye alanların erişimi ya sadece okuyup öğrenme amaçlı veyahut da değiştirme amaçlı olabilir.
+
+59
+00:10:32,628 --> 00:10:33,208
+Şimdi söylemiştik.
+
+60
+00:10:33,607 --> 00:10:38,307
+Okuyup öğrenme amacına getting, değiştirmek amacına setting ediyorduk.
+
+61
+00:10:38,307 --> 00:10:44,927
+Ve bunların, bu metotların isimleri de üye alanlar get veya set kelimesiyle başlayıp.
+
+62
+00:10:45,268 --> 00:10:46,807
+alan ismine devam edecektir.
+
+63
+00:10:46,948 --> 00:10:49,688
+Şıkkını söylemiştik. En şekildeki noktalar bunlar.
+
+64
+00:10:50,176 --> 00:10:53,895
+Bunun ardından bir metot çağırma örneği göstermiş.
+
+65
+00:10:54,436 --> 00:11:00,736
+Nesne ardından nokta, metot adı ve metotlar da C'deki yapısal programlamadaki fonksiyonlar gibi.
+
+66
+00:11:01,155 --> 00:11:09,895
+Ama tabii ki bir nesnenin metotları üye alanlarıyla ayrılmaz bir bütünlük ve bir nesnenin bir metodu içerisinde o nesnenin üye alanları ile çalışılır.
+
+67
+00:11:10,256 --> 00:11:17,395
+Ama tabii ki o metoda bir parametre olarak bir başka nesne verilmişse onun da üye alanlarına erişim metotları üstünden erişilip kullanılabilir.
+
+68
+00:11:18,176 --> 00:11:23,516
+Ayrıca tabii ki bir nesnenin herhangi bir metodu mu o nesneye bir iş yaptırmak için de yazıp çağırabilirsiniz elbette.
+
+69
+00:11:24,676 --> 00:11:28,056
+Ve değişik değişik işler yaptıracak metotlar yazacağız hep.
+
+70
+00:11:30,875 --> 00:11:33,516
+Nesne adı nokta metot adı şeklinde çağrımımız var.
+
+71
+00:11:33,895 --> 00:11:38,975
+Ve bunu da bir UMLS'i diagramda nasıl göstereceğimizi konuşmuştuk en son.
+
+72
+00:11:39,296 --> 00:11:40,456
+Şimdi tekrar açabilirim burayı.
+
+73
+00:11:40,836 --> 00:11:43,475
+Bundan sonra da artık yeni içerikli devam edeceğiz.
+
+74
+00:11:43,903 --> 00:11:57,384
+Şöyle bir kod çağrımı, eğer bir UMLN interaction, active sequence diagram olarak gösterdiğimizde, bir nesneyi, çift edip ötgen içerisinde, nesnada 2.3'te, sınıf adı şeklinde yazıp, altını mutlu kadar çiziyoruz.
+
+75
+00:11:57,855 --> 00:12:15,196
+Bunun Get Blade metodu çağrıldıysa, kesiklik çizgi o neslinin hattı oluyor, yaşam hattı oluyor, yaşam çizgisi oluyor. Bir nesne bir metot çalıştırdığı sürece faaliyettedir. Diğer durumlarda bellekte beklemektedir, hazır olarak beklemektedir.
+
+76
+00:12:24,464 --> 00:12:31,644
+Bu metot gereğini yapıp sonlandığı zaman da geriye doğru kesiklik çizgi ile dönüşü gösteriyoruz.
+
+77
+00:12:32,084 --> 00:12:37,304
+Eğer bu metot geriye bir değer döndürüyorsa ki getplate metodu plaka vüyalarının değerini döndürecektir.
+
+78
+00:12:37,664 --> 00:12:41,804
+Onu da çizginin üstüne yazdığımızda gerçekten geriye bir değer döndürdüğünü anlıyoruz.
+
+79
+00:12:42,624 --> 00:12:45,144
+Bu şekilde biz durum söz konusudur dedik.
+
+80
+00:12:45,144 --> 00:12:47,903
+Şimdi gelelim paket kavramına.
+
+81
+00:12:51,059 --> 00:13:08,139
+Daha doğrusu belli bir ortak amaca yönelik sınıflar paket adı verilen yapılar altında toplanabilirler. Bunlar aslında mantıksal yapılardır. Fakat hard disk de dosya sisteminde fiziksel olarak karşılığı da vardır.
+
+82
+00:13:19,059 --> 00:13:24,879
+Birlikte ortak bir amaca sahip olduğunu belirtmiş ve anlamış oluruz.
+
+83
+00:13:25,159 --> 00:13:42,079
+Ve daha sonra bu amaca yönelik işleri başka yerlerde de yapacağımız zaman direkt o pakete veya paketlik ihtiyacımız olan sınıfları import komutuyla diğer koda başka sınıf kodlarına dahil edebiliriz.
+
+84
+00:13:42,619 --> 00:13:44,179
+Şey bu, o anlamı bu.
+
+85
+00:13:50,196 --> 00:14:04,936
+Peki, şimdi bunu UML sınıf şemalarında nasıl gösteririz? Bir paketi bir klasör şeklinde gösteriyoruz. Üst etiket kısımda paket adını yazıyoruz. İçerisine de o paketi yer alan sınıflarımızı yazıyoruz.
+
+86
+00:14:15,508 --> 00:14:18,968
+Pickage 2 dediğimiz ikinci bir paketimiz var.
+
+87
+00:14:18,968 --> 00:14:20,228
+Bir saniye.
+
+88
+00:14:29,491 --> 00:14:47,631
+Evet, tekrar arayalım. Şimdi pek hiçbir adım verdiğimiz bir paketimiz var. Bu dik işlemaya göre. Ve bu içerisinde classler ve class 1 olmak üzere iki sınıf ve package 2 adlı ikinci bir paket içeriyor. O package 2'nin içerisinde de class C diye bir sınıfımız var. Böyle bir yapı.
+
+89
+00:14:48,755 --> 00:14:53,055
+Bu yapıdaki sınıfları başka bir sınıf koduna nasıl ekleyebiliriz?
+
+90
+00:14:53,415 --> 00:14:55,895
+Yandaki kod örneklerini de gördüğünüz gibi ekleyebiliriz.
+
+91
+00:14:56,495 --> 00:14:59,575
+Import anahtar kelimesini kullanarak da yapıyoruz bu işi.
+
+92
+00:15:00,855 --> 00:15:12,795
+Paket adı nokta sınıf adı şeklinde komut verdiğimizde artık bu package 1diki A sınıfının class A'ını istediğimiz gibi diğer bir sınıf kodumuza eklemiş olduk.
+
+93
+00:15:13,735 --> 00:15:16,495
+O türden nesneler oluşturabiliriz.
+
+94
+00:15:16,755 --> 00:15:18,635
+kullanabiliriz, kullanabiliriz vs.
+
+95
+00:15:19,220 --> 00:15:38,460
+Şimdi bazen paketler kalabalık oluyor ve çok sayıda sınıf içerebiliyorlar. Bunları bu durumda tek tek import etmek yerine isterseniz import, paket adı nokta yıldız dediğinizde o paketteki tüm sınıfların kodunu da dahil etmiş oluyorsunuz diğer kodunuza.
+
+96
+00:15:38,460 --> 00:15:47,220
+Burada herhangi bir bellek israflı söz konusu değil arkadaşlar. Çünkü Java sanal makinesi ihtiyacı olan sınıfın...
+
+97
+00:15:47,220 --> 00:16:14,879
+byte kodunu sadece ihtiyaç olan anda yüklüyor. Yani siz bir sınıf kodu içerisinde import package bir nokta yıldız dediğinizde eğer class A'yı veya class B'yi var bu paket birinin içerisinde class A'yı kullanmış ama class B'yi kullanmamış iseniz class B'nin sınıf kodu byte kodu boş yere yüklenmiyor belli. O yüzden bunu müsterih onun için.
+
+98
+00:16:15,220 --> 00:16:27,620
+nokta yıldız diyerekten her şeyi import edebilirsiniz. Eğer ideyle çalışıyorsanız başka bir paketteki bir sınıfın adını yazdığınızda eğer şey mesela.
+
+99
+00:17:34,963 --> 00:17:37,303
+Niye böyle bir şey oldu?
+
+100
+00:17:49,044 --> 00:18:07,844
+Ha, evet. Hoca düşü, evet, sanayi hemden düşmüyoruz. Hatta düştüm de. Çok hızlı bir şekilde gittim, geldim. Enteresan oldu. Bu arada şeyi de göremiyorum şu an. Aslında şeyim kayboldu. Bu işte palet oluyor ya, yukarıdan aşağı çıkıyor bir şeyleri aç, kapat falan.
+
+101
+00:18:07,844 --> 00:18:13,764
+Hocam şu an host [öğrenci] oldu herhalde. Galiba. Evet peki.
+
+102
+00:18:13,764 --> 00:18:16,184
+Yönetimi vermesi lazım herhalde veya böyle bir şey.
+
+103
+00:18:16,692 --> 00:18:35,872
+Yok, dur bakayım. Şöyle bir tıklan bakayım bakalım. Belki de öyle değil midir? Şöyle katılımcılar diye bakalım şimdi. Yok yok, otomisyon olarak gözüküyorum. Şu an gözüküyorum, tamam. Paylaşımdan, ekran paylaşımından düşünce de öyle bir şey olmuş. Evet, [öğrenci] da ben de böyle olmuş diyor. Doğru.
+
+104
+00:18:42,291 --> 00:18:44,411
+İhade açıklayamıyordu zaten.
+
+105
+00:18:44,811 --> 00:18:47,611
+Dedim, tabii ufak bir kopuk oldu belki herhalde.
+
+106
+00:18:47,851 --> 00:18:57,071
+Evet, paket yapısını istiyorduk ve bu paket yapısında diyoruz ki, paket içerisindeki tarzı artı stabil değil.
+
+107
+00:18:57,071 --> 00:18:57,931
+İyi, tamam pekala.
+
+108
+00:18:58,971 --> 00:19:01,011
+Şeyde, inşallah, toparladım inşallah.
+
+109
+00:19:01,451 --> 00:19:05,311
+B plan olarak arttırma için 3G bağlantı yapabilirim.
+
+110
+00:19:05,971 --> 00:19:11,951
+Eğer böyle bir kopuktu olsa lütfen beklemeye devam edin arkadaşlar. İllaki bir çaresiz çözümünü buluruz.
+
+111
+00:19:11,951 --> 00:19:15,951
+Şimdi, bir paket içerisindeki...
+
+112
+00:19:16,884 --> 00:19:23,963
+Sınıfı ya da tüm sınıfları dahil etmeye çalıştığınızda aslında hemen belliğe yüklenmiyor. Bunun bir kaybı yok diyorduk.
+
+113
+00:19:24,324 --> 00:19:30,003
+Sanal makinesi gerektiği anda ilgili sınıfın byte kodunu belliğe yüklüyor dedik.
+
+114
+00:19:30,043 --> 00:19:35,644
+O yüzden nokta yıldızı diyerekten bir paketteki bütün sınıfları dahil etmekte hiçbir sakınca yok.
+
+115
+00:19:36,183 --> 00:19:39,824
+Yalnız şu aydınlığı bilmeniz gerekiyor diyordum galiba. Orada tam koptu.
+
+116
+00:19:44,884 --> 00:19:59,884
+paketler varsa onlardaki sınıflar otomatik olarak eklenmiyor. O yüzden örneğin işte import package bir nokta yıldız dediğinizde buradaki şekliye göre class A ve class B'yi kullanabilirsiniz ama paket 2'nin altındaki class C'yi kullanabilirsiniz.
+
+117
+00:20:00,000 --> 00:20:09,240
+kullanamazsınız. Onu da kullanmak istiyorsanız, package1.package2.yıldız ya da package1.package2.class.c şeklinde yazmanız lazım.
+
+118
+00:20:09,460 --> 00:20:16,920
+Tabii ki bakın import komutunu koyarak. Bunu bilin istedim. Paketleminin bir yararı daha var.
+
+119
+00:20:18,259 --> 00:20:46,259
+Bir, iki farklı pakette aynı ada sahip sınıf yer alabilir. Aynı paket içerisinde aynı isme sahip sınıf olamaz. Fakat farklı paketlerde aynı ada sahip sınıf olabilir. Bu şöyle bir kullanım yeri olabilir. Şimdi Java'nın kendi içerisinde Java.io paketiyle gelen bir file sınıfı var zaten. Siz de bu file sınıfını geliştirerek yeni sizin kendi bir file sınıfını...
+
+120
+00:20:46,259 --> 00:21:14,259
+Sınıfınızı oluşturmak istiyorsunuz. Eğer iki tane file adlı sınıf olamasaydı komple sistemde buna başka bir isim vermek zorunda kalabınız. Ama file da bu. Sizin yapacağınız sınıf için de son derece uygun bir isim. Siz de nihayetinde Java'nın kaynak kod kitaplarına bir sınıf dahil etmeyeceksiniz. Kendi paketinizde örneğin com.fire.visit adlı bir paket hazırlıyorsunuz. Onun içerisine kendi file sınıfınızı rahatlıkla koyabilirsiniz. Böylece sizin...
+
+121
+00:21:14,259 --> 00:21:24,460
+FileSense'nız, Java IO paketindeki FileSense'nı kullanmakla birlikte her ikisi de bizden sizin veya başka programlarda kullanılabilecektir.
+
+122
+00:21:25,268 --> 00:21:27,748
+Fakat burada bir tek şuna dikkat etmek lazım.
+
+123
+00:21:28,307 --> 00:21:50,867
+Aynı bir başka sınıf kodu içerisinde hem Java IO paketindeki file'ı hem de Confire Wizard paketindeki file sınıfını kullanacaksanız eğer o zaman sınıf adını belirtmeniz gereken her yerde paket adıyla birlikte fully qualified class name yani sınıfın tüm adını paketiyle birlikte yazmak zorunda kalıyorsunuz.
+
+124
+00:21:50,867 --> 00:21:53,268
+Yoksa file deyince aynı kod içerisinde.
+
+125
+00:21:53,268 --> 00:22:00,748
+Hangi faaladan bahsediyorsun kardeşim diye? Belirsizlik söz konusu olacaktır. Tek uzunluk bu diyeyim.
+
+126
+00:22:01,071 --> 00:22:10,531
+Onun dışında bu paket hiyerarşisi aynı zamanda fiziksel depolama ortamında da bir klasör hiyerarşisi olarak kendisini gösterecek.
+
+127
+00:22:10,751 --> 00:22:28,911
+Örneğin bu com.firevisit diye bir paketi içerisindeki file sınıfının kaynak kodu, sizin projenizi açtığınız dizinin neresiyse onun içerisinde com diye bir klasör açılıp, onun altında filevisit diye bir klasör açılıp, onun altında da file.java dosyası oluşturulmuş.
+
+128
+00:22:29,071 --> 00:22:39,291
+Oluyor. Bir de böyle yapıyor veya siz yapıyorsanız siz de bu şekilde elle ilgili klasörleri açıp ilgili dosyayı oraya koymak zorundasınız diyeyim.
+
+129
+00:22:40,692 --> 00:22:46,111
+Paketle ilgili söyleyeceklerim bu kadar. Buraya kadar konuştuklarımdan soru varsa buyurun konuşalım.
+
+130
+00:22:52,468 --> 00:23:01,508
+Evet, şu son gelen parçayı sırasında söyledim zaten.
+
+131
+00:23:04,148 --> 00:23:07,988
+Evet, şimdi yine çok önemli bir temel konu.
+
+132
+00:23:08,208 --> 00:23:11,548
+Görünürlük kuralları ve veri saklama, bilgi saklama.
+
+133
+00:23:11,548 --> 00:23:15,548
+Şimdi, gençli önlemin...
+
+134
+00:23:16,500 --> 00:23:23,680
+Çekirdek kurallarından bir tanesi şu. Bir nesne kendi tüm yalanlarına elbette erişebilir.
+
+135
+00:23:26,548 --> 00:23:46,867
+Bununla birlikte kendi sınıfından olan, kendisiyle aynı türden olan diğer başka bütün nesnelerin de üye alanlarına hiçbir kısıtlama olmadan erişebilir. Başka bir deyişle bir nesnenin aynı türden diğer nesnenin üyelerine erişim için herhangi bir kısıtlama kura koyamıyorsunuz. Dil böyle bir şeyi desteklemiyor.
+
+136
+00:23:54,548 --> 00:23:55,788
+Kısıtlamalısınız da.
+
+137
+00:23:56,435 --> 00:24:01,295
+Bu nedenle Information-Hiding Principle'a uymamız gerekiyor diyoruz.
+
+138
+00:24:01,395 --> 00:24:05,155
+Veri gizleme, saklama ilkesine uymamız gerekiyor diyoruz.
+
+139
+00:24:05,655 --> 00:24:06,255
+Sebebi de şu.
+
+140
+00:24:07,755 --> 00:24:18,435
+Nesnenin üye alanları onun en çekirdek temel bilgisi ve o nesnenin iç yapısını en derinden etkileyen bileşeni.
+
+141
+00:24:19,076 --> 00:24:24,275
+Bir nesnenin iç yapısını farklı türden nesnlere açmak istemezsiniz.
+
+142
+00:24:24,435 --> 00:24:45,735
+Çünkü bir nesne, diğer bir nesneyi kullanılacağı zaman eğer onun iç yapısını bilmek zorunda kalırsa siz kullanılacak nesnedeki en ufak bir değişiklik yaptığınızda bunu kullanan tüm diğer nesnelerde de çok ayrıntılı değişiklikler yapmak zorunda kalırsınız. Bu işi epey zorlaştınız.
+
+143
+00:24:47,251 --> 00:25:03,932
+Önnek vermek istiyorum. Şimdi diyelim ki canınız sıkıldı, televizyon seyretmek istiyorsunuz. Peki tamam, televizyonu seyredeceksiniz ama bu seyretmeniz, televizyonun nasıl çalıştığını, daha doğrusu temel çalışma ilkelerini bilmek zorunda olmamasınız.
+
+144
+00:25:15,251 --> 00:25:43,251
+Krişlerden oluşuyor. Hatta her noktacığın red, green, blue olmak üzere üç ayrı renk bileşeninin bir araya girerekten aslında her bir noktacık üçlü kristaldir. Bunlar bir grid ızgara oluşturacak şekilde bir panelin içerisinde dizilidir. İçeride bir de yeri iletken bir katman da vardır. Her bir noktacıya ayrı ayrı olarak gerilim uygulanabilmektedir. Gerilim uygulanan noktacıklar yukarı çıkmakta ve rengini gösteriyor.
+
+145
+00:25:43,251 --> 00:25:49,172
+Östelmekte giyerim uygulanmayanlar ise pasif kalmaktadır. Bu şekilde renkler oluşturulmaktadır.
+
+146
+00:25:49,351 --> 00:25:56,971
+Ve bu işte saniyede 60 kelimine mesela tekrarlanmak, yani 120 kere falan herhangi ise tekrarlanmaktadır.
+
+147
+00:25:57,432 --> 00:26:01,251
+Bunu bilmek zorunda mısınız? Yok, hayır. Bilmek zorunda kalmamalısınız.
+
+148
+00:26:01,251 --> 00:26:10,611
+Ya da biraz eski bir televizyon ise bu katotip ise işte arkada bir, önde bir tane ekranın hemen arkasında bir fosfor tabakası vardır.
+
+149
+00:26:11,251 --> 00:26:15,432
+Televizyonun arkasında bir tane elektron tabancası vardır, tüpü diye tabir ettiğimiz.
+
+150
+00:26:15,791 --> 00:26:24,491
+O bir elektronu yansıtaraktan elektronun düştüğü yerde renkleniyor fosfor tabakası, düşmediği yerde karanlık kalıyor.
+
+151
+00:26:24,912 --> 00:26:39,051
+Bunu en sol üst köşeden başlayıp bir satırı tarayıp ondan sonra hemen alttaki satırın en başına gidip onu da tarayıp bunu da bütün ekrandaki bütün satırları da işte saniyede 50-54-60 her nesekere tekrarlayarak da görüntüyü oluşturur.
+
+152
+00:26:39,251 --> 00:26:50,091
+Bir çalışma biçimi var. Dinlerken bile sıkılmışsınızdır yani. Bu televizyonu seyretmek için bu çalışma biçimini bilmek zorunda olmamalısınız.
+
+153
+00:26:50,091 --> 00:27:03,192
+Tek bilmeniz gereken şey televizyonun temel işlevlerini bir uzaktan kumanda ile yürütülebileceğini ve bu uzaktan kumandanın içerisinde üzerindeki evrensel bazı tuş işaretlerini bilmeniz yeterli olacaktır.
+
+154
+00:27:03,311 --> 00:27:07,251
+Açma telefonu düğmesi, program kanal değiştirme.
+
+155
+00:27:07,251 --> 00:27:10,912
+ileriki düğmeleri ve sesi açma, kapama düğmeleri.
+
+156
+00:27:11,192 --> 00:27:13,951
+Bu beş, altı tane düğmeyi bilseniz yeter.
+
+157
+00:27:14,451 --> 00:27:18,011
+İç yapısını bilmek zorunda değilsiniz ve olmamalısınızdır da.
+
+158
+00:27:18,391 --> 00:27:21,071
+Yok, bu plazmativist de daha da farklı çalışıyormuş falan filan.
+
+159
+00:27:21,071 --> 00:27:22,771
+Hiç gerek var mı? Yok.
+
+160
+00:27:23,167 --> 00:27:34,528
+Bu sayede kullanacağınız şeyin iç yapısını bilmek zorunda kalmadan kullanabiliyorsanız buna bir kara kutu olarak erişiyorsunuz anlamına gelmektedir.
+
+161
+00:27:34,887 --> 00:27:38,687
+Ve daha kolay kullanabiliyorsunuz anlamına gelmektedir.
+
+162
+00:27:39,827 --> 00:27:48,607
+Bir örnek daha vermek istiyorum. Aslında teknik olarak çok doğru değil ama biraz daha akıl da kalıcı bir örnek olduğu için şöyle söylemek istiyorum.
+
+163
+00:27:49,228 --> 00:28:04,268
+Şimdi diyelim ki eğer şeyde olsaydık, okulda olsaydık, yüz yüze anlatıyor olsaydık, diyelim ki arkadaşlarından bir tanesi, diyelim ki [öğrenci] olsun, cüzdanı evde unutmuş, o şekilde gelmiş.
+
+164
+00:28:05,067 --> 00:28:07,827
+Dered ki mesela, hocam cüzdanı evde unuttum.
+
+165
+00:28:07,827 --> 00:28:20,827
+Hani bana bir 50 lira bir borç verir misiniz? Bir öğren yeminliyim, kahvaltıydım ondan sonra da bir eve döneyim ben size yarın getiririm paranızı.
+
+166
+00:28:21,768 --> 00:28:26,427
+Ben de tabii ki derim [öğrenci] al böyle işte 50 lira hatta belki derim 600 lira.
+
+167
+00:28:26,895 --> 00:28:31,455
+İçini gör, sonra getirirsin. Getirmesem de biraz canını sağ olsun derim falan belki.
+
+168
+00:28:32,895 --> 00:28:42,175
+[öğrenci] da içini görür, sonra gelir, iade eder. Ya da öğrencilik hali yoksa. Daha sonra iade eder ya da etmez. Canını sağır. Neyse.
+
+169
+00:28:43,476 --> 00:28:54,756
+Ne yapmış oldu [öğrenci]? Benim borç verme metodumunu çağırmış oldu. Ben de ona karşılık olarak bir miktar parayı verdim. Böyle bir benzetme yapabiliriz.
+
+170
+00:28:55,256 --> 00:29:01,376
+Şimdi şöyle yapmam ben. [öğrenci], al bakma benim kredi kartım. Şifresi de [şifre].
+
+171
+00:29:01,940 --> 00:29:04,720
+Benim kartım daha var nasıl olsa kullan sonra geri getiririz.
+
+172
+00:29:05,220 --> 00:29:06,019
+Öyle demem yani.
+
+173
+00:29:06,880 --> 00:29:16,680
+Çünkü, evet, yani insanlık hali, şimdi [öğrenci] takacak kartı şimdi, ATM'ye, Yemekhan'ın yanındaki, gelecek şifreyi.
+
+174
+00:29:16,680 --> 00:29:22,600
+Bir bakacak, orada diyelim ki 20 bin lira görecek, diyecek.
+
+175
+00:29:23,220 --> 00:29:36,680
+Nefsi dürtecek, şeytan dürtecek, nefsi aslında, nefsimiz oluyor. Nefsi dürtecek, çekecek oradan 5000 lira, ondan sonra da gidecek mesela diyelim ki. Yapmazlar böyle bir şey de, örneğin komikliği olsun diye söylüyor.
+
+176
+00:29:36,680 --> 00:29:45,720
+Veyahut da bir bakacak, orada sadece 500 lira görecek, ya hoca ne kadar fakirmiş ya falan diyecek, ben utanacağım mesela.
+
+177
+00:29:46,768 --> 00:30:00,000
+Yani komik bir örnekle ama akıllı kalsın diye söylüyorum. Böyle yapmıyorum. O yüzden doğrudan, yani benim mali durumuma doğrudan ilişimi sağlayan kredi kartımı kendisine vermiyorum. Ve şifresini kendisine vermiyorum.
+
+178
+00:30:00,000 --> 00:30:09,700
+O benden borç isteme metodunu kullanarak da benim finansal durumumun bir parçasına erişip benden borç para almış olabiliyor.
+
+179
+00:30:10,500 --> 00:30:19,799
+Bu örneği vermek istiyorum. Hadi şimdi [öğrenci] öğrenci bende öğretmen farklı sınıflardan olduğumuz için bu örnek bir noktaya kadar çalışıyor.
+
+180
+00:30:19,799 --> 00:30:27,500
+Ama eğer bizler aynı sınıftan nesneler olsaydık, insan olarak eriştikimizde o zaman hiç fark etmiyor.
+
+181
+00:30:28,000 --> 00:30:30,200
+Dedik ya, en baştaki maddede yazıyor.
+
+182
+00:30:30,560 --> 00:30:35,820
+Bir nesne kendisi de aynı türden olan diğer bütün nesnelerin üye alanlarına istediği gibi erişebilir.
+
+183
+00:30:35,820 --> 00:30:39,400
+O benden istediği kadar para çeker, ben ondan istediği kadar para geri alırım.
+
+184
+00:30:39,680 --> 00:30:43,200
+O zaman bir kans olurdu aslında gerçek dünya hayatı olarak baktığımızda.
+
+185
+00:30:43,620 --> 00:30:48,580
+Fakat nesne programlar olarak baktığımızda temel çalışma bir işimi bu.
+
+186
+00:30:49,000 --> 00:30:53,740
+Farklı türden olan nesnelerin herhangi bir üyeye erişimini kısıtlayabilirsiniz.
+
+187
+00:30:54,100 --> 00:30:55,820
+Ama aynı türden olan nesnelerin...
+
+188
+00:30:56,000 --> 00:31:02,720
+O neslinin üyelerinin erişimini kısıtlayamazsınız. Öyle bir çalışma biçimi var.
+
+189
+00:31:06,804 --> 00:31:18,304
+Peki, şimdi artık bu erişim kurallarını da gördükten sonra bir sınıfı tüm ayrıntılarıyla bir YÖMEL sınıf şanasında gösterebilir hale geldik.
+
+190
+00:31:23,667 --> 00:31:45,127
+Önce şu erişim kuralları biraz açık. Birinci erişim kurallarımız public. Kamuya açık anlamda yok. Public library, public tuvalet falan. Herkese açık anlamda. Public. Bu anlamda kullanılıyor. Herkese açık. Public üyelere herhangi bir erişim kısıtlaması yoktur. Herhangi bir türden bir nesneye gelip o üyeye erişir.
+
+191
+00:31:45,844 --> 00:32:04,763
+Private ise özel anlamına gelmektedir. Kişiye özel, şahsa özel. Bu da Nesne'nin yenilimi açısından baktığımızda bir nesnenin private üyelerine farklı sınıflardan nesneler erişemez anlamına gelmektedir.
+
+192
+00:32:04,912 --> 00:32:12,112
+En temel iki erişim kuralımız bu. Genellikle bunları kullanıyor olacağız. Başka erişim türleri de var. Birazdan söyleyeceğiz.
+
+193
+00:32:12,551 --> 00:32:18,852
+Peki, şimdi artık bir sınıfın UML sınıf şemasında nasıl gösterildiğine bakalım.
+
+194
+00:32:19,471 --> 00:32:28,231
+Bir sınıfı bir dikdörtgen ile gösteriyoruz. Büyük çepere dikdörtgen. Bu dikdörtgenin üç ayrı bölmesi var. Kompartmanı bölmesi var.
+
+195
+00:32:28,231 --> 00:32:32,231
+İlk en yukarıki bölmeyi sadece sınıf adını yazıyoruz.
+
+196
+00:32:32,627 --> 00:32:39,548
+Sonra soyut sınıflar, interface gibi kavramlar göreceğiz. O zaman şuraya bir iki kelime daha verebilecek. En fazla o kadar.
+
+197
+00:32:40,607 --> 00:32:43,908
+Dikdörtgenin üst bölmesinde sadece sınıfa da yer almaktadır.
+
+198
+00:32:44,768 --> 00:32:47,908
+Orta bölmesinde üye alanları yer almaktadır.
+
+199
+00:32:48,627 --> 00:32:51,708
+Alt bölgesinde ise üye metotları yer almaktadır.
+
+200
+00:32:52,339 --> 00:33:20,339
+Üye alanları yazarken önce erişim kuralını yazıyoruz. Public artı private eksi demek ve veri gizleme ilkesine uymak için üye alanları her zaman private olarak tanımlıyoruz. O yüzden eksi ile geçiyor. Oradaki eksi hani PowerPoint'teki ya da Word'teki maddey mi anlamına gelmemekte kesinlikle anlamı var. Erişim kuralı private anlamına gelmektedir. Ve tekrarlıyorum. Bir önceki yazısını anlattım.
+
+201
+00:33:20,339 --> 00:33:28,619
+Bunun gibi örneklerden, onuz örneklerden kaçınmak için ve ilgisinin ilgisine uymak için üye alanları her zaman private olarak tanımlıyoruz.
+
+202
+00:33:28,960 --> 00:33:32,799
+Çok küçük bir sınavası var. Onu daha sonra, biraz daha sonra göreceğiz.
+
+203
+00:33:33,160 --> 00:33:38,180
+Ama her zaman için yüzde doksan dokuz, dokuz, üye alanları private olarak tanımlıyoruz.
+
+204
+00:33:38,576 --> 00:33:45,155
+Yazarken de üye alanın adı iki nokta üst üste üye alanın türü şeklinde yazıyoruz.
+
+205
+00:33:45,155 --> 00:33:48,296
+Örneğin plaka numarası için.
+
+206
+00:33:49,632 --> 00:34:01,011
+plaka no, iki nokta üst üste string şeklinde yazıyoruz. Kodla yazarken sıra değişiyor ama UML sınıf yamalarında bu şekilde, bu sırada yazıyoruz.
+
+207
+00:34:01,412 --> 00:34:08,112
+Üye alanının adı, iki nokta üst üste, üye alanın türü şeklinde. Birden fazla üye alan elbette olabilecektir sınıfta.
+
+208
+00:34:08,112 --> 00:34:17,492
+Onları da alt satıra gelecek şekilde yazıyoruz ama hepsi orta dik dörtgenin içerisinde yer alıyor.
+
+209
+00:34:17,632 --> 00:34:38,311
+Sonra da dikdörtgenin en alt bölmesine de üye metotları listeliyoruz. Üye metotları da genelde public olarak tanımlıyoruz. Çünkü bir nesnenin kullanılması için onun bir ya da birkaç tane public metotu olması lazım ki o nesne kullanılabilsin. Tüm metotları private olan bir nesne anlamsızdır.
+
+210
+00:34:39,219 --> 00:34:58,179
+Genelde işte metotları bu nedenle public olarak tanımlıyoruz. Ama o nesnenin çalışmasına yönelik kritik metotlar söz konusuysa onları da hiç çekinmeden private olarak işaretleriz yani. Bunu unutmayın. Böyle örnekler göreceğiz.
+
+211
+00:35:04,532 --> 00:35:14,252
+Eğer herhangi bir parametre almayan, geriye de herhangi bir şey döndürmeyen bir metod söz konusuysa, metodun adını yazıp, aç parantez, kapa parantez yazıp bırakıyoruz.
+
+212
+00:35:15,092 --> 00:35:23,592
+Yani parametre almasa bile bu parantezleri, metot parantezlerini yazıyoruz. Aksi taktirde üye alanıyla karıştırılma olasılığı da var.
+
+213
+00:35:23,872 --> 00:35:28,771
+Yani şu türü tanımlı değil ama belki yanlış yazmışsınızdır ne bileyim yani gibi.
+
+214
+00:35:29,192 --> 00:35:36,872
+Bu yüzden parametresiz metotları sadece metot adını yazıp yine de boş biri olsa metot parantezlerini yazıyoruz.
+
+215
+00:35:37,344 --> 00:35:54,844
+Hemen altında bir public metod parametre almıyor. Fakat geriye bir tür değer döndürüyor. Öyle bir metodiyse işte metod parantezini kapattıktan sonra 2.4'ü koyup, özür dilerim, geri dönüş tipini yazaraktan işaretliyoruz.
+
+216
+00:35:55,443 --> 00:36:06,003
+Eğer parametre alıyorsa bir metot, o zaman bu parantez içerisine parametrenin adı iki nokta üst üste parametrenin türü şeklinde yazıyoruz.
+
+217
+00:36:06,003 --> 00:36:10,804
+Nasıl ki üye alan yazarken üye alanının adı iki nokta üst üye alan türü şeklinde yazıyoruz.
+
+218
+00:36:11,304 --> 00:36:18,123
+Metot parametresini gösterdiğimizde de parametrenin adı iki nokta üst üste parametrenin türü şeklinde gösteriyoruz.
+
+219
+00:36:19,063 --> 00:36:23,443
+Eğer birden fazla parametre alınacaksa da alıyorsa da o metot o zaman...
+
+220
+00:36:23,443 --> 00:36:28,123
+O parametre ile ayırıyoruz. Şeklinde bir gösterim var.
+
+221
+00:36:30,132 --> 00:36:54,132
+Onun dışında ek olarak iki kural daha var. Hani bu ideas kapsamında tek örneklerini yapmayacağız ama ne olduğunu bilin istiyorum. Bir tanesi protected, diyez ile gösteriliyor. Protected, kalıtım ile ilgili bir erişim kuralıdır. Daha kalıtım konusunu görmediğimizden anlatamayacağım aslında. Fakat...
+
+222
+00:36:54,547 --> 00:37:20,727
+Önceden lena arkadaşım varsa onlar için söyleyeyim. Alt sınıftan olan nesneler için public gibi davranıyor. Başka, yani o kalıtım hiyerarşisi içerisinde olmayan başka sınıflar için private gibi davranıyor. Böyle bir durum var. Ama kalıtımını gördüğümüz zamanda bile protected metotları tercih etmeyeceğiz. Kalıtımını doğru kullanarak da bunlara ihtiyacımız kanlayacak.
+
+223
+00:37:22,068 --> 00:37:30,788
+İkinci kural, package kuralı. Bu Java'ya özgü bir kuraldır ve maalesef varsayılan kural da budur.
+
+224
+00:37:31,448 --> 00:37:37,068
+Anlamı da şudur, aynı paket package olarak tilde ile gösteriliyor.
+
+225
+00:37:37,408 --> 00:37:46,388
+Package olarak tanımlanan üyeler aynı paketteki tüm diğer nesneler için public gibi davranıyor.
+
+226
+00:37:46,867 --> 00:37:52,867
+Diğer paketlerdeki tanımlanmış sınıflardan nesneler için private olarak tanımlanıyor.
+
+227
+00:37:53,228 --> 00:38:03,547
+Ve eğer siz bir üye alanın görünürlük kuralı olarak hiçbir şey yazmazsanız, private veya protected yazmazsanız eğer, boş geçersiniz o kısmı.
+
+228
+00:38:03,787 --> 00:38:07,987
+Default olarak o üyenin pickage üyesi olduğu değerlendiriliyor.
+
+229
+00:38:08,547 --> 00:38:10,268
+Bu da çok doğru bir şey değil.
+
+230
+00:38:11,268 --> 00:38:12,307
+Sebebi de şu.
+
+231
+00:38:13,556 --> 00:38:19,496
+Şimdi siz kaynak kodunuzu dağıtırken class dosyalarını dağıtıyorsunuz.
+
+232
+00:38:19,895 --> 00:38:25,135
+Class dosyalarını da isterseniz bir jel paketi oluşturup öyle dağıtıyorsunuz.
+
+233
+00:38:25,407 --> 00:38:35,448
+Şimdi eğer siz o jar paketini oluştururken paketi mühürlemezseniz, o da paketi oluştururken verilen komut satırını verilen bir parametre ile ayarlanıyor.
+
+234
+00:38:36,108 --> 00:38:43,948
+Herhangi bir kullanıcı sizin paketinize kendi yazdığı bir sınıf kodunun class prosesini ekleyebilir.
+
+235
+00:38:44,692 --> 00:39:08,751
+Ve bunu ekran ekran masyada o pakette tanımlı olan sınıfların pek ıcık olarak kalmış üye alanlarına istediği gibi erişebiliriz. Sizin bütün işinizi bozlar. Böyle bir durum söz konusu. O yüzden mutlaka ve mutlaka üye alanları her zaman kayıt tanımlıyoruz. Fine Invested Konması konumu hariç konuşacağız.
+
+236
+00:39:09,168 --> 00:39:21,408
+Üye metotları ise çoğunlukla public tanımlıyoruz ama iç yapıyla doğrudan ilgili metotları da private olarak tanımlıyoruz. Bunları bu şekilde kullanmaya mutlaka mutlaka özen gösterin.
+
+237
+00:39:30,804 --> 00:39:31,243
+Evet.
+
+238
+00:39:31,635 --> 00:39:41,716
+Şimdi biz daha ne kadar veri gizleme ikisini bu şekilde duymaya çalışsak da yine de bunu her zaman için tam bir mükemmelliyetle hayata geçirmeyebiliriz.
+
+239
+00:39:41,716 --> 00:39:58,935
+Çünkü eğer bir nesne, bir başka nesne bir metodunu çağırıyorsa, o metot işte publictir tamam, üye alanları private kalmıştır ama yine de eğer bir nesne, bir başka nesneyi kullanıyorsa o zaman bu ikisinin aslında bir bağımlılık oluşmuştur.
+
+240
+00:39:59,635 --> 00:40:13,376
+Kullanılan nesnenin kaynak kodunda yapacağınız değişikliklerin bunu kullanan nesnelerde çeşitli buglar, hatalar veya istenmeyen yan etkiler oluşturma olasılığı her zaman için vardır.
+
+241
+00:40:13,836 --> 00:40:16,355
+Hiçbir zaman için sıfırdı diyemeyiz.
+
+242
+00:40:16,756 --> 00:40:20,376
+Ama eğer veri gizleme ilkesine uymasaydık iş daha beter olacaktı.
+
+243
+00:40:21,675 --> 00:40:26,916
+Bu nedenle biz elimizden geldiği kadar veri gizleme ilkesine uymaya çalışıyoruz.
+
+244
+00:40:27,635 --> 00:40:38,395
+Eğer bu şekilde bahsettim, üye alanları, üye metodları, public ama içerisinde kritik bir şeyler varsa onları da davet olarak tanınmamak rahat bir en azından 5 puan değerinde.
+
+245
+00:40:39,395 --> 00:40:42,576
+Buna o yüzden çok önem verim.
+
+246
+00:40:49,007 --> 00:40:54,068
+Hem bugün sabahtan hem dünkü derste söylemiştik, yeri geldi tekrarlayalım.
+
+247
+00:40:54,528 --> 00:41:00,207
+Erişim metotlarına accessor denilebiliyor veya access metotu denilebiliyor.
+
+248
+00:41:00,747 --> 00:41:06,108
+Ama genelde accessor sitene kadar setter ve getterlar diye söylemeyi tercih ediyorum.
+
+249
+00:41:06,367 --> 00:41:08,127
+Ama o şekilde de söylenebilir.
+
+250
+00:41:08,847 --> 00:41:11,288
+Ve adlandırması da bunların.
+
+251
+00:41:11,288 --> 00:41:16,827
+Eğer bizim üyemimizin adı member ise bunun getter metodu.
+
+252
+00:41:17,007 --> 00:41:18,688
+Get member şeklinde yazılır.
+
+253
+00:41:19,108 --> 00:41:23,648
+Şimdi biz Java'da sınıf artları hariç her şeyi küçük harfle başlatıyoruz.
+
+254
+00:41:24,127 --> 00:41:26,387
+Sadece sınıf isimlerini büyük harfle başlatıyoruz.
+
+255
+00:41:26,788 --> 00:41:34,608
+Böylece bir Java kaynak kodu içerisinde büyük harfle başlayan bir şey görürseniz, bunun sınıf adı olduğunu rahatlıkla anlayabiliyorsunuz.
+
+256
+00:41:34,927 --> 00:41:36,948
+Geri kalan her şey başka şeylerdir.
+
+257
+00:41:36,948 --> 00:41:40,207
+Üye alan adıdır, üye metot adıdır gibi.
+
+258
+00:41:42,260 --> 00:41:47,940
+Ve şey, bu durumada camel casing diyoruz.
+
+259
+00:41:48,260 --> 00:41:55,179
+Büyük harfler sanki devrinin örgücü gibi çıkıntı oluşturduğu için kelimenin içerisinde öyle bir isimraniyi tercih etmişler.
+
+260
+00:41:55,179 --> 00:41:57,519
+Evet.
+
+261
+00:41:58,900 --> 00:42:12,660
+Şimdi bu noktaya geldik ya. Artık bir örnek ilk geçen dersteki örneğimiz olan araba sınıfını ve ondan bir nesli oluşmak ve onu kullanmak işine başlayabiliriz.
+
+262
+00:42:14,920 --> 00:42:19,100
+Ama daha henüz kodlamıyoruz. Tamam biraz daha vaktimiz de var. Henüz kapatmayalım.
+
+263
+00:42:20,520 --> 00:42:22,140
+Devam edeyim hızlı çıkan anlatmaya.
+
+264
+00:42:23,956 --> 00:42:37,655
+Az önce öğrendiğimiz kurallar dahilinde bir araba sınıfı tasarlayalım. Bu arabanın hiçbir üyesi olması bile en azından bir tekir tanımlayıcılık sağlayacak bir üye alanı olsun. O da plaka numarası.
+
+265
+00:42:37,655 --> 00:42:51,476
+Şimdi ona göre bir tasarlayalım sınıfımızı. Sınıflık dört kelimeyi çiziyorum. Üst bölmeye kar yazıyorum. Orta bölmeye tekir tanımlayıcı olan plaka numarasını koyacağım.
+
+266
+00:42:51,956 --> 00:42:55,496
+Yani private, mutlaka üye alanları private olarak tanımıyoruz.
+
+267
+00:42:55,936 --> 00:42:57,235
+Üye alanlarına plate dedim.
+
+268
+00:42:57,635 --> 00:42:59,556
+İlk olarak da üst üste, türü de string.
+
+269
+00:42:59,996 --> 00:43:01,396
+Karakter katarı olacak.
+
+270
+00:43:01,916 --> 00:43:02,876
+Başka bir üye alımı yok.
+
+271
+00:43:03,476 --> 00:43:04,436
+İki tane metodu var.
+
+272
+00:43:04,784 --> 00:43:08,903
+İlk parametresi, özür dilerim ilk metodu getplate.
+
+273
+00:43:09,123 --> 00:43:14,663
+Buradan da anlıyoruz ki plaka alanını öğrenmek amaçlı erişim metodudur.
+
+274
+00:43:14,784 --> 00:43:17,143
+Bu herhangi bir parametre almasına gerek yoktur.
+
+275
+00:43:17,483 --> 00:43:20,344
+Çünkü bir araba kendi plakasının ne olduğunu bilmektedir.
+
+276
+00:43:21,623 --> 00:43:25,204
+Ve fakat bu plaka numarasının geri döndürücü için de
+
+277
+00:43:25,204 --> 00:43:31,244
+iknoktus'ta string diyerekten bu metodun geriye bir string döndürdüğünü ifade ediyoruz.
+
+278
+00:43:32,211 --> 00:43:43,211
+Plakasını değiştirebiliriz bir arabanın. Zaman içerisinde başka bir sahibe aktarıldığında veyahut da bir plakasızlığı olduğunda falan filan filan bir aracın plakası değiştirebilmektedir.
+
+279
+00:43:43,711 --> 00:43:54,311
+O yüzden bir setter metodu da koyalım. Metodun adı setplate oluyor. Adlanda geleneğiniz nedeniyle. Bu da parametre olarak aracın yeni plakası neyse onu alacaktır.
+
+280
+00:44:00,211 --> 00:44:15,192
+plate 2.4'de ekleyecektim. Ama şimdi zaten şu metodun, setter metodu olduğunu bildiğimizden, ikinci kelimede hangi yöğe alanın set edileceğini anlattığında, bu parametre adını yazmasak da oluyor.
+
+281
+00:44:15,192 --> 00:44:27,791
+Bir kısa gösterim bu. Ama eğer birden fazla parametre alan bir metod söz konusuysa, o zaman mutlaka her parametrenin adını yazmak lazım. Sadece türünü yazıp bırakmamalıyız.
+
+282
+00:44:28,211 --> 00:44:38,512
+Ama eğer işte bu gibi durumlarda tek bir parametre ise ve o parametrenin anlamı metot adından çok belli ise o zaman yazmayabiliriz.
+
+283
+00:44:40,251 --> 00:44:43,392
+İyi, bunu çizdik. Yakında kodada dökeriz.
+
+284
+00:44:44,275 --> 00:45:06,715
+Ama önce bir iki bir şey daha söyleyeyim. Şimdi bu sınıfı bu şekilde kullandık. Diyelim ki sonra aracın plakasının değiştirilebilmesini istemiyorsunuz. O zaman setter metodunu silerim veyahut da private'a çekerim. O zaman başka hiçbir nesne bir araba nesnesinin plakasının değiştiremez hale gelir mesela.
+
+285
+00:45:06,715 --> 00:45:12,255
+Veyahut da aynı paketten olan nesneler, sınıflardan olan nesneler değiştirebilsin.
+
+286
+00:45:12,275 --> 00:45:18,355
+Başka yerlerden digital emesini diyorsanız, o zaman pek açık görünümle çekersiniz bu metodu.
+
+287
+00:45:18,596 --> 00:45:22,675
+Yine onu biter. Tavsiye ettiğiniz bir şey değil de, örnek olması için söylüyorum.
+
+288
+00:45:26,291 --> 00:45:53,271
+Evet. Şimdi üyelerin özel durumları var. Ama ona isterseniz aradan sonra girelim. Belki saat 10'u bekleyen arkadaşlarım da olabilir. İşte biraz şey düşünüp böyle gevşe, rahat düşünüp. O yüzden şimdi bir 15 dakika ara verelim isterseniz. Buraya kadar hızlı gelebildik.
+
+289
+00:45:53,748 --> 00:46:15,827
+O yüzden 15 dakika ara yani 09.45 ile 10.00 arasında bir 15 dakika ara verilme arkadaşlar. Ben sadece kameranın his listi kapatacağım. Saat 10'da tekrar açıp kaldığımız yerden devam ederiz inşallah.
+
+290
+00:46:18,516 --> 00:46:27,896
+Ve şey, yine belki birazcık katılımcı beklerken sizlerin sorularını varsa da şu an kadar konuştuğum kısımlarda oradan bir tekrar tartışırız.
+
+291
+00:46:28,735 --> 00:46:29,336
+15 dakika.
+
+292
+00:46:33,108 --> 00:46:33,900
+Nasıl yapıyorduk şimdi?
+
+293
+00:46:38,835 --> 00:46:40,695
+Önce paylaşımını tuturuz samut.
+
+294
+00:46:41,335 --> 00:46:41,855
+Daha şurada.
+
+295
+01:00:37,364 --> 01:00:52,723
+10 ettik. Kaldığımız yerden başlarız da. Evet, şimdi [öğrenci] soruyor. Ben dün olan dersi kaçılmışım. Onun linki var mı? diyor. Şöyle olacaktı diye düşünüyorum. Şimdi ekran paylaşımının açık değil mi? Açık tamam. Hadi girelim bakalım.
+
+296
+01:00:54,164 --> 01:01:00,444
+Şimdi online'e girelim. Şimdi sizin de sol tarafınızda aynı panel olması lazım.
+
+297
+01:01:00,804 --> 01:01:06,424
+Toplantılar kısmına girin. Bunu dersli de toplantı şeklinde yapmıştır çünkü.
+
+298
+01:01:07,344 --> 01:01:11,104
+Katılmış olduğumuz bütün toplantıları burada...
+
+299
+01:01:11,103 --> 01:01:24,443
+Görebilirsiniz. Ben hani bütün öğrencilerimle çok çok toplantı yaptığım için epey bir liste uzun. Daha da çok vardı da biraz arşivlerim eskilerini falan filan.
+
+300
+01:01:24,443 --> 01:01:33,123
+Şimdi biraz açayım, hepsini açayım bakalım. Bizim bu dün yaptığımız toplantıyı görebileceğiz.
+
+301
+01:01:33,856 --> 01:01:35,156
+Milyon bakalım.
+
+302
+01:01:35,716 --> 01:01:37,636
+Ha alfabetik sıralı.
+
+303
+01:01:37,996 --> 01:01:41,176
+O yüzden N, N, P filan telafi diye.
+
+304
+01:01:41,236 --> 01:01:41,776
+Ha evet.
+
+305
+01:01:42,156 --> 01:01:42,576
+Şurada duruyor.
+
+306
+01:01:42,616 --> 01:01:43,636
+N, P, telafi.
+
+307
+01:01:43,976 --> 01:01:45,556
+Hatta şimdi paylaşım da buradan.
+
+308
+01:01:45,756 --> 01:01:46,196
+Şimdi doğru.
+
+309
+01:01:46,576 --> 01:01:48,336
+Bu dersin kayıtlarına girdiğinizde.
+
+310
+01:01:48,336 --> 01:01:49,916
+Çet şey de gözüküyor.
+
+311
+01:01:50,716 --> 01:01:52,636
+Kayıttan izle dediğinizde.
+
+312
+01:01:53,972 --> 01:02:14,072
+Linkler geliyor. Hepsi aynı. Yani şuradaki video kaydı da şurada video kaydı. İkisi de aynı. Sadece bilmiyorum. Belki aynı anda daha çok kişiye daha rahat istemiyorum, etmek için mi öyle yapıyorlar neden bilmiyorum ama hepsi aynı. İzle dediğinizde izleyebiliyorsunuz. Mesela şunun bir linkini kopyalayayım.
+
+313
+01:02:18,068 --> 01:02:23,128
+Ondan sonra şuraya da sol kısmına yapıştır diyeyim.
+
+314
+01:02:24,568 --> 01:02:26,947
+Tamam mı? Şuraya da ufak tarifini yazayım.
+
+315
+01:02:26,947 --> 01:02:37,148
+Online.yıldız'da sol menüden toplantı kısmına tıklıyorsunuz.
+
+316
+01:02:37,427 --> 01:02:46,927
+Hemen şuraya tekrar gireyim. Nerede? Şurada. Pardon. Şurada. Şurada. Şurada. Aa, tamam. Toplantı.
+
+317
+01:02:46,927 --> 01:03:02,128
+Toplantı kısmına girip oradan ayrıntılar tıklayıp da izle linklerini.
+
+318
+01:03:02,612 --> 01:03:04,692
+görebilirsiniz.
+
+319
+01:03:05,692 --> 01:03:13,052
+O linki yapıştırmış oldum diyebiliriz.
+
+320
+01:03:15,731 --> 01:03:31,332
+Şimdi bakalım, tekrar bakalım. Evet, toplantılar. Ondan sonra toplantıları iletiştiriyorsunuz. Sizlerin çok top 1040 kadar çok toplantınız yoktur diye düşünüyorum. Evet, ondan sonra çama şeyde gördüğünüzde detay. Evet, detaymış.
+
+321
+01:03:33,332 --> 01:03:34,332
+Yani tamam.
+
+322
+01:03:35,552 --> 01:03:40,072
+I don't love the tie.
+
+323
+01:03:42,931 --> 01:03:50,231
+Evet, [öğrenci], yani bu herkes için gerekli bir soru. Cevabını da vermiş olduk vesilenizle.
+
+324
+01:03:51,795 --> 01:04:00,475
+Peki, kaç kişi olduk? 14. Çok da fazla değiliz biz. Neyse, yani o odur ondan sonucuma.
+
+325
+01:04:01,235 --> 01:04:11,615
+Bugünün önceki saatlerini ise zaten derslere tıkladığınızda girip görebiliyorsunuz. O zaten bildiğiniz, daha önceki dönemlerde de yaptığımız bir şeydi.
+
+326
+01:04:13,755 --> 01:04:14,235
+Evet, peki.
+
+327
+01:04:14,739 --> 01:04:30,479
+Şimdi kavramızı yerden devam edelim. Üyelerin özel durumları var. Şimdi temel düşüncemiz şu sloganımızdı. Her nesne farklı bir bireydir. Her nesnenin durum bilgisi kendisine özeldir ve farklıdır.
+
+328
+01:04:31,507 --> 01:04:44,407
+Demiştik. Şimdi bu durumu aksine davranılması gereken bazı anlar olabilir. Bununla ilgili kuralları görüyor olacağız.
+
+329
+01:04:44,407 --> 01:04:50,187
+Şimdi birinci durumumuz statik olma durumu. İngilizce statik diye yazıyoruz.
+
+330
+01:04:51,219 --> 01:04:53,219
+Ona şu nedenle ihtiyacımız var.
+
+331
+01:04:53,739 --> 01:05:02,339
+Şimdi, evet tamam dedik, bir nesnenin durumu, yani her nesnenin durumu aynı türden olsalar bile farklıdır demiştik.
+
+332
+01:05:02,399 --> 01:05:04,599
+Her nesne farklı bir biriyettir demiştik.
+
+333
+01:05:04,599 --> 01:05:14,139
+Fakat bazı durumlarda belirli bir türden nesnelerin tümünün aynı ortak bir alanı paylaşmalarını isteyebilirsiniz.
+
+334
+01:05:14,592 --> 01:05:25,311
+Burada anahtar kelime, share yani paylaşmak yani ortak olarak kullanmak. Yani statik eşitliği ortak olarak kullanılan anlamına gelmektedir.
+
+335
+01:05:26,356 --> 01:05:37,716
+Bir üye alanı adının başına static yazarsanız, bu üye alan bu şekilde o türden olan tüm nesneler için ortak olarak kullanılıyor demektir.
+
+336
+01:05:38,256 --> 01:05:46,516
+Yani o üye alanı bir nesne için değiştirdiğinizde her nesne için değiştirmiş oluyorsunuz.
+
+337
+01:05:47,635 --> 01:05:53,635
+Bu da bize bellek tasarrufu ve mantıksal tutarlılık sağlıyor.
+
+338
+01:05:54,228 --> 01:06:02,128
+Örnek olarak, şimdi her otomobilin dört tekerleği var. Bir araba yarışı oyunu hazırlıyorsunuz, diyelim ki.
+
+339
+01:06:02,128 --> 01:06:08,448
+Ve ekranda birden fazla araba nesnesi çizilecek, diyelim ki.
+
+340
+01:06:08,788 --> 01:06:12,628
+İşte kaç tane tekerlek çizeceksiniz? Dört tane tekerlek çizmeniz lazım.
+
+341
+01:06:14,228 --> 01:06:22,148
+Bir de şu var, yani veriyi en uygun, en ilişkili olduğu nesnede tutmak gerekmektedir.
+
+342
+01:06:22,588 --> 01:06:29,148
+Arabaların tekerlek sayısı dediğimize göre bu üye alan araba sınıfının içerisinde yer almalıdır.
+
+343
+01:06:29,548 --> 01:06:31,828
+Başka bir sınıfda yer verilmesi doğru değil.
+
+344
+01:06:33,148 --> 01:06:40,068
+Şimdi bu arabalar çizilirken arabanın tekerlek sayısı öğrenilecek, kaç tanesi o kadar tekerlekta çizilecek benimki mesela.
+
+345
+01:06:41,523 --> 01:06:44,043
+İçileceğiniz bütün arabaları dört tekerleği bulacak.
+
+346
+01:06:44,443 --> 01:06:53,963
+Eğer biraz gerçekçi bir yarış simülasyonu yapıp bir arabanın bir tekerleği kırılırsa filan filan giderse gibi senaryoları oyunumuza dahil etmedik.
+
+347
+01:06:53,963 --> 01:06:56,683
+Bu durumda her araba için dört tekerlek çileceğiz.
+
+348
+01:06:56,823 --> 01:07:02,403
+Tamam, araba sınıfına tekerlek sayısı diye bir üye alan koyacağız mesela diyelim ki.
+
+349
+01:07:02,903 --> 01:07:06,203
+Tamam da bunu yaparken, bu arada acaba başka bir şey var mı?
+
+350
+01:07:06,443 --> 01:07:07,803
+Daha sonra da metotlara geçiyor, tamam.
+
+351
+01:07:08,123 --> 01:07:08,663
+Da dursun.
+
+352
+01:07:09,460 --> 01:07:22,599
+Bunu yaparken, bunu yaparsak eğer araba sınıfına ara teker sayısı üye alanı koyarsak, o zaman teker sayısı nedir? Integer. Integer 4 byte ile simgeliniz.
+
+353
+01:07:22,599 --> 01:07:31,779
+Hadi short integer dediniz 2 byte ile düşürünüz. Problem değil. Ama eğer 50 tane ya da yüzlerce araba çizecekseniz,
+
+354
+01:07:32,179 --> 01:07:35,659
+Her bir çizeceğiniz araba için bir araba nesnesi oluşturmamız lazım.
+
+355
+01:07:36,139 --> 01:07:46,539
+Ve her oluşturduğunuz araba nesnenin ikisi için ayrı bir, o nesne, her nesnenin kendi bellek alanında ayrı bir teker sayısı alanı açılmış olacak.
+
+356
+01:07:46,879 --> 01:07:50,199
+Her biri için 4 ya da short dediğimiz 2 byte yer ayrılacak.
+
+357
+01:07:50,619 --> 01:08:00,159
+Hepsinde aynı değer olmasına rağmen hepsinin için ayrı ayrı bellek alanı harçlanacak ve bu bir tasarruf, doğru bir tasarruf olmamış olacak.
+
+358
+01:08:00,179 --> 01:08:18,180
+Halbuki madem o otak, o zaman bir tane tekastörüsü için bir tane yer almışsa, diğer bütün sınıflar da olan nesneler oraya baksa şeklinde düşünülür. Bu durumda da o bir alanı stik olarak yazaraktan hem belek tasarruf yapmış olursunuz, hem de...
+
+359
+01:08:20,435 --> 01:08:28,115
+Herhangi bir şey, araba nesnesi, diğerlerinden bağımsız olarak kafasına göre benim üç şekerim var kardeşim diyemez.
+
+360
+01:08:28,915 --> 01:08:43,675
+Bu gibi durumlarda tekrarlıyorum, bir üye alanın ortak olarak belli bir sınıftan, aynı sınıftan olan tüm nesneler tarafından ortak olarak kullanınız isteniyorsa, o zaman o üye alanı statik olarak işaretleriz.
+
+361
+01:08:45,555 --> 01:08:48,216
+Girelim statik üye metotlara.
+
+362
+01:08:49,195 --> 01:08:53,475
+Şimdi yine her nesne farklı bir Brady solunanın kapsamında,
+
+363
+01:08:53,855 --> 01:08:58,636
+önünün iki farklı insan nesnesine isimlerini soğuttuğumuzda farklı yanıtlar almıştık.
+
+364
+01:08:58,895 --> 01:09:01,015
+Tamam isimlerini söyledim ama farklı davranıyorlar.
+
+365
+01:09:01,216 --> 01:09:03,456
+Farklı isimler, farklı veriler geri döndürüyorlar.
+
+366
+01:09:03,456 --> 01:09:11,515
+Fakat bazen de aynı türlü olan bütün nesnelerin ortak bir davranışı paylaşmalarını istersiniz.
+
+367
+01:09:11,923 --> 01:09:16,604
+Bu durumda da ilgili üye metodu statik olarak tanımlarsınız.
+
+368
+01:09:19,404 --> 01:09:27,404
+Ve bu arada ister statik üye alan olsun, ister statik üye metot olsun, şu kısmı değmeyi unutmuşum, önemli.
+
+369
+01:09:28,203 --> 01:09:35,923
+Madem bir statik üye alan, ya hep ikisinin de için aynı, bir statik üye alan ya da bir statik üye metot ya da...
+
+370
+01:09:36,000 --> 01:09:44,908
+İkisini birden tek cümleyle söylersem, bir statik üye, madem o sınıftan tüm nesneler tarafından paylaşılıyor, o zaman...
+
+371
+01:09:52,180 --> 01:09:53,460
+Pardon, özür dilerim.
+
+372
+01:09:55,079 --> 01:09:58,520
+Sonuca da şey o zaman böyle farklı bir aksiyon olabiliyor.
+
+373
+01:09:59,059 --> 01:09:59,840
+Şimdi ne diyorduk?
+
+374
+01:09:59,840 --> 01:10:11,159
+Madem statik üyelere her nesne üzerinden aynı şekilde erişiliyor, aslında o zaman statik üyelere nesne üzerinden erişilmesi gerekmiyor.
+
+375
+01:10:11,680 --> 01:10:14,180
+Sınıf üzerinden erişilebilir statik üyelere.
+
+376
+01:10:14,420 --> 01:10:15,899
+Çünkü ortak kullanılıyor yani.
+
+377
+01:10:16,239 --> 01:10:19,100
+Bir nevi nesneden bağımsız gibi düşünebilirsiniz.
+
+378
+01:10:20,435 --> 01:10:35,895
+Nesneden ziyade sınıfa bağımlı olarak düşünüyorsunuz. Tamam, her nesne için ayrı ayrı statik üyalar için yer ayrılmayacak veyahut da statik üye metot için ayrı yer ayrılmayacak. Fakat nerede ayrılacak, nereyle ilişkilendirilecek?
+
+379
+01:10:36,595 --> 01:10:50,055
+Sınıfın kaynak kodu, bellekteki kaynak kodu üzerindendir eşleştirme yapılıyor. Bunun koda yansıması da statik üyelere sınıf adı nokta üye adı şeklinde erişebileceğiniz anlamına geliyor.
+
+380
+01:10:50,375 --> 01:10:59,715
+Nesne üzerinden bir de sınıfı üzerinden bu statik üyelere ister bir alan metod olsun, ister bir metod olsun erişilebilir.
+
+381
+01:11:01,492 --> 01:11:06,692
+Bu metoduna şimdi örnek olarak şunu vermek istiyorum.
+
+382
+01:11:07,231 --> 01:11:12,131
+Mesela Hardiye'de şeydir, gelinektir.
+
+383
+01:11:12,551 --> 01:11:24,012
+Yoklama yapılırken, ilk yoklama yapılırken, öğrenci numarası alırken Mustafa Kemal Atatürk'ün öğrenci numarasına sıra geldiğinde bütün öğrenciler ayağa kalkar ve burada derler.
+
+384
+01:11:24,351 --> 01:11:29,771
+Aynı sınıftan olan tüm nesneler ortak bir davranış sergilemiş olur.
+
+385
+01:11:30,432 --> 01:11:40,092
+Veyahut da mesela aranızda eski Türk filmlerini özellikle Cüneyt Arkın'ın Karamurat filmini seyredenler varsa bilirler.
+
+386
+01:11:41,252 --> 01:11:46,912
+Bilmeyenler için söyleyeyim, çoğumuz da bilmeyecektir diye düşünüyorum ama bu illaki çıkıyor aradan bir karışımdan bilen.
+
+387
+01:11:47,551 --> 01:11:49,112
+Sınıfta olsa bir yoklama yapardım.
+
+388
+01:11:49,423 --> 01:12:11,484
+Şimdi, Karamınat bir Osmanlı fedaisi, özel görevlere çıkıyor. Daha Bizans yıkılmamışken özel görevlere çıkıyor. Çok meşhur bir savaşçımız. Bir dolu görevler yapıyor. Ama yakalanabiliyor da tabii ki. E tabii herkes peşinde, bütün Bizans askerleri peşinde Karamınat'ı.
+
+389
+01:12:17,423 --> 01:12:24,783
+Çürümeye bırakırlar falan. Sonra onu bir sorgulamak gerekir. Gardiyan geliz, zindana sorar.
+
+390
+01:12:24,863 --> 01:12:33,583
+Karamurat kim diye. Oradaki zindandaki diğer Osmanlı esirleri de, Türk Osmanlı esirleri de kimse Karamurat'ı açığa çıkarmak istemez.
+
+391
+01:12:33,904 --> 01:12:43,543
+Hepsi bizden, Karamurat benim der. Aynı soruya, gardiyanın aynı sorusuna, aynı mesajına, aynı metot çağrılığına hepsi aynı hınır veriyor.
+
+392
+01:12:43,543 --> 01:12:44,884
+Karamurat benim diyor.
+
+393
+01:12:45,423 --> 01:12:55,984
+Bu tip aynı sınıftan tüm nesnelerin ortak davranması istenildiği durumlarda ilgili üye metodu statik anahtar kelimesiyle tanımlarsınız.
+
+394
+01:12:56,423 --> 01:13:05,304
+O zaman yine aynı türden tüm nesneler o şekilde davranır ve yine aslında o üye metoda erişmek için nesne üzerinden erişmeye gerek kalmaz.
+
+395
+01:13:05,703 --> 01:13:08,144
+Sınıfa da üzerinden de erişilebiliniz.
+
+396
+01:13:09,224 --> 01:13:10,724
+Yansıda gördüğünüz gibi.
+
+397
+01:13:12,115 --> 01:13:34,996
+Statiğin yani anlamı hem üye alanlar hem üye metodlar için ortak kullanım anlamına gelmektedir. Lütfen bu şekilde aklınızda kalsın. Çünkü birazdan final özel durumunu da göreceğiz. Final özel durumunu da bunları Türkçe anahtar kelimeyle Türkçe'ye çevirip işte statik durağın final son o zaman karışıyor bunlar birbirine. Lütfen aklınızda statik ortak kullanım.
+
+398
+01:13:36,148 --> 01:13:43,128
+Final ise bir kez değer atını değiştirilemez şeklinde aklınızda kalsın.
+
+399
+01:13:43,468 --> 01:13:44,927
+Evet, söylemiş olduk gerçi.
+
+400
+01:13:45,208 --> 01:13:46,568
+Biraz daha ayrıntılı söyleyelim.
+
+401
+01:13:47,048 --> 01:13:48,148
+Final üye alanlar.
+
+402
+01:13:48,747 --> 01:13:54,927
+Şimdi bazen bir üye alanın değerinin değiştirilememesini istersiniz.
+
+403
+01:13:55,708 --> 01:13:59,347
+Normalde bir neslinin üye alanlarını istediğiniz gibi setter metoduyla değiştirirsiniz.
+
+404
+01:13:59,847 --> 01:14:02,868
+Ne zaman ne kadar sık isterseniz, nasıl isterseniz öyle değiştirirsiniz.
+
+405
+01:14:03,380 --> 01:14:06,780
+Fakat bunun değiştirilememesini isteyebilirsiniz.
+
+406
+01:14:07,399 --> 01:14:11,319
+Örneğin aslında teket tanımlayıcıların değiştirilmesi istenmeyebiliriz.
+
+407
+01:14:12,399 --> 01:14:14,819
+Hani fakat araba örneğindeki plak için böyle değildir.
+
+408
+01:14:14,880 --> 01:14:19,360
+Bu değiştirilebilir ama örneğin öğrencilerin öğrenci numarası değiştirilemez.
+
+409
+01:14:21,059 --> 01:14:23,500
+Personelin seçil numarası değiştirilemez.
+
+410
+01:14:24,115 --> 01:14:39,755
+Türkiye Cumhuriyeti vatandaşlarının TC kimlik numaraları değiştirilemez. Bunlar bir kere attınız, ondan sonra bir daha da asla değiştiremez. Böyle bir tür üye alan tanımlamak istiyorsanız eğer, o zaman o üye alanını tanımlarken final kelimesini yazıyorsunuz.
+
+411
+01:14:40,819 --> 01:14:46,539
+Final Yalan'da sadece nesne ilk oluşturulduğunda değer atanır, bir daha da değiştirilemez.
+
+412
+01:14:46,959 --> 01:14:48,340
+Bu arada parantez için de söyleyeyim.
+
+413
+01:14:48,340 --> 01:14:54,340
+Bir nesnenin oluştururken onun constructor metodunu çağırarak oluştururuz.
+
+414
+01:14:55,759 --> 01:14:57,340
+Birazdan o konulara da gireceğiz.
+
+415
+01:15:00,595 --> 01:15:28,536
+Genelde işte final üye alanlara değer atamak için ne zaman beklenir? O nesnelerin oluşturulduğu an beklenir. Bunu da işte Construct'ın metod üzerinden yapacağız. Örneğin şasi numarası böyle bir şey. Plakan numarası değişir ama şasi numarası değişmez. Fabrikadan çıktığı zaman kasasının üstüne yazılır. Belki birkaç tane daha yazılıyordu. Çok ağırlısı bilmiyorum. Bir de aynı numara bir de ön camın oralarda bir yerlere de yazılıyor. Böylece değiştirilmesi.
+
+416
+01:15:28,595 --> 01:15:30,815
+engellenmiş oluyor diyebilirim.
+
+417
+01:15:32,255 --> 01:15:32,715
+Peki.
+
+418
+01:15:33,264 --> 01:15:59,984
+Final üye metotlar ne demek? Final üye metotların anlamını açıklamak için kalıtımı bilmemiz gerekiyor. Henüz kalıtıma geldik, ona daha var. Fakat şöyle söyleyeyim, bilen arkadaşlar için söyleyeyim. Final üye metotlar yeniden tanımlanamazlar, override edilemezler. Onu da kalıtımı görünce şey edeceğiz, tekrar hatırlatacağız, söyleyeceğiz, anlatacağız aslında. Durum bu arkadaşlar.
+
+419
+01:16:01,587 --> 01:16:07,067
+Bu arada bir üye alan ya da metod hem final hem statik olabilir.
+
+420
+01:16:08,027 --> 01:16:12,387
+Yani sadece final olur veya sadece statik olur bunlardan sadece birini kullanır diye bir şey yok.
+
+421
+01:16:12,867 --> 01:16:15,847
+Bir üye hem final hem statik olabilir.
+
+422
+01:16:16,227 --> 01:16:19,787
+Çünkü bunların kullanım amaçları farklı ve birbiriyle gelişmiyorlar.
+
+423
+01:16:19,787 --> 01:16:27,487
+Final sadece bir kez, statik ise ortak kullanım anlamına gelmektedir.
+
+424
+01:16:27,840 --> 01:16:38,719
+Eğer bunları UML sınıf şamasında göstereceksek ise o zaman normalde üye alanları, üye alanları iki nokta üstte üye türü şeklinde yazıyorduk ya.
+
+425
+01:16:38,719 --> 01:16:48,500
+Ondan sonra parantez açıp final ise final, static ise static, hem final hem static ise final, virgül static şeklinde yazıyoruz.
+
+426
+01:16:48,840 --> 01:16:52,340
+UML sınıf şamalarında da bu şekilde gösteriliyorlar.
+
+427
+01:16:55,840 --> 01:17:04,300
+O zaman onun geri dönüş tipi varsa onu yazdıktan sonra yine kılık parantez içerisinde final işte V veya statik şeklinde yazıyoruz.
+
+428
+01:17:04,840 --> 01:17:07,659
+Buradaki kılık parantezler metot gövdesi değil kesinlikle.
+
+429
+01:17:07,979 --> 01:17:09,659
+Bununla karıştırılmaması gerekmektedir.
+
+430
+01:17:10,600 --> 01:17:13,440
+Ve niye yürenme standartını oluştururken
+
+431
+01:17:13,939 --> 01:17:25,619
+Bu özel durumları yazmak için, belirtmek için kırık parantez kullanmışlar da, ne bileyim, stereotip falan kullanmamışlar. Onu da merak ediyorum doğrusu. Belki bir karışıma çıkar, bilemiyorum.
+
+432
+01:17:26,500 --> 01:17:32,039
+Yani hep metot göndesi tanımlamak için kullanılan bir karakteri, karakterç verimliyordu.
+
+433
+01:17:32,039 --> 01:17:38,199
+O da kullanmışlar, pek an vermiyor doğrusu. Neyse, standart bu şekilde olmuş. Kullanımı da bu şekilde.
+
+434
+01:17:41,296 --> 01:17:57,916
+İsterseniz tabii UMLN notasyonu da düşüp göreceğim zaten onun üstüne de finalistik falan yazabilirsiniz ama çok daha verimsiz oluyor. Hangi üye alan ya da metot bu şekillerde tanınlandıysa onların yanına bu şekilde gösterim yazmak çok daha doğru ve rahat.
+
+435
+01:18:00,467 --> 01:18:17,608
+Aksini kullandığım şamalar vardı. Ders notlarında bir düzelttim. Yakın zamanda bu ders notlarının son halinde sisteme yükleyeceğim inşallah. Hedefim bu cuma ya da işte hafta sonu. Ona bakalım inşallah. Çok da gecikmem.
+
+436
+01:18:20,608 --> 01:18:24,868
+Evet, şimdi Constructum'la zaten sığırtmaya başlamışız.
+
+437
+01:18:25,908 --> 01:18:33,908
+Constructor metotlar çok özel metotlar. Bir nesne oluşturulacağı zaman programcının açık olarak çağırdığı bir metottur.
+
+438
+01:18:35,247 --> 01:18:43,968
+Türkçe olarak değişik çeviriler var. Önce bir amacından biraz daha konuşayım da ondan sonra kelimeler daha anlamlı olacaktır.
+
+439
+01:18:44,448 --> 01:18:51,268
+Constructor metotlar bir nesnenin üye alanlarına ilk değerlerin atanması için kullanılırlar.
+
+440
+01:18:52,435 --> 01:19:03,895
+Biz bu derste constructor metotları özel bir ilgi göstereceğiz. Mutlaka ve mutlaka constructor metotlar kodlayacağız. Varsenam constructor'a yetinmeyeceğiz.
+
+441
+01:19:03,895 --> 01:19:15,715
+Ve hatta öyle ki sınav formatında size genelde bir ana tasarım verip bir UML sınıf şeması şeklinde soruları bunun üstüne.
+
+442
+01:19:16,112 --> 01:19:17,551
+oluşturuyor olacağız.
+
+443
+01:19:18,172 --> 01:19:28,532
+Ve UML sınıf şemasının üstünde ve altındaki bir açıklamada diyeceğiz ki, dikkat, sınıf şemasında bazı ayrıntılar gizlenmiş olabilir.
+
+444
+01:19:29,731 --> 01:19:30,851
+Kasten gizleyeceğiz.
+
+445
+01:19:30,851 --> 01:19:31,811
+Mesela.
+
+446
+01:19:32,207 --> 01:19:39,768
+Sınıfın üç kompartmanlı şemasını çizerken, constructor metod yazmayacağız, işine yer almayacak.
+
+447
+01:19:39,987 --> 01:19:45,688
+Ama siz bileceksiniz ki, bilmelisiniz ki, her sınıfta mutlaka constructor metod tanınanmadadır.
+
+448
+01:19:46,427 --> 01:19:51,727
+Siz o sınıfın kodunu yazarken ilgili soru kapsamında, constructor metodunu da yazacaksınız.
+
+449
+01:19:53,867 --> 01:19:59,727
+Çünkü constructorlar işte bir nesne ilklendirilirken, ilk oluştuğu anda üye alanlarına...
+
+450
+01:20:00,000 --> 01:20:09,079
+İlk değerlerin atanması için kullanılıyorsa ve mutlaka bizim iç mantığımızdaki nesnelerin bir tekir tanımlayıcısı olacaksa ki olacak,
+
+451
+01:20:09,940 --> 01:20:15,500
+tekir tanımlayıcısı olmayan bir nesneyi oluşturmak anlamsız ve mantıksız olacak.
+
+452
+01:20:16,559 --> 01:20:21,720
+O yüzden mutlaka bir nesne oluştururken ona tekir tanımlayıcısını verebilmesi için
+
+453
+01:20:22,228 --> 01:20:31,007
+Constructor metodunun kodlanması ve o Constructor metodunun o tekir tanımlayacağı parametre olarak alması gereklidir, gerekecek.
+
+454
+01:20:31,007 --> 01:20:39,128
+Biz bunu sınıf kışlamasında yazmazsak bile siz en gerekli olanlarını yazıp devam edeceksiniz soruyu çözmeye.
+
+455
+01:20:39,788 --> 01:20:42,407
+İlk gizli ayrıntım bu.
+
+456
+01:20:43,731 --> 01:20:49,292
+Sonra ders içerisinde bunların yeri geldikçe tekrar ve vurgulayarak bunu anlatacağız.
+
+457
+01:20:49,292 --> 01:20:59,131
+Şimdi, madem gördüğünüz gibi constructor bu şekilde üye alanların ilk değerlerinin atanmasına yarıyor.
+
+458
+01:20:59,492 --> 01:21:02,872
+O zaman şimdi chat'e yazacağım, sohbet kısmına yazacağım.
+
+459
+01:21:03,592 --> 01:21:08,891
+Şimdi, constructors, constructors, buna.
+
+460
+01:21:09,427 --> 01:21:18,208
+İlklendirici denilebiliyor, yapılandırıcı denilebiliyor, kurucu denilebiliyor.
+
+461
+01:21:18,728 --> 01:21:27,728
+Yani Türkçe kaynaklara baktığımızda bu constructor ifadesini bu üç şekilde söyleyebiliyorlar.
+
+462
+01:21:27,728 --> 01:21:31,368
+Tekrar şu şeye geçeyim de sunumumu da geçeyim.
+
+463
+01:21:37,395 --> 01:21:53,395
+Yapılandırıcı, kurucu. Üç şekilde çevireni gördüm farklı farklı kaynaklarda. Dördünçüsüne lastimdüm ama lastimlerin arkadaşım varsa lütfen söylesin. Ondan sonra acaba onu da kelime dağarcığımıza ekleyelim.
+
+464
+01:21:54,515 --> 01:22:05,355
+Neden ilklendirici deniliyor? İşte Construct'ın en önemli gribi olan üye alanları ilk değerlerinin atanması için kullanılıyor. O yüzden ilklendirici tercih edilebiliniz.
+
+465
+01:22:05,355 --> 01:22:07,355
+Kurucu.
+
+466
+01:22:07,828 --> 01:22:23,788
+Ben kurucu deneyi seviyorum çünkü konstraktı kurucu, koku aynı sessiz harfli ve yakın sesli harfle gittiği için konstraktı deneyi kurucu şeklinde söylemek daha otomatik ve doğal geliyor bana.
+
+467
+01:22:24,408 --> 01:22:32,148
+Yaptığı bir işte o yani Nesli kuruyor, yapılandırıyor, ilklendiriyor. Zaten bunlar birbirine eş anlamlı kelimeler.
+
+468
+01:22:35,828 --> 01:22:41,368
+Hani bir nesneyi bir kere yapılandırıyorsun ama ondan sonra yapılandırmaya devam edebilirsin.
+
+469
+01:22:41,548 --> 01:22:47,948
+Yani üye alanlarının değişikliği, ondan sonra normal metotları o nesnenin durumunda değişikliğe sebep olabilir falan.
+
+470
+01:22:47,948 --> 01:22:53,828
+O yüzden yapılandırıcıya çok sıcak bakmıyorum ama yine de kullananlar oluyor. Aklınızda olsun.
+
+471
+01:22:56,948 --> 01:23:00,208
+Bir de finalizer metotları var.
+
+472
+01:23:01,235 --> 01:23:12,435
+Finalizer metot ise bir nesne bellekten tamamen silineceği zaman Java saner mekinesi tarafından otomatik olarak çağırılan metottur.
+
+473
+01:23:13,755 --> 01:23:22,536
+Constructor metodu kullanırken siz kod içerisinde işte new bilmem ne filan diye konut satırı yazaraktan çağırıyorsunuz.
+
+474
+01:23:22,536 --> 01:23:28,536
+Ama Finalizer metodu siz kendiniz kaynak koda bir çağrı yazaraktan çağırmıyorsunuz.
+
+475
+01:23:29,876 --> 01:23:37,916
+Çünkü Java dilinde bellek üretimi işlemleri Java sanal makinesine bırakılmıştır.
+
+476
+01:23:38,579 --> 01:24:02,579
+Siz, hani, Sİ'de gördük ya, veri yapılan, Sİ'de Maldok Dinamik Bellek Yönetimi konularını gördük. Veri yapılan dersinde de bunları kullanıyorsunuz, ediyorsunuz falan. Bu şekilde dinamik bellek yönetimini siz yapmak zorunda değilsiniz. Bir veri yapısını tanımladığınızda, eğer isterseniz belirli bir kapasitede olmasını garantileyecek bir metot çağırıyorsunuz. Ama onun dışında...
+
+477
+01:24:04,467 --> 01:24:12,467
+O veri yapısının gerçekleme algoritmalarında, Java'nın kendi kadarlardığı süreçler kapsamında işler otomatik olarak yürüyor.
+
+478
+01:24:12,667 --> 01:24:19,148
+Yani siz bir ağaç yapısına diyelim ki veya bağlı liste yapısına istediğiniz kadar eleman ekleyebilirsiniz.
+
+479
+01:24:19,587 --> 01:24:24,288
+İlgili bellek ayırma işlemleri Java Sınavı Meklisi tarafından otomatik olarak yapılıyor.
+
+480
+01:24:24,407 --> 01:24:28,108
+Bu amaçlıca sizin ekstra kodu yazmanıza hiç mi hiç gerek kalmıyor?
+
+481
+01:24:29,395 --> 01:24:38,195
+Madem bellek yönetimi böyle otomatik, nesneler eğer ayırmak da otomatik, nesnelerin silinmesi de otomatik olarak yürütülmüş oluyor.
+
+482
+01:24:39,195 --> 01:24:46,195
+Java sanal makinesi bir nesneyi bellekten tamamen sileceği zaman finalizer metodu çağırıyor.
+
+483
+01:24:46,635 --> 01:24:51,195
+Siz bir finalizer metodu yazmak istiyorsanız eğer bir sınıfa, adını finalize diyorsunuz.
+
+484
+01:24:52,275 --> 01:24:57,275
+Void bir metodu oluyor, yani herhangi bir şeyi geriye döndürmüyor, herhangi bir parametre de almıyor.
+
+485
+01:24:57,395 --> 01:25:04,675
+Public, white, fine lines diyorsunuz. Aç parantez, kapak parantez, sonra kırık parantez gövdesi içerisine kodunuzu yazıyorsunuz.
+
+486
+01:25:05,275 --> 01:25:13,895
+Hadi bir yazayım da bir örneğini göreyim, çalıştığını göreyim, güle güle dünyadasın falan nesne diye uğraşmak istiyorsanız, Allah kolaylık versin.
+
+487
+01:25:14,515 --> 01:25:17,855
+Bunu çok kolay yapamıyorsunuz. Sebebi de şu.
+
+488
+01:25:18,579 --> 01:25:32,299
+Aslında Java sanal makinesi çalışırken arka planda bizde garbage convective yani atık toplayıcı adı verilen bir prosesle ayrı bir threadle kanalda çalışıyor.
+
+489
+01:25:32,299 --> 01:25:46,319
+Ve artık erişilmeyen nesneleri yani herhangi bir link pointer falan kanlamamış olan nesneleri doğrudan silmiyor da silinebilir şeklinde işaretliyor.
+
+490
+01:25:47,572 --> 01:25:56,131
+Onun dışında, şimdi hemen soru geldi, baktım, get the static, find the constant, reyliği örnek yazabiliriz, yazacağız.
+
+491
+01:25:56,352 --> 01:25:59,492
+Hepsini yazacağız, merak etmeyin, ayrıntı olarak dedikleyeceğiz.
+
+492
+01:25:59,492 --> 01:26:08,952
+Ama benim bu derste tavrım şu oldu, öncelikle bütün bir kavramları anlatayım, bir tek şimdi bu constant üstüne de biraz bir şey söyleyeceğiz.
+
+493
+01:26:09,252 --> 01:26:14,512
+Ondan sonra artık komple bir bütüncülüğü örnek üstünde bunların hepsini yapacak hale geleceğiz.
+
+494
+01:26:14,952 --> 01:26:15,512
+Az kaldı.
+
+495
+01:26:15,572 --> 01:26:23,492
+Bizi izlemene de var. Tamam. Şimdi garbage collector'a geri dönüyorum. Söylediği gibi garbage collector'ın konusunu garsta anlatmaya devam ediyorum.
+
+496
+01:26:23,852 --> 01:26:39,152
+Şimdi bir nesne artık kullanılmadığı zaman, daha doğrusu ona işaret eden herhangi bir başka bir nesne olmadığı zaman garbage collector bu nesneleri silinebilir şeklinde işaretliyor sadece.
+
+497
+01:26:39,152 --> 01:26:43,412
+Bir tabloda işte şu adresle şu nesne artık kullanılmıyor şeklinde.
+
+498
+01:26:43,572 --> 01:26:55,112
+İşaret koyuyor. Gerçekten silmeye başlaması ise, o Java sınav makinesinde daha doğrusu sizin o uygulamanıza ayrılmış olan bellik azalmaya başlayınca yapılıyor.
+
+499
+01:26:55,667 --> 01:27:13,108
+Ama default olarak da bir Java uygulamasına sanal bellek üzerinden, sanal makinelerin üstünden ayrılan, varsayılan bellek 256 MB. Büyük bir rakam bu. 256 MB alan ayrılıyor bir Java sanal makinesine.
+
+500
+01:27:13,108 --> 01:27:23,667
+Şimdi sizin yazdınız nispeten küçükçe, orta bir sınıf bile olsa bir sınıf kaç byte tutar mesela? Yani bir kilobay tutsun, iki kilobay tutsun.
+
+501
+01:27:23,667 --> 01:27:24,387
+Bilobar, ik tu son.
+
+502
+01:27:24,787 --> 01:27:44,227
+2 kilobayt tutar 256 megabayt alanlar. Yani kilo, mega yani 2000 nebdak kilo, mega ve bir de 2 kilobayt, 2 megabayt ama 200 yani bin şey iki tane daha sıfır koy 10 bin, 100 bin.
+
+503
+01:27:44,227 --> 01:27:52,368
+100 bin tane nesne buluşturacaksınız da ondan sonra onlardan bazılarının işaretçilerini artık kaldırmaya çalışacaksınız.
+
+504
+01:27:52,787 --> 01:27:55,647
+ve uğraşmanız gerekiyor arkadaşlar. Uzun nasıl kısası.
+
+505
+01:27:57,524 --> 01:28:08,264
+İsterseniz Java sanal makinesini çağırırken ona ayrılan default bellek alanını 256 MB değil de daha azı, daha fazlası olarak ayarlayabiliyorsunuz isterseniz.
+
+506
+01:28:08,264 --> 01:28:11,024
+Ama çok uğraşlı arkadaşlar. Hiç gerek yok.
+
+507
+01:28:11,404 --> 01:28:16,344
+Hem madem sizinle sorumluluğunuz olan bir konu husus değil bellek yönetimi.
+
+508
+01:28:16,684 --> 01:28:21,043
+O yüzden bu finalizer metotları üstünde daha fazla gevelitlik yapmayacağım.
+
+509
+01:28:21,424 --> 01:28:22,584
+Daha fazla dediklemeyeceğim.
+
+510
+01:28:23,264 --> 01:28:25,524
+Benzer şekilde gelmiş kollektif üstünde...
+
+511
+01:28:25,524 --> 01:28:46,764
+Üstüne de çok fazla, daha fazla konuşmayacağım. Ben de uğraşmadım onunla çünkü. Gerek görmedim hiç. Şimdiye kadar durum bu arkadaşlar. Finalizer'ın sadece ne olduğunu bilin ve bu genel çerçeveyi çizmek istiyorum. Ondan sonra biz Constructors'u ayrıntılı olarak didikleyeceğiz. Olay budur.
+
+512
+01:28:47,604 --> 01:28:54,344
+Bilmiyorum, başka sorunuz varsa mı varsa bildiğim kadarıyla veya şu an anlattıklarım kadarıyla anlatmaya çalışayım.
+
+513
+01:29:05,011 --> 01:29:07,471
+Peki, constatırlardan devam edelim.
+
+514
+01:29:12,884 --> 01:29:13,384
+Evet.
+
+515
+01:29:14,003 --> 01:29:14,304
+Sure.
+
+516
+01:29:14,771 --> 01:29:39,992
+Constructible Metodların Kuralı. Birinci kural, public olmalıdırlar. Public olmazlarsa, private olurlarsa, o sınıftan bir nesnini oluşturamazsınız anlamına geliyor. Olayda nesnelerin kullanılması, metotlarının çağrılmasına dayandığı için kendisinden nesnini oluşturamayacağınız bir sınıfın çok bir anlamı yok. Anlamı olan niş bazı durumlar olabilir ama girmeyeceğiz o işe çok.
+
+517
+01:29:42,771 --> 01:30:08,031
+Bilin'de belki bir şey yapabiliriz ama onların bile constructları public olacak. Çok kısıtlı bir iki yerde private konulmuyor. O yüzden geçelim. Constructlar public oluyorlar diyelim. Constructör metodun adı sınıf adıyla aynı oluyor arkadaşlar. Bir metodun constructor metodu olarak algılanabilmesi için metod adının sınıf adıyla aynı olması lazım. Bu demek ki büyük harfler başlıyor genelde anlamına gelmektedir.
+
+518
+01:30:09,460 --> 01:30:23,719
+Her ne kadar bu constructor metodu bir nesne oluşturmak için kullanıyorsanız da, onun için kodluyorsanız da, bir kere o constructor metodu içerisinde herhangi bir return gibi bir komut kullanmıyoruz.
+
+519
+01:30:24,639 --> 01:30:30,619
+Ve hatta bu nedenle metoda bir geri dönüş tipi de yazmıyoruz, void bile yazmıyoruz.
+
+520
+01:30:31,136 --> 01:30:38,976
+Sadece işte public diyoruz, sınıf adını veriyoruz, parantezimizi açıp ilgili parametreleri veriyoruz. Bu şekilde kodluyoruz.
+
+521
+01:30:39,836 --> 01:30:45,796
+Tekrarıyorum, constructor'a, final üye alanlara değer atamak için en doğru, en uygun yardır.
+
+522
+01:30:45,796 --> 01:30:51,796
+Ve constructor metodu çağırırken de new anahtar kilimisiyle birlikte çağırıyoruz.
+
+523
+01:30:52,756 --> 01:31:04,556
+Hemen altta kit adını verdiğimiz, kar türünden daha yukarıda bir yerlerde de kar, boşluk, kit diye tanımlamak durumunda olduğumuz veya bir üye alandı belki bu, bilemiyorum artık.
+
+524
+01:31:04,556 --> 01:31:06,516
+Ama kar türünden bu nesne.
+
+525
+01:31:07,155 --> 01:31:26,036
+Nesne adı veriyoruz. Daha doğrusu aslında bir işaretçi adı bu. Eşittir diyoruz. Neal diyoruz ve constructor metodu çağırıyoruz. Bakın burada bu sınıf adı büyük hakikate başlıyor ve herhangi bir parametre almıyor. Herhangi bir parametre almayan default constructor'ı çağırmış olduk buradaki örneğimizde.
+
+526
+01:31:29,840 --> 01:31:51,640
+Şimdi nesneyin tanımlanması kısmına gelelim. Bir nesneyi tanımlamak yetmiyor. İşte constructor metodunu çağırarak onu ilklendirmek de gerekiyor veya örneğini oluşturmak da gerekiyor. İngilizce terimi instantiation. Ben bunu ilklendirilmiş olması falan şeklinde Türkçe'ye söylemeyi tercih ediyorum.
+
+527
+01:31:57,203 --> 01:31:58,063
+Yok gelmedim.
+
+528
+01:31:58,884 --> 01:32:00,783
+Yaslayamışım daha iyi olurmuş.
+
+529
+01:32:01,323 --> 01:32:10,643
+Hani bir önceki yerde gördüğümüz kit eşittir new card dedik ya, onun bir UML sequence diagram olarak çizimini sol tarafta görüyorsunuz.
+
+530
+01:32:11,003 --> 01:32:15,163
+Nesnenin adına kit demişiz, türü 2.4 üstte card ve altı çizili.
+
+531
+01:32:15,163 --> 01:32:21,243
+Ondan sonra nesne dikdörtgeni, kesikli çizgiler ve nesnenin yaşam hattı gösterilmiş durumda.
+
+532
+01:32:21,683 --> 01:32:25,143
+Herhangi bir metodu çağırladığında bir ince uzun dikdörtgen çiziyorduk.
+
+533
+01:32:25,203 --> 01:32:28,543
+O metodun çalıştığı anı gösteriyor anlamındaydı.
+
+534
+01:32:29,123 --> 01:32:43,283
+Ve işte constructor metodunun çağırı arışında, şimdi new card dedik ya, constructor adları her zaman için sınıf adıyla aynı olduğunda, biz bu metot çağırımı okunduğu üstüne sadece new yazıyoruz.
+
+535
+01:32:43,863 --> 01:32:47,703
+Parametri daha sitede onları da gösterecektik. Birazdan onları da yapacağız, gideceğiz.
+
+536
+01:32:47,703 --> 01:32:53,203
+İşte new metodu yani constructor metodu çağırıldı ve geriye de o oluştu.
+
+537
+01:32:53,203 --> 01:33:17,323
+oluşturulan nesne dönmüş oldu şeklinde sequence diagramda gösteriyoruz. Peki bu kit nesnesi nerede nasıl tanımlanmış olabilir? İki tane olasılık var. Birinci olasılık bir üye alan olarak tanımlanmış olması. Şimdi işte public class, a class diye bir herhangi bir sınıf kodu tanımlanmaya başlanmış. Açılmış kodlar. En aşağısında kapatılıyor.
+
+538
+01:33:18,644 --> 01:33:21,964
+Private, üye alanda Private olarak tanımladığınızı hatırlatırım.
+
+539
+01:33:22,684 --> 01:33:26,504
+Car türünden kit adını verdiğim bir nesnenin tanımını yaptım.
+
+540
+01:33:26,904 --> 01:33:28,244
+Ama daha henüz ilklendirmedim.
+
+541
+01:33:28,964 --> 01:33:30,844
+Bir yerde bunun ilklendirilmesi gerekiyor.
+
+542
+01:33:30,964 --> 01:33:33,524
+Bir nesne ilklendirilmeden kullanılamaz.
+
+543
+01:33:34,355 --> 01:33:55,756
+Bu e-class'ın herhangi bir metodun içerisinde, diyelim ki işte kit eşitliği new car komutunu burada vermişiz. Ki kit nesnesi ilklenmiş. Artık bu noktadan sonra kit nokta işte bir metot adını çağrılar vererekten onun metotlarını kullanabilir, o nesneye erişebiliriz.
+
+544
+01:33:56,724 --> 01:34:05,704
+Bu yalan olması durumuydu. Bir de yalan olarak değil de geçici bir nesne olarak kullanılması söz konusu olabilir.
+
+545
+01:34:06,503 --> 01:34:12,064
+Burada da başka bir sınıf kodu var. Public class, another class. Onun bir metodun içerisinde
+
+546
+01:34:13,108 --> 01:34:31,448
+CarKit tanımlanmış. İsteseydik noktaları virgül deyip ondan sonra kit eşittir new car komutunun ikinci satırı olarak verilirdik. Burada ikisi tek satırda yapılmış. Kit adlı car türünden bir nesne tanımlanmış ve tanımlanır tanımlanmaz eşittir new car diyerekten o nesne ilklendirilmiş.
+
+547
+01:34:41,108 --> 01:34:43,908
+bu kavramı yapısıyla programlama dersinden hatırlayın.
+
+548
+01:34:43,988 --> 01:34:48,228
+SCOP bir değişkenin geçerli olduğu aralık idi.
+
+549
+01:34:48,788 --> 01:34:50,728
+Burada artık nesneden bahsediyoruz.
+
+550
+01:34:51,168 --> 01:34:58,927
+Nesnenin anlamlı olduğu ya da işte bellekte anlamlı olduğu, barındırıldığı süre diyelim ki,
+
+551
+01:34:59,307 --> 01:35:06,568
+yukarıki örnekte üye alan olarak tanımlandığından bu e-class türünden oluşturduğu hangi nesnen
+
+552
+01:35:07,123 --> 01:35:31,743
+Aktif ise o nesnenin kit üye alanı daha aktif olarak bellekte yaşıyor olacak. Fakat alttaki örnekte sadece ve sadece şu kit nesnesi o metodu çağırılan, sam metodu çağırılan nesnenin o sam metodu çalıştığı sürece bir anlam taşımaktadır. Diğer zamanlarda geçersiz bir referanstır.
+
+553
+01:35:32,212 --> 01:36:00,212
+Tamam kit oluştu. Altına da çeşitli başka konutlarda yazarak o kit nesnesini kullanır. En sonunda işte şu en adım metot şey ettiğinde, bittiğinde artık o kit nesnesinin de geçerli kalmamış olur. Atık toplayıcısı onu sininebilir nesne olarak işaretler. Ama gerçekten de bellek tükenmeye yüz tutana kadar aslında bir kenarda kalıyor o nesne. Erişilemiyor, o ayrı. Yani blogdançı tarafı da erişilemiyor.
+
+554
+01:36:00,212 --> 01:36:01,332
+Orası ayrı.
+
+555
+01:36:04,332 --> 01:36:08,752
+Şimdi Construct'ın parlarına devam etmek istiyorum.
+
+556
+01:36:10,372 --> 01:36:17,712
+Eğer hiç parametre vermeyen, hiç parametre almayan Construct'ı kodlarsanız, bunlar Default Construct'ı deniliyor.
+
+557
+01:36:18,192 --> 01:36:19,412
+Varsayılan koducu.
+
+558
+01:36:19,796 --> 01:36:29,436
+Eğer siz herhangi bir constructor tanınamazsanız, kodlamazsanız bir sınıfa, o zaman java sanal makinesi bir default constructor oluşturuyor.
+
+559
+01:36:29,436 --> 01:36:37,256
+Tabii bunu kaynak koda yazmıyor, byte koda ekliyor sadece ve byte koda eklediği o default constructor da,
+
+560
+01:36:37,476 --> 01:36:44,076
+şu nesne için bellekte gerekli yerin ayrılması falan gibi bizden bağımsız olan işlemleri yapıyor.
+
+561
+01:36:46,195 --> 01:36:50,195
+Ama default constructor bizim işimize yaramıyor arkadaşlar.
+
+562
+01:36:50,735 --> 01:36:58,416
+Çünkü hep örneklerimizde, mantıklı bir problem alanı örneğimizde illaki nesnelerin tekir tanımlayıcıları olacak.
+
+563
+01:36:59,195 --> 01:37:06,735
+Veyahut da o nesnenin mutlaka belirli bir ilk değere, bazı uyalanların ilk değere sahip olması gerekecek.
+
+564
+01:37:07,195 --> 01:37:12,355
+O yüzden biz mutlaka bir ya da daha fazla parametreli constructor yazıyor olacağız.
+
+565
+01:37:12,355 --> 01:37:14,176
+Default constructor bizim.
+
+566
+01:37:14,195 --> 01:37:26,836
+işimize yaramıyor. Ve siz işte bir parametreli construct, yani default olmayan construct'ları kodladığınızda artık Java Sanal Makinesi default construct'ları kodlamaktan vazgeçiyor.
+
+567
+01:37:27,699 --> 01:37:38,739
+Böylece bir nesne oluştururken mutlaka mutlaka sizin yazdığınız konstruktörün ya da o konstruktörlerden birinin yazdığınız bizden fazla konstruktör ekleyebilirsiniz.
+
+568
+01:37:39,159 --> 01:37:43,459
+Sizin eklediğiniz bir konstruktörün çağrılmasının zorunlu hale gelmiş oluyor.
+
+569
+01:37:43,459 --> 01:37:49,199
+Tabii arka planda Java sanar makinesi yine o nesneyi belli kaydırması için gerekli işlemleri otomatik yapıyor.
+
+570
+01:37:49,359 --> 01:37:53,099
+Yani siz konstruktör yazdınız diye bunları da yazmanız gerekiyor anlamına gelmiyor.
+
+571
+01:37:53,459 --> 01:37:55,699
+Java sanar makinesi belli yönetimi işlemleri.
+
+572
+01:37:55,699 --> 01:37:58,139
+Bu sizin için zaten otomatik yapıyor.
+
+573
+01:37:58,439 --> 01:38:05,479
+Ama sizin bilmeniz gereken, eğer siz hiçbir constructor kodlamazsanız, default constructor ekliyor acaba sanar makinesi.
+
+574
+01:38:05,779 --> 01:38:07,399
+Ama bu bizim işimize yaramıyor.
+
+575
+01:38:07,559 --> 01:38:08,639
+İş mantığı olarak da.
+
+576
+01:38:08,939 --> 01:38:15,119
+O yüzden mutlaka bir ya da daha fazla parametreye sahip, bir ya da daha fazla constructor metod kodluyoruz.
+
+577
+01:38:16,119 --> 01:38:17,539
+Olay bu arkadaşlar.
+
+578
+01:38:17,539 --> 01:38:21,839
+Şu constructor parametresi kısmında anlatmaya çalışın bir şey bu.
+
+579
+01:38:23,091 --> 01:38:28,011
+Ve aynı zamanda işte bir sınıfta birden fazla constructor metot olabilir.
+
+580
+01:38:28,551 --> 01:38:33,771
+Tabii bunların farklı tür ve sayıda parametreler alıyor olması lazım.
+
+581
+01:38:34,311 --> 01:38:41,271
+Aynı sayıda ve aynı tür parametre alan iki metot, ister constructor metot olsun, ister normal metot olsun tanımlayamazsınız.
+
+582
+01:38:41,271 --> 01:38:48,451
+Fakat aynı ada ve farklı parametre sayı ve listesini sahip birden fazla metot oluşturabilirsiniz.
+
+583
+01:38:51,091 --> 01:38:54,111
+Constructor Method. Hepsinde bu işi yapabilirsiniz.
+
+584
+01:38:54,111 --> 01:39:02,251
+Ve eğer birden fazla Constructor kodu değilseniz buna Constructor Overloading deniliyor.
+
+585
+01:39:02,431 --> 01:39:09,051
+Overload yani biz bunu Türkçe çoklu metot tanımlama şeklinde çevirmeyi tercih ediyorum.
+
+586
+01:39:09,651 --> 01:39:15,751
+Overload bir şeyi işte aşırı yükleme gibi oluyor ama bu da bir aşırılık söz konusu değil.
+
+587
+01:39:19,091 --> 01:39:21,051
+listeleri, sayısı listeleri farklı.
+
+588
+01:39:21,511 --> 01:39:23,691
+Birden fazla metot tanımlamaktır.
+
+589
+01:39:24,131 --> 01:39:25,371
+Overloading işlemi.
+
+590
+01:39:25,851 --> 01:39:30,811
+Sadece constructorlar değil, normal üye metotlarda overload edilebilir.
+
+591
+01:39:31,811 --> 01:39:33,571
+Örnekleri birazdan göreceğiz.
+
+592
+01:39:37,140 --> 01:39:52,600
+Evet, tamam. Artık görmeye başlayacağız. Son bir iki söyleyeceğim bir şey kaldı. Tamam bakalım. Bu otuz birinci yansı, bu otuz ikinci yansı. Ondan sonra artık bir ara verdikten sonra bütüncül bir örneği yazıyor, kodluyor, çalıştırıyor olacağız.
+
+593
+01:39:54,159 --> 01:40:00,020
+Evet, sadece şimdi denetim akışı deyip iki yansısa deyip ondan sonra ara verip sonra da örneğimize başlayacağız.
+
+594
+01:40:01,587 --> 01:40:05,747
+Denetim akışı biliyorsunuz program kodunun akış sırasıdır.
+
+595
+01:40:06,907 --> 01:40:19,247
+İşte normalde verdiğiniz sırada konutlar yürütülür ama işte if konutlarıyla dallanmalar, form, while gibi döngülerle tekrarlamalar yapılarak da bu konut akışı karmaşıklaştırılabiliriz.
+
+596
+01:40:19,327 --> 01:40:24,148
+Karmaşıklaştırılması da gerekmektedir çeşitli algoritmalarınızı konutlayabilmek için.
+
+597
+01:40:26,148 --> 01:40:26,627
+Peki.
+
+598
+01:40:29,619 --> 01:40:53,439
+Şimdi hani bir de şu da var. Şimdi siz belki hani bu arada bir sınıfa üye metod kodlama sıranız hiç önemli değil. Önemli olan bunların çağrılma, çalıştırılma sırasıdır. Peki ilk olarak çağrılacak metod hangisidir? Yani devletin bakışına bir başlangıç noktası nasıl belirleriz?
+
+599
+01:40:53,920 --> 01:40:57,359
+C dilinde bu bizim main metodumuz.
+
+600
+01:40:57,619 --> 01:40:58,819
+main fonksiyonumuz idi.
+
+601
+01:40:59,539 --> 01:41:02,500
+Nesliye Yönelik'e de bu bir main metod oluyor.
+
+602
+01:41:04,180 --> 01:41:27,180
+Siz herhangi bir yazdığınız sınıfa main metodu ekleyebilirsiniz. Sizin bir projenizde veya paketinizde birden fazla sınıf olabilir, en bir main metodu içeren, burada siz hangi sınıfınızın üstünde, eğer eklif gibi ide kullanıyorsanız, sağ tıklayıp, run as Java application'inde ders demişsiniz, onun main metodunu çağrılacaktır.
+
+603
+01:41:32,180 --> 01:41:38,840
+Ana sınıf, başlangıç sınıf olarak hangisini belirlediyseniz, onun içerisindeki main metodu çalışacaktır.
+
+604
+01:41:39,360 --> 01:41:43,980
+Main metodu bizim program akışmasının başladığı nokta olacak.
+
+605
+01:41:48,320 --> 01:41:53,380
+Evet, şuradaki sözü biraz söylemiş oldum.
+
+606
+01:41:53,740 --> 01:41:55,780
+Main metodun imzası şu şekilde arkadaşlar.
+
+607
+01:41:56,240 --> 01:41:59,440
+Bir kere public olacak tabii ki. Private olsa bir anlamı olmaz.
+
+608
+01:41:59,956 --> 01:42:03,276
+Şimdi statik olmasının özel bir anlamı var.
+
+609
+01:42:03,716 --> 01:42:06,236
+Şimdi, DAAP program yeni başlıyor.
+
+610
+01:42:06,636 --> 01:42:07,916
+İlk defa başlayacak.
+
+611
+01:42:08,356 --> 01:42:11,816
+Tamam, bir sınıfın içerisinde yer alıyor o main metodu ama
+
+612
+01:42:11,816 --> 01:42:13,996
+daha henüz herhangi bir nesne oluşturulmadı ki.
+
+613
+01:42:14,276 --> 01:42:16,916
+Biz hep nesnelerin metotlarını çağırtık olacağız.
+
+614
+01:42:17,296 --> 01:42:19,716
+Ama DAAP programın başında hiçbir oluşan nesne yok.
+
+615
+01:42:20,036 --> 01:42:20,876
+Nasıl olacak şimdi?
+
+616
+01:42:20,936 --> 01:42:23,236
+Bir yumurta tavuk meselesi gibi oldu bu.
+
+617
+01:42:23,876 --> 01:42:26,496
+Bunun böyle olmaması için, bu kısır döngü yıkılmak için
+
+618
+01:42:26,496 --> 01:42:27,956
+main metodu statik olarak...
+
+619
+01:42:27,956 --> 01:42:41,956
+Hatırlarsanız, az önce konuştuk, statik metotlar ortak olarak kullanılıyordu. Tüm nesne tarafından ortak olarak paylaşıldığı için nesne üzerinden erişmeye gerek yoktu. Sınıfa da üzerinden erişebiliyorduk.
+
+620
+01:42:42,996 --> 01:42:58,235
+İşte bu sayede yumurta tavuk kısa döngüsü kırılmış oluyor. Siz hangi sınıfın main metodunu çağırırsanız orası programın başlangıç noktası olmuş oluyor. Ve oradan main metodun içerisindeki ilk komutla birlikte olaylar yürümüş oluyor.
+
+621
+01:42:58,235 --> 01:43:09,876
+Şimdi bu main metodu aynı zamanda geriye bir şey döndürmüyor void arkadaşlar. Yani işte bir problem olduysa sıfır koduyla çıkalım ya da dönelim.
+
+622
+01:43:10,996 --> 01:43:38,996
+O yüzden farklı bir kodla çıkalım, dönelim bir şey yok burada. Gerek yok. Bir problem olduysa siz bunu exception handling üstünden yürütüp belirtebiliyorsunuz. O daha sonraki ileriki haftaların konusu. O yüzden void, yani bunu bir kısıtlam olarak düşünmeyin. Bir kolaylık olarak düşünün. Void dönüşü main metodumuzun. Parametro olarak ise bir argüman dizisi alıyor. Her biri bir string nesnesi olmak kaydırıyor.
+
+623
+01:43:38,996 --> 01:43:44,996
+yapı sampli programlarında gördüğünüz bu dizi operatörü Java'da da kullanılıyor aynı şekilde.
+
+624
+01:43:45,536 --> 01:43:50,235
+String'in ise işte karakter katarlarımız, şimdi genel sınıfımız olduğunu söyleyeyim.
+
+625
+01:43:51,572 --> 01:44:07,952
+Aynı yapısal programlarda olduğunu gördüğünüz gibi bir kodu komut satırında çalıştırdığınız zaman programın adını yazdıktan sonra app olarak vereceğiniz parametrelerin her biri işte bu ARGS dizisinin üyeleri olaraktan çekmektedir.
+
+626
+01:44:08,091 --> 01:44:15,572
+Sizin programınıza aktarılmaktadır. İsterseniz onları kontrol edip farklı farklı komutlar yürütebilirsiniz eğer isterseniz.
+
+627
+01:44:15,572 --> 01:44:19,412
+Peki hocam argüman sayısını nereden bilecek diyorsanız.
+
+628
+01:44:19,572 --> 01:44:33,672
+Java'da dizili gördüğümüz zaman göreceğiz. Bir dizi adı nokta length dediğinizde o dizinin kapasitesini otomatik olarak öğrenebiliyorsunuz. O yüzden eleman sayısının da verilmesine gerek yok.
+
+629
+01:44:47,572 --> 01:44:48,452
+Öğrenebiliyorsunuz.
+
+630
+01:44:50,051 --> 01:44:50,471
+Şey bu.
+
+631
+01:44:50,992 --> 01:44:51,452
+Durum bu.
+
+632
+01:44:53,051 --> 01:44:54,652
+Peki main metodunla ne yapacağız?
+
+633
+01:44:54,652 --> 01:45:00,652
+İşte o sınıftan veya farklı farklı sınıflardan nesneler oluşturup onların metotlarını çağıracağız.
+
+634
+01:45:00,771 --> 01:45:01,591
+Yapacağımız şey bu.
+
+635
+01:45:01,712 --> 01:45:10,652
+Çünkü bir nesnelerin program nesnelerin metotlarının çağrılması ya da başka bir değişiklikle nesnelerin arasındaki mesaj akışı üzerinden yürüyecektir.
+
+636
+01:45:11,956 --> 01:45:27,536
+Blog ya da gövde karanını da biliyorsunuz zaten. Yapı saat toplanlamadan beri şakılık parçasına bir kod bloğu, simgeler, sınıf bloğu, metot bloğu, döngü bloğu, if bloğu filan filan filan gibi bildiğiniz şeyler.
+
+637
+01:45:29,376 --> 01:45:35,896
+Evet. Buraya kadar konuştuğumuz şeylerden soru soran arkadaşlarım varsa buyursunlar.
+
+638
+01:45:46,131 --> 01:45:54,071
+Şimdi biraz ne bileyim kavramsal konuştuk ama yine de kafanızda oturmayan, açık kalmayan noktalar varsa buyurun konuşalım.
+
+639
+01:45:54,871 --> 01:46:03,891
+Yoksa eğer istiyorsanız tabii ki bir bütüncül kod örneği görüp onun üstünden sorularınızı daha sumutlaştırmayı da tercih edebilirsiniz. Nasıl isterseniz.
+
+640
+01:46:11,220 --> 01:46:29,539
+Peki. O zaman şimdi yine bir saat başına bekleyelim. Saat on bire kadar alabilirim. Ondan sonra şuradan itibaren örneğimizi yapıyor olacağız. O zaman yine on beş dakika ara. On kırk beş ile on bir sıfır sıfır arasında.
+
+641
+02:00:25,076 --> 02:00:33,475
+Evet arkadaşlar, saat on bir ettik. İsterseniz önce sorularınız varsa onlarla açalım bu yeni ve son saatimizde.
+
+642
+02:00:37,332 --> 02:00:39,072
+Hemen eklepik çalıştırmaya başlayayım.
+
+643
+02:00:50,804 --> 02:00:54,344
+Şimdi hazır varlığı direkt hazır kodu göstermeyeceğim.
+
+644
+02:00:54,824 --> 02:00:58,144
+Birlikte öncelikle sınıf yana süsünler tasarımımızı yapacağız.
+
+645
+02:00:58,304 --> 02:01:00,204
+Sonra bu tasarımımızı koda dökeceğiz.
+
+646
+02:01:00,204 --> 02:01:01,664
+Öyle söyleyeyim.
+
+647
+02:01:02,484 --> 02:01:04,204
+Şimdi o yüzden buna hazırlık olarak...
+
+648
+02:01:05,971 --> 02:01:23,971
+Şöyle bir şey yapalım. Bir proje oluşturdum. Benim kullanıcının belgelerin olduğu yerde. Orada şeyde devam ediyoruz. Hatta aslında öyle bir şey varmış bile. Ama bu neyin? Bu unit testlerin ve değişik şeylerin denemek kısmıymış.
+
+649
+02:01:23,971 --> 02:01:30,011
+Ayrıca bunu sileyim de bu eski şeyin, dönemin denemeleri. Bunları uçlayayım.
+
+650
+02:01:32,307 --> 02:01:35,507
+Yeni bir proje oluşturarak da başlayalım.
+
+651
+02:01:35,507 --> 02:01:39,728
+Şimdi, File New Java Project diyorum.
+
+652
+02:01:43,547 --> 02:01:46,707
+Projemin NYPDNR isimini veriyorum.
+
+653
+02:01:48,908 --> 02:01:49,988
+Ondan sonra Java.
+
+654
+02:01:50,247 --> 02:01:51,807
+UseDefaultRocusingin için kalabilir.
+
+655
+02:01:52,239 --> 02:02:19,359
+Bu işte Eclipse'in belirlediği çalışma dizindeki o da sizin login olduğunuz kullanıcınızın kök dizindir, ev dizindir. Windows'da bu C users'ın altında kullanacağınız neyse olur. Onun altında Eclipse bir klasör açıp onun içerisine dosyaları oluşturuyor. Ben projenin adına NEP denemeler verdiğim için o şekilde bir klasör de açmış oluyoruz. Öyle devam edecek. Benim bilgisayarımda CS 15 dolu.
+
+656
+02:02:20,239 --> 02:02:35,800
+Default olarak o seçenek geliyor. İsterseniz başka şeyler de koyabilirsiniz ama onların hani eklipsi içerisinde gömülmüş mü, gölmemiş mi? Gömülmemiştir. Onu bir arada mutlu indirmek gerekir. Hangisi versiyon kulüysa o kalsın zaten. Aralara başka şeylere gerek yok.
+
+657
+02:02:37,555 --> 02:02:39,575
+Şey, diyor bu, ha, pardon.
+
+658
+02:02:39,995 --> 02:02:41,715
+Current workspace is on, diyor.
+
+659
+02:02:41,835 --> 02:02:43,795
+O şeydi, problem değil.
+
+660
+02:02:44,335 --> 02:02:51,655
+Yeter ki, işte şey çalıştırdığımızda, bir komuta satırını çalıştırdığımızda, ondan sonra cevap boşlukta.
+
+661
+02:02:52,287 --> 02:02:58,607
+version dediğinizde şeyi görün yani olayı görün. Ben 15 kurulmuş da zaten. Evet.
+
+662
+02:02:58,967 --> 02:03:06,727
+Niye şurada 10 falan ediyor anlamadım da. Acaba belki az önce sildiğim versiyonu da olabilir mi? Çok da dert değil arkadaşlar.
+
+663
+02:03:08,047 --> 02:03:14,927
+İçine geçin. Modelinfo bunu oluşturmaya gerek yok. Çok modüllü bir şey falan yapmayacağız.
+
+664
+02:03:15,380 --> 02:03:26,500
+Şimdi şey burada, proje burada. Şimdi kaynak dosyalar, seyirci dizinin altında tutuluyor. Burada bir paket oluşturacağım. Şimdi üçüncü haftayız.
+
+665
+02:03:26,500 --> 02:03:35,560
+Ya, üçüncü haftayız. İkinci haftadayız. Tamam. Hafta iki denemeler diyeceğim ben. Hafta iki diyeceğim paketimin adına.
+
+666
+02:03:41,587 --> 02:03:42,788
+Hafta 02.
+
+667
+02:03:43,788 --> 02:03:45,688
+Finish dedim. Bitti.
+
+668
+02:03:46,108 --> 02:03:47,728
+Bunun iknaisinin ara basıntıımı oluşturacağım.
+
+669
+02:03:47,868 --> 02:03:50,507
+Önce tasarlayın. Ondan sonra oluşturacağım.
+
+670
+02:03:56,948 --> 02:03:58,988
+Şuradan açıyorduk.
+
+671
+02:03:59,988 --> 02:04:02,948
+Kod olmadan...
+
+672
+02:04:03,587 --> 02:04:04,387
+Tamam peki.
+
+673
+02:04:04,688 --> 02:04:05,507
+Önce şey yapalım.
+
+674
+02:04:05,887 --> 02:04:08,368
+Her yere geçiş kısası koymuşum.
+
+675
+02:04:08,427 --> 02:04:09,847
+Bir buraya koymamışım peki.
+
+676
+02:04:10,087 --> 02:04:10,368
+Peki.
+
+677
+02:04:10,768 --> 02:04:11,547
+Ulan şöyle yapıyorum.
+
+678
+02:04:11,688 --> 02:04:14,148
+Şimdi sun modundan bir çıkıyorum.
+
+679
+02:04:14,887 --> 02:04:18,768
+Ondan sonra şunu şöyle bir yana alıyorum.
+
+680
+02:04:19,427 --> 02:04:22,347
+Aynı zamanda şunu da görebilmek için.
+
+681
+02:04:22,868 --> 02:04:43,168
+Şöyle şunu da azıcık şey dersem. Ha evet, hemen hemen aynı sıraya geldi. Şimdi sınıf işleması kısmına işi bir yakınlaştırayım. Biraz daha yapabiliyorum galiba. Evet, birazcık daha. Tamam, azıcık, fazla gibi. Ha tamam, iyi.
+
+682
+02:04:43,731 --> 02:04:47,751
+Şimdi yerleştirelim. Siz de inşallah görüyorsunuz.
+
+683
+02:04:48,192 --> 02:04:56,751
+Şimdi tasarlayacağım araba sınıfı. Sınıfın adı KARF. Dikdörtgenimin içerisindeki ilk bölmede sınıfın adı yazıyor.
+
+684
+02:04:57,511 --> 02:05:02,291
+Şu açımada bir tane üye alanım olsa yeter. O da tekil tanımlayıcısı olsun.
+
+685
+02:05:02,868 --> 02:05:12,608
+Plaka, plate, private tanımıyoruz tabii üye alanları. İlk nöbet üstü de string. Yani string türünden plaka adını verdiğim bir üye alanım var.
+
+686
+02:05:13,140 --> 02:05:34,940
+Sonra gelin metotlarımıza. Mutlaka constructor metot ekliyoruz demiştim. Bu nedenle adı kar olan sınıfımızla aynı. Bir public metot, constructor metot ekliyorum. Parametro olarak da işte bu plaka numarasını alacak. Atanacak plaka numarası neyse onu alacak. Plate number, ignore, string dedim.
+
+687
+02:05:35,539 --> 02:05:50,659
+Sonra aracın plakasını öğrenebilmek gerekir. Değişilebilmek de gerekebilir. O yüzden getter ve setter metodlarını da ekledim. Getter metod, getplate adlandırma geleneği bu şekilde parametre almıyor tabii ki.
+
+688
+02:05:50,760 --> 02:06:01,019
+Çünkü araba kendisi plakasını ne olduğunu biliyor ve o plakayı geri döndürüyor. O yüzden ilk noktası string deyip bu metodun geri dönüş türünü tipini string olarak beliririm.
+
+689
+02:06:01,524 --> 02:06:24,003
+Settler metodu ise yeni plakanın ne olacağını parametre olarak almak durumunda. O yüzden bir string parametre alıyor. Çünkü plakanın türü de string. Uzun yazmak isteseydim, construct'la yazdığım gibi plate ya da plate ne ve ek noktada string diye bir parametre adı da verebilirdim. Ama buradan belli oluyor zaten. O yüzden şu noktada parametre adını vermesem de olur.
+
+690
+02:06:26,003 --> 02:06:32,123
+Şimdi bu sınıftan bir ya da daha fazla nesne oluşturup bunu deneyebilmek de istiyoruz.
+
+691
+02:06:32,563 --> 02:06:34,103
+İşte metotlarını çağıralım edelim.
+
+692
+02:06:34,463 --> 02:06:40,183
+Bu amaçla bir kere bir kendisi hakkında ekrana bilgi yazan bir metot eklemek istedim.
+
+693
+02:06:40,623 --> 02:06:42,503
+Introduce self dedim adına.
+
+694
+02:06:42,823 --> 02:06:44,903
+Kendini tanıt gibi bir işte anlamı var.
+
+695
+02:06:45,303 --> 02:06:46,463
+Bir parametre arasında gerek yok.
+
+696
+02:06:46,463 --> 02:06:48,903
+Tabii ki çünkü kendi bilgilerini anlatacak.
+
+697
+02:06:49,231 --> 02:06:58,192
+Bir de işte bir program olarak bunu çalıştırıp işleri yapabilmek için bir başlangıç noktası olarak main metodu ekledim. String parametresi alıyor.
+
+698
+02:06:58,631 --> 02:07:06,271
+Aslında bu statiktir biliyorsunuz ve her seferinde sonlar işte 40 pantası içerisinde string yazmaya, düşermişim galiba ders noktalarına oluşurken.
+
+699
+02:07:06,851 --> 02:07:16,491
+Main metodunda statik olduğunu zaten hepimiz biliyoruz, herkes biliyor. O yüzden hani buraya statik yazmazsak da bunun statik olduğunu bilin demek istiyorum.
+
+700
+02:07:17,231 --> 02:07:21,331
+Ve şimdi bu tasarımından yola çıkaraktan kodumu oluşturmaya başlayayım.
+
+701
+02:07:23,192 --> 02:07:25,731
+Evet, buraya tıkladım. Şimdi sağ taraf kapanmıyor. Tamam, güzel.
+
+702
+02:07:26,551 --> 02:07:30,731
+Paketimin üstünde sağ tıklayıp New Class diyorum.
+
+703
+02:07:31,444 --> 02:07:52,184
+Sınıfın adı CARV olduğu için tasarımında. Adını da CARV diyorum. Şimdi istersen main metodunu da kendini oluştur diyebilirim ama şu an oluşturuyorum. 1-2 sıfır 50 yazayım. Bu bir alışkanlığımız olsun. Çünkü sınavları yüz yüze kağıt üstünde yapacağız. Orada ID'den kodu oluşturmayacağız. O yüzden biraz aklımızda kalsın.
+
+704
+02:07:54,195 --> 02:08:09,076
+Peki. Şimdi ben hafta 0G demiştim paketime adına. Package hafta 0G bul satır otomatik olarak eklendi. Public class car komutu eklendi. Gövdesi de açıldı. Şimdi benim içerisine üyelerini eklememe hazır.
+
+705
+02:08:11,216 --> 02:08:14,496
+Şimdi private olarak tanımlıyoruz.
+
+706
+02:08:18,368 --> 02:08:23,248
+Kodda yazarken önce tür, sonra art şeklinde yazıyoruz.
+
+707
+02:08:23,488 --> 02:08:26,228
+Pirate, string, length.
+
+708
+02:08:26,887 --> 02:08:28,288
+Plak numaramı art.
+
+709
+02:08:28,788 --> 02:08:30,208
+Başka bir alalım yok.
+
+710
+02:08:30,427 --> 02:08:32,728
+Şimdi metotlarımı kodlamaya başlayabilirim.
+
+711
+02:08:33,171 --> 02:08:58,652
+Constructor metotlar zaten şemada da gözüküyor. Public olacak olmak zorunda. Void, void hiçbir şey yazmıyoruz. Direkt metodun adını yazıyoruz ki o da snuf'un adıyla aynı olmak durumunda. Constructor olduğu için parametro olarak plaka numarası alacak. String tümünden. Peki tamam. String plate number diyorum. Açıyorum kıvır parantezimi. Enter bastığımda kapatma işini Eclipse kendisi yapıyor.
+
+712
+02:09:01,619 --> 02:09:13,519
+Parametro olarak gelen plaka numarasını üye alan olan plakaya atamam lazım. Yapacağım şey basitse, plate eşittir. Plate nere demek. Bu kadar.
+
+713
+02:09:14,859 --> 02:09:20,559
+Üye alanı, constructor metod ile ilklendirdim. Başka da bir şey yapmama gerek yok şu aşamada.
+
+714
+02:09:20,559 --> 02:09:26,500
+Şimdi get the setter metodlarını yazalım. Public metodumuz.
+
+715
+02:09:26,996 --> 02:09:53,036
+Adı getplate olarak adlandırıyor. Çünkü get method get kelimesiyle başlıyor. Üye alın adı plate, plate'i de ekliyorum. İkincisinin itibaren farklı kelimeleri de büyük harfle yazarak da devam ediyorum. Ondan sonra parametre olarak bir şey anlasına gerek yok kesinlikle. Fakat geriye adıcın plaka numarası neymişse, ha bu arada string türünde tabii onu da unutmayalım. Geriye bu şeyi döndürecek ya.
+
+716
+02:09:55,252 --> 02:10:09,572
+public string getplate. Şimdi içerisine o plaka numarasını geri döndürmesi, getCompute'u verin, o konuda return plate diyerekten plaka numarasını geri döndürmesini sağladık.
+
+717
+02:10:10,872 --> 02:10:12,652
+Settler metodunu da koyalım şimdi.
+
+718
+02:10:14,092 --> 02:10:21,231
+Şimdi public, evet, settler metod geriye bir şey döndürmesine gerek yok. O yüzden void.
+
+719
+02:10:22,100 --> 02:10:24,699
+Metodumun adı işte setPlate. Tamam.
+
+720
+02:10:25,560 --> 02:10:30,800
+Şimdi string bir şey alacak. Ne olsun? Bu arada plate olsun şimdi diyelim.
+
+721
+02:10:31,699 --> 02:10:31,960
+Peki.
+
+722
+02:10:33,640 --> 02:10:37,399
+Şimdi ne yapacağım? Construct'ını nasıl yaptıysam? Burada da öyle yapacağım.
+
+723
+02:10:38,039 --> 02:10:42,920
+UALAN olan plate'e atacağım. Parametre olarak gelen plate'e.
+
+724
+02:10:44,467 --> 02:10:55,727
+Ama şimdi burada şöyle bir problem var arkadaşlar. Şu warning den de kendini ifade ediyor aslında. Bu arada fark ettiğinizde ben bir tane tuşa bile bassam.
+
+725
+02:10:57,203 --> 02:11:04,844
+İlk başta tuş basımlarının bitmemesini bekliyor ve ikinci, üçüncü değer kelimeleri yazmadan henüz önce bir kırmızı altını çiziyor.
+
+726
+02:11:04,943 --> 02:11:10,703
+Derneğime hatasını alarak söylüyor ama satırımı bitirdiğimde bir problem yoksa her şeyi düzeliyor.
+
+727
+02:11:11,103 --> 02:11:14,323
+Problem varsa da altı çizgi kalmaya devam ediyor.
+
+728
+02:11:14,323 --> 02:11:25,203
+Ve şu noktada aslında bir sarı çizgiyle ve işaretle şuradaki on üçüncü satırda ya, on üçüncü satırın hemen yanında bir sarı warning işaretiyle ve altında...
+
+729
+02:11:25,203 --> 02:11:29,384
+Sarı çizgilendirerekten, sarı tırtıklandırarakten beni uyarıyor aslında.
+
+730
+02:11:29,943 --> 02:11:32,243
+Şimdi, burada şöyle bir problem var.
+
+731
+02:11:33,783 --> 02:11:37,603
+Siz artık biliyorsunuz, bilgisayarlar aslında akıllı aletler değil kesinlikle.
+
+732
+02:11:37,603 --> 02:11:45,423
+Siz onun ne şekildi kodlarsanız o şekilde çalışan bir alet ve her şeyi de tek tek anlatır olmak lazım.
+
+733
+02:11:46,483 --> 02:11:49,143
+Hiçbir şey bilmeyen birine anlatıyor gibi anlatmak lazım.
+
+734
+02:11:49,939 --> 02:12:16,899
+Şimdi burada olan olan şu. Çizimimi alayım şimdi. Aslında belki renklendirmeden de dikkatinizi çekmiştir. Üye alan olan, şimdi çizimi kapattım. Üye alan olan plate'i bakın şurada mavi renkle vurgulamış, otomatik renklendirmiş. Benim metot parametresi olarak yazdığım plate düz renk ve bakın eşitliğin iki tarafında da düz renk var.
+
+735
+02:12:17,939 --> 02:12:38,659
+Bu zaman yapmaya çalıştı. Plaka, parametre olarak gelen plakanın içeriğini yine parametre olarak gelen plakaya atıyor. Benim üye alan olan plakama herhangi bir değer atanmamış oluyor. Sebebi de şu, bilgisayarlar aptal aletler ya, en son, en içeride, şu an yazdım kodu en yakın olaraktan.
+
+736
+02:12:39,028 --> 02:12:55,188
+Geçen plate, parametre olan plate. O yüzden bu parametre olan plate, te odaklanıyor bilgisayar. Üye alan olan plate'i unutuyor. Bunu ona hatırlatmamız lazım. Onun için de özel bir işaretçi kullanmamız lazım.
+
+737
+02:12:55,188 --> 02:13:03,387
+Diz diye bir işaretçi var. Bir nesne var. Diz nesnesi, metodu çağrılan nesne anlamına geliyor.
+
+738
+02:13:03,764 --> 02:13:09,123
+Yani ben main metodunda işte bir ya da birkaç araba nesnesi oluşturacağım.
+
+739
+02:13:09,283 --> 02:13:11,163
+Ondanım bu set plate metonunu çağıracağım.
+
+740
+02:13:11,264 --> 02:13:13,104
+Ben herhangi bir metodu çağıracağım.
+
+741
+02:13:13,644 --> 02:13:21,963
+Herhangi bir metodun içerisinde this dediğinizde this'in anlamı metodu çağırılan bu nesne anlamına geliyor.
+
+742
+02:13:21,963 --> 02:13:29,024
+Ve this nokta plate dediğimde metodu çağırılan bu nesnenin üye alanı olan plate anlamına geliyor.
+
+743
+02:13:29,144 --> 02:13:31,764
+Çünkü nesne nokta üye şeklinde gösteriyor.
+
+744
+02:13:31,764 --> 02:13:49,283
+Bu, şimdi o anlama geliyor. Öbür türlü dizi yazmazsan eğer, hem şuradaki plate, şu bu oluyor ve aynı zamanda da bu oluyor ve kendi değerini kendisinin üstüne atamaya çalışıyor.
+
+745
+02:13:55,347 --> 02:14:07,347
+Şimdi şu çizimlerimi bir kapatayım ve buraya tekrar this.plate yazayım. Artık şimdi aslında ilerinin renklendirmesinden de görüyorsunuz.
+
+746
+02:14:07,347 --> 02:14:16,427
+Şimdi işte şu, hani yine mavi yapalım. Şunu da biraz şöyle yukarı kaldırayım.
+
+747
+02:14:20,435 --> 02:14:37,395
+This.plate demem sağ esimde artık eşitliğin sol tarafındaki olan plate, metodu çağırılan bu nesnenin, yani setplate metodu çağırılan bu nesnenin kendisini gösteren işaretçi ve nokta plate dediğimde o nesnenin plaka üye alanı anlamına gelmiş oluyor.
+
+748
+02:14:37,395 --> 02:14:48,115
+Ondan sonracima öbür plate de parametre olarak gelen plate olmuş oluyor ve parametre olarak gelen bilgiyi üye alanın üzerine yazmış.
+
+749
+02:14:48,435 --> 02:14:49,655
+Kıt almış oluyordur.
+
+750
+02:14:50,515 --> 02:14:56,615
+Burada mesele tamamen üye alan adı ile parametre adını aynı vermemden kaynaklanıyor.
+
+751
+02:14:57,155 --> 02:15:03,755
+Aynı verirse meğer hangisinin hangisi olduğunu karıştırmamak için üye alanı dis.plate şeklinde yazmamız gerekiyor her zaman.
+
+752
+02:15:04,115 --> 02:15:07,555
+Parametre olarak gelince sadece adını vererekten devam ediyoruz.
+
+753
+02:15:08,036 --> 02:15:11,615
+Neden de burada mutlaka dis.plate eşitip plate hemen gerekiyor.
+
+754
+02:15:11,615 --> 02:15:13,675
+Bu işi constructor'da bilerek yapmadım.
+
+755
+02:15:13,815 --> 02:15:17,376
+Çünkü işi basitten başlayıp adım adım kalmaşıklaştırmaya çalışıyoruz ya.
+
+756
+02:15:17,715 --> 02:15:18,515
+O yüzden constructor...
+
+757
+02:15:18,515 --> 02:15:35,715
+parameter adıyla üye alan adını farklı yaptım. Bu sayede işte bu normal bir atama olarak işte şey olarak gelen, parametre olarak gelen plak numarası eşitlik atama operatörü sayesinde üye alan olan plate atanmış oldu.
+
+758
+02:15:36,576 --> 02:15:45,076
+Ama isim aynılığı söz konusu ise o zaman ayırt etmek için this nokta şeklinde yazmamız lazım. Üye alanı belirtmek için.
+
+759
+02:15:46,323 --> 02:16:00,043
+Evet, soru soran var mı diyordum? Soru geldi. Constructor'da da yapabiliriz. Evet, aynen öyle. Aynı şeyi Constructor'da da yapabiliriz. Adım adım ama anlatmayı tercih ettim. Constructor veya herhangi bir metodda bu durum söz konusudur.
+
+760
+02:16:00,384 --> 02:16:11,503
+Karnetre ismiyle bir üye ismi, üye alan ismi, aynılığı söz konusuysa hangisinin hangisinin olduğunu öğret etmek için üye alan olanın başına dis.deriz ve öyle devam ederiz.
+
+761
+02:16:12,243 --> 02:16:13,403
+Evet, buyurun başka soru var mı?
+
+762
+02:16:24,884 --> 02:16:31,384
+Peki, devam edelim şimdi. Çizimlerini temizleyeyim. Ondan sonra kodu yazmaya devam edeyim.
+
+763
+02:16:32,004 --> 02:16:36,563
+Şimdi daha büyük çevir şurada. Tüm kodu mümkün olduğunca aynı ekranda görelim.
+
+764
+02:16:37,484 --> 02:16:43,543
+Ne var şimdi? Introduce self metodunu yazalım. Peki. Public method.
+
+765
+02:16:44,463 --> 02:16:47,844
+Bundan sonra void method diye bir şey döndürmüyor. Ekrana yazılacak.
+
+766
+02:16:47,844 --> 02:16:51,844
+Çünkü bu aşağıda öyle gidelim. Introduce.
+
+767
+02:16:52,659 --> 02:16:53,180
+D'alt.
+
+768
+02:16:55,956 --> 02:17:21,275
+Ekrana şey yazılmak için. Ha, şimdi şu, şunu konuşabiliriz şimdi. System.out.printl ne demek? Şimdi daha ayrıntısel bir konuşalım. Şimdi kıtarsanız, system büyükseyle başlıyor. Yani bu bir sınıf adı. Zaten üstümde de durduğumda diyor ki, Java lang paketinde yer alan sistem sınıfıdır bu, diyor. Çeşitli yararlı üye alanları ve üye metodları vardır. Siz bunu ilklendiremezsiniz.
+
+769
+02:17:23,956 --> 02:17:27,056
+Sizin erişiminizi sağlamak için kullandığı sınıftır.
+
+770
+02:17:27,216 --> 02:17:33,755
+Bu, burada işte, standard input, standard output, error output noktalarına sizi yönlendirir.
+
+771
+02:17:33,755 --> 02:17:35,155
+Falan, şıkkı da anlatıyor.
+
+772
+02:17:35,576 --> 02:17:38,956
+Java'nın ilk 1.0 sülümünden bir yer almaktadır bu sınıf.
+
+773
+02:17:40,576 --> 02:17:44,595
+Sınıf nokta, bir şey nokta, bir metot.
+
+774
+02:17:44,935 --> 02:17:47,115
+Şimdi, nesnelerin metotları çağrılır.
+
+775
+02:17:47,396 --> 02:17:48,736
+Demek ki bu out bir nesne.
+
+776
+02:17:49,576 --> 02:17:49,775
+Ve,
+
+777
+02:17:50,515 --> 02:18:02,275
+Sınıf adı nokta nesne dediğime göre, yazabildiğime göre demek ki system sınıfının out adlı bir üye alanı var ve bu üye alan statik.
+
+778
+02:18:02,935 --> 02:18:07,495
+Çünkü nesne üzerinden değil, sınıf adı üzerinden erişilmiş.
+
+779
+02:18:08,256 --> 02:18:10,515
+Bakın zaten üstünde durduğumda da...
+
+780
+02:18:11,219 --> 02:18:27,219
+Gerçi şey söylüyor, yani sistem üye alanıdır demiyor da, aslında notasyonla diyor, Java.lang paketindeki sistem sınıfının out üye alanıdır olduğunu ilk satırda Java.lang.sizm.out şeklinde anlatmış oluyor aslında.
+
+781
+02:18:28,259 --> 02:18:35,039
+Bu bizim standart output'umuzu ilişkilendirilen nesnedir, yani komut satırıdır.
+
+782
+02:18:39,219 --> 02:18:41,319
+Şurayı aslında ifade ediyor.
+
+783
+02:18:41,699 --> 02:18:42,939
+O alt nesnesi.
+
+784
+02:18:43,279 --> 02:18:46,219
+O nesnenin print ve print elengin metotları var.
+
+785
+02:18:46,219 --> 02:18:49,419
+İşte print parametre olarak aldığı içeriği yazıyor.
+
+786
+02:18:50,099 --> 02:18:50,459
+O kadar.
+
+787
+02:18:50,899 --> 02:18:54,860
+Print elenisi bu içeriği yazdıktan sonra bir altı satıra geçme karakterini basıyor.
+
+788
+02:18:55,259 --> 02:19:01,399
+Sonraki işlemler bir altı satırdan devam edecek şekilde olduğunu ilk şeyde görmüştük zaten.
+
+789
+02:19:01,579 --> 02:19:02,619
+İlk kartlarda görmüştük.
+
+790
+02:19:03,028 --> 02:19:14,587
+Şimdi peki, ne yazsın? İşte plakam şudur şeklinde yazsın. Daha da üstüne önce ben bir araba infilandirmesine gerek yok herhalde bu aşamada.
+
+791
+02:19:19,827 --> 02:19:46,527
+Plate is, desin, bir boşluk olsun ve şimdi piyaka numarasını eklesin bu açıkta. Bunu nasıl yapabilirim? Bunu birden fazla şekilde yapabilirim. Ben istersen buraya doğrudan plate diyebilirim. Hiç problem değil. Bir nesne kendi üye alanına istediği metodun içerisinden istediği şekilde erişebilir. Bu şekilde yazmamda hiçbir sakınca yok. Veya şöyle de yazabilirdim. This.plate.
+
+792
+02:19:47,987 --> 02:20:04,367
+Yine aynı kapıya çıkıyor. Şimdi şu introduce self içerisinde metot parametresi olarak veya metot gövdesi içerisinde plate diye başka bir şey tanımlamadığım için aslında this not da yazmama gerek yok. Ama yazarsam problem de yok. Bu ikisi de olur.
+
+793
+02:20:04,799 --> 02:20:08,219
+Fakat sonra ben bunun sequence diagramını çizeceğim.
+
+794
+02:20:08,579 --> 02:20:12,079
+Ve bunu çizerken de bir iki bir şeyi daha size gösterip anlatabilmek için.
+
+795
+02:20:12,719 --> 02:20:17,599
+Burada erişim metodu, get the metodu üstünden plakayı yazdıracağım.
+
+796
+02:20:17,819 --> 02:20:19,639
+Yani get plate diyeceğim ben buraya.
+
+797
+02:20:20,739 --> 02:20:25,759
+Tabii ki bu metod olduğu için fonksiyon metod parantezlerini de eklemeyi unutmayın.
+
+798
+02:20:26,100 --> 02:20:31,260
+Burada getplate metodunu gördüğü için girecek o getplate metodunu çalıştıracak.
+
+799
+02:20:31,479 --> 02:20:35,420
+O getplate metodu plakayı geri döndürmüş olacak. Buraya plaka eklermiş olacak.
+
+800
+02:20:36,060 --> 02:20:40,560
+Getplate yazıyorum. Sequence diagramı biraz daha ayrıntılar bulmuş olmak için.
+
+801
+02:20:41,040 --> 02:20:46,520
+Hatta buraya this.play getplate yazsam da yine aynı kapıya çıkıyor.
+
+802
+02:20:46,959 --> 02:20:49,159
+Yani dört farklı şekilde yazabiliriz bu kısmını.
+
+803
+02:20:49,159 --> 02:20:50,399
+Plate deriz.
+
+804
+02:20:50,772 --> 02:20:59,912
+this.plate deriz, get.plate deriz, this.get.plate deriz. Hepsi aynı. Hiçbirinin birbirine göre bir farklı avantajı, dezavantajı yok.
+
+805
+02:20:59,912 --> 02:21:05,372
+Sadece avantajı ben circle's takdımı çizerken biraz daha ayrıntılı yazacak olmam oluyor.
+
+806
+02:21:05,876 --> 02:21:13,296
+Şimdi [öğrenci] sormuş ki, set ve plakayı her değiştirdiğinizde yeni plakayı döndürecek değil mi hocam? Evet, aynen öyle olacak.
+
+807
+02:21:13,296 --> 02:21:26,896
+MİM metodumuzun içerisinde, arabayı belli bir plakayla oluştururuz, kendini tanıtmasını sağlarız, sonra plakasını değiştiririz, tekrar kendisini tanıtmasını sağlarız, yeni plakayı değiştirdiğini görürüz, içimiz zahat eder, konuyu da öğrenmiş olduk.
+
+808
+02:21:28,531 --> 02:21:36,531
+Evet, başka soru varsa ister chat yazın, ister sesini saçın, hocam deyin. Varsa illaki sorun ve lütfen sorun.
+
+809
+02:21:38,531 --> 02:21:42,011
+Peki, şimdi introduce'a bu kadar. Şimdi main metodunu yazalım.
+
+810
+02:21:42,011 --> 02:21:54,691
+Main metodun imzası public static void main string RGS dizi hikaye etti.
+
+811
+02:21:55,123 --> 02:22:23,083
+Şimdi şunu da söyleyeyim. Normalde C notasyonu bu. Dizinin adını yazdıktan sonra köşeli parantezleri yazıyoruz. Ama Java bunun dizi adının solunda olmasına da izin veriyor. İki türlü notasyonu da kullanıyor. Bu boşluğuda ister buraya koyun, ister öbür tarafa koyun, hiç fark etmiyor. İkisi de oluyor şeyde Java'da. Ama alışkanlık burada bu şekilde yazmaya devam edebilirsiniz. Hiçbir sıkıntısı yok.
+
+812
+02:22:23,123 --> 02:22:30,463
+Peki, şimdi main metodu içerisinde ne yapalım? Önce bir araba nesnesini tanımlayalım ve ilklendirelim.
+
+813
+02:22:31,343 --> 02:22:34,824
+Cars, sıfır kit demeyeyim buna, e-car diyeyim bir araba.
+
+814
+02:22:34,824 --> 02:22:37,043
+Eşittir, new.
+
+815
+02:22:37,843 --> 02:22:43,023
+K, constructor'ını çağıracağım. Constructor, parametre olarak benden bir string bekliyor.
+
+816
+02:22:43,023 --> 02:22:52,563
+Sadece noktaya birbiri diyeceğim. Çünkü ben burada bir tane parametre sayısı bir anlamında bahsetmiyorum.
+
+817
+02:22:52,863 --> 02:23:01,823
+Bir tane constructor oluşturdum parametresi olan. Yani artık Java sınav makinesi default constructor otomatik olarak eklemeyecek.
+
+818
+02:23:02,103 --> 02:23:05,623
+O yüzden bu şekilde default constructor'a çağırmaya çalışmam.
+
+819
+02:23:05,843 --> 02:23:31,644
+Problem oluşturmaktadır. Ben buna default constructor ekleyeyim mi? Hayır, kesinlikle eklememeliyim. Çünkü her arabanın mutlaka bir plakası olmalıdır. Bunu da zorlamanın en doğru yolu, işte bütün kar constructorlarına illaki bir plaka almalısı vermektir. Bu durumda şimdi buna bir plaka yazalım. Elde yazacağım. Daha kullanıcıdan bilgi almayı falan görmedik. Onu görünce onu da yazarız.
+
+820
+02:23:33,843 --> 02:23:38,923
+Bildiğim gibi, şöyle diye yazabilirdim aslında, kar, ekar, ondan sonra ekar eşittir.
+
+821
+02:23:39,163 --> 02:23:41,323
+Şöyle diye yazabilirim, aynı kapıya çıkıyor.
+
+822
+02:23:41,323 --> 02:23:42,783
+Tek satır da yazayım.
+
+823
+02:23:44,883 --> 02:23:45,123
+Tamam.
+
+824
+02:23:45,743 --> 02:23:47,843
+Arabayı oluşturdum, henüz kullanmadım.
+
+825
+02:23:48,283 --> 02:23:48,723
+Kullanalım.
+
+826
+02:23:49,283 --> 02:23:51,804
+Ne diyeyim, kendini tanıtmasını sağlayayım.
+
+827
+02:23:52,115 --> 02:23:58,295
+ekar nokta introduce self. Ben birkaç hafta yaptıkça otomatik tamamlama devreye giriyor zaten.
+
+828
+02:23:58,695 --> 02:24:05,556
+Introduce self olduğunu gördük. Bakın altta finalize de yazıyor yani. Ama onu hiç de siz çağırmıyorsunuz.
+
+829
+02:24:05,635 --> 02:24:11,536
+O şey de Java sanal makinesine. Garbage collector'a bırakıyoruz. Tamam. Ekar nokta introduce self.
+
+830
+02:24:11,536 --> 02:24:15,295
+Sonra P kısımını değiştirelim bunun. Ekar nokta.
+
+831
+02:24:15,731 --> 02:24:36,291
+Setplate. Bu sefer 06 plaka olsun. 06, ANK, 06 olsun. Ondan sonra tekrar Ekar'ın Introduce Selfie'ni çalıştıralım. Bu kadar yeter. Şimdilik bakalım. Bir tanesini tanımlayalım ve bunun nasıl çalıştığını bir görelim.
+
+832
+02:24:41,747 --> 02:24:43,827
+Adres, Java Application.
+
+833
+02:24:44,387 --> 02:24:47,327
+Ve görüyorum ki ilk başta, şimdi yine de açalım.
+
+834
+02:24:47,807 --> 02:24:51,207
+İlk başta bunu 34 veya 440 plakasıyla oluşturmuştuk.
+
+835
+02:24:51,547 --> 02:24:52,628
+Kendini o şekilde tanıttı.
+
+836
+02:24:53,128 --> 02:24:54,387
+Sonra plakasını set ettik.
+
+837
+02:24:54,628 --> 02:24:59,407
+Sonra ikinci kendisini tanıtmasında yeni plakası olarak kendini gösterdi.
+
+838
+02:25:00,467 --> 02:25:04,108
+İşte size ilk bütüncül örneğimiz.
+
+839
+02:25:04,747 --> 02:25:07,987
+Bu aşamada kafanıza bazı sorular takılmış olabilir.
+
+840
+02:25:07,987 --> 02:25:09,108
+Buyurun sonra.
+
+841
+02:25:12,115 --> 02:25:25,916
+Hocam, birinci public'in içerisinde yazdığımız ilk kar, yani e-karın solundaki karla new kar, bunlar bir karıştırdım da hangisinin ne olduğunu bir açıklayabilir misiniz?
+
+842
+02:25:29,139 --> 02:25:33,680
+Hep nesnenin türü ve nesnenin kendisi şeklinde tanımlamamız oluyor.
+
+843
+02:25:34,119 --> 02:25:37,219
+Mesela geçici değişken tanımlıyorduk ya, int i diyorduk.
+
+844
+02:25:37,419 --> 02:25:40,680
+Int değişkenin türü, i değişkenin adı.
+
+845
+02:25:40,879 --> 02:25:45,180
+Bu durumda da k nesnenin sınıfı, e-k nesnenin adı.
+
+846
+02:25:45,680 --> 02:25:47,299
+O şekilde söylüyoruz.
+
+847
+02:25:47,779 --> 02:25:50,180
+Buradaki k, buradaki k.
+
+848
+02:25:50,279 --> 02:25:51,579
+Yani sınıf adı olan k.
+
+849
+02:25:51,951 --> 02:25:57,551
+Hadi bir büyüteyim. Ne diyeyim? Şurada bir şeklimi de açayım.
+
+850
+02:25:58,551 --> 02:26:04,051
+Şimdi, şu kar, şu kar.
+
+851
+02:26:05,171 --> 02:26:11,211
+Sonra, constructor'ın kuranı neydi? Constructor adı sınıf adıyla aynı olmak zorundaydı.
+
+852
+02:26:11,311 --> 02:26:14,912
+O yüzden constructor metodunun adı da büyük C, L, K.
+
+853
+02:26:15,379 --> 02:26:27,559
+E, constructor'da new anahtar kelimesiyle çağrılıyordu. O yüzden rahatlıkla anlayabilirim ki şuradaki k ifadesi de constructor metod anlamında olan k.
+
+854
+02:26:27,559 --> 02:26:34,000
+Ve kaldı ki şurada ona parantez açıp bir parametre vermişiz. Bu bir metot çağrımıdır.
+
+855
+02:26:35,639 --> 02:26:42,619
+Burada şöyle koyu işe çizim. Oraya değil, altına çizmek istemiştim. Bir parametre vermişim.
+
+856
+02:26:43,059 --> 02:26:53,439
+Parantez açıp, yukarıda da zaten k-constructor'ın bir string parametri aldığını görüyorum. Şu bilgi oraya aktarılmış oluyor.
+
+857
+02:26:55,299 --> 02:27:01,799
+Nesne adını yazarken de işte adını e-car koydum. Bir araba nesnesi anlamında.
+
+858
+02:27:02,896 --> 02:27:21,076
+E-car şeklinde adlandırdım. Bu benim alışmış olduğum bir adlandırma biçimi. Siz isterseniz arabam deyin, isterseniz my car deyin, isterseniz kit deyin, isterseniz neydi, meter veyahut da neydi o şey, class, kitlerin adları, neyse, unuttum şimdi, şu sefer de sezmiştik.
+
+859
+02:27:21,076 --> 02:27:30,896
+Ne isterseniz koyduk, hiç de değil. C-flan da diyebilirsiniz ama bir nesneye isim verirken, daha doğrusu hatta yüyalanla...
+
+860
+02:27:30,896 --> 02:27:56,116
+üye metotları isim verirken varsın gerekiyoruz. Uzun olsun ama anlamlı olsun. Ne olduğu kodu okurken rahatlıkla anlaşılabilsin. O yüzden buraya car C demedim mesela. Car Ecar dedim. Veyahut da My Car dedim. Veyahut da bu Night Rider, karşı bir şekilde isimli sevdiğiniz arkadaşlar da. Kit'in akıllı yapay zekalı konuşan bir süper bir araba olduğunu bilirler. O yüzden Kit diyor.
+
+861
+02:27:56,564 --> 02:28:02,004
+Evet, peki. Var mı başka soru arkadaşlar? Daha sonra buyurun lütfen. Konuşalım, açıklayalım.
+
+862
+02:28:03,064 --> 02:28:05,724
+Hocam, 18. satırda bir açıklayabilir misiniz?
+
+863
+02:28:06,263 --> 02:28:09,744
+Tamam, peki. Hemen tekrar açıklayalım. Şimdi şunu da bir temizleyeyim artık.
+
+864
+02:28:09,744 --> 02:28:20,844
+Tüm satırları sileyim, sileyim. Tamam. Şimdi, biz programın illaki bir çalışmaya başlangıç noktası olmalıdır.
+
+865
+02:28:22,804 --> 02:28:35,304
+C dilinde bu main metoduydu. Yani herhangi bir .c dosyasına main metodu eklerseniz eğer onu derlediğinizde çalıştırdığınızda ilk komut main metodunun ilk komutu olarak yürütülmekteydi.
+
+866
+02:28:35,844 --> 02:28:49,443
+Java'da da herhangi bir sınıfa eğer şu imzaya sahip olan bir main metodu eklerseniz o zaman o sınıfı çalıştır dediğinizde bu main metodunun ilk komutuyla yürütülmeye başlarınız.
+
+867
+02:28:50,804 --> 02:29:00,123
+Bunun anlamını tekrarlamam gerekirse, public yani her tür sınıftan herhangi bir nesne bu metodu çağırabilir anlamına geliyor.
+
+868
+02:29:00,603 --> 02:29:02,564
+Bu da böyle olması lazım zaten.
+
+869
+02:29:02,844 --> 02:29:13,424
+Çünkü Java sanar makinesi bunu rahatlıkla veya sizin yazacağınız başka bir kod bu sınıfın main metodunu rahatlıkla çağırabilmeli ki program akışı başlayabilsin.
+
+870
+02:29:13,844 --> 02:29:16,504
+Bunun private olmasının bir anlamı yok bu nedenle.
+
+871
+02:29:18,448 --> 02:29:27,108
+Statik dedik buna. Statik bir metot bu. Statik metot nedir? Daha doğrusu statik nedir? Statik ortak kullanılan anlamına geldik.
+
+872
+02:29:27,891 --> 02:29:33,612
+O sınıftan tüm nesneler tarafından ortak olarak kullanılıyor anlamına gelmektedir.
+
+873
+02:29:34,012 --> 02:29:46,371
+Bu da bir metot olduğuna göre, statik metot, o sınıftan tüm nesnelerin o metodunun tamamen birebir tıp atıp motomatik yüzde yüz aynı davranması anlamına gelmektedir.
+
+874
+02:29:46,371 --> 02:29:52,832
+Şimdi başka tar nesneleri oluşturdukça onların getplate metotları farklı davranacak.
+
+875
+02:29:53,092 --> 02:29:55,492
+Onların introduce self metotları farklı davranacak.
+
+876
+02:29:55,891 --> 02:29:59,932
+O farklı araba nesnelerinin plaka içerikleri farklı olacak.
+
+877
+02:30:00,432 --> 02:30:11,551
+Fakat statik metotlar, ortak olarak kullanılan metotlar, hangi nesnenin üstünden çağrıldığından bağımsız olarak hep aynı sonucu doğru döndürür çalıştırırlar.
+
+878
+02:30:12,112 --> 02:30:12,752
+Anlamı budur.
+
+879
+02:30:13,139 --> 02:30:24,139
+Ve bu nedenle aslında statik metotlar içerisinde doğrudan uya alanlar kullanılamaz. O kısımla çok kafanızı karıştırmayın. Daha sonra bunun ayrıntılı konuşuruz.
+
+880
+02:30:24,479 --> 02:30:40,719
+Statiğin anlamı bu. Ayrıca bir de neden statik? Şimdi programı daha ilk bismillah çalıştıracağız ama normalde bu min metodu nesne üzerinden eriştiriyor olsaydı daha program başlamadı, nesne oluşturulmadı.
+
+881
+02:30:41,139 --> 02:31:08,699
+Oluşacak nesne. Benim programımda, uygulamamda, projemde sadece kar sınıfı var. O sınıfında default constructor da koymadım. İşime gelmiyor çünkü. Nasıl bir kar nesnesi oluşturulacaktı? Onun mail metodu çağırılacak. Bu bir açmaz. Yumurta, tavuk meselesi. İlk yumurta mı yaratıldı? Yoksa ilk tavuk mu yaratıldı? Yumurta mı tavuktan çıkar, tavuk mu yumurtadan çıkar? İkilemi var ya, çocuklukunuzdan ne bir tartıştığımızı. İşte o ikilemi kılmak için.
+
+882
+02:31:09,139 --> 02:31:18,959
+Main metodu statik olarak tanımlanmıştı ki herhangi bir nesneden bağımsız olarak kullanılabilsin. Bu nedenle statik yapılmıştı.
+
+883
+02:31:20,340 --> 02:31:26,340
+void'tir. Yani bir geriye bir geri dönüş döndürmez. Java geleneği bu şekilde.
+
+884
+02:31:26,880 --> 02:31:34,139
+Eğer programda bir hata falan olmuşsa ya bir exception oluşturursunuz. Öyle sonlandırırsınız.
+
+885
+02:31:34,619 --> 02:31:37,059
+Exception oluşma konusunu ilerlerde göreceğiz.
+
+886
+02:31:38,399 --> 02:31:48,340
+Veyahut da ekrana bir satır yazacağız. Şu nedenle program kapatılıyor deyip direkt boş return veyahut da exit system.exit falan diyerekten programlar.
+
+887
+02:31:48,340 --> 02:32:01,939
+çıkarsınız. Aynı tabi daha sonra deneriz. Metodumuzun adı main. Bu da bir gelenek. C'de de main'di, Java'da da main. Aldığı parametrelere gelinsek ise. Şimdi ben bu uygulamayı eğer
+
+888
+02:32:02,291 --> 02:32:29,612
+Aslında bu herhangi bir uygulama için geçerli. Onu şuradan şöyle bir örnek vermek istiyorum. Mesela Firefox'dan örnek vermek istiyorum. Şimdi Firefox'un da plug-in'lerin falan filan falan var. Diyelim ki bu plug-in'lerden bir tanesi bir problem çıkartıyor. Ve benim Firefox'un çalışmasını engelliyor. O zaman ne yapalım? Mesela Firefox'umu güvenli modda çalıştırdım. Güvenli modda nasıl çalıştırdım?
+
+889
+02:32:30,291 --> 02:32:37,031
+Ben Firefox egzemi çalıştırırken, mesela şurada aslında kısıyorum, olacaktı mesela basıyor üstümde.
+
+890
+02:32:39,667 --> 02:33:07,667
+Özelliklerine girdiğinde işte şuradaki Firefox Excel yazıyor. Ama ben şimdi diyelim ki buna bunu güvenli modda çalıştırmak istiyorsam ve safe mod yazarım. Tabii bunun işte Firefox Excel'in kaynak kodunda tanımlı bir şey olması lazım. Böyle yazdıysam eğer ilk açıldığında bu uygulama bu komut satımından veya burada kısa yol üstünden verdiğim şeylere parametreye bakan her bir parametreyi değerlendirir ve ilk önce onun gereğini yap.
+
+891
+02:33:07,667 --> 02:33:14,847
+Eğer ben şu kodun içerisine, main içerisine bu RGS ile ilgili bir şeyler yazdırdıysam.
+
+892
+02:33:14,847 --> 02:33:28,007
+Örnek olarak işte konut satırı aldığımda işte Java mesela compiler, version falan dediğimde herhangi bir şey derlemeye çalışmıyor.
+
+893
+02:33:28,387 --> 02:33:35,308
+Buna ilk parametre olarak version dediğim için, traversal, sadece versiyonunu yazıyor, başka bir şey yapmıyor.
+
+894
+02:33:35,667 --> 02:33:42,788
+Veya sadece Javaç yazarsam diyor ki bana işte bakın bu programın komut satırından kullanımı şu şekilde şu şekildedir diyor.
+
+895
+02:33:42,788 --> 02:33:49,028
+Javaç derseniz seçeneklerinizi verirsiniz. Sonra kaynak kodu dosyayı isimlerini verirsiniz diyor.
+
+896
+02:33:49,367 --> 02:33:52,747
+Option yerine neler yazabilirsiniz diyor. Bizden fazlası da olabilir diyor.
+
+897
+02:33:53,028 --> 02:34:01,207
+İşte TRED deyip bir dizim verebilirsiniz. İşte TREG dersiniz veya TREH deyip çalışma dizimini verirsiniz falan.
+
+898
+02:34:01,648 --> 02:34:03,268
+Böyle parametreler vardır. Sonra.
+
+899
+02:34:03,667 --> 02:34:07,468
+Sons faresi hangi nokta Java dosyalarını değerleyeceğiz? Onların isimleridir.
+
+900
+02:34:07,468 --> 02:34:20,407
+İşte Java çeşitledikten sonra, boşluk verdikten sonra yazacağın her bir kelime, boşlukla ayırarak yazacağın her bir kelime bu ARGS dizisinin bir elemanı olacak.
+
+901
+02:34:21,827 --> 02:34:26,587
+Durum bu. Tekrar onu istediğiniz bir kısım varsa tekrar sorun.
+
+902
+02:34:31,924 --> 02:34:39,744
+Bakalım. Tamam, teşekkürler diyor. Ben de teşekkür ederim soru için. Başka soru varsa lütfen konuşalım.
+
+903
+02:34:51,763 --> 02:34:53,923
+Olmazsa çeşitli varyasyonlar yapacağız da.
+
+904
+02:34:54,703 --> 02:34:56,763
+Söylemeyi unuttuğum bir şey olmasın.
+
+905
+02:34:57,183 --> 02:34:58,804
+Şu şeye bir bakalım.
+
+906
+02:34:59,923 --> 02:35:02,743
+Şunu nasıl şöyle yapalım? Şöyle yapıyoruz galiba.
+
+907
+02:35:04,423 --> 02:35:05,503
+Bakıyorum şimdi.
+
+908
+02:35:06,343 --> 02:35:09,063
+Ha, şemali kodu eşleştiriyoruz. Tamam, onu yaparız.
+
+909
+02:35:09,523 --> 02:35:12,123
+Printing, camera casing, onlardan da bahsediyoruz falan.
+
+910
+02:35:12,123 --> 02:35:14,723
+Şu örneği biraz daha çeşitlendirip ölçe.
+
+911
+02:35:15,263 --> 02:35:15,984
+Biraz sonra acıma.
+
+912
+02:35:16,468 --> 02:35:25,048
+Şimdi burada sadece bir tane nesne tanımladık. E-car dedik. Bir tane daha oluşturdum. Mesela diyelim ki, sonuna ekleyelim.
+
+913
+02:35:25,048 --> 02:35:35,048
+Anadıl car eşittir new car. Buna da diyelim ki, 35 dakika verelim.
+
+914
+02:35:39,156 --> 02:35:44,855
+Ondan sonra bu en adır karında kendisini tanıtmasını sağlayalım.
+
+915
+02:35:45,855 --> 02:35:47,695
+Introduce self.
+
+916
+02:35:48,756 --> 02:35:49,676
+Tamam, kaydet.
+
+917
+02:35:50,111 --> 02:36:06,491
+Şimdi en son çalıştırdığım sınıfı bir daha çalıştırmak istiyorsanız, direkt lan düğmesine direkt basabilirsiniz. Ben şimdi bunu maksimal etmişken bunu yaptığım için komut satırını şöyle şuraya sağa böyle küçük çıkarttı. Öbür türlü de yapsaydım yine alt takdik yazacaktı.
+
+918
+02:36:06,491 --> 02:36:18,111
+Şimdi bu çıktığı an nedir? İlk iki satırı biliyoruz zaten. Üçüncü satır olarak da diğer araba kendisinin plakasını ekrana yazdırdı. Introducez metodu üzerinde.
+
+919
+02:36:18,111 --> 02:36:26,252
+Şimdi biraz şöyle bir çeşitlendirelim bunu. Kapatayım şimdilik buradan.
+
+920
+02:36:28,011 --> 02:36:36,171
+Şimdi önce another car diyelim. Sonra aslında işte another new car diyerekten yapan another car.
+
+921
+02:36:37,072 --> 02:36:39,871
+Özür dilerim. Evet, another car.
+
+922
+02:36:40,340 --> 02:36:46,340
+New card diyerekten o ara bir ilklendirelim. Yine düzgün çalıştığını görelim.
+
+923
+02:36:46,340 --> 02:36:52,779
+Yine düzgün çalıştı olması gerektiği gibi. Şöyle yapalım.
+
+924
+02:36:53,139 --> 02:37:13,119
+Şimdi şunu demiştik, onu bir göstereyim. Bir nesneyi ilklendirmeden kullanamayız. Constructor metodunu çağırıp onu ilklendirmeden kullanamayız. Kullanmaya çalışırsak ne olur? Bir aykırı durum gerçekleşir. Şimdi daha bunu ilklendirmeden ya da şöyle diyeyim işte şu satırı yorumlayayım.
+
+925
+02:37:14,548 --> 02:37:35,708
+Ve bu şekilde çalıştırmaya çalışayım. Fakat bunu zaten derleyici de yakaladı. Diyor ki, işte bu yana değişken olan, nadir karnesnesi, ilklendirilmedi diyor. İlklendirilmedi, ilklendirilmemiş olabilir diyor ama ilklendirilmedi. O yüzden aslında programı çalıştırmayacak bile. Çünkü bu derleme hatası.
+
+926
+02:37:36,979 --> 02:37:39,420
+Bundan nasıl kulturoldum?
+
+927
+02:37:39,899 --> 02:37:42,420
+İşte Eclipse'in bu versiyonlarını da kulturamam.
+
+928
+02:37:42,619 --> 02:37:45,520
+Eski versiyonlar da olsaydı belki bunu çalıştıracaktı.
+
+929
+02:37:45,840 --> 02:37:47,639
+Peki şöyle el yazsam ne olursa?
+
+930
+02:37:49,860 --> 02:37:51,759
+O zaman derlem hatası gider mi?
+
+931
+02:37:51,899 --> 02:37:53,099
+Tamam, derlem hatası gitti.
+
+932
+02:37:53,099 --> 02:37:53,380
+Tamam.
+
+933
+02:37:53,920 --> 02:37:57,099
+Şimdi daha ileride göreceğiz ama şurada ev geçmişken söyleyeyim.
+
+934
+02:37:59,279 --> 02:38:02,639
+İlklendirilmemiş nesnelerin değeri NAL olur arkadaşlar.
+
+935
+02:38:03,763 --> 02:38:12,443
+Ve bir nesneyi constructor çağırıp ilklendirilmemiş mi? Bunu test etmek için nesnenin değerinin nal olup olmadığına bakıyoruz.
+
+936
+02:38:12,844 --> 02:38:17,563
+Oradan gideriz. Daha sonra söyleyecektik ama müzik haftalarda. Şimdi madem yeni geldi.
+
+937
+02:38:18,844 --> 02:38:25,403
+Constructor'ını çağırmadım. Şimdi çalıştırmaya çalışacağım. Şu an warning. Çalıştırmamı engellemiyor.
+
+938
+02:38:25,403 --> 02:38:29,423
+Tabi programla karşılaşacağız. Orası ayrı. Şimdi bakalım.
+
+939
+02:38:30,772 --> 02:38:32,512
+Ne oldu? Komut satına bakalım.
+
+940
+02:38:33,231 --> 02:38:39,652
+Şimdi, Ekar'ın plaka değişikliği öncesi ve sonrası komutta çalıştı.
+
+941
+02:38:40,371 --> 02:38:46,211
+Sonra fakat bu 25. satır gerçekleşmeden önce kırmızı yazılara bir hata çıktı.
+
+942
+02:38:46,211 --> 02:38:47,812
+Bir aykırı durum.
+
+943
+02:38:48,275 --> 02:39:15,716
+Bir exception oluştu. Java Terminali aracısında exception diyoruz buna. Main thread'inde, multi-threaded ya aslında, main metodunda öyle anlayın, bir null pointer exception gerçekleşti. Her bir exception'de aslında bir artı sınıftır. Kendi exception'larınızı oluşturma konusunu göreceğiz. İlerleyen haftalarda Java Lang paketinde yaran null pointer exception gerçekleşti. Diyor ki, işte şu paketteki şu sınıfın şu metodunu çağıramadım çünkü
+
+944
+02:39:16,275 --> 02:39:44,275
+Kader K mesnesi aslında null. Yani ilklendirilmemiş bu anlamda. Daha sonra da akış kaldığı yerden devam etmedi. Exception oluştuğu andan itibaren program akışı sonlandı. Şurada zaten şu şekilde olduğunu görürüz. Sonlandırılacak bir şey yok çünkü bu noktada sonlandı. Exception oluştuğu zaman da nereden kaynaklandığını da söyledi aslında. 25. satır çalıştırmaya çalıştığımda gerçekleşti. Yani nerede geldi?
+
+945
+02:39:44,275 --> 02:40:03,515
+açıkçası söyledi. Esas kaynağı tabii şu 23. satır. Yani konstruktörünü çağırmadan geçmeye çalıştım. Ama şu komentimi silersem herhangi bir problem olmayacaktır. Şu aşamada nal atandı ama sonra aşamada ilklendirildiği için nesne herhangi bir problem gerçekleşmeyecektir.
+
+946
+02:40:03,860 --> 02:40:11,760
+Gördüğünüz gibi yine kendisinin ikinci araman, kendisinin plakasını 35 olarak da gösterebildi.
+
+947
+02:40:12,680 --> 02:40:12,880
+Bu.
+
+948
+02:40:15,639 --> 02:40:17,080
+Başka ne diyebilirim?
+
+949
+02:40:17,659 --> 02:40:18,040
+Mesela,
+
+950
+02:40:20,740 --> 02:40:21,040
+Şimdi,
+
+951
+02:40:22,680 --> 02:40:24,280
+İki aramanın plakasını eşitleyebilirim.
+
+952
+02:40:24,440 --> 02:40:26,500
+Çok doğru bir şey olmaz ama yapabilirim.
+
+953
+02:40:27,760 --> 02:40:28,540
+Göstereyim mesela.
+
+954
+02:40:29,280 --> 02:40:30,960
+Şimdi, şu noktada diyelim ki,
+
+955
+02:40:33,043 --> 02:40:34,963
+Another column.
+
+956
+02:40:35,540 --> 02:40:37,680
+setplate metodunu çağıracağım.
+
+957
+02:40:38,240 --> 02:40:45,260
+Bunlar parametre olarak da diğer ilk arabanın, ekarın, getplate metodunu vereceğim.
+
+958
+02:40:45,799 --> 02:40:47,440
+Metodunun geri döndürdüğü şeyi vereceğim.
+
+959
+02:40:47,440 --> 02:40:48,780
+Ne yapmış oldum şimdi?
+
+960
+02:40:49,139 --> 02:40:50,280
+Ekar'ın plakasını aldım.
+
+961
+02:40:50,720 --> 02:40:53,659
+O plaka neymişse o plakayı en aldır karada atadım.
+
+962
+02:40:53,840 --> 02:40:55,799
+Şimdi aynı plakalı iki nesne oldu.
+
+963
+02:40:56,819 --> 02:40:58,040
+Çok da güzel bir şey değil bu.
+
+964
+02:40:58,159 --> 02:41:01,360
+Yaptığım doğru bir şey değil ama yapabilirim, göstermek istiyorum.
+
+965
+02:41:01,960 --> 02:41:02,479
+Devlettim.
+
+966
+02:41:03,540 --> 02:41:18,520
+Java yapıcı için. Bakın, diğer araban da plakasını aynı plak olarak anlattı, gösterdi. Güzel bir şey olmadı ama hani örnek çeşitleri olsun diye söylemiş oldum.
+
+967
+02:41:19,316 --> 02:41:23,476
+Öte yandan, ne bileyim, başka bir arka var.
+
+968
+02:41:23,736 --> 02:41:30,476
+Buna rağmen yine de e-car'da, another car'da aslında bellekte farklı nesneler.
+
+969
+02:41:30,736 --> 02:41:32,816
+Durum bilgileri aynı oldu, plakaları aynı oldu.
+
+970
+02:41:33,056 --> 02:41:36,276
+Ama bunlar bellekte farklı farklı nesneler.
+
+971
+02:41:36,556 --> 02:41:42,416
+Sonra diyelim ki e-car'ın plakasında başka bir şey yaptığında ötekinin plakası değişmeyecek, kalacak.
+
+972
+02:41:42,416 --> 02:41:44,695
+Şimdi bu mantık hatağını düzelteyim.
+
+973
+02:41:45,116 --> 02:41:47,316
+e-car.set.plak.
+
+974
+02:41:47,316 --> 02:41:52,015
+Diyelim ki buna da 41 plaka verelim.
+
+975
+02:41:54,316 --> 02:42:01,756
+41 olsun. Ondan sonra şimdi önce Ekar'ın sonra Another Karın introdüsel yerine çağırayım.
+
+976
+02:42:01,756 --> 02:42:02,396
+Mesela.
+
+977
+02:42:05,256 --> 02:42:11,756
+Şimdi bekliyorum. Another Karın plakası şey oldu. Ekar'ın son plakası yani 06 oldu.
+
+978
+02:42:12,211 --> 02:42:34,231
+Önce 06 plaka, sonra da 41 plaka, pardon özür dilerim. İlk önce 41 plaka, sonra 06 plaka çıkmasını bekliyorum. En son iki satır olaraktan çalışıyorum ve 41 plaka ve 06 plaka olmak üzere bir tanesini değiştirdiğim için bir tanesinin değiştiğini gördüm.
+
+979
+02:42:34,231 --> 02:42:36,011
+Mesela durum bu.
+
+980
+02:42:38,355 --> 02:42:51,435
+Mesela bir de şöyle bir şey yapabilirim. Hadi onu print'e tanımlasam daha iyi olur ama neyse dur şöyle bir yapayım. Ne olmuştuk şimdi?
+
+981
+02:42:55,507 --> 02:43:13,927
+Plakayı değiştirmedim. Şu an ikisinin de plakası aynı. Fakat Eka ve Enadırka aslında bellekte farklı nesneler. Onun öyle olduğunu bir göstereyim size. Şimdi seyrettim. Sonra şuraya bir breakpoint koydum ve hata ayetlama modunda çalıştıracağım şimdi bunu.
+
+982
+02:43:19,476 --> 02:43:21,675
+Ay pardon, debarkest demeliydim. Özür dilerim.
+
+983
+02:43:21,675 --> 02:43:24,076
+Debarkest, channel application.
+
+984
+02:43:24,076 --> 02:43:32,076
+Evet, bu perspective'i, bu bakış açısına geç diyorum. Switch tamam. Şimdi layout biraz değişti bu arada.
+
+985
+02:43:32,915 --> 02:43:58,275
+Evet, şu noktada duruyor. Ve bakın, bizim herhangi bir izlenecek değişken kendimiz eklemenize gerek kalmadan şu an geçerli olan nesneleri bir gösteriyor burada. Ve bakın, kar için IDC 21'dir diyor. Naderkar için IDC 23'dir diyor. Yani bununla farklı nesneler. Hatta bizim RGS String bizim de farklı bir nesne. Onun da farklı bir ID'si var.
+
+986
+02:44:00,915 --> 02:44:11,455
+Eclipse kendisi bir oluşturuyor aslında. Bu onun Java sanal makisinin atadığı universal, unique identifier değil kesinlikle. Ona kimse müdahale edemez.
+
+987
+02:44:11,824 --> 02:44:23,664
+Fakat ama eğer isterseniz mesela o Universal Unique ID'nin ne olduğunu bir üstüne tıkladığımda şuradaki değer olarak haftaki paketindeki k nesnesi et, bir tane hexadecimal sayı.
+
+988
+02:44:23,904 --> 02:44:34,463
+Bu hexadecimal sayı da bu Universal Unique Identifier'e bir hash fonksiyonuna sokulup elde edilen değer neymişse o oluyor ve her nesne için farklıdır.
+
+989
+02:44:34,963 --> 02:44:39,824
+Bellekte farklı alanlarda gösterilen farklı nesneler için bu değerler farklıdır.
+
+990
+02:44:39,824 --> 02:44:39,984
+Arkadaşlar, class, object,
+
+991
+02:44:39,984 --> 02:44:47,603
+Ekar için bu 45 bilmem ne, another kar için bu 11 bilmem ne. Farklı farklı hexadecimal sayılar.
+
+992
+02:44:48,064 --> 02:44:54,044
+Şöyle alt alanlarını tıkladığımda da üye alanlarının değerlerini filan görebiliyorum.
+
+993
+02:44:54,404 --> 02:44:59,324
+Ha, üye alanları birlikte aynı plate nesnesini gösteriyor aslında.
+
+994
+02:45:00,984 --> 02:45:06,924
+Bunun ID'lerinin aynı olmasından anlayabiliyoruz plaka ID'lerini.
+
+995
+02:45:07,984 --> 02:45:14,544
+Bunu hatırlayalım. Durumları aynı fakat belirle farklı neler gösterdiklerinden bunlar farklı nesneler.
+
+996
+02:45:14,544 --> 02:45:19,724
+Aslında durdurayım koşmayı. Şimdi şu şekilde çevirmek istiyorum kolumu.
+
+997
+02:45:21,783 --> 02:45:31,004
+Nerede? Cevap perspektifim. Zaten şurada. Sağ tarafta, şuradan sağ üstü de çok küçük bir simge. Tekrar cevap perspektifine gelin.
+
+998
+02:45:31,443 --> 02:45:35,424
+Şimdi şöyle bir şey yapmak istiyorum. Nesne ataması yapmak istiyorum şimdi.
+
+999
+02:45:35,984 --> 02:45:51,744
+Bunun farkını bir göstereyim size. Şimdi, en adı kar eşittir. Ekar diyorum. Ve hiç plaka bir laka falan değiştirmeden ekarın da kendisini tanıtmasını, en adı karın da kendisini tanıtmasını istiyoruz.
+
+1000
+02:45:51,744 --> 02:45:58,704
+Şimdi bu yeni eklediğim 23. satırda şöyle bir şey yapmış oldum. Ekar nesnesini komple bir nesne olarak al.
+
+1001
+02:45:59,219 --> 02:46:14,639
+Tanımladığım en adır k nesnesini ata. Yani aslında şu an sadece bir tane nesne var bellekte ama o bellekteki bir tane nesneyi gösteren iki tane nesne işaretçisi var. Biri ekar, biri en adır k.
+
+1002
+02:46:14,639 --> 02:46:25,279
+Ve ekarda yapacağım değişiklik ve en adır karda yapacağım değişiklikte ikisini birden etkileyecektir. Çünkü iki işareti de bellekte aynı yeri işaret etmektedir.
+
+1003
+02:46:26,260 --> 02:46:37,799
+Ve diyelim ki şurada işte Eka'nın plakasını değiştireyim. Setplate. Ne diyeyim? Yine 35 plaka vereyim mesela.
+
+1004
+02:46:42,291 --> 02:46:49,991
+İki aracında kendini tanıttığını aynı şekilde, yine aynı şekilde tanıttığını göreceğiz.
+
+1005
+02:46:50,671 --> 02:46:52,331
+35 izi, 35 izi.
+
+1006
+02:46:52,711 --> 02:46:56,831
+Fakat burada durum bilgilerinin aynaları söz konusu değil.
+
+1007
+02:46:57,152 --> 02:47:00,772
+Bu iki işaret içinde bellekte aynı yeri göstermesi söz konusu.
+
+1008
+02:47:01,252 --> 02:47:04,451
+Yine benzer şekilde debug edersen bunu göreceğiz.
+
+1009
+02:47:07,311 --> 02:47:08,152
+Evet.
+
+1010
+02:47:08,628 --> 02:47:15,988
+Şimdi bakın, şu noktaya geldiğimizde, e-car işaretçisi de, another car işaretçisi de aynı ID'ye sahip.
+
+1011
+02:47:16,208 --> 02:47:23,247
+Çünkü bellekte artık aynı yeri göstermiş oluyorlar. Bunun elinde benim 23. satırda verdiğim komuttur arkadaşlar.
+
+1012
+02:47:24,308 --> 02:47:24,708
+Durum bu.
+
+1013
+02:47:25,652 --> 02:47:42,472
+Bu versiyonda object ilki olanı yaptık. Nesne eşitliği, aynılığı, denkliği. Bir önceki halinde object state ilki olanı vardı, durumunun eşitliği. Burada nesnenin kendisinin aynılığı söz konusu oldu.
+
+1014
+02:47:49,363 --> 02:47:52,324
+Yeri gelmişken onu da bir söyleyeyim şimdi madem öyle.
+
+1015
+02:47:53,703 --> 02:47:55,543
+Şeyi durdurayım, döngüyü durdurayım.
+
+1016
+02:47:56,223 --> 02:47:57,123
+Şöyle yapayım mesela.
+
+1017
+02:47:57,863 --> 02:48:03,843
+Şimdi son komut olarak artık araçlar kendilerini tanıtmasın da şey diyeyim.
+
+1018
+02:48:03,843 --> 02:48:16,543
+Diyelim ki eğer e-kaz aynıysa, eşit kaşıtı ise en aradığı kaz o zaman
+
+1019
+02:48:18,036 --> 02:48:32,956
+says out two cars are exactly the same object.
+
+1020
+02:48:35,716 --> 02:48:44,916
+As expected there, as says out two objects.
+
+1021
+02:48:45,396 --> 02:48:46,636
+A de fara.
+
+1022
+02:48:48,051 --> 02:48:56,691
+Ve bu durumda ilk ifin, else'in değil, ifin yürütüldüğünü göreceğiz.
+
+1023
+02:48:57,191 --> 02:49:02,152
+Çalıştırayım. Tekrar Java moduna, normal düzenli bir moduna geçeyim.
+
+1024
+02:49:02,851 --> 02:49:08,531
+En son dedi ki, two class are exactly the same objects.
+
+1025
+02:49:08,531 --> 02:49:12,531
+Ama öbür türlü kalsaydı, şunu yapmasaydım.
+
+1026
+02:49:16,051 --> 02:49:19,351
+35 plaka ile ilklendiğim hatta
+
+1027
+02:49:19,351 --> 02:49:24,131
+plakalar aynı ama aslında bunlar farklı nesne var.
+
+1028
+02:49:24,131 --> 02:49:27,391
+35, 35 diyeyim.
+
+1029
+02:49:28,731 --> 02:49:32,432
+Şimdi de diyecek ki iki nesne aslında farklı nesne.
+
+1030
+02:49:35,891 --> 02:49:38,191
+Evet, bakın. Two objects are different.
+
+1031
+02:49:38,711 --> 02:49:40,492
+Neden? Bellekte aynı yeri göstermiyorlar.
+
+1032
+02:49:40,811 --> 02:49:42,891
+Farklı farklı nesneler bilmez.
+
+1033
+02:49:43,332 --> 02:49:43,711
+Durum bu.
+
+1034
+02:49:46,112 --> 02:49:46,412
+Evet.
+
+1035
+02:49:48,211 --> 02:49:48,871
+Soru var. Sağ olun.
+
+1036
+02:50:00,244 --> 02:50:11,144
+Şimdi aslında şey kısmını yapmadım bir. Kod, şema karşılaştırmasını yapmadım ve şeyde, sequence diagramı da çizindim ama bazı belki böylesine de bir hayır.
+
+1037
+02:50:14,084 --> 02:50:21,544
+Çarşamba günkü saat yedirde başlayacağımız derste inşallah daha fazla katılım olur.
+
+1038
+02:50:24,608 --> 02:50:45,668
+Biraz hatırlataraktan geçeriz bu şeyleri. Öyle söyleyeyim. Siksonist diagramını çizmeyi falan filan. Ama hazır şu şamanın üstündeyken bir sunum moduna geçip şama ile kod karşılıklarını da size çizmek istiyorum şimdi. Alayım açıklama ekleme kısmını. Şimdi bakalım.
+
+1039
+02:50:51,956 --> 02:50:53,015
+Kar yaptım.
+
+1040
+02:50:54,155 --> 02:51:01,876
+Yönelik Sınıf Şaman'da da bu kar ismi dikdörtgenin üst bölmesinde yer almaktadır.
+
+1041
+02:51:01,956 --> 02:51:03,756
+Ok çizmeyelik uğraşmayayım arkadaşlar.
+
+1042
+02:51:04,195 --> 02:51:05,396
+Yuvarlakları birleştireyim.
+
+1043
+02:51:05,695 --> 02:51:07,956
+Zaten pek güzel değil el koordinasyonu.
+
+1044
+02:51:08,736 --> 02:51:10,036
+O şekilde devam edelim.
+
+1045
+02:51:11,036 --> 02:51:18,835
+Şimdi sonra şuradaki eksiler private anlamına gelmektedir.
+
+1046
+02:51:20,819 --> 02:51:29,000
+Private olacağı için kural şemada eksi çiziyoruz veya şemada eksi çizdiğimiz için bu kodda private'a denk geliyor.
+
+1047
+02:51:30,139 --> 02:51:34,059
+Şimdi biraz renk, şekil karışıklı olmasın diye farklı renkler kullanayım.
+
+1048
+02:51:34,879 --> 02:51:37,279
+Şuradaki plate bir alana verdim.
+
+1049
+02:51:37,959 --> 02:51:40,239
+Plate, hadi oradan geçirmeyim de.
+
+1050
+02:51:40,599 --> 02:51:42,200
+Ama çok geçirecek yerim de yok da.
+
+1051
+02:51:43,360 --> 02:51:44,119
+Şöyle yapayım.
+
+1052
+02:51:45,579 --> 02:51:46,020
+Plate.
+
+1053
+02:51:46,932 --> 02:52:02,572
+Ve bu üye alanın türünü string yaptığım için şu da string şeklinde kodumda yer alıyor.
+
+1054
+02:52:04,572 --> 02:52:12,752
+Son acıma, şurası 6, 6 demek, public demek.
+
+1055
+02:52:13,811 --> 02:52:17,512
+O yüzden şurası kırmızı.
+
+1056
+02:52:19,952 --> 02:52:25,452
+Sonracima işte şimdi şöyle yapayım.
+
+1057
+02:52:26,811 --> 02:52:32,051
+Aslında sınıfımın adı kar olduğu için constructor metodunun adı da kar.
+
+1058
+02:52:33,971 --> 02:52:38,311
+Ama yine de şuradaki kar constructor metod olduğu anlamındadır.
+
+1059
+02:52:38,391 --> 02:52:41,172
+Buradaki kar ise sınıf adı olduğu anlamındadır.
+
+1060
+02:52:41,556 --> 02:53:07,415
+O yüzden oradaki class şuraya denk geliyor. Ondan sonra şu plate nere string, onlar da işte plate numbers şu ve ne diyeyim işte şu string de şu.
+
+1061
+02:53:09,427 --> 02:53:25,827
+Çok fazla işe geçti ama bunu genelde tahtada çizince daha iyi oluyordu. Kalemle malemle. Burada bu kadar elimden geliyor. Ama kelimelerimi takip ederseniz, çizdiğim varını da takip ederseniz aklınızda kalır demek istiyorum.
+
+1062
+02:53:26,808 --> 02:53:35,028
+Sonucu artık tekrar şu pabriklerin, parçaların hepsini eşleştirmeyeyim. Bir eşleştirmeyi gördük. Ondan sonra açıma.
+
+1063
+02:53:37,139 --> 02:54:00,399
+Başka ne bileyim, mesela şu setter'dan gidelim şimdi. Biraz yerimiz açılsın. Çok fazla içe geçmesin. İşte setplate metodum. Şurada. Ondan sonra çöme parametre olarak bir string alıyoruz. Tamam, işte. O da bu.
+
+1064
+02:54:02,324 --> 02:54:17,264
+İsmini yazmamışım, yazmayabiliyorduk biliyorsunuz tartıştık. Geriye bir şey dönmediği için, geriye bir şey dönmediği için, boş olduğu için burası kodda da void olarak geçiyor.
+
+1065
+02:54:18,963 --> 02:54:43,463
+Şey bu. Temel olarak durum bu. Diğerlerini de eşleştireceğim işte ne bileyim işte mesela işte main metodu. Hatta artıyı da yuvarlak içine aldım madem o zaman şu public ve main şöyle olmuş oldu. Ondan sonra acaba işte void herhangi bir şeye geri dönmüyor. Tamam işte bir şey yazmamışız veya o yüzden void.
+
+1066
+02:54:45,203 --> 02:54:49,723
+Aslında buraya şimdi kıvırlık pantesi içerisinde statik yazmam gerekirdi en sona.
+
+1067
+02:54:50,103 --> 02:54:53,903
+Ama hani Zümey meton statik olduğu çok biliniyor artık.
+
+1068
+02:54:54,403 --> 02:54:56,803
+O yüzden burada statik var gibi.
+
+1069
+02:54:59,443 --> 02:54:59,703
+Evet.
+
+1070
+02:55:00,463 --> 02:55:03,003
+Şimdi sorularınız varsa lütfen buyurun.
+
+1071
+02:55:03,163 --> 02:55:04,263
+Daha fazla bir şey anlatmayacağım.
+
+1072
+02:55:04,763 --> 02:55:07,883
+Sorularımızın da gidelim ve dersi kapatalım.
+
+1073
+02:55:10,708 --> 02:55:19,987
+Hocam ben ders saatleriyle ilgili bir şey sormak istiyorum da en son sorayım. Bizim bu çarşamba dediğimiz ders bu pazartesi lap dersi yerine geçecek.
+
+1074
+02:55:19,987 --> 02:55:20,188
+Evet.
+
+1075
+02:55:20,188 --> 02:55:21,427
+O safartesi olacak mı?
+
+1076
+02:55:22,208 --> 02:55:29,007
+Onun saatlerinde değişiklik yapma imkanınız olur mu? [kişisel bilgi]
+
+1077
+02:55:29,847 --> 02:55:36,587
+Şeyin mi, bu telafinin mi saati ne diyorsunuz? Sekizde başlasın diyorsunuz. Olabilir.
+
+1078
+02:55:37,139 --> 02:55:37,779
+Olabilir.
+
+1079
+02:55:37,839 --> 02:55:49,879
+Olabilir. Bakacağız. Ben onu bir not alayım. Yani 8-10 arasında da olabilir dersi. Hani duruma göre bir saat yaparız, duruma göre iki saat yaparız. Ona bir bakalım.
+
+1080
+02:55:50,759 --> 02:55:53,099
+Onun dışında pazartesi de olacak değil mi ders?
+
+1081
+02:55:54,019 --> 02:55:57,819
+Olabilecek. Şöyle ki, önce şunu bir yazayım da bir saniye.
+
+1082
+02:55:58,324 --> 02:56:17,164
+Telafi 20-0-0 olsa diye bunu bir değerlendireceğim. Şimdi biz laboratuvarları genelde dördüncü haftada falan başlatıyoruz. Ve şimdi yöküm emri gereği, yazısı gereği. Laboratuvarlar da yüz yüze yakın başlarında.
+
+1083
+02:56:26,324 --> 02:56:29,924
+Şimdi siz burada mesleğinizi öğreniyorsunuz.
+
+1084
+02:56:30,123 --> 02:56:37,144
+Yani bundan sonraki yaşantınızda hayatınızı kazanacağınız temel becerilerinizi elde ediyorsunuz.
+
+1085
+02:56:37,623 --> 02:56:41,484
+Buralarda kopya çekerseniz eğer kendinizi kandırmış olursunuz.
+
+1086
+02:56:41,484 --> 02:56:50,683
+Daha sonra bilgisayar mühendisi olarak sektöre çıktığınızda kopya çekebileceğiniz bir yer pek olmayacaktır.
+
+1087
+02:56:51,144 --> 02:56:54,324
+Google'larda, stekoloslarlarda bir şey...
+
+1088
+02:56:54,324 --> 02:57:11,164
+Bir yere ara bir yere kadar gelebiliriz sayesiniz. Ancak bir yerde takılır kalırsınız. O yüzden bu sizin geleceğinizi biçimlendirecek yetenekler olduğu için kendi bireysel maksimum çabanızı göstermeniz en doğrusu.
+
+1089
+02:57:11,164 --> 02:57:22,079
+Ben demiyorum ki arkadaşlarınıza bir şey sormayın, hocalarınıza bir şey sormayın. Fakat sınav ve labrutağı konusunda kendi bireysel becerilerinizi...
+
+1090
+02:57:22,079 --> 02:57:49,459
+Kullanın demek istiyorum. Onu bir geçelim. Bir paranteze koyalım. Neyden gelmişiz? Yüz yüze ve lab utahşimler gelmişiz. Şimdi yüz yüze yapacağımız zaman bazı haftalarda uygulama yapacağız. Yani asistan hocanız gireceklerse ve bir problemi size anlatarak sizinle birlikte çözecek. Üç uygulama yapılacak. Üç tane de lab yapılacak. Bu durumda da size soru sorulacak.
+
+1091
+02:57:50,079 --> 02:57:54,840
+Ve sizin bu soruyu çözmeniz ve Asistan Hoca'nın e-mail adresine gönderdiğiniz beklenecek.
+
+1092
+02:57:55,040 --> 02:57:56,799
+Oradan bir not alacaksınız.
+
+1093
+02:57:58,260 --> 02:58:01,760
+Uygulama kısımlarını online yapabiliriz.
+
+1094
+02:58:02,040 --> 02:58:05,760
+Biraz esnettik o kısmı. Asistan arkadaşlara kolaylık tanımladık.
+
+1095
+02:58:05,760 --> 02:58:13,659
+Ama notlanacak laboratuvar kısımlarını bizim Bodrum Kart'taki fiziksel laboratuvarlarda yapacaksınız.
+
+1096
+02:58:14,159 --> 02:58:17,540
+Tamam da bizim 3 yazılım laboratuvarımız var.
+
+1097
+02:58:17,855 --> 02:58:37,816
+Her lab tuarda sağlık şartlarında 15'e düşürmüştük kapasiteyi. Normal kapasiteyi 20-22 filandı. Biz dersi kaç kişi alıyoruz? 50-60-70. 3 tane grubumuz var. Zaten bu nedenle herkesin her hafta fiziksel olarak lab yapabilmesi mümkün değil.
+
+1098
+02:58:41,907 --> 02:59:09,907
+3 kere yapmamıza rağmen herkes aynı anda paralel olarak yapamayacak bu labları. Bu nedenle her ders grubu içerisinde ayrı laboratuvar grupları oluşturulmuş olacak ve her grup farklı farklı günlerin saatlerinde bu laboratuvarlara girmek durumunda olabilecek. Bu plan ve programlama yapılmaya başlanıyor. Yakında sizlere lab sorumluluğumuz ve lab programı ve grupları bu da olur şeklinde size duyur.
+
+1099
+02:59:09,907 --> 02:59:18,708
+O yüzden kimi arkadaşlar pazartesi günü o saatlerde laboratuvar yapacak, kimi arkadaşlar başka saatlerde laboratuvar yapacak.
+
+1100
+02:59:18,988 --> 02:59:27,667
+Tabii ki biz ders çakışması, şu bu durumlarında Aysel Tanrı Hoca ile görüşüyorsunuz ve farklı bir gruba alınmanız elbette yerine getirilecek.
+
+1101
+02:59:27,667 --> 02:59:36,648
+Fakat dersin farklı zamanlarda laboratuvar olabileceği için hem kendi ayrılmış diliminde hem de farklı farklı zamanlarda.
+
+1102
+02:59:37,907 --> 02:59:51,927
+Laboratuvar programdaki laboratuvar saati olan pazartesi akşam kısmına ders yapmak istemiyordum. Zaten ikinci hafta geçiyor, üçüncü hafta yaklaşıyoruz bile. Öte yandan diğer başka derslerde laboratuvarların başladığını da duydum.
+
+1103
+02:59:52,488 --> 02:59:59,788
+Alttan üstten ders alma durumlarında böyle bir öğrencilerde bireysel çakışmalar da söz konusu olabilecektir.
+
+1104
+03:00:00,000 --> 03:00:12,899
+Tüm bunların çözülmesi gerekecek falan. Yani durum bu. O yüzden pazartesi yapmıyorum ve yakında kimileri pazartesi, kimileri başka zamanlarda dersin laboratuvarlarına girecek.
+
+1105
+03:00:12,899 --> 03:00:27,899
+İster bu dersin olsun, ister aldığınız başka dersler olsun laboratuvarların nedeniyle bu çarşamba çapışması söz konusuysa bizim bu telafi dersinde gününü ve veya saatini değiştirmek durumunda olabilir.
+
+1106
+03:00:28,000 --> 03:00:55,520
+Hatta belki arkadaşımın şu saat 8 isteği bu anlamda bizi rahatlatıcı da olabilir. Çünkü hani fiziksel olarak yapılan labları çok çok da geçlere bırakmak istemiyoruz. Belki 8-10 arası bu açıdan tercih de edilebiliriz. Bakacağız. Lütfen mail kutularınızı, yıldız adreslerindeki maillerinizi izlemeye devam edin. Gelişmeleri sizlere bildiriyor olacağım.
+
+1107
+03:00:56,000 --> 03:01:03,319
+Evet, epey konuştum. Bilmiyorum, herhalde anlatabildim her şeyi bununla ilgili. Başka soru varsa lütfen buyurun.
+
+1108
+03:01:08,275 --> 03:01:11,675
+Evet, bakalım şimdi. Sohbeti bir şey gelmiş. Teşekkür ederim.
+
+1109
+03:01:11,816 --> 03:01:15,855
+Tamam. Başka şeyler ararsa lütfen buyurun konuşalım.
+
+1110
+03:01:25,043 --> 03:01:30,943
+Yoksa da o zaman şimdi şunu bir temizleyeyim. Ondan sonra çama sunum modundan çıkayım.
+
+1111
+03:01:31,540 --> 03:01:48,720
+Arkadaşlar, teşekkür ederim. Dinleyen ve sorularıyla katılan arkadaşlar da özellikle teşekkür ederim haftaya inşallah. Önce çarşamba günü terapi dersiyle saatine bakacağız. Sonra perşembe saat 10'da yüz yüze inşallah görüşmek üzere.
+
+1112
+03:01:48,720 --> 03:01:59,540
+Hani yine bir şey olur da online ders yapılacak denilirse artık aklınızda olsun. Saat 9'da online derse başlamamda benim hiçbir engelim yok. 9'da başlarız ama işte yüz yüze...
+
+1113
+03:01:59,540 --> 03:02:12,140
+yapılacağı haftalarda, ki genelde öyle olması isteniyor işte, saat 10'da başlıyor olacağız. Şimdilik alazmı aldık. Sağlıcakla kalın. İnşallah tekrar görüşmek üzere.
+
+1114
+03:02:16,531 --> 03:02:17,631
+Toplantik sonlandırabilir.
