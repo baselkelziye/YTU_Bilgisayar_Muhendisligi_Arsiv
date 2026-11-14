@@ -7,4 +7,5 @@
 | 12 | Güz | — | [sube_12/](sube_12/) |
 | 14 | Güz | Serpil Karayel | [sube_14/](sube_14/) |
 | 18 | Güz | — | [sube_18/](sube_18/) |
+| 22 | Güz | — | [sube_22/](sube_22/) |
 | 58 | Güz | Muttalip Özavşar | [sube_58/](sube_58/) |

@@ -1,0 +1,3999 @@
+1
+00:00:34,868 --> 00:00:38,428
+Bağlamamız iyi. Şu an başarımız olmaya başlar.
+
+2
+00:00:42,420 --> 00:00:43,560
+Batman arkadaşlar.
+
+3
+00:00:48,404 --> 00:01:22,635
+x kare artı 2x, f'
+
+4
+00:01:00,500 --> 00:01:06,299
+Herhalde kendimizi biraz daha yenileyerek kendilerine bakımdan olsun gerekse,
+
+5
+00:01:06,299 --> 00:01:11,099
+neler update edin ya da kendilerini yeniden, yeniden.
+
+6
+00:01:11,099 --> 00:01:21,299
+Atölyonundan ne dişte yok, geç gün dersim yok ama başka şeyler yaptım, işlerim vardı.
+
+7
+00:01:27,060 --> 00:01:38,460
+Geçen hafta Transmant'ın fonksiyonlarını gördük. Özellikle ters fonksiyon, işte birebir fonksiyonlar, tersler olduğunu buluyoruz.
+
+8
+00:01:38,460 --> 00:01:47,259
+Birebir fonksiyonu tanımladık. O fonksiyonların terslerini bulup, ters fonksiyonun türevini öğrendik özellikle.
+
+9
+00:01:55,507 --> 00:02:04,507
+yok yani ben elimdeki şeye göre aptalık konular çiğgesi var elimde ona göre ikinci açıyorum.
+
+10
+00:02:05,507 --> 00:02:10,507
+Orada da hani bazı konular biraz kitaba göre biraz ileride biraz geride kalmış.
+
+11
+00:02:10,507 --> 00:02:23,340
+Tabi onun da bir sebebi var hani kitap sıralaması konusu kendine göre düzenlenmiş ama biz biraz antitransımat fonksiyonları verip, bugün mesela bitirdikten sonra antitransımat fonksiyonları deneyim aldı zaten.
+
+12
+00:02:23,379 --> 00:02:36,579
+çoğunu verdik. Yani üstel, logaritma, fonksiyonunu, test, trigonometrik fonksiyonları değil mi? Onları verdik. Hatta belir fonksiyonlarını verdik. Türevlerini verdik. Test, belirle kaldı orada.
+
+13
+00:02:36,579 --> 00:02:47,579
+Onların türevlerini işle vereceğiz. Ürnek yapacağım bunlara, belir fonksiyonlara. Sonra belirsizle belirsizle belirte ve nokta kalı ile deneyeceğiz.
+
+14
+00:02:52,340 --> 00:03:10,100
+Tabii 6. haftamız. 6. hafta dolaştık 6. hafta da sınavımız nereye kadar? Beğişte ve optikafsiyonun sonuna kadar. Yani fonksiyonların sonu, eksyon değerlerini ve 40 notoları beğenmeyiz. Orası dahil değil.
+
+15
+00:03:13,331 --> 00:03:19,331
+Bir bakıma türev'in uygulamaları olarak geçen kısımları ne değil? Dahil değil.
+
+16
+00:03:22,331 --> 00:03:26,331
+Tabii sınav tarihleri sistemde belirli değil mi? Sistemde belirli olmaz lazım.
+
+17
+00:03:27,331 --> 00:03:32,331
+Atlantik Bölüm sayfasına girdiğiniz zaman da Safe Test dediği kısımlar.
+
+18
+00:03:32,331 --> 00:03:37,331
+Orada sınavın ısınıza zamandı.
+
+19
+00:03:37,331 --> 00:03:39,180
+Bir aklımda kalmamış.
+
+20
+00:03:40,340 --> 00:03:42,340
+Bakın isterseniz, şimdi ben bir şeyim.
+
+21
+00:03:47,539 --> 00:03:48,539
+çeşitli bir şey.
+
+22
+00:03:53,300 --> 00:03:54,439
+Men se dönüm.
+
+23
+00:04:05,972 --> 00:04:13,472
+Seyfi testeri kısmı var. Seyfi testeri kısmı yok. Henüz sınav tarihimiz konuşmamış, evet.
+
+24
+00:04:15,211 --> 00:04:16,552
+Plan edildi değil biliyorum ben.
+
+25
+00:04:19,192 --> 00:04:22,132
+Sınavımız olacak yani yakında.
+
+26
+00:04:23,132 --> 00:04:24,252
+Seyfi duyulur en azından.
+
+27
+00:04:33,716 --> 00:04:35,255
+Bir soran var mı bu konuda?
+
+28
+00:04:37,316 --> 00:04:41,355
+21 Kasım var.
+
+29
+00:04:45,939 --> 00:05:01,300
+Sınav, bu dönemde arkadaşlar test usulü olacak ama tabii test siz sonuçta onları çözeceksiniz. Doğru çıkan veya mont edeceksiniz. Ben bir dakika bakayım duyururlar kısmı var telefonda.
+
+30
+00:05:50,163 --> 00:05:59,744
+Birinci vize sınavımız haftalık ders içeriğinde 6. haftanın yarısına kadar. Yani belirsiz ve hosputal kuralı dahil ekstremden hariç sürelim gibi.
+
+31
+00:06:12,660 --> 00:06:13,292
+x kare artı 2x, f'
+
+32
+00:06:27,923 --> 00:06:34,504
+Bakın biz derslerin sınavları test olarak yapılmaya devam edecektir. Ama tarih konusunda bir şey süre yapıyoruz.
+
+33
+00:06:43,603 --> 00:06:45,264
+Evet, tarih konusunda bir şey yok. Evet.
+
+34
+00:06:47,163 --> 00:06:49,343
+Yani takip edin, mutlaka o sayfa takip duyuruyor.
+
+35
+00:06:49,943 --> 00:06:55,483
+Yani oraya yapılacak duyuru hepimizi bağlar, onu görürüz.
+
+36
+00:07:02,836 --> 00:07:16,916
+Hayır, yani test olunca artık işleme falan gerek yok. Ama tabii şey var, ona dikkatli olun, geçtiğim dönem uygulandı, bu dönem uygulanır. Yani yalnız sorular, soruları götürür.
+
+37
+00:07:16,916 --> 00:07:29,675
+4 yanlış bir doğruyu götürür hesap şeklinde, tamam mı? Yani öyle şeyler var. Her yerde detaylı bir açıklama yapılır size. Öyle bir şey vardı, ona dikkat edin.
+
+38
+00:07:30,228 --> 00:07:52,867
+Çünkü ondan mesela geçen, özellikle yaz okulunda bu çok yaşandı. Yani arkadaş hepsini inşaatı demiş ama efkede sınavda 30 aldı mesela. Evet. O yüzden buna dikkat edin. Hani niye böyle oldu falan böyle. Tabi o program böyle yapılmış. Yani bir soru 0-25 doğru puanı götürüyor. Yani 0-25 puanımız gidiyor.
+
+39
+00:07:53,588 --> 00:07:58,267
+Yani mutlaka, hani ya benim 3 yanlışım var, benim puanım gitmez diye düşünmeyin.
+
+40
+00:08:02,588 --> 00:08:08,127
+Yani 4 yanlış bir doğruyu götürüyor, bu ne demektir? Bir yanlış 0-25 puanınızı götürüyor.
+
+41
+00:08:08,867 --> 00:08:15,147
+O soruya ait yani puanı katsa tabii, o soruyu götürüyor, öyle değil. Doğru sorunuzu götürüyor.
+
+42
+00:08:16,147 --> 00:08:20,088
+Doğru sorunuzun 0-25'ini götürüyor, öyle şey.
+
+43
+00:08:20,468 --> 00:08:23,468
+Ama 4 tane yanlış olunca tam bir soru gidiyor.
+
+44
+00:08:23,468 --> 00:08:28,468
+Yani öyleydi, onu bilmiyoruz. Şimdi ben de yalan söylememize bir şey söylemeyeyim.
+
+45
+00:08:28,468 --> 00:08:30,468
+Beraber göreceğiz.
+
+46
+00:08:33,468 --> 00:08:38,468
+Peki, ben de salondan diğer bir odaya geçtim.
+
+47
+00:08:38,468 --> 00:08:44,468
+Baba anneniz daha çok daha rahat hareket etsin diye.
+
+48
+00:08:44,468 --> 00:08:47,403
+Umarım burada da alıştırma, çok alışık değilim.
+
+49
+00:08:48,467 --> 00:08:50,227
+geçen hafta
+
+50
+00:08:56,916 --> 00:08:58,395
+hipebolik fonksiyonları verdik.
+
+51
+00:08:59,036 --> 00:09:09,756
+Hipebolik fonksiyonları verirken, grafiklerin özellikle sinüsü, kosinüsü, tanjantı, kotanjantı, sekant ve kosekantı verdik.
+
+52
+00:09:09,756 --> 00:09:15,395
+Yalnız olayı verirken, hipebolik fonksiyonları verirken, hipebolik fonksiyonları verirken, hipebolik fonksiyonları verirken,
+
+53
+00:09:15,395 --> 00:09:19,236
+alibiye de, gibi düşündüm, öyle ben dikkat almaya çalıştım.
+
+54
+00:09:19,604 --> 00:09:25,943
+Aslında görmedim ben sonra fark ettim. Tanjantı peboleinin içerisindeydi, üstünde beraber çizilmişti.
+
+55
+00:09:26,604 --> 00:09:33,943
+O yüzden onu tekrar şöyle çizeceğim. Kotanjantı peboleinin grafiğini. Ondan sonra devam ederiz.
+
+56
+00:09:36,524 --> 00:09:46,304
+Y eşittir. Kotanjantı pebole x. Yani kotanjantı pebole x nedir işte? Kosinüs pebole x bölü.
+
+57
+00:09:47,283 --> 00:09:51,179
+x kare artı 3x, f'
+
+58
+00:09:54,932 --> 00:10:00,872
+Bunlar da birbirlerine böldüğümüz zaman, e üzeri x artı, e üzeri x x.
+
+59
+00:10:06,772 --> 00:10:08,772
+Evet, ikilerini birbirine götürür.
+
+60
+00:10:08,772 --> 00:10:11,772
+E üzeri x eksi, e üzeri eksi eksi.
+
+61
+00:10:11,772 --> 00:10:13,772
+Böyle bir şey var.
+
+62
+00:10:13,772 --> 00:10:18,772
+Şuraya kendime göre ayarladım.
+
+63
+00:10:18,772 --> 00:10:21,516
+Dolayısıyla...
+
+64
+00:10:39,572 --> 00:10:41,951
+Yeşiltiğim ile yeşilatı birlikte edeceğim.
+
+65
+00:10:49,011 --> 00:10:56,011
+Bu grafik mavili misalim, meşillik misalim misalim.
+
+66
+00:10:56,011 --> 00:11:01,011
+Kotajent kabili grafik tabii ki şeydi.
+
+67
+00:11:01,011 --> 00:11:02,027
+Açılır.
+
+68
+00:11:05,235 --> 00:11:06,735
+istedim, istedim.
+
+69
+00:11:14,515 --> 00:11:16,651
+x kare artı 2x, f'
+
+70
+00:11:22,803 --> 00:11:24,139
+ilişkilik silikörs.
+
+71
+00:11:32,319 --> 00:11:51,659
+ıhternal,
+
+72
+00:11:28,851 --> 00:11:31,851
+Zaten tanjantta, işte şöyle gidiyor değil mi?
+
+73
+00:11:32,851 --> 00:11:36,851
+İşte tanjant. Hani onu bir açsak, oradan kalın bir şey yapmamız lazım.
+
+74
+00:11:38,851 --> 00:11:39,851
+Tamam mı?
+
+75
+00:11:41,851 --> 00:11:48,851
+Şimdi türev formülü verilmiştik. Gerçekten sinüs, fiyolik, u'nun, mesela türev'in, kosinüs fiyolik, u, level, beliris olduğunu söylemiştik.
+
+76
+00:11:49,851 --> 00:11:50,851
+Gerçekten...
+
+77
+00:11:54,927 --> 00:11:55,927
+ıhternal,
+
+78
+00:11:54,707 --> 00:12:02,028
+y eşittir. Buradan da mesela, kodazenetbobelik 1'un kiremini de mesela bırakacağız. Hadi onu bulalım.
+
+79
+00:12:02,028 --> 00:12:03,627
+Kodazenetbobelik 1'un kiremini.
+
+80
+00:12:09,011 --> 00:12:12,011
+Aslında şunu biliyoruz.
+
+81
+00:12:12,011 --> 00:12:17,011
+Kodajitikaburik, o bölüksinin sikaburik olduğuna göre bölümün türevinden değil mi?
+
+82
+00:12:17,011 --> 00:12:30,011
+Uygulayacağız. Yani kodajitikaburik, yani o ifadeyi tabluladığımız zaman, kodajitikaburik, onun türevi, eksi kosekantikaburik.
+
+83
+00:12:35,251 --> 00:12:36,711
+kosekant, ya bu ülke.
+
+84
+00:12:40,596 --> 00:12:44,587
+kalemmen, tevkiler, l'iç'i çapı, tevkiler.
+
+85
+00:12:50,227 --> 00:12:54,227
+Eksi koca katı babalıkı kaba bu çarpı devabalıkı x.
+
+86
+00:12:56,227 --> 00:13:05,227
+Diğerlerde mesela sekantı babalıkı koca katı babalıkı y eşittir.
+
+87
+00:13:05,227 --> 00:13:08,227
+Bunlar da yazdık ama bir daha hatırlatmak istedim.
+
+88
+00:13:08,227 --> 00:13:12,227
+Bu ise y yüzüsü eşittir.
+
+89
+00:13:15,227 --> 00:13:17,227
+Eksi sekantı babalıkı.
+
+90
+00:13:20,467 --> 00:13:25,147
+bu bu da ikisi var ona dikkat edin
+
+91
+00:13:33,331 --> 00:13:34,331
+2x.
+
+92
+00:13:38,388 --> 00:13:40,008
+Tm'den y eşittir.
+
+93
+00:13:40,187 --> 00:13:41,968
+Kosek antikabalit burada da eksi var.
+
+94
+00:13:43,348 --> 00:13:45,268
+Bu üç antikabalit de eksi var.
+
+95
+00:13:46,268 --> 00:13:47,128
+Diğerlerinde yok.
+
+96
+00:13:55,988 --> 00:14:01,996
+y3x, f'
+
+97
+00:14:07,316 --> 00:14:07,816
+Hadi ama.
+
+98
+00:14:16,436 --> 00:14:16,936
+var onlar.
+
+99
+00:14:23,251 --> 00:14:29,371
+Yani çok grafiklerken, ama yine de duyduğunuz da zinle. Arkadaşlar, tanım kümesi falan gibi hani şeyler sorulduğu için.
+
+100
+00:14:29,371 --> 00:14:47,251
+Yani tutar da bir kodajan ihba, böyle işte, ya da ters, bilahatınıza böyle, zembebülen, işte, içeren bir tanım kümesi değil mi derse, denirse orada mesela bilmeniz gerek yoksa grafikleri diye bir şey aklınızda tutmanıza gerek yok.
+
+101
+00:14:47,700 --> 00:14:58,179
+Ama işte mesela burada gördüğünüz gibi mesela bu kotacen hiperbolinin tanım kümesi değil mi? x80'ine göre, bakacağıma da göre. Nereden?
+
+102
+00:15:00,899 --> 00:15:07,299
+Her sadece sıfırda tanımlı değil değil mi? Sıfır hariç, herisi tanımlı. Yani şuraya yazalım isterseniz.
+
+103
+00:15:11,860 --> 00:15:32,860
+x farklı, çünkü x sıfırda burası paylaşacak şimdi değil mi? x farklı sıfır için tamam. Ama şu baktığınız zaman, grafiğine baktığınız zaman grafiği, nerede, hangi değerleri alınıyor? x 1 ile 6 ile değerleri alınıyor. Yani grafiği, yani görüntü kümesi, görüntü kümesi.
+
+104
+00:15:42,868 --> 00:15:49,324
+fonksiyonun, f'
+
+105
+00:15:53,460 --> 00:15:58,460
+birleşim 1 artı sonsu değil mi? yiyesinin üzerinde baktığımızda. Ben böyle düşünüyorum.
+
+106
+00:16:00,460 --> 00:16:11,460
+Dolayısıyla, değer kümesi, tanım kümesi ya da değer kümesi, görüntü kümesi ya da sorulduğu zaman bunları ne yapmamız lazım değil mi?
+
+107
+00:16:14,964 --> 00:16:18,204
+direkt türev formüllerini zaten yukarıda vermiştik.
+
+108
+00:16:18,204 --> 00:16:25,364
+yandı tanjantik pebolim, işte hatırlarsanız, sekund kare, nefodolik, do, olu, x'ti.
+
+109
+00:16:25,364 --> 00:16:28,564
+kosinü, direk sinüs, olu, do.
+
+110
+00:16:28,564 --> 00:16:31,364
+onları da şuraya yazalım iseniz.
+
+111
+00:16:34,964 --> 00:16:42,860
+y eşittir, tanjantik, y eşittir, y eşittir,
+
+112
+00:16:43,316 --> 00:17:07,316
+x kare artı 2x. Yani bu yine tabii biraz tancant, kare u koşulunu sağlar. Ya da birbirli kosekant kare u, kare u koşulunu sağlar. Sizin ise kosinüsü yazmıyorum artık. Ondan görüyoruz. Peki, devam edelim arkadaşlar. Şimdi örnek olarak,
+
+113
+00:17:15,731 --> 00:17:16,715
+çeş
+
+114
+00:17:24,948 --> 00:17:25,948
+neyse, bu ne?
+
+115
+00:17:29,811 --> 00:17:31,811
+taze yapabildi mi? yok.
+
+116
+00:17:32,811 --> 00:17:36,811
+taze yapabildi yok.
+
+117
+00:17:36,811 --> 00:17:41,811
+yani sinüs, böberlik, böberlik, böberlik, onu asla bulabiliriz. zor değil.
+
+118
+00:17:42,811 --> 00:17:43,811
+şöyle ki
+
+119
+00:17:47,155 --> 00:17:48,695
+ye işittir.
+
+120
+00:18:05,428 --> 00:18:14,548
+y eşti mesela, türev uygulamaları bulacağız. Bu neydi? Sinüs, f'u bölgü, kosinüs, f'u bölgü.
+
+121
+00:18:34,067 --> 00:18:49,248
+u, çarpı, kosinüs, f'b'u'nun türevi, o da sinüs, f'b'u'ydu. Dolayısıyla, kosinüs, f'b'u'yu eksi, sinüs, f'b'u'yu kare u oldu. Burada eksi gelmiyordu, hadi. Böyle, kosinüs, f'b'u kare u.
+
+122
+00:18:52,108 --> 00:18:54,447
+Özel şükreden yukarı'nın 1 olduğunu biliyoruz.
+
+123
+00:18:55,608 --> 00:18:57,768
+Sonrasında 1 bölü, kosinüs, f'b'u kare u olur.
+
+124
+00:19:01,907 --> 00:19:02,748
+Bu değiştir.
+
+125
+00:19:12,019 --> 00:19:12,519
+bu.
+
+126
+00:19:19,380 --> 00:19:19,880
+Evet.
+
+127
+00:19:25,844 --> 00:19:27,844
+Bulduk, bak işte burada gösterdik.
+
+128
+00:19:27,844 --> 00:19:50,844
+Kosinü hiperbolik 1'un türevi şöyle diyelim, y eşit iseniz, gerçi bu ulu olarak göz önü aldınız. Aslında x ys'e daha iyi olurdu. Şunları x yapalım, sadece şunları x yapalım. Usulere ulaşmayalım bir de.
+
+129
+00:19:52,307 --> 00:19:55,807
+Bu da tabi d bölüldü x diye yapacağız. O yüzden bunları başlayayım.
+
+130
+00:19:58,807 --> 00:20:12,307
+Süreklik kalorik, taze kalorik x, x, x diyelim. x, x, ama kareler var diyorsunuz.
+
+131
+00:20:13,807 --> 00:20:20,299
+Kare x, kare x, ve seka de böyle kare x olur.
+
+132
+00:20:20,756 --> 00:20:27,756
+Tamam. Dolayısıyla, bunu şeye denlediğimiz zaman,
+
+133
+00:20:33,332 --> 00:20:37,332
+Taze Tk'ı aldığımız zaman
+
+134
+00:20:37,332 --> 00:20:40,332
+y3'lü tere 3'lisidir
+
+135
+00:20:40,332 --> 00:20:45,332
+Sekant Tk'ı çarpı dvvdx
+
+136
+00:20:45,332 --> 00:20:47,332
+yüzüncül kuralı gelir
+
+137
+00:20:47,332 --> 00:20:48,396
+dvvdx
+
+138
+00:20:51,731 --> 00:20:54,411
+Peki, başka örnek yapalım.
+
+139
+00:21:04,276 --> 00:21:07,896
+Özellikle şöyle birkaç tane bir araba yapalım.
+
+140
+00:21:09,336 --> 00:21:10,635
+Birinci örneğimiz.
+
+141
+00:21:12,296 --> 00:21:15,496
+D bölü DT, mesela burayı göz önüne alırsak.
+
+142
+00:21:17,135 --> 00:21:21,715
+Tanjant, klobolik, kare küp, bir daha t kare.
+
+143
+00:21:26,596 --> 00:21:31,576
+Bir defa, şu kardan baktığınız zaman,
+
+144
+00:21:32,307 --> 00:21:49,647
+Sekantik bölü kare, kare kök 1a t kare. Gelecek yani bu ifade u dediğimize göre u diyeceğimiz için bu. Çarpı d bölü dt, kimin köklü ifadenin türevi. Kare kök 1a t kare.
+
+145
+00:21:53,940 --> 00:22:06,780
+Evet. Dolayısıyla bir defa kare kük 1 artı tkare de tabii. Hatırlarsanız, işte içinim türev değil mi? Kendi ifadesiyle gözümle alacağımıza göre. Oradan da ne gelecek?
+
+146
+00:22:22,132 --> 00:22:23,491
+çarpış tekatik
+
+147
+00:22:23,491 --> 00:22:24,352
+kare
+
+148
+00:22:24,352 --> 00:22:27,892
+kare kük bir artı tekare
+
+149
+00:22:31,251 --> 00:22:38,851
+seslenir yani şu hani tancantik olarak belirtiyoruz ya, şurayı pandresyon alabilirsiniz. Özellikle onu şöyle belirteyim.
+
+150
+00:22:40,851 --> 00:22:44,851
+Bakın bu açısı şu tamam mı? fonksiyonun kökü burası.
+
+151
+00:22:51,028 --> 00:22:51,468
+Şöyle.
+
+152
+00:22:53,248 --> 00:22:53,768
+Tamam.
+
+153
+00:22:58,644 --> 00:22:59,923
+gibi. Ya da
+
+154
+00:22:59,923 --> 00:23:02,184
+başka bir örnek vereyim mesela.
+
+155
+00:23:32,756 --> 00:23:35,115
+Tenzant ve tık bu geleden içine de
+
+156
+00:23:40,852 --> 00:23:41,912
+Tamam, şunu verelim.
+
+157
+00:23:49,779 --> 00:23:51,779
+Şuraya sırtımı geçeceğim.
+
+158
+00:23:51,779 --> 00:23:53,779
+Buradan uzun sorda.
+
+159
+00:23:53,779 --> 00:23:55,779
+y eşittir.
+
+160
+00:24:07,796 --> 00:24:09,796
+Sekatür Favorik LMX
+
+161
+00:24:13,683 --> 00:24:15,144
+Bakın, bir önceki sayfaya bakalım.
+
+162
+00:24:16,463 --> 00:24:17,943
+Sekant ekiborik 1'un türevi,
+
+163
+00:24:18,864 --> 00:24:22,523
+eksi sekant ekiborik 3 çarpı tanjant ekiborik 3 çarpı d'u boyu d'x'ti.
+
+164
+00:24:22,523 --> 00:24:23,163
+Tamam mı?
+
+165
+00:24:24,764 --> 00:24:27,563
+Dolayısıyla, burada y üstü türevi,
+
+166
+00:24:28,243 --> 00:24:30,003
+eşittir.
+
+167
+00:24:31,644 --> 00:24:32,923
+Sekant ekiborik,
+
+168
+00:24:33,703 --> 00:24:35,563
+lnx eksi var tabii, eksi un'u unutmayalım.
+
+169
+00:24:39,796 --> 00:24:41,796
+Çarpı tangentifabrik elin x
+
+170
+00:24:44,796 --> 00:24:45,796
+Çarpı yıda ne var?
+
+171
+00:24:45,796 --> 00:24:48,796
+Tireb. Yani bunun x'e göre tireb. O da birbir x'tir.
+
+172
+00:24:51,796 --> 00:24:53,228
+Böyle düşünüyorum arkadaşlar.
+
+173
+00:25:02,740 --> 00:25:06,740
+Şimdi sırada burada kalan ters f'obrik fonksiyonları kısmı var.
+
+174
+00:25:08,579 --> 00:25:16,620
+Tabii fonksiyonların hepsi ne değil, birebir fonksiyonlar değil.
+
+175
+00:25:22,579 --> 00:25:34,679
+Mesela, ys'lik kosinüs, f'
+
+176
+00:25:34,679 --> 00:25:45,480
+her x'lik bir değeri için göz önüne aldığımızda aslında, ys'lik arp kosinüs x1x fonksiyonlarının grafiklerini görebiliriz.
+
+177
+00:25:49,748 --> 00:26:03,748
+sinüs'in türev, tabii kosinüs, f'uygulamaları, o da pozitif olduğu için atamik fonksiyonu. Dolayısıyla birebir fonksiyondur. Dolayısıyla bunun tersi, tanım adaları üzerinde direkt var. Bak, kosinüs, f'uygulamaları, öyle değil.
+
+178
+00:26:11,124 --> 00:26:13,683
+Grafine baktığınız zaman birebir değildir.
+
+179
+00:26:14,463 --> 00:26:20,243
+Yalnız x, büyügeçte 0 ve dolayısıyla bu noktada türev var.
+
+180
+00:26:21,044 --> 00:26:23,683
+Tabi grafiği de birden başlayacak.
+
+181
+00:26:25,763 --> 00:26:27,263
+Artan bir grafiği var.
+
+182
+00:26:28,263 --> 00:26:30,064
+Sesel onların grafikleri var.
+
+183
+00:26:32,624 --> 00:26:34,384
+Ters kovulikleri verelim.
+
+184
+00:26:42,291 --> 00:26:56,892
+Özellikle bununla tabi tersler, persona göreceği integral alma için çok kullanışlı ifadelerin sahipliği için üstelik ifadelerin karşılık geldiği fonksiyonları göz önüne alırsak değil mi?
+
+185
+00:27:05,107 --> 00:27:07,084
+tersi kuburik fonksiyonlar.
+
+186
+00:27:31,827 --> 00:27:43,228
+Mesela, y'ş'tir, sinüs, f'bolik x fonksiyonunun türevi y'ş'tir, kosinüs, f'bolik x'tir, bu da pozitiftir.
+
+187
+00:27:45,908 --> 00:27:46,587
+Dolayısıyla,
+
+188
+00:27:49,587 --> 00:27:50,488
+şu türev tabii,
+
+189
+00:27:53,807 --> 00:27:55,688
+sinüs, f'bolik x artan fonksiyondur.
+
+190
+00:28:01,299 --> 00:28:08,799
+biliyorsunuz artan fonksiyonları, azaran fonksiyonları, monoton fonksiyonları, birebir fonksiyonları. Dolayısıyla tersleri vardır.
+
+191
+00:28:18,003 --> 00:28:23,584
+Bu halde, x'in de x sonsuz, artı sonsuz aralığındaki değerler için.
+
+192
+00:28:30,099 --> 00:28:45,579
+y eşittir. Aynı şekilde ifadesini tabii göz önüne alabiliriz. Sinüs, f'
+
+193
+00:29:05,140 --> 00:29:06,140
+bu şekilde müteviz.
+
+194
+00:29:10,132 --> 00:29:27,532
+Grafine bakarsak, öte yandan diğer birileri de verelim. Grafiteni beraber verelim. Öte yandan y eşitti, kosinüs, tanjant bir x ise, sadece x büyü geçiştirici 0 için.
+
+195
+00:29:31,188 --> 00:29:32,068
+bire birdir.
+
+196
+00:29:39,028 --> 00:29:40,528
+ve bu kısıtlamış bölgede.
+
+197
+00:29:46,771 --> 00:29:48,371
+tanımalarını ödeyeceğim.
+
+198
+00:29:53,364 --> 00:29:54,364
+tersi bağırız.
+
+199
+00:29:55,864 --> 00:29:57,043
+ters dediğimiz
+
+200
+00:30:05,203 --> 00:30:17,803
+x kare artı 3x, f'
+
+201
+00:30:24,307 --> 00:30:25,508
+Tabi bekme aslında
+
+202
+00:30:27,188 --> 00:30:29,347
+yeşil, kosinüs, babalik, x ise
+
+203
+00:30:38,003 --> 00:30:40,363
+Tabii x bir geçici bir değeri, şimdi göz önüne adımızda.
+
+204
+00:30:41,043 --> 00:30:45,683
+Dolayısıyla g'nin sıfır sonuz aralığında, ipabolik kosinüsü x olan sayıdır.
+
+205
+00:30:45,803 --> 00:30:47,643
+Ben artık o şey kısmına dönmüyorum.
+
+206
+00:30:50,643 --> 00:30:54,571
+Örneğin da, kosinüs...
+
+207
+00:30:58,996 --> 00:31:01,900
+x kare artı 2x, f'
+
+208
+00:31:16,211 --> 00:31:27,631
+komisyon gibi y eşit, sekant, fiboblük ise birbirleri tabi kosin, fiboblük istediğimize göre, ona benzer şey yapacak, o da birebir değildir ama x'in negatif olmayan değerlerine kısıtlanmış şeklinin bir tersi vardır.
+
+209
+00:31:29,751 --> 00:31:39,551
+y eşittir, sekant, fiboblük x, bu da eşit birbirleri kosin, fiboblük x, öyle yazalım. Öncekinden fayda bilgi alalım.
+
+210
+00:31:42,412 --> 00:31:43,392
+Birebir değil.
+
+211
+00:31:46,579 --> 00:31:50,571
+x kare artı 2x, f'
+
+212
+00:31:54,612 --> 00:31:59,251
+yine x'in negatif olmayan değerlerine kısıtlanmış şeklinde bir ilçesi vardır.
+
+213
+00:32:07,604 --> 00:32:08,428
+şöyle diyelim.
+
+214
+00:32:17,635 --> 00:32:25,548
+x kare artı 2x, f'
+
+215
+00:32:17,299 --> 00:32:20,279
+Bu da y eşitir. Aksi akantikabılık x ikindedir.
+
+216
+00:32:22,440 --> 00:32:25,099
+Tabii, 0-1 aralığında
+
+217
+00:32:30,248 --> 00:32:38,368
+x kare artı 2x, f'
+
+218
+00:32:28,660 --> 00:32:36,420
+x değer için y'i 3x, sekant, tipebolik, eksi bir dedinme zaman negatif olmayan ve sekant, tipebolik, x olan sayı anlamaylı olacaktır.
+
+219
+00:32:38,340 --> 00:32:39,740
+Bunların grafiklerine bakalım.
+
+220
+00:32:41,519 --> 00:32:44,200
+Bu üç fonksiyonu bırakıyorum. Hemen şuraya yazalım, çizelim.
+
+221
+00:33:19,571 --> 00:33:36,811
+Şimdi hatırlarsanız geçir. x doğrusu şöyle. Buna göre tabii, tanjantın grafiği şöyle de hatırlarsanız. Tanjantın grafiği nesi olacaktır? Simestris olacak. O zaman bu nereye? Şöyle gelip, şöyle gelecek değil mi?
+
+222
+00:33:39,811 --> 00:33:41,611
+Bunu belirgin çizelim.
+
+223
+00:33:50,644 --> 00:33:51,884
+Şöyle, yüzme fiyatı.
+
+224
+00:33:58,483 --> 00:34:03,083
+y eşittir, ters, series favori fx.
+
+225
+00:34:08,947 --> 00:34:11,447
+yani çok, hiç simetrikal değil ama.
+
+226
+00:34:46,900 --> 00:34:48,820
+Tenden G eşittir.
+
+227
+00:35:01,139 --> 00:35:05,659
+Arkosekant'ı midem büyüklüğü alacak, birebir mülük değerlerden şöyle.
+
+228
+00:35:07,460 --> 00:35:08,719
+Şöyle bir parabolu var.
+
+229
+00:35:20,532 --> 00:35:21,532
+şura sebeşim.
+
+230
+00:35:28,820 --> 00:35:40,220
+x'lı, 0'lı, diğer hükümeti de böyle yani. Böyle göz önüne almayacağız. Bu y'şitlik sorusu, x'lı, 0'lı için tanınır.
+
+231
+00:35:46,996 --> 00:35:47,756
+Son olarak
+
+232
+00:35:47,756 --> 00:35:51,735
+Bu daki grafimize göre
+
+233
+00:35:58,643 --> 00:36:01,844
+sekantrik şöyle çam gibi düşüyorlar değil mi?
+
+234
+00:36:01,844 --> 00:36:05,523
+Buna göre grafiği de yukarıdan aşağıya girip şöyle inecek.
+
+235
+00:36:05,523 --> 00:36:07,043
+İkiş bir grafiği var.
+
+236
+00:36:15,795 --> 00:36:22,195
+Normalde, secant lipabrık şöyleydi. Bunun, VHDX'e göre simetrasını aldığımız zaman bu oluyor.
+
+237
+00:36:22,195 --> 00:36:24,996
+Şöyle bir daha şey yapabiliriz.
+
+238
+00:36:53,364 --> 00:36:56,364
+en yakın, işte bu, bunun gibi.
+
+239
+00:36:56,364 --> 00:36:58,364
+y eşittir,
+
+240
+00:37:00,364 --> 00:37:04,364
+s kare artı 2x,
+
+241
+00:37:06,364 --> 00:37:07,563
+s z yazmayı unuttu.
+
+242
+00:37:17,844 --> 00:37:20,556
+ve süreklik, f'
+
+243
+00:37:25,460 --> 00:37:30,359
+x seçtir, sekant y olan değil mi? Say olarak gözlerini aldığımızda y'ler tabii kosin olacak.
+
+244
+00:37:31,739 --> 00:37:32,480
+Baktığınız zaman
+
+245
+00:37:32,480 --> 00:37:37,300
+0 ile 1 aralığında değil mi?
+
+246
+00:37:38,399 --> 00:37:38,639
+Tamam.
+
+247
+00:37:39,559 --> 00:37:41,639
+Değer kümesine baktığınız zaman x'in
+
+248
+00:37:41,639 --> 00:37:47,220
+x eleman
+
+249
+00:37:47,220 --> 00:37:49,159
+taşı edelim.
+
+250
+00:37:57,012 --> 00:37:59,832
+0, küçük x, küçük x'tir bir.
+
+251
+00:38:00,532 --> 00:38:02,372
+Şöyle. Tam kümesi.
+
+252
+00:38:04,132 --> 00:38:05,212
+Şuradan beri zaten değil mi?
+
+253
+00:38:05,212 --> 00:38:06,391
+0, 1, 1, 1.
+
+254
+00:38:08,412 --> 00:38:10,572
+Evet. Diğer bir yandan arkadaşlar,
+
+255
+00:38:11,652 --> 00:38:13,351
+diğer 3 fonksiyon, yani
+
+256
+00:38:13,351 --> 00:38:14,912
+tangenti ve bölüklük, kotancı ve bölüklük,
+
+257
+00:38:15,092 --> 00:38:16,332
+kolçak antipolüklükler
+
+258
+00:38:16,332 --> 00:38:18,752
+ne dedi? Birebir fonksiyonlardır.
+
+259
+00:38:32,596 --> 00:38:33,996
+bu
+
+260
+00:38:42,643 --> 00:38:43,363
+yukarı var ettağında,
+
+261
+00:38:48,563 --> 00:38:50,563
+Birebir diller, dolayısıyla testleri vardır.
+
+262
+00:39:08,563 --> 00:39:10,884
+Evet, geçen açın daha doğru.
+
+263
+00:39:20,115 --> 00:39:23,755
+Yani yhsit, tajantifabolik, kotajantifabolik ve kosinüsabolik.
+
+264
+00:39:24,155 --> 00:39:26,795
+Ondan da hemen grafikleri şu aşağıya verelim arkadaşlar.
+
+265
+00:39:28,376 --> 00:39:31,235
+Öleceğimizde çok daha fazla zaman kaybetmemiş olalım.
+
+266
+00:39:45,780 --> 00:39:53,740
+Gerek kotansant olsun, gerek kotansant, gerekse kotansant gibi olup olsun.
+
+267
+00:40:11,764 --> 00:40:13,764
+hepsini grafitemiş ve değişiklikler istedim.
+
+268
+00:40:19,188 --> 00:40:19,688
+bir.
+
+269
+00:40:38,099 --> 00:40:40,523
+x kare artı 2x, f'
+
+270
+00:41:02,547 --> 00:41:05,047
+bir eşitir, taze pebalik.
+
+271
+00:41:20,143 --> 00:41:34,507
+x kare artı 2x, f'
+
+272
+00:41:14,643 --> 00:41:17,523
+yöntem, tarama alanı üzerinde, e vardır.
+
+273
+00:41:17,523 --> 00:41:23,523
+O da tabi x1 artı 1, tersi vardır.
+
+274
+00:41:26,163 --> 00:41:34,403
+Öte yandan, kotansiyonli fabrik x'te, o da bunun biraz aksine, yine tabi x1 artı 1 de şeyi vardır.
+
+275
+00:41:44,467 --> 00:41:49,835
+çoğ
+
+276
+00:42:08,532 --> 00:42:14,132
+Dolayısıyla grafim bir şöyle, diğer de bu taraftan bir şahası.
+
+277
+00:42:21,652 --> 00:42:37,711
+potanjant, tersi bovduks fonksiyonumuz. Sonra, y eşitir, kosekant, tersi bovduks fonksiyonu, rafi imde çizelim. O da direkt.
+
+278
+00:42:41,043 --> 00:42:44,823
+tersinin ve belirlik, en zinindeki anisimptik açıp konjelerin bir simetri var.
+
+279
+00:42:44,823 --> 00:42:45,823
+Evet.
+
+280
+00:42:51,987 --> 00:42:57,627
+Şimdi bundan da ilgili ne var derseniz, türevlerini vermeden önce, tabii türevler var.
+
+281
+00:42:58,207 --> 00:42:59,927
+1-2 önemli birleşiklik var.
+
+282
+00:43:05,108 --> 00:43:07,108
+yaslı, yine safağa gitçen.
+
+283
+00:43:14,963 --> 00:43:15,628
+Evet.
+
+284
+00:43:20,980 --> 00:43:22,680
+ölecekleriyle.
+
+285
+00:43:28,692 --> 00:43:31,811
+ve süreklilik tersi.
+
+286
+00:43:38,228 --> 00:44:05,228
+bu, cosinüs, tersi f' x'in bir bölü x'sine denk. Aynı şekilde kosekant, tersi f' x'te bu da alksinüs, ipabolik, bir bölü x'sine denk. Ve kotanjant ipabolik, tersi f' x'te.
+
+287
+00:44:06,068 --> 00:44:08,068
+Bu da tajant.
+
+288
+00:44:09,068 --> 00:44:11,068
+Tersi boyu, belirli x'e denk.
+
+289
+00:44:12,068 --> 00:44:13,068
+Gerçekten
+
+290
+00:44:15,068 --> 00:44:17,068
+Mesela sekant tipebolik
+
+291
+00:44:19,068 --> 00:44:29,068
+Yani bunun tersi boyu'ya denk gelmesi demek, x'lerine kodrasi bir x'i bir, belirli x'i yaptığımız zaman, bunu x'i vermesi gerekir değil mi?
+
+292
+00:44:30,068 --> 00:44:31,068
+Bunun anlamı olur.
+
+293
+00:44:34,643 --> 00:44:42,903
+Tabii, x'lerin sıfır bir aralığı için. Tarımlı olduğu noktalar da, daha gözlerinden almamız lazım.
+
+294
+00:44:51,987 --> 00:45:01,355
+x kare artı 2x, f'
+
+295
+00:45:06,452 --> 00:45:23,092
+Bu aslında, kare sekantın tanımı gereği, 1 bölü, kosinüs, febolik, açımız da bu. Ters, febolik, 1 bölü x.
+
+296
+00:45:24,692 --> 00:45:31,852
+Bunun tersi olduğuna göre değil mi? 0,1 aralığında, yukarıda yazık ki, atma şişe, 3, 3, 3, 3, 4, 1 aralığında tersi vardır.
+
+297
+00:45:34,132 --> 00:46:04,331
+x kare artı 2x, f'
+
+298
+00:45:51,092 --> 00:45:53,771
+Evet, bunun tersi ortamada bu birbirleri birbirlik olacak.
+
+299
+00:45:56,252 --> 00:45:57,092
+x kare artı 2x.
+
+300
+00:45:57,731 --> 00:46:00,172
+Yani birinci öv seçici ne yapmış olduk aslında?
+
+301
+00:46:01,572 --> 00:46:03,132
+Göstermiş olduk gerçekten.
+
+302
+00:46:03,132 --> 00:46:04,292
+Doğru olduğunu göstermiş olduk.
+
+303
+00:46:10,431 --> 00:46:21,431
+x kare artı 2x, f'
+
+304
+00:46:09,331 --> 00:46:19,931
+Aynı şekilde kosinüs ve belirlik, bir bölüksine mesela sekant tersi belirlik, bir de denildiğini yine söylemiş oluruz.
+
+305
+00:46:35,380 --> 00:46:40,579
+Cosinus tabulik, bir bölüksin, sekantes tabulik, bir oldu.
+
+306
+00:46:41,720 --> 00:46:42,140
+Biri bu.
+
+307
+00:46:42,480 --> 00:46:44,000
+Biri de yine şunu yazalım.
+
+308
+00:46:48,083 --> 00:46:53,864
+Sekantikabolik tersikabolik x'i eşitir x değil mi?
+
+309
+00:46:56,083 --> 00:47:04,703
+Olduğuna göre sekantikabolik tabii 0,1 üzerinde birebir olduğunu biliyoruz.
+
+310
+00:47:32,403 --> 00:47:37,403
+bu kosyon ters kolojik bir bölük seçiktir
+
+311
+00:47:37,403 --> 00:47:40,403
+sekundir kolojik
+
+312
+00:47:45,752 --> 00:47:46,635
+x kare artı 2x, f'
+
+313
+00:47:44,628 --> 00:47:46,347
+test bulmuş.
+
+314
+00:47:55,451 --> 00:48:12,451
+x kare artı 2x, f'
+
+315
+00:47:54,835 --> 00:48:00,496
+Peki, yavaş yavaş şey vakti geldi. Ana vakti geldi.
+
+316
+00:48:00,496 --> 00:48:06,775
+Sese, süre ifadelerine de birkaç örnek vereceğim.
+
+317
+00:48:06,775 --> 00:48:08,456
+Bunlardan yeni, çok şey değil.
+
+318
+00:48:08,456 --> 00:48:17,215
+Dereceğim ikinci dersimizde, ikinci saatimizde. Sonra da belirsizliklerle devam edeceğiz.
+
+319
+00:48:17,215 --> 00:48:20,135
+Böylece bu şey kısmını daha bir soru alacağız. Tamam mı?
+
+320
+00:48:20,244 --> 00:48:23,244
+Peki sorunuz varsa arkadaşlar sorunuz yoksa?
+
+321
+00:48:23,244 --> 00:48:28,748
+Yani 5 tane toplamda sıfat işte burada görmeye çalıştık.
+
+322
+00:48:31,860 --> 00:48:43,260
+Bunda kolorzantibabalik x'de bir grafiğinde bir eksikliğim vardı geçen hafta. Onun bir devamını yazıp ortaya koyduk. Ve türevlerini hatırlattık. Türevlerini örnek verdik.
+
+323
+00:48:43,260 --> 00:48:53,460
+Diyor. Sonra tersibabalikler nasıl tanımlandı? Ya grafikleriyle beraber tabii. Bu fonksiyonla birebir otuklar yerler edildi mi ancak tersleri vardı diyorsunuz.
+
+324
+00:48:53,460 --> 00:48:56,659
+Grafiklerini verdik.
+
+325
+00:48:59,572 --> 00:49:01,572
+Sonrada ödeşliklerimizde bulunur.
+
+326
+00:49:02,572 --> 00:49:05,811
+Ve türev uygulamaları bile daha vereceğiz.
+
+327
+00:49:06,471 --> 00:49:08,692
+Ters fonksiyonu türe tanımı kullandı zelere.
+
+328
+00:49:09,572 --> 00:49:10,112
+Tamam, arkadaşlar.
+
+329
+00:49:11,672 --> 00:49:12,792
+Peki, aralığa görüşürüz.
+
+330
+01:03:40,340 --> 01:03:43,260
+Tamam, şimdi açtım.
+
+331
+01:03:43,260 --> 01:03:47,260
+Ters for funksiyonların türevlerini verelim şimdi.
+
+332
+01:03:51,260 --> 01:03:55,539
+Şöyle biz kısaca yazalım. y eşittir.
+
+333
+01:03:57,539 --> 01:04:01,539
+Belki normal şey diye birazcık daha iyi olur.
+
+334
+01:04:04,851 --> 01:04:06,851
+sinüs, kuralı, kuralı, çeşit.
+
+335
+01:04:10,643 --> 01:04:12,555
+yiyiz sütüleriyle.
+
+336
+01:04:19,795 --> 01:04:22,795
+1 bölü 1 artı bu kare kök içinde.
+
+337
+01:04:26,996 --> 01:04:28,331
+2x
+
+338
+01:04:32,788 --> 01:04:38,288
+Aynı şekilde, diğerlerden de isterseniz şöyle alt kata yazalım, aynı renkli kalemi.
+
+339
+01:04:38,788 --> 01:04:45,288
+Y eşittir, tabi şu, yanlış çılaştım, sinüs tersi polik isteyeyim.
+
+340
+01:04:45,288 --> 01:04:51,288
+Y eşittir, kosinüs tersi polik u, ise diyeceğim.
+
+341
+01:04:51,288 --> 01:04:58,288
+Y eşittir, sağ ve eşittir olacak olursak, tanjant tersi polik u, türevi.
+
+342
+01:04:59,284 --> 01:05:05,284
+y eşittir kotancant tespolik ünitüleri,
+
+343
+01:05:05,284 --> 01:05:10,284
+y eşittir sekant tespolik ünitüleri
+
+344
+01:05:10,284 --> 01:05:17,740
+ve y eşittir kosekant tespolik ünitüleri.
+
+345
+01:05:26,068 --> 01:05:35,248
+test boyunki bir bölü, kare küp u kare, eksi bir. Bakın burada tabii bunun sınırlandığını görüyorsunuz.
+
+346
+01:05:38,728 --> 01:05:43,288
+Onun sadece birden büyük değerleri için, tabii tam hükümetin değil mi göz önünden arar.
+
+347
+01:05:43,488 --> 01:05:46,008
+Tabii bunu söylüyoruz. x kare de o bir x.
+
+348
+01:05:49,876 --> 01:05:50,716
+bu bildiğin büyük.
+
+349
+01:06:06,324 --> 01:06:08,324
+bunda kare kök yok.
+
+350
+01:06:09,324 --> 01:06:10,324
+bu x
+
+351
+01:06:11,324 --> 01:06:13,324
+bu da onun mutlak değeri
+
+352
+01:06:14,324 --> 01:06:17,324
+çünkü tancant her yerde birebirdi
+
+353
+01:06:18,324 --> 01:06:19,324
+birden küçük
+
+354
+01:06:21,324 --> 01:06:23,052
+tam kümelerine göre taray arkadaşlar
+
+355
+01:06:28,403 --> 01:06:29,163
+Açtım arkadaşlar.
+
+356
+01:06:37,619 --> 01:06:38,619
+Şu an geliyor mu?
+
+357
+01:06:40,340 --> 01:06:41,324
+Yeniden açtım.
+
+358
+01:06:45,268 --> 01:06:46,268
+Peki.
+
+359
+01:06:48,268 --> 01:06:50,268
+Kendi şeylerinizi de kontrol edin arkadaşlar.
+
+360
+01:06:52,268 --> 01:06:53,268
+Tabii şöyle,
+
+361
+01:06:56,268 --> 01:06:57,268
+okla göstereyim.
+
+362
+01:06:57,268 --> 01:06:59,268
+Bir şeyleri biraz kaydı.
+
+363
+01:07:00,268 --> 01:07:05,268
+Kotonjant tersi boyu gitsin türevi. 1 bölü 1x'ı kare. Aslında aynı unla.
+
+364
+01:07:06,268 --> 01:07:07,268
+Burada da,
+
+365
+01:07:08,268 --> 01:07:12,268
+tanım aralarına göre tabii, unun mutlak değeri birden büyük.
+
+366
+01:07:25,172 --> 01:07:28,492
+sonları geçir. x kare artı 3x, f'nin türevinde.
+
+367
+01:07:29,011 --> 01:07:30,172
+Bu da biraz uzun.
+
+368
+01:07:30,552 --> 01:07:32,092
+Bunlar yükselt arkadaşlar.
+
+369
+01:07:35,347 --> 01:07:40,331
+x kare artı 3x, f'
+
+370
+01:07:45,748 --> 01:07:49,648
+U çarpı kare kök bir eksi u kare.
+
+371
+01:07:52,788 --> 01:07:53,867
+Tabi de u dü deksi.
+
+372
+01:08:00,532 --> 01:08:03,452
+Bu 0 ile 1 arasında.
+
+373
+01:08:07,123 --> 01:08:07,844
+Son olarak
+
+374
+01:08:15,188 --> 01:08:20,948
+y üstü eşit, u da yine x. Sadece yukarıdakiden farklı mutlak değer u olacak.
+
+375
+01:08:22,068 --> 01:08:22,708
+Şimdi de
+
+376
+01:08:22,708 --> 01:08:25,307
+1 artı kare
+
+377
+01:08:25,307 --> 01:08:29,108
+fayda ifadesi
+
+378
+01:08:29,108 --> 01:08:30,387
+de o göre de x.
+
+379
+01:08:33,427 --> 01:08:35,547
+Burada her u sadece u'nun
+
+380
+01:08:35,547 --> 01:08:37,507
+sıfırdan farklı olmasını, değil mi?
+
+381
+01:08:38,387 --> 01:08:39,188
+Kısıtlaması o şey.
+
+382
+01:08:41,028 --> 01:08:42,507
+Evet, bunlar da
+
+383
+01:08:42,836 --> 01:08:44,043
+kare artı 2x, f'
+
+384
+01:08:57,076 --> 01:08:58,347
+Şimdi gerçekten
+
+385
+01:09:07,775 --> 01:09:08,811
+ı
+
+386
+01:09:03,315 --> 01:09:08,811
+x kare artı 2x, f'
+
+387
+01:09:30,395 --> 01:09:36,652
+ı
+
+388
+01:09:29,011 --> 01:09:30,011
+diyelim ki
+
+389
+01:09:32,611 --> 01:09:36,511
+kosinüs ters bölü, un türev, diğer sistem 1 bölü
+
+390
+01:09:55,783 --> 01:10:02,783
+ı
+
+391
+01:09:55,539 --> 01:10:00,920
+x kare u kare eksi 1, tabi u buradan büyüktü mü olmak koşuluyla.
+
+392
+01:10:14,652 --> 01:10:16,652
+ı
+
+393
+01:10:12,724 --> 01:11:01,483
+x kare artı 2x, f'
+
+394
+01:10:55,315 --> 01:10:56,895
+şeyleri mi sittik biz?
+
+395
+01:10:58,155 --> 01:11:01,275
+aklı mı? şeyin mi? yalnız mı sittik bir dakika arkadaşlar?
+
+396
+01:11:12,572 --> 01:11:21,132
+x kare artı 2x, f'
+
+397
+01:11:07,956 --> 01:11:12,556
+Bu sinif favorik, tersi şöyle olacak.
+
+398
+01:11:12,556 --> 01:11:14,956
+Tersi şöyle olacak, evet haklısın.
+
+399
+01:11:14,956 --> 01:11:16,956
+Onu kırmızı ile çeleyelim.
+
+400
+01:11:18,956 --> 01:11:20,956
+Nasıl biliyor musunuz?
+
+401
+01:11:24,948 --> 01:11:26,764
+şunak, da simetiz çeşitli olca.
+
+402
+01:11:30,195 --> 01:11:31,555
+bu y eşittir.
+
+403
+01:11:31,555 --> 01:11:34,555
+ters, sensibobrik, eksik, kırmızı ile yazdım.
+
+404
+01:11:34,555 --> 01:11:36,555
+Nasıl yazalım?
+
+405
+01:11:46,355 --> 01:11:51,355
+çözeşit, f'olik.
+
+406
+01:12:03,028 --> 01:12:05,208
+Bu da kırmızı da y eşittir.
+
+407
+01:12:06,208 --> 01:12:07,568
+Yani şuraya izleyim anlarsanız.
+
+408
+01:12:09,847 --> 01:12:10,968
+T, sinüs, y, y.
+
+409
+01:12:11,347 --> 01:12:16,927
+Yani bir bakıma x eşittir, sinüs, y.
+
+410
+01:12:23,572 --> 01:12:25,572
+Öyle anlamıyoruz.
+
+411
+01:12:25,572 --> 01:12:27,572
+Evet, bir de bununla kalır, galiba.
+
+412
+01:12:28,572 --> 01:12:30,572
+Onu niye öyle bir şey yaptık?
+
+413
+01:12:30,572 --> 01:12:31,572
+[öğrenci] biraz acele ederken.
+
+414
+01:12:31,572 --> 01:12:33,572
+Bunda buna bile sinnetiz şöyle olacak tabii.
+
+415
+01:12:33,572 --> 01:12:35,572
+Aklısınız.
+
+416
+01:12:35,572 --> 01:12:37,572
+Söyle.
+
+417
+01:12:37,572 --> 01:12:38,380
+Şöyle.
+
+418
+01:12:43,891 --> 01:12:48,891
+dersi takip eden, ne olmuyor, bir de olmuyor arkadaşlar, değil mi?
+
+419
+01:13:20,115 --> 01:13:27,659
+Burada da x kare artı 2x, f'
+
+420
+01:13:42,579 --> 01:13:44,579
+tamam mısın? Evet.
+
+421
+01:13:49,171 --> 01:13:52,231
+Allah bırak, simge, simge, teşekkür ederim.
+
+422
+01:14:03,956 --> 01:14:06,956
+Düzelttik bunu. Şimdi değerlendiriyoruz.
+
+423
+01:14:15,155 --> 01:14:23,315
+Bu türevi götürmek için önemli eksistir. Kosinüs, hipeborik, x alalım.
+
+424
+01:14:29,395 --> 01:14:34,675
+ve tersi de elbette ters favorik.
+
+425
+01:14:44,564 --> 01:14:46,043
+x büyük bir için
+
+426
+01:14:46,043 --> 01:14:48,184
+burada
+
+427
+01:14:48,184 --> 01:14:50,844
+ifademiz tabii fonksiyon bire bir olacak için
+
+428
+01:14:54,452 --> 01:15:06,311
+Ota yandan kosinüs, f'
+
+429
+01:15:10,420 --> 01:15:12,300
+eşit bir bölü
+
+430
+01:15:16,243 --> 01:15:39,115
+x kare artı 2x, f3x değil. Dolayısıyla, diğerisi cos x olduğuna göre, türev, sinis ve belirli, f3x yani. Ama açısı, onun ters olan fonksiyonu, cos x.
+
+431
+01:15:45,652 --> 01:15:46,572
+Diyanından burada
+
+432
+01:15:46,572 --> 01:15:49,192
+sinis
+
+433
+01:15:49,192 --> 01:15:50,572
+hipabolik
+
+434
+01:15:50,572 --> 01:15:53,992
+ifadesi
+
+435
+01:15:53,992 --> 01:15:57,952
+kosinüs, f'lık kare, x'sinüs, f'lık kare 1 olduğu için
+
+436
+01:15:57,952 --> 01:16:00,032
+şuraya yazalım isterseniz.
+
+437
+01:16:05,587 --> 01:16:06,283
+Evet.
+
+438
+01:16:19,188 --> 01:16:23,507
+buradan 6-6-2x, şuraya ugasmayı tuttum.
+
+439
+01:16:35,699 --> 01:16:44,979
+Kök içinde, kosinüs kare, kosinüs kare, kare u, x1. Yani bunu bu tarafa atıp sinüs kare bölük koydun.
+
+440
+01:16:45,939 --> 01:16:52,359
+O da çözü, tabii kök içinde, ifade olacağı için değil mi? Pozisi kısmına gözüküyor.
+
+441
+01:16:54,279 --> 01:16:58,799
+Dolayısıyla sinüs kare bölüklerine, bakın şimdi.
+
+442
+01:17:05,652 --> 01:17:06,471
+1 bölü
+
+443
+01:17:10,420 --> 01:17:13,300
+Kök içinde, kosinüs, kare,
+
+444
+01:17:16,060 --> 01:17:17,620
+sonra kosinüs, kare,
+
+445
+01:17:19,060 --> 01:17:21,440
+dediğimiz kale bu işte, x,
+
+446
+01:17:22,780 --> 01:17:23,720
+eksi 1.
+
+447
+01:17:28,979 --> 01:17:29,420
+Şöyle.
+
+448
+01:17:32,420 --> 01:17:33,779
+Ama biliyoruz ki biz
+
+449
+01:17:33,779 --> 01:17:43,099
+kosinüsü tersi kare artı 2x, x'i eşittir. Bu arada x kare artı 2x, f'ye eşittir.
+
+450
+01:17:43,859 --> 01:17:45,019
+Şu evrenin yanına yazalım.
+
+451
+01:17:46,699 --> 01:17:48,439
+Bir bölge kare kük
+
+452
+01:17:48,439 --> 01:17:51,760
+x kare x'i bitir.
+
+453
+01:17:55,091 --> 01:18:04,191
+tersi bölü funksiyonumuz, yani f üstü x'i bir x'in, yani kosin tersi bölü x'in türevi ne oldu? 1 bölü x kare x'i bir.
+
+454
+01:18:05,611 --> 01:18:06,832
+Ben şurada gidelim.
+
+455
+01:18:17,716 --> 01:18:19,852
+yürürlü kare artı 2x kare artı 2x.
+
+456
+01:18:22,899 --> 01:18:29,399
+detayı da aşağıda görüyoruz. Şöyle iki noktaya sokalım, detayını da aşağıda görüyoruz. Böylece bunu göstermişim.
+
+457
+01:18:57,652 --> 01:18:59,652
+Mestir arzusinus.
+
+458
+01:19:03,859 --> 01:19:16,760
+aksiniz u bölü a, fonksiyonun türevi, bir bölü kare kök, aksinise bakıyorum, a kare artı u kare olur.
+
+459
+01:19:18,079 --> 01:19:20,659
+Çünkü birer orada a ifadeleri birbirine götürecektir.
+
+460
+01:19:22,039 --> 01:19:23,699
+Şimdi tablomuza göre bize onu verir.
+
+461
+01:19:26,960 --> 01:19:29,840
+Evet, örneklerinde istediğinizde uzun verebilirsiniz.
+
+462
+01:20:07,923 --> 01:20:13,443
+Şu artı numara baktığında aksimiz, tersikonik kök x.
+
+463
+01:20:16,623 --> 01:20:18,963
+Fonksiyon, y üstü türevi eşitir.
+
+464
+01:20:20,504 --> 01:20:23,043
+1 bölü kare kök, 1 artı x mi?
+
+465
+01:20:25,404 --> 01:20:28,004
+Çarpı kök x'in türevinden 1 bölü 2 kök x.
+
+466
+01:20:31,539 --> 01:20:39,139
+sürev, ademiz bize bunu öğretecektir. Normalde köküsünün kareisinden dolayı. Bu ifade ona denk geliyor değil mi?
+
+467
+01:20:46,515 --> 01:20:51,155
+Bu yandan E eşittir.
+
+468
+01:20:57,268 --> 01:21:00,368
+Bu da yine 40'lı keifedeymiş ama, bu da 40'lı keifede olsun.
+
+469
+01:21:03,764 --> 01:21:11,764
+neymiş mesela? Kosinüs, f'b'lük, ters f'b'lük, secant x.
+
+470
+01:21:16,115 --> 01:21:18,252
+x kare artı 2x, f'
+
+471
+01:21:27,123 --> 01:21:31,823
+Aralıklar, x'in değerleri için, düşüşü çıkıyor ters fonksiyonlar.
+
+472
+01:21:32,984 --> 01:21:40,224
+Bu açıkçası y üst ifademiz, kosinüs ters fonksiyon, 1 bölü kare kök, u kare eksi ve dv bölü de eksi.
+
+473
+01:21:43,699 --> 01:21:45,199
+2x kare kök
+
+474
+01:21:48,500 --> 01:22:00,844
+x kare artı 1x, f'
+
+475
+01:22:08,819 --> 01:22:12,439
+dvdx, sekant x'in türevinde sekant x çarpı tanjantik değil.
+
+476
+01:22:17,524 --> 01:22:27,524
+Ama sekant kare x x'i bir hatırlasanız, bir daha tangent kare sekant kare olduğuna göre, böyle tangent kare olsa tangent x gelir.
+
+477
+01:22:27,524 --> 01:22:30,252
+tangent kare kısalık sekant x.
+
+478
+01:22:37,332 --> 01:22:48,512
+Evet, sıfırlar bir bölükünün x'in sıfırlar bir bölük olduğu yerde, o da birden büyütüyor. Yani secant x birden büyütüyor.
+
+479
+01:23:04,884 --> 01:23:06,084
+o bilen mütlük ya.
+
+480
+01:23:11,828 --> 01:23:13,828
+atınca sonuç bir sürü bunu getirir.
+
+481
+01:23:14,828 --> 01:23:16,828
+Bir örnekleri çoğaltabiliriz.
+
+482
+01:23:18,828 --> 01:23:19,828
+Peki
+
+483
+01:23:21,828 --> 01:23:23,828
+Böylece
+
+484
+01:23:24,828 --> 01:23:27,828
+Translant fonksiyonları arkadaşlar, tamamlamış oluyoruz.
+
+485
+01:23:29,828 --> 01:23:31,820
+6 tane toplamda
+
+486
+01:23:35,060 --> 01:23:39,060
+başçukurlak, sabitledim ama, kers fonksiyonlar.
+
+487
+01:23:42,547 --> 01:23:57,387
+logartik ve üstel fonksiyonlar, ters trigonometrik fonksiyonlar, pemboruk fonksiyonlar ve ters boruk fonksiyonlar gibi bir fonksiyonları. Şöyle bir yanıda 5 başlık altında kurplanabiliriz.
+
+488
+01:23:57,387 --> 01:23:59,247
+Tabii özellikle
+
+489
+01:24:10,547 --> 01:24:12,587
+globalitma ve yükseltik fonksiyonları önce
+
+490
+01:24:12,587 --> 01:24:19,807
+doğal globalitma ve doğal yükseltik fonksiyonları tanımlayarak onların
+
+491
+01:24:19,807 --> 01:24:22,887
+AGM fonksiyon tanımlamını vermiş olduk.
+
+492
+01:24:25,007 --> 01:24:28,667
+Şimdi belirsiz integral ve loptal kuralı var burada arkadaşlar.
+
+493
+01:24:30,667 --> 01:24:30,927
+Yani
+
+494
+01:24:34,612 --> 01:24:48,332
+limitde belirsiz dediğimiz, belirsiz şekilde dediğimiz ve artık türev dediğimi, bir şekilde bildiğimize göre türev kuramını uygulayabileceğiz.
+
+495
+01:24:49,771 --> 01:24:58,072
+Yani öyle fonksiyonlar vardır ki onların belli bir matodaki türevleri, bir ders 0 bölü 0 şeklinde bir belirsizlik getirir.
+
+496
+01:24:59,155 --> 01:25:19,155
+x kare artı 2x, f' sıkı bir sayı olmayacaktır. Ama bunun işte limit anlamında tabii nasıl bir sayıya yaklaşacağını, bu da vopta teorem dediğimizde, kuralı vererek görebiliriz.
+
+497
+01:25:25,619 --> 01:25:27,859
+ifadesinin x a için limitinde
+
+498
+01:25:27,859 --> 01:25:31,879
+alırken, x yerine a yazdığımda 0, 1, 0
+
+499
+01:25:31,879 --> 01:25:34,359
+ifadesi karşımda geliyorsa
+
+500
+01:25:34,359 --> 01:25:38,559
+buna biz 0, 1, 0
+
+501
+01:25:38,559 --> 01:25:39,799
+basic şekli
+
+502
+01:25:39,799 --> 01:25:41,739
+adlandırıyoruz.
+
+503
+01:25:43,940 --> 01:25:44,479
+Bunun gibi
+
+504
+01:25:44,479 --> 01:25:46,199
+anlamlısı olan
+
+505
+01:25:46,199 --> 01:25:49,879
+sonsuz çarpı 0, sonsuz yeti sonsuz.
+
+506
+01:25:51,412 --> 01:26:05,172
+0 üzeri 0 ve 1 üzeri sonsuz. Üstelik B siteye de var. Durumlardan meydana gelildiğinde aslında. Bunlar da yine B siteye olarak adlandırılır.
+
+507
+01:26:08,724 --> 01:26:12,344
+belirsiz şeklinde. Aşık olarak belirsiz de ve lopta hakkı almayalım.
+
+508
+01:26:29,427 --> 01:26:33,927
+bu şiranda bazen, hospital veriyor bazen, hospital veriyor. Buradaki yazdığı bazen ben.
+
+509
+01:26:47,764 --> 01:26:50,507
+x kare artı 2x, f'
+
+510
+01:26:53,779 --> 01:27:03,420
+x bölüge x ifadesinde x'lerin ayazımızda eğer böyle bir sıfır böyle sıfır şekliye karşılaşıyorsak, biz sıfır böyle sıfır belirsiz şeklini yürüyoruz.
+
+511
+01:27:08,724 --> 01:27:09,923
+Dimitra Ağabey.
+
+512
+01:27:13,652 --> 01:27:18,512
+ya da sıfır, böyle sıfır, sıfır, notasyonun belirsiz şekli olarak kullanılırız.
+
+513
+01:27:19,532 --> 01:27:21,592
+belirsizlik şekli diyelim.
+
+514
+01:27:34,996 --> 01:27:36,195
+diğerleri de
+
+515
+01:27:40,435 --> 01:27:42,435
+Sıra sonsuz, eksik, sonsuz.
+
+516
+01:27:43,435 --> 01:27:44,435
+Diyelim belirsizlikle.
+
+517
+01:27:46,435 --> 01:27:47,895
+Sonsuz çarpı 0.
+
+518
+01:28:09,844 --> 01:28:11,844
+1 üzeri sonsuzdur.
+
+519
+01:28:11,844 --> 01:28:13,844
+Diğer belirteceklerdir onlar.
+
+520
+01:28:34,420 --> 01:28:44,420
+Sons bölü sonsuz. Sons bölü sıfır ödedikleri ve sons bölü sonsuz belirsizlikle karşılaştığımız zaman türev uygulama sorulan bir teorem var.
+
+521
+01:28:44,420 --> 01:28:57,420
+Ve burada aslında sonsuz yarı sıfır ile sonun 8, sonsuz belirsizlikle de neye dönüşüldü? Böyle sons bölü sıfır ya da diğerlerde sonsuz bölü sonsuz ya da sons bölü sıfır yine dönüşüldü.
+
+522
+01:29:23,252 --> 01:29:23,971
+bu kural bize
+
+523
+01:29:31,123 --> 01:29:33,363
+f' eşitliği, g'a, bu da eşitliği sıfır.
+
+524
+01:29:35,363 --> 01:29:35,923
+Olduğunu
+
+525
+01:29:40,595 --> 01:29:42,595
+ffg fonksiyonlarını
+
+526
+01:29:54,676 --> 01:29:55,496
+ayıç eden
+
+527
+01:30:02,003 --> 01:30:04,939
+bu açı kararlılığında türev uygulamaları,
+
+528
+01:30:26,707 --> 01:30:27,692
+ve
+
+529
+01:30:30,899 --> 01:30:32,519
+x farklı a ise
+
+530
+01:30:32,519 --> 01:30:37,219
+aynı şekilde u üzerinde
+
+531
+01:30:37,219 --> 01:30:41,799
+yani u adalının her noktasında
+
+532
+01:30:45,363 --> 01:30:46,363
+türevin,
+
+533
+01:30:50,100 --> 01:30:51,260
+sıfırdan farklı oldu.
+
+534
+01:31:01,332 --> 01:31:01,832
+Pasa.
+
+535
+01:31:11,412 --> 01:31:13,252
+ifade ve gayet azıcık. Bu durumda
+
+536
+01:31:25,395 --> 01:31:32,996
+limit, fx bölü, dx tabii x bir a noktasına gidelim.
+
+537
+01:31:32,996 --> 01:31:34,695
+limiti ile
+
+538
+01:31:34,695 --> 01:31:38,456
+limit ile
+
+539
+01:31:38,456 --> 01:31:42,595
+daha da bir
+
+540
+01:31:42,595 --> 01:31:44,595
+bağlantı
+
+541
+01:31:56,051 --> 01:31:57,652
+güzel bir dakika kalmamışsın ya.
+
+542
+01:32:01,076 --> 01:32:03,076
+Tabi limit var istersin değil mi?
+
+543
+01:32:05,076 --> 01:32:05,836
+Tırf.
+
+544
+01:32:09,395 --> 01:32:12,716
+burada, bu, mergul, stüphırdan bire.
+
+545
+01:32:17,140 --> 01:32:19,960
+Bir saniye takısı böyle sıfırlıktan gördük.
+
+546
+01:32:21,180 --> 01:32:22,240
+İki tarif etmemizde.
+
+547
+01:32:24,159 --> 01:32:25,560
+Lopital kuralı bize bunu şöyle.
+
+548
+01:32:26,100 --> 01:32:31,960
+Bunu şimdi akıplarının ispatını falan yapabiliriz.
+
+549
+01:32:31,960 --> 01:32:34,060
+Zor değil ama ondan ulaşmıştır.
+
+550
+01:32:39,956 --> 01:32:40,836
+bu arada geçe kalır.
+
+551
+01:32:45,363 --> 01:32:48,363
+Dolayısıyla hemen bir iki örnek verelim arkadaşlar.
+
+552
+01:32:48,783 --> 01:32:50,283
+Tabi burada bu sağdaki bir tevküt.
+
+553
+01:32:53,908 --> 01:32:55,908
+ne bude neki nekişt oldu var o tok.
+
+554
+01:33:31,412 --> 01:33:33,572
+Hemen birkaç örnekler yapabilelim.
+
+555
+01:33:42,644 --> 01:33:44,944
+Mesela x sıfır ederken
+
+556
+01:33:44,944 --> 01:33:48,304
+3 x eksisi
+
+557
+01:33:48,304 --> 01:33:50,864
+bölü x
+
+558
+01:33:50,864 --> 01:33:52,224
+İlk bakışta
+
+559
+01:33:52,224 --> 01:33:53,864
+burada
+
+560
+01:33:53,864 --> 01:33:57,064
+x yerine sıfır yazdığımda sıfır bir sıfır
+
+561
+01:33:57,064 --> 01:33:58,364
+gelecektir.
+
+562
+01:33:59,423 --> 01:34:00,043
+Bu da şeyle
+
+563
+01:34:00,043 --> 01:34:01,744
+hemen de optik yapmalarını bize
+
+564
+01:34:01,744 --> 01:34:03,524
+bu uygulama olanını veriyor.
+
+565
+01:34:04,524 --> 01:34:06,224
+Pay türenini alıyorum. Pay yazıyorum.
+
+566
+01:34:07,764 --> 01:34:08,744
+Payların türenini alıp
+
+567
+01:34:08,744 --> 01:34:09,543
+payları yazıyorum.
+
+568
+01:34:10,036 --> 01:34:12,036
+bölüntüleri falan bulamadım, dikkat edin.
+
+569
+01:34:13,036 --> 01:34:18,036
+X sıfıra giderken, demin aldığımda, x sıfıra giderken 3x koçuken sıfır değil mi? İtalya istiyor.
+
+570
+01:34:22,452 --> 01:34:27,052
+bu değiştirir 2. Yani 3x2'den, fosinüs, fıda otomanyolere dikiyor.
+
+571
+01:34:30,676 --> 01:34:42,676
+Şurası, 0 bölü 0 belirsizliğine belirtiyorum. Bunun da 1 olduğunu belirtelim. Daha sonra belirtelim.
+
+572
+01:34:42,676 --> 01:34:55,660
+2, limit x sıfıra giderken, kare kök 1 artı x, eksi 1 bölü,
+
+573
+01:34:59,828 --> 01:35:05,828
+Tabii x sıfıra yakın değerlerde köküçü ne olacak? Sağdan soldan limit haline anlamına düşmemiz gerekiyor.
+
+574
+01:35:06,828 --> 01:35:12,828
+Biraz sadece köküçü olsa değil, sıfıra solda yaklaşamadık. Sağdan yaklaşacak. Doğru yüzden sağdan limit haline düştü.
+
+575
+01:35:13,828 --> 01:35:19,828
+Ama baktığınız gibi, ifade yukarı sıfır, aşağı sıfır sıfır sıfır, sıvı bölü sıvı belirsizliği var.
+
+576
+01:35:20,828 --> 01:35:24,828
+Yine eşittir. Lopitalı uygularsak,
+
+577
+01:35:27,347 --> 01:35:32,847
+yukarı türevinden 1 bölü 2x kare kök 1 artı x gelir.
+
+578
+01:35:34,147 --> 01:35:36,347
+karen türevi zaten 1.
+
+579
+01:35:36,847 --> 01:35:41,347
+x yerine 0 yazdığımızda 1 bölü otomatik olarak 2 sonucumuzda dururuz.
+
+580
+01:35:42,547 --> 01:35:47,847
+Yine burada şunu yazalım. Hatta bunu uygularken, şuradan buraya geçerken 0 bölü 0 bölüden dolayı
+
+581
+01:35:48,347 --> 01:35:50,347
+hoptal belirtelim.
+
+582
+01:35:50,847 --> 01:35:53,847
+Burada öyle. Üstelik 0 bölü 0 yazıyorum.
+
+583
+01:35:54,036 --> 01:35:57,395
+hatta da L'Hospital'dan uyguladığımı da söylemiş oluyor.
+
+584
+01:35:58,556 --> 01:36:03,036
+Bu da bize işlemlerimizin tabii ne aşamada olduğunu, nasıl yaptığınızı
+
+585
+01:36:04,036 --> 01:36:07,636
+konusunda tabii yardımcı olur.
+
+586
+01:36:10,735 --> 01:36:14,136
+Limit x sıfır ederken başka bir tane 1 at x
+
+587
+01:36:14,136 --> 01:36:16,515
+evet
+
+588
+01:36:16,515 --> 01:36:19,155
+eksi 1
+
+589
+01:36:19,155 --> 01:36:21,175
+eksi x bölü 2
+
+590
+01:36:23,091 --> 01:36:24,091
+x kare.
+
+591
+01:36:25,951 --> 01:36:29,611
+Basitçe yerini yazdığımızda x yerine 0, 0, 0 zaten geliyor.
+
+592
+01:36:30,611 --> 01:36:32,211
+O yüzden nokta uyguladığımızda
+
+593
+01:36:32,211 --> 01:36:35,791
+yukarısı birbirlik kare kök.
+
+594
+01:36:39,252 --> 01:36:40,412
+1 artı x,
+
+595
+01:36:43,412 --> 01:36:44,572
+eksi 1 bölü 2,
+
+596
+01:36:45,252 --> 01:36:47,412
+bölü 2x.
+
+597
+01:36:50,032 --> 01:36:54,452
+Bakın burada yine x'ini sıfırladığımızda, görüyoruz ki yine sıfır bölü sıfır mevsizliği var.
+
+598
+01:36:55,212 --> 01:36:57,332
+O zaman bir loptal daha buraya ister değil mi?
+
+599
+01:36:58,532 --> 01:36:59,852
+Demek ki sıfıra giderken,
+
+600
+01:37:02,372 --> 01:37:03,932
+burası eksi 1 bölü 4,
+
+601
+01:37:05,908 --> 01:37:08,728
+çarpı 1 artı x'leri x bölü 2.
+
+602
+01:37:10,688 --> 01:37:11,747
+x'leri x bölü 2.
+
+603
+01:37:11,828 --> 01:37:12,828
+Bunu tabii yukarıya yazalım.
+
+604
+01:37:13,507 --> 01:37:14,768
+Bir yerden kazanmak için.
+
+605
+01:37:16,028 --> 01:37:17,888
+Evet. Bölü payladı 2 satın.
+
+606
+01:37:17,948 --> 01:37:18,927
+Paydanın türevinde 2.
+
+607
+01:37:20,028 --> 01:37:21,568
+x'lerin sıfırı yazdığımızı.
+
+608
+01:37:21,667 --> 01:37:23,728
+x'leri 4, burası 1 olacak için.
+
+609
+01:37:24,448 --> 01:37:26,007
+x'leri 4, 8 çıkart.
+
+610
+01:37:29,555 --> 01:37:33,036
+Burada bakın dikkat edin, iki kez ne yapmış olduk aslında iki kez?
+
+611
+01:37:33,675 --> 01:37:39,036
+L'hospital uygulamış olduk. Bakın, L'hospital burada bir, L'hospital burada iki.
+
+612
+01:37:43,764 --> 01:38:06,023
+Dolayısıyla, ilk lopital uyguladığımızda, 0x0 karşımıza geldi. Tekrar baktık, yine 0x0 karşımıza geldi. İki kez tabii lopitalın nedir? Uygulanışı var. İki kez lopital arka arkaya uygulayıyor. Hatta bazen 3 kez belki uygulama durumu karşımıza çıkar.
+
+613
+01:38:16,979 --> 01:38:19,319
+Tabii kuralı doğru uygulamamızdasın.
+
+614
+01:38:21,539 --> 01:38:25,459
+Mesela eğer pay 0, payda 1 ise, artık orada
+
+615
+01:38:25,459 --> 01:38:29,779
+tabii loptal uygulamamızın bir anlamı yok.
+
+616
+01:38:30,039 --> 01:38:34,859
+Yani sadece 0, 0, durumlarda o B'si kibatizin karşımıza gelir.
+
+617
+01:38:36,339 --> 01:38:37,419
+O da bize onu söyler.
+
+618
+01:38:39,899 --> 01:38:40,379
+Tabii
+
+619
+01:38:44,979 --> 01:38:55,899
+0 bölirsiz, 0 belirsizlik durum olmayan mühendiklerle, daha doğrusu bir belirsiz şekli söz konusunda mühendikleri, böyle bir lopter kurallama şansımız yok.
+
+620
+01:39:05,300 --> 01:39:07,300
+Yine, tek taraf limitlerde de
+
+621
+01:39:08,100 --> 01:39:10,100
+Google'a bir dökültü alkanını
+
+622
+01:39:10,340 --> 01:39:13,540
+Şuraya, 4 diyeyim, örneğin ayrıca yazmıyorum.
+
+623
+01:39:14,739 --> 01:39:16,340
+Mesela, limit
+
+624
+01:39:16,819 --> 01:39:19,140
+x sıfır asadan girelim.
+
+625
+01:39:22,020 --> 01:39:23,692
+Sinüs x bölü x kare.
+
+626
+01:39:32,020 --> 01:39:45,280
+Çünkü sıfırın sağında ve solunda sinüsünün tek fonksiyonu olduğu için alacağı değerli şartlar farklıdır. O yüzden sağdan gider direkt orası x sıfıra giderken bir bitanik yazmak nedir? Hatalı sinüsüs olduğu için değil mi?
+
+627
+01:39:47,100 --> 01:39:51,020
+Dolayısıyla buradan 0-1-0 olduğunu görüyoruz.
+
+628
+01:40:00,819 --> 01:40:06,819
+Kule kosinus x, pi 0, pardon pi da 0, x 0'a gidelim sağlam geken.
+
+629
+01:40:07,500 --> 01:40:08,359
+Ancak pi 1.
+
+630
+01:40:09,079 --> 01:40:14,500
+Dolayısıyla burası 1 bölü 0'dan sonsuz değil mi? Arka sonsuz.
+
+631
+01:40:21,652 --> 01:40:22,852
+x pozitüsün,
+
+632
+01:40:28,692 --> 01:40:31,131
+bu limit, gördüğünüz gibi arkadaşlar,
+
+633
+01:40:35,604 --> 01:40:42,604
+Şurada bakın 0x0x04. Dolayısıyla L'Hospital uygulamış olduk.
+
+634
+01:40:49,587 --> 01:40:51,587
+Evet, evet, doğru, doğru.
+
+635
+01:41:04,180 --> 01:41:04,440
+x kare artı 2x, f'
+
+636
+01:41:04,440 --> 01:41:04,940
+Tamam.
+
+637
+01:41:04,940 --> 01:41:08,139
+x kare artı 2x, f'
+
+638
+01:41:08,139 --> 01:41:08,539
+Son.
+
+639
+01:41:09,819 --> 01:41:12,119
+Tabii mesela x son sayıda ne olurdu bunu?
+
+640
+01:41:14,420 --> 01:41:14,940
+Hadi bakalım.
+
+641
+01:41:18,139 --> 01:41:19,020
+x x sonsa gider.
+
+642
+01:41:19,020 --> 01:41:20,059
+x pozitif.
+
+643
+01:41:21,200 --> 01:41:22,860
+Ama aşağıda x olacağı şey
+
+644
+01:41:23,760 --> 01:41:24,920
+x son soru değil mi?
+
+645
+01:41:26,460 --> 01:41:27,739
+Ben onu da şuraya izleyelim.
+
+646
+01:42:15,796 --> 01:42:27,275
+kosinüs x kare yine, kosinüs x bölü 2x. Ne olur bunu sonuca, zaten bir şeyler. Söyleyin bana.
+
+647
+01:42:44,148 --> 01:42:44,408
+x kare artı 2x, f'
+
+648
+01:42:44,408 --> 01:42:45,988
+eksi sonsu değil mi?
+
+649
+01:42:46,247 --> 01:42:48,108
+x kare artı 2x, f'
+
+650
+01:42:54,547 --> 01:42:58,188
+yine aynı şekilde soru gülsün var. Burada L'Opto'yu uyguladığımızda bu kaç kıza gittik.
+
+651
+01:43:02,644 --> 01:43:03,644
+şimdi
+
+652
+01:43:10,420 --> 01:43:30,239
+Aslında 0 bölü 0, sonsuz bölü sonsuza nedir? Denk bir belirsizlik şekli. Ötelinden 0x sonsuz ya da son 8 sonsuz belirsizlikleri de nedir? 0 bölü 0'a ne yapılabilir? Benzetilerek, dönüşüm denek çözülebilirler.
+
+653
+01:43:51,988 --> 01:43:53,988
+mesela sonsu bölü sonsuz.
+
+654
+01:44:17,395 --> 01:44:30,395
+bire şeklini göz önüne aldığımızda, tabi burada, hoppite kuralının 0x0'a olduğu gibi, sonsu 1x0'a da uğrandığı zaten biliniyor.
+
+655
+01:44:31,415 --> 01:44:39,675
+Zorayda x a noktasına giderken, fx'in ya da bx'in artı sonsu, x sonsu şeklinde değerleri alıyorsa, aynı şekilde bize bu uygularız.
+
+656
+01:44:41,456 --> 01:44:42,376
+x a için.
+
+657
+01:44:48,340 --> 01:45:08,680
+hem fx, artı ya da x sonsuz, hem de gx, artı ya da x sonsuz, kaderlerden birini arıyor ise, o zaman aynı şekilde limit x ayı bırakın fx bölü gx.
+
+658
+01:45:14,292 --> 01:45:17,572
+limit x ayrı defini f' üstü x bölü g' üstü x.
+
+659
+01:45:26,771 --> 01:45:28,771
+yine burada sağda ki limit var.
+
+660
+01:45:37,652 --> 01:45:38,652
+elçok de sideri.
+
+661
+01:45:51,891 --> 01:45:56,891
+Yani, sağdaki limitin varlığını kabul edelim, değil mi? Bu işitci yazar.
+
+662
+01:45:58,891 --> 01:46:07,891
+Dolayısıyla, burada x a, notasyonda a'nın sonu ya da sonsuz tabi değer olabilir. Ayrıca, tek tarafını bitirelim.
+
+663
+01:46:08,891 --> 01:46:14,891
+Sağdan giderken işte a artı, soldan yaklaşıklar a eksiklik, tekrar bir nit dediğine uygulamamız var.
+
+664
+01:46:15,891 --> 01:46:17,771
+Hemen buna da bir örnek verelim.
+
+665
+01:46:31,604 --> 01:46:34,092
+x kare artı 2x, f'
+
+666
+01:46:38,036 --> 01:46:44,036
+sekat x bölü, 1 artı tanjant x.
+
+667
+01:46:46,435 --> 01:46:51,036
+Baktığımız zaman, pi bölük için, sekat 1 bölük kosu olduğu için 0 olacaktır.
+
+668
+01:46:51,036 --> 01:46:58,036
+Buradan da tanjant, pi bölük için ifadesine baktım, pardon, 0, tabi sonsuz olacaktır.
+
+669
+01:46:58,036 --> 01:47:04,036
+Tancant ayrekli ülküde 1 artı sonsuz değil, ifadesine geldiği için. Sonsuz oluyor, sonsuz.
+
+670
+01:47:04,435 --> 01:47:21,315
+belirsizliği var. Başıyla, limit x kare 2'ye giderken, secant x kutu ile bir secant x çarpı tanjant x, paydalı da secant kare x gelir.
+
+671
+01:47:27,636 --> 01:47:40,436
+dolaşıkları sekantikler götürür. tangent x bölü 2x, secant x, ifadesini, tarih esmeretini sin x kalır. sin x x bölü 2'ye güldüğü yakın da 1'tir.
+
+672
+01:47:46,163 --> 01:47:54,163
+Gerçekten şurada yine 0 bölü 0 belirsizleme hastalığı, pardon sonsuz bölü sonsuz belirsizleme hastalığı.
+
+673
+01:47:54,163 --> 01:47:56,163
+Bunu belirtiyorum.
+
+674
+01:47:56,163 --> 01:48:00,163
+Burası ya yine yukarıdaki doptel kullanımı yaptım.
+
+675
+01:48:00,163 --> 01:48:01,643
+Ne bulmadım.
+
+676
+01:48:08,756 --> 01:48:15,496
+Mesela x'in artı, x sonsuz değerleri içindi. Aslında burada türev 2'ye soldan giderken diye.
+
+677
+01:48:15,775 --> 01:48:17,736
+Değil mi? Burada soldan giderken bir ifadesi vardı.
+
+678
+01:48:23,380 --> 01:48:24,380
+Evet.
+
+679
+01:48:28,724 --> 01:48:43,372
+x kare artı 2x, f'
+
+680
+01:48:34,068 --> 01:48:35,167
+başka bir renk.
+
+681
+01:48:36,528 --> 01:48:37,608
+Enşevalar sonsuz için.
+
+682
+01:48:39,708 --> 01:48:41,327
+Limit x sonsuza giderken,
+
+683
+01:48:42,087 --> 01:48:42,907
+en x 0 diyor.
+
+684
+01:48:54,576 --> 01:49:12,695
+x kare artı 2x, f'
+
+685
+01:48:53,908 --> 01:49:03,908
+x kare artı 2x, elen sonsuz sonsuz, zaten kök sonsuzları, sonucu açı. Yine buradan bloktalım. Sonsuz bölü sonsuz gereği.
+
+686
+01:49:05,908 --> 01:49:12,507
+1 bölü x, yukarı türevi bölü, aşağıda 1 bölü 2 kökü köküse gider, 1 bölü kök x.
+
+687
+01:49:18,260 --> 01:49:24,860
+İl, tu vas kez adresi zek, payda da bir ver, bu kez kalanını.
+
+688
+01:49:28,500 --> 01:49:30,220
+bu da elbette kısıdır.
+
+689
+01:49:37,555 --> 01:50:10,435
+x kare artı 2x, f'
+
+690
+01:49:47,091 --> 01:49:51,711
+Bazen arka arkaya iki kez gelebilir. İki kez uğramak durumda kalabiliriz.
+
+691
+01:49:54,531 --> 01:49:57,912
+Onu da şurtdaki limit için verelim.
+
+692
+01:50:01,211 --> 01:50:02,671
+e üzeri x bölü x kare mesela.
+
+693
+01:50:04,311 --> 01:50:05,271
+Bu da sonuçta sonuçta.
+
+694
+01:50:06,791 --> 01:50:09,751
+İlk L'Hospital'da e üzeri x bölü 2x gelir.
+
+695
+01:50:10,591 --> 01:50:11,492
+Yine L'Hospital var.
+
+696
+01:50:12,692 --> 01:50:15,692
+e üzeri x bölü 2, belirsiz.
+
+697
+01:50:15,692 --> 01:50:17,692
+Burada aksiyon 8c açık.
+
+698
+01:50:22,292 --> 01:50:25,292
+ilk kez de yapmış olduk, hopital uygulamış olduk.
+
+699
+01:50:25,292 --> 01:50:26,292
+Burada da.
+
+700
+01:50:32,756 --> 01:50:37,095
+L'Hospital'ın geçtiği ilk uygulandı her yere. L'Hospital yazıyor ki onu fark ederim.
+
+701
+01:50:38,956 --> 01:50:46,716
+Peki diğerlerle ilgili örneklerimiz var. Onları biraz daha dikkatli göz önünde alacağım. Bir de üstel belirsizleri göz önünde alacağım.
+
+702
+01:50:48,015 --> 01:50:51,056
+1 üzeri sonsuz, 0 üzeri. 0 ve sonsuzları 0.
+
+703
+01:50:52,056 --> 01:50:54,615
+Bak onları zaten söylemiştim şuradan.
+
+704
+01:50:56,236 --> 01:50:57,876
+0 üzeri 0.
+
+705
+01:50:59,667 --> 01:51:02,667
+taşını da yanlış yapışmakta, şunu düzelteyim.
+
+706
+01:51:02,667 --> 01:51:04,667
+Fonsu üzeri sıkılacak.
+
+707
+01:51:10,707 --> 01:51:16,707
+0 üzeri 0, sonsu üzeri 0 ve 1 üzeri sonsu.
+
+708
+01:51:29,427 --> 01:51:33,667
+Netizen, Arne'nin de son ayaklarken niye Cabeq'si bir olmuyor? Bakalım.
+
+709
+01:51:49,011 --> 01:52:13,011
+x kare artı 2x'in grafiğini hatırlayın. Niye x kare olsun ki? Grafiğini hatırlayın. x kare de x kare değil mi? Ayukarıda değil mi? Yani belirlerin sağında ve sonunda zaten x kare falan yaklaşmaya çalışıyor. [öğrenci]. Anladın mı [öğrenci]?
+
+710
+01:52:20,532 --> 01:52:30,532
+Peki, arkadayız, aradayız. Şimdi aradayız. Aradan sonra davet edelim. Ara vermeden, dinlemeden maalesef gidemiyoruz.
+
+711
+01:52:32,532 --> 01:52:34,532
+Peki, 10 dakika sonra görüşürüz.
+
+712
+02:08:17,555 --> 02:08:18,915
+Evet arkadaşlar, devam edelim.
+
+713
+02:08:34,579 --> 02:08:39,079
+Diğer fonlar için mesela sonsuz bölü sonsuz, sonsuz çağır sıfır.
+
+714
+02:08:41,079 --> 02:08:43,579
+Ya da son, 8 sonsuz fonlarında da.
+
+715
+02:08:44,579 --> 02:08:46,579
+Bunlar dönüştürerek sürebilir.
+
+716
+02:08:48,079 --> 02:08:49,068
+Şöyle edelim.
+
+717
+02:09:24,787 --> 02:09:26,787
+Şimdi, bu seferlektörüne bakalım.
+
+718
+02:09:26,787 --> 02:09:45,787
+Mesela limit x, sinüs, 1 bölü x, limit x, son sayıda f, x çarpı, sinüs, 1 bölü x, bu aslında sonsuz çarpı,
+
+719
+02:09:54,260 --> 02:10:10,760
+İsterseniz burada 1 bölü x'e h diyelim. Burayısıyla limit h sıfırası olarak, artı son soru için artı sıfırası olarak diyorum. 1 bölü h çarpı sinüs h olur.
+
+720
+02:10:11,819 --> 02:10:14,840
+Tabii sinüs h bölü h'nin 1 olduğunu biliyor değil mi? Limit h sıfırı olarak.
+
+721
+02:10:28,627 --> 02:10:29,627
+İki ayağından
+
+722
+02:10:33,524 --> 02:11:06,595
+x kare artı 2x, f'
+
+723
+02:10:43,667 --> 02:10:45,667
+Kök fonksiyonu var çünkü burada.
+
+724
+02:10:46,867 --> 02:10:49,467
+Bunu bir linux fonksiyonları çekti de tabii.
+
+725
+02:10:49,467 --> 02:10:53,067
+0'a sağdan, yaklaşma sıfır açısından.
+
+726
+02:10:53,667 --> 02:10:59,268
+1 metri x sıfı sağdan yaklaşırken normalde 0 çarpı son sitem ifadesi.
+
+727
+02:10:59,768 --> 02:11:07,268
+Aslında bunu ben eğer bu kök x'i ben paydaya bir bölük kök x olarak alırsam ifade değişmemiş olur.
+
+728
+02:11:07,667 --> 02:11:09,268
+Ama limit şekli değişir.
+
+729
+02:11:09,747 --> 02:11:12,247
+ne olur sonsu, böyle sonsu belirsizliği gelirdi.
+
+730
+02:11:14,028 --> 02:11:17,608
+Bu açıyla bu sonsu belirsizliği da bana neyi veriyor?
+
+731
+02:11:17,727 --> 02:11:19,387
+L'Hospital'ı uygulama aşamasını veriyor.
+
+732
+02:11:20,967 --> 02:11:21,967
+Şimdi onları yazarız.
+
+733
+02:11:22,647 --> 02:11:25,907
+Buradan türev 1 bölü x bölü,
+
+734
+02:11:26,667 --> 02:11:28,387
+paydan türev de x'i 1 bölü 2,
+
+735
+02:11:30,387 --> 02:11:31,367
+x'e 3 bölü 2.
+
+736
+02:11:33,747 --> 02:11:34,467
+Şöyle geliyor.
+
+737
+02:11:35,747 --> 02:11:36,967
+Sen de eleştirirsek,
+
+738
+02:11:39,188 --> 02:11:41,747
+limit x sıfırdan sağdan giderken,
+
+739
+02:11:43,548 --> 02:11:46,427
+şurada bir x, x var, x duruyor zaten,
+
+740
+02:11:47,628 --> 02:11:49,548
+eksi 2 kök x olur.
+
+741
+02:11:52,427 --> 02:11:54,988
+Evet, x sıfırdan sağdan giderken de sıfırdan açık.
+
+742
+02:11:58,188 --> 02:11:59,228
+Dolayısıyla burada,
+
+743
+02:12:01,728 --> 02:12:04,868
+bir sonsuz sıfır çarpı sonsuz hatta x sonsuz tabii ki.
+
+744
+02:12:06,355 --> 02:12:09,415
+x kare artı 2x, sonsuz, şöyle diyelim.
+
+745
+02:12:10,755 --> 02:12:13,855
+Ve bunu bu şekilde getirdik. Burası artık sonsuz, böyle sonsuz oldu.
+
+746
+02:12:16,355 --> 02:12:17,796
+x kare artı 2x, dönem değil.
+
+747
+02:12:19,315 --> 02:12:21,255
+Daha sonra, L'Hospital, G'e bir iki şekil.
+
+748
+02:12:22,076 --> 02:12:23,655
+x kare artı 2x, sıkı olarak bulduk.
+
+749
+02:12:25,655 --> 02:12:26,755
+Aynı şekilde
+
+750
+02:12:38,163 --> 02:12:38,859
+limit...
+
+751
+02:12:42,996 --> 02:12:51,695
+0'a giderken yine, şu lambayı açayım isterseniz, bir belirsiz x-x'i,
+
+752
+02:12:57,716 --> 02:12:59,935
+1,1x, sinüs, evet.
+
+753
+02:13:02,095 --> 02:13:07,816
+Normalde x sıfır için, burası son, 8, son, belirsizliğini bize tamamlandı zaten.
+
+754
+02:13:09,396 --> 02:13:13,876
+Ama ifadeyi daha düzenlerse, x, sinüs, x belirsiz, x, sinüs, x şeklinde.
+
+755
+02:13:15,216 --> 02:13:16,216
+Şunu yazalım.
+
+756
+02:13:18,736 --> 02:13:22,336
+Evet, x, x sıfır, ayı.
+
+757
+02:13:29,300 --> 02:13:32,820
+Tabii sağdan giderken aslında son 8 sonsuz ifadesi var.
+
+758
+02:13:34,880 --> 02:13:37,300
+Soldan giderken de sinistik tabi eksidir.
+
+759
+02:13:37,400 --> 02:13:38,880
+X sonsuz, eksi, x sonsuz.
+
+760
+02:13:39,520 --> 02:13:41,760
+Tabii x sonsuz artı sonsuz yine aynı ifadeye giden.
+
+761
+02:13:42,600 --> 02:13:44,520
+Demek kendi son 8 sonsuz.
+
+762
+02:13:44,619 --> 02:13:47,760
+En sağa giderken, soldan giderken, çünkü bu da bir tehlikeli bir ifade var.
+
+763
+02:13:48,579 --> 02:13:50,159
+İfade son 8 sonsuzla uğraşır.
+
+764
+02:13:50,220 --> 02:13:53,199
+Dolayısıyla kesirleri birleştirirsek,
+
+765
+02:13:55,500 --> 02:13:56,600
+x sıfıra giderken,
+
+766
+02:13:58,131 --> 02:14:05,131
+x x sinüs x bölü x x sinüs x.
+
+767
+02:14:05,131 --> 02:14:09,131
+Ama bu kez ne olur? 0, 1, 0 olur.
+
+768
+02:14:09,131 --> 02:14:12,131
+Bu sebeple L'Hospital'ı uğrama şans verir.
+
+769
+02:14:16,724 --> 02:14:32,724
+1x'i kosinüs x, bölü çarpımın türevine sinüs x artı x çarpı kosinüs x. Ama x'ı türevine bit kaldığımızda yukarı sıfır, fayda sıfırdan farklı mı?
+
+770
+02:14:32,724 --> 02:14:39,724
+Sıfır, yok sıfır, böyle sıfır. Bir kez daha L'Hospital'ı uygulamamız gerekiyor, hala L'Hospital.
+
+771
+02:14:39,724 --> 02:14:42,507
+O yüzden eşit değilmiş beye.
+
+772
+02:14:43,188 --> 02:14:51,868
+limit x sıfır ederken, yukarısı sinüs x olur sadece. Kosinüs x'in türevinden eksiksi, eksiksi geldiği için.
+
+773
+02:14:53,028 --> 02:14:58,068
+Payday ise kosinüs x, bakın burası sıfırdan kurtuldu. Paydaya en azından.
+
+774
+02:14:58,628 --> 02:15:05,587
+Bunun açılımında da artı, kosinüs x, dolayısıyla 2 tane kosinüs x gelir türev birleştirdim artık.
+
+775
+02:15:05,948 --> 02:15:08,811
+çarpı x çarpı, eksi sinüs x.
+
+776
+02:15:10,484 --> 02:15:11,484
+Şöyle yazalım.
+
+777
+02:15:12,684 --> 02:15:21,484
+Dolayısıyla artık şeyden kurtuldu. Payda aslında 2 gelir. 0 bölü 2 limit aldığımızda sonuçta 0 olur.
+
+778
+02:15:22,484 --> 02:15:28,484
+Şuradaki işlemleri belirtişe kurursak, burası neydi? Son 8 sonsuz.
+
+779
+02:15:31,484 --> 02:15:36,484
+Burada 0 bölü 0'a ulaştık. Dolayısıyla L'Hospital'a uygulandık.
+
+780
+02:15:37,971 --> 02:15:39,971
+hala 0x0.
+
+781
+02:15:39,971 --> 02:15:41,971
+yine doputarı buladım ben.
+
+782
+02:15:41,971 --> 02:15:42,971
+değil mi?
+
+783
+02:15:42,971 --> 02:15:45,971
+şöyle patates içerisine alayım ben bunu.
+
+784
+02:15:50,323 --> 02:15:51,963
+Bunlar da tabi, şunları da paylaşacağım.
+
+785
+02:15:51,963 --> 02:15:57,923
+Bunlar tabi, şuna dikkat edeyim.
+
+786
+02:15:57,923 --> 02:16:00,023
+Hatta şöyle diyelim.
+
+787
+02:16:02,723 --> 02:16:08,763
+x sıfıra sağlar taşırken, bu ifadeyi düşündüğümüz zaman,
+
+788
+02:16:11,763 --> 02:16:13,623
+artı sonsuz, değil mi?
+
+789
+02:16:14,143 --> 02:16:16,063
+Eksi sonsuz olur bu ifade.
+
+790
+02:16:16,916 --> 02:16:23,115
+bu öteğinden x para soldan yaklaşırken, bu x son soru, bu artı son soru.
+
+791
+02:16:24,016 --> 02:16:26,976
+Asya sonuçta göre sonuç 8, sonuç belirsizliğine getiriyor.
+
+792
+02:16:27,556 --> 02:16:28,296
+Eklifliyorum bir tane.
+
+793
+02:16:29,695 --> 02:16:31,796
+Yani sonuçları yerleştiriyor, başka bir şey değil.
+
+794
+02:16:33,236 --> 02:16:33,855
+İnşaat değil.
+
+795
+02:16:39,379 --> 02:16:44,059
+Şimdi burada arkadaşlar, belirsiz kuvvetler, ya da üstte belirsizler, belirsizler var.
+
+796
+02:16:45,579 --> 02:16:47,199
+Şimdi onları da yazalım.
+
+797
+02:17:13,139 --> 02:17:20,500
+Bunlar da genel olarak, partiler şöyle denilen gibi, 1C sonsuz, 0C0 ve sonsuz C0.
+
+798
+02:17:20,500 --> 02:17:33,939
+Değersiz konuları atıp, 1C sonsuz, 0C0 ve sonsuz C0.
+
+799
+02:17:39,987 --> 02:17:41,579
+x kare artı 2x, f'
+
+800
+02:17:44,628 --> 02:17:45,468
+etrafımlar bir şey.
+
+801
+02:17:55,028 --> 02:17:56,648
+bu da 3x, limit.
+
+802
+02:18:01,363 --> 02:18:23,743
+x'in bir a değeri için fonksiyonun doğal log atması limiti L ise, o zaman limit x A için, f x'in limiti işte, limit x A için, aslında e üzeri L'ye gelecek.
+
+803
+02:18:24,683 --> 02:18:27,343
+E üzeri L'in x, L'in x pardon.
+
+804
+02:18:28,628 --> 02:18:30,728
+Yani i üzeri, l ifadesini yapıyoruz.
+
+805
+02:18:33,128 --> 02:18:36,068
+Bu arada bir a, yol, son, l'ye de son soran biz.
+
+806
+02:18:37,368 --> 02:18:41,608
+Erzurum'da, f adıyı, bir şekilde geleceğini görürüz.
+
+807
+02:18:46,772 --> 02:18:52,292
+Daha önceki öğrendiğimiz, tabii hepsini yapamazsanız, daha önceki öğrendiğimiz limit kurallarından.
+
+808
+02:18:54,132 --> 02:18:56,552
+Yani son süre bir son süre, ana uğrabiliyorsanız,
+
+809
+02:18:56,552 --> 02:19:00,552
+ne bileyim, haydata en azından sıkılıp bazı seviyorsanız, seviyorsanız, seviyorsanız,
+
+810
+02:19:00,552 --> 02:19:01,832
+kullanabilirsiniz.
+
+811
+02:19:03,052 --> 02:19:05,352
+Bazı olma da özel yöntemler yok.
+
+812
+02:19:05,852 --> 02:19:12,052
+Bazı limitler hem vapital kullanarak hem de kullanmadan tüzlebilir.
+
+813
+02:19:12,595 --> 02:19:15,396
+ama bazıları da vardır ki diğer türü çeşitlemek zordur.
+
+814
+02:19:15,396 --> 02:19:17,795
+O zaman da başkalarını doputan kullanıyoruz.
+
+815
+02:19:22,644 --> 02:19:33,024
+Mesela, daha önceden bir önemli bir limit olarak söylediğimiz x sıfırı zaten bir defa. 1 artı x'e de birbir x'e de birbir x'e de bir limitin ne olduğunu gösterelim.
+
+816
+02:19:42,963 --> 02:19:51,963
+olarak, limit, 1 artı x'e 1 bölü x. x kare artı 2x'e sağlayalım.
+
+817
+02:20:01,075 --> 02:20:13,275
+Doktor Klan'ı bulabiliriz. Burada tabii sıfıra giderken 1 üzeri sonsuz. 1 üzeri soldan giderken de diyebiliriz ama 1 üzeri x sonsuz dememek adına değil mi yani?
+
+818
+02:20:13,275 --> 02:20:21,876
+Orayı sonucu birbirleri bir sonsuz olacak. 1 üzeri sonsuz olan birisik olduğu için bir sıkıntı olduğu için çarşı. O hale getirmeyelim.
+
+819
+02:20:21,876 --> 02:20:28,075
+x sıfıra sağdan giderken şimdi elen etiksi bulacağız.
+
+820
+02:20:29,716 --> 02:20:30,896
+pulimide pareci.
+
+821
+02:20:42,100 --> 02:20:44,100
+Aslında şunu yukadaki anlamda
+
+822
+02:20:47,443 --> 02:20:48,984
+e değil mi yazacak olursak?
+
+823
+02:20:50,184 --> 02:20:50,984
+1 bölü x,
+
+824
+02:20:52,724 --> 02:20:54,603
+e ile 1 artı x, dikkat edersen.
+
+825
+02:20:59,028 --> 02:21:07,327
+Dolayısıyla bu ifade limit, x sıfırdan bire kanatta bu limitle yukarı çıkarabiliriz.
+
+826
+02:21:07,327 --> 02:21:09,827
+Şöyle ödeye satalım.
+
+827
+02:21:17,075 --> 02:21:17,795
+e-170
+
+828
+02:21:23,188 --> 02:21:33,567
+sağdan indetten, L'L 1 artı x bölü x kareler L'L 1 0, 0 0 1 0 5'si değil mi?
+
+829
+02:21:34,427 --> 02:21:38,308
+Dolayısıyla bu limiti nedir? L'Hospital'ı kullanarak çözebiliriz.
+
+830
+02:21:39,827 --> 02:21:40,948
+E üzeri L'Hospital'da
+
+831
+02:21:45,747 --> 02:21:47,747
+1 bölü 1 artı x bölü 1.
+
+832
+02:21:47,747 --> 02:21:49,747
+Orada da 1 çıkar.
+
+833
+02:21:53,747 --> 02:21:55,747
+1 bölü 1 artı x bölü 1.
+
+834
+02:21:55,747 --> 02:21:57,747
+Topta uyguladığımızı göre.
+
+835
+02:21:57,747 --> 02:22:01,747
+Buradan da e üzeri
+
+836
+02:22:01,747 --> 02:22:03,747
+e üzeri 1.
+
+837
+02:22:05,747 --> 02:22:06,923
+Yani e.
+
+838
+02:22:12,628 --> 02:22:14,092
+x'uç f'ü ısırdan bire.
+
+839
+02:22:22,355 --> 02:22:23,195
+Burada elbette,
+
+840
+02:22:26,716 --> 02:22:29,275
+zaten yukarıdaki yazışımızda bunu ifade ettik.
+
+841
+02:22:30,216 --> 02:22:34,595
+Bu limitin sıfır böyle sıfırı değil mi? Getirdiğini görüyoruz. Dolayısıyla optar uygulamıyoruz.
+
+842
+02:22:38,804 --> 02:22:41,123
+buradan böyle geçirten, yaptıları uygulayız.
+
+843
+02:22:50,579 --> 02:23:15,739
+Bakın, normalde limitimizde 1 üzeri sonsuz değil mi? Şöyle baktın, x'e sıfırladığımızda. 1 üzeri sonsuz. 1 üzeri sonsuz olduğu için, yukarıdaki şu yazdığım iştikleri, ne yaptım? E tabanda yazın. Her sayı tabi E tabanda yazabilirsiniz. Mesela şöyle düşünün. 2, hatta x'i diyelim mesela.
+
+844
+02:23:17,876 --> 02:23:45,256
+x eşittir, e üzeri lnx. Bunu kullanalım. Ya da f eşittir, e üzeri lnfx. İfade bu. Tabii f üzerinde sayı var ne mi o ayrı bir şey yani hani kuvveti var mesela, f üzeri birbirleri, buradaki mesela. f üzeri mesela ederim 2, f kare.
+
+845
+02:23:46,164 --> 02:23:51,164
+bu ne olur? e üzeri 2, elen etiksi olur.
+
+846
+02:23:53,164 --> 02:24:00,164
+Yani normalde elen etiksi kare ama kare işleyen edilir, yukarı değil mi? Geldiği için bu şekilde yazarız. Bunlar var.
+
+847
+02:24:01,164 --> 02:24:02,164
+Bunu kullandım.
+
+848
+02:24:03,164 --> 02:24:07,164
+Buradan, bu ifade etiksimizi böyle yazdık önce.
+
+849
+02:24:07,164 --> 02:24:09,164
+Bakın, elen etiksimizi.
+
+850
+02:24:09,459 --> 02:24:14,899
+1 artı 2x, 1 x, 1 x'e bir 1x, 1 x'e'nin özelliği gereği değil mi? Başa gelir. Yazdık onu, sabır yazdık.
+
+851
+02:24:16,039 --> 02:24:23,500
+Ve sonra, tabi limit üstel fonksiyonumuz sürekli olduğu için, hani sürekli fonksiyonların limitinde, limit içeriye aktarabiliyoruz hatırlarsanız.
+
+852
+02:24:25,559 --> 02:24:29,259
+Aktardık, üstel oradan artık aktarmış olduk, direkt değişkenli ifadeleri.
+
+853
+02:24:30,579 --> 02:24:34,379
+Oradan da, plus 0, plus 0 olduğu için noktaları uyguladık.
+
+854
+02:24:35,316 --> 02:25:00,675
+L'Hospital gereği, 1 bölü L'nin türevinden 1 bölü 1 artı x, x türevi 1. Yukarıda size baktığınız zaman x sıfır giderken, 1 bölü 1'den 1 değil mi? Yani burayı belki yazabilirim. Burayı 1 bölü 1 artı x olur. x sıfıra giderken, 1 bölü 1 artı 0, 1 bölü 1. Yani şöyle yazabilirsiniz. 1 bölü 1 artı x.
+
+855
+02:25:01,332 --> 02:25:15,112
+x sıfırı sağlamak derken, bu değiştir. 1 bölüm 1 artı 0, bu değiştir. 1 bölüm 1'den 1. Değil mi? E şu 1 buradan geliyor. E üzeri 1, bu değiştir.
+
+856
+02:25:18,932 --> 02:25:19,932
+bu şekilde.
+
+857
+02:25:19,932 --> 02:25:20,932
+ya da mesela
+
+858
+02:25:20,932 --> 02:25:23,932
+başka bir örnek verelim.
+
+859
+02:25:38,804 --> 02:25:40,844
+x sonsak deken x'e böl x.
+
+860
+02:25:49,363 --> 02:25:59,043
+Aslında az önceki limiti siz şey yapabilirsiniz, x sıfıra sonlar kaçırırken hala e olduğunu söyleyebiliriz, gösterebiliriz.
+
+861
+02:25:59,043 --> 02:25:59,963
+Değil mi?
+
+862
+02:26:01,644 --> 02:26:05,243
+Bu limiti kurmaya çalışalım.
+
+863
+02:26:06,024 --> 02:26:08,583
+Bakın, sonsuz için sonsuz yeri sıfır.
+
+864
+02:26:09,363 --> 02:26:09,804
+Bu açık.
+
+865
+02:26:11,484 --> 02:26:12,484
+Şöyle yazalım onu.
+
+866
+02:26:12,664 --> 02:26:13,144
+Limit x.
+
+867
+02:26:14,195 --> 02:26:26,376
+sonsuza giderken x'leri 1 bölü x. Bazıca biraz önceki yazışımızı elini kullandı. x sonsuza giderken e üzeri 1 bölü x'leri x.
+
+868
+02:26:26,376 --> 02:26:29,315
+Eştir.
+
+869
+02:26:32,852 --> 02:26:39,852
+e üzeri limit, lnx bölü x. x sonsuza giderken.
+
+870
+02:26:41,152 --> 02:26:47,756
+Sonsu bölü sonsuz. İşte Ropital kuralını uygulamak için en güzel kural. 1 bölü x bölü 1.
+
+871
+02:26:51,347 --> 02:26:55,407
+Dolayısıyla yukarısı ne olacaktır? 1-1 sonucunda sıfır mı olacaktır? Ejciyesi sıfır mı olur?
+
+872
+02:26:56,768 --> 02:26:57,628
+Buna mı bakmamız lazım?
+
+873
+02:27:00,108 --> 02:27:02,308
+x-1 sonsuza gidelim. 1-1 sonsuz.
+
+874
+02:27:08,147 --> 02:27:12,147
+0 değil mi? Dolayısıyla, x kare artı 0.
+
+875
+02:27:14,147 --> 02:27:16,147
+Bu da 1.
+
+876
+02:27:17,147 --> 02:27:19,147
+x kare artı 0.
+
+877
+02:27:22,611 --> 02:27:28,111
+Tekrar söylüyorum, burası sonsuz üzeri sıfır bir liste var.
+
+878
+02:27:29,111 --> 02:27:33,611
+Bunu yukarıdaki yazılışı tarzında yazdık.
+
+879
+02:27:34,611 --> 02:27:40,611
+Sonra bu ifadenin sonucunda sonsuz, böyle sonsuz, besini burada görüyoruz.
+
+880
+02:27:41,611 --> 02:27:43,435
+Dolayısıyla L'Hospital'ı uyguluyoruz.
+
+881
+02:27:47,252 --> 02:27:51,252
+Bu yazımızda bu geldi. Gerçekten x sonuçta giderken.
+
+882
+02:28:04,659 --> 02:28:07,307
+yürürükçü birbirç, birbirç.
+
+883
+02:28:14,835 --> 02:28:22,435
+Türev, birbirlik sinimi, x10, x10, x10 olur. E'ye de 0 gelir, E'ye de 0 gelir, E'ye de 0 da 1 daha oturdu.
+
+884
+02:28:22,435 --> 02:28:23,135
+Türev, sonuz 5.
+
+885
+02:28:27,219 --> 02:28:33,099
+Demek ki sonsuz e0b sitinde böyle bir çözümle
+
+886
+02:28:41,620 --> 02:28:42,620
+Bu da
+
+887
+02:28:44,700 --> 02:28:47,500
+bir takım tolemler var. Bundan sonra uygulaması
+
+888
+02:28:48,780 --> 02:28:52,120
+birim için şu an en azından çok gerekli değil.
+
+889
+02:28:55,956 --> 02:29:12,876
+Bu, bu
+
+890
+02:30:03,667 --> 02:30:08,307
+Belirsizlik koronatörle de bir kaldı mı?
+
+891
+02:30:08,307 --> 02:30:09,807
+Aha bakalım bir.
+
+892
+02:30:12,807 --> 02:30:15,127
+Bu biri gemi sonsuz.
+
+893
+02:30:16,127 --> 02:30:18,092
+Sonsuz gemi sıfır.
+
+894
+02:30:21,299 --> 02:30:23,299
+0 ile 0 çönecek mi?
+
+895
+02:30:36,979 --> 02:30:38,979
+diye 0x10'i sıkıldılarını unutmaştık.
+
+896
+02:31:28,180 --> 02:31:30,680
+x kare artı 2x, evet x kare artı 2x verebiliriz.
+
+897
+02:31:32,119 --> 02:31:32,899
+Bir de ona girelim.
+
+898
+02:31:34,680 --> 02:31:35,639
+Sıkayımcaya sıkı.
+
+899
+02:31:46,004 --> 02:31:47,084
+Evet, x sıfıra.
+
+900
+02:31:53,363 --> 02:31:54,923
+x kare artı 2x, f'
+
+901
+02:31:59,188 --> 02:32:02,108
+tabanın, değil mi? x'oubluysa bir gözlemle.
+
+902
+02:32:21,360 --> 02:32:36,684
+x kare artı 2x, f'
+
+903
+02:32:15,156 --> 02:32:36,195
+Bakın en anlım. Eşittir. Limit e üzeri x lnx değil mi? Bu değiştir. e üzeri limit. Bunu şöyle yazalım. lnx bölü x, kiri bölü x.
+
+904
+02:32:41,104 --> 02:32:43,084
+x kare artı 2x, f'
+
+905
+02:32:40,788 --> 02:32:51,148
+Bu değiştir. E107, limit, artı topitalı, burada biliriz çünkü x sıfır aslından giderken, x sonsuz olur, sonsuz olur.
+
+906
+02:32:52,608 --> 02:32:55,587
+Dolayısıyla türev yazar, 1 bölü x bölü, x bölü x kare.
+
+907
+02:32:59,860 --> 02:33:01,836
+yöntemiz için bir x'in iliksitelim.
+
+908
+02:33:05,139 --> 02:33:12,459
+x kare artı 2x, f'
+
+909
+02:33:17,043 --> 02:33:19,043
+X kalemti hansı kısal çünkü.
+
+910
+02:33:20,484 --> 02:33:22,484
+X sıfır asadan girelim.
+
+911
+02:33:24,004 --> 02:33:25,363
+Şöyle biritelim.
+
+912
+02:33:26,404 --> 02:33:36,244
+X sıfır asadan girelim.
+
+913
+02:33:37,123 --> 02:33:38,564
+Hakikaten sonuç değil mi?
+
+914
+02:33:40,963 --> 02:33:41,835
+Ne gidiyoruz?
+
+915
+02:33:48,435 --> 02:33:49,115
+E üzüldü.
+
+916
+02:33:54,708 --> 02:34:03,628
+x kare artı 2x, f'
+
+917
+02:34:07,763 --> 02:34:09,707
+1 virüs olmuş değil mi ya ben?
+
+918
+02:34:32,884 --> 02:34:33,515
+yorum yapı.
+
+919
+02:35:30,100 --> 02:35:31,479
+Şu testi öde olsun arkadaşlar.
+
+920
+02:35:48,852 --> 02:35:49,672
+Ödev örnek.
+
+921
+02:36:05,083 --> 02:36:05,611
+x kare artı 2x, f'
+
+922
+02:36:04,147 --> 02:36:05,607
+çabuk neşge bir yapalım.
+
+923
+02:36:32,819 --> 02:36:47,884
+x kare artı 2x, f'
+
+924
+02:36:40,852 --> 02:36:42,531
+sağdan bir ke.
+
+925
+02:36:44,132 --> 02:36:45,612
+1 artı 1 bölü x,
+
+926
+02:36:46,772 --> 02:36:47,432
+üzer x.
+
+927
+02:36:53,652 --> 02:36:54,832
+Yani bir üzeri sonumuzu değil mi?
+
+928
+02:37:10,579 --> 02:37:12,579
+hangisini çözmüştük?
+
+929
+02:37:14,180 --> 02:37:17,180
+beliratı x üzeri bölü x'in limitinin en uzunluğu söylemiştik değil mi?
+
+930
+02:37:18,979 --> 02:37:22,579
+Bu da x'ı kastadan gittik. beliratı bölü x üzeri x.
+
+931
+02:37:23,579 --> 02:37:24,579
+Bunu deneyelim.
+
+932
+02:37:28,244 --> 02:37:28,963
+yukarı işte.
+
+933
+02:37:32,404 --> 02:38:54,851
+x kare artı 2x, f'
+
+934
+02:38:51,603 --> 02:38:53,420
+ve süreklik, türev uygulamaları, belirsiz ve belirli integral.
+
+935
+02:39:06,047 --> 02:39:26,540
+x kare artı 2x, f'
+
+936
+02:39:16,244 --> 02:39:28,724
+Tamam, bakalım, bakalım. Şuraya gösterdim. Niye onu öyle yaptık? Tabii x kare bölü x, x yani. Niye x, x, yox yaptık?
+
+937
+02:39:34,804 --> 02:39:36,804
+Şurayı duyaltı size arkadaşlar.
+
+938
+02:40:05,043 --> 02:40:07,443
+Kare artı 3x, e üzeri sıfır değil mi ya sonuçta?
+
+939
+02:40:10,164 --> 02:40:12,164
+1. Deminden 1 konuştuk.
+
+940
+02:40:17,459 --> 02:40:23,051
+4x, f'
+
+941
+02:40:33,876 --> 02:40:36,811
+x kare artı 2x, f'
+
+942
+02:40:40,595 --> 02:40:44,315
+O da x son sekte. x son sekte.
+
+943
+02:40:45,695 --> 02:40:48,175
+O da x sıfırka sağdan iten kelimek.
+
+944
+02:40:51,540 --> 02:40:54,900
+Yani şu son süretimde şöyle yapabilirsiniz.
+
+945
+02:40:55,200 --> 02:41:03,260
+Limit, h son sayıda kendini mesela, 1 artı h üzeri, 1 bölü h.
+
+946
+02:41:07,379 --> 02:41:10,579
+Böyle yaparız. Daha sonra 3x, tamam mı?
+
+947
+02:41:10,579 --> 02:41:11,779
+Devamın size var.
+
+948
+02:41:15,347 --> 02:41:28,427
+x kare artı 2x, f'
+
+949
+02:41:37,955 --> 02:41:38,188
+x kare artı 3x, f'
+
+950
+02:41:37,299 --> 02:41:38,188
+As-salam.
+
+951
+02:42:09,012 --> 02:42:10,012
+Bu ne?
+
+952
+02:42:14,967 --> 02:42:15,724
+x kare artı 3x, f'
+
+953
+02:42:22,100 --> 02:42:22,420
+İşte.
+
+954
+02:42:27,860 --> 02:42:31,860
+TÜREF
+
+955
+02:42:31,860 --> 02:42:35,860
+Anlamda başlayarak ters kavurup fonksiyonlar
+
+956
+02:42:35,860 --> 02:42:39,860
+Tersini ve TÜREF'lerini imbal ettik.
+
+957
+02:42:39,860 --> 02:42:41,860
+Kalkitleri bu.
+
+958
+02:42:57,459 --> 02:43:02,459
+Bunlara ait, öde çıkacak, bundan nasıl bir negatifler de çıkacak.
+
+959
+02:43:05,459 --> 02:43:07,459
+Test var, ütlendirelim, türev, zene baktık.
+
+960
+02:43:12,340 --> 02:43:13,100
+x kare artı 2x, f'
+
+961
+02:43:19,924 --> 02:43:23,204
+Elisiz şekiller kuvvetlerle
+
+962
+02:43:24,404 --> 02:43:29,524
+1'leri sonsuz, 0'leri sıfır, sonsuz bir sıfır falan var.
+
+963
+02:43:30,484 --> 02:43:33,484
+Bunların her birinin stabil olarak çökebilen birini
+
+964
+02:43:33,924 --> 02:43:35,924
+bir doktorun uzanabiliriz.
+
+965
+02:43:35,924 --> 02:43:37,924
+Diyeni gösterdik böylece.
+
+966
+02:43:38,844 --> 02:43:40,044
+Sonra önüne bir dahil.
+
+967
+02:43:41,764 --> 02:43:44,764
+Yani bunu artık sözüyorsunuz yani şunu şöyle yalak.
+
+968
+02:43:45,604 --> 02:43:46,444
+Limit.
+
+969
+02:43:49,747 --> 02:43:59,979
+x kare artı 2x, f'
+
+970
+02:44:08,020 --> 02:44:10,420
+1x127
+
+971
+02:44:15,956 --> 02:44:17,155
+var mısınız arkadaşlar?
+
+972
+02:44:23,603 --> 02:44:24,103
+gördük.
+
+973
+02:44:27,763 --> 02:44:55,947
+x kare artı 2x, f'
+
+974
+02:44:36,755 --> 02:44:39,755
+internetten kaynak bulabilirsiniz.
+
+975
+02:44:42,755 --> 02:44:48,755
+Önemli an soru gördüğünüz zaman bu soru şu konu geldiğini ve bu da kurallar bunlardı.
+
+976
+02:44:48,755 --> 02:44:53,755
+Hemen uygulaması olarak düşünüp yerine getirmek.
+
+977
+02:44:53,755 --> 02:44:55,755
+Ama zor, çok da zor değil.
+
+978
+02:45:01,056 --> 02:45:04,011
+x kare artı 2x, f'
+
+979
+02:45:00,371 --> 02:45:03,611
+Peki, sorunuz var mı? Yoksa arkadaşlar, burada dersi.
+
+980
+02:45:07,283 --> 02:45:10,963
+Yani öyle gözüküyor değil mi? Yani yukarıda şaşırtın artık aynı oldu.
+
+981
+02:45:15,379 --> 02:45:35,819
+x kare artı 2x, f'
+
+982
+02:45:27,636 --> 02:45:32,636
+Tabi bu şu barse kare artı x0 değil de nereye mesela?
+
+983
+02:45:33,636 --> 02:45:35,636
+Biz sonsuza giderken olsaydı...
+
+984
+02:45:44,992 --> 02:45:48,992
+x kare artı 2x, f'
+
+985
+02:45:42,420 --> 02:45:55,420
+Yani çocukta konular çok günü güne denk gidiyor haftalık konular. Ben böyle bir uygulama yapayım diyorum başta olarak. Hastalık uygulama şeylerde var.
+
+986
+02:45:56,420 --> 02:46:04,420
+Şu sanat tarihi de belli olmadı aslında. Biraz ona göre de kendimizi ayarladık. Sanat tarihi de belli olsun.
+
+987
+02:46:04,420 --> 02:46:08,420
+Bu tarafa da bir uygulama çözeceğim. Yine bu örneklerin yanında.
+
+988
+02:46:10,227 --> 02:46:15,227
+pekiştina karşısından de sınavada hazırlık olursunuz.
+
+989
+02:46:16,227 --> 02:46:18,227
+Öyle bir, tamam mı?
+
+990
+02:46:18,227 --> 02:46:21,131
+Peki, kendinize iyi bakın arkadaşlar.
+
+991
+02:46:30,515 --> 02:46:30,876
+işlemi.
+
+992
+02:47:28,852 --> 02:47:30,772
+Bir tane sağlı ve etmenin o şey.
+
+993
+02:47:33,672 --> 02:47:34,452
+Sen siz mi?
+
+994
+02:47:34,492 --> 02:47:35,632
+Diğerleri de var mı onun için?
+
+995
+02:47:35,712 --> 02:47:36,192
+Ona bakarım.
+
+996
+02:47:37,972 --> 02:47:39,072
+Sen mi atlıyorsun?
+
+997
+02:47:39,652 --> 02:47:40,532
+O da sağlı var mı?
+
+998
+02:47:41,872 --> 02:47:42,432
+Ona bakarım.
+
+999
+02:47:43,731 --> 02:47:43,972
+Peki.
+
+1000
+02:47:46,012 --> 02:47:47,592
+Yarın sabah görüşürüz yaklaşıyoruz.

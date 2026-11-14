@@ -1,0 +1,3139 @@
+1
+00:01:05,171 --> 00:01:05,932
+Günaydın arkadaşlar.
+
+2
+00:01:18,451 --> 00:01:19,591
+dedik arkadaşlarımız.
+
+3
+00:01:40,084 --> 00:01:42,564
+Sayımız artıyor.
+
+4
+00:01:42,924 --> 00:01:44,444
+Daha doğrusu arkadaşlarımız.
+
+5
+00:01:47,543 --> 00:01:50,644
+Dün türe kuranlarını öğrendik.
+
+6
+00:01:58,388 --> 00:02:04,388
+özellikle trigonometrik fonksiyonların türevleri konusunda öğrendik.
+
+7
+00:02:04,388 --> 00:02:13,388
+ve türevde önemli bir konu olan zincir kuralı, önemli bir kural olan zincir kuralı öğrendik.
+
+8
+00:02:21,364 --> 00:02:33,864
+üst kuralı gibi, değil mi? Onu da, yani kuvvet fonksiyonunun içinde, zil kuralı verilebileceğini gösterdik, söyledik.
+
+9
+00:02:35,343 --> 00:02:41,924
+Bugün devam edilsin. Bugün şu konumuz kapalı fonksiyonlarda, türev konuna başlayacağız.
+
+10
+00:02:43,924 --> 00:02:44,903
+Tabii şöyle söyleyelim.
+
+11
+00:02:46,771 --> 00:02:55,651
+bir grafik verildiğinde düzenleşti. Her grafik tek bir fonksiyonun grafiği şeklinde olmayabilir.
+
+12
+00:02:55,651 --> 00:03:04,771
+Biden fazla fonksiyonun grafiği ya da eğilisi olarak ancak onu ifade edebiliriz.
+
+13
+00:03:06,771 --> 00:03:13,252
+Ve dolayısıyla verilen bu şekildeki bir eğilinin herhangi bir noktasında ki
+
+14
+00:03:13,972 --> 00:03:35,972
+örneğin, TET'nin denklemini bulmak için, mutlaka o hangi nokta hangi eğri üzerindeyse, daha doğrusu eğrinin hangi kolu üzerindeyse, o eğriye ait fonksiyonun neyini, türevini bulup oradan, son ortadaki.
+
+15
+00:03:38,675 --> 00:04:02,455
+i'i hesaplayıp ve dolayısıyla t doğrasını kullanacağız. Dolayısıyla bir eğri, 3 farklı fonksiyonun örneği. Grafiği ise değil mi? Bazen öyle olabilir. Bazen 2 tane fonksiyonun grafiği olabilir. Örneğin y kare eştir, kök x, y kare eştir x değil mi? Eğrisi. y kare eştir x artı kare kök x değil mi? Şeklinde 2.
+
+16
+00:04:03,187 --> 00:04:29,747
+fonksiyonun, bir tanesi artı kare kür, eksi kare kür, x olmak üzere iki fonksiyonun birleşimiyle oluşmuş bir eğridir. Dolayısıyla onun üst yarı düzen değeri, alt yarı düzenle kenar bir noktasındaki t-itini çizebilmemiz için, bulabilmemiz için ne yapalım? Mutlaka o eğrinin ait olduğu fonksiyonu.
+
+17
+00:04:30,420 --> 00:04:33,400
+türevini ve dolasıyla orantaki değerli bulmamız gerekecek.
+
+18
+00:04:34,020 --> 00:04:34,280
+Peki.
+
+19
+00:04:42,324 --> 00:04:44,344
+Yana için başımakta fayda var.
+
+20
+00:04:45,923 --> 00:04:49,163
+Şöyle kapalı fonksiyonlarla türeleyelim.
+
+21
+00:04:53,492 --> 00:04:57,012
+çebeye de yaklaşayım, daha düştü yazılarsın çıksın diye.
+
+22
+00:05:28,052 --> 00:05:28,552
+çeşf.
+
+23
+00:05:42,740 --> 00:05:54,420
+Şimdi mesela x küp artı 2 küp, eksi 9x'i eşit sıfır.
+
+24
+00:05:58,019 --> 00:05:59,980
+Alt altta yazalım isterseniz.
+
+25
+00:06:01,100 --> 00:06:02,759
+y kare x, x eşit sıfır.
+
+26
+00:06:04,879 --> 00:06:06,379
+x kare artı y kare.
+
+27
+00:06:10,004 --> 00:06:10,364
+şükürler.
+
+28
+00:06:19,636 --> 00:06:23,236
+masline bir kapalı bir çember deklemek. x 25.
+
+29
+00:06:25,536 --> 00:06:27,356
+x 0'ya da x 25.
+
+30
+00:06:35,156 --> 00:06:36,176
+yalan denklemden her birisi.
+
+31
+00:06:49,908 --> 00:06:52,067
+Söylediğiniz gibi y'nin x'e
+
+32
+00:06:57,076 --> 00:07:02,076
+x değişkenle, tabi yedi değişken aslında. Böyle kavrayı da biz.
+
+33
+00:07:07,379 --> 00:07:08,879
+Teşekkürler.
+
+34
+00:07:18,483 --> 00:07:19,163
+yazılımız.
+
+35
+00:07:23,732 --> 00:07:26,132
+Daha doğrusu bu da denkenden hiçbirisi demek lazım.
+
+36
+00:07:26,932 --> 00:07:28,532
+Her birisi yerine hiçbirisi diyelim.
+
+37
+00:07:29,432 --> 00:07:29,932
+Demek.
+
+38
+00:07:37,076 --> 00:07:38,076
+Düzelttik onu.
+
+39
+00:07:40,475 --> 00:07:51,576
+Dolayısıyla aslında buraya kadar, sadece x değişkenine bağlı y fonksiyonundan açık şekilde yazılmış ifadelerini, bütün özelliklerini ve kurallarını işledik, görmüş olduk.
+
+40
+00:07:52,375 --> 00:07:57,076
+Buradayız işte gördüğünüz gibi, önemli olan hangisinin y'yi çözülecen de çözün işte.
+
+41
+00:07:57,576 --> 00:08:01,076
+Tek şekilde y'yi de x'e bağlı bir fonksiyon elde edemezsiz, rahatlıyorum.
+
+42
+00:08:01,876 --> 00:08:03,876
+Daha kolay hane olsun diye, gözüksün diye.
+
+43
+00:08:04,240 --> 00:08:16,720
+y kare eksi x eşit sıfırdan, y kare eşittir x, ya da y eşittir artı eksi kare kür x.
+
+44
+00:08:19,060 --> 00:08:25,200
+Bakın bu işte, iki türden fonksiyonu dolayısıyla, bir tanesi artı kare kür x, bir tanesi eksi kare kür x.
+
+45
+00:08:25,319 --> 00:08:28,620
+Tabii eline kadar bir işaret şeklinde fark etseler de bunlar nedir?
+
+46
+00:08:29,108 --> 00:08:33,168
+x-x senegor etmemiş simetrisi olan iki farklı eğrim.
+
+47
+00:08:33,548 --> 00:08:34,207
+Böyle düşünemiyoruz.
+
+48
+00:08:37,488 --> 00:08:45,548
+Dolayısıyla bu şekilde yani sadece x'e bağlı olarak tek şekilde yazılamayan fonksiyonlar,
+
+49
+00:08:45,707 --> 00:08:48,567
+daha doğrusu biz onlara kapalı fonksiyon diyoruz.
+
+50
+00:08:48,567 --> 00:08:50,408
+Fonksiyonun kapalı şekli diyoruz.
+
+51
+00:08:51,187 --> 00:08:52,967
+Onu da kısa şöyle ifade edeceğiz.
+
+52
+00:08:53,128 --> 00:08:55,628
+x-y şöyle bir yüklüyor.
+
+53
+00:08:57,172 --> 00:09:21,035
+x kare artı 2x, f'
+
+54
+00:09:07,187 --> 00:09:11,187
+Denk temli ya da evrinin kapalı ifadesi, kapalı fonksiyonu değil.
+
+55
+00:09:11,187 --> 00:09:13,587
+Bakın, biz buna direkt olarak kapalı fonksiyon alıyoruz.
+
+56
+00:09:15,587 --> 00:09:18,587
+İfadesi, bir kapalı, öyle değil mi?
+
+57
+00:09:18,587 --> 00:09:19,788
+Bir kapalı...
+
+58
+00:09:37,587 --> 00:09:38,788
+Fokusiyonlar, merti lülü.
+
+59
+00:09:52,179 --> 00:09:55,399
+o kadar yok. Hani orada grafis isim var. Bir sonraki sayfaya.
+
+60
+00:09:55,399 --> 00:09:57,139
+Bunu söyleyeceğim.
+
+61
+00:10:04,019 --> 00:10:13,019
+Dolayısıyla biraz önce söyledim ki, burada eğer belirlen bu şekilde bir eğitimin üzerinde, herhalde noktasındaki, şöyle şey edelim.
+
+62
+00:10:17,268 --> 00:10:19,148
+böyle bir yerini
+
+63
+00:10:19,148 --> 00:10:23,228
+herhangi bir noktasındaki
+
+64
+00:10:34,292 --> 00:10:35,292
+Evinin.
+
+65
+00:10:39,283 --> 00:10:40,084
+bulmak için
+
+66
+00:10:45,524 --> 00:10:46,243
+elinin
+
+67
+00:10:51,251 --> 00:10:52,091
+Tabii o noktada
+
+68
+00:10:52,091 --> 00:10:57,271
+ayıt oldu. Ya da e-di verin değil mi?
+
+69
+00:11:04,340 --> 00:11:05,340
+fonksiyonlar, planlar.
+
+70
+00:11:14,323 --> 00:11:15,203
+Diyelim ki bakalım.
+
+71
+00:11:26,259 --> 00:11:27,500
+şöne belirlikten fayda var.
+
+72
+00:11:48,083 --> 00:11:48,923
+bu kadar iyi değil ama.
+
+73
+00:11:53,940 --> 00:12:01,940
+Şimdi mesela x kare artı 2x, f'nin ifademizle verdiğimiz e dil gözünde ararsanız, bu elin aslında şöyle bir...
+
+74
+00:12:01,940 --> 00:12:03,940
+Hepsini aynı hissediysek...
+
+75
+00:12:12,019 --> 00:12:15,980
+Sonra, işte mavi ile gösterelim. Bu da olduğu gibi.
+
+76
+00:12:17,539 --> 00:12:18,220
+Buradan itibaren.
+
+77
+00:12:25,587 --> 00:12:29,004
+x kare artı 2x, f'nin bir de diğer konu var.
+
+78
+00:12:35,892 --> 00:12:40,512
+Şunun bir basından, şeye, biraz yatay, şey gidiyoruz, teyit gibi gidiyoruz.
+
+79
+00:12:50,004 --> 00:12:50,384
+Gide.
+
+80
+00:12:55,251 --> 00:12:56,971
+Biz bunu ifadeyi, bunu biz
+
+81
+00:13:01,587 --> 00:13:02,788
+x krept.
+
+82
+00:13:07,028 --> 00:13:08,067
+x'iye düzleminde
+
+83
+00:13:12,148 --> 00:13:23,968
+artı 2x, 9x, f'se 0. Bu şekilde bir aslında, denk temin verilen değil mi? Bir eğriye nesidir? Grafiğidir, öyle diyebiliriz.
+
+84
+00:13:26,788 --> 00:13:37,187
+Dolayısıyla, bu eğriye, x'e bağlı herhangi bir fonksiyonun grafiği olmadığını, tek bir fonksiyonla grafiği olmadığını görebiliriz.
+
+85
+00:13:37,567 --> 00:13:44,768
+ancak eğri çeşitli yay parçalarının bölünebilir. Bu renklerle gösterdiğimiz gibi.
+
+86
+00:13:45,488 --> 00:13:49,168
+Dolayısıyla bu parça x'e bağlı fonksiyonların grafikleridir.
+
+87
+00:13:49,648 --> 00:13:58,768
+Yani buna işte foninom alıveren bir belirgin eğri. Daha önce de eski alt taraftan bulunan böyle bir ilginç bir eğri.
+
+88
+00:13:59,968 --> 00:14:04,048
+Öte yandan bir de daha basit olanları alalım.
+
+89
+00:14:34,676 --> 00:14:44,156
+Yani bakma, burada tabii ki elinin kolunun değil mi? O noktada noktanın ait olduğu noktada elinin şeyine bakmıyoruz. Yayın dahil olduğu.
+
+90
+00:14:47,700 --> 00:14:48,220
+size.
+
+91
+00:14:49,019 --> 00:14:49,340
+Ta da.
+
+92
+00:15:01,844 --> 00:15:02,984
+yöne, eeeh.
+
+93
+00:15:24,436 --> 00:15:29,056
+çok da yukarıdan değil tabi ki.
+
+94
+00:15:36,467 --> 00:15:45,167
+Sime diski düşürebilirim. Bunlar mesela bu evdeler. Bu y eşittir. Eksi kare kök x'i erisidir.
+
+95
+00:15:45,508 --> 00:15:51,687
+Onu aynı zamanda göstereyim. Bu da y eşittir. Artı kare kök x erisidir. Tamam.
+
+96
+00:15:58,323 --> 00:16:13,563
+Dolayısıyla mesela bunun 1 için 1 olan noktasında ya da 1 için x1'e denkli noktasındaki bir TET'in eğimi hesaplamak isteyebiliriz bu eğilir için.
+
+97
+00:16:17,779 --> 00:16:21,100
+Şöyle eğelim. Şurası 1-1 olsun.
+
+98
+00:16:23,360 --> 00:16:25,700
+Bu 7 üzerinde. Şu nottaki 7. Neyini?
+
+99
+00:16:25,700 --> 00:16:26,920
+Hala akıllı zaman.
+
+100
+00:16:32,467 --> 00:16:34,827
+1,1 noktasındaki
+
+101
+00:16:40,980 --> 00:16:44,720
+türev'in emini bulalım. Bunun için tabi elbette neydi? Türev'in emini bulalım.
+
+102
+00:16:46,559 --> 00:16:51,439
+Normalde bu tabi tamamına baktığın zaman y kare eşittir x
+
+103
+00:16:53,179 --> 00:16:58,220
+ya da y eksi x, y kare eksi x yeri için grafiği değil mi olarak göz önüne bakıyoruz.
+
+104
+00:16:59,480 --> 00:17:04,679
+Dolayısıyla bu ifadenin örnek diyelim isterseniz
+
+105
+00:17:06,220 --> 00:17:07,839
+y kare eşittir x
+
+106
+00:17:07,951 --> 00:17:35,211
+elisinin, tabi türevini kullanabilmeniz için önce fonksiyonlar dedim, ayrı ayrı ortaya koymamız lazım. Artı, eksi, kare kök x. Dolayısıyla y eşittir, kare kök x iken, buradan y üstü türevinin x artı 1 bölü, 2 kök x değil mi? ve y eşittir, eksi kare kök x iken de,
+
+107
+00:17:36,307 --> 00:17:40,988
+y'ü eşittir, eksi 1 bölü, 2 kare kök x.
+
+108
+00:17:41,988 --> 00:17:43,188
+Dolayısıyla,
+
+109
+00:17:43,668 --> 00:17:46,107
+1-1 noktası,
+
+110
+00:17:46,307 --> 00:17:49,548
+elinin bu yayına ait değil mi, alttaki yayına ait,
+
+111
+00:17:50,628 --> 00:17:55,628
+grafiğde de o yayın denklemi de işte, ya da fonksiyon da, o yayın temsil eden fonksiyon da,
+
+112
+00:17:55,628 --> 00:17:58,028
+y'e eşittir, eksi kare kök x fonksiyondur.
+
+113
+00:17:58,467 --> 00:18:00,028
+Dolayısıyla,
+
+114
+00:18:00,127 --> 00:18:14,447
+1-1 noktasında, yani x1 için y üstü ifadesi, buradan m eşittir, y üstünün x eşittir, artı 1'deki değer, değil mi?
+
+115
+00:18:14,967 --> 00:18:26,748
+x1'de tanımlayız. Dolayısıyla, x1 bölü 2. Ne yapmış olduk? 1-1 noktasındaki eğimi bulmuş olduk. Dolayısıyla bu noktadan geçen artık,
+
+116
+00:18:27,124 --> 00:18:28,844
+t doğrusunu yazabiliriz.
+
+117
+00:18:29,744 --> 00:18:34,384
+O halde, onu da hemen şuraya yazmaya çalışayım.
+
+118
+00:18:35,403 --> 00:18:36,483
+y eksi sıfır,
+
+119
+00:18:37,264 --> 00:18:38,144
+ifademiz oluyor.
+
+120
+00:18:40,423 --> 00:18:42,804
+m çarpı x eksi x sıfır.
+
+121
+00:18:45,624 --> 00:18:48,224
+y eksi, eksi bir değeri verici için,
+
+122
+00:18:49,164 --> 00:18:50,804
+eksi bir artı bir olur değil mi?
+
+123
+00:18:50,963 --> 00:18:51,504
+Eşittir.
+
+124
+00:18:51,983 --> 00:18:53,284
+y'in de eksi bir bölü iki buldu.
+
+125
+00:18:53,779 --> 00:18:55,240
+X eksi 1.
+
+126
+00:18:56,139 --> 00:18:57,960
+İşte bunu açık düzenlersek işte.
+
+127
+00:19:00,380 --> 00:19:01,599
+Eksi 1 bölü 2x,
+
+128
+00:19:02,440 --> 00:19:04,740
+E eşitir. Eksi 1 bölü 2x.
+
+129
+00:19:05,460 --> 00:19:06,799
+Buradan artı 1 bölü 2 gelecek.
+
+130
+00:19:07,500 --> 00:19:09,460
+Eksi 1 bölü 2 de o tarafa attığımız zaman değil mi?
+
+131
+00:19:09,559 --> 00:19:12,119
+Eksi 1 o tarafa attığımız zaman eksi 1 olur şu biri.
+
+132
+00:19:12,779 --> 00:19:14,019
+Dolayısıyla eksi 1 bölü 2 mi olur?
+
+133
+00:19:15,860 --> 00:19:18,000
+Eksi 1 artı 1 bölü 2,
+
+134
+00:19:18,779 --> 00:19:19,460
+eksi 1 bölü 2.
+
+135
+00:19:22,996 --> 00:19:29,956
+Demek ki bu noktadan geçen t doğrumuza artık, işte fonksiyonun aynen bu şekilde söylediğimiz, şöyle çizelim.
+
+136
+00:19:41,683 --> 00:19:42,784
+yani biraz da yetkot.
+
+137
+00:19:53,203 --> 00:19:54,223
+bir adı etkola.
+
+138
+00:19:55,603 --> 00:19:56,543
+Eri yürüt.
+
+139
+00:20:01,011 --> 00:20:02,391
+İşte bu doğrumuz var arkadaşlar.
+
+140
+00:20:06,259 --> 00:20:29,880
+Doğal silah verilen eğilimiz aslında y kare eşitir x kare denklemine verilen fonksiyon kapalı işte fonksiyon. Bunu ne yaptık? Eğiliyi temsil eden yayılarklarına ait fonksiyonlar belirledik. Her bir türevlerine elde ettik. Hangisi isteniyorsa. Şimdi biz tabii yukarıdaki eğer yani 1,1 noktasındaki tehlis deniyorsa o zaman yukarıdaki deklimi kullanmamız lazım. Yani şuradaki eğer.
+
+141
+00:20:30,867 --> 00:20:34,407
+uşağıda x'imi birebir diyelim burası da birebir olsun.
+
+142
+00:20:38,932 --> 00:20:47,251
+Bu noktada eğimi bulmamız için, ya da t-toz bulmamız için, neyi kullanacağız? y'nin kare kök x'i denklemini kullanacağız.
+
+143
+00:20:47,251 --> 00:20:49,972
+Yani buna 1 diyelim, buna da 2 diyelim.
+
+144
+00:20:49,972 --> 00:20:58,372
+Aynı şekilde buradaki eğimi olarak da buradaki t-toz ne yapabiliyoruz, istediriz.
+
+145
+00:21:13,011 --> 00:21:18,692
+Bu şekilde ne yapabiliriz arkadaşlar? Örnekleri çoğaltabiliriz. Tabi burada hedef aslında ne olmalı?
+
+146
+00:21:18,692 --> 00:21:31,652
+Buradaki o türevleri vururken amacımız şu olmalı. Biz bu şekilde funksiyonun bu yayları temsil eden değil mi?
+
+147
+00:21:32,660 --> 00:21:46,940
+fonksiyonları ayrı ayrı yazıp, ayrı ayrı türev almak yerine, tek bir türev alıp ve o türevi bulduktan sonra, biz eğil üzerinde hangi noktada T doğrusu çizmek istedik, sevmeyi de eğil bulmak istedik, isteyelim.
+
+148
+00:21:47,380 --> 00:21:53,340
+O türevi, tek bir türevi kullanarak bu işlemi yapmak istiyoruz. Bunun için de, bakın, kısaca gösteriyorum.
+
+149
+00:21:54,920 --> 00:21:56,820
+İşte bunu birazdan kapalı türeyeceğiz.
+
+150
+00:21:58,675 --> 00:22:04,076
+y kare eşittir x ifadesini. E iki tarafın x'e göre türevini alacağız.
+
+151
+00:22:07,155 --> 00:22:12,536
+d bölü de x, y kare, eşittir d bölü de x, x.
+
+152
+00:22:15,096 --> 00:22:22,415
+Şimdi sağ tarafın türevi belli. Yani x'in x'e göre türevi 1. Bu tarafın türevi, işte üst kuralını hatırlarsanız, neydi?
+
+153
+00:22:23,284 --> 00:22:31,963
+Yani u üzeri enin türevinin zinciri kuran hatırlasanız, n çarpı u üzeri enin eksi 1 çarpı onun türevi değil mi? İşte buradaki mantık aynı olacak arkadaşlar.
+
+154
+00:22:32,844 --> 00:22:38,524
+2y çarpı y'nin x'e göre türevi, onu y üstüyle gösterelim.
+
+155
+00:22:38,524 --> 00:22:47,403
+Bir de sen şöyle diyelim, d'ye bölü d'x diyelim, 3 kuralları direkt ifade edelim. Buranın türevi de 1. Bu tabi nerede?
+
+156
+00:22:51,188 --> 00:22:52,548
+Şöyle şeydi yazalım.
+
+157
+00:22:59,092 --> 00:23:00,852
+kuvvetin
+
+158
+00:23:00,852 --> 00:23:05,332
+ya da kuvvet için zil kural değil mi?
+
+159
+00:23:12,019 --> 00:23:13,059
+kuvvet fonksiyonu için.
+
+160
+00:23:26,708 --> 00:23:30,788
+Dolayısıyla buradan nedir? db dx'i çözersek
+
+161
+00:23:41,811 --> 00:23:43,011
+1 bölü 2'ye.
+
+162
+00:23:45,652 --> 00:23:47,771
+D bölü, D itifademiz, 1 bölü 2'ye.
+
+163
+00:23:48,511 --> 00:23:49,491
+Y'nin kendisi,
+
+164
+00:23:57,011 --> 00:24:24,011
+f' ifadesi. Burada y birleştir, kök x, y ikileştir, x kök x olduğu için, oradaki x'in, x'i artı 1 değeri için değil mi? Karşılık gelen y değer hangisi? y değerini burada koyarak eğimi elde edebiliyoruz. Dolayısıyla, burada bulduğumuz anlamda, m1 diyelim ona mesela, eşittir, d y bölü x, nerede?
+
+165
+00:24:24,819 --> 00:24:36,559
+x eşittir 1 için y eksi 1 değil mi oluyordu? Bu noktada dolayısıyla burada x yok. Direkt y değeri. 2x eksi 1'de. Bakın, x 1 bölü 2.
+
+166
+00:24:39,259 --> 00:24:50,159
+Eğer şu noktada m2 diyelim eşittir. dy bölü de x. Bu da 1,1 noktasındaki i.
+
+167
+00:24:50,804 --> 00:24:53,983
+1 bölü 2x1'den eşittir. 1 bölü 2.
+
+168
+00:24:55,684 --> 00:24:56,664
+Yani bir sayfa
+
+169
+00:24:56,664 --> 00:24:58,923
+öne
+
+170
+00:24:58,923 --> 00:25:00,124
+geçersek
+
+171
+00:25:00,124 --> 00:25:01,784
+buradan aslında
+
+172
+00:25:01,784 --> 00:25:03,284
+şu
+
+173
+00:25:03,284 --> 00:25:07,724
+evet dolusun eğilimi burada ne yapmış olduk?
+
+174
+00:25:07,784 --> 00:25:09,064
+Aslında çizmiş olduk arkadaşlar.
+
+175
+00:25:10,903 --> 00:25:12,463
+Evet, şöyle yapalım.
+
+176
+00:25:21,395 --> 00:25:27,496
+Yani bu da işte oradaki t doğrusunun çizdiğini ne yaptık, bulmak istediğiniz zaman
+
+177
+00:25:27,496 --> 00:25:32,295
+A'dan doğru denklerini buluruz. Yani bu M1, bu da M2'ye ait olan.
+
+178
+00:25:32,295 --> 00:25:35,855
+Yani M2'ye ait olan t doğrusunun denklerini yazalım.
+
+179
+00:25:36,875 --> 00:25:44,695
+y-1 eşittir. 1 bölü 2x, eksi 1. Böyle olacaktır.
+
+180
+00:25:48,064 --> 00:25:55,564
+Bu da x'i bölü 2, artı 1 eşittir. 1 bölü 2x, artı 1 bölü 2.
+
+181
+00:25:57,604 --> 00:26:01,884
+Bu da, grafik üzerinde yazılacak ortakine, y ifademiz şurası.
+
+182
+00:26:05,064 --> 00:26:08,304
+Daha doğrusu, şu t doğrusunu, denklendirmeyeyim ben.
+
+183
+00:26:09,524 --> 00:26:10,923
+Şurası, şu t doğrusu.
+
+184
+00:26:13,624 --> 00:26:14,384
+Tekleni.
+
+185
+00:26:15,059 --> 00:26:18,840
+y eşit 1 bölü 2x artı 1 bölü 2.
+
+186
+00:26:19,840 --> 00:26:20,519
+Doğrusu.
+
+187
+00:26:24,884 --> 00:26:27,564
+0'da bu 1 bölü 2'de geçiyor.
+
+188
+00:26:29,004 --> 00:26:30,264
+İşte 1 bölü 2'de.
+
+189
+00:26:30,844 --> 00:26:33,124
+Diğerimiz ise 0'da x bölü 2'de geçiyor.
+
+190
+00:26:33,264 --> 00:26:34,824
+Zaten burada grafik terimde anlaşılıyor.
+
+191
+00:26:35,744 --> 00:26:36,144
+Bunun gibi.
+
+192
+00:26:40,660 --> 00:26:51,280
+Tamam mı arkadaşlar? Şimdi bu örnekleri ne yapabiliriz? Artırabiliriz. Dolayısıyla verilen aynı çalışmayı işte 3. fonksiyonumuz için de yani.
+
+193
+00:26:52,340 --> 00:26:58,280
+Başta yazılmış x kare, y kare, x 20, 0 noktasının herhangi bir noktasındaki değil mi?
+
+194
+00:26:58,280 --> 00:27:07,240
+t'nin eğimini hesaplayabiliriz. Bunun için de işte buradaki ne tanımını? Kapalı türev tanımını kullanacağız.
+
+195
+00:27:11,763 --> 00:27:30,043
+x kare artı y kare işte 25 değil mi? Eğitimle yapıyorsanız ne yapacağız? T, T, T, T, T. İki tarafın x'e göre türettiğimiz zaman burası 2x artı, burayı artıp biliyoruz 2y, y üstü, zincir kuralından değil mi? Kuvvetin zincir kuralından bu taraf sıfır.
+
+196
+00:27:31,144 --> 00:27:37,144
+Ve buradan işte y üstü çözecek olursak, ikiler gider tabii, x'i x bölüye.
+
+197
+00:27:39,635 --> 00:27:43,355
+Dolayısıyla bu elinin, bu biçenme denklemdir değil mi açıkça?
+
+198
+00:27:44,855 --> 00:27:45,476
+Kolayca.
+
+199
+00:27:46,756 --> 00:27:48,115
+Şöyle yazabilirsiniz arkadaşlar.
+
+200
+00:28:07,124 --> 00:28:30,903
+olsun. Tamam. Şuna bir şeyimiz yok. Bunun herhangi bir noktasındaki TET'in eğimini, diğer TET'ini hesaplamamız mümkün. İstediğimiz yerde hesaplamıyoruz. Mesela 3,4 noktasında, burada öyle verdiği için 3,4 noktası şurası. Şu noktadaki TET'in eğimini bulmak isteyebiliriz. Mesela atıyorum.
+
+201
+00:28:34,516 --> 00:28:47,716
+Değil mi? Nedir bu mesele değil mi? Onu bakseydim. İşte buradan direkt, şöyle yazalım, burası 3,4, 3,4 mi geliyor? 3,4, evet.
+
+202
+00:28:50,415 --> 00:29:00,556
+Dolayısıyla, eğimimiz bu noktadaki, şu t-tozunu tabii belirlemek için, x'lerine 3, y'lerine x4 yazdığımız zaman değil mi?
+
+203
+00:29:00,980 --> 00:29:05,220
+x eksi 3 bölü, eksi 4 eşittir, 3 bölü 4.
+
+204
+00:29:06,400 --> 00:29:07,700
+Y'in pozitif gördüğünüz gibi.
+
+205
+00:29:08,300 --> 00:29:11,380
+Dolayısıyla aslında bu doğrumuz şöyle.
+
+206
+00:29:12,580 --> 00:29:20,019
+y eşittir, pardon, y, evet, öylediği birisinde, eksi artı 4 olacak, bu da diğer tarafı da x4 olacak.
+
+207
+00:29:20,779 --> 00:29:26,180
+y eşittir, 3 bölü 4, x eksi 3.
+
+208
+00:29:27,604 --> 00:29:28,824
+artı
+
+209
+00:29:28,824 --> 00:29:31,723
+eksi 4 pardon.
+
+210
+00:29:35,955 --> 00:29:57,875
+x kare artı 3x, f'
+
+211
+00:30:03,508 --> 00:30:18,488
+Belki böyle daha kolay ifade edelim diye düşündüm ama 3 bölü 4 parçanın hepsini alamıyorum. 4 kare 4, 16, 25 değil mi? Eksi 25 bölü 4 olur. 3 bölü 4 x, eksi 25 bölü 4.
+
+212
+00:30:22,996 --> 00:30:31,155
+Şu elimiz bu. Yani şu türev doğrusu. Bu bizim x kare artı 2x25 çemberi.
+
+213
+00:30:34,612 --> 00:30:43,612
+Tamam mı? Arkadaşlar. Böylece bakın, tabii kapalı türevi kullanmasaydık, buradan yine y'i çözüp iki tane farklı denklem bulacaktık.
+
+214
+00:30:43,612 --> 00:30:53,612
+Ve üst yarı kısımda, çemberin üst yarı kısımda olan noktalar için onu kullanacaktık ve alttakiler için de eksilisini kullanacaktık.
+
+215
+00:30:53,612 --> 00:31:00,612
+Dolayısıyla iki farklı denklem kullanmak zorunda kalacaktık. Ama burada gördüğünüz gibi ona gerek kalmadı.
+
+216
+00:31:00,980 --> 00:31:02,980
+tek bir şeyle halde biz oluyoruz.
+
+217
+00:31:13,236 --> 00:31:17,096
+Evet.
+
+218
+00:31:18,456 --> 00:31:21,236
+Çünkü, normalde denklemiz,
+
+219
+00:31:21,976 --> 00:31:23,716
+y x'i, y sıfır diyorduk ya,
+
+220
+00:31:24,496 --> 00:31:27,196
+y artı 4 olur, 4'ü diye etrafa olacak, x 4 olur.
+
+221
+00:31:29,435 --> 00:31:31,415
+Artık, ne yapacağız?
+
+222
+00:31:31,655 --> 00:31:35,435
+Zaman zaman, bir arada işlemlerini hızlandıracağız, ondan artık esbere biraz.
+
+223
+00:31:39,155 --> 00:31:40,155
+özellikle ses.
+
+224
+00:31:58,036 --> 00:32:05,496
+x tanımlanmış diğer bütün fonksiyonlar, türevden hesaplamak için, işte bizim bu örneklere de verdiğimiz şekilde yol izlenir.
+
+225
+00:32:06,656 --> 00:32:17,236
+y fonksiyonunun x'in türevi alınabilir bir kapalı fonksiyon olarak kabul edilir ve tanımlanmış denklemin her iki tarafına genel türev kuralları uygulanır, bildiğimiz anlamda.
+
+226
+00:32:18,516 --> 00:32:22,256
+Daha şimdi hani kapalı türev nasıl alınabilir dediğimiz zaman?
+
+227
+00:32:23,188 --> 00:32:29,428
+y fonksiyonunu verildiği zaman, o fonksiyonun x'e bağlı türevi alınabileceği bir fonksiyon olduğunu kabul ederek tabii,
+
+228
+00:32:30,568 --> 00:32:34,808
+denklemin her iki tarafının x değişkenine göre türevini alıyoruz.
+
+229
+00:32:35,188 --> 00:32:39,548
+Dolayısıyla d bölü dx terimi aslında çarpı olarak bulunduğu ifadeler,
+
+230
+00:32:39,648 --> 00:32:43,328
+denklemin bir tarafına toplanır ve denklem d bölü dx'e göre çözülür.
+
+231
+00:32:43,408 --> 00:32:46,588
+Yani bu da yaptığımızda işte işlemi ne yaptık, anlatmış olduk.
+
+232
+00:32:48,588 --> 00:32:50,588
+Yani fx'ye...
+
+233
+00:32:51,667 --> 00:33:02,107
+x'e x sıfır değil mi? İfadesi yazılır. Yani biz bazen attık, bazen atmadık, gidip bunu üzerinden aldık.
+
+234
+00:33:02,107 --> 00:33:11,527
+Şimdi tabii türev uygulamaları, 25 tabutu türev aldık değil mi? Sıfır. Buradan türev alınır, x'e göre. x'e göre türev alınır.
+
+235
+00:33:23,124 --> 00:33:26,403
+d bölüde x çözülür, değil mi? Böyle değil.
+
+236
+00:33:27,203 --> 00:33:29,024
+Denklem, d bölüde x için.
+
+237
+00:33:32,915 --> 00:33:35,695
+Bu da türev aldıktan sonra tabi d ve dex için çözüyor.
+
+238
+00:33:42,163 --> 00:33:49,203
+D bölü eksi buradan çözeliz. Ne için? Kapalı türev için.
+
+239
+00:33:57,236 --> 00:34:05,576
+kısaca kapalı türev ya da kapalı fonksiyonlar türev bulunması için izleyeceğimiz yol var arkadaşlar.
+
+240
+00:34:11,123 --> 00:34:12,043
+Sağıma geldi için.
+
+241
+00:34:13,783 --> 00:34:16,323
+Zaten ilk nokta üstte koydur ama o sükret altında disel.
+
+242
+00:34:21,172 --> 00:34:25,032
+Hemen bir örnek daha edelim buna. Kapalı türevi daha iyi anlamak için.
+
+243
+00:34:44,500 --> 00:34:46,060
+yukarı eşleşir x kare.
+
+244
+00:34:50,356 --> 00:34:51,356
+artı 5x'yem.
+
+245
+00:34:55,891 --> 00:34:58,391
+Burası sinistikçi ifadesi, handiriz aslında.
+
+246
+00:34:59,612 --> 00:35:02,931
+Çaşırmamak için, karıştırmamak için, handiriz kullanmakta fayda var.
+
+247
+00:35:04,931 --> 00:35:06,112
+Şöyle söyleyeceğiz.
+
+248
+00:35:08,351 --> 00:35:08,811
+x'e.
+
+249
+00:35:13,684 --> 00:35:17,043
+d-bire. x türev'i bulunuz.
+
+250
+00:35:25,748 --> 00:35:30,748
+İfadeyi fx値 sıfır çektiyle çözebiliriz. Direkt buradan da hak edilebilirsiniz.
+
+251
+00:35:32,908 --> 00:35:38,168
+Her iki türlü işimize yarar. Ama ben fx値 sıfır çektiyle yazmak daha mantıklı buluyorum.
+
+252
+00:35:38,948 --> 00:35:43,427
+Çünkü bazen sağ tarafta sabit kalıyor. Onun türevini alıyorsunuz. Onun sıfır olmasasın onu unutuyorsunuz.
+
+253
+00:35:44,188 --> 00:35:47,887
+O yüzden iki tarafın da türevini almak bakımından x'e göre.
+
+254
+00:35:51,860 --> 00:35:53,180
+Bu şekilde yazmakta fayda var.
+
+255
+00:35:54,300 --> 00:35:57,020
+Şimdi bunu ne yapıyoruz? Bu ifadenin x'e göre türetiyoruz.
+
+256
+00:35:58,720 --> 00:36:03,400
+Yani bir kere de şöyle yazalım. D bölüde x yazıyorum.
+
+257
+00:36:04,460 --> 00:36:07,360
+y kare eksi x kare eksi sinüs x'e.
+
+258
+00:36:11,027 --> 00:36:14,707
+Bu taraf zaten sıfır olduğu için sıfır. Bakın, burada unutacağın bir şey yok.
+
+259
+00:36:15,427 --> 00:36:18,707
+Terim terimi ne yapacağım? Her terimin x'e göre türevini alacağım.
+
+260
+00:36:19,427 --> 00:36:23,107
+Yani burası 2y, y üstü. Bunu artık biliyoruz.
+
+261
+00:36:23,747 --> 00:36:29,667
+Bu x'in, x karen x'e göre türevi. İşte eksi ile dolayı, eksi 2, x başındaki eksi ile dolayı.
+
+262
+00:36:30,228 --> 00:36:33,587
+Şimdi bu ifadenin x'e göre türevi. Şimdi nereye gideceğiz?
+
+263
+00:36:34,547 --> 00:36:37,907
+Zincir kuralına gideceğiz. Bunu şöyle yazacağız.
+
+264
+00:36:38,867 --> 00:36:44,847
+x'i, hani kök funksiyonlarında hatırlarsanız, kosinüs x'i diyeceğiz.
+
+265
+00:36:46,608 --> 00:36:52,847
+Önce bunu yazalım. Çarpı, sonra içinin türev, hani iç dış kuralı söylemiştik ya.
+
+266
+00:36:54,188 --> 00:37:00,688
+d bölü dx, x'i, eşit sıfır. Bunu direkt yazalım, ufak görelim.
+
+267
+00:37:04,307 --> 00:37:05,028
+Burası iç.
+
+268
+00:37:07,427 --> 00:37:09,288
+İç dış krallı hatırlarsanız, tamam.
+
+269
+00:37:10,408 --> 00:37:13,108
+Dışın türevi, kosinüs x'e, için türevi.
+
+270
+00:37:13,307 --> 00:37:17,088
+X'e göre için türevi. Şimdi daha burada, işin rizprede bu türevi yazacağız.
+
+271
+00:37:19,748 --> 00:37:21,288
+Bu tarafı aynı yazalım.
+
+272
+00:37:22,648 --> 00:37:25,148
+2y, y üstü, y üstü dediğim, d y bölü de x.
+
+273
+00:37:25,328 --> 00:37:26,288
+Yani onu artık anladık.
+
+274
+00:37:28,088 --> 00:37:30,408
+x, 2x, x'i, kosinüs x'e.
+
+275
+00:37:33,684 --> 00:37:39,503
+Şimdi gelelim buraya. Ne olacak? Çarpımın türev var. x'in türevi 1 çarpı y.
+
+276
+00:37:40,284 --> 00:37:50,364
+Paranında çarpı. 1 çarpı y. Artı x çarpı ikincinin türevi. Kime göre? x'e göre. Zaten aradığımız o. Yani y üstü diyebiliriz x.
+
+277
+00:37:51,444 --> 00:37:58,624
+Seçen üst kuralına bakın. Yani işte değişken olarak tek başına baktığı zaman olmadığımız direkt y üst.
+
+278
+00:38:03,987 --> 00:38:04,567
+y üst.
+
+279
+00:38:06,188 --> 00:38:07,667
+Şimdi bunu açacağız.
+
+280
+00:38:07,768 --> 00:38:10,768
+y üstlü ifadeleri bir araya getirerek,
+
+281
+00:38:13,047 --> 00:38:15,827
+şu x'i 2x, direkt diğer tarafa atılabilir.
+
+282
+00:38:17,567 --> 00:38:20,247
+İsterseniz tamamını yazıp, böyle işlemi yapalım.
+
+283
+00:38:21,547 --> 00:38:22,807
+Kosinüs x'ye,
+
+284
+00:38:24,027 --> 00:38:25,867
+çarpı y, eksi,
+
+285
+00:38:27,188 --> 00:38:28,407
+kosinüs x'ye,
+
+286
+00:38:29,780 --> 00:38:31,860
+çarpı x y üst.
+
+287
+00:38:33,260 --> 00:38:35,579
+Şöyle de, eşitir sıfır.
+
+288
+00:38:36,860 --> 00:38:39,699
+Şimdi y üstü parçası neler var? 2y var burada.
+
+289
+00:38:40,140 --> 00:38:42,500
+Bir de şuradaki kosinüs x'ye x var değil mi?
+
+290
+00:38:43,220 --> 00:38:46,320
+Şöyle yazalım, x x kosinüs x'ye.
+
+291
+00:38:49,940 --> 00:38:51,500
+yüksüp handizinde bu var.
+
+292
+00:38:53,720 --> 00:38:57,560
+Kalan terimler kim var? Şu terim, bir de şu terim.
+
+293
+00:38:58,100 --> 00:38:59,640
+Bunu da eşitliğin diğer tarafına atalım.
+
+294
+00:39:01,000 --> 00:39:02,000
+Ne olur? 2x
+
+295
+00:39:02,000 --> 00:39:05,340
+artı y çarpı
+
+296
+00:39:05,340 --> 00:39:06,340
+kosinüs x'e.
+
+297
+00:39:10,356 --> 00:39:13,676
+Şimdi bu da geriye kaloridir arkadaşlar. Geriye kalor giy üstlüğü çözmek.
+
+298
+00:39:19,860 --> 00:39:54,660
+x kare artı 2x, f'
+
+299
+00:39:30,452 --> 00:39:32,632
+metafet türev ile karşılaştırmayalım.
+
+300
+00:39:34,472 --> 00:39:37,352
+Dün gördük. Yüksek metafet türevler değil mi?
+
+301
+00:39:40,192 --> 00:39:42,372
+y üstü eşittir.
+
+302
+00:39:42,672 --> 00:39:43,612
+Hemen bakacağım sana.
+
+303
+00:39:45,552 --> 00:39:47,612
+2x artı y çarpı
+
+304
+00:39:47,612 --> 00:39:49,172
+kosinüs x'e
+
+305
+00:39:49,172 --> 00:39:52,052
+bölüğü
+
+306
+00:39:52,052 --> 00:39:54,552
+bir de sürünç seversen.
+
+307
+00:40:01,556 --> 00:40:03,636
+Evet. 2y
+
+308
+00:40:03,636 --> 00:40:07,556
+eksi x çarpı kosinüs x'e
+
+309
+00:40:15,188 --> 00:40:21,748
+y üstü türev'i bu şekilde bulmuştur. 2x artı y çarpı kosinüs x'ye, 2y eksi x çarpı kosinüs x'ye.
+
+310
+00:40:22,788 --> 00:40:22,988
+Evet.
+
+311
+00:40:37,043 --> 00:40:39,043
+Şimdi baştan anlatayım, ceva, iyi dinle.
+
+312
+00:40:40,143 --> 00:40:46,063
+Şimdi şu satırı zaten verilen fonksiyonu, direkt ikinci satıra bakın, şuraya değil mi?
+
+313
+00:40:46,643 --> 00:40:49,344
+y kare, x, x, x'e, x'in x'i, x'i, 0 şeklinde yazdık.
+
+314
+00:40:50,163 --> 00:40:53,463
+Sonra bu ifadenin tamamı x'e göre türevini alıyoruz.
+
+315
+00:40:54,203 --> 00:40:57,963
+D, x yazdık başına, bu x'e göre türev almakla iş değer olacak.
+
+316
+00:40:59,243 --> 00:41:03,563
+Şimdi terim terim türev alıyoruz ya, y kare'nin türevi 2'ye y üst.
+
+317
+00:41:04,820 --> 00:41:19,800
+x x kare artı 2x, x sinüs x'inin türevini iç dış kuralından, dış türevi kosinüs, sinüs'inin türevi dış olduğunun türevi kosinüs x'i direkt yazıyoruz. İçerisinde oluşturduğumuzu direk yazıyoruz.
+
+318
+00:41:20,980 --> 00:41:30,820
+Sonra, işçinin türevi x'inin türevine bakalım. W'de ilk x'i yazdık. Sonra x'inin türevinin açılımı burada var, şurada var.
+
+319
+00:41:31,635 --> 00:41:33,195
+ve son sarıyla yazayım.
+
+320
+00:41:35,435 --> 00:41:35,916
+Bakın.
+
+321
+00:41:39,115 --> 00:41:40,155
+Bu x'nin türevi.
+
+322
+00:41:41,056 --> 00:41:41,376
+Değil mi?
+
+323
+00:41:43,036 --> 00:41:45,235
+x'nin türevi açılamayı yazdık.
+
+324
+00:41:46,135 --> 00:41:50,295
+Şimdi bunu dağıttığımızda, burada kosinüs x'ye, değil mi, çarpı y'ye,
+
+325
+00:41:50,876 --> 00:41:54,635
+dağıtıyoruz bu, artı, kosinüs x'ye çarpı x'ye üstsü.
+
+326
+00:41:54,635 --> 00:41:55,635
+Tamam mı?
+
+327
+00:41:56,635 --> 00:41:57,235
+Dolayısıyla,
+
+328
+00:41:57,695 --> 00:42:06,295
+Burada y'ye bakıyoruz? y üstü'lü içeren terimleri artık bir tanesi y üstü'ü içeren terim olarak şu.
+
+329
+00:42:06,975 --> 00:42:09,635
+Onu da başka kalemle şeyle işareti göstereyim.
+
+330
+00:42:10,456 --> 00:42:12,056
+Bakın y üstü'ü içeren terim bu.
+
+331
+00:42:13,536 --> 00:42:16,536
+Bir de yukarıdan açtıktan sonra bir de bu.
+
+332
+00:42:18,895 --> 00:42:21,215
+Bu iki kırmızı yastı'nın terimler nedir?
+
+333
+00:42:21,655 --> 00:42:24,876
+İkisinde y üstü var. y üstü parantezinde bakın 2y-x
+
+334
+00:42:25,940 --> 00:42:31,740
+Burada şurada x var ya, çarpı kosinüs x'i, onun düzenini yazdık böyle, y üstü pandesine.
+
+335
+00:42:31,740 --> 00:42:40,140
+Kalan iki tane y üstü'yi içermenin iki terim var, onlarda ne yaptık? Eştiğindeye tarafı attık. Zaten işaretleri x olduğu için at olarak geçtiğinde çalışalım.
+
+336
+00:42:40,140 --> 00:42:46,140
+2x'te kosinüs x'i çarpı dg'ye var tabi orada. Tamam mı?
+
+337
+00:42:46,140 --> 00:42:53,932
+Ve dolayısıyla artık y üstü'yü burada, her iki tarafı kastasyon bölgedüğümüz zaman y üstü'yü çözü olacağız. Böyle bir fonksiyon da bize.
+
+338
+00:42:54,003 --> 00:42:55,503
+çözümü getirmiş olduk.
+
+339
+00:43:00,275 --> 00:43:00,775
+Peki.
+
+340
+00:43:09,396 --> 00:43:15,996
+Tabii kapalı türev çok sık karşımıza gelecek. Yani bu kapalı türevi yüksek mertebeden türevlerde de kapalı türevi bulunmayabiliriz.
+
+341
+00:43:16,996 --> 00:43:23,496
+Biraz işlem uzunluğu var yoksa şey aynı, sistem aynı.
+
+342
+00:43:30,931 --> 00:43:44,431
+Yok, hayır, bu y fonksiyon. O senin dediğin şeyde, iki değişkenin fonksiyonlara gelen kısmi türevlerdi. Şu an kısmi türevler falan yakın, matrikide göreceğiz. Tamam mı? Bu da y'yi sabit tutmuyoruz.
+
+343
+00:43:46,531 --> 00:43:54,931
+Onun ayrıca kısmi türevlerle ilgili evet bir formülü var ama o ayrı yani, şu anda onu şey yapmıyorum. Tamam mı? Peki.
+
+344
+00:43:56,244 --> 00:44:01,644
+Şimdi yüksek mtbdn fonksiyonlar için değil mi?
+
+345
+00:44:01,644 --> 00:44:05,844
+Daha doğrusu kapalı fonksiyonların yüksek mtbdn türelleri diyebiliriz.
+
+346
+00:44:05,844 --> 00:44:07,044
+Onu size bir örnek verelim.
+
+347
+00:44:08,244 --> 00:44:10,244
+Yüksek mtbdn türeller için.
+
+348
+00:44:25,972 --> 00:44:27,792
+yüksek medeviden türev örneği diyelim.
+
+349
+00:44:34,132 --> 00:44:40,092
+iki nokta üstü. 2x küp, 2x küp'ü şöyle bir okuyorum.
+
+350
+00:44:43,668 --> 00:44:45,068
+sabahları belirte muhalif.
+
+351
+00:44:49,235 --> 00:44:50,235
+Arkadaşlar, işte 8.
+
+352
+00:44:52,695 --> 00:45:02,555
+Böylediğine göre bunun d kare y bölü, dx kare, yani ikinci metre biten türev değil mi? Bu da bir yüksek metre biten türevdir.
+
+353
+00:45:03,295 --> 00:45:04,076
+Türev ile bulmuş.
+
+354
+00:45:07,215 --> 00:45:09,076
+Kısaca şöyle yazalım. Örneğimiz.
+
+355
+00:45:16,148 --> 00:45:39,047
+Şimdi her zamanki gibi, yani bu hepimiz için aynı, standart olsun. fx'i açı sıfır yazalım bir lafa. Dedim ya, bu 8-10'u tutuyor burada. En güzeli, bunu nerede? Sol tarafa atmak. Değil mi? Sonra x'e göre türev alıyoruz. Dedim ki, d bölü dx'i başa yazdık.
+
+356
+00:45:43,059 --> 00:45:45,059
+Şöyle, hemen buraya yazmış olayım şöyle.
+
+357
+00:45:46,099 --> 00:45:47,019
+Bu taraf sıfır zaten.
+
+358
+00:45:48,319 --> 00:45:49,559
+Ne olur? 6x kare.
+
+359
+00:45:50,260 --> 00:45:51,480
+Değil mi? Burası 6x kare.
+
+360
+00:45:51,480 --> 00:45:55,760
+Eksi, 6y, sonra çarpı y üstü.
+
+361
+00:45:57,079 --> 00:45:59,099
+Bu sıfır zaten, eşit sıfır.
+
+362
+00:46:00,019 --> 00:46:00,440
+Doğru mudur?
+
+363
+00:46:01,619 --> 00:46:04,319
+Dolayısıyla x kare bölü, y mi olur?
+
+364
+00:46:05,420 --> 00:46:06,239
+x kare bölü y.
+
+365
+00:46:07,800 --> 00:46:09,460
+Buradan y üstü eşittir.
+
+366
+00:46:17,811 --> 00:46:20,192
+y'ye üstü eşittir, x kare bölü y.
+
+367
+00:46:23,511 --> 00:46:27,251
+Demek ki bu, y farklı tabii, bu türev.
+
+368
+00:46:28,211 --> 00:46:31,032
+y farklı sıfır, çünkü faydalı y var.
+
+369
+00:46:31,412 --> 00:46:34,351
+Sıfırdan farklı değerleri için tanımlı türev değil mi?
+
+370
+00:46:34,931 --> 00:46:38,372
+y sıfırdan, kapalı fonksiyon türev, bakın, burada görebiliyor.
+
+371
+00:46:39,492 --> 00:46:40,511
+Tamam mı değil çünkü.
+
+372
+00:46:46,099 --> 00:46:54,659
+Şimdi buradan hareketle arkadaşlar, ne yapacağız? y2-sü'yü vuracağız. Burada sizden y3-sü var. Bir kez daha y3-sü'yü yaparsak y2-sü.
+
+373
+00:46:55,460 --> 00:47:00,500
+İsterseniz bunu yukarıda kapalı türev gibi bir tarafa toplayıp direkt buradan devam edebilirsiniz. O size kalmış artık.
+
+374
+00:47:01,819 --> 00:47:04,899
+İki tarafın tekrar türevini alırsak,
+
+375
+00:47:06,500 --> 00:47:07,099
+buradan,
+
+376
+00:47:10,612 --> 00:47:11,471
+x'e göre
+
+377
+00:47:11,471 --> 00:47:15,192
+türev alması vereceğim.
+
+378
+00:47:22,036 --> 00:47:30,155
+Ne olur? i2 üstü eşittir. Bu taraf bölümün türevi ifade çalışacak tabii. D bölü x şöyle yazalım.
+
+379
+00:47:31,895 --> 00:47:39,395
+x kare bölü yapayım, bunu bulduk. Bakın burası bölümün türevinin kuralını uygulayacağız buraya.
+
+380
+00:47:41,056 --> 00:47:47,536
+Ama burada x değişken y fonksiyon, dikkat et. Payın türevi 2x çarpı payla. Eksi.
+
+381
+00:47:48,083 --> 00:47:57,323
+pi çarpı, paydanın türevi kim? y var zaten, y'nin türevi, y üstü. Bölü, paydanın karesi. y'nin karesi.
+
+382
+00:47:59,104 --> 00:48:05,744
+y'ye kütücü ifade edildi arkadaşlar, böyle çıktı. Bakın ama y üstü'yü biz nereden yukarıdan biliyoruz. y üstü'yü getirip burada yerine yazabiliriz.
+
+383
+00:48:06,963 --> 00:48:14,884
+Dolayısıyla y'ye kütücü eşittir. 2x'ye eksi x kare çarpı x kare bölü y.
+
+384
+00:48:17,235 --> 00:48:21,835
+Şöyle bir kez yerine yazın ki açıkça, neyin nereye yazdığımızı bilelim.
+
+385
+00:48:22,795 --> 00:48:22,955
+Evet.
+
+386
+00:48:24,155 --> 00:48:29,695
+Ve bunu da elbette, işte adresini eşitleyip düzenleyerek, 2x y kare olur burası değil mi?
+
+387
+00:48:31,056 --> 00:48:39,155
+2x y kare, x'i x'e 4, bölü y bu, y tüp olur.
+
+388
+00:48:42,612 --> 00:48:43,612
+y farklı sıfır.
+
+389
+00:48:46,432 --> 00:48:54,791
+2x y kare, yani bir bakıma 2x, şöyle bir arada ayrı ayrı yazarsak, 2x bölü y olur değil mi?
+
+390
+00:48:57,472 --> 00:48:59,291
+Eksi x'e 4 bölü y tüp.
+
+391
+00:49:05,076 --> 00:49:07,136
+durumda y farklı sıfır işledim. Bu da öyle.
+
+392
+00:49:12,019 --> 00:49:22,400
+Gördüğünüz gibi arkadaşlar, fonksiyonun hem y üstü türevini, belirlen kapalı değil mi fonksiyonun, hem y üstü türevini, hem de y üstü türevini elde etmiş, ortakmış.
+
+393
+00:49:31,539 --> 00:49:32,039
+Şimdi
+
+394
+00:49:43,956 --> 00:49:46,675
+kareletimi ve diferansiyeller konusuyla.
+
+395
+01:01:34,804 --> 01:01:36,804
+Peki, devam edelim kaldığımızda arkadaşlar.
+
+396
+01:01:38,804 --> 01:01:40,884
+Bu kez, L'erleştirme ve diferansiyeller.
+
+397
+01:01:42,804 --> 01:01:45,503
+Başlığımız, önce tabi L'erleştirmeyi göreceğiz.
+
+398
+01:02:41,619 --> 01:02:54,719
+Şimdi arkadaşlar, növüştürme dediğimiz kavram, bazen bir fonksiyonun bir noktadaki değerini direkt olarak hesaplamak zor olamayacak.
+
+399
+01:02:54,839 --> 01:03:08,859
+Dolayısıyla o noktada yerine, o noktada değerini, o noktanın yakınındaki bir noktada değerini, fonksiyonunu hesaplayıp, dolayısıyla yaklaşık olarak o noktadaki değerini bulmuşuz gibi düşünebiliriz.
+
+400
+01:03:10,579 --> 01:03:14,279
+Önce lineyaleşme diyelim.
+
+401
+01:03:18,195 --> 01:03:20,755
+Bazen buna linearizasyon kavramı da uygulamıyoruz.
+
+402
+01:04:14,195 --> 01:04:17,235
+Şimdi şöyle söylüyorum, bir yeşil effekümsiyon olsun.
+
+403
+01:04:26,483 --> 01:04:29,884
+İşte seni direkt tanım verelim. x işçi A noktasında
+
+404
+01:04:33,556 --> 01:04:35,155
+türevlenebiliriz.
+
+405
+01:04:36,155 --> 01:04:37,155
+Oldu onun.
+
+406
+01:05:10,771 --> 01:05:11,771
+fonksiyon.
+
+407
+01:05:15,315 --> 01:05:16,915
+Burantutakillerin resmesi.
+
+408
+01:05:32,788 --> 01:05:35,268
+şöyle büyük, dx ile göstereceğim.
+
+409
+01:05:42,420 --> 01:05:45,560
+f a artı f üstü a
+
+410
+01:05:45,560 --> 01:05:49,840
+sonra x x a
+
+411
+01:05:49,840 --> 01:05:52,100
+aslında neye benziyor?
+
+412
+01:05:53,380 --> 01:05:56,780
+fonksiyonun anahtar takitini t doğrusunu denklemelerine benziyor değil mi?
+
+413
+01:05:57,780 --> 01:05:58,680
+olarak tanımlanır.
+
+414
+01:06:16,628 --> 01:06:30,708
+herhangi bir iş noktasındaki tabii şöyle fx eşitliği ya da yaklaşık olarak tabi alabiliriz. Şöyle diyelim. Lx. Evet. Yaklaşımına.
+
+415
+01:06:39,731 --> 01:06:42,831
+fonksiyonun ayaktaşındaki standart ile yaklaşım denir.
+
+416
+01:06:45,052 --> 01:06:45,851
+Fonksiyonun
+
+417
+01:06:49,331 --> 01:06:51,692
+fonksiyonumuz kim? y eşitir f fonksiyonu.
+
+418
+01:06:53,051 --> 01:06:54,731
+x eşitir a noktasındaki
+
+419
+01:07:12,019 --> 01:07:13,660
+tünnyeyecekler.
+
+420
+01:07:26,963 --> 01:07:30,804
+Bazen işte bu noktaya da diyoruz ki bu yaklaşmanın merkezi dönüyor yani.
+
+421
+01:07:30,804 --> 01:07:34,644
+Hangi noktada şey, hangi noktada yaklaşmamak istediğimiz zaman onu.
+
+422
+01:07:34,644 --> 01:07:38,963
+Şu tarafı boş bıraktım şimdi onunla ilgili bir grafik yapacağım.
+
+423
+01:07:38,963 --> 01:07:42,483
+O yüzden biraz daha bu tarafa yanlıştırayım.
+
+424
+01:08:12,244 --> 01:08:16,043
+Diyelim ki fonksiyon değerimiz, yani iki türü de tabii çilebilir.
+
+425
+01:08:16,043 --> 01:08:16,543
+Çok önemli.
+
+426
+01:08:23,604 --> 01:08:24,604
+Evet.
+
+427
+01:08:31,667 --> 01:08:33,747
+y-e-tirev fonksiyonu elimiz bu olsun.
+
+428
+01:08:38,899 --> 01:08:40,899
+Bunun herhangi bir anahtasındaki değerini...
+
+429
+01:08:50,068 --> 01:08:50,948
+bu değeri bu değil mi?
+
+430
+01:08:52,948 --> 01:08:54,747
+Bu noktadaki türev doğrultusunda
+
+431
+01:09:17,203 --> 01:09:17,884
+olsun, ben.
+
+432
+01:09:21,908 --> 01:09:22,408
+7.
+
+433
+01:10:06,003 --> 01:10:08,003
+Eriği oryanlar bünyemeye düşündüm de.
+
+434
+01:10:11,003 --> 01:10:12,003
+Hiç uğraşmıyorum.
+
+435
+01:10:13,003 --> 01:10:14,003
+Aynen.
+
+436
+01:10:14,003 --> 01:10:15,003
+Böyle de kazanatıyorum.
+
+437
+01:10:15,003 --> 01:10:15,884
+Nolaçak.
+
+438
+01:10:20,148 --> 01:10:34,048
+Dolayısıyla biz bunu aslında daha öncülüyoruz. Herhangi bir, yakındaki herhangi, a noktası için yakındaki x değerleri için, atıyorum işte bunu herhangi bir, x için o ifademizi, rafıkta nedeni hesap edebiliriz.
+
+439
+01:10:35,128 --> 01:10:45,427
+Tabi buradaki eğim ifademiz aslında f üstü a'ya denk gelecektir. Daha şeyle, rafıkta üzerinde belirtmemiz gereken de bir yeri. Varsa da bu bizim yeşil, il x.
+
+440
+01:10:46,420 --> 01:10:48,479
+türev doğrumuz, şöyle diyelim.
+
+441
+01:10:49,979 --> 01:10:51,579
+Yani direkt yeşil fx demeyelim.
+
+442
+01:10:52,460 --> 01:10:56,680
+Ama bu aslında f üst, ah, eğimi bize şey yapmadı değil mi?
+
+443
+01:10:56,680 --> 01:10:57,340
+Şu ifade.
+
+444
+01:11:05,652 --> 01:11:08,771
+Şu doğrun eğimi, şunu da yine,
+
+445
+01:11:11,492 --> 01:11:14,471
+yiyestiretik serisi olarak belirteyim şöyle, evet, kabaç.
+
+446
+01:11:20,692 --> 01:11:22,592
+Şimdi dolaşıyla herhangi bir noktasındaki
+
+447
+01:11:26,420 --> 01:11:28,420
+var mı? Bu da önemli sorumda arkadaşlar.
+
+448
+01:11:33,700 --> 01:11:37,020
+Yine silmesini hesaplayabiliriz, verilen efendisi.
+
+449
+01:11:49,684 --> 01:11:55,244
+diyelim ki f' x eşittir, kare kök, 1 artı x.
+
+450
+01:12:11,859 --> 01:12:31,440
+fonksiyonun xx sıfır noktasındaki, genelde orijin civarında xx sıfır noktası gibi noktalarda ne yapmak, böyle bir linear noktası bulmak, tabii daha çok uygulamadan işe yaradığı için bu noktalarda özellikle iyi eleştirme bulunuyor.
+
+451
+01:12:54,323 --> 01:12:56,323
+yukarıdan biliyoruz zaten.
+
+452
+01:12:58,323 --> 01:13:01,323
+dx değil mi? Derdimiz dx'i bulmak.
+
+453
+01:13:01,323 --> 01:13:04,323
+Bu kare artı 2x fonksiyonunun, değil mi?
+
+454
+01:13:05,323 --> 01:13:14,323
+Ne kadar yukarıya doğru eklendiğine göre, su eğleni birbirin sola kaymış hali demektir.
+
+455
+01:13:14,323 --> 01:13:18,323
+Önce ifadeyi bulup sonra sileriz grafiğini.
+
+456
+01:13:18,963 --> 01:13:24,963
+Bir daha fonksiyon türevli değil mi bulamışız? f üstü x'i bulamışız yani değil mi?
+
+457
+01:13:28,212 --> 01:13:36,612
+1 bölü 2, kare kök ama paydaya atmamız lazım. O zaman şöyle yapalım. 1 artı x'e x 1 bölü 2.
+
+458
+01:13:38,772 --> 01:13:39,972
+F'ü yükselen.
+
+459
+01:13:41,452 --> 01:13:44,752
+Bunun sıfırdaki değeri de f'ü 0 değerine baktığımız zaman.
+
+460
+01:13:45,231 --> 01:13:49,792
+Tabii f'ü 0 değeri 1, f'ü 0 değeri de 1 bölü 2.
+
+461
+01:13:58,899 --> 01:14:05,100
+Dolayısıyla bu bölücü bölüki zaten bizim. x'in sıfır noktasındaki nedir? t'in eğimidir, değil mi?
+
+462
+01:14:06,420 --> 01:14:18,539
+O halde L'x'imiz şöyle f'a artı f'ü üstü a çarpı x'i a.
+
+463
+01:14:20,139 --> 01:14:24,039
+Dolayısıyla f'y'i bulduk işte bir, yani f sıfır lazım dememiz lazım.
+
+464
+01:14:27,252 --> 01:14:32,852
+f3, 0. Burada x x'i 0 yazar bir sesimiz.
+
+465
+01:14:39,060 --> 01:14:59,739
+1 artı 1 bölü 2x. 1 artı 1 bölü 2x. Lx ifademiz bu. Bunlardan şu, şimdi x'e, x'e sıfıra yakın noktalarda fonksiyon değerini bulmak istediğimiz zaman, tabii kök fonksiyonu olduğu için buradaki değerlerini hesap yapacak çok zor ama buraya bakıyoruz, bu artık bir line etifade ediyor musunuz?
+
+466
+01:15:06,003 --> 01:15:11,783
+1 bölük x artı 1. Dolayısıyla bu bizim f fonksiyonun ilerleştirmesidir.
+
+467
+01:15:12,744 --> 01:15:15,423
+Açık olarak f of x diyelim.
+
+468
+01:15:17,603 --> 01:15:20,083
+f fonksiyonunun x'i sıfırda ilerleştirmesidir.
+
+469
+01:15:23,224 --> 01:15:26,703
+Mesela 1 bölük 2 için değil mi? Hesaplamak istediğimiz zaman işte burada.
+
+470
+01:15:27,344 --> 01:15:32,683
+Hatta x'i 2 için alabilirsiniz. x'i 2 için ilerleşmesi 2. Yaklaşık değil 2.
+
+471
+01:15:33,140 --> 01:15:41,460
+Burada baktığın zaman 2x'lerine 2 yazılır, kare köp 3 değil. Tabii biraz yaklaşık değer, çok da yaklaşık değer değil o yüzden.
+
+472
+01:15:41,460 --> 01:15:49,020
+Hangi noktada neresimi alıyorsa, o neresi nokta civarında, o noktaya yakın noktalardaki değerlerine bakmak lazım.
+
+473
+01:15:49,020 --> 01:15:56,420
+Yani 1'e kadar değil mi? En fazla işte 1 bölü 2 falan. Ne kadar sıfıra yakın değerlerde bu ifadeyi bulmak istiyorsak.
+
+474
+01:15:56,496 --> 01:16:02,916
+o sıfırdaki yaklaştırmayı ya da liraleştirmeyi o kadar net elde etmiş oluruz.
+
+475
+01:16:06,771 --> 01:16:10,572
+Dolayısıyla, bakın grafimizde şöyle çizelim.
+
+476
+01:16:25,460 --> 01:16:28,560
+biraz kük x, kük x'in birbirini zimsi sola kaymış.
+
+477
+01:16:31,360 --> 01:16:34,739
+Şekli bakın şurada, sıfırdaki değerimiz tabii bizim artık.
+
+478
+01:16:38,292 --> 01:16:39,731
+T, doğru.
+
+479
+01:16:56,851 --> 01:17:01,271
+1 artı x bölü 2 ya da x bölü 2, 1 bölü 2x artı 1 değil mi?
+
+480
+01:17:09,619 --> 01:17:13,180
+Öte yandan bu yeşillik rahimimizde tabii fonksiyonumuz.
+
+481
+01:17:16,020 --> 01:17:17,300
+Kare artı 1x.
+
+482
+01:17:19,819 --> 01:17:25,960
+Bu t doğrusu ya da lineerleştirmeyi elde ettiğimiz, L ifadesinde, buna direkt Dx diyebiliriz aslında.
+
+483
+01:17:27,000 --> 01:17:28,100
+x'i sıfırdaki.
+
+484
+01:17:33,108 --> 01:17:41,108
+Değerini zaten burada aslında fonksiyona baktığınız zaman fonksiyonun değeri Q2.
+
+485
+01:17:41,108 --> 01:17:46,923
+Malli resime baktığınız zaman 1. N'e resim olarak baktığınız zaman 1.
+
+486
+01:17:57,619 --> 01:18:02,699
+Dolayısıyla şöyle küçük bir tablo fonksiyon esim mesela yazacak olursak.
+
+487
+01:18:28,979 --> 01:18:33,539
+Şurası yaklaşık değer, gerçek değer ve aradaki fakatı değil mi?
+
+488
+01:18:42,228 --> 01:19:19,172
+x kare artı 2x, f'
+
+489
+01:18:55,699 --> 01:19:01,260
+gerçek değer, gerçek açık değer, mesela 1.2.
+
+490
+01:19:02,260 --> 01:19:04,819
+O ile x'in en sıfır sıfır kişiye çıkayım.
+
+491
+01:19:06,659 --> 01:19:09,380
+Buradaki lineerleştirmeyi gördüğümüz zaman 1.10'a mı denk gelir?
+
+492
+01:19:10,680 --> 01:19:11,380
+1.10.
+
+493
+01:19:11,899 --> 01:19:12,680
+Bir de konu yazıyorum.
+
+494
+01:19:14,500 --> 01:19:19,100
+Bunun gerçek değeri 1.095.
+
+495
+01:19:21,555 --> 01:19:23,355
+işte 445.
+
+496
+01:19:25,755 --> 01:19:28,695
+Farkta, 10 üzeri x 2'den küçük arkadaş.
+
+497
+01:19:30,195 --> 01:19:33,235
+Demek ki bunlar oldukça birbirlerine yakın değerler.
+
+498
+01:19:33,335 --> 01:19:34,296
+Onu söylemeye çalışıyoruz.
+
+499
+01:19:35,995 --> 01:19:36,796
+1.05
+
+500
+01:19:36,796 --> 01:19:40,075
+x'lerine 0.05 yazmışız.
+
+501
+01:19:41,415 --> 01:19:44,075
+Bu durumda linear yaklaşımdan 1.025 çıkart.
+
+502
+01:19:46,355 --> 01:19:47,675
+Böyle ikisi var çünkü.
+
+503
+01:19:48,372 --> 01:20:10,332
+Bunun gerçek değeri 1.014.695. Bakın, ne yaptıkça, x'in 0'a yakın değerleri aldıkça, bu değerine 1'e yaklaştırıyor. Yani fx fonksiyonu değer olarak 1'e yaklaştırıyor. Dolayısıyla buradaki farkı nedir? Daha da küçüleceği anlamına geliyor.
+
+504
+01:20:17,108 --> 01:20:18,788
+1.005
+
+505
+01:20:29,395 --> 01:20:43,175
+neye yaklaşımımız? 1.00, değil mi? Oldukça yakın. 0.25. Ve gerçekte gerçekten 1.00, bakın.
+
+506
+01:20:44,395 --> 01:20:53,255
+2.00'dan sonra 10'da sayı var. 24.97. Buradaki fark tabii çok daha küçük. 10 üzeri.
+
+507
+01:20:54,216 --> 01:20:56,015
+x'i 5'ten küçük. Müthiş.
+
+508
+01:20:56,532 --> 01:21:03,332
+bir yakın değer demektedir. Evet. Şu 10 üzeri eksi 5 arkadaşlar.
+
+509
+01:21:25,971 --> 01:21:34,971
+Tabii farklı aktörde de ne yapabiliriz? Mutlaka L'Hospital'ı hesaplayabiliriz. Mutlaka sıfırda her zaman almak zorunda değiliz.
+
+510
+01:21:44,467 --> 01:21:50,807
+bir tane de örnek yapalım arkadaşlar. Buradan sonra bir tane seri verelim.
+
+511
+01:22:05,652 --> 01:22:09,931
+fx-x kosinist fonksiyonunun x eşitir 2 noktadaki neyini istiyormuş?
+
+512
+01:22:10,192 --> 01:22:11,372
+Linear destemesi istiyormuş.
+
+513
+01:22:13,591 --> 01:22:16,452
+x eşitir p bölü 2 noktasında
+
+514
+01:22:16,452 --> 01:22:21,532
+fx eşitir kosinist fonksiyonunu.
+
+515
+01:22:28,787 --> 01:22:29,627
+Yenestiniz.
+
+516
+01:22:40,884 --> 01:22:49,724
+nokta üstte. Zaten f'e daha çok kolay. Türevimiz, eksisiniz x, f'ü x eşittir, eksisiniz x.
+
+517
+01:22:51,164 --> 01:23:01,744
+Tabii, pi bölü 2'deki değeri, f'in pi bölü 2'deki değeri 0 ama f'ü'nün pi bölü 2'deki değeri, x'i 1.
+
+518
+01:23:05,684 --> 01:23:18,224
+Demek ki ilerleşme ifademiz, x, daha doğrusu pi bölü 2, eksi x değil mi? Pi bölü 2, eksi x.
+
+519
+01:23:19,904 --> 01:23:29,184
+L x eşit yerleşmemiz, pi bölü 2 sıfır olduğu için, sıfır artı istedim. Bir kez yazalım.
+
+520
+01:23:30,024 --> 01:23:32,844
+Eksi 1 çarkı, x eksi pi bölü 2.
+
+521
+01:23:35,091 --> 01:23:39,231
+Yani, x işte, bölü 2x, x olur.
+
+522
+01:23:41,871 --> 01:23:43,191
+Pi bölü 2x, x olur.
+
+523
+01:23:49,460 --> 01:23:51,659
+Bunları ne yapabiliriz? Artırabiliriz.
+
+524
+01:23:53,020 --> 01:23:56,500
+Burada değişik bir örnek var. Kök ve kuvvetler için.
+
+525
+01:23:58,260 --> 01:24:00,460
+Bilineerce kaçma ifadesi elde edilebiliyor.
+
+526
+01:24:00,720 --> 01:24:04,860
+Yani 1 artı x üzeri k ifadesi.
+
+527
+01:24:05,500 --> 01:24:08,620
+K burada herhangi bir sayıyor. Yaklaşık değeri 1 artı k x.
+
+528
+01:24:08,760 --> 01:24:11,860
+En iyi yani sıfıra yakın tabii en iyi yakın değeri var.
+
+529
+01:24:12,079 --> 01:24:14,500
+Bunları önükten bulabilirsiniz. Bunları not olarak belirtelim.
+
+530
+01:24:20,884 --> 01:24:22,024
+1 artı x'leri.
+
+531
+01:24:23,344 --> 01:24:26,584
+k'nın en iyi değer yaklaşımı,
+
+532
+01:24:26,584 --> 01:24:28,363
+1 artı kx'tir.
+
+533
+01:24:32,283 --> 01:24:33,944
+x bu da sıfıra yakın.
+
+534
+01:24:41,108 --> 01:24:42,476
+kavit, f'
+
+535
+01:24:59,891 --> 01:25:01,971
+ı
+
+536
+01:24:52,979 --> 01:25:05,319
+her yerde biz örnekte mesela, kare kök 1 artı x'in, linea erkeklaşmasının, 1 artı 1 bölü 2x bulup, 1 artı 1 bölü 2x.
+
+537
+01:25:06,979 --> 01:25:12,359
+Dolayısıyla 1 bölü 1 x x mesela, bunlar böyle devamlı yapabilirsiniz. 1 x x'in eksi birinci kuvvetli olarak tabii.
+
+538
+01:25:13,799 --> 01:25:16,379
+1 bölü 1 x x eşittir.
+
+539
+01:25:17,235 --> 01:25:18,855
+1-x'in
+
+540
+01:25:18,855 --> 01:25:20,735
+1. kuvveti
+
+541
+01:25:20,735 --> 01:25:24,916
+1 artı
+
+542
+01:25:24,916 --> 01:25:25,895
+1-1
+
+543
+01:25:25,895 --> 01:25:28,475
+çarpı
+
+544
+01:25:28,475 --> 01:25:29,235
+xx değil mi?
+
+545
+01:25:35,956 --> 01:25:36,956
+Yani 1 artı x olur.
+
+546
+01:25:45,043 --> 01:25:51,684
+kare element, bu da x oldu, sinüs içerisi. 1 artı da artı k, artı k x, eksi k x, böyle düşünülebiliriz.
+
+547
+01:25:55,923 --> 01:25:58,484
+x, x, x, x, neyse, x, neyse, ona göre de o.
+
+548
+01:26:02,355 --> 01:26:03,355
+keep it. Peki.
+
+549
+01:26:07,699 --> 01:26:11,180
+Şimdi bir fonksiyon, diferansiyel kavramını arkadaşlar tanımlayalım.
+
+550
+01:26:23,347 --> 01:26:26,948
+bir defa y eştir fx fonksiyonunun
+
+551
+01:26:31,604 --> 01:26:34,844
+x bağımsız değişkenine göre tabii değil, fensiyeli.
+
+552
+01:26:44,627 --> 01:26:55,768
+f'ye eşitir. f üstü x, çarpı dx. Bu da bağımlı seçkenin x, x'in dx ifadesi dediğimiz zaman olarak tanımlı.
+
+553
+01:27:08,083 --> 01:27:16,884
+Her ne kadar burada f fonksiyonun tek x değişkenine bağlı bir fonksiyon da, burada onun diferansiyeli aslında, iki değişkene bağlı ifade gibi gözükebilir.
+
+554
+01:27:16,884 --> 01:27:22,484
+Bir, onun türevine bağlı, türevi dolayısıyla x'e bağlı, bir de de x'e bağlı tabii.
+
+555
+01:27:22,484 --> 01:27:27,467
+De x'e farklı bir, ne diyelim kuantide, farklı bir kavram.
+
+556
+01:27:42,899 --> 01:28:05,680
+Şimdi bunun için hemen bir bakıma burada hem x hem de dx değerler verildiğinde dx için belirli bir değer ve x'i f fonksiyonun tanrı künestik belirli bir sayısı değeri olduğunda bu değerler d'nin sayısal değerini bize direk verirler.
+
+557
+01:28:09,427 --> 01:28:12,188
+çapın, masçı, türev, çarpı, de ekstremif, ayı da o.
+
+558
+01:28:15,475 --> 01:28:16,475
+nek ki?
+
+559
+01:28:27,604 --> 01:28:30,644
+y eşittir. x'e şartı 37x.
+
+560
+01:28:35,988 --> 01:28:57,208
+ise bunun d'ye diferansiyeti nedir? Türev 5x'e 4, artı 37, çarpı kimdi x? İfade bu. Öte yandan x'e 1 için mesela, ve d'x değerinde mesela yakın bir artım olarak 0,2 ise,
+
+561
+01:29:04,851 --> 01:29:29,815
+x kare artı 2x, f'
+
+562
+01:29:10,387 --> 01:29:12,427
+D ifade değeri, bakalım ne olur?
+
+563
+01:29:15,667 --> 01:29:16,507
+5 çarpı
+
+564
+01:29:16,507 --> 01:29:19,587
+1 üzeri 4 artı 37
+
+565
+01:29:19,587 --> 01:29:22,627
+çarpı 0.2
+
+566
+01:29:22,627 --> 01:29:26,707
+işte bunu çarpıp böldüğümüz zaman
+
+567
+01:29:26,707 --> 01:29:28,167
+8.4 çıkar.
+
+568
+01:29:41,056 --> 01:29:49,176
+x kare artı 2x, f'
+
+569
+01:29:39,572 --> 01:29:56,212
+Tabi bu diferansiyel içinde geometrik yorum yapmamız mümkün. Yani deyi ifadesin aslında, hani türev dedi mi? Balanısı tabi ki var gördüğünüz gibi.
+
+570
+01:30:09,619 --> 01:30:19,619
+Verildi. Bu veriliyor. 1x için. Yani bu veriliyor. Tamam mı? Bunu bulmuyoruz biz yani. 0,2'yi bulmuyoruz biz. Bu veriliyor.
+
+571
+01:30:19,619 --> 01:30:26,020
+O verilen değerler için yani x'in 1 ve dx'in de 0,2 değeri için bunu hesaplarız yani.
+
+572
+01:30:26,020 --> 01:30:32,020
+1x'i biz değiştirebiliriz, seçerbiliriz falan böyle. Buna karşı gelen bu diferansiyelifatist kavramı budur yani.
+
+573
+01:30:36,851 --> 01:30:38,211
+Bakın, normalde
+
+574
+01:30:43,604 --> 01:31:04,164
+Bir fonksiyonun, verilen bir fonksiyonun, t doğrusu biraz önce yazılmak, linear denklem anlamında, L ise, x seçil A noktasındaki, htf fonksiyonunun, x seçil A noktasındaki,
+
+575
+01:31:10,420 --> 01:31:11,420
+et duruzluğa.
+
+576
+01:31:18,836 --> 01:31:21,236
+O zaman, şu yazabiliriz.
+
+577
+01:31:24,851 --> 01:31:26,851
+teta L ifadesi
+
+578
+01:31:26,851 --> 01:31:30,011
+L A artı Dx
+
+579
+01:31:30,011 --> 01:31:32,891
+Şimdi grafiği çekeceğim, bunu nasıl yazdığına söyleyeceğim.
+
+580
+01:31:33,791 --> 01:31:34,851
+x'i L A
+
+581
+01:31:34,851 --> 01:31:40,031
+Bu ifade L A artı Dx aslında biliyoruz biz.
+
+582
+01:31:41,171 --> 01:31:43,011
+F A artı F üstü A
+
+583
+01:31:51,667 --> 01:31:57,268
+hansızın növ, a artı 2x, x a.
+
+584
+01:32:01,235 --> 01:32:03,376
+Yani aslında şu ifade direkt bu.
+
+585
+01:32:03,475 --> 01:32:06,915
+Burada biz f'ayı bir kez ekleyip çıkardığımız varsa yasak.
+
+586
+01:32:08,895 --> 01:32:09,815
+Şöyle yapalım.
+
+587
+01:32:12,115 --> 01:32:14,095
+Tabii şu ifade L'a artı 2x.
+
+588
+01:32:27,091 --> 01:32:28,011
+Bunu hemen görüşürüz.
+
+589
+01:32:45,811 --> 01:32:46,452
+ama şimdi
+
+590
+01:32:46,452 --> 01:32:49,372
+bu efa değerde sen la değer
+
+591
+01:32:56,212 --> 01:33:00,272
+Öyle olmaz mı? Çünkü hatırlasanız şöyle yazalım. Şurada çok gözükmüyor.
+
+592
+01:33:01,272 --> 01:33:07,172
+Yazalım. fx, yaklaşık olarak eşitliği a ifadesi hatırlasanız.
+
+593
+01:33:08,112 --> 01:33:08,952
+Yani x pardon.
+
+594
+01:33:13,076 --> 01:33:13,995
+Bu değiştir.
+
+595
+01:33:15,115 --> 01:33:20,576
+L A artı f'ü üstü A çarpı x, x, A değil mi?
+
+596
+01:33:21,495 --> 01:33:27,495
+Şimdi f'ye'ni A yazarsak, ne olur burada? Burası sıfır olur, burası L A kalır.
+
+597
+01:33:29,315 --> 01:33:29,556
+Tamam.
+
+598
+01:33:30,515 --> 01:33:31,155
+Deklendirebilirsiniz.
+
+599
+01:33:32,175 --> 01:33:34,235
+Dolayısıyla bu bize neyi verecek arkadaşlar?
+
+600
+01:33:39,220 --> 01:33:40,880
+f üstü a çarpı 2x'dir.
+
+601
+01:33:50,260 --> 01:33:53,164
+x kare artı 2x, f'
+
+602
+01:34:16,340 --> 01:34:18,600
+Şöyle çizelim, hemen uzun türev ile çizelim.
+
+603
+01:34:24,340 --> 01:34:26,252
+zeym ki anıptır zaktır.
+
+604
+01:34:40,051 --> 01:34:47,832
+şurası, a noktası, buradaki a, f'a değeri, bu t doğruumuz.
+
+605
+01:34:48,912 --> 01:34:51,931
+Şu nokta üzerinde bir a artı, dx için mesela.
+
+606
+01:34:55,828 --> 01:34:57,388
+A noktasına yakın bir noktada.
+
+607
+01:35:19,252 --> 01:35:25,900
+x kare artı 2x, f'
+
+608
+01:35:58,131 --> 01:35:59,131
+Evet.
+
+609
+01:36:00,131 --> 01:36:01,131
+Şunu alınca.
+
+610
+01:36:48,688 --> 01:36:51,819
+x kare artı 2x, f'
+
+611
+01:36:47,956 --> 01:36:49,136
+Şurada arkadaşlar,
+
+612
+01:36:49,476 --> 01:36:50,156
+Müştüksüzlerle,
+
+613
+01:36:50,275 --> 01:36:51,515
+Kıramızı kalemini istedim.
+
+614
+01:37:01,075 --> 01:37:03,211
+x kare artı 2x, f'
+
+615
+01:36:58,707 --> 01:37:02,787
+var. Fark, yani şunun şuraya getirdiği fark.
+
+616
+01:37:14,195 --> 01:37:14,796
+Pongdu selinle.
+
+617
+01:37:18,484 --> 01:37:20,484
+bir de şurası var.
+
+618
+01:37:31,796 --> 01:37:34,735
+Şu mesela var. Bu bizim delta lemiz arkadaşlar.
+
+619
+01:37:40,692 --> 01:37:42,451
+yazıyor da yazayım ya delta'larımız.
+
+620
+01:37:43,832 --> 01:37:44,471
+Eşittir.
+
+621
+01:37:45,092 --> 01:37:47,291
+f üstü ad x, kada bahsettiğim şey yok.
+
+622
+01:37:52,275 --> 01:37:56,716
+Şuradan şuraya kadar olan ifade nedir? Delta y ifademiz o da.
+
+623
+01:37:58,335 --> 01:37:59,796
+Onu da işe de yazayım şöyle.
+
+624
+01:38:05,300 --> 01:38:07,300
+o da f artı 2x.
+
+625
+01:38:14,899 --> 01:38:17,899
+xcf'ı
+
+626
+01:38:17,899 --> 01:38:19,899
+çöğün müde bir üstelik ya, çöğün müde bir üstelik ya.
+
+627
+01:38:26,579 --> 01:38:27,079
+çöz.
+
+628
+01:38:33,555 --> 01:38:36,915
+Tabii şu nokta artık, yani şurası belli, a, f, a koordinatı.
+
+629
+01:38:39,695 --> 01:38:40,456
+Burası da
+
+630
+01:38:40,456 --> 01:38:42,335
+artı 2x
+
+631
+01:38:42,335 --> 01:38:44,315
+virgül f, artı 2x.
+
+632
+01:38:44,475 --> 01:38:48,095
+Artık onu uzun yazmayalım. Bu y eşitliği funksiyonumuzun grafiği şu zaten.
+
+633
+01:38:53,140 --> 01:38:55,579
+şu mavi ile gördünüz. Tamam mı?
+
+634
+01:38:56,700 --> 01:38:59,079
+Şurası dx ya da delta x diyelim.
+
+635
+01:38:59,200 --> 01:39:00,880
+Çıkkınımızdan burada aldığı değer.
+
+636
+01:39:09,811 --> 01:39:11,351
+şu yükseklik delta L.
+
+637
+01:39:15,123 --> 01:39:18,304
+ve daha sonra buradan buraya olan kısımda size de değil.
+
+638
+01:39:35,923 --> 01:39:39,923
+Bu artık aslında geometrik olarak yorumlamaya çalıştık.
+
+639
+01:39:40,923 --> 01:39:47,923
+Verilen bir f fonksiyonunun a noktasındaki t doğrusu ya da l yaklaşımı biraz önce gördük, l'ye geçirmesini, lx olarak gördük.
+
+640
+01:39:48,384 --> 01:39:53,463
+Zaten şu kırmızıyla gördüğünüz t doğrusu o. l'nin kendisi, t doğrusunun kendisi.
+
+641
+01:39:54,564 --> 01:40:00,543
+Şimdi bu noktanın yakınında, x içeri noktasının yakınındaki bir nokta için a ve lx noktasının değerlendirmesine bakarsak,
+
+642
+01:40:01,460 --> 01:40:05,860
+bu noktanın eriye olan, değil mi, yüksektiği, buradan buraya kadar olan yüksektiği, şurası.
+
+643
+01:40:07,020 --> 01:40:16,739
+Şimdi a artı 2x'deki, tabii tam erinin aldığı değeri hesaplamayabiliriz. Bunun yerine, ya şu t üzerinde denk gelen yeri hesaplayabiliriz değil mi?
+
+644
+01:40:17,076 --> 01:40:23,355
+Ki o zaten neler yaklaşık değeri işte oluyordu bizim. Neler yaklaşıkımız oluyordu. Neler yaklaşıkımız oluyordu.
+
+645
+01:40:23,355 --> 01:40:31,755
+Çünkü fonksiyonu x eşitir, a artı 2x'lerindeki değerine hesap almak zor. Bunun yerine neler yaklaşık değeri almak mümkün.
+
+646
+01:40:31,755 --> 01:40:37,636
+Şimdi dolayısıyla şu yeşille çizdiğim ifade aslında delta'ya ifademiz.
+
+647
+01:40:37,844 --> 01:40:51,863
+f'a artı zaten buradan belli. f'a artı dx eksi kim? f'a değer. Şuradan belli. Öte yandan şu delta'la dediğim ifade değer de f üstü a dx. Bunun yukarıda şurada bakın nasıl çıktığını söyledik, gördük zaten.
+
+648
+01:40:53,244 --> 01:40:58,043
+O da ne ile ne ile aslında? Şurayı isterseniz biraz daha net göstereyim.
+
+649
+01:41:03,060 --> 01:41:16,396
+x kare artı 2x, f'
+
+650
+01:41:29,395 --> 01:41:31,055
+şuradan, şu kırmızı yoldan geri olacak.
+
+651
+01:41:35,968 --> 01:41:48,087
+x kare artı 2x, f'
+
+652
+01:41:34,452 --> 01:41:35,452
+Şurası olacak, tamam mı?
+
+653
+01:41:37,212 --> 01:41:39,952
+Bu bizim delta'ya ifade ediyoruz, yeşil etçizli.
+
+654
+01:41:40,832 --> 01:41:44,252
+Şimdi şu t ile, şöyle kadar olan kısım da delta'ya ifade ediyoruz.
+
+655
+01:41:44,252 --> 01:41:46,152
+Şurada bulduğumuz değer bu aslında.
+
+656
+01:41:47,051 --> 01:41:52,952
+Bunu siz şey yapmayacaksınız, bulamayacaksınız. Biz geometrik anlamı olarak bize şey yapıyoruz.
+
+657
+01:41:55,152 --> 01:41:56,252
+Şu mesafe.
+
+658
+01:41:59,604 --> 01:42:07,783
+Evet, bu. Delta L ifademiz bu. Bu kadar. Delta L dediğimizde burası zaten. Daha büyük olan kısım.
+
+659
+01:42:13,971 --> 01:42:16,252
+Artık bunlar da böyle yorumlayabilirsiniz.
+
+660
+01:42:18,752 --> 01:42:22,192
+Bir tane örnek yapalım.
+
+661
+01:42:23,031 --> 01:42:25,271
+Tabi bu da diferansiyelerde kaşık.
+
+662
+01:42:29,524 --> 01:42:32,604
+değerlerin bulunması değil mi? Burada artık işin içine geliyor.
+
+663
+01:42:33,043 --> 01:42:34,283
+Mesela diyoruz ki,
+
+664
+01:42:40,051 --> 01:42:41,072
+verilen bir
+
+665
+01:42:44,404 --> 01:42:44,963
+neyse.
+
+666
+01:43:01,908 --> 01:43:03,208
+Şimdi arkadaşlar burada
+
+667
+01:43:03,208 --> 01:43:08,068
+y eşitir fx verildiğinde
+
+668
+01:43:08,068 --> 01:43:10,028
+bunun biz
+
+669
+01:43:10,028 --> 01:43:12,068
+d'ye diferansiyeli biraz önce
+
+670
+01:43:12,068 --> 01:43:14,608
+f üstü x çarpı
+
+671
+01:43:14,608 --> 01:43:17,507
+d x ya da delta x şeklinde tanımlandığını gördük.
+
+672
+01:43:18,528 --> 01:43:20,507
+Şimdi bu fonksiyonun tabi x'in bir
+
+673
+01:43:20,507 --> 01:43:23,388
+delta x ya da d x artımına karşılık
+
+674
+01:43:23,388 --> 01:43:27,328
+d x ya da delta x artımına karşılık
+
+675
+01:43:27,615 --> 01:43:40,915
+fonksiyonla bir neyi olur? Bir delta'ya karşı bir olur. Artım olur daha doğrusu. Bu da şudur. f artı delta x, eksi fx. Değil mi? Herhangi bir ilk noktası için tabii söylüyorum.
+
+676
+01:43:41,956 --> 01:43:53,675
+Differensiyet tahmini zaten burada söylemiştik. dg eşittir bu. Ya da f üstü x, d'lik de diyebilirsin. f üstü x, delta x pardon. Bundan da bir x'ini bile alabilirsin.
+
+677
+01:43:54,579 --> 01:43:57,479
+Dolayısıyla şu yaklaşım farkına baktığımız zaman
+
+678
+01:43:57,479 --> 01:43:58,979
+delta
+
+679
+01:43:58,979 --> 01:44:04,979
+buna delta y eksi d y eksi
+
+680
+01:44:04,979 --> 01:44:06,579
+d y eksi
+
+681
+01:44:06,579 --> 01:44:07,680
+şu farkı bahçesi
+
+682
+01:44:07,680 --> 01:44:11,159
+delta y eksi
+
+683
+01:44:11,159 --> 01:44:13,880
+f üstü a
+
+684
+01:44:13,880 --> 01:44:15,940
+teraküme nokta içinde konuştuğumuzda
+
+685
+01:44:15,940 --> 01:44:17,800
+çarpı delta y eksi olur.
+
+686
+01:44:18,996 --> 01:44:22,515
+Bu ifadeyi de delta y ifadesini yukarıdaki anlamda geri yazalım.
+
+687
+01:44:23,255 --> 01:44:25,435
+f artı delta x,
+
+688
+01:44:26,716 --> 01:44:28,235
+eksi fx,
+
+689
+01:44:29,115 --> 01:44:30,435
+o arada f'a demek lazım artık.
+
+690
+01:44:32,136 --> 01:44:33,695
+Şöyle daha yapmamız lazım.
+
+691
+01:44:35,076 --> 01:44:35,775
+Şöyle.
+
+692
+01:44:42,355 --> 01:44:54,675
+atılamayı yanlış yapmam. x'i f üstü a, dx. Şimdi bunu birazcık düzenleyeceğim. Şurası bizim delta f'imiz zaten.
+
+693
+01:44:54,675 --> 01:45:09,415
+Bunu ben delta x'e çarpıp bölürsem, eğer şu ifadeyi, ne olur? f a artı delta x, eksi f a bölü delta x.
+
+694
+01:45:18,068 --> 01:45:39,068
+x delta x isteyeceğim şöyle. Hatta delta x ne yazabilirim daha iyi olur. Şöyle yapalım. İfadeyi değiştirmemiş oldu değil mi? Gördüğünüz gibi. Şu fark, tabii bu fonksiyonun aslında limit ne yapalım? Delta x sıfıra giderken aslında türevdir değil mi? Dolayısıyla türev ile...
+
+695
+01:45:39,572 --> 01:45:49,572
+onun yani türev limit ifadesi, limitsiz ifadesi, onun türev değerine artmak fark bir epsilon kadardır, küçük bir sayı kadar değil mi?
+
+696
+01:45:49,572 --> 01:45:56,572
+Dolayısıyla buradan bulacağımız sonucu epsilon çarpı delta x olur. Bu bize ne söylediler?
+
+697
+01:45:56,572 --> 01:46:04,572
+Delta x burada sıfıra yaklaşırken aslında bu şuradaki fark ifademizin efsusal değerine yaklaştığını bize söyler değil mi?
+
+698
+01:46:07,956 --> 01:46:14,316
+Tabii delta x'in sıfıra gitmesi, doğal olarak epsilon sıfıra gitmesi. Anlamı, kaynağı denk gelecektir.
+
+699
+01:46:15,376 --> 01:46:20,756
+Ve buradan astık amacımız şu, delta y ifadesi ya da delta x ifadesi eşittir.
+
+700
+01:46:21,236 --> 01:46:28,316
+Bu ifadeye bağlı olarak dy epsilon delta x artı f üstüla dx olarak karşımda çıkar. Yani şu.
+
+701
+01:46:33,492 --> 01:46:35,412
+delta y ifademiz eşittir.
+
+702
+01:46:37,212 --> 01:46:40,872
+d y artı epsilon delta x.
+
+703
+01:46:41,471 --> 01:46:42,391
+Şimdi bu ne demektir?
+
+704
+01:46:42,932 --> 01:46:49,131
+Delta y artımı, x'in delta x'e sonuna karşı delta fonksiyonu aldığı delta y artımının, bakın kime bağlı?
+
+705
+01:46:49,692 --> 01:46:51,492
+Difansiyele bağlı, direkt ne yapmış?
+
+706
+01:46:51,612 --> 01:46:53,051
+Tabii bir epsilon polis sayısında.
+
+707
+01:46:53,532 --> 01:46:55,272
+Difansiyele bağlı eldetmiş olduk.
+
+708
+01:46:55,872 --> 01:46:56,592
+Dolayısıyla biz,
+
+709
+01:46:58,131 --> 01:47:05,931
+Şu fark ifadesinde bir f, a artı delta x ifadesini bulmak istediğimiz zaman, bu delta y'ye yerine ekimi d'ye diferansiyelini kullanabiliriz.
+
+710
+01:47:06,291 --> 01:47:08,671
+Yaklaşık bir tane.
+
+711
+01:47:22,515 --> 01:47:29,395
+örnek güzel değil, hoşuma gitmedi. Yani ben şöyle bir tane vaktiniz var mı? Örnek yapalım.
+
+712
+01:47:36,180 --> 01:47:39,060
+biraz önceki mesela örneklerden biri olabilir ki, 1 artı.
+
+713
+01:47:48,564 --> 01:47:51,564
+yönteminden bir noktasında ifadesini verenabilir.
+
+714
+01:47:51,564 --> 01:47:54,564
+Ne diyeceğiz? Örneğin,
+
+715
+01:47:56,564 --> 01:47:59,307
+fx'estir,
+
+716
+01:48:04,532 --> 01:48:06,032
+x fonksiyonunun, öyle değilim.
+
+717
+01:48:08,432 --> 01:48:09,032
+Korlayacağım.
+
+718
+01:48:10,192 --> 01:48:11,471
+x'e şiştir
+
+719
+01:48:11,471 --> 01:48:16,192
+0.2, öyle değilim.
+
+720
+01:48:19,636 --> 01:48:21,176
+yaklaşık bir yerini.
+
+721
+01:48:24,756 --> 01:48:25,996
+Diffenselli bursun.
+
+722
+01:48:36,083 --> 01:48:42,043
+Şimdi burada tabii x'e 0.2 verilmiş. Yani aslında f 0.2 değeri değil mi? Bulmak istemiyorum. Bak.
+
+723
+01:48:42,923 --> 01:48:53,443
+f 0.2 değeri. Ben bunu şöyle yazayım isterseniz. f 0 artı, bunu şöyle yazabilir miyim? 0 artı 0.2.
+
+724
+01:48:55,203 --> 01:49:03,363
+Değil mi? Bu ifade bununla aynı. İşte bu benim. Aslında x artı delta x anlamına kaçlık gelecek?
+
+725
+01:49:03,956 --> 01:49:07,796
+Demek ki x seçti, yani yukarıdaki ya da a diyebilirsiniz.
+
+726
+01:49:07,996 --> 01:49:08,796
+A diyelim bir sesini.
+
+727
+01:49:12,851 --> 01:49:27,492
+a eşittir, 0 ve delta x'in de burada ne olur artık? 0 nokta 2. Demek buradaki, değil bu yüzden diferansiyel bulacağım. Yani bu ifade eşittir, tabi delta y'yi tekrar yazıyorum.
+
+728
+01:49:29,611 --> 01:49:38,252
+Delta y eşittir, f a artı delta x, eksi f a ifadesi.
+
+729
+01:49:38,528 --> 01:49:40,368
+Ben burada bulmak istediğim değer bu.
+
+730
+01:49:41,328 --> 01:49:44,548
+f a artı delta x eşittir.
+
+731
+01:49:45,408 --> 01:49:48,128
+Delta y artı f a olur.
+
+732
+01:49:48,788 --> 01:49:52,708
+Şimdi ben delta y yerine, yukarıda da bir söylediğim gibi, neyi bulacağım? Fonksiyonu.
+
+733
+01:49:53,368 --> 01:49:54,568
+D yi diferansiyeli bulacağım.
+
+734
+01:49:54,747 --> 01:49:56,148
+A artı f a'yı bulacağım.
+
+735
+01:49:56,688 --> 01:50:00,000
+Dolayısıyla bu benim f 0 artı sıfır ya da f 0 nokta iki değerini yapabiliyor.
+
+736
+01:50:00,000 --> 01:50:06,859
+kaç kuralar olduğunu bize gösterecek. O halde, önde diferansiyeti bulalım. D'ye eşittir.
+
+737
+01:50:08,420 --> 01:50:16,600
+f' x dx ya da delta x ifadesinden. 1 bölü 2 kök x değil mi? Türevimiz yazdık. Çarpı d x.
+
+738
+01:50:17,279 --> 01:50:25,500
+Buradaki değerlere a değeri için d'ye ifadesi değil mi? a'daki değeri x'e eşittir. a'da. d x'e sıfır 2deki değeri.
+
+739
+01:50:30,036 --> 01:50:32,335
+O da 1,7,1 yanlışlık yaptık ama her yanlışlık.
+
+740
+01:50:33,536 --> 01:50:40,036
+Az, bu sıfırda türevinebilir değil. O yüzden bunu ne yapalım?
+
+741
+01:50:40,136 --> 01:50:42,835
+Bunu 1 artı x yapalım arkadaşlar. Evet, onu düşünmedik.
+
+742
+01:50:43,415 --> 01:50:44,456
+Başka da teslim için.
+
+743
+01:50:46,036 --> 01:50:48,335
+Hatta şimdi isterseniz 1.2 yapalım.
+
+744
+01:50:50,235 --> 01:50:53,755
+Bakın 1.2 dene yapalım. O da kolay saplanabiliyor değil mi?
+
+745
+01:50:54,435 --> 01:50:57,515
+Fonksiyonu değiştireceğim. Ben bunu değiştirdim. 1.
+
+746
+01:50:58,100 --> 01:51:00,240
+Doraçları A ne oldu? 1 oldu.
+
+747
+01:51:01,240 --> 01:51:01,720
+Tamam mı?
+
+748
+01:51:03,520 --> 01:51:04,539
+Başka kullandık mı?
+
+749
+01:51:07,360 --> 01:51:08,520
+Şunu kullandık.
+
+750
+01:51:14,664 --> 01:51:31,664
+x kare artı 1x, f'
+
+751
+01:51:13,844 --> 01:51:17,764
+Bilgisiz yeri çıkıyor. Bakalım.
+
+752
+01:51:19,623 --> 01:51:23,283
+1.2, bak burada daha iyi görüyorsunuz. Daha iyi oldu bu aslında.
+
+753
+01:51:26,724 --> 01:51:30,543
+1 artı, evet. 0.2 dedim. Bak bu daha iyi oldu.
+
+754
+01:51:31,083 --> 01:51:34,064
+Dolayısıyla A değeri 1, delta x'imiz de 0.2.
+
+755
+01:51:34,984 --> 01:51:37,283
+x'e çıra yani A eşit 1'deki değerimiz.
+
+756
+01:51:39,283 --> 01:51:40,043
+1 bölü 2.
+
+757
+01:51:40,884 --> 01:51:47,004
+çarpı kim? 0.2. 0.2 de nedir? 2 bölü 10 değil. Yani 1 bölü 10.
+
+758
+01:51:49,423 --> 01:51:50,863
+Öyle değil mi? 2 bölü 10, 1 bölü 10.
+
+759
+01:51:52,783 --> 01:51:58,703
+Demek D ifademiz bu. Öte yandan F ifademiz zaten A eşli 1 için direkt nedir? 1.
+
+760
+01:52:00,504 --> 01:52:07,244
+Bu ifadeyi yaptık. 1 bölü 10 artı 1. Yani 11 bölü 10.
+
+761
+01:52:09,555 --> 01:52:15,555
+kim bu? f artı delta x ifademizin yaklaşık değeri. Yani aslında 1.2'nin yaklaşık değeri.
+
+762
+01:52:20,148 --> 01:52:27,688
+Aynı değeri siz, neyle de bulabilirsiniz? Aynı değeri, birey yaklaşım kullanarak da bulabilirsiniz. Tamam mı arkadaşlar? Peki.
+
+763
+01:52:29,327 --> 01:52:30,747
+Kuvarlık söyleyeceklerimiz bu kadar.
+
+764
+01:52:33,688 --> 01:52:36,768
+Sorularınız varsa arkadaşlar, sorularınızı alabiliyorum.
+
+765
+01:52:38,148 --> 01:52:40,048
+Şöyle bakıyorum, çak olursak.
+
+766
+01:52:42,131 --> 01:52:46,652
+Haftaya artık daha fazla türev uygulamalarına gireceğiz.
+
+767
+01:52:46,652 --> 01:52:48,611
+Baş baş, A-Tanazaran fonksiyonları.
+
+768
+01:52:49,051 --> 01:52:52,051
+Burada alınmışız ama bunu sonra da diyebiliriz. Çok önemli değil.
+
+769
+01:52:52,851 --> 01:52:55,171
+Sonra da Trans-Sanar fonksiyonlarına devam edeceğiz.
+
+770
+01:52:59,444 --> 01:53:02,704
+Evet arkadaşlar, sorumuz varsa sorabilirsiniz.
+
+771
+01:53:08,307 --> 01:53:09,807
+yürürüsün geçiyor.
+
+772
+01:53:14,868 --> 01:53:38,868
+Şimdi arkadaşlar, şöyle bir şey var. Bu ders notların tabii kayıt olarak var. Onların çıktısını şey yapmaya çalıştım ama böyle hani kayıt yaparken öyle bir çıktı falan vermiyor. Geçen haftakini indirmiştim. Bu haftakini de indirebilirim şöyle. Sebebrediğim zaman sebebredi. Onu sonradan fark ettim ben. Dolayısıyla...
+
+773
+01:53:43,764 --> 01:53:48,164
+Eğer arkadaşlarımız varsa, not tutan arkadaşlarımız mutlaka vardır.
+
+774
+01:53:48,164 --> 01:53:52,564
+Ondan atarsa iyi olur. Bence güzel olur.
+
+775
+01:53:52,564 --> 01:53:58,963
+Daha iyi olur. Yani benim yazıma göre daha düzgün belki olmuştur. Daha az yer kaplar.
+
+776
+01:53:58,963 --> 01:54:10,564
+Süpersin. O zaman şey yaparız, ne denir? Arkadaşlarımız buradan [öğrenci]'dan alsınlar.
+
+777
+01:54:11,604 --> 01:54:15,604
+[öğrenci] arkadaşımızdan aslında. Telefon, numara, tv, de sağ olsun arkadaşımız.
+
+778
+01:54:16,804 --> 01:54:24,104
+Dolayısıyla şey, şükür, ben de istesezim. Gerçi almama gerek yok. Her zaman sizinle görüşürüm de. Sıkıntı yok.
+
+779
+01:55:07,731 --> 01:55:32,051
+Sen bütün notları tuttuysan, yani istersen şey yap, ben havayı sivitleyebilirim. Hani belli bir haftaya kadar. Olur mu? Benim mailim var. Maile gönderebilirsen. İstemdeki mail ile. O da olabilir, tabii o da olabilir. Tamam, tamam, sen bilirsin. Peki.
+
+780
+01:55:33,908 --> 01:55:40,228
+Anladım, anladım. Boz. Hani şeyden, çünkü derse katılanma, katılmayanma, tabii herkes ulaşımaya bilir.
+
+781
+01:55:42,648 --> 01:55:49,688
+Bu dersi mi almadın sadece? Bu derste ben şimdi sevgi yapayım, indireyim aşağıya. Ona da olmazsa, ona da öyle şey yaparız.
+
+782
+01:55:51,008 --> 01:55:58,048
+Tamam. Peki arkadaşlar, görüşmek üzere. Ben önce şunu sevgimi tutmadan.
+
+783
+01:56:02,484 --> 01:56:08,584
+Whiteboard'a sevgilendi. Çok güzel. Bu önemli bir şey yani. Sonra unutuyoruz.
+
+784
+01:56:09,684 --> 01:56:17,444
+Notlar elimizden açıklıyor. Peki arkadaşlar, kendinize iyi bakın. Bu arada 29.12. Cumhuriyet paylanımız. Hepimize kutlu olsun.
+
+785
+01:56:20,979 --> 01:56:30,579
+hem biraz nefes almış olacağız hem de derslerimizi, işlerimizi evimizden takip etmeye devam edeceğiz. Tamam. Haftaya görüşmek üzere. Kendinize iyi bakın. Görüşmek üzere arkadaşlar. Hoşçakalın.
