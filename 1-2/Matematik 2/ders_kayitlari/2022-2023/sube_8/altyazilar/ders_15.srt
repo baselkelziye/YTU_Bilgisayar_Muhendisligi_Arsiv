@@ -1,0 +1,3771 @@
+1
+00:01:22,164 --> 00:01:23,164
+bir şey.
+
+2
+00:01:37,492 --> 00:01:47,012
+Bugün, kötü anında iki değişkenli fonksiyonu da, özellikle kanun hükümesini, sanladım değil mi?
+
+3
+00:01:47,012 --> 00:01:55,371
+Biraz seviyelerden basit, özellikle yüceye var, tabii ki değişkenli fonksiyonu grafik üretimini, özellikle yüceye belirtir.
+
+4
+00:01:55,371 --> 00:01:57,371
+Ve...
+
+5
+00:01:59,251 --> 00:02:05,051
+İçerikli fonksiyonlar da limit özellikle. Üzerine limit kabarını dönüyoruz ve sürekli tabi.
+
+6
+00:02:05,051 --> 00:02:19,252
+Tamamen verip, limite bol bol örnek verip. Özellikle limitin yokluğu için çift noktası. Çünkü limitin bağlığını göstermek biraz daha eşek ettiği bir zor iş.
+
+7
+00:02:19,252 --> 00:02:24,252
+Bunu kullanarak bilinen, tek değişkenli fonksiyonlar da ki uygulamalar da.
+
+8
+00:02:24,563 --> 00:02:36,363
+Tek bir değişikliğine indirip, o yaklaşım içerisinde, sıkıştırma teoremiyle, sandviç teoremiyle, teoremi gibi, bazı temel sonuçlarına bir kullanma şansımız var.
+
+9
+00:02:36,483 --> 00:02:39,084
+Onlara indirilmek için, tak meclisle vasıtasıyla işte.
+
+10
+00:02:40,764 --> 00:02:51,204
+Burada, amandibiti yokluğu için, bir noktada mesela orijinde mesela bir kimi tıkar ediyorsak, komisyon diyebilirim ki, orijinde tamam mı olmasın, sıkır sıkır da.
+
+11
+00:02:51,860 --> 00:02:56,860
+Ama sıfır sıfra yakata da nedir? Şu noktalarda civarının tanımlı olduğunu bahsediyoruz.
+
+12
+00:02:56,860 --> 00:03:04,860
+Bu durumda yaklaşım için, bir eğri boyunca, doğru boyunca, o yüzden geçen doğru eğri boyunca, bir takım taramalar yapabiliyoruz.
+
+13
+00:03:04,860 --> 00:03:17,420
+Eğer iki farklı yol boyunca yaklaştığımızda, eğer indikler farklı çıkıyorsa, o zaman limitin tek yoluna, varsa, olsaydı yani var olsaydı tek yoluna zorunlu olur.
+
+14
+00:03:18,611 --> 00:03:26,291
+kriterlikle limit yok diyebiliriz. Ama biz limit yok diye için çift protest deyip ona da bir örneği vermiştik.
+
+15
+00:03:28,351 --> 00:03:41,072
+Bugün kısmi türevlere devam ediyoruz arkadaşlar. Yani iki değişikliğine fonksiyonlar aracılıkta kısmi türevini gözlerin altında. Her bir aslında kısmi türev.
+
+16
+00:03:42,068 --> 00:03:48,987
+Her bir değişikene göre şimdi tanıyacağımız kısmı türev, bildiğimiz normal fonksiyonardaki türevlerle benziyor.
+
+17
+00:03:49,927 --> 00:03:56,008
+Ve geometrik olarak tabii anlamlı olarak belli bir düzlemle yüzeyi kestirip düşünülüyor.
+
+18
+00:03:56,187 --> 00:04:00,147
+O yüzeyi kestiği noktada bir eğilir meydana gelir.
+
+19
+00:04:00,147 --> 00:04:04,527
+O düzlem üzerindeki eğilir bir sınırlar da aynı zamanda bir düzlemle.
+
+20
+00:04:05,395 --> 00:04:12,715
+Bu eğrinin işte verilen bir, sıfır, neyim? Yerçiye sıfır düzlemin, dikdüzlem ödüldü. Bu düzleminiz kestiği bir eğri oluşturdun.
+
+21
+00:04:12,715 --> 00:04:22,316
+Eğri oluştuğu zaman da orada ne var? Bir, işte x0 noktası seçtik. O zaman x0 yedimizde de bir P0 noktası vardır. Koordinatlı bir P0 noktası o zaman.
+
+22
+00:04:22,316 --> 00:04:33,235
+Bu eğrin nedir? Tt'nin eğimini konuşabiliriz. O zaman neye göre? İşte x'e göre pre var. Mesela fonksiyon, dedeşçilip fx'e fonksiyonlar.
+
+23
+00:04:34,708 --> 00:04:36,888
+Şimdi o zaman başlık olarak skneede alıyoruz.
+
+24
+00:05:05,588 --> 00:05:06,048
+Şimdi
+
+25
+00:05:10,771 --> 00:05:24,012
+x0, y0 noktası, bir zhfx'e fonksiyonunun, tanım bölgesinde bir nokta ise,
+
+26
+00:05:38,899 --> 00:05:42,399
+G eşçer, E sıbır dik düzeni,
+
+27
+00:05:48,276 --> 00:05:49,896
+Yani, çift etiküsü izi, ne?
+
+28
+00:05:56,276 --> 00:05:58,276
+Google Edge FxC'nin grafiği,
+
+29
+00:05:58,276 --> 00:06:00,276
+bu da ne de?
+
+30
+00:06:00,276 --> 00:06:02,276
+Sertesi FxC 0.
+
+31
+00:06:07,348 --> 00:06:08,408
+Boyunca kesiyoruz.
+
+32
+00:06:14,291 --> 00:06:21,291
+Ben ona şöyle bir rakip de söyleyeyim. Çok ötürü de baktınız, hemen gelebilirim.
+
+33
+00:06:44,019 --> 00:06:44,740
+Düş...
+
+34
+00:06:58,355 --> 00:07:01,355
+Biz yapalım şöyle bir grafizmi çalışalım şöyle.
+
+35
+00:07:17,427 --> 00:07:26,048
+Şimdi bu da bir Z-iştir, Y-iştir, Y-0 düzlemli gözünden alalım. Yüzeyimiz de, şöyle bir yüzey olsun.
+
+36
+00:07:32,180 --> 00:07:34,180
+Şöyle bir zıbrayınca daha çekelim.
+
+37
+00:07:35,639 --> 00:07:37,740
+Evet, şöyle açık bırakalım orayı.
+
+38
+00:07:43,379 --> 00:07:44,699
+Tadabı, Tadabı, Tadabı.
+
+39
+00:07:51,923 --> 00:07:53,515
+Burada şöyle bir...
+
+40
+00:07:57,588 --> 00:08:01,567
+Bunu biz kale dolu unuttuğumuzda şöyle.
+
+41
+00:08:22,708 --> 00:08:28,708
+Şimdi bakın bu düzen, evriyi kestiği için, yüzeyi kestiği için yapmak gibi düşünmemişsiz.
+
+42
+00:08:28,708 --> 00:08:33,708
+Yüzey üzerinde şöyle bir evri oluşacaktır. Yüzeyin şeklini açacaktır.
+
+43
+00:08:33,708 --> 00:08:38,708
+Evriyi şurada böyle yapın gibi olduğu için o da öyle olacaktır.
+
+44
+00:09:02,451 --> 00:09:07,052
+O yüzden bunun kestiği cücünden de şöyle bir ili oluşuyor. Bu ili başka bir şey olabilir.
+
+45
+00:09:07,052 --> 00:09:10,052
+x0 katılacak.
+
+46
+00:09:10,052 --> 00:09:14,052
+Bunu biraz daha sonra da ortaya çekeceğiz. Çok önemli.
+
+47
+00:09:14,052 --> 00:09:22,052
+Şurada mesela, bir x0 için, tamam mı? Şu nokta px0, y0, y0 diyebilirim.
+
+48
+00:09:30,451 --> 00:09:35,051
+ve x0, y0, ve z de tabii, z0 da, eksi 0 da.
+
+49
+00:09:36,851 --> 00:09:38,432
+Şimdi bu noktada ne var?
+
+50
+00:09:39,791 --> 00:09:41,932
+Fonksiyonun bir t-t söz konusu olabilir.
+
+51
+00:09:47,668 --> 00:09:52,148
+Şu evi tiyatro tutamayız. Tiyatro tutamayız.
+
+52
+00:09:53,307 --> 00:09:55,668
+Alman bir doğru tutamayız ama, renk tutamayız.
+
+53
+00:10:04,628 --> 00:10:05,628
+Şunu görmesin.
+
+54
+00:10:11,956 --> 00:10:14,635
+Kubizim, ne otanak biter, tüm kutup.
+
+55
+00:10:19,796 --> 00:10:30,396
+Yani bu y eşitliği y sıfır düzlemi burada z eteci de fiksiyonlarında kestir.
+
+56
+00:10:30,396 --> 00:10:35,307
+Düzleminin z eteci fiksiyonlarında kestir.
+
+57
+00:10:39,572 --> 00:10:45,192
+İzlediğin, ilerkes mi?
+
+58
+00:10:47,912 --> 00:10:50,072
+Şu bizim zetestekçikimiz.
+
+59
+00:10:55,731 --> 00:10:57,731
+Eğri şu eğri,
+
+60
+00:10:57,731 --> 00:11:07,731
+ama işte mavi de deftesi buyduk. Daha da şey yapabilir tabii yani. Şunu deniz etirsek, bu tarafa da giderken istekleriz. Şey yapabiliriz, çok önemli.
+
+61
+00:11:07,731 --> 00:11:09,731
+Belki şöyle anlattı.
+
+62
+00:11:09,731 --> 00:11:11,275
+Anlılabilir.
+
+63
+00:11:49,908 --> 00:11:55,548
+Sınavı arkadaşlar, bu konu dahil değil. Yedinci haftanın sonuna kadar sorumlusunuz.
+
+64
+00:11:58,147 --> 00:12:06,268
+Yani iki değişikliğe ve fonksiyonlar da sürekliye kadar. Limitlikteye dahil, tam hükümeti bulma vs. onlar dahil, tamam mı?
+
+65
+00:12:09,548 --> 00:12:16,168
+Öküm konuda dahildi ama işte mesela normal konumuzu görmemiz gerekecek.
+
+66
+00:12:17,235 --> 00:12:19,076
+Şöyle bir eğitim istedim.
+
+67
+00:12:30,868 --> 00:12:40,468
+Şöyle bir şey, şurada bir, ne var? Taylor, Monta da, şu Taylor. Monta'nın kodantal eksipüle, satıbıya satıbıdır.
+
+68
+00:12:48,115 --> 00:12:51,655
+Şimdi, ne dedik? Keser dedik.
+
+69
+00:12:54,755 --> 00:12:59,675
+Bu aslında, dediğimiz gibi, Z, Teşkil etik, S, S, 0 komisyonu, S, S, 0'da düzenli.
+
+70
+00:13:00,175 --> 00:13:06,135
+Bu yüzden de yata koordinat X, dike koordinat S, Z'de doğru, Y değerli, S, 0'da bitemiş.
+
+71
+00:13:06,975 --> 00:13:09,375
+Dolayısıyla, Y bir değişken değil, değil mi? Aynen.
+
+72
+00:13:10,868 --> 00:13:16,028
+F fonksiyonu x'i biretik 1.2 teşkene türevi, x'i 0'ın, fx'i 0'ındadır.
+
+73
+00:13:16,087 --> 00:13:17,807
+Biz de sizinle adık laboratuvarı tanınmış.
+
+74
+00:13:17,807 --> 00:13:21,048
+Şimdi, F fonksiyonunun,
+
+75
+00:13:23,608 --> 00:13:26,228
+x'i 0'ı y 0'daki,
+
+76
+00:13:30,451 --> 00:13:31,652
+İlk değişkenine göre.
+
+77
+00:13:33,772 --> 00:13:34,352
+İkise göre.
+
+78
+00:13:41,203 --> 00:13:43,163
+Türevi, arkamızı kısımcılığına diyeceğiz.
+
+79
+00:13:49,076 --> 00:13:50,395
+Fx'e sıfırı
+
+80
+00:13:56,755 --> 00:14:03,076
+x'e ettir, x'e bu noktasındaki, x'e göre, türev ve katlıdır.
+
+81
+00:14:15,059 --> 00:14:17,619
+Ayrı türev, artık türev değil de bilinem türev.
+
+82
+00:14:22,659 --> 00:14:26,419
+Çünkü kısıt türev de buna yok. İki değişkenlerle kısıt türev kullanacağız.
+
+83
+00:14:26,419 --> 00:14:33,539
+Ama normalde tek değişkenlerle türev kavramı kullanabiliriz. X'e göre. Artık bu olsaydı x değişkenlerle bağlı koksü olacaksa x'e göre türev diyeceğiz.
+
+84
+00:14:37,139 --> 00:14:40,179
+Benzer şey ne için diye yazanabiliriz?
+
+85
+00:14:40,820 --> 00:14:50,220
+y değişkenine göre türen bir şey, aynı yorum yapabiliriz. Şu altta mesela y eşittir, bu y eşit, y sıfır değil. Tamam mı? Şurası y eşit, y sıfır.
+
+86
+00:14:53,300 --> 00:14:55,320
+Yani bu meselesi direkt şey diyelim.
+
+87
+00:14:57,800 --> 00:15:00,060
+Direkt y sıfır diyelim. Şurası y sıfır.
+
+88
+00:15:05,779 --> 00:15:07,519
+Şimdi esas tanım şu arkadaşlar.
+
+89
+00:15:15,316 --> 00:15:16,316
+Bu türev,
+
+90
+00:15:18,716 --> 00:15:24,016
+Tembolik olarak böyle bir de f1dx, iki noktada denildi, tanımladık, df1dx eşittir.
+
+91
+00:15:25,016 --> 00:15:28,016
+Tabii v'den x'ı 0'y'se iki noktada yediye tartık.
+
+92
+00:15:29,716 --> 00:15:33,216
+x'ı bu ds'in noktasında, fx'e fonksiyonu, cest denildi, kısmi türev.
+
+93
+00:15:35,416 --> 00:15:38,916
+Şöyle bir limit olarak tanınacak. Normal türevde limit de tanınamıyor ya.
+
+94
+00:15:40,532 --> 00:15:44,312
+H0'a giderken sadece hangi yönde? X değişkenli yönde artımda.
+
+95
+00:15:45,272 --> 00:15:57,272
+X0 artı H1 1'ye 0, eksi Fx0'ye 0, bölü, şöyle, ve H.
+
+96
+00:16:00,252 --> 00:16:02,632
+Tabi limitin var olması koşuluyla.
+
+97
+00:16:04,572 --> 00:16:05,572
+Bu türev böyle tanınır.
+
+98
+00:16:07,604 --> 00:16:19,436
+göre türev denir. Bu türev, yani kısmi türev, limitin var olması karşılığında,
+
+99
+00:16:23,316 --> 00:16:28,696
+olarak, bir bitirin varolak, bu şunlu etenler.
+
+100
+00:16:35,379 --> 00:16:38,539
+İlk çeşkele ile
+
+101
+00:16:51,379 --> 00:17:04,500
+Şimdi, türev tabi sembolü olarak, yani yukarıda biz hani direkt intisaltımda aldık ama normalde X ve X0'daki türevi, başka gösterilme olarak da düşünebilirsiniz.
+
+102
+00:17:04,500 --> 00:17:10,500
+Ama genel olarak tabi, 1 noktada kısım türevi, değişken beliriz, artık onu öyle almamız da gerek yok.
+
+103
+00:17:11,440 --> 00:17:18,519
+Yani herifin X'e göre kısım türevi, direkt buraya, yani şöyle yapalım, işte gelebiliriz, X0'ya 0 noktada değil mi?
+
+104
+00:17:18,867 --> 00:17:19,867
+Bu.
+
+105
+00:17:22,327 --> 00:17:23,327
+Veya
+
+106
+00:17:25,027 --> 00:17:39,867
+Şöyle küçük fx diyelim, sadece x'e göre değişik, x değişkene göre fonksiyonu, böyle x'e göre yukarıda yazdığımız gibi z'in x'e göre türevi, x'e 0'ya 0'nın ortasındaki.
+
+107
+00:17:44,307 --> 00:17:46,748
+Bunların her biri bir noktadaki türevi gösterdi.
+
+108
+00:17:46,748 --> 00:17:47,748
+Tamam.
+
+109
+00:17:47,748 --> 00:17:49,467
+Bir noktadaki türev.
+
+110
+00:17:49,467 --> 00:17:53,907
+Ama genel halde, direk türev sembolü derdi. Buna göre,
+
+111
+00:17:53,907 --> 00:17:59,107
+Buna latex türev sembolü derdi.
+
+112
+00:17:59,107 --> 00:18:10,307
+fx, df bölü dx, zx, bazen zx de kullanılır, veya dz bölü dx.
+
+113
+00:18:12,019 --> 00:18:16,019
+Bunlar türev sembolü demizdir. Kısmi türev sembolü.
+
+114
+00:18:18,019 --> 00:18:29,019
+X'e göre, X değişkene göre yani, kısmi türev sembolü demizdir.
+
+115
+00:18:36,915 --> 00:18:39,836
+Şimdi y'ye göre türev de aynı şekilde gösterelim, tanımlayalım.
+
+116
+00:18:41,715 --> 00:18:53,635
+Y'ye göre, hatta şöyle diyelim, bir x0, y0 noktasındaki, noktasındaki, setiştir etik şe fonksiyonunu,
+
+117
+00:19:00,211 --> 00:19:02,571
+Y değişkenine böyle kısım türedi.
+
+118
+00:19:04,571 --> 00:19:05,172
+Y'ye göre.
+
+119
+00:19:08,723 --> 00:19:17,423
+Kısmi türevi, ne limitin var ona suçuyla.
+
+120
+00:19:27,124 --> 00:19:34,983
+Onda d bölü d'ye, burada yine x'e plus'ı yazalım.
+
+121
+00:19:38,264 --> 00:19:43,983
+Eşittir, limit, yani h'ye kullanabiliriz tabii ki.
+
+122
+00:19:45,344 --> 00:19:53,423
+Yerindeki değişim olacak şimdi, x0 bölü y0 artı h eksi, fx0 y0 bölü.
+
+123
+00:19:55,124 --> 00:19:56,124
+Önükeğe
+
+124
+00:19:56,124 --> 00:19:59,023
+Orarak
+
+125
+00:20:08,723 --> 00:20:14,723
+Yine kısım türev sembolü yukarıda, x kaldıracaksınız, y'ye göreceksiniz, başka bir şey değil.
+
+126
+00:20:14,723 --> 00:20:21,611
+Yani, bu türevler, bu da bu türev, bu kısım türev.
+
+127
+00:20:25,044 --> 00:20:28,044
+İşte et ye, ve ekleyeceğim.
+
+128
+00:20:32,084 --> 00:20:36,784
+Z türe, E'ye, D z türü, D'ye.
+
+129
+00:20:37,664 --> 00:20:39,624
+Bunlar böyle A gibi geliyor.
+
+130
+00:20:39,824 --> 00:20:42,544
+Buna biz kısmi türev sembolü.
+
+131
+00:20:43,403 --> 00:20:44,824
+Ya da ilk türev yukısınız.
+
+132
+00:20:46,724 --> 00:20:47,963
+Sembolleri de gösterelim.
+
+133
+00:20:49,304 --> 00:20:51,124
+Ama bir noktada değil, bir noktada.
+
+134
+00:20:51,844 --> 00:20:54,864
+O yüzden bu şekilde onu almak istiyorsak.
+
+135
+00:21:02,548 --> 00:21:09,548
+Şimdi gelelim, kısmı türevleriniz hakkında çok kolay arkadaşlar. Yani limit falan kullanmıyor. Bir de limit kural var burada geçerli tabii.
+
+136
+00:21:09,548 --> 00:21:15,548
+Mesela x'e göre türev varken y değişkenini sabit tutup, x'e göre türev alıyoruz. Başka bir şey yok.
+
+137
+00:21:15,548 --> 00:21:20,548
+y'ye göre türev alırken de aynı şekilde. Bu defa x sabit tutuyoruz, y'ye göre türev alır. Tamam mı?
+
+138
+00:21:27,635 --> 00:21:29,455
+Respitörler'in bulunması değil.
+
+139
+00:21:42,740 --> 00:21:44,599
+Limit tabii şeyi düşünmem.
+
+140
+00:21:52,115 --> 00:21:57,155
+türü dx'i bulmak için y'yi sabit tut.
+
+141
+00:22:03,412 --> 00:22:04,672
+Ve ikisi de güzel bir şey var.
+
+142
+00:22:10,228 --> 00:22:10,988
+İşte bu.
+
+143
+00:22:12,367 --> 00:22:17,568
+Aşivir D bölü devriye ise, bu kez, x'i sabit tut,
+
+144
+00:22:21,875 --> 00:22:26,435
+Yani, sabit edelim, sayı görüyorlar. 2'ymiş. Mesela 2, çünkü türev 2 değil mi? Bilmiyorum.
+
+145
+00:22:28,455 --> 00:22:33,695
+x'ye olursa, 2 çarpı y olursa, x'e göre türev ararken, y'yi nasıl çalışacağım? y'yi 2 göreceğim.
+
+146
+00:22:33,975 --> 00:22:43,315
+O yüzden türev de o, 2 x'in türevinden, 2 olduğu için, mesela, y'yi 2 yazılımda, 2. Demek ki y, onun türevi y'miş.
+
+147
+00:22:44,895 --> 00:22:48,835
+Ve y'ye göre türev.
+
+148
+00:22:53,491 --> 00:22:54,031
+Sıvı da.
+
+149
+00:22:58,355 --> 00:22:59,355
+Hemen bir tanrık yapalım.
+
+150
+00:23:04,531 --> 00:23:15,052
+f x y eşit x kareye, artı 3 x y artı y eksi bir.
+
+151
+00:23:16,432 --> 00:23:20,791
+Hemen d bölü dx'i bulalım.
+
+152
+00:23:22,531 --> 00:23:26,271
+Nedir? Burada y'yi sabit tutacağız, x'e göre bir alacağız.
+
+153
+00:23:27,412 --> 00:23:36,892
+Mesela sabit tut, tut demekten anlamı nedir? Y yazıyor mesela. Bir sayı yazıyor. A yazıyor mesela. 3ax olsun. Bu ax'ı benim.
+
+154
+00:23:36,892 --> 00:23:41,811
+Zaten x'e göre türev. Zaten bundan sabit olacağız. Otomatik olarak sıvır türev.
+
+155
+00:23:41,811 --> 00:23:43,731
+Y-x'e değil mi?
+
+156
+00:23:43,731 --> 00:23:45,811
+İlk tane türevi 2x.
+
+157
+00:23:45,811 --> 00:23:52,211
+Artı 3x'lerin türevinden 3d ve y'de sabit o zaman. 3yx'in türevi 3y.
+
+158
+00:23:52,884 --> 00:24:03,284
+Bunlar sıfır. A artım yerin x'e bir de sıfır. Sabit oldu çünkü. Eksi bir o da sabit oldu. Demek ki bu. 2x artı 3c.
+
+159
+00:24:06,284 --> 00:24:10,483
+Bu türe. Peki, d bölü d.
+
+160
+00:24:11,983 --> 00:24:12,824
+Onu da şuraya yapalım.
+
+161
+00:24:17,364 --> 00:24:19,364
+d'ye hesaplıyorum.
+
+162
+00:24:20,563 --> 00:24:23,764
+Bu kez ne yapacağız? x'i satacağız. O zaman ilk terim 0.
+
+163
+00:24:24,764 --> 00:24:27,764
+3x'i yeni türevinden 0 artı.
+
+164
+00:24:28,063 --> 00:24:33,764
+3x gelir. y'ye göre türev artı 1, eksi 1 türev 0. Yani 3x artı 1.
+
+165
+00:24:39,284 --> 00:24:48,064
+Mesela, denseydim ki bu fonksiyonun belli bir noktada ne diyelim mesela, 4-5 noktasındaki türevi hesaplanmak isteseydi.
+
+166
+00:24:57,683 --> 00:25:11,683
+Örneğin, dx'in 4,5. Türev ve maksiyonlar, 2 çarpı 4, artı 3 çarpı 5.
+
+167
+00:25:12,824 --> 00:25:14,804
+Şuna da parçalıklar yapacağız çarpımın yerine.
+
+168
+00:25:15,983 --> 00:25:20,764
+Bu kadar. 2 çarpı 4, artı 3 çarpı 5. Yani 8, eksi 15.
+
+169
+00:25:21,903 --> 00:25:23,583
+Eşittir, eksi 2.
+
+170
+00:25:25,044 --> 00:25:26,044
+Evet.
+
+171
+00:27:31,155 --> 00:27:34,655
+Arkadaşlar, komisyon şeyi yapmamıştır.
+
+172
+00:27:35,996 --> 00:27:36,836
+Peki.
+
+173
+00:27:40,435 --> 00:27:53,915
+Anlatmak arkadaşlar, var mı sorun? Sorunuz varsa bekliyorum. Bugün katıldım biraz az, gördüm. Her zaman elinin üzerinde çıkıyor. Belki sınava yaklaştı, siz altlasınız.
+
+174
+00:27:53,915 --> 00:28:06,915
+Çok daha sizi tutamak istemiyorum ama siz de takip edersin ki sizin varlığınız bilini yapıyor tabii ki burada.
+
+175
+00:28:09,619 --> 00:28:16,619
+verdiğimiz ders bakımdan, öğrenci bakımdan, çok moral bakımdan ve sikajı olarak bunu bilin bir tabi.
+
+176
+00:28:17,619 --> 00:28:24,619
+Peki, başka bir örnek, yani ciddi bir örnek alın. O da bir örnek, yani şey olmaz. Biraz daha ciddi.
+
+177
+00:28:26,619 --> 00:28:28,619
+fx yeşittir.
+
+178
+00:28:31,619 --> 00:28:34,619
+x, pardon y çarpı sinis x ye.
+
+179
+00:28:37,011 --> 00:28:38,251
+Fonksiyon için
+
+180
+00:28:38,251 --> 00:28:42,011
+D bölü D'ye türevini buluruz.
+
+181
+00:28:42,812 --> 00:28:44,011
+Kısmi türevini buluruz.
+
+182
+00:28:45,471 --> 00:28:46,852
+Evet, burada D'ye hesaplar.
+
+183
+00:28:48,852 --> 00:28:54,372
+Kısmi türevini hesaplarız.
+
+184
+00:29:29,172 --> 00:29:31,912
+Sadece y'ye göre kısmi türev için x sabit tutacağız, değil mi?
+
+185
+00:29:32,612 --> 00:29:37,092
+Şimdi, hani sabit kafanızı karışsın, masa sabit tutun diyoruz ya mesela, şöyle yazalım.
+
+186
+00:29:38,711 --> 00:29:42,292
+Tabii bu y'ye olduğu için biz genelden x'e göre türev almak çalışmışız.
+
+187
+00:29:43,272 --> 00:29:47,432
+Çarpım türev var, belli burada y var, bir de y'nin başka bir tür fonksiyonu var değil mi?
+
+188
+00:29:48,272 --> 00:29:52,252
+O zaman türev alırken hani birinci çarpım türev formülü aktarırlar.
+
+189
+00:29:52,252 --> 00:29:55,572
+O da kolayca, birinci çarpım türev çarpı, ikinci artı, tam tersi.
+
+190
+00:29:56,564 --> 00:30:04,564
+Şimdi, d bölü de x, pardon d bölü de y, x de vurduk da, y sormuş, y'ye vurduk.
+
+191
+00:30:04,564 --> 00:30:12,564
+Eşittir. Çarpı 1. Türevi, y'nin y'ye göre türevi 1. Y'ye göre türevi var, doğruyu. Bu y'ye göre türevi.
+
+192
+00:30:12,564 --> 00:30:21,564
+Çarpı sinis x'ye, artı 1. çarpı 2. türevi, sinis x'ye'nin türevi. Şimdi,
+
+193
+00:30:21,971 --> 00:30:30,372
+Sinis x, y, x tabi burada, sinis buna mesela diyelim ax diye. 2x gibi, sinis ax, misal.
+
+194
+00:30:31,152 --> 00:30:39,731
+Normalde bunu türev olarak tanıtılarsanız, zincir kural gereği değil mi? Yani sinis'in türevi çarpı içinin türevi.
+
+195
+00:30:40,192 --> 00:30:48,991
+Sinis'in türevi ne de? Kosinus. Kosinus ax. Çarpı içinin türevi. İçinin türevine kim var? ax, ax'in türevi. ax'in türevinden de a gelir.
+
+196
+00:30:49,556 --> 00:31:01,156
+Değil mi? A çarpma. Şimdi A yerine ne yazmam lazım? G yazalım. Pardon, orada yanlış yaptık. Önemli değil.
+
+197
+00:31:03,656 --> 00:31:05,456
+Anlamalısın.
+
+198
+00:31:11,763 --> 00:31:14,923
+Sinüs ay diyecektik.
+
+199
+00:31:15,683 --> 00:31:18,903
+Vöylesek, kosünüs ay çarpı a.
+
+200
+00:31:19,223 --> 00:31:19,363
+Evet.
+
+201
+00:31:20,103 --> 00:31:20,623
+Böyle ya.
+
+202
+00:31:20,923 --> 00:31:21,103
+Tamam.
+
+203
+00:31:21,743 --> 00:31:24,363
+Şimdi ay yerine getirip tekrar neye yazacağız?
+
+204
+00:31:24,843 --> 00:31:25,483
+X koyacağız.
+
+205
+00:31:26,703 --> 00:31:29,303
+Kosünüs x'ye çarpı x.
+
+206
+00:31:29,543 --> 00:31:30,283
+X'i başaralım.
+
+207
+00:31:30,403 --> 00:31:32,623
+X çarpı kosünüs x'i.
+
+208
+00:31:33,423 --> 00:31:36,883
+İşte bu sinüs içeriği türevi arkadaşlar burada detayını verdim.
+
+209
+00:31:36,883 --> 00:31:38,723
+Y çarpı bu.
+
+210
+00:31:39,124 --> 00:31:44,124
+x çarkı, kosmü tüksiyonlar. Bu kadar basit.
+
+211
+00:31:44,124 --> 00:31:54,124
+Yani bunu siz, daha düzgün, sin x'ye artı x'ye çarkı kosmü tüksiyonlar.
+
+212
+00:31:54,124 --> 00:31:58,124
+Türeniz bu.
+
+213
+00:31:58,124 --> 00:32:05,124
+Böyle ne yapabiliriz? Örnekleri elbette çoğaltabiliriz.
+
+214
+00:32:26,451 --> 00:32:29,867
+teşekkür ederim
+
+215
+00:32:55,124 --> 00:32:57,124
+Bir örnek de yapayım arkadaşlar.
+
+216
+00:32:57,124 --> 00:32:59,124
+Biraz izinç bir örnek olsun tabii.
+
+217
+00:33:05,140 --> 00:33:07,140
+fx eşittir,
+
+218
+00:33:10,140 --> 00:33:11,140
+birbirinden,
+
+219
+00:33:12,140 --> 00:33:13,140
+2y bölü,
+
+220
+00:33:14,140 --> 00:33:15,140
+y artı,
+
+221
+00:33:16,140 --> 00:33:17,140
+kosmix,
+
+222
+00:33:17,140 --> 00:33:19,140
+bu kadar nedir? Bölümün türevi var burada.
+
+223
+00:33:20,140 --> 00:33:22,140
+Burada da mesela ne yapalım?
+
+224
+00:33:23,140 --> 00:33:25,140
+x'e y'ye bile türevi ne yapalım?
+
+225
+00:33:27,140 --> 00:33:30,140
+D bölü, dx'e hesaplayalım önce arkadaşlar.
+
+226
+00:33:30,140 --> 00:33:31,724
+Bölümün türevi.
+
+227
+00:33:32,435 --> 00:33:51,755
+Payın türev, x'e göre türev, kim? 0. Eksi, çarpı koyalım. Çarpı payda. Y artı, kosünüs x. Eksi, pay çarpı, ikiye çarpı, paydan türev. Paydan türev kim bu? Y'nin türev 0, 0 eksi, seniz x.
+
+228
+00:33:52,895 --> 00:34:00,075
+Eksiye göre türev, kosünüs türev, eksin x. Ölü, paydanın kalitesi.
+
+229
+00:34:00,819 --> 00:34:01,799
+Ölümüşleten.
+
+230
+00:34:07,859 --> 00:34:13,399
+Kosün x'in karesi. Yani burası yukarı ayarlarsak ne olur?
+
+231
+00:34:15,960 --> 00:34:23,059
+Eksi 2'ye, artı 2'ye sin 3x, bir de burada, burada zaten 0 olur. 0 çarpı o da 0 olur.
+
+232
+00:34:23,460 --> 00:34:28,939
+Demek ki, artı 2'ye sin 3x bölü, 2'ye.
+
+233
+00:34:29,780 --> 00:34:32,280
+siniz x bölü, eksi x artı yapabilir.
+
+234
+00:34:32,880 --> 00:34:37,780
+Bölü, y artı, kosinus x'in parantez karesi.
+
+235
+00:34:39,440 --> 00:34:41,600
+y artı, kosinus x'in parantez karesi.
+
+236
+00:34:42,119 --> 00:34:42,539
+Tamam mı?
+
+237
+00:34:44,100 --> 00:34:47,320
+Aynı şekilde, y'ye göre türev alalım.
+
+238
+00:34:49,119 --> 00:34:53,960
+Payın türevi, y'ye göre türevi, iki çarkı, payı, y artı, kosinus x.
+
+239
+00:34:55,020 --> 00:34:55,820
+Eksi,
+
+240
+00:34:56,788 --> 00:35:05,127
+fay çarpı 2'ye faydan türev ve y artı kosinistikten, yenileye göre türev ve artı kosinistikten türev ve kosinistikten y yok.
+
+241
+00:35:05,127 --> 00:35:09,208
+Sabit değil mi? İlk sabit çünkü. Artı sıfır. O yüzden yazıyorum.
+
+242
+00:35:20,115 --> 00:35:21,675
+artısı bölü payda kare.
+
+243
+00:35:24,355 --> 00:35:28,296
+Y artı kosin x'in karesi.
+
+244
+00:35:30,876 --> 00:35:32,036
+Eşitli yukarısı,
+
+245
+00:35:33,615 --> 00:35:39,056
+bu taraftan eksi ikiye gelecek, burada da artı ikiye gelecek de, burası sıfır götürülüğünü, o zaman sadece kosin x kalıyor.
+
+246
+00:35:39,235 --> 00:35:40,195
+2 kosin x kalıyor.
+
+247
+00:35:40,836 --> 00:35:41,536
+2 ile çarpıyoruz.
+
+248
+00:35:42,096 --> 00:35:46,916
+2 kosin x bölü y artı kosin x'in karesi.
+
+249
+00:35:49,940 --> 00:35:53,840
+2 kosün x bölü, y artı kosün x. Bu mu da arkadaşlar?
+
+250
+00:36:02,579 --> 00:36:08,179
+Aslında tık değişkenlerde bildiğimiz türev kuralları, buradan her bir değişkenlik aldığımız türev içinde geçer.
+
+251
+00:36:08,840 --> 00:36:11,899
+Mesela kapatalım türev anlamında alırsa bu türevi.
+
+252
+00:36:12,739 --> 00:36:14,760
+Bu şekilde hemen detaylı göreceğimizi görürüz.
+
+253
+00:36:20,403 --> 00:36:21,604
+İki işçilik arkadaşlar.
+
+254
+00:36:27,123 --> 00:36:29,204
+Yani de kapanan bir şey mesela.
+
+255
+00:36:37,396 --> 00:36:41,476
+y z, eksi ln z,
+
+256
+00:36:43,816 --> 00:36:45,195
+eşit x artı y, burada,
+
+257
+00:36:46,236 --> 00:36:47,195
+z hapizyeti,
+
+258
+00:36:48,195 --> 00:36:51,195
+tek başlara bırakmak zor. Dolayısıyla ama yine de,
+
+259
+00:36:51,296 --> 00:36:55,115
+x ve y'nin değişkenlerine, bir fonksiyonu olarak tanımlanırsa,
+
+260
+00:36:56,796 --> 00:36:57,176
+z,
+
+261
+00:36:58,176 --> 00:36:58,936
+fonksiyon,
+
+262
+00:37:01,336 --> 00:37:01,976
+x ve y,
+
+263
+00:37:03,776 --> 00:37:04,296
+değişken.
+
+264
+00:37:06,547 --> 00:37:07,547
+olarak
+
+265
+00:37:08,427 --> 00:37:09,427
+tanımlılırsa
+
+266
+00:37:11,947 --> 00:37:15,667
+bu z'i x'e göre türevleri var. Mesela
+
+267
+00:37:15,907 --> 00:37:17,627
+x'e göre türevine bakalım.
+
+268
+00:37:18,867 --> 00:37:20,147
+b z bölü
+
+269
+00:37:20,587 --> 00:37:22,067
+değil türevine bakalım.
+
+270
+00:37:23,507 --> 00:37:27,867
+Şimdi bu kapalı algıda buluruluyoruz. Burada z'yi tek başına bırakmamız mümkün değil değil mi?
+
+271
+00:37:27,867 --> 00:37:31,667
+z'i çözüp de x'e göre y'ye bağlı bırakamıyoruz.
+
+272
+00:37:32,211 --> 00:37:34,211
+Yani ZHC'nin etiksi yazılışı yok.
+
+273
+00:37:40,788 --> 00:37:41,788
+yazılamıyor.
+
+274
+00:37:44,327 --> 00:37:45,327
+Bu da yazılamıyor.
+
+275
+00:37:46,327 --> 00:37:47,327
+Yine de biz ne yaparız?
+
+276
+00:37:47,327 --> 00:37:49,327
+X'e göre ve Y'ye göre tüneyi olabilirsiniz.
+
+277
+00:37:51,087 --> 00:37:53,087
+O zaman, YZ,
+
+278
+00:37:53,627 --> 00:37:55,627
+eksi ln Z,
+
+279
+00:37:56,148 --> 00:37:57,947
+eşitir X artı Y.
+
+280
+00:37:57,947 --> 00:37:59,947
+Hani hatırlarsanız arkadaşlar, mesela,
+
+281
+00:38:00,427 --> 00:38:03,288
+Y eşittir U olsun, U üzeri N olsun.
+
+282
+00:38:03,288 --> 00:38:05,887
+Tabi burada U mesela X'e bağlı bir konusu ya.
+
+283
+00:38:07,795 --> 00:38:16,475
+Burada y üstü türev ve n ne yapıyorduk? N çarpı u üstü e, n eksi bir çarpı u'nun türev ve etinde geliyor.
+
+284
+00:38:16,475 --> 00:38:24,675
+Yani yinci kulağı geliyor. Ha bu işte u üstü hatana baktığın zaman, normal türev alıyor çarpı bir de u üstü. U üstü dediğimiz u'nun ikisiye göre türev.
+
+285
+00:38:24,675 --> 00:38:34,996
+Tamam mı? Ya da şöyle olsa de mesela, ejengi olduğunuz zaman tek başına, bunun ikisiye göre türev aldığımızda, ne oluyordu? Bir bölü ye ama ye de var değil mi?
+
+286
+00:38:35,219 --> 00:38:42,899
+1 bölü y çarpı y üstü işte. Yani şuradan uçlu yuklandık, kapıda da bu. Lagrange'nin türevi bir bölü, çarpı y. y üstü dediğimiz kim? x'e göre türev.
+
+287
+00:38:44,439 --> 00:38:45,179
+Burada da öyle.
+
+288
+00:38:46,340 --> 00:38:48,000
+y z'in çarpı mı türevi?
+
+289
+00:38:48,939 --> 00:38:49,760
+Çarpım var burada.
+
+290
+00:38:50,639 --> 00:38:52,920
+y'nin x'e göre türevi sıfır. Çünkü nedir?
+
+291
+00:38:56,119 --> 00:38:58,260
+y bağımsız ya, x'e göre türevi alıyoruz çünkü.
+
+292
+00:39:00,211 --> 00:39:06,192
+Eksi, pardon, artı, y çarpı z'nin x'e görevleri, argamızı da zaten, z x, hemen yazalım şöyle kısaca.
+
+293
+00:39:07,532 --> 00:39:09,332
+Eksi, elen z'e görevler, buradaki.
+
+294
+00:39:10,652 --> 00:39:13,552
+Bir bölü z, çarpı z x.
+
+295
+00:39:14,572 --> 00:39:16,511
+Bu kadar. Bir bölü z, daha c.
+
+296
+00:39:17,231 --> 00:39:21,092
+Eşit, bu tarafa bakalım, x'in x'e görevleri bir, yeni y'e x'e görevleri sıfır.
+
+297
+00:39:22,572 --> 00:39:25,771
+x, değişken, y sabit tutulacak.
+
+298
+00:39:25,771 --> 00:39:27,092
+x'e görevleri var değil mi?
+
+299
+00:39:28,820 --> 00:39:33,220
+Burada, hatta bu dz bölü x'e demişti, bu zx. Onu da göstereyim.
+
+300
+00:39:35,039 --> 00:39:41,560
+yzx eksi bir bölü z çarpı zx eşit bir.
+
+301
+00:39:42,539 --> 00:39:49,480
+zx parantezini alırsak, y eksi bir bölü z birinci tarafı, zx parantezinde eşit bir iş çıkar.
+
+302
+00:39:50,900 --> 00:39:56,199
+Ve buraya eşitirseniz, pardon, yzx'i bir olur, bölü z.
+
+303
+00:39:57,492 --> 00:40:06,492
+Yani z x'i çözersek eğer z bölü ne olur? y z eksi bir mi? y z eksi bir.
+
+304
+00:40:08,492 --> 00:40:16,492
+Bakın, x'e göre türevi bulduk ama x'e göre türevinin hala kime bağlı? z'nin yani fonksiyonun kendisine bağlı olduğunu biliyor. Burada kutu aslında.
+
+305
+00:40:17,492 --> 00:40:22,492
+Burada y eşi çözün, y eşi bir bölü diye çıkıyor. Doğru. İfade o. Öyle düşüyor.
+
+306
+00:40:26,900 --> 00:40:28,360
+Bu şekilde bunun soru da arkadaşlar.
+
+307
+00:40:34,452 --> 00:40:37,912
+Z'likleştir, Z bölü, Y çarpı Z eksiklik.
+
+308
+00:40:37,912 --> 00:40:39,552
+Y de eksiklik.
+
+309
+00:40:54,675 --> 00:41:04,675
+Bunları türevde örnekleri çözdükçe, kullandıkça, kısmi türevin artık çok doğal olarak, çok kolay izlep olabiliriz bir halde gerekeni görürsünüz.
+
+310
+00:41:06,175 --> 00:41:09,675
+Şimdi ikiden fazla değişken olduğu zaman, sistem ayrılıyor.
+
+311
+00:41:16,884 --> 00:41:17,884
+İkili yaparlar, ne?
+
+312
+00:41:24,244 --> 00:41:28,164
+değişkenli fonksiyonlar. Mesela 3 değişkenli.
+
+313
+00:41:40,884 --> 00:41:44,123
+İkiden fazla değişkenin fonksiyonu baktım.
+
+314
+00:41:47,444 --> 00:41:48,364
+Şimdi
+
+315
+00:41:48,364 --> 00:41:53,963
+Aynı iki değişkenin de olduğu gibi
+
+316
+00:41:53,963 --> 00:41:57,644
+Her bir değişkene göre, mesela z eşittir
+
+317
+00:41:57,644 --> 00:42:00,503
+Z eşittir dememem, başka bir şey yer alabildi.
+
+318
+00:42:00,503 --> 00:42:02,324
+U eşittir mesela
+
+319
+00:42:02,324 --> 00:42:07,104
+F, X, Y, Z
+
+320
+00:42:07,104 --> 00:42:08,644
+Üç değişkenin fonksiyonu
+
+321
+00:42:09,043 --> 00:42:22,043
+Her bir değişkene göre kısmi türev alalım. Aynen bir adı c ettinizdir. Mesela x'e göre türev alırken, yani u x'i bulurken, ne yapıyoruz? y ve z'yi sabit tut, x'e göre türev alalım.
+
+322
+00:42:22,043 --> 00:42:30,043
+y ve z'yi sabit tut, x'e göre türev alalım.
+
+323
+00:42:34,835 --> 00:42:36,835
+En aynı şekilde diğerleri için de aynı şeyi yapacağız.
+
+324
+00:42:38,835 --> 00:42:43,835
+Y ve Z'yi sabit tut, burada, X'ye göre türev alır.
+
+325
+00:42:43,835 --> 00:42:48,835
+Y'ye göre türev alırken, diğer iki kalan değişkenini sabit tutacaksın, Y'ye göre türev alır.
+
+326
+00:42:49,835 --> 00:42:56,835
+Z'ye göre türev alırken, X'yeyi sabit tutacaksın, Z'ye göre türev alır. Artık o da Z, şey, değişken.
+
+327
+00:42:56,835 --> 00:43:00,835
+Fonksiyonumuz kim? Bu, yani iki değişkenin iki Z derine U değişken.
+
+328
+00:43:04,436 --> 00:43:09,516
+Mesela, u eşit, x'in her yeri önemli değil.
+
+329
+00:43:11,655 --> 00:43:12,476
+U eşittir.
+
+330
+00:43:13,376 --> 00:43:14,596
+X'iniz y artı z.
+
+331
+00:43:17,016 --> 00:43:20,115
+X'iniz y artı yüzeymiş, pardon.
+
+332
+00:43:22,296 --> 00:43:26,276
+X'iniz y artı yüzeymiş, böyle mi?
+
+333
+00:43:27,396 --> 00:43:28,936
+Şu, parantayı böyle yapar.
+
+334
+00:43:34,708 --> 00:43:35,248
+Sayın da.
+
+335
+00:43:40,436 --> 00:43:46,536
+x çarpı sinüs y artı z.
+
+336
+00:43:47,376 --> 00:43:49,176
+Mesela x'e göre türevi alalım.
+
+337
+00:43:50,076 --> 00:43:50,376
+Y z.
+
+338
+00:43:51,115 --> 00:43:53,956
+Olur mu? Niye bu taraf sabit yok? Burada hiç x yok.
+
+339
+00:43:54,896 --> 00:43:56,736
+Burası a gibi düşünün. Türevi kendisi değil mi?
+
+340
+00:43:59,236 --> 00:44:03,236
+u yükselişi direkt sinüs 3 y artı 3 z.
+
+341
+00:44:04,115 --> 00:44:04,796
+Bu kadar.
+
+342
+00:44:06,387 --> 00:44:13,387
+Peki, y'ye göre türev? Y'ye göre türev biraz sarkı. Çarpı mütülen anlayacağız ama burada x pahamsız ile ilişkinli sabit bir uçan sıfır.
+
+343
+00:44:13,887 --> 00:44:21,587
+Sıfır artı bu. Çarpı bu. Artı, x çarpı mütülen. Artık onu uzaklıyorum.
+
+344
+00:44:23,127 --> 00:44:26,447
+Sinisli türevde ne var? Önce içimli türev olarak içimli türevde bir geçer.
+
+345
+00:44:30,007 --> 00:44:30,608
+Çarpı.
+
+346
+00:44:34,643 --> 00:44:38,943
+Serisi türevi, kosörüz, bir artı, üçe.
+
+347
+00:44:44,115 --> 00:44:49,675
+Yani eşittir x çarpı, kosinus y artı 3 z.
+
+348
+00:44:51,235 --> 00:44:54,855
+Hemen bu uzeti bulalım, yani z tegölef ile bulalım.
+
+349
+00:44:55,815 --> 00:45:01,395
+x çarpı yine kosinus, içeride gelen bir türe var, y'nin türevi sıfır, 3 zet bir türevi 3.
+
+350
+00:45:02,655 --> 00:45:06,175
+Çarpı yine kosinus y artı 3 z.
+
+351
+00:45:07,235 --> 00:45:09,556
+Yani eşittir 3 x daha.
+
+352
+00:45:10,235 --> 00:45:10,876
+Düzgün yazalım.
+
+353
+00:45:11,572 --> 00:45:14,252
+Kosürüz, y artı yüksek.
+
+354
+00:45:14,971 --> 00:45:16,572
+Değil mi? Bu kattır.
+
+355
+00:45:36,500 --> 00:45:50,500
+Şimdi burada sürekli bir kavramın biraz daha farklı. Kısmi türevlerin mevcut olması, fonksiyonu verilen herhangi bir noktada türevlerinin, türevlerinebilir fonksiyon türevlerinebilir olduğu anlamına gelmedi.
+
+356
+00:45:52,500 --> 00:45:58,500
+Fonksiyon belli bir noktada x'e hem de y'ye böyle kısmi türevlere sahip olduğu halde o noktada fonksiyon sürekli olmayan bir şekilde.
+
+357
+00:45:58,500 --> 00:46:02,500
+Yani testleşkenli türev düşü bir kavram.
+
+358
+00:46:02,500 --> 00:46:03,307
+Çünkü...
+
+359
+00:46:03,507 --> 00:46:12,607
+Her sürekli fonksiyon, türev ve fonksiyon, verilen bir noktada türev ve fonksiyon, onun noktada mutlaka sürekli oluyordu. Burada aynı anlama geliyor.
+
+360
+00:46:15,047 --> 00:46:28,947
+Burada şu var, eğer fx'e fonksiyonunun kısmı türevleri bir x0, y0 merkezli bir, küçük bir dairede mevcut ve sürekli ise, bu durumda bu fonksiyon verilen x0, y0 noktadan süreklidir.
+
+361
+00:46:30,996 --> 00:46:32,435
+Bakıştırın, da mısı biliriz?
+
+362
+00:46:51,123 --> 00:46:53,603
+Ne dedik? Hemen yazalım tıklar.
+
+363
+00:46:56,463 --> 00:47:05,035
+Eğer etiksiye, diyelim ki etiksiye'nin kısmı türevleri...
+
+364
+00:47:10,387 --> 00:47:12,387
+İkstimliyesiz bir merkezde.
+
+365
+00:47:15,891 --> 00:47:16,991
+noktası mevetezdi.
+
+366
+00:47:22,099 --> 00:47:23,340
+Bir daire de mevcut.
+
+367
+00:47:30,996 --> 00:47:36,996
+ve sürekli ise, bakın, kısmi türev ve 3 olacak ve bunlar türev ve sonuçta bir fonksiyon olacak.
+
+368
+00:47:36,996 --> 00:47:38,996
+Ve aynı zamanda sürekli olacak.
+
+369
+00:47:38,996 --> 00:47:47,996
+İse fonksiyon fx'ye x'e bu yasif bir noktasında nedir? Sürekli diyeceğiz.
+
+370
+00:47:47,996 --> 00:47:54,604
+f fonksiyonu bu x'e bu yasif bir noktasında sürekli.
+
+371
+00:48:00,467 --> 00:48:02,467
+Şirket oluyuda şirketiz.
+
+372
+00:48:02,467 --> 00:48:03,467
+Tamam.
+
+373
+00:48:15,315 --> 00:48:20,255
+Peki, bununla ilgili bir örnek başlayacağım ama biraz örnek detaylı, o yüzden hemen bitmez.
+
+374
+00:48:21,335 --> 00:48:24,255
+O yüzden şeyden sonra yapalım, aradan sonra, bir ara verelim, aradan sonra.
+
+375
+00:48:24,915 --> 00:48:25,595
+Bayağı bir son.
+
+376
+00:48:26,536 --> 00:48:28,935
+Konuştuk, herhalde sesin gitti neredeyse.
+
+377
+00:48:29,235 --> 00:48:29,855
+Tamam mı arkadaşlar?
+
+378
+00:48:30,975 --> 00:48:32,175
+Ara verelim, aradan sonra yapalım.
+
+379
+01:06:30,195 --> 01:06:31,536
+Bir fayda devam edelim arkadaşlar.
+
+380
+01:06:32,956 --> 01:06:34,635
+Hemen bir örnek verelim bu oraya.
+
+381
+01:06:55,443 --> 01:06:58,023
+Şöyle bir fonksiyon gözünden alalım arkadaşlar.
+
+382
+01:07:00,643 --> 01:07:03,643
+Açalı kalan bir fonksiyonu olsun. İki değişkenli.
+
+383
+01:07:07,251 --> 01:07:09,131
+İkisi eşitliği birken bir,
+
+384
+01:07:13,012 --> 01:07:23,612
+İkciye faktör, İkciye isti suferken, İkciye faktör, seferken de, ser.
+
+385
+01:07:33,780 --> 01:07:41,860
+Fonksiyonunu ele alalım. Fonksiyon için şu sorular soralım. Aşıklık. Y eşit x doğrusu boyunca.
+
+386
+01:07:46,547 --> 01:07:48,287
+Sıfır sıfırdaki limit nedir?
+
+387
+01:07:56,820 --> 01:08:00,240
+B'de F sürekli midir? Sıfır sıfır dözer etti değil mi?
+
+388
+01:08:07,027 --> 01:08:18,307
+Bu dairken direkt aynı ilişkili soru. İçeride de şöyle olsun, her iki kısmi türevin, hoşçun dönemekte meşrubu olmadığımı göstereceğiz.
+
+389
+01:08:18,307 --> 01:08:28,167
+Gerek D kürdeyiz ve D kürdeye türevleri, kısmi türevleri tabii.
+
+390
+01:08:34,707 --> 01:08:35,727
+Kısmi türev ve ni?
+
+391
+01:08:36,927 --> 01:08:38,087
+Sıfır sıfırda
+
+392
+01:08:38,087 --> 01:08:40,047
+Mevcut mu?
+
+393
+01:08:46,355 --> 01:08:59,255
+Y, H, C, X doğrusu boyunca, tabi orijin hariç, sabit olarak, sıfır ekleşitli değil mi? Çünkü X, Y, H, C, X boyunca ifadesi, Y, Y, X yazımlar, X, Y, 0 olur. Bitti.
+
+394
+01:09:00,655 --> 01:09:01,976
+Yani fonksiyonumuz sıfır olur.
+
+395
+01:09:05,296 --> 01:09:08,536
+Y, H, C, X boyunca, orijin hariç, değil mi?
+
+396
+01:09:11,412 --> 01:09:17,412
+yhdx doğrusu boyunca, orijinaliz doğru, yhdx doğrusu boyunca.
+
+397
+01:09:18,952 --> 01:09:19,772
+Çözümleyelim.
+
+398
+01:09:22,872 --> 01:09:27,692
+h'lık'ı, limit, x'e 0 sıkıla giderken.
+
+399
+01:09:31,923 --> 01:09:45,863
+Fx'in y eşit x doğrusu boyuncaki limitine bakıyoruz diye. Fx'e nedir? y eşit boyunca 0'dır.
+
+400
+01:09:46,863 --> 01:09:54,923
+Oyuncu karı 0. Sadece, yani nerede x'e 0 olur? Ya y eşit bir denir, ya x eşit bir denir.
+
+401
+01:09:56,787 --> 01:10:08,287
+Y, X, X doğusu, bunlardan biri, orijinaliz, bu ifade sıfırdır. O doğal, dolaşı, sıfır, sıfır, sıfır, yakın.
+
+402
+01:10:12,987 --> 01:10:14,287
+B'ye bakalım.
+
+403
+01:10:15,887 --> 01:10:20,087
+Şu etkiliğine. Bir lafı, F'nin sıfır, sıfır, dağılık değeri neymiş?
+
+404
+01:10:21,487 --> 01:10:23,787
+Y, sıfır, sıfır, olamaz mı? Bir.
+
+405
+01:10:26,996 --> 01:10:28,935
+Oysel limit ne çıktı? Sıfır sıvıda.
+
+406
+01:10:39,188 --> 01:10:40,247
+A'da bu tuttuğunu.
+
+407
+01:10:46,899 --> 01:10:47,659
+Sıvıdık.
+
+408
+01:10:52,180 --> 01:10:55,680
+Bu bize sürekli olmadığını söyler.
+
+409
+01:10:59,252 --> 01:11:04,672
+Evet, sıfır sıfırda, sürekli değiş.
+
+410
+01:11:13,043 --> 01:11:17,484
+Türevlere gelince, 0, 0'da mesela, x'e göre türev bulmak için y'yi sabit.
+
+411
+01:11:19,003 --> 01:11:23,523
+y'yi 0'da sabit tutacağız. Bu durumda bütün x'ler için fonksiyon türevi.
+
+412
+01:11:29,140 --> 01:11:30,140
+Biz mi oluruz?
+
+413
+01:11:31,640 --> 01:11:33,140
+Tabii sıfır sıfır da değil mi?
+
+414
+01:11:35,140 --> 01:11:36,140
+Aynı şekilde
+
+415
+01:11:39,140 --> 01:11:41,140
+Y'ye göre türevleri herhangi bir
+
+416
+01:11:42,140 --> 01:11:46,923
+Y, eğim olarak alırsak, bir ile ilgili olsun. Eğim olacak sıfır da türev.
+
+417
+01:11:51,507 --> 01:11:52,227
+Gel bakalım.
+
+418
+01:11:58,068 --> 01:12:01,068
+Tabii, bütün yüksel için fonksiyon 1'dir.
+
+419
+01:12:03,068 --> 01:12:07,068
+Y'yi, c'ye diyelim şöyle.
+
+420
+01:12:09,068 --> 01:12:14,068
+Y'yi, y eşit sıfırda sabit tutalım.
+
+421
+01:12:18,003 --> 01:12:20,003
+Bu durumda fx eşitir, 1 olur.
+
+422
+01:12:22,564 --> 01:12:23,844
+x de tüm isteği için.
+
+423
+01:12:46,100 --> 01:13:02,100
+sıfır sıfır da arıyoruz ya kardeşim. Özellikle fonksiyonun sıfır sıfırdaki türevine bakıyoruz. Sonra, y'ye göre türev almak için x'i x'i sıfırda sert tutalım.
+
+424
+01:13:07,412 --> 01:13:11,412
+x'i sıfırda, sabit tanım.
+
+425
+01:13:13,412 --> 01:13:16,412
+O zaman bütün yerler için, c yerler için fx'i yine deyiz.
+
+426
+01:13:19,412 --> 01:13:22,412
+Bu durumda y'ye göre türenci sıfır olacaktır.
+
+427
+01:13:22,412 --> 01:13:27,412
+Her durumda yani eğimi B'den bu noktada sıfır olan nedir?
+
+428
+01:13:30,412 --> 01:13:32,412
+Bir şey bırakmaktan zaman eğimi sıfır olan.
+
+429
+01:13:32,412 --> 01:13:34,412
+Doğrulayca düşünülmüştür.
+
+430
+01:13:37,716 --> 01:13:42,076
+Peki, bu da böyle. Aklınızın bir kenamda kalsın bu.
+
+431
+01:13:56,435 --> 01:13:59,155
+Şimdi de karacık türeviye gelelim.
+
+432
+01:13:59,975 --> 01:14:03,435
+Yani aslında...
+
+433
+01:14:08,404 --> 01:14:11,424
+Ondan önce ikinci mehve, prevler, bir monta almayalım.
+
+434
+01:14:37,684 --> 01:14:38,764
+Bir saniye görüşürüz.
+
+435
+01:15:15,380 --> 01:15:16,380
+Şimdi,
+
+436
+01:15:19,380 --> 01:15:20,380
+Z eşittir,
+
+437
+01:15:23,380 --> 01:15:25,380
+fx'ye verildiğinde bunu,
+
+438
+01:15:26,380 --> 01:15:29,380
+x'e göre türevini fx'e gösterdik,
+
+439
+01:15:30,380 --> 01:15:33,380
+y'ye göre türevini yf'ye gösterdik.
+
+440
+01:15:33,380 --> 01:15:38,380
+Bu sonrası yine x'e bazı bir fonksiyonu, orası da bu fonksiyonun tek fx görev, tredat brev var.
+
+441
+01:15:38,380 --> 01:15:42,380
+fx, x, fonksiyonun bir kere de y'ye göre türev var.
+
+442
+01:15:43,220 --> 01:15:46,120
+fx'i, böyle götüreceğim. Şimdi bundan açıklamaya yazacağım.
+
+443
+01:15:46,860 --> 01:15:47,520
+Atavuş demek.
+
+444
+01:15:48,899 --> 01:15:53,319
+d kare f bölü d x kare demek.
+
+445
+01:15:54,040 --> 01:15:58,100
+Bu da yine d kare f bölü d x diye demek.
+
+446
+01:16:00,500 --> 01:16:01,100
+Şöyle.
+
+447
+01:16:03,560 --> 01:16:10,000
+Bu şöyle hasta yazılır. d bölü d x, d f bölü d x. Şöyle yazılır.
+
+448
+01:16:11,507 --> 01:16:17,268
+Bu da aynı şekilde, d bölük d'ye, d bölük d x.
+
+449
+01:16:17,608 --> 01:16:21,587
+Dikadırsanız, burada x ve y'nin sırası bu şekilde olması gerekir.
+
+450
+01:16:21,587 --> 01:16:24,188
+Şu d kare türev için de beten türev anlamında.
+
+451
+01:16:25,807 --> 01:16:27,948
+Aynı türevler, y için de var.
+
+452
+01:16:34,195 --> 01:16:40,456
+Fy'ye, dediğim ifade, d kare f bölü, d y kare olur.
+
+453
+01:16:44,020 --> 01:16:52,380
+Bir de, f'nin x'e göre türeti var. f'nin x'e göre türeti var.
+
+454
+01:16:54,060 --> 01:16:57,120
+Sonra da f'ye isteyelim, bu da d kare f bölü.
+
+455
+01:16:58,760 --> 01:17:01,020
+d nasıl yazılır?
+
+456
+01:17:01,220 --> 01:17:02,500
+bu ifadeye göre x, d.
+
+457
+01:17:04,280 --> 01:17:07,420
+Yani şuradakine göre yazarsak, d bölüde x.
+
+458
+01:17:08,079 --> 01:17:10,579
+Şimdi önce y'ye göre sonra x'e göre türet.
+
+459
+01:17:11,347 --> 01:17:21,347
+İçeride, D öfkörü, D y. Önce alan türev, karneç çarpan. Malabal gösterinde de, sıra arama bu şekli.
+
+460
+01:17:23,347 --> 01:17:30,827
+Burada ne var? Toplamda 4 türev var. F x x, F y y, F x y, F y y türev var.
+
+461
+01:17:36,916 --> 01:17:45,236
+fxxfge, fxge, fxge, fxge, fxge, fxge, fxge, fxge, dm. 4 türev var.
+
+462
+01:17:45,236 --> 01:17:52,095
+Antalya da kısmi türev yapıyoruz. İkinci metrede kısmi türev yapıyoruz. Ve bu son ikisi,
+
+463
+01:18:02,355 --> 01:18:09,975
+İkinci mertebede türev ve büyük bu anten.
+
+464
+01:18:09,975 --> 01:18:12,595
+Bundan aldın bir tekniği.
+
+465
+01:18:12,595 --> 01:18:13,595
+Şu kadar alalım.
+
+466
+01:18:13,595 --> 01:18:17,036
+Şu ikisine kaçıp da edeceğiz?
+
+467
+01:18:21,140 --> 01:18:45,676
+Karşı türev teorem var. Karşı türev teorem değil. Bu iki türev, eğer bu, Doşuzal'a, Aslında iki cimtere türev dediğimiz zaman, verilen fonksiyonun bir türev değişkenli bir türevini alıp, onun tekrar türevini aynı değişkenli bir türevini almak anlamına geliyor.
+
+468
+01:19:01,811 --> 01:19:03,351
+Ve bir tane bana örnek de yapalım.
+
+469
+01:19:06,932 --> 01:19:08,731
+Şeyler okuyayım arkadaşlar.
+
+470
+01:19:22,003 --> 01:19:25,739
+Efikciye şehter, x kosje, artı g...
+
+471
+01:19:32,051 --> 01:19:34,691
+x-kosye artı y-üzeri x
+
+472
+01:19:34,691 --> 01:19:37,871
+için
+
+473
+01:19:37,871 --> 01:19:41,731
+fx-x
+
+474
+01:19:41,731 --> 01:19:43,072
+bir ekle yazayım da.
+
+475
+01:19:43,572 --> 01:19:45,011
+Silahat desembozları çok mutluyorum.
+
+476
+01:19:46,511 --> 01:19:47,231
+fx-y
+
+477
+01:19:51,731 --> 01:19:59,731
+f y x f y y yada ve f y x türevlerini bulmuştuk.
+
+478
+01:20:01,731 --> 01:20:09,731
+Hemen f x'e göre türevi, kısmi türiziye artı y e üzeri x değil mi?
+
+479
+01:20:10,731 --> 01:20:17,731
+Buradan f'i, f x tekrar y'e göre türevi, hatta aksi'e göre türevi olmayacak.
+
+480
+01:20:20,500 --> 01:20:29,500
+Bir kere türevi. Koşuşçuya atı, sabit türevi sıfır. Buradan görev ifade de y çarpı ec, ec, eksi türevi kendisi y çarpı ec, eksi türevi kendisi y çarpı ec, eksi türevi.
+
+481
+01:20:29,500 --> 01:20:41,500
+Sonra f'in y'ye göre türevi bakalım. Eşittir. Eksi x sinistir. Y'ye göre türevi olsun çünkü.
+
+482
+01:20:42,547 --> 01:20:51,547
+artı y'ye çağır sabit. O zaman, 2 y'nin türevi y'ye getir 2 türev ve y'ye getir 2 türev ve y'ye getir 2 türev.
+
+483
+01:20:51,547 --> 01:20:54,547
+Bir kez daha fiyatlandım.
+
+484
+01:20:54,547 --> 01:20:58,547
+Evet y'ye göre tamamen önce.
+
+485
+01:20:58,547 --> 01:21:04,547
+Eksi x kosin 3'ye artı bu da y'ye 0 denildi.
+
+486
+01:21:04,547 --> 01:21:06,827
+Dönelim buraya tekrar.
+
+487
+01:21:06,899 --> 01:21:11,039
+fx'in x'e görebilememiştim, fx'i, bir kere de y'ye görebilememiştim, alacağım.
+
+488
+01:21:12,139 --> 01:21:14,500
+y çarpı, ecx, bu dakikada ecx değil mi?
+
+489
+01:21:17,000 --> 01:21:17,920
+Buraya geliyorum.
+
+490
+01:21:24,724 --> 01:21:26,724
+Hatta yapmaz değil mi?
+
+491
+01:21:26,724 --> 01:21:32,724
+İki çarpım mı var?
+
+492
+01:21:32,724 --> 01:21:34,724
+İki çarpım türevi.
+
+493
+01:21:34,724 --> 01:21:37,724
+Şuradan atamamışız. Çarpım türevi ya.
+
+494
+01:21:37,724 --> 01:21:39,724
+Kosylusiye artı...
+
+495
+01:21:43,724 --> 01:21:45,724
+İkin türevi bir.
+
+496
+01:21:45,724 --> 01:21:47,724
+Çarpı kosylusiye.
+
+497
+01:21:47,724 --> 01:21:51,724
+Artı iki çarpı kosylusiyon türevi. Doğru.
+
+498
+01:21:54,963 --> 01:22:03,523
+fx, kosmüsi artı yüzey x, fx, x, x, x, x'i yanlış artık, tamam.
+
+499
+01:22:04,144 --> 01:22:05,603
+Kutak alalım, hadi kutak alalım.
+
+500
+01:22:09,684 --> 01:22:12,684
+Şuradan bakacağım. y'ye götür, eksi sinisye.
+
+501
+01:22:14,684 --> 01:22:18,684
+Sonra burada tekrar y'ye götür, artı y'ye götür.
+
+502
+01:22:20,684 --> 01:22:21,684
+Şimdi gelelim buraya.
+
+503
+01:22:21,684 --> 01:22:25,684
+f, y, x'i bileceğim. y'ye götür buydu. Buradan planlayacağım.
+
+504
+01:22:26,684 --> 01:22:29,684
+Yani şuradan bunu, sonra bunu buldum.
+
+505
+01:22:29,684 --> 01:22:35,684
+Burada da önce f'ye götür. Buna göre aldım. Sonra y'ye götür. Sonra tekrar x'e göre alacağım.
+
+506
+01:22:36,500 --> 01:22:40,539
+Burada, eksi eksik, eksik, eksik, eksik, kısmi türev.
+
+507
+01:22:49,587 --> 01:22:50,827
+Eksisini sunuyoruz.
+
+508
+01:22:50,948 --> 01:22:51,647
+Yüksel örtü olarak.
+
+509
+01:22:54,688 --> 01:22:55,927
+Artı, yüksel örtü olarak.
+
+510
+01:22:57,307 --> 01:22:58,647
+Zaten burada görüyorsun.
+
+511
+01:22:58,847 --> 01:23:00,368
+Eksiyon, eklentisi, bir tane.
+
+512
+01:23:00,547 --> 01:23:01,827
+Eklentisi, bir tane koşu lazım.
+
+513
+01:23:06,036 --> 01:23:07,816
+Şimdi karışık türe teoremini verelim.
+
+514
+01:23:13,555 --> 01:23:14,195
+Taylor, ya.
+
+515
+01:23:17,619 --> 01:23:19,439
+Karşık türev kalacak.
+
+516
+01:23:22,996 --> 01:23:29,536
+Şunu söyler, eğer, app fonksiyonu ve onun türevleri,
+
+517
+01:23:37,971 --> 01:23:42,711
+Efix, efix, efix, efix.
+
+518
+01:23:50,739 --> 01:23:52,899
+Abone noktası için aşk bir belirtel alınçı.
+
+519
+01:23:59,283 --> 01:23:59,923
+İçeriden
+
+520
+01:23:59,923 --> 01:24:03,523
+açık bir bölge de tanımlı
+
+521
+01:24:23,731 --> 01:24:26,231
+Açıkları sürekli isteniflettiğinden, bu da.
+
+522
+01:24:30,484 --> 01:24:31,484
+Bu durumda
+
+523
+01:24:31,484 --> 01:24:34,284
+F
+
+524
+01:24:34,284 --> 01:24:37,484
+X, Y, A, B
+
+525
+01:24:37,484 --> 01:24:40,203
+Eşittir. F, Y, X
+
+526
+01:24:40,203 --> 01:24:42,564
+A, B'dir.
+
+527
+01:24:43,084 --> 01:24:44,024
+B'den ötüde
+
+528
+01:24:44,024 --> 01:24:45,123
+Kaç siktir?
+
+529
+01:24:49,524 --> 01:24:52,764
+AB noktasının içeri, açık bir bölgede
+
+530
+01:24:56,659 --> 01:25:02,280
+Burada bir ayrım var, onu ben göz aradı ettim. Açık bir bölgede tanımlı,
+
+531
+01:25:06,676 --> 01:25:07,736
+ve hepsi
+
+532
+01:25:13,108 --> 01:25:15,108
+Ve hepsi
+
+533
+01:25:17,507 --> 01:25:19,507
+AB'nin ortasında sürekli seriler, evet.
+
+534
+01:25:21,507 --> 01:25:23,507
+AB'nin ortasında sürekli seriler.
+
+535
+01:25:29,108 --> 01:25:29,628
+bunu yazar.
+
+536
+01:25:30,528 --> 01:25:31,427
+Tekrar ediyorum.
+
+537
+01:25:32,748 --> 01:25:35,007
+Eğer F komisyonu ve onun bu dört küreli
+
+538
+01:25:35,007 --> 01:25:38,007
+Fx, Fx, Fx, Fx, Fx, Fx.
+
+539
+01:25:38,007 --> 01:25:38,807
+Yani kaç küreli?
+
+540
+01:25:39,328 --> 01:25:41,887
+ABN ortası çilen açık bir bölgede
+
+541
+01:25:41,887 --> 01:25:43,108
+yani onun komisyonunda
+
+542
+01:25:43,108 --> 01:25:44,927
+açık komisyonunda
+
+543
+01:25:44,927 --> 01:25:47,087
+bunlar tamim olacaktır. Sonra bunlar
+
+544
+01:25:47,087 --> 01:25:48,807
+nedir? ABN ortası çilek olacak.
+
+545
+01:25:49,528 --> 01:25:51,028
+Tek bir nöptası. O bölgenin içinden
+
+546
+01:25:51,028 --> 01:25:53,408
+çilek romasyonu da değil. Tek bir nöptası
+
+547
+01:25:53,408 --> 01:25:54,587
+yükseler o zaman hepsi.
+
+548
+01:25:54,996 --> 01:26:00,996
+O zaman bu eşitliği, karasük fremler birbirlerine değiştir.
+
+549
+01:26:33,747 --> 01:26:35,747
+Hemen bir örneğini geçelim arkadaşlar.
+
+550
+01:27:02,899 --> 01:27:05,339
+Daha yüksek metafizden türev ve katlı çıkmıştır.
+
+551
+01:27:07,859 --> 01:27:10,659
+Daha yüksek metafizden.
+
+552
+01:27:19,060 --> 01:27:20,040
+Sövde edelim.
+
+553
+01:27:27,636 --> 01:27:28,636
+Ön nekorak tutelim.
+
+554
+01:27:31,756 --> 01:27:33,115
+fxz eşittir.
+
+555
+01:27:46,100 --> 01:27:48,100
+artı x kareye
+
+556
+01:27:49,540 --> 01:27:50,540
+ise
+
+557
+01:27:51,820 --> 01:27:53,320
+mesela f
+
+558
+01:27:54,180 --> 01:27:56,180
+x, y, z
+
+559
+01:27:58,020 --> 01:28:00,020
+y, z
+
+560
+01:28:01,180 --> 01:28:02,220
+türev
+
+561
+01:28:03,940 --> 01:28:10,380
+ya bu türevi tabi belli, y'ye göre türev, x'e göre türev, y'ye göre türev, z'ye göre türev, y'ye göre türev, z'ye göre türev, sırayla
+
+562
+01:28:10,659 --> 01:28:12,652
+dört yüz bir türev söz konusu.
+
+563
+01:28:13,971 --> 01:28:25,652
+Bunu siz böyle d kare bölü falan şeklinde yazabilirsiniz. D yüceli 4, f, bölü, aşağıda her bir türev söz konusu.
+
+564
+01:28:25,652 --> 01:28:33,252
+Artık kaç sürüdü belki yazar da siz bile ama. Biz yine de buna göre y ile başlamış. D bölü d ye.
+
+565
+01:28:38,131 --> 01:28:51,251
+D bölü, demir, D, D'ye, D, daha sadece D, pardon. Buradan başlıyoruz, D'ye. Sonra X'e göre, D'ye. Sonra Y'ye göre, D'ye. Sonra Y'ye göre.
+
+566
+01:28:53,351 --> 01:29:00,931
+Buradan başlıyoruz, bu tarafa da öyle oluyor. Buradan böyle gidiyor, ama bu yazılırsa da böyle yazmalıyız. O zaman Y'ye göre türev.
+
+567
+01:29:02,971 --> 01:29:04,731
+Belki şöyle yazarsak daha iyi olur.
+
+568
+01:29:05,876 --> 01:29:07,216
+Buradaki anlamda yazdık da.
+
+569
+01:29:09,416 --> 01:29:13,916
+F, Y, X, Y, Z eşittir.
+
+570
+01:29:15,275 --> 01:29:17,216
+D bölü D, Z.
+
+571
+01:29:18,396 --> 01:29:20,796
+Parantez D bölü D, Y.
+
+572
+01:29:21,916 --> 01:29:24,115
+Parantez D bölü D, X.
+
+573
+01:29:24,716 --> 01:29:27,195
+Parantez D, F bölü D, Y.
+
+574
+01:29:27,996 --> 01:29:28,435
+Tamam mı?
+
+575
+01:29:29,876 --> 01:29:30,956
+Şimdi daha kapatacağız.
+
+576
+01:29:31,275 --> 01:29:32,515
+Kaç paramızı? 1, 2, 3, 4.
+
+577
+01:29:33,363 --> 01:29:45,543
+İçeridekini bulalım hemen yazalım. D bölü dx, dz pardon, burada kalsın. D bölü dy, d bölü dx, d bölü dy, nerede? y'ye gerekir.
+
+578
+01:29:46,623 --> 01:30:00,843
+Eksi 2, x, y, z. A, x'i de oturur. Eksi 4, x, y, z. Değil mi? Şuradan geldi. Bir de burada ne var? Artı x kare var.
+
+579
+01:30:02,612 --> 01:30:06,612
+Şurada y'ye göre türen tekrar görürsün. Ve bunu kapatalım.
+
+580
+01:30:09,612 --> 01:30:11,612
+Paranalyzimiz 2'ye düşüyor. Bir tanesi gitti.
+
+581
+01:30:12,612 --> 01:30:18,612
+Şimdi x'ye göre türen, ışıktı, d bölü d z, tekrar d bölü d y.
+
+582
+01:30:18,612 --> 01:30:21,612
+Bu ifade x'ye göre türenin yazıyorum. Kim var?
+
+583
+01:30:21,612 --> 01:30:28,612
+x'i 4 diye z. Artı 2x. Kapattık. 2 taneye düştü.
+
+584
+01:30:29,652 --> 01:30:39,391
+Sonra d bölü d z, bunu y bölüktü, eksi 4 z, bunu z'ye bölüktü, kim eksi 4?
+
+585
+01:30:43,475 --> 01:30:44,815
+Uç, ya da izledi, ya da izledi.
+
+586
+01:30:49,300 --> 01:30:53,119
+Eğer biz burada bunu devam etseydik, aynı işlemi yapacaktık.
+
+587
+01:30:54,180 --> 01:30:56,539
+F'yi bulacaktık, değil mi? Sırayla.
+
+588
+01:30:57,659 --> 01:31:02,720
+Neymiş? Eksi 4xyz artı x kare.
+
+589
+01:31:03,639 --> 01:31:07,760
+Sonra f'yi bulacaktık. Yani f'yi'nin ilk sektörüyle bulacaktık.
+
+590
+01:31:08,380 --> 01:31:10,340
+Şunu bulacaktık, değil mi? Sırayla buradan gideceğiz.
+
+591
+01:31:11,139 --> 01:31:14,319
+Eksi 4yz artı 2x.
+
+592
+01:31:14,836 --> 01:31:33,056
+Sonra f, y, x, y'yi bulacaktık. Buradan ne var? Y'ye göre ki, dediğine göre. Eksi 4. Z. Sonra işte f, y, x, y, z. Türev eşit. Bu da bizim anladığımız. Ya da bulduğumuz türev de aynı işte.
+
+593
+01:31:41,587 --> 01:31:43,587
+Yüksek media bir den previket, demamıyoruz.
+
+594
+01:32:19,412 --> 01:32:20,412
+Şimdi...
+
+595
+01:32:42,387 --> 01:33:07,768
+Difersiyle bilme özgürlüğü arkadaşlar. Difersiyle bilme tek değişiklik fonksiyonu atılırsanız, bir x'in x0'daki difersiyle bilme, difersiyle bilme işe yeri fonksiyonumuz, bu durumda x'in x0'dan x0'a dengisi delta x'e kadar bir dektem ifadesi verilebilir. Yani onun aslında oradaki f değerindeki değişimi özgürlüğüne aldığımızda.
+
+596
+01:33:09,171 --> 01:33:14,572
+Sonra delta x sıfıra giderken, epsilon tabii sıfıra gider. Oradan ifade ettim.
+
+597
+01:33:14,971 --> 01:33:21,572
+İki değişkenli fonksiyonla için benzer özelliği, teoreminin tanımı haline alır.
+
+598
+01:33:21,572 --> 01:33:28,572
+Yani artık teorem, daha önce de bilinen teorem tek değişikliği için tepki.
+
+599
+01:33:30,371 --> 01:33:35,771
+Bu özelliği sağlandığınız an için bir de söyler. Hemen teoremini yazalım.
+
+600
+01:33:41,971 --> 01:33:42,859
+Evet.
+
+601
+01:33:46,804 --> 01:33:59,212
+Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen, Lütfenen
+
+602
+01:34:05,395 --> 01:34:06,195
+Şöyle gelin.
+
+603
+01:34:08,576 --> 01:34:11,835
+Ve bir nokta alalım. X sıfır bir noktası.
+
+604
+01:34:13,136 --> 01:34:14,335
+X'in bir noktası içeriye.
+
+605
+01:34:18,387 --> 01:34:21,387
+X0 resim notasyonu için açıklıca bölgesinde
+
+606
+01:34:29,043 --> 01:34:30,244
+Çiftçiler bölgesinde.
+
+607
+01:34:34,036 --> 01:34:36,636
+Eptiksiye fonksiyonu, bencik türevleri tanındı.
+
+608
+01:34:44,659 --> 01:34:46,020
+Ancak, sektörlerle.
+
+609
+01:34:50,131 --> 01:34:50,811
+Tanrımlı.
+
+610
+01:34:54,547 --> 01:34:55,547
+ve
+
+611
+01:34:57,347 --> 01:34:58,347
+bu türlerle
+
+612
+01:35:02,420 --> 01:35:11,819
+türev dediğin hatta bir türev, x0, y0'da sürekli olduğunu bahsedelim. Olduğunu kabul edelim.
+
+613
+01:35:37,076 --> 01:35:40,556
+Dolayısıyla, bu durumlar E bölgesinde,
+
+614
+01:35:51,283 --> 01:35:53,451
+vekiket
+
+615
+01:36:03,923 --> 01:36:08,144
+Başka, bir, ona yakın tabii.
+
+616
+01:36:08,363 --> 01:36:12,203
+X sıfır aradı delta X, ve sıfır aradı delta Y.
+
+617
+01:36:19,252 --> 01:36:20,811
+Noktasyon taşımasıyla,
+
+618
+01:36:37,684 --> 01:36:38,724
+Saçım nasıl iler?
+
+619
+01:36:43,604 --> 01:36:45,283
+Oysan F değerindeki
+
+620
+01:36:54,868 --> 01:36:57,868
+Ona delta z diyebiliriz.
+
+621
+01:36:59,368 --> 01:37:00,568
+Aslında f,
+
+622
+01:37:01,667 --> 01:37:03,868
+x0 atı delta x1'dir.
+
+623
+01:37:04,568 --> 01:37:08,868
+1 0 atı delta y eksi, f x0 y eksi.
+
+624
+01:37:10,667 --> 01:37:11,667
+İyi işi ver.
+
+625
+01:37:21,619 --> 01:37:22,840
+Delta de eşittir.
+
+626
+01:37:24,800 --> 01:37:48,020
+Fx, x0, y0, çarpı delta x, artı f y, x0, y0, çarpı delta y, artı epsilon 1 delta x, artı epsilon 2 delta y.
+
+627
+01:37:52,979 --> 01:37:54,119
+Dikten mi sağ olsun.
+
+628
+01:38:02,452 --> 01:38:07,811
+Burada belli ki zaten, delta x ve delta y sıfayda f'nin bir defun ise sıfayda f.
+
+629
+01:38:25,971 --> 01:38:26,971
+0.
+
+630
+01:38:28,971 --> 01:38:35,971
+Delta kisi delta x 0 ke, 0 yaklaşık, epsilon 1 ve epsilon 2 de, 0 yaklaşık.
+
+631
+01:38:35,971 --> 01:38:36,844
+Umarım da bu.
+
+632
+01:38:44,532 --> 01:38:55,932
+Bunun görmesine baktığımızda, hatta kısmı türevlerin, X'e ve Y'e kısmı türevlerin bu noktada daha mevcut.
+
+633
+01:38:56,932 --> 01:39:03,932
+Ve Delta Z, yani o değişim, fonksiyon değişimi, belirlen noktadan başka bir noktada taşınmasıyla oluşan diyoruz.
+
+634
+01:39:04,731 --> 01:39:07,131
+Denklem sağlanıyoruz o zaman fonksiyonu.
+
+635
+01:39:08,148 --> 01:39:12,347
+X0 yasabı da türev ve litansile bir olduğunu söyleyebilir.
+
+636
+01:39:13,548 --> 01:39:14,427
+Onu da
+
+637
+01:39:14,427 --> 01:39:16,587
+Söyleyeyim.
+
+638
+01:39:17,728 --> 01:39:18,648
+Buraya yazmak nasıl?
+
+639
+01:39:22,547 --> 01:39:23,628
+Şuna yıldız diyelim.
+
+640
+01:39:26,108 --> 01:39:28,087
+Aynısını yazın bir diğer sonrak bulacak çünkü.
+
+641
+01:39:33,076 --> 01:39:34,076
+Kanunlayacağım.
+
+642
+01:39:36,595 --> 01:39:37,595
+Eğer
+
+643
+01:39:38,796 --> 01:39:39,796
+fx
+
+644
+01:39:43,604 --> 01:39:45,484
+x0'e 0 d, f'ye
+
+645
+01:39:50,323 --> 01:39:51,523
+x-0, y-0.
+
+646
+01:39:53,283 --> 01:39:53,943
+Ve üç, x-7.
+
+647
+01:39:58,163 --> 01:40:05,163
+ve delta z, hızız diktimini, sağlayırsa,
+
+648
+01:40:09,939 --> 01:40:10,739
+O zaman
+
+649
+01:40:10,739 --> 01:40:14,579
+f fonksiyonlar
+
+650
+01:40:19,604 --> 01:40:21,963
+Eksi fıriyesi bir daha türev ve övünde demiş.
+
+651
+01:40:33,716 --> 01:40:35,716
+Evet, burada dikkat edin.
+
+652
+01:40:35,716 --> 01:40:42,716
+Kısmi türelerin ne kadar meclis olması, fonksiyonun altı artı verilebilir olduğu anlamına gerekir.
+
+653
+01:40:43,716 --> 01:40:48,716
+Bunun için de o artım kadresinin, ektek değişimi,
+
+654
+01:40:49,716 --> 01:40:51,244
+gerç adetim yani.
+
+655
+01:40:56,500 --> 01:41:01,500
+ve renk hız mektemi, ya da bansı ne yaparsanız kesinlikle sağlaması gerekiyor.
+
+656
+01:41:09,811 --> 01:41:23,431
+Çünkü halde, bir de bölgesi göz önüne aldığımızda, bu bölgenin her noktasında tabii bu türevler, türevlerimiz açıkça dizildi ki, bu bölgenin tamamında fonksiyon türevlerine getiriyorlar, artık söylemiştik.
+
+657
+01:41:28,948 --> 01:41:31,427
+Şimdi artık bu anlamdaki türev deneyim ben.
+
+658
+01:41:32,868 --> 01:41:34,507
+Fonksiyonun becen notu da ki,
+
+659
+01:41:36,087 --> 01:41:37,208
+sürekliğini bize getir.
+
+660
+01:41:41,971 --> 01:41:58,211
+Çünkü, eğer fonksiyon türev edilirse, tam bireyi, delta x ve delta yatağa yaklaşırken, delta x'in de sıfıra yaklaşılığını garant eder.
+
+661
+01:41:58,211 --> 01:42:08,252
+Bu bize aslında iki değişkenel fonksiyonlarının türev ve katlı integral olduğu her noktada neyini sürekli ipatizeye götürüyoruz.
+
+662
+01:42:09,971 --> 01:42:10,451
+Evet.
+
+663
+01:42:17,076 --> 01:42:19,256
+O halde burada sonuç teoremini yazalım.
+
+664
+01:42:23,988 --> 01:42:27,988
+Er, if you see, er.
+
+665
+01:42:39,315 --> 01:42:40,076
+Şimdi,
+
+666
+01:42:50,036 --> 01:42:56,036
+bir x0 y0 noktasında türeveyebilirse,
+
+667
+01:43:00,051 --> 01:43:01,191
+Evet, bunu tuta.
+
+668
+01:43:05,492 --> 01:43:06,152
+Süleyküm.
+
+669
+01:43:09,684 --> 01:43:13,264
+Demek ki, evlili bu anlamda ne yapıyor? Sürekli bize garantit ediyoruz.
+
+670
+01:43:18,547 --> 01:43:19,547
+Oley!
+
+671
+01:43:21,547 --> 01:43:22,547
+Evet, evet.
+
+672
+01:43:23,547 --> 01:43:24,547
+Bu da ne gibi şu.
+
+673
+01:43:42,739 --> 01:43:49,739
+Şimdi arkadaşlar, bu iki değişkenli fonksiyonlar da ödecek değişkenli bir kuralı var.
+
+674
+01:44:18,260 --> 01:44:23,000
+Bir ay daha artmış ama daha da iyi olmamış.
+
+675
+01:45:11,731 --> 01:45:12,731
+Sari kutup.
+
+676
+01:51:22,355 --> 01:51:23,855
+Pekala arkadaşlar, devam edelim.
+
+677
+01:51:37,300 --> 01:51:38,300
+Şimdi de...
+
+678
+01:51:42,163 --> 01:51:43,203
+Diklatacağız.
+
+679
+01:52:00,340 --> 01:52:02,719
+İngilizce atılar, çeyiru, Delia, çeyiru.
+
+680
+01:52:06,260 --> 01:52:08,260
+Y'ye baktıkları, tek teşkene hatırlarsanız,
+
+681
+01:52:09,720 --> 01:52:10,260
+eğer
+
+682
+01:52:10,260 --> 01:52:14,260
+y fonksiyonu
+
+683
+01:52:14,260 --> 01:52:17,260
+f u'ya bağlıysa,
+
+684
+01:52:18,220 --> 01:52:20,260
+burada u da işte x'e bağlı bir fonksiyonsa,
+
+685
+01:52:22,260 --> 01:52:22,720
+şöyle,
+
+686
+01:52:23,860 --> 01:52:25,380
+burada biz y'nin mesela,
+
+687
+01:52:25,979 --> 01:52:27,260
+kime? u'ya göre görebilebilir.
+
+688
+01:52:27,640 --> 01:52:28,460
+x'e görebilebilir.
+
+689
+01:52:28,460 --> 01:52:32,860
+y'nin u'ya görebilebilir.
+
+690
+01:52:35,155 --> 01:52:39,155
+Şöyle, f'mi uya göre türeder daha doğrusu.
+
+691
+01:52:41,376 --> 01:52:43,515
+A, ne diyebilirim kolayca o da olur. O da olur yani.
+
+692
+01:52:44,796 --> 01:52:52,376
+Y'nin, uya, f dediğimi zaten, uya göre türeder çarpı, onun da eksiye göre türeder.
+
+693
+01:52:55,699 --> 01:53:02,899
+Yani biz bunu aslında iç-kiş türevde olarmış. Dışın türevi, iç-i türevi, çarpanı, iç-i türevi şeklinde geçiriyoruz. Fayda bu aslında.
+
+694
+01:53:05,959 --> 01:53:10,059
+Şimdi bu tek teşkilere de benzer şeyi iki teşkilere uygulayacağız.
+
+695
+01:53:12,000 --> 01:53:21,479
+Yani z eşittir, fx, y fonksiyonlar, burada x, t'ye bağlı.
+
+696
+01:53:23,060 --> 01:53:30,560
+Bu da u yerine işte şey bir işte var. Artık şey olur değil mi? X t'ye bağlı, y de t'ye bağlı.
+
+697
+01:53:32,760 --> 01:53:34,399
+Yani t'nin birer fonksiyonlarında.
+
+698
+01:53:37,460 --> 01:53:38,300
+Dolayısıyla.
+
+699
+01:53:42,804 --> 01:53:51,484
+Z'te mesela t'ye göre türevini bahsederken, tek değişken olduğu için sadece d z'in iki değişkenin ama türe ifadeci biz onu tek olarak yazabiliriz arkadaşlar.
+
+700
+01:53:51,664 --> 01:54:02,703
+Şöyle, d z, normal türevini yap. Çünkü t burada tek değişken var, değişken değil. Eşittir. Yukarıdakini bulacağız. Ama toplam olarak diyecek.
+
+701
+01:54:03,623 --> 01:54:09,804
+Yani x'in f'in t'ye, t'nin ve f'in x'e, x'in t'ye o şekilde gelecek.
+
+702
+01:54:20,115 --> 01:54:22,755
+F'in x'e çarpı.
+
+703
+01:54:25,755 --> 01:54:26,796
+X'in t'ye.
+
+704
+01:54:27,315 --> 01:54:33,055
+Artı, f'in y'ye, y'nin t'ye.
+
+705
+01:54:35,576 --> 01:54:36,255
+Bu.
+
+706
+01:54:49,268 --> 01:54:59,768
+Bunu aslında, iki bağımlı değişkenli fonksiyonlar için sincukrola, buna biz birinci sincukrola diyebiliriz. Yani tek değişkenli fonksiyonlar için.
+
+707
+01:55:01,167 --> 01:55:02,667
+Tek değişkenli halde.
+
+708
+01:55:04,768 --> 01:55:05,967
+Tek değişkenli.
+
+709
+01:55:15,155 --> 01:55:17,376
+Tek değişken, tek değişken durum.
+
+710
+01:55:17,935 --> 01:55:24,595
+Tek değişken durum.
+
+711
+01:55:31,956 --> 01:55:32,716
+Şöyle alın.
+
+712
+01:55:48,787 --> 01:55:50,787
+Şimdi ekleyeceğiz kendime, oma bakacağım.
+
+713
+01:55:51,787 --> 01:55:53,787
+Size sana bana bir örnek vereceğim.
+
+714
+01:55:53,787 --> 01:55:55,787
+Ispatla, duratalım, ispatla.
+
+715
+01:55:58,787 --> 01:55:59,787
+Bunun içinden çıkartmıyız.
+
+716
+01:56:00,787 --> 01:56:03,787
+Bence buna böyle etmedim, sonra devam ederiz.
+
+717
+01:56:08,979 --> 01:56:19,219
+w x y olsun, w y olmuş önemli bir, ekleyin x y olsun. x y de burada ayrı ayrı bir koste bir de simtifalısını sayıp.
+
+718
+01:56:26,100 --> 01:56:26,979
+Soru neymiş?
+
+719
+01:56:29,420 --> 01:56:31,739
+Fonksiyonunun t'ye püylikideki türevi nedir?
+
+720
+01:56:35,120 --> 01:56:41,880
+Yani dz bölü, d türevinin t eşit püylikideki değeri nedir?
+
+721
+01:56:44,720 --> 01:56:48,840
+Ya da dz bölüde t'yi hesaplayalım, bulalım yani.
+
+722
+01:56:52,819 --> 01:57:19,600
+İfade gereği, Z'in ya da F'in X'e göre türevi Y, çarpı Y'nin X'in T'ye göre türevi X'imizde, artı Z'in Y'e göre türevi X, ondan belli, çarpı Y'nin T'ye göre türevi, burada, koste.
+
+723
+01:57:22,323 --> 01:57:29,123
+Şimdi ben y ve x'i zaten x'e y'ye bağlı değerlerini biliyorum. Burası eksi sin karete.
+
+724
+01:57:31,123 --> 01:57:38,123
+Burada kos karete olur. Değil mi? Bu ifadeye. Eksi sin karete artı kos karete.
+
+725
+01:57:39,523 --> 01:57:45,523
+Bunun o zaman t1 bölü 2 için dz bölü dt türevimiz
+
+726
+01:57:50,996 --> 01:57:56,095
+Siz duyuyor ki bir, değil mi? Duasya, kurası eksi bir, kosü yüzü ise sıfır.
+
+727
+01:57:56,095 --> 01:58:00,676
+Artı sıfır, eksik bir.
+
+728
+01:58:10,068 --> 01:58:16,568
+Sesler kosün üstesini ifade eterken değişik şeye indirebilirsiniz. Koskorex, eksik kare, koskite ortam.
+
+729
+01:58:18,968 --> 01:58:20,568
+Koskite, eksik kite ortam.
+
+730
+01:58:33,939 --> 01:58:35,879
+Tek değişkeni durmayalım, tek değişkeni değil mi?
+
+731
+01:58:37,959 --> 01:58:42,479
+Bir de zincir kuralının iki değişkeni var. Onu da yazalım.
+
+732
+01:58:51,636 --> 01:58:54,756
+Bu da sorumuzdan bile, yaklaşıkların, geçtim öyle, sayfayı.
+
+733
+01:58:56,596 --> 01:58:57,316
+İçkinci dolu.
+
+734
+01:59:06,868 --> 01:59:09,452
+Tek tek
+
+735
+01:59:12,884 --> 01:59:18,304
+Yani aslında oradaki x, y'yi mesela t'nin türedenir fonksiyon olarak kabul ediyor.
+
+736
+01:59:18,304 --> 01:59:19,623
+Bundan da kabuller var ya.
+
+737
+01:59:22,543 --> 01:59:23,264
+Et eşitir.
+
+738
+01:59:24,384 --> 01:59:25,104
+Et x, y.
+
+739
+01:59:26,604 --> 01:59:31,344
+Ve x'i de x, y, s, t diyelim.
+
+740
+01:59:32,344 --> 01:59:34,463
+Y de y, s, t.
+
+741
+01:59:38,003 --> 01:59:46,283
+X seviye, S ve T'ye, göre, kısmi türev ve katlı integral var.
+
+742
+01:59:55,764 --> 02:00:02,684
+Yani fonksiyon x, y, z'ye göre türebilebilir ve x, y, z'nin de t'ye göre türebilebilir fonksiyonlar olması.
+
+743
+02:00:02,684 --> 02:00:03,064
+Değil mi?
+
+744
+02:00:09,064 --> 02:00:11,743
+Şu bandı taşı kanalı önemli. Önemli onu veririz.
+
+745
+02:00:48,083 --> 02:00:50,523
+Kutup, maalesef kutup.
+
+746
+02:00:53,283 --> 02:00:57,183
+Öz yapı söylüyorsun, düzgün yazmayalım, şeyde, düzgün yazmayın.
+
+747
+02:00:57,703 --> 02:00:58,463
+Yine de aynısıyım.
+
+748
+02:00:59,543 --> 02:01:01,404
+Aynı atıları da tutarsın da konulamış.
+
+749
+02:01:06,036 --> 02:01:10,476
+X, G, Y'nin X, Y, S, ve T'ye göre spitreye devam edelim.
+
+750
+02:01:19,380 --> 02:01:29,260
+Z tabi X'ye ilgili türev ve katlı integral, kısmi türev ve katlı integral var. O zaman, Z'nin de hem S hem T'ye ilgili kısmi türev ve katlı integral var.
+
+751
+02:01:58,739 --> 02:02:02,899
+Eğer XS, TST, bundan türev demişse, bundan tabii kısıtlader mevcut olur.
+
+752
+02:02:03,899 --> 02:02:05,859
+Bundan türev ve bir olgun bahsediyoruz.
+
+753
+02:02:09,811 --> 02:02:11,971
+Bu türevden bir kime? X, V'ye göre.
+
+754
+02:02:15,572 --> 02:02:17,112
+Ve buna da söylenir.
+
+755
+02:02:22,484 --> 02:02:27,364
+X ve Y'nin S ve T'ye göre serileri var, meçup.
+
+756
+02:02:32,083 --> 02:02:35,644
+O zaman zemin de SVT'ye göre türev denilmiş olur.
+
+757
+02:02:41,652 --> 02:02:45,471
+Yani etin de, SvT bile.
+
+758
+02:02:49,939 --> 02:02:54,039
+Kısmi türev ve mevcut.
+
+759
+02:02:58,579 --> 02:03:03,260
+Adımda yazılabileceklerini aslında tekrar edeceğiz. Orada s'ye göre edelim.
+
+760
+02:03:03,440 --> 02:03:06,539
+T'nin yanında, o da aynı yazılımda s'ye göre edelim.
+
+761
+02:03:06,620 --> 02:03:08,720
+Adımda x değişken s olsun önce s'ye göre yazalım.
+
+762
+02:03:09,979 --> 02:03:13,120
+Yani dz bölü ds eşittir.
+
+763
+02:03:14,940 --> 02:03:23,899
+z'in x'e göre türevi çarpı x'in t'ye artı y'nin
+
+764
+02:03:24,351 --> 02:03:30,451
+y'ye göre türedi, z'nin y'ye göre türedi, çarpı y'nin s'ye göre türedi.
+
+765
+02:03:31,231 --> 02:03:34,291
+Aynı şekilde z'nin t'ye göre türedi, eşittir.
+
+766
+02:03:35,391 --> 02:03:45,271
+z'nin x'e göre türedi, daha önceki bir tekrar açı aslında, çarpı x'in t'ye göre türedi, artı y'nin t'ye göre türedi.
+
+767
+02:03:45,832 --> 02:03:47,531
+Pardon, z'nin y'ye göre türedi.
+
+768
+02:03:51,764 --> 02:03:59,244
+D, Z bölü, D'ye çarkı, yeninde yine T'ye türev.
+
+769
+02:04:05,300 --> 02:04:16,640
+Gördüğünüz burada, letin x ve s ve t'ye göre de, tabi nakıskitörülerine, türelilerine üstü.
+
+770
+02:04:40,659 --> 02:04:44,379
+Şebatik olarak arkadaşlar, bunları göstermemiz mümkün.
+
+771
+02:04:46,039 --> 02:04:46,299
+Sen,
+
+772
+02:04:48,600 --> 02:04:50,180
+örnek verilsin de,
+
+773
+02:04:51,639 --> 02:04:54,100
+etiksiye var ya da zeytetiksiye var.
+
+774
+02:05:01,492 --> 02:05:05,252
+Bunun, şöyle bir zaman.
+
+775
+02:05:12,884 --> 02:05:14,664
+X'e bağlı, D'ye bağlı.
+
+776
+02:05:18,484 --> 02:05:20,484
+Bir de, sebepler var.
+
+777
+02:05:32,404 --> 02:05:42,804
+Yani, şu türevde pişemeye bakarsanız, zel'in nereye, s-güretörü bakın, zel'in x'i x'in s'ye artı, zel'in y'ye y'in s'ye.
+
+778
+02:05:42,804 --> 02:05:44,004
+Aynı şekilde?
+
+779
+02:05:46,004 --> 02:05:49,996
+t-güretörü de diğerleri, onu yol olarak şöyle takvim ettirin.
+
+780
+02:05:58,131 --> 02:06:07,131
+Düşü değil mi? Buradan da böyle geldi. Böyle geldi. Buradan da sağ.
+
+781
+02:06:07,131 --> 02:06:15,131
+Şimdi mavisine bakalım. Yine buradan aynı hizmeti, şuradan, buradan ayrıca, buradan geldi.
+
+782
+02:06:15,131 --> 02:06:21,131
+Burada yine buradan ayrıca devam etti. Belki şuradan ayrıca, buradan gitti.
+
+783
+02:06:21,131 --> 02:06:23,131
+Evet.
+
+784
+02:06:23,131 --> 02:06:25,131
+Bu da yine de semak böyle açıklamazız.
+
+785
+02:06:52,340 --> 02:06:56,520
+Bir de 3 değişkenli fonksiyonlar için aynı şeyi yapabiliriz.
+
+786
+02:06:56,520 --> 02:06:59,920
+3 değişkenli, 4 değişkenli, 4 değişkenli, 4 değişkenli, 4 değişkenli.
+
+787
+02:07:06,452 --> 02:07:08,912
+Ama bir tane önef, seçerim de onunla, seçerim de.
+
+788
+02:07:23,859 --> 02:07:25,859
+Z eşçilik sağ fkd
+
+789
+02:07:36,020 --> 02:07:42,020
+Burada x eşittir ve y eşittir ve artı sen.
+
+790
+02:07:44,520 --> 02:07:55,020
+O zaman x'in, z'in, s'e ve z'in, rin bulamışız.
+
+791
+02:07:55,020 --> 02:07:57,020
+t eksi s'e diyelim şuna ya.
+
+792
+02:08:04,884 --> 02:08:05,884
+T artı C.
+
+793
+02:08:07,484 --> 02:08:09,484
+Z'nin T.
+
+794
+02:08:10,484 --> 02:08:13,884
+Tabii, başka bir işle, R'de kullanan başka işle kullanabilirsin yani.
+
+795
+02:08:14,684 --> 02:08:15,884
+Tabii sıkıntı yok.
+
+796
+02:08:15,884 --> 02:08:21,884
+Yani, bir yanlış hastalık anlatıyoruz. Önce bir anlatalım master'da, daha sonra zollutumlara bakar.
+
+797
+02:08:23,283 --> 02:08:24,171
+Bakalım.
+
+798
+02:08:29,076 --> 02:08:29,636
+Ds.
+
+799
+02:08:31,095 --> 02:08:33,976
+Ds, Ds, Ds, Ds,
+
+800
+02:08:35,655 --> 02:08:40,916
+Eşitizletin x'e, 2x çarpı, x'in z'ye, eksi 1,
+
+801
+02:08:42,355 --> 02:08:45,256
+artı, z'in g'ye, 2y çarpı,
+
+802
+02:08:45,836 --> 02:08:48,556
+y'nin t'ye götürük, 7s'ye götürük, çarpı 1.
+
+803
+02:08:50,644 --> 02:08:56,804
+Yani eşittir, eksi 2x artı 2 ye, yani şöyle diyebisiz etsin, 2 ye, eksi x.
+
+804
+02:08:59,684 --> 02:09:03,703
+Bir de z'in t'ye bölgeye bakalım.
+
+805
+02:09:06,083 --> 02:09:07,983
+Z'in x ise bundan değişmeyecek.
+
+806
+02:09:08,903 --> 02:09:15,224
+Sonra z'in t'ye bölgeye 1, artı z'in y'ye bölgeye 2, ye.
+
+807
+02:09:16,307 --> 02:09:21,748
+Sonra t'nin, y'nin t'ye dili türev olabilsin.
+
+808
+02:09:24,748 --> 02:09:28,028
+Yani 2x atı 2'ye.
+
+809
+02:09:30,428 --> 02:09:32,428
+Bu türde böyle arkadaşlar.
+
+810
+02:09:34,307 --> 02:09:39,028
+Bunları isterseniz y ve t ve sercisinden elde edilmem için.
+
+811
+02:09:40,468 --> 02:09:44,028
+Yani y-x dediğimize göre
+
+812
+02:09:44,243 --> 02:09:49,703
+Bir yerden bunu çıkarsak, T'ler gider. 2S'ye gelir. 4S oldu.
+
+813
+02:09:51,783 --> 02:09:56,224
+Burada da 2S'ye topladığınız zaman, S'ler gidecekti, bu defa 4T kalır.
+
+814
+02:09:58,063 --> 02:09:59,003
+Böyle bir sonuç var.
+
+815
+02:10:28,756 --> 02:10:39,296
+Şimdi, esas olarak, kapal türele tekrar, özetecek olursak, kapal türele dönecek olursak.
+
+816
+02:11:14,163 --> 02:11:15,283
+O süreler teşkilatı.
+
+817
+02:11:16,563 --> 02:11:18,243
+Ben bir sektim.
+
+818
+02:11:30,420 --> 02:11:35,799
+Üç bağımsız, iki bağımsız.
+
+819
+02:11:41,171 --> 02:11:41,771
+Şükür edin.
+
+820
+02:11:45,011 --> 02:11:48,571
+Tek bağımsız 3, ara değişikli.
+
+821
+02:12:03,155 --> 02:12:04,155
+Durun.
+
+822
+02:12:06,155 --> 02:12:07,155
+Tek bağımız.
+
+823
+02:12:08,155 --> 02:12:11,155
+Bir orada iki ara değişkeni için.
+
+824
+02:12:11,155 --> 02:12:14,155
+Öncekilerini verdik. Tek bağımız ve iki bağımız.
+
+825
+02:12:15,155 --> 02:12:17,155
+Şekilde. Buradaysa ara değişkeni kadarımız var.
+
+826
+02:12:18,155 --> 02:12:22,155
+Öyle kullanılmış. Yani üç değişkeni fonksiyonlarda tek değişkeni.
+
+827
+02:12:25,811 --> 02:12:29,492
+Hatta bunu, çok hoşuna bitmediğim, şöyle yazalım.
+
+828
+02:12:34,804 --> 02:12:36,804
+W eşittir.
+
+829
+02:12:38,804 --> 02:12:40,804
+Biz o kullandık. Masimlik olsun W olsun.
+
+830
+02:12:41,804 --> 02:12:42,804
+X, Y, Z.
+
+831
+02:12:44,804 --> 02:12:46,804
+Şimdi burada tek bağımlı seçken alayım.
+
+832
+02:12:52,979 --> 02:12:54,979
+İçin neyse, sınırlı bir tüzeye geçen.
+
+833
+02:12:57,779 --> 02:12:58,220
+Tick,
+
+834
+02:13:00,300 --> 02:13:01,100
+vansız.
+
+835
+02:13:16,020 --> 02:13:21,840
+Yani x, y, z, s'ye bağlı.
+
+836
+02:13:32,307 --> 02:13:32,787
+Çök.
+
+837
+02:13:33,988 --> 02:13:35,747
+O zaman W'nun
+
+838
+02:13:35,747 --> 02:13:40,188
+T görevliği var. Eşittir.
+
+839
+02:13:42,167 --> 02:13:42,988
+W'nun ise
+
+840
+02:13:46,836 --> 02:13:48,836
+Teşekkürler.
+
+841
+02:13:56,627 --> 02:14:01,927
+x'e, x'in t'ye, artık bunu normal türev yazalım.
+
+842
+02:14:02,827 --> 02:14:06,127
+dx bölü d, t artı,
+
+843
+02:14:07,127 --> 02:14:10,127
+şu şeye bakalım türevı orada nasıl yazın arkadaşlar?
+
+844
+02:14:10,627 --> 02:14:14,627
+hep bağımlısak halde, artık kısmi yapmışım, artık düz yapışım doğru.
+
+845
+02:14:15,627 --> 02:14:17,127
+başına kısma olacak.
+
+846
+02:14:19,127 --> 02:14:22,127
+sadece şunu düzeltelim, şundan d yapalım.
+
+847
+02:14:22,127 --> 02:14:23,127
+ilk d yaptım.
+
+848
+02:14:24,180 --> 02:14:26,820
+Bazıları da acil ayar yapıyoruz.
+
+849
+02:14:30,160 --> 02:14:33,740
+D, F, D, X, D, F, D.
+
+850
+02:14:33,920 --> 02:14:37,720
+Yani, bağımlısı değişkenin de iki bağımlısı değişken varsa, kısmi türev.
+
+851
+02:14:38,300 --> 02:14:43,240
+Tek varsa, burada yaparız, iki bağımlısı değişken.
+
+852
+02:14:44,420 --> 02:14:46,460
+Evet, iki bağımlısı değişkeni de onu yaptık.
+
+853
+02:14:48,000 --> 02:14:51,000
+Burada da üç değişkenin fonksiyonu ve tek bağımlısı değişken.
+
+854
+02:14:54,868 --> 02:15:07,668
+Dolayısıyla, W'nun G'ye, G'nin T'ye artı, W'nun Z'ye, çarpı Z'nin de T'ye.
+
+855
+02:15:22,579 --> 02:15:30,600
+Öğreni yapalım burada arkadaşlar, bakalım. W mesela x artı, ki artı z kare.
+
+856
+02:15:33,600 --> 02:15:40,579
+x eşittir, r bölü s, mence bölü s, niye bu? Tek değişkenine bakacaktık biz.
+
+857
+02:15:48,916 --> 02:16:07,452
+Evet.
+
+858
+02:16:10,836 --> 02:16:14,635
+Şimdi yazacağım, x ve artı z burası. Daha kolay alayım.
+
+859
+02:16:16,975 --> 02:16:23,416
+x ve artı z, x eşittir, poste giriştirsin.
+
+860
+02:16:29,203 --> 02:16:31,203
+ve z eşittir de t olsun.
+
+861
+02:16:33,524 --> 02:16:37,203
+O zaman w'nun t'ye görevleri eşittir.
+
+862
+02:16:38,703 --> 02:16:42,403
+w'nun x'ye görevleri diye, x'in t'ye görevleri de x'in üstte.
+
+863
+02:16:46,708 --> 02:17:01,927
+Artı, W'nin G'ye görevleri X çarpı Y'nin T'ye görevleri Koç T. Artı, W'nin Z'ye görevleri 1 çarpı Z'nin T'ye görevleri 1.
+
+864
+02:17:03,728 --> 02:17:14,008
+Y'ye ne yazarsak, şimdi T burası eksiksin kalite olur. Artı burada Koç kalite olur. Artı bir.
+
+865
+02:17:16,884 --> 02:17:18,884
+Buradan 1 artı 2 koste oluştur.
+
+866
+02:17:18,884 --> 02:17:22,884
+Artık kutu ödeylesin 1 artı 2 koste oluştur.
+
+867
+02:17:22,884 --> 02:17:24,884
+Ardın, kos 2'te.
+
+868
+02:17:24,884 --> 02:17:26,884
+Kos 2'te.
+
+869
+02:17:42,868 --> 02:17:44,308
+Biraz, pozitikten.
+
+870
+02:17:44,868 --> 02:17:45,368
+Tamam mı?
+
+871
+02:17:48,268 --> 02:17:50,387
+Ve bu üç ilişkilerin fonksiyon için
+
+872
+02:17:50,387 --> 02:17:53,328
+Ben şişey için alalım arkadaşlar.
+
+873
+02:17:53,688 --> 02:17:54,368
+Kare için alalım.
+
+874
+02:18:03,891 --> 02:18:05,112
+Önce bunu aldık.
+
+875
+02:18:20,115 --> 02:18:20,635
+Geçelim.
+
+876
+02:18:23,435 --> 02:18:27,595
+Bu kez, iki bağım seçkin adı.
+
+877
+02:18:40,884 --> 02:18:41,324
+Tamam.
+
+878
+02:18:58,995 --> 02:19:21,295
+Yani, x eşittir, x, t, s, t, y eşittir, d, s, t, s eşittir, z, s, t.
+
+879
+02:19:41,556 --> 02:19:53,636
+O halde, W'nun, artık böyle ilk yazacağız, S'ye göre ve W'nun, T'ye göre türev ve F'leri var.
+
+880
+02:19:55,776 --> 02:20:05,636
+W'nun ise, X'in S'ye artı, W'nun Y'ye,
+
+881
+02:20:06,835 --> 02:20:10,235
+Y'nin s'ye artı, bakın, kutu baktığında, baktığında geliyor.
+
+882
+02:20:11,335 --> 02:20:16,635
+W'nun s'ye çarkı z'nin s'ye.
+
+883
+02:20:18,735 --> 02:20:19,955
+Bunu da yazalım.
+
+884
+02:20:21,095 --> 02:20:21,735
+Deşittir.
+
+885
+02:20:23,335 --> 02:20:27,615
+W'nun s'ye, sim t'ye artı.
+
+886
+02:20:28,615 --> 02:20:32,895
+W'nun y'ye, Y'nin t'ye.
+
+887
+02:20:34,484 --> 02:20:41,064
+artı, tabucunu, zt, zt'ye.
+
+888
+02:21:21,268 --> 02:21:26,768
+Evet, bunu artık iffabans değişken haline de örnek koydunuz.
+
+889
+02:21:51,572 --> 02:21:54,072
+Ön evde yapalım, bu dersi birlikte tamamlamış olur.
+
+890
+02:21:55,832 --> 02:21:57,492
+Yani nabobu uygulamaçlarız.
+
+891
+02:22:07,379 --> 02:22:10,379
+W x artı 2'ye artırız.
+
+892
+02:22:11,379 --> 02:22:12,379
+Yazalım.
+
+893
+02:22:14,379 --> 02:22:16,379
+X eşittir t bir ise,
+
+894
+02:22:17,379 --> 02:22:19,379
+1'e eşittir,
+
+895
+02:22:22,379 --> 02:22:23,379
+tekrar artı edense,
+
+896
+02:22:25,379 --> 02:22:27,379
+f f eşittir 2,
+
+897
+02:22:28,379 --> 02:22:29,379
+t.
+
+898
+02:22:32,379 --> 02:22:33,379
+O zaman tabi bir nö.
+
+899
+02:22:36,180 --> 02:22:37,180
+W'nun,
+
+900
+02:22:40,180 --> 02:22:41,180
+esek öğretmeni.
+
+901
+02:22:42,180 --> 02:22:43,180
+Ben şu an bir cihaklayayım arkadaşlar.
+
+902
+02:22:53,108 --> 02:23:03,007
+W'nun S'e görevleri hemen tanımlanın. W'nun X'e görevleri 1 çarpı X'in kime? S'e görevleri eksi t bölü S kare.
+
+903
+02:23:03,007 --> 02:23:20,368
+Karelim, bu da balerciyeye görebilir. Sonra artı W'nun Y'e görevleri 2, Y'nin S'e görevleri 1, 1, 3, artı W'nun Z'e görevleri 2, Z'nin S'e görevleri 0.
+
+904
+02:23:21,780 --> 02:23:24,000
+Burada eksite bölümün seferi.
+
+905
+02:23:27,891 --> 02:23:29,332
+artı 2 bölü s.
+
+906
+02:23:29,972 --> 02:23:31,432
+Değil mi? Öde bir ifade ediyoruz.
+
+907
+02:23:33,112 --> 02:23:34,691
+Eksi t bölü s kare artı 2 bölü s.
+
+908
+02:23:36,612 --> 02:23:39,871
+Yani 2 bölü s eksi t bölü s kare.
+
+909
+02:23:39,871 --> 02:23:40,391
+Evet.
+
+910
+02:23:41,932 --> 02:23:44,332
+W'nun t görevlerine bakalım.
+
+911
+02:23:44,472 --> 02:23:44,932
+Eşittir.
+
+912
+02:23:46,231 --> 02:23:50,211
+1 çarpı t görevlerine 1 bölü s.
+
+913
+02:23:51,412 --> 02:24:01,152
+Artı 2 çarpı, y'nin tü 2'te, artı 2 z çarpı, tü 2, iş var.
+
+914
+02:24:04,652 --> 02:24:08,492
+Böylece birbiri ise, artı,
+
+915
+02:24:13,203 --> 02:24:22,804
+1 bölü de 4t, z ifade edemiz neydi? T idi. O zaman 2t olur. Z'lerini ter ettiğiniz zaman olur.
+
+916
+02:24:22,804 --> 02:24:30,403
+Yani 1 bölü ise artı 6 derim mi? 1 bölü ise artı 12.
+
+917
+02:24:32,004 --> 02:24:35,004
+2 z çarpı...
+
+918
+02:24:36,004 --> 02:24:40,004
+Evet, 2t imiş. Ben şunu yansıtacağım.
+
+919
+02:24:41,396 --> 02:24:43,396
+Şiştabı, şiştabı.
+
+920
+02:24:58,131 --> 02:25:04,432
+Dolayısıyla iki çapka, iki, dört, siktir olması, sekiz de olması.
+
+921
+02:25:06,151 --> 02:25:09,272
+Evet ki bir bölüse artı on ikide.
+
+922
+02:25:13,012 --> 02:25:15,012
+Evet arkadaşlar, böyle ki
+
+923
+02:25:17,012 --> 02:25:19,012
+Bugün bir dersimizin konusunu
+
+924
+02:25:19,012 --> 02:25:47,943
+Tazası da
+
+925
+02:25:39,028 --> 02:25:41,148
+Önnet çökerimiz için, uğruna yaparız.
+
+926
+02:25:42,087 --> 02:25:44,407
+Sıra da sonra da yine kalmış konular.
+
+927
+02:25:51,324 --> 02:26:01,304
+Tazası da
+
+928
+02:25:50,739 --> 02:26:17,159
+O zaman da uzunlukta devam edeceğiz. O zaman varız. Var mıdır sorumuzda arkadaşlar? Yarın 2 dersimizde bu uygulama yaparız. Zaten internetin çekmemesini değil de sınıftar kötü maalesef. İkimiz dersler çoğu zaman boş dönüyoruz. Bak kalbi çok oluyor. O yüzden yarın sınıflanmayacağım gibi yüz olsun.
+
+929
+02:26:18,420 --> 02:26:25,200
+İlata geleceğim falan diyorsanız, ben mail atıp da ona göre biz de kendimizi ayarlayalım.
+
+930
+02:26:26,200 --> 02:26:28,700
+Yani bir yastakalım zaten, bol bol üret edeceğiz.
+
+931
+02:26:33,427 --> 02:26:37,868
+Tabii tabii. Sınav nereye kadar arkadaşlar? Hemen söyleyeyim ben size.
+
+932
+02:26:41,620 --> 02:26:55,620
+Sınav, 7. haftanın sonuna kadar arkadaşlar. Yani 2D komutanlara başladık. Ne var orada işe? Tam hükümeleri, 2D komutanlar seviye edildi. Onlarla çok bir şey yok. Uluyor, uluyor, uluyor şu anda.
+
+933
+02:26:55,620 --> 02:27:08,620
+2D komutanlar limit süreklilik var. Tamam mı? O kadar. Yani dizilerden başlayacak seriler, kuvvet serileri,
+
+934
+02:27:09,172 --> 02:27:15,531
+parametrik denklemler ve kutupakunyatlar var tabii orada, vektörler var.
+
+935
+02:27:15,531 --> 02:27:21,051
+Ve çok değişkenli fonksiyonlar o başkısım işte yani, geçen, ataközümüz konular.
+
+936
+02:27:21,051 --> 02:27:30,932
+Mesela bu 7 haftalık konuları bol bol çalışın. Seri ve kuvvet serilerde bol bol seri soru çıkar.
+
+937
+02:27:30,932 --> 02:27:37,164
+Parametrik kutupakunyatlar en az terinden bir vektör çıkar. Vektörlerden de dışarıdaki vektörü.
+
+938
+02:27:37,363 --> 02:27:57,664
+ve çok değişkenli, değişkenli çıkacağını düşünürseniz, ben her şeyde, soru görebileceğini tam bilirip, bütün konularla çalışmaya çalıştım. Tamam mı? Oldu mu? Evet, yarın sınav üretip dekirken, genel uygulama yapacağım arkadaşlar. Bütün şeyleri çözeceğim.
+
+939
+02:27:59,003 --> 02:28:04,283
+Bu alba işte, buradan size ne kadar çok farklı soru çözebilsek, o kadar.
+
+940
+02:28:04,788 --> 02:28:06,288
+Yardımlı oluruz diye düşünüyorum.
+
+941
+02:28:11,092 --> 02:28:12,592
+Tamamdır, bambaşka olmuş.
+
+942
+02:28:14,912 --> 02:28:18,811
+Peki, o zaman yarın dönüşürüz.
+
+943
+02:28:18,811 --> 02:28:19,551
+Kendinize iyi bakın.
