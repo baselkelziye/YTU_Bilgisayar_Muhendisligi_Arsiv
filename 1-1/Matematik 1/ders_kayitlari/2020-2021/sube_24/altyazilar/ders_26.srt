@@ -1,0 +1,975 @@
+1
+00:00:54,420 --> 00:01:00,380
+Günaydın arkadaşlar. Nasılsınız? İyisinizdir inşallah. Ses geliyor değil mi?
+
+2
+00:01:02,660 --> 00:01:03,740
+Günaydın hocam, geliyor.
+
+3
+00:01:04,480 --> 00:01:09,980
+Tamam. Katılan nasıl? Bir bakalım. Daha 12 kişi katılmış.
+
+4
+00:01:12,640 --> 00:01:16,640
+Sabah da değil 11 ama. Bugün sınavınız var mı arkadaşlar?
+
+5
+00:01:22,739 --> 00:01:47,679
+yok herhalde. Evet, dün hacimleri vermiştik. Şimdi de yay uzunluğu diye başlığımız, yani düzlemde verilmiş bir fx fonksiyonunun grafiği ya da eğrisi veya yay uzunluğu da diyoruz buna. Bunu hesaplayabilmek için bir formül oluşturacağız. Onunla ilgili konuşmak istiyorum.
+
+6
+00:01:48,852 --> 00:02:05,112
+Evet, notlarınız elime ulaştı arkadaşlar ama henüz ben daha giremedim sisteme. Dersten sonra girmeye çalışacağım. Tamam mı? Ama notlarınızı da çok iyi görmedim yani. Birinci vizelere göre düşürmüşsünüz. Gerçi zor olduğunu söylediniz.
+
+7
+00:02:14,292 --> 00:02:16,072
+Evet, başlayalım mı arkadaşlar?
+
+8
+00:02:25,075 --> 00:02:31,475
+Evet, şöyle diyelim. Şöyle bir rastgele bir C eğrisi gözlerini almış olalım arkadaşlar.
+
+9
+00:02:32,355 --> 00:02:39,075
+A ve düzlemdeki iki noktayı, iki nokta olmak üzere dedik. İki nokta arasındaki...
+
+10
+00:02:39,508 --> 00:02:48,668
+uzunluğu da biz düz çizgiyle ifade ederiz. Sembol ile a ile b arasındaki uzaklığı yani a ve b doğru parçasının uzunluğunu göstereceğiz.
+
+11
+00:02:49,128 --> 00:03:00,228
+a ve b noktalarını birbirine bağlayan bir c eğrisi verilmiş olsun. Yani böyle bir c eğrisini hesaplayabilmek için c eğrisinin hesaplanması için bir formülümüz yok ama biz bunu ne yapacağız?
+
+12
+00:03:00,228 --> 00:03:06,388
+Bir formül oluşturabilmek için arkadaşlar bu eğri üzerinde eğri noktalara ayıracağız.
+
+13
+00:03:07,508 --> 00:03:16,987
+bu eğrin uzunluğunu doğru parçalarının uzunluklarının toplamı şeklinde bulmaya çalışacağız. Onun için biraz hikayesini burada o şekilde vereceğiz.
+
+14
+00:03:16,987 --> 00:03:25,508
+Yani şekilde görüldüğü gibi şöyle bir c eğrimiz var. Bu c eğrisi boyunca sırasıyla işte a'dan b'ye kadar noktalar ayıralım.
+
+15
+00:03:25,508 --> 00:03:35,508
+İşte p0 nokta, rastgele noktalar alalım. P1, işte devam ettiğimizde p-1, p-i, p-n, n tane noktaya bölmüş olalım.
+
+16
+00:03:36,116 --> 00:03:58,635
+Bu noktaları birbirine ne yapalım? Diyoruz ki doğru parçalarıyla birleştirelim. İşte P0, P1 doğru parçası, P2 şeklinde ta ki Pn-1, Pn şeklinde. Yani C'nin uzunluğunu bulabilmek için doğru parçalarının uzunlukların toplamı şeklinde bulmaya çalışacağız. Amacımız bu burada arkadaşlar. Tamam mı?
+
+17
+00:04:04,116 --> 00:04:14,415
+P0, P1, p-1, p-1, p-n şeklinde poligonal doğrusu C eğris için bir poligonal yaklaşım oluşturur.
+
+18
+00:04:14,756 --> 00:04:17,896
+Ve uzunluğunu da şöyle ifade etmiş olalım, ln diyelim.
+
+19
+00:04:18,816 --> 00:04:27,576
+İşte doğru parçaların yukarıda şekilde de gördüğü gibi, işte P0, P1 artı doğru parçaların uzunluklarını bu şekilde ifade edelim.
+
+20
+00:04:28,019 --> 00:04:31,480
+Bunu da kısaca sigma sembolüyle şöyle ifade ederiz.
+
+21
+00:04:31,539 --> 00:04:41,659
+I eşittir birden N'e kadar P i eksi 1 P i şeklinde tüm doğru parçaların uzunluklarını bu şekilde ifade etmiş oluruz.
+
+22
+00:04:42,612 --> 00:04:49,032
+Evet, iki noktayı birbirine bağlayan en kısa eğrinin bir doğru parçası olduğunu biz biliyoruz zaten.
+
+23
+00:04:49,672 --> 00:04:54,932
+Bu uzunluğu da neyle göstermişik? Doğru parçaların uzunlukların toplamını da L'nin ne gösterdik?
+
+24
+00:04:54,932 --> 00:04:58,512
+L'nin uzunluğu, C'nin uzunluğunu aşamaz.
+
+25
+00:04:59,012 --> 00:05:05,872
+İşte buradaki amacımız arkadaşlar, gene biz bu doğru parçaların uzunluklarını ifade ettik ya, ne yapacağız?
+
+26
+00:05:06,212 --> 00:05:10,612
+İşte Riemann toplamına gidip en sonsuz için işte bir formül bulmaya çalışacağız.
+
+27
+00:05:10,612 --> 00:05:13,612
+çalışıyoruz. Amacımız bu bizim. İşte dedik ki eğer
+
+28
+00:05:14,612 --> 00:05:23,012
+Mevcut noktalar arasına daha fazla nokta eklersek ne olacak? Gerçek değerine yaklaşmış olacağız.
+
+29
+00:05:23,432 --> 00:05:32,091
+Yukarıdaki şekilde daha da sıklaştırırsak noktalarımızı ne olacak? O doğru parçaları daha da küçülecek. Gerçek değere ulaşmış olacağız.
+
+30
+00:05:32,711 --> 00:05:39,192
+Eğer mevcut noktaların arasına daha fazla noktaları ekleyerek n'e artırırsak L'nin uzunluğu küçülmez artabilir.
+
+31
+00:05:42,612 --> 00:05:51,152
+L'en küçük k olacak şekilde bir sonlu k sayısı varsa o zaman bu eşitsizliği sağlayan en küçük bir k sayısı olacaktır.
+
+32
+00:05:51,472 --> 00:05:53,592
+Bu da aşağıdaki tanımı vereceğiz.
+
+33
+00:05:53,972 --> 00:05:56,472
+Yani şu kısım hikaye. Bizim elimizde ne var?
+
+34
+00:05:56,572 --> 00:06:01,672
+Doğru parçalarının toplamından yararlanarak c'nin uzunluğunu bulmak istiyoruz.
+
+35
+00:06:01,792 --> 00:06:04,352
+Onu da sigma sembolüyle bu şekilde ifade ettik.
+
+36
+00:06:04,692 --> 00:06:07,152
+Tabii ki biz bunu nereye getirmeye çalışacağız arkadaşlar?
+
+37
+00:06:07,432 --> 00:06:10,612
+Kendi konumuza yeştir, efiks eğrisi.
+
+38
+00:06:10,612 --> 00:06:16,852
+yasının uzunluğunu bulmaya getirmeye çalışacağız. Şimdi şöyle bir tanımı söyleyeyim yukarıda konuştuktan sonra.
+
+39
+00:06:17,392 --> 00:06:24,652
+1c yerisinin A'dan B'ye olan yay uzunluğu, c'nin her poligonal yaklaşımının yani L'nin uzunluğu için
+
+40
+00:06:25,139 --> 00:06:33,060
+L'n küçük eşit s eşitsizliğini sağlayan en küçük real s sayısıdır. Yani bir şekilde bir s sayısı varsa uzunluğuna s diyeceğiz biraz sonra.
+
+41
+00:06:33,379 --> 00:06:38,220
+Bu durumda c eğrisinin yay uzunluğu s en büyük doğru parçası.
+
+42
+00:06:39,764 --> 00:07:07,404
+p-i-1p-0 olacak şekilde ponigonal yaklaşımları, ln uzunluklarının en sonsuz için limit olacaktır. Yani şurada şunu demek istiyoruz arkadaşlar. Biz daha da noktaları sıklaştırırsak, yani bu ne demek? İşte aralığımız sıfıra gidecek şekilde daha da küçültürsek ya da ne derdik? En sonsuza giderken bu toplamın limiti bize c-lisinin uzunluğunu vermiş olacak. İşte onu da bu tanımda söylemek istiyoruz.
+
+43
+00:07:07,764 --> 00:07:10,603
+Biz tabii ki burada her önümüze gelen...
+
+44
+00:07:10,740 --> 00:07:38,740
+Eğrinin uzunluğunu hesaplayamayız arkadaşlar. Düzgün eğrilen uzunluklarının hesaplamasını vermiş olacağız formül olarak. Düzgün eğri ne demektir? Verilen fonksiyonun türevinin aralıkta sürekli olması gerekir değilse ben öyle bir eğrinin uzunluğunu hesaplayamayacağım. Onu da burada bakın not olarak yazdık. Bu bölümde sürekli türevlere sahip fonksiyonlarla tanımlanan eğrilerin yani düzgün olan eğrilerin yay uzunluklarını hesaplamaya çalışıyoruz.
+
+45
+00:07:38,740 --> 00:08:01,480
+dönmeye çalışacağız. Yani her zaman işte düzgün bir erinin uzunluğu şudur budur dediğimizde bunu demek isteyeceğiz. Yani türevi de sürekli olması gerekir. Değilse zaten biz o erinin uzunluğunu hesaplayamıyoruz diyeceğiz ve onunla uğraşmayacağız. Evet, şimdi konumuza dönmeye çalışıyoruz. Yani formül oluşturmaya çalışıyoruz bu kadar hikayeden sonra. Burada konuştuklarımdan anlaşılmayan bir şey var mı arkadaşlar?
+
+46
+00:08:03,187 --> 00:08:12,228
+Evet, şöyle diyelim başlığımızı. Bir fonksiyonun grafinin yay uzunluğu, yani y-iştir, fx fonksiyonunun yay uzunluğu şeklinde.
+
+47
+00:08:12,987 --> 00:08:22,588
+f fonksiyonu son ve kapalı ab aralığında tanımlanmış ve burada sürekli türeve sahip, yani düzgün eğer olmasını istiyoruz. Demin de söylediğim gibi olsun diyoruz.
+
+48
+00:08:23,540 --> 00:08:50,320
+Eğer, şimdi yukarıdaki o hani c eğrisini noktalara ayırdık, doğru parçaların uzunluklarını toplamış şekilde ifade ettik. Şimdi biz kendi formülümüzü çıkarabilmek için y eşitir fx şeklindeki bir grafik verilmiş olsun. Onu oluşturmaya çalışalım yukarıdaki gibi. Eğer c eğrisi, bu sefer bizim eğrimiz ne olacak? y eşitir fx'in grafiği hissediyoruz. O zaman bizim aralığımızda ad olsun.
+
+49
+00:08:51,539 --> 00:08:59,200
+herhangi bir bölünmesi c için bir poliyonal yaklaşım sağlar. İşte biz yukarıdaki bölünmeyi bu sefer şöyle diyelim arkadaşlar.
+
+50
+00:08:59,960 --> 00:09:09,539
+a'dan başlayıp b'ye kadar şu şekilde parçalamış olalım. İşte x0, x1, x2 şeklinde ta ki x'en en tane noktayı ayırmış olduk.
+
+51
+00:09:09,539 --> 00:09:16,039
+Yani bu şekilde bölünmesini düşünelim. O zaman i da sıfırla en arasında olmak üzere.
+
+52
+00:09:16,659 --> 00:09:41,940
+pi poligonlarını demiştik değil mi? x i f x'i noktasını gösterelim pi ile. Bu sefer bizim noktalarımız x'de olsun. Orada p1, p2'ydi bunlar böyle olsun. O halde p0, nokta, nokta, pn poligonal doğrusunun uzunluğunu, yukarıdaki formüle yazıyorum bakın ne demiştik? Ln demiştik. Toplam o eşittir birden n'e kadar mutlak değer içinde.
+
+53
+00:09:42,548 --> 00:10:07,728
+fi-1, fi uzunluğu şeklinde. Bak değer benim de uzunluk formülümüz buydu değil mi? Şimdi yukarıdaki formülümüz buydu. Şimdi biz kendi fonksiyonumuza dönersek, yani y'şit refx'in grafiğini, biz düzlemde arkadaşlar, iki nokta arasındaki uzaklığı nasıl ifade ederdik? Örneğin x1, y1, x2, y2 arasındaki uzaklığı şöyle demez miydik? x1 eksi.
+
+54
+00:10:08,240 --> 00:10:26,580
+y1'in karesi artı, işte x2- y2'nin karesinin kare kökü şeklinde. İşte burada da biz bu ifadeyi düzemdeki iki nokta arasındaki uzaklık şeklinde yazarsak toplam I eşit 1'den N'e kadar x, i.
+
+55
+00:10:27,956 --> 00:10:36,375
+Pardon, demin yanlış konuştum. x2-x1'in karesi artı y2-y1'in karesinin kare kökü diyeceğim. Ters konuştum.
+
+56
+00:10:37,155 --> 00:10:46,555
+Şurada bakın. Şimdi noktam şu. Bir tane noktamız x'i, y'deki değeri de fx'i olsun. Diğer bir noktam da x'i-1.
+
+57
+00:10:47,091 --> 00:10:55,052
+f x'ye eksi 2 şeklinde ise bu iki nokta arasındaki uzaklığı da düzlemde olduğu için bu şekilde ifade edeceğiz.
+
+58
+00:10:55,172 --> 00:11:04,011
+Kare kök içinde x'ye eksi x'ye eksi 1'in karesi artı f x'ye eksi f x'ye eksi 1'in karesi şeklindedir.
+
+59
+00:11:04,192 --> 00:11:09,172
+Tamam mı? İki nokta arasındaki uzaklığı böyle ifade ederiz düzlem. Bunu zaten biliyorsunuz siz.
+
+60
+00:11:12,884 --> 00:11:25,684
+Daha doğrusu parantez karesini alalım. x'i, x'i, x'i, x'i, x'i, 1'in karesinin parantezini alırsam arkadaşlar, şuradan ne olur? Kökün içi 1 artı şunun karesi gelir değil mi?
+
+61
+00:11:26,163 --> 00:11:50,163
+Bunun da karesi parantezini aldığında kökün dışına ne olur? Mutlak değer x'ye x'ye x'ye x'ye 1. Bunu da biz delta x'ye ile gösteremez miyiz? Uzaklık olduğu için burada negatif olmaz değil mi? Onun için onu da delta x'ye ile gösterirsen yani o da şuraya delta x'ye olarak gelecek karşımıza. Tamam mı? Şu geçiş tamam değil mi arkadaşlar? Şunun...
+
+62
+00:11:50,292 --> 00:12:01,252
+parantez karesini aldım. İçi bu oldu. Bu da kökün dışına mutlak değer içinde x'i, x'i, x'i, 1 olarak çıktı. Onu da delta x ile gösterirsek.
+
+63
+00:12:01,844 --> 00:12:03,944
+O zaman formülüm şu hale geldi.
+
+64
+00:12:04,403 --> 00:12:12,104
+Şimdi diyelim ki şu aralıkta fx'i fonksiyonumuza ortalama değer teoremini uygulayalım.
+
+65
+00:12:12,344 --> 00:12:14,303
+Formülü çıkarmaya çalışıyoruz arkadaşlar.
+
+66
+00:12:15,024 --> 00:12:16,564
+Aralığım şu, tamam mı?
+
+67
+00:12:16,604 --> 00:12:22,864
+x'i-1 ile x'i aralığında fx'i fonksiyonuna ortalama değer teoremini uyguluyorum.
+
+68
+00:12:22,864 --> 00:12:27,004
+Zaten baştan da söylediğimiz için fonksiyon sürekli, türevli.
+
+69
+00:12:29,844 --> 00:12:44,803
+böyle bir c, bu da iyiliği olduğu için ben de iyiliği kullanacağım noktaları. Öyle bir c noktası vardır ki, türevi burada bu eşitliği sağlar değil mi? Ne demiştik? fx'i eksi, fx'i eksi bir bölü, x'i eksi.
+
+70
+00:12:45,587 --> 00:13:04,767
+x'i eksi 1. Bu. Olacak şekilde açık aralıkta bir ci noktası vardır diyoruz ortalama değer teoremine. O zaman bakın şu ifademe, kökün içinde yukarıdaki ifademin, şu köşeli parantezin içine ne yazabilirim artık? Ortalama değer teoreminden kullanarak f ci'nin karesi diye yazabilirim.
+
+71
+00:13:06,580 --> 00:13:16,280
+İşte L'N dedik toplam I eşitir büyüden N'e kadar kök içinde 1 artı, F'c'nin karesi, delta x'imiz duruyor.
+
+72
+00:13:16,660 --> 00:13:20,200
+İşte bu aslında benim için Riemann toplamı oluştu arkadaşlar.
+
+73
+00:13:20,800 --> 00:13:30,400
+İşte diyeceğim ki N sonsuza giderken bu toplam bana A-D aralığında verilmiş fonksiyonun uzunluğunu verecektir.
+
+74
+00:13:30,400 --> 00:13:33,120
+O halde işte burada da L'N toplamı diyorum.
+
+75
+00:13:34,131 --> 00:13:35,631
+yazdım zaten burada.
+
+76
+00:13:38,163 --> 00:13:41,663
+şöyle diyeyim, Riemann toplamıdır şu ifadem arkadaşlar.
+
+77
+00:13:42,443 --> 00:13:47,963
+Maksimum delta x sıfıra gidecek şekilde ya da biz bunu daha çok yazmayız da
+
+78
+00:13:47,963 --> 00:13:54,943
+diyoruz ki limit en sonsuza giderken bu toplamın limiti bana integral a'dan b'ye kök içinde
+
+79
+00:13:54,943 --> 00:14:00,723
+1 artı f'nin türevinin karesi dx şeklinde bir formüle götürecek.
+
+80
+00:14:00,863 --> 00:14:04,963
+İşte biz de diyeceğiz. Bu da bizim için c'nin uzunluğudur diyeceğiz.
+
+81
+00:14:05,244 --> 00:14:06,103
+Tamam mı? Bu.
+
+82
+00:14:06,163 --> 00:14:17,183
+Yani ne yaptık? Yukarıdaki formülden hareket ederek şöyle bir Riemann toplamına getirdik. En son size giderken bunun da limiti bana neyi verdi? Şu integral'e vermiş oldu.
+
+83
+00:14:17,504 --> 00:14:26,059
+Şimdi bakın yukarıda konuştuklarımızın hepsi hani formülün nasıl çıkarttığımızı görmek için dedik ama...
+
+84
+00:14:26,067 --> 00:14:43,947
+Dediğimiz gibi, özet olarak, neyi bilmem gerekir, kimse size bu formül nasıl çıkartıldı diye sormayacak. Senin bilmen gereken, y eşitir fx evisinin x eşittir a'dan x eşittir b'ye olan s ile gösterdim. Bazı kişiler l ile gösterir uzunluğu fark etmez.
+
+85
+00:14:43,947 --> 00:14:53,868
+S y uzunluğu, iki nokta diyelim, s eşittir integral a'dan b'ye kadar kök içine bir artı, f üstünün karesinin kare kökü dx'tir.
+
+86
+00:14:54,067 --> 00:14:59,668
+İşte ya uzunluğu formülü dediğimiz olay bu ya da daha açık yazmak istersek hep üstü dediğimiz nedir?
+
+87
+00:15:00,028 --> 00:15:03,327
+y'nin x'e göre türevinin karesi demektir.
+
+88
+00:15:04,187 --> 00:15:07,408
+Tamam mı arkadaşlar? Bu. Yani bunu bilmek zorundasınız.
+
+89
+00:15:08,427 --> 00:15:12,447
+Bu formül aslında daha kısa olarak diferansiyel üçgen dediğimiz.
+
+90
+00:15:13,567 --> 00:15:17,728
+Şuradan da çıkarılabilir. Onu da bilgi olarak yazmak istedim buraya.
+
+91
+00:15:18,451 --> 00:15:39,751
+Yani burada düzlemde şöyle bir yay parçasını aldığımı düşünüyorum. Şurası bx olsun, küçük bir parça olduğu için. Burada dy olsun, bu da işte yay elemanım olsun. ds de göstermiş olalım. Tamam mı? Bu ds bir üçgenden ne olur? ds'in karesi değil mi? Eşittir. dx'in karesi artı, dy'nin karesi olacaktır.
+
+92
+00:15:40,048 --> 00:16:02,087
+Burada her tarafı dx'in karesine bölersem arkadaşlar şurada ne olur? ds bölü dx'in karesi gelecek. Artı eşittir 1, artı g'nin x'e göre türevinin karesi gelecek. Buradan m'yi istiyorum ben. ds bölü dx'i istiyorum. Onu çekersem kök içinde şu ifadeye geliriz.
+
+93
+00:16:02,288 --> 00:16:13,067
+Buradan her tarafı dx ile çarptığımda, işte ds eşittir. Kök içine 1 artı y üstünün karesinin kare kökü çarpı dx'e gelir. Tamam mı? Ya da böyle yazarsın.
+
+94
+00:16:13,587 --> 00:16:26,648
+İşte bu da ds dediğimiz ifade bakın. A'dan b'ye ya da her tarafın a'dan b'ye integralini aldığımda şu formüle getirmiş olacağız. Nerede formüymüş? Şurada. Şu.
+
+95
+00:16:27,796 --> 00:16:38,296
+Yani burada da aklınızda kalsın ya yuzumluğu. Gerçi test olacağımız için formülü unutmazsınız, oradan da bakarsınız. Yani özet olarak arkadaşlar, şunu bilmemiz gerekecek.
+
+96
+00:16:39,059 --> 00:16:51,799
+şurada y eşittir, fx eğrisinin a'dan b'ye yay uzunluğu integral, a'dan b'ye kök içine 1 artı, y'nin x'e göre türevinin karesini, kare kökü, dx formülüyle hesaplayacağız.
+
+97
+00:16:51,919 --> 00:16:57,679
+Ama şunu da unutmuyoruz, düzgün eğrilerin uzunluklarını ancak biz hesaplayabiliyoruz. O da ne demektir?
+
+98
+00:16:58,059 --> 00:17:05,199
+Fonksiyonun türevi de verilen aralıkta sürekli ise ancak biz ona düzgün eğri diyebiliriz. Bilmemiz gereken bu.
+
+99
+00:17:05,199 --> 00:17:06,980
+Şimdi buraya kadar var mı takıldığımız?
+
+100
+00:17:07,059 --> 00:17:21,500
+bir yer. Hani formülün nasıl, nereden geldiğini vermek için bu şekilde verdim. Yoksa normalde doğrudan bu formülü bilmemiz yeterlidir diyeceğiz. O zaman örnekler üzerinde uygulamaya çalışalım.
+
+101
+00:17:24,699 --> 00:17:34,179
+Evet. Bir de şunu da verebiliriz formülü. İlle hep y eşittir f x değil de x eşittir g ye şeklinde verilmiş olsa. Değil mi? Benzer formül dedim bakın.
+
+102
+00:17:34,576 --> 00:17:36,255
+x eşittir, g, y olsun.
+
+103
+00:17:36,852 --> 00:18:04,852
+y'nin aralığı da c'den d şeklinde denklemlerle de gösterilir. Yani verilen eğrinin c'den d'ye olan y uzunluğunu hesapla der bana. Onun için de ne yaparım? Burada s eşittir dedim. Yani ds dediğim ifade bu sefer şu olacak. Kök içine 1 artı x'in y'ye göre türevi demem gerekir. Ya da kısaca y üstü, g y üstü diyeceğim. Karesi d y. Ya da kısaca formülümüz s eşittir diyeceğim. İntegral.
+
+104
+00:18:04,852 --> 00:18:32,792
+c'den d'ye kadar kök içine 1 artı g üstünün karesinin kare kökü d'ye. Yani eğer eğrimiz y'li verilmişse bu şekildeki formülle çözeceğiz. Başka da bir şeyimiz yok arkadaşlar. Bu kadar. İki tane formül. Ya x'e göre ya da y'ye göre. Şimdi bir tane eğrinin uzunluğunu hesaplayalım. Şimdi ne dedik? y eşittir. x üzeri 2 bölü 3 eğrisinin birden 8'e kadar olan uzunluğunun.
+
+105
+00:18:32,852 --> 00:18:41,412
+hesaplayınız diye soruyor bana. Şimdi bu eğri düzgün müdür değil midir? Önce ne yapmalıyım? Bunun türevine bakmalıyım. Bunun türevini nasıl alırız?
+
+106
+00:18:42,472 --> 00:18:54,232
+İşte yani verilen aralıkta nedir? 8 ile 1 aralık. 1 küçük eşit x küçük eşit 8 için türevini alıyorum. Y'nin x'e göre türevi ya da y üstü ya da f üstü hangisini kullanırsak.
+
+107
+00:18:54,232 --> 00:19:00,312
+Üst başa gelir, üstü biraz alır. x üzeri eksi 1 bölü 3'tür değil mi? Bu da nedir aslında? 2 bölü.
+
+108
+00:19:00,435 --> 00:19:26,175
+3x x üzeri 1 bölü 3'tür. Bu türevi tanımsız yapan tek bir değer 0'dır değil mi? O da zaten aralığımızın dışında. Çünkü aralığımız 1 ile 8. O yüzden bakın bu da bir pozitiftir zaten. Eğri benim için düzgün bir eğridir. O halde diyorum ki düzgün bir eğri olduğu için ben bunun uzunluğunu hesaplayabileceğim. Yani her önüme gelen eğrin uzunluğunu hesaplayamıyoruz arkadaşlar. Düzgün eğri olması gerekir. Ona dikkat ediyoruz.
+
+109
+00:19:28,980 --> 00:19:44,119
+O zaman formülümüz de hazır. Yukarıda biliyoruz değil mi? Ne diyeceğim? İşte integral S diyeceğim. İntegral 1'den 8'e kadar kök içinde 1 artı y'nin türevinin karesinin kare kökü de x diyeceğim. Formülüm bu.
+
+110
+00:19:45,799 --> 00:19:54,220
+Şöyle diyelim. Hızlı gittik. Şuradayım. Çekim biraz sual olmuş. Hızlı hızlı koşuyor sanki. Evet.
+
+111
+00:19:55,059 --> 00:20:00,000
+Şimdi ne yapıyorum arkadaşlar? Diyoruz ki, S formülümüz A'dan B'yi aralım.
+
+112
+00:20:00,000 --> 00:20:08,500
+1'den 8'e kadar kök içinde 1 artı türevi yukarıda bulmuştuk. Hatırlarsanız 2 bölü 3 x üzeri eksi 1 bölü 3'ün karesi diyeceğim.
+
+113
+00:20:08,740 --> 00:20:19,299
+Şimdi bunu düzenleyelim önce. Ne olur? İntegral 1'den 8'e kadar 1, karesini aldım. 4 bölü 9 x üzeri eksi 2 bölü 3'ün kare kökü dx olur.
+
+114
+00:20:19,299 --> 00:20:27,439
+Bu da 1 bölü x üzeri 2 bölü 3 payda da eşitlersem ne olur? 9 çarpı x üzeri 2 bölü 3 gelecek.
+
+115
+00:20:28,000 --> 00:20:47,799
+faydası 4 bölü 9x üzeri 2 bölü 3 oldu. Kökün içinde dx diyeceğim. Faydası kökün dışına 3 çarpı x üzeri 1 bölü 3 olur. Payındaki kalır. Şu. Şimdi düzenledik. Başka da yapacağım bir şey yok burada. İntegral ile almak var. Başka da bir işimiz yok. Burada da bakıyorum.
+
+116
+00:20:48,627 --> 00:21:11,067
+köklü ifade var. Kökün içine bir u dönüşümü uygularsam, yani kökün içine u diyelim arkadaşlar. Burada ne olur? du üst başa gelirse, 3, 6, x üzeri, eksi 1 bölü 3, dx olur du. Sınırlarını da değiştirelim. x1 için yerine yazarsam, 9, 13 olur.
+
+117
+00:21:11,539 --> 00:21:27,380
+x 8 için, 8'i de 2'nin kubi diye düşünürsem, 3'ler gider, 4, 36, bir de 4'te toplarsam 40 olur. İşte u'da ne oldu? 40 oldu. O halde bu integralı yeniden yazıyorum. Bakın, integral 13'den 40'a kadar diyeceğim.
+
+118
+00:21:27,759 --> 00:21:45,480
+kökün içine ne demiştim? u, o da u üzeri 1 bölü 2 diye yazmış olalım. Şurada dikkat ederseniz, bakın, dx bölü, x üzeri 1 bölü 3 ifadem var. Onun yerine ne gelecek? du bölü 6 gelir, değil mi? Bir de şu 3'üm var, o da 1 bölü 18 dışında tutalım, şu.
+
+119
+00:21:46,140 --> 00:21:54,620
+Şimdi bu da basit integral ne olacak? Üstünü bir artırsam, 3 bölü 2, 2 bölü 3 ile de çarptığımda, 1 bölü 27 gelir.
+
+120
+00:21:55,476 --> 00:22:14,256
+2 bölü 3 ile de çarparsan değil mi? Bu da 9 olur, 1 bölü 27 olur. Evet. O halde u üzeri 3 bölü 2, sınırım da 13'den 40'a kadar diyeceğim. 3 sınır, eksi 6 sınır. Onu da bu şekilde yazmış olduk. Tamam mı? Şu.
+
+121
+00:22:15,251 --> 00:22:35,551
+kökü içinde 40, 3. kökten, pardon kare kök içinde 42. bir tanesini dışarı atlarız, şu olur işte aynı şekilde yazarız. İşte bu şekilde uzunluğunu bulmuş olduk. Birim olarak da birim deriz. Van takıldığımız bir yer arkadaşlar. Anlaşıldı mı?
+
+122
+00:22:37,587 --> 00:22:48,888
+Bakın formülü biliyoruz. Eğrimizin de düzgün olması gerektirir. Türevine bakacağız. Diğeri de integral'i zor kolay. Ona göre bakacağız. Evet, bir tane daha sorumuz var bakın.
+
+123
+00:22:49,428 --> 00:23:17,208
+x üzeri 4 artı 1 bölü 32x kare eğrisinin 1'den 2'ye olan uzunluğunu buluruz. İşte verilmiş y'şit refx şeklinde bir fonksiyon eğrisi ya da grafiği diyelim. Bunun uzunluğunu soruyor bana. 1'den 2'ye olan uzunluğunu soruyor. O zaman ne yapıyorum? Önce bakıyorum bu eğri düzgün mü değil mi? Bir türevini alalım. Zaten türeve de ihtiyacımız var değil mi? Türevini nasıl alırım? Şurada x üzeri 4'ün türevi y'yip süremiş olalım.
+
+124
+00:23:17,428 --> 00:23:33,008
+4x küp olur. Burada bölüm var. Payın türevi 0 çarpı payda. Eksi pay çarpı paydanın türevinden ne gelecek? Eksi 64x bölü karesi gelir. Düzenlenirse o da eksi 1 bölü 16x küp olur arkadaşlar. Tamam mı? Şu.
+
+125
+00:23:33,715 --> 00:23:41,955
+Şimdi, bazen integralın içinde bunu taşımak yerine neye ihtiyacım var? Kökün içi integralmiş, e seçiktir dedik.
+
+126
+00:23:41,955 --> 00:23:54,175
+integral a'dan b'ye kadar kök içinde 1 artı y üstünün karesinin kare kökü de x. Onun için dışarıda 1 artı y üstünün karesini düzenlerim. Sonra götürük integrale yazalım. Nasıl işinize gelirse.
+
+127
+00:23:54,175 --> 00:24:01,715
+İşlemler çok uzamasın diye. Şimdi neye ihtiyacım var? 1 artı y üstünün karesine ihtiyacım var. y üstünü buldum. O zaman 1 diyor.
+
+128
+00:24:01,715 --> 00:24:10,995
+alıyorum. Şunun karesi gelecek. 1 kalsın, şunun karesini alıyorum. Yazdım. 1. ile 2. çarpımın iki katından 1 bölü 2 gelir.
+
+129
+00:24:11,875 --> 00:24:19,775
+Eksi. Artı 2. n'in karesi. Şu 1 bölü 2 ile de biri düşünürsem 1 bölü 2 kalır. Şuradayım. Tamam. Bu da
+
+130
+00:24:20,500 --> 00:24:46,640
+aslında 4x kubu artı 1 bölü 16x kubün karezi demektir. Tamam, oluşturdum. Şimdi getirip formülde dikkat ederseniz arkadaşlar, burada da aralığın 1-2 olduğu için, türeve de şurada söylemeyi unuttum, bir problemim yok. Yani bunu tanımsız yapan değer 0'dır. O da zaten aralığın dışındadır. Onun için türev de sürekli, o halde düzgün bir eğridir diyoruz ve hesaplamaya çalışıyoruz.
+
+131
+00:24:48,435 --> 00:25:10,595
+İşte şurada da yazdık zaten. İçi de pozitiftir diyoruz. Evrinin uzunluğu, formülümüz ne diyeceğim? S diyorum. İntegral 1'den 2'ye kadar. Kök içinde 1 artı y üstünün karesi şuydu. Getirip yazdık. Bu da kökün dışına pozitif olduğu için mutlak değerli de gerek yok. Böyle çıkar. Değil mi? E bu da nedir? Toplamın integralidir.
+
+132
+00:25:11,059 --> 00:25:31,779
+Bunun integral ne olur? x üzeri 4 bölü 4'ten 4'ler gitti. Bunun da x üzeri eksi 3 diye düşün. Üstünü 1 artırsan, x üzeri eksi 2, eksi 2'yi de böldüğünde, 1 bölü eksi 32 bölü x kare diye yazarım. Sınırım birden 2'ye kadar. Üst sınır, eksi alt sınır. 16 gelir.
+
+133
+00:25:32,339 --> 00:25:52,139
+x kare artı 1 bölü 128 olur. x kare artı 1 bölü 32'den de düzenlememişiz. 15 artı 3 bölü 128 diye bulunur. Uzunluğumuz budur diyeceğiz. Tamam mı arkadaşlar? Yukarıdakine benzer işlemler.
+
+134
+00:25:54,288 --> 00:26:09,268
+Şimdi bildiğimiz klasik R yarı çaplı çemberin uzunluğunu bulalım. Ne bulacağımızı da biliyoruz değil mi? Yarı çaplı R ise uzunluk ne olur? 2P, R olarak bulmam gerekir. Onun için de bu formülle bulmaya çalışalım. Görmüş olun.
+
+135
+00:26:09,268 --> 00:26:11,087
+Şimdi
+
+136
+00:26:12,596 --> 00:26:40,236
+Çemberimiz bu. R yarı çaplı çember budur diyelim. Üst yarı çemberinde denklemi şöyle yazmaz mıyım? y eşittir kök içinde. Yani x kare artı y kare eşittir, re kare ise çemberin denklemi. y eşittir kök içinde re kare eksi x karenin kare köküdür. Bunun türevine ihtiyacı var değil mi? y'nin x'e göre türevi ne olur? İçinin türevinden eksi 2x bölü 2 kök. İkiler gitsin. Eksi x bölü kök içinde re kare eksi x kare olur. Tamam mı?
+
+137
+00:26:40,596 --> 00:27:00,635
+Burada formülü biliyorum. 1 artı y üstünün karesini oluşturmaya çalışıyorum. Şuradan. Bu 1, bunun karesini olur. x kare bölü, R kare eksi x kare. Bir tane 1 ile de topladığımı düşünürsem x kareler gider. R kare bölü, R kare eksi x kare olur. Tamam mı? Şu.
+
+138
+00:27:01,460 --> 00:27:14,920
+bunu da, şimdi çemberin çevresini düşünüyorum, simetri özelliğim var. Onun için ne yapıyorum? 4'te 1'ini kullanıyorum. Yani şu birinci bölgede hesapladığımı düşünürsem, sınırım ne diyeceğim? 0'dan R'ye kadar 4'te çarpacağım.
+
+139
+00:27:16,051 --> 00:27:25,351
+simetri kullandım, sınırlarla uğraşmamak için fazladan. Yani eksi R'den artı R'ye de alabilirdim. İki katıyla çarpabilirim çünkü alt var üst var ama ne yapıyorum?
+
+140
+00:27:25,791 --> 00:27:37,132
+4'te bir bölgede hesaplamaya çalışacağım. S dedim uzunluğu, 4 çarpı 0'dan C'ye kadar kök içinde 1 artı Y üstünün karesinin kare kökü diyoruz.
+
+141
+00:27:37,132 --> 00:27:40,331
+Bunu da bulduk burada. R kare bölü.
+
+142
+00:27:40,884 --> 00:28:03,564
+r kare eksi x karenin kare kökü. E bu r diye dışarıya çıksın. Dışarıya attık. İntegral sıfırdan r'ye kadar dx bölü kök içinde r kare eksi x'in karesinin integrali. Bu da bildiğiniz bir integral aslında. Evet. Nedir bunun integrali arkadaşlar?
+
+143
+00:28:11,796 --> 00:28:23,136
+Hatırlamıyor musunuz? Hatırlamıyorsanız, R kare parantezini alırsan, ne olur bu? Kökün dışına R çıkacaktır. Şurada R kare parantezini alırsan, bu 1-x bölü R'nin.
+
+144
+00:28:23,923 --> 00:28:51,923
+x kare si değil midir? O da aksinüsün türevi değil mi arkadaşlar? Yani şöyle diyeceksin, 4R'ye dokunmadım. Şu aksinüs, çünkü bunun da formülünü verdim ben size integral anlatırken, aksinüs x bölü R'dir diyeceğiz. Hatırlamıyorsan bunu R kare parantezine alırsın, R diye kökünün dışına çıkar, 1x bölü R'nin karesi dersin. Hatta göremiyorsan x bölü R'ye bir T dönüşümü yaparak da bunu türevi olmalı.
+
+145
+00:28:51,923 --> 00:29:17,324
+ne olduğunu görebilirsiniz. Tamam mı? Yani bunun integrali kısaca yazdım artık buraya. 4R çarpı aksinüs x bölü R'dir diyeceğim. Sınırım 0'dan 1'e kadar. Buradan şimdi 4R dedim. Üst sınır ne? 0'dan R'ye kadar arkadaşlar, sikip gibi duruyor. Tamam mı? Üst sınırı yazıyorum. Aksinüs 1. Sinüsü 1 olan açı ne demektir? Pi bölü 2 diyorum.
+
+146
+00:29:17,811 --> 00:29:33,311
+x'i alt sınır, aksinüs sıfırda nedir? Sınüs sıfır olan açı sıfırdır. Yani sonuçta doğru bulduk. 2 pi, R'dir. Arkadaşlar, arkadaş sormuş 1 bölü 2'den nasıl kurtulduk? Önceki soru şimdi fark ettim. Bir bakayım yukarıda hangisini diyorsunuz?
+
+147
+00:29:34,711 --> 00:29:37,191
+Şurada karesini alırken mi? Şurada.
+
+148
+00:29:37,811 --> 00:30:05,211
+Şu türev bu tamam. Sanırım burada anlaşmıştık. Neye ihtiyacım var dedim. 1 artı y üstünün karesine. 1'e dokunmadım bakın. Bunun karesi dedim. Şimdi bunun birini de tekrar yazdım. Bunun karesi bak aynen yazdım. Birinciyle ikincinin çarpımının iki katı olduğunda gider. Eksi 1 bölü 2 kaldı. İkincinin karesi dedim. Şu 1 ile eksi 1 bölü 2'yi düşünürsem 1 bölü 2 kalmaz mı? Artı 1 bölü 2 şu. Gitmedi 1 bölü 2.
+
+149
+00:30:05,663 --> 00:30:23,223
+Bunu diyorum ki bir şeyin karesi şeklinde ifade edeyim. Bak şunu açarsam ne olur bu 16 ya da hiç öyle de düşünme. Bunun karesi bak yazmışım. Birinci ile ikincinin çarpımının iki katı 1 bölü 2. Bunun karesi işte. Tamam mı? Evet.
+
+150
+00:30:25,107 --> 00:30:46,147
+birden yazınca orada göremeyebilirsiniz. Tamam mı arkadaşlar? Anlaşıldı mı yay uzunluğu? Bu şekilde, istedikleri şekilde formülü bildikten sonra bir tek karşıma belki zor integral çıkar. Onu da kuralları biliyorsam çözebilirim. Tamam mı arkadaşlar? Evet. Sonra gene çözeriz. Şimdi gelelim, döner yüzeylerin alanı diyelim.
+
+151
+00:30:46,559 --> 00:31:01,680
+Dönen yüzey alanını da şöyle oluşturacağız. Şimdi bir eğrinin uzunluğunu hesapladık. İşte böyle bir eğri, düzgün bir eğri, bir eksen etrafında döndürdüğümüzde bir yüzey oluşacaktır. İşte biz o yüzeyin şimdi alanını bulmaya çalışacağız. Tamam mı?
+
+152
+00:31:02,003 --> 00:31:29,683
+Şimdi şöyle yine konuşalım birazcık. Bir düzlem eğrisi, yani yukarıda bahsettiğimiz düzlem eğrisi, eğrinin bulunduğu düzlemde olan bir doğru etrafında döndürüldüğünde bir döner yüzey oluşur. Demin de söylediğim gibi. Örneğin, R'ye yarı çaplı bir küreyi nasıl oluşturmuştuk arkadaşlar? Küreyi nasıl oluşturursun? Yukarıda çemberi hatırlayın. İşte onun yarı çemberi çapa etrafında döndürdüğümüzde küre oluşmuştu.
+
+153
+00:31:30,003 --> 00:31:40,063
+o kürenin yüzeyini bulmak isteriz. Örneğin, A yarı çaplı bir küre, A yarı çaplı bir yarı çemberin kendi çapı etrafında döndürülmesiyle elde edilir. Dün de konuşmuştuk değil mi?
+
+154
+00:31:40,435 --> 00:32:00,795
+Dün hacim hesapladık. İşte bugün eğri uzununu hesapladık. Şimdi de döner yüzeyin alanını hesaplıyoruz. Döner yüzeyin alanı eğrinin yay elemanı D'si verilen doğru etrafında döndürülmesiyle elde edilen alan elemanı. Bazen D's deriz, bazen D'a deriz. İntegre ederek bulabiliriz.
+
+155
+00:32:01,140 --> 00:32:25,700
+Burada dediğimden bir şey anlamamış olabilirsiniz. Dedik ki bir eğriye alıyorum. Herhangi bir eksen etrafında döndürdüğümde bir yüzey oluşuyor. Ben o yüzeyin alanını bulmak istiyorum. Burada da anlayabilmek için hani biraz hayal gücümüzü kullanarak diyelim ki benim bir tane eğrim. Bakın eksenleri de x'ye demiyorum. Herhangi bir eksen olsun. Burada bir anlayalım. Sonra kendimizi uyarlarız arkadaşlar. Şimdi bir tane eğrim olsun.
+
+156
+00:32:26,132 --> 00:32:50,272
+Bunu anlayabilmek için eğride küçük bir parça alıyorum. Yay elemanı diyorum. Ona da ds diyorum. Yani küçük bir yay parçasını alıyorum. Onu bir eksen etrafında döndürüyorum. Bakın şöyle yuvarlak döndürüyorum eksen etrafında. Bunu döndürdüğümde ne olur? Aslında bir dairesel bant oluşur değil mi? O banta açtığımızda dikdörtgen bir şerit oluşmaz mı?
+
+157
+00:32:50,932 --> 00:33:09,231
+İşte onun alanını ne yapacağım? Verilen aralıkta integre ettiğimde yüzey alanını bulmuş olacağım. Olayın özü bu arkadaşlar. Tamam mı? Şimdi diyorum ki işte bir eğrim olursun. Küçük bir ds yay parçasını alıp eksen etrafında döndürüyorum. Tamam mı?
+
+158
+00:33:09,683 --> 00:33:37,683
+Bu, o zaman küçük, o yayı döndürdüğüme göre, onun alanını da neyle göstermiş olayım? DS ile göstermiş. Büyük S aslında. Bunu A'da olarak, ben dersten anlattığımda A'da derdim, öğrenci kafası karışmasın, alanı bulacağım ya. Biz bunu büyük DS olarak görelim, yani alan elemanı diyelim. O ne yaptık? Döndürdük. Bir dairesel bant oldu. O şeridi açtığımda şöyle dikdörtgen bir kağıt gibi düşünün arkadaşlar. Şu kenarıyla, kısa kenarla, uzun kenarın çarpımı alanı.
+
+159
+00:33:37,683 --> 00:34:05,683
+alanı vermez mi? Bir eksen etrafında döndürdüğümde dairesel bant oluştuğuna göre dönme yara çapını R olarak alırsam açtığımda şu uzun kenarın uzunluğunu ne olur? 2p, R olmaz mı? Genişlikte küçük ds parçası demiştik. Onun çarpımıdır. İşte şurada bakın gösterdiğim 2p, R, ds'dir diyeceğim. İşte bunu ben verilen aralıkta integre etmiş olacağım. Eğer diyoruz ki bakın yazdım şuraya da ds elemanının rotasyonu.
+
+160
+00:34:05,683 --> 00:34:32,483
+yarı çapı R ise, yani dönme yarı çapı da denir ona, R ise, o zaman dönme sonucu bu eleman 2pire uzunluklu ve DS genişlikli dairesel bant oluştur. Hani döndürdüm, dairesel bant oluşturdum. Buna göre bu bandın alanı, büyük S diyelim şöyle, DS ya da DAD, 2pire açtık, dikdörtgen bir şerit gibi düşündük.
+
+161
+00:34:32,851 --> 00:34:41,831
+uzun kenar çarpı kısa kenar olacağından döner yüzeyin alanı ds'i integre ederek bulabiliriz.
+
+162
+00:34:41,952 --> 00:35:09,632
+İşte biz bu eğrileri hani şimdi x eksen etrafında döndürdüğümüzden olacak, y eksen etrafında döndürdüğümüzde nasıl yazarız onu yazmaya çalışalım. Şu konuştuğum olay anlaşıldı mı arkadaşlar? Bakın bu hayal gücümüzü böyle tutmalıyız ki işte bana eğri verecek diyecek ki x eksen etrafında döndür, y eksen etrafında döndür, alanı hesapla diyecek. Tamam mı? Şimdi iki durum. Aslında bunu kitaplarda dört durumu da verebilirler ama biz sadece size iki durumu vereceğim.
+
+163
+00:35:09,952 --> 00:35:19,772
+x eksen etrafında, bir de y eksen etrafında. İşte şurada söylüyoruz. Şurada diyoruz ya aşağıdaki durumlara göre örneklerle verilmiştir diyoruz.
+
+164
+00:35:19,772 --> 00:35:25,492
+Bir döner yüzeyin alanı diyelim, böyle verilmesi eğer ad aralığında,
+
+165
+00:35:25,936 --> 00:35:29,496
+Tabii ki düzgün eğriden bahsettiğimiz için türev de sürekli.
+
+166
+00:35:29,976 --> 00:35:39,656
+Ve y-eşitir epik seyrisi x ekseni etrafında döndürülürse elde edilen döner yüzeyin alanı şudur diyeceğiz.
+
+167
+00:35:40,036 --> 00:35:43,696
+Bakın ben şurada kendim bile şu an oluşturabilirim.
+
+168
+00:35:44,176 --> 00:35:48,536
+Şimdi bu ekseni herhangi bir eksen dedim ya şimdi ne yapacağım bunu düzlem gibi düşüneceğim.
+
+169
+00:35:48,536 --> 00:35:53,936
+Bu x ekseni olacak. x ekseni etrafında döndürdüğümde benim dönme yarı çapımlı olacaktır.
+
+170
+00:35:53,936 --> 00:36:07,396
+ne olur? Burada R dedik değil mi? Herhangi bir eksende ise. Burada x eksen etrafında döndürdüğümde sizce dönme yarı çapım ne olur? Evet. Fikri olan.
+
+171
+00:36:13,364 --> 00:36:14,923
+y olmaz mı arkadaşlar?
+
+172
+00:36:17,603 --> 00:36:22,623
+Bakın, elde edilen döneli yüzeyin alanı, bakın, s diyoruz, formülü yazdım.
+
+173
+00:36:22,903 --> 00:36:25,804
+s de görebilirsiniz, a da görebilirsiniz kitaplarda.
+
+174
+00:36:26,003 --> 00:36:29,324
+Tamam mı? Ben burada, bakın, silikte a demişim.
+
+175
+00:36:29,943 --> 00:36:33,723
+O zaman yukarıdaki ifadeyi integre ederek bulacağız.
+
+176
+00:36:33,884 --> 00:36:37,543
+Şimdi o zaman bizim 2 pi diyorum, integral a'dan b'ye kadar.
+
+177
+00:36:38,032 --> 00:37:04,012
+Burada negatif uzunluk olmadığı için mutlak değerle gösterdik. y, ds. Şimdi bu y dediğim ifade nedir arkadaşlar? fx'dir benim. Onu yazacağım. fx, kök içinde ds'i de zaten biliyorum. Yay elemanıydı. Onu da biz nasıl hesaplardık? Kök içinde 1 artı f üstünün karesinin kare kökü dx diyoruz işte. Bakın burada rotasyon yarı çapına yukarıda r demiştim. Yani burada bizimki y demektir.
+
+178
+00:37:04,416 --> 00:37:06,116
+ya da fx'dir. Bu kadar.
+
+179
+00:37:08,536 --> 00:37:09,416
+Tamam mı arkadaşlar?
+
+180
+00:37:10,516 --> 00:37:15,116
+Eğer x eksen etrafını döndürülse yüzey alan formülüm bu olacak.
+
+181
+00:37:16,336 --> 00:37:17,436
+Peki, eğer
+
+182
+00:37:18,804 --> 00:37:33,364
+diyelim ki y eksen etrafında, eğer c'de aralığında, g'nin y'ye göre türevi sürekli ve x eşittir, g'ye eğrisi y eksen etrafında döndürürse yüzeyin alanını da, işte bu formuyla vereceğiz.
+
+183
+00:37:33,544 --> 00:37:44,344
+eşittir 2p integral. Bu sefer ne yapıyoruz? Yan durmuş gibi düşünüyorsun. y eksen etrafında döndürdüğüme göre benim dönme yarı çapımı ne olacaktır?
+
+184
+00:37:46,804 --> 00:38:00,064
+ne diyeceğim? g'ye diyeceğim. Yani iki bir integral c'den d'ye kadar tamam mı? g'ye kök içinde ds dediğim ifadede bunun hesaplamasını yukarıda biliyorduk zaten.
+
+185
+00:38:00,064 --> 00:38:10,824
+1 artı g'nin türevinin karesinin kare kökü d'ye. İşte bu iki şekilde verilen eğrilerin uzunluklarının, pardon alanını hesaplayacağız yüzey alanını.
+
+186
+00:38:11,155 --> 00:38:14,895
+bir x etrafında, bir de y etrafında döndürülürse.
+
+187
+00:38:15,895 --> 00:38:18,435
+Yani formüllerimiz bunlar arkadaşlar. Tamam mı?
+
+188
+00:38:19,235 --> 00:38:21,975
+Şimdi bir tane örneğimiz şuydu.
+
+189
+00:38:22,455 --> 00:38:26,955
+Yine yarı çapa A olan küre yüzeyinin alanını hesaplayalım.
+
+190
+00:38:29,460 --> 00:38:40,019
+Demin de söyledik ki, bir küreği nasıl oluşturmuştuk? Şu yarı çemberi çapı etrafında döndürdüğümüzde küre yüzeyi oluştu. Şimdi biz bu yüzeyi alanını bulmaya çalışacağız.
+
+191
+00:38:40,019 --> 00:38:48,500
+Tabi geometrik olarak biliyorsunuz, bulabilirsiniz ama bizim verilen belirli integral ile nasıl hesaplayacağız? O şekilde gidelim.
+
+192
+00:38:50,708 --> 00:39:01,007
+Evet, küre üzerindeki bir alan elemanını da şöyle küçük bir şerit olarak alıp diyelim ki bir parçayı ne yaptım? x80'i etrafımda döndürdüğümde benim dönme yarı çapım ne olacaktır arkadaşlar?
+
+193
+00:39:01,527 --> 00:39:03,788
+Y, Y dediğimizde nedir? Şu ifadedir.
+
+194
+00:39:05,364 --> 00:39:32,523
+Şöyle, şurada da yazdık. Bakın, böyle bir küre. y'şitir kök için a kare eksi x kare. Aralığımızda nedir? İşte x a'dan a'ya kadar. Denklemiyle verilen yarı çemberin x80 etrafında döndürülmesiyle elde edilebilir diyoruz. Tamam mı? Yani bizim formimize olması için aldık. Çapını artık x80 olarak gördük. Onun etrafında döndürerek bulmaya çalışıyoruz. O zaman neye ihtiyacın var? Y'ye üst ütürevine ihtiyacın var.
+
+195
+00:39:33,364 --> 00:39:51,003
+denilmek için. Bunu da türev gelene nedir? Eksi x bölü kök içindekiler gittiği için a kare eksi x'in karesidir diyelim. Tamam mı? Bunu da a kare eksi x'in kare kökü de neydi? Y değil miydi? Yani eksi x bölü y'dir diyoruz.
+
+196
+00:39:52,043 --> 00:40:00,000
+Şimdi formülümüz şu arkadaşlar. S eşittir. A'dan B'ye demiştik. Burada integral eksi A'dan A'ya kadar.
+
+197
+00:40:00,000 --> 00:40:20,699
+2p-a'dan a'ya kadar y, değil mi? Kök içinde y mutlak değer ds demiştik. Burada yerine yazacağım. y kök içinde 1 artı x bölü y'nin karesi, değil mi? Şu ds dediğimiz bu ifade. Bunları da düzenlerseniz buradan ne gelecektir?
+
+198
+00:40:21,588 --> 00:40:40,728
+x kare artı y karenin kare kökü bölü, yerinin karesinden y gelir. O da bununla gitmiş olur. Yani sonuçta burada bir de simetri de kullanalım arkadaşlar. Eksi a'dan a'ya kadar bakın. Y eksenine göre, çift olduğuna göre iki katını alalım bakın.
+
+199
+00:40:41,940 --> 00:40:51,819
+2 ile çarparsam, 4 bir integral sıfırdan a'ya kadar, kök içinde x kare artı y karenin kare kökü diyelim, deyiz.
+
+200
+00:40:52,659 --> 00:40:54,259
+Bu da zaten nedir?
+
+201
+00:40:57,279 --> 00:40:58,819
+Bunun yerine ne yazacağım arkadaşlar?
+
+202
+00:41:00,920 --> 00:41:03,940
+x kare artı y kare, a kare eşit değil miydi?
+
+203
+00:41:04,859 --> 00:41:06,179
+Kürenin denklemi zaten.
+
+204
+00:41:06,879 --> 00:41:09,440
+Bu da ne olur? a olarak dışarıya çıkacaktır.
+
+205
+00:41:09,876 --> 00:41:12,276
+4pi a, integral x olur.
+
+206
+00:41:13,476 --> 00:41:19,236
+0'dan a'ya kadar, üst sınır, a sınırdan 4pi a'nın karesidir diyeceğiz.
+
+207
+00:41:20,135 --> 00:41:24,135
+Yüzey alanı, biliyoruz zaten kürenin, yüzey alanı.
+
+208
+00:41:24,816 --> 00:41:25,376
+Tamam mı?
+
+209
+00:41:26,456 --> 00:41:27,496
+Var mı sorunuz burada?
+
+210
+00:41:31,987 --> 00:41:39,987
+O zaman diğer anlattığım konuyu dünden kaldığım yerden bir örneğim daha var oradan çözmeye çalışayım burada sorunuz yoksa.
+
+211
+00:41:59,315 --> 00:42:04,996
+Hacımları zaten dinlerdik. Son bir örnek görmüştüm de oradan olayım.
+
+212
+00:42:08,692 --> 00:42:16,692
+bakın, yay uzunluğunu burada kısaca formüllerin var zaten ama ben daha ayrıntılı anlamanız açısından verdim.
+
+213
+00:42:19,692 --> 00:42:23,692
+Bakın, döner yüzeyin alanı böyle çok anlaşılmaz diye, tamam mı arkadaşlar?
+
+214
+00:42:24,692 --> 00:42:30,692
+Oradan açıkladım. İşte iki tane formül vermiştik zaten. Şu ve şu, tamam mı?
+
+215
+00:42:30,692 --> 00:42:31,692
+Şimdi...
+
+216
+00:42:32,148 --> 00:42:50,067
+Şöyle bir örneğimiz var burada bakın. x eşittir 1-y, y'de 0 ile 1 aralığında doğru parçasını y ekseni etrafında çevirdiğimizde, deminki batın x ekseni, şimdi y ekseni etrafında çevirdiğimizde oluşan koninin yanal yüzey alanını hesaplayız.
+
+217
+00:42:50,447 --> 00:42:58,607
+Zaten siz şimdi diyebilirsiniz biz koninin yanal yüzey alanını geometrik olarak biliyoruz ama biz dediğim gibi belirli integral hesaplamaya çalışacağız.
+
+218
+00:42:58,976 --> 00:43:10,096
+Şimdi bir tane vermiş bana doğru parçasını 0-1 aralığında. Onu y-eksin etrafında döndürdüğüne göre benim yüzey alanı formülüm ne olması gerekir? Şu.
+
+219
+00:43:10,963 --> 00:43:37,344
+Tamam mı arkadaşlar? O zaman diyorum ki aralığımızı da vermiş bakın. 0 ile 1 arasında. S dedik. 2 pi integral sıfırdan bire kadar. Tamam mı? Dönme yarı çapımızda y eksen etrafında olduğuna göre x diyoruz. x de nedir? 1-y'dir. ds diyeceğiz. ds de şimdi buradan hesaplayıp buraya yazacağız. Yani hesaplamışız burada. d y diyeceğiz. ds nedir?
+
+220
+00:43:37,907 --> 00:44:03,427
+kök içinde değil mi? 1 artı x'in y'ye göre türevinin karesinin kare kökü. Kök içinde 1 artı x'in y'ye göre türevi ne gelir burada? Eksi 1 değil midir? Eksi 1'in karesinin kare kökü de y diyeceğim. E bu da nedir zaten? 2 olur. Onu da dışarıya atarsam 2 kökü ki pi, integralin içinde 1 eksi y'nin integrali kalır. O da ne getirir? y eksi y kare bölü 2'nin.
+
+221
+00:44:04,148 --> 00:44:19,307
+sınırın sıfırdan bire kadar. Üst sınır eksi alt sınırdan kökü bir olarak görebilirsiniz. Zaten yanan alanında, yüzeyi alanında bu şekildedir. Geometrik olarak çoğunuz biliyorsunuzdur. Tamam mı arkadaşlar? Bu.
+
+222
+00:44:20,807 --> 00:44:28,148
+Şimdi şöyle bir örnek, hatta kısa yazmışlar buraya örneği. Y eşittir kök içine x artı bir eğrisinin.
+
+223
+00:44:28,788 --> 00:44:41,927
+Şu aralıktaki parçasını x80 etrafında döndür diyor. Bakın şu şekil falan da çizmeme gerek görmemiş. Hemen ne yapıyor? x80 etrafında döndürdüğüne göre benim aralığım ne diyeceğim? 1'den 5'e kadar diyeceğim. Tamam mı?
+
+224
+00:44:42,387 --> 00:44:56,728
+2 pi x80 etrafında döndürdüğüne göre dönme yarı çapında y'dir. Y'de nedir? Kök içinde x artı 1'dir. Çarpı ds diyorduk değil mi? Yani 2 pi mutlak değer y, ds demiştik. ds'i de nasıl hesaplayacağım?
+
+225
+00:44:56,788 --> 00:45:19,047
+1 artı y eksen etrafında döndüğüne göre x eksen etrafında y üstünün karesinin kare kökü. Tamam mı? O zaman şurada bakın y üstü şu değil midir? 1 bölü 2 kök içinde x artı 1'dir. Bunun karesi de ne olur? 1 bölü 4 çarpı x artı 1 olur. 1 artı y üstünün karesini oluşturmalıyız. O da.
+
+226
+00:45:19,539 --> 00:45:34,619
+faydasını eşitlersek, şu olur. 4x artı 5 bölü 4x artı 1. Tamam mı? Bunun kare kökü şu. E şimdi getirip yerine yazalım. Bakın. 2p integral 1'den 5'e kadar
+
+227
+00:45:34,619 --> 00:45:42,660
+dedik. Kök içine x artı 1. D'si de şuradan getirip şuraya yazıyorum. Bakın. Kare kök için 4x.
+
+228
+00:45:43,123 --> 00:45:53,603
+artı 5, iki kök içinde x artı 1, dx diyeceğiz. Tamam mı? Şu. Bu da şunlar gitti, ikiler de gider diyoruz.
+
+229
+00:45:56,643 --> 00:46:06,523
+2p niye kaldı? Şu kare kök şunu götürdü arkadaşlar, ikiler gitti. İkinin gelmemesi gerekmez mi? Şurada ben mi yanlış görüyorum.
+
+230
+00:46:07,583 --> 00:46:10,384
+Kök içinde 4x artı 5, dx kaldı.
+
+231
+00:46:11,155 --> 00:46:14,835
+Şu ikinin olmaması gerekir ya da şurada var değil mi ki?
+
+232
+00:46:16,436 --> 00:46:39,436
+Evet, var. Yani şu 2 olmayacak bence. Bakarım tekrar sonuna. Sonra ne olacak? Bunun integralini alacağız değil mi? İçine bir u dönüşümü köklü ifade olduğuna göre 4x artı 5'e u dersem, 4x ne olur? du olur. Sınırı da değiştirelim. x1 ne olur? 9'a dönüşür. 5'te.
+
+233
+00:46:39,891 --> 00:47:04,931
+25'e dönüşür. Bakın. O zaman ne diyorum? İntegral 9'dan 25'e kadar kök u bölü 4 gelecek değil mi? x'in şu. Buradan da bunun integrali ne olur? u üzeri 1 bölü 2'den 3 bölü 2, 2 bölü 3'te de çarptığımızı düşünürsek, yani zaten burada hazır böyle yazmış.
+
+234
+00:47:05,556 --> 00:47:11,296
+Sonuçta 3x-6x49 bölü 3 pi olarak karşımıza çıkacak.
+
+235
+00:47:11,615 --> 00:47:15,155
+Tek takıldığım nokta şu ikiler gitmez mi diye bilemedim.
+
+236
+00:47:15,376 --> 00:47:16,076
+Tamam mı arkadaşlar?
+
+237
+00:47:17,536 --> 00:47:19,296
+Şurada ikilerin olmaması gerekir.
+
+238
+00:47:19,796 --> 00:47:20,936
+Yani şu iki olmayacak.
+
+239
+00:47:22,776 --> 00:47:23,135
+Evet.
+
+240
+00:47:23,936 --> 00:47:24,936
+Var mı sorumuz burada?
+
+241
+00:47:28,275 --> 00:47:53,575
+Evet, hacim söyledik. Yay uzunluğu, yüzey alanı. Burada kalmak istiyorum. Improper integrallere, yani genelleştirmiş integrallere haftaya geçmek istiyorum. Zaten çok kısa bir konu kaldı. Yani dönemi de zaten haftaya bitireceğiz. Birkaç örnek hazırlayacağım. Hacimlerle, yüzey alanlarıyla ilgili. Bir de genelleştirmiş integrallerle dersi bitirmiş olacağız arkadaşlar. Tamam mı? Var mı sorumuz?
+
+242
+00:47:54,900 --> 00:48:18,000
+biraz da kendiniz tabii sorup çözerseniz daha iyi anlaşılacaktır diyelim. Evet, sizlere haftaya görüşeceğiz. İyi yıllar diliyorum. Her şey gönlünüzce olsun. 2020 çok güzel geçmedi. İnşallah 2021 çok güzel olacaktır. Bu hastalıklardan da kurtuluruz. Her şey dilediğiniz gibi olsun arkadaşlar. Kendinize iyi bakın.
+
+243
+00:48:18,675 --> 00:48:20,635
+İyi günler diliyorum. Görüşürüz.
+
+244
+00:48:20,635 --> 00:48:22,576
+Teşekkürler hocam. İyi günler.
