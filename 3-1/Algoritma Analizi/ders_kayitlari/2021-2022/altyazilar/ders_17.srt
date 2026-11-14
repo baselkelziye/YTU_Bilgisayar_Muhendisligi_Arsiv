@@ -1,0 +1,1587 @@
+1
+00:00:28,596 --> 00:00:29,388
+Evet.
+
+2
+00:03:45,747 --> 00:04:01,727
+Arkadaşlar, ders 3'ü 20 geçe başlayacak. Bugün Amaç Hoca anlatacaktı. Şimdi telefon etti. 3'ü 20 geçe başlayabileceğimi söyledi. Zaten bir 10 dakika, 15 dakika falan kaldı. 3'ü 20 geçe başlarız. Oldu mu?
+
+3
+00:04:04,108 --> 00:04:11,667
+Benim onu host yapmam gerekiyor. O yüzden ben açıyorum her seferinde. Ders benim üzerimde gözüktüğü için. 3'ü 20 geçe devam edeceğiz.
+
+4
+00:21:39,827 --> 00:22:01,548
+Arkadaşlar, merhaba herkese. Hoş geldiniz. Fakültedeki bir özel durum için sizi bekletmek durumunda kaldım. Toplantı uzun sürdü. O yüzden lütfen kusura bakmayın. Anlayışınız için teşekkür ediyorum size. [öğrenci] sen şu anda host gözüküyorsun.
+
+5
+00:22:06,420 --> 00:22:08,240
+Size verdim hocam, devrettim şu an.
+
+6
+00:22:08,539 --> 00:22:09,259
+Teşekkür ediyorum.
+
+7
+00:22:11,360 --> 00:22:14,420
+Öncelikle yeni yılınızı tekrar kutluyorum.
+
+8
+00:22:15,340 --> 00:22:17,759
+Umarım sağlık, huzur ve mutlulukla gelsin hepiniz için.
+
+9
+00:22:19,820 --> 00:22:24,560
+Bu ikinci vizelerimizi birkaç gün içerisinde açıklayacağız.
+
+10
+00:22:25,160 --> 00:22:26,560
+Çok az bir soru kaldı.
+
+11
+00:22:27,840 --> 00:22:30,640
+Final döneminde de hepinize tüm sınavlarınızda başarılar diliyorum.
+
+12
+00:22:31,124 --> 00:22:44,124
+Bugünkü anlatacağımız konu, geçen hafta başladığımız Branch and Bound yaklaşımının problemler üzerinde nasıl kullanılacağı yönünde, onunla ilgili bir anlatım yapacağım.
+
+13
+00:22:44,743 --> 00:22:46,983
+İki tane farklı örnek üzerinde konuşacağız.
+
+14
+00:22:48,183 --> 00:22:53,963
+Geriye kalan vakitte de polinomyal problemler, non-deterministik polinomyal problemler nedir?
+
+15
+00:22:54,451 --> 00:23:05,672
+NP-complete, NP-hard ve onlarla ilgili bazı bilgiler veriyor olacağım. Şimdi bir paylaşım yapacağım. Onun için bir 30 saniye müsaadenizi istiyorum.
+
+16
+00:24:09,556 --> 00:24:14,056
+Amaç olsa host olabilirsin sanıyorum değil mi? Sıkıntı yok.
+
+17
+00:24:14,816 --> 00:24:18,276
+Yok hocam, herhangi bir sorun yok. [öğrenci]'dan aldım, bana devretti.
+
+18
+00:24:19,236 --> 00:24:29,756
+Çünkü şey oldu, ben onu toparlamaya çalışıyordum. İnternetim bitmiş. Tekrardan bağlanmaya çalışıyordum. Sıkıntı yoksa ben ayrılıyorum o zaman.
+
+19
+00:24:30,056 --> 00:24:32,776
+Yok hocam, sıkıntı yok. Ben şimdi ekranımı dağlıyorum. Teşekkürler.
+
+20
+00:24:32,875 --> 00:24:35,096
+Tamam, iyi dersler. Kolay gelsin.
+
+21
+00:25:12,019 --> 00:25:15,139
+Şu an görebildiğinizi zannediyorum.
+
+22
+00:25:18,619 --> 00:25:20,119
+Kamerayı da açalım.
+
+23
+00:25:22,599 --> 00:25:25,960
+Evet arkadaşlar, tekrar hoş geldiniz.
+
+24
+00:25:26,200 --> 00:25:28,099
+Branch and bound problemlerini konuşacağız.
+
+25
+00:25:28,299 --> 00:25:33,599
+Bunlar optimizasyon problemleri, maximization ve minimization hedeflediğimiz problemler.
+
+26
+00:25:34,099 --> 00:25:38,920
+Bir objective functionımız var ve burada belirli constraint kısıtlara bağlı olarak
+
+27
+00:25:39,347 --> 00:25:41,367
+problemleri çözmeye çalışıyoruz.
+
+28
+00:25:42,228 --> 00:25:44,987
+Tabii burada iki tane çözümden bahsedebiliriz.
+
+29
+00:25:45,087 --> 00:25:50,627
+Bir tanesi bu tür problemlerde constraintleri sağlayan herhangi bir çözüm,
+
+30
+00:25:50,768 --> 00:25:53,127
+feasible solution olarak karşımıza çıkıyor.
+
+31
+00:25:53,127 --> 00:25:59,127
+Ama bunların içerisindeki en iyi çözüm ise seçenekler arasında oluşabilecek constraintleri
+
+32
+00:25:59,947 --> 00:26:05,487
+herhangi bir şekilde iklal etmeyen, onları da optimal solution olarak adlandırıyoruz.
+
+33
+00:26:06,963 --> 00:26:08,963
+Şimdi geçtiğimiz amputar ve...
+
+34
+00:26:09,779 --> 00:26:18,480
+Assignment problemini birlikte çok kısa bir üzerinden başlamıştık. Şimdi biraz daha yakından inceleyelim problemi.
+
+35
+00:26:19,160 --> 00:26:26,619
+Burada dört kişi var, dört tane de iş var ve her kişinin işi yapabilme maliyeti matriste yer alıyor.
+
+36
+00:26:26,759 --> 00:26:33,799
+Costlar verilmiş ve sizin en az costu üretecek eşleştirmeyi yapmanız bekleniyor.
+
+37
+00:26:37,779 --> 00:26:56,279
+olduğunda bu problemleri çözmek için Branch and Bound yaklaşımı oldukça tercih edilen bir yaklaşım. Ama bunun daha iyisi Macar algoritması dediğimiz, Hungarian algoritm dediğimiz bir çözüm de gerçekleşiyor. Onu da şuraya yazayım. Hungarian algoritm.
+
+38
+00:26:59,923 --> 00:27:11,723
+Burada bir aslında minimization problemi ve bir bu seçeneklerden en iyi çözümü üretebilecek seçeneği belirlemeye çalışıyoruz.
+
+39
+00:27:12,192 --> 00:27:21,572
+Herhangi bir kısıtımız olmasaydı, her kişinin en az maniyeti olan değerini seçerek işe başlamamız gerekirdi.
+
+40
+00:27:22,231 --> 00:27:30,971
+Burada 2, 3, 1, 4'ü seçtiğinizde constraintler yani iki kişinin aynı işi atanmaması gibi herhangi bir constraintimiz yoksa,
+
+41
+00:27:31,372 --> 00:27:37,251
+olabilecek en iyi sonucun 10 olduğunu ilk adımda başlangıç noktasında lower bound olarak yazıyorsunuz.
+
+42
+00:27:37,251 --> 00:27:39,072
+Hemen arkasından.
+
+43
+00:27:39,667 --> 00:27:45,727
+Bu State Space Tree'mizde dört farklı kola ayrılması ihtimali var.
+
+44
+00:27:45,847 --> 00:27:49,288
+Çünkü dört tane iş var ve dört kişi var.
+
+45
+00:27:49,788 --> 00:27:59,927
+Ve bir kişiyi seçtiğimizde bu dört farklı işten bir tanesini ona atayarak diğer seçenekleri oluşturmaya çalışıyoruz.
+
+46
+00:27:59,927 --> 00:28:02,927
+Örneğin A'ya birinci işi verdiğimizde...
+
+47
+00:28:04,084 --> 00:28:22,084
+Seçeneklerden biri bu. Geri kalanlar arasındaki en iyi kombinasyonu hesaplamak istiyoruz. 9, A'nın birinci işi için maliyeti. Geri kalanlar arasındaki en iyi değerler 3, 1, 4 olduğu için A 1'e atanırsa burada oluşabilecek en alt değer 17 oluyor.
+
+48
+00:28:22,084 --> 00:28:28,943
+A'yı 2'ye atadığımızı varsayarsak bu sefer burada oluşabilecek değer 10 olarak karşımıza çıkıyor.
+
+49
+00:28:29,556 --> 00:28:40,596
+Bu sefer A'yı 3'e atadığımızda ise 7A'nın maliyeti 3. iş için ama diğer kısımda 3 ve 1'i bu sefer seçemiyoruz.
+
+50
+00:28:41,396 --> 00:28:49,296
+Çünkü zaten A'yı 3'e atadık. O yüzden artık 3'ün altındaki değerler bir seçenek olmaktan çıkıyor.
+
+51
+00:28:49,956 --> 00:28:55,476
+Ve biz 3'ten sonra gördüğümüz ilk yüksek değeri alıyoruz, o da 4.
+
+52
+00:28:55,968 --> 00:29:00,728
+Üçüncü sıtırda C kişisi içinse biri alamadığımız için 5'i alabiliyoruz.
+
+53
+00:29:02,008 --> 00:29:10,628
+Dördüncü kişi içinse yine 4 değerini kullanarak 20'yi hesaplıyoruz.
+
+54
+00:29:10,628 --> 00:29:18,448
+Aynı şekilde A'ya dördüncü işi atarsak 8, 3, 1 değerlerini aldıktan sonra
+
+55
+00:29:18,900 --> 00:29:28,059
+D kişisi için bu sefer 4'ü değil, çünkü 4. işi A kişisine vermiştik. O zaman 6'ya alıyoruz ve orası da 11'i oluyor.
+
+56
+00:29:28,740 --> 00:29:35,240
+Burada breadth-first-search yaklaşımıyla, breadth-first-search with programming dediğimiz yaklaşımıyla ilan ediyoruz.
+
+57
+00:29:36,580 --> 00:29:40,059
+İlk değerler oluştuktan sonra içlerinden en iyisini seçiyoruz.
+
+58
+00:29:40,692 --> 00:29:47,172
+En iyisi Lower Bound'u 10 olan kısım, yani A'nın ikinci işi atandığı kısım.
+
+59
+00:29:47,831 --> 00:29:52,912
+Geri kalanlarla henüz işimiz bitmedi. Geri kalanlar hala bizim için birer seçenek.
+
+60
+00:29:54,311 --> 00:29:59,031
+Bir sonraki adımda A2'yi seçtiyse B1'i, 3'ü ve 4'ü seçetti.
+
+61
+00:29:59,551 --> 00:30:02,152
+B1'i seçtiğinde Lower Bound'u 13.
+
+62
+00:30:02,559 --> 00:30:10,960
+3'ü seçtiğinde Lower-Bowden 14 ve 4'ü seçtiğinde Lower-Bowden 17 olduğunu görüyoruz. Bunların arasındaki en küçük değer 13 olduğu için
+
+63
+00:30:10,960 --> 00:30:15,879
+yan tarafta, kırmızı yine gördüğünüz noktada, şöyle göstereyim,
+
+64
+00:30:15,879 --> 00:30:28,000
+şurada biz C'yi 3 ya da 4 görevine atama şansını sahip. C'yi 3 atarsak cost 13 oluyor.
+
+65
+00:30:28,115 --> 00:30:51,115
+CH4'ü atarsak, post 25 oluyor. Doğal olarak şu ana kadar ki en iyi sonuç 13 elimizdeki ve başka bir seçenek ekleme şansımız da yok. 25 elenmiş oluyor. Geriye dönüp diğer yerlere baktığımızda bir önceki turda şurada görmüş olduğunuz yaprak değerlerinde 14 var. Yani ben bu yaprağın altına...
+
+66
+00:30:51,519 --> 00:30:56,019
+Bir tur daha dallanma yaparsam, görebileceğim en iyi değer 14.
+
+67
+00:30:56,680 --> 00:30:59,960
+Bunu ben zaten 13'ü buldum. O yüzden bunun altına gitmeme gerek kaldı.
+
+68
+00:31:00,159 --> 00:31:02,019
+Keza burası için de aynısı geçerli.
+
+69
+00:31:03,079 --> 00:31:08,339
+Zaten 13'ü buldum. Görebileceğim değer 17 olduğu için ben bunun altına da bakmıyorum.
+
+70
+00:31:08,940 --> 00:31:10,519
+Yine bir üst katmana çıktığımda...
+
+71
+00:31:11,667 --> 00:31:15,047
+Buradaki yaprak noktalarının değerlerine bakıyorum.
+
+72
+00:31:15,627 --> 00:31:24,167
+Bunun da altına gitseydim 17'den daha iyi göremeyeceğim için 13 değeri benim için aynı optimal değer olma durumunu koruyor.
+
+73
+00:31:24,167 --> 00:31:29,487
+Buraya geldim, burada 20, yine 13'den daha iyi değil, burada da 18.
+
+74
+00:31:30,207 --> 00:31:33,167
+Eğer herhangi bir tanesi bunlarda...
+
+75
+00:31:33,587 --> 00:31:41,587
+13'ün altında bir lower bound sahip olsaydı bu yapraklardan, o zaman onun altına bakmaya devam etmem gerektiğini.
+
+76
+00:31:41,587 --> 00:31:51,587
+Yani promising leaf dediğimiz, bir ihtimal olasılık var eden noktaları incelemeye devam etmem gerektiğini.
+
+77
+00:31:51,776 --> 00:31:57,215
+Bu assignment probleminde ben öncelikle olabilecek yeni bir seçeneği belirliyorum.
+
+78
+00:31:57,735 --> 00:32:05,476
+Arkasından ilgili işlerden birinin seçtiğim A kişisine atayarak yola çıkıyorum.
+
+79
+00:32:05,916 --> 00:32:10,556
+Sonra da diğer işleri atayarak olabilecek seçenekleri değerlendiriyorum.
+
+80
+00:32:11,556 --> 00:32:14,655
+Bu birçok problemi uygulanabilir.
+
+81
+00:32:15,175 --> 00:32:16,836
+Sadece kişi ve iş değil.
+
+82
+00:32:17,279 --> 00:32:24,240
+makine, iş gibi, kişi, performans gibi noktalarda karşınıza çıkabilir.
+
+83
+00:32:25,680 --> 00:32:34,720
+Gelelim ikinci problemimize. İkinci problemimiz de, Napsack probleminin Branch and Bound tekniği ile çözülmesi.
+
+84
+00:32:34,720 --> 00:32:41,440
+Hatırlarsanız bir matriz oluşturuyorduk ve bu matriz de bir tarafta item
+
+85
+00:32:41,844 --> 00:32:48,104
+satırlarımız, sütunlarla da weight olacak şekilde, pardon, weight olacak şekilde value'ları hesaplıyorduk.
+
+86
+00:32:48,784 --> 00:32:57,744
+Ve köşegeni en aşağı inlerimizde, en altı sağ köşede yer alan köşegen de oluşabilecek en yüksek değeri hesaplıyorduk.
+
+87
+00:32:57,744 --> 00:33:04,084
+Neyse problemini, yine bir maksimizasyon problemi olduğunu düşünürsek,
+
+88
+00:33:04,663 --> 00:33:07,824
+Branch and Down teknolojisi kullanılması da buna çok uygun olacaktır.
+
+89
+00:33:08,339 --> 00:33:18,939
+Burada dört tane item var. Örümlerin ağırlıkları ve değerleri verilmiş. Aynı zamanda çoğurumuzun alacağı değer de on birim olarak buraya yazılmış.
+
+90
+00:33:18,939 --> 00:33:32,899
+Şimdi bunu daha önce de konuştuğumuzda bu problemi çözmek için dinamik programlama zamanında işte kilo başına değeri en yüksek olanları tercih etmeye çalışırdık.
+
+91
+00:33:33,379 --> 00:33:35,839
+İfadesi birkaç arkadaşımızdan gelmişti.
+
+92
+00:33:36,211 --> 00:33:55,031
+Burada da bu problemi çözerken bu mantığı kullanmak işimize yarayacağı için burada her ne kadar sıralı verilmiş olsa da bunlar karışık verilirse mutlaka value, bölü, weight oranına göre sıralanması gerekiyor ki bu biraz sonra yapacağımız yaklaşım işe yarasın.
+
+93
+00:33:55,031 --> 00:33:59,031
+Örneğin, bir kilosu ilk artımın...
+
+94
+00:33:59,476 --> 00:34:05,696
+10 değerinde, 2. ayetinde, 6 değerinde, 3. ayetinde, 5 değerinde, 4. ayetinde, 4 değerinde.
+
+95
+00:34:05,756 --> 00:34:15,275
+Yani bunlar karışık verilseydi, sizin bunları mutlaka büyükten küçüğe sıralamanız gerekecekti ki, şimdi uygulayacağımız yöntemi yapalım.
+
+96
+00:34:16,135 --> 00:34:18,676
+Yöntem nasıl çalışıyor, hemen ona bakacağız.
+
+97
+00:34:19,536 --> 00:34:20,956
+Yöntem şu şekilde çalışıyor.
+
+98
+00:34:22,176 --> 00:34:25,476
+İlk adımda elimizde hiçbir...
+
+99
+00:34:25,487 --> 00:34:32,367
+item'ı henüz çuvala koymamışken, alabileceğiniz en yüksek değer ne olabilir onu hesaplıyoruz.
+
+100
+00:34:32,367 --> 00:34:49,427
+Geri dönecek olursak burada, biz eğer constraint'imiz olmasaydı, burada birinci item'dan 10 kilo alabiliyor olsaydık, çuvalı doldurmak için, kilo başına 10'luk bir değer oluşacağından, 10 çarpı 10'dan,
+
+101
+00:34:49,940 --> 00:35:13,500
+100 birim bir upper bound oluşturacaktık. Yani 40 değerindeki bu item 1'den 10 kilo birimden alsaydık, alabileceğimiz en iyi değer 100 birim olacaktı. Ama tabii ki böyle bir şey mümkün değil. Biraz önce nasıl 2, 3, 1, 4'ü aldığımızda constraint'i bozuyordu. Bu da constraint'i bozuyor çünkü item 1'den sadece elimizde 4 kilo var.
+
+102
+00:35:13,876 --> 00:35:19,596
+O zaman diyoruz ki, ben item 1'i alırsam şöyle olur, item 1'i almazsam böyle olur.
+
+103
+00:35:20,176 --> 00:35:23,856
+Diyelim ki item 1'i aldım. Aldığımda 4 kilo almış olacağım.
+
+104
+00:35:24,788 --> 00:35:52,788
+değeri elimde 40 var. Geriye 6 kiloluk hakkım kalıyor. O zaman 6 kiloluk hakkımı da bundan sonra gelen en yüksek değere sahip ikinci itemle kullanırım diyorum. Her bir kilosu 6 birim değerinde olduğu için 6x6'dan 36, 40x36 eklediğinde apurban 76 olur. Yani ben birinci itemi alırsam ve geri kalanlardan en iyi seçeneği seçersam 76 olur.
+
+105
+00:35:52,788 --> 00:36:15,367
+bir akır bağımlı. Öte yanda birinci ayetimi seçmeseydim. Geri kalanlar arasında en iyi seçenek, birin başına 6 kilogramlık ikinci ayetimi olduğu için, şurada tekrar bakacak olursanız, birinci ayetimi almadım. 10 kilo hakkımı hiç kullanmadım. Şimdi kullanacağım zaman hepsini bir den edeceğimi varsayarsam, 10 çarpı aldıklar 60 olacaktım.
+
+106
+00:36:16,916 --> 00:36:22,916
+İşim tabi 76 daha yüksek 60'tan, o yüzden ilk etapta da bu taraftan yoluma devam ediyorum.
+
+107
+00:36:22,916 --> 00:36:26,916
+Ama burada işim daha henüz bitmiş değil ikinci düğümde.
+
+108
+00:36:26,916 --> 00:36:30,916
+Bu sefer 2'yi alsam mı, almasam mı diye bakıyorum.
+
+109
+00:36:30,916 --> 00:36:35,916
+Alırsam elimde 4 kilo vardı, 2'yi de aldığımda 11 kilo edeceğim.
+
+110
+00:36:36,659 --> 00:36:44,899
+Ama benim concentrate'im 10 kilo. O zaman weight 11 olduğu için zaten burası, feasible bir sonucu olabileceğinden burayı iptal ettim.
+
+111
+00:36:44,899 --> 00:36:55,460
+2'yi almasaydım, elimde birinci itemim var. Ama 2'yi almadığım için şimdi geri kalan ağırlıkları 3 ile doldurmam lazım.
+
+112
+00:36:55,460 --> 00:37:03,819
+Geriye 6 kilogram ağırlık kaldı, 3'ün değeri 5, 6 x 5, 30, 40'a 30 koydum, 70 değerini oldu.
+
+113
+00:37:04,596 --> 00:37:12,275
+Şu an elimde birinci altımı almasaydım, birinci altımı alsaydım, ikinciyi almasaydım, ulaşabileceğim en iyi yetmişler.
+
+114
+00:37:12,275 --> 00:37:25,395
+Devam ediyorum. Bu sefer üçü alsaydım, elimde dört kilo var, üçü aldım beş kilo var, dört, beş daha dokuz. Eğitim dokuz.
+
+115
+00:37:32,788 --> 00:37:40,387
+Artı bir kilom da dışarıda kaldığı için, onu da buradaki değerden tamamlayarak dördünü ekledim, 69'u elde ettim.
+
+116
+00:37:42,087 --> 00:37:46,807
+69'u, burada 3'ü aldığımda elde edebileceğim en yüksek değer.
+
+117
+00:37:52,148 --> 00:37:56,648
+1 var, 4 ve 40 değeri, 4'ü almak zorunda kalacaktım.
+
+118
+00:37:56,648 --> 00:38:00,908
+4'ten 6 tane aldığımda 24 edecekti, 4 çarpı 6'da.
+
+119
+00:38:00,908 --> 00:38:05,148
+24'ü de 40'a eklediğimde 64 değerini bulmuş olacaktım.
+
+120
+00:38:05,148 --> 00:38:08,948
+Son ayetime geldim. Son ayetime geldiğimde,
+
+121
+00:38:08,948 --> 00:38:19,347
+son ayetimi eğer alırsam kilo 12'ye çıkıyor çünkü 4 var, 4'ü aldım, 5'ü aldım.
+
+122
+00:38:19,572 --> 00:38:26,572
+ve üçü aldım. Dört, beş, artı, üç, on iki ettiği için bu fizikleri sonuçlu olmaktan çıkmış olacağım.
+
+123
+00:38:27,572 --> 00:38:33,172
+Dördü almasaydım, burada dokuz kiloyuna geldim. Çünkü bir ve üçü olmuştum.
+
+124
+00:38:33,172 --> 00:38:39,172
+Değerli altmış beş, iki ve dördü almadığım için altmış beş lirayı elde ettim.
+
+125
+00:38:39,172 --> 00:38:45,172
+Şimdi artık altmış beş lirayı elde ettikten sonra geri kalan, durduğum noktaların yapraklara bakıyorum.
+
+126
+00:38:45,876 --> 00:38:54,316
+Burada 64 olduğu için bundan sonrasında gitsen elde edebileceğim en iyi değer 64, 65'ten büyük olmadığı için buranın peşinden gitmeme gerek yok.
+
+127
+00:38:54,316 --> 00:38:58,155
+Zaten feasible olmayanlar elenmişti konstruyeti bozuyorlar.
+
+128
+00:38:58,155 --> 00:39:00,155
+Bir tek şurası kaldı.
+
+129
+00:39:00,155 --> 00:39:01,436
+Burası da...
+
+130
+00:39:01,715 --> 00:39:10,956
+En yüksek 60 alabildiği için, yine 65'den büyük olmak için, bunun peşinden gitmeme gerek yok. Bunu rahatlıkla söyleyebiliriz.
+
+131
+00:39:10,956 --> 00:39:17,956
+O zaman benim buradaki en iyi seçeneklerimi, burada görmüş olduğunuz,
+
+132
+00:39:23,188 --> 00:39:31,748
+ve item 3 değerlerini aldığımda toplamda 9 kilo ile 65 değerini kullanarak elde etmiş oluyorum.
+
+133
+00:39:31,748 --> 00:39:37,867
+Örneğin 2 ile 4'ü alsaydım 7, 3, 10 kiloyu bir yandan dolduruyorum ama değeri sadece 54 oluyor.
+
+134
+00:39:37,867 --> 00:39:46,907
+Hem dinamik programlama ile hem de branch and bounce tekniği ile çözebileceğimiz bir nefes etkileceğimiz.
+
+135
+00:39:46,907 --> 00:39:49,347
+Evet, sorusu olan var mı?
+
+136
+00:39:50,324 --> 00:39:56,624
+Branch and Bound'da uyguladığımız optimizasyon yaklaşımları ile ilgili herhangi bir sorusu var mı?
+
+137
+00:39:59,144 --> 00:40:04,224
+Hocam, burada devam edip etmeyeceğimizi anlamak için Upper Bound değil.
+
+138
+00:40:04,344 --> 00:40:07,784
+Atıyorum mesela şu beşinci de value 65'e gelmiş.
+
+139
+00:40:08,003 --> 00:40:13,984
+65'ten sonra altıncı, ikinci onlara bakmamıza gerek olmadığını anlayabiliyoruz değil mi?
+
+140
+00:40:14,064 --> 00:40:16,624
+İlla da sekize kadar inmemize gerek yok.
+
+141
+00:40:17,364 --> 00:40:20,884
+5. nokta bunu anlayamıyoruz. 8'e inmemize gerek var.
+
+142
+00:40:22,083 --> 00:40:39,543
+Çünkü biz her bulduğumuzda upper boundu belirliyoruz ama olabilecek o seçenekler içerisinde örneğin 69 upper boundu ama biz diyelim ki orada 60 bulduk.
+
+143
+00:40:40,947 --> 00:40:51,427
+60'da min 59 bulduk. 59 bulursak altta, o zaman ikinci düğümün olduğu yer bir ihtimal olmaya başlayacak.
+
+144
+00:40:54,387 --> 00:41:00,427
+Hocam, upper bound değil de value değeri de var ya 65 bulduğumuz 5. de. Ben aslında onu kastetmiştim.
+
+145
+00:41:00,867 --> 00:41:06,647
+Şimdi bir saniye, şarjım gitmek üzere olduğu için hemen şarjımı bakayım. Cevaplayacağım soruna.
+
+146
+00:41:28,532 --> 00:41:43,403
+Evet, [öğrenci]. Bağladım, şimdi senin sorunu bir daha değerlendirelim. Sen şunu söylüyorsun, 5.deki weight'imiz 9, value'umuz 65. Bu noktadan sonra zaten gidip 60'a...
+
+147
+00:41:47,891 --> 00:41:48,891
+Doğru mu anlıyorum?
+
+148
+00:41:49,891 --> 00:41:53,891
+Hocam, internetim kesildi de bir iki saniye, tekrar edebilir misiniz?
+
+149
+00:41:53,891 --> 00:41:54,891
+Tekrar edeyim.
+
+150
+00:41:54,891 --> 00:42:02,891
+Saat beşinci düğümünde zaten elimizde 65 değerine sahibiz. Bu mantıkla gidip 60 değerine bakmamıza gerek kalmaz diyorsun değil mi?
+
+151
+00:42:03,443 --> 00:42:07,463
+Evet, yani upper bound atmış olduğu için hani bakmamıza gerek kalmaz diye düşündüm.
+
+152
+00:42:07,483 --> 00:42:11,863
+Doğru, doğru söylüyorsun. Bu örnek için bu söylediğin mantıklı hareket edebiliriz.
+
+153
+00:42:11,923 --> 00:42:18,603
+Ama biraz önceki yaklaşımımızda, minimization probleminde o şekilde ilerlememiştik.
+
+154
+00:42:18,684 --> 00:42:20,823
+Lower bound üzerinden ilerlemiştik.
+
+155
+00:42:21,243 --> 00:42:26,043
+Genel yaklaşım upper bound'u ve lower bound'u kullanmak ama elimizde bir değer varsa
+
+156
+00:42:26,043 --> 00:42:29,384
+zaten 65 değerini elde ettiğimiz bir noktada gidip
+
+157
+00:42:29,679 --> 00:42:33,059
+60 değerinin peşinden bakmamızın bir anlamı yok, bu konuda haklısın.
+
+158
+00:42:35,139 --> 00:42:38,500
+Buna göre bir algoritma tasarımı yapılması daha uygun olacaktır.
+
+159
+00:42:39,639 --> 00:42:40,739
+Başka sorusu olan var mı?
+
+160
+00:42:41,819 --> 00:42:46,340
+Hocam ben ikinci notta upper bound neden 60 o kısmı anlamadım.
+
+161
+00:42:46,340 --> 00:42:47,399
+Tamam hemen söyleyelim.
+
+162
+00:42:48,179 --> 00:42:56,599
+Zeyra, şimdi birinci item'a ilk başta 10 kilo birden alsaydık 100 olacağını söylemiştik.
+
+163
+00:42:57,396 --> 00:43:21,936
+Ama birinci düğümü almadan yolumuza devam ettiğimiz zaman, vida alt bir tarafına gittiğimizde, doğal olarak birinciyi almıyorsak en iyi, en yüksek değere sahip ikinciyi alacağız demektir. İkincinin kilo başına değeri 6. 10 kilo birden alabilseydik, ki bu mümkün değil ama biz olabilecek en iyi senaryoyu bulmaya çalışıyoruz, o zaman 6x10'dan 60 olacaktı.
+
+164
+00:43:22,867 --> 00:43:23,728
+Anladım hocam.
+
+165
+00:43:23,768 --> 00:43:24,568
+O yüzden atmış.
+
+166
+00:43:25,648 --> 00:43:27,007
+Tamam, teşekkürler.
+
+167
+00:43:27,507 --> 00:43:29,507
+Mücahade edelim. Başka sorusu olan var mı?
+
+168
+00:43:35,155 --> 00:43:36,956
+Peki, o zaman devam edelim.
+
+169
+00:43:38,536 --> 00:43:46,755
+Şimdi, aslında önemli bir problem, branch and bound to tamamladık.
+
+170
+00:43:47,475 --> 00:43:56,155
+Sırada polinomium, non-deterministic polinomium, non-deterministic polinomium, complete ve NP-hard olmak üzere
+
+171
+00:43:58,956 --> 00:44:02,655
+bilgisayar dünyasındaki bilgisayar bilimlerindeki problemlerin
+
+172
+00:44:03,188 --> 00:44:12,788
+kategorize edildiği bir konu var. Polinomiyal problem dediğiniz zaman bu size neyi ifade ediyor? Önce onu sorayım.
+
+173
+00:44:20,532 --> 00:44:23,212
+Çok kısa zaten buradan bakarak da söyleyebileceğimiz bir şey.
+
+174
+00:44:24,891 --> 00:44:34,972
+Bir problem kolinomyal zamanda çözülebiliyorsa, biz bu problemlere kolinomyal problemler diyoruz.
+
+175
+00:44:34,972 --> 00:44:46,512
+Eğer bir problem kolinomyal zamanda çözülemiyorsa, o problemler de non-deterministik kolinomyal NP problemler olarak adlandırılıyor.
+
+176
+00:44:48,500 --> 00:45:01,359
+Polinomiyel zamandan kastettiğimiz nedir? Genelde, işte bizim karmaşıklıklarımız n, log n, n-log n, n-kare, n-kip ihtimalle n-kip oluyor.
+
+177
+00:45:02,483 --> 00:45:12,264
+Bunlar N'in taban olarak N kullanıldığı ve üzerindeki sayılarında N'den çok daha küçük olduğu sayılar.
+
+178
+00:45:12,324 --> 00:45:20,463
+N üzeri 4, N üzeri 5 de teknik olarak polinomyal olarak ifade edilebilen şeyler, karmaşıklıklar.
+
+179
+00:45:20,463 --> 00:45:29,043
+Ama tam tersi bir durum olursa, sabitin üzeri N olursa, 2 üzeri N, 3 üzeri N, işte N üzeri N,
+
+180
+00:45:30,483 --> 00:45:57,043
+en faktoryal gibi değerler olursa, o zaman bunlar en sayısı büyüdüğünde, mevcut en hızlı işlemci ailesiyle bile yıllar sürebilecek, yüzlerce, binlerce yıl sürebilecek sürede çözülme ihtimalleri olduğundan, bunlar namleten mistik problemler olarak.
+
+181
+00:45:57,492 --> 00:46:05,992
+karşımıza çıkıyor. Bu yüzden de açıkçası bizim bugüne kadar gördüğümüz birçok problem, polinomiyel problem ama
+
+182
+00:46:05,992 --> 00:46:13,032
+non-deterministik problemlere, non-deterministik polinomiyel problemlere örnek vermeniz gerekirse neyi söyleyebilirsiniz?
+
+183
+00:46:18,963 --> 00:46:20,652
+Bugüne kadar onları da gördük.
+
+184
+00:46:24,436 --> 00:46:30,336
+Yani iki üzeri en karmaşıklıkta herhangi bir problem olabilir mi?
+
+185
+00:46:30,516 --> 00:46:33,195
+Olabilir. Mesela hani aklınıza gelen ne var?
+
+186
+00:46:33,476 --> 00:46:34,296
+İki üzeri en karmaşıklıkta.
+
+187
+00:46:34,315 --> 00:46:35,056
+Brute force.
+
+188
+00:46:35,695 --> 00:46:36,036
+Efendim?
+
+189
+00:46:36,476 --> 00:46:37,176
+Brute force.
+
+190
+00:46:37,815 --> 00:46:44,195
+Brute force yaklaşımı genel olarak verdiğimiz bir ifade. Bizim ilk aklımıza gelen çözüm demek bu.
+
+191
+00:46:45,016 --> 00:46:51,136
+Brute force algoritmalar içerisinden seçecek olursak, mesela traveling salesman problemi.
+
+192
+00:46:51,731 --> 00:47:11,371
+non-deterministik bir problem yani bir satıcının tüm şehirlere uğramak koşuluyla en kısa yolunu bulma problemi, enin çok büyük olduğu değerler için mümkün hesaplanabilir bir zamanda, kabul edilebilir bir zamanda çözülemeyecek bir problem.
+
+193
+00:47:12,211 --> 00:47:22,452
+O yüzden biz Traveling Salesman problemini NP problemler içerisine yerleştiriyoruz ve onu NP olarak adlandırıyoruz.
+
+194
+00:47:22,452 --> 00:47:28,452
+Tabi burada şu kısma geçmeden önce bir tane sahip açayım.
+
+195
+00:47:30,051 --> 00:47:33,632
+Orada problemleri şöyle adlandıralım.
+
+196
+00:47:35,851 --> 00:47:38,332
+Burada bir işte P problemi var.
+
+197
+00:47:38,931 --> 00:47:45,551
+Hatta şurada daha güzel bir çizim de göstereyim.
+
+198
+00:47:45,551 --> 00:47:48,831
+Hüksanlığımızı alacağım.
+
+199
+00:48:13,204 --> 00:48:19,923
+Hüznün, bölümlerin önceden sitede paylaşmak istedim. NP bu kısım.
+
+200
+00:48:27,188 --> 00:48:32,188
+Bu kısım NP-part, şöyle bu kısım da NP-complete.
+
+201
+00:48:32,188 --> 00:48:41,188
+Gözümüzde daha iyi canlanması için şöyle bir ifade var.
+
+202
+00:48:41,188 --> 00:48:50,188
+Easy Medium Art mairesi.
+
+203
+00:48:50,188 --> 00:48:54,188
+Hatta şunu da...
+
+204
+00:48:56,179 --> 00:48:58,719
+Biraz daha aşağıya çizersen daha düzgün olacak.
+
+205
+00:49:01,519 --> 00:49:02,539
+Böyle düşünebilirsiniz.
+
+206
+00:49:03,719 --> 00:49:11,300
+Şimdi burada genelde polinomiyeli problemler daha kolay çözülebilir ve karmaşıklık düzeyi düşük problemler.
+
+207
+00:49:11,300 --> 00:49:17,300
+NP problemler biraz daha karmaşıklık düzeyi yüksek.
+
+208
+00:49:23,251 --> 00:49:25,251
+Aslında literatürde
+
+209
+00:49:27,027 --> 00:49:35,447
+polinomiyel zamanlı çözülme ihtimali olmayan ve bunu da bir başka probleme dönüştürülerek kendisini ispat etmiş problemler.
+
+210
+00:49:35,887 --> 00:49:40,527
+Şimdi gelelim bu konuyu biraz daha derinden konuşmaya.
+
+211
+00:49:41,107 --> 00:49:48,268
+Mesela polinomiyel algoritmalar dediğiniz zaman binary search, linear search, strategic stra algoritması ile short-spat problemi.
+
+212
+00:49:48,327 --> 00:49:52,027
+Bunların hepsi polinomiyel zamanda çözülebilen problemler.
+
+213
+00:49:54,708 --> 00:49:59,108
+O, C, çarpı, en üzeri K diyelim.
+
+214
+00:49:59,948 --> 00:50:01,467
+Burada, C'nin...
+
+215
+00:50:01,467 --> 00:50:04,228
+Yani şu an biz sizin yazdıklarınızı görmüyoruz.
+
+216
+00:50:04,807 --> 00:50:05,248
+Aha öyle mi?
+
+217
+00:50:06,268 --> 00:50:08,608
+Evet, sadece P var şu an ekranda.
+
+218
+00:50:09,108 --> 00:50:10,668
+O zaman kaldım bir saniye.
+
+219
+00:50:11,328 --> 00:50:13,208
+Hemen düzeltiyorum. Şimdi görebiliyor musunuz?
+
+220
+00:50:14,328 --> 00:50:14,688
+Evet.
+
+221
+00:50:16,268 --> 00:50:17,108
+Teşekkür ediyorum.
+
+222
+00:50:18,708 --> 00:50:19,988
+Bir saniye, şöyle yapayım.
+
+223
+00:50:21,988 --> 00:50:22,228
+Tamam.
+
+224
+00:50:22,559 --> 00:50:31,760
+Şimdi burada C'nin sıfırdan büyük olduğu, N'nin de sıfırdan büyük olduğu durumlar için koşuyoruz.
+
+225
+00:50:31,760 --> 00:50:32,760
+Ve K'nın...
+
+226
+00:50:33,972 --> 00:50:41,292
+Biraz önce söylediğim gibi, N'den küçük olduğu durumları biz aslında polinomiyel olarak ifade ediyoruz.
+
+227
+00:50:41,872 --> 00:50:52,231
+Burada tam tersi bir durum olduğunda, yani K üzeri N olduğunda, o zaman NP problem, nandeterministik polinomiyel problem oluyor demiştik.
+
+228
+00:50:52,231 --> 00:51:01,231
+Buna şöyle bir örnek verelim. Örneğin su dokununu düşünün. Su dokunda 9x9'luk bir alanda su dokunu dolduruyorsunuz.
+
+229
+00:51:01,556 --> 00:51:13,135
+Burada bir bilgisayarın 9x9 için olası çözümleri bulması ve üretmesi aslında mümkün kolinomyal zamanda.
+
+230
+00:51:13,596 --> 00:51:24,556
+Ama siz bunu nxn'lik bir su dokuna çevirirseniz, bu kolinomyal zamanda çözülemeyecek bir problem olduğu için buna biz NP...
+
+231
+00:51:24,847 --> 00:51:52,288
+problem, non-deterministik polinomyal problem diyoruz. Peki NP problemlerin ne tür bir özelliği var? NP problemler size sonucu polinomyal zamanda üretemiyorlar ama verify edebileceğiniz bir sonucu polinomyal zamanda size söyleyebiliyorlar. Örneğin diyelim ki
+
+232
+00:51:53,523 --> 00:52:00,083
+Bir travelling salesman, hatta onu öyle anlatmayalım, başka bir problem üzerinden anlatalım, daha güzel anlatıksın.
+
+233
+00:52:00,523 --> 00:52:02,483
+Graf coloring problemi üzerinden anlatalım.
+
+234
+00:52:05,043 --> 00:52:14,503
+Siz bir graf boyama probleminde en az renk ve grafları boyamaya çalıştığınızda yan yana gelen iki düğümün aynı renkte olmayacak.
+
+235
+00:52:16,179 --> 00:52:29,139
+özelliğini gözeterek boyamaya çalıştığınızda, bu grafı kaç renkte, en az renkte boyarsınız? Bu sorunun cevabını alınmayacak. Bu bir NP-complete problemdir.
+
+236
+00:52:29,139 --> 00:52:40,559
+Burada siz bu grafı 3 renkte boyayabilir misiniz sorusunu sorduğunuzda, bunun cevabını polinomiyel zamanda alabilirsiniz.
+
+237
+00:52:42,003 --> 00:52:47,264
+Bu grafı iki renkle boyayabilir misiniz sorusunun cevabını polinomiyel zamanda alabilirsiniz.
+
+238
+00:52:48,003 --> 00:52:55,903
+Ama en az kaç renkle boyanması gerekiyor sorusunun cevabını polinomiyel zamanda alamıyorsunuz.
+
+239
+00:52:56,063 --> 00:53:01,583
+Bu yüzden bunlara non-deterministik polinomiyel algoritmalar deniyor.
+
+240
+00:53:01,583 --> 00:53:08,243
+Yani yes, no cevabı alabileceğiniz bir soruya polinomiyel zamanda cevap verebiliyor.
+
+241
+00:53:09,791 --> 00:53:19,652
+Exact solution istediğinizde size bu exact solution'ı söyleyemiyor. Aradaki temel farklılık bu. Buraya kadar sorusu olan var mı?
+
+242
+00:53:29,427 --> 00:53:38,987
+Şimdi peki NP-problem ile NP-complete problemin farkı nedir? Bu konuda birkaç şey söyleyelim.
+
+243
+00:53:40,547 --> 00:53:47,728
+NP-complete problemler, reducible problemler olarak da adlandırılır.
+
+244
+00:53:55,315 --> 00:54:07,019
+Siz bir L1 algoritmasını L2 algoritmasına dönüştürebiliyorsanız ve L2 algoritması NP-
+
+245
+00:54:07,315 --> 00:54:17,535
+olarak literatürde NP olduğu ispat edilmişse, o zaman L1 algoritması için de NP-complete ifadesini kullanabiliyorsunuz.
+
+246
+00:54:17,855 --> 00:54:26,335
+Yani bir algoritmanın başka bir NP algoritmaya dönüştürülebiliyor olması, NP-complete algoritmaya dönüştürülebiliyor olması,
+
+247
+00:54:26,995 --> 00:54:29,915
+o algoritmanın da NP-complete olduğunu bize söylüyor.
+
+248
+00:54:30,495 --> 00:54:33,315
+Peki, bunlar arasında neler var? Bunlar arasında...
+
+249
+00:54:44,820 --> 00:54:46,420
+Napsack problemi var.
+
+250
+00:54:49,300 --> 00:54:51,160
+Graf kaderim problemi vardır.
+
+251
+00:54:52,840 --> 00:55:01,260
+Bunlar, diğer algoritmalara dönüştürme bildikleri için literatürde NP-complete olarak adlandırılan algoritmalar.
+
+252
+00:55:01,260 --> 00:55:05,260
+Şimdi, göreceksiniz bu konuyu daha derinlemesine araştırdığınızda...
+
+253
+00:55:05,903 --> 00:55:24,083
+P, NP'ye eşit mi diye bir soru var ve bu yüzyılın 1 milyon dolarlı bir sorusu bu. Henüz bunun cevabı polinomiyon problemlerle, non-polinomiyon, non-determinisi polinomiyon problemler aynı kümenin içerisinde sayılamıyorlar.
+
+254
+00:55:24,083 --> 00:55:32,203
+Birbirlerini kapsayacak şekilde biraz önce çizdik. P'ye NP ya da NP'ye P diyemiyorsunuz. O yüzden
+
+255
+00:55:33,043 --> 00:55:50,783
+Bunun ispatlanması için çok ciddi bir çaba var ama henüz bunu ortaya atacak bir çözüm olmadığı için şu anda polinomiyal problemlerin, non-deterministik polinomiyal problemlerden ayrıldığı.
+
+256
+00:55:51,215 --> 00:56:03,355
+ve ayrı olarak değerlendirilmesi gerektiği literatürde kabul gelen çözüm. O yüzden siz de bunu böyle kabul ederek bu süreci yorumlamanızı rica edeceğim.
+
+257
+00:56:04,855 --> 00:56:09,496
+Günün sonunda biz NP-hard dediğimiz
+
+258
+00:56:10,068 --> 00:56:35,788
+probleme geliyoruz. NP-hard aslında bu problemler içerisinde karşılığı henüz bulunamamış problemler olarak karşılığında çıkıyor. Bir tane program düşünün. Bu programın A algoritmasını besliyorsunuz. Input olarak da iyi veriyorsunuz. Program verilen input değeri 1 ise duruyor.
+
+259
+00:56:36,724 --> 00:57:02,284
+eğer program verilen input değeri sıfırsa çalışmaya devam ediyor. Temel prensip bu. Şimdi burada programa vermiş olduğunuz değerlere baktığınız zaman burada programa kendi kendine verdiğinizde program input olarak kendi değerini aldığında durmuyor.
+
+260
+00:57:03,123 --> 00:57:25,123
+Ama öte yandan, programa kendi değerini verdiğinizde bir değerini ürettiği zaman program duruyor. Burada bir deadlock oluşmuş oluyor. Her ikisini birbiriyle beslediğiniz zaman. Bu durumda sizin vermiş olduğunuz inputun sıfır ya da bir olmasından bağımsız olarak bir...
+
+261
+00:57:25,840 --> 00:57:31,600
+Program hangi inputta durma noktasına gelir sorusunun cevabı
+
+262
+00:57:31,956 --> 00:57:38,635
+tavuk-yumurta ilişkisi şeklinde gerçekleşiyor ve burada non-deterministik bir durum oluşuyor.
+
+263
+00:57:39,176 --> 00:57:50,695
+Siz bu programın hangi inputta duracağını, kendi kendine verildiğini durup durmayacağını, hangi şartta duracağını kesin bir şekilde ortaya koyamadığınız için
+
+264
+00:57:50,695 --> 00:57:59,956
+bu problem NP-HART olarak literatürde adlandırılıyor ve burada siz bu problemin net bir çözümünü...
+
+265
+00:57:59,956 --> 00:58:21,435
+koşul olarak ortaya koyamamış oluyorsunuz. Çünkü burada algoritmaya verdiğiniz programın kendisi olduğunda ki çıkan sonuçta programın içerisine vermiş olduğunuz değer başka bir kendi kendine çağırmış programın.
+
+266
+00:58:23,092 --> 00:58:29,132
+içerisine yer aldığında, o zaman onun değerinin değişkenlik gösterdi ve bunun stable olmadığını görüyorsunuz.
+
+267
+00:58:29,632 --> 00:58:38,092
+Şimdi, tabii, non-deterministic algoritmaların iki tane stage'i olduğundan bahsetmiştim.
+
+268
+00:58:38,632 --> 00:58:42,431
+Bir tanesi guessing stage, diğeri de verification stage.
+
+269
+00:58:42,871 --> 00:58:46,132
+Burada bu stage'leri aslında biraz önce konuştuk.
+
+270
+00:58:46,132 --> 00:58:49,132
+Dedik ki, siz...
+
+271
+00:58:50,643 --> 00:58:58,943
+Optimal bir solution bulmak için bütün seçenekleri değerlendirdiğinizde bunu polinomiye sürede bulamıyorsunuz.
+
+272
+00:58:59,083 --> 00:59:08,224
+Ama verdiğiniz inputun iyi bir sonuç olup olmadığını, bir sonuç olup olmadığını verify etmek istiyorsanız
+
+273
+00:59:08,623 --> 00:59:20,864
+O zaman size deterministik bir polinomiya sürede bu algoritmalara cevap verebildiği için siz bunu verify edebiliyorsunuz ve polinomiya zamanında gerçekleştirebiliyorsunuz.
+
+274
+00:59:24,788 --> 00:59:45,788
+NP-complete problemlere geldiğimizde de buradaki ifadeden de göreceğiniz gibi bir decision problemi D1'in bir decision 2 problemine polinomiyel sürede düz...
+
+275
+00:59:46,324 --> 01:00:02,764
+dönüştürülebilir olduğunu ispat ediyorsanız, o zaman burada siz aslında o problemin de NP-complete olduğunu net olarak ifade etmiş oluyorsunuz. Böylece sonuca da gelişmiş oluyorsunuz.
+
+276
+01:00:02,764 --> 01:00:04,244
+Poli-O, Yon-Town olarak.
+
+277
+01:00:04,608 --> 01:00:15,568
+Şimdi bir beş dakika ara verelim. Beş dakikadan sonra ufak bir şey daha bahsedeceğim. Ondan sonra yavaş yavaş bu seneki dersimizi noktalayacağız.
+
+278
+01:00:16,528 --> 01:00:20,947
+Saat 16.03, 16.08'de görüşmek üzere diyorum arkadaşlar.
+
+279
+01:05:26,579 --> 01:05:35,139
+Arkadaşlar, kaldığımız yerden devam edelim. Ben şimdi yeniden sizlerle paylaşayım ekranı.
+
+280
+01:05:36,539 --> 01:05:37,739
+Hocam, merhabalar.
+
+281
+01:05:38,519 --> 01:05:38,940
+Merhaba.
+
+282
+01:05:40,199 --> 01:05:44,239
+Bir sorum olacaktı ödevle ilgili. Şu an sorma şansım var mıdır?
+
+283
+01:05:44,799 --> 01:05:47,819
+Birkaç seyit konuyu bitirdikten sonra ödevle ilgili sorularınızı alacağım.
+
+284
+01:05:49,199 --> 01:05:50,579
+Tamam hocam, teşekkürler.
+
+285
+01:05:50,579 --> 01:05:51,599
+Teşekkür ederim.
+
+286
+01:06:05,012 --> 01:06:08,731
+Şu an ekranı görebildiğinizi tahmin ediyorum.
+
+287
+01:06:09,271 --> 01:06:09,672
+Geliyoruz.
+
+288
+01:06:10,532 --> 01:06:29,932
+Bir kez daha üzerinden geçecek olursak, Definition 1'de gördüğünüz gibi bir algoritma, bir problemin çözümünü en kötü şartlarda üstsel olarak sabit bir sayı üzerindeki sürede yapabiliyorsa bu probleme polynomial problem olarak bakıyoruz.
+
+289
+01:06:30,579 --> 01:06:38,400
+Burada polinomiyel zamanda çözülebiliyor olması deterministik bir algoritma ile çözülebilir olduğunu da bize gösteriyor.
+
+290
+01:06:38,539 --> 01:06:46,920
+Yani her seferinde aynı sonucu alabileceğimiz, farklı bir sonuçta karşılaşmayacağımız bir problemden bahsediyoruz.
+
+291
+01:06:46,920 --> 01:06:49,835
+Şimdi burada...
+
+292
+01:06:52,052 --> 01:06:58,711
+Biraz önceki problemde NP-hard problemlerden bahsederken, Halting algoritmasından bahsetmiştik.
+
+293
+01:06:58,791 --> 01:07:01,851
+Bir programın durup durmayacağından bahsetmiştik.
+
+294
+01:07:02,331 --> 01:07:13,132
+Sizin yazacağınız bir programın, başka bir programın durup durmayacağını anlaması, teknik olarak bulması mümkün değil.
+
+295
+01:07:13,632 --> 01:07:18,031
+Çünkü kendisinin de durup durmayacağı bir durum söz konusu.
+
+296
+01:07:20,052 --> 01:07:31,951
+hangi inputu alırsa duracağını tahmin etmeye çalışmak aslında biraz önce de bahsettiğimiz gibi öngörülebilir bir durum değil.
+
+297
+01:07:32,500 --> 01:08:00,000
+hangi koşulda durur, hangi inputla durur noktasını önceden bilmemiz mümkün değil. O yüzden bu tür problemler sonucu belirlenemez, undecidable dediğimiz problemler. Bunları da NP-hard olarak adlandırıyoruz literatürde. Şimdi devam edecek olursak, Definition 3'e baktığımızda, non-deterministic bir algoritmanın iki tane stage'den oluştuğunu söylemiştim. Bir tanesi,
+
+298
+01:08:00,692 --> 01:08:13,311
+Sizin o problemle ilgili optimum sonucu, uygun sonucu bulmaya çalışmanız ki bu istenilen sürede gerçekleşmiyor.
+
+299
+01:08:13,844 --> 01:08:17,203
+O yüzden zaten non-deterministik olarak adlandırılıyor.
+
+300
+01:08:17,324 --> 01:08:27,764
+İkincisi de bu ikinci stage'de verification sorusuna verdiğiniz cevap yes ya da no olarak polinomiyel bir zamanda verilebiliyor mu?
+
+301
+01:08:28,123 --> 01:08:36,884
+Eğer verilebiliyorsa o zaman bu problemin NP problemi olduğunu söylemekte herhangi bir sakınca olmadığına inanamakta fayda var.
+
+302
+01:08:40,307 --> 01:08:44,188
+Son olarak da NP-complete problemlerden bahsetmiştik.
+
+303
+01:08:44,587 --> 01:08:54,288
+NP-complete problemlerde demiştik ki, bir problemin NP-problem olması aynı zamanda onun NP-complete olacağını göstermiyor ama
+
+304
+01:08:54,288 --> 01:08:57,688
+NP-complete olması onun bir NP-problem olacağını gösteriyor.
+
+305
+01:08:58,268 --> 01:09:04,507
+Bir NP-problemin NP-complete olabilmesi için burada da söylendiği gibi bir decision problemini
+
+306
+01:09:05,460 --> 01:09:30,060
+Başka bir decision problemine, bir function aracılığıyla transform edilebilmesi ve bütün bu maplemelerdeki sonuçların iki problem içinde aynı cevabı veriyor olması, iki problem içinde yes ya da no cevabını üretiyor olması ve bu fonksiyonun da polinomiyel zamanında çalışabiliyor olması o problemin NP-complete olmasını sağlayabilir.
+
+307
+01:09:33,171 --> 01:09:56,171
+Bir başka gösterim, burada da NP-complete problemler olduğunu görüyorsunuz. Örneğin ortadaki problem, NP-complete problem olduğu ortaya konmuş bir problem. Siz etrafındaki diğer problemlerin hepsine dönüştürebilir olduğunu ortaya koyuyorsanız, o zaman bunun NP-complete olduğunu da söyleyebilmiş oluyorsunuz.
+
+308
+01:10:00,000 --> 01:10:12,000
+NP-hard olabileceğini ama NP-hard problemi NP-complete olamayacağını da buradaki çizimden bir kez daha görmüş oluyorsunuz. Bu da önemli nokta. Bir de öz önceki halting problemi.
+
+309
+01:10:13,587 --> 01:10:37,407
+contradiction içeren bir problem ve kodların en zamanının çözülmesi mümkün değil. Aynı zamanda yes, no sorusuna da bir verification sorusuna cevap vermesi mümkün değil. Yani bir problem, pardon bir program herhangi bir koşulda durur mu, çalışmaya devam eder mi? Bu sorunun cevabını da veremiyorsunuz. İşte bu problemde NP-hard olarak adlandırılıyor.
+
+310
+01:10:40,724 --> 01:10:49,443
+Biz bu dönemin sonuna geldik. Yavaş yavaş kapatacağım. Tabii sizin bazı sorularınızı alabilir, onları da alacağım.
+
+311
+01:10:51,384 --> 01:11:04,684
+Burada öncelikle finansal analiz etkinize başarılar diliyorum. Sınavlarınızın önümüzdeki birkaç gün içerisinde, iki üç gün içerisinde açıklanacağını söyleyebilirim. Çok az bir şey kaldı.
+
+312
+01:11:05,119 --> 01:11:10,280
+Onun dışında da öncelikle ödevli bir sorunuz varsa onu alın.
+
+313
+01:11:10,280 --> 01:11:14,280
+Fakat size bir soru sormak istiyorum, onu alın.
+
+314
+01:11:21,716 --> 01:11:24,476
+Ne, abi, apasiolda mısın?
+
+315
+01:11:32,275 --> 01:11:34,536
+Peki, sorunlayacaksınız herhalde. Başka bir soru soru var mı?
+
+316
+01:11:39,220 --> 01:11:41,659
+Ödeyde ya da derslerde sınavla ilgili.
+
+317
+01:11:46,292 --> 01:11:53,372
+Peki. Geçtiğimiz hafta bir konudan bahsetmiştik hatırlarsanız.
+
+318
+01:11:59,412 --> 01:12:01,412
+Backtracking konusunu anlatmıştım.
+
+319
+01:12:05,492 --> 01:12:16,731
+Buranın EFS Rit-Chronium kullanıcı demiştik. Bununla ilgili örnekler varmıştı. Bu örneklerden bir tanesi de
+
+320
+01:12:30,484 --> 01:12:47,484
+Multanian, Cycle ya da Circle dediğimiz bir grafta bütün düğünleri dolaşarak yine aynı düğüne dönebileceğimiz bir pet var mı yok mu sorusu.
+
+321
+01:12:47,484 --> 01:12:50,484
+Bu noktada...
+
+322
+01:12:53,587 --> 01:12:59,087
+Burada isim verelim, A, B, C, D, O, T.
+
+323
+01:13:01,188 --> 01:13:11,587
+Burada örneğin, C'ye gelip, B'ye gelip, E'ye gelip, B'ye gelip, B'ye gelip, B, G, C noktasına gelebilirsiniz.
+
+324
+01:13:11,867 --> 01:13:18,307
+Burada aynı noktaya dönmüş olmuyorsunuz ama herhangi bir şekilde şuradan bir bağlantı koyuluyoruz da.
+
+325
+01:13:19,572 --> 01:13:21,572
+Tekrar şu kısmını sızlıyoruz da.
+
+326
+01:13:21,572 --> 01:13:22,572
+Pardon.
+
+327
+01:13:30,195 --> 01:13:42,195
+O zaman A'dan başlayıp C'ye, C'den B'ye, B'den A'ye, E'den B'ye, D'den F'ye, G'ye ve en sonunda da A'ya döndüğünüzde bir circle oluşturabiliyorsunuz.
+
+328
+01:13:42,195 --> 01:13:49,920
+Yani işte tüm düğünlere uğrayarak oluşturabileceğiniz circle'lara Hamiltonian Cycle ya da Circle ismini veriyoruz.
+
+329
+01:13:49,920 --> 01:13:55,600
+Bu noktada backtracking yardımıyla bunu bulma şansına sahipsiniz.
+
+330
+01:13:55,600 --> 01:14:00,600
+Buradaki çeşitli seçenekleri değerlendiriyorsunuz.
+
+331
+01:14:00,600 --> 01:14:08,719
+İşte A'dan başlıyorsunuz, B'ye giriyorsunuz, B'den E'ye gidebilirsiniz, C'ye gidebilirsiniz.
+
+332
+01:14:08,719 --> 01:14:15,719
+C'den gittiğinizde D'ye veriyorsunuz, D'den F'ye gidiyorsunuz.
+
+333
+01:14:16,115 --> 01:14:18,115
+B'den G'ye gidiyorsunuz.
+
+334
+01:14:18,115 --> 01:14:28,115
+A'ya döndüğünüzde bütün düğünleri gezmediğiniz için herhangi bir circle oluşturma şansınız olmadığı için buradaki seçenek iptal oluyor.
+
+335
+01:14:28,115 --> 01:14:30,956
+E tarafından ilerlediğinizde E'den D'ye.
+
+336
+01:14:35,188 --> 01:14:38,188
+Bu arada burada ufak bir uzakma yapalım.
+
+337
+01:14:38,188 --> 01:14:42,188
+AB dedik. AB'den şöyle yapalım.
+
+338
+01:14:47,859 --> 01:14:49,859
+AB'de oradan bağlantı yok.
+
+339
+01:14:51,459 --> 01:14:54,459
+A'dan C'ye girelim. C'den B'ye.
+
+340
+01:14:55,459 --> 01:14:57,459
+C'den B'ye gidelim.
+
+341
+01:14:58,659 --> 01:15:01,260
+B'den E'ye girebilirsiniz.
+
+342
+01:15:01,260 --> 01:15:06,260
+B'ye, D'den F'ye girebilirsiniz.
+
+343
+01:15:06,579 --> 01:15:10,000
+Oradan C'ye girebilirsiniz, oradan da A'ya denebilirsiniz.
+
+344
+01:15:10,619 --> 01:15:17,779
+Burada B dilimine uğramadığım için herhangi bir noktada Saygı oluşma ihtimali yok.
+
+345
+01:15:17,779 --> 01:15:31,920
+Ama B, E, D, V, C ve A şeklinde dönerseniz, burada bir Saygı oluştuğunu bulacaksınız.
+
+346
+01:15:33,775 --> 01:15:39,775
+Problemi çözerken, backtracking yardımını ilerleyebiliyorsunuz. Yine StateSpace3'yi oluşturuyorsunuz.
+
+347
+01:15:39,775 --> 01:15:46,775
+WebForSearch yardımıyla hangisinden sonra bir seçenek var, yok cevabını verme şansına sahipsiniz.
+
+348
+01:15:47,380 --> 01:15:56,780
+Örneğin, A'dan C'ye uğradığınızı düşündüğünüzde, aslında B'ye uğramadığınız için teknik olarak oradan devam etme şansınız olmayacaktır.
+
+349
+01:15:57,280 --> 01:16:03,039
+Ve orada bir Hamilton Cycle oluşma ihtimali posta kalkmış olacaktır.
+
+350
+01:16:03,579 --> 01:16:10,300
+Bu konuya da derinlemesine bakarsanız, size yine katkı sağlayabilecek bir konu, backtracking tarafından.
+
+351
+01:16:15,264 --> 01:16:37,264
+Verdiğiniz dersler katılım olarak çok yüksek katında olmadı maalesef. Biz de sizlerin sınıfta olmasını arzu ederdik ama şartlar görevi böyle oldu. Umarım ikinci zaman yüz yüze görüşmek şansımız olur. Derse katını gösteren arkadaşlara teşekkür ediyorum. Daha sonra izleyen arkadaşlara da aynı şekilde.
+
+352
+01:16:37,264 --> 01:16:43,039
+Bu dönem daha hızlı, daha kompakt bir şekilde anlatmaya çalıştık. Çünkü soracağım şeklinde...
+
+353
+01:16:43,039 --> 01:16:55,039
+Çok verimli bitmedi. Sorularınız olursa yine aktarabilirsiniz. Tamamen için hepinize sınavlarınızı başarılı aldı. Evet, sorusu olan vardır.
+
+354
+01:16:57,844 --> 01:17:01,463
+Hocam, tekrar merhabalar. Benim ödevle ilgili bir sorum olacak.
+
+355
+01:17:01,484 --> 01:17:08,543
+Bak, ben sana anons ettim ama sen herhalde o sırada bilgisayar başında değildin. O yüzden bilinmedim benim söylediğime. Şimdi sorabilirsin.
+
+356
+01:17:08,543 --> 01:17:17,984
+Evet hocam, kusura bakmayın. Şey soracaktım hocam, Fuat Hoca, Avesiz sayfasında bir test dosyası paylaştı.
+
+357
+01:17:17,984 --> 01:17:18,484
+Evet.
+
+358
+01:17:19,028 --> 01:17:29,268
+Biz o test dosyasından kimlik numaralarını tek tek alıp, cache'te var mı diye mi kontrol etmemiz bekleniyor, yoksa kullanıcıdan mı kimlik numarası almamız bekleniyor?
+
+359
+01:17:29,807 --> 01:17:41,768
+Dosyadan okuyabilir bir şey, arayüz diyorum, yani kod yazın, hem de kullanıcıdan alabilir kod yazın. Böylece ikisini de kontrol etme şansınız var.
+
+360
+01:17:44,340 --> 01:17:54,819
+Amaç ise elle her seferinde tek tek girmenizi engellemek. Ama dersen ki ben kullanıcıdan almadan her seferinde dosyadan okudan dosyaya elle yazacağım, o da olur.
+
+361
+01:17:56,532 --> 01:17:57,592
+Herhangi bir sürü yok mu?
+
+362
+01:17:57,592 --> 01:17:58,272
+Anladım hocam.
+
+363
+01:17:58,632 --> 01:18:07,172
+Ama bu sorunun tam net cevabını Fuat Hoca'ya yazıp sorarsan o sana net olarak verir çünkü kontrol işlemlerini onlar gerçekleştirecekler.
+
+364
+01:18:07,172 --> 01:18:14,572
+Bu sırada herhangi bir şekilde onların belirlediği bir kuralı da ben göz ardı etmek istemem.
+
+365
+01:18:15,272 --> 01:18:20,712
+Benim önerim, bana sorsaydın, madem dosyadan okunması için size dosya verilmiş.
+
+366
+01:18:21,171 --> 01:18:27,072
+Dosyadan okurup, ama bir değişiklik yapacağımız zaman, yeni numaralar giracağımız zaman da dosyayı da elde değiştirmek diye düşünüyorum.
+
+367
+01:18:29,191 --> 01:18:42,191
+Anladım hocam. Ben şöyle düşünmüştüm. Kullanıcı girdiğinde, cache'i kontrol edip, cache'te yoksa dosyadan kimlik numarasını bulup, cache'e çekme gibi kurmuştum.
+
+368
+01:18:42,731 --> 01:18:47,072
+Şöyle söyleyeyim. Şimdi sıfır başlangıç noktasında cache temiz değil mi?
+
+369
+01:18:48,564 --> 01:18:49,404
+Evet hocam.
+
+370
+01:18:49,764 --> 01:18:53,043
+Tamam. Orada dosyadan ilk gelen kişiyi sisteme ekleyeceğiz değil mi?
+
+371
+01:18:54,043 --> 01:18:54,324
+Evet.
+
+372
+01:18:55,003 --> 01:18:59,064
+Tamam. Orada dosyadan ikinci gelen, üçüncü gelen, dördüncü gelen olarak ekledik.
+
+373
+01:19:02,003 --> 01:19:02,644
+Evet.
+
+374
+01:19:02,644 --> 01:19:07,344
+Orada yenilik tekrar aynı bilgiye yarışmak istediğimiz zaman.
+
+375
+01:19:08,372 --> 01:19:18,372
+O zaman kontrolü yapıp ona göre kaçıncı sırada olduğu bir insanı almamız gerekiyor. Yani keşi boş ve doluyken nasıl çalıştığını da göstermek gerekmiyor mu? Ben mi yanlış anlayamıyorum?
+
+376
+01:19:18,372 --> 01:19:23,372
+Anladım ne demek istediniz hocam. Ben çok...
+
+377
+01:19:23,372 --> 01:19:24,372
+Aha.
+
+378
+01:19:24,979 --> 01:19:32,359
+Ben dosyadan tek tek okuyup da cache'e atmak yerine kullanıcı girsin, cache'te yoksa zaten ilk başta boş.
+
+379
+01:19:32,920 --> 01:19:37,079
+Kullanıcı girdi, cache'te yok, dosyadan git oku, öyle çek.
+
+380
+01:19:37,420 --> 01:19:41,139
+Yani dosyadan okumak yerine kullanıcıdan almıştım kimlik numaralarını.
+
+381
+01:19:41,139 --> 01:19:51,399
+Yani ben şöyle söyleyeyim, bunları gösterdiğimiz sürece sorun yok ama arkadaşlarımız bunları kontrol ederken belirli ve sekansla kontrol etmek istiyorlar.
+
+382
+01:19:51,759 --> 01:19:52,979
+O sorunun cevabını...
+
+383
+01:19:52,979 --> 01:19:55,539
+Asiçin'i sorarsan net sorunca, uygundur değildir diye.
+
+384
+01:19:56,819 --> 01:20:01,079
+Anladım hocam, anladım. Teşekkür ederim. Bir sorum daha olacaktı hocam.
+
+385
+01:20:01,799 --> 01:20:02,059
+Sorum.
+
+386
+01:20:03,239 --> 01:20:06,099
+Finale girmeden bütünlemeye girebiliyor muyuz acaba?
+
+387
+01:20:08,299 --> 01:20:11,459
+Yani bildiğin kadarıyla önünde bir koşul yok.
+
+388
+01:20:12,459 --> 01:20:15,979
+Eğer bir içi koşulunu sağladıysanız, finalden sıfır alırsınız.
+
+389
+01:20:16,859 --> 01:20:20,059
+Sonra hangi notu olursanız, geçemediyseniz.
+
+390
+01:20:20,532 --> 01:20:30,292
+O zaman bütün ele girme hakkı kazanıyorsunuz ama diyelim ki notunuz girmediğiniz için C-B geldi, onu yükseltme şansınız yok.
+
+391
+01:20:31,872 --> 01:20:33,832
+Anladım hocam, teşekkür ederim.
+
+392
+01:20:34,352 --> 01:20:34,832
+Rica ederim.
+
+393
+01:20:36,152 --> 01:20:37,211
+Başka sorusu olan var mı?
+
+394
+01:20:41,300 --> 01:20:44,780
+Peki, o zaman hepinize teşekkür ediyorum. Kendinize iyi bakın.
+
+395
+01:20:45,079 --> 01:20:46,100
+Teşekkürler hocam.
+
+396
+01:20:46,760 --> 01:20:47,340
+Hoşçakalın.
+
+397
+01:20:47,940 --> 01:20:48,819
+İyi günler hocam.
