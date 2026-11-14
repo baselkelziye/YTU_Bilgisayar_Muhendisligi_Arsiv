@@ -1,0 +1,2699 @@
+1
+00:10:43,379 --> 00:10:46,980
+Arkadaşlar, merhabalar. Sesim geliyor mu?
+
+2
+00:10:49,379 --> 00:10:49,980
+Evet.
+
+3
+00:10:51,480 --> 00:10:52,879
+Peki, teşekkürler.
+
+4
+00:10:58,515 --> 00:11:10,515
+Geçen hafta sürekli olasılıklar üzerine konuştuk. Sürekli olasılıklarda...
+
+5
+00:11:15,091 --> 00:11:17,091
+önemli
+
+6
+00:11:20,724 --> 00:11:29,724
+rastgele değişkenler, önemli rastgele dağılımlar, rastgele değişkenlerin dağılımları, olasılık dağılımları üzerine konuştuk.
+
+7
+00:11:36,628 --> 00:11:51,068
+Öncelikle Uniform dağılımdan konuştuk. Sonra Exponential dağılımı, üstsel dağılımı konuştuk. En son Gamma dağılımı hakkında konuşuyorduk.
+
+8
+00:11:51,068 --> 00:12:03,067
+Zaman bitti ve ne yaptık? Dersi ara verdik. Gamma dağılımı...
+
+9
+00:12:04,467 --> 00:12:05,467
+Öğ...
+
+10
+00:12:09,940 --> 00:12:29,940
+Gamma dağılımı yine zaman için kullanılabilir. Ama farklı şeyler için de kullanılabiliyor. Mesela fiziksel değerler için kullanılabiliyor.
+
+11
+00:12:37,172 --> 00:13:04,851
+birden fazla olayın aldığı zamanı esasen modelleyebiliyorsunuz. İki parametresi vardı. İşte lambda ve gamma, alfa pardon. Bu lambda parametresi üstsel dağılımdaki lambda.
+
+12
+00:13:05,844 --> 00:13:30,844
+Alfa da olay sayısı. Üstsel dağılım, bekleme süresi, bir olay için bekleme süresini modelliyor. Gama dağılımı birkaç olay için bekleme süresini, yani alfa tane olay için bekleme süresini modelleyebiliyor.
+
+13
+00:13:34,067 --> 00:13:46,668
+Olasılık yoğunluk fonksiyonunun formülü burada verilmiş. Tabii oldukça karmaşık bir formül. Bunu ezberlemenize gerek yok şu anda.
+
+14
+00:13:53,268 --> 00:14:05,567
+Lambda üzeri alfa bölü, gamma diye bir fonksiyon var. Bölümde gamma fonksiyonu var. O yüzden zaten gamma dağılımı deniliyor sanırım.
+
+15
+00:14:05,567 --> 00:14:20,868
+x üzeri alfa eksi 1, r üzeri eksi lambda x, for x büyüktür, sıfırdır gibi bir karmaşıkça dağılım formülü var, yoğunluk formülü.
+
+16
+00:14:21,683 --> 00:14:28,683
+Gamma fonksiyonu da yine o da biraz yine bir integral ile tanımlanan bir fonksiyon.
+
+17
+00:14:28,683 --> 00:14:44,683
+Gamma fonksiyon, bu alfa değeri normalde gamma dağılımında her türlü işte real sayı ya da integer tam sayı olabiliyor fakat
+
+18
+00:14:46,836 --> 00:14:50,036
+integer olduğunu varsayarsak,
+
+19
+00:14:52,635 --> 00:14:58,516
+gama fonksiyonunun özelliğinden dolayı, gama fonksiyonunun çünkü şöyle bir özelliği var,
+
+20
+00:14:59,576 --> 00:15:02,576
+gama alfa artı bir eşittir, alfa çarpı,
+
+21
+00:15:09,875 --> 00:15:21,635
+Gamma alfa şeklinde bir özelliği var. Bu özellik, integer tam sayılar için düşündüğümüzde direkt faktör yeli hatırlatıyor.
+
+22
+00:15:21,635 --> 00:15:34,115
+Dolayısıyla tam sayı ise alfa, biraz daha gamma dağılımının formülü basitleşmiş oluyor.
+
+23
+00:15:40,851 --> 00:15:44,312
+Burada gama fonksiyonu yerine fakteryal koyabiliyoruz.
+
+24
+00:15:46,731 --> 00:15:56,731
+Bir de, evet, şimdi gama fonksiyonu tabii eğer alfa birse ne oluyor?
+
+25
+00:16:00,812 --> 00:16:07,051
+Geçen ders konuşmuştuk, direkt üstsel dağılımının formülüne dönüşüyor.
+
+26
+00:16:10,100 --> 00:16:11,600
+ve normal dağılımı işlemiyemiz.
+
+27
+00:16:15,283 --> 00:16:17,283
+Buralarda kalmıştık.
+
+28
+00:16:19,283 --> 00:16:21,283
+Gama fonksiyonu ile devam edelim.
+
+29
+00:16:43,508 --> 00:16:55,508
+So, let's think about expected value and variance of gamma distribution. What is the expected value?
+
+30
+00:16:59,860 --> 00:17:02,500
+ve varyans konularını,
+
+31
+00:17:08,819 --> 00:17:36,268
+Bu, bu
+
+32
+00:17:36,339 --> 00:17:52,971
+A gamma random variable is a sum of exponential random variables. So, if let's say,
+
+33
+00:17:57,748 --> 00:18:02,748
+If x is distributed by gamma,
+
+34
+00:18:09,428 --> 00:18:11,428
+ve lambda ve alpha.
+
+35
+00:18:12,628 --> 00:18:13,628
+Then,
+
+36
+00:18:21,236 --> 00:18:25,236
+Bu da alfa alfası.
+
+37
+00:18:26,236 --> 00:18:29,236
+Bu da ilk önce yazar.
+
+38
+00:18:34,963 --> 00:18:45,203
+If x is distributed by gamma alpha, and alpha is an integer,
+
+39
+00:18:50,163 --> 00:19:03,163
+Then, x is the sum of exponential distributions.
+
+40
+00:19:03,163 --> 00:19:15,163
+So, exponential with parameter lambda.
+
+41
+00:19:17,203 --> 00:19:21,203
+artı
+
+42
+00:19:21,203 --> 00:19:23,723
+or
+
+43
+00:19:23,723 --> 00:19:28,163
+sum
+
+44
+00:19:28,163 --> 00:19:29,384
+or plus
+
+45
+00:19:40,559 --> 00:19:56,900
+Or
+
+46
+00:19:39,988 --> 00:20:02,788
+exponential, lambda, how many? We have alpha of these. So x is alpha exponential.
+
+47
+00:20:06,420 --> 00:20:07,300
+lambdas.
+
+48
+00:20:09,480 --> 00:20:10,160
+And
+
+49
+00:20:16,051 --> 00:20:34,451
+Now, if we consider the expected value of both sides, well, what was the expected value of exponential distribution? It was 1 over lambda.
+
+50
+00:20:45,715 --> 00:21:07,715
+We can easily see that expected value of gamma is alpha over lambda. And similarly, varyans of x, if we think about that, well, varyans of exponential distribution is 1 over lambda squared.
+
+51
+00:21:09,523 --> 00:21:16,523
+ve alfa is a constant here, it will get out of the varyans as alfa squared.
+
+52
+00:21:16,523 --> 00:21:18,523
+So,
+
+53
+00:21:22,324 --> 00:21:35,943
+Varyans of x is, varans of gamma is, alpha square divided by lambda square, and expected value of gamma is, alpha over lambda.
+
+54
+00:22:17,875 --> 00:22:23,635
+If you look at the graph of gamma distribution, pdf,
+
+55
+00:22:29,395 --> 00:22:35,056
+Bu, x'in ve f'in
+
+56
+00:22:38,387 --> 00:22:47,067
+Şimdi, bu graph değiştirebilirsiniz.
+
+57
+00:22:47,847 --> 00:22:51,187
+Ve bu graph değiştirebilirsiniz.
+
+58
+00:23:03,635 --> 00:23:10,675
+Bu, bu.
+
+59
+00:23:14,387 --> 00:23:23,107
+And this is when alpha is 1.
+
+60
+00:23:23,107 --> 00:23:35,147
+If alpha is less than 1, the graph is like this.
+
+61
+00:23:46,036 --> 00:23:55,556
+Bu, alpha'a daha fazla.
+
+62
+00:23:58,516 --> 00:24:00,996
+Yani, x'e 0'a,
+
+63
+00:24:03,956 --> 00:24:05,956
+yukarıdaki yukarıdaki.
+
+64
+00:24:13,491 --> 00:24:15,491
+ve density goes to zero.
+
+65
+00:24:15,491 --> 00:24:17,491
+Now,
+
+66
+00:24:19,491 --> 00:24:21,491
+the funny thing happens when
+
+67
+00:24:24,491 --> 00:24:26,491
+alpha is larger than one.
+
+68
+00:24:27,491 --> 00:24:29,491
+When alpha is larger than one,
+
+69
+00:24:42,067 --> 00:24:44,847
+This is when alpha is larger than 1.
+
+70
+00:24:46,347 --> 00:24:48,268
+The graph looks like,
+
+71
+00:24:49,587 --> 00:24:54,988
+it's somehow like this normal distribution somewhat.
+
+72
+00:24:56,008 --> 00:24:58,447
+It looks like normal distribution.
+
+73
+00:24:59,107 --> 00:25:02,407
+So because of this,
+
+74
+00:25:09,940 --> 00:25:31,940
+Gamma distribution has this very different shape, so it can be used for modeling very different things, like in addition to time you can use it for physical quantities, etc.
+
+75
+00:25:38,675 --> 00:25:50,675
+So far, we have talked about graph et cetera, but we didn't talk about how to calculate probabilities.
+
+76
+00:26:01,619 --> 00:26:05,163
+Şimdi, gomot ve normal dağılımı işlemiyaz.
+
+77
+00:26:12,948 --> 00:26:21,788
+İntegrelin pdf'in alfa'ı küçük bir şekilde,
+
+78
+00:26:21,788 --> 00:26:24,588
+bu integralı da kalp.
+
+79
+00:26:47,316 --> 00:26:51,316
+So, how can we calculate probabilities?
+
+80
+00:26:51,316 --> 00:26:52,316
+So,
+
+81
+00:26:58,316 --> 00:27:03,180
+or how can we calculate, what is the CDF?
+
+82
+00:27:06,259 --> 00:27:32,460
+Now, CDF, Cumulative Distribution Function, these two are related to each other because if you know the CDF, you can easily calculate probabilities. Remember that probability of x being between a and b is CDF b minus CDF a.
+
+83
+00:27:33,172 --> 00:27:45,172
+So, unfortunately, the gamma distribution CDF doesn't have an analytic solution.
+
+84
+00:27:51,380 --> 00:27:55,380
+So, you don't have any analytic...
+
+85
+00:27:59,827 --> 00:28:27,755
+Solution for this. And calculating probabilities is kind of problematic. What you can do is numerically these CDFs are calculated. So you can for CDF you can use computer programs that can
+
+86
+00:28:28,596 --> 00:28:31,375
+Analytikli kalkulatı approximations.
+
+87
+00:28:32,375 --> 00:28:33,875
+Use computer
+
+88
+00:28:39,859 --> 00:28:53,859
+Alfa'a alfası kullanılıyor.
+
+89
+00:29:10,963 --> 00:29:13,884
+Bu, bu bir alternatif.
+
+90
+00:30:06,099 --> 00:30:23,980
+So, the thinking here is, we have this Poisson random variable, and the idea is, remember that Poisson was,
+
+91
+00:30:32,211 --> 00:30:59,692
+Poisson had this lambda parameter, and lambda, let's say, is lambda 0 t. And Poisson was, what was it? Number of ray-revens in
+
+92
+00:31:00,948 --> 00:31:01,948
+Given Time
+
+93
+00:31:06,067 --> 00:31:10,067
+ve ne zaman, şimdi, gama ile ilgili.
+
+94
+00:31:22,259 --> 00:31:24,460
+Gamma is the time.
+
+95
+00:31:28,019 --> 00:31:39,019
+Time between rare events, time between...
+
+96
+00:31:44,756 --> 00:31:55,796
+Time between alpha, rare events. Alpha zero, rare events. So as you see, these are related.
+
+97
+00:32:01,652 --> 00:32:03,372
+Y-y-y-y
+
+98
+00:32:17,460 --> 00:32:25,700
+Let's say you are interested in probability of
+
+99
+00:32:34,324 --> 00:32:36,984
+Time being some value t.
+
+100
+00:32:38,984 --> 00:32:40,964
+Some value t.
+
+101
+00:32:45,491 --> 00:32:49,831
+Now, you can, you can...
+
+102
+00:32:54,291 --> 00:32:58,291
+And this lower key is t, is t, by the way.
+
+103
+00:33:02,516 --> 00:33:04,516
+You can think of this as
+
+104
+00:33:12,211 --> 00:33:38,851
+növer of rare events in that time, right, in t time. So, probability of növer of rare events being less than alpha in this t time. So, these two are equivalent.
+
+105
+00:33:39,571 --> 00:34:05,411
+Similarly, probability of time being less than or equal to some t, this will be equal to probability of Poisson random variable having less than or more events than alpha in this given time.
+
+106
+00:34:07,135 --> 00:34:27,135
+Basically, you can use Gamma-Poisson formula for calculating Gamma values because calculating Poisson is easier. Poisson has a nicer equation. You can use that. Let me add some pages.
+
+107
+00:35:01,076 --> 00:35:09,076
+Finally, for calculating probabilities, you can actually take that integral.
+
+108
+00:35:17,684 --> 00:35:20,003
+...for calculating probabilities.
+
+109
+00:35:32,179 --> 00:35:48,179
+We can take that integral. And usually you need to use probably integration by parts.
+
+110
+00:36:07,027 --> 00:36:09,287
+I will stop here about gamma distribution.
+
+111
+00:36:09,527 --> 00:36:10,327
+You can read.
+
+112
+00:36:11,327 --> 00:36:17,667
+I didn't make, I didn't so much examples, but you can look at the book.
+
+113
+00:36:18,027 --> 00:36:19,527
+There are some examples there.
+
+114
+00:36:20,507 --> 00:36:22,007
+Take a look at those examples.
+
+115
+00:36:22,007 --> 00:36:26,467
+I will need to, I will move on now to another distribution.
+
+116
+00:36:33,396 --> 00:36:42,252
+ve yeni bir distribiçinin, bu çok önemli, normal distribiçinin,
+
+117
+00:37:07,507 --> 00:37:11,507
+Normal distribution has two parameters.
+
+118
+00:37:11,507 --> 00:37:15,507
+When x is distributed by
+
+119
+00:37:20,563 --> 00:37:32,783
+malal distribution, we have two parameters. One is mu, one is sigma, and its probability
+
+120
+00:37:32,783 --> 00:37:35,211
+density function is given by...
+
+121
+00:37:40,052 --> 00:37:42,452
+Kovar, sigma,
+
+122
+00:37:45,652 --> 00:38:08,652
+2 pi, 2 pi under square root, e to the minus x minus mu square, divided by 2 sigma square.
+
+123
+00:38:12,211 --> 00:38:35,807
+Bu, bu, denze,
+
+124
+00:38:37,311 --> 00:38:39,311
+Probability Dense, a function of normal distribution.
+
+125
+00:38:39,311 --> 00:38:41,311
+Ve bu, Probability Dense, a function of normal distribution.
+
+126
+00:38:35,807 --> 00:38:36,807
+Evet.
+
+127
+00:38:36,807 --> 00:38:43,807
+You write omega at the normal distribution at the top of it. It's supposed to be sigma, right?
+
+128
+00:38:46,996 --> 00:38:50,996
+Evet, alfa, h, t, v, t, s, m.
+
+129
+00:38:52,556 --> 00:38:53,235
+Teşekkürler.
+
+130
+00:38:59,764 --> 00:39:00,764
+This is Sigma.
+
+131
+00:39:03,884 --> 00:39:04,884
+Thank you.
+
+132
+00:39:14,099 --> 00:39:15,579
+Density graph
+
+133
+00:39:22,452 --> 00:39:24,452
+Bu bir bell şekil.
+
+134
+00:39:37,300 --> 00:39:43,300
+Bu, bu, bu, bir sümmetrik bir graf.
+
+135
+00:39:48,019 --> 00:40:14,827
+ve bu mu
+
+136
+00:40:18,804 --> 00:40:24,804
+So, maybe it can be like this.
+
+137
+00:40:30,963 --> 00:40:49,996
+Bu, bu
+
+138
+00:40:54,643 --> 00:41:09,603
+As sigma gets smaller, all the probability condenses around mu, and as sigma becomes larger, the probability spreads out.
+
+139
+00:41:13,603 --> 00:41:19,683
+And the nice thing about this distribution is,
+
+140
+00:41:21,652 --> 00:41:33,532
+Its expected value is mu, and its variance is,
+
+141
+00:41:38,612 --> 00:41:53,731
+sigmas². And because of that, this parameter sigma is called standard deviation.
+
+142
+00:42:10,324 --> 00:42:17,564
+So, the mean is directly mu and standard deviation is directly sigma.
+
+143
+00:42:35,092 --> 00:42:37,972
+There is a standard version of this.
+
+144
+00:42:37,972 --> 00:42:38,892
+So,
+
+145
+00:42:54,643 --> 00:42:56,643
+Standard Normal Distribution
+
+146
+00:43:01,364 --> 00:43:10,364
+ve normal distribution ve z say, let's call it z. Usually, standard normal distribution is called z.
+
+147
+00:43:13,364 --> 00:43:17,364
+So, if z is distributed by
+
+148
+00:43:20,563 --> 00:43:24,563
+Standard Normal Distribution
+
+149
+00:43:29,268 --> 00:43:34,587
+That means z is distributed by normal distribution.
+
+150
+00:43:38,675 --> 00:43:45,155
+Mu' equals to zero and standard deviation equals to one.
+
+151
+00:43:47,996 --> 00:44:01,155
+So it's just a scaled version of this and if you put these values into the equation what do we get into the equation up here?
+
+152
+00:44:05,715 --> 00:44:31,275
+Mu'yı ısını, 0. So, we have here x minus mu. Instead of that, we will have x squared. And sigma is 1, so divided by sigma squared will be divided by 2. And here, the sigma will be 1. So, what will its dance to be?
+
+153
+00:44:32,692 --> 00:44:34,231
+Fz,
+
+154
+00:44:35,512 --> 00:44:36,351
+will be
+
+155
+00:44:36,351 --> 00:44:38,891
+1 over
+
+156
+00:44:38,891 --> 00:44:40,632
+square root
+
+157
+00:44:40,632 --> 00:44:42,471
+2 pi
+
+158
+00:44:42,471 --> 00:44:44,652
+e2
+
+159
+00:44:44,652 --> 00:44:46,152
+minus
+
+160
+00:44:46,152 --> 00:44:47,711
+z
+
+161
+00:44:51,507 --> 00:44:56,067
+2, this is it, divided by 2.
+
+162
+00:45:03,539 --> 00:45:04,539
+Sorry.
+
+163
+00:45:06,539 --> 00:45:18,443
+So, this is the standard normal version and if you graph it, graph the density, what will it be?
+
+164
+00:45:22,643 --> 00:45:29,724
+We have this bell-shaped, symmetric again.
+
+165
+00:45:33,396 --> 00:45:34,316
+Graph
+
+166
+00:45:42,195 --> 00:45:51,195
+ve mean is 0, ve standard deviation is 1. Sometimes we write it here, this way.
+
+167
+00:45:54,931 --> 00:46:00,931
+Şimdi, normal, normal, normal...
+
+168
+00:46:06,739 --> 00:46:09,739
+non-standard, let's say normal distribution.
+
+169
+00:46:11,939 --> 00:46:13,739
+And this is an important
+
+170
+00:46:17,492 --> 00:46:21,992
+Bu, bu, önemli, önemli, önemli.
+
+171
+00:46:21,992 --> 00:46:29,992
+Eğer, let's say, x is normal distribution,
+
+172
+00:46:34,739 --> 00:46:38,059
+ve mu ve sigma.
+
+173
+00:46:39,340 --> 00:46:39,979
+Now,
+
+174
+00:46:41,059 --> 00:46:42,939
+you can convert this to
+
+175
+00:46:44,259 --> 00:46:45,539
+standard normal.
+
+176
+00:46:51,635 --> 00:46:54,395
+using a very simple idea.
+
+177
+00:46:55,836 --> 00:46:58,536
+First of all, what do we need?
+
+178
+00:46:59,836 --> 00:47:02,416
+We need this mu.
+
+179
+00:47:06,356 --> 00:47:20,556
+If we graph here the density of normal distribution, what will we need?
+
+180
+00:47:28,179 --> 00:47:33,679
+Bu mu'ye kadar 0'ye kadar, değil mi?
+
+181
+00:47:33,679 --> 00:47:36,679
+Bu mu'ye kadar 0'ye kadar.
+
+182
+00:47:41,492 --> 00:48:07,212
+So, how can we do that? We can subtract mu from x. So z is equal to, we will subtract the mean from x, that will move the graph to the center, to the mu equals to zero. This is mu equals to zero. And finally,
+
+183
+00:48:07,987 --> 00:48:16,148
+ve normal dağılımı, bir
+
+184
+00:48:16,148 --> 00:48:39,340
+ve normal dağılımı,
+
+185
+00:48:27,380 --> 00:48:39,340
+Obviously, you can go in the other side. So if you know the standard normal, let's take out x from this equation. x equals to...
+
+186
+00:48:43,739 --> 00:48:47,739
+ve normal dağılımı,
+
+187
+00:48:42,931 --> 00:49:07,692
+Serti, send the sigma to the other side, and then we will send mu to the other side. So it will be mu plus sigma times z. So if we have normal distribution, we can obtain standard normal version of that.
+
+188
+00:49:08,307 --> 00:49:13,307
+bu ekran, ve diğer tarafı ile bu ekran.
+
+189
+00:49:15,307 --> 00:49:22,307
+Şimdi, nasıl yapacağız bu ekran, bu ekran, normal dağılım?
+
+190
+00:49:35,411 --> 00:49:48,811
+Well, unfortunately, the PDF is kind of complicated and the CDF, again, to calculate probabilities, we will need CDF.
+
+191
+00:49:50,811 --> 00:49:56,612
+Unfortunately, again, we don't have any analytic solution for this.
+
+192
+00:50:10,516 --> 00:50:24,456
+And so our options are we can use computer programs and we have these computer programs will do numerical approximations.
+
+193
+00:50:24,456 --> 00:50:29,175
+So use computer programs.
+
+194
+00:50:31,356 --> 00:50:37,456
+And that will give us CDFs and we can then use...
+
+195
+00:50:41,300 --> 00:51:09,228
+Yeni, remember that probability of a being some value, x being between a and b is cumulative b minus cumulative a. So to calculate probabilities, we need cdf. So we can use computer programs or another alternative is, we can use the tables at the end of...
+
+196
+00:51:13,619 --> 00:51:15,619
+Statistics Books
+
+197
+00:51:19,668 --> 00:51:44,588
+Bu da bu
+
+198
+00:51:44,980 --> 00:51:47,300
+Çünkü Mu'yı can be anything.
+
+199
+00:51:50,963 --> 00:51:53,884
+ve sikmaki gibi bir şey var.
+
+200
+00:51:53,884 --> 00:51:58,003
+Bu, sikmaki gibi bir şey var.
+
+201
+00:51:58,003 --> 00:52:03,884
+Bu, sikmaki cdf değerlerden bir şey var.
+
+202
+00:52:03,884 --> 00:52:05,643
+Çünkü bu,
+
+203
+00:52:05,643 --> 00:52:07,764
+bu,
+
+204
+00:52:07,764 --> 00:52:13,884
+sikmaki bilgi yazıları var.
+
+205
+00:52:14,452 --> 00:52:21,252
+standard normal distribution, çünkü standard, at least we know what mu is.
+
+206
+00:52:23,212 --> 00:52:34,852
+For standard distribution, the mean is zero, right? And standard deviation is one. So, what's done is,
+
+207
+00:52:37,612 --> 00:52:42,172
+what is done is, when you use the tables at the end of the book,
+
+208
+00:52:42,804 --> 00:52:50,804
+Daylist, Daylist, CDF,
+
+209
+00:52:55,507 --> 00:53:00,188
+CDF of Standard.
+
+210
+00:53:04,500 --> 00:53:05,260
+normal
+
+211
+00:53:05,260 --> 00:53:07,400
+dissipation.
+
+212
+00:53:14,195 --> 00:53:24,355
+ve if you need non-standard values, you can convert those with this equation here.
+
+213
+00:53:24,355 --> 00:53:31,996
+So you can use this to obtain values.
+
+214
+00:53:37,235 --> 00:53:46,496
+Bu, bu, bu, normal distribution is used a lot.
+
+215
+00:53:46,496 --> 00:53:52,735
+So, CDF of standard normal distribution has its own symbol.
+
+216
+00:53:52,735 --> 00:54:05,228
+So, CDF of standard normal.
+
+217
+00:54:06,835 --> 00:54:08,267
+Dissabition
+
+218
+00:54:11,956 --> 00:54:16,956
+ve aynı zamanda, ve aynı zamanda, Fİ.
+
+219
+00:54:24,947 --> 00:54:45,867
+So, when you see phi, it means you have CDF of standard normal distribution, at least in our course. In other books or in other courses, this can have different symbols, but for our course, we have this.
+
+220
+00:54:52,820 --> 00:54:57,860
+Now, let's look at an example and try to solve it.
+
+221
+00:55:05,523 --> 00:55:06,724
+Hocam bir soru sorabilir miyim?
+
+222
+00:55:06,724 --> 00:55:07,724
+Tabii, buyurun.
+
+223
+00:55:07,724 --> 00:55:13,523
+Yukarıda standart normal distribution'un bir grafiğini çizdik dolayı gelebilir misiniz?
+
+224
+00:55:17,300 --> 00:55:27,539
+Evet, orada hani müe eşit sıfır dedik ya, orası bizim orijinimiz olması gerekmiyor mu? Yani z'nin de sıfır olması gerekmiyor mu orada?
+
+225
+00:55:33,331 --> 00:55:37,831
+Yani tam y eksenine simetri olmayacak mı grafik?
+
+226
+00:55:39,591 --> 00:55:40,591
+Olacak.
+
+227
+00:55:42,591 --> 00:55:52,331
+Şu şeyler, bu eksenler illa da sıfıra sıfırda çizilmek zorunda değildir.
+
+228
+00:55:53,831 --> 00:55:56,331
+İlla da böyle olmak zorunda değil.
+
+229
+00:55:56,331 --> 00:56:01,131
+Yani şurası z eşittir, eksi 10 olabilir.
+
+230
+00:56:01,460 --> 00:56:19,940
+Şurası. O yüzden sanırım şaşırdınız. Orada hani fz diye ok çıkarmışsınız yani orası eksen zannettim o yüzden. Tamamdır hocam, sağ olun. Yani burası haklısınız. Burada z eşittir 0, şurada. Tamamdır.
+
+231
+00:56:29,327 --> 00:56:31,327
+çizmek zorunda değiliz.
+
+232
+00:56:35,603 --> 00:56:41,963
+Burada karışıklık oluşturmasın diye kenara çizdik.
+
+233
+00:56:54,579 --> 00:56:56,579
+Let's look at an example.
+
+234
+00:57:01,108 --> 00:57:17,108
+So, the example is about that average household income in some country. So, we have a country and average...
+
+235
+00:57:21,523 --> 00:57:35,684
+household income in a country is 900 coins.
+
+236
+00:57:41,364 --> 00:57:56,364
+So I'll just write the exact question here. And the standard deviation is 200 coins. So standard deviation is 200 coins.
+
+237
+00:57:59,364 --> 00:58:03,364
+And we assume normal distribution of incomes.
+
+238
+00:58:20,052 --> 00:58:29,252
+Compute the proportion of the middle class whose income is between 600 and 1200 coins.
+
+239
+00:58:29,252 --> 00:58:41,932
+So, compute the income being between 600.
+
+240
+00:58:47,699 --> 00:58:53,099
+ve 1200.
+
+241
+00:58:57,907 --> 00:59:22,747
+Household Income, bir evin geliri diye çevirebiliriz Türkçeye. Bir ülkede diyor, ortalama gelir, ülke bazında 900 coin, neyse coin, 900 para diyelim. Bir oyun gibi bir şey de olabilir bu.
+
+242
+00:59:25,103 --> 00:59:50,783
+Standart sapma, 200 coinmiş ve tabi normal dağılım varsayıyoruz. Bunun neyini istiyor? Orta direk yani 600 ile 1200 coin arası income olanların oranı nedir? Bunu soruyor bize.
+
+243
+00:59:54,867 --> 01:00:02,587
+So, um, what is it ask? What does the question ask? Let's look at it.
+
+244
+01:00:06,643 --> 01:00:15,203
+So, since it says that we have a normal distribution, let's just graph a normal distribution like this.
+
+245
+01:00:15,203 --> 01:00:25,843
+And now, average is 900 coins, so mu is 900.
+
+246
+01:00:27,123 --> 01:00:32,563
+And standard deviation is 200.
+
+247
+01:00:34,228 --> 01:00:39,988
+Ve bu bölümde bu bölümde,
+
+248
+01:00:39,988 --> 01:00:43,019
+bu bölümde,
+
+249
+01:00:52,692 --> 01:00:53,692
+ve,
+
+250
+01:00:55,811 --> 01:01:02,411
+değeri,
+
+251
+01:01:06,867 --> 01:01:20,268
+1200. Ve bu, let's say x. Ve, let's say x is income.
+
+252
+01:01:23,668 --> 01:01:25,668
+Okay, x is the income.
+
+253
+01:01:30,036 --> 01:01:33,036
+Bu da bu da grafiyatı.
+
+254
+01:01:36,884 --> 01:01:41,923
+And we are interested in this probability or this area.
+
+255
+01:01:42,244 --> 01:01:45,204
+You know the area under the curve is probability here.
+
+256
+01:01:47,144 --> 01:01:51,684
+Now, normally we need to do this integration,
+
+257
+01:01:52,043 --> 01:02:00,083
+but the problem with integration is analytically taking that integration is problematic.
+
+258
+01:02:00,083 --> 01:02:02,724
+We cannot take the integration.
+
+259
+01:02:05,139 --> 01:02:26,199
+What we will do is first we will convert this question into standard version and then look at the tables at the end of our book or we can use some computer programs and calculate the probability.
+
+260
+01:02:32,851 --> 01:02:39,532
+standard normal distribution, we have the same or similar graph.
+
+261
+01:02:48,628 --> 01:02:49,324
+Ok.
+
+262
+01:02:55,155 --> 01:03:18,155
+Bu, instead of Mu, we will have 0. We already know this, right? But what are these? Instead of 900, we have 0. What do we have instead of 600? Well...
+
+263
+01:03:18,271 --> 01:03:30,791
+To convert to standard from non-standard, we had this equation z is equal to x minus mu divided by standard deviation.
+
+264
+01:03:30,791 --> 01:03:40,711
+So this would be 600 minus 900 divided by 200.
+
+265
+01:03:42,931 --> 01:03:49,931
+ve bu
+
+266
+01:03:49,931 --> 01:03:51,931
+1200-900
+
+267
+01:03:51,931 --> 01:03:53,931
+divided
+
+268
+01:03:53,931 --> 01:03:54,931
+200
+
+269
+01:03:54,931 --> 01:03:57,931
+ve
+
+270
+01:03:57,931 --> 01:03:59,931
+bu
+
+271
+01:03:59,931 --> 01:04:01,931
+ve
+
+272
+01:04:01,931 --> 01:04:05,995
+bu
+
+273
+01:04:06,387 --> 01:04:14,607
+Bu, 300'e bu, 200'e bu, 1.5'e bu.
+
+274
+01:04:16,087 --> 01:04:25,967
+Ve bu, 300'e bu, 200'e bu, 1.5'e bu, 1.5'e bu.
+
+275
+01:04:30,675 --> 01:04:31,675
+problem
+
+276
+01:04:35,092 --> 01:04:38,952
+Orijinal problem now was, remember,
+
+277
+01:04:38,952 --> 01:04:44,032
+the original problem was the probability of X
+
+278
+01:04:44,032 --> 01:04:49,352
+being between 600 and 1200.
+
+279
+01:04:50,412 --> 01:05:01,352
+It is the probability of Z being between minus 1.5
+
+280
+01:05:02,387 --> 01:05:04,568
+1.5
+
+281
+01:05:04,568 --> 01:05:07,168
+And
+
+282
+01:05:07,168 --> 01:05:08,927
+This
+
+283
+01:05:08,927 --> 01:05:10,248
+Now
+
+284
+01:05:10,248 --> 01:05:13,547
+We will just use
+
+285
+01:05:13,547 --> 01:05:15,467
+Cumulative density
+
+286
+01:05:15,467 --> 01:05:16,467
+So this is
+
+287
+01:05:16,467 --> 01:05:17,608
+Phi
+
+288
+01:05:17,608 --> 01:05:18,648
+Of
+
+289
+01:05:18,648 --> 01:05:20,487
+1.5
+
+290
+01:05:20,487 --> 01:05:22,728
+Minus
+
+291
+01:05:22,728 --> 01:05:23,367
+Phi
+
+292
+01:05:23,367 --> 01:05:24,108
+Of
+
+293
+01:05:24,108 --> 01:05:27,027
+So this is cumulative density
+
+294
+01:05:27,027 --> 01:05:28,748
+Minus 1.5
+
+295
+01:05:31,731 --> 01:05:36,692
+At this point, we can take a look at the values in the book.
+
+296
+01:05:37,572 --> 01:05:47,612
+So if you take a look at, you will see that 0.9332 for 1.5,
+
+297
+01:05:48,731 --> 01:05:51,912
+cumulative value, probability value.
+
+298
+01:05:51,912 --> 01:05:59,072
+And for the other one, you will see 0.066.
+
+299
+01:05:59,699 --> 01:06:04,219
+8. So, we found these values.
+
+300
+01:06:09,300 --> 01:06:10,100
+de tabel
+
+301
+01:06:10,100 --> 01:06:13,020
+at
+
+302
+01:06:13,020 --> 01:06:14,039
+the
+
+303
+01:06:14,039 --> 01:06:16,320
+end of
+
+304
+01:06:16,320 --> 01:06:18,280
+Baron's book.
+
+305
+01:06:19,480 --> 01:06:20,100
+Okay.
+
+306
+01:06:21,000 --> 01:06:21,820
+And then you can
+
+307
+01:06:21,820 --> 01:06:23,640
+find the
+
+308
+01:06:23,640 --> 01:06:25,360
+result.
+
+309
+01:06:34,516 --> 01:06:49,195
+Okay. This is very important. Take note. Standard normal distribution and normal distribution. These things are very important.
+
+310
+01:06:58,132 --> 01:07:09,132
+The example continues. Let's look at that and then we will give a break. So the example says that...
+
+311
+01:07:18,387 --> 01:07:28,827
+The government of the country decides to issue food stamps to the poorest 6% of households.
+
+312
+01:07:28,827 --> 01:07:45,947
+Yani ülkenin hükümeti en fakir yüzde üçüne ailelerin yiyecek etiketi verecek. Dolayısıyla yiyecek dağıtacaklar.
+
+313
+01:07:47,315 --> 01:07:59,315
+Hangi inkam değerinin altındakiler buna hak kazanır? Yani neyi soruyor?
+
+314
+01:07:59,315 --> 01:08:01,315
+İnkamın?
+
+315
+01:08:05,492 --> 01:08:08,992
+Neyi soruyor?
+
+316
+01:08:24,020 --> 01:08:30,740
+Şimdi buraya yazalım. Öncelikle, poorest.
+
+317
+01:08:33,779 --> 01:08:35,779
+3%
+
+318
+01:08:42,387 --> 01:08:43,627
+bilget
+
+319
+01:08:49,076 --> 01:08:50,756
+free food
+
+320
+01:08:57,203 --> 01:08:58,203
+Tickets.
+
+321
+01:08:58,203 --> 01:09:02,203
+Below what income will families receive food stamps?
+
+322
+01:09:31,444 --> 01:09:41,524
+Yani %3'ün nereden başladığını soruyor. En fakir %3 nereden başlıyor.
+
+323
+01:09:41,524 --> 01:09:49,424
+So let's first graph this question. Let's look at the graph.
+
+324
+01:09:59,667 --> 01:10:04,307
+So again, this is the normal distribution.
+
+325
+01:10:04,747 --> 01:10:08,567
+And mean was 900, remember?
+
+326
+01:10:09,527 --> 01:10:12,567
+Now, this is income.
+
+327
+01:10:12,567 --> 01:10:17,107
+So income increases as we go to the right, to the left.
+
+328
+01:10:17,567 --> 01:10:19,067
+We get poorer and poorer.
+
+329
+01:10:19,867 --> 01:10:21,483
+So at some point...
+
+330
+01:10:25,460 --> 01:10:26,940
+Aidea
+
+331
+01:10:31,028 --> 01:10:35,228
+Bu bölümünün 3.0.3.
+
+332
+01:10:37,628 --> 01:10:41,807
+Bu sorunla, bu sorunla?
+
+333
+01:10:43,628 --> 01:10:45,328
+Bu sorunla?
+
+334
+01:10:51,252 --> 01:11:08,992
+And to write it, so we want, so that means the cumulative value of x should be 0.03, right?
+
+335
+01:11:09,912 --> 01:11:11,332
+So what is x?
+
+336
+01:11:15,923 --> 01:11:19,244
+Cumulatif value of x is 0.03.
+
+337
+01:11:21,744 --> 01:11:23,304
+What is x?
+
+338
+01:11:23,844 --> 01:11:25,264
+So this is our question.
+
+339
+01:11:27,344 --> 01:11:28,984
+And now,
+
+340
+01:11:30,004 --> 01:11:34,123
+we can write this in turn this way.
+
+341
+01:11:35,024 --> 01:11:35,824
+X is,
+
+342
+01:11:37,104 --> 01:11:40,264
+sometimes we call it inverse
+
+343
+01:11:40,264 --> 01:11:41,764
+CDF.
+
+344
+01:11:44,884 --> 01:11:47,764
+right? Inverse CDF.
+
+345
+01:11:50,404 --> 01:12:00,804
+It's like you are giving the cumulative distribution and it gives you the x value, right? It's inverse of this f.
+
+346
+01:12:03,043 --> 01:12:05,764
+And now again,
+
+347
+01:12:06,963 --> 01:12:15,064
+What we can do is we can start from standard version and then we can move on to non-standard version.
+
+348
+01:12:16,604 --> 01:12:30,623
+So in the non-standard version, again we have, sorry, in the standard version, we have mu equals to zero and sigma equals to one.
+
+349
+01:12:32,576 --> 01:12:35,015
+There will be a z value
+
+350
+01:12:35,015 --> 01:12:37,136
+which
+
+351
+01:12:41,971 --> 01:12:46,971
+ve Cumülatif Probabiliteliği 0.03.
+
+352
+01:12:46,971 --> 01:13:11,960
+Bu,
+
+353
+01:13:05,427 --> 01:13:32,427
+P of z is 0.03. What is z? Well, z is inverse cumulative of 0.03. And this value you can obtain.
+
+354
+01:13:33,492 --> 01:13:41,492
+...
+
+355
+01:13:47,796 --> 01:13:48,796
+Minus
+
+356
+01:13:53,971 --> 01:13:56,412
+1.88, right?
+
+357
+01:13:56,412 --> 01:14:01,291
+My, my, and you, you found this from the tables.
+
+358
+01:14:20,948 --> 01:14:47,708
+Şimdi, now we can easily convert z, z value, into x, because what was the equation for x, converting x? X was, mu plus sigma z, right? So, the x value we are interested in is,
+
+359
+01:14:48,340 --> 01:15:15,467
+Mu is 900, right? And sigma is 200. And the z-value is minus 1.88, right? And this is 524 coins. So, in this case, we went to, we used
+
+360
+01:15:15,988 --> 01:15:41,036
+Bu, bu
+
+361
+01:15:52,532 --> 01:16:03,532
+Ok, let's have a 10 minutes break. So this is 10.18 in my...
+
+362
+01:16:07,828 --> 01:16:12,828
+Tablet. So let's give a break till 10.30.
+
+363
+01:16:15,828 --> 01:16:17,828
+Hocam, ikinci vize ne zaman olacak acaba?
+
+364
+01:16:20,828 --> 01:16:28,828
+Güzel bir soru. Normalde ikinci vizeler 12. hafta mı oluyor, 13. hafta mı oluyor?
+
+365
+01:16:30,828 --> 01:16:34,828
+Hocam, 12'de yapan da var, 14'te yapan da var galiba.
+
+366
+01:16:35,475 --> 01:16:57,376
+Bugün onu bir diğer hoca, Sırma Hoca ile konuşalım. Bugün size ilan ederiz. En sonunda koşulları fırsatı bulamadık. Bir de geçen hafta da olabilir ona göre. Buyurun.
+
+367
+01:16:57,376 --> 01:16:57,716
+Tamam.
+
+368
+01:16:58,739 --> 01:17:05,239
+Geçen haftaki dersinde hocam, ders kaydını soran arkadaşlar vardı, onu paylaşacak mısınız acaba?
+
+369
+01:17:07,239 --> 01:17:09,739
+Ders kaydını...
+
+370
+01:17:11,539 --> 01:17:13,739
+Tabii paylaşabilirim, sıkıntı yok.
+
+371
+01:17:13,739 --> 01:17:14,739
+Şeyde...
+
+372
+01:17:16,239 --> 01:17:18,739
+Online Yıldız Edi TR'de...
+
+373
+01:17:24,340 --> 01:17:26,220
+giriyorum şimdi.
+
+374
+01:17:55,859 --> 01:17:56,859
+Aksiyomu, kontular...
+
+375
+01:18:08,148 --> 01:18:09,996
+Evet, tanıştık.
+
+376
+01:18:37,460 --> 01:18:40,460
+Kopyalıyorum. Şimdi bunu nereden paylaşacağız?
+
+377
+01:18:45,587 --> 01:18:49,347
+verdiğim dersler, direkt buradan e-mail atılıyordu galiba.
+
+378
+01:18:52,979 --> 01:18:55,779
+e-posta gönder diye bir seçenek var çünkü.
+
+379
+01:18:57,379 --> 01:18:58,979
+Konu diyorum,
+
+380
+01:18:59,739 --> 01:19:01,379
+önceki ders,
+
+381
+01:19:02,179 --> 01:19:04,179
+last lecture,
+
+382
+01:19:06,779 --> 01:19:07,979
+recording.
+
+383
+01:19:20,020 --> 01:19:37,260
+Önceler dedim. OnlineYıldız.e.tr'den bir e-mail gönderdim. Daha doğrusu gönderiyor, çalışıyor sor sistem. Şimdi bir ara verelim, geldiğimizde e-maili alıp almadığınızı söylersiniz arkadaşlar.
+
+384
+01:32:12,435 --> 01:32:15,095
+Tekrar merhabalar arkadaşlar, sesim geliyor mu?
+
+385
+01:32:26,579 --> 01:32:27,579
+Sesiniz geliyor hocam.
+
+386
+01:32:27,579 --> 01:32:32,579
+Peki, teşekkürler. E-mail geldi mi?
+
+387
+01:32:37,524 --> 01:32:41,724
+Geçen dersin linkini gönderdim, online dizeli TRD'de.
+
+388
+01:32:41,724 --> 01:32:43,324
+Geldi hocam.
+
+389
+01:32:43,324 --> 01:32:44,724
+Geldi, tamam.
+
+390
+01:32:54,452 --> 01:32:55,692
+Şimdi,
+
+391
+01:32:57,572 --> 01:33:00,452
+Sentral Limit Teoreme bakacağız.
+
+392
+01:33:05,011 --> 01:33:09,011
+So let's look at Central Limit Teorem.
+
+393
+01:33:23,444 --> 01:33:39,444
+This theorem is very important. It says that when you sum, when...
+
+394
+01:33:44,884 --> 01:33:48,583
+ve ayrıca,
+
+395
+01:33:51,636 --> 01:33:53,636
+Number of
+
+396
+01:33:54,996 --> 01:33:56,996
+Random variables
+
+397
+01:34:05,332 --> 01:34:07,332
+ve distribiçen
+
+398
+01:34:10,739 --> 01:34:14,059
+of the sun
+
+399
+01:34:14,059 --> 01:34:17,440
+is
+
+400
+01:34:17,440 --> 01:34:19,139
+approximately
+
+401
+01:34:24,564 --> 01:34:25,564
+Normal
+
+402
+01:34:35,412 --> 01:34:41,352
+Let's try to write what we wrote in prose using equations or symbols.
+
+403
+01:34:47,667 --> 01:35:10,067
+Consider the sum n and sum is, let's say, s is the sum of some random variables like x1, x2, up to xn. So we have n.
+
+404
+01:35:10,399 --> 01:35:17,291
+ve random variables, ve
+
+405
+01:35:22,612 --> 01:35:34,432
+has expected value, let's say, mu, and their variances, this xi is sigma square.
+
+406
+01:35:46,195 --> 01:36:12,195
+The central limits theorem says that as n goes to infinity, so as, how do we write that? Limit when n goes to infinity, Sn, the distribution of Sn,
+
+407
+01:36:25,171 --> 01:36:28,451
+becomes normal distribution,
+
+408
+01:36:31,331 --> 01:36:35,891
+with mu equals to n times mu.
+
+409
+01:36:37,572 --> 01:36:44,771
+So these mu's can be confused. Let me call this mu zero and sigma zero.
+
+410
+01:36:45,652 --> 01:36:47,971
+And variance
+
+411
+01:36:54,515 --> 01:37:02,135
+equals to variance zero, n times variance zero.
+
+412
+01:37:06,963 --> 01:37:08,011
+ve
+
+413
+01:37:11,988 --> 01:37:14,748
+n'infinitiyiz.
+
+414
+01:37:14,748 --> 01:37:16,387
+So, obviously,
+
+415
+01:37:17,188 --> 01:37:18,468
+when n'infinitiyizliğine
+
+416
+01:37:18,468 --> 01:37:20,648
+we can use this approximation.
+
+417
+01:37:21,448 --> 01:37:21,468
+So,
+
+418
+01:37:25,048 --> 01:37:25,488
+when
+
+419
+01:37:25,488 --> 01:37:28,048
+or if n'infinitiyizliğine
+
+420
+01:37:28,048 --> 01:37:28,468
+is
+
+421
+01:37:28,468 --> 01:37:31,068
+larger than or equal to 30,
+
+422
+01:37:32,807 --> 01:37:33,968
+we can
+
+423
+01:37:33,968 --> 01:37:35,448
+assume
+
+424
+01:37:38,420 --> 01:37:40,420
+n is infinity.
+
+425
+01:37:43,020 --> 01:37:46,020
+So, we can use this approximation.
+
+426
+01:37:53,492 --> 01:37:58,891
+We can use, let me write, we can use central limit theorem.
+
+427
+01:38:00,952 --> 01:38:09,292
+We can use central limit theorem.
+
+428
+01:38:17,363 --> 01:38:21,363
+ve örneklemle bir örnek.
+
+429
+01:38:42,644 --> 01:38:47,684
+I have forgotten to tell that Xi are independent.
+
+430
+01:38:50,324 --> 01:38:53,564
+So let me add this here.
+
+431
+01:38:56,844 --> 01:39:07,364
+Xi, let Xi be independent.
+
+432
+01:39:15,091 --> 01:39:18,091
+...same...
+
+433
+01:39:18,091 --> 01:39:21,091
+...expectation...
+
+434
+01:39:26,484 --> 01:39:27,484
+variyans.
+
+435
+01:39:30,484 --> 01:39:44,484
+So, these x1, x2, et cetera, should be independent, and they should have same expected value and same variyans.
+
+436
+01:39:56,659 --> 01:39:58,659
+Let's look at an example.
+
+437
+01:40:03,699 --> 01:40:09,699
+A disk has free space of 330 megabytes.
+
+438
+01:40:10,699 --> 01:40:12,699
+Let's change this with gigabytes.
+
+439
+01:40:13,699 --> 01:40:28,699
+Is it likely to be sufficient for 300 independent images if each image has an expected size of 1 gigabyte with a standard deviation of 0.5 gigabytes?
+
+440
+01:40:29,684 --> 01:40:33,684
+Evet, bu hard disk,
+
+441
+01:40:34,684 --> 01:40:36,684
+bu computer,
+
+442
+01:40:37,684 --> 01:40:39,684
+ve bu hard disk.
+
+443
+01:40:44,948 --> 01:40:55,508
+ve kapasitliğe bu hard disk, or the empty space in this hard disk is...
+
+444
+01:41:01,395 --> 01:41:05,387
+330 GB.
+
+445
+01:41:11,028 --> 01:41:37,328
+And now let's say we will write a program and the program will crawl the internet and download images from internet or program downloads random images.
+
+446
+01:41:39,923 --> 01:41:47,423
+from a site, let's say, from a website.
+
+447
+01:41:50,524 --> 01:42:06,684
+And the expected size of these images is, so average size, size of,
+
+448
+01:42:06,836 --> 01:42:13,435
+İmizde, is 1GB.
+
+449
+01:42:21,939 --> 01:42:23,539
+Standard deviation
+
+450
+01:42:27,155 --> 01:42:36,515
+ve size of images is 0.5, let's say, gigabytes.
+
+451
+01:42:42,068 --> 01:42:51,068
+ve sorunlu olasılık, 300 ilişkiler.
+
+452
+01:43:09,652 --> 01:43:11,652
+300 images.
+
+453
+01:43:19,731 --> 01:43:45,731
+Okay, so we have, we will download 300 images and if you look at it, average size of images is one gigabyte, so these images can be 300 gigabyte and we see that our empty space is around 300 gigabytes, so it can be enough.
+
+454
+01:43:45,939 --> 01:44:12,491
+Bu, bu
+
+455
+01:44:13,684 --> 01:44:15,684
+İnanılmaz.
+
+456
+01:44:15,684 --> 01:44:16,684
+Evet.
+
+457
+01:44:16,684 --> 01:44:18,684
+Bu sebeple, bu sebeple,
+
+458
+01:44:18,684 --> 01:44:24,684
+bu sebeple,
+
+459
+01:44:29,043 --> 01:44:31,843
+...beim, ...enough.
+
+460
+01:44:33,644 --> 01:44:35,243
+Let's think about that.
+
+461
+01:44:36,043 --> 01:44:38,243
+So, what does that mean?
+
+462
+01:44:40,243 --> 01:44:43,243
+Probabilisiyonu, ...
+
+463
+01:44:43,243 --> 01:44:45,243
+...sum, ...
+
+464
+01:44:45,243 --> 01:44:48,043
+...imaj sizes.
+
+465
+01:44:53,460 --> 01:44:58,460
+olasılık, orta 330GB, değil mi?
+
+466
+01:45:00,460 --> 01:45:11,460
+O, if the image size, sum of these image size is less than or equal to 330GB, that means the space is enough.
+
+467
+01:45:11,460 --> 01:45:19,460
+Now, since, so, what is the sum of images?
+
+468
+01:45:20,595 --> 01:45:22,315
+Sum of images
+
+469
+01:45:26,547 --> 01:45:50,751
+image sizes. Let's call it S300. S300 is sum of the image size for the first image, plus image size for the second image, plus up to
+
+470
+01:45:50,752 --> 01:46:06,752
+image size for the 300 image. So this is the size of first downloaded image.
+
+471
+01:46:10,292 --> 01:46:18,132
+300 adı, 300 adı, 300 adı, 300 adı, 300 adı.
+
+472
+01:46:21,619 --> 01:46:42,260
+300 is larger than or equal to 30. So we can use central limit theorem.
+
+473
+01:46:49,108 --> 01:47:11,347
+And what does the central limit theorem say to us? It says that our sum is approximated by a normal distribution, or sum is distributed by a, approximately distributed by a normal distribution.
+
+474
+01:47:14,579 --> 01:47:41,547
+mean is 300 times these 1 GB, and varianz is 300 times, what is the standard deviation? 1.0.5. So 0.5s.
+
+475
+01:47:42,003 --> 01:47:50,163
+0.5 GB sq.
+
+476
+01:47:54,868 --> 01:47:55,788
+Right?
+
+477
+01:48:08,564 --> 01:48:09,548
+Aşılık,
+
+478
+01:48:17,235 --> 01:48:35,235
+When I was talking about normal distribution, I wrote x is distributed by normal distribution, where mu is some mu zero and sigma is some sigma zero.
+
+479
+01:48:35,235 --> 01:48:42,235
+But here I am using sigma square instead of sigma zero.
+
+480
+01:48:44,467 --> 01:49:08,967
+You can assume that when sigma square is this value, sigma will be square root of it, okay? And it's easier for me to remember this way somehow because I am directly multiplying 300. So the mean is multiplied by 300. The variance is multiplied by 300.
+
+481
+01:49:14,228 --> 01:49:36,387
+Bu, here, instead of this, I said normal distribution with min is mu zero and variance is variance, meaning in this case, variance square root is standard deviation.
+
+482
+01:49:37,587 --> 01:49:40,747
+They are same thing, okay? Don't be confused.
+
+483
+01:49:42,323 --> 01:50:00,603
+So, anyway, so, um, that means, let's continue from here, um, sorry, um, or sum is distributed by a normal distribution.
+
+484
+01:50:04,979 --> 01:50:24,979
+Mu is 300 GB, ve varyansı, 0.25 x 300 GB, ve 75 GB.
+
+485
+01:50:33,555 --> 01:50:39,555
+75GB²
+
+486
+01:50:43,123 --> 01:50:50,123
+Now, the question then is, what is the probability of...
+
+487
+01:50:54,612 --> 01:51:14,811
+S300, being less than or equal to 330. And as we did previously, let's convert this into a standard normal distribution. So to convert to standard normal distribution,
+
+488
+01:51:18,260 --> 01:51:24,260
+ne?
+
+489
+01:51:29,171 --> 01:51:38,651
+Bu, bu, cumulatörü destitivisiyen bir kere.
+
+490
+01:51:38,651 --> 01:51:45,131
+Bu, cumulatörü destitivisiyen bir kere.
+
+491
+01:51:45,131 --> 01:51:48,771
+330 kere.
+
+492
+01:51:48,771 --> 01:51:52,211
+Bu, cumulatörü destitivisiyen bir kere.
+
+493
+01:51:54,804 --> 01:52:02,304
+ve ve standard deviation, yani sq. rüt. 75, evet?
+
+494
+01:52:08,948 --> 01:52:15,148
+So again, this value we will take a look at from the books.
+
+495
+01:52:15,148 --> 01:52:27,028
+And this will be, I will just write from book and that is 0.9997.
+
+496
+01:52:32,595 --> 01:52:45,395
+So we can take a read this from table in the book.
+
+497
+01:52:47,956 --> 01:52:53,835
+Teacher, for the exam should we memorize the tables or will you give us the numbers?
+
+498
+01:52:56,916 --> 01:52:59,216
+Tam anlamadın, Türkçe'ye sorabilir misiniz?
+
+499
+01:52:59,216 --> 01:53:06,236
+Hocam, sınavda bunları bakmak için o tabloları ezberlememiz mi gerekiyor yoksa siz bir şekilde yazacak mısınız?
+
+500
+01:53:06,236 --> 01:53:11,396
+Biz veririz bir şekilde çünkü bunlar çok büyük tablolar, ezberlemeniz zaten mümkün değil.
+
+501
+01:53:14,036 --> 01:53:19,956
+Yani bununla ilgili bir soru sorarsak bir tablo veririz size, o tablodan okumanız gerekir.
+
+502
+01:53:20,536 --> 01:53:22,496
+Yani tabloya basarız.
+
+503
+01:53:23,155 --> 01:53:29,755
+ya da önemli bulabileceğiniz belirli değerleri içeren daha küçük bir tablo veririz.
+
+504
+01:53:30,755 --> 01:53:40,556
+Ama şeyi deneyin, mesela bu örnekleri Baron'un kitabından bulmaya çalışın. O tabloları okumayı bilmeniz gerek.
+
+505
+01:53:43,155 --> 01:53:44,755
+Ağlıklıyorum, sağ olun.
+
+506
+01:53:44,755 --> 01:53:47,155
+Belirli bir tarzı var o tabloların.
+
+507
+01:53:47,315 --> 01:53:57,315
+Mesela 3.46'yı gidip arayın, 0.9997'yi bulun, yani anlayın nasıl bulunduğunu.
+
+508
+01:54:06,420 --> 01:54:15,420
+So, is there any problem up to this point with the central limit theorem?
+
+509
+01:54:24,180 --> 01:54:32,180
+Central Limit Teorem is very important. CLT is very important.
+
+510
+01:54:37,140 --> 01:54:38,819
+Central Limit Örüm.
+
+511
+01:54:44,948 --> 01:54:53,708
+It is very important because we come across to these summations a lot.
+
+512
+01:54:54,427 --> 01:55:04,188
+So remember, in the Sn, we have these summations, x1 plus x2 up to xn.
+
+513
+01:55:04,188 --> 01:55:08,868
+So summation is something used a lot somehow.
+
+514
+01:55:10,836 --> 01:55:35,036
+When we are calculating averages, what is the average of something? Usually when we are calculating averages, what do we do? We sum over some values, right?
+
+515
+01:55:35,988 --> 01:55:39,268
+Some values, so let's say xi.
+
+516
+01:55:40,468 --> 01:55:43,807
+Then divide by number of elements, right?
+
+517
+01:55:44,927 --> 01:55:50,347
+So a lot of averages, these averages,
+
+518
+01:55:50,347 --> 01:55:54,168
+if n is larger than n, 30,
+
+519
+01:55:54,688 --> 01:55:56,568
+we can assume these averages
+
+520
+01:55:56,568 --> 01:55:58,908
+are distributed by normal distribution.
+
+521
+01:56:02,579 --> 01:56:16,460
+Normal if n is large, right? So since the sum is normal, n will be a constant, the constant times normal distribution will be normal itself too.
+
+522
+01:56:16,460 --> 01:56:25,779
+So, and we use averages a lot in computations.
+
+523
+01:56:26,420 --> 01:56:30,420
+Central Limit Teorem'i kullanılan çok.
+
+524
+01:56:36,916 --> 01:57:02,476
+And another important thing is, central limit theorem is very important, because, one, because we use sums of averages a lot.
+
+525
+01:57:09,203 --> 01:57:15,068
+Second,
+
+526
+01:57:18,771 --> 01:57:25,351
+Bazen de diğer distribisyenler var.
+
+527
+01:57:25,351 --> 01:57:28,532
+Eksimle binomial random variable.
+
+528
+01:57:33,076 --> 01:57:39,735
+random variable is sum of Bernoulli random variable.
+
+529
+01:57:44,340 --> 01:57:58,340
+ve today, we saw that gamma distribution was, gamma random variable was, what was it? Sum of? Exponential, right?
+
+530
+01:58:07,091 --> 01:58:16,091
+There is also one called negative binomials. Did we see negative binomials in this course?
+
+531
+01:58:24,212 --> 01:58:27,012
+Negatif binomyalı gördük mü bu derste?
+
+532
+01:58:34,195 --> 01:58:35,195
+Gördük hocam.
+
+533
+01:58:35,195 --> 01:58:52,195
+Evet. O da geometrik random variable toplaması. Binomial random variable, gamma random variable, negative binomial random variable, these are all some of these Bernolde exponential like geometric random variables.
+
+534
+01:59:03,444 --> 01:59:06,220
+ve kanı
+
+535
+01:59:10,323 --> 01:59:16,563
+this with normal random variable.
+
+536
+01:59:20,532 --> 01:59:23,291
+n is large.
+
+537
+01:59:25,871 --> 01:59:26,471
+Right?
+
+538
+01:59:26,811 --> 01:59:31,711
+So if we are summing a lot of, so alpha, for example, in gamma random variable,
+
+539
+01:59:32,791 --> 01:59:40,971
+if alpha is larger than or equal to 30, instead of gamma random variable, we can just use normal random variable.
+
+540
+01:59:49,332 --> 01:59:52,271
+Bu, bu, yine çok çok ilginç.
+
+541
+01:59:53,672 --> 01:59:56,891
+Let's look at an example of that.
+
+542
+01:59:56,891 --> 02:00:05,112
+So, for example, let's look at approximating binomial distribution.
+
+543
+02:00:31,123 --> 02:00:39,123
+Normal approximation to binomial distribution. Remember that binomial distribution
+
+544
+02:00:43,444 --> 02:01:11,084
+Bu, bu
+
+545
+02:01:11,380 --> 02:01:13,036
+So, what was the...
+
+546
+02:01:16,627 --> 02:01:24,987
+Probabilisiyonu X'in binomial distribution.
+
+547
+02:01:27,307 --> 02:01:38,647
+N choose X, P to the X, 1 minus P to the N minus X.
+
+548
+02:01:39,407 --> 02:01:42,247
+So binomial was given this way.
+
+549
+02:01:42,836 --> 02:02:09,836
+ve bir problem with this is this n choose, right? What is n choose as x? n factorial divided by x factorial times n minus x factorial. Now, if n is large, if n is large, this calculation,
+
+550
+02:02:10,771 --> 02:02:21,211
+Bu, bir şey değil, çünkü, bir şey değil, 3,000!
+
+551
+02:02:21,211 --> 02:02:31,451
+Evet, bu, bir şey değil, bu, bir şey değil.
+
+552
+02:02:31,988 --> 02:02:54,988
+But again, the other side can be too much. For example, what if x is very large too? So what is, we have like, something like this, very large factorials. If n is large, this is hard to compute.
+
+553
+02:02:59,796 --> 02:03:27,276
+Right? But what we can do is, well, we can approximate this. Sorry. If n is large, we can assume that,
+
+554
+02:03:33,555 --> 02:03:59,615
+X, sorry, X is distributed by normal distribution. And again, when we say normal distribution, normal distribution has parameter mu and sigma, or sometimes I use varians, either of them. It's similar. So what are these values? You have to write these values.
+
+555
+02:04:00,500 --> 02:04:27,500
+But for binomial distribution, it was easy to, we already know what these are, so the mean is just n times p, right? And what is the variance of binomial distribution? Expected value of binomial distribution is n times p. Variance of x was,
+
+556
+02:04:30,355 --> 02:04:34,555
+n times p times 1 minus p, right?
+
+557
+02:04:37,115 --> 02:04:39,996
+So, that means...
+
+558
+02:05:00,404 --> 02:05:06,404
+That means we can just use this variance directly. So, variance.
+
+559
+02:05:11,380 --> 02:05:17,180
+is n times p times 1 minus p.
+
+560
+02:05:17,180 --> 02:05:18,480
+Okay?
+
+561
+02:05:26,003 --> 02:05:32,943
+Şimdi, bu konuda birçok sorunu yapabilirsiniz.
+
+562
+02:05:32,943 --> 02:05:36,943
+Bu çok güzel değil, değil mi?
+
+563
+02:05:36,943 --> 02:05:41,943
+Çünkü, bu konuda birçok sorunu alınır.
+
+564
+02:05:41,943 --> 02:05:45,943
+Ve bu konuda bakmalı alınır.
+
+565
+02:05:45,943 --> 02:05:49,564
+Bu konuda bu konuda,
+
+566
+02:05:53,344 --> 02:05:59,344
+But also for gamma distribution and negative binomial distribution too.
+
+567
+02:06:01,344 --> 02:06:02,344
+Okay?
+
+568
+02:06:17,108 --> 02:06:22,108
+And is there any questions up to this point?
+
+569
+02:06:37,876 --> 02:06:48,916
+Okay. One thing that we need to be careful about doing these approximations is called continuity correction.
+
+570
+02:07:07,796 --> 02:07:10,796
+Bu nedenle, bu nedenle,
+
+571
+02:07:23,123 --> 02:07:26,380
+ve
+
+572
+02:07:31,091 --> 02:07:34,651
+ve continuuslu
+
+573
+02:07:44,372 --> 02:07:56,971
+As an example, we can be approximating binomials using normal.
+
+574
+02:07:59,112 --> 02:08:01,851
+For example, normal approximation.
+
+575
+02:08:06,579 --> 02:08:08,460
+binomiyiz.
+
+576
+02:08:13,844 --> 02:08:16,723
+ve problem is,
+
+577
+02:08:21,523 --> 02:08:24,403
+the discrete distributions have these points,
+
+578
+02:08:26,243 --> 02:08:29,043
+the probability is at these points,
+
+579
+02:08:30,243 --> 02:08:32,804
+but in continuous distributions,
+
+580
+02:08:34,003 --> 02:08:36,643
+the points has zero probability,
+
+581
+02:08:39,443 --> 02:08:40,443
+so,
+
+582
+02:08:44,500 --> 02:09:09,500
+Let's graph, let's think on a graph, for example. Let's say we have this distribution, and let's say this is, let's say, probability mass function. Okay. And let's say x is binomial distribution.
+
+583
+02:09:12,115 --> 02:09:17,576
+Ve yi'ye normal approximation, normal distribution, let's say.
+
+584
+02:09:19,536 --> 02:09:19,755
+Okay.
+
+585
+02:09:21,195 --> 02:09:28,195
+Now, the binomial distribution probabilities are like this.
+
+586
+02:09:35,891 --> 02:09:41,891
+So, for each point you have a...
+
+587
+02:09:48,500 --> 02:09:52,220
+Yeni bu sebeple.
+
+588
+02:09:52,539 --> 02:09:54,300
+Bu sebeple.
+
+589
+02:10:00,000 --> 02:10:04,000
+Now consider normal distribution.
+
+590
+02:10:06,239 --> 02:10:20,000
+And I will write the normal distribution on the same graph, but I will put its axis somewhere else. So let's say I am putting the...
+
+591
+02:10:26,579 --> 02:10:52,492
+y'e y
+
+592
+02:10:53,171 --> 02:11:05,171
+The problem is, let's say this is some value, x is some value, right? Probability of x.
+
+593
+02:11:09,203 --> 02:11:34,203
+What is it? Now we are doing an approximation, so we need to look at the normal distribution, right? But probability of y, the corresponding y, is 0 in normal distribution, because it's continuous.
+
+594
+02:11:44,020 --> 02:12:01,980
+Bu, in this case, x, we will need to give, assume that x is a range for continuous distribution, and x will be this.
+
+595
+02:12:05,971 --> 02:12:07,652
+X'i bu şekilde,
+
+596
+02:12:12,756 --> 02:12:38,636
+X will be represented by this area in continuous distribution. And what is the boundary of this area? On this side we have x plus 1 over 2, and on this side we have x minus 1 over 2, right? Assuming...
+
+597
+02:12:40,243 --> 02:12:47,179
+Bu, bu
+
+598
+02:12:55,252 --> 02:13:01,372
+When we are calculating probability of X, let me add some pages,
+
+599
+02:13:15,028 --> 02:13:38,528
+Probabiliteliğe, x we will say, is approximately the probability of y being between x minus 1 over 2 and x plus 1 over 2.
+
+600
+02:13:40,115 --> 02:13:47,235
+ve bu, binomiyon, or discrete distribution, let's say.
+
+601
+02:13:50,356 --> 02:13:52,996
+ve bu, continuous distribution.
+
+602
+02:13:59,699 --> 02:14:23,243
+Bu, bu
+
+603
+02:14:26,963 --> 02:14:31,804
+So, let's say, example, let's say, example.
+
+604
+02:14:37,332 --> 02:14:46,332
+Let's say, what is the probability of x being less than or equal to...
+
+605
+02:14:46,332 --> 02:14:48,332
+Sorry.
+
+606
+02:14:56,532 --> 02:15:02,411
+X being less than or equal to some value x, let's say.
+
+607
+02:15:07,532 --> 02:15:08,371
+Now,
+
+608
+02:15:16,180 --> 02:15:32,239
+If we say that this is equal to approximately probability of y being less than or equal to y, this will be wrong.
+
+609
+02:15:40,948 --> 02:15:51,547
+We have to consider continuity correction, right? So again, let's think on the graph.
+
+610
+02:16:02,260 --> 02:16:04,260
+ve say, bu dağılım, x.
+
+611
+02:16:06,159 --> 02:16:09,760
+Now, in the continuous
+
+612
+02:16:12,520 --> 02:16:13,520
+distribution,
+
+613
+02:16:14,659 --> 02:16:15,659
+let's say this is
+
+614
+02:16:18,020 --> 02:16:24,060
+x minus 1, and let's say this is x plus 2, x plus 1, sorry.
+
+615
+02:16:25,819 --> 02:16:27,819
+Now, in the continuous distribution,
+
+616
+02:16:28,800 --> 02:16:29,920
+x is
+
+617
+02:16:30,207 --> 02:16:32,011
+bu bölümde.
+
+618
+02:16:35,540 --> 02:16:36,540
+Evet.
+
+619
+02:16:36,540 --> 02:16:38,540
+Bu,
+
+620
+02:16:38,540 --> 02:16:45,804
+bu,
+
+621
+02:16:51,123 --> 02:16:53,804
+Ekranınız karardı mı arkadaşlar birden?
+
+622
+02:16:56,083 --> 02:16:57,763
+Hayır hocam, görebiliyoruz.
+
+623
+02:16:58,644 --> 02:17:05,203
+Benim ekran karardı. Şarj sanırım azaldı bunun şarjı bağlı yayında.
+
+624
+02:19:02,515 --> 02:19:18,595
+So, we need to consider this continuity correction and we will say probability of x being less than or equal to x will be approximate to y being
+
+625
+02:19:22,899 --> 02:19:34,180
+less than or equal to x plus 1 over 2, right? What is this? x plus 1 over 2.
+
+626
+02:19:37,716 --> 02:19:40,524
+ve here, it should have been x.
+
+627
+02:19:48,979 --> 02:20:15,180
+So, we need to consider this continued correction. The x starts up there, right? And now, finally, what about this? As another example, let's say, let's say probability of x.
+
+628
+02:20:17,504 --> 02:20:36,504
+bu,
+
+629
+02:20:17,268 --> 02:20:27,268
+3'e
+
+630
+02:20:27,268 --> 02:20:35,268
+ve 5'e
+
+631
+02:20:35,268 --> 02:20:39,268
+Evet.
+
+632
+02:20:43,476 --> 02:21:07,852
+Bu ne?
+
+633
+02:21:08,659 --> 02:21:12,979
+Bu, 3, 4, 5, let's say.
+
+634
+02:21:14,500 --> 02:21:30,220
+And now, when we say 3 now, 3 starts in continuous distributions from 2.5 and goes up to 3.5, right?
+
+635
+02:21:30,220 --> 02:21:31,100
+So,
+
+636
+02:21:31,700 --> 02:21:41,500
+X is larger than 3. So, which one I should use? Which one should I use? 2.5 or 3.5?
+
+637
+02:21:44,500 --> 02:21:45,500
+3.4?
+
+638
+02:21:45,500 --> 02:21:58,659
+Yes. So, we will say y should be greater than 3.5. And on the other side, 5.
+
+639
+02:21:59,443 --> 02:22:26,324
+4.5 to 5.5, ve equal or larger. So, which one should I take? 4.5 or 5.5? I should take 5.5, right? Because equal or larger. If this was, for example, less than, what would I do?
+
+640
+02:22:27,572 --> 02:22:53,531
+less than, if this was less than, then I would use 4.5, right? Less than 5. Because 5 starts from here and ends in here, right? So less than 5 means 4.5. But less than or equal to 5 will mean 5.5. Okay?
+
+641
+02:22:54,579 --> 02:22:58,667
+Bu, bu
+
+642
+02:23:02,291 --> 02:23:05,291
+Any questions about continuity correction?
+
+643
+02:23:12,115 --> 02:23:22,195
+Notice that we use this only when approximating a discrete distribution with a continuous distribution.
+
+644
+02:23:23,076 --> 02:23:29,976
+So if we need continued correction, for example, here in gamma.
+
+645
+02:23:31,615 --> 02:23:37,736
+When we, for example, we are approximating gamma with normal distribution.
+
+646
+02:23:37,956 --> 02:23:38,695
+Do we need it?
+
+647
+02:23:45,172 --> 02:24:01,972
+We don't need it because gamma is a continuous distribution too. So when you approximate a continuous distribution with another continuous distribution, no need to use this continued, what is it called?
+
+648
+02:24:08,180 --> 02:24:26,239
+korrektör. You don't need to use discontinuity korrektör. So let me add here as another example. X is, let's say, gamma.
+
+649
+02:24:29,876 --> 02:24:54,195
+Y is, again, let's say normal, and probability of X being, let's say, 3 and 5 is approximately probability of Y being, what?
+
+650
+02:24:56,628 --> 02:25:04,128
+No, we don't need any continuity correction, so we will directly use 3 and 5. 3, 5.
+
+651
+02:25:04,628 --> 02:25:06,948
+Can I ask something about the previous example?
+
+652
+02:25:07,528 --> 02:25:08,087
+Yes, sure.
+
+653
+02:25:08,308 --> 02:25:18,188
+We said it should be greater than 3, so we choose 3.5. Then if it should be GLOBE or EQUEL 5, should we use 4.5?
+
+654
+02:25:18,747 --> 02:25:20,587
+Yes, yes, that's true.
+
+655
+02:25:21,396 --> 02:25:24,516
+Okay, you wrote 5.5, so I got just confused.
+
+656
+02:25:27,636 --> 02:25:44,476
+Yeah, so let me write it here. Probability of, let's say, 3x being between 3 and less than 5, let's say. What will it be?
+
+657
+02:25:45,652 --> 02:26:08,688
+Bu y'e
+
+658
+02:26:08,688 --> 02:26:16,488
+5 is between 4.5 and 5.5, so y should be less than 4.5.
+
+659
+02:26:16,488 --> 02:26:19,648
+Okay.
+
+660
+02:26:20,368 --> 02:26:24,368
+Yeah, and in this case, with the gamma distribution,
+
+661
+02:26:26,247 --> 02:26:36,128
+we directly use the values because we don't need to use
+
+662
+02:26:38,995 --> 02:26:43,995
+Continuity Correction.
+
+663
+02:26:46,995 --> 02:26:55,915
+Because gamma and normal, both distributions are, are continuous.
+
+664
+02:27:11,092 --> 02:27:22,452
+Evet, bugünkü dersimi burada bitireceğim. Bu şekilde bu çepteri bitirmiş oluyoruz, sürekli dağılımları bitirmiş oluyoruz.
+
+665
+02:27:25,731 --> 02:27:32,372
+Dolayısıyla sürekli dağılımla ilgili sorulara çalışabilirsiniz.
+
+666
+02:27:36,531 --> 02:27:37,531
+Sağol hocam.
+
+667
+02:27:37,531 --> 02:28:02,531
+Evet, chapter 4. Gelecek haftaya sınavınız olabilir. Onun için hazırlıklı olun. Bugün, yarın size bir mail ile gelecek haftaya sınavınızın olup olmadığını iletiriz. Gelecek haftaya olmazsa bir sonraki haftaya.
+
+668
+02:28:02,656 --> 02:28:16,156
+%99 olur. Dolayısıyla, gelecek haftaya sınavınız olursa, dördüncü çaptır, baştan itibaren dördüncü çaptır şeklinde düşünebilirsiniz.
+
+669
+02:28:16,156 --> 02:28:26,156
+Tabii ağırlık birinci vizede sorulmayan kısımdan olabilir. Oradan soru gelmez demiyorum da, tabii olarak hani…
+
+670
+02:28:26,772 --> 02:28:34,092
+İki vize arasında işlediğimiz konu veya birinci vizede sormadığımız kısım sorulabilir.
+
+671
+02:28:39,507 --> 02:28:41,507
+Tamam mı arkadaşlar?
+
+672
+02:28:41,507 --> 02:28:43,507
+Tamamdır hocam.
+
+673
+02:28:43,507 --> 02:28:47,435
+Peki, başka bir soru yoksa kapatıyorum.
+
+674
+02:28:50,548 --> 02:28:52,548
+Peki, iyi günler arkadaşlar.
+
+675
+02:28:52,548 --> 02:28:54,347
+İyi günler hocam.
