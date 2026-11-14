@@ -1,0 +1,3247 @@
+1
+00:08:55,508 --> 00:08:56,848
+Kendinize de olmanın bu daş.
+
+2
+00:09:03,187 --> 00:09:27,227
+Merhaba hocam. Nasılsınız? İyiyiz hocam, teşekkürler. Siz nasılsınız? Ben de iyiyim. Sunumlarımıza başlayalım mı yavaş yavaş? Kim var kim sunabilir? Şöyle de o bizim listeye göre baştan sona doğru yavaş yavaş gitmeye çalışalım.
+
+3
+00:09:40,340 --> 00:09:43,500
+[öğrenci] burada mısın? Buradayım hocam.
+
+4
+00:09:44,160 --> 00:09:47,519
+İnanılacak mısın? Sınavı ile başlayayım hocam.
+
+5
+00:10:02,196 --> 00:10:09,995
+Sunum başına 10 dakika dedik. Onu hatırımızda tutalım. Çok vakfeyiz.
+
+6
+00:10:11,436 --> 00:10:19,816
+Benim sunacağım makalenin adı Highway in the Turks. Sirvastava, Gref ve Schmidt-Über tarafından yayınlanmış.
+
+7
+00:10:22,456 --> 00:10:27,628
+İlk başta derin ağlar son derece...
+
+8
+00:10:27,635 --> 00:10:45,235
+Fazla gelişime yol açtı. Bu gelişimlerin en başında ağ derinliği önemli rol oynamış. Sadece ağ derinliğini arttırarak, ImageNet'te 84'ten 95'e performans yükseltilmiş.
+
+9
+00:10:47,935 --> 00:10:50,235
+Bu makalenin problemi ise...
+
+10
+00:10:51,059 --> 00:11:18,179
+Derin ağların katmanları arttıkça, derinleştikçe onların optimizasyonu daha da zorlaşıyor. Bunları bu ağları optimize etmek için yeni yeni araştırmalar yapılmış. Mesela Gül-Oğut başlatma yöntemi. Yeni başlatma yöntemleri üretilmeye çalışmış. Veya bu ağların eğitimi sürecini farklı aşamalara bölmeye çalışmışlar.
+
+11
+00:11:21,779 --> 00:11:34,259
+Highway Inner Turk'te ise bu yeni mimariyle fazla derinlikteki ağların optimizasyonunu daha kolay olmasını sağlıyor.
+
+12
+00:11:35,740 --> 00:11:40,539
+Bunu başarmak için de LSTM'deki öğrenilebilir geçit mekanizmasını kullanmışlar.
+
+13
+00:11:48,659 --> 00:11:56,519
+Hangi bilgilerin daha ileri iletileceğini, hangilerinin de blok edileceğini seçmesini sağlamışlar bu mekanizmayla.
+
+14
+00:11:57,839 --> 00:12:07,299
+Bu mekanizmayla bu bilgilerin katmanlarda zayıflamadan iletilebileceği yolları oluşturmaya çalışmışlar.
+
+15
+00:12:07,299 --> 00:12:13,959
+Yani Gradient Vanishing diye bir problem var. O problemi engellemeye çalışmışlar.
+
+16
+00:12:16,820 --> 00:12:42,560
+Bu yollara bilgi otoyolları, yani Information Highway istemişler. Bu ağın ismi de Highway Network istemişler. Bu ağın bir katmanın mimarisi iki tane geçitten oluşuyor. Biri dönüşüm geçidi. Bu geçit bilginin ne kadarını dönüştürüleceğine kadar verir. Yani sıfırla bir arasında bir değer verir.
+
+17
+00:12:43,316 --> 00:12:47,536
+Eğer sıfır ise hiç dönüştürmeyecek. Bir ise tamamen dönüştürecek.
+
+18
+00:12:49,475 --> 00:13:06,196
+İkinci taşıma geçiri ise bu sıfırla bir arasındaki değerin geri kalanı ile o girdiğinin ne kadar kısmının değişmeden iletileceğini kontrol eder.
+
+19
+00:13:06,196 --> 00:13:08,576
+Yani bu geçitler birbirini tamamlar.
+
+20
+00:13:11,731 --> 00:13:16,851
+Bu geçitler sonra bu katmanda birleşir.
+
+21
+00:13:18,211 --> 00:13:23,312
+Bu karışım oranıyla tabii ne kadar gir... Bu karışım oranıyla birleşirler.
+
+22
+00:13:26,052 --> 00:13:32,531
+Tabii bu katmanların düzgün çalışması için belli bir giriş ve çıkış boyutları var.
+
+23
+00:13:32,971 --> 00:13:35,572
+Mesela convolution neural networks gibi.
+
+24
+00:13:38,035 --> 00:13:52,935
+Boyüte uygun olması için Zero Padding ya da Subsambling yapılabilir. Ya da ekstra bir sonuna veya başına ekstra katmanlar eklenebilir. Normal bir katman eklenir. Bu katmanlarla boyutu değiştirerek normal bir şekilde devam edilebilir.
+
+25
+00:13:56,500 --> 00:14:09,899
+Bu ağların eğitimini düzgün şekilde yapmak için LSTM'deki gibi ağırlıkları eksi bir veya eksi üç değerlerine başlatılabilirler.
+
+26
+00:14:13,039 --> 00:14:17,620
+Bu ağları test etmek için belli optimizasyon deneyleri yapmışlar.
+
+27
+00:14:23,155 --> 00:14:36,715
+Mimarisini kullanarak yaptıkları 10, 20, 50 ve 100 katman kullanılarak iki mimaride de, Fitnes ve Highway mimarilerinde de ağlar oluşturmuşlar.
+
+28
+00:14:37,195 --> 00:14:48,535
+M-List veri setini kullanmışlar test için. Highway ağlarında 50 hidden unit kullanmışlar katman başına. Normal ağlarda da 71 tane hidden unit kullanmışlar.
+
+29
+00:14:49,299 --> 00:14:59,359
+Ve bu grafiğe göre ilk başta 10 katmanlı ağda normal ağların daha iyi performans gösterdiğini görmüşler.
+
+30
+00:14:59,359 --> 00:15:09,759
+Ama ağın katmanın seviyesi arttıkça highway networkler çok daha iyi bir başarı gösterdiğini görmüşler.
+
+31
+00:15:12,628 --> 00:15:17,628
+Başarı seviyesi azalıyor ama Hivey belli bir seviyede sabit kalıyor.
+
+32
+00:15:20,567 --> 00:15:30,048
+Burada da belli katmandaki ağların isabet başarı değerlerini görebiliyoruz.
+
+33
+00:15:30,048 --> 00:15:35,867
+1 ve 2'de 11 ve 19 katmanlı ağlar var.
+
+34
+00:15:36,851 --> 00:15:41,971
+19 katmanda açık ara Highway Network daha başarılı gözüküyor.
+
+35
+00:15:42,491 --> 00:15:50,412
+Highway 3 ve 4'te de daha ince ve daha derin ağların yapılabileceğini göstermişler.
+
+36
+00:15:51,192 --> 00:15:58,351
+Gördüğünüz üzere bu ağların parametreleri diğer ağlardan çok daha düşük.
+
+37
+00:16:00,412 --> 00:16:02,411
+Bu gösterde ise
+
+38
+00:16:02,899 --> 00:16:21,000
+Bu Highway Network'lerin iç yapısını görebiliyoruz. En soldaki sütunda bu ağların Transform Gate Bias'larına görebiliyoruz. Bias değerleri nasıl ilerlediğini görebiliyoruz.
+
+39
+00:16:30,035 --> 00:16:35,115
+Eğitim verisletindeki ortalamalarını görebiliyoruz.
+
+40
+00:16:35,115 --> 00:16:39,915
+Bu grafiklerde X ne, Y ne, renk ne?
+
+41
+00:16:41,955 --> 00:16:47,955
+X katmandaki bloklara göre değerleri.
+
+42
+00:16:49,375 --> 00:16:50,415
+Yani bu çıktılar bunlar.
+
+43
+00:16:51,075 --> 00:16:54,215
+Bu renklere göre çıktıların değeri belirleniyor.
+
+44
+00:16:54,836 --> 00:17:01,596
+Block değeri ise hangi block olduğunu gösteriyor. Y değeri ise hangi katmanda olduğunu gösteriyor.
+
+45
+00:17:04,076 --> 00:17:14,956
+Üçüncü sütümde ise TransformGate çıktılarının ortalaması almak yerine rastgele bir örnek seçilerek yaptığını gösteriyor.
+
+46
+00:17:15,988 --> 00:17:22,388
+Son stüdyumda ise block outlutlar yani komple bloğun çıktısını gösteriyor.
+
+47
+00:17:22,388 --> 00:17:34,188
+Ve bu gösterlerde yazarların bahsettiği gibi bir otoyollar sanki otoyollar oluştuğunu görebiliyoruz.
+
+48
+00:17:34,708 --> 00:17:41,288
+Bilgi katmanlarda ilerledikçe değişmeden ilerlediklerini görebiliyoruz.
+
+49
+00:17:43,955 --> 00:17:47,076
+Sonuna, ağın sonuna kadar ilerleyebiliyor.
+
+50
+00:17:49,895 --> 00:17:59,155
+Ve sonuca bakarsak bu highway networkler ile daha derin ağlarının çok daha kolay eğitilebildiğini görebiliyoruz.
+
+51
+00:17:59,875 --> 00:18:01,755
+Özel eğitim teknikleri gerektirmiyor.
+
+52
+00:18:02,835 --> 00:18:05,743
+Çok daha az parametre ile daha normal...
+
+53
+00:18:05,743 --> 00:18:08,284
+Geleneksel ağlara göre daha iyi sonuçlar alınabiliyor.
+
+54
+00:18:08,903 --> 00:18:11,723
+Ve daha kısa sürede eğitilebiliyor bu ağlar.
+
+55
+00:18:13,243 --> 00:18:13,543
+Bu kadar.
+
+56
+00:18:47,028 --> 00:18:49,516
+Visualization.
+
+57
+00:18:55,796 --> 00:19:04,296
+Certain internals of the blocks in the past 50 hidden layers.
+
+58
+00:19:07,443 --> 00:19:11,443
+İndi BES 50 hidden layer, Hire Networks.
+
+59
+00:19:13,443 --> 00:19:18,443
+Trained on MNIST and SLEEPR 100,
+
+60
+00:19:19,443 --> 00:19:26,347
+the first hidden layer is a plain layer which changes the dimension out of the representation to 50.
+
+61
+00:19:30,420 --> 00:19:54,900
+Each of the 49 highway layers y-axis consists of 50 blocks. Block ne ya? Block ne? Block her hidden unit hocam. Her hidden unit. Ne? Hidden unit. Yani her bir... Hidden unit. Evet.
+
+62
+00:19:56,980 --> 00:19:58,980
+Yani her bir nörandi biliriz.
+
+63
+00:19:58,980 --> 00:19:59,980
+Evet.
+
+64
+00:19:59,980 --> 00:20:04,980
+Bir kolonun şansı bu transform gate beasis.
+
+65
+00:20:08,596 --> 00:20:14,596
+İçerideki, 2. Kullanımın bir kumlandı bir kumlandı.
+
+66
+00:20:25,523 --> 00:20:27,323
+Atördünün Furt, Colunus.
+
+67
+00:20:32,596 --> 00:20:33,836
+Ahtı, ahtı, ahtı.
+
+68
+00:20:56,756 --> 00:21:10,916
+Buranın eksi 2 ile eksi 6 arasında olması maviler daha büyük değerler. Ha yok. Eksi 2 daha büyüktür mü? Eksi 6'ya kadar.
+
+69
+00:21:29,875 --> 00:21:43,135
+Peki ne bu? Bahsettiği Gate'in Highway, matematiksel olarak Highway Gate dediği şey ne? Şu mu?
+
+70
+00:21:53,268 --> 00:21:57,907
+Farklı bir katman yapısı sunmuşlar. Bu iki gate'i birleştirerek.
+
+71
+00:22:33,779 --> 00:22:36,160
+Yani 2010'lu yılları da değil mi o?
+
+72
+00:22:37,019 --> 00:22:37,519
+2015.
+
+73
+00:23:03,092 --> 00:23:06,012
+Rezzetleri benzer bir mimar sormuşlar hocam.
+
+74
+00:23:07,512 --> 00:23:09,972
+Atlatmak yerine burada katman içinde yapmışlar.
+
+75
+00:23:51,412 --> 00:23:58,932
+İki tane daha şey T ve C'yi ekliyorlar değil mi?
+
+76
+00:23:59,492 --> 00:23:59,791
+Evet.
+
+77
+00:24:01,291 --> 00:24:04,432
+T, transform, gait, C, ker, gait.
+
+78
+00:24:33,811 --> 00:24:42,351
+Yani ne oluyor? Şu, neden, şu bunları getirmeleri neden böyle bir etkiye sebep oluyor?
+
+79
+00:24:48,115 --> 00:24:52,976
+Tx'in ve Cx'in ne olduğunu söylememişlerler.
+
+80
+00:24:56,435 --> 00:24:57,675
+Ne? Ne? Ne?
+
+81
+00:25:04,660 --> 00:25:06,500
+Örhangi olan lineörtransform.
+
+82
+00:25:11,731 --> 00:25:25,951
+Şu girişe bağlı. Direkt. Yani girişi direkt çıktığına bağlayan orada bir şey var. Onu mu demek istiyorlar acaba?
+
+83
+00:25:31,028 --> 00:25:35,768
+Gülto galiba direkt çıktığı verdiği için istemişler.
+
+84
+00:26:09,044 --> 00:26:13,664
+Peki, teşekkür ediyorum.
+
+85
+00:26:21,140 --> 00:26:39,059
+Sıradan kim alalım? Kim vardı sırada? [öğrenci], sen buralarda mısın? Merhaba hocam, sesim geliyor mu? Geliyor. Ben sunabilirim hocam. Tamam, sen sun.
+
+86
+00:26:46,036 --> 00:26:46,855
+Görüntü var mı hocam?
+
+87
+00:26:47,115 --> 00:26:47,736
+Görünebiliyor muyum?
+
+88
+00:26:51,731 --> 00:26:52,715
+Evet.
+
+89
+00:26:56,372 --> 00:27:03,572
+Benim sunacağım makale Recurrent Networks'lerin görselleştirilmesi ve anlaşılması üzerine yazılmış olan bir makale.
+
+90
+00:27:05,112 --> 00:27:12,452
+Şimdi 23 slide'ım var herhalde ama ona göre atlasam mı bazılarını ne yapsam?
+
+91
+00:27:12,472 --> 00:27:16,412
+Hocam çok hızlı bir şekilde hepsini bir iki cümleyle ifade edip hızlıca geçeceğim.
+
+92
+00:27:17,132 --> 00:27:18,172
+Teknede başlamak.
+
+93
+00:27:19,092 --> 00:27:33,331
+Çalışmanın özeti, tekrarlayan sinir ağlarını ve elesteyen modellerini yorumlanabilir bir test ortamında irdeleyerek uzun vadeli bağımlılıkların nasıl yakaladığını görselleştirecek.
+
+94
+00:27:34,612 --> 00:27:42,032
+Birkaç farklı analizle diğer modellerle kıyaslayacak. O şekilde devam ediyor çalışma.
+
+95
+00:27:43,332 --> 00:27:50,632
+RNM ve LSTM incelemesine sağlamış olduğu katkılar gerçek dünya. Bu 2016 yılına ait bir makale.
+
+96
+00:27:50,632 --> 00:28:00,632
+Bu yüzden gerçek dünya verilerindeki tahminlerini ve öğrenilen temsillerini deneysel olarak geçmeden ilk çalışmalardan biri bu.
+
+97
+00:28:01,587 --> 00:28:19,648
+Evet, devam edeyim hocam bu kısımdan. Burada arenenin temel yapısı görünmektedir şu şekilde. Burada ise elestiyemin çıkmasına aslında sebep olan gradiyan problemi somut bir örnekle ifade edilmektedir.
+
+98
+00:28:20,548 --> 00:28:28,148
+Gradiyan sönümlenerek bir noktadan sonra yok oluyor. Bu elestiyemin çıkmasına olanak sağlıyor.
+
+99
+00:28:29,748 --> 00:28:54,407
+LSTM, kapılarla kontrol edilen bir cell state üzerinden bilgiyi doğrudan aktararak aslında gradiyanın kaybolmamasını mümkün kılıyor. LSTM'e dair en açıklayıcı ifade aslında, LSTM'in yapısındaki kapılar sigmoid ve tanheç fonksiyonlarıyla doğrusal olmayan bir bilgi temsilini korurken bilginin doğrusal taşınmasını sağlıyor.
+
+100
+00:28:57,748 --> 00:29:02,827
+Toplama işlemiyle birleştiriliyor. Burada LSDM'in yapısı görülmekte.
+
+101
+00:29:03,796 --> 00:29:31,456
+Şu kısımda unutma kapısı var. Bu uzun vadeli hafızadaki hangi bilgilerin korunacağını ve hangilerinin unutulacağını belirleyen kapı. Şu kısımda girdi kapısı var. Yeni bilginin uzun vadeli hafızaya, uzun vadeli hafıza burada yer alan hafıza nasıl ekleneceğini belirliyor. Çıkış kapısı ise kısa vadeli hafızayı kontrol ediyor şu kısımdaki hafıza. Hangi bilginin bir sonraki zaman adımında aktarılacağını belirliyor.
+
+102
+00:29:31,796 --> 00:29:35,316
+Şu kısımda ise bir sonraki zaman adımını arttırılıyor.
+
+103
+00:29:36,155 --> 00:29:43,936
+Çalışmada kullanılan veri setleri Tolstoy'un Savaşı ve Barış romanından alınan bir veri seti.
+
+104
+00:29:43,936 --> 00:29:50,936
+Diğer veri seti ise Linux kernel kodlarının birleştirilmesiyle elde edilmiş bir veri seti.
+
+105
+00:29:52,147 --> 00:30:17,567
+Bu çalışmadaki modellerin değişiklikleri katman sayısı ve gizli durum boyutlarına göre değişiklik göstermekte. Bu tabloda ise iki veri setine göre yapılmış olan tahminlerin hatalarını görmekteyiz farklı modellere göre. En iyi sonuçlar iki ve üç katmanlı LSTM ve GRO modelleriyle elde edilmiş.
+
+106
+00:30:18,291 --> 00:30:34,351
+Genel olarak iki veya daha fazla katmana sahip modellerin genellikle daha iyi performans gösterdiği görülmüş ve LSCM ve GRU modelleri uzun maddeli bağımlılıkları daha iyi yakalayarak ARN'lere göre belirgin bir üstünlük sağlamaktadır.
+
+107
+00:30:35,988 --> 00:30:46,248
+Burada yapılan tahminlerin TSN'ye çıktısı görülmekte. Karaktere atanan olasılıklarla birbirine ne kadar benzediğini görselleştirmek için bu analiz yapılmış.
+
+108
+00:30:47,548 --> 00:30:53,688
+Genellikle LSM ve GRU modelleri birbirine benzer tahminlerde bulunurken RNM modelleri ayrı bir kimi oluşturmuş.
+
+109
+00:30:53,688 --> 00:30:55,748
+Burada görüldüğü üzere.
+
+110
+00:30:58,163 --> 00:31:12,704
+Bu kısımda LSTM'in iç işleyişine dair analizler yapılmış. LSTM'in belleği, hücre aktivasyonları ve kapı mekanizmaları incelerek uzun vadeli bağımlılıkların nasıl öğrendiği araştırılmış ve bulgular görselleştirilmiş.
+
+111
+00:31:13,907 --> 00:31:26,387
+Örneğin bir hücre açıkça bir satır uzunluğu sayacı görmekteyken başka hücreler iç tırnak işaretlerini, if ifadelerini, iç dizeleri gibi farklı görevler üstlenmektedir.
+
+112
+00:31:30,612 --> 00:31:56,912
+Şurada görselliği daha net göreceğiz. Ancak özellikle 100. karakterden sonra gradiyan sinyalinin kesilmesiyle uzun vadeli bağımlılıklar, aktivasyon azalmaya başlıyor, yakalanmamaya başlıyor. Burada onu görmekteyiz. Yani satırın sonlarına doğru gradiyan sinyalinin azalmasıyla aktivasyon azalıyor. Yani genelde hafızada kalan kısım maviyle ifade edilen kısım oluyor.
+
+113
+00:31:58,420 --> 00:32:06,620
+Ancak bu satır düzeyinde böyle. Bir hücre bununla ilgilenirken diğer hücre tırnak içindeki ifadeleri yakalıyor.
+
+114
+00:32:06,960 --> 00:32:12,000
+Yani tırnak içindeki ifadelerin yakalanmasında yüz karakteri aşabiliyor.
+
+115
+00:32:12,320 --> 00:32:17,120
+Gradyen sinyalinin kesilmemesi. Çünkü tırnağın kapanmasını bekliyor. Bir hücrenin görevi bu.
+
+116
+00:32:17,120 --> 00:32:19,720
+O yüzden daha uzun sürebiliyor.
+
+117
+00:32:20,723 --> 00:32:39,243
+Burada ise if ifadelerini üstlenen hücrenin görselleştirmesini görüyoruz. If ifadelerinin içindeki ifadelerde gradiyan sinyali, gradiyan aktivasyonu yüksek kaldığı için bu kısımlar yakalanabiliyor. Bu hücrenin görevi bu.
+
+118
+00:32:39,243 --> 00:32:48,723
+Burada ise kolay açıklanamayan, yani bazı özel karakterler ve niçin yanlış yapıldığına dair pek yorumlama içerisinde...
+
+119
+00:32:48,723 --> 00:33:02,943
+Bu kısımda aynı şekilde yorum satırları ve tırnak içindeki ifadeler için görselleştirilmiş hücrenin aktivasyon istatistikleri.
+
+120
+00:33:04,564 --> 00:33:07,104
+Bunlar gradiyanın gücü mü? Mavi?
+
+121
+00:33:07,864 --> 00:33:13,403
+Evet, evet hocam. Şu şekilde. Mesela en belirgin aslında, en kolay anlaşılabilir şurada.
+
+122
+00:33:13,855 --> 00:33:30,615
+Gradiyan aktivasyonu, yani bir sonraki karakterin bir sonraki adıma taşınma aktivasyonunu gösteriyor. Yani unutma kapısı bu noktalarda yüksek aktivasyon veriyor. Ancak satırın sonlarına doğru gradiyan sinyali biraz kesilerek bu kısımlarda artık bağlam kopmaya başlıyor.
+
+123
+00:33:32,736 --> 00:33:33,955
+Böyle bir isteyen değil mi?
+
+124
+00:33:33,955 --> 00:33:35,516
+Evet, evet hocam.
+
+125
+00:33:36,596 --> 00:33:54,016
+Yani en belirgin olarak burada görünüyor. Çünkü kademili olarak bir azalma var. Burada ise tırnak içindeki ifadeler yakalanıyor. Yani bir hücrenin görevi tırnağı takip etmek sadece. O yüzden yüz karakteri aşabiliyor şeyin yakalanması.
+
+126
+00:33:58,387 --> 00:34:20,608
+Burada ise kapı aktivasyon istatistikleri var. Bu biraz karmaşık bir grafik olduğu için ben nasıl yorumlanması gerektiğini böyle kısaca ifade etmeye çalıştım. Unutma kapısında, yani bu kapıda yüksek bir sol doygunluk, yani grafiğin sola yaslanmış olması, bellekteki bilgiyi büyük ölçüde unutma eğiliminde olduğunu gösteriyor.
+
+127
+00:34:21,043 --> 00:34:37,543
+Ve bu grafiğe bakarak bizim çalışmanın dikkat çekici bulgularından bir tanesi sağ doymuş unutma kapılarının yani şu tarafa doğru eğilim gösteren daireler görüyoruz.
+
+128
+00:34:44,628 --> 00:34:59,248
+Fazlalığını ifade ediyor aslında. Yani elestiyama sadece ileri beslemeli şekilde değil, bir sonraki katmana entegratör olarak işlev görecek şekilde hücrelerin çoğunlukta olduğunu gösteriyor aslında.
+
+129
+00:35:00,828 --> 00:35:02,108
+Burada ise geri katmanı.
+
+130
+00:35:02,108 --> 00:35:04,968
+Anlamadım şimdi ben. Ne vardı bu grafikte?
+
+131
+00:35:04,968 --> 00:35:08,968
+Hemen anlatayım hocam. Şu mesela...
+
+132
+00:35:09,556 --> 00:35:10,556
+Bu kısımda...
+
+133
+00:35:10,556 --> 00:35:13,556
+İçsinin gerisine, renklerle...
+
+134
+00:35:14,815 --> 00:35:30,496
+Hemen söylüyorum hocam. O biraz karmı... Açıklaması biraz zor. Ben de çok uzun süre şey yaparak anladım. Şu grafikler daireler LSM katmanındaki hücreleri gösteriyor.
+
+135
+00:35:31,496 --> 00:35:34,195
+Bu bir nöron mu yani?
+
+136
+00:35:34,483 --> 00:35:52,743
+Evet hocam, öyle söylenebilir. Bir tane hücreyi gösteriyor. Tam olarak nöron aslında. Ama bu kelime sayısı ve veri sayısına bağlı olmak üzere 600 tane değer içerebilir. Bu aslında ortalama bir değer.
+
+137
+00:35:53,396 --> 00:36:19,155
+Bunun tam olarak ifade ettiği şey aslında şu hocam. Eğer ki sola yaslanmış olursa grafik, unutma kapısı daha düşük bir aktivasyon vermiştir. Yani unutmaya daha eğilimlidir A. Yani sola yaslanmış bir şekilde olursa A bir sonraki katmana daha az bağlam gönderecek.
+
+138
+00:36:21,396 --> 00:36:34,756
+Sağa doğru eğilimli ise bu bir sonraki katmana daha fazla bilgi gönderecek. Yani bağlama anlamında daha fazla katkı sağlayacak demek oluyor.
+
+139
+00:36:35,635 --> 00:36:57,235
+Bu grafikte ise, burada aslında şunu görebiliriz hocam. İlk katman yeşil olanlar, ikinci katmanlar mavi olanlar, üçüncü katmanlar kırmızı olanlar. Yani katman arttıkça bağlam daha fazla korunmaya başlıyor. Yani burada ilk katmanın sola çarpık olması bunu ifade ediyor.
+
+140
+00:36:58,579 --> 00:37:06,579
+A, unutmaya daha eğilimli. A, ilk katmanlarda unutmaya daha eğilimli olduğu anlamına geliyor. Sola çarpık olması.
+
+141
+00:37:06,920 --> 00:37:10,500
+Peki, devam et. 10 saniye mi var? 10 dakikaya bitirmeye.
+
+142
+00:37:11,220 --> 00:37:16,199
+Hemen devam edeyim hocam. Daha önemli kısımlardan bahsedeyim.
+
+143
+00:37:16,724 --> 00:37:44,724
+Burada ise her bir karakter için doğru tahmin olasılıkları görünmekte. 20 gram sinir ağıyla LSTM'i kıyaslıyor burada. LSTM özel karakterlerde daha fazla başarı gösteriyor. Ancak genel karakterlerde, yani alfabeye ait genelde karakterlerde 20 gram modeli başarı gösteriyor. Ancak bağlamı koruyamıyor 20 gram modeli. Yani en fazla 20 karakter.
+
+144
+00:37:44,724 --> 00:38:10,724
+Karakterle sınırlı bir model. Burada ise 20 karakterden sonra 20 gram modeliyle LSTM modelini kıyaslıyor. 20 karakter sonra süslü parantezi 20 gram modeli yakalayamıyor. Çünkü bağlamı ancak 20 karakterle sınırlı. O 20 karakterden sonra düşük bir noktada sabitleniyor 20 gram modeli. Ancak LSTM modeli...
+
+145
+00:38:11,539 --> 00:38:16,180
+Başarısını yüksek mesafelere rağmen koruyabiliyor.
+
+146
+00:38:21,480 --> 00:38:34,100
+Hata analiz kısmında ise çalışma hataların kategorilere ayırıyor ve yüzde kaçının hangi hata türünden olduğunu ifade eden bir grafik bu.
+
+147
+00:38:36,083 --> 00:39:01,663
+Engram, bilimleri son dokuz karaktere kadar bakarak yapabileceği hataları temsil ediyor. Dinamik en uzun bellek, daha önce karşılaşılan bir dizinin sonraki tekrarında yapılan hatanın düzeltilmesiyle onarılabilen hataları ifade ediyor.
+
+148
+00:39:03,188 --> 00:39:14,408
+Seyrek kelimeler eğitimde 0 ile 5 arasında görüldüğü için aslında hata yapıldığını söylüyor ve bu hataları ifade ediyor.
+
+149
+00:39:15,408 --> 00:39:23,048
+Yeni bir kelimenin ilk karakterinde yapılan hataları ortadan kaldırıyor.
+
+150
+00:39:23,148 --> 00:39:28,328
+Örneğin bir kelimenin başındaki harf tahmin etmek genellikle geri kalanı tahmin etmekten daha zor.
+
+151
+00:39:28,328 --> 00:39:30,248
+O yüzden bu aslında.
+
+152
+00:39:30,867 --> 00:39:31,707
+Efendim hocam?
+
+153
+00:39:31,827 --> 00:39:33,528
+Evet. Bitirelim istersen.
+
+154
+00:39:34,268 --> 00:39:36,108
+Hocam, sona doğru geleyim o zaman.
+
+155
+00:39:37,167 --> 00:39:46,648
+Burada ise hatalara ait örnekler görülmekte. Bu görselleştirme olduğu için bunu özellikle göstermek istedim hocam.
+
+156
+00:39:48,851 --> 00:40:04,291
+Mesela 3-3, 3'ten daha az tekrarlandığı için eğitimde bu kelimelerin hata verdiğini ifade ediyor. Noktalama işaretlerine dair hatalar.
+
+157
+00:40:05,108 --> 00:40:25,928
+Hata grafiklerinden elde edilen sonuçlar, elestiyemler engram ile düzeltilebilecek kısa süreli bağımlılıkları tam olarak modelleyememiştir aslında. Çünkü modeller büyüdükçe engram hatalarının azalması aslında bunu ifade ediyor.
+
+158
+00:40:26,579 --> 00:40:49,840
+Sonuç olarak bu çalışma daha önceki çalışmalara nazara LSTM Recon Networks'lerin uzun vadeli bağımlılıkları nasıl yakaladığını görselleştirerek anlatan bir çalışma olmuş. Bu anlamda daha önce yapılan çalışmalardan ayrışmaktadır. Bu şekilde hocam.
+
+159
+00:40:53,300 --> 00:40:54,260
+Teşekkür ederim.
+
+160
+00:41:23,860 --> 00:41:27,060
+Saturation Plots for an LSTM.
+
+161
+00:41:32,083 --> 00:41:37,403
+Each circle is a gate in the LSTM.
+
+162
+00:42:06,804 --> 00:42:12,444
+Yeniç circle is a gate in the LSTM. Gate ne ki ya?
+
+163
+00:42:13,564 --> 00:42:23,923
+Gate, hocam LSTM yapısındaki o unutma kapıları vardı ya, unutma giriş kapıları. O kapıların istatistiklerine dayanan bir grafik aslında bu.
+
+164
+00:42:23,923 --> 00:42:33,144
+And its position is determined by the fraction of time it is left or right saturated.
+
+165
+00:42:34,036 --> 00:42:37,376
+Left Saturate ne demek? Right Saturate ne demek?
+
+166
+00:42:37,815 --> 00:42:42,096
+Şu şekilde hocam. Left Saturate şu demek oluyor.
+
+167
+00:42:42,867 --> 00:43:04,507
+Yani orada unutma kapısı için, her bir kapı için farklı şeyler ifade ediyor sağ doygunluk ve sol doygunluk oranı. Ancak unutma kapısı üzerinden, şu ilk grafik üzerinden anlatacak olursam, sola doygun olması, sola doğru left satürat değerinin yüksek olması şunu ifade ediyor.
+
+168
+00:43:10,867 --> 00:43:26,228
+Yani o sola doğru yaslanmış olması grafiğin aslında onu ifade ediyor. Bağlamı bir sonraki katmana aktarmıyor. Sağa doğru eğilimli olması da o kadar aktardığını gösteriyor.
+
+169
+00:43:52,019 --> 00:44:13,460
+Looking at the distributions of saturation regimes in the networks where we define a gate left or right saturated if its action is less than 0.1 or more than 0.9.
+
+170
+00:44:15,827 --> 00:44:19,987
+Yani aktivasyonu 0.1'den küçükse left saturated diyor.
+
+171
+00:44:20,047 --> 00:44:35,827
+Evet hocam, 0.1'den küçükse left saturated. Çünkü bu değer unutmaya, bağlamı sıfırlamaya meyilli bir değerdir. Yani aktivasyondan çıkan 0.1'den daha küçük bir değer. Bağlamı neredeyse işte o oranda sıfırlayan bir değer olduğu için...
+
+172
+00:44:37,300 --> 00:44:59,300
+We then compute the fraction of times that each LSTM gate spends left or right saturated. Fraction of times and plot the results in figure 3. For instance, the number of often right saturated forget gates is particularly interesting.
+
+173
+00:44:59,443 --> 00:45:05,443
+Bu, bu, celsi'nin ve celsi'nin değerleri hatırlatıyor.
+
+174
+00:45:38,068 --> 00:45:44,387
+Hocam aslında bir elestiyem yapısı üzerinden bunu anlatmam daha kolay olabilir.
+
+175
+00:45:46,448 --> 00:45:48,288
+Anlatacaktın o zaman o şekilde.
+
+176
+00:45:51,528 --> 00:45:53,508
+Hakkını kaybettin yani.
+
+177
+00:45:53,948 --> 00:45:55,748
+Şu şekilde girmek istemedim hocam.
+
+178
+00:45:55,768 --> 00:45:58,048
+Güzel bir şekilde bize anlatacaktın.
+
+179
+00:45:58,547 --> 00:46:11,547
+Anladım. Aslında şu yüzden girmek istemedim hocam. Teorik olarak biraz açıklanması uzun sürebilirdi. Sadece 10 dakikam olduğu için biraz nasıl yorumlanması gerektiğine dair...
+
+180
+00:46:13,364 --> 00:46:35,003
+Birkaç ipucu vererek devam etmek istedim. Onu açıklamam biraz uzun sürebilirdi. Çünkü ben bakarak, bayağı zorlanarak açıkçası anladım onu. Onu açıklamam çok uzun vakit alabilir diye sadece grafiğin nasıl yorumlanması gerektiğine dair birkaç ipucuyla onu yorumlamak istedim.
+
+181
+00:46:55,443 --> 00:46:59,743
+Peki, bir sonraki sunuma geçelim. Teşekkür ediyorum.
+
+182
+00:47:00,903 --> 00:47:02,104
+Ben teşekkür ederim hocam.
+
+183
+00:47:08,500 --> 00:47:11,260
+[öğrenci], burada mısın sen?
+
+184
+00:47:21,588 --> 00:47:22,748
+[öğrenci].
+
+185
+00:47:25,188 --> 00:47:26,988
+Buradayım hocam, başlayayım isterseniz.
+
+186
+00:47:28,088 --> 00:47:28,608
+Başla.
+
+187
+00:47:38,099 --> 00:47:47,899
+Hangi yılda? 2016 yılında Toral Bağ ünlü bir hoca.
+
+188
+00:47:50,619 --> 00:47:51,920
+Evet hocam.
+
+189
+00:47:52,619 --> 00:47:58,739
+Learning Deep Features for Discriminative Localization. Neden seçtik bunu biliyor musun?
+
+190
+00:47:59,559 --> 00:48:00,159
+Yok hocam.
+
+191
+00:48:00,819 --> 00:48:03,139
+Peki. Anlat bakalım.
+
+192
+00:48:04,659 --> 00:48:19,559
+Hocam, öncelikle sizlere makalenin konusuyla başlamak istedim. Makalenin konusu aslında sınıflandırma için eğitilmiş derin öğrenme modelinin özellikle CNN için nesne yerleştirme yeteneğini geliştirmek ve görselleştirmeye odaklanıyor makale.
+
+193
+00:48:32,659 --> 00:49:00,659
+Bu nesnenin belirgin bölgeleri,
+
+194
+00:49:00,659 --> 00:49:16,659
+Sınıf etiketi üzerinden tahmin etme yeteneğini ifade ediyor makale. Yetenek aslında elle işaretlenmiş bir bonding box kutu şeyi olmadan, anotasyonu olmadan nesneyi yer yerleştirme, işte lokalizasyon görevini gerçekleştirmeye mümkün kılıyor.
+
+195
+00:49:16,659 --> 00:49:27,659
+Bu yaklaşımda da şunu ele alıyor. Zayıf denetimli nesne yerleştirme görevlerinde yüksek doğruluk sağladığını ve diğer...
+
+196
+00:49:29,907 --> 00:49:30,827
+Ben duyuyor musun?
+
+197
+00:49:30,847 --> 00:49:31,207
+Efendim hocam.
+
+198
+00:49:31,587 --> 00:49:32,427
+Duyabiliyorum hocam.
+
+199
+00:49:32,788 --> 00:49:33,028
+Tamam.
+
+200
+00:49:33,627 --> 00:49:35,568
+Zayıf denetimli ne demek?
+
+201
+00:49:36,528 --> 00:49:50,447
+Zayıf denetimli hocam aslında içerisinde nesne yerleştirmenin başarılı bir şekilde belirlemesi için sınırlı bir denetimle, sınırlı bir etiketle yerleştirmenin yapıldığı problemler.
+
+202
+00:49:53,447 --> 00:49:57,307
+Tam konum bilgisi bilinmiyor ya da ayrıntılı olarak anotasyon olmayan.
+
+203
+00:50:00,467 --> 00:50:01,487
+Devam edeyim mi?
+
+204
+00:50:03,028 --> 00:50:06,867
+Yani, şimdi eğitimde mi şey yok?
+
+205
+00:50:09,047 --> 00:50:10,068
+Veride hocam.
+
+206
+00:50:10,087 --> 00:50:14,788
+Makaleyi bulmaya çalışıyorum da o yüzden biraz kesik geliyorum, kusura bakmayın.
+
+207
+00:50:17,947 --> 00:50:19,847
+Ne yapıyor bu? Don't say.
+
+208
+00:50:21,172 --> 00:50:34,011
+Yani zayıf denetimli nesne yerleştirme bir modelin sınıf etiketli gibi sınırlı denetimle eğitilmesine rağmen, yani görüntüdeki nesnelerin yerlerini başarılı bir şekilde belirleyebilmesi gibi söyleyebiliriz.
+
+209
+00:50:34,011 --> 00:50:45,412
+Ya tam konum bilgisi yok ya da sınıf bonding box, anotasyonu gibi ayrıntılı şeyler, çalışmalar yok gibi değerlendirebiliriz.
+
+210
+00:50:47,764 --> 00:50:51,403
+Fee Class Activation Mapping'den bahsediyor, öyle mi?
+
+211
+00:50:52,304 --> 00:50:53,903
+Devam edeyim hocam isterseniz.
+
+212
+00:50:54,123 --> 00:50:55,203
+Sen devam et, bakalım.
+
+213
+00:50:55,884 --> 00:51:02,384
+Figürde de hocam, şimdi bunu kullanarak, sınıf aktivasyonunu kullanarak teknikle birleştirdiğinde,
+
+214
+00:51:02,384 --> 00:51:11,283
+diş fırçalama görseli üzerinde fırçayı ya da ağaç kesimi üzerinde testereyi didekte edebiliyor, yani tespit edebiliyor.
+
+215
+00:51:11,724 --> 00:51:15,764
+Peki, önerdiği çözüm nedir diye baktığımızda, burada aslında...
+
+216
+00:51:15,764 --> 00:51:19,824
+Network in Network makalesinden referi alarak devam ediyor.
+
+217
+00:51:19,964 --> 00:51:22,824
+Buna ve Google Net'e benzer bir ağ mimarisi kullanıyor.
+
+218
+00:51:23,244 --> 00:51:27,984
+Buna benzer olarak işte yöntem Class Activation Mapping diye yöntemini öneriyor.
+
+219
+00:51:28,564 --> 00:51:34,264
+Burada da işte ağ büyük ölçüde CNN katmanından oluşuyor ve son çıktısında işte Softmax kullanıyor.
+
+220
+00:51:34,264 --> 00:51:43,764
+Ve sonrasında da havuzlamayı gerçekleştiriyor ve çıktığı tam bağlı yani Full Connected bir layer ile bağlayarak nesnelerin tespitini sağlayıyor.
+
+221
+00:51:43,764 --> 00:51:55,164
+Buradaki çözüm önerisindeki avantajı da birbirine bağlantılı işte GAP kullanarak parametrelik bir model oluşturuyor ve ayırt edici modellerin belirlenmesini sağlıyor.
+
+222
+00:51:55,164 --> 00:52:08,964
+Burada figürlere yine baktığımızda işte köpekli bir resim için ImageNet Large Scale veri seti kullanarak haritaların görüntü sınıflandırması için kullanılan ayırt edici görüntü bölgelerini vurguluyor.
+
+223
+00:52:11,764 --> 00:52:24,424
+Halterdeki plakaları, nesneleri ayırt edebiliyor ya da işte bir kilisedeki çanı dedekte edebiliyor. Bir nesne olarak ayırt edebiliyor. Peki neden bu çözüm önerilmiş?
+
+224
+00:52:25,204 --> 00:52:40,644
+Bu çözümün neden önerdiğine baktığımızda da dediğimiz gibi detaylı bir şekilde sınır kutusu yani bounding box anotasyonuna ihtiyaç duymadan bunun riskini azaltarak bu maliyeti düşürerek modeli gerçekleştirebiliyor.
+
+225
+00:52:40,644 --> 00:52:51,064
+Tam bağlantılı katman sayesinde fazladan parametre iş yükünden kaçınmış oluyor ve daha basit bir mimariyle genelleme kapasitesini arttırmış oluyor.
+
+226
+00:52:51,164 --> 00:52:53,204
+Bunu daha başka yerlerde de uygulayabiliriz.
+
+227
+00:52:53,204 --> 00:53:20,983
+Bu örneğe biliyor olabiliriz. Figürleri yine baktığımızda burada beşinci resimde işte bahsettiği gibi Gap'leri CNN ile Gap'i kullanarak sınıf aktivasyon haritasını ve geri yayılım yöntemiyle sınıfı özgü belirginlik haritasını çıkarmış. İşte buradaki nesneleri tespit etme noktasında. Aşağıda da işte Google Net ile Gap'i birleştirdiği örnekler vermiş ve burada Alex Net ile beraber Google Net'in kıyasına yer vermiş. Temel doğrulu kutuları yeşil renkte.
+
+228
+00:53:21,204 --> 00:53:28,364
+Sınıf etkinleştirmek hem kullandığı ise haritasından yararlandığı ise kırmızı renkte yer almış.
+
+229
+00:53:29,972 --> 00:53:46,852
+Daha önceki problemlerden, çözümlerden ayrışan yanı nedir? Bu çalışmada aslında ele aldığı şey, geneliksel yöntemlerden, yani zayıf denetim, yerleştirme, lokalizasyondan daha ileri olarak çok da ileri geçiş gerektiren bu yöntem tek bir geçişle çalışabiliyor.
+
+230
+00:53:46,852 --> 00:53:56,852
+Bir de GAP kullanılarak nesnenin tam kapsamı daha iyi temsil edilebiliyor. Uçtan uca da bütüncül bir öğrenme sağlayabiliyor diyebiliriz. Makalede...
+
+231
+00:53:57,715 --> 00:54:07,535
+Çözüm olarak GAP kullandığının ve bunun avantajını olabildiğince vurguluyor ve olabildiğince sadece tek bir ileri geçişle konumunu tespit etmesinin iş yükünü azaltıyor.
+
+232
+00:54:07,535 --> 00:54:14,935
+Az denetim ve düşük hesaplama maliyeti hızlı etkili çözüm sunuyor bize ve dediğimiz gibi sınır kutusunu.
+
+233
+00:54:15,015 --> 00:54:17,995
+Bounding Box'a ihtiyaç duymadan bunu gerçekleştirebiliyor.
+
+234
+00:54:20,955 --> 00:54:24,135
+Bounding Box'a ihtiyaç duymama.
+
+235
+00:54:25,043 --> 00:54:29,263
+Hangi aşamada ihtiyaç duymuyor? Eğitim aşamasında mı?
+
+236
+00:54:30,643 --> 00:54:47,043
+Evet hocam, sınıflandırma temelli bir eğitim aslında. Dediğimiz gibi veriler sınıflandırma etiketine sahip. İçesindeki nesneleri de, yani lokalizasyon etmesini, örneğin diş fırçalamasındaki diş fırçasını bulması bu teknik sayesinde uygulanabilmiş diyebiliriz.
+
+237
+00:54:47,443 --> 00:55:03,063
+Normalde biz nesneleri banding box ile tanıtmamız, öğretmemiz gerekirdi. Böyle bir maliyeti vardı, iş yükü vardı. Ama burada bunu egale etmiş oluyoruz. Benim anladığım bu şekilde. Sonuca devam edeyim hocam.
+
+238
+00:55:04,963 --> 00:55:05,583
+Evet bakalım.
+
+239
+00:55:06,324 --> 00:55:11,844
+Bu sonuçta da dediğimiz gibi sınıf etkinleştirme haritası verilen bir teknik öneriyor.
+
+240
+00:55:12,364 --> 00:55:16,403
+Ve bu teknikte dediğimiz gibi sınırlayıcı kutu açıklamasına ihtiyaç duymuyor.
+
+241
+00:55:16,943 --> 00:55:20,903
+Nesne yerleştirme, lokalizasyonunu bu şekilde gerçekleştirebiliyor.
+
+242
+00:55:21,764 --> 00:55:25,623
+CNN tarafından nesneleri vurgulayabiliyor kolaylıkla.
+
+243
+00:55:25,623 --> 00:55:34,324
+Zayıf denetlenen nesne yerleştirmesi konusunda da bahsettiğim ImageNet'te kıyaslayarak CNN'lere doğru nesne yerleştirme yapabiliyor.
+
+244
+00:55:34,324 --> 00:55:40,824
+yapabileceğini gösteriyor en son olarak da tekniğin diğer CNN görevleri için kullanıldıklarında
+
+245
+00:55:40,824 --> 00:55:45,304
+ayrımcılık yani diskriminasyon temelini anlayabilmelerinin yardımcı olabileceğini ve
+
+246
+00:55:45,304 --> 00:55:51,644
+genel yerleştirilebilmesi noktasında fikir ortaya bir teknik koyduğunda ifade ediyor makale
+
+247
+00:56:01,172 --> 00:56:02,699
+Teşekkür ediyorum.
+
+248
+00:56:12,755 --> 00:56:24,235
+Bu Grad Chem'in öncüsü bir makale mi acaba? Chem burada da geçiyor ya.
+
+249
+00:56:25,715 --> 00:56:27,475
+Hangi soracağım? Makale önümde.
+
+250
+00:56:29,135 --> 00:56:34,035
+Grad Chem diye bir tane yöntem var. Hatta bir arkadaşımız anlattı da.
+
+251
+00:56:35,155 --> 00:56:44,155
+Hatta daha bugün de bir arkadaşımız daha anlatacak. Yine Murat Ken ile ilişkili.
+
+252
+00:56:44,155 --> 00:57:00,155
+Acaba buna mı bağlı? Neyse onu anlarız herhalde. Yine Toralban.
+
+253
+00:57:10,739 --> 00:57:13,739
+Global Available Layer.
+
+254
+00:57:22,228 --> 00:57:29,407
+Yani hocam Average Pooling Layer'da yaptığı CNN'deki özellik haritalarının her birinin ortalama değerini alıp görüntüdeki...
+
+255
+00:57:29,407 --> 00:57:33,228
+Biraz da söyleyemiyorum. Burası ne okumaya çalıştığım için.
+
+256
+00:57:33,228 --> 00:57:34,327
+Tamam hocam.
+
+257
+00:57:47,188 --> 00:57:53,188
+Localizable, deep representation that can be applied to variety of tasks.
+
+258
+00:58:00,019 --> 00:58:12,599
+Generik, localizable, deep representation that can be applied to a variety of tests, despite the list of global average pooling, GAP demiştin, değil mi?
+
+259
+00:58:13,879 --> 00:58:14,839
+GAP.
+
+260
+00:58:14,839 --> 00:58:17,516
+We are able to achieve...
+
+261
+00:58:22,099 --> 00:58:28,419
+35% top 5 error for object localization, which is markedly closed.
+
+262
+00:58:30,679 --> 00:58:42,739
+We demonstrate that our network is able to localize the discriminative image regions on a variety of tasks, despite not being trained for them.
+
+263
+00:58:44,279 --> 00:58:46,319
+Çok enteresan, değil mi?
+
+264
+00:58:47,027 --> 00:58:53,027
+Nesne üzerinde eğitilmemiş verilerde nesneyi bulmaya yarıyor gibi söyleyebiliriz.
+
+265
+00:58:53,027 --> 00:59:00,768
+Normal sınıflama için eğitiyor ama o bilgiyi nesne lokalizasyonu için kullanıyor.
+
+266
+00:59:02,288 --> 00:59:06,567
+Ve aslında Global Airwitch Pooling Layer yapıyor bu işi.
+
+267
+00:59:07,443 --> 00:59:17,963
+Cam ile ikisi beraber yapıyor hocam. Global Average Layer aslında 13 no'lu makalede. Yani Network in Network makalesinde önermişler. Burada Cam'i de ekliyor ona.
+
+268
+00:59:21,403 --> 00:59:25,463
+Evet. İşte Grad Cam falan da bunu takip edecek herhalde.
+
+269
+00:59:26,644 --> 00:59:27,384
+Tabii hocam.
+
+270
+01:00:06,420 --> 01:00:07,900
+Peki ne yapıyor yani?
+
+271
+01:00:10,380 --> 01:00:15,360
+Hocam, sınıf etiketini kullanarak nesnelerin yerleştirmesini bulunmasını sağlıyor.
+
+272
+01:00:15,619 --> 01:00:26,460
+Tamam. Bunu anladık. Matematiksel olarak ne yapıyor? Yani çalışma olarak ne yapıyor anlatabiliyor muyum?
+
+273
+01:00:26,460 --> 01:00:28,460
+Hocam, burada...
+
+274
+01:00:29,588 --> 01:00:45,527
+CNN'in arkasına işte GAP ekleyerek ve sonrasında Class Activation Mapping'le yani bu sınıf verisinden bilgiyi ağırlıklı olarak alarak sonrasında da sınıf bilgisinden nesneyi tespit çekmeye yarıyor.
+
+275
+01:00:45,648 --> 01:00:49,668
+Yani bu sayfa 3'te görebiliriz aslında birazdan.
+
+276
+01:00:52,083 --> 01:01:01,083
+In this section we describe the procedure for generating class activation maps using gaps.
+
+277
+01:01:03,083 --> 01:01:14,083
+A class activation map for a particular category indicates the discriminative image regions used by the CNN to identify that category.
+
+278
+01:01:19,987 --> 01:01:26,987
+Bu prozedere için bu bu
+
+279
+01:01:26,987 --> 01:01:27,987
+FİGÜR 2.
+
+280
+01:01:27,987 --> 01:01:32,987
+Bu net olarak, net olarak, net olarak, net olarak, net olarak, GoogleNet,
+
+281
+01:01:32,987 --> 01:01:34,987
+net olarak,
+
+282
+01:01:40,788 --> 01:01:45,208
+Şu Global Average Pulling neymiş aslında? Onu anlamamız lazım önce.
+
+283
+01:01:45,887 --> 01:01:46,788
+Söyleyeyim mi hocam?
+
+284
+01:01:47,688 --> 01:01:50,947
+Bir dakika. Given the Simple Connectivity Structure.
+
+285
+01:01:53,827 --> 01:02:02,027
+Bu makalede Global Average Pulling'i anlatıyor mu bir yerde?
+
+286
+01:02:05,427 --> 01:02:06,748
+Detaylı açıklamış yok.
+
+287
+01:02:07,327 --> 01:02:10,248
+Referans mı vermiş sadece? 13'e mi bakacağız?
+
+288
+01:02:11,168 --> 01:02:19,108
+13'te yer alıyor hocam ama ben GEP'i kendim araştırdım internetten tabii ki. 13. makara Network in Network'ı anlatıyor.
+
+289
+01:02:22,008 --> 01:02:27,648
+Network in Network. Burada Global Average Pooling burada bir yerde geçiyor galiba.
+
+290
+01:02:27,648 --> 01:02:29,068
+Evet, doğrudur.
+
+291
+01:02:33,139 --> 01:02:35,480
+Onun üzerine inşa ediyorum makaleyi biraz da.
+
+292
+01:02:36,699 --> 01:02:40,920
+İşte senin şimdi bize güzelce Global Average Polling'i anlatman lazımdı.
+
+293
+01:02:42,239 --> 01:02:43,340
+Söyleyebilirim hocam.
+
+294
+01:02:43,840 --> 01:02:47,139
+Söyleme değil, slide'ında anlatman lazımdı.
+
+295
+01:02:47,860 --> 01:02:50,360
+Bu biraz daha keme odaklandığı için keme açıkladım.
+
+296
+01:02:56,115 --> 01:03:04,875
+Ama işte bunu anlamadan kemiği anlamayacaksak o zaman bunu da açıklamayın lazımdı.
+
+297
+01:03:04,875 --> 01:03:10,115
+Yani ortalama değeri aldığını aslında ifade ettim ama detay noktasında.
+
+298
+01:03:17,556 --> 01:03:19,215
+Global Average Pulling.
+
+299
+01:03:23,284 --> 01:03:24,344
+Ne demiş burada?
+
+300
+01:03:25,683 --> 01:03:29,864
+İseğnen katmanlarındaki ortalamayı alarak bölgelerin çıkarması sağlam.
+
+301
+01:03:34,228 --> 01:03:44,668
+Konvaltional CNNs perform convolution in the lower layers of the network.
+
+302
+01:03:44,668 --> 01:03:53,168
+For classification, the feature maps of the last convolution layer are vectorized and fed
+
+303
+01:03:53,168 --> 01:04:00,588
+into full-connected layers, followed by a softmax logistic regression layer.
+
+304
+01:04:02,867 --> 01:04:56,139
+Bu, bu
+
+305
+01:04:56,340 --> 01:05:02,040
+It has improved the generalization ability and largely prevents overfitting.
+
+306
+01:05:03,580 --> 01:05:11,960
+Tamam, yani full-connected layer'larda dropout'un işe yaradığını biliyoruz.
+
+307
+01:05:13,180 --> 01:05:19,340
+CNN'in de son kısımları full-connected layer. CNN ağlarının.
+
+308
+01:05:21,076 --> 01:05:24,836
+Bu, bu paperi birçok stratejiyi ödüledi,
+
+309
+01:05:24,836 --> 01:05:27,436
+Global Average Pooling'in
+
+310
+01:05:27,436 --> 01:05:29,076
+İçinde,
+
+311
+01:05:29,076 --> 01:05:31,980
+Funda Konekti Lays'in CNN'in
+
+312
+01:05:36,884 --> 01:05:49,284
+Okay. The idea is to generate one feature map for each corresponding category of the classification task in the last MLP con layer.
+
+313
+01:05:51,784 --> 01:05:57,583
+Generate one feature map for each corresponding category.
+
+314
+01:06:05,876 --> 01:06:10,496
+Feature map sonuçta konvolüsyonlardan sonra elde ediliyor.
+
+315
+01:06:13,856 --> 01:06:31,876
+Sınıfı biliyoruz. Eğitim sırasında o zaman o kategorideki tüm resimlerden, feature'lardan, feature map'lerden bir global average mi alacak?
+
+316
+01:06:35,443 --> 01:06:43,943
+CNN'deki her bir haritada ortalama değerini alıp görüntüyü nütdeki bir feature elde etmeye çalışıyor. Görüntüdeki nesneyi elde etmek için.
+
+317
+01:06:50,579 --> 01:06:57,579
+İstediğe de ekip, bu
+
+318
+01:07:04,724 --> 01:07:06,724
+Average of Each Feature Map.
+
+319
+01:07:15,059 --> 01:07:30,420
+Feature Map zaten tek bir resim değil mi? Ne demek istemiş? Average of each feature map'ı anlamadım ama neyse. And the resulting vector is fed directly into the softmax layer.
+
+320
+01:07:32,820 --> 01:07:39,820
+Bir adıcı olmalı ve
+
+321
+01:07:39,820 --> 01:07:43,820
+bu konuyu örneğe alakalı olan
+
+322
+01:07:43,820 --> 01:07:47,820
+örneğe alakalı olan
+
+323
+01:07:58,356 --> 01:08:06,476
+Another advantage is that there is no parameter to optimiz in the global average pooling, thus overfitting is avoided.
+
+324
+01:08:06,476 --> 01:08:18,155
+Furthermore, global average pooling sums out the spatial information.
+
+325
+01:08:18,155 --> 01:08:25,796
+Thus, it is more robust to spatial translations of the input.
+
+326
+01:08:29,524 --> 01:08:41,844
+We can see GAP as a structural regularizer that explicitly enforces feature maps to be a confidence maps of concepts, categories.
+
+327
+01:08:46,100 --> 01:08:50,100
+Bu yapılan bir mLp konlayersi,
+
+328
+01:08:50,100 --> 01:08:52,280
+ve bu yapılan daha iyi bir
+
+329
+01:08:52,280 --> 01:08:57,100
+konfidansı yapmak için daha iyi bir
+
+330
+01:09:02,323 --> 01:09:21,384
+Şimdi bir averaging var da şuraya kadar şey diye düşünüyordum. Mesela 10 tane elimizde mesela diş fırçalama var. Elimizde de 10 tane diş fırçalama resmi var.
+
+331
+01:09:30,612 --> 01:09:49,391
+Feature Map elde ediliyor ve Average'lere alınıyor diye düşünüyordum ben. Ama şimdi şurada Average of Each Feature Map diyor. Feature Maplerin Average'i diyor. Yanlış mı anlıyorum veya burası biraz kafamı karıştırıyor?
+
+332
+01:09:51,832 --> 01:09:53,112
+Yok hocam öyle.
+
+333
+01:09:54,707 --> 01:09:58,547
+Yani her bir feature mapping kendi içinde el rüzgünü malıyor.
+
+334
+01:09:59,347 --> 01:10:02,768
+Ben de internette araştırdığımda bu bilgiyi böyle almıştım.
+
+335
+01:10:02,768 --> 01:10:10,227
+Yani X ve Y feature map dediğimiz şey kanallara sahip mi? Tek kanal mı?
+
+336
+01:10:11,547 --> 01:10:12,887
+Onu bilmiyorum hocam.
+
+337
+01:10:13,387 --> 01:10:16,768
+Yani feature map diye geçtiğimde...
+
+338
+01:10:25,492 --> 01:10:29,692
+A feature map is a 2D matrix of neurons demiş mesela.
+
+339
+01:10:41,332 --> 01:10:55,332
+Bu zaman hiç anlamadım. Şimdi geri karıştım. Çünkü bir resmin ortalaması zaten satırlarda mı ortalama oluyor, üstünlarda mı ortalama oluyor veyahut...
+
+340
+01:11:07,123 --> 01:11:09,683
+Şunun gibi, Max Ball gibi mi?
+
+341
+01:11:17,427 --> 01:11:22,887
+Yani küçük bir pencere kaydırıp o pencerenin içindeki ortalamayı mı alıyor?
+
+342
+01:11:23,768 --> 01:11:27,807
+Onun detayına maalesef makalede vakıf değilim.
+
+343
+01:11:32,916 --> 01:11:44,695
+Ama feature mapler iki boyutlu veya tek kanallı veya iki kanallı olup olmadığı bilgisi de çok göreceli bir kavram. O yüzden detayına bakmak gerekiyor bu Network in Network makalesi içinde.
+
+344
+01:11:48,979 --> 01:11:56,959
+Bazı şeyler de çok zor anlaşılıyor. Hatta kodunu falan görmek gerekiyor ki ben anca öyle anlıyorum bazı şeyleri.
+
+345
+01:12:01,395 --> 01:12:09,695
+Ben biraz daha yüzeysel anlamaya çalıştım. Bu makalede sizlere çözüm önerisini sunmaya çalıştım. Yoksa dediğiniz gibi haklısınız.
+
+346
+01:12:17,652 --> 01:12:30,152
+Visualization of the feature maps from the last MLP Con layer on the top 10% activations in the feature maps are shown.
+
+347
+01:12:31,432 --> 01:12:36,612
+The categories corresponding to the feature maps are Peer Pin Yadamun.
+
+348
+01:12:37,876 --> 01:12:42,376
+Feature maps correspond to the ground, the input images are highlighted.
+
+349
+01:12:42,376 --> 01:12:45,868
+Left panel and right panel are just different examples.
+
+350
+01:13:06,228 --> 01:13:08,228
+Bilgisayar Öğren Gress.
+
+351
+01:13:14,452 --> 01:13:21,532
+13 şeyrek geçiyor desek, onu 25 geçiye kadar ara verelim. Sonra devam edelim arkadaşlar. Tamam mı?
+
+352
+01:26:21,844 --> 01:26:23,564
+Arkadaşlar, merhabalar tekrar.
+
+353
+01:26:31,060 --> 01:26:40,360
+[öğrenci]. Merhaba hocam. Siz başlayabilirsiniz. Tabii. Hemen ekranımı paylaşıyorum.
+
+354
+01:26:45,684 --> 01:26:46,724
+Ekranım geldi mi acaba?
+
+355
+01:26:47,203 --> 01:26:47,604
+Gelelim.
+
+356
+01:26:49,104 --> 01:26:49,944
+Tamamdır.
+
+357
+01:26:50,924 --> 01:27:01,224
+Benim seçtiğim makale, Leak Lift, Learning Important Features Through Propagating Activation Differences, aktivasyon farklarının yayılımı ile önemli özelliklerin öğrenilmesi.
+
+358
+01:27:01,524 --> 01:27:12,524
+2017 yılında Stanford Üniversitesi Genetik ve Computer Science Departmanların ortak çalışması sonucunda çıkartılmış bir açıklanabilirlik yöntemidir.
+
+359
+01:27:14,131 --> 01:27:29,611
+Giriş olarak bilindiğinizde yapay sinir alır ve CNN gibi derin öğrenme modelleri oldukça başarılı sonuçlar elde etse de karmaşık yapıları bunları kara kutu olarak görülmesine sebep olmaktadır.
+
+360
+01:27:30,292 --> 01:27:45,612
+Yapılan araştırmalara göre yine bu karakutu modellerin kullanımı tarafındaki endişelerde model yönetimi ve regulasyon gereksinimleri, model şeffaflı ve modellerin implementasyon zorlukları öne çıkmaktadır.
+
+361
+01:27:47,132 --> 01:27:55,612
+Şeffaflık modellerin benimsenmesinde bu denli öneme sahip olduğundan dolayı da açıklanabilirlik çözümleri oldukça önem arz etmektedir.
+
+362
+01:27:57,876 --> 01:28:08,095
+Hali hazırda bu konuda birçok yöntem geliştirilmiş olsa da bu yöntemlerin belli başlı eksikleri de beraberinde gelmekte.
+
+363
+01:28:08,996 --> 01:28:23,336
+Bu yöntemlere kısaca baktığımızda perturbation tabanlı yöntemler, yani modelin giriş verilerini kademeli olarak değiştirip model çıktısındaki değişiklikleri analiz ederek çalışan yöntemler gayet basit ve anlaşılır olsa da
+
+364
+01:28:24,020 --> 01:28:29,140
+Yüksek hesaplama maliyetleri ve satürasyon eksiklikleri öne çıkmakta.
+
+365
+01:28:29,140 --> 01:28:39,020
+Bir diğer yöntemlerden olan gradyan tabanlı yöntemler tamamen gradyanlar üzerinden girişlerin duyarlılığını ölçmekte.
+
+366
+01:28:39,720 --> 01:28:42,764
+Bunlar hesaplama maliyetleri tarafında çok...
+
+367
+01:28:42,963 --> 01:28:48,663
+Sorun teşkil etmese de, Gradyanların sıfır olduğunda bir bilgi kaybı durumu söz konusu olmakta.
+
+368
+01:28:48,663 --> 01:29:02,463
+Son olarak da Class Activation metotlarından biri olan GradCam'de CNN'e özgü bir yöntem olması ve yine saturasyon problemi gibi eksiklikler öne çıkmakta.
+
+369
+01:29:03,060 --> 01:29:13,440
+Bu bahsettiğimiz satürasyon problemine kısaca bakacak olursak, tanım olarak bir modelin giriş değişkeni olan duyarlılığın azalması denebilir.
+
+370
+01:29:14,480 --> 01:29:21,200
+Örneğin bir sigmoid fonksiyonu giriş değeri çok büyük olduğunda bire, çok küçük olduğunda da sıfıra yaklaşır.
+
+371
+01:29:24,467 --> 01:29:28,067
+Benzer şekilde sıfıra yakın ser ve öğrenme yavaşlığa hatta durur.
+
+372
+01:29:29,007 --> 01:29:32,827
+Ve bu da modelin artık bu girişten bilgi çıkaramaz hale gelmesine sebep oluyor.
+
+373
+01:29:34,067 --> 01:29:39,807
+Dolayısıyla bir giriş değişkeni önemli bir bilgi taşısa da bu durumdan dolayı bilginin etkisi kaybolabilir.
+
+374
+01:29:41,768 --> 01:29:45,708
+Bunlara çözüm olarak da makale ile birlikte DeepLift önerilmiştir.
+
+375
+01:29:45,708 --> 01:29:51,427
+DeepLift, gradyanlar yerine aktivasyon farklarını kullanan bir açıklanabilirlik yöntemi.
+
+376
+01:29:52,275 --> 01:30:09,355
+Çalışma şekli olarak da modelin çıktısını bir referans duruma göre analiz ederek giriş değişkenlerinin önemini belirler. Burada referans durum derken de model için girdiğinin varsayılan ya da nötr hali olarak düşünülebilir.
+
+377
+01:30:09,792 --> 01:30:20,992
+Örneğin MNIST veri setinde referans durumu seçimine baktığımızda el yazılarının arka planı olan tüm piksellerin siyah olduğu bir görsel kullanılabilir.
+
+378
+01:30:21,891 --> 01:30:26,752
+Bu referans durumu da tamamen kullanıcı tarafından seçilmekte.
+
+379
+01:30:27,828 --> 01:30:44,988
+Bu yöntem ile Deep Lift, Strasyon problemini aşar. Yani gradyanlar yerine referans durumdaki aktivasyon ile nörona ait mevcut aktivasyonun farklarını kullandığı için benzer şekilde gradyan sıfır olduğunda bile bilgi akışını sağlar.
+
+380
+01:30:45,492 --> 01:30:57,592
+Girdiği ait pozitif ve negatif etkileri de ayrı ayrı ele alarak detaylı sonuçlar verir. Son olarak da tek bir backpropagation kullanarak çalıştığından hesaplama maliyetlerini en hıza indirir.
+
+381
+01:31:10,771 --> 01:31:18,891
+Temeli olarak aslında bir referans durum tanımını. Az önce de belirlediğimiz gibi Mnist'teki o siyah arka plan gibi düşünebiliriz.
+
+382
+01:31:19,380 --> 01:31:30,620
+Ardından her nöronun mevcut aktivasyonu ile bu referans durumla arasındaki aktivasyonun farkı belirlenip back propagation ile giriş değişkenine kadar dağıtılır.
+
+383
+01:31:30,620 --> 01:31:40,420
+Bu süreçte de bütün katmanlarda pozitif ve negatif katkılar hesaplanıp genel karar mekanizmasının açıklanması sağlanır.
+
+384
+01:31:42,260 --> 01:31:53,260
+Burada yöntemin temeli olarak bahseden referans durumunun öneminden çok kısa bahsedeceğim. Örneğin, Sifar 10 modelinde bir...
+
+385
+01:31:53,811 --> 01:32:14,771
+Gemi sınıfı için seçilen farklı referansların etkisine model skorlamasına göre inceleyecek olursak, üst taraftaki referans görüntüsü olarak bulanıklaştırılmış bir arka plan görüntüsü seçilmiş. Bu aslında modelin gemi olmayan bir durumu temsil eden varsayılan ya da nötr bir hali olarak düşünülebilir.
+
+386
+01:32:15,152 --> 01:32:24,631
+Alt görselde de M liste kullanıldığı gibi tamamen siyah bir görüntü seçilmiş. Bu da herhangi bir bilgi içermeyen bir durumu temsil etmekte.
+
+387
+01:32:24,631 --> 01:32:34,576
+İki referans durumuna ait Deep Leaf skorlarına baktığımızda da üst tarafta geminin tespiti için...
+
+388
+01:32:34,576 --> 01:32:47,056
+Önemli olan piksel ile gayet net olarak belirlenirken, geminin de bir nevi silüeti ortaya çıkmışken, alt tarafta oldukça gürültülü bir piksel skor görseli görülmekte.
+
+389
+01:32:48,015 --> 01:32:53,876
+Dolayısıyla referans seçimi katkı skorlarının da yanıltıcı olmasına sebebiyet verebilir.
+
+390
+01:32:53,876 --> 01:33:01,036
+Bu referans verilmenin belirlenmesi için de bir domain bilgisi gerektiği olduğu söyleniyor.
+
+391
+01:33:02,739 --> 01:33:15,399
+Uygulandığı örnek verisletleri ve görsel ve diğer yöntemlerden farklarına çok kısa bakacak olursak da, ilk olarak MNIST verisleti üzerinde yapılan çalışmayı inceleyeceğiz.
+
+392
+01:33:15,399 --> 01:33:21,600
+Buradaki temel amaç, farklı bir sınıfa dönüştürmek için hangi piksellerin önemli olduğunu anlamak.
+
+393
+01:33:22,068 --> 01:33:31,068
+Buradaki sınıftan kasıt da aslında 8'i örneğin 3'e ya da 6'ya görseldeki gibi dönüştürmesi için hangi pikseller öne çıktığını hesaplayabilmek.
+
+394
+01:33:32,427 --> 01:33:38,427
+Her piksele ait önem skorlarının hesaplanabilmesi için öncelikle bir referans durumu seçiliyor.
+
+395
+01:33:38,948 --> 01:33:43,587
+Bu da aslında az önce de bahsettiğimiz gibi bu veri setinde siyah bir arka plan.
+
+396
+01:33:44,243 --> 01:33:49,243
+Ve DeepLift kullanılarak her pikselin pozitif ve negatif katkıları hesaplanıyor.
+
+397
+01:33:49,243 --> 01:34:05,243
+Ardından örneğin 8 rakamını 3'e veya 6'a dönüştürmek için skorlamalar yapılarak 8'i tanımlayan en kritik pikseller ortadan kaldırıyor ve hedef rakamın daha aslında belirgin hale geldiğini görüyoruz.
+
+398
+01:34:05,551 --> 01:34:25,251
+Sağdaki görsele baktığımızda Masking sonrasında, yani piksel silme işlemi sonrasında gerçekten 8'in 3'e kıyasla daha önemli olan pikselleri kaldırıldığında gerçekten 3'ün öne çıktığını görebiliyoruz.
+
+399
+01:34:25,251 --> 01:34:28,691
+Bu görseli biraz daha detaylı inceleyecek olursak.
+
+400
+01:34:29,716 --> 01:34:39,036
+Burada birçok gradyan temelli açıklanabilirlik yöntemiyle Leplift'in bir karşılaştırmasını inceleyeceğiz. Yine aynı veri sitü üzerinde.
+
+401
+01:34:40,076 --> 01:34:45,776
+Giriş verisi olarak bütün yöntemlerde 8 rakamını görmekteyiz.
+
+402
+01:34:55,283 --> 01:35:06,543
+Hangi bölgelere dikkat ettiğini göstermekte. Üçüncü suçunda ise 8 rakamını 3 olarak yanlış sınıflandırdığı durumda hangi noktalara odaklandığını görmekteyiz.
+
+403
+01:35:08,144 --> 01:35:12,283
+Burada gradient bazlı yöntemlerde daha gürültülü bir...
+
+404
+01:35:13,235 --> 01:35:27,155
+Görsel çıkarken aslında Leplift'te biraz daha gerçekten o 3'ün, yani tam olarak 3 olarak yanlış sınıflandırılırken hangi piksellerin öne çıktığını görebiliyoruz çok limitli de olsa.
+
+405
+01:35:27,155 --> 01:35:32,155
+Son sütunda ise bu yanlış sınıflandırılan...
+
+406
+01:35:32,340 --> 01:35:46,340
+8 için önemli olan pikseller silindiğinde, gerçekten modelin artık 3'ü, yani bu giriş verisinin 8'lerin 3 olarak sınıflandığını gösteriyor.
+
+407
+01:35:46,840 --> 01:35:51,520
+Buradaki aslında diğer modellerdeki gürültü maskeleme işlemini sonrasında daha net.
+
+408
+01:35:51,904 --> 01:36:03,404
+Ortaya çıkıyor. Benzer bir örnek olarak 8'e 6 olarak sınıflandırdığı durumlarda da önce 8 için önemli olan pikseller tespit edilip ardından...
+
+409
+01:36:04,148 --> 01:36:19,347
+8'i 6 olarak yanlış sınıflandırdığı örneklerden 6'nın önemli pikselleri tespit edilip 8 çıkarılıp yine maskeleme işlemi sonrasında 6 için önemli olan piksellerin öne çıktığını görüyoruz.
+
+410
+01:36:19,347 --> 01:36:28,988
+Her iki durumda da DeepLift'in diğer gradiyan temelli yöntemlere göre daha az gürültülü bir çıktı ortaya koyduğunu gösteriyor.
+
+411
+01:36:31,539 --> 01:36:36,359
+Son olarak bir de genom verisi üzerinde bir uygulama yapılmış.
+
+412
+01:36:37,799 --> 01:36:49,680
+Burada DNA üzerindeki belli motiflerin nasıl tespit edildiğini anlamak ve modelin hangi bölgelerden etkilenerek sonuçlara ulaştığını anlamak için DeepLift yöntemi kullanılıyor.
+
+413
+01:36:49,680 --> 01:36:55,299
+Buradaki referans durum yani varsayılan durum ilgili gata ve tal.
+
+414
+01:36:55,764 --> 01:37:11,264
+Motiflerinin yer almadığı bir DNA dizinin kullanılması. Bunun sonucunda da diğer yöntemlerle yine DeepLift'in bu genom verisi üzerindeki açıklanabilirlik görsellerinin kıyaslamasını görüyoruz.
+
+415
+01:37:12,340 --> 01:37:38,719
+Diğer görsellere ya da yöntemlere baktığımızda birçoğunda kırmızı çizgili olan yer gibi faz pozitif yani motiflerle ilişkili olmayan yanlış alanların tespitinin yapıldığı ya da diğer modellere göre daha düşük seviyeli tespitlerin yapıldığı görülürken son iki örnekte tamamen deep lift kullanılarak farklı model yaklaşımlarıyla.
+
+416
+01:37:39,167 --> 01:38:06,688
+Hem Gata'nın hem de Tal'ın bu DNA dizisinde daha iyi tespit edildiğini, fakat ilkinde biraz daha gürültülü ve en azından bu motiflerin dışında kalan kısım daha gürültülü olurken, biraz daha CNN katmanının da eklenmesiyle ve full connected bir layer kullanılarak gürültülü de aza indirilip modelin bu ilgili iki motifi çok daha iyi tespit edebildiğini görüyoruz.
+
+417
+01:38:08,340 --> 01:38:20,960
+Model sonucu olarak da bu dizi aslında hem gata hem de tal motiflerini içeriyor gibi bir sonuç alırken,
+
+418
+01:38:20,960 --> 01:38:30,460
+Deep Leaf sonucunda bu işlem, daha doğrusu bu tahmin DNA dizisinin hangi bölgelerinden kaynaklandığını öne çıkarmış oluyor.
+
+419
+01:38:30,460 --> 01:38:35,180
+Benim sunumum bu şekildeydi.
+
+420
+01:38:39,572 --> 01:38:40,492
+Evet.
+
+421
+01:38:46,676 --> 01:38:48,676
+Makalede yansıtacak olursan.
+
+422
+01:38:50,556 --> 01:38:52,275
+Ben yansıtıyorum burada.
+
+423
+01:38:52,596 --> 01:38:53,656
+Ben yansıtıyorum da.
+
+424
+01:38:53,935 --> 01:38:54,855
+Ben bakmış olayım.
+
+425
+01:39:40,115 --> 01:39:41,336
+2010 yılı mıydı bu?
+
+426
+01:39:42,836 --> 01:39:43,755
+2010 yılı.
+
+427
+01:39:47,731 --> 01:39:52,092
+Siz ne işle meşgulsunuz normalde?
+
+428
+01:39:52,092 --> 01:40:03,092
+[kişisel bilgi] Bu makaleyi de aslında Şepli Kütüphanesi'ni aktif olarak kullanıyoruz makine öğrenimi modellerinin açıklanabilirliği tarafından.
+
+429
+01:40:03,092 --> 01:40:05,532
+Onun kaynakça kısmında denk gelmiştim.
+
+430
+01:40:05,844 --> 01:40:07,943
+Neyi kullanıyoruz dediniz?
+
+431
+01:40:08,543 --> 01:40:23,503
+Şeplik Kütüphanesi var Python'da. Makine öğrenimi modellerinin açıklanabilirlerini daha iyi aktarabilmek adına. Onun kaynakça bölümünde aslında yararlandığı bir kütüphane olarak gördüm. Kütüphane değil de yöntem olarak gördüm.
+
+432
+01:40:25,344 --> 01:40:26,183
+Oradan.
+
+433
+01:40:30,195 --> 01:40:32,195
+YaptayValues.
+
+434
+01:40:59,976 --> 01:41:15,976
+konfidansı yapmak için daha iyi bir
+
+435
+01:41:15,976 --> 01:41:16,976
+konfidansı yapmak için daha iyi bir konfidansı yapmak için
+
+436
+01:40:58,260 --> 01:41:02,360
+Normalde kullanılıyor mu bu piyasada? Siz nerede kullanıyorsunuz?
+
+437
+01:41:03,900 --> 01:41:07,940
+Modellerin her bir tahminin açıklanabilirliği tarafında.
+
+438
+01:41:08,600 --> 01:41:14,780
+Örneğin bir aday skorlama tahmininde o adayı öne çıkaran başlıca featureler hangileri?
+
+439
+01:41:15,680 --> 01:41:16,619
+Onları biraz daha.
+
+440
+01:41:16,619 --> 01:41:25,760
+Bir de modelin genel bu çıkarımları nasıl yaptığını anlatan bir görselliği yüksek aktarımı da.
+
+441
+01:41:26,484 --> 01:41:27,684
+Find the login.
+
+442
+01:41:52,180 --> 01:42:03,300
+Bayağı şey bir makale sanki. Kısa ama tam böyle önemli yerleri, önemli yerlerden bahsetmiş bir makale gibi.
+
+443
+01:42:19,539 --> 01:42:25,539
+Learning Important Features Through Propagating Activation Differences.
+
+444
+01:42:26,539 --> 01:42:30,539
+Ne yapıyor şimdi bu? Aktivasyon differenslerinden mi bakıyor?
+
+445
+01:42:31,539 --> 01:42:39,539
+Evet. Her nürünün mevcut aktivasyonuyla bu seçilen referans durumun aktivasyon arasındaki farkı alıyor.
+
+446
+01:42:40,539 --> 01:42:46,539
+Bunları da Backpropagating ile giriş değişkenlerine kadar yayarak.
+
+447
+01:42:47,412 --> 01:42:54,912
+Her bir girişten çıkışa kadar her katmandaki pozitif-negatif etkilerin hesaplanmasını sağlamış.
+
+448
+01:43:38,644 --> 01:43:39,004
+Okay.
+
+449
+01:43:44,627 --> 01:43:46,627
+Peki teşekkür ederim.
+
+450
+01:43:46,627 --> 01:43:48,627
+Ben teşekkür ederim.
+
+451
+01:43:48,627 --> 01:43:51,627
+Deadlift...
+
+452
+01:43:52,627 --> 01:43:54,627
+Leplift.
+
+453
+01:43:58,771 --> 01:44:02,271
+Deep Learning Important Features, Deep Lift
+
+454
+01:44:07,220 --> 01:44:09,040
+Peki, teşekkür ediyorum [öğrenci].
+
+455
+01:44:10,700 --> 01:44:11,159
+Sağolun.
+
+456
+01:44:12,060 --> 01:44:13,920
+Ablation Chem.
+
+457
+01:44:15,380 --> 01:44:16,680
+[öğrenci].
+
+458
+01:44:17,140 --> 01:44:17,659
+Evet hocam.
+
+459
+01:44:19,239 --> 01:44:20,540
+Başlayabilirsiniz siz.
+
+460
+01:44:20,540 --> 01:44:21,899
+[öğrenci].
+
+461
+01:44:37,844 --> 01:44:39,844
+Gözüküyor değil mi ekran?
+
+462
+01:44:39,844 --> 01:44:41,844
+Evet.
+
+463
+01:44:41,844 --> 01:44:57,676
+Bugün size Ubrechcam makalesini anlatacağım. Daha öncesinde derslerde Gradcam anlatılmıştı. Arkadaşım da uzun uzun anlatmıştı Gradcam'i. Ben de bugün Ubrechcam'i anlatacağım. Aslında Ubrechcam'de Gradcam'in devamı netelinde.
+
+464
+01:44:58,003 --> 01:45:06,003
+Bu makalenin tam adını söylemek gerekirse, dirin konvansiyonel ağlar için gradyansız lokalizasyon ile görsel açıklamalar şeklinde geçiyor.
+
+465
+01:45:06,963 --> 01:45:11,804
+Şimdi bu abla işkemi anlamak için aslında bizim CNN'i anlamamız gerekiyor ilk başta.
+
+466
+01:45:12,523 --> 01:45:15,064
+CNN'i kısa bir şekilde bahsetmek gerekirse CNN nedir?
+
+467
+01:45:15,943 --> 01:45:18,324
+Dirin öğrenmenin en güçlü alanlarından bir tanesidir.
+
+468
+01:45:19,043 --> 01:45:23,984
+Burada görüntü sınıflandırma, nesne algılama, semenlik segmentasyon gibi birçok görevde üstün başarı sağlıyor.
+
+469
+01:45:24,435 --> 01:45:29,435
+Ayrıca bildiriler içerisindeki altyazılar gibi karmaşık görevler içinde kullanılıyor.
+
+470
+01:45:29,435 --> 01:45:36,435
+Tabi buradaki karmaşık görevler kullanılması CNN'in kara kutu adlandırılmasına neden oluyor.
+
+471
+01:45:36,435 --> 01:45:44,435
+Yani buradaki modelin kompleks yapısı insanlar tarafından çok iyi anlaşılamadığı için burada güven sorunlarına neden oluyor.
+
+472
+01:45:44,435 --> 01:45:47,435
+Özellikle sağlıktır, güvenliktir.
+
+473
+01:45:47,435 --> 01:45:49,435
+Kaç slide'ın var [öğrenci]?
+
+474
+01:45:49,435 --> 01:45:50,435
+15.
+
+475
+01:45:50,707 --> 01:46:04,927
+On beş. On dakikan var. Burayı biliyoruz zaten. İstersen biraz hızlı geç. O zaman geçelim burayı. İşte bu arada ki şey falan ihtiyacını anlayalım. On dakika sonra bitecek ona göre yani. Bir dakikada naz var her bir slide'ın için.
+
+476
+01:46:04,927 --> 01:46:12,507
+Burada GradCam sınırlamalarına baktığımız zaman GradCam'ler CNN modellerinin kararlarını gösterleştirmek için yaygın bir yöntemdir.
+
+477
+01:46:12,979 --> 01:46:17,339
+Bu yöntem modelin bir sınıf içinde hangi görüntü bölgelerine odaklanıyor anlamaya çalışıyor.
+
+478
+01:46:17,339 --> 01:46:19,899
+Tabi burada Grad Cam'in de bazı problemleri var.
+
+479
+01:46:19,899 --> 01:46:25,779
+İşte Gradient Uygunluğu problemleri veya tam güvenilir bir görselleştirme, sağlamı eksiklikleri gibi problemleri ortaya çıkıyor.
+
+480
+01:46:25,779 --> 01:46:29,779
+Bunun anlayı da Ablash Cam metodu ortaya atılıyor.
+
+481
+01:46:29,779 --> 01:46:38,779
+Ablash Cam önerisi ortaya atılıyor ve Ablash Cam buradaki Grad Cam'in bu sıkıntılarını çözmek için aslında bir yöntem olarak söyleniyor.
+
+482
+01:46:39,891 --> 01:46:56,891
+Şimdi burada en cücükle alakalı çalışmalara baktığımız zaman işte CNN'lerin görselleştirme çalışmalarıdır. Daha sonrasında model güven ve güvenirlik çalışmaları. İşte burada ilk başta CNN'lerin görselleştirme çalışmaları yapılıyor 2014 yılında. Daha sonrasında bunun...
+
+483
+01:46:57,939 --> 01:47:04,460
+güven ve güvenilirliği yani CNN'lerin tam olarak güvenilirliği olmadığı sonucu ile ilgili makaleler ortaya çıkıyor.
+
+484
+01:47:04,460 --> 01:47:09,960
+Ve bundan sonrasında işte gradyan tabanlı sorunlarla ilgili ve ablasyon çalışmalarıyla ilgili makaleler ortaya çıktıktan sonra
+
+485
+01:47:09,960 --> 01:47:14,559
+bu daha önceki derste bahsettiğimiz GradChem çalışması ortaya çıkıyor.
+
+486
+01:47:15,379 --> 01:47:19,019
+Burada işte tüm CNN mimarinin sınıfına özgü görselleştirme de üretiyor.
+
+487
+01:47:19,299 --> 01:47:21,839
+Ancak gradyan doygunluğu gibi sorunlarla karşılaşıyor.
+
+488
+01:47:22,359 --> 01:47:24,579
+Ve bunun devamında da ablasyon keminin motivasyonu.
+
+489
+01:47:25,300 --> 01:47:30,900
+Burada motivasyona baktığımız zaman, gradiyan tebanlı yöntemlerin sorunlarıdır.
+
+490
+01:47:31,080 --> 01:47:34,040
+İşte gradiyan doygunluğu problemleridir. Özellik artısının katkısıdır.
+
+491
+01:47:34,500 --> 01:47:37,300
+Bu tarz problemlerden onlayı, abdekşikam ortaya çıkıyor.
+
+492
+01:47:37,440 --> 01:47:41,440
+Ve en sonunda bu abdekşikam yaklaşımı da belirleyelim.
+
+493
+01:47:42,120 --> 01:47:46,060
+Şimdi burada sorunun tanımı, problem tanımına geçelim.
+
+494
+01:47:46,160 --> 01:47:48,920
+Buradaki approach kısmına geldiğimizde makalenin.
+
+495
+01:47:49,876 --> 01:47:56,355
+Burada, abdışken bir CNN modelinin karar verdiği sırada hangi bölgeden etkilendiğini tespit etmeye hedefliyor.
+
+496
+01:47:57,096 --> 01:48:04,615
+Buradaki temel hedef, bir sınıf tahmini için modelin görüntünün hangi bölgeden odaklandığını belirleyen bir logolizasyon haritası oluşturmak.
+
+497
+01:48:05,235 --> 01:48:10,976
+İşte burada anotasyon olarak giriş görüntüsü, hedef sınırı aktivasyon skoru, özellik haritası bunlar çıkarılıyor.
+
+498
+01:48:11,315 --> 01:48:17,155
+Bu problem, özellik haritasının sınıflandırılmasıyla çözümleniyor ve görselleştirme haritası bu temel üzerine kuruluyor.
+
+499
+01:48:17,876 --> 01:48:31,796
+Ableş Game Mekanesis'a baktığımız zaman da burada aslında üç adımlı bir yöntem var. İlk olarak özellik arıtası çıkarılıyor. Burada her bir özellik arıtası sıfırlanıyor ve sınıf skoru yeniden hesaplanıyor.
+
+500
+01:48:32,159 --> 01:48:38,579
+Daha sonrasında katkı hesaplama. Burada özellik haritasının sıfırlanmasının tahmin skorunun etkisiyle ölçülüyor.
+
+501
+01:48:39,239 --> 01:48:46,300
+Burada en son olarak da lokalizasyon haritasında özellik haritalarının ağırlıklı toplama alınarak görselleştirme haritası oluşturuluyor.
+
+502
+01:48:47,300 --> 01:48:53,819
+Bu mekanizma, gradiyante ban yöntemlerin sınırlamalarını aşarak daha hastası ve güvenilir görselleştirmeyi sağlıyor.
+
+503
+01:48:55,444 --> 01:49:03,944
+Peki neden Apte Şikam daha güvenilir? Burada gradiyan bağımsızlığıdır, sınıf ayrımcılığıdır, uzamsal bilgiyi korumasıdır.
+
+504
+01:49:03,944 --> 01:49:09,944
+Mesela uzamsal bilgi korumasından ne anlamı geliyor? Aktivasyon değerleri üzerinde çalışarak daha doğru dokuyalizasyon sağlıyor.
+
+505
+01:49:09,944 --> 01:49:15,444
+Bu tarz güvenilirliklerle aslında GradCam'in devamı niteliğinde ortaya çıkıyor.
+
+506
+01:49:17,203 --> 01:49:29,663
+Burada ayrıca Goyet Ablash Cam'de ayrı bir kısım da var. Bu kısımda Ablash Cam'in Goyet Back Propagation ile birleştirdiğinde daha da arttığını, hassasiyetinin daha da arttığını söylüyor.
+
+507
+01:49:30,260 --> 01:49:46,340
+Burada piksellerin detaylı katkısını analiz ederek daha net ve ayrıntılı görselleştirme sunuyor. Ayrıca ince detayları gösteriyor burada avantaj olarak. Lokalasyonu daha halsız hale getiriyor. Bu birleşim, Ablation Kim'in özellikle sınıf ayrımının önemli olduğu durumlarda etkisini arttırıyor.
+
+508
+01:49:47,315 --> 01:49:56,916
+Burada kısa bir tabloda GradCAM ve ABD'ye çıkım özelliklerini karşılaştırdığımızda, GradCAM kullanımında GradCAM gradyanlara dayandığı halde ABD'ye çıkım gradyanları kullanmıyor.
+
+509
+01:49:56,916 --> 01:50:04,916
+Bunun anlayı GradCAM buradaki doygunluk problemine sebep oluyor. Ancak ABD'ye çıkım gradyan kullanmadığı için bu problemde etkilenmiyor.
+
+510
+01:50:05,171 --> 01:50:15,291
+Sınıf ayrımcılığında mesela GradChem genellikle sınıfları arası ayrım belirgin değildir. Ancak AblachChem daha belirgin ve sınıfı görselleştirmeyi sağlıyor.
+
+511
+01:50:15,291 --> 01:50:19,551
+Veya çoklu nesnalıkları ama burada ikisinin özellikleri olarak belirtilebilir.
+
+512
+01:50:19,551 --> 01:50:24,931
+Zaten burada makalenin bu karşılaştırma kısımlarında çok daha ayrıntılı bahsediyor.
+
+513
+01:50:25,203 --> 01:50:34,683
+Burada GradCam ile ilgili deneyler de yapılıyor. Mesela burada ampirik değerlendirme, aksiyomatik değerlendirme gibi değerlendirmeler yapılıyor.
+
+514
+01:50:44,851 --> 01:51:00,271
+Ableşikim'in performans olarak amplik denilmede Gradkem'den daha yüksek olduğu anlaşılıyor. Veya burada diğer değerlendirmelerde Ableşikim'in güvenirliğinin daha yüksek olduğu veya insanlar tarafından eşit güvenirliğe sahip olduğu.
+
+515
+01:51:01,119 --> 01:51:13,840
+Aksiomatik Avaliation'da %50 oranında Ablashicam, %20 oranında GradCamp daha güvenilir olduğu insanlar tarafından belirli. Geri kalan kısımda ikisinin eşit güvenilirliğe sahip olduğunu söylüyor.
+
+516
+01:51:15,059 --> 01:51:22,840
+Tabi burada Ablashic Avaliation Cam'in de çeşitli kısıtlamaları var. Daha yüksek hesaplama ve maliyeti. Neden? Çünkü...
+
+517
+01:51:22,927 --> 01:51:30,327
+Burada ABD'ye çeken bütün işlemi ele aldığı için işlemler daha uzun oluyor ve işleminin uzun olmasından dolayı hesaplama maliyeti artıyor.
+
+518
+01:51:30,327 --> 01:51:37,427
+Veya burada model tipi kısıtlamalar ABD'ye çeken bazı modellerde avantajları daha sınırlı oluyor.
+
+519
+01:51:37,427 --> 01:51:42,927
+Veya soft math sigmoist sorunlarında tahmin skorlarının yorumlanmasını zorlaştırabiliyor.
+
+520
+01:51:42,927 --> 01:51:48,627
+Bu tarz sorunlar ABD'ye çeken eksiklikleri ve geliştirilmesi gereken kısımlar olarak ortaya çıkıyor.
+
+521
+01:51:48,752 --> 01:51:55,252
+Tabi bu makale 2020 yılında yayınlanmış. Bundan sonra çok daha fazla gelişim makale ortaya çıkıyor.
+
+522
+01:51:56,252 --> 01:52:02,772
+Sonuca baktığımız zaman, Ablech Cam, CNN tabanlı modellerin açıklanabilenini arttırmak için etkili bir yöntemdir.
+
+523
+01:52:03,392 --> 01:52:08,152
+Makale Ablech Cam'in nesnel ve öznel değerlendirmeleri, grad cam'den üstünde olduğunu ortaya koymuştur.
+
+524
+01:52:08,772 --> 01:52:12,052
+Bu yöntem model açıklamanın daha güvenilir hale getirilmek ve derin öğren...
+
+525
+01:52:12,052 --> 01:52:13,492
+Efendim?
+
+526
+01:52:16,595 --> 01:52:18,255
+Hiç şey demedim, devam edebilirsiniz.
+
+527
+01:52:19,916 --> 01:52:27,675
+Bu yöntem model açıklamalarını daha güvenilir hale getirmek ve diğer önemli model dilini günlük uygulamalara entegre etmek için önemli bir adım olduğu belirtilmiştir.
+
+528
+01:52:28,876 --> 01:52:29,935
+Dinlediğiniz için teşekkür ederim.
+
+529
+01:52:34,547 --> 01:52:36,307
+Ben teşekkür ederim.
+
+530
+01:52:37,967 --> 01:52:41,228
+Şimdi arkadaşlar, sanırım bir iletişim hatası olmuş.
+
+531
+01:52:41,228 --> 01:52:57,228
+Yani ben işin özünü anlatın, vaktiniz az derken bu şekilde değil de işin matematiğini anlatın.
+
+532
+01:53:03,699 --> 01:53:11,699
+Mesela bu örnekte diğer arkadaşlarda da bu vardı. Sadece [öğrenci]'ın sunumunda değil de.
+
+533
+01:53:14,699 --> 01:53:28,299
+Ebleşeyken işte ben ne anladım mesela? Gradkem'e benzer ama gradiyan kullanmıyor. Bu kadar. Yani başka bir şey anlamadım. Aplımda da bir şey kalmadı.
+
+534
+01:53:34,515 --> 01:53:44,975
+Yani bir şekilde benim istediğim şekilde gelmiyor sunumlar. Ben şeyi anlamak isterdim. Bu yöntemler nasıl çalışıyor?
+
+535
+01:53:47,975 --> 01:53:57,515
+Altlarında yatan matematik ne? Kem varsa, GAP varsa işte ne bileyim?
+
+536
+01:54:06,068 --> 01:54:13,308
+Yani şey gibi değil, genel kültür gibi öğreniyoruz şu anda, öyle değil.
+
+537
+01:54:14,848 --> 01:54:28,608
+Hani matematikçi gibi, bilim adamı gibi, master öğrencisi, doktor öğrencisi gibi öğrenelim istiyordum.
+
+538
+01:54:30,036 --> 01:54:42,195
+Ama bir yanlış anlaşılma oldu diye düşünüyorum. Benim söylediğim şeylerle sizin bana getirdiğiniz şeyler çok uyuşmuyor açıkçası.
+
+539
+01:55:04,851 --> 01:55:32,091
+Adlation Camp, matematiksel olarak bana açıklayın dersem, nedir bu Adlation Camp? Sonuçta elimizde imgeler var. Bunlar matris. İki boyutlu veyahut renkleri de katarsak üç boyutlu matrisler.
+
+540
+01:55:38,868 --> 01:55:43,128
+Hangi işlemi yapıyoruz? Bu matrislerden neleri elde ediyoruz?
+
+541
+01:55:47,380 --> 01:55:51,939
+O matrislere hangi işlemleri yapıyoruz? Bilmem anlatabildim mi?
+
+542
+01:56:07,475 --> 01:56:10,435
+Tamam. Teşekkür ediyorum.
+
+543
+01:56:22,292 --> 01:56:24,712
+[öğrenci], burada mıyız?
+
+544
+01:56:27,372 --> 01:56:28,992
+Evet hocam, buradayım.
+
+545
+01:56:29,792 --> 01:56:32,452
+Tamam, sunumumuzu yapabiliriz.
+
+546
+01:56:34,032 --> 01:56:44,452
+Hocam, matematikseli daha çok ekleyip mi sunum yapsam diye düşündüm siz böyle deyince de var olduğu gibi sunuymiş şu an.
+
+547
+01:56:47,828 --> 01:57:14,508
+Aslında dersimizin çoğunu da bitirdik. Geri kalanı diğer haftaya koysak, kalanlar biraz daha toparlayıp devam etseler, matematiksel olarak ne, nasıl çalışıyor, bunu bir koyup, anlayıp koyup öyle gelseler veya şey nasıl olabilir, bilemedim.
+
+548
+01:57:16,372 --> 01:57:32,832
+Direkt paper üzerinde mi anlatsalar bazıları? Hepsi için uygun olmayabilir ama yine slide hazırlanır, yüklendirir. Sonuçta not alacaksınız. Bir şey göstermeniz, yüklemeniz iyi olur, gerekli.
+
+549
+01:57:33,752 --> 01:57:42,231
+Ama acaba direkt paper üzerinde görsek bazı paperlar için daha mı iyi diye de düşünmedim değil.
+
+550
+01:57:44,724 --> 01:58:02,384
+Benim paper'ım için öyle olabilir hocam. Benim integrated gradyanlarla alakalıydı paper'ım ve görsellerde mesela alfa değerine göre, noise'a göre değişimlerini gösteriyordu. Onların hepsini tek tek ben sunuma alamadım açıkçası.
+
+551
+01:58:06,707 --> 01:58:32,867
+Olmazsa gelecek haftaya devam edelim artık dediğin gibi. Diğer arkadaşlara da bu şansı verelim. Tabii ilk sunan arkadaşlar biraz böyle bir şeye sahip oldular. Şanssızlık gibi bir şey yaşamış oldular. Yani tam olarak ne istenildiğini anlamamış gibiler.
+
+552
+01:58:38,739 --> 01:59:01,739
+Ama yapacak fazla da bir şey yok. Şimdi yarısını falan da zaten bitirmişiz. 1, 2, 3, 4, 5, 6, 7 sunum olmuş. 7 sunum olmuş. Gelecek haftaya bırakalım gelisini. Olmazsa bilmiyorum. Gelecek hafta...
+
+553
+01:59:02,547 --> 01:59:13,268
+Öğleden sonra da devam edebiliriz. Yani 3 değil de 4 saat, 5 saat duruma göre durumunuz nasıl bilmiyorum ama.
+
+554
+01:59:14,927 --> 01:59:19,868
+Hocam, pardon. Benimkisi TensorBoard ile alakalı da isterseniz ben bu hafta sunabilirim zaten. Makale değildi de.
+
+555
+01:59:20,688 --> 01:59:26,387
+Anladım. Tamam. Sen bu hafta sun. Başka bu şekilde sunabilecek var mı bu hafta?
+
+556
+01:59:27,387 --> 01:59:29,387
+Ben de aslında bu hafta sunabilirim.
+
+557
+01:59:30,515 --> 01:59:48,655
+Tamam, o zaman biraz size bırakayım. Bu hafta sunmak isteyenler sunsun. Onlar bitince gelecek haftaya kalsın. Tamam, [öğrenci] istersen sen yapsın bunu. Tamamdır hocam, ben paylaşıyorum.
+
+558
+01:59:56,819 --> 01:59:58,319
+Şu an görünüyor mu ekran hocam?
+
+559
+01:59:58,920 --> 01:59:59,119
+Evet.
+
+560
+02:00:01,720 --> 02:00:05,119
+TensorBoard hakkında öncelikle konuşacağım. Ardından da bir tane demo uygulaması yapacağım.
+
+561
+02:00:06,460 --> 02:00:11,199
+TensorBoard, TensorFlow tarafından sağlanan bir görselleştirme harcadır. Özellikle derin öğrenme tarafında kullanılıyor.
+
+562
+02:00:11,699 --> 02:00:16,079
+Süreci izlemek için, hiperparametreleri ayarlamak ve model performansını değerlendirmek için kullanılıyor daha çok.
+
+563
+02:00:17,260 --> 02:00:20,779
+Kullanım sürecindeki paneleri yüklenmesi olarak ilk adım olarak başlıyoruz.
+
+564
+02:00:22,591 --> 02:00:30,711
+TensorFlow'un entegre aracı olarak kullanılıyor. Ama bazı durumlarda PyTorch'da da kullanılabiliyor. Bunun için de farklı bir kütüphaneye entegre ediyoruz. Onu da aşağıda görebiliriz zaten.
+
+565
+02:00:32,711 --> 02:00:40,791
+Verileri kaydetmemiz gerekiyor ilk kütüphane tanımladıktan sonra. TensorFlow'un verileri okuyabilmesi için bir log dosisi oluşturmamız gerekiyor. Bu dosya modelinin eğitim sürecine ait bilgileri içerecektir.
+
+566
+02:00:40,791 --> 02:00:49,751
+Örnek olarak diyelim ki parametreler vereceğiz. Learning, Reign, Backsize. Bunlara göre log dosisi her birinin ayrı ayrı oluşturulup ortak bir dosyaya kaydetilecek.
+
+567
+02:00:50,579 --> 02:00:52,840
+PyTorch'ta da örnek olarak kod yapımız bu şekilde.
+
+568
+02:00:54,420 --> 02:00:57,319
+Başlatmaya geldiğimizde de yine komut satırında başlatabiliriz.
+
+569
+02:00:57,399 --> 02:00:58,119
+Altta görüldüğü üzere.
+
+570
+02:00:58,199 --> 02:01:00,319
+TensorBoard Logs dosyanızı yazarak.
+
+571
+02:01:00,659 --> 02:01:06,479
+Veyahut da Colab'da çalıştırıyorsak direkt olarak zaten başlatınca bize TensorBoard'ın o arayüzünü vermiş olacak.
+
+572
+02:01:06,479 --> 02:01:11,920
+Ama eğer komut satırında, komut yüzüne çalıştıracaksak bize bir tane şey verecek.
+
+573
+02:01:12,420 --> 02:01:14,560
+Lokalhost verecek. Bunu da tarayıcımızda açacağız.
+
+574
+02:01:14,760 --> 02:01:16,739
+Öyle TensorBoard'ın arayüzüne gelmiş olacağız.
+
+575
+02:01:17,747 --> 02:01:18,807
+Arayüzümüze geldi.
+
+576
+02:01:18,827 --> 02:01:28,347
+Arayüzü sırasında, pardon, çalışma sırasında görüntüyü görebiliyor muyuz yoksa iş bittikten sonra loglardan mı bakıyoruz?
+
+577
+02:01:28,887 --> 02:01:34,667
+Şöyle oluyor hocam, iki türlü de yapılabiliyor ama genel olarak ben çalışmam, demo uygulamamda da iş bittikten sonra çalıştırdım.
+
+578
+02:01:34,768 --> 02:01:40,807
+Bütün süreçin zaten ayrı ayrı log dosyları olduğu için süreç olarak da görebiliyoruz ama iş bittikten sonra çalıştırıyoruz daha genel olarak.
+
+579
+02:01:42,515 --> 02:01:53,135
+Özelliklere bakınca da nev varımızda şöyle özellikler bulunuyor. Hepsi hakkında kısa kısa tanım vereceğim. Slide'da da vermişim hocam ama isterseniz uygulama üzerinden verirsem hem vakit olarak da kazanıp sağlayabiliriz.
+
+580
+02:01:53,135 --> 02:01:55,135
+Evet, uygulama üzerinden göstersem da.
+
+581
+02:01:55,135 --> 02:01:58,555
+Tamamdır hocam. Uygulamamız da burada. Görünüyor mu şu anda hocam?
+
+582
+02:01:59,755 --> 02:02:01,555
+Yani okuyamıyorum çok küçük.
+
+583
+02:02:01,815 --> 02:02:03,155
+Evet, birazcık anlatıyorum.
+
+584
+02:02:05,015 --> 02:02:09,099
+Öncelikle kütüphaneleri tanımladım burada hocam. Kullanmak için...
+
+585
+02:02:09,268 --> 02:02:13,668
+TensorBoard'ı kullanmak için PyTorch'da kullandığım için şu tekrinde bir kitap anılaması yaptım.
+
+586
+02:02:13,668 --> 02:02:20,668
+Ardından veriyi dahil etme kodlarını yazdım. Veriyi hazırlama işlemlerine tabi tuttum. Veri ön işleme kısmı.
+
+587
+02:02:20,668 --> 02:02:27,068
+Burada veri gösterleştirme kısmı. İşte çıktı aldım burada bir tane örnek olarak. Ardından model mimarisini oluşturdum.
+
+588
+02:02:27,068 --> 02:02:33,268
+Burada da modeli eğittim. Modeli etmeden önce tabii TensorBoard'ı yükledim. Pip install TensorBoard komutuyla.
+
+589
+02:02:34,100 --> 02:02:44,699
+Ardından da kodada çalıştırdım daha hızlı olması için. Modern mimarimizi çalıştırdım. 3 farklı learning rate verdim ve de backsize olarak da 2 farklı backsize kullandım. Toplamda 6 kere çalıştırdı. Her biri için on ekop olacak şekilde.
+
+590
+02:02:46,140 --> 02:02:51,220
+Burada çıktılarımız. Burada da TensorBud'u çalıştırmak için site'de bahsettiğimiz kod kısmına girdim.
+
+591
+02:02:52,180 --> 02:02:55,500
+Colab'da çalıştırdığımız için direkt olarak bizi zaten burada arayüzünü sundu.
+
+592
+02:02:55,500 --> 02:02:58,340
+Bunu biraz küçültüyorum.
+
+593
+02:03:00,595 --> 02:03:07,595
+Şu sol tarafta her bir Learning Rate için bize Log Dosis'ını kaydetti. Her bir Learning Rate ve Batch Size için parametre değerleri.
+
+594
+02:03:08,095 --> 02:03:14,836
+Time Series'te zamana göre değişimlerini görebiliyoruz burada her biri için. Üzerine geldiğimizde mesela ikinci Epoch'ta ne olmuş, ne bitmiş, accuracy değerleri hakkında.
+
+595
+02:03:15,655 --> 02:03:20,695
+Alt kısmında Loss vs. veyahut da diğer katmanların ağırlık değerleri, Bias Gradyen değerlerini görebiliyoruz.
+
+596
+02:03:21,515 --> 02:03:26,695
+Scalers kısmında da yine aynı şekilde, burada da Epoch olarak aynı verileri görebiliyoruz, Loss, accuracy tarzında.
+
+597
+02:03:27,475 --> 02:03:32,935
+Image kısmında ise resmimizin giriş çıkışında neler olmuş, nasıl bitmiş tarzında birkaç veri görebiliyoruz.
+
+598
+02:03:33,995 --> 02:03:39,055
+Graphs kısmında da modelimizin hakkında daha detaylı katman yapısını inceleyebiliyoruz.
+
+599
+02:03:39,155 --> 02:03:45,215
+Mesela burada konvulyosunun ikinci katmana girip ağırlık değeri, bias değerini görebiliyoruz.
+
+600
+02:03:46,455 --> 02:03:50,536
+Distribution'a da dağılım kısmı var. Burada da dağılımlarını görebiliyoruz her değerimiz için.
+
+601
+02:03:50,536 --> 02:03:52,536
+Bu da farklı değerler için de görebiliriz.
+
+602
+02:03:52,948 --> 02:04:18,168
+Neyi dey? Ama şu an yüklenmedi. Mesela Bayes değerinin, gradyen değerinin dağılımlarını görebiliyoruz ama şu an şöyle oluyor hocam. Mesela Learning Rate 1 için 0.1 için Bayes değerinin dağılımı veyahut da 0.01 için dağılımı, konvülisyon birinci katma için Bayes değerinin nasıl dağılımını gösteririz. Burada da histogram kısmında aslında daha çok anlaşılıyor. Burada zamana göre değişimini de gösteriyor.
+
+603
+02:04:18,739 --> 02:04:42,319
+Daha anlaşılır bir şekilde. Burada istediğimizi ekarte edip, geri şey yapabiliyoruz bu arada, log dosyalarımızı çağırabiliyoruz. Her bir log dosyası için ayrı ayrı gösteriyor. Bu log dosyası da dediğim gibi, learning rate ve diğer parametrelere göre oluşuyor. Mesela burada batch size 1, learning rate 001 için konvülasyon 1'in biasini gösteriyor. Bir yukarıda da batch size 2, learning rate 01 için konvülasyon 1 katmanın bias değerinin dağılımını gösteriyor.
+
+604
+02:04:42,868 --> 02:05:09,268
+Bu hiperparam kısmı var. Tablenin iğinden başlayalım. Burada sıralı olarak tek tek gösteriyor hangi parametrede hangi değerimiz, hangi doğruluk oranına sahip. Düşükten yükseğe doğru gidiyor. Burada daha rahat bir şekilde görüyoruz. Burada direkt mesela en yüksek 0.9'a almışız. Backsize 2, Learning Day 0.1, 0.9 eküresi değerini almışız. Diğerleri için de böyle ayrı ayrı görebiliyoruz keza.
+
+605
+02:05:11,923 --> 02:05:22,104
+Bu da yine parametre değerlerimizin, farklı farklı görün şekilleri, batch size'ımızın, ek üresi değerlerimizin vs. Bu kadar da hocam benim sunumum. TensorBoard ile ilgili.
+
+606
+02:05:23,104 --> 02:05:24,587
+Bilgisayar Mühendisliği için teşekkür ederim.
+
+607
+02:05:29,140 --> 02:05:32,740
+Vekilde IPN1'nin içine gömülebiliyor diye ise.
+
+608
+02:05:34,880 --> 02:05:38,740
+Nasıl hocam? IPN1 evet. Buraya gömüyorum. Buraya gömdüm hocam.
+
+609
+02:05:39,120 --> 02:05:42,580
+Superiter Notebook'un içine gömebiliyorsunuz ön yüzüne.
+
+610
+02:05:43,140 --> 02:05:43,480
+Evet.
+
+611
+02:05:45,600 --> 02:05:47,540
+Herhalde ayrı kendisi de.
+
+612
+02:05:48,340 --> 02:05:51,960
+Bir de komut satırından çalıştırılma şekli var hocam. Yine aynı şekilde bu komutu yazıyoruz.
+
+613
+02:05:52,336 --> 02:05:58,936
+Ama orada bize bir tane lokal host veriyor. O host'a tarayıcımıza yapıştırıyoruz. Aynı şekilde, bu şekilde bir ekran çıkıyor bizim karşımıza.
+
+614
+02:05:58,936 --> 02:06:02,936
+Diğer ayarlamalar vesaire de buradan yapabiliyoruz. Onu da göstereyim.
+
+615
+02:06:02,936 --> 02:06:06,336
+İşte gösterim ayarları vesaire burada mesela.
+
+616
+02:06:06,336 --> 02:06:12,336
+O zaman neyi çizeceğini, sen hangi logları...
+
+617
+02:06:12,659 --> 02:06:17,359
+Kaydettiğine karar vererek yine sen karar veriyorsun. Doğru mu?
+
+618
+02:06:17,359 --> 02:06:21,259
+Evet hocam. Onun içinde mesela fonksiyonlarımız var. Slide'da göstermiştim hatta.
+
+619
+02:06:21,259 --> 02:06:29,259
+Mesela Scalars için şu kodu kullanıyoruz. TfSummary Scalars fonksiyonunu kullanıyoruz. Bunun sayesinde kaydediyoruz tarzında.
+
+620
+02:06:29,259 --> 02:06:34,759
+Kodda gösterebilir misin? Biraz da büyütüp... Çok küçük kodda gösterebilirim. Göremiyorum ben.
+
+621
+02:06:38,771 --> 02:06:49,672
+Mesela şurada Scalar değeri Loss değerine eklemişim. Eccuracy'ye eklemişim. Bir de hani numara doğruluk oranını eklemişim. Kaçtan doğru olduğum karzında. Her biri Learn 2'ye 5 sayısca.
+
+622
+02:06:49,672 --> 02:06:55,292
+Cancer, Log, Add Scalar, Loss, Total Loss, Epoch. Burası tamam ama logo anlamadım ben.
+
+623
+02:06:55,892 --> 02:06:58,472
+Hocam Log şöyle, şu an önceden çalıştığım için şu an yok da.
+
+624
+02:06:58,899 --> 02:07:13,159
+Tensör Board at Scalar'da sanki şu anda program çalışırken direkt oluşturuyoruz gibi. Log'dan mı okuyor Tensör Board yoksa logo yazıp tekrar mı okuyor? Nasıl oraya anladın mı?
+
+625
+02:07:13,359 --> 02:07:20,519
+Şöyle çalıştırdım hocam ben. Şu an vaktim olmadığı için çalıştıramadım da önceden yapıp Tensör Board böyle kaldığı için hemen bu üzerinden anlattım.
+
+626
+02:07:20,519 --> 02:07:26,899
+Ama yaparken böyle bir Rans dosyası oluşturuyor. İsmi Rans. Altına da Log dosyaları kaydediyor. Her bir Epoch ve her bir...
+
+627
+02:07:26,899 --> 02:07:29,899
+Learning Rate ve Backside için ayrı ayrı log dosyunu kaydediyor.
+
+628
+02:07:30,259 --> 02:07:32,439
+Ardından herhangi bir TensorFlow Bot görünmüyor.
+
+629
+02:07:32,539 --> 02:07:39,119
+Ben bunu çalıştırdıktan sonra da bu runs'ın içindeki her bir log için buradaki değerlerimi görebiliyordum.
+
+630
+02:07:39,539 --> 02:07:41,359
+Yani çalışma sırasında da belki kaydediyor olabilir.
+
+631
+02:07:41,359 --> 02:07:42,359
+Ama...
+
+632
+02:07:42,836 --> 02:07:50,336
+İki ayrı aslında şey var. Bir logo kendisi kaydediyor bir de o logdan da okuyor gibi gözüküyor.
+
+633
+02:07:50,796 --> 02:07:55,536
+Evet hocam. Ben ama logdan okuyan tarzını şey yaptım. Kaydettikten sonra hepsini birlikte okudum.
+
+634
+02:07:55,855 --> 02:07:56,895
+Nerede kaydediyor?
+
+635
+02:07:57,435 --> 02:08:01,615
+Burada Rans dosyası kaydediyor hocam. Onun için tekrar çalıştırmam lazım. Biraz uzun sürdüğü için önceden çalıştırdım.
+
+636
+02:08:02,395 --> 02:08:03,076
+Bu dosyası şurada...
+
+637
+02:08:03,076 --> 02:08:04,516
+Kodda nerede kaydediyor?
+
+638
+02:08:05,355 --> 02:08:07,176
+Kodda hocam hemen göstereyim.
+
+639
+02:08:46,292 --> 02:09:01,092
+Yazan kısım burası hocam. Summary Writer kısmıyla yazıyor. Yani her bir best size ve learning date'e göre RANS dosyasının altına kaydedik şekilde çıkartıyor. Bu tabi basic değerler yani direkt olarak şey, bir isim kaybremiyor.
+
+640
+02:09:01,092 --> 02:09:02,812
+Summary Writer mi yazıyor?
+
+641
+02:09:03,252 --> 02:09:03,912
+Evet hocam o kısım.
+
+642
+02:09:03,912 --> 02:09:06,772
+Writer nesnesi oluşturdun, oraya ekliyorsun.
+
+643
+02:09:07,412 --> 02:09:07,992
+Evet hocam.
+
+644
+02:09:08,435 --> 02:09:23,195
+Yine bu sunum dosyamda da bu hepsi için ayrı ayrı gösteriyorum hocam. Mesela image için summary image de kaydediyorum. Graph distribution, histogram için vs. Kod örnekleri de var zaten bir şeyde sunum dosyamda da. Ama buradan göstermek istedim zaman kısıtlı olduğu için.
+
+645
+02:09:25,036 --> 02:09:35,475
+Bu tarzda hocam. Dediğim gibi eğer konsoldan yazdıracaksak da aynı şekilde şu tensor board çıkacak. Sadece vermiş olduğu bize localhost'u tarajımızı yapıştırıp enter'lamamız gerekiyor.
+
+646
+02:09:36,243 --> 02:09:38,163
+Sunma bu kadardı hocam. Diz için teşekkür ederim.
+
+647
+02:09:42,515 --> 02:09:43,535
+Teşekkürler.
+
+648
+02:09:44,815 --> 02:09:45,475
+Sağ olun hocam.
+
+649
+02:09:53,427 --> 02:09:55,007
+Ben devam edeyim mi hocam?
+
+650
+02:09:55,728 --> 02:09:56,648
+Tamam, sağ olun.
+
+651
+02:09:57,967 --> 02:09:59,608
+Ismimiz [öğrenci] hangi?
+
+652
+02:09:59,608 --> 02:10:00,368
+[öğrenci].
+
+653
+02:10:01,368 --> 02:10:04,128
+[öğrenci]'den hemen sonra geliyordum aslında sıraları.
+
+654
+02:10:04,128 --> 02:10:05,488
+[öğrenci]'ten.
+
+655
+02:10:17,332 --> 02:10:18,471
+Şöyle ekranım geliyor mu?
+
+656
+02:10:20,092 --> 02:10:20,792
+Evet, geldim.
+
+657
+02:10:22,676 --> 02:10:35,816
+Şimdi, makine öğrenimi modellerinde kullanılan Differentially Private Psikotistik Gradient Discount algoritmasında gradient clapping yönetiminin etkilerini anlamaya çalışıyoruz bu makaleyle.
+
+658
+02:10:35,816 --> 02:10:45,596
+Gradient clapping bir örnekten elde edilen gradiyan büyüklüğünün belirli bir eşit değeri aşması durumunda bu gradiyanı küçültmek için kullanılıyor.
+
+659
+02:10:46,515 --> 02:10:59,415
+Öncelikle Gradient Clipping'in deriften başlamak istiyorum. Bu makine öğreniminde özellikle büyük gradyanların sebep olduğu optimizasyon problemlerini engellemek için kullanılan bir tekniktir. Peki nasıl çalışır?
+
+660
+02:10:59,755 --> 02:11:14,515
+Gradient normları bir eşik değerle sınırlandırılır ve bu sayede model eğitimi sırasında oluşabilecek gradient patlamalarının önüne geçilmiş oluyor. Her bir veri örneği için hesaplanan gradientların 52 normu belirli bir eşik değer.
+
+661
+02:11:14,515 --> 02:11:21,935
+İçik değeri C ile sınırlandırılır. Bu işlem büyük gradyanların diğer gradyanlar üzerinde de etkisini azaltmış oluyor.
+
+662
+02:11:22,595 --> 02:11:26,515
+Clipping işlemi de şu şekilde formülü gördüğünüz üzere yapılıyor.
+
+663
+02:11:27,604 --> 02:11:54,684
+G Gradiyanı, G normu ise L2 normunu aslında ifade ediyor. Buradaki temel hedefimiz büyük gradiyanlar nedeniyle optimizasyonun yanlış yönde ilerlemesini önlemek. Özellikle bu DPSGD bağlamında gizliliğini sağlamak. Gradiyan Clipping'i daha iyi anlamak için aslında şöyle düşünebiliriz. Bu teknik bir dağ yolunda kontrolden çıkmış bir aracı güvenli bir yola yönlendirmek için çalışıyor.
+
+664
+02:11:55,380 --> 02:12:12,380
+Çok kısa DPSG'den de bahsetmek istiyorum. Bu standart Scott Estik Gradient Distant algoritmasının gizlilik garantisini sağlamak için modifiye edilmiş bir versiyonudur. Bu algoritma özellikle hassas verilerle çalışırken model eğitiminin gezilemiyle...
+
+665
+02:12:13,076 --> 02:12:26,255
+DPSGD, Differential Probability prensiplerine uygular ve herhangi bir bireyin verisinin modele olan etkisini sınırlayarak gizlilik ihlallerinin riskini minimize eder.
+
+666
+02:12:27,595 --> 02:12:34,055
+Bu işleyişi aslında birkaç temel adımdan oluşuyor. İlki gradient clipping, bunu zaten önceki slide'da anlattık.
+
+667
+02:12:41,076 --> 02:12:49,576
+Bu, bireysel bir verinin gradyanının nihai model güncellemeleri üzerindeki etkisini maskeliyor.
+
+668
+02:12:50,435 --> 02:12:58,435
+Son olarak da model güncellemesi. Burada gürültü eklenmiş gradyanlar kullanılarak model parametreleri güncellenir.
+
+669
+02:12:59,475 --> 02:13:02,135
+Burada alfa öğrenme oranıdır.
+
+670
+02:13:03,572 --> 02:13:21,811
+Gradient Clipping her ne kadar faydalı olsa da bazı problemlere doğurabilir. İlki Clipping Bayez. Gradiyanların kesilmesi optimizasyon yönünde sapmalara yol açıyor. Örneğin bir hedefe ulaşmak için düz bir yol ilerlemek yerine dairesel bir yol çizdiğimizi düşünebiliriz.
+
+671
+02:13:31,572 --> 02:13:40,152
+Gradient Clipping'in teorisi ideal koşullara dayanıyor. Ancak gerçek dünyada veri ve model kalmışlıkları da bu teoriyi zorlar.
+
+672
+02:13:42,131 --> 02:13:58,091
+Burada Gradient Clipping işlemi sırasında gradiyanlar belirli bir C eşitliği ile sınırlandırılıyor. Bu durum gradiyanların optimizasyon yönünden sapmasına neden olabilir. Matematiksel olarak da Clipping Bayez şu şekilde tanımlanabilir.
+
+673
+02:13:58,091 --> 02:14:10,011
+Burada G gerçek gradiyan, C'ye de Clipping eşiğini ifade ediyor. Clipping işlemi özellikle büyük normlara sahip gradiyanlar için optimizasyon yönündeki ilerlemeyi sınırlıyor.
+
+674
+02:14:10,131 --> 02:14:14,671
+Bayas'ın büyüklüğünü de şu şekilde bu formülle ifade edebiliriz.
+
+675
+02:14:15,507 --> 02:14:33,328
+Peki, bu neden olduğu problemleri çözmek için de çeşitli çözüm yöntemleri geliştirilmiştir. İlki geometrik analiz, gradyan dağılımlarını analiz etmek ve simetrik referans dağılımlarıyla karşılaştırmak. Bu yanlığı azaltıyor ve aynı zamanda optimizasyonunu da iyileştiriyor.
+
+676
+02:14:33,328 --> 02:14:42,887
+Pre-Clipping Provisation'da gradyanlara kesimden önce Gaussian-Lewis eklemek, dağılımları homojenleştiriyor ve aynı zamanda da bayası azaltıyor.
+
+677
+02:14:43,507 --> 02:14:52,368
+Bu çözümleri kullanarak optimizasyonun hem teorik hem de pratik anlamda daha verimli hale geldiğini doğrulamış oluyoruz.
+
+678
+02:14:53,288 --> 02:14:58,188
+Deneysel sonuç çalışmalarda bu çözümlerin etkilerini açıkça göstermektedir.
+
+679
+02:14:59,507 --> 02:15:04,028
+MNIST ve C410 veri setleri kullanılmıştır bu çözümler için.
+
+680
+02:15:04,028 --> 02:15:07,408
+MNIST, el yısıtı rakamları içeren bir veri setidir.
+
+681
+02:15:11,507 --> 02:15:29,047
+Öğrenme görevlerinde sıklıkla kullanılıyor. Çalışmada iki evrişimli katman ve bir tam bağlantılı katman içeren bir CNN modeli eğitmek için kullanılmıştır. İlk epoçta gradyan dağılımları asimetrik başlar ancak eğitim ilerledikçe de simetrik hale gelir.
+
+682
+02:15:29,047 --> 02:15:38,047
+Sifar 10 sınıf ayrılmış küçük renkli görüntülerden oluşan bir veri setidir. Görüntü sınıflandığında...
+
+683
+02:15:40,180 --> 02:15:45,180
+Sizin mikrofondan geliyor, başka mikrofondan onu sordum.
+
+684
+02:15:45,180 --> 02:15:49,180
+Ben de duydum aynı seste hocam, bilemedim kimden geliyor.
+
+685
+02:15:50,180 --> 02:15:52,716
+Benden geliyormuş hocam, pardon kapattım hemen.
+
+686
+02:15:52,756 --> 02:15:54,156
+Tamam, devam et sen.
+
+687
+02:15:54,676 --> 02:16:07,376
+Tamamdır. Sifartem'de görüntü sınıflandırma ve derin öğrenme uygulamalarında yaygın olarak kullanılıyor. Bu çalışmada iki evreşim bir katman ve bir tam bağlantılı katman içeren bir CNN modeliyle eğitilmiştir.
+
+688
+02:16:07,376 --> 02:16:20,756
+Evreşim katmanları ikiye iki maksimum havuzlama işlemeyi kullanırken tüm katmanlarda bir ReLU aktivasyon fonksiyonu uygulanmıştır. Ayrıca %50 dropout oranı kullanılarak da modelin aşırı öğrenmiştir.
+
+689
+02:16:20,756 --> 02:16:44,523
+Bu örneğe bakalım.
+
+690
+02:16:44,595 --> 02:17:10,915
+Kozin Simularity Histogramlarında ise gradyan simetrisini ölçmek için kullanılıyor. Histogramlar skotastik gradyanlarla gerçek gradyanlar arasındaki kosinüs benzerliklerini gösteriyor. Burada soldaki grafikte gördüğümüz gibi epoch 0'da kosinüs benzerlikleri geniş bir aralıkta asimetrik bir dağılım sergilediğini görüyoruz. Bu başlangıçta gradyanların düzensiz olduğunu ve simetriden uzak olduğunu gösteriyor.
+
+691
+02:17:12,595 --> 02:17:37,615
+İstediğinde ise Epoch 10'da kosinist benzerlikleri daha dar bir aralıkta simetrik bir dağılıma yaklaşmıştır. Eğitim sürecinde gradyanların daha düzenli hale geldiği ve simetrik azandığı da görülmektedir. Peki neden bu çözümleri tercih ediyoruz? Simetrik gradyan dağılımları yanlılığı azaltır çünkü dağılımın merkezi noktasına yakın olması optimizasyon yönünü doğrular.
+
+692
+02:17:40,595 --> 02:17:46,556
+Bu da matematiksel olarak şu şekilde ifade ediyor.
+
+693
+02:17:46,556 --> 02:17:54,835
+Burada Pt gerçek gradyan dağılımını, Tilda Pt ise simetrik referans dağılımını ifade ediyor.
+
+694
+02:17:56,147 --> 02:18:04,608
+Gaussian noise ve denge sağlamada ise noise eklenmesi gradyan dağılımlarının homojenleştirerek Bayez ile varyans arasında bir denge kuruyor.
+
+695
+02:18:04,967 --> 02:18:09,227
+Pratikte bu daha kararlı bir öğrenme süreci anlamına geliyor.
+
+696
+02:18:09,627 --> 02:18:12,867
+Noise ekleme işlemi de matematiksel olarak şu şekilde uygulanıyor.
+
+697
+02:18:12,867 --> 02:18:24,147
+Burada kayıp fonksiyonunun mevcut parametre üzerindeki türevi, skotastik bir bileşini, Gaussian noise yani sıfır ortalama ve birim varyansa sahip bir normal dağılımlar.
+
+698
+02:18:24,147 --> 02:18:34,967
+Gürütü ve Gradient Clipping'in eşik değerini, son olarak da gürütü ve clipping işlemleri uygulanmış nihai Gradyanın form üzerindeki değerlerini görüyorsunuz.
+
+699
+02:18:35,867 --> 02:18:39,967
+Burada ise simetrik olmayan bir dağılımı simetriye yaklaştırmak.
+
+700
+02:18:46,067 --> 02:19:10,407
+Azaltarak optimizasyonu iyileştiriyor. Bu mesafe dağılımlar arasındaki farkı ölçer ve bias adantımında da kritik bir rol oynar. İki olasılık dağılımı arasındaki mesafeyi ölçüyor. Matematiksel olarak da bu şekilde ifade ediliyor. Burada p ve q dağılımları ifade ederken iki nokta arasındaki mesafe burada ökületmesinde kullanılabilir. p ve q arasındaki ortak dağılımı da görmüş oluyoruz.
+
+701
+02:19:10,804 --> 02:19:21,144
+Sonuç olarak gradient clipping DPSCD'nin temel bir bileşenidir. Simetrik gradient dağılımları sağlandığında bayaz azalıyor ve konverjans hızlanıyor.
+
+702
+02:19:21,863 --> 02:19:27,144
+Gelecekte daha çok şu alanlara odaklanmamız gerektiğini açıkçası düşünüyorum.
+
+703
+02:19:27,144 --> 02:19:38,144
+Gradient dağılımlarını aktif olarak simetrikleştirecek tekniklerin geliştirilmesi, çeşitli model ve veri setleri arasındaki ilişkilerin detaylıca incelenmesi.
+
+704
+02:19:38,804 --> 02:19:48,563
+Ve son olarak da bence yanlık varyans dengesini iyileştirecek daha sofistiki mekanizmalar geliştirilmesi olarak düşünebiliriz.
+
+705
+02:19:49,463 --> 02:19:52,363
+Benim sunumum bu kadardı. Dinlediğiniz için teşekkür ederim.
+
+706
+02:20:02,355 --> 02:20:11,355
+Bu paperı nasıl seçmiştik? Siz yazmışsınız hocam, ben kendim yaptım. Bizimle yaptınız benim.
+
+707
+02:20:11,355 --> 02:20:20,355
+Baya ağır bir papermış aslında. Evet. Matematiksel evet ağır, biraz fazla geldi bundan açıkçası.
+
+708
+02:20:28,084 --> 02:20:30,763
+Varsa devamında ben de sunabilirim.
+
+709
+02:20:35,987 --> 02:20:36,987
+Siz hazırlanın.
+
+710
+02:21:35,924 --> 02:21:36,724
+Interessant.
+
+711
+02:21:42,451 --> 02:21:44,591
+Kura evisiyle ilgili bir şeydi ya.
+
+712
+02:21:50,164 --> 02:21:52,108
+Gradient Clipping
+
+713
+02:22:01,396 --> 02:22:09,896
+Private SGD diye bir şey varmış. Stokastik gradient descent ama private.
+
+714
+02:22:14,963 --> 02:22:16,963
+Differential Privacy diyor.
+
+715
+02:22:19,664 --> 02:22:20,664
+Enter is on.
+
+716
+02:23:09,716 --> 02:23:10,855
+Etik analiz.
+
+717
+02:23:14,515 --> 02:23:19,515
+Klippin Pes, yes, on, emergence.
+
+718
+02:23:40,084 --> 02:23:52,144
+Peki. Bu bayağı bir makaleymiş. Teorik tarafı çok fazla olan bir makale.
+
+719
+02:24:04,755 --> 02:24:08,195
+Peki, şimdi hangi arkadaşımız sunmak istiyor?
+
+720
+02:24:09,815 --> 02:24:11,255
+Envacım, [öğrenci].
+
+721
+02:24:12,036 --> 02:24:12,835
+İsminiz?
+
+722
+02:24:13,495 --> 02:24:14,135
+[öğrenci].
+
+723
+02:24:14,975 --> 02:24:17,095
+[öğrenci] mi?
+
+724
+02:24:17,815 --> 02:24:18,635
+Evet, o.
+
+725
+02:24:18,876 --> 02:24:19,916
+Tamam, sunalım.
+
+726
+02:24:32,564 --> 02:24:33,064
+Sağlıyorum.
+
+727
+02:25:28,435 --> 02:25:29,855
+Yani yetkiste da var.
+
+728
+02:25:46,131 --> 02:25:46,731
+[öğrenci] geldi mi?
+
+729
+02:25:50,420 --> 02:25:50,979
+Yen.
+
+730
+02:25:54,579 --> 02:26:01,599
+Benim makalam TÜTKOR KENDİ. Bu CNN'ler üzerinde çalışılmış makalede daha çok.
+
+731
+02:26:04,059 --> 02:26:14,579
+Giriş problem tanımında CNN'lerin tahminleri açıklayamaması. CNN'ler özellikle görüntüsü notlandırma ve nesne tespiti görevlerinde yüksek doğrulukla çalışıyor.
+
+732
+02:26:14,579 --> 02:26:21,619
+Ancak bir tahmin yaparken kullandıkları mantığı ve neden belirli bir noktaya ulaştıklarını insanlar için açıklayamıyorlar.
+
+733
+02:26:22,579 --> 02:26:32,360
+Bu da modelin güvenilirliği ve anlaşılabilirliği açısından ciddi bir sınırlama oluşturuyor. Mesela bir görüntüde tümör var diyor ama neden dediğini belli edememesi gibi.
+
+734
+02:26:33,811 --> 02:26:52,912
+Mevcut görselleştirme yöntemlerinin sınırlamaları öncesinde var olanlardan bahsedeceğim birazcık. Bu gradient-based yöntemlerde modelin çıktısının girdiği olan türevi estaplanarak önemli bölgeler belirleniyor. Gürültülü görselleştirmeler, gradient haritaları genellikle gürültülü oluyor.
+
+735
+02:26:53,459 --> 02:27:12,719
+Bu modelin hangi bölgelerden karar verdiğini anlamaya sıznı zorlaştırıyor. Gradient Saturation, Reli ve Sigmoid gibi aktivasyon fonksiyonları gradientlerin sıfıra yaklaşmasına veya tamamen kaybolmasına neden olabiliyor. Bu durum modelin belirlediği önemli bölgeleri doğru bir şekilde temsil etmesini engelliyor.
+
+736
+02:27:13,639 --> 02:27:18,599
+False Confidence gradient-based yöntemler bir aktivasyon haritasına yüksek ağırlık atabiliyor.
+
+737
+02:27:19,507 --> 02:27:24,507
+Ancak bu harita model çıkısına gerçekten çok az katkı sağlıyorsa yanıltıcı bir güven oluşturabiliyor.
+
+738
+02:27:24,507 --> 02:27:28,507
+Burada bahsettiğimiz aktivasyon haritaları da...
+
+739
+02:27:28,884 --> 02:27:49,623
+Aslında bir görüntüde belirli özelliklerden tespit edilmesini sağlayan görsel temsiller. CNN katmanları tarafından üretiliyor ve modelin giriş görüntüsündeki belirli bölgelerden nasıl bilgi çıkardığını gösteriyor. Mesela örneğin bir kedi görüntüsü için aktivasyon harikaları, kedinin yüzlüğü, bıyıkları veya kulakları gibi önemli bölgeleri temsil edebilir.
+
+740
+02:27:50,260 --> 02:28:16,720
+Bu, aktivasyon haritaları modelin hangi bölgelere odaklandığını anlamak için kritik bir araç. Ancak yanlış ağırlıklandırma gibi problemler bu haritaların doğruluğunu olumsuz etkiliyor. Bu şekil ikide de aslında bu gösterilmiş. Farklı aktivasyon haritalarına atanan ağırlıkların model çıktısına etkisi görselleştirilmiş bu şekil ikide. En yüksek ağırlığa sahip harita yani bu 0.035'lik.
+
+741
+02:28:17,332 --> 02:28:22,311
+Hedef skorunu aslında en az artışa yol açan sonucu vermiş.
+
+742
+02:28:25,092 --> 02:28:29,252
+Pervitation-based yöntemlerdeki sıkıntılardan bahsedecek olursak.
+
+743
+02:28:29,551 --> 02:28:33,332
+Hesaplama maliyeti yüksek. Her bozulma için modelin çıktısı yerinden hesaplanıyor.
+
+744
+02:28:33,851 --> 02:28:36,412
+Bu işlem özellikle büyük veri setlerinde oldukça zaman alıyor.
+
+745
+02:28:37,092 --> 02:28:39,191
+Ek regulizasyonlar gerektiriyor.
+
+746
+02:28:39,191 --> 02:28:43,191
+Hangi bölgelerin önemli olduğunu netleştirmek için ek matematiksel işlemler ve...
+
+747
+02:28:43,667 --> 02:28:58,407
+Regülizasyon uygulanması gerekiyor. Bu yöntemin uygulanabilirliğini zorlaştırıyor. Özet olarak bu yöntemler doğu sonuçları üretebiliyor ancak ama hesaplama maliyeti yüksek olduğu için çok gerçek dünya problemlerine uygun değil.
+
+748
+02:29:02,708 --> 02:29:27,608
+Mimariye bağımlılık var bunlarda. İşte kem tabanlı yöntemlerde global, blink layer gibi özel katmanlar gerektiriyor. Bu kotmanlar yoksa yöntem uygulanamıyor. Esneklik eksikliği var. Kem yöntemleri daha karmaşık mimarilerde birden fazla tam bağlantı katmanı içeren modellerde yetersiz kalabiliyor. Özet olarak da bunlarda mimari sıkıntıları ve esneklikten yoksun olduğu için.
+
+749
+02:29:28,308 --> 02:29:34,308
+Çok tercih edilmiyor. Buradaki problemin ana önemi...
+
+750
+02:29:34,644 --> 02:30:00,244
+Şeffaflık eksikliği, CNN'lerin iç işleyişini anlamak, modellerin güvenilirini ve benimsemesini arttırıyor. Bu durum özellikle sağlık güvenlik ve otomot sistemler gibi yüksek riskli alanlarda büyük önem taşıyor. Modelin performansını geliştirmek için kullanılabiliyor. Modelin karar mekanizmalarını anlamak, hatalarını tespit etmek ve düzeltmek için kritik bir adım. Veri setlerin yanlılıklarını tespit etmelerde kullanılıyor. Görselleştirme yöntemleri.
+
+751
+02:30:00,819 --> 02:30:04,739
+Veri setindeki yanlıkları ve tutarsızlıkları açığa çıkarabiliyor.
+
+752
+02:30:04,899 --> 02:30:13,099
+Örneğin bir veri setindeki tüm bisiklet görsellerinde insanlar yer alıyorsa, model insan ve bisiklet sınıfıyla ilişkilendirebiliyor.
+
+753
+02:30:14,020 --> 02:30:17,040
+Bu tür yanlıkları tespit etmek için kullanılıyor.
+
+754
+02:30:18,439 --> 02:30:22,799
+Buradaki şekil 1'de de aslında bir örnek görsel vermiş.
+
+755
+02:30:22,799 --> 02:30:27,479
+Input ile ilgili GradCAM'in, GradCAM++'ın, ScoreCAM'in.
+
+756
+02:30:27,860 --> 02:30:32,020
+Önemli bulduğu, ayırt edici bulduğu yerlerin yoğunlukları üzerinden.
+
+757
+02:30:33,880 --> 02:30:53,420
+Scorecam nedir? Scorecam CNN'in karar mekanizmalarını açıklayan bir yöntem. Aktivasyon haritalarını hedef sınıf üzerindeki etkilerine göre ağırlıklandırıyor. Bu sayede modelini tahmin yaparken hangi bölgelere odaklandığını görselleştiriyor. Gradient Free, gradientsiz bir yöntem olarak önceki yöntemlerin gürültü, doygunluk ve yanlış güven sorumluluklarını ortadan kaldırıyor.
+
+758
+02:30:54,868 --> 02:31:11,668
+Scorecam adımlarına geldiğimizde ilk aktivasyon haritalarını çıkarıyor. Aktivasyon haritalarının normalizasyonu ve maskelenmesini yapıyor. Sonra maskelenmiş girdileri hedef sınıfa olan etkisini hesaplıyor. En sonunda aktivasyon haritalarının ağırlıklandırmasını yapıyor.
+
+759
+02:31:12,371 --> 02:31:28,912
+Adım adım ilerleyecek olursak, aktivasyon haritadan çıkarılması dediğimiz, CNN'in bir convolutional layer'ından aktivasyon haritaları alınıyor. Bu haritalar modelin giriş görüntüsünden çıkardığı farklı özellikleri temsil ediyor. Buradaki amaç, modelin giriş görüntüsünden hangi özellikleri algıladığını anlamak.
+
+760
+02:31:30,932 --> 02:31:39,231
+Aktivasyon haritaları normalizasyonu ve maskelenmesi kısmında çıkarılan aktivasyon haritaları giriş görüntüsü boyutlarına ölçeklendiriliyor.
+
+761
+02:31:40,532 --> 02:31:49,872
+Haritalar normalize ediliyor. 0-1 değer aralığına getiriliyor. Bu işlem bu modelin hangi bölgeler daha çok odaklandığını anlamayı kolaylaştırıyor.
+
+762
+02:31:51,092 --> 02:31:56,972
+Normalizasyon sonrası aktivasyon haritaları giriş görüntüsüyle çarpılarak maskelenmiş girdiler oluşturuluyor.
+
+763
+02:31:57,716 --> 02:32:12,796
+Bu adımın anı amacı modelin hangi bölgeleri hedef sınıfı için önemli gördüğünü daha net bir şekilde görselleştirmek. Bu yanlış güven gibi gradient-based yöntemlerde karşılaşan sorunları ortadan kaldırmak. Bu ekrandaki görselde de...
+
+764
+02:32:13,268 --> 02:32:30,448
+Normalizasyon etkisi gösterilmiş. Pre-softmax skorlarının sınıfa ayrımını netleştiremediğini ve tahminlerin diğer sınıfa dağıldığını göstermiş. Post-softmax normalizasyon uygulandıktan sonra hedef sınıfa daha iyi odaklanmış ve biraz daha sınıfa ayrımını netleştirilmiş.
+
+765
+02:32:32,547 --> 02:32:36,488
+Adım 3. Bu maskelenmiş girdilerin hedef sınıfı etkisini hesaplama.
+
+766
+02:32:36,879 --> 02:32:42,500
+Maskelenmiş her bir giriş modelden geçiriliyor ve hedef sınıfı olan skor artışı hesaplanıyor.
+
+767
+02:32:43,840 --> 02:32:48,319
+Bu süreçte her bir aktivasyon haritasının hedef sınıf üzerindeki katkısı değerlendiriliyor.
+
+768
+02:32:48,319 --> 02:32:54,279
+Skor artışı modelin maskelenmiş bir girdiğiyle ne kadar daha güvende bir tahmin yaptığını ölçüyor.
+
+769
+02:32:55,439 --> 02:33:00,299
+Ana amacı da buranın her bir aktivasyon haritasının hedef sınıf üzerindeki etkisini net bir şekilde değerlendirmek.
+
+770
+02:33:01,459 --> 02:33:03,319
+Görsel 4'te de...
+
+771
+02:33:04,308 --> 02:33:08,188
+Farklı yöntemlerle üretilen bu seylinse haritalarını karşılaştırmışlar.
+
+772
+02:33:09,348 --> 02:33:16,308
+Scorecam bundan önceki yöntemlere göre biraz daha detaylı, net sonuçlar vermiş.
+
+773
+02:33:17,788 --> 02:33:21,648
+Son adıma geldiğimizde aktivasyon haritalarının ağırlıklandırılması.
+
+774
+02:33:21,648 --> 02:33:28,568
+Her aktivasyon haritası hesaplama skor artışına göre ağırlıklandırılıyor ve birleştirecek nihayi seylinse haritaları oluşturuluyor.
+
+775
+02:33:29,172 --> 02:33:35,612
+Bu harita modelin karar mekanizmasını görselleştiriyor ve hangi bölgeden hedef sınıfa katkıda bulunduğunu net bir şekilde ortaya koyuyor.
+
+776
+02:33:38,051 --> 02:33:44,231
+Buradaki ana amaç da klas ayrımlarının daha net göstermesi.
+
+777
+02:33:44,832 --> 02:33:47,891
+Şekil altıda da bununla ilgili bir adım göstermiş.
+
+778
+02:33:48,492 --> 02:33:53,851
+Köpek ve kedi artık neye göre ayırdığını net bir şekilde görsel üzerinde görselleştirebiliyor.
+
+779
+02:33:54,355 --> 02:34:03,115
+Scorecam'ın aslında pipeline süreci bu adımları takip ederek modelin kararlarını güvenilir ve net bir şekilde açıklamaya yarayan sales haritaları üretmek.
+
+780
+02:34:04,884 --> 02:34:22,524
+SkorCam'in önemli farklarına geldiğimizde, işte Gradient Free bir yaklaşım. Gradient ve Gradient Plus Plus gibi Gradient bağımlı yöntemlerin gürültü ve doygunluk sorunu çözmek için tasarlanmış. Backprope'e geçilmeye türev kullanılmıyor. Bunun yanına aktivasyonların modeli olan katkısı ölçülüyor.
+
+781
+02:34:23,224 --> 02:34:32,884
+Hedef sınıf odaklılık, aktivasyon haritasının önemini sadece hedef sınıf üzerindeki etkisiyle ölçüyor. Bu sayede daha net ve anlamlı...
+
+782
+02:34:32,884 --> 02:34:34,144
+Seylinse haritaları oluşturuyor.
+
+783
+02:34:34,904 --> 02:34:39,304
+Mimari bağımsızlık, global pooling ve özel mimari kısıtlamaları olmadan çalışabiliyor.
+
+784
+02:34:39,844 --> 02:34:44,804
+Gürültü azaltma, bu aktivasyon haritaları normalize ederek de daha temiz görseller üretmeye çalışıyor.
+
+785
+02:34:46,923 --> 02:34:50,884
+Makalede uygulanan bazı deneyler ve sonuçlar var burada.
+
+786
+02:34:52,283 --> 02:34:55,703
+Çoklu nesne algılama üzerindeki performans test edilmiş.
+
+787
+02:34:57,463 --> 02:34:59,804
+Yani Gradcam genellikle yalnızca bir nesneye odaklanırken...
+
+788
+02:35:00,788 --> 02:35:12,507
+Grad Cam Plus Plus birden fazla nesneye dair bilgileri verebilmiş. Ancak Skor Cam çoklu nesneler daha iyi ayrıştırmış. Daha net Salins haritaları oluşturmuş.
+
+789
+02:35:13,448 --> 02:35:25,907
+Nicel Performance'da iki farklı ölçüm yapılmış. Bu Salins haritaların hedef sınıfa dair ne kadar iyi bilgi taşıdığını ölçmek için average stroke ve average increase metrikleriyle ölçülmüş.
+
+790
+02:35:26,420 --> 02:35:48,180
+Average Drop, Selenius haritasının hedef sınıfı ait bilgiyi ne kadar koruduğunu ölçen bir metrik. Düşük değerler haritanın hedef sınıf üzerindeki bilgiyi daha iyi koruduğunu gösteriyor. Average Increase de Selenius haritasının hedef sınıf bilgisini arttırma yeteneğini ölçüyor. Yüksek değerlerde haritanın hedef sınıfa dair bilgiyi daha iyi vurguladığını gösteriyor.
+
+791
+02:35:48,852 --> 02:36:09,592
+Delation Instruction testlerinde de yine GradCAM ve GradCAM++'a göre daha yüksek değerler elde edilmiş. Delation testi görüntüdeki önemli pikseller silindikçe hedef sınıf skorunun düşme hızını ölçüyor. Daha hızlı düşüş, Selins haritasının daha doğru bölgeleri temsil ettiğini gösteriyormuş.
+
+792
+02:36:10,868 --> 02:36:23,528
+Insertion testi de görüntüye önemli pikseller eklendikçe hedef sınıf skorunun artma hızını ölçüyor. Daha hızlı artışta Sail Insertion hedef sınıf için daha etkili olduğunu tanıtlıyor.
+
+793
+02:36:25,492 --> 02:36:31,792
+Senity Check model güvenilirliği. Buradaki test aslında Senity Check dediğimiz,
+
+794
+02:36:32,612 --> 02:36:37,031
+Sail Insta haritalarının model parametrelerine duyarlılıp olmadığını kontrol eden bir yöntem.
+
+795
+02:36:38,031 --> 02:36:39,952
+[öğrenci] kaç slide'ın var?
+
+796
+02:36:40,891 --> 02:36:45,292
+Son iki slide'ım hocam. Hatta son bir slide'ım var bundan sonra.
+
+797
+02:36:46,420 --> 02:37:00,299
+Bunun amacı da Selins haritalarının modelin iç yapısını ve karar mekanizmasını doğru bir şekilde yansıtıp yansıtmadığını anlamak. Nasıl çalışıyor? Model parametreleri rastgele değiştiriliyor veya çıkarılıyor. Örneğin ağırlıklarının sınıflandırılması.
+
+798
+02:37:04,948 --> 02:37:29,907
+Arıza olarak Seylin's haritalarında değişik değişmediği gözlemleniyor. Eğer parametre değişikliklerine rağmen Seylin's haritası aynı kalıyorsa harita modelin yapısından bağımsız ve güvenilir olmadığı ortaya çıkıyor. Parametre değişikliklerine uygun olarak Seylin's haritalarda değişiyorsa bu haritalar modelin gerçek karar mekanizmasını yansıtmak için güvenilir kabul ediliyor. Burada da değişimler yansıtılmış görsellerde.
+
+799
+02:37:31,796 --> 02:37:48,536
+Eğitim sürecinde yanlış sınıflandırma analizi yapılmış. Yanlış sınıflandırma dediğimiz aslında Scorecam'in selins haritalarında modelin hangi bölgelerden yanlış karar verdiğini anlamaya çalışıyor. Bu şekil 11'de bir bisiklet görüntüsünün insan olarak sınıflandırılması.
+
+800
+02:37:49,203 --> 02:38:06,664
+Seylin seritası etiketine odaklanıyor. Bisiklet üzerindeki bir insanın varlığı modelin insan sınıfına yanlış bir şekilde odaklanmasına neden olmuş aslında. Aşağıdaki görselde de eğitim sürecince bu seylin seritaların nasıl değiştiği gösterilmiş.
+
+801
+02:38:08,564 --> 02:38:30,724
+Eğitim öncesi seyir misli haritaları geniş, müdvendisli ve hedef sınıf odaklı değilken, model tahminleri oluşurken hangi bölgeden önemli olduğunu net bir şekilde belirleyemiyor. Eğitim sonrası eğitimle birlikte seyir misli haritalar daha odaklı hale geliyor. Model hedef sınıf için kritik olan bölgeleri daha net bir şekilde vurgulayabiliyor. Benim makalem de bu kadardı. Dinlediğiniz için teşekkür ederim.
+
+802
+02:38:32,664 --> 02:38:34,243
+Teşekkür ederim. Teşekkür ediyorum.
+
+803
+02:38:43,283 --> 02:38:44,583
+[öğrenci] değil mi?
+
+804
+02:38:45,783 --> 02:38:46,563
+Evet hocam.
+
+805
+02:38:58,644 --> 02:39:17,943
+Tamam, bugünlük bu kadar diyelim. Zaten 11.40 oldu. Bayağı makalede dinlemiş olduk. Geriye kalanlara artık haftaya devam ederiz deyip burada kapatıyorum. Konuşacağımız bir şey var mı?
+
+806
+02:39:19,544 --> 02:39:22,724
+Hocam notlandırma ağırlıkları nasıl olacak acaba? İki tane de ödev vardı da.
+
+807
+02:39:24,308 --> 02:39:37,048
+Ağırlıklarla ilgili zaten konuşmuştuk. Sanırım her birine %5 vermiştim sanki ama 3 ödev vermeye planladım, 2 ödev verdim.
+
+808
+02:39:39,188 --> 02:39:44,168
+Onu bir düşünmem lazım. Bir toparlayayım kafamı da. Başım ağrılaştı zaten.
+
+809
+02:39:45,308 --> 02:39:46,728
+Tamamdır hocam. Teşekkürler.
+
+810
+02:39:47,219 --> 02:39:59,680
+Hocam, kısa bir sorum vardı. Not dedi de, arkadaşımız aklıma geldi de. Google Doc'a sanırım bir gün belirlemiştiniz de.
+
+811
+02:40:00,000 --> 02:40:27,948
+Öğneğe bakalım.
+
+812
+02:40:29,075 --> 02:40:32,075
+Tamam öyleyse haftaya devam ediyoruz. Görüşürüz arkadaşlar.

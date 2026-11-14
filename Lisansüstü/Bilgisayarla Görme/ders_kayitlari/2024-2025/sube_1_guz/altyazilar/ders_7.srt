@@ -1,0 +1,2139 @@
+1
+00:03:00,147 --> 00:03:05,347
+Arkadaşlar, merhabalar. Merhaba hocam.
+
+2
+00:03:08,819 --> 00:03:14,620
+Evet, üçümüz var ise herhalde diğerleri gelir. Siz sunum yapacak mıydınız?
+
+3
+00:03:14,620 --> 00:03:17,620
+Evet hocam.
+
+4
+00:03:17,620 --> 00:03:18,620
+Tamam.
+
+5
+00:03:22,996 --> 00:03:30,556
+Başlayalım öyleyse. Sırayla gidiyorduk ama ilk hanginiz oluyor bilmiyorum.
+
+6
+00:03:32,816 --> 00:03:37,456
+Ben yapabilirim. Arkadaş da izin verirse.
+
+7
+00:03:41,939 --> 00:03:43,467
+Tamamen yap bakalım.
+
+8
+00:03:47,475 --> 00:03:48,555
+Gözüküyor mu hocam?
+
+9
+00:03:51,555 --> 00:03:52,475
+Hah, geldim.
+
+10
+00:04:00,147 --> 00:04:15,627
+Merhabalar. Bugün metin işleme alanında kullanılan derin sinir ağlarının iç yapısını daha anlaşık kılmaya odaklanan bir sistem olan TNMVis hakkında sizi aydınlatacağım.
+
+11
+00:04:20,115 --> 00:04:26,115
+İlk olarak, Flu-Connected Mineral Network, CNN gibi kavramları denilecek.
+
+12
+00:04:26,115 --> 00:04:33,115
+Sonrasında TNMW's'in öne çıkan özellikleri, fonksiyonları ve modlarını ele alacağız.
+
+13
+00:04:33,115 --> 00:04:39,115
+Daha sonrasında, Scalibility bölümüyle büyük ölçekli ağlarda neler yapıldığını tartışacağız.
+
+14
+00:04:39,115 --> 00:04:43,115
+Son olarak da, çeşitli kullanım seyrenörlerini inceleyeceğiz.
+
+15
+00:04:47,220 --> 00:04:56,600
+Bu sistem özellikle kara kutu dediğimiz ve ağın içinde neler döndüğünü anlamaya güçleştiren soruna çözün getirmeye çalışıyor.
+
+16
+00:05:01,331 --> 00:05:12,331
+Öncelikle bir tekrar olarak Flu Connected Norel Network ve CNN modellerinin yapısını hatırlamak gerekirse,
+
+17
+00:05:12,331 --> 00:05:17,331
+Flu Connected Norel Network dediğimiz yapıda katmanlar birbirlerine tam bağlı.
+
+18
+00:05:17,331 --> 00:05:21,331
+Her bir not bir önceki katmandaki tüm notla da irtibatlıdır.
+
+19
+00:05:21,331 --> 00:05:28,331
+Özellikle metin alanında giriş katmanlı kelimeler veya karakterler en benim olarak sunuluyor.
+
+20
+00:05:29,331 --> 00:05:39,331
+Son kantmana doğru da karar çıkıyor. Benim makalemde bu etiket olacak.
+
+21
+00:05:40,331 --> 00:05:47,331
+CNN'de de filtre veya feature map kullanarak metindeki yerel örgütüleri yakalıyor.
+
+22
+00:05:47,827 --> 00:06:00,827
+Tabi bu metin analizi için, görsel analizden normalize yenen görsel veri için kullanılır. Daha sonrasında Max Pooling gibi katmanlarına özetlenip tam bağlı katmanlara geçilir.
+
+23
+00:06:00,827 --> 00:06:10,827
+Bu yöntem belli pozisyonlarındaki en gram benzeri yapıları yakalamasından metin aletinde oldukça etkili bir şey.
+
+24
+00:06:12,884 --> 00:06:29,084
+Bir de Part of Speech Neural Networks dediğimiz makalenin ana yapısı, ne oluşturan Neural Network'tan bahsedecek olursak, kelimeyi karakter emrediklerine dönüştürerek bir giriş yapılıyor.
+
+25
+00:06:29,844 --> 00:06:34,884
+Konvolüsyon, Max Pooling, ardından da Flick Onnivez katmanlarıyla şu sahada gördüğümüz.
+
+26
+00:06:37,163 --> 00:06:39,903
+Çıkışta isim olur, değil olur.
+
+27
+00:06:40,596 --> 00:06:46,596
+Bu tür etiketleri sınıflandırıyor. 27 çeşit etiket bulunmakta.
+
+28
+00:06:52,596 --> 00:06:58,596
+Konuyla ilgili daha önce yapılmış bazı görselleşme çalışmalarına bakacak olursak,
+
+29
+00:07:06,432 --> 00:07:25,231
+Bir nod ya da filtreyi tetiklediğini, renk haritalarıyla göstermeye dayanıyor. Metanalına da benzer şekilde hangi kelime veya karakterin hangi aktivasyonu güçlü şekilde devreye soktuğunu, devreye girmesine yol açtığı görülebiliyor.
+
+30
+00:07:28,208 --> 00:07:39,608
+Onun dışında Point ve Network Based Visualization sanmakta olsak yüksek boyutlu timsil vektörlerini veya nöronları 2-3 boyutlu noktalara indirge.
+
+31
+00:07:39,608 --> 00:07:43,068
+Buna Point Based deniyor. Bu mantığı kullanmaya.
+
+32
+00:07:45,348 --> 00:07:51,088
+Node Link gibi Network Based yöntemlerle de katmanlar ve bağlantıları gösterebiliyoruz.
+
+33
+00:07:52,596 --> 00:08:01,555
+Ancak ölçek büyüdükçe burada Network Based yaklaşanları da ciddi karmaşa oluşabiliyor. İleride ona değineceğiz.
+
+34
+00:08:04,884 --> 00:08:30,564
+Makalemizin ana sistemi olan TNLVS'e baktığımızda hem node link diagramı hem de sağda B kısmında görüntü QID dediğimiz ya da SGS sensin matris olarak adlandığımız gösterimle bir arada kullanılarak derin Deep Nöral Network'ün yapısını ve aktivasyon değerlerini anlaşılır buluyoruz.
+
+35
+00:08:32,244 --> 00:08:43,923
+Kullanıcıya katman nöronları, filtreleri, işte burada gördüğünüz edge'leri renklendirerek inspection olsun, threshold olsun, sadeleştirme imkanı verir.
+
+36
+00:08:45,524 --> 00:08:50,884
+Hangi katmanda hangi notların daha kritik olduğunu burada fark edebiliyoruz o şekilde.
+
+37
+00:08:52,304 --> 00:08:58,064
+Temel fonksiyonlara bakacak olursak, 5 ana temel fonksiyonumuz var.
+
+38
+00:08:58,451 --> 00:09:18,451
+Bunlardan ilki coloring. Negatif aksiyonlar burada mavi. Pozitifler de kırmızı olarak görüyoruz. A kısmına bakacak olursak figürde. Thresholding dediğimizde Edge ve Note sayısı çok olduğunda yukarıdaki gibi.
+
+39
+00:09:22,964 --> 00:09:26,364
+Gereksiz kalabalığı azaltıyor. D kısmında görüyoruz.
+
+40
+00:09:26,364 --> 00:09:34,864
+İnspection'ı incelemeye aldığımızda sadece onun giriş-çıkış bağlantılarını görüyoruz.
+
+41
+00:09:34,864 --> 00:09:44,264
+İnsanların ne kadar ağırlığa sahip olduğunu veya toplam aktivasyonu nasıl arttı olduğunu görebiliyoruz. C kısmında.
+
+42
+00:09:46,100 --> 00:09:56,400
+İnsan Kör dediğimizde seçtiğimiz bir hidden layer'ın, nodun tam olarak hangi giriş tarafından tediklendiğini geri izleyerek görmemizi sağlıyor.
+
+43
+00:09:57,039 --> 00:10:01,640
+Örneğin bir düğümün belli harfleri veya heceleri duyarlı olduğunu da keşfettik mümkün oluyor.
+
+44
+00:10:01,640 --> 00:10:11,640
+Tooltips dediğimizde makaleyi sunan kişilerin, uluslanan kişilerin yaptığı bir sistemde.
+
+45
+00:10:11,827 --> 00:10:20,528
+İfare ile üstüne geldiğimizde ağırlık, bias, aktivasyonlar gibi sayısal değerleri görebiliyoruz. Onu da D kısmında göstermiş.
+
+46
+00:10:24,307 --> 00:10:37,107
+Bu sistemin çeşitli modları var. 3 farklı mod bulunmakta. İlk modumuz input mod. Tek bir girdiği, örneğin bir kelimeyi sisteme verip katmanların nasıl aktive olduğunu anlık görebiliyor.
+
+47
+00:10:37,844 --> 00:10:47,324
+Bu A1 o girdiye verdiği tepkiyi ayaklamak incelememizi sağlıyor. İkinci olarak, Animate Mode, bir girdi kümesi tanımlıyoruz.
+
+48
+00:10:47,324 --> 00:10:58,203
+Örneğin, bu şey olabilir, yüz kelime olabilir, yüz nan olabilir. Sistem bunları sırayla A vererek zaman içinde aktivasyonların nasıl sabitlendiğini gösteriliyor.
+
+49
+00:10:59,284 --> 00:11:03,764
+Yani benzer girdilere tutarlı tepki verip vermediğini görebiliyoruz burada.
+
+50
+00:11:04,148 --> 00:11:12,307
+Üçüncü olarak Compare Mode ise iki farklı aktivasyon desteğini yan yana getirip kıyaslamak istediğinde Compare Mode'u bulabilirsiniz.
+
+51
+00:11:13,408 --> 00:11:20,968
+Özellikle isim ve fiil grubun hangi katmanı daha çok ayrıştığını renk farklarından görebiliyoruz.
+
+52
+00:11:29,844 --> 00:11:38,524
+Görselleştirme bazı zamanlarda zorlaşıyor. Bu da büyük ağlarda oluyor. TNMGIS burada dev'ye ek araçlar sokmuyor.
+
+53
+00:11:40,084 --> 00:11:48,084
+Örneğin Convolutional Layer'da KMIS Clustering ile benzer feature mapler gruplanabiliyor.
+
+54
+00:11:48,524 --> 00:11:56,172
+Buna Clustering diyoruz. Ayrıca Compression uygulayarak Dicay'de benzer aktivasyon gösteren satırları birleştirebiliyoruz.
+
+55
+00:11:56,755 --> 00:12:10,915
+Burada A kısmında mesela eksi şeyinin ikinci sütunda sağ tarafta açılmış halini görüyoruz.
+
+56
+00:12:11,915 --> 00:12:15,915
+B kısmında da üç tane şey var.
+
+57
+00:12:17,011 --> 00:12:31,091
+3 tane satır bulunmakta. İkinci satır gruplandırılmış. İşte burada bir kompres edilmiş. Açtığımızda ki halini görmekteyiz. Burada benzer satırlar gruplandırılıyor.
+
+58
+00:12:34,931 --> 00:12:42,611
+Bir diğer ek araç da Node ve Layer Summaryization. Kullikonektik katmanlarda benzer aktivasyona sahip notlar birleştirilebiliyor.
+
+59
+00:12:42,868 --> 00:12:48,508
+Buna Node Samurize işin geliyor. İstersen tüm katmanı inaktif hale getirip tek satıra indirdin.
+
+60
+00:12:48,508 --> 00:12:54,388
+Ama içindeki nöronları minik bloklarla kodluyoruz burada. C'de gördüğümüz gibi.
+
+61
+00:12:54,388 --> 00:12:59,748
+Hangi kısımların gerçekten aktif olduğunu burada görebiliyoruz.
+
+62
+00:12:59,748 --> 00:13:02,748
+Bu nöronların aktif olduğunu burada görebiliyoruz.
+
+63
+00:13:07,283 --> 00:13:19,283
+Bir de çeşitli kullanım senaryoları tanımlanmış makalede. 3 adet örnek kullanım gösteriliyor. Bunlardan ilki full connected post modeli.
+
+64
+00:13:20,283 --> 00:13:27,283
+Full connected yapısında hidden alt katmanlarındaki çoğu ağırlığın negatif olduğu görülüyor burada.
+
+65
+00:13:28,244 --> 00:13:43,884
+Burada da yazarlar şöyle bir yorumlama yapıyor. Bir şeyi seçmekten ziyade, kelimenin ne olduğunu seçmekten ziyade ne olmadığını görüyorlar. Her şeyi elemeye dayalı bir davrandığından işaret ediyor.
+
+66
+00:13:46,131 --> 00:13:59,131
+Bir diğer senaryomuz da non-word karşılaştırması. Bir CNN post modelinde isim ve fiil örnekleri ayrı ayrı verilip sonra compare modunda karşılaştırılır.
+
+67
+00:13:59,131 --> 00:14:11,131
+Özellikle Max Pooling katmanında daha yöntem fark oluştu. Son katmanda ise az sayıda nodun bu ikiliyi ayırır ettiği gözlemliyor.
+
+68
+00:14:13,299 --> 00:14:19,700
+Burada son katmanda kelime türünü ayrı etmek için çok az sevdiğim oran ihtiyaç duyduğunu görmekteyiz.
+
+69
+00:14:22,000 --> 00:14:25,340
+Üçüncü olarak kullanım senaryomuz olarak
+
+70
+00:14:26,100 --> 00:14:33,019
+1200 Feature Map ile iki büyük Fluke Connect katmanlı devasa bir modelde
+
+71
+00:14:33,779 --> 00:14:37,620
+Feature Map'lerin çoğunun aslında hiç aktif olmadığını fark ediyoruz.
+
+72
+00:14:38,139 --> 00:14:39,419
+Burada
+
+73
+00:14:39,775 --> 00:14:52,115
+Mesela figürde gördüğünüz üzere, ilk satırın, şu A'daki ilk satırın, B'deki iki, ikinci satırın, expanded edilmiş ile ikincisi olarak veriliyor.
+
+74
+00:14:52,115 --> 00:15:05,535
+Burada az sayıda bulunanları sola doğru gruplandırmışlar. Burada mesela en sağdaki supunda çoğu boş. Burada mesela bir sürü şey var.
+
+75
+00:15:06,484 --> 00:15:10,484
+Bu şekilde bir sürü sütun bulunmaktan.
+
+76
+00:15:11,984 --> 00:15:15,484
+Burada şöyle bir yorum yapılıyor.
+
+77
+00:15:16,484 --> 00:15:25,484
+Çoğu aktive olmadığı fark ediyor. Böyle grup çok olduğu için model fazla şişmiş, gereksiz parametre var.
+
+78
+00:15:27,484 --> 00:15:29,484
+Bu şekilde.
+
+79
+00:15:32,484 --> 00:15:33,484
+Toparlayacak olursak...
+
+80
+00:15:34,611 --> 00:15:56,111
+TNM-Wiz, kara kutup problemini hafifletmek için, belirsizliği ortadan kaldırmak için, Nodlink ve Agile Sinitim Matris tabanlı iki görselleştirmeyi ve çeşitli etkileşimlerle, Coloring olsun, Threshold, Inspection olsun birleştirerek derin sinir ağlarına daha şefaf hale getiriyor.
+
+81
+00:15:56,403 --> 00:16:08,283
+Input, Animate ve Compare modları sayesinde hem tek tek kilitleri hem de girdi kümelerini veya farklı patenleri kolayca inceleyebiliyor.
+
+82
+00:16:08,283 --> 00:16:18,964
+Compare modunda. Ek olarak Cluster, Compression, Summarization gibi yöntemlerle de büyük allarda dahi ölçeklenme bilgi bir analiz sağlıyor.
+
+83
+00:16:19,635 --> 00:16:27,855
+Bu yönde de TNVis, DnM modellerini anlamak ve model geliştirme sürecini iyileştirmek için güçlü bir araç.
+
+84
+00:16:28,635 --> 00:16:42,155
+Gelecekte ise bu sistemin ölçeklenebilirlik yönü daha da genişletilir, tekrarlanmalı sinir ağlarında, Rnm'de gibi farklı mimarilerde kapsaması planlanıyor.
+
+85
+00:16:43,059 --> 00:16:52,659
+Özellikle LSTM veya GRU gibi katmanların görünük kılınması, miting işlem alanındaki modellerin yorumlanabilmesi daha da arttırabildi.
+
+86
+00:16:53,659 --> 00:16:57,559
+Benim sunum bu şekildeydi. Teşekkür ediyorum.
+
+87
+00:17:02,196 --> 00:17:04,695
+Peki [öğrenci], teşekkür ediyorum.
+
+88
+00:17:05,695 --> 00:17:07,355
+Ben teşekkür ediyorum hocam.
+
+89
+00:17:09,436 --> 00:17:09,996
+Evet.
+
+90
+00:17:25,140 --> 00:17:37,200
+Bir sonra kim anlatmak ister? [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci].
+
+91
+00:17:41,460 --> 00:17:51,840
+Ben anlatabilirim hocam. Zaten ilk sırada da ben vardım galiba. Başlara doğrusu. Tamam mı? Başlayabilirsin.
+
+92
+00:17:53,659 --> 00:17:55,519
+Bir dakika hemen şey yapayım.
+
+93
+00:18:26,579 --> 00:18:27,599
+Ekran geldi mi hocam?
+
+94
+00:18:28,879 --> 00:18:29,419
+Geldim.
+
+95
+00:18:35,251 --> 00:18:45,192
+Herkese merhabalar, ismim [öğrenci]. Bugün sizlere ders kapsamında seçtiğim makalenin detaylarını anlatacağım.
+
+96
+00:18:45,192 --> 00:18:58,192
+Şöyle ki, benim makalem, Bilgisayarla Görme Projelerinde kullanılan Transformer yapılarında, attention haritalarının ağırlıklı olarak kullanılarak,
+
+97
+00:19:00,243 --> 00:19:12,743
+Resimlerin hangi piksellerinin, hangi kısımlarının daha iyi rol oynadığını, sonuçların olmasında daha etkin rol oynadığını belirleyen karar süreçlerini anlatacağım.
+
+98
+00:19:13,483 --> 00:19:20,583
+Makalene sunum planına gelecek olursam, ilk olarak Transformer'ın resim kilidelerinde hemen nasıl kullanıldığını kısa olarak anlatacağım.
+
+99
+00:19:21,443 --> 00:19:23,583
+Ondan sonra dikkat mekanizmalarının...
+
+100
+00:19:24,500 --> 00:19:49,339
+Dönüştürücü, yani transformal yapılarından nasıl çalıştığını çok kısa şekilde söyleyeceğim. Karar süreçlerinin neden önemli olduğunu ve makalede kullanılan dört esas yöntemin bunlardan ikisinin katalitalarını basit şekilde kullandığı, diğer ikisinin ise alaka skorlarına ve gradiyanla.
+
+101
+00:19:49,715 --> 00:19:59,715
+Nasıl hesapladıklarını, yani resmin önemli olan karar sürecindeki önemli olan kısımlarını nasıl hesapladıklarını anlatacağım.
+
+102
+00:19:59,715 --> 00:20:06,715
+Bunları üç tane yöntem karşılaştırma olarak sunulmuş, bir tanesi de önerilen yöntem olarak sunulmuş makalede.
+
+103
+00:20:06,715 --> 00:20:16,715
+En sonunda da deneysel sonuçlar, yani makalede kullanılan bu dört yöntemin resimler üzerinde nasıl performans gösterdiğini anlatacağım.
+
+104
+00:20:17,715 --> 00:20:24,715
+İlk olarak Transformer'lar öncelikle sadece NLP değil, Bilgisayar Yörme Projelerinde de yaygın olarak kullanılıyor.
+
+105
+00:20:24,715 --> 00:20:33,715
+Şimdi bu Transformer'lardaki en önemli etken aslında kendi içinde kullandığı Embedding yöntemi.
+
+106
+00:20:33,715 --> 00:20:41,715
+Dikkatil mekanizmasından başka da Embedding yöntemi de çok önemli kendi içinde kullandığı.
+
+107
+00:20:41,715 --> 00:20:45,548
+NLP cümleleri işte tokenlara dönüştürüp bunları...
+
+108
+00:20:46,132 --> 00:21:06,124
+Kendi içindeki bir yapay zeka algoritması ile belli uzunluktaki vektöre dönüştürüyor. Ve bunu vektörü sonradan, dikkat mekanizmasına sonradan da sinir ağına gönderiyor. Bu işlem resimde yapıldığında da resim öncelikle...
+
+109
+00:21:07,284 --> 00:21:17,784
+Kısımları patch'lere bölüp ardından bir boyutlu vektöre dönüştürüp bu vektörü embedding olarak kullanmak ve bu mantıkla kullanılır Transformer yapılarında.
+
+110
+00:21:18,684 --> 00:21:27,244
+Sonra da bu embedding vektörlerin dikkat mekanizması ve ardından yapıdaki, mimarideki sinir ağlarına gönderilir.
+
+111
+00:21:28,024 --> 00:21:34,584
+Burada çok basit bir Transformer'ın kendi yapısına ait resim koydum.
+
+112
+00:21:34,804 --> 00:21:49,644
+Burada gördüğünüz gibi daha çok şey göstermek için Transformer Mühendisliği kendi içinde de birkaç tane dikkat mekanizması aşaması vardır. Bunların hepsi, bu dikkat mekanizmaları birer matristir.
+
+113
+00:21:51,463 --> 00:21:58,804
+Diyelim, en doğal ilişkiler açısından bakarsak cümle içindeki bir sözün diğer sözlü olan ilişkisini.
+
+114
+00:22:00,084 --> 00:22:13,624
+Eğer bilgisayar görme açısından bakarsak da bu gördüğünüz attention matrix'leri, bunların daha sonraki slide'ı biraz daha kesin şeyini de koydum ama birkaç tane olması açısından genel olarak gösteriyorum.
+
+115
+00:22:14,764 --> 00:22:26,504
+Bilgisayar görme açısından baktığımızda da resim matrisi içerisinde hangi piksellerin, resmin hangi kısımların daha önemli rol oynadığını karar süreçlerinde bu bize gösterebiliyor.
+
+116
+00:22:27,796 --> 00:22:46,195
+Çok kısa söylemek gerekirse, bu matrisler, detayında kqr ve answer dediğimiz matrislerin birbiriyle çarpılmasıyla hesaplanan bir mekanizma.
+
+117
+00:22:46,195 --> 00:22:54,195
+Aslında bu dönüştürücü tabanlı modellerin çok meşhur olmasının, çok yaygın kullanılmasının,
+
+118
+00:22:54,612 --> 00:23:01,872
+En önemli sebeplerinden biridir dikkat mekanizması. Tabi bir de onun paralel şekilde bu ağırlıkları hesaplayabilmesi geliyor.
+
+119
+00:23:06,811 --> 00:23:21,372
+Transformal yapılı modellerde aslında bu dikkat mekanizmalarını kullanarak, direkt olarak, zaten bu mekanizmanın kendisi modelin neye daha fazla önem vermesini açıkladığı için, direkt karar süreçlerinde de
+
+120
+00:23:21,907 --> 00:23:33,947
+Bu dikkat mekanizmaları matrislerini kullanarak resmin hangi hisselerinin, bölümlerinin karar süreslerinde daha iyi rol oynadığını bulmaya çalışmışlar.
+
+121
+00:23:35,227 --> 00:23:44,907
+Bu aslında Vector Key Query, az önce söylediğim vektörlerin çarpılarak en sonunda, en sağda gördüğünüz bu...
+
+122
+00:23:45,299 --> 00:23:52,460
+Matrisin elde edilmesi, dikkat mekanizması dediğimiz aslında aşama bundan ibaret.
+
+123
+00:23:55,240 --> 00:24:07,700
+Bu dediğim gibi bu matris birkaç tane bulunuyor şey içinde, model mimarisi içinde ve karar süreçlerinde de bunların hepsi aslında kullanılıyor makaledeki dört yöntemde.
+
+124
+00:24:09,203 --> 00:24:36,583
+Karar süreçlerinin kendisi de aslında işte debugging modelin daha iyi fine tune edilmesi açısından çok önemli bir aşamadır. Makalede önerilen yöntemden başka kullanılan üç tane esas yöntem var. Attention, dikkat mekanizması, aletalarının kullanılması için. Bunlardan bir tanesi raw attention, bir tanesi roll out yöntemi, bir tanesi de normal layvarsal advanced propagation yöntemi.
+
+125
+00:24:37,044 --> 00:24:54,584
+İlk iki yöntem, Raw Attention ve Rollout yöntemi. Basit olarak sadece gradient veya şey kullanmadan direkt attention mekanizmalarının, yani attention haritalarının kendisini kullanarak resimlerin hangi bölgelerinin daha önemli olduğunu bulmaya çalışıyor. Bunu nasıl yapıyor?
+
+126
+00:24:58,740 --> 00:25:07,120
+Mimarideki kaç tane attention map varsa, onların tabi ki hepsi multi-head attention, onların öncelikle bir ortalamasını alıp birleştiriyor.
+
+127
+00:25:08,259 --> 00:25:22,380
+Bu aşamadan sonra, mimaride kaç tane attention map varsa, oradaki her pikseli ifade eden matrisin belirli bir kısmındaki değerini ortalamasını alıyor.
+
+128
+00:25:24,115 --> 00:25:27,756
+Bu yöntem en basit yöntemdir.
+
+129
+00:25:27,756 --> 00:25:30,155
+Diğerlerine baktığımızda.
+
+130
+00:25:30,576 --> 00:25:32,516
+Tabi bunun bazı kısıtlamaları da mövcuddur.
+
+131
+00:25:34,036 --> 00:25:49,536
+Çünkü biz genel olarak arda arda mimaride yütüm əten şimiməklərinin ortalamasını alırsak, derin katmanlarda, yəni modelin ortalarında veya sonlarına doğru gelen əten şimiməklərdə normalde piksel değerleri olarak,
+
+132
+00:25:51,380 --> 00:26:05,340
+Daha anlamsal bilgi biz orada elde ediyoruz. Çünkü o aşamaya kadar da belirli bir feed network'ten yani sinir ağırlığından geçtiği için sona doğru daha çok bilgi hallettiğimiz madresler mevcut.
+
+133
+00:26:05,779 --> 00:26:11,380
+Attention haritaları. Fakat biz genel olarak ortalamayı aldığımız için derin katmanlardaki bilgiyi göz ardı edebiliyoruz.
+
+134
+00:26:12,692 --> 00:26:36,571
+Bir de Gradiyan veya Relevance Score hesaplamadığımız için de burada sınıf spesifik bir şey ortaya çıkarmıyoruz. Bu ne demek? Mesela bir resim içerisinde diyelim hem kedi var hem köpek var. Biz hem kediyi hem köpeği elde etmek istiyorsak bir resimden oradaki hem kedinin hem de köpeğin resim içerisindeki önemli olan piksellerini bize gösteremez.
+
+135
+00:26:38,548 --> 00:26:44,548
+Ve dikkat değerlerinin basit ortalaması aldığı için de önemli sinyalleri bulanaklaştırabilir.
+
+136
+00:26:44,548 --> 00:27:01,548
+Burada da Malt Head Attention'ın ortalaması yani Transformer imaralarında tek bir Self Attention olarak değil de birden fazla özelliği dikkat almak için birkaç...
+
+137
+00:27:02,451 --> 00:27:13,491
+Kafası vardır. Onların önce ortalama salınır. Ondan sonra mimari içindeki tüm multi-head attentionların böyle ortalama salındıktan sonra az önce dediğim gibi raw attention hesaplanır.
+
+138
+00:27:14,152 --> 00:27:29,592
+İkinci yöntem, rollout yöntemi. Rollout yöntemi, mimari içindeki tüm attention maklilerin birleştirerek yine aynı şekilde bir görsel sonuç verir.
+
+139
+00:27:29,844 --> 00:27:45,504
+Görselleştirme alır şey için. Hangi piksellerin daha önemli rol oynadığı için. Sadece burada tüm ettenşim maplardaki değerlerin ortalamasını değil de lineer olarak birleştirilir. Lineer olarak birleştirmek ne demek?
+
+140
+00:27:46,884 --> 00:27:47,884
+Her katmanlık etten.
+
+141
+00:27:47,884 --> 00:27:50,184
+Kaç slide'ın var?
+
+142
+00:27:52,064 --> 00:27:55,264
+Bundan sonra biraz var ama hocam hızlı geçebilirim isterseniz.
+
+143
+00:27:55,923 --> 00:27:57,604
+zaten
+
+144
+00:27:57,604 --> 00:28:00,483
+şu anda 3-4 dakika kaldı
+
+145
+00:28:00,483 --> 00:28:02,463
+12 dakika falan kullandım
+
+146
+00:28:02,463 --> 00:28:03,503
+12 dakika
+
+147
+00:28:03,503 --> 00:28:06,624
+hızlı geç
+
+148
+00:28:06,624 --> 00:28:08,923
+yani toparlı
+
+149
+00:28:08,923 --> 00:28:10,983
+tamamdır hocam
+
+150
+00:28:10,983 --> 00:28:13,283
+şeyden tamamdır bunları hemen göstereyim hocam
+
+151
+00:28:13,283 --> 00:28:15,163
+bu da ne demek hocam
+
+152
+00:28:15,163 --> 00:28:16,463
+rollout yöntemi de
+
+153
+00:28:16,463 --> 00:28:17,844
+tüm attention mapleri
+
+154
+00:28:17,844 --> 00:28:20,584
+hedeleyin linear olarak çarpımını
+
+155
+00:28:20,584 --> 00:28:22,703
+kullanmak da linear olarak çarpımını da kullanmak
+
+156
+00:28:22,703 --> 00:28:23,104
+ne demek
+
+157
+00:28:23,796 --> 00:28:44,336
+Yine Attention Head'lerin ortalama salınır. Sonra bu hədleri birbiriyle çarpılır. Bu da direk olaraq matrislerin birbiriyle normal olarak matris çarpımı yapılması. Bunların avantajları hızlı hesapları. Avantajlı olmayan tarafları da negatif katkıların ait edememə. Şimdi Attention Mühendisliği birbiriyle çarptığımız zaman negatif-pozitif katkılar oluşur.
+
+158
+00:28:45,236 --> 00:29:00,916
+Bu negatif katkıları normal rollout yöntemi ayırt edemez. Makalede kullanılan gradiyan ve relevans yönteminin ilki normal layer varsiyen dip-tiler modelidir.
+
+159
+00:29:00,916 --> 00:29:09,516
+Bu dip-tiler modeli modelin en sonunda olan gradiyan ve output belgesini geriye doğru yayarak, gradiyan ve relevans skorlarını hesaplayarak,
+
+160
+00:29:10,387 --> 00:29:34,187
+Bu, bize modelin, resimlerdeki piksellerin hangi kısımların daha önemli olduğunu gösterir. Burada sınıf bağımsızlığı yine aynı şekilde yoktur. Yani hem köpeğin önemli bölümlerini bize gösteremez. Negatif ve pozitif katkıları da ayırt edemez yine aynı şekilde. Bu negatif ve pozitif katkılar modelin sonuna doğru hangi bölümlerin daha...
+
+161
+00:29:34,579 --> 00:29:52,519
+Bazı hesaplamalarda negatif katkılar bulunabiliyor matrise. Bunları ayırt edemez. Önerilen yöntemde bazı özelleştirmeler mevcuttur. Şimdi bu özelleştirmeler neden ibaret? Hemen isterseniz bunu direkt makale üzerinden göstereyim hocam.
+
+162
+00:29:54,559 --> 00:29:59,759
+Diyelim özelleştirmeler neden ibaret? Transformer mimarilerinde skip connectionlar mevcuttur.
+
+163
+00:30:00,051 --> 00:30:19,071
+Burada normal layer wise yöntem şöyle tasarlanmıştır ki, dediyim gibi pozitif ve negatif katkıları bir-birinden ayıramadığı için sadece pozitif katkıları, yəni atın ki matrislerin, piksellerin matrisleri olan pozitif katkılarını elde edərək hesaplanıyor.
+
+164
+00:30:20,271 --> 00:30:23,172
+Burada da gör bu da onun başka formalizasyon yöntemi.
+
+165
+00:30:23,667 --> 00:30:29,247
+Fakat bu normal transforma imanelerine negatif katkılarda bulunduğu için bunları ayırt edemiyor.
+
+166
+00:30:32,167 --> 00:30:41,667
+Önerilen yöntemde ise bu pozitif veya negatif katkılar ayırt edile, özelleştirilek sunulmuştur.
+
+167
+00:30:42,427 --> 00:30:48,487
+İkinci olarak relevance yönteminde, relevance skorunun korunması için...
+
+168
+00:30:48,487 --> 00:30:50,547
+Tamir bitir artık, sürende oldu.
+
+169
+00:30:51,700 --> 00:31:01,700
+Evet hocam, Normalize yöntemi sunmuştuk. Bu Normalize yöntemi de daha iyi çalışmasını sağlamaktadır. Sonuçlara gelecek olursak da...
+
+170
+00:31:01,700 --> 00:31:16,859
+Evet, sürede oldu. Sen kapat en iyisi. [öğrenci], ben sesini kıstım senin. Şimdi teşekkür ediyorum. Rica ederim hocam.
+
+171
+00:31:20,147 --> 00:31:21,527
+Ben sunabilir miyim hocam?
+
+172
+00:31:23,027 --> 00:31:24,107
+Evet, sunabilirsiniz.
+
+173
+00:31:28,915 --> 00:31:34,415
+[öğrenci].
+
+174
+00:31:34,815 --> 00:31:38,135
+[öğrenci] Hoca. Sesim geliyor değil mi? Tamam.
+
+175
+00:31:38,775 --> 00:31:39,175
+Geliyorum.
+
+176
+00:31:48,819 --> 00:32:01,799
+Evet. Arkadaşlar, yani 15 dakika var toplam bir makale başına. Siz 10 dakikayı hedefleyin. Sonra da işte toparlanması etmesi.
+
+177
+00:32:03,019 --> 00:32:03,859
+Tamam.
+
+178
+00:32:03,859 --> 00:32:08,539
+Tam ekran önce bir sıkıntı oluyor bu şekilde. Susam olur değil mi hocam?
+
+179
+00:32:09,652 --> 00:32:21,071
+Evet, hocam benim konum, da şu makalem, gerçek zamanlı adveksiyon ve hacimsel aydınlatma ile kararsız 3 boyutlu akışların doku tabanlı görselleştirilmesi üzerine.
+
+180
+00:32:22,511 --> 00:32:42,611
+Bu projede ilinanın problem nedir? 3 boyutlu akış görselleştirmesinde iki temel zorlukla karşılaşılıyor. İlk zorluk hesaplama karmaşıklığı. 3 boyutlu grid üzerinde yapılan hesaplamalar çok yüksek işlem gücü gerektiriyor. Bu nedenle gerçek zamanlı görselleştirmek için cipu tabanlı hızlandırma teknikleri gibi verimli hesaplama yöntemleri geliştirmek gerekiyor.
+
+181
+00:32:43,988 --> 00:33:11,447
+İkinci temel zorluk ise görsel algı sorunları. Bu görselde de temel emisyon-absorpsiyon modeli kullanarak oluşturan bir görselleştirme örneği görüyoruz. Özellikle parçacık izlerin örtüşmesi ve derinlik algısı sorunları net bir şekilde gösteriliyor. Bazı parçacık izleri diğerlerin arkasında kalıyor. Fakat hangi izin önde, hangi izin arkada olduğunu anlamak zorlaşıyor. Ayrıca görsel karmaşıklık ve örtüşme problemleri ortaya çıkıyor.
+
+182
+00:33:11,988 --> 00:33:18,028
+Bu iki temel sorunu ele alarak bunu çözmek için bazı yöntemler bu makalede verilmiş.
+
+183
+00:33:19,508 --> 00:33:44,167
+Makalede önerilen çözüm 3 ana bileşenler oluşuyor. Birincisi GPU tabanlı doku adveksiyonu. Burada en önemli yenilik 3 boyutlu manlıksa belleği, 2 boyutlu fiziksel belleğe haritaya alarak hızlı bir bellek gelişimi sağlamak. Gördüğünüz bu görselde haritalama aşaması gösteriliyor. Bu sayede gerçek zamanlı hesaplamalar mümkün oluyor.
+
+184
+00:33:45,587 --> 00:34:10,528
+İkinci bileşen ise hacimsel aydınlatma. Burada iki farklı yaklaşık kullanılıyor. Bir gradiyan tabanlı, bir çizgi tabanlı aydınlatma. Her iki yöntemde de gerçek zamanlı hacim görüntülemeyi destekliyor. Üçüncü bileşen özellik tabanlı görselleştirme. Bu yaklaşımda akışın önemli bölgeleri vurgulanırken daha az ilginç bölgelerle görsel karmaşıklık azaltılıyor.
+
+185
+00:34:12,980 --> 00:34:21,859
+Bu az önce gösterdiğimiz görselle sistemin temel genelinde olan bellek haritlama şemasını görüyoruz.
+
+186
+00:34:22,579 --> 00:34:27,840
+Sol tarafta 3 boyutlu mantıksal bellek, sağ tarafta ise 2 boyutlu fiziksel bellek var.
+
+187
+00:34:28,220 --> 00:34:32,079
+Aralarındaki haritalama ortadaki lookup table ile sağlanıyor.
+
+188
+00:34:35,603 --> 00:35:00,183
+Makalede 3 temel görselleştirme tekniğinden bahsedilmiş. İlk olarak doku adveksiyonu tekniği. Akışı görselleştirmek için kullanılıyor. Burada 3 boyutlu mantıksal bellek, 2 boyutlu fiziksel bellek haritalanıyor. Bu sayede GPU üzerinde çok daha hızlı hesaplama yapılabiliyor. Ve gerçek zamanlı animasyon da mümkün oluyor. İkinci olarak iki farkı aydınlatma yöntemi kullanılıyor.
+
+189
+00:35:00,884 --> 00:35:04,204
+Bakın, gradyan tabanını ve çizgi tabanını aydınlatma.
+
+190
+00:35:06,524 --> 00:35:07,804
+Şurada
+
+191
+00:35:09,583 --> 00:35:12,664
+Bu görselde
+
+192
+00:35:13,684 --> 00:35:19,824
+çizgi tabanını ve gradyan tabanını aydınlatmanın örneğini burada görüyoruz.
+
+193
+00:35:20,083 --> 00:35:22,123
+Görselde bu temel
+
+194
+00:35:23,923 --> 00:35:25,463
+Absorsiyon Tekniği
+
+195
+00:35:26,996 --> 00:35:43,775
+B'de gradiyan tabanlı, C'de ise çizgi tabanlı aydınlatma var. Buralarda akış yapısı daha belirgin hale geliyor. Burada karmaşık olan hangisinin üzerinde olduğu belli olmayı şey. Burada çizgiler daha belirgin hale gelmiş oluyor.
+
+196
+00:35:46,931 --> 00:35:59,671
+Üçüncü teknikte de algı odaklı görsel iş bir teknik kullanılıyor. Sıcak ve soğuk gölgelendirme, halo efektleri ve derinlik ipuçları gibi teknikler 3 boyutlu akışın daha iyi algılanmasını sağlıyor.
+
+197
+00:36:00,751 --> 00:36:04,371
+Çözümün avantajlarından bahsedecek olursak, ilk olarak performans.
+
+198
+00:36:07,411 --> 00:36:11,411
+Burada bahsettiğimiz problemin en büyük etkenden birisi performanstı.
+
+199
+00:36:12,251 --> 00:36:17,651
+Büyük veri setlerine bile etkisimli kare hızları elde edilebiliyor bu yöntemlerle.
+
+200
+00:36:17,871 --> 00:36:22,291
+GPU verimli kullanan implementasyon sayesinde gerçek zamanlı hesaplamalar mümkün oluyor.
+
+201
+00:36:23,731 --> 00:36:25,571
+İkinci olarak ise görsel kalite.
+
+202
+00:36:26,963 --> 00:36:41,104
+Kullanılan çoklu aydınlatma teknikleri derinlik algısının önemli ölçüde iyileştiriyor. Özellik tabanlı yaklaşımla karmaşıklığı azaltıp önemli akış özellikleri vurgulayabiliyoruz. Kullanıcıya daha iyi bir algı ve görseleştirme kontrolü sağlıyor.
+
+203
+00:36:43,572 --> 00:36:54,551
+Üçüncü olarak ise esneklik. Sistem hem kararlı hem de kararsız akışlar için çalışıyor. Çoklu görselleştirme stilleri sunuyor ve farklı virüs etkilerine kolayca uygulanabiliyor.
+
+204
+00:36:59,507 --> 00:37:23,268
+Tüp içerisinde akışta yüksek hızlı ve düşük hızlı bölgeler farklı renklerle vurgulanmış. Genelde kırmızı, yeşil, sarı gibi renkler kullanılıyor. Bu renk sıcaklıklarıyla mesela bu görselde akış hızını, farklılarını ortaya koyabilmişiz. Normalde bir görselde bir video olmanın süreci bunu anlayamayız.
+
+205
+00:37:25,300 --> 00:37:37,420
+Bir başkasında Bernhardt akışında girdap bölgeleri ve çevre farklı renklerde vurgulanmış.
+
+206
+00:37:37,640 --> 00:37:43,619
+Veya tornado veri setinden girdap çekirdeği ve çevresi farklı şekilde görülüyor.
+
+207
+00:37:46,019 --> 00:37:50,640
+Bu görselde de otomotiv endüstrisinde gerçek zamanlı bir uygulama örneği görülüyor.
+
+208
+00:37:52,288 --> 00:37:57,288
+Otomobilin aerodinamik hesaplaması ile alakalı bir görsel.
+
+209
+00:37:57,288 --> 00:38:03,288
+Burada hız alanların görselleştirilmesinde kullanıldığını görüyoruz.
+
+210
+00:38:03,288 --> 00:38:09,288
+Ve yine farklı renklerle bunların hızları görselleştirilebiliyor.
+
+211
+00:38:09,288 --> 00:38:15,288
+Sonuç kısmında bizim el edilen başarılar.
+
+212
+00:38:15,288 --> 00:38:17,288
+Öncelikle...
+
+213
+00:38:19,155 --> 00:38:40,615
+Etkileşimli görselleştirme, yani gerçek zaman etkileşimli görselleştirme başarılmış. Kullanıcılar akışı canlı olarak izleyebiliyor ve parametreleri anlık olarak değiştirilebiliyor. İkinci olarak ise kullanılan aydınlatma teknikleriyle farklı derinlik algıları önemli ölçüde iyileştirilmiş.
+
+214
+00:38:46,356 --> 00:38:48,916
+Farklı görseşmiş stilleri ve kontörleri sunabiliyor.
+
+215
+00:38:50,096 --> 00:38:57,676
+Ancak bazı kısıtlamalar da var. İstitleme yönünü değiştirilmesi yavaşlıyor. Kararsız akışlarda performans düşüyor.
+
+216
+00:38:58,756 --> 00:39:02,356
+Ve çok büyük veriş setlerinde diz gelişimi sistemi yavaşlatabiliyor.
+
+217
+00:39:02,476 --> 00:39:08,916
+Yani ilk başta bahsettiğimiz performans sorunu çok büyük veriş setlerinde tamamen çözülemeyebiliyor.
+
+218
+00:39:11,027 --> 00:39:26,347
+Gelecek çalışmalarda da cip hükümeleri kullanarak paralel hesaplama yapmak, büyük zaman bağımlı veriler daha iyi yönetmek ve akış çizgileri anlatması, iyileştirilmesi gibi planlar vurgulanmış makalede.
+
+219
+00:39:28,687 --> 00:39:31,527
+Beni dinleyen için teşekkür ederim. Sunum bu kadardı.
+
+220
+00:39:34,347 --> 00:39:38,447
+Peki bu makaleyi bir açabilir misin?
+
+221
+00:39:40,275 --> 00:39:45,376
+Hocam, makale şu an bilgisayar cükrü değil. İş bilgisayarına geçmiştim ama kusura bakmayın.
+
+222
+00:39:46,416 --> 00:39:48,115
+Tamam, bu makale ne hakkında?
+
+223
+00:39:48,115 --> 00:39:54,715
+Yani, Texture Based Visualization of Unsteady 3D Flow.
+
+224
+00:39:55,275 --> 00:40:03,531
+Bu 3D Flow herhangi bir daha çok...
+
+225
+00:40:05,907 --> 00:40:09,227
+Fiziksel akım gibi şey yapılmış ama.
+
+226
+00:40:09,947 --> 00:40:10,267
+Evet.
+
+227
+00:40:12,047 --> 00:40:15,227
+Kraljana fizikçimi falan da aslında kullanılabilir mi?
+
+228
+00:40:18,036 --> 00:40:40,256
+Evet, yani öyle diye anladım ben en azından. Çünkü burada genel olarak aslında bir hareketin söz konusu olduğu görsellerde kullanılıyor ki bu hareketlerdeki farklı parçacıkların birbirinden farklı çalışmasını mesela burada geberdiğim özelliklerin çoğunda hız vardı mesela.
+
+229
+00:40:46,036 --> 00:40:50,036
+Mesela burada ise içindeki...
+
+230
+00:40:50,675 --> 00:40:52,576
+Parçacıklar mı olması gerekiyor burada?
+
+231
+00:40:53,715 --> 00:41:10,816
+Evet. Burada aslında en azından gördüğüm tüm örneklerde farklı parçacıkların çeşitli yönlerden, farklı özelliklerini, mesela farklı renklerde vurgulanarak bunları ayrıştırma üzerine yoğunlaşılmış.
+
+232
+00:41:12,692 --> 00:41:27,311
+Hatta burada bahsettiğimiz ikinci yöntem olarak aydınlatma yöntemleri dedik mesela. Burada farklı parçacıklar var fakat bu orijinal görse oluyor. Bunları birbirinden nasıl ayırabiliyoruz, nasıl ayıt edebiliyoruz şeklinde.
+
+233
+00:41:27,311 --> 00:41:39,072
+Çizgi tabanlı aydınlatmada direkt çizgileri aslında genel olarak belgileştiriliyor ve gradyen tabanlı ayrılık yapılarak parçacıkları birbirinden ayrı olarak değerlendirmek üzerine.
+
+234
+00:41:39,795 --> 00:41:49,175
+Ve bunları renk gibi farklı attribute'larla göstermek üzerine bir çalışma diyebilirim.
+
+235
+00:41:53,396 --> 00:41:56,396
+Teşekkürler. Ben teşekkür ederim.
+
+236
+00:42:02,835 --> 00:42:05,456
+[öğrenci] mı sunmak istiyordu bir sonra?
+
+237
+00:42:05,855 --> 00:42:07,976
+Evet hocam, mümkünse ben sunabilirim.
+
+238
+00:42:07,976 --> 00:42:10,695
+Başlayabilirsiniz siz. Teşekkür ediyorum ben.
+
+239
+00:42:11,576 --> 00:42:17,295
+Bu arada hocam, mailleşmiştik sizin ne hatırlarsanız. Ben yine de sunumu yapmak istiyorum müsaadenizle.
+
+240
+00:42:18,295 --> 00:42:21,195
+Tamam, sen kendi yaptığın şeyi anlat.
+
+241
+00:42:21,795 --> 00:42:22,476
+Tamamdır.
+
+242
+00:42:23,275 --> 00:42:28,915
+Merhabalar, bugün 3 boyutlu gradyen akış görselleştirme projemden bahsedeceğim sizlere.
+
+243
+00:42:29,615 --> 00:42:43,375
+İlk olarak kullanılan araçlardan bahsedelim. Ben Python dilini kullandım ve Manim Kütüphanesini tercih ettim. Manim Kütüphanesi benim daha önce de kullandığım bir görselleştirme aracıydı. Çok güzel videolar oluşturabiliyorsunuz.
+
+244
+00:42:43,375 --> 00:42:56,615
+Yani matematiksel herhangi bir şeyi 3-2 boyutlu görselleştirmek isterseniz çok anlaşılabilir bir dilde ve reddit üzerinden de forunlarda çok insanlara yardımcı olduğu bir kütüphane.
+
+245
+00:42:57,615 --> 00:43:16,855
+Veri seti olarak da Minist veri setinden faydalandık. Minist veri seti 1994'ten beri oluşturulmuş, insanların el yazılarıyla rakamları yazdığı, o verileri topladığımız bir veri seti. 28x28 piksellik görüntülerden oluşuyor.
+
+246
+00:43:18,228 --> 00:43:36,407
+İlk olarak mantıksal akıştan bahsedebilmek için Forward Pass'i burada görselleştirdik. Burada sağ üstte Forward Pass'in matematiksel ifadesi yer alıyor. A çarpı ağırlık artı biyası şeklinde ilerliyor.
+
+247
+00:43:36,947 --> 00:44:01,467
+Modelde 784 input nöronu bulunuyor. Çünkü 28'e 28'lik piksellerden oluşan görüntüler olduğu için 784 tane piksel ediyor. Arada da 3 adet hidden layer bulunuyor. Biri 1024, biri 512, biri 256 nörondan oluşuyor. Çıkış olarak da 10 adet çıkışımız var. 10 adet rakam olduğu için bu da.
+
+248
+00:44:05,844 --> 00:44:10,844
+Burada bir adet mesela bir output'un hesaplanmasını görselleştirdik.
+
+249
+00:44:10,996 --> 00:44:35,316
+Burada da Back Propagation simülasyonu var. Yine aynı şekilde modelimizi oluşturttuktan sonra burada model yukarıdaki yazılmış olan 7 rakamını tanımak istiyor ama ilk başta bunun 1 olduğunu zannediyor. Daha sonra Back Propagation ile, yani burada şeyler çok küçük olduğu için, ince olduğu için şeyler çok gözükmüyor olabilir.
+
+250
+00:44:38,996 --> 00:44:44,516
+Bu notlardaki parametreler bu sefer daha düşük olasılıkla 1 olduğunu zannediyor.
+
+251
+00:44:45,736 --> 00:44:53,716
+Tekrar güncellediğimizde artık 7 olduğunu, sonraki güncellemelerde de daha yüksek olasılıkla 7 olduğunu öğrenmiş oluyor.
+
+252
+00:44:55,316 --> 00:44:57,316
+Güncellemelerini de görebilirsiniz.
+
+253
+00:45:01,204 --> 00:45:02,484
+Bu şekilde.
+
+254
+00:45:03,572 --> 00:45:27,372
+Burada da direkt bir radyanik disanti, bir top simülasyonuyla gösterdik. Burada üç boyutlu bir uzay oluşturdu. Bu üç boyutlu uzayda noktaların aslında zaten burasının sıfıra sıfırı, buranın bire sıfırı, bunanın sıfıra bir olduğu belliydi. Sadece bunlara üçüncü boyuttaki değerlerini verdik. Bunlar da birbirlerinden çok kopuk değerler olmamalıydı sürekli bir uzay olması için buranın.
+
+255
+00:45:31,572 --> 00:45:34,492
+Optimizasyonu mu simüle ediyorsunuz?
+
+256
+00:45:34,492 --> 00:45:37,572
+Yok, bu gradiyant lisanti direkt.
+
+257
+00:45:37,572 --> 00:45:40,572
+Gradiyant lisanti direkt.
+
+258
+00:45:40,572 --> 00:45:47,572
+Peki, yüzeyi neyin yüzeyi?
+
+259
+00:45:47,891 --> 00:45:51,771
+Yüzey burada lossları gösteriyor, temsil ediyor.
+
+260
+00:45:51,771 --> 00:45:55,051
+Bu herhangi bir şey mi? Sizin kullandığınız network'un mü?
+
+261
+00:45:55,191 --> 00:46:13,131
+Hocam, problem orada oldu. Şu an benim verdiğim random değerlerle oluşmuş bir uzay bu. Normalde sadece bir modelin verilerini direkt buraya empuz edecektik. O kısımda problem yaşadık size anlattığım şekilde.
+
+262
+00:46:13,664 --> 00:46:16,984
+Sadece bir modelden değerleri çekmek kalmıştı.
+
+263
+00:46:18,784 --> 00:46:29,784
+Burada top en yüksek loss'tan başlıyor. Herhangi bir loss'tan başlıyor ve en düşüğe doğru ilerleyerek minimum loss'u bulmuş oluyor.
+
+264
+00:46:30,304 --> 00:46:39,524
+Bir sonraki de burada da ilk olarak momentum olmadan çalışıyor top. Şu az önce gördüğümüz videonun aynısı olacak.
+
+265
+00:46:39,923 --> 00:46:48,423
+Daha sonra da bunun üzerine Momentumlu hali geçecek. Burada gördüğünüz gibi herhangi bir hareketin koruma eğilim yok.
+
+266
+00:46:51,956 --> 00:46:53,956
+Bu da momentum olmuş hali.
+
+267
+00:46:55,956 --> 00:47:00,956
+Bu şekilde subtle pointlerden de kaçabilmeyi hedefliyor normalde.
+
+268
+00:47:01,956 --> 00:47:05,956
+Momentum miktarı falan, oradaki parametrelerin...
+
+269
+00:47:05,956 --> 00:47:11,956
+Evet, adım değiştirdikçe hareketi de çok fazla değişiyor toplum.
+
+270
+00:47:12,956 --> 00:47:17,956
+Burada da farklı seçebileceği yolları gösterdik.
+
+271
+00:47:18,420 --> 00:47:24,740
+Yani ilk olarak en optimu, sonra diğer ikincisinin üçüncüsünü etseydi ne olurdu gibi.
+
+272
+00:47:27,579 --> 00:47:30,460
+Hocam, dinlediğiniz için çok teşekkür ederim.
+
+273
+00:47:34,039 --> 00:47:36,579
+Peki. [öğrenci].
+
+274
+00:47:43,251 --> 00:47:46,392
+O zaman şimdi [öğrenci]'a not vermiyoruz.
+
+275
+00:47:46,932 --> 00:47:48,291
+Evet hocam, [kişisel bilgi].
+
+276
+00:47:52,019 --> 00:47:58,080
+[öğrenci]'ya not veriyoruz. Tamam [öğrenci]. Teşekkür ederim hocam. İyi günler. Uygun olsun.
+
+277
+00:47:59,600 --> 00:48:09,880
+Hocam uygun sıra bende ise ben sunabilir miyim hocam? Sunabilir misin? Tamamdır. Şu an ekran paylaşımım geliyor mu?
+
+278
+00:48:11,860 --> 00:48:30,320
+Tamamdır. Hepinize merhabalar. Benim makalemin konusu 2020'ler için Convolution Netler. Yani genel olarak 2020'ler denmiş başlıkta ama 2010'dan 2000'lerin başlangıcından itibaren oluşan süreci açıklıyor benim makalemde.
+
+279
+00:48:35,251 --> 00:48:44,112
+Üniversitesi işleme modellerinde, nesli tespiti modellerine olan farklarını, iyiliklerini ve kötülükleri arasındaki farkları anlatıyor.
+
+280
+00:48:44,632 --> 00:48:49,072
+Hemen başlayacak olursam, 2010'da Yıldız Derin Öğrenmenin Büyük Hızla İllerelediği bir dönem.
+
+281
+00:48:49,072 --> 00:48:52,452
+Bu dönemlerde AlexNet ve ImageNet gibi.
+
+282
+00:48:53,460 --> 00:49:07,460
+çalışmalar ve modeller oluşuyor. 2012 yılında AlexNet'in tanıtılması, Hocam sizin de ilk derslerde söylediğiniz gibi ImageNet anı olarak adlandırılıyor. Ve çoğu yerde bu şekilde geçiyor.
+
+283
+00:49:08,467 --> 00:49:26,967
+Bu süreçlerde Conversion, ledler, Yüzden, Nesneler ve Yaya gibi sınırlı kategoride algılama yapabilirken, Visual Transformers'lar 2020 yılında tanıtıldığı için daha güçlü bir görüntü sınıflandırma modelleri olarak ortaya çıkıyor ve daha farklı kategorilerde nesne tespiti yapabiliyor.
+
+284
+00:49:29,235 --> 00:49:35,635
+Buradaki asıl olay da Swing Transformer'lar oluyor aslında.
+
+285
+00:49:35,635 --> 00:49:47,235
+Hierarşik Transformers'lar, yani Swing Transformer'lar, Convolution Net'lerdeki kaydırmalı pencere gibi stratejileri tekrar kullanarak Visual Transformer'ların sorunlarını çözüyor.
+
+286
+00:49:47,235 --> 00:49:52,036
+Visual Transformer'larındaki sorunlara gelecek olursak...
+
+287
+00:49:52,211 --> 00:50:13,971
+Konvoloji Milletler'deki ötelime eşdeğerli gibi yerleşiyor yargılar olmadığı için bazı görsel görevlerde zorluk çekiyorlar. Yani resmin tamamını algılama gibi sorunlar yaşanıyor. Konvoloji Milletler'deki bu çözümlerle yeni bir model ortaya çıkarıp daha kaliteli bir çözüm bulmaya çalışıyorlar.
+
+288
+00:50:14,516 --> 00:50:27,056
+Conversion Netler de 2010'larda çıktığı için 2020'lerdeki simitransformer'larla biraz daha HDR olmak adına modernleşmeye gidiyorlar.
+
+289
+00:50:27,536 --> 00:50:36,456
+Buradaki başlangıç noktası Conversion Net'in modernize edilmesi rica aslında. Standart bir nezneti temel olarak başlıyor.
+
+290
+00:50:37,172 --> 00:50:59,871
+Buradaki hedef Vision Transformer'ın özelliklerini bilimseyerek güncellemek. Ancak dikkat mekanizması gibi karmaşık birleşenler kullanmamak. Buradaki dikkat mekanizmasını da hemen açıklayacak olursam, dikkat mekanizması girdinin farklı kısımlarına dinamik olarak önem ağırlığa atayan bir sistem. Yani bir öğe diğer tüm öğelerle olan ilişkisini anlayabiliyor bu dikkat mekanizmasında.
+
+291
+00:51:02,036 --> 00:51:21,996
+Bu hedefin aşamalarında makro tasarım var. Katmanları, derinlik ve genişlik oranları ayarlanıyor. Sonra Resnext yapısı, gruplandırılmış erişimler, Grouped Convolution olarak da İngilizcesi. Sonra tersine şişirme, sonrasında büyük çekirdek boyutlarıyla yeni modern convolution netler tasarlanıyor.
+
+292
+00:51:30,036 --> 00:51:38,996
+Bu model konuları şimdilik tasarımında çekirdek boyutları 7x7'ye 7 gibi daha büyük değerleri çıkarılarak,
+
+293
+00:51:38,996 --> 00:51:43,316
+Transform Global Dikkat mekanizmasına benzer bir etki sağlayabiliyor.
+
+294
+00:51:45,556 --> 00:52:03,776
+Şimdi bunun deneylerine gelecek olursak, Conversion Next'in farklı boyutlarda varyantları var ayrıyeten. Yani bu varyantlar Yolo'daki Yolo V8S, V8M gibi örneklerle TS, BL, X-Targe şeklinde oluyor.
+
+295
+00:52:04,980 --> 00:52:26,879
+Conversion Next modelleri ImageNet 1K ve ImageNet 22K veri setlerinde, Swin Trance Onur doğruluklarında %87.8 doğrulukla zirvede oluyor. Verimlilik olarak da daha az karmaşık bir tasarımla yüksek doğruluk ve hızlı çalışma süreleri sağlıyor.
+
+296
+00:52:27,764 --> 00:52:41,764
+İleri düzey görevlerde değerlendirilecek olursak, nesne algılama ve segmentasyonda yani Mask-Arsiyan'ın gibi, Casket Mask-Arsiyan'ın gibi şeylerde test ediliyor modellerde.
+
+297
+00:52:41,764 --> 00:52:50,664
+Swin Transform'ın nesne algılama, AP Box ve Maske segmentasyonu, AP Mask metliklerini de birçok durumda geride bırakıyor.
+
+298
+00:52:50,824 --> 00:52:55,044
+Ve bu geride bırakmayı da hemen sizlere gösterecek olursam makale üzerinde.
+
+299
+00:52:56,532 --> 00:53:02,932
+Şurada, aynen. Buradaki Classification, bu 3.
+
+300
+00:53:03,059 --> 00:53:13,059
+Şurada hocam, AP Box Mask Harsiyen'in AP Max'lar. Burada Object Detection ve segmentasyon da ki sonuçları görebiliyorsunuz.
+
+301
+00:53:13,059 --> 00:53:22,059
+Commolation Net X-Targe'in Average'lerdeki Bounding Box'taki Mask'taki yükseklik oranını görebiliyorsunuz zaten.
+
+302
+00:53:22,059 --> 00:53:28,559
+Burada da büyük bir öndelik sağlamış diğer modellere göre.
+
+303
+00:53:28,884 --> 00:53:41,204
+Daha sonrasındaki ilgili çalışmalar, hibrit modeller hem Convolutional Net'te hem de Transformer ögelerini birleştiren hibrit modeller tasarlanmaya çalışılmış.
+
+304
+00:53:41,204 --> 00:53:50,563
+Ama tabii Convolutional Next'teki o saflığı sağlayamadıkları için Convolutional Net, Convolutional Next'ten bu saflık bakımından ayrışılıyor.
+
+305
+00:53:50,963 --> 00:53:56,884
+Modernizasyon sürecinde Convolutional Next'in başarısı Convolutional Net'lerin zamanla iyileştirilmesi.
+
+306
+00:53:56,884 --> 00:54:01,443
+tasarım ilkelerini vejetasyonun güçlü yönleriyle birleştirmesinden kaynaklanıyor.
+
+307
+00:54:02,103 --> 00:54:07,923
+Dediğimiz gibi farklı kategorilerde algılama için yapılan yenilikler ve
+
+308
+00:54:07,923 --> 00:54:15,184
+Kernel Size'daki büyütmeler gibi örneklerle yenilikler başarıyı getirmiş oluyor diyeyim.
+
+309
+00:54:15,963 --> 00:54:17,523
+Sonuçlara gelecek olursak da
+
+310
+00:54:18,195 --> 00:54:24,295
+Basitliği korunan Conversion Index'ler Visual Transformer ile rükabet edilebileceğini gösterdi.
+
+311
+00:54:24,635 --> 00:54:35,115
+Sonrasında Sivin Transformer gibi karmaşık birleşenlere ihtiyaç duymadan nesli tespiti ve diğer birçok farklı görevlerde görüntü tespiti yapılabileceğini gösterdi.
+
+312
+00:54:35,655 --> 00:54:46,195
+Daha sonrasında buradan çıkarabileceğimiz önemli sonuç Conversion Index'ler evrişimsel yöntemlere dayalı güçlü tasarımları görse tanıma görevlerinde hala önemli bir yere sahiptir diyebilirim.
+
+313
+00:54:46,195 --> 00:55:03,896
+Tabi teşvikleri de geçecek olursak, burada Conversion LED'ler, Swin Transform gibi modellere bakarak onlardan daha farklı bir altyapı oluşturarak bir görüntü işleme modeli yaptıklarında, bu tabi diğer insanlara da ilham sağlamış oluyor diyebilirim.
+
+314
+00:55:04,916 --> 00:55:08,336
+Beni dinlediğiniz için teşekkür ederim hocam. Benim sınımımda büyüldü.
+
+315
+00:55:15,507 --> 00:55:19,407
+Convolution Next'in tanıtıldığı makale mi bu?
+
+316
+00:55:19,867 --> 00:55:28,667
+Evet hocam, Convolution Next'in tanıtıldığı ve diğer modellerle arasındaki farkı karşılaştırması yapıldığı bir makale.
+
+317
+00:55:31,247 --> 00:55:33,307
+Tamam, teşekkürler.
+
+318
+00:55:34,747 --> 00:55:37,387
+Sıradan kim anlatmak ister arkadaşlar?
+
+319
+00:55:37,467 --> 00:55:39,067
+Hocam ben anlatabilirim.
+
+320
+00:55:39,067 --> 00:55:40,788
+Tamam, sağ olun.
+
+321
+00:55:43,443 --> 00:55:47,443
+Ekrem geldi mi?
+
+322
+00:55:47,443 --> 00:55:58,443
+Benim konumda Viprkpt, Visual Inference veya Python Execution for Reasoning başlatığım makaleydi.
+
+323
+00:55:58,443 --> 00:56:03,443
+Şimdi bu makaleyi yapmak istedim.
+
+324
+00:56:04,148 --> 00:56:23,908
+Geleneksel modellere baktığımız zaman, dilsel ile göre çalışmalarında kullanılan modelleri, bu modellerin alt kırmızı zımlarını göremediğimiz, belli bir model yapısı oluşturduğumuz ve modeli eğitip modelin çıktısını aldığımız bir yapı sunuyorlar.
+
+325
+00:56:23,908 --> 00:56:31,308
+Burada ise farklı bir yaklaşım sunmuşlar. Burada sundukları yaklaşım şöyle bir yaklaşım.
+
+326
+00:56:32,148 --> 00:56:56,088
+Bu görsel ve dil modellerini birleştirerek, daha doğrusu görsel modelin bir altyapısını oluşturmuşlar. Daha sonra bunu dil modeline vererek, bu altyapıyı kullanarak, görü modelinin yapması gereken işleri yapmasını sağlamaya çalışmışlar. Öyle bir çalışma sunmuşlar.
+
+327
+00:56:56,596 --> 00:57:15,735
+Öncelikle süreç nasıl işliyor? Öncelikle metin tabanlı sorgular, OpenAI Codex gibi büyük dil modellerine verilerek Python kodu üretilmesi sağlanıyor. Daha sonra işte Glipp, Midas, XBLM, Glipp2 gibi daha önceden o. Efendim?
+
+328
+00:57:17,335 --> 00:57:22,016
+Slight'ın da ilerleme oluyorsa ekran görüntüsünde ilerleme yok.
+
+329
+00:57:22,675 --> 00:57:29,395
+Hımm, olmuştu aslında. Şu an üçüncü slide'dan şimdi geldi mi?
+
+330
+00:57:30,455 --> 00:57:31,295
+Şimdi geldi.
+
+331
+00:57:32,075 --> 00:57:33,635
+Buradan devam edeyim o zaman.
+
+332
+00:57:34,775 --> 00:57:37,835
+Büyümüyor mu bu? Maksimal olmuyor mu?
+
+333
+00:57:39,575 --> 00:57:41,675
+Ekranı tam...
+
+334
+00:57:42,235 --> 00:57:43,995
+Bir şey daha deneyeyim o zaman.
+
+335
+00:57:46,435 --> 00:57:48,875
+Full ekrana geçmiyor mu slide?
+
+336
+00:57:50,963 --> 00:58:04,123
+Evet, deneyeyim bir saniye. Şu an geldi mi? Geldim. Baştan alayım mı devam edelim? Devam edelim. Sistem işte daha önceden oluşturulmuş.
+
+337
+00:58:04,527 --> 00:58:18,907
+Görü kütüphanelerini kullanarak altyapıyı oluşturuyor. Daha sonra oluşturulan kod parçaları, bu altyapıdaki kütüphaneleri kullanarak bir görü modeli oluşturuyor diyebiliriz kabaca.
+
+338
+00:58:18,907 --> 00:58:31,884
+Burada bir örneği var aslında. Şöyle bir sorgu veriliyor dil modeline. Daha sonra bu dil modeli buradaki execute command isimli...
+
+339
+00:58:31,891 --> 00:58:56,371
+şey oluşturuyor işte Python fonksiyonunu oluşturuyor. Burada daha önceden oluşturulmuş işte az önce bahsettiğim kütüphanelerin fonksiyonları ve metotları kullanılarak buradaki kod oluşturuluyor ve bu kodun çalışmasıyla aslında bu query ile istenen bu görüntü işleme taskı gerçeklenmiş oluyor.
+
+340
+00:58:58,228 --> 00:59:05,228
+Bu modeli videoda çalışacak şekilde de yapmışlar. Burada da aslında yaptığı kabaca
+
+341
+00:59:05,228 --> 00:59:13,228
+fremleri bölüp yine o arayüzde iki metotları kullanarak o işte bilgisayarla görün modelinin
+
+342
+00:59:13,228 --> 00:59:22,228
+taskını gerçekleştirmesi diyebiliriz. Burada da yine fremleri bölme kısımları var.
+
+343
+00:59:25,492 --> 00:59:45,492
+Başarının değerlendirmesinde iki tane şey kullanılmış aslında. Kısaca bir şeyden daha bahsetmek istiyorum buraya geçmeden önce. Burada daha önceden oluşturulmuş metotlar demiştik ya, orada aslında önce kodun tamamını vermeye çalışmışlar.
+
+344
+00:59:46,003 --> 01:00:08,823
+Makalede bundan bahsediyorlar. Kodun tamamını vermeye çalışmışlar ama o zamanlar GPT 3'ü kullanıyorlarmış. Orada token sınırına takıldıkları için kodun tamamını verememişler. Sadece kodun işte arayüzünü vermişler. Hangi metot ne gibi girdiler alıyor ve nasıl çıktılar veriyor. Bundan da bahsediyorlar kısaca makalede.
+
+345
+01:00:10,228 --> 01:00:14,788
+Başarının değerlendirmesine iki tane yöntem kullanmışlar.
+
+346
+01:00:15,168 --> 01:00:30,987
+İlki Visual Grounding. Visual Grounding, bir görselde yer alan nesneler veya alanların bir metinsel açıklamaya ya da komuta uygun şekilde belirlenmesi işlemidir. Yani yeşil elmayı işaretli dendiğinde modelin görselde iki o elmayı işaretlemesi beklenir.
+
+347
+01:00:31,288 --> 01:00:43,168
+İkinci yöntem ise Compositional Image Question Answering. Bir modelin bir görüntüdeki nesneler, ilişkiler ve özellikleri hakkında sorulan çok adımları, soruları anlaması ve doğru bir şekilde cevap vermesi beklenir.
+
+348
+01:00:43,168 --> 01:01:02,867
+Bu iki model kullanılmış. Yine iki model daha. External Knowledge Dependent Image Collection Ensuring. Model yalnızca görsel içerisinde sınırlı kalmaz. Doğru yanıt verebilmek için görselin ötesindeki dış bilgi kaynaklarını kullanmayı da gerektirir. Burada aslında dış bilgi kaynağı internet olabilir.
+
+349
+01:01:03,795 --> 01:01:27,855
+Ya da işte dil modelinin eğitildiği bir hüküme olabilir. Burada arada bir dil modeli de bulunduğu için böyle bir yöntemde kullanmışlar. Dördüncü yöntemde video casual and temporal reasoning. Bir videodaki olayların neden sonuç ilişkilerini ve zaman içinde iki sıralamasını anlamaya çalışır demişler. Burada da değerlendirme sonuçları var.
+
+350
+01:01:31,027 --> 01:01:47,067
+Bu işlevleri yapan geleneksel modelle karşılaştırdıklarında 51.9 ile en yüksek ekürisi değerini elde ettiği görülmüş.
+
+351
+01:01:48,067 --> 01:01:52,651
+Burada da yine farklı modellerle karşılaştırdıklarında yine...
+
+352
+01:01:52,947 --> 01:02:05,247
+Daha yüksek değerlendirme sonuçlarına, ekürisi değerlerine ulaşabildiği görülmüş. Bu modelin avantajları ne diye incelenmiş makalede.
+
+353
+01:02:06,036 --> 01:02:28,115
+İlk avantajı her adım açık bir kod şeklinde olduğu için, işte Python kodu şeklinde verildiği için, işte az önce görmüştük video kısmında mesela, her adımı adım adım görebiliyoruz, işte debug edebiliyoruz. Böyle bir avantaj sunuyor. İşte her bir frame'e girdiğini görebiliyoruz, her bir frame'de yaptığı işlemleri görebiliyoruz.
+
+354
+01:02:29,695 --> 01:02:33,536
+İlk avantajı bu. İkinci avantajı model bir yapıya sahip olması.
+
+355
+01:02:35,027 --> 01:02:42,688
+Bir kütüphaneyi değiştirmek istediğimizde ya da farklı bir modül eklemek istediğimizde bunu da kolayca yapabiliyoruz.
+
+356
+01:02:42,688 --> 01:02:54,688
+Bir büyüklüğün modeline o yeni eklenen modülün ya da kütüphanenin tanıtılmasıyla yine burada hızlıca aslında modül entegrasyonunu da gerçekleştirebiliyoruz.
+
+357
+01:02:56,027 --> 01:02:57,268
+Eğitime ihtiyaç duymuyor.
+
+358
+01:03:01,619 --> 01:03:16,519
+Python kodunu oluşturabildiği için aslında herhangi bir işleme eğitime ihtiyaç duymadan gerçekleştirebiliyor. Yine aynı şekilde farklı farklı görevlerde kullanılabiliyor.
+
+359
+01:03:18,643 --> 01:03:33,943
+Büyük dil modeline ne verirseniz aslında o tabi bazı sınırlar içerisinde işte kullandığınız kütüphanelerin sınırları içerisinde ne verirseniz aslında ona uygun bir kod elde edebiliyorsunuz ve ona uygun bir model elde etmiş oluyorsunuz en sonunda.
+
+360
+01:03:35,164 --> 01:03:42,903
+Bu modelin bir de işte bu yaklaşımın bazı sınırları da var. Bunlar da gerçek zamanlı uygulamalar için daha yavaş sonuç.
+
+361
+01:03:43,860 --> 01:03:50,476
+Çıkarılması, kodun işte generat edilmesi daha sonra o kodun çalıştırılıp
+
+362
+01:03:50,483 --> 01:04:12,463
+Çıktığının kullanıcıya sunulması uzun sürebilir. Bir karmaşık programlar üretemeyeceği için büyük din modellerin yine orada da yetersiz kalabilir bu model. Ama işte GPT-3 ile yapılmış bir çalışma. Şimdi GPT-4 vesaire çıktıktan sonra tabii bunlar daha aslında kapsamı genişlemiş diyebiliriz.
+
+363
+01:04:13,588 --> 01:04:27,588
+Sonuç kısmına da gelecek olursak, bu çalışma görü ve dil modellerinin birleştirilerek aslında yorumlanabilir ve modüler bir yapı oluşturabileceğini...
+
+364
+01:04:28,179 --> 01:04:49,639
+Yani eğitime gerek duymadan modüler bir yapı kurulabileceğini söylüyor. Modüler yapısı ve sıfırdan öğrenme yeteneği sayesinde sistemin farklı alanlarda uygulanabileceği de ifade edilmiş. Geliştirilmesi ve daha fazla alanda uygulanması durumunda yapay zeka teknolojilerinde önemli bir dönem ortası oluşturabilir şeklinde sunulmuş.
+
+365
+01:04:49,639 --> 01:04:53,460
+Benim anlatıcı yıklarımın kadar da dinlediğiniz için teşekkür ederim.
+
+366
+01:04:59,027 --> 01:05:00,547
+Teşekkürler [öğrenci].
+
+367
+01:05:07,188 --> 01:05:11,188
+Yani buradaki olay açıklanabilirlik mi oluyor biraz?
+
+368
+01:05:11,188 --> 01:05:20,188
+Kod yazdığı için, bunu niye seçtik bilmiyorum. Ben mi yazdım, sen mi seçtin?
+
+369
+01:05:20,188 --> 01:05:23,188
+Siz yazmıştın, söyleyirsiniz.
+
+370
+01:05:23,476 --> 01:05:47,496
+Sizin konulardan seçmiştim diye hatırladım. Farklı bir yaklaşım gibi geldi bana açıkçası. Olaya farklı bir açıdan yaklaşılmış. Direkt bir görüm modeli kullanarak onu eğitip bir çıktı almaktansa bu şekilde çeşitli avantajlar elde edilmiş. Onun yanında bazı sınırlılıklar da görüntülenmiş.
+
+371
+01:05:48,244 --> 01:06:01,164
+O şekilde hem modüler yapısı hem her adımın görülmesi bir hata, bir yanlış bir durum olduğunda her adımın adım adım çalıştırılabilir olması sağlanmış.
+
+372
+01:06:05,604 --> 01:06:07,664
+Teşekkür ediyoruz tekrardan.
+
+373
+01:06:07,964 --> 01:06:08,764
+Teşekkürler.
+
+374
+01:06:08,764 --> 01:06:11,984
+Buradan kim sunmak ister arkadaşlar?
+
+375
+01:06:12,423 --> 01:06:13,664
+Hocam ben sunabilirim.
+
+376
+01:06:19,668 --> 01:06:21,148
+[öğrenci].
+
+377
+01:06:21,568 --> 01:06:21,847
+Evet.
+
+378
+01:06:23,447 --> 01:06:33,208
+Explainable AI for manufacturing post estimation at machining future visualization.
+
+379
+01:06:34,648 --> 01:06:42,668
+Evet. Üretim maliye tahmini için ve özellik görselleştirmeleri için açıklanabilir yapay zekayı anlatacağım.
+
+380
+01:06:43,123 --> 01:06:49,683
+İlk olarak problemimiz, son yıllarda derin öğrenmeye dayalı üretim maliyet tahmin modelleri geliştirmeye başlanmış.
+
+381
+01:06:49,683 --> 01:06:55,844
+Ancak bu modeller genellikle bir karakutu gibi çalışmakta ve tahminin arkasındaki nedenler açıklanamamaktadır.
+
+382
+01:06:55,844 --> 01:07:05,443
+Şu anki mevcut modeller üretim maliyetini doğru bir şekilde tahmin etse de, maliyeti arttıran ya da azaltan özellikleri net olarak kullanıcıya bildirememektedir.
+
+383
+01:07:05,443 --> 01:07:09,844
+Bu nedenle daha açıklanabilir ve rehberlik sağlayan bir model geliştirmeye ihtiyaç duyulmuştur.
+
+384
+01:07:10,260 --> 01:07:23,740
+Bizim çalışmamızda için açıklanabilir yapay zeka yöntemi kullanılarak, deri etiket modellerde bir üretim maliye tahmin süreci geliştirmeyi ve tahmin sonuçlarını görselleştirerek açıklanabilirlik sağlamayı amaçlamaktadır.
+
+385
+01:07:23,923 --> 01:07:41,704
+3 aşamada oluşmaktadır. İlk aşamamızda veri toplama ve ön işleme. İkinci aşamamızda ise 3 boyutlu derin öğrenme modellerini kullanarak bir maliyet tahmini yapmak. Son aşamada ise modelin tahminlerini açıklanabilir hale getirmek ve tahmin sonuçlarını görselleştirmek.
+
+386
+01:07:42,068 --> 01:07:49,508
+İlk aşamada veri toplama aşamamızda, 1006 adet veri toplanmış ve 34 kategoriye ayrılmıştır.
+
+387
+01:07:49,508 --> 01:07:56,828
+Her bir veri için tri-ticket geometrik bilgileri, malzeme bilgileri ve maliyet bilgileri elde edilmiştir.
+
+388
+01:07:56,828 --> 01:08:06,108
+Toplanan veriler, derin öğrenme modellerinde kullanılabilmek için iki aşamada bir ön işleme sürecinden geçirilecek ve burada da hacim bilgisi hesaplanacaktır.
+
+389
+01:08:06,547 --> 01:08:14,787
+Bu ön işleme yapay zekalar, 3D-Gate modelleri ham olarak, sade olarak bu verileri anlayamamaktadır.
+
+390
+01:08:15,127 --> 01:08:20,667
+Bu yüzden bu modellerin daha da basitleştirilip yapay zekanın anlayabileceği bir formata dönüştürmemiz gerekmektedir.
+
+391
+01:08:21,467 --> 01:08:29,667
+İlk olarak meşe dönüştürme, yani 3D-Gate modellerinin yüzeylerini bir üçgen biçimine temsil eden bir basit bir modele dönüştürmekteyiz.
+
+392
+01:08:30,195 --> 01:08:57,036
+İkinci aşamada ise kullanacağımız mimariye göre ya Point Cloud ya da Voxel yapısına dönüştürmemiz gerekmektedir. Point Cloud yapımızda model her üçgen yüzeyin kütle merkezini dikkate alarak bu noktaları seçer ve modeli bir nokta şeklinde temsil eder. Voxel'de ise Mesh'teki yapımızı 3D grade'lere bölerek her bölgedeki model Voxel'e verilen küçük küplerle temsil edilmektedir.
+
+393
+01:08:57,344 --> 01:09:02,304
+Böylelikle de voxel yapımızda modelin hacimsel bilgisini elde etmiş oluyoruz.
+
+394
+01:09:03,503 --> 01:09:10,523
+Sonrasında toplanan verilerin büyük aralıklarda olduğu için sapmaları azaltmamız gerekiyor.
+
+395
+01:09:10,703 --> 01:09:14,023
+Bunun için iki farklı normalizasyon yöntemimiz bulunmaktadır.
+
+396
+01:09:14,503 --> 01:09:17,263
+Birincisi minimum ve maksimum normalizasyon yöntemi.
+
+397
+01:09:17,863 --> 01:09:19,943
+İkincisi de logaritmik normalizasyon.
+
+398
+01:09:24,532 --> 01:09:31,951
+Ölçeğimizi daha da dağınık, daha histogramları daha düzenli yaptığı için performansı daha iyi olmaktadır.
+
+399
+01:09:31,951 --> 01:09:49,871
+Ve son olarak malzeme verilerinin hazırlanması gerekmektedir. Bu veriler normalizasyon yöntemiyle değil de kategorik bir şekilde verildiği için one hat vektör dediğimiz bir vektör şeklinde verilip aslında normalizasyonun bir farklı şekilde yapılmasını sağlamaktadır.
+
+400
+01:09:51,252 --> 01:09:58,852
+İkinci aşamamızda ise 3 boyutlu derin öğrenme modellerimizde önceden kullanılan 5 farklı mimariyi kullanıyoruz.
+
+401
+01:09:59,332 --> 01:10:02,772
+Ve kendi mimarimizi kullanarak toplam 6 farklı mimari üzerinde çalışıyoruz.
+
+402
+01:10:03,572 --> 01:10:07,072
+Demin de bahsettiğim gibi 2 farklı normalizasyon metodumuz var.
+
+403
+01:10:07,772 --> 01:10:10,772
+3 farklı kayıp fonksiyon yöntemimiz bulunmaktadır.
+
+404
+01:10:11,192 --> 01:10:14,772
+Ve 3 farklı veri giriş kombinasyonumuz bulunmaktadır.
+
+405
+01:10:17,587 --> 01:10:30,247
+Temel model olarak bu çalışmada önceki en iyi mimari modeli ve HIPAA parametreleri keşfetmek için önceki araştırmalarda kullanılan derin öğrenme modelleri test edilmektedir ve kendi mimarizde oluşturmaktayız.
+
+406
+01:10:30,247 --> 01:10:39,768
+Bu mimarilerde optimizasyon yöntemi olarak EDM seçilmiş ve öğrenme oranımız 0.0001 olarak belirlenmiştir.
+
+407
+01:10:40,467 --> 01:10:42,127
+Batch Size ise 16'dır.
+
+408
+01:10:42,707 --> 01:10:51,907
+Burada Maximum Epoch sayımız ise 1000'dir ama overfitting olması durumunda da erken durdurma teknikleri kullanılarak overfitting engellenmiştir.
+
+409
+01:10:53,108 --> 01:11:00,747
+Önerilen modelimizde ise ilk olarak giriş input 1 dediğimiz voxel girişimiz konvonizasyon katmanlarından
+
+410
+01:11:00,948 --> 01:11:24,868
+İçinde 3x3x3'lük fitrelerden tek tek geçirilmektedir. 5 farklı kommunizasyon katmanımız bulunmaktadır. Buradan elde edilen sonuç, input 2'deki materyal ve input 3'deki hacim bilgileriyle birleştirilerek full connected katmanları iletilmektedir. Burada 5 adet gizli katmanımız bulunmaktadır. Bu katmanların boyutları sırasıyla 2300, 150, 20 ve 16'dır.
+
+411
+01:11:25,363 --> 01:11:29,363
+Başlangıç ağırlığımız Zawyer yöntemiyle seçilmektedir.
+
+412
+01:11:29,363 --> 01:11:35,363
+Bias değerimiz 0'dır. Burada kullanılan aktivasyon fonksiyonumuz ise Leaky Relo'dur.
+
+413
+01:11:35,363 --> 01:11:43,307
+Buradaki alfa değerimiz de 0.1'dir. Böylelikle negatif değerleri de almış işleme sokmuş oluyoruz.
+
+414
+01:11:43,347 --> 01:11:53,347
+Alt yazı, optimizasyon yöntemi olarak da add-on algoritmasını kullanmaktayız ve sonucunda da bir maliyet hesabı tahmini üretmiş oluyoruz.
+
+415
+01:11:53,347 --> 01:12:10,347
+Üçüncü aşamada ise elde edilen bu tahmini maliyet, Backpropagation yöntemi ile hedef katmandaki her bir future map'e iletiliyor ve buradan her bir future map'in gradyanları alınıyor ve bunların
+
+416
+01:12:11,028 --> 01:12:18,708
+Ortalama Ağırlık Hesabı yapılıyor. Bu Ortalama Ağırlık Hesabı sayesinde de her bir Future Map'in
+
+417
+01:12:19,468 --> 01:12:22,548
+maliyeti olan etkisini ölçmekteyiz.
+
+418
+01:12:23,568 --> 01:12:29,968
+Ve ölçtüğümüz bu ağırlık hesabını sonrasında ikinci formülde gördüğümüz gibi
+
+419
+01:12:30,747 --> 01:12:34,328
+Future Map'lerde tek tek çarpıp topluyoruz. Bu katmanın
+
+420
+01:12:35,891 --> 01:12:50,231
+Bizim maliyetimiz olan hesabını 3DGradCamp ile modelini oluşturmaktayız. 3DGradCamp modelimiz buradaki her bir future map'in boyutuyla aynıdır. Ama biz bu boyutu...
+
+421
+01:12:50,479 --> 01:12:58,479
+Giriş parametremizdeki boyutta eşitlememiz gerekiyor. Kullanıcıya böyle sunmamız gerekiyor. Bunun için de bir interpolasyon işlemi yapıyoruz.
+
+422
+01:12:59,239 --> 01:13:14,680
+Buradaki her bir aktivasyon fonksiyonumuz, haritamız 5x5'lik bir boyuttayken, giriş parametremiz 32'lik bir giriş parametresine sahip olduğu için bunu 5x5'den 32'ye dönüştürmemiz gerekmektedir.
+
+423
+01:13:18,739 --> 01:13:26,939
+En başta 1006 adet veri kullandığımızdan bahsetmiştik. Bunların %80'ini eğitim, %20'sini ise test olarak kullanmaktayız.
+
+424
+01:13:26,939 --> 01:13:36,340
+Buradaki gördüğümüz tabloda ise iki farklı performans yöntemimiz bulunmaktadır. Birincisi karakök ile hesapladığımız, ikincisi ise % hesabı ile yaptığımız.
+
+425
+01:13:36,340 --> 01:13:44,340
+Bu iki performansa göre 108 model arasında her bir mimari için en iyi sonuçları gösteren tabloda buradaki gibidir.
+
+426
+01:13:44,884 --> 01:14:08,123
+Buradaki grafik de aslında bu tablonun grafiksel halidir. Burada gördüğümüz üzere yüzde hesabı en iyi bizim modelimizle çıkmaktadır. Ancak Karaköke hesabında en iyi ikinci model olmaktadır. Ancak diğer mimari oranla 20 kat daha az parametreyle bu başarıyı sağlamaktadır. 6.7 saat süren eğitim süresi de yaklaşık olarak 20 dakikaya indirilmiştir.
+
+427
+01:14:08,948 --> 01:14:17,188
+İkinci şekillerde ise her bir mimarinin korelasyon değerleri gözükmektedir.
+
+428
+01:14:17,248 --> 01:14:25,088
+Korelasyon değeri 1'e en yakın olan değer ise en başarılı, performansa en yüksek olan model olarak değerlendirmektedir.
+
+429
+01:14:25,308 --> 01:14:31,868
+Bizim buradaki modelimizde önceden yapılmış 5 farklı mimariye oranla en başarılı mimari olmuştur.
+
+430
+01:14:32,851 --> 01:14:51,652
+Giriş veri türlerinin performansa etkisini inceleyecek olursak, 3 farklı giriş modelinin kullanılması her iki performans testinde de daha başarılıdır. Burada 8.76 yani normalde 42.76 olması gereken hata değeri burada 8.76 indirilmiştir.
+
+431
+01:14:57,935 --> 01:15:14,255
+Maliye Tahmini Performansı'nda çok daha önemlidir. Bunu da şöyle anlıyoruz. Sadece voxel girişi yaptığımızda %42.76 olan değer, voxel artı volüm giriş bilgisiyle yaptığımızda sadece %3'lük yani %41.2'lik bir hata oranına düşmektedir.
+
+432
+01:15:14,255 --> 01:15:22,655
+Ancak materyal bilgisini de eklediğimizde %42'lerden %21'e yani yaklaşık olarak %50'lik bir performans katkısı sağladığını da görmekteyiz.
+
+433
+01:15:23,507 --> 01:15:34,688
+Normalizasyonun performansa etkisini inceleyecek olursak, bizim modelimizde özellikle yüzde hesabında logaritmik normalizasyon çok daha faydalı olduğu görülmektedir.
+
+434
+01:15:35,448 --> 01:15:48,288
+Kayıp fonksiyon türünde ise mutlak değer ile hesapladığımız ya da kullandığımız kayıp fonksiyon türünün bizim uyguladığımız modelde çok daha başarılı olduğu gözükmektedir.
+
+435
+01:15:49,811 --> 01:16:00,011
+İşleme özelliklerinin açıklanması açısından bu resimde her bir parçanın oluşturduğumuz her bir komünizasyon katmanındaki çıktılarını, tridigre etkenlerini görmekteyiz.
+
+436
+01:16:00,672 --> 01:16:08,511
+Burada komünizasyon 1 ve 2 de üretilecek olan parçaların daha çok kenar ve yüzeylerini, daha genel kısımlarını göstermekte olup,
+
+437
+01:16:08,815 --> 01:16:28,676
+Komünizasyon 3 ve 4. katmanlarında ise parçanın daha zor, daha karmaşık, maliyeti daha yüksek olan kısımlarını görmekteyiz. Zaten buradaki dişlimizin de şu kısmı daha kırmızı yani maliyetin daha yüksek olduğu, aynı zamanda bu şaftımızın da deliklerinin açmak için daha maliyetli olduğunu başarılı bir şekilde göstermektedir.
+
+438
+01:16:31,572 --> 01:16:58,336
+Parçaları işlerken, parçaların adım gibi, slot gibi ya da delik açılması gibi ekstra maliyet üretilecek, maliyeti yükseltecek olan kısımlarının giriş parametrelerinde ekstra da verilmesine gerek yoktur. Çünkü bu modelimiz bu kısımların maliyetli olduğunu ekstra fazladan bir giriş olmadan da algılayabilmektedir. Burada da bunun testleri yapılmıştır. Çıktılar bu şekildedir. Basamaklar ya da slot kısımlarının
+
+439
+01:16:58,336 --> 01:17:02,416
+Maliyeti daha çok etkilediği ekstra bir giriş olmadan da gösterilmiştir.
+
+440
+01:17:03,676 --> 01:17:10,836
+Burada ise zorluk seviyesini attıran parametreler ya da durumları anlatmaktadır.
+
+441
+01:17:10,956 --> 01:17:17,316
+İlk olarak derinlik. Eğer ki bir basılacak olan parçanın derinliği arttıkça maliyeti de artmaktadır.
+
+442
+01:17:18,355 --> 01:17:28,355
+Bu modelimiz, maliyeti ilk olarak 1.06$ hesaplamış. Ama maliyet derinliğe attırdıkça da, maliyeti aslında doğru bir şekilde attırdığını görmekteyiz.
+
+443
+01:17:28,355 --> 01:17:34,251
+Aynı şekilde köşe yuvarlama çapında da düşük köşe çapı yuvarlama daha maliyetli olmaktadır.
+
+444
+01:17:34,292 --> 01:17:46,572
+Bunu da incelediğimiz zaman 1.47'den dolardan maliye tahmini yaptığımız ürün 1.54'e hesaplanmıştır. Yani bu iki durumda da başarılı bir şekilde çalıştığı ürün mektedir.
+
+445
+01:17:47,444 --> 01:18:06,463
+Peki, bu çözüm, bu çözümle biz neye ulaşmış olduk? Tasarımcıların maliyetinin ne kadar olduğunu ve hangi tasarım usullarının maliyeti arttırdığını anlamasına olanak sağladık. Aynı zamanda çevrim içi üretim platformlarında müşterilere gerçek zamanlı bir maliyet tahmini ve anlaşılır tasarım verpleği sunduk.
+
+446
+01:18:08,960 --> 01:18:19,220
+İşleme zorluğu özellikleri tespit edilip görselleştirerek kullanıcılara bu kısımların daha maliyetli olduğunu, bunlardan kaçınmaları gerektiğini ya da azaltmaları gerektiğinden bahsettik.
+
+447
+01:18:19,220 --> 01:18:31,680
+Ve son olarak yapay zeka kararlarının nedenlerini açıklayarak güvenilirliğini ve sistem şeffaflığını sağladık. Aynı zamanda açıklanabilir yapay zeka olarak da kullanıcılara maliyetin nasıl hesaplandığı ile ilgili bilgi vermiş olduk.
+
+448
+01:18:31,923 --> 01:18:47,604
+Sonuç kısmında dediğimiz gibi Tridicate modelleri için açıklanabilir bir tahmin süreci sunduk. Model tasarımcılara üretim maliyetinin attırılan kısımların neresi olduğunu görsel bir şekilde de sunabilmektedir.
+
+449
+01:18:50,351 --> 01:19:02,112
+Doğrudan ya da ekstradan bir bilgi verilmeden, manuel bir etiketleme gerekmeden model tarafından doğru şekilde algılanabildiğini, böylece daha az parametre kullanılarak daha verimli çalıştığını göstermiş olduk.
+
+450
+01:19:02,712 --> 01:19:11,851
+Model aynı zamanda CNC işleme süresindeki zorluk seviyesi, işte demin bahsettiğim derinlik olsun, köşe yuvarlama olsun bunları öğrenebilme yeteneğine de sahip olacağız.
+
+451
+01:19:11,887 --> 01:19:35,467
+Sahiptir. Son olarak da kılavuz sağlıyor. Yani kullanıcılara malzeme ve hacim gibi kritik bilgilerini alarak bu verilerin modele etkisini %42'lerden %8'lere ya da %20'lere indirdiğini, bu malzeme bilgilerinin ya da hacim bilgilerinin sadece voxel verileriyle yetmeyeceğini, bu bilgilerle de daha faydalı soruşlar alacağımızı gösterdik.
+
+452
+01:19:36,408 --> 01:19:39,268
+Benim anlatacaklarım bu kadar. Beni dinlediğiniz için teşekkür ederim.
+
+453
+01:19:45,203 --> 01:19:47,863
+Peki, teşekkürler [öğrenci].
+
+454
+01:20:12,787 --> 01:20:17,448
+Evet, başka sunmak isteyen kim var arkadaşlar?
+
+455
+01:20:19,247 --> 01:20:20,827
+Ben kaldım hocam sana bir tek.
+
+456
+01:20:22,268 --> 01:20:24,188
+Tamam, devam et [öğrenci].
+
+457
+01:20:24,188 --> 01:20:39,827
+Ne yapıyorsun sen? Understanding Neural Networks Through Deep Visualization diye bir 2015 bir çalışma.
+
+458
+01:20:58,771 --> 01:21:00,052
+Görüntü geldi mi hocam?
+
+459
+01:21:03,699 --> 01:21:05,300
+Geldi görüntü.
+
+460
+01:21:06,899 --> 01:21:07,859
+Tamam.
+
+461
+01:21:09,659 --> 01:21:12,760
+Üç ana başlıktan bahsedeceğim bu makaleyle ilgili.
+
+462
+01:21:13,684 --> 01:21:34,644
+İlkinde daha önce yapılmış yaklaşımlara değineceğim. Daha sonra canlı olarak bu konvolüsyonun, netlerin aktivasyonlarının nasıl görselleştirildiği, onun yorumlamasını yapacağım. Daha sonra bu makalenin aslında en önemli katkısı olan Regularized Optimization'a değineceğim.
+
+463
+01:21:36,243 --> 01:21:43,784
+İlk olarak daha önce yapılmış çalışmalarda iki farklı yaklaşım var. Dataset Centric ve Network Centric olmak üzere.
+
+464
+01:21:43,784 --> 01:21:49,703
+Dataset Centric de eğitilmiş ağın dışında veri setine de ihtiyaç duyuluyor.
+
+465
+01:21:49,703 --> 01:21:53,203
+Bunlar bu iki şey kullanılarak...
+
+466
+01:21:53,492 --> 01:22:17,072
+Aktivasyonlar görselleştiriliyor. Burada daha önce yapılmış Zeyler ve Fergus'ın 2013'te yaptığı dekonvolüsyon metodu var. Bu paperda da bahsediliyor ve yazılımını da kullanıyor aslında. Burada dekonvolüsyon aslında normal yapılan konvolüsyonun tam tersi çekildiği ilerleyerek ana görsele ulaşmayı hedefliyor aslında. Aktivasyonlardan tekrar tersi doğru yürüyor.
+
+467
+01:22:20,756 --> 01:22:39,076
+Sadece ağı kullanarak aktivasyonları görselleştiriyor. Burada da daha önce 2009'da bir çalışım yapılıyor. Fakat makalede de bahseden ve üretilen sentetik görsellerin gerçekçi olmadığı anlamsız görseller oluşturduğundan bahsediyor.
+
+468
+01:22:42,836 --> 01:22:48,136
+Makalenin iki tane katkısı var. İlki bir tane yazılım aracı sunuyor.
+
+469
+01:22:49,300 --> 01:23:01,039
+Bu yazılım aracıyla verilen input canlı olarak bütün katmanlarını, her katmanındaki birimleri canlı olarak görselleştirilmesini ve görebilmenizi sağlıyor.
+
+470
+01:23:01,039 --> 01:23:05,979
+Diğer bir katkısı da demin bahsettiğim regularizasyon aslında.
+
+471
+01:23:06,420 --> 01:23:16,220
+Bu da burada bahsettiğim network centric'te yapılan bu centric görsellerin anlamlı bir şekilde görselleştirilmesini sağlıyor.
+
+472
+01:23:18,739 --> 01:23:36,739
+Burada bu yazılım aracının görüntüsü var. Şöyle mouse ile göstermek istersem. Burada input var. Bu input bir görsel olabilir ya da canlı bir kamera görüntüsü de olabilir. Yazılım bunu olanak sağlıyor. Burada üst kısımda...
+
+473
+01:23:38,868 --> 01:23:44,368
+Bu görselde AlexNet kullanılmış. Yani burada bütün katmanları görebiliyorsunuz aslında.
+
+474
+01:23:44,368 --> 01:23:55,668
+5 tane konvolüzyon katmanları ve 3 tane full connected değeri. Daha sonra burada 16x16 aslında bütün dirimler gözüküyor.
+
+475
+01:24:06,547 --> 01:24:20,367
+Karşılığını da görebiliyoruz. Top 9'imiz dediği aslında tıkladığımız layer'ın veri setindeki veri setine karşılık gelen en iyi görseller olarak söyleyebilirim.
+
+476
+01:24:20,367 --> 01:24:32,147
+Burada Gradient Ascent'ten kastı da regulize edilmiş aslında aktivasyonun görselleri. Burada bir diğer dikkat çekilen konu ise
+
+477
+01:24:33,684 --> 01:24:43,724
+Konvonist 152 dediği aslında buradaki kırmızı kareyle işaretlenmiş birim köpek yüzüne ve çiçeğe duyarlı olduğu görülüyor.
+
+478
+01:24:43,724 --> 01:24:51,724
+151. birim ise insan yüzünün ve kedi yüzüne duyarlı olduğu görülüyor.
+
+479
+01:25:00,115 --> 01:25:23,555
+Burada da bahsettiği şu, aslında bizim çıktığımızda, sınıflandırıcımızda insan yüzü olmamasına rağmen 151. birimin insan yüzlerine, farklı pozlara, farklı skelledik, ölçeklik şeylere ya da farklı ışıklandırmalara.
+
+480
+01:25:24,340 --> 01:25:30,100
+Duyarlı olduğunu gösteriyor. Yani bu katmanın aslında yüzleri öğrendiği gibi bir anlam çıkıyor.
+
+481
+01:25:32,960 --> 01:25:41,260
+Burada regularizyos, regülay edilmiş optimizasyonda şöyle bir matematiksel aslında basitçe anlatabilirim.
+
+482
+01:25:41,760 --> 01:25:48,300
+Aktivasyonları aslında bir R0x fonksiyonundan yani cezalandırmadan geçirerek
+
+483
+01:25:49,747 --> 01:25:58,188
+Gereksiz pikselleri kırpmaya amaçlıyor. Bu sayede daha anlamlı görseller üretmemizi sağlıyor.
+
+484
+01:25:59,467 --> 01:26:05,108
+Burada dört tane metoddan bahsediliyor. Layer 2 Decay, çok yüksek değerli
+
+485
+01:26:06,387 --> 01:26:13,547
+aktivasyonların cezalandırılarak daha anlamlı yerlere getirilmesini sağlıyor. Galaxian Blur'da da
+
+486
+01:26:15,604 --> 01:26:23,963
+Input Blur uygulanıyor ve buradaki yüksek frekanslı değerlerin daha softlaşmasını, yumuşaklaşmasını sağlıyor.
+
+487
+01:26:24,963 --> 01:26:33,363
+Diğer iki yaklaşım ise çok küçük değerdeki piksellere kesme ve küçük katıdaki piksellere kesme.
+
+488
+01:26:33,863 --> 01:26:41,963
+Yani çok küçük aktü olsun ya da çok küçük değerlere sahip piksellerin görüntüyü bozmaması için çıkarılıyor.
+
+489
+01:26:42,963 --> 01:27:00,884
+En sondakinde de küçük katkıdan bahsettiğimiz de aslında aktivasyonu ne kadar etki ediyor bu piksel gibi düşünebiliriz. Önce bu piksel çıkarılıyor ve aktivasyon gözleniyor. Eğer etkisi çok küçükse bunun da görselden çıkarılması sağlanıyor.
+
+490
+01:27:09,971 --> 01:27:15,091
+Bunların her biri regulize edilmiş fakat farklı parametreler kullanılmış. Yani
+
+491
+01:27:16,111 --> 01:27:18,931
+Hepsi aynı değerde regulize edilmemiş ve farklı
+
+492
+01:27:19,191 --> 01:27:22,771
+Yöntemler, metotlarla görselleştirilmiş.
+
+493
+01:27:24,311 --> 01:27:25,071
+Burada
+
+494
+01:27:27,131 --> 01:27:29,171
+StationVegan'a bakarsak mesela
+
+495
+01:27:29,431 --> 01:27:30,191
+Sağüsteki
+
+496
+01:27:30,899 --> 01:27:43,559
+Değerlerin daha yüksek frekanslı aktivasyonları temsil ettiği, buranın daha düşük frekanslı aktivasyonları temsil ettiğini söylüyor makale.
+
+497
+01:27:46,059 --> 01:27:56,639
+Burada da her bir katmana bakarsak aslında çok basit desenlerden gitgide konvolüsyonlar uygulanarak
+
+498
+01:27:57,140 --> 01:28:00,420
+Daha karmaşık desenlere adım adım gittiğini görüyoruz.
+
+499
+01:28:00,800 --> 01:28:04,000
+Burada bir dikkat çekilen noktaysa, beşinci katman.
+
+500
+01:28:04,159 --> 01:28:07,060
+Burada bu konvolüsyonun son katmanı.
+
+501
+01:28:07,440 --> 01:28:09,740
+Buradan sonra artık full connected layer'a geçiyoruz.
+
+502
+01:28:09,740 --> 01:28:14,400
+Ve buradaki farkın da ciddi bir şekilde gözlemlendiği görülüyor.
+
+503
+01:28:15,100 --> 01:28:18,180
+Burada artık daha ciddi karmaşıklığa doğru evriliyor.
+
+504
+01:28:18,320 --> 01:28:23,740
+Ve en sonunda layer 8'de de artık buradaki tedebiyarı görsel olarak...
+
+505
+01:28:24,180 --> 01:28:26,180
+Ayrıştırabiliyoruz.
+
+506
+01:28:27,380 --> 01:28:28,716
+Burada son olarak
+
+507
+01:28:32,083 --> 01:28:50,023
+Sol sütuna bakarsak burada aslında hiçbir regüle uygulanmamış görseli görüyoruz. Saf görsel. Buradaki ilk satır Layer 2 dikey. İkinci satır Galasyon bulur. Buradaki küçük piksellerin kesilmesi, buradaki küçük katkı ayet piksellerin kesilmesi.
+
+508
+01:28:50,223 --> 01:28:59,344
+Burada tek tek sağa doğru gittiğimizde buradaki parametreler artırılıyor. Gitgide solda hiçbir etki yok demek. Sağda en yüksek etkiye sahip.
+
+509
+01:28:59,764 --> 01:29:09,344
+Burada da gözlenen şey, eğer bu değerleri abartırsak, görüntünün artık bir yerden sonra bozulmaya başladığını, anlamsız hale geldiği gözleniyor.
+
+510
+01:29:09,344 --> 01:29:18,304
+Ve bu parametrelerin de farklı kombinasyonları aslında çalışılarak bulunması gerektiğinden bahsediyor.
+
+511
+01:29:19,444 --> 01:29:27,363
+Sunum kısmında bu kadar söyleyeceklerim. Son olarak ben uygulamayı kurmuştum buraya. Onu da göstereceğim.
+
+512
+01:29:33,716 --> 01:29:52,556
+Burada demin bahsettiğim gibi katmanlar var. Burada input olarak görselimiz var. Burada yaptığı sınıflandırma. Tek tek konvolüsyonlar arasında ilerleyebiliyoruz ve her bir birimin nasıl görselleştirildiği aktivasyon fonksiyonunu da görebiliyoruz.
+
+513
+01:30:00,000 --> 01:30:02,760
+Şuradaki aktivasyon halini görebiliyoruz.
+
+514
+01:30:07,123 --> 01:30:18,963
+Son olarak şuradaki hallerine bakarsak artık en son dağda karmaşıklaşıp köpekbalığının şekli aldığı belli oluyor.
+
+515
+01:30:23,412 --> 01:30:25,171
+Ben anlatacaklarımı kadar hocam.
+
+516
+01:30:31,091 --> 01:30:32,851
+Teşekkür ediyoruz.
+
+517
+01:30:38,195 --> 01:30:42,115
+Kaç kişi kaldı anlatacak. Bir ara versek 10 dakika.
+
+518
+01:30:50,612 --> 01:31:11,912
+Şimdi baktığımda, sunmamış olan [öğrenci], [öğrenci], burada mı bu arkadaşlar? [öğrenci], [öğrenci]. Sunum yapmak isteyen var mı da arkadaşlar? Yapmamış olan.
+
+519
+01:31:17,395 --> 01:31:33,635
+Yok gibi gözüküyor. Öyleyse dersi bitiriyoruz. Ödevlerinizi okumadım biliyorum. Herhalde onu sormak istersiniz. Onları okuyacağım.
+
+520
+01:31:35,115 --> 01:31:39,135
+Hocam bir de sunum yapmayanlar direkt değerlendirmeye alınmayacak mı?
+
+521
+01:31:40,515 --> 01:31:41,715
+Evet, sıfır.
+
+522
+01:31:43,539 --> 01:32:05,539
+Yani geçerli bir nedenleri olursa belki sunum yapmalarına izin verebilirim. Ama puan keserim yani. Ya da sıfır alırlar. Hani şeyin niye...
+
+523
+01:32:06,859 --> 01:32:11,119
+Ya hocam [öğrenci] arkadaşım sordu da hani sunum yapmayacakmış o.
+
+524
+01:32:11,539 --> 01:32:13,460
+Ondan dolayı.
+
+525
+01:32:14,000 --> 01:32:20,039
+Anladım. Ya bu zaten proje. Sunum yapılması demek projeyi yapmadığı anlamına gelir.
+
+526
+01:32:21,300 --> 01:32:22,619
+Orada sıfır.
+
+527
+01:32:23,779 --> 01:32:29,260
+[kişisel bilgi] O yüzden sordum.
+
+528
+01:32:29,399 --> 01:32:30,479
+Anladım. Sağ olun.
+
+529
+01:32:31,859 --> 01:32:37,340
+Yani onları onlarla görüşelim artık. Normalde sıfır yani sıfır.
+
+530
+01:32:42,515 --> 01:32:48,215
+Evet, teşekkürler arkadaşlar. Finalde görüşürüz artık.
+
+531
+01:32:49,495 --> 01:32:55,815
+Hocam, finalde tüm konuları kapsıyor değil mi? Yoksa vizeden sonrakiler değil sadece. Yoksa tersini mi?
+
+532
+01:32:59,347 --> 01:33:12,068
+Yani tüm konuları kaplar da ister istemez vizeden sonrakilerden çıkar. Yani şu bakımdan daha çok tüm konuları kapsar diyorum ben.
+
+533
+01:33:16,564 --> 01:33:29,784
+İlk konulardan bir şey çıkarsa, bu dahil değildi falan diye itiraz olmasın diye. Normalde sonraki konular ağırlıklı olur.
+
+534
+01:33:31,924 --> 01:33:32,764
+Anladım.
+
+535
+01:33:39,475 --> 01:33:42,895
+Peki, görüşürüz arkadaşlar. İyi günler.

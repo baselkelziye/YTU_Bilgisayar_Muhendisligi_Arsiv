@@ -1,0 +1,2939 @@
+1
+00:07:00,627 --> 00:07:02,147
+Günaydın sevgili arkadaşlar.
+
+2
+00:07:05,147 --> 00:07:06,587
+Günaydın hocam.
+
+3
+00:07:10,004 --> 00:07:11,283
+Teşekkürler [öğrenci].
+
+4
+00:07:17,139 --> 00:07:33,039
+Bu hafta Compure Vision dersinin ikinci hafta sunumları yapılacak. Şu ana kadar üç kişi dördüncü arkadaşımız da eklendi. Sunum yapmak istediğini belirtti.
+
+5
+00:07:40,052 --> 00:07:45,372
+Ancak en az 10 kişinin sunum yapmasını bekliyorum. Az önce ders duvarına da yazdım.
+
+6
+00:07:47,072 --> 00:08:00,392
+Önümüzdeki haftada sunum olacak. Ancak önümüzdeki hafta, son hafta ve sınırlı sayıda sunum dinleyebileceğiz.
+
+7
+00:08:01,252 --> 00:08:06,451
+O nedenle bu haftada dengeli bir şekilde en az 10 kişinin sunum yapmasını istiyorum.
+
+8
+00:08:07,379 --> 00:08:18,159
+Bu projenin kodla ilgili, kendi yapacağınız uygulamayla ilgili kısmı için henüz ödev sayfasına bir şey yüklemedim.
+
+9
+00:08:19,240 --> 00:08:25,959
+Orada varsa geliştirme yapıyorsanız, onun için de size biraz süre vermek istiyorum aslında. Amacım o.
+
+10
+00:08:25,959 --> 00:08:33,960
+Ve bunu önümüzdeki hafta deadline olacak şekilde sadece uygulama tarafını...
+
+11
+00:08:34,451 --> 00:08:51,692
+Önümüzdeki hafta salı gününe kadar süre vermeyi planlıyorum. Şu anda listemde dört kişi sunum yapmak için isim yazdı. Görüyorum. Nisanuz sizinle başlayalım.
+
+12
+00:08:51,692 --> 00:08:53,451
+Tabii hocam.
+
+13
+00:08:57,011 --> 00:09:14,692
+Ekran paylaşımı deneyin. Bir de kameranızı açmanızı rica edeceğim. İkinci sırada [öğrenci] var. [öğrenci]. Üçüncü sırada [öğrenci]. Dördüncü sırada [öğrenci]. [öğrenci] sunum yapmak istediğini belirtmiş.
+
+14
+00:09:24,532 --> 00:09:28,392
+Altıncı sırada da [öğrenci].
+
+15
+00:09:35,731 --> 00:09:47,491
+Güzel. Şimdilik 6 kişi aday oldu. Ekranını görebiliyoruz [öğrenci]. Evet, seni de görüyoruz. Teşekkürler. Buyurun, söz siz de.
+
+16
+00:09:48,591 --> 00:09:56,971
+Tabii ki. Merhabalar herkese öncelikle. Benim makalem 3 boyutlu nokta bulutlarından insan hareketlerini tanıma üzerinde bir çalışmaydı.
+
+17
+00:10:00,467 --> 00:10:03,268
+Önce neden bu konuyu seçtiğini de anlatıyorsun.
+
+18
+00:10:04,788 --> 00:10:08,947
+Şöyle hocam, insan hareketlerin tanıma üzerine bir konu aslında seçmek istiyordum.
+
+19
+00:10:08,947 --> 00:10:12,467
+O makalelere baktım öncelikle, o çalışmalara baktım.
+
+20
+00:10:13,147 --> 00:10:22,967
+Burada zaten birçok çalışma yapılmış aslında ama buradaki konu biraz daha çalışma yapılmamış alan üzerine yapılmış bir makaleydi.
+
+21
+00:10:23,067 --> 00:10:26,807
+O yüzden ilgimi çekti incelerken. Ben de bunu yapmak istedim.
+
+22
+00:10:28,467 --> 00:10:56,467
+İlgimi çekti hocam makale içindeki. Zaten bahsederken onlardan da bahsetmiş olacağım. Burada zaten hepimizin bildiği üzere aslında insan hareketleri RGB videolarda anlaşılması konusu son yıllarda çok kapsamlı bir şekilde gerçekleştirdi, çalışıldı. Burada ise bu konunun üç boyutlu nokta bulutu karşılığından bahsediyor olacağız. Bu konuda çok fazla yani yeterince aslında araştırma olmadığından bahsedilmiş. Burada da üç boyutlu nokta bulutu dizilerinden hareket tanıma üzerinde bir...
+
+23
+00:10:56,467 --> 00:10:57,788
+Çalışmadan bahsedeceğim.
+
+24
+00:10:59,764 --> 00:11:26,183
+Üç boyutlu nokta bulutları ne demek ve bunların avantajları ve sınırlamaları ne demek biraz bunları araştırdım konuyu daha iyi anlamak için. Burada üç boyutlu nokta bulutların nakaz aslında gerçek dünyadaki nesnelerin ve insanların üç boyutlu temsillerini oluşturmak amacıyla böyle binlerce veya milyonlarca noktayla ifade etme biçimleri. Zaten görsellerde de görünce daha net anlaşılır olacak. Burada bize sağladığı avantajlar neler peki bu üç boyutlu bilginin?
+
+25
+00:11:27,764 --> 00:11:34,543
+Bu özelliği gerçek derinlik bilgisi sunuyor. Yani bizi burada aslında uzaydaki gerçek konumunu bilmemizi sağlıyor. X, Y, Z koordinatına ilişkin.
+
+26
+00:11:34,943 --> 00:11:38,443
+Bu da nesnelerin büyüklüğünün şeklini vesaire tam olarak anlamamızı sağlıyor.
+
+27
+00:11:39,083 --> 00:11:45,903
+İkinci bir avantaja daha güçlü anlamlandırma sunuyor. Örneğin karmaşık pozları ve el gövde karışıklığı gibi durumları daha iyi algılıyor.
+
+28
+00:11:45,903 --> 00:11:51,464
+Yani daha küçük hareketleri daha iyi algılamasını sağlıyor bunlar. Özellikle böyle montaj davranışlarında.
+
+29
+00:11:52,024 --> 00:11:55,764
+Zaten bu makalede kullanılan veri setlerinden bir tanesi de Ikea'nın montajı.
+
+30
+00:11:55,764 --> 00:12:15,484
+Montaj videolarından oluşan bir veri seti. Orada işte örneğin mesela kişi montaj aletlerini yani o aletlerin arkasında kaldığında dahi insanların hareketlerini yakalayabilir şeklinde aslında bir çalışma bu. O gibi zorlu görevlerin altından kalkabiliyor. Robot etkileşimlerinde de yine kullanılıyor bolca.
+
+31
+00:12:17,076 --> 00:12:29,655
+Diğer bir avantajı yüzey yapısını daha iyi yansıtıyor. Burada neslinin şeklini, yüzeyini ve geometrisini çıkarabiliyor. Bu da yine 3 boyutlu aslında modelleme, tarama, robotik görevlerde yine büyük bir avantaj.
+
+32
+00:12:30,175 --> 00:12:40,496
+Diğer bir önemli avantajı ışıktan bağımsız. Burada RGB görüntüler ışığa bağımlı. Yani ışığın kalitesinin kötü olması aslında oradaki insan hareketlerinin algılanmasını güçleştiriyor.
+
+33
+00:12:45,076 --> 00:13:03,875
+Bunlar ışık bulutlarından bağımsız çalışıyor. Örneğin zaten mevcuda da kullanılan işte daha böyle hassas kameralar olan lidar, derinlik kamerası gibi. Onlarda da aslında bu üç boyutlu nokta bulutları kullanılıyormuş. Diğer bir avantaj da robotik otomasyon için iddial. Zaten bunu az önce de bahsettik. Bu gibi alanlarda özellikle çok fazla kullanılıyor.
+
+34
+00:13:05,364 --> 00:13:31,684
+Peki bu kadar avantajına rağmen neden geride kalmış? Sınırlamaları neler konusuna baktığımızda ise dört tane zorluğu var. Bir tanesi yapısal olmaması. Yani görüntülerde her pikselin yeri belli, düzenli bir ızgar üzerinde. Ancak bu noktaların yapıları belli değil, nokta bulutları düzensiz. O yüzden bunları işlemek, anlamlandırmak da daha zor oluyor. Diğer bir zorluğu permütasyonlara karşı duyarsızlar. Yani noktaların sıraları değişiyor ancak aynı nesnemi temsil edebiliyorlar.
+
+35
+00:13:33,364 --> 00:13:39,484
+Yani noktalar farklı ama o nesirli birbirinden ayırmak için sinir ağlarının bunu anlaması zorlaşıyor.
+
+36
+00:13:40,144 --> 00:13:42,304
+Diğer bir zorluğu nokta sayısı değişken.
+
+37
+00:13:42,644 --> 00:13:46,224
+Yani belli bir nokta sayısı yok hani nesirleri ifade etmek için.
+
+38
+00:13:46,584 --> 00:13:48,944
+Yani bir insan örneğin 50 bin noktayla ifade ediliyor olabilir.
+
+39
+00:13:49,084 --> 00:13:51,364
+Başka bir insan belki 100 bin noktayla ifade ediliyor olacak.
+
+40
+00:13:51,864 --> 00:13:54,504
+Buradaki sınırlamada biraz zorluk yaratıyor.
+
+41
+00:13:55,044 --> 00:13:57,884
+Diğer bir zorluk da zamansal takiminin zor olması.
+
+42
+00:13:57,884 --> 00:14:01,364
+Burada hareketi takip etmek için hem uzayda...
+
+43
+00:14:01,364 --> 00:14:12,544
+Her şey konumunu bilmek gerekiyor hem de zamandaki değişimini görmek gerekiyor. Yani aslında iki boyutlu bir takip gerekiyor. Hem şekli hem hareketi şeklinde bunu takip etmek zor.
+
+44
+00:14:13,524 --> 00:14:23,024
+Şimdi öncesinde ilgili çalışmalar neler peki bu alanda diye baktığımız zaman, statik nokta bulutu öğrenme ve zamansal nokta bulutu öğrenme diye ikiye ayrılıyor aslında buradaki çalışmalar.
+
+45
+00:14:23,243 --> 00:14:37,084
+Statik nokta bulutu öğrenme tarafından daha çok point net mimarları kullanılmış. Burada nokta bulutu verileri kullanılıyor. Ancak buradaki durum şu, hepsi statik yani tek bir kare üzerinde çalışıyor. Yani tek bir kareyi sınıflandırıyor. Videoyu veya klibi değil.
+
+46
+00:14:41,524 --> 00:14:48,003
+Bu da klip düzenli bir tahmin yapıyor ama her kareyi sınıflandıramıyor.
+
+47
+00:14:48,003 --> 00:14:55,844
+Yani 10 saniyelik bir video var örneğin elimizde. Belki o arada başka hareketler de olabilir ama tek bir harekete göre sınıflandırıyor o klibi.
+
+48
+00:14:56,384 --> 00:15:01,423
+Bu makalede önerilen 3D in action yöntemi ise yani böyle bir pipeline öneriyorlar makalede.
+
+49
+00:15:01,803 --> 00:15:07,703
+Burada ise her kareye özel bir tahmin yapılıyor. Buradaki aslında yenilik de bu olmuş oluyor.
+
+50
+00:15:09,844 --> 00:15:24,964
+Burada bunu yapmak için, eylem tanımayı yapmak için T-Patch'ler adında bazı yapılardan yararlanıyorlar. Bunlar da böyle görselle gördüğünüz gibi örneğin burada hareket eden noktaları yakalamak için T-Patch'den küçük yerel lokal bölgelerden yararlanıyorlar.
+
+51
+00:15:25,464 --> 00:15:35,804
+Yani burada mesela T-Patch kullanıma daha çok sağlam ve esnek bir model ortaya koyuyor. Öncelikle nokta bulutu içinden küçük bir bölge seçiliyor. Örneğin burada eller mesela seçilmiş bizim görselimizde.
+
+52
+00:15:35,804 --> 00:15:37,824
+Burada noktalar zamana bağlı.
+
+53
+00:15:37,844 --> 00:15:56,264
+Bu nokta bulutlarının nasıl yer ve şekil değiştirdiğini öğrenmek. Bu sayede hem aslında şeklini öğrenecek hem de zamanda bağlı değişimini öğrenerek hareketi yakalamaya çalışacak.
+
+54
+00:15:58,355 --> 00:16:24,375
+Burada her tipeç hem şekil yapı dediğimiz gibi hem de zamansal bilgiyi bir arada öğreniyor. Bu yüzden aslında her kareyi sınıflandırabiliyor. Burada hiyerarşik bir yapı kullanılmış. Hiyerarşik yapıyla da küçük parçaları birleştirerek büyük parçayı oluşturuyorlar. Yani örneğin burada hem küçük bilgiler öğreniliyor yani el hareketi gibi hem de büyük bilgileri öğrenmeye çalışıyor. Oradan yani küçükten büyüye gitmeye çalışıyor. Büyük bilgide dediğimiz aslında insanın tamamen hareketi yani örneğin yürümek, zıplamak gibi.
+
+55
+00:16:26,355 --> 00:16:31,475
+T-Frame'i birçok T-Pesh'ten gelen bilgileri birleştirerek sonrasında hareket tahmin etmeye çalışıyor.
+
+56
+00:16:32,115 --> 00:16:54,515
+Burada da aslında 3B nokta bulutlarının zorlayıcı görevlerini ortadan kaldırmış oluyor. Yani düzenli ızgara yapısı nokta sırası veya her karada sabit nokta sayısı gibi zorlukları ortadan kaldırıyor. Çünkü daha esnek, yerel olarak bakıyor. Karmaşık karşısına daha dayanıklı. Örneğin elin kıvırılması gibi. Yani daha küçük karmaşık yapıları daha iyi yakalıyor. Bu da aslında daha doğru hareket tanıma sağlamış oluyor.
+
+57
+00:16:56,148 --> 00:17:24,108
+Burada pipeline'de 3 aşamadan oluşmuş. Birincisi t-pad çıkarma. Aslında zaten bu makaledeki çalışmanın zor kısmı bu. Yani buradaki maliyetli kısmı burası olmuş oluyor. Her karadaki belirli noktalardan zaman boyunca izlenen yamalar yani t-pad'ler oluşturuyor. Sonrasında bunları hiyerarşik öğrenerek katmanlı bir ağda işliyor. Daha sonrasında da her bir kare için aksiyonu sınıflandırıyor. Bu yaklaşımlı avantajlarından bahsedecek olursak bir kere ön bilgi gerektirmiyor.
+
+58
+00:17:24,147 --> 00:17:48,607
+Yani örneğin diğer mesela video işlemelerde olduğu gibi hani vücudun noktaları nerede yani böyle ön iskelet çıkartımı gibi görevler gerekmiyor. Daha genel bir yapı. Çünkü noktalarda ifade ettiğimiz için neyin nerede olduğunu aslında öğretmemiz gerekmiyor. Ve farklı ver hükümelerinde farklı insanlar da çalışabiliyor. Hani belli statik daha doğrusu spesifik bir model değil aslında. Bu modelin.
+
+59
+00:17:49,332 --> 00:18:17,132
+Önemli bir avantajı. Peki tam olarak nasıl çalışıyor bu pipeline? Bu sahne gördüğümüz gibi öncelikle en soldaki böyle seyli bir nokta bulutları oluşturuluyor aslında vücudu tanımlayan. Sonrasında bunlar ilişkin t-patch'ler oluşturuluyor. Yani her bir bölge için küçük nokta bölgeleri oluşturuluyor. Daha sonrasında bu t-patch'ler çıkarıldığı zaman, şu t-patch modülünde oluşuyor bunlar. Bu her t-patch'i işleyen ve özelliklerin çıkan bir sinir ağı. Bunlar da t-patch netler.
+
+60
+00:18:17,332 --> 00:18:25,231
+Buradan her biri için bir özellik vektörü çıkartılıyor. Sonrasında bu özellik vektörleri için burada ağırlıklandırma yapılıyor.
+
+61
+00:18:25,231 --> 00:18:31,731
+Bu ağırlıklandırma tüm kalelerde aynı ağırlıklar kullanılıyor ki zaman içindeki tutarlılık sağlansın diye.
+
+62
+00:18:31,731 --> 00:18:38,231
+Sonrasında buradan bir tensor çıkıyor. Böyle belli boyutta. Bu tensorlar sonrasında gelen çıktılar.
+
+63
+00:18:38,231 --> 00:18:43,731
+Her bir t-patch'ten gelen çıktılar. Birleştirilerek pooling işlemine tutuluyor. Sonrasında buradan
+
+64
+00:18:44,788 --> 00:19:06,148
+Poling'de aslında bu çıktı birleştirilmiş oluyor. Daha sonrası Fully Connected Layer'la her bir karenin tahmini yapılıyor. Yani sınıflandırma tahmini yapılıyor. En sonunda da her bir için aslında bir eylem atanmış oluyor. Burada model T5'leri analiz ederek, her bir T5'leri yani parça parça analiz ederek aslında bütün de bir eylem tanımaya olanak tanıyor.
+
+65
+00:19:08,051 --> 00:19:15,351
+Peki bu oluşturma aşaması nasıl oluyor t-patch'leri? Burada aslında x eşittir 0 noktasında bir başlangıç noktası atanıyor öncelikle.
+
+66
+00:19:15,351 --> 00:19:23,031
+T eşittir 0 anında. Sonrasında burada o başlangıç noktası en yakın olan k-nel yöntemiyle en yakın komşular alınıyor.
+
+67
+00:19:23,172 --> 00:19:29,152
+Yani burada belirlenen k ile artık. Sonrasında o noktayı aslında t-patch olarak adlandırıyor. Bir yama seçiliyor.
+
+68
+00:19:29,571 --> 00:19:36,051
+Sonrasında o yeni belirlenen alanın merkez noktası seçiliyor. Sonrasında o merkeze yakın bir sonraki karede.
+
+69
+00:19:36,051 --> 00:20:00,000
+Merkeze yakın noktalar belirleniyor. Onlar yine bir tripeç oluşturuluyor. Bu şekilde aslında o belirlediği yerel noktanın, yerel bölgenin daha doğrusu birçok karedeki zamanını ve yönünü belirlemiş oluyor. Hareketini belirlemiş oluyor. Peki buradaki handikap ne? Burada şöyle bir durum olabiliyor. Örneğin sağdaki görselde teşkil 3 noktasında farklı başlangıç noktalarından başlayan yamaların ilerleyen...
+
+70
+00:20:00,000 --> 00:20:20,240
+Aynı zamanda aynı yere çökme durumu oluşabiliyor. Yani buna da tipe çökmesi deniyor. Yani aslında iki farklı hareketin belli bir zaman sonuna aynı yere yönelmesi sorunu ortaya çıkabiliyor. Aynı şekilde sınıflandırması olabiliyor. Örneğin işte yürümeyle belki sendeleme gibi diyelim ki farklı iki hareket düşünelim. Onları aynı şekilde sınıflandırıyor.
+
+71
+00:20:22,132 --> 00:20:42,572
+Peki bunu nasıl çözmeye çalışmışlar makalede? İki şekilde gidermeye çalışmışlar. Birincisi görüntülere gürültü eklemişler. İkincisi de bu patchleri sadece ileri zamanlı değil aynı zamanda geri zamanlı da oluşturmuşlar. Yani bi-directional aslında çift yönlü oluşturmuşlar. Bu şekilde de bu durumun önüne geçmeye çalışmışlar ve başarılı da olmuşlar açıkçası.
+
+72
+00:20:44,531 --> 00:21:12,531
+Burada çalışmalı 3 tane veri seti kullanılmıştı. Birincisi iki tane mobilya montajlarını içeriyordu. Burada 33 tane eylem sınıfı var. Her kare içinde bir etiket içeriyor veride. Boyutu da yaklaşık 117 GB. Ciddi büyük bir veriydi. İkincisi de defaust verisi. Burada da insan hareketlerinin yine 3 boyutta taramalarını içeriyor. Ve 14 tane eylem sınıfı var içerisinde. 5 kadın ve 5 erkeğe ilgili böyle 2 tane veri kümesi vardı zaten ayrı olarak. Toplamda da boyutu yaklaşık 3.4 GB şeklinde.
+
+73
+00:21:12,531 --> 00:21:15,031
+Diğer bir veri kümesi de Mesele Action.
+
+74
+00:21:15,667 --> 00:21:43,667
+3D şeklinde. Burada da el ve vücut hareketlerinin eylemlerini yine içeriyor. 20 tane eylem sınıfı var. Burada da tüm klibi etiketlemişler. Yani tüm klip için tek bir sınıf içeriyor veri seti. Bu da küçük bir veri seti. 560 MB kadar. Burada çalışmada aşırıdaki yöntemler karşılaştırıldı. Şöyle, aslında mevcut yöntemlerle zaten makaledeki yeni yöntemleri kıyaslamak için her bir veri seti üzerinde bunların da sonuçları yine verildi ve kendi yöntemlerinin de sonuçları var.
+
+75
+00:21:43,667 --> 00:21:46,587
+Bir şekilde bir kıyaslama söz konusu oldu.
+
+76
+00:21:47,443 --> 00:22:02,183
+Burada ilk olarak defas verisleti için olan sonuçları görüyoruz. En alttakiler zaten makaleli gibi, AURS olarak isimlendirdikleri makaleli gibi sonuçlar. Burada hem TAP1 hem TAP3'de aslında kendi yöntemleri, diğer mevcut yöntemlerin hepsinin üstüne çıkmış.
+
+77
+00:22:02,183 --> 00:22:15,403
+Ve hani gerçekten ciddi anlamda aslında yüzde 10'un üstünde hatta bazı yerlerde kadar bir üstüne çıkma durumu söz konusu. Bu defas verisleti için gerçekten başarılı sonuçlar vermişler.
+
+78
+00:22:17,619 --> 00:22:23,219
+Burada da defal süveriseti için böyle bir grad cam skorlarına ilişkin bir görselleştirme vardı makalede.
+
+79
+00:22:23,659 --> 00:22:28,819
+Buradaki kırmızı noktaların yoğun olduğu yerler aslında hareketin olduğu yerleri yakalayan kısımlar.
+
+80
+00:22:28,819 --> 00:22:33,859
+Örneğin ilk kısımda elleri yoğunlaşmış yoğunluklar ve eller hareket ediyor. Doğru yakalayabilmiş.
+
+81
+00:22:34,159 --> 00:22:40,699
+İkinci tarafta da kalça kısmını hareket ettiriyor kişi. Orada kırmızı yoğunluklar var. Oraya da doğru tespit etmiş.
+
+82
+00:22:41,079 --> 00:22:45,619
+Üçüncü kısımda da diz hareketi var. Kırmızı yoğunlukların da yine dizde yoğunlaştığını görüyoruz.
+
+83
+00:22:45,619 --> 00:22:46,179
+Görüyoruz.
+
+84
+00:22:47,955 --> 00:23:06,455
+Sonrasında 2ASM veriseti için olan sonuçları görüyoruz. Buradaki bu aslında zorlu bir veriseti öncelikle ki zaten mevcut yöntemlerinde yine başarılarının böyle daha nispeten daha düşük olduğunu görüyoruz. Yani 150'nin altında başarılar var mevcut yöntemlerde de. Kendi yöntemlerinde ise mevcut yöntemlerin biraz daha üstüne çıkılmış.
+
+85
+00:23:06,455 --> 00:23:15,955
+Burada tabirde 152.91 gibi yani mevcut diğerlerin üstüne çıkarak aslında tabirde yine daha başarılı bir sonuç vermiş. Tabirde ise başarı.
+
+86
+00:23:15,955 --> 00:23:25,056
+Burada daha yüksek, 175 civarında. Burada da veri setinin zorluğundan dolayı aslında performansların nispeten diğerlerine göre daha düşük olduğunu söyleyebiliriz.
+
+87
+00:23:26,900 --> 00:23:35,160
+Burada da iki asimi veris ettiği için şöyle bir görsel vardı. Burada montajın aslında yapılma durumuna göre nokta bulutları nasıl oluşturuldu? Bunu görüyoruz.
+
+88
+00:23:35,160 --> 00:23:47,740
+Burada mesela mavi bölgeler böyle dikkatle bakıldığında montaj yapılan nesnenin üzerindeki noktalar aslında burada mavi bölge yani montaj parçalarındaki hareketleri temsil ediyor.
+
+89
+00:23:48,180 --> 00:23:54,019
+Bordo bölgeler böyle kişinin kolunda görüyorsunuz. Burada da insan hareketini yakalayan t-patchler bunlar.
+
+90
+00:23:54,900 --> 00:24:00,120
+Ve yeşil bölgelerde direkt böyle masada ve yerde görüyorsunuz. Bunlar da sabit nesnelere temsil ediyor burada.
+
+91
+00:24:01,844 --> 00:24:13,443
+Bir de meselesi. Orada bir mouse hareketiyle nereleri gösterdiğini ifade edebilir misin? Çünkü söylediği renkleri çok algılayamadım. Ben mavi ve yeşili sanki gördüm sadece.
+
+92
+00:24:14,023 --> 00:24:17,163
+Tabii hocam. Mouse'u görüyorsunuz herhalde değil mi? Mouse'u mu?
+
+93
+00:24:17,523 --> 00:24:20,744
+Evet. Biraz böyle hareket ettirirsen ekranda dair.
+
+94
+00:24:20,744 --> 00:24:29,844
+Hocam, şu mavi bölgelerden kısıt şuralar hocam. Şuradaki. Yani montaj parçasının üstündeki yerler. Aslında biraz mora kayıyor ama mavi diye adlandırmış.
+
+95
+00:24:29,844 --> 00:24:44,504
+Şunlar. Burada kırmızı dediğimiz kısımlarda şunlar. Yani kişinin kulunu hareketlerini yakalıyor. Şuradaki kısımlar. Şuradaki zaten yeşil ve turkuazlarda sabit nesneleri yakalamak için.
+
+96
+00:24:47,796 --> 00:25:15,695
+Son veri seti de burada MSR Action 3D modeli veri seti. Buradaki sonuçlara bakıldığı zaman mevcut yöntemle makaledeki yöntemin aslında böyle sonuçları çok farklı çıkmamış. Yani benzer çıkmışlar diyebiliriz. Hatta bazı yerlerde böyle bir geri kaldığı da olmuş. Burada da hani veri setinin küçük olması biraz eylem sınıfı çeşitlediğin de eksikliği. Çünkü küçük bir veri setiydi gerçekten. 560 MB'lik kadar. O yüzden biraz veri setinin nasıl yetersiz olmasına yorulmuş.
+
+97
+00:25:15,796 --> 00:25:17,375
+Burada iki sonuçlar.
+
+98
+00:25:18,324 --> 00:25:40,903
+Şimdi buradan sonrasında ben kendi sonuçlarımdan bahsedeceğim. Öncelikle şundan bahsedeyim hocam. Hani ben direkt mesela kitap kodu vardı ancak kitap kodunu çalıştırma konusunda baya bir zorluk yaşadım. Yani direkt çalıştıramadım çok fazla hata aldım. O nedenle hem makaledeki çalışmayı baz alarak oradaki yapılan adımları hem de kitabın kendi yani orijinal kodunu baz alarak kendim yeni bir kod oluşturup onu çalıştırdım.
+
+99
+00:25:46,324 --> 00:26:04,824
+Kendi sonuçlarımı üzerinde biraz bahsedeceğim. Ben burada iki tane veri setini kullanabildim. Çünkü diğer o Ikea veri seti çok büyük bir veri setiydi. Hani Kegel'a vesaire de konulamıyordu yani o sınırı aşıyordu. O yüzden diğer iki veri seti üzerinde çalışabildim. Burada ilk olarak MSR Action 3D veri setini görüyorsunuz. Burada ben başarı %60 olarak buldum.
+
+100
+00:26:05,428 --> 00:26:32,968
+Pardon, şöyle geri gideyim. Aslında hani %60 böyle düşükme başarı gibi görünüyor ama çok ciddi %30 pardon 20 sınıflı bir verisete olduğu için aslında kötü de bir sonuç değil. Çünkü çok sınıflı bir problem. Burada baktığımız zaman bazı sınıfları ciddi anlamda iyi yakaladı. Örneğin mesela 18, 19, 15. sınıf, işte mesela 12. Yani burada çok iyi yakaladığı sınıflar var ama geri kaldığı yerler de var. Örneğin burada mesela 6. sınıfı çok az ayırt edebilmiş.
+
+101
+00:26:33,428 --> 00:26:41,327
+Sıkoru %15 gibi bir şeyde kalmış. İkinci sınıfı yine çok kötü ayırt edebilmiş. Hatta neredeyse ayırt edememiş. %0.9 gibi.
+
+102
+00:26:43,124 --> 00:26:54,884
+Bazı sınıfları çok yerde edebilirken bazılarını ayırt edememiş. Burada hareketlerin birbirine yakın olma durumları söz konusu olabilir gibi bazı zorluklardan dolayı ya da tipe çökmesi gibi belki ona da burada düşmüş olabilirim.
+
+103
+00:26:55,463 --> 00:27:02,523
+Bazı yani burada aslında gürültü ekledim. Yani jitter yöntemiyle burada gürültü eklemişti makalede. Ben de o şekilde gürültü ekledim.
+
+104
+00:27:02,523 --> 00:27:10,523
+İşte tipeşleri hem ileri hem geri yönlü çalıştırdım, oluşturdum daha doğrusu. O şekilde baktım ama hani belki yine farklı bir durumdan dolayı burada...
+
+105
+00:27:11,124 --> 00:27:16,903
+Bu duruma düşmüş olabilirim ki buradaki veri setinin de zaten az olma durumu da aslında biraz onu etkiliyor.
+
+106
+00:27:18,324 --> 00:27:44,864
+Sonrasında Default Süperisteti için bunu çalıştırdığım zaman burada Top 1 skoru biraz düşük geldi. %50 geldi ama Top 3 skoru daha yüksek geldi. Yani Top 3 de genelleme konusunda 3 şeye baktığı zaman 87.5 aslında iyi bir başarı elde ediyor ama tekte bulma konusunda daha kötüydü. Burada da 14 sınıflık bir problemdi bu. 14 sınıftan mesela 12. sınıfı hiç bulamadı. Yani 0. F1 skoru direkt 0 geldi. Hiç ayırt edemedi.
+
+107
+00:27:46,324 --> 00:28:10,183
+Sınıflarla ilgili derlerine benzer şekilde muhtemelen algıladı. Örneğin mesela diğerlerine baktığımız zaman daha ortalama olduğunu görüyoruz. Yani ikinci, dördüncü sınıflar %80 başarılı. İşte altıncıda %60 başarı. Yine onuncuda da aynı şekilde daha kabul edilebilir. Ama bazı sınıflarda ortalamanın altında kaldı. Bir de mesela %36 gibi, 7'de %25 gibi aşağılarda kaldı. Ki 12'de zaten hiç hayır da demedi.
+
+108
+00:28:12,243 --> 00:28:40,243
+Benim sonuçlarım bu şekildeydi hocam. Onun dışında genel olarak makaleyi de sonuca bağlayacak olursam, burada aslında yeni bir metodoloji sunmuş oldu. 3D in action şeklinde. Burada 3 boyutlu nokta bulutları kullanılarak hareket tanımı için yeni bir yaklaşım geliştirilmiş ordu. Zamansal tipeşler oluşturuldu. Bu sayede hem uzayda yeri tespit edilme konusunda hem şekli vesaire tespit edildi. Aynı zamanda zamansal temsili oluşturuldu. İkisini de kullanarak burada bir temsil oluşturuldu.
+
+109
+00:28:40,243 --> 00:28:46,483
+Aynı zamanda sonuç olarak da mevcut en iyi yöntemlerinde üzerine bir performans sergilediğini göstermiş oldular.
+
+110
+00:28:48,443 --> 00:28:50,223
+Söyleyecektim bu kadar hocam. Teşekkür ederim.
+
+111
+00:28:50,604 --> 00:29:00,564
+Teşekkür ediyoruz [öğrenci]. Seni de hemen bir dakika alkışlıyoruz sunumun için. Ben bir soru soracağım.
+
+112
+00:29:00,564 --> 00:29:01,703
+Tabii ki hocam.
+
+113
+00:29:03,347 --> 00:29:08,128
+Bu çözüm yönteminde sabit kamera olma mecburiyeti var değil mi?
+
+114
+00:29:10,448 --> 00:29:14,488
+Hocam, yani sabit kamera aslında öyle bir şeyden bahsetmiyordu.
+
+115
+00:29:15,028 --> 00:29:16,688
+Sen düşün.
+
+116
+00:29:17,619 --> 00:29:20,699
+Kameranın hareketli olmaması gerekiyor değil mi?
+
+117
+00:29:20,779 --> 00:29:21,779
+Doğru, evet.
+
+118
+00:29:22,499 --> 00:29:25,879
+Sabit bir kamerayla çekilmiş olması gerekir.
+
+119
+00:29:25,879 --> 00:29:30,659
+Tek hareket eden nesne orada şey olmalı.
+
+120
+00:29:31,139 --> 00:29:35,839
+Senin odaklandığın ve hareketini tahmin etmeye çalıştığın nesne olacak.
+
+121
+00:29:36,459 --> 00:29:39,039
+Eğer kamera hareketli olsa bunu yapamaz.
+
+122
+00:29:39,476 --> 00:29:49,776
+Çünkü arka planda hareket edecek o zaman gibi bir de şeyi var. Ama ilginç, tabii çok ciddi bir makine gücü de gerektiriyor. Bu da bir gerçek.
+
+123
+00:29:50,716 --> 00:29:58,096
+Evet hocam, zaten sonunda onu özel olarak belirtmişler. Böyle bir üniversiteden destek almışlar. Ekstradan şöyle çok güçlü şeylerden yararlandık diye belirtmişler.
+
+124
+00:29:59,096 --> 00:30:05,296
+Teşekkür ediyoruz. Soru var mı arkadaşlar sizden? Sorularınız varsa?
+
+125
+00:30:06,963 --> 00:30:15,223
+Sohbet bölümünden yazabilirsiniz. Peki, soru gelmedi. İkinci sırada [öğrenci].
+
+126
+00:30:16,124 --> 00:30:21,644
+Buradayım hocam, sesim geliyor mu? Evet, çok güzel duyabiliyoruz sizi. Bir de ekran görelim.
+
+127
+00:30:21,644 --> 00:30:30,983
+Hemen paylaşayım. Kameramı da açayım ben.
+
+128
+00:30:31,827 --> 00:30:33,668
+Ekranım ve kameram geliyor değil mi hocam?
+
+129
+00:30:34,107 --> 00:30:38,168
+Evet. Güzel. Görebiliyoruz. Bir de tam ekran yaparsanız sunumu...
+
+130
+00:30:38,168 --> 00:30:43,107
+Hemen yapayım hocam. Baştan diyeyim. Her şey hazırsanız.
+
+131
+00:30:43,667 --> 00:30:45,548
+Evet, buyurun sizi dinliyoruz.
+
+132
+00:30:46,008 --> 00:30:52,607
+Ben bugün Local Consistent Transform Learning for Rotation Environment Point Cloud Analysis diye bir makaleden bahsedeceğim.
+
+133
+00:30:52,687 --> 00:31:03,227
+Bu makalede üç boyutlu nokta bulutlarının üzerinde rotasyon yapıldığı zaman sınıflandırmada yaşanan başarısızlıklara bir çözüm üretmek için geliştirilen yöntemden bahsediliyor.
+
+134
+00:31:04,327 --> 00:31:06,827
+İçerikten önce neden bu konuyu seçtiğimi anlatayım.
+
+135
+00:31:11,635 --> 00:31:38,635
+Nesne tespiti yapıyorduk. Lidarımız da vardı. Hoca liderla da nesne tespit etmeyi deneyim demişti. Hani biz o zaman yapamamıştık bunu. Hani hem zamanımız yetmemişti hem de imkanlar yetmemişti. Oradaki örnek makalelere bakarken bu CPA'daki şeyi gördüm, bu çalışmayı gördüm. Dedim hani bu konuda nereye gelinmiş bu çalışmada? Hani daha yeni yeni bu çok büyük başarılara, çok büyük ekürüsülere ulaşınca ben de merak ettim nasıl yapmışlar, nasıl etmişler diye.
+
+136
+00:31:39,023 --> 00:31:49,864
+O yüzden bu konuyu seçmek istedim ben. İçerikle devam edeyim. Girişle başlayacağım. Çalışmanın motivasyondan, literatürteki çalışmalardan, yöntemlerden ve sonuçlardan bahsedeceğim.
+
+137
+00:31:51,028 --> 00:32:06,908
+Nokta bulutlarının önemi 3D algılama sistemleri genelde lidarlar, tarayıcılar, RGBD kameralarının çıktısı olarak nokta bulutu olarak çıkıyor. Bizim çalışmamız olan otonom sürüş ve robotikte, nesne tanımadır ve birçok alanda kullanılıyor.
+
+138
+00:32:07,380 --> 00:32:22,000
+Nokta bulutları düzelsiz olduğu için uygulanacak geometrin dönüşümlerden klasik konvizyoner yöntemlerin uygulanması zor oluyor. Bu nedenle özel yapılar ve dönüşümlere, geometrik dönüşümlere ihtiyacımız oluyor. Bunlar rotasyonel karşılığı dayanıklı olması, rotasyonel invariant olması.
+
+139
+00:32:22,516 --> 00:32:50,375
+Bekleniyor genelde. Burada iki tane nokta buluta örneği verdim ben. Burada bir otonom aracın sürüşü sırasında görülen işte ne bileyim trafik lambasının tanınması, araçların tanınması gibi durumlarda bu dediğimiz yönelimler ya da araçların yönelimi, tabelaların yönelimi ya da işte insanların yönelimi gibi konularda öne çıkıyor. Diğer kısımda da hazır veri setleri üzerinden ya da gerçek dünya algılamaları üzerinden.
+
+140
+00:32:50,516 --> 00:33:08,676
+Tarınan birinin, örneğin sandalye olur, masa olur, uçak olur. Bunların tanınması, farklı yönelimlerde olan neslerin tanınlanmasında çalışma, bu çalışma yapılmış. Rotasyonu duyarlılığın getirdiği zorlukları aynı nesle farklı yönlerden tarınabiliyor. Bu durum sonucunda farklı orantasyonlar oluşuyor.
+
+141
+00:33:08,676 --> 00:33:17,635
+Geleneksel yöntemlerde neslenin değişince başarılı oldukça düşmekte. Bizim yaptığımız dediğim lisans çalışması döneminde de bunu karşılaşmıştık biz.
+
+142
+00:33:18,163 --> 00:33:22,884
+İdeal sistemlerde nesli döndürülse bile aynı özellikleri koruyacak özellikler üretilmeli.
+
+143
+00:33:23,364 --> 00:33:28,304
+Bundan ancak rotasyonu karşı değişmez yani rotation invariant şekilde oluşturulmuş temsillerle mümkün oluyor.
+
+144
+00:33:29,104 --> 00:33:35,923
+Motivasyon, birer bölge için simetrik, tutarlı ve rotasyonu karşı dayanıklı yerler koordinat sistemleriyle lokal refit referans framework üretmek.
+
+145
+00:33:36,307 --> 00:33:55,648
+Bu dokular referans frame üzerinde izahlanan tılabalıklarını daha sağlam yerel geometrik temsiller elde ediliyor. Globalden daha çok yerele inecek şekilde bir temsil oluşturuluyor. Özellikler yön değişiminden etkilenmeden öğrenilmeye çalışılıyor. Model sadece dönüşüme karşı değil, yerel yapısal bozmaları karşı da dayanıklı hale getiriliyor.
+
+146
+00:33:56,372 --> 00:34:20,912
+Literatürdeki çalışmalardan bahsedeceğim burada. Üç çeşit çalışmalar aslında literatürde. Nokta bulutu şeklinde alınca yani direkt nokta bulutu üzerinden yapılan çalışmalar. İkincisi rotasyonu karşı değişmezliğe dayalı metodlar var. Bunlar rotation invariance olarak geçiyor. Bir de rotasyonu eşdeğerlik oluşturulan yöntemler var. Bunlar da değişimi döndürüp o şekilde itiyor gibi düşünebilirsiniz. Bu diğerlerde daha da bahsedeceğim.
+
+147
+00:34:21,264 --> 00:34:49,264
+En bilgi nokta bulutu şeklinde en bilgisayar yöntemler PointNet, PointNet++, DGCNL, PointTransform olarak geçiyor. Bu yöntemde herhangi bir nokta bulutu yani data setimiz herhangi bir işleme uğramıyor, direkt olarak işleniyor. Genellikle merkez nokta ve komşuları dayalı bir özellik çıkarma yapılıyor. S-Combination tarzı. Yöntemler zaten hani bahsettiğim gibi direkt olarak nokta bulutlarını doğrudan işlediği için herhangi bir rotasyonu verildiği zaman oldukça düşüyor başarısı. Ben bununla ilgili de bir...
+
+148
+00:34:49,264 --> 00:35:08,824
+Bir örneğim de bununla ilgili yapmıştım. DGCR'nin üzerinde bir çalışma yaptım. İkincisi rotasyona karşı değişmezliğe dayalı metodlar. Bunlar bu yöntemde principal komponent analiz gibi yöntemlerden tüm siver üretilir yeni temsilinde bunlar kullanılıyor.
+
+149
+00:35:09,588 --> 00:35:18,408
+Bulutu temsilleri de başarı artıyor ama geri dönüşü yapılacağı zaman da yerel yapısal bilgiyi kaybettiğimiz için geri dönüş yapılamıyor.
+
+150
+00:35:18,408 --> 00:35:22,728
+Ya da tespitlerde ekstra bir veri ekleneceği zaman kayıplar yaşanabiliyor.
+
+151
+00:35:22,728 --> 00:35:25,568
+Üçüncüsü de rotasyona eş değerli oluşturulan.
+
+152
+00:35:25,568 --> 00:35:36,008
+Girişteki rotasyondan çıktığı aynı şekilde yansımasını sağlıyor. Başta da bahsettiğim gibi modeli döndürerek normal bir nokta bulutunu bir de döndürerek veriyoruz. O şekilde itiyoruz.
+
+153
+00:35:36,179 --> 00:35:42,579
+Bu şekildeki modeller de var. Bu da Tfn diye geçen, S3 Transformer diye geçen yöntemler var.
+
+154
+00:35:42,579 --> 00:35:50,000
+Bunlar rotation invariant değildir. Çıktılar yönelime bağlıdır. Başta dediğim gibi nokta bulutumu 90 derece döndürüp belirti modele veriyorum.
+
+155
+00:35:50,000 --> 00:35:58,460
+Bu sefer 50 derece döndürdüğüm modeli tanımakta zorluk çekiyor. Çok fazla döndürme işlemi yaptığım için çok ağır ve maliyeti yüksek çalışmalar oluyor.
+
+156
+00:35:58,931 --> 00:36:05,171
+Burada en son bahsettiğim model ile çekil atışırsan Oriented Onnip'in bir çalışması var.
+
+157
+00:36:05,171 --> 00:36:09,171
+Burada siyah ve mavi rengi iki tane noktayı baz alıyoruz.
+
+158
+00:36:09,171 --> 00:36:16,051
+Şurada gördüğünüz gibi dönme işlemi yaptığımızda kırmızıyı hafif olarak kırmızıyı korusa da
+
+159
+00:36:16,051 --> 00:36:19,572
+eşi oku tamamen kaybediyor mesela. Böyleyken bu hale geliyor.
+
+160
+00:36:19,711 --> 00:36:27,711
+Döndürme işleminde öğrenildiği zaman. Bizim çalışmada bahsettiğinde Local Consist References Frame adı verilen bir geliştirilen metot da,
+
+161
+00:36:34,195 --> 00:36:48,935
+Bak dönüşüm yapıldıktan sonra ise tekrardan yönlerin korunabildiği görülüyor. Bu şekilde bir prensip izleyerek biraz daha bağımsız noktalar, komşularına bağımlı ama birbirinden bağımsız ama yine de oryantasyonu koruyan noktaları elde etmeye çalışıyoruz bu çalışmada.
+
+162
+00:36:48,935 --> 00:36:55,555
+Bu noktalar, blokotrans adını vermişler çalışmalarına. Bu yöntemin çözümlerinden bahsedeceğim.
+
+163
+00:36:56,019 --> 00:37:24,019
+Noktalı yer olarak tanımlanan referans sistemine göre işlemekten vazgeçiyoruz artık. Tam olarak buna geçiyoruz. Yerel olarak tanımlanan referans sistemine gelişiyoruz. Global olarak tanımlanan X, Y, Z gibi değil. Tek noktadan, merkezi bir sistemden değil. Noktaları yer olarak değerlendiriyoruz. Rotasyonu karşı değişmezliğe dayalı metodlarlık ve eksiklikler ve çözüm olarak bahsettiğim local consensus referans frame kullanıyoruz. Simetri yerine tutarladık ve ortogonit edikliğe bağlı bir...
+
+164
+00:37:24,019 --> 00:37:24,659
+Üzüm üretiyoruz.
+
+165
+00:37:25,220 --> 00:37:28,599
+Dotasyonu eşdeğerli yöntemlerin aksine
+
+166
+00:37:28,992 --> 00:37:48,692
+Equvariant vektörleri araç olarak kullanıyor ama aslında hedef Equvariant'a bağlı invariantları üretmek. Bir yöntemi diğer yöntemi üretmek için kullanıyoruz. Tek başına ya ikinci yöntemi ya üçüncü yöntemi kullanmıyoruz. İkinciyi kullanıyoruz, onu bir ara adıma dokup sonra kullanıyoruz şeklinde bir anlatıma.
+
+167
+00:37:56,992 --> 00:38:21,652
+Özelliğe sahip oluyor. Yöntem, etaratı kısmındaki bahsedilen eksik noktaların giderilerek üst boyut nokta bulutlarının sınıflandırma, segmentosu işlemleri yapılması için loko trans metodu önerilmiştir. Bu yöntem özellikle şu şekilde. Her nokta için bir lokal konsistence referent frame oluşturuyor. Noktalar bu çerçeveye göre normalize ediliyor. Özellik çıkarıma, lokal frame'e göre
+
+168
+00:38:22,164 --> 00:38:32,104
+Hizalanmış noktalardan bir özellik çıkarımı yapılıyor. Bu sayede hem ağ dönüşümden etkilenmiyor hem de ayrıntıyı koruyor. İki şekilde de kazanç sağlıyoruz.
+
+169
+00:38:32,104 --> 00:38:39,264
+Yönetemin çalıştığı şeklini şu şekilde anlatayım ben size. Burada bir uçağın üç boyutlu tarama resmi var gibi. Sentetik bir bölü bu.
+
+170
+00:38:39,264 --> 00:38:44,664
+Bunları iki ağda işliyoruz. Bir invariant dal, bir de equivalent dal diye geçiyor.
+
+171
+00:38:49,264 --> 00:39:02,264
+Local Consistent Referent Frame oluşturuyoruz. Burası equivalent bence. Bu sırada aldığımız veriyi Relative Policy Recovery modeline sokmamız gerekecek.
+
+172
+00:39:02,708 --> 00:39:09,708
+Burada da ikinci invariant branşa geçiyoruz. Burada da yine konversiyon ve pooling yaparsak, Relative Poze'u kaybediyoruz.
+
+173
+00:39:09,708 --> 00:39:16,108
+Dediğim gibi, ikinci yöntemde bahsettiğim gibi kaybettiğimiz bir veri grubu oluyor, veri özelliği oluyor.
+
+174
+00:39:16,108 --> 00:39:21,908
+Bunu da geri kazanmak için, Ekuvarient Branş'ta elde ettiğimiz verileri RPR modülüne sokarak,
+
+175
+00:39:22,096 --> 00:39:49,096
+kaybedilen relative bozu geri kazanıyoruz ve işleme devam ediyoruz. İki özelliği birleştirdiğimiz zaman da bahsettiğimiz local trans model oluşmuş oluyor. Hem equivalent sağlamış oluyoruz hem de invariant sağlamış oluyoruz. Bunu da equivalent kullanılarak invariant branşı üzerinden yapıyoruz. Daha sonra bunları classification olur, segmentation olur, her türlü işlemde kullanabiliyoruz. Biraz da öntemin formülasyon kısmından bahsedeceğim.
+
+176
+00:39:49,460 --> 00:40:03,460
+Bahsettiğim iki değişmezlik özelliği. Eğer bir noktaya rotasyon uygularsak, bir numaralı denklemde elde ettiğimiz neyli noktada, orijinal noktada aynı şekilde kalmalı. İstenen birinci özellik bu.
+
+177
+00:40:03,731 --> 00:40:13,211
+İkinci özellik ise, eğer bir nokta döndürülürse, bu nokta üzerinden elde edilen özellik aynı şekilde olmalı. Yani şu şekilde. Bir noktayı döndürdüm, öz nitelik çıkardım.
+
+178
+00:40:13,211 --> 00:40:18,072
+Veya öz nitelik çıkardım ve döndürdüm, aynı şeyi elde etmem gerekiyor bu sistemde.
+
+179
+00:40:18,675 --> 00:40:45,496
+Burada elde etmek istediğim aslında üç eksen gerekiyor bana. Birinci eksen, ikinci eksen, UR1, UR2 ile göstermiş. Bu iki eksen ne değil ki? Olacak şekilde üçüncü bir eksen gerekiyor bana. X, Y, Z gibi ama bunlar lokal olarak tanımlanıyor. Burada bahseden UR maddesinin özellikleri orta normal birbirine dik ve birim uzunlukta. Rotasyon maddesi gibi kullanılıyor. Bunu çok kullanacağız. Dönmeye karşı temsil üretmesini sağlıyor loka transom. Bu sistem üzerinden aslında biz her şeyimizi inşa edileceğiz.
+
+180
+00:40:46,132 --> 00:41:10,711
+Öncelikle orta normalleştirme yapıyoruz. Burada ne yapıyoruz? Önce bir sanal bir eksen tanımlıyoruz. Daha sonra ikincisini buna dik elde edebilmek için elde ettiğimiz vektörden diğer vektör üzerindeki iz düşümünü alıyoruz. Şurada bir bahsettiğim yapı var. Burada ikinci vektörün...
+
+181
+00:41:11,027 --> 00:41:16,027
+Diğer üzerindeki iz düşümünü alıyoruz. Şöyle bir uzunlukta bir şey oluşuyor burada.
+
+182
+00:41:16,027 --> 00:41:26,891
+Yani şu uzunluk aslında şuradaki iz düşüme denk geliyor. Bunları çarptığımız zaman da elde edeceğimiz dik vektör de burada oluyor. Burada Grantschmidt ortanörleştirilmesi adı veriliyor buna.
+
+183
+00:41:26,963 --> 00:41:34,124
+Bu yönteme ek olarak bizim biraz daha simetrik, daha böyle düzgün bir referans sistemini elde etmemiz lazım ki,
+
+184
+00:41:34,124 --> 00:41:40,524
+modele vereceğimiz bu lokal referanslar bize daha iyi açıklığa verebilsin. Burada biz açı ortayı kullanıyoruz.
+
+185
+00:41:40,524 --> 00:41:45,963
+Burada da geometrik dönüşümleri var bunların. Bu açı ortayı kullanarak UR1 ve UR2'yi elde ediyoruz.
+
+186
+00:41:45,963 --> 00:41:51,923
+Burada gördüğünüz gibi bunların da iz düşümü buralarda. UR1 ve UR2'yi de bunlar üzerinden tanımlayarak,
+
+187
+00:41:54,963 --> 00:42:03,943
+Burada sinüs ve kosünüs dönüşümleriyle, burada da işte normalleştirme yaparak daha güzel bir referans sistemi oluşuyor.
+
+188
+00:42:04,004 --> 00:42:06,423
+Bu da zaten görüldüğü üzere kırmızı ve yeşil şekli üzerinde.
+
+189
+00:42:07,304 --> 00:42:11,584
+Noktaların dağılımları çok daha farklı. Normal bir doktor üzerinden dağılımını göremiyoruz.
+
+190
+00:42:11,704 --> 00:42:12,844
+Farklı farklı dağılımlar var.
+
+191
+00:42:13,244 --> 00:42:17,724
+O yüzden bizim daha simetrik bir yapıyı elde etmemiz gerekiyor ki daha güzel bir eğitim sağlayabilelim.
+
+192
+00:42:18,463 --> 00:42:19,384
+Eksentüs tarlalığı.
+
+193
+00:42:19,956 --> 00:42:37,556
+Bu formülde A ve B ile yerel referans seyahatlerinin birbirinin eksenler arasındaki açısal benzerliği ölçülüyor. Farklı noktalar da elde edilen yerel eksenlerin birbirine ne kadar tutarlı olduğunu açmak için kullanılıyor. Şöyle bahsedeyim, bir noktaya biz referans frame oluşturduk, bir noktaya daha referans frame oluşturduk.
+
+194
+00:42:37,556 --> 00:42:44,956
+Ama bunlar birbirlerine ne kadar bağlantılı, bu da önemli. Çünkü modelin ileriki kısımlarında biz komşu noktalar üzerinden de öğrenme yapacağız.
+
+195
+00:42:45,172 --> 00:42:52,331
+Bundaki bozulma çok yüksek olursa buna da bozulma yansıtır. Bundaki bozulma zincir şeklinde, reaksiyon şeklinde birbirlerini bozabiliyorlar.
+
+196
+00:42:52,791 --> 00:42:56,251
+Bu yüzden bu formülle beraber bu birbirleri arasındaki tutarlı ölçüyoruz.
+
+197
+00:42:57,231 --> 00:43:09,811
+Bunda da orta benar diklik ve tutarlık için iki tane burada kayıplı, loss tanımlanmış. Biri orta benar diklik kayıplı, ikincisi de tutarlık kayıplı. Bunları ileride kullanacağız kayıp fonksiyonunu hesaplamak için.
+
+198
+00:43:10,324 --> 00:43:24,884
+11 Rumalı renklemde de artık referans eksenleri üzerinde öğrenmek yerine doğrudan öğrenilen yön vektörleri üzerinden tutarlıkla ölçmek için bu bir dönüşümü yapıyoruz. Artık biraz daha öğrenme, biz referans frenleri üzerinden çalışmaya başlıyoruz.
+
+199
+00:43:25,460 --> 00:43:30,739
+Daha sonrası da özellik çıkarımı. Burası, Lerative Positive Cover diye bahsettiğim kısım oluyor.
+
+200
+00:43:30,739 --> 00:43:38,420
+Burada şöyle yapıyoruz. Önceden oluşturduğumuz rotasyon maddesine komşulukları kullanarak dönüşüm uyguluyoruz.
+
+201
+00:43:38,420 --> 00:43:43,299
+Ve bunun üzerinden, Multi-rayal Perceptor'un üzerinden özellik çıkarımı yapıyoruz.
+
+202
+00:43:43,299 --> 00:43:47,059
+Bu sayede X-ray diye bir özellik çıkarıyoruz.
+
+203
+00:43:47,411 --> 00:43:56,451
+Daha sonra oluşturduğumuz tekrar komşuluk üzerinden tekrar bir özellik çıkartımı yaparak bir x üzeri r oluşturuyoruz.
+
+204
+00:43:56,751 --> 00:44:10,912
+13 numaralı formülüde her nokta için komşuyla olan ilişkiyi yerel referans çerçevesinde değerlendirirken artık 14 numaralı denklemle geometrik konumu değil artık kendi özellik uzayımıza geçmiş oluyoruz.
+
+205
+00:44:10,912 --> 00:44:23,472
+Yani o en başta bahsettiğim birini döndürdüm diğerinin özelliği kayboldu ya da işte biri 30 derece dönmesi gerekirken daha az döndü ya da işte dönmeyi tanımlayamadığım gibi durumlar olmuyor.
+
+206
+00:44:23,852 --> 00:44:24,751
+Artık tamamen çalışmıyor.
+
+207
+00:44:24,751 --> 00:44:35,672
+Yerel çerçevelere geçiyoruz ki, bu geometriden dolayı ortaya çıkan kayıplar minimuma insin. Daha sonra 15 numara denklemde
+
+208
+00:44:35,987 --> 00:45:03,987
+Komşulara göre, komşuları ağırlıklandırıyoruz burada. Komşu özü nitelik, X'ye göreli pozisyona adaptör ediyoruz. Böylece komşular riski daha hassas şekilde enstiyor. Komşulara göre ağırlık veriyoruz burada. Komşunun uzaklığına göre, komşunun konumuna göre ya da bir yerde geçiyordu sanırsa. Komşunun bizdeki tutarlılığına göre komşuyu ağırlıklandırıyoruz. En yakınımızdaki komşunun referans fremimiyle bizim referans fremimizin benzer olması lazım. Daha uzaktakilere daha az ağırlık biliyoruz ki biz etkileriz.
+
+209
+00:45:03,987 --> 00:45:08,507
+Çünkü onun referans fremi daha farklı olabiliyor. Daha farklı yönelimlerde olabiliyor.
+
+210
+00:45:09,447 --> 00:45:13,887
+Artık 16 numaralı formülde aslında burada bahsettiğim 14 numaraya benziyor.
+
+211
+00:45:13,887 --> 00:45:25,067
+Ama artık buradaki X'li de ağırlıklandırdığımız şekilde de kullandığımız için hem öz netelik hem de oryantasyon şekliyle güncellenmiş oluyor bu yeni çıkan öz netelik.
+
+212
+00:45:25,619 --> 00:45:43,619
+Göreli konumun lokal referensüleme yansıtılması. Aslında tüm yaptığımız işlem VJ, VR ve UTT'yi oluşturmakta bizim ilk 16 formülde yaptığımız. Bu lokatoransın post tanımı. Aslında bütün denklemler buna ulaşmak için yapılıyor.
+
+213
+00:45:43,664 --> 00:45:57,044
+Bu sadece konuma göre değil, görev lokal yapıya bağlı hale geliyor. Bu formül aslında çalışmanın temel taşı olarak geçiyor. Yaptığımız bütün çalışmalar aslında bunu elde etmek için de.
+
+214
+00:45:57,619 --> 00:46:05,259
+Daha sonra bu çalışmalar sonucudaki kayıpları hesaplıyoruz. İşte input seviyesi, edge convolution, feature loss diye geçiyordu buradan.
+
+215
+00:46:05,259 --> 00:46:10,539
+Orta normal yani diklik kayıpları ve tutarlık kayıpları şeklinde bütün lossları toparlıyoruz.
+
+216
+00:46:10,539 --> 00:46:14,539
+Aslında bütün geometrik ve tanımlanan özellik kayıplarını burada topluyoruz.
+
+217
+00:46:14,539 --> 00:46:18,819
+Kayıpların birleşimi sayesinde sınıflandırma segmentasyonları yapabiliyoruz.
+
+218
+00:46:19,987 --> 00:46:36,407
+Yerel referans perçevelerin, dokar referans frameleri geometrik açıdan düzgün kurabiliyoruz. Dönmelere karşı daha tutarlı, daha kararlı temsiller sağlayabiliyoruz. Bu loss fonksiyonu sayesinde. Deneysel çalışmalara geçmek istiyorum. Üç farklı görevde kullanılıyor bu açık.
+
+219
+00:46:36,719 --> 00:46:51,439
+Uç boyutlu pentatik veriler üzerinden şekil sınıflandırma yapılıyor. Daha sonra ShapeNet üzerinden gerçek dünya modeller üzerinden şekiller sınıflandırılıyor. Daha sonra da parça segmentasyonu yapılıyor çalışmada.
+
+220
+00:46:52,563 --> 00:47:08,123
+İmplementasyon detayları, Stapastic Gradient Stand kullanılmış, 0.1 olarak kullanılmış öğrenme oranı. 5 size de 32 olarak ayarlanmış. Part segmentasyonunda da öğrenme oranı her 30 epokta 0.3 olarak ayarlamışlar ve 5 size olarak 16 ayarlamışlar.
+
+221
+00:47:08,123 --> 00:47:20,563
+Test senaryoları da şöyle oluyor. Z bölü Z dediği, Z ekseninde döndürülmüş bir veri seti üzerinde test ediyor. Z bölü SO3 dediği,
+
+222
+00:47:20,563 --> 00:47:31,263
+Burada SO3 dediğimiz 3 eksende raşkere dönüşümler. D eksenine döndürülmüş bir modeli yani o şekilde eğitilmiş modeli SO3 üzerinde test ediyor. SO3 bölü SO3'te.
+
+223
+00:47:31,315 --> 00:47:40,315
+3 boyutta rastgele dönüştürülmüş şekilde eğitilen modeli, 3 boyutta rastgele döndürülmüş veri seti üzerinde test ediyor.
+
+224
+00:47:40,315 --> 00:47:46,115
+Bu metrikleri kullanılıyor. Riteratürde de bunu kullanmışlar önceki çalışmalarda. Bu metrikleri üzerinden hareket etmişler.
+
+225
+00:47:46,115 --> 00:47:49,815
+Yazarlar da ben bu şekilde devam edelim şeklinde bir karar almışlar.
+
+226
+00:47:50,739 --> 00:48:10,439
+Kullanılan veri seti, bu çalışmada modern net 40 veri seti kullanılıyor. 40 farklı kategoride uçak, araba, bitki, lamba gibi nesnelerin taranmış harları var bunlarda. Bu nesneler internetten de toplanmış olabiliyor, sentetik de üretilmiş olabiliyor. 40 farklı sınıf var burada. 12.311 tane CAD çizimi var.
+
+227
+00:48:10,835 --> 00:48:34,095
+9.833 tanesini eğitim için 2004-68'in de test için arıyorlar. İnternette bunu bulmakta zorluk çektim ben. Bunu ShapeNet sitesi üzerinden çekmişler. O siteye ulaşılamıyor şu an. Normal ulaşılabilen kısımlarda da off datası var. Onu da çevirmek istediğim zaman da...
+
+228
+00:48:34,095 --> 00:48:35,595
+Eski bir veri seti mi?
+
+229
+00:48:36,128 --> 00:48:47,088
+Değil hocam. Bunu yakın zamanda öğretmişler aslında. 2020'de falan kullanılmış çalışmalarda. Ulaşılamama sebebi şöyle. Web sitesi çökmüş.
+
+230
+00:48:47,795 --> 00:49:00,395
+Vget ile denedim. Vget no sertifikayla çekmeye denedim. Ulaşılamıyor yani. Forumlara da baktım, ulaşılamıyorlar. PointNet'in datasetinde buldum ben bunu. PointNet çalışmasının datasetinde bir yere atmışlar.
+
+231
+00:49:00,395 --> 00:49:06,995
+Oradan çekip yapmaya çalıştım ama belki o çalışmaya özel şekillendirilmişlerdi. Yaşadığım sorunları ileride anlatacağım.
+
+232
+00:49:14,291 --> 00:49:36,711
+Başarılarını anlatacağım. Burada AUSD'de kendi çalışmaları zaten. Z bölü Z kısmında zaten çoğu rotation sensitive'ler, rotation equivalent'ler, rotation invariant'lar genelde güzel başarılar sağlıyor. 91.6 almış. Bundan daha güzel başarı gösteren DJ FNM de var. Z bölü SO3'te rotation sensitive'ler zaten olaydan kopmaya başlıyor.
+
+233
+00:49:37,119 --> 00:49:48,240
+Çünkü dönüşüme çok duyarlılar. 16, 28, 18 gibi oranlara düşüyorlar. Bizim modelimiz 91.6. Genel diğer modeller gibi güzel başarılar elde etmiş.
+
+234
+00:49:48,240 --> 00:50:02,079
+SO3, SO3'te ise yine baştaki model döndürüldü, sonraki veri setine döndürüldüğü için Notation Sensitive'larda güzel başarı yok oluyor ama baştaki Z bölü Z kadar...
+
+235
+00:50:02,228 --> 00:50:13,228
+Fazla alternatif olduğu için o kadar başarıyı yakalayamıyor. Bunlar da güzel sonuçları elde ediyorlar. Rotation Equivalent'lar. Bizim modelimiz de buralara yakın şekilde güzel başarılar sağlayabiliyor.
+
+236
+00:50:13,228 --> 00:50:22,228
+Benim kendi çalışmalarımdan bahsedeceğim şimdi. DGCNL'de ben 25 Epoch'da çalıştırdım. Test accuracy 91.57.
+
+237
+00:50:22,612 --> 00:50:50,352
+0.9157 ortalama başarıda 8129, 8729 çıktı. Z-notasyon yaptıktan sonra başarı oradan 0.81'e düştü. So3'ü yaptıktan sonra da 1.01'e düştü. Normalde baktığınız zaman bunun daha büyük çıkması lazımdı bundan. Dediğim gibi veri setinin üzerinden off to h5 dosyasına dönüşümü falan yapmam gerekiyordu. Ya da hazır yapılmış bir dosyayı bulmam gerekiyordu. O dosya üzerinde oynanmış olabilir ya da farklı şeyler yapılmış olabilir.
+
+238
+00:50:50,612 --> 00:50:56,052
+Boeignet Data Set'inden aldım ben bunu. Oradan dolayı birkaç aksilik yaşanmış olabilir.
+
+239
+00:50:56,532 --> 00:51:02,211
+Eğer o site açılırsa ya da sertifik bir sorun çözülürse haftaya kadar ben bu oranları güncelleyeceğim.
+
+240
+00:51:02,592 --> 00:51:05,352
+Ama beklenildiği gibi zaten oranın düşmesi bekleniyordu.
+
+241
+00:51:05,672 --> 00:51:07,892
+Çalışmalarda da %20, %30'a düşüyordu.
+
+242
+00:51:08,472 --> 00:51:13,312
+Ben de de hem Epoch sayısını düşüttüğümden bir de, onlar 300 Epoch mu, 250 Epoch mu ne kullanıyordu?
+
+243
+00:51:13,312 --> 00:51:16,711
+Ben 25'e kadar düşürebildim çünkü yetmesi çok uzun sürüyor.
+
+244
+00:51:18,612 --> 00:51:33,612
+10 epoku da düştüm. Normalde 300 epoktu bunun sabiti. Bu kadar düşmemem sebebi, 10 epoku eğitmek, A100 ile 30 dakika sürüyor. Çok uzun sürüyor yani bunu eğitmek hocam. Çünkü içinde hem SO3 rotasyonu da yapıyor, ona göre de eğitim yapıyor.
+
+245
+00:51:33,844 --> 00:52:01,483
+Çok uzun sürdüğü için ben o epokta sınırladım. Zaten test ekürüsü de %68'de kaldı kendi eğitimden. Z dotasyonundaki %68'de kaldı. SO3'de %71'de kaldı. Sonra Z bölü Z'de %59'u aldım. Çünkü zaten bunlar düşük olduğu için bunların da 10'a oranla düşük olması bekleniyor. Ama hani şuradakine şu oranla şuna düşüşle %68'den %43'e düşük, %71'den %62'ye düşmek gibi sonuçları da ettiğim için bana mantıklı geldi.
+
+246
+00:52:01,844 --> 00:52:19,923
+Bu sayısını daha da arttırıp daha da güzel sonuçlar elde edebildim ama dediğim gibi gerçekten çok uzun sürüyor bunlar eğitmek. Bazen sesim falan düşebiliyor. Kolab üzerinden eğitmek zorunda kaldım. Çalışmada düşüşleri görebileceğim şekilde bir sonuç elde ettiğim zaman orada eğitimimi kestim.
+
+247
+00:52:20,403 --> 00:52:22,164
+Orada bir şey soracağım.
+
+248
+00:52:22,164 --> 00:52:23,664
+Tabi hocam.
+
+249
+00:52:23,664 --> 00:52:33,204
+Burada DGCNN ilk verdiğin şeyde Z rotasyonu yapıldıktan sonra doğruluk yüzdeye çevirmişsin.
+
+250
+00:52:33,204 --> 00:52:35,204
+Yani yukarıda...
+
+251
+00:52:35,860 --> 00:52:37,620
+Hocam bu %87.
+
+252
+00:52:39,340 --> 00:52:41,120
+Bu %0.81.
+
+253
+00:52:42,660 --> 00:52:43,640
+Evet hocam.
+
+254
+00:52:44,320 --> 00:52:46,180
+Çok kötü.
+
+255
+00:52:48,640 --> 00:52:50,380
+Burayı direkt konsoldan aldım.
+
+256
+00:52:50,460 --> 00:52:53,400
+Bunu kendim deney sonucu olarak elde ettiğim için yazdım.
+
+257
+00:52:53,539 --> 00:52:56,340
+O yüzden eski bunu da %87 olarak yazsaymışım da.
+
+258
+00:52:56,660 --> 00:52:59,039
+%81 değil yani bu. Direkt 0.81.
+
+259
+00:52:59,300 --> 00:53:00,519
+Bu aşırı güçlü yani.
+
+260
+00:53:01,100 --> 00:53:02,780
+Bu benim temelen...
+
+261
+00:53:03,860 --> 00:53:21,960
+Oradaki çalışma düzgün sonuç vermemiş. Lopa Transform için yaptığındaki başarılar Z bölü Z'de %59, Z bölü SO3'de %43, %62.
+
+262
+00:53:21,960 --> 00:53:24,640
+10 EPOC için diyorsun.
+
+263
+00:53:24,640 --> 00:53:25,440
+Evet hocam.
+
+264
+00:53:27,215 --> 00:53:49,875
+İyi diyorum yani. Evet evet bu çok güzel çalışıyor. Çalışmada benim görmek istediğim aslında şuydu. Bunun çok düşmesi, hani başta da zaten karşılaştırma tablosunda da Z bölü SO3'te zaten şey bunlarda 16'ya, 18'e, 20'ye falan düşüyor. Hani benim daha düşük epokla buna düşmem bir nebze başarılı gibi geldi bana. Çünkü 300 epokla eğitmişler.
+
+265
+00:53:50,900 --> 00:54:00,380
+Daha güzel çalışıyordur. Benim çok daha düşük epokla bu çevreye düşmem. Bir tıklama geldi ama daha da düzeltilebilir. Dediğim gibi veri seti üzerinde oynama yapıldı mı, yapılmadı mı bilmiyorum.
+
+266
+00:54:00,380 --> 00:54:14,700
+Çünkü veri seti üzerinde test için 5 tane katman verilmiş ama benim kullandığım veri setinde 2 tane katman var. Belki ondan da problem çıkmış olabilir. Dediğim gibi eğer veri setin çökmesi sertifika sorunu üzerindeyse...
+
+267
+00:54:14,804 --> 00:54:25,804
+Tekrar deneyeceğim haftaya kadar. Olmadı. Bu şekilde devam etmek zorundayım. Ama dediğim gibi Lokotrans'ta istediğim sonucu elde ettim. Düşüşler normal seviyede kaldı.
+
+268
+00:54:25,804 --> 00:54:36,804
+O nefokta olduğu için. Hemen hazırlayalım hocam. Gerçek dünya şekilleri üzerinden aslında fılandırma sonuçları da burada verilmiş. Bizim modelin diğer modellere göre başarısı bunlar dediğim gibi.
+
+269
+00:54:37,492 --> 00:54:45,172
+Sabit sınıf üzerinden, sabit 3 boyutlu modeller üzerinden. Gördüğünüz gibi başarı oranları burada verilmiş. Hızlanıyorum hocam.
+
+270
+00:54:45,172 --> 00:54:52,932
+Burada şekil parça segmentasyonu var. Bunun üzerinde de gayet güzel sonuçları elde ediyor. Zaten bunlar direkt eğleniyor.
+
+271
+00:54:54,260 --> 00:55:06,099
+Sabit oldukları için. Diğer karşı sınıflara bakıldığında 85, 83, 80, 75. Benzer şekilde sonuçlar elde etmişiz. Bazılarında artmış, bazılarında yakın kalmış diğerlerine.
+
+272
+00:55:06,900 --> 00:55:29,860
+Burada da parça segmentasyonu yaptığı yerlerde de görebiliyorsunuz. Bunlar normal 3 boyutlu şekiller. Bunlar sınıfta verilden. Bunlar da döndürülmüş şekiller. Bunlar rotasyon verip veriyor. Burada da başarılı şekilde segmentasyon yapılmış görüldüğünüzde. Özellikle uçak şeklinde döndürsek de burnunu, kanatlarını, ayarını, arka kuyruğu falan hepsini o tanıyabiliyor.
+
+273
+00:55:30,771 --> 00:55:37,172
+LRF yapısının performansı etkisi. Bunun ayrı ayrı her yapıya etkisi. Performansına bakmak istedim burada.
+
+274
+00:55:37,172 --> 00:55:46,771
+Burada da diğer el yapımı çalışmalara benzer şekilde elde etmişiz. Genel Object dediğim 3 boyutlu gerçek bir dünya üzerindeki nesnelerin olduğu veri tabana.
+
+275
+00:55:46,771 --> 00:55:49,739
+Orada da güzel sonuçlar elde etmişiz. Yakınlaşmış bunlara.
+
+276
+00:55:49,811 --> 00:55:54,511
+Relative Pose Recovery'nin etkisinden bahsetmek istiyorum burada.
+
+277
+00:55:54,511 --> 00:56:04,511
+Unpoint Cloud böyle. Grand Schmidt yaptığımız zaman, baktığımız zaman şuralardaki noktaların, yakın mı komşu noktaların dağılımları çok böyle yapmaya başlıyor.
+
+278
+00:56:04,719 --> 00:56:23,980
+Burada da aynı şekilde. Local Consist Referral Frame'de işte şurada baktığınız zaman yakın noktaların yönelimleri birbirine oldukça yakın görüldüğü gibi. Normal bir nokta ekseni etrafından dağılmış gibi yani hepsi eşit şekilde dağılmış gibi gözüküyor. Bu etkin üzerinden zaten biz öğrenmeyi yaptığımız zaman çok daha güzel sonuçlar elde edebiliyoruz.
+
+279
+00:56:24,500 --> 00:56:31,299
+Sonuç kısmında Local Consistence Referent Frame kavramı ile tutarlı, dik simetrik bir yön sistemi tanımlanıyor.
+
+280
+00:56:31,299 --> 00:56:38,900
+Ekuverent bilgi kullanılan Involent Temsil üretmiş oluyor. Yeni koyup fonksiyonları tanımlanmış oluyor. Diklik ve konsistensif varlık üzerine.
+
+281
+00:56:38,900 --> 00:56:46,500
+Bu model, görev başarımı açısından yüksek doğrultuda çalışırken dönüşüm etkisinden de bağımsız kalmayı başarmıştır.
+
+282
+00:56:46,500 --> 00:56:48,699
+Burada da referanslarım var hocam.
+
+283
+00:56:50,003 --> 00:57:12,263
+Teşekkür ediyoruz [öğrenci]. İlginç bir konu. Sizin lisansınız neydi? Ben Mekatronik Mühendisliği mezunuyum. Konu biraz daha orayı ilgilendirdiği için dikkat edecekti. Teşekkür ediyoruz. Soru var mı arkadaşlar? Alkışlıyoruz sunumundan dolayı seni. Soru yok.
+
+284
+00:57:13,331 --> 00:57:14,971
+Ben teşekkür ederim hocam.
+
+285
+00:57:15,951 --> 00:57:41,291
+Şimdi teşekkürler tekrar [öğrenci]. Üçüncü sırada [öğrenci] var ama bir 10 dakika ara verelim isterseniz. Öyle ilerleyelim. Bir de ilk sunumlarda çok uyarmadım ama süre konusunda biraz daha lütfen 15 dakikayı aşmayacak şekilde yapalım. Biz bir saatte şu an iki sunum dinlemiş olduk. Bir 10 dakika ara vereceğim. Ondan sonra [öğrenci]'ı dinleyeceğiz.
+
+286
+00:57:41,331 --> 00:57:43,331
+Görüşürüz.
+
+287
+01:09:58,100 --> 01:10:09,800
+Evet arkadaşlar, derse kaldığımız yerden devam edelim. Şu anda derste 16 kişi görünüyor. Bir göreyim kimler burada ellerinizi kaldırırsam.
+
+288
+01:10:17,108 --> 01:10:18,108
+8
+
+289
+01:10:20,268 --> 01:10:21,268
+9
+
+290
+01:10:27,891 --> 01:10:49,011
+Peki. Evet, yani böyle derse girip sadece ekran açmakla ders olmuyor arkadaşlar. Aktif olarak burada olmanızı bekliyorum. Katılan ve elini kaldıran arkadaşlara da teşekkür ediyorum. Şimdi üçüncü sırada [öğrenci] hazır mısınız?
+
+291
+01:10:50,452 --> 01:10:54,131
+Evet hocam, şu an sesim geliyor değil mi? Bir sorun yok.
+
+292
+01:10:54,351 --> 01:11:02,131
+Evet, seni de görüyoruz. Ekran da geldi, güzel.
+
+293
+01:11:03,811 --> 01:11:05,051
+Görünüyor sanırım.
+
+294
+01:11:05,532 --> 01:11:07,172
+Söz sizde, buyurun.
+
+295
+01:11:07,667 --> 01:11:21,007
+Ben bugün CVPR 2024'te yayınlanmış Color Shift Estimation and Correction for Image Enhancement üzerine bir rapor hazırladım. Bunun hakkında bahsedeceğim.
+
+296
+01:11:21,507 --> 01:11:27,307
+Türkçe görüntü iyileştirme ve renk kayması tahmini için düzeltme makalesi olarak diye düşünebilirsiniz.
+
+297
+01:11:35,252 --> 01:11:40,712
+Over ve Under pozlanmış, yani aşırı pozlanmış fotoğraflar çıkabiliyor.
+
+298
+01:11:41,012 --> 01:11:42,832
+Yani aşırı karartılmış ya da aşırı açılmış.
+
+299
+01:11:43,212 --> 01:11:50,372
+Bundan dolayı da hani işte mobile cihazlar, işte kamera görüntüleri gibi gibi cihazlar da hala daha tam çözülememiş bir sorun aslında.
+
+300
+01:11:50,532 --> 01:11:57,432
+Ve bundan kaynaklı da ben hani burada nasıl bir etkisi olur hayatımıza diye biraz ilgimi çektiği için aslında tamamen seçtim.
+
+301
+01:11:58,332 --> 01:12:00,612
+Lisansta vesaire ilgi bu alanım değildi çok da.
+
+302
+01:12:00,612 --> 01:12:03,252
+Tamamen konu başlığından çıkarak hani pozlanmış.
+
+303
+01:12:03,252 --> 01:12:07,932
+Bozlanma ile ilgili nasıl çalışıyor arkadaki mekanizmanın bunu merak ettiğim için seçmişler.
+
+304
+01:12:11,507 --> 01:12:13,420
+Evet.
+
+305
+01:12:13,619 --> 01:12:41,100
+Makalenin literatür ana katkısı şu şekilde diyebiliriz aslında. Renk dağılım ve kaymalarını modelleyerek hem aşırı hem de az pozlanmış modelleri birlikte iyileştirmeye çalışıyor. Normalde klasik yöntemler var. Istogram eşitleme ya da gama düzeltme ya da sadece aşırı pozlanmış düzeltme gibi aslında çözümler var. Ama bu makalenin esas buradaki katkısı bağlamsal açıdan.
+
+306
+01:12:41,619 --> 01:12:45,619
+Ben de mekansal olarak bağlamdan yola çıkıp...
+
+307
+01:12:46,260 --> 01:13:04,720
+Görüntüyü karartması ya da aydınlatması gerektiğine karar veriyor. Normalde literatürde şu an birçok çalışmada şey var, atıyorum çok karanlıktır açalım der ya da çok açıktır karartalım der. Daha tek yönlü bir şekilde çalışma var. Bu iki yönlü aslında birlikte bakıyor gibi düşünebilirsiniz.
+
+308
+01:13:14,260 --> 01:13:20,039
+Son Dark ve Brightness yani aydınlık ve karartılmış olanını düzeltti.
+
+309
+01:13:20,039 --> 01:13:21,079
+Color Modulation oluyor.
+
+310
+01:13:21,479 --> 01:13:26,239
+Color Shift Estimation'da da hangisinin ne yapacağına karar verdi aslında gibi düşünebilirsiniz.
+
+311
+01:13:26,380 --> 01:13:28,039
+Burada işte Estimation'dan kastım.
+
+312
+01:13:28,100 --> 01:13:33,720
+Az önce de dediğim mekansal, bağlamsal olarak nerede ne var'a bakıyor gibi düşünebilirsiniz.
+
+313
+01:13:34,484 --> 01:13:42,344
+Ve devamında da testlerin sonuçlarından bahsedeceğim. Burada bir görsel koymuş kendisi. Makaleden bire kalmıştım bunu zaten.
+
+314
+01:13:43,123 --> 01:14:04,963
+İmput görseli var. Bu input görseline karşılık adım adım modeller implement edildiği zaman nasıl sonuçlar çıktığını göstermiş. Buradaki yeşiller aslında under exposure. Diğer taraftakiler fazla pozlanmış, fazla oynatılmış ve az oynatılmış karakterlerden kaynaklı çıkan sonuçları gösteriyor aslında burada.
+
+315
+01:14:11,123 --> 01:14:26,304
+Bu makamalın zaten bu under ve over'ı, ikisini birlikte alarak aslında yaptığı bir şey var.
+
+316
+01:14:26,304 --> 01:14:28,304
+Ben burada...
+
+317
+01:14:29,811 --> 01:14:55,912
+Kurulum esnasında iki tane veri setinden biraz yararlandım. Aslında veri seti dediğim bu LBC ve meslekinin zaten kendi içine de zaten önerdiği yapılar var. Ama genel olarak aslında bu ikisini kullandığınızı düşünebilirsiniz. Bu ikisinin genel farkı da aslında şu şekilde söylenebilir. Meslek aslında daha çok ölçekli, daha büyük yapılarda pozlanmayı çiftler halinde, yani böyle pair çift oluşturur arkasında yapıyor.
+
+318
+01:14:57,811 --> 01:15:07,951
+Aslında yine bir şey gibi düşünebilirsiniz. Derin öğrenme tabanlı yine aslında üretilmiş ve buna aslında binaen üretilmiş bir verikmesi.
+
+319
+01:15:07,951 --> 01:15:20,931
+Yani ben devamlı da ikisi üzerinden kıyaslama yaptım aslında, modelli yaptığımda. Şundan da bahsetmek istiyorum. Normalde bunun kitapta kodu vardı ama ben onu kullanmadım. O da birazcık daha derin.
+
+320
+01:15:21,231 --> 01:15:38,271
+Öğrenme katmanları daha ağır kullanılıyordu. Yani UNET tabanlı zaten bir model bu. Bu UNET tabanlı olduğu için birden fazla orada katman sayısını ben belirleyebiliyordum. Ben daha düşük katmanlı ve farklı abdülasyonlar deneyerek aslında sonucu türetmeye çalıştım.
+
+321
+01:15:38,271 --> 01:15:43,152
+Bunu söyleyebilirim. Abdülasyon, pardon abdülasyon değil, abdülasyonlar deneyerek.
+
+322
+01:15:43,572 --> 01:16:09,832
+Burada da makalede 3 tane değerlendirme metri kullandığı için aslında ben bunu kullandım. PSMR, SSM ve RMRS, yani ortalama hata miktarı. Bu en sondaki zaten aslında renk doğruluğunu veriyor. Bu ikisi de tamamen yani baktı, araştırdığımda şey gibi gördüm. Renk kalitesi yani fotoğraf kalitesini aslında göstermek için kullanılan metrikler, değerlendirme metrikleri olarak düşünebiliriz.
+
+323
+01:16:12,115 --> 01:16:29,415
+Burada modellinden biraz bahsetmem gerekirse genel bir ağ görüntüsünü buraya koymak istedim. Burada zaten iki tane ana başlıca bunun kendi şeyi var, katkısı var, literatür katkısı var. Bunlardan birisi işte COSE dediğimiz Color Shift Ehrim Modül bir de ekstra Color Shift Modül Ehrim Modül var.
+
+324
+01:16:29,415 --> 01:16:39,415
+Ben de zaten kodu yazarken, bu arada ben kodu kendim tekrardan bir daha yazdım. Yani o kitap kodunu değil, onun haricinde kendim tamamen burada bahsettiğim modüllerle kendim tekrar yazmaya çalışmıştım.
+
+325
+01:16:40,115 --> 01:16:45,931
+Burada kosede yani tamamen rengi, mekansal ve...
+
+326
+01:16:45,971 --> 01:17:12,971
+Aşırı karartılmış ya da aşırı aydınlatılmış offsetler olarak geliyor. Bu offsetlerde koma modülüne tekrardan girip burada karar veriyor. Aslında bir ekstra akıl konuluyor ve bu akılla birlikte bunun çıktısı evet gerçekten aydınlatılmalı mı yoksa bu karartılmalı mı diye aslında bahsettiği bir yapı oluyor.
+
+327
+01:17:13,971 --> 01:17:40,511
+Dersi ettiğim gibi UNET kullanılıyor. UNET'in de bildiğimiz gibi aslında biraz böyle kum saatine benziyor ve ne kadar çok katmanlı olursa aslında o kadar çok receptive field'ları bulabiliyor. Yani burada receptive field'den katmanlı şey gibi düşünebilirsiniz. Lokal variable'lara takılmıyor artık ve daha böyle globale bakıp genelden bir feature extraction yapmasını sağlıyor. O yüzden aslında ne kadar çok katman varsa o kadar iyi sonuç verebileceğini görüyoruz burada da.
+
+328
+01:17:41,235 --> 01:17:43,255
+Gibi düşünebilirsiniz.
+
+329
+01:17:46,003 --> 01:17:48,344
+Bu şekilde aslında genel A mimarisi.
+
+330
+01:17:48,984 --> 01:17:51,324
+Burada tek tek modüllerden biraz da bahsetmek istiyorum.
+
+331
+01:17:51,564 --> 01:17:55,183
+İlk modülümüz burada şey, COSE modülü.
+
+332
+01:17:55,263 --> 01:17:59,463
+Bu COSE modülünde de gördüğünüz gibi, birincisi de Position Communication.
+
+333
+01:17:59,463 --> 01:18:06,824
+Yani burada aslında bir D-NEX dediğimiz, deformable conneumulation network kullanılıyor burada.
+
+334
+01:18:07,484 --> 01:18:11,304
+Bu deformable conneumulation network'te de içine birden fazla feature geliyor.
+
+335
+01:18:11,503 --> 01:18:13,963
+Mesela birincisi burada Position Communication.
+
+336
+01:18:14,003 --> 01:18:42,003
+Mekansal olarak nerede olduğunu söylüyor. İkincisi kalır. İlk burada makalede bahsettiğim gibi pek bir şeye bakmıyor aslında. Normalde literatürdeki çalışmalar tek bir modülün bilgisini alıp bakıyordu. Ama burada hem konumu nerede hem hangi renkte olduğuna bakarak aslında bir karar veriyor ve buna karşılık aslında offsetler oluşturuyor. Bu offsetlerde aydınlık olabilir ya da karanlık olabilir. Ama en son nihai karar veren burası değil. Bu sadece konuma göre bakıp bunun aydınlatılması gerekiyor.
+
+337
+01:18:42,003 --> 01:18:43,743
+Bu da bunun karartılması gerekiyor deniyor.
+
+338
+01:18:44,523 --> 01:18:46,443
+Burada aynı zamanda bir kavramdan bahsediyor.
+
+339
+01:18:46,543 --> 01:18:48,804
+Pseudo Normal Feature Matrix'i diye.
+
+340
+01:18:49,943 --> 01:18:52,763
+Bu matrix yapısı sayesinde aslında şey yapıyor.
+
+341
+01:18:53,884 --> 01:19:00,023
+Bütün işte bilgileri alıp bir feature'ları aslında bir şeye koyabiliyor.
+
+342
+01:19:00,863 --> 01:19:05,384
+Bir matrix'e koyup devamlı buna göre bir network ağına sokmuş oluyor.
+
+343
+01:19:05,384 --> 01:19:08,384
+Yani aslında literatürden farkı şu şekilde diyebiliriz.
+
+344
+01:19:10,003 --> 01:19:16,140
+Devamında da burada Deformable Combination Network kullanarak aslında bir...
+
+345
+01:19:16,500 --> 01:19:24,659
+Rengi ve mekana bakarak aslında offsetlerin belirlenmesi. Tamamen estimation yapılan bir model gibi düşünebilir burada.
+
+346
+01:19:24,659 --> 01:19:39,360
+[öğrenci], burada bir soru soracağım. Pseudo normal features dediği aslında o fotoğrafta problemli fotoğrafın sanki böyle normal kontrastlı hali gibi görünüyor. Bunu nasıl üretiyor?
+
+347
+01:19:40,340 --> 01:20:00,000
+Bu şey de normal Matrix'in mi? Kendisi arka tarafta özellik üreticisini, şey aslında bir kayıp gibi düşünebilirsiniz. Orada bir şey haritası oluşturuyor, feature haritası oluşturuyor. Kendisi esas ana girdisi. Evet burada bir şey yok, nasıl diyeyim, işlenmiş bir veri yok.
+
+348
+01:20:00,000 --> 01:20:09,940
+Esas ana fotoğraf gibi düşünebilirsiniz ama burada aslında bütün özellikleri, tek tek işte konumunu, rengini vesaire aslında işlediği bir matrix yapısı var arka tarafta.
+
+349
+01:20:10,119 --> 01:20:16,860
+Hani burada bir işlenmişlik yok aslında. Hani bir pozlama daha yapılmamış hali. Dediğiniz doğru. Ama pozlamayı daha zor sonrası yapıyor.
+
+350
+01:20:16,940 --> 01:20:24,440
+Bu aslında ilk girdisinde bütün o bilgileri alıp hani şurada ilk başta hani şurada iki tane zaten girdis var. Bunları birleştiriyor zaten.
+
+351
+01:20:28,000 --> 01:20:46,260
+Bir de aslında benim aydınlatılma çeviri ve karartılmış şeyim var. Zaten birisi normal olarak geliyor. İkincisi benim aydınlatılmış ve karartılmış olarak geliyor. Bunları birleştirip aslında devamında kararlama, yani offsetleri oluşturmasını yapıyor diye bir düşünüyorum. Sizin de dediğiniz gibi aslında bir nevi normalini alıyor.
+
+352
+01:20:56,000 --> 01:21:01,300
+Orada bu özellik var mı? Yaptıkları bir pseudonormal matriks diye geçmiş aslında.
+
+353
+01:21:01,840 --> 01:21:06,180
+Burada ama bir işlenmişlik yok. Dediğiniz gibi aslında normal fotoğrafı alıyor zaten.
+
+354
+01:21:08,180 --> 01:21:09,180
+Teşekkürler.
+
+355
+01:21:10,068 --> 01:21:30,288
+Devamında da ikinci, buradan bu modülden çıkan çıkılığı devamında koma modülüne sokuyor. Yani Color Modu değişir gibi düşünebilirsiniz. Burada aslında birincisinde hani şurada demiştik ya, offsetler oluşmuştu. Bu offsetleri alıp devamında buraya getiriyor. Bu zaten input image, yani imajın kendisi aslında gibi düşünebilirsiniz. Karartılmış ve aydınlatılmış halleri var.
+
+356
+01:21:34,899 --> 01:21:47,799
+Cross-Apiration mekanizmi kullanarak aslında çeşitli fotoğrafta değişiklikler yapıyor. Aslında fotoğrafın burada değişikliklerin yapıldığı modül gibi düşünebilirsiniz.
+
+357
+01:21:48,239 --> 01:21:54,559
+İşte tekrardan Orsono's, Transpoz edilmesi, Normalizasyonu gibi gibi kısımlar aslında tamamen burada yapılıyor.
+
+358
+01:21:54,559 --> 01:22:02,879
+Burada aslında kayıp fonksiyonları da kullanılıyor. Devamında bahsedeceğim sonuçlarında ama bu makale tek bir şey.
+
+359
+01:22:02,899 --> 01:22:28,639
+Yaparak aslında bulmamış. Birden fazla metodolojiyi deneyerek yapmış. Kayıt fonksiyonu olarak atıyorum. Cosmology Simulary değil de VGD'yi kullanırsam ne olur ya da SSM kullanırsam ne olur gibi gibi aslında. Birisi algısal kalite mesela VGD algısal kalitayı arttırıyor diye geçiyor. Cosmology Simulary renk tutarlığına bakıyor. SSM IEM diye geçten mesela yapısal olarak aslında baktığı gibi.
+
+360
+01:22:30,899 --> 01:22:38,899
+Önöntüyü nasıl iyileştirebileceğine bağlı olarak bu kayıp fonksiyonlarını değiştirip en feasible olanı bulmaya çalışıyor gibi düşünebiliriz aslında.
+
+361
+01:22:38,899 --> 01:22:43,899
+Ve en sonunda da zaten burada Output Image çıktısını vermiş oluyor.
+
+362
+01:22:44,435 --> 01:22:54,576
+Mesela burada nasıl bir görüntü? Aslında birazcık da pozlamanın bizdeki neden önemi var. Bilmiyorum şurası görünüyor mu ama biraz yaklaştırırsam belki şey olabilir.
+
+363
+01:22:54,796 --> 01:22:57,636
+Mouse ile hareket edersen nereye bakacağımızı bilelim.
+
+364
+01:22:57,636 --> 01:23:12,435
+Tamam mı? Tamamdır. Mesela şu kızın dizinden bahsedeyim mesela. Şimdi ben az önceki pozlamadan bahsediyorum. Pozlamanın nasıl bir önemi var? Mesela burada pozlamada aşırı aydınlatıldığı için mesela, retinx forma mesela bu farklı bir model. Mesela burada aşırı pozladığı için aşırı aydınlatıldığı için...
+
+365
+01:23:12,435 --> 01:23:13,216
+Aydınaklı için.
+
+366
+01:23:13,844 --> 01:23:41,844
+Şurada hafif bir parlamalar var mesela. Parlaklık olarak gelmiş. Ama bunun birazcık daha smooth olması lazım. Aslında bu modelde de bunu şey yapıyor. Ben diyor buna baktığım zaman diyor evet diyor hani konum açısından diyor aydınlatılması gerekiyor ama ne kadar seviyede aydınlatılması gerekiyor. İşte bunu aslında karar verdiği şey ilk başta diyor ki evet aydınlatılması gerekiyor kısmını estimation kısmında yapıyor. İkinci komu modelinde ise ne kadar aydınlatılması gerekiyor ya da aydınlatılmayacaksa ne kadar aydınlatılmayacaksa ne kadar aydınlatılmayacak.
+
+367
+01:23:41,844 --> 01:23:55,804
+Dediği kısmı da aslında burada yapıyor. Yani ikinci model de yapıyor. Bizim pozlamadan kastımızda birazcık bundan kaynaklı. Bunu göstermeye çalışıyoruz aslında. Bu iki model bunu hesaplamaya çalışıyor.
+
+368
+01:23:56,435 --> 01:24:04,536
+Burada da yine farklı bir veri setinde nasıl aşırı pozlama olursa ve aşırı pozlama olmasa gösteriyor.
+
+369
+01:24:04,755 --> 01:24:12,355
+Burada zaten 4 tane input var. Bu 4 tane inputta da esas fotoğrafın girdi. Mesela şurada gösterelim.
+
+370
+01:24:12,355 --> 01:24:16,355
+Farklı bir MSG modelde aslında.
+
+371
+01:24:17,876 --> 01:24:37,296
+İkili olan buydu yanlış hatırlamıyorsam. Aynen. İkili çiftler haline bakarak aslında karşılaştırmalı haline bakarak yapılan bir öğrenme modelinde birazcık daha burada karartılarak görülmüş. Ama mesela LCD'ye bu kadar daha net değil ama bizim modelde mesela daha netleştirerek aslında çıktığı elde ediyor gibi düşünebilirsiniz.
+
+372
+01:24:38,515 --> 01:24:40,716
+Şimdi ben burada biraz soruşlardan bahsetmek istiyorum.
+
+373
+01:24:41,171 --> 01:24:54,931
+Burada şimdi iki tane farklı tablo var. Birinci tablodan bahsedeceğim. Bu birinci tabloda şunu yapmış. Makale kendisini yaparken adülasyonlar denirmiş. Yani adülasyonlar kastı. Mesela burada ben dedim ya koma modülü vardı. Bu koma modülün içinde...
+
+374
+01:24:56,532 --> 01:25:23,512
+Gidebiliyorum sanırım. Mesela burada atıyorum kose modeli. Kose modelini denerken mesela demiş ki ben bunun position'ını çıkartayım mesela diyorum. Mekansa bağlamsa bunu çıkartayım. Color'ını deneyim mesela diyor. Sadece color ve modulation, combination olduğu zaman yani bu iki feature'ı girdiği zaman nasıl sonuç elde edeceğim gibi. Aslında tek tek bunu çıkartıp veya burada kayıp fonksiyonları var. Kayıp fonksiyonlarından atıyorum. Kosinüs simülatörü denemiyor da BGG deniyor. Böylece algısal kaliteyi arttırıyor mesela gibi.
+
+375
+01:25:24,532 --> 01:25:31,832
+Farklı operasyonlarla sonuçları denemiş ve en iyi çıkanı, mesela VG demiş, şu aşağı kısımdakiler dediklerim kayıp fonksiyonları.
+
+376
+01:25:32,572 --> 01:25:40,572
+Şurada yukarıda bahsettiğim, işte Kose'ye girerkenki, işte mekansallık, modül ve color dediğimi, mesela ikisini denemiş, en iyi sonuç çıkmış gibi gibi.
+
+377
+01:25:40,572 --> 01:25:44,492
+Mesela burada gördüğümüz zaman bundan da biraz bahsedebiliriz aslında.
+
+378
+01:25:45,235 --> 01:25:59,835
+Şu ikisinde mesela, işte Kose modelinde, special yani bağlamsal, uzamsallık ve modülleri kere baktığım zaman aslında iyi bir sonuç verdiğini görüyorum. Ama mesela color ile birlikte eşlediğim zaman bir tip daha çok az bir fark, daha düşük olduğunu görüyorum.
+
+379
+01:25:59,835 --> 01:26:12,415
+Ve şu an bakıldığı zaman aslında literatürdeki çoğu çalışma renge bakarak aslında arttırıp azaltmaya bakıyor. Çok da bağlamsal, mekansallığa bakarak şey yapmıyor, pozlamayı yapmıyor aslında gibi düşünebiliriz.
+
+380
+01:26:13,235 --> 01:26:40,716
+Aşağıda bu farklı modeller var demiştim. Kayıp modelleri, kayıp fonksiyonları. Mesela VGC daha çok kalitesine bakıyor. Bu kuma modelinde vardı mesela. Kayıp fonksiyonlarından bahsediyor. Mesela burada birazcık daha kalitenin arttırılması ile ilgili olduğu için VGC'nin daha iyi sonuçlar verdiğini. Ama SSIM dediğim işte burada burası birazcık daha yapısına bakıyor. Fotoğrafın yapısına bakarak aslında bir kayıp fonksiyonu tanımlaması diye geçiyor bu literatürde.
+
+381
+01:26:41,235 --> 01:26:45,556
+Onu mesela eklediği zaman daha küçük sonuçlar, düşük sonuçlar verdiğini görülüyor burada.
+
+382
+01:26:45,956 --> 01:26:49,835
+Yani aslında tamamen çıktığıya bakınca şeyi anlamaya çalışıyor burada.
+
+383
+01:26:50,556 --> 01:26:54,975
+Hangisiyle hangi metriği yaparsa daha iyi sonuçlar veriyor aslında görmeye çalışıyor.
+
+384
+01:26:55,556 --> 01:27:00,175
+Ve genel olarak makale sonucuna baktığımız zaman diğer çalışmalara göre daha iyi sonuçlar verdiğini görüyor.
+
+385
+01:27:00,175 --> 01:27:07,036
+Şurada mesela daha önce yapılmıştı bu MSX, SJM, Retin X Formal. Az önce de zaten atıklarını yapmıştım.
+
+386
+01:27:09,235 --> 01:27:23,296
+Daha iyi sonuçlar verdiğini görüyoruz burada. Birazcık daha iyi sonuç vermiş. Burada PSNR ve SSM. Yani aslında fotoğraf kalitesine bakarak iyi sonuçlar verdiğini görüyor. Ben burada ne yaptım peki? Ondan biraz bahsetmek istiyorum.
+
+387
+01:27:23,956 --> 01:27:49,096
+Burada UNET tabanı vardı. Zaten ablasyon çalışmaları da kendisi zaten bütün şeyleri denemişti. Zaten gördüğünüz gibi hani onu çıkartayım buna ekleyeyim şeklindeydi. Ben de o yüzden biraz UNET tabanını değiştirmeye çalıştım. Yani şuradaki aslında öğrenme modelini aslında birazcık değiştirdim. Yani direkt şu komu ve kosoyu direkt alıp aslında en verimli olanları. Genelde işte şurada baktım aslında. Yani şu şekilde yaptım diyebiliriz.
+
+388
+01:27:51,956 --> 01:28:02,396
+VGG'ye, o zaman VGG'ye alacağım kayıp profesyonel olarak. Aynı zamanda uzamsal ve modülleri daha yüksek sonuç verdiği için bunu alıp aslında 10 şekilde modülleri ekledim.
+
+389
+01:28:02,396 --> 01:28:08,396
+Ve devamlı da şu UNET'i değiştirdim. Yani UNET'te birazcık daha düşük katmanlı ve...
+
+390
+01:28:09,235 --> 01:28:37,215
+Daha işte birazcık da parametrenin, herkese parametrenin değiştirerek aslında daha küçük. Yani diğer baktığım zaman kitaptaki birazcık daha derin bir modeldi. Benimki daha düşük bir model oluşturarak aslında tekrardan bir çalıştırdım. Bundan kaynaklı da benimki aslında şeyi göstermiş oldum ben de. Evet, katmanları birazcık daha düşürdüğümüz zaman düşük sonuçlar elde edebiliyor. Yani aslında burada UNET'in de gerçekten büyük bir başarısı var diyebileceğimiz bir şey var. Yani ben birazcık aslında UNET'in katman sayısının artmasından.
+
+391
+01:28:37,235 --> 01:28:51,615
+Bu zaten benim beklediğim bir şey miydi? Evet. Çünkü UNET'in zaten bu reseptif field'lere bakmasında, yani feature'ları bulmasındaki esas alı ne kadar uzun olursa kendisi tekrardan aslında bunu bile bulabiliyor.
+
+392
+01:28:51,615 --> 01:29:01,415
+Hani sona taşınması lazım. Bundan kaynaklı aslında birazcık daha derin bir öğrenme modeli kurulursa daha iyi sonuçlar verebileceğini aslında ben de test etmiş oldum.
+
+393
+01:29:01,795 --> 01:29:05,175
+Burada iki farklı testi vardı. Birisi LCDP ve MÜSKT.
+
+394
+01:29:05,235 --> 01:29:12,496
+Az önce de bahsettiğim gibi bunlar aslında model olarak gelmişler ama bizim makalemizde de aslında bir test belirsesi olarak da geliyor.
+
+395
+01:29:12,496 --> 01:29:16,215
+Bu LCDP olan, pardon yanlış söyledim.
+
+396
+01:29:16,735 --> 01:29:22,055
+Müştek olan daha böyle ikili bazda olduğu için, bir şeyde bir şeye kıyaslayarak olduğu için bunun sonucunun daha iyi olduğunu gördü.
+
+397
+01:29:23,175 --> 01:29:25,295
+LCDP'te bir tık daha düşük çıkmıştı.
+
+398
+01:29:26,076 --> 01:29:27,635
+Bu şekilde bir sonuç oldu.
+
+399
+01:29:28,335 --> 01:29:30,235
+Ve burada bir tane de şey demiş en sonunda.
+
+400
+01:29:31,060 --> 01:29:59,060
+Daha önceden, zaten sonuçlar verilen bir fotoğrafı biz eğer tekrardan tonlamaya çalışırsak hatalara neden olabilir demiş. Mesela bundan da bahsetmiş. Mesela şurada yanak kısmı için, mesela şurası zaten koyuydu ama biz bunu biraz daha koyuttuktan komple şurası koyulaşmaya başladı. Yani bu aslında yanak açısından böyle bırakılabilirdi. Bir daha bunun pozlanmaya ihtiyacı yok aslında. Ama bunu kestiremiyor diye bir şeyde de göstermiş.
+
+401
+01:29:59,060 --> 01:30:01,980
+İşte bu şekilde hocam.
+
+402
+01:30:01,980 --> 01:30:14,140
+İlginç bir konuymuş. Teşekkür ediyoruz [öğrenci]. Konuyu bize aktardığın için alkışlıyoruz sunumundan dolayı. Soru var mı acaba?
+
+403
+01:30:15,764 --> 01:30:31,764
+Ben hala şeyi anlamadım yalnız. Orada giriş görüntüsünde bunun çok aydınlık ya da çok karanlık problemli bir görüntü var ama yöntemi uygulayabilmek için normalini de yani doğru pozlanmışına da ihtiyacımız olacak mı tarafı?
+
+404
+01:30:34,024 --> 01:30:41,963
+Doğrusuna da ihtiyacımız olacak mı? Ha şey gibi mi diyorsunuz hocam? Hani gerçekten nasıl bir çıktı elde etmem gerektiğini elde edelim.
+
+405
+01:30:42,771 --> 01:30:58,231
+Ama zaten burada gerçek çıktığı elde etmesi, ben onu düşünüyorum. Ben orada gerçek sonucu koymadım. Test için orada aslında çıktısını olması gerekiyor diye hesapladım. Evet, olması gerekiyor ki kıyaslama yapabilsin.
+
+406
+01:30:58,231 --> 01:31:10,771
+O kıyaslama kısmı ayrı. Ne kadar olduğunu ölçmek için, PSNR vs. hesaplamak için tabii ki gerekecek ama benim sormak istediğim da...
+
+407
+01:31:10,771 --> 01:31:16,212
+Daha çok modelin girdisinde normal yazılan bir görüntü vardı ya.
+
+408
+01:31:16,792 --> 01:31:19,391
+Evet. Ben şimdi düşünüyorum.
+
+409
+01:31:19,811 --> 01:31:20,992
+Şimdi orada şöyle bir şey var.
+
+410
+01:31:21,072 --> 01:31:21,612
+Şimdi düşünüyorum.
+
+411
+01:31:21,692 --> 01:31:25,311
+LCD bir de ben sokarken test veresine iki tane farklı şey soktum.
+
+412
+01:31:25,771 --> 01:31:26,591
+Küme soktum.
+
+413
+01:31:26,891 --> 01:31:28,192
+Birisi testin kendi içiydi.
+
+414
+01:31:28,271 --> 01:31:29,631
+Birisi de çıktısı olması lazım.
+
+415
+01:31:30,068 --> 01:31:32,407
+Yüksek ihtimalle onu alıp oraya götürüyordu.
+
+416
+01:31:32,688 --> 01:31:40,108
+Yani sadece o diğer ikinci girdiği sadece compare etmek ve başarıyı ölçmek için mi kullanıyor?
+
+417
+01:31:40,108 --> 01:31:44,148
+Gerçekten modelin inputu olarak da kullanıyor mu sorusu?
+
+418
+01:31:44,847 --> 01:31:47,188
+Biraz böyle kafamı kurcaladı yani.
+
+419
+01:31:47,867 --> 01:31:49,728
+Modelin input olarak kullanılıyor ama.
+
+420
+01:31:49,827 --> 01:31:51,547
+Evet, modelin input olarak da aldığını biliyor.
+
+421
+01:31:51,627 --> 01:31:52,247
+Evet, kullanıyor.
+
+422
+01:31:52,307 --> 01:31:54,427
+Onu çünkü makalaya çok sık geçiriyor.
+
+423
+01:31:54,587 --> 01:31:55,627
+Kullandığına eminim.
+
+424
+01:31:56,028 --> 01:31:58,068
+Bu bir dezavantaj aslında yani.
+
+425
+01:31:58,068 --> 01:32:01,207
+Ona bir daha bakacağım ama hocam. Teşekkür ederim.
+
+426
+01:32:01,648 --> 01:32:10,547
+Teşekkür ediyoruz [öğrenci]. İlginç bir konuydu. Şimdi dördüncü sırada [öğrenci]. Hazır mıyız?
+
+427
+01:32:14,547 --> 01:32:15,268
+Merhaba hocam.
+
+428
+01:32:16,387 --> 01:32:17,547
+Diyabiliyor musunuz şu an?
+
+429
+01:32:18,547 --> 01:32:24,427
+Evet, duyuyoruz ve ekranını görebiliyoruz. Bir de tam ekran yaparsan süper olacak.
+
+430
+01:32:25,140 --> 01:32:25,680
+Tamam.
+
+431
+01:32:26,880 --> 01:32:27,680
+Buyurun.
+
+432
+01:32:27,960 --> 01:32:33,640
+Başlıyorum hocam. Benim seçtiğim çalışma Clustering Propagation for Universal Medical Image Segmentation.
+
+433
+01:32:34,880 --> 01:32:42,300
+Bunu seçmemdeki aslında sebep, [kişisel bilgi]
+
+434
+01:32:43,000 --> 01:32:45,720
+Buna bir örnek olarak bu çalışmayı seçtim.
+
+435
+01:32:47,080 --> 01:32:50,400
+Öncelikle çalışmadan, motivasyonundan ve hedeflerinden bahsedeceğim.
+
+436
+01:32:51,123 --> 01:32:59,103
+Segmentasyon modellerini kullanıcıyla olan etkileşime göre otomatik veya etkileşimli olarak ikiye ayırabiliyoruz.
+
+437
+01:32:59,103 --> 01:33:05,884
+Otomatik yöntemlerde görüntüyü modele veriyoruz ve model bize doğrudan segmentasyon maskelerini veriyor.
+
+438
+01:33:06,423 --> 01:33:14,823
+Etkileşimli yöntemlerde ise kullanıcıdan alınan tıklama veya işaretlenen kutu gibi girdilerde alınarak segmentasyon süreci yönlendiriliyor aslında.
+
+439
+01:33:17,492 --> 01:33:23,072
+İki ayrı yöntem aslında iki ayrı araştırma kolu oluşturmuş oluyor.
+
+440
+01:33:23,731 --> 01:33:27,391
+Ve bu iki işi birden aynı anda yapabilen az sayıda model var.
+
+441
+01:33:28,431 --> 01:33:33,632
+Diğer taraftan CT ve MR gibi medikal görüntüler, üç boyutlu görüntüler.
+
+442
+01:33:34,372 --> 01:33:40,132
+Bunların segmentasyonunda kullanılan işlemlere göre üç boyutlu ağlar veya iki boyutlu ağlar kullanılabiliyor.
+
+443
+01:33:40,132 --> 01:33:44,471
+Üç boyutlu ağlar oldukça yüksek performans verebilmelerine rağmen
+
+444
+01:33:44,884 --> 01:34:05,423
+Yapılan işlemlerin karmaşıklığından dolayı çok fazla vakit alabiliyorlar ve çok fazla bellek gereksinimi duyabiliyorlar. İki boyutlu ağlarda ise oldukça hızlı çalışabilmelerine rağmen oldukça hızlı çalışabiliyorlar ama iki dilim arasındaki bağlam kaybedilmiş oluyor.
+
+445
+01:34:09,652 --> 01:34:24,012
+Bir dilimde belli bir bölgede böbrek varsa mesela, onun hemen ardından gelen dilimde de aynı bölgede, böbreğin aynı bölgede olması beklenir. Ama bütün dilimler iki boyutta olarak ayrı ayrı işlendiği zaman bu bilgi kaybedilmiş oluyor.
+
+446
+01:34:29,619 --> 01:34:38,719
+Mevcuttaki etkileşimli yöntemlerin genellikle tek bir sınıf, tek bir foreground sınıfı üzerinde çalışabiliyor olması. Mesela medikal görüntülerden bahsedeceğim yine.
+
+447
+01:34:40,719 --> 01:34:49,219
+ECT görüntüsünün tek bir diliminde aynı anda mide de olabilir, bağırsak da olabilir veya böbrek de olabilir. Birden fazla sınıf aynı anda olabilir.
+
+448
+01:34:50,519 --> 01:34:56,899
+Tek bir foreground sınıfla çalışan bir model kullanıyorsak bunların her biri için ayrı bir modele ihtiyacımız oluyor.
+
+449
+01:34:57,619 --> 01:35:05,359
+Bu çalışmada ise yazarlar bu belirledikleri problemleri çözmek için aynı anda hem otomatik ve etkileşimli olarak çalışabilen,
+
+450
+01:35:06,599 --> 01:35:19,460
+iki boyutlu ağlar kullanarak bu her dilim arasında bağlamaklarımı sağlayan ve aynı anda birden fazla sınıfla çalışabilen bir model önermek istemişler.
+
+451
+01:35:20,083 --> 01:35:26,743
+Buna yönelik olarak da S2VNet modeli öğrenmişler. Bu Sliced to VolumeNet olarak açılıyor.
+
+452
+01:35:27,763 --> 01:35:36,723
+Bu modelde her dilim 2 boyutlu yöntemler kullanarak segment ediliyor. Bu sayede segmentasyon sürecinin hızlı yapılabilmesi sağlanıyor.
+
+453
+01:35:36,983 --> 01:35:43,643
+Burada dilimler segment edilirken kümeleme tabanlı yöntemler kullanılıyor ve K-Means Cross-Tension kullanılarak
+
+454
+01:35:43,828 --> 01:36:09,168
+Her bir nesne için küme merkezi belirleniyor. Ve daha sonra bu belirlenen küme merkezleri bir sonraki dilime de aktarılarak aslında üç boyutlu bağlamında korunmuş olması sağlanıyor. Burada bu ilk dilim için küme merkezlerinin nasıl belirlendiğine göre bu model otomatik veya etkileşimli çalışabiliyor. Eğer bu küme merkezlerini belirlerken kullanıcından alınan tıklamalar kullanılırsa etkileşimli olarak çalışabiliyor.
+
+455
+01:36:10,131 --> 01:36:16,631
+Eğer bu küme merkezleri rastgele veya boş olarak başlatılırsa da otomatik olarak modelin çalışması sağlanıyor.
+
+456
+01:36:18,011 --> 01:36:27,631
+Modelin genel şeması bu şekilde. Model 2022 yılında çıkan Must Formers mimarisi üzerine kuruluyor.
+
+457
+01:36:28,047 --> 01:36:41,347
+Burada görüntü bir backbone'a veriliyor ve bu backbone ile multi-scale özellikler çıkarılıyor. Daha sonra bu özellikler bir Transformer Decoder Glove'na veriliyor. Bu Transformer Decoder'ın ayrıca bir Query Feature'd input'u da var.
+
+458
+01:36:41,347 --> 01:36:53,228
+Ve bu Transformer Decoder'dan gelen çıktı ve bu multi-scale feature'lar birleştirilerek segmentasyon maskeleri elde ediliyor. Bu Maskformer'ın çalışma yapısı.
+
+459
+01:36:53,844 --> 01:37:04,844
+S2Vnet'te bu yapı üzerine iki temel modifikasyon yapılıyor. Birincisi, Transformer Decoder'a gelen
+
+460
+01:37:04,844 --> 01:37:16,844
+Qr feature'ler için kullanıcıdan belirlenirken, bu Qr feature'ler belirlenirken kullanıcıdan alınan klikler belirlenebiliyor.
+
+461
+01:37:20,627 --> 01:37:40,228
+Click Feature Sampling denen blokta işlenerek aslında küme merkezleri başlatılmış oluyor. Burada bu Click Feature Sampling blokunun yaptığı kullanıcıdan olan kliklere göre, kliklerin tıklamaların nerede olduğuna göre burada çıkarılan backbone'un çıkarttığı feature'ları aslında örnekliyor.
+
+462
+01:37:44,815 --> 01:37:48,655
+Bu küme merkezlerinde uyumlu olacak şekilde bir boyuta gelirliyor.
+
+463
+01:37:49,416 --> 01:37:55,315
+Daha sonra da ikinci değişim, ikinci modifikasyon da Transformer Decoder Bloğu içerisinde.
+
+464
+01:37:55,815 --> 01:38:00,175
+Orijinal çalışmada burada Cross-E-Tension modülleri kullanılıyor.
+
+465
+01:38:00,935 --> 01:38:11,175
+Bu çalışmada ise K-Mins Cross-E-Tension kullanılarak elde edilen çıktığının küme merkezlerine karşılık gelmesi sağlamıyor.
+
+466
+01:38:11,536 --> 01:38:21,395
+Ve bu şekilde S2Vnet modelini oluşturmuş oluyorlar. Bu modelin farklı slicelar arasındaki geçişi de burada sağ tarafta gösteriliyor.
+
+467
+01:38:22,055 --> 01:38:32,376
+Bir slice girdiği zaman, bir dilim girdiği zaman bu segmente ediliyor ve Transformer Dekoder'ın çıkışında küme merkezleri geliyor.
+
+468
+01:38:32,895 --> 01:38:37,292
+Daha sonra bu küme merkezleri ikinci slice için, sonraki dilim için...
+
+469
+01:38:37,300 --> 01:38:58,600
+Buradaki Query Feature olarak Transformer Dekadarı veriliyor ve aynı şekilde ikinci dilimde segment ediliyor. Bu ikinci dilim için gelen küme merkezleri üçüncü dilimde Query Feature olarak veriliyor ve bu şekilde hacim boyunca bağlamaktırımı sağlanıyor.
+
+470
+01:39:01,140 --> 01:39:08,840
+Burada bağlamaklarımını sağlarken tekrarlamalı küme merkezi birleştirme şeklinde bir yöntem kullanmışlar.
+
+471
+01:39:08,840 --> 01:39:21,039
+Burada küme merkezleri aktarılırken sadece bir önceki slice değilken elimizdeki dilimden önce gelen tüm dilimlerin merkezleri aslında birleştiriliyor.
+
+472
+01:39:21,800 --> 01:39:25,960
+Bu da sağda gösterildiği şekilde yapılıyor.
+
+473
+01:39:27,220 --> 01:39:48,500
+Burada bir dilim için t dilimi için küme merkezleri geldi ve t dilimdeki görüntü geldi. Bu ikisi kullanılarak bu dilim segment edildi ve bu dilimin küme merkezleri elde edildi. Daha sonra buradaki h matrisinde o ana kadar gelen birleştirilmiş olan küme merkezleri var.
+
+474
+01:39:53,268 --> 01:40:00,307
+Bu dilim için olan küme merkezleri, Prostation'dan geçirilerek bir sonraki dilim için küme merkezleri input elde edilmiş oluyor.
+
+475
+01:40:01,988 --> 01:40:02,988
+Buyurun hocam.
+
+476
+01:40:03,048 --> 01:40:08,248
+Burada slicewise segmenter dediğin şey yine kümeleme mantığıyla mı çalışıyor?
+
+477
+01:40:08,887 --> 01:40:11,068
+Aslında burada anlattı sistem hocam o.
+
+478
+01:40:11,748 --> 01:40:13,368
+Sağ tarafta anlattı değil mi?
+
+479
+01:40:13,688 --> 01:40:15,588
+Evet. Burada küme merkezi girdi.
+
+480
+01:40:16,008 --> 01:40:16,228
+Evet.
+
+481
+01:40:16,228 --> 01:40:16,927
+Durüntü girdi.
+
+482
+01:40:17,460 --> 01:40:24,760
+Burada da aynı şekilde küme merkezi girdi, görüntü girdi ve çıkışında bir küme merkezleri var ve segmentasyon maskesi var.
+
+483
+01:40:25,300 --> 01:40:28,140
+Tamam, o clustering yapıyor yani yine orada.
+
+484
+01:40:28,500 --> 01:40:30,560
+Kami's clustering dedin ya, onu yapıyor.
+
+485
+01:40:30,900 --> 01:40:41,340
+Bir önceki slice'dan gelen küme merkezleri bilgisini, bir sonraki slice'da da o küme, o piksellerin hangi kümeye ait olduğunu bulmak için orada kullanıyor.
+
+486
+01:40:41,820 --> 01:40:44,300
+Evet hocam, yani burada aslında şeyi anlatıyor.
+
+487
+01:40:45,011 --> 01:40:49,611
+Bu aktarımın hacim boyunca nasıl gerçekleştiğini anlatıyor.
+
+488
+01:40:50,251 --> 01:40:57,471
+Bu slides için önceki dilimden gelen, dilim slides sürekli karıştırarak kullanıyorum kusura bakmayın da.
+
+489
+01:40:58,471 --> 01:41:01,031
+Yok anlıyorum. İkisi de aynı anlamda sonuçta.
+
+490
+01:41:01,908 --> 01:41:18,308
+Önceki dilimden gelen küme merkezleri ve elimizdeki dilimin görüntüsü geldi. Bunlar bu sisteme sokularak segmentasyon maskesi elde ediliyor ve bu dilim için küme merkezleri elde ediliyor. Bu burada C şapkayla gösterilen matriz.
+
+491
+01:41:19,572 --> 01:41:37,471
+Daha sonra bir de tüm o dilime kadar olan küme merkezlerinin birleştirildiği bir matrisimiz daha var. Burada H ile gösteriliyor. Bu H matrisi ile C şapka cross-etension'dan geçirilerek bir sonraki dilim için input olacak küme merkezi elde edilmiş oluyor.
+
+492
+01:41:37,471 --> 01:41:46,652
+Bu birleştirme işlemi de burada gösterildiği gibi self-etension kullanılarak yapılıyor. Burada C şapka ile H matrisi.
+
+493
+01:41:46,771 --> 01:42:06,072
+Öncelikle Konkatenay'da üst üste bindiriliyor ve daha sonra Self-Attention Bloğu'ndan geçirilerek boyutunun aynı kalması sağlanıyor ve bir sonraki bloğa aktarılıyor. Bu şekilde önceki sliselardan, önceki dilimlerden gelen tüm kime merkezi bilgisi korunmuş oluyor ve bu hacim boyunca korunabiliyor.
+
+494
+01:42:06,547 --> 01:42:27,307
+Bu şekilde iki boyutlu yöntemler kullanılarak üç boyutlu bağlamında aktarımı yapılmış oluyor. Zaten çalışmanın adı da buradan geliyor. Clustering Propagation dediği, burada clustering'dan kastettiği küme merkezlerinin bulunması, propagation'dan kastettiği de bu küme merkezlerinin hacim boyunca aktarılması.
+
+495
+01:42:28,979 --> 01:42:51,159
+Önerilen modelin test edilmesi için üç tane veri seti kullanmışlar. Bunlardan birincisi Word veri seti. Bu CT görüntülerinden oluşan 16 sınıflı bir veri seti. Burada 100 tane eğitim görüntüsü, 20 tane validasyon görüntüsü ve 30 tane test görüntüsü var. Bunun bir örneğini buradaki görselde görebiliyoruz.
+
+496
+01:42:51,796 --> 01:42:58,156
+Kullandıkları ikinci veri seti BTCV veri seti. Bu da aynı şekilde CT görüntülerinden oluşuyor ve 13 sınıfı var.
+
+497
+01:43:00,336 --> 01:43:11,616
+Bu veri setinin eğitim setinde 30 görüntü var. Test setinin maskelerini paylaşmadıkları için bu 30 görüntü 24-6 eğitim ve test olacak şekilde bölünerek kullanılmış.
+
+498
+01:43:12,296 --> 01:43:18,616
+Kullanılan son veri seti de AMOS veri seti. BTCV'nin bir örneğini de burada görebiliyoruz sağ üstte.
+
+499
+01:43:19,475 --> 01:43:46,235
+Amos veri setinde de hem CT hem MR görüntüleri var. Bu 15 sınıflı bir veri seti ve CT görüntüleri için 200 tane eğitim, 100 tane doğrulama ve 200 tane test görüntüsü var. MR görüntüsü için de 40 tane eğitim, 20 tane doğrulama ve 40 tane test görüntüsü var. Bu çalışmada Amos için hem CT hem MR için ayrı ayrı eğitim yapmışlar ve test etmişler.
+
+500
+01:43:47,123 --> 01:43:52,344
+Öncelikle Word setinde aldıkları sonuçlar üzerinden geçeceğim.
+
+501
+01:43:53,104 --> 01:43:58,823
+Modeli otomatik ve interaktif olacak şekilde iki farklı kategoride test etmişler.
+
+502
+01:43:59,323 --> 01:44:03,463
+Hem otomatik çalışan modellerle hem interaktif olarak çalışabilen modellerle test etmişler.
+
+503
+01:44:04,463 --> 01:44:10,583
+İki durumda da aslında önerdikleri modelin karşılaştırdıkları modele göre
+
+504
+01:44:11,060 --> 01:44:29,340
+Daha iyi sonuçlar verdiğini görebiliyoruz. Ortalama sonuçlarda iki durumda da daha iyi. Sınıf bazında baktığımız zaman da otomatik durumda üç tane sınıf haricinde diğerlerinde en iyi sonucu vermiş. Bu üç sınıf içinde en iyi sonuca yakın sonuçlar verebilmeyi başarmış.
+
+505
+01:44:30,020 --> 01:44:37,900
+İnteraktif durumda ise yine aynı şekilde test ettikleri modeller arasında en iyi sonucu elde etmeyi başarmışlar.
+
+506
+01:44:38,323 --> 01:44:53,363
+Burada dikkat edilmesi gereken bir durum. Burada inceledikleri modeller tek sınıfla çalışabilen modeller. O yüzden burada belirtilen her sınıf için ayrı bir model eğitilerek karşılaştırılmış.
+
+507
+01:45:00,243 --> 01:45:12,563
+Böbrek için ayrı ayrı modeller eğitilmiş. Bu modeller burada alınan sonuçlar bu sınıfa özel eğitilmiş olmasına rağmen tüm sınıflarda çalışabilen S2VNet modeli bunlardan iyi sonuç vermeyi başarabilmiş.
+
+508
+01:45:13,023 --> 01:45:21,563
+Burada yapabileceğimiz diğer bir gözlemde genel olarak interaktif kullanıldığında modelin otomatik...
+
+509
+01:45:22,836 --> 01:45:28,976
+Kullanıma göre daha iyi sonuçlar verdiği, bu da kullanıcı etkileşiminin başarıyı arttırabildiğini gösteriyor.
+
+510
+01:45:29,996 --> 01:45:35,896
+Word veri seti için ayrıca modelin büyüklüğünü ve çalışma hızını da test etmişler.
+
+511
+01:45:37,176 --> 01:45:46,396
+Burada baseline olarak verdiği model, her slice'da iki boyutlu işleyerek herhangi bir bağlama aktarımı yapmayan basit bir model.
+
+512
+01:45:46,636 --> 01:45:50,236
+Bunlar da üç boyutlu çalışan modeller.
+
+513
+01:45:50,355 --> 01:46:02,855
+Yapılan karşılaştırmaya bakıldığı zaman bellek kullanımı olarak baseline modeli çok yakın elde etmiş ve diğer karşılaştırdıkları 3 boyutlu modellere göre neredeyse yarısı kadar bellek ihtiyacı duymuşlar.
+
+514
+01:46:03,855 --> 01:46:13,876
+Ve özellikle işleyebildikleri, dakikada işleyebildikleri hacim konusunda da bu 3 boyutlu modellere göre çok ciddi bir iyileştirme sağlayabilmişler.
+
+515
+01:46:15,091 --> 01:46:27,931
+Şunu atladım sanırım. Burada raporladıkları score, Dice Score olarak raporlamışlar. Ayrıca Pass-Tor Distance metriyinde her model için raporlamışlar.
+
+516
+01:46:29,011 --> 01:46:45,051
+Sırada BTCV sonuçları üzerinden geçeceğim. Bu da aslında Word'de aldıkları sonuçlara benzer şekilde elde etmişler. Yine otomatik ve interaktif olarak iki farklı şekilde incelemişler. Ve iki durumda da aslında en iyi sonucu elde etmeyi başarabilmişler.
+
+517
+01:46:45,051 --> 01:46:51,051
+Burada da yine Word ile paralel olarak interaktif...
+
+518
+01:46:52,692 --> 01:46:58,051
+İnteraktif kullanımda otomatik kullanıma göre daha iyi sonuçlar verdiğini görebiliyoruz.
+
+519
+01:46:59,152 --> 01:47:15,492
+Son olarak da Amos sonuçları üzerinden geçtiğimizde de yine aslında önceki sonuçlara benzer şekilde karşılaştırdıkları modeller arasında en iyi sonuçları elde etmeyi başarabilmişler.
+
+520
+01:47:15,956 --> 01:47:25,975
+Burada interaktif olarak sadece kendi modellerini raporlamışlar. Neden diğer modellerle karşılaştırmadıklarını çalışmada da belirtmemişler.
+
+521
+01:47:27,536 --> 01:47:32,216
+Sonrasında ise kendi çalışmalarım üzerinden geçeceğim. Kendi yaptığım uygulama üzerinden.
+
+522
+01:47:32,819 --> 01:47:48,840
+Ben kullandıkları 3 veri setinden sadece BTCV üzerinde çalıştım ve temel UNET varyantlarını uyguladım aslında. Burada UNET, ATT ve UNETAR modellerini deneyip S2VNET modelinin aldığı sonuçlarla karşılaştırdım.
+
+523
+01:47:49,840 --> 01:47:55,340
+Burada kendi eğittiğim modeller arasında en iyi sonucu ATT modelinden aldım.
+
+524
+01:47:59,988 --> 01:48:10,268
+Loss ve Epoch grafikleri incelendiğinde aslında Attention Unit ve UnitR modelinin aslında hala azalma eğiliminde olduğunu görüyoruz.
+
+525
+01:48:10,328 --> 01:48:16,568
+Aslında yani kastettiğim eğitim devam edilseydi aslında daha iyi sonuçlar elde edilebilirdi bu modeller için.
+
+526
+01:48:17,408 --> 01:48:19,468
+Unit'te böyle bir durum yok.
+
+527
+01:48:26,644 --> 01:48:36,184
+Safra kesesi haricinde tüm model, tüm sınıflar için, raporladıkları tüm sonuçlar için aslında S2VNet modeli daha iyi sonuçlar elde edebilmiş.
+
+528
+01:48:37,963 --> 01:48:42,644
+Kendi eğittiğim modellerin çıktılarına baktığımızda ise...
+
+529
+01:48:42,644 --> 01:48:46,224
+[öğrenci], oradaki sonuçlar Dice skorları mı bunlar?
+
+530
+01:48:46,224 --> 01:48:47,264
+Bunlar Dice skorları hocam.
+
+531
+01:48:48,364 --> 01:48:54,123
+Tekrar söyler misin? S2VNet'in sonuçları bizimkilerden daha mı iyi dedin?
+
+532
+01:48:54,707 --> 01:49:17,987
+Bizim elde ettiklerimizden daha iyi olarak çıkıyor hocam. Sadece burada Safra kesesi için burada Atenşi Üniversitesi aslında tüm modeller daha iyi sonuç vermiş. Ama diğer tüm sınıflarda, raporladıkları sınıflarda S2V net modeli daha iyi sonuç raporlamayı başarabilmiş. Burada bir diğer durumda ben bu modelleri 3 boyutlu konfigürasyonda eğittim.
+
+533
+01:49:18,420 --> 01:49:32,859
+Buna karşılık S2Vnet modeli iki boyutlu olarak çalışabiliyor ve daha hızlı, kendim test etmedim ama kendi raporlarına göre benim test ettiğim modellerden daha hızlı sonuç verebiliyor.
+
+534
+01:49:36,140 --> 01:49:41,800
+Ortalama skorlara baktığımızda yine en yüksek sonucun S2Vnet'te elde edildiğini görüyoruz.
+
+535
+01:49:42,836 --> 01:49:53,815
+Burada da sol tarafta orijinal görüntü, ortada Grand Truth ve sağ tarafta 8D modelin output olacak şekilde bir görselleştirme görüyoruz.
+
+536
+01:49:54,836 --> 01:50:07,435
+Burada aslında 3 modelin de benzer çıktılar verdiğini ve en büyük farkın burada, buradaki en büyük yeşil sınıf için olduğunu görüyoruz.
+
+537
+01:50:07,807 --> 01:50:11,007
+Bunun da sebebi aslında bu slide üzerinde.
+
+538
+01:50:11,307 --> 01:50:15,807
+Orijinal görüntüye baktığımızda burada kenar kısımda bir bulanıklık var.
+
+539
+01:50:16,307 --> 01:50:26,007
+Bunu Grand Truth'ta organa dahil etmemişler ama modeller genel olarak bu bulanıklığı da organa dahil edilerek bulmuşlar.
+
+540
+01:50:26,007 --> 01:50:30,807
+Burada da aslında Grand Truth'a en çok yaklaşan Attention Unit olarak gözleniyor.
+
+541
+01:50:32,083 --> 01:50:34,463
+Bu da Attention Unit 3D model mi?
+
+542
+01:50:34,903 --> 01:50:37,063
+Bunların 3'ü de 3D hocam. 3 boyutlu.
+
+543
+01:50:37,063 --> 01:50:38,003
+Öyle mi?
+
+544
+01:50:40,983 --> 01:50:45,344
+Benim çalışmalarımda aslında bu BTC ve seti üzerinde bu kadar.
+
+545
+01:50:47,223 --> 01:50:50,363
+Dinlediğiniz için teşekkür ediyorum. Bir sorunuz varsa.
+
+546
+01:50:52,595 --> 01:50:59,815
+Biz teşekkür ediyoruz. İlginç bir çalışma. Tam benim ilgilendiğim konular olduğu için ayrıca dikkatimi çekti.
+
+547
+01:51:01,255 --> 01:51:11,815
+Clustering'den faydalanıyor. Bir one click veya no interaction dediği iki şekilde çözüm karşılaştırması yapmış.
+
+548
+01:51:11,815 --> 01:51:20,595
+Ve sonuçlar literatürden daha iyi 2D olmasına rağmen. Yani aslında prosesi 2D yapıyor gibi.
+
+549
+01:51:20,595 --> 01:51:27,975
+Görünüyor ama bir önceki katmandan da bir veri aktarımı var. O yüzden bir avantaj da alıyor.
+
+550
+01:51:27,975 --> 01:51:32,235
+Bu adamın kurduğu için aslında üç boyutlu çalışıyor gibi biraz.
+
+551
+01:51:33,255 --> 01:51:37,295
+Başarısının yüksek olmasının en büyük sebebi herhalde o olsa gerek.
+
+552
+01:51:37,875 --> 01:51:41,055
+Teşekkür ediyoruz [öğrenci]. Güzel bir sonumdu.
+
+553
+01:51:42,915 --> 01:51:44,355
+Evet, şimdi...
+
+554
+01:51:44,467 --> 01:51:48,427
+Ara vermesek acaba? [öğrenci] hazır mısınız?
+
+555
+01:51:49,007 --> 01:51:49,947
+Hazır mı hocam?
+
+556
+01:51:50,867 --> 01:51:52,047
+Evet, sizi dinliyoruz.
+
+557
+01:51:53,907 --> 01:51:55,547
+Ekranın parçayı.
+
+558
+01:51:56,387 --> 01:51:57,108
+Tamamdır.
+
+559
+01:52:04,500 --> 01:52:06,500
+Şu an gözüküyor mu acaba?
+
+560
+01:52:06,500 --> 01:52:08,500
+Evet, görebiliyoruz. Buyurun.
+
+561
+01:52:08,500 --> 01:52:23,500
+Merhaba, ben [öğrenci]. Bugün sizlere CBR2014'ten Flexible Biometrics Recognition, Detention Alignment and Compturing makalesinin uygulamasının sunumunu yapacağım.
+
+562
+01:52:25,500 --> 01:52:29,500
+Aslında buradaki makale benim ve çalışma alanım olan...
+
+563
+01:52:30,323 --> 01:52:34,383
+Yüz tanımayla ilgili olduğu için ben bunu seçtim. [kişisel bilgi]
+
+564
+01:52:35,383 --> 01:52:44,903
+Ve orada bazı, özellikle koronundan sonra maske kullanımıyla beraber görüntü işleme konusunda bazı çözümler gerekiyordu.
+
+565
+01:52:44,903 --> 01:52:52,903
+Ve bu makalede de yüzün belli bölgelerinde okreşim, yani örtüşme olduğu durumlarda...
+
+566
+01:52:53,716 --> 01:53:11,476
+Bu Challenger'ın üstesinden gelebilmek için bir yöntem geliştirilmiş. Buradaki yöntem Periocular diye bahsedilen, aslında göz çevresi anlamına gelen ve yüz multimodalitesi ile işlenen bir model geliştirilmiş.
+
+567
+01:53:21,524 --> 01:53:48,844
+Öncül modelle, bu yüzlerin her birisinin gözlerini çıkararak, bu kişi bu yüze ait gözler bunlar diye belirlenerek yüz ve göz embedingleri çıkarılarak intramodality yani gözden yüze ve yüzden göze tanıma sağlanan gerek güneş gözlüğü gerekse maske konulun durumlarında da benzer doğruluk skorları üreterek bir kişinin tanınması aslında, face-to-face yapılması sağlıyor.
+
+568
+01:53:51,283 --> 01:54:08,743
+FBR nedir? FBR, modelite içi ve modelite arası eşleştirmeyi tek bir modelle ele alan bir çalışma aslında. Böylece eksik veri olduğunda bile kişinin yüzünü tanımak mümkün oluyor. Burada gözüktüğü gibi.
+
+569
+01:54:13,684 --> 01:54:40,884
+Bir kişinin yüzü database'inizde kayıtlıdır. Daha sonra o kişi mesela sizin canlı kameranızın önden geçtikten sonra database'i arama yaparak o kişinin yüzü bu kişi, işte database'deki kişi kameranın önden bir daha geçti mi? İşte geçen kişinin ağzı kapalıdır, maske vardır. O kişinin gözünden kameradan canlı gelen görüntüdeki kişinin gözünden database'deki kişinin yüzüyle şaştırma yapılmasını sağlayan aslında bir nevi günümüzde güvenlik sektöründe de kullanılan.
+
+570
+01:54:42,163 --> 01:54:58,163
+Özelliğin, Challenger'ın üzerine giderilmiş bir çalışma. Burada kullanılan yöntemler de klasik, zaten Vision Transformer kullanılıyor. Burada biraz daha farklı olarak MFA bit kuruluyor.
+
+571
+01:54:58,163 --> 01:55:04,163
+İki birleşenden ilki olan MFA, Multimodel Fusion Attention.
+
+572
+01:55:04,595 --> 01:55:12,915
+Yani farklı modaliteleri kendi içinde ve birbiriyle aynı anda işleyen Fusion Attraction katmalı.
+
+573
+01:55:12,915 --> 01:55:29,195
+Yani bir modeli aslında bu öncelikle modelin veri setinden aldığı fotoğraflarda yüzü ve iki gözü ayrıca çıkarıp bu göz bu yüzü ait şeklinde modele öğretildiği aşamaların.
+
+574
+01:55:29,460 --> 01:55:46,460
+Aynı zamanda da multi prompt tüorik kullanılıyor. Bu da model omurgasını dondurup, yalnızca prompt mektörlerini güncelleyerek multimodal etkileşimi sağlıyor model üzerinde.
+
+575
+01:55:46,460 --> 01:55:54,460
+Zaten Vision Transformer'da genellikle kullanan yöntem, görüntüyü 16-16 piksellik patchlere bölüp.
+
+576
+01:55:55,155 --> 01:56:08,836
+Her birini bir tokene çeviriyoruz. Ardından çok başlı self-retention bloklara görüntünün bütün bölgeleri arasındaki küresel, yani global ilişkileri yakalıyor.
+
+577
+01:56:11,336 --> 01:56:19,635
+MFA Vision Transformer'da şöyle oluyor aslında. 3 tip girdol alıyor burada MFA.
+
+578
+01:56:21,716 --> 01:56:28,796
+Yüzün patchlerini alıyor, yüzün 16-16'lık paşırını alıyor ve sağ gözün ve sol gözün 16-16'lık paşırını alıyor.
+
+579
+01:56:28,975 --> 01:56:52,916
+Aynı zamanda bir de bunların soft attribute'lerini alıyor. Burada ekstra olarak çalışmada bir dataset kullanılmış. BGG Phase dataset'in üzerinde bu kişinin yaş aralığı, kadın mı, erkek mi, gözlüğü var mı, yok mu bu tarz ekstra bir head oluşturulmuş ve o da bir CSV dosyası olarak kaydedilmiş. Oradaki soft attribute veklarına aslında girdilerden biri.
+
+580
+01:56:55,220 --> 01:57:15,060
+Önce her parametreyi Depth by Separable Convolution'larla yerelle işliyor. Sonra bunlara Multi-Head Self-Attention ile de global bir özet oluşturuyor bölüm üzerinde.
+
+581
+01:57:15,060 --> 01:57:18,340
+Devam edeyim.
+
+582
+01:57:20,148 --> 01:57:28,828
+Az önce bahsettiğim DWS Convolution'u, bunun açılımını tekrar söylüyorum. Depth by Separable Convolution.
+
+583
+01:57:28,828 --> 01:57:35,748
+Bu her kanal, yani her modernik peçim üzerinde, 16-16'lık, sol göz ve sağ göz aldığımız peçiler üzerinde,
+
+584
+01:57:35,748 --> 01:57:47,028
+her birine 3-3'lik bir konvolution fitresi uyumluyor. Böylece hem sol gözün, hem sağ gözün, hem de yüzün dokularını, kenarlarını, yerel köşelerini...
+
+585
+01:57:49,076 --> 01:58:09,735
+Geçişlerini vs. öğreniyoruz bu şekilde. Bu sayede parametre sayısını düşürmüş oluyoruz. Güncel, öteki yüz tanıma çalışmalarına göre. Hem de her modelitenin özgün yapısını kaybetmeden işlebilmesini sağlıyoruz. Yara özelliklerini izole etmiş oluyoruz.
+
+586
+01:58:19,188 --> 01:58:38,148
+Bu sol taraftaki çıktılardaki kanal başlıklarını bir araya getirerek modeliteler arası temel izahlamayı sağlıyor. Yani yüz, göz çevresi ve etrogül tokenleri ortak bir temsiliyle füzyon ediyor aslında. Yani ikisinin bütün özelliklerini modeli öğrenmiş oluyor.
+
+587
+01:58:44,467 --> 01:58:52,467
+Bu da MSI. Bu gelen füzyonlanmış özellikler üzerinde farklı dikkat başlıklarıyla...
+
+588
+01:58:52,979 --> 01:59:17,639
+Bu bağlantıları modelin kendi içinde denilemesine işlenmiş oluyor. Neden bu ikili kullanılmıştı diye sorarsanız.
+
+589
+01:59:18,068 --> 01:59:35,467
+DWS Convolution ile önce bir özet çıkarır aslında. DWFC MSI ile de bu özetleri global bağlamla birbirine bağlıyoruz. Bu birleşik yaklaşım elde ettiğimiz multimodel veriye yönetik şekilde kullanmamızı sağlıyor.
+
+590
+01:59:45,600 --> 02:00:07,739
+Prompt Token'ın eklenmesiyle çalışıyor. Burada Backbone olarak kullandığımız modeli donduruyoruz. Yani Vision Transformer'ın kendi ağırlıkları hiç değişmiyor. Yalnızca bu Prompt Token'ları eğitim sırasında güncelliyoruz. Böylece yine bir işlem gücünden tasarruf etmiş oluyoruz.
+
+591
+02:00:13,684 --> 02:00:28,884
+Yüz, göz, çevresi ve attribute tokenleri arasında ilişim yönlendiriyor. Multi model bilgiyi de katman katman ince ayarlarla harmanlığını sağlıyor. Burada da ekstra eklediği ether sheet katmanı oluyor.
+
+592
+02:00:28,884 --> 02:00:41,283
+Kullanılan kayıp fonksiyonu, loss function'lar iki farklı kayıp fonksiyonu kullanıyor. Birincisi, büyük marjlı softmax. Aslında burada bahseden costface, artface.
+
+593
+02:00:41,328 --> 02:00:46,328
+Yaklaşık 2010'dan beri yüz tanıma modellerinde kullanılan loss function'ı.
+
+594
+02:00:46,328 --> 02:00:51,328
+Burada asıl dikkat çeken loss function'ı Contrastive loss.
+
+595
+02:00:51,328 --> 02:00:52,328
+Bu...
+
+596
+02:00:52,847 --> 02:01:17,648
+Yüzden Göze, Gözden Yüze ve Yüzden Etribütlere gibi farklı modelitelerden oluşan pozitif ve negatif çiftlerin embediik yüzeyinde ayrımını yapıyor. Aslında bu çalışmanın değindiği nokta bu. Toplam kayıpta bu iki loss'un ağırlıklı toplamı olarak tanımlanıyor ve lambda hiperparametreleriyle dengeleniyor.
+
+597
+02:01:18,963 --> 02:01:29,124
+Burada modelin katmanlarını, PIC Network Architecture'unu anlatacağım size. MFA, MPT ve daha medya.
+
+598
+02:01:30,003 --> 02:01:41,284
+Burada sol uçta gördüğünüz gibi şöyle göstereyim. Yüzün ve sol sağ gözün 112'ye 112'lik boyutlandırılmış halini alıyor.
+
+599
+02:01:42,880 --> 02:01:52,260
+47 soft attribute, işte bahsettiğim gibi yaş, cinsiyet, teknik köken gibi daha önce kaydettiğimiz CSV dosyasında yer alan soft attributeler bulunuyor.
+
+600
+02:01:52,260 --> 02:02:09,260
+Bu üç modeliteyi ayrı ayrı embedit katmanlarından geçiriyoruz. Bu mavi bloklar image embeditleri, kırmızı bloklar da attribute embeditleri gösteriyor. Bunların her biri daha sonrasında...
+
+601
+02:02:10,003 --> 02:02:22,003
+Buradaki patchten Linear Projeksiyonu, ardından da token işlemiyle tek bir boyuta indiriliyor.
+
+602
+02:02:22,003 --> 02:02:33,836
+Orta bölge MFA katmanı oluyor. MFA zinciri olarak geçiyor. Burada T0 başlangıç CLS tokenı oluyor.
+
+603
+02:02:33,971 --> 02:02:44,572
+Buradaki ilk katmanda kullanılan şu ZFACE ve ZPERIOKURLU'nun birleştirilmiş hali.
+
+604
+02:02:44,572 --> 02:02:51,372
+Buradaki P0 olarak gördüğümüz ise IPPOM tokenları, MPT'nin ilk hali yani.
+
+605
+02:02:51,372 --> 02:03:01,172
+Bu üçlü arka arkaya gelen M adet, yani burada M olarak gösterilmiş.
+
+606
+02:03:01,300 --> 02:03:22,300
+Adfusion, Attention bloklarından geçiyor. Her blok sonunda güçlendirilmiş TZ ve P50'ye geliyor. Daha eğitimli bir şekilde. Son aşamada tüm tokenlar birleştirilip...
+
+607
+02:03:23,988 --> 02:03:41,988
+Bir Joint Embedding J Vektör oluşturuluyor. Bu embedding sayesinde de aslında bir çalışmada sanırım 1024'e 1024'lük bir vektör oluşturuluyordu. Yani gelen yüzün, kaydettiğimiz yüz bilgisinin aslında parmak izi gibi bir şey oluşuyor ve her kişinin vektörü...
+
+608
+02:03:42,579 --> 02:03:49,579
+Benim 10 tane fotoğrafım var. 10 fotoğrafımın bu oluşturulan embedding vektörü birbirine benziyor aslında.
+
+609
+02:03:49,579 --> 02:04:03,579
+Daha sonrasında bu yüz tanımayı kullanmak istediğimde bir proje içerisinde bu vektörlerin birbirleri arasındaki benzerliğine bakarak benzerlik skoru üretiyorum.
+
+610
+02:04:06,319 --> 02:04:10,000
+Benim bir başka fotoğrafım arasındaki benzerlik skoru %90 çıkıyor.
+
+611
+02:04:10,000 --> 02:04:15,079
+Ama farklı biri geldiği zaman bu iki kişinin fotoğrafı arasındaki benzerlik skoru düşüyor.
+
+612
+02:04:15,079 --> 02:04:24,000
+Aynı zamanda burada göz modelitesi kullanıldığı için de daha geniş bir skor aralığı elde edilmiş oluyor.
+
+613
+02:04:24,000 --> 02:04:31,359
+Yani bir kişinin skorlarının doğruluk oranı aslında iyileştirilmiş oluyor.
+
+614
+02:04:31,828 --> 02:04:58,188
+Fakat bu projede benim dikkatimi çeken, burada kullanılan joint en sona çıkan katman, 1024'e 1024 tut bir vektör. Bu kosan similoriti yaparken benzerlik çıkarmada yavaşlık sağlayabilir. Belki uç key senaryolarda veya ne bileyim başka bir cihazda kullanıldığı zaman bunu 512-512'ye düşürülmesi gerekebilir. Kaldı ki güncel çalışmalarla da birçok modellerde 512-512 kullanıldığını biliyorum.
+
+615
+02:04:59,283 --> 02:05:09,283
+Ardından sağ bölgede MFA Multimodel Fusion Attention bloğunun içine de yoruluyor.
+
+616
+02:05:09,283 --> 02:05:16,283
+Burada bahsettiğim DWS Convolution ve DWFC MSI rol oluyor.
+
+617
+02:05:16,283 --> 02:05:22,283
+Bu önceki aşamada gördüğümüz MFA'lerin ayrıntısı.
+
+618
+02:05:24,724 --> 02:05:39,004
+Her bir B katmanı, her bir blok şunu içeriyor. DWS Convolution. Burada her modeli tepeçine ayrı ayrı konvolution işliyoruz. Yerel özelliklerini kanal bazında ayrıştırıyoruz.
+
+619
+02:05:40,224 --> 02:05:52,004
+DWS Convolution'un Multi Self-Attention'ı. Bu da burada aslında Fusion Convolution'ı kanaldaki yerel özetleri birleştirip...
+
+620
+02:05:52,692 --> 02:05:58,132
+Daha sonra da MSI ile birleştirilmiş future'lar üzerinde bir global attach'la uyguluyoruz.
+
+621
+02:05:58,132 --> 02:06:09,412
+Ondan sonra Birebiri Convolution ve Leaky Relo aktivasyonuyla kanal boyutunu yeniden scale edip, aktivasyon ekliyor.
+
+622
+02:06:09,412 --> 02:06:14,851
+Daha sonrasında AdWid Dropout'ta da...
+
+623
+02:06:16,851 --> 02:06:24,851
+Residual bağlantı ve Dropout'ı yürüyor. Ardından çıkışında bir Z katmanı elde ediliyor.
+
+624
+02:06:26,851 --> 02:06:32,851
+Ve şurada görmüş olduğunuz... Ben göremiyorum.
+
+625
+02:06:35,956 --> 02:06:44,956
+Şurada görmüş olduğunuzda, MPT alt modülü oluyor. Multimodel Promt Tuning'in alt modülü. Şuradaki P katmaları.
+
+626
+02:06:44,956 --> 02:07:02,444
+Burada Promt Token'ları alıp, Birebiliş Convolution'larla ardından Relu ile bir sonraki blokta kullanılmak üzere Z'ye ekliyor. Yani şu. Şuradaki patch'e ekliyor.
+
+627
+02:07:03,412 --> 02:07:11,412
+Ardından, üstte görmüş olduğunuz bölgede de head ve kayıplar yer alıyor.
+
+628
+02:07:11,412 --> 02:07:18,347
+Burada Joint Embedding ile gelen J vektörünü Softmax ile
+
+629
+02:07:19,796 --> 02:07:46,176
+Bir sınıflandırma logitine dönüştürüyor. Ardından 3 adet kayıp uygulanıyor burada. Birincisi Large Margin Face Loss, Large Margin Periocular Loss, Yüz ve Göz İçin Loss ve Cross Face Periocular and Soft Attributes Contrastive Loss. Bu da bahsettiğim birleşik loss. Ardından toplam loss da Face Periocular ve Contrastive Kayıtların.
+
+630
+02:07:46,591 --> 02:08:02,032
+Kayıplarının toplamıyla toplam bir kayıp elde ediliyor. Bu sayede modeliteler arası, modelite içi ve modeliteler arası öğrenmek kuvvetlendiriliyor. Benim sorum bu kadardı. Sormak istediğiniz bir soru varsa.
+
+631
+02:08:04,112 --> 02:08:05,811
+Uygulama yapmadın mı [öğrenci]?
+
+632
+02:08:06,671 --> 02:08:09,032
+Hocam, uygulama yaptım fakat benim...
+
+633
+02:08:10,228 --> 02:08:32,228
+Kodluk kullanılan Data Space'de 2 milyon fotoğraf vardı ve benim GPU'mda aslında çalıştırmak pek mümkün olmadı. Ben de %10'unu, %5'ini, %6'ını kullanarak bir model denedim ve çok değil sonuç vermedi. Raporda da bundan bahsettim. O yüzden onu koymak istemedim.
+
+634
+02:08:34,579 --> 02:08:39,779
+Eğer yetiştirebilirsen, kod teslimine kadar ki süreçte yapabilirsin.
+
+635
+02:08:40,219 --> 02:08:44,779
+Tabii hocam, eğer yetiştirirsem ayrıca onunla sonuçlarını bir rapor haline yapıyorum.
+
+636
+02:08:45,500 --> 02:08:51,420
+Peki. Teşekkür ediyoruz [öğrenci]. İlginç bir konu. Soru var mı arkadaşlar?
+
+637
+02:08:54,079 --> 02:08:56,679
+Evet, [öğrenci]'yi sunumu için alkışlıyoruz.
+
+638
+02:08:59,059 --> 02:09:00,555
+Şimdi...
+
+639
+02:09:01,171 --> 02:09:09,951
+Bugün son sırada [öğrenci]. İsterseniz sizi de dinleyelim. Sanırım bugün başka sunum yapacak kimse yok.
+
+640
+02:09:12,331 --> 02:09:13,951
+Merhaba hocam. Sesim geliyor mu?
+
+641
+02:09:14,551 --> 02:09:16,152
+Evet. Duyabiliyoruz sizi.
+
+642
+02:09:16,152 --> 02:09:19,112
+Ancak arkadaşım. Aynı şey.
+
+643
+02:09:28,851 --> 02:09:32,711
+Geldi, Mekan? Geldi, evet. Buyurun.
+
+644
+02:09:32,711 --> 02:09:42,131
+Benim seçim makale, Depth Anything. Amnestyng 3. Power of Large Scale Unlabeled Data.
+
+645
+02:09:42,739 --> 02:10:01,659
+Aslında bu aşağıdaki cümle model ile seçtiğim makalayı çok güzel özetliyor. Anlaşıldı, Large Scale Unlabeled Data etiketlenmemiş, çok sayıda verinin gücü sayesinde çok güzel bir model geliştiriliyor.
+
+646
+02:10:02,612 --> 02:10:24,612
+Öncelikle model ne modeli? Model derinlik tahmini modeli. Monoküler derinlik tahmini yapıyor. Peki nedir monoküler derinlik tahmini? Aslında çok basit bir şekilde açıklayacak olursak, iki boyutlu bir görüntüden, üç boyutlu bir derinlik haritası çıkarmaya uğraşıyor. Bu da aslında zor bir süreç çünkü...
+
+647
+02:10:26,420 --> 02:10:41,980
+Buradaki nesnelerin ve buradaki nesnelere karşılık gelen derinlik bilgilerin sadece ekip olatlı bir görüntüden çıkarılması zor bir süreç. Her bir pikselin derinlik değerinin tespit edilmesi gerekiyor.
+
+648
+02:10:44,100 --> 02:10:52,980
+Peki bu derinlik şeyi söylemedim. Neden bu modeli seçtiğimi söylemedim. Neden bu modeli seçtim, makaleyi seçtim?
+
+649
+02:10:53,460 --> 02:11:04,060
+Birincisi, hem şu an derinlik tespiti üzerinde bir çalışmada bulunuyorum. Bu derinlik tespiti çalışmasında kızıl atos sensörler kullanıyoruz şu anda.
+
+650
+02:11:04,060 --> 02:11:18,340
+Kızıl atos sensörlerde de aslında çalışmak biraz zorladı beni. Onun dışında böyle bir makalenin olduğunu gördüm. Direkt 2 boyutlu görüntüden 3 boyutlu bilgi çıkarılabiliyor.
+
+651
+02:11:21,876 --> 02:11:27,756
+Kapsamlı GPU'lara da gerek kalmadan basit bir şekilde de çıkarılabiliyor.
+
+652
+02:11:27,756 --> 02:11:36,636
+Onun dışında bu makale seçmemdeki diğer sebep de çok geniş bir topluluk desteği olan bir makale.
+
+653
+02:11:36,636 --> 02:11:39,636
+İnternette birçok...
+
+654
+02:11:40,275 --> 02:11:55,775
+Açık kaynak bu makale üzerine yapılmış çalışma bulunmaktır. Ben de direkt zaten bu geliştiricilerin paylaştığı kodları da denedim. Başka insanların denediği çalışmaları da denedim. Çok başarılı, çok eğlenceli sonuçlar var. Onlardan da bahsedeceğim.
+
+655
+02:11:56,692 --> 02:12:23,051
+İlerleyen süreçte. Öncelikle derinlik tahmini neden önemli? Artılmış gerçeklik, robotik, otonom sürüş gibi problemlerde derinlik tahmini kritik bir öneme sahip. Ancak şimdiye kadar geliştiren modellerde daha çok etiketli veriler kullanılıyordu. Bu etiketli verilerde sınırlı, birkaç tane dataset var etiketli bir şekilde. Onun dışında
+
+656
+02:12:23,507 --> 02:12:34,007
+Aynı şekilde etiketli veriler de belli başta alanlardaki görüntüleri içerdiği için çok güzel bir genelleme performansı göstermiyordu.
+
+657
+02:12:35,288 --> 02:12:40,908
+Depth Anything makalesi burada bu model neyi sunuyor?
+
+658
+02:12:41,168 --> 02:12:47,068
+Massive Unable Data Set. Aslında makalenin dediğim gibi öne çıkan kısmı.
+
+659
+02:12:48,020 --> 02:13:14,020
+Manuel olarak derinlik etiketi vermek çok pahalı bir süreç. Bu çok pahalı bir süreç olduğu için önce 1,5 milyon etiketli görüntüyle küçük bir öğretmen modele geçiyor. Daha sonrasında bu öğretmen model kullanılarak yaklaşık 62 milyon etiketsiz RGB görüntüye bu öğretmen model kullanılarak derinlik haritası...
+
+660
+02:13:14,836 --> 02:13:41,815
+Bu yönteme de pseudo-labeling, sözde etiketleme deniyor. Bu 62 milyonluk unlabeled dataset, 8 farklı veri setinden geliyor. Bu da aslında hem gerçek dünya görüntüleri içeren görüntüler hem de simülasyon ortamlarından veya oyunlardan alınan görüntüler olduğu için aslında çok geniş bir yelpazeden görüntü içeriyor.
+
+661
+02:13:42,484 --> 02:14:02,484
+Modelin genelleme performansını arttırıyor. Onun için iki temel strateji veri arttırma, OXLARIS PERVİGİM. Modelin genellemesini arttırmak için ileri düzey augmentation yöntemleri uygulanıyor.
+
+662
+02:14:03,699 --> 02:14:12,899
+Bu da farklı kamera koşullarına, sahne varyasyonlarına karşı daha başarılı bir model ortaya çıkmasını sağlıyor.
+
+663
+02:14:12,899 --> 02:14:27,699
+Auxiliary Supervision'da, burada derinlik tahmin eğitimi esnasında sadece relegasyonunda kullanılan losslar kullanılmıyor. Yardımcı bir semantik gözetim de.
+
+664
+02:14:28,148 --> 02:14:50,548
+Bu da derinlik tahminlerinin görüntüdeki nesnelerin yapısıyla daha uyumlu olmasını sağlıyor. Bu sayede nesnelerin sınırları daha keskin ve daha net bir şekilde çizilebiliyor.
+
+665
+02:14:54,484 --> 02:14:59,224
+İki farklı özellikten daha bahsedeceğim. State of Dark Performance ve Open Source Release.
+
+666
+02:14:59,224 --> 02:15:08,364
+Model, kendisinden önceki başarılı modellere göre daha net ve daha başarılı sonuçlar sağlıyor.
+
+667
+02:15:08,364 --> 02:15:14,204
+Burada, aşağıdaki görselde göreceği üzere kendisinden önceki en iyi model Midas.
+
+668
+02:15:14,204 --> 02:15:18,684
+Midas modeliyle katılayınca daha net görüntüler oluştuğunu görebiliriz.
+
+669
+02:15:18,684 --> 02:15:20,884
+Open Source Release modelin...
+
+670
+02:15:21,268 --> 02:15:32,268
+Model tamamen GitHub üzerinden yayınlanmış bir durumda. Aynı şekilde eğitilmiş model de Hugging Face üzerinden indirilebiliyor.
+
+671
+02:15:32,268 --> 02:15:37,268
+Aynı şekilde model kullanılarak çok farklı uygulamalar geliştirilmiş.
+
+672
+02:15:40,787 --> 02:15:52,787
+Bir şekilde indirip denemek mümkün. Çok geniş bir komüniteye sahip. Sürekli insanlar soruları cevaplamış. Bu yüzden başarılı bir model.
+
+673
+02:15:53,787 --> 02:16:00,787
+Topluluk destekli bir model. Biraz mimari taraflardan bahsedeceğim.
+
+674
+02:16:01,171 --> 02:16:22,171
+Data Engine diye bir şey var, veri motoru. Az önce bahsettim 1.5 milyon görüntüyle 62 milyon etiketsiz veriye pseudolabelling, yani görüntü etiketleme sözde etiketler eklenmesini sağlıyor.
+
+675
+02:16:29,587 --> 02:16:37,587
+Gino V2 Vision Transformer kullanılıyor. Bu da kendinden öğrenen self-supervised bir Transformer.
+
+676
+02:16:37,587 --> 02:16:44,587
+Görseldeki nesneleri, kenarları, desenleri anlamayı ve bu sahneleri anlamlandırmayı sağlıyor.
+
+677
+02:16:45,587 --> 02:16:55,587
+Transformer yapısı sayesinde görüntüyü küçük yama parçalarına bölüp, küçük parçalara bölüp sıralı bir şekilde işliyor. Dil modellerinde olduğu gibi.
+
+678
+02:16:55,600 --> 02:17:10,799
+Dekoder olarak da DPT, Depth Precision Transformer kullanılıyor. Bu da kodlayıcının çıkardığı özellikleri derinlik haritasına çeviren kısım. Hem saniyenin genel yapısını hem de küçük detayları iyi bir şekilde yakalayabiliyor.
+
+679
+02:17:11,920 --> 02:17:19,840
+Derinlik tahmin yaparken bu auxiliary supervision sayesinde de semantik özelliklerle uyumlu bir şekilde bulunuyor.
+
+680
+02:17:20,404 --> 02:17:30,283
+Haritaları çıkarıyor. Bu da sadece sayısal olarak değil, anlamsal olarak daha başarılı sonuçların çıkarılmasını sağlıyor.
+
+681
+02:17:34,195 --> 02:17:53,976
+Features of Depth Anything, bu modelin özellikleri, model neler sağlıyor. Relative Depth Estimation yani görevli derinlik tahmini. Sahneler arasındaki derinlik farklarını başarılı bir şekilde algılayabiliyor. Yani hangi nesnenin daha uzakta, hangi nesnenin daha yakında olduğunu.
+
+682
+02:17:54,484 --> 02:18:17,484
+tespit edebiliyor. Metric Depth Estimation burada sadece aslında nesnenin yakında mı uzakta mı olduğunu değil, aynı zamanda derinliğin de yani oradaki kaç metre uzaklıkta olduğu gibi derinlik yaklaşık uzaklıkları da anlamlandırabiliyor.
+
+683
+02:18:21,108 --> 02:18:48,308
+Control.net ile Entegre edildiğiyle Depth-Enters'in modeli, Stable Diffusion gibi modeller kullanılarak, modelin daha anlamlı ve gerçekçi sahneler, videolar oluşturması sağlanılabiliyor.
+
+684
+02:18:49,556 --> 02:19:13,855
+Aynı şekilde Scene Understanding burada da üç boyutlu sahne gibi, nesne algılama gibi başka problemlerde de aslında çıkarılan derinlik haritası nesne algılama gibi problemlerde de çözüm sağlayabiliyor.
+
+685
+02:19:15,476 --> 02:19:25,076
+Ben birkaç uygulama göstereceğim bu modelde kullanılan. Bu video uygulamaları başıma gittiği için göstermek istedim.
+
+686
+02:19:26,355 --> 02:19:40,275
+Burada ortada Midas modeli kullanılarak, yani önceki en iyi model kullanılarak oluşturulan derinlik haritası videoları var. Sağ tarafta da Depth Anything modeliyle.
+
+687
+02:19:40,319 --> 02:20:06,720
+Burada aslında görüldüğü üzere Depth Anything çok daha keskin bir derinlik haritası üretim sağlıyor. Öncekinde daha keskinlikler belli olmazken, daha ortalarda bulanıklıklar mevcutken Depth Anything modeli gayet keskin bir şekilde tespit edebiliyor derinlikleri.
+
+688
+02:20:07,507 --> 02:20:08,707
+Bu da farklı görnek.
+
+689
+02:20:15,156 --> 02:20:20,855
+Bunu da aslında internette denk geldi. Hoşuma gittiği için koymak istedim.
+
+690
+02:20:20,855 --> 02:20:24,855
+2021'de bir tane Twitter kullanıcısı...
+
+691
+02:20:27,855 --> 02:20:34,056
+2021'de bir tane Twitter kullanıcısı aslında meşhur çizgi ücündeki duvara çizilmiş.
+
+692
+02:20:34,164 --> 02:20:40,044
+Tünel görüntüsünü göstererek otonom araçların bunu nasıl algılayacağını soruyor.
+
+693
+02:20:40,044 --> 02:20:43,564
+How could the vision handle this? The tunnel was just painted.
+
+694
+02:20:44,204 --> 02:20:46,144
+Elon Musk da bunu yanıtlıyor.
+
+695
+02:20:47,444 --> 02:20:52,544
+İşte araçlarda lidar ve radar sensörlerinin olduğundan bahsediyor.
+
+696
+02:20:53,203 --> 02:21:01,203
+Derin işlemelerinin olduğundan bahsediyor. Ancak son cümlesinde, as vision processing gets better, it just leaves rather far behind.
+
+697
+02:21:01,203 --> 02:21:12,203
+Yani görüntü işleme, video işleme yöntemleri ilerledikçe, bu yöntemler aslında radar, lider gibi sarsörleri biraz geride bırakıyor.
+
+698
+02:21:12,203 --> 02:21:20,203
+Hem performans dönüne geçiyor hem de daha ucuz bir şekilde, daha maliyetsiz bir şekilde.
+
+699
+02:21:21,167 --> 02:21:25,527
+ve daha başarılı sonuçlar vererek kullanılmasını sağlıyor.
+
+700
+02:21:25,527 --> 02:21:33,207
+Aşağıda da aslında bu görüntünün Depth Anything modeliyle görselleştirilmiş, derinlik haritasının çıkarılmış hali var.
+
+701
+02:21:33,207 --> 02:21:43,448
+Burada da aslında görüldüğü üzere model tüneli derinlik olarak algılamamış oradaki tünel görüntüsünü.
+
+702
+02:21:43,448 --> 02:21:45,727
+Duvar olarak algılamış. Burada da...
+
+703
+02:21:45,811 --> 02:22:00,211
+Aslında ilk başta bahsettiğim otonom araçlar, arttırılmış gerçeklik bu tarz problemlerde aslında nasıl başarılı bir şekilde kullanılabileceğini gösteren güzel demek.
+
+704
+02:22:02,211 --> 02:22:10,912
+Kendi uygulamalarım değil, yanlış söyledim. Control.net uygulamalarından bahsetmek istiyorum biraz şimdi.
+
+705
+02:22:11,347 --> 02:22:29,347
+Model Control-Napt ile birlikte kullanıldığında, nasıl desem, üç boyutlu bir görüntü verdiğinde bu üç boyutlu görüntünün sahnesini oluşturmak ve video editlemek mümkün bir hale gelebiliyor aslında.
+
+706
+02:22:29,347 --> 02:22:38,347
+Bu da oyun tasarımı gibi, sanatsal uygulamalar gibi, aslında film çekim yöntemleri gibi birçok alanda bu modelin kullanabileceğini gösteriyor.
+
+707
+02:22:38,804 --> 02:22:58,804
+Burada aynı şekilde bir örnek koymak istedim. Video üzerinde, sol tarafta gerçek verilen video. Ortada Midas önceki en iyi modelin verdiği sonuçlar. Sağda da Depth Anything modelinin verdiği sonuçlar görülüyor. Bu da aslında bu tarz uygulamaların...
+
+708
+02:22:59,476 --> 02:23:24,896
+Belki film sayı sektöründe devasa platoların, devasa yeşil ekranların kurulmasına gerek kalmadan, bu tarz aslında kolaylıkla çekebileceğimiz görüntüleri çok başarılı bir şekilde stillerinin değiştirmesini, görsel efektler uygulanmasını, sahnelerin modifiye edilmesini, bu tarz ilginç uygulamalarda kullanılabileceğini gösteriyor.
+
+709
+02:23:27,412 --> 02:23:51,811
+Kendi uygulamalarından bahsetmek istiyorum. Kendim bu Depth Anything modelini benzerine oluşturamadım. Çünkü 62 milyon görüntü olsun, ilk başta 1.5 milyon etiket veriyle oluşturan öğretmen modeli olsun çok ciddi bir donanım kapasitesi gerektiriyordu.
+
+710
+02:23:54,579 --> 02:24:04,819
+Şu dataset'i kullanarak yaklaşık 1500 görüntüden oluşan bir dataset. Kendim derinlik, monokülerde...
+
+711
+02:24:04,976 --> 02:24:14,195
+Derinlik modelimi çıkarmaya çalıştım. İki farklı yönlemlerinden basit bir CNN kurmaya çalıştım ilk başta. Sonuçları çok başarısız oldu.
+
+712
+02:24:14,195 --> 02:24:22,296
+Ondan sonra ResNet'in ağırlıklarını kullanarak başka bir CNN modeli oluşturdum. Görece daha başarılı bir model oluştu.
+
+713
+02:24:22,296 --> 02:24:27,756
+Buradaki görselde de kendi modelinin sonucu görünüyor. Ondan biraz daha detaylı bahsedeceğim.
+
+714
+02:24:27,756 --> 02:24:31,596
+İlk başta basit CNN denedim demiştim.
+
+715
+02:24:31,924 --> 02:24:46,924
+Çok başarısız sonuçlar verdi. Skorları kötü geldi. Daha fazla eğitmeye çalıştığımda da iyice saçmalamaya başlamıştı model.
+
+716
+02:24:46,924 --> 02:24:53,924
+Ben de internette aslında insanlar neler yapmış, nasıl bir problemle başa çıkmış diye araştırdım da.
+
+717
+02:25:00,020 --> 02:25:13,420
+Ağırlıklarını kullandıklarını gördüm. Ben de ResNet 18'in ağırlıklarını kullanarak bu NYU veri seti üzerine bir fine-tune işlemi yaptım.
+
+718
+02:25:13,420 --> 02:25:23,819
+Sonrasında buradaki çıkıları elde ettim. Ortadaki görüntüler, Grand-to-Depth görüntüleri.
+
+719
+02:25:27,956 --> 02:25:54,296
+Derinlikleri. Sağ tarafta da kendi oluşturduğum derinlik tahmini çalışması görünüyor. Aslında çok başarısız bir model olduğu söylemez. Nesnelerin yakında mı uzakta mı olduğunu başarılı bir şekilde algılayabiliyor. Ancak keskinlikte ve sınırların çizilmesinde büyük bir başarı sağlayamadım. Görüldüğü gibi çok bulanık.
+
+720
+02:25:54,772 --> 02:26:04,252
+Bir görüntü ortaya çıktı. Ama gene görece 1500 resimden eğitilmiş bir modele göre başarılı bir sonuç olduğunu düşünüyorum.
+
+721
+02:26:06,032 --> 02:26:13,532
+Bitirmeden önce başka bir makaleden daha basitmek istiyorum. Bu modeli geçenler,
+
+722
+02:26:13,532 --> 02:26:20,632
+CBR 2025'de kabul edilen Video Depth Anything isimli başka bir makale üzerinde çalışıyorlar.
+
+723
+02:26:20,659 --> 02:26:29,100
+Bu da aslında Depth Anything modelinden sonra Depth Anything Version Tool çıkıyor.
+
+724
+02:26:29,100 --> 02:26:33,979
+Sonrasında da Video Depth Anything modeli üzerine yoğunlaşıyorlar.
+
+725
+02:26:33,979 --> 02:26:36,979
+Bu da aslında...
+
+726
+02:26:37,363 --> 02:26:54,123
+Bu alandaki çalışmaların devam ettiğini hem çok daha aslında alınacak bir yol olduğunu, burada da videolar üzerinde uzunca videolar, burada 99 saniye, 1,5-2 dakika uzunca videolar üzerinde.
+
+727
+02:26:55,123 --> 02:27:13,123
+Başarı sonuçlar sergileyebilen bir derinlik çalışması modu. Bu da gelecekte yapılacak çalışmalar, şu anda neler yapılıyor anlamında göstermek için bunu da biz sahip olarak koymak istedim. CPR 2025'den kabul almış.
+
+728
+02:27:16,123 --> 02:27:19,123
+Benim sunum bu kadardı. Dinlediğiniz için teşekkür ederim.
+
+729
+02:27:20,123 --> 02:27:22,048
+Biz teşekkür ediyoruz.
+
+730
+02:27:22,048 --> 02:27:44,008
+[öğrenci] güzel bir konu gerçekten. Vaktiyle ben de bu DEP tahminiyle ilgili çalışmalar yapmıştım. Bu en zoru tabii tek görüntü üzerinden bunu yapmak. Stereoda vesaire de çok daha eskiden kullandığımız yöntemlerde biraz iş kolaylaşıyordu.
+
+731
+02:27:46,079 --> 02:27:58,180
+2025'deki yapıyı incelemende iyi olmuş. Sunumun için seni okusluyoruz. Soru var mıdır? Sınıfa da soralım.
+
+732
+02:28:02,963 --> 02:28:25,504
+Peki, arkadaşlar bu hafta sunumları böyle kapatacağım. Tekrar bir kimseye sormuyorum sunum yapmak ister misiniz diye haftaya artık sunum yapmak isteyen arkadaşlar sunacak. Ondan sonra eğer 7-8 kişi sunum yapmazsa tabii ben random seçeceğim, onu belirteyim.
+
+733
+02:28:30,963 --> 02:28:49,903
+Önümüzdeki hafta cumaya kadar süre veririm. Bir video çekip YouTube linkini paylaşmanızı isterim. Böylece herkesin ders kapsamında proje sunumu yapmış olmasını sağlarız.
+
+734
+02:28:49,903 --> 02:28:54,504
+Peki, haftaya görüşmek üzere. Hoşçakalın.
+
+735
+02:28:56,984 --> 02:28:58,283
+Teşekkürler hocam.
