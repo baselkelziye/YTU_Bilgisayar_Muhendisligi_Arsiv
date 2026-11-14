@@ -1,0 +1,1687 @@
+1
+00:11:44,692 --> 00:11:46,751
+Good morning, everyone. Can you hear me?
+
+2
+00:11:53,524 --> 00:12:17,464
+I have shared some information related to your midterm exam on my Avesis page. Please, please read carefully this announcement. Also, the user guide for the new exam module has been sent to your emails and read carefully this user guide.
+
+3
+00:12:18,515 --> 00:12:28,515
+Bu examinatçı bir çoğu seçim, çoğu seçimlerden 20 soru, 5 seçimlerden 5 seçimlerden.
+
+4
+00:12:29,515 --> 00:12:35,515
+Bu examinatçı, bu zamanda bir saat, 1 saat.
+
+5
+00:12:37,567 --> 00:12:45,567
+ve topiklerinde de bu konuda başlayacak bir konuda başlayacak.
+
+6
+00:12:45,567 --> 00:12:47,567
+Bu konuda başlayacak,
+
+7
+00:12:47,567 --> 00:12:51,567
+bu konuda başlayacak,
+
+8
+00:12:51,567 --> 00:12:55,567
+o matrices,
+
+9
+00:12:55,567 --> 00:12:57,567
+o matrices.
+
+10
+00:12:57,567 --> 00:12:58,567
+Ok,
+
+11
+00:12:58,567 --> 00:12:59,567
+ne soru?
+
+12
+00:13:06,868 --> 00:13:18,188
+In our today course, I will give you, introduce to you two new methods to find a solution of linear system of equations.
+
+13
+00:13:18,448 --> 00:13:22,328
+The first one is Gramer's rule and the second one is inverse matrix method.
+
+14
+00:13:22,748 --> 00:13:27,508
+We just can use these methods in the unique solution case.
+
+15
+00:13:27,508 --> 00:13:27,868
+Okay.
+
+16
+00:13:30,688 --> 00:13:32,228
+Check your microphone.
+
+17
+00:13:33,888 --> 00:13:34,408
+Samadhin.
+
+18
+00:13:41,043 --> 00:13:49,583
+Ben şimdisi daha önce duymuyordum. Sınav hakkında bir şeyler diyordunuz. Ben onları duymadım da. [öğrenci] mısınız? Kusura bakmayın.
+
+19
+00:13:50,772 --> 00:14:16,268
+Bu sorunlar, bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sorunlar hakkında bir sor
+
+20
+00:14:47,539 --> 00:14:53,059
+Kramer's rule, and then we will give inverse matrix method.
+
+21
+00:14:55,379 --> 00:15:15,019
+Consider we have, let's consider the linear system of equations in the matrix form A x equal to b, with the coefficient matrix A, vektör of unknowns x, and vektör of constants b.
+
+22
+00:15:15,508 --> 00:15:20,628
+Here we assume A is M by M square matrix.
+
+23
+00:15:21,188 --> 00:15:32,172
+If determinant of A is not zero, then the system has...
+
+24
+00:15:37,331 --> 00:15:38,591
+It has a unique solution.
+
+25
+00:15:45,524 --> 00:15:51,244
+In the unique solution case, we can use both these methods to solve the system.
+
+26
+00:15:53,604 --> 00:16:01,543
+In order to give the general form of Cranmer's rule, first I will give a baby step for this method.
+
+27
+00:16:02,064 --> 00:16:10,244
+Let me have a linear system of equation with two equations and two unknowns, A11x1 plus...
+
+28
+00:16:10,580 --> 00:16:27,660
+A1 to X2 will be B1. This is our first equation. And our unknowns are X1 and X2. A21 X1 plus A22 X2 B2.
+
+29
+00:16:31,892 --> 00:16:38,632
+x1 and x2 in terms of a1, 1, a1, 2, a2, 1, a2, 2, b1 and b2.
+
+30
+00:16:39,711 --> 00:16:48,092
+Just depending on coefficients and constants, we try to represent unknowns x1 and x2.
+
+31
+00:16:48,092 --> 00:16:55,552
+In order to solve x1 from these equations, we need to multiply the first equation by
+
+32
+00:16:59,059 --> 00:17:04,679
+We just, we need to remove all terms related to x2.
+
+33
+00:17:04,679 --> 00:17:13,399
+In order to do this, we need to multiply first equation by minus minus a22.
+
+34
+00:17:13,859 --> 00:17:16,980
+Okay, and second one by a12.
+
+35
+00:17:20,564 --> 00:17:24,268
+O zaman, yeni sistemlerden birleştir.
+
+36
+00:17:32,276 --> 00:17:51,576
+Minus A22 A11 X1 minus A22 A12 X2 will be minus A22 B1.
+
+37
+00:17:59,955 --> 00:18:14,495
+A21x1 plus A22x2 will be equal to A12b2.
+
+38
+00:18:30,195 --> 00:18:46,375
+a1, 2, times a2, 1, minus a1, 1, times a2, 2, times x1.
+
+39
+00:18:46,768 --> 00:19:00,827
+Here we have zero because coefficients of the x2 in the first and second equation, the inverse of each other, the additive inverse of each other, so addition is zero.
+
+40
+00:19:13,907 --> 00:19:15,907
+A1 to E2. Okay.
+
+41
+00:19:17,667 --> 00:19:36,147
+We just multiply both sides with a negative sign, so this is also equal to A11 times A22 minus A12 times A21X1 will be equal to
+
+42
+00:19:38,003 --> 00:19:46,243
+A12 times B2 minus A22 times B1.
+
+43
+00:19:46,243 --> 00:19:46,623
+Okay.
+
+44
+00:19:48,843 --> 00:19:57,043
+Let's interpret this system via matrix equation or coefficient matrix for this equation.
+
+45
+00:19:58,723 --> 00:20:04,003
+Coefficient matrix is just A11, A12.
+
+46
+00:20:04,788 --> 00:20:29,188
+A21 and A22. Ok, the coefficient matrix order, linear system of equation given in star, and the vector of unknowns is just, we have two unknowns, x1 and x2, and our vector of constants is b1, b2.
+
+47
+00:20:35,508 --> 00:20:48,748
+Here, our x1, our x1, if you multiply both sides, via a11, a22, minus a12, times a21, then we will get x1.
+
+48
+00:20:48,748 --> 00:20:52,387
+So, our x1 is just x1.
+
+49
+00:20:55,892 --> 00:21:03,672
+A12 times B2 minus A22 times B1
+
+50
+00:21:07,539 --> 00:21:15,179
+Oh, excuse me, I have a mistake, let me fix this mistakes.
+
+51
+00:21:18,059 --> 00:21:32,679
+The right hand side, sine of A22B1 must be positive, because we multiply with negative sine, A22B1 minus
+
+52
+00:21:33,104 --> 00:21:35,443
+A1, B2, ok.
+
+53
+00:21:44,500 --> 00:21:48,360
+Eil, asimov this again.
+
+54
+00:21:52,339 --> 00:22:11,299
+I just try to solve x1. Now our x1 will be a2 to b1 minus a1 to b2 over a11 times a22 minus a12 times
+
+55
+00:22:15,763 --> 00:22:17,763
+A21, ok.
+
+56
+00:22:17,763 --> 00:22:34,763
+Because I know A11, A22, A21, A12, and B1, B2, all these are constants, so we can find X1, depending on this rational number.
+
+57
+00:22:34,763 --> 00:22:38,763
+But this is only possible when...
+
+58
+00:22:39,316 --> 00:22:42,715
+The denominator is non-zero.
+
+59
+00:22:43,036 --> 00:22:48,996
+Okay, if the denominator is zero, then this rational number is answer.
+
+60
+00:22:49,175 --> 00:22:52,356
+So, the denominator must be non-zero.
+
+61
+00:22:52,876 --> 00:22:53,936
+Let's check the denominator.
+
+62
+00:22:56,115 --> 00:22:58,776
+This is just the determinant of the coefficient matrix.
+
+63
+00:23:00,372 --> 00:23:06,231
+Determinant of a coefficient matrix, here we have a coefficient matrix, is a 2 by 2 square matrix.
+
+64
+00:23:06,771 --> 00:23:14,711
+The determinant is just the multiplication of elements of main diagonal minus element of anti-diagonal.
+
+65
+00:23:14,832 --> 00:23:19,012
+So, A11 times A22 minus A12 times A21.
+
+66
+00:23:19,492 --> 00:23:24,132
+This is the denominator of the rational.
+
+67
+00:23:25,632 --> 00:23:27,452
+Let's call this.
+
+68
+00:23:28,468 --> 00:23:47,168
+determinant of A, and the numerator part of this rational number is just in the coefficient matrix, we replace, we replace first column via the vector of constants.
+
+69
+00:23:48,488 --> 00:23:51,128
+Let's call A1.
+
+70
+00:23:53,556 --> 00:24:01,135
+A1 as this matrix, B1, B2, A1 to A22.
+
+71
+00:24:01,855 --> 00:24:09,436
+The determinant of A1 is B1 times A22, B1 times A22 minus A12 times B2.
+
+72
+00:24:09,755 --> 00:24:12,375
+This is the determinant of A1.
+
+73
+00:24:12,688 --> 00:24:29,148
+When the determinant of coefficient matrix, if the matrix, coefficient matrix of a linear system of equation is square and determinant of this matrix is non-zero, then we can use Cramer's rule to find all unknowns.
+
+74
+00:24:37,299 --> 00:24:46,619
+By using same way, same method, X2 will be, we just replace, let's call A2 as A2.
+
+75
+00:24:48,259 --> 00:24:56,740
+First column will be same as with the coefficient matrix A1,1, A2,1, B1, B2.
+
+76
+00:24:56,740 --> 00:25:00,819
+We replace second column via a vector of constants.
+
+77
+00:25:04,084 --> 00:25:12,804
+A11 times B2 minus B1 times A21 or determinant OA.
+
+78
+00:25:13,764 --> 00:25:15,963
+A11 times A22.
+
+79
+00:25:20,147 --> 00:25:23,687
+A1, 2, times A21.
+
+80
+00:25:24,027 --> 00:25:31,207
+This is just determinant of A2 over determinant of A.
+
+81
+00:25:31,307 --> 00:25:31,887
+Any questions?
+
+82
+00:25:37,587 --> 00:25:46,487
+Here also determinant of A is non-zero, must be non-zero in order to talk about a unique solution, non-solution for the given system.
+
+83
+00:25:46,867 --> 00:25:55,268
+We can generalize this method to a linear system of equation with unknown and n-equation.
+
+84
+00:26:00,019 --> 00:26:12,039
+Let's, we have a linear system of equation with the given matrices, a linear system of equation in the matrix form AX, AQB.
+
+85
+00:26:12,039 --> 00:26:27,159
+Here A is just a square matrix with the entries A11, A12, A1N, A21, A22, A2N.
+
+86
+00:26:28,339 --> 00:26:36,839
+An1, An2, Ann, this is our coefficient matrix.
+
+87
+00:26:36,839 --> 00:26:44,339
+The vector of unknowns, x1, x2, xn.
+
+88
+00:26:44,339 --> 00:26:48,839
+Number of equation is the same with the number of unknowns.
+
+89
+00:26:57,971 --> 00:26:59,411
+b, n.
+
+90
+00:27:00,711 --> 00:27:01,251
+Then,
+
+91
+00:27:02,051 --> 00:27:04,711
+our solution will be,
+
+92
+00:27:05,112 --> 00:27:06,311
+if
+
+93
+00:27:06,311 --> 00:27:09,112
+determinant of a,
+
+94
+00:27:09,571 --> 00:27:12,251
+if determinant of a is not zero,
+
+95
+00:27:12,871 --> 00:27:13,291
+then,
+
+96
+00:27:14,231 --> 00:27:14,811
+we have
+
+97
+00:27:14,811 --> 00:27:18,451
+x1,
+
+98
+00:27:19,731 --> 00:27:22,604
+a1,
+
+99
+00:27:23,667 --> 00:27:34,647
+Determinant of A1 over Determinant of A, X2, Determinant of A2 over Determinant of A, and Xn,
+
+100
+00:27:39,092 --> 00:27:42,972
+Determinant of a, n, or determinant of a.
+
+101
+00:27:42,972 --> 00:27:58,652
+Where, where, where, a, i, a, i, for i ranging from 1 to n, is the matrix.
+
+102
+00:28:02,900 --> 00:28:05,700
+Ok.
+
+103
+00:28:10,516 --> 00:28:36,956
+A, by replacing if column via vector, vector vektör unknowns B.
+
+104
+00:28:38,291 --> 00:28:52,531
+A i is just a matrix, a square matrix obtained from A by replacing i-f column of A, replacing i-f column of A via the vector of unknowns, the vector B.
+
+105
+00:28:53,632 --> 00:29:04,811
+If the determinant of A is non-zero, then we can solve all x1, x2, and xn by depending on these determinants.
+
+106
+00:29:11,635 --> 00:29:22,735
+Let's give an example for the Cramer's rule. Cramer's rule can be used only in the Unix solution case.
+
+107
+00:29:29,587 --> 00:29:39,907
+Here we have an example. A linear system of equations with three unknowns and three equations. Okay.
+
+108
+00:29:41,748 --> 00:29:51,667
+We will use Kram S rule to solve this system. First our coefficient matrix, our coefficient matrix is
+
+109
+00:29:56,367 --> 00:30:19,248
+Minus 3, the coefficient of first unknown, x1. 3, minus 1, 4. The second column formed by the coefficients of the second unknown, and the last column, 1, 2, minus 1.
+
+110
+00:30:20,372 --> 00:30:27,372
+This is our coefficient matrix. Let's find the determinant of this matrix, determinant OA.
+
+111
+00:30:27,372 --> 00:30:29,372
+Determinant OA.
+
+112
+00:30:29,372 --> 00:30:35,372
+I just use this one to remove two and minus three.
+
+113
+00:30:35,372 --> 00:30:44,372
+I will use one to remove. You can also use service room or Laplace expansion to solve this.
+
+114
+00:30:46,195 --> 00:30:52,735
+to find determinant OA. I will use just elementary row operations.
+
+115
+00:30:55,755 --> 00:31:05,915
+Second, negative two times or second row plus first row will be zero of a new first row.
+
+116
+00:31:06,215 --> 00:31:11,335
+I just add minus two times or second row to the first row.
+
+117
+00:31:12,455 --> 00:31:13,815
+Here we have F5.
+
+118
+00:31:14,160 --> 00:31:21,759
+Çünkü negatif 2 x minus 1 is plus 2, plus 3 is just 5.
+
+119
+00:31:22,240 --> 00:31:26,720
+And here we have minus 4 plus 1 is just minus 3.
+
+120
+00:31:27,480 --> 00:31:29,279
+This is our first row.
+
+121
+00:31:29,400 --> 00:31:31,920
+Second row remains unchanged.
+
+122
+00:31:32,340 --> 00:31:35,360
+So we have 1 minus 1, 2.
+
+123
+00:31:36,160 --> 00:31:38,400
+Please follow carefully.
+
+124
+00:31:39,124 --> 00:31:42,324
+Eğer birçok yaptı, let me know.
+
+125
+00:31:45,963 --> 00:31:52,443
+3 x 0, 2nd row, 3rd row, ve 0.
+
+126
+00:31:54,163 --> 00:31:59,663
+Here, minus 3, excuse me, minus 3 plus 4 is just 1.
+
+127
+00:31:59,663 --> 00:32:04,663
+And 6 minus...
+
+128
+00:32:05,971 --> 00:32:08,951
+Excuse me, 6 plus minus 1 is 5.
+
+129
+00:32:09,852 --> 00:32:28,231
+So, if you use Laplace expansion along the first column, because A11 and A31 is 0, we need not to compute the cofactor of these elements, we just compute the cofactor of A21.
+
+130
+00:32:33,364 --> 00:32:36,964
+Rho and column number of A21, our sign is negative.
+
+131
+00:32:37,704 --> 00:32:57,424
+So, here we have minus 1 power 2 plus 1 times, A11 is just 1, times the remaining part of the matrix, 5, minus 3, 1 and 5.
+
+132
+00:32:59,508 --> 00:33:05,508
+Bu, değerimizin, minus 28.
+
+133
+00:33:05,508 --> 00:33:06,508
+Tamam.
+
+134
+00:33:11,892 --> 00:33:18,951
+No, let me replace the first row with the vector row, constant.
+
+135
+00:33:20,471 --> 00:33:35,552
+Our vector row, constant, let's call this A1, A1, this is our new matrix, 1, minus 3, and 4.
+
+136
+00:33:35,552 --> 00:33:36,392
+Okay.
+
+137
+00:33:39,604 --> 00:34:06,604
+Now let compute the determinant of A1. Determinant of A1, determinant of A1, I just use first row to remove second and A2 one and A3 one. So, determinant of A1 will be 1, 3, 1,
+
+138
+00:34:06,804 --> 00:34:23,224
+3 times 1st row plus 2nd row, here we have 0, 9 plus minus 1 is just 8, and here 3 plus 2 is 5.
+
+139
+00:34:34,579 --> 00:34:44,939
+12 plus 4 is minus 8, and minus 4 plus minus 1 is minus 5.
+
+140
+00:34:45,939 --> 00:34:46,659
+Minus 5.
+
+141
+00:34:47,399 --> 00:34:47,679
+Okay.
+
+142
+00:34:48,899 --> 00:34:50,099
+Let me check.
+
+143
+00:34:51,199 --> 00:34:53,960
+There is no error, I think.
+
+144
+00:34:55,347 --> 00:35:07,307
+A11, sinu A11 times A11 times the cofactor of A11, because A21 and A31 is zero, we need not to compute the cofactor of these elements.
+
+145
+00:35:21,907 --> 00:35:37,228
+Minus 8, minus 5. Determinant of this 2x2 matrix is 0 because first row is the negative multiple of the second row, so this determinant is 0. A1 is 0.
+
+146
+00:35:47,603 --> 00:35:58,603
+In order to get A2, we need to replace second column of A via the vector of unknowns.
+
+147
+00:35:58,603 --> 00:36:12,003
+So our A2 is just 1, minus 3, 4, first column.
+
+148
+00:36:12,628 --> 00:36:20,748
+is the same as with the first column of A, coefficient matrix, 2, 1, minus 3.
+
+149
+00:36:21,948 --> 00:36:34,748
+I will use a second row to remove 2 and minus 3, so determinant of A2, determinant of A2 is just,
+
+150
+00:36:35,731 --> 00:36:40,751
+Minus 2 times 2nd row plus 1st row, here we have 0.
+
+151
+00:36:44,947 --> 00:36:54,567
+Minus 2 times minus 3 is positive 6 plus 1 is 7. Minus 4 plus 1 is minus 3.
+
+152
+00:36:55,747 --> 00:37:10,787
+The second row remain unchanged, so 1 minus 3 is 2. The last row will be 0. We just multiply second row with 3.
+
+153
+00:37:12,980 --> 00:37:27,420
+negative 9 plus 4 is just minus 5. Here we have 6 plus minus 1 is 5. Ok.
+
+154
+00:37:29,940 --> 00:37:38,060
+So, expanding this matrix along the second row, we will get
+
+155
+00:37:41,780 --> 00:37:55,920
+Minus 1 plus 2 plus 1 times 1 times determinant of remaining part 7, negative 3, negative 5, and 5.
+
+156
+00:37:57,080 --> 00:37:59,120
+We have negative sign.
+
+157
+00:38:00,320 --> 00:38:04,920
+Determinant of this matrix 35 plus...
+
+158
+00:38:08,659 --> 00:38:09,479
+15.
+
+159
+00:38:10,479 --> 00:38:12,479
+So, we have...
+
+160
+00:38:16,851 --> 00:38:41,211
+Minus, excuse me, excuse me, minus 20, minus 20. Sino, minus 5 times, minus 3 is plus positive 15, and we have a minus from the definition of determinants, so here we have minus 20, because of the sign.
+
+161
+00:38:42,835 --> 00:38:48,295
+Depending on all these, we need to compute A3.
+
+162
+00:38:54,900 --> 00:38:58,900
+less, or a3d.
+
+163
+00:39:00,900 --> 00:39:05,900
+We just replaced third column via the vector of unknowns.
+
+164
+00:39:11,059 --> 00:39:13,980
+1, minus 3, 4.
+
+165
+00:39:14,779 --> 00:39:23,340
+And the second row is the same with the second row of calculation matrix.
+
+166
+00:39:23,800 --> 00:39:27,079
+3, minus 1, 4.
+
+167
+00:39:29,340 --> 00:39:32,980
+I will also use second row to remove...
+
+168
+00:39:37,492 --> 00:39:54,811
+2N-3, so the determinant of A2 is just 0, minus 2 times, here we have 5, and here we have 7.
+
+169
+00:39:56,811 --> 00:40:03,532
+Second row, 1, minus 1, minus 3, and the last row.
+
+170
+00:40:04,403 --> 00:40:21,804
+Here we have 0, 1, and minus 9 plus 4 is minus 5.
+
+171
+00:40:21,804 --> 00:40:22,123
+Okay.
+
+172
+00:40:26,003 --> 00:40:28,003
+Evet, there is no energy.
+
+173
+00:40:29,443 --> 00:40:41,643
+Our sign is again minus 1, minus 1 plus 2 plus 1, times 1, times 5, 7, 1, minus 5.
+
+174
+00:40:44,043 --> 00:40:49,563
+Minus 25, minus 7.
+
+175
+00:40:49,715 --> 00:40:56,456
+32, we have a negative sign, so this determinant is 32.
+
+176
+00:40:56,456 --> 00:41:16,456
+Depending on this determinant, we have x3 as determinant of a3, oh, this is determinant of a3, determinant of a3 or determinant of a, this is just minus...
+
+177
+00:41:17,235 --> 00:41:32,435
+22 over, excuse me, 32 over 28, this is just, just divide by 4, minus 8 over 7, this is our X3.
+
+178
+00:41:38,483 --> 00:42:03,603
+x2, determinant of a2 over determinant of, this is not zero, determinant of a, minus 3 over minus 28 is just 20 over 28, and this is 5 over 7.
+
+179
+00:42:03,603 --> 00:42:05,643
+We just multiply by 4.
+
+180
+00:42:08,851 --> 00:42:34,851
+And our x1, determinant of a1 over determinant of a, 0 over minus 28 is just 0. Our x1 is 0, x2 is 5 over 7, and x3 is minus 8 over 7. This is the unique solution of given system. This is because...
+
+181
+00:42:35,347 --> 00:42:48,547
+This comes from the determinant of the coefficient matrix is non-zero, so we can apply Kramer's rule to solve our system, and we have a unique solution.
+
+182
+00:42:48,847 --> 00:42:53,167
+We find our unique solution by using Kramer's rule. Any questions?
+
+183
+00:43:24,340 --> 00:43:48,740
+Now we will talk about inverse matrix method. Also we can use this method just in the unique solution case. Let Ax be a linear system of equation with Aij, n by n, square matrix and determinant of A.
+
+184
+00:43:49,619 --> 00:43:52,059
+ve determinant O A is non-zero.
+
+185
+00:43:53,659 --> 00:43:59,059
+In this case, we can talk about the inverse O coefficient matrix.
+
+186
+00:43:59,439 --> 00:44:09,939
+So, we can multiply this equation at the left hand side via the inverse matrix, the inverse O A.
+
+187
+00:44:14,579 --> 00:44:21,439
+A times X will be equal to A inverse time, vektör of constant.
+
+188
+00:44:21,439 --> 00:44:35,819
+So, by using associative property of matrix multiplication, we have, we can change parentheses.
+
+189
+00:44:41,907 --> 00:44:55,207
+A inverse B. We know that if you multiply a matrix with its inverse, then we will get identity matrix of order M.
+
+190
+00:45:08,224 --> 00:45:32,203
+B, so our vector of unknowns will be A inverse B. This is a 1 by, excuse me, m by 1 vector. Because A is m by n, x is m by 1, so the result will be m by 1. This is a common vector.
+
+191
+00:45:33,023 --> 00:45:43,384
+n-entris. If the coefficient matrix, the determinant of coefficient matrix is non-zero, then the coefficient matrix has a unique inverse.
+
+192
+00:45:43,384 --> 00:45:54,823
+So by multiplying the matrix representation of the linear system of equation via inverse matrix at the left-hand side, we will get the solution of the given system.
+
+193
+00:45:55,043 --> 00:46:01,023
+This is just a matrix multiplication. In the unique solution case, just by...
+
+194
+00:46:01,023 --> 00:46:08,268
+ve
+
+195
+00:46:13,108 --> 00:46:21,208
+So, let's solve the same example by using inverse matrix method.
+
+196
+00:46:22,628 --> 00:46:29,068
+I have already known the determinant of coefficient matrix is minus 28.
+
+197
+00:46:29,887 --> 00:46:38,887
+So, our coefficient matrix is just 2, 1, minus 3.
+
+198
+00:46:40,052 --> 00:46:47,711
+3, minus 1, 4, 1, 2, ve minus 1.
+
+199
+00:46:48,971 --> 00:47:00,192
+The determinant of A is minus 28, and this is a non-zero real number.
+
+200
+00:47:00,192 --> 00:47:03,592
+So we can apply inverse matrix method.
+
+201
+00:47:04,011 --> 00:47:07,251
+We need to find the inverse of matrix A.
+
+202
+00:47:09,460 --> 00:47:16,420
+Let's just use adjoint matrix OA to find the inverse.
+
+203
+00:47:16,560 --> 00:47:21,560
+Also, you can use elementary row operations to get the inverse of matrix A.
+
+204
+00:47:22,100 --> 00:47:24,640
+I will use adjoint OA.
+
+205
+00:47:26,020 --> 00:47:34,880
+We know that the adjoint OA is just the transpose O cofactors.
+
+206
+00:47:37,940 --> 00:47:44,579
+Now let's compute all cofactors of the matrix A. We need to find nine cofactors.
+
+207
+00:47:45,940 --> 00:48:05,460
+A11, cofactor of entry A11 of the matrix A. Just we close up first column and first row, we compute the determinant of the obtained 2x2 matrix. The sign will be positive.
+
+208
+00:48:05,972 --> 00:48:23,072
+So, our cofactor is just minus 1, 2, 4, 1. Result of this determinant is minus 1, minus 8 is minus 9. Okay.
+
+209
+00:48:27,072 --> 00:48:30,372
+A12, A12.
+
+210
+00:48:31,635 --> 00:48:38,635
+İlk kolum ve ilk kolum, yani sinin negatif.
+
+211
+00:48:43,572 --> 00:48:55,731
+Hocam, kusura bakmayın. A, şey, üstündeki eksi bir olması gerekmiyor mu? Dört yanında eksi bir olması gerekiyor. Anık mısınız?
+
+212
+00:48:55,731 --> 00:49:04,551
+Tamam, tamam, teşekkür ederim. This must be minus one. Yes, thank you, thank you. I have an error here.
+
+213
+00:49:06,867 --> 00:49:18,807
+A11, cofaktör A11, minus 1 times minus 1 is plus 1 minus 8 is just minus 7.
+
+214
+00:49:18,987 --> 00:49:20,827
+Okay, minus 7.
+
+215
+00:49:22,607 --> 00:49:25,127
+Plus 1 minus 8 is minus 7.
+
+216
+00:49:27,268 --> 00:49:31,748
+A12, I just close up second column and first row.
+
+217
+00:49:32,112 --> 00:49:59,871
+The sign is negative because minus 1 power 1 plus 2 is minus 1 times, 1, 2 please follow carefully. Minus 3, minus 1. Minus 1 plus 6 is just 5.
+
+218
+00:50:00,000 --> 00:50:03,480
+ve negatif signi ile-5
+
+219
+00:50:09,172 --> 00:50:13,172
+A13, sign is positive.
+
+220
+00:50:13,172 --> 00:50:17,172
+We close up third column and first row.
+
+221
+00:50:19,172 --> 00:50:25,172
+1, minus 1, minus 3, and 4.
+
+222
+00:50:29,300 --> 00:50:45,219
+4 plus 7, 4 plus 3, excuse me, 4 minus 3, here we have positive 3, 4 minus 3 is just 1, our sign is positive.
+
+223
+00:50:49,172 --> 00:50:57,172
+Let's compute the cofactor row, second row, a21, sine is negative, a21.
+
+224
+00:50:58,771 --> 00:51:08,172
+Just close up, second row, and first column, 3, 1, 4, minus 1.
+
+225
+00:51:10,172 --> 00:51:16,172
+Minus 3, minus 4, minus 7, this is positive 7.
+
+226
+00:51:17,460 --> 00:51:17,920
+Ok.
+
+227
+00:51:24,916 --> 00:51:30,675
+A22, the sign is positive, the closed center of the matrix.
+
+228
+00:51:32,115 --> 00:51:36,356
+21, minus 3, minus 1.
+
+229
+00:51:36,356 --> 00:51:43,615
+This is just minus 2 plus 3 is 1.
+
+230
+00:51:45,135 --> 00:51:51,135
+And A23, the sign is negative.
+
+231
+00:51:57,652 --> 00:52:06,252
+I need more place for the cofactor row, last row, so a23, our sign is negative.
+
+232
+00:52:07,252 --> 00:52:21,652
+Just close up last column together with second row, 2, 3, minus 3, 4.
+
+233
+00:52:22,652 --> 00:52:23,292
+Okay.
+
+234
+00:52:24,307 --> 00:52:38,987
+Determinant of this matrix, 8 plus 9, 17, we have a negative sign, minus 17.
+
+235
+00:52:39,228 --> 00:52:41,748
+Okay, I hope there is no error.
+
+236
+00:52:42,907 --> 00:52:44,487
+Let's check again.
+
+237
+00:52:45,347 --> 00:52:51,627
+We just close up here and here, 2, 3, minus 3, 4, 8 plus 9.
+
+238
+00:52:52,211 --> 00:52:55,592
+17, we have a negative sign.
+
+239
+00:53:00,467 --> 00:53:12,807
+The last column of adjoint matrix will be the cofactor of the last row, so A31, sign is positive.
+
+240
+00:53:15,327 --> 00:53:21,688
+3, 1, minus 1, 2, so 6 plus 1 is 7.
+
+241
+00:53:25,076 --> 00:53:29,735
+832, our sign is negative.
+
+242
+00:53:32,195 --> 00:53:34,735
+2112.
+
+243
+00:53:38,516 --> 00:54:00,516
+4, minus 1, positive 3, we have negative sign, minus 3. And the last entry with positive sign, 2, 3, 1, minus 1. Minus 2, minus 3, minus 5. Okay.
+
+244
+00:54:05,556 --> 00:54:08,335
+Adjoin matrix, or the matrix A.
+
+245
+00:54:17,235 --> 00:54:21,235
+Evet, let's write the inverse of it directly.
+
+246
+00:54:29,907 --> 00:54:42,707
+Minus 7, minus 5, 1, 7, 1, minus 17, 7, minus 3, minus 5.
+
+247
+00:54:42,707 --> 00:54:56,247
+Okay, this is our adjoint matrix, so our inverse, A inverse is just 1 over minus 28 times.
+
+248
+00:54:56,916 --> 00:54:58,916
+Ajoin, OA.
+
+249
+00:54:58,916 --> 00:55:14,916
+This is just 1 over 4, minus 1 over 4, 1 over, minus 1 over 4, again.
+
+250
+00:55:24,500 --> 00:55:36,500
+3 over 28, minus 1 over 28, 17 over 28, and 5 over 28.
+
+251
+00:55:36,500 --> 00:55:41,500
+This is our inverse. If you multiply a coefficient matrix,
+
+252
+00:55:42,036 --> 00:56:06,556
+At the left hand side, we are the inverse of A, then we will get the solution set of the given system. Let's check our inverse. 1 over 4, minus 1 over 4, minus 1 over 4, 5 over 28, minus 1 over 28, 3 over 28, let's check. Yes, 6 and 3's.
+
+253
+00:56:06,867 --> 00:56:15,748
+Correct, last row, minus 1 over 28, 17 over 28, 5 over 28.
+
+254
+00:56:17,748 --> 00:56:20,248
+Okay, our inverse matrix is correct.
+
+255
+00:56:20,367 --> 00:56:23,748
+Now we can multiply the A inverse with the...
+
+256
+00:56:35,411 --> 00:56:42,992
+[öğrenci], password is the same. I think you try to download the document of other courses.
+
+257
+00:56:48,148 --> 00:56:50,148
+[şifre]
+
+258
+00:57:05,460 --> 00:57:08,199
+Sözülete bulundur ve sonra break.
+
+259
+00:57:08,639 --> 00:57:13,579
+Bir sonraki bir soru ile başlayalım.
+
+260
+00:57:13,579 --> 00:57:15,300
+Ve sonraki bir soru ile başlayalım.
+
+261
+00:57:36,659 --> 00:57:38,260
+Sir, can I ask something?
+
+262
+00:57:40,440 --> 00:57:42,639
+Sure, you can ask your question.
+
+263
+00:57:43,159 --> 00:57:51,960
+Yeah. How do we know we have a unique solution? Maybe it could be infinity.
+
+264
+00:57:52,563 --> 00:58:00,663
+If the number of equation is the same with the number of unknowns, in this case we have a unique solution.
+
+265
+00:58:00,663 --> 00:58:07,623
+We can check this case via checking the determinant of the coefficient matrix.
+
+266
+00:58:07,784 --> 00:58:14,224
+If the determinant of coefficient matrix is non-zero, in this case we have a unique solution.
+
+267
+00:58:14,384 --> 00:58:14,563
+Okay.
+
+268
+00:58:15,023 --> 00:58:34,023
+In this case, the coefficient matrix is a square matrix, and if the determinant of this square matrix is non-zero, then the reduced row echelon form of the system has the same number of equations with the first case.
+
+269
+00:58:34,704 --> 00:58:36,824
+So in this case, we have a unique solution.
+
+270
+00:58:37,811 --> 00:58:43,291
+If the determinant of coefficient matrix is non-zero, then we have unique solution.
+
+271
+00:58:44,552 --> 00:58:45,112
+You got it?
+
+272
+00:58:46,112 --> 00:58:47,152
+Yes, thank you.
+
+273
+00:58:48,351 --> 00:58:48,951
+You are welcome.
+
+274
+01:07:17,780 --> 01:07:19,780
+Yeni, devam edelim.
+
+275
+01:07:42,036 --> 01:07:43,396
+Minus 3, 4.
+
+276
+01:07:43,655 --> 01:07:43,916
+Okay.
+
+277
+01:07:47,356 --> 01:07:53,715
+Let's multiply A inverse with the B at the left hand side.
+
+278
+01:07:54,496 --> 01:07:57,016
+A inverse, A inverse B.
+
+279
+01:08:03,219 --> 01:08:09,219
+Bu, ilk röğ, in order to get x1, we need to multiply first row with the b.
+
+280
+01:08:09,219 --> 01:08:17,219
+So, here you have 1 over 4 plus 3 over 4 minus 4 over 4.
+
+281
+01:08:17,219 --> 01:08:25,219
+This is just 1 over 4 plus 3 over 4 minus 4 over 4.
+
+282
+01:08:27,219 --> 01:08:29,219
+This is just zero.
+
+283
+01:08:33,332 --> 01:09:00,832
+If you multiply second row with the b, then we will get x2, so here we have 5 over 28 plus 3 over 28 minus 1 times minus 3 is positive 3, so here we have
+
+284
+01:09:01,460 --> 01:09:19,739
+12 over 28, bu 20 over 28, bu 5 over 7.
+
+285
+01:09:28,787 --> 01:09:29,347
+Ah.
+
+286
+01:09:33,524 --> 01:09:34,564
+again minus
+
+287
+01:09:39,859 --> 01:09:50,859
+Minus 51, or 28, plus...
+
+288
+01:09:56,115 --> 01:09:58,435
+20 over 28.
+
+289
+01:09:58,435 --> 01:10:05,435
+Bu, minus...
+
+290
+01:10:10,355 --> 01:10:14,095
+32 over 20.
+
+291
+01:10:18,612 --> 01:10:36,532
+Vektör unknown, 0, 5, 7, vekta, if we multiply numerator, denominator, denominiyor, 4, then we will get minus 8 over 7.
+
+292
+01:10:37,492 --> 01:10:43,332
+x1 is 0, we have already solved this problem by using Cranmer's rule.
+
+293
+01:10:43,712 --> 01:11:06,152
+x2 is 5 over 7, and x3 is just minus 8 over 7. This is our unique solution. If the determinant of coefficient matrix is non-zero, then we can use both Grammer's rule and inverse matrix method.
+
+294
+01:11:08,712 --> 01:11:10,072
+Any question?
+
+295
+01:11:17,140 --> 01:11:33,460
+Here we have another nice example, maybe related to your examination, because we will use determinant properties to find determinant O, a symbolic 4x4 matrix.
+
+296
+01:11:34,940 --> 01:11:43,100
+Let we have matrix F, a 4x4 determinant, the entries,
+
+297
+01:11:43,520 --> 01:11:54,180
+Föres, A, B, C, D, the first rule formed by powers of A, second rule formed by powers of B, etc.
+
+298
+01:11:54,840 --> 01:12:06,000
+So, the first part of the question, find the determinant of F depending on A, B, C, D, by using determinant properties.
+
+299
+01:12:10,832 --> 01:12:15,592
+I think it will be very confusing.
+
+300
+01:12:17,471 --> 01:12:23,572
+And the second part is a question related to Cramer's rule.
+
+301
+01:12:23,872 --> 01:12:28,992
+Find a solution by using Cramer's rule.
+
+302
+01:12:29,684 --> 01:12:33,804
+We can use Cranmer's rule because the determinant is non-zero.
+
+303
+01:12:34,084 --> 01:12:45,164
+The determinant given in the example is non-zero, so we can use Cranmer's rule to find x1, x2, x3, and x4 unknowns.
+
+304
+01:12:47,283 --> 01:12:50,684
+Let's find the determinant first.
+
+305
+01:12:54,996 --> 01:13:03,996
+We have a common factor in the first row, we can factor out A from the first row, B...
+
+306
+01:13:07,988 --> 01:13:15,488
+A from the first row, B from the second row, C from the third row, and D from the last row of the matrix.
+
+307
+01:13:15,648 --> 01:13:27,608
+So, if we factor out A, B, C, D from the matrix F, then we will get all one column in the first column.
+
+308
+01:13:27,788 --> 01:13:33,568
+Okay, we will use the first column to get three zeros in the first column.
+
+309
+01:13:36,467 --> 01:13:49,467
+First we factor out A from the first row, B from the second row, C from the third row, and D from the last row of the matris L.
+
+310
+01:13:49,467 --> 01:14:02,467
+Then in order to, for the sake of save place, I use a different notation for the row operations.
+
+311
+01:14:04,979 --> 01:14:07,979
+Türk öğrencilerinde,
+
+312
+01:14:07,979 --> 01:14:10,979
+İngilizce eğitimde,
+
+313
+01:14:10,979 --> 01:14:12,979
+ve diğer eğitimde,
+
+314
+01:14:12,979 --> 01:14:14,979
+bu anlamda,
+
+315
+01:14:30,100 --> 01:14:37,620
+Rho operation, for denote Rho operation, we just use H sub Ji.
+
+316
+01:14:38,620 --> 01:14:40,100
+Here we have a K.
+
+317
+01:14:40,500 --> 01:14:51,319
+This means, this is R K times Ri plus Rj is our new Rj.
+
+318
+01:14:51,319 --> 01:14:51,880
+Okay.
+
+319
+01:14:55,636 --> 01:15:04,636
+Yani ilk birçok birçok ekranı ile ekran ediyoruz ve ikinci birçok ekranı ile ekran ediyoruz.
+
+320
+01:15:05,636 --> 01:15:13,636
+Sonra, o yeni determinant olarak,
+
+321
+01:15:14,636 --> 01:15:17,452
+A, B, C, D.
+
+322
+01:15:20,404 --> 01:15:24,844
+Don't forget ABCD, ABCD times.
+
+323
+01:15:26,264 --> 01:15:29,264
+The first row is the same as with the previous one.
+
+324
+01:15:30,203 --> 01:15:33,004
+1A, A squared, A cubed.
+
+325
+01:15:33,944 --> 01:15:43,924
+Here we have, that's good places between elements, because here we have 0, 0, 0.
+
+326
+01:15:45,924 --> 01:15:46,684
+A.
+
+327
+01:15:47,667 --> 01:16:14,407
+B minus A, C minus A, and D minus A. This is our second column. Third column will be A square, B square minus A square, B square minus A square, C square minus A square, D square minus A square, and last column will be A cube.
+
+328
+01:16:15,283 --> 01:16:25,343
+b-cube minus a-cube, c-cube minus a-cube, and d-cube minus a-cube.
+
+329
+01:16:26,984 --> 01:16:42,703
+Here, again, we have, if we expand along the first column, then we just need to compute one cofactor, cofactor o, a11, because
+
+330
+01:16:43,220 --> 01:17:09,119
+A21, A31, A41, is 0. So we need not to compute the cofactor of these entries. Determinant of this matrix is the same as with the determinant of the 3x3 matrix, cofactor of A11. So here we have A, B, C, D times.
+
+331
+01:17:13,268 --> 01:17:40,268
+3x3 matris, E minus A, B square minus A square, B cube minus A cube, C minus A, C square minus A square, C cube minus A cube, D minus A, D square minus A square, and D cube minus A.
+
+332
+01:17:41,108 --> 01:18:08,507
+A3. You know that A2 minus, let's write it, X2. X2 minus Y2 is just X minus Y times X plus Y. And also, X3 minus Y3 is just,
+
+333
+01:18:08,851 --> 01:18:15,731
+x minus y times x square plus x y plus y square.
+
+334
+01:18:15,731 --> 01:18:26,311
+You can factorize x square minus y square and x cube minus y cube as in this form.
+
+335
+01:18:27,988 --> 01:18:35,988
+Here we have b²-a², b³-a², we can factorize b²-a² as b-a².
+
+336
+01:18:36,916 --> 01:18:45,596
+B plus A and B cubed minus A cubed as B minus A times B squared plus AB plus A squared.
+
+337
+01:18:45,916 --> 01:18:50,236
+So, we have a common factor in the first row, B minus A.
+
+338
+01:18:50,676 --> 01:18:53,756
+A common factor in the second row, C minus A.
+
+339
+01:18:54,115 --> 01:18:56,275
+And a common factor in the third row, C minus A.
+
+340
+01:18:56,724 --> 01:19:04,244
+d-a. We can factor out all these common factors from the first row, second row, and third row.
+
+341
+01:19:04,244 --> 01:19:24,172
+So, we have a, b, c, d times. We factor out b-a from the first row times c-a from the second row, d-a from the last row of the...
+
+342
+01:19:24,404 --> 01:19:28,184
+matrix, 3x3 matrix, excuse me, determinant.
+
+343
+01:19:28,984 --> 01:19:37,043
+Now we have one cause factor of b minus a, factor of c minus a, and d minus a.
+
+344
+01:19:37,384 --> 01:19:38,283
+One, one, one.
+
+345
+01:19:39,104 --> 01:19:41,004
+Our first column is all one.
+
+346
+01:19:41,984 --> 01:19:49,564
+Here we have p plus a, c plus a, and d plus a.
+
+347
+01:19:50,836 --> 01:20:10,336
+ve ve b² plus ab plus a², c² plus ac plus a², d² plus ad plus a².
+
+348
+01:20:12,836 --> 01:20:18,336
+Ve ilk row kullanıyoruz, bu ve bu ve bu ve bu.
+
+349
+01:20:19,347 --> 01:20:28,127
+In order to get here and here zero, so we need to add with the minus row one.
+
+350
+01:20:33,300 --> 01:20:37,720
+Let's call all these element as r.
+
+351
+01:20:45,460 --> 01:21:00,739
+Our new determinant will be R times 1B plus A, B square plus AB plus A square.
+
+352
+01:21:05,536 --> 01:21:17,636
+0, here we have a 0, c-b, here we have c-b, because c plus a minus b minus a will be c minus b.
+
+353
+01:21:34,068 --> 01:21:42,148
+Plus, A times, C minus B. A square minus A square is zero.
+
+354
+01:21:49,779 --> 01:22:09,959
+Ve burada, 0, d-b, d-b, d-b, d-b²-b², plus a times d-b. d-b, a² plus a² is 0.
+
+355
+01:22:22,292 --> 01:22:34,612
+If you expand this matrix, 3x3 matrix, along the first column again, we will get a 2x2 matrix.
+
+356
+01:22:42,260 --> 01:22:47,059
+R times C minus B.
+
+357
+01:22:49,559 --> 01:22:54,559
+We can factor out C minus B from this term.
+
+358
+01:22:55,620 --> 01:23:01,760
+C minus B times C plus B plus A.
+
+359
+01:23:01,760 --> 01:23:02,520
+Okay.
+
+360
+01:23:03,720 --> 01:23:04,960
+I just...
+
+361
+01:23:06,707 --> 01:23:25,647
+Faktör, c-b, etdi, left side of the entry. Here we have d-b, and d-b times, here we have d-b, plus a. Okay.
+
+362
+01:23:27,127 --> 01:23:33,631
+Also, we have a common factor from the first row and second row. This will be...
+
+363
+01:23:33,631 --> 01:23:55,691
+R times C minus B times D minus B times 1 C plus B plus A, 1, here we have D, D plus B plus A.
+
+364
+01:23:55,691 --> 01:23:58,691
+This is a two by two matrix, you can...
+
+365
+01:23:59,024 --> 01:24:13,024
+Compute directly the determinant, also you can use row operations. At the end, let's call this as S, this part, S.
+
+366
+01:24:13,564 --> 01:24:23,644
+Our determinant will be R times S times, we just multiply first row and adding up it to the second row, and one,
+
+367
+01:24:24,047 --> 01:24:37,628
+C plus B plus A, here we have zero, D minus C, here we have D minus C, so this is just D minus C.
+
+368
+01:24:37,628 --> 01:24:40,507
+Then our determinant is A,
+
+369
+01:24:48,532 --> 01:25:10,952
+R is ABCD, ABCD times C minus B, C minus B times D minus B times, here we have just D minus D minus, because one times D minus C minus zero times C plus B plus A is just D minus C.
+
+370
+01:25:10,952 --> 01:25:14,371
+This is our determinant, we compute determinant of F.
+
+371
+01:25:15,636 --> 01:25:22,275
+Factorize, determinant of f. Ok, any question?
+
+372
+01:25:25,876 --> 01:25:41,956
+No, by using Cramer's rule, we will find the solution of a linear system of equation fx is b, here x is just
+
+373
+01:25:42,868 --> 01:25:52,868
+X1, X2, X3, X4. Factor of unknowns with 4 unknowns.
+
+374
+01:25:52,868 --> 01:25:57,868
+We have already know that determinant of F is non-zero.
+
+375
+01:25:57,868 --> 01:26:03,868
+So we can use Grammer's rule to solve the system Fx equals B.
+
+376
+01:26:09,524 --> 01:26:11,564
+A, B, C, D.
+
+377
+01:26:12,384 --> 01:26:30,324
+In this case, in this case, let's call F. F1 is the matrix obtained from F by replacing first row via vektör of constants. F1 will be same as with F.
+
+378
+01:26:30,324 --> 01:26:36,344
+So, determinant of F1 is equal to determinant of F.
+
+379
+01:26:37,011 --> 01:26:48,471
+F2 is the 4x4 matris obtained from matris F by replacing second column via ABCD.
+
+380
+01:26:48,471 --> 01:26:54,791
+So, F2 will be matris ABCD.
+
+381
+01:26:55,152 --> 01:27:08,051
+A, B, C, D. A matris, vekutör two same column. So, determinant of F2 will be zero, no matter this row columns.
+
+382
+01:27:09,551 --> 01:27:17,351
+So, determinant of F2 is zero, because we have two same columns.
+
+383
+01:27:19,279 --> 01:27:28,299
+Multiply first column and adding up to the second column, we will get an all zero column in the matrix.
+
+384
+01:27:28,460 --> 01:27:30,579
+So, determinant of this matrix is zero.
+
+385
+01:27:31,260 --> 01:27:43,180
+F, this is also true for F3 and F4 because all these matrices have same columns.
+
+386
+01:27:44,851 --> 01:27:56,811
+F3, 1st and 3rd column is the same, for F4, 1st and last column will be same, so determinant of these matrices are 0.
+
+387
+01:27:57,931 --> 01:28:12,252
+So we have X1, determinant of F1 over determinant of F, this is just 1, X2, determinant of F2 over determinant of F.
+
+388
+01:28:12,627 --> 01:28:18,727
+0 over determinant of f, this is non-0, so this is also 0.
+
+389
+01:28:19,448 --> 01:28:25,587
+X3 determinant of f3 over determinant of f, this is also 0.
+
+390
+01:28:25,807 --> 01:28:33,528
+And X4 determinant of f4 over determinant of f, this is 0 also.
+
+391
+01:28:37,524 --> 01:28:42,444
+Unik solution for the given system f x b.
+
+392
+01:28:43,384 --> 01:28:48,703
+Our solution will be 1 0 0 0.
+
+393
+01:28:48,963 --> 01:28:49,264
+Okay.
+
+394
+01:28:50,104 --> 01:28:51,543
+This is our unique solution.
+
+395
+01:28:52,744 --> 01:28:53,384
+Any question?
+
+396
+01:29:01,235 --> 01:29:04,255
+Ok, R is A, B, C, B. You are right.
+
+397
+01:29:09,555 --> 01:29:28,716
+Let's check. Oh, you are right, not A, B, C, D. B minus A, C minus A, D minus A. We have three more factors in R. I need to replace the result of the determinant.
+
+398
+01:29:37,171 --> 01:29:40,671
+C minus A, D minus A.
+
+399
+01:29:40,671 --> 01:29:41,111
+Ok.
+
+400
+01:29:45,363 --> 01:29:48,763
+Bu, bu, faktorizasyonu, terminat, o, f.
+
+401
+01:29:48,763 --> 01:29:49,963
+Teşekkürler, [öğrenci].
+
+402
+01:29:53,395 --> 01:29:54,195
+Any question?
+
+403
+01:30:07,475 --> 01:30:11,495
+Eğer sorun yoksa, ben de kursa kapatacağım.
+
+404
+01:30:11,835 --> 01:30:17,995
+Bugün bu kursa kapatacağım.
+
+405
+01:30:18,536 --> 01:30:23,036
+Ve her zaman, sizler, midterm examinasyonun geliştirdiğiniz için teşekkür ederim.
+
+406
+01:30:33,427 --> 01:30:54,507
+I just used Kramer's rule to find the solution matrix. We just used Kramer's rule because in the question, second part of the question, for the unknowns, for the unknowns, x1, x2, x3, x4, and b, a, b, c, d.
+
+407
+01:30:54,996 --> 01:30:59,595
+For the given vector of unknowns and constants, we solve the system.
+
+408
+01:30:59,595 --> 01:31:08,136
+We know, we have already know that the determinant of the system, the determinant of the coefficient matrix of the system is non-zero.
+
+409
+01:31:08,835 --> 01:31:16,216
+So we can apply the Kramherz rule to the system fx b with the x and b, given x and b.
+
+410
+01:31:16,935 --> 01:31:21,956
+b is the same as with the first column of the coefficient matrix. Please check.
+
+411
+01:31:23,956 --> 01:31:29,115
+F1, ilk kolumn, aynı şekilde vektör uzayları, constans.
+
+412
+01:31:50,079 --> 01:31:56,139
+F2, we will have two same columns.
+
+413
+01:31:57,079 --> 01:32:04,619
+If any square matrix contains any two same columns or rows, then the determinant is zero.
+
+414
+01:32:05,180 --> 01:32:09,420
+This is also true for the F3, F3 and F4.
+
+415
+01:32:09,800 --> 01:32:13,260
+So determinant of F2, F3 and F4 is zero.
+
+416
+01:32:13,880 --> 01:32:17,539
+And determinant of F1 is the same as with the determinant of F.
+
+417
+01:32:17,887 --> 01:32:39,247
+By using Cranberg's rule, we can find x1, determinant of f1, or determinant of f, x2, determinant of f2, or determinant of f, x3, determinant of f3, or determinant of f, and
+
+418
+01:32:41,363 --> 01:33:01,603
+X4, determinant OFF4, or determinant OFF. We know that determinant OFF is non-zero and determinant OFF4 is zero. Determinant OFF3 is zero, determinant OFF2 is zero, but determinant OFF1 is the same as with determinant OFF, this is one.
+
+419
+01:33:08,884 --> 01:33:11,923
+Solution vector for the given system.
+
+420
+01:33:11,923 --> 01:33:12,324
+Okay.
+
+421
+01:33:15,283 --> 01:33:16,744
+Any more questions?
+
+422
+01:33:21,844 --> 01:33:40,524
+Bu hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta geçen hafta
