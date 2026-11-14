@@ -1,0 +1,1011 @@
+1
+00:04:46,132 --> 00:04:48,692
+Arkadaşlar merhabalar ses geliyor mu acaba?
+
+2
+00:04:53,363 --> 00:05:00,363
+Duyuyor musunuz? Geliyor hocam ses. Tamamdır. Bir 4-5 dakika içerisinde başlamış oluruz.
+
+3
+00:09:01,395 --> 00:09:03,395
+Evet, tekrardan merhabalar.
+
+4
+00:09:20,052 --> 00:09:34,752
+Şimdi bugün konularımız da bittiği için sorularımızın çözümlerini yapıp dersi tamamlayacağız. Okulda olan var mı aranızda? Burada olup hem de okulda olan.
+
+5
+00:09:40,628 --> 00:10:01,628
+Neyse. Dediğim gibi okulda olup da kağıt görmek isteyen varsa bugün de gelebilir. Ben ofise geldim. Şimdi birinci sorumuzla başlayalım. Şöyle sorunun metneni kısmen alacağım.
+
+6
+00:10:13,908 --> 00:10:41,628
+Böyle bir şey verilmiş. Şimdi buradan genel olarak bu sorunun çözümünde bir sıkıntı yoktu. Tabii sıkıntı genellikle şey, metodu bilmeyip diğer yöntemlerle çözmeye çalışanlar vardı. Bunlar puan alamadı. Yani Newton-Raphson yapanlar vardı. Bisection metot yapanları gördüm bir iki kişi de.
+
+7
+00:10:42,323 --> 00:10:55,644
+Şimdi böyle bir şey verildiğinde sabit nokta iterasyonu için zaten burada ipucunu da vermişiz. Öyle bir gx fonksiyonu seçin ki bunlardan bir tanesi illaki köke yaklaşsın ve iki farklı gx için sonuç üretin demişiz.
+
+8
+00:10:55,644 --> 00:11:06,203
+Şöyle yapacaktık. fx eşittir x kare eksi x eşittir 3 için bir gx bulacağız.
+
+9
+00:11:06,548 --> 00:11:12,548
+Bu yx'i bulurken de x kare eksi x eksi 3'ü sıfıra eşitliyoruz. x'i yalnız bırakıyoruz.
+
+10
+00:11:12,548 --> 00:11:16,548
+Burada x'i yalnız bıraktığınızda şöyle şeyler bulabilirsiniz.
+
+11
+00:11:17,548 --> 00:11:30,548
+Mesela bunu karşıya atalım. x eşittir. x kare eksi 3 eşittir. x olabilir. Bu birinci denklem olabilir.
+
+12
+00:11:30,548 --> 00:11:32,548
+Hocam x küp olmayacak mıydı?
+
+13
+00:11:32,548 --> 00:11:34,443
+Bakayım hemen.
+
+14
+00:11:35,124 --> 00:11:36,064
+x küp evet.
+
+15
+00:11:36,624 --> 00:11:37,604
+Niye? x kare yazıyorsun.
+
+16
+00:11:38,504 --> 00:11:39,064
+Yukarıda.
+
+17
+00:11:41,923 --> 00:11:42,844
+x küp.
+
+18
+00:11:43,283 --> 00:11:44,744
+Dolayısıyla şu x eşittir.
+
+19
+00:11:44,824 --> 00:11:46,004
+x küp eksi 3 olacak.
+
+20
+00:11:46,783 --> 00:11:48,524
+Birinci adayımız bu.
+
+21
+00:11:49,524 --> 00:11:50,564
+Başka ne olabilir?
+
+22
+00:11:51,244 --> 00:11:52,764
+x küpü yalnız bırakırız.
+
+23
+00:11:54,144 --> 00:11:55,683
+x artı 3 elde ederiz.
+
+24
+00:11:56,484 --> 00:12:00,043
+Buradan x'i elde etmek için de her iki tarafın küp kökünü alırsak.
+
+25
+00:12:01,299 --> 00:12:09,099
+Şöyle bir şey olabilir, ikinci adayımız bu. Benim bildiğim başka şu olabilir.
+
+26
+00:12:09,099 --> 00:12:22,699
+x parantezine alabiliriz. Şurayı x parantezinde x eksi iki, pardon x kare eksi bir olacak.
+
+27
+00:12:29,076 --> 00:12:34,475
+x kare eksi bir yapabiliriz. Bu da bir diğer aday.
+
+28
+00:12:34,475 --> 00:12:38,076
+Dolayısıyla bizim buradaki gx'imiz
+
+29
+00:12:38,076 --> 00:12:41,076
+x küp eksi üç.
+
+30
+00:12:41,076 --> 00:12:44,076
+Bu gx'imiz
+
+31
+00:12:44,076 --> 00:12:48,076
+küp kök x artı üç.
+
+32
+00:12:48,076 --> 00:12:50,076
+Şuradaki gx'imiz de
+
+33
+00:12:50,076 --> 00:12:53,964
+üç bölü x kare eksi bir.
+
+34
+00:12:54,196 --> 00:13:02,196
+gx buysa g'nin i artı birinci iterasyondaki değeri ne olacak? x'in i'inci iterasyondaki değerinin küpü eksi bir.
+
+35
+00:13:02,196 --> 00:13:11,196
+Veya burada g'nin i artı birinci iterasyondaki değeri küp kök x i artı üç aynı şekilde diğerlerini de düşünebiliyorsunuz.
+
+36
+00:13:11,196 --> 00:13:18,196
+Şimdi bunlardan başlangıç değerimiz zaten şunu vermişiz. Aradığımız kökü de buluyoruz.
+
+37
+00:13:18,388 --> 00:13:24,748
+Yakınlama kontrolünü yapmanızı bekliyorduk. Türevini alıp A-B sınırlarına göre bakabilirsiniz.
+
+38
+00:13:24,748 --> 00:13:28,228
+Bunlardan zaten olmuyorsa da çok puan kırmadık.
+
+39
+00:13:28,228 --> 00:13:36,268
+Şunun için ilerlediğimizde G0. durum X0 buysa, G1 ne olacak?
+
+40
+00:13:36,268 --> 00:13:45,268
+1.5'in küpü eksi 3. Bu da 0.375 ediyormuş. Hatta şöyle yanına yazayım.
+
+41
+00:13:48,211 --> 00:14:05,812
+Bunu G2'yi bulmak için kullandığımızda 0.375'in küpü eksi 3, bu da eksi 2.94 ediyormuş. Bu böyle devam ediyor gidiyor, bu uraksıyor. Hani diverge eder bir şey bu.
+
+42
+00:14:07,412 --> 00:14:15,611
+Şunun için denediğimizde G1'i denemek için küp kök 1.5 artı 1.
+
+43
+00:14:16,628 --> 00:14:39,628
+1.5 artı 3. Buradan 1.651 geliyor. G2'yi yazdım da küp kök. 1.651 artı 3. Bu da 1.669 geliyormuş. Bu mesela yaklaşıyor. Şu da bırak sayan bir şey. İşte burada 1.5 verdiğimizde önce 2.4 buluyorsun. Ondan sonra 0.5.
+
+44
+00:14:39,731 --> 00:14:46,731
+63 bulunuyor, sonra eksi 4.974 falan bulunuyor, böyle. Bu da Iraks'ı yor.
+
+45
+00:14:46,731 --> 00:14:59,731
+En kolay bulunabilecek şeylerden bir tanesi, yani üç tanesi buydu, hani GX'ler. Burada başka hani ne bulunabilir, hani çok zorlarsanız X küpü bir tarafa atıp...
+
+46
+00:15:00,403 --> 00:15:14,923
+Gerçi oradan bir şey çıkmıyor zannediyorum. Bir arkadaşımız bir tane daha bir x bulmuştu. O da doğruydu tabii ki. Ve o da köke yaklaşıyordu. Onu da kabul ettik. Şu an o denklemi hatırlamıyorum. Genel olarak çözümümüz buydu.
+
+47
+00:15:14,923 --> 00:15:21,323
+Burada hani puan nereden kırılmış dersek, mesela bunu bulmuş arkadaşım, bunu bulmuş.
+
+48
+00:15:21,748 --> 00:15:41,508
+Şundan bir iterasyon gitmiş, bundan bir iterasyon gitmiş. Yani hiç önünde bir ispata dair bir şey yok. Ne Iraks'ı ne yakınsı yok. Bir iterasyon gitmiş. Bunlar tam puan alamıyor. Yani iterasyonları devam ettirmeniz gerekiyor. Yeterli süre vardı zaten. Onun için oralardan bazı puanlarımız gitmiş olabilir. Burada bir sorumuz var mı?
+
+49
+00:15:46,932 --> 00:15:50,532
+Evet, ikinci soruya bakalım.
+
+50
+00:15:55,892 --> 00:15:57,892
+bir datasetimiz vardı.
+
+51
+00:16:09,460 --> 00:16:10,412
+Többi.
+
+52
+00:16:15,892 --> 00:16:17,092
+Şöyle yapsak,
+
+53
+00:16:19,592 --> 00:16:21,292
+tablo düzeni desek
+
+54
+00:16:38,580 --> 00:17:02,259
+İstenilen format şu, y eşittir, a çarpı b üzeri x formunda bir regresyon. Yani eksponansiyel bir regresyon oluşturacağız. Ve dördüncü ve onuncu saati soruyor. Yani y4 kaçtır, y10 kaçtır? Bunun tahminini istemiş bizden.
+
+55
+00:17:02,836 --> 00:17:09,395
+Öncelikle bunu en küçük kareler yöntemine uyarlayabilmek için şu dönüşümleri yapmamız gerekiyor.
+
+56
+00:17:09,395 --> 00:17:11,796
+y eşittir.
+
+57
+00:17:11,796 --> 00:17:21,235
+a çarpı b üzeri x formunda bir şey varsa, ki zaten soruda da logaritma için ln kullanın demişiz.
+
+58
+00:17:21,235 --> 00:17:23,875
+Soru zaten onu söylüyordu size.
+
+59
+00:17:23,875 --> 00:17:27,796
+Her iki tarafın elini aldığınızda ln y eşittir.
+
+60
+00:17:28,243 --> 00:17:55,523
+ln a çarpı b üzeri x elde edeceksiniz. Buradan ln y eşittir. ln a artı x çarpı ln b'yi bulacağız demektir. Şuna büyük y diyorum. Buna büyük a diyorum. Şuna da x çarpı büyük b diyorum. bx diyeceğim.
+
+61
+00:17:56,243 --> 00:18:14,243
+Dolayısıyla, burada büyük A ile küçük A arasında nasıl bir ilişki olacak? A eşittir. Elen küçük A ise, küçük A'nın değeri zaten bize lazım. Büyük A'dan bunu elde edeceğiz. A eşittir. Her iki tarafın E kuvvetini alırsak, E üzeri A'yı bulacağız.
+
+62
+00:18:14,243 --> 00:18:22,243
+E üzeri büyük A. Aynı şey B için de geçerli. İkisiler eşit olduğu için B eşittir.
+
+63
+00:18:22,740 --> 00:18:29,139
+ln küçük b, buradan da b eşittir, e üzeri b bulacağız. Peki bize ne lazım?
+
+64
+00:18:29,660 --> 00:18:41,940
+y eşittir a artı bx formatında bir şey lazım. Ama şu ln a olacak, şurası da ln b olacak, buna dikkat etmemiz gerekiyor.
+
+65
+00:18:42,460 --> 00:18:47,579
+Burada da linear regresyon bağıntısından yola çıkarak
+
+66
+00:18:47,635 --> 00:18:50,635
+Bize ne lazımdı? x'ler var, y'ler var.
+
+67
+00:18:52,635 --> 00:18:55,635
+Bunlara karşılık olarak bize x'lerin kareleri lazım.
+
+68
+00:18:56,635 --> 00:19:03,635
+x'lerin kareleri dışında elen y lazım. Yani şuranın eleni almak gerekiyor.
+
+69
+00:19:04,635 --> 00:19:07,635
+Bir de buranın x ile elen y'nin çarpımı gerekiyordu.
+
+70
+00:19:07,923 --> 00:19:15,923
+Bu bilgileri elde edeceğiz. Bunları elde ettiğimizde de şuradan ekran görüntüsü yapıştırabilirsem şöyle değerler çıkacak.
+
+71
+00:19:24,564 --> 00:19:42,684
+Şuraya bunu yukabilir miyiz? Şöyle değerler bulacağız. Artık bunun şöyle olduğunu siz varsayın. Daha sonra linear regression için şeyimizi hesaplamamız gerekiyor. Burada n sayımız vardı.
+
+72
+00:19:43,251 --> 00:19:53,251
+Burada toplam x'lerimiz olacaktı. Şurada da toplam x'lerimiz olacaktı hatırlarsınız. Şurada da toplam x'in karesi olacak.
+
+73
+00:19:53,251 --> 00:20:07,147
+Burası sabitti. Şurada büyük ağımız var. Burada büyük B'imiz vardı. Yani burada doğrudan denklemi yazmadan sayısal değerleri yerine yazanlarını da kabul ettik. Şuranın toplamı 45.
+
+74
+00:20:07,443 --> 00:20:14,443
+Ondan sonra şu y'lerin toplamı 970, gerçi bu y'lerin toplamına doğrudan şu an için ihtiyacımız yok.
+
+75
+00:20:14,443 --> 00:20:18,443
+Ondan sonra şu x karelerin toplamı 285,
+
+76
+00:20:18,443 --> 00:20:28,443
+Ondan sonra şuranın toplamı, şuranın toplamı 39.86 ve 861,
+
+77
+00:20:28,443 --> 00:20:33,387
+şurası da 216.221 diyor.
+
+78
+00:20:33,587 --> 00:20:55,188
+Şurada yapacağımız şey de neydi? Elenyeleri toplamı, şöyle toplam elenye, burada da x çarpı elenye toplam, x çarpı elenye'nin toplamını yazacağız. Bunları yerine yazdığımızda burada dokuz tane datamız var.
+
+79
+00:20:55,571 --> 00:21:21,571
+45, 45, ondan sonra şunların toplamı 285, a ve b gibi iki tane değerimiz var. Bunların karşılıkları da elen y'lerin toplamı 39.861, şu x çarpı elenlerin toplamı da 216.21, 221.
+
+80
+00:21:22,900 --> 00:21:30,900
+Burada bağımsız olarak artık hangi yöntemi kullanırsan ister determinant ister başka şey kullanabilirsiniz fark etmiyordu.
+
+81
+00:21:30,900 --> 00:21:45,900
+Büyük A değerimiz 3.019 çıkıyormuş. Büyük B değerimiz de 0.281. 282 çıkıyor. Bu şekilde.
+
+82
+00:21:49,779 --> 00:22:17,460
+E tabanında E'inci kuvveti alırsak 63 nokta yaklaşık olarak 245, şurada da 343, pardon yanlış oldu, şu 20 nokta 475, bu da 1 nokta 326 geliyormuş. Yani denklemimiz Y eşittir.
+
+83
+00:22:17,875 --> 00:22:25,875
+20.475 x x üzeri 1.326
+
+84
+00:22:26,875 --> 00:22:36,875
+Burada x yerine gidip 4 koyun, x yerine 10 koyun, 4 koyduğunuzda 63.25 geliyor, 10 koyduğunuzda da 343 gibi bir şey geliyor.
+
+85
+00:22:45,044 --> 00:22:55,444
+Mesela 68 ama tam birebir tutmadan işte en yakın değerini bulmaya çalışıyor. İlla ki tutması gerekmiyor. Çünkü regresyonda üzerinden geçmesi gerekmiyordu.
+
+86
+00:22:55,444 --> 00:23:04,004
+10 koyduğumuzda da 343 nokta küsür elde ediyor. Zaten o da hani 260'dan büyük olmasını bekleyeceğimiz bir değerdir.
+
+87
+00:23:04,004 --> 00:23:11,284
+Bu çözüm de bu şekildeydi. Yani burada genel olarak yapılan dikkatimi çeken hatalar
+
+88
+00:23:12,435 --> 00:23:24,036
+Şu dönüşümü yapmamak. Şuradaki şu dönüşün yapılmadığı durumlar vardı. Bu dönüşüm yapılmazsa bu problem bu şekilde çözülmez.
+
+89
+00:23:24,036 --> 00:23:38,036
+Şunu yapanlar vardı. İşte x'e mesela 2 vermiş, y'ye 36 vermiş bir defa arkadaşımız. İşte buradan bir a'ya, a ve b'ye bağlı bir denklem bulmaya çalışıyor.
+
+90
+00:23:38,387 --> 00:23:46,788
+Ondan sonra bir yerden de işte buna 7 vermiş, buna 140 vermiş, bir A'ya B'ye bir tane daha bağlı denklem bulup buradan A ve B değerleri tahmin ediyordu.
+
+91
+00:23:46,788 --> 00:23:57,987
+Bu iki noktalı bir regresyondur. Eğer iki tane nokta varsa doğru ama bütün noktaları yapacağımız, dikkate alacağımız bir hesaplama yapmak gerektiği için böyle bir şey yapmak gerekiyordu.
+
+92
+00:23:57,987 --> 00:24:04,187
+Ki biz zaten size böyle bir şey yapın diye bir şey söylemedik. Hiçbir şekilde öyle bir şey de anlatmadık.
+
+93
+00:24:05,428 --> 00:24:20,188
+Burada sorumuz var mı? Genel olarak yani şuradaki hesaplamalarda falan problem görmedim. Ki bunu Banu Hoca okudu bu soruyu. Yani onun da hani puanlamalarına baktım. Bu soru ortalaması da fena değildi.
+
+94
+00:24:23,068 --> 00:24:24,588
+Var mı bu sorumuz?
+
+95
+00:24:29,683 --> 00:24:31,364
+geçiyoruz o zaman
+
+96
+00:24:34,579 --> 00:24:35,579
+Soru 3
+
+97
+00:24:41,940 --> 00:25:08,140
+Soru üçte genellikle bir sıkıntı, Banu hocanın gördüğü sıkıntı, yani söylenenin yapmama üzerine. Biz Lagrange falan çözüm istemedik arkadaşlar. Yani hoca yine belli şeylere puan vermiş ama, demişiz ki Gregor Newton ve değişken dönüşümü kullanarak bu soru çözülecek. Değişken dönüşümde Gregor Newton yöntemi olacak. Bunu şöyle baş aşağı çevirebiliyor muyum acaba?
+
+98
+00:25:09,844 --> 00:25:13,516
+çevirebilsem biraz daha tablo tasarımı desek.
+
+99
+00:25:16,948 --> 00:25:19,660
+Şöyle Ctrl-J, any magnet?
+
+100
+00:25:51,571 --> 00:25:53,971
+Başka bir şekilde almaya çalışacağım.
+
+101
+00:26:31,380 --> 00:26:38,380
+Şimdi burada Gregor Newton interpolasyonu yapmak istiyorduk ama değişken dönüşümü yapın demişiz.
+
+102
+00:26:38,380 --> 00:26:45,880
+Çünkü bu x değeri sıfırdan başlamıyor. Yani bir de ben değişken dönüşüm yapılmasını sonra da özellikle belirtmişim.
+
+103
+00:26:45,880 --> 00:26:48,380
+Dolayısıyla buna yapacak bir şeyiniz yok.
+
+104
+00:26:48,380 --> 00:26:55,880
+Öncelikle burada şu x ve y değerlerini, şu tabloyu biraz daha büyüteyim.
+
+105
+00:27:02,163 --> 00:27:14,643
+İşte şu kısmı alalım. Şuraya aktaralım. Şuraya aktarsak olur. Şuraya aktarayım bir daha.
+
+106
+00:27:17,403 --> 00:27:27,284
+Buna z diyorum. Z'miz sıfırdan başlayacak. Çünkü bildiğimiz şey bunun sıfırdan başlaması en basit formülü.
+
+107
+00:27:29,940 --> 00:27:55,180
+4 diyoruz. Tabii z ve ikisin aslında yerini değiştirsek daha güzel. Yoksa hani interpolasyon yapmak biraz daha zor olacak. Şöyle alalım. Bundan bunu çıkarttığımızda 0.2'lik bir fark var. Bundan bunu çıkarttığımızda 0.2'lik bir fark var. Şöyle, şöyle, şöyle, şöyle. Şuna gerek yok.
+
+108
+00:27:56,372 --> 00:28:05,372
+Şimdi x ile z arasındaki interpolasyon fonksiyonunu yazmak istersek, bu ilk değerimiz
+
+109
+00:28:08,372 --> 00:28:14,372
+3.0, yani x eksi 3 z eşittir.
+
+110
+00:28:16,372 --> 00:28:24,364
+Sıfırdan başladığı için, en basit formula için aradaki şu farklı şey 0.2. Bu x arasındaki şey bu olacak.
+
+111
+00:28:24,627 --> 00:28:31,927
+Buradan da z eşittir veya z'i x cinsinden bu şekilde yazabiliriz veya x'i z cinsinden yazacak olursak,
+
+112
+00:28:31,927 --> 00:28:47,927
+3 artı 0.2 z şeklinde bunu bulacağız. Ondan sonra x ve y arasında yani y ile z arasında bir şey bulmamız lazım.
+
+113
+00:28:47,927 --> 00:28:50,927
+O zaman şu sonlu fark tablosunu dolduracağız.
+
+114
+00:28:51,152 --> 00:29:14,652
+Bundan bunu, bundan bunu, bundan bunu, bundan bunu çıkararak yapacağız. Şöyle yazayım, 0.028'miş. Bundan bunun farkı. 0.0263'miş. 0.0263. Şu 0.0249. Şurası da 0.0234.
+
+115
+00:29:16,403 --> 00:29:21,203
+Ondan sonra aynı şekilde bunu yazıyoruz. Eksi 0.0017
+
+116
+00:29:24,104 --> 00:29:27,503
+Bundan bunu çıkanca eksi 0.0014
+
+117
+00:29:29,503 --> 00:29:32,903
+Şu da eksi 0.0015
+
+118
+00:29:35,604 --> 00:29:39,804
+Sonra şurada eksi 0.00033
+
+119
+00:29:41,460 --> 00:29:45,460
+Şurada da eksi 0.0001
+
+120
+00:29:48,460 --> 00:29:52,859
+Burada da ne kalıyor? Eksi 0.0004 kalıyor.
+
+121
+00:29:53,960 --> 00:29:59,460
+Bu şeyi yazdıktan sonra bizim sonlu fark denklemimizi yazmamız için şunu,
+
+122
+00:30:00,359 --> 00:30:06,259
+şunu, şunu, şunu ve şunu kullanmamız lazım.
+
+123
+00:30:06,644 --> 00:30:14,884
+Tabi sonsuza kadar daha fazla yazmaya da gerek yok ama en basitiyle şöyle yazalım. Buradan FZ çıkacak arkadaşlar.
+
+124
+00:30:22,291 --> 00:30:49,971
+Fz çıkacak. Bu Fz'nin değeri 0.4771 artı 0.028 çarpı z, burada z üzeri 0, burada z üzeri 1, eksi 0.0017 çarpı z çarpı z eksi 1.
+
+125
+00:30:50,291 --> 00:31:13,291
+Bölü, iki, ha devamını getirebiliriz. İşte şurada artı 0.0033 z, z-1, z-2, bölü, uç faktör yer, falan böyle devam eder gider. Şuraya kadar varsa biz genel olarak kabul ettik, sıkıntı yok dedik. Yeterli de olur zaten. Bundan sonrasında z'in yerine ne yapacağız?
+
+126
+00:31:15,955 --> 00:31:26,355
+değeri getirip yerine koymaktan başka bir şey kalmıyor. Bazen z'i yapmak z de bırakmış arkadaşlar. Hani bu şekilde de bırakabilirsiniz.
+
+127
+00:31:26,355 --> 00:31:39,155
+Mesela biz neyi sormuşuz soruda? Interpolasyon fonksiyonu çıktı. İsterseniz bunu fx'li hale getirirsiniz z'i yerine yazıp. Böyle bir denklem çıkar.
+
+128
+00:31:45,044 --> 00:31:52,044
+3.5 yani x eşittir 3.5'in değerini bulun demişiz. Bunu yapmak için
+
+129
+00:31:52,644 --> 00:32:02,644
+isterseniz x yerine 3.5'in değerini bulup z'in karşılığını bulursunuz. Şurada da getirip z'i yazarsınız veya
+
+130
+00:32:02,644 --> 00:32:06,644
+bu z'e bağlı denklemi x'e bağlı denkleme haline çevirip
+
+131
+00:32:06,675 --> 00:32:25,675
+İşte şurada şu değeri yerine yazdığınızda ne olacak? 0.470, 4771 artı 0.028 çarpı x-3 bölü 0.2 eksi 0.0017 çarpı işte şurada...
+
+132
+00:32:25,844 --> 00:32:35,444
+İşte z kare eksi z gibi bir şey olabilir veya doğrudan hani şu ifadeyi olduğu gibi aynı yerine yazın. İkisi de olur hepsini kabul ettik.
+
+133
+00:32:35,444 --> 00:32:52,844
+Şu x eşittir 3.5 değerini ya bu şekilde doğrudan ya da dolaylı olarak yerine getirip sonuçta 0.543 gibi bir değer yani pardon f 3.5 için
+
+134
+00:32:55,347 --> 00:32:58,747
+0.543 gibi bir değer bulmamız gerekiyor.
+
+135
+00:32:58,747 --> 00:33:05,747
+Banu hocayla konuştuğum kadarıyla Gregor Newton normal yapanları
+
+136
+00:33:06,067 --> 00:33:13,387
+yani 25 üzerinden değil, herhalde 20 üzerinden falan değerlendirdiğini söyledi. Tam şeyleri hatırlamıyorum ama herkese eşit.
+
+137
+00:33:13,387 --> 00:33:32,067
+Gregory Newton yapmayıp Lagrange yapmaya çalışanlar olmuş. Onlara da belli bir miktar puan verdim dedi ama hani bu interpolasyon yöntemi yapmadan bazı arkadaşlar işte şey yapmışlar, Pascal üçgeniyle çözmeye çalışanlar olmuş. Bunlara puan verilmedi. Böyle bir interpolasyon size anlatmadık.
+
+138
+00:33:32,788 --> 00:33:45,988
+Onun dışında yine regresyon yapmaya çalışan arkadaşlar olmuş. Bugün regresyon değil, bugün interpolasyon sorusuydu. Genel olarak çözümü bu şekilde olacaktı arkadaşlar. Bir sorumuz var mı?
+
+139
+00:33:51,188 --> 00:33:52,188
+Peiki
+
+140
+00:33:56,788 --> 00:34:23,788
+Son kısım biraz çoğunuzun belki afalladığı ve yanlış yaptığı, benim de hani sınav esnasında yaptığım açıklamayı ona yine yanlış anlayanların olduğu bir soru olmuş. Genel olarak yine çözüm ortalaması doğru ama alakasız şeyler de vardı. Şimdi benim sınavda yaptığım uyarı şu arkadaşlar, birkaç kişinin yanlış yaptığından yola çıkarak değil de...
+
+141
+00:34:24,275 --> 00:34:33,275
+Birkaç kişi dışında böyle birkaç, birkaç demek doğru değil, biraz fazlaca kişinin
+
+142
+00:34:33,275 --> 00:34:44,971
+x çarpı e üzeri 2x dx integralini n eşittir 6 için çözün demişiz. Şöyle çözümler görüyorduk.
+
+143
+00:34:45,396 --> 00:35:10,796
+Ben gördüm. 0'dan 0.5'e bir parçaya bölmüş. x çarpı 2 üzeri x, e üzeri 2x, dx. Ondan sonra artı demiş. 0.5'ten 1'e x çarpı e üzeri 2x, dx. Nokta nokta nokta böyle gidiyor. Her bir integralin analitik çözümünü yapıyor. Ne demek analitik çözüm?
+
+144
+00:35:10,976 --> 00:35:22,976
+İşte burada diyor x eşittir u olsa, e üzeri 2x, dx eşittir dv olsa, buradan işte du'yu bulacak, du eşittir işte 1 eşittir du olacak.
+
+145
+00:35:22,976 --> 00:35:28,976
+İşte şuradan integral v'yi bulacak, e üzeri 2x'in integralinin işlemi hesabı olacak.
+
+146
+00:35:28,976 --> 00:35:33,976
+Hani bunun için bir analitik çözüm yapıyor. Aynısı burada da var, burada da var.
+
+147
+00:35:33,976 --> 00:35:37,976
+Bu hiçbir şekilde nümerik çözümle alakası olan bir şey değil.
+
+148
+00:35:38,420 --> 00:35:53,819
+Biz böyle bir şey zaten yapmayalım diye şey istedik. Bu şekilde uyarı yaptım. Bu şekilde uyarı yapıp birazcık çözümlerinde farklı değişiklikler yapanlar olmuş. Hatta bazı arkadaşlar işte ilk başta yaptığı çözüm olmuş, ona yapmış, aşağıya işte bir yerde bir çözüm daha eklemiş.
+
+149
+00:35:55,220 --> 00:35:59,819
+İkisinden hangisi doğruysa hani ona göre puan verdim, yani puan kırmadım. Ama...
+
+150
+00:36:00,307 --> 00:36:26,788
+integral çözeyim derken gidip de böyle analitik çözüm bulmaya çalışanlar ki biz zaten analitik çözümle cevabınızı karşılaştırın hatayı bulun gibi bir şey de soruda sormadık ve istemedik. Öyle bir şeye gerek yoktu istemiyoruz zaten. Simpson 3 bölü 8'i uygulayacaktınız. Bunda yine çoğunuzun yaptığı gibi şöyle bir şey olacaktı. Şimdi ben integral olarak yazmayayım. Sıfırdan 3'e integral istiyoruz.
+
+151
+00:36:27,891 --> 00:36:53,692
+n eşittir 6 demişiz. İki farklı şekilde anlayanlar olmuş. Bunların hepsine tam puan verdim. Ben değerlendirdim bunu. Şimdi n'den 6'ya kadar Simpson 3 bölü 8'in kendisi 3 tane ara nokta istiyor. Dolayısıyla burayı 0'dan 0.5'e, 0.5'ten 1'e, 1'den 1.5'a,
+
+152
+00:36:54,195 --> 00:37:08,596
+1.5'dan 2'ye, 2'den 2.5'a, 2.5'dan 3'e 6 tane integrale bölmek gerekiyor. O zaman doğru. Şimdi 0'dan 0.5'e de şu arayı da 3 parçaya bölmemiz gerekiyor. Bu araları da, hatta şuraları ayrı çizelim.
+
+153
+00:37:08,596 --> 00:37:19,876
+Bu araları da ayrı parçalara bölmemiz gerekiyor. Yani burada ne olacak? Bir Simpson uygulayacaksın. Sonra şurada bir Simpson uygulayacaksın.
+
+154
+00:37:20,659 --> 00:37:41,159
+Şurada bir Simpson uygulayacaksın. Burada bir tane Simpson olacak. Burada bir tane daha olacak. Bir de burada bir tane daha olacak. Bu şekilde bir toplam integral olacak. Bunun yaklaşık çözümü zannediyorum 504 nokta küsürdü. Şimdi birazdan bakarım cevabına. Buranın üç parçaya bölünmesi ne demek?
+
+155
+00:37:41,780 --> 00:37:55,539
+O üç parça biliyorsunuz hani son parçadan işte şundan şunu çıkartıyorsun, 0.5'ten 0'ı çıkartıyorsun, 3'e bölüyorsun. Bu da 0.16 gibi bir şeydi galiba. Hemen bakayım bir saniye.
+
+156
+00:38:01,331 --> 00:38:03,831
+Evet, 0.167 oluyor.
+
+157
+00:38:06,251 --> 00:38:14,631
+Dolayısıyla şu 0.167, bunun iki katı 0.333, sonra 0.5, ondan sonra şuradan şuraya...
+
+158
+00:38:14,751 --> 00:38:24,351
+Yine aynı değerler, 0.167, 0.5'e 0.167 ekleyin, 0.667. Böyle aslında 18 tane hesaplama vardı.
+
+159
+00:38:24,351 --> 00:38:37,551
+Birinci çözüm, bu şekilde yapanlar tam olması gereken çözüm. Bir diğer alternatif değil de, belki bizim anlatmamızdan yanlış anlayanlar olmuştur diye bunu sıkıntı etmedik.
+
+160
+00:38:39,603 --> 00:38:52,403
+6 tane parçaya bölüyor ama 6 parça şunların her birini 6 parça gibi gören arkadaşlar vardı. Dolayısıyla burada ne oluyor? 0'dan 1.5'e 1, 2, 3 parça.
+
+161
+00:38:52,608 --> 00:39:01,608
+Buradan da şuraya üç parça şeklinde. Bunun da yaklaşık olarak çözümü 513.ksir çıkıyor. Bu da benim için kabul. Sonuçta aynı formülü.
+
+162
+00:39:01,608 --> 00:39:10,608
+Şurada altı defa uygulamanızı bekledik. Yani gerçek çözüm buydu ki slide'larda olan şey de bu. Şurada iki defa integral alıyorsun.
+
+163
+00:39:10,608 --> 00:39:17,608
+İki tane integrale bölüyorsun. Biraz daha hassasiyet. Gerçek çözüm de şuna yaklaşıyor zaten. 504'e çok çok yakın bir değer.
+
+164
+00:39:20,608 --> 00:39:29,608
+0.5 hesaplanmış, 1 hesaplanmış. İşte o integral formülünü de yerine koyunca, işte 3 bölü 8'li formülü yerine koyduğunuzda
+
+165
+00:39:29,871 --> 00:39:40,371
+Hesaplayacağınız değerler buydu. Artık bunun tablo formatında yazmanızı istedik. Şu örnek için, şuradaki alttaki için söyleyecek olursam ne olacak?
+
+166
+00:39:40,371 --> 00:39:57,371
+Sıfırın karşılığı, 0.5'in karşılığı, 1'in karşılığı, 1.5'un karşılığı, ondan sonra şurası 2, 2.5, 3, 2'nin karşılığı, 2.5'un karşılığı, 3'ün karşılığı toplam bu kadar noktamız olacak. 6 tane parça olacak.
+
+167
+00:39:57,871 --> 00:40:24,871
+iki üç dört beş altı. Sonra bunları sonuçlarını işte şurası birinci integral, şurada ikinci integral ikisini de yerine koyup çözüme gitmek gerekiyordu. Tabi burada şunu yapanlar aslında tam bizim de anlattığımız şekilde doğrusunu yaptılar. Çok yani değişik çözümler işte biz tabii ki bir grup yine burada nedense Pascal üçgeniyle bir şeyler yapmaya çalışanlar vardı. Hani yine
+
+168
+00:40:26,420 --> 00:40:40,420
+Simpson 3 bölü 8 formülünü kullanarak yapanlarda çok sıkıntı yok da böyle alakasız çözümlerde hiç puan alamamış olabilirsiniz. Yaklaşık çözüm dediğim gibi 504.67 gibi bir şeye gidecekti eğer
+
+169
+00:40:40,947 --> 00:41:03,148
+şurada olması gerektiği gibi yaptıysanız, buradakine göre yaptıysanız da 513 nokta küsür. Virgülden sonra birebir aynı basamaklar, aynı şeyler olmasını beklemiyoruz. İşte ne bileyim ben 504.673 bulmuşumdur, sen 672 bulmuşumdur, onda problem yok dedim diyelim. Bu da bu şekildeydi arkadaşlar. Var mı burada bir sorumuz?
+
+170
+00:41:10,036 --> 00:41:30,516
+Peki, şimdi, bizim bu sayısal analizi dersimizin konuları ve içeriği bu şekilde arkadaşlar. Sınavımızda değerlendirmesi bu şekildeydi. Dersimizi bu şekilde, dönemimizi bu şekilde tamamlamış olduk. Normalde diferansiyel denklemler, adi diferansiyel denklemlerle alakalı bir konumuz var.
+
+171
+00:41:30,900 --> 00:41:40,900
+Ama biz o konuyu yeni müfredatla beraber, ayrıca sizin gelecek dönem bir diferansiyel denklemler dersiniz olduğu için bu dersin kapsamından çıkardık.
+
+172
+00:41:40,900 --> 00:41:50,900
+Orada diferansiyel denklem nedir, analitik çözüm yöntemleri nedir, nümerik çözüm yöntemleri nedir, alternatif çözüm yöntemleri var analitik çözümlerde.
+
+173
+00:41:50,900 --> 00:41:57,804
+O derste onu daha detaylı görüyorsunuz. Bir de aynı şeyi iki tane derste görmeye gerek yok.
+
+174
+00:41:57,907 --> 00:42:11,907
+Bu ders bir de analitik çözümle çok ilgilenmediğimiz bir ders. Normalde, kısaca şöyle ifade edeyim, bir diferansiyel denklem dediğimiz şey, bir değişkenin kendisini ve türevlerini içeren bir denklem oluyor.
+
+175
+00:42:11,907 --> 00:42:24,907
+Yani mesela y artı üç eşittir x dediğimizde, bu y ile x arasındaki bir denklem. Yani tabi burada y'yi biz x'in bir fonksiyonu olarak gördüğümüz durumu düşünelim.
+
+176
+00:42:25,492 --> 00:42:39,492
+Ama şöyle denklemler de var. Yine y, x'in bir fonksiyonu y artı üç tane y'nin türevi artı x'in türevi eşittir sıfır. Şimdi ben...
+
+177
+00:42:39,668 --> 00:42:59,868
+y ile x arasındaki bağıntıyı ararken, işte ne yaparım şu denklemi çözmek için? Bilinenler bir tarafa, bilinmeyenler bir tarafa, işte kat sayıları sadeleştir, bilinmeyenleri yalnız bırak, işte ne yaparım? Bunu x-3 diye çözerim. Fakat burada bilmediğim bir şey var, bilmediğim bir başka şeyin türevi var.
+
+178
+00:43:00,148 --> 00:43:25,148
+Bu bilmediğim bir şeyi etkileyen bir başka değişkenin de türevi var. Dolayısıyla bu diferans bunlara difdenk diyoruz. Türevli ifadeler. Şöyle bir diferansiyel denklem olabilir. Mesela devre teorisinde RLC devrelerini gördünüz mü? O konuya geldiniz mi şu an? Veya RLC veya RL devreleri. Gördük hocam. Mesela RLC devrelerinde
+
+179
+00:43:25,523 --> 00:43:38,523
+akım ile, devrinin akımı, direnç, kapasitör ve indiktör arasındaki, indiktans, kapasitans ve rezistans arasındaki bağıntı ikinci dereceden bir türev ile.
+
+180
+00:43:38,523 --> 00:43:45,132
+Hatta bulayım bir saniye, ben size ekran görüntüsü yapayım. Relay circuit.
+
+181
+00:43:49,684 --> 00:43:53,083
+Peki o devre, o çözümleri nasıl yapıyorsunuz devre teorisinde?
+
+182
+00:43:57,235 --> 00:44:24,835
+Hocam, RLC'yi görmedik, sadece RL ve RLC gördük. Hayır, RLC'ye gelmedik zaten. Tamam. RLC'ye serpilisek olayışık. Peki onu anlatmayacaklar mıymış? Galiba öyle ya. Daha haftaya mı? Yok, atladık konuyu. Oo, konuyla. Tamam. O zaman ben size biraz RLC devresi anlatayım.
+
+183
+00:44:26,324 --> 00:44:40,235
+Şu an tabi ekranım, ekran powerpoint görüne değil mi? Evet, powerpoint hocam. Tamam, şimdi şöyle değiştirelim. Share.
+
+184
+00:44:47,284 --> 00:45:03,524
+Şimdi, öyle bir devre var ki, devrede akım üreten şey, şu üreteç, akım depolama görevi olan şeyler buradaki bobin ve kapasitör, tüketmekle görevli olan şey de rezistans.
+
+185
+00:45:03,524 --> 00:45:14,483
+Şimdi buradan geçen akımı veya buradaki işte herhangi bir elemanın üzerindeki gerilimi hesaplamak için bir devre, bir denklem kurmak gerekiyor.
+
+186
+00:45:14,708 --> 00:45:23,268
+Şimdi rezistans üzerindeki gerilim şöyle, buradan geçen akım sabit bir şey değilse, zamana göre değişiyorsa,
+
+187
+00:45:23,268 --> 00:45:36,547
+yani şöyle bir V eşittir, I çarpı R ohm kanunda bunu bulabiliyoruz. Fakat indüktör üzerindeki akıma baktığımız, gerilimi hesapladığımız zaman,
+
+188
+00:45:36,547 --> 00:45:42,547
+bunun üzerindeki akımın zamanla değişmesi nedeniyle akımın zamana göre türevini alıp
+
+189
+00:45:42,771 --> 00:45:55,771
+gerilim hesabı yapıyoruz. Bu işin R ve L olduğu part. Aynı şekilde kapasitör üzerindeki şeye baktığımızda da, voltaja baktığımızda da genel olarak şunu buluyoruz.
+
+190
+00:45:55,771 --> 00:46:03,771
+Ama bunlar bireysel olarak, birbirinden bağımsız düşünüldüğünde bunların hepsini bir detaya aldığınızda şu Q...
+
+191
+00:46:04,208 --> 00:46:12,668
+üzerindeki yükü ifade ediyor. Yük de zaten aslında akımla bağlantılı bir şey. Şöyle bir derece denklem çıkıyor.
+
+192
+00:46:12,668 --> 00:46:23,208
+Yükün ikinci türevi, yükün birinci türevi, işte yükün işte bir kapasitör değeriyle şeyi bu potansiyel farkı verecek.
+
+193
+00:46:23,208 --> 00:46:27,208
+Bakın dolayısıyla hani bunu en genel formda şu şekilde yazarsak,
+
+194
+00:46:27,380 --> 00:46:54,260
+İkinci türev önünde bir m gibi katsayı, birinci türev önünde c gibi katsayı, bir tane de değişken var. Burada y t'nin bir fonksiyonu, zamana göre değişmekten bahsediyoruz. Hani x yerine t'yi kullandık, farklı bir şey değil. Şimdi böyle bir şeyde bilmediğim bir y var, onun türevini de bilmiyorum, yani bilmediğim şeyin türevini de bilemem. İkinci türevini hiç bilemem. Bu denklemler,
+
+195
+00:46:54,771 --> 00:46:57,771
+Diferansiyel denklem olarak karşımıza geliyor.
+
+196
+00:46:57,771 --> 00:47:03,771
+Peki bu denklemlerin çözümünde en bilindik yaklaşım ne? Aslında bazısını biliyorsunuz.
+
+197
+00:47:03,771 --> 00:47:07,771
+Yani birazcık türevi integral bilen birileri bunu şey yapar.
+
+198
+00:47:07,771 --> 00:47:12,771
+İşte y türev artı 3x eşittir 0 olsun.
+
+199
+00:47:12,771 --> 00:47:16,559
+Bu denklemi çözebilmek nispeten kolay bir şey.
+
+200
+00:47:16,559 --> 00:47:22,559
+Çünkü bu separable dediğimiz ayrıştırılabilir bir formdadır. Y türev'i ben şu şekilde yazabilirim.
+
+201
+00:47:22,559 --> 00:47:29,559
+d y'nin d x'e göre diferansiyeli diye, yani y'nin x'e göre diferansiyeli diye yazarım, eşittir 3x derim.
+
+202
+00:47:30,559 --> 00:47:36,559
+Burada 3x'i karşıya atsak d y ne olur? Şöyle bir şey oluyor, eksi 3x çarpı.
+
+203
+00:47:37,139 --> 00:47:45,379
+dx gibi bir şey oluyor. Yani içler dışlar çarpımı yapıyorsun. Buradaki d'lerden, diferansiyelli ifadelerden kurtulmak için her iki tarafın
+
+204
+00:47:45,379 --> 00:47:56,259
+integralini alırsan, buranın integrali y'yi bulursun. Şuranın integrali de işte eksi 3x kare bölü.
+
+205
+00:47:56,692 --> 00:48:04,311
+iki gibi bir şey olur. Her iki taraftaki sabit sayılar, c'ler gider. Şurada genel bir c diye bir şey yazarsın. Bu şekilde çözümü bulursun.
+
+206
+00:48:04,311 --> 00:48:13,991
+Ama bakın bu kolay bir şey. Ben bunun yanına bir tane daha y ikinci türev atsam, işte o bilinenler bir tarafa, bilinmeyenler bir tarafa diye bir şey yapamıyoruz.
+
+207
+00:48:13,991 --> 00:48:23,071
+Veya y türev parantezini alayım da ikinci türeve göre bir şey bulayım, o da peki mümkün değil. Bunların analitik çözüm yöntemleri var.
+
+208
+00:48:24,403 --> 00:48:33,403
+Biz nümerik analizi size niye anlatıyoruz? Analitik çözümü zor olan veya imkansız olan belli durumdaki problemleri nümerik yöntemde yaklaşık çözümler için.
+
+209
+00:48:33,403 --> 00:48:38,403
+Öyle diferansiyel denklemler var ki, mesela bir diferansiyel denklem şöyle bir şey söyleyebilirim.
+
+210
+00:48:38,403 --> 00:48:46,403
+Y2. Türev T'ye göre değişiyor ama T önünde bir katsayı. Buna değişken katsayılı diyoruz.
+
+211
+00:48:47,635 --> 00:49:09,235
+eninci dereceden kuvveti var. Böyle sistemler var. Yani bunlar bizim elektronik sistemlerde belki karşımıza gelmez de, gerçek hayattaki işte mekanikte, inşaatta, şurada, burada, öyle bir gerçek dünya problemini modellemişler. İşte bu bir köprü olabilir, inşaat projesi olabilir, ne bileyim bir hızlı trenle alakalı, tren sistemiyle alakalı bir şey olabilir.
+
+212
+00:49:09,844 --> 00:49:21,524
+sistemin modelini çıkartıyorsunuz, böyle bir diferansiyel denklem çıkıyor. Bu diferansiyel denklemi çözmek zorundasınız. Sistemin nasıl çalışacağını, modelleneceğini bulabilmeniz için.
+
+213
+00:49:21,524 --> 00:49:31,204
+Haliyle bunların çözümlerinin belli bir kısmı zor. Zor olduğu için de orada nümerik yöntemler kullanılıyor. Bu, dediğim gibi, gelecek dönem sizin elde edilen şey olacak.
+
+214
+00:49:31,204 --> 00:49:37,844
+Bizim bu dönem zaten bu dersi vermemizin nedeni bir basit bir denklem var. Bu denklemi, yani basitlerini kastım.
+
+215
+00:49:37,844 --> 00:49:51,604
+Yani nümerik yöntemlerle çözümü basit ama analitik yöntemlerle çözümü zor. Bunun davranışını incelemek, geleceğe yönelik tahminler yapabilmek için burada anlattığımız yöntemler çok çok kullanılıyor diyebiliriz.
+
+216
+00:49:51,604 --> 00:49:59,844
+Neyse, bu şekilde de bir diferansiyel denklem nedir? Hani en azından ya böyle bir şey demek ki varmış, hani şunların diferansiyel denklem...
+
+217
+00:50:00,000 --> 00:50:24,000
+Bu derslerde gördünüz. Gelecek dönemde bunun üzerine bazı şeyler, derste işte Laptas dönüşümleri falan var. Belki bu dönem devrede de anlatıyorlar. Laptas dönüşümleriyle bazıları biraz kolay çözülüyor, bazıları zor çözülüyor falan. Onları konuşacaksınız. Biz burada anlatmayacağız da, sormayacağız da, hani finalde de sorumlu olmayacaksınız diyelim.
+
+218
+00:50:24,851 --> 00:50:40,851
+Şimdi son olarak da şunları söyleyeyim. Dersi kapatacağız. Gelecek haftadan itibaren zannediyorum proje kontrollerimiz başlıyor. Biz size bir link paylaşacağız. Bir de planlama olacak. Mesela diyeceğiz ki...
+
+219
+00:50:40,992 --> 00:50:53,992
+[öğrenci] adak, 20'sinde şu saat aralığında senin kontrolün var. Ekran paylaşımı yapacak şekilde hazır bulunuyorsunuz. Kodunuzu çalıştıracak şekilde geliyorsunuz.
+
+220
+00:50:53,992 --> 00:51:00,992
+Biz size diyoruz ki, işte şu yöntemi çalıştır, şu girdiği deneyelim. Ona göre sonucunu inceleyelim ve bitirelim.
+
+221
+00:51:00,992 --> 00:51:07,664
+Önceden bizim dün size bir örnek test case'ler paylaştık. Onlara benzer farklı test case'lerimiz olacak.
+
+222
+00:51:07,664 --> 00:51:14,944
+Bütün yöntemleri test etmeyeceğiz. Rastgele iki veya üç tane yöntem seçip ona göre bir değerlendirme yapacağız.
+
+223
+00:51:14,944 --> 00:51:23,104
+Raporlarınızı ayrıca değerlendireceğiz. Zamanında ve doğru yere ve doğru şekilde raporlarınızı ve ödevlerinizi yükleyin.
+
+224
+00:51:23,104 --> 00:51:27,344
+Online Yıldız'a sadece kodunuz ve raporunuz olacak şekilde yükleme yapın.
+
+225
+00:51:27,344 --> 00:51:31,984
+Herhangi bir şekilde Google Drive, Dropbox gibi veya GitHub gibi link istemiyoruz.
+
+226
+00:51:31,984 --> 00:51:35,024
+Eğer öyle bir şey olursa ödev kabul değil arkadaşlar, bilginiz olsun.
+
+227
+00:51:36,115 --> 00:51:40,215
+Bu yüklemeyi yaptıktan sonra biz zaten sizlere planı duyuracağız.
+
+228
+00:51:41,495 --> 00:51:45,596
+Takriben her öğrencinin 5-6 dakikalık bir kontrol süresi olacak.
+
+229
+00:51:45,835 --> 00:51:49,435
+Zamanında toplantıya katılıp, kontrolünüzü yaptırıp ayrılacaksınız.
+
+230
+00:51:49,435 --> 00:51:54,295
+Toplantıya katılılmaması durumunda projeniz değerlendirmeye alınmaz.
+
+231
+00:51:54,295 --> 00:51:55,835
+Sıfır alırsınız, bunu da söyleyeyim.
+
+232
+00:51:56,335 --> 00:52:00,955
+Yani projeyi yüklemiş olmak, not almak için yeterli bir şey değil.
+
+233
+00:52:01,940 --> 00:52:14,739
+Gelelim finale. Finalde test yapacağız arkadaşlar. Bütün konuları kapsayacak bir test olacaktır. Bu testimizin birden fazla doğru cevabı olabilir.
+
+234
+00:52:14,739 --> 00:52:24,539
+Örneğin şöyle söyleyeyim, işte bir sorumuz var. Bu sorunun çözümünde hani dört seçenek üzerinden gidecek olsak A, B, C, D diyelim.
+
+235
+00:52:29,460 --> 00:52:39,460
+İşte bu soru da mesela 6 puanlık olsun. Sadece A'yı seçerseniz 3 puan, sadece D'yi seçerseniz 3 puan, A ve D'yi seçerseniz 6 puan.
+
+236
+00:52:39,460 --> 00:52:52,416
+Ama A veya B, yanlış herhangi bir seçenek seçilirse 0 puan alıyorsunuz. Dolayısıyla sallamanızı engelleyecek bir sınav olacak. Öyle attım tuttum olmayacak.
+
+237
+00:52:52,416 --> 00:52:57,416
+bildiğinizi doğru yapacağınız, bilmediğinizi işaretlemeyeceğiniz bir sınav olacak.
+
+238
+00:52:57,619 --> 00:53:05,219
+Her sorunun tabii birden fazla doğru cevabı olacak değil, bazı sorularının birden fazla doğru cevabı olur. Bazı sorularının bir tane doğru cevabı olur.
+
+239
+00:53:05,219 --> 00:53:15,299
+Çoktan çok seçmeli dediğimiz bir sınav usulü olacak. Yaklaşık olarak 15 ila 20 arasında sınav sorusu olur. Süreyi de buna göre ayarlarız.
+
+240
+00:53:15,299 --> 00:53:25,219
+Yine hesap makinesi kullanabileceğiniz basit hesaplamalar yapacağınız ama uzun hesaplamalarla çok işinizin olmayacağı bir sınav olabilir diyebilirim.
+
+241
+00:53:25,619 --> 00:53:33,019
+Yani şuradaki kadar belki uzun uza diye her şeyi hesaplayıp işte denklemi getirip, denklemi getirdikten sonra işte
+
+242
+00:53:33,019 --> 00:53:37,939
+x'i yerine koyup bir çözüm üreteceğiniz başından sonuna bir klasik sınav gibi bir test değil.
+
+243
+00:53:37,939 --> 00:53:45,579
+Biraz daha ara işlem adımlarını test edeceğimiz soruların olacağı bir sınav olacaktır.
+
+244
+00:53:45,579 --> 00:53:47,579
+Evet, benim...
+
+245
+00:53:48,436 --> 00:53:57,436
+Sınav hakkında, proje hakkında ve diğer konular hakkında söyleyeceklerim bu kadar. Sizin sorunuz varsa şimdi alalım. Yoksa dersi kapatabiliriz.
+
+246
+00:53:58,936 --> 00:54:05,436
+Raporlarda size verilen örnek format olacak arkadaşlar. Kodun olmasına gerek yok. Kodu zaten biz sizden ayrıca alıyoruz.
+
+247
+00:54:06,936 --> 00:54:09,936
+Yaptığınız yöntemler, yöntemlerin ekran çıktıları.
+
+248
+00:54:10,483 --> 00:54:20,483
+Ekran çıktıklarının işte nedir? Mesela x yöntemi çalıştırıyorsun, bisection yöntemi, denklemi giriyorsun. Denklemin işte daha sonra çözüm arayacağımız aralıkları giriyoruz.
+
+249
+00:54:20,483 --> 00:54:36,483
+Epsilon değerini giriyoruz. Tekrar söyleyeyim, duruma koşulu olarak, geçenlerde de çok çok tekrar ettim ama, x'in n. iterasyonu ile n artı birinci iterasyonu arasındaki farkın, Epsilon kadar ki mutlak değerine bakın.
+
+250
+00:54:36,500 --> 00:54:40,179
+Bu iki üzeri enli formülü hiçbir yöntemde kullanmayın arkadaşlar.
+
+251
+00:54:40,179 --> 00:54:46,900
+Sonra gereksiz veri girişleri veya gereksiz hatalarla sizler ve bizler uğraşmayın.
+
+252
+00:54:46,900 --> 00:54:49,299
+Başka sorumuz var mı?
+
+253
+00:54:53,364 --> 00:55:03,864
+Peki, okulda olanınız varsa ikiye on geçe gibi gelebilirsiniz. Ben ofisteyim, sınav kağıdımı görmek istiyorum diyen varsa bakarız. Görüşmek üzere, kendinize iyi bakın arkadaşlar.
