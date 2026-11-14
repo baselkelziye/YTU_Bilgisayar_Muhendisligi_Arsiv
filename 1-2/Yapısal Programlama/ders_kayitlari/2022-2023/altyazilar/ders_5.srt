@@ -1,0 +1,1943 @@
+1
+00:05:41,875 --> 00:05:42,699
+Mühendisliği
+
+2
+00:05:46,995 --> 00:05:47,995
+Merhaba arkadaşlar.
+
+3
+00:05:47,995 --> 00:05:49,995
+Geliyor hocam ama birazcık kötü gibi.
+
+4
+00:06:30,100 --> 00:06:31,360
+Şu an daha iyi mi arkadaşlar?
+
+5
+00:06:34,100 --> 00:06:35,280
+Şu an iyi hocam.
+
+6
+00:06:35,920 --> 00:06:37,220
+Tamamdır, teşekkür ederim.
+
+7
+00:06:51,444 --> 00:06:51,884
+Evet.
+
+8
+00:06:59,028 --> 00:07:07,748
+Derslerim ilk kısımlarında ben bir örnek yapacağım. Kalan tarafında da Yurku Hocamız ve şeyler anlatacak.
+
+9
+00:07:09,268 --> 00:07:11,408
+Takip edelim, hızlıca başlayalım.
+
+10
+00:07:14,068 --> 00:07:20,307
+Şu an ekran paylaşımı yaptım. Herhalde sosyalda görüntüleri yoktur diye anlıyor.
+
+11
+00:07:20,307 --> 00:07:21,788
+Bir gün görüntüleri yoktunuz.
+
+12
+00:07:30,451 --> 00:07:33,492
+Hocam, ekran geldi ama sesiniz biraz uzak sanıyor.
+
+13
+00:07:33,492 --> 00:07:35,611
+Evet, daha da istiyorsan.
+
+14
+00:07:52,468 --> 00:07:52,968
+Tez.
+
+15
+00:08:02,899 --> 00:08:03,899
+Şu an daha iyi mi?
+
+16
+00:08:05,399 --> 00:08:06,399
+Şu an iyi hocam.
+
+17
+00:08:08,399 --> 00:08:15,899
+Örneğin içi olacak, bir görüntü müdü var ve bu görüntü BMF türünde.
+
+18
+00:08:16,399 --> 00:08:18,899
+Hocam şu an yine biraz bozuk yani.
+
+19
+00:08:29,620 --> 00:08:33,000
+Şu an nasıl peki? Şimdi de iyile indir. Bir saniye.
+
+20
+00:08:33,960 --> 00:08:34,779
+Hocam güzel.
+
+21
+00:08:35,220 --> 00:08:36,460
+Aksine baya güzel hocam.
+
+22
+00:08:37,399 --> 00:08:38,379
+Şu an daha iyi yani.
+
+23
+00:08:38,720 --> 00:08:39,379
+Çok iyi hocam.
+
+24
+00:08:40,240 --> 00:08:41,059
+Tamam, peki yani.
+
+25
+00:08:43,019 --> 00:08:46,919
+Yani kulaklık takınca böyle bir değişiklik oluyor. Şu an bir bozulma yok değil mi arkadaşlar?
+
+26
+00:08:57,395 --> 00:09:07,395
+Şimdi yapmak istediğimiz şey şu, böyle bir görüntü, BMF'de bir görüntü var. İşte böyle bir dönüştürme yapıyoruz. Şimdi bu bilgisayarın içerisine baktığımızda...
+
+27
+00:09:11,827 --> 00:09:15,207
+Hocam sesiniz yine kötü geliyor mu?
+
+28
+00:09:18,207 --> 00:09:24,987
+Hocam o ayarı yapmadan önce sesiniz gayet iyiydi. Onu değiştirdikten sonra düştü sesiniz.
+
+29
+00:09:25,367 --> 00:09:26,387
+Şu an nasıl peki?
+
+30
+00:09:26,768 --> 00:09:28,387
+Şu an az hocam.
+
+31
+00:09:28,387 --> 00:09:28,867
+Az.
+
+32
+00:09:29,927 --> 00:09:32,607
+Hayır, şeyle kulaklığı takımda ulandıklarım da.
+
+33
+00:09:33,548 --> 00:09:34,327
+İyiyim ben.
+
+34
+00:09:35,283 --> 00:09:37,783
+Şu an iyi. Tekrar konuşabilir misiniz?
+
+35
+00:09:38,783 --> 00:09:49,683
+Kulakları çıkartınca daha iyi herhalde. Ama bu ayarları değiştirince sanırım sıkıntı olur.
+
+36
+00:09:50,124 --> 00:09:52,703
+Şu anki bir bozulma var mı?
+
+37
+00:09:52,703 --> 00:09:54,943
+Şu an iyi.
+
+38
+00:10:00,000 --> 00:10:17,100
+Bu dosyanın içerisine baktığımızda, şöyle bir notpad ile açmaya çalışıyorum. Biraz geç yanıt veriyor.
+
+39
+00:10:20,100 --> 00:10:25,779
+BMP dosyalarını ben kendi grubumda anlattığımda böyle bir ilk header'ı var demiştik.
+
+40
+00:10:26,868 --> 00:10:38,868
+Ondan sonra data geliyordu. Dosyanın içerisine baktığınızda böyle şeyler görüyorsunuz. Aslında bu rastgele eriştirebilir bir dosya, okuma yöntemiyle veya yazma yöntemiyle daha iyi yönetilebilir bir dosya.
+
+41
+00:10:38,868 --> 00:10:47,868
+Dolayısıyla buna göre bir şey yapacağız. Mesela pgm dosyası olsa açtığınız zaman doğrudan piksel boyutlarını görebiliyorsunuz.
+
+42
+00:10:47,868 --> 00:10:50,868
+Onun da bir örneği vardı. Bir saniye bulabilir miyim?
+
+43
+00:10:55,572 --> 00:10:57,451
+Çok kısa bir bekleteceğim.
+
+44
+00:11:16,179 --> 00:11:18,179
+Ve yine de.
+
+45
+00:11:23,956 --> 00:11:38,956
+PPM dosyası açılabilirse, doğrudan içerisinde renk kodlarıyla şu an gördüğünüz, şu resmin boyutları, maksimum renk sayısı, şu kaç tane kanal var, RGB'nin üç tane kanal olduğunu göstereyim.
+
+46
+00:11:39,892 --> 00:11:55,852
+Burada 0.px'in R, R kanalı, G kanalı, B kanalı, RGB kanallarını böyle kodlamışlar. Bunun önü sonu yoktu. Oradan elimizde aslında 3 tane maddese ait değer var. Ama BMP biraz daha karmaşık gördüğü gibi.
+
+47
+00:11:55,852 --> 00:12:04,372
+Şimdi biz bunu okuyup programımızda resim oluşturacağız. Ters çevireceğiz. İstersek gri seviyeye çevirebiliriz.
+
+48
+00:12:04,596 --> 00:12:13,596
+Ben 90 derece çevirme örneğini yapayım. Gri seviye örneğini de hızlıca göstereyim. Ondan sonra ben çekileceğim.
+
+49
+00:12:13,596 --> 00:12:21,596
+Kocaman söz bırakacağım. Önce resmi okumak demek, bir kere resmin formatını bilmek demek.
+
+50
+00:12:21,596 --> 00:12:27,596
+Wikipedia'da bakarsanız, BMP dosyalarının önce bir header'ı vardır, sonra data kısmı vardır.
+
+51
+00:12:28,371 --> 00:12:34,652
+İlk 54 byte'ı, derste de konuştuğumuz üzere ben kendi grubumda öyle ifade etmiştim. 54 byte'e header'a gidiyor.
+
+52
+00:12:34,652 --> 00:12:45,231
+Şimdi ben resmi okuyacağım. Resmin her bir pikselini bir yerde saklayacağım. Piksel için bir şey oluşturacağım, structure oluşturacağım önce arkadaşlar.
+
+53
+00:12:46,231 --> 00:12:50,652
+Ve burada aslında bir dosyanın random access file veya diğer yöntemlerle...
+
+54
+00:12:51,539 --> 00:13:09,539
+Birlikte, farklı şekillerde okunabileceğinin de bir örneğini yapmış olacağız. Önce kütüphanelerimizi ekleyelim. Bir structure oluşturuyorum. Bu structure bir pikseli ifade etsin.
+
+55
+00:13:17,792 --> 00:13:31,192
+Integer alırsak dosyadan doğrudan dönüştürmek zor. Onun için bir karakter alacağım ve bu karakteri pozitif sayılar kümesinden unsigned olarak alacağız. Bunun bir R'si var, bir G'si var, bir de B'si var. RGB.
+
+56
+00:13:31,192 --> 00:13:34,591
+Şöyle bir Type Definition yapalım.
+
+57
+00:13:34,591 --> 00:13:37,991
+Buna ne diyelim? Pixel diyelim.
+
+58
+00:13:40,532 --> 00:14:05,892
+Şimdi bir tane dosyam var. Bir dosyayı açacağım, okuyacağım. Bir başka dosyada yazma yapacağız. Şimdi bir de burada dinamik memora lokasyonu bizi uğraştırır. Maddesi allocate etmek işte birkaç gereksiz satır şey yapıyor. Şimdi şöyle bir kısaca bir define tanımlayalım. Maddesleri daha hızlı görebilmemiz için. Yoksa hani aslı olan burada dinamik memora lokasyonu yapmaktır. Dosyayı açacağız.
+
+59
+00:14:06,336 --> 00:14:16,836
+Resmin kaç tane yatayda, kaç tane düşeyde pikseli varsa ona göre bir matriz oluşturmamız lazım ama ben 500 ile 500'lük oluşturup veya 600 diyelim bunlar 500 ile 12'likli.
+
+60
+00:14:16,836 --> 00:14:24,836
+600 ile 600'lük bir matriz oluşturalım. Bu matrizi daha sonra 512 ile 512 olarak kullanalım.
+
+61
+00:14:24,836 --> 00:14:31,836
+Bir kere önce bir dosyam olacak. Bu file descriptörüm. İşte bir tane input dosyam var.
+
+62
+00:14:33,567 --> 00:14:45,708
+Output dosyam var. Şimdi input dosyam şu çalıştığım klasörün altında. Images diye bir klasörüm var. O zaman şöyle diyelim.
+
+63
+00:14:55,572 --> 00:15:05,572
+P'yi açıyorum. P'yi okumak için açacağım. Okumak için açmak istediğimde bu sefer yolunu yazmam lazım. Emotis klasörü altında.
+
+64
+00:15:05,572 --> 00:15:19,572
+Lena Altantere Color'da adı. Bir bakalım. Evet. Şunu da sileyim. Birazdan bunu elde edeceğiz. Lena Altantere Color.bnp
+
+65
+00:15:21,395 --> 00:15:36,515
+Bilgül. Bunu okumak için açmak istiyorum. R diye yazmam yeterli. Şimdi Fout var. Fout'ta da yine Foken yapacağım. Bakın iki tane dosya açtım. İkisini de ayrı ayrı kapatmam gerekiyor. Bunlara dikkat edelim.
+
+66
+00:15:41,683 --> 00:15:49,683
+Bu Lena dediğim şeydi, o fotoğraftaki bayanın ismi arkadaşlar. Görüntü işlemi de sıklıkla kullanılan bir test resmidir.
+
+67
+00:15:49,683 --> 00:16:00,683
+Lena.Rotate.bmp diye bir şey kaydedeceğim. Tabi bunu yazmak için açacağım. V Plus sisteme demek yeterli. Önceki değerler varsa da siz.
+
+68
+00:16:00,683 --> 00:16:05,683
+Şimdi biz maddes üzerinde gezinti yapacağız. Onun için Klasik.
+
+69
+00:16:06,484 --> 00:16:24,284
+i ve j matris değişkenlerimiz var. Burada ilk 54 byte'ı almam gerekiyor. İlk 54 byte'ı aldıktan sonra şu dosyadan alacağım. Bu dosyanın header'ına yazmam gerekiyor. Çünkü resmin size'ları hemen hemen aynı olacak.
+
+70
+00:16:33,683 --> 00:16:41,363
+Daha rahat işleyebilirim. Şöyle bir 54 byte'lık sabit bir dizi oluşturdum. Şimdi eğer dosyam açılmışsa,
+
+71
+00:16:41,363 --> 00:16:49,823
+işte onun kontrolünü yapabilirim. İşte f'in eşittir, nalsa dosya yoktur, dosya açılmadı. O kontroller size bırakıyoruz.
+
+72
+00:16:49,823 --> 00:16:58,763
+Şimdi burada bu bir random access file olduğu için normalde burada 54 byte'lık bir şey okumam gerekir. Yani f-read kullanabilirim.
+
+73
+00:17:00,927 --> 00:17:13,548
+Karakter karakter okuma da yapabilirim. İllaki Random Access File'lerde F-Rate'i kullanmamız gerekmiyor. Sadece F-Seq ile F-Tel ile File Position Indicator'un yerini değiştiriyorduk. Random Access File'in esprisi buydu.
+
+74
+00:17:13,548 --> 00:17:25,208
+Şimdi ben burada karakter karakter okuyup bu dosyadan, input dosyasından, output dosyasına, bulk bir şekilde toplu bir şekilde yazmayı göstereceğim. Önce işte for diyelim.
+
+75
+00:17:27,859 --> 00:17:52,099
+İ küçüktür 54, İ++. Şimdi byte'ın İ'sine bir tane karakter oku diyorum. Nereden okuyacağım? Get C fonksiyonumuz vardı hatırlarsanız. Bu tek bir karakter okudu. File input'tan bir tane karakter oku her bir seferde. 54 tane karakter okuduk. Yani burada header'ı kopyalamış olduk.
+
+76
+00:17:54,708 --> 00:18:03,148
+Yeni dosya, fwrite diyorum. Şu byte, fwrite nasıldı? Nereden okuma yapacaksın?
+
+77
+00:18:03,148 --> 00:18:13,788
+Pardon şöyle, bakın bir void pointer bize gösteriyor. İşte okuyacağımız şey, yani byte den alacağız, byte den alacağız, dosyaya yazacağız.
+
+78
+00:18:13,788 --> 00:18:19,228
+Peki ne kadar yazacağız? Side of Character kadar diyebiliriz.
+
+79
+00:18:19,443 --> 00:18:46,123
+Baya size of unsigned card diyebiliriz. Ama bunu 54 defa yapacağız. İstersek bunu 54x size of deyip bir defada da yapabilirdik. Her şey aynı ama burada 54 defa yazmaya çalışıyor. İkisi yani çok bir çıktı açısından fark etmeyecek. Performansı ayrıca değerlendirmek lazım. Bir sürü ölçmek lazım. Peki. Şimdi ben birinin header'ını aldım, öbürüne yazdım. Bu güzel.
+
+80
+00:18:46,511 --> 00:19:10,911
+Öbür dosyanın artık datasını yazabilirim. Ama şöyle bir sıkıntım var. Acaba mevcut dosyam kaç tane bitten oluşuyor? Bit derinliği, kaç renk seviyesini destekliyor? Veya genişliği ve yüksekliği çözünürlüğü nedir? Bu bilgilere de lazım olmam lazım. Bu bilgilere de ihtiyacım var. Peki bu bilgileri o zaman şurada bir değişkenlerle tanımlayalım. Bir hayatımız olacak.
+
+81
+00:19:12,372 --> 00:19:19,372
+Bir bitrimiz olacak. Bir de kaç rengi desteklediğini göstermek için bitleptimiz olacak.
+
+82
+00:19:19,372 --> 00:19:24,372
+Bu bilgileri alacağız. Peki bu bilgiler nerede?
+
+83
+00:19:24,372 --> 00:19:39,372
+Header'ın, derste de göstermiştim ben kendi durumda, Wikipedia'ya bakarsanız bir bmp filin 18. byte'ı oradaki height bilgisini veriyor.
+
+84
+00:19:39,635 --> 00:19:49,056
+22.si width'i veriyor, 28.si bit depth'i veriyor. Bunlar ezberlenecek şeyler değil. Yani bir dosya formatının data sheet'ine bakarsınız, bunu elde edersiniz.
+
+85
+00:19:49,056 --> 00:19:53,235
+height dediğim şey, ben şurada zaten bunu byte'ın içerisine almıştım.
+
+86
+00:19:53,235 --> 00:20:04,036
+byte'ın 18. karakterini okuyarak şey yapalım ama bu karakter unsight şeklinde. Şimdi ben bunu integer'a dönüştürmem gerekiyor.
+
+87
+00:20:04,276 --> 00:20:16,556
+Diyorum ki byte 18'in olduğu yerdeki adresteki değeri al. Bunu dönüştürmek için neye çevir? Integer pointer'a çevir. Çünkü orada bir değer gibi bir şey var.
+
+88
+00:20:16,556 --> 00:20:30,396
+Bu pointer'ı da integer değere çeviriyorum. Basit bir dönüşüm işlemi. Bu böyle. Şimdi aynısını width ve height, width dep içinde yapacağız. Şöyle alalım.
+
+89
+00:20:32,468 --> 00:20:55,367
+Bu 18'i 22 idi bu pardon. Şu da 28 olacak. Zaten yanlış bir şey yaptıysak şurada elde edeceğimiz görüntü böyle yamuk yumuk bir şey olur. Görürüz o zaman tekrar bir kontrol ederiz.
+
+90
+00:20:55,367 --> 00:20:59,947
+Hatta şunları bir ekrana yazdıralım ve dosyanın öz nitelikleriyle karşılaştıralım.
+
+91
+00:21:00,211 --> 00:21:27,612
+PrintFight diyelim %d, boşluk, with %d, boşluk, depth diyelim %d. Bunlar da sırasıyla ait, with, with depth. Şöyle bir backslash den koyalım.
+
+92
+00:21:29,556 --> 00:21:33,996
+Şimdi çalıştırıyorum, dosyalarımı kapatayım.
+
+93
+00:21:40,996 --> 00:21:46,715
+Bakın bu free etmekten hiçbir farkı olmayan bir şey. Sadece o dosyaya olan erişimin yolu farklı.
+
+94
+00:21:47,356 --> 00:21:50,556
+Aldığımız bir kaynağı sisteme geri iade ediyoruz.
+
+95
+00:21:51,056 --> 00:21:54,556
+Önce bir derleyelim. Buraya kadar bir hata var mı? Onu da bir görelim.
+
+96
+00:21:54,708 --> 00:21:59,208
+Hocam bir yerde yanlış yazdınız ama... Tamam, onu düzeltiriz. Mühim değil.
+
+97
+00:22:06,208 --> 00:22:13,488
+Zaten yanlışı bize idemiz söyleyecektir. Neredeymiş? Dittep demişiz. Şunu bittep yapalım.
+
+98
+00:22:17,395 --> 00:22:40,235
+Evet, çalıştırdığımızda 512'ye 512-24. Şimdi geliyorum arkadaşlar. İmajlar klasöründe. Bakın buraya bir tane bir şey açtı. O F-Write yaptık ya. Dosya var ama şu an içerisi boş. Bunu mesela okumaya çalıştığımda diyor ki bunun içerisi yok diyor. Mesela bunun içeriğine bakmaya çalışalım şöyle.
+
+99
+00:22:45,011 --> 00:23:10,351
+54 tane uzunlukta bir şeyler var. Demek ki oradan bir yere kopyalama yapılmış. Peki şu resmin özelliklerine ben gelsem. Detaylarında 512'ye 512'lik Dimension'ı ve Bit Depth'inin 24 olduğunu. Demek ki doğru şeyler okumuşsun. Bunu header'dan aldık. Artık neyi almamız gerekiyor arkadaşlar? İmajın datasını alacağız. Bu datasını aldıktan sonra elde edeceğimiz şey ne olacak?
+
+100
+00:23:10,768 --> 00:23:24,728
+Resmi bir matris de gösterip resmi değiştireceğiz. Peki, imajın datasını nereye alacağız? Bir sayı olacağı için bunu bir şuradaki pikseller türünde yazdığımız matrise kaydetmemiz gerekiyor.
+
+101
+00:23:24,728 --> 00:23:31,327
+O zaman ben şu piksel türünde bir matris oluşturuyorum. Bunu TypeTap ile tanımlamıştık.
+
+102
+00:23:32,915 --> 00:23:37,715
+Hatta şurada yukarıda tanımlayalım. Biraz daha yapısal programlama mantığına uygun olsun.
+
+103
+00:23:37,715 --> 00:23:50,596
+Pixel size'a size kadar bir şey açacağım. Önce mesela bir resmi alacağız. Bir de aynı resmi başka bir resim haline getirip değiştireceğiz.
+
+104
+00:23:50,596 --> 00:24:00,115
+Buna mesela Source diyelim. Bu size'a size kadar yer tutacak. Her bir pixel çünkü şey için.
+
+105
+00:24:00,160 --> 00:24:21,240
+Bir de Best Nation diyelim. Bu da size kadar yer açacak. Normalde bu bu şekilde olmaz arkadaşlar. Mallocklarla falan yer açarsınız. Niye? Artık şurada sizin width'iniz var, height'iniz var. Buna göre yer açarsınız. O şekilde olur. Mallock kullanmak gerekir. Ama biz burada hızlı iş yapalım diye üst seviyeden yer açtık.
+
+106
+00:24:21,587 --> 00:24:28,587
+İstersek bunu 550 falan da diyebiliriz. Daha az yer birlikte 512'sini kullanacağımızı biliyoruz.
+
+107
+00:24:28,587 --> 00:24:41,087
+Peki, burada peki imajın size'ını elde ettikten sonra ne yapmamız gerekiyor? Resmi şu Source dosyasını okumamız gerekiyor.
+
+108
+00:24:41,087 --> 00:24:42,587
+Peki okuyalım.
+
+109
+00:24:42,587 --> 00:24:47,531
+For i eşittir sıfırdan i küçüktür.
+
+110
+00:24:47,604 --> 00:25:06,184
+V'ye kadar i++ for g eşittir sıfırdan g küçük h'ye kadar g++. Normalde.
+
+111
+00:25:06,836 --> 00:25:22,276
+Burada karakter karakter okumak zorunda da değiliz. Örneğin tek seferde F-Reat ile 512 tane oku veya 512 çarpı 512 tane oku bir yere kaydet. F-Reat'ı kullanabilirsiniz ama ben en temelini gösteriyorum. Bunu F-Reat'a dönüştürmek çok zor değil.
+
+112
+00:25:34,579 --> 00:26:00,759
+Şimdi burada neyi okuyacağız? Red'e okuyacağız, Green'e okuyacağız, Blue'yu okuyacağız. Şimdi bu BMP dosyası bizim burada yazdığımız gibi R, G, B diye yani genelde söylenen şey geleneksel yaklaşım R, G ve B'dir bu sıradır. Ama BMP'yi öyle bir kodlamışlar ki önce B var, sonra G var, sonra R var. Dosyanın formatı öyle. O zaman ben önce B'yi okumam gerekiyor. Çünkü dosya, file descriptör bana sırayla okuyacak.
+
+113
+00:26:01,140 --> 00:26:05,339
+O zaman bir tane get karakter oku diyorum. Nereden oku? F input'tan oku.
+
+114
+00:26:07,019 --> 00:26:10,940
+Burada anlaşılmayan bir şey var mı? Niye hocam önce B'yi okuduk? Çünkü dosyanın formatı öyle.
+
+115
+00:26:11,619 --> 00:26:15,339
+Dosya nasıl okunur? Dosya nasıl yazıldıysa öyle okunur diyordum ben hatırlarsanız.
+
+116
+00:26:15,960 --> 00:26:23,539
+Onun için burada da önce B'yi okuyacağız, sonra G'yi okuyacağız, sonra R'yi okuyacağız ve gördüğümüz karakteri alıp buraya aktarıyoruz.
+
+117
+00:26:24,299 --> 00:26:25,039
+Blue Green Red.
+
+118
+00:26:25,652 --> 00:26:42,071
+Şimdi ondan sonra artık elimizde bu iş bittikten sonra elimizde ne var? Bütün bir data var. Ne yapalım? Resmi dönüştürelim. Resmi dönüştürmek ne demek? Source matrisinden alacağız. Destination matrisine 90 derece döndürmek istiyoruz.
+
+119
+00:26:52,276 --> 00:26:54,276
+Hızlıca orada yazalım.
+
+120
+00:26:56,276 --> 00:26:59,276
+Bir, iki, üç, dört.
+
+121
+00:27:00,276 --> 00:27:03,276
+Ne yapılabilir? Bunun transpozunu almak gibi düşünün.
+
+122
+00:27:03,276 --> 00:27:08,276
+Bir ile ikiyi şuraya, herhalde doğru. Üç ile dördü buraya.
+
+123
+00:27:08,660 --> 00:27:35,100
+Bu tabi şu şekilde bir 90 derece, şu yönde 90 derece veya tam tersi yapabilirsiniz. Mühim değil. İsterseniz resmi küçültün. 512'ye 512'li ne yaparsınız? Daha küçük bir boyutta saklarsınız. Ona göre yukarıdaki header'ı güncellersiniz. O da yapılabilir. Bizim yapacağımız basit bir uygulama. İstediğiniz operasyon burada yapılır. Çünkü artık harddiskdeki veriniz RAM içerisine gelmiş durumda şu satırlar bittikten sonra.
+
+124
+00:27:36,019 --> 00:27:59,719
+Tekrar bir döngü açacağım. Yeni bir resim olduğu için. Bu for döngüsü şu şekilde Width ve Height'a kadar çalışacak. Şurayı düzeltelim. Artık elimizde şey var. Mesela Destination'ın J inci satırını ben mesela sola doğru biraz önceki gördüğünüz şekilde yapmak istiyorum.
+
+125
+00:28:01,715 --> 00:28:18,195
+Eksi bir, eksi i diyorum. Yani şu şeyi sürekli azaltı azaltı, tersten azaltı azaltı gel. Bunun BGR'sine veya RGB'sine, burada nasıl sırayla yazdığım önemli değil.
+
+126
+00:28:18,195 --> 00:28:23,775
+Önemli değil. Çünkü burada dosya üzerine yazmıyorum. Matriz üzerinde değişik yapıyorum. Mesela bunu da değişik yapalım. Önce R diyelim.
+
+127
+00:28:24,895 --> 00:28:27,675
+Çünkü bunlar bir matriz üzerinde bir şey yapmaya gerekiyor.
+
+128
+00:28:30,996 --> 00:28:40,356
+İ'sinin, J'sinin, R'sini al buraya getir diyorum. Şöyle aldık.
+
+129
+00:28:44,596 --> 00:28:58,096
+Bu R ise bunu G yaptım. Bunu da G yaptım. Bu B ise bunu da B yaptım. Bunları karıştırmayacağız. Yani burada nasıl sıraysa, bu dosyanın kendi sırası, bu bizim matrişte. İstersek bunları yer değiştirelim. Hiçbir şey fark etmez.
+
+130
+00:28:58,396 --> 00:29:09,556
+Peki bu iş bittikten sonra, bu döngüler bittikten sonra ne oldu? Destination olarak yazacağım yeni dosyanın RAM üzerindeki dosyaları hazır. Artık ne yapmam gerekiyor?
+
+131
+00:29:10,099 --> 00:29:26,000
+Bunları şuradaki yaptığım işin paralelinde düşünün veya simetriyini düşünün. Burada olduğu gibi yeni dosyaya yazmam gerekiyor. Burada get c yapmıştım, orada put c yapacağım. Şunu da alıyorum. Bütün bir maddesi yazacağım için bir kere burada iki tane döngü olacak mecbur.
+
+132
+00:29:35,539 --> 00:30:03,059
+Yukarıdaki değişken biraz farklı olmuş. Onu düzeltelim. Height'dan width'e doğru. Çünkü transpolunu almış gibi düşünün arkadaşlar. Şurada height demişiz. Şurada yanlış bir şey mi yaptık? Şunu şöyle düzeltelim. Şurada da bir yanlışlık var. Height'dan width'e doğru. İşte i0'dan başladı. 0 küçüktür. Bir i küçüktür height. i++. i0'dan başladı. Bir de kadar.
+
+133
+00:30:03,471 --> 00:30:11,791
+Burada dosyaya yazıyorum. Dosyaya yazarken de bgr diye okuduysak bgr diye yazıyoruz. Tabi burada da karakter karakter edelim.
+
+134
+00:30:11,791 --> 00:30:30,791
+Put C, output, alttan tere, buffer, pardon output alttan tere değil ya. Nereden yazacağız? Bunun destination diye bir yerimiz var. Destination'ımız neydi? Bizim best matrisimizin.
+
+135
+00:30:31,508 --> 00:30:50,967
+İ'sini, J'sini alacağız. Yani sıfırıncı mat, sıfırıncı pikselimiz bu. İlk pikselimiz. Daha sonra sıfıra bir, sıfıra iki böyle gidiyor. Bunun B'sini alacağız. Ve bunu dosyaya yazacağız. Dosyamızın şeyde Foutu, Deskriptörü. Foutu yazıyoruz. Aynı şekilde.
+
+136
+00:30:57,011 --> 00:31:22,811
+Şunu aldım. B'yi aldık. Sonra G geliyordu. Sonra R geliyordu. Bakın dosya nasıl formatlandıysa ona göre edemem. Şimdi ben bunu bir deneyeyim. Şurada yazarken B, G ve R'nin sırasını değiştireceğim. Resimde ne olacak bir denemiş oluruz. Peki bu işler bittiğinde resmin bütün datasını yazmış oldum. Yazdıktan sonra dosyalarımı kapatıyorum. Şimdi gelelim şuraya. Image Processing altında.
+
+137
+00:31:23,412 --> 00:31:26,451
+Şu dosyayı silerim. Tekrardan çalıştırayım.
+
+138
+00:31:27,492 --> 00:31:28,892
+Compile edeyim.
+
+139
+00:31:30,652 --> 00:31:33,692
+Bir yerde noktalı virgül hatası deniyor.
+
+140
+00:31:34,612 --> 00:31:35,612
+Sources
+
+141
+00:31:37,692 --> 00:31:38,852
+Size Changes
+
+142
+00:31:38,852 --> 00:31:40,572
+Sources Declarated
+
+143
+00:31:44,819 --> 00:31:46,259
+Burada neye hata verdi ki?
+
+144
+00:31:47,480 --> 00:31:49,459
+O zaman TypeDef yazmadınız galiba.
+
+145
+00:31:49,980 --> 00:31:51,759
+Pardon, duyamadım.
+
+146
+00:31:53,000 --> 00:31:54,719
+TypeDef yazmadınız galiba.
+
+147
+00:31:56,199 --> 00:31:59,859
+Evet, şuraya TypeDef yazacağız. Teşekkür ederim.
+
+148
+00:32:00,579 --> 00:32:05,019
+Çünkü onu büyük, şurada yazdığım isimle yazmak istiyorsam TypeDef olması lazım.
+
+149
+00:32:05,079 --> 00:32:08,119
+Yoksa Strapcher Pixel diye şu şekilde tanımlama yapmam gerekirdi.
+
+150
+00:32:09,059 --> 00:32:09,919
+Şimdi çalıştıralım.
+
+151
+00:32:11,859 --> 00:32:25,420
+Böyle bir şey gördük ve hatasız çalıştığını gösterdi. Şuraya geliyorum. Bakın ne oldu? Rotate edilmiş. Özelliklerine bir bakalım önce. Detaylarından 512'ye 512 bu dosyayı elde etmiş oluyoruz.
+
+152
+00:32:25,420 --> 00:32:33,980
+Şöyle de gezinti yaparsak herhangi bir piksel kaybı olmadan ne yaptık? Bu yönde resmi dönüştürmüş olduk.
+
+153
+00:32:33,980 --> 00:32:38,700
+Şimdi şu bir dursun. Ben şunu Rotate 2 diyeyim.
+
+154
+00:32:39,476 --> 00:32:48,396
+Şimdi bu şekilde okuduk. B, G, R diye okuduk. Yazarken de R, G, B diye yazalım. Bakalım nasıl bir şey göreceğiz.
+
+155
+00:32:56,019 --> 00:33:17,240
+Bakın ne oldu? Kanallar değiştiği için göreceğimiz resim farklı. Sadece R kanalı gitti, Blue kanalı üzeri baskın haline geldi. Onun için datanın formatı neyse ona dikkat etmek gerekiyor.
+
+156
+00:33:17,240 --> 00:33:22,359
+Şimdi burada yapılabilecekleriniz, ben çok uzatmayacağım, birazdan kapatacağım arkadaşlar. Ne yapılabilir başka?
+
+157
+00:33:22,804 --> 00:33:28,444
+Ben burada tek tek Get-C ile okuduğum şeyi, bunu bir kere F-Read ile tek seferde okuyabilirim.
+
+158
+00:33:28,444 --> 00:33:37,404
+Ne yapacağım? Yine şu byte dizimin içerisinde tek seferde 54 tane aynı şunun F-Read yazılmış halini okuyabilirsiniz. Dolayısıyla burada döngü çevirmeye gerek yok.
+
+159
+00:33:37,404 --> 00:33:47,244
+Veya şurada BGR formatını, şunu şu şekilde tanımlayıp, RGB değil bunu da BGR diye tanımlayıp,
+
+160
+00:33:47,279 --> 00:33:52,019
+Blog okuma yapabilirsiniz. Tek tek okumaya gerek kalmaz. Bunu da denemenizi tavsiye ederim.
+
+161
+00:33:57,203 --> 00:34:09,063
+Bunlar şey. Şimdi bir örnek daha göstereyim. Bunun kodunu hızlıca göstereyim. Mantığı aynı. Ondan sonrası zaten hani... Bir saniye şurada. Neredeydi o dosya?
+
+162
+00:34:16,500 --> 00:34:20,079
+İmajı griye çevirmek isteyebiliriz.
+
+163
+00:34:23,923 --> 00:34:27,523
+Şöyle hatta kodu alayım.
+
+164
+00:34:33,523 --> 00:34:45,923
+Yani bir color'ım var, gri yapacağım. Gri yapmak demek, üç kanaldan bir kanala indirmek demektir. Onun için gri'ye çevirecek bir formüle ihtiyacım. Bu formül görüntü işlemede şöyle.
+
+165
+00:34:46,164 --> 00:34:56,844
+Herhangi bir pikselin red kısmının %30'u, green kısmının %59'u, blue kısmının %11'i alınarak, sayısal değer alınarak, bunlar return ediliyor.
+
+166
+00:34:57,444 --> 00:35:00,804
+Ve bu değer tek bir 3 piksel 1 piksele indirmiş oluyor.
+
+167
+00:35:01,444 --> 00:35:05,224
+Şimdi şurada dosyaya açılıyor yine. Daha sonra yazılacak dosya açılıyor.
+
+168
+00:35:05,304 --> 00:35:11,463
+İşte yine aynı mantıkla header'ı okuyoruz. F-write diyoruz. Yükseklik, genişlik değerleri var.
+
+169
+00:35:14,099 --> 00:35:23,319
+Bu dosyanın içerisindeki bütün şeyleri yani yeni piksel değerini RGB to grey'e gönderiyorum. Bu elde ettiğim değeri bakın yenisinde üçüne de yazıyorum.
+
+170
+00:35:23,319 --> 00:35:32,279
+tmp, tmp, tmp dedim. Üçü de aynı değer oldu. Yine üç tane değer yazmak zorundayız. Bunların aslında BGR formatında yazılmış oldu. Daha sonra dosyayı kapatıyoruz.
+
+171
+00:35:32,279 --> 00:35:34,319
+Şimdi bunu da bir değerleyelim.
+
+172
+00:35:40,980 --> 00:35:55,380
+Source File. Şuraya kaydedelim. Compile veren diyelim. Bakın ne kadar sürdüğünü burada hesabında yapmışız. Yani geçen seneki uygulamadan kalma bir örnek bu.
+
+173
+00:35:55,380 --> 00:35:59,780
+Alalım. Şuraya geri geliyorum.
+
+174
+00:35:59,780 --> 00:36:03,780
+Image.
+
+175
+00:36:03,780 --> 00:36:07,579
+Lena Gray. Sadece bunun...
+
+176
+00:36:08,148 --> 00:36:25,548
+İşte boyutuna bakarsak, şöyle boyutun nereden 768 KB, bakın bu da 768 KB ama piksel sayısal değerleri şey. Bunu normalde üç tane yazmaya gerek kalmadan da yapabiliriz ama o BMP'nin formatına aykırı olduğu için yapılamıyor. Aynı değeri BMP formatında üç defa yazmanız gerekiyor.
+
+177
+00:36:34,559 --> 00:36:59,059
+Kodun içerisindeki şu mantristdeki dataları alıp o dosyaya daha küçük boyutta yazabilirsiniz. Zaten Paint gibi uygulamaların yaptığı şey de, ben bir dosyam var, o dosyanın formatını değiştirmek istediğinde, File Save S diyorsunuz, farklı kaydet diyorsunuz. Farklı kaydettiğinizde herhangi bir bmp dosyasını png veya tif sıkıştırılmış dosya haline getirebiliyorsunuz. Burada yapılan şey de, bu uygulamaların yaptığı şey de arka planda budur.
+
+178
+00:36:59,376 --> 00:37:19,376
+Veya bir görüntü üzerinde filtreleme yapacaksınız. Önce dosyayı okursunuz. Bu filtreme ile alakalı belki biz bir örnek, yani yarın kendim grubumda yapabilirim. Diğer gruptan arkadaşlar da daha sonra o örneğe bakabilirim. Artık ne algoritma yapılacaksa, isterseniz imajı büyütün, imajı küçültün, neyse. Ben burada...
+
+179
+00:37:19,795 --> 00:37:42,155
+Kapatayım. Hocam size yetkiyi devredeyim. Çıkmadan önce şunu diyeceğim. Herkes kendi ismiyle katılsın arkadaşlar. Herhangi bir nickname olmasın. Dersin herhangi bir saatinde söylenecek bir duyuru yapılacak. Bu da zamansız olacak. Ve o yarım dakikalık veya bir dakikalık zaman içerisinde ders yoklama şeyine numaranızı yazmanız gerekecek.
+
+180
+00:37:43,155 --> 00:37:45,435
+Hocam ben sizi bulamadım.
+
+181
+00:37:46,643 --> 00:38:03,703
+Şu an sizi host olarak atadım. Söz sizde hocam, buyurun. Bununla alakalı sorunuz var mıydı bana? Herhalde açıktır her şey. Bu örnekleri de ayrıca paylaşırız. Ben bu ki hocam size göndereyim. Toplu olarak arkadaşlara paylaşabilirsiniz.
+
+182
+00:38:04,283 --> 00:38:05,663
+Hocam bir şey sorabilir miyim size?
+
+183
+00:38:06,063 --> 00:38:06,423
+Buyurun.
+
+184
+00:38:06,683 --> 00:38:07,823
+Zamanınız varsa bir dakika.
+
+185
+00:38:08,371 --> 00:38:15,731
+Hocam, projeyle ilgili mesela benim kodumda bir yanlışlık falan olursa ben o soruyu forum üzerinden mi yine sormam gerekiyor?
+
+186
+00:38:16,411 --> 00:38:28,351
+Kod ile alakalı, şahsi kodla alakalı bir şeyse asistan oyuncularımıza, laboratuvar asistanınız kimse ona sorabilirsiniz. Ben okuldaysam bana da sorabilirsiniz. Benim grubumda olanlar veya diğer grupta olanlar da gelebilirler.
+
+187
+00:38:28,980 --> 00:38:40,000
+Eee mail ile soru, şahsi soru kabul etmiyorum ama sorunuz özellikle kendi kodunuzla. Hocam şu kodda şöyle bir hata alıyorum. Yani yanlış bir şey alıyorum. Ama genel bir soruysa o egzere yazmanız lazım.
+
+188
+00:38:40,724 --> 00:38:42,624
+Tamam. Hocam randevu ayrınız.
+
+189
+00:38:42,624 --> 00:39:01,503
+Bir de yarınki dersimi [kişisel bilgi] Onu da bilgisini vereyim. Diğer grup nasıl yapar bilmiyorum da benim sınıfım başka bir şeyde kullanılacağı için mecburen biz online yapacağız. [kişisel bilgi] Onun için yarın saat 9'da online derste görüşmek üzere.
+
+190
+00:39:02,068 --> 00:39:05,728
+Geçmiş olsun hocam. Hocam randevu almamız gerekiyor mu size soru sormak için?
+
+191
+00:39:05,847 --> 00:39:09,488
+Evet, her şekilde. O genel bir soru. Her zaman randevu bekliyorum.
+
+192
+00:39:09,967 --> 00:39:10,868
+Tamam hocam, teşekkür ederim.
+
+193
+00:39:14,260 --> 00:39:16,380
+Ben ekranımı paylaşıyorum o zaman.
+
+194
+00:39:16,400 --> 00:39:18,420
+Tabii hocam, ben paylaşımı kapatayım.
+
+195
+00:39:18,420 --> 00:39:19,699
+Tamam.
+
+196
+00:39:23,764 --> 00:39:50,044
+Bir de şu duyuruyu da yapalım. Aklıma geldi. Geçen laboratuvarda bu dersle beraber istatistisel veri analizmine öyle bir ders varmış. O dersle çakışma oluyormuş. Şimdi dördüncü laboratuvarda çakışma olduysa, beşinci laboratuvarda daha erken gireceği için bu arkadaşlar çakışma olmayacaktır. Ama geçen hafta erken girenler bu hafta yine o dersi alıyorsa bu hafta çakışma olabilir.
+
+197
+00:39:50,996 --> 00:40:09,615
+Özetle, istatistiksel veri analizini alan arkadaşlar gelecek haftaki laboratuvarda saat 12'de laboratuvara girebilirler. Bütün gruplar. İster A, B, C, D, D, D, 1. saatte olsun ister 2. saatte olsun sadece ilgili asistan hocanıza bilgi verin.
+
+198
+00:40:09,615 --> 00:40:16,556
+Ve mümkünse kendi bilgisayarınızla gelin. Laboratuvarda yer sıkışıklı olmasın. Bu duyuru da yapmış olalım. O derse de geç kalmamış olursunuz.
+
+199
+00:40:17,523 --> 00:40:22,344
+Hepinize iyi günler arkadaşlar. Ben mikrofonumu kapatıyorum. Kolaylıkla ödüyorum hocam.
+
+200
+00:40:34,099 --> 00:40:38,199
+Hocam sesim geliyor mu? Galiba internetten dolayı bir sıkıntı oldu.
+
+201
+00:40:38,640 --> 00:40:39,440
+Ben duydum ama.
+
+202
+00:40:40,140 --> 00:40:41,199
+Sesiniz geliyor hocam.
+
+203
+00:40:41,859 --> 00:40:42,920
+Tamam tekrar.
+
+204
+00:40:42,920 --> 00:40:44,400
+Siz ekranınızı paylaşırsanız.
+
+205
+00:40:44,851 --> 00:40:49,391
+Tamam, paylaşıyorum tekrardan. Şimdi ekranı görüyor musunuz?
+
+206
+00:40:49,631 --> 00:40:50,391
+Evet, şu an geldik.
+
+207
+00:40:51,171 --> 00:40:55,351
+Tamam. Başlıyorum hocam o zaman eğer bir soru yoksa.
+
+208
+00:40:55,451 --> 00:40:57,551
+Başka bir şey yok, başlayabilirsiniz. Kolay gelsin hocam.
+
+209
+00:40:57,811 --> 00:41:02,551
+Tamam, teşekkürler. Şimdi ilk olarak uygulamada ne yapacağız onu söylüyorum.
+
+210
+00:41:02,551 --> 00:41:11,992
+Şimdi içerisinde ID bilgisi, name, departman bilgilerini içeren bir dataset txt dosyasını okuyacağız.
+
+211
+00:41:12,851 --> 00:41:34,831
+ID'lerine göre bunları büyükten küçüğe, küçükten büyüğe sıralayacağız. Bunları iki farklı TXT dosyasına yazacağız. Yani bu fonksiyonları yaparak bir program yazacağız. Şöyle TXT dosyamı da bir göstereyim. Görüyor musunuz şu an TXT dosyasını da?
+
+212
+00:41:35,891 --> 00:42:00,851
+Böyle içerisinde karışık olarak idleri verilmiş, isimleri verilmiş, işte departmanları verilmiş bir veri var. Bunlar virgülle ayrılmış. Bunu okuyacağız ve burada id'ye göre sıralayacağız. Büyükten küçüğe, küçükten büyüğe ve bunları da iki farklı txt dosyasına yazacağız.
+
+213
+00:42:01,311 --> 00:42:24,572
+Bu aşağıdakiler bizim yazacağımız fonksiyon isimleri. Şimdi önce file read ile txt dosyamızı okuyacağız. Split data ile de bu dosyadaki bilgileri virgülle ayrılmıştı ya, id, name ve departman olarak virgülle ayrılan bilgileri bunları ayıran fonksiyonu yazacağız.
+
+214
+00:42:29,311 --> 00:42:32,431
+Bu fonksiyonla da listemizi yazdıracağız.
+
+215
+00:42:33,300 --> 00:42:58,400
+Sort Data ile, burada Selection Sort ile sıralama yapacağız. Bu sıralamayı yapan fonksiyon, Sort Data fonksiyonu. Sonra Sort Ascending ile sıralamayı küçükten büyüğü olarak yapacağız. Yani ID'ye göre bu şekilde sıralayacağız. Diğeri de büyükten küçüğe sıralama yapıyor.
+
+216
+00:43:01,300 --> 00:43:16,039
+F puts ile dosyamızı yazdırıyoruz. Bir de ekstradan göstermek için F printf ile dosya göstermek için de file write printf fonksiyonunu oluşturacağız.
+
+217
+00:43:16,039 --> 00:43:18,360
+Şimdi koda geçelim.
+
+218
+00:43:21,972 --> 00:43:36,432
+Ne demiştik? İçerisinde bu ID bilgisi, name ve departman değişkenlerin olduğu linkli listemizin node yapısını tanımlayalım ilk başta. Bunları bir hızlı hızlı yazayım ben.
+
+219
+00:43:36,432 --> 00:43:46,212
+Ne kadar hızlı olursa. Bu arada yanlış yazarsam eğer, fark ederseniz söyleyin. Sonrasında bulmak zor olabiliyor.
+
+220
+00:44:01,811 --> 00:44:07,271
+Departmanı da yazalım. Şöyle bunu küçük yazmışım.
+
+221
+00:44:15,251 --> 00:44:16,091
+Yeni neks.
+
+222
+00:44:34,835 --> 00:45:02,835
+Şimdi burada yani şurada mesela her düğümde en fazla 50 karakter uzunluğunda bir name stringi diye ben kendim yazdım. Departman içinde 20 karakter uzunluğunda olsun en fazla diye stringi tuttuk. Burada next isimli bir pointer. Her düğümün bir sonraki düğüme bağlanmasını istiyoruz. Bu sebepten yani bir link listede de yani bir link.
+
+223
+00:45:02,835 --> 00:45:20,675
+Bu bir printlist tuttuğumuz için bir sonraki nodu gösteren bir next pointer'ı burada da tamladık. Bunları zaten önceki derslerinizde görmüştünüz. Tekrar hatırlattım ben sizi. Şimdi main'de head'i tamlayalım.
+
+224
+00:45:28,947 --> 00:45:50,748
+Bunu tanımladık çünkü bu listenin head'ini kaybetmek istemiyoruz. Burada bir takım head ile işler yapacağız. Yani sonrasında işlemler yapacağız. İşte search gibi. Bunu da bu sebepten main'de tuttuk. Şimdi file read yapalım. Dosya okumayı yapalım.
+
+225
+00:46:08,403 --> 00:46:14,003
+Bir şey yazayım size açıklayacağım. Çünkü yazarken aynı anda karışıyor. Yanlış yazıyorum.
+
+226
+00:46:23,411 --> 00:46:29,971
+Şimdi data türünde pointer döndüren bir file read isimli fonksiyon.
+
+227
+00:46:29,971 --> 00:46:41,671
+Çar tipinde bir file name ve delimitör parametreleri olacak bu file read fonksiyonunda.
+
+228
+00:46:43,967 --> 00:46:59,927
+Delimiter kullanıyoruz. Çünkü bizim txt dosyamız virgülle ayrıldığı için biz bunun sonrasında Split Data fonksiyonunda orada kullanacağız. Bu sebepten delimiter kullanıyoruz.
+
+229
+00:47:06,291 --> 00:47:10,291
+Şimdi Şeye gelelim.
+
+230
+00:47:10,291 --> 00:47:11,692
+Sail.
+
+231
+00:47:21,907 --> 00:47:23,692
+Dostum, za açalım.
+
+232
+00:47:34,324 --> 00:47:36,012
+Rehim Odunda.
+
+233
+00:47:39,219 --> 00:47:45,219
+Burada file tipinde bir fonksiyon pointerı değişkeni tanımladık.
+
+234
+00:47:46,516 --> 00:47:57,076
+Fopen ile dosya açma işlemi yapıyoruz. Bunları tek tek söylemek istiyorum size. Bilmiyorum, derste zaten hocanız söylemiştir ama hatırlatmak istiyorum.
+
+235
+00:47:57,856 --> 00:48:09,096
+Fainem'de Fopen yaparken ben dosyayı hangi isimle açmak istiyorsam adını buraya bu şekilde yazdım. Yani bunun main'de adını yazacağız bunu.
+
+236
+00:48:10,356 --> 00:48:33,056
+Sonra dosyayı hangi modda açıyorsam onu söylüyorum. R var olan dosyayı okumak için kullanılır. O sebeple onu seçtik. Bizim TXT dosyamız vardı ya, o sebepten yani R'yi seçtik.
+
+237
+00:48:47,891 --> 00:48:52,491
+Bofur Karakter dizimizi tanımladık ve şunları bir yazayım.
+
+238
+00:49:00,275 --> 00:49:04,375
+Burada malloklu hafızada yer açacağım.
+
+239
+00:49:14,260 --> 00:49:16,340
+Hocam, puntayı biraz arttırabilir misiniz?
+
+240
+00:49:16,900 --> 00:49:19,920
+Tamam. Böyle iyi mi?
+
+241
+00:49:22,740 --> 00:49:23,500
+Evet hocam.
+
+242
+00:49:24,240 --> 00:49:24,559
+Tamam.
+
+243
+00:49:26,740 --> 00:49:35,100
+Bu arada, yani çete yazarsanız göremeyebilirim yazarken. Yani böyle sesli söylemeniz daha iyi oluyor bazı şeyleri.
+
+244
+00:49:42,036 --> 00:49:45,536
+Oluşturuyorum. Bir tane de Prev Data.
+
+245
+00:49:51,731 --> 00:49:57,072
+Bu şimdiki nodla önceki nodu tutan değişkenler bu nodla.
+
+246
+00:49:57,072 --> 00:50:01,012
+Şimdi gelelim.
+
+247
+00:50:05,460 --> 00:50:07,460
+İlk koşulluğu zaman.
+
+248
+00:50:18,579 --> 00:50:20,759
+Bunları şimdi anlatacağım size.
+
+249
+00:50:35,956 --> 00:50:37,956
+İçerisinde de.
+
+250
+00:50:52,083 --> 00:50:54,083
+Bu fırın herhalde.
+
+251
+00:50:58,739 --> 00:51:05,163
+Şimdi burada F-Gates ile Buffer kadar...
+
+252
+00:51:05,364 --> 00:51:23,884
+255 satırlık dosya okuyoruz. Null dememizin sebebi eğer null ise dizi bitmiş oluyor. Yani burada 255 satırlık bir eleman okuyoruz ve null'dan farklıysa ifin içine girsin istiyoruz.
+
+253
+00:51:23,884 --> 00:51:32,244
+Burada da printf ile de buffer yazdırıyor. Şimdi burada veriyi ayırmamız lazım.
+
+254
+00:51:33,364 --> 00:51:40,684
+Fonksiyonumuz neydi? Data Split. Onu burada çağıracağız ama çağırmadan önce şurada oluşturalım onu.
+
+255
+00:52:17,876 --> 00:52:26,596
+Fonksiyonumuzu ve parametrelerimizi yazdık. Şimdi burada bir token değişkeni tanımlayacağız pointer'ı.
+
+256
+00:52:33,811 --> 00:52:36,991
+Burada Token.
+
+257
+00:52:50,260 --> 00:52:55,260
+Burada STR token'ın ne yaptığını bilen var mı arkadaşlar?
+
+258
+00:53:00,788 --> 00:53:06,867
+Şimdi burası, ilk virgülden önceki kısmı döndürüyor.
+
+259
+00:53:06,867 --> 00:53:07,508
+Şurası.
+
+260
+00:53:08,508 --> 00:53:13,367
+STR token'da böyle bir fonksiyon var.
+
+261
+00:53:13,608 --> 00:53:15,327
+Kütüphanesini şimdi ekleyeceğim.
+
+262
+00:53:16,488 --> 00:53:19,948
+Virgülle ayrılmış dizimizi bölmemizi sağlıyor.
+
+263
+00:53:21,108 --> 00:53:23,168
+Şuraya kütüphaneyi de ekleyeyim.
+
+264
+00:53:23,807 --> 00:53:24,508
+Unutmadan.
+
+265
+00:53:35,380 --> 00:53:38,859
+String.h yazamamışım.
+
+266
+00:53:39,699 --> 00:53:41,139
+String.h.
+
+267
+00:53:42,139 --> 00:53:45,279
+Evet, burada kalmıştık.
+
+268
+00:53:47,199 --> 00:53:52,679
+Ve şuradaki buffer 255'ti arkadaşlar.
+
+269
+00:53:52,679 --> 00:53:55,739
+Benim bölmek istediğim String dizisi.
+
+270
+00:53:56,319 --> 00:53:58,759
+Yukarıda onu şey yapmıştım.
+
+271
+00:54:00,460 --> 00:54:01,359
+Devam ediyorum.
+
+272
+00:54:08,596 --> 00:54:15,315
+Şimdi Aydey'i çevirelim ato ile.
+
+273
+00:54:29,139 --> 00:54:39,139
+Burada da virgülden önceki kısım id olduğu için bunu atoy ile stringden integer'a çeviriyoruz.
+
+274
+00:54:39,139 --> 00:54:43,947
+Çünkü benim idim integer'dı. Atoy'nin işlevi bu.
+
+275
+00:54:57,748 --> 00:55:02,748
+Şimdi sebebini söyleyeceğim.
+
+276
+00:55:07,668 --> 00:55:35,668
+Yani bu sefer şurayı görüyorsanız eğer burada buffer yapmıştık, burada da null yapıyorum. Çünkü null ile çağırınca buff'taki sintrikingi okumaya devam ediyor. Eğer biz null yerine buff yapsaydık burada da şurada olduğu gibi, o zaman her seferinde ilkini okuyor olacaktı. Yani bu sebepten bundan sonrakiler...
+
+277
+00:55:35,668 --> 00:55:43,608
+Yani name için ve işte departman için de biz null olarak yapıyoruz burayı.
+
+278
+00:55:43,608 --> 00:55:51,988
+Evet. Şimdi bir yazıp daha iyi anlatacağım. Bir dakika. Şuraya yazayım.
+
+279
+00:56:10,579 --> 00:56:11,079
+Tocam.
+
+280
+00:56:17,715 --> 00:56:33,715
+Ve bir yazayım. Aslında şunu direkt kopyalasam olur bence. Şöyle yapayım. Ve burayı Department yapayım.
+
+281
+00:56:35,347 --> 00:56:45,427
+Ama burada departman en sonda olduğu için benim buraya şey yapmam lazım. Token-1 yapmam lazım.
+
+282
+00:57:00,596 --> 00:57:01,336
+En şükür.
+
+283
+00:57:19,476 --> 00:57:30,576
+Burada bir tane STL token yaptık. Bu name oluyor. Şurası. Sonra STL copy ile name'i kopyaladık.
+
+284
+00:57:32,960 --> 00:58:00,019
+Burada STRE Copy yer açmaz arkadaşlar. Strak yapımızın içinde eğer biz neymi, departmanı bunları eğer pointer olarak tanımlasaydık, bizim bu STRE Copy'den önce neymi ve departmana yer açmamız. Sonrasında bu STRE Copy yapmamız gerekiyordu. Ama biz statik olarak yaptığımız için şu an buna gerek yok.
+
+285
+00:58:00,436 --> 00:58:12,496
+Bunu da ek bilgi olarak size vereyim. Burada bir tane de işte yine STR token okuduk. Bu da departman ismi.
+
+286
+00:58:14,068 --> 00:58:30,008
+Departman sonda olduğu için okurken sonda ters slaş end oluyor. Text dosyamızın içinde de ters slaş end oluyor. Onun için bunu da okuyor. Bu sebepten biz bunu ekledik.
+
+287
+00:58:30,008 --> 00:58:38,947
+Yani bu ters slaş sıfırı gösteriyor. Yani string'i sonlandırmış oluyoruz.
+
+288
+00:58:40,019 --> 00:59:02,579
+Şimdi şeye devam edelim read fonksiyonumuza. Burada split'i çağıracağız. Şu split data da anladınız mı? Burada mesela ne yaptık? Virgülle ayırdık yani. ID'yi, NEM'yi ve departmanı bu şekilde ayırdık. Şimdi burada da bunu çağıracağız.
+
+289
+00:59:07,123 --> 00:59:08,123
+Data.
+
+290
+00:59:17,331 --> 00:59:18,955
+Denemizler.
+
+291
+00:59:23,284 --> 00:59:32,684
+Burada Split Data'ı çağırdık. Sonra buna Else dedik. Eğer değilse yani Return null dönecek burada.
+
+292
+00:59:47,860 --> 00:59:50,099
+Şimdi şeye gelelim.
+
+293
+00:59:53,299 --> 00:59:54,500
+Prev Data'ya.
+
+294
+00:59:55,639 --> 00:59:58,199
+Prev Data'ya head'i koyalım.
+
+295
+01:00:06,963 --> 01:00:08,683
+Okumaya başlıyoruz.
+
+296
+01:00:09,543 --> 01:00:10,563
+While ile
+
+297
+01:00:10,563 --> 01:00:13,643
+F gets
+
+298
+01:00:18,771 --> 01:00:20,203
+Bafet.
+
+299
+01:00:23,315 --> 01:00:31,315
+Şunun aynısı diyebiliriz aslında. Şurayı tekrardan şöyle alsayım.
+
+300
+01:00:43,699 --> 01:00:47,739
+Şimdi buffer'ı yazdıralım.
+
+301
+01:01:01,204 --> 01:01:09,364
+Her okuma işlemini de yine yazdırıyoruz. Şimdi current data'ya gelelim.
+
+302
+01:01:13,396 --> 01:01:21,476
+Burada current data için yine mallokta bir yer açacağız. Yine bir yer.
+
+303
+01:01:30,996 --> 01:01:33,556
+Bunu da şuradan alsam olur aslında.
+
+304
+01:01:45,876 --> 01:01:49,436
+Şimdi burayı bir yazayım size söyleyeceğim.
+
+305
+01:01:55,347 --> 01:01:56,347
+Yeni bir.
+
+306
+01:02:09,460 --> 01:02:11,140
+Görünük Denta.
+
+307
+01:02:15,155 --> 01:02:23,335
+Burada yeni yer açmıştık. Burada da yeni yeri Prev Data'ya koyduk.
+
+308
+01:02:29,076 --> 01:02:35,996
+Şimdi tekrar Split Data ile okuduğumuz stringi ayırıp bunu Current Data'ya koyacağız.
+
+309
+01:02:41,396 --> 01:02:43,696
+İzledik alsam, şu örneğe.
+
+310
+01:03:01,235 --> 01:03:08,835
+Burada Split Data ile okuduğumuz String'e ayırdık ve bunu Current Data'ya koyduk.
+
+311
+01:03:10,835 --> 01:03:19,715
+Şimdi, Priv Data'yı da, Current Data'yı da Priv Data'ya yapacağız, ekleyeceğiz.
+
+312
+01:03:26,547 --> 01:03:30,387
+Çok uzun bir kot olduğu için çok uzun sürüyor.
+
+313
+01:03:35,347 --> 01:03:46,488
+PrevData'ya, CurrentData'ya deyip burada ilerliyoruz. Şimdi hepsini yazınca bence daha iyi oturacak.
+
+314
+01:04:07,860 --> 01:04:23,199
+Çıkarken buna Null diyoruz ki gezerken sonu belli olsun arkadaşlar. Sonra burada F-Close ile şeyimizi kapatıyoruz. Şimdi burada okuduğumuz için tekrar bu dosyayı kapatmamız gerekiyor.
+
+315
+01:04:38,643 --> 01:04:40,643
+Bu şekilde oldu.
+
+316
+01:04:42,643 --> 01:04:46,643
+Şimdi bu mayinde bir çalıştıralım bu okuma işlemini.
+
+317
+01:04:59,764 --> 01:05:01,984
+Şimdi bu fonksiyonu çağırıyorum.
+
+318
+01:05:15,188 --> 01:05:16,947
+Bu benim dosyamın ismi.
+
+319
+01:05:32,467 --> 01:05:38,767
+Bu kodu çalıştıralım ve txt dosyasını okuyabilmiş miyiz? Ona bakalım.
+
+320
+01:05:47,123 --> 01:05:49,123
+Sadece bir tanesini okudum.
+
+321
+01:05:51,123 --> 01:05:54,667
+Bakalım burada ne hata yaptık.
+
+322
+01:06:06,771 --> 01:06:08,971
+Split Deto'da yaptık büyük ihtimalle.
+
+323
+01:06:41,907 --> 01:06:48,107
+Tekrar bir kontrol edeyim arkadaşlar. Siz de eğer sebebini biliyorsanız şey yapabilirsiniz.
+
+324
+01:07:14,068 --> 01:07:19,908
+Hocam, main içerisinde ters, sıfır dedik ya, orası virgül olması gerekmiyor mu?
+
+325
+01:07:21,468 --> 01:07:27,368
+Bakayım. Evet, şurada virgül olacak. Onu unutmuşum.
+
+326
+01:07:29,548 --> 01:07:31,988
+Şimdi oldu. Şükür ederim.
+
+327
+01:07:33,523 --> 01:07:42,703
+Hızlı yazarken orayı unutmuşum. Burada tekrar çalıştırayım. Bakın, şimdi bizim txt dosyamız şuradaydı.
+
+328
+01:07:43,251 --> 01:08:01,692
+Normal buradaki şekilde yazdı. Şimdi biz ne yapacağız? Burada idleri karışık. Biz bunları sıralayacağız. Büyükten küçüğe ve küçükten büyüğe olarak sıralayacağız. Sonra bunları iki ayrı formatta yazdıracağız. İki ayrı dosyaya.
+
+329
+01:08:10,068 --> 01:08:23,728
+Linkli listeyi bir yazdıralım şey olarak. Şimdi mesela ID'nin altında şunlar olsun, neyimler şunlar, departman şunlar şeklinde bir print list ile bir yazdıralım.
+
+330
+01:08:25,208 --> 01:08:28,548
+Şöyle onu da burada yapayım print list fonksiyonunda.
+
+331
+01:08:45,908 --> 01:08:46,828
+Evet.
+
+332
+01:09:06,707 --> 01:09:11,692
+Eşit değilse eşit ona kadar.
+
+333
+01:09:18,707 --> 01:09:26,307
+Pirinç hafıları hazırlayacağız. Şunu direkt şuradan alayım.
+
+334
+01:09:35,828 --> 01:09:51,068
+Şimdi printf ile id'yi %d olarak, name'i, string ve departman'ı bu şekilde yazdık printf ile. Şimdi bunu main'inde çağıracağım.
+
+335
+01:09:51,068 --> 01:10:01,128
+Yani burada link listeyi yazdırma fonksiyonu yazmış olduk. Geliyorum. Bunu printlist.
+
+336
+01:10:10,931 --> 01:10:11,431
+Evet.
+
+337
+01:10:17,011 --> 01:10:31,152
+Şimdi bakalım. Evet, burada şimdi strak yapısı olarak bu sefer yazdırmış oldu. Yani IDC şu, name şu, departman şu olarak bu şekilde yazdırdı. Bunu da gördük.
+
+338
+01:10:33,152 --> 01:10:41,971
+Şimdi sort data yapalım. Yani bu listelediğimiz veriyi ID'ye göre sıralayalım.
+
+339
+01:10:42,804 --> 01:10:46,804
+Bunun için SortData fonksiyonunu yazalım.
+
+340
+01:10:48,804 --> 01:10:51,500
+Bunu da şurada bir yerde yazayım.
+
+341
+01:11:22,068 --> 01:11:24,068
+Fonksiyon pointer'ı kullanıyoruz.
+
+342
+01:11:33,811 --> 01:11:39,371
+Burada iki tane sayı alacağımı söylüyoruz.
+
+343
+01:11:46,036 --> 01:12:01,775
+Burada yani bu sort condition bizim fonksiyon pointerımız. Link listeyi yani şurada verilen fonksiyona göre o sırada sırala. Hani bu şekilde işte. Şimdi içeriğine girelim.
+
+344
+01:12:09,171 --> 01:12:21,871
+Burada head null mu değil mi diye ona bakıyoruz. İşte ona göre link list boş mu değil mi diye. Şimdi onu şöyle çok uzun oluyor. Şöyle direkt şurayı alayım.
+
+345
+01:12:35,636 --> 01:12:57,695
+Yani burada head null ise link listimiz bizim boş oluyor. Head dönüyor ve döngüden çıkılıyor. Link list boşsa bir şey yapmıyor. Şimdi devam edelim. Eğer boş değilse maxımız. Şimdi burada biz max'ı buluyoruz.
+
+346
+01:12:58,931 --> 01:13:20,431
+Ha şunu söyleyeyim size arkadaşlar. Selection Sort yapacağız burada. Yani bizim nodlarımızın içindeki ID değerlerine bakılacak. Bu ID değerlerinden mesela ilk başta hangisinin, şurada hatta şeyde de gösterebilirim onu.
+
+347
+01:13:21,524 --> 01:13:49,524
+Mesela bu bizim link listimiz olsun. Bunun içindeki ID değerlerimiz 3, 6, 4, 2. Bu şekilde olsun. Şimdi burada Selection Sort'ta, belki hatırlıyorsunuzdur nasıl yapıyor. İlk başta maksimum olanı buluyor. Yani bütün diziyi gezip maksimum olanı buluyor. Ve mesela 6 maksimum olan. Bunu çıkartıyor, başa yazıyor. Geriye kalan...
+
+348
+01:13:49,524 --> 01:14:15,104
+3, 4, 2. Bu üçünün arasında da tekrar ikinci max'ı buluyor bu sefer. Onu da ikinci noda yazıyor. Tek tek sırayla bütün nodları bu şekilde max'larını bularak bu şekilde sıralıyor yani. Ama her seferinde bulduğu max'ı o şeyden çıkartıp geri kalanlar içinde arama yapıyor. Biz de şimdi burada onu yapacağız aslında.
+
+349
+01:14:16,724 --> 01:14:19,084
+Şunu bir yazayım.
+
+350
+01:14:27,155 --> 01:14:28,536
+ID olacak.
+
+351
+01:14:32,148 --> 01:14:39,747
+İlk başta Max'ı, Head'in ID'si yapıyoruz.
+
+352
+01:14:39,747 --> 01:14:48,043
+ID'ye göre sıralama yapacağımız için Max eleman, Head'in ID'sindeymiş diyoruz burada.
+
+353
+01:14:51,252 --> 01:14:55,932
+Burada kullanacağımız değişkenleri tanımlıyorum.
+
+354
+01:15:01,684 --> 01:15:03,564
+Ve yine de böyle olayım.
+
+355
+01:15:14,163 --> 01:15:25,163
+Burada linki remove etmek için bu değişkenleri kullanıyoruz. Yani Prev'de baktığımız elemanın önceki elemanı var.
+
+356
+01:15:25,296 --> 01:15:45,016
+Tumuğu da biz link listeden bir elemanı çıkartacağız ya, onu tutmak için de Tumuğu kullanıyoruz. Temp değişkeni de, listeyi bu temple gezeceğiz ve dizinin sonuna kadar gezdiğimiz her elemanın içinde bu temp aslında olacak.
+
+357
+01:15:46,076 --> 01:15:50,836
+Yani head'i kaybetmemek için burada temple geziyoruz listeyi.
+
+358
+01:15:52,627 --> 01:16:09,567
+Şimdi döngümüze girelim. Temp nul değilse, dizinin sonuna kadar diziyi gezsin. Şu an onu yapacağız.
+
+359
+01:16:25,684 --> 01:16:27,684
+Burada sort condition.
+
+360
+01:16:49,492 --> 01:16:52,652
+YD, Mmax.
+
+361
+01:16:57,524 --> 01:17:08,904
+Eğer temp'te tuttuğumuz id, max'dan daha büyükse, yani her elemanın id'sini tuttuğumuz max değeriyle karşılaştırıyoruz.
+
+362
+01:17:08,904 --> 01:17:14,484
+Eğer o eleman max'dan büyükse, max'ı değiştiriyoruz.
+
+363
+01:17:26,323 --> 01:17:27,323
+Onde?
+
+364
+01:17:34,003 --> 01:17:38,363
+Bu şekilde değiştiriyoruz ve burada
+
+365
+01:17:41,555 --> 01:17:52,595
+ToMove'u pre ataması yapıyoruz ki linkli listede bir öncekini tutsun istiyorduk. Yani oradan o elemanı çıkartmak için bu şekilde yapıyoruz.
+
+366
+01:17:59,572 --> 01:18:01,872
+Template gezmeye devam edelim.
+
+367
+01:18:08,851 --> 01:18:10,827
+Eşittir Temp.
+
+368
+01:18:15,604 --> 01:18:16,396
+Teşekkürler.
+
+369
+01:18:21,363 --> 01:18:34,603
+Sonra burada da TUMU mu değil mi ona bakıyoruz. Şimdi yazayım söyleyeceğim.
+
+370
+01:18:44,435 --> 01:18:55,555
+Yani to move eğer null ise max'ı bulamamış demek oluyor. Yani had max olmuş oluyor. O zaman hiçbir şey yapmıyor.
+
+371
+01:19:01,844 --> 01:19:03,404
+Add max oluyor dedik.
+
+372
+01:19:04,844 --> 01:19:05,404
+Add in.
+
+373
+01:19:07,603 --> 01:19:08,564
+Next diye.
+
+374
+01:19:10,583 --> 01:19:12,264
+Eşittir. SortData.
+
+375
+01:19:12,264 --> 01:19:17,603
+Burada SortData'yı tekrar çağırdık.
+
+376
+01:19:17,724 --> 01:19:26,203
+Yani SortData fonksiyonunun içinde tekrar SortData'yı çağırdığımız için burada recursive yapmış oluyoruz.
+
+377
+01:19:27,380 --> 01:19:35,680
+Recursum yapmış oluyoruz. Yani fonksiyonu yazdığımız yerde aynı isimle fonksiyonu tekrar çağırıyoruz. Buna deniyor.
+
+378
+01:19:45,939 --> 01:19:51,399
+Ve bizim Sort Condition Function Pointer'ımız.
+
+379
+01:19:56,851 --> 01:19:58,291
+Hedi döndürecek.
+
+380
+01:20:03,891 --> 01:20:13,492
+Şimdi eğer null değilse bakalım. O zaman pre eşittir to move yapıyoruz.
+
+381
+01:20:18,260 --> 01:20:21,800
+Yani bulduğumuz Max'tan bir önceki elemanı koyuyoruz.
+
+382
+01:20:26,420 --> 01:20:29,699
+Bu da bizim Max'ımız oluyor.
+
+383
+01:20:31,380 --> 01:20:33,300
+Şuraya da boşluk bıraktım.
+
+384
+01:20:53,492 --> 01:20:56,592
+Sonra şunu da yazayım, size açıklayayım.
+
+385
+01:21:00,500 --> 01:21:07,300
+Next, eşitler, re, next to next.
+
+386
+01:21:20,532 --> 01:21:30,932
+Burada da, şurada da aradaki nodu silmiş olduk. Önceki nod ile sonraki nodu bağlamış olduk.
+
+387
+01:21:30,932 --> 01:21:40,932
+Yani bizim şu anki nodun önceki elemanının next'i, şimdi ben şu anki elemanı silmek istiyorum ya, onun bir önceki...
+
+388
+01:21:41,332 --> 01:21:57,631
+Prev'in Next'i olmuş oluyor. Sonra ben bir öncekinin Next'ini bir sonrakinin Next'ine bağlıyorum. Şurada şeyleri de göstereyim isterseniz.
+
+389
+01:21:57,631 --> 01:22:01,971
+Şimdi mesela üç tane modum var benim. Ben şu ortadakini sileceğim.
+
+390
+01:22:03,731 --> 01:22:16,912
+Ne yapacağım? Bunu buna bağlayacağım. Dolayısıyla Prev'in Next'ine atanmış oluyorum. Şöyle geleyim tekrardan.
+
+391
+01:22:21,587 --> 01:22:34,768
+Max nodumuzu oradan çıkarmış olduk. Hani Max nodu çıkartıp en başa atıyorduk ya, geriye kalanları tekrar sıralıyorduk. Burada o Max nodu çıkarmak için bunu yaptık yani.
+
+392
+01:22:41,939 --> 01:22:42,763
+Sunu.
+
+393
+01:22:51,764 --> 01:22:58,764
+Bunlar çok uzun sürüyor yazma. Tekrar sort data.
+
+394
+01:22:58,764 --> 01:23:06,347
+Çağırıyorum. Head. Sort condition.
+
+395
+01:23:28,819 --> 01:23:51,219
+Şimdi bunu da yine söylediğim gibi Recursive olarak çağırıyoruz. Nereden? Head'den çağırıyoruz. Çünkü artık Max nodu çıkarttık. Burada kalan dizi artık Max nodu olmayan bir dizi. Buradan dönen de ikinci Max olacak. Burayı da yaptık.
+
+396
+01:23:57,844 --> 01:24:00,543
+Hocam burada Tumuv'u tam olarak ne için kullandık?
+
+397
+01:24:02,043 --> 01:24:07,644
+Tumuv'u biz Max'ı çıkarmak istiyorduk ya...
+
+398
+01:24:11,060 --> 01:24:24,540
+Şimdi ilk seferde diziyi geziyor, Max'ı buluyor. Daha sonrasında o Max'ı çıkarmak için yani biz TUMU şeyini kullanıyoruz.
+
+399
+01:24:25,220 --> 01:24:26,040
+Beşkinli.
+
+400
+01:24:30,579 --> 01:24:38,659
+Yani TUMU değişkeniyle link listede bir önceki elemanı tutacağız. Yani bunu çıkarmak için.
+
+401
+01:24:38,659 --> 01:24:42,380
+Şimdi devam edeyim.
+
+402
+01:24:59,252 --> 01:25:11,512
+Saate bakayım. Saat şu an 19 geçiyor arkadaşlar. 21 geçene kadar herkes çete numarasını yazsın. Oradan yoklamaya alacağız.
+
+403
+01:25:15,347 --> 01:25:23,608
+21 geçe geçtikten sonra kesinlikle diğerleri kabul olmayacak yani. O yüzden hemen burada olanlar hemen yazsın.
+
+404
+01:25:36,532 --> 01:25:48,311
+Şimdi burada sort yapmıştık ama bu sortun hem küçükten büyüğe hem de büyükten küçüğe olarak yazılması için bu askendik ve diskenlik fonksiyonlarını yazalım.
+
+405
+01:25:48,311 --> 01:25:52,551
+Onu da şöyle yukarıya yazalım.
+
+406
+01:26:00,595 --> 01:26:01,876
+Şuraya yazalım.
+
+407
+01:26:17,844 --> 01:26:26,463
+Arkadaşlar, hocanız sadece numaranızı yazmanızı istiyor. İsminizi yazmanıza gerek yok. Bu otomatik olarak işlenecek. İsmini yazan arkadaş tekrar numarasıyla düzgünce yaz.
+
+408
+01:26:57,268 --> 01:26:58,948
+Diğeri içinde yazalım.
+
+409
+01:27:10,899 --> 01:27:12,899
+Ben değiştireceğim sadece.
+
+410
+01:27:19,859 --> 01:27:27,859
+Şimdi burada da sıralamayı küçükten büyüğe olarak yazmak için sorktaskanding yaptık.
+
+411
+01:27:29,859 --> 01:27:39,359
+Skanding de büyükten küçüğe sıralamak için. Bunları main'de bir küçükten büyüğe, büyükten küçüğe şey yapıyor mu diye bir deneyelim.
+
+412
+01:27:53,108 --> 01:27:55,548
+Bu sort data'yı da yazalım.
+
+413
+01:28:37,076 --> 01:28:39,976
+Bunu bir de yazdıralım.
+
+414
+01:28:47,412 --> 01:29:04,632
+Listeyi bir de yazdıralım son olarak. Bunu bir deneyelim bakalım. Olmuyorsa bir şey var. Evet, çalıştırdığımızda bakalım. Yok olmamış çünkü.
+
+415
+01:29:06,772 --> 01:29:11,231
+Deskendink yazdı bakayım. Tamam biz zaten onu şey yapmıştık.
+
+416
+01:29:11,891 --> 01:29:25,291
+Büyükten Küçük olarak ID'sini yazdırdı. Bu şekilde görüyorsunuz. Askerlik de aynı şekilde. Onu da şöyle aynısını kopyalayacağım.
+
+417
+01:29:37,971 --> 01:29:45,631
+Askerlik olarak yani büyükten şey küt. Burada hata var sanki.
+
+418
+01:29:50,003 --> 01:29:50,363
+Evet.
+
+419
+01:29:55,412 --> 01:30:01,652
+Hocam mesela eskerlik olan da büyükten küçüğe sıralamış ama eskerlik de yapmamış.
+
+420
+01:30:05,811 --> 01:30:07,112
+Hocam burada mısın?
+
+421
+01:30:07,512 --> 01:30:09,131
+Ben buradayım da.
+
+422
+01:30:14,963 --> 01:30:18,064
+Şurada bir sürü yanlış bir şey yaptım.
+
+423
+01:30:18,423 --> 01:30:20,323
+Karşılaştırmalarınıza tekrar bakalım.
+
+424
+01:30:29,203 --> 01:30:34,404
+Diğer çalışan haliyle bir karşılaştığınız, bana gönderdiğiniz halinde bir ona bakın.
+
+425
+01:30:35,064 --> 01:30:35,943
+Tamam hocam.
+
+426
+01:30:38,603 --> 01:30:40,743
+O bitti mi peki? Başka eklenecek bir şey var mı?
+
+427
+01:30:42,484 --> 01:30:46,344
+Şimdi iki ayrı dosyaya yazdırma var hocam.
+
+428
+01:30:46,344 --> 01:30:55,484
+Tamam işte bir onu açın. Zaten arkadaşlarım da vakti daralıyor. Yemeğe gidecekler vardır. O kod üzerinden bir açın. Bir değişken yeri döneyim.
+
+429
+01:30:56,627 --> 01:31:13,427
+21 geçenin başından itibaren gelen şeyler kabul değildi. Dolayısıyla 21 geçenin sıfırıncı saniyesinden önce yazılmış olması gerekiyor. Bunu da söylemiş olalım.
+
+430
+01:31:14,323 --> 01:31:40,304
+Bu şey, yani burada sıralama doğru çalışıyordu hocam. Tamam bir bakalım, bir çalıştırın bakalım. Burada ekstradan şey de yapıyor ama iki tane farklı şeyi. Tamam dosya. Burada büyükten küçük, küçükten büyüğe olarak yazıyor. Şöyle bir yan yana getirin neyi farklı yazdınız? Belki unuttuğunuz bir şey vardır. Evet hocam. Birini notfetle açabilirsiniz.
+
+431
+01:31:41,939 --> 01:31:45,939
+Şöyle yapmaya çalıştım ama, oluyor mu?
+
+432
+01:31:45,939 --> 01:31:46,939
+Olur.
+
+433
+01:31:49,939 --> 01:31:52,939
+Sort kısmında sıkıntı varsa bir oraya bakalım.
+
+434
+01:31:54,939 --> 01:32:00,939
+Şimdi head id'yi aldık, null değilse sort condition'a max'ı gönderdik.
+
+435
+01:32:00,939 --> 01:32:02,939
+TMP'nin id'sini.
+
+436
+01:32:06,579 --> 01:32:13,579
+Maksimum Temek Öniversitesi
+
+437
+01:32:13,579 --> 01:32:17,579
+Evinix'in ve Töneğe'nin yaptığı, Yapısal Programlama dersi.
+
+438
+01:32:19,579 --> 01:32:26,579
+Evinix'in, Yapısal Programlama dersi.
+
+439
+01:32:27,579 --> 01:32:32,579
+Sağ tarafta, while döngüsü daha büyük bir kısmı kapsıyor sanki.
+
+440
+01:32:34,515 --> 01:32:52,355
+Burada bir tane parantezi yanlış, evet doğru. Şunu silip şuraya. Şimdi oldu. Şimdi buydu bizimkisi. Tekrar şey yaptığım zaman. Şimdi düzeldi.
+
+441
+01:32:54,175 --> 01:33:00,575
+Geri kalan kısımlar dosyaya yazmaysa onlardan bir tanesini gösterin hocam. Geri kalan yazma.
+
+442
+01:33:01,492 --> 01:33:12,271
+Tamam hocam. İsterseniz direkt kod üzerinden söyleyeyim. Çünkü yazarken çok uzun zaman alıyor. Biraz yavaş yazıyorum.
+
+443
+01:33:17,811 --> 01:33:21,811
+Şimdi File Write. Bu bizim...
+
+444
+01:33:22,323 --> 01:33:50,304
+FPUTS ile yazdırdığımız, dosyaya FPUTS ile yazdırdığımız fonksiyon. Bir de ben burada ekstradan PRINTEF ile de yazdırmaya göstermiştim. Birisini küçükten büyüğe olanı mesela FPUTS ile yazdırdım. Büyükten küçüğe göre olanı da ekstradan farklı göstermek.
+
+445
+01:33:50,323 --> 01:34:05,323
+Şimdi burada fonksiyonumuzu yazdık ve şimdi yukarıda read ile okuduğumuz için burada da write ile yazmamız gerekiyor.
+
+446
+01:34:05,323 --> 01:34:11,323
+Yani bunların şey olması gerekiyor. O şekilde olması gerekiyor.
+
+447
+01:34:14,260 --> 01:34:28,159
+Bu yeni dosya yazmak için de write kullanmış oluyoruz. Eğer bu isimde write dosyası olsaydı da bunu boşaltacaktı.
+
+448
+01:34:32,500 --> 01:34:49,219
+Wild öngümüze girersek, burada head null olana kadar, yani son elemana kadar burada geziyor. Ve ito'a temp char'ın içine id'yi integer'dan string'e çeviriyor.
+
+449
+01:34:50,819 --> 01:34:55,940
+Evet, bunu mesela hocam şeyde arkadaşlardan bir tanesi projeyle alakalı sormuştu.
+
+450
+01:34:56,372 --> 01:35:06,172
+Bir kitabın ondan fazla numunesi olabilir mi diye. Orada string'e dönüştürmek gerekiyor. Böyle bir string'e dönüştürme amaçlı bu fonksiyonu kullanabilirsiniz.
+
+451
+01:35:06,172 --> 01:35:18,372
+Evet, bu şekilde kullanılabilir. Sonra burada zaten FPUTS ile TMP'yi koyuyor, delimitri koyuyor, headname'i koyuyor.
+
+452
+01:35:18,612 --> 01:35:42,371
+Bunları fput string ile, bunları da put c ile. Yani tek tek bu şekilde yazıyor. Sonra head'i departmana koyuyor ve fput c ile de satır sonunu koyuyor. Bu şekilde deyip.
+
+453
+01:35:42,608 --> 01:36:08,847
+Bunu da fclose ile sonra kapatıyoruz dosyamızı. Bunu çalıştırdım. Bunu da aşağıda main'de şey yapıyoruz. Şurada çağırıyoruz. Ve biz buna isim olarak da near dataset dedik. Biz bunu çalıştırdığımızda şimdi bizim dosyamıza
+
+454
+01:36:09,332 --> 01:36:11,332
+Gelecek gelmedi mi?
+
+455
+01:36:15,332 --> 01:36:28,332
+Yani şu şekilde geliyor büyükten küçüğe olarak. Diğeri de şuydu ama şu an geldiğimi çalıştığımı bilmiyorum.
+
+456
+01:36:29,332 --> 01:36:36,332
+Şu da küçükten büyüğü olarak printf ile yazdırdığımız. Tekrar kodu geçeyim.
+
+457
+01:36:38,068 --> 01:36:50,408
+Burada normalde o klasörün içine girmesi lazım. Herhalde klasörden dolayı, yani şeye gitti, dışına ekledi. Klasörün dışına ekledi. O sebeple göremedik klasörün içinde.
+
+458
+01:36:50,408 --> 01:36:56,807
+Sonra printf ile, fprintf ile şeye bakalım.
+
+459
+01:37:02,899 --> 01:37:08,899
+Şey, hocam. Çünkü ben bu uygulamaya...
+
+460
+01:37:08,899 --> 01:37:10,299
+Hangi dosyayı çalıştırdınız?
+
+461
+01:37:10,299 --> 01:37:13,339
+Evet, ben bu uygulamaya eklememiştim.
+
+462
+01:37:13,439 --> 01:37:18,460
+Riot'ı, hani az önce eklemediğimiz için ben de onu çalıştırıyorum. Olmadı.
+
+463
+01:37:19,019 --> 01:37:27,299
+Ama ben şunu çalıştırdığımda, yani çalışan hep bütün kodların olduğu şeyi şimdi yani...
+
+464
+01:37:27,488 --> 01:37:49,508
+Anladım. Burada write fonksiyonlarımız burada var. O sebeple bunu çalıştırdığımızda oraya new dataset isimli yeni bir TXT dosyası oluşturuyor ve onun içine yazıyor. Az önce açtığım dosyalar onlardı. Sonra şeye de bakalım. Şurada.
+
+465
+01:37:51,155 --> 01:38:17,975
+Burada da fprintf ile dosya yazdırma yapıyoruz. İşte fonksiyonumuzu girdik ve yine write modunda açıyoruz dosyamızı. Bu şekilde fprintf ile, yani burada zaten anlatılacak çok bir şey yok. Bu şekilde de dosyayı yazdırıp kapatabiliyoruz.
+
+466
+01:38:19,828 --> 01:38:23,988
+Yani bu kadar hocam. Başka bir şey.
+
+467
+01:38:24,048 --> 01:38:29,268
+Teşekkür ederiz hocam. Şimdi başka sorusu olan var mı arkadaşlar bu konuyla alakalı?
+
+468
+01:38:30,488 --> 01:38:41,568
+Kod da anlamadığınız bir şey. Yani aynı fonksiyonları kullanabiliriz ama farklı farklı fonksiyonları özellikle deneyelim ki çeşitliliği görün istedik.
+
+469
+01:38:42,644 --> 01:38:53,264
+Burada projemize dair bazı ipuçları var. Yani buradaki örnekler projenize yardımcı olacak mahiyette tasarlandı. Ağzımda sağ ol. Teşekkür ederim.
+
+470
+01:38:53,623 --> 01:39:03,764
+Zaten bu veride mesela onların projelerindeki veriler de virgülle ayrılmıştı. Mesela buradan virgülle ayırma kısımlarına da bakabilirler fonksiyonlara.
+
+471
+01:39:06,003 --> 01:39:13,604
+Bu şekilde. En kısa zamanda paylaşılır arkadaşlar. Bu normal diğer lavlarda nasılsa veya uygulamalarda orada da paylaşılıyor.
+
+472
+01:39:14,923 --> 01:39:29,363
+Sorusu olan yoksa, yoklamayı saat 01.19 ile 01.20.59 arasında aldık. Yani bu duyulan bir şey. Yani duyup cevap vermeniz gereken bir şey. Sonradan gönderilenler dikkate alınmayacak.
+
+473
+01:39:30,068 --> 01:39:36,248
+Burada sadece oturma açmış olmamız yeterli değil arkadaşlar. Evet, hepinize iyi günler. Hoşçakalın. Görüşmek üzere.
+
+474
+01:39:38,248 --> 01:39:40,807
+Hocam ben şeyi kaydedeyim mi? Siz mi kaydediyorsunuz?
+
+475
+01:39:40,807 --> 01:39:51,928
+Onu şu an yetkibende olduğu için herhalde ben kaydedeceğim. Save chat diyelim. Ben size bir tane gönderdim de. O aralıktakiler bir de genel olanı göndereyim.
+
+476
+01:39:52,708 --> 01:39:53,408
+Tamam hocam.
+
+477
+01:39:53,408 --> 01:39:54,428
+Refresh diyelim.
+
+478
+01:39:56,404 --> 01:40:16,144
+Yani baştan en sona kadar bütün hepsi var burada da. Ayrıca katılımcı listesinde kim ne kadar süre oturumda kalmış onun süre bilgisinde online yıldız bana gönderecek. O gönderdikten sonra size paylaşırım hocam.
+
+479
+01:40:16,564 --> 01:40:18,083
+Tamam hocam, teşekkürler.
+
+480
+01:40:19,408 --> 01:40:30,268
+Şöyle şey yapayım yanıtla diyelim dururdayken hemen. İkincisi en genel hali birincisi sadece yoklamanın olduğu aralık. Ona dikkate alırsınız. İkincisi de bir kenarda bulunsun.
+
+481
+01:40:31,347 --> 01:40:32,047
+Tamam hocam.
+
+482
+01:40:32,047 --> 01:40:42,328
+Zaten bu kayıtlarda da var şu an için. Evet sorunuz yoksa hepinize iyi günler arkadaşlar. Yarın dediğim gibi derste ben online yapacağım.
+
+483
+01:40:54,836 --> 01:40:55,276
+İyi.
+
+484
+01:40:57,096 --> 01:40:59,876
+Rukiye hocam siz de çıkabilsiniz. Ben en sona çıkayım.
+
+485
+01:41:00,216 --> 01:41:02,116
+Tamam hocam. Ben çıkiyorum o zaman.
+
+486
+01:41:02,216 --> 01:41:05,016
+Herkes çıksın. Ben öyle kapatacağım.
