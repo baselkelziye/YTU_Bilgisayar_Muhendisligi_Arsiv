@@ -1,0 +1,1271 @@
+1
+00:05:27,540 --> 00:05:30,660
+Günaydın arkadaşlar, merhabalar. Kaan Hocam, hoş geldiniz.
+
+2
+00:05:35,252 --> 00:05:36,692
+Günaydın hocam, hoş bulduk.
+
+3
+00:05:39,512 --> 00:05:40,951
+Biz sınıfta mı galiba?
+
+4
+00:05:41,512 --> 00:05:42,891
+Aynen, sınıfta geldim hocam şu an.
+
+5
+00:05:43,412 --> 00:05:43,732
+Tamam.
+
+6
+00:05:45,951 --> 00:05:47,091
+Nasıl yapalım?
+
+7
+00:05:49,684 --> 00:05:55,964
+Siz ekranınızı projeksiyona paylaşırsınız. Yani ben birkaç bir şey anlatacağım şu retetle alakalı.
+
+8
+00:05:57,344 --> 00:06:02,964
+Siz Zoom ekranınızı paylaşınca oradakiler görür. Zaten buradakiler olarak görürüz.
+
+9
+00:06:03,544 --> 00:06:04,864
+Şu an ekran gözüküyor değil mi hocam?
+
+10
+00:06:06,484 --> 00:06:07,204
+Evet, görmüyorum.
+
+11
+00:06:09,784 --> 00:06:14,964
+İşte şey, ekranı ben paylaşacağım. Siz Zoom'un belirliklerini siz sınıfı paylaşırsınız.
+
+12
+00:06:15,699 --> 00:06:17,819
+Sonra da tevrederim.
+
+13
+00:07:31,187 --> 00:07:39,767
+Arkadaşlar, buradaki arkadaşlara bir soralım. Reddit sisteminden mail aldınız mı? Şu, şu, şu dersler tanımlandı diye.
+
+14
+00:07:53,971 --> 00:08:12,911
+Güzel. Şimdi bununla alakalı bir açıklama ders başlasını yapalım. Mail alanlar normal, her şey gayet güzel. Mail alamayanlar muhtemelen yanlış kullanıcıları veya yanlış e-posta adresi gibi bilgiler tındılar. Bunlara ayrıca bakacağız.
+
+15
+00:12:58,707 --> 00:13:09,507
+Görüntümüz de gidiyor herhalde. Ekran görüntümüz. Ben bir paylaşım yaptım.
+
+16
+00:13:17,716 --> 00:13:41,495
+Red Hat Akademi ile alakalı dersler tanımlandı. Nasıl kullanacaksınız? Kısaca bahsedeyim. Red Hat Akademi'ye giriş yaptığınızda üç tane ders göreceksiniz.
+
+17
+00:14:13,971 --> 00:14:15,312
+Bu sizinle kayıt var herhalde.
+
+18
+00:14:34,515 --> 00:14:48,895
+Eğer ki bilgilerinizi doğru bir şekilde gönderdiyseniz, Red Hat System Administration 1, 2, bir de Kubernetes Container OpenShift'le alakalı 3 tane ders tanımlanmış olması lazım.
+
+19
+00:14:50,495 --> 00:14:57,275
+Bu derslerden herhangisinin şurada Launch butonu var. Ekran kötü olduğu için farklı bir yerde görünebilir.
+
+20
+00:15:00,947 --> 00:15:24,548
+Dersin içeriği, dersin adım adım nasıl işlenileceğine ayrı şeyler var. Burada hem video hem de videoda anlatılan kodların içeriklerini bulabilirsiniz. Shell ile başlıyor. Bir işletim sistemi yönetimi, sistem yönetimi nasıl olur? Bununla alakalı farklı tutorya'lar var. Bunları takip etmenizi, devam etmenizi istiyoruz.
+
+21
+00:15:26,388 --> 00:15:49,028
+Buradan elbette sınavda sorular gelecektir. İşte şu şekilde burada 13 pardon 15 parçaya bölmüş. Herhangi bir şekilde navigation yapabiliyorsunuz istediğiniz derse ama baştan itibaren adım adım takip etmenizi tavsiye ederim. Küçük videolar var. Bu videolarla alakalı kodlar bulabilirsiniz. İşte burada laboratuvar dökümanları falan var. Bunlara bakabilirsiniz.
+
+22
+00:15:50,836 --> 00:16:11,655
+Şimdi, hocam ben bu sisteme girdiğimde 3 tane dersi göremiyorum. Yani ya 3'ünü görürsünüz ya da hiçbirisini görmezsiniz. Bu şununla alakalıdır. Bize kullanıcı adınızı ve mail adresinizi yanlış göndermişsinizdir. Ben listeye baktığımda username olarak mail adresi gönderenler vardır. Bize gelen verilene ise ona göre tanımlama yapıyoruz.
+
+23
+00:16:12,307 --> 00:16:23,248
+Bununla alakalı sorunu olan arkadaşım, gelecek hafta saat 11'de benim ofisime gelecek Enes Hoca ile beraber bu problemi olan arkadaşlara tek tek bakacağız.
+
+24
+00:16:23,947 --> 00:16:28,567
+Bunun dışında mail veya başka bir şekilde yanıt vermiyoruz, bunu söyleyelim.
+
+25
+00:16:29,408 --> 00:16:37,248
+Basit bir şekilde kullanıcı adı şifresi alıp gelecek hafta çarşamba saat 11'de ofise gelirsiniz bakarız.
+
+26
+00:16:37,971 --> 00:16:41,611
+Herhangi bir sorunuz var mı bununla alakalı? Buradan veya diğer yerden?
+
+27
+00:16:45,011 --> 00:16:56,491
+Tamam, şimdi Kaan Hocamız size geçen hafta gördüğümüz proseslerin oluşturulması ve farklılaştırılması, differentiation ile alakalı uygulamalar yapacak.
+
+28
+00:16:57,572 --> 00:17:03,812
+Fork Sistem çağrımız vardı ve Exx Sistem çağrımız vardı. Bununla alakalı farklı program uygulamaları yapacak.
+
+29
+00:17:04,403 --> 00:17:16,384
+Ve dersimiz bugün bununla tamamlanacak. Ayrıca ben tekrar gelip ders yapmayacağım. Güzel bir ders. Farklı detaylar var. Efendim?
+
+30
+00:17:17,483 --> 00:17:20,844
+Hocam bu üç kursu ne zamana kadar bitirmemizi?
+
+31
+00:17:21,144 --> 00:17:30,624
+Bunun son tarihleri orada yazıyor. Aralığın 20'si falan olması lazım. Bu sisteme girince dersin ne zaman biteceği orada yazıyor. Ona göre devam etmemiz lazım.
+
+32
+00:17:31,155 --> 00:17:35,155
+Peki hocam, vizelerde nereye kadar gideceği falan bilir mi?
+
+33
+00:17:35,175 --> 00:17:35,435
+Efendim?
+
+34
+00:17:37,475 --> 00:17:39,915
+Vizelerde nereye kadar geleceği bilir mi?
+
+35
+00:17:40,795 --> 00:17:44,995
+Yani vize 1'de soru sormayacağım. Daha çok bunu da vize 2'de ve finalde soru soracağım.
+
+36
+00:17:45,556 --> 00:17:46,076
+Tamamdır.
+
+37
+00:17:46,115 --> 00:17:46,235
+Tamam?
+
+38
+00:17:47,175 --> 00:17:53,036
+Yani vize 1'de hatta hiç redhead sormayacağım diye net bir şey söyleyeyim. Siz de ona göre çalışırsınız.
+
+39
+00:17:54,115 --> 00:17:55,056
+Teşekkür ederim hocam.
+
+40
+00:17:55,056 --> 00:17:55,735
+Yani.
+
+41
+00:17:57,748 --> 00:18:00,088
+Hocam söz sizde. Kolay gelsin başkanım.
+
+42
+00:18:10,771 --> 00:18:12,331
+Ekranım gözüküyor değil mi arkadaşlar?
+
+43
+00:18:16,435 --> 00:18:17,875
+Sıkıntı yoktur diye tahmin ediyorum.
+
+44
+00:18:18,455 --> 00:18:18,915
+Evet, öyle.
+
+45
+00:18:19,336 --> 00:18:20,235
+Teşekkür ederim.
+
+46
+00:18:21,275 --> 00:18:22,715
+Tekrardan günaydın arkadaşlar.
+
+47
+00:18:23,435 --> 00:18:24,295
+Nasılsınız, iyi misiniz?
+
+48
+00:18:24,536 --> 00:18:30,096
+Bir tatil arasından sonra uygulamayla başlamak hem de işletim sistemleriyle güzel olmuşuz sizlerden.
+
+49
+00:18:30,155 --> 00:18:31,455
+Çok mutlusunuzdur tahminimizi.
+
+50
+00:18:32,355 --> 00:18:32,955
+Sağolun sağolun.
+
+51
+00:18:33,619 --> 00:18:48,199
+Şimdi geçen hafta ne yapmıştınız? Share programlama görmüştünüz uygulamada. Geçen hafta yanlış hatırlamıyorsam. Hani işletim sistemlerinde share komutlarıyla ne yapılır, ne edilir, nasıl farklı şeyler çalıştırılır gibi şeyler görmüştünüz. Bu hafta da ikinci uygulamamızda.
+
+52
+00:18:49,140 --> 00:19:04,019
+Proses konusuna değineceğiz. Bu sunumumuz işte proseslerin tanımından, süreçlerinden, oluşturulmasından, farklılaştırılmasından, yönetiminden, sonlandırılmasından, senkronizasyonu gibi çeşit çeşit proseslerle ilgili işlemler göreceğiz bu uygulamada.
+
+53
+00:19:04,019 --> 00:19:11,500
+Önce kısaca proseslerin tanımından başlamak istiyorum. Aslında proseslerin tanımından önce programın tanımından başlamamız gerekiyor.
+
+54
+00:19:17,140 --> 00:19:19,340
+Bir yapıda bulunan bir yapıdır program dediğimiz.
+
+55
+00:19:19,740 --> 00:19:22,680
+Process ise bu programın çalıştırılmış bir insinsi.
+
+56
+00:19:22,760 --> 00:19:24,100
+Yani önlüğü olarak düşünebilirsiniz.
+
+57
+00:19:24,240 --> 00:19:31,380
+Yani CPU register ile, memurisi ile, çeşit çeşit alanlar ile bu programın çalıştırılmış haline process denilir.
+
+58
+00:19:32,403 --> 00:19:59,583
+Tabi bu prosesler nerede tutulur? Process table dediğimiz bir yapıda tutulur. Bu process table'ımız her bir satırımız aslında process descriptor dediğimiz bir yapı haline tutulur. Bu process descriptor'da ne tutuluyor tabi? Bu prosesin işte idleri, durumu kullandığı kaynaklar, çalıştıracağı kod işte şurada daha net gördüğü. İşte bulunduğu sinyaller hangi dosyada işlem yapılıyor gibi.
+
+59
+00:20:00,019 --> 00:20:04,819
+Bu process table'da her bir satırımız dediğimiz gibi process descriptor olarak adlandırılır.
+
+60
+00:20:05,160 --> 00:20:16,619
+Bu process descriptor taşıpranışı proseslerin ID'si, hangi dizinde bulunduğu argümanları, kodu, verisi, kullandığı sinyaller gibi bilgiler process table'da tutulur.
+
+61
+00:20:17,420 --> 00:20:19,720
+Peki biz bu prosesleri nasıl oluşturuyoruz?
+
+62
+00:20:21,000 --> 00:20:22,720
+Önün operation sistem bunu nasıl yapıyor?
+
+63
+00:20:23,400 --> 00:20:25,180
+Önce o process table'a bir alana düşüyor.
+
+64
+00:20:25,619 --> 00:20:53,619
+O proses oluşturulduğuna dair. Ve o process descriptor dediğimiz bir satılık o yapıda o process descriptor, o process table'a yazıyor. O içindeki bilgilerle. Ve daha sonra da o program kodunu diskten okuyor. Bu operation sistemin yapılış şeklinde. Peki user tarafı, bizim tarafımız nasıl yapıyor bunu? Bunu iki sistem çaresiyle yapıyor. Bir fork, bir de exec çaresiyle yapıyor. Şimdi bunlardan kısaca bahsedelim. Şimdi herhangi bir program çalışmaya başladığında bir parent...
+
+65
+00:20:53,619 --> 00:21:16,199
+Yani o programı çalışan ana bir proses vardır. Bu her programda vardır. Her çalıştırdığınız programda. Daha sonra biz o program başladığında o program önüne bir proses daha işlemeye devam etsin. Bir proses daha oluşturur bu ana prosesin yanında gibi demek istediğimizde fork çağrısı diye bir sistem çağrısı vardır. Şurada gördüğünüz.
+
+66
+00:21:16,819 --> 00:21:22,079
+Bu fork çaresi artık geldikten sonra parent prosesinin dışına yeni bir proses oluşturuyor.
+
+67
+00:21:22,500 --> 00:21:28,259
+ID'si farklı ancak diğer alanların tamamen aynı olduğu bir proses daha oluşturuyor.
+
+68
+00:21:28,339 --> 00:21:29,599
+Buna child process diyoruz.
+
+69
+00:21:29,680 --> 00:21:36,779
+Yani parent prosesin oluşturduğu sadece ID'si farklı olan diğer alanlarının aynı olduğu bir proses oluşturuyor.
+
+70
+00:21:36,779 --> 00:21:40,579
+Burada örneğin mesela bunun proses ID'si 1001'di, bununki 1002 oldu.
+
+71
+00:21:41,587 --> 00:21:50,587
+Mesela şurada da göreceğiniz üzere bu bilim ana programında şu parent process bu programı yukarıdan aşağı doğru çalıştırmaya devam ediyor.
+
+72
+00:21:51,087 --> 00:21:51,748
+Bu da bir fork.
+
+73
+00:21:52,211 --> 00:21:57,672
+Bu fork fonksiyonu ne yapıyordu? Benim parent prosesimden bir child proses oluşturuyordu.
+
+74
+00:21:57,672 --> 00:22:01,951
+Ve bu sefer program artık iki farklı şekilde ilerlemeye başlayacak.
+
+75
+00:22:02,011 --> 00:22:05,311
+Önce parent proses işini yapacak, daha sonra child proses işini yapacak.
+
+76
+00:22:05,391 --> 00:22:11,471
+Burası önemli. Önce parent işini yapacak, parent işini bitirecek, daha sonra child proses işlemi devam edecek.
+
+77
+00:22:11,511 --> 00:22:13,092
+Yani child proses parent'ı bekleyecek.
+
+78
+00:22:14,483 --> 00:22:31,103
+Şimdi şöyle küçük bir örnekle başlayalım anlaşılması adına. Şimdi burada ne görüyoruz? İşte bir main forksiyonu var basitçe, bir print şey var. Şimdi burada ne yapıyoruz? Önce parent process bu programı çalıştırmaya başlıyor, anal programı. Geliyor önce mesajımı yazdırıyor, message before fork diye.
+
+79
+00:22:31,700 --> 00:22:46,840
+Daha sonra fork fonksiyonu geldiğinde ne demiştim? Artık iki dala ayrılacak böyle. Parent proses işlemini yapacak, sayf proses işlemini yapacak. Önce parent bu mesajı yazdıracak, daha sonra çayt bu mesajı yazdıracak. Hemen şöyle denemesini de yapalım.
+
+80
+00:22:58,771 --> 00:23:02,371
+Bu zaten bazı komutları, zaten desk atmaymışım.
+
+81
+00:23:05,451 --> 00:23:08,991
+Cd, process dediğinde benim hangi şeylerim var? Ls ile bakabiliyoruz.
+
+82
+00:23:09,652 --> 00:23:11,511
+Şimdi burada birinci forkumu çağıracağım.
+
+83
+00:23:13,731 --> 00:23:14,311
+Neredeydi o?
+
+84
+00:23:16,351 --> 00:23:22,251
+Burada tabii siz farklı C delleyicisi kullanabilirsiniz. Bu tamamen size kalmış.
+
+85
+00:23:25,460 --> 00:23:26,860
+For bir zaman.
+
+86
+00:23:36,852 --> 00:23:37,731
+çalıştıralım.
+
+87
+00:23:42,003 --> 00:23:54,283
+Şimdi burada gördüğünüz gibi az önceki şu kodda ne yapıyordu? Önce parent process fork'dan önceki mesajını yazdırıyordu. Daha sonra fork işlemini yapıldıktan sonra iki proses ayrılıyordu bu program.
+
+88
+00:23:54,283 --> 00:24:00,864
+Bir parent process bir child process. Önce parent process mesajı yazdı. Daha sonra child process mesajı yazdı.
+
+89
+00:24:06,516 --> 00:24:12,796
+Daha sonra burada yine aslında aynı işlemi yapıyoruz. Burada bir iki fonksiyonla bahsetmek istiyorum sizlere. Tamam.
+
+90
+00:24:13,276 --> 00:24:19,516
+Parent process işlemi yapıyor, sonra fork oluyor, child yapıyor. Ben acaba bu proseslerin ID bilgilerini öğrenebilir miyim?
+
+91
+00:24:19,615 --> 00:24:26,956
+Veya child prosesse hangi parent proses oluşturmuş bunun ID'sini görebilir miyim gibi bunlar için güzel fonksiyonlar var.
+
+92
+00:24:26,956 --> 00:24:31,615
+Örneğin mesela bir tanesi getpid yani getprocess id olarak adlandırılıyor.
+
+93
+00:24:33,523 --> 00:24:43,243
+Şeyi çalıştıran, mesela bu printf'i çalıştıran prosesin id'sini dönüyor. Yani aslında şu an buraya ilk ne çalıştıracak? Parent proses çalıştıracak. Yani ilk başta şu getpid.
+
+94
+00:24:43,955 --> 00:25:02,955
+Parent process'ın ID'sini denilecek. Peki getPID neydi? Bu da parent process'ı. Yani sen hangi process çalışıyor şu an buraya? İşte X numaralı process. Peki seni oluşturan bir parent process'ın var mı? Var. O zaman onun ID'sini döndüler. Diyor bu getPID. Peki şu soru aklına gelir. Hocam zaten...
+
+95
+00:25:03,092 --> 00:25:15,012
+Bu programı ana çalışan parent prosesi ait değil mi? Onun parenti ne? gibi bir şey geliyor. Bu da o shell dediğimiz, kabuk dediğimiz ana işletim sistemlerinin bir aidesini geliyor. Yani o parent prosesi de oluşturan bir aslında shell var.
+
+96
+00:25:15,859 --> 00:25:17,699
+Yapı var, onun id'sini dönüyor.
+
+97
+00:25:18,059 --> 00:25:25,719
+Tabii, şurada fork dediğimizde, child proses oluştuğunda, yine aynı print'i çalıştırdığımızda, onun da bir id'si var.
+
+98
+00:25:26,119 --> 00:25:32,559
+Onun şeyini ne döndürüp, get ppi'di, aslında şuradaki parent prosesin id'sini döndürüyor.
+
+99
+00:25:32,699 --> 00:25:35,759
+Peki, şuradaki fork, fork result ne peki?
+
+100
+00:25:37,279 --> 00:25:40,199
+Şimdi fork fonksiyon, şimdi her bir fonksiyon return'e bir değer döndürüyor.
+
+101
+00:25:40,788 --> 00:25:47,108
+Fork fonksiyonu da, biz parent prosesle buraya çalıştırıyoruz ya, fork dediğimizde ne yapıyordu? Bir child proses oluşturuyordu.
+
+102
+00:25:47,428 --> 00:25:54,508
+Ha işte, o child prosesin id'sini dönüyor bu, fork fonksiyonu. Demek ki biz bunu, bu print'i...
+
+103
+00:25:54,579 --> 00:26:18,639
+Parent için çalıştırdığımızda buradaki fork result, o oluşturulan child prosesin ID'sini dönecek. Peki, tamam, parent için bunu döndürüyor. Child için ne dönecek bu fork result? Onun için sıfır değerini döndürüyor. Çünkü child zaten oluşturulan bir şey, onun bir daha forkta bir değeri yok. O zaten oluşturulan bir şey. Ancak dediğim gibi, tekrar alıyorum, parent proses için fork fonksiyonu,
+
+104
+00:26:18,996 --> 00:26:28,135
+Type Process'in ID'sini döner, return olarak. Ancak bu Type Process için sıfırdır. Mesela burada da örneği var. Biz kendimiz de şuradan çalıştıralım.
+
+105
+00:26:32,372 --> 00:26:35,291
+Şimdi şunun adı neydi? Yine 2 idi herhalde.
+
+106
+00:26:35,291 --> 00:26:35,831
+Aynen.
+
+107
+00:26:44,915 --> 00:27:08,496
+Şimdi ne oldu burada? En başta bir process ID'm vardı benim, parent process'i. Bunun normal get PID'nin bir şeyini gönderdi 2491 diye. Bu parent process'ı dediğim gibi shell ID olarak düşünebilirsiniz. Yani ana sistemin ID'si olarak düşünebilirsiniz. Daha sonra bir fork işlemi gerçekleşiyordu. Bu fork işlemde ben aynı şu üstteki şeyi yazdırmak istedim. Yine PID'sini yazdırıyorum.
+
+108
+00:27:09,395 --> 00:27:23,531
+process, get ppi'li process'i ne yazdığım bir de, kog result vardı. Bu neydi? Oluşturduğum child process'in id'siydi. Peki bunu nasıl doğrulayabilirim? Bir hatta child process'i aynı print yazdırıyordu. Onun get...
+
+109
+00:27:23,700 --> 00:27:46,460
+PID'de ne yapması? Kendi ID'sini döndürmesi gerekiyor. Bakın burada gördüğünüz gibi ID'ler de uyuşuyor. Yani fork benim için parent değer için çaydın ID'sini döndürüyor. Bunu burada da hem doğruluyorum hem de yazdırıyorum. Bakın kendisi için bu fork result değişkenin sıfır olması gerekiyor. Çünkü o bir şey oluşturmadı. Ve bunun parent ID'sini yazdırmak istediğinde burada gördüğünüz gibi de parent prosesin ID'sine de uyuşması gerekiyor.
+
+110
+00:27:51,700 --> 00:28:02,220
+Satırı çalıştıran process'in id'sini döner. Get ppid, yani parent process id dediğimiz o process'in, parent process'in id'sini döndürür.
+
+111
+00:28:02,760 --> 00:28:09,039
+Fog fonksiyonu da child process'in id'sini döndürür. Bu soruda bunu bilmeniz gerekiyordu.
+
+112
+00:28:13,940 --> 00:28:14,940
+Tamam hocam.
+
+113
+00:28:15,412 --> 00:28:43,231
+parent onu döndürüyor, fork bunu döndürüyor, çayt bu işini de fark iki önlektir de fark ettiyseniz parent ile proses aynı işlemi yapıyor. Yani tamam oluşturduk çayt proses ama parent ile çayt da aynı şeyi programı devam ettirip aynı şeyi yapıyor. Sadece şimdi değişkenler şey fark ediyor. Ben farklı işlem yaptırmak istiyorum parent ile prosesi. Bunu nasıl yapabilirim? Şimdi burada orada dediğim gibi fork değeri, parent proses için bir değer döndürüydü, şey için sıfır değeri görüyordu.
+
+114
+00:28:43,412 --> 00:28:52,592
+Ben orada bir if yazarım. Eğer o şey sıfır değilse veya sıfırsa böylece oraya child process o işlemi yapar diye aksi durumda parent o işlemi yapar.
+
+115
+00:28:53,851 --> 00:28:55,432
+Burada da örneğini gördüğünüz gibi.
+
+116
+00:28:59,072 --> 00:29:06,692
+Burada fork şeyini yaptıktan sonra bu parent proses, fork ile child proses oluşturduktan sonra burada PID'yi ifleyebilirim.
+
+117
+00:29:06,692 --> 00:29:10,552
+If sıfır dersem child proses'e girecek.
+
+118
+00:29:11,188 --> 00:29:36,228
+Eğer if sıfır, özür dilerim, pi'de sıfır değilse de parent'e girecek. Böylece ben fork'dan sonra parent'la çaytın işlerini ayırabilirim. Mesela burada da örnek bir kod var. Şimdi bu fork fonksiyonuna demişim bir sayı döndürecek. X bir sayı. Sonuçta sıfır değil. Sıfır olmadığı için bu if'in içine girecek. Parent için. Ve şu parent, işte şunu yaptı diyecek.
+
+119
+00:29:37,887 --> 00:30:04,827
+Chide process tam bu satırda oluştu ya bu if satırında. Bu fork ne döndürmüştü? 0 döndürmüştü. E if 0'da girmeyeceği için neye düşecek? Else düşecek. Böylece Chide process şuradaki print yazdırmayacak, şu print yazdıracak. Ve parent da bu else girmeyecek çünkü burası if'in şeyine gel, else'sine düştüğü için. Yani böylece biz ne yaptık? Şu ilk kısmı tabi parent yazdırıyor. İkinci kısımda parent da şu fork'tan sonra parent da Chide'ın işlediğini değiştirdik.
+
+120
+00:30:06,644 --> 00:30:08,963
+Bunu da hemen şöyle gösterelim.
+
+121
+00:30:30,420 --> 00:30:31,740
+Dün burada dediğimiz gibi ne oldu?
+
+122
+00:30:32,208 --> 00:31:00,208
+Önce o en baştaki print var, daha hiç fork oluşturulmadan, normal direkt programı çalışan parent prosesini yazdırıcı. Daha sonra if fork dediğimde, fork dediğim gibi neydi? Child'ın aydısını bir sayı döndürüyordu. O sayı döndürdüğü için parent için o ifin içine girebilir. Çünkü sıfır değil. Ancak aynı satırda oluşan child proses, o fork'tan dönen değer sıfır olduğu için o ife girmiyor ve bir sonraki else'e düşüyor. Ve gördüğünüz gibi parent ile child ile farklı işlemlerini gerçekleştirdi.
+
+123
+00:31:00,208 --> 00:31:10,067
+Bu şekilde. Böyle if koşuluyla fork sayesinde işlevlerini ayırabilirsiniz. Burada güzel bir örnek var. Bir saniye şunu sorayım.
+
+124
+00:31:15,604 --> 00:31:23,744
+Burada size kısa bir iki dakika vermek istiyorum. Şimdi dediğim gibi burada parent şey döndüreceği için içine giriyordu.
+
+125
+00:31:24,524 --> 00:31:31,964
+Site girmiyordu. Şimdi burada hatta güzel sınavda da böyle bir tane gelebilir hatta size de böyle bir tüyo vereyim.
+
+126
+00:31:32,284 --> 00:31:36,084
+Yani böyle arka arkaya fork geliyor. Bir sürü site prosesler oluşuyor.
+
+127
+00:31:36,915 --> 00:31:38,996
+Bunun sonucunda ekrana ne yazdın?
+
+128
+00:31:39,415 --> 00:31:44,596
+Şimdi burada bilmeniz gereken önemli bir şey, parent işini bitirmeden onu oluşturacağı chide başlayamaz.
+
+129
+00:31:45,355 --> 00:31:50,875
+Sizce bunun sonucunda online'daki arkadaşlar da normal sohbete yazabilir sonucunu.
+
+130
+00:31:51,375 --> 00:31:53,056
+Size de bir iki dakika vermek istiyorum.
+
+131
+00:31:53,855 --> 00:31:55,516
+Az önceki işlemin aynısı olacak.
+
+132
+00:31:55,776 --> 00:31:59,276
+Parent, fork'tan sayı döndüreceğinin içine girecek, chide girmeyecek.
+
+133
+00:32:00,536 --> 00:32:01,387
+Parent...
+
+134
+00:32:01,619 --> 00:32:05,799
+Pardon, çay oluşturduk, penaltın bitmesini bekleyecek ki o da işlemini yapsın.
+
+135
+00:32:09,299 --> 00:32:19,199
+Bunun sonucunda sizce ekran çıktısı ne olur bunun? Ben yine anlatacağım. Hani tek tek ne oldu yine bitiyor ama sizden de bir şey almak istedim. Bir iki dakika veriyorum sizlere.
+
+136
+00:32:21,779 --> 00:32:24,619
+Sizce ne yazdırıldı ekrana? Önce parent başlayacak.
+
+137
+00:32:39,443 --> 00:32:44,763
+Evet, pernaturası işini bitirecek, daha sonra çayıklar işine başlayacak.
+
+138
+00:32:44,963 --> 00:32:45,663
+İçişe karışacak.
+
+139
+00:32:46,083 --> 00:32:51,103
+Evet. Çayıklar arasında bazen işitim sistemlerinde senkronizasyon da bir şey olabiliyor.
+
+140
+00:32:51,103 --> 00:32:54,043
+Anlık çok hızlı şey. Ama pernaturası çayıkların karışması olmaz.
+
+141
+00:33:34,483 --> 00:33:35,703
+Her bir şey geldi.
+
+142
+00:33:37,503 --> 00:33:39,783
+2, 4, 1, 4, 1, 4, 1, 4, 3, 4, yanlış.
+
+143
+00:33:41,324 --> 00:33:42,584
+[öğrenci] galiba.
+
+144
+00:33:43,023 --> 00:33:45,023
+Doğru başladın ama bir yerde şey oldu.
+
+145
+00:34:16,211 --> 00:34:18,291
+Uğraşan var mı? Ona göre bekleyeyim.
+
+146
+00:34:20,632 --> 00:34:21,391
+Güzel.
+
+147
+00:34:22,152 --> 00:34:24,092
+Tamamdır o zaman. Yavaştan şey yapayım.
+
+148
+00:34:25,992 --> 00:34:27,132
+Kalemini yalattım ya.
+
+149
+00:34:29,251 --> 00:34:32,112
+Şimdi parent prosesimiz buradan başlayacak.
+
+150
+00:34:32,592 --> 00:34:33,152
+Buradan geliyor.
+
+151
+00:34:34,532 --> 00:34:35,751
+Mouse'u unutmuş. Neyse.
+
+152
+00:34:35,751 --> 00:34:36,791
+Dur bir mesaj.
+
+153
+00:34:37,652 --> 00:34:38,072
+Geldi.
+
+154
+00:34:40,332 --> 00:34:43,552
+Çok yaklaştım biliyor musun? [öğrenci]. Çok yaklaştım.
+
+155
+00:34:45,268 --> 00:35:11,007
+Neyse, şimdi anlatayım. Şimdi parent prosesimiz buradan başlıyor. Tamam, şimdi fork parent proses için neydi? Bir id değeri döndürüyordu. Yani sıfır değil. Demek ki bu if'in içine girecek. Tamam, girdik. Parent şu an ikinci if'te. Şimdi şöyle yazalım Atta. Şu an şu birinci prosesim, yani ana prosesim. Şu an sistemde bulunan prosesleri yazdıracağım. Şu an hala bir parent prosesimiz var. Bu fork'tan dolayı ikinci proses oluşuyor. Bir child proses oluştu.
+
+156
+00:35:12,179 --> 00:35:21,880
+Ancak tabii hala birdeyim ben. İki daha beni bekliyor. Şimdi buraya geldim. Burada ne yaptı ana prosesimiz? Bir çay daha oluşturdu. Şimdi sistem de benim.
+
+157
+00:35:22,996 --> 00:35:30,695
+Şu satıra geldiğimde, şu satıra çalıştırdığımda, şu ikinci ipte, üç tane processim var. Bir tane ana process, iki tane side process.
+
+158
+00:35:31,316 --> 00:35:37,176
+Şimdi bunun içinde bir id değerini önünecek. Ancak burada gördüğünüz gibi değil işlemi olduğu için bu ife girmeyecek.
+
+159
+00:35:37,735 --> 00:35:42,436
+O zaman nereye girecek? İkiye girecek. Şöyle out yazayım, yani çıkış olarak diyeyim.
+
+160
+00:35:45,316 --> 00:35:45,916
+Şöyle.
+
+161
+00:35:47,635 --> 00:36:14,296
+Burada dediğim gibi bir child proses da oluşurdu. Bir id, bir sayı döndürdü. Ancak değilini aldığımız için bu ife girmeyecek. Nereye geldi? 2'ye. Else yani. 2'yi yazdırdık. Tamam. Burada işimiz irtti. Zaten ilk başta da şu ife girmiştik. Bu else de girmeyeceğiz. En sonundaki 4'ü yazdırdık. Tamam. Şimdi parent prosesi işim bitti. Parent işini bitirdi. Şimdi ben ilk child'i nerede oluşturmuştum? Şurada oluşturmuştum.
+
+162
+00:36:14,739 --> 00:36:28,939
+İlk çayt burada bu fork değeri için ne döndürecekti? Sıfır döndürecekti. Demek ki bu if'e girmeyecek. If'e girmeyeceği için neye düşecek? Else düşecek. Else düşeceği için 3'ü yazdıracak. En sonu 4'ü yazdıracak.
+
+163
+00:36:32,307 --> 00:36:57,507
+Tamam. İkinci proses için de işim bitti. Yani şuradaki birinci if de oluşturdum, child prosesi de işim bitti. Şimdi geliyorum, parent'ın oluşturduğu ikinci child prosesi geliyorum. O burada oluşmuştu. Şimdi bunun için sıfır değeri döndürecekti fork ama değerini aldığımız için içine girecek. If'in içine. If'in içine girince bir fork da oluştu. Yani child kendi child'ini bir daha oluşturdu. Yani ne oldu aslında? Sistemde şu an dördüncü prosesim oluştu.
+
+164
+00:36:58,068 --> 00:37:14,868
+Ancak bu yine bekliyor burada. Burada artık buna hani şuna normal çağ et ama hani şu anlık parent diyelim. Bu ne yaptı? Bu işin bittirdikten sonra geldi biri yazdırdı. En son bu her şey bittikten sonra şu if'e girdiğimiz için en son else'e düştü 4 yazdı.
+
+165
+00:37:17,007 --> 00:37:24,768
+Tamam. Üçüncü prosesledi işin bitti. Sonra burada bir çağ prosesi oluşmuştu. Çaldın çaldı. Burada ne yaptı? Herhangi bir...
+
+166
+00:37:24,768 --> 00:37:30,668
+if koşuyorkun bir şey yok. Geldi biri yazdı. En sonunda geldi dördü yazdı.
+
+167
+00:37:34,835 --> 00:37:58,055
+Anlaşıldı mı? Yani tekrar anlatmamı ister misiniz? Anlaşılmayan bir şey varsa. Ya dediğim gibi burada ana şeyi oturtursanız gerisi kolay. Yani for parent process için, child process'ın id'sini döndürdüğü için if'e girer. Burada değil olduğu için girmedi şurada. Child process'ı da o değer sıfır olduğu için artık if koşullu nasılsa ona göre girer veya girmez. Şey, tabii.
+
+168
+00:38:03,668 --> 00:38:04,868
+Nasıl anlamadım sonunu.
+
+169
+00:38:08,268 --> 00:38:09,068
+Şurada mı?
+
+170
+00:38:11,188 --> 00:38:11,868
+Evet.
+
+171
+00:38:12,488 --> 00:38:12,688
+Aynen.
+
+172
+00:38:14,327 --> 00:38:14,748
+Hayır, hayır.
+
+173
+00:38:15,268 --> 00:38:16,007
+Yani şöyle.
+
+174
+00:38:18,668 --> 00:38:22,688
+Şuradaki mesela şurada oluşturduğumda ben bir değer atasaydım.
+
+175
+00:38:23,908 --> 00:38:24,788
+Şurayı diyorsun değil mi?
+
+176
+00:38:25,688 --> 00:38:26,448
+Şu son forkta.
+
+177
+00:38:28,148 --> 00:38:30,427
+Sonuçta o da şunun ID'sini dönecekti.
+
+178
+00:38:33,460 --> 00:38:33,900
+Evet.
+
+179
+00:38:35,840 --> 00:38:36,539
+Aynen öyle.
+
+180
+00:38:38,020 --> 00:38:41,480
+Orada işte hangisi karans, hangisi çağırsa ona göre şey olacak.
+
+181
+00:38:43,300 --> 00:38:45,140
+Durum bu şekilde arkadaşlar bu soru için.
+
+182
+00:38:45,240 --> 00:38:49,860
+Yani dediğim gibi mutlaka böyle hani aynısı olmasa da forkların yerleri değiştirilir, şeyleri değiştirilir.
+
+183
+00:38:49,900 --> 00:38:52,140
+Böyle bir tane güzel bir soru oluyor genellikle.
+
+184
+00:38:52,300 --> 00:38:53,140
+Öyle bir tüyü veririm.
+
+185
+00:38:53,220 --> 00:38:56,199
+Hani bunu zaten kodları ve sunumu sizden dersin konuda paylaşacağım.
+
+186
+00:38:56,199 --> 00:39:00,079
+Siz de kendinize göre düzenleyip şey yapabilirsiniz.
+
+187
+00:39:01,235 --> 00:39:19,475
+Hocam, dördüncü aşamayı tekrar eder misiniz? Şu kısım mı bahsediyorsun? Şu üçüncü saatte. Evet, [öğrenci], evet. [öğrenci], dördüncü aşama dediğin şu kısım mıydı? Yanlış anlattın. Ya da dur, en baştan hızlıca bir de anlatayım da şimdi aksam olmasın.
+
+188
+00:39:21,108 --> 00:39:24,328
+Programa çalışan preprocessin, bin numara proses diyelim.
+
+189
+00:39:24,748 --> 00:39:28,528
+Fork için çalıştırdığımda kendisi bir değer döndürüyor.
+
+190
+00:39:29,028 --> 00:39:31,307
+Değer döndürdüğü için bu ifin içine giriyor.
+
+191
+00:39:31,988 --> 00:39:35,368
+Ifin içine girdikten sonra ikinci prosesim oluşuyor burada, child prosesim.
+
+192
+00:39:35,728 --> 00:39:40,248
+İkinci prosesim burada, pardon birinci prosesim şey oluşturdu, if'e girdik.
+
+193
+00:39:40,648 --> 00:39:43,148
+If'e girdiğinde bu fork bir daha bir proses oluşturuyor, child proses.
+
+194
+00:39:43,188 --> 00:39:44,387
+Üçüncü prosesimi oluşturdum.
+
+195
+00:39:44,387 --> 00:39:48,208
+Yine bir değer döndürüyor ancak burada ünlem yani değli olduğu için buraya girmiyor.
+
+196
+00:39:48,692 --> 00:40:04,912
+2'ye giriyor, yani else'ye düşüyor ve en son çıkıyor 4'ü yazdırıyor. Birleşim bitti. Birinci side process, yani iki numaralı bir prosesi nerede oluştu? Burada oluştu. Bunun için fork değeri nedir? 0'dır. E 0 buraya girmeyeceği için else'ye düşecek 3 ve 4'ü yazdırdı. Tamam, 2'le deşim bitti.
+
+197
+00:40:06,099 --> 00:40:27,159
+3 nerede oluşmuştu? Burada oluşmuştu. Normalde bunun için dönen değer nedir? 0'dı. 0'ın değil aldığımızda içeri girecek. İçeri girdiğinde bu bir fork daha oluştu. Demek ki bunun da bir tryt prosesi oluştu. 4 numaraların prosesi oluştu. Ancak bu hala bundayın. 3 değil. 3 geldi, 1'i yazdırdı, 4'ü yazdırdı. Şurada bir tryt proses oluşmuştu.
+
+198
+00:40:27,635 --> 00:40:34,275
+O da normal, herhangi bir if koşulu gibi bir şey yok. Geldi, bir yazdı, dört yazdı. En sonunda iki, dört, üç, dört, bir, dört, bir, dört oldu.
+
+199
+00:40:35,555 --> 00:40:37,996
+Burada da şeyi görebilirsiniz, çiftliği görebilirsiniz.
+
+200
+00:40:40,876 --> 00:40:42,095
+Durum bu şekilde burada.
+
+201
+00:40:43,095 --> 00:40:51,435
+Şimdi ne demiştik? Hani proses oluşturmak için sistem çağrılanı, yani kullanıcının şey yaptığında fork fonksiyonu vardı.
+
+202
+00:40:51,635 --> 00:40:52,735
+Bu fork fonksiyonu ne yapıyordu?
+
+203
+00:40:53,235 --> 00:40:58,195
+ID alanındaki her alan aynı kalıp şeyi değiştiriyordu.
+
+204
+00:40:58,395 --> 00:40:59,595
+ID'sini değiştirerek alan aynı.
+
+205
+00:40:59,715 --> 00:41:03,083
+Şimdi exec fonksiyonu ise artık...
+
+206
+00:41:03,507 --> 00:41:24,967
+Yani forklar nasıl sonuçta, parent da olsa, chat da olsa ana programı çalışıyor. Oradaki ifler şudur. Ancak exec'te biz artık farklı bir koda geçiyoruz. Farklı bir programa geçiyoruz. Yani exec'te ana programdan çıkıp o prosesi farklı bir program çalıştırmasını istiyoruz. Yani ne demek istiyorum? Burada çeşitli exec fonksiyonları var. Bunlara bakarsanız. Şimdi şöyle küçük bir örnek göstereceğim.
+
+207
+00:41:30,612 --> 00:41:32,412
+Şimdi şunu önce söyleyeyim, öyle anlatayım.
+
+208
+00:41:33,992 --> 00:41:38,931
+Şimdi şurada, işte yine forkta bir şey oluşturduk, problem değil.
+
+209
+00:41:40,452 --> 00:41:41,692
+Parade ve child process.
+
+210
+00:41:41,851 --> 00:41:49,652
+Child process buraya geldiğinde, tamam şu print yazılınca, şurada bu exec fonksiyonunda artık diyoruz ki, sen bu programdan çık child process için.
+
+211
+00:41:50,211 --> 00:41:55,032
+Şu yazacağım işte bu, az sonra da örnek bu değil ama, hani önleyin.
+
+212
+00:41:55,635 --> 00:42:00,496
+O an o dizinde bulunan dosyaları yazdır gibi.
+
+213
+00:42:00,615 --> 00:42:07,496
+Yani ana programın işleminden çıkarıp farklı bir işlev yaptırmak istiyorsam o prosesi exec fonksiyonunu kullanıyorum.
+
+214
+00:42:07,755 --> 00:42:08,815
+Mesela şöyle örnek göstereyim.
+
+215
+00:42:18,771 --> 00:42:19,771
+Ne de benim ki?
+
+216
+00:42:19,771 --> 00:42:20,771
+Nana.
+
+217
+00:42:27,315 --> 00:42:29,996
+Ay, nabur, boğaz, bishimliyav.
+
+218
+00:42:35,764 --> 00:42:40,588
+Şimdi şuradan yine şu parents'ı. Şimdi burada diyorum ki mesela şu exec fonksiyonu çağırıp...
+
+219
+00:42:40,947 --> 00:42:56,327
+L, S, L yani bildiğiniz hani bu o dizinde bulunan şeyleri gösterdi diyeceğim. Hangi dosyalar var, neler var gibi. Exec fonksiyonunda dediğim gibi ana programdan çıkıp artık yeni bir program, yeni bir kod çalıştırmasını istiyorum gibi düşünebilirsiniz burada.
+
+220
+00:42:56,327 --> 00:43:07,387
+Şimdi bunu çalıştırdığımda ne bekliyorum? İşte parent işlemini yaptı diyecek, child işlemini yaptı diyecek ve daha sonra hangi dizinde bulunuyorsa o dizinde bulunan dosyaları listelemesini isteyeceğim ben burada.
+
+221
+00:43:07,891 --> 00:43:08,831
+Onu bekliyorum.
+
+222
+00:43:10,331 --> 00:43:11,011
+Bakalım.
+
+223
+00:43:18,676 --> 00:43:19,676
+Eksine.
+
+224
+00:43:29,748 --> 00:43:54,748
+Ne oldu burada? Şimdi yukarıda gözüküyor yüksek temalle. Aynen öyle. Şimdi şurada şeyi yazdı. Parent bir şey yapıyor, child bir şey yapıyor. Daha sonra şurada gördüğünüz gibi hangi şu exec on, şu gibi gibi bütün dosyaların şeylerini listeledi bana. Yetkileriyle beraber şeyi listeledi. Yani burada dediğim gibi ana bilmeniz gereken fork da...
+
+225
+00:43:55,092 --> 00:44:18,672
+Normal ana programda devam edip, tabii farklı işleler yaptırabiliyoruz. Ancak exec'te artık o proses farklı bir alana geçiyor, farklı bir program çalıştırıyor. Böyle farklı bir işlem yaptırmak istiyorum o prosesi. Bunu exec'te yapabilirim. İşte orada çeşitli kullanım farklı fonksiyonları vardı şunları. Bunlara bakarsınız. Her biri farklı bir şey çalıştırıyor. Farklı bir işlevi için. Burada kısaca bunu göstermek istedim.
+
+226
+00:44:20,552 --> 00:44:21,672
+Şimdi şurada...
+
+227
+00:44:22,164 --> 00:44:28,744
+Process sonlandırmada, hani C programlarını düşünüyorum, en son bitirdiğimizde return 0 ile bitiririz.
+
+228
+00:44:29,024 --> 00:44:31,004
+Hani programı, bir şey döndürmesi ne demek ki.
+
+229
+00:44:31,004 --> 00:44:37,104
+Bu proseslerde de bitirmesi için normal bir şekilde, düzgün bir şekilde sonlandırmak için exit fonksiyonu vardır.
+
+230
+00:44:37,224 --> 00:44:42,164
+O exit 0, bu prosesin düzgün bir şekilde sonlandırdığını söyleriz, yaparız.
+
+231
+00:44:42,704 --> 00:44:48,084
+Add exit ise, diyoruz ki biz, mesela parent proses için, ya parent.
+
+232
+00:44:48,463 --> 00:45:02,003
+Tamam sen bitiyorsun, exit de bitireceksin. Ya bitmeden senden son bir kez daha bir şey istiyorum, bir şey yapmanı istiyorum. Bunu yapar mısın diyoruz. Yani et exit o prosesini sonlandırmadan önce son bir işlem yapıp öyle bitmesini istiyoruz.
+
+233
+00:45:02,512 --> 00:45:30,512
+Wait is onu şimdi bir sonraki slide'larda daha detaylı anlatacağım. Bu proseslerin senkronizasyonla ilgili yani onu bekle, o işlemini yapsın sonra bit gibi işlemleri yarıyor. Ama burada önce bilmeniz gereken exit prosesi sonlandırmaya yarıyor. Add exit o da sonlandırıyor ancak sonlandırmadan, son işlemini bitirmeden bir işlem daha yapmasın istiyoruz bu prosesi. Yani o işlemi yap, öyle sonlandırıyoruz. Wait ise o senkronizasyon, çağırt prosesinin senkronizasyonla ilgili o bir sonraki slide da var. Onu daha detaylı anlatacağım.
+
+234
+00:45:30,512 --> 00:45:37,572
+Burada az önce dediğim gibi, return ile exit'in farkı, return bir programın dilinde çalınan bir fonksiyon çağrısı olarak düşünebiliriz.
+
+235
+00:45:37,672 --> 00:45:46,172
+O programı bitirme veya bir fonksiyonun değer döndürmesiyle ilgili bir, programın dilinde ilgili bir fonksiyon çağrısı.
+
+236
+00:45:46,292 --> 00:45:53,052
+Exit ise bir sistem call olarak adlandırılıyor. Yani o prosesin, o terminalde sonlandırılmasını sağlıyor.
+
+237
+00:45:53,972 --> 00:46:02,372
+Şimdi burada mesela et exit ile ilgili bir örnek var. Yani burada ne bekliyoruz? Biz şimdi parent proses buraya geldiğinde, burada child proses oluşturuyor.
+
+238
+00:46:02,372 --> 00:46:17,512
+Parent, şunu yazıyoruz, parent diyecek ancak, yani şurada exit ile çıkacak ya bitecek, sonra child işin başlayacak. Bitmeden önce şu et exit yazdım ya, şu parent clear fonksiyonunu yapacak. Yani clinic apparent diyecek.
+
+239
+00:46:17,840 --> 00:46:23,340
+Daha sonra bitecek. Daha sonra da process işlemini yaptıracak. Şimdi mesela bunu deneyelim.
+
+240
+00:46:28,500 --> 00:46:29,387
+Evet.
+
+241
+00:46:33,748 --> 00:46:34,208
+Ve çeke.
+
+242
+00:46:48,403 --> 00:46:59,823
+Şimdi burada ne oldu? En baştaki ilk print'i yazdırdı. Parent'ın id'sini yazdırdı. Daha sonra bitmeden önce ne dedik? etExit fonksiyonu çağırdı. Dedik ki sen bitmeden önce şu fonksiyonu yap, o fonksiyonu da ne yazıyordu?
+
+243
+00:47:00,144 --> 00:47:06,403
+İşte print şu ifade yazıyordu. Onu yaptı. Daha sonra çağırt prosese geçtik. O da kendi id'sini döndürdü.
+
+244
+00:47:07,344 --> 00:47:14,844
+Yani burada dediğim gibi etExit işlem bitmeden önce prosese bir işlem yap. Öyle bitmesini istiyoruz ondan. Bunu sağlıyor.
+
+245
+00:47:16,148 --> 00:47:44,128
+Şimdi zombie processler diye bir şey var. Normal dediğim gibi exit'de şey bittiğinde process sonlanıyor. Process table'dan o process siliniyor ve işlem bitiyor. Ancak bu process table'dan silinemediği, yani işlemini bitiriyor kodda bakıyorsun işlem bitmiş ama process table'dan silinemediği durumlarda işte parent, child'ın bittiğini göremiyor. İşte child orada bir lupa girmiş olabilir veya bir şey olmuş olabilir veya parent bitmemiş olabilir. Yani aslında bitmiş gibi yüzgü ama halbuki bitmeyen.
+
+246
+00:47:44,148 --> 00:48:06,148
+Yani hala yaşayan zombi, hani zombi şeyine ne düşünüyorsun? Aslında ölü ama yaşıyor gibi düşünebilirsiniz. Bu da onun gibi. Yani aslında bitmiş ama o sistem onu öldürememiş o an. Herhangi bir sistem çağrısıyla veya kendisi, o process level'dan sininlememiş proseslere deniliyor. Yani burada örneğin gördüğünüz gibi, burada while birden oluyor, parent zombi, yani aslında bitiyor. Ama while sonuçlu dönemişsinde kaldığı için...
+
+247
+00:48:07,503 --> 00:48:22,344
+Chide bitemiyor. Yani parent chide'i bitirdiği için şey bitemiyor. Keza şurada da chide, parent bitmiş. Yani şey bitmiyor ancak chide sonsuz döngüye girdiği için parent son şeyin, chide prosesinin bittiğini göremiyor. Onu öldüremiyor.
+
+248
+00:48:23,315 --> 00:48:40,675
+Zon bir proses dediğim gibi bir durumdan kaynaklı, bu while olabilir veya hangi bir şey olabilir. Aslında bitiyor ama sistem onu bitiremiyor. Tabi bunda yöntemleri var. Onu sonunda göstereceğim. Kill fonksiyonu var. Yani siz process ID'yi verip kill ile o prosesi öldürebilirsiniz.
+
+249
+00:48:47,188 --> 00:49:13,528
+Parent, bir tane parent var. Ancak parent, kendisine ait birden fazla child process oluşturabiliyor. Ben bu child bitmeden, biz burada wait'de şunu sağlıyoruz. Yani parent, sen bitme. Normalde dediğimiz gibi child process'ın dış işlemesi gerekiyor. Parent bitecek ki child işlemi beklesin. Ancak biz diyoruz ki parent'e, sen bitme. Child process'lerin bitmesini bekle öyle. Yani child ile parent arasında bir senkronizasyon yapmaya çalışıyoruz. Yani nasıl ne demek istiyorum mesela? Şurada.
+
+250
+00:49:16,275 --> 00:49:24,395
+İşte kaç tane çayt oluşuyoruz? Beş tane belirtilmiş burada. Bu beş ile şuradaki if'e gördüğünüz gibi beş tane şey oluşturacak.
+
+251
+00:49:24,395 --> 00:49:30,055
+Şey çekip fork oluşturacak döngüde. Yani bu penaltıma ait benim olacak beş tane çayt oluşturacak.
+
+252
+00:49:30,612 --> 00:49:53,952
+Ancak burada if eğer sıfırsa diyor ya, sonuçta şu an sıfır değil. Yani parent bu if'i sürekli beş kere çalıştıracak. Beşinde de bu içeri girilmeyecek. Çünkü dönen değerler şey, neden ona bir ID, bir değer. O yüzden şurada child process'ı açıyor. Şu an şu if'in satırında bekliyor beş tanesi. Şimdi buraya geliyor parent process. Yine bu şey beş kere bekleyecek.
+
+253
+00:49:54,708 --> 00:50:19,488
+Wait fonksiyonu ne demek? Bu wait fonksiyonu bu child status ne demek? Şimdi child status ne demek? Bu wait fonksiyonu atadığım bu child status, wait fonksiyonu şunu sağlıyor. Sistemde şu an herhangi bir child process beklemede mi? Yani şu an oluşturulmuş ama çalışmıyor. Yani şu an parent'ın bitmesini bekleyen şu an bir sistemde process var mı? Bunu sağlayalım bu wait.
+
+254
+00:50:19,923 --> 00:50:44,923
+Eğer varsa, bu child status'ı o, process'in id'sini döndürüyor. Yani diyor ki, şu an, şu id ile process bekliyor, diyor. İşte burada da şu macro şey fonksiyonla bu status var mı diye kontrol ediyoruz. Yani bekleyen bir child process var mı diye bekliyoruz. Varsa, işte içeri girip, şu ekrandaki şeyi yazdım, şeyi bekliyoruz. Yani...
+
+255
+00:50:45,235 --> 00:50:50,056
+İşte sırayla oluşturulan child process'ların burada id'sini ve statüsünü yazdık.
+
+256
+00:50:50,056 --> 00:51:01,655
+Burada dediğim gibi ana bilmemiz gereken wait fonksiyonu parent'ı bitirmeyip oluşturduğu child process'a eğer bekleyen varsa bekleyenlerin id'sini döndürüyor bize.
+
+257
+00:51:03,275 --> 00:51:05,556
+Şimdi mesela bunu da çalıştıralım.
+
+258
+00:51:29,012 --> 00:51:40,811
+Şimdi burada işte dedim ki bazen child process'lar arasında o işletim sisteminden kaynaklı, anlık olarak bazen şeyler, aslına bakayım kayma olmuş mu? Evet şurada bir şey olmuş sadece. Çok problem değil.
+
+259
+00:51:41,632 --> 00:51:46,012
+Burada ne oldu? Theret process bitmeden önce child process'lerin...
+
+260
+00:51:46,420 --> 00:51:58,039
+Chate prosesleri oluşturduk. Ancak parent bitmeden önce bu chate'ların bitmesini bekledik. Yani sırayla bu chate bitti, bu chate bitti, bu chate bitti, bitti, bitti, en son parent prosesini bitirdi.
+
+261
+00:51:58,460 --> 00:52:10,300
+Burada da işte chate'ların id'sini ve hangi statü ile döndüğünün şeyini görüyorsunuz. Yani burada yine anlatmak istediğim buradaki wait fonksiyonu parent prosesi diyor ki sen bitme.
+
+262
+00:52:11,699 --> 00:52:37,199
+Oluşturdun eğer sistemde bir child proses varsa onların bitmesini bekle. Exit ile onların burada işte hangi sistemde hangi child id varsa onları bul ve yaz şey artık ne yapmak istiyorsak ona bağlı olarak şey yapabilir. Mesela burada bir farklılık olarak hani biz burada 5 tane oluşturduk ya ben altta 5 kere bekle değil de 6 kere bekle dersem ne olacak?
+
+263
+00:52:38,672 --> 00:53:05,672
+Tamam, beklentimiz ne? Önce o 5 taneyi yazdıracak, daha sonra 6.yi bekliyoruz. İyi de wait fonksiyonuna bakıyoruz. Sisteme daha o parent prosesin oluşturdiği bir chart prosesi yok. O zaman ne olacak? Bir değer bulamadığı için eksi bir değeri döndürecek. Şurada da gördüğünüz gibi. En sondaki o 6. fork, yani 5 kere döndürmüştük burada. 5 kere chart oluşturmuştuk şu forkta. Burada 6 kere döndürüyoruz. O zaman 6. döndürümde ne olacak? Öyle bir...
+
+264
+00:53:06,260 --> 00:53:09,060
+Halk prosesi olmadığı için eksi bir değerini döndürecek.
+
+265
+00:53:10,500 --> 00:53:16,260
+Şimdi son örneğimiz ise, hani mesela zombi proses demiştik veya...
+
+266
+00:53:16,436 --> 00:53:33,796
+Parent process, o an child process'i daha kendisi bitmeden bitirmek istiyorsa, yani bir işe mi yapıp daha sonra bitirmek istiyorum gibi bir şey yapmak istiyorsa, bunu kill fonksiyonu, şurada gözükebilir ki kill fonksiyonu, bu kill fonksiyonuna iki şeyi vermeniz gerekiyor.
+
+267
+00:53:33,796 --> 00:53:42,695
+Bir, hangi prosesi öldürmek istiyorsun? Yani işimini bitirmeden veya bittiyse de zombi prosesi onu sistemden silmek istiyorsan, kısacası işimini bitirmek istiyorsun o prosesin.
+
+268
+00:53:44,436 --> 00:53:58,516
+Bir sonraki uygulamada göreceksiniz. Sinyaller dediğiniz bir kısma bir sinyal göndermeniz gerekiyor. Yani hangi sinyalle bitirdiğinize dair. O kill fonksiyonuyla ID'sini gönderdiğiniz şahit prosesi sonlandırabilirsiniz.
+
+269
+00:53:59,215 --> 00:54:07,336
+Şimdi burada da mesela şöyle örnek göstereyim. Bu kodla ne yapıyorduk? Aslında kodu önce anlatayım. Öyle hemen örneğe geçeyim. Daha net anlaşılır.
+
+270
+00:54:09,492 --> 00:54:31,492
+Tamam, işte burada şeyim var. İşte burada forkla oluşturuyorum ben parent prosesimi. Şu an bir şey döndüreceği için else düşecek. Çünkü idim sıfırdan büyük. Ne olacak? İşte kendi idisini yazdıracak ve oluşturduğu child prosesin idisini yazdıracak. Daha sonra da bir beklemesini söylüyoruz parent'a. O parent bekledikten sonra o child...
+
+271
+00:54:32,019 --> 00:54:48,059
+Proses işleme başlayacağı için, şurada başladığında biz aynı zamanda parent değişiklik burada bekle dediğimiz için şu an biraz şey oluyor burada. Parent da prosesin, child da parent'ın hafif işlevliğini de bozuyoruz demeyeyim de hafif değişiklik yapıyoruz.
+
+272
+00:54:49,059 --> 00:54:56,339
+Parent buraya geldiğinde ben child IT'yi tutmuştum ya, diyoruz ki bunu öldür. Child o an buradayken.
+
+273
+00:54:57,235 --> 00:54:59,996
+O side process'in işlemini bitiriyoruz.
+
+274
+00:55:00,856 --> 00:55:02,536
+Mesela onu şöyle göstereyim.
+
+275
+00:55:07,715 --> 00:55:09,715
+Şu ağzımda çok bitti yani.
+
+276
+00:55:34,324 --> 00:55:35,083
+Şimdi ne oldu?
+
+277
+00:55:35,583 --> 00:55:37,183
+Ben bir şey yazdırdım.
+
+278
+00:55:37,923 --> 00:55:40,423
+Parrot process'in o bilgilerini yazdırdım.
+
+279
+00:55:40,543 --> 00:55:41,543
+Kendi ID'si bu.
+
+280
+00:55:41,623 --> 00:55:43,324
+Oluşturduğu child process'in ID'si bu.
+
+281
+00:55:43,663 --> 00:55:45,003
+Daha sonra o slip yaptım.
+
+282
+00:55:45,083 --> 00:55:46,003
+İki saniye uy dedim.
+
+283
+00:55:46,063 --> 00:55:46,583
+Bekle dedim.
+
+284
+00:55:47,063 --> 00:55:48,643
+O ara child process çalışmaya başladı.
+
+285
+00:55:48,743 --> 00:55:49,763
+ID'si ne de çalışıyordu.
+
+286
+00:55:49,864 --> 00:55:52,364
+Ve daha sonra hemen aslında kill fonksiyonu vardı.
+
+287
+00:55:52,723 --> 00:55:58,563
+O kill fonksiyonuyla ilgili child process'in ID'sini yazdırdığımda o prosesi öldür diyorum.
+
+288
+00:55:58,663 --> 00:55:59,563
+İşlemini bitir diyorum.
+
+289
+00:55:59,563 --> 00:56:03,563
+Ve burada gördüğünüz gibi eğer doğru bitirdiyse bir sıkıntı yoksa şey yazdım.
+
+290
+00:56:03,583 --> 00:56:21,743
+Parot process, şu ilgili id ile child process'i öldürdü diyorum. Bunun gibi id'sini vererek bir prosesi bitirebilirsiniz. Direkt kodda da. Normal sistemin bitirmesini beklemeden, başka bir işlem yapmasını istemiyorsanız kill function ile de o prosesi öldürebilirsiniz.
+
+291
+00:56:25,300 --> 00:56:29,964
+Başka bir şey yoktu hatırladığım kadarıyla. Evet arkadaş, yani processlerle ilgili...
+
+292
+00:56:29,972 --> 00:56:35,032
+Anlatacaklarım bu kadar. Yani dediğim gibi nasıl oluşturulur sistemde, kullanıcı tarafında?
+
+293
+00:56:35,472 --> 00:56:42,211
+İşte forkta ne oluyor, ne döndürüyor? İşte ID döndürüyor. ID'yi dönüyor, parent farklı bir iş yapıyor, child farklı bir iş yapıyor.
+
+294
+00:56:43,012 --> 00:56:50,352
+İşte weightlerle birbirini bekletmesini sağlıyoruz. Zombiyle ne oluyor? Bitmemiş, aslında bitiyor ama sistem onu bitiremiyor.
+
+295
+00:56:50,352 --> 00:56:57,932
+İşte kill fonksiyonu ile ilgili belirttiğimiz ID'li prosesini öldürebiliyor.
+
+296
+00:56:57,972 --> 00:57:04,152
+Sistemin önce bitirmesini beklemeden biz kullanıcı tarafında bunu yapabiliyoruz.
+
+297
+00:57:04,512 --> 00:57:08,332
+Gene anlatacaklarım bu kadar prosesle ilgili. Yani zevkli bir konu proses gerçekten.
+
+298
+00:57:08,532 --> 00:57:15,132
+Farklı farklı işlemler yaptırabilirsiniz. Dediğim gibi bu sunumla şeyi benim avasist saygımda paylaşacağım bu hafta.
+
+299
+00:57:15,452 --> 00:57:19,032
+Evet paylaşmasam biriniz mail atarsınız hatta satın atmak ama paylaşırım yüksek ihtimal.
+
+300
+00:57:19,752 --> 00:57:25,012
+Anlatacaklarım bu kadar arkadaşlar. Var mı herhangi bir merak ettiğini sormak istediğiniz?
+
+301
+00:57:26,900 --> 00:57:34,179
+Orfin'de mi?
+
+302
+00:57:38,619 --> 00:57:42,339
+Onda da sonuçta parent prosesi tarafından oluşturuluyor ya.
+
+303
+00:57:42,799 --> 00:57:48,420
+Orada işte o biraz şeyle yetkiyle alakalı bir şey var, o çağıyla Orfin dediğinin kısmı.
+
+304
+00:57:49,059 --> 00:57:53,019
+Yani farklı bir şey ama o biraz Parent'in yapacağı işleme bağlı olarak yapılan bir şey.
+
+305
+00:57:53,460 --> 00:57:59,860
+Öyle söyleyebilirim sana. Ama aslında sonuçta ikisi de bitmeyen bir şey. O şekilde yani.
+
+306
+00:58:04,820 --> 00:58:06,820
+Benimki bir ekran var, I am the best.
+
+307
+00:58:07,940 --> 00:58:11,680
+Sleep de yaptık mesela onu. Sleep de normalde şurada ne oldu?
+
+308
+00:58:19,820 --> 00:58:24,820
+Şimdi normalde şeyde neydi? Parent bitmeden normalde çıkayıp başlayamazdı.
+
+309
+00:58:25,056 --> 00:58:33,175
+Bu zaten bir durum. Parent ile child'ın beraber aynı anda çalışması için burada bir senkronizasyon bir şey yapman gerekiyor işte.
+
+310
+00:58:33,276 --> 00:58:36,615
+Dediğim gibi bunu farklı farklı şekilde atabilirsin. Bunlardan biri mesela sleep ile.
+
+311
+00:58:36,896 --> 00:58:42,655
+Yani sleep'e diyecek ki, parent bekle o an, child işlemini yapsın ama sleep bittikten sonra parent aslında işleme devam etmeye başlıyor.
+
+312
+00:58:43,036 --> 00:58:46,076
+Yani orada o senkronizasyonu farklı farklı şekilde ayarlayabilirsin.
+
+313
+00:58:50,756 --> 00:58:52,076
+O threadlerle alakalı.
+
+314
+00:58:52,820 --> 00:59:10,360
+Parent'ın içinde thread'ler var. Yani senin dediğin aslında o. Thread'leri, yani parent prosesin içindeki o thread'leri senkronizasyon etkiliyorsun. Aslında bir prosesin içinde farklı şey çalışıyor. O senin dediğin thread'ler, onu şeyde göreceksiniz. 2-3 uygulama sonra thread'ler var. Gerçi daha o vizeden sona mı renk gelir bilmiyorum. Senin dediğin thread'ler.
+
+315
+00:59:12,500 --> 00:59:13,200
+Rica ederim.
+
+316
+00:59:15,760 --> 00:59:18,480
+Tamamdır arkadaşlar. Denediğiniz için teşekkür ederim.
+
+317
+00:59:20,884 --> 00:59:24,703
+Ahmet Hocam, burada mısınız, sonlandırabilir miyim dersi?
+
+318
+00:59:30,387 --> 00:59:35,228
+Ahmet Beşem çıkmış arada tamamdır arkadaşlar. Dersi sondan duruyorum. Hepinizi iyi haftalar diliyorum. İyi günler.

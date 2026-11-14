@@ -1,0 +1,4643 @@
+1
+00:04:09,780 --> 00:04:14,319
+Evet, günaydın arkadaşlar. Ses geliyor mu internette? Online'a.
+
+2
+00:04:21,684 --> 00:04:24,664
+Düşüyor musunuz? Tamam. Güzel. Teşekkür ederiz.
+
+3
+00:04:58,612 --> 00:05:02,632
+Evet, bugünkü konumuz şöyle ekranımıza yansıtalım.
+
+4
+00:05:03,891 --> 00:05:11,112
+Deadlock üzerine olacak. Uygulamada interprocess communication hakkında şeyler yapacaksınız.
+
+5
+00:05:13,032 --> 00:05:20,632
+Önce ben geçen hafta söylemiştim birkaç uygulama göstereceğim diye. Bir ona bakalım.
+
+6
+00:05:27,732 --> 00:05:34,892
+Benim yapacağım uygulamaların daha detaylısını da bugün Fenerz Hoca yine dersin sonunda ben çıkacağım. Kendisi gelecek, o yapacak.
+
+7
+00:05:46,420 --> 00:05:51,460
+Temel anlamda ele aldığımız problem üretici, tüketici problemi olsun.
+
+8
+00:05:55,668 --> 00:06:22,867
+İlk başta en basiti hangisiydi? Semaphore ve mutex kullanarak. Tabii bendeki bilgisayarda bazıları çalışıyor, bazıları çalışmıyor Windows olduğu için. Çalışmayanları online deneyeceğiz veya Enes Hoca dener. Şimdi semaphore ne için kullanıyordu?
+
+9
+00:06:23,444 --> 00:06:36,104
+Eğer binary, semaphore dersek bir mutex anahtarı gibi bir anahtara sahipsek, laka sahipsek, olak sayesinde bir kritik section'da işlem yapabiliyorduk.
+
+10
+00:06:37,224 --> 00:06:43,124
+Buradaki örneğimiz şunun üzerine. Bir tamponumuz var. 10 elemanlı diye size atadım.
+
+11
+00:06:44,044 --> 00:06:50,884
+Prodüsür buraya bir rastgele say üretecek. Konzümür buradan rastgele say tüketecek ve bu sürekli devam edecek.
+
+12
+00:06:52,564 --> 00:06:54,244
+Önce şuradaki slipler açayım.
+
+13
+00:06:58,100 --> 00:07:23,560
+Tabi burada olay şu, bellek dolduysa prodüsürün bekleme durumuna geçmesi veya bellek boşaldıysa konsümürün bekleme durumuna geçmesi söz konusu olması lazım. Birisi belleğe ekleme yaparken öbürünü çıkarma yapamaması gerekiyor. Yani critical section problemi var. Genel olarak böyle. Tabi burada kullandığım şey semafor olduğu için.
+
+14
+00:07:24,915 --> 00:07:46,555
+Prodücör tarafından bakacak olursak ve en genel önce değişkenleri söyleyelim. Bir kere okuma, yazma, belli ekleme yapmak için, erişmek için mutex anahtarımız var. Bunu semaphore türünde kullanıyoruz. Buna mutex dedik. Boş ve doluluğu gösteren şeylerde de counting semaphore. Şöyle biraz büyütelim mi?
+
+15
+00:07:48,211 --> 00:08:05,211
+Counting Semaphore'lar kullanıyoruz. Bir tanesi boş olduğunu, diğeri de dolu olduğunu kontrol edecek. Bunların Semaphore kütüphanesinden şu değişkenler olsun. Aslında bunlar integer değerler de Semaphore'a özel olduğunu ifade etmek için kullandığımız şeyler.
+
+16
+00:08:05,211 --> 00:08:15,211
+Tabi burada iki farklı proses yok, iki farklı thread var. Sonuçta threadler de kendi aralarında senkronize edilmesi gereken yapılar.
+
+17
+00:08:15,795 --> 00:08:40,155
+Prodüsür bir sayı üretecek ama bekleyecek. Önce boş yer var mı diye bekleyecek. Boş yer varsa, buradan düşüyorsa ne yapıyordu bu? Sıfırdan küçük eşitse bekliyordu. Bunların başlangıç değerleri bakın şu an atanmamış. O nerede atanacak? Şurada atanacak. Semaphore Initialization dediğimiz şeyde. Kontrol ediyor.
+
+18
+00:08:43,059 --> 00:08:56,579
+Ondan sonra mutex'e sahip olup olmadığını kontrol ediyor. Eğer buraya geçiyorsa, şeyi arttırıyor, item'ı yazıyor ve hangi dizinin hangi gözüne yazdığını göstermek için de initial'ı bir arttırıyor.
+
+19
+00:08:57,619 --> 00:09:07,639
+Şurada bir bilerek bekleme verdim. Şimdi bu bekleme sayesinde bir saniye bekleyecek, biraz bekleyecek. Bekleme sayesinde şu olacak, hatta bir milisaniye bile olabilir, bilmiyorum.
+
+20
+00:09:09,172 --> 00:09:34,772
+O beklerken işletim sistemi öbür thread'e söz verecek. Yani prodüsürse, konsümer sözü geçecek. Doğal yoldan değil de birazcık zorlamayla context switching yaptırıyoruz thread'ler arası. Bunu yapınca da şunu görüyoruz. Biri üretti, öbürü tüketti. Biri üretti, öbürü tüketti gibi bir senaryo görüyoruz. Mutlaka önce üretim olacak, ondan sonra tüketim olacak.
+
+21
+00:09:37,235 --> 00:09:43,596
+Yine doluyor var mı kontrol ediyor. Aynı mantıkla işte diğer şeyler yazılıp gidiyor arkadaşlar.
+
+22
+00:09:45,115 --> 00:09:48,155
+Şurada da semaphoreları başlangıç değerlerine atıyoruz.
+
+23
+00:09:49,556 --> 00:09:53,655
+Threadleri oluşturuyoruz. Bu threadler birisi prodüser, birisi konsümin olarak çalışacak.
+
+24
+00:09:54,316 --> 00:09:59,995
+Threadler daha sonra join olacak. Ne demek bu? Ana program bitmedi.
+
+25
+00:10:00,000 --> 00:10:08,000
+Bu yüzden önce threadlerin sonlanmış olması lazım. Her şey biterken de semaphoreları release ediyoruz, destroy ediyoruz.
+
+26
+00:10:08,779 --> 00:10:14,899
+Aynı mallockta aldığımız bellek bölgesinin tekrardan free edilmesi gibi. Çalıştıralım.
+
+27
+00:10:17,440 --> 00:10:21,620
+Bakın thread olduğu için interprocess communication'e ihtiyaç duymadık.
+
+28
+00:10:22,836 --> 00:10:45,556
+41 ekledi, tüketti. 67 ekledi, tüketti. Rastgele sayılar olduğu için. Bakın böyle çok bir hani sanki bir senkronizasyon özel olarak ayarlanmış gibi bir durum var. Çünkü biz zoraki olarak prosesleri beklemeye aldırıyoruz. Bu beklemeden dolayı öbürüne sıra geliyor. Öbürüne sıra geldiği için ne oluyor? O aradaki bir tane üretilen şeyi tüketiyor. Şu slipleri kapatalım.
+
+29
+00:10:56,820 --> 00:11:04,840
+Burada ne var? Her şey daha gerçek hayat senaryosuna yakın. Şöyle şuradan alacak olursak. Mesela 41 ekledi diyor.
+
+30
+00:11:07,700 --> 00:11:18,539
+Tabii simüle edebilmek biraz var. Bakın 57 ekledi. Yani ekleme ve tüketmeler illa birer birer olması gerekmiyor. Arda arda olan durumlar da var.
+
+31
+00:11:19,660 --> 00:11:22,120
+Şöyle bir tam ekran görüntüsü durduramıyorum niyeyse bunu.
+
+32
+00:11:24,052 --> 00:11:25,412
+Veya şunu şöyle yapalım.
+
+33
+00:11:25,612 --> 00:11:25,852
+For
+
+34
+00:11:29,812 --> 00:11:33,812
+i eşittir sıfırdan, i küçük, yüze kadar.
+
+35
+00:11:35,612 --> 00:11:39,692
+Bu ne demek? Bu en fazla yüz tane şey üretilecek veya tüketilecek demek.
+
+36
+00:11:52,307 --> 00:11:54,488
+Başka bir yerde iyi yoksa sıkıntı olmaz.
+
+37
+00:12:00,563 --> 00:12:06,003
+Toplam üretim miktarı 41 ekledi, tüketti. Bakın 67 ekledi, 34 ekledi.
+
+38
+00:12:06,323 --> 00:12:12,104
+Yani kendisine context switching yapılmadan önce ne oluyor? İki tane şey ekleyebiliyor.
+
+39
+00:12:12,783 --> 00:12:17,483
+Sonra en son tüketileni tabi alıyoruz. Şu arada sıfır ekliyor. Böyle şey var.
+
+40
+00:12:18,124 --> 00:12:22,723
+Bakın yaptığım şey şu. Önce semaforlarla kontrol yapıyorum.
+
+41
+00:12:25,427 --> 00:12:32,988
+Kritik bölgeme giriyorum. Kritik bölgeden çıkarken de şurada yaptığım işlemin tersini, dolu sayısını bir arttıracağız.
+
+42
+00:12:34,728 --> 00:12:40,927
+Kampona erişimi bıraktıracağız. Yani o kritik bölgeyi release ettireceğiz.
+
+43
+00:12:42,288 --> 00:12:47,427
+Burada bakın weight ile aslında biz bir anlamda semaphorelarda PS...
+
+44
+00:12:47,923 --> 00:12:57,764
+Prebaron demiştik. Bir de vs. Kitabımızda da weight ve sinyale karşılık geliyordunlar. Ama c'de şeyde yazarken postx notasyonu muhtemelen bu.
+
+45
+00:12:59,463 --> 00:13:06,443
+P yerine weight var. Sinyal yerine de post. Tamam mı? Sadece isimleri değişik.
+
+46
+00:13:14,323 --> 00:13:41,603
+çalışmasıyla alakalı birinci şeydi. İkincisi de conditional variable'lar var demiştik. Şartlı değişkenler. Aynı örneği bu sefer iki tane conditional variable'la pull ve empty için kullanacağım. Yine mutex'i kullanıyorum burada da. Bakın burada şey yok, hani semafor yok da oradan mutex sahip olacağız. Bununla alakalı kütüvenler ekledik. Bir kere diyoruz ki önce mutex anahtarını al.
+
+47
+00:13:43,700 --> 00:13:53,500
+Dizi doluysa şurada bekleteceğiz. Beklerken de şunu yapıyoruz. Dizinin dolu olup olmadığını kontrol ettiğimde conditional variable'ı beklet diyorum. Wait durumunu al.
+
+48
+00:13:55,000 --> 00:14:01,420
+Bekletirken de tabi şuna bakıyor. Pull ve mutex üzerinde yani prodüse bu işi yapacak. Bu durumda bekleme yapacak.
+
+49
+00:14:02,180 --> 00:14:10,120
+Değilse geliyor nesnesini yazıyor. Ondan sonra uyandırma yapıyoruz. Niye? Çünkü bunlar wait state'e geçti. Wait state'de bekliyorlar.
+
+50
+00:14:10,899 --> 00:14:18,099
+Tüketiciyi uyandırmak için diyoruz ki şu şeyi uyandırabiliriz. Ondan sonra da mutex anahtarımı ırhlı izlediyoruz.
+
+51
+00:14:19,159 --> 00:14:34,199
+Aynısı diğer tarafta da empty ve şey için var. Burada da p-thread, mutex'in initialize edilmesi, conditional variable'ların initialize edilmesi, bunların hepsi şu kütüphaneler içerisinde p-thread altında olması lazım.
+
+52
+00:14:36,083 --> 00:14:45,783
+Bunlar kullanılabiliyor arkadaşlar. Amaç hem senkronizasyon hem de işte multi-track bir uygulama. Aynısı bu da olacak işte. Çok farklı okumda da.
+
+53
+00:14:51,251 --> 00:15:07,871
+Slipler kapandığı için bakın burada şey, geç slipler kapalı mıydı? Bir dakika. Açıktı herhalde. Ha kapalıymış. Evet, nedense bu yavaş yavaş çalışıyor. Arada çünkü o şeyler var. Beklemeyle alakalı yazdığımız notlar biraz geçit.
+
+54
+00:15:14,772 --> 00:15:25,632
+Bir de monitör anlatmıştık. Şimdi monitör doğrudan C'de yok. Ben size demiştim ki Java'da monitörle alakalı bir mekanizma var. Synchronized anahtar kelimesi.
+
+55
+00:15:26,632 --> 00:15:32,711
+Büyük yerde Java olmadığı için böyle açacağım şu an. Uzun uzun vakit kaybetmeyelim.
+
+56
+00:15:33,111 --> 00:15:39,611
+Bir tane monitör diye klasım var. Ha monitörü siz C'de yapar mısınız? Yaparsınız. Hatta onun örneği vardır.
+
+57
+00:15:40,019 --> 00:16:04,480
+Diyorum ki, consume edilecek bu fonksiyon senkronize olacak. Yani bir ortak kaynak üzerinde bu fonksiyon çalışırsa, aynı ortak kaynak üzerinde başka bir fonksiyonun çalışmasını engelliyoruz. Bunu kullanarak. Hatta bunu şöyle de kullanabilirsiniz. Örneğin bir tane diziniz var veya bir listeniz var. Sinkronize diyorsunuz. Şöyle blok açıyorsunuz cevap.
+
+58
+00:16:05,908 --> 00:16:27,587
+Bu inner classlardan gelen bir şey aslında, static classlardan. Burada da şey yapıyorsunuz, senkronize bir şekilde o dizi üzerinde işlem yapıyorsunuz. O dizi üzerinde işlem yaparken veya liste üzerinde bir başka senkronize bölüm şey yapmıyor. Bu bir basit bir monitör. Hani olabildiğince 3 seviyeden kullanıcı seviyesine, uygulama seviyesine yakın bir şey.
+
+59
+00:16:28,052 --> 00:16:47,451
+Aynı senaryo burada da. İşte bir tane prodüzürümüz var. Yine thread kullanıyor. Bir tane konzümürümüz var. Bunların hepsi de monitörden bir sample alarak, örnek alarak. Diyoruz ki işte monitörden başlat, bunu şuradaki threadlerle ilişkilendir, prodüzürü start et, konzümürü start et. Böyle devam et.
+
+60
+00:16:54,355 --> 00:16:56,795
+Prodücör için, pardon, Python'da şey yapmışım.
+
+61
+00:16:57,816 --> 00:17:00,875
+Bunu şeye yazıladım, chat.gp'te yazıladım. Var doğrudan.
+
+62
+00:17:01,895 --> 00:17:03,336
+Conditional Variable olarak.
+
+63
+00:17:03,936 --> 00:17:04,395
+Python'da.
+
+64
+00:17:05,635 --> 00:17:10,375
+İki tane yine Conditional Variable kullanarak aynı şeyleri yaptırdılar biliyorsunuz.
+
+65
+00:17:10,655 --> 00:17:12,415
+İlla CD olacak diye bir şey yok bu zaman.
+
+66
+00:17:15,115 --> 00:17:16,735
+Bunlar hep threadler arkadaşlar.
+
+67
+00:17:17,135 --> 00:17:18,556
+Bakayım şurada bir şey daha vardı.
+
+68
+00:17:20,243 --> 00:17:22,903
+C'de nasıl monitör yaparız?
+
+69
+00:17:24,183 --> 00:17:26,304
+Şimdi bir monitörün kitabımızda da vardı.
+
+70
+00:17:26,723 --> 00:17:31,563
+Olması için hani bir kondisyon, iki kondisyonu variable var bu problem için.
+
+71
+00:17:31,563 --> 00:17:41,583
+Bir tane de mutex anaklarıyla böyle bir monitör structure oluşturup artık yapılacak işleri bu monitör nesnesi üzerinden veya monitör sample üzerinden yapabilirsiniz.
+
+72
+00:17:42,324 --> 00:17:43,203
+Geri kalan her şey aynı.
+
+73
+00:17:43,604 --> 00:18:01,423
+Yine conditional variable'ları ilklendireceksiniz veya consume ederken bekleyeceksiniz ama monitördeki empty değişkenine veya monitördeki mutex elemanına bakarak bekleme mi yapacaksınız, devam mı edeceksiniz veya hangisini release edecekseniz sadece şuradaki şeyler değişiyor.
+
+74
+00:18:05,299 --> 00:18:11,299
+Son olarak şu an çalıştıramayacağım için, gerçi birini deneriz belki çalıştı, yok o da çalışmıyordu.
+
+75
+00:18:13,299 --> 00:18:15,659
+Şey, fork falan olduğu için ondan çalışmayacak.
+
+76
+00:18:22,195 --> 00:18:23,195
+Tamam.
+
+77
+00:18:23,195 --> 00:18:23,915
+Uday.
+
+78
+00:18:29,044 --> 00:18:50,443
+Şimdi herhangi bir proses, iki proses arasında bu probleme benzer bir şey yapalım dediğimizde, şimdi iki proses varsa bu bellek bölgesinin size görünmüyor mu? Bunun bir evini nasıl değiştirebiliriz? Ben şöyle yapayım.
+
+79
+00:18:59,380 --> 00:19:11,000
+Ortak bu buffer'ı ve aynı zamanda kullandığımız semaforları ne yapmamız lazım? İki tane farklı proses olduğu için bir şekilde paylaştırmamız lazım, haberleştirmemiz lazım.
+
+80
+00:19:11,700 --> 00:19:17,580
+Haberleştirmeyi ya shared memory ya da message passing yaklaşımlarıyla yapabiliriz demiştik.
+
+81
+00:19:18,220 --> 00:19:23,600
+Burada iki tane prosesör ama prosesler şu şekilde. Bir tane producer function var.
+
+82
+00:19:24,051 --> 00:19:48,591
+Bir tane consumer function var. Ana programda da diyorum ki ben bu programı çalıştırırken eğer prodüsürü çalıştırır dersem gidiyor oradaki fonksiyonu çalıştırıyor. Gidiyorum bir daha shell açıyorum. O shellden bir daha çalıştırıyorum. Bu sefer consumer'ı çalıştır diyorum. Yani yine iki tane farklı proses çalışacak. Tek bir seferde kod yazmak için bunu bu şekilde yaptım. Sonra da diğer şeyde de ana program çalışacak. Şu da init, başlangıç programı.
+
+83
+00:19:49,044 --> 00:20:13,864
+Diyorum ki önce şerit memori oluştur. Şerit memori için bir key olacak. Bu key üzerinden prosesler haberleşecek. Key herkes edilecek. Şerit memori açtıktan sonra semaforları ilklendir diyorum. Çünkü semaforlar biri bu empty'yi tutacak, biri bu kurutacak ve bu semaforlar da şerit memori üzerinden paylaşılacak. Aynı şekilde bir de bufferımız var. Buffer'ı paylaşıyoruz.
+
+84
+00:20:14,900 --> 00:20:20,380
+Sonra prodüsür ve konsümür ne yapacak? Şerit memory ile veri okuyacaklar kendi ikisi arasında.
+
+85
+00:20:21,820 --> 00:20:24,840
+Birisi yazmaya çalışacak, birisi okumaya çalışacak.
+
+86
+00:20:24,840 --> 00:20:37,100
+İşte okumaya veya yazmaya çalışırken de semaforlarla yine şerit memori üzerindeki semaforlarla bakın SemWade dediği bu semafor ID şerit memori'daki semaforu kullanıyor.
+
+87
+00:20:37,680 --> 00:20:38,059
+Tamam mı?
+
+88
+00:20:39,200 --> 00:20:40,600
+Onlar da şurada oluşturulmuş.
+
+89
+00:20:42,355 --> 00:20:50,976
+Şuradaki şey, anahtarlarda şuradaki alınan değerler arkadaşlar. Basit anlamda iki tane proses. Bunu daha karmaşık hale getirirsek şu olur.
+
+90
+00:20:53,556 --> 00:21:05,135
+Prodüsür ayrı, konzümür ayrı, ortadaki test yapacağım program ayrı, yani driver dediğimiz şey. Bu da nasıl mesela bir basit anlamda bir client server mimarisi gibi bir şey.
+
+91
+00:21:05,715 --> 00:21:23,475
+Bir tarafta işte bir uygulamada bir kişi var, öbür tarafta başkası var, bir de ortada yönetici var. Yönetici ne yapıyor? Bu buffer'ı paylaşıyor, shared memory'nin konfigürasyonunu paylaşıyor, ondan sonra mutex'leri falan paylaşıyor veya conditional veraylıları paylaşıyor.
+
+92
+00:21:23,475 --> 00:21:31,475
+Teste bakalım, test sınıfına, örneğine. Burada buffer'la alakalı şu temel ayarlamalar.
+
+93
+00:21:31,988 --> 00:21:40,208
+Ondan sonra şerit memori'nin açılması, semaforların ilklendirilmesi ve diğer uygulamaların başlatılması ve iş fikriğinde de ne olması?
+
+94
+00:21:40,407 --> 00:21:43,768
+Kaynakların temizlenip uygulamanın sonlanması. Asıl yönetici burası.
+
+95
+00:21:45,587 --> 00:21:51,447
+Bunun dışında herhangi bir prodüsyöre bakalım veya onzumir ikisi de aynı zaten.
+
+96
+00:21:52,288 --> 00:21:57,467
+Burada ne yapacak? Aynı konfigürasyona sahip olarak şu anahtar değerlere sahip olarak
+
+97
+00:21:58,451 --> 00:22:12,932
+Birisi yazma yapacak, birisi okuma yapacak ve shared memory açtıktan sonra eğer mutexlere de sahipse veya prodüsür yapacak bir şey için, proses için.
+
+98
+00:22:13,392 --> 00:22:33,352
+Bellek dolu değilse ne yapacak? Veriyi alacak, yazacak, kaydedecek, böyle sürekli devam edecek. İş bittiğinde de şerit memori ılız edecek. Bunu Enes Hoca'nın geldiğinde onda şey var, ubuntu var, orada çalıştırır. Çünkü bu bilgisayarda ubuntu olmadığı için şuradaki şerit memoriler falan çalışmayacaktır. Onun için bunları deneyemiyorum.
+
+99
+00:22:34,352 --> 00:22:39,791
+Burada bir sorumuz var mı? Peki, şimdi gelelim.
+
+100
+00:22:40,243 --> 00:23:02,003
+Dersimizin ana konusunu aldık. Şu ana kadar yaptığımız şeylerde bilgisayar kaynaklarını daha optimum, daha faydalı kullanmak için prosesleri oluşturduk, çok proses yaptık. Bu prosesler arasında haberleşmeyi inter-process communication ile gerçekleştirdik.
+
+101
+00:23:05,428 --> 00:23:15,427
+Bir şekilde hangisi daha önce girerse veya bir şekilde sistemi nasıl verimli kullanabiliriz, işlemciyi daha az boş bırakabiliriz diye bazı konular gördük.
+
+102
+00:23:17,988 --> 00:23:25,387
+Dedik ki bu işleri yaparken race condition durumu olabilir, critical section herkesin şeyidir, herkesin critical section olabilir.
+
+103
+00:23:26,208 --> 00:23:29,307
+Bu durumda o zaman senkronizasyon kullanacağız.
+
+104
+00:23:30,036 --> 00:23:38,036
+Şimdi senkronize edelim, planlama yapalım, haberleştirelim derken bir şeyi dikkatden kaçırmış olabiliyoruz.
+
+105
+00:23:38,756 --> 00:23:41,395
+Yani iyi bir şey yapalım derken sistemi kilitleyebiliyoruz.
+
+106
+00:23:42,336 --> 00:23:43,776
+Buna da deadlock deniyor arkadaşlar.
+
+107
+00:23:44,976 --> 00:23:46,976
+Deadlock kendiliğinden olan bir şey değil.
+
+108
+00:23:48,516 --> 00:23:52,956
+Bazı kaynakların yanlış kullanımından olacak.
+
+109
+00:23:52,956 --> 00:23:55,756
+Yani programlama hatası diyebileceğimiz.
+
+110
+00:23:56,435 --> 00:24:24,275
+Bir durumdan meydana gelebiliyor. Normal şartlar altında yazılmış bir program, eğer deadlock ile alakalı şartlara uyularak yazılmış bir programsa, hiç sıkıntı yok. Şimdi benim burada anlaşacağım konunun sonuna kadar işte bir sürü farklı şeyler anlatacağız. Böyle bir yaklaşım var, kompleksi, algoritmik kompleksi çok fazla. Başka bir yaklaşım var, o da çok fazla. O var, o da çok fazla. En son diyeceğiz ki herkesi kendi haline bırakın.
+
+111
+00:24:24,435 --> 00:24:42,476
+Yani bırakın deadlock olsun ama şu olacak. İşletim sistemi kernel'ında diyor ki ben deadlock oluşmaması için gerekli önlemleri aldım. Uygulamacı olarak, uygulama programcısı olarak sen de kendi önlemlerini al. Buna göre programını tasarla.
+
+112
+00:24:44,276 --> 00:25:09,416
+Semaphore gibi, conditional variable gibi veya işte ortak erişilen bir bellek bölgesi gibi, kaynaklara erişilen durum gibi bir şey yapıyorsan kendi işte mobil uygulama olabilir, web uygulaması olabilir. Bunları senkronizasyon kurallarına veya inter-process communication kurallarına uygun yaparsan sıkıntı yok. Ama orada bir hata varsa o hatanın sorumlusu sensin. Onunla baş etmek de sana çıkarıyor.
+
+113
+00:25:10,451 --> 00:25:33,352
+İşletim Sistemi'nin özelliklerinden bir şey şu, kaynakları yönetiyor, sistemi yönetiyor, kontrolü koordine ediyor. Ama bunu yaparken işletim sistemi kendi varlığını çok hissettirmemesi lazım. İşletim sistemi burada böyle çok güvenlikçi politikalar deriz ya, her tarafta böyle bir gerginlik, her yerde kontrol olur. Eğer böyle sistemin güvenliğini ben kendi kontrolüm altına alayım.
+
+114
+00:25:33,743 --> 00:25:39,963
+Sistemin tepesinde böyle bir bekçi gibi her şeyi kontrol edeyim moduna girerse ona güvenli mod diyoruz.
+
+115
+00:25:40,284 --> 00:25:46,804
+Var işletim sisteminde güvenli mod. O zaman ne oluyor? Sistemin utilization'ı veya interaktivitesi azalıyor.
+
+116
+00:25:47,544 --> 00:25:50,604
+Daha kötü bir şekilde bir bilgisayar sistemi yönetiliyor.
+
+117
+00:25:51,923 --> 00:25:56,584
+Bir kere uygulama kullanıcı programları yavaş çalışacak.
+
+118
+00:25:57,064 --> 00:25:59,524
+Yeterince respons alamayacaksınız. Takılmalar olacak.
+
+119
+00:26:00,115 --> 00:26:07,276
+Dolayısıyla diyor ki ben işletim sistemi olarak kendi içimde deadlockla alakalı garantiyi sağlıyorum.
+
+120
+00:26:07,776 --> 00:26:11,576
+Sıkıntı olursa sorumluluk bende, sen de uygulama yazımları olarak buna bak.
+
+121
+00:26:11,676 --> 00:26:13,615
+Peki buradan oraya nasıl geleceğiz?
+
+122
+00:26:15,656 --> 00:26:18,796
+Şimdi burada bir sistem modeli dediğimiz bir şey olacak.
+
+123
+00:26:19,016 --> 00:26:25,135
+Deadlockla alakalı algoritmik yani veri yapıcısı ve algoritma olarak bazı yaklaşımlar önerilmiş.
+
+124
+00:26:25,619 --> 00:26:32,679
+Ama bakılıyor ki, sonuçta bir, mesela scheduler dedik, scheduler'ın çalışma komplekslisi var değil mi arkadaşlar?
+
+125
+00:26:33,319 --> 00:26:42,499
+O komplekslisi işlemciyi çok kötü kullanıyorsa, yani sıkıntılı bir şey, diğer uygulamalara işlemci kullanımı daha yavaş gelecek, daha geç gelecek demektir.
+
+126
+00:26:42,499 --> 00:26:48,331
+Burada da sistemin belli bir veri yapısıyla modellemek için, demişler ki sistem...
+
+127
+00:26:48,980 --> 00:27:11,480
+Tabi buradaki sistem de işletim sistemi olarak doğrudan düşünmeyelim. Sizin kullandığınız bir, yazdığınız bir uygulama var veya işletim sistemine bir modül yazıyorsunuz, bir parça yazıyorsunuz, bir sistem programı olabilir, bir işletim sistemi servisi olabilir. Yani bir kod parçası var. Bu kod parçası içerisinde kabul edelim ki farklı kaynaklar var.
+
+128
+00:27:16,692 --> 00:27:33,692
+Oraya tahsis edilen kaynaklar ne olabilir? En basitinden değişkenleriniz, dizileriniz, belleyin hip bölgesi, stake bölgesi veya başka ne tahsis edilebilir? Size bir donanım tahsis edilebilir. İşte ekran olabilir, yazıcı olabilir veya bir dosya tahsis edilebilir. Sistemdeki bu kaynaklara...
+
+129
+00:27:34,516 --> 00:27:59,456
+R1, R2, R3, M tane kaynak. Yeri geliyor, CPU'nun saykılı sizin için bir kaynak olabiliyor. Memorideki bellek bölgeniz sizin için bir kaynak olabiliyor. Ve şunu söylüyoruz, her kaynak tipi kendi içinde o W kadar farklı instanslara sahip olsun. Yani bu kaynaklardan bir tanesi CPU, CPU kaynağından 5 tane var.
+
+130
+00:27:59,955 --> 00:28:18,095
+Bir tanesi memory space, ondan 8 tane var. Bir tanesi yazıcı, o yazıcıdan 3 tane var. Yani R'ler kaynakların türleri W'larda her bir türdeki kaynağın adetlerini ifade ediyor. Peki ne olacak? Proses.
+
+131
+00:28:18,867 --> 00:28:23,847
+Bir kaynağı kullanmak istediğinde o kaynağı öncelikle talep edecek.
+
+132
+00:28:24,007 --> 00:28:25,727
+Aynı sizin mallok yaptığınız gibi.
+
+133
+00:28:26,567 --> 00:28:30,107
+Biz neden mallokla bellekten, işletim sisteminden yer istiyoruz?
+
+134
+00:28:30,687 --> 00:28:37,747
+Çünkü normal, klasik işte şöyle integer, x eşittir, 5 gibi bir şey yaptığınızda bu sek bölgesinden oluşturulan bir dizi.
+
+135
+00:28:38,347 --> 00:28:39,827
+Burası yeterince fazla değil.
+
+136
+00:28:39,827 --> 00:28:46,867
+Sizin çok fazla yere ihtiyacınız varsa bunu işletim sisteminden ancak özellik izin alarak alabilirsiniz.
+
+137
+00:28:46,867 --> 00:29:13,647
+kullanabiliyoruz. İşte buna request diyoruz. Malloc mesela bir request çeşidi diyebiliriz. Bu işi kullanım sağlayacağız. Mesela aynısını biraz önce conditional variable'larda yaptık. Shared memory'de yaptık. Mutekster'de yaptık. Onu talep ediyoruz. Kullanıyoruz. Daha sonra release ediyoruz. Şimdi en çok yaptığınız hatalardan bir tanesi. Malloc yapıyordunuz. Program geliyor, geliyor, geliyor, geliyor. Return 0 diyorsunuz. Ne yapmadık?
+
+138
+00:29:14,516 --> 00:29:31,196
+Free yapmadık. Veya işte C++'da ne var? Yine orada malloka benzer new var. Orada da delete yapılıyor. Ama Java'da mesela şey yok. New bile şey yer açıyorsunuz. Hip bölgesinden yer alıyorsunuz. Siz onu bıraktığınızda garmış körlöktör.
+
+139
+00:29:31,551 --> 00:29:59,551
+Belli aralıklarla tetiklenip, garbage collector kendisi siliyor. Bazı uygulamalarda öğrenciler söylüyor, hocam programı çalıştırdım, Python'da kod yazdım. Bellek hatası alıyorum. Mesela bin tane veri üzerinde çalışacak ve o bin tane veri kendi içinde çok ciddi bir kaynak tüketecek, bellek tüketecek. Diyorum ki, garbage collector'ı ara ara kendini tetikletir. Onu yapan şeyler var, kodlar var. Sistem.garpage collector'ı görüyorsun. Onu kendi otomatik boşta kalan yerlere temizlettirebilirsin.
+
+140
+00:29:59,551 --> 00:30:25,991
+Bu da onun gibi. Bunu yaptınız, şunu yapmadınız. Peki bunu yapmayınca ne oluyor? Bellek belli bir süre boyunca kullanılır görünümde oluyor. Bir başkasının da belleğe ihtiyacı varsa sizde olan ama kullanmadığınız, hani böyle bir zombi gibi düşünebilirsiniz. Tam zombi proses değil de burası. Kullanmadığınız yer birisine tahsis edilemeyecek.
+
+141
+00:30:26,451 --> 00:30:33,692
+Bu tahsis edilememeden kaynaklı olarak ne oluyor? Başka bir proses bundan etkileniyor veya başka bir thread bundan etkileniyor.
+
+142
+00:30:34,371 --> 00:30:36,291
+Bunun böyle zincirleme devam ettiğini düşünün.
+
+143
+00:30:37,131 --> 00:30:41,751
+Ve bu olayın sadece bellek için değil başka kaynaklar için de olduğunu düşünün.
+
+144
+00:30:42,571 --> 00:30:45,791
+Ortada yanlış kullanımdan kaynaklı bir şey var.
+
+145
+00:30:46,331 --> 00:30:50,011
+Düşünün ben bu sınıfı burada ders için kullanıyorum. Benden sonra başka ders ver.
+
+146
+00:30:50,612 --> 00:31:10,912
+Şimdi ben dersimi uzatırsam, o dersin süresine girersek ne oluyor? O ders bundan etkileniyor. O derste hadi tamam bana birazcık göz yumdu, tamam hocam sen geç bitirdin, ben de biraz geç başlarım dedi. O da kendi geç bitirdi. Ne oluyor? O da başkasına etkiliyor. Bu böyle devam ediyor. Ama bu devam etmenin bir yerde bir circle oluşturması lazım.
+
+147
+00:31:11,380 --> 00:31:28,120
+Yani geceye kadar dersler ertelenmeyecek. Mesela kabul ederim ki geceye kadar şey oldu, sabaha kadar bunu devam ettirdik. Sabahki derste şey olursa kendi içinde bir kilitlenmeye doğru giden bir şey var. Sadece bu durum neye şimdi bunun şartlarına bakacağız. Demek ki kaynaklarımız bunlar.
+
+148
+00:31:37,471 --> 00:31:42,152
+Ve V şartıyla, V-A şartıyla değil, mutlaka bir arada olması lazım.
+
+149
+00:31:42,731 --> 00:31:46,912
+Aslında deadlock oluşması, bir şeyin kilitlenebilmesi demek ki doğru bir şeymiş.
+
+150
+00:31:47,552 --> 00:31:50,672
+Dört şart var, bu dördün dördü de olması lazım.
+
+151
+00:31:50,892 --> 00:31:54,792
+Bir tanesini olmazsa, demek ki deadlock şartı bozulabiliyor.
+
+152
+00:31:55,552 --> 00:31:56,971
+Birincisi mutual exclusion.
+
+153
+00:31:58,192 --> 00:32:02,471
+Bir kaynak üzerinde, belirli bir zaman diliminde en fazla...
+
+154
+00:32:02,932 --> 00:32:18,991
+Bir proses, sadece bir proses işlem gerçekleştirebilir. Bu şartı sağlıyorsak sıkıntı yok. Ama mutual exclusion'ı ihlal edecek bir durum varsa o zaman deadlock ihtimali var, başladı.
+
+155
+00:32:19,392 --> 00:32:26,751
+Hold and wait. Bir proses, herhangi bir kaynağı tutan bir proses.
+
+156
+00:32:27,955 --> 00:32:33,295
+Ekstra kaynaklara ihtiyaç duyuyor. Ama o kaynaklar da başkası tarafından.
+
+157
+00:32:34,595 --> 00:32:38,835
+Şimdi burada deadlock oluşma ihtimali yine var. Sadece bu şarttan baktığınızda.
+
+158
+00:32:39,635 --> 00:32:43,655
+Benim yazıcıya ihtiyacım var. Öbür proses yazıcıyı kullanıyor.
+
+159
+00:32:43,655 --> 00:32:45,655
+Ben...
+
+160
+00:32:46,324 --> 00:33:05,184
+İşte mesela kendim bir bellek tutuyorum kaynak olarak yazıcıya da ihtiyacım var. Yazıcı da şey olduğu için, yazıcı da diğer kaynak, diğer proses de olduğu için şu an için ben beklemek zorundayım. Tamamen bir deadlock gerekçesi değil ama deadlock oluşturma ihtimali hazırlayan bir şey.
+
+161
+00:33:14,548 --> 00:33:34,567
+Tutulan bir kaynağın tabunun istisnası var. Ancak kendi isteğiyle kaynağın bir arada bırakılabilmesi lazım. Bir prosesin elinden veya bir threadin elinden sahip olduğu kaynağı semaphore diye alamıyoruz. Alabildiğimiz kaynak ne var? 1. CPU'yu alabilirsiniz.
+
+162
+00:33:35,316 --> 00:33:59,816
+Çünkü ne yapıyoruz? Round robin algoritması diyor ki tamam sen çalıştın sıra preemption yapacağımız için o alınabiliyor. Ama kabul edelim ki yazıcı tahsis ettik veya bir dosya tahsis ettik bir prosese. Bunu almak, elinden almamız mümkün değil. Alırsak çünkü o prosesin doğru çalışmasıyla alakalı veya o prosesin doğru yürütülmesiyle alakalı başka sorunlar ortaya çıkarır.
+
+163
+00:34:00,435 --> 00:34:06,235
+Yani sen yazıcıyı kullanıyorsun, tamam sen yazıcıyı çok kullandın, başka bir prosese yazıcıyı tahsis edeceğim demek nedir?
+
+164
+00:34:06,675 --> 00:34:10,815
+Bir kere elde edilecek printout'un, freeout'un yanlış çıkması demektir.
+
+165
+00:34:11,376 --> 00:34:16,735
+Dolayısıyla hold and wait ile beraber no preemption'ı ikisini birden düşünün arkadaşlar.
+
+166
+00:34:17,907 --> 00:34:27,467
+Bir kaynak tutuyor, öbürüne ihtiyacı var. O ihtiyacı olanı da o vermiyorsa o zaman ben o kaynağı hiç alamayacağım. Alamayacağım için sürekli beklemeye alacağım.
+
+167
+00:34:27,927 --> 00:34:33,487
+Şimdi bunun üzerine bir de şunu ekliyoruz. Kabul edelim ki iki proses, üç proses değil, en tane proses var.
+
+168
+00:34:34,528 --> 00:34:40,347
+Her bir proses kendi içerisinde belli kaynaklara sahip ama başka kaynaklara da ihtiyacı var.
+
+169
+00:34:41,427 --> 00:34:44,987
+Örneğin bu bir dairesel bir bekleme noktası olsun.
+
+170
+00:34:46,068 --> 00:34:58,508
+P1 bir kaynağı tutuyor ama P2'deki kaynağa ihtiyaç var. P2 bir kaynağı tutuyor, onun da P3'tekine ihtiyacı var. Pn bir kaynağı tutuyor, onun da P1'dekine ihtiyacı var.
+
+171
+00:34:59,168 --> 00:35:05,347
+Şimdi bu şartların hepsinin bir araya gelmesinde deadlock kesin anlamda var diyoruz. Dört tane şart.
+
+172
+00:35:06,208 --> 00:35:12,108
+Deadlock'ın olmaması için o zaman bu dört tane şarttan bir tanesini normale döndürmek.
+
+173
+00:35:12,496 --> 00:35:20,176
+Yani bunu bir if gibi düşünürsek bunu false yapmak deadlock'tan, deadlock'ın olmama durumunu ifade edecek.
+
+174
+00:35:21,336 --> 00:35:32,076
+Mesela biz önceki dersimizde senkronizasyon anlatırken hem mutexlerde hem de semaforlarda şey konuşmuştuk.
+
+175
+00:35:32,695 --> 00:35:36,355
+Bir S semaforu vardı. S'yi mesela bin yapmıştık.
+
+176
+00:35:37,775 --> 00:35:39,456
+Burada bir P1 prosesi olsun.
+
+177
+00:35:39,903 --> 00:35:47,423
+Şurada da P2 prosesi olsun demiştik. Şurada hatta S1 eşittir 1, S2 eşittir 1 olsun.
+
+178
+00:35:48,324 --> 00:36:04,463
+Wait, S1 demiştik. Wait, S2 demiştik. Şurada da Wait, S2 dedik. Burada Wait, S1 demiştik. Böyle bir senaryo vardı, kod parçası vardı.
+
+179
+00:36:04,831 --> 00:36:29,051
+En basitinden mesela bir deadlock'ın oluşması için olacak durum. Şimdi kabul edelim ki buradaki kod önce bu çalıştı. Çalışır mı çalışır? S1 1 olduğu için şu wait'den kurtulursun. S2 de 1 olduğu için bundan da kurtulsun. Şuraya gelirsin. Critical section'ı yaparsın. Ama veya buradan başlasaydı, ikisi peş peşe çalışsaydı sıkıntı yok. Ama şöyle olsaydı.
+
+180
+00:36:29,811 --> 00:36:37,612
+Önce birinci aşamada, birinci stepte şu çalıştı, ikinci stepte geldi bu çalıştı.
+
+181
+00:36:38,211 --> 00:36:42,152
+Şimdi şuraya geldiğimizde S2 sıfır olduğu için, çünkü wait ne yapıyordu?
+
+182
+00:36:43,492 --> 00:36:50,652
+Sıfırdan küçük mü diye bakıyor, küçükse bekliyor, değilse birse onu azaltarak içeriye giriyordu.
+
+183
+00:36:51,452 --> 00:36:56,011
+Dolayısıyla burada S1 birdi, şu aşamaya geldiğimizde S1 sıfır, şurada.
+
+184
+00:36:57,427 --> 00:37:24,568
+Şurada da S2 eşittir sıfır. Şimdi birinin, bakın, critical section'a zaten giremiyoruz. Birisi critical section'da hiç değil. Şimdi şuradan hiçbir şekilde kurtulamayacağız. Başka bir şey S1 veya S2 değerini değiştirmezse, ki burada mümkün değil, iki tane prosesimiz var. Ne oluyor? Olduğumuz yerde burada sayıyoruz. Ne oldu? Circular rating oldu mu? Oldu. S1, S2'yi bekliyor.
+
+185
+00:37:25,039 --> 00:37:46,899
+Yani P1, P2 bekliyor, P2, P1 bekliyor. Bu aynı zamanda no preemption da kimsenin elinden herhangi bir şekilde semaforları alamıyorsun. Hold and wait de var. Zaten birini tutuyor, öbürüne ihtiyacı var. O zaten doğal olarak var. Aslında şu ikisi birbirini şurada bir anlamda tamamladı. Herhangi bir proses daha kimse şeye bile girememiş.
+
+186
+00:37:47,347 --> 00:37:58,528
+Mutual exclusion, yani belli bir kritik bölgeye bile girememiş. Hani P1 çalışırken P2 çalışmasın o durumda yok. İkiz de bir anda olaya girdi. İşte ne oldu? Size bir basit bir deadlock.
+
+187
+00:37:59,347 --> 00:38:11,127
+Tabii başka nedenlerle de oluşabilir. Yani sadece semaphoreların kullanımı değil, farklı sistem çağrılarının yanlış kullanımı ile, lafların yanlış kullanımı ile veya klasik işte dizinin, dosyanın bir şeyin.
+
+188
+00:38:11,507 --> 00:38:15,148
+Veya bir donanım kaynağının yanlış kullanımıyla bunlar meydana gelebiliyor.
+
+189
+00:38:16,407 --> 00:38:22,947
+Peki bunun için algoritmik veya sistemsel bir yaklaşım nasıl yapılacak?
+
+190
+00:38:23,127 --> 00:38:29,648
+Bir kere resource allocation graph dediğimiz bu işi önce bir veri yapısına dökelim demişler.
+
+191
+00:38:30,307 --> 00:38:31,447
+Bir model oluşturalım.
+
+192
+00:38:32,447 --> 00:38:35,467
+Biliyorsunuz ki graflar verticeslerden ve edge'lerden oluşuyor.
+
+193
+00:38:38,255 --> 00:38:58,675
+İki tipe aktarılıyor. İki tane tipimiz var. Yani wordist. Aslında burada bir partigraf gibi bir şey düşünebilirsiniz. Bunlardan birincisi prosesler. Köşelerimizden bazıları prosesler. P1, P2 olarak ifade ediyor. Diğerleri de requestler, kaynaklar, resourceler.
+
+194
+00:38:59,251 --> 00:39:03,152
+Bunları mesela farklı göstermek için bir tane flat değişkeni kullanabilirsiniz.
+
+195
+00:39:03,211 --> 00:39:08,072
+Birazdan biz görsel olarak anlatacağımız için işte prosesleri şöyle göstereceğiz.
+
+196
+00:39:08,591 --> 00:39:10,011
+Resourceları da şöyle göstereceğiz.
+
+197
+00:39:10,731 --> 00:39:16,992
+Düğüm mü düğüm? Yani vertex mü vertex? Ama birisi kaynağı ifade ediyor, öbürü prosesi ifade ediyor.
+
+198
+00:39:18,192 --> 00:39:23,431
+Bir prosesin herhangi bir kaynağı olan request'i p'den r'ye.
+
+199
+00:39:23,987 --> 00:39:39,087
+yönlü bir şeyle, edge ile, directed edge ile gösteriliyor. Ama resource'un kaynağı olan, resource'un prosesi olan assignment'ı da atanması veya allocation'ı da ne oluyor? Aynı şekilde yönlü bir graf var.
+
+200
+00:39:40,287 --> 00:39:49,707
+P'den R'ye ise bu request, R'den P'ye ise allocate edilmiş veya assign edilmiş bir kaynak diye ifade ediyoruz.
+
+201
+00:39:50,643 --> 00:40:17,443
+Sözlüğümüz genel olarak şu şekilde, şurada şey yapalım, prosesimiz var. Eğer ki kaynaklarını, bakın prosesler yuvarlak şekilde, kaynaklar işte kare veya dikdörtgen edilmiş. Eğer ki sizin kaynaklarınızda birden fazla örneği varsa, o zaman içerisinde onun işte dört tane olduğunu, beş tane olduğunu göstermek için şöyle çizimler yapılıyor.
+
+202
+00:40:18,003 --> 00:40:26,304
+PI prosesinin RJ'nin herhangi bir instansını talep ettiğini göstermek için şöyle bir notasyon kullanılıyor.
+
+203
+00:40:27,204 --> 00:40:30,463
+RJ'den 4 tane var, PI bunlardan bir tanesini istiyor.
+
+204
+00:40:30,604 --> 00:40:38,903
+Veya eğer PI prosesi bunun herhangi bir kaynağını tuttuysa, bakın tuttuğunu göstermek için o oku şuradan başlatmış.
+
+205
+00:40:39,543 --> 00:40:44,624
+Şu kaynak PI tarafından tutuluyor. Yani PI ona sahip, ona atanmış.
+
+206
+00:40:45,139 --> 00:40:46,459
+Anlamı çıkartabiliyoruz.
+
+207
+00:40:48,679 --> 00:40:52,299
+Şimdi burada örnek bir resource allocation grafı var.
+
+208
+00:40:52,559 --> 00:40:53,859
+Bu graf bana neyi söylüyor?
+
+209
+00:40:54,619 --> 00:40:57,979
+R1, R2, R3 ve R4 diye 4 tane kaynağım var.
+
+210
+00:40:58,079 --> 00:40:59,219
+3 tane de prosesim var.
+
+211
+00:40:59,939 --> 00:41:02,239
+R2 kaynağımdan 2 tane sample görüyorum.
+
+212
+00:41:02,439 --> 00:41:04,019
+R4 kaynağımdan 3 sample.
+
+213
+00:41:04,119 --> 00:41:05,259
+Diğerlerinden 1'er sample.
+
+214
+00:41:06,099 --> 00:41:07,759
+P1 ne yapmış?
+
+215
+00:41:08,559 --> 00:41:10,199
+R1'i talep etmiş.
+
+216
+00:41:11,079 --> 00:41:12,079
+Atanmış mı bilmiyoruz.
+
+217
+00:41:12,692 --> 00:41:37,632
+P2, R1'e sahip. P2, R3'ü talep ediyor. P3, R3'e sahip. R4'ü kimse kullanmıyor. R2'nin bir örneği P1'e atanmış. Bir başka örneği de P2'ye atanmış. Şimdi burada deadlock var mı? Aklınıza ilk gelecek şey deadlock var mıdır diye bunu test etmek için ne yapabilirsiniz?
+
+218
+00:41:38,867 --> 00:41:52,128
+Hani bu böyle bir research graph verildi. Burada bir deadlock var mıdır? Bunu yapmak için graph algoritmalarından hangisini kullanarak böyle bir şey yapılabilir? Karar verilebilir.
+
+219
+00:41:54,887 --> 00:42:03,268
+Graflar üzerinde mesela yollar çiziliyordu. Bu yollar başa dönerse nedir? Ne deniyordu buna? Cycle veya a cycle işte.
+
+220
+00:42:04,884 --> 00:42:07,483
+Ne deniyor? Cycle diyoruz da bir adı daha var.
+
+221
+00:42:08,283 --> 00:42:15,103
+Hani graf üzerinde bir cycle detection yaparak acaba deadlock var mıdır yok mudur bunu tespit edebilir miyiz?
+
+222
+00:42:15,103 --> 00:42:20,884
+Peki graf üzerinde cycle olacak da şöyle bir cycle olsaydı mantıklıydı.
+
+223
+00:42:21,843 --> 00:42:24,783
+Hangi kaynak hangi proses tarafından tutuluyor?
+
+224
+00:42:25,603 --> 00:42:29,823
+Yani bazı kaynaklar bazı proseslere atanmış.
+
+225
+00:42:30,356 --> 00:42:56,036
+Bunun bilgisi olsaydı o zaman cycle dedek için işe yarardı. Ama burada tutma durumu yok. Hem tutma durumu hem de request durumu var. Dolayısıyla bazı prosesler bazı şeylere sahip değil. Tam bir cycle dedek için işe yaramıyor. Cycle varsa ama şunu söyleyebiliyoruz. Deadlock olabilir. En çok yapılan hatalarından bir tanesi bu. Geçenlerde araştırma göre sınavı yapıldı. Orada bir soru hazırlamıştım.
+
+226
+00:42:56,659 --> 00:43:19,219
+İşte burada deadlock var mıdır dedim. Yani direkt böyle bir graf çizmeye çalışmış. Burada cycle var, deadlock vardır. Hayır, deadlock olabilir. Çünkü ben daha R1 kaynağına sahip değilim. Bakın şöyle düşünelim burada bir cycle var mı. Bakıyorum şöyle gidiyorum. Hani kabul edelim ki cycle üzerinden gidelim. Cycle yok. Cycle yoksa zaten deadlock yok diyeceğiz.
+
+227
+00:43:19,860 --> 00:43:46,120
+Kabul edelim ki şöyle bir cycle olsaydı. Şimdi bu bunu talep ediyor, bu bunu talep ediyor. Şu da şunu talep etsin. Böyle bir durum olsun. Şu da şunu talep ediyor. P2'de R3'ü talep ediyor. Yani şunu yok kabul edin arkadaşlar. Bakın şurada bir cycle görüyoruz. P1'de buna atanmış. Tamam mı? Yani yine P1, R1'e sahip.
+
+228
+00:43:46,547 --> 00:44:13,228
+Pardon, P1, R2'ye sahip, P2, R1'e sahip, P2 aynı zamanda R2'nin bir örneğini alacak. Bakın şöyle bir saykı var ama bir de P2, R3'ü talep ediyor. Ama R3 de P3 tarafından tutuyor. Şuradaki saykılı gördük. Deadlock var diyemeyiz. Neden? R3, P3'ü release ettiğinde edebilir mi? Edebilir. P2 gider, R3'ü alır mı? Alır.
+
+229
+00:44:14,132 --> 00:44:40,032
+P2 zaten R2'nin iki tane örneği var. Onu da alır. Şöyle olduğu durumda. P2 de işi bitirir, çıkarır. İşi bittikten sonra P2 R1'i bırakır. P1 gider R1'i alır. R2'yi de zaten talep ediyor. Bakın hiçbir şekilde deadlock olmuyor. Tamam mı? Yeri gelir. İşte herkes kaynağı. Önemli olan P3 free mallokun free'sini yazacak. Yani R3'ü serbest bırakacak.
+
+230
+00:44:40,431 --> 00:45:00,791
+Veya P2, diğer kaynakları, her proses sahip olduğu şey yapacak. Bu bir basit graf. Graf üzerinde cycle deduction %100 deadlock vardır anlamına gelmiyor. Ama olabilir diyebiliyoruz. %100 vardır dediğimiz graf ayrı bir graf. Ona daha sonra geleceğiz.
+
+231
+00:45:07,860 --> 00:45:33,380
+Hatta burada deadlock'ın kendisi de var diyebiliriz belki de. Aslında ihtimali var. P1, R şu atanmış. Bunu talep ediyor. P2'ye, şey R2, P2'ye atanmış. Bu da bunu talep ediyor. Bakın şöyle baktığımızda bir cycle görebiliyoruz. Döngü görebiliyoruz. Şurada bir döngü daha var.
+
+232
+00:45:35,284 --> 00:45:37,244
+Şöyle baktığında bir de burada bir temelik var.
+
+233
+00:45:38,884 --> 00:45:48,884
+Şimdi burada herhangi bir proses şey yapmazsa, kaynağını bırakmazsa burada deadlock oluşma ihtimali çok çok yüksek.
+
+234
+00:45:50,144 --> 00:45:54,524
+Yani hatta ilerlemeyecek süreç. Burada deadlock var diyebiliriz yani %100 var diyebiliriz.
+
+235
+00:45:54,524 --> 00:45:56,324
+Bakın bu bilgi bana bunu söyledi.
+
+236
+00:45:56,844 --> 00:46:00,503
+Cycle'ın olmuş olması, birazdan şimdi cycle olacak.
+
+237
+00:46:01,172 --> 00:46:21,172
+Deadlock olmayayım. Şimdi burada hem cycle var hem de deadlock var. Daha ilerleyemiyoruz. Ne olması lazım? Burada sistemi yeniden başlatmak gerekiyor mesela. Cycle var, deadlock yok. İşte bahsettiğim şey bu. Bakın şunu talep ediyor. Bunun bir örneği buraya atanmış.
+
+238
+00:46:21,780 --> 00:46:40,840
+Şurada bunu talep ediyor. Bunun bu örneği de buraya anlayacak. Bakın cycle var mı? Var. Yani ben bu graf üzerinde bir cycle detection algoritması çalıştırdığımda, cycle true veya false var mı yok mu diye bir şey sorduğunda, bu graf üzerinde bana ne denecek? Cycle var. Ama deadlock oluşmayabilir. Hatta oluşmaz da.
+
+239
+00:46:41,300 --> 00:46:49,860
+Eğer ki ben P2 kaynağını serbest bırakırsam, şey R1 kaynağını P2 prosesi tarafından serbest bırakırsam işim bitti serbest bıraktım.
+
+240
+00:46:50,480 --> 00:46:54,480
+Serbest bırakınca ne olacak? P1 gidecek şunu alacak. İlla bunu almak zorunda değil.
+
+241
+00:46:55,280 --> 00:47:00,000
+Bunu aldığı için buna da sahip bu daha sonra işi bitince bunu alacak.
+
+242
+00:47:00,563 --> 00:47:14,663
+Ne oldu? P3 de daha sonra ihtiyacı geldi. Belki P4'den dolayı veya şu P1'den dolayı hangisi önce rızı iz ederse P3'deş olacak. Bakın, cycle'ın olduğu ama deadlock'ın olmadığı bir durumla karşı karşıyayız.
+
+243
+00:47:15,603 --> 00:47:16,703
+Buraya kadar bir sorumuz var mı?
+
+244
+00:47:21,583 --> 00:47:22,343
+Bunda var.
+
+245
+00:47:25,343 --> 00:47:25,883
+Bunda mı?
+
+246
+00:47:26,675 --> 00:47:31,036
+P1 ile ilgili bir arasında saymamız gerekiyor.
+
+247
+00:47:31,036 --> 00:47:33,076
+Bakayım şöyle.
+
+248
+00:47:34,036 --> 00:47:36,016
+Burada P1 P2 arasında yok pardon.
+
+249
+00:47:37,195 --> 00:47:38,596
+Şurada şey ben bu okudum.
+
+250
+00:47:39,295 --> 00:47:41,175
+Nasıl bir cycle var? Mesela şöyle var.
+
+251
+00:47:42,875 --> 00:47:44,016
+Bir böyle düşünebiliriz.
+
+252
+00:47:44,536 --> 00:47:45,375
+Bir de şöyle var bakalım.
+
+253
+00:47:45,476 --> 00:47:47,675
+Bir böyle, böyle geliyor, böyle geliyor, böyle geliyor.
+
+254
+00:47:48,436 --> 00:47:49,936
+Ve en dıştan var.
+
+255
+00:47:50,436 --> 00:47:52,036
+Ama bu cycle'lar...
+
+256
+00:47:52,371 --> 00:47:59,891
+Tam dediğim gibi, az önceki grafta, deadlock oluşma, oluşmamalı durumda burada oluşturuyor.
+
+257
+00:48:00,632 --> 00:48:16,072
+Bunun tam %100 kesin kest, grafta, saykın varsa, şey olacaktır, deadlock olacaktır diyebilmemiz için, bütün kaynakların, bütün prosesler tarafından tutulduğunu gösteren başka bir graf olması lazım.
+
+258
+00:48:16,152 --> 00:48:17,072
+Onu da ayrıca konuşacağız.
+
+259
+00:48:17,523 --> 00:48:25,443
+Burada requestler de işin içinde olduğu için, okların yönü anlam ifade ettiği için her zaman vardır diyemiyoruz.
+
+260
+00:48:26,743 --> 00:48:29,423
+Sanki requestler de daha vardır.
+
+261
+00:48:30,703 --> 00:48:32,223
+Elifini, gelinize bir şey yok.
+
+262
+00:48:33,223 --> 00:48:35,663
+Ama şöyle, şurada Hamilton yok ki.
+
+263
+00:48:37,983 --> 00:48:40,083
+Böyle geldi, böyle geldi, böyle geldi, böyle geldi.
+
+264
+00:48:41,443 --> 00:48:42,323
+Şu ne oldu?
+
+265
+00:48:44,340 --> 00:48:45,460
+Tam bir Hamilton değil.
+
+266
+00:48:45,940 --> 00:48:47,599
+Hayır, illa bir olmanızı ilgilenir.
+
+267
+00:48:48,279 --> 00:48:52,019
+Şimdi Hamilton olması için bütün yollardan geçmen gerek.
+
+268
+00:48:52,960 --> 00:48:56,559
+Euler cycle dediğin o, senin bütün nodlardan geçeceğin dediğin şey.
+
+269
+00:48:57,279 --> 00:49:00,980
+Euler varsa böyle bir şey olur mu diye düşünebiliriz.
+
+270
+00:49:01,039 --> 00:49:02,400
+Belki Euler için olabilirsin.
+
+271
+00:49:03,599 --> 00:49:05,340
+Euler cycle varsa, tamam mı?
+
+272
+00:49:06,259 --> 00:49:07,139
+Hamilton olursa olmaz.
+
+273
+00:49:07,259 --> 00:49:09,019
+Hamilton olması için bütün yollardan...
+
+274
+00:49:10,356 --> 00:49:11,796
+Şeylerden geçmek gerekiyor.
+
+275
+00:49:16,019 --> 00:49:43,819
+Şimdi bazı buradaki çıkarımlar. Eğer graph cycle içermiyorsa deadlock yoktur diyebiliyoruz. Ama graph cycle içeriyorsa iki farklı durum var. Her kaynaktan bir tane varsa işte o zaman deadlock oluşabiliyor. Çünkü bir şey istiyorsun başkası tarafından tutuluyor. Ne oldu? Circular Rating gibi bir şey yok. Genelde baktığım. Ama birkaç kaynağınız varsa
+
+276
+00:49:43,987 --> 00:50:11,027
+deadlock oluşma ihtimali var. Ki şurada, bakın birkaç kaynaklı bir durum var, deadlock oluşmuş. Resource allocation graph ile daha sonra ilerleyen şeylerde bir graph görecek, onları karıştırmayalım. Peki ne yapacağız? Şu dört şarttan bir tanesini kıracağımız bir yaklaşım seçersek deadlock'ı, deadlock'la baş edebiliriz.
+
+277
+00:50:12,019 --> 00:50:27,279
+Veya daha keskin şeyler, sisteme diyeceğiz ki, deadlock'a girmeyi engelleyecek bazı düzenlemeler yapar. Bu iki şekilde oluyor. Deadlock'ın önlenmesi, deadlock'tan kaçınma.
+
+278
+00:50:28,119 --> 00:50:35,039
+Hocam ikisi aynı şey değil mi diyebilirsiniz. Yok. Uygulamada önlenme çok daha böyle katı.
+
+279
+00:50:35,519 --> 00:50:42,519
+İşletim Sisteminin güvenlikçi politikalarıyla yaptığı şey, evoidis onun biraz daha kullandırılmış şeye ait diyebiliriz.
+
+280
+00:50:43,799 --> 00:50:50,239
+Bu birinci yaklaşım. Kesinlikle bir sistem, sistemden kastım işletim sisteminde değil tabii ki sadece.
+
+281
+00:50:50,539 --> 00:50:55,059
+Siz kullandığınız bir programlar, prosesler, threadler, o kendi içinde bir sistem gibi düşünüyorsunuz.
+
+282
+00:50:57,239 --> 00:51:02,059
+Bir diğer şey, sistemin deadlock'a girmesine izin veriyorsunuz.
+
+283
+00:51:02,804 --> 00:51:06,523
+Ondan sonra tarihine bakarız, kervanyol da girelim.
+
+284
+00:51:07,864 --> 00:51:11,684
+Diğeri de problemi tamamen göz ardı diyoruz.
+
+285
+00:51:11,684 --> 00:51:15,364
+Ve deadlock sistemleri hiçbir şekilde olmayacakmış gibi,
+
+286
+00:51:16,884 --> 00:51:21,604
+çok günümüzdeki işletim sistemlerinde olduğu gibi bir yaklaşım sevdiğim.
+
+287
+00:51:22,403 --> 00:51:26,884
+Ben işletim sistemi kernel olarak, dedim ki deadlock olmayacak şekilde kendi programımı yazarım.
+
+288
+00:51:27,443 --> 00:51:34,003
+Boşu boşuna güncellemeler gelmiyor mesela. O güncellemelerden bazıları mevcut deadlockları çözmek için geliştirilen şeyler.
+
+289
+00:51:34,144 --> 00:51:40,264
+Çünkü hani geçen size bir video attım ya, mavi ekran atarsın. O bir deadlock mesela. Aynı onun için.
+
+290
+00:51:40,543 --> 00:51:49,443
+O güncellemelerden bazıları bu tarz şeyler için yapılıyor. Ama diyor ki sen uygulama olarak deadlock olursa başının çaresine bakacaksın.
+
+291
+00:51:49,443 --> 00:51:54,184
+Peki bunlara şimdi bakalım. Deadlock prevention. Deadlock'ı önlemek için.
+
+292
+00:51:55,219 --> 00:52:03,059
+Bu requestlerin, yani deadlock oluşturacak requestlerin kısıtlanması, önlenmesi söz konusu.
+
+293
+00:52:03,059 --> 00:52:22,019
+Mesela Mutual Exposition için bir not required shareable resourselerin, mesela dosyaların, non-shareable şey olarak tutulabilmesini sağlıyor.
+
+294
+00:52:22,867 --> 00:52:31,628
+Diyorsun ki herkes, her kaynağa her an erişemez. Öyle yani kafana göre dosya açamazsın gibi. Yapılabilir mi? Çok uygun değil.
+
+295
+00:52:32,927 --> 00:52:46,188
+Veya Hold on Wait şunu garanti ettiriyor. Her ne zaman bir proses, bir kaynağı talep ederse o talebi ettiğinde bir başka kaynak sahibi olmayacak.
+
+296
+00:52:48,371 --> 00:53:15,072
+Bu ne demek? Aslında benim bir tane kaynağa ihtiyacım olabilir. İki tane kaynak, üç tane kaynak kullanamak. Bu da iyi bir şey değil. Yani bir prosese en fazla bir tane kaynak atayabilirim belli bir zaman aralığında dediğimde bazı durumlarda starvation'la neden olur. Tamam, önce bir kaynağım var, ikincisini de kullanmam gerekir, kullanabilirim. Ama önce birini kullanıyorum, zılı iz ediyorum, sonra öbürünü kullanıyorum.
+
+297
+00:53:15,603 --> 00:53:19,963
+Yine işler yürüyor ama yavaş yürüyor. Utilization düşüyor.
+
+298
+00:53:19,963 --> 00:53:27,603
+Veya daha kötüsü bir kaynak var. O kaynakla beraber öbürünü de kullanmam lazım. O zaman yine tam çözüldeyim.
+
+299
+00:53:27,603 --> 00:53:29,603
+Deadlock prevention bu.
+
+300
+00:53:29,603 --> 00:53:34,603
+Tabii no preemption açısından, dört tane şart açısından bakacağız.
+
+301
+00:53:34,603 --> 00:53:36,603
+Bir proses...
+
+302
+00:53:39,764 --> 00:54:04,563
+Bazı kaynakları tutan bir proses, birkaç kaynak tutan bir proses. Bir başka kaynağa ihtiyaç duyarsa ama o kaynak da ani bir şekilde, hızlı bir şekilde ona allakay edilemezse o zaman diyor ki bütün kaynaklar, hala hazırda tutulan kaynaklar release edilecek. Yani herkes elindeki kaynağı bırakacak.
+
+303
+00:54:05,268 --> 00:54:21,668
+No Premsion olması için. Yani bu da biraz şey, kötü bir şey. Yani sen yazıcıyı kullanıyorsun, bir proses yazıcıyı talep etti, oldu da deadlock olacak. O zaman diyor ki herkes elindeki kaynaklar var, sen de yazıcıyı bırakmak zorunda kalıyorsun. Böyle bir durum.
+
+304
+00:54:22,468 --> 00:54:31,367
+Premd Resource var. Bunun bir listede tutulması lazım. Yani kim? Çünkü mesela ben A prosesinden yazıcıyı aldım.
+
+305
+00:54:32,083 --> 00:54:33,543
+O işini yarıda bıraktı.
+
+306
+00:54:33,663 --> 00:54:35,763
+Tekrar ona geri vermem. Bunu bir listede tutmam lazım.
+
+307
+00:54:37,023 --> 00:54:37,983
+Tekrardan bu işin
+
+308
+00:54:37,983 --> 00:54:40,163
+sağlık kurucu ile devam etmem. Bu da mesela bir maliyet.
+
+309
+00:54:41,603 --> 00:54:41,803
+Ve
+
+310
+00:54:41,803 --> 00:54:43,643
+prosesler tekrardan restart edilecek.
+
+311
+00:54:44,344 --> 00:54:46,043
+Tekrardan işte kaldığı yerlerden
+
+312
+00:54:46,043 --> 00:54:47,844
+devam edilecek. Baya bir iş yükü.
+
+313
+00:54:49,003 --> 00:54:49,903
+Circular weight
+
+314
+00:54:49,903 --> 00:54:52,203
+Şöyle bir
+
+315
+00:54:52,203 --> 00:54:53,583
+empoze ediyoruz.
+
+316
+00:54:53,743 --> 00:54:55,723
+Belli bir kaynaklar üzerinde
+
+317
+00:54:55,723 --> 00:54:57,163
+total sıralama
+
+318
+00:54:57,163 --> 00:54:58,844
+ve
+
+319
+00:54:59,476 --> 00:55:06,596
+Diyeceksin ki her proses bir kaynak talep ettiğinde kendilerine ait bir sıra var. O sıraya göre kaynak talep edin.
+
+320
+00:55:07,296 --> 00:55:10,696
+Yani önce sen alacaksın, sonra sen alacaksın, sonra sen alacaksın. Bu ne anlama geldi?
+
+321
+00:55:11,356 --> 00:55:18,056
+Basitli sıralama algoritması bile en kare veya en log en karmaşıklıklı. Bunu düzenlemek de bir dijitli iş.
+
+322
+00:55:18,931 --> 00:55:24,971
+Bir şey satın alırken karşında ne aldığına da bakma. Bir şey veriyorsun, karşında ne alıyorsun, ona bakman lazım.
+
+323
+00:55:25,591 --> 00:55:29,571
+Ürettiğin çözüm daha pahalı şeylere neden olabiliyor.
+
+324
+00:55:30,711 --> 00:55:36,151
+Bakın deadlock example bu şeyde gördüğümüz bir şey. Yani geçebiliriz zaten.
+
+325
+00:55:36,151 --> 00:55:37,571
+Bu tek size sahip olmam.
+
+326
+00:55:39,951 --> 00:55:43,115
+Burada lockları belli bir sırayla...
+
+327
+00:55:43,668 --> 00:55:47,668
+Almakla alakalı başka bir örnek göstermiş. Şurada deadlock var.
+
+328
+00:55:47,668 --> 00:55:50,068
+Diyor ki o zaman lockları sırayla alalım.
+
+329
+00:55:50,068 --> 00:55:53,268
+Mutex lockları var. İşte kimden kime geçecek?
+
+330
+00:55:53,268 --> 00:55:58,268
+Şundan şuna aktarılabilir, bundan bura... Mesela iki tane prosesimiz var.
+
+331
+00:55:58,268 --> 00:56:05,268
+Transaction 1, 25 dolar A'dan B'ye, 2 de 50 dolar B'den A'ya aktaracakmış.
+
+332
+00:56:05,619 --> 00:56:14,699
+Burada lock'ları kullanırken bu sırayla önce pro daha sonra two'nun lock, iki tane lock yönetimi böyle bir şey bulabiliyor ama deadlock örneği.
+
+333
+00:56:15,819 --> 00:56:18,879
+Deadlock'tan avoidance, kaçınma yapalım saat kaç?
+
+334
+00:56:22,480 --> 00:56:29,239
+Diyor ki, şimdi bir deadlock'ın fark etmeden veya ne bileyim bir anda deadlock'a girme durumunuz var.
+
+335
+00:56:29,972 --> 00:56:40,652
+Sistem, tamam diyor, ben bu kadar her şeyi kontrol altında alamam ama, yani deadlock oluşmasın diye kaynakları biraz önce bahsettiğim şeyleri yapamam ama şunu belki yapabilirim demiş.
+
+336
+00:56:42,332 --> 00:56:45,952
+Deadlock'ın oluşma ihtimallerini belli bir yerde gözetleyip, monitöre değil.
+
+337
+00:56:47,052 --> 00:56:54,352
+Deadlock oluşma ihtimaline yaklaşan bir durum olursa, o zaman tehlike sinyalleri çalıyor.
+
+338
+00:56:55,027 --> 00:57:22,647
+Bazı kısıtlamalar çıkayım. Yani varlığımı biraz öncekinde kadar hissettirmeyeyim. Yine varım ama eskisi kadar kuvvetli böyle her yerde yokum. Diyor ki, her proses işte ihtiyaç duyduğu şekilde maksimum sayıda kaynağa ihtiyacını talep edebilir. Bunu şey yapacak. Yani diyor ki proseslere kısıtlama getiriyor. Öyle istediğin kadar sınırsız şey alamazsın.
+
+339
+00:57:23,539 --> 00:57:26,960
+Biraz önlektiğine göre daha serbest ama niye öyle bir sıkılık var?
+
+340
+00:57:28,679 --> 00:57:36,599
+Ve burada deadlock algoritması sürekli olarak, binamik olarak bir monitoring veya examination yapıyor.
+
+341
+00:57:37,179 --> 00:57:43,679
+Nasıl yapıyor? Resource allocation grafından diyor ki acaba deadlock oluşma ihtimali var mı?
+
+342
+00:57:43,780 --> 00:57:49,079
+Bir deadlock'a yaklaşıyor mu? İşte bir circular weight gibi bir durum olacak mı?
+
+343
+00:57:50,003 --> 00:57:52,183
+Bu resource allocation üzerinde bir işlem yapacak.
+
+344
+00:57:53,344 --> 00:57:55,603
+Tabi bunun da kendine göre bir karmaşıklığı var.
+
+345
+00:57:57,443 --> 00:57:59,943
+Diyor ki, burada iki farklı durum söylenmiş.
+
+346
+00:58:01,384 --> 00:58:07,203
+Bu graf üzerinde kontrol yapan algoritma iki farklı state söylüyor.
+
+347
+00:58:08,063 --> 00:58:12,203
+Şu an diyor, durum güvenli bir durum veya güvenli olmayan bir durum.
+
+348
+00:58:12,923 --> 00:58:14,003
+Şöyle söyleyeyim, buraya bakalım.
+
+349
+00:58:15,443 --> 00:58:36,903
+Graf üzerindeki algoritmanın şey, safe state'de ise sıkıntı yok. Unsafe state'de girdiyse deadlock'a girme ihtimali var. O zaman ne yapalım? Bazı önlemler şimdiden almaya başlıyor. O graf üzerinden bunu yapacağız. Tabi bunu yapmak da öyle kolay bir şey değil. Kim hangi kaynağı talep edecek bilemezsin. Talep edilmiş olan kaynaklara bilirsin ama.
+
+350
+00:58:37,396 --> 00:58:57,496
+Her zaman hangi aralıkta mesela kim kaynak talep edecek belli değil. O zaman o resource allocation graph'ını sürekli check etmesi gerekiyor. P1 prosesi talep etti, resource allocation graph'ı değişti, graph'ta tekrar bir güncellem oldu. Bu algoritma gidecek, tekrar bakacak. Bakın yine maliyet. Bir şey yaparken yine karşımıza şey geliyor.
+
+351
+00:58:58,356 --> 00:59:05,076
+Bir proses, bir ulaşılabilir bir kaynağı talep ettiğinde sistem şuna karar verecek.
+
+352
+00:59:06,836 --> 00:59:17,456
+Immediate allocation yaptığında ben bu kaynağı bu kişiye verirsem, acaba sistem stay safe alır mı yoksa unsafe safe'e girer mi?
+
+353
+00:59:20,456 --> 00:59:23,716
+Verirsek, immediate bir şekilde allocation yaparsak,
+
+354
+00:59:24,115 --> 00:59:43,836
+SafeState'de kalıp kalmayacağını söylüyorsun. Sistem SafeState diyor, şöyle bir SafeState şöyle kalınmış. Eğer diyor ki P1'den PN'e N tane proses var. Öyle ki bu proseslerden Pİ bazı kaynaklara işte request ediyor.
+
+355
+00:59:44,335 --> 01:00:09,695
+Bu kaynaklarda işte şey demiş. Ama bu kaynaklardan bazıları işte diğer proseslere de ileride aktarılabilir. Burada şunu düşünün. Banka, birazdan gelecek banker alıyor musun? Banka gibi düşünün. Bankanın parası var. Parayı her zaman bir kişi talep etmiyor kredi olarak. En tane kişi talep edebiliyor. Şimdi ben bu kişiye istediği parayı, birinci kişiye istediği parayı verirsem öbürlerine verememe ihtimalim var.
+
+356
+01:00:10,228 --> 01:00:12,128
+O kişinin dışındakileri. Tamam mı?
+
+357
+01:00:12,827 --> 01:00:17,788
+İşte bu tarz durumda ne oluyor? Hatta enumarayışını dedik ya, burada da aslında enumarayışını da söylüyorum.
+
+358
+01:00:18,807 --> 01:00:24,048
+Verdiğim para başkasına veremeyeceğim için bu bir sıkıntı oluşturabilir. Buna karar verir.
+
+359
+01:00:25,327 --> 01:00:32,228
+Mesela şöyle diyor, açıklama, PI kaynağı, PI resource need, yani PI'nin kaynak talebi,
+
+360
+01:00:34,648 --> 01:00:37,228
+ani bir şekilde ulaşılamazsa,
+
+361
+01:00:38,132 --> 01:01:04,051
+O zaman Pİ, PİC'nin bitmesine kadar bekleyecek. Bu bir alternatif. Bu bitme meselesi mesela şu durum, her zaman deadlock oluşturmaz. Çünkü PİC işini bitirir, sonra Pİ o kaynak kullanır. PİC'yi bitirdiğinde Pİ ihtiyacı olan kaynakları alabilir. Onu işte işlemini yapar, şey yapar.
+
+362
+01:01:04,436 --> 01:01:11,675
+PI bitirdiğinde PI artı bir ihtiyarlı olan kaynaklar bitirilir. Böyle bir state'e, belli bir düzen olayı koyuyor.
+
+363
+01:01:13,135 --> 01:01:21,835
+Bu düzen sayesinde sistem eğer hala safe state'de kalıyorsa, bu işlemleri yaparken kontrolü aşılaşılmasına deadlock yok.
+
+364
+01:01:22,576 --> 01:01:25,496
+Sistem unsafe state'e girdiyse deadlock oluşabilir.
+
+365
+01:01:26,355 --> 01:01:31,855
+Avoidance ne yapıyor? Sistemin unsafe state'e girmesiyle alakalı önlemleri alıyor.
+
+366
+01:01:32,692 --> 01:01:39,231
+Şuradaki önlemlere göre çok çok daha smooth veya soft önlemler diyebiliriz.
+
+367
+01:01:39,311 --> 01:01:39,631
+Prevention.
+
+368
+01:01:40,672 --> 01:01:43,611
+Biliyorsun ki istediğin kaynağı hiçbir şekilde alamazsın.
+
+369
+01:01:44,031 --> 01:01:45,631
+Talep ettiğin kadar kaynak alamazsın.
+
+370
+01:01:46,111 --> 01:01:47,831
+Ben ne kadar tahsis edersen o kadar alacaksın.
+
+371
+01:01:48,371 --> 01:01:49,031
+Ama burada ne var?
+
+372
+01:01:49,551 --> 01:01:50,951
+Hani istiyorsan bir bakalım.
+
+373
+01:01:51,231 --> 01:01:53,791
+Hani şartlar müsaitse verebiliriz.
+
+374
+01:01:55,231 --> 01:01:56,791
+Eoilis algoritması için.
+
+375
+01:01:57,876 --> 01:02:03,456
+Eğer her bir kaynağın tek bir tipi varsa resource allocation olarak kullanılabilir.
+
+376
+01:02:05,376 --> 01:02:06,476
+Bu şey.
+
+377
+01:02:07,336 --> 01:02:09,016
+Tabii bunu birazcık özelleştirmiş olacağız.
+
+378
+01:02:09,256 --> 01:02:18,636
+Eğer her bir kaynağın tek bir örneği yoksa, birden fazla örneği yoksa, dedim ya banka örneği, bu sefer banker algoritması diye bir şey geliştirmiştir.
+
+379
+01:02:19,196 --> 01:02:23,776
+Bu şu demek arkadaşlar, bankaların görevi normalde kredi vermiş.
+
+380
+01:02:23,936 --> 01:02:24,896
+Yani paradan paraya vermiş.
+
+381
+01:02:26,356 --> 01:02:32,496
+Şimdi bu paradan para yatarken bankanın da kendilerine göre belli uyması gereken kurallar var.
+
+382
+01:02:32,715 --> 01:02:38,576
+Çünkü ortada bir miktar 10 lira para varsa o 10 lira para bankaya giriyor.
+
+383
+01:02:38,695 --> 01:02:42,336
+Bankadan işte öbür müşteriye gidiyor. Oldu 20 liralık bir para şeyi.
+
+384
+01:02:42,735 --> 01:03:06,376
+Ardı. Ondan sonra o gidiyor tekrar bankaya yatırıyor. Oldu 30 lira. Tabi burada aradaki farkları aktaralım. Yani genelde Merkez Bankası falan belli bir miktar içinden pay alır. Çünkü der ki yoksa sınırsız kredi üretirsin. 10 lira paradan sınırsız para üretir. E ne oldu? Herkes parasını geri çekmek isterse ne olacak? Fiziki olarak 10 lira var. Ama kaydığı olarak sistemlerde kayıtlı belki 1 milyon var.
+
+385
+01:03:06,675 --> 01:03:10,835
+1 milyon çekemeyen için ne olacak? Sistem kilitli. Banka o zaman çökecek.
+
+386
+01:03:10,835 --> 01:03:19,875
+Bu tarz bir durum var. Banker algoritması eğer kaynakların çoklu olduğu durumda olduğu durum varsa evoilisi yapacağımız şey.
+
+387
+01:03:19,875 --> 01:03:23,715
+Şimdi buradaki resource allocation graph nasıl oluyor?
+
+388
+01:03:23,715 --> 01:03:28,675
+Claim H dediğimiz, az önceki grafta birazcık değişiklik yapıyoruz.
+
+389
+01:03:28,675 --> 01:03:34,036
+Pİ, RJ'ye şeklinde gösteriliyor ve bunu şunu ifade ediyor.
+
+390
+01:03:34,387 --> 01:03:53,088
+PC prosesi, RC kaynağını request edebilir, talep edebilir. Bu talebi göstermek için de, şimdi Resource Allocation grafında biraz önce dedik ki, talebi request dediğimiz şey, düz çizgiyle ama burada da kesikli çizgiyle ifade ediyoruz, ders yapıyoruz.
+
+391
+01:03:57,492 --> 01:04:10,452
+request ec aslında dönüşüyor. Eğer bir process request, yani bu kaynağı request ederse buna bir dönüşüm oluyor. Arasında bir dönüşüm oluşacak, tamam mı?
+
+392
+01:04:13,251 --> 01:04:20,292
+Edebilirden, yani olabilirlikten request yapıldığında şey. Bu olabilirlik ne demek? İşte geleceğe yönelik tahmin.
+
+393
+01:04:20,820 --> 01:04:28,300
+Acaba bu tahmin eder mi? Tahmin ettiğinde ona göre bir hesaplama. Tahmin etmeden önce bir hesaplama. Böyle bir şey yapılacak.
+
+394
+01:04:29,660 --> 01:04:43,100
+Request Edge'ler bir Assignment Edge'e dönüştürüyor. Daha sonra tekrardan. Mesela ben bunu talep ettim. Talep edebilirim. Talep ettim. Assignment yapılacağı ne olacak? Bu sefer okun yönü terse gelecek.
+
+395
+01:04:43,956 --> 01:04:55,896
+3 farklı aşama. 1. aşama talep edebilirim. 2. aşama talep ettim. P'ye'den R'ye diyelim şöyle. 3. aşama talep ettim. Bana tahsis edildi. Bu sefer okun yönü ters dönecek. Bu biraz örnek gördüğüm için aynısı.
+
+396
+01:04:57,956 --> 01:05:06,196
+Ondan sonra ne oluyor? Bir kaynak release ediliyor. Assignment Edge tekrardan claim Edge'e dönüşüyor. Bakın biraz önce assignment Edge.
+
+397
+01:05:06,592 --> 01:05:23,172
+Bu şekilde dedik, işte resource'tan prosese aktarıldı. Tekrardan bu baş noktaya dönüyor. Resource'lar bir kriori ile sistemde kaynak talepte bulunabiliyor.
+
+398
+01:05:24,452 --> 01:05:31,572
+Yani belli bir gelişigiler talepte de bulunacak. Buradan ne anlıyoruz? R1 kaynağı T1'e atanmış.
+
+399
+01:05:32,436 --> 01:05:56,735
+P1, R2'yi talep edebilir. P2, R1'i talep ediyor. P2, R2'yi de talep edebilir. Burada graph bir şey olur mu? Deadlock olur mu? Şimdi bunun safe state, unsafe state diyelim. Şu an mesela P1, R2'yi talep etmemiş. Belki hiç talep etmeyecek, bilmiyoruz.
+
+400
+01:05:57,876 --> 01:06:22,476
+P1, R2'yi olduğu da talep etti. Bu da talep etme ihtimalinde olduğu için ne olacak? Ben bunu buna tahsis edeceğim. Bu işini bitirecek. İş bittikten sonra tekrar eski şuna dönecek. P1 tutuşu olacak. Daha sonra P2 bunu talep, mesela R1'i de release etti. R1'i release ettiği için bu buna atanacak.
+
+401
+01:06:23,699 --> 01:06:31,079
+Bu da daha sonra bunu talep ederse R2, belki hiç talep etmeyeceğiz. Yani fazladan bakıyoruz. Ne olacak? Burada herhangi bir şey olmak zorunda değil.
+
+402
+01:06:33,219 --> 01:06:34,819
+Bakın şu ansevkistik.
+
+403
+01:06:37,500 --> 01:06:38,659
+P1'e atanmış.
+
+404
+01:06:40,039 --> 01:06:42,099
+P2, R1'i talep ediyor.
+
+405
+01:06:43,039 --> 01:06:44,619
+R2 de P2'ye atanmış.
+
+406
+01:06:46,119 --> 01:06:48,699
+Şimdi P2'nin...
+
+407
+01:06:49,876 --> 01:06:53,996
+P2'nin talebinin yerine gelmesi için P1'in R'leri serbest bırakması lazım.
+
+408
+01:06:55,376 --> 01:06:57,976
+P1, R2'yi henüz talep etmemiş.
+
+409
+01:06:58,755 --> 01:07:01,476
+Dolayısıyla ne oluyor? P1 belki R1'i serbest bırakacak.
+
+410
+01:07:02,135 --> 01:07:03,836
+P2 de talebine ulaşacak.
+
+411
+01:07:04,715 --> 01:07:08,096
+Bu ne olabilir? Sıkıntısı çözüldü.
+
+412
+01:07:08,235 --> 01:07:09,276
+Ama şöyle bir ihtimal oldu.
+
+413
+01:07:09,856 --> 01:07:13,175
+Oldu da P1, R2'yi talep etti.
+
+414
+01:07:14,175 --> 01:07:16,276
+P1, R2'yi talep ettiğinde
+
+415
+01:07:17,235 --> 01:07:41,175
+Ne oluyor? Talebe de mesela böyle bir şey olduğunda ne oldu? Bakın bir saykı oluştur. İşte bu unsafe state'e girme ihtimali var. Ben hiçbir şekilde yani P1'in R2'yi talep etmemesini sağlayacağım veya şunu yapacağım. P1 R2'yi talep ettiyse diyeceğim ki sen önündeki elindeki önce R1'i bir bırak da ondan sonra talebine bakarız. Evoidus bunu yapıyor.
+
+416
+01:07:42,867 --> 01:08:05,867
+Tabi burada resource algorithm için, graph algoritması için şuna bakacağız. P1, RJ'yi, PI, RJ'yi talep ediyor, request ediyor. Ancak bu request page'in dönüştürülmesiyle grant edilebilir, yani verilebilir arkadaşlar, SMGC. Yoksa, title oluşma ihtimali olacağı için...
+
+417
+01:08:06,387 --> 01:08:18,528
+Her durumda bu ihtimali, yani bu talebe cevap verilmiyor. Aynı şurada söylediğim şey, diyor ki sen P1 olarak R2'yi talep edersen, ben de sana derim ki önce R1'i bırak.
+
+418
+01:08:19,747 --> 01:08:26,487
+Bırakacak, P2 R1'i alacak, ondan sonra P2'nin bitirmesini bekleyecek, bu iş böyle devam edecek.
+
+419
+01:08:28,595 --> 01:08:34,935
+Tek kaynak üzerinde düşündüğümüzde böyle bir durum var. Eğer çoklu kaynak olsaydı bu graf, 3 boyutlu bir graf haline dönüşüyor arkadaşlar.
+
+420
+01:08:35,876 --> 01:08:50,095
+Şimdi graf üzerinde cycle detection yaparak bu işi çözmeye çalışacaksak veya bir deadlock'ın varlığından bahsedecek olursak, grafın cycle detection algoritması şu, tek bir örnekte zaten bir karmaşıklığa sahip.
+
+421
+01:08:50,707 --> 01:09:06,047
+O örnekleri siz çoğalttınız da 3 boyutlu moleküllerin birbiriyle etkileşimi olan bir şey vardır ya. Çok daha karmaşık, kompleks bir grafa dönüyor. Onun üzerinde bu cycle işlemini kontrol et yapmak çok çok daha karmaşık maliyetti.
+
+422
+01:09:14,804 --> 01:09:20,764
+Kullanabileceği önceden bir april dediğimiz ön bilgi diyelim, ön kabul diyelim.
+
+423
+01:09:21,523 --> 01:09:25,203
+Maksimum talebiyle alakalı bir bilgimiz varsa, bakın bu da zor bir şey.
+
+424
+01:09:26,164 --> 01:09:30,523
+Ben proses olarak yeni tane yazıcı kullanacağım. Bunu önceden kestirebilmek de sıkıntılı.
+
+425
+01:09:31,443 --> 01:09:42,003
+Burada bir proses talep yaptığında, bir kaynak talebi yaptığında, bunu bekletmek zorunda kalabiliriz.
+
+426
+01:09:42,676 --> 01:09:56,156
+İşte banker algoritması bunu söylüyor. Bazı durumlarda ben kaynakları öyle bir tahsis edeyim ki sana şunu vereceğim, sana bunu vereceğim ama geri almak üzere vereceğim. Şu kadar sürede geri almak üzere vereceğim gibi bir kontrol.
+
+427
+01:09:57,036 --> 01:10:04,275
+Algoritmanın karmaşıklığı falan alacak. Saatimiz kaç oldu? Bir ara verelim 10 dakika. 50 geçe devam ederiz.
+
+428
+01:22:08,787 --> 01:22:10,448
+Evet, devam edelim arkadaşlar.
+
+429
+01:22:12,507 --> 01:22:18,167
+Banker algoritması hangi yöntem altında geliştirilmiş bu algoritma?
+
+430
+01:22:19,287 --> 01:22:23,407
+Deadlock Preventation dedik, Deadlock Avoidance dedik, Avoidance'ın altında.
+
+431
+01:22:24,967 --> 01:22:25,768
+Düşünce ne burada?
+
+432
+01:22:26,647 --> 01:22:29,707
+Preventation'da bayağı engelliyorsun her şeyi, prevent yapıyorsun.
+
+433
+01:22:30,747 --> 01:22:33,707
+Avoidance'da belli bir serbestlik var.
+
+434
+01:22:34,452 --> 01:22:40,832
+Ama bu resource'ların allocate edilmesiyle alakalı bir kontrol mekanizması için şimdi bulunuyor.
+
+435
+01:22:41,752 --> 01:22:44,772
+Şimdi gördüğünüz o kontrol mekanizmasında ne kadar sıkıntılı olacağını.
+
+436
+01:22:46,352 --> 01:22:54,711
+Sistem eğer unsafe bir duruma girecekse diyor ki kaynak atamasını yapmayacağım veya belli bir duruma göre atacağım.
+
+437
+01:22:55,711 --> 01:22:56,711
+Şimdi burada...
+
+438
+01:22:57,492 --> 01:23:11,131
+Algorithmanın belli data structure'lar var. Kabul edelim ki n tane prosesimiz olsun. n tane prosesin dışında da m tane kaynak tipi olsun. Kaynak tipi. Tamam mı? Kaynak tipi.
+
+439
+01:23:11,891 --> 01:23:22,131
+Evadeable olanlar şunlar. Bir vektör, m uzunluklu bir vektörümüz var. Eğer işte j eşittir k şöyle bir şey görüyorsak.
+
+440
+01:23:23,572 --> 01:23:31,432
+J. kaynağı, k-edat sample'ı available'dır, vardır diyebiliyoruz.
+
+441
+01:23:32,131 --> 01:23:34,771
+Buna available bilgisi, vektör gibi bir şey diyoruz.
+
+442
+01:23:51,283 --> 01:24:04,304
+eşittir k ise pi prosesi k tane istis rj kaynağından talep edebilir, request edebilir.
+
+443
+01:24:05,583 --> 01:24:07,263
+Allocation şunu söylüyor.
+
+444
+01:24:08,804 --> 01:24:10,484
+Yine bu en şerpenlik bir matriz.
+
+445
+01:24:11,863 --> 01:24:16,283
+Buradaki herhangi bir ig değeri pi prosesi
+
+446
+01:24:17,011 --> 01:24:37,171
+rv kaynağının k tane insitasına halen sahip. Onlara allocate edilmiş. Yani bu edebilir dediğim bir an önceki şu çizgiye karşılık geliyor. Şu hani bu prosesten resource'aydı. Bu resource'tan prosese atanmış bir şey.
+
+447
+01:24:42,996 --> 01:24:52,935
+RJ kaynağının K tane sample ile kendi işini tamamlaması için ihtiyaçta bulunabilir. Bu da öyle bir şey. Yani olabilecek ihtiyaçlar.
+
+448
+01:24:52,935 --> 01:25:06,036
+Tabi need şundan çıkıyor. Biz maksimum ihtiyaçtan, yani request'imizden hali hazırda atadıklarımızı çıkartırsak bundan türetilen şey need diyoruz. İhtiyaç.
+
+449
+01:25:10,739 --> 01:25:32,960
+Benzeten, o sisteme benzeteten bir şey. Dedik ya bankanın görevi kredi vermek, elindeki fiziki parayı öyle bir dağıtacak ki bankaların mesela yeterli krasosu vardır. Bu yeterli krasosu şu demek, elinde on birim hangi para olursa olsun fiziki para var.
+
+450
+01:25:34,547 --> 01:25:40,727
+Ama kaydî olarak, sistemlerde kayıtlı olarak, işte müşterilerin parası da 100 gülüm oldu.
+
+451
+01:25:40,927 --> 01:25:46,927
+%10 talep karşılama ihtimali. Bu mesela %10 kötü bir şey. %50 falan olması lazım bankacılıkta.
+
+452
+01:25:48,268 --> 01:25:52,387
+Bunun altına, elinin altına düştü mü, millet parasını istiyor, parasını alamıyor.
+
+453
+01:25:52,727 --> 01:25:54,847
+Böyle batan bankalar falan oldu o zaman.
+
+454
+01:25:56,307 --> 01:25:59,847
+Seyfiz'i algoritma şuna bakıyor. Diyor ki, work ve finish.
+
+455
+01:26:00,979 --> 01:26:14,979
+Farklı vektörler olsun. Bunlar başlangıçta work dediğimiz şey available. Birazdan göreceğiz örneği var. Finish dediğimizde birden ne kadar değerlerle false diye söylüyoruz.
+
+456
+01:26:14,979 --> 01:26:24,811
+Burada bir i bulunuyor. i şu şekilde olacak. Bir finish'in iyisi false değerine atanacak.
+
+457
+01:26:24,979 --> 01:26:39,599
+İhtiyacımız da workten küçük olacak, küçük veya eşit olacak. O zaman böyle bir iyi yoksa dördüncü adıma geçiyoruz. Dördüncü adımda diyorsun ki finish iyi olursa sistem safe state'dedir.
+
+458
+01:26:51,859 --> 01:26:55,180
+İhtiyacın work'ten küçükse şu duruma geç.
+
+459
+01:26:55,779 --> 01:26:59,859
+Veya bu durum yoksa belli bir allocation yapıyorum.
+
+460
+01:27:00,819 --> 01:27:02,180
+Senin çalışan şeyin.
+
+461
+01:27:02,819 --> 01:27:06,420
+Burada mesela work diye bir şey yok. Burada bir tane vektör vardı.
+
+462
+01:27:07,460 --> 01:27:12,739
+Ne kadar atandığın bilgisini tutuyorum, finish ikiye şarjı yapıyorum, tekrar step ikiye gidiyoruz.
+
+463
+01:27:13,140 --> 01:27:17,140
+Belli miktar bu atama işlemleri devam ediyor. Bu algoritmayı trace edebilirsiniz.
+
+464
+01:27:18,003 --> 01:27:24,164
+Ve herhangi bir PE process için resource request'i şuradaki şeylere göre oluyor.
+
+465
+01:27:24,764 --> 01:27:30,244
+Eğer request'iniz need'inizden küçükse ikinci adıma geçiyorsun. Değilse bir hata.
+
+466
+01:27:31,164 --> 01:27:39,764
+Niye? Talep var, ihtiyaç var ama siz ihtiyacınızdan daha az talep etmemeniz gibi bir şey gerekiyor.
+
+467
+01:27:40,484 --> 01:27:44,764
+Request'iniz available'dan küçükse demek ki size bir kanal verilebilir.
+
+468
+01:27:45,747 --> 01:27:56,148
+Üçüncü adıma geçecek. Değilse kaynaklar boşalana kadar veya kaynaklar boş olmadığı için, available kaynak olmadığı için bekleyeceksiniz. Beklemek zorundasınız.
+
+469
+01:27:57,228 --> 01:28:05,467
+Ve şurada da resurslarla kaynaklar arasındaki atama işlemi, işte atanmış kaynaklar aktarılıyor, daha sonra tekrar needler güncelleniyor.
+
+470
+01:28:05,568 --> 01:28:11,447
+Çünkü şuradaki anam atışlarımızın verilerin güncellenmesi lazım. Bu böyle devam edip gidiyor. Düşünün.
+
+471
+01:28:12,627 --> 01:28:38,307
+Şöyle geri alalım. Veri yapısı olarak baktığımızda matrisler var. Şimdi bu matrislerde gezinmenin karmaşıklığı ne? N çarpı M desek N kare karmaşıklıklı matrislerde bir işlem yapacağız. Öyle değil mi? Yani N de hesaplamak için bile iki matris üzerinde M çarpı N kadar M ve N'yi eşit tutarsanız N kare karmaşıklıklı bir şey var. Bunu bir şey için yapıyorsunuz. N tane bunu yapmaya çalıştığınızda
+
+472
+01:28:38,707 --> 01:28:40,707
+Ne olur? N küplük bir algoritma.
+
+473
+01:28:42,007 --> 01:28:45,608
+Yani yazayım ama şurası yaklaşık olarak big o n kare.
+
+474
+01:28:46,108 --> 01:28:48,347
+Ama ben bu big o n kareyi bir de n ile çarpacağım.
+
+475
+01:28:48,787 --> 01:28:52,988
+Her proses için dediğimde n küpe giden bir karmaşıklık karşıma geliyor.
+
+476
+01:28:54,327 --> 01:28:55,148
+Evet, örnek şu.
+
+477
+01:28:56,648 --> 01:28:57,787
+5 tane proses var.
+
+478
+01:28:58,087 --> 01:29:00,427
+P0'dan P4'de 3 tane de kaynak tipi.
+
+479
+01:29:01,203 --> 01:29:27,423
+Ne vardı? Allocation şey, maximum, maximum, bir de available bilgimi. Bir de bunlardan need türetecek. Available şu an boşta duranları söyleyecek. Diyor ki allocate hali hazırda yani şu bir aslında şey, vector, şu söyleyen. Burada 10 tane olabilir. A'dan.
+
+480
+01:29:27,956 --> 01:29:31,295
+B'den 5 tane olabilir, C'den 7 tane olabilir.
+
+481
+01:29:32,715 --> 01:29:35,036
+Halihazırda allocation yaptıklarımda şunlar.
+
+482
+01:29:35,235 --> 01:29:37,275
+A'ya P0'dan atamamışım hiç.
+
+483
+01:29:38,555 --> 01:29:40,675
+P0'a A'dan hiç atamamışım.
+
+484
+01:29:41,475 --> 01:29:43,375
+P2'ye A'dan 3 birim atamışım.
+
+485
+01:29:44,855 --> 01:29:52,135
+Sonra P2'nin olabilecek maksimum ihtiyaçlarını da burada, her prosesin olabilecek maksimum ihtiyaçlarını da tutuyorum.
+
+486
+01:29:54,771 --> 01:30:16,152
+A'dan 9 taneye ihtiyaç duyuyor. C'den 2 taneye ihtiyaç duyuyor. Bu bilgi burada duruyor. Boşta kalan kaynakları sayacağım. Şimdi boşta kalan kaynaklar nasıl sayılır? Evveli bu. 10 tane A elimde varsa, allocate ettiklerim A kaç tane? 2, 5, 7. O zaman 3 tane boşta A var.
+
+487
+01:30:23,667 --> 01:30:41,487
+2, 2, 1, 5, 2 tane de boşta C1. Şimdi acaba ben bu P0, P1, P2, P3, P4'e maksimum taleplerinde biliyorum ya, buradan need üretsem, need üretebilirim çok basit.
+
+488
+01:30:41,567 --> 01:30:45,167
+Ne yapacağım? Maksimumdan allocation'i çıkartacağım. Yazalım şuraya mesela ABC'ye diyelim.
+
+489
+01:30:50,804 --> 01:30:52,084
+3, öyle değil mi?
+
+490
+01:30:53,784 --> 01:31:07,144
+Şurada, 3, 2, 2'den, 1, 2, 2, 6, 0, 0, ihtiyaç duyacağı, ekstra daha sonradan atanacaklar.
+
+491
+01:31:08,724 --> 01:31:14,004
+0, 1, 1, 4, 3, 1.
+
+492
+01:31:14,824 --> 01:31:16,684
+Arada işlem hatası yaptıysam, düzelttim.
+
+493
+01:31:17,587 --> 01:31:39,167
+Bu ihtiyacı var. Şimdi ben sistemi yöneten olarak elimde available'larda var. Kaynağı vereceğim. O proses, o kaynağı kullanacak. Geri iade alacağım. Aynı para verip geri almak gibi. Available güncellenecek.
+
+494
+01:31:39,891 --> 01:31:45,311
+Şu p0, p1, p2, p3, p4 arasında bir permütasyon çıkartabilir miyim?
+
+495
+01:31:46,231 --> 01:31:47,811
+Ne demek permütasyon? Bir sıralama.
+
+496
+01:31:48,311 --> 01:31:50,731
+5 tane bir şey varsa burada 5 faktöriyel durum var.
+
+497
+01:31:52,551 --> 01:31:57,131
+Elimde de 3, 3, 2 var. Yani 5 faktöriyeli 120 tane denemek bir kere çok ciddi bir maliyet aslında ama.
+
+498
+01:31:57,691 --> 01:32:01,691
+Burada belgü öğretme kendine göre işte diyor ki önce sıfıra bakayım verebilir miyim?
+
+499
+01:32:01,911 --> 01:32:04,551
+Hani 5 faktöriyeli böyle her ihtimali denemeyim.
+
+500
+01:32:05,619 --> 01:32:32,059
+P0'a bakarım. Verebiliyorsam P0'a veririm diyor. Ama P0'a verdiğinde şuna bakıyor. P0'a ben bu kaynağı verirsem sistemde deadlock oluşma ihtimali, an seçtede girme ihtimali var mı ona bakacak. Dolayısıyla hani 5 defa kontrol etmesi yeterli aslında. Bakalım P0'a istediklerini verebiliyor muyum? P0'ın ihtiyacı ne? Şu. 7, 4, 3. Elimde ne var? 3, 3, 2 var. Verebilir miyim? Veremem. O zaman P0 gitti.
+
+501
+01:32:32,532 --> 01:32:55,911
+P1'in ihtiyacı ne? 1, 2, 2. Verebilir miyim? Verebilirim çünkü elimde 3 içliği var. Bunu P1'e verdim. P1 gitti, işini bitirdi, geldi. 1, 2, 2 verdiğinde ne oldu allocation'ı? Şurayı güncelleyelim. 3, aslında maksimum oldu. 3, 2, 2'yi yapalım değil mi? Bu 3, 2, 2 işi bittikten sonra geldi.
+
+502
+01:32:56,756 --> 01:33:21,756
+Available da güncellenecek. Şimdi 1, 2, 2'yi verdiğimde ihtiyacını verdiğimde ne oldu? 2, 2, 1 olmuştur. Elinden geri aldım hepsini. Artı 3, 2, 2 aldım. 5, 4, 3 mu oldu? Available ne oluyor? Bu aşama sonrasında 5, 4, 3 oluyor. Önce veriyoruz. Sonra hepsini geri alıyoruz. Çünkü...
+
+503
+01:33:22,195 --> 01:33:33,115
+P1 prosesi hala hazırda bunlara sahip ama 3, 2, 2 şunlara da sahip olursa yapacağı işi yapacak bitirecek ve bunları rılı izleyecek.
+
+504
+01:33:33,395 --> 01:33:43,216
+5, 4, 3. 5, 4, 3 varken kime verebiliriz? P1 gitti zaten. P2'ye veremeyiz. P3'e verebiliyoruz.
+
+505
+01:33:44,435 --> 01:33:49,076
+P3'e verirsek ne olacak? Bu 2, 2, 2 olacak.
+
+506
+01:33:49,844 --> 01:34:15,703
+5, 4, 3 ilk verdiğimizde ne olacak? Şu 5 olarak kalacak. Şu 3 olacak. 5, 3, 2 olacak. Sonra bunu geri aldığımızda 7, 5, 4 olacak. Nihal olarak ebeylir bu. Yani P3'ü devreden çıkarttık. 7, 5, 4'ü kime verebiliriz? P4'ü de verebilirim.
+
+507
+01:34:16,595 --> 01:34:17,895
+P0'a da verebilirim.
+
+508
+01:34:19,095 --> 01:34:20,375
+P4'e vermiş olalım.
+
+509
+01:34:20,715 --> 01:34:23,055
+Yani yukarıdan aşağıya doğru sırayla gidiyordu ya.
+
+510
+01:34:23,675 --> 01:34:26,735
+P4'e verdiğimde bu 7 olarak kalacak.
+
+511
+01:34:27,795 --> 01:34:29,095
+Ondan sonra 5 olarak kalacak.
+
+512
+01:34:29,235 --> 01:34:29,755
+2 olacak.
+
+513
+01:34:30,635 --> 01:34:33,575
+Yani bu, pardon, maksimum bir dakika ya.
+
+514
+01:34:33,775 --> 01:34:34,975
+Yanlış yere bakıyoruz arkadaşlar.
+
+515
+01:34:35,715 --> 01:34:36,335
+Ne'ye bakacağız.
+
+516
+01:34:37,115 --> 01:34:37,975
+Şurayı geri alıyorum.
+
+517
+01:34:38,315 --> 01:34:38,795
+Kusura bakmayın.
+
+518
+01:34:43,252 --> 01:34:49,492
+Şimdi elimde 3, 3, 2 var. Kimin ihtiyacı, yani p sıfırın ihtiyacını karşılayamadım.
+
+519
+01:34:50,752 --> 01:34:53,532
+p1'in ihtiyacını karşılar mı? Karşılar. p1'e verdik.
+
+520
+01:34:54,532 --> 01:34:59,152
+p1'e verdiğimizde ne vereceğiz? 1, 2, 2 vereceğiz. Yani eveyli bulunuyor olacak önce.
+
+521
+01:35:00,292 --> 01:35:03,231
+2, 1, 0 olacak.
+
+522
+01:35:04,372 --> 01:35:10,771
+Buna bu ihtiyacı verdiğimizde ne olacak? Bu 3, 2, 2 allocate edilmiş olacak.
+
+523
+01:35:11,188 --> 01:35:33,868
+Bunun işi bittiğinde geri alacağız. 3, 2, 2'yi aldığımızda 5, 3, 2 oluyor. Şimdi doğru yaptık mı? Şimdi P1 gitti. 5, 3, 2'yi kime tahsis edebilirim? P3'e veya P4'e. Geldik P3'e verelim. 5'ten 0 vereceğiz. Bu 5 olarak kalacak.
+
+524
+01:35:35,220 --> 01:35:57,500
+3'den bir tanesine 2 olacak, 2'den bir tanesine 5, 2, 1 olacak. Yani şurası 2, 2 oldu. Bunun işi bittiğinde bu 7 olacak, bu 4 olacak, bu 3 olacak. Tamam mı? P3'ü de aldık. 7, 4, 3'ü kime verebiliriz? Şuradan bunu almıştık, şimdi şunu mu atladık arkadaşlar?
+
+525
+01:35:59,828 --> 01:36:06,967
+7, 4, 3'ü en uygun, yani P2'ye de verebiliriz, P4'ü de verebiliriz ama P2'ye biraz önce veremiyorduk.
+
+526
+01:36:07,068 --> 01:36:08,868
+Şeyden dolayı, P4'e vermiş olalım.
+
+527
+01:36:09,967 --> 01:36:14,268
+4 verdiğimizde 3, şurası 1, şurası 2 oluyor.
+
+528
+01:36:15,108 --> 01:36:16,307
+Bu 4, 3, 3 oluyor.
+
+529
+01:36:17,668 --> 01:36:22,188
+Bunun işi bittiğinde 7 geldi, 4 geldi, 5 geldi.
+
+530
+01:36:22,268 --> 01:36:22,967
+7, 4, 5.
+
+531
+01:36:24,128 --> 01:36:26,328
+Bunu da aldık, P4'ü aldık.
+
+532
+01:36:26,771 --> 01:36:49,652
+7, 4, 5'i şuraları silelim. İhtiyaca göre kime verebiliriz? Şuna verebilirim. P2'ye de verelim. Hani önce P0'a verdiniz. P0'a göre available veriniz. Ondan sonra P3'e verdiniz. P2 mi oluyor? P2'ye verdiniz. Bakın bu sırada giderseniz, tehlikeli duruma düşünüyorsunuz.
+
+533
+01:36:54,515 --> 01:37:03,915
+P0'dan başladım, P1'i kontrol ettim, P1'i kontrol ettim. Bir kontrol, bir tur yapıyorum. Verebildiklerimi tekrar geri alıyorum.
+
+534
+01:37:04,755 --> 01:37:14,675
+Tabii burada hani şimdi verdim, anında bir saniye sonra geri al gibi bir durumda. Belli bir süre geçecek bir kaynağın, bir prosesin o kaynağı kullanması için.
+
+535
+01:37:15,395 --> 01:37:18,775
+E geri aldık, tekrar kontrole devam ediyoruz. E başa dönüyoruz.
+
+536
+01:37:19,891 --> 01:37:47,671
+Aynı proses tekrar geri gelebilir bu işin. Bu matris operasyonlarını, bu toplama çıkarma operasyonlarını sürekli yapıyoruz. Karmaşıklık dediğim gibi en yüküme doğru gidiyor. Bakın şurada demiş ki önce nidi bulalım. Ben p1, p3, p4, p0, p2 demiştim. Mesela p2, p0 da olabilir. Ben niye p0, p2 yaptım? Çünkü p0, p1, p2, p3, p4 kontrol ettim. Sonra başa döndüm.
+
+537
+01:37:47,891 --> 01:38:15,131
+Kendi hali yürütme bu şekilde. Ama hani geriye doğru yani bir ileriye doğru bir geriye doğru belki yapmıştır. O da olabilir. Şu şekilde yaptığınızda sisteminiz safe state'de kalıyor. Need'i nasıl tamam yaptık? Need, available'dan, şey maksimumdan allocation'ı çıkartarak, şurada zaten söyledi. Maksimumdan allocation'ı çıkartıyoruz. Elimdeki available'la ne yapıyorum? Bir aslında permütasyon, bir sıralama yapıyorum. Bu sıralamada
+
+538
+01:38:15,520 --> 01:38:17,920
+Hangisini hangisini atarsam mümkün olursun.
+
+539
+01:38:20,140 --> 01:38:28,520
+Mesela p1'in need bu şekilde olduktan sonra hali hazırda bu şekilde allocation var.
+
+540
+01:38:28,659 --> 01:38:29,680
+Şu needlere bakıyoruz.
+
+541
+01:38:30,939 --> 01:38:33,699
+Bunun ihtiyacına p0'a cevap vermiyor.
+
+542
+01:38:33,840 --> 01:38:35,880
+p1'e cevap verebiliyoruz. Bu elimizde var.
+
+543
+01:38:36,372 --> 01:39:01,212
+Bu cevap, bu verildiğinde ne olacak? İşte şu available güncellenildik. Yani ben bunu verdiğimde available'un değeri kaç olacak? 2, 1, 0. Bunu sorabiliriz. 1, 0, 2. Yani mevcut available şeyden küçükse ne oluyor? Onu verebiliyorsun. Ne oldu? 2, 1, 0. Bu bittikten sonra available ne olacak? Allocate etmiştik.
+
+544
+01:39:01,652 --> 01:39:26,771
+Ne oldu? 3, 2, 2 olmuştu. Onu geri alıyorum. 5, 3, 2 oluyor. P1 işini yani alacağını alıp çıktıktan sonra. Şu bir mesela execution save olduğunu gösteren bir şey. Mesela diyor ki, P4 için 3, 3, 0 request'i grant edilebilir mi?
+
+545
+01:39:29,235 --> 01:39:40,636
+Mesela şu durumdayız. P4'e 3, 3, 0 olduğunu kabul edelim. Yani böyle bir request oldu yanlış. Yani need'ini dikkate almıyorum ki. Verebilir miyiz? Veremeyiz. Available yok. Bu olmaz.
+
+546
+01:39:41,596 --> 01:39:52,396
+P0 için 0, 2, 0 verilebilir mi? P0 eğer bu kadar bir şey varsa, elimde de bu kadar varsa bunu verebiliyorum. Bunlarda sıkıntı yok.
+
+547
+01:39:55,444 --> 01:40:07,923
+Evet, bu deadlock'ın avoidance olma durumudur. Peki, deadlock'ı dedekt edersek, şuraya geri gelelim, 4 tane yaklaşım var demiştik.
+
+548
+01:40:21,268 --> 01:40:40,568
+Bir prosesin tamamlanması söz konusu. Proses o kaynağı release edir. Tamamlanıp tamamlanmaması beni ilgilendirir. Yani en tane proses var. Yazıcıyı release ed. Yani bir dosyayı release ed. Bana lazım olan redlock için o kaynağı bırakmaz. İsterse devam etsin, beni ilgilendirmez.
+
+549
+01:40:45,332 --> 01:40:45,732
+Evet.
+
+550
+01:40:49,352 --> 01:40:50,132
+Şurada mı?
+
+551
+01:40:51,472 --> 01:40:53,172
+3, 3, 0, p, 4'e.
+
+552
+01:40:53,992 --> 01:40:59,892
+Şu şartlar altında available'a bakarsam, 2 tane A var, 3 tane A istiyor, veremez.
+
+553
+01:41:00,852 --> 01:41:02,432
+Eğer available buysa.
+
+554
+01:41:06,996 --> 01:41:10,215
+Evet, 3. kanalda bir sismah var, 3. çiftlendiriz.
+
+555
+01:41:10,215 --> 01:41:15,555
+Biraz yavaş konuş, net konuş da öyle anlayın.
+
+556
+01:41:15,876 --> 01:41:16,135
+Evet.
+
+557
+01:41:16,135 --> 01:41:16,336
+Tekrar.
+
+558
+01:41:18,135 --> 01:41:18,815
+Tamam.
+
+559
+01:41:22,355 --> 01:41:48,376
+Eğer evaylı bulanı 532 olursa elbette verirsin ama şu şartlar altında bu değer varken böyle bir istek gelirse hani belli bir tarama yapmıyoruz. Diyor ki P4 ben şu kadar kaynak talep ediyorum. Mesela P4'ün maksimum talebi şu kadar 431 ama ben 330'lık talep ediyorum.
+
+560
+01:41:48,884 --> 01:41:51,544
+Bu talebe cevap verebilen için şu şartlarına veremezsin.
+
+561
+01:41:52,524 --> 01:41:54,844
+Hani öncesinde ona atadım, buna atadım öyle bir durum yok.
+
+562
+01:41:54,984 --> 01:41:58,304
+Bu normal bir sekans, bir durum.
+
+563
+01:41:58,304 --> 01:42:05,304
+Ama burada ne yapacaksın? Sistemi kendi içinde belli bir dizayn etme misyonuna sürüklüyorsun.
+
+564
+01:42:05,844 --> 01:42:07,164
+Diyorsun ki tek tek bunlara bak.
+
+565
+01:42:08,584 --> 01:42:11,644
+Onların kaynak, talep etme şeylerine dikkate alma.
+
+566
+01:42:12,284 --> 01:42:13,484
+İsteklerine dikkate alma.
+
+567
+01:42:14,452 --> 01:42:22,452
+Bu şekilde verilebilir. Bunun bilgisini bir tutuyor. Ama kendisi böyle bir talepte bulmuşsa ve eve ile bulma buysa veremezsin.
+
+568
+01:42:23,452 --> 01:42:33,452
+Yani o zaman da şu yok. P4'e şunu diyeceksin. Ya ben bir gidip P1'e bir şeyler vereyim de ondan geri alayım, onun işini bitireyim. Ondan sonra sen de bekle.
+
+569
+01:42:33,452 --> 01:42:37,036
+Ha bu da neye benziyor? Birinin birine borcu var.
+
+570
+01:42:37,300 --> 01:42:50,819
+Ya diyor şu falancadan benim de bir borcum var. O borcum gelecek. O borcum gelince ben de senin borcunu kapatacağım. Aynı onun gibi bir şey oluyor. Tamam mı? Sen biraz bekle diyor. İşte şuradan alacağım var, buradan alacağım var. O alacaklar gelecek. Ondan sonra bu ona benziyor.
+
+571
+01:42:51,539 --> 01:42:56,640
+Evet, deadlock'ın deadaction'ı ve deadlock'ın ignorance dediğimiz şey arkadaşlar.
+
+572
+01:42:59,380 --> 01:43:23,840
+Bir diğer çözüm yöntemi bu aslında. Diyor ki, sistemin deadlock'a girmesine izin verirsin. Bir deadlock algoritması ile bunu şey yaparsın ve deadlock'tan recover yaparsın. Yani ne oldu? İyice serbestleştik. Hani hiç böyle kaynak talebi, şu, bu doğrudan hani kılayım, hani öyle en karelik şeylerle değil, sistemde deadlock'ın dedek edebileceğimiz bir şey.
+
+573
+01:43:24,275 --> 01:43:41,275
+Burada da diyor ki, wait for graph. Wait for graph'ı şu, request'leri arkadaşlar, burada kaynakları devreden çıkartarak hangi proses, hangi prosesi bekliyor? Bunun grafını oluşturuyoruz.
+
+574
+01:43:42,175 --> 01:43:47,195
+Ve periyodik olarak bu graf üzerinde bir cycle detection algoritması yapıyoruz.
+
+575
+01:43:47,923 --> 01:44:09,463
+Eğer diyorsun bu grafta cycle varsa o zaman bir deadlock vardır. Çünkü biz ne yapıyorduk? Biraz önce ilk graf hatırlayın. Şurada bir P1 prosesim vardı. Şurada da bir R kaynağım vardı. Bu bunu talep ediyor. İşte bu da bunu tutuyor P2 diyelim. Aslında arka planda ne var? P1 prosesi, P2 prosesinin o kaynağı release etmesini bekliyor.
+
+576
+01:44:14,131 --> 01:44:17,031
+Sadece p'ler üzerinde bir graf oluşturayım.
+
+577
+01:44:18,671 --> 01:44:22,511
+Ve periyodik olarak bir algoritma invoy edeceğim.
+
+578
+01:44:22,631 --> 01:44:24,091
+Yani çağıracağım.
+
+579
+01:44:24,791 --> 01:44:25,871
+Bu algoritma ne yapacak?
+
+580
+01:44:26,631 --> 01:44:27,871
+Cycle detection yapacak.
+
+581
+01:44:27,871 --> 01:44:29,091
+Çok güzel.
+
+582
+01:44:29,711 --> 01:44:30,471
+Ama sıkıntı ne?
+
+583
+01:44:30,651 --> 01:44:40,571
+Eğer sizin n tane prosesiniz varsa, bu n tane proses üzerinde cycle detection yapmanız maliyeti n kareye gidebiliyor.
+
+584
+01:44:42,195 --> 01:44:51,036
+Şöyle bir graf olsun mesela. Şimdi ne yaparsın? Böyle bir yol ararsın. Olası bütün yolları gezeceksin. Burada biraz şey, cycle var mı? Olay bir şey değil bu yani.
+
+585
+01:44:53,135 --> 01:45:09,036
+Tamam, sisteme biraz rahatlık verir. Örneğin sizin search allocation grafınız şöyleydi. Ne diyordu bu bize? P2, R3'ü talep ediyor. P3'e R4 atanmış. Bunları soruyoruz mesela. Yani diyorum ki...
+
+586
+01:45:09,747 --> 01:45:21,367
+Demand ediyor, talep ediyor veya request ediyor. Yukarıdaki graftan, aşağıdaki anlamlardan hangileri çıkarır? Hani buradaki talepten kastımız request, demand bu tarz şeyleri, kelimeleri bilelim arkadaşlar.
+
+587
+01:45:22,107 --> 01:45:36,487
+Veya atanmış, assigned, allocated veya granted veya given, supplied gibi kelimeleri kullanıyoruz. Bu resource allocation graph bu şekilde. Şimdi ben burada resource'ları devreden çıkartacağım. Nasıl çıkartacağız?
+
+588
+01:45:37,235 --> 01:46:03,775
+P2, R3'ü talep ediyordu. R3'ü de P5'i tutuyordu. O zaman P2, R5'i tutacak. Tamam mı? P2, R4'ü talep ediyordu. R4'ü P3 tutuyor. O zaman P2, P3'ü bekliyor. Wait for. Bu şekilde oluşturuyoruz. Şimdi diyor ki ben burada bir cycle varsa bakıyorum bu böyle gidiyor, bu böyle gidiyor. Şuradan bir cycle çıkmaz. Bu bir.
+
+589
+01:46:04,340 --> 01:46:22,720
+Başka cycle ne olabilir? Bu böyle geliyor, bu böyle geliyor, bu böyle geliyor, bu böyle geliyor. Aa bir tane cycle buldum. Deadlock var. Ama bulana kadar da canım çıktı. Çünkü en tane ne yapacaksın? Algoritmayla olası bütün yolları gezeceksin. Bu da ne demek? Eğer benim şimdi bir...
+
+590
+01:46:22,720 --> 01:46:43,880
+Tam bir permutasyon aslında bu şey olarak. Şimdi zorluğu burada en karayla falan çözülebiliyor da. Şimdi ben bir, iki, üç, dört, beş tane düğümüm varsa şurada beş farklı ihtimalle başladım. Ondan sonra hani herkesin herkese bağlantısı olduğu durumunu düşünelim. Yani P1'den bütün düğümlere bağlantı var. P2'den bütün düğümlere bağlantı var.
+
+591
+01:46:44,287 --> 01:47:11,247
+En kötü durumda bundan sonra dört tane bakacaksın. Dört tane yoldan birine gideceksin. Ondan sonra üç, ondan sonra iki, ondan sonra bir. Ondan sonra zaten şununla aynı olan bu da bir tane. Yani beş faktörler kadar ihtimalle gidiyor. Tabi bu her nokta, her proses, her biriyle bağlantılı olmadığı için bu yüz yirminin altında olacak. Cycle detection alibörü bunu yaklaşık olarak n karede yapabiliyor. Ama bunu bir defa kontrol etmek için n kare.
+
+592
+01:47:11,828 --> 01:47:16,788
+N defa bu işi yaparsan N çarpı N kare olduğu yine sana N küt.
+
+593
+01:47:19,088 --> 01:47:20,488
+Bakın bu bir de şu.
+
+594
+01:47:22,088 --> 01:47:23,988
+Tek bir kaynak varsa bu böyle.
+
+595
+01:47:24,748 --> 01:47:26,128
+Tek kaynak yoksa nasıl yapacağız?
+
+596
+01:47:27,128 --> 01:47:32,508
+Yani mesela bu bir tanesini almış, şunu vermişsin, bir tane de boşta duruyor.
+
+597
+01:47:32,508 --> 01:47:39,368
+O zaman burada P2, P5'i beklemiyor gibi bir durum olur.
+
+598
+01:47:40,115 --> 01:48:07,296
+Onu grafta göstermek, onu dedekletmek ayrı bir şey. Bakıyorsun işte R3'ün 5 tane sample'ı var. Bu 5 tane sample'dan bazıları atanmış, bazıları atanmamış. Demek ki o zaman P2, P5'i beklemeyecektir gibi bir mantık ortaya çıkıyor. İyice ortalık karışıyor. Yani orada graf algoritması da işe yaramıyor. Yine bankeri algoritmasına dönüyorsun. Available allocation request bilgilerini tutuyorsun. Yani iş yine ne oldu? Graf'tan matse döndük.
+
+599
+01:48:08,051 --> 01:48:13,531
+Diyor ki, bu detection algoritmasında, bunu size bırakacağım, yani basit bir şey, saatimiz kaç oldu?
+
+600
+01:48:15,031 --> 01:48:16,171
+Vakit varmış.
+
+601
+01:48:17,451 --> 01:48:22,112
+İşte, work ve finish diye iki tane vektörümüz var. Uzunlukları m ve n olarak şekilde atanmış.
+
+602
+01:48:22,211 --> 01:48:28,071
+Work'ler ilk başta available oluyor, finish'ler de işte ilk başta false oluyor, eğer allocation yapılmamışsa.
+
+603
+01:48:28,971 --> 01:48:34,391
+Ve bunlar arasında sürekli bu dördüncü adıma kadar şuradaki algoritmayı çalıştırıyorsun.
+
+604
+01:48:35,539 --> 01:48:39,699
+m çarpı n kare defa işlem gerçekleştiriyor. Şurada örneği vardı.
+
+605
+01:48:41,460 --> 01:48:45,780
+allocation var, requestler var, available'lar var.
+
+606
+01:48:46,539 --> 01:48:56,780
+Yine ne yapıyor? Bu bir tur, m çarpı n kare defa bir tur kontrol ediyor. Şimdi available olan durum var.
+
+607
+01:48:57,235 --> 01:49:03,435
+Ben ne yapacağım? Hani request, allocate ettiğim var, request edenler var, edecek olanlar var.
+
+608
+01:49:04,175 --> 01:49:13,815
+Elimde şeyler var. Şimdi önce p0 işini bitirip gelse ne olacak? Bu 0, 1, 0 olacak. Elimdeki maksimum istisler de bu kadar.
+
+609
+01:49:14,456 --> 01:49:22,135
+Yani allocate'leri zaten topladığında ne oluyor? 3, 2 daha 5, 7, şuradan. 1, 1 daha 2.
+
+610
+01:49:23,412 --> 01:49:50,412
+3, 2 daha 5, 6. Şurayı tutturduk. Şimdi P0 önce tamamlanacak. Available 0, 1, 0 olacak. Ondan sonra kim alınabilir? Talep etmeyen P2 tamamlanacak. Yani burada çıkış yolu önce P0'ın bitirmesi, sonra P3'ün bitirmesi. Normalde buna graf gibi bakarsak bunu dedekt etmek çoktur. Ama bakın maddi size biraz daha kolay oluyor. Çünkü bunların...
+
+611
+01:49:50,963 --> 01:50:17,984
+Pardon, P2'nin bitirmesi yanlış söyledim. Bunların herhangi bir talepleri yok. P0 veya P2 ikisinden hangisi olursa olsun, P0 önce bitirdi, teslim etti. P2 sonra bitirdi, teslim etti. Ne olacak? 3, 1, 3 olacak P2 bitirdikten sonra. Sonra kime requestlerine cevap verebiliriz? P3 demiş mesela, 1, 0, 0 istiyormuş. Şunları sildik. Bunu verebiliriz.
+
+612
+01:50:18,547 --> 01:50:42,568
+Ondan sonra şunu da P4'ü de verebiliriz. P1'i de verebiliriz aslında. Yok P1'i verebilir miyiz? Evet P1'i de verebiliriz. Şundan sonrası mühim değil. Kim isterse elimde yetenecek kaynak var. İsteyene cevap veririm. O cevabına göre işini bitirdi, geri gelir. Diğerleri. Artık hangi sıra oluyoruz. Ama P0 ve P2 burada ne olacak? Önce bitirecek. Kaynaklarını teslim edecek.
+
+613
+01:50:43,283 --> 01:50:50,423
+Çalışmaya devam edebilir mi? Edebilirler. Çünkü her zaman illaki sürekli kaynak kullanacak diye bir şey yok. Bu aşamayla gitmesi gerekiyor.
+
+614
+01:50:58,963 --> 01:50:59,403
+Ya.
+
+615
+01:51:16,627 --> 01:51:36,807
+Evet, şurada mesela P2 diyor ki ekstra C kaynağı karebesi. Yani şurada P2 0 0 0'dı. O şöyle olsaydı P2 0 0 1 olsaydı. Burada sistem state olarak kalacak noktası.
+
+616
+01:51:38,087 --> 01:51:41,507
+Şimdi sadece şurayı 0 0 1 yapalım.
+
+617
+01:51:44,595 --> 01:52:07,416
+P0 illaki o zaman kaynakları teslim edecek. Ne oldu? 0, 1, 0 oldu. Elimde ebeyli bulan ne var? 0, 1, 0 var. P2'ye cevap verebiliyor muyum? Veremiyorum. P3'e cevap verebiliyor muyum? Veremiyorum. P4'e cevap veremiyorum. Veremiyorum. P1'e cevap verilemiyor.
+
+618
+01:52:11,252 --> 01:52:13,752
+Buna rağmen ne oldu? Yine deadlock oldu.
+
+619
+01:52:14,612 --> 01:52:27,252
+Çünkü P0'ın işini bitirdikten sonraki süreçte P1 için, P2 için, P3 için, P4 için kalan bütün prosesler için herhangi bir talebe yanıt verememe durumu.
+
+620
+01:52:27,412 --> 01:52:29,452
+Veremiyoruz. Gerçekten veremiyoruz burada.
+
+621
+01:52:29,992 --> 01:52:33,551
+Vermediğimiz için ne oldu? Hiçbir kaynak erişilemez oldu.
+
+622
+01:52:36,467 --> 01:53:01,768
+Şimdi bir sıkıntı bu. Algoritmayı tasarladık. Deadlock'ı dedektirdik. Peki bu deadlock detection ile alakalı şurada bahsedilen m çarpı n karelik bu algoritma m tane bakın. Şurada m tane prosesimiz var. Yani m çarpı oradan geliyor.
+
+623
+01:53:02,192 --> 01:53:28,192
+N tane de kaynak var. N'nin karısı da oradan geliyor. Yaklaşık olarak bu karmaşık. Biz bunu n küp diyelim. Yani sıkıntı değil. Her şey n'yi eşit tutarsak n küp. Bu algoritma ne zaman ve ne sıklıkla çağrılacak? Bunun şeyi ne? Bir kere deadlock'ın oluşması acaba ne sıklıkla mümkün olabilir? Yani bunu...
+
+624
+01:53:28,560 --> 01:53:33,260
+Yani algoritmayı çalıştıracağız da bunu sürekli çalıştırırsanız çok çok daha sıkıntı.
+
+625
+01:53:35,440 --> 01:53:46,820
+Peki ne kadar proses burada rollback yapılmasıyla alakalı? Kaç tane prosesse kadar şey, yani bu bir kontrol var, kaç tane prosesse kadar izin verilecek?
+
+626
+01:53:56,404 --> 01:54:13,104
+Cyclelar meydana gelebiliyor. Ve bu algoritmanın işini yapması için gerekli olan hangi proseslerin deadlock olacağı ile alakalı da ayrıca bir deadlock ortaya çıkabiliyor. Yani çözelim derken başka bir deadlock meydana gelebilir.
+
+627
+01:54:15,364 --> 01:54:22,384
+Bu da işe yaramadı. Yani yarayabilir ama dediğim gibi küçük şeyler. Zaten bu slide'ın sonrasında şey yok arkadaşlar.
+
+628
+01:54:23,028 --> 01:54:44,228
+Hani önceki slide'larda ne vardı? Linux'ta şu var, Windows'ta bu vardı. Şu anki hiçbir şey yok. Deadlock'ı ne yapıyor? Kendi içinde garanti ediyor. Bütün sistemler, model sistemler. Öbür taraftaki deadlock'ları kullanıcıya uygulamaya bakıyor. Peki, deadlock'tan nasıl bir kurtuluş yapacağız?
+
+629
+01:54:45,171 --> 01:54:57,111
+Burada hani en şey yani çaresiz kalma şey siz bilgisayarınız kilitleyince ne yapıyorsunuz? Reset atıyorsunuz değil mi? Yani ne demek o reset?
+
+630
+01:54:58,311 --> 01:55:06,711
+Processlerin ellerinden CPU'yu ondan sonra memory'yi elinden almak mı? Veya diğer şey kaynakları almak mı?
+
+631
+01:55:07,271 --> 01:55:12,531
+Çünkü bir yazıcıdan dolayı veya bir başka şeyden dolayı bazen bilgisayar kilitlenebiliyor.
+
+632
+01:55:13,140 --> 01:55:40,640
+Benim Windows 98 ya da XP zamanı bir tane bilgisayarım vardı. Sistemde bir hata vardı. O zaman 56K telefon hatlarını bağladığımız modemler var. Yıl yaklaşık olarak 2002-2003 falan o dönemler. Daha ADSL çok yaygın değildi. Bilgisayara telefon hatlarını takıyorsunuz. İşte çevirmeli ağdan internete bağlanıyor. Windows'un shutdown diye bir uygulaması var. 60'dan geriye sayarak bilgisayara reset attırıyor.
+
+633
+01:55:41,427 --> 01:55:59,807
+Siz bilgisayarı kapat diyorsunuz ya, o kapat aslında bir proses. Ama interneti takınca her ne gitmesse bilgisayar 60 saniye içinde reset alıyor ve onu durduramıyorsun. Ne zaman internete bağlasam şey reset alıyor. Yani muhtemelen orada kaynakla alakalı bir sıkıntı var. İşletim sistemi kendi otomatik olarak bir şeye giriyordu.
+
+634
+01:56:00,243 --> 01:56:27,983
+Ancak bunu harddiskin boot sektörünü temizleyerek, öyle format falan işe yaramamıştı. Boot sektör temizleme programıyla o zamanlar öyle kurtulabilmiştik. Mesela gidiyorum başka bir CD, Windows XP CD'si alıyorum. Acaba orijinal şeyde mi sıkıntı var? O da işe yaramıyor. 98 kuruyorum, Windows 98 vardı, o da işe yaramıyor. Muhtemelen o boot sektöre kadar gitmiş ve orayı da hasara ulaştırmış bir şeydi. Hiçbir şekilde kurtulamadım.
+
+635
+01:56:28,243 --> 01:56:34,763
+O zaman internette o kadar araştırdım, ettim, şey yaptım. En son bu sektörü temizleyip düzeltmiştim. Böyle şey de olabilirdi.
+
+636
+01:56:35,384 --> 01:56:51,263
+Şimdi böyle bir durumda diyor ki şunu yapacağız, prosesleri eğer kaynakları yani talep ettiği kaynağı alamıyorsa, sistem şeye de girdiyse, deadlock'a girdiyse bu bir uygulama olabilir, bir işletim sistemi tarafında olabilir.
+
+637
+01:56:51,783 --> 01:56:55,083
+Bütün bir bilgisayarı kapatmadan önce işletim sistemi acaba şunları yapabilir mi?
+
+638
+01:56:55,423 --> 01:56:59,763
+Diyor ki, bütün deadlockla alakalı ilişkisi olan bütün prosesleri yok etti.
+
+639
+01:57:01,463 --> 01:57:11,943
+Veya deadlock cycle'ını kırana kadar, bu dört çarptan bir tanesi en azından cycle'ı kırana kadar, birer birer birer birer prosesleri abort et.
+
+640
+01:57:11,943 --> 01:57:15,463
+Abort etmek ne demekti? Prosesin çalışmasını sonlandırıyorsun.
+
+641
+01:57:16,463 --> 01:57:20,763
+Tabii sonlandırırken sen tamamen bellekten silinlenmiyor, onun yedekleri alamıyor.
+
+642
+01:57:21,395 --> 01:57:25,975
+İşte core dump'lar falan alınıyor. Mesela o core dump'ları şöyle görebilirsiniz.
+
+643
+01:57:29,115 --> 01:57:31,615
+Task manager. Ben de 11'i yeni kurdum da.
+
+644
+01:57:34,275 --> 01:57:34,995
+Niye çıkmadı?
+
+645
+01:57:37,435 --> 01:57:38,875
+Task manager diyeceğiz. Pardon.
+
+646
+01:57:41,435 --> 01:57:44,635
+Bunlar mesela ayrıca inceleme alınıyor. Mesela şuradan bir
+
+647
+01:57:44,635 --> 01:57:48,975
+PowerPoint. Gerçi bu çok büyük bir program da.
+
+648
+01:57:51,604 --> 01:57:53,423
+Şuna bakalım.
+
+649
+01:57:58,100 --> 01:58:17,000
+Create Memory Dump File diyor. Yani bunun bellek içeriğini alıp, şu an bu bellekte çalışıyor ya, o bellek içeriğini alıp bir file olarak kaydedebiliyorsunuz. Şu an onu şey yapıyor, bakın diyor ki şuraya bunu kaydettim. Gidelim oraya.
+
+650
+01:58:26,547 --> 01:58:29,187
+Notepad++'da açalım. Tabii bir şey anlamayacağız.
+
+651
+01:58:30,887 --> 01:58:32,987
+Bunu anlamlandıran ayrıca uygulamalar var.
+
+652
+01:58:33,287 --> 01:58:36,487
+Mesela bir uygulama neden sonlandırılmış?
+
+653
+01:58:37,327 --> 01:58:39,487
+Çünkü mesela siz bir kod yazıyorsunuz.
+
+654
+01:58:40,267 --> 01:58:41,127
+Müşteriye verdiniz.
+
+655
+01:58:41,287 --> 01:58:43,087
+Onun tak diye program kapanıyor.
+
+656
+01:58:43,227 --> 01:58:44,827
+Arkada kordan oluşturursunuz.
+
+657
+01:58:45,787 --> 01:58:48,327
+Otomatik olarak beklenmedik bir kapanma oluşacaksa.
+
+658
+01:58:48,407 --> 01:58:50,867
+Bakın açmakta bile zorlanır çünkü bayağı büyük bir şey.
+
+659
+01:58:50,867 --> 01:58:51,607
+Sosya.
+
+660
+01:58:52,467 --> 01:58:53,507
+Ne kadardı?
+
+661
+01:58:57,167 --> 01:58:58,768
+Şuradan boyutuna bakalım.
+
+662
+01:59:01,967 --> 01:59:02,688
+Svc.
+
+663
+01:59:03,387 --> 01:59:05,167
+50 megabyte düşünün yani.
+
+664
+01:59:06,188 --> 01:59:11,148
+Demek ki ufacık program bellekli 50 megabyte yer tutuyor ve içeri.
+
+665
+01:59:11,287 --> 01:59:13,107
+Şu an notepad plus plus matris bunda.
+
+666
+01:59:13,148 --> 01:59:13,947
+O da deadlock oldu.
+
+667
+01:59:15,947 --> 01:59:17,268
+Bunlar inceleniyor.
+
+668
+01:59:17,268 --> 01:59:19,587
+Yani birincisi yaklaşım.
+
+669
+01:59:20,212 --> 01:59:45,212
+Tamamını yok etmek. İkinci yaklaşım, deadlock cycle'unu kırana kadar birer birer yok etmek. Üçüncü yaklaşım şu, ya bu deadlock cycle'unu kıracağız da, birer birer yok edeceğiz de acaba neye göre yok edelim, abort yapalım. Tamam, proseslerden bazıları ölecek. İşte buna victim diyoruz, kurban seçeceğiz. Bu victim seçerken, proseslerin prioritiesine bakabilirsiniz. Yani hep scheduling'de yaptığımız şey veya işte...
+
+670
+01:59:45,328 --> 01:59:49,088
+Senkronizasyon da yapmıştık, işte, prosesleri bekletiyorduk, orada gördük.
+
+671
+01:59:51,108 --> 01:59:58,628
+Acaba şu ana kadar bir proses ne kadar sürekli computation yaptı, ne kadar daha ihtiyacı var buna bakarak?
+
+672
+01:59:59,528 --> 02:00:05,168
+Yani zaten o bayağı işletilmiş, azıcık da bitmesi için sürekli kalmış, onu o zaman kurban etmeyelim.
+
+673
+02:00:05,408 --> 02:00:06,328
+Bu mantıklı bir şey değil mi?
+
+674
+02:00:07,008 --> 02:00:12,208
+Birini yok edeceksin ama, daha ömrünün başındayken, küçükken, iyi kalmak gibi.
+
+675
+02:00:13,268 --> 02:00:17,307
+Ne kadar prosesler şu ana kadar kaynak kullanmışlar?
+
+676
+02:00:18,488 --> 02:00:23,228
+Proseslerin kaynak ihtiyacı şu an en fazla hangisi? Bunlar farklı kriterle olabilir.
+
+677
+02:00:24,307 --> 02:00:27,068
+Acaba kaç tane prosesi termine edebiliriz?
+
+678
+02:00:28,908 --> 02:00:32,047
+Acaba bu prosesler interaktif prosesler mi, 5 prosesler mi?
+
+679
+02:00:32,908 --> 02:00:36,427
+Yani düşünün 5 bir proses var, başlamış, çok uzun bir süredir devam ediyor.
+
+680
+02:00:37,387 --> 02:00:40,268
+Sen onu yarıda kesiyordun. O yarıda kestiğinde de bazı durumlarda...
+
+681
+02:00:40,819 --> 02:00:48,440
+Kaldığı yerden devam edecek, belki baştan başlayacak. Yani onu çöpe atmak, bunlar hep terminat edilmesi gereken şeyler.
+
+682
+02:00:49,480 --> 02:01:00,699
+Burada process termination yerine acaba resource'ları parameter edersek, ellerindeki kaynakları almayı da bütünlerimiz için.
+
+683
+02:01:01,220 --> 02:01:05,699
+Tamam ortada bir şey var. Prosesi yok etmek mi çözüm mü çözüm. Deadlock'ı kırar mı kırar.
+
+684
+02:01:06,287 --> 02:01:33,347
+Nispeten kötü bir şey, sıkıntılı yaklaşım. Onun yerine kaynakların preemptionını sağlayalım. Herhalde bu sondu. Ne yapıyor? Bir tane minimize posta sahip olacak, en az maliyeti olabilecek herhangi bir prosesin elinden kaynaklarını alıyorsun veya bir kaynağı alıyorsun. O kaynağı alınca o kaynak available artacak. Available artınca işte deadlock belki çözülecek. Bu sonuç olacak. Şu an mesela bu uygulanıyor.
+
+685
+02:01:33,939 --> 02:02:01,159
+Mesela bazı uygulamalar önce bir kilitleniyor, donuyor, kalıyor. Ondan sonra bir bitki sonra düzeliyor. İşte orada diyor ki, sistem kendi içinde bir algoritması var. Tabi bu biraz daha ileri konular. Bu algoritmayla böyle bir kilitlenme olmuş. Bunların içerisine şu ana kadarki verilerin belli bir yedeğini de alıp da mesela Word'da falan çok yaşarsınız. Aniden kapanır ama bir yerde yedeği alınır. Ofis uygulamasının kendi içinde bir şeyi bu. Ne yapıyor? Ellerinden belli kaynaklar alınabiliyor.
+
+686
+02:02:02,163 --> 02:02:21,323
+Rollback dediğim şey, diyor ki, SafeState'e dön bazı şeyler için ve processleri teker teker restart. Yani hepsini aslında şey yapıp processleri restart ediyor. Bir de Starvation burada tabii meydana gelebilir. Sizin seçtiğiniz kurban.
+
+687
+02:02:21,908 --> 02:02:27,748
+Hep böyle altta kalan önceliği düşük bir kurbansa, hep onun elinden kaynaklarını alıyorsun.
+
+688
+02:02:27,828 --> 02:02:30,887
+Haya hep onu sonlandırıyorsun. Bu sefer bu da başka bir sıkıntı.
+
+689
+02:02:32,188 --> 02:02:34,967
+Asıl arkadaşlar, deadlock bir problem mi? Problem.
+
+690
+02:02:35,228 --> 02:02:42,007
+Yani en basitinden sizler program yazarken, uygulama yazarken, illaki dediğimiz gibi bu işletim sistemi yazmak değil.
+
+691
+02:02:43,007 --> 02:02:47,908
+Bir uygulama yazdın mı? Bir veritabanı yazdın mı? Bir web yazdın mı? Bir mobil yazdın mı? Bir şey yazarken eğer bu şekilde...
+
+692
+02:02:48,256 --> 02:03:01,716
+Interprocess Communication yapıyorsanız veya bir şekilde senkronizasyon yapıyorsanız, işte bir dosya üzerinde, veritabanı üzerinde işlem yapıyorsanız, mesela en basitinden veritabanı üzerinde mobil uygulama yapılıyor.
+
+693
+02:03:02,956 --> 02:03:13,556
+O uygulamada da bir senkronizasyon gerekiyorsa paylaşılan kaynaktan kaynaklı, işte o senkronizasyonla alakalı yaptığınız şeyi sizi deadlock'a götürecek bir durumdaysa,
+
+694
+02:03:14,032 --> 02:03:40,632
+O zaman deadlock oluşma ihtimali var. Buna hiçbir zaman aklımızdan çıkartıyoruz. İşin mühendisliği bu. Yoksa program yazdım, hani çalışıyor, şu ana kadar çalıştıkça dokunma bazen işe yaramıyor. Mesela geçenlerde demiştim, bu otobüs bileti satanlar veya tren bileti satanlar şey yapıyor. Belli bir süre boyunca bu tarz senkronizasyon mekanizmaları her zaman çok iyi, yani işi bilmeyen kişi kullanırsa sıkıntı olabilir. O bilet alınmış gibi, oradaki koltuk alınmış gibi.
+
+695
+02:03:41,171 --> 02:04:00,831
+Belli bir süre orayı şey yapıyor, bloka ediyor. O blokanın sonrasında 10 dakika, ne bileyim, 20 dakika artık durumuna göre. Çünkü bu daha ucuz bir çözüm, yazılımsal bir çözüm. Hani hiç böyle şeylere, laklara, bilmem nele veya deadlock'a girmeye gerek yok. O millet gerçekten alınana kadar alınmış gibi. Alınmadıysa farklı bir state'e koyuyor.
+
+696
+02:04:01,395 --> 02:04:08,256
+State Machine gibi düşünemiyorsunuz. O zaman alınmadıysa zaten belli bir sözü tekrar başlanmış durumda, free durumda geri döndürebilirsiniz.
+
+697
+02:04:08,315 --> 02:04:19,076
+Onlar farklı yazılım, tarz çözümler. Ama her zaman bu çözümler dediğim gibi her yerde özellikle savunma sanayi olabilir veya gömülüş sistemlerinin olduğu bazı durumlar olabilir.
+
+698
+02:04:19,956 --> 02:04:28,536
+Her zaman oradan işe yaramaz. Bu tarz senkronizasyon, planlama, ondan sonra haberleşme işlemlerine gerek duyabiliyoruz. Sorumuz var mı?
+
+699
+02:04:30,707 --> 02:04:58,127
+Evet, bir on dakika sonra falan hocamız gelecek. Ben o arada şu sınavla alakalı açıklamayı yapayım. Kayda girsin. Şeye de söyleriz. Saat on bir oksuz üçte açıklama yaptım diye. Sizin kayıttan izleyecekler bakar. Sınavın saati, saat yine on yedi arkadaşlar. Yeterince sınıf olmadığı için. Haftaya ders yapacağız. Sabahtan yine dokuz buçukta ders yapacağız. Haftaya yapacağımız dersin konusu sınava dahil olmayacak.
+
+700
+02:04:59,155 --> 02:05:08,596
+Bugünkü konu, yani chapter 7'nin sonu ve şu ana kadarki yapılan uygulama, hocanın da birazdan gelip yapacağı uygulama sınava dahil olacak.
+
+701
+02:05:08,956 --> 02:05:15,756
+Hoca bugün işte Enes Hoca bize senkronizasyonla alakalı bazı konuları anlatacak, threadler ve senkronizasyon anlatacak.
+
+702
+02:05:16,435 --> 02:05:21,556
+Bunlar sınava dahil. Ama 7. chapter'dan sonraki haftaya anlatacağımız konu dahil değil.
+
+703
+02:05:21,556 --> 02:05:24,395
+RETET'te dahil değil. Bunu da söyleyelim.
+
+704
+02:05:25,619 --> 02:05:39,039
+Şimdi sınavla alakalı şöyle bir sıkıntı var. Saat 7'de başlamak zorundayız. Ve sınav en fazla 30-35 dakika sürecek. Soru sayısı da 25 falan olur bu sınavda. 20 veya 25 arkadaşlar.
+
+705
+02:05:40,579 --> 02:05:51,360
+Tabii sizlere çok zorluk olmasın diye her sorunun en fazla 2 doğru cevabı olacak. Bir sorunun 3 tane doğru cevabı yok. Bu sınav böyle.
+
+706
+02:05:51,956 --> 02:06:04,676
+Yoksa bir matematik sınavı varmış, başka da zaman bulamıyoruz. Dolayısıyla atacaksanız ona göre atın. Üç tane sallamayın. Tamam mı? Yani her sorunun iki tane doğru cevabı var.
+
+707
+02:06:04,676 --> 02:06:14,256
+Yine yanlış sorular doğru soruları etkilemiyor. O anlamda size bir avantaj olabilir. 20 soru veya 25 soruluk.
+
+708
+02:06:14,868 --> 02:06:23,208
+Bugünkü Enes Hoca'nın da anlatacağı son konuya kadar ki her şey sınavda dahil olacak.
+
+709
+02:06:24,828 --> 02:06:27,328
+Sorunuz varsa alabilirim online'dan veya buradan.
+
+710
+02:06:29,608 --> 02:06:32,408
+Bakın geçen hafta Becker algoritması diye bir şeyden bahsettik.
+
+711
+02:06:33,628 --> 02:06:37,288
+Öbür kitapta slide'larda var, kitabın kendisinde de var.
+
+712
+02:06:38,248 --> 02:06:39,968
+O tarz spot parçaları sorabilirim.
+
+713
+02:06:40,851 --> 02:06:48,271
+Yani bazı yerlere referans verdim. Bunlara siz bakın dedim. Çünkü oradaki kodu adım adım, step by step anlatmama gerek yok.
+
+714
+02:06:49,792 --> 02:06:58,431
+Neden bahsettik? Senkronizasyon için veya karşılıklı dışlama şartları vardı. Orada da üç tane şartımız vardı.
+
+715
+02:06:58,431 --> 02:07:06,431
+Genellikle bu deadlock'ın dört şartıyla oradaki critical section probleminin üç şartını öğrenci arkadaşlar çok çok karıştırıyor.
+
+716
+02:07:07,604 --> 02:07:32,604
+Bunları birbirine karıştırmayın. Tekrar kitapları okuyun, çalışın. Rahat rahat yaparsınız. Birinizin ortalaması fena değildi. Bir de rica edeyim, numaranızı kodlayın arkadaşlar. Doğru kodlayın. Adınızı, soyadınızı yazın. Eğer bu şekilde bu sınavda da yazmayan olursa, bu arkadaşların sınavları...
+
+717
+02:07:33,108 --> 02:07:47,427
+Final zamanında gelecekler benden öğrenecekler. OBS'ye girmeyeceğim. Finalle beraber gireceğim. Ceza olarak bu şekilde. Bütün sınıf etkilenmesin diye o kağıtları okumayacağım kesinlikle. Kenara koyacağım. Gelsin finalde beraber okuyalım.
+
+718
+02:07:51,948 --> 02:07:55,608
+Birkaç dakikamız daha var. Hoca birazdan gelir. Bu arada dinlenin.
+
+719
+02:09:24,692 --> 02:09:41,371
+Yapısal dersinde şey gösterdiler mi size? Bu mallokla alınacak yerin zorlanması. Mesela bir gigabyte yer istiyorsun, vermiyor ama onu zorlayınca alabiliyorsun. Öyle bir şey gösterdi mi? Tamam.
+
+720
+02:10:15,507 --> 02:10:18,728
+Şimdi hoca geliyor. Kırk geçe başlarız. Hatta geldi bile.
+
+721
+02:10:22,568 --> 02:10:25,627
+Önce sen bir şey yap istersen.
+
+722
+02:10:25,967 --> 02:10:26,688
+Nasıl bir de geçe?
+
+723
+02:10:27,287 --> 02:10:31,887
+Yok, uzundan önce projeksiyon yansıtıyor mu? Ona bak. Ben sana uzun bir iki göndereyim.
+
+724
+02:10:32,328 --> 02:10:33,387
+Şey, getiremiyoruz.
+
+725
+02:10:34,828 --> 02:10:35,747
+Sen diyor mu?
+
+726
+02:11:21,747 --> 02:11:22,747
+İçeriği.
+
+727
+02:11:25,747 --> 02:11:27,747
+Şöyle görebiliriz arkadaşlar.
+
+728
+02:11:28,747 --> 02:11:32,747
+O, tabi şey, clear text olarak görünmüyor.
+
+729
+02:11:34,747 --> 02:11:38,747
+Bazı yerlerde farklı veriler var. Bu bir core dump.
+
+730
+02:11:39,747 --> 02:11:41,747
+Bu şekilde,
+
+731
+02:11:42,747 --> 02:11:46,747
+nereden var? Tabi bunu anlamlandıran, analiz eden ayrıca yazdımlar var.
+
+732
+02:11:48,372 --> 02:11:49,412
+Böyle görevdes.
+
+733
+02:11:55,444 --> 02:11:57,644
+Dump dosyaları var mı?
+
+734
+02:11:59,264 --> 02:12:00,944
+Özel yazılımları var.
+
+735
+02:12:01,423 --> 02:12:06,904
+Yani tabii şeye göre de, mesela yazılan dile göre falan da değişiyor.
+
+736
+02:12:08,423 --> 02:12:15,323
+Genellikle o dump dosyalarını, yani yazılımı geliştiriciler kendi formatlarında incelerler.
+
+737
+02:12:16,264 --> 02:12:18,224
+Yani ciddi bir yazılımsa.
+
+738
+02:12:19,188 --> 02:12:23,228
+Oraya gönderirsin dump file'ları, gelirler alırlar, örneklerine bakarlar.
+
+739
+02:12:23,927 --> 02:12:26,387
+Hata nerede olmuş? Onunla alakalı şeye bakarlar.
+
+740
+02:12:27,087 --> 02:12:30,688
+Yani Sistem diye içerisine yararlan şey yok mu?
+
+741
+02:12:31,607 --> 02:12:40,427
+Bellek var ya, bellekte pod kısmı var, işte data kısmı var, işte program counter'ı bilmem neyi saplıyorsun.
+
+742
+02:12:41,148 --> 02:12:43,467
+Onun bir suretini alıyor sanırsın.
+
+743
+02:12:43,467 --> 02:12:46,587
+Sen SEM'in diye çevirebilir misin?
+
+744
+02:12:46,963 --> 02:12:55,323
+çevredir ama orada datalar falan da olduğu için onun bir formatını artık biraz işletim sistemine de bağlı olduğu için şeye bakmak lazım.
+
+745
+02:12:55,323 --> 02:12:55,883
+Bir saniye.
+
+746
+02:16:35,891 --> 02:16:37,172
+Sesim geliyor mu acaba?
+
+747
+02:16:42,611 --> 02:16:43,491
+Geliyor hocam.
+
+748
+02:16:44,031 --> 02:16:44,671
+Tamamdır.
+
+749
+02:16:50,131 --> 02:16:51,412
+Başlayalım isterseniz.
+
+750
+02:16:51,671 --> 02:16:52,211
+Başlayalım.
+
+751
+02:16:52,451 --> 02:16:52,691
+Evet.
+
+752
+02:16:55,491 --> 02:17:00,631
+Şimdi bir yandan olumtuyu başladığından bir olum.
+
+753
+02:17:00,631 --> 02:17:05,371
+Bir alakalı canım bunun anlamında arayınca.
+
+754
+02:17:06,011 --> 02:17:06,791
+Güzel bir gün eminim.
+
+755
+02:17:07,763 --> 02:17:09,383
+Tamamdır.
+
+756
+02:17:11,523 --> 02:17:28,103
+Arkadaşlar merhaba, bugün senkronizasyon ve interprocess communication, yani processler arası communication'dan bahsedeceğiz.
+
+757
+02:17:28,103 --> 02:17:29,223
+Tamamdır.
+
+758
+02:17:33,556 --> 02:17:45,956
+Semaphore aslında bir veri yapısı ve bu bir integer tutuyor. Integer'da birkaç proses arasında paylaşılabiliyor.
+
+759
+02:17:47,076 --> 02:17:56,956
+Bunun amacı aslında birden fazla proses ya da thread belli bir kaynağa erişmeye çalışırsa, bunun...
+
+760
+02:17:57,203 --> 02:18:02,043
+karmaşıklığa en az sebep olacak şekilde yapılmasını sağlamak.
+
+761
+02:18:03,043 --> 02:18:09,543
+Semaphore'un çözdüğü bazı multiprogramming problemleri arasında da starvation ve deadlock var.
+
+762
+02:18:10,384 --> 02:18:14,083
+Bunlardan sanırım ders içerisinde bilgi edindiniz.
+
+763
+02:18:24,435 --> 02:18:31,795
+Bir işlemin varlığında düşük önceliklilerin, yani önceliği daha düşük olanların erişememesi şeklinde oluşan bir problem.
+
+764
+02:18:32,515 --> 02:18:44,475
+Deadlock'ta, karmaşadan ve birkaç durumu sağlamasından dolayı erişilen bir problem.
+
+765
+02:18:44,876 --> 02:18:47,575
+Bunu gidermek için semaphoreları kullanabiliyoruz.
+
+766
+02:18:48,340 --> 02:18:56,060
+Biz posic semaforları üzerinden ilerleyeceğiz. Bir uygulamada da SystemV semaforlarını kullanacağız.
+
+767
+02:18:57,260 --> 02:19:02,619
+Posic semaforu aslında diğer semaforlardan farklı değil mantıfesinden.
+
+768
+02:19:04,119 --> 02:19:12,540
+Bahsettiğimiz gibi bu bir integer değer tutuyor ve bunun pozitif integer olması aslında çalışma mantığında gizli.
+
+769
+02:19:13,979 --> 02:19:15,220
+Bundan bahsedeceğiz.
+
+770
+02:19:15,631 --> 02:19:19,631
+Yani bu da semaphore değeri sıfırın altına hiçbir zaman inmiyor.
+
+771
+02:19:20,592 --> 02:19:23,991
+Kaynak sayısına bağlı olarak bu semaphore değeri değişiyor.
+
+772
+02:19:24,991 --> 02:19:29,051
+Pozik semaforları named ve unnamed olarak ikiye ayrılıyor.
+
+773
+02:19:30,151 --> 02:19:33,031
+Bunların farklı yönleri var.
+
+774
+02:19:33,811 --> 02:19:38,991
+Şimdi named semafor, yani isimli semaforların temel özellikleri.
+
+775
+02:19:40,915 --> 02:19:45,855
+Ve bu isim farklı prosesler tarafından erişilmesi için kullanılabiliyor.
+
+776
+02:19:47,175 --> 02:19:50,115
+Burada işte çeşitli fonksiyonlar göreceğiz.
+
+777
+02:19:50,275 --> 02:19:53,675
+Semopen, sempost, semwait, semclose, semunlink gibi.
+
+778
+02:19:54,536 --> 02:20:01,876
+Bunlar işte bir semaforu semopenla initialize etmeyi, başlatmayı sağlıyor, oluşturmayı sağlıyor.
+
+779
+02:20:02,355 --> 02:20:12,515
+Sempost ve Semweight de bu semaforun değerlerini arttırıp azaltmaya, kaynakları açıp kapatmaya yarıyor.
+
+780
+02:20:13,175 --> 02:20:25,355
+Bunun dışında işte bazı spesifik problemleri, yani bir semaforun mesela weight yapıp, değeri düşürmeye çalışıp ama sürekli kaynak salınmayınca...
+
+781
+02:20:25,968 --> 02:20:37,288
+Buna bağlı kalmasını önlemek için timed wait gibi, try wait gibi belli dallanmaları var. Bunlar çeşitli problemleri çözmek için sunuluyor.
+
+782
+02:20:39,128 --> 02:20:41,108
+Annem semaphorelarda bir isim yok.
+
+783
+02:20:43,048 --> 02:20:47,968
+Threadler ID'leriyle erişiliyor ve buna bütün prosesler...
+
+784
+02:20:48,659 --> 02:21:00,139
+Direkt erişemiyor. Bunun bir shared memory alanında olması gerekiyor. Shared memory sayesinde, paylaşımlı bir hafıza alanında bu erişim sağlanabiliyor.
+
+785
+02:21:02,840 --> 02:21:09,139
+Bunda da farklı bazı fonksiyonlar var. Yani önceki name semaphore da semopunu.
+
+786
+02:21:09,556 --> 02:21:15,336
+Unlink ve Close'u görmüştük. Bunlarda semopen yerine seminit kullanılıyor.
+
+787
+02:21:15,636 --> 02:21:18,636
+Close ve semunlink yerine de semdistroy kullanılıyor.
+
+788
+02:21:19,556 --> 02:21:23,816
+Temel farkları aslında fonksiyonlar açısından bunlar.
+
+789
+02:21:25,376 --> 02:21:29,195
+Burada da genel bir tabloda karşılaştırma görüyoruz.
+
+790
+02:21:29,996 --> 02:21:36,976
+Burada isimli semapore'nin isimle diğerlerinde memori adresiyle, unname semapore'nin de memori adresiyle erişildiğinden bahsediyor.
+
+791
+02:21:37,620 --> 02:21:44,120
+Burada isim kullanılarak bütün sistem aslında bu semaphore'a, name semaphore'a erişecek.
+
+792
+02:21:45,500 --> 02:21:49,240
+Ve un-name semaphore'larda bir shared memory region atanması gerekiyor.
+
+793
+02:21:51,280 --> 02:21:55,360
+Bazı fonksiyonlarda bazı farklılıklar vardı dediğimiz gibi.
+
+794
+02:21:56,280 --> 02:21:59,200
+Name semaphore'ların bir durumu da şöyle.
+
+795
+02:21:59,940 --> 02:22:03,240
+Semaphore ilk önce işimiz bittiğinde sample loss ile kapatıyoruz.
+
+796
+02:22:04,468 --> 02:22:12,427
+Bu aslında bu isim alanının kullanımını kapatmıyor. İsim hala sistemde bulunuyor.
+
+797
+02:22:13,108 --> 02:22:17,567
+Fakat kapsadığı memori alanlarını free ediyor.
+
+798
+02:22:18,388 --> 02:22:26,308
+Semunlink ise bu semaforun, isimli olan semaforun tamamen yok edilmesini sağlıyor.
+
+799
+02:22:26,308 --> 02:22:31,628
+Annem semaforlarda bu tarz bir sem close, semunlink yerine semdestroyla.
+
+800
+02:22:31,987 --> 02:22:38,987
+Hem memory free edilebiliyor hem de tamamen sistemden silinmiş oluyor. Terminate ediliyor.
+
+801
+02:22:38,987 --> 02:22:46,987
+Şimdi ilk örneğimizden başlayacağız. Burada basit bir semaphore örneği var.
+
+802
+02:22:46,987 --> 02:22:52,987
+Şimdi kod üzerinden de buradan ilerlemiş olalım.
+
+803
+02:22:52,987 --> 02:22:56,987
+Mouse gözüküyor mu slide üzerinde? Zoom'da?
+
+804
+02:22:56,987 --> 02:22:58,635
+Acaba?
+
+805
+02:23:02,004 --> 02:23:04,504
+Herhangi biriniz yanıt verebilirse.
+
+806
+02:23:10,579 --> 02:23:13,139
+Yanıt, yanıt, tamam. Tamamdır.
+
+807
+02:23:14,100 --> 02:23:18,100
+Şimdi şöyle, semaphoreların initialize edilmesi gerekiyor.
+
+808
+02:23:18,200 --> 02:23:20,100
+Şimdi biz named semaphorelar üzerinden gideceğiz.
+
+809
+02:23:20,340 --> 02:23:22,779
+Bu bir binary semaphore.
+
+810
+02:23:23,579 --> 02:23:31,119
+Binary semaphorelar aslında ileride göreceğim mutex yapısına benzer bir yapıda çalışıyor.
+
+811
+02:23:31,987 --> 02:23:46,307
+Burada sadece 0 ve 1 değerlerini kullanıyoruz. Bir de counting semaphorelar var. Bunlar da kaynak sayısı arttığı için birden fazla integer boyutu artıyor.
+
+812
+02:23:46,307 --> 02:23:58,227
+Atanabilen kaynak sayısı arttığında. İçimiz gibi semapen ile açıyoruz. Ve burada argümanları olarak 4 farklı şey verilebiliyor.
+
+813
+02:23:58,995 --> 02:24:08,155
+İlk olarak, doldaki kutucuğun içerisinde, semname diye belirttiğimiz semaphore'un ismini atıyoruz.
+
+814
+02:24:08,155 --> 02:24:13,015
+Ve bunu create edeceğimizi belirten bir flag argümanı veriyoruz. O create diye.
+
+815
+02:24:13,835 --> 02:24:20,015
+Ondan sonrasında, 0644 dediği burada, file permissionlarını belirliyor.
+
+816
+02:24:20,135 --> 02:24:21,575
+İşte owner, group, others için.
+
+817
+02:24:22,260 --> 02:24:47,099
+Ve en sonunda da bir starting count veriyor. Bu da başlangıçta semaphore'un sahip olması gereken değeri ifade ediyor. Burada bir ile başlatılmış. Bu demek oluyor ki semaphore bir değerine sahip ve kaynaklar kullanıma hazır demek. Yani burada herhangi bir proses ya da thread erişim sağlayıp bu kaynağı doldurabilir.
+
+818
+02:24:49,876 --> 02:24:54,876
+Tam ekran aslında tam ekran bende ama sizde niye?
+
+819
+02:24:59,876 --> 02:25:05,876
+Bir dakika. Şuradan tam ekran yapalım.
+
+820
+02:25:08,876 --> 02:25:09,876
+Doğulur herhalde.
+
+821
+02:25:12,876 --> 02:25:16,876
+Ne gözükecek mi bilmiyorum ama şuradan şöyle yapacağız.
+
+822
+02:25:31,283 --> 02:25:32,723
+Gene çok gözüküyor ama.
+
+823
+02:25:35,984 --> 02:25:38,723
+O zaman şöyle yapayım. Belki daha iyi gözükür.
+
+824
+02:25:40,763 --> 02:25:42,343
+Böyle daha iyi gözüküyor mu?
+
+825
+02:25:42,943 --> 02:25:43,263
+Tamam.
+
+826
+02:25:44,223 --> 02:25:50,023
+Şimdi şöyle arkadaşlar, dediğimiz gibi ismini, fly'ini ve starting count'unu belirttik.
+
+827
+02:25:50,023 --> 02:25:54,023
+Şimdi biz bu starting count'u başlangıçta kullanıyoruz.
+
+828
+02:25:54,943 --> 02:25:59,023
+Bu soldaki kutucuk ve sağdaki kutucuk diye ayırıyoruz.
+
+829
+02:26:00,308 --> 02:26:15,468
+Farklı thread gibi düşünebilirsiniz. İki farklı proses. Şimdi biz burada semweight'i çağırarak biz bu semaphore'a erişim istiyoruz.
+
+830
+02:26:15,648 --> 02:26:24,227
+Yani bu alana erişim istiyoruz. Ve semweight'in temelde yaptığı şey bu starting count olarak atadığımız şeyi bir azaltmak.
+
+831
+02:26:24,227 --> 02:26:26,227
+Bir azaltınca ne olacak? Sıfıra düşecek.
+
+832
+02:26:26,644 --> 02:26:28,963
+Ve bu semaphore kullanımda olacak.
+
+833
+02:26:29,443 --> 02:26:37,603
+Diğer başka bir proses, sağdaki gibi, semveit yaptığında bu erişimi sağlayamayacak ve beklemesi gerekiyor.
+
+834
+02:26:37,744 --> 02:26:41,744
+Çünkü semaphore'un kağıt şu an sıfır. Sıfır olduğu için de erişemiyor.
+
+835
+02:26:42,764 --> 02:26:49,664
+Bu sırada ilk proses, yani semaphore başlatan proses buradaki, belli işlemler yapıyor.
+
+836
+02:26:50,963 --> 02:27:01,363
+Bir integer toplama işlemi yapıyor. Bunu yaptıktan sonra en sonunda da sempost yapıp semaphore'un diğerini bir arttırıyor.
+
+837
+02:27:01,504 --> 02:27:10,523
+Bir arttırıp önce hemen ki diğer proses sağdaki erişim sağlayabiliyor bu critical section'a.
+
+838
+02:27:11,304 --> 02:27:17,863
+Erişim sağladıktan sonra da yine o da benzer işlemler gerçekleştirerek tekrardan post yapıp
+
+839
+02:27:18,195 --> 02:27:26,755
+Burada bekleyen, loop içinde bekleyen diğer kaynağı ve diğer prosesi erişim izni vermiş oluyor.
+
+840
+02:27:27,835 --> 02:27:44,216
+En sonunda da bu loop sona erene kadar devam ettikten sonra semaphore'u açan kodun içerisinde biz sem close ve sem unlink'i çağırarak hem alanları bırakıyoruz hem de bu semaphore'u yok etmiş oluyoruz.
+
+841
+02:27:45,876 --> 02:27:49,635
+Şimdi bunu bir çalıştırıp ne olduğunu görelim.
+
+842
+02:27:58,932 --> 02:28:24,851
+Şurada, daha büyümüyor tabi. Şöyle şurada bir console açalım. Neler vardı? Tamam. X3, select, arch. Doğru mu baktım bakayım. Semaphore, pardon. Şimdi, A semaphore'unu.
+
+843
+02:28:26,036 --> 02:28:36,475
+oluşturan kodu çalıştırdım. Bir de başka bir proses çalıştıracağız. Bu prosesde de
+
+844
+02:28:40,915 --> 02:28:45,015
+B semaforunu, yani ikinci prosesi çalıştıracağız.
+
+845
+02:28:49,747 --> 02:29:02,188
+Şimdi bunlar birbirini bekliyor aslında. Burada milisaniye cinsinden erişim süreleri verilmiş. Ne zaman enter ettiği, ne zaman leave yaptığı gözüküyor. Bunu tekrar çalıştıralım.
+
+846
+02:29:03,567 --> 02:29:07,067
+Genelde burada görebileceğimiz, direkt bakınca görmek zor olabilir.
+
+847
+02:29:10,388 --> 02:29:24,308
+Diğeri bekliyorsa hemen o saniyeden devam etmiş oluyor milisaniye değerinden. Burada takip etmek zor olabilir. Ama birbirlerini bekliyorlar blupları tamamlayana kadar. Örnek üzerinde şöyle gösterebilirim.
+
+848
+02:29:27,488 --> 02:29:31,648
+Mesela burada A critical section'e girmiş.
+
+849
+02:29:32,115 --> 02:29:35,155
+Çünkü B tam o sırada critical section'dan çıkmış.
+
+850
+02:29:35,155 --> 02:29:41,976
+Yani burada A wait yaparak aslında diğer prosesin post yapmasını, semaphore'u post etmesini bekliyordu.
+
+851
+02:29:42,736 --> 02:29:50,896
+Post edince semaphore'un değeri 1 arttı ve bu sayede o isimli semaphore'a erişim sağlayabildi.
+
+852
+02:29:51,015 --> 02:29:54,155
+Benzerini diğer noktalarda da görüyoruz.
+
+853
+02:29:54,155 --> 02:29:56,335
+Bu şeklinde söyleyebiliriz.
+
+854
+02:29:56,335 --> 02:30:00,000
+Şimdi bir prodüser consumer...
+
+855
+02:30:00,000 --> 02:30:18,520
+problem diye bir problem vardır. Biraz ünlü. Bu problemin temel sorunu yani bir üretici var, bir de tüketici var. Üretici, tüketici de bu kaynakları kullanıyor. Şimdi üretici,
+
+856
+02:30:20,659 --> 02:30:42,659
+Kaynakları, mesela 10 tane kaynak üretti diyelim. Tüketici de bu kaynaklara erişebilecek. Ama bu kaynaklar bir süre sonra tükenmiş olacak. Üreticinin tekrar kaynak üretip, buffer alanında yer açıp, tüketiciyi tüketmesi için ürün vermesi gerekiyor. Burada oluşabilecek belli problemler var.
+
+857
+02:30:43,092 --> 02:30:59,412
+Şimdi burada eğer semaphore benzeri, mutual exclusion yaratan bir alan oluşturmazsak, üretilmemiş bir alana, üretilmemiş bir şeye erişmeye çalışacaktır diğer proses.
+
+858
+02:31:00,020 --> 02:31:13,700
+Bu da belli problemler oluşturuyor. O yüzden biz burada iki tane semaphore tanımlıyoruz. Bu semaphorelar counting semaphorelar. Neden? Çünkü bizim birden fazla kaynağımız var. 10 tane kaynağımız var mesela.
+
+859
+02:31:14,600 --> 02:31:20,960
+Önceki örnekte 0 ile 1 arasında gidiyor değerler. Burada artık 10'a kadar gidecek ya da 9'a kadar.
+
+860
+02:31:26,495 --> 02:31:29,015
+boş alanları takip edecek.
+
+861
+02:31:30,015 --> 02:31:35,775
+Boş alan sayısını ikinci semaphore da bufferdaki dolu alanların sayısını takip edecek.
+
+862
+02:31:36,615 --> 02:31:39,555
+Biz burada System-V semaphore gruplarını kullanıyoruz.
+
+863
+02:31:39,655 --> 02:31:42,475
+Önceki örnekte POSIX semaphorelarını kullanıyorduk.
+
+864
+02:31:43,495 --> 02:31:46,475
+Burada semaphore ve shared memory region tanımlanıyor.
+
+865
+02:31:47,156 --> 02:31:51,316
+İşte burada IPC create diye bir flag görüyoruz, izinleri görüyoruz.
+
+866
+02:31:51,896 --> 02:31:58,276
+Shade numara için bir buffer size belirlenmiş. Muhtemelen 10 artı 2 fazladan olması için.
+
+867
+02:31:59,156 --> 02:32:03,856
+Ve semaphoreları da semaphore grubu olarak initialize edilmiş.
+
+868
+02:32:04,716 --> 02:32:09,736
+Burada işte belli bir key atanıyor, bu key ile tanımlanıyor.
+
+869
+02:32:10,396 --> 02:32:13,756
+İki tane semaphore ve IPC create flag yine kullanılmış.
+
+870
+02:32:14,804 --> 02:32:27,644
+Şimdi burada örneği örnek üzerinden geçelim. Demin yaptığımız gibi iki proses aslında çalıştırıyor olacağız. Yok, tek bir proses çalıştırıyor olacağız.
+
+871
+02:32:29,783 --> 02:32:37,388
+Fakat şöyle çalıştıralım. İlk önce bunu bir...
+
+872
+02:32:37,396 --> 02:32:43,656
+Init etmemiz gerekiyor. Init ederek bellek alanı ve semaforları oluşturuyoruz.
+
+873
+02:32:43,656 --> 02:32:45,936
+Tenda terminal açalım.
+
+874
+02:32:47,195 --> 02:32:47,976
+Şurada açalım.
+
+875
+02:32:56,628 --> 02:33:19,448
+Yeni bir şey açtık. Terminal. Init ettikten sonra biz bir producer için programda çalıştıracağız. Sonra yeni bir terminalde de consumer'ı çalıştıracağız. Consumer burada tüketici görevini alıyor.
+
+876
+02:33:23,860 --> 02:33:26,300
+Buffer'daki pozisyonları değiştiriyor.
+
+877
+02:33:27,819 --> 02:33:35,880
+Ve burada tüketici olan bu ürünlere erişip, yani üreticinin ürettiği ürünlere erişip tüketim sağlıyor.
+
+878
+02:33:36,920 --> 02:33:49,760
+Bu tüketimi sağladıktan sonra belli işlemler yapıp o alanı tekrar açıp prodücere, yani üreticiye o alanı doldurması için imkan vermesi gerekiyor.
+
+879
+02:33:50,291 --> 02:34:11,291
+Şimdi biz burada bu tamamlansın. Tamamlandıktan sonra şu an consumer'u tekrar çalıştıralım. Consumer bir alan açılmadığı için semaphore da bekliyor şu an. Yani burada bir şekilde signal verilip açılması gerekiyor.
+
+880
+02:34:13,332 --> 02:34:28,292
+Ürünler eklendikçe, yani consumer ve producer tarafından ürünler eklendikçe pozisyonlar güncelleniyor. Böylece ne oluyor? Üretici bunlara erişim sağlayabiliyor.
+
+881
+02:34:28,292 --> 02:34:35,652
+Bakayım hocam.
+
+882
+02:34:36,371 --> 02:34:46,291
+Lip, şurada, şunu mu diyorsunuz hocam? Üreticiden.
+
+883
+02:34:46,291 --> 02:34:57,432
+Yani burada kod üzerinden gidersek, şimdi burada biz consumer için bir fonksiyonumuz var.
+
+884
+02:34:58,112 --> 02:35:01,291
+Bir de üretici için fonksiyonumuz var.
+
+885
+02:35:01,511 --> 02:35:02,956
+Şimdi bu fonksiyonları biz...
+
+886
+02:35:03,123 --> 02:35:06,423
+Semaphore'lar için kullanacağız.
+
+887
+02:35:07,963 --> 02:35:09,324
+Tamam, bir dakika.
+
+888
+02:35:12,123 --> 02:35:13,183
+Çok gözükmüyormuş.
+
+889
+02:35:14,263 --> 02:35:19,023
+Şimdi şöyle de bir sıkıntı var. Bu Virtual Vox da herhalde küçük gösteriyor. Büyümemiş.
+
+890
+02:35:19,963 --> 02:35:22,863
+Bir dakika, onu şöyle çözeyim.
+
+891
+02:35:23,903 --> 02:35:29,504
+Şunu büyütelim.
+
+892
+02:35:31,956 --> 02:35:33,636
+Yine gözükmüyor mu sanki ya?
+
+893
+02:35:34,896 --> 02:35:35,596
+Bir dakika hocam.
+
+894
+02:35:36,436 --> 02:35:38,916
+Display settings'den şunun şeyini değiştireyim.
+
+895
+02:35:40,916 --> 02:35:41,956
+Değiştirebiliyorsan tadı.
+
+896
+02:35:41,956 --> 02:35:42,956
+Bakalım.
+
+897
+02:35:47,443 --> 02:35:49,443
+Bu bir şey fark ettirecek mi acaba?
+
+898
+02:35:53,443 --> 02:35:55,443
+Biraz daha düzeltelim onu.
+
+899
+02:35:58,443 --> 02:36:00,235
+Şimdi biraz daha yakınlaştıralım da.
+
+900
+02:36:06,195 --> 02:36:08,155
+Gözüküyor herhalde.
+
+901
+02:36:09,376 --> 02:36:16,475
+Şimdi şöyle, main fonksiyona baktığımızda biz bir shared memory oluşturuyoruz, demin gösterdiğimiz gibi.
+
+902
+02:36:16,475 --> 02:36:19,475
+Bir de iki tane semaphore oluşturuyoruz.
+
+903
+02:36:19,576 --> 02:36:23,576
+Bu iki semaphordan birisi dolu alanları, birisi de boş alanları takip edecek.
+
+904
+02:36:25,536 --> 02:36:30,415
+Bunlar dediğimiz gibi System V semaphoreları, demin gördüğümüz POSIX semaphorendan farklı olarak.
+
+905
+02:36:31,028 --> 02:36:34,008
+Semaphore'lara başlangıç değerleri atanıyor.
+
+906
+02:36:34,968 --> 02:36:36,587
+Sıfır için başlangıç değeri.
+
+907
+02:36:38,028 --> 02:36:40,328
+Birinci semaphore için başlangıç değeri.
+
+908
+02:36:41,067 --> 02:36:42,608
+Buffer size olarak atanmış.
+
+909
+02:36:42,668 --> 02:36:46,788
+Buffer size de bizim 10 diye belirtilmiş burada.
+
+910
+02:36:48,368 --> 02:36:52,888
+Yani ilk semaphore bütün kaynaklara şu an sahip.
+
+911
+02:36:52,888 --> 02:36:55,888
+İkinci semaphore da sıfır yani erişilemez şekilde gözüküyor.
+
+912
+02:36:59,059 --> 02:37:12,159
+Ne oluyor? Adım adım aslında üretici kaynakları açtıkça, mesela burada tüketici diyor ki ben Semweight ile bir ürün var mı diye kontrol ediyorum diyor.
+
+913
+02:37:12,979 --> 02:37:23,340
+Ürün oluşturulmamışsa bu beklemeye devam edecek. Ürün oluşturulması için burada bir signal belirmesi geliyor.
+
+914
+02:37:23,340 --> 02:37:26,840
+Signal birinci semafora, sıfırıncı semafor değil birinci semafora.
+
+915
+02:37:26,863 --> 02:37:47,203
+Ürün mevcut, diyor. Bir signal veriyor. Bunu verdikten sonra semaphore değeri artacağı için bu burada erişim sağlayabiliyor. Erişim sağladıktan sonra diyor ki ben bunu tükettim. Signal gönderiyor. Burada sıfırıncı semaphore da yer açmış oluyor.
+
+916
+02:37:47,615 --> 02:37:55,456
+Bu bir cycle şeklinde ilerleyerek aslında yer açıldıkça, ürün oluştukça tüketici de tüketebiliyor.
+
+917
+02:37:56,456 --> 02:38:00,515
+Bunu şuradan da bir görebiliriz.
+
+918
+02:38:00,515 --> 02:38:06,216
+Yani consumer bir ürün var mı diye bekliyor.
+
+919
+02:38:07,015 --> 02:38:08,095
+Semveit atarak.
+
+920
+02:38:09,095 --> 02:38:09,355
+Sonra.
+
+921
+02:38:10,131 --> 02:38:22,171
+Eğer resource available ise, resource varsa bufferda bunu signal vererek diğer semaphore onaylıyor ve bu döngü şeklinde gidiyor.
+
+922
+02:38:22,851 --> 02:38:28,432
+Bir de bunu farklı prosesler kullanarak, farklı proseslerde çalıştırarak deneyelim.
+
+923
+02:38:29,912 --> 02:38:31,772
+Şimdi şöyle yapalım.
+
+924
+02:38:33,043 --> 02:38:52,043
+Burada en sonunda bir de clean up yaparak aslında semaphore'ları hissedebiliriz. Burada şimdi produce çalıştırsak, sekfold alıyoruz. Zaten consumer da hiçbir şekilde erişemeyecek o semaphore. Semaphore çünkü...
+
+925
+02:38:52,084 --> 02:38:53,484
+Var oluyor.
+
+926
+02:38:53,623 --> 02:39:04,584
+Arkadaşlar, bu örnekte şerit numarının kullanıldığı sebebi, interprocess, communication ve senkronizasyonu hepsini tekrar tekrar sığdırınca ortalık karışmasın.
+
+927
+02:39:04,584 --> 02:39:09,584
+Aynı şey, mesaj klasik yaklaşımları ile işte...
+
+928
+02:39:09,971 --> 02:39:27,971
+Type olabilir, pipo olabilir, diğer yaklaşımlarla, soket olabilir. Bunlar da yapabiliriz, elbette yapabiliriz. Sadece o ortak interprocess communication ile yakalanıp konfigürasyon neyse, init ilgulamasında aynısını değiştirmemiz gerekir.
+
+929
+02:39:28,971 --> 02:39:34,971
+Interprocess communication açısından baktığımızda, share memory, kernel model çok belki şey yapmayacak ama.
+
+930
+02:39:35,407 --> 02:39:42,407
+Mesaj present yöntemleriyle çöndenmez şeyimiz belki biraz daha gecikmeyi olamaz.
+
+931
+02:39:44,407 --> 02:39:50,407
+Eğer bir internet üzerinden bu işi yapacaksanız illaki shareit numarayı yapamazsınız.
+
+932
+02:39:50,407 --> 02:39:54,407
+Mesela bir WhatsApp'ın uygunu illaki stoket programına ihtiyacınız var.
+
+933
+02:39:54,407 --> 02:39:58,407
+O tarz durumda kaçınılmaz olarak kullanmamız şart oluyor.
+
+934
+02:40:00,000 --> 02:40:08,600
+Burada sadece şerit numarını koymuş onun sebebi, kodu kısaltmak, yanlış anlaşılmasın. Başka diğer yöntemlerle de aynı şey sağlanabiliriz.
+
+935
+02:40:08,680 --> 02:40:13,360
+Onu da deneyim mesela. Bununla alakalı bir kitap var. Belki bizim kitaplarda da varmış.
+
+936
+02:40:13,360 --> 02:40:26,100
+Evet. Bunu hocamızın da söylediği gibi, şimdi farklı proseslerde çalıştırırsak nasıl çalıştırabileceğimizi görelim.
+
+937
+02:40:26,863 --> 02:40:37,683
+Consumer'ı, producer'ı ve test dediğimiz bir kısım var. Consumer'ı ve producer'ı farklı programlara aldık.
+
+938
+02:40:37,683 --> 02:40:51,843
+Şimdi burada çalıştırırken yine producer'dan hem lazım. Bir dakika.
+
+939
+02:40:53,268 --> 02:40:55,268
+Yanlış dedim herhalde.
+
+940
+02:40:57,727 --> 02:41:00,007
+Init dememiz lazım önce, doğru.
+
+941
+02:41:00,528 --> 02:41:02,528
+Şuradan init yapalım.
+
+942
+02:41:04,108 --> 02:41:05,963
+Test init.
+
+943
+02:41:06,067 --> 02:41:21,047
+Yine bellek ve semaforları oluşturduk. Kodla ciddi bir fark yok. Kodlar arasında fark yok. Sadece bütün buradaki C kodları aslında programlar aynı koda sahip. Sadece erişim açısından farklı programlarda çalışıyor gibi bir durum oluşuyor.
+
+944
+02:41:23,187 --> 02:41:27,047
+Burada producer'ı yine çağıracağız.
+
+945
+02:41:30,484 --> 02:41:43,404
+Bu ürünleri eklemeye başlıyor. Aynı şekilde consumer'dan da üretmeyi, tüketme işlemini ayrı bir programda çalıştıracağız.
+
+946
+02:41:45,404 --> 02:41:48,684
+Benzer şekilde farklı programlar üzerinden.
+
+947
+02:41:49,780 --> 02:41:51,140
+Erişim sağlanmış oldu.
+
+948
+02:41:52,020 --> 02:42:01,500
+For dump dedi ya, onun herhalde, gerçi biz bu dump dosyasını kaybetmiyor da, o dump etmesi, yani programın crash siyasına, bunu böyle kaybedebiliriz.
+
+949
+02:42:01,640 --> 02:42:02,880
+Evet, o da kaybedebiliriz.
+
+950
+02:42:02,880 --> 02:42:04,420
+Beşikleteşi faal toalmış ya burada.
+
+951
+02:42:05,100 --> 02:42:08,560
+Biz init'i yapmadığımız için orada aslında zaten...
+
+952
+02:42:08,560 --> 02:42:09,979
+Konfigürasyonu başlatmıyoruz.
+
+953
+02:42:10,020 --> 02:42:10,260
+Aynen.
+
+954
+02:42:11,028 --> 02:42:15,548
+Mesela hangi şey üzerinden haberleşecekler, sen aporlarında, o ne oluyor?
+
+955
+02:42:15,708 --> 02:42:17,308
+Ama testinitlerinden konuşuyor.
+
+956
+02:42:17,808 --> 02:42:18,927
+Başta konulmuştuk.
+
+957
+02:42:19,048 --> 02:42:19,407
+Ne yapalım?
+
+958
+02:42:19,608 --> 02:42:20,968
+Konulur veya prodüseur şu.
+
+959
+02:42:21,128 --> 02:42:22,128
+Orada sıkıntı yaşıyor.
+
+960
+02:42:22,427 --> 02:42:27,868
+Evet, ben mesela burada testinit demiştim ya.
+
+961
+02:42:27,948 --> 02:42:37,108
+Burada şimdi clean up yapsam ve tekrar prodüseurdan öğretmeye çalışsam üretmeyecektir.
+
+962
+02:42:39,219 --> 02:43:02,860
+Bellek alanı hem açılmadı hem de semaphorelarda zaten yok. Oraya yarışım sağlayamayacak oluyor. Genel olarak bu kısım böyle. Şimdi threadler ve prosesler arasındaki kullanıyoruz. Niye prosesleri, bir sürü proses kullanmıyorum da neden threadleri kullanalım gibi bir durum, bir soru olabilir.
+
+963
+02:43:03,540 --> 02:43:26,740
+Şimdi biz fork kullanarak hatırlıyorsanız yeni prosesler üretebiliyorduk. Sub prosesler, child prosesler ya da. Bunlar hem memoride fazla alan tutabiliyor. Çünkü aktardıkları forkla, child'lara aktardıkları şeyler farklı. Hem global variable'ları aktarıyorsunuz, hem kodu aktarıyorsunuz.
+
+964
+02:43:31,796 --> 02:43:44,675
+Hem lokal veri bunları aktarıp birkaç da başka şeyleri daha küçük ve bir alan üzerinde çalışabilecek bir thread oluşturabiliriz.
+
+965
+02:43:45,735 --> 02:43:49,136
+Proseslerle threadler genelde bu alanda değişiyor.
+
+966
+02:43:49,775 --> 02:43:53,595
+Prosesler kendi içerisinde threadlere sahip olabiliyorlar.
+
+967
+02:43:53,595 --> 02:43:56,195
+Yani bu amaçla kullanılıyor.
+
+968
+02:43:58,067 --> 02:44:04,267
+Bir prosesin threadleri memoriye, soket descriptörüne, file descriptörüne sahip olabiliyor.
+
+969
+02:44:04,707 --> 02:44:07,967
+Signallarla alakalı bilgileri sahip olabiliyorlar.
+
+970
+02:44:08,627 --> 02:44:12,027
+Ve çalıştıkları alana, atandıkları alana sahipler.
+
+971
+02:44:15,347 --> 02:44:18,187
+Threadler kendi thread idlerine sahipler.
+
+972
+02:44:18,647 --> 02:44:21,987
+Threadleri idlerle identify ediyoruz.
+
+973
+02:44:22,675 --> 02:44:28,895
+Stack dediğimiz dokal variablenin tutulduğu alana, register'lara, program counter'lara sahipler.
+
+974
+02:44:30,055 --> 02:44:39,975
+Bu kısımda aynı prosesteki threadler shared memory kullanarak iletişim kurabilirler.
+
+975
+02:44:46,484 --> 02:44:56,844
+Durumlar oluşmaması için, farklı bir threadlerin aynı alana erişmesini önlemek için belli önlemler alınıyor. Semaphore ve mutexler gibi.
+
+976
+02:44:58,544 --> 02:45:02,944
+Az önceki şey, oradan aslında az önceki şey değil.
+
+977
+02:45:03,044 --> 02:45:04,604
+İlla değil, evet. Yani bir alan aslında.
+
+978
+02:45:04,704 --> 02:45:08,344
+Ortak bir değişken, bir ruval değil. Ortak bir değişken. Ortak bir değişken. Evet.
+
+979
+02:45:08,915 --> 02:45:09,915
+İlla bir şey yok.
+
+980
+02:45:11,915 --> 02:45:16,895
+Ya şey, memori yapısı değil, bir değişkene erişme gibi düşünebilirsiniz.
+
+981
+02:45:16,935 --> 02:45:19,295
+Ya da memori de bir alana erişme gibi düşünebilirsiniz.
+
+982
+02:45:19,895 --> 02:45:21,855
+Bunların ayrılması gerekiyor.
+
+983
+02:45:21,855 --> 02:45:26,075
+Yani herkes her şeye erişemelidir şekilde olmaması gerekiyor.
+
+984
+02:45:26,315 --> 02:45:27,755
+Bu tarz problemler oluşmaması için.
+
+985
+02:45:30,255 --> 02:45:34,335
+Thread creation'ında pthread create fonksiyonunu kullanıyoruz.
+
+986
+02:45:35,115 --> 02:45:37,615
+İşte bu thread id'sini alıyor.
+
+987
+02:45:38,195 --> 02:45:41,056
+Belli attribütler var thread'in sahip olduğu bunları alıyor.
+
+988
+02:45:41,695 --> 02:45:44,996
+Ve bir start routine alıyor.
+
+989
+02:45:45,136 --> 02:45:50,236
+Bu start routine argümanı da aslında bir fonksiyon void pointer type'ında.
+
+990
+02:45:51,355 --> 02:45:54,456
+Ve belli argümanlar alabiliyor.
+
+991
+02:45:55,347 --> 02:46:02,188
+Eğer bu fonksiyon start rutine dönerse thread de termine ediliyor genel olarak.
+
+992
+02:46:04,888 --> 02:46:13,587
+Başka? Ptrade create fonksiyonu temelde aslında thread id'sini de döndürüyor. Onu da söylemiş olalım.
+
+993
+02:46:16,407 --> 02:46:17,507
+Bundan bahsettik.
+
+994
+02:46:20,987 --> 02:46:22,147
+Ne bittin?
+
+995
+02:46:22,675 --> 02:46:23,255
+Anladım.
+
+996
+02:46:23,675 --> 02:46:24,556
+Yok hocam daha bitmedi.
+
+997
+02:46:26,935 --> 02:46:30,175
+Dediğimiz gibi, threadler kendi Unique ID'lerine sahip.
+
+998
+02:46:30,335 --> 02:46:33,915
+P-Tread Self çağırarak bu ID'ye erişebiliyoruz.
+
+999
+02:46:34,095 --> 02:46:35,876
+Kendi threadler kendi içerisinde erişebiliyor.
+
+1000
+02:46:37,876 --> 02:46:39,656
+Burada başka bir şey yok.
+
+1001
+02:46:41,459 --> 02:46:55,619
+Fonksiyonlar sadece bir argüman alabiliyor. Bu da void pointer cinsinde. Burada gösterdiğimiz şekilde start fonksiyonunu gösterelim. Şu şekilde.
+
+1002
+02:46:55,619 --> 02:47:01,979
+Yani burada birden fazla argüman vermek istiyorsanız belli yöntemler var. Bunu bir array olarak sunmak olabilir.
+
+1003
+02:47:05,683 --> 02:47:24,923
+Belli bir struct tanımlarsınız. Bu structta oluşan şeyi array olarak verebilirsiniz. Bunlardan bahsettik. Şimdi join diye de bir şey var. Ona geleceğiz birazdan. Yani şu an geçelim orayı.
+
+1004
+02:47:27,188 --> 02:47:30,827
+Bir thread exit edene kadar termine edilmez.
+
+1005
+02:47:30,947 --> 02:47:33,707
+Pthread exit denilerek aslında termine edilmesi gerekiyor.
+
+1006
+02:47:35,727 --> 02:47:38,067
+Fonksiyon dönerse de thread termine ediliyor.
+
+1007
+02:47:38,207 --> 02:47:38,947
+Yani sonlanıyor.
+
+1008
+02:47:41,487 --> 02:47:42,827
+Bunlar dışında bir şey yok.
+
+1009
+02:47:42,907 --> 02:47:44,207
+Şimdi şöyle bir örnek var.
+
+1010
+02:47:44,807 --> 02:47:45,947
+Kısa bir örnek.
+
+1011
+02:47:47,067 --> 02:47:50,027
+Burada 5 tane thread var.
+
+1012
+02:47:50,807 --> 02:47:52,268
+Hemen şuradan şey yapalım.
+
+1013
+02:47:52,387 --> 02:47:53,227
+Şunları bir kapatayım.
+
+1014
+02:47:58,100 --> 02:48:04,100
+Burada 5 tane thread tanımlıyoruz. 5 tane thread'in her birinin aslında farklı dillerde hello world demesini istiyoruz.
+
+1015
+02:48:05,620 --> 02:48:14,760
+Fakat burada thread'lere hangi sırada verileceğini, yani biz çalıştırdığımızda göreceğiz, hangi sırada verileceğini tahmin etmek kolay değil.
+
+1016
+02:48:15,800 --> 02:48:19,200
+Burada bir tabii senkronizasyon yok o anlamda.
+
+1017
+02:48:19,827 --> 02:48:32,147
+Bunu bir çalıştırdım. Burada p-thread create de görüyoruz. Thread ID'si verilmiş. Burada fonksiyon olarak hello verilmiş. Hello fonksiyonu verilmiş.
+
+1018
+02:48:32,147 --> 02:48:45,987
+Ve burada argüman olarak da task ID'si verilmiş. Burada task ID olan şey aslında zaten atandığı alan. Şimdi bunu bir çalıştıralım.
+
+1019
+02:48:51,476 --> 02:49:17,476
+Main thread başladı. Main thread başladıktan sonra threadler başlamaya başlayacak. Main thread bu threadlerden, main thread önce başlıyor tabii olarak. Thread 1'de French hello world basılmış. Sonra thread 1 terminal edilmiş. Thread 4 basılmış diye diye. Thread 0 ve thread 2 diye gitmiş. Her biri de sonrasında terminal ediliyor. Peki bunu...
+
+1020
+02:49:18,804 --> 02:49:43,203
+Başka bir şekilde yapsak. Bunda da tek bir thread id'si vermeden aslında multiple argument vererek yani bir data array'i vererek şöyle bir struct tanımlasak. Bu struct da thread id'si sum diye bir variable bir de message diye bir şey versek. Message da işte hello world'ları tutsa.
+
+1021
+02:49:43,796 --> 02:49:51,756
+Ve biz burada sadece thread ailesini değil de aslında birkaç bilgiyi vermiş olsak nasıl olur diye bir örnek var.
+
+1022
+02:49:52,836 --> 02:49:55,276
+Burada da onu da hızlıca çalıştırmış olalım.
+
+1023
+02:50:01,332 --> 02:50:10,752
+Burada göreceğimiz şey, her bir thread çalıştıktan sonra, mesela thread 0, bir sum hesaplanıyor. Kendisine önce bir thread gelmediği için sum 0 oluyor.
+
+1024
+02:50:11,272 --> 02:50:19,912
+Thread 1 geldiğinde sum 1 oluyor. Thread 2 geldiğinde 10'a ekleniyor gibi böyle eklene eklene giden bir yapı var.
+
+1025
+02:50:20,472 --> 02:50:26,032
+Burada yine tabii hangisinin hangisinin sırada geleceğini söylemek mümkün değil. Tekrar çalıştırız tam yine farklı sırada.
+
+1026
+02:50:26,448 --> 02:50:33,448
+Gelecektir. Bu işletim sistemini kendi içinde atadığı şekilde oluyor.
+
+1027
+02:50:35,188 --> 02:50:44,548
+Bundan da bahsetmiş olduk. Başka örnekler var bu şeyi göstermek için.
+
+1028
+02:50:45,808 --> 02:50:49,428
+Hangisinin ne zaman erişeceğini bilemeyeceğimiz tarzda.
+
+1029
+02:50:50,100 --> 02:50:55,360
+Aslında burada da multiple argüman vermeyi gösterdiği bir örnek var.
+
+1030
+02:50:57,319 --> 02:51:08,120
+İşte belli callback'ler var, callback fonksiyonları var, length ölçen fonksiyon, boşlukları sayan fonksiyon, uppercase'e, lowercase'e dönüştüren fonksiyonlar var.
+
+1031
+02:51:08,680 --> 02:51:11,239
+Uppercase'e ve lowercase'e dönüştürme burada önemli olacak.
+
+1032
+02:51:11,239 --> 02:51:17,164
+Çünkü biz verilen karakterlerden hangisini uppercase'e dönüştüreceğini tamamlayacağız.
+
+1033
+02:51:17,523 --> 02:51:20,483
+olarak tahmin edemeyeceğiz ya da hangisinin o iki keze dönüştüreceğini.
+
+1034
+02:51:21,123 --> 02:51:23,283
+Bu da böyle bir sıkıntı oluşturacak aslında.
+
+1035
+02:51:24,463 --> 02:51:27,963
+Bunu da çok içeriğine girmeden çalıştırmış olalım.
+
+1036
+02:51:27,963 --> 02:51:29,583
+Yine bir örnek olarak.
+
+1037
+02:51:33,811 --> 02:51:46,292
+Burada threadlerin, t2, t3 falan diye adlandırılan threadlerin geldiğini görüyoruz. Belli bir random seed verilmiş. Bu seed'e göre de gelen fonksiyonu çalıştırıyorlar.
+
+1038
+02:51:46,292 --> 02:51:49,292
+Burada mesela...
+
+1039
+02:51:49,600 --> 02:51:54,100
+thread, sıfırda belli harflerin büyük olduğunu görüyoruz.
+
+1040
+02:51:54,200 --> 02:52:00,300
+Ama bunun hangi harfleri olduğunu bilmek ya da tamam olup olmayacağını bilmek mümkün değil.
+
+1041
+02:52:00,620 --> 02:52:02,620
+Çünkü neyin ne zaman geleceğini tahmin edemiyoruz.
+
+1042
+02:52:04,300 --> 02:52:08,800
+Ya da burada lowercase fonksiyonu çağrılmış.
+
+1043
+02:52:08,800 --> 02:52:12,800
+Yine benzer şekilde farklı farklı durumlar oluşabiliyor.
+
+1044
+02:52:14,067 --> 02:52:19,827
+Yani burada bir senkronizasyon olması gerekiyor aslında.
+
+1045
+02:52:20,887 --> 02:52:27,247
+Yani bir race condition'i önlemek için bir senkronizasyon yapılması gerekiyor.
+
+1046
+02:52:28,467 --> 02:52:34,807
+Bu noktada biz joinable ve detached thread'lerden bahsedebiliriz.
+
+1047
+02:52:34,807 --> 02:52:37,867
+Her thread ya joinable olabilir ya da detached olabilir.
+
+1048
+02:52:38,368 --> 02:52:59,628
+Default olarak joinable oluyorlardı hatırladığım kadarıyla hocam. Ben yanlış bilmiyorsam. Bunu tabii özel olarak belirtebiliyoruz. Joinable ne demek? Main thread bir thread oluşturuyor. Main thread buna erişiyor ve bir sonuç döndürdüğünde
+
+1049
+02:53:00,180 --> 02:53:23,580
+O sonucu almasını bekliyor. Yani aslında thread'i bekliyor main thread mesela. Bu joinable olduğu durumda geçerli. Detached yaparsak main thread kendisi bunu sonlandırabilir. Yani kendisi sonlandırmasına rağmen detached olduğu thread, thread ile ilgilenmeyi bırakıyor. O thread kendi halinde devam ediyor. Proses bitene kadar.
+
+1050
+02:53:25,396 --> 02:53:27,256
+O thread de sonlanmıyor.
+
+1051
+02:53:27,616 --> 02:53:30,336
+Proses termine edilmesi gerekiyor işletim sistemi tarafından.
+
+1052
+02:53:32,356 --> 02:53:35,196
+Ve detest threadleri sonradan join edilemiyor.
+
+1053
+02:53:35,456 --> 02:53:39,476
+Yani onun sonucu alınamıyor mesela ondan örnek olarak vermek gerekirse.
+
+1054
+02:53:43,736 --> 02:53:45,476
+Şimdi burada...
+
+1055
+02:53:45,940 --> 02:54:02,300
+Yine bir örnek var. İki tane örnek şeklinde göstermişiz. İlk örnekte sol taraftaki kısımda joinable bir thread oluşturuyoruz. Bu joinable thread'e tabii main thread bekliyor bundan çıkacak sonucu.
+
+1056
+02:54:10,288 --> 02:54:18,248
+Aslında pointer'ı, pointer'daki result'ı, yani result'ı döndürüyor.
+
+1057
+02:54:18,968 --> 02:54:25,167
+Dönen result'ı da main thread gidiyor, işte kullanıyor ya da işte bastırıyor vesaire bir şeyler yapıyor.
+
+1058
+02:54:25,628 --> 02:54:32,347
+Ama main thread bu cevabı bekleyen join yaptığı için main thread de sonlanmıyor.
+
+1059
+02:54:38,899 --> 02:54:49,180
+Buradaki rutini gerçekleştiren, fonksiyonu gerçekleştiren thread, kendisi tamamlansın, tamamlanmasın, main thread direkt exit yapıyor.
+
+1060
+02:54:49,260 --> 02:54:53,920
+Yani burada join yapma gibi bir durum yok. Yani oradan gelecek sonucu beklemiyor.
+
+1061
+02:54:54,760 --> 02:54:59,100
+Bu işte belli durumlarda kullanılabilecek bir şey.
+
+1062
+02:55:00,040 --> 02:55:04,100
+Eğer main thread diğer threadlere bağlı değilse ya da onlardan bir cevap beklemiyorsa.
+
+1063
+02:55:04,659 --> 02:55:10,260
+Hem memori'de alan açmak için hem de başka sebeplerden bunu kullanmak mümkün.
+
+1064
+02:55:11,119 --> 02:55:13,539
+Bu örnekleri de hemen çalıştırmış olalım.
+
+1065
+02:55:15,639 --> 02:55:18,019
+Hangi örnekti? X4.
+
+1066
+02:55:20,699 --> 02:55:28,920
+Şimdi joinables olan threadleri çalıştırdığımızda main thread başlıyor.
+
+1067
+02:55:31,283 --> 02:55:34,324
+Bitmesini bekleyerek onlardan bir sonuç alıyor.
+
+1068
+02:55:34,523 --> 02:55:36,404
+İşte biri join diyor.
+
+1069
+02:55:36,523 --> 02:55:37,424
+Yani sonucunu alıyor.
+
+1070
+02:55:37,504 --> 02:55:40,943
+İki, üçü derken dokuza kadar yapmış ve toplamda bir değer veriyor.
+
+1071
+02:55:41,023 --> 02:55:41,924
+Bu değerleri toplayarak.
+
+1072
+02:55:42,283 --> 02:55:55,824
+Biz bunu joinable olmayan detached threadlerle yaptığımızda main thread, threadleri oluşturduktan sonra join etmeyeceği için
+
+1073
+02:55:56,948 --> 02:56:18,507
+Programı tamamlıyor ve çıkış yapıyor. Bu çıkış yapması detest threadlerin sonlanmasını sağlamıyor tabii. Detest threadler bunu bu işlemi yapmaya devam ediyorlar ve kendileri kendi fonksiyonları içerisinde çalıştıkları fonksiyon içinde değerleri print ediyorlar. Bu değerler main thread'ten bağımsız olarak ortaya çıkmış oluyor.
+
+1074
+02:56:22,611 --> 02:56:47,231
+Burada da görüyoruz aynı sonuçları. Shared global variables olayı var. Demin de bahsettik aslında benzer olaylardan. Burada senkronize etmemiz gereken durumlar var. Senkronize etmek için mutexleri ve condition variable dediğimiz sinyalleme mekanizmalarını kullanıyoruz. Condition variables da aslında mutexlerle beraber çalışan bir yapı.
+
+1075
+02:56:47,796 --> 02:57:09,816
+Mutex'in demin bahsettiğimiz binary semaphordan bir farkı, semaphorelarda ownership yok. Yani her proses erişebilir onlara. Ama Mutex'lerde sadece threadler. Mutex'in kilit yapan thread sadece unlock edebilir.
+
+1076
+02:57:10,388 --> 02:57:36,847
+Bunda böyle bir olay var. Aslında biraz daha güvenli gibi duruyor semaphore'a göre. Ama farklı amaçlarla kullanılıyorlar. Aslında bunlardan bahsettik. Race Condition olması durumunda. Mutual Exclusion diye kısaltılan Mutual Exclusion Primitiveleri aslında mutexlerden bahsediliyor. Bu problemleri önlemek için kullanılıyor.
+
+1077
+02:57:37,747 --> 02:57:54,948
+Burada aslında semaphorda olduğu gibi değer arttırma gibi bir yapı var. Değer arttırmıyor direkt olarak ama kilitliyor. Kilitledikten sonra da eğer orada işi bittiyse unlock edip başka bir zaman girecek olan thread için yer açmış oluyor.
+
+1078
+02:58:03,379 --> 02:58:10,739
+Örnekte bahsedeceğimiz örnekte de mutex'in initialize edildiğini ve bunun kullanıldığını göreceğiz.
+
+1079
+02:58:12,979 --> 02:58:16,239
+Örnek olarak iki tane örnek çalıştıracağız şimdi.
+
+1080
+02:58:16,319 --> 02:58:20,279
+Bir örneklerden ilkinde mutex yapısı yok.
+
+1081
+02:58:21,399 --> 02:58:25,479
+Burada bir fonksiyon var ve bir thread oluştururken bu fonksiyon veriliyor buna.
+
+1082
+02:58:26,139 --> 02:58:29,459
+Bu statüetini ve sayı saymaya başlıyor.
+
+1083
+02:58:29,907 --> 02:58:35,028
+Ve oluşturulan thread id'lerini tutacağız. Bakalım nasıl yerliyormuş.
+
+1084
+02:58:38,932 --> 02:58:42,252
+XB, X6'ymış.
+
+1085
+02:58:43,791 --> 02:58:45,252
+Şöyle çalıştıralım.
+
+1086
+02:58:47,932 --> 02:58:49,252
+Şimdi, job1started diyor.
+
+1087
+02:58:49,352 --> 02:58:52,791
+Trade'in belli bir ID'si var.
+
+1088
+02:58:53,432 --> 02:58:54,492
+Job2started.
+
+1089
+02:58:54,791 --> 02:58:57,672
+Yine başka bir trade ID'si görüyoruz.
+
+1090
+02:58:59,156 --> 02:59:07,876
+Sonra ne oluyor? Job to finish, job to finish diyor. Job one finish demesi gerekiyordu örneğin bir tanesi için en azından.
+
+1091
+02:59:08,416 --> 02:59:14,036
+Ama bu değişken değiştiği için orada hangisinin hangisine eriştiği tam olarak belli olmadı. Bir karışıklık oluştu.
+
+1092
+02:59:15,036 --> 02:59:22,156
+Mutex'de bunu biz çözeceğiz şimdi. Her bir thread'in başlayıp bitmesi beklenecek. Yani o alana...
+
+1093
+02:59:22,899 --> 02:59:42,460
+Aynı anda iki tane thread erişemiyor olacak. Onun için şuradan izle inceleyebiliriz. Burada bir mutex tanımlıyoruz. P-thread mutex initializer kullanarak. Bundan sonra burada loglandıktan sonra, bu fonksiyona girdikten sonra bir thread, buraya diğer thread erişim sağlayamıyor.
+
+1094
+02:59:43,156 --> 02:59:57,636
+İşini bitirdikten sonra bu thread, işte finish de basacak, job finish diye, kendi thread ailesiyle. Sonra buraya unlock ederek çıkacak. Sonra diğer thread girebilecek gibi bir durum var. Onu da hemen çalıştıralım.
+
+1095
+03:00:00,136 --> 03:00:01,596
+Şöyle yapayım bir dakika.
+
+1096
+03:00:05,936 --> 03:00:07,096
+Dondu galiba.
+
+1097
+03:00:09,196 --> 03:00:10,276
+Şey dondu.
+
+1098
+03:00:11,028 --> 03:00:21,907
+Bir dakika, tekrardan başlatayım şunu. VirtualBox kullanınca böyle bir sıkıntı oluyor.
+
+1099
+03:00:26,804 --> 03:00:31,004
+Zaten bitmek üzere. Birazdan tamamlayacağız.
+
+1100
+03:00:39,476 --> 03:00:43,316
+Buraya kadar herhangi bir sorusu olan anlamadığı bir nokta olan var mı arkadaşlar?
+
+1101
+03:01:06,420 --> 03:01:07,420
+Dön veç.
+
+1102
+03:01:17,268 --> 03:01:18,148
+Çeviri ve çözdürüm.
+
+1103
+03:01:22,708 --> 03:01:34,948
+Burada dediğimiz mutex yapısını kullanmış oluyoruz. Mutex'i kullandığımız için job1 dediği yani bu thread, 64 ile biten thread, erişim sağladıktan sonra, işini bitirdikten sonra unlock ediyor.
+
+1104
+03:01:36,528 --> 03:01:46,308
+Lockladığı diğer thread de sonra gelip o alanını locklayıp, sonra erişim sağlayıp işini bitirdikten sonra da çıkıyor.
+
+1105
+03:01:46,308 --> 03:01:48,308
+Demin gördüğümüz gibi burada bir...
+
+1106
+03:01:51,443 --> 03:02:16,623
+Karışıklık yok. Hangi cabın hangi thread'e ait olduğu da belli oluyor. Basit bir örnekten atmak gerekirse. Bunun dışında condition veriableri dediğimiz bir şey var. Bu da aslında yine mutexlerle kullanılan bir yapı. Burada mesela birinci thread bir iş yapıyor. İkinci thread oraya erişmek istiyor fakat orada sürekli bekleyecek.
+
+1107
+03:02:17,007 --> 03:02:34,007
+Burada aslında bir tür sinyal kullanarak, sinyal yapısı gibi bir şey kullanarak, foundation dediğimiz, foundation variable'ı, bu alanın uygun konuma geldiğini belirtmek için bir foundation variable kullanabiliyoruz.
+
+1108
+03:02:36,507 --> 03:02:37,007
+Burada...
+
+1109
+03:02:37,007 --> 03:02:40,567
+Şimdi bunun en güzel kullanılmışı arkadaşlar aslında.
+
+1110
+03:02:42,804 --> 03:02:47,804
+Spinlock'ı hatırlıyorsunuz, o durduk diye, vayan öncesinde, busy waiting yanılıyordu.
+
+1111
+03:02:47,804 --> 03:02:52,804
+Prodüsür, consumer problemi üzerinde söyleyecek olursak,
+
+1112
+03:02:52,804 --> 03:02:53,804
+orda,
+
+1113
+03:02:53,804 --> 03:02:58,804
+ufak, kısa süreli beklemeler olabilir ama,
+
+1114
+03:02:58,804 --> 03:03:03,804
+kabul edelim ki, çok uzun süre proses beklemesi yerine waiting state alıyorsunuz.
+
+1115
+03:03:03,804 --> 03:03:06,804
+Waiting state de bir kuyrukta bekliyoruz.
+
+1116
+03:03:07,731 --> 03:03:16,191
+Burada şu oluyor, oradaki bekleyen thread'i tekrar redi almak için uyandırma fonksiyonu var bu konusunu beraber.
+
+1117
+03:03:16,891 --> 03:03:22,652
+Siz bunu kodu içinde uyandırırken diyorsunuz ki falanca thread veya falanca proses uyansın gelsin.
+
+1118
+03:03:24,311 --> 03:03:29,951
+Burası müsait dedirtebilmek için mesela iş bitti başkasına haber veriyorsunuz gelin burayı kullanın der gibi.
+
+1119
+03:03:29,951 --> 03:03:32,691
+Bu tarz sinyal ve bit çağrıları var.
+
+1120
+03:03:33,511 --> 03:03:34,731
+Bu anlamda...
+
+1121
+03:03:34,772 --> 03:03:37,172
+Gayet ulaştık bir şey geliyor diyebiliriz.
+
+1122
+03:03:37,452 --> 03:03:46,051
+Burada condition'ın gerçekleştiği durumda, bu wait fonksiyonuyla çağırılan condition'da bir signal veriliyor.
+
+1123
+03:03:46,172 --> 03:03:56,711
+Bu signal, bu condition gerçekleşti, diğer işlemler gerçekleştirilebilir diye bir şey söylüyor.
+
+1124
+03:03:57,711 --> 03:04:01,412
+Burada da şu uygulamayı bir çalıştıralım.
+
+1125
+03:04:03,347 --> 03:04:05,167
+Şimdi önce gösterelim şeyi.
+
+1126
+03:04:10,484 --> 03:04:36,964
+Şimdi şöyle, burada 3 tane thread var bu uygulamada, programda. Burada biz condition belirleyeceğiz. Condition'da bir counting işlemi yapılıyor. Bu counting, 2 thread arasında değişken olarak işte birinci thread attırıyor, ikinci thread attırıyor. Bir yerde 12'ye ulaşması bekleniyor, bir count limite ulaşması bekleniyor. Bu count limite ulaştıktan sonra da
+
+1127
+03:04:37,843 --> 03:04:40,783
+Bir de watcher thread dediğimiz bir thread var.
+
+1128
+03:04:41,643 --> 03:04:48,563
+Bu watcher thread de tek yaptığı şey aslında şurada watch count takip eden fonksiyonu görüyoruz.
+
+1129
+03:04:49,523 --> 03:04:57,243
+Count limiti takip edip bu count limiti eğer count değeri ulaşmışsa condition sinyalinin receipt olduğunu döndürmeyin.
+
+1130
+03:04:57,243 --> 03:04:59,703
+Condition sinyalini nasıl döndürecek?
+
+1131
+03:05:02,324 --> 03:05:19,984
+Filtred, conduit diye bir şey tanımıyor. Buraya Conditioner verdiğimizde ilgili mutex işlemini gerçekleştirip aslında buradaki count değerine erişip bu değeri 12'ye ulaştıktan sonra 100 arttırma görevini sahip.
+
+1132
+03:05:29,907 --> 03:05:31,688
+Nerede? Aşağıda değil, pardon.
+
+1133
+03:05:32,667 --> 03:05:40,447
+Burada diğer incrementin yapıldığı, iki threadin çalıştığı fonksiyonda da bir signal gönderiliyor.
+
+1134
+03:05:40,567 --> 03:05:44,707
+Bu signal da count limite ulaştıktan sonra gönderilmiş oluyor.
+
+1135
+03:05:44,867 --> 03:05:47,307
+Ama bu thread bunu hep takip ediyor.
+
+1136
+03:05:47,307 --> 03:05:51,407
+Yani count limitin ulaşılmasına.
+
+1137
+03:05:51,847 --> 03:05:57,307
+Burada da bu signal gönderildikten sonra aslında buradaki wait işlemi...
+
+1138
+03:05:58,036 --> 03:06:02,896
+Yani burada bu noktada işlem tamamlanıyor ve girmiş oluyor.
+
+1139
+03:06:02,896 --> 03:06:04,695
+Sound değerinde yüzü arttırıyor.
+
+1140
+03:06:18,611 --> 03:06:35,291
+Şöyle bir şey oldu. Thread2 ve thread1 burada değişken olarak bu count değerini işte critical section'a girerek mutex'i unlock ediyor. Sonra işte diğeri giriyor, diğeri unlock ediyor gibi böyle bir şey var.
+
+1141
+03:06:37,672 --> 03:06:43,072
+Watch count'u da watch count fonksiyonunu da kullanarak thread3 de burada takibi sağlıyor.
+
+1142
+03:06:43,763 --> 03:06:54,543
+Thread 3, weight'e giriyor. Weight'ten sonra bir condition sinyalinin gelmesi bekleniyor. Condition sinyalinde count 12'ye ulaşınca aslında gönderiliyor.
+
+1143
+03:06:55,443 --> 03:07:07,244
+Ama bu sırada da thread 2, 13'e girmiş ve 13'e arttırmış değeri. Yani burada sinyalin alınmış olması, değerin arttırılmasını hemen sağlamamış.
+
+1144
+03:07:08,788 --> 03:07:16,788
+Ama olsa muhtemelen direk 12'den hemen sonra yapılır ama o sırada girmiş ve değeri bir tane daha arttırmış.
+
+1145
+03:07:16,788 --> 03:07:26,788
+Sonra bu sinyal alındıktan sonra thread 3 bu count'u 100 arttırıp 113'e çıkartmış ve sonrasında...
+
+1146
+03:07:27,252 --> 03:07:32,852
+Tekrardan thread 1 ve thread 2 burada arttırmalara devam etmiş.
+
+1147
+03:07:32,852 --> 03:07:36,652
+Belli bir değere ulaştıktan sonra da main thread'e gelmişler.
+
+1148
+03:07:36,652 --> 03:07:39,852
+Çünkü main thread burada bir join işlemi yapıyor.
+
+1149
+03:07:39,852 --> 03:07:49,051
+Join işlemi yapıldıktan sonra değer döndürülüp 120 olarak main thread'de basılıyor ve bundan sonra da destroy ediyoruz.
+
+1150
+03:07:49,051 --> 03:07:53,451
+Hem attribute'leri hem de mutex'i ve condition variable'ı.
+
+1151
+03:07:53,940 --> 03:07:57,619
+Bundan sonra da çıkmış oluyoruz.
+
+1152
+03:08:00,180 --> 03:08:02,500
+Benim genel olarak anlatacaklarım bunlar.
+
+1153
+03:08:03,079 --> 03:08:08,579
+Bu konularla ilgili herhangi bir sorusu olan, anlamadığı nokta olan var mıdır?
+
+1154
+03:08:08,579 --> 03:08:10,299
+Yok.
+
+1155
+03:08:17,492 --> 03:08:22,371
+Bu kodları arkadaşlarla da paylaşacağız. Sizinle de paylaşacağız arkadaşlar.
+
+1156
+03:08:22,731 --> 03:08:24,252
+Slider paylaşacağız.
+
+1157
+03:08:24,971 --> 03:08:26,471
+Slider ve kodları.
+
+1158
+03:08:28,371 --> 03:08:30,951
+Ve yolları gördüğünüz zaman.
+
+1159
+03:08:34,012 --> 03:08:41,951
+Evet arkadaşlar, haftaya derste görüşmek üzere. Dediğim gibi sınav dışında haftaya yine ders yapacağız.
+
+1160
+03:08:42,420 --> 03:09:05,659
+Sınavla alakalı yine oturma düzeni hakkında ben bilgi paylaşacağım. Bu dersin kaçıncı dakikasındaydı? 11.33 civarında biz bir sınavla alakalı açıklama yaptık. Dersin sonunu kayıttan dinleyeceklere buradan selam olsun. 11.33 saatindeki o aralığa gidip oradan dinleyebilirsiniz.
+
+1161
+03:09:06,920 --> 03:09:08,639
+Hepinize iyi günler, görüşmek üzere arkadaşlar.

@@ -1,0 +1,4119 @@
+1
+00:00:26,228 --> 00:00:29,188
+Günaydın arkadaşlar. Sesimiz var mı? İnternette.
+
+2
+00:01:17,108 --> 00:01:18,888
+Günaydın, mutlu anlık, teşekkür ederim.
+
+3
+00:02:56,020 --> 00:02:58,400
+Görüntümüz de var herhalde. Bir sıkıntı yok arkadaşlar.
+
+4
+00:03:06,099 --> 00:03:07,259
+Ekranımızı görüyor musun?
+
+5
+00:03:14,259 --> 00:03:29,340
+Tamam. Evet, bugünden itibaren yaklaşık bir 7-8 hafta belki process management işletim sisteminin en çok üzerinde yoğunlaştığı konuya bakacağız.
+
+6
+00:03:31,180 --> 00:03:40,079
+Şimdi bu slide'lar, bu dersin ana kitabının slide'ları herhalde 6 veya 7 parçaya bölünür bu vaziyette.
+
+7
+00:03:41,204 --> 00:03:47,144
+Ama bunlarla beraber diğer iki tane kaynağımız da var. Onları da takip etmenizi tavsiye ediyorum.
+
+8
+00:03:48,283 --> 00:03:55,004
+Bazı şeyler oralarda daha güzel izah edilmiş olabilir. Zaman zaman ben oradan alıntı yapacağım.
+
+9
+00:03:55,843 --> 00:04:00,903
+Ama dersin içeriğine hakim olmanız için oradaki kaynakları da incelemeniz iyi olur.
+
+10
+00:04:02,963 --> 00:04:06,963
+Bir işletim sistemi için daha önceki derslerimizde konuştuk ki
+
+11
+00:04:08,116 --> 00:04:11,516
+Kontrol ve koordinasyon sistemi dedik.
+
+12
+00:04:12,616 --> 00:04:22,056
+İşte kontrol ve koordine edilmesi gereken en birinci kaynaklardan birinci şey bir tanesi, en önemli kaynaklardan bir tanesi işlemci.
+
+13
+00:04:23,276 --> 00:04:31,636
+Çünkü bu donanımın bir şekilde işlemlere, proseslere tahsis edilmesi lazım.
+
+14
+00:04:32,211 --> 00:04:36,971
+Yeri geldiğinde allocation yapacak, yeri geldiğinde deallocation yapacak.
+
+15
+00:04:38,031 --> 00:04:46,771
+Bununla alakalı proses kavramı, proseslerin schedule edilmesi, prosesler üzerindeki operasyonlar ve prosesler arası haberleşme.
+
+16
+00:04:47,711 --> 00:04:50,611
+Bu konu çok uzun olduğu için bugün de uygulamanız var.
+
+17
+00:04:51,951 --> 00:04:53,012
+Saat on bire kadar.
+
+18
+00:04:54,291 --> 00:04:56,951
+Biz daha çok bu üç başlık üzerinde bugün devam edeceğiz.
+
+19
+00:04:56,951 --> 00:04:58,891
+Haftaya kaldığımız yerden.
+
+20
+00:05:00,372 --> 00:05:03,711
+Devam ederiz. Bugün şu kısma bakacağız daha fazla.
+
+21
+00:05:06,152 --> 00:05:10,732
+Şimdi bir proses kavramını öncelikle nedir bu proses ona bakalım.
+
+22
+00:05:12,592 --> 00:05:20,872
+İşletim sistemi farklı çeşitli programları execute ettirebilir. Yani yürütebilir, çalıştırtabilir.
+
+23
+00:05:22,032 --> 00:05:26,592
+Eğer bu bir batch sistemse toplu işlemlerden oluşursa bunlara jumplar diyoruz.
+
+24
+00:05:27,220 --> 00:05:32,700
+Aynı işin, aynı şeyin farklı kavramlarla ifade edilmesi diyebiliriz bunlara.
+
+25
+00:05:34,000 --> 00:05:40,020
+Bir zaman paylaşımlı sistem varsa user programları veya testler deniyor.
+
+26
+00:05:41,379 --> 00:05:45,680
+Bad sistemlerin özelliği şuydu, parçalanamıyor.
+
+27
+00:05:45,940 --> 00:05:52,940
+İşte siz bir girdiği bir programı başlattığınızda, işleme başladığınızda onu yarıda kesemiyorsunuz.
+
+28
+00:05:53,939 --> 00:06:01,939
+Ama günümüz bilgisayarlarının böyle bir durumu yok. Özellikle kişisel bilgisayarlarda zaman paylaşımlı sistem var. Çünkü interaktivite önemli.
+
+29
+00:06:01,939 --> 00:06:08,939
+Bir şeyin interaktif olması aynı anda birden fazla programın veya birden fazla prosesin çalışabiliyor olması demek.
+
+30
+00:06:10,939 --> 00:06:20,812
+Bu farklı kitaplarımız, job, proses, program bunları birbiriyle değişebilir şekilde kullanabiliyor.
+
+31
+00:06:21,172 --> 00:06:25,792
+Dediğim gibi aynı şeyi ifade ediyorlar ama kavramsal olarak birkaç farklılıkları var.
+
+32
+00:06:27,852 --> 00:06:33,612
+Biz daha çok bu derste ve dersin genel içeriğinde proses kavramını kullanacağız.
+
+33
+00:06:34,932 --> 00:06:38,212
+Proses kavramı, siz bir program yazdınız.
+
+34
+00:06:39,592 --> 00:06:41,312
+Seyi dilinde yazmış olduğunuzu kabul ederim.
+
+35
+00:06:42,372 --> 00:06:43,192
+Bunu değerlediniz.
+
+36
+00:06:44,272 --> 00:06:46,392
+Değerlerken tabii birkaç aşamadan geçiyor.
+
+37
+00:06:47,283 --> 00:06:49,563
+İşte, thought edition yaptınız.
+
+38
+00:06:54,228 --> 00:07:14,668
+Değerleme aşaması da tek başına bir işlem değil. Compile yapıyorsunuz. Compile yaparken link yapıyorsunuz. Sonra exec haline bir geliyor. İşte çalıştırılabilir bir program haline geliyor. Bu pasif bir varlık. Olduğu yerde duran bir program. Riskinizde genellikle saklarsınız.
+
+39
+00:07:15,795 --> 00:07:19,716
+Bunu bir şekilde çalıştırabilir hale çalıştırdınız.
+
+40
+00:07:19,915 --> 00:07:23,416
+İşte üzerine çift tıkladınız veya komut satırından bir bilgi girdiniz.
+
+41
+00:07:24,275 --> 00:07:27,036
+Program artık execute etmeye başladı.
+
+42
+00:07:28,036 --> 00:07:30,135
+Yani yürütülmeye, çalıştırılmaya başladı.
+
+43
+00:07:31,155 --> 00:07:36,375
+Bu execution halindeki programın haline, programın execution'daki haline,
+
+44
+00:07:37,536 --> 00:07:39,155
+process ismi diyoruz.
+
+45
+00:07:39,155 --> 00:07:40,155
+Process diyoruz.
+
+46
+00:07:41,076 --> 00:07:51,055
+Örneğin sıfırıncı satırdan eninci satıra kadar program akmaya başlıyor. Böyle bir akış var. Genellikle şu çizimi daha çok belli değil. Execution flow diyoruz buna.
+
+47
+00:07:53,456 --> 00:07:56,636
+Çalışan program demek ki bizim için process ismi alıyor.
+
+48
+00:07:58,096 --> 00:08:04,276
+Tabi bu program bir işletim sistemin tarafından process haline gelince,
+
+49
+00:08:05,524 --> 00:08:18,963
+Prosesi kontrol edebilmek veya diğer proseslerle arasındaki ilişkileri kontrol edebilmek için işletim sistemi burada sizin proses haline gelmiş programınızla alakalı bazı bilgiler tutması lazım.
+
+50
+00:08:19,704 --> 00:08:24,704
+Çünkü accounting'den bahsettik, güvenlikten bahsettik, farklı işletim sisteminin rolleri var dedik.
+
+51
+00:08:25,424 --> 00:08:30,564
+İşte bunları bir şekilde kontrol edebilmek, koordine edebilmek için ekstra bilgiler tutacak.
+
+52
+00:08:33,524 --> 00:08:40,403
+İrfaneti birazdan gelecek de detaylı olarak her bir prosesin kendine ait bir ID'si olması lazım.
+
+53
+00:08:41,364 --> 00:08:50,923
+Gerektiğinde o prosesin öldürülmesini, kill edilmesini sağlayacak veya prosesin bellek uzayıyla alakalı bazı kontrolleri sağlayacak.
+
+54
+00:08:51,524 --> 00:08:59,584
+Bir sürü kontrol yapılabilir. Proses ID tutulacak. Tabi bu proses ID dışında saklanması gereken başka veriler var.
+
+55
+00:09:01,043 --> 00:09:28,323
+Bir kere daha önce de yazdık ama işte bir bellek üzerinde işletim sisteminin bir yeri vardı. Sizinle bir prosesiniz var. My process diyelim. Gittiler, gidildi, buraya bir yer verildi. Bu yerin sınırları prosesinizle ilişkilendiriliyor. İşte diyor ki bu proses şuradan başlıyor, şurada bitiyor. Bunu bir yerde saklayacak. Saklarken de proses ID ile bir eşleştirme yapacak.
+
+56
+00:09:29,331 --> 00:09:32,892
+Bunu bellek yönetimi kısmında konuşacağız daha fazla.
+
+57
+00:09:33,872 --> 00:09:39,231
+Şimdi şu ayrılan bellek bölgesi kendi içinde bazı bilgiler tutuyor.
+
+58
+00:09:40,292 --> 00:09:44,672
+Bunlardan bir tanesi bir kere programımızın asem bir kod karşılığının tutulması lazım.
+
+59
+00:09:45,531 --> 00:09:49,091
+Yani text section dediğimiz kod segment de diyebiliriz.
+
+60
+00:09:49,932 --> 00:09:53,692
+Olan kısım bu bellek uzayı içerisinde burada bulunacak.
+
+61
+00:09:55,347 --> 00:10:01,168
+Sonra bu proses bir şekilde işlemciye girecek, işlemci de egzeküt edilecek.
+
+62
+00:10:01,927 --> 00:10:06,567
+Belli zamanlarda da işlemciden çıkartılıp tekrar işlemciye geri dönmek üzere bekletilecek.
+
+63
+00:10:07,467 --> 00:10:11,387
+Şimdi işlemciye girdi, işlemcilerine tutulur program kantor var.
+
+64
+00:10:12,288 --> 00:10:14,028
+Belli register değişkenleriniz var.
+
+65
+00:10:15,447 --> 00:10:20,168
+Bunların gerektiğinde yedeklenmek üzere bellekte de saklanması lazım.
+
+66
+00:10:20,168 --> 00:10:21,947
+Bunun için de bir bellek alanı.
+
+67
+00:10:22,611 --> 00:10:30,372
+Şu alan, şu uzay içerisinde tutuluyor. Niye? Daha çünkü program bitmedi veya prosesin çalıştırılması bitmedi.
+
+68
+00:10:30,372 --> 00:10:39,572
+Bir ara verildi, belli bir zaman paylaşım olduğu için. Bu arada özellikle program counter, program status word dediğimiz
+
+69
+00:10:39,572 --> 00:10:49,011
+mikro işlemcide görüyorsunuzdur. Flag registerlarımız. İşte care flag, borrow flag, overflow flag, zero flag falan.
+
+70
+00:10:49,172 --> 00:10:50,572
+Bunların saklanması lazım.
+
+71
+00:10:52,292 --> 00:10:57,471
+Veya şu programın kendi içerisinde, sizler değişken, lokal değişkenler tutuyorsunuz.
+
+72
+00:10:58,591 --> 00:11:01,672
+Bunlar belli aşamaya geldi ama program tamamlanmadı.
+
+73
+00:11:03,031 --> 00:11:05,892
+Onların da saklanması lazım diyebiliriz.
+
+74
+00:11:05,892 --> 00:11:09,552
+Demek ki işlemci registerları, programı kantorlar saklanacak.
+
+75
+00:11:09,692 --> 00:11:13,471
+Bu current activity ile alakalı olanlar.
+
+76
+00:11:14,100 --> 00:11:27,140
+Yani programın execute edilmesinde işlemcinin içerisindeki registerların işlemci içerisindeki değişkenlerin saklanmasıyla alakalı. Bir de programın kendi değişkenlerini saklayacağımız ayrı bir yer var. Buna da stack bölgesi diyebiliriz.
+
+77
+00:11:28,019 --> 00:11:38,879
+Stack bölgesinde lokal variable'larınız, işte programı açtınız yazdınız int, a, b, c, kar, c gibi şeyler veya bir dizi ama bu dizi şey.
+
+78
+00:11:39,283 --> 00:12:06,484
+Ön tanımlı int dizi 10, int dizi 50 gibi statik dizileriniz. Statikten kastım şey olmasın. Başına statik anahtar verdiğiniz şey değil. Sabit uzunluklu 10 elemanlı 20 elemanlı dizileriniz. Sonra fonksiyonlarınızın parametreleri. Sonuçta bir f fonksiyonu yazdığınızda bu integer a, tar, c gibi bir şey alıyorsa bu parametreleri bir yerde saklamanız gerekiyor.
+
+79
+00:12:07,923 --> 00:12:35,283
+Fonksiyondan bir return gerçekleştirecekseniz bu return'le alakalı bir dönüş olacak demektir. Bu dönüş adreslerini saklamanız gerekiyor. Bunların hepsi stekle tutuluyor. Stekle tutulmasının mantığını geçen hafta söyledim ama tekrar ifade edelim. Program açılır açılmaz bir kere main fonksiyonu aktifleştirilecek. Main fonksiyonundan bir fonksiyon çağırdığınızda o anki satır bilgisi o zamana kadarki değişkenlerin değeri siteye atılacak.
+
+80
+00:12:35,796 --> 00:12:46,375
+Sonra fonksiyon çalıştırılacak. Eğer bir fonksiyon daha çağırırsanız işte o da siteye atılacak. Böyle iç içe yapılar şeklinde stekte saklanması lazım. Onun için stekte daha kullanıyoruz.
+
+81
+00:12:47,855 --> 00:12:58,576
+Eğer sizin global değişkenleriniz varsa bunları da data section içerisinde tutuluyor arkadaşlar. Bakın global değişkenler ayrı bir yerde tutulması ilginç. Acaba neden böyle?
+
+82
+00:13:01,491 --> 00:13:07,851
+Senkronizasyon konusuna gelince bu konuyu detaylandıracağız. Stack içerisinde tutulmuyor.
+
+83
+00:13:07,851 --> 00:13:15,052
+Ondan sonra program counter'ın olduğu yerde tutulmuyor. Stack section'da da tutulmuyor. Ayrı bir data section'da,
+
+84
+00:13:15,052 --> 00:13:23,291
+burada statik değişkenleriniz, global değişkenleriniz, bir de environmental variable dediğim,
+
+85
+00:13:23,291 --> 00:13:28,331
+int mail yazdığınızda orada bir parametre alırsınız ya programın çalıştırılması için.
+
+86
+00:13:28,532 --> 00:13:34,252
+parametreler. Normalde fonksiyonların parametreleri var ama bir de ana fonksiyonun parametreleri var.
+
+87
+00:13:34,252 --> 00:13:47,272
+İşte şuraya kar, args falan yazılır. Bunlar da data section içerisinde tutuluyor. Bir de heap bölgemiz var.
+
+88
+00:13:47,732 --> 00:13:53,252
+Heap bölgesinde de dinamik olarak allocate edilmiş, çalışma zamanı esnasında alınmış.
+
+89
+00:13:53,716 --> 00:14:10,015
+Bellek bölgeleriyle alakalı verilerin tutulduğu bölge var. Bunların birbirinden ayrı, izole tutulmasının nedeni, prosesle alakalı bazı şeyleri yönetmek. Hangi prosesle ne kadar yer verildi, ne kadar yer alınacak.
+
+90
+00:14:10,899 --> 00:14:22,559
+Program işleyişi birbirine karışmaması lazım. Bunların birbirinden ayrı tutulması lazım. Karışırsa çünkü her şey birbirinin içerisine girer. Yani stekteki verirler, kendi mantığı içerisinde saklanıyor. Hiptekiler başka şekilde saklanıyor.
+
+91
+00:14:24,259 --> 00:14:32,399
+Burada şöyle bir durum da var. Birazdan galiba bunun görsel gösterimi de vardı. Bu bölgeyi birazcık şöyle detaylı çilecek olursam.
+
+92
+00:14:33,620 --> 00:14:58,620
+Mesela en tepede stack bölgesi bulunuyor. Herhalde birazdan bir görsel vardır. Stack, sıfırdan şöyle yukarıya doğru dolduruluyor. Bunun üzerinde de heap bölgesi var. O da şu şekilde. Dolma mantığı olarak aynı da. Üst üste geliyor. Ama birisi sıfırdan üst değerlere doğru, öbürü tam tersine. Veya bazı durumlarda...
+
+93
+00:14:58,803 --> 00:15:04,323
+Şurada sıfır yerine buraya max diyelim, hani en yüksekler. Max'dan aşağıya doğru doldurulur.
+
+94
+00:15:05,423 --> 00:15:11,624
+Hip de onun tam tersidir. Buna big ending, little ending falan deniyor. Mikro işlemci mimarisine göre değiştirilebiliyor.
+
+95
+00:15:12,343 --> 00:15:17,803
+Ama mantık aynı. Birinde aşağıdan yukarıya doğru, birinde de yukarıdan...
+
+96
+00:15:21,011 --> 00:15:21,391
+Hayır.
+
+97
+00:15:32,851 --> 00:15:58,871
+Sonra bir recursive, işte bir fonksiyon çağırdınız. İşte fonksiyon geldi. Fonksiyon kendi içinden diğerini çağırdı. O diğerini çağırdı. Böyle ne oluyor? Stack dolmaya başlıyor. Stack dolunca bir yerden sonra programınız durduruluyor. Neden durduruluyor? Bir hata alıyorsunuz. Stack overflow hatası alıyorsunuz. İşte o stack overflow aslında stack bölgesinin heap bölgesine bir baskılama yapması, onun sınırına girmesi demektir.
+
+98
+00:15:59,248 --> 00:16:03,708
+İşletim Sistemi bir yerde bunu kontrol ettiği için daha fazla ilerlemeye izin vermez.
+
+99
+00:16:03,868 --> 00:16:07,268
+HIP bölgesine müdahale edilmesini istemez.
+
+100
+00:16:07,988 --> 00:16:09,828
+Ve bu şekilde programımız sonlandırılır.
+
+101
+00:16:12,028 --> 00:16:14,008
+Evet, burada böyle şeyler söylemiş olalım.
+
+102
+00:16:14,508 --> 00:16:16,768
+Demek ki bir proses kavramı var.
+
+103
+00:16:17,288 --> 00:16:19,428
+Bu prosesle alakalı bellek bölgesi var.
+
+104
+00:16:19,548 --> 00:16:21,988
+Bellek bölgesinde de tutulacak veriler var.
+
+105
+00:16:23,443 --> 00:16:33,903
+Program dediğimiz gibi disk üzerinde veya kalıcı hafızalar üzerinde, hafıza elemanları üzerinde saklanan pasif bir varlık iken, process aktif durumda.
+
+106
+00:16:36,043 --> 00:16:43,383
+Executable dosyanızı belleğe yüklediğinizde program, process haline geliyor arkadaşlar.
+
+107
+00:16:44,383 --> 00:16:47,443
+Bu execution nasıl olur? Gittiniz, mouse ile...
+
+108
+00:16:48,288 --> 00:17:15,548
+Klik yaptınız. Olabilir. Comment line'dan geçen hafta yaptık işte LS diye bir şey var. Bugün de hocamız size uygulama yapacak. Orada bir aslında program çalıştırıyorsunuz. Bir konut çalıştırdınız. Veya kendi yazdığınız programı da çağırabilirsiniz. İşte GCC'yi mesela çağırıyorsunuz. İşte tre bilmem ne böyle böyle bir şeyler yazıyorsunuz. Aslında orada da bir program çalıştırılıyor. Yani bakın değerleyicinin kendisi değerleme yapması için bir proses haline gelmesi lazım.
+
+109
+00:17:15,855 --> 00:17:33,976
+Tamam mı? Sonra, execution başlıyor. Tabii bir program birden fazla proses içerebiliyor. Bunlar mümkün şeyler. Birazdan zaten göreceğiz. En basitinden şöyle düşünün.
+
+110
+00:17:33,976 --> 00:17:41,395
+Düşünün. Word programınız var. Birden fazla çalıştırabiliyor musunuz? Çalıştırabiliyorsunuz. İşte birden fazla proses çalışıyor.
+
+111
+00:17:41,844 --> 00:17:48,864
+Ama şu da mümkün. Bir defa klik yaptınız. O klikle beraber birden fazla prosesle çalıştırabiliyorsun.
+
+112
+00:17:49,943 --> 00:17:51,943
+Şimdi mesela görev yöneticisine baksak.
+
+113
+00:17:54,503 --> 00:17:58,003
+Mesela burada bir tane PowerPoint çalışıyor. Bir tane işte web browser var.
+
+114
+00:18:01,144 --> 00:18:04,483
+Şurada ayrıntılar diyelim.
+
+115
+00:18:08,115 --> 00:18:24,895
+Nerede Opera? Mesela bakın şu, farklı prosesler ama aynı isimde. Demek ki bir defa çalıştırılmıştır. Bakın Opera bir tane browser açık, arkada bir sürü proses var. Bu proseslerin altında da daha sonra thread dediğimiz şeyleri göreceğiz. Bu normal bir şeydir.
+
+116
+00:18:27,412 --> 00:18:48,211
+Opera'yı açtığınızda Opera ile alakalı veya bir web browser ile alakalı bir sürü arkada bir şeyler çalışması lazım. Bunu da tek prosese yüklemek, mahalletmek biraz zor. Sıkıntılı işler. Mecburen birden fazla proses çalışacak. Bunlar kendi aralarında haberleşecekler ve senkronizasyon gerçekleşecek. Onun için birden fazla prosesi görmemiz normal.
+
+117
+00:18:52,372 --> 00:19:03,711
+Proses'in bellekteki alanını, aslında bu daha mantıklı. Şurada ben dedim ya, max dedi bir şey. Şuradaki sıfırı sürmeyin. Sıfır şurada olsun, max da yukarıda olsun.
+
+118
+00:19:05,715 --> 00:19:15,975
+Bir yerde tek programın kod kısmı saklanacak dedik. Programla alakalı lokal variable'ların olduğu datalar saklanacak ama bu data da kendi içinde bölünebiliyor.
+
+119
+00:19:15,975 --> 00:19:20,935
+İşte global değişkenler bir yerde, diğer şeyler başka bir yerde diyebiliriz.
+
+120
+00:19:21,536 --> 00:19:23,975
+Stake bölgesinde programın işte...
+
+121
+00:19:25,428 --> 00:19:45,588
+Dizileriniz int, a, b, c gibi değişkenleriniz saklanacak. Bakın bu yukarıdan aşağıya doğru eklene eklene geliyor. Hatta bunu C'de deneyimleyebilirsiniz. Bilmiyorum benden yapısal programlama aldıysanız ben önceden bunun kodunu yazıyorum. İşte main yazdınız. Int, a dediniz, b dediniz.
+
+122
+00:19:52,692 --> 00:20:10,472
+A yapın. Print, %p, b yapın. Şurada gördüğünüz sayısal değer, adres değeri. Önce A'yı tanımladınız, sonra B'yi tanımladınız. Şurada gördüğünüz sayısal değer. A'nın sayısal değerinin B'den daha fazla olduğunu gördünüz. Adres değerinin.
+
+123
+00:20:11,028 --> 00:20:21,028
+İşte gittiniz başka bir dizi tanımladınız. Dizi mesela dizinin sıfırı, dizinin birincisi, ikincisi, üçüncüsü elemanlara baktığınızda o da azalarak değişecektir.
+
+124
+00:20:22,367 --> 00:20:30,947
+Type tarafında işte tam tersi bu sefer artarak göreceksiniz. İşte bir yerde malloc yapın. İşte on elemanlı bir malloc yaptınız.
+
+125
+00:20:31,423 --> 00:20:40,423
+Bunu bir dizide tuttunuz. D1 dizi diyelim. D1'in sıfırıncı elemanı, birinci elemanı, ikinci elemanı, bunlara baktığınızda bunlar da artarak adres olarak girecek.
+
+126
+00:20:44,423 --> 00:20:54,204
+Şimdi, proses çalışabilir hale geldikten sonra, şimdi benim bir tane işlemcim var, CPU, bir belleğim var.
+
+127
+00:20:55,188 --> 00:21:01,668
+Hani diskimiz var onu ayrı yazacağım. Bir de bas yapımız var. Üç tane basımız var. Ve benim mesela prosesim yeri burası.
+
+128
+00:21:03,428 --> 00:21:08,908
+Bir tane komut, instruction cycle kısmını ilk derste anlatmıştım onu tekrar hatırlayalım.
+
+129
+00:21:08,908 --> 00:21:19,548
+Bir tane komut CPU'ya geliyor. CPU'da dekode ediliyor. Varsa onun operantları bellekten CPU'ya tekrar getiriliyor.
+
+130
+00:21:19,923 --> 00:21:47,084
+Onlar da decode edilip, execute ediliyor. Sonra diğer komuta sıra geliyor. Bu böyle devam ediyor. Ama bir proses başladıktan bitene kadar işlemciye bir defa girdi, artık bir daha çıkamaz diyemiyoruz. Başka prosesler de aynı zamanda çalıştığı için ne yapacağız? Birini çıkartacağız, diğerini alacağız. Bu durumlarda arkadaşlar, prosesin bir farklı durumlarda olma şeyi var.
+
+131
+00:21:47,796 --> 00:21:49,996
+İhtimali karşımıza geliyor.
+
+132
+00:21:50,676 --> 00:21:54,676
+Proses bellekte olabilir veya CPU'da olabilir.
+
+133
+00:21:54,676 --> 00:21:57,316
+Şu çizime göre iki farklı durum karşımıza geliyor.
+
+134
+00:21:58,056 --> 00:22:00,596
+Bellekte ise execute etmiyor demektir.
+
+135
+00:22:01,696 --> 00:22:03,496
+CPU'da ise execute ediyor demektir.
+
+136
+00:22:03,636 --> 00:22:05,976
+Buna iki durumlu proses model ediyoruz.
+
+137
+00:22:06,156 --> 00:22:07,776
+Kitabımız buna doğrudan yer vermemiş.
+
+138
+00:22:07,936 --> 00:22:13,476
+Belki açıklama kısmında, yani slide'larda yok da, kitabın açıklama kısmında az bir şey vardır.
+
+139
+00:22:13,576 --> 00:22:15,355
+Ama diğer kitaplarla bu detaylı anlatılıyor.
+
+140
+00:22:15,923 --> 00:22:20,584
+İlk önce işletim sistemi tasarında iki durumlu proses modelinden bahsediyoruz.
+
+141
+00:22:22,324 --> 00:22:25,003
+Şeyde, teori of computation'da durum makinelerini gördünüz.
+
+142
+00:22:25,183 --> 00:22:27,884
+A durumundan B durumuna geçişleri falan görmüşsünüzdür.
+
+143
+00:22:28,564 --> 00:22:33,804
+O zaman bir P0 durumu diyelim, bir P1 durumu diyelim.
+
+144
+00:22:34,523 --> 00:22:37,663
+P0'dan P1'e geçebilir, P1'den P0'a geçebilir.
+
+145
+00:22:37,763 --> 00:22:40,384
+Böyle bir durum değişimi meydana gelebilir.
+
+146
+00:22:41,683 --> 00:22:53,183
+Buna işte waiting diyelim mesela. Buna da running diyelim. Running durumdayken proses işlemcide, waiting durumdayken proses bellekle muhabbet edilir.
+
+147
+00:22:53,183 --> 00:23:02,683
+Tabi zaman içerisinde gereksinimler değişiyor. İşte araya cache yapıları ekleniyor, başka şeyler ekleniyor. Mesela bu proses input output yapacak değil mi?
+
+148
+00:23:02,683 --> 00:23:08,543
+Input output yapacaksa ne yapması lazım? Running durumunda olmaması lazım.
+
+149
+00:23:08,544 --> 00:23:15,544
+Ama waiting durumunda da olmamız lazım. İşte o zaman üç durumlu proses modeli geliştirdik. Oraya bir durum daha ilgilenir.
+
+150
+00:23:15,544 --> 00:23:33,516
+Mesela P0 veya state 0 diyelim. State 0, state 1, state 2. Şuna mesela running diyeyim. Running durumundan waiting durumuna geçebilir mi? Geçebilir. Waiting'den running'e geçebilir mi? Geçebilir.
+
+151
+00:23:34,163 --> 00:23:39,644
+Bellek de bekliyordur. İşletim sistemi, hadi sen çalış biraz demiştir. Çalışmaya başlayabilir.
+
+152
+00:23:40,803 --> 00:23:48,783
+Running durumundayken input output isteği olabilir. Buraya da I.O. diyelim. O zaman input output isteği olursa input output yapacak.
+
+153
+00:23:49,163 --> 00:23:52,763
+Input output işlemi yaparken acaba tekrar running duruma geçebilir mi?
+
+154
+00:23:54,103 --> 00:23:56,823
+İşte bakmışlar. Yani bunu ilk başta modellemeye çalışıyorlar.
+
+155
+00:23:57,460 --> 00:24:03,740
+Bir şey input output yapıyorsa önce bir waiting durumuna geçsin, ondan sonra running durumuna gitsin dermiş.
+
+156
+00:24:04,920 --> 00:24:11,440
+Waiting durumundayken input output yapabilir mi? Program bellekte duruyor, şu an çalışmıyor.
+
+157
+00:24:12,400 --> 00:24:15,519
+Çalışmayan bir şeyin input output isteğini nasıl bileceğiz ki?
+
+158
+00:24:15,519 --> 00:24:21,299
+Yani printf mi olacak, scanf mi olacak bellekte sonuçta program execute edilmiyor, bellekte bekletiliyor.
+
+159
+00:24:21,599 --> 00:24:25,000
+O zaman waiting durumundan da input output durumuna geçişi mümkün değil.
+
+160
+00:24:25,715 --> 00:24:29,455
+Bakın, bu üç durumda olası durumlar bu şekilde ifade edilebilir.
+
+161
+00:24:30,735 --> 00:24:38,255
+Tabi, bilgisayar mimarileri değiştikçe bu proseslerin durum ihtimalleri de değişiyor ve gelişiyor.
+
+162
+00:24:39,275 --> 00:24:46,955
+Günümüzde temel olarak esas alınan beş durumlu proses modeli karşımıza geldik.
+
+163
+00:24:48,051 --> 00:25:01,051
+Bunları şimdi söyleyeceğiz. Ama bu beş durum güncel, işte Microsoft'un Windows İşletim Sistemi'de, Unix'de bu şekilde değil. Dersin sonunda galiba bunun örnekleri vardı ve kitabımız da var.
+
+164
+00:25:09,556 --> 00:25:18,556
+Çünkü tasarlayan kişi, şunu esas olarak yeni ihtimalleri dikkate alarak ekstra durum durumlar tanımlamış ve bunu...
+
+165
+00:25:25,619 --> 00:25:52,899
+Bilmiyorum, işte bir Turing makinesi değil de, non-deterministic finite automata, NFA dediğimiz şey. Bunun programına falan yazdılar mı size? Mesela orada A durumu var, B durumu var, non-deterministic NFA diyelim. A durumu olsun, B durumu olsun, C durumu olsun. Non-deterministic olunca ne oluyor? Her durumdan her duruma tanımlama yapmak zorunda değiliz. İşte A durumundan B durumuna geçiş var.
+
+166
+00:25:53,263 --> 00:25:56,583
+Ama B durumundan başka bir duruma geçiş var mı yok mu bunu bilmiyoruz.
+
+167
+00:25:57,763 --> 00:26:09,263
+Burada da biraz olay non-deterministik hale gittiği için çünkü bir şekilde işletim sistemi kendi içinde accounting yapacak falan dedik ya bir istatistik tutuyor.
+
+168
+00:26:09,503 --> 00:26:14,503
+Bazı durumlar non-deterministik çalışabilir mantığıyla ekstra durumlar zaman içerisinde eklenmiş.
+
+169
+00:26:19,039 --> 00:26:24,039
+değişken tutarsınız. O değişkenler arası geçişleri basit bir kodla yapabilirsiniz. İnternette araştırın.
+
+170
+00:26:24,039 --> 00:26:33,039
+Simple, non-deterministic, finite, automata, in, c yazın. Size bazı kod örnekleri verir. Bunun daha genel halini düşünün. Baya...
+
+171
+00:26:33,824 --> 00:26:53,784
+Karmaşıkları yapıya gider veya deterministlik de yapabilirsiniz. İşte deterministlik olursa A'dan B'ye, işte B'den başkasına, işte C'den şeye. Hani bir de durum geçişleri için girdiler olacak. İşte sıfır gelirse nereye gidecek, bir gelirse nereye gidecek bu durumları da dikkate alırsanız farklı kombinasyonlar çıkar. Bu işletim sistemi tarafında da var.
+
+172
+00:26:57,263 --> 00:27:06,363
+Bir kere belleğe yüklenildik. İşte o ilk belleğe yüklenme alanında işletim sistemi bunu yeni durumda gösteriyor. Yani proses oluşturuldu durumuna geliyoruz.
+
+173
+00:27:07,923 --> 00:27:17,543
+Oluşturulduktan sonra işlemci bir şekilde boş hale geliyorsa prosesi execute edilir duruma, running duruma alıyor. O zaman durum bilgisi değiştirdi.
+
+174
+00:27:21,748 --> 00:27:36,387
+Olay bir event meydana geldiğinde prosesin bekletilmesi gerekebilir. Bu bir input output işlemi olabilir. Bir interrupt olabilir. Bir sebepten proses bekletiliyor olabilir. Buna da waiting durum diyoruz.
+
+175
+00:27:38,327 --> 00:27:49,208
+Şimdi şu an işlemciler günümüzde çok çekirdekli işlemciler. Hadi tek çekirdek olarak düşünelim. İşlemci çok hızlı çalışan bir yapıda belleğe göre.
+
+176
+00:27:50,003 --> 00:28:12,103
+Siz prosesleri bellekten getireyim, işlemciye koyayım, işte ondan sonra işletirsin, gerektiğinde de işlemciden çıkar tekrar belleğe götürün. Bu düşünceyi yaptığınızda bir şey unutuyoruz. Bu da nedir? Bellekten gelene kadar bir süre var. O sürenin belki binde biri kadarki sürede işlemci zaten o sürede bir başka prosesi işleyecek.
+
+177
+00:28:12,756 --> 00:28:21,615
+Dolayısıyla işlemcide koşturulacak, egresif edilecek proseslerin böyle tek tek bellekten getirilip işlemciye sokulmaması lazım.
+
+178
+00:28:22,196 --> 00:28:26,776
+Bir kuyruklama yapılıyor. İşletime hazır hale getirmek için.
+
+179
+00:28:26,876 --> 00:28:31,796
+Çünkü getirene kadar bir süre var, o sürede zaten proses gidecek, yine işlemciyi boşta bırakacaksın.
+
+180
+00:28:32,676 --> 00:28:34,676
+Bu kuyruk içerisinde bir ready durumu var.
+
+181
+00:28:35,476 --> 00:28:52,016
+Önce diyor ki P1 prosesi işlemciye girsin. Sonra P2 girsin. Hazır tutuyorsunuz. Ama işlemciden, şey bellekten getirmek için o gereken süreyi arada elimine etmeniz gerekiyor. Onu yapmak için de bir yerde kuyruklama yapılması lazım. İşte ona da ready durumu diyoruz.
+
+182
+00:28:59,539 --> 00:29:05,880
+Hani kırmızı ışıktan yeşile geçmiş hemen gaza basmak üzere o durumdasınız. İşte orada bir puyruklama durumu var.
+
+183
+00:29:07,079 --> 00:29:17,980
+Proses çalışmasını tamamen bitirdiyse terminate etti demektir. Yani artık ne olacak? Ondan işlemci çıkacak. Hatta belki bellek de prosesten alınacak.
+
+184
+00:29:18,880 --> 00:29:24,100
+İşte buna da execution'un tamamlanması, waiting, terminate durum diyoruz. Şimdi bu beş durumu düşünün.
+
+185
+00:29:25,811 --> 00:29:42,731
+S1 diyelim, S2 diyelim, S3 diyelim, S4 diyelim, S5. Bunların arasındaki geçiş ihtimallerini düşünün. Bunun belli bir mantığa oturtulması lazım. Tabi bu mantık gelişi güzel işte bundan buna geçer, bundan buna geçer, bundan buna geçer o şekilde değil.
+
+186
+00:29:43,951 --> 00:29:51,451
+İşte buna da proses geçiş diyagramı, proses durum diyagramı diyoruz. Şöyle bir şey uygulanmış.
+
+187
+00:29:51,955 --> 00:30:13,235
+Bir kere bir proses yeni durumdaysa büyük ihtimalle belleğe geldi. Artık ready durumuna geçiyor. Proses kabul edildi. İşlemde çalışmaya hazır. Çünkü sıfırıncı satırdan başlatacaksınız. Çalışmaya hazır hale getiriyorsunuz. Dolayısıyla new durumundan sadece ready durumuna bir geçiş olabilir.
+
+188
+00:30:43,667 --> 00:30:51,107
+Rob meydana gelmiş olabilir. Tamam, sen çok durdun, artık sen çık deyip, running durumdan ready durumuna geri gelebilirsiniz.
+
+189
+00:30:52,228 --> 00:30:55,028
+Bağlantımız düzensizliğiniz. Seste bir sıkıntı var mı arkadaşlar?
+
+190
+00:30:57,788 --> 00:30:58,827
+Yok hocam.
+
+191
+00:31:02,228 --> 00:31:05,528
+Running durumdan, ready durumda bir interact vasıtasıyla gelebiliriz.
+
+192
+00:31:07,188 --> 00:31:10,268
+Yine running yapıyoruz, çalışıyoruz bir başka ihtimal.
+
+193
+00:31:10,808 --> 00:31:12,268
+Programımız tamamlanmış olabilir.
+
+194
+00:31:13,248 --> 00:31:17,388
+Yani gittik, bütün programı tamamladık, terminate edebiliriz, çıkış yapacağız.
+
+195
+00:31:18,268 --> 00:31:24,228
+Bir başka ihtimal de programın yürütülmesi esnasında bir input output veya bir bekleme...
+
+196
+00:31:25,140 --> 00:31:51,759
+İhtiyacı olabilir. İşte bir printf yapacaksınız, scanf yapacaksınız veya bir dosyaya yazma, dosyadan okuma işlemi yapacaksınız. Bu IO işlemi yapılırken bekleme durumu alıyorsunuz. Bekleme durumu bitince bakın doğrudan running'e gitmiyoruz. Ready queue'ya gidiyoruz. Şu ready'de aslında bir queue yapılıyor. Böyle bir veri yapısı kullanılıyor. Çünkü birden fazla proses ready durumunda olacaksa.
+
+197
+00:31:52,307 --> 00:32:00,168
+Hangi prosesin işlemciyi kullanacağına karar verecek? Burada bir kuyruk yapısı. İlk gelen ilk hizmet alır meselesiyle çalışacak.
+
+198
+00:32:04,888 --> 00:32:06,508
+Anlamadım. Biraz ses kalacak.
+
+199
+00:32:11,220 --> 00:32:17,220
+Şu an sadece tek kuyruk gibi düşün, birazdan ona geleceğiz, o scheduling ile alakalı. Bu biradan fazla kuyruk olabilir tabii ki.
+
+200
+00:32:18,020 --> 00:32:21,020
+Waiting'den çıktık, bir şekilde ready Q'ya geleceğiz.
+
+201
+00:32:22,400 --> 00:32:27,220
+Bu durum geçişi en temel, günümüzdeki işletim sistemlerinin çoğunun esas aldığı bir durum.
+
+202
+00:32:27,920 --> 00:32:35,360
+Ama bunun dışında ekstra durumlar olabilir. Zannediyorum bu şeyin slide'ın sonunda bir tane vardı, bu bakarız, inceleriz.
+
+203
+00:32:36,500 --> 00:32:48,880
+Şimdi bu konuyu gördükten sonra process control block dediğimiz her bir prosesle alakalı bilgilerin saklandığı ayrıca bir veri yapısı var.
+
+204
+00:32:50,640 --> 00:32:56,140
+Şimdi proses oluşturulduğunda biraz önceki prosesin state'inin bir yerde tutulması lazım.
+
+205
+00:32:56,279 --> 00:32:58,000
+Bu proses acaba hangi durumda?
+
+206
+00:32:59,220 --> 00:33:03,480
+Çünkü tamam o durum diagramı olacak da işte dedim ya biraz önce kodlama yaptınız mı diye.
+
+207
+00:33:03,955 --> 00:33:13,815
+O durumların hangi değerleri aldığını bir şekilde değişkenle saklayacaksınız programları. O da mesela burada bir process state olarak bir yerde tutuluyormuş.
+
+208
+00:33:14,875 --> 00:33:21,455
+Process'in number'ı IDC dediğimiz bir şey tutulacak. Yeri geldiğinde process'e işte sonlandırmak veya diğer işlemler yapmak için.
+
+209
+00:33:22,895 --> 00:33:25,775
+Program counter değeri ayrı bir yerde tutuyor çünkü
+
+210
+00:33:26,900 --> 00:33:53,400
+Proses çalıştı, işlemciden çıktı, bellek de geri yedeklendi. Bu program kantorunun hızlıca tekrardan yerine konması lazım. O zaman bunu ayrı bir şekilde saklamamız gerekiyor. Hangi şey tutulacaksa. CPU register'ları da bakın bir yerde tutulması lazım. Mevcut prosesin CPU register'larının son durumu alınıyor. CPU scheduling information dediğimiz bir bilgi tutulması lazım.
+
+211
+00:33:54,836 --> 00:34:03,176
+Örneğin bu prosesin önceliğine hangi kuyrukta tutulacak? Birazdan farklı kuyruk yapılarını göreceğiz. Bu bilgilerin saklanması lazım.
+
+212
+00:34:04,416 --> 00:34:11,956
+Memory olarak düşündüğümüzde hangi bölgede saklanıyor? Şimdi ben burada tek bir bölge şeklinde biraz önce çizdim.
+
+213
+00:34:13,216 --> 00:34:19,036
+7 hafta sonra, 8 hafta sonra memory management kısmına geldiğimizde diyeceğiz ki aslında tek bir bölge yok bir proses için.
+
+214
+00:34:19,876 --> 00:34:22,336
+Parçalı hale getirilmiş işte page yapısı diyeceğiz.
+
+215
+00:34:22,771 --> 00:34:27,591
+Farklı farklı bölgeler var. O zaman o bölgelerin ayrı ayrı tutulması, saklanması lazım.
+
+216
+00:34:28,891 --> 00:34:37,072
+Tek bir bölge olsa kolay. İşte bu benim belleyim. Şuradan şuraya kadar diyorsun. Bir şurayı tutarım, bir de burayı tutarım. O aradaki her şey bu prosese aittir deriz.
+
+217
+00:34:37,731 --> 00:34:48,711
+Ama gerçekte ilk başta böyleyken günümüzde böyle değil. Yeri geliyor. Bir kısmı şurada, bir kısmı başka bir yerde, bir kısmı da disk üzerinde.
+
+218
+00:34:49,715 --> 00:34:52,475
+O da ayrı bir mekanizma. Bunların tutulması lazım.
+
+219
+00:34:54,416 --> 00:35:02,255
+Prosesinize belli dosyalar açma, dosya okuma, dosyayı yazma ile alakalı izinler verildi.
+
+220
+00:35:02,335 --> 00:35:07,435
+Veya input alt ile alakalı bazı descriptörleriniz var. Bunlara file descriptör diyoruz.
+
+221
+00:35:08,536 --> 00:35:14,295
+Bunların hangisi açık, hangisi kullanılıyor, hangisi kapatılmış işte bununla alakalı bilgilerin saklanması lazım.
+
+222
+00:35:15,860 --> 00:35:32,200
+CPU ne kadar kullanılmış? Bakın accounting information deniyor. Başlangıçtan şu ana kadar ki geçen zaman ne kadar süre verilebilir bu prosesle alakalı, işlemci de ne kadar kalsın gibi, time limitleri. Bunların da bir yerde saklanması gerekiyor.
+
+223
+00:35:33,100 --> 00:35:40,659
+Peki bu process control blog bu bilgileri tutacaksa, process control blog kendisi nerede tutulması lazım?
+
+224
+00:35:48,115 --> 00:36:11,416
+İşlemcide mi, ana bellekte mi, hard diskde mi, flash diskde mi? Bunların da bir yerde durması lazım değil mi? Bu bilgileri okuyabilmek için. Bu bilgileri okuyabilmek için arkadaşlar bir kere bizim bir şeye proses diyorsak ana bellekte olması lazım. Yani çalışabilir, çalışarak durumda olması lazım.
+
+225
+00:36:12,820 --> 00:36:40,140
+Şimdilik şey düşünebilirsiniz. Bu process control block ana bellekte bulunabilir. Ama memory management kısmına geldiğimizde diyeceğiz ki bu prosesin belli kısımları virtual memory dediğimiz hard disk gibi, SSD disk gibi özel alanlar kaydediyor o disklerden. Orada da saklanabilir. Ama biz çoğunlukla bu process control block'un ana bellekte olduğunu bilelim. Tamam mı? Çünkü bana program counter bilgisi lazım.
+
+226
+00:36:40,851 --> 00:36:48,511
+Artiske gidip gelene kadar o ne kadar zaman geçir. Hızlı bir şekilde ana belirleye bakalım. Oradan bu bilgiyi almamız lazım.
+
+227
+00:36:51,612 --> 00:37:01,211
+Peki, günümüz modern bilgisayarlarında multiprocessing dediğiniz bir kavram var. Aynı anda birden fazla proses çalışacak.
+
+228
+00:37:01,791 --> 00:37:07,131
+Ha bu arada diğer kitaplarda şu kavramlar var. Onları okumanızı istiyorum. Size ayrıca bir iki link de paylaşırım.
+
+229
+00:37:09,523 --> 00:37:35,023
+multi-tasking, multi-processing, multi-thread, multi-threading bir şey daha vardı. Bir dördüncüsü daha var da şu an aklıma gelmedi. Multi-tasking, multi-processing, multi-programming.
+
+230
+00:37:39,987 --> 00:37:42,648
+Bu kavramları okuyun bak. Aradaki farklar nelerdir?
+
+231
+00:37:43,627 --> 00:37:47,648
+Kitabımız da var. Diğer şeyde de var. Birileri bir şey yapmışlar.
+
+232
+00:37:49,728 --> 00:37:50,827
+Bazen sıkıntı oluyor.
+
+233
+00:37:51,268 --> 00:37:57,387
+Yani kablosu da bağlı değiliz ama kablosu da galiba bir internette sıkıntı var veya gidip geliyor mu bilmiyorum.
+
+234
+00:37:58,707 --> 00:38:02,507
+Neyse, çek kısmına görünür yapayım da bir şey olursa müdahale etmeye çalışırız.
+
+235
+00:38:04,407 --> 00:38:06,527
+Evet, şimdi başlığımız şu.
+
+236
+00:38:09,427 --> 00:38:13,268
+Bir prosesten bir başka prosese geçiş süreci nasıl olacak?
+
+237
+00:38:14,947 --> 00:38:18,807
+Sizin P0 ve P1 diye iki tane prosesiniz olsun varsayalım.
+
+238
+00:38:19,887 --> 00:38:24,707
+Bu ikiyi çokluk olarak düşünün arkadaşlar. İki de olabilir, yirmi iki de olabilir. Yani çok.
+
+239
+00:38:25,987 --> 00:38:31,667
+Herhangi iki tane set sonuçta işlemciyi kullanacaksa bir tane CPU olduğunu parlayabilirim.
+
+240
+00:38:31,788 --> 00:38:32,947
+Yani bir tane korumumuz var.
+
+241
+00:38:33,487 --> 00:38:34,467
+Endless execution yapacak.
+
+242
+00:38:34,931 --> 00:38:53,251
+O zaman bir proses CPU'dan çıkacak, öbür proses CPU'ya girecek. Eğer çoklu bir işlemci varsa, çoklu kornuz varsa, orada da sonuçta herhangi bir korn üzerinde bir proses kordan çıkacak, bir başka proses kora girecek gibi düşünebilirsiniz.
+
+243
+00:39:02,260 --> 00:39:04,480
+İşlemciden çıkartılmak istenebilir.
+
+244
+00:39:05,440 --> 00:39:10,480
+Process'in kendisiyle alakalı bir durumdan dolayı olabilir bu veya dış kaynaklı bir şey olabilir.
+
+245
+00:39:10,480 --> 00:39:12,280
+Process'in kendisiyle alakalı ne olabilir?
+
+246
+00:39:13,100 --> 00:39:14,440
+Bir exception olmuş olabilir.
+
+247
+00:39:15,380 --> 00:39:18,800
+İşte herhangi bir şey çalışıyor, divide by zero gibi bir exception oldu.
+
+248
+00:39:19,000 --> 00:39:20,560
+Onu işlemciden çıkartmanız lazım.
+
+249
+00:39:21,520 --> 00:39:24,380
+Veya process çalışıyor, bir input output isteği oldu.
+
+250
+00:39:24,580 --> 00:39:27,100
+Onu işlemciden interrap ile çıkartmanız gerekir.
+
+251
+00:39:28,460 --> 00:39:29,500
+Dış kaynaklı ne olabilir?
+
+252
+00:39:30,228 --> 00:39:54,387
+Prosesin kendisine ayrılan işlemci kullanma zamanı dolmuştur. İşletim sistemi tamam sen çık artık yerine bir başkasını alacağım demiş olabilir. Bunlar farklı ihtimaller. Bu ihtimallerden bir tanesi meydana geldiğinde genelik devlet interapla bu olur. Ne yapacağız? Bunu çıkartacağız. Yalnız çıkartırken işlemcinin state'ini, o register'ları, program kanunları bilgilerini saklamamız lazım.
+
+253
+00:39:55,411 --> 00:40:08,171
+İşte bu PCB 0 dediğimiz, process 0'a ait 0. PCB bir yere kaydediliyor. Yani bu bilgiler bir yere kaydediliyor. Bu bilgi de mail memory içerisinde saklanıyor.
+
+254
+00:40:09,611 --> 00:40:13,331
+Bu süre içerisinde çok kısa bir bekleme zamanı var.
+
+255
+00:40:14,291 --> 00:40:15,911
+E-Dule dediğimiz şu.
+
+256
+00:40:17,396 --> 00:40:42,996
+Process 1 içeriye girecekse, process 1'in de kendine ait bir process control bloğu var, veri yapısı olarak. Bunun yüklenmesi lazım. Çünkü register bilgilerinin alıp işlemciye alınması, ondan sonra program control'un işlemciye alınması, ne yapacak? Basit bir hazırlık aşaması gibi düşünebilirsiniz, ondan sonra ne yapacak? İşlem bir yürümeye başlayalım. Bu arada da birisi save edildi, öbürsü reload edildi.
+
+257
+00:40:43,827 --> 00:40:57,228
+Sonra, process, execute etmeye başlıyor. Execute ettikten sonra, bir süre sonra, bu sefer durum, tevil için gerçekleşiyor. Bir execute interrupt olabilir, sistem çağrısı olabilir, başka şeyler olabilir.
+
+258
+00:40:57,228 --> 00:41:05,628
+Bu sefer, process 1'in durumu PCB 1 olarak kaydediliyor. Bir yerlere, bellek üzerinde.
+
+259
+00:41:06,195 --> 00:41:14,755
+PCB 0 diyebiliriz. O tekrardan yükleniyor ve bu sefer o egzekül edilebiliyor. Bir prosesten bir başka prosese geçiyor.
+
+260
+00:41:15,396 --> 00:41:24,436
+Tabi bunu P0 ve P1 için değil, N tane proses arasında bir işlemcinin bir şekildiğini kullanmak gibi genelleştirebilirsiniz.
+
+261
+00:41:28,019 --> 00:41:36,220
+Şu ana kadar baktığımız şeyde her bir prosesin kendine ait bir tane execution flow'u olduğunu varsaydı.
+
+262
+00:41:37,100 --> 00:41:41,720
+Java'da falan multi-threat gördünüzde, işte ben bir program yazdım, böyle bir programım var.
+
+263
+00:41:42,519 --> 00:41:47,039
+Bu mailden başlıyor, işte son return sıfıra kadar böyle bir execution yapıldı.
+
+264
+00:41:48,160 --> 00:41:51,019
+Fakat günümüz modern uygulamaları...
+
+265
+00:41:51,507 --> 00:42:15,167
+Bazı görevleri, taskları kendi içerisinde eş zamanlı olabilecek yapılara sahip olması lazım. Neden? Çünkü işlemci sayısı bir kere fazlalaştı bilgisayarlarında. Birden fazla çekirdek var. İşin bir kısmı paralelleştirilebiliyor. Yapılacak işin bir kısmı. Veya bir veri işleyeceksiniz. Veriyi paralel işleyebiliyor.
+
+266
+00:42:19,507 --> 00:42:43,427
+Kendi içerisinde ayrı ayrı kollardan işleme imkanınız var. Yani bir fonksiyon çalışacak ama o fonksiyon birinci data için bir çalışsın, ondan sonra ikinci data için çalışsın diye bir şey yok. Bir taraftan aynı fonksiyon birinci datayı işlerken öbürü ikiyi, öbürü üçü, öbürü dördü paralel bir şekilde işleyebilir. Bunları yapmaya sağlayan yapılarla threadler diyoruz. Ve günümüz modern uygulamaları multi-thread yapıda çalışıyor.
+
+267
+00:42:43,795 --> 00:42:52,755
+Yani execution flow'u tek bir proses için düşünüyorum. Bakın şu bir proses. Bunun içerisinde execution flow birkaç parçaya bölünmektir.
+
+268
+00:42:54,596 --> 00:43:01,035
+Tek proses olduğu ihtimali var. Bir de çoklu prosesler var. Bunlar farklı tarih var. Onun için biraz önce multi-process dedim.
+
+269
+00:43:01,175 --> 00:43:05,596
+Multi-thread. Şu an single process üzerinde çoklu threadlerden bahsediyoruz.
+
+270
+00:43:06,612 --> 00:43:21,312
+O zaman aynı şeyler her bir thread içinde değişecek. Mesela biz proses için process control block PCB tutuyorsak, threadlerin de kendi içerisinde TCB dediğimiz thread control blockları var.
+
+271
+00:43:22,072 --> 00:43:31,152
+Burada amaç filter aktiviteyi yükseltmek, daha hızlı bir şekilde programların egzeket edilmesini sağlamak ve işlemci kullanımını arttırmak diyebiliriz.
+
+272
+00:43:34,324 --> 00:43:57,043
+Şimdi çok fazla proses üretmek bir çözüm mü çözüm? Yani biraz önce gösterdim işte bir opera için bir sürü proses olduğunu konuştuk. Ama birazcık pahalı bir çözüm olabiliyor yerine göre. Çünkü prosesler arası haberleşme olsun, prosesler arası senkronizasyon olsun bu tarz kavramlar.
+
+273
+00:43:57,588 --> 00:44:02,788
+Proses seviyesinde birazcık maliyetli ve baş edilmesi zaman zaman güç olabiliyor.
+
+274
+00:44:03,527 --> 00:44:09,807
+Bu olmasın diye prosesleri multi-thread olarak çalıştırmak daha uygun hale geldi gündüzde.
+
+275
+00:44:11,608 --> 00:44:15,887
+Peki, işletim sistemi açısından biraz böyle donanım tarafından ilerledik.
+
+276
+00:44:16,047 --> 00:44:18,987
+İşletim sistemi açısından bu prosesin ne yapılması lazım?
+
+277
+00:44:19,927 --> 00:44:22,248
+Schedule edilmesi, planlanması lazım.
+
+278
+00:44:23,688 --> 00:44:24,987
+Amaç burada şu arkadaşlar.
+
+279
+00:44:26,420 --> 00:44:35,220
+İlk baştaki düşüncemiz şu olsun. Bir işlemci çekirdeğimiz var. Bu işlemci çekirdeğimizi birden fazla proses kullanacak.
+
+280
+00:44:35,380 --> 00:44:42,820
+Acaba hangi sırayla işletim sistemi bunları kullandırsın? Bu işlemciyi kullandırsın.
+
+281
+00:44:43,680 --> 00:44:49,340
+Burada bir kriterlerin belirlenmesi lazım, zamanlama algoritmalarının belirlenmesi lazım gibi bazı işler var.
+
+282
+00:44:49,844 --> 00:44:53,923
+Şöyle düşünün, markete gidiyorsunuz, bir tane kasa var, en tane müşteri var.
+
+283
+00:44:55,544 --> 00:44:59,104
+Hangi sırayla kasaya müşterileri alırsınız?
+
+284
+00:45:01,364 --> 00:45:04,224
+Hangi sıraya göre alacaksanız bunun kriteri ne olacak?
+
+285
+00:45:05,523 --> 00:45:07,144
+Mesela sizce kriter ne olabilir?
+
+286
+00:45:09,284 --> 00:45:11,523
+Bir müşteri olarak en önemli kriteri nedir?
+
+287
+00:45:16,275 --> 00:45:20,996
+İlk gelene adaletli davranırım diyorsun. Adalet benim için birinci kriterdir. Başka ne olabilir?
+
+288
+00:45:20,996 --> 00:45:22,996
+Az eşyası olanı.
+
+289
+00:45:22,996 --> 00:45:29,476
+Arkadaşımıza diyor ki az eşyası olanı öne alın. Senin kriterin ne olacak o zaman? Onu yaparak ne sağlıyorsun?
+
+290
+00:45:29,476 --> 00:45:33,476
+Yani az olanı şey yaptın.
+
+291
+00:45:33,476 --> 00:45:35,076
+Yolumaya.
+
+292
+00:45:35,076 --> 00:45:36,076
+Efendim?
+
+293
+00:45:36,076 --> 00:45:36,619
+Yolumaya.
+
+294
+00:45:36,851 --> 00:45:58,711
+Yığınmayı, yani bekleme süresini, oradaki insanların beklemesini azaltıyorsun. Yani ortalama bekleme süresi dediğimiz oradaki kalabalık olacak. Bazılarını önden çıkartıyorsun, gönderiyorsun. Bu da ne yapıyor? Kişi başına düşen bekleme sayısı ortalamada azalıyor. Mesela herkesin ilk geleni aldığımızda bir bekleme süresi var.
+
+295
+00:45:59,284 --> 00:46:05,824
+İşi daha az olan kişinin önden alınması bu bekleme süresinin ortalamasını düşürecektir. Ortalamaya bak.
+
+296
+00:46:07,824 --> 00:46:08,204
+Efendim?
+
+297
+00:46:12,052 --> 00:46:34,312
+Evet, ilk gelen eşyasının en fazla olduğu durumu düşündüğünüzde arkadakiler daha az eşyaya sahipse ne oluyor? Bu ortalama bekleme süresi herkes için artıyor. Ama durum tam tersindeyse ve baştaki kişinin eşyası daha azsa diğer kişiler daha az bekleyip ortalama bekleme süresi azaltıyor. Bu tarz kriterlerle bir planlama, scheduling yapılması lazım.
+
+298
+00:46:35,219 --> 00:47:01,719
+Process Scheduler aslında bir program içerisinde bir servis işletim sisteminin servislerinden bir, yani komponentlerinden bir tanesi. Ne yapıyor? Execution olabilecek prosesler içerisinden uygun olanlardan bir tanesini seçiyor, bir işlemci yapıyor. Eğer birden fazla işlemcimiz varsa işlemci sayısı kadar bir seçim gerçekleştirip atama gerçekleşecek. Bunu ne zaman yapacak? İşte Scheduling Q üzerindeki proseslerden.
+
+299
+00:47:02,547 --> 00:47:05,947
+Bir tanesini seçmeyle yapacak. Oradan bir seçim yaparak yapacak.
+
+300
+00:47:07,248 --> 00:47:11,987
+Ve bununla alakalı kuyruklar, scheduling kuyrukları dediğimiz.
+
+301
+00:47:13,007 --> 00:47:17,208
+Bunlar ne olabilir? Eğer bir sistemse buna job queue diyebilirsiniz.
+
+302
+00:47:18,128 --> 00:47:22,847
+Hani batch sistemler dedik. Batch sistemde o zaman ne var? Arkadaşın dediği gibi sistem var.
+
+303
+00:47:23,467 --> 00:47:25,648
+İlk gelen ilk hizmetini alacak, çıkıp gidecek.
+
+304
+00:47:26,567 --> 00:47:28,547
+Veya günümüz sistemlerinde işte...
+
+305
+00:47:29,184 --> 00:47:43,764
+Kişisel bilgisayarlar, mobil sistemler falan o zaman farklı bir kuyrukumuz var. Bu Jocq, sistemdeki bütün proseslerin olduğu kuyruk diyebiliriz. Bunun bilgisinin saklanması lazım.
+
+306
+00:47:44,444 --> 00:47:54,784
+Rediq, biraz önce RediState'i görmüştük. Bütün prosesler sistemde tutuluyor ama bütün prosesler işlemcide koşturulmaya, egzektif edilmeye hazır değil.
+
+307
+00:47:55,231 --> 00:48:19,632
+aday değil. Örneğin IO yapan olabilir, başka şeyler olabilir. Bunlardan execute edilmeye hazır, bellek içerisinde bulunan ve RedQ'da olanları seçmek için kullanılan bir kuyruk. Sonra device'ların da kendi içerisinde kuyrukları olabiliyor. Örneğin bir proses, input output için yazıcı olabilir veya başka şey olabilir. Bir işlem yapacak.
+
+308
+00:48:20,851 --> 00:48:25,952
+Ama orada da, örneğin yazıcıda birden fazla yazdırma işleminiz var. Orada bir kuyruk tutulması lazım.
+
+309
+00:48:26,032 --> 00:48:32,092
+Mesela yazıcıdaki kuyruk, first time, first time, first service, CPU zamanıyla arkadaşımızın dediği şekilde.
+
+310
+00:48:32,751 --> 00:48:36,952
+Şimdi onu öne al, sona al, orada bir planlama yapılamıyor. Oradaki bellek miktarı çok az.
+
+311
+00:48:39,192 --> 00:48:45,932
+Bu prosesler, arkadaşlar, buradaki farklı kuyruklar içerisinde dönüp dolaşıp gezip duruyor.
+
+312
+00:48:46,804 --> 00:48:58,804
+çalışacaksa, işlemciye girecekse, Redicue'ya. Ondan sonra bir device kullanacaksa, device kuyusuna. Genellikle bunun waiting diyoruz ama device kuyuda da durma ihtimali var.
+
+313
+00:48:58,804 --> 00:49:13,804
+İşletim sistemi bu kuyruklardan bir tanesini alıp, işte bir karar verip işlemciye atayacak. Peki bir prosesin Linux sisteminde nasıl representation yapıldığını nasıl göreceğiz? Yani sonuçta bir bir programsa
+
+314
+00:49:14,068 --> 00:49:18,028
+C'nin içerisinde test struct diye bir struct var arkadaşlar.
+
+315
+00:49:18,887 --> 00:49:27,188
+Process'in ID'sini, PIDT dediğimiz, aslında bir integer sayı ama bu şekilde özellikleri değişken etmiş.
+
+316
+00:49:27,987 --> 00:49:37,688
+State bilgisini, ne kadar time slice verilmiş, yani bir proses, işlemcilerine kadar kalsın, 3 saniye mi, 2 saniye mi, 1 saniye mi, neyse bunun bilgisi.
+
+317
+00:49:38,483 --> 00:49:59,423
+Bu prosesin parent'ı olan proses kim? Birazdan göreceğiz onu. Prosesler de sonuçta bir şekilde başka prosesler yardımıyla oluşturuluyor. İşletim sistemi açıldı. Ben ne yapıyorum? Bir comment line'dan veya tıklayarak bir başka prosesi kullanarak proses oluşturuyorum. Bunun parent'ine. Acaba bu prosesin çocukları var mı? Onu.
+
+318
+00:50:00,000 --> 00:50:11,879
+Proses'e atanmış dosyalar var mı? Bu dosyalardan kastımız illa ki işte txt gibi, dot gibi dosyalar değil. Örneğin bir network kullanıyorsunuz. Orada da bir file descriptör kullanıyor. Bunların bilgisini.
+
+319
+00:50:13,399 --> 00:50:20,539
+Main memory ile alakalı address space'ın bilgisini bunları tutuyor. Ve bunlar böyle bir linked list şeklinde.
+
+320
+00:50:26,835 --> 00:50:38,576
+Execute eden bir prosesin bu bilgisi var. Bir sonraki proses de buna bağlanıyor. Yani bir link listinde bu şekilde bir liste halinde bu test traktı saklanıyor.
+
+321
+00:50:44,083 --> 00:50:48,923
+Peki, process scheduling dedik, şu aynı mı gelmiş ya?
+
+322
+00:50:52,371 --> 00:51:15,591
+Mesela burada RediQ'umuz ve farklı device kuyrukları. Şimdi RediQ dediğim şey işlemciyi kullanmak üzere proseslerin tutulduğu bir kuyruk dedik. Onu orada bekleyen. Bu kuyruğun bir başında bir şey var. Mesela önce PCB7 saklanıyor burada. İşte PCB7 dışında registerlar, program counterler bunun detayını burada çizmemiş.
+
+323
+00:51:16,371 --> 00:51:38,451
+Önce kuyrukta PCB7 var. Bir işlemci kullanımı olacağında diyor ki, head kimi gösteriyor? Register gösteriyor. Şey, yedinci bir prosesi gösteriyor diyelim. Yani buna da P proses 7 diyelim. Ne olacak? Proses 7 işlemciyi alacak. Ondan sonra bunun head kısmı PCB2'yi gösterir. Yeni bir proses geldiyse bu kuyruğa, bu LinkedIn liste bir şey daha ekleniyor kuyruk muanlığıyla.
+
+324
+00:51:39,092 --> 00:52:05,172
+Kuyruğun başı ve sonu ayrı şekilde RediQ'da saklanabiliyor. Bu bir şey, bir yapım. Sonra sizin bir manyetik teybiniz var. Bu manyetik teyp ile alakalı herhangi bir proses atanmamışsa bakın bu boş olabilir. Manyetik teybin başka bir şeyi var, o da boş. Diskiniz var. Bu disk üzerinde böyle proseslerin işlemleri var. İşte diske okuma yazma yapacak prosesiniz. İşte PCB 3.
+
+325
+00:52:05,583 --> 00:52:29,703
+kullanacakmış, 14 kullanacakmış, 6 kullanacakmış. Burada ciddi bir first come first forward buyruğunun olması gerekebilir. İşte bu sırayla tutuluyor. Sonra bir başka terminalimiz var. İşte aslında terminal dediğimizde şey bu comment front gibi düşünebilirsiniz. Sadece PCB 5 yani 5. proses orada kullanılan adı verir. Böyle yapılarla bu bilgiler saklanıyor.
+
+326
+00:52:32,340 --> 00:52:35,920
+Peki, şu durum geçişini biraz daha detaylandıralım dersek.
+
+327
+00:52:36,740 --> 00:52:40,360
+ReadyQ'ya bir proses hangi durumlardan gelebiliyordu?
+
+328
+00:52:40,360 --> 00:52:43,280
+New vardı. Şöyle geriye geliştirecek olursak.
+
+329
+00:52:44,800 --> 00:52:51,900
+Ya New'den geliyordu şuraya ya da Running durumdan, Interrupt'la veya Dolaylı Yoldan, Waiting durumundan.
+
+330
+00:52:52,240 --> 00:52:53,700
+Yani üç farklı geliş var.
+
+331
+00:52:57,780 --> 00:53:03,720
+Aslında burada üçüncü durumu söylememiş ama üçüncü durum şu yolların yani şurada iki farklı durum, şurada da bir farklı durum.
+
+332
+00:53:04,900 --> 00:53:09,280
+ReadyQ'ya geldiyse gideceği yer garanti işlemci. Bunda bir sıkıntı yok.
+
+333
+00:53:10,220 --> 00:53:16,079
+İşlemciden tamamen çıkıp terminate edebilir, ayrılabilir. İşlemciden başka şekiller de çıkabilir.
+
+334
+00:53:16,180 --> 00:53:24,019
+Bir IO request'i olduğunda IOQ'ya girecek. Örneğin yazıcıya gidecek ama yazıcı da farklı doğrudan size atamıyor.
+
+335
+00:53:24,019 --> 00:53:25,620
+Belli bir kuyruğa girmeniz gerekir.
+
+336
+00:53:25,940 --> 00:53:51,660
+Buradaki iş bittikten sonra tekrar RediQ'ya geliyoruz. Bakın en çok yapılan hata şu. Sınavda soruyoruz. Bir proses işletimi yarıda kesildi, tamamlandı değil, yarıda kesildi hangi duruma gelebilir? Yani waiting duruma gidebilir bir IO nedeniyle veya doğrudan zaman, işte kendisine atanan zamanda olmuştur doğrudan RediQ durumuna gelebilir.
+
+337
+00:53:52,019 --> 00:53:59,820
+Running durumundan mesela waiting'e geçtiyse waiting durumdan kesinlikle running durumuna dönemiyor. Şurada olduğu gibi.
+
+338
+00:54:03,219 --> 00:54:09,119
+Önce running'den waking'e, waking'den ready'e, ready'den tekrar running'e sıra gelecek.
+
+339
+00:54:12,019 --> 00:54:14,859
+Time slice'ınız expired olduysa bakın.
+
+340
+00:54:15,799 --> 00:54:22,179
+Yani size, hadi ben sana işlemciyi 3 saniye kullan, 5 saniye kullan bir süre verdim diyorsa prosesinize,
+
+341
+00:54:22,779 --> 00:54:26,159
+o zaman hiç şey olmadan belli bir süre bekleyeceksiniz.
+
+342
+00:54:26,259 --> 00:54:28,659
+O bekleme süresinin sonunda tekrar revivire gireceksiniz.
+
+343
+00:54:29,684 --> 00:54:55,724
+Bir fork at child, fork ne demek? Çatal demek. Bir proses çalışıyor, o prosesten bir çocuk proses oluşturuyor. Birazdan ona geleceğiz. Child'ın egzekül edilmesiyle alakalı bir işlem gerçekleşecek. Burada da bir bekleme meydana gelebilir. Bir interrupt'un oluşması söz konusu. O interrupt oluşana kadar, örneğin okuma yazma yapacaksınız. O zaten şuradaydı.
+
+344
+00:54:57,523 --> 00:55:05,384
+Bir butona basacaksın mesela. Biraz da gömülü sistem açısından değilim. Çünkü şu anki bilgisayarlarda internet çok böyle örnek dendirilemediği şekilde.
+
+345
+00:55:05,940 --> 00:55:30,740
+Bir butona basıyorsunuz. O buton ne yapıyor? Gidiyor bir yerden bir bilgi okuyor. Ondan sonra işlem devam ediyor. Veya bir ani bir sıcaklık kontrol eden bir şey var. Sıcaklık değişti. Sıcaklığın değişmesiyle yapılacak bir işlem var. O bir interrupt sonuçta bir fonksiyon çalışacak. O fonksiyon oluşana kadar basit bir bekleme, yani az da basit bir bekleme gerçekleşecek. Bu durumlardan, bu durumlar bittiğinde hepsinde arkadaşlar gideceğimiz durum Ready-Q durum.
+
+346
+00:55:32,532 --> 00:55:39,572
+Şimdi konuştuğum elini kapatma, duyamıyorum ve buraya da ses net gelmiyor.
+
+347
+00:55:44,755 --> 00:56:12,115
+Şu başka bir ihtimal, şu başka bir ihtimal. Yani IO yapma gereği, sonuçta bir şeyi okuma yapıyorsun, yazma yapıyorsun, disk veya herhangi bir yere. Burada bir interrupt meydana gelebilir. Şuradaki başka bir interrupt. Yani IO yapmak üzere, input output yapmak üzere gelen interrupt başkadır. Ama mesela dedim ya, sıcaklık aniden düştü, sen de ısıtıcıyı çalıştıracaksın. Isıtıcıyı çalıştırmak için bir kod yazdın.
+
+348
+00:56:12,496 --> 00:56:16,215
+O kod, interrupt ile çalışacak bir kod. O da başka bir interrupt.
+
+349
+00:56:18,775 --> 00:56:27,596
+Şimdi schedulerlar kendi içinde bir başka açıdan burada ikiye bölünmüş. Aslında üçe de bölünen var.
+
+350
+00:56:29,056 --> 00:56:34,536
+Short term scheduler, kısa vadeli scheduler dediğim aslında bu CPU scheduler.
+
+351
+00:56:36,019 --> 00:56:48,019
+Şu anki prosesler içerisinden acaba işlemciyi hangi proses kullanılabilir bunun belirlenmesi için kullanılan scheduler'a short term scheduler diyoruz.
+
+352
+00:56:48,019 --> 00:56:59,692
+Diğer adı CPU scheduler. Bu çok hızlı çalışan bir şey. Çünkü bir işlemi alacak, bir proses alacak, işlemciye atacak, sonra diğerini çıkaracak, öbürünü koyacak.
+
+353
+00:56:59,987 --> 00:57:26,187
+milisaniyeler cinsinden çalışması ve sıklıkla çağrılması lazım. Bazı sistemlerde tek scheduler budur. Yani her durumda diğerleri olmaz. Bazı sistemlerde tek budur. Çünkü çoğu bilgisayar sistemi illaki işlemci kullanmak üzerine tasarlandı. Dolayısıyla birçok sistemde sadece bunu görürsünüz. Sizin cevaplarınız var.
+
+354
+00:57:27,507 --> 00:57:47,687
+Hangi proses ReadyQ'ya getirilecek? Yani bu birincisi ReadyQ'dan CPU seçmek üzere yapılmıştır planlama. Bir de ReadyQ'ya hangi proseslerin getirileceğiyle alakalı bir başka planlama yapmamız gerekiyor. Buna da long term denir.
+
+355
+00:57:48,467 --> 00:57:56,067
+Çünkü bir adem de dedik ya, bellekten bir prosesi alıp işlemciye getirmek, o arada bir bekleme süresi, bir yerde bunu tutmak lazım.
+
+356
+00:57:56,907 --> 00:58:00,867
+İşte o ilk tutulacak olanlar, CPU'ya gelecek olanlar RadioQ'dan gelecek.
+
+357
+00:58:01,427 --> 00:58:24,331
+RediQ'nun içerisinden bir şey seçmek için short term scheduler. Ama RediQ'ya gelecek olan ID processleri, diğer processleri tutmak için de long term scheduler çağrılıyor. Bu da işte saniyeler veya dakikalarla çağrılması gereken, görece olarak daha şey olan bir yapı. Bu long term scheduler...
+
+358
+00:58:24,820 --> 00:58:33,060
+Multi Programming seviyesini kontrol eden, hatta gerektiğinde Multi Programming seviyesini düşüren bir yapıya sahip.
+
+359
+00:58:33,880 --> 00:58:38,520
+Bu şu demek, bilgisayarında 500 tane program olun.
+
+360
+00:58:39,620 --> 00:58:42,700
+Siz bunların 500 tanesini her zaman çalıştırmak zorunda değilsiniz.
+
+361
+00:58:43,443 --> 00:58:59,083
+Zaman zaman işte bu seviye 500'e yaklaşır. Zaman zaman 500'den mesela diyelim ki alt limitimizde 100 olsun. Bu 100 ile 500 arasında gezer. Belki 500'ü hiçbir zaman tamamen görmeyecek. Yani bütün prosesler illa o anda çalışacak diye bir şey yok.
+
+362
+00:58:59,956 --> 00:59:20,616
+İşte bu multiprogramming seviyesi bunu kontrol etmekle alakalı. Long-term scheduler yapısı, servisi bunu kontrol etmekle alakalı. Bunun bir dezavantajı ve avantajı var. Aslında burada bir tam trade-off mantığı var. İleride bellek yönetimi kısmında buraya tekrar geri dönüp bunu değerlendireceğiz, konuşacağız.
+
+363
+00:59:27,315 --> 00:59:30,915
+I.O. bağımlı prosesler, CPU bağımlı prosesler.
+
+364
+00:59:32,635 --> 00:59:41,715
+I.O. bağımlı proses şu, işlemciye prosesi koyuyorsunuz, birazcık çalışıyor, hemen I.O. yapmaya ihtiyacı diyor ve
+
+365
+00:59:42,275 --> 00:59:47,315
+computation yapmaktan daha fazla I.O. yapma ihtiyacı olan bir proses karşınızda girdi.
+
+366
+00:59:47,315 --> 00:59:52,315
+Şimdi o zaman şöyle bir durum var, işlemciye girdi, hemen çıktı, I.O.'ya gitti.
+
+367
+00:59:52,659 --> 01:00:18,599
+O zaman işlemci çok fazla boşta durma ihtimali var değil mi? Bunu tam tersinden düşünelim. Çok az I.O. yapıyor, çok fazla işlemci kullanıyor. Bu da CPU bound proses. Çok fazla kompüte işe. Örneğin hazır veriminiz var, belleği almışsınız, başka bir yerden I.O. ihtiyacınız yok. Onun üzerinde işte bir sıralama gibi veya çok yüksek karmaşıklıklı algoritmanın çalıştırılması gibi işlem yapacak CPU bound proses oluyor.
+
+368
+01:00:20,275 --> 01:00:45,315
+Şimdi işletim sistemi özellikle long term scheduler ve yerine göre short term scheduler bir karar vermesi lazım. Ben kuyruklara belli prosesleri alacağım ama neye göre alayım? Çok fazla IO bound prosesi aldınız, işlemciyi boş bırakırsınız. IO'lar bu sefer şişmeye başlıyor. Çok fazla CPU bound alırsınız, bu sefer işlemci önündeki Redicure dolar.
+
+369
+01:00:45,844 --> 01:01:05,003
+diğer IOTU'lar boş kalır. Bunun balans edilmesi, denge edilmesi için process mix dediğimiz bir kısmını şeylerden, IOTU bantlardan, bir kısmını CPU bantlardan alması gerekir. Bunu ilk yapacak olan scheduler da long term scheduler.
+
+370
+01:01:05,619 --> 01:01:32,920
+Peki bunun bilgisini nereden tutacak? Hani hangi proses ben şu kadar IO yapacağım, hangi proses ben bu kadar CPU kullanacağım diye bir şey yok. Bunu da istatistiğe dayalı yapıyoruz. Şu ana kadar ki diyor bu bilgisayarda çalışan işte şu tarz prosesler şu kadar IO ihtiyacı duymuş. Çünkü yürütülecek komutunun ne olacağını bilmiyor. Yürüttüğü komutu bilir işleti sistem. Bununla alakalı istatistikler tutarak geleceğe yönelik tahminine dayalı şeyler yapan servisleri var.
+
+371
+01:01:33,360 --> 01:01:35,119
+İşler yapan servistleri var diyebiliriz.
+
+372
+01:01:36,599 --> 01:01:39,700
+Buna bir de midterm scheduler ekleniyor.
+
+373
+01:01:40,860 --> 01:01:48,460
+Şimdi şu iobound seçme ve CPU bound seçme işi her zaman sağlıklı yürüyemeyebiliyor arkadaşlar.
+
+374
+01:01:49,500 --> 01:01:56,420
+Yanlış bir karar verdiyseniz, bu sonuçta dedik ya tahmine dayalı, yani istatistiğe dayalı bir şey olacak, tamamen tahmin de değil.
+
+375
+01:01:57,396 --> 01:02:02,596
+Burada yanlış karar verdiğiniz I.O. bantları arttırdığınız için veya CPU bantları arttırdığınız için.
+
+376
+01:02:03,396 --> 01:02:06,196
+Degree of programming seviyesi bozuluyor.
+
+377
+01:02:06,596 --> 01:02:10,196
+Ve bu kilitlenmelere diğer problemlere neden bakıyor?
+
+378
+01:02:10,196 --> 01:02:17,396
+Bu olmasın diye buraya bir orta seviye scheduling dediğimiz midterm scheduler eklenebiliyor.
+
+379
+01:02:18,164 --> 01:02:26,523
+Amaç şu midterm scheduler'da, gerektiği zaman multiprogramming seviyesini azaltmak, gerektiği zaman da arttırmak.
+
+380
+01:02:27,144 --> 01:02:30,043
+Şimdi burada sadece azaltmak için kullanılmış.
+
+381
+01:02:31,624 --> 01:02:34,603
+Ama burada yapılan iki tane slap operasyonu var.
+
+382
+01:02:35,103 --> 01:02:38,384
+İki operasyonun birisi arttırırken diğeri azaltıyor.
+
+383
+01:02:39,063 --> 01:02:39,963
+Burada şunu yapıyoruz.
+
+384
+01:02:41,983 --> 01:02:44,824
+Sizin bellekte bir prosesiniz var.
+
+385
+01:02:45,364 --> 01:02:59,443
+Yani çalışmak üzere hazır hale gelmiş bir şekilde exit edilmeye hazır. Gerektiğinde bunu, prosesin bir kısmını swap out yaparak bellekten çıkartıyorsunuz.
+
+386
+01:03:00,364 --> 01:03:06,364
+Swap out yaptığınızda bunun işlemci kullanma ihtimalini azaltıyorsunuz. O proses.
+
+387
+01:03:06,804 --> 01:03:30,544
+Diske gitti ama diske sonsuza kadar gitti. İleride getirilmek üzere gidiyor. Tamam mı? Buna swap out diyoruz. Bir kısmı egzeküt edilmiş, bir kısmı da egzeküt edilecek ama o kadar acil bir şey değil. Bunun çıkartılması, bellekten çıkartılması söz konusu. Tekrar ileride egzeküt işlemine devam etmesi için çıkartma işlemi yapıyor. Buna swap out diyoruz.
+
+388
+01:03:31,539 --> 01:03:39,820
+Bunu bellekten çıkar, disk'e yaz, gerektiğinde egzeküt edilmesi için disk'ten tekrar belleğe getir. Buna swapping istiyoruz.
+
+389
+01:03:41,340 --> 01:03:57,220
+Peki swapping nasıl olacak? Bunun tam tersi. Bellekte bir egzeküt edilmiş bir şey var, bir proses var. Bunu swapping yaparak tekrar ana belleğe getiriyoruz. Burada ekstra veri yapıları elbette kullanılıyor.
+
+390
+01:03:58,896 --> 01:04:05,796
+Şimdi şunu özetleyecek olursak, swap out işlemi, degree of programming seviyesini doğrudan azaltan bir yapı.
+
+391
+01:04:06,756 --> 01:04:11,476
+Swap in, önce arttıran, daha sonra dengeye getiren bir yapı da olur.
+
+392
+01:04:11,596 --> 01:04:18,316
+Çünkü kabul edelim ki sizin belleğinizde degree of programming seviyesi 100 olsun.
+
+393
+01:04:19,456 --> 01:04:25,175
+Bu 120, 140, 150 arttı, swap out yapa yapa bunu tekrar 100 seviyesine indiriyorsun.
+
+394
+01:04:26,068 --> 01:04:35,068
+Yeni processleri thread in yaptığında biraz artar gibi oluyor 110-120 diye ama o anda tekrar başka processleri thread out yapıp onu 100 seviyesinde tutabiliyoruz.
+
+395
+01:04:35,068 --> 01:04:44,068
+Tamamen şöyle bir referans durumunuz var. Bu artıyor, azalıyor, artıyor ama bir şekilde dengeli durması lazım.
+
+396
+01:04:44,068 --> 01:04:52,752
+Mid turn scheduler bu thread outlarla daha çok, thread in burada elbette çalışacak ama thread outlar gereksiz olan processleri
+
+397
+01:04:52,751 --> 01:05:02,672
+Bell'e yükleyip, Bell'e atıp bu dengeyi sağlamaya çalışıyor. Neredeki bozulan dengeyi? Long-Term Scheduler tarafından bozulacak dengeyi.
+
+398
+01:05:02,731 --> 01:05:13,612
+Veya Short-Term Scheduler'da aslında burada bir etken. Yanlış bir schedule algoritması yaptınız, CPU schedule ederken. CPU'dan prosesler gereksizliğine beklemeye başladı.
+
+399
+01:05:13,612 --> 01:05:19,612
+Biraz önce söyledik ya, ortalama bekleme süresi artar diye. Bu beklemelerden kaynaklı olarak.
+
+400
+01:05:20,083 --> 01:05:31,284
+Aşağıda yığılmalar başladı. O zaman midterm schedule devreye girip belleği rahatlatmak, işlemcideki diğer şeyleri rahatlatmak için the group programın seviyesini azaltabiliyor.
+
+401
+01:05:33,163 --> 01:05:35,443
+Şuna da bakalım. Ondan sonra ara vereceğim.
+
+402
+01:05:36,103 --> 01:05:41,284
+Şimdi mobil sistemler açısından baktığımızda şu anki kişisel bilgisayarlar gibi düşünebiliriz.
+
+403
+01:05:42,483 --> 01:05:50,663
+Prosesler çalıştırılabilir durumda oluyor veya suspended, işte bekletilmeye alınmış, askıya alınmış durumda olabiliyor.
+
+404
+01:05:51,403 --> 01:05:57,923
+Çünkü burada ne var? İşlemci bir kaynak, bellek bir kaynak ama bir diğer kaynak, mobil sistemlerde batarya.
+
+405
+01:05:58,675 --> 01:06:11,435
+Yani bu kadar farklı durumda prosesi bekletmek bile güç harcayacağı için onları askıya alıp, örneğin iOS sistemlerde background ve foreground sistemler diye ayrılmış.
+
+406
+01:06:12,355 --> 01:06:19,375
+Aynısı benzer işte Android'de falan da var. Background olanlar minimum güç harcayacak şekilde
+
+407
+01:06:21,108 --> 01:06:24,428
+organize edilmiş prosesler diyebiliriz.
+
+408
+01:06:24,428 --> 01:06:27,388
+Tabi diğer kaynakların da optimizasyonu söz konusu.
+
+409
+01:06:27,388 --> 01:06:30,988
+Yani yine belleyi optimize kullanacak, CPU'yu optimize kullanacak.
+
+410
+01:06:30,988 --> 01:06:33,468
+Ama burada ayrıca güç meselesi var.
+
+411
+01:06:33,468 --> 01:06:35,628
+Contact switch'e geleceğiz.
+
+412
+01:06:35,628 --> 01:06:37,668
+Ama 10 dakika ara verelim.
+
+413
+01:06:37,668 --> 01:06:43,508
+Saatimiz 10 geçiyor. 20 geçe görüşmek üzere.
+
+414
+01:18:19,315 --> 01:18:25,235
+İdris Hoca, online yazımda giriş yap. Link gönderilmez.
+
+415
+01:18:56,467 --> 01:18:57,507
+Maile gönderiyorum.
+
+416
+01:19:25,268 --> 01:19:26,247
+E-maili yolladım.
+
+417
+01:19:35,444 --> 01:19:37,963
+Evet, arkadaşlar, kaldığımız yerden devam edelim.
+
+418
+01:20:17,587 --> 01:20:29,587
+Şimdi şu bir protesten bir başta, procese switch süreci ile alakalı. Şurada bir şey var. Onu slide'da nedense ileri sayfalara gitmiş, onu geri aldım.
+
+419
+01:20:33,619 --> 01:20:39,239
+Şuradaki gerçekleşen olayı açıklıyor. Bakın buradaki sürece context switch diyoruz.
+
+420
+01:20:39,500 --> 01:20:48,039
+Context, içerik demek. Bir prosesin içeriğinin değiştirilmesi, switch edilmesi gibi düşünebilirsiniz.
+
+421
+01:20:49,139 --> 01:21:00,039
+Bir prosesten bir prosesde değişim gerçekleştiğinde sistem, işletim sistemi bu PCB'yi eski prosesinkini kaydedecek, yeni prosesi CPU'ya yükleyecek.
+
+422
+01:21:00,467 --> 01:21:11,307
+Buna context switch diyoruz. Bu iş için geçen süreye de, yani birini bir yere kaydettik, öbürünü geri getirdik, buna context switching diyoruz.
+
+423
+01:21:11,967 --> 01:21:18,868
+Bakın şuradaki idle dediğimiz şey boşta geçen süre context switching'e dahil ama tamamı değil.
+
+424
+01:21:19,887 --> 01:21:23,368
+Şunu kaydetmeye başladık. Arada boş süre geçti.
+
+425
+01:21:24,180 --> 01:21:42,000
+Öbürünü reload etmeye başladık. Execute işlemine geçmeye başladık. İşte şuradaki, aslında şuradaki süreçle beraber, sadece şurası değil, tamamına context switching time süresi diyoruz.
+
+426
+01:21:45,779 --> 01:22:06,099
+Bu tabii bir overhead midir? Evet, yani bir bekleme, bir ekstra, bir boş süreç oluyor. Bunun ne kadar az olursa o kadar CPU o kadar az boş kalacak demektir. CPU o kadar az boş kalırsa degree of multi-programming ve işte interaction o kadar iyi olacak demektir.
+
+427
+01:22:09,395 --> 01:22:24,655
+Context Switching ne zaman artar? Bir kere sizin PCB'niz veya işletim sistemiyle alakalı rutinleriniz, bu kopyalama ve yedekleme süresini ne kadar uzatırsa o kadar dolaylı olarak artacak demektir.
+
+428
+01:22:24,655 --> 01:22:28,655
+Yani şuradaki işler, şu SEV algoritması veya RELOOT algoritması.
+
+429
+01:22:29,203 --> 01:22:39,663
+yazılan kodlar veya işte o context switching'in kendi kapasitesi, process control blokun kendi kapasitesi ne kadar fazlasa bu artacak demektir.
+
+430
+01:22:41,144 --> 01:22:47,703
+Kısmen bu donanım desteğine bağlı bir süre gerektiriyor. Hızlı bir şekilde yedeklenmesi lazım.
+
+431
+01:22:48,843 --> 01:22:54,703
+Bu yedeklenmenin mekanizması bir örneğe dedik ya bu process control blokları.
+
+432
+01:22:55,796 --> 01:23:21,676
+Ana bellekte genellikle tutuluyor. Sizin işte prosesiniz için ayrılan bir bellek bölgesi var. Aynı onun gibi proses kontrol blokları da ana bellekte tutuluyor. İşletim sistemi tabii bunu kendisi saklıyor. Her bir prosesin kontrol bloku. Şurada söylemiştiklerdi. Aynı şurada olduğu gibi. Bu task track gibi saklanacak. Ama bazı donanımın destekleriyle
+
+433
+01:23:22,804 --> 01:23:47,443
+Register setleri kullanarak bu process control blokları registerler üzerinde saklanabilir. Register'ın avantajı ne? Bir kere işlemci içinde. Ayrıca bir belleğe gidip yedekleme şeyi yok. Daha hızlı çalışıyor yapısı gereği. Register seti varsa bu işe adanmış, işlemci içerisinde özel amaçlı registerler varsa orada process control blokları saklanabilir. Bunu söylemiş olalım.
+
+434
+01:23:49,171 --> 01:23:59,111
+Şu slide'ın bir öncesine aldım bunu. Aslında bir sonrasında da alabilirim de. Aynı şeyi farklı açılardan ifade etmiş. Şuraya tekrar geri geliyoruz.
+
+435
+01:24:01,211 --> 01:24:13,171
+Evet, prosesler üzerinde yapılacak operasyonlar. Şimdi işletim sistemi şu tarz operasyonları bir de sağlaması vermesi lazım, mümkün kılması lazım.
+
+436
+01:24:16,979 --> 01:24:24,099
+İmkan sağlayacak. Tamam ben çift tıklayarak proses oluşturuyorum da işte o çift tıklamayı yapmayı sağlayan bir başka proses.
+
+437
+01:24:24,659 --> 01:24:32,259
+Aynı şekilde proseslerin terminate edilmesi, sonlanmasıyla alakalı mekanizmayı sağlayacak ve buna benzer başka detay.
+
+438
+01:24:32,779 --> 01:24:40,979
+Şimdi bir proses nasıl oluşturulur? Yani ben programı yazdım derledim bir yerde executor olarak duruyor. Onu nasıl oluşturabilirim?
+
+439
+01:24:42,899 --> 01:25:09,739
+Ancak parent prosesler bir anne veya ebeveyn proses, children çocuk prosesi oluşturabiliyor. Ve bu sonuç olarak bir başka proses de oluşturabilir demek. Yani çocuklar da bir başka proses oluşturabilir. Doğal olarak burada ne var? Bir proses birini oluşturuyorsa o da diğerini oluşturuyorsa burada böyle bir ağaç gibi yapılanma karşımıza geliyor. Buna proses ağacı diyoruz. Tamam mı?
+
+440
+01:25:10,739 --> 01:25:17,739
+O zaman bizim ilk initial processimiz olması lazım değil mi? Her şeyi başlatan.
+
+441
+01:25:17,739 --> 01:25:29,739
+Yani işletim sistemi bootloader oldu, başlatıldı. Aslında orada bir init proses başlatılıyor. O init proses başladıktan sonra diğer işletim sistemi prosesleri başlıyor.
+
+442
+01:25:29,739 --> 01:25:37,547
+Başlayan proseslerden birisi de çift tıklayıp çalıştırmayı sağlayan veya komatlarından çalıştırmayı sağlayan proseslerden bir tanesi.
+
+443
+01:25:37,779 --> 01:25:41,420
+Siz de onun yardımıyla kendi kullanıcı proseslerinizi çalıştırabilirsiniz.
+
+444
+01:25:42,420 --> 01:25:44,899
+En kökte init var, sonra bunun çocukları var.
+
+445
+01:25:46,719 --> 01:25:53,199
+Genel olarak bu işlemler arkadaşlar, process ID'ler yönetiliyor, yürütülüyor.
+
+446
+01:25:54,119 --> 01:26:01,019
+Process ID ile bir prosesin öldürülmesi, oluşturulması veya onunla alakalı kaynakların kontrol edilmesi söz konusu olabilir.
+
+447
+01:26:01,019 --> 01:26:04,899
+Mesela kaynak paylaşımı açısından baktığımızda,
+
+448
+01:26:05,652 --> 01:26:13,192
+Parent ve Child'ın çocuk prosesler bütün kaynaklara erişebilme ihtimali var. Bu mümkün olabilir.
+
+449
+01:26:14,092 --> 01:26:17,471
+Bir çocuk işte Parent tarafından oluşturuldu. Bu bir ihtimal.
+
+450
+01:26:19,092 --> 01:26:25,032
+Çocuklar Parent'ın kaynaklarının bir alt kümesini paylaşabilir.
+
+451
+01:26:26,131 --> 01:26:48,051
+Çocuklar ve parentler herhangi bir kaynak paylaşmayabilir. Herkes kendi yoluna deyip yani o olabilir. Yani bu ihtimallere göre işletim sistemi farklı aksiyonlar alacak. Bunlar kaynak paylaşma opsiyonları. Execution açısından baktığımızda parent ve çocuk concurrent bir şekilde execution yapar. Şimdi concurrent ne demek?
+
+452
+01:26:50,112 --> 01:26:52,671
+Concurrent. Efendim?
+
+453
+01:26:54,387 --> 01:27:17,327
+Paralel bir şey arkadaşlar. Başka bir görüş olamaz. Şimdi burada şu kavramı iyi bilelim arkadaşlar. Tek bir işlemci çekirdeğimiz varsa bu tek bir işlemciyi belli bir zaman aralığında tek bir proses kullanacak demektir. Burada bir gerçek anlamda paralellik söz konusu olamaz. Mümkün değil. Yani işlemci bir tanemse bir tane proses kullanacak öbürü gerçek.
+
+454
+01:27:17,939 --> 01:27:24,359
+Zaman paylaşımı esasıyla ve bu zaman aralığında çok düşük nanosaniyeler veya minisaniyeler mertebesinde tutarak
+
+455
+01:27:24,359 --> 01:27:27,979
+proseslerden birini alıp birini çıkarıyoruz. Birini alıp birini çıkarıyoruz.
+
+456
+01:27:28,099 --> 01:27:34,559
+Sanki bir paralel işletim varmış gibi bir durum karşısında. Buna sanal paralelizm deniyor diyoruz.
+
+457
+01:27:35,419 --> 01:27:43,819
+Tek bir işlemcinin oldudur. Bu sanal paralelizm veya eş zamanlı çalışmanın bir diğer adı kelimesi Concured Execution.
+
+458
+01:27:44,692 --> 01:28:05,532
+Eşlemanlı çalışır. Eğer iki tane, üç tane, dört tane işlemci çekirdeğiniz varsa, yani egzekül edecek üniteniz varsa, o zaman gerçek anlamda paralelliği sağlarsınız. Veya birden fazla işlemciniz varsa gerçek anlamda paralellik sağlanabilir. Tek olduğunda sanal bir paralellik söz konusu olacak. Bu o kadar çok hızlı, context switch oluyor ki demektir.
+
+459
+01:28:05,971 --> 01:28:19,631
+Biz onun aradaki farkı görmüyoruz. Çünkü insanoğlunun algılayacağı, göz ve kulağın algılayacağı şey bir saniye ve üzerini gecikmeleri algılıyor. Bir saniyen altındaki gecikmeler, milisaniye, nanosaniye çok hissedilmiyor.
+
+460
+01:28:20,243 --> 01:28:36,583
+Hissedilmediği için o hızlı context switchingler sayesinde sanki bir paralellik varmış gibi görüyoruz. Düşünün şu bilgisayarda bir tane işlem yoktur. Bir yandan slide çalışıyor, bir yandan zoom çalışıyor, bir yandan benim sesim karşıya gidiyor. Bir sürü arkada çalışan prosesler var. Bunlar o kadar çok.
+
+461
+01:28:37,203 --> 01:28:59,003
+Switching oluyor ki işlemde biri girip biri çıkıyor. Yani tamamen ardışıl bir zaman diagramı düşünebilirsiniz. Yani bir Gantt diagramı çizecek olursak önce biri girdi, sonra diğeri girdi, sonra diğeri girdi. Hiç böyle örtüşme yok. Böyle bir zaman paylaşımı esasıyla çalıştığını görürüz. Bu çalışmanın eğer saatli bir şekilde yapılması için çok hızlı da birbiri arasında dönüşüm olması, iyi bir planlama yapılması lazım.
+
+462
+01:29:04,180 --> 01:29:28,420
+Hani p1, p2, p3, p100'e kadar arttırın. Sonuçta bunların hepsinin bir şekilde işlemciye girmesi lazım. Bu sefer p1 çok geride kalacak. Yani 100 bitecek de tekrar bana sıra gelecek diyene kadar baya bir sıkıntı var. İşte işletim sistemi bu concurrent execution'u gerek scheduler yaklaşımlarıyla veya diğer servislerle sağlaması lazım.
+
+463
+01:29:28,948 --> 01:29:36,507
+Tabi burada parent'ın çocuklar, çocuklarıyla eş zamanlı koşma opsiyonundan bahsediyoruz.
+
+464
+01:29:36,507 --> 01:29:44,547
+Parent'ın çocuk terminate edene kadar beklemesi söz konusu olabilir.
+
+465
+01:29:44,547 --> 01:29:49,908
+Şimdi ben bir parent prosesim. Parent'tan bir child oluşturdum.
+
+466
+01:29:50,292 --> 01:29:57,811
+Ben ölürsem çocuk da ölme ihtimali var veya ben terminate edersem çocuğun da terminate etme ihtimali var.
+
+467
+01:29:58,512 --> 01:29:59,392
+Çocuğu bekleyeyim.
+
+468
+01:30:00,292 --> 01:30:06,532
+Çünkü proseslerin biraz önce şurada veri yapısına baktığımızda her bir prosesin nesi vardı?
+
+469
+01:30:07,352 --> 01:30:08,932
+Parent prosesinin bilgisi vardı.
+
+470
+01:30:09,912 --> 01:30:13,432
+Parent çocuktan önce ölürse buraya ne yazılacak?
+
+471
+01:30:13,572 --> 01:30:14,012
+Mesele bu.
+
+472
+01:30:15,956 --> 01:30:30,735
+Parent'ın çocuktan önce öldüğü durum var mı? Var. Ona da ne diyoruz? Zombi veya Orton dediğimiz yetimli bir proses. Birazdan ona geleceğiz. Bunlar farklı opsiyonlar.
+
+473
+01:30:32,216 --> 01:30:38,376
+Peki önce proses nasıl oluşturulabilir? Tabii proses oluştuğunda da address space'imiz.
+
+474
+01:30:39,220 --> 01:30:45,260
+Ne olacak? Parent'ın address space'inin olduğu gibi kopyası bellekte başka bir yere gidiyor.
+
+475
+01:30:45,359 --> 01:30:53,060
+Yani sizin belleğinizde kabul edelim ki şöyle bir parent için yeriniz var. Bunun birebir kopyası şuraya alın.
+
+476
+01:30:54,060 --> 01:30:58,140
+E hocam şimdi ben kendi programımı çalıştırdım.
+
+477
+01:30:58,931 --> 01:31:06,931
+Benim parent prosesim benimle alakalı olmayan işte bir çalıştırma programı. Benim programım nasıl gidecek oraya yerleşecek? Bu böyle bir kopyasıysa diyebilirsiniz.
+
+478
+01:31:07,431 --> 01:31:13,931
+Ki gayet doğal bir sorudur. Örneğin bir X prosesi var. Prosesleri çalıştırmayı sağlayan proses olsun.
+
+479
+01:31:14,068 --> 01:31:40,667
+Prosesleri, yani belleğe yüklemekle şeyli bir proses var. Bu çalıştırmayı sağlıyor. O çalıştırmayı sağlayan prosesin kodu duplicate olacak diyor. Duplicate olursa benim programımın kodu ne olacak? İşte onun içerisinde bir ekstra bir kod parçasıyla, ekstra bir bölümle sizin prosesinizin, sizin programınızın kodu geliyor şu bellek uzayına yerleştiriliyor. Buna da program farklılaştırma, differentiation diyor.
+
+480
+01:31:41,140 --> 01:31:49,620
+Önce birebir duplikesi oluşuyor, sonra o içerik yenileniyor. Siz bir program çalıştırmaya veya bir proses oluşturmaya başladığınızda.
+
+481
+01:31:50,980 --> 01:31:58,420
+Önce bir duplikation oluyor, sonra kendi programını çocuk proses içerisine yüzüyor.
+
+482
+01:31:58,960 --> 01:32:01,940
+Şimdi o zaman iki aşamalı bir durum söz konusu.
+
+483
+01:32:02,860 --> 01:32:07,600
+Duplikate edecek bir şeye ihtiyaç var, bir de şu içeriği yükleme ile alakalı şey yapalım.
+
+484
+01:32:08,180 --> 01:32:30,740
+Unix sistemlerle bu iki aşamalı şeyi iki farklı sistem çağrısıyla sağlamış. Birincisi fork. Fork demek çatal demek biliyorsunuz. Bir execution flow'unuz var. Siz bir yerde fork sistem çağrısını da çağırarak bir çocuk proses oluşturuyorsunuz. Bu parentla aynı ama yeni bir proses oluşturur demektir.
+
+485
+01:32:35,891 --> 01:33:00,131
+Yani parent aynı, çocuk aynı. İşte sadece proses ve yer açmak için, işte yeni bir proses ID'si almak, bellekten yer almak için yapılan bir şart. İkinci aşama çocuk prosesin içeriğinin alınıp, yani şuradaki şeyin alınıp belleğe yüklenmesi. Onu da yapacak şey AGBAQ sistem şartesi. Bir fork gerçekleştirdikten sonra
+
+486
+01:33:00,692 --> 01:33:09,112
+Çocuğun programının içeriğinin bellek içerisinde replace edilmesi, yer değiştirmesi için yapılması gereken iki aşamalı çağrı.
+
+487
+01:33:09,771 --> 01:33:21,172
+Burayı anladık mı? Yani belleğim var, burada bir şeyler var, fork yaptım, bu bir şeylerin aynısının buraya kopyalanmasını sağladım.
+
+488
+01:33:21,792 --> 01:33:28,372
+Sonra diyorum ki ben kendi programın içeriğini buraya başka bir şekilde itteyeceğim. Bu da egidek tabı olacak.
+
+489
+01:33:30,771 --> 01:33:35,612
+Windows'da da process create miydi neydi? Birazdan gelecek bu. Böyle bir şey yapacağız.
+
+490
+01:33:36,711 --> 01:33:40,271
+Peki, bunu birazcık görsel olarak gösterelim.
+
+491
+01:33:41,652 --> 01:33:44,652
+Bir başlangıç prosesimiz var. Çalıştı.
+
+492
+01:33:44,891 --> 01:33:49,391
+Fork Sistem çağrısında, bu bir fonksiyon C'de var. Birazdan örnekleri var.
+
+493
+01:33:50,931 --> 01:33:57,351
+Çalıştırdığınızda bunun birebir kopyası child oluş. Ondan sonra onun içinden, child'ın içinden
+
+494
+01:33:57,747 --> 01:34:02,107
+e-gübeksil çalıştırdığınızda içeriğini değiştiriyorsunuz.
+
+495
+01:34:03,207 --> 01:34:09,287
+Çocuk ölene kadar parent proses bekliyor veya çocuk terminate edene kadar bekliyor.
+
+496
+01:34:09,967 --> 01:34:15,247
+Ondan sonra parent da işine, parent da işte terminate edene kadar devam edip gidiyor.
+
+497
+01:34:16,367 --> 01:34:20,728
+Şu beklemeyi sağlamadan parent'ı öldürürseniz iki farklı ihtimal var.
+
+498
+01:34:20,967 --> 01:34:23,728
+Birazdan gelecek birisi yetim proses, orkun dediğimiz.
+
+499
+01:34:24,500 --> 01:34:50,079
+Diğeri de şey, neydi o? Sportback, neydi o? Ha, zombi. Sportback diye bir türçeleştirilmiş. O, proses ihtimalleri olabilir. Bakın, basit bir şey. Şimdi burada, işletim sistemi bunu bu şekilde yapıyor da, işletim sisteminin içinde genel bir yapı vardır. Bir ana program, ana programın içerisinde bir fork sistem çağrısı.
+
+500
+01:34:50,707 --> 01:35:07,728
+O fork'un içerisinde de iki farklı ihtimal. Çünkü program olduğu gibi ne olacak? Kopyalanacak başka bir belirti. O zaman çocuğun içinde çocuk prosesinin kodunu değiştirecek exec sistem çağrısını kullanılması lazım. O da şu şekilde.
+
+501
+01:35:09,147 --> 01:35:16,807
+Fork sistem çağrısını kullandığımızda arkadaşlar, üç farklı ihtimal var. Bu bir integer değer dönüşü.
+
+502
+01:35:17,908 --> 01:35:22,408
+Bu sistem çağrısını kullanabilmeniz için şu kütüphaneye eklememiz lazım.
+
+503
+01:35:22,488 --> 01:35:27,667
+Unisef. Bir de SYS şunu da eklemek gerekiyor galiba.
+
+504
+01:35:28,988 --> 01:35:37,827
+Bunu eklediğinizde eğer negatif bir değer dönüyorsa, fork sistem çağrısı sistem tarafından reddedilmiştir, proses oluşturulamamıştır, olabilir.
+
+505
+01:35:38,887 --> 01:35:45,047
+Niye? The degree of programming olduğu bayağı bir tek seviyededir. İşletim sistemi buna izin vermeyebilir.
+
+506
+01:35:45,619 --> 01:35:51,299
+Veya başka bir kaynakla alakalı, bellekle alakalı sıkıntı vardır. İzin vermeyebilir. Her zaman ileride çalışacak diye bir şey yok.
+
+507
+01:35:52,119 --> 01:35:59,059
+Tabi bu kodlar, işte belki 30-40 yıl önceliğin mantığıyla çalışan kodlar için o zamanlar bunlar çok daha yaygınlı.
+
+508
+01:35:59,159 --> 01:36:05,839
+Şimdi deneseniz, fork'un geç yanıt, şey, olumsuz yanıt vermesi ihtimali şu an çok çok daha az.
+
+509
+01:36:06,439 --> 01:36:08,959
+Ama ihtimalli var mı? Var, onu birazdan söyleyeceğim.
+
+510
+01:36:14,100 --> 01:36:24,460
+Siz child prosesinin içerisindesiniz ve child prosesinin içerisinde exec sistem çağrısıyla alakalı programın içerisinin ne olacağını buraya yazıyorsunuz.
+
+511
+01:36:24,520 --> 01:36:35,660
+Örneğin burada demiş ki bin altındaki elesi buraya yükle. Siz de diyeceksiniz ki masa üstündeki benim işte bilmem ne programı dörtte dört toplayan C programımı yükle diyebiliyorsunuz. O exec yutu bu halin.
+
+512
+01:36:38,292 --> 01:36:42,552
+Program içeriği ne oluyor? Process, kontrol, şey, belleye yükleniyor.
+
+513
+01:36:43,252 --> 01:36:49,372
+Eğer bu da değilse, yani PID sıfırdan büyükse, o zaman o PID'de ne var biliyor musunuz arkadaşlar?
+
+514
+01:36:49,572 --> 01:36:52,592
+Çocuk prosesin PID'si var.
+
+515
+01:36:53,532 --> 01:37:03,752
+Yani sıfırsa, ana programın içerisinde, parent'in içerisinde sıfır görüyorsanız, siz çocuğun yapması gereken şeyleri ifade edeceksiniz.
+
+516
+01:37:04,340 --> 01:37:10,579
+Bu da değilse burası parent process. PID'nin içerisindeki değer de sizin çocuğunun halini.
+
+517
+01:37:12,579 --> 01:37:16,579
+Bakın bu bir prosedür. Bu prosedürün içerisinde diyorsunuz ki wait now.
+
+518
+01:37:17,699 --> 01:37:22,699
+Çocuk tamamlanan kadar parent'ın beklemesini sağlayabilir. Şuradaki şeyin kod halini gösteriyoruz.
+
+519
+01:37:23,639 --> 01:37:24,579
+En sonunda da çocuk...
+
+520
+01:37:25,203 --> 01:37:45,903
+Bu wait null işlemi tamamlandığında bu sonsuzluğu olmayacak. Çocuk çünkü şurada return 0 yaptığında çocuk kendi tarafında ne olacak? Program tamamlanacak. O tamamlanacak şu wait 0'dan kurtulacağız ve wait null'dan çocuğun tamamlandığını göstereceğiz. Ondan sonra da parent kendi return 0'ını devam ettirip programı tamamlayacak.
+
+521
+01:37:52,975 --> 01:38:04,015
+değiştirilmesi mümkün hale geliyor. Bakın burada da Windows üzerinde bu yaklaşım yapılmış. Windows içerisinde de neredeydi?
+
+522
+01:38:11,335 --> 01:38:19,015
+Create process. Create process sistem çaresiyle bir proses oluşturuluyor. Eğer ki bu
+
+523
+01:38:19,828 --> 01:38:28,388
+Sıfırdan farklı bir değer dönerse bu sefer child olacakmış. Child ile alakalı mesela burada ne yapıyor? Paint programını çalıştırıyor.
+
+524
+01:38:28,448 --> 01:38:36,528
+mspaint.exe, System Automatici Kılıkları altında bir program. Onu çalıştırıyor. Şurada ekstra parametreler falan dayanmış.
+
+525
+01:38:38,368 --> 01:38:45,208
+Bu çalışacak. Eğer şuradaki şey hatalıysa, işte create process fail etti.
+
+526
+01:38:46,644 --> 01:39:00,224
+Şurası da parentin çalışacaksın. İşte çocuk ölene kadar, çocuk işini bitirene kadar burayı bekle şeklinde. Daha sonra işte processlerin, threadlerin şeyini mesela. Bu da Windows'un temel process şeyi.
+
+527
+01:39:00,603 --> 01:39:13,703
+Tabi biz burada örneklerimizi gelecek hafta bunun da uygulaması var. C üzerinden kolay olsun diye işte Linux üzerinden veriyoruz. Şu şeyi iyi bilin arkadaşlar. Ben burada bir PID aldığımda
+
+528
+01:39:14,484 --> 01:39:39,684
+Birazdan diğer slide'larda da var. PID'ye sonuçta bir değer. Eğer başarılıysa sıfırdan büyük bir değer gelir. Örneğin 100 olur. Tamam mı? Şimdi bu 100 iki farklı şey içerisinde. Çünkü benim bir parent'ım var. Bir de child'ım var. Bu PID bir değişken ise PID hem burada tutuluyor hem de burada tutuluyor.
+
+529
+01:39:41,171 --> 01:40:06,291
+Parent'ın içerisinde çocuğun PID'si tutuluyor. Örneğin çocuk işte Child PID diyelim 100 tutuluyor. Child'ın içerisindeki bu değer 0 olarak görülecek. Sonuçta kod orada da burada da aynı olduğu için şuraya gelene kadar sadece Parent vardı. Ama bundan sonra, şu aşamadan sonra, pardon bundan sonra değil şu korku da alacağız.
+
+530
+01:40:08,115 --> 01:40:31,315
+Şu aşamadan sonra birbiriyle aynı iki tane kodunuz var. Bir tarafta PID'nin içerisinde sıfır değişkenini göreceksiniz. Diyeceksiniz, ha burası o zaman şey. PID'miz sıfırda, burası çocukla alakalı. Öbür tarafta da parent olan kısım olacak. Ve bu şekilde parent hangi işi yapacak, çocuk hangi işi yapacak bunu ifade edebiliyorsunuz. Burada anlaşılmayan bir şey var mı?
+
+531
+01:40:31,923 --> 01:40:51,243
+Biraz belki karışık gelebilir. Baya baya iki kollu bir durum sözsün. Böyle normal geliyorsunuz. Bir yerden sonra ikiye bölünür iş. Bunun bir tarafında işte PID eşittir. Mesela bu parent ise şurada da parent devam ediyorsa PID'de mesela 100'ü göreceğim. Burada da PID eşittir 0'ı göreceğim.
+
+532
+01:40:59,028 --> 01:41:19,708
+kod yazıyorum void f diyorum. Burada bir fork yazıyorum. Sonra f'i çağırıyorum. Şurayı kapattım. Main içinden de f fonksiyonunu çağırdım. Şimdi ne olur burada? Nasıl bu kod bu?
+
+533
+01:41:23,988 --> 01:41:49,088
+Rikörsif bir yapı var değil mi? Önce bir program vardı, bir proses vardı. Fork yaptım, iki oldu. Sonra fonksiyonu tekrar geri çağırdım. Şimdi iki olan şey kendi içinde, ikisi de kendi forkunu yapıyor, dört oluyor. Sonra o dört kendi içinden forklarımı yapacak. Sekiz olacak. Yani bir eksponansiyel.
+
+534
+01:41:49,811 --> 01:42:11,171
+Her aşamada ikiye katlana katlana, ikiyle çarpılarak giden bir fork. Buna ne deniyor arkadaşlar? Bunun şeydeki adı fork, bomb. Tabii bunu bir yerde işlediğim sistemi eğer korumalı mod yoksa ne yapar? Bunu engeller. Çok fazla proses oluştuğunda bir kere belleği dolduruyorsunuz.
+
+535
+01:42:11,475 --> 01:42:35,595
+degree of programming aşırı derecede artıyor. İşletim sisteminin bunu bir yerde engellemesi lazım. Eskiden engellenmediğinde şöyle şeyler oluyor. Bir server var. Bizim eski Yıldız Kampüsü'nde bir tane serverımız vardı. Öğrenciler bilgisayar kullanıyor. Team Clientler üzerinden. Herkesin kendi hesabı var. Kendi hesabından giriyor. 3 kişi, 5 kişi, artık kaç kişi de bir bilgisayarı kullanıyor server üzerinden.
+
+536
+01:42:36,148 --> 01:42:53,228
+Şimdi müzik bir öğrenci veya birisi şöyle bir şey yapabiliyor. Böyle bir kod yazdı. Bunu çalıştırdığında fork, bomb çalıştırıyor. Öbür kullanıcılar bilgisayarın yavaşladığını hatta sistemden kendine atıldığını görüyor. Şimdi bir proses, bir kullanıcı aşırı derecede proses oluşturuyor.
+
+537
+01:42:53,760 --> 01:43:15,564
+Bu belleği dolduruyor. Bellek doldurunca tabii sistem ne oluyor? Kilit durumuna, alarm durumuna geçiyor. Diğer kullanıcılar atılıyor. Tabii bu yetmiyor çünkü bu sonsuz bir çağrı. Hiçbir yerde durmayacak. Hani şeye kadar, bir körsüm çağrılar devam edecek, gidecek. Bütün bir bilgisayar yeniden başladığına kadar, reset atılana kadar böyle kilit durumuna geçebiliyordu. Böyle bir durum söz konusu olabilir. Onun için fork bomb...
+
+538
+01:43:15,956 --> 01:43:28,615
+Olduğu durumda sizin PID'iniz negatif bir değer alabilir, değil edebilir. İşletim sistemi buna izin vermeyebilir. O zaman da bu PID'nin sıfır veya daha büyük olması durumunun dışında bir şey görebilirsiniz.
+
+539
+01:43:30,376 --> 01:43:42,895
+Evet, şimdi klasik örnekler var. Bunun örneklerini gelecek hafta uygulamada Kaan Hocamız anlatacak. Ama ben şöyle bahsedeyim. En basit örnekleri. Genelde bununla alakalı C örnekleri çok internette de bulursunuz.
+
+540
+01:43:43,412 --> 01:43:52,292
+Bu program çalıştı. Şuraya kadar mesaj before fork diye bir mesajı görürüz. Bu bir tane yazılacak bir mesaj değil mi?
+
+541
+01:43:53,851 --> 01:44:01,931
+Fork ettikten sonra iki tane, bundan sonraki program iki parçaya ayırılacak ve birebir kopyası alınacağı için.
+
+542
+01:44:02,612 --> 01:44:08,511
+Yani şurada bir parent var, burada bir chart var. Forktan sonra işte bir print et.
+
+543
+01:44:09,076 --> 01:44:16,996
+Şurada da bir printf. İki tane şeyi görüyoruz. Ne olacak da iki defa görüyoruz. Message after fork, message after fork.
+
+544
+01:44:17,496 --> 01:44:26,435
+Mesela burada hiç wait falan yapmamışız. Çocuk önce ölebilir, terminate edebilir veya parent önce terminate edebilir. Bunu bilemeyiz.
+
+545
+01:44:26,435 --> 01:44:32,336
+Çünkü işletim sistemi ya çocuğu ya da parent'ı önce işlemciye koyabilir.
+
+546
+01:44:32,787 --> 01:44:50,867
+Önce işlemciye giren, önce işini bitecektir. Bu printf ile yarı da kesilmeyecek bir şey. Dolayısıyla ne oluyor? İkisinden bir tanesi önce bitecek, sonra diğeri bitecek ve bu şekilde yani belki çocuğun burada işte yetim olma veya işte zombi olma ihtimali var diyebiliriz. İki defa mesajın göreceğini unutmayalım.
+
+547
+01:44:52,207 --> 01:44:59,595
+Bu basit şey. Çok da tabii kullanılmaz. Buradaki prosedürü separate etmek için kullanacağız. Peki burada...
+
+548
+01:45:00,500 --> 01:45:09,259
+Proseslerin ID'lerine göre göre iş yapalım dersek o zaman bir ekstra şeye, fonksiyona, sistem çağrısına ihtiyacım var.
+
+549
+01:45:09,899 --> 01:45:14,359
+Get PID, bir diğeri de Get Parent PID.
+
+550
+01:45:15,719 --> 01:45:21,479
+Diyor ki, ben işte bir tane değişken tanımladım.
+
+551
+01:45:21,739 --> 01:45:24,439
+Get PID dediğimde şurada ekrana yazılacak olan şey,
+
+552
+01:45:25,043 --> 01:45:37,283
+Bu prosesin, yani şu an parent gibi, kendi id'sini ekrana bastıracak. Demek ki bu prosesin kendi id'si 2682. Bir yerde fork yapıyorum.
+
+553
+01:45:38,323 --> 01:45:42,484
+Fork yaptığında bu mesajın iki defa yazılacağını görüyorum. Çünkü bir yerde ilk zaman kullanmışım.
+
+554
+01:45:42,703 --> 01:45:51,064
+İşte fork result'ın sıfırdan eşitse, sıfırdan büyükse, sıfırdan küçükse durumlara bakın hiçbir şekilde burada yok. Doğrudan yazılmış.
+
+555
+01:45:53,140 --> 01:46:16,820
+Birincisinde ne yazacak arkadaşlar? GetPID fork result. Şimdi parent'ta neyi göreceğiz? Parent'ı yazacak olursak parent açısından. GetPID zaten şurada 26.82. 26.82'yi önce yazacak process sahibisi olarak. Fork result'ı ne yazabilir? Ya 26.83 yazabilir ya da başka bir şey yazabilir. O ne olduğunu bilmiyorsunuz.
+
+556
+01:46:18,963 --> 01:46:36,643
+Giyerç burada 26.83 demiş de çocuğun PID'sinin 26.83 olduğunu görüyoruz. Eğer ben parent'ın içindeysem, fork ettikten sonra ikiye bölündük, parent'ın içindeysem şu fork bizzatla sıfırdan büyük olduğu için çocuğumu görüyorum. 26.83.
+
+557
+01:46:44,851 --> 01:47:10,591
+printf execution. Tamam mı? Diğerinde neyi görürüz? Artık çocuğa geçtik. Çocuğun kendi PID'si kaç? 26.83. Peki bunun içerisinde fork result olacak mı? Olacak ama sıfır olarak. Çünkü şuradaki prosedürde ne diyordu? PID eğer sıfırsa çocuk içerisindesin. Ne yapacak bana burada? 26.83'ü önce yazıp bunun sonuna sıfır değerini yazacak.
+
+558
+01:47:12,148 --> 01:47:13,168
+Bir sorumuz var mı?
+
+559
+01:47:16,308 --> 01:47:17,968
+Tabi burada wave yapmıyoruz.
+
+560
+01:47:18,168 --> 01:47:20,428
+Doğrudan farklı, basit örnekler.
+
+561
+01:47:25,248 --> 01:47:26,248
+Burada neymiş?
+
+562
+01:47:26,508 --> 01:47:28,928
+İşte parent burada bir şey yapacak diyor PID ile.
+
+563
+01:47:29,068 --> 01:47:32,068
+İşte bakın burada 26, 27, 67 yazmış.
+
+564
+01:47:32,868 --> 01:47:34,208
+Şimdi burada fork yaptığında.
+
+565
+01:47:34,308 --> 01:47:39,548
+Şimdi fork yaptığında sıfır gelebilir, negatif bir şey gelebilir, pozitif bir şey gelebilir.
+
+566
+01:47:40,083 --> 01:48:07,043
+Diyor ki, if ne zaman içerisi doğru olur? Pozitif olduğunda sıfırdan büyük bir değer olur. Negatif değil. O zaman diyor ki, şurada parent olma ihtimali var. Yani burası parent'ın yapacağı şey, şurası da charge'ın yapacağı şey. Sıfır olma ihtimali. Burada da getpid, getpid demiş. Bunda ne yazacak? Bu getpid'de şunun aynısını yazacak. Eğer parent ise. 2767, 2767 yazdı.
+
+567
+01:48:07,488 --> 01:48:32,387
+Şurada da 27-68 yer. Şu ikisi yer değiştirebilir miydi? Değiştirebilirdi. Hangi proses, hangisi işlemciye önce girecek onu bilemez. Ya hocam işte çocuk doğduktan sonra belleğe yüklenene kadar işte parent girsin de önce yastığında öyle bir mantık olamaz mı? Evet olabilir, mantıklı. Ama sadece bu parent ve çocuk yok. Bunun dışında başka prosesler var.
+
+568
+01:48:32,832 --> 01:48:46,551
+parent'a sıra gelmeden 10 tane prosese sıra gelir. O 10 tane prosesten sonra önce çocuğa sıra gelir. Ondan sonra parent'a sıra gelir. Şu sıra şaşabilir. Ona dikkat edelim. Peki, exec ne işe yarayacak?
+
+569
+01:48:47,192 --> 01:48:58,171
+Exec arkadaşlar, işte bu şuradaki yaptığınız şu içeriği değiştirip kendi programınızı o bellek bölgesine yüklemek için kullanılan bir sistem çağrısı.
+
+570
+01:49:00,532 --> 01:49:21,572
+Sonra dediniz ki sizin programınız şuradaki elefs. Yani bu şekilde olmak zorunda değil, felan C kodunuzun veya bir Java kodunuzun executable hali. O executable dosyayı, executable şeyin yolunu ifade edelim, onun içeriği ne yapıyor? Bellek uzayını kopyalar. Artık orası da bir çocuk prosesi olarak kendi yoluna devam edecek demektir.
+
+571
+01:49:22,692 --> 01:49:26,712
+Linux'teki bu proses, şuraya bir bakayım, saatimiz kaç oldu?
+
+572
+01:49:27,956 --> 01:49:37,076
+10 dakikada devam edelim. Şu örnekler zaten size ayrıca uygulamada yapılacak arkadaşlar. Örneklerin hepsini göstermeyeceğim şimdi.
+
+573
+01:49:38,275 --> 01:49:49,016
+Linux'te bu işlem nasıl yapılıyor? PID'si 1 olan initial prosesle başlatılıyor. Şimdi bir bilgisayar açıldığında ne olması lazım? Bir kere birden fazla kullanıcı olabilir.
+
+574
+01:49:49,155 --> 01:49:55,235
+Veya kendiniz bir kullanıcısınız. En azından şifrenize girmeniz lazım değil mi? Login işlemini yapan bir tane proses var.
+
+575
+01:49:56,851 --> 01:50:05,171
+Sonra, KTHREAD diye böyle bir başka proses, SSHT diye bir başka proses var. Bunlar farklı servisleri.
+
+576
+01:50:05,171 --> 01:50:11,411
+Init başladığında bunları başladık. Login başladığında, sisteme login olduğunuz.
+
+577
+01:50:12,307 --> 01:50:18,548
+Klasik bir müşteriler vardır, bir comment line vardır. Karşınıza comment line gelir. Yani böyle bir masaüstü bilmem ne gelmez.
+
+578
+01:50:19,108 --> 01:50:27,028
+Masaüstü de gerçi zaten ayrı bir projesle, eski versiyonları değil. 5 dediğimiz bir proses karşılığında geliyor. O 5'in altından diğer prosesler koyuyor.
+
+579
+01:50:27,408 --> 01:50:34,847
+Böyle bir ağaç yapısı burada olduğu gibi oluşuyor. Peki prosesi oluşturmak için fork ve exec varmış.
+
+580
+01:50:35,248 --> 01:50:39,768
+Gerçi oluşturmak için fork, değiştirmek için exec. Terminate etmek için de
+
+581
+01:50:40,532 --> 01:50:49,811
+exit sistem çağrısı. Bunun comment line'daki karşılığı kill fonksiyonunu kullanır, öldürmeniz. Kill PID veriyorsunuz.
+
+582
+01:50:50,692 --> 01:50:55,112
+Exit'da da sistem çağrısı yoluyla. Comment line'daki komut sistem çağrısı.
+
+583
+01:50:56,572 --> 01:51:02,992
+Eğer siz prosesin sonunda exit sistem çağrısını kullanırsanız, prosesinizi öldürebiliyorsunuz.
+
+584
+01:51:05,716 --> 01:51:15,416
+Çocuktan parent process'in, while şeyine, sistem çağrısına bir status data gönderiyor. Yani siz ekstitin içerisinde bir şey yazabilirsiniz parametre olarak.
+
+585
+01:51:15,975 --> 01:51:24,655
+Şimdi C'yi gördüğünüzde biz en altta return 0 yazıyoruz. Bu 0 değerini comment line'a göndermek.
+
+586
+01:51:25,395 --> 01:51:28,576
+exit ile de programınızı tamamlayabilirsiniz.
+
+587
+01:51:28,735 --> 01:51:30,876
+exit 0 demek aynı şeye karşı gelecek.
+
+588
+01:51:30,996 --> 01:51:34,435
+Birisi sistem şarjı, birisi return value demektir.
+
+589
+01:51:35,456 --> 01:51:42,596
+Ama siz buradan exit 0 yerine 3, 5, 10 istediğiniz sayıyı döndürerek, bu döndürdüğünüz şey de şuradaki wait içerisine alarak,
+
+590
+01:51:43,775 --> 01:51:49,735
+çocuk yapması gereken işi sağlıklı bir şekilde yapmış mı, yapmamış mı bunu öğrenebiliyorsunuz parent tarafından.
+
+591
+01:51:51,315 --> 01:51:59,076
+Process'lerin kaynakları da bir şey terminate ettiğinde exit'la işletim sistemi tarafından ne oluyor? Deallocate edilebiliyor.
+
+592
+01:51:59,216 --> 01:52:03,676
+İşte size verilen mallotlar, başka şeyler sizden alınıyor. En azından belleyi geri alabiliyor.
+
+593
+01:52:03,775 --> 01:52:05,275
+Egit sistem çaresini gördüğünde.
+
+594
+01:52:07,416 --> 01:52:08,695
+Tabi burada başka bir ihtimal.
+
+595
+01:52:11,859 --> 01:52:38,720
+Çocuk prosesin abort sistem çağrısı ile egzekül ederek terminate edebilir. Burada da işte çocuğun başıboş kalması durumu şey. İhtimaller şunlardır. Çocuk kendisine ayrılmış olan kaynakları egzekül edebilir, açmış olabilir, çok fazla kullanmış olabilir. Çocuğa atanan görev artık gerekli değildir, lazım değildir.
+
+596
+01:52:40,948 --> 01:52:50,887
+Parent exit ediyordur ve işletim sistemi çocuğun kendini terminate etmeden çocuğun kendi çalışmasına devam etmesine izin vermiyor olabilir.
+
+597
+01:52:51,628 --> 01:52:54,028
+Abort sistem çağrısı ve sonucunda olabilecek şeyler.
+
+598
+01:52:54,188 --> 01:52:56,007
+Process terminate ederken olan şeyler bunlar.
+
+599
+01:52:58,148 --> 01:52:59,688
+Şimdi şunu da söyleyelim.
+
+600
+01:53:01,228 --> 01:53:07,788
+Bazı işletim sistemleri parent'ı terminate etmeden çocuğun öldürülmesine izin vermiyor doğal.
+
+601
+01:53:08,500 --> 01:53:19,180
+Ama bazıları da izin veriyor. Eğer bir process terminate ederse onun çocukları, ona ait olan çocuklar ancak terminate edebilir.
+
+602
+01:53:19,899 --> 01:53:35,980
+Buna cascading termination diyor. Çocukları, onların işte daha büyük alt çocukları falan bu ağaç üzerindeki bütün çocukların terminate etmesi ancak onun işte parent'ının terminate etmesiyle mümkün.
+
+603
+01:53:37,492 --> 01:53:39,172
+Bir diğer şey de şurada.
+
+604
+01:53:41,212 --> 01:53:49,172
+İşte bir parent'ın çocuklarının termination'ı beklemesi işlemini de wait sistem çağrısıyla sağlıyoruz.
+
+605
+01:53:49,172 --> 01:53:53,512
+Bunu yazmazsak, olasıl durumlar biraz önce söylediğim gibi.
+
+606
+01:53:53,612 --> 01:53:56,352
+Yani çocuk önce ölebilir, işte parent önce ölebilir.
+
+607
+01:53:56,512 --> 01:53:57,632
+O zaman bir şeyler karışabiliyor.
+
+608
+01:53:58,731 --> 01:54:02,212
+Bunun wait sistem çağrısıyla bir değişken tutarak,
+
+609
+01:54:04,083 --> 01:54:24,183
+Çocuğun e-gültü sistem çağrısına gelen değerini saklayabiliyorsunuz. Bakın burada niye amperesan kullanmış? Scan F'deki gibi. Çünkü bu değişkenin içerisinde bir şey yazılacak. Oradan e-gültüden üç mü gelecek? Ne bileyim bir strak gönderilebilir, başka bir şey gönderilebilir. Bir statüs değişken kullanıyorsunuz. Bunu burada tutuyorsunuz.
+
+610
+01:54:32,083 --> 01:54:52,423
+Parent'ı yoksa, yani Invoid fonksiyonunu kullanmayan bir durum yaptıysanız, bu prosese zombie process. Yani weight kullanmadınız, çocuk yaşıyor, babası, annesi, parent'ı yaşamıyor. O zaman bu durum bir zombie process.
+
+611
+01:54:55,903 --> 01:54:58,103
+Burada da şöyle bir ihtimal olabiliyor.
+
+612
+01:54:59,028 --> 01:55:24,968
+Şimdi çocuk başıboş kaldı. Tamam, domlu oldu, bir süre yaşayacak ama o zaman bu prosesin yapılmadan, terminate eden bir durum var. Parent öldü, çocuk yaşıyor. Bu proses işletim sistemindeki bir başka proses tarafından evlat edilmiliyor. Buna da orphan proses deniyor. Şimdi onun parent prosesi değiştirilmesi lazım.
+
+613
+01:55:26,163 --> 01:55:47,543
+Her bir prosesin kendi parent proses id'si saklanacak dedik ya, parent öldüyse o parent proses id'si boş bir şey olamaz. Olmayan bir prosesi de yazamayız. O zaman bu çocuk prosesi bir başka prosesin evlat edilmesi, orphan yapması ve o id'nin değiştirilmesi lazım. Bu iki kavramı da böyle bilelim.
+
+614
+01:55:49,619 --> 01:55:55,060
+Şimdi bir kavram kargaşası var. Şuraya gelmeden onu da anlatayım.
+
+615
+01:55:55,840 --> 01:55:57,579
+AddExit diye bir fonksiyonumuz var.
+
+616
+01:55:59,180 --> 01:56:10,980
+Bu AddExit çıkışta yapılması gereken, program tamamlandığında yapılması gereken şeyleri yapmanızı sağlayan bir aslında sistem çaresi gibi bir şey.
+
+617
+01:56:12,307 --> 01:56:17,427
+Şunu sağlıyorsunuz, siz program kapanacak, işte parent kapanacak veya çarp kapanacak.
+
+618
+01:56:18,228 --> 01:56:26,207
+Kapanırken açık olan dosyaların kapanması, işte veri tabanı bağlantısı varsa onun kesilmesi, işte bellek bölgesinin deadlockation yapılması.
+
+619
+01:56:26,207 --> 01:56:37,487
+Tabi burada şu exit sistem çağrısı çağrıldığında şu işlem gerçekleşmeden önce diyorsunuz ki bu parent prosesi, add exit yapılırken
+
+620
+01:56:38,100 --> 01:56:48,260
+Şuradaki fonksiyon pointer'ını söylüyoruz. Bu fonksiyon çağrısı ama bir fonksiyon pointer gibi. Sonra önce buradaki işlemler yapıyor. Daha sonra buradaki işlemlerin devam etmesi.
+
+621
+01:56:49,860 --> 01:56:59,440
+Bu at exit, exit'den farklı bir şey. Exit ne yapıyor? Bir parametre gönderiyor, bir değer gönderiyor, status bilgisi gönderiyor. Kime gönderiyor? Parent'e gönderiyor.
+
+622
+01:56:59,440 --> 01:57:03,980
+Tabi o parent da wait ile o gelen şeyi alması, elde etmesi lazım.
+
+623
+01:57:04,404 --> 01:57:21,404
+Bakın şurada örnek, terminat etmeyen bir çocuk. Diyor ki, parent işte fork yaptık, parent çalışmaya başladı. Parent işini bitirdikten sonra bu English 0 yapacak. Bunun English 0'ı kime gidecek?
+
+624
+01:57:28,051 --> 01:57:54,471
+Hayır, bu zaten kendi parent. Parent'ın parent'ına gidecek. Parent'ı da oluşturan bir proses var ya, bunun exit 0'ı parent'ın parent'ına gidecek. Aşağıdaki şeyde de getpid sürekli bahsediyor ve bir döngüye girmiş. Bakın bu döngü şu demek, sonsuza kadar hiçbir şey yapmadan bir tane bekleme demek. Şu başka bir şey, while bir başka bir şey.
+
+625
+01:57:56,212 --> 01:57:58,932
+Şu başka bir şeydir. Bu sonuçta kadar bekle.
+
+626
+01:58:01,772 --> 01:58:20,112
+Bakın şurada siz bir grep üzerinde, commentline üzerinde PS komutuyla çalışan şeyleri, zombileri de şey yap, vurgula dediğinizde hangi prosesin zombi olduğunu, hangi prosesin şey olduğunu burada görebiliyorsunuz.
+
+627
+01:58:20,112 --> 01:58:21,032
+PID'leriyle beraber.
+
+628
+01:58:27,667 --> 01:58:51,947
+Biraz sesle. Evet. Evet. Tamam. Burası şöyle. Fork eğer sıfırdan büyük bir değer verdiyse ne olacak? Bir kere true olacak ifin içerisi. True olduğu için
+
+629
+01:58:52,500 --> 01:59:16,420
+Child çalışacak. Pardon, sıfırdan büyük bir değer olduysa Child tarafına gideceksin. PID değeri gelecek aslında burada. Sıfır olduğunda da Child'ın olması gereken yer şey yapacaksınız. Yani şu şeydeki, şöyle söyleyelim. Şuradaki durum gibi. Yani sıfır olma, şunu geçin. Ya sıfır olacak ya da sıfırdan büyük bir şey olacak. Onu söylüyoruz.
+
+630
+01:59:20,948 --> 01:59:29,648
+Burada çalışan kod, eğer siz parent'ın içerisinde düştüyseniz, işte burada bir PID değeri, parent'ın kendi PID değerini görürsünüz.
+
+631
+01:59:30,548 --> 01:59:37,468
+Ve burada açık açık zaten parent'ı yazmışız. Burası çalıştıktan sonra, ilgili sistem çağrısında parent yok oluyor.
+
+632
+01:59:38,168 --> 01:59:42,408
+Ama child yaşamaya devam ediyor. Child burada bir zombi proses.
+
+633
+01:59:43,228 --> 01:59:46,408
+Eğer bir başka proses tarafından belli bir süre sonra...
+
+634
+01:59:46,868 --> 02:00:05,448
+Evlat dediğimizde Orkun proses olarak alınacak. Orkun, zombinin de bir özel hali diyebiliriz. Bu şekilde şurası devam edecek. Ama şu PID'li prosesin belli bir süre sonra bir daha PS yaparsanız, şu kodu bir daha çalıştırın, onun görünmediğini görürsünüz. Çalışmadığını görürsünüz.
+
+635
+02:00:14,003 --> 02:00:15,703
+Farklı örnekler yapacaksınız.
+
+636
+02:00:17,323 --> 02:00:19,063
+Şöyle söyleyebilirim.
+
+637
+02:00:20,163 --> 02:00:21,743
+Process wait ediyor.
+
+638
+02:00:23,523 --> 02:00:25,823
+Burada mesela bir wait yapılıyor.
+
+639
+02:00:26,723 --> 02:00:30,283
+Şurada da çocuk prosesler exit ediyor.
+
+640
+02:00:30,384 --> 02:00:33,483
+Exit ederken yukarıya 100, 101, 102 diye değerler ediyor.
+
+641
+02:00:33,483 --> 02:00:39,323
+Hangisi önce exit ederse o şuradaki wait sistem çağrısına.
+
+642
+02:00:39,667 --> 02:01:02,447
+Hangi çocuğun exit ettiğini gösteren bir değer yönlüyor. İşte 100, 101, 102 diye. Ama bakın burada ne olmuş? Denk gelmiş. 100, 101, 103. 102 en son. Niye? Çünkü orada bir CPU'nun teslim edilmesi var. İşte bir prosesse atanması var. Bir de geri alınması var. Bu mekanizma sayesinde bakın o karışık bir şekilde devam edebiliyor. CPU skecin'in konusuna gelecek hafta zaten devam edeceğiz.
+
+643
+02:01:02,447 --> 02:01:04,867
+Gelecek hafta diyorum. İki hafta sonra devam edeceğiz.
+
+644
+02:01:06,036 --> 02:01:17,876
+Bundan daha detaylı örnekler var arkadaşlar. Peki bu multi-proses durumu illaki işletim sisteminden olacak? Hayır. Bir proses de kendi içerisinden farklı prosesler oluşturabiliyor.
+
+645
+02:01:18,356 --> 02:01:28,436
+Örneğin Chrome browser açtınız. Her bir tab için olmasa da farklı farklı içinde ekstra prosesleri var. Örneğin bir interface yüklüyorsunuz.
+
+646
+02:01:28,979 --> 02:01:54,779
+Arkada disk ile alakalı, network ile alakalı işler var. Sonuçta orada bir HTML yorumlayıcısı var. Renderer dediğimiz şey. Bunların hepsini ayrı ayrı yapacak farklı prosesler var. Siz bir Chrome açtığınızda o Chrome kendi içinden başka prosesler görüyor. O prosesler de daha sonra göreceğiz kendi içinden ekstra threadler doğuracak. Böyle bir ağaç yapacak. Her bir de kendi içinde kendi göreviyle eş zamanlı olarak ve senkroniz olarak çalışmaya devam edebiliriz.
+
+647
+02:01:55,347 --> 02:02:14,868
+Şu ana kadar gördüğümüz şey, proseslerin oluşturulması konusuydu. Bu akıllık benim anlatacaklarımın bu kadar. Şimdi huyudumuz. Bir ara verelim, 10 dakika ara verelim. Size ilk haftanın ilk uygulamasını anlatacaklar. 10 daktayı çok geçmesin arkadaşlar. 11-10 geçe devam edersin.
+
+648
+02:02:21,140 --> 02:02:26,340
+O şey işte, o rom tarafından oluşturulan şey, onun parent'ı yorulamış.
+
+649
+02:02:27,140 --> 02:02:28,140
+Efendim?
+
+650
+02:02:29,539 --> 02:02:38,740
+Orada mesela şey, yani sen ne yazarsın? İşte parent'ın, init'in parent.pid'si, ekibi gibi bir şey olsun. Artık ona hangi değer atadılar?
+
+651
+02:02:42,140 --> 02:02:44,140
+On geçeğe kadar ara verelim arkadaşlar.
+
+652
+02:02:58,420 --> 02:03:07,659
+Şeye girebilir misin? Ben şimdi seni şey yapayım, bot yapayım. İnternette burada var, kabloluyu bağlarız.
+
+653
+02:03:14,163 --> 02:03:15,123
+Krum sahibiyat.
+
+654
+02:03:36,020 --> 02:03:36,460
+Evet.
+
+655
+02:08:26,996 --> 02:08:27,755
+Şöyle bir şey.
+
+656
+02:08:28,555 --> 02:08:29,095
+Bir şey.
+
+657
+02:08:47,731 --> 02:08:48,671
+Bu şeyin medyadan.
+
+658
+02:08:48,931 --> 02:08:49,571
+Değil mi balıyım?
+
+659
+02:10:40,851 --> 02:10:45,371
+İçin bak.
+
+660
+02:11:27,475 --> 02:11:29,555
+İnternete ses ve dönüşü geliyor arkadaşlar.
+
+661
+02:12:11,731 --> 02:12:12,372
+Önce bu
+
+662
+02:12:12,372 --> 02:12:27,572
+bu
+
+663
+02:16:22,868 --> 02:16:23,328
+Tudu.
+
+664
+02:17:24,755 --> 02:17:26,755
+Hocam, sınalım bir sorunan mı?
+
+665
+02:17:28,755 --> 02:17:29,755
+Söyledim mi hocam?
+
+666
+02:17:30,755 --> 02:17:33,755
+Az önce neredeyse olacak? Kafağını bir kırardı.
+
+667
+02:17:33,755 --> 02:17:36,755
+Ben hepsini bir şeylerle düştüreyim, yerinden başlatayım.
+
+668
+02:17:36,755 --> 02:17:37,644
+Başka.
+
+669
+02:17:51,219 --> 02:17:54,099
+Bir iki defa aynı sorudan üçü defa açılıyorduk.
+
+670
+02:17:56,279 --> 02:17:59,079
+Tabi bir süre var, bir süre davantası var.
+
+671
+02:18:01,079 --> 02:18:04,479
+Her zaman, dediği şekilde çalışmaya engelliye geçiyor.
+
+672
+02:19:06,100 --> 02:19:07,380
+Merhaba arkadaşlar.
+
+673
+02:19:11,380 --> 02:19:13,680
+Şahit programlamayla başlayacağız.
+
+674
+02:19:13,940 --> 02:19:16,139
+Bu haftaki konumuz şahit programlama.
+
+675
+02:19:24,020 --> 02:19:39,319
+Basit bazı işlemler var. İşte klasör işlemleri, mkdir, mac directory, klasör oluşturma. İşte cd, change directory, klasör konumuna gitme. Ls listing kısaltılması. Mevcut klasördeki dosyaları listeliyor.
+
+676
+02:19:43,319 --> 02:19:50,260
+Remedir remove directory, boş klasörü siliyor. Ama klasörün içi de oysa remedir ile silemiyoruz.
+
+677
+02:19:51,379 --> 02:19:58,779
+Touch ile dosya oluşturabiliyoruz. Remove ile, rem ile dosyayı siliyoruz.
+
+678
+02:19:59,919 --> 02:20:04,299
+Cat ile bir dosyanın içindeki yazanları terminale yazdırabiliyoruz.
+
+679
+02:20:04,639 --> 02:20:09,879
+Nano ile de bir dosyanın içeriğine terminalden erişebiliyoruz.
+
+680
+02:20:09,939 --> 02:20:12,099
+Hemen şuradan basitçe bir iki tane göstereyim.
+
+681
+02:20:17,299 --> 02:20:20,000
+Bir tane mesela, presörmüştür.
+
+682
+02:20:23,827 --> 02:20:34,347
+Bakın burada deneme gibi bir klasör oluştu. C'de deneme diyorum. Artık denemenin içindeyiz. Şu anda boş. Elisiler listeledim. Şimdi taa 3.
+
+683
+02:20:40,051 --> 02:20:42,051
+Aslında...
+
+684
+02:21:04,628 --> 02:21:08,188
+Aslında orada farklı gözüküyor. Burada beyaz diye gözüküyor.
+
+685
+02:21:46,067 --> 02:21:47,268
+Çok kötü mü geliyor ya?
+
+686
+02:21:49,387 --> 02:21:50,147
+Nasıl?
+
+687
+02:22:35,731 --> 02:22:37,731
+Başka, başkanım.
+
+688
+02:22:39,191 --> 02:22:40,891
+Dersiap ile daha bir tane var.
+
+689
+02:22:56,659 --> 02:22:59,100
+Şimdi bu şekilde daha da bilmemiştim.
+
+690
+02:23:00,659 --> 02:23:01,159
+İşte tamam.
+
+691
+02:23:05,639 --> 02:23:06,880
+Evet diyorum.
+
+692
+02:23:07,540 --> 02:23:08,900
+C'de örnek var.
+
+693
+02:23:10,020 --> 02:23:10,440
+Evet.
+
+694
+02:23:11,900 --> 02:23:13,720
+Evet, C'de dönem olacaktı.
+
+695
+02:23:20,531 --> 02:23:26,131
+Şu anda yeni bir dosya oluşturdum. Deneme.pxt diye. Tohchi'ye.
+
+696
+02:23:27,131 --> 02:23:33,931
+Sonra da nano ile deneme.pxt'nin içine girdim.
+
+697
+02:23:33,931 --> 02:23:37,291
+Ve bir deneme yazısıdır.
+
+698
+02:24:40,979 --> 02:24:42,159
+Şu an ne görüyorsunuz?
+
+699
+02:25:09,108 --> 02:25:09,867
+Şimdi buraya
+
+700
+02:25:24,051 --> 02:25:26,051
+Şimdi buraya deneme yazısı diyeceğim mesela.
+
+701
+02:25:29,051 --> 02:25:29,971
+Kaydediyorum.
+
+702
+02:25:32,271 --> 02:25:39,092
+Şimdi cat ile de deneme notu textinin içindeki yazıyı yazdırıyorum.
+
+703
+02:25:44,628 --> 02:25:56,927
+Kullanıcı oluşturma ile burada slide üzerinden gideceğim. Sudo user.at kullanıcı oluşturma gibi işlemlerde yetkili olmanız gerekiyor. O yüzden sudo'yu kullanıyorsunuz.
+
+704
+02:25:57,488 --> 02:26:05,808
+User.at bir kullanıcı ekleme için, trm diyorsunuz sonra da user name yani bir kullanıcının adını kendiniz oluşturuyorsunuz.
+
+705
+02:26:06,468 --> 02:26:10,028
+Bu şekilde bu komutla bir kullanıcı oluşmuş oluyor.
+
+706
+02:26:12,147 --> 02:26:21,427
+Kullanıcıyı silmek için de userderp-r diyorsunuz. Sonra kullanıcının ismini söylüyorsunuz ve kullanıcıyı siliyorsunuz.
+
+707
+02:26:21,608 --> 02:26:25,907
+S ile koyarsanız kullanıcı ayet dosyaları da siliyorsunuz.
+
+708
+02:26:28,788 --> 02:26:34,147
+Grup oluşturma var. Yine aynı şekilde su da kullanıyorsunuz.
+
+709
+02:26:34,611 --> 02:26:42,551
+Grup et komutu ile bir grup oluşturuyorsunuz. Sonra da grubun ismini, test grubu oluşturuyorsunuz.
+
+710
+02:26:42,551 --> 02:26:45,331
+Yani test grup isminde bir grup oluşturmuş oluyorsunuz.
+
+711
+02:26:46,711 --> 02:26:51,111
+Şimdi bu gruplamada, gruplamayı niye yaparız?
+
+712
+02:26:52,171 --> 02:26:53,412
+Gruplamanın önemi nedir?
+
+713
+02:26:53,412 --> 02:27:01,231
+Biz şimdi bazı dosyalara, bazı kullanıcıların okuma, yazma gibi izin meseleleri oluyor mesela.
+
+714
+02:27:02,036 --> 02:27:16,175
+Her kullanıcıya tek tek belli izin vermek yerine bir grubun içerisindeki 100 kullanıcıya birden tek bir şekilde izin atabiliyoruz. Mesela sadece okuyabilsin ama yazamasın diyebiliriz.
+
+715
+02:27:20,404 --> 02:27:23,763
+Grubu silmek için de grup, der grup neyim diyorsunuz.
+
+716
+02:27:26,344 --> 02:27:32,824
+Bir kullanıcıya grubu atmak için yine sudo, user mod, tre a diyorsunuz, tre g diyorsunuz.
+
+717
+02:27:33,524 --> 02:27:36,043
+Test grubuna, test user'ını atıyorsunuz.
+
+718
+02:27:37,884 --> 02:27:40,603
+Şimdi çok önemli bir konu, izinler konusu.
+
+719
+02:27:46,004 --> 02:27:53,364
+Bir dosyanın izinlerini değiştirebiliyoruz. Bakın burada 777 şeklinde bir sayı var.
+
+720
+02:27:55,044 --> 02:28:01,943
+Bu her 3 basamaklı sayının her biri bir kullanıcı tipini belirtiyor.
+
+721
+02:28:04,340 --> 02:28:15,279
+O dosyanın sahibini, ikincisi dosyanın grubunu, üçüncüsü de bunların dışında kalan herhangi bir kullanıcıyı ifade ediyor.
+
+722
+02:28:16,340 --> 02:28:17,420
+Yani others diye.
+
+723
+02:28:19,520 --> 02:28:21,399
+Şimdi buraya kaymış da burada olacaktı.
+
+724
+02:28:22,399 --> 02:28:22,959
+Bunu belirtiyor.
+
+725
+02:28:22,959 --> 02:28:24,299
+Ve yedi de şu demek.
+
+726
+02:28:25,040 --> 02:28:27,219
+Read, write, execute.
+
+727
+02:28:28,099 --> 02:28:30,959
+Üç tane izin türünün hepsi de.
+
+728
+02:28:31,123 --> 02:28:33,943
+1, 1, 1. Yani hepsine de izni var demek.
+
+729
+02:28:34,783 --> 02:28:37,023
+Read, write, execute.
+
+730
+02:28:37,423 --> 02:28:42,144
+1, 1, 1. Desimal düzeyde de bu. 7 ifade değil. Desimal tavanda.
+
+731
+02:28:44,903 --> 02:28:46,283
+Mesela şurada bakın.
+
+732
+02:28:50,100 --> 02:29:16,000
+L, bu en başta, şuradaki total 12'nin hemen altındaki satıra bakıyoruz. Mesela bakın L ile başlıyor. Bu L, simlink demek, yani kısa yol gibi düşünün. D, directory demek, klasör. Bu dosyanın tipini belirtiyor. Sonra da bakın şurada 3 tane rwx, rwx, rwx var. Bu şu demek işte.
+
+733
+02:29:16,691 --> 02:29:26,491
+Kullanıcının, dosyanın sahibi, dosya grubu, diğer herkes, read, write ve execute işlemleri iznine sahip demek.
+
+734
+02:29:26,951 --> 02:29:28,491
+Mesela bunu değiştirebiliriz.
+
+735
+02:29:30,271 --> 02:29:31,491
+Mesela şöyle bakalım.
+
+736
+02:29:32,291 --> 02:29:36,071
+L, L ile deneme txt'nin, bakın.
+
+737
+02:29:36,948 --> 02:29:51,148
+dn.txt dosyasında dosya sahibi ve grup read write izinlerine sahipken, ejector izinlerine sahip değil. Diğerleri de sadece read izinlerine sahip. Yani dosyayı düzeltemiyorlar.
+
+738
+02:29:52,427 --> 02:29:56,868
+Şimdi mesela biz bunu ne yapabiliriz? Değiştirebiliriz. Change mode.
+
+739
+02:29:58,528 --> 02:30:02,808
+Diyelim ki sadece okuyabilsinler. Evet, herkes. Ne yaparız?
+
+740
+02:30:03,252 --> 02:30:26,312
+444 deriz. Niye 444? 1 0 0 1 0 0 1 0 0. Sonra dosyanın ismini yazarız. Deneme.txt. Şimdi bakın. Bakın deneme.txt'nin iznileri sadece değil olarak değişti. Ben şimdi nano deneme.txt deyip.
+
+741
+02:30:29,075 --> 02:30:54,915
+Düzeltmeye çalıştığım zaman bakın şurada aşağıda file deneme.txt is unwritable diyor. Neden? Çünkü buna izin yok. Yazma izni yok çünkü. O yüzden buraya yazdığımızı, bir şeyler yazdığımızı varsayalım. Sonra da bakın kaydetmeye çalışıyorum. Olmuyor. Permission denied. Çünkü yetkisi yok.
+
+742
+02:30:56,500 --> 02:31:02,020
+Kayıt etmeden çıkıyorum. Şimdi tekrardan change mode diyorum.
+
+743
+02:31:03,760 --> 02:31:05,239
+666 diyorum.
+
+744
+02:31:06,799 --> 02:31:08,180
+Deneme.txt.
+
+745
+02:31:09,239 --> 02:31:13,520
+Bakın izinler bu sefer read write olarak değişti.
+
+746
+02:31:14,059 --> 02:31:19,279
+Şimdi tekrardan yazmaya çalışacağım.
+
+747
+02:31:24,724 --> 02:31:26,543
+İkinci bir deneme yazısı döküyorum.
+
+748
+02:31:30,291 --> 02:31:36,711
+Akın kaydetti. Tekrar anket deneme.txt diyelim. Bu ikinci bir deneme yazısı da geldi.
+
+749
+02:31:42,164 --> 02:31:55,504
+Burada zaten bazı örneklerden bahsetmiştim ama şöyle söyleyeyim. Mesela 754 diyor. Neden? Diyor ki burada bu dosyanın sahibi bütün her şeyi yapabilsin. Read, write ve execute sistemleri sahip olabilsin.
+
+750
+02:32:03,156 --> 02:32:04,156
+Deneyelim hemen.
+
+751
+02:32:06,516 --> 02:32:10,996
+Arkadaşınız read izni olmadan nano'dan açabilir miyiz? Hemen deneyelim.
+
+752
+02:32:12,536 --> 02:32:14,036
+Change mode diyorum.
+
+753
+02:32:17,136 --> 02:32:18,776
+333 olsun mesela.
+
+754
+02:32:19,116 --> 02:32:20,076
+Deneme.txt.
+
+755
+02:32:22,876 --> 02:32:24,336
+Bakın read izni yok.
+
+756
+02:32:25,236 --> 02:32:27,736
+Nano, deneme.txt diyorum.
+
+757
+02:32:29,811 --> 02:32:37,891
+Dosya açılmış gibi gözüküyor ama dosyanın içeriği yok. Neden? Çünkü okuma izni yok. Dolayısıyla aslında açınmıyor.
+
+758
+02:32:39,671 --> 02:32:40,451
+Deneyelim.
+
+759
+02:32:43,252 --> 02:32:45,971
+Bakın yine permission denied.
+
+760
+02:32:48,451 --> 02:32:49,412
+İzin olmalı.
+
+761
+02:32:50,531 --> 02:32:52,252
+222 neye karşılık geliyor?
+
+762
+02:32:53,012 --> 02:33:10,952
+222.010 yani sadece yazabilir demek. Yani okuyamaz ve execute edemez. 222 ama bu hem dosya sahibi için, hem dosya grubu için, hem de diğer bütün kullanıcılar için geçerli.
+
+763
+02:33:10,952 --> 02:33:17,572
+Şey, notta sanırsam write için şey mi demiştik?
+
+764
+02:33:18,932 --> 02:33:20,172
+3 demiştik galiba.
+
+765
+02:33:20,711 --> 02:33:21,811
+Notların önceki sayfalarında.
+
+766
+02:33:23,152 --> 02:33:23,531
+3.
+
+767
+02:33:24,252 --> 02:33:28,691
+3'te hem write hem de execute iznini veriyoruz.
+
+768
+02:33:31,592 --> 02:33:34,531
+Yani 2'yi o zaman notlarda bir sendem yapılması gerekiyor mu?
+
+769
+02:33:35,652 --> 02:33:36,711
+PDF üzerinden.
+
+770
+02:33:39,711 --> 02:33:44,711
+Şurada izniler kısmında 4'de read demişiz, write'a 3 demişiz, execute'a 1 demişiz.
+
+771
+02:33:45,203 --> 02:33:46,903
+Burada Brighton 2 olması gerekmez mi?
+
+772
+02:33:47,123 --> 02:33:51,903
+Evet, burada bir şey var. Bunu düzeltirim sonra. Teşekkür ederim.
+
+773
+02:33:55,283 --> 02:33:56,884
+Şimdi devam ediyorum.
+
+774
+02:33:58,824 --> 02:34:06,923
+Şimdi 754 nedir? Dosya sahibi, bütün izinlere sahip. Bütün izinler ona verilmiş.
+
+775
+02:34:07,476 --> 02:34:13,996
+Dosya grubu ise sadece okuma ve çalıştırma iznine sahip ama yazma iznine sahip değil.
+
+776
+02:34:14,816 --> 02:34:21,776
+Diğerleri ise yani bu dosya grubu ve dosyanın sahibinin dışındaki diğer kullanıcılar ise sadece okuma iznine sahip.
+
+777
+02:34:22,076 --> 02:34:24,116
+Bunu da dört ile. Bakın buradaki dört ile.
+
+778
+02:34:39,283 --> 02:34:51,783
+Buradaki 7, dosya sahibine verilen izinler. Sonra ikinci basamak 5, dosya grubuna verilen izinler. Sonra da diğer kullanıcılara verilen izinler.
+
+779
+02:34:54,304 --> 02:35:03,644
+Aynı şekilde bunu şu şekilde de yapabilirsiniz arkadaşlar. Change mode diyorsunuz. U, user'ın U'su. Read, write ve execute.
+
+780
+02:35:04,275 --> 02:35:17,956
+İzinlerini vermiş oluyorsunuz. Sonra da grubun G'si. Ona R ve X. Yani read ve execute izinlerini vermiş oluyorsunuz. Sonra da O. Yani other olsun. Ona da read izini vermiş oluyorsunuz.
+
+781
+02:35:19,376 --> 02:35:28,716
+Şöyle bir şey düşünün. Bir klasör var. İçinde de bir sürü dosya ve klasörler var. Ve siz tek tek bütün dosya ve klasör izinlerini
+
+782
+02:35:29,396 --> 02:35:51,956
+Tek tek değiştirmek yerine hepsini bir satır komutla hemen izinlerini değiştirebiliyorsunuz. Nasıl? ChangeMod-R, büyük harf R, 754. Bunu ne yapıyor yani? Bir dosyanın ve onun içindeki dosya ve bir klasörün ve onun içindeki dosya ve klasörlerin izinlerini 754 olarak ayarlıyor.
+
+783
+02:36:32,020 --> 02:36:32,479
+Ya.
+
+784
+02:36:41,556 --> 02:36:42,436
+Çok teşekkür ederim.
+
+785
+02:36:58,611 --> 02:37:16,811
+Burada A'da, yani bu da başka bir şekilde yapılma, A'da all demek, yani user, grup ve diğer kullanıcıların hepsini read izinine atıyorsunuz. Şeklinde yine aynı şekilde burada trere ile aynı klasör ve içinde klasör klasörler ile aynı şeyi yapabiliyorsunuz.
+
+786
+02:37:16,811 --> 02:37:25,711
+Şimdi echo ekrana yazdırma komutu, mesela echo deneme yazısı diyorum.
+
+787
+02:37:26,995 --> 02:37:40,835
+Bakın deneme yazısını yazdırdım. Şimdi benim hali hazırda bunları bir SH dosyası, 5 dosyası şeklinde yaptığım şeyler var.
+
+788
+02:37:46,804 --> 02:37:53,083
+Örnek dosyalarımız. Şimdi bakın, nokta slash diyorum. Ya da önce şunu söyleyeyim.
+
+789
+02:37:54,283 --> 02:38:05,443
+Cat nokta, şey cat, bir nokta sh diyorum. Bakın, bu dosyamda echo hello world yazıyor. Ben şimdi ne yapacağım? Bunu komuttan çalıştıracağım.
+
+790
+02:38:05,443 --> 02:38:11,203
+Nokta slash, bir nokta sh. Bakın, echo komudu çalışmış oldu.
+
+791
+02:38:19,827 --> 02:38:31,808
+Burada da bazı bilgileri yazıyoruz. Mesela dolar yazı şu anda hangi kullanıcı var ise onu bilgisi ismini yazıyor.
+
+792
+02:38:31,808 --> 02:38:33,808
+Şunu çalıştırayım.
+
+793
+02:38:37,808 --> 02:38:44,347
+Bakın mesela şu anda slide'lar paylaşıldı mı hocam?
+
+794
+02:38:47,507 --> 02:38:48,988
+Sonra paylaşılacakmış.
+
+795
+02:38:50,108 --> 02:38:51,007
+Mesela bakın burada.
+
+796
+02:38:54,847 --> 02:38:57,528
+Burada mesela kullanıcı adı İdris.
+
+797
+02:38:57,648 --> 02:38:59,347
+Dolayısıyla merhaba İdris dedi. Neden?
+
+798
+02:39:00,628 --> 02:39:02,868
+Şurada dolar yazıldı. Bu bilgi tutuluyor.
+
+799
+02:39:05,688 --> 02:39:12,528
+Bakın bugün işte deyip sonra da date komutuyla gelen bilgi.
+
+800
+02:39:14,324 --> 02:39:15,304
+Yazdırılıyor.
+
+801
+02:39:18,932 --> 02:39:19,211
+Evet.
+
+802
+02:39:22,868 --> 02:39:24,868
+Sonra işte
+
+803
+02:39:27,347 --> 02:39:30,308
+Burada Who'da oturum açmış kullanıcıları
+
+804
+02:39:30,788 --> 02:39:35,308
+bize veriyor. Sonra burada pipe var. Pipe'ı daha sonra da görecektik.
+
+805
+02:39:35,547 --> 02:39:44,988
+Buradaki çıktıkları, yani Who komutunun çıktısını bir sonraki komutun girgisi olarak veriyor. Bir pipeline oluşturuyor.
+
+806
+02:39:50,932 --> 02:39:52,132
+Bu şekilde.
+
+807
+02:39:53,572 --> 02:39:55,972
+Oturum açmış kullanıcı sayısı işte 2.
+
+808
+02:39:56,531 --> 02:40:00,292
+O, şu vc de, o sonuç yani.
+
+809
+02:40:00,531 --> 02:40:03,731
+Sizin elinizde bir dosya var diyelim. Orada kaç satın var?
+
+810
+02:40:04,531 --> 02:40:06,531
+Onu bize veriyor.
+
+811
+02:40:06,932 --> 02:40:08,531
+Sonra da takvim oldu.
+
+812
+02:40:11,092 --> 02:40:11,972
+Nasıl hocam?
+
+813
+02:40:37,139 --> 02:40:42,979
+Şimdi burada ekotikleri var. Bunları tek tek göstermek gerekiyor.
+
+814
+02:40:48,275 --> 02:40:50,916
+Mesela, kenderın ekibi tartışı.
+
+815
+02:40:52,736 --> 02:40:56,775
+Eko, deneme yazısı diyelim.
+
+816
+02:40:58,835 --> 02:41:00,335
+Bulaşıp, P koyalım.
+
+817
+02:41:05,427 --> 02:41:06,468
+Bayağı geliyorum.
+
+818
+02:41:08,387 --> 02:41:10,347
+Terminallerden kalıyor, ayarlayıp çekecek.
+
+819
+02:41:12,067 --> 02:41:12,308
+Evet.
+
+820
+02:41:13,347 --> 02:41:14,667
+Tamam, normalde oluyor ama
+
+821
+02:41:14,667 --> 02:41:16,648
+bende bir problem.
+
+822
+02:41:27,572 --> 02:41:28,191
+Nasıl ya?
+
+823
+02:41:36,275 --> 02:41:40,675
+Normalde çalışıyordu. Benim termin ayarlarım da farklı oluyor. Buna bakmıştım ben.
+
+824
+02:41:44,755 --> 02:41:55,455
+Shell değişkenleri. İki tür değişkenler var arkadaşlar. Sistem değişkenleri ve user değişkenleri. User değişkenleri bizim tanınladığımız değişkenler. Sistem değişkenleri de bakın burada.
+
+825
+02:41:55,455 --> 02:41:58,655
+İşte PVD, PET gibi.
+
+826
+02:41:58,655 --> 02:42:04,955
+User gibi değişkenler. Burada da ne yaptığımızı söylüyor. İşte PVD'de mesela bulunduğumuz klasörün konu falan yazıyor.
+
+827
+02:42:04,955 --> 02:42:10,655
+PET'te de o klasörün konu yazıyor.
+
+828
+02:42:45,139 --> 02:42:49,920
+Şimdi değişken tanımlama var. Bakın burada değişken 0 dedik.
+
+829
+02:42:51,899 --> 02:42:55,899
+Hocam bu arada şey, terslaş B ile ilgili şöyle bir şey var galiba.
+
+830
+02:42:57,000 --> 02:43:03,079
+Terslaş B'de bir karakter sola doğru gidiyor. Ardından onun üzerine space yazarsak onun silindiğini görebiliriz.
+
+831
+02:43:05,779 --> 02:43:06,340
+Deneyim.
+
+832
+02:43:11,219 --> 02:43:13,319
+Yine boşluğun tırnağın içinde olması gerekiyor.
+
+833
+02:43:23,059 --> 02:43:27,279
+Teşekkür ederim.
+
+834
+02:43:29,139 --> 02:43:31,880
+Şimdi değişken tanımlamaya bakıyoruz arkadaşlar.
+
+835
+02:43:32,599 --> 02:43:34,459
+Değişken sıfır diye bir değişken tanımladık.
+
+836
+02:43:35,020 --> 02:43:35,779
+Bir değer atamadık.
+
+837
+02:43:35,860 --> 02:43:37,899
+Dolayısıyla boş bir değişken tanımlamış olduk.
+
+838
+02:43:38,700 --> 02:43:40,559
+Değişken bir eşittir 10 dedik.
+
+839
+02:43:40,920 --> 02:43:41,939
+Bir değişken tanımladık.
+
+840
+02:43:42,020 --> 02:43:45,260
+Değişken bir adında ve değer olarak da 10 atamış olduk.
+
+841
+02:43:47,659 --> 02:43:50,260
+Değişken iki deneme diyebiliriz.
+
+842
+02:43:50,579 --> 02:43:59,180
+String atamış olduk gibi. Burada echo, değişkenin içindeki değeri almamız için dolar işaretini kullanıyoruz.
+
+843
+02:43:59,840 --> 02:44:06,500
+Eko dolar değişken 1 ile ne yapıyoruz? Bu değişken 1'in içindeki değeri yazdırmış oluyoruz.
+
+844
+02:44:07,479 --> 02:44:09,000
+Bunun hemen örneğini çalıştırayım.
+
+845
+02:44:11,139 --> 02:44:13,900
+Vaktaslaş, 4.faslaş.
+
+846
+02:44:15,420 --> 02:44:18,299
+Bakın, bu şekilde çalışmış olduk.
+
+847
+02:44:19,987 --> 02:44:22,628
+Onun şeyini de zaten gösterilmiştim.
+
+848
+02:44:26,963 --> 02:44:28,923
+PVD ile başka bir değişkeni atadık.
+
+849
+02:44:29,144 --> 02:44:37,864
+Yani PVD'nin sonucunu, bizim şu anda bulunduğumuz çalışan kursörü sonucunu döndürdüğümüz adresi değişkenler de atadık.
+
+850
+02:44:38,564 --> 02:44:40,244
+Onu da yazdırabiliyoruz.
+
+851
+02:44:42,244 --> 02:44:50,263
+Şimdi bazı basit toplama, çarpma, çıkarma gibi matematiksel işlemleri de expr komutu ile yazıyoruz.
+
+852
+02:44:52,255 --> 02:45:17,235
+Ters slash işareti var. Çünkü bu yıldızı başka bir ifade olarak karıştırmasın. Yani çarpma olduğunu belirtmek için ters slash koyuyoruz. Çünkü şey olarak karıştırabilir. Mesela A yıldız diyeceğiz. A ile başlayan demek oluyor. Oradaki yıldızın default şeyi bu. Onunla karıştırmasın diye.
+
+853
+02:45:18,100 --> 02:45:20,439
+Burada ters slash işareti koyuyoruz.
+
+854
+02:45:24,211 --> 02:45:47,252
+Sonra yine ekoyla yazdırıyoruz. Veri girişi, bunu hemen göstereyim. .slash 6.sh Lütfen adınıza girin diyor. Sonra bizden bir veri bekliyor. İdris. Sonra da merhaba İdris diye yazdırdık. Bakın buradan.
+
+855
+02:45:48,115 --> 02:46:13,416
+Önce echo ile lütfen adınızı giriniz dedi. Sonra read komutu ile benden kullanıcıdan bir giriş bekledi. Sonra biz bir giriş yaptık, bir veri verdik ve kullanıcı adı değişkenine bunu atadı. Sonra da echo merhaba, bakın dolar, kullanıcı adı. Böylelikle merhaba idris diye yazdırdı.
+
+856
+02:46:17,332 --> 02:46:25,471
+Bakın burada işte yıldız ifadesi. Hemen göstereyim. LS yıldız diyoruz mesela. Bütün hepsini gösteriyor.
+
+857
+02:46:26,652 --> 02:46:35,191
+Mesela buraya başka bir şey daha koyayım mı? Mesela touch yine deneme nokta txt diyorum.
+
+858
+02:46:36,572 --> 02:46:43,412
+LS yıldız dedim. Bakın bütün dosyaları gösterdi. Şimdi LS yıldız nokta sh dedim.
+
+859
+02:46:44,051 --> 02:46:52,452
+Bakın deneme nokta txt'yi göstermedim. Neden? Nokta sh ile biten dosyaları bir analist ederim.
+
+860
+02:46:59,956 --> 02:47:02,315
+Evet. Bunu da geçiyorum.
+
+861
+02:47:04,736 --> 02:47:06,556
+Şimdi dosya işlemleri.
+
+862
+02:47:07,975 --> 02:47:11,155
+Bakın mkd ne yapıyordu? Bir klasör oluşturuyordu.
+
+863
+02:47:11,475 --> 02:47:14,995
+mkd klasör ismi. Klasör ismi şeklinde bir klasör oluşturdu.
+
+864
+02:47:14,995 --> 02:47:20,355
+Sonra şurada noktalı virgül olacak ki cd'yi diğer bir komut olarak algılasın.
+
+865
+02:47:21,096 --> 02:47:24,636
+Yoksa öteki türlü aynı zamanda cd diye de bir klasör oluşturacak.
+
+866
+02:47:25,683 --> 02:47:50,463
+mkdir klasör ismi, noktalı virgül, cd klasör ismi, sonra ne yapıyor? Yani klasör ismi şeklinde bir klasör oluşturuyor. Sonra da o klasör ismine gidiyor. Sonra da orada deneme, yine noktalı virgül, touch, deneme diye bir dosya oluşturuyor. Yani bir klasör oluşturdu, içine de deneme diye bir dosya oluşturdu ve şu anda o klasörün içindeyiz.
+
+867
+02:47:54,708 --> 02:47:55,747
+Sonra işte burada
+
+868
+02:48:00,340 --> 02:48:04,819
+İsteliyor. Mule taşıma yapıyor falan.
+
+869
+02:48:06,620 --> 02:48:07,780
+Şimdi mesela şurada bakın.
+
+870
+02:48:08,000 --> 02:48:12,840
+Eko, dosyaya yaz beni diye bir stringimiz var.
+
+871
+02:48:14,380 --> 02:48:15,139
+Büyüktür diyor.
+
+872
+02:48:15,420 --> 02:48:18,600
+Şimdi biz deneme cs diye bir dosya oluşturmuştuk ya.
+
+873
+02:48:19,560 --> 02:48:23,920
+Buna büyüktür işaretiyle dosyaya yaz beni'yi yazdırıyor.
+
+874
+02:48:23,920 --> 02:48:27,459
+Ama tek bir tane büyüktür işareti demek şu demek.
+
+875
+02:48:27,840 --> 02:48:41,420
+Dosyanın içindeki bütün var olan şeyleri sil ve baştan yaz. Eğer iki büyüktür işareti koyarsak, append işlemi yapıyor. Yani sonradan ekleme yapıyor.
+
+876
+02:48:43,580 --> 02:48:52,479
+CAD de tekrardan içeriğini yazdırıyor. Sonra deneme 2 diye bir dosya oluşturuyoruz. Bu şekilde.
+
+877
+02:48:58,067 --> 02:49:01,167
+Şimdi pipe, bunu az önce de görmüştük.
+
+878
+02:49:02,128 --> 02:49:02,968
+Pipe ne yapıyordu?
+
+879
+02:49:03,927 --> 02:49:05,247
+Bir komutumuz vardı.
+
+880
+02:49:06,047 --> 02:49:08,387
+Bu komuttan bir çıktı alıyoruz.
+
+881
+02:49:09,288 --> 02:49:18,907
+Sonra da düz bir çizgiyle pipe işlemi yapıyoruz ve bir sonraki komuta bu komutun çıktılarını parametre olarak veriyoruz.
+
+882
+02:49:23,443 --> 02:49:37,644
+Mesela, PSAux şey gibi düşünün, dos görev yöneticisi gibi düşünün. Burada bakın, işte hangi kullanıcıya ait, PID'si vesaire bilgilerini yazdırıyoruz.
+
+883
+02:49:42,868 --> 02:49:46,887
+Bizim bir dosya düşünün, içinden bir ifade arıyoruz.
+
+884
+02:49:47,547 --> 02:49:53,227
+EGREP ile o dosyanın içindeki o ifadeyi, o geçen ifadenin satırlarına çekebiliyoruz.
+
+885
+02:49:53,227 --> 02:50:10,108
+Şimdi bu EGREP'i, özür dilerim, şimdi bu PSAQS'tan gelen sonuçları EGREP'e verirsek eğer ki, aslında görev yöneticisinin içinde olan o yazan yerlerden bir arama yapmış oluyoruz.
+
+886
+02:50:10,708 --> 02:50:24,028
+Mesela şurada da gösterildiği gibi psaux, düz bir çizgi, egrep root diyor. Bu ne demek? Root isminin geçtiği, görev yöneticisinde root isminin geçtiği satırları getirir.
+
+887
+02:50:24,028 --> 02:50:30,427
+Yani bu demek. Hemen şuradan da göstereyim. psaux dedim.
+
+888
+02:50:36,755 --> 02:50:39,355
+Mesela bakın burada hepsi root değil. Şurada
+
+889
+02:50:39,355 --> 02:50:42,015
+idris diye de
+
+890
+02:50:42,015 --> 02:50:44,216
+şeyler var.
+
+891
+02:50:45,315 --> 02:50:46,135
+Şimdi şunu yapalım.
+
+892
+02:50:46,295 --> 02:50:47,435
+ps-aux
+
+893
+02:50:47,435 --> 02:50:49,675
+düz çizgiye
+
+894
+02:50:49,675 --> 02:50:50,736
+agrep
+
+895
+02:50:50,736 --> 02:50:52,275
+root
+
+896
+02:50:52,275 --> 02:50:55,355
+Bakın ne yaptı?
+
+897
+02:50:58,355 --> 02:51:00,236
+Bütün root'ları aldı.
+
+898
+02:51:00,724 --> 02:51:09,664
+root geçen satırları aldı, bana getirdi. Ama gördüğünüz gibi İdrisler falan yok. Böyle bir işlem yapıyoruz.
+
+899
+02:51:18,324 --> 02:51:23,184
+TR komutu translate demek. Ne yapıyoruz? Mesela bakın arkadaşlar.
+
+900
+02:51:25,644 --> 02:51:29,123
+Col1, col2, col3, col4 diye bir yazımız var bizim.
+
+901
+02:51:30,684 --> 02:51:35,004
+Eko, çıktı, üretiyordu. Onu ne yaptık? Pike ile TR komutuna verdik.
+
+902
+02:51:35,004 --> 02:51:36,004
+Şimdi A...
+
+903
+02:51:36,628 --> 02:51:40,567
+Küçük A, tire, küçük Z demek, küçük harf demek. Ne yapıyor?
+
+904
+02:51:41,227 --> 02:51:47,128
+Terek, küçük harfleri al, ne yap? Büyük A, tire, büyük Z. Yani büyük harflere dönüştür.
+
+905
+02:51:47,988 --> 02:51:50,587
+Yaptığı iş bu. Hemen deneyelim.
+
+906
+02:51:50,587 --> 02:51:53,268
+Eko.
+
+907
+02:51:55,968 --> 02:52:01,048
+Kol bir, kol iki, kol üç diyelim.
+
+908
+02:52:02,288 --> 02:52:03,847
+Sonra paypiş ayeti.
+
+909
+02:52:05,108 --> 02:52:10,868
+tr, a-z, a-z.
+
+910
+02:52:11,828 --> 02:52:12,747
+Bakın ne yaptı?
+
+911
+02:52:14,628 --> 02:52:21,228
+Şurada küçük harfle yazdığım kol 1, kol 2, kol 3'ü büyük harflere dönüştürdüm.
+
+912
+02:52:23,448 --> 02:52:27,067
+tr komutu değiştirme işlemi yapıyor.
+
+913
+02:52:30,708 --> 02:52:57,708
+Büyük tür ifadesi dediğim gibi bir dosya nokta txt diye bir dosya oluşturuyor. Sonra call1, call2, call3, call4 yazısını bu dosyanın içine aktarıyor. Sonra bakın cat bir dosya nokta txt diyor. Ne yapıyordu bu komut? Bir dosya nokta txt'nin içindeki yazıları bize getiriyordu. Onu aldık, tr'ye verdik ve noktalı virgülleri virgül yap dedik. Ne olacak? Şuradaki noktalı virgüller.
+
+914
+02:52:58,739 --> 02:53:01,200
+Şuradaki noktalı virgüller virgüle dönüşecek.
+
+915
+02:53:07,028 --> 02:53:08,048
+Tamam, geçiyorum.
+
+916
+02:53:11,572 --> 02:53:13,252
+Tüm değerlerini kıyaslama.
+
+917
+02:53:15,092 --> 02:53:21,871
+Yine işte bir dosya tekste oluşturdu. Ahmet 4.1 diye bu dosyaya atan bu bilgiyi yazdı.
+
+918
+02:53:23,311 --> 02:53:27,031
+Ondan sonra bakın iki tane büyük bir işareti kullandı.
+
+919
+02:53:27,152 --> 02:53:32,851
+Yani Ahmet 4.1'in hemen altına Ahmet 3.2 diye yeni bir satır eklemiş olduk.
+
+920
+02:53:39,252 --> 02:53:45,192
+Ondan sonra, aynı şekilde şu 2-3'ü de eklemiş olduk.
+
+921
+02:53:45,891 --> 02:53:52,532
+Cat bir dosya nokta text dedi. Ne yaptık? O 3 satırı ekrana yazdırmış olduk.
+
+922
+02:53:52,612 --> 02:53:59,272
+Sonra awk, işte sütun kıyaslamak için kullandığımız konu, tere f.
+
+923
+02:54:00,452 --> 02:54:05,131
+Şuradaki sütun olarak neyi belirtti? Yani mesela ben noktalı virgül...
+
+924
+02:54:06,260 --> 02:54:31,780
+Noktalı virgül dediğim zaman Ahmet noktalı virgül birinci sütun olmuş oluyor. Dört, ikinci sütun olmuş oluyor. Bir, üçüncü. Yani sütun ayrıcını bu şekilde belirttiğimizi söylüyoruz. Sonra da diyoruz ki bakın ikinci sütunun integer değeri, ikinci sütundaki değeri aldık, integer'a değiştirdik. Üçten büyük mü? Özür dilerim.
+
+925
+02:54:32,435 --> 02:54:35,855
+İkinci sütunu üçten büyük olan satırları getiriyor.
+
+926
+02:54:37,435 --> 02:54:40,275
+Gibi bu şekilde devam ediyor.
+
+927
+02:54:40,515 --> 02:54:41,015
+Geçiyorum.
+
+928
+02:54:41,876 --> 02:54:45,556
+BC arkadaşlar, şöyle hemen göstereyim.
+
+929
+02:54:49,971 --> 02:55:08,291
+Mesela 3 artı 4 hesap makinesi gibi kullanabiliyorsunuz. Veyahut da şunu da yapabiliyorsunuz. X eşittir 5 diyorsunuz. Y eşittir 6 diyorsunuz. X artı Y diyorsunuz. Bakın 11 bilir. Bunun gibi matematiksel bir ifade yazabilmenizi sağlıyor. BC.
+
+930
+02:55:14,995 --> 02:55:19,155
+Sonra da sorgular, if-else yapısı yani bir nevi.
+
+931
+02:55:33,843 --> 02:55:37,223
+Program yazabilmek için dönemlerden bir tekler var.
+
+932
+02:56:08,020 --> 02:56:18,720
+Yani, dördünamda bir şey yazmamızı değil, sistem zorlama olarak, basit bir dördünama geliştirmek için olabiliyorsa, dördünamda bir dördünamda bir sonuç olmadır.
+
+933
+02:56:20,180 --> 02:56:22,659
+Görebiliyor musunuz Zoom'daki arkadaşlar?
+
+934
+02:56:28,275 --> 02:56:29,595
+Gördüğünüzü orsayıyorum.
+
+935
+02:56:33,236 --> 02:56:33,716
+Şur.
+
+936
+02:56:47,667 --> 02:56:50,128
+Tamam hocam. Hemen şöyle yapayım.
+
+937
+02:56:51,867 --> 02:56:58,567
+Bazı şeyler var işte. Bakın burada dolar sıfır, script dosyamızın adı dolar bir.
+
+938
+02:56:59,847 --> 02:57:03,367
+Script dosyamızı çalıştırırken parametre olarak giriyoruz ya.
+
+939
+02:57:04,367 --> 02:57:11,707
+Onun birinci parametresi, iki ikinci parametresi, üçüncü parametresi, en eninci parametresi şeklinde oluyor.
+
+940
+02:57:12,275 --> 02:57:23,795
+Mesela burada bakın, CAD$1 dedik. Eğer sonuç döndürürse yani, buradan bir şey gelirse o zaman buraya girecek ve $1 isimli dosya mevcut diyecek.
+
+941
+02:57:26,388 --> 02:57:50,488
+Şeklinde. Sonra mesela bakın burada dolar diyez var. Bu bizim parametre sayımızı belirtiyor. Yani biz en dedim ya oradaki eni bize söyleyecek. Ve great den gt bunu ifade ediyor. Eğer 3'den büyükse yani benim parametre sayım 3'den büyükse buradaki şu işlemi yap. Diyor ki dolar diyez adet parametre girdiniz. Mesela 5 tane parametre girmiştim.
+
+942
+02:57:51,636 --> 02:58:16,136
+Dosyayı çalıştırırken 5 adet parametre girdiniz diyor. Eğer değilse o zaman mesela benim girmem gereken parametre sayısı 4 olsun. 3 parametre girdim. 3 adet parametre yeterli değildir diyor. Bu şekilde bir koşul oluşturabiliyoruz. Sonra bakın işte 3. parametre, 4. parametre eğer ki aynıysa vesaire gibi diyor.
+
+943
+02:58:20,051 --> 02:58:22,751
+Döngüler, hemen döngüleri de hızlıca anlatıyorum.
+
+944
+02:58:23,931 --> 02:58:27,951
+Bakın, for i in 1, 2, 3, 4, 5 şeklinde oluşturabiliriz.
+
+945
+02:58:29,551 --> 02:58:34,572
+Veyahut kümet parantezi içerisinde 1, 2, 5 şeklinde oluştururuz.
+
+946
+02:58:35,572 --> 02:58:36,556
+Veyahut da...
+
+947
+02:58:37,363 --> 02:59:03,904
+Böyle parantezler içerisinde i eşittir birden başta iki noktalı virgül, i küçük eşittir beş noktalı virgül, i bir arttır şeklinde yapabiliriz. Şu üç for döngüsü de aynı işi yapıyor aslında. Ne yapıyor? Burada birden beşe kadar bir saya işliyorsunuz. Yani bir, iki, üç, dört, beşi echo ile ekrana yazdırmış oluyoruz. Aynı şekilde burada da bir, iki, üç, dört, beşi echo ile ekrana yazdırmış oluyoruz.
+
+948
+02:59:04,239 --> 02:59:08,360
+Aynı şekilde burada da yapmış oluyoruz.
+
+949
+02:59:09,460 --> 02:59:14,300
+1, 2.10, 2.2 derseniz işte birden ona kadar ikişer artarak git diyor.
+
+950
+02:59:14,300 --> 02:59:17,360
+Burada bu sefer bunu yazdırmış olacağız.
+
+951
+02:59:18,180 --> 02:59:26,155
+LS derseniz sizin bulunduğunuz klasördeki dosya ve klasörleri listeliyorsunuz ya LS ve onları alıyorsunuz.
+
+952
+02:59:26,675 --> 02:59:36,495
+Ve onları tek tek forla dolaşıyorsunuz. Böylelikle sizin içininizde bulunduğunuz klasörün dosya ve klasörlerinin isimlerini ekoyla ekrana yazdırıyorsunuz.
+
+953
+02:59:40,595 --> 02:59:42,155
+Şeklinde devam.
+
+954
+02:59:44,735 --> 02:59:46,335
+İşte bakın şurada.
+
+955
+02:59:47,536 --> 02:59:49,716
+1, 2.10, 2.2 oldu ya.
+
+956
+02:59:56,724 --> 02:59:57,404
+Deneyelim.
+
+957
+02:59:58,943 --> 03:00:02,083
+Hemen bir tane dosya oluşturuyorum.
+
+958
+03:00:27,755 --> 03:00:40,975
+bu
+
+959
+03:00:26,835 --> 03:00:36,876
+iyi iyi
+
+960
+03:00:41,119 --> 03:01:00,119
+İlk
+
+961
+03:00:40,659 --> 03:00:53,260
+İzin vermek. Dolayısıyla şey, yani execute izni yok burada. Onu da göstereyim bakın. Deneme.sh'da execute izni olmadığı için az önce çalıştırmadım. Şimdi hemen izinleri değiştiriyorum.
+
+962
+03:00:56,000 --> 03:01:02,959
+Sonra da tekrardan onu da göstereyim. Bakın izini değiştirdim. Artık iznimiz var.
+
+963
+03:01:04,340 --> 03:01:06,600
+.slash deneme.sh
+
+964
+03:01:07,572 --> 03:01:09,252
+Bakın, 1.35 diye yazdım.
+
+965
+03:01:11,892 --> 03:01:13,312
+Tamam, buraya geçtim.
+
+966
+03:01:17,236 --> 03:01:32,495
+Şimdi i10 diye bakın burada hemen while dönüşünü anlatıyor bu sefer. i eşitir 10 diye bir atama yaptı. i great'den 0 yani i10'dan büyük olduğu müddetçe yap neyi yap? İşte eko yazdır, sayaç dolar iyi şeklinde.
+
+967
+03:01:33,108 --> 03:01:45,467
+Ondan itibaren yazdırıyor. 10 yazdı. Sonra işte burada bakın exp ifadesiyle bir çıkarttı. İyi atadı onu. Sonra da tekrardan yazıyor. Yani 10, 9, 8, 7, 6, 5 diye yazacak.
+
+968
+03:01:47,847 --> 03:02:00,208
+Antilde e kadar demek. Counter 6 idi mesela. 6, 3'den küçük olana kadar bunu çalıştır. Yani ne yapıyor? Counter azaltıyor. 6, 5, 4 şeklinde.
+
+969
+03:02:00,852 --> 03:02:03,492
+Yazacak. Üçü de yazacak.
+
+970
+03:02:40,495 --> 03:02:48,835
+String uzunluk bulma, az önce de demiştim, diyez nedir? Uzunluk bize veriyor. STR diye bir değişken oluşturduk. Welcome to Java Point.
+
+971
+03:02:49,268 --> 03:03:00,368
+Length diye bir değişken oluşturduk ve ona da bu str'nin kaç karakterden olduğunu atadık. Sonra da ekoyla yazdırdık.
+
+972
+03:03:04,147 --> 03:03:05,268
+String ayırmalar.
+
+973
+03:03:08,915 --> 03:03:29,655
+Read, trepe diyorsunuz. Mesela enter name, state and age separated by a comma diyor. Siz şimdi read ile ne yapıyorduk? Bir input alıyorduk kullanıcıdan. Ama kullanıcıdan input alırken diyoruz ki işte enter name, state and age separated by a comma diye de bir ekrana yazı yazdırıyoruz. Bunu da trepe ile yapıyoruz.
+
+974
+03:03:30,164 --> 03:03:57,004
+Yazdırdık. Sonra kullanıcıdan bir değer aldık, input aldık. Entry değişkenini atadık. Şurada ifs diye bir değişken var. Bu bizim ayırtıcımızı belirtiyor. Virgülle ifade etmişiz. Sonra read ve a dedik. Buradaki a da bizim array olarak. Yani mesela şu strr'in bir array olmasını ifade ediyor.
+
+975
+03:03:58,291 --> 03:04:02,771
+Şimdi buraya, entry gay biz girmiştik ya işte mesela onu hemen göstereyim.
+
+976
+03:04:05,231 --> 03:04:07,471
+Kaçıncı uygulamadı bu? 18.
+
+977
+03:04:13,363 --> 03:04:32,523
+Mesela bakın, enter name, state ve edge separated by comma dedi. Ben buraya idris, virgül, İstanbul, virgül, 18 yazdım. Bakın, şurada entry strr ile
+
+978
+03:04:33,492 --> 03:04:37,431
+Ben virgül ile ayırdım ya, onları 3 parçaya ayırdı.
+
+979
+03:04:37,711 --> 03:04:39,871
+strr değişkenine bir eray olarak yazdı.
+
+980
+03:04:40,412 --> 03:04:44,912
+Sonra bu strr'ın sıfırıncı değeri benim ismimi belirtti.
+
+981
+03:04:44,971 --> 03:04:48,412
+Birinci değeri şehri belirtti.
+
+982
+03:04:48,591 --> 03:04:51,031
+İkinci değeri de yaşı belirtti.
+
+983
+03:04:51,172 --> 03:04:52,072
+Bu şekilde yazdık.
+
+984
+03:04:52,072 --> 03:04:52,951
+Devam ediyorum.
+
+985
+03:04:56,371 --> 03:05:19,931
+Bu da slicing işlemi. İşte str diyorsunuz. 0'dan 10'a kadar alıyorsunuz. Devam ediyorum. Bir fonksiyon oluşturma var. İşte fonksiyon nasıl oluşturulur? Function organize diyorsunuz. Parantez açıp kapatıyorsunuz. Sonra da echo dolar 1, dolar 2, dolar 3, dolar 4, dolar 5. Bu dolar 1, 2, 3, 4, 5'ler sizin parametrelerinizi ifade ediyor.
+
+986
+03:05:20,628 --> 03:05:37,288
+Siz şimdi bu fonksiyonu çağırırken fonksiyonun adını yazdınız. Function arguments diye. Sonra da bakın burada 5 tane parametre yoldunuz. We, welcome, you, on, cevap, point. Sonra da bunu aldı. Bu fonksiyon bu parametreleri aldı. Echo yazdığımız için de tekrar bize yazdırdı.
+
+987
+03:05:41,268 --> 03:05:48,108
+LS komutunu zaten anlatmıştım. LSL uzun bir şekilde bize listeleme yapıyor.
+
+988
+03:05:48,888 --> 03:05:52,468
+S-A ile yaparsanız eğer ki gizli dosyaları da gösteriyor.
+
+989
+03:05:58,468 --> 03:06:02,468
+Dosya sıkıştırma var. Bezip ile dosya sıkıştırabiliyoruz.
+
+990
+03:06:06,899 --> 03:06:31,099
+Geçiyorum. Dosya kopyalama. CHP ile de dosya kopyalıyoruz. Bunu da geçtim. Python ile shell komutlarının çalıştırılması var. Python'da subprocess diye bir kütüphane var. Buradan subprocess.popen ile sonra da bakın birinci parametre olarak echo.
+
+991
+03:06:31,763 --> 03:06:58,484
+Geeks, for geeks diyoruz. Yani oraya shell komutunu ve parametresini veriyoruz. Sonra thread, shell, eşittir, true diyerek bunu çalıştırıyoruz. Şimdi hemen denemesini yapalım. Yine bir tane dosya oluşturuyorum. Deneme nokta, py. Sonra ona giriyorum. Şimdi buraya import, self, process.
+
+992
+03:06:59,827 --> 03:07:04,787
+Subprocess
+
+993
+03:07:04,787 --> 03:07:14,987
+Mesela buraya
+
+994
+03:07:14,987 --> 03:07:17,747
+Eko
+
+995
+03:07:17,747 --> 03:07:19,287
+Dedik, işte
+
+996
+03:07:19,287 --> 03:07:21,867
+Deneme yazısı
+
+997
+03:07:21,867 --> 03:07:25,627
+Sonra da
+
+998
+03:07:26,100 --> 03:07:27,539
+Şöyle, işittir.
+
+999
+03:07:34,932 --> 03:07:57,092
+Bu şekilde yazmış oldum. Sonra bunu kaydediyorum. Ondan sonra python3 dedim. Deneme.py'yi çalıştırdım. Bakın deneme yazısı diye bir yazı yazdı. Neden? Python'la bir shell komutu yazmış oldum. Echo diye. Onun parametresini de verdim. Çalıştırınca bunu yazmış oldum.
+
+1000
+03:08:05,971 --> 03:08:07,971
+İstemleri, bazı programlarda yoruluydu.
+
+1001
+03:08:07,971 --> 03:08:13,971
+İstemleri, iki tırnak arasında GTS'e yapar.
+
+1002
+03:08:13,971 --> 03:08:17,971
+Oradaki CMS, buradaki sileleri aynı şey.
+
+1003
+03:08:17,971 --> 03:08:23,971
+İstemleri, iki tırnak arasında, oradaki kontrolü takıyoruz.
+
+1004
+03:08:23,971 --> 03:08:28,971
+Yani, MS-TOS'u yazılabiliyoruz veya, bir kontrolü yazılabiliyoruz.
+
+1005
+03:08:28,971 --> 03:08:31,971
+İstemleri, oradan diğer sileler.
+
+1006
+03:08:32,404 --> 03:08:37,904
+E, konvent maya, müdahale etmeli bir uzatı sayfık ayı, konvent başlıyor.
+
+1007
+03:08:37,904 --> 03:08:38,904
+Diyanmen için, bu ayı, konvent başlıyor.
+
+1008
+03:08:38,904 --> 03:08:40,904
+Tamam, dörüm, tifane ekonomikler.
+
+1009
+03:09:04,084 --> 03:09:06,963
+Burada evet, dosya sistemimizi yapıyoruz.
+
+1010
+03:09:14,675 --> 03:09:19,935
+Aydın bir şekilde şeyle, commanding ayına, şeyle de anaylaştır.
+
+1011
+03:09:20,935 --> 03:09:34,876
+Şimdi bu LSTRL ile listeleme komutunu yaptık. Bakın şurada Capture Output diye bir parametre var. Bunun sayesinde ben bunu result değişkenine atadım. Sonra da result.stdoutledim ve yazdırdım.
+
+1012
+03:09:36,155 --> 03:09:37,376
+Şimdi bunu yapacağım.
+
+1013
+03:09:37,376 --> 03:09:39,095
+Aslında burada bir site var arkadaşlar.
+
+1014
+03:09:43,156 --> 03:09:43,816
+Uyur, yönden.
+
+1015
+03:09:50,579 --> 03:09:55,579
+Kopyalama ve dosya sistemleri.
+
+1016
+03:10:00,084 --> 03:10:04,783
+Normalde bir yaz sistem çağrımda bir şey ama yazar hep tekrana değil.
+
+1017
+03:11:03,540 --> 03:11:05,324
+Google'ın ekranı veya başkalarını...
+
+1018
+03:11:15,667 --> 03:11:17,108
+Ya da, paulanteyse, moçuklu.
+
+1019
+03:11:57,620 --> 03:11:59,140
+Nasıldır hocam? Hatırlıyor musunuz?
+
+1020
+03:12:35,636 --> 03:12:36,216
+Neyse.
+
+1021
+03:12:38,756 --> 03:12:39,556
+Aa, yapamadık.
+
+1022
+03:12:42,932 --> 03:12:46,172
+Evet, bir arada bir hata yaptık.
+
+1023
+03:12:51,291 --> 03:12:52,592
+Tamam hocam.
+
+1024
+03:13:08,180 --> 03:13:12,180
+Çalıştan daire kubin alıp eğer sayfasından uzak bir boyu yapabiliriz.
+
+1025
+03:13:13,180 --> 03:13:15,180
+Bulunduğumuz bir terkini istediriz.
+
+1026
+03:13:15,180 --> 03:13:20,180
+Ama yollar değişebiliriz. Yani burada uzak yol, göreve yol kullanırız.
+
+1027
+03:13:21,180 --> 03:13:28,180
+Böyle bir örgü sayfasını ile o daire kubin alıp, sonra o daire kubin alıp, dosya sistemini alıp,
+
+1028
+03:13:29,180 --> 03:13:32,180
+o da dosya sistemini yapabiliriz.
+
+1029
+03:13:32,180 --> 03:13:33,952
+Yani bir derginin bu işlemini istediriz.
+
+1030
+03:14:02,195 --> 03:14:06,796
+Teşekkürler.

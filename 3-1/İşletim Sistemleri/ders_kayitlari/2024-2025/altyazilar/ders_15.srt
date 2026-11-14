@@ -1,0 +1,2263 @@
+1
+00:02:35,187 --> 00:02:36,768
+Arkadaşlar, günaydın, merhabalar.
+
+2
+00:02:57,268 --> 00:02:58,987
+Bir dakika içerisinde başlıyoruz.
+
+3
+00:03:47,123 --> 00:03:49,804
+Ekran görüntümünde ve seste bir problem var mı arkadaşlar?
+
+4
+00:03:51,864 --> 00:03:52,924
+Yok hocam, biliyorum.
+
+5
+00:03:53,364 --> 00:03:54,603
+Tamam, teşekkür ederim.
+
+6
+00:03:56,043 --> 00:03:58,364
+Evet, başlayabiliriz.
+
+7
+00:03:59,963 --> 00:04:11,483
+Şimdi bir işletim sisteminin yönetmesi gereken işlemciden, bununla alakalı detaylardan 6-7 çöptür boyunca bahsettik.
+
+8
+00:04:12,340 --> 00:04:15,700
+Daha sonra ana bellek yönetiminin nasıl olacağını konuştuk.
+
+9
+00:04:16,740 --> 00:04:23,800
+Ana bellekin yetmediği durumlarda virtual memory management'ın olacağını, bu ikisinin beraber yürütüleceğini konuştuk.
+
+10
+00:04:23,800 --> 00:04:27,399
+Sonra disk yönetimi konusuna başlamıştık.
+
+11
+00:04:28,319 --> 00:04:33,600
+Disk yönetimi birkaç farklı şekilde açılan veya eleye alınabilir.
+
+12
+00:04:34,399 --> 00:04:38,899
+Bunlardan bir tanesi kullandığımız disk elemanının, aygıtının,
+
+13
+00:04:40,052 --> 00:05:03,372
+Fiziksel özelliklerine göre, işte bu bir hard disk olabilir, solid state disk olabilir veya tape diskler olabilir. Bunun üzerine nasıl okuma yazma yapılacağı, özellikle de bu eski hard disklerde hangi sırayla okuma yapılacağı işletim sisteminin ele alması gereken, dikkat etmesi gereken bir problem.
+
+14
+00:05:05,939 --> 00:05:22,439
+Sürekli bir diskten okuma yapmak veya diske yazma yapmak bir zaman kaybı gerektiriyor. Burada da bir optimizasyonun yapılması söz konusuydu. İşin fiziksel tarafındaki boyut chapter 10'da konuştuğumuz şeylerdi.
+
+15
+00:05:22,439 --> 00:05:32,379
+Tabii günümüzde eski disk yapıları çok fazla kullanılmıyor. İşte teypler vesaire yani birçok şey de kullanılmıyor.
+
+16
+00:05:32,788 --> 00:05:51,327
+Kullanıldığı yerler elbette var. Konunun detaylarına daha fazla girmeye gerek yok. Bir de bilgisayar donanımı veya bilgisayar mimarisi konularına da bu konular girdiği için zannediyorum sadece organizasyonda bazı şeyler gördünüz ama disklerle alakalı bir mimari dersi görmediniz.
+
+17
+00:05:52,019 --> 00:06:01,799
+Onunla alakalı işte bizde dosya düzenleme dersi vardı. O dersi alsaydınız biraz daha hani bununla rahat oturdu. Öncelik sonralık ilişkisi olduğu için tamamına girmiyorum.
+
+18
+00:06:03,099 --> 00:06:12,299
+Bugünkü konumuz yine kalıcı verinin saklandığı disk yapılarındaki dosya sistemleri hakkında olacak.
+
+19
+00:06:13,076 --> 00:06:17,816
+Yani bir yerden okuma yazma yapmanın dışında biz bir de diske nasıl bakıyoruz?
+
+20
+00:06:17,995 --> 00:06:21,816
+İşte verilerimiz var. Bunları dosyalar, klasörler şeklinde saklıyoruz.
+
+21
+00:06:22,995 --> 00:06:35,636
+Birden fazla bilgisayar kullanıcısının da olduğu durumlarda bu verilerin disk üzerinde nasıl yerleştirildiği ve erişimlerin nasıl yapıldığı.
+
+22
+00:06:36,307 --> 00:06:41,788
+disk ve directory structure'ının nasıl olduğu gibi konulara bakacağız.
+
+23
+00:06:41,908 --> 00:06:43,367
+İşte bunun içerisinde protection var.
+
+24
+00:06:43,987 --> 00:06:48,847
+Chapter 11 ve Chapter 12'de böyle bazı yerleri anlatacağım.
+
+25
+00:06:50,048 --> 00:06:51,148
+Dersimizi tamamlayacağız.
+
+26
+00:06:51,247 --> 00:06:54,707
+Dersin sonuna doğru da final hakkında konuşmuş olursun.
+
+27
+00:06:54,707 --> 00:07:01,607
+Bir kere biz bir programlamada da file operation konusunu gördünüz.
+
+28
+00:07:02,259 --> 00:07:16,899
+Dosya diye bir kavramımız var. Disk üzerinde verileri sakladığımız çoğu şey dosya. Bu dosyaları da belli klasörler altında mantıksal olarak grupluyoruz veya klaster yapıyoruz.
+
+29
+00:07:18,560 --> 00:07:29,720
+Dosyanın normal şeyi contiguous yani mekansal anlamda süreklilik ifade eden mantıksal bir adres bölgesi.
+
+30
+00:07:30,163 --> 00:07:41,943
+Siz herhangi bir veriyi, işte bir word dokümanı olabilir, bir müzik dosyası olabilir, bir executable file olabilir, bir dosyada saklamak zorundasınız.
+
+31
+00:07:43,004 --> 00:07:53,243
+İşletim sisteminde bu dosyanın bazı alt niteliklerine göre veya öz niteliklerine göre belli ayarlamalar yapması gerekiyor.
+
+32
+00:07:57,716 --> 00:08:10,456
+PDF okuyucu bir yazılımın açılması gerekiyor. En basitinden bu bile bir özellik yani işletim sisteminin arada bir orada müdahalesi var. Bir PDF'e tıkladığınızda gidip de bir mesela müzik okuma şeyi açılmıyor.
+
+33
+00:08:11,355 --> 00:08:21,975
+İşte burada veri dosyanın türüne göre ilgili yazılımın ilişkilendirilmesi, ondan sonra işleri yapılacak ama bir de bunun disk üzerinde
+
+34
+00:08:23,444 --> 00:08:25,764
+Organize edilmesi, yönetilmesi gerekiyor.
+
+35
+00:08:26,944 --> 00:08:29,264
+Peki, dosyalarımızda neler tutuyoruz?
+
+36
+00:08:29,324 --> 00:08:30,104
+Datalar tutuyoruz.
+
+37
+00:08:30,164 --> 00:08:35,703
+Genel olarak bu datalar yapısal olabilir veya yapısal olmayan normal veriler olabilir.
+
+38
+00:08:36,384 --> 00:08:38,864
+Yapısal veriden kastım şu arkadaşlar.
+
+39
+00:08:39,923 --> 00:08:43,624
+Herhangi bir veri türü, buradaki nümerik, karakter, binary veriler.
+
+40
+00:08:44,744 --> 00:08:47,864
+Excel formatı diyeyim ama tam Excel formatı gibi değil.
+
+41
+00:08:48,467 --> 00:08:53,687
+Belli bir mantıkla açık text olabilir veya kapalı bir şekilde yazılabilir.
+
+42
+00:08:54,967 --> 00:08:58,147
+Oluşturulmuştur ve siz onu çok rahat okuma yazma yaparsınız.
+
+43
+00:08:59,307 --> 00:09:01,327
+CSV dosyaları bunlara örnek olabilir.
+
+44
+00:09:01,528 --> 00:09:05,827
+İçerisinde doğrudan bilgi edineceğiniz verileriniz saklanır.
+
+45
+00:09:06,807 --> 00:09:10,967
+Genel olarak dosya konseptinde şöyle bir mantık vardır.
+
+46
+00:09:11,707 --> 00:09:12,827
+Çoğu dosya...
+
+47
+00:09:13,556 --> 00:09:18,375
+Kendisine ait öz niteliklerin bulunduğu bir header'dan oluşacaktır.
+
+48
+00:09:19,296 --> 00:09:22,696
+Gerekirse bazı durumlarda bir footer kısmı olacaktır.
+
+49
+00:09:24,036 --> 00:09:29,996
+Diğer ara kısımlarda bir content, yani datanın olduğu veya context diyelim bir şey olacaktır.
+
+50
+00:09:31,115 --> 00:09:35,996
+Header, context ve footer.
+
+51
+00:09:41,172 --> 00:09:48,991
+Bunu şöyle düşünebilirsiniz. Şimdi bir dosyayı açmak istediğinizde önce header'da işte bu dosyanın türüne, bu dosya ne kadar bellekte yer tutacak?
+
+52
+00:09:49,991 --> 00:09:54,112
+İşte bellekte yer tutacak ama işte belki türüne göre ekstra ayarlamalar gerekecek.
+
+53
+00:09:54,112 --> 00:09:59,292
+Örneğin bir görüntü dosyası. Görüntü dosyasının içerisinde ne var? Piksellerin sayısal değerleri var.
+
+54
+00:10:00,152 --> 00:10:03,751
+İşte bir matriz gibi düşünün. Bunun sayısal değerleri var.
+
+55
+00:10:05,364 --> 00:10:13,244
+Ondan sonra bize ne gerekebilir? Bu matriz işte x ekseninde kaç tane piksel, y ekseninde kaç tane piksele karşılık gelecek boyutlardadır?
+
+56
+00:10:14,144 --> 00:10:16,683
+Veya her bir pikselin renk derinliği ne kadar olacak?
+
+57
+00:10:17,524 --> 00:10:23,864
+Bu bilgiler header'da olacak ki buna göre işte ekran sonuçta monitörü kullanacaksınız, bir output yapacaksınız.
+
+58
+00:10:23,864 --> 00:10:28,043
+İşte görüntüleme yapmak istiyorsanız. Bunların düzenlenmesi lazım.
+
+59
+00:10:29,524 --> 00:10:55,624
+Evet, datalarımız, dosyalar, işte genellikle datalardan oluşabilir. Datalara dedik ki bu unstructured veya structured olabilir. Unstructured verilere örnek, datalara örnek, işte bir pdf dokümanı unstructured'tır. Ondan sonra bir mp3 unstructured'tır. Siz mesela burada bir makine öğrenmesi yapacak olsanız içinden feature extraction gibi şeyler yapmanız lazım, gerekir.
+
+60
+00:10:56,692 --> 00:11:01,072
+Ama hepsinin kendisine göre bir organizasyonu, bir düzenlenme mantığı vardır.
+
+61
+00:11:01,192 --> 00:11:04,312
+Yani doğrudan header içerisinde işte bir algoritma yok.
+
+62
+00:11:04,851 --> 00:11:08,331
+İşte müzik headerıdır. Ondan sonra şu kadar süre müzik tutacaktır.
+
+63
+00:11:09,392 --> 00:11:17,632
+İşin içinde verilerin sıkıştırılması da önem arz ettiği için her veri türünün kendine ait bir dosya yapısı var.
+
+64
+00:11:18,196 --> 00:11:26,436
+Bunları merak ediyorsanız, işte MP3 file structure diye falan aratırsınız veya ne bileyim, png file structure diye aratırsınız.
+
+65
+00:11:27,096 --> 00:11:34,796
+Bunların headerlarının nasıl organize edildiği veya footer'ın nasıl organize edildiği, dataların nasıl saklandığını görebilirsiniz.
+
+66
+00:11:36,196 --> 00:11:40,696
+Dosya olarak bir de datalar dışında programlarımız var arkadaşlar.
+
+67
+00:11:40,696 --> 00:11:42,276
+İşte herhangi bir program.
+
+68
+00:11:45,172 --> 00:11:50,352
+Dosyaların içerikleri de dosyaları oluşturan creator'lar tarafından meydana geliyor.
+
+69
+00:11:50,471 --> 00:11:55,172
+İşte bir text file ise, ne bileyim işte txt uzantılı dosya, bir kaynak kod.
+
+70
+00:11:56,112 --> 00:11:58,932
+İşte c dosyası, java dosyası veya executable file.
+
+71
+00:11:59,731 --> 00:12:10,251
+Executable file'lara örnek olarak uzantı açısından genellikle but, işte com, exe.
+
+72
+00:12:12,916 --> 00:12:18,836
+Ve jar uzantılı dosyaları verebiliriz. Windows tarafında çok fazla tabii.
+
+73
+00:12:20,816 --> 00:12:26,036
+Şimdi işletim sistemi burada dosyanın belli özelliklerini saklamak zorunda.
+
+74
+00:12:26,936 --> 00:12:37,496
+Herhangi bir işte masa üstünüzdeki bir tane dosyaya sağ tıklayıp özellikler dediğinizde bu dosyaların alt detaylarına baktığınızda bir kere dosyanın ismi olacak arkadaşlar.
+
+75
+00:12:38,388 --> 00:12:55,508
+Bu dosya ismiyle zaten siz bir arama yapıyorsunuz genellikle. Bunun bir identifier'ı oluyor. Bu dosya sistemi içerisinde bir tek ile bir unique bir etikettir. Identifier sayesinde belli şeylere erişebiliyorsunuz.
+
+76
+00:12:56,447 --> 00:13:04,168
+Dosyaların tipleri var. İşte PDF mi, doküman mı, ne bileyim görüntü mü, görüntüyse hangi tür görüntü, PNG mi, BMP mi gibi.
+
+77
+00:13:05,460 --> 00:13:10,680
+Bunlar çok rahat bizim elde edebileceğimiz şu üç tanesi şeyler.
+
+78
+00:13:10,980 --> 00:13:16,080
+İşte dosyanın size'ı var. Bunu da çok rahat elde ederiz. Ne kadar yer oluşturmuş.
+
+79
+00:13:17,220 --> 00:13:25,040
+Şimdi koruma ve güvenlikle alakalı, yani protection ve security ile alakalı bu dosyada alakalı belli zaman damga bilgileri.
+
+80
+00:13:25,760 --> 00:13:28,520
+İşte bu dosya ne zaman oluşturulmuş? Ne zaman değiştirilmiş?
+
+81
+00:13:29,299 --> 00:13:35,139
+Ondan sonra hangi kullanıcı, bilgisayardaki hangi kullanıcı bu dosya üzerinde değişiklik yapmıştı veya oluşturmuş?
+
+82
+00:13:35,719 --> 00:13:38,179
+Arka planda bunların loglarının tutulması lazım.
+
+83
+00:13:38,459 --> 00:13:42,579
+Amaç, yerine göre koruma, yerine göre güvenlik gibi şeyler.
+
+84
+00:13:43,639 --> 00:13:46,379
+Şimdi dikkat ederseniz lokasyonu atladım.
+
+85
+00:13:47,719 --> 00:13:53,999
+Bu bahsettiğimiz dosya, device üzerinde, disk üzerinde hangi lokasyonda bulunuyor?
+
+86
+00:13:53,999 --> 00:13:55,999
+Şimdi lokasyon kavramı.
+
+87
+00:13:56,500 --> 00:14:02,360
+Söylediğimizde size birkaç farklı şekillerde lokasyon gelebilir. En basitinden düşüneceğiniz şey ne olur?
+
+88
+00:14:03,000 --> 00:14:08,300
+Hangi diskin altındaki hangi klasörde? Bu mantıksal bir lokasyon arkadaşlar.
+
+89
+00:14:08,600 --> 00:14:15,700
+C'nin altındaki programlarım veya ders notlarım klasörünün altındaki, işletim sistemi klasörünün altındaki,
+
+90
+00:14:15,700 --> 00:14:23,596
+işte chapter 15, ppt dosyası. Bu bir lokasyon mu? Evet lokasyon ama bu...
+
+91
+00:14:23,668 --> 00:14:30,388
+Sadece bizim anlayabileceğimiz, kullanıcı olarak yorumlayabileceğimiz bir lokasyon.
+
+92
+00:14:30,908 --> 00:14:36,228
+Bir de kullandığımız diskin yapısına göre bir pointer tutuluyor burada.
+
+93
+00:14:37,088 --> 00:14:45,088
+O diskin mesela silindirse hangi silindirinde, hangi silindirin hangi track bölgesinde bununla alakalı detayların tutulması lazım.
+
+94
+00:14:46,611 --> 00:14:58,792
+Dosyalarla alakalı daha detaylı bilgiler, bir directory structure içerisinde tutuluyor arkadaşlar. Bu da directory structure'da disk üzerinde saklanıyor.
+
+95
+00:14:59,512 --> 00:15:06,052
+Farklı bunların varyasyonları var. Yani birçok şey directory structure altında tutulacak.
+
+96
+00:15:06,052 --> 00:15:13,052
+Şimdi şurada file infolarla alakalı bir görsel görüyoruz. İşte macOS X ve...
+
+97
+00:15:13,652 --> 00:15:37,872
+Üzerinde yapılmış. İşte burada mesela şuradaki bahsettiğimiz şeylerin, maddelerin hepsi her işletim sisteminde olacak değil. Ama biraz önce gördüklerimizin çoğu. İşte burada bakın. Kind demiş burada. Windows'da extension deniyor veya type deniyor. Size demiş. Yer bilgisi demiş. Ne zaman create edildi, ne zaman modify edildi.
+
+98
+00:15:38,355 --> 00:15:44,775
+Bununla alakalı ekstra detaylar, işte burada görüyorum, işte adı, uzantısı gibi.
+
+99
+00:15:45,295 --> 00:15:50,435
+Mesela bunu hangi programla açmak istediğiniz gibi şeyleri görebiliyorsunuz.
+
+100
+00:15:50,575 --> 00:15:58,775
+Dolayısıyla işletim sistemi bir dosyanın bu tarz faaliyetlerini yönetmekle görevli.
+
+101
+00:15:59,595 --> 00:16:02,095
+Sadece bu değil arkadaşlar.
+
+102
+00:16:02,375 --> 00:16:05,515
+Tabii bunlar oluşturulmuş bir dosya için olacak da biz...
+
+103
+00:16:05,779 --> 00:16:17,839
+Aslında dosya dediğim şey abstract bir data type. Dosyayı oluşturabiliriz. Dosyanın içerisine yazma yapabiliriz. Bu yazma dediğim şey bir pointerla belli bir pointerla gidip bir veri yazmaktır.
+
+104
+00:16:26,227 --> 00:16:29,807
+yerini, bölgesini değiştirebiliriz ki buna seek ifadesi veriyoruz.
+
+105
+00:16:30,427 --> 00:16:33,827
+Dosyayı silebiliriz, dosyanın içini boşaltabiliriz.
+
+106
+00:16:34,827 --> 00:16:37,307
+İşte open fi, close fi diye şey var.
+
+107
+00:16:39,168 --> 00:16:51,128
+Bir director searcher'ı arayıp işte fi altında bellek üzerinde ilgili bölgeye taşıma yapabiliyoruz veya tam close yapabiliyoruz.
+
+108
+00:16:53,908 --> 00:16:56,507
+Open File dediğimiz şeye birazcık bakalım.
+
+109
+00:16:58,607 --> 00:17:05,188
+Bu Open File'ları yönetmek için birkaç farklı işte kod data, geri dataya ihtiyaç duyuyor.
+
+110
+00:17:05,288 --> 00:17:08,188
+Open File'lar tables, tabloları.
+
+111
+00:17:08,708 --> 00:17:14,827
+Yani şu an hangi dosyalar açık durumda bunların bir şekilde işletim sistemi tarafından tutulması lazım.
+
+112
+00:17:15,927 --> 00:17:18,668
+Ve açık dosyalar içerisinde bir File Pointer.
+
+113
+00:17:19,231 --> 00:17:24,031
+En son nereye yazma yaptınız, nereden okuma yaptınız? Bunun da bir yerde tutulması gerekiyor.
+
+114
+00:17:24,152 --> 00:17:29,311
+C'de zaten bir anlamda bunların uygulamasını yapısal programlamada yaptınız arkadaşlar.
+
+115
+00:17:30,351 --> 00:17:38,112
+İşte file position indicator dediğimiz şeyler vardı. Bunlar işletim sistemi tarafından da tutulacak şeyler.
+
+116
+00:17:38,851 --> 00:17:40,751
+File open count da bir counter.
+
+117
+00:17:41,619 --> 00:18:05,679
+Bize şey söylüyor, işte kaç tane dosyanın açık olduğunu söylüyor. Bu da prosesler arasındaki işlemlerde kullanılacak bir şey. Bir dosyanın disk location'ı, burada da veriye erişim information için bir cache memory olarak tutuluyor ve access write'lar, erişim hakları.
+
+118
+00:18:06,804 --> 00:18:15,003
+Hangi kullanıcı hangi dosyaya hangi hakla erişebilir? İşte okuması, yazması, hem okuması hem yazması gibi özellikler var. Bunlar çalacak.
+
+119
+00:18:16,023 --> 00:18:22,423
+Open File'ların lockingi, bu da yine işletim sistemlerinin bazıları tarafından sağlanan bir özellik.
+
+120
+00:18:23,604 --> 00:18:32,844
+Biz senkronizasyon konusunu anlatırken, Reader-Writer lock'larından bahsetmiştik. Bu da ona benzer bir kilit.
+
+121
+00:18:33,200 --> 00:18:49,940
+Sonuçta bir dosyaya birden fazla program veya proses erişebiliyor. Bir anlamda bu da bir mekanizması geçebilir. Mesela file locking ile alakalı bir java örneği var. Bunlar çok önemli değil. Sınavda soracağım şeyler değil.
+
+122
+00:18:51,124 --> 00:18:58,384
+File type'lara geldiğimizde dosyaların genel olarak en çok karşımıza çıkan dosya türlerini burada görüyorsunuz.
+
+123
+00:18:58,463 --> 00:19:02,943
+İşte executable dosyalar. Biraz önce bazılarını yazdım ama unuttuğum da vardı.
+
+124
+00:19:02,943 --> 00:19:12,624
+Bin dosyası veya non ifadesi olan dosyalar. Obje dosyaları, source code dosyaları, batch fileler, batch veya sh.
+
+125
+00:19:13,104 --> 00:19:18,264
+Batch Windows'da kullanıyoruz. sh'de Linux gibi şeylerde.
+
+126
+00:19:18,867 --> 00:19:20,167
+İşletim Sistemleri'nde.
+
+127
+00:19:21,847 --> 00:19:31,607
+Fark edemediğim burada işte archive dosyaları biraz daha veriyi sıkıştırmak ve arşivlemek için kullandığımız işte zip, rar, tar gibi şeyler diyebiliriz.
+
+128
+00:19:32,887 --> 00:19:43,248
+Şimdi dosya structure'na, dosya yapısına baktığımızda aslında dosya yapısı bir word'ların yani byte'ların bir dizisi şeklinde.
+
+129
+00:19:43,892 --> 00:19:54,152
+Farklı farklı dosya türleri var. İşte random access file'ler veya random olmayan sequential access file'ler falan diyebiliriz.
+
+130
+00:19:54,992 --> 00:20:02,811
+Bir kere dosyada biz kayıtlar tutuyoruz. Bir kayıt data structure'ı diyebiliriz. Bunlar satırlar şeklinde olabilir.
+
+131
+00:20:03,751 --> 00:20:09,851
+Yani şöyle bir veriyi saklayacaksanız bir satır yazarsınız, başka bir veriyi ondan sonraki satıra yazarsınız.
+
+132
+00:20:10,208 --> 00:20:19,748
+Dolayısıyla okuma yazma yaparken siz satır satır veri okuyarak, işte bir satırı okudum veya bir satır üzerinde değişiklik yaptım, çok rahat işlem yapabiliyorsunuz.
+
+133
+00:20:20,708 --> 00:20:28,508
+Veya belli şeyler var, satır satır veri yapamıyorsunuz ama verinizin boyutu mesela işte şuradaki şey kadar diyelim, işte şurada bir uzunluk var.
+
+134
+00:20:29,668 --> 00:20:37,508
+Yazacağınız bütün veriyi bu uzunluktaki veriye kadar yazıyorsunuz. Ondan sonraki yazacağınız şey buraya kadar oluyor, sonra buraya kadar oluyor. Bu da bir yaklaşım.
+
+135
+00:20:37,971 --> 00:20:47,231
+Şunun makise. Diğeri de variable length. Variable length diye yapılar birazcık okuma, yazma açısından ekstra zahmet gerektiren şeyler.
+
+136
+00:20:48,072 --> 00:20:52,672
+İşte belli bir format veriyorsunuz. O formatta genellikle headerlarla sağlanıyor.
+
+137
+00:20:53,351 --> 00:20:58,711
+Diyorsunuz ki belli bir veriyi buraya kadar yazacağım. Bundan sonraki verinin ne kadar yazılacağına dair bir ilginç yok.
+
+138
+00:20:58,811 --> 00:21:04,172
+Bundan sonraki veri daha fazla uzun olabiliyor. Kendi içerisinde bu şekilde yapılandırmalar var.
+
+139
+00:21:04,723 --> 00:21:26,064
+Daha karmaşık yapılarda bunlar basit olanlar formatlı dökümanlar dediğimiz veya relocatable load file dediğimiz çalışma zamanı içerisinde içeriği değiştirilebilen veya relocate edilebilen yapılar veya formatlı dökümanlar da işte belli bir header'la içeriğinin organize edildiği şeyler.
+
+140
+00:21:33,364 --> 00:21:42,264
+Farklı kontrol karakterleri eklenerek, uygun kontrol karakterleri eklenerek simüle edilebilir diye şurada bir açıklama görüyoruz.
+
+141
+00:21:42,964 --> 00:21:44,444
+Şimdi bu biraz şu demek arkadaşlar.
+
+142
+00:21:45,844 --> 00:21:48,704
+Lise biyolojisinden protein sentezini hatırlayın.
+
+143
+00:21:48,764 --> 00:21:51,924
+Bir başlatma şeyi vardı. Kodon mu deniyordu ona?
+
+144
+00:21:52,604 --> 00:21:53,784
+Bir de bitirme şeyi vardı.
+
+145
+00:21:54,804 --> 00:21:57,464
+Yani bir veri akışı başlayacak. Bir yerden veri okuyacaksınız.
+
+146
+00:21:57,464 --> 00:22:00,084
+O ilk birkaç okuduğun şey işin başladığını.
+
+147
+00:22:00,788 --> 00:22:03,548
+En son okuduğunuzda işin bittiğini size gösteren bir şey.
+
+148
+00:22:04,347 --> 00:22:05,847
+Dosya yapılarında da böyle bir şey var.
+
+149
+00:22:06,887 --> 00:22:09,488
+Herhangi bir dosyayı şu şekilde elinize ele aldığınızda
+
+150
+00:22:09,488 --> 00:22:18,327
+burada hangi kısmın içerik, hangi kısmın header, hangi kısmın footer olduğunu doğrudan algılamak, okumak kolay değil.
+
+151
+00:22:18,327 --> 00:22:25,327
+Bunu yaparken belli karakterlerle, kontrol karakterleriyle bu organizasyon sağlanıyor.
+
+152
+00:22:26,387 --> 00:22:35,827
+Bu sağlandıktan sonra işletim sistemi veya sizin kullanacağınız program dosya üzerinde okuma, yazma gibi farklı operasyonları gerçekleştirebiliyor.
+
+153
+00:22:37,107 --> 00:22:41,487
+Evet, sıralı erişim dosyalara baktığınızda bunlar şeyden, programlardan bilinen şeyler. Hızlı geçeceğim.
+
+154
+00:22:42,307 --> 00:22:49,527
+Birer birer veya işte belli okuma miktarınca erişim yapabiliyorsunuz. Bir yerden önce başlıyorsunuz.
+
+155
+00:22:50,036 --> 00:22:54,395
+Belli bir yere gitmek istiyorsanız, şu noktaya gelmek istiyorsanız, buraya kadar gelecek istersen.
+
+156
+00:22:55,256 --> 00:23:03,016
+Eğer mevcut pozisyonunuz buradaysa, okuma yazma yapıyorsanız, bir şey okuma yazma yaptığınızda, bu da oradan ileriye doğru olacaktır.
+
+157
+00:23:03,135 --> 00:23:04,615
+Geriye doğru okuma yazma yapmalıyız.
+
+158
+00:23:04,716 --> 00:23:10,895
+Eğer illaki geriye gitmek istiyorsanız, rewind dediğimiz en başa gidip bu şekilde bir şey yapıyorsunuz.
+
+159
+00:23:12,155 --> 00:23:17,196
+Kurallı okuma yazma yapılacak durumlarda nispeten mantıklı bir dosya yapısı.
+
+160
+00:23:17,683 --> 00:23:23,223
+Ama sürekli böyle okuma yazma yapıldığında da bu sefer algoritmik olarak bayağı bir karmaşıklık oluyor.
+
+161
+00:23:23,983 --> 00:23:29,364
+Bir de yapısal programlamada falan görmüşsünüzdür veya işte o zamanlar bilmiyorum kimden aldınız.
+
+162
+00:23:30,364 --> 00:23:41,364
+Belli bir veriyi yazdığınızda bu verinin boyutu eğer aşarsa, işte mesela şurada bir veriniz var, burada bir veri var, işte şurada da diğer veri var.
+
+163
+00:23:41,748 --> 00:23:55,128
+Şu veri üzerinde değişiklik yapmak istiyorsunuz. Bu veri üzerinde yapacağınız değişiklik şuradaki boyutu açtığında ne olacaktır? Şunun alanına girmiş olacaksınız. Bu anlamda sequential access faillerin bazı dezavantajları da yok değil.
+
+164
+00:23:55,908 --> 00:24:04,548
+Bir diğeri, sequential access'te metotlarımız nelerdir? Bir dosyadan okuma yapacaksak veya yazma yapacaksak,
+
+165
+00:24:05,428 --> 00:24:13,908
+İşte oku, sonrakini oku, yaz sonraki kısma yaz, reset yap, işte başa dön falan şeyler. Bunlarla alakalı metotlar olacak.
+
+166
+00:24:14,888 --> 00:24:20,368
+Direct yetişimde de siz sabit uzunlukta bir dosya gibi düşünün.
+
+167
+00:24:20,488 --> 00:24:23,188
+İşte en tane okuma yapacaksınız, en tane yazma yapacaksınız.
+
+168
+00:24:23,948 --> 00:24:32,168
+Okuma veya yazma yapmak istediğiniz bölgeye gidip doğrudan kendinizi konumlandırıp bir veri okuma yazma işlemi yapabiliyorsunuz.
+
+169
+00:24:35,571 --> 00:24:43,451
+Şunları geçebiliriz. Diğer erişim metotları da var. Farklı işletim sistemleri tarafından kullanılan şeyler diyebiliriz.
+
+170
+00:24:45,311 --> 00:24:57,892
+Mesela bir dosyanın üzerinden birden fazla dosyanız var. Örneğin last name'ler demiş. Bu bir indeks dosyası. Kişileri soy isimlerine göre indeks dediniz.
+
+171
+00:24:58,579 --> 00:25:06,399
+Bu soy isimlere göre de bunların belli diğer durumlarını, işte logic record numberlarını tutuyorsunuz. Basit bir yapı.
+
+172
+00:25:07,499 --> 00:25:14,179
+Ne olacak? İşte şöyle bir şeyi aradığınızda, bunun karşılığına denk düşen aslında bir hash gibi de düşünülebilir.
+
+173
+00:25:14,919 --> 00:25:20,899
+Bu değeri buluyorsunuz. Buradan da girip göreceli dosya, relatif payı üzerinde bu noktaya gidiyorsunuz ve buradan okuyacağınız,
+
+174
+00:25:20,899 --> 00:25:23,839
+işte Smith olan kişinin, John Smith'in.
+
+175
+00:25:24,288 --> 00:25:28,148
+İşte social security number, yaş bilgisi gibi değerleri alabiliyorsunuz.
+
+176
+00:25:29,468 --> 00:25:32,408
+Bunlar dosyayla alakalıdır. Şimdi bir de direktör yapılarına bakalım.
+
+177
+00:25:32,408 --> 00:25:44,208
+Şimdi birden fazla dosyanın bir koleksiyon halinde tutulduğu mantıksal bölgelerin dizim, klasör, direktörü, folder gibi kelimeler kullanıyoruz.
+
+178
+00:25:45,364 --> 00:25:52,683
+Bu şu demek, sizin dosyalarınız disk üzerinde fiziki olarak bir yerde saklanıyor. Bunların fiziki lokasyonları var.
+
+179
+00:25:53,983 --> 00:26:00,763
+Bunu şöyle düşünelim bir de. Mesela D altında bir tane klasörünüz var. D diski altında bir tane A klasörü olsun. Tamam mı?
+
+180
+00:26:01,523 --> 00:26:10,683
+Bu A klasörün altında da işte A1, A2, nokta nokta nokta, A10, 10'a kadar dosyalarınız olsun.
+
+181
+00:26:11,508 --> 00:26:19,368
+Bu klasörün altında bu dosyalar tutuluyorsa bunlar belli yerlerde dosyalar kendi içlerinde bitişik bir şekilde saklanacak diye bir kayda yok.
+
+182
+00:26:20,607 --> 00:26:25,228
+A1 mesela disk üzerinde bir yerdedir. A1 dosyası. Aynı şuradaki F1 gibi.
+
+183
+00:26:26,668 --> 00:26:37,788
+A klasörü altında A1 dosyasını fiziki bellek adresini, fiziki disk adresini gösteren bir klasör, bir aslında işaretçi tutuyorsunuz.
+
+184
+00:26:39,412 --> 00:26:40,811
+Bu şekilde burada kalıyor.
+
+185
+00:26:41,852 --> 00:26:49,412
+Dizinler arası bir mesela kopyalama yapma, kopyala yapıştır yaptığımızda yönelik ve işletim sistemleri gerçek kopyalama yapmıyor.
+
+186
+00:26:50,092 --> 00:26:57,412
+İşte D diskinden D diskine bir şeyi kopyalamaya veya taşımaya çalıştığımızda olduğu yerin sadece şu şeyini değiştiriyorsunuz.
+
+187
+00:26:58,092 --> 00:26:59,692
+Bağlantısını değiştiriyorsunuz.
+
+188
+00:27:00,243 --> 00:27:08,443
+Birebir dizinler arasında yaptığınız zaman C'den D'ye yaptığınız zaman birebir kopyalama tarzında şeyler oluyor. O zaman iki defa veri okunuyor veya yazılıyor.
+
+189
+00:27:09,183 --> 00:27:21,063
+Haliyle sizin direktörünüz altında, klasörünüz altında tuttuğunuz şu işaretçiler dosyanın disk'teki gerçek adresini gösteren bir pointer gibi yapılar diyebiliriz.
+
+190
+00:27:22,063 --> 00:27:26,723
+Tabi bu directory structure'ın da yine nerede tutulması lazım?
+
+191
+00:27:27,412 --> 00:27:32,692
+disk üzerinde tutulması lazım. Yani dosyaları da diskte tutuyoruz.
+
+192
+00:27:33,611 --> 00:27:42,172
+Directory Structure'nı da diskte tutuyoruz. Sizin sisteminiz açıldığında directory structure'ı yöneten bir proses de açılıyor.
+
+193
+00:27:42,172 --> 00:27:44,172
+Disk yapısı...
+
+194
+00:27:49,811 --> 00:27:55,271
+Kopyalama mı yapacaksınız, okuma mı yapacaksınız, bütün dosyalarınıza, klasörlerinize erişebiliyorsunuz.
+
+195
+00:27:57,271 --> 00:28:02,831
+Tabi diskstraction'a baktığımızda yine bu eski bir konu olduğu için ama bir kısmını anlatacağım.
+
+196
+00:28:03,951 --> 00:28:14,931
+Herhangi bir SSD disk veya hard disk drive dediğimizde bunu kendi içerisinde partition dediğimiz, işte C partition, D partition gibi parçalara ayırabiliyoruz.
+
+197
+00:28:16,627 --> 00:28:41,887
+RAID yapılarına falan burada çok girmeye gerek yok. Bunlar biraz şey konuları. Bunlar sayesinde mesela siz belli bir partition'a işte işletim sisteminin kernel tarafını kurabiliyorsunuz. Diğer kısımlara kendi dosyalarınızı ekleyebiliyorsunuz. Bu da bir anlamda güvenlik amacıyla yapılması gereken bir şey. Eğer tek bir disk yapısı, tek bir partition kullanırsanız,
+
+198
+00:28:42,163 --> 00:28:54,044
+Hani işletim sisteminin kernel'ı zarar gördüğünde, yani sistem çöktüğünde, işletim sistemi çöktü deriz ya, bu tarz durumlarda verilerinizi kurtarmak bazen güç olabiliyor veya hiç imkansız olabiliyor.
+
+199
+00:28:54,183 --> 00:28:58,744
+Onun için partition'lar bizim işimize yarıyor diyebiliriz.
+
+200
+00:29:00,223 --> 00:29:05,983
+Her birinin işte kendisine ait bir volüm diye ifade edilen bir yapısı var arkadaşlar.
+
+201
+00:29:07,183 --> 00:29:09,443
+İşte partition'lar içerisinde diyelim.
+
+202
+00:29:10,099 --> 00:29:37,539
+Bir tipik dosya sistemi organizasyonu dediğimizde partition A'nın kendi içerisinde bir direktör yapısı var. Partition B'nin kendi içerisinde direktör yapısı var. Bu bir disk 1. İkinci diskimiz ve üçüncü diskimiz belki mesela partition C olarak iki diski ayrı bir partition C olarak gösterebiliyorsunuz. İki disk yani birbirinden bağımsız ama tek bir partition gibi ayarlanabiliyor bazı sistemden.
+
+203
+00:29:40,564 --> 00:29:46,663
+Burada farklı işletim sistemlerindeki file sistemlerinin örneklerini görüyoruz. Bunları geçebiliriz.
+
+204
+00:29:47,663 --> 00:29:51,084
+Peki bir direktör üzerinde farklı nasıl şeyler yapılabilir?
+
+205
+00:29:51,223 --> 00:29:53,743
+Direktör üzerinde bir dosya arayabiliyoruz.
+
+206
+00:29:56,243 --> 00:30:01,344
+Şimdi bu dosya arama şeyinde de mesela şeyde göstermiştik Shell tarafında.
+
+207
+00:30:01,564 --> 00:30:04,683
+Aynısı MS-DOS'ta da var. Bunun hazır komutları var.
+
+208
+00:30:06,991 --> 00:30:09,211
+Belli proseslerle ilişkilendiriliyor.
+
+209
+00:30:10,112 --> 00:30:11,152
+Mesela şöyle yapalım.
+
+210
+00:30:12,531 --> 00:30:13,491
+cmd diyelim.
+
+211
+00:30:15,432 --> 00:30:20,951
+Dir ifadesini veya işte burada ls çalışmıyor da işte PowerShell'de falan çalışıyor.
+
+212
+00:30:21,872 --> 00:30:24,612
+Şey yaptığınızda herhangi bir şeyleri görürsünüz.
+
+213
+00:30:24,832 --> 00:30:26,811
+İşte gördüğünüz dosyalar karşınıza geliyor.
+
+214
+00:30:27,612 --> 00:30:31,791
+Bunun dışında bir dosyayı mesela ararken.
+
+215
+00:30:32,339 --> 00:30:39,480
+İşte dosyanın adını, ilk karakterini, üçüncü karakterini girip diğer karakterlerin ne olduğuna bakmaksızın arama şeyleriniz var.
+
+216
+00:30:40,399 --> 00:30:45,139
+Tabi bu arama yaparken arkada bir algoritma çalışıyor. İşte bread first search veya depth first search gibi.
+
+217
+00:30:45,920 --> 00:30:48,779
+Bütün dizin yapısında size o dosyanın lokasyonunu buluyor.
+
+218
+00:30:48,779 --> 00:30:57,779
+Bunun dışında direktör üzerinde dosya oluşturma, dosya silme, bir direktör ile listeleme yapma, dosyanın adını değiştirme, file sisteminin...
+
+219
+00:30:57,811 --> 00:31:07,592
+üzerinde gezinme yapmakla, traverse dediğimiz şey. Çünkü burada file sistemi bir ağaç yapısı gibi yapıda olacak arkadaşlar, direktörler sayesinde.
+
+220
+00:31:08,332 --> 00:31:16,731
+Aradığımız bir dosyayı, bir dosyayı ararken, ağaç üzerinde nasıl traverse yapıyorsak, burada da benzer operasyonlar mümkün.
+
+221
+00:31:20,403 --> 00:31:46,124
+Directory'yi biz peki neden kullanıyoruz? Bir kere dedik ya mantıksal bir yapı. Bir kere dosyalarınızı daha anlamlı, daha sistemli bir şekilde saklamak istersiniz. Böyle bir şey olmasaydı her şey karmakarışık bir yerde olacaktı. Kullanıcılara da işte bir kolaylık sağlıyor ve kendi içerisinde gruplama yapmanızı sağlıyor. Yani hepsi birbirini, bu üç madde birbirini tamamlayan şeydir.
+
+222
+00:31:47,316 --> 00:31:56,476
+Tabi burada directory yapısı birkaç farklı şekilde sağlanmış. Önce bütün kullanıcılara eşit olacak şekilde single directory yapısını kullanmışlar.
+
+223
+00:31:57,396 --> 00:32:01,836
+Örneğin cat isminde bir directory var. Onun altında bir tane dosya olacak şekilde.
+
+224
+00:32:02,576 --> 00:32:09,756
+Bo adında. Yani her directory single directory bir tane dosyayla ilişkilendirilir şekilde.
+
+225
+00:32:09,956 --> 00:32:13,396
+Tabi isimlendirme burada bir problem. Gruplama da problem oluyor.
+
+226
+00:32:14,099 --> 00:32:29,720
+Yani yeterince isim yazmanız lazım. Bir de örneğin benim belli dosyalarım var. Bunları gruplamak problem olabiliyor. Yani bazı dosyalar hem şu gruba girecek hem de şu gruba girecekse bu bir problem. Pardon.
+
+227
+00:32:39,443 --> 00:33:01,624
+Direktörsi ve o direktör altında dosyaları var. Kimin dosyası, kimdedir, işte burada tabii erişimle alakalı sıkıntılı olmalı, bunu yönetmek bir adım. İki seviyeli de ayrı bir üst seviye bir direktör yapısı daha tutuyorsunuz. Yani bunların çoğu dosya aslında ama şey yani veri olarak bir yerde saklanan veriler.
+
+228
+00:33:03,155 --> 00:33:16,155
+Diyorsunuz ki User 1, User 2, 3 ve 4, 4 tane kullanıcımız varsa User 1'in sahip olduğu direktörleri işte şuradaki pointer ile gösterelim. Onlar da kendi içerisindeki dosyaları göstersin.
+
+229
+00:33:16,955 --> 00:33:25,995
+Dolayısıyla ne oluyor? Bir aslında ağaç yapısı meydana geliyor burada. Tabi bu ağaç yapısında da bir petimiz olacak. İşte ben şuradan gideceksem.
+
+230
+00:33:26,483 --> 00:33:30,923
+Yüzdür bir üzerindeki, test altındaki, şuraya geçeceksem bunun bir peti olacaktır.
+
+231
+00:33:32,203 --> 00:33:38,463
+Avantajı ne? Aynı dosyalar, farklı kullanıcılarda mümkün olabiliyor.
+
+232
+00:33:38,663 --> 00:33:48,163
+Bakın şurada A kullanıcısının da A klasörü olsun, direktörüsü olsun, B kullanıcısının da A direktörüsü olsun ve ikisinin aynı dosyaları olsun.
+
+233
+00:33:49,324 --> 00:33:51,943
+O zaman burada aynı dosyaya sahip iki şey tutulmaz.
+
+234
+00:33:52,884 --> 00:34:18,523
+Yani burada şöyle de düşünmeyelim. Hocam işte ikisinin aynı dosyası olmayıversin. İşte birisi A1 yapsın gibi şeyler. Yok, öyle değil arkadaşlar. Örneğin bir sistem dosyasıysa, yani isminin değiştirilmesi başka şeyleri de etkileyecekse bu bir problem. Dolayısıyla burada bu şekilde sıkıntılar yaşanabiliyor. Ama bu iki seviyeli direktörde ne oluyor? Her birinin kendine ait direktörü, alt direktörleri var.
+
+235
+00:34:19,411 --> 00:34:23,491
+Arama işlemi göreceli olarak daha verimli olabiliyor.
+
+236
+00:34:24,971 --> 00:34:28,551
+Herhangi bir şekilde ama gruplama yeteneği yok.
+
+237
+00:34:28,791 --> 00:34:36,311
+Yani işte şuradaki dosyalarla, mesela bir Word doküman dosyalarıyla şuradakilerle, şunları gruplama noktasında sıkıntımız var.
+
+238
+00:34:38,391 --> 00:34:41,991
+Bunu biraz daha ağaç seviyesine yaklaştırdığımızda diyoruz ki,
+
+239
+00:34:43,291 --> 00:34:46,971
+tabii bu örnek bir ağaç, her şeyde olacak diye bir şey yok.
+
+240
+00:34:47,603 --> 00:34:55,283
+İşte bir root ana direktörümüz var. Onun altında alt direktörler, onların altında daha alt direktörler.
+
+241
+00:34:55,963 --> 00:35:01,143
+Yapraklarda dosyalar olacak şekilde bir yapılandırma burada sağlanıyor.
+
+242
+00:35:03,623 --> 00:35:14,663
+Örneğin şöyle baktığımızda tabii daha etkili ve gruplama yeteneği olan mesela gruplama yeteneğinden kastımız programlar dediğimiz şeyler.
+
+243
+00:35:15,507 --> 00:35:28,788
+İşte şu ağacın altında olacak. Ondan sonra executable veya bin dediğimiz şeyler şurada olacak şeklinde biraz daha gruplama yeteneği var. Current directory'e baktığınızda işte cd komutu şeyde de gördünüz.
+
+244
+00:35:29,648 --> 00:35:38,768
+İşte hangi aktif klasörde işte petin altında bulunduğumuzu size söylüyor. Daha sonra oradaki dosyaları listeleyip işte üzerinde işlem yapabilirsiniz.
+
+245
+00:35:40,692 --> 00:35:46,771
+Tabi burada işte pet noktasında baktığımızda iki farklı pet yapısından bahsedeceğiz.
+
+246
+00:35:47,751 --> 00:35:58,791
+Bir ağaç gibi bir şey varsa herhangi bir dosyanın işte şu dosyanın petiyle alakalı ilgileniyorsak bunun petlerinden bir tanesi mutlak pet dediğimiz bir şey.
+
+247
+00:35:58,791 --> 00:36:04,751
+İşte ben bu dosya last klasörü altında o şuna bağlı, o buna bağlı, o da buraya bağlı.
+
+248
+00:36:08,148 --> 00:36:29,427
+Mail, ondan sonra ptr, prt, ondan sonra last diye devam edip gidiyor. Bunlara mutlak pet diyoruz. Bir de bulunduğumuz yerdeki daha kısa olan göreceli pet dediğimiz şey var. Bulunduğunuz yerdeki current directory'e göre işlem yapacağınız yerler. Bunu söyleyebiliriz.
+
+249
+00:36:34,608 --> 00:36:42,288
+Alt klasör oluşturmak için mkdir ifadesini hem program yazarken hem de işte şeyde, shell'de kullanabiliyorsunuz.
+
+250
+00:36:43,528 --> 00:36:58,068
+Eğer diyor gibi sizin mevcut directoriniz current director ise mail ise mkdir count dediğinizde bulunduğunuz göreceli petten dolayı, relatif petten dolayı şunu sağlıyor size bu program.
+
+251
+00:36:59,092 --> 00:37:04,692
+Aktif direktörümüz mail'in altında count isminde bir direktör oluşturabilir.
+
+252
+00:37:05,412 --> 00:37:20,731
+Ama ben bunu bu şekilde değil de, işte mail'in altında değil de mesela diyelim ki bin'in altındaki hex'in altında bir dosya oluşturacaksam veya klasör oluşturacaksam o zaman bu mutlak peti yazmam gerekiyor.
+
+253
+00:37:20,731 --> 00:37:23,912
+İşte bin slash hex slash şey diye.
+
+254
+00:37:24,271 --> 00:37:28,231
+Aynı kod yine orada da çalışacak ama doğrudan count yazmayacaksınız.
+
+255
+00:37:28,992 --> 00:37:34,431
+Bulunduğunuz yerin, yani hedeflediğiniz yerin ilgili kısmını yazacaksınız.
+
+256
+00:37:35,412 --> 00:37:44,912
+Veya deleting mail dediğinizde, işte mailin altındaki bir mail'i silerseniz, bu ağacı tamamen yok etmiş oluyorsunuz.
+
+257
+00:37:44,912 --> 00:37:48,931
+Sonuçta bir klasörü silginizde içindeki dosyaları da silinecek. Bu kadar basit.
+
+258
+00:37:49,811 --> 00:38:07,492
+Tabi işletim sistemi açısından eğer çok kullanıcılı bir yapı varsa veya bazı dosyalar root altındaki klasörlerde, üst klasörlerde bir cycle oluşturacak şekilde veya cycle oluşturmayacak şekilde düzenleniyorsa bunların bir kontrol edilmesi lazım.
+
+259
+00:38:07,751 --> 00:38:11,392
+Bunda shared subdirectory diyoruz.
+
+260
+00:38:12,532 --> 00:38:14,291
+Tabi burada bir acyclic graph var.
+
+261
+00:38:14,835 --> 00:38:38,755
+Ascyclic Graph nedir? Döngü içermeyen bir şey. Örneğin şurada bir tane dosyamız var. Bu dosyaya farklı açılardan, şu ve şu direktörlerden, buradaki count ve şuradaki count isimli alt direktörlerden erişim var. Baktığım zaman burada bir cycle yok, ascyclic bir durum var diyebiliriz.
+
+262
+00:38:39,188 --> 00:38:42,827
+Veya alt diğer şeylerde de bunlar geçerli arkadaşlar.
+
+263
+00:38:44,688 --> 00:38:50,568
+Bunun bir anlamda işletim sistemi tarafından da kontrol edilmesi lazım.
+
+264
+00:38:50,568 --> 00:38:52,768
+Çünkü farklı bir durum var.
+
+265
+00:38:53,407 --> 00:38:59,568
+Eğer şuradaki dik tarafında dosyalar silinirse...
+
+266
+00:38:59,891 --> 00:39:08,011
+Bu silindiği için acaba buradaki de silinecek mi veya şuradaki de silinecek mi gibi durumlar işletim sistem tarafından dikkate alınması gereken şeyler.
+
+267
+00:39:08,831 --> 00:39:11,291
+Farklı çözümleri var. Bunları okursun. Bunları geçelim.
+
+268
+00:39:12,131 --> 00:39:18,651
+Genel graph directors de, mesela burada baktığımız zaman biraz önceki ağaç yapısına çok çok benziyor.
+
+269
+00:39:19,671 --> 00:39:26,611
+Mesela bu klasörü şuna gidiyormuş, bu avide bunu gösteriyormuş gibi farklı cycle da içerebilen şeyler olabilir.
+
+270
+00:39:28,692 --> 00:39:33,112
+Tabii, cycle olmasını nasıl garanti edeceğiz?
+
+271
+00:39:34,331 --> 00:39:45,451
+Alt, yani en fazla tek linklere veya subdirektörlere link oluşturmama yetkisi verebilirsiniz.
+
+272
+00:39:46,591 --> 00:39:47,871
+O şekilde olabilir.
+
+273
+00:39:48,591 --> 00:39:50,051
+Garbage collection yapılabilir.
+
+274
+00:39:53,492 --> 00:39:56,892
+Bir algoritmayla cycle detection kontrolü yaparsınız.
+
+275
+00:39:57,711 --> 00:40:03,512
+Bu linkler oluşturuldu ama bir cycle oluyorsa bunun önüne geçilmesi mümkün olabilir.
+
+276
+00:40:05,332 --> 00:40:15,291
+Bir file sistemin mount edilmesi, ona erişmeden önce, yine işletim sistemi tarafından yapılması gereken şeyler.
+
+277
+00:40:16,472 --> 00:40:17,192
+Bunları geçelim.
+
+278
+00:40:17,492 --> 00:40:19,192
+Şimdi gelin dosyalarımı paylaşım.
+
+279
+00:40:20,563 --> 00:40:27,663
+Bir sistem düşünün, o sistemde birden fazla kullanıcı var veya bir network düşündüğünüzde çok fazla kullanıcıya açık olacak bir şey.
+
+280
+00:40:28,843 --> 00:40:39,423
+İşletim sisteminin koruma ve güvenlik ve kaynak paylaşımından dolayı burada da ekstra yapılması gereken veya dikkate alınması gereken konular var.
+
+281
+00:40:40,148 --> 00:40:48,128
+Bu konuların bir kısmı Siver Güvenlik, işte Birleşim Sistemleri Güvenliği dersi altında daha detaylı ve güvenlik bakış açısıyla incelemiyor.
+
+282
+00:40:48,708 --> 00:40:54,887
+Biz burada sadece işletim sisteminin bu misyonlarını, görevlerini anlatmak için sadece bahsediyoruz arkadaşlar.
+
+283
+00:40:56,307 --> 00:40:59,048
+Dosya paylaşımı çok rahat yapılabilir.
+
+284
+00:40:59,168 --> 00:41:05,108
+Yani dosyayı paylaşmak, işte gittiğiniz ara yüzden dosyayı şu kullanıcılara paylaştır dediniz.
+
+285
+00:41:06,547 --> 00:41:22,527
+Bu paylaşımla beraber bir koruma metodolojisi veya koruma skiması olması lazım. Distributed bir sistem varsa çok çok daha üzerinde ekstra şeyler düşünmek gerekiyor.
+
+286
+00:41:33,012 --> 00:41:56,711
+düzenlenmesi mümkün olabilir. Ne demek istiyoruz? Bir tane dosyamız var. A dosyası diyelim. 10 tane de kullanıcımız var. A dosyasını şu şu şu ID'li kullanıcılara sadece okuma amaçlı açacağım. Şu ID'li kullanıcılara hem okuma hem yazma amaçlı açacağım. Şeklinde ne yapabiliyorsunuz? Ayarlama yapabiliyorsunuz.
+
+287
+00:41:58,068 --> 00:42:09,468
+Eğer ki bu kullanıcı sayısı çok çok fazlaysa bunun user id'ler üzerinden okuma yazma veya erişim izinlerinin düzenlenmesi birazcık zorlaşabiliyor.
+
+288
+00:42:09,468 --> 00:42:19,468
+Çünkü bir sürü kullanıcınız var. O zaman kullanıcıları kendi içerisinde gruplara bölüp gruplar üzerinde erişim haklarını belirtiyorsunuz.
+
+289
+00:42:23,572 --> 00:42:45,420
+Özellikle web yazılımında, mobil yazılımında authorization dediğimiz kavramla çok çok yakın. Yani düşünün OBS'de 40 bin tane öğrencimiz olsun. Şimdi öğrencilerin OBS sisteminde erişeceği belli haklar, belli özellikleri var. Her bir öğrenci için bunu yapmak yerine öğrenci kategorisinde olan herkesin...
+
+290
+00:42:45,556 --> 00:42:54,715
+Erişebileceği modüller şunlar, şunlar, şunlardır deyip mesela dönem başında ders kaydı yapılıyor size. O ders kaydında ders kayıt ekranı açılıyor, kapanıyor.
+
+291
+00:42:55,635 --> 00:43:00,755
+Tek bir tıklamayla öğrencilere bunu aç, öğrencilere bunu kapat diyerek bu işi yapabiliyorsunuz.
+
+292
+00:43:00,755 --> 00:43:05,076
+Aynı burada da olduğu gibi bir dosya kullanıcı içerisindeki belli gruplara.
+
+293
+00:43:06,003 --> 00:43:13,264
+Belli özellikler için sadece okuma yapmıştı. Şu grup sadece şey yapsın. Bu grup sadece yazma yapsın diyebiliyorsunuz.
+
+294
+00:43:17,204 --> 00:43:23,784
+Tabi burada dosyaların paylaşması ile alakalı biraz swit'ımız network'un konularına da giriyor.
+
+295
+00:43:23,924 --> 00:43:30,164
+İşte dosya paylaşımını sadece belli bir bilgisayar üzerinde veya lokal bir network'ta yapmanız gerekmeyebilir.
+
+296
+00:43:31,304 --> 00:43:37,184
+One dediğimiz Wide Area Network yani internet üzerinde de yapmanız gerekebilir.
+
+297
+00:43:37,884 --> 00:43:38,984
+Bunun da farklı yolları var.
+
+298
+00:43:38,984 --> 00:43:43,824
+İşte FTP bunlardan uzun zamandan beri kullanılan bir yapı.
+
+299
+00:43:44,192 --> 00:43:50,312
+File transfer protokolleri veya client server mimarisinde paylaşım yapabiliyoruz.
+
+300
+00:43:51,452 --> 00:43:56,052
+Peer to peer mimariler var. Eskiden çok kullanılıyordu, şimdi belki o kadar yok.
+
+301
+00:43:57,012 --> 00:44:03,972
+İşte siz bilgisayarınızda bir dosyayı paylaşıma açıyorsunuz bir program aracılığıyla ama bu program internette çalışan bir şey.
+
+302
+00:44:03,972 --> 00:44:07,172
+İşte LimeWire vardı, kaza vardı.
+
+303
+00:44:07,891 --> 00:44:15,331
+O program üzerinden paylaştığınızda bir başkası sizin dosyanıza erişip okuyabiliyor, gerekirse değişiklik yapabiliyor diyebiliriz.
+
+304
+00:44:19,603 --> 00:44:21,603
+Bunlar geçebileceğimiz şeyler.
+
+305
+00:44:23,443 --> 00:44:32,744
+Dosya üzerinde korumayla alakalı, şimdi bir dosyanı oluşturan, yani owner'ı veya creator'ı, şunları kontrol edebilmeli.
+
+306
+00:44:33,623 --> 00:44:36,523
+Dosya üzerinde neler yapılabilir?
+
+307
+00:44:37,844 --> 00:44:40,804
+Kimler bu yapılacak işleri yapabilir?
+
+308
+00:44:40,804 --> 00:44:43,244
+Yani sahip olarak, dosyanın sahibi olarak.
+
+309
+00:44:43,668 --> 00:44:47,928
+Buna karar vermeyle alakalı en yetkili kişilerden bir tanesi owner olacaktır.
+
+310
+00:44:48,887 --> 00:44:54,688
+Bunların işletim sistemi tarafından bir dosyayı oluşturana düzenleme yetkisinin verilmesi lazım.
+
+311
+00:44:55,528 --> 00:45:01,108
+Çünkü herhangi bir kullanıcı bu düzenleme yetkisine sahip olursa istediği şeyi yapar.
+
+312
+00:45:01,887 --> 00:45:05,668
+Okuma, yazma, execute, append, delete, list bu tarz işlemlerin...
+
+313
+00:45:07,059 --> 00:45:12,099
+Olner tarafından hangi kullanıcıya açılacak, hangi kullanıcıya kapanacak bunların sağlanması gerekebilir.
+
+314
+00:45:13,300 --> 00:45:28,240
+Yine burada erişim listeleri ve gruplar dediğimiz işte okuma, yazma ve execution üç anlamda bunu söyleyecek olursak ki ilk hafta bunu dosyalar üzerindeki modlarla alakalı İdris Hocanız size bunun uygulamasını göstermişti.
+
+315
+00:45:29,043 --> 00:45:50,203
+Okumayla alakalı izinler, yazmayla alakalı izinler, execution yapmayla alakalı izinler demiştik. Bunları sıfır ve bir kodlarıyla, işte binary sistem olacak şekilde, işte bir bir bir, yani okuma yapabilir, olunur, gelişimi, yazma yapabilir, execution yapabilir.
+
+316
+00:45:50,864 --> 00:45:55,764
+Grup üzerinde, çalışma grubu üzerinde okuma var, yazma var ama execution yok.
+
+317
+00:45:56,179 --> 00:46:02,920
+Herhangi bir public erişimde de okuma yok, yazma yok, sadece execution var diyebiliyoruz.
+
+318
+00:46:03,519 --> 00:46:17,039
+Buradaki binary datayı desimale çevirdiğinizde, ondalık sıçraya çevirdiğinizde ve bunu işte mod değişimi olarak kullandığınızda işte bu değerleri, buradaki flagleri değiştirebiliyorsunuz arkadaşlar.
+
+319
+00:46:18,619 --> 00:46:20,819
+Bunların uygulaması yapıldığı için geçerbiliriz.
+
+320
+00:46:21,780 --> 00:46:25,880
+Bunu Windows 7'de şu şekilde gösteriyorsunuz.
+
+321
+00:46:26,100 --> 00:46:31,100
+Dosyaya sağ tıkladığınız properties özelliklere gel dediğinizde şöyle bir dosyanız var.
+
+322
+00:46:31,800 --> 00:46:41,740
+Security altındaki şu kontrol şeylerini, mesela bu misafir kullanıcıya, şuradaki şeyleri kapatmanızı sağlıyor.
+
+323
+00:46:42,240 --> 00:46:47,080
+Ve gidersiniz, advance dersiniz, oradakileri allow yaparsınız, o izinleri sağlamış oluyorsunuz.
+
+324
+00:46:49,619 --> 00:46:51,940
+Evet, bu kısımdan bir sorumuz var mı?
+
+325
+00:46:53,780 --> 00:46:55,180
+Sormak istediğimiz bir şey var mı?
+
+326
+00:46:57,659 --> 00:47:00,639
+Biraz da dosya sistemi implementasyonuna bakacağız.
+
+327
+00:47:01,000 --> 00:47:03,000
+Dersimizi ondan sonra tamamlayacağız.
+
+328
+00:47:03,579 --> 00:47:07,039
+Bu konu çok çok daha dosya düzenleme dersimiz var bizim.
+
+329
+00:47:07,720 --> 00:47:09,079
+Seçmeli olarak açıklıyor.
+
+330
+00:47:09,920 --> 00:47:14,400
+O konunun ilgi alanına giriyor ve biraz daha şey, disk üzerindeki data yapıları.
+
+331
+00:47:15,123 --> 00:47:25,563
+Dediğimiz bir başka konu vardır. O konuyla da alakalı. Şimdi veri yapıları dersinde ABL trileri, redblack trileri falan belki gördünüz. Gördünüz mü arkadaşlar?
+
+332
+00:47:27,503 --> 00:47:39,263
+Yani normal ağaçlarda işte biliyorsunuz dengesiz durum oluyordu. İşte binary trilerde. Dengesiz ağaçları dengeli hale getirmek için kullanılan yaklaşımlardan bazıları işte ABL triler, redblack triler.
+
+333
+00:47:40,019 --> 00:48:03,539
+Bunlar bellek üzerinde, main memory üzerindeki veri yapıları, bir de disk üzerinde veri yapıları var. O veri yapılarının üzerinde de sonuçta eş zamanlılık, concurrence gibi durumlar olabilir veya işte tutarlılık gibi durumlar olabilir. Bunları file operation, pardon file organization dersinde hoca detaylı olarak anlatıyor Utko hoca. Ama biz burada bazı bize lazım olan kısımlara gireceğiz.
+
+334
+00:48:07,635 --> 00:48:14,315
+Mantıksal bir aslında storage ünitesi, veri kaydetme ünitesi diyebiliriz.
+
+335
+00:48:15,635 --> 00:48:22,315
+Ve kendi içerisinde birbiriyle alakalı verilerin bir koleksiyonu, bir dizisi söyleyebiliyoruz.
+
+336
+00:48:23,596 --> 00:48:27,315
+Ve bu dosya sistemi ikinci bellek üzerinde bulunacak.
+
+337
+00:48:27,827 --> 00:48:36,567
+Bu ikinci bellek üzerinde durduktan sonra slide'ın bundan sonraki kısmı hard disk üzerinden genel anlamda mantı anlatmaya başlamış.
+
+338
+00:48:37,127 --> 00:48:40,147
+Yani disk yapılarını hard disk ile sınırlandırmış.
+
+339
+00:48:40,967 --> 00:48:44,667
+Hard disklerimiz geçen haftada söylemiştik işte bloklar sektörlerden oluşuyor.
+
+340
+00:48:44,667 --> 00:48:49,667
+Genellikle 512 byte'lık sektörlerden oluşuyor. Bunlar üzerinde okuma yazma işlemleri yapabiliyorsunuz.
+
+341
+00:48:50,900 --> 00:49:15,519
+Tabii bir de fiziksel bir device olduğu için bu device'in kendisine ait bir device driver'ı var. Sizin yapacağınız okuma sinyalleri, yani siz bir şeyden, kendi programınızdan veri okumak istiyorsunuz. Okuma sinyalinizi işletim sistemine söylüyorsunuz. İşletim sistemi bu device driver'a ilgili kontrol sinyallerini gönderiyor. Device driver da onun üzerinde gerçek anlamda okumamı yapacak, yazmamı yapacak.
+
+342
+00:49:15,956 --> 00:49:17,796
+Bunu söylüyor.
+
+343
+00:49:18,016 --> 00:49:21,436
+Tabii burada katmanlı bir yapıdan bahsediyoruz.
+
+344
+00:49:21,696 --> 00:49:26,136
+Ben bunu söylerken, örneği verirken, şu yapıyı dikkate alarak söyledim.
+
+345
+00:49:26,256 --> 00:49:27,816
+Sizin herhangi bir programınız var.
+
+346
+00:49:27,936 --> 00:49:29,416
+C'de yazdığınız bir kodunuz var.
+
+347
+00:49:32,116 --> 00:49:35,436
+En altta da kullandığınız bir hard disk driver'ınız var.
+
+348
+00:49:35,996 --> 00:49:37,356
+Veya SSD driver'ınız var.
+
+349
+00:49:37,516 --> 00:49:42,036
+Veya eski sistemlerde floppy diskler falan oluyordu.
+
+350
+00:49:43,380 --> 00:50:03,779
+Bunun üzerinde bir controller var, IO control işlemi yapan. Bakın şurası user, şurası da aslında bir anlamda hardware. İşte aradaki şu şey de bir işletim sisteminin bu konudaki servisleri. İşletim sistemi mantıksal olarak bir dosya sistemi tutuyor ve dosya organizasyon modülüne sahip.
+
+351
+00:50:04,279 --> 00:50:08,679
+Hani işletim sistemi servislerinden bahsetmiştik birinci veya ikinci hafta. İşte bu.
+
+352
+00:50:09,427 --> 00:50:14,108
+File Organizasyon modülü bu servislerin içerisindeki bir tane parça diyebiliriz.
+
+353
+00:50:14,827 --> 00:50:19,208
+Ve bu dosya sistemi üzerinden işte okuma mı yapacak, ne yapacaksa bu gerçekleşiyor.
+
+354
+00:50:19,608 --> 00:50:21,208
+Katmanlı yapı dediğim şey bu.
+
+355
+00:50:22,427 --> 00:50:25,867
+Device Driver, işte IO Device'ını yönetmekle şey.
+
+356
+00:50:25,867 --> 00:50:29,548
+Örneğin diyor ki, Drive 1'i oku.
+
+357
+00:50:30,420 --> 00:50:38,460
+Pardon, şey, drive 1'de, 72. silindirdeki, 2. thread'deki, 10. sektörü, oku, nereye al?
+
+358
+00:50:39,320 --> 00:50:42,400
+Memory location 10.60'a okuma yap.
+
+359
+00:50:43,179 --> 00:50:47,220
+Veya işte, başka yazma yapacaksan, buna göre bir yol söylüyorsun.
+
+360
+00:50:49,300 --> 00:50:58,019
+Low level, alt seviye donanımı, belli hardware control üzerinde, aslında kontrol eden bir şey.
+
+361
+00:50:58,675 --> 00:51:04,056
+Basic file sistem diyor ki bir komut veriyor size.
+
+362
+00:51:04,235 --> 00:51:06,815
+İşte diyor ki şu block 123'ü bana getir.
+
+363
+00:51:07,675 --> 00:51:10,456
+Aslında ne yapıyor? Device driver ile bir anlamda haberleşme içerisinde.
+
+364
+00:51:10,956 --> 00:51:12,275
+Ha şu yapıda şunu söyleyelim.
+
+365
+00:51:12,896 --> 00:51:19,155
+Şimdi bu tarz katmanlı yapıların hepsinde networkte de OSI katmanları var mesela.
+
+366
+00:51:19,155 --> 00:51:21,275
+Open system interconnection dediğimiz şey.
+
+367
+00:51:22,016 --> 00:51:25,376
+Application birinci katman.
+
+368
+00:51:25,940 --> 00:51:35,380
+Ondan sonra session'dı galiba, transportation'dı yanılmıyorsam. En altta physical layer vardı, sonra data link layer vardı, 7 katmanlı bir yapıdır.
+
+369
+00:51:36,380 --> 00:51:41,880
+Data link layer, işte network layer vardı. Ne oldu? 3, 6, bir tane de application session.
+
+370
+00:51:42,740 --> 00:51:48,579
+Hayır, şurada bir presentation var arkadaşlar. Şuna presentation diyelim, şuna da transportation diyelim.
+
+371
+00:51:49,220 --> 00:51:52,300
+Network'un şey, 7 katmanlı OSİ mimarisi.
+
+372
+00:51:53,523 --> 00:52:19,443
+Sizin uygulamanız var. En altta da işte evden çıkan kablonun içinden giden veya işte bir elektromanyetik dalga ile giden, wifi ile giden bir sinyaliniz var. Arada da diğer katmanlar var. Her bir katman veya herhangi bir katman üst katmandan istek alıyor, alt katmana istek gönderiyor veya birinden servis alıyor, birine servis veriyor diyebiliriz. Burada da durum aynı. Ne yapıyoruz? Modüler bir yapı hafı yolu.
+
+373
+00:52:20,563 --> 00:52:28,323
+File Organizasyon modülü de dosyaları algılayıp mantıksal adresleri, fiziksel blogları algılamakla görevli bir şey.
+
+374
+00:52:28,923 --> 00:52:35,643
+Aslında ne yapıyor? Lojik blogu fiziksel blogu dönüştürmekle görevli.
+
+375
+00:52:36,003 --> 00:52:43,723
+Devamında logic file sistem var. Bu da dosyalarla alakalı metadatalara sahip.
+
+376
+00:52:46,291 --> 00:52:52,831
+Yani siz işte deneme nokta, doge dosyanızı file numberına dönüştürmekle görebilirsiniz.
+
+377
+00:52:54,632 --> 00:52:59,251
+Bununla alakalı Unix sistemlerinde iNode'lar tutabilirim mesela.
+
+378
+00:53:00,271 --> 00:53:03,992
+Tabi bunun için de yine directory management protection ile alakalı şeyler de var.
+
+379
+00:53:06,552 --> 00:53:08,791
+Şurada file sistemine alakalı örnekler var. Bunları geçelim.
+
+380
+00:53:09,791 --> 00:53:11,972
+Dosya sistemini implemente ederken
+
+381
+00:53:12,467 --> 00:53:15,947
+Sistem çağrılarını konuşmuştuk sizlere daha önce.
+
+382
+00:53:16,748 --> 00:53:18,728
+API seviyesinde sistem çağrılarımız var.
+
+383
+00:53:19,508 --> 00:53:29,708
+Fakat bunu fonksiyonlar olarak nasıl implement edeceğimizi hem diskle hem de memory structure'lar açısından burada ifade etmeye çalışmış.
+
+384
+00:53:30,288 --> 00:53:33,668
+Bir boot control bloğumuz var arkadaşlar.
+
+385
+00:53:34,668 --> 00:53:38,708
+Bu size işletim sistemini açarken...
+
+386
+00:53:39,635 --> 00:53:44,056
+Gerekli olan bilgileri saklayan, bir infoyu saklayan bir şey.
+
+387
+00:53:45,155 --> 00:53:56,655
+Eğer işte bu volüm işletim sistemine ihtiyaç duyar ve içeriyorsa, özellikle açılış esnasında bu tarz şeyler yükleme, bu tarz şeylerin yüklenmesi lazım.
+
+388
+00:53:57,295 --> 00:54:00,056
+Çünkü bilgisayarınız açılacak, en azından şeyleri bile görmeniz lazım.
+
+389
+00:54:00,195 --> 00:54:04,876
+Yani masa üstünde dosyalarınız yükleniyor. Bunlar bu sayede oluşan şeyler.
+
+390
+00:54:07,635 --> 00:54:15,396
+Ve bu, yani biraz önce bahsettiğimiz bunun tamamen işletim sistemi tarafından kodlanmasıyla alakalı farklı veri yapıları var.
+
+391
+00:54:16,476 --> 00:54:21,695
+Nasıl biz process control block'tan falan bahsetmiştik de burada file control block'tan bahsediliyor.
+
+392
+00:54:22,695 --> 00:54:32,996
+Ve bu file control block işte bir dosyanın iNOT numarasını, permissionlarını, size'ını, date'lerini tutan bir veri yapısı aslında.
+
+393
+00:54:34,483 --> 00:54:37,644
+Burada NFTC demiş, NTFS değil arkadaşlar bu.
+
+394
+00:54:38,244 --> 00:54:42,724
+Bir işte relational database yapısıyla ne yapılıyor?
+
+395
+00:54:43,003 --> 00:54:46,644
+Bir dosya tablosu oluşturmuş.
+
+396
+00:54:46,644 --> 00:54:53,543
+Yani var olan dosyaların bu yönetimsel datalarının da ayrı bir yerde tutulması lazım.
+
+397
+00:54:54,284 --> 00:54:57,664
+Veri tabanı dersinde belki PostgreSQL'de görüyorsunuz.
+
+398
+00:54:57,724 --> 00:54:59,644
+Kendiniz tablolar oluşturduğunuzda...
+
+399
+00:55:00,115 --> 00:55:23,715
+Veri tabanı yönetim sistemi kendi içinde ayrıca oluşturulan tablolarla alakalı bir metadata tutar. Bu veri tabanında kaç tane tablo var, kaç tane stored prosedür var, hangisinin özellikleri nelerdir. Bu da biraz ona benzer. Dosyanın özellikleri, oluşturma tarihleri, ekstres tarihleri gibi sahibi kimdir? Bunları bir veri yapısında tutabiliyoruz.
+
+400
+00:55:25,876 --> 00:55:46,176
+Evet, in-memory, bellek, in-memory dediğimiz bellekle alakalı file system structure'ları var. Bunları işte hem kernel tarafında hem de user tarafında şurada görselleştirmiş bir user space'imizde herhangi bir director structure'a eriştiğimizde bu director structure, bakın bu kernel memory'deyiz.
+
+401
+00:55:46,356 --> 00:55:52,172
+Arkada da secondary structure dediğimiz diskimiz var. Bir dosyayı açmak istediğimizde.
+
+402
+00:55:52,692 --> 00:56:06,492
+Diyorsunuz ki önce kernel'daki director structure'a git, o dosyayı bul. O dosyada mesela nerede? Önce file control bloğa gidiliyor. File control bloktan bunun ne olduğunu, diskde nerede bulunduğu söyleniyor.
+
+403
+00:56:06,612 --> 00:56:12,632
+Kernel'a bu servis olarak getiriliyor. Ondan sonra kernel gidiyor, oradaki dosya üzerindeki veriyi alıp,
+
+404
+00:56:13,108 --> 00:56:35,588
+İşte dosyayı açıp ilgili şeyi size sağlıyor. Yani fopen yaptığınızda olabilecek şeylerden bir tanesi bu. Yine userspace'de bir read yaptığınızda ne oluyor? Kernel tarafında işte open file table açık dosya tablolarında artık bu dosya açıldığı için ne olacaktır? O dosyanın indeks numarasını nereden okuma yapacağınızı söyleyeceksiniz.
+
+405
+00:56:36,211 --> 00:56:44,911
+Sistem açısından, sistem çapındaki açık dosya tablosundan da okumak istediğiniz data blocklarını getirip götürebiliyorsunuz.
+
+406
+00:56:48,724 --> 00:56:50,284
+Şunları geçebiliriz.
+
+407
+00:56:53,423 --> 00:57:01,943
+Bir de sanal dosya sistemi var. Bu sanal dosya sistemi de aslında bir anlamda bize API'leri sağlıyor.
+
+408
+00:57:02,604 --> 00:57:04,804
+Yani bu Unix tarafında sağlanan bir şey.
+
+409
+00:57:05,684 --> 00:57:09,963
+Object Oriented Way of Implemented File System dediğimiz şey arkadaşlar.
+
+410
+00:57:11,188 --> 00:57:31,427
+Yani sistem çağrılarını, API'leri kullanabilmek için aslında biraz daha üst seviye şey diyebiliriz. Burada da V-Note'lar karşımıza geliyor. Şöyle bakacak olursak, bu VPS interfazına böyle bir yapı sağlanmış.
+
+411
+00:57:37,007 --> 00:57:55,487
+Network'te bir şeyiniz var. BPS Interface ne yapıyor? Sizin file sistem Interface'de bir aracılık ediyor. Bunun içerisinde mesela en basitinden işte bir dosyanın bir program yardımıyla açılıp kapanması, okuma yazması, okuma yazma yapılması gibi farklı işlemleri gerçekleştirebiliyorsunuz.
+
+412
+00:58:03,987 --> 00:58:10,407
+Disk veri yapıları dediğim şey. İşte bu disk dosya düzenleme dersinde daha çok anlatılan şeyler.
+
+413
+00:58:12,627 --> 00:58:20,527
+Şimdi dosya isimlerinin doğrusal bir lineal bir listesi tutuluyor ve bununla alakalı pointerlar saklanıyordu.
+
+414
+00:58:20,667 --> 00:58:23,307
+Yani hangi bu dosya hangi noktadadır diye.
+
+415
+00:58:24,487 --> 00:58:27,947
+Programlama açısından aslında bir kolay. Programlama yapmak için kolay bir şey.
+
+416
+00:58:31,027 --> 00:58:39,467
+Liner yapılar bir kere doğrusal zaman kompleks diye getirdiği için ON gibi şeyler birazcık sıkıntılı.
+
+417
+00:58:40,147 --> 00:58:48,787
+Dolayısıyla işte B3'lerle veya LinkedDist'lerle bu biraz daha şey olabiliyor, biraz daha optimize edilebiliyor.
+
+418
+00:58:48,927 --> 00:58:51,807
+Veya hash yapılarıyla bu direktörler oluşturulabiliyor.
+
+419
+00:58:52,387 --> 00:58:57,647
+Hash'in özelliği de neydi? Özellikle search zamanını işte O1'e kadar en iyi ihtimalle.
+
+420
+00:58:58,099 --> 00:59:05,019
+indirebiliyorsunuz. Tabi hashlerde collision olursa, çakışma olursa bunun farklı yollarla çözümleri var demiştik.
+
+421
+00:59:10,452 --> 00:59:35,272
+Direktör üzerinde bir allocation yaptığımızda yine contiguous allocation, yani mekansal sürekliliğe dikkat etmemiz gerekebiliyor. Bunlardan bir tanesi, yani bu bir özellik. Aynı ana bellekte olduğu gibi, ikinci bellekte de bu söz konusu. Her dosya, işte contiguous bloklar içerisinde saklanacak, oturacak diyebiliriz.
+
+422
+00:59:36,148 --> 00:59:45,887
+Birçok anlamda aslında contiguous olduğu için okuma yazma anlamında falan kolay ama her zamanda bahsettiğimiz kadar yeri bulamayabiliyoruz veya talep ettiğimiz yeri kadar bulamayabiliyoruz.
+
+423
+00:59:46,288 --> 00:59:52,208
+Bir de bir fragmentation hatası olabiliyor. Yani burada bir compaction olabilir ama buradaki compaction,
+
+424
+00:59:54,628 --> 00:59:57,327
+memorideki compaction kadar değil, sıkıntılı değil.
+
+425
+00:59:57,327 --> 01:00:00,148
+Çünkü memorideki compaction'da ne yapıyorduk?
+
+426
+01:00:02,132 --> 01:00:09,771
+Bellek bölgesini yer değiştiriyorsun. Bellek bölgesini yer değiştirmek için prosesi belli bir süre dondurman, durdurman gerekiyor.
+
+427
+01:00:10,371 --> 01:00:15,052
+Halbuki burada öyle bir şeye gerek yok. Yer değiştirmek yapılan biliyoru yerine göre.
+
+428
+01:00:15,771 --> 01:00:25,032
+Şöyle baktığımızda, işte bir şeyimiz var, işte belli bir bloğumuz var. Bu blok işte kendi içerisinde yer değiştirecek.
+
+429
+01:00:26,675 --> 01:00:43,596
+Kendi içerisinde bitişik şekilde saklanmış diyebiliriz. Contiguous allocation bu. Bunları geçebiliriz arkadaşlar. Linked allocation var. File blocklarını yani block listelerini her bir şeye linked list mantığıyla tutuluyor.
+
+430
+01:00:43,596 --> 01:00:53,856
+İşte her dosya nil dediğimiz şu nil nalın latince hali arkadaşlar bir pointer. External fragmentation burada olmuyor.
+
+431
+01:00:55,123 --> 01:01:03,403
+Her blog, linked list kullanmanın doğası gereği, next kendisinden sonra gelecek blogun pointerını tutuyor.
+
+432
+01:01:05,864 --> 01:01:10,463
+Tabi burada free space, boş alan yönetimi yapmamız lazım.
+
+433
+01:01:11,543 --> 01:01:14,083
+Kendi içerisinde verimliliği arttırabiliyor.
+
+434
+01:01:15,403 --> 01:01:20,243
+Fakat reliability dediğimiz bir problem olabiliyor diyebiliriz.
+
+435
+01:01:21,492 --> 01:01:32,871
+Burada FET mesela, file allocation, FET, FET32 gibi şeyler duymuşsunuzdur. Bunun bir varyasyonu, linked şeyin arkadaşlar. Bunları araştırabilirsiniz.
+
+436
+01:01:33,831 --> 01:01:40,492
+Linked allocation'da da şöyle, bir linked list yapısında bir pointer tutacaksınız. Yani linked listin buraya uygulanmış hali diyebiliriz.
+
+437
+01:01:41,231 --> 01:01:48,351
+Şöyle bir yapı var. Start'ı tutuyorsunuz. Linked listlerde head neyse onu söylüyor. İşte start 9 olacakmış.
+
+438
+01:01:49,108 --> 01:01:52,928
+Bu bir blok. Bu kendisinden sonra şunu gösterecekmiş.
+
+439
+01:01:53,668 --> 01:01:55,068
+O yani şey şurayı.
+
+440
+01:01:56,148 --> 01:01:57,608
+O 16'yı gösterecek.
+
+441
+01:01:58,328 --> 01:02:00,908
+Bu şekilde. Bir de en sonuncuyu tutuyorsunuz.
+
+442
+01:02:00,988 --> 01:02:04,528
+En sonuncuda nal olacağı için sonuncuyu da mesela burada eksi bir olarak tutmuş.
+
+443
+01:02:04,528 --> 01:02:06,968
+Yani buradaki sıramız ne olacak? 9.
+
+444
+01:02:07,868 --> 01:02:09,248
+9'dan sonra 16.
+
+445
+01:02:10,108 --> 01:02:11,448
+16'dan sonra 1.
+
+446
+01:02:12,548 --> 01:02:13,668
+1'den sonra 2.
+
+447
+01:02:14,804 --> 01:02:17,804
+2'den sonra 25 ve 25 sonucu.
+
+448
+01:02:20,364 --> 01:02:23,704
+File allocation tabloları da bunlar da bir diğer şeyler.
+
+449
+01:02:24,983 --> 01:02:30,003
+Örneğin bir directory'niz var. Bu directory'nin bir entries var. İşte test diyelim.
+
+450
+01:02:30,943 --> 01:02:35,304
+Bu directory hangi bloktan başlıyor? Bunun bilgisini tutuyorsunuz.
+
+451
+01:02:35,304 --> 01:02:38,523
+İşte start bloğu. 217'den başlayacakmış.
+
+452
+01:02:41,427 --> 01:03:08,128
+618'e gidecekmişsiniz. 618'den sonra 339'a gidecekmişiz. 310'dan sonra da zaten bir şey yok. Bakın burası boş. Ne oluyor? Bu direktör üzerinde nereden nereye gidiyor. Bunu belki data structure'da şöyle bir yapıyla size anlatmışlardır. Benzer mantık burada da var. Mesela şöyle bir link dizisi oluşturalım. Sıfırıncı eleman, birinci eleman, ikinci eleman.
+
+453
+01:03:08,884 --> 01:03:21,824
+Üçüncü eleman, bir de head'imiz olsun. Mesela hey diyelim buna. Head, 3'ü göstersin. Mesela 3, 2'yi göstersin. 2, 0'ı göstersin. 0, 1'i göstersin. Bu da eksi 1 desin.
+
+454
+01:03:22,384 --> 01:03:33,584
+Burada erişim nasıl olacak? Önce 3'e gideceksiniz. 3'den sonra 2'ye gideceksiniz. Ondan sonra 0'a gidiyorsunuz. Sonra 1'e geliyorsunuz.
+
+455
+01:03:34,068 --> 01:03:38,048
+Bir de zaten eksi bir null değer olduğu için burada sonlandırmış oluyorsunuz.
+
+456
+01:03:38,288 --> 01:03:40,528
+Buradaki yapı aynısı var.
+
+457
+01:03:41,508 --> 01:03:43,588
+Bir diğeri index allocation.
+
+458
+01:03:44,128 --> 01:03:50,508
+Her dosya kendisine ait index bloklarını, yani bir pointerların indexlerini tutabilen bir şeyde.
+
+459
+01:03:51,068 --> 01:03:53,608
+Index table'lar tutuluyor mantısa olarak şu şekilde.
+
+460
+01:03:54,988 --> 01:03:55,968
+Şöyle bir yapımız var.
+
+461
+01:03:55,968 --> 01:03:59,368
+İşte index blokumuz 19'sa.
+
+462
+01:03:59,507 --> 01:04:07,687
+9'da, 16'da, 1'de, 10'da, 25'de ve eksi 1 onlarda boşluklarda bu indekslerde verinin tutulduğunu söylüyor.
+
+463
+01:04:07,687 --> 01:04:08,847
+İşte 9'da varmış.
+
+464
+01:04:09,947 --> 01:04:12,127
+Ondan sonra 16'ya indeks göstermiş.
+
+465
+01:04:12,227 --> 01:04:17,367
+Siz bir dosya aradığınızda bu direktör altında gidiyor 9'un olduğu yere bakıyor.
+
+466
+01:04:17,607 --> 01:04:19,087
+Var mı? Var veya yok.
+
+467
+01:04:19,747 --> 01:04:23,587
+16'ya bakıyor, 1'e bakıyor, 10'a bakıyor, 25'e bakıyor, boş olanlara bakmıyor.
+
+468
+01:04:24,371 --> 01:04:45,971
+Burada da sorun şu aslında, her bir direktörde acaba kaç tane şu indeks numarası tutabiliriz? Bu çok uzun olursa, bu lineerleşmeye doğru gidiyor. Kısa olursa, yeteri kadar yer ayıramama durumu var. İşte belleği kötü kullanıma durumu var. Bunlar farklı ihtimalle. Bunları size bırakıyorum. Aynı şeyler çünkü.
+
+469
+01:04:46,800 --> 01:05:09,020
+İndeksi biraz daha birkaç seviyeli yapmak istediğimizde önce bir outer index, işte bir şey arıyorsunuz, en dıştan bir daha kısa bir tablo. O outer index içerisinden bir index tablosu, inner index diyelim veya index table. İşte bu şurayı söyleyip repere ediyor, bu burayı repere ediyor. Bu index table içerisinde doğrudan bir dosyaya gidebiliyorsunuz.
+
+470
+01:05:10,547 --> 01:05:20,107
+Bir de bunların kombine edilmiş schemaları var. Diyor ki mesela 4K byte'lık bir blok olduğunda 32 bit adreslerde şu şekilde bir indeksleme.
+
+471
+01:05:21,107 --> 01:05:28,627
+Önce single indirect yapmış, sonra double indirect, sonra triple indirect yapmış veya direct bloklar var. Bu ne için kullanılır?
+
+472
+01:05:29,043 --> 01:05:39,923
+Çok hızlı, hızlıca erişmek istediğiniz bir şeyler varsa direct blocklarda bunu, yani şu ana kadar anlattıklarımızın bir kombinasyonunu Unix, UPS kullanıyormuş.
+
+473
+01:05:41,324 --> 01:05:46,324
+Bu blocklardan hızlı erişmek istediklerinizi doğrudan erişim yapacaklarınızı da.
+
+474
+01:05:47,891 --> 01:05:58,371
+Birinci seviye, single indirect yaptığınızda bir aslında list tuttunuzda şurada iki seviyeli olursa, burada triple olursa başka yerde saklayabiliyorsunuz.
+
+475
+01:05:59,411 --> 01:06:04,411
+Performance ile alakalı burada bazı şeyler var. Bunları da okumanızı istiyorum.
+
+476
+01:06:05,271 --> 01:06:08,651
+Bir diğer şey arkadaşlar, free space management ne kadar kalmış bir bakayım.
+
+477
+01:06:11,311 --> 01:06:12,692
+Bunların hepsini anlatmayacağız.
+
+478
+01:06:14,739 --> 01:06:16,939
+FreeSpace'da anlatalım, bırakalım.
+
+479
+01:06:17,839 --> 01:06:26,659
+Nasıl ki dosyalarımızın bulunduğu yerleri veya klasörleri de tutuyorsak, boş yerleri de file sistem saklaması gerekiyor.
+
+480
+01:06:26,659 --> 01:06:32,399
+Çünkü yeni bir veri geldiğinde bir yerlere aktarım yapacaksınız, yazma yapacaksınız.
+
+481
+01:06:32,500 --> 01:06:35,619
+Boş yer ihtiyacınız var. Bu boş yerleri saklamanız gerekiyor.
+
+482
+01:06:36,939 --> 01:06:41,599
+Burada da bit vektörler veya bit mapler dediğimiz en tane bloktan oluşan bir şey tutuluyor.
+
+483
+01:06:41,967 --> 01:06:48,487
+Diyorsunuz ki, işte block free ise, yani müsaitse 1, değilse 0 olarak bunu kodlayalım.
+
+484
+01:06:49,527 --> 01:07:03,387
+Block number kalkılayışında da number of bits, yani word başındaki kaç tane bitimiz var, number of 0'ları tutuyorsunuz, bununla çarpıyorsunuz, bir de bunlara bir offset ekliyorsunuz ve sizin block number kalkılayışınız oluyor.
+
+485
+01:07:04,147 --> 01:07:06,387
+Şuradaki örneği size bırakıyorum, basit şeyler arkadaşlar.
+
+486
+01:07:08,500 --> 01:07:14,940
+Yine bu free space'ın linked şekilde tutulması da linked listlerle yapılabiliyor.
+
+487
+01:07:16,240 --> 01:07:18,860
+Boş yerlerden işte ilk mesela şurası.
+
+488
+01:07:19,860 --> 01:07:23,360
+İşte 2'yi gösteriyor, 2, 3'ü gösteriyor, o orayı gösteriyor, o orayı gösteriyor.
+
+489
+01:07:23,360 --> 01:07:26,720
+Böyle bir veri yapısıyla bunlar saklanabiliyor.
+
+490
+01:07:28,099 --> 01:07:29,880
+Bunları da geçebiliriz.
+
+491
+01:07:31,500 --> 01:07:35,140
+Bundan sonraki kısımlar hem birazcık dediğim gibi
+
+492
+01:07:36,115 --> 01:07:46,655
+donanımla alakalı konular içerdiği için hem de dosya düzenlemeyle alakalı konular içerdiği için bunlara çok girmeyeceğim arkadaşlar.
+
+493
+01:07:46,916 --> 01:07:51,215
+Şurada söylemek istediğim bir şey var mı? Yok. Şuraya geri geliyorum.
+
+494
+01:07:58,516 --> 01:08:15,615
+Şu Linked Free Space List on disk yapısına kadar bakalım. Bunlara da gerek yok. Şuraya kadar son konumuz olsun. Yani kaçıncı slide oluyor bakalım. Şöyle kapatayım.
+
+495
+01:08:22,836 --> 01:08:35,316
+Evet, 37. slide, şey 37. slide, chapter 12'nin 37. slide'ına kadar ders sunumlarıyla alakalı şeyimiz, içeriğimiz bu şekilde olacak.
+
+496
+01:08:36,456 --> 01:08:41,336
+Evet, işletim sistemi dersinin bu ders, bu dönem içerisindeki konuları bu kadar.
+
+497
+01:08:41,515 --> 01:08:44,855
+Geçen dönem buraya kadar gelememiştik, işte biraz daha geride kalmıştık.
+
+498
+01:08:44,855 --> 01:08:48,855
+Bu dönem işte bir hafta daha süremiz olduğu için bu konularda...
+
+499
+01:08:49,076 --> 01:08:50,935
+Sizlere tanıtma imkanı oldu.
+
+500
+01:08:52,095 --> 01:09:05,576
+Bunun dışında işletim sisteminin, kitabımızın slide'larına baktığınızda, bu 12, 13, 14, 15, 16, 18, 19'a kadar baktığımızda, PDF'i açalım, PDF üzerinden konuşalım.
+
+501
+01:09:07,655 --> 01:09:09,775
+Hızlıca da bir özet yapmak istersek.
+
+502
+01:09:11,056 --> 01:09:15,615
+Process Management, Main Memory Management, Storage Management.
+
+503
+01:09:16,595 --> 01:09:40,295
+Daha sonraki kısımlar biraz daha güvenlik ile alakalı. Bizim burada bilişim sistemleri güvenliği altında zaten ayrı bir dersimiz var. Bu konular orada daha detaylı olarak ele alınıyor. Ondan sonra storage management tarafına baktığımızda işte 10, 11, 12, 13. Bunun bir kısmını burada anlattık. Bir kısmı da dediğimiz gibi dosya düzenleme dersinin konuları.
+
+504
+01:09:40,640 --> 01:09:45,000
+Yani her bir chapter belki burada yarım dönemlik kolu bile olabilir.
+
+505
+01:09:45,220 --> 01:09:49,380
+Eğer işin derinlerine inmek gerekirse, daha ileri seviyeye oluşursa.
+
+506
+01:09:50,079 --> 01:09:53,200
+Bir de bunun dışında ileri seviye topiklerimiz var.
+
+507
+01:09:53,380 --> 01:09:55,819
+Distributed sistemler bu ayrı bir derstir.
+
+508
+01:09:56,780 --> 01:10:01,560
+Sanal makine, burada çok fazla konuşmamıza gerek yok da sanal makinelerle alakalı bir şeyler var.
+
+509
+01:10:02,860 --> 01:10:06,860
+Bir de burada bazı case study'lerden falan bahsetmiş kitabımız.
+
+510
+01:10:08,851 --> 01:10:33,551
+13. chapter'dan sonraki şeylerin her birisi bizim üniversitemizde veya başka yerlerde, bölümümüzde, bölümlerde ayrı bir ders olarak okutuluyor. Onun için zaten biz buna hem ilk konuların öneminden dolayı size de programlama açısından veya işte bir sistem bakış açısından faydalı olacağı için önceliği onlara veriyoruz. Birçok üniversitede mesela bu şekilde ilerliyor.
+
+511
+01:10:34,323 --> 01:10:37,343
+Burada dersimizi tamamlamış olalım.
+
+512
+01:10:39,263 --> 01:10:42,623
+Şimdi sınav ile alakalı kısa bir duyuru da yapalım.
+
+513
+01:10:42,743 --> 01:10:46,843
+Dersi tamamlayacağım. Varsa sizin sorularınızı da alacağım arkadaşlar konuştuktan sonra.
+
+514
+01:10:48,523 --> 01:10:51,563
+Şimdi sınav programı oluştururken bize hiçbir şey sorulmuyor.
+
+515
+01:10:52,443 --> 01:10:55,804
+Bunu maillerde ifade ettim ama hala anlamayan arkadaşlarımız var.
+
+516
+01:10:57,323 --> 01:11:01,644
+Kimse gelip de Ahmet Hocam veya işte Utku Hocam senin sınavını hangi güne koyalım demiyor.
+
+517
+01:11:02,707 --> 01:11:25,627
+Bölüm kendi içinde birkaç farklı kriteri dikkate alarak. Bu kriterler bir, yüksek lisans öğrencilerimiz var. Bu yüksek lisans öğrencileri örneğin bu derste ve veritabanı dersinde hem yüksek lisanstan hem de bu lisans dersinden almak zorundalar. Bu kişilerin sınavlarının çakışmaması gerekiyor. İlk kriter çakışmama arkadaşlar.
+
+518
+01:11:26,420 --> 01:11:37,960
+Yani bir kişiye senin işte finalin çakışıyor, git öbüründe bütünlemeden bütünlemeye gir deme hakkı yok bölüm. Bütünleme de finalde kişinin kendi hakkı.
+
+519
+01:11:38,779 --> 01:11:45,420
+Tabii diğer lisans öğrencilerimizin farklı durumları var. Mühendislik tamamlama var, çift ana dal var, yan dal var, şu var, bu var.
+
+520
+01:11:46,579 --> 01:11:56,159
+OBS sisteminden herhangi iki dersin, kim kimle, hangi derse çakışmıyor bu bilgiler elde edinerek sınav programı hazırlar, bölüm hazırlar.
+
+521
+01:11:57,199 --> 01:12:00,079
+Hocalar da buna çok fazla ses çıkarmaz.
+
+522
+01:12:00,180 --> 01:12:05,239
+Yani acil bir işi yoksa hocanın veya işi varsa da bir başkasına sorular verir, sınav bu şekilde yapılır.
+
+523
+01:12:06,020 --> 01:12:06,979
+Usul genelde budur.
+
+524
+01:12:07,939 --> 01:12:09,340
+Bu dönem bir talihsizlik olmuş.
+
+525
+01:12:09,340 --> 01:12:13,139
+İşte veri tabanı sınavıyla işletim sisteminin sınavı.
+
+526
+01:12:14,003 --> 01:12:38,344
+İkisi aynı güne denk gelmiş. Yani ben olsam ben de farklı güne koymaya dikkat ederdim. Bununla alakalı sizlere duyuru yapılmış bildiğim kadarıyla. Duyurudan çok geç süre sonra işte bölüm yönetimi Elif hocamız bana ulaştı. Ahmet dedi geç kaldılar işte biz şu güne kadar haber bekledik ama o günden 2-3 gün sonra şikayetler geldi dedi. Bir şey yapabilir miyiz? Hocam elimizden bir şey geliyorsa yapalım dedik.
+
+527
+01:12:39,220 --> 01:12:59,619
+Ve ikinci hafta salı gününe sınavı koyalım diye bir ön görüş oluştu. Ama dedik ki önce bir soralım. Yani bizim göremediğimiz, çünkü o kadar farklı çeşitli öğrenci var ki Erasmus için yüksek lisansa gelip bu derse alanlar var. Aranızda belki yani siz farkında değilsiniz.
+
+528
+01:13:00,627 --> 01:13:20,287
+Yüksek sinas için normal gelen öğrencilerimiz, yani yurt içinden gelen arkadaşlarımız var. Çift anadolu var, mühendislik tamamlama var. Yani 7-8 farklı öğrenci grubu burada bu dersi alıyor arkadaşlar. Baktık, işte sorduk, ettik. Mailde özellikle. Bireysel olarak gelen şeyler, yani bir tane bile şey olursa olmuyor. Çakışma durumu olursa mümkün olmuyor.
+
+529
+01:13:21,203 --> 01:13:28,403
+Kimseye de şunu diyemeyiz. Sen finale girme de gel bütünlemede geçersin diyemeyiz. Böyle bir riske kesinlikle kimseye atmayız.
+
+530
+01:13:29,743 --> 01:13:35,243
+İşte 15'üdür, 14'üdür. Sizinle böyle birkaç farklı şekilde mailleştik. Öyle birkaç tur maili yaptık.
+
+531
+01:13:35,243 --> 01:13:47,483
+Her birisinde birisi işte hocam işte şu tarihte ben memlekete bilet aldım. Şu tarihte şu işte sınavım vardı. İşte proje sunumum vardı. İşte stajım başlıyor. Yani 7-8 farklı.
+
+532
+01:13:48,212 --> 01:13:52,212
+Hepsi de geçerli olabilecek, makul sayılabilecek gerekçeler.
+
+533
+01:13:52,311 --> 01:13:55,832
+İşte biletini almış bir kişiye sen biletini iptal et de diyemiyorsun bir yerden sonra.
+
+534
+01:13:56,572 --> 01:13:59,252
+Bunların hepsi ikili beraber bir araya geliyor.
+
+535
+01:13:59,391 --> 01:14:02,952
+İşte mesela özellikle salgını için iki tane bahane vardı, gerekçe vardı.
+
+536
+01:14:03,752 --> 01:14:12,072
+Bunları dikkate aldığımızda kimseye bu saatten sonra herhangi bir olumsuz olacak değişiklik yansıtmak uygun olmaz.
+
+537
+01:14:12,948 --> 01:14:16,668
+Yani bununla ne ben muhatap olurum ne de yönetim muhatap olur.
+
+538
+01:14:16,807 --> 01:14:24,968
+Haliyle sınavı olduğu günde, ilk açıklandığı günde, gelecek hafta zannediyorum perşembe olması lazım.
+
+539
+01:14:25,908 --> 01:14:28,588
+Programdan bakarsınız, tekrar ben de size duyururum.
+
+540
+01:14:29,728 --> 01:14:30,188
+Yapacağız.
+
+541
+01:14:31,368 --> 01:14:38,568
+Sınav içeriği birincisi anlattığımız teorik kısımlardan olacak, ağırlıklı olan kısmı.
+
+542
+01:14:39,412 --> 01:14:55,312
+40'a kadar soru sormayı planlıyorum. Bu 40 sorunun belki 20-25 tanesi. İşin teorik kısmından. Uygulamada anlatılan bölümler var. 10 kadar da oradan bir soru gelecek. Elde var şey ya. Ette 30-35.
+
+543
+01:14:56,872 --> 01:15:04,232
+RETET tarafından da 5-6 tane veya belki 10 tane de orada olabilir. Belki soru sayısını 45 yapabilirim. Tam emin değilim şu an.
+
+544
+01:15:04,979 --> 01:15:25,479
+Redhead tarafından da sorular gelecek. Şimdi Redhead biraz geniş bir şey. Burada çok böyle uçta, kıyıda, kışta kalmış soruları sormayın. Orayı azıcık böyle takip eden, yani ilgilenip oraya bakan birinin yapabileceği nitelikte aşırı zor olmayan ama aşırı kolay da olmayan.
+
+545
+01:15:26,163 --> 01:15:43,843
+Hani orayı takip etmeyen biri de illaki bu işletim sistemleriyle alakalı soru geldiğinde mantık yürüterek şu ana kadarki genel kültür bilgisiyle belli soruları çözebilir. O şekilde de değil. Ölçülü ve çok makul seviyede sorular oradan gelecek.
+
+546
+01:15:44,723 --> 01:15:50,203
+Linux Sistem Administration 1.2 ve Kubernetes. Şu an onların sorularını hazırlıyoruz.
+
+547
+01:15:51,155 --> 01:15:59,136
+40 dakika olursa işte bununla alakalı süreyi ayarlarım. 45 dakika olursa bununla alakalı süreyi ayarlarım.
+
+548
+01:16:00,576 --> 01:16:06,376
+İşte bir saate kadar sınav süresi olabilir. 40 dakika olursa bir saat falan olur. Yeterli de olur.
+
+549
+01:16:08,036 --> 01:16:16,615
+Baştan itibaren tüm konular teorik kısımda sorulur arkadaşlar. Process management, processler, threadler, senkronizasyon, scheduling, deadlock.
+
+550
+01:16:17,108 --> 01:16:30,167
+Sonra memory management'tan sorular sorulabilir. Semaphore'ları anlattık, read, write, lock'ları anlattık. Ufak program parçacıkları olabilir. Fork'larla alakalı ufak program parçacıkları olabilir.
+
+551
+01:16:31,367 --> 01:16:41,108
+Genel olarak, derse ilgi duyan, dersi takip eden veya kitabı okuyan birinin yapabileceği vize 1, vize 2 ayarında ama sadece o ayarın dışında...
+
+552
+01:16:41,747 --> 01:16:46,667
+Uygulama sorularının da olacağı, biraz daha soru sayısının fazla olacağı bir sınav olacak.
+
+553
+01:16:46,827 --> 01:16:52,167
+Zorluk olarak dediğim gibi vize 1, vize 2 ayarında olur veya ikisinin ortalama sorudur, onu bilemiyorum.
+
+554
+01:16:53,367 --> 01:16:57,227
+Bu biraz göreceli bir konu olduğu için zorluk, kolaylık kişiden kişiye de değişiyor.
+
+555
+01:16:57,287 --> 01:17:03,147
+Evet, benim anlatacaklarım bu kadar. Sizin sorularınız varsa bunları alalım ve dersimizi tamamlayalım.
+
+556
+01:17:08,916 --> 01:17:11,556
+Hocam, soruların tamamı testi öyle değil mi?
+
+557
+01:17:12,336 --> 01:17:14,336
+Evet, orada bir farklılık yok. Tamamen test.
+
+558
+01:17:14,656 --> 01:17:17,736
+Birkaç sorunun birkaç cevabı olabiliyor mu?
+
+559
+01:17:18,156 --> 01:17:21,436
+Tabii, o vize 1'de olduğu gibi, yani 2 ile sınırlı değil.
+
+560
+01:17:21,976 --> 01:17:23,576
+Yani orada herhangi bir farklılık yok.
+
+561
+01:17:23,836 --> 01:17:26,156
+Vize 1 veya vize 2'ye zaten girmişsinizdir.
+
+562
+01:17:26,936 --> 01:17:29,176
+Vize 1'dekinin aynı mantıklı olacak arkadaşlar.
+
+563
+01:17:30,316 --> 01:17:31,516
+Tamamdır, teşekkür ederim hocam.
+
+564
+01:17:33,576 --> 01:17:34,816
+Başka sorumuz var mı?
+
+565
+01:17:38,899 --> 01:18:03,799
+Evet arkadaşlar, benden bu kadar. İnşallah güzel bir dönem geçmiştir. Hepinize sınavlarınızda başarılar diliyorum. Bundan sonra herhalde beni çok fazla görmeyeceksiniz. Yani ders olarak görmezsiniz. Üçüncü sınıfta itibaren başka dersimiz olmuyor. Belki bir seçmeli derste denk gelirsek artık. Bundan sonraki eğitim hayatınızda, kariyerinizde de hepinize başarılar dilerim. Kendinize iyi bakın, hoşçakalın.
+
+566
+01:18:05,539 --> 01:18:06,279
+Sağ olun hocam.
