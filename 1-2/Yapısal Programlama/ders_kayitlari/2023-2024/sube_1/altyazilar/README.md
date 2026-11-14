@@ -1,6 +1,6 @@
 # Yapısal Programlama Ders Kayıtları Altyazıları
 
-Bu klasör, 2023-2024 eğitim öğretim yılı Bahar dönemindeki Yapısal Programlama (BLM1031 - 1. şube) ders kayıtlarının altyazılarını içerir.
+Bu klasör, 2023-2024 eğitim öğretim yılı Bahar dönemindeki Yapısal Programlama (BLM1031 - 1. şube) ders kayıtlarının altyazılarını içerir. Aynı yılın diğer şube ya da dönem kayıtları bir üst klasördedir (`../`).
 
 Kayıt arşivindeki ilk ders kaydı 20 Mart 2024 Çarşamba gününe aittir. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ders haftasını değil, ilgili kaydın kayıt arşivindeki ders sıra numarasını gösterir. Tarihler YTÜ Video Ambarı kayıt tablosundan alınmıştır. Altyazılardaki öğrenci adları `[öğrenci]` ile maskelenmiştir.
 
