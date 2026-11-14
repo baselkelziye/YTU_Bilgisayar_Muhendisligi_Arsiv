@@ -5,6 +5,7 @@
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
 | 1 | Güz | — | [sube_1/](sube_1/) |
+| 2 | Güz | Dilek Yıldırım | [sube_2/](sube_2/) |
 | 10 | Güz | — | [sube_10/](sube_10/) |
 | 12 | Güz | — | [sube_12/](sube_12/) |
 | 14 | Güz | Esra Keskin Korumaz | [sube_14/](sube_14/) |
