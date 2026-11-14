@@ -4,7 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** İleri Yazılım Mimarisi (BLM5126)
-* **Hoca:** Göksel Biricik
+* **Hoca:** Dr. Göksel Biricik
 * **Dönem:** Güz
 * **Akademik Yıl:** 2021-2022
 * **Şube:** BLM5126 - 1
