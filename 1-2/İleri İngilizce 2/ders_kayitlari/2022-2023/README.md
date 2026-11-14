@@ -8,3 +8,4 @@
 | 14 | Bahar | — | [sube_14/](sube_14/) |
 | 16 | Bahar | — | [sube_16/](sube_16/) |
 | 17 | Bahar | — | [sube_17/](sube_17/) |
+| 21 | Bahar | Eda Abbasioğlu Akaya | [sube_21/](sube_21/) |
