@@ -1,0 +1,1803 @@
+1
+00:01:18,164 --> 00:01:41,364
+Merhaba arkadaşlar diyeceğim ama merhaba [öğrenci] desem yeter sanırım. Merhaba. Şimdi biraz bekleyelim bari, diğer arkadaşlar da gelsin. Bu arada burada kalmıştık değil mi? Ben yanlış not etmemişimdir umarım. 5.36 diye kaydetmişim. Daha sonra Reader Writer'ı konuştuk sizinle.
+
+2
+00:01:44,364 --> 00:01:45,463
+Doğru kesinlikle.
+
+3
+00:01:46,995 --> 00:02:02,835
+O zaman bir beş dakika bekliyorum. Diğer arkadaşlar da gelsin, başlarız. Gelmezlerse de artık baş başa ders yaparız. Ben buradayım. Hani bir soru olacak falan, bir şey olursa da sadece mikrofonum, kameram kapalı. Şey yaparsanız, sorarsanız cevap veririm.
+
+4
+00:07:59,956 --> 00:08:00,915
+Merhaba arkadaşlar.
+
+5
+00:08:04,915 --> 00:08:07,735
+Arkadaşlar, merhaba. Kaldığımız yerden devam edelim.
+
+6
+00:08:11,444 --> 00:08:18,444
+Geçen hafta yanlış hatırlamıyorsam, ReaderWriter'ı konuşmuştuk.
+
+7
+00:08:20,244 --> 00:08:25,944
+Ama hani bir hatırlatma olması adına orada kısaca bir tekrar edeyim.
+
+8
+00:08:25,944 --> 00:08:35,943
+Şimdi ReaderWriter'de aslında sıkça rastladığımız bir senkronizasyon problemi.
+
+9
+00:08:35,943 --> 00:08:38,943
+Örneğin bir veri tablına...
+
+10
+00:08:40,532 --> 00:08:47,392
+Yapısını düşünecek olursanız ne oluyor? Buraya transaction'lar gerçekleştiriyoruz. Kimisi okuma yönünde, kimisi yazma yönünde.
+
+11
+00:08:51,232 --> 00:09:03,292
+Şimdi bunların ne yapılması lazım? Sonucun, verinin tutarlılığını bozmayacak şekilde gerçekleştirilmesi lazım.
+
+12
+00:09:03,700 --> 00:09:18,700
+Reader-Writer problemi çeşitli şekillerde tariflenebiliyor. Örneğin okuma yapacak olanların, readerların önceliklendirilmesi ya da yazıma yapacak olan writerların önceliklendirilmesi şeklinde. Bu arada writer demek...
+
+13
+00:09:20,820 --> 00:09:28,380
+Aslında doğrudan yazmak anlamına gelmiyor. Writer'ın yine read yapma, read işlemini yerine getirme ihtimali de var.
+
+14
+00:09:28,380 --> 00:09:40,260
+Şimdi bu iki problem içerisinde öncelik okuma yönündeki proseslere reader'lara verilirse ne olmasını bekliyoruz?
+
+15
+00:09:40,768 --> 00:09:54,928
+sistemde eğer kaynak boştaysa, lack acquire edilmemişse bir başkası tarafından, bir başka writer proses tarafından, reader'ın doğrudan işlemi yapmasını, herhangi bir bekleme olmamasını istiyoruz.
+
+16
+00:09:54,928 --> 00:10:02,088
+Benzer şekilde writer öncelikliyse o zaman da
+
+17
+00:10:03,379 --> 00:10:13,340
+Sistemde bir writer varsa ve kaynak açıkta ise onun doğrudan kullanmasını, laklanmamışsa onun doğrudan bunu kullanmasını bekliyoruz, istiyoruz.
+
+18
+00:10:13,340 --> 00:10:17,340
+Bu ve benzeri...
+
+19
+00:10:18,644 --> 00:10:27,043
+Nasıl diyeyim? Problemin varyasyonları var. Hani farklı kaynaklarda, farklı şekillerde tariflenebiliyor.
+
+20
+00:10:28,543 --> 00:10:35,043
+Ve fakat hani şey üzerinden gidecek olacak, ilk örnek üzerinden gidecek olacak, reader'ların...
+
+21
+00:10:36,820 --> 00:10:44,500
+Öncelikli olduğu yapı üzerinden gidecek olursak, burada kitapta mesela bir çözüm önerisi sunulmuş. Nedir o?
+
+22
+00:10:46,180 --> 00:11:00,080
+İki tane semaphore var. Bu semaphorelar bir tanesi read, write, mutex ki hem okuma yönünde hem yazma yönünde erişen
+
+23
+00:11:02,004 --> 00:11:06,564
+tarafın kullanması gereken semaphore. Ne için kullanması gereken?
+
+24
+00:11:06,683 --> 00:11:14,124
+40 section'a girmek için. Yani ortak veri neyse onun üzerinde yazma ya da okuma işlemi yapmak için kullanması gereken yapı.
+
+25
+00:11:14,923 --> 00:11:16,244
+Diğeri mutex.
+
+26
+00:11:17,908 --> 00:11:35,028
+Bu da aslında doğrudan problemin bir parçası değil de şeyin korunması için problemin çözümünde kullandığımız read count değişkeninin erişiminin senkronize hale getirilmesi için kullanılan bir semaphore.
+
+27
+00:11:35,988 --> 00:11:37,528
+Writer tarafında işler basit.
+
+28
+00:11:39,668 --> 00:11:43,067
+Read write mutex ile şeyi bekliyorsunuz.
+
+29
+00:11:43,423 --> 00:11:53,743
+Yazma işlemini bekliyorsunuz. Bekledikten sonra, eğer sırası gelirse işleminizi yapıyorsunuz. Sonrasında da signal yapıyorsunuz.
+
+30
+00:11:54,243 --> 00:12:00,563
+Reader process'te işler daha karışık. Önce read count'u arttırmanız lazım. Read count'a karşılık olarak.
+
+31
+00:12:05,652 --> 00:12:07,652
+Eee...
+
+32
+00:12:13,875 --> 00:12:38,135
+Sonrasında, read, write, mutex üzerinden yapacağınız işi bekliyor olmalısınız. Bu işi yapmaya hak kazandığınız andan itibaren diğer reader'ların da read count'u erişilmesine izin vermek için signal'la bu semaphore'u aslında oldukça release ediyorsunuz. İşinizi bitirdikten sonra yapmanız gereken şey.
+
+33
+00:12:38,676 --> 00:12:46,016
+Tekrar readcount'a erişmek, readcount'a erişebilmek için başkalarının bu işi yapmış, bitirmiş olması lazım.
+
+34
+00:12:46,176 --> 00:12:48,395
+Dolayısıyla yine mutex üzerinden bekliyorsunuz.
+
+35
+00:12:48,915 --> 00:12:52,036
+Sonrasında artık readright'lık bir işiniz kalmadı.
+
+36
+00:12:52,216 --> 00:12:57,316
+Yani hem shared data üzerinde hem de shared değişken üzerinde işleminizi yaptınız.
+
+37
+00:12:57,316 --> 00:12:58,556
+Sonra çıkacaksınız.
+
+38
+00:13:06,740 --> 00:13:24,799
+Aslında tüm sistemlerde farklı farklı şekillerde karşınıza çıkıyor. Dolayısıyla birçok sistemde doğrudan, yani günümüzde kullanılır işitim sistemlerinde, işitim sistemi seviyesinde doğrudan bize reader-writer-lock şeklinde mekanizmalar da sağlanıyor.
+
+39
+00:13:24,799 --> 00:13:33,799
+Bunu hatta filtret şifhanesi içerisinde baktığınızda sağlanmış halinde görüyorsunuz.
+
+40
+00:13:34,227 --> 00:13:43,788
+Şimdi buradaki çözüme baktığınız zaman bu çözüm de güzel olmakla beraber her zaman için ne sorunu ya da sıkıntısı var?
+
+41
+00:13:46,067 --> 00:14:00,127
+Bir şekilde önceliklendirme yaşadığınız, yaptığınız için, yani readerların öncelikli olması ya da writerların öncelikli olması durumunda ne ihtimali ortaya çıkıyor öncelik sistemi oluştuğunda?
+
+42
+00:14:00,127 --> 00:14:08,683
+Birine starvation'a kurban gitmesi durumu var. Dolayısıyla bir öncelik mekanizması oluşturuyorsanız bunun bir de...
+
+43
+00:14:09,652 --> 00:14:16,272
+starvation'a gitmesini engelleyecek bir mekanizma, bir kontrol yerleştiriyor olmanız şart.
+
+44
+00:14:16,632 --> 00:14:20,752
+Şimdi bir diğer problem, dining philosophers problemi.
+
+45
+00:14:21,556 --> 00:14:37,556
+Diye söylemiştim. Dining filozofası, hani şöyle kısaca bir üzerinden geçelim. Aslında bu hani ne filozofluğun ne yemek yemenin şeyle doğrudan bir alakası yok, bilgisayar sistemleriyle doğrudan bir alakası yok diyebilirsiniz ama burada önemli olan şey şu, bir ortak...
+
+46
+00:14:38,259 --> 00:14:46,899
+Yapı var ve ortak alana yapışmak için birden fazla kaynağa ihtiyacınız var ve bu kaynaklar paylaşımla.
+
+47
+00:14:47,759 --> 00:14:53,319
+Ve bu senaryo aslında bilgisayar sisteminde bolca karşınıza çıkabilecek şeylerden biri.
+
+48
+00:14:54,639 --> 00:14:59,160
+Özellikle mesela faiz sistemi erişim noktasında olabilir.
+
+49
+00:15:02,131 --> 00:15:04,892
+Dolayısıyla bu anlamda önemli bir problem.
+
+50
+00:15:05,031 --> 00:15:09,271
+Şimdi problemin tanımında ya da genelleştirmesinde şöyle bir şey yapılmış.
+
+51
+00:15:09,351 --> 00:15:17,351
+Bir masa var, masada şeyler var, yemek çubukları var.
+
+52
+00:15:17,811 --> 00:15:22,231
+Bu yemek çubukları beş tane. Beş tane koltuklar. Her koltukta bir filozof.
+
+53
+00:15:22,772 --> 00:15:36,932
+Oturuyor. Filozoflar genel olarak düşünüyorlar. İşleri bu. Ama düşünmedikleri zaman karınları acıkıyor ve yemek yiyorlar. Yani toplamda aslında 3 ayrı state var gibi düşünebilirsiniz. Acıkma, yemek yeme ve düşünme.
+
+54
+00:15:38,803 --> 00:15:45,663
+Ve fakat hani beş filozof var, beş tane de chopstick var. Dolayısıyla nasıl bir problem ortaya çıkıyor?
+
+55
+00:15:45,803 --> 00:15:51,384
+Tek bir chopstick ile yemek yiyemiyorsunuz. O yüzden hem sağınızdaki hem solunuzdakini almanız lazım.
+
+56
+00:15:52,963 --> 00:16:00,923
+Ve fakat hani siz sağınızdaki ve solunuzdakini aldığınız zaman hem sağınızdaki hem solunuzdakinin aslında bir yemek yeme şansı yok.
+
+57
+00:16:03,323 --> 00:16:04,923
+Dolayısıyla da...
+
+58
+00:16:10,035 --> 00:16:20,843
+Burada oluşturacağınız problem, burada bu problemi oluşturacağınız çözümlerin ilk başta aklınıza gelen...
+
+59
+00:16:21,107 --> 00:16:29,748
+primitif çözümlerden biraz daha sofistike bir şeyler olması lazım. Ne demek istiyorum? Şöyle demek istiyorum.
+
+60
+00:16:30,528 --> 00:16:38,288
+Diyelim ki neye ihtiyacınız var? Diyelim ki değil, aslında olan bu. Hem sağdaki hem soldaki çubuğa ihtiyacınız var.
+
+61
+00:16:39,508 --> 00:16:46,268
+Propoz ettiğiniz algoritma şöyle çalışırsa, misal, önce soldakini al, sonra sağdakini al.
+
+62
+00:16:47,668 --> 00:17:07,128
+Ondan sonra da ye. Baktığınız zaman problem tarifi olarak, daha doğrusu çözümün tarifi olarak uygun gibi gözüküyor. Birçok anlamda çalışabilir. Şöyle ki, eğer bu beş tane filozofun beşinin de aynı anda yemek yiyisi gelmezse, bu iş çalışabilir.
+
+63
+00:17:10,036 --> 00:17:28,456
+Başka ekstrem durumlar da var. Misal, birinci filozof aldı bir soldaki çubuğu, sonra sağdakini aldı, yemeye başladı. İki soldakini alamadı, dolayısıyla sağdakini denemeyecek. Üç soldakini aldı, sağdakini aldı, o da yedi. Dört.
+
+64
+00:17:29,076 --> 00:17:35,476
+alamadığı için bıraktı. Beş solu aldı, sağın bitmesini bekleyecek.
+
+65
+00:17:35,996 --> 00:17:40,275
+Falan gibi bir durum olursa okey, çalışır. Ama şu senaryoda çalışmaz.
+
+66
+00:17:41,655 --> 00:17:55,576
+Her bir şey, filozof solundaki çatalı aldı. Sistemde preemption'da var ya, hepsi soldakini aldı. Sağdakini almak istiyor.
+
+67
+00:17:56,051 --> 00:18:12,731
+Öyle bir state'e geldik ve fakat sağda alınacak hiçbir şey yok. Çünkü herkes solundakini alınca bir başkasının sağındakini almış oldu. Alın size. Holden, wait var. Cremption da yok. Yani aldığınız bir kaynağa geri iade de etmiyorsunuz. Circular wait da var.
+
+68
+00:18:14,192 --> 00:18:22,411
+Şimdi deadlock'ın şartlarını sonra, daha sonra uzun uzadıya konuşacağız deadlock ve ilgili kısımda ama hani fıstık gibi deadlock.
+
+69
+00:18:23,316 --> 00:18:25,556
+sistemi kilitlediniz. Dolayısıyla,
+
+70
+00:18:28,056 --> 00:18:31,996
+concurrent çalışmayı ya da paralel çalışma duyurumunu da
+
+71
+00:18:31,996 --> 00:18:37,036
+değerlendireceğiniz çözümler elde ortaya atıyor olmanız lazım.
+
+72
+00:18:41,375 --> 00:18:47,255
+Bu zaten hani demin tariflediğim algoritmanın yaklaşıma dikkatini almış.
+
+73
+00:18:48,692 --> 00:19:11,451
+İ filozof numarasını belirtiyor. Çopsticklerde 0'dan 0, 1, 2, 3, 4 diye gidiyor. Dolayısıyla 5'te bir rota ediyor. Önce İ deniyorsunuz solunuzdakini, sonra sağınızdakini deniyorsunuz. İkisini birden alabiliyorsanız yiyorsunuz, sonra signal deyip çıkıyorsunuz. Devam ediyorsunuz.
+
+74
+00:19:11,743 --> 00:19:19,003
+Her bir filozof sırayla yaptığı zaman çalışır gibi gözükse de birinci chopstick'i aldınız, preempt edildiniz.
+
+75
+00:19:19,243 --> 00:19:27,663
+Diğer filozof birinci çubuğu aldı, preempt edildi. Diğeri şeklinde giden bir yapıda zaten size deadlock'a götürecektir.
+
+76
+00:19:27,743 --> 00:19:29,023
+Ne yapabilirsiniz? Farklı.
+
+77
+00:19:30,740 --> 00:19:40,360
+Yapılar oluşturmayı deneyebilirsiniz. Farklı çözümler üretebilirsiniz. Mesela beş kişinin unutulmasına izin vermezsiniz. Dört taneyle çözmeye çalışırsınız.
+
+78
+00:19:42,299 --> 00:19:45,799
+Bu hani başı ağrıyanın başını kesmek gibi bir durum belli açılardan.
+
+79
+00:19:51,380 --> 00:20:04,840
+İşi şöyle bir şey çevirebilirsiniz. Sadece bir tane chop city almak değil, iki chop city birden almak şeklinde. Ama tabii bunu yapabilmek için de neye ihtiyacınız var?
+
+80
+00:20:05,587 --> 00:20:08,807
+Atomik bir şekilde bu işi gerçekleştirme.
+
+81
+00:20:08,907 --> 00:20:13,208
+Yani bir deminki örnekte birinci çopsitlik için bekliyorsunuz.
+
+82
+00:20:13,288 --> 00:20:14,788
+Sonra ikincisi için bekliyorsunuz.
+
+83
+00:20:14,847 --> 00:20:18,407
+Birbirinden ayrı işlemler, bölünebilir işlemler şeklinde.
+
+84
+00:20:18,528 --> 00:20:20,788
+Bunları da şeye çevirebilirsiniz.
+
+85
+00:20:21,327 --> 00:20:25,528
+Atomik bir yapıya çevirip öyle devam edebilirsiniz.
+
+86
+00:20:26,324 --> 00:20:33,403
+Ya da asimetrik bir yapı çözüm oluşturabilirsiniz. Asimetrik yapı oluşturmaktan kastımız ne?
+
+87
+00:20:35,104 --> 00:20:41,304
+Önce mesela tek numaralar sonra çift numaralar yemeği denesin diyebilirsiniz. Bu noktada ne olacaktır?
+
+88
+00:20:45,724 --> 00:20:48,324
+Arada bir dengesizlik oluşacak. Birinde...
+
+89
+00:20:48,915 --> 00:21:12,655
+0, 2, 4 yemeği deneyecek. Bir yerinde de 1 ve 3 yemeği deneyecek. Arada aslında bazı proseslere otomatikman daha öncelikli davranmışsınız gibi bir yapı olacak. Dolayısıyla bunu da şey yapıyor olmanız lazım. Değerlendiriyor ya da dikkate alıyor olmanız lazım.
+
+90
+00:21:12,655 --> 00:21:15,836
+Şimdi de semaforların kullanımı ile ilgili.
+
+91
+00:21:16,372 --> 00:21:43,052
+Bell'in açılan ilginç ve değişik şeyler söyleyeceğim. Benim adıma. Şöyle ki, şimdi semaphore yapısıyla aslında ne yapıyoruz? Alt tarafta atomic instruction'lar var dedik. O atomic instruction'ları kullanmak uygulama geliştireceği açısından zor vesaire dedik. Sonra o yüzden de daha yukarıda işletim sisteminin bize sağladığı.
+
+92
+00:21:44,147 --> 00:22:01,467
+Yapılar var dedik. Onları konuşurken de mesela semaforlardan konuştuk. Semaforların da aslında kullanımıyla ilgili biraz hani nasıl diyeyim herkesin kullanımına doğrudan uygun değil. Biraz daha zor vesaire diyeceğiz.
+
+93
+00:22:01,467 --> 00:22:03,115
+Burada artık...
+
+94
+00:22:03,763 --> 00:22:08,403
+Aslında doğrudan sizlerden bahsetmiyoruz. Sıradan uygulama geliştirici adamlardan bahsediyoruz.
+
+95
+00:22:08,523 --> 00:22:16,003
+Bir bilgisayar mühendisi için semaphore kullanımı zor ya da karışık ya da problemli demek çok anlamlı değil.
+
+96
+00:22:16,563 --> 00:22:23,043
+Fakat ne olabilir? Semaphore sonuçta işletim sisteminin bize sağladığı bir mekanizma.
+
+97
+00:22:23,723 --> 00:22:29,643
+Fakat doğru kullanımı bizim sorumluluğumuzda olan bir mekanizma.
+
+98
+00:22:31,279 --> 00:22:45,259
+Her zaman için yanlış kullanımlar oluşabilir. Bu yanlış kullanımlar neye yol açar? Yani büyük ihtimalle ya deadlock'a ya da starvation'a neden olur.
+
+99
+00:22:45,259 --> 00:22:55,259
+Yani ya ölümcül bir kitlenme olur ve prosesler ilerleyemez hale gelir, bir ilerleme söz konusu olmaz. Ya da...
+
+100
+00:22:56,819 --> 00:23:14,519
+Bu proseslerden bir ya da birkaçına bir türlü sıra gelmediği için bunlar yani sistemin tamamı değil sadece bir ya da birkaç anlamında bir açlık durumu ilerleyememe durumudur.
+
+101
+00:23:14,619 --> 00:23:19,819
+Ona da starvation diyoruz. Nasıl olur bu? Normalde bir mutex üzerinde işlem yaparken...
+
+102
+00:23:20,307 --> 00:23:44,307
+Doğası gereği neyi bekliyoruz? Omotex bizim bir yere girmemizi kontrol altına almak için. Dolayısıyla girebilmek için wait yapıyor olmamız lazım onun üzerinde. Çıkarken de signal yapmamız lazım. Bu işi karıştırıp ters yapmak olası problemlerden bir tanesi. Yani önce signal sonra wait demek. Ya da wait ile beklediğiniz semafor...
+
+103
+00:23:44,852 --> 00:23:54,211
+Daha sonra çıkarken, yani critical section'a girdiniz wait ile critical section'dan çıkarken signal yerine bir daha wait kullanmak.
+
+104
+00:23:54,352 --> 00:23:58,772
+Ya da wait ya da signal'ın herhangi birini kullanmayı yapmak.
+
+105
+00:23:58,872 --> 00:24:03,132
+Yani wait deyip critical section'a girip çıkarken signal demeyi yapmak.
+
+106
+00:24:04,564 --> 00:24:12,144
+Her zaman böyle bariz şekilde karşınıza çıkabilecek ya da bariz şekilde farkına, daha doğrusu farkına varabileceğiniz hatalar olmayacaktır.
+
+107
+00:24:12,903 --> 00:24:28,784
+Açıkçası kullanılan sistem, sistemin içerisindeki işlem sayısı vs. ile bağlı olarak bu problemin oluşma, problemin daha doğrusu baş göstermesi durumuna bağlı olarak farkına var edebilirsiniz, varamayabilirsiniz.
+
+108
+00:24:31,955 --> 00:24:40,576
+Bu işi daha da kolaylaştırmak adına, zaten konik olan kısmı da bu, monitör yapısı sunuluyor.
+
+109
+00:24:40,576 --> 00:24:54,576
+Aslında baktığınız zaman üst seviyede, yüksek seviyeli programlama dillerinde, aynı bir klas yapısı içerisinde size bir...
+
+110
+00:24:56,243 --> 00:25:02,163
+abstraction olarak bir özet olarak kullanımı kolaylaştırmak adına monitör yapısı sunuluyor.
+
+111
+00:25:02,583 --> 00:25:11,211
+Monitör yapısını da yalnız tabii konuşacağız, konuşacağız, konuşacağız ve sonunda semaphore ile ilgili saydığımız nedenlerden dolayı yine...
+
+112
+00:25:11,220 --> 00:25:18,259
+Deadlock'a vesaireye neden olabileceğini, sıkıntı yaratabileceğini söyleyeceğiz. Komik olan kısmı da o.
+
+113
+00:25:18,740 --> 00:25:26,460
+Baktığınız zaman klasa benzer bir yapısı var dedim. Çünkü yaptığınız monitör aslında bakın klas tanımı dedi.
+
+114
+00:25:26,460 --> 00:25:32,740
+Ortak verileriniz var. Bu verilere erişmek için, bu veriler üzerindeki işlem yapmak için procedure'larınız var.
+
+115
+00:25:33,460 --> 00:25:34,460
+Ve tabii ki bu...
+
+116
+00:25:35,284 --> 00:25:40,963
+Nebiro, veriyi ilklendirmek için de bir ilklendirme kısmımız var.
+
+117
+00:25:50,420 --> 00:25:55,420
+Bu yapı zaman zaman yani monitör yapısı...
+
+118
+00:26:03,604 --> 00:26:13,384
+Aslında bir kütüphanenin parçası olarak doğrudan kullanıcılığa sunulan bir özellik ya da yapı.
+
+119
+00:26:13,384 --> 00:26:17,384
+Dolayısıyla birçok...
+
+120
+00:26:17,384 --> 00:26:20,604
+Nasıl diyeyim?
+
+121
+00:26:23,092 --> 00:26:39,432
+Burada tanımlı olan operasyonlar zaten doğrudan sizin kodladığınız yapılar olmuyor. Bunun yerine sizin yerinize kodlanmış yapılar. Bu yüzden de genel amaçlıdır. Dolayısıyla kastümizasyonu kendiniz yapmanız gerekiyor.
+
+122
+00:26:44,692 --> 00:26:58,251
+O kastimizasyon içerisinde size çoğu zaman conditional variable, condition değişkenleri, şartlı değişkenler vs. artık nasıl Türkçeleştirirseniz bu yapıda sunuluyor.
+
+123
+00:26:58,251 --> 00:27:08,311
+Yani bu yapı aslında bildiğiniz bir veritikler ama üzerinde de iki tane işlem var. Bu işlemlerde weight ve signal aynı semaphordaki gibi.
+
+124
+00:27:09,031 --> 00:27:11,831
+Bir iki tane minor farkı var. Nedir o farklar?
+
+125
+00:27:12,192 --> 00:27:26,372
+Normalde wait dediğiniz zaman x üzerinde o prosesin, wait çağrısını, sistem çağrısını yapan prosesin askıya alınması beklenir.
+
+126
+00:27:26,731 --> 00:27:38,892
+Signal ise x nokta signal diye çağrıdığımız signal çağrısı ise x değişkeni üzerinde bekleyen bir başka şey varsa, askıya alınmış olan bir proses varsa
+
+127
+00:27:41,011 --> 00:27:58,011
+Onun çalışmaya devam ettirilmesini sağlar. Buradaki semaphordan ayrılan durum ya da yapışı, eğer o condition variable üzerinde wait demiş olan...
+
+128
+00:27:58,483 --> 00:28:05,764
+Herhangi bir proses yoksa o anda, signal'ın hiçbir anlamı ya da önemi olmuyor. Doğrudan devam ediyorsunuz.
+
+129
+00:28:05,824 --> 00:28:21,524
+Demin ki özet gösterim üzerinden bu bir şey olursak aslında içeride yine monitor yapısı içerisinde iki tane bu sefer Condition Wire Album var ve bunlar üzerinde yapılacak işlemler ayrı sıralar üzerinde tutuluyor.
+
+130
+00:28:21,524 --> 00:28:22,983
+Biraz daha fine.
+
+131
+00:28:24,019 --> 00:28:45,299
+Grain bir yapı oluşturmuş oluyorsunuz. Şimdi, Condition Variable'ın kullanımıyla ilgili de aslında şöyle bir tasarımsal problem ya da daha doğrusu tasarımsal olarak karar verilmesi gereken bir konu var.
+
+132
+00:28:46,900 --> 00:29:09,900
+E ve Q diye iki tane prosesimiz var diyelim ki. Bunların senkronizasyon için kullandığı X isimli bir de conditional varaylığı var. Bir monitör içerisinde, aynı monitör içerisinde tabii ki. Herhangi bir anında sadece ve sadece senkronizasyonu sağlayabilmek için onun monitör içerisinde bir tane prosesin aktif olmasını bekliyoruz. Dolayısıyla...
+
+133
+00:29:10,483 --> 00:29:15,584
+Eğer px üzerinde sinyal işlemi yaptıysa ne olacak?
+
+134
+00:29:18,544 --> 00:29:22,544
+Alternatiflerden bir tanesi signal and wait ya da signal and continue.
+
+135
+00:29:22,544 --> 00:29:35,564
+Yani p signal işlemini yaptıysa q aktif hale gelecek ve p signaldan hemen sonra beklemeye alacak.
+
+136
+00:29:36,756 --> 00:29:59,756
+ne zamana kadar? Q monitörden çıkana kadar. Çünkü o zaten wait ediyordu. Biz bunu signal'a aktive hale getirdik. Dolayısıyla onun çıkmasını bekleyeceğiz. Ya da diğer ihtimal, B signal'ı çalıştırdı. Sonrasında ne yapacak? Monitörden çıkacak. Çıkmasını bekleyeceğiz. O çıktıktan sonra Q'yu aktaracağız.
+
+137
+00:30:00,000 --> 00:30:23,640
+Yani Q aslında signal yapıları yapılmak hale gelmeyecek. P'nin de çıkmasını bekleyecek. Baktığınız zaman farklı programlama dillerinde bunların farklı şekillerde inklamentasyonunu görebilirsiniz. Dolayısıyla kullandığınız kütüphanenin bu inklamentasyonu nasıl yapıldığını bilmekte ya da dikkat etmekte fayda var.
+
+138
+00:30:24,435 --> 00:30:44,496
+Monitor kullanan Dining Philosopher'ı çözebilir miyiz? Tabii ki çözebiliriz. Burada da nasıl çözüleceğinin detayı var. Dikkat edin, 5 tane state bilgisinin tutulduğu bir array var. 5 tane de Condition'ın olduğu self-added dizi var.
+
+139
+00:30:45,327 --> 00:30:53,927
+Stake ile ilgili öncesinde bir enumeration tanımı yapılmış. Stake aslında bir enumeration, thinking, hungry ve eating diye üç farklı state'imiz var.
+
+140
+00:30:56,448 --> 00:31:08,448
+Bunlar üzerindeki bütün şey, operasyon, dikkat edin, pick up ve put down gibi böyle bu monitör solasının içerisinde tanımlı olan procedure üzerinden gerçekleştiriliyor.
+
+141
+00:31:12,276 --> 00:31:18,036
+Biri, bir kapı çağırdığı zaman ben artık açım, şey yapacağım, sonrasında test fonksiyonunu çağıracağım.
+
+142
+00:31:19,756 --> 00:31:28,036
+Testin sonucunda ben yer pozisyonunda değilsem kendimi tekrar beklemeye alacağım diyorum.
+
+143
+00:31:28,695 --> 00:31:32,415
+Put down'da da ne yapıyor olmam lazım? State'ımı tekrar thinking'e çeviriyorum.
+
+144
+00:31:33,096 --> 00:31:38,576
+Hem kendimden önceki hem kendimden sonraki chopstick'leri de bırakıyorum.
+
+145
+00:31:42,708 --> 00:31:48,968
+Şimdi test ve initialization da burada. İlk başlarken ne yapmamız lazım? Herkesi thinking'e çeviriyoruz.
+
+146
+00:31:50,208 --> 00:32:03,328
+Test'de ise ne yapıyoruz? Kendisinden önceki adamın yeme pozisyonda olmaması, kendisinin hungry olması lazım, kendisinden sonraki yemiyor olması lazım.
+
+147
+00:32:03,488 --> 00:32:06,328
+Bu durumda kendisini yer hale çevirebiliyorsunuz.
+
+148
+00:32:09,491 --> 00:32:19,372
+Şimdi bu monitörü kullanmaya başladığınız zaman olacak olan şey ne? Yani doğrudan çözüm içerisinde kullanmak için ne yapmanız lazım?
+
+149
+00:32:20,172 --> 00:32:29,511
+Pickup'ı kullanacaksınız ki yemeğe niyetlenin, sonra yapmanız gereken şey yemek buradaki critical section temsilinde bunu yapacaksınız.
+
+150
+00:32:29,991 --> 00:32:36,592
+Sonrasında da çatalları bırakıyor olmanız lazım. Tekrar normale dönmek için.
+
+151
+00:32:36,915 --> 00:32:46,115
+Şimdi bu yapı içerisinde baktığınız zaman deadlock yok. Kontrollü bir şekilde gidiyorsunuz.
+
+152
+00:32:46,115 --> 00:32:54,996
+Ve fakat hala ne ihtimali var? Starvation ihtimali var. Peki neden starvation ihtimali var?
+
+153
+00:33:00,051 --> 00:33:00,672
+Küsmet.
+
+154
+00:33:07,700 --> 00:33:12,840
+O Star Wars'in ihtimalinin neden olduğunu, nasıl çözülebileceğini siz bir düşünün.
+
+155
+00:33:13,580 --> 00:33:15,820
+İkinci vizeye kadar bir düşünün bakalım.
+
+156
+00:33:17,580 --> 00:33:19,040
+Aklınıza bir şeyler gelecek mi?
+
+157
+00:33:20,880 --> 00:33:21,900
+Size bırakayım orayı.
+
+158
+00:33:23,900 --> 00:33:24,900
+Şimdi...
+
+159
+00:33:24,960 --> 00:33:41,400
+Monitörleri, aslında ne yapıyoruz? Dikkat edin, automatic instruction var, atomic instruction var dedim. Üstüne semaforu kurduk daha rahat olsun diye. Üstüne monitör kurduk dedik. Monitörü de aslında implement ederken ne yapacağız? Semafor kullanacağız.
+
+160
+00:33:44,220 --> 00:33:50,440
+Monitörü implement etmek için semaforu nasıl kullanırız?
+
+161
+00:33:51,859 --> 00:33:56,539
+En basit hali, en temiz haliyle gösterimi incelersiniz.
+
+162
+00:33:56,539 --> 00:33:57,519
+Şey değil.
+
+163
+00:33:59,779 --> 00:34:03,739
+Aynen bu da geçebilirim.
+
+164
+00:34:04,839 --> 00:34:05,779
+Burada
+
+165
+00:34:07,700 --> 00:34:13,079
+Monitör içerisinde şunu demin konuştuk.
+
+166
+00:34:13,079 --> 00:34:15,060
+Hani P ve Q üzerinden.
+
+167
+00:34:15,500 --> 00:34:17,100
+P diyelim ki wait yaptı.
+
+168
+00:34:17,260 --> 00:34:19,699
+Q signal yapacağız ama ya da tam tersi.
+
+169
+00:34:20,320 --> 00:34:24,519
+Ne olacak? Hangisi çalışmasına devam edecek? Hangisi duracak diye konuştuk ama
+
+170
+00:34:24,519 --> 00:34:28,779
+orada bir tane wait eden proses, bir tane signal eden proses vardı.
+
+171
+00:34:29,480 --> 00:34:30,820
+Farklı senaryolar mümkün.
+
+172
+00:34:31,079 --> 00:34:32,579
+Nasıl farklı senaryolar mümkün?
+
+173
+00:34:32,880 --> 00:34:35,699
+Eğer birden fazla proses wait ediyorsa o monitörü...
+
+174
+00:34:35,699 --> 00:34:41,699
+Öncelerinde ne olacak? Nasıl bir scheduling yapılması lazım? En temel akla gelen şey first time, first third.
+
+175
+00:34:41,699 --> 00:34:54,199
+Ki birazdan aslında CPU scheduling'ı konuşurken bundan bahsedeceğiz yöntemden ama adı üstünde zaten ilk gelen önce hizmet alır.
+
+176
+00:34:54,299 --> 00:34:59,899
+Dolayısıyla doğrudan bir kuyruk şeklinde bekletilmesi proseslerin ve hangisi?
+
+177
+00:35:01,396 --> 00:35:28,236
+İlk geldiyse onun başlatılması olarak düşünebilirsiniz. Bir diğer yöntem ne olabilir? Bunu önceliklendirmek olabilir her zamanki gibi. Önceliklendirmeyi ne yapabilirsiniz? Farklı şekillerde kurgulamak, oluşturmak mümkün. Mesela bu lakı kullanacağı süre önceliği belirliyor olabilir. Ters orantılı olarak ne kadar az süre kullanacaksa bu lakı o adamı daha önce şey yapabilirsiniz.
+
+178
+00:35:30,068 --> 00:35:35,508
+Schedule edebilirsiniz, release edebilirsiniz.
+
+179
+00:35:37,568 --> 00:35:38,307
+Dolayısıyla
+
+180
+00:35:42,804 --> 00:35:43,864
+Bu da bir seçenek.
+
+181
+00:35:46,444 --> 00:35:48,064
+Bir şey oldu sanki ama.
+
+182
+00:36:14,996 --> 00:36:17,615
+Bu önemlendiğin o mekanizmanın görsel hali.
+
+183
+00:36:19,216 --> 00:36:19,615
+Şimdi.
+
+184
+00:36:26,615 --> 00:36:30,355
+Burada aslında başka bir slide olması lazımdı.
+
+185
+00:36:32,155 --> 00:36:34,516
+Son noktada şeye geleceğimiz.
+
+186
+00:36:36,275 --> 00:36:50,435
+Monitörün size sağlanıyor olması gene her şeyin güllük, gülistanlık ya da çok güzel olacağı anlamına gelmiyor. Neden? Monitör de yine son kullanıcının kullandığı bir yapı.
+
+187
+00:36:53,492 --> 00:37:15,632
+Yani programlayıcı olaya bakarken monitörü yanlış kullanırsa yine semaphore'un yanlış kullanımında olan hatalara maruz kalıyorsunuz. Yani pek bir şey değişmiyor. Yani herhangi bir kaynağa erişim izni üzerinden değil de doğrudan erişebilir bir proses. Yanlış kullanım.
+
+188
+00:37:17,043 --> 00:37:23,403
+Ele geçirdiği bir kaynağı hiçbir zaman şey yapmayabilir, boşa çıkartmayabilir.
+
+189
+00:37:24,623 --> 00:37:32,463
+Ya da hiç ele geçilmediği bir kaynağı ne yapabilir?
+
+190
+00:37:33,764 --> 00:37:36,563
+Boşa çıkartmaya, release etmeye çalışabilir.
+
+191
+00:37:37,523 --> 00:37:40,043
+Aynı kaynağı birden fazla kez...
+
+192
+00:37:44,148 --> 00:37:48,008
+ele geçirmeye, almaya çalışabilir.
+
+193
+00:37:49,688 --> 00:38:01,807
+Dolayısıyla baktığınız zaman aslında burada tarif ettiğimiz problemler ya da olası sıkıntılar semaphore kullanımıyla ilgili olarak tariflediğimiz sıkıntıların aynısı.
+
+194
+00:38:05,588 --> 00:38:13,828
+Dolayısıyla da o başta söylediğim komik bir problem vesaire diye ifade ettiğim şeye geri dönüyoruz.
+
+195
+00:38:26,516 --> 00:38:46,536
+Bu noktada zaten yapacak bir şeyimiz kalmıyor. Şimdi, senkronizasyon örneklerine baktığımız zaman hızlıca bir geçiş yapacağız. Hangi işletim sisteminde ne var ne yok şeklinde. Solaris'te aslında ilginç bir durum var. Adaptive mutex denilen bir kavramdan bahsediyoruz.
+
+196
+00:38:50,260 --> 00:39:00,000
+Multi-processor bir sistemdeyseniz, Adaptive Mutex, hani şey olarak, spinlock'la implement edilmiş bir semaphore olarak başlıyor.
+
+197
+00:39:04,884 --> 00:39:15,443
+Bunun güzel tarafı ne? Hatırlayın, Spinlock multiprocessor sistemde çalıştığında belli açılardan kabul edilebilir bir yapı demiştik.
+
+198
+00:39:15,543 --> 00:39:21,684
+Yani tek bir işleminiz varsa Spinlock'ta onun CPU timene harcımak istemezsiniz ama multiprocessor bir sistemsiniz.
+
+199
+00:39:21,684 --> 00:39:31,743
+Sıkıntı olmaz. Diğer core ya da diğer prosesör devam edilebilir.
+
+200
+00:39:40,275 --> 00:39:40,996
+Eee...
+
+201
+00:39:45,811 --> 00:40:03,032
+Ama şeyse, beklediğimiz luck, yani başka bir çalışmayan durumda olan thread tarafından fold ediliyorsa, onun tarafından bekletiliyorsa,
+
+202
+00:40:03,487 --> 00:40:14,547
+Bu durumda hani spin not ile beklemenin bir esprisi yok. O adam zaten hani şu an run state'inde değil. Dolayısıyla hızlıca bitirme ihtimali yok. O yüzden de ne yapıyoruz?
+
+203
+00:40:16,628 --> 00:40:27,548
+Bunu spinlock'a çevirmiyoruz. Onu da block ve slip üzerinden waiting state'e aktarıyoruz. Diğer şeyin release edilmesini bekliyor.
+
+204
+00:40:28,368 --> 00:40:35,608
+Bunun dışında Solaris'te de Condition Variable var, Reader Writers mekanizmaları var vs. var.
+
+205
+00:40:42,452 --> 00:40:53,092
+Doğrudan spinlock ile implement edilmiş ve spinlock şeklinde çalışan thread, preempt edilmiyor. Doğrudan preempt edilmesi engelleniyor.
+
+206
+00:40:53,452 --> 00:41:03,972
+Çünkü preempt edilirse bu sefer kenara konacak, onu bekleyen, o lock'ı bekleyen diğer thread'ler ya da prosesler dönüp duracak. Boşa bir çaba haline gelecek.
+
+207
+00:41:05,523 --> 00:41:22,063
+Linux'a baktığımız zaman aslında kernel'i 3 serisiyle beraber yani 2-6'dan sonra doğrudan full preemptive, kernel'in preemptive olması beraberinde hem güzel hem sıkıntılı şeyler getiriyor demiştik.
+
+208
+00:41:25,012 --> 00:41:37,932
+Linux bize hem semaphore hem atomik integer yapısını sağlayıyor. Atomik integer de aslında üzerindeki işlemleri atomik olarak gerçekleştirebildiğiniz değişkenler. Spinlock mekanizması var.
+
+209
+00:41:37,932 --> 00:41:50,932
+Reiter-Writer'ın farklı versiyonu, iki farklı versiyonu var. Bu arada şeyde...
+
+210
+00:41:51,795 --> 00:42:05,595
+kernel full preemptive ve fakat tek işlemci değilseniz, spinlock yapmak yerine bunu şeyle çözüyor.
+
+211
+00:42:06,975 --> 00:42:12,535
+Kernel'in preemption'ını kernel moddayken disable ediyor, sonra enable ediyor.
+
+212
+00:42:12,535 --> 00:42:15,655
+Yani preempt etmesini engelliyor kernel.
+
+213
+00:42:16,436 --> 00:42:37,315
+P-Tread API'ne fazla girmiyorum. Çünkü onu zaten uygulamada göreceksiniz, konuşacaksınız. Şöyle ki, bugün de akşam laboratuvar devam edecek. Bununla ilgili uygulama tekrar yapılacak. Geçen hafta sanırım asitim arkadaş.
+
+214
+00:42:38,420 --> 00:42:44,140
+uygulamayı yaparken aksilikler olmuş. O yüzden tekrar yapabilir miyiz dedi.
+
+215
+00:42:46,720 --> 00:42:49,720
+Tekrar edilecek bazı şeyler üzerinden geçilecek.
+
+216
+00:42:50,960 --> 00:42:56,079
+Şimdi konuşacağımız bir diğer şey, bugün konuşmaya başlayacağımız bir diğer şey, thread scheduling.
+
+217
+00:43:00,440 --> 00:43:05,800
+Ne thread scheduling? Pardon, CPU scheduling. Thread scheduling de konuşacağız gerçi ama.
+
+218
+00:43:06,175 --> 00:43:24,036
+Bir kaynağımız var. En önemli kaynağımız diye hep lanse ettiğimiz CPU. O CPU'nun işlemciler arasında nasıl paylaşılacağını, nasıl onlar tarafından kullanacağını belirlememiz lazım. Dolayısıyla scheduling ile ilgili daha önce konuşmuştuk.
+
+219
+00:43:27,635 --> 00:43:39,955
+Long Term, Short Term ve Medium Term Scheduler şeklinde. Burada aslında Scheduling CPU, Scheduling dediğimiz zaman hep Short Term Scheduler'a yapıyoruz, referans veriyoruz.
+
+220
+00:43:39,955 --> 00:43:43,955
+Onun üzerine konuşacağız. Konuşurken de...
+
+221
+00:43:44,947 --> 00:43:52,527
+Bir scheduling işlemi gerçekleştiriyorsak, yani bir karar verip işlemciyi bir sonraki adımda kimin kullanacağını belirleyeceğiz.
+
+222
+00:43:52,688 --> 00:43:56,568
+Dolayısıyla bunu nasıl belirleyeceğimiz, hangi kritele göre belirleyebileceğimizi konuşacağız.
+
+223
+00:43:56,668 --> 00:43:58,228
+Bu kriterlerin neler olduğunu konuşacağız.
+
+224
+00:43:59,927 --> 00:44:08,487
+Hali hazırda, böyle bir türlü ortaya atılmış, kullanılmış, kullanılmakta olan, farklı sistemlerde, farklı şekillerde kullanılmakta olan algoritmalar var.
+
+225
+00:44:08,628 --> 00:44:09,487
+Onları inceleyeceğiz.
+
+226
+00:44:11,284 --> 00:44:21,284
+Thread Specific olarak scheduling yapılan yerler var. Onları konuşacağız. Thread Specific özelinde scheduling nasıl yapılan bakacağız. Bir de...
+
+227
+00:44:21,588 --> 00:44:30,307
+Çoklu sistemlerde, çoklu işlemce sahip sistemlerde scheduling de ek olarak ne yapılabilir onu inceleyeceğiz.
+
+228
+00:44:30,307 --> 00:44:46,248
+Şu ana kadar konuştuğumuz ve söylediğimiz şeyler aslında hep single CPU için yani bu temel kriterler, scheduling kriterleri vesaire konuşma hep uniprocessordan bahsediyor olacağız ama sonrasında multiprocessor edileceğiz.
+
+229
+00:44:49,588 --> 00:45:00,028
+Bizim doğrudan ilgi alanımız ya da bakacağımız yer değil. Fakat moda hızlıca bir değişiriz. İşletim sistemleri örnekleri üzerinden gideceğiz.
+
+230
+00:45:02,088 --> 00:45:08,228
+Arkadaşlar, bir 10 dakika ara verelim. Benim bir sesimi toplamam lazım. Çok gıcık yapmaya başladı.
+
+231
+00:45:10,008 --> 00:45:16,668
+Bu arada bir sorunuz olursa şey yapın, sorun buradayım. Sadece kamerayla mikrofonu kapatacağım. Sorunuz olursa geri döner cevaplarım.
+
+232
+00:52:47,219 --> 00:52:48,339
+Evet, şimdi.
+
+233
+00:52:53,715 --> 00:53:09,675
+Bunun üzerinden devam edelim arkadaşlar. Scheduling'e ilgili bu chapter'ın amacı vesairesi yazıyor ama bizim amacımız belli. Scheduling'e nasıl yapılıyor, ne değildir, tamamını çözmek.
+
+234
+00:53:21,715 --> 00:53:38,255
+Her bir proses neyden oluşuyor? Çeşitli burstlerden. Çeşitli derken aslında iki tip burst var. Ya CPU'da işlem yapıyordur ya da bir IO'yu ya da bir event'i vesaireye bekliyordur. Bekleme durumu.
+
+235
+00:53:39,695 --> 00:53:48,015
+Derdimiz ne? En başından beri konuşuyoruz. Multi Programming ile mesela ne çözmeye çalışıyoruz? Her seferinde.
+
+236
+00:53:48,592 --> 00:53:58,992
+CPU time'ını optimize şekilde kullanmaya çalışıyoruz. Nasıl kullanacağız? Diyelim ki bir prosesimiz var. Çalışmaya başladı. Başladığı zaman bir CPU burst yapacak. O net.
+
+237
+00:53:59,512 --> 00:54:05,420
+Ve fakat sonrasında ne yapabilir? Bir IEO başlatabilir ya da bir Prent bekleyebilir. Bu süre zarfında...
+
+238
+00:54:06,068 --> 00:54:14,748
+Ne yapabiliriz ya da ne yapmaya çalışıyoruz? Multiprogramming ile aslında o prosesin dışında memörde başka proseslerinde bulunmasına izin veriyoruz.
+
+239
+00:54:15,328 --> 00:54:26,368
+Böylece o proses bir şekilde beklemeye geçmesi gerektiği zaman, wait'e geçmesi gerektiği zaman diğer prosesin devreye alınması, CPU'da çalıştırılmasını sağlıyoruz.
+
+240
+00:54:26,368 --> 00:54:30,368
+Bu geçişi sağlayarak da CPU time'ını...
+
+241
+00:54:31,668 --> 00:54:33,668
+efektif olarak kullanmayı hedef.
+
+242
+00:54:33,988 --> 00:54:41,588
+Şimdi, hatta bu long-term scheduling vesaire konuşurken şey diye konuşmuştuk, hatırlayın.
+
+243
+00:54:42,248 --> 00:54:45,588
+Long-term scheduling, secondary storage'tan alıp...
+
+244
+00:54:47,219 --> 00:55:14,719
+Birimcil belleğe, ana belleğe koyacağı prosesleri seçerken bunların IO bound mı, CPU bound mı olduğuna bakmalı ve ona göre seçmeli. Aksi taktirde bir konvoy efekte ulaşabilir demiştik. CPU bound ya da IO bound nasıl oluyor? Şöyle oluyor. Bakın hani bir işlem başladığı an tabii ki CPU burst da başlamak zorunda. Önce çalışması en ufak bir şey de olmasa bir iki işlem yapıyor olması lazım.
+
+245
+00:55:15,219 --> 00:55:16,059
+Ayo başlatacak.
+
+246
+00:55:16,779 --> 00:55:20,991
+Ayo başlattıktan...
+
+247
+00:55:20,992 --> 00:55:33,972
+Sonra tekrar CPU'ya dönecek, sonra tekrar IO'ya dönecek. Yani böyle ufak ufak burstler oluşacak. Bunların bir kısmı CPU, yani CPU tarafı da olduğu zaman CPU burst, sonra IO burst şeklinde gidiyor.
+
+248
+00:55:34,112 --> 00:55:44,592
+Eğer IO burstleri daha iyi olsa biz bunu IO bound diyoruz. Yani IO anlamında yüklü bir işlem. CPU kullanımı daha fazlaysa CPU bound diyoruz.
+
+249
+00:55:47,251 --> 00:55:57,611
+Bu yapı aslında işlemden işleme ciddiye gerek yok burada. İşlemden işleme farklılık gösteriliyor.
+
+250
+00:55:58,611 --> 00:56:03,191
+Buradaki incelenebilecek şeylerden bir tanesi burstlerin uzunluğu.
+
+251
+00:56:03,191 --> 00:56:11,651
+Bu burstler aslında dağılımına baktığınız zaman alttaki eksende şeyi görüyorsunuz.
+
+252
+00:56:11,731 --> 00:56:13,411
+Burst'ün uzunluğu.
+
+253
+00:56:14,804 --> 00:56:19,184
+dikey eksende ise bunların sıklığını görüyorsunuz.
+
+254
+00:56:19,844 --> 00:56:24,684
+Gördüğünüz şey ne? Aslında 8 milisaniye altındaki burstların çok daha fazla ve yoğun oldu.
+
+255
+00:56:24,684 --> 00:56:29,284
+Yani aslında hep CPU burst dediğimiz kısımlar kısa zaman dilimlerinden oluşuyor.
+
+256
+00:56:29,943 --> 00:56:33,744
+Tabi buradaki ölçüm biraz göreceli. Yani şeye göre değişir.
+
+257
+00:56:35,188 --> 00:56:48,788
+Nedir o? Üzerinde bulunduğunuz mimari ya da kullandığınız işlemci yapısına bağlı olarak mutlaka değişiklik gösterir. Daha hızlı bir işlemci de daha, burstler daha kısa sürelerde olacaktır.
+
+258
+00:56:58,356 --> 00:57:20,735
+Mesela herhangi bir işlemcide çıkarttınız. Herhangi bir işlemciden daha hızlı bir işlemcide bu grafik biraz daha sola kayacaktır. Daha yavaş bir işlemcide biraz daha sağa kayacaktır. Ama sistemin uğruğuna baktığınız zaman kısa burstlerin frekans olarak çok daha yoğun ve sık olduğunu, gerçeğini ya da durumunu değiştirmeyecektir.
+
+259
+00:57:22,931 --> 00:57:46,192
+Short term, long term ve medium term scheduler olduğunu konuşmuştuk. Bunların görevlerini de konuşmuştuk. Short term scheduler yani CPU scheduler'ın asıl görevi RediQ'dan bir sonraki adımda çalışacak işlemin, CPU'da çalışacak işlemin seçilmesi olduğunu tarifleyebiliriz.
+
+260
+00:57:46,192 --> 00:57:48,971
+Şimdi soru şu.
+
+261
+00:57:49,280 --> 00:58:10,060
+Bu seçim ne zaman yapılır? Bu seçimin yapılabilmesi için ya da yapılacağı aslında dört tane durum tariflenmiş. Bunlardan bir tanesi, ben sondan başlayayım. O an CPU'da çalışmakta olan işlemin termine etmesi. Bitmesi yani.
+
+262
+00:58:14,036 --> 00:58:21,876
+Başa döneyim bir numaraya. Running state'te olan o prosesin kendiliğinden waiting state'e geçmesi.
+
+263
+00:58:21,876 --> 00:58:36,315
+Şimdi sadece bu bir ve dördüncü adımlarda scheduling kararı alıyorsanız, yani ne yapacağınıza karar veriyorsanız, o zaman aslında non-premt bir yapıdasınızdır.
+
+264
+00:58:38,579 --> 00:58:51,299
+Premşin yok. İşletim sistemi doğrudan bir proses çalışmak dolan bir proses alıp kenara koymuyor. Onun yerine işlemin kendi kendine işlemciyi bırakmasını bekliyorsunuz demektir.
+
+265
+00:58:53,879 --> 00:58:57,859
+Bunun dışında dört tane durum var demiştik. İkisini saydık şu ana kadar.
+
+266
+00:59:03,123 --> 00:59:24,383
+Bir işlemin running'dan ready'ye geçiyor olması bir başka durum, scheduling kararı verebileceğiniz ya da bir prosesin waiting durumundaki bir prosesin ready state'ine geçiyor olması da bir başka scheduling kararı verebileceğiniz.
+
+267
+00:59:25,967 --> 00:59:39,967
+Yani bu iki ve üç olarak tanımlanmış adımlarda da scheduling karar veriyorsunuz. O zaman preemption'dan bahsediyoruz. Yani siz çalışmakta olan...
+
+268
+00:59:40,307 --> 00:59:46,847
+Bir prosesi durdurup kenara alabiliyorsunuz demektir.
+
+269
+00:59:46,988 --> 00:59:52,347
+Premption var diyorsak da bu aynı zamanda ne demek?
+
+270
+00:59:53,628 --> 00:59:57,548
+Demin konuştuğumuz ve tamamladığımız bölümden hatırlıyor olmanız lazım.
+
+271
+00:59:57,548 --> 01:00:00,000
+Senkronizasyon üzerinde.
+
+272
+01:00:00,000 --> 01:00:12,380
+çalışmamız lazım. Yani ortak paylaşılan veri var ve buna erişen, erişim sırasında preempt edilen, kenara alınan, çalışması kesilen, daha sonra buraya geri dönecek olan prosesler var.
+
+273
+01:00:12,980 --> 01:00:21,000
+Dolayısıyla buna dikkat ediliyor olması lazım. Preemption'ın bir proses neydi? Sistem çağrısı yaptığı zaman aslında...
+
+274
+01:00:22,195 --> 01:00:36,816
+kernel moda geçiş var, kernel modunda istediği işin yapılması var. Dolayısıyla kernel modundayken preemption'ın olması ya da olmaması gibi düşünülmesi, üzerine kafa patlatılması gereken bir durum var.
+
+275
+01:00:36,816 --> 01:00:48,715
+Demin process, senkronizasyonda bunu da konuştuk. Dolayısıyla benzer şekilde kernel modunda shared...
+
+276
+01:00:50,036 --> 01:01:00,656
+Değişkenlere yani paylaşılan ortak alanlara yapılan erişim ya da mudahaleler sırasında oluşan interruptların nasıl handle edileceği de ayrı bir konu.
+
+277
+01:01:01,036 --> 01:01:11,636
+Şimdi Scheduler için ne dedik? Bir sonraki adımda çalışıp olan prosesin seçilmesi, dediklerden seçilmesi. Bunu yapıyoruz. Bu sadece seçim işlemini yapıyor.
+
+278
+01:01:13,108 --> 01:01:37,487
+Seçim yapıldıktan sonra nelerin yapılması lazım? Bir kere context switch yapılması lazım. Yani bir prosesten diğerine geçiliyor olması lazım. Geçiş yapıldıktan sonra user mode'a da geçiş yapılması lazım. Sonrasında da yeni işlemciye atanan yeni işlemin çalışmaya başlatılması lazım. Bunların tamamını yerine getiren yapıya dispatcher diyoruz.
+
+279
+01:01:41,108 --> 01:01:50,067
+Tabii ki süreye ihtiyacı var. O sürede dispatcher latency olarak ifade ediliyor. Zaten şey olarak da söylenmiş.
+
+280
+01:01:50,067 --> 01:01:53,688
+Time it takes for dispatcher to stop one process and start another running.
+
+281
+01:01:58,612 --> 01:02:04,472
+Yani buradaki ilişki, scheduler ve dispatcher ilişkisini şey gibi düşünebilirsiniz.
+
+282
+01:02:05,392 --> 01:02:07,932
+Routing ve forwarding gibi de düşünebilirsiniz.
+
+283
+01:02:08,152 --> 01:02:09,512
+Kavram ikiye bölünmüş durumda.
+
+284
+01:02:10,032 --> 01:02:16,711
+Orada ne yapıyoruz? Routing tablosunun oluşturulması, routing kararlarının alınması vs. hepsi routing'in parçası.
+
+285
+01:02:16,711 --> 01:02:24,672
+Ve fakat gelen paketin bir hattan diğer hatta iletilmesi ya da farklı yere aktarılması işi forwarding.
+
+286
+01:02:26,291 --> 01:02:42,031
+Şimdi scheduling için çeşitli kriterleriniz olabilir. Bunların hepsi aslında içinde bulunduğunuz ya da oluştuğunuz sistemin yapısına, niyetine vesairesine göre değişir.
+
+287
+01:02:43,351 --> 01:02:47,451
+En temel şey burada aslında ne yapıyoruz? CPU scheduling yapıyoruz.
+
+288
+01:02:47,612 --> 01:02:53,692
+Bu yüzden CPU'nun zamanını efektif kullanmak gibi bir hedefiniz var. Zaten scheduling'yi bu yüzden yapıyoruz.
+
+289
+01:02:54,079 --> 01:03:00,739
+Yani CPU utilization bizim scheduling kriterlerimizden biri olabilir.
+
+290
+01:03:01,899 --> 01:03:03,980
+Bir diğer şey throughput olabilir.
+
+291
+01:03:04,759 --> 01:03:05,839
+Throughput'dan kasıt ne?
+
+292
+01:03:05,839 --> 01:03:14,379
+Birim zamanda çalışmasını tamamlayan proseslerin sayısı bizim için bir kriter olabilir.
+
+293
+01:03:15,759 --> 01:03:19,759
+Turnaround time bizim için bir kriter olabilir.
+
+294
+01:03:20,288 --> 01:03:37,527
+Turn around time.cassive bir process sisteme submit ediliyor. Bu submit edilme zamanından bu sistemden çıkışa çıkmasına yani tamamlanmasına kadar geçen süre. Bu süre turn around time olarak isimlendiriyor.
+
+295
+01:03:45,460 --> 01:04:02,779
+Turnaround time aslında neyi içeriyor baktığınız zaman? Birkaç farklı süreyi beraberinde getiriyor. Şimdi bir prosesin hiç kesintiye uğramadan doğrudan çalıştırılması için gerekli süre aslında execution zamanı.
+
+296
+01:04:02,779 --> 01:04:09,199
+Hani buna hiçbir müdahaleniz yok. Başından sonunda hiçbir kesinti olmadan çalıştırırsanız bu var.
+
+297
+01:04:09,684 --> 01:04:36,724
+Bunun dışında ne oldu? Eğer çalışma sırasında kesintiye uğradı ve şey yapıldıysa, RediQ'da bekletildiyse, bu sürede, yani bekleme süresi de turnaround time içerisinde var. Hepsi birden bu işin içerisinde. Dolayısıyla o yüzden aslında turnaround time da müdahil olamayacağınız, yani scheduler'ın doğrudan etkileyemeyeceği zamanlar var. Execution time olarak.
+
+298
+01:04:37,172 --> 01:04:45,992
+Dolayısıyla, daha bunu böyle scheduler'ın performansını ölçmek için ortaya atılmış olan bir kriter de waiting time.
+
+299
+01:04:46,472 --> 01:04:56,512
+Yani ben execution time olmadan herhangi bir prosesin hazır haldeyken ready kuyruğunda ne kadar süre bekletiyorum? Waiting time mi ifade ediyor?
+
+300
+01:05:04,244 --> 01:05:11,564
+çalışma anlamında daha interaktif olmasını bekliyoruz. Yani interaktif bir sistem olmasını bekliyoruz.
+
+301
+01:05:11,624 --> 01:05:19,864
+Mesela en basit, mouse'a tıkladığınız zaman o pencerenin ya da pop-up'un ne kadar hızlı açıldığı sizin için önemli.
+
+302
+01:05:20,044 --> 01:05:30,704
+Çünkü interaktif bir sistem kullanıyorsunuz. Dolayısıyla ilk respons'un oluşturulması, yani bir işlem, bir proses şeye sabit edildi.
+
+303
+01:05:32,307 --> 01:05:56,687
+Nedro sisteme submit edildi. Bu süreden ilk çıktı üretmesine kadar geçen sürede response time diye isimlendiriyoruz. Dolayısıyla bunu ölçmek de bir şey, değerlendirmek. Bunları ölçerken nasıl olmasını istiyoruz. CPU time'ını utilize edilmesini, kullanılmasını maksimize etmek isteriz.
+
+304
+01:05:57,715 --> 01:05:58,735
+Her zaman için.
+
+305
+01:05:59,976 --> 01:06:03,556
+Öbür taraftan throughput'u maksimize etmek isteriz.
+
+306
+01:06:03,795 --> 01:06:11,695
+Ama diğer süreleri, turnaround time'ı da, waiting time'ı da, bekleme süresi de, response time'ı da hepsini minimize etmek isteriz.
+
+307
+01:06:12,516 --> 01:06:14,775
+Burada şunu da söylemekte fayda var.
+
+308
+01:06:14,775 --> 01:06:15,775
+CPU...
+
+309
+01:06:16,880 --> 01:06:24,179
+Utilization'ı arttırmak istiyoruz, maksimize etmek istiyoruz ama genellikle onun da %100 olması istenmez.
+
+310
+01:06:24,779 --> 01:06:28,980
+Çünkü %100 aslında tehlikeli bir sınır. Bu araba kullanmaya benzetebiliriz.
+
+311
+01:06:28,980 --> 01:06:33,920
+Bir arabanız var, 220 yapıyor. Siz de her daim 220'yi de kullanıyorsunuz.
+
+312
+01:06:34,420 --> 01:06:48,420
+Belli açıların efektif ya da makul değil. Şöyle ki, bir tehlike anında, bir problem anında hızlanmanız gerektiğinde hızlanabileceğiniz yer yok. Bu da aynı noktaya geliyor. Dolayısıyla bir sistemi tasarlıyorsanız, bir yapı oluşturacaksanız...
+
+313
+01:06:53,715 --> 01:07:06,655
+oluşturduğunuz sistemdeki CPU utilization'ı maksimal etmek istersiniz ama %100 olsun istemezsiniz. Daha çok böyle kımıldayabileceğiniz size de bir pay kalacak bir aralıkta olmasını istersiniz.
+
+314
+01:07:07,275 --> 01:07:18,375
+Farklı kaynaklarda farklı şeyler görürsünüz. %40 ve %90 arasında olması falan filan gibi ama bu biraz da yapacağınız işle yapıyla alakalıdır. Ona göre belirlenmesi gerekir.
+
+315
+01:07:19,123 --> 01:07:29,783
+Şimdi scheduling algoritmalarını konuşacağız. Doğrudan konuşacağımız birkaç tane algoritma var. En basitinden başlayarak gideceğiz.
+
+316
+01:07:30,783 --> 01:07:38,583
+En basiti aslında first come, first sort. Yani ilk gelen ilk servis edilir. FCFS diye geçiyor birçok kaynakta.
+
+317
+01:07:39,199 --> 01:07:46,940
+Burada bize ready kuyruğunda hazır durumda bulunan p1, p2, p3 şeklinde 3 tane proses verilmiş.
+
+318
+01:07:47,059 --> 01:07:49,000
+Burst time'da da 24, 3 ve 3.
+
+319
+01:07:49,659 --> 01:07:51,339
+Geliş sıraları da 1, 2, 3 şeklinde.
+
+320
+01:07:51,859 --> 01:08:05,440
+Dediğiniz zaman bir Gant diagramı çizip gösterirsek, ilk p1 geldiği için o başlayacak, 24 bölüm boyunca çalışacak, sonra p2 geldi, 3 bölüm o çalışacak, sonra p3 geldi, 3 bölüm o çalışacak.
+
+321
+01:08:05,780 --> 01:08:12,920
+Buna baktığınız zaman P kuyrukta hiç beklemedi. Geldiği zaman doğrudan çalıştı. Beklemesi 0.
+
+322
+01:08:13,200 --> 01:08:19,900
+P2 ise P1'den sonra geldiği için P1'in çalışmasını bekledi. 24 birim. Dolayısıyla beklemesi 24.
+
+323
+01:08:20,520 --> 01:08:28,320
+P3'ün ise hem P1 hem P2'yi beklediği için 27 birim çalışma süresi, bekleme süresi var.
+
+324
+01:08:28,756 --> 01:08:32,736
+Bunları topladığınız zaman 51, 3'e böldüğünüz zaman ortalısı 17.
+
+325
+01:08:32,916 --> 01:08:39,176
+Yani bu sistemde şu an bu haliyle şey nasıl? Bekleme süresi biraz yüksek.
+
+326
+01:08:40,376 --> 01:08:47,736
+Baktığınız zaman şey rahatsız edecek, 3 birim yapacak olan, işlem yapacak olan adımın biri 24, biri 27 birim bekledi.
+
+327
+01:08:49,396 --> 01:08:51,576
+Yani bayağı geciktirdik aslında bu adamları.
+
+328
+01:08:52,056 --> 01:08:55,016
+Peki bunlar farklı bir şekilde gelseydi ne olurdu?
+
+329
+01:08:55,956 --> 01:08:59,255
+Önce p2, sonra p3, sonra p1 gelseydim.
+
+330
+01:08:59,935 --> 01:09:05,855
+p2 doğrudan çalışacak, p3 p2'nin çalışmasını bekleyecek, p1 de hem p2 hem p3'ü bekleyecek.
+
+331
+01:09:06,395 --> 01:09:11,876
+Yani p1'in beklemesi 6 birim olacak, p2'nin beklemesi 0, p3'ünki de 3.
+
+332
+01:09:12,536 --> 01:09:15,335
+Baktığınız zaman ortalama değeri de 3.
+
+333
+01:09:16,536 --> 01:09:20,735
+Bir öncekine göre nasıl bir yapı var?
+
+334
+01:09:21,171 --> 01:09:28,251
+Bekleme süresi, ortalama bekleme süresi, genel bekleme süresi, her türlü bekleme süresi çok daha az.
+
+335
+01:09:29,331 --> 01:09:31,891
+Dolayısıyla bu açıdan da çok daha efektif.
+
+336
+01:09:33,791 --> 01:09:39,471
+Dolayısıyla buradan doğrudan neye görebiliyoruz bakınca?
+
+337
+01:09:41,939 --> 01:09:49,399
+Özellikle araya giren uzun bir iş bekleme sürelerini ciddi anlamda arttırabiliyor.
+
+338
+01:09:50,679 --> 01:09:56,899
+Yani uzun iş öndeyse arkasında böyle bir bekleme kuyruğu oluşuyor.
+
+339
+01:09:56,899 --> 01:10:06,179
+Buna da aslında bir konvoy efekti oluşturuyor.
+
+340
+01:10:06,547 --> 01:10:15,487
+Yani mesela buradaki kısa burstlere sahip olan P1 ve P3 tahminen bu CPU burstünden sonra IO burst yapacaklar.
+
+341
+01:10:15,487 --> 01:10:30,108
+Ve fakat orada da şöyle bir sıkıntı olacak. P1 uzun bir CPU burst yaptı. P2 ve P3 onu bekledi. Yani ilerleyemediler. P1 bittikten sonra IO burst yapmaya gitti.
+
+342
+01:10:31,988 --> 01:10:58,128
+P2 işini bitirdi, o da IO başlatmaya gitti. P3 işini bitirdi, o da IO başlatmaya gitti. Bu sefer IO kuyruğunda arka arkaya dizildiler. Ne olacak? Daha önce konuştuğumuz long term scheduler'daki o dengesiz seçimden dolayı oluşan konvoy efekti burada gene olacak. Dolayısıyla bunu çözmek için bir şeyler yapmak lazım. Bunu çözmek için ortaya atılan yapılardan bir tanesi aslında shortest job first.
+
+343
+01:11:02,387 --> 01:11:14,667
+Şimdi, shortest job first'in bir güzelliği var. Verilen şey, process seti içerisinde ortalama bekleme süresi en az olacak şekilde sonuç rektör.
+
+344
+01:11:16,987 --> 01:11:24,847
+Ve fakat, şimdi bir işin diğerlerinden daha kısım olup olmadığını çalıştırmadan bulmanız, bilmeniz mümkün değil.
+
+345
+01:11:29,587 --> 01:11:54,647
+Dolayısıyla bunu nasıl bilebilirsiniz? Birkaç tane yöntem var. Bir, kullanıcıya sorabilirsiniz. Muhtemelen bizim ülkede olsa herkes yalan söyleyecek. Bir arkadaşa bakıp çıkacağım tarzında takılacak. Bir diğer şey, alternatif ise bununla ilgili basit bir filtre kullanarak aslında tahminleme yapmak.
+
+346
+01:11:55,891 --> 01:12:06,011
+Yani sizin tahmin ettiğiniz değer, gerçekte olan değer. Bu ikisi arasında bir şey kurup, denge kurup bir sonraki değeri tahmin etmeye çalışmak.
+
+347
+01:12:06,832 --> 01:12:12,031
+Zaman zaman sapmalar yaşamakla beraber 3 aşağı 5 yukarı bir şey sağlayacaktır size.
+
+348
+01:12:15,271 --> 01:12:22,391
+Denge sağlayacaktır. Şimdi önce bir şekilde burst timeleri bildiğimiz kabulü üzerinden ilerleyelim.
+
+349
+01:12:23,220 --> 01:12:35,380
+sistemimizde p1, p2, p3, p4 var. Bunlar da 6, 8, 7 ve 3 diye burstlere sahip. Bu durumda yapacağınız şey ne? Short us cap. Burst dedik zaten.
+
+350
+01:12:35,380 --> 01:12:42,120
+Dolayısıyla burst en düşük olanı en önce çalıştıracağız. Dolayısıyla önce p4, sonra p1, sonra p3, sonra p2 çalışacak.
+
+351
+01:12:43,412 --> 01:12:51,852
+Bu yapı içerisinde baktığınız zaman da P1'in beklemesi, 3'in P2'nin beklemesi, 16'in P3'ün beklemesi, 9'in P4'te beklemeden çalıştı.
+
+352
+01:12:53,391 --> 01:12:54,752
+Toplayın bölüm 4'e.
+
+353
+01:12:56,551 --> 01:12:57,512
+Waiting time'ı 7.
+
+354
+01:12:59,092 --> 01:13:02,012
+Şimdi, demin bahsettiğim şey neydi?
+
+355
+01:13:06,012 --> 01:13:06,572
+Burstleri.
+
+356
+01:13:06,996 --> 01:13:10,816
+Estimate edebilirsiniz. Nasıl estimate edebilirsiniz?
+
+357
+01:13:12,556 --> 01:13:26,768
+Alfa değeri belirleyip sizin estimate ettiğiniz ve gerçekte oluşan burst değeri üzerinden bir sonraki burst'ü tahmin edebilirsiniz.
+
+358
+01:13:26,768 --> 01:13:45,108
+Bilirsiniz. Şu grafikte formülde biraz yanlış yazılmış. Predikt ettiğiniz lambda değeri n artı bir için bir sonraki adım için gerçekleşen değeri ve alfayla sizin tahmin ettiğiniz değeri de bir eksi alfayla çarpıyorsunuz.
+
+359
+01:13:45,108 --> 01:13:54,768
+Yani birine alfa değerini sıfır alırsanız gerçekleşeni önemsemiyorsunuz. Sizin tahminleriniz üzerinden gidiyor.
+
+360
+01:13:54,768 --> 01:14:02,568
+1 bölü 2 alırsanız ikisine de eşit ağırlık veriyorsunuz gibi bir yapı var. Bu yapıyı kullanarak prediction yaptığınızda ne olur?
+
+361
+01:14:03,148 --> 01:14:11,307
+İlk başlangıçta elinizde zaten bir gerçekleşen değer yok. Dolayısıyla ne yapacaksınız? Mecbur bir yerden tahminle başlayacaksınız.
+
+362
+01:14:11,407 --> 01:14:20,387
+Diyelim ki onunla başladınız. Gerçekleşen 6 oldu. Alpa değeriniz 1 bölü 2 ise aslında ikisinin de kat sayısı ne olacak otomatikman? 1 bölü 2 olacak.
+
+363
+01:14:21,203 --> 01:14:38,603
+5 bölü 2, 10 bölü 2, 5, 6 bölü 2, 3, topla 8. 8 verdiniz değer olarak ama gerçekleşen 4 oldu. O zaman bir sonraki tahmininiz 6 olacak. İlginçtir. Gerçekleşen de 6 olmuş.
+
+364
+01:14:41,943 --> 01:14:46,783
+İkisi de 6 ise sizin bir sonraki tahmininizin de 6 olması lazım.
+
+365
+01:14:47,283 --> 01:15:12,983
+Ama gerçekleşen 4 olmuş. Bir sonraki adımda gerçekleşen 5 olmuş. Buna bağlı olarak, pardon, bir sonraki adımda sizin tahmininiz 5 olacak. Gerçekleşen 13 olmuş. Dolayısıyla tahmininiz ne olacak bu seferde? 13'e doğru yavaş yavaş artacak. Evet, arada farklar var. Arada uçurumlar da var zaman zaman ve fakat hep ne yapıyor? Bir şekilde converge ediyor.
+
+366
+01:15:15,028 --> 01:15:31,368
+Özellikle de buradaki şey değerini farklılaştırırsanız, yani 1 bölü 2 yani 0.5 yerine gerçekleşen değeri daha yüksek olacak şekilde yaparsanız daha net, daha yakın sonuçlar bulmak da mümkün.
+
+367
+01:15:33,048 --> 01:15:34,768
+Bunu konuştuk zaten.
+
+368
+01:15:37,492 --> 01:15:55,492
+Shortest job first'te de, şeyde de, first count first sort'te de, aslında yapıda doğrudan bir preemption yok. Bir kere bir karar veriyorsunuz, proses çalışıp bitene kadar da aynen devam ediyorsunuz.
+
+369
+01:16:04,340 --> 01:16:12,300
+shortest remaining time first diyoruz. Aslında özel bir durumu. Baktığınız zaman...
+
+370
+01:16:13,427 --> 01:16:20,327
+Her iki algoritma da hem shortest job first hem shortest remaining time first aslında nasıl yapılar?
+
+371
+01:16:21,768 --> 01:16:34,628
+Önceliklendirilmiş yapılar. Önceliklendirilme priority schedule'ını da ayrıca konuşacağız ama bunlar da aslında prioritization'ın birer alt kümesi seti.
+
+372
+01:16:40,243 --> 01:16:54,644
+shortest remaining job first diyor isek o zaman bu proseslerin sisteme girişlerini de bir parametre olarak ekliyor olmamız lazım.
+
+373
+01:16:54,644 --> 01:17:00,403
+Yani normalde proses ve proses dahil burst süreleri vardı.
+
+374
+01:17:00,663 --> 01:17:02,724
+Ama bunun yanında neyi de eklememiz lazım?
+
+375
+01:17:03,283 --> 01:17:06,384
+Sisteme geliş zamanı. Farklı anlarda geliyor olabilirler.
+
+376
+01:17:13,171 --> 01:17:18,391
+Buna bağlı olarak shortest remaining time first my gertlum sunu uygulayacak olursak.
+
+377
+01:17:18,391 --> 01:17:25,371
+Şimdi T0 anında burst'u 8 olan P1 var sistemde. Dolayısıyla P1 çalışıyor.
+
+378
+01:17:25,611 --> 01:17:30,652
+P1 çalışmasını bitirdikten sonra, daha doğrusu pardon bitirmedi, özür dilerim.
+
+379
+01:17:31,492 --> 01:17:35,731
+Çalışmasına devam ederken birinci anda P2 sisteme dahil oldu.
+
+380
+01:17:36,691 --> 01:17:38,091
+P1'in kalan süresi 7.
+
+381
+01:17:38,836 --> 01:17:44,036
+f2'nin 4 yeni geldi. Dolayısıyla 4 daha kısa olduğu için sistemde o çalışacak.
+
+382
+01:17:45,916 --> 01:17:54,256
+İkinci adımda f3 geldi, burstü 9. Üçüncü adımda 4 geldi, burstü 5.
+
+383
+01:17:56,180 --> 01:18:16,159
+P2 çalışacak çünkü en kısa süre olan oydu. Remaining time olan oydu. Önce ilk geldiğinde 4'tü. Birinci adımda geldiğinde. İkinci adıma geldiğimizde 3 oldu. Üçüncü adıma geldiğimizde 2 oldu. Dördüncü adıma geldiğimizde 1. Beşinci adıma geldiğimizde 0 oldu. Bitti.
+
+384
+01:18:19,123 --> 01:18:42,644
+Geriye kalanlardan, p1, p3, p4'ten birinin çalışmaya başlaması lazım. O da ne olacak? p4, çünkü en az kalan süresi olan o. Bu 5 primi var. p1'in 7, p3'in 9 var. Bu mantıkla çalıştırmaya başladığımız zaman, p1, p2, p4,
+
+385
+01:18:43,155 --> 01:18:52,796
+ve p1, p2, p3 ve p4 için bekleme süreleri ne olacaktır? Nasıl hesaplayacağız? Waiting time nasıl hesaplanıyordu?
+
+386
+01:18:56,316 --> 01:19:07,155
+Prosesin ready queue'da geçirdiği süre olarak hesaplanıyor. Şimdi p1 başlangıçta buradaydı. Oradan çalışmaya başladı.
+
+387
+01:19:08,532 --> 01:19:19,952
+Orada bir beklemesi yok. Ama birinci adımda çalışması kesildi. Sonra onuncu adımda çalışmaya başladı. Yani 10-1, oradan bir 9-1'in beklemesi var.
+
+388
+01:19:20,952 --> 01:19:30,152
+P2, zaten birinci şeyde geldi. Geciz süresi oydu. Gelir gelmez de çalışmaya başladı. Dolayısıyla 0.
+
+389
+01:19:35,636 --> 01:19:57,976
+Ancak 17. birimde çalışmaya başladı. Fakat zaten sisteme 2. birimde gelmişti. 15 de oradan. 4 ise 3. birimde geldi ama 5. birimde çalışmaya başladı. 5-3 de oradan. Bunun aritmetiği 9, 0, 15, 24, 2 daha 26, 4'e böl 6,5.
+
+390
+01:20:02,836 --> 01:20:06,156
+Şimdi, prior to schedule it,
+
+391
+01:20:07,828 --> 01:20:16,108
+Aslında demin söyledim, shortest job first, shortest remaining time first de birer priority scheduling yöntemi.
+
+392
+01:20:17,208 --> 01:20:24,748
+Alt kümesi. Bir şekilde ne yapıyorsunuz? Bir priority değeri veriyorsunuz proseslere. Genellikle integer bir değer oluyor.
+
+393
+01:20:25,347 --> 01:20:31,328
+Zaman zaman düşük değer yüksek önceliği, zaman zaman da yüksek değer yüksek önceliği belirtebilir.
+
+394
+01:20:31,908 --> 01:20:34,228
+Farklı şekillerde görürsünüz. Mesela kitapta hep.
+
+395
+01:20:35,828 --> 01:20:41,108
+Küçük değerin yüksek önceliklemek olduğu üzerine kurulu bir yapı var.
+
+396
+01:20:43,628 --> 01:20:55,168
+Baktığınız zaman priority scheduling yapılan bir sistemi preemptif ya da non-preemptif olarak implement edebilirsiniz.
+
+397
+01:20:55,168 --> 01:20:57,087
+O her zaman için mümkün.
+
+398
+01:21:01,296 --> 01:21:13,976
+Birinin şey yapılmasına karar verdiğiniz an, schedule edilmesine karar verdiğiniz andan sonra gelen daha yüksek öncelikli bir proses için scheduling'i değiştirmiyorsunuz ya da çevirmiyorsunuz.
+
+399
+01:21:13,976 --> 01:21:25,736
+Ama preemption varsa sisteme yeni bir proses dahil olduğunda ne yapıyorsunuz? Otomatikman daha yüksek öncelikliyse onu schedule etmeye karar veriyorsunuz.
+
+400
+01:21:29,555 --> 01:21:38,815
+Burada öncelik konuştuğumuza göre illa ve illa neyle konuşuyor olacağız?
+
+401
+01:21:40,296 --> 01:21:45,115
+Starvation'a da konuşuyor olacağız. Çünkü ortada bir kaynak var. O kaynağa erişimle ilgili bir öncelik var.
+
+402
+01:21:45,235 --> 01:21:52,215
+Bu öncelik sizin burst time'ınıza göre de olabilir. O zaman shortest job first algoritmasından bahsediyoruz.
+
+403
+01:21:52,915 --> 01:21:54,555
+Başka bir şeye göre de olabilir.
+
+404
+01:21:55,923 --> 01:22:04,123
+Canlı bir sistemde, biz hep burada scheduling, algorithm'u konuşurken aslında bir snapshot buluyoruz, anlık bir snapshot buluyoruz ve onun üzerine konuşuyoruz.
+
+405
+01:22:04,623 --> 01:22:08,683
+Fakat canlı bir sistemde ne oluyor? Redicue'luğuna devamlı işler gelmeye devam ediyor.
+
+406
+01:22:11,804 --> 01:22:15,843
+Prioritize ettiğiniz bir scheduling yapısı varsa ne olacaktır?
+
+407
+01:22:23,828 --> 01:22:29,128
+Prosesin takılıp kalması, bir türlü işlemci zamanını ele geçiremesi ihtimali var.
+
+408
+01:22:29,468 --> 01:22:31,028
+Ki bu da eşittir. Starvation.
+
+409
+01:22:31,927 --> 01:22:36,268
+Starvation olmasını ne...
+
+410
+01:22:36,340 --> 01:23:03,819
+Yapmak istiyoruz, engellemek istiyoruz. Starvation ile ilgili öyle fantastik anılar, anekdotlar vesaireler de var. Yani misal MIT'de bir sistemi kapattıklarında, IBM'in 7094 bir sistemini kapattıklarında, 1973'te, 1967'de sisteme sabit edilmiş ve hala çalıştırılamamış olan bir iş buluyorlar. Bu hani ne kadar şehir efsanası, ne kadar gerçekliğim var.
+
+411
+01:23:04,340 --> 01:23:13,000
+Ama burada dikkat edilmesi gereken iki şey var. 1973-1967 arada 6 sene var. Bu sistem 6 sene kapatılmamış. Güzel bir şey bu.
+
+412
+01:23:13,960 --> 01:23:23,720
+Ya da bir başka deyişle 6 sene boyunca en az 6 sene kapatılmamış burada. 6 sene boyunca da bekleyen iş var. Yani iş sahibi Allah bilir neler demiştir.
+
+413
+01:23:25,011 --> 01:23:33,691
+Dolayısıyla bunu çözmenin bir yolu bulmamız lazım. Bunu çözmek için kullandığımız ya da ortaya attığımız mekanizma da aging.
+
+414
+01:23:33,691 --> 01:23:36,111
+Aging dediğimiz şey ne?
+
+415
+01:23:36,884 --> 01:24:04,824
+Redicue'da bekletiyoruz prosesleri. Dolayısıyla Redicue'da bekleyen o proses belli bir sürenin sonunda CPU zamanında ele geçiremiyorsa önceliğe düşük olduğu için ne yapıyor olmamız lazım? Onun önceliğini değiştirmemiz lazım ki ele geçirebilsin. Ne olabilir? Bir adım yükseltmek. Belli bir süre daha ele geçiremediyse bir adım daha yükseltmek. Yükselte yükselte ne olacaktır? Sonunda en yüksek seviyeye gelecektir. En basit hesaplar.
+
+416
+01:24:04,884 --> 01:24:29,244
+Mesela 127'lik bir yapınız olsa, yani birden 127'ye kadar değişen öncelik seviyeleriniz olsa ve prosesiniz en düşük seviye kitabı uygun gidelim 127 olsa her adımda bir arttırıyor olsanız ve arttırmak için de hadi 15 dakika falan seçiyor olsanız.
+
+417
+01:24:30,676 --> 01:24:55,896
+32 saat gibi bir sürede zaten en yüksek seviyeye geliyor. Yani 6 sene beklemeye gerek yok. Ama tabii birçok sistemde de günümüzde kimsenin o kadar bekleyecek hali yok. Ne yapıyoruz? Bu arttırmayı çok daha hızlı şekilde gerçekleştireceğiz. Aslında bu da tamamen yapacağımız şeyle alakalı. Sistemin kendisiyle alakalı. Baktığınız zaman şimdi burada prosesler var, burst timelere var.
+
+418
+01:24:56,275 --> 01:25:22,195
+Ve öncelikler var. Bu öncelikler doğrudan burst time'la ilgili olmak zorunda değil. Bunların hepsi aynı zamanda Q'dalar. En yüksek öncelikli olan hangisi? P2. Dolayısıyla P2 doğrudan çalışacak zaten. Burst'de 1. Bir sonraki öncelik kimin? P5'in o da çalıştı. Sonraki öncelik kimin? 3 numara P1. O da çalıştı.
+
+419
+01:25:24,115 --> 01:25:29,376
+Bir sonraki öncelik, p3'ün o çalıştı, sonra da p4 çalıştı, bitti.
+
+420
+01:25:30,755 --> 01:25:33,915
+Bu sisteme baktığınız zaman bekleme süreleri nasıl?
+
+421
+01:25:34,136 --> 01:25:49,075
+p1'in beklemesi 6 birim, p2'nin beklemesi 0, p3'ün beklemesi 16, p4'ün beklemesi 18, p5'in ki 1, toplayın.
+
+422
+01:25:49,587 --> 01:25:56,127
+6, 16, 18, bir daha, 41, bölüm 5'e, 8.2.
+
+423
+01:25:57,587 --> 01:26:01,688
+Şimdi, bundan sonra round robinle devam edeceğiz ama burada duralım.
+
+424
+01:26:01,787 --> 01:26:05,887
+Diğer grupta da burada kaldık. Herkesi senkronize edeyim tekrar.
+
+425
+01:26:07,568 --> 01:26:09,787
+6.20, şunu not edelim.
+
+426
+01:26:10,899 --> 01:26:37,339
+20'de kaldık. Oradan devam edeceğiz. Bu arada, yani daha sonra tekrar ilanını vesairesini yapacağım ama bu dersin iki tane vizesi olacak biliyorsunuz. Öyle ilan etmiştim. Hala da öyle olmasını istiyorum. İkinci vizelerin yapılması ile ilgili bölümde bir cevap bekliyorum. Nasıl bir organizasyon yapacağımızı öğreneceğim. Ona göre hani sınavınızın tarihi ve şekli belli olacak.
+
+427
+01:26:37,775 --> 01:26:47,155
+Sonuçta üç grubuz. Üç grubu bir anda sınava sokmak demek, yeter miktar sınıfın olması, ortak zamanın olması falan demek.
+
+428
+01:26:47,695 --> 01:26:55,895
+Bunu nasıl organize edeceğimi netleşince ilan edeceğim. Gözünüz kulağınız OBS'de olsun. Zaten mail olarak gönderiyorum her türlü gelişmeyi.
+
+429
+01:26:56,615 --> 01:27:02,955
+Diyor. Hepinize iyi günler diliyorum. Haftaya görüşmek üzere diyorum.
+
+430
+01:27:03,731 --> 01:27:04,692
+İyi günler hocam.
+
+431
+01:27:05,152 --> 01:27:05,692
+İyi günler.
+
+432
+01:27:05,872 --> 01:27:08,271
+Ege, sen diğer derste de vardın.
+
+433
+01:27:08,652 --> 01:27:09,311
+İyi günler.
+
+434
+01:27:09,952 --> 01:27:10,692
+Evet hocam.
+
+435
+01:27:11,032 --> 01:27:11,711
+Tamam, okey.
+
+436
+01:27:12,572 --> 01:27:15,891
+Geçen derste işletim sistemiyle ilgili sormuştun zaten galiba değil mi?
+
+437
+01:27:16,511 --> 01:27:18,711
+Evet, zaten burada da söylediniz de.
+
+438
+01:27:19,171 --> 01:27:20,912
+İkinci vizeye hazırlanmaya çalışacağım.
+
+439
+01:27:21,587 --> 01:27:34,568
+Hazırlanın. Çalışın, iyi hazırlanın. Konular genişliyor. Genişledikçe daha çetrefilli sorular geliyor haliyle. Bir de senkronizasyon biraz daha nasıl diyeyim?
+
+440
+01:27:36,467 --> 01:27:37,947
+Karmaşık bir konu.
+
+441
+01:27:38,067 --> 01:27:38,927
+Onlara iyi bir bakın.
+
+442
+01:27:39,387 --> 01:27:41,487
+Test ne olur hocam? Test gibi mi olacak?
+
+443
+01:27:42,487 --> 01:27:45,067
+Şöyle, biraz duruma göre değişecek.
+
+444
+01:27:45,467 --> 01:27:48,747
+Eğer yüz yüze ve sınıfta yapabilir olursam, evet gene test olacak.
+
+445
+01:27:48,967 --> 01:27:53,648
+Ama öyle yapamaz olursak, başka bir şey üretmek zorunda kalabilirim.
+
+446
+01:27:54,607 --> 01:27:56,567
+O yüzden şu an bağlayıcı bir şey demek istemiyorum.
+
+447
+01:27:56,947 --> 01:27:58,587
+Ama test olması benim de tercihim.
+
+448
+01:27:59,867 --> 01:28:00,887
+Öyle söyleyeyim.
+
+449
+01:28:01,827 --> 01:28:03,148
+Hepinize iyi haftalar arkadaşlar.
+
+450
+01:28:04,083 --> 01:28:04,963
+Hoşçakalın hocam.
+
+451
+01:28:05,764 --> 01:28:06,243
+Sağol.
