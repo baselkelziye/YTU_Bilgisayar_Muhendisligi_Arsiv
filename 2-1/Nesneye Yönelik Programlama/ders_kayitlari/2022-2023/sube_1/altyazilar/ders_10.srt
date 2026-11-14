@@ -1,0 +1,3595 @@
+1
+00:02:55,860 --> 00:03:01,380
+Arkadaşlar merhaba. Sesim geliyor mu? Bir teyit edin, değil misiniz?
+
+2
+00:03:02,000 --> 00:03:02,600
+Geliyor hocam.
+
+3
+00:07:35,028 --> 00:07:37,228
+Ok, let's get started.
+
+4
+00:07:40,228 --> 00:07:48,408
+Today we are going to, first of all, the term, the first midterm results are already announced.
+
+5
+00:07:48,948 --> 00:08:00,888
+You can, you can, you can go to Öğrenç Bilgi Sistemi OBS Yıldızı Zeditleri and you can find out your midterm result.
+
+6
+00:08:02,100 --> 00:08:13,620
+And apart from that, so you should know that there will be another midterm exam and there will be a term project for this semester.
+
+7
+00:08:14,740 --> 00:08:21,040
+And the end of the course will be at the end of May.
+
+8
+00:08:21,620 --> 00:08:30,319
+So, the last week of the semester is usually when we do the project demonstration.
+
+9
+00:08:30,759 --> 00:08:35,560
+So, you should plan on your studies accordingly.
+
+10
+00:08:36,019 --> 00:08:37,460
+So, there will be another midterm.
+
+11
+00:08:37,639 --> 00:08:41,580
+Also, there will be a term project for this course.
+
+12
+00:08:43,731 --> 00:08:50,771
+Okay, now today we are going to talk about generic classes. That's another topic that we will discuss today.
+
+13
+00:08:53,251 --> 00:08:54,651
+So let's get started.
+
+14
+00:08:58,932 --> 00:09:15,132
+Okay. Now, the generic programming means that so we want to write code that can be reused for objects of different types. Okay. The idea here is that
+
+15
+00:09:16,032 --> 00:09:29,772
+We are trying to basically write one code that can be easily used for different types of data member fields.
+
+16
+00:09:32,772 --> 00:09:34,752
+Okay, there's a question.
+
+17
+00:09:41,172 --> 00:09:55,692
+[öğrenci] sorabilirsin ama istersen ders sonunda bunu yapalım. Sen sorunu aklında tut. Şimdi bugünlük konumuzu işleyelim. Ondan sonra dersin bitiminde sorunu sorarsın. Olur mu? Tamam.
+
+18
+00:09:57,831 --> 00:10:05,532
+Now, today we are going to learn how we are using the generic classes. First of all,
+
+19
+00:10:07,155 --> 00:10:11,576
+So let's take a look at this syntax.
+
+20
+00:10:12,295 --> 00:10:18,155
+Before I show you this syntax, I want to show you this piece of code.
+
+21
+00:10:22,484 --> 00:10:25,104
+Okay, now let's take a look at this piece of code.
+
+22
+00:10:25,984 --> 00:10:31,064
+Now, so when you look at this code, you see that it's a regular class.
+
+23
+00:10:31,364 --> 00:10:39,864
+The name of the class is box2, and it has one data member fields, just like that you have seen so far.
+
+24
+00:10:40,403 --> 00:10:45,704
+Okay, and this time the data type for this data member field is object.
+
+25
+00:10:50,336 --> 00:10:58,596
+A parent of all classes that can be created, that can be used in Java.
+
+26
+00:10:58,596 --> 00:11:09,655
+So, which means that if you have an object type variable, so you can basically insert any type of object.
+
+27
+00:11:10,096 --> 00:11:18,196
+into assign this, you can assign any type of object into this variable.
+
+28
+00:11:18,816 --> 00:11:25,276
+Now, let's, for this data member field, I have one set setter and one getter object.
+
+29
+00:11:25,615 --> 00:11:25,776
+Okay.
+
+30
+00:11:26,135 --> 00:11:28,336
+I can set the object and I can get the object.
+
+31
+00:11:28,436 --> 00:11:29,956
+Now, let's take a look at the main.
+
+32
+00:11:30,484 --> 00:11:46,844
+As you see, I'm creating an object of box 2, assigning the address of this object to this local variable b, and then I assign an integer object.
+
+33
+00:11:47,296 --> 00:11:51,476
+To this global member fields.
+
+34
+00:11:51,936 --> 00:11:52,216
+Okay.
+
+35
+00:11:52,355 --> 00:11:54,096
+By calling the setter function.
+
+36
+00:11:54,096 --> 00:11:57,756
+Now, this is in fact an object.
+
+37
+00:11:58,355 --> 00:12:03,855
+So I can either write this way or I can write this way.
+
+38
+00:12:04,296 --> 00:12:05,076
+Doesn't matter.
+
+39
+00:12:06,796 --> 00:12:07,556
+Okay.
+
+40
+00:12:08,115 --> 00:12:23,735
+Now, as you see, when I create this integer object and I set to this local member field, global member field, then I can basically write this down.
+
+41
+00:12:24,195 --> 00:12:29,975
+And as you see, and right after that, I'm setting another object, which is in this case, string object.
+
+42
+00:12:29,975 --> 00:12:35,975
+Again, I can write this in this way, I can, or I can write it this way.
+
+43
+00:12:36,115 --> 00:12:38,115
+This way, doesn't matter.
+
+44
+00:12:38,115 --> 00:12:43,735
+So remember, Java has this boxing option.
+
+45
+00:12:43,735 --> 00:12:54,975
+If I don't indicate the wrapper object specifically, Java does this on my behalf, right?
+
+46
+00:12:54,975 --> 00:13:02,355
+Now, this way, by defining the type of object as the object class,
+
+47
+00:13:02,484 --> 00:13:18,064
+I am able to put any type of data into the global member field, into the data member field of the objects created from this class.
+
+48
+00:13:18,064 --> 00:13:18,704
+Okay.
+
+49
+00:13:19,264 --> 00:13:19,824
+Now.
+
+50
+00:13:20,532 --> 00:13:33,052
+Now that you have seen a methodology how to keep different types of objects in the memory, now I want to show you another syntax.
+
+51
+00:13:37,748 --> 00:13:42,288
+Okay, now this code is exactly the same thing, but this time.
+
+52
+00:13:42,639 --> 00:13:44,859
+I am using a generic class.
+
+53
+00:13:45,460 --> 00:13:51,139
+Now, just like when you write a method, right?
+
+54
+00:13:51,199 --> 00:13:58,720
+When you write a method, so remember, we have a parameter section where we pass the parameter to this method.
+
+55
+00:13:58,720 --> 00:14:03,099
+And inside the method body, we are using this parameter, okay?
+
+56
+00:14:03,659 --> 00:14:06,740
+Just like that, we can also define classes.
+
+57
+00:14:07,283 --> 00:14:26,024
+A bit parameters. And this parameter could be one parameter, two parameters, etc. Now, in this way, this allows us to keep any type of data in the member field section of the class.
+
+58
+00:14:26,548 --> 00:14:32,768
+Now, this time, I am defining this generic class just like this, okay?
+
+59
+00:14:33,288 --> 00:14:39,187
+And this capital E could be F, A, it doesn't matter.
+
+60
+00:14:39,288 --> 00:14:40,927
+It could be any letter, right?
+
+61
+00:14:41,367 --> 00:14:43,927
+And as you see, I am...
+
+62
+00:14:44,851 --> 00:14:51,731
+A using this generic type as the class type in the data member field.
+
+63
+00:14:51,731 --> 00:14:52,331
+Okay.
+
+64
+00:14:52,871 --> 00:15:00,711
+And I am defining this global member field T with the class type, the generic class type.
+
+65
+00:15:01,311 --> 00:15:05,932
+And as you see, I have getter and setter methods with the same generic class type.
+
+66
+00:15:06,231 --> 00:15:10,031
+And in the main method, as you see, I am first creating.
+
+67
+00:15:10,932 --> 00:15:32,711
+An object of this class, but this time as the data, as the class type that this generic class will hold, I am passing integer, right?
+
+68
+00:15:32,711 --> 00:15:37,612
+So basically I'm telling that the objects of the box,
+
+69
+00:15:38,131 --> 00:15:43,251
+class will hold integer type data member fields.
+
+70
+00:15:43,951 --> 00:15:44,051
+Okay.
+
+71
+00:15:44,331 --> 00:15:50,051
+Now, here I am creating an object of box generic class with the integer.
+
+72
+00:15:52,692 --> 00:15:53,792
+generic type.
+
+73
+00:15:54,172 --> 00:16:02,112
+And here an object is created and reference of this object is assigned to this local variable.
+
+74
+00:16:02,112 --> 00:16:10,192
+And as you see, the local type of the local variable should be exactly the same way that this object is created.
+
+75
+00:16:10,836 --> 00:16:20,136
+Okay, now, so one line after that, so I am setting an integer value into this object.
+
+76
+00:16:20,896 --> 00:16:25,096
+Okay, Java Virtual Machine is doing boxing for me.
+
+77
+00:16:25,376 --> 00:16:34,975
+It's creating the object for integer and setting the reference of that object to the data member field section.
+
+78
+00:16:34,975 --> 00:16:38,735
+And then I am printing the value.
+
+79
+00:16:38,836 --> 00:16:42,975
+And as you see, I'm doing the same thing this time as the generic type.
+
+80
+00:16:43,216 --> 00:16:46,996
+I am passing a string plus.
+
+81
+00:16:47,572 --> 00:16:58,572
+Creating an object of the box with the string generic type and then assigning the reference to this object to this local variable.
+
+82
+00:16:58,932 --> 00:17:07,031
+As you see, the type of this local variable has to be exactly the same like the object is generated.
+
+83
+00:17:07,951 --> 00:17:12,311
+And then I'm setting another sum string and I'm getting the value.
+
+84
+00:17:12,819 --> 00:17:27,039
+Now, in the, in, so here I am again creating an object, so, but this time pay attention, I did not specifically tell.
+
+85
+00:17:27,604 --> 00:17:38,664
+This class to keep a specific type of object.
+
+86
+00:17:38,664 --> 00:17:48,824
+So when I do this here, when I do this here, so I'm telling Java Virtual Machine that now from this forward,
+
+87
+00:17:49,587 --> 00:18:01,107
+This local B1 will address only to those box type objects which will hold integer variable.
+
+88
+00:18:01,927 --> 00:18:07,347
+Now, when I do this, I am telling Java Virtual Machine that from now forward,
+
+89
+00:18:07,776 --> 00:18:18,736
+This B2 will reference to objects of bugs where the objects will keep a string type member fields.
+
+90
+00:18:18,736 --> 00:18:29,635
+But here, when I create, when I do this, I'm telling Java Virtual Machine B3 will point to objects of bugs.
+
+91
+00:18:30,291 --> 00:18:35,211
+But that can hold any type of data member field.
+
+92
+00:18:35,672 --> 00:18:42,672
+Now, as you see, I am creating an object of box, assigning the reference to this variable.
+
+93
+00:18:43,431 --> 00:18:43,551
+Okay.
+
+94
+00:18:43,931 --> 00:18:52,511
+And I first, I'm setting, firstly, I'm setting this string object into this member field.
+
+95
+00:18:52,511 --> 00:18:54,351
+I am writing this down.
+
+96
+00:18:54,811 --> 00:18:56,931
+And then I am setting, and this time, integer.
+
+97
+00:18:57,587 --> 00:19:00,788
+And then I'm writing the results down.
+
+98
+00:19:01,347 --> 00:19:09,007
+Now, this here, what you see here is exactly the same thing like this one.
+
+99
+00:19:12,115 --> 00:19:18,955
+See, I am creating an object of box two, and first I'm setting an integer value.
+
+100
+00:19:19,335 --> 00:19:23,375
+Right after that, I'm setting the string value.
+
+101
+00:19:23,835 --> 00:19:32,076
+Basically, so I let this regular class hold any type of data member field that I like.
+
+102
+00:19:32,695 --> 00:19:35,395
+And similarly, I can do this with the generic classes.
+
+103
+00:19:35,996 --> 00:19:40,115
+Okay, with the generic class, if I don't initially indicate...
+
+104
+00:19:40,115 --> 00:19:46,395
+That this class will hold integer or string type objects.
+
+105
+00:19:46,655 --> 00:19:54,976
+If I generate the object just like this without identifying the generic class type, okay,
+
+106
+00:19:54,976 --> 00:20:02,955
+I can let the object of box hold different types of objects inside of it, okay?
+
+107
+00:20:03,715 --> 00:20:07,516
+Now, this is what we call generic class.
+
+108
+00:20:10,740 --> 00:20:35,179
+Okay. Now, here is the generic syntax for this generic classes. So this is the name of the class. And again, we are defining just like the regular classes. The only difference is that it is taking a parameter. Parameter is the generic type parameter. The capital letter here could be any type of letter.
+
+109
+00:20:35,635 --> 00:20:46,235
+And here in the global member field section, we are defining a global member field where the type is, this generic type, and then we have getter and setter methods.
+
+110
+00:20:47,195 --> 00:21:00,796
+And so if I have a class like this, I can generate an object of it by specifically indicating the type of the class type.
+
+111
+00:21:01,395 --> 00:21:09,895
+When I generate an object of it, otherwise I can just ignore the generic class type.
+
+112
+00:21:10,056 --> 00:21:20,536
+I can just create, just like what I did in the previous example, I can just say new box and that will create me an object.
+
+113
+00:21:20,536 --> 00:21:26,195
+And within that object, I can hold any type of different objects.
+
+114
+00:21:32,564 --> 00:21:40,184
+Now, just like the functions, I can have multiple parameter generic classes as well.
+
+115
+00:21:40,184 --> 00:21:40,664
+Okay.
+
+116
+00:21:41,084 --> 00:21:47,264
+Now, so in this particular case, you see multiple parameter generic class.
+
+117
+00:21:47,864 --> 00:21:49,463
+So it takes two parameters.
+
+118
+00:21:49,864 --> 00:21:55,584
+And in order to identify these two parameters, so I chose the letters k and b.
+
+119
+00:21:56,144 --> 00:21:58,443
+As you see, these are global member fields.
+
+120
+00:21:58,903 --> 00:22:00,443
+And I have one.
+
+121
+00:22:00,564 --> 00:22:09,884
+constructor where I can set the k and v objects.
+
+122
+00:22:10,387 --> 00:22:13,007
+And I have also getter methods.
+
+123
+00:22:13,547 --> 00:22:13,667
+Okay.
+
+124
+00:22:13,667 --> 00:22:20,887
+In this particular example, so this regular class implements an interface.
+
+125
+00:22:21,127 --> 00:22:28,407
+And interface, just like the regular classes, interfaces can also be generic classes as well.
+
+126
+00:22:28,987 --> 00:22:36,228
+And here you see this interface class takes two parameters, getValue and getKey.
+
+127
+00:22:36,723 --> 00:22:47,103
+Now, so when I wanted to create an instance or object of a two-parameter generic class, I can do this way.
+
+128
+00:22:47,743 --> 00:22:55,203
+So here in this particular case, I am creating an object of this class, ordered pair.
+
+129
+00:22:55,680 --> 00:23:11,420
+And as you see, so the parameters that I pass, I'm saying that the first object type will be string, the second object type will be integer.
+
+130
+00:23:11,420 --> 00:23:12,100
+Okay.
+
+131
+00:23:12,660 --> 00:23:19,420
+And within the parentheses, I pass the initial parentheses, which is string and the...
+
+132
+00:23:19,663 --> 00:23:22,483
+integer value.
+
+133
+00:23:22,483 --> 00:23:27,144
+And these are to call the constructor of ordered pair class.
+
+134
+00:23:28,023 --> 00:23:30,364
+And here it will generate an object.
+
+135
+00:23:30,583 --> 00:23:37,304
+And then this object will, I will keep this local variable in order to reference to this object.
+
+136
+00:23:38,195 --> 00:23:49,955
+Okay. And so in the second line, so I still, I'm creating an, again, an object of the order pair, but this time I'm saying that, so this object will hold.
+
+137
+00:23:50,548 --> 00:23:55,367
+both string type objects.
+
+138
+00:23:55,887 --> 00:23:55,967
+Okay.
+
+139
+00:23:56,488 --> 00:24:01,288
+And also in order to call the constructor, I'm passing the two string values.
+
+140
+00:24:01,867 --> 00:24:02,108
+Okay.
+
+141
+00:24:02,648 --> 00:24:05,947
+And this also will create an object.
+
+142
+00:24:05,947 --> 00:24:12,447
+And then I will keep track of this object with this P2 local variable.
+
+143
+00:24:12,447 --> 00:24:18,548
+So as you can see, a generic class could be one parameter or two.
+
+144
+00:24:18,548 --> 00:24:28,708
+parameter or more parameters and it allows us to keep any type of data objects in the physical memory.
+
+145
+00:24:36,531 --> 00:24:46,871
+Okay, so by having these generic classes, we are able to implement data structures in Java.
+
+146
+00:24:47,491 --> 00:24:49,811
+So why do we need data structures?
+
+147
+00:24:49,811 --> 00:24:56,592
+So the reason is that now in every program we are utilizing the physical memory, right?
+
+148
+00:24:56,991 --> 00:25:16,412
+And when you put the data into physical memory, we would like to put it in a way so that we can do a search on this data or we can update, delete this data in an effective way.
+
+149
+00:25:16,412 --> 00:25:24,812
+So it allows us to organize the data in the physical memory, the data.
+
+150
+00:25:24,991 --> 00:25:52,991
+Okay. So you can basically say that data structure is an organization for a collection of data items. Okay. By having the data structures, we can search the data in an efficient way, delete or update the data in an efficient way. Okay. And the organization of the data or the data structure affects the performance of different tasks. For example, if you
+
+151
+00:25:52,991 --> 00:26:09,572
+You want to do a count, you need, so, or if you want to traverse a tree, depending on the kinds of data structures that you use, the performance will be different.
+
+152
+00:26:09,572 --> 00:26:10,632
+Okay.
+
+153
+00:26:13,715 --> 00:26:30,595
+So, there are different data structures. We already learned arrays in the previous lectures. Now, there are lists such as linked lists, there are stacks, queues, heap data structures, tree data structures, graph data structures.
+
+154
+00:26:30,595 --> 00:26:37,895
+All these are different data structures to organize and keep data in the physical memory.
+
+155
+00:26:44,243 --> 00:26:49,783
+Now, let's take a look at the linked list data structure.
+
+156
+00:26:50,943 --> 00:26:54,783
+Now, the linked list data structure is...
+
+157
+00:26:56,783 --> 00:27:01,771
+So, I should first show you the...
+
+158
+00:27:06,067 --> 00:27:10,707
+A basic link list, if I can find it in a quick way.
+
+159
+00:27:49,715 --> 00:27:50,715
+Bind it easily.
+
+160
+00:27:50,715 --> 00:27:52,475
+So I'll come back to that.
+
+161
+00:27:52,475 --> 00:28:09,155
+OK, so with the generic classes, now a linked list allows us to organize the data.
+
+162
+00:28:09,428 --> 00:28:25,748
+Arkadaşlar, in the memory. It's one of the data structures that allows us to organize the memory in the physical memory. And a linked list has a head node and a tail node.
+
+163
+00:28:26,132 --> 00:28:53,192
+Okay. Now, the head node and the tail node indicates the list item. So, this is a generic class. And this generic class has two global member fields. Now, the first global member field is the generic data type. So, it can hold a string, it can hold an integer, double, any type of wrapper.
+
+164
+00:28:54,132 --> 00:29:01,612
+Class objects, it can be hold within the data member field of a linked list item.
+
+165
+00:29:01,612 --> 00:29:02,172
+Okay.
+
+166
+00:29:02,551 --> 00:29:06,612
+The second data member field in a linked list item is...
+
+167
+00:29:07,859 --> 00:29:11,779
+Actually pointing to another linked list item.
+
+168
+00:29:12,179 --> 00:29:15,879
+So there are two different data member fields.
+
+169
+00:29:16,019 --> 00:29:18,199
+One is the generic data type.
+
+170
+00:29:18,359 --> 00:29:29,480
+The second one is the linked list item in a given generic, in a given linked list class.
+
+171
+00:29:29,480 --> 00:29:30,319
+Okay.
+
+172
+00:29:30,919 --> 00:29:31,259
+Now,
+
+173
+00:29:33,236 --> 00:29:41,476
+So here, as you see, I have one, two, three, four, five different objects of a linked list item.
+
+174
+00:29:42,016 --> 00:29:42,176
+Okay.
+
+175
+00:29:42,556 --> 00:29:45,456
+Five different objects of linked list items.
+
+176
+00:29:45,556 --> 00:29:48,356
+So this is an item, item, item, item, item.
+
+177
+00:29:48,796 --> 00:29:53,536
+And in each item, as I said, we have two data member fields.
+
+178
+00:29:53,536 --> 00:29:59,116
+One is keeping the object that we want to keep.
+
+179
+00:29:59,436 --> 00:29:59,996
+The other one.
+
+180
+00:30:00,000 --> 00:30:02,500
+is pointing to same type.
+
+181
+00:30:02,799 --> 00:30:13,039
+Arkadaşlar, object, and the class type of that variable is the, again, linked list item.
+
+182
+00:30:13,599 --> 00:30:24,220
+Now, in a linked list, we have one head node, and we have one tail node, and the rest of them are the inner nodes.
+
+183
+00:30:30,799 --> 00:30:37,139
+Arkadaşlar, class, object,
+
+184
+00:30:54,708 --> 00:31:09,168
+Then this data member field section of the first object will be updated and the second element will be pointing to the second object.
+
+185
+00:31:09,788 --> 00:31:17,228
+And in that case, the second object's data member field will be null.
+
+186
+00:31:17,228 --> 00:31:22,148
+And when I add the third one, I will update this one to point this one.
+
+187
+00:31:22,708 --> 00:31:28,688
+And this one's corresponding data member field will be null.
+
+188
+00:31:28,688 --> 00:31:34,808
+So this way, I will have, at the end of it, I will have five different objects.
+
+189
+00:31:35,388 --> 00:31:38,048
+And these objects will be pointing to each other.
+
+190
+00:31:38,488 --> 00:31:40,108
+One of them will be head node.
+
+191
+00:31:40,648 --> 00:31:42,428
+And the last one will be tail node.
+
+192
+00:31:42,828 --> 00:31:50,688
+If I wanted to traverse through the elements of this link list, I can start with the head node and go all the way to the...
+
+193
+00:31:50,708 --> 00:31:51,568
+Tail node.
+
+194
+00:31:51,668 --> 00:31:53,968
+So you will have a better understanding of it.
+
+195
+00:31:53,968 --> 00:31:58,388
+So once you see some examples of it.
+
+196
+00:32:00,368 --> 00:32:04,808
+Now, so this is, so far you have seen the arrays.
+
+197
+00:32:05,328 --> 00:32:11,048
+Now you have, today you are also seeing the linked list data structure.
+
+198
+00:32:11,248 --> 00:32:15,608
+So this is a second data structures that you are going to be using.
+
+199
+00:32:16,367 --> 00:32:19,227
+In order to keep the data in the physical memory.
+
+200
+00:32:19,567 --> 00:32:23,048
+Now, advantages of the linked list over arrays.
+
+201
+00:32:23,387 --> 00:32:26,227
+So one is enlarging the list costs nothing.
+
+202
+00:32:26,927 --> 00:32:32,187
+So you basically, when you want to add another item to the linked list,
+
+203
+00:32:32,723 --> 00:33:00,483
+Okay, when you want to add another item to the link, this is what you do. You create an object of the links list item. Okay. So once you create an object of the list item, then you update the data member field section of the previous list item so that the previous list item will point to newly generated.
+
+204
+00:33:00,723 --> 00:33:23,344
+Item. Okay. The only thing that you do is just to do the update operation when you want to add another list into the linked list. Okay. So therefore, enlarging a list cost genetic and insertion and the removal of elements is even faster. Okay.
+
+205
+00:33:24,948 --> 00:33:39,307
+And the sorting algorithms work faster on linked list because insertion removal, again, adding another list item to the linked list is easier.
+
+206
+00:33:39,307 --> 00:33:40,048
+Okay.
+
+207
+00:33:41,299 --> 00:33:53,940
+But arrays also have some advantages because with the arrays, you can directly access to the certain member of the array.
+
+208
+00:33:53,940 --> 00:34:02,980
+Okay. Array has that advantage. So you can do a random access in a fast and efficient way.
+
+209
+00:34:03,539 --> 00:34:09,300
+But for the linked list, if you want to, for example, want to access...
+
+210
+00:34:09,300 --> 00:34:11,840
+This particular list item.
+
+211
+00:34:12,340 --> 00:34:21,400
+So you have to start from the head node and check every node in order to access this particular node.
+
+212
+00:34:21,560 --> 00:34:23,340
+So there is no direct access.
+
+213
+00:34:23,640 --> 00:34:27,240
+So you have to traverse the linked list.
+
+214
+00:34:28,179 --> 00:34:30,119
+And there are different types of linked lists.
+
+215
+00:34:30,439 --> 00:34:31,699
+There is single linked list.
+
+216
+00:34:31,819 --> 00:34:34,500
+In this particular case, this is a single linked list.
+
+217
+00:34:34,500 --> 00:34:43,519
+As you see, only this particular list node is pointing to this list node.
+
+218
+00:34:43,960 --> 00:34:45,500
+But if it was...
+
+219
+00:34:47,411 --> 00:34:55,612
+Double linked list, in that case, this node would also have a pointer to pointing to this node, okay?
+
+220
+00:34:56,171 --> 00:35:08,551
+But since this is only single linked list, so the linked list is traversed only in one direction.
+
+221
+00:35:08,551 --> 00:35:15,192
+In double linked list, it allows us to traverse the linked list in both ways.
+
+222
+00:35:15,411 --> 00:35:16,471
+Forwards and Backwards.
+
+223
+00:35:17,051 --> 00:35:17,152
+Okay.
+
+224
+00:35:19,652 --> 00:35:24,831
+Now, there are different implementations of linked list.
+
+225
+00:35:25,431 --> 00:35:28,931
+So I can, so before, okay.
+
+226
+00:35:30,532 --> 00:35:41,072
+Now, as you see, the linked list here is one implementation of it.
+
+227
+00:35:41,556 --> 00:35:45,516
+And ArrayList is another implementation of it.
+
+228
+00:35:46,296 --> 00:35:46,416
+Okay.
+
+229
+00:35:47,036 --> 00:35:51,016
+And Vector is also another implementation of it.
+
+230
+00:35:51,016 --> 00:35:56,256
+These are all the implementations of the list.
+
+231
+00:35:58,771 --> 00:36:09,351
+Data structures. Okay. So I will show you the details of the linked list, vectors, and ArrayList in a minute.
+
+232
+00:36:39,027 --> 00:36:52,327
+Okay. So I said that the linked list, it implements the list interface. Okay. With the linked list regular class.
+
+233
+00:36:52,735 --> 00:37:07,515
+So, with the linked list, actually, it's a generic type class, and it provides fast insertions and deletions.
+
+234
+00:37:07,987 --> 00:37:10,367
+It does not provide random access.
+
+235
+00:37:10,567 --> 00:37:12,927
+You have to traverse the whole linked list.
+
+236
+00:37:13,827 --> 00:37:16,927
+It could be implemented as double linked list.
+
+237
+00:37:16,927 --> 00:37:17,487
+Okay.
+
+238
+00:37:18,187 --> 00:37:24,707
+Now ArrayList is also implementing the list interface.
+
+239
+00:37:25,396 --> 00:37:30,436
+It is slow insertions and deletions.
+
+240
+00:37:30,436 --> 00:37:40,115
+In the background, it actually provides the list interface by implementing with an array.
+
+241
+00:37:40,563 --> 00:37:44,323
+Ok, by implementing with an array.
+
+242
+00:37:44,943 --> 00:37:49,043
+And so it is therefore faster with the random access.
+
+243
+00:37:49,823 --> 00:37:54,823
+Ok, and there is also vector, which we will see later.
+
+244
+00:37:55,323 --> 00:37:57,863
+It also implements the list interface.
+
+245
+00:37:58,452 --> 00:38:01,372
+It is similar to the ArrayList.
+
+246
+00:38:01,912 --> 00:38:08,512
+So the ArrayList and the Vector methods are almost similar.
+
+247
+00:38:08,512 --> 00:38:20,512
+But the difference is that the Vector class is synchronized, which means that it could be used by...
+
+248
+00:38:21,844 --> 00:38:28,923
+Multiple processes or multiple threads at the same time without any problem.
+
+249
+00:38:29,043 --> 00:38:30,344
+So I will come back to that.
+
+250
+00:38:30,344 --> 00:38:39,184
+Now, you have seen three different implementations of the list interface.
+
+251
+00:38:39,864 --> 00:38:39,983
+Okay.
+
+252
+00:38:40,543 --> 00:38:43,583
+I will go over them in a minute.
+
+253
+00:38:52,275 --> 00:38:57,916
+Okay.
+
+254
+00:38:58,115 --> 00:39:04,355
+Let's now start with the ArrayList implementation of the List interface.
+
+255
+00:39:05,115 --> 00:39:13,155
+Now, when you want to create an ArrayList, you can create an object of the ArrayList.
+
+256
+00:39:13,155 --> 00:39:13,755
+Okay.
+
+257
+00:39:14,291 --> 00:39:25,291
+And you can assign this object reference to a variable where the type is ArrayList.
+
+258
+00:39:25,811 --> 00:39:42,291
+Now, just like the generic classes, because any data structure class is a generic class, just like the generic classes, I can also, when I create this object, I can create it by specific...
+
+259
+00:39:42,291 --> 00:39:48,931
+So, basically defining the types of objects that this generic class will hold.
+
+260
+00:39:49,291 --> 00:39:57,631
+So, in this particular case, I'm saying that this generic class will hold person type objects.
+
+261
+00:39:58,271 --> 00:39:58,371
+Okay.
+
+262
+00:39:58,871 --> 00:40:08,451
+And, but when I create it like this, then I also need to create the type of this object just like the same way.
+
+263
+00:40:09,012 --> 00:40:20,711
+Okay. Now, by doing this, I'm saying that this ArrayList will always hold person type of objects.
+
+264
+00:40:20,711 --> 00:40:34,952
+Now, if I create the ArrayList just like this, in that case, I will say that this ArrayList may have different types of objects when it is created.
+
+265
+00:41:07,603 --> 00:41:10,623
+Okay, so what are the methods of this ArrayList?
+
+266
+00:41:11,123 --> 00:41:18,283
+Here is the add method, which allows me to add an object into the ArrayList.
+
+267
+00:41:18,283 --> 00:41:32,163
+Get method, which allows me to get any ArrayList object that I'm holding at certain index.
+
+268
+00:41:32,724 --> 00:41:37,064
+Size will give me the size of the elements in the list.
+
+269
+00:41:37,684 --> 00:41:37,824
+Okay.
+
+270
+00:41:38,604 --> 00:41:43,844
+And there are also other methods like ensure capacity.
+
+271
+00:41:43,844 --> 00:41:50,144
+So it increases the capacity of the ArrayList instance.
+
+272
+00:41:50,784 --> 00:41:51,604
+Trim to size.
+
+273
+00:41:51,824 --> 00:41:56,984
+It trims the capacity of ArrayList list to be this current size.
+
+274
+00:41:57,588 --> 00:42:08,568
+Okay, it reduces the size of the ArrayList to keep only the instance that are available in the ArrayList.
+
+275
+00:42:09,188 --> 00:42:16,288
+And you can set an element into the ArrayList or you can remove an element from the ArrayList.
+
+276
+00:42:16,568 --> 00:42:20,568
+Okay, now you will have a better understanding of it when we go through.
+
+277
+00:42:21,012 --> 00:42:22,092
+Examples.
+
+278
+00:42:22,632 --> 00:42:22,832
+Okay.
+
+279
+00:42:23,052 --> 00:42:26,072
+I have shown you this figure before.
+
+280
+00:42:26,072 --> 00:42:28,212
+Here you see the abstract list.
+
+281
+00:42:28,552 --> 00:42:33,804
+And so this interface is implemented by...
+
+282
+00:42:34,739 --> 00:42:37,119
+Vector and ArrayList.
+
+283
+00:42:37,979 --> 00:42:48,879
+And now in the implementation, these Vector and ArrayList are utilizing in the background the arrays.
+
+284
+00:42:49,599 --> 00:42:53,939
+Okay, that's why we are calling ArrayList.
+
+285
+00:42:54,559 --> 00:42:56,599
+That's why we are giving the name Array.
+
+286
+00:42:56,976 --> 00:43:04,136
+But the programming interface that they are giving us is exactly the same as the linked list.
+
+287
+00:43:04,136 --> 00:43:04,735
+Okay.
+
+288
+00:43:05,376 --> 00:43:12,016
+The linked list implementation, it also implements the abstract list.
+
+289
+00:43:13,416 --> 00:43:22,155
+So, but, so this time it is keeping the data in a linked structure in the physical memory.
+
+290
+00:43:22,396 --> 00:43:24,976
+That's the only difference between the linked list and vector.
+
+291
+00:43:24,976 --> 00:43:27,976
+Vector and Array,
+
+292
+00:43:27,976 --> 00:43:33,976
+even though they keep the data as an array in the physical memory,
+
+293
+00:43:33,976 --> 00:43:37,976
+their difference is that the vector is...
+
+294
+00:43:39,347 --> 00:43:44,548
+ThreadSafe, which we will come back to it later in the class.
+
+295
+00:43:45,168 --> 00:43:54,528
+So, which means that multiple threads can process, can insert or update the data in the vector at the same time.
+
+296
+00:43:54,528 --> 00:43:58,387
+But ArrayList is not threadSafe.
+
+297
+00:43:58,847 --> 00:44:05,407
+So, therefore, it is not a good data structure for shared usage.
+
+298
+00:44:08,659 --> 00:44:15,460
+Okay, now we are going to do an example of the list implementations.
+
+299
+00:44:16,519 --> 00:44:22,619
+For this, we are going to select the ArrayList as the data structure.
+
+300
+00:44:22,920 --> 00:44:24,599
+Now, let's take a look at this example.
+
+301
+00:44:27,572 --> 00:44:30,632
+In this example, I have three classes.
+
+302
+00:44:30,831 --> 00:44:32,172
+One class is course.
+
+303
+00:44:32,311 --> 00:44:33,552
+The second one is student.
+
+304
+00:44:33,751 --> 00:44:38,412
+And the third one is the class which keeps the main program.
+
+305
+00:44:38,552 --> 00:44:39,452
+I call it uses.
+
+306
+00:44:40,952 --> 00:44:43,052
+Now, let's take a look at the course.
+
+307
+00:44:43,711 --> 00:44:50,552
+It has one, two, three, four global member fields.
+
+308
+00:44:50,552 --> 00:44:54,372
+The first two member fields have a string type.
+
+309
+00:44:54,963 --> 00:45:00,083
+The second member field is an ArrayList type.
+
+310
+00:45:03,184 --> 00:45:05,264
+Global Member Field.
+
+311
+00:45:06,564 --> 00:45:15,904
+And I also define the ArrayList in a way that it will only hold student type objects.
+
+312
+00:45:16,604 --> 00:45:16,724
+Okay.
+
+313
+00:45:17,724 --> 00:45:25,844
+And I'm also defining a capacity variable with the type of integer.
+
+314
+00:45:26,739 --> 00:45:29,759
+And let's take a look at the member method section.
+
+315
+00:45:29,759 --> 00:45:31,259
+It has one constructor.
+
+316
+00:45:31,759 --> 00:45:36,619
+It has getter methods for name and code member fields.
+
+317
+00:45:37,279 --> 00:45:41,399
+It has getter method for capacity and getter method for student count.
+
+318
+00:45:42,439 --> 00:45:48,139
+And it has add student method, which allows us to add a student object.
+
+319
+00:45:48,759 --> 00:45:53,439
+It has increase capacity method, which allows us to increase the capacity of the class.
+
+320
+00:45:54,003 --> 00:46:03,864
+It has find student method, which allows us to look for a student by looking at its number.
+
+321
+00:46:03,864 --> 00:46:15,103
+And show class list, it also allows us to present or write the students in that class.
+
+322
+00:46:16,371 --> 00:46:18,371
+And take a look at the student class.
+
+323
+00:46:18,751 --> 00:46:21,751
+So it has two global member fields, number and name.
+
+324
+00:46:22,271 --> 00:46:24,031
+And this is the method section.
+
+325
+00:46:26,071 --> 00:46:34,051
+And I have here, as you see, one constructor with the two parameters and getter methods.
+
+326
+00:46:34,739 --> 00:46:47,599
+And so here I have uses a class which has main method which allows me to orchestrate these objects of these classes.
+
+327
+00:46:48,244 --> 00:46:58,324
+And if you look at the relationship between the course and student, so here we have a composition relationship.
+
+328
+00:46:59,264 --> 00:47:04,244
+One course may have zero or more students in it.
+
+329
+00:47:04,904 --> 00:47:05,104
+Okay.
+
+330
+00:47:05,864 --> 00:47:10,204
+Now we are going to write the code for this example.
+
+331
+00:47:12,284 --> 00:47:13,004
+Okay.
+
+332
+00:47:13,024 --> 00:47:13,864
+Let's get started.
+
+333
+00:47:14,867 --> 00:47:18,128
+So we are going to start with the class course.
+
+334
+00:47:19,284 --> 00:47:21,103
+Here is the description of the class.
+
+335
+00:47:21,784 --> 00:47:27,264
+And as you see, I have two, three global member fields.
+
+336
+00:47:27,523 --> 00:47:29,324
+Two of them has a string type.
+
+337
+00:47:29,423 --> 00:47:36,483
+One is the integer, just like it is shown in the UML diagram that I have shown it before.
+
+338
+00:47:37,103 --> 00:47:44,244
+And there is ArrayList type global member field.
+
+339
+00:47:44,244 --> 00:47:46,663
+The name of the global member field is students.
+
+340
+00:47:47,284 --> 00:47:48,643
+Arkadaşlar, and the type is ArrayList.
+
+341
+00:47:49,203 --> 00:48:06,163
+Arkadaşlar, but pay attention that this ArrayList is a generic class, and in the generic type, we are identifying students, which means that all the objects in this ArrayList will be student type.
+
+342
+00:48:06,703 --> 00:48:06,844
+Arkadaşlar, okay?
+
+343
+00:48:07,891 --> 00:48:17,431
+Okay, so let's give a 10-minute break and I will continue from this example. So after 10 minutes, I will begin again.
+
+344
+00:57:48,851 --> 00:57:52,692
+Okay, let's continue. I'm going to set my clock again.
+
+345
+00:58:02,931 --> 00:58:05,331
+Arkadaşlar, sesim geliyor mu? Bir teyit edin lütfen.
+
+346
+00:58:12,403 --> 00:58:17,143
+Evet, hayır. Mikrofonunuzu da açabilirsiniz. Şeyden de yazabilirsiniz.
+
+347
+00:58:22,516 --> 00:58:23,016
+Evet, ok.
+
+348
+00:58:24,956 --> 00:58:29,076
+Ok, now, so we are going through an example of ArrayList.
+
+349
+00:58:29,076 --> 00:58:32,356
+So I will show you the example with the ArrayList.
+
+350
+00:58:32,655 --> 00:58:36,016
+And after that, I will show you the same example with the Arrays.
+
+351
+00:58:36,536 --> 00:58:43,336
+And so later, I will show you the example with another data structure.
+
+352
+00:58:43,695 --> 00:58:43,796
+Ok.
+
+353
+00:58:44,215 --> 00:58:46,076
+Now, so far, you have learned that.
+
+354
+00:58:48,036 --> 00:58:49,516
+So we can.
+
+355
+00:58:50,579 --> 00:58:58,340
+Keep the data based on a data structure in the physical memory.
+
+356
+00:58:58,980 --> 00:59:05,300
+Previously, you learned that we can keep the data in the physical memory with the array structure.
+
+357
+00:59:05,907 --> 00:59:12,467
+Now, today, you are learning that we can keep the data in a linked structure with the linked list.
+
+358
+00:59:12,467 --> 00:59:13,027
+Okay.
+
+359
+00:59:13,827 --> 00:59:17,987
+Now, so I have shown you how the linked list works.
+
+360
+00:59:18,547 --> 00:59:19,087
+Okay.
+
+361
+00:59:19,847 --> 00:59:29,387
+And now I am showing you the same thing with the ArrayList interface.
+
+362
+00:59:33,907 --> 00:59:45,248
+Programming interface is the same as the ArrayList programming interface and also the same as the Vector class programming interface.
+
+363
+00:59:45,248 --> 00:59:58,288
+So the methods are of these different data structure generic classes are the same because they all implement the list interface.
+
+364
+00:59:58,627 --> 00:59:58,728
+Okay.
+
+365
+00:59:59,087 --> 01:00:00,000
+So remember the...
+
+366
+01:00:00,000 --> 01:00:00,659
+interfaces.
+
+367
+01:00:01,659 --> 01:00:10,819
+And so we learned interfaces so that, yes, so I'm showing you the, you cannot see the PowerPoint.
+
+368
+01:00:11,819 --> 01:00:17,420
+So let me see, I'm going to, I think I'm sharing the whole screen.
+
+369
+01:00:19,460 --> 01:00:21,619
+Is it the same for everybody?
+
+370
+01:00:21,619 --> 01:00:24,779
+So I'm resharing the screen right now.
+
+371
+01:00:27,987 --> 01:00:29,987
+Do you see the...
+
+372
+01:00:29,987 --> 01:00:30,867
+Okay.
+
+373
+01:00:32,967 --> 01:00:35,987
+Again, so let me ask you...
+
+374
+01:00:39,284 --> 01:00:55,024
+Mazun, do you, it's visible now, okay, all right. Now, so let's go through to this example, and I will again summarize these three data structures, the link list, the ArrayList, and the vector data structures again.
+
+375
+01:00:55,244 --> 01:01:04,544
+Now, here we are keeping the, so this is the UML diagram, this is the UML diagram for this,
+
+376
+01:01:06,547 --> 01:01:28,007
+Code. Let us show the code. So this is the UML diagram. So here we are keeping the students' objects in the course object. So there is only one course object. And within the one course object, we are keeping references to
+
+377
+01:01:28,400 --> 01:01:30,380
+A number of student objects.
+
+378
+01:01:30,960 --> 01:01:36,460
+And these student objects are kept within a data structure ArrayList.
+
+379
+01:01:36,779 --> 01:01:36,900
+Okay.
+
+380
+01:01:37,360 --> 01:01:40,639
+Now, let's see how the code is implemented.
+
+381
+01:01:41,079 --> 01:01:47,199
+Now, in the course class, okay, so these are the global member fields.
+
+382
+01:01:47,699 --> 01:01:54,360
+So I have a code and the name as the string type.
+
+383
+01:01:54,360 --> 01:01:56,000
+These are global member fields.
+
+384
+01:01:56,139 --> 01:01:59,360
+And I have capacity with the integer type.
+
+385
+01:02:00,159 --> 01:02:03,420
+These are global member fields.
+
+386
+01:02:03,980 --> 01:02:09,139
+And I have students global member fields where the type is ArrayList.
+
+387
+01:02:09,759 --> 01:02:15,219
+And the parameter for the ArrayList generic class is student, which basically says that
+
+388
+01:02:15,699 --> 01:02:22,340
+This ArrayList will keep only student type objects.
+
+389
+01:02:22,880 --> 01:02:23,019
+Okay?
+
+390
+01:02:23,719 --> 01:02:31,799
+And as you see, I am only defining this ArrayList here.
+
+391
+01:02:31,799 --> 01:02:34,400
+I did not initialize the ArrayList yet.
+
+392
+01:02:34,739 --> 01:02:36,599
+I only defined it here.
+
+393
+01:02:37,396 --> 01:02:39,655
+Now, let's take a look at the constructor.
+
+394
+01:02:39,816 --> 01:02:43,215
+The constructor takes two parameters, three parameters, sorry.
+
+395
+01:02:43,816 --> 01:02:46,056
+One is the code for the course.
+
+396
+01:02:46,215 --> 01:02:48,556
+The second is the name for the course.
+
+397
+01:02:48,556 --> 01:02:53,956
+The third one is the student capacity for the course.
+
+398
+01:02:55,251 --> 01:03:13,092
+Okay. Now, here I am creating an object of the ArrayList for the first time where the type of the objects which will be kept in the ArrayList will be in the type of student.
+
+399
+01:03:13,092 --> 01:03:23,251
+Okay. Here I'm creating an object of the ArrayList and I'm assigning the reference to this object to this global object.
+
+400
+01:03:23,251 --> 01:03:24,931
+So, this is a model that probably defines variable.
+
+401
+01:03:25,451 --> 01:03:25,652
+Okay?
+
+402
+01:03:26,228 --> 01:03:32,208
+And then in the course class, I have getter methods for code, name, and capacity.
+
+403
+01:03:32,208 --> 01:03:50,907
+And I have one student count, get student count method, which gives me the size of the students, size of the objects that are available in the ArrayList.
+
+404
+01:03:54,228 --> 01:03:58,228
+This method of an ArrayList, what it will do?
+
+405
+01:03:58,228 --> 01:04:03,228
+It will give me the number of objects that are available in that ArrayList.
+
+406
+01:04:03,228 --> 01:04:04,228
+OK?
+
+407
+01:04:04,467 --> 01:04:08,987
+And I have another method for adding student, add student.
+
+408
+01:04:09,547 --> 01:04:11,947
+Now, so let's take a look at this method.
+
+409
+01:04:12,407 --> 01:04:17,108
+Here, it takes a student object as its input.
+
+410
+01:04:17,447 --> 01:04:20,248
+And then I have some checks that I need to do.
+
+411
+01:04:20,248 --> 01:04:20,768
+Okay.
+
+412
+01:04:21,088 --> 01:04:32,447
+So the first check is that I'm checking whether the capacity, which as you see in the constructor, I am initially giving the capacity.
+
+413
+01:04:32,467 --> 01:04:42,527
+Of the course, when I create an object of the course, I am checking the capacity, whether the current student count equal to capacity.
+
+414
+01:04:42,527 --> 01:04:49,688
+If the current student count equal to capacity, maximum capacity, then I will not add this student.
+
+415
+01:04:50,516 --> 01:04:55,336
+The second check that I'm doing, as you see, there is an or operator here.
+
+416
+01:04:55,476 --> 01:05:03,416
+The second check that I'm doing, I'm checking whether the student is already in the ArrayList.
+
+417
+01:05:03,416 --> 01:05:05,196
+To do this, I have a method.
+
+418
+01:05:05,876 --> 01:05:20,036
+Which is find student. I am calling that method. I will come to that method in a minute. Okay. I am calling that method with the student number. If that student is available in the ArrayList, it will return.
+
+419
+01:05:21,076 --> 01:05:25,556
+It will return that student object.
+
+420
+01:05:26,376 --> 01:05:35,676
+If it is other than null, then so which means that that student is available.
+
+421
+01:05:35,676 --> 01:05:39,636
+Then I will not add that student to the ArrayList.
+
+422
+01:05:39,756 --> 01:05:42,596
+Otherwise, I will add that student to the ArrayList.
+
+423
+01:05:42,816 --> 01:05:42,936
+OK.
+
+424
+01:05:43,572 --> 01:05:51,032
+So the two checks that I'm doing before I add that student object into my ArrayList.
+
+425
+01:05:52,032 --> 01:05:55,532
+Okay, now you have seen the add method as well.
+
+426
+01:05:56,563 --> 01:05:59,804
+Now, let's take a look at the find student method.
+
+427
+01:06:00,384 --> 01:06:06,344
+Now, in the find student method, I'm taking the student number as its string.
+
+428
+01:06:06,724 --> 01:06:12,943
+Then, I am doing a for each loop on the students ArrayList.
+
+429
+01:06:13,384 --> 01:06:21,384
+So, remember, I was able to do this for each on the arrays as well.
+
+430
+01:06:21,704 --> 01:06:24,344
+So, remember, on the arrays, you can also...
+
+431
+01:06:24,563 --> 01:06:42,423
+Iterate through the members of the array. Here, I'm doing the same thing this time in another data structure, in ArrayList. I can do it with the linked list. I can do it with the vectors as well. Any type of, for any type of data structure, I can do that for each loop.
+
+432
+01:06:42,664 --> 01:06:52,563
+What for each loop is doing, it starts from the first element in the ArrayList. It takes the first element and assigns this, this loop.
+
+433
+01:06:52,563 --> 01:06:55,403
+Local variable here where the type is student.
+
+434
+01:06:56,483 --> 01:07:02,083
+And after that, then I am, so I execute the inside of the for loop.
+
+435
+01:07:02,543 --> 01:07:08,804
+In the inside of the for loop, what I do is that I take the number for this.
+
+436
+01:07:09,684 --> 01:07:16,704
+Arkadaşlar, the student object and I am comparing to the number which is passed in the parameters.
+
+437
+01:07:17,284 --> 01:07:28,084
+Arkadaşlar, if they are the same, okay, if they are the same, the value will be equal to zero and then I will return the reference to that student object as a result.
+
+438
+01:07:28,659 --> 01:07:35,900
+Otherwise, I will go to the next student in the ArrayList and I will do the same change again.
+
+439
+01:07:35,900 --> 01:07:44,980
+And I will keep doing this until I go through all the student objects in the ArrayList.
+
+440
+01:07:45,119 --> 01:07:56,659
+If I cannot find the student which has the same number, then I will return null, which means that so I could not find the student that you are looking in the...
+
+441
+01:07:56,659 --> 01:08:19,360
+ArrayList. Okay. Another method is increase capacity method. And this increase capacity, what it does is that, so if you want to increase the capacity, student capacity in the course, you can call this method. It compared the new capacity against the current maximum capacity.
+
+442
+01:08:19,891 --> 01:08:29,492
+If the new capacity that you want to update is less than the maximum capacity, then it doesn't do anything because it doesn't make sense.
+
+443
+01:08:29,692 --> 01:08:33,231
+So you want to increase the capacity, not decrease the capacity.
+
+444
+01:08:34,152 --> 01:08:46,891
+So if it is bigger than the current capacity, then it updates the current capacity with the new capacity that you want to update.
+
+445
+01:08:46,891 --> 01:08:47,612
+Okay.
+
+446
+01:08:47,891 --> 01:08:51,871
+And one other method that we have is the showing the class list.
+
+447
+01:08:51,871 --> 01:09:06,832
+So this basically do another for each loop on the students ArrayList and it prints out all the details of the students that are available in the students ArrayList.
+
+448
+01:09:06,832 --> 01:09:07,451
+Okay.
+
+449
+01:09:13,876 --> 01:09:29,036
+Now, I have just shown you the ArrayList implementation of this course and student.
+
+450
+01:09:30,452 --> 01:09:54,092
+Example. Okay. Now, I will show you the array implementation of the same problem. So this time, instead of using ArrayList, I am showing you the array implementation, which means that I am using the arrays as the data structure. Okay.
+
+451
+01:09:54,591 --> 01:10:08,572
+Now, again, I'm explaining to you the course class, but this time I'm going to use the array, just like you have learned in the previous lectures.
+
+452
+01:10:08,851 --> 01:10:11,152
+Now, take a look at the global member fields.
+
+453
+01:10:11,492 --> 01:10:21,611
+Just like the previous version of the course with the ArrayList, I have global member fields, code, name, where the type of string.
+
+454
+01:10:22,015 --> 01:10:27,875
+And I have the capacity, which indicates the maximum capacity of the course.
+
+455
+01:10:28,315 --> 01:10:30,495
+And I have also a student count.
+
+456
+01:10:30,495 --> 01:10:39,855
+OK, this now this time I'm keeping the student count in order to keep track of the number of student objects in the array.
+
+457
+01:10:40,395 --> 01:10:49,935
+OK, so but in the ArrayList example, I did not have such a thing because in the ArrayList, when I call the size method.
+
+458
+01:10:50,015 --> 01:10:56,275
+Arkadaşlar, class, object, arrayList, it was giving me the available number of objects, but in the arrays, I don't have that.
+
+459
+01:10:56,655 --> 01:11:03,315
+So therefore, I have to keep additional global member fields to keep track of the number of students.
+
+460
+01:11:04,532 --> 01:11:21,372
+Okay. Now, in the global member fields, as you see, I have an array, which I call students, where the type of the array is student type. And as you see, I'm only defining this array. I did not initialize it yet.
+
+461
+01:11:21,932 --> 01:11:28,532
+And I have a constructor. The constructor, just like the ArrayList, it takes three parameters.
+
+462
+01:11:29,171 --> 01:11:33,271
+First, I'm assigning these three parameters to global member fields.
+
+463
+01:11:33,511 --> 01:11:40,611
+Then, I am creating an instance of this array with the initial capacity.
+
+464
+01:11:41,291 --> 01:11:47,771
+Okay, as you see now, I am creating an object of array with the initial capacity.
+
+465
+01:11:47,771 --> 01:11:50,591
+And I'm assigning the address to this array.
+
+466
+01:11:51,155 --> 01:11:58,876
+So the global variable, which where the type is the student array.
+
+467
+01:11:59,876 --> 01:11:59,956
+Okay.
+
+468
+01:12:00,675 --> 01:12:11,555
+Now, and I also, since at the beginning of the, when you first run this code, at the beginning, the student count will be zero.
+
+469
+01:12:11,796 --> 01:12:16,515
+So I'm assigning zero to the student count because I did not add any student.
+
+470
+01:12:16,960 --> 01:12:19,479
+To this array at the beginning.
+
+471
+01:12:21,659 --> 01:12:28,819
+Now, you see I have getter methods for code, for name, capacity, and for student count.
+
+472
+01:12:28,920 --> 01:12:32,060
+So for all the global member fields, I have getter methods.
+
+473
+01:12:33,399 --> 01:12:41,380
+Now, so we can take a look at the add student method for this.
+
+474
+01:12:43,891 --> 01:12:46,611
+For the array version of the course class.
+
+475
+01:12:47,211 --> 01:12:48,451
+So how do we do it?
+
+476
+01:12:48,971 --> 01:12:53,412
+So we want to add a student to the array.
+
+477
+01:12:53,751 --> 01:13:01,171
+And first we need to check whether the current student count equal to capacity.
+
+478
+01:13:01,492 --> 01:13:07,332
+If the current student count is equal to maximum capacity, then we will not add the student.
+
+479
+01:13:07,988 --> 01:13:17,608
+And we also check whether the student is already available in the array, students array.
+
+480
+01:13:17,608 --> 01:13:21,128
+For this, we are calling the find student method.
+
+481
+01:13:22,188 --> 01:13:32,188
+If the student is not there, then we can add this new student into the array.
+
+482
+01:13:32,591 --> 01:13:53,611
+So, when we add this student into the students array, so what we do is that we assign the reference of this new student that we want to add to the student count in this of the students array.
+
+483
+01:13:54,100 --> 01:14:08,180
+Okay. And then we increase the student count. Okay. Now you can, so this means that the student count not only gives the number of students that are available in the array, it also
+
+484
+01:14:08,655 --> 01:14:17,155
+Points to the index of the array where you want to assign a new student.
+
+485
+01:14:17,556 --> 01:14:17,675
+Okay.
+
+486
+01:14:17,896 --> 01:14:21,595
+So you can use the student count for two purposes.
+
+487
+01:14:22,056 --> 01:14:29,296
+One, it points to the index of the array where you want to assign the new student.
+
+488
+01:14:29,844 --> 01:14:37,924
+Also, it also gives you the total number of students that are available in the array at any time.
+
+489
+01:14:38,604 --> 01:14:38,684
+Okay.
+
+490
+01:14:39,084 --> 01:14:42,924
+And then since we add this student, we are returning true.
+
+491
+01:14:44,504 --> 01:14:47,244
+So, define student method.
+
+492
+01:14:47,604 --> 01:14:52,824
+In define student method, so we are passing the student number that we want to.
+
+493
+01:14:53,684 --> 01:14:58,684
+Arkadaşlar, class, object, arabe ve abstract class kavramlarını göreceğiz.
+
+494
+01:14:58,684 --> 01:15:22,287
+Arkadaşlar, arabe ve abstract class kavramlarını göreceğiz.
+
+495
+01:15:04,851 --> 01:15:08,152
+In the classical for loop, remember, it has three segments.
+
+496
+01:15:08,351 --> 01:15:11,771
+The first segment is the initializing the counter.
+
+497
+01:15:12,451 --> 01:15:17,351
+Okay, here the counter has a type integer and we are starting from zero.
+
+498
+01:15:17,711 --> 01:15:26,271
+And the last segment is incrementing the counter and we are incrementing by one every time.
+
+499
+01:15:26,804 --> 01:15:30,543
+And the middle section is the condition section.
+
+500
+01:15:30,824 --> 01:15:35,524
+Here we are checking whether the counter have reached the student count.
+
+501
+01:15:35,524 --> 01:15:36,064
+Okay.
+
+502
+01:15:36,724 --> 01:15:43,804
+And we are basically iterating, starting from index number zero, we are iterating on the array.
+
+503
+01:15:44,283 --> 01:15:49,523
+We are getting, we are reaching the student object in that index.
+
+504
+01:15:49,744 --> 01:15:58,363
+We are getting its number and we are comparing the student number against the number which is passed in the parameters.
+
+505
+01:15:59,252 --> 01:16:18,092
+Now, if it is same, then we will return the object reference to the student as the return value, which means that we basically found this student, so which means that the student is already in the student's array.
+
+506
+01:16:18,963 --> 01:16:33,363
+Otherwise, we will keep iterating through the array. If we cannot find that student, then this function will return null value, which will indicate that there is no student with this number in the array.
+
+507
+01:16:33,363 --> 01:16:34,283
+Okay.
+
+508
+01:16:40,051 --> 01:16:43,271
+Now, take a look at the increase capacity method.
+
+509
+01:16:43,912 --> 01:16:54,711
+Now, in the previous example, when we wanted to increase capacity, the only thing that we did, we basically updated the value for capacity.
+
+510
+01:16:55,220 --> 01:16:55,680
+Okay.
+
+511
+01:16:55,680 --> 01:17:10,300
+But this time, since instead of using the ArrayList, we are using Array, this time we need to update the Array as well.
+
+512
+01:17:10,899 --> 01:17:25,519
+Okay, how do we do that? First, we are checking, just like the previous example in the ArrayList example, we are checking whether the new capacity is less than the current maximum capacity.
+
+513
+01:17:25,519 --> 01:17:35,279
+If it is less than, then we are returning, we are not doing anything, because you can only increase the capacity, you cannot decrease the capacity.
+
+514
+01:17:35,891 --> 01:17:36,371
+Okay.
+
+515
+01:17:36,992 --> 01:17:42,971
+And if it is bigger than that, then the first thing what we do is that we are creating another array.
+
+516
+01:17:43,912 --> 01:17:48,612
+With the new, where the size is the new capacity.
+
+517
+01:17:49,092 --> 01:17:49,271
+Okay.
+
+518
+01:17:49,332 --> 01:17:51,351
+This time we are creating another array.
+
+519
+01:17:51,828 --> 01:18:03,868
+And then we are assigning the reference to this new array, to this temporary variable where the type is again a student array.
+
+520
+01:18:04,788 --> 01:18:14,988
+Okay, now we have two arrays. One is this array with the new capacity and one is the one which is initially created.
+
+521
+01:18:17,268 --> 01:18:21,847
+Which is initially created, this array with the capacity.
+
+522
+01:18:21,847 --> 01:18:22,427
+Okay.
+
+523
+01:18:26,195 --> 01:18:47,576
+Now, what we are going to do, we are going to iterate on the student array, and we are going to take each student reference to each student object and assign it to the corresponding entry of this temporary array.
+
+524
+01:18:47,576 --> 01:18:48,376
+Okay.
+
+525
+01:18:49,011 --> 01:19:00,451
+And basically, we are taking each object reference from the student array and we are assigning to this newly created student array.
+
+526
+01:19:00,948 --> 01:19:01,408
+Okay.
+
+527
+01:19:01,587 --> 01:19:24,528
+And after that, after we move, copied all the object references to newly created Array, then basically what we do is that we are assigning the reference to this new capacity student Array to the global member fields.
+
+528
+01:19:25,300 --> 01:19:29,980
+Which we initially created in order to keep track of the student array.
+
+529
+01:19:29,980 --> 01:19:30,659
+Okay.
+
+530
+01:19:31,159 --> 01:19:44,180
+So remember, we initially created, we initially used this student global member field to point to the student array, which we will keep the students objects.
+
+531
+01:19:44,671 --> 01:20:07,091
+Okay. Now, since we created another student array with the new capacity and we copied all the student objects to the new array, now, so we can basically update the global member fielding as well.
+
+532
+01:20:08,467 --> 01:20:19,807
+And after that, we are going to also update the capacity value just like what we did in the ArrayList example.
+
+533
+01:20:20,724 --> 01:20:28,244
+At last, the show class list and just show class list is exactly the same thing as the ArrayList.
+
+534
+01:20:28,664 --> 01:20:31,283
+Here you see that I am doing a for each loop.
+
+535
+01:20:31,944 --> 01:20:36,404
+Just like the ArrayList, I can also do the for each loop on the arrays.
+
+536
+01:20:36,924 --> 01:20:45,043
+I'm taking every student objects from the array and I'm checking whether it is null or not, if it is not null.
+
+537
+01:20:45,043 --> 01:20:48,684
+And I'm basically writing the details of that student.
+
+538
+01:20:48,724 --> 01:20:50,304
+Object onto the screen.
+
+539
+01:20:50,684 --> 01:20:50,944
+Okay.
+
+540
+01:20:51,504 --> 01:20:56,724
+Now, you have seen the same...
+
+541
+01:20:59,507 --> 01:21:16,747
+Example, with two different data structure implementations. One is the ArrayList implementation. The second one is the Array implementation. You have already seen the Array implementation in our previous lectures.
+
+542
+01:21:17,216 --> 01:21:21,615
+So now you have seen ArrayList implementation.
+
+543
+01:21:22,276 --> 01:21:27,796
+And the reason that I'm showing you both so that you can see the difference between the two.
+
+544
+01:21:31,380 --> 01:21:31,800
+Okay.
+
+545
+01:21:33,700 --> 01:21:44,060
+Now, here is the, so let me show you the example here on the eclipse.
+
+546
+01:21:51,891 --> 01:22:03,511
+Okay. Now, this code here is the ArrayList implementation of the course class. Okay. I have shown you all the methods of it.
+
+547
+01:22:09,939 --> 01:22:15,460
+And course two is basically the same thing, but this time with the array implementation.
+
+548
+01:22:15,819 --> 01:22:22,659
+I have also shown you the details of the course class in the previous example.
+
+549
+01:22:23,359 --> 01:22:25,960
+The student class is exactly the same.
+
+550
+01:22:28,439 --> 01:22:30,639
+Student class is exactly the same.
+
+551
+01:22:30,719 --> 01:22:31,460
+It doesn't differ.
+
+552
+01:22:31,460 --> 01:22:34,460
+Now, so here is the...
+
+553
+01:22:36,115 --> 01:22:49,175
+Arkadaşlar, this uses class, which is basically includes the main method, which I am going to use to illustrate an example.
+
+554
+01:22:49,175 --> 01:22:59,475
+Now, this uses is using the ArrayList implementation of the course class.
+
+555
+01:22:59,975 --> 01:23:03,716
+Okay. ArrayList implementation of the course class.
+
+556
+01:23:04,079 --> 01:23:09,799
+Now, here, as you see, in the first line, I am creating an object of the course.
+
+557
+01:23:10,680 --> 01:23:17,460
+And then I'm assigning the reference to this object, to this locally defined variable.
+
+558
+01:23:18,520 --> 01:23:27,479
+And after that, I'm creating a student, assigning the reference to this student object, to this local variable.
+
+559
+01:23:28,359 --> 01:23:29,020
+Okay.
+
+560
+01:23:29,684 --> 01:23:35,664
+And then I am adding this student to this course.
+
+561
+01:23:36,804 --> 01:23:47,623
+If the add operation is not successful, okay, then this if condition will be true, and then I will write there is a problem.
+
+562
+01:23:48,944 --> 01:23:52,664
+And then, so let me...
+
+563
+01:23:54,131 --> 01:24:02,992
+Execute this so that you can, as I am explaining to you, you can also see the results.
+
+564
+01:24:02,992 --> 01:24:03,471
+Okay.
+
+565
+01:24:07,091 --> 01:24:13,011
+And then I am calling the add student method as well.
+
+566
+01:24:13,771 --> 01:24:18,091
+And I am trying to add the same student to the ArrayList.
+
+567
+01:24:18,091 --> 01:24:28,351
+Now, since I am checking whether the student is already in the class, so remember the add method.
+
+568
+01:24:29,555 --> 01:24:41,935
+Okay, so when I do the add method, if I'm checking whether the student is already in the class, and so I'm doing this with the find method.
+
+569
+01:24:42,095 --> 01:24:48,675
+If it is already in the class, then this add student value will return false, right?
+
+570
+01:24:50,771 --> 01:24:52,332
+It will return false.
+
+571
+01:24:52,692 --> 01:24:54,832
+And this if condition will be false.
+
+572
+01:24:55,192 --> 01:24:58,811
+Therefore, it won't execute this statement here.
+
+573
+01:24:58,811 --> 01:25:05,851
+So therefore, in the console, you don't see the problem number one or problem number two.
+
+574
+01:25:06,112 --> 01:25:06,172
+OK.
+
+575
+01:25:07,672 --> 01:25:12,891
+And then I'm creating another student, assigning the reference to the student, student number two.
+
+576
+01:25:13,172 --> 01:25:16,492
+And I'm adding this second student to the course.
+
+577
+01:25:17,171 --> 01:25:22,911
+Creating another student, student number three, adding the student number three to the course.
+
+578
+01:25:23,851 --> 01:25:29,111
+I'm doing this again for student number four.
+
+579
+01:25:30,111 --> 01:25:43,731
+And I am adding the student again to the course.
+
+580
+01:25:44,180 --> 01:25:44,700
+Okay.
+
+581
+01:25:46,220 --> 01:26:03,880
+And then I'm checking this particular student, whether this particular student is available in the course.
+
+582
+01:26:04,692 --> 01:26:18,652
+And if it is different than student 3, okay, then it will be, so this will be true and this will be executed.
+
+583
+01:26:18,652 --> 01:26:27,512
+If it is the same, then this if condition will be false and this if statement will not be executed.
+
+584
+01:26:27,891 --> 01:26:30,112
+Since it is the same, it will be false.
+
+585
+01:26:30,579 --> 01:26:32,500
+This will not be executed.
+
+586
+01:26:32,500 --> 01:26:46,600
+And the next, the following one is showing the class list and then I'm printing out all the students in the class.
+
+587
+01:26:47,252 --> 01:27:01,471
+Okay. Now, I'm doing the same thing with the UCHIS number two, but this time I'm using the array implementation. It's exactly the same thing. I can also run this one.
+
+588
+01:27:03,971 --> 01:27:13,391
+It's exactly the same thing. The only difference is that course two has the array implementation. Okay.
+
+589
+01:27:20,692 --> 01:27:39,592
+Okay. And there is another test class here for you to analyze. So you can basically, as a homework, you can work on this as well. All these codes are available in the course website.
+
+590
+01:27:50,963 --> 01:27:57,824
+Okay, now I'm going to go to another data structure, which is a map data structure.
+
+591
+01:27:57,824 --> 01:28:07,823
+But before I do that, so let me show you some other methods related with the...
+
+592
+01:28:10,163 --> 01:28:12,243
+ArrayList as well.
+
+593
+01:28:12,863 --> 01:28:18,963
+So first, let me show you the linked list example.
+
+594
+01:28:19,444 --> 01:28:21,923
+So remember when I explained to you the linked list?
+
+595
+01:28:27,572 --> 01:28:52,952
+Okay, when I explained to the linked list, I said that every linked list consists of list nodes, right? And the list node is a generic class, okay? You have learned generic class, and every list node has two global member fields. One is the generic type data.
+
+596
+01:28:54,260 --> 01:28:57,020
+This one, okay, this one.
+
+597
+01:28:58,020 --> 01:29:08,700
+And the second is the same type, the list node type data member fields.
+
+598
+01:29:08,700 --> 01:29:19,560
+As you see, the second one is a pointer that points to the same type data member fields.
+
+599
+01:29:20,564 --> 01:29:24,604
+Okay, so every list note has two.
+
+600
+01:29:25,203 --> 01:29:42,384
+A data member fields. One is the generic type, the kind of data that it needs to store, and also a reference global member field, which has the same type, okay, list node type, okay?
+
+601
+01:29:42,384 --> 01:29:50,347
+And it has constructors, one parameter constructor, two parameter constructor. Basically, it takes...
+
+602
+01:29:50,836 --> 01:29:55,516
+It's one parameters for the global member fields.
+
+603
+01:29:56,155 --> 01:30:00,376
+For one of them or for two of them, it has getter methods, et cetera.
+
+604
+01:30:00,376 --> 01:30:01,176
+Okay.
+
+605
+01:30:01,996 --> 01:30:02,436
+And.
+
+606
+01:30:03,988 --> 01:30:20,688
+Arkadaşlar, for the linked list, so you see the implementation of the linked list, as I said, in the linked list, there is one first node, head node, there is one last node, and the name of the linked list.
+
+607
+01:30:21,363 --> 01:30:30,323
+Arkadaşlar, now, in every linked list, there is one head node and there is one tail node, and the name of the linked list.
+
+608
+01:30:30,323 --> 01:30:44,543
+Arkadaşlar, and by keeping track of the head node and the tail node, basically, we can do any kind of operation on a given linked list.
+
+609
+01:30:44,783 --> 01:30:49,063
+Arkadaşlar, so which means that the list node.
+
+610
+01:30:49,363 --> 01:30:50,043
+Okay.
+
+611
+01:30:50,783 --> 01:30:55,543
+We'll only keep three member fields, global member fields.
+
+612
+01:30:55,543 --> 01:30:58,823
+The first two are the pointers.
+
+613
+01:30:59,323 --> 01:31:04,623
+The first two are the references to the first object and the last object.
+
+614
+01:31:04,823 --> 01:31:06,383
+And the third one is the name.
+
+615
+01:31:06,883 --> 01:31:06,983
+Okay.
+
+616
+01:31:07,943 --> 01:31:12,603
+And so here is this test.
+
+617
+01:31:12,903 --> 01:31:14,283
+So let's do the...
+
+618
+01:31:14,676 --> 01:31:31,376
+This test. Now, the linked list method has a different, the linked list data structure has different methods such as insert at front, so print, insert at back.
+
+619
+01:31:31,376 --> 01:31:42,515
+Okay, so let's call this and then we can take a look at all these methods. For example, at the beginning I'm...
+
+620
+01:31:42,676 --> 01:31:45,636
+So, I'm creating a new linked list.
+
+621
+01:31:46,155 --> 01:31:46,315
+Okay.
+
+622
+01:31:46,655 --> 01:31:51,115
+And I'm saying that this linked list will keep integer types.
+
+623
+01:31:51,815 --> 01:32:02,456
+Now, when I first create this, so what's going to happen is that, okay, so first it will create.
+
+624
+01:32:03,604 --> 01:32:08,004
+It will create a list type object.
+
+625
+01:32:08,504 --> 01:32:08,684
+Okay.
+
+626
+01:32:09,184 --> 01:32:17,004
+And in this list type object, there will be a reference to first node and the last node.
+
+627
+01:32:17,004 --> 01:32:17,604
+Okay.
+
+628
+01:32:20,884 --> 01:32:32,684
+I'm creating a list type object where I'm telling that this list type object will keep integer type data in it.
+
+629
+01:32:33,171 --> 01:32:43,451
+And then I'm calling insert at front method, which then will add a minus one integer into this linked list.
+
+630
+01:32:43,451 --> 01:32:54,591
+And I'm printing the result. So here's the result. And then I call insert at front method, which will add zero to the front of the linked list.
+
+631
+01:32:59,731 --> 01:33:11,751
+So you can say that firstly I added so this value minus one and then I called insert at front and then I added another one.
+
+632
+01:33:13,351 --> 01:33:14,031
+Okay.
+
+633
+01:33:14,731 --> 01:33:17,071
+And I added zero to the front.
+
+634
+01:33:17,231 --> 01:33:18,451
+Then I print the results.
+
+635
+01:33:18,611 --> 01:33:20,231
+Here is the results.
+
+636
+01:33:21,716 --> 01:33:23,916
+And insert at back.
+
+637
+01:33:23,916 --> 01:33:29,616
+So here I'm adding one at the back.
+
+638
+01:33:30,316 --> 01:33:33,076
+And here is the result.
+
+639
+01:33:33,896 --> 01:33:35,196
+Zero minus one, one.
+
+640
+01:33:35,896 --> 01:33:40,496
+And finally, I'm inserting five at the back.
+
+641
+01:33:40,916 --> 01:33:41,056
+Okay.
+
+642
+01:33:41,776 --> 01:33:42,136
+So.
+
+643
+01:34:21,971 --> 01:34:22,291
+Thanks.
+
+644
+01:34:41,332 --> 01:34:45,492
+So you can think of the same thing.
+
+645
+01:34:45,852 --> 01:34:51,132
+Like if you look at this example here, first I added this one.
+
+646
+01:34:51,812 --> 01:34:58,892
+And when I add this one, the head node is pointing to this node and the tail node is pointing to this node.
+
+647
+01:34:59,352 --> 01:35:03,912
+And after that, I'm adding the 41 at the beginning.
+
+648
+01:35:03,912 --> 01:35:09,332
+And in this time, head node is pointing to this one and the tail node is pointing to...
+
+649
+01:35:09,332 --> 01:35:10,912
+Number 15.
+
+650
+01:35:11,492 --> 01:35:13,332
+And then I added 73.
+
+651
+01:35:13,832 --> 01:35:19,952
+In that case, tail node is pointing to 73 and the head node is pointing to 49.
+
+652
+01:35:20,479 --> 01:35:32,059
+And then I added number 87 and the tail node is now pointing to 87, head node still pointing to 49.
+
+653
+01:35:32,639 --> 01:35:36,099
+At last, I added number 10.
+
+654
+01:35:36,619 --> 01:35:42,179
+Now tail node is pointing to number 10, head node is still pointing to 49.
+
+655
+01:35:42,179 --> 01:35:42,739
+Okay.
+
+656
+01:35:43,419 --> 01:35:48,179
+And each time when I do these insertions, as you see, these...
+
+657
+01:35:48,479 --> 01:35:51,559
+Nodes now pointing to next note.
+
+658
+01:35:51,939 --> 01:35:52,079
+Okay.
+
+659
+01:35:52,579 --> 01:35:54,039
+In the list,
+
+660
+01:35:54,319 --> 01:35:56,519
+in the list.
+
+661
+01:35:58,036 --> 01:36:26,036
+Arkadaşlar, object, I only keep the head node and the tail node. I don't keep the rest of the nodes. Okay. How do I keep track of these rest of the nodes? Since each node in the list, each list node in the list is pointing to the next node. If I want to access the other nodes, what I will do is that first I will start from the head node and go to this pointer that will point to the...
+
+662
+01:36:26,036 --> 01:36:35,615
+Next Note, I will go to the object of the next note, get to the reference of that note, and that will lead me to the next note.
+
+663
+01:36:36,056 --> 01:36:42,396
+This way, I can traverse the list all the way to the tail note.
+
+664
+01:36:42,396 --> 01:36:43,016
+Okay.
+
+665
+01:36:44,083 --> 01:36:55,564
+Now, as you see, the list class has methods that allows me to add new items.
+
+666
+01:36:56,203 --> 01:37:01,663
+And also, similarly, it has some methods that allows me to remove the items as well.
+
+667
+01:37:01,663 --> 01:37:02,104
+Okay.
+
+668
+01:37:04,500 --> 01:37:10,920
+As you see, it has removed from front, it has removed from back.
+
+669
+01:37:13,159 --> 01:37:19,920
+It has method that allows me to check whether the link list is empty.
+
+670
+01:37:20,579 --> 01:37:29,259
+It has method that allows me to get the size of the list nodes in the list as well.
+
+671
+01:37:29,259 --> 01:37:29,779
+Okay.
+
+672
+01:37:30,452 --> 01:37:36,212
+Now, this was the linked list implementation of the list.
+
+673
+01:37:36,591 --> 01:38:04,591
+Okay. Now, so here is the Java util, Java.util linked list example. So here I'm going to show you the linked list example of the linked structure. Then I will show you the array list one more time. So here you see there is
+
+674
+01:38:04,591 --> 01:38:21,651
+The main method in the linked test. First, you see I have an array. The array has one, two, three, four, five, six different string objects in it. Okay. And
+
+675
+01:38:22,739 --> 01:38:31,199
+I am creating a linked list object here where it will keep the string type objects in it.
+
+676
+01:38:31,639 --> 01:38:31,799
+Okay.
+
+677
+01:38:32,019 --> 01:38:39,919
+And I am assigning the reference to the linked list object to this local variable.
+
+678
+01:38:39,919 --> 01:38:47,319
+Now, you see the linked list here, but in previously I have shown you the list.
+
+679
+01:38:48,139 --> 01:38:48,259
+Okay.
+
+680
+01:38:49,971 --> 01:39:03,571
+I have shown you the list. Now, the linked list and the list is exactly the same thing, but Java programming language utility linked list class is called linked list.
+
+681
+01:39:04,351 --> 01:39:13,751
+Here, I have shown you an example list implementation, but the linked list is exactly the same as the list.
+
+682
+01:39:13,751 --> 01:39:14,331
+Okay.
+
+683
+01:39:14,996 --> 01:39:25,675
+Now, let's go back here. Here, I am creating the linked list object and assigning the reference of this linked list object to this local variable.
+
+684
+01:39:26,612 --> 01:39:34,271
+And now what I'm doing is that I'm calling the add method of the linked list class.
+
+685
+01:39:34,271 --> 01:39:41,652
+Now the add method allows me to add any object into this linked list method.
+
+686
+01:39:42,251 --> 01:39:42,851
+Okay.
+
+687
+01:39:43,371 --> 01:39:51,572
+Just like the insert front, insert back that I have shown you, this linked list class has add method.
+
+688
+01:39:51,911 --> 01:39:54,572
+It allows you to add object.
+
+689
+01:39:54,612 --> 01:39:56,631
+At the end of the list.
+
+690
+01:39:57,192 --> 01:39:57,331
+Okay.
+
+691
+01:39:57,692 --> 01:40:08,931
+Here I'm doing a for each loop on the array colors and assigning each object in the colors array to the linked list.
+
+692
+01:40:09,711 --> 01:40:09,851
+Okay.
+
+693
+01:40:10,431 --> 01:40:13,471
+Now, then I create another.
+
+694
+01:40:14,707 --> 01:40:18,067
+Array, which I called colors2, okay?
+
+695
+01:40:18,607 --> 01:40:27,587
+And for that one, I am creating another linked list, assigning the reference to the linked list object to list2, okay?
+
+696
+01:40:27,887 --> 01:40:35,907
+And I'm adding all the objects in the colors2 array into linked list2, okay?
+
+697
+01:40:37,203 --> 01:40:45,384
+And then what I do is that link list one has a method called add all as well.
+
+698
+01:40:45,384 --> 01:40:45,823
+Okay.
+
+699
+01:40:46,163 --> 01:40:48,064
+That's another method of the link list.
+
+700
+01:40:48,823 --> 01:40:55,364
+And I can add the, I can basically concatenate one link list to another.
+
+701
+01:40:55,844 --> 01:40:56,083
+Okay.
+
+702
+01:40:56,283 --> 01:41:00,583
+Here I am concatenating all the members of links two.
+
+703
+01:41:01,108 --> 01:41:03,488
+To links list one.
+
+704
+01:41:04,087 --> 01:41:04,268
+Okay.
+
+705
+01:41:04,707 --> 01:41:10,028
+So basically I am bringing together.
+
+706
+01:41:11,807 --> 01:41:18,148
+I'm appending the elements of list two to the elements of list one.
+
+707
+01:41:18,515 --> 01:41:36,195
+Okay, now list one is pointing to not only the elements in previous list one, and it is also at the end of this one, so we have also these elements as well, elements coming from list two, okay?
+
+708
+01:41:37,076 --> 01:41:45,135
+And now, then I'm assigning null value to list two, now list two is pointing to null, okay?
+
+709
+01:41:45,844 --> 01:41:50,564
+And then I can print the values in this one.
+
+710
+01:41:50,704 --> 01:41:57,064
+So let's execute this so that as I'm explaining to you, you can see the results of it.
+
+711
+01:42:00,064 --> 01:42:00,584
+Okay.
+
+712
+01:42:02,804 --> 01:42:18,224
+So, when I call the print list, as you see, so it is going to print all the elements starting from the, so these ones, so black, yellow, green, blue, violet, silver, all the way here.
+
+713
+01:42:18,884 --> 01:42:28,583
+Then, since I added the elements of list two here, it will also write gold, white, brown, blue, gray, silver, okay?
+
+714
+01:42:29,587 --> 01:42:36,467
+And then, so I have another method called convert to uppercase strings.
+
+715
+01:42:36,467 --> 01:42:38,187
+So let's go to that method.
+
+716
+01:42:38,747 --> 01:42:44,607
+So in this method, I am passing the list, this linked list to this method.
+
+717
+01:42:45,347 --> 01:42:52,667
+Here, you see another utility class called list iterator.
+
+718
+01:42:53,108 --> 01:42:58,408
+Now, list iterator class is also available under java.util class.
+
+719
+01:42:58,927 --> 01:43:02,948
+It allows me to iterate on the elements of the linked list.
+
+720
+01:43:03,408 --> 01:43:03,528
+Okay?
+
+721
+01:43:04,547 --> 01:43:07,828
+It allows me to iterate on the elements of the linked list.
+
+722
+01:43:08,208 --> 01:43:13,967
+In order to do that, so what I do is that I call list iterator method of the linked list.
+
+723
+01:43:14,368 --> 01:43:17,467
+So this is another useful method of the linked list.
+
+724
+01:43:17,628 --> 01:43:19,427
+It will give me the iterator.
+
+725
+01:43:19,956 --> 01:43:28,416
+And by using this iterator, I can do an iteration on the linked list that I have here.
+
+726
+01:43:28,416 --> 01:43:37,136
+So here in this linked list, I have these objects I can iterate through with this while loop.
+
+727
+01:43:37,756 --> 01:43:47,136
+And iterator has a method called hasNext, which will keep moving on the linked list until...
+
+728
+01:43:47,956 --> 01:43:50,216
+And there is no object left.
+
+729
+01:43:50,876 --> 01:43:56,456
+And then I can basically do anything that I want with this linked list.
+
+730
+01:43:56,456 --> 01:44:08,816
+In this particular case, I am basically converting the letters to uppercase, and I am setting to the same linked list.
+
+731
+01:44:09,076 --> 01:44:11,896
+I am setting these values to the same linked list.
+
+732
+01:44:12,340 --> 01:44:24,200
+And then, after I do this convert uppercase, when I print it out, you see that every element in the linked list is written with the...
+
+733
+01:44:24,756 --> 01:44:27,356
+Arkadaşlar, uppercases.
+
+734
+01:44:27,876 --> 01:44:27,976
+Okay.
+
+735
+01:44:28,576 --> 01:44:41,775
+Then, so after that, I have some other tasks that, as you see, I can remove items from the linked list and I can print it out.
+
+736
+01:44:42,176 --> 01:44:53,016
+Or I can update the list and I can print the reversed list.
+
+737
+01:44:53,016 --> 01:44:58,596
+I can write the same link list in a reversed way.
+
+738
+01:44:59,056 --> 01:45:10,115
+So I'm going to let you study the remainder of this class starting from convert to uppercase all the way.
+
+739
+01:45:10,176 --> 01:45:16,235
+So I want you to study the rest of the linked list methods.
+
+740
+01:45:16,936 --> 01:45:24,676
+Now, the reason that I'm showing you is that the linked list is one of the important classes in data structures.
+
+741
+01:45:24,676 --> 01:45:29,596
+I want you to learn all the methods of the linked list.
+
+742
+01:45:30,016 --> 01:45:30,115
+Okay.
+
+743
+01:45:30,496 --> 01:45:33,136
+That's the homework to you.
+
+744
+01:45:34,036 --> 01:45:38,176
+And also, so I'm going to give you a break.
+
+745
+01:45:38,176 --> 01:45:38,456
+Break.
+
+746
+01:45:41,735 --> 01:45:46,296
+Then I will talk about basically.
+
+747
+01:45:46,775 --> 01:45:48,056
+So let me continue.
+
+748
+01:45:48,056 --> 01:45:51,996
+And I can stop at four o'clock.
+
+749
+01:45:52,336 --> 01:45:54,056
+So I have 15 more minutes.
+
+750
+01:45:54,716 --> 01:45:58,896
+Then we don't have to give another break.
+
+751
+01:45:59,347 --> 01:46:07,648
+So now I'm giving you the homework for you to study this linked list test class.
+
+752
+01:46:08,268 --> 01:46:13,528
+I want you to take a look at the remainder of the methods of the linked list.
+
+753
+01:46:13,988 --> 01:46:15,248
+Okay, that's your homework.
+
+754
+01:46:15,923 --> 01:46:27,164
+Arkadaşlar, and the other class is the ArrayList. I have shown you the ArrayList example, but here you see there are other ArrayList methods.
+
+755
+01:46:27,712 --> 01:46:33,252
+So you have seen the add method for the ArrayList.
+
+756
+01:46:33,452 --> 01:46:39,092
+You have seen also the size method of the ArrayList.
+
+757
+01:46:40,092 --> 01:46:51,832
+But other than that, so there is also a usage of iterator for you to iterate on the ArrayList.
+
+758
+01:46:51,832 --> 01:46:52,432
+Okay.
+
+759
+01:46:52,912 --> 01:46:55,552
+I also want you to study this.
+
+760
+01:46:55,712 --> 01:47:02,072
+ArrayList test class so that you can get familiar with the ArrayList methods as well.
+
+761
+01:47:05,072 --> 01:47:09,952
+Those are the two test classes that I want you to study.
+
+762
+01:47:11,672 --> 01:47:19,452
+So next week, if you have any questions related with the linked list and the ArrayList, so you can ask your questions.
+
+763
+01:47:19,452 --> 01:47:20,052
+Okay.
+
+764
+01:47:20,812 --> 01:47:23,112
+Again, the linked list.
+
+765
+01:47:23,604 --> 01:47:30,044
+Is implementing the list interface, abstract list interface.
+
+766
+01:47:30,784 --> 01:47:37,264
+An abstract list interface is basically extending the list interface.
+
+767
+01:47:37,264 --> 01:47:43,084
+So you can say that linked list is a regular class which is implementing the list interface.
+
+768
+01:47:43,864 --> 01:47:48,264
+And ArrayList is also a regular class which is implementing the list interface.
+
+769
+01:47:48,744 --> 01:47:48,864
+Okay.
+
+770
+01:47:49,395 --> 01:47:59,975
+Now, they both are, so the link, the linked list is keeping the data in a linked structure.
+
+771
+01:47:59,975 --> 01:48:07,555
+I have shown you the, how, how it keeps the data in a linked structure.
+
+772
+01:48:08,180 --> 01:48:26,619
+ArrayList is keeping the data as arrays in the physical memory, but it is providing the same methods just like the linked list because it is implementing the list interface.
+
+773
+01:48:26,619 --> 01:48:36,180
+So the methods of the ArrayList is similar to the linked list methods, but the only difference is that the ArrayList is keeping the data as arrays.
+
+774
+01:48:36,180 --> 01:48:44,159
+As arrays in the physical memory, the link list is keeping the data structure as in a link structure.
+
+775
+01:48:44,159 --> 01:48:44,800
+Okay.
+
+776
+01:48:45,684 --> 01:48:50,923
+Now, the vector is exactly the same as the ArrayList.
+
+777
+01:48:51,083 --> 01:48:56,024
+The methods of the ArrayList is exactly the same as the vector.
+
+778
+01:48:56,024 --> 01:49:05,024
+Then you can ask the question, why do we have two different regular classes to keep for the same data structure?
+
+779
+01:49:05,555 --> 01:49:15,655
+The reason is that the vector is thread safe, which means that you can use the vector data structure with multiple threads.
+
+780
+01:49:16,915 --> 01:49:24,775
+But for the ArrayList, you can use this ArrayList data structure with only one thread.
+
+781
+01:49:37,524 --> 01:50:01,524
+Okay. Now, let's take a look at now. So far, you have seen the data structures that can only keep only one data item in it. Okay. ArrayList, you are keeping only one data item. LinkList, you are keeping only one data item. And also...
+
+782
+01:50:02,163 --> 01:50:06,163
+The vector, we are keeping only one data item.
+
+783
+01:50:06,603 --> 01:50:13,243
+Now, we want to keep the data with key value pairs in the physical memory.
+
+784
+01:50:13,243 --> 01:50:13,764
+Okay.
+
+785
+01:50:14,183 --> 01:50:19,323
+And in order for us to do this, there is another data structure called map.
+
+786
+01:50:19,731 --> 01:50:20,272
+Okay.
+
+787
+01:50:20,812 --> 01:50:26,132
+And you can see, you can see this here as well.
+
+788
+01:50:27,932 --> 01:50:29,032
+So, okay.
+
+789
+01:50:29,152 --> 01:50:32,092
+This is for list data structure.
+
+790
+01:50:33,212 --> 01:50:33,892
+Okay.
+
+791
+01:50:33,972 --> 01:50:35,652
+This is for map data structure.
+
+792
+01:50:36,064 --> 01:50:45,884
+And with the map interface, so this map data structure implements the map interface.
+
+793
+01:50:45,884 --> 01:50:53,664
+With this map interface, it allows us to keep data structures as key value pairs in the physical memory.
+
+794
+01:50:54,124 --> 01:50:59,744
+Okay. And we have two regular classes that we should learn. One is HashMap. The other one is HashTable.
+
+795
+01:51:00,024 --> 01:51:03,884
+Okay. These two data structures are being used in...
+
+796
+01:51:04,064 --> 01:51:16,044
+The methods of these two regular classes are exactly the same.
+
+797
+01:51:16,044 --> 01:51:21,324
+The only difference is that with hash table, it is thread safe.
+
+798
+01:51:21,747 --> 01:51:36,187
+Which means that more than one thread can access to the data items of hash table at the same time without any problem.
+
+799
+01:51:36,787 --> 01:51:43,467
+Hash map is thread unsafe, which means that only one thread can use the hash map at a time.
+
+800
+01:51:43,467 --> 01:51:49,667
+If you use multiple threads, then you will have a synchronization problem.
+
+801
+01:51:49,747 --> 01:52:16,487
+Okay. Now, with the map data structures, it allows us to keep data with key value pairs. Basically, when you want to put a data, you put it associated with a key. And the key is also object and the value is also object.
+
+802
+01:52:16,948 --> 01:52:23,288
+And if you want to put data, you associate with the key and you put key value pairs.
+
+803
+01:52:23,288 --> 01:52:34,307
+If you want to get the value, you basically give the key and the data structure will return the value to you.
+
+804
+01:52:34,668 --> 01:52:34,788
+Okay.
+
+805
+01:52:37,427 --> 01:52:41,408
+So you will see an example of it in a minute.
+
+806
+01:52:41,408 --> 01:52:44,748
+Now, here is an example of this.
+
+807
+01:52:45,307 --> 01:52:52,347
+As you see here, I'm defining the same course class.
+
+808
+01:52:53,047 --> 01:52:56,807
+So this is the course plus description.
+
+809
+01:52:57,568 --> 01:53:02,547
+And here I have three global member fields, code, name, and capacity.
+
+810
+01:53:03,119 --> 01:53:12,520
+And this time, I'm defining the data structure, students' data structures, as a hash map.
+
+811
+01:53:12,884 --> 01:53:17,463
+And this hashmap keeps, it's a two parameter generic class.
+
+812
+01:53:18,163 --> 01:53:27,443
+And at the beginning, I'm telling this hashmap that the first element that it's going to keep will have a string type.
+
+813
+01:53:27,443 --> 01:53:32,003
+The second element that it will keep, it will have a student type.
+
+814
+01:53:32,483 --> 01:53:32,583
+Okay.
+
+815
+01:53:33,243 --> 01:53:34,543
+Now you see the constructor.
+
+816
+01:53:34,703 --> 01:53:37,863
+In the constructor, I have code name and capacity.
+
+817
+01:53:38,023 --> 01:53:40,724
+I'm initializing these values at the beginning.
+
+818
+01:53:40,884 --> 01:53:45,943
+And then I'm creating an object of the HashMap data structure.
+
+819
+01:53:46,663 --> 01:54:00,443
+And as you see, when I create the object, the signature of this should be exactly the same as I'm creating, I'm defining the students variable.
+
+820
+01:54:01,083 --> 01:54:01,224
+Okay.
+
+821
+01:54:01,983 --> 01:54:04,943
+And I have getter methods for codename and capacity.
+
+822
+01:54:05,524 --> 01:54:19,624
+And here I'm getting the student count. Just like the ArrayList here, I can call the size method of the data structures, which will then return me the count of the students.
+
+823
+01:54:21,140 --> 01:54:39,180
+I have an add method, as you see here. In the add method, I want to add a student to the course. First, I need to check whether I reach the number of students that are available in the course is maximum capacity. If yes, I'm not going to add the student.
+
+824
+01:54:39,800 --> 01:54:46,180
+And then I'm checking whether the student is available in the course. If not, then I will...
+
+825
+01:54:46,703 --> 01:54:50,663
+insert the student into this data structure.
+
+826
+01:54:50,923 --> 01:54:54,123
+How do I insert the student into this data structure?
+
+827
+01:54:54,644 --> 01:55:01,743
+Remember, with the map data structures, I am inserting these students with key value pairs.
+
+828
+01:55:02,163 --> 01:55:02,323
+Okay?
+
+829
+01:55:02,868 --> 01:55:08,308
+Here in the, so I call the put method.
+
+830
+01:55:08,888 --> 01:55:18,148
+The first argument in the put method is the string type argument.
+
+831
+01:55:18,688 --> 01:55:25,368
+Here I am passing the student number as the first argument.
+
+832
+01:55:25,528 --> 01:55:28,948
+And the second argument is the student object.
+
+833
+01:55:28,948 --> 01:55:29,468
+Okay.
+
+834
+01:55:29,928 --> 01:55:30,848
+The first one in.
+
+835
+01:55:30,868 --> 01:55:32,828
+In that case is a string object.
+
+836
+01:55:32,948 --> 01:55:34,908
+The second one is the student object.
+
+837
+01:55:35,428 --> 01:55:43,408
+So this way I am inserting the student associated with them, its student number into this data structure.
+
+838
+01:55:43,408 --> 01:55:44,188
+Okay.
+
+839
+01:55:48,340 --> 01:56:05,560
+Now, let's take a look at the find student method. Now, since I inserted all these students associated with their number, so when I want to find a student, basically what I do is that I call the get method of the map data structure.
+
+840
+01:56:05,560 --> 01:56:13,780
+So, it is basically looking at the hash map, checking whether that student object is there.
+
+841
+01:56:16,340 --> 01:56:24,340
+There, then it will return to me as an object. Otherwise, it will return a null value. Okay?
+
+842
+01:56:25,203 --> 01:56:44,944
+And here, the increased capacity function, this is exactly the same as the ArrayList example. I'm checking the new capacity against the maximum capacity. If it is less than that, I don't do anything. If it is bigger than that, I update the maximum capacity to new capacity.
+
+843
+01:56:45,811 --> 01:56:54,112
+And the last function that I have is the show class list, just like the previous examples.
+
+844
+01:56:54,851 --> 01:57:04,532
+And here, so what I do is that I do a for each loop on the values of the hash map.
+
+845
+01:57:04,532 --> 01:57:07,532
+Okay, now remember the...
+
+846
+01:57:08,275 --> 01:57:27,115
+A hashmap has two, is keeping two things. One is the key, the second one is the value, right? Now, if I wanted to get the value, all the values that are available in the hashmap, I can call the values method.
+
+847
+01:57:27,576 --> 01:57:36,195
+It will then give me all the values as a data structure, and then I can do a for each loop.
+
+848
+01:57:36,275 --> 01:57:37,275
+On the values.
+
+849
+01:57:37,275 --> 01:57:46,220
+Okay, since in the values section, I have students objects, what I will do, I will do a for each loop on the student objects.
+
+850
+01:57:46,387 --> 01:57:54,707
+And I will check and I will print out the details of each student object that are available in the HashMap.
+
+851
+01:57:54,707 --> 01:58:09,148
+Okay. Now with the HashMap data structures, that course class becomes much more, the syntax of that course class becomes much more simpler.
+
+852
+01:58:09,667 --> 01:58:14,387
+Okay. The number of quotes that I'm writing is...
+
+853
+01:58:14,387 --> 01:58:19,947
+ArrayList, less than the ArrayList, and less than the ArrayVersion.
+
+854
+01:58:19,947 --> 01:58:20,307
+Okay?
+
+855
+01:58:22,728 --> 01:58:27,307
+Now, I want you to also take a look at the...
+
+856
+01:58:29,807 --> 01:58:35,827
+Example, which is here, okay, the HashMap example, yeah.
+
+857
+01:58:36,568 --> 01:58:46,688
+The HashMap example of the course is also available in the codes that I uploaded in the website.
+
+858
+01:58:46,688 --> 01:58:51,347
+And as you see, the course class is implemented with the HashMap.
+
+859
+01:58:51,967 --> 01:58:56,688
+And you can basically, you can...
+
+860
+01:58:57,807 --> 01:59:00,827
+You see the student class is the same as before.
+
+861
+01:59:01,427 --> 01:59:05,087
+And you see the uses example here as well.
+
+862
+01:59:05,467 --> 01:59:09,007
+You can experiment with it as a homework.
+
+863
+01:59:09,007 --> 01:59:09,487
+Okay.
+
+864
+01:59:10,207 --> 01:59:13,927
+And there is also another class, map test class.
+
+865
+01:59:14,387 --> 01:59:15,967
+You can also experiment with it.
+
+866
+01:59:16,287 --> 01:59:22,007
+In this map test class, you see that I am creating an...
+
+867
+01:59:22,996 --> 01:59:41,855
+An object of the hash map. So in this particular case, I did not define the generic types that this hash map is going to hold. Okay. So this means that this hash map can keep any types of key value pairs, right?
+
+868
+01:59:42,336 --> 01:59:52,016
+And here I'm creating an object of it and I'm assigning the object reference to this variable.
+
+869
+01:59:53,475 --> 01:59:59,815
+And now you can say that how come you did not use a hash map here instead of you used.
+
+870
+02:00:00,000 --> 02:00:12,159
+map. So remember, the parents can be used wherever the object of child is expected. So remember, I have shown you the...
+
+871
+02:00:13,300 --> 02:00:20,359
+I have shown you that the HashMap and the HashTable is implementing the map interface.
+
+872
+02:00:20,359 --> 02:00:23,159
+So map becomes its parent.
+
+873
+02:00:23,439 --> 02:00:33,899
+So therefore, any time an object of the child class is being created, a parent can be used as the type as well.
+
+874
+02:00:34,059 --> 02:00:35,439
+So this is what I'm doing here.
+
+875
+02:00:35,923 --> 02:00:41,564
+So here I created the object and I'm putting a key value pair.
+
+876
+02:00:41,564 --> 02:00:58,864
+So as you see, first for the key I'm using a string value and here for the value I'm using a string value and then I'm putting for the same key, this time I'm putting an integer.
+
+877
+02:00:59,572 --> 02:01:03,032
+And then I'm putting the same location, same key.
+
+878
+02:01:03,351 --> 02:01:08,211
+This time I'm putting here a string.
+
+879
+02:01:08,751 --> 02:01:17,511
+So when you execute this, okay, when you execute this, what you will see is, so.
+
+880
+02:01:24,148 --> 02:01:37,888
+Okay, so when I execute this, what you will see, you will see the last value that I inserted into this data structure because I inserted corresponding to this particular key.
+
+881
+02:01:37,888 --> 02:01:38,468
+Okay.
+
+882
+02:01:38,944 --> 02:01:53,924
+Now, this is the last homework that I'm giving you. I want you to study the map, hash map data structure as well to our next class. Okay.
+
+883
+02:01:57,043 --> 02:02:03,403
+Now, we talked about the linked list. We talked about the ArrayList. We talked about the HashMap.
+
+884
+02:02:03,863 --> 02:02:11,103
+And for vector, I said that the vector methods are exactly the same thing as the ArrayList.
+
+885
+02:02:11,683 --> 02:02:19,203
+There is no difference. The only difference is that when you use vector, it's thread safe.
+
+886
+02:02:19,203 --> 02:02:23,643
+You can use it with multiple processes or multiple threads.
+
+887
+02:02:24,115 --> 02:02:28,676
+The hash table is exactly the same hash map.
+
+888
+02:02:29,356 --> 02:02:36,115
+So the only difference is that with hash table you can use with multiple threads, it's thread save.
+
+889
+02:02:36,556 --> 02:02:39,596
+So the vector is exactly the same as the ArrayList.
+
+890
+02:02:39,956 --> 02:02:42,615
+Hash table is exactly the same HashMap.
+
+891
+02:02:42,916 --> 02:02:49,235
+You have seen HashMap ArrayList and the LinkList examples in this class.
+
+892
+02:02:49,235 --> 02:02:52,096
+Okay, now I'm going to stop today.
+
+893
+02:02:52,115 --> 02:02:58,796
+Here, I have given you some homeworks for you to study these data structures that I explained to you.
+
+894
+02:02:59,396 --> 02:03:02,356
+Next week, I'm going to start with the exception handling.
+
+895
+02:03:02,356 --> 02:03:03,235
+Okay.
+
+896
+02:03:05,275 --> 02:03:07,076
+Arkadaşlar, burada duracağım ben.
+
+897
+02:03:08,176 --> 02:03:11,476
+Gelecek hafta exception handling konusundan devam edeceğim.
+
+898
+02:03:18,036 --> 02:03:44,975
+Okey. Bir tane sorumuz vardı. Bu soruyu seninle ayrı bir şeyde konuşabilir miyiz? Şimdi saat dörtte benim katılmam gereken bir bölüm toplantım varmış. Bunu sen bana, hangi arkadaşındı? [öğrenci], bana e-mail atabilir misin? Seninle ayrı bir toplantı yapalım. Hala buradaysan orada konuşalım. Olur mu?
+
+899
+02:03:55,828 --> 02:04:21,908
+Thank you. Okay, so I'm going to stop now. [öğrenci], sen bana e-mail atarsan sorunla ilgili ayrı bir toplantıda seninle ulaşalım. Orada bana sorunu sor. Çünkü saat dörtte benim toplantıya katılmam lazım. Arkadaşlar, katıldığınız için teşekkür ederim. Haftaya devam ediyoruz. Exception Handling Kodu konusunda. İyi günler dilerim, iyi dersler dilerim.

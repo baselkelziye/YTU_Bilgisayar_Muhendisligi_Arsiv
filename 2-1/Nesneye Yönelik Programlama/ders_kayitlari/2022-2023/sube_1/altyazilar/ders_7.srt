@@ -1,0 +1,2991 @@
+1
+00:07:02,708 --> 00:07:10,248
+Merhaba arkadaşlar. Bir beş dakika daha bekleyelim. Biraz daha arkadaşlarınızın gelmesine. Ondan sonra başlayacağım.
+
+2
+00:11:39,508 --> 00:11:41,908
+Okey. Başlayalım isterseniz.
+
+3
+00:11:46,899 --> 00:11:54,500
+Okay, today is the seventh week into the semester.
+
+4
+00:11:58,340 --> 00:12:03,460
+Normally, we have the first midterm exam on the eighth week.
+
+5
+00:12:04,199 --> 00:12:12,500
+But this semester, it seems like we are going to do the midterm on the ninth week, which is...
+
+6
+00:12:13,299 --> 00:12:15,719
+April the 19th.
+
+7
+00:12:17,279 --> 00:12:29,000
+And the announcement for the midterm exams will be done on the course, actually on the department website.
+
+8
+00:12:30,620 --> 00:12:35,000
+And so you will, you should...
+
+9
+00:12:37,364 --> 00:12:43,004
+Keep checking the department website for the dates for the midterm exams.
+
+10
+00:12:43,864 --> 00:12:51,804
+So obviously for object-oriented programming midterm exams, it will be the same week as the other courses.
+
+11
+00:12:53,184 --> 00:12:59,304
+So it sounds like, so next week I was expecting that we will have the midterm exam next week,
+
+12
+00:12:59,304 --> 00:13:04,663
+but it sounds like we will have the midterm exam in two weeks' time.
+
+13
+00:13:05,364 --> 00:13:13,604
+Okay, but I will make the announcement on the course website as well, but you should also keep checking the department website.
+
+14
+00:13:14,464 --> 00:13:18,364
+So in that case, we will have a lecture next week.
+
+15
+00:13:18,864 --> 00:13:27,923
+Okay, but to make sure, I would recommend you to check the website, course website, and also the department website for the exact date.
+
+16
+00:13:33,043 --> 00:13:41,244
+Our last lecture, we were going to start the inheritance relationship between the objects.
+
+17
+00:13:42,644 --> 00:13:48,223
+And so I left it out for this week.
+
+18
+00:13:48,223 --> 00:13:57,163
+So today I'm going to cover the inheritance relationship all the way to the…
+
+19
+00:13:57,203 --> 00:14:00,884
+Last topic of the object relations.
+
+20
+00:14:00,884 --> 00:14:05,403
+So this is actually the last topic for the object relations.
+
+21
+00:14:06,083 --> 00:14:15,783
+And you have so far seen the association relationship, composition relationship, and aggregation relationship.
+
+22
+00:14:16,163 --> 00:14:21,884
+And as I was explaining all these relationships, I told you that they are all...
+
+23
+00:14:22,803 --> 00:14:25,264
+Ownership-based relationships.
+
+24
+00:14:26,223 --> 00:14:31,803
+And I told you that association relationship...
+
+25
+00:14:33,172 --> 00:14:35,632
+Is and is a relationship.
+
+26
+00:14:36,412 --> 00:14:42,352
+And then aggregation is a little bit stronger version of the association.
+
+27
+00:14:42,831 --> 00:14:49,592
+And the composition is a little further strong version of the association relationship.
+
+28
+00:14:49,731 --> 00:14:56,532
+But in essence, they all are ownership-based relationships.
+
+29
+00:14:58,067 --> 00:15:02,967
+But the inheritance relationship is different than the rest of them.
+
+30
+00:15:03,587 --> 00:15:14,048
+With the inheritance relationship, what we are trying to do, one object inherits another object's futures.
+
+31
+00:15:16,087 --> 00:15:22,727
+And these futures could be the member methods and also the data member fields.
+
+32
+00:15:23,307 --> 00:15:23,447
+Okay.
+
+33
+00:15:24,340 --> 00:15:34,660
+And so the inheritance relationship is one of the important object relations in object-oriented programming.
+
+34
+00:15:35,259 --> 00:15:40,720
+And you can do the inheritance relationship in different ways.
+
+35
+00:15:41,180 --> 00:15:47,600
+You can do it by using the regular classes, you can use abstract classes, or you can use interfaces.
+
+36
+00:15:48,244 --> 00:15:52,584
+Now, I'm going to start with the regular classes and then continue forward.
+
+37
+00:15:53,744 --> 00:16:05,584
+Okay, now this is the UML representation of the inheritance relationship.
+
+38
+00:16:06,584 --> 00:16:09,043
+As you see here,
+
+39
+00:16:09,940 --> 00:16:30,680
+There is a class A and there is a class B and class B extends from class A. A is the parent class and B is the child class. And the direction of the arrow is pointing to the parent class. So this basically means that
+
+40
+00:16:31,124 --> 00:16:38,223
+instances of class B inherits from the instances of class A.
+
+41
+00:16:38,223 --> 00:16:47,443
+So basically, so when you read this, you will read it like B inherits from A.
+
+42
+00:16:47,744 --> 00:16:52,744
+So therefore, the arrow points to the parent class.
+
+43
+00:16:53,364 --> 00:16:53,504
+Okay.
+
+44
+00:16:53,824 --> 00:16:57,483
+Sometimes we call this parent class a super class or base class.
+
+45
+00:16:57,723 --> 00:16:59,124
+And sometimes we call the...
+
+46
+00:16:59,124 --> 00:17:05,564
+A child class, a subclass, or drive class in different tutorials or in different sources.
+
+47
+00:17:07,859 --> 00:17:21,119
+And when you create a relationship like this, all member fields, data member fields, and the methods of the parent class are transferred to the child class.
+
+48
+00:17:21,119 --> 00:17:30,659
+Okay. However, children cannot access the inherited private members. So what does this mean?
+
+49
+00:17:34,228 --> 00:17:38,768
+The child class can, will have its own methods.
+
+50
+00:17:39,388 --> 00:17:44,048
+In addition, the child class can use the parents' methods as well.
+
+51
+00:17:44,268 --> 00:17:47,688
+So, because it will inherit all the methods that the parent has.
+
+52
+00:17:48,588 --> 00:17:53,008
+Also, the child class will have its own data member fields.
+
+53
+00:17:53,128 --> 00:17:58,628
+In addition, it will have data member fields of the parent class as well.
+
+54
+00:17:58,628 --> 00:17:59,428
+Okay.
+
+55
+00:17:59,988 --> 00:18:23,648
+But if the parent class data member fields are defined as private, in that case, even the child class will have to use parent class public member methods in order to access the data in the privately defined member fields.
+
+56
+00:18:23,648 --> 00:18:24,367
+Okay.
+
+57
+00:18:27,827 --> 00:18:40,347
+If you want data member fields to be accessed by the child class, in that case, there is another access modifier, which you haven't learned.
+
+58
+00:18:40,468 --> 00:18:44,407
+We discussed it, but we haven't gone into details.
+
+59
+00:18:45,268 --> 00:18:47,688
+There is a protected access modifier.
+
+60
+00:18:48,211 --> 00:18:54,451
+Just like the public or private, there is another access modifier protected.
+
+61
+00:18:54,451 --> 00:19:08,052
+And this basically allows the child classes to access the parents' data member fields if they are defined as protected.
+
+62
+00:19:13,107 --> 00:19:33,967
+Okay. Now, so what are the rules when we create inheritance relationship? So as you see here, there is an inheritance relationship, there is this person, and from this person, three classes are extended, student is extending the person, employee, and retired.
+
+63
+00:19:35,412 --> 00:19:44,052
+And then director and the part-time employees are extending the employee class.
+
+64
+00:19:45,451 --> 00:19:45,572
+Okay.
+
+65
+00:19:46,672 --> 00:19:49,531
+Now, so what are the rules?
+
+66
+00:19:50,052 --> 00:20:00,000
+Subclasses cannot reject a member from the superclass, which means that if there are some methods here and data member fields here, student class...
+
+67
+00:20:00,000 --> 00:20:10,400
+will inherit it by default. So in student class, we cannot say, like, I will not use such and such method in person class.
+
+68
+00:20:10,400 --> 00:20:17,360
+Okay. So the subclasses cannot reject members from the superclass.
+
+69
+00:20:20,468 --> 00:20:26,788
+However, the methods in the superclass can be changed in the child class.
+
+70
+00:20:27,288 --> 00:20:31,708
+So, for example, let's say if there is an introduced self method in the person class.
+
+71
+00:20:32,096 --> 00:20:40,396
+I can have an introduce self method in the student class, which will then overwrite the introduce self of the person class.
+
+72
+00:20:40,396 --> 00:20:51,195
+So in that case, when I call an object which is created from the student class, if I call that object's introduce self method,
+
+73
+00:20:51,632 --> 00:21:02,612
+If both child class and the parent class has the introduce self method, I will be calling the introduce self method of the child class because it will override it.
+
+74
+00:21:03,492 --> 00:21:03,692
+Okay.
+
+75
+00:21:04,211 --> 00:21:06,451
+Now, this is called overriding.
+
+76
+00:21:07,352 --> 00:21:11,512
+Remember, there is another term which is called overloading.
+
+77
+00:21:12,012 --> 00:21:16,692
+Overloading, so we use the overloading term when we have
+
+78
+00:21:16,991 --> 00:21:33,152
+Two same name methods in the same class, but their signatures are different. In that case, we call that situation overloading. But now we are using another term, we are calling overriding.
+
+79
+00:21:33,652 --> 00:21:46,092
+If there is a method in the parent class, and if I want the same name, same signature method in the child class, that method will be override the parents method.
+
+80
+00:21:48,231 --> 00:21:51,092
+Now, if you want...
+
+81
+00:21:51,347 --> 00:22:05,427
+A method, if you don't want a method to be overridden in one of the child classes, in that case, in the upper class, in the super class, you can define that method as a final method.
+
+82
+00:22:05,427 --> 00:22:16,688
+If a method is defined as final method, in that case, that method cannot be overridden in the subclasses.
+
+83
+00:22:19,827 --> 00:22:36,487
+Okay. Now, if you create inheritance relationship, there is a, so if you go high in the tree in the inheritance relationship, basically, you are, you observe generalization.
+
+84
+00:22:36,948 --> 00:22:43,768
+So, which means that the class in the root of the tree is as general as possible.
+
+85
+00:22:43,768 --> 00:22:50,568
+If you go to the leaves of the tree, in that case, you are doing specialization.
+
+86
+00:22:51,248 --> 00:22:59,628
+And in that case, if you go to the leaves of the inheritance tree, so you will find specialized classes.
+
+87
+00:22:59,868 --> 00:23:02,108
+They will have some methods that are specialized.
+
+88
+00:23:02,672 --> 00:23:05,932
+For particular purpose.
+
+89
+00:23:07,011 --> 00:23:07,251
+Okay.
+
+90
+00:23:12,596 --> 00:23:20,895
+Now, let's take a look at, so this inheritance is also called generalization and specialization relationship.
+
+91
+00:23:20,895 --> 00:23:30,556
+And the superclasses are generalized classes and the child classes are specialization classes.
+
+92
+00:23:31,135 --> 00:23:36,635
+And the relationship between the parent and child is a relationship.
+
+93
+00:23:39,791 --> 00:23:47,271
+So we said that association, aggregation, composition, they are all ownership-based relationship.
+
+94
+00:23:47,971 --> 00:23:55,531
+So which means that one object of a class owns the object of the second class.
+
+95
+00:23:55,791 --> 00:23:55,951
+Okay.
+
+96
+00:23:56,451 --> 00:23:58,711
+So there is this ownership relationship.
+
+97
+00:23:58,711 --> 00:24:02,711
+But in inheritance relation, there is a relationship, which means that...
+
+98
+00:24:03,539 --> 00:24:11,819
+The objects of the child class is also a car, object of car class.
+
+99
+00:24:11,819 --> 00:24:22,359
+So, which means that the type you can use, for example, if you create an object of the station wagon class,
+
+100
+00:24:24,660 --> 00:24:28,480
+You can use the station wagon as the type of that object.
+
+101
+00:24:28,660 --> 00:24:33,980
+Also, you can use the car class as the type of that object because there is a relationship.
+
+102
+00:24:34,600 --> 00:24:52,180
+For instance, if you create an object of the dot matrix class, in that case, you can also use the printer as the type of that object because that object is a dot matrix object and as well as it is a printer object as well.
+
+103
+00:24:52,660 --> 00:24:53,960
+There is a relationship.
+
+104
+00:24:57,940 --> 00:25:03,860
+And the child can be used whenever the parent is expected.
+
+105
+00:25:04,440 --> 00:25:18,360
+So, for example, since I created, in the examples that I just gave you, if I created an object of the station wagon, and in that case, for that object, I can use the parent as the type.
+
+106
+00:25:25,940 --> 00:25:28,320
+parent as the type. Okay?
+
+107
+00:25:31,559 --> 00:25:38,660
+Now, when we create an inheritance relationship, so you need to make sure that this is a relationship.
+
+108
+00:25:38,880 --> 00:25:43,640
+For example, let's take a look at this relationship.
+
+109
+00:25:51,412 --> 00:25:54,832
+A wrong inheritance
+
+110
+00:25:56,692 --> 00:26:19,471
+Design. How do you understand that it is that it is a wrong inheritance design? So you need to ask whether there is a relationship. Is red a GUI button? Is yellow a GUI button? So if it does not make sense, which in this case, it doesn't make sense. In that case, this is a wrong inheritance relationship. Now let's take a look at this one.
+
+111
+00:26:21,652 --> 00:26:24,872
+Now, this is a regular GUI button.
+
+112
+00:26:25,532 --> 00:26:27,731
+This class is regular GUI button.
+
+113
+00:26:27,852 --> 00:26:29,912
+And this is a GUI button, right?
+
+114
+00:26:29,912 --> 00:26:33,912
+And so there is a...
+
+115
+00:26:33,912 --> 00:26:36,912
+So this...
+
+116
+00:26:39,508 --> 00:27:07,467
+GUI button has, owns this particular, so the objects of the, the first one owns the objects of the second one. And so, so therefore there is an ownership relationship. Instead of creating the inheritance relationship, it makes sense to create the ownership relationship. How do I understand that it is ownership? So when you look at the,
+
+117
+00:27:07,508 --> 00:27:16,107
+Data member field of the first class, you see that the second class is being mentioned in the data member fields.
+
+118
+00:27:16,587 --> 00:27:22,827
+So, which means that one object of the GUI button will have one object of the regular GUI button.
+
+119
+00:27:23,208 --> 00:27:23,387
+Okay.
+
+120
+00:27:23,728 --> 00:27:27,508
+And all these are the properties of the regular GUI button.
+
+121
+00:27:35,635 --> 00:27:43,355
+Okay. Inheritance is a class-level relationship that cannot be changed during the runtime.
+
+122
+00:27:44,211 --> 00:27:55,531
+And experienced object oriental modelers choose inheritance if there is a generalization and specialization relationship.
+
+123
+00:27:55,531 --> 00:28:05,271
+Okay. And if you are sure that so between the two classes, you can generalize one class in another one.
+
+124
+00:28:05,359 --> 00:28:10,259
+So in that case, you should use the inheritance relationship.
+
+125
+00:28:10,420 --> 00:28:16,359
+Otherwise, association, composition, aggregation relationships can be used.
+
+126
+00:28:17,259 --> 00:28:18,099
+Okay.
+
+127
+00:28:23,955 --> 00:28:31,935
+Now, by having this inheritance relationship, so what we are achieving is polymorphism.
+
+128
+00:28:32,215 --> 00:28:36,615
+Polymorphism is çeşitlilik. It means çeşitlilik in Turkish.
+
+129
+00:28:37,795 --> 00:28:39,996
+So what does this mean?
+
+130
+00:28:40,875 --> 00:28:44,815
+So let's take a look at this particular example.
+
+131
+00:28:46,016 --> 00:28:51,215
+Now, you see that the parent class person has introduced self-method.
+
+132
+00:28:51,731 --> 00:28:59,112
+And student, employee, and retired are child classes that are extending the person class.
+
+133
+00:28:59,851 --> 00:29:11,152
+And they all have introduced self-methods, which they're overriding the introduced self-methods of the parent class.
+
+134
+00:29:16,660 --> 00:29:32,280
+I already told you that the parent class can be used as the type for the objects of the child classes.
+
+135
+00:29:33,240 --> 00:29:41,100
+Now, let's say that I create an array of person type objects.
+
+136
+00:29:41,844 --> 00:30:04,024
+Right? Person type objects. Now, in that case, an object of the student, can it be, can it have a person type? Yes, because there is a relationship. Object of the employee, can it have person type as the type? Yes. Retired object, it can have the person as the type.
+
+137
+00:30:04,723 --> 00:30:11,423
+Similarly, an object of the person can also, obviously, it will have the type person, right?
+
+138
+00:30:11,884 --> 00:30:24,703
+Now, I create, I just told you that four different objects created from each different class, and I will now use the person as the type for all these objects, okay?
+
+139
+00:30:25,324 --> 00:30:28,303
+Now, let's say I created an array.
+
+140
+00:30:28,980 --> 00:30:37,359
+With the four different objects that I created and I put all these objects into this array.
+
+141
+00:30:39,119 --> 00:30:46,579
+And I call the introduce self method of all these objects in a for loop.
+
+142
+00:30:47,799 --> 00:30:48,059
+Okay.
+
+143
+00:30:48,539 --> 00:30:49,759
+So in that case.
+
+144
+00:30:50,291 --> 00:31:03,851
+Now, when I call the introduce self method of the object that is generated from person class, it will execute this method.
+
+145
+00:31:04,471 --> 00:31:13,251
+When I call the second object, which is an object of student, it will execute this introduce self.
+
+146
+00:31:16,672 --> 00:31:18,372
+It will execute this one.
+
+147
+00:31:18,752 --> 00:31:18,912
+Okay.
+
+148
+00:31:19,192 --> 00:31:22,872
+Similarly, it will execute introduce self of retired object.
+
+149
+00:31:23,532 --> 00:31:28,692
+But for all the objects that we created, the type was person.
+
+150
+00:31:28,692 --> 00:31:29,092
+Right.
+
+151
+00:31:29,552 --> 00:31:36,692
+So even though the type is the same.
+
+152
+00:31:37,119 --> 00:31:39,599
+They all behaved differently.
+
+153
+00:31:40,179 --> 00:31:40,319
+Okay.
+
+154
+00:31:40,779 --> 00:31:52,299
+So by using the inheritance relationship, I can have objects with the same type show different behavior for the same method.
+
+155
+00:31:52,299 --> 00:31:55,479
+That is why we are calling polymorphism, çeşitlilik.
+
+156
+00:31:56,788 --> 00:32:06,988
+Okay, so basically in runtime, I can have different objects show the different behaviors even though their type are the same.
+
+157
+00:32:08,368 --> 00:32:08,648
+Okay.
+
+158
+00:32:10,728 --> 00:32:15,468
+Now, you can also ask this question.
+
+159
+00:32:15,808 --> 00:32:23,608
+So, okay, now if I am in the student, if I have another method in the student class, for example,
+
+160
+00:32:24,339 --> 00:32:33,000
+And for some reason, I also want to use the introduce self methods of the parent class.
+
+161
+00:32:34,079 --> 00:32:42,000
+So introduce self method is also a student class data member method.
+
+162
+00:32:42,932 --> 00:32:49,652
+Okay. If I directly called introduce self method, the Java Virtual Machine will call this method.
+
+163
+00:32:50,211 --> 00:33:00,392
+But for some reason, if I wanted to call the parents introduce self method, there should be a way to access the parents introduce self method.
+
+164
+00:33:00,872 --> 00:33:04,751
+Now, for this, we are using the super keyword.
+
+165
+00:33:10,579 --> 00:33:37,279
+Okay. We are using the super keyword. Now, remember, we used to have this keyword, and this was used in order to access the current objects, member fields, or member methods. Okay. But if I use super keyword, like super.introduce self, in that case, I will access the parents methods, or parents data member fields.
+
+166
+00:33:39,028 --> 00:33:41,347
+Okay, let's now take a look at an example.
+
+167
+00:33:43,567 --> 00:33:49,028
+Now, I told you at the beginning I will show you the inheritance relationship in three different ways.
+
+168
+00:33:49,268 --> 00:33:53,768
+One of them is inheritance with regular classes.
+
+169
+00:33:53,947 --> 00:33:57,347
+The second one is with abstract classes.
+
+170
+00:33:57,508 --> 00:33:59,167
+And the third one is interfaces.
+
+171
+00:34:00,807 --> 00:34:04,748
+Now, I'm showing you the inheritance with the regular classes.
+
+172
+00:34:06,387 --> 00:34:22,068
+Now, here you see I have three, four regular classes, person, employee, manager, and a company class that I am using in order to orchestrate the other classes.
+
+173
+00:34:23,307 --> 00:34:31,068
+Now, in the person class, I have one data member field and two member methods.
+
+174
+00:34:33,748 --> 00:34:37,868
+Okay, one constructor and one getter method.
+
+175
+00:34:38,648 --> 00:34:42,507
+And as you see, employee is extending the person class.
+
+176
+00:34:43,068 --> 00:34:46,387
+Okay, and this is regular class and this is also regular class.
+
+177
+00:34:47,347 --> 00:34:52,148
+And it has one additional, so it has one data member field salary.
+
+178
+00:34:52,967 --> 00:34:59,108
+So remember, it will inherit all the data member fields.
+
+179
+00:34:59,572 --> 00:35:12,452
+From the parent class, which means that even though we don't see the name data member fields, since it is extending the person, employee also have the name member fields.
+
+180
+00:35:12,891 --> 00:35:20,412
+And here you see the employee member methods, you see get salary, set salary.
+
+181
+00:35:20,632 --> 00:35:24,932
+And even though you don't see the get name here, it is.
+
+182
+00:35:27,123 --> 00:35:30,363
+Inheriting this member method from the parent class.
+
+183
+00:35:30,684 --> 00:35:33,184
+And there is another regular class manager.
+
+184
+00:35:33,684 --> 00:35:46,764
+It has one data member field bonus, but it will inherit other data member fields from the parent class salary and salary inherited name data member field.
+
+185
+00:35:46,983 --> 00:35:50,764
+And manager will inherit both data member fields from the employee.
+
+186
+00:35:51,507 --> 00:35:59,967
+And the manager will inherit the data member methods like get set salary.
+
+187
+00:36:01,108 --> 00:36:11,007
+And for get salary, so manager class is overriding the get salary methods in the manager class.
+
+188
+00:36:11,539 --> 00:36:25,720
+Okay. And so obviously here manager is extending employee as well. And there is this company which has a main method which I am using in order to orchestrate the objects of the manager and the employee class.
+
+189
+00:36:25,960 --> 00:36:39,539
+Now let's take a look at the implementation of these classes. Let's start with the person class. You have seen the person class before. So it has one data member field defined as private and one constrictor.
+
+190
+00:36:39,539 --> 00:36:46,659
+constructor, one parameter constructor, and one getter method.
+
+191
+00:36:47,880 --> 00:36:50,679
+And now you see the employee class.
+
+192
+00:36:51,000 --> 00:36:58,420
+Now this time you see an additional keyword that you have not seen before, which is extends.
+
+193
+00:36:58,900 --> 00:37:13,200
+Okay. Now, extends is used with the inheritance relationship. As you see, employee, extends person. So here is my current class and here is the name of the parent class.
+
+194
+00:37:13,200 --> 00:37:22,260
+So therefore, whenever you use an inheritance relationship, in the child class, you have to have the extends keyword.
+
+195
+00:37:24,307 --> 00:37:45,768
+In the class description, okay? Followed by the name of the parent class. And here is my data member field, salary type is integer, and here is a constructor of the employee. And as you see in the constructor, I am calling the constructor of the super class.
+
+196
+00:37:46,739 --> 00:38:04,859
+Okay. Now, if you want to call the constructor of the super class, now we use the super keyword, but this time when we use the super keyword, since we are calling the constructor, after super we open the parentheses and we pass the argument to the constructor.
+
+197
+00:38:05,396 --> 00:38:16,796
+Okay. Now, this allows us, when we create an object of the employee, so this allows us to also execute the parents class constructor.
+
+198
+00:38:17,556 --> 00:38:25,115
+Okay. Now, remember what we used to do in the constructor, we used to initialize all the data member fields.
+
+199
+00:38:25,115 --> 00:38:31,976
+That was the reason that we were using the constructor here by calling the super.
+
+200
+00:38:33,268 --> 00:38:51,907
+superclass constructor. So we initialize the data member field of the parent class. Now we need to initialize the data member field of current class. So I assigned the value to the salary. And there is this get salary method and the set salary method.
+
+201
+00:38:54,675 --> 00:38:57,975
+Now, take a look at the manager class.
+
+202
+00:38:58,395 --> 00:39:01,275
+And this time, manager class extends employee.
+
+203
+00:39:02,036 --> 00:39:02,195
+Okay.
+
+204
+00:39:02,695 --> 00:39:04,536
+In manager class extends employee.
+
+205
+00:39:04,975 --> 00:39:10,355
+And it has one global member field bonus where the type is integer.
+
+206
+00:39:11,456 --> 00:39:18,135
+And as you see here, so in the constructor, I am calling the constructor of the parent class.
+
+207
+00:39:18,855 --> 00:39:19,135
+Okay.
+
+208
+00:39:19,135 --> 00:39:19,815
+Now.
+
+209
+00:39:20,371 --> 00:39:24,931
+So, obviously, the manager class only knows its parent.
+
+210
+00:39:26,091 --> 00:39:26,411
+Okay?
+
+211
+00:39:26,531 --> 00:39:28,251
+It does not know the person.
+
+212
+00:39:28,724 --> 00:39:49,064
+Class, okay? And the employee only knows the person, okay? So therefore, from the manager class perspective, it will extend the employee class, so which will all, which will have features of both employee and the person, but the manager perspective, it will only know the employee class.
+
+213
+00:39:50,835 --> 00:40:00,536
+So, therefore, the manager calls the superclass constructor, which is employee's constructor, two-parameter constructor, as you see.
+
+214
+00:40:00,536 --> 00:40:01,135
+Okay.
+
+215
+00:40:03,860 --> 00:40:16,159
+And also, so by doing that, it will initialize the constructor, the data member fields of the coming from the parent class.
+
+216
+00:40:16,159 --> 00:40:22,320
+And now, so here we are initializing the current classes data member fields.
+
+217
+00:40:22,780 --> 00:40:27,159
+And then we have a setter method for bonus.
+
+218
+00:40:27,764 --> 00:40:30,144
+And a getter method, or salary.
+
+219
+00:40:30,623 --> 00:40:34,724
+So remember, we used to have a get salary method for the employee.
+
+220
+00:40:35,163 --> 00:40:40,944
+Now what we are doing is that we are overriding, okay, in the manager class.
+
+221
+00:40:40,944 --> 00:40:53,444
+So which means that if I would create an object of the manager class, and if I would call the get salary method, this method would be executed, okay?
+
+222
+00:40:56,019 --> 00:41:00,600
+Now, so as you see, so I'm calling the getCelary method.
+
+223
+00:41:01,140 --> 00:41:06,579
+In the getCelary, I'm calling the super class parents getCelary method.
+
+224
+00:41:07,079 --> 00:41:13,840
+And plus, I'm adding the bonus, which is the global member field of this current class.
+
+225
+00:41:14,720 --> 00:41:15,300
+Okay.
+
+226
+00:41:16,640 --> 00:41:19,380
+Now, you can only use super keyword once.
+
+227
+00:41:19,659 --> 00:41:23,180
+There is no such a thing like super does super.
+
+228
+00:41:24,052 --> 00:41:26,231
+Okay, you need to pay attention to that.
+
+229
+00:41:29,907 --> 00:41:36,887
+Now let's take a look at the company class, which was here in the UML diagram.
+
+230
+00:41:37,367 --> 00:41:42,327
+And let's see how we are, so what is the main method and what we are doing with it.
+
+231
+00:41:43,087 --> 00:41:56,188
+Okay, now in the main method, as you see, first I'm creating an array of employee where the size is three.
+
+232
+00:41:57,780 --> 00:42:09,180
+Okay. Now, after that, I'm assigning the address of this array location to this variable where the type is employee array.
+
+233
+00:42:09,180 --> 00:42:19,000
+Okay. Now, this variable now is pointing to this array location in the physical memory. Okay.
+
+234
+00:42:20,980 --> 00:42:36,819
+Now, since I know that there is a relationship, if I create an employee array, I can not only put employee objects in this array, I can also put manager objects in this array.
+
+235
+00:42:36,819 --> 00:42:48,219
+Okay, because remember, parent class can be used wherever there is an object of the child class.
+
+236
+00:42:51,155 --> 00:42:54,755
+Okay, now I'm creating an object of the child class.
+
+237
+00:42:54,895 --> 00:42:57,235
+Here I created an object of the child class.
+
+238
+00:42:57,355 --> 00:42:58,635
+I passed two parameters.
+
+239
+00:43:00,215 --> 00:43:03,975
+So one is the name and the other one is the bonus value.
+
+240
+00:43:03,975 --> 00:43:09,215
+And I assign the address to this object to this variable where the type is manager.
+
+241
+00:43:10,635 --> 00:43:11,235
+Okay.
+
+242
+00:43:11,755 --> 00:43:12,876
+Now then.
+
+243
+00:43:13,311 --> 00:43:21,511
+Since this is pointing to the new manager, the object that I just created, and then I am setting the bonus value.
+
+244
+00:43:24,755 --> 00:43:43,155
+To this, okay? I think this is salary. When I call the constructor, the first thing is the name, and the second thing is the salary. Now, I'm calling the set bonus method, and I'm also setting the bonus for this manager object.
+
+245
+00:43:44,628 --> 00:43:51,068
+Okay, now this variable is pointing to this manager object that I just created.
+
+246
+00:43:51,068 --> 00:43:58,268
+Now I am assigning the value in this variable to the first cell of this array.
+
+247
+00:43:58,748 --> 00:43:59,748
+So what was this?
+
+248
+00:44:00,228 --> 00:44:02,307
+So when I first created this array,
+
+249
+00:44:02,739 --> 00:44:06,059
+Each cell of this array was empty.
+
+250
+00:44:06,719 --> 00:44:12,539
+I created the array, but each cell in the array was empty.
+
+251
+00:44:12,539 --> 00:44:13,920
+There was null value.
+
+252
+00:44:14,659 --> 00:44:19,359
+Now, I am assigning an object to the first cell.
+
+253
+00:44:20,339 --> 00:44:25,019
+Okay, now the first cell is pointing to this newly created object.
+
+254
+00:44:25,588 --> 00:44:40,887
+So even though the type of the object, so even though this is a manager object, since there is a relationship in inheritance relationship, I can use employee as its type also.
+
+255
+00:44:40,887 --> 00:44:49,128
+So therefore, I can assign this object to the first cell of this array where the type of the array is employee.
+
+256
+00:44:51,251 --> 00:44:59,551
+Now, so one line after that, what I'm doing is that I'm now creating an employee object.
+
+257
+00:45:00,171 --> 00:45:08,211
+So now, the first I created a manager object, I assigned the first cell of the array.
+
+258
+00:45:08,551 --> 00:45:10,791
+Now I'm creating the employee object.
+
+259
+00:45:12,659 --> 00:45:15,719
+And then I created another employee object as well.
+
+260
+00:45:16,039 --> 00:45:19,879
+I assigned these objects to the second and the third cell of the array.
+
+261
+00:45:20,719 --> 00:45:25,479
+And after that, I am doing a for each loop on this array.
+
+262
+00:45:26,079 --> 00:45:28,159
+So remember the for each loop.
+
+263
+00:45:28,799 --> 00:45:37,439
+And in each loop, what Java Virtual Machine is going to do, it's going to take the first cell from this array and assign to this local variable.
+
+264
+00:45:39,092 --> 00:45:42,211
+And then it will execute the content of the forum.
+
+265
+00:45:43,912 --> 00:45:44,112
+Okay.
+
+266
+00:45:44,572 --> 00:45:52,572
+Now, so I will call the getName method and the getCelary method of the object that is inside in each cell.
+
+267
+00:45:53,268 --> 00:45:58,408
+Now, the first one was the manager object, the second, and the third one was the employee object.
+
+268
+00:45:58,408 --> 00:45:59,108
+Okay.
+
+269
+00:45:59,448 --> 00:46:13,467
+And when I call the getCelary method, so remember the getCelary method has manager object also has the getCelary method, and also employee object also has the getCelary method.
+
+270
+00:46:14,128 --> 00:46:21,268
+So when I call the first object, it will execute the manager classes getCelary method.
+
+271
+00:46:21,268 --> 00:46:30,948
+When I call the employee objects, in that case, it will execute the get salary method of the employee class.
+
+272
+00:46:31,688 --> 00:46:31,907
+Okay.
+
+273
+00:46:32,108 --> 00:46:34,768
+So this is why we are calling the polymorphism.
+
+274
+00:46:34,768 --> 00:46:42,768
+We are actually having, we are showing the different behavior for the same type objects.
+
+275
+00:46:43,628 --> 00:46:44,768
+That's why it is called polymorphism.
+
+276
+00:46:45,528 --> 00:46:46,968
+That's why it is called CESH Didik.
+
+277
+00:46:55,443 --> 00:47:00,523
+Now, let's take a look at the sequence diagram for the main method.
+
+278
+00:47:01,103 --> 00:47:04,784
+So, obviously, Java Virtual Machine is calling the main method.
+
+279
+00:47:05,284 --> 00:47:09,364
+Only the Java programs that has the main method are executable.
+
+280
+00:47:09,903 --> 00:47:17,023
+Java Virtual Machine, when you first call the company class, it will execute the main method.
+
+281
+00:47:17,223 --> 00:47:18,764
+Now, in the main method,
+
+282
+00:47:20,244 --> 00:47:28,784
+So what we are doing is that first we are creating an employee type array where the size is 3.
+
+283
+00:47:29,644 --> 00:47:34,584
+And then next we are creating then an object of the manager class.
+
+284
+00:47:35,584 --> 00:47:40,484
+And then we are setting the bonus value for this manager class.
+
+285
+00:47:41,139 --> 00:47:48,799
+And then we are adding that manager object into the first cell of Array.
+
+286
+00:47:48,960 --> 00:47:50,839
+We are assigning it, I should say.
+
+287
+00:47:50,839 --> 00:47:51,519
+Okay.
+
+288
+00:47:52,219 --> 00:48:04,059
+So this syntax is telling us that we are assigning the first object to the first cell of the Array.
+
+289
+00:48:04,299 --> 00:48:06,299
+Then we are creating another object.
+
+290
+00:48:08,659 --> 00:48:11,559
+And then we are adding this object into the second cell.
+
+291
+00:48:11,679 --> 00:48:13,259
+And then we are creating another object.
+
+292
+00:48:13,259 --> 00:48:16,500
+We are adding this object to the third cell.
+
+293
+00:48:16,799 --> 00:48:21,239
+And then we are calling the getName and getCelary within a for each loop.
+
+294
+00:48:21,519 --> 00:48:28,139
+Now pay attention to the star sign in front of the methods.
+
+295
+00:48:30,219 --> 00:48:36,559
+Now that star means that we are calling the getName and getCelary several times.
+
+296
+00:48:36,659 --> 00:48:38,039
+Within a for each loop.
+
+297
+00:48:38,360 --> 00:48:38,579
+Okay.
+
+298
+00:48:38,920 --> 00:48:48,019
+So therefore you need to pay attention and you need to remember this syntax when we call methods within a for loop.
+
+299
+00:48:48,019 --> 00:48:54,779
+And you need to also remember when we assign an object to the cell of an array.
+
+300
+00:48:55,159 --> 00:48:59,480
+So this is how we are showing the syntax in the sequence diagram.
+
+301
+00:49:04,083 --> 00:49:06,764
+Okay. Any questions so far?
+
+302
+00:49:13,268 --> 00:49:33,468
+Okay, no questions. Moving forward. Now, you see the overloading and overriding. So, I already told you that if you have multiple methods having the same name but with different parameters, like with different signatures, in that case, what we are doing is we are overloading that method.
+
+303
+00:49:34,516 --> 00:49:52,296
+And if you have a method that is the same name and the signature, just like the super class method, in that case, we are overriding the super class method.
+
+304
+00:49:52,296 --> 00:49:57,036
+Okay. And you can do the overriding only with the inheritance relationship.
+
+305
+00:50:01,715 --> 00:50:02,195
+Ok?
+
+306
+00:50:06,420 --> 00:50:12,760
+Now, so let's take a look at the use of inheritance relationship.
+
+307
+00:50:12,960 --> 00:50:18,519
+Now, first, I will show you the wrong way of using the inheritance relationship.
+
+308
+00:50:18,679 --> 00:50:23,019
+Then I will show you the correct way to show the inheritance relationship.
+
+309
+00:50:23,019 --> 00:50:30,619
+Okay, now let's say that we have a problem.
+
+310
+00:50:30,920 --> 00:50:31,639
+In this problem,
+
+311
+00:50:32,016 --> 00:50:39,576
+We need to keep track of the patient names, ID numbers, birthdays, cell numbers.
+
+312
+00:50:39,835 --> 00:50:42,675
+Okay, we need to keep track of the patients.
+
+313
+00:50:44,056 --> 00:50:51,275
+And obviously, the ID numbers, birthdays, cell numbers, this information can be kept for the doctors too.
+
+314
+00:50:51,275 --> 00:50:57,275
+This means that not only for the patients, but also for the doctors, I need to keep this information.
+
+315
+00:50:59,027 --> 00:51:03,847
+In addition, it is required to keep the diploma numbers of the doctors.
+
+316
+00:51:03,847 --> 00:51:11,367
+So, which means that for the doctors, I will have some additional information that I need to keep.
+
+317
+00:51:13,047 --> 00:51:18,527
+And also, we should keep records of treatments applied to a patient too.
+
+318
+00:51:18,527 --> 00:51:21,527
+So, which means that patients should have...
+
+319
+00:51:21,907 --> 00:51:27,327
+And some special information that they need to keep as well.
+
+320
+00:51:27,927 --> 00:51:28,187
+Okay.
+
+321
+00:51:28,187 --> 00:51:36,187
+Now, by reading this, you understand that there is a generalization and specialization relationship.
+
+322
+00:51:37,347 --> 00:51:43,887
+Some classes have some additional requirements, some specialization, while some classes don't.
+
+323
+00:51:45,523 --> 00:51:49,963
+Okay, now let's take a look at this UML design.
+
+324
+00:51:50,683 --> 00:51:56,803
+In this particular design, so the doctor class is extending the patient class.
+
+325
+00:51:58,223 --> 00:52:02,363
+And patient, one patient has more than one treatment.
+
+326
+00:52:02,931 --> 00:52:09,811
+Now, if you look at the relationship between these two, that is correct, okay?
+
+327
+00:52:10,192 --> 00:52:13,831
+Because one patient may have zero or more treatments.
+
+328
+00:52:14,431 --> 00:52:25,291
+But if you look at this relationship, this inheritance relationship, this is wrong because a doctor is not a patient.
+
+329
+00:52:26,003 --> 00:52:35,403
+Okay, so the doctor is not a patient. Therefore, so this cannot be the correct inheritance relationship. But take a look at this one.
+
+330
+00:52:37,235 --> 00:53:05,175
+Now, the doctor is a person, right? And the patient is a person. Now, there is an inheritance relationship, and this is a correct inheritance relationship, okay? And name, ID, cell number, birthday, this information is being, it should be kept by the doctor and the patient as well, okay? So, as you see, the child classes will inherit all the data.
+
+331
+00:53:05,235 --> 00:53:17,235
+member fields. So therefore, this is also correct. And if you look at this, a patient may have zero or more treatments. That is also correct. Okay, this is...
+
+332
+00:53:19,635 --> 00:53:22,315
+Composition relationship, which is also correct.
+
+333
+00:53:22,956 --> 00:53:28,235
+So therefore, this is a correct inheritance relationship modeling.
+
+334
+00:53:28,775 --> 00:53:28,895
+Okay.
+
+335
+00:53:29,195 --> 00:53:34,335
+So therefore, whenever you see a UML diagram where you see the inheritance relationship,
+
+336
+00:53:34,496 --> 00:53:39,916
+you should ask whether there is a relationship between the child class and the parent class.
+
+337
+00:53:40,476 --> 00:53:46,096
+If not, then that is a wrong inheritance relationship.
+
+338
+00:53:50,324 --> 00:53:50,804
+Okay.
+
+339
+00:53:52,563 --> 00:54:12,083
+Now, in Java, all the classes are extending by default a cosmic superclass, which is a Java.long object, which means that all classes are extending this Java.long object.
+
+340
+00:54:12,083 --> 00:54:16,784
+So, this is implicit superclass of all classes.
+
+341
+00:54:17,268 --> 00:54:30,608
+Okay, so we don't explicitly show that the classes are extending the object class, but it is implicitly known by Java Virtual Machine that this is the superclass of all the other classes.
+
+342
+00:54:35,284 --> 00:54:54,923
+Okay. And so this class has a two string method. Okay. And so we can call the two string method in any class that we have. And we can override the two string method of the object class.
+
+343
+00:54:55,311 --> 00:55:22,632
+Okay. The two-string method can be used, for example, we used introduce self method. This was our own method in order to write something about the car objects. But instead of using the introduce self method, we could just write, use the two-string, which is a method of the Java.lang object class. And we could write everything that we wrote in introduce self method into the two-string method.
+
+344
+00:55:26,387 --> 00:55:37,687
+Okay, now this was, I mean, the inheritance relationship that I have shown you so far is done by using the regular classes.
+
+345
+00:55:39,103 --> 00:55:47,843
+Now, I'm going to start explaining to you the inheritance relationship with another way by using abstract classes.
+
+346
+00:55:47,843 --> 00:55:53,463
+Okay. Abstract class is something, a kind of class that you haven't seen so far.
+
+347
+00:55:53,743 --> 00:55:57,243
+You have seen the regular classes all the time.
+
+348
+00:55:57,343 --> 00:55:59,223
+Now you will see the abstract classes.
+
+349
+00:55:59,443 --> 00:56:04,123
+But let's give 10 minute break and then we'll start with the abstract classes.
+
+350
+00:56:04,947 --> 00:56:08,827
+10 dakika ara verelim arkadaşlar. Ondan sonra da devam edeceğiz.
+
+351
+01:06:30,387 --> 01:06:36,748
+Ok, let's continue. Arkadaşlar, sesim geliyor mu? Bir teyit eder misiniz tekrardan?
+
+352
+01:06:38,708 --> 01:06:39,327
+Geliyorum bir şey.
+
+353
+01:06:39,907 --> 01:06:40,128
+Tamam.
+
+354
+01:06:41,927 --> 01:06:49,347
+Ok, now, I'm going to talk about another way of doing the inheritance relationship.
+
+355
+01:06:49,748 --> 01:06:52,827
+And this time, we are going to do it with the abstract classes.
+
+356
+01:06:54,008 --> 01:06:54,208
+Ok.
+
+357
+01:06:55,208 --> 01:06:57,387
+Now, so remember...
+
+358
+01:06:58,356 --> 01:07:14,476
+Inheritance relationship is a generalization and specialization relationship, which means that in the superclass, we have the generalized classes, and in the child classes, we have specialized classes.
+
+359
+01:07:24,947 --> 01:07:39,427
+Some of the methods that belong to the parent class are so generalized methods so they won't be used for any reason.
+
+360
+01:07:40,867 --> 01:07:41,047
+Okay.
+
+361
+01:07:41,347 --> 01:07:50,487
+So in that case, you can say if this is a case, why do we have to have the method body of those methods?
+
+362
+01:07:51,956 --> 01:07:59,396
+So, for instance, let's say, let's look at this example.
+
+363
+01:08:00,356 --> 01:08:08,616
+So, the print driver is the superclass, PCL6 driver is the child class.
+
+364
+01:08:09,336 --> 01:08:15,416
+Now, in this particular case, the parent class print method
+
+365
+01:08:16,340 --> 01:08:20,000
+It's so specialized, it's so generalized method.
+
+366
+01:08:21,620 --> 01:08:32,319
+So it is, so we don't have a specific code that we can write for that method.
+
+367
+01:08:32,319 --> 01:08:33,039
+Okay.
+
+368
+01:08:33,360 --> 01:08:43,819
+There is, there is no case in which we can create an instance of the print driver method and call that print method.
+
+369
+01:08:44,724 --> 01:09:07,504
+Okay, so if this is the case, then we are saying that if we have methods like this, they are so generalized, and we don't have a specific code that we can write for those generalized methods, in that case, we define the class, the superclass, as an abstract class.
+
+370
+01:09:10,644 --> 01:09:23,384
+A class as an abstract class, in that case, you can also define some of the methods or all of its methods as abstract methods as well.
+
+371
+01:09:24,424 --> 01:09:32,203
+If the class is defined as an abstract class, you can also define its methods as abstract methods.
+
+372
+01:09:33,971 --> 01:09:43,691
+If you define a method as an abstract method, in that case, you don't have to write the method body for that method.
+
+373
+01:09:45,051 --> 01:09:45,851
+Okay.
+
+374
+01:09:46,451 --> 01:09:58,691
+And if you define a method as an abstract method, in that case, you are saying the child classes that any child class that extend this abstract class.
+
+375
+01:10:00,000 --> 01:10:11,939
+We'll have to, must have the same name, class, method in their method body, in their member methods.
+
+376
+01:10:12,359 --> 01:10:22,460
+So which means that if I have one abstract method here, the both child classes, they must have the same name method as a regular method.
+
+377
+01:10:22,460 --> 01:10:23,139
+Okay.
+
+378
+01:10:31,988 --> 01:10:38,568
+And the abstract classes, therefore, is also usually called as template classes.
+
+379
+01:10:38,748 --> 01:10:44,788
+It's a template that tells the subclasses, okay, these are the methods that you need to have, okay?
+
+380
+01:10:44,788 --> 01:10:44,888
+Okay.
+
+381
+01:10:46,808 --> 01:10:47,408
+And.
+
+382
+01:10:47,891 --> 01:10:52,832
+So far, we have seen always the regular classes in the superclass.
+
+383
+01:10:53,332 --> 01:10:58,271
+And in the regular classes, remember all the methods that we had, the method bodies.
+
+384
+01:10:58,271 --> 01:11:07,271
+Now, if we define the superclass as the abstract class, in that case, we don't have to define the methods as the...
+
+385
+01:11:08,511 --> 01:11:14,471
+We don't have to write the method body of those methods that belong to the abstract class.
+
+386
+01:11:15,220 --> 01:11:19,020
+But in that case, those methods also need to be defined as abstract.
+
+387
+01:11:21,340 --> 01:11:31,280
+Now, if you define a superclass as an abstract class, in that case, so you cannot create an object of the abstract class.
+
+388
+01:11:32,640 --> 01:11:33,319
+Okay.
+
+389
+01:11:34,707 --> 01:11:48,627
+But you can create instances of the concrete classes of abstract class, which means that from abstract class, so we are extending abstract class and creating the regular classes, right?
+
+390
+01:11:48,627 --> 01:11:59,207
+And you can create objects of those child classes, but you cannot create an instance of the abstract class.
+
+391
+01:12:03,667 --> 01:12:07,967
+Abstract classes can have both concrete and abstract member methods.
+
+392
+01:12:08,247 --> 01:12:17,028
+So remember, I told you that so you can define some of the methods as abstract methods, some of the methods you can have the regular methods.
+
+393
+01:12:17,347 --> 01:12:28,047
+If you know so what kind of code that you can write for those methods, so you can also write those methods as regular methods in the abstract class.
+
+394
+01:12:28,884 --> 01:12:40,463
+If you don't know what you need to put into those methods, in that case, you not define those methods as abstract methods in the abstract class.
+
+395
+01:12:42,623 --> 01:12:51,523
+Now, we use the abstract keyword in the abstract classes and also abstract keyword in the method definition.
+
+396
+01:12:52,603 --> 01:12:52,763
+Okay.
+
+397
+01:12:56,595 --> 01:13:18,036
+And so why do we need the abstract classes? I told you there is this specialization and generalization relationship. There are some cases where in the generalized class, there is no point of having that, having a method body for that particular method.
+
+398
+01:13:18,515 --> 01:13:20,995
+Just like the example that I have shown you.
+
+399
+01:13:21,495 --> 01:13:32,735
+So this print method, so this is so generalized method, so there is nothing that you can put into this print method that makes sense.
+
+400
+01:13:33,136 --> 01:13:46,615
+So therefore, you must have this method because it tells the child classes that they must have the print method, which will overwrite this abstract method.
+
+401
+01:13:48,716 --> 01:14:00,396
+But so in order to avoid having a method body for this print method, you need to define this class as abstract class and you need to define this method as an abstract method.
+
+402
+01:14:02,676 --> 01:14:20,996
+Okay. And in the UML diagram, when we define a class as an abstract class, on top of it, we write abstract. Okay. The rest of it is the same. Okay. And when you define a method as an abstract method, the syntax is like this.
+
+403
+01:14:25,524 --> 01:14:25,924
+Okay.
+
+404
+01:14:28,344 --> 01:14:31,224
+Now let's take a look at the code.
+
+405
+01:14:32,644 --> 01:14:37,644
+And here is the superclass, which I defined as abstract class.
+
+406
+01:14:37,764 --> 01:14:43,224
+As you see, right before the class keyword, I have the abstract keyword.
+
+407
+01:14:44,659 --> 01:14:53,299
+So when you define a class as an abstract, it has to come, abstract keyword has to be in the class definition.
+
+408
+01:14:54,760 --> 01:14:58,719
+And here you see a regular method.
+
+409
+01:14:59,379 --> 01:15:03,000
+If this is a regular method, then you need to have a method body.
+
+410
+01:15:03,299 --> 01:15:07,579
+And you see in the curly parentheses, I have a method body for this regular method.
+
+411
+01:15:08,659 --> 01:15:23,460
+And if you have an abstract method and you need to have the keyword abstract within the method definition right before the name of the method.
+
+412
+01:15:23,460 --> 01:15:24,340
+Okay.
+
+413
+01:15:25,908 --> 01:15:31,427
+So right before actually the return value of this method.
+
+414
+01:15:31,768 --> 01:15:34,968
+So if this could be an integer or boolean.
+
+415
+01:15:35,167 --> 01:15:39,327
+So if this is void because it doesn't return anything right before it.
+
+416
+01:15:39,327 --> 01:15:41,628
+So I need to have the abstract keyword.
+
+417
+01:15:42,728 --> 01:15:48,728
+And as you see, since I defined this method as an abstract method, I don't have any method body here.
+
+418
+01:15:48,847 --> 01:15:50,827
+There is no curly parentheses, as you see.
+
+419
+01:15:51,988 --> 01:15:58,667
+Now, the second class is a regular class, which extends the parent class.
+
+420
+01:15:58,667 --> 01:16:09,087
+The remainder part for inheritance relationship is the same as the regular classes.
+
+421
+01:16:10,003 --> 01:16:12,144
+It extends the parent class.
+
+422
+01:16:12,144 --> 01:16:28,543
+And this time, since this class, this regular class is extending an abstract class, it must have any abstractly defined method in its method body.
+
+423
+01:16:29,011 --> 01:16:34,252
+Okay, now this is the print method is defined as an abstract method.
+
+424
+01:16:34,691 --> 01:16:40,011
+So therefore, this regular class, which extends this abstract class must have the print method.
+
+425
+01:16:40,332 --> 01:16:40,471
+Okay.
+
+426
+01:16:41,931 --> 01:16:48,711
+And since it, so it overwrites the print method, which is defined as abstract.
+
+427
+01:16:48,971 --> 01:16:51,931
+Of course, this is in a regular method.
+
+428
+01:16:52,072 --> 01:16:54,711
+Therefore, it must have the method body as well.
+
+429
+01:16:58,515 --> 01:16:58,915
+Okay.
+
+430
+01:17:02,595 --> 01:17:08,975
+Now, when we create an inheritance relationship, so we need to pay attention to one thing.
+
+431
+01:17:12,055 --> 01:17:17,855
+There is this what's called diamond inheritance problem.
+
+432
+01:17:18,536 --> 01:17:21,135
+Now, let's take a look at this example here.
+
+433
+01:17:22,292 --> 01:17:30,572
+Now, let's say person class, right? Person class is the parent class, student and the employee class are extending the person class.
+
+434
+01:17:31,811 --> 01:17:40,532
+And let's say a person has introduced self method and student has introduced self method, which is overriding the person's introduced self.
+
+435
+01:17:41,352 --> 01:17:45,592
+Employee has introduced self method, which is overriding the person's introduced self.
+
+436
+01:17:48,787 --> 01:17:56,448
+I wanted to have a child class which has two parents, right?
+
+437
+01:17:56,448 --> 01:18:06,768
+So I wanted to have a child class that will inherit some properties or member fields from one class and some member fields from another class.
+
+438
+01:18:08,916 --> 01:18:21,695
+If this was allowed, if this was allowed, this is not correct, obviously, but if this was allowed, in that case, let's say if I wanted to call super.introduceSelf.
+
+439
+01:18:22,816 --> 01:18:29,256
+Now, this is super class for this one. This is super class for this one. And they both have the introduceSelf method.
+
+440
+01:18:30,056 --> 01:18:34,176
+Now, if I wanted to call the super.introduceSelf, in that case,
+
+441
+01:18:34,644 --> 01:18:44,644
+How Java Virtual Machine will know which superclass object it will use in order to execute the introduce self method.
+
+442
+01:18:45,444 --> 01:18:51,724
+So therefore, in inheritance relationship, you can have only one parent.
+
+443
+01:18:53,779 --> 01:19:08,639
+Okay, so, and the reason for this is, is if you, if you allow a multiple inheritance, in that case, you might end up with the diamond problem. Diamond inheritance problem is just like this.
+
+444
+01:19:08,975 --> 01:19:22,895
+So therefore, in object-oriented programming languages like Java, C Sharp, and any other object-oriented programming language, multiple inheritance is not allowed.
+
+445
+01:19:22,895 --> 01:19:33,695
+Instead, we are using interfaces. We are using interfaces in order to create inheritance relationship.
+
+446
+01:19:36,372 --> 01:19:45,551
+Okay, now let's take a look at an example code by using the abstract class.
+
+447
+01:19:50,868 --> 01:19:51,347
+Okay.
+
+448
+01:19:52,068 --> 01:20:02,748
+So first of all, let's take a look at carefully to this UML design, and then we will go to the codes.
+
+449
+01:20:04,028 --> 01:20:08,608
+Here you see an abstract class called item.
+
+450
+01:20:08,968 --> 01:20:15,908
+It has two data member fields, barcode and description, and their both types are string.
+
+451
+01:20:17,328 --> 01:20:17,568
+Okay.
+
+452
+01:20:18,484 --> 01:20:27,744
+And it has one constructor, and the constructor has two parameter constructor, and they both have the type string.
+
+453
+01:20:28,623 --> 01:20:34,024
+And it has getter methods for barcode and description, member fields.
+
+454
+01:20:34,804 --> 01:20:38,844
+And also it has an abstract method called isSuitable.
+
+455
+01:20:39,764 --> 01:20:42,264
+Okay, how do I know that it is abstract?
+
+456
+01:20:42,504 --> 01:20:45,764
+So as you see in the UML diagram, it is defined as an abstract.
+
+457
+01:20:46,283 --> 01:20:47,764
+And the return value is Boolean.
+
+458
+01:20:49,264 --> 01:20:56,943
+Now, as you see, I have two classes that are extending this abstract class, toy and clothing.
+
+459
+01:20:58,579 --> 01:21:00,800
+Now, this is an inheritance relationship.
+
+460
+01:21:00,960 --> 01:21:02,960
+You can see that there is a relationship.
+
+461
+01:21:03,219 --> 01:21:04,340
+Toy is an item.
+
+462
+01:21:04,600 --> 01:21:05,639
+Clothing is an item.
+
+463
+01:21:05,639 --> 01:21:10,180
+So it's a perfect inheritance relationship.
+
+464
+01:21:10,940 --> 01:21:16,880
+But this time, since the superclass is an abstract class and there is an abstract method,
+
+465
+01:21:17,199 --> 01:21:22,340
+then the regular classes that extends the abstract class must have a suitable method.
+
+466
+01:21:23,100 --> 01:21:25,300
+They both must have a suitable method.
+
+467
+01:21:25,908 --> 01:21:26,368
+Okay.
+
+468
+01:21:28,128 --> 01:21:38,628
+Now, you also see that the item class is dependent on the child class.
+
+469
+01:21:38,808 --> 01:21:39,768
+Why do I say that?
+
+470
+01:21:39,828 --> 01:21:42,368
+Because you see that there is a dependency relationship.
+
+471
+01:21:43,667 --> 01:21:46,987
+And how do I know that there is a dependency relationship?
+
+472
+01:21:47,307 --> 01:21:54,467
+The second class is being mentioned in the method body segments of the item class.
+
+473
+01:21:54,907 --> 01:22:03,867
+If it was mentioned in the data member field section, then I could change this to an ownership relationship.
+
+474
+01:22:04,047 --> 01:22:08,647
+But it is being mentioned in the method body, in one of the method bodies.
+
+475
+01:22:08,807 --> 01:22:10,947
+Therefore, there is a dependency relationship.
+
+476
+01:22:13,619 --> 01:22:34,619
+Okay. And you see there is another class kindergarten. And this one has two methods, add child and find oldest child methods. Obviously, so you see that in kindergarten, you might have zero or more child. And so obviously...
+
+477
+01:22:34,863 --> 01:22:52,323
+So, and I have toys and clothing and apparently there is this suitable method and in my code I will somehow find out whether a toy or clothing is suitable for a child.
+
+478
+01:22:52,756 --> 01:23:02,536
+Okay. Now, I just read the UML diagram before I started writing my code. Now I can take a look at the code.
+
+479
+01:23:04,036 --> 01:23:12,676
+Now let's start with the item class. Now the item class is defined as abstract, therefore I have the abstract keyword.
+
+480
+01:23:14,131 --> 01:23:18,891
+And you can take a look at the data member fields.
+
+481
+01:23:19,111 --> 01:23:20,652
+I have barcode and description.
+
+482
+01:23:20,851 --> 01:23:22,371
+They both have the string type.
+
+483
+01:23:24,291 --> 01:23:31,211
+And I have a two parameter constructor item constructor.
+
+484
+01:23:32,307 --> 01:23:35,968
+And I have getter methods for the two data member fields.
+
+485
+01:23:36,087 --> 01:23:37,568
+Now, this is an abstract class.
+
+486
+01:23:37,688 --> 01:23:42,167
+It can have a regular methods and as well as the abstract method.
+
+487
+01:23:42,167 --> 01:23:50,268
+And here, as you have seen in the UML diagram, I have is suitable method is defined as an abstract method.
+
+488
+01:23:52,887 --> 01:23:53,568
+Okay.
+
+489
+01:23:54,327 --> 01:23:59,208
+Now, since it is abstract method and there is no method by the way.
+
+490
+01:24:00,180 --> 01:24:05,319
+Now, let's take a look at the item method that extends the clothing method.
+
+491
+01:24:06,980 --> 01:24:11,319
+Let's take a look at the clothing class, which extends the item class.
+
+492
+01:24:11,860 --> 01:24:12,140
+Okay.
+
+493
+01:24:12,500 --> 01:24:20,739
+Item was an abstract class, and now I have a regular method, clothing, regular class, clothing class, which extends the item.
+
+494
+01:24:21,779 --> 01:24:27,139
+Now, in the clothing class, I have two member fields, min-max limit and max-month limit.
+
+495
+01:24:28,920 --> 01:24:31,139
+And I have a...
+
+496
+01:24:33,140 --> 01:24:36,620
+Constructor, which has four parameter constructor.
+
+497
+01:24:36,960 --> 01:24:45,560
+In the constructor, as you see, the first line, in the first line, what I do is that I am calling the superclass constructor.
+
+498
+01:24:45,739 --> 01:24:49,520
+So what was the superclass constructor? This one. Barcode and description.
+
+499
+01:24:50,360 --> 01:24:55,680
+Okay. And then I am setting the values to the global member fields.
+
+500
+01:24:56,159 --> 01:24:59,620
+Okay. So remember, the purpose of the constructor is to...
+
+501
+01:25:00,115 --> 01:25:02,896
+Initialize the global member fields, always.
+
+502
+01:25:04,515 --> 01:25:07,296
+And then I have is suitable method.
+
+503
+01:25:07,416 --> 01:25:09,036
+Why do I have the is suitable method?
+
+504
+01:25:09,036 --> 01:25:18,076
+Because in the abstract method, which is, so there is, in the abstract class, we have this is suitable method defined as an abstract method.
+
+505
+01:25:20,916 --> 01:25:34,056
+Okay. Now, if you take a look at it, and so with this method, so what we are trying to do, we are getting the child age in months.
+
+506
+01:25:34,596 --> 01:25:48,355
+So as you see there, so apparently this child class, which we haven't seen so far, but we will get to it, as a get age in months method, it will give me the age in month.
+
+507
+01:25:49,716 --> 01:26:00,596
+And I will check whether it is above and equal to minimum month limit for this toy and less than maximum month limit for this toy.
+
+508
+01:26:00,596 --> 01:26:04,476
+If yes, it will return true. Otherwise, it will return false.
+
+509
+01:26:04,936 --> 01:26:09,876
+Basically, whenever this method is called for the clothing object,
+
+510
+01:26:10,260 --> 01:26:19,579
+In that case, we will check whether that clothing item or object is suitable for this particular child.
+
+511
+01:26:22,200 --> 01:26:29,860
+Now, let's take a look at the other regular class which extends the item class, toy.
+
+512
+01:26:30,520 --> 01:26:35,020
+It has one global member field, and this has mean age limit.
+
+513
+01:26:36,692 --> 01:26:38,832
+And it has three parameter constructor.
+
+514
+01:26:39,211 --> 01:26:44,051
+And as you see in the first line of the constructor, I'm calling the constructor of the parent class.
+
+515
+01:26:44,051 --> 01:26:50,092
+In the second line, I am initializing the global member field.
+
+516
+01:26:51,072 --> 01:26:54,131
+And here I also have a suitable method.
+
+517
+01:26:54,547 --> 01:27:03,028
+And in this is suitable method, what I do is that I get the age of this child in months divided by 12.
+
+518
+01:27:03,028 --> 01:27:08,268
+By doing that, I am finding the actual age of this child.
+
+519
+01:27:08,667 --> 01:27:17,927
+And I'm checking against the mean age limit, which is basically the age of that child.
+
+520
+01:27:19,572 --> 01:27:28,592
+And then if it is allowed, if it is bigger than the minimum age limit, then I will return true. Otherwise, I will return false.
+
+521
+01:27:32,372 --> 01:27:32,752
+Okay?
+
+522
+01:27:43,731 --> 01:28:07,591
+And let's take a look at the child class. In the child class, I have two global member fields, age in months and name. And as you see, I have a constructor with two parameters. And I have getter methods for name and age in months. And I have a setter method as well for age in months.
+
+523
+01:28:08,011 --> 01:28:11,072
+We already talked about the clothing.
+
+524
+01:28:11,828 --> 01:28:15,688
+We already talked about the abstract class item.
+
+525
+01:28:16,588 --> 01:28:21,347
+And we already talked about the regular class toy, which extends the item.
+
+526
+01:28:22,188 --> 01:28:24,568
+Now let's take a look at the kindergarten.
+
+527
+01:28:28,243 --> 01:28:41,243
+Now, in the kindergarten class, in the data member field section, I have an array of...
+
+528
+01:28:41,971 --> 01:28:45,551
+Child objects.
+
+529
+01:28:46,111 --> 01:28:52,131
+Okay, I'm defining an array where the type is child, but I haven't initialized it yet.
+
+530
+01:28:52,371 --> 01:28:54,331
+I have just defined it.
+
+531
+01:28:54,331 --> 01:29:06,311
+And I also have an integer variable, global variable, which I will use in order to keep track of the number of child in the kindergarten.
+
+532
+01:29:07,636 --> 01:29:10,496
+And here you see I have a constructor.
+
+533
+01:29:11,136 --> 01:29:21,956
+And in the constructor, I am creating an array of child array with the numbers that are passed to this constructor.
+
+534
+01:29:22,615 --> 01:29:31,496
+Now at this line, I am creating the actual array and I am assigning the address of this array to this variable, children.
+
+535
+01:29:32,656 --> 01:29:34,636
+And the initial child count is zero.
+
+536
+01:29:35,380 --> 01:29:35,860
+Okay.
+
+537
+01:29:37,360 --> 01:29:42,979
+Now, let's start with the add child method and then we'll go further.
+
+538
+01:29:43,280 --> 01:29:47,440
+Let's, let me just switch the positions of the methods.
+
+539
+01:29:47,979 --> 01:29:50,300
+Okay, let's start with the add child method.
+
+540
+01:29:51,319 --> 01:29:59,399
+Now, in the add child method, when I call this method of the kindergarten, I will pass the child object.
+
+541
+01:30:00,212 --> 01:30:02,172
+Reference to a child object.
+
+542
+01:30:03,072 --> 01:30:03,312
+Okay.
+
+543
+01:30:03,312 --> 01:30:13,632
+And then first I will check whether the child count is the same as the size of the array.
+
+544
+01:30:14,068 --> 01:30:27,368
+If it is the, so if the size of the array is the same as the child count, this means that there is no place in the kindergarten.
+
+545
+01:30:27,888 --> 01:30:30,068
+So therefore, we will return false.
+
+546
+01:30:30,968 --> 01:30:37,927
+And if the child object that I'm passing here is null,
+
+547
+01:30:38,351 --> 01:30:44,211
+So, which means that, so, there is no object, then I will return false.
+
+548
+01:30:45,492 --> 01:30:48,211
+Or, if I...
+
+549
+01:30:48,372 --> 01:31:11,391
+Find this child in the kindergarten, in the children array, then I will return false as well. So this, when I call find child method, and if I return something that is not null, in that case, I know that that child is in the kindergarten already.
+
+550
+01:31:16,372 --> 01:31:23,172
+I cannot add this child to the kindergarten.
+
+551
+01:31:24,292 --> 01:31:33,572
+If none of these cases are true, in that case, I will assign the reference to this child object to this array.
+
+552
+01:31:35,092 --> 01:31:41,452
+So with the in this child count, and then I will increment the child count by one.
+
+553
+01:31:41,891 --> 01:31:43,412
+And then I will return true.
+
+554
+01:31:45,268 --> 01:31:47,747
+Okay, this was the edge chart level.
+
+555
+01:31:48,648 --> 01:31:59,688
+As you see, you must see the similarity with this one and the previous example that we have seen with the gallery.
+
+556
+01:32:00,212 --> 01:32:11,631
+So remember, within the gallery, we had this add car method, we had this search car method, and searching car with object, searching car with plate.
+
+557
+01:32:11,912 --> 01:32:16,952
+You must see the resemblance, so with kindergarten as well, okay?
+
+558
+01:32:17,471 --> 01:32:22,032
+Now, this is the kind of questions you should expect to see in the exam.
+
+559
+01:32:22,032 --> 01:32:27,992
+So I could ask you to create an array of objects.
+
+560
+01:32:28,212 --> 01:32:31,212
+I could ask you to add new objects.
+
+561
+01:32:31,452 --> 01:32:34,992
+I could ask you to find those objects, et cetera.
+
+562
+01:32:35,792 --> 01:32:39,952
+Now, so here is another method, find chart method.
+
+563
+01:32:41,532 --> 01:32:46,352
+And in this particular method, we are doing a for loop.
+
+564
+01:32:46,703 --> 01:32:51,743
+A classic for loop starting from zero all the way to the child count.
+
+565
+01:32:51,743 --> 01:32:56,764
+And we are iterating on the children array.
+
+566
+01:32:57,203 --> 01:33:08,083
+And comparing the name that we are looking for against the objects get names.
+
+567
+01:33:08,844 --> 01:33:15,583
+So if the result is true, then we will return the pointer to that child as a result.
+
+568
+01:33:15,683 --> 01:33:17,423
+Otherwise, we will return null.
+
+569
+01:33:18,355 --> 01:33:23,376
+Okay, now there are other methods like find oldest child.
+
+570
+01:33:23,536 --> 01:33:27,155
+So you can have another method, for example, find youngest child.
+
+571
+01:33:27,155 --> 01:33:34,996
+Okay, so you can play with this code and write other methods that you think that is necessary.
+
+572
+01:33:35,315 --> 01:33:39,155
+And that would give you a good exercise for the midterm.
+
+573
+01:33:40,148 --> 01:33:51,467
+And get capacity, and this is by returning the children array length, you are returning the capacity of the array, capacity of the kindergarten.
+
+574
+01:33:52,307 --> 01:34:06,148
+And set capacity, you are basically, by calling this method, you are setting, if you want to increase the size of the array so that you can...
+
+575
+01:34:06,623 --> 01:34:09,484
+Put more children into kindergarten.
+
+576
+01:34:09,884 --> 01:34:12,583
+In that case, you need to call this method.
+
+577
+01:34:12,724 --> 01:34:20,224
+In this method, it will basically create another array, which is bigger than the initial array.
+
+578
+01:34:20,224 --> 01:34:28,503
+And then it will then move all the objects that are existed in the original array to the new array.
+
+579
+01:34:29,003 --> 01:34:29,163
+Okay.
+
+580
+01:34:30,100 --> 01:34:32,739
+And so this is the remove child method.
+
+581
+01:34:32,739 --> 01:34:38,119
+So remember the remove car method that you have seen in the gallery example.
+
+582
+01:34:38,699 --> 01:34:38,859
+Okay.
+
+583
+01:34:39,039 --> 01:34:42,840
+So you can also experiment with the remove child here.
+
+584
+01:34:44,851 --> 01:34:47,411
+And there is this main method.
+
+585
+01:34:47,731 --> 01:34:56,131
+So you can basically play with the main method and check all the methods that are in the kindergarten.
+
+586
+01:34:56,131 --> 01:34:56,891
+Okay.
+
+587
+01:34:57,551 --> 01:35:03,471
+So with these difference, different if and else statements.
+
+588
+01:35:04,171 --> 01:35:09,131
+I could also give you a...
+
+589
+01:35:10,644 --> 01:35:22,724
+Give you a statement like this and ask you, so if I wanted to run this, what would the result of the Java program will show it to me?
+
+590
+01:35:22,783 --> 01:35:24,944
+I could ask you questions like this, okay?
+
+591
+01:35:24,944 --> 01:35:32,404
+So you need to make sure that you study all these codes before you take the midterm exam.
+
+592
+01:35:37,235 --> 01:35:39,096
+Ok, any questions so far?
+
+593
+01:35:44,467 --> 01:36:09,867
+Okay. Now, I have several minutes left and I want to wrap up with interfaces. And so the interfaces is the third way of doing the inheritance. So remember, with the inheritance relationship, I told you that you cannot have multiple inheritance. So you cannot have multiple superclasses.
+
+594
+01:36:10,771 --> 01:36:22,451
+Okay, but there are cases where one subclass might have points of view of different classes.
+
+595
+01:36:23,291 --> 01:36:31,811
+Now, in order to satisfy those cases, instead of using abstract classes, we use interfaces.
+
+596
+01:36:32,948 --> 01:36:52,248
+Now, for example, let's say here there is this person class and I would like to have this person class some features as a customer and this person class should have some features as a supplier and it should have some features as a friend.
+
+597
+01:36:52,248 --> 01:37:00,568
+Okay. And how do you make sure that this person inherits all these?
+
+598
+01:37:01,876 --> 01:37:26,395
+features at the same time. Now, in order to do that, so we are using interfaces instead of abstract classes. In interfaces, we are defining these classes instead of abstract, we are defining as interface. And in interfaces, all the methods are abstract methods. There is no regular methods in interfaces.
+
+599
+01:37:27,667 --> 01:37:36,567
+Okay, so which means that in interfaces, so we don't have method body for the methods that are in interfaces.
+
+600
+01:37:36,567 --> 01:37:46,567
+And since all the methods are abstract methods, we don't use the abstract keyword in interfaces.
+
+601
+01:37:47,347 --> 01:37:55,688
+Okay. In interface, we use the interface keyword in the class description instead of abstract.
+
+602
+01:37:57,367 --> 01:38:07,847
+And all the methods that are within the interface class, okay, we don't use abstract keyword, but those methods are abstract methods.
+
+603
+01:38:08,488 --> 01:38:14,967
+Okay. And therefore, they don't have any method body.
+
+604
+01:38:16,243 --> 01:38:27,963
+Now, for the class that is extending these interfaces, this time instead of using extend keyword, we use implements.
+
+605
+01:38:29,876 --> 01:38:32,196
+Okay, we use the keyword implements.
+
+606
+01:38:32,756 --> 01:38:37,796
+And as you see, this person class implements customer, supplier, and friend.
+
+607
+01:38:37,916 --> 01:38:41,736
+As you see, I have more than one super class here.
+
+608
+01:38:41,736 --> 01:38:46,796
+Okay, this person implements customer, supplier, and friend.
+
+609
+01:38:47,456 --> 01:38:56,276
+And so in that case, I can have a regular class which implements more than one interfaces.
+
+610
+01:38:56,948 --> 01:39:08,448
+And so, and the regular class which implements these interfaces must have all the abstract classes in its method body.
+
+611
+01:39:09,028 --> 01:39:20,268
+Okay, so which means that this regular class must implement the buy method, the sell method, and the keep method as long as it implements this interface.
+
+612
+01:39:23,412 --> 01:39:31,892
+Okay, so we use interfaces in order to group responsibilities of entities, for example.
+
+613
+01:39:31,892 --> 01:39:36,212
+So here I grouped responsibilities like customer, supplier, friend.
+
+614
+01:39:36,632 --> 01:39:40,892
+So I put all these responsibilities as methods and I grouped them.
+
+615
+01:39:41,252 --> 01:39:43,412
+I separated them in different classes.
+
+616
+01:39:44,500 --> 01:39:50,779
+And we use interfaces if you wanted to give an object with multiple views.
+
+617
+01:39:51,059 --> 01:39:53,699
+And here, this is my person class.
+
+618
+01:39:54,039 --> 01:39:58,479
+And I want objects that are generated from this person class has multiple views.
+
+619
+01:39:58,979 --> 01:40:01,199
+One view should be customer view.
+
+620
+01:40:01,359 --> 01:40:02,960
+Another one should be supplier.
+
+621
+01:40:03,139 --> 01:40:04,179
+Another one, friend.
+
+622
+01:40:04,179 --> 01:40:10,179
+So therefore, if I have cases like this, instead of using...
+
+623
+01:40:11,220 --> 01:40:16,180
+Abstract classes, I prefer to use interfaces.
+
+624
+01:40:17,520 --> 01:40:17,760
+Okay.
+
+625
+01:40:18,160 --> 01:40:27,340
+And obviously, so with abstract classes or regular classes, I don't have a chance to do the multiple inheritance.
+
+626
+01:40:27,340 --> 01:40:36,340
+But with interfaces, as you can see, I can implement multiple superclasses in my regular class.
+
+627
+01:40:38,707 --> 01:40:42,787
+So, what are the rules for interfaces when we use the interfaces?
+
+628
+01:40:43,327 --> 01:40:48,467
+First of all, a class should code the bodies of all methods implemented interfaces.
+
+629
+01:40:48,467 --> 01:41:02,387
+As I said, so, and the regular class in the child class must implement all the methods of the superclass.
+
+630
+01:41:04,180 --> 01:41:08,980
+And so, as I said, regular member fields cannot be defined in interfaces.
+
+631
+01:41:09,620 --> 01:41:14,360
+So here in interface, I cannot have regular member fields.
+
+632
+01:41:14,360 --> 01:41:20,600
+The only type of member field that I can have is public final static member fields.
+
+633
+01:41:23,220 --> 01:41:26,720
+And in interfaces, I can only have public methods.
+
+634
+01:41:26,880 --> 01:41:30,240
+So there is no protected, there is no private methods.
+
+635
+01:41:30,240 --> 01:41:33,260
+I can only have public methods in interfaces.
+
+636
+01:41:34,680 --> 01:41:39,800
+And interfaces cannot have regular methods and interfaces cannot have constructors.
+
+637
+01:41:40,640 --> 01:41:48,800
+Obviously, I cannot have an object of interfaces, just like I cannot have an object of abstract class.
+
+638
+01:41:50,195 --> 01:41:54,636
+And as I said, a class can implement multiple interfaces.
+
+639
+01:41:56,476 --> 01:42:00,356
+Now let's take a look at this example.
+
+640
+01:42:01,376 --> 01:42:08,356
+So in this particular example, I have two interfaces.
+
+641
+01:42:08,735 --> 01:42:10,996
+One is commercial vehicle interface.
+
+642
+01:42:11,235 --> 01:42:14,216
+The second one is personal vehicle interface.
+
+643
+01:42:16,020 --> 01:42:32,560
+Now, I have two classes, car and motorcycle, that are implementing both interfaces because motorcycle and car can be both personal vehicle and commercial vehicle.
+
+644
+01:42:32,920 --> 01:42:39,000
+So, they are implementing motorcycle, commercial vehicle, and personal vehicle.
+
+645
+01:42:42,068 --> 01:42:52,568
+Now, as you see, so with the interfaces, with the interface relationship,
+
+646
+01:42:52,880 --> 01:43:19,680
+So there is this dashed arrow. Instead of a straight arrow, you have the dashed arrow. So when you create a UML diagram for the inheritance relationship with the interfaces, you need to have a dashed arrow, but the direction of the arrow must point to the superclass.
+
+647
+01:43:20,212 --> 01:43:21,332
+Which is interface.
+
+648
+01:43:22,892 --> 01:43:31,632
+Just like this, so we have a dashed arrow and obviously the direction is pointing to the superclass, in this case interfaces.
+
+649
+01:43:32,632 --> 01:43:40,092
+And the bus is implementing the commercial vehicle, so it is only implementing one commercial vehicle.
+
+650
+01:43:42,707 --> 01:43:46,547
+Okay, so let's take a look at how the interfaces are being written.
+
+651
+01:43:47,268 --> 01:43:55,068
+So as I said, so instead of using class, we use the keyword interface, different from the abstract class.
+
+652
+01:43:55,068 --> 01:43:58,327
+In abstract class, we kept the class keyword.
+
+653
+01:43:58,787 --> 01:44:05,847
+We said public, abstract class, such and such.
+
+654
+01:44:06,224 --> 01:44:14,083
+Right? The name of the class. But here, we don't use the class keyword. We don't use the abstract keyword. We only use interface.
+
+655
+01:44:14,984 --> 01:44:21,804
+Public interface, commercial vehicle. And so, as you see, it has two member methods.
+
+656
+01:44:22,292 --> 01:44:28,011
+And there is no abstract keyword in these member methods because it is not necessary.
+
+657
+01:44:28,011 --> 01:44:34,471
+They are in the interface, so they both are abstract methods.
+
+658
+01:44:35,131 --> 01:44:39,912
+And as you see, there is no method body because they are abstract methods.
+
+659
+01:44:40,872 --> 01:44:44,431
+And so the second interface is the personal vehicle.
+
+660
+01:44:44,832 --> 01:44:47,511
+It has two methods, get plate and calculate tax.
+
+661
+01:44:49,043 --> 01:44:54,663
+And as you see, these two methods, they don't also have a method body.
+
+662
+01:44:57,243 --> 01:44:59,683
+And let's now take a look at the car class.
+
+663
+01:45:00,003 --> 01:45:02,483
+Car class is a regular class.
+
+664
+01:45:02,483 --> 01:45:08,443
+And it implements, not extends, it implements the commercial vehicle and personal vehicle.
+
+665
+01:45:09,343 --> 01:45:15,523
+Now, these are highly important details in the exams.
+
+666
+01:45:16,015 --> 01:45:35,775
+If you write extents instead of implements when you are using inheritance interfaces, or when you are using abstract classes, if you use implements instead of extents, if you mix these things up, then you will lose points.
+
+667
+01:45:36,916 --> 01:45:45,815
+Okay, even though, so you think that you have a good understanding of inheritance relationship, you will lose points unnecessarily.
+
+668
+01:45:45,815 --> 01:45:53,536
+So make sure that you understand also the usage of this Java syntax.
+
+669
+01:45:58,899 --> 01:46:15,960
+Now, as you see, I have three member fields, plate, model year, angel volume, and I have one constructed with three parameters, plate, model year, angel volume, and here in the constructor, I am initializing all the global member fields.
+
+670
+01:46:17,235 --> 01:46:19,456
+And I have calculate text method.
+
+671
+01:46:19,596 --> 01:46:21,716
+Calculate text method, where does it come from?
+
+672
+01:46:21,756 --> 01:46:26,195
+From personal vehicle because car implements the personal vehicle.
+
+673
+01:46:26,195 --> 01:46:30,015
+In the personal vehicle, I have the calculate text method.
+
+674
+01:46:30,216 --> 01:46:34,336
+Therefore, I must have calculate text method in the car class as well.
+
+675
+01:46:35,216 --> 01:46:35,416
+Okay.
+
+676
+01:46:36,176 --> 01:46:36,996
+Now here.
+
+677
+01:46:38,036 --> 01:46:48,996
+So if it is a personal class vehicle, in that case, engine volume multiplied by base tax gives me the calculate tax result.
+
+678
+01:46:50,899 --> 01:46:55,319
+Now, the next method is calculate amortized tax.
+
+679
+01:46:55,839 --> 01:46:55,999
+Okay.
+
+680
+01:46:56,259 --> 01:46:59,059
+So in this case, where does this method come from?
+
+681
+01:46:59,139 --> 01:47:01,619
+It is coming from the commercial vehicle.
+
+682
+01:47:01,619 --> 01:47:10,299
+So which means that if car class implements the commercial vehicle, it must have the calculate amortized tax.
+
+683
+01:47:11,999 --> 01:47:18,419
+So basically, so this tells you that so with the commercial vehicle,
+
+684
+01:47:18,783 --> 01:47:34,863
+And the tax is reduced 10% for each year as amortization. As the years goes by, the tax is reduced by 10%. This is what this code is doing. Okay.
+
+685
+01:47:37,943 --> 01:47:45,623
+And the get plate, get model year, and get engine volume, these are the getter methods for the global member fields.
+
+686
+01:47:48,275 --> 01:48:15,875
+Now, let's take a look at the bus. Bus only implements the commercial vehicle. Bus only implements the commercial vehicle. And so this is the constructor for bus. And these are the global member fields for bus. And this is the calculate amortize tax method. And here, basically, based on the tonnage of the bus,
+
+687
+01:48:16,256 --> 01:48:22,136
+There is a different rate for the ratio for the tonnage.
+
+688
+01:48:22,596 --> 01:48:31,676
+And based on the ratio tonnage and the ratio age, the calculation of the amortized tax changes.
+
+689
+01:48:31,676 --> 01:48:32,196
+Okay.
+
+690
+01:48:32,956 --> 01:48:35,956
+The way, so the details of how the.
+
+691
+01:48:36,627 --> 01:48:59,507
+Tax is calculated. It will be given to you if I give you a question like this. I will give you the details of how to calculate this in text so you can follow the text and you can write your own code such as this one. Okay. But the idea here is that
+
+692
+01:48:59,828 --> 01:49:11,047
+If your class implements a particular interface, your class must have the same name method as the interface.
+
+693
+01:49:11,471 --> 01:49:26,591
+If you have a regular class that implements an interface, if you don't have calculate amortize tax method here, then I will understand that you don't know how to use the interfaces.
+
+694
+01:49:27,091 --> 01:49:27,271
+Okay?
+
+695
+01:49:27,431 --> 01:49:28,851
+Then you will lose ports.
+
+696
+01:49:30,851 --> 01:49:31,492
+Okay?
+
+697
+01:49:35,091 --> 01:49:41,211
+And then the last class is the vehicle registration system class.
+
+698
+01:49:41,391 --> 01:49:48,112
+And as you see, this class has commercial vehicles array, personal vehicles array.
+
+699
+01:49:48,112 --> 01:49:53,391
+And you can understand this just like the gallery example that I have shown you previously.
+
+700
+01:49:53,731 --> 01:49:58,332
+You can also implement your own vehicle registration system class.
+
+701
+01:49:58,872 --> 01:50:00,000
+And in this class, you have this.
+
+702
+01:50:00,000 --> 01:50:03,619
+Search methods for commercial vehicle or personal vehicle.
+
+703
+01:50:03,619 --> 01:50:07,619
+You can add another vehicle into the registration system.
+
+704
+01:50:07,760 --> 01:50:10,720
+You can remove by doing the unregister.
+
+705
+01:50:11,239 --> 01:50:14,140
+You can do all that with your code.
+
+706
+01:50:14,979 --> 01:50:15,600
+Okay.
+
+707
+01:50:17,652 --> 01:50:24,711
+And so obviously interfaces can inherit from another interface as well.
+
+708
+01:50:24,711 --> 01:50:30,231
+For example, in this particular case, I used to have commercial vehicle and personal vehicle.
+
+709
+01:50:30,832 --> 01:50:35,652
+And these interfaces can inherit from another interface.
+
+710
+01:50:36,511 --> 01:50:40,692
+In that case, one interface will extend another interface.
+
+711
+01:50:41,271 --> 01:50:43,372
+So this is also possible.
+
+712
+01:50:45,235 --> 01:50:54,735
+Okay, so lastly, so to wrap up, so why do we use interfaces instead of abstract classes?
+
+713
+01:50:54,735 --> 01:51:04,015
+The reason is that Java or any other object-oriented programming language does not support multiple level of inheritance.
+
+714
+01:51:04,756 --> 01:51:08,136
+So every class extent only one class.
+
+715
+01:51:08,656 --> 01:51:18,256
+But if you wanted to have an object have a multiple view, in that case, we might want to use interfaces.
+
+716
+01:51:18,936 --> 01:51:19,256
+Okay.
+
+717
+01:51:20,564 --> 01:51:34,184
+And the second reason that we are using interfaces is that if there are a lot of methods, then the abstract class is more useful because we can provide a default implementation for some of the methods.
+
+718
+01:51:34,543 --> 01:51:42,384
+OK, so this is the reason, benefit of using the abstract class as opposed to the interface class.
+
+719
+01:51:42,684 --> 01:51:48,463
+So if in the super class, if there are so many methods, in that case, you might want to.
+
+720
+01:51:48,564 --> 01:51:51,844
+implement some of those methods in the superclass.
+
+721
+01:51:52,583 --> 01:52:03,384
+In that case, using abstract is better because in interfaces, you cannot implement the methods in the superclass.
+
+722
+01:52:07,155 --> 01:52:19,876
+And if the base class keeps on changing, then the interfaces can cause issues because we cannot declare additional methods to the interfaces without changing the all implementation classes.
+
+723
+01:52:20,467 --> 01:52:29,527
+But with the abstract class, we can provide default implementation and only change the implementation classes that are actually going to use these need methods.
+
+724
+01:52:29,647 --> 01:52:39,907
+So which means that if you use interfaces and if you make a change in interfaces, every other class that implements those interfaces needs to be changed.
+
+725
+01:52:40,404 --> 01:52:47,464
+But if you use abstract classes, in that case, you can add some regular methods to the abstract classes.
+
+726
+01:52:47,464 --> 01:52:56,923
+In that case, the methods that are extending the abstract class, they only implement the abstract classes.
+
+727
+01:52:57,744 --> 01:53:03,084
+So therefore, there won't be any change necessary.
+
+728
+01:53:06,131 --> 01:53:12,931
+And if you use abstract classes and inheritance, you can make a statement like A is B.
+
+729
+01:53:13,351 --> 01:53:20,291
+And if you use interfaces, you can make statement like A is capable of doing such and such a thing.
+
+730
+01:53:20,291 --> 01:53:33,611
+So just like this example, okay, person is capable of doing being customer, person is capable of being supplier or being friends, okay?
+
+731
+01:53:34,131 --> 01:53:42,031
+So, but with the use of abstract class, the relationship is always and is a relationship.
+
+732
+01:53:42,707 --> 01:53:54,907
+Okay. Now, what I want you to do, now that I have shown you the vehicle registration system, I want you to go and take a look at the codes in the websites.
+
+733
+01:53:54,907 --> 01:54:05,547
+And here you see the vehicle registration system, and you see some codes for searching, for registering. And now you can add codes for unregistering.
+
+734
+01:54:06,195 --> 01:54:12,275
+Or searching by using object instead of the plate number.
+
+735
+01:54:12,836 --> 01:54:18,735
+And you can do this for other classes as well.
+
+736
+01:54:19,416 --> 01:54:23,895
+So you can also play and experiment with other classes as well.
+
+737
+01:54:23,895 --> 01:54:28,115
+So this should be your homework for next.
+
+738
+01:54:29,395 --> 01:54:36,555
+So, apparently, we don't have an exam for next lecture in that case.
+
+739
+01:54:36,555 --> 01:54:46,996
+So, what we could do, we could continue covering some lectures and we could save some time and solve some example questions as well.
+
+740
+01:54:47,475 --> 01:54:47,615
+Okay.
+
+741
+01:54:48,315 --> 01:54:56,655
+So, the exam week will be announced at the department web page, the classroom.
+
+742
+01:54:57,140 --> 01:55:02,660
+The time of the exam, everything will be announced at the department web page.
+
+743
+01:55:02,800 --> 01:55:05,320
+I will also announce at the course web page as well.
+
+744
+01:55:06,880 --> 01:55:07,480
+Okay.
+
+745
+01:55:08,200 --> 01:55:09,260
+Any questions?
+
+746
+01:55:14,579 --> 01:55:29,539
+Okay, I'm going to, I'm stopping right now at slide number 132, which is special topics, primitive enumerations. I'm going to continue from this point forward next lecture.
+
+747
+01:55:32,659 --> 01:55:40,179
+Okay, thank you and have a great day. And if you have any lectures left today, so, so, iyi dersler.
+
+748
+01:55:41,747 --> 01:55:42,948
+Kolay gelsin arkadaşlar.

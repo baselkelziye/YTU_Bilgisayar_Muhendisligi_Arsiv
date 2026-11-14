@@ -1,0 +1,3923 @@
+1
+00:08:23,283 --> 00:08:24,243
+Arkadaşlar merhaba.
+
+2
+00:08:28,403 --> 00:08:29,223
+Sesim gidiyor mu?
+
+3
+00:08:31,124 --> 00:08:31,483
+Okey.
+
+4
+00:08:31,504 --> 00:08:32,104
+Gidiyor hocam.
+
+5
+00:08:32,604 --> 00:08:33,724
+Tamam, süper.
+
+6
+00:08:51,316 --> 00:08:52,936
+Okay, let's get started.
+
+7
+00:08:59,508 --> 00:09:01,427
+Sayımız 16.
+
+8
+00:09:03,427 --> 00:09:05,248
+Katılım biraz düşük.
+
+9
+00:09:06,168 --> 00:09:11,728
+Ümit ediyorum arkadaşlarım benim katılıma da dikkat edeceğimi biliyorlardır.
+
+10
+00:09:12,988 --> 00:09:22,608
+Eğer ders için oluşturduğunuz bir WhatsApp grubu varsa arkadaşlar, Mehmet Hoca derslere katılmanızı istiyor.
+
+11
+00:09:23,152 --> 00:09:36,152
+Katılım oranına bakarak notlandırmayı yapacak diye hatırlatırsanız iyi olur. Herkes dersin başında bilsin, ona göre katılıp katılmayacağına karar versin.
+
+12
+00:09:38,323 --> 00:09:51,603
+Okay, let's get started. Today we are going to start with the outline of the Java programming languages and then we are going to go into details of the objects which is the basis of object-oriented programming.
+
+13
+00:10:01,812 --> 00:10:02,372
+Okay.
+
+14
+00:10:03,711 --> 00:10:08,711
+So in the previous lecture, we did an overview of the Java programming language.
+
+15
+00:10:08,711 --> 00:10:29,211
+So we said that the Java programming language is an interpreted language, which means that first in the interpreted language, so this is a better slide for this, in interpreted language, what we are doing first, we have the source code.
+
+16
+00:10:29,631 --> 00:10:35,731
+So, the source code is inserted into a compiler.
+
+17
+00:10:36,271 --> 00:10:42,031
+The compiler is producing an output, which is a compiled code.
+
+18
+00:10:42,811 --> 00:10:49,692
+This has an extension of that class for Java.
+
+19
+00:10:50,091 --> 00:10:57,631
+And so once the compiler finishes its job, once it produces a compiled code as it says,
+
+20
+00:10:57,631 --> 00:11:05,071
+Then we have the Java Virtual Machine, which is basically an interpreter.
+
+21
+00:11:05,071 --> 00:11:10,071
+It takes the compile code as its input and it...
+
+22
+00:11:10,676 --> 00:11:17,115
+It transforms this compiled code into a format where the CPU can execute this code.
+
+23
+00:11:17,475 --> 00:11:27,635
+So it basically converts this compiled code into executable code, which can then be processed on the operating system, and it gets executed.
+
+24
+00:11:29,615 --> 00:11:34,135
+Now, so this interpreter is the Java Virtual Machine.
+
+25
+00:11:35,296 --> 00:11:47,355
+And the compiler which takes the source code and throws it into a compile code is the Java compiler.
+
+26
+00:11:48,403 --> 00:11:54,443
+And the Java compiler has a .exe extension, which is javac.exe.
+
+27
+00:11:54,443 --> 00:12:03,364
+And the Java virtual machine is the, again, .exe extension, and it is javac.exe or java.exe.
+
+28
+00:12:03,683 --> 00:12:03,963
+Okay.
+
+29
+00:12:06,355 --> 00:12:14,875
+So, you can assume that in any interpreted language, so you have a compiler which is separate from the interpreter.
+
+30
+00:12:15,456 --> 00:12:24,175
+The compiler takes the source code, turns it into a compiled code, and interpreter takes the compiled code and executes on the CPU.
+
+31
+00:12:29,875 --> 00:12:37,395
+We already looked at the slides, which basically shows you the different versions of Java.
+
+32
+00:12:37,395 --> 00:12:40,056
+We will be using the latest version of Java.
+
+33
+00:12:41,415 --> 00:12:48,015
+And obviously, I recommended to you some editors that you can utilize in order to write your code.
+
+34
+00:12:48,515 --> 00:12:51,175
+So one of these editors is Eclipse.
+
+35
+00:12:52,015 --> 00:12:56,716
+I recommend you to download an Eclipse.
+
+36
+00:12:57,299 --> 00:13:01,119
+to your computer and get started. So this is the interface.
+
+37
+00:13:01,683 --> 00:13:09,763
+And I recommend you to download and compile Eclipse and start experimented.
+
+38
+00:13:09,943 --> 00:13:18,403
+And you can download the source codes that I uploaded to the website, the course website.
+
+39
+00:13:19,144 --> 00:13:28,783
+So you can download the codes and open these codes in Eclipse and start experiment as we go through the slides in the course.
+
+40
+00:13:34,227 --> 00:13:44,687
+Okay. So here, so this slide talks about different editions. We are going to be using the standard Java development kit.
+
+41
+00:13:45,844 --> 00:13:48,724
+And that will be enough for the purposes of this course.
+
+42
+00:13:49,484 --> 00:14:01,244
+So, installing the Eclipse for the standard Eclipse edition will be enough.
+
+43
+00:14:01,804 --> 00:14:08,824
+So, as you can see, there are different editors as well, other than Eclipse, NetBeans, IntelliJ, et cetera.
+
+44
+00:14:09,444 --> 00:14:13,824
+So, as long as you pick one of them and start experimenting.
+
+45
+00:14:13,844 --> 00:14:18,244
+I think on the codes, I think that will be advantageous for you.
+
+46
+00:14:19,379 --> 00:14:25,139
+And in the previous lecture, we also talked about the UML, which we are using.
+
+47
+00:14:25,220 --> 00:14:32,240
+It's a markup language and which we are using in order to design the object-oriented programmings.
+
+48
+00:14:32,700 --> 00:14:40,579
+So there are different open source modeling tools for UML, as one of them is Violet UML.
+
+49
+00:14:40,859 --> 00:14:46,440
+So you can also download this and start experiment with it.
+
+50
+00:14:47,923 --> 00:14:52,063
+Ok, let's get started with the fundamentals of object-oriented programming.
+
+51
+00:14:53,463 --> 00:15:00,723
+Now, in object-oriented programming, we have the concepts of objects.
+
+52
+00:15:01,864 --> 00:15:05,983
+And so this is a nice illustration of an object.
+
+53
+00:15:06,416 --> 00:15:19,196
+Every object has data in it, okay, as you can see, and also methods that the object is utilizing in order to process this data, okay?
+
+54
+00:15:19,816 --> 00:15:24,696
+Now, the object is the main programming element.
+
+55
+00:15:25,168 --> 00:15:34,988
+Okay. And it has, as I said, it has data, which is attributes, and it also methods, which is basically tasks.
+
+56
+00:15:35,788 --> 00:15:46,288
+And when we are designing an object-oriented programming, we basically think of the real-world entities that can be considered as the object.
+
+57
+00:15:46,947 --> 00:15:47,127
+Okay.
+
+58
+00:15:47,648 --> 00:15:58,608
+For example, if you want to write a code that is related with the cars, in that case, car could be an object, right?
+
+59
+00:15:59,148 --> 00:16:06,928
+And maybe the number of doors of the car could be its data, right? It has four doors.
+
+60
+00:16:07,379 --> 00:16:15,639
+And maybe the amount of gas that you put in the gas tank could be the data of that object, right?
+
+61
+00:16:15,960 --> 00:16:24,159
+And if you consider a real world entity car as an object, what could be the methods of that object?
+
+62
+00:16:24,159 --> 00:16:31,119
+For example, if you consider a car, what kind of functionalities that the car has?
+
+63
+00:16:31,200 --> 00:16:34,819
+For example, acceleration, right? The car can accelerate.
+
+64
+00:16:35,379 --> 00:16:44,172
+Or a brake, right? You can put the car into brake so you can or decrease your...
+
+65
+00:16:44,532 --> 00:17:11,872
+Speed. So, increase speed, decrease speed, start your car, stop your car. All these are methods. So, basically, if you have an object like that, you should think about what kind of actions that object can do. Those actions or tasks becomes method and the information about that real world entity becomes the attributes or the data of that object.
+
+66
+00:17:12,596 --> 00:17:21,715
+Okay. Basically, attributes of an object, this data about this object, and tasks, actions, methods, they all are the same.
+
+67
+00:17:22,715 --> 00:17:32,635
+So, and these functions allow us to access to the attribute or the data of this object.
+
+68
+00:17:32,635 --> 00:17:33,516
+Okay.
+
+69
+00:17:34,516 --> 00:17:44,796
+Now, if you look at this object, as you see, you see an encapsulated object, which means that what does encapsulation means?
+
+70
+00:17:45,456 --> 00:17:52,296
+Both the data and the methods of an object are together, encapsulated, okay?
+
+71
+00:17:52,855 --> 00:17:56,656
+So it's encapsulated within the same entity.
+
+72
+00:17:57,076 --> 00:18:06,036
+So basically, if you want to access to the data of this object, you need to use the methods of these objects, object, right?
+
+73
+00:18:06,036 --> 00:18:11,356
+And these methods will allow you to access the data of this object.
+
+74
+00:18:18,644 --> 00:18:32,804
+Okay, now that we have an understanding of an object, we said that object is the representation of a real world entity in the physical memory of our computer as we write our programs.
+
+75
+00:18:33,524 --> 00:18:39,104
+How does the objects are created in programming languages?
+
+76
+00:18:39,923 --> 00:18:44,284
+Okay, now in order to create an object, we use class.
+
+77
+00:18:45,236 --> 00:18:49,496
+Now, the class, you can consider class as a template.
+
+78
+00:18:50,496 --> 00:18:51,516
+For instance,
+
+79
+00:18:52,019 --> 00:18:54,860
+Let's say if you want to build a car, right?
+
+80
+00:18:55,220 --> 00:19:02,539
+If you want to build a car, you need a scratches of, you need a draft design of that car, right?
+
+81
+00:19:02,980 --> 00:19:11,720
+You can have a paper and a pen and you can start designing your car.
+
+82
+00:19:11,840 --> 00:19:14,700
+You can say, okay, this car is going to be four doors.
+
+83
+00:19:15,251 --> 00:19:20,451
+It's going to have a red color.
+
+84
+00:19:21,652 --> 00:19:23,243
+So it will be...
+
+85
+00:19:23,827 --> 00:19:25,447
+Convertible, et cetera.
+
+86
+00:19:25,788 --> 00:19:25,987
+Okay.
+
+87
+00:19:26,028 --> 00:19:32,188
+You can design your car on paper and that will be your draft of the car.
+
+88
+00:19:32,188 --> 00:19:34,548
+That will be your template of the car.
+
+89
+00:19:34,847 --> 00:19:34,967
+Okay.
+
+90
+00:19:35,387 --> 00:19:39,967
+Now you can consider that template as a class.
+
+91
+00:19:40,427 --> 00:19:40,587
+Okay.
+
+92
+00:19:40,648 --> 00:19:41,447
+It's the same thing.
+
+93
+00:19:42,067 --> 00:19:51,188
+And so you, if you want to produce the car based on your draft, then the actual car, which is basically produced.
+
+94
+00:19:51,827 --> 00:19:54,628
+based on that template becomes the object.
+
+95
+00:19:55,668 --> 00:20:03,148
+So this means that we are creating objects based on the class.
+
+96
+00:20:03,584 --> 00:20:16,884
+Okay, class sort of helps us to identify the rules and the data and the methods that this object is going to have.
+
+97
+00:20:16,884 --> 00:20:25,824
+All the data that this object was going to have and the kinds of methods that this object is going to have is defined by the class.
+
+98
+00:20:26,564 --> 00:20:26,704
+Okay.
+
+99
+00:20:27,347 --> 00:20:30,188
+Here is another example.
+
+100
+00:20:30,728 --> 00:20:35,527
+You can think class as a cookie cutter and think object as cookies.
+
+101
+00:20:35,748 --> 00:20:42,307
+Basically, it's a template which defines how the object will look like.
+
+102
+00:20:42,927 --> 00:20:43,048
+Okay.
+
+103
+00:20:43,768 --> 00:20:49,147
+And this is how we are actually writing our classes in Java.
+
+104
+00:20:50,228 --> 00:20:54,387
+You see a class in small letters.
+
+105
+00:20:54,628 --> 00:20:57,968
+And after that, here is the name of the class that we want to generate.
+
+106
+00:20:58,628 --> 00:20:58,768
+Okay.
+
+107
+00:20:59,228 --> 00:21:03,528
+And you see, so within the curly parenthesis, we write our code.
+
+108
+00:21:04,068 --> 00:21:13,528
+So this means that all the code that we are writing, including the data attributes and also the methods, it will go here inside the class.
+
+109
+00:21:19,988 --> 00:21:30,248
+Okay, so objects and classes, I already gave you examples of this. An example object could be an actual car, a particular car.
+
+110
+00:21:30,887 --> 00:21:36,887
+Okay, and if you consider a particular car, what are the attributes or data related with that car?
+
+111
+00:21:37,311 --> 00:21:45,651
+The license plate number, its color, its model, when it was produced, and its ID number.
+
+112
+00:21:47,071 --> 00:21:50,871
+Okay, all these are the data or attribute of the car.
+
+113
+00:21:50,871 --> 00:22:05,291
+And actions, as I said, you can do acceleration and you can decrease the speed, you can start the car.
+
+114
+00:22:05,311 --> 00:22:07,192
+Stop the car or you can sell the car.
+
+115
+00:22:07,511 --> 00:22:07,651
+Okay.
+
+116
+00:22:07,692 --> 00:22:11,731
+There are different actions that can be related with the car.
+
+117
+00:22:11,731 --> 00:22:12,271
+Okay.
+
+118
+00:22:12,692 --> 00:22:18,571
+Now, all these are encapsulated within an object.
+
+119
+00:22:19,551 --> 00:22:25,731
+And class identifies all these actions or methods.
+
+120
+00:22:26,031 --> 00:22:32,131
+And it identifies all these data attributes that car object can have.
+
+121
+00:22:32,431 --> 00:22:32,611
+Okay.
+
+122
+00:22:33,587 --> 00:22:42,307
+So therefore, we say that the class is a program code which defines the attributes and methods of objects.
+
+123
+00:22:42,307 --> 00:22:45,768
+In this particular case, cars are the objects.
+
+124
+00:22:46,768 --> 00:22:46,887
+Okay.
+
+125
+00:22:47,447 --> 00:22:53,087
+And you can create any number of classes from any different classes within the object-oriented program,
+
+126
+00:22:53,208 --> 00:23:00,148
+which means that now in object-oriented programming, we already have some classes.
+
+127
+00:23:00,559 --> 00:23:06,440
+That are defined by the Java programming language.
+
+128
+00:23:06,920 --> 00:23:15,179
+Java programming language has some core libraries that has many different classes that we can use.
+
+129
+00:23:15,179 --> 00:23:25,019
+So we can either create our own class or we can utilize what Java programming language has and extend those classes.
+
+130
+00:23:35,443 --> 00:23:45,724
+Now, the attributes of an object, which means the data members of an object, can be divided into two groups.
+
+131
+00:23:45,724 --> 00:23:51,644
+One is the primitive data types. The second one is non-primitive data types.
+
+132
+00:23:52,224 --> 00:23:54,724
+Okay. Now, the primitive data types...
+
+133
+00:23:55,188 --> 00:24:08,148
+It's one unit of information and the data types like integers, floats, doubles, booleans, et cetera.
+
+134
+00:24:08,148 --> 00:24:08,668
+Okay.
+
+135
+00:24:09,208 --> 00:24:10,648
+All these are primitives.
+
+136
+00:24:11,628 --> 00:24:17,288
+Non-primitive data types, any number of objects from any number of classes.
+
+137
+00:24:17,648 --> 00:24:22,328
+So we can consider the non-primitives, which means that
+
+138
+00:24:22,932 --> 00:24:28,032
+A class can also be a type of a data attribute.
+
+139
+00:24:28,451 --> 00:24:30,791
+So we will come to that later on.
+
+140
+00:24:30,791 --> 00:24:33,652
+But for now, you should consider that.
+
+141
+00:24:34,392 --> 00:24:39,791
+So there are two types of data that an object can have.
+
+142
+00:24:39,892 --> 00:24:41,552
+One is primitive data type.
+
+143
+00:24:41,652 --> 00:24:43,512
+The other one is non-primitive data type.
+
+144
+00:24:43,892 --> 00:24:49,152
+Primitive data types are the ones that you learned in C programming language.
+
+145
+00:24:50,152 --> 00:25:03,512
+So in your first year here, for non-primitive data types, you should know that class can be a type of a data which we will learn later in detail.
+
+146
+00:25:06,036 --> 00:25:16,936
+Okay. Now, so let's go into details of the terminology that you will be learning related with the objects, classes, and the members.
+
+147
+00:25:18,336 --> 00:25:27,735
+Now, data of an object is also called member field, field, or attribute. They all are the same.
+
+148
+00:25:28,211 --> 00:25:33,991
+Okay, in different tutorials or in different books, they use these terms interchangeably.
+
+149
+00:25:34,900 --> 00:25:42,040
+And a set of values of all attributes of an object is called state.
+
+150
+00:25:42,040 --> 00:25:42,720
+Okay.
+
+151
+00:25:43,240 --> 00:25:58,300
+If you say state of an object, which is basically the values of the attributes at that time, you are talking about, you are calling that as the state of the object.
+
+152
+00:25:58,996 --> 00:26:05,456
+And as you see, a task, action, function, method, member method, they all are the same.
+
+153
+00:26:05,916 --> 00:26:08,936
+We usually use member method and the member field.
+
+154
+00:26:09,056 --> 00:26:11,655
+We use member field for the attributes.
+
+155
+00:26:11,836 --> 00:26:15,635
+We use member method for the methods of an object.
+
+156
+00:26:16,796 --> 00:26:17,476
+Okay.
+
+157
+00:26:18,496 --> 00:26:26,155
+And members of a class or an object, in that case, we call them as methods and the fields.
+
+158
+00:26:27,347 --> 00:26:31,467
+Okay, methods, member methods and on the member fields. Okay.
+
+159
+00:26:32,403 --> 00:26:38,983
+And the class, as I said, class, you can call class as type.
+
+160
+00:26:40,743 --> 00:26:52,364
+It's the type of the object because remember, the objects are created based on the class, thinking that class is the template of that object.
+
+161
+00:26:52,364 --> 00:27:00,183
+So therefore, if you generate an object based on a class, then you can think that.
+
+162
+00:27:00,403 --> 00:27:04,563
+And the type of that object is that class.
+
+163
+00:27:04,783 --> 00:27:08,463
+So therefore, class and type is the same thing.
+
+164
+00:27:10,463 --> 00:27:11,183
+Okay.
+
+165
+00:27:11,583 --> 00:27:12,023
+And
+
+166
+00:27:13,715 --> 00:27:21,496
+Say, if you create an object of a class, then we call that object instance of that class.
+
+167
+00:27:21,615 --> 00:27:28,455
+For example, if you have an object of class C, then you can call that object as instance of class C.
+
+168
+00:27:28,455 --> 00:27:29,395
+Okay.
+
+169
+00:27:30,163 --> 00:27:36,084
+Now, these are the terminology that we will be using throughout this course, so you should be familiar with.
+
+170
+00:27:36,703 --> 00:27:44,543
+But most of the time, I will be using the member field for the data items, and I will be using the term member method for the methods of the objects.
+
+171
+00:27:45,483 --> 00:27:51,844
+And I will use the class as the type of the objects.
+
+172
+00:27:52,352 --> 00:27:59,692
+And if I want to mention about an objects of a class, then I will say instance of a class.
+
+173
+00:28:00,512 --> 00:28:00,632
+Okay.
+
+174
+00:28:02,072 --> 00:28:04,632
+Now, here is the...
+
+175
+00:28:05,556 --> 00:28:11,576
+The representation, visual representation of object-oriented programming.
+
+176
+00:28:11,836 --> 00:28:18,776
+And if you want to design object-oriented programming, as I said, we use this markup language, UML.
+
+177
+00:28:19,616 --> 00:28:26,216
+And with this markup language, so this rectangle shape is what we are using in order to represent a class.
+
+178
+00:28:26,836 --> 00:28:30,016
+Okay, so this is a class diagram, as you see in the rectangle.
+
+179
+00:28:30,376 --> 00:28:32,896
+So you have the name of the class.
+
+180
+00:28:33,556 --> 00:28:51,916
+Okay. An object of a class, okay, is shown like this. Okay. Now, as you see, now, in the, in, it is still a rectangle shape, but within the rectangle, you see a name of the object.
+
+181
+00:28:52,756 --> 00:28:57,916
+And column, after that, the type of the object, which is car.
+
+182
+00:28:58,536 --> 00:28:58,676
+Okay?
+
+183
+00:28:59,236 --> 00:29:03,916
+Objects type comes after the name of the object.
+
+184
+00:29:04,627 --> 00:29:12,467
+Now, if you look at this, so this is basically tells us that this is a specialized example of car.
+
+185
+00:29:12,467 --> 00:29:15,927
+So because of that, we gave a name to it.
+
+186
+00:29:16,907 --> 00:29:17,167
+Okay.
+
+187
+00:29:17,707 --> 00:29:22,507
+So therefore, so this is one instance of this class.
+
+188
+00:29:22,932 --> 00:29:25,412
+There may be many other instances as well.
+
+189
+00:29:26,132 --> 00:29:31,192
+In UML representation, we show objects like this.
+
+190
+00:29:31,352 --> 00:29:34,732
+First, name of the object, column, then the type of the object.
+
+191
+00:29:35,172 --> 00:29:36,872
+And we show classes like this.
+
+192
+00:29:37,252 --> 00:29:42,332
+Just the name of the class within the rectangle, if you write it like this, it will be enough.
+
+193
+00:29:47,667 --> 00:29:52,967
+Now, there are different types of UML diagrams.
+
+194
+00:29:53,507 --> 00:29:59,107
+And one diagram is the UML class diagram.
+
+195
+00:29:59,507 --> 00:29:59,647
+Okay.
+
+196
+00:30:00,447 --> 00:30:05,327
+The second diagram is the UML interaction diagram.
+
+197
+00:30:06,003 --> 00:30:13,564
+Now, the UML interaction diagrams have also different kinds.
+
+198
+00:30:13,564 --> 00:30:28,243
+We are going to be using the sequence diagram, sequence UML diagrams, in order to tell you how the program is going to interact with the user as we are running it.
+
+199
+00:30:28,963 --> 00:30:29,104
+Okay?
+
+200
+00:30:29,811 --> 00:30:42,311
+So, the first category is the class diagram. You will see an example of this in a minute where you have the classes and also the relationship between the classes.
+
+201
+00:30:43,051 --> 00:30:51,151
+And the second one is the sequence diagrams. Sequence diagram allows us to keep track how the program runs.
+
+202
+00:30:51,151 --> 00:30:52,411
+Okay.
+
+203
+00:30:59,443 --> 00:31:10,963
+Now, whenever you create an object, each time you are creating a different instance of that entity.
+
+204
+00:31:11,543 --> 00:31:20,283
+Forever, for example, if you have a car class, which means that you have a template of a car.
+
+205
+00:31:20,819 --> 00:31:21,299
+Okay.
+
+206
+00:31:21,979 --> 00:31:24,779
+And in that template, everything is written.
+
+207
+00:31:25,059 --> 00:31:28,859
+So it says how many doors that this car can have.
+
+208
+00:31:29,119 --> 00:31:33,279
+It tells you the kind of actions that you can do with this car, et cetera.
+
+209
+00:31:33,819 --> 00:31:34,099
+Okay.
+
+210
+00:31:34,219 --> 00:31:35,279
+That's the template.
+
+211
+00:31:35,279 --> 00:31:41,279
+And you can create different objects or different instances of the same class.
+
+212
+00:31:42,195 --> 00:31:47,575
+Now, whenever you create an object, then it becomes a different entity.
+
+213
+00:31:47,575 --> 00:31:50,015
+It becomes a different individual.
+
+214
+00:31:50,855 --> 00:31:50,935
+Okay.
+
+215
+00:31:51,635 --> 00:31:54,795
+Now, consider the two objects of the same time.
+
+216
+00:31:55,435 --> 00:32:03,595
+Now, although both have the same type of attributes, okay, even though these two objects have the same type of attributes,
+
+217
+00:32:04,135 --> 00:32:08,155
+now the values of these attributes will be different.
+
+218
+00:32:09,203 --> 00:32:30,163
+Okay, for example, in the first car, you will have the color of the car blue. In the second one, you will have the color of the car as red. Okay, these are two objects created from the same class, but the values of the attributes of these objects will be different.
+
+219
+00:32:31,539 --> 00:32:36,339
+So, therefore, the state of these objects will be different.
+
+220
+00:32:36,859 --> 00:32:38,400
+Okay, remember what was the state?
+
+221
+00:32:39,720 --> 00:32:48,319
+If the values assigned to the data attributes of an object constitute the state of that object.
+
+222
+00:32:48,319 --> 00:32:55,700
+Okay, all the attribute values, if you put them together, that becomes the state of that object.
+
+223
+00:32:56,096 --> 00:33:05,375
+So therefore, even for one attribute, if the value changes, then basically the state of that object changes.
+
+224
+00:33:05,375 --> 00:33:06,895
+Okay.
+
+225
+00:33:08,723 --> 00:33:15,943
+Even if you create two objects having the same state, that these two objects will be represented in different areas of memory.
+
+226
+00:33:15,943 --> 00:33:29,263
+So basically, which means that even if you have two different car objects, okay, the real life car entities, where the values of the attributes are the same.
+
+227
+00:33:29,632 --> 00:33:39,872
+But in Java, the objects, since they are an individual entity, they will have different location in the physical memory.
+
+228
+00:33:39,872 --> 00:33:48,832
+Okay. So which means that even the values assigned to those attributes of that object, objects are the same.
+
+229
+00:33:49,792 --> 00:33:57,632
+They will still have a different unique identifier and they will still reside in different parts.
+
+230
+00:33:57,632 --> 00:33:58,932
+Cars of the memory.
+
+231
+00:34:04,632 --> 00:34:16,412
+For example, any two cars cruising the street, we talked about different attributes, model, color, license plate, and the models and the colors will be different.
+
+232
+00:34:17,012 --> 00:34:27,972
+So even the values for these attributes are the same, but still the license plate would be different.
+
+233
+00:34:27,972 --> 00:34:28,632
+Okay.
+
+234
+00:34:38,708 --> 00:34:49,988
+Now, two different objects, since the state of these objects are different, they may give you different answers for the same message or sort of for the same method code.
+
+235
+00:34:49,988 --> 00:34:55,927
+Okay, so if we go back to this object example.
+
+236
+00:34:58,427 --> 00:35:01,427
+Okay, now, if this is the object.
+
+237
+00:35:02,996 --> 00:35:14,356
+Now, if you have two objects like this, okay, and if these two objects will have the same method, but the data in the objects will be different, right?
+
+238
+00:35:14,356 --> 00:35:19,184
+Now, even if you call the same methods of the...
+
+239
+00:35:19,184 --> 00:35:30,904
+Of these two different objects, okay, the answer to these methods will be different because the data that these objects are carrying will be different, okay?
+
+240
+00:35:30,904 --> 00:35:44,484
+Since the member field values, since the data in these objects are different, the methods, method calls will return different values, okay?
+
+241
+00:35:57,811 --> 00:36:04,051
+Okay, two objects will give different answers to the same message even if they are of the same type.
+
+242
+00:36:04,532 --> 00:36:08,451
+Okay, because the reason is that their state will be different.
+
+243
+00:36:10,271 --> 00:36:10,931
+Okay.
+
+244
+00:36:11,572 --> 00:36:27,292
+And so in addition to that, so if the method called has parameters, arguments in it, so in that case, you can also pass different values to those for those parameters in order to.
+
+245
+00:36:29,936 --> 00:36:49,256
+So in order to run that method, but since the data in the objects is different, along with the parameters that you are passing and the data being different in different objects, you will get different answers.
+
+246
+00:36:55,443 --> 00:37:07,323
+Okay, now, when you call a method of an object in any object-oriented programming language, so we call this sending a message to the object, okay?
+
+247
+00:37:07,323 --> 00:37:18,923
+So basically, so in physical memory, whenever an object is created based on a class, each object will have different locations in the physical memory.
+
+248
+00:37:19,703 --> 00:37:22,684
+And as we are running our program,
+
+249
+00:37:23,284 --> 00:37:29,064
+And these objects basically will call each other's methods.
+
+250
+00:37:30,043 --> 00:37:30,184
+Okay.
+
+251
+00:37:30,443 --> 00:37:34,564
+For example, let's say, so you have two objects.
+
+252
+00:37:34,684 --> 00:37:36,543
+One is a human object.
+
+253
+00:37:36,984 --> 00:37:39,423
+The second one is the car object, right?
+
+254
+00:37:40,003 --> 00:37:43,623
+And these are two different objects represented in physical memory.
+
+255
+00:37:44,115 --> 00:37:51,655
+And the human object will own, for example, the car object.
+
+256
+00:37:51,983 --> 00:37:59,983
+And the human object maybe will call the start car method of the car object.
+
+257
+00:37:59,983 --> 00:38:00,523
+Okay.
+
+258
+00:38:01,063 --> 00:38:13,063
+And the car object will call maybe the cell or register method of the human object.
+
+259
+00:38:13,283 --> 00:38:13,443
+Okay.
+
+260
+00:38:13,743 --> 00:38:18,023
+So these objects can call each other's method.
+
+261
+00:38:18,224 --> 00:38:19,963
+So when they call each other.
+
+262
+00:38:19,983 --> 00:38:25,363
+methods, we call them as one object is sending a message to another one.
+
+263
+00:38:27,923 --> 00:38:28,203
+Okay.
+
+264
+00:38:29,483 --> 00:38:30,143
+Now,
+
+265
+00:38:30,143 --> 00:38:31,723
+now,
+
+266
+00:38:33,268 --> 00:38:50,347
+When we want to call a method of an object, so one of the purposes of us doing this is that we might want to access the members of this object, okay, data members of this object.
+
+267
+00:38:50,347 --> 00:38:53,407
+So we can access a member field of an object.
+
+268
+00:38:53,744 --> 00:39:05,844
+For some, for a reason, either we can, we can change the value of that attribute of an object, or we can read the value of, of an attribute of that object. Okay.
+
+269
+00:39:07,244 --> 00:39:18,844
+So these, these are two main reasons that we want to access the data of an object. So is one is the read, the second one is to change.
+
+270
+00:39:20,980 --> 00:39:35,559
+Okay. And usually we call this as getter and setter methods. For each data attribute, we have getter and setter methods that we need to have as methods in our class design.
+
+271
+00:39:36,939 --> 00:39:37,659
+Okay.
+
+272
+00:39:42,675 --> 00:39:56,496
+We access, the reason that we access a member method of an object is that, so we can, we might want to get the value of an attribute or we might want to set the value of an attribute.
+
+273
+00:39:56,496 --> 00:39:59,435
+And also, we might want to.
+
+274
+00:40:00,000 --> 00:40:01,100
+Run a method.
+
+275
+00:40:02,220 --> 00:40:07,900
+Sometimes we might pass some parameters to run the method.
+
+276
+00:40:08,440 --> 00:40:08,519
+Okay.
+
+277
+00:40:09,100 --> 00:40:15,579
+And this method could be related with the functionality of that object.
+
+278
+00:40:15,840 --> 00:40:25,159
+Other than get and set methods, there might be some methods that are related with the core functionality of this object.
+
+279
+00:40:25,280 --> 00:40:27,860
+For example, what could be the core functionality?
+
+280
+00:40:28,000 --> 00:40:41,239
+For car object, right? Transferring the people from one location to another, right? That's one of the core functionalities or starting the car or stopping the car, et cetera.
+
+281
+00:40:48,851 --> 00:40:52,692
+Ok, so let's continue.
+
+282
+00:40:57,268 --> 00:41:10,088
+Okay, now, in object-oriented programming terminology, an object accesses a member of another object by sending message to that other object, okay?
+
+283
+00:41:10,088 --> 00:41:18,427
+So, if you have more than one objects in your memory,
+
+284
+00:41:19,827 --> 00:41:27,587
+And if you want to utilize these objects and have them...
+
+285
+00:41:27,827 --> 00:41:31,148
+Do some functionalities do for you.
+
+286
+00:41:31,527 --> 00:41:34,747
+So in that case, these objects will call each other's method.
+
+287
+00:41:34,947 --> 00:41:42,327
+And as one object calls another object's method, we call it as sending a message.
+
+288
+00:41:42,327 --> 00:41:47,627
+Now, in this particular case, I have a client object.
+
+289
+00:41:49,268 --> 00:41:55,108
+And this client object calls the getplate method of the kid object.
+
+290
+00:41:55,847 --> 00:42:04,728
+The client obviously has a type like person, even though we didn't write it here.
+
+291
+00:42:05,327 --> 00:42:10,248
+Client has a type person and the kid has a type car.
+
+292
+00:42:10,248 --> 00:42:12,248
+So this is an...
+
+293
+00:42:13,268 --> 00:42:39,228
+Object entity, the real life entity for the car. So this is the real life entity for a person. Okay. And as you see, this object sends a method call to the other object, which is kit, by calling the getplate method. And in return, this object returns a plate number as a string.
+
+294
+00:42:40,211 --> 00:42:40,692
+Okay.
+
+295
+00:42:41,171 --> 00:42:46,211
+And if you wanted to represent the method call, you represent it like this.
+
+296
+00:42:46,452 --> 00:42:48,351
+Here is the name of the object.
+
+297
+00:42:48,692 --> 00:42:52,411
+And this is the method that belongs to that object.
+
+298
+00:42:58,036 --> 00:42:58,435
+Okay.
+
+299
+00:43:06,420 --> 00:43:14,860
+Now, so far, so we have an idea of what class is, and we must have an idea what object is.
+
+300
+00:43:14,860 --> 00:43:27,220
+We must have an idea what kind of data member fields you might have in an object and what kind of methods that you might have in a given object.
+
+301
+00:43:27,720 --> 00:43:27,840
+Okay.
+
+302
+00:43:28,119 --> 00:43:32,780
+And remember, the objects are the instances of the classes.
+
+303
+00:43:33,020 --> 00:43:34,380
+So we generate all.
+
+304
+00:43:34,420 --> 00:43:38,659
+So, the objects based on the classes, based on the templates, okay?
+
+305
+00:43:39,640 --> 00:43:46,119
+Now, there is another term called package, okay?
+
+306
+00:43:46,659 --> 00:43:57,280
+Now, in programming languages, when you write code, you put actually your code, which is classes.
+
+307
+00:43:57,907 --> 00:44:01,688
+into a categorized way.
+
+308
+00:44:01,688 --> 00:44:06,587
+And you compile these codes in a categorized way.
+
+309
+00:44:07,108 --> 00:44:07,228
+Okay.
+
+310
+00:44:07,608 --> 00:44:15,747
+So which means that you might have the same name classes in different packages.
+
+311
+00:44:15,747 --> 00:44:23,327
+If you put all these classes in one folder, then if you have the same name classes, there will be name conflict.
+
+312
+00:44:23,827 --> 00:44:24,047
+Right.
+
+313
+00:44:24,628 --> 00:44:37,327
+But if you have different folders which are responsible for holding the classes for different purposes, in that case, you can have the same name classes as well.
+
+314
+00:44:37,628 --> 00:44:38,268
+Okay.
+
+315
+00:44:39,028 --> 00:44:43,148
+Here you see that I have two packages, one inside the other.
+
+316
+00:44:43,728 --> 00:44:46,528
+The package number two only includes class C.
+
+317
+00:44:47,128 --> 00:44:50,407
+The package number one has both class A and B.
+
+318
+00:44:51,188 --> 00:44:51,488
+Okay.
+
+319
+00:44:56,659 --> 00:45:03,539
+And if I want to use these classes in my code, in that case, I'm going to use the import statement.
+
+320
+00:45:03,539 --> 00:45:09,359
+Okay. Import will come in front of the package and the class names.
+
+321
+00:45:09,919 --> 00:45:10,519
+Okay.
+
+322
+00:45:29,076 --> 00:45:30,395
+The visibility rules.
+
+323
+00:45:31,275 --> 00:45:31,495
+Okay.
+
+324
+00:45:32,255 --> 00:45:41,556
+Now, as we said, in object-oriented programming, objects are talking to each other, right?
+
+325
+00:45:41,635 --> 00:45:43,495
+They are sending messages to each other.
+
+326
+00:45:43,495 --> 00:45:47,455
+So they are calling each other's methods in order to do a functioning.
+
+327
+00:45:48,295 --> 00:45:48,455
+Okay.
+
+328
+00:45:50,755 --> 00:45:53,495
+Now, each object is...
+
+329
+00:45:54,356 --> 00:45:56,816
+Okay, so let's see.
+
+330
+00:45:58,336 --> 00:45:59,976
+There's a question.
+
+331
+00:46:00,695 --> 00:46:06,635
+Why aren't classes of package two included when classes one is important?
+
+332
+00:46:07,996 --> 00:46:09,296
+Let me see.
+
+333
+00:46:10,516 --> 00:46:11,916
+Let me go back.
+
+334
+00:46:17,043 --> 00:46:21,963
+Okay.
+
+335
+00:46:22,384 --> 00:46:33,903
+Now, if you look at this import statements, now, for the classes that are inside the package number one, right?
+
+336
+00:46:34,244 --> 00:46:40,284
+So, you can import classes like this individually.
+
+337
+00:46:40,284 --> 00:46:44,483
+In that case, if you want to go like this, so you can say,
+
+338
+00:46:44,916 --> 00:46:52,675
+Import package number one dot class A, then similarly package number one dot class B.
+
+339
+00:46:52,675 --> 00:46:55,476
+Okay, that's one way to import classes.
+
+340
+00:46:55,916 --> 00:46:58,876
+Or you can say, you can directly write this.
+
+341
+00:46:59,195 --> 00:47:04,016
+This will tell the compiler that, okay, I want to include everything.
+
+342
+00:47:04,496 --> 00:47:07,076
+underneath the package one, okay?
+
+343
+00:47:07,655 --> 00:47:09,036
+That's another way to do this.
+
+344
+00:47:10,056 --> 00:47:15,235
+And as you see, there is another package inside the package number one.
+
+345
+00:47:15,795 --> 00:47:24,956
+If you write like this, the compiler will only look at the .java files underneath the package number one.
+
+346
+00:47:24,956 --> 00:47:30,876
+It will not go and look underneath the package number two because this is another folder.
+
+347
+00:47:31,195 --> 00:47:33,155
+This is not a Java file.
+
+348
+00:47:33,655 --> 00:47:33,775
+Okay.
+
+349
+00:47:34,336 --> 00:47:43,675
+If you want to specifically import what's under package two, in that case, what you need to write, you need to write.
+
+350
+00:47:43,795 --> 00:48:01,715
+package number one, dot package number two, and dot star, which basically you are telling compiler that I also want to import everything that has under package two.
+
+351
+00:48:02,771 --> 00:48:30,731
+Okay, so therefore, so this is a folder and this is another folder. This is not a file. And underneath this folder, there is a file. Okay, so which is this, after you compile it, it becomes a dot class file. And after you compile these calls, it becomes a dot class file as well. Okay, which means that a file which ends with
+
+352
+00:48:30,771 --> 00:48:55,671
+.class extension. Okay. And if you want your code, your class to import them, so you have to specifically tell the compiler, okay, go to package number underneath the package number one, go to package number two, as it says here, and import everything under there. Okay. So is this, does this answer your question? Okay.
+
+353
+00:48:59,507 --> 00:49:04,427
+Can we have a class A in package 2 being in different packages?
+
+354
+00:49:04,627 --> 00:49:05,647
+Yeah, that's the purpose.
+
+355
+00:49:05,647 --> 00:49:08,187
+That's why we have these packages.
+
+356
+00:49:08,767 --> 00:49:15,607
+Because in any object-oriented programming languages, we might have the same name classes.
+
+357
+00:49:16,027 --> 00:49:22,247
+So in that case, what we need to do, we need to specifically import these classes.
+
+358
+00:49:22,719 --> 00:49:33,039
+And in the code, okay, so we need to write the extension specifically to those classes that we are going to use, okay?
+
+359
+00:49:33,039 --> 00:49:40,559
+So therefore, we might have the same name classes in different packages.
+
+360
+00:49:41,152 --> 00:49:48,512
+So they cannot stay under the same package, but they need to be in different packages.
+
+361
+00:49:48,512 --> 00:49:59,492
+And in the code, as long as we identify that class with its particular location, then we are free to use them.
+
+362
+00:50:10,420 --> 00:50:13,220
+Now, visibility rules.
+
+363
+00:50:15,920 --> 00:50:26,300
+An object can access to all its members and members of all other objects of the same type.
+
+364
+00:50:26,400 --> 00:50:27,460
+So what does this mean?
+
+365
+00:50:28,120 --> 00:50:32,980
+So let's go back to this shape.
+
+366
+00:50:34,739 --> 00:50:40,059
+Now, this is a good illustration of an object, okay?
+
+367
+00:50:40,579 --> 00:50:44,579
+And as you see, all the data that has...
+
+368
+00:50:44,755 --> 00:50:50,875
+This object has is here and you have these methods that allows you to access this data.
+
+369
+00:50:50,875 --> 00:50:57,015
+And this means that for an object, the methods of an object can access to its data.
+
+370
+00:50:57,575 --> 00:50:57,735
+Okay.
+
+371
+00:50:58,075 --> 00:51:09,755
+And if you have the same type of object generated from the same class, then this object can access to the methods of other objects as well.
+
+372
+00:51:09,995 --> 00:51:10,255
+Okay.
+
+373
+00:51:22,164 --> 00:51:30,944
+However, we can hide some members of an object so that they can only be accessed from the objects of different types.
+
+374
+00:51:30,944 --> 00:51:39,504
+So, which means that some methods will be visible from the outside of the objects.
+
+375
+00:51:39,804 --> 00:51:43,944
+Some methods will be hidden.
+
+376
+00:51:44,644 --> 00:51:44,744
+Okay.
+
+377
+00:51:45,304 --> 00:51:48,716
+Now, if there is a private...
+
+378
+00:51:48,820 --> 00:52:16,660
+Method within the object, okay, it will be hidden from the outside of that object. If there is a public method of an object, then it will be visible from other, from outside of that object. Similar to the methods, you can also do the same thing as the data members, member fields, okay. If you define
+
+379
+00:52:16,820 --> 00:52:27,580
+A data member field as a public member field, then it will be visible or it can be accessible from the other outside of that object.
+
+380
+00:52:27,580 --> 00:52:36,840
+If you define it as private, then it can only be accessed through the methods of the object.
+
+381
+00:52:37,180 --> 00:52:40,400
+You won't be able to access this outside.
+
+382
+00:52:41,180 --> 00:52:41,300
+Okay.
+
+383
+00:52:42,036 --> 00:52:44,615
+Now, this is called information hiding.
+
+384
+00:52:44,615 --> 00:52:57,175
+Now, the reason that we are doing object-oriented programming is that, so for example, we want to hide the complexity of the objects.
+
+385
+00:52:57,748 --> 00:53:05,268
+So, let's say, if you have a television set, right?
+
+386
+00:53:05,568 --> 00:53:15,348
+If you have a television set and you want to turn on and turn off the television, in that case, you have a remote control, right?
+
+387
+00:53:15,348 --> 00:53:22,048
+You use the remote control in order to start and stop your television set.
+
+388
+00:53:24,596 --> 00:53:30,375
+The start button and the stop button is only the buttons that you see.
+
+389
+00:53:31,015 --> 00:53:31,155
+Okay.
+
+390
+00:53:31,515 --> 00:53:34,555
+You don't get to see what's under the hood.
+
+391
+00:53:34,695 --> 00:53:48,975
+You don't see how the television set is functioning underneath after you press those start and stop button.
+
+392
+00:53:48,975 --> 00:53:49,395
+Okay.
+
+393
+00:53:50,615 --> 00:53:51,975
+So that if...
+
+394
+00:53:52,596 --> 00:53:58,096
+interface basically is hiding the complexity behind it.
+
+395
+00:53:58,455 --> 00:53:58,596
+Okay.
+
+396
+00:53:58,995 --> 00:54:10,096
+So therefore, so we don't want to show when we write our code, we don't want to show the details of our objects.
+
+397
+00:54:10,643 --> 00:54:19,083
+We only want to show the methods that are useful for the outsiders.
+
+398
+00:54:19,623 --> 00:54:28,403
+Or we only want to show the data items, the data member feeds that are useful for the outside of the world.
+
+399
+00:54:28,723 --> 00:54:32,784
+Other than that, we want to define all of them as private.
+
+400
+00:54:32,784 --> 00:54:33,583
+Okay.
+
+401
+00:54:35,188 --> 00:54:44,268
+And again, when your friend wants to lend some money from you, so basically you will give money to your friend.
+
+402
+00:54:44,655 --> 00:54:55,336
+So you can open your purse and give him some money, but you don't have to tell anything about your salary or your PIN number, etc.
+
+403
+00:54:55,336 --> 00:55:03,876
+Okay, so basically, you don't want to tell the details of where you keep your money, where you get your money.
+
+404
+00:55:04,296 --> 00:55:07,296
+You just lend the money to your friend.
+
+405
+00:55:07,755 --> 00:55:12,516
+Okay, similar idea in object-oriented programming when we design our code.
+
+406
+00:55:12,655 --> 00:55:23,096
+We make sure that only the important members, only the methods that are important from the outside of that object will be public.
+
+407
+00:55:23,596 --> 00:55:26,936
+Other than that, everything will be defined as private.
+
+408
+00:55:26,936 --> 00:55:27,976
+Okay.
+
+409
+00:55:34,324 --> 00:55:37,764
+Okay, now I'm going to give a 10-minute break.
+
+410
+00:55:38,503 --> 00:55:51,123
+Then we will start looking at the class diagrams and also we will start looking at some example calls in the lecture.
+
+411
+00:55:51,123 --> 00:55:55,744
+So let's give a 10-minute break and then we'll meet again.
+
+412
+00:55:59,476 --> 00:56:03,675
+If anybody has questions that you can ask right now.
+
+413
+00:56:07,860 --> 00:56:10,139
+Okay, no questions. Let's give a 10-minute break.
+
+414
+01:07:42,867 --> 01:07:44,327
+Okay, let's continue.
+
+415
+01:07:54,483 --> 01:07:55,043
+At the time.
+
+416
+01:08:06,195 --> 01:08:09,816
+Now, we talked about visibility rules.
+
+417
+01:08:16,851 --> 01:08:23,851
+He talked about the visibility rules and we said that the reason that we have these visibility rules in object-oriented programming...
+
+418
+01:08:24,384 --> 01:08:28,963
+We want to hide the complexity of the objects.
+
+419
+01:08:29,503 --> 01:08:38,463
+We want only to show the information that is important and useful for the outside of that object.
+
+420
+01:08:38,463 --> 01:08:45,184
+And in order to provide this information visibility, we have different access modifiers.
+
+421
+01:08:45,939 --> 01:08:56,459
+One access modifier is public, the other one is private, and there will be another one, there is another one called protected, which you will learn later in the class.
+
+422
+01:08:56,879 --> 01:08:59,519
+But for now, let's just focus on public and private.
+
+423
+01:09:00,599 --> 01:09:08,659
+Okay. Now, remember, we had two kinds of things in a given object.
+
+424
+01:09:08,979 --> 01:09:11,519
+The first kind is the data member fields.
+
+425
+01:09:12,051 --> 01:09:17,131
+The second one is the data methods, right? Member methods.
+
+426
+01:09:17,631 --> 01:09:29,391
+Now, you can use these access modifiers, public or private, for both data members and also member methods, okay?
+
+427
+01:09:29,511 --> 01:09:32,211
+Both member fields and for member methods.
+
+428
+01:09:32,492 --> 01:09:37,072
+For both categories, you can use these access modifiers.
+
+429
+01:09:40,115 --> 01:09:44,675
+Here is a UML representation of a class, okay?
+
+430
+01:09:45,216 --> 01:09:49,775
+And in the UML representation of a class, you see three different segments.
+
+431
+01:09:50,435 --> 01:09:55,876
+In the first segment, in the top part of the class, you have the class name.
+
+432
+01:09:57,315 --> 01:10:06,636
+In the second segment of the class diagram, you have the member fields, data member fields.
+
+433
+01:10:07,188 --> 01:10:15,948
+In the third segment of the class representation, you have the member methods.
+
+434
+01:10:16,708 --> 01:10:16,768
+Okay.
+
+435
+01:10:17,548 --> 01:10:28,688
+And for the second segment where you have the member fields, as you see, you have the name of the attribute.
+
+436
+01:10:29,968 --> 01:10:30,608
+Okay.
+
+437
+01:10:30,788 --> 01:10:32,587
+The name of the member fields.
+
+438
+01:10:33,555 --> 01:10:35,155
+And then column.
+
+439
+01:10:35,675 --> 01:10:39,655
+And after that, the type of the member field.
+
+440
+01:10:39,975 --> 01:10:40,055
+Okay.
+
+441
+01:10:40,575 --> 01:10:50,095
+So, which means that every data attribute that we have in objects, it will have a type.
+
+442
+01:10:50,644 --> 01:11:02,463
+It will have either the primitive data type like integer, double, float, or it could have a non-primitive data type like a class, okay?
+
+443
+01:11:04,307 --> 01:11:11,407
+And as you see in front of this member field name, you see a minus sign.
+
+444
+01:11:11,407 --> 01:11:17,967
+Now, this indicates that this data member field is defined as private.
+
+445
+01:11:18,707 --> 01:11:18,927
+Okay.
+
+446
+01:11:19,207 --> 01:11:24,067
+Now, if a data member field is defined as private, which means that
+
+447
+01:11:24,532 --> 01:11:32,592
+Objects of different types cannot access to this, the value of this data member fields.
+
+448
+01:11:33,092 --> 01:11:33,252
+Okay.
+
+449
+01:11:33,532 --> 01:11:45,192
+If you want to access the value of a member field that is defined as private, in that case, you have to use the methods of that object.
+
+450
+01:11:45,852 --> 01:11:46,131
+Okay.
+
+451
+01:11:46,899 --> 01:11:55,760
+So, we can, we have two, two chances to define a member field in, as data member field.
+
+452
+01:11:55,879 --> 01:12:00,779
+One, we can define it as a public member field or private member field.
+
+453
+01:12:00,779 --> 01:12:14,819
+But, so we choose to define it as private member field because, so if you define it as public, any, any object other than the object itself can also.
+
+454
+01:12:14,899 --> 01:12:26,180
+Access is data. Okay. But we only want other objects to access the value of this data member field through the methods of the same object.
+
+455
+01:12:27,796 --> 01:12:39,016
+And if you look at the third segment of this class, which is the member methods segment, and you see plus sign in front of these methods.
+
+456
+01:12:39,016 --> 01:12:49,096
+So remember, I said that we can use these access modifiers for both data member fields and also the member methods.
+
+457
+01:12:49,836 --> 01:12:49,996
+Okay.
+
+458
+01:12:50,516 --> 01:12:53,096
+So you can use public and private for both.
+
+459
+01:12:54,707 --> 01:12:59,007
+Data member fields and also the member methods.
+
+460
+01:12:59,007 --> 01:13:07,527
+So in this particular case, we are using public access modifiers for these member methods.
+
+461
+01:13:07,967 --> 01:13:08,107
+Okay.
+
+462
+01:13:09,171 --> 01:13:15,072
+And public and private are only the two access modifiers.
+
+463
+01:13:15,231 --> 01:13:17,251
+There are other access modifiers as well.
+
+464
+01:13:17,251 --> 01:13:21,851
+So you can have protected access modifier.
+
+465
+01:13:22,491 --> 01:13:26,652
+And the sign that we use for protected is this sign, the S sign.
+
+466
+01:13:27,123 --> 01:13:40,623
+Okay. And it is related with the inheritance relationship, which we will learn later in the class, maybe next week or the week after. Okay. We will learn this access modifier.
+
+467
+01:13:41,363 --> 01:13:48,923
+And the other access modifier that we are going to learn is the package access modifier.
+
+468
+01:13:48,923 --> 01:13:53,343
+And this is the sign for package access modifier is this one.
+
+469
+01:13:53,843 --> 01:14:08,423
+This also provides a visibility only from the objects that are located under the same package or under the same folder.
+
+470
+01:14:08,423 --> 01:14:09,103
+Okay.
+
+471
+01:14:09,363 --> 01:14:25,583
+But most importantly, I want you to focus on these two access modifiers for now, because we will be using these access modifiers for the examples in this lecture and the next lecture.
+
+472
+01:14:27,703 --> 01:14:28,343
+Okay.
+
+473
+01:14:31,343 --> 01:14:32,064
+Now.
+
+474
+01:14:38,323 --> 01:14:42,443
+The information hiding principle cannot be applied in a perfect way.
+
+475
+01:14:42,603 --> 01:14:44,283
+There are reasons for this.
+
+476
+01:14:44,823 --> 01:14:51,863
+A change in code of a class not only affects that class, but other classes that are related with that class as well.
+
+477
+01:14:52,563 --> 01:14:52,683
+Okay.
+
+478
+01:14:53,283 --> 01:15:01,203
+So therefore, the further you comply to this principle, the easier your coding becomes.
+
+479
+01:15:01,563 --> 01:15:01,743
+Okay.
+
+480
+01:15:02,304 --> 01:15:02,663
+Now.
+
+481
+01:15:03,764 --> 01:15:18,404
+So, if you, for example, do not follow the information hiding principle as you are writing your code, down the road, it will cause some problems for you.
+
+482
+01:15:18,404 --> 01:15:29,423
+For example, if you define all your member fields as public, you will allow other objects in your code.
+
+483
+01:15:29,844 --> 01:15:36,283
+To access to the objects data and later in time.
+
+484
+01:15:36,564 --> 01:15:42,583
+So when the number of classes in your code gets increased, number of objects in your program gets increased.
+
+485
+01:15:43,064 --> 01:15:43,863
+So in that case.
+
+486
+01:15:44,404 --> 01:16:06,584
+A, your code may behave in a different way, different than you, you initially planned, because other objects can easily access to the, each other's public data member fields, and they can change the value of the data member fields.
+
+487
+01:16:06,584 --> 01:16:12,384
+So therefore, we need to follow the information hiding principles, and we need to define.
+
+488
+01:16:12,404 --> 01:16:19,324
+Define the data member fields as private almost all the time.
+
+489
+01:16:19,884 --> 01:16:19,963
+Okay.
+
+490
+01:16:20,364 --> 01:16:27,104
+So therefore, in this course, I will also ask you to define the data member fields as private.
+
+491
+01:16:27,844 --> 01:16:28,184
+Okay.
+
+492
+01:16:29,264 --> 01:16:39,244
+So basically, if you don't define the member fields, data member fields as private, even in the exams, so basically you will lose points.
+
+493
+01:16:39,244 --> 01:16:39,804
+Okay.
+
+494
+01:16:40,948 --> 01:16:41,587
+And
+
+495
+01:16:43,412 --> 01:16:53,791
+There are, as I mentioned to you that there are access methods that allows you to access to the value of these data member fields if you define them as private.
+
+496
+01:16:54,172 --> 01:17:04,551
+Obviously, the only way for you to access the data values of these member fields that are defined as private is the setter and getter method.
+
+497
+01:17:04,551 --> 01:17:11,412
+So therefore, I will also ask you to write setter and getter methods as you write your code.
+
+498
+01:17:11,412 --> 01:17:15,631
+For every data member fields in your class.
+
+499
+01:17:22,292 --> 01:17:28,752
+Okay, let's now go into details of some examples.
+
+500
+01:17:28,752 --> 01:17:39,072
+Okay, now in this slide, so we have an example class UML representation.
+
+501
+01:17:40,311 --> 01:17:47,172
+As you see in this UML representation, we are representing a car class.
+
+502
+01:17:49,268 --> 01:18:03,728
+And so here as the data member fields, we have only one data member field where the name of the data member field is plate, its type is string, and it is defined as private.
+
+503
+01:18:04,327 --> 01:18:12,347
+And as you see, it has two methods. One is get plate and the other one is set plate.
+
+504
+01:18:12,948 --> 01:18:15,608
+Both methods are public methods.
+
+505
+01:18:16,208 --> 01:18:16,327
+Okay.
+
+506
+01:18:16,747 --> 01:18:26,368
+Now, if you want to get access to the value of this data member field, in that case, you will have to use these methods.
+
+507
+01:18:26,768 --> 01:18:27,028
+Okay.
+
+508
+01:18:27,528 --> 01:18:32,747
+You will have to go through these methods in order to access the value of this data member field.
+
+509
+01:18:32,948 --> 01:18:36,468
+If you want to get the value, then you would use getplate.
+
+510
+01:18:36,648 --> 01:18:39,927
+If you want to set the value, then you would use setplate.
+
+511
+01:18:46,676 --> 01:18:55,355
+Okay, now we now have information about the visibility rules.
+
+512
+01:18:55,355 --> 01:19:02,095
+Now, so we know what class means, we know what object means.
+
+513
+01:19:02,636 --> 01:19:06,876
+We already told you that the objects are created from the classes.
+
+514
+01:19:07,756 --> 01:19:11,355
+And we also learned that each object...
+
+515
+01:19:11,475 --> 01:19:13,515
+It is an individual entity.
+
+516
+01:19:14,216 --> 01:19:25,935
+Each object has its own state, which means that the values of the attributes, the values of the data attributes of that objects is the state of that object.
+
+517
+01:19:26,055 --> 01:19:27,095
+We learned all of that.
+
+518
+01:19:27,667 --> 01:19:38,607
+And we said that the data member fields of each object, we want to do information hiding.
+
+519
+01:19:38,607 --> 01:19:44,667
+Therefore, we have these access modifiers. We use public and private access modifiers.
+
+520
+01:19:45,688 --> 01:19:51,827
+And the data member fields of an object, they are defined as private.
+
+521
+01:19:52,007 --> 01:19:55,087
+They need to be defined as private in the class.
+
+522
+01:19:55,667 --> 01:20:13,487
+Okay, so if you define these data member fields as private, in that case, if you want to access the value of these data member fields, you have to access them through the data methods, methods of that object.
+
+523
+01:20:13,487 --> 01:20:14,007
+Okay.
+
+524
+01:20:15,604 --> 01:20:25,384
+Now, so far, we learned how to define member fields visibility rules.
+
+525
+01:20:25,923 --> 01:20:31,943
+And we also learned how to define the methods visibility rules.
+
+526
+01:20:31,943 --> 01:20:39,003
+Now, we are going to learn one additional special case when we define the classes.
+
+527
+01:20:39,623 --> 01:20:41,644
+And then we will go to the example.
+
+528
+01:20:42,547 --> 01:20:44,307
+Class quotes, okay?
+
+529
+01:20:44,427 --> 01:20:53,567
+Then you will see actual quotes that has all the concepts that I told you so far.
+
+530
+01:20:54,627 --> 01:21:03,227
+Now, this time, we are going to talk about the static member fields, okay?
+
+531
+01:21:05,235 --> 01:21:14,735
+Now, the keyword static, it can be used for both member fields and also member methods.
+
+532
+01:21:15,396 --> 01:21:15,515
+Okay.
+
+533
+01:21:16,095 --> 01:21:22,595
+Now, we said that each object is an individual entity, right?
+
+534
+01:21:22,595 --> 01:21:24,316
+Which means that the data.
+
+535
+01:21:24,819 --> 01:21:35,719
+Fields in each object is encapsulated within each object's entity in the physical memory.
+
+536
+01:21:36,139 --> 01:21:40,639
+And each object is residing in different locations in the physical memory.
+
+537
+01:21:41,180 --> 01:21:41,279
+Okay.
+
+538
+01:21:41,979 --> 01:21:45,819
+But what if you want a special attribute?
+
+539
+01:21:45,819 --> 01:21:46,739
+Okay.
+
+540
+01:21:48,944 --> 01:22:05,224
+And in all the objects of the same type, okay, all the objects of the same type, which means that all the objects that are created from the same class, what if you want a special data member field?
+
+541
+01:22:05,504 --> 01:22:09,604
+And if you want to change the data member field in one object,
+
+542
+01:22:10,003 --> 01:22:20,443
+Then that data member field, the value of data member field will be changed in all other objects that are generated or created from the same class.
+
+543
+01:22:21,184 --> 01:22:21,324
+Okay.
+
+544
+01:22:21,744 --> 01:22:27,043
+So in that case, you need to define that member field as static.
+
+545
+01:22:27,703 --> 01:22:27,963
+Okay.
+
+546
+01:22:27,963 --> 01:22:36,904
+So in that case, if you change the value of that particular data member field,
+
+547
+01:22:37,300 --> 01:22:40,020
+The value will be changed for all objects.
+
+548
+01:22:40,840 --> 01:22:40,980
+Okay?
+
+549
+01:22:41,640 --> 01:22:51,380
+So therefore, there are cases where we have to use static data member fields.
+
+550
+01:22:51,988 --> 01:23:17,048
+Okay. For example, so here is an example. If the automobile has four tires, then you may say that, okay, I'm going to define this as the static data member field, which is the number of tires. If I wanted to change the value, then it needs to be changed for all the objects. Okay.
+
+551
+01:23:17,587 --> 01:23:24,268
+So therefore, so this is one good candidate for defining a static member fields.
+
+552
+01:23:24,807 --> 01:23:28,268
+And if you wanted to access the value of...
+
+553
+01:23:29,332 --> 01:23:36,551
+The data, the value for the static member fields, this is how we are accessing it.
+
+554
+01:23:36,612 --> 01:23:43,792
+We are first writing the name of the class and then directly we are writing the name of the data member fields.
+
+555
+01:23:43,792 --> 01:23:50,811
+So in that case, we can directly access to the name of the data member fields.
+
+556
+01:23:51,891 --> 01:23:56,952
+Now, we can use this static keyword for member methods as well.
+
+557
+01:23:56,952 --> 01:24:14,092
+Okay. Now, if there is a method of an object which will behave the same for all the objects, so in that case, if it has a common behavior, then we can define that as a static.
+
+558
+01:24:14,644 --> 01:24:39,064
+Method. Okay. But in order a method to be defined as static, we need to make sure that the behavior of that method will be the same for all the objects created from the same class. So you will see some examples of the static method in a minute.
+
+559
+01:24:42,484 --> 01:24:59,224
+So, one other special case other than the static is the final. Final, just like the static keyword, the final keyword can also be used for member fields and for the member methods.
+
+560
+01:24:59,224 --> 01:25:06,444
+Okay. Now, what are the cases where we use final keyword for the member fields?
+
+561
+01:25:07,028 --> 01:25:12,548
+If there is a member field where the value of that member field will not change,
+
+562
+01:25:13,171 --> 01:25:16,311
+So in that case, we can use final keyword.
+
+563
+01:25:16,311 --> 01:25:21,011
+For example, the student ID number, right?
+
+564
+01:25:21,572 --> 01:25:29,311
+If the student ID number is not going to change throughout your education here in Yildiz Technical University,
+
+565
+01:25:29,831 --> 01:25:35,791
+so that attribute will be defined as final.
+
+566
+01:25:37,051 --> 01:25:38,051
+For example,
+
+567
+01:25:40,020 --> 01:25:46,020
+Car license plate number, right?
+
+568
+01:25:46,400 --> 01:25:52,820
+So the license plate number will not change as you have that car.
+
+569
+01:25:52,820 --> 01:25:56,900
+So in that case, that can also be defined as final.
+
+570
+01:25:57,480 --> 01:25:57,579
+Okay.
+
+571
+01:25:58,560 --> 01:26:03,880
+Now, the other, so we also use final.
+
+572
+01:26:05,363 --> 01:26:09,363
+Keyword for the member methods as well, just like the member fields.
+
+573
+01:26:10,243 --> 01:26:13,343
+The reason for that usage is that
+
+574
+01:26:13,695 --> 01:26:21,056
+So we will learn it when we talk about the inheritance topic.
+
+575
+01:26:21,335 --> 01:26:41,056
+But for now, the reason that we are using final keyword for member methods is that if you don't want a member method to be overridden by another class due to the inheritance relationship, in that case, you might...
+
+576
+01:26:41,695 --> 01:26:43,896
+Define it as the final method.
+
+577
+01:26:44,416 --> 01:26:55,195
+But again, we are going to go into details of this final member method thing when we talk about inheritance.
+
+578
+01:26:55,195 --> 01:26:56,536
+Okay.
+
+579
+01:26:58,155 --> 01:26:58,956
+Now.
+
+580
+01:27:00,051 --> 01:27:07,971
+Now you learn two special cases when you define the data member fields and member methods.
+
+581
+01:27:07,971 --> 01:27:15,251
+One, you learn the static keyword. The other one is the file keyword.
+
+582
+01:27:16,072 --> 01:27:21,031
+The static keyword is used for shared usage.
+
+583
+01:27:21,460 --> 01:27:30,940
+If there is a case where the value of the data member field will be shared by many other objects, in that case, we define it as static.
+
+584
+01:27:30,940 --> 01:27:35,299
+So when you see static, you need to make sure that there is a shared usage.
+
+585
+01:27:36,000 --> 01:27:37,899
+We use the final keyword.
+
+586
+01:27:38,479 --> 01:27:48,940
+If there is a variable that will only be assigned a value at the beginning, so in that case, we use...
+
+587
+01:27:49,460 --> 01:27:54,279
+Final keyword for that attribute.
+
+588
+01:27:54,619 --> 01:27:54,719
+Okay.
+
+589
+01:27:55,680 --> 01:28:04,539
+And we can, there may be some member fields that has both final and static keywords at the same time.
+
+590
+01:28:04,539 --> 01:28:07,619
+So you will again see examples of this.
+
+591
+01:28:08,619 --> 01:28:10,940
+So later in the class.
+
+592
+01:28:13,908 --> 01:28:18,908
+Okay, so let me see where I'm going to show you the...
+
+593
+01:28:18,908 --> 01:28:24,852
+Okay.
+
+594
+01:28:25,752 --> 01:28:40,112
+So here, now you can take a look at an example class that we wrote based on this UML class representation.
+
+595
+01:28:40,787 --> 01:28:46,547
+Now, so as you see in the UML representation, we have three segments.
+
+596
+01:28:46,947 --> 01:28:52,867
+One is the first one has the name of the class.
+
+597
+01:28:52,987 --> 01:28:58,407
+The second one has the data attributes of this class.
+
+598
+01:28:58,527 --> 01:29:02,188
+And the third one has the member methods of the class.
+
+599
+01:29:02,188 --> 01:29:02,667
+Okay.
+
+600
+01:29:03,147 --> 01:29:07,167
+Now, as you see, the member field is defined as private.
+
+601
+01:29:07,731 --> 01:29:11,032
+And its name is plate and its type is string.
+
+602
+01:29:11,612 --> 01:29:11,851
+Okay.
+
+603
+01:29:12,252 --> 01:29:16,532
+And you see that I have five different methods.
+
+604
+01:29:16,532 --> 01:29:20,752
+They all are defined as public because I have plus sign here.
+
+605
+01:29:21,192 --> 01:29:21,311
+Okay.
+
+606
+01:29:21,832 --> 01:29:33,592
+Now, if you look at the code here, so remember, so first, when we write the class, first, we need to define the package.
+
+607
+01:29:34,047 --> 01:29:36,867
+Where this class is located.
+
+608
+01:29:37,167 --> 01:29:41,768
+Okay, this class is located underneath this package, NYP01A.
+
+609
+01:29:42,387 --> 01:29:47,427
+So therefore, the first line is where we identify the package.
+
+610
+01:29:48,047 --> 01:30:00,000
+Then, if there are some classes that we need to import in order, before we start writing our class, then we should have the import.
+
+611
+01:30:00,000 --> 01:30:01,039
+Import statements.
+
+612
+01:30:01,199 --> 01:30:12,360
+But for this particular example, we don't have any import statement because this class does not utilize any other methods from other classes.
+
+613
+01:30:13,492 --> 01:30:16,992
+Okay, next, we have the definition of the class.
+
+614
+01:30:16,992 --> 01:30:36,532
+So remember, so when you define the class, so you have the class keyword in small letters, and after that, you have the name of the class, and we define classes with the public access modifiers.
+
+615
+01:30:37,012 --> 01:30:41,152
+Okay, so we have the public for the classes.
+
+616
+01:30:41,492 --> 01:30:56,172
+Obviously, there are other access modifiers for the classes as well, but for now, so I want you to assume that so commonly we are using public access modifiers for the classes that we are going to write.
+
+617
+01:30:56,172 --> 01:31:08,131
+Okay. Now, in the curly parenthesis, you see that the first line belongs to the first category of the class, which is the data member fields.
+
+618
+01:31:09,492 --> 01:31:18,652
+The remainder of the code here, as you see, belongs to the member methods section of the class.
+
+619
+01:31:19,091 --> 01:31:27,091
+And in this particular case, I have one, two, three, four, five different classes, five different methods, sorry.
+
+620
+01:31:27,531 --> 01:31:29,691
+And each of them are defined as public.
+
+621
+01:31:30,271 --> 01:31:30,551
+Okay.
+
+622
+01:31:30,771 --> 01:31:35,311
+And if you look at these method definitions, you see that here.
+
+623
+01:31:36,051 --> 01:31:39,412
+So let's take a look at this one because so this is constructor.
+
+624
+01:31:39,611 --> 01:31:43,171
+I will come to come back to this, but let's look at this one.
+
+625
+01:31:43,171 --> 01:31:47,091
+You see that the name of the method is.
+
+626
+01:31:47,091 --> 01:31:48,471
+This is this, getPlate.
+
+627
+01:31:49,391 --> 01:31:53,471
+The return type of this method is string.
+
+628
+01:31:53,731 --> 01:31:57,992
+It's going to return a string value as the return type.
+
+629
+01:31:58,992 --> 01:32:02,292
+And its access modifier is public, okay?
+
+630
+01:32:02,292 --> 01:32:13,332
+Which means that any other object that is generated can access to the object of this, the method of this object, okay?
+
+631
+01:32:13,792 --> 01:32:20,292
+So, therefore, all these methods that you see, they are defined public, which means that they are accessible.
+
+632
+01:32:20,631 --> 01:32:22,952
+They are visible to the other objects.
+
+633
+01:32:23,532 --> 01:32:23,631
+Okay.
+
+634
+01:32:24,192 --> 01:32:30,372
+And within the curly parentheses of this method, so you have some code in this particular case.
+
+635
+01:32:30,752 --> 01:32:31,992
+So, this is a getter method.
+
+636
+01:32:32,372 --> 01:32:39,032
+The getter method returns the value of the member fields, which is plate.
+
+637
+01:32:39,572 --> 01:33:05,912
+Okay. And there is another method. And you see the name of the method is setplate. Its return type is void, which means that it does not return anything. Okay. And it's defined as public, which is which means that this method can be visible and accessible by other objects. This particular method takes an argument.
+
+638
+01:33:06,676 --> 01:33:11,296
+And the type of the argument is string, and it only takes only one argument.
+
+639
+01:33:12,636 --> 01:33:17,376
+And in this particular method, what we are doing is that we are taking the value.
+
+640
+01:33:17,792 --> 01:33:24,832
+As in the arguments and we are setting to the value of the member fields.
+
+641
+01:33:25,472 --> 01:33:26,992
+So remember, this is set plate.
+
+642
+01:33:27,172 --> 01:33:30,012
+This set plate method is the setter method.
+
+643
+01:33:30,432 --> 01:33:37,092
+And we use setter methods in order to change the value of the member fields.
+
+644
+01:33:37,832 --> 01:33:40,372
+OK, now you see one other keyword here.
+
+645
+01:33:40,872 --> 01:33:42,832
+This I will come back to this later.
+
+646
+01:33:43,252 --> 01:33:45,612
+OK, but so this this.
+
+647
+01:33:45,792 --> 01:33:53,152
+is helping us to differentiate the same name.
+
+648
+01:33:53,779 --> 01:34:18,099
+Attribute names, if you give the same name to the argument variable as the global variable, in that case, in order to distinguish these two, so we use this keyword, which allows us to identify that it's a global member field variable.
+
+649
+01:34:18,099 --> 01:34:19,880
+Okay, I will come back to that.
+
+650
+01:34:20,319 --> 01:34:21,779
+Now, the reason that I'm showing to you.
+
+651
+01:34:21,779 --> 01:34:30,679
+So this is how we are using the access modifiers for data member fields and also the member methods.
+
+652
+01:34:31,159 --> 01:34:31,319
+Okay.
+
+653
+01:34:31,759 --> 01:34:34,139
+So we will come back to this later.
+
+654
+01:34:34,340 --> 01:34:39,779
+So let me go back to the two special...
+
+655
+01:34:42,323 --> 01:34:44,743
+Methods that we are going to learn.
+
+656
+01:34:45,103 --> 01:34:45,264
+Okay.
+
+657
+01:34:45,463 --> 01:34:47,063
+We learned about the static.
+
+658
+01:34:47,224 --> 01:34:49,403
+We learned about the final.
+
+659
+01:34:49,643 --> 01:35:00,783
+These are the two special cases that we use for identifying the member methods and also the member fields.
+
+660
+01:35:00,783 --> 01:35:01,903
+Now,
+
+661
+01:35:02,804 --> 01:35:10,844
+Now we are going to talk about the two types of methods that we can have in a given class.
+
+662
+01:35:11,636 --> 01:35:15,296
+Now, the first type of method is the constructor.
+
+663
+01:35:15,895 --> 01:35:18,015
+This is a special method.
+
+664
+01:35:18,015 --> 01:35:27,176
+And we use constructor method explicitly when we want to create the object of a class.
+
+665
+01:35:27,716 --> 01:35:27,836
+OK.
+
+666
+01:35:28,435 --> 01:35:33,975
+When you create an object of a class, this, the constructed method is called.
+
+667
+01:35:34,515 --> 01:35:34,775
+OK.
+
+668
+01:35:35,699 --> 01:35:46,599
+And the reason that we have a constructor is that we want to use constructor in order to assign the initial values to the data member fields.
+
+669
+01:35:46,599 --> 01:35:47,420
+Okay.
+
+670
+01:35:48,199 --> 01:35:48,819
+And.
+
+671
+01:35:49,844 --> 01:36:01,444
+Obviously, so you may have a zero parameter constructor, one parameter constructor, two parameter constructor, but in each class, we must have a constructor.
+
+672
+01:36:01,644 --> 01:36:12,444
+If we don't write a constructor method in our class, Java compiler will create a zero parameter constructor for us.
+
+673
+01:36:12,444 --> 01:36:17,764
+Okay, so when it compiles the code, it will create a zero parameter.
+
+674
+01:36:17,844 --> 01:36:23,664
+Constructor, because that is the only way for us to create an object from the class.
+
+675
+01:36:25,044 --> 01:36:30,524
+And the other method that we have is the finalize method.
+
+676
+01:36:30,524 --> 01:36:40,564
+And the finalize method is a method which is implicitly executed by the Java Virtual Machine.
+
+677
+01:36:40,975 --> 01:36:44,075
+When your code completes its job.
+
+678
+01:36:44,075 --> 01:37:07,635
+So, which means that if you have a method where you use the final keyword, in that case, so when your code gets finishes, then Java Virtual Machine, which is, remember, the interpreter, which is responsible for running your code.
+
+679
+01:37:08,115 --> 01:37:09,516
+On the CPU.
+
+680
+01:37:10,256 --> 01:37:15,816
+So what it does is that it executes this method, which has a final keyword at last.
+
+681
+01:37:16,316 --> 01:37:16,476
+Okay.
+
+682
+01:37:16,716 --> 01:37:25,436
+And we will come back to an example of this when we go into details of the examples.
+
+683
+01:37:27,136 --> 01:37:27,856
+Okay.
+
+684
+01:37:28,336 --> 01:37:35,476
+Now, so let's use constructors and let us create an object of a class.
+
+685
+01:37:37,011 --> 01:37:45,452
+Now, remember, we said that every class must have a constructor, and these constructors are defined as public.
+
+686
+01:37:45,452 --> 01:37:55,011
+Okay. And these constructor methods must have the same name as the class.
+
+687
+01:37:55,891 --> 01:37:56,372
+Okay.
+
+688
+01:37:56,992 --> 01:38:06,372
+And these constructors, they don't have a return type because the return type is the object itself.
+
+689
+01:38:06,872 --> 01:38:11,492
+And this is how we are creating, how we are calling the constructor.
+
+690
+01:38:12,011 --> 01:38:14,091
+We use the keyword new.
+
+691
+01:38:14,712 --> 01:38:15,271
+Okay.
+
+692
+01:38:15,731 --> 01:38:22,391
+And so what we do is that we use keyword new and then we have a blank space and then we write the name of the
+
+693
+01:38:22,739 --> 01:38:23,359
+Class.
+
+694
+01:38:23,899 --> 01:38:29,460
+And if this is a zero parameter constructor, then so we have the empty parentheses.
+
+695
+01:38:29,939 --> 01:38:31,199
+We don't pass any argument.
+
+696
+01:38:31,979 --> 01:38:40,779
+Now, when you do this, so what Java Virtual Machine is going to do, it's going to call the constructor of that.
+
+697
+01:38:41,363 --> 01:38:49,123
+Class, constructor of that object which is created based on this class and it will generate an object.
+
+698
+01:38:49,663 --> 01:38:58,723
+And once that object is generated, the identifier of that object or the reference of that object is going to be assigned to this variable.
+
+699
+01:38:59,423 --> 01:38:59,563
+Okay.
+
+700
+01:39:00,083 --> 01:39:07,343
+And this is, this variable is the variable that you will use in order to keep track of this object.
+
+701
+01:39:07,343 --> 01:39:08,023
+Okay.
+
+702
+01:39:12,595 --> 01:39:23,675
+Now, let's take a look at this example. In this particular example, I have on the left-hand side, I have a sample UML representation.
+
+703
+01:39:24,955 --> 01:39:30,195
+And on the right-hand side, I have two different types of class representations.
+
+704
+01:39:31,015 --> 01:39:39,155
+Now, let's take a look at the first class representation. In this class representation, the name of the class is A-class.
+
+705
+01:39:39,796 --> 01:39:58,916
+Okay. As you see, so when we identify, when we define a class in Java, we use small letters. Here is the class keyword. And we define these classes as public. And in the curly parentheses, you see that I have two segments.
+
+706
+01:40:00,000 --> 01:40:02,960
+The first segment is the data member fields.
+
+707
+01:40:03,159 --> 01:40:05,579
+The second segment is where I have the methods.
+
+708
+01:40:06,220 --> 01:40:06,340
+Okay.
+
+709
+01:40:06,960 --> 01:40:12,480
+And here, as you see, as the data member fields, I have only one.
+
+710
+01:40:12,480 --> 01:40:15,119
+The name of the data member field is kit.
+
+711
+01:40:15,819 --> 01:40:17,600
+It is defined as private.
+
+712
+01:40:18,159 --> 01:40:20,779
+And its type is car.
+
+713
+01:40:22,119 --> 01:40:25,480
+So remember, a data member field might have...
+
+714
+01:40:26,676 --> 01:40:33,716
+Either primitive data types like integers, double, float, etc.
+
+715
+01:40:34,056 --> 01:40:37,896
+Or it may have a non-primitive data type.
+
+716
+01:40:37,896 --> 01:40:46,615
+In this particular case, since I use a class as the data type, then this is a non-primitive data type.
+
+717
+01:40:47,036 --> 01:40:47,115
+Okay.
+
+718
+01:40:48,016 --> 01:40:51,896
+And this is where I define the...
+
+719
+01:40:52,851 --> 01:40:55,231
+A data member field.
+
+720
+01:40:55,792 --> 01:40:58,752
+And this is where I defined the member method.
+
+721
+01:40:58,931 --> 01:41:02,532
+Here I have a method which has a zero parameter.
+
+722
+01:41:02,532 --> 01:41:10,631
+And in the curly parentheses, you see that I am creating an object of this class.
+
+723
+01:41:11,271 --> 01:41:11,372
+Okay.
+
+724
+01:41:11,851 --> 01:41:14,011
+Now, as you see,
+
+725
+01:41:14,399 --> 01:41:18,619
+I am calling the new car.
+
+726
+01:41:19,079 --> 01:41:20,800
+I'm calling the constructor.
+
+727
+01:41:21,420 --> 01:41:21,739
+OK.
+
+728
+01:41:22,340 --> 01:41:25,199
+But the constructor is not defined here.
+
+729
+01:41:26,079 --> 01:41:26,340
+OK.
+
+730
+01:41:26,680 --> 01:41:32,079
+So what happens is that when the Java compiler compiles this code,
+
+731
+01:41:32,800 --> 01:41:37,199
+it understands that there needs to be, there is no constructor.
+
+732
+01:41:37,199 --> 01:41:41,619
+And the Java compiler compiles.
+
+733
+01:41:42,228 --> 01:41:50,808
+In the compiled code, it creates a segment for the zero parameter constructor as well.
+
+734
+01:41:50,808 --> 01:41:51,408
+Okay.
+
+735
+01:41:51,808 --> 01:41:59,168
+So therefore, when you do new car, you will be able to create an object of this class.
+
+736
+01:41:59,728 --> 01:41:59,868
+Okay.
+
+737
+01:42:00,048 --> 01:42:02,048
+Of the object of the car class.
+
+738
+01:42:02,431 --> 01:42:02,931
+Okay.
+
+739
+01:42:05,191 --> 01:42:06,071
+Sorry.
+
+740
+01:42:06,851 --> 01:42:15,971
+So here, you wouldn't expect as in this particular example, you are actually creating the
+
+741
+01:42:16,404 --> 01:42:18,064
+Car class object.
+
+742
+01:42:18,324 --> 01:42:22,884
+So therefore, the constructor that you would expect should be in the car class.
+
+743
+01:42:23,344 --> 01:42:23,463
+OK.
+
+744
+01:42:23,704 --> 01:42:30,384
+But even for the A class example, there is no constructor defined here.
+
+745
+01:42:30,904 --> 01:42:36,764
+The compiler will create a constructor for the A class class as well.
+
+746
+01:42:37,184 --> 01:42:37,344
+OK.
+
+747
+01:42:37,804 --> 01:42:44,024
+But for this particular example, in the sum method method, what we are doing is that we are calling.
+
+748
+01:42:44,404 --> 01:42:51,184
+We are using the new keyword with the name of the car class.
+
+749
+01:42:52,344 --> 01:42:58,744
+So what Java Virtual Machine is going to do is going to create an object of the car class,
+
+750
+01:42:59,003 --> 01:43:03,324
+and it will assign the reference to this car object.
+
+751
+01:43:03,775 --> 01:43:31,756
+To this variable. Okay. And from this point forward, if you wanted to access this car object, you can use this variable kit. Okay. Now, let us take a look at the second representation. In this representation, again, I have the name of the classes. Another class, it is defined as public as usual. And as you see in this one, I don't have any mem.
+
+752
+01:43:31,775 --> 01:43:34,136
+I only have only one method.
+
+753
+01:43:35,376 --> 01:43:36,056
+Okay.
+
+754
+01:43:36,576 --> 01:43:44,976
+And in the, so in this method, what I do is that I am creating an object of the car class.
+
+755
+01:43:45,655 --> 01:43:51,676
+And I am assigning the reference to this object to this variable.
+
+756
+01:43:52,336 --> 01:43:54,296
+So what is the difference between the two?
+
+757
+01:43:54,296 --> 01:43:58,655
+In this particular case, the, uh,
+
+758
+01:43:58,996 --> 01:44:06,256
+The variable kit is defined globally, which means that it is defined as a member field.
+
+759
+01:44:06,256 --> 01:44:06,815
+Okay.
+
+760
+01:44:07,596 --> 01:44:11,235
+It is defined within the scope of the whole class.
+
+761
+01:44:12,115 --> 01:44:18,756
+But in the second way, the variable kit is defined locally.
+
+762
+01:44:18,756 --> 01:44:21,716
+It is defined within the scope of this method.
+
+763
+01:44:22,376 --> 01:44:22,515
+Okay.
+
+764
+01:44:22,756 --> 01:44:32,456
+So this means that we can only access to this variable inside of this curly parentheses, inside of this sum method.
+
+765
+01:44:33,108 --> 01:44:45,868
+But in the representation above, we can access to this object utilizing this variable kit in any parts of the class.
+
+766
+01:44:45,868 --> 01:44:59,568
+Okay. So these are two different approaches that you can, so that shows examples how we can create objects from classes using the new keyword.
+
+767
+01:45:00,340 --> 01:45:03,060
+And this is the UML representation.
+
+768
+01:45:03,060 --> 01:45:07,980
+As you see, so this is the car class.
+
+769
+01:45:08,980 --> 01:45:13,199
+And so an object of the car class is kit.
+
+770
+01:45:13,720 --> 01:45:16,680
+This here in the sequence diagram.
+
+771
+01:45:17,239 --> 01:45:20,539
+So we represent an object like this.
+
+772
+01:45:21,492 --> 01:45:29,652
+And here we use the new keyword in order to call the constructor of this object.
+
+773
+01:45:29,652 --> 01:45:35,591
+And this is the constructor code.
+
+774
+01:45:36,243 --> 01:45:40,463
+And it returns an object in return.
+
+775
+01:45:40,804 --> 01:45:45,184
+But so for the constructors, we represent a bit of dash arrow.
+
+776
+01:45:45,564 --> 01:45:48,503
+The return type is represented a bit of dash arrow.
+
+777
+01:45:48,764 --> 01:45:56,243
+OK, we will come back to the UML representation of the sequence diagrams later.
+
+778
+01:45:56,243 --> 01:46:04,043
+But this is just for you to know for now how you would create, how you would demonstrate.
+
+779
+01:46:04,243 --> 01:46:08,184
+The creation of a new object by using the UML diagram.
+
+780
+01:46:14,804 --> 01:46:19,884
+Okay, now we talked about the constructor concept.
+
+781
+01:46:20,244 --> 01:46:24,423
+We said that for the constructors, we must have a constructor.
+
+782
+01:46:24,604 --> 01:46:30,824
+If you don't write any constructor in your class, Java Virtual Machine will create a constructor for you.
+
+783
+01:46:30,824 --> 01:46:36,123
+The constructor, the default constructor will be a zero parameter constructor.
+
+784
+01:46:36,851 --> 01:46:39,111
+It won't have any parameters in it.
+
+785
+01:46:39,311 --> 01:46:39,451
+Okay.
+
+786
+01:46:40,071 --> 01:46:41,571
+[öğrenci] has a question.
+
+787
+01:46:41,751 --> 01:46:47,111
+Is there a reason why the kit in some method of A class doesn't start with this?
+
+788
+01:46:47,111 --> 01:46:47,691
+So let's.
+
+789
+01:46:50,851 --> 01:46:51,531
+Okay.
+
+790
+01:46:54,091 --> 01:46:55,051
+This one.
+
+791
+01:46:55,231 --> 01:46:55,391
+Okay.
+
+792
+01:46:56,251 --> 01:46:57,211
+Very good question.
+
+793
+01:46:57,771 --> 01:47:03,451
+The question says that, okay, previously when I showed this.
+
+794
+01:47:04,500 --> 01:47:05,220
+Here.
+
+795
+01:47:06,420 --> 01:47:07,180
+Okay.
+
+796
+01:47:07,460 --> 01:47:18,220
+When I showed you this example, and as I was going through this method here, I used the keyword this.
+
+797
+01:47:19,060 --> 01:47:38,460
+Okay. And I said that this is a special keyword that the Java programming language has. And we use this keyword in order to differentiate the local variable from the global variable. Now, so this is a global variable.
+
+798
+01:47:39,028 --> 01:47:42,828
+which is defined in the scope of the class.
+
+799
+01:47:42,828 --> 01:47:49,628
+Now, this is a local variable which is defined in the scope of this particular method.
+
+800
+01:47:50,307 --> 01:47:50,368
+Okay.
+
+801
+01:47:50,908 --> 01:48:00,188
+Now, somehow, I chose to give the same name as the local variable with the global variable, right?
+
+802
+01:48:00,756 --> 01:48:06,435
+Now, I want to differentiate the local variable from the global variable.
+
+803
+01:48:06,435 --> 01:48:09,536
+In order to differentiate this, what I can use?
+
+804
+01:48:09,756 --> 01:48:10,975
+I can use this.
+
+805
+01:48:12,756 --> 01:48:30,716
+Keyword. This keyword allows me to provide a reference to the global variable. If you use this dot, after that, if you use the name of the variable, then Java Virtual Machine understand that you are talking about the globally defined variable.
+
+806
+01:48:30,716 --> 01:48:40,716
+Okay. Otherwise, it will think that, okay, so you want to use the locally defined variable. Okay. So therefore, we...
+
+807
+01:48:40,756 --> 01:48:46,176
+We use this keyword in order to differentiate the local variable from the global variable.
+
+808
+01:48:46,775 --> 01:48:46,876
+Okay.
+
+809
+01:48:47,336 --> 01:48:55,815
+Now, or or Kant's question is that, okay, why not using the keyword this here as well?
+
+810
+01:48:56,136 --> 01:48:56,395
+Okay.
+
+811
+01:48:56,855 --> 01:48:58,436
+Now, you can do that.
+
+812
+01:48:58,436 --> 01:49:08,756
+But so if you use this keyword in front of kit, basically, you are going to tell the Java compiler you want.
+
+813
+01:49:08,756 --> 01:49:12,775
+You want to access to the globally defined member fields.
+
+814
+01:49:14,176 --> 01:49:17,275
+You can use it, but it is not necessary.
+
+815
+01:49:17,536 --> 01:49:22,895
+The reason that it's not necessary, since there is no local variable with the same name,
+
+816
+01:49:23,615 --> 01:49:34,576
+Java Virtual Machine will automatically create a connection between the global member field and this one.
+
+817
+01:49:34,576 --> 01:49:38,476
+So it will understand that you want to use the global member field reference.
+
+818
+01:49:40,372 --> 01:49:40,872
+Okay.
+
+819
+01:49:41,172 --> 01:50:01,372
+But if you had a locally defined member field, such as in the arguments, okay, or it could also be defined within the sum method somewhere before this line with the same keyword name, kit, in that case, you would have to use this keyword, okay?
+
+820
+01:50:09,203 --> 01:50:09,663
+Ok.
+
+821
+01:50:10,420 --> 01:50:15,559
+Default constructor, I already told you about why we are using default constructor.
+
+822
+01:50:16,039 --> 01:50:28,219
+If you don't have a constructor defined in your code, such as in this example, here you see that A class does not have a default constructor in it.
+
+823
+01:50:28,219 --> 01:50:37,219
+So in that case, Java Virtual Machine will create the constructor by default, and it will create a zero parameter constructors.
+
+824
+01:50:38,420 --> 01:50:42,420
+You can have also constructors with parameters.
+
+825
+01:50:42,420 --> 01:50:48,420
+You can have one parameter constructor, two parameter constructor as well.
+
+826
+01:50:48,420 --> 01:50:51,420
+In the same class you can have multiple constructors.
+
+827
+01:50:51,420 --> 01:50:56,420
+You can have one parameter constructor with the same name, two parameter constructor,
+
+828
+01:50:56,420 --> 01:50:58,420
+three parameter constructor.
+
+829
+01:51:02,000 --> 01:51:10,219
+A method with the same name, but with different parameters than what we call this overloading.
+
+830
+01:51:10,219 --> 01:51:26,659
+Okay. We use the keyword overloading. Basically, Java compiler allows you to do this. You can have the same name methods in the same class, but those same name methods must have different parameters in it.
+
+831
+01:51:26,800 --> 01:51:30,000
+Okay. If they have the same parameters, then the Java compiler.
+
+832
+01:51:30,000 --> 01:51:32,000
+Weiler will give an error.
+
+833
+01:51:32,420 --> 01:51:32,679
+Okay?
+
+834
+01:51:37,619 --> 01:51:43,699
+Okay, so one last method that we are going to learn is the main method.
+
+835
+01:51:43,699 --> 01:51:56,000
+Okay, so far we learned the constructor method, we learned the final methods, and now we are going to learn the main method, which we are using in order to provide a control flow.
+
+836
+01:51:56,559 --> 01:52:02,259
+Okay, now every program, when you start your program, it has some purpose.
+
+837
+01:52:02,819 --> 01:52:05,619
+Okay, for example, you might want...
+
+838
+01:52:05,619 --> 01:52:10,099
+You might want to write a program that would count from 1 to 10.
+
+839
+01:52:10,199 --> 01:52:15,000
+You might want to have a program that would write something into the screen.
+
+840
+01:52:15,340 --> 01:52:15,479
+Okay.
+
+841
+01:52:15,739 --> 01:52:19,739
+You might have a program that has a certain purpose.
+
+842
+01:52:20,239 --> 01:52:26,880
+Now, every program has a sequence of execution that needs to be done.
+
+843
+01:52:26,880 --> 01:52:28,880
+And these executions.
+
+844
+01:52:29,427 --> 01:52:38,608
+Are the flow of the program that is written in the main method of that class.
+
+845
+01:52:39,108 --> 01:52:39,268
+Okay.
+
+846
+01:52:39,587 --> 01:52:45,688
+We use main method in order to provide the control flow of the program.
+
+847
+01:52:45,988 --> 01:52:46,948
+So you will see.
+
+848
+01:52:48,307 --> 01:52:52,247
+In the example, so in the next slide.
+
+849
+01:52:53,087 --> 01:52:57,447
+And the main method is defined as public and static.
+
+850
+01:52:57,927 --> 01:52:58,107
+Okay.
+
+851
+01:52:58,467 --> 01:53:02,867
+It is public because you want the main method to be accessible by other objects.
+
+852
+01:53:03,667 --> 01:53:17,067
+And it needs to be defined as static because the main method should be able to code without requiring the creation of that object.
+
+853
+01:53:17,067 --> 01:53:20,147
+You will see again what I'm talking about in a minute.
+
+854
+01:53:21,067 --> 01:53:24,647
+And the main method will not return anything.
+
+855
+01:53:24,907 --> 01:53:26,627
+Therefore, the return type is void.
+
+856
+01:53:27,367 --> 01:53:27,407
+Okay.
+
+857
+01:53:28,027 --> 01:53:31,667
+And by the difference...
+
+858
+01:53:31,667 --> 01:53:35,407
+Default syntax, the main method has this parameter.
+
+859
+01:53:36,267 --> 01:53:40,327
+It takes a string array as its input.
+
+860
+01:53:40,727 --> 01:53:40,827
+Okay.
+
+861
+01:53:41,767 --> 01:53:47,347
+So this is the default syntax for the main method.
+
+862
+01:53:47,507 --> 01:53:56,567
+So therefore, you need to learn how you define a main method because this is something that you are going to use a lot.
+
+863
+01:53:57,067 --> 01:53:57,207
+Okay.
+
+864
+01:53:57,807 --> 01:53:59,587
+Now, let's take a look at.
+
+865
+01:53:59,667 --> 01:54:09,147
+Example, I have shown you this example before, but at that time I didn't talk about the constructor and the main method.
+
+866
+01:54:09,307 --> 01:54:11,887
+Now let us now take a look at the constructor.
+
+867
+01:54:13,047 --> 01:54:22,707
+So remember the constructor is the method which is being called when you want to create an object of the class.
+
+868
+01:54:23,252 --> 01:54:29,672
+Here, and the constructor, the name of the constructor is the same name as the class, okay?
+
+869
+01:54:29,932 --> 01:54:32,412
+And the constructor has no return type.
+
+870
+01:54:32,572 --> 01:54:35,772
+As you see, after public, there is no return type.
+
+871
+01:54:36,292 --> 01:54:39,012
+And the constructor must be defined as public.
+
+872
+01:54:39,488 --> 01:54:56,268
+Okay. And the constructor can be zero parameter constructor, one parameter constructor, two parameter constructor. In this particular case, it's one parameter constructor and the type of the parameter is string. Okay. So we are passing.
+
+873
+01:54:57,844 --> 01:55:06,384
+We are passing a plate number as the argument to this constructor.
+
+874
+01:55:06,384 --> 01:55:16,904
+And here you see that we are getting the locally defined parameter and assigning to the globally defined variable.
+
+875
+01:55:17,444 --> 01:55:25,844
+OK. And since the name of the globally defined variable is different than this variable, so I don't have to use this.
+
+876
+01:55:25,844 --> 01:55:26,844
+This keyword here.
+
+877
+01:55:27,344 --> 01:55:27,844
+Okay.
+
+878
+01:55:28,043 --> 01:55:29,543
+Now this is the constructor.
+
+879
+01:55:29,844 --> 01:55:36,344
+I already talked, told you about to get methods and set method.
+
+880
+01:55:36,844 --> 01:55:40,344
+We usually call these methods as getter and setter methods.
+
+881
+01:55:41,344 --> 01:55:44,344
+There is another method introduce self method.
+
+882
+01:55:44,844 --> 01:55:49,344
+So this introduce self method does not return anything in this particular case.
+
+883
+01:55:49,543 --> 01:55:51,844
+So it, the return type is void.
+
+884
+01:55:52,083 --> 01:55:54,864
+And it doesn't take any parameters.
+
+885
+01:55:55,724 --> 01:56:00,043
+And here you see system.out.println.
+
+886
+01:56:00,684 --> 01:56:09,463
+And so within the parentheses, you see some string and plus a method name get played.
+
+887
+01:56:09,923 --> 01:56:10,184
+Okay.
+
+888
+01:56:10,484 --> 01:56:12,524
+Now let's take a look at this one.
+
+889
+01:56:12,832 --> 01:56:26,712
+When you want to write something into the console, okay, when you write something into the screen, in that case, we use system.out.println, okay?
+
+890
+01:56:26,712 --> 01:56:36,552
+Now, system is a class in Java software development kit, is in Java library.
+
+891
+01:56:37,024 --> 01:56:42,324
+And out is, so one of its subclasses, system.out.
+
+892
+01:56:42,684 --> 01:56:45,304
+And after that, you have the print line method.
+
+893
+01:56:46,083 --> 01:56:48,564
+Now, the print line method is a static method.
+
+894
+01:56:48,564 --> 01:56:56,463
+So therefore, if you have a static method, you can call a static method directly by using the class name.
+
+895
+01:56:56,948 --> 01:56:58,728
+That this method belongs to.
+
+896
+01:56:58,868 --> 01:57:05,028
+I have told you this when I talked to you about static methods.
+
+897
+01:57:06,628 --> 01:57:07,468
+Okay.
+
+898
+01:57:07,688 --> 01:57:12,028
+So remember, if there is a static method...
+
+899
+01:57:12,655 --> 01:57:25,395
+Okay, that you want to call. You can directly call by writing the name of the class and after that by calling its methods. Okay. So here that's what we are doing under system.
+
+900
+01:57:29,844 --> 01:57:35,543
+Under system class, there's out class, and we are calling a static member method, okay?
+
+901
+01:57:36,104 --> 01:57:45,203
+And this member method, print line, is basically taking a string value and then printing into the screen, okay?
+
+902
+01:57:45,784 --> 01:57:49,923
+And you see that here, within the quotation mark, there is a string.
+
+903
+01:57:50,612 --> 01:57:52,872
+Plus, there is another string.
+
+904
+01:57:52,872 --> 01:58:00,332
+So this means that you can use the plus sign in order to add two different strings together.
+
+905
+01:58:01,043 --> 01:58:25,423
+Now, why do I say string here? So you see a method call here, getPlate. Let's go to the getPlate. So remember, the getPlate method returns a string value in return. So this means that the value that we will have here is string value. So we will have two strings, a plus sign in Bitbin. So what's going to happen is that it's going to append these two.
+
+906
+01:58:25,840 --> 01:58:32,619
+It's going to append the second key string to the first one and then print it into the screen.
+
+907
+01:58:33,039 --> 01:58:33,260
+Okay.
+
+908
+01:58:33,480 --> 01:58:35,239
+So that's the introduce self method.
+
+909
+01:58:35,699 --> 01:58:39,659
+And the last method is the main method, which I told you in the previous slide.
+
+910
+01:58:40,212 --> 01:58:45,012
+So the main method has the control flow.
+
+911
+01:58:45,012 --> 01:58:53,252
+If you want this class to do an execution, then you must have a main method.
+
+912
+01:58:53,932 --> 01:58:57,472
+And the main method is defined as public and static.
+
+913
+01:58:58,068 --> 01:59:01,307
+And it does, it doesn't have any return value.
+
+914
+01:59:01,488 --> 01:59:03,608
+That's therefore the return value is void.
+
+915
+01:59:03,608 --> 01:59:08,847
+And so it, it takes string array as its arguments.
+
+916
+01:59:09,387 --> 01:59:09,547
+Okay.
+
+917
+01:59:10,648 --> 01:59:18,568
+Now, as you see it in the first line of the main method,
+
+918
+01:59:18,948 --> 01:59:24,528
+first I am defining a car.
+
+919
+01:59:25,332 --> 01:59:28,572
+A type variable.
+
+920
+01:59:29,351 --> 01:59:33,172
+I'm calling it a car and its type is car.
+
+921
+01:59:34,052 --> 01:59:34,212
+Okay.
+
+922
+01:59:34,932 --> 01:59:37,972
+After I define it in the second line.
+
+923
+01:59:38,972 --> 01:59:39,311
+Okay.
+
+924
+01:59:40,072 --> 01:59:43,432
+In the right hand side of this equation.
+
+925
+01:59:44,404 --> 01:59:48,584
+First, I am creating an object of the car class.
+
+926
+01:59:48,684 --> 01:59:51,024
+How do I create an object of the car class?
+
+927
+01:59:51,104 --> 01:59:53,604
+As you see, I am calling the constructor.
+
+928
+01:59:54,244 --> 02:00:00,384
+So remember, when you want to create an object of the class, you have to call the constructor method.
+
+929
+02:00:01,324 --> 02:00:06,364
+And as you can see, the constructor method is a one-parameter constructor.
+
+930
+02:00:06,364 --> 02:00:08,684
+I have to pass a string value.
+
+931
+02:00:09,492 --> 02:00:21,132
+As its constructor, so what it's going to do, it's going to create an object of this car class with this parameter in it, okay?
+
+932
+02:00:21,132 --> 02:00:30,252
+And then Java Virtual Machine will create this and it will return the reference to this object.
+
+933
+02:00:30,676 --> 02:00:35,115
+And it will assign it to this variable, okay?
+
+934
+02:00:35,376 --> 02:00:38,696
+Where the type of the variable is car, okay?
+
+935
+02:00:39,096 --> 02:00:47,736
+Now, I have a variable that points to this newly created object, which is in the physical memory, right?
+
+936
+02:00:48,056 --> 02:00:53,056
+And I can call any of the methods of this object.
+
+937
+02:00:53,056 --> 02:00:58,676
+So now I created an object of based on this class.
+
+938
+02:00:58,676 --> 02:01:02,155
+And this object has all these methods in it.
+
+939
+02:01:02,556 --> 02:01:09,376
+And I'm going to call introduce self method of this object by utilizing this reference.
+
+940
+02:01:09,956 --> 02:01:10,096
+OK.
+
+941
+02:01:10,376 --> 02:01:13,556
+And if I call the introduce self method, what's going to do?
+
+942
+02:01:13,856 --> 02:01:17,916
+It's going to write the my plate into the console.
+
+943
+02:01:17,916 --> 02:01:22,216
+And right after that, it's going to call the get plate method.
+
+944
+02:01:22,716 --> 02:01:24,916
+And the get plate method will get the...
+
+945
+02:01:25,427 --> 02:01:29,647
+Value of the plate, which is the data member field.
+
+946
+02:01:30,207 --> 02:01:33,167
+So what is the value of the plate?
+
+947
+02:01:33,587 --> 02:01:38,407
+I assigned it with this license plate number.
+
+948
+02:01:38,527 --> 02:01:42,367
+So it's going to write the license plate number that you see here.
+
+949
+02:01:42,367 --> 02:01:42,967
+Okay.
+
+950
+02:01:44,500 --> 02:01:52,659
+So this is how actually we are running, we are executing a given class in Java programming language.
+
+951
+02:01:52,659 --> 02:01:54,380
+We have the main method.
+
+952
+02:01:54,739 --> 02:01:58,059
+When we call, when we do Java dot.
+
+953
+02:01:58,676 --> 02:02:02,536
+Car.class, what's going to do?
+
+954
+02:02:02,996 --> 02:02:06,436
+The Java Virtual Machine will execute the main method.
+
+955
+02:02:06,576 --> 02:02:09,655
+Whatever you see in the main method will be executed.
+
+956
+02:02:10,235 --> 02:02:13,676
+And the final results will be written into the console.
+
+957
+02:02:14,235 --> 02:02:14,695
+Okay?
+
+958
+02:02:16,148 --> 02:02:19,247
+Now, I'm going to stop here for today.
+
+959
+02:02:20,507 --> 02:02:24,528
+And so this is slide number 33.
+
+960
+02:02:25,247 --> 02:02:34,347
+What I expect you until the next lecture, I want you to download Eclipse into your computer.
+
+961
+02:02:34,988 --> 02:02:39,228
+Make sure that you see the same screen that I'm seeing right now.
+
+962
+02:02:39,615 --> 02:02:46,515
+And after that, I want you to download the codes that I uploaded into the course website.
+
+963
+02:02:47,507 --> 02:03:03,007
+And I want you to import those codes into the Eclipse environment and make sure that you see under the source file, you see all these codes underneath it.
+
+964
+02:03:03,287 --> 02:03:11,087
+And then I want you to open the car class that I'm showing right now here on the slide.
+
+965
+02:03:11,604 --> 02:03:13,323
+In your Eclipse environment.
+
+966
+02:03:13,903 --> 02:03:22,743
+And I want you to compile it and run it and see the result in the console section of the Eclipse.
+
+967
+02:03:22,743 --> 02:03:23,703
+Okay.
+
+968
+02:03:25,844 --> 02:03:29,304
+This is what I expect you to do till the next.
+
+969
+02:03:29,543 --> 02:03:31,363
+So this is your console.
+
+970
+02:03:32,003 --> 02:03:37,344
+And when you run your code, you will see the resulting output in the console.
+
+971
+02:03:37,923 --> 02:03:41,243
+And so hopefully in next lecture, we will continue from there.
+
+972
+02:03:42,203 --> 02:03:42,484
+Okay.
+
+973
+02:03:43,524 --> 02:03:45,024
+Any questions so far?
+
+974
+02:03:53,076 --> 02:04:01,195
+Okay, so no question. We are at slide number 33. Again, so we will continue from this point forward.
+
+975
+02:04:01,195 --> 02:04:07,396
+But I want to make sure that everybody in this class downloaded Eclipse and downloaded the codes.
+
+976
+02:04:08,155 --> 02:04:17,356
+And so at least experimented with the car class example that I'm showing you right now.
+
+977
+02:04:18,163 --> 02:04:45,344
+Arkadaşlar, gelecek haftaya kadar lütfen sizlerden beklediğim bu Eclipse'i indirmeniz, dersin sayfasındaki kodları indirmeniz, Eclipse'e import etmeniz, Eclipse'e import ettikten sonra da bu öğrendiğimiz konseptler, constructorlar, static ve final keywordler, private ve public access modifierlar,
+
+978
+02:04:45,712 --> 02:05:00,592
+Main Method bunların hepsini bu Car Example üzerinde incelemeniz, kodu compile etmeniz, çalıştırmanız ve sonucunu şeyin üzerinde konsolda görmeniz.
+
+979
+02:05:01,092 --> 02:05:03,412
+Gelecek hafta kaldığımız yerden devam edeceğiz.
+
+980
+02:05:05,032 --> 02:05:07,632
+Katıldığınız için teşekkür ederim. Haftaya görüşmek üzere.
+
+981
+02:05:12,148 --> 02:05:14,028
+İyi günler, iyi dersler ederim arkadaşlar.
