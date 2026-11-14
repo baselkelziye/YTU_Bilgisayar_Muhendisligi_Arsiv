@@ -1,0 +1,2147 @@
+1
+00:09:52,947 --> 00:10:07,187
+Hepiniz hoş geldiniz. Bugün Nesne'ye yönelik programlama dersinde beraberiz. Mevcudumuz az ama biz bir taraftan başlayalım.
+
+2
+00:10:07,187 --> 00:10:18,847
+Bakın, geldi zamanla gelenler olacaktır. Zaten kayıt altında olduğu için dersler arkadaşlarımız oradan da takip edebilirler diye düşünüyoruz.
+
+3
+00:10:19,316 --> 00:10:41,516
+Şimdi geçtiğimiz hafta bu hafta için dosya akışlarıyla ilgili bir şeyler işleriz diye yazmıştım. Fakat ben programda hali hazırda exception handling kısmını oluştururken niyeyse aklamışım. Çünkü dosya ve akış tarafına bakarken ya exceptionlar burada var anlatmadık onları diye düşündüm. O yüzden öyle bir haftayı anlatmışız.
+
+4
+00:10:41,940 --> 00:10:51,220
+Açıkçası. Burada o yüzden exception handling ve unit testleri bu hafta sizlere anlatıyor olacağım.
+
+5
+00:10:51,680 --> 00:10:58,800
+Exception handling yani hata yıklama sistemleri nesne yönelimi tarafta oldukça önem arz ediyor.
+
+6
+00:10:58,800 --> 00:11:04,240
+O yüzden güzel anlayıp kavramamız elzem, onu söyleyebilirim.
+
+7
+00:11:04,640 --> 00:11:09,800
+Muhakkak kullanacağımız yapılardan birisi belki C'de veya Sambri tarafında bunu...
+
+8
+00:11:09,940 --> 00:11:10,920
+İstikendimiz
+
+9
+00:11:12,244 --> 00:11:26,824
+Hata olursa diye, if else gibi yapılarla, kontrol bloklarıyla veya ekrana çeşitli yazdırdığımız mesajlarla gerçekleştiriyoruz. Burada o işler daha profesyonel bir halde ele alınabiliyor.
+
+10
+00:11:26,824 --> 00:11:40,043
+Şimdi tabii ki exception dediğimizde kodumuzun akışında çeşitli problemler söz konusu. Bu problemler kodun akışını bozabilir, kodun lojiğini bozabilir veya
+
+11
+00:11:40,244 --> 00:11:42,923
+Kodun tamamen çalışmasını engelleyebilir.
+
+12
+00:11:43,264 --> 00:11:45,364
+Farklı farklı birçok şey olabilir.
+
+13
+00:11:45,524 --> 00:11:48,004
+Pekala bu problemler neden kaynaklanıyor?
+
+14
+00:11:49,264 --> 00:11:52,604
+Java Virtual Machine'den kaynaklanan çeşitli problemler olabilir.
+
+15
+00:11:53,144 --> 00:11:54,903
+Sürekli o da güncelleştirme alıyor.
+
+16
+00:11:54,903 --> 00:12:03,824
+Yeni gerçekleştirilen modüller tanıtma çıktıktan sonra tekrardan üzerinde baklar kastedildiğinde güncelleniyor.
+
+17
+00:12:04,303 --> 00:12:07,644
+Ama bundan kaynaklanan çeşitli problemlerimiz söz konusu olabilir.
+
+18
+00:12:08,244 --> 00:12:20,964
+Kullanıcıdan veri okuyorsunuzdur. Siz kullanıcıdan integer değer okumak istiyorsunuzdur. Kullanıcı size string değerler giriyordu gibi çeşitli programın aksamasına sebebiyet veren şeyler olabilir.
+
+19
+00:12:20,964 --> 00:12:25,964
+Veya sintaksal hiçbir hata yoktu. Fakat...
+
+20
+00:12:27,539 --> 00:12:30,480
+Logical bir problem olabilir.
+
+21
+00:12:31,199 --> 00:12:32,679
+Dizi yiğitlendirmemişizdir.
+
+22
+00:12:32,779 --> 00:12:38,419
+Dizinin boyutundan daha fazla dizinin içerisine eleman koymaya çalışıyoruzdur.
+
+23
+00:12:38,419 --> 00:12:39,419
+Veya...
+
+24
+00:12:39,988 --> 00:12:46,588
+Kullanma eğilimimiz vardır, stack, taşmıştır gibi birçok farklı farklı durum söz konusu olabilir.
+
+25
+00:12:47,368 --> 00:12:51,208
+C programlama biri tarafında bunu düşündüğünüzde mesela ne olur?
+
+26
+00:12:51,668 --> 00:13:00,768
+Siz 10 elemanlı bir diziye 11. elemanı koymak istediğinizde yetkisiz bellek gelişimi yapmak istediğinizden ötürü programın akışı direkt sonlanacaktır.
+
+27
+00:13:01,328 --> 00:13:05,488
+Fakat burada programın akışını sollanttırmak tabii ki bir alternatif.
+
+28
+00:13:07,988 --> 00:13:17,528
+Aynı zamanda programın akışını sonlandırmaya yak olarak ne yapabilirim diye çeşitli stratejiler geliştirebilirsiniz.
+
+29
+00:13:18,088 --> 00:13:31,248
+Yani dizinin boyutu küçük olduğu için diziye yeni eleman ekleyemiyorsanız, mesela geliştireceğiniz yöntemlerden de birisi, boyutunu büyütme uygunluğu varsa, boyutunu büyüteyim öyle ekleyip olabilir gibi gibi.
+
+30
+00:13:32,052 --> 00:13:40,932
+Farklı şeyler. Tabii bir de işte Murphy kuralları gereği bir program hatalı çalışacaksa onu engelleyemezsiniz yani.
+
+31
+00:13:42,072 --> 00:13:47,532
+Sizin elinizde olmayan birçok farklı durumdan dolayı hatayla karşılaşılabilir.
+
+32
+00:13:48,292 --> 00:13:51,692
+Siz bile şaşırabildiğiniz çeşitli durumlar oluyordur.
+
+33
+00:13:51,772 --> 00:13:54,451
+Ya burada da mı hata oldu çok böyle falan diye.
+
+34
+00:13:55,532 --> 00:13:59,251
+İnternet connection'ı olarak çalışan bir modül yazmışsınızdır.
+
+35
+00:13:59,312 --> 00:13:59,991
+Web metodunuz.
+
+36
+00:14:00,052 --> 00:14:27,731
+Yani internet bağlantısı kötüdür veya sizin hala hazırda programı çalıştırdığınız yerde işte ne bileyim bir VPN kurmanız gerekiyordur. Fakat işte mesela üniversitemiz bizim VPN kurduğumuz IP'leri denetliyor, uygun olmayan bir IP ile iletişime gitmeye çalışıyor. Hiç yani senin kontrolünde olan anlayamadığın bir hata söz konusu olabilir. Ama programın çalışmasını engelleyecek işte böyle durumlarda bile.
+
+37
+00:14:28,052 --> 00:14:30,312
+Ne yapayım? Bunların kontrolü.
+
+38
+00:14:30,792 --> 00:14:34,372
+Dosya erişimlerine önümüzdeki hafta bakıyor olacağız.
+
+39
+00:14:35,152 --> 00:14:44,752
+Dosya erişimleriyle ilgili haklar da bu hataların en büyük sebeplerinden birisi halinde oluyor, olacak.
+
+40
+00:14:45,971 --> 00:14:55,731
+Hatanın çeşidi, tipi, özelliği ne olursa olsun hata oluşması durumunu biz değerlendirip ele alabiliriz.
+
+41
+00:14:55,731 --> 00:15:04,331
+Yani şunu demek istiyorum. Programımızda hata oluşabilecek bir yer varsa illa hata oluşacağı manasına gelmez.
+
+42
+00:15:05,011 --> 00:15:25,172
+Ama, oldu ki bir hatayla karşılaşılırsa diye bizim bunlarla ilgili hata rutinlerimizi de yazmamız, o exception'ı, bu hata dediğimiz şey, exceptional durum burada, exception'ı handling etmemiz, ele almamız, değerlendirmemiz tabii ki güzel olacaktır.
+
+43
+00:15:25,779 --> 00:15:38,599
+Hataları değerlendirirken farklı farklı versiyonlar var. Yani bir metotta doğru çalışıp çalışmadığını, siz kontrol etmek için true-false gibi değerler dönmesini bekleyebilirsiniz.
+
+44
+00:15:39,819 --> 00:15:40,779
+Çeşitli.
+
+45
+00:15:41,716 --> 00:15:53,395
+Bu hataları kontrol etmek için yine bir böyle form komponentleri üzerinden çeşitli mekanizmalar üretip stringlerle ekranlara bir şeyler yazdırabilirsiniz.
+
+46
+00:15:53,816 --> 00:16:06,296
+Tabi bir de bu hatalarla uğraşmanın en güzel yanı bu dersin konusu olacak şey daha önce farklı bir belki programlama dersinde görmediğiniz exception handling kavramı.
+
+47
+00:16:07,135 --> 00:16:09,296
+Temelde error aldığımız...
+
+48
+00:16:09,716 --> 00:16:20,216
+Bu durumda bu errorla nasıl boşa çıkabiliriz? Neler yapmamız lazım? Programın akışını ne şekilde yönlendirmen lazım? Bununla ilgili bir durum.
+
+49
+00:16:20,216 --> 00:16:25,296
+Şimdi bizim Java tarafında
+
+50
+00:16:27,316 --> 00:16:43,256
+Probable diye hali hazırda kullandığımız kütüphaneler söz konusu. Bir sınıf aslında bu. Buradaki UML diagramından da anlayabileceğiniz üzere Java langın altındaydı herhalde.
+
+51
+00:16:43,764 --> 00:16:45,823
+Muhtemelen Java langın altında.
+
+52
+00:16:46,344 --> 00:16:48,144
+Troll'un bir sınıf.
+
+53
+00:16:48,783 --> 00:16:57,003
+Bu sınıftan kalıtım yoluyla türetilmiş, bakın, error ve exception olmak üzere iki adet.
+
+54
+00:16:58,644 --> 00:17:06,344
+Yeni sınıf söz konusu ve error üretildiği durumda biz bunları unchecked olarak isimlendiriyoruz.
+
+55
+00:17:06,344 --> 00:17:18,344
+Ve error üretildiği durumda yani ekstradan bizim programın içerisinde başa çıkmamız değil de error üretilmesin, exception üretilsin diye çeşitli aksiyonlar gerçekleştirebiliriz.
+
+56
+00:17:19,244 --> 00:17:26,503
+O yüzden exception 1 diye üretilen sınıf ve bundan da IO ve runtime exception olmak üzere iki farklı exception.
+
+57
+00:17:26,644 --> 00:17:43,564
+üretiliyor. Runtime, exceptionlar tahmin edebileceğiniz üzere programın akışı sırasında cereyan eden çeşitli olaylardan duruyoruz. Sıfıra bölmüşsünüz. Sıfıra bölme problemi. İşte siteyin taşması. Dizi yihtendirmeden dizinin içine eleman yazmanız.
+
+58
+00:17:43,667 --> 00:17:51,387
+dizinin boyutundan daha fazla dizinin içine eleman koyulan gibi farklı sebeplerden ötürü runtime exceptionlarla karşılaşabiliriz.
+
+59
+00:17:51,847 --> 00:17:57,288
+Bu runtime exceptionları unchecked, kontrollü önceden bizde olmayan exceptionlar diyoruz.
+
+60
+00:17:57,627 --> 00:18:10,467
+I-exceptionları ise giriş-çipiş birimlerinden gelen verilerin tipleri, boyutları, şekilleriyle alakalı olduğu için ve bunları biz yönlendirebileceğimiz için bunlara da checked exceptionlar diyoruz.
+
+61
+00:18:10,467 --> 00:18:11,667
+Bunlarla ilgili örnekler.
+
+62
+00:18:11,667 --> 00:18:16,027
+Nehter yapıyor olacaktır dersimizin konusu bu.
+
+63
+00:18:16,507 --> 00:18:33,451
+Şimdi error burada Java Lang'ın altında, az önce söyledim, bize sağlanan Java Lang kütüphanesinin altında bir sınıf temelde bakıldığında ve bu sınıf programın akışını herhangi bir şekilde bizim...
+
+64
+00:18:33,779 --> 00:18:56,259
+müdahale edemeyeceğimiz durumda bozan, akışının devam etmesini sebebiyet veren bir olay. Yani handle bile edemeyeceğimiz çeşitli olaylar neticesinde error sınıfından hata ekranı yazıldığını görüyor olacağız.
+
+65
+00:19:01,460 --> 00:19:09,180
+Actress'in farklı versiyonlarına göre Unsupported Class Version Error diye bir hata tipi varmış.
+
+66
+00:19:09,180 --> 00:19:13,340
+Bakın burada enteresan. Böyle hata tipleri de söz konusu olabiliyor.
+
+67
+00:19:13,500 --> 00:19:15,180
+Yani eğer ki siz...
+
+68
+00:19:16,319 --> 00:19:44,279
+Farklı farklı versiyonlar kullanarak yazdığınız. Normalde tabii yani şöyle söyleyeyim. Geriye yönelik uyumlu diye bir şey var. Siz bir Java kodu yazıyorsanız bir sonraki Java versiyonu çıktığında bir önceki versiyonları hep kullanabilirsiniz. Ama bu çok uzun süreden beri böyle cereyan ettiği için bunun da bir limitasyonu var. Eğer ki çeşitli uyumsuzluklar varsa bunlar size söylenebiliyor. Runtime exceptionları ise en çok bizim yaptığımız.
+
+69
+00:19:44,319 --> 00:20:08,139
+hatalı kodlardan kaynaklanıyor. Bunlardan birisi null pointer exception. Zaten şimdiye kadar muhakkak Java kodu oturup yazmaya başladıysanız, almışsınızdır. Bir sınıfı initialize etmediksek, constructorını kullanarak yeni bir oradan obje üretmediksek en büyük sebebi budur. Null pointer exception'ın veya az önce söyledik işte index out of one. Yani
+
+70
+00:20:08,819 --> 00:20:13,980
+Bir dizi 10 elemanlıdır, 11. elemanına hala daha veri eklemek istiyorsundur sen.
+
+71
+00:20:14,460 --> 00:20:25,379
+Veya 10 elemanlı bir dizinin 17. elemanının ne olduğunu öğrenmek istiyorsundur gibi taşma durumlarında karşınıza çıkan hata.
+
+72
+00:20:25,859 --> 00:20:36,759
+IA Exception'ları ise işte giriş çıkış birimleri, yani komut satırından yazdığınız hata, komut satırından kullanıcıdan okuduğunuz şeylerde de tabii hatalı versiyonlar olabilir ama.
+
+73
+00:20:36,819 --> 00:20:51,759
+Daha çok dosyadan okuyup yazma veya internetten gelen verilerin doğru formatta gelip gelmediği veya hiç gelip gelmediği gibi çeşitli durumlarda karşılaşacağımız exception tipi.
+
+74
+00:20:52,147 --> 00:21:01,607
+Ve bu exception'larla bizim kendimizin bir şeyler üretip programın akışını o şekilde yönlendirmemiz gerekiyor tabii ki.
+
+75
+00:21:02,387 --> 00:21:12,007
+Ve IO exception tarafına da check exception denildiğini, runtime exception tarafına uncheck dediğimizi söylemek istiyorum.
+
+76
+00:21:12,007 --> 00:21:19,647
+Ve aynı zamanda runtime exception'lar Java'ların altında, IO exception'lar olsa Java IO'nun altında olduğunu.
+
+77
+00:21:20,147 --> 00:21:22,728
+Bir kez daha burada sizlere göstermiş olalım.
+
+78
+00:21:22,807 --> 00:21:25,427
+Pekala, nasıl handle ediyoruz hataları?
+
+79
+00:21:25,887 --> 00:21:27,927
+Try, catch blokları içerisinde.
+
+80
+00:21:28,527 --> 00:21:36,728
+Sizin hatalı çalışma ihtimali olan bir kodunuz varsa onu try blokunun içerisine yazıyorsunuz.
+
+81
+00:21:37,487 --> 00:21:39,567
+Bu tek satır kodu olmak zorunda değil.
+
+82
+00:21:39,788 --> 00:21:41,147
+Bir blok olabilir.
+
+83
+00:21:41,708 --> 00:21:43,347
+10 satırdan oluşan bir blok olabilir.
+
+84
+00:21:44,276 --> 00:21:51,576
+Yine yazdığımız çeşitli ayrı sınıfların metodlarını falan çağırarak bir sürü blojiyi karmakarışı falan bir iş yapabilirsiniz.
+
+85
+00:21:52,056 --> 00:21:56,036
+Baştan sona hata olma olasılığı olan bir blogsa bu.
+
+86
+00:21:56,195 --> 00:21:57,456
+Buraya yazmanız bekleniyor.
+
+87
+00:21:57,615 --> 00:21:58,675
+Try'in içerisine.
+
+88
+00:21:59,256 --> 00:22:02,396
+Try denildiğinde şu, bunu çalıştırmayı dene.
+
+89
+00:22:03,155 --> 00:22:04,436
+Tamam mı? Bunu çalıştırmayı dene.
+
+90
+00:22:05,115 --> 00:22:06,236
+Çalıştırabiliyorsan ne ala?
+
+91
+00:22:06,655 --> 00:22:09,115
+Sanki try get blog hiç yokmuş gibi davranır.
+
+92
+00:22:09,428 --> 00:22:15,208
+Eğer ki bu kodun oluşmasında bir hata çıkarsa, catch blogunun içerisine gel.
+
+93
+00:22:15,827 --> 00:22:41,427
+Catch Blonde'un içerisine gel. Catch Blonde'da da ne tarz bir hata çıktıysa, bu matematiksel bir hata olabilir az önce gördüğünüz gibi. Null Point Rexception hatası olabilir. Farklı farklı birçok hata olabilir. Ne tarz hata alma ihtimaliniz olduğunu tahmin ediyorsanız ki bu hata exception tiplerine dair sınıf kendimiz de yazabiliyoruz. Birazdan göreceğiz. Ben olsa olsa böyle bir hata alırım.
+
+94
+00:22:41,491 --> 00:23:03,511
+Burada diye kendimiz de söyleyebiliyoruz. Mesela bir exception, IO exception'ı aldığınızı buraya belirtiyoruz ve burada artık o exception neticesinde ne yapmanız gerekiyorsa. Diyelim ki sıfıra bölme hatası aldınız. Burada sıfıra bölme hatası aldığınızda burada bölme işleminin sonucunu bir değişkene atıyorsunuz. O değişkenin değerini sıfır yapıyorsunuz.
+
+95
+00:23:04,403 --> 00:23:09,124
+sıfıra bölemiyorsam, A değişkeni sıfıra bölemiyorsam, A'nın değeri sıfır olsun.
+
+96
+00:23:09,603 --> 00:23:14,023
+Demek istiyorsanız, burada o işlemi gerçekleştirmeniz lazım.
+
+97
+00:23:14,683 --> 00:23:21,103
+Veya programcıya veya kullanıcıya bir uyarı mesajı verebilirsiniz.
+
+98
+00:23:21,460 --> 00:23:49,460
+Yani bak sen bu kodu çalıştırmaya çalıştın. Burada şöyle şöyle bir hata oldu. Ben bunu çalıştıramadım ama programın akışına ben devam ediyorum. Yani çünkü try bloğu çalıştırılamadığında catch bloğu çalıştırılır ve ardından programın akışı kaldığı yerden devam eder. Try catch bloğu olmazsa error olur. Program orada çalışmayı sonlandırır. Nasıl ilerleyeceğini bilemez. Biz en kötü catch bloğunun içerisinde dediğim gibi ekrana...
+
+99
+00:23:49,460 --> 00:23:54,880
+O, exception'ın bilgilerini yazdırabiliriz.
+
+100
+00:23:55,019 --> 00:24:03,320
+Onunla ilgili de bu exception objesinin, instance'ını, print, stack, trace diye bir metod olunca onu yazdırabiliriz.
+
+101
+00:24:03,320 --> 00:24:12,740
+Kendimiz normal sistem, alt print, elenle, daha kullanıcının anlayabileceği, dilde bir şeyler yazdırabiliriz.
+
+102
+00:24:14,003 --> 00:24:19,543
+Lakin bu yazdırma işlemleri, yani bunlar böyle söyleniyor tabii ki.
+
+103
+00:24:19,903 --> 00:24:27,943
+Yani program kullanıcısına hatanın ne olduğunu yazdır diye gidip bunun kılavuzunu da okusanız söyleniyor.
+
+104
+00:24:28,563 --> 00:24:37,623
+Fakat bu durumu ben acizane, hani yıllardır bu işle uğraşan birisi olarak ve bir son kullanıcı olarak size hiçbir şekilde tavsiye etmiyorum.
+
+105
+00:24:38,003 --> 00:24:46,503
+Yani siz mühendis olarak programı geliştirirken, test ederken bunları kullanmanız çok mantıklı.
+
+106
+00:24:46,983 --> 00:24:55,603
+Fakat ürün son kullanıcıya çıktığında adamın hata mesajını ekrana yazdırması inanılmaz derim.
+
+107
+00:24:56,403 --> 00:24:59,323
+Tamam mı? Yani mesela bankacılık uygulaması kullanıyorum.
+
+108
+00:25:00,163 --> 00:25:02,523
+Bankacılık uygulamasında bir modüle tıkladım.
+
+109
+00:25:02,983 --> 00:25:05,463
+Ekranda bana yazıyor ki Now Point Reception.
+
+110
+00:25:06,804 --> 00:25:21,943
+Ya, null pointy exemption ne? Nerede benim para? Ben bu artıcı para göndermek istiyorum, 150 lira. Null pointy exemption ne? Ne demek null pointy exemption? Alıyorsun müşteri temsilcisine, null pointer bir şeyler yazıyor.
+
+111
+00:25:22,084 --> 00:25:30,804
+Ya şimdi, vatandaşa bu söylenir mi? Yani hani, o ekrana bilgi mesajı olarak yazılır mı? Bunun ciddi biri düşünmemiz lazım.
+
+112
+00:25:31,188 --> 00:25:40,108
+Yani yapacağınız şey burada belki enkisi ne olur? Program bir hatayla karşılaştı. Lütfen daha sonra tekrar deneyiniz.
+
+113
+00:25:40,108 --> 00:25:57,108
+Yani bu tarz bir şey yazabilirsin. Ama hatanın ne olduğunu yazıp, session timeout mesela. Ya session timeout demek ne demek? Bu biraz evet benim oturumum belki ben zamanında bir şey yapmadım.
+
+114
+00:25:57,875 --> 00:26:03,875
+Onunla alakalı oluyor olabilir. Yani benim beklediğim şey ne? Tıkladım, dönmeye başladı bir yuvarlak.
+
+115
+00:26:04,596 --> 00:26:30,855
+İşlemimin gerçekleşmesini bekliyorum. Ondan sonra beyaz bir sayfacıktı, session timeout. İşlemim gerçekleşti mi, gerçekleşmedi mi? Ben onu merak ediyorum. Senin session'ın timeout'ını merak etmiyorum. Biz kendimiz programcı olarak bu uyarılar bizim için çok önemli. Session timeout oldu. Tamam, session'ın süretisini ben ya uzatayım, ya session timeout olduğunda ekranın kullanıcıyı daha fazla bilgilendirecek. İşleminiz gerçekleştirilememiştir.
+
+116
+00:26:31,667 --> 00:26:41,487
+verilen süre içerisinde işlem gerçekleştirilemediğinden ötürü herhangi bir para aktarımı hesabımızdan yapılmamıştır.
+
+117
+00:26:41,907 --> 00:26:48,107
+Bir süre sonra tekrar deneyiniz gibi yakınlanıcı, bilgilendirici bir içerik vermek gerekiyor.
+
+118
+00:26:48,107 --> 00:27:00,548
+Bu, yani catch kısmındaki durumları ekrana yazarken lütfen muhatap olduğunuz kitlenin bu konularda dair hiçbir bilgisi olmadığını düşünerek hareket edin.
+
+119
+00:27:01,407 --> 00:27:04,427
+Yani kaç kişi programlanabiliyor diyeceğim.
+
+120
+00:27:04,508 --> 00:27:09,087
+Tabii 3 kez dergiler programlanabiliyor diyorlar ama kime sorsam olabilir.
+
+121
+00:27:09,652 --> 00:27:28,052
+Çok iyi programcıyım modunda ilerliyorlar. Ama yani biz normal olarak düşünüyor olalım. Yani vatandaş bilmez bu işten anlamak. O yüzden buraya eğer ki uyarı yazacaksak illa onun anlayacağı dilden yazmamız lazım.
+
+122
+00:27:28,480 --> 00:27:46,179
+Yoksa, exception'ın, birazdan göreceğiz, exception'ın izini, hangi class'ın buna sebebiyet verdiğini, o class'ın içindeki hangi satırın buna sebebiyet verdiğini, o satırda ne yapmadığımız için böyle bir durumda karşılaştığımızı adama bilgilendirmemizin hiç gereği yok.
+
+123
+00:27:46,179 --> 00:27:55,359
+Bazen öyle mobil application'lar özellikli oluyor ki, yani bir modüle bir tıklıyorsun, bir sayfa exception yazısı çıkıyor kartına. Bende ne alakası var diye.
+
+124
+00:27:56,051 --> 00:28:19,311
+Ben son kullanıcıyım. Ha ben oturup okuyorum. Ne olmuş diye. Şeyde vardı mesela. ATM'de, bu bizim kampüsteki iş bankasının ATM'sinde olmuştu herhalde. Yani oraya şey açılamamış. Onlar herhalde Windows XP'nin embedded versiyonunu kullanıyorlar. Bankalarda çalışan arkadaşlar ama bunlar daha iyi biriler.
+
+125
+00:28:19,731 --> 00:28:25,731
+ATM sonuçta bir arkadaşlık istiyorlar. Windows 2.0 kullanıyorlar diyelim ki.
+
+126
+00:28:25,731 --> 00:28:29,731
+Veya Windows 10 Embedded kullanıyorlar. Onun üzerinde bir program çalışıyor bizimki.
+
+127
+00:28:29,731 --> 00:28:34,731
+Class-Tor Application yani çalışan şey. ATM'nin uygulaması var. Class-Tor Application.
+
+128
+00:28:34,731 --> 00:28:41,731
+Bu bir hata almış. Hatayı uzun uzun error içerisinde yazdırmış. Ben Windows'a bakıyorum arkada.
+
+129
+00:28:42,516 --> 00:28:57,556
+Yani bana ne yılda gibi düşünebiliyor insan. O yüzden burayı biraz uzunca anlattım ama özellikle vurgulamak istiyorum. Çünkü yarın öbür gün gidip sizin de aynı hatayı yapmanızı kesinlikle istedim.
+
+130
+00:28:57,855 --> 00:29:16,916
+Aynı zamanda tabii ki biz programcı olarak bir check exception, kontrol edilebilecek bir exception kullanıyorsak eğer ki nasıl bu exception'ı türeteceğimizi biz de o metodumuzun içerisinden söyleyebiliriz.
+
+131
+00:29:25,855 --> 00:29:51,635
+satırı yazıyoruz. Ya da bu 10 satırı komple bir metodun içerisinde kullanıyorsak, metot patlayacaksa metot patlar. Hata verir, exception üredir. O metodu tanımlarken, metodun prototipini yazdıktan sonra, Crofts, anahtar sözlüğünden sonra, hangi tipte bir exception üretme ihtimali varsa, o exception'i bu üretebilir diye söyleyebiliriz. Ardından içerisinde catch bloklarını,
+
+132
+00:29:53,652 --> 00:30:07,991
+Handle, cache blocklarından nasıl handle edilince bakın, birazdan buna dair de çeşitli örnekler yapıyor olacağız. Evet, bu da önemli bir kısım. Yani yine yazdığımız kodun içerisinde birden fazla tipte hata olabilir.
+
+133
+00:30:08,384 --> 00:30:19,384
+Yani ben öyle bir kod yazdım. Nalt-Material-Exception hatası alabilirim. Divide-by-zero neyse hatası alabilirim. Mathematical-Exception'lardan oluyorlar. I-O-Exception alabilirim.
+
+134
+00:30:19,384 --> 00:30:23,384
+Yani böyle bir tabi bu kadar çok hata alma ihtimali olan...
+
+135
+00:30:24,435 --> 00:30:37,235
+Kodu yazmazsınız diye ümit ediyorum ama oldu ki her şey cereyan ederse bunların hepsi gerçekleşebilir dediğimizde birden fazla catch bloğunuz söz konusu olabilir. Tek bir tane catch bloğunuz olmak zorunda değil.
+
+136
+00:30:37,235 --> 00:30:45,555
+Nonpointere izletişine tasarlıysan bunu yap, AYA izletişine tasarlıysan bunu yap diye programın akışını yönlendirebilirsiniz.
+
+137
+00:30:47,539 --> 00:31:15,539
+Tabii Catch Blog'un içerisinde yapılacak şeyi az önce detaylı bir şekilde anlattım size. Burada ekstradan vurgulamak istediğim bir de bu hatanın logunu almak güzel olur. Program çalışırken çeşitli hatalarla karşılaşılıyorsa bu hataları programın geliştiricileri, programı satan, üreten firmanın bilip düzeltmesi lazım. Bu da neyle olur? Logla olur.
+
+138
+00:31:15,539 --> 00:31:28,079
+Yani siz hata logları oluşturursunuz, ardından programın üreticileri, işte bu hata loglarının kendi serverlarına geldiğinde, internete bağladığı program kullandığını düşünüyorum.
+
+139
+00:31:28,859 --> 00:31:34,740
+Geldiğinde veya kullanılmıyorsa da hadi bunu hata loglarını onlara gönder diye zaman zaman size programlar sorar.
+
+140
+00:31:35,299 --> 00:31:39,079
+Onlar kontrol edecekler. Aa şuraya yanlış yapmışız, hadi bir update getirelim.
+
+141
+00:31:39,443 --> 00:31:58,983
+diye olayı güncelleyi işleyecekler. Yani log kısmı her zaman log tutmamız lazım aslında. Hata olsa da olmasa da programın tüm akışında log tutmamız gerekiyor. En azından bilgi güvenliği için belki ama artık bu big data, yapay zeka işleri için de çok önem arz ediyor.
+
+142
+00:31:58,983 --> 00:32:06,003
+Yani şöyle, adam mesela bir program kullanıyorsun, mouse'unuzun onun üzerine gelip gelmediğinin bilgisini bile tutuyor.
+
+143
+00:32:07,443 --> 00:32:18,663
+Sen A eticaret sitesinde açtın, bir ürüne baktın, tam gireceksin, düşündün ki ya ben bu ürüne girsem, bundan sonra verimadenciliğine takılacağım.
+
+144
+00:32:19,483 --> 00:32:24,043
+Bütün her yerde karşıma bu ürün çıkacak, bu ürünün muadilleri çıkacak.
+
+145
+00:32:24,763 --> 00:32:31,163
+Hatta bırak yani bu eticaret sitesini, Instagram'a gireceğim, orada Reels'ların konusu bile bu oldu.
+
+146
+00:32:31,163 --> 00:32:34,604
+Yani malum artık her şey böyle çalışıyor. O yüzden buna tıklamayayım.
+
+147
+00:32:35,155 --> 00:32:56,155
+Hiç diyorsun. Ama adam senin masumun onun üzerine geldiğinin bile logunu alıp onu bile işliyor. Yani inşallah böyle o tarafa doğru bakmış meydir diye henüz gözlerimizin yönünü işlemeye başlamamışlardır diye ümit ediyoruz ama işte bu bilgisayarlar biraz fazla iş yapabiliyorlar. Şimdi tabii ki...
+
+148
+00:32:57,011 --> 00:33:05,211
+Aldığımız hata çok ciddi bir hata durumuysa bunu handle etmeye çalıştık.
+
+149
+00:33:05,291 --> 00:33:06,791
+Catch bloklarının içerisinde.
+
+150
+00:33:07,392 --> 00:33:13,192
+Fakat farklı farklı catchlerin içerisinde farklı işlemleri yapabilir olduk.
+
+151
+00:33:13,271 --> 00:33:23,672
+Bir de hata alsak da almasak da biz bu kod çalıştıktan sonra şunu da çalıştıralım dediğiniz bir blok varsa.
+
+152
+00:33:25,011 --> 00:33:42,211
+içerisinde bir işler yaptım. Hata alma ihtimalim varsa diye onları kontrol ettim. Ve en sonunda bu işler tamamlandığında belli işler yapmak istiyor. Demek istiyorsanız bunu final blogları üzerinden yapıyoruz. Yani try blogu var.
+
+153
+00:33:42,740 --> 00:34:09,559
+En tane catch bloğu var ve en sonunda bir tane de final bloğu var. Buna clean exit diyorlar. Temiz bir çıkış yapmak için. Mesela şöyle söyleyelim. Ne olabilir? En çok kullanıldığı final bloğunun yerini düşünüyor olalım. Siz bir dosyayı açmak istiyorsunuz. Dosyanın içerisindeki yazıları okuyacaksınız. Oradaki yazılara göre bir iş yapmak istiyorsunuz.
+
+154
+00:34:10,739 --> 00:34:19,979
+Kodları eklediğiniz için teşekkür ederim.
+
+155
+00:34:20,115 --> 00:34:44,695
+pet not found, neyse öyle bir exception olacaksınız. Ondan sonra o exception'i handle etmeniz lazım. Veya dosya açıldı, siz üzerinde işler yapıyorsunuz, dizinin içine atacaksınız, atamadınız. Null pointer exception hatası aldınız diyelim ki bir şey iklendiriniz. Onu handle etmeniz lazım. Veya dosyayı atınız, içindeki verileri okudunuz, yapmanız gereken tüm işlemleri yaptınız.
+
+156
+00:34:47,699 --> 00:34:52,079
+Ardından bu dosyayı kapatan komutu yazabilirsin. Tamam mı?
+
+157
+00:34:52,460 --> 00:35:03,960
+Bu şey çalışsa da, ne denir ona? Try blog çalışsa da, catch blog çalışsa da, bu final blog kesin olarak yapılan bir işlem oluyor, olacak.
+
+158
+00:35:04,431 --> 00:35:27,951
+O da en sonunda bakın try, catch iki tane olmak zorunda değil. En tane olabilir, bir tane olabilir. Catch bloklarının söz konusu. Ardından bir de finali bloğu. Finali bloğu ile beraber siz artık yapmak istediğiniz tüm o konfigürasyonları, testleri bu try'dan sonra veya gerçekleştirebilirsiniz. Onlara da bakıyor olacağız.
+
+159
+00:35:32,431 --> 00:35:49,531
+Önümüzdeki hafta dosyayı anlatıyor olacağız. Sadece metoda bakıyoruz. Bir tane metod söz konusu. İçerisinde bir işlem yapan kod. Bakın kod try, catch bloonun içerisine alınmış. Bir dosya işlemi olduğu için IO exemption üretebilme durumu söz konusu.
+
+160
+00:35:49,531 --> 00:36:00,391
+IO exemption üretilirse ben bu IO exemption'ı catch yapayım diye işte IO exemption yazılmış. IO exemption sınıfından E-Object.
+
+161
+00:36:00,431 --> 00:36:24,831
+Bu keçif içinde de. Bu E'yi siz bir programcının anlayacağı şekilde ekrana yazdırmak istiyorsanız, print, stake, trace metodunu kullanırsanız ekrana bir şeyler yazacaktır. Programcının anlayacağı cinsse ek olarak bir de kullanıcı, programcı olmayan bir kullanıcının anlamasını istiyorsanız ne tarz bir şey geldi başına programın alışı çerçevesinde onu da
+
+162
+00:36:25,300 --> 00:36:50,500
+System out, print elenle burada söyleyebilirsiniz. Yani mesela e-print-spec-trace ne size söyleyecek? Pet not found. Tamam mı? Yani bunu adam anlamayacak. Belki daha teknik bir şekilde söyleyecek. Verilen dosya yolu doğru değilse. Siz buraya ne diyeceksiniz? Verdiğiniz dosya yolu da aradığım dosyayı bulamadım. Dosya yolunun doğru olup olmadığını kontrol edin.
+
+163
+00:36:50,835 --> 00:36:55,435
+İkisi akış arasındaki fark anlaşılıyordur diye ümit ediyorum.
+
+164
+00:36:55,655 --> 00:36:57,555
+Programı sonlandıracak çeşitli şeyler.
+
+165
+00:36:57,975 --> 00:37:04,335
+Final video'nun içerisindeyse mesela burada ekrandan okuma yazan bir metot var.
+
+166
+00:37:04,456 --> 00:37:05,195
+Bunları göreceğiz.
+
+167
+00:37:05,576 --> 00:37:12,755
+Onun metodu artık sonlandırıyor, release ediyor, savuyor, gidiyor şeklinde bir akış söz konusu.
+
+168
+00:37:13,315 --> 00:37:14,755
+Buraya kadar sorusu olan var mı?
+
+169
+00:37:16,244 --> 00:37:41,904
+Bazen sorusu olan var mı diye çok sık soramıyorum. Çünkü sorusu olan olmuyor genelde. Ama ara sıra da sormakta faydalar dönemde. Tamam, devam edelim. Exception. Şimdi tabii kendi Exception sınıfımızda yazabiliyoruz. Bu güzel özelliklerden birisi açıkçası. Çünkü şunu diyebiliriz. Burada olsa olsa şöyle bir hata alınır.
+
+170
+00:37:42,708 --> 00:38:04,448
+O yüzden ben hadi onu diyeyim. Biz kendi ne denir ona şeyi yazmak istiyorsak, kendi exception sınıfımızı yazmak istiyorsak, mesela eğer ki yazmak istediğimiz exception, checked olan exception'lardansa, IO exception sınıfından kalıfında türetiyor olacağız.
+
+171
+00:38:10,708 --> 00:38:27,807
+Extend edeceğiz, kalıtımda üretiyor olacağız. Mesela bir örneğine bakıyor olalım. Yani bir sınıfın ismini biz vereceğiz, sınıfı kendimiz yazacağız ama sanki kalıtıla IO'dan veya Runtime Exception'dan üretiliyormuş gibi.
+
+172
+00:38:36,563 --> 00:39:03,823
+IOException'ı alma ihtimali söz konusuysa yaptığınız bir işlem değil bu. Siz kendi Exception sınıfınızı yazıyorsunuz. Bakın, ikisi arasında fark var. Eğer sizin bir sınıfınız var, o sınıfın 10 tane metodunun bir tanesi IOException'ı almasıyorsa, o metodun prototipinden sonra trope Exception diyoruz. O farklı. Bu şimdi kendi Exception sınıfınızı yazıyor. Nasıl bu işi handle edeceğiz, ne yapacağız, onu söylüyoruz.
+
+173
+00:39:04,019 --> 00:39:13,239
+Prototipi, SuperRim'in prototipi neyse, burada da o şekilde bir prototip diyorum yani, constructor.
+
+174
+00:39:13,840 --> 00:39:18,099
+SuperRim'in içinde neler olacaksa, burada da aynı metodlar çalışsın diyoruz.
+
+175
+00:39:18,099 --> 00:39:24,960
+Ardından bakın, burada ek bir constructor daha yapılıyor olmuş.
+
+176
+00:39:25,380 --> 00:39:31,916
+Ek bir constructor'ın içerisinde mesela bu şu hali, Java'nın beşinci ve...
+
+177
+00:39:31,987 --> 00:39:52,007
+JDK versiyonunun öncesinde gerek değilmiş. Onu o yüzden yazmışım. Ama en basitinden siz ekrana bir hata mesajı yazdırmak istiyorsanız veya hata mesajının harizinde çeşitli işler, o exception oluştuğunda cereyan etmek istiyorsanız, cereyan etmesini istiyorsanız bunun içine yazmanız gerekiyor.
+
+178
+00:39:52,487 --> 00:39:53,947
+Şimdi bir örnekle daha güzel olmuş.
+
+179
+00:39:57,460 --> 00:40:05,139
+Evet, bakın şimdi güzel oldu. Burada tabii sınıfını oluşturmuşuz. Burada oluşturduğumuz o sınıftan mı prov ediyoruz?
+
+180
+00:40:06,099 --> 00:40:24,819
+Bakalım, bakalım. Keşke öyle yapsaymışız. Daha güzel olurmuş. Ona dair bir şey. Yapacağız. Tamam, programın akışında yapıyor olacağız. Güzel. Şimdi değil de programın akışında. Bir de scroll kısmını yazıyor olalım. Ondan sonra ona dair total bir örnek yazılıyor olacağız.
+
+181
+00:40:31,860 --> 00:40:46,500
+Programın akışında siz try-catch bloğunun haricinde kendiniz bu hatanın olabildiğini veya olduğunu kontrol edebileceğiniz çeşitli durumlar söz konusu.
+
+182
+00:40:46,579 --> 00:40:48,119
+Çünkü hata tipleri belli.
+
+183
+00:40:48,800 --> 00:40:53,060
+Yani mesela sizin için şu bir hata olabilir programınızın akışı gereği.
+
+184
+00:40:53,619 --> 00:40:58,780
+Bir B değişkeni vardır. Bu B değişkeninin hiçbir zaman 3 değerini almaması gerekiyor.
+
+185
+00:40:59,476 --> 00:41:02,516
+Sizin lojiğiniz bunu kurgulamıştır.
+
+186
+00:41:03,195 --> 00:41:08,036
+Veya sayıları büyükten küçüğe doğru sıralamışsınızdır.
+
+187
+00:41:08,716 --> 00:41:15,315
+Ve sizin programınızda hiçbir durumda en küçük sayı onun altında olamayabilir.
+
+188
+00:41:15,876 --> 00:41:18,195
+Veya mesela diyelim ki 18'in altında olmayabilir.
+
+189
+00:41:18,315 --> 00:41:20,235
+Bir yaşla ilgili bir durum olsun.
+
+190
+00:41:20,355 --> 00:41:23,916
+Bu 18 yaşının altındaki işlerin yapamayacağı bir iş olsun.
+
+191
+00:41:24,403 --> 00:41:49,684
+18 yaşının altından küçük, o listede hiç eleman olmaması lazım. Sizin için bu acayip exceptional bir durum, hatalı bir durum olabilir. Bunu sizin kendinizin handle etmesi lazım. Tamam mı? Yani bizim elemanı 18'den küçükse al sana, exceptions for the call olacak bir şey, bir sebep. Yani kendiniz niçin yazmak istersinizi burada anlatmaya çalışıyorum açıkçası. Böyle bir durumda.
+
+192
+00:41:50,324 --> 00:42:03,123
+true, new, işte benim, eee, exemption'ı nasıl bir şekilde hallebilecekse, yani, mesela, exemption dosyasının içerisinde ne olabilir? Önceyeleşmek şu kadar bir şey gördünüz. Mesela şöyle şeyler...
+
+193
+00:42:03,539 --> 00:42:26,760
+Söyleyebilirsiniz. Hani ekrana bir şey yazmak istiyorsanız. Yapacağınız şey nedir? 18 yaşından küçükse bu adamın velisi vardır. 18 yaşından büyük bir insanın velisi olmaz. Velisi kendisidir yani. Olur da herkes kendisinin velisi oluyor. 18 yaşından küçükse onun bir velisi var. Gidersiniz başka bir veri tabanına, onun velisinin bilgilerini bulursunuz. Oradan telefonunu çekersiniz. Ona mesaj atarsınız.
+
+194
+00:42:27,248 --> 00:42:29,047
+Bilgilendirmek için durumu.
+
+195
+00:42:29,248 --> 00:42:39,707
+Yani senin 16 yaşındaki çocuğun, ben bir hastaneyim, bana gelmiş muayene olmaya, ben de bunu yanlış diye kaydetmişim, reçete bile yazmışım.
+
+196
+00:42:39,707 --> 00:42:45,420
+Ama şu an bunun farkına vardım, bu işleri iptal ediyorum, sen de velitsin, bilgilen bu konu.
+
+197
+00:42:45,876 --> 00:43:00,016
+Örnek veriyorum gibi gibi işler burada yapabiliriz. Yani kendi ipimizden sonra, bir kartı çarştırma işleminden sonra yine throw, new diyerek bizim ürettiğimiz exception'lardan fırlatabiliriz.
+
+198
+00:43:03,027 --> 00:43:17,927
+Şöyle yapalım. Bunları böyle ben koymuşum. Tabii anlatmak yerine çalıştırsam daha güzel olur gibi hissediyorum. O yüzden gelin Eclipse tarafını açayım. Orada çalıştırayım. Ama buraya da buraya kadar soru kullanan arkadaşımız varsa öncü soruları alabilirim.
+
+199
+00:43:18,287 --> 00:43:19,207
+Hocam bir sorabilir miyim?
+
+200
+00:43:19,587 --> 00:43:20,148
+Tabii buyurun.
+
+201
+00:43:21,007 --> 00:43:26,568
+Bu birkaç slide önce şey yazıyordu. Check it ve unchecked. Onu biraz açıklar mısınız?
+
+202
+00:43:28,447 --> 00:43:29,047
+Açıklayalım.
+
+203
+00:43:31,860 --> 00:43:34,260
+Ben tabii o arada slide paneli kapatmadım.
+
+204
+00:43:35,460 --> 00:43:36,960
+Eklipsi açacaktım çünkü.
+
+205
+00:43:36,960 --> 00:43:40,640
+Şimdi şunu söylüyorsunuz herhalde bakıldığında.
+
+206
+00:43:41,159 --> 00:43:50,816
+Bizim kontrol edebildiğimiz veya kontrol edemediğimiz yani çeşitli nörona şeyler olmuş oluyor, ceryan etmiş oluyor.
+
+207
+00:43:50,815 --> 00:43:59,055
+Exceptionlar veya hatalar üretilmiş oluyor. Bunlarla biz aslında bir isimlendirme gibi söylemiş oluyoruz.
+
+208
+00:43:59,495 --> 00:44:04,395
+Troubles'ın bir error üretiliyorsa biz bu erroru kontrol edemiyoruz. Yapılacak hiçbir şeyimiz yok.
+
+209
+00:44:04,692 --> 00:44:08,692
+Programın akışında bunlar unchecked olarak değerlendiriliyor.
+
+210
+00:44:09,072 --> 00:44:13,871
+Proofable sınıfından exemptionlar üretilebilir. Biz exemptionları handledır, handling edebiliriz.
+
+211
+00:44:14,251 --> 00:44:19,532
+Yani exemptionların sonucunda programın akışının ne şekilde ilerleyeceğine biz karar verebiliriz.
+
+212
+00:44:20,072 --> 00:44:23,892
+Eğer ki, eğer ki, oya exemptionlar türetiliyorsa,
+
+213
+00:44:24,467 --> 00:44:45,668
+Bunlara check exception diyoruz. Biz IO exception'ler yani IO, Java, IO, IO exception'in altındaydı hatırlarsanız. Bu exception'ların olması diğerlerine göre daha nasıl söyleyeyim olasıdır. IO'yu biz kontrol etmiyoruz çünkü.
+
+214
+00:44:46,068 --> 00:45:13,428
+Tamam mı? Yani siz normalde her daim exception kısmı olmasa bile IO ile ilgili iş yapar. Kullanıcıdan yaşını gir dedim. Adam B yazdı, yolladı. Yani sen normalde bunu bile kontrol ediyorsun. Yani zaten kontrole tabi olan hatalarla muhatap oluyorsun. Onlara çek diyoruz. Ama runtime hataları, runtime hatalarının başında bir kontrol mekanizmasında olması çok zor.
+
+215
+00:45:13,791 --> 00:45:30,391
+Zaten onlar programın akışı itibariyle sen hiçbir şekilde runtime hatası olmasın diye elinden geldiğince yazmaya çalışsın. Hiçbir zaman olmasını beklemezsin. Her şey programcının yerinde çünkü runtime hatası için. Ama olabilir tabii ki yanlış yazmışsın bir şeyleri.
+
+216
+00:45:32,052 --> 00:45:41,192
+Murphy kanunları ceryan etmiş, olmuş. Bunların dair önceden bir kontrol mekanizması üretebiliriz söz konusu değil. O yüzden bunlar unchecked olarak geliyor.
+
+217
+00:45:41,972 --> 00:45:47,452
+IO exemptionları ise önceden çekilirin diye bir çeşitli mekanizma olan söz konusu. Birazdan örneklere daha önce anlayabilirsiniz.
+
+218
+00:45:48,012 --> 00:45:48,912
+Teşekkür ederim hocam.
+
+219
+00:45:49,532 --> 00:45:56,292
+Ben teşekkür ederim. Şimdi burayı kapatayım, eklipsi açayım. Başka sorusu olan var mı diye onu da soralım tabii öncesinde.
+
+220
+00:45:56,704 --> 00:46:02,764
+Siz hali hazırda onu düşünürken ben de Eclipse'i açayım.
+
+221
+00:46:04,004 --> 00:46:12,144
+Çünkü yani Slide'da da oluyor ama bir çalıştırsak daha güzel olur diye düşündüm açıkçası.
+
+222
+00:46:12,444 --> 00:46:15,204
+O yüzden Eclipse'i açayım istedim.
+
+223
+00:46:16,064 --> 00:46:17,064
+Close all.
+
+224
+00:46:17,744 --> 00:46:20,904
+Şimdi sizinle Eclipse'i paylaşalım.
+
+225
+00:46:23,476 --> 00:46:41,835
+Evet, zannederken şu an Eclipse sayfamı görebiliyorsunuzdur diye düşünüyorum. Benim size göstereceğim kodları buraya bir proje oluşturarak.
+
+226
+00:46:48,496 --> 00:46:50,596
+Ben onları zaten şey yapmışım.
+
+227
+00:46:51,036 --> 00:46:52,556
+Aha öbürsünde tercih.
+
+228
+00:46:53,175 --> 00:46:56,916
+Şimdi hangisiyle başlayayım şurada?
+
+229
+00:46:57,056 --> 00:46:57,556
+Ona bir bakın.
+
+230
+00:46:57,675 --> 00:46:59,396
+Impossible, info falan var mı?
+
+231
+00:46:59,476 --> 00:47:00,195
+Hepsini de açalım.
+
+232
+00:47:00,436 --> 00:47:01,396
+Neymiş bir görelim.
+
+233
+00:47:04,056 --> 00:47:05,856
+Bunlar J-Winit testleri ama.
+
+234
+00:47:06,735 --> 00:47:08,615
+Ben Winit testleri daha anlatmadım.
+
+235
+00:47:08,615 --> 00:47:09,556
+Tamam bu değil.
+
+236
+00:47:09,795 --> 00:47:10,195
+Bu değil.
+
+237
+00:47:10,900 --> 00:47:21,800
+Onlara katılıyorum. Bir dersin verleyen kısımlarında yeni testlerle ilgili bir şeyler yapacağız da. O yüzden onları istemiyorum. Temelde şey istiyorum.
+
+238
+00:47:22,360 --> 00:47:33,760
+NYP 9.000 falan yazayım. Başka bir projem olmuş olsun. Çok önemli. Değil. Projenin hani şeyin isimleri ne şekilde oldu.
+
+239
+00:47:34,760 --> 00:47:35,440
+NYP.
+
+240
+00:47:36,500 --> 00:47:43,740
+9 paketi olsun. Şuradakiler onun içerisine gelip girsin.
+
+241
+00:47:44,400 --> 00:47:45,720
+Eniş bunların paketini yazın.
+
+242
+00:47:45,820 --> 00:47:47,000
+MYP 0.9
+
+243
+00:47:47,000 --> 00:47:53,820
+Bir faktör.
+
+244
+00:47:55,340 --> 00:47:57,880
+MYP 0.9
+
+245
+00:47:57,880 --> 00:48:00,900
+Evet.
+
+246
+00:48:01,492 --> 00:48:18,712
+Şimdi burada çeşitli işte exceptionlar falan üretilmesine dair sınıflar söz konusu. Bunlar üzerinden gidiyor. Şimdi yavaş yavaş ilerleyelim. Nasıl bakacağımıza şey yapalım.
+
+247
+00:48:20,552 --> 00:48:29,492
+Biraz daha farklı şeylerden de notasyonlardan da biraz bahsediyor olacağım ama bazı konuları önümüzdeki haftalarda daha...
+
+248
+00:48:29,492 --> 00:48:31,872
+Aha güzel, mesela serileştirme diye bir konu anlatacağım.
+
+249
+00:48:32,255 --> 00:48:37,355
+Belki treplerde falan daha güzel okumlu serileştirme kavramları.
+
+250
+00:48:37,815 --> 00:48:45,615
+Ona dair programın akışında çeşitli annotationlar yani ad ile yazılmış çeşitli şeyler görebiliyorsunuz.
+
+251
+00:48:45,615 --> 00:48:49,235
+Onlara hiç aldırış etmeyin. Onları size anlatıyor olacağım.
+
+252
+00:48:49,515 --> 00:48:55,895
+Şimdi bakın. Impossible info. Benim üretmek istediğim sınıfın adı bu. Public class impossible info.
+
+253
+00:48:56,215 --> 00:48:57,935
+Yani böyle bir bilgi olamaz.
+
+254
+00:49:00,255 --> 00:49:05,115
+Bir şeyler yapacağım demek ki bu içerisinde. Onu IOException'dan türetmişim.
+
+255
+00:49:05,515 --> 00:49:13,215
+Tamam, IOException'dan türetmişim. Ve gördüğünüz gibi bir constructor, söz konusu içerisine bir string alıyor.
+
+256
+00:49:13,615 --> 00:49:19,195
+O stringi süperle yukarıya, yukarıdaki IOException'a set ediyor.
+
+257
+00:49:19,675 --> 00:49:25,135
+IOException bu stringi ne şekilde handle edileceği orada olan bir şey.
+
+258
+00:49:25,135 --> 00:49:27,115
+Onun çeşitli metotları varsa.
+
+259
+00:49:27,635 --> 00:49:30,876
+Yani ben gideceğim, yaptığım şey aslında nasıl bir şey?
+
+260
+00:49:31,296 --> 00:49:37,276
+I.O.Exception'ın error message diye sallıyorum bir attribute vardı.
+
+261
+00:49:37,416 --> 00:49:39,396
+Ben onu set ediyorum süperle.
+
+262
+00:49:39,976 --> 00:49:46,196
+This error message eşittir, error message yazıyorduk ya süperle yukarıdakini, bir üst sınıfını set ediyorum.
+
+263
+00:49:46,356 --> 00:49:50,596
+Ve I.O.Exception sınıfının çeşitli alt metotları söz konusudur.
+
+264
+00:49:51,596 --> 00:49:54,456
+İşte oku, yaz, neyse bir tür metotlar.
+
+265
+00:49:55,635 --> 00:49:59,716
+Standle Impossible Info'yu IO-Exemption'dan krettiğim için Impossible.
+
+266
+00:50:00,000 --> 00:50:01,040
+info bu.
+
+267
+00:50:01,460 --> 00:50:06,300
+IO exemption'ın sahip olduğu şeylere, metotlara sahip olabilir.
+
+268
+00:50:06,500 --> 00:50:08,240
+Onları kullanabilir.
+
+269
+00:50:08,660 --> 00:50:14,640
+Dikkat etmeniz gereken şey tekrar Java IO'nun altında olduğunu söylemiş olayı.
+
+270
+00:50:14,640 --> 00:50:15,200
+Bu.
+
+271
+00:50:15,740 --> 00:50:19,080
+Bir diğeri, diğer sınıflar üzerimizden gidiyoruz.
+
+272
+00:50:19,200 --> 00:50:20,300
+Baksana, person'a bakalım.
+
+273
+00:50:20,860 --> 00:50:23,700
+Person'da ne tarz farklılıklar var?
+
+274
+00:50:24,120 --> 00:50:25,040
+Ona bakıyoruz.
+
+275
+00:50:25,340 --> 00:50:25,500
+Evet.
+
+276
+00:50:26,060 --> 00:50:28,000
+Mesela person sınıfın...
+
+277
+00:50:28,000 --> 00:50:55,500
+Burada iki tane attribute var. Person'un constructorına bakın. Bir isim alıyor ama o isim arkadaşlar exception üretebiliyor. Yani geçersiz bir isim girilmiş olabilir belki. Siz bunu kendiniz kontrol etmeniz lazım. Yani adamın adını devlete kaydetmek istiyorsunuz diyelim ki. Böyle şeyler var mı bilmiyorum. Tamamen uyduruyorum.
+
+278
+00:50:55,827 --> 00:51:15,908
+Türkiye'de isimlendirme ile ilgili bir kanun olsun. Hiç kimsenin adı bir tane harften oluşamaz. Sallıyorum. En az 5 harften oluşması lazımdır isimler. Mesela 3 harfli isimler var Ali, 2 harfli isimler var mı? At. Mesela At diye bir isim var mı? Ak.
+
+279
+00:51:16,500 --> 00:51:43,219
+Neyse, bir harften oluşamasın diyelim. Hadi bizim kuralımız olmuş olsun. Bir harften bize isim set edilmeye çalışıyorsa kabul etmemeniz lazım. Bunun exception'ını arayıp bulmamız çok olur. Biz kendimiz yazacağız. İşte adam onu yapmış. Bir harf, iki harf o kısmına takılmıyorum ben. Kabul edilemeyecek bir isim. Mesela şöyle şey de olabilir. Uyduruyorum ne? Devlette bir sözlük vardır. Türkiye'de çocuğuna verebileceğin isimler var.
+
+280
+00:51:43,860 --> 00:51:47,660
+Senin vermek istediğin isim, bu isimlerden biri değilse veremiyorsunuz.
+
+281
+00:51:48,083 --> 00:52:14,523
+Belki, uyduruyorum dediğim gibi. İşte bunu da neyle kontrol etmemiz lazım? Throw, exception, üreterek kontrol etmemiz lazım. Getter, hadi şunları şöyle alt alta yazalım, daha güzel görünüyor olsunlar. Yani vatandaşın yaşını ve ismini getter'ı aldım. To string metodunda ne şekilde çalışacağını söyledim. Adamın ismini ve yaşını yazıyoruz.
+
+282
+00:52:16,083 --> 00:52:17,303
+name metoduna geldi.
+
+283
+00:52:18,363 --> 00:52:18,903
+Set name.
+
+284
+00:52:19,363 --> 00:52:20,263
+Yaptığı şey neydi?
+
+285
+00:52:20,383 --> 00:52:24,563
+Person'un setter'ında set name kısmı.
+
+286
+00:52:24,563 --> 00:52:28,803
+Yani aslında yapacağımız alt satıra command olarak yazıyorum.
+
+287
+00:52:29,303 --> 00:52:32,823
+This name eşittir name yapmamız lazım.
+
+288
+00:52:33,683 --> 00:52:34,063
+Tamam mı?
+
+289
+00:52:34,483 --> 00:52:35,763
+Yapmak istediğim şey bu.
+
+290
+00:52:36,023 --> 00:52:40,383
+Ama bana verilen isim çeşitli koşulları sağlamıyorsa.
+
+291
+00:52:40,916 --> 00:53:01,996
+Onu set edemem hemen gidip, değil mi? İşte onu kontrol edelim diye burada bu yapıldı. Set name bunu üretebiliyor. Eğer ki ismin uzunluğu 5 karakterden küçükse, bakın throwNiveImpossibleInfo. Bizim az önce yazdığımız şu impossible infodan türetiyor. İsim çok kısa.
+
+292
+00:53:03,155 --> 00:53:26,155
+Az önce söyleyeyim mi? 5 karakter. Ben 2 dedim ama adam 5 demiş. Ali Mali onları geçmiş. Gerçi burada örnek şey vermiş. İsim ve soy isim olarak toplam vermiş herhalde. Okey. Zaten tamam. İsim, soy isim toplam olmuş olsun. İsim çok kısa. İsim bilgisini de vermiş. Bu troll atıldığı anda ne olacak? Bu sınıfın...
+
+293
+00:53:26,579 --> 00:53:54,579
+ilgili constructor'ı çağrılacak. Çağrıldı. Bu ne yapacak? Gidecek. İşte error mesajı süper reset etti. O da o error mesajını muhtemelen ekranına yazacak bir aksiyon gerçekleştiriyor olacak. Şuradayım. Aksiyon gerçekleştiriyor olacak. Programın akışı burada sonlanacak. Exception ürettiğimde sonlandı bakın. Tamam. Programın akışı. Ama kullanıcıya da güzel bilgilendirici bir mesaj verdim. Bu isim çok kısa. Eğer ki...
+
+294
+00:53:54,579 --> 00:54:00,139
+Programın akışı burada sonlanmıyorsa yani Provenzation verilmıyorsa o isim bakın set ediliyor.
+
+295
+00:54:00,500 --> 00:54:03,759
+Disk name'i şurada yaptığım şeye set edilmiş oluyor.
+
+296
+00:54:03,940 --> 00:54:06,379
+Adamın o işini set etmiş oluyor.
+
+297
+00:54:06,500 --> 00:54:07,579
+Veya adamın...
+
+298
+00:54:08,019 --> 00:54:31,519
+Yaş bilgisi yedirecek. Yaşını set age, yaşın setları. O da bakın impossible info üretiyor. Yani bu sefer nasıl bir durum söz konusu? Ona bakalım. Bir kişinin yaşı sıfırdan küçükse veya yüz elliden büyükse. Yani size çok garip geliyor olabilir. Yaş bilgisi.
+
+299
+00:54:32,179 --> 00:54:38,019
+Veya doğum tarihi bilgisinde inanılmaz hatalar söz konusu olabiliyor.
+
+300
+00:54:38,019 --> 00:54:40,019
+Mesela...
+
+301
+00:54:40,947 --> 00:55:01,568
+Gerçek veriler üzerinde söylüyorum. Sürekli şirketlerle çalışıyoruz. Kişisel verilere tabii işlemiyoruz ama o kişisellikten çıktığı anda bizim çalışanlarımız ortalama kaç yaşındadır? Bizim müşterilerimiz ortalama kaç yaşındadır? Böyle bir şeyi merak ediyorsun. Sen veriyi alıp işleyeceksin. Yani öyle veriler çıkıyor ki, eksi 17 yaşında adam.
+
+302
+00:55:03,699 --> 00:55:31,199
+350 bin lira. Sen bankasın, eksi 17 yaşındaki birine 350 bin lira kredi vermişsin ve ödemesini bekliyorsun. Daha adam doğmamış. 17 yıl sonra doğacak. Reşit olacak da sana ödemeye başlayacak. Yani veri ne demek? Yanlış gibi. Olabilir yani bu tarzıya. Sonuçta o veriyi oraya giren bankonun artık bundaki bir adam sallıyorum 1932 gireceğine yaşlı bir insan için. 2032'yi seçiyor yanlışlıkla.
+
+303
+00:55:31,891 --> 00:55:35,172
+Adam tabii ki doğal olarak henüz doğmamış oluyor.
+
+304
+00:55:35,871 --> 00:55:36,091
+Tabii
+
+305
+00:55:37,780 --> 00:56:04,320
+Programcının da o yaşı kontrol eden programcı da işte kontrol etmesi lazım. Etmediğinde adamın girmesine izin veriyorsun. Bakın burada etmiş, set age. Sıfırdan küçük olmasın, yüz elliden büyük olmasın. Büyükse böyle bir yaş değerinin olmasının imkanı yok diye hata vermiş. Büyük değilse o yaşı set etmiş. Bence hani olayın ne şekilde kendi exceptionlarımızın ne şekilde olması gerektiği anlaşılıyordu. Yani size
+
+306
+00:56:04,864 --> 00:56:31,692
+Şöyle bir exception bulamazsınız. Bir değişkenin var, 151 olmasına izin verme. Yani age değişkeni 151 olamıyor. Hatta küçüktür işaretim var. 150 olamıyor. Pardon. Evet, 151 olamıyor. Tamam mı? 151 olamıyorsa yani bunu sizin muhakkak kendinizin kontrol etmesi lazım. Sizin için ise bir exception'dir. Hele 0 yaşından küçük birisini...
+
+307
+00:56:31,891 --> 00:56:39,552
+Yani banka müşterisi yapmak çok büyük bir exemption zannederceği diye düşünüyorum.
+
+308
+00:56:40,112 --> 00:56:47,851
+Düşünün, kredi kartı var, adam bir sürü kredi çekmiş, kredi kartı borcu var, eksitlendirmiş ürünlerini, siz adama dava açacaksınız.
+
+309
+00:56:47,851 --> 00:56:52,251
+Dava direktçesine ne yazacaksınız? 3 Mart 2032 doğumlu.
+
+310
+00:56:53,619 --> 00:57:10,259
+Şu şu şu kişinin bize şu kadar borcu vardır. Ona icra getiriyor. Mahkemede ya bu adam daha doğmamış. Doğmamış adama bombiçinden böyle bir deyim vardı. Onu yapmış olsun. Lütfen bu konularda çok çok çok dikkatli olmaya çalışalım. Şimdi bunları gelin bir test edelim.
+
+311
+00:57:12,596 --> 00:57:17,596
+Sınıfı da şurada var. Nasıl çalıştığını da bir görüyor olalım.
+
+312
+00:57:18,076 --> 00:57:23,655
+Test Exception diye bir sınıfımız var. İçinde sadece main method söz konusu.
+
+313
+00:57:23,655 --> 00:57:34,775
+Bir tane scanner yani klavyeden okuma yapacağım, komut satırından konsoldan okuma yapacağım bir sınıf tanımlamış oldum.
+
+314
+00:57:35,987 --> 00:57:42,707
+Adını giriniz diye ekrana soruyor. Bunları yapmıştık değil mi siz de? Yani kullanıcının bilgisini ekrandan alalım.
+
+315
+00:57:44,427 --> 00:57:49,247
+Veya kullanıcının girdiği değeri ekranda. Bu Scanner sınıflarını hiç yaptık mı bilmiyorum. Yapmadıysak görün.
+
+316
+00:57:49,747 --> 00:57:55,387
+Yani ekrana Print App'le bir şey yazdırmak istediğimizde onu yazıyorduk. Fakat Scanner'le okumak istiyoruz.
+
+317
+00:57:56,027 --> 00:57:59,387
+Nasıl okuyacağız? İşte bu Scanner sınıfları üzerinden okuyorduk.
+
+318
+00:57:59,664 --> 00:58:20,964
+O scanner şu tamın kısmı standa, sabittir burada. Bir in scanner kılı sınıfından in objesi oluşturuyorsunuz. Ardından bu in objesinin next line ile nasıl bir veri çekmek istiyorsanız, string olabilir, integer olabilir, farklı farklı şeyler olabilir, gömleleri varmış.
+
+319
+00:58:21,780 --> 00:58:38,140
+size göstermek amacıyla next, next line, next boolean, next byte, next double nasıl bir şey çekecekseniz next int yani gelen veri kullanıcıdan okumak istediğiniz verinin tipi ne olacaksa o tipte veri dönüyor.
+
+320
+00:58:38,140 --> 00:58:47,460
+Mesela next int ise geriye int döndürüyor görüyorsunuz. Next line ise geriye string döndürüyor. Biz adamın adını almak istediğimiz için string döntüsün istiyoruz.
+
+321
+00:58:49,780 --> 00:59:02,100
+Adamın ismini, kullanıcını okudum ve o konstruktörünü çalıştıran bir insan oluşturuyorum. Ama insan oluşturamayabilirim. Mesela şunu uçrayım. Şimdilik.
+
+322
+00:59:02,675 --> 00:59:30,655
+Şöyle, komente alayım. Buraya kadar ki kısmı yapayım. Bakalım şunu oluştururken bir hatayla karşılaşsın. O hatada ne oluyor olacak? İsmini az vereyim. İki haneli, üç haneli bir isim vereyim. Impossible info kısmı çalışacağı için şurada onun print spec trace'ini çalıştıracağım için yine bu da muhtemelen benim set ettiğim error mesajını ekrana yazıyor olacak.
+
+323
+00:59:30,675 --> 00:59:33,376
+Bakın, person name.
+
+324
+00:59:35,036 --> 00:59:35,376
+Hi.
+
+325
+00:59:36,235 --> 00:59:37,335
+İsim çok kısa, bakın.
+
+326
+00:59:37,496 --> 00:59:38,056
+Ben de bir şey.
+
+327
+00:59:38,835 --> 00:59:40,155
+Tamam, programın akışı durdu.
+
+328
+00:59:40,315 --> 00:59:46,755
+Hangi satırda, hangi sınıfın, hangi satırında neler çıktı, hepsini bana söylüyor.
+
+329
+00:59:47,416 --> 00:59:52,215
+Yani şimdi şu veriyi tutup son kullanıcıya yazdırmalı mıyız yani?
+
+330
+00:59:52,596 --> 00:59:59,096
+Anlatabiliyor muyum? Bu olmak zorunda değil bakın. Şunu kapatıp da şöyle olsa ne olacak? İne aynı şeyi çalışacak çünkü.
+
+331
+01:00:01,096 --> 01:00:02,615
+İşte isim çok kısa.
+
+332
+01:00:04,148 --> 01:00:28,208
+Anlatabiliyor muyum? İkisinin arasında bir fark var. Ama ben bu işi programcıya bildirmek istiyorsam tabii ki yani şunu bilmesi lazım. Ha, test exception sınıfında o person sınıfını çağırıyormuş. Person sınıfının 8. satırındaki şey onun 26. satırındakine gidiyormuş. Ha ben gidip burayı kontrol edeyim diye hatayı geliştiren kişinin bilmesi lazım.
+
+333
+01:00:28,559 --> 01:00:54,159
+O yüzden ona da dikkat etmek gerekiyor. Neyse, şuradaki komentleri tekrardan açıyor olalım. Vatandaşın yaşını soruyoruz. Bakın onu next int ile almış. Integer olacağı için yaşı. Ondan sonra vatandaşın yatır yaşını set h ile set ediyor. Ve ondan sonra insanın bilgilerini yazdırıyor. İnsan objesini direkt bunun bilgisini yaz dediğimizde ne oluyor bu?
+
+334
+01:00:54,900 --> 01:00:58,520
+Bunun to string metodu varsa o çalışıyordu.
+
+335
+01:00:59,987 --> 01:01:27,987
+ToString metodu var. Burada gördüğünüz gibi direkt o çalışıyor olacak. En sonunda biri de Finally Blue yazılmış durumda. Final Blue ondaysa ekrandan okuma yazmayı yapmak için kullandığım şu sınıfın artık daha fazla ekrandan okuma yazma yapmayacağım. Zaten program bakışı bitti. Boşu boşuna memori değer kaplamasın. Java sanal makinesi bunları temizleyinceye kadar en azından demek istiyorsanız bunu da güzel bir şey yapacağız.
+
+336
+01:01:27,987 --> 01:01:51,987
+Her şekilde close etmemiz beklenir. Final tarafının içerisinde çalıştıralım. Mesela ismini doğru yazalım. Haydar. Oradan geçebildik. Yaşını yazalım. 156. Bakın burada yine bir hata vermiş oldu. Haydar. Negatif yazdığımızda da yine zannoyunca hata çıkacaktır. Ama doğru bir aralıkta değer yazarsak.
+
+337
+01:01:52,884 --> 01:02:01,943
+O zaman hem adamın adının hem de yaşının ne olduğunu bana TÜSİKMİK metodu çağırarak söylüyor olacak.
+
+338
+01:02:02,344 --> 01:02:03,244
+Burada ne yazılmış?
+
+339
+01:02:05,264 --> 01:02:10,403
+Burada da o diğer sınıfa ait o örnek verilmiş.
+
+340
+01:02:11,063 --> 01:02:11,983
+Tamam, çözelen değil.
+
+341
+01:02:12,103 --> 01:02:14,923
+Evet, burada sorusu olan arkadaşımız var mı? Buraya kadar.
+
+342
+01:02:15,476 --> 01:02:25,676
+Bir hani kafanızda güzel canlansın diye kendi exception'imizi nasıl üretiriz, nasıl yazarız, hata mesajlarımızın onları anlatmış olduk kısaca.
+
+343
+01:02:26,228 --> 01:02:30,907
+Bu satır 12'deki hatayı şeyden mi yakaladık? Constructor'dan mı yakaladık?
+
+344
+01:02:31,387 --> 01:02:33,307
+Satır oluşturdu mu diyorsunuz?
+
+345
+01:02:33,648 --> 01:02:34,108
+Evet hocam.
+
+346
+01:02:34,527 --> 01:02:39,827
+Şimdi bunu oluşturmak istediğimde person sınıfının constructorı demek şu.
+
+347
+01:02:40,307 --> 01:02:44,268
+Person sınıfının constructorına gidiyorum. Gitti. Bak person sınıfının constructorı.
+
+348
+01:02:44,347 --> 01:02:47,608
+Zaten bir exception üretebilir diye bunu söylemişiz şurada.
+
+349
+01:02:48,608 --> 01:02:52,927
+Person sınıfının constructorında normal standart bir constructor olsa şunu yapıyorduk.
+
+350
+01:02:53,215 --> 01:03:00,215
+Fakat ismi çeşitli kurallara göre kontrol etmek istediğim durumda onunla ilgili ayrıca bir metot çağırayım.
+
+351
+01:03:00,295 --> 01:03:05,096
+Set name diye bir metot çağırayım. İsmimi bakalım doğru bir şekilde kaydedebiliyor muyum?
+
+352
+01:03:05,476 --> 01:03:07,875
+Aynı zamanda bu set name bir setter'dir.
+
+353
+01:03:08,815 --> 01:03:17,135
+Yani şimdiye kadar belki hiç uyanmamış olabilirsiniz ama siz constructor'ın içerisinde şunu yapmak yerine direkt setter'larını da çağırabilirsiniz.
+
+354
+01:03:17,523 --> 01:03:26,584
+Set name çağrılıyor. Set name ise çeşitli kriterleri kontrol ediyor. Bu kriterler çok çok çok uzun olabilir. Eğer ki o kriterler gerçekleşiyorsa.
+
+355
+01:03:27,411 --> 01:03:51,791
+True Exception üretiyor. Exception üretildiğinde programın akışı burada sonlanmış oluyor ve sonrasında üretilmediği durumda yani aslında şu Else Flow anlaşılıyordur diye düşünüyorum. İpe girmiyorsa Else'nin içerisine ya dallanmıştır ya da programın akışı şuradan sonra noktalandığı için hiçbir zaman bu çalışmıyor olacaktır.
+
+356
+01:03:54,579 --> 01:04:07,480
+Şu çalışıyor. İsmini başarılı bir şekilde set ediyorum. Evet, constructor'ından dolayı şey oluyor. Nerede o? Şurada. Constructor'ından dolayı bir hata üretiliyor.
+
+357
+01:04:08,679 --> 01:04:09,559
+Anladım hocam, sağ olun.
+
+358
+01:04:10,900 --> 01:04:11,079
+Evet.
+
+359
+01:04:13,059 --> 01:04:17,480
+Var mı burada sorusu olan? Başka. Bakalım slide'da neler anlatıyor başka.
+
+360
+01:04:18,859 --> 01:04:22,019
+Tamam. Bir ara verelim o zaman.
+
+361
+01:04:22,579 --> 01:04:25,400
+Hocam, bana vermeden ben de bir şey sanmak istiyorum.
+
+362
+01:04:25,620 --> 01:04:26,280
+Evet, buyurun.
+
+363
+01:04:27,120 --> 01:04:33,820
+Hocam, şu to string kısmı için bazen override yazıyoruz üstüne. Burada yazmamışız. Sebebi ne acaba?
+
+364
+01:04:36,019 --> 01:04:39,160
+To string kısmı için. Şurası için mi diyorsun?
+
+365
+01:04:39,780 --> 01:04:40,100
+Evet.
+
+366
+01:04:48,052 --> 01:05:15,391
+sınıftan extend edilmiş olsaydı, onun da kendine has bir to string metodu olsa başka işler yapıyor olsaydı, biz onu alt sınıfta başka bir şekilde kullanmak isteseydik dediğin doğruydu. Ama burada yani sadece bu sınıfın to stringi var. Person'dan başka bir şey türeteceksen, onun to stringinin farklı şekilde çalışmasını istiyorsan o override edilmiş olur.
+
+367
+01:05:17,523 --> 01:05:20,864
+Normal two string'den farklı değil mi hocam?
+
+368
+01:05:21,643 --> 01:05:23,043
+Ben de onu soracaktım.
+
+369
+01:05:23,463 --> 01:05:26,344
+Nasıl? Two string şöyle, şöyle.
+
+370
+01:05:26,344 --> 01:05:27,963
+String sınıfının two string.
+
+371
+01:05:28,400 --> 01:05:56,400
+değil. String sınıfının to string'i belki vardır. Bilmiyorum. Bakalım. Burada yapılan şey aslında benim bu person'ım tamam mı? Bu sonuçta bir obje yani bakıldığında. Siz objeye ekrana yazdırmak isterseniz karşılaşacağınız şey nedir? O objenin sadece numarasını muhtemelen yazdıracak. Mesela şunu komenta alalım. Güzel bir soru. Hiç böyle bir şey belki...
+
+372
+01:05:56,400 --> 01:06:23,599
+konuşmamış olabiliriz. Mesela onu komentar alalım. Ne yazdıracağını şöyle bir görmüş olalım. Gördüğünüz gibi o person sınıfının bir id'si vardı. UID. Bu id'sini ekrana yazdırıyor. ToString'i yoksa. Tamam mı? Şu satır çalıştığında. Nerede? Evet. Bu satır çalıştığında sadece o bilgiyi yazdırıyor. Siz çünkü buraya bir objeyi veriyorsunuz.
+
+373
+01:06:23,891 --> 01:06:41,431
+Eğer ki objelerin şöyle toString metotlarını tanımlarsanız, o objeyle ilgili hangi kavramları ekrana bilgi olarak yazdırmak istiyorsanız, o obje işte bu şekilde çağrıldığında o bilgiler ekranı yazar. Onun ID'si yazacağına o bilgiler ekranı yazar.
+
+374
+01:06:42,671 --> 01:06:48,851
+Ama hocam sabah lab yaptık örneğin, labda da bu toString'i overwrite etti.
+
+375
+01:06:50,164 --> 01:06:57,124
+ToSpring'i override. İşte bir kalıtımla mı yaptın? Bilmiyorum ne lafta ne örneği yaptınız değil mi?
+
+376
+01:06:58,144 --> 01:07:00,624
+Hocam kalıtım kullanmadık orada da.
+
+377
+01:07:01,164 --> 01:07:06,184
+Tamam. Yani default olarak şöyle düşünün. O zaman bakın nasıl bir şey olduğunu.
+
+378
+01:07:07,384 --> 01:07:15,344
+Bir annotation olarak yazmışlarız diye düşünüyorum. Şu ToSpring metodunu biz yazmadığımız durumda gelen şey şu mesaj.
+
+379
+01:07:15,679 --> 01:07:23,839
+Bunu override ediyoruz. Yani aslında anlamlı bir şey olmadığı için çok da bir override etmemizin doğrudan bir şeyi yok.
+
+380
+01:07:24,596 --> 01:07:44,975
+Neden Rona? Esprisi yok. O yüzden ona şey yapmak lazım, neden Rona? Düşünmek lazım. Bu bir obje. Tekrar söyleyelim. İnsan, person sınıfından üretilmiş bu bir obje. Person sınıfı hatırlarsanız bir sınıf.
+
+381
+01:07:45,264 --> 01:07:56,784
+Biz default olarak bu sınıfı herhangi bir sınıftan türetmesek bile kest etmek istediğimiz durumda her sınıf bir obje oluyordu. Yani şöyle bir şey yazabiliyorduk.
+
+382
+01:07:59,572 --> 01:08:12,892
+Şimdi bir tane yeni person üretmek istiyorum. Tam olarak labda ne anlatıldığı hiçbir fikrim yok o yüzden. Bu person'ı yapmam gereken şey normalde şu ama bu person bir obje.
+
+383
+01:08:12,892 --> 01:08:14,432
+Tabii şuraya bir şey vereyim.
+
+384
+01:08:15,155 --> 01:08:38,275
+Bu person obje olduğu için bunu object diye de tanımlatabiliriz. Yani o ilk haftalarda mı anlattın, ne yapmıştın bilmiyorum. Bu object sınıfı her sınıfın üstünde. Ondan sonra bunun özelinde siz person'ın çeşitli kavramları da kullanabilirsiniz. Burada metotları var, kullanabilirsiniz. Ama object olarak tanımlanmış. Bunun içerisindeki özellikleri de kullanabilirsiniz.
+
+385
+01:08:43,155 --> 01:08:59,315
+nüfunun to string'i var ve şurada da görünmez bir Excel object yazıyorsa, görünmez bir yazıyorsa o zaman override etmiş oluyoruz. Demek istediğimi anlatabildim mi bilmiyorum.
+
+386
+01:08:59,315 --> 01:09:02,255
+Hocam chat attım sabahki kullandıkları şey.
+
+387
+01:09:03,475 --> 01:09:05,935
+Bakalım. Şunları tabii siliyorum.
+
+388
+01:09:10,676 --> 01:09:29,916
+Tamam, bunlar annotationlar. Annotationları söylüyor olacağız dedim. Etle ilgili kavramları. Bu, az önce söylediğim gibi, object sınıfının da toString var. O da bu şekilde yazıyor. Onun override ediyorum diye ekzadan söylemiş olması yani.
+
+389
+01:09:31,916 --> 01:09:32,935
+Sağ olun hocam.
+
+390
+01:09:33,587 --> 01:09:48,347
+override kısmı o. Ama bizim için asıl önemli olan objectten default olarak override ekstrem edilmesi değil de bizim kalıtımla kendi inheritance'ımızı yaptığımızdaki o override kısmı önemli.
+
+391
+01:09:48,347 --> 01:09:59,288
+Yani tekrar söylüyorum o object sınıfından gelen toString metodu hepsinde vardır. Böyle override edilebilir ama toString olmayan metodlar oluyor. Kendiniz yazdınız.
+
+392
+01:10:00,000 --> 01:10:18,579
+Mehmet diye bir metot yazdınız. Bu Mehmet metodu person'un içerisinde varsa person'dan bir şey kalıtılmışsa siz onu override etmeniz bekleriniz. Yani değişiklik, değişik bir iş yapmasını istiyorsanız her durumda değil, değişik bir iş yapmasını istiyorsanız orada override etmeniz bekleriniz.
+
+393
+01:10:20,020 --> 01:10:33,240
+Annotation'lara geleceğiz. Bolca annotation'ları anotu olacağız. Hoşunuza gidecek onlar da. Labda grab daha erken bahsetmiş olmuş artık. İyi yapmış. Evet, başka sorusu olan var mı?
+
+394
+01:10:35,604 --> 01:11:02,384
+Tamam. Şimdi o zaman bir ara verelim. Saat 5, şey 3'ü 5 geçiyor. Şey, unit testlerden falan da bahsediyor olacağız. Bugün onları da anlatalım istiyorum. 3'ü çeyrek geçe. Burada olalım. Bir böyle yine yarım saatlik falan bir unit testle ilgili kavramlardan size bahsediyor olalım. 3'ü çeyrek geçe. Burada olalım arkadaşlar. Tamam. Görüşürüz diyorum. Şunları kapatayım ben.
+
+395
+01:13:45,619 --> 01:13:46,619
+Tamam.
+
+396
+01:20:13,363 --> 01:20:15,363
+Şimdi paylaşımı yapalım.
+
+397
+01:20:18,363 --> 01:20:24,363
+Slide'da yeni testlerde kaldık. Şöyle açalım.
+
+398
+01:20:25,363 --> 01:20:26,363
+O da şu.
+
+399
+01:20:26,363 --> 01:20:30,363
+Dizanlanınca. Evet, bu araçları görebiliyorsunuz diyor.
+
+400
+01:20:30,363 --> 01:20:31,363
+Şimdi...
+
+401
+01:20:31,667 --> 01:20:49,667
+Exception kısmını göreceğiz. Daha bir fın üzerinde duracağız. Exception kısmını. Bu çok örnekler onlara yapıyor olacağız. Bir de buna ek olarak JUnit, yani unit testleri bakıyor olacağız. Onun için de Eclipse tarafında kullanabileceğimiz JUnit modülü var.
+
+402
+01:20:50,047 --> 01:20:59,627
+kütüphanesi var. Bunu nasıl kullanıyoruz, ne şekilde yazdığımız kodları, testini gerçekleştiriyoruz. Onlara bakıyor olacağız.
+
+403
+01:21:01,047 --> 01:21:11,028
+Yani JUnit'in farklı versiyonu da var. Ben de zamlanınca 3 yüttü. 3'ün farklı sürümleri, 4 farklı sürümleri olabilir.
+
+404
+01:21:11,028 --> 01:21:17,528
+Ona göre bazı şeyleri bazı şekilde isimlendirmeniz lazım. Siz bir metodunuz.
+
+405
+01:21:17,872 --> 01:21:33,112
+Bir sınıfımızın içerisindeki metod var. İstenilen işi yapıyor mu, yapmıyor mu diye kontrol etmek istediğinizde bunlar için test senaryoları, test case'ler yazmak lazım. Bunlara unit test deniyor. Her bir unitimiz, her bir birimimiz.
+
+406
+01:21:33,395 --> 01:22:01,315
+İstenilen işi yapıyor mu? Nerelerde hatalarla karşılaşılıyor? Test engineering de ayrı bir şey. Biliyorsunuz bilgisayar manzorun bir kısa bu işi de yapıyor. Mümkünse yapmayın. Açıkçası orada ücretler çok düşük. Paralara çalışıyor insanlar test kısmından. Ama bazısının hoşuna gidiyor, seviyor. Ben programların hatasını bulmayı çok seviyorum. Bu işte çalışmam lazım. Bunun da bir metodolojisi.
+
+407
+01:22:01,395 --> 01:22:11,475
+söz konusu. Biz yazdığımız bir sınıfa, test edecek bir sınıf yazmak istiyorsak o sınıfın isminin başına test ibaresi geliyor.
+
+408
+01:22:11,475 --> 01:22:23,975
+Veya işte bir lojiğin içerisindeki birçok farklı metodu veya modülü test etmek istiyorsak test ol diye bir yapı kurabiliyoruz.
+
+409
+01:22:25,427 --> 01:22:39,528
+Bir tanımladığımız birden fazla şeyi test etmemize izin veriyor, sağlıyor diyelim veya o kısmı yine birazdan örneklerde görüyor olacağız.
+
+410
+01:22:40,188 --> 01:22:45,487
+Teste dair çeşitli ayarları değiştirebiliyoruz, setupları değiştirebiliyoruz. Bu ne demek?
+
+411
+01:22:45,487 --> 01:22:53,427
+Çeşitli girdi olarak verilen parametreleri veya konfigürasyon ayarlarını değiştirip...
+
+412
+01:22:53,427 --> 01:22:59,188
+Ondan sonra da tekrardan konu çağırma imkanımız söz konusu olabiliyor.
+
+413
+01:22:59,727 --> 01:23:07,448
+J'in bir framework. Bu framework içerisinde Taze diye bir sınıf var. Bunun bir setup olduğu söz konusu.
+
+414
+01:23:08,147 --> 01:23:11,827
+Protective bir metot olduğunu görüyorsunuz.
+
+415
+01:23:12,387 --> 01:23:14,688
+Ardından assert diye bir sınıf var.
+
+416
+01:23:20,404 --> 01:23:27,184
+Asroth metodunun içerisinde testleri gerçekleştirebileceğiz. Eşit midir, doğru mudur?
+
+417
+01:23:27,503 --> 01:23:33,623
+Farklı mıdır, boş mudur gibi çeşitli metotlar satılıyor. Bunları kullanarak test yapıyoruz.
+
+418
+01:23:33,623 --> 01:23:43,943
+Yine bu test case metodunun içerisinde, işte bizim kendi yazacağımız sınıfın içerisine kalıtım ile çeşitli sınıflar oluşturuyoruz.
+
+419
+01:23:44,023 --> 01:23:49,384
+Test sınıfları ve o test sınıflarının içerisinde test etmek istediğimiz metotları yazıyoruz.
+
+420
+01:23:49,923 --> 01:23:55,484
+Ve bizim yine yazdığımız hala hazırdaki sınıfların metotlarını test ediyoruz.
+
+421
+01:23:55,503 --> 01:24:23,503
+O sınıflarla yine bir dependent ilişkisi oluyor. Yani biz metotlarda onların verisini kullanıyor olacağız. En tane test class yazmış olabiliriz. Bunların hepsini tek seferde çalıştıralım diye test all. Yani farklı farklı farklı farklı sınıfların metotlarını tek bir yerde çalıştıralım diye böyle bir sınıf yapabiliyoruz. Yine bir association ilişkisini görüyoruz. Ve suite metodu üzerinden testlerimizin tamamı.
+
+422
+01:24:23,503 --> 01:24:45,420
+Bunlara dair şimdi örnekler yapıyor olacağız. Üç tarafında böyle dörtte çeşitli farklılıklar var herhalde. Dörtte annotationlar da gelmiş bakın. Annotationlar olduğu zaman siz mesela biz metodun test metodu olduğunu üçte söylemek, üç ve önceki versiyonlarda söylemek, siziniz de ne yapıyorsunuz? Test diye başına...
+
+423
+01:24:45,716 --> 01:24:57,836
+isimlendirme yapıyorsunuz. Ama annotation da, test sınıfıdır, metodudur diye annotate ettiğimizde olay ortadan kalkmış oluyor. Bakın burada tam olarak onu anlatıyor.
+
+424
+01:24:58,163 --> 01:25:05,683
+Yani test testten inkalep etmeme gerek yok. Test annotation verdiğinde de bu işe yarıyor diyor.
+
+425
+01:25:05,683 --> 01:25:16,183
+Bakın önceden şu şekilde ki bir neleronuna tanımı yaptığınızda yani neydi demiş direkt.
+
+426
+01:25:16,752 --> 01:25:31,552
+Before Annotation'ı ile beraber siz setup'ınızı tamamlayıp buradaki gerekli ayarlamaları yapıp ardından test, annotation ile beraber test yapacağımız o metodu yazıyoruz.
+
+427
+01:25:31,912 --> 01:25:38,752
+Preparation ne olabilir? Yani siz bir metodu test edeceksiniz ama girdi çıktı değerlerine göre test etmeniz gerekiyordur.
+
+428
+01:25:38,752 --> 01:25:42,112
+Network'un performansını test etmeniz gerekiyordur.
+
+429
+01:25:44,752 --> 01:25:51,752
+Bu çoğun aralığını sizin burada setup içerisinde kullanmanız gerekiyor. Mesela...
+
+430
+01:25:52,692 --> 01:26:06,791
+Bir kod yazdınız, sensörden alan veriyi okuyup nem değerini yazıyor olacak ekrana veya bir yere kaydediyor olacak ortamın nem değerini.
+
+431
+01:26:07,231 --> 01:26:15,291
+Şimdi nem %0'lı %100 arasında değerlenir. Siz nemi bir hesaplamışsınız. Farklı girdilere göre %117 çıkmış.
+
+432
+01:26:15,731 --> 01:26:43,332
+Yani bu istenilen değer aralığında olup olmadığını buna göre kontrol ediyoruz. Hangi değer aralığında? Mesela öyle şeyler vardır ki bir server odası yapıyorsunuz. Bunun nemi önemlidir. %60'ın üstüne nem çıkmaması gerekiyordur. Ama başka bir server odasında %70'tir. Yani siz hangi parametrelere göre testinizi yapacaksınız? Orada girdi ve çıktı. Maksimum ulaşabileceği aradaki değerler ne olacak?
+
+433
+01:26:43,731 --> 01:26:52,091
+Ona göre bir test hazırlığı yapıp sonra testleri gerçekleştirmeniz gerekiyor.
+
+434
+01:26:54,228 --> 01:27:20,627
+3'te bakın olmayan bir şey 4'te var. O da exception supportları. Test case'lerinizi, test case'lerde birer sınıf tahmin edebiliyorsunuz siz de. Bu sınıfların içerisinde doğal olarak çeşitli metotlar söz konusu, metotlar çalışırken hatalı çalışabilir. Test etme anında bile hatalar olabilir. O hataları da handle etmek gerekiyor.
+
+435
+01:27:22,228 --> 01:27:39,608
+test case'lerimizi de test eden bir şeyler olması lazım belki. Ama en kötü orada hatalarla karşılaşırsa diye, exception handik kullanmanız dediğimiz durumda, JUnit'in 4'ten sonraki versiyonlarını kullanmanız bekleniyor.
+
+436
+01:27:40,180 --> 01:27:43,100
+Şimdi bizim bir örneğimiz var.
+
+437
+01:27:43,200 --> 01:27:44,400
+Ya da bunun kolda mı yazmışım?
+
+438
+01:27:44,600 --> 01:27:45,520
+Kolda mı yazmışım?
+
+439
+01:27:45,620 --> 01:27:45,800
+Okey.
+
+440
+01:27:46,300 --> 01:27:47,940
+Bizim bir örneğimiz var.
+
+441
+01:27:48,500 --> 01:27:51,660
+Bu örneğimizin içerisinde müşteriler var.
+
+442
+01:27:52,148 --> 01:28:20,148
+Filmler var. Bu filmlere kiralayabileceğimiz bir sınıf var. Kiralama sınıfı. İşte o kiralama sınıfında filmin ücretini falan filan müşteriden aldığımız çeşitli yapılar söz konusu. Bunu yukarıdaki şu sağ tarafta görülen bizim UML sekans diagramından, sekans diagramından çıkartıyorum. Bir de kullanıcımız var. Bununla muhakkak oluyor. Böyle bir loji var. Detaylı metodlarına girelim.
+
+443
+01:28:20,148 --> 01:28:43,688
+Zaten şimdiye kadar hep onları yapmış olduk. Benim şu an hani şurada gördüğünüz bu akıştaki metotların doğru bir şekilde çalışıp çalışmadığını test edecek bir test case yazayım. Bir veya birkaç test case yazayım. Onların doğru bir şekilde çalışıp çalışmadığını kontrol edeceğim.
+
+444
+01:28:43,828 --> 01:28:48,387
+İstiyorum. O yüzden buradaki paylaşımı durdurdum. Yine Eclipse'den bu işleri yapayım.
+
+445
+01:28:51,087 --> 01:28:56,347
+Eclipse. İşte bakın. Customer var burada.
+
+446
+01:28:58,188 --> 01:28:59,768
+Zoom şöyle çekeyim.
+
+447
+01:29:00,068 --> 01:29:00,568
+Customer.
+
+448
+01:29:01,811 --> 01:29:25,051
+Ramp'a dair bir şeyler yazılmış, Ramp'a dair bir şeyler yazılmış, Movie'e dair bir şeyler yazılmış. Bunların üzerinde durmuyorum. Dediğim gibi şu an hala burada sizin vektörleri belki görmedik, göreceğiz. Collection'larını falan anladıkken. Onların haricinde bildiğimiz şeyler. Şimdi benim istediğim şey bunun test case'lerini yazıyor olanı, bunların metotları.
+
+449
+01:29:25,152 --> 01:29:46,051
+Nasıl olduğuna beraber bakalım. Zaten standart bir paketin içinde. Bakın, JUnit Framework'ın altında test case sınıfını import ederek başlıyorum. Ardından test case'den tabii 4'e geçtiğimde benimki kaçta ben import etmiştim? 3 bakın, şurada var. Test unit 3. Aslında 4.
+
+450
+01:29:47,060 --> 01:30:01,560
+Neyse, annotationlarını da kullanabiliyorsunuz. Benim kitabım biraz eski bir şey. Bayağı da bilgisayarını ben güncellemedim. Belki en son 5 yıl olmuştur. O yüzden...
+
+451
+01:30:01,939 --> 01:30:18,279
+Biraz eski olabilir. Siz hani son versiyonlarını yükleyip ona göre bakabilirsiniz. Bu işleri annotationlarla da yapabiliyelerinizi söylemiştik. Ben burada hiç annotation görmüyor olacaksınız. Ama annotationları da başka bir hatla detaylı bir şekilde nasıl kullanıldığını sizlere anlatıyor olacağım.
+
+452
+01:30:18,279 --> 01:30:29,539
+Test case sınıfından test customer isminde bir sınıf türetmişim. Bunun içerisinde bir tane customer objesi oluşturmuşum. İşte şu sınıftan bir tane obje oluşturmuşum.
+
+453
+01:30:29,939 --> 01:30:57,920
+Sizlerinden çeşitli test senaryolarını gerçekleştiriyorum. Birkaç tane de nasıl söyleyelim? Movie, film sınıfından objeler oluşturmuşum. Setup diye bakın bir metodum var. Teste hazırlanıyorum. Setup metodu vardı ya. Teste hazırlıkları yapıyorum. İlklendirmeleri belki yapıyor olacağım. Customer'ı ilklendirmişim. Diğer işte dört tane movie vardı, film vardı. Bunları da ilklendirmişim.
+
+454
+01:30:57,939 --> 01:31:08,199
+setup'a hazırlığımı yapmışım. Yani bunların böyle olmasını bekliyorum. Hakikaten böyle midir diye burada o referans değerlerini söylemiş oluyorum.
+
+455
+01:31:08,559 --> 01:31:20,500
+Şimdi bakın test getName. GetName metodunu test edeceğim. Bu getName metodu testini Yunus objesi için yapacağım için aslında custom'ın bir metodunu.
+
+456
+01:31:23,283 --> 01:31:47,283
+Bulalım. Customer'ın getName metodunun doğru çalışıp çalışmadığını test ediyor olacağım. Nasıl ediyorum? Yunus'un getName metodu, bakın şurada, bana bir string döndürüyor. Buradan onu yine görebiliyoruz. Yunus'un getName metodu return'ine ismini döndürecek. Onu da zaten şu şekilde set etmiş durumdayım. Ben gelen biri...
+
+457
+01:31:48,692 --> 01:31:57,731
+Benim şuradaki verimle aynı mıdır diye kontrol etmek istiyorum. Şu veriyi işte karşılaştırma verisini ben kendim giriyorum.
+
+458
+01:31:58,731 --> 01:32:08,372
+Karşılaştırma verisini ben kendim giriyorum. Şu ise artık kullanıcı tarafından bir şekilde oluşturulmuş bir veri. Bu ikisi birbirlerine eşit midir?
+
+459
+01:32:09,492 --> 01:32:33,472
+Yani eşit olması durumunda test başarılı demek. Eşit olmaması durumunda bir yerde bir şey yanlış. Yani sen YumiSemre sertif olarak gidiyorsun ama arka taraflarda ekliyorsun, dizinin boyutu küçük, siliyorsun, tam tersi bir şekilde karşına çıkıyor olabilir. Eğer ki doğruysa bu başarılı bir şekilde gerçekleştiriliyor olacak. Bir diğeri test statement when empty.
+
+460
+01:32:34,163 --> 01:32:59,043
+diye bir test metodumuz söz konusu. Yunus'un yani customer'ın statement diye bir metodu söz konusuymuş. Onun testini başarılı bir şekilde yapıp yapamayacağımızı gösteriyor. Yunus dediğimiz şey bu statement metodu geriye bir string döndürüyor ki burada o string'e atamış. Beklenen string'imiz de şöyle olması lazımmış.
+
+461
+01:32:59,155 --> 01:33:06,655
+Bakalım, bunun içerisinde hakikaten böyle eklemeler yapılıyor. Ondan sonra geriye bir string gönderiliyor.
+
+462
+01:33:07,376 --> 01:33:15,316
+Bu işlemin sonucunda dönmesi gereken şey şuymuş. Eğer ki doğru dönerse, hatta bu yanmış sözcük.
+
+463
+01:33:15,976 --> 01:33:19,316
+Bir yazalım, sonra bunu düzeltiriz. Hepsi doğru dönmenin zorunda değil.
+
+464
+01:33:19,988 --> 01:33:45,288
+Başarısız bir şekilde sonuçlanmış oluyor. İstediğimiz stringin aynısı dönerse doğru bir şekilde sonuçlanmış oluyor. Yani burada başka neleri test etmiş. Yine Statement'ta bu sefer o kişinin üzerine çeşitli filmler ekledikten sonra Statement'ın nasıl dönmesi lazım. Onu karşılaştırmasını eklemiş. Bu ne? Bu ne? Long Run.
+
+465
+01:33:45,876 --> 01:34:13,756
+Bu rental'ların long short olmasına göre çeşitli şeyler değişiyor demek ki. Bunları test edelim, gerçekleştirilmesi için. S-RT-Cluer'lar kullanılıyor olmuş. Ardından mesela farklı hep Yunus'un statementı test edilmiş de başka bir şey de test edilmiş de güzel olmuş aslında bu örnekte. Ardından bonus'a dair bir bilgisi söz konusu var mı? Onun testi için yine bir string üretilmiş.
+
+466
+01:34:13,876 --> 01:34:21,275
+ve bu string acaba sonuç olarak üretilen string de aynıdır diye karşılaştırması yapabiliriz.
+
+467
+01:34:21,275 --> 01:34:21,975
+Çalışacak.
+
+468
+01:34:21,975 --> 01:34:26,475
+1, 2, 3, 4.
+
+469
+01:34:26,931 --> 01:34:41,652
+4 ve 5 tane gördüğünüz gibi test senaryomuz var. Bunların her birisini bir test all sınıfında birleştirip suite metodunu çağırarak bu işleri gerçekleştirebiliyordum.
+
+470
+01:34:41,652 --> 01:34:54,931
+Bakın o da bu şekilde oluyor. Class'ımızın adı test all. İçerisinde benim public static ile beraber tanımladığım test sınıfından bir suite metod.
+
+471
+01:34:54,931 --> 01:34:56,072
+Metodu söz konusu.
+
+472
+01:34:56,612 --> 01:35:03,832
+Bunu, bu kullanımı size threadleri falan anlatırken daha güzel kafamıza canlanacak.
+
+473
+01:35:03,952 --> 01:35:06,712
+Şimdilik böyle bir kullanım olduğunu bilin.
+
+474
+01:35:06,851 --> 01:35:08,952
+Hani detaylarına çok fazla girmiyorum.
+
+475
+01:35:09,152 --> 01:35:11,891
+O zaman daha fazla detaylarını anlatıyor olacağız.
+
+476
+01:35:12,492 --> 01:35:13,891
+Şimdi bu metod...
+
+477
+01:35:14,771 --> 01:35:22,452
+suite metodu otomatik olarak çağrıldığında tüm testler başarılı bir şekilde çalıştırılıyor olacak.
+
+478
+01:35:22,631 --> 01:35:31,952
+Yani bakın benim bu testlerin setup'u söz konusu, test senaryolarım söz konusu, burada yaptığım işlem o testleri çalıştırmak.
+
+479
+01:35:31,952 --> 01:35:42,751
+Yani şunların her birisine böyle ayrı ayrı girip inceleyip baktığınızda hocam yani bunu çalıştıracağımız temelde bir neyin metod falan o kadar bir şey yok mu?
+
+480
+01:35:42,771 --> 01:35:51,912
+diye düşünürseniz, yok. O testlerin çalışılması, testlerin sonucunun üretilmesini bekliyoruz. Çalıştıralım.
+
+481
+01:35:56,020 --> 01:36:11,360
+Şimdi tabi testlerin sonucu çalıştığında JUnit'in arayüzü çalışıyor. Onu harici olarak bakın şurada tıkladığınızda Unit Testleri çalıştırma dülü veya Run as Unit Test olarak çalıştırma dülünü kullanarak çalıştırabilirsiniz.
+
+482
+01:36:11,891 --> 01:36:35,391
+Ya hata niye var onu anlamadım. He biz bir şeyi hatalı yapmıştık. Muhtemelen o hatalı. Süper bir şeyi değiştirmiştim ya o hatalı olması lazım. Şimdi kırmızı boyandı testlerde hatalar var. Test get name doğru çalışmış. Şunlar doğru çalışmış. Şunda bir problem var. Burada zannımca şu 0'ı 1 yapmıştım. Yanlış hatırlamıyorsam.
+
+483
+01:36:35,956 --> 01:36:47,956
+Neyse, yoksa tekrar düzeltiriz. Şuradan, RANES. Evet, yeşil var, bizim için çok güzel bir var. Eğer ki beklenen sonuçlarla...
+
+484
+01:36:48,095 --> 01:36:55,035
+gönderilen sonuçlar birbiriyle aynıysa test gün başarılı bir şekilde sonlanmış oluyor.
+
+485
+01:36:55,035 --> 01:37:04,855
+Ve işte bunlara da biz unit ekliyoruz. Bunu yapabileceğimiz bir arayüz de JUnit tarafından, JUnit frem yönetimiyle bize sağlanmış oluyor.
+
+486
+01:37:05,615 --> 01:37:15,815
+Oldukça önemli bir yazılım projesi yazıyorsanız o yazılımımızda bulunan modüllerin ürettiği çiftleri illa sidrink olmak zorunda değil tabii.
+
+487
+01:37:16,095 --> 01:37:18,955
+Bunlar integer veriler olabilir veya bir collection olabilir.
+
+488
+01:37:19,155 --> 01:37:28,095
+Yani bir Array, bir dizi veya ürettiğiniz şey en nihayetinde bir lojik olabilir, bir resim olabilir.
+
+489
+01:37:28,595 --> 01:37:31,055
+Yani o buna eşit midir?
+
+490
+01:37:31,315 --> 01:37:32,555
+Bunu üretmeyi bekliyordum.
+
+491
+01:37:32,635 --> 01:37:34,175
+Onu tabii kendiniz hesaplıyorsunuz.
+
+492
+01:37:34,175 --> 01:37:41,735
+Yani beklenen kısmı, şuraya yazdığınız kısmı bu metot çalışırsa, işindeki işlemleri yaparsa şunu vermesi lazım.
+
+493
+01:37:42,000 --> 01:37:51,380
+diye insanoğlu olarak siz hesaplıyorsunuz. Ardından onu veriyor mu vermiyor mu böyle bir karşılaştırma gerçekleştirmiş oluyorsunuz.
+
+494
+01:37:52,039 --> 01:37:54,960
+Bu kod kısmında soru soran arkadaşlarımız var mı?
+
+495
+01:37:59,412 --> 01:38:06,692
+Yok herhalde, tamam. Şimdi o zaman, o zaman, slide'dan devam ediyoruz. Slide'dan devam edelim.
+
+496
+01:38:10,515 --> 01:38:14,115
+Evet. Şimdi zannedince görüyorsunuz.
+
+497
+01:38:15,595 --> 01:38:21,755
+Bunlar o şeyler. Benim size eklifte göstererek anlattığım şeyler.
+
+498
+01:38:21,916 --> 01:38:27,487
+Test yönetlerinin ne şekilde yazıldığı var. Ne şekilde çalıştırılacağına...
+
+499
+01:38:27,488 --> 01:38:45,308
+dair bir şeyler yapacağız. Hatalı olduğunda kırmızı şeritin yandığını gördük. Hangi testte başarısız olduğumuzu, hangi o assert işlemi gerçekleştirilirken başarısız olduğumuzu bize söyledi. Onların hepsini düzelttik.
+
+500
+01:38:45,308 --> 01:38:55,328
+Şimdi tabii unit testin avantajları var. Bu unit testleri yapmadığımız durumda, yani illa unit test olayı çözmüyoruz tabii. Şimdiye kadar.
+
+501
+01:38:55,488 --> 01:39:03,888
+Siz de bu kodunuzu test etmek için kendi çapınında debug şeyleri yapmışsınız.
+
+502
+01:39:04,068 --> 01:39:07,288
+Yani en basitinde ekrana o değerleri yazarsınız.
+
+503
+01:39:07,428 --> 01:39:11,308
+Beklediğiniz değer de şu dur diye ekranda gözünüzde kontrol edersiniz.
+
+504
+01:39:11,308 --> 01:39:23,488
+Mesela Sistema Printerem burada veya Java işte CD Print F fonksiyonunu kullanarak hani ekrana o programın akışındaki o anki vergi yazıyor olarak kontrol edersiniz.
+
+505
+01:39:23,488 --> 01:39:24,488
+en temeli zaten.
+
+506
+01:39:24,868 --> 01:39:27,348
+Yani işte debug modülünü kullanıp ara ara ilerlersin.
+
+507
+01:39:27,448 --> 01:39:30,208
+Onları biraz daha manuel test oluyor ve
+
+508
+01:39:30,739 --> 01:39:44,400
+Hali hazırda bu manuel test yapmak hem program sizin yaptığınız testlerde manuel olduğundan ötürü o insan faktörünün etkisini ortaya katmış oluyor.
+
+509
+01:39:44,840 --> 01:39:57,900
+Hem de bu manuel testlerin tekrarlanabiliyor olması, farklı girdilere göre farklı kişiler tarafından testlerinin yapılıyor olması zor olacaktır.
+
+510
+01:39:58,739 --> 01:40:21,619
+Ve siz manuel test ettiniz. Evet, bunların hepsi. Önünüzde bir karalama kağıdı vardır. Bir test doğru, bir test doğru, şurayı test ettim ama hiçbirisi resmiyete, yani bir programa dönüşülmediği için hangi testleri yapmıştım acaba, hangiler eksik kalmıştı diye hatırlamak konusunda çeşitli problemler oluşabilir.
+
+511
+01:40:23,000 --> 01:40:26,443
+Bakalım başka nelerden bahsetmiş. Ben de hani...
+
+512
+01:40:27,283 --> 01:40:30,523
+çalışıyorum.
+
+513
+01:40:32,692 --> 01:40:48,751
+Tabii, yani şimdi bir de şöyle bir durum var. Bizim için test senaryosu, onların da örneklerini daha kompleki projelerimizde zannımca var, yapıyoruz önümüzdeki haftalarda.
+
+514
+01:40:49,371 --> 01:40:55,931
+Şimdi biz test yapmak istiyoruz. Test senaryomuz farklı farklı alt test senaryolarından oluşuyor diyelim.
+
+515
+01:40:55,931 --> 01:41:00,371
+Yani bir yerden bir metin üretik, diğerinden bir metin üretik, diğerinden metin üretik.
+
+516
+01:41:00,692 --> 01:41:12,731
+Biz herhangidir ara basama test senaryosu koyarak nereden çıktığını, problemin nereden kaynaklı olduğunu direkt adresi göstererek burada öğrenebiliyoruz.
+
+517
+01:41:13,011 --> 01:41:24,771
+Diğer tarafta her birisine işte dediğim gibi o printflerle yani manuel testle daha az da alana gidip kontrol etmeniz ve yapmanız lazım.
+
+518
+01:41:24,771 --> 01:41:26,791
+Olmaz değil, hepimiz yapıyoruz.
+
+519
+01:41:28,692 --> 01:41:40,692
+En nihayetinde sistem alt print yazıp da sonucu test etmeye çalışıyoruz ama bu unit testle artık modüller bitmiş, her şey tamamlanmış ve siz yanlış çalıştığını düşünmüyorsunuz.
+
+520
+01:41:42,051 --> 01:41:46,692
+Ondan sonra kullanılan testler olduğu için biraz daha olayı otomatize etmeye çalışıyoruz.
+
+521
+01:41:47,412 --> 01:42:15,412
+açıkçası çalışıyor. Tam olarak da bu otomatizasyondan burada bahsediyor. Kodun modüleri olması zaten nesbidenin taraftan gelen bir şey. Verilen iki parametrenin doğru bir şekilde gözle kontrol edilmesiyle hala hazırda kullanılan metotlarla kontrol edilmesi oldukça önemli. 30 tane testiniz vardır. Siz bunların her birisini gözle karşılaştırarak bakmak belki bazen çeşitli stringlerin uzaklaştırılır.
+
+522
+01:42:15,412 --> 01:42:19,431
+Ortadaki karakterlerin değerlerin atlatmasına sebebiyet verebilir.
+
+523
+01:42:19,931 --> 01:42:22,872
+Veya biz sonuçta insanız.
+
+524
+01:42:23,332 --> 01:42:32,891
+Sırf gözle belki o an kontrol ettik ama gözle bu işi yapmak istiyorsak bazen o dalgınlıkla veriler aradan kaçabilir.
+
+525
+01:42:32,891 --> 01:42:37,351
+En nihayetinde program run olmadan önce, müşterinin karşısına çıkmadan önce,
+
+526
+01:42:37,752 --> 01:42:43,412
+dinl testlerinin kesinlikle yapılması gerektiği yazılımın hangisi tarafı.
+
+527
+01:42:43,412 --> 01:43:02,320
+önemli konulardan birisi. Biz de Java'da bunu nasıl yaparız? Bunu görmüş olduk. Biraz da hani buradaki niye yapmalıyız? Veya manuel testin zorlukları nelerdir? Onları konuşmuş olduk. Evet, sorusu olan arkadaşımız var mı bu testlerle ilgili? Yoksa burada...
+
+528
+01:43:02,319 --> 01:43:05,739
+Bu haftalık dersimizi noktalandırabiliriz.
+
+529
+01:43:06,260 --> 01:43:09,500
+Yine önümüzdeki hafta bir ders daha yapıyor olacağız.
+
+530
+01:43:10,079 --> 01:43:12,640
+Ondan sonra sınav haftasına gideceğiz.
+
+531
+01:43:14,180 --> 01:43:16,739
+Sınav günleri açıklandı mı bilmiyorum.
+
+532
+01:43:17,600 --> 01:43:19,180
+Onu lütfen siz takip edin.
+
+533
+01:43:19,180 --> 01:43:21,180
+Bizi açıklandı da hocalara.
+
+534
+01:43:22,260 --> 01:43:24,779
+Ondan sonra onlar öğrencilere ilan ediliyor sayfada.
+
+535
+01:43:24,880 --> 01:43:26,260
+Size ilan edildiğini bilmiyorum.
+
+536
+01:43:26,960 --> 01:43:28,340
+Lütfen takip edin.
+
+537
+01:43:28,884 --> 01:43:46,764
+Benim baktığım kadarıyla ders saatinde ama dediğim gibi sizi takip edin sınav zamanında. Teşekkür ediyoruz. Sorusu olan yoksa önümüzdeki hafta görüşürüz diyoruz. İyi günler hocam. İyi günler hocam. Kendinize iyi bakın. Sağlıcakla kalın. Görüşürüz.
