@@ -4,6 +4,7 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
+| 6 | Bahar | — | [sube_6/](sube_6/) |
 | 15 | Bahar | — | [sube_15/](sube_15/) |
 | 17 | Bahar | — | [sube_17/](sube_17/) |
 | 23 | Bahar | Yusuf Zeren | [sube_23/](sube_23/) |

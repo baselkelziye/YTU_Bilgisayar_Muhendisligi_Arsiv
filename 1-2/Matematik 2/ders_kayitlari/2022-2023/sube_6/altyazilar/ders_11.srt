@@ -1,0 +1,3143 @@
+1
+00:14:40,436 --> 00:14:53,836
+Evet, herkese merhaba. Sayımız hala az. Nedenini bilen var mı? Sabah tabii dersiniz oluyordu. Geç bittiğini biliyorum ama kaç kişi görünüyor?
+
+2
+00:14:57,971 --> 00:14:59,331
+15 kişi görünüyor.
+
+3
+00:15:25,556 --> 00:15:38,896
+Merhaba [öğrenci]. Sayımız biraz az. Ders geç bitiyor. Biliyorum pazartesilere öyle bir durum yaşanıyordu ama şu an 10 geçiyor. Biraz sayı az bir sıkıntım var.
+
+4
+00:15:44,371 --> 00:16:06,371
+Yani hibrit durumu ile ilgili bildiğim kadarıyla talep toplanıyor. Herhalde belli bir sayı geçtikten sonra hibrite, hibrit olabiliyor ders bildiğim kadarıyla. Yani belli bir sayı tutmazsa sanırım olmuyor. Yani çok...
+
+5
+00:16:07,059 --> 00:16:14,099
+Çok açık seçik bir açıklama yok henüz ama herhalde önümüzdeki günlerde, bu hafta içinde yapılır öyle bir açıklama.
+
+6
+00:16:43,731 --> 00:16:45,531
+Evet, 20 kişi olduk şu anda.
+
+7
+00:16:49,251 --> 00:16:53,531
+Yavaş yavaş onlar da gelir herhalde. Başlayalım artık çünkü kaç geçiyor?
+
+8
+00:16:55,331 --> 00:16:58,591
+10 geçiyor. Artık başlayabiliriz.
+
+9
+00:17:00,572 --> 00:17:03,531
+Evet, 10 dakika beklememiz yeterli diye düşünüyorum.
+
+10
+00:17:03,531 --> 00:17:07,531
+Evet, şimdi vektör değerli fonksiyonlar geçen hafta...
+
+11
+00:17:08,500 --> 00:17:26,500
+Son olarak ne anlatmıştık? Vektörler, uzayda doğru düzleme anlatmıştık en son. Yani uzayda vektörler anlattık. İşte skaler çarpım, vektörel çarpım, karma çarpım kavramlarını verdik. Arkasından uzayda doğru denklemini...
+
+12
+00:17:27,695 --> 00:17:36,135
+Ondan sonra arkasından da uzayda düzlem denklemini ve işte kesecen doğrular, düzlemlerin kesişi doğrusunu bulmayı vesaire gördük.
+
+13
+00:17:36,235 --> 00:17:37,735
+Arkasından uygulama da yaptık.
+
+14
+00:17:39,615 --> 00:17:43,015
+Hatta uygulamada vektör değerli fonksiyonlarla ilgili sorular vardı.
+
+15
+00:17:43,155 --> 00:17:47,775
+Onlara dedim, şimdi anlatmayacağım, vektör değerli fonksiyonlara haftaya başlayacağız demiştik.
+
+16
+00:17:48,415 --> 00:17:50,695
+Şimdi vektör değerli fonksiyonlara başlayacağız.
+
+17
+00:17:51,175 --> 00:17:54,555
+Bitireceğiz zaten kısa bir konu, zor, kolay bir konu aynı zamanda.
+
+18
+00:17:55,347 --> 00:18:05,087
+Uygulamasını da yapacağız, o kalan soruları da çözeceğiz. Bugünü böyle noktalayacağız. Eğer vaktimiz kalırsa belki çok değişkenli fonksiyonlara da başlarız.
+
+19
+00:18:06,307 --> 00:18:15,587
+Şimdi uzayda bir cisim bir ı zaman aralığında hareket ederken cismin koordinatlarını ı aralığında tanımlanan bir fonksiyon olarak düşünebiliriz.
+
+20
+00:18:24,019 --> 00:18:37,119
+Hareket ederken t, t zaman parametresi. O zaman şöyle bir nokta düşünelim. Yer vektörü de r olsun. Bu nokta normalde şunu p, x, y, z.
+
+21
+00:18:38,119 --> 00:18:48,659
+Bu zamana bağlı ifadesi de x'in. Şöyle bir fonksiyon alalım. t'nin bir fonksiyonu. y de zamana bağlı bir fonksiyon. O da gt diyelim.
+
+22
+00:18:49,460 --> 00:18:53,539
+Z'de yine zamanın bir başka fonksiyonu, o da ht.
+
+23
+00:18:55,500 --> 00:18:58,460
+Evet, bu şekilde ifade edebiliyoruz.
+
+24
+00:18:59,420 --> 00:19:05,640
+Bir parçacığın konumunu zamana bağlı fonksiyonlar olarak ifade edebiliyoruz.
+
+25
+00:19:06,079 --> 00:19:09,680
+Herhangi bir t anındaki konumunu böyle ifade edebiliyoruz.
+
+26
+00:19:10,451 --> 00:19:29,231
+Bu x'e z'de tabii t değiştikçe ne olacak? Farklı farklı noktalar bulacağız. Yani t, tabii bir zaman aralığında t değiştikçe farklı farklı noktalar bulacağız. O noktalar neyi oluşturacak bize? Parçacığın yolunu. Yani bir eğri oluşturacak. O da tabii parçacığın neyi olacak? Yol olacak.
+
+27
+00:19:31,028 --> 00:19:37,248
+Tabi t anındaki konum vektörü parçacığın, rt normalde nasıl ifade ediyorduk?
+
+28
+00:19:37,347 --> 00:19:43,508
+rt, x'i, y, j, z, k diye ifade etmeyi zaten biliyorduk.
+
+29
+00:19:43,508 --> 00:19:57,508
+Ama burada x, y ve z zamanın fonksiyonları oldukları için x yerine ft, y yerine gt zamanın fonksiyonu z'de ht biçimde.
+
+30
+00:19:57,779 --> 00:19:59,139
+ifade edebiliriz.
+
+31
+00:20:00,079 --> 00:20:04,400
+İşte bu şekilde tanımladığımız, bakın vektörel olduk artık, R bir vektör.
+
+32
+00:20:06,759 --> 00:20:11,900
+Şurada kat sayıları T'nin fonksiyonları, kat sayıları T'nin fonksiyonu.
+
+33
+00:20:11,940 --> 00:20:17,519
+Bu RT fonksiyonuna biz artık vektör değerli fonksiyon veya kısaca vektörel fonksiyon diyoruz.
+
+34
+00:20:18,380 --> 00:20:19,700
+Evet, dikkat edin, ne var?
+
+35
+00:20:20,112 --> 00:20:27,532
+i, j, k'nın kat sayıları, her biri t zaman aralığına bağlı bir takım fonksiyonlar.
+
+36
+00:20:27,892 --> 00:20:33,092
+Biz böyle elde ettiğimiz r, t'ye ne diyoruz? Vektör değerli bir fonksiyon diyoruz.
+
+37
+00:20:33,172 --> 00:20:37,532
+Ya da vektörel fonksiyon, vektör fonksiyon, vektör fonksiyon, hepsi kabulümüz.
+
+38
+00:20:38,152 --> 00:20:43,912
+İster vektör değerli değil, ister vektör fonksiyon, ister vektör fonksiyon şeklinde söyleyin.
+
+39
+00:20:51,059 --> 00:21:04,639
+Evet, şimdi limit ve süreklilik nasıl tanımlanıyor bunlarda? Bunların nasıl olduğu limit, süreklilik ve integral türeva sonra, limit, süreklilik türeva arkasından integral nasıl alınır? Bu kavramları sırayla göreceğiz.
+
+40
+00:21:05,659 --> 00:21:13,539
+Birincisi, RT vektörel fonksiyonumuz şöyle olsun. Tanım bölgesi D olan vektör değerli bir fonksiyon ve
+
+41
+00:21:15,316 --> 00:21:20,536
+L'de L1i, L2j, L3k şeklinde bir vektör olsun.
+
+42
+00:21:21,576 --> 00:21:23,576
+Evet, bu şekilde bir vektör olsun.
+
+43
+00:21:24,056 --> 00:21:24,915
+Eşittir şurası.
+
+44
+00:21:25,996 --> 00:21:27,215
+Evet, bir vektör olsun.
+
+45
+00:21:28,915 --> 00:21:37,655
+Limit tt sıfıra giderken, rt eşit l ise, tt sıfıra için, lt eşit l iken,
+
+46
+00:21:40,115 --> 00:22:01,996
+Limit, tt0 giderken, ft, l1, tt0 giderken, gt, l2, limit tt0 giderken, ht, l3. Yani şunu demek istiyoruz. Limit alırken, rt'nin limitini alırken, tek tek kat sayıların limitini alıyorsunuz. Bu kadar.
+
+47
+00:22:03,059 --> 00:22:10,240
+Bakın, bu RT fonksiyonun limiti nasıl alınırmış? Şuraya limit yazdım. O zaman buraya da limit yazacaksınız, buraya da limit yazacaksınız.
+
+48
+00:22:10,940 --> 00:22:18,819
+Kat sayı olarak bunlar gelecek. Böyle. Şöyle tabii parantezi aldık. Şurada limit aldık GT'nin. Limit aldık. Bu şekilde.
+
+49
+00:22:19,980 --> 00:22:26,240
+Şimdi örnekteden de anlayacağız. Alalım bakalım şimdi örnekte nasıl.
+
+50
+00:22:26,932 --> 00:22:51,751
+Evet, limit alıyoruz bakın. Şu RT'nin limitini alın diyor. T nereye giderken? Pi bölü 4'e giderken. Zor değil dedim ya kolay bir konu. Sadece işte bir T denklemi falan oralarda biraz dikkat etmek gerekiyor. Onları da açıklayacağım zaten. Limit T pi bölü 4'e giderken limit al. Alalım limiti. Şuraya limit yaz. İçeriye de yaz limit. Hepsine limit. Tek tek kat sayılan limitini alıyoruz yani.
+
+51
+00:22:52,980 --> 00:23:04,880
+Burada kat sayı t, dikkat edin. Ama t nereye gidiyor? p bölü 4'e. Limit t, p bölü 4 derken, giderken kosünüsün limiti, sinüsün limiti, t'nin limiti.
+
+52
+00:23:04,880 --> 00:23:19,900
+E tabii kosünüs t, t p bölü 4 için kosünüs 45 nedir? Kök 2 bölü 2. İyi tabii bir vektör çıkacak ortaya. Evet, t p bölü 4 için sin 45 de kök 2 bölü 2.
+
+53
+00:23:20,384 --> 00:23:23,683
+t yerine pi bölü 4'ü yazarsak, pi bölü 4 kök 2 olur.
+
+54
+00:23:25,483 --> 00:23:27,703
+Süreklilikle şu, limit böyle alıyoruz.
+
+55
+00:23:28,003 --> 00:23:35,923
+Süreklilikle şu, evet, eğer limit değeri, fonksiyonun limit değeri, fonksiyonun o noktada aldığı değere eşitse,
+
+56
+00:23:37,423 --> 00:23:41,324
+yani rt sıfıra eşitse, o zaman ne oluyor?
+
+57
+00:23:46,036 --> 00:24:10,276
+Sürekli diyoruz. Yani bu neye benziyor? Bizim ne yapıyorduk? Bir noktada real değerli fonksiyonları düşünün. Ne yapıyorduk? Bir x0 noktasında sürekliliği nasıl tanımlıyorduk? Limit x0'a giderken fx eşit fx0 ise neydi? x eşit x0'da f ne diyorduk? Sürekli.
+
+58
+00:24:12,468 --> 00:24:34,608
+Sürekli, değil mi? X eşitsiz, X sıfırda sürekli. Aynısı aslında. Burada da RT, burada yalnız vektör değerli fonksiyon var. Onun sürekli olması için T sıfır noktasında nasıl sürekli olacak? T sıfırdaki değeri, işte burada sağ taraf, limite eşit. Aynen. T sıfırdaki değeri limite eşit. Bu kadar.
+
+59
+00:24:35,763 --> 00:24:42,083
+Evet, vektör değerli fonksiyonlarda da limit, süreklilik aynı şekilde. Limit olacak, limit var.
+
+60
+00:24:44,083 --> 00:24:54,183
+Ve o noktadaki değeri, yani test 0'daki değeri, değeri ne olacak? Eşit olacak.
+
+61
+00:24:55,203 --> 00:25:00,783
+Yani limit var, test 0'daki değeri de, test 0'da tanımlı daha doğrusu öyle diyelim.
+
+62
+00:25:02,612 --> 00:25:07,292
+Ki değeri değil, t0'da tanımlı olacak. O değerler birbirine eşit olacak.
+
+63
+00:25:08,172 --> 00:25:10,352
+Evet, şöyle diyelim.
+
+64
+00:25:11,512 --> 00:25:14,552
+T0'da tanımlı, yani uzun yazmak istersek.
+
+65
+00:25:15,312 --> 00:25:17,952
+T0'da tanımlı.
+
+66
+00:25:19,832 --> 00:25:22,672
+Yetmez. Bu birinci limit var.
+
+67
+00:25:22,892 --> 00:25:25,012
+T0'da tanımlı. 3, bunlar eşit.
+
+68
+00:25:25,892 --> 00:25:27,972
+Limit R, T eşit.
+
+69
+00:25:28,596 --> 00:25:33,175
+Tabi t, t sıfıra giderken, eşit, r, t sıfır.
+
+70
+00:25:35,536 --> 00:25:43,195
+Evet, aynen normal, real değerli fonksiyonlarda olduğu gibi çalışıyor, dikkat edin. Limit olacak, bir.
+
+71
+00:25:44,476 --> 00:25:49,775
+t sıfırda tanım olacak, iki. Yetmez, bu ikisi eşit olacak. O zaman ne diyoruz? Sürekli.
+
+72
+00:25:51,775 --> 00:25:52,115
+Bu kadar.
+
+73
+00:25:53,107 --> 00:26:01,147
+Evet, sürekli birlikte bildiğimiz şekilde tanımlanıyormuş. Buradaki fonksiyonumuz yalnız vektör değerli fonksiyon. Bu kadar.
+
+74
+00:26:06,003 --> 00:26:11,603
+Şimdi gelelim türevi. Türevi de benzer şekilde. Kat sayıların her biri türevli ise türevli diyeceğiz.
+
+75
+00:26:12,543 --> 00:26:19,003
+Şöyle, eğer F, G ve H fonksiyonları...
+
+76
+00:26:20,403 --> 00:26:30,724
+t'de türevlenebilir ise, vektör değerli fonksiyonumuz rt, yani fti, gt, j, artı ht, k fonksiyonu da t'de türevlenebilirdir.
+
+77
+00:26:31,284 --> 00:26:37,163
+Bakın ne oluyor? Kat sayılar türevlenebilirse, rt'de türevlenebilirdir diyoruz.
+
+78
+00:26:37,364 --> 00:26:44,304
+Evet, bir daha söylüyorum. Kat sayılar türevlenebilirse, rt'de türevlenebilir diyoruz.
+
+79
+00:26:47,412 --> 00:27:02,271
+Türev aşağıdaki vektör fonksiyonudur. R üstü t'nin tanımı, d, r bölü d, t. Türev tanımını hatırlayın, matematik 1 derslerinden. Şöyle de derdik değil mi? Türev'i şöyle de tanımlardık.
+
+80
+00:27:15,412 --> 00:27:38,852
+0'a giderken, fx artı delta x, eksi fx, bölü delta x. Öyle de tanımlardık. P'ye h demişizdir belki. Sil bunu. H yaz. H demişizdir. H, şu da h. Bu kadar.
+
+81
+00:27:40,819 --> 00:27:55,199
+Evet, delta x dememişsinizdir de, h demişsinizdir. Genelde h kitap, bizim referans kitabımız Thomas Kalkulus'te, h tanım var ama böyle de bu vektörlerle de böyle tanımlamışız.
+
+82
+00:27:56,099 --> 00:28:02,759
+Delta t yerine, h yerine delta t gelmiş. Böyle türev alıyoruz. Yani türev tanımı bu demektir zaten.
+
+83
+00:28:02,759 --> 00:28:04,880
+Türev tanımı bu demektir. Bu da şu demek.
+
+84
+00:28:05,268 --> 00:28:20,788
+İşte kat sayıların tek tek türevi alınarak, kat sayılar türevlenebilir olması lazım. O zaman R'nin türevi, T'ye göre türevi var şeklinde söylüyoruz. Eğer kat sayıların tek tek türevi varsa.
+
+85
+00:28:23,488 --> 00:28:29,788
+Burada bir iki notumuz var. Eğer bir R vektör fonksiyonu tanım hükümesinin her noktasında türevlenebilirse,
+
+86
+00:28:30,932 --> 00:28:39,791
+Ona türevlenebilir diyoruz. Evet, türevlenebilir olması ne demek? Tanım kümesinin her noktasında türevlenebilirse türevlenebilir diyoruz.
+
+87
+00:28:41,192 --> 00:28:56,932
+Eğer dR bölü dt sürekli ise ve asla sıfır olmuyorsa, kim sıfır olmuyorsa, dR bölü dt sıfırdan farklıysa, yani re üstü t sıfır değilse,
+
+88
+00:28:57,619 --> 00:29:14,619
+Bir başka bir işle. Hem sürekli olacak, hem de sıfır olmayacak. Evet, DR bölü DT sıfır olmayarak sürekli diyelim yani sıfır olmayıp sürekli. Hem sıfır olmayacak hem de sürekli olacak.
+
+89
+00:29:15,759 --> 00:29:22,440
+Yani FG'nin aynı anda sıfır olmayan birinci mertebe süreçleri varsa, çünkü aynı anda sıfır.
+
+90
+00:29:22,867 --> 00:29:29,387
+FG'nin aynı anda sıfır olmayan türevlerin hepsi aynı anda sıfır olsa, DR bölü DT de sıfır olur.
+
+91
+00:29:29,947 --> 00:29:35,987
+FG'nin türevleri, birinci mertebe türevlerin her biri sıfır olsa, DR bölü DT de sıfır olur.
+
+92
+00:29:36,728 --> 00:29:40,867
+Onun için o zaman R tarafından gidilen eğri düzgündür.
+
+93
+00:29:41,847 --> 00:29:49,887
+Evet, böyle eğriye biz, yani R'ye düzgün eğri diyoruz, RT'ye düzgün eğri diyoruz.
+
+94
+00:29:50,291 --> 00:30:03,411
+Düzgün eğri lafı önemli. Bunu gördüğünüz zaman, demek ki diyeceksiniz, reüsü sürekli ve sıfır değil.
+
+95
+00:30:05,172 --> 00:30:10,991
+Düzgün eğri deyince, türev sürekli olacak ve sıfır olmayacak. O zaman düzgün eğri.
+
+96
+00:30:10,991 --> 00:30:15,811
+Evet, düzgün eğri kavramını unutmayalım. Düzgün eğri deyince, türev sürekli.
+
+97
+00:30:16,211 --> 00:30:19,592
+Ve sıfır değil. Evet, R üstü sürekli.
+
+98
+00:30:22,032 --> 00:30:25,912
+Ve R üstü sıfır değil. Buna düzgün eğri diyoruz.
+
+99
+00:30:27,251 --> 00:30:35,771
+Eğer R uzayda düzgün bir eğri boyunca hareket eden bir parçacığın konum vektörü olsun, şimdi bir takım tanımlar var. Bunları bilmemiz gerekiyor.
+
+100
+00:30:36,819 --> 00:31:01,819
+Yani hız nedir, sürat nedir, onları birlikte bir konuşalım şimdi. O tanımla bir de iğme. Aslında fizikten de biliyorsunuzdur. Ama burada şimdi üzerinde duralım. Bir kere hız konumun türevi. Yani hız RT, RT konumdu. Konumun türevi. Konumun türevi. Ya da hız konumun birinci türevi. Öyle de diyebilirsiniz. V eşit DR bölü DT.
+
+101
+00:31:03,347 --> 00:31:22,688
+B eşit, DR bölü, DT. Bu bir. İki, sürat nedir? Hızın büyüklüğü. Hız, konumun türeviydi, büyüklük derken işte şu. Bir başka deyişle sürat ne oldu? DR bölü, DT'nin büyüklüğü olmuş oldu. Sürat bu. Sürat hızın büyüklüğüdür.
+
+102
+00:31:26,675 --> 00:31:40,815
+Konumun ikinci türevi ve hızın türevi demek. İvme hızın türevidir veya konumun ikinci türevidir. Evet, ivme hızın türevidir veya konumun ikinci türevidir. Bu ikinci türevi demekti biliyorsunuz.
+
+103
+00:31:40,815 --> 00:31:52,556
+D, R bölü D, T. D, R bölü D, T. Evet, bu ikinci türevi demekti. Evet, bir daha söylüyorum. Hız konumun birinci türevi.
+
+104
+00:31:53,107 --> 00:32:00,807
+Sürat hızın büyüklüğü, 3, iğme hızın türevi veya konumun ikinci türevi şeklinde tanımlıyoruz.
+
+105
+00:32:02,347 --> 00:32:03,768
+Bu tanımları bilmemiz lazım.
+
+106
+00:32:04,688 --> 00:32:12,327
+Peki, şöyle V'yi V'nin uzunluğuna bölersek, yani V yönündeki vektörü bulursak, vektörü birim t-fektör.
+
+107
+00:32:12,407 --> 00:32:14,708
+Artık birim t-fektörün tanımını biliyoruz.
+
+108
+00:32:16,127 --> 00:32:20,167
+V'yi V'nin uzunluğuna bölersek, yani buna ne demiştik?
+
+109
+00:32:20,627 --> 00:32:37,528
+V yönünde vektör. V'nin yönündeki vektör de demiştik. Bu vektöre birim t vektördür diyoruz. Ve t ile gösteriyoruz. Şöyle bir t bu şekilde. Birim t vektördür. Bu t zamanında hareketinde yönünü gösterir aynı zamanda.
+
+110
+00:32:39,127 --> 00:32:46,847
+Hızı da şöyle yazabiliriz. Hızı da sürat çarpı yon şeklinde yazmamız mümkün. Çünkü sürat hızın büyüklüğüydü.
+
+111
+00:32:47,508 --> 00:32:55,087
+Bunu yönle çarparsak, yani birim t vektörle çarparsak, o zaman zaten ne olur? Hızı elde etmiş oluruz.
+
+112
+00:32:55,248 --> 00:33:01,107
+Yani hız, sürat çarpı yön demektir. Onu da söylemiş olduk burada. Hız ne demektir?
+
+113
+00:33:01,867 --> 00:33:08,508
+Sürat t eşit değildir. Hani günlük hayatta da biraz aynı gibi kullanılıyor ama tabii fizik öğrenler...
+
+114
+00:33:08,819 --> 00:33:17,359
+sürat çarpı yön şeklinde olduğunu bilirler. Hızın hızla süratın tamamen aynı olmadığını bilirler. Evet, sürat çarpı yön demektir hız.
+
+115
+00:33:17,359 --> 00:33:22,347
+Peki, şimdi...
+
+116
+00:33:30,132 --> 00:33:40,351
+Şimdi burada bir tane örnek var. Bu örnek üzerinde neleri bulacağız? Sürati bulacağız, iğmeyi bulacağız, değil mi? Hızı bulacağız. Bunlara bir bakalım.
+
+117
+00:33:41,291 --> 00:33:55,371
+Evet, uzayda hareketi RT, 2 cos t, 2 sin t, j, 5 cos kare t, k, konum vektörüyle verilen parçacığın, böyle bir parçacık veriliyormuş. Bu bir tabii eğri.
+
+118
+00:33:55,892 --> 00:34:18,372
+çiziyor bu parçacık. Bu vektör değerli fonksiyon bir eğri gösteriyor. Bir yol izliyor. Evet, bu konum vektörü bu. Hızını, süratini ve eğmesini bulun. Hız bir kere konumun türeviydi. İşte bt eşit, vt eşit neydi? Reusite.
+
+119
+00:34:18,867 --> 00:34:32,807
+türev ve t eşit re üste. Ne yapıyorduk? Türev alırken, kat sayıların tek tek türevini alıyoruz. 2 kosünüsün türevi, bunun türevini alırsak, ve üste eşittir, eksi 2 sinüs t, değil mi?
+
+120
+00:34:33,268 --> 00:34:44,167
+2 sinüsün türevi neydi? 2 kos t j artı, kos karenin türevi 5 çarpı, kos karenin türevi nasıl alıyordu? Kos karenin türevi,
+
+121
+00:34:46,867 --> 00:34:51,287
+İki başa gelir, iki cos t çarpı cos t'nin türevi olurdu.
+
+122
+00:34:52,268 --> 00:34:58,047
+Cos t'nin türevi olurdu. Dolayısıyla iki cos t çarpı eksi sinüs t idi.
+
+123
+00:34:58,648 --> 00:35:12,827
+Evet, bu da ne demektir? Bu sinüs 2 t olduğu için, 5 çarpı sinüs, eksimiz var dışarıda, sinüs 2 t, k şeklinde olur.
+
+124
+00:35:13,827 --> 00:35:14,067
+Evet.
+
+125
+00:35:14,675 --> 00:35:33,895
+İşte burada. Evet, hız böyle, konumun türevi. İVME'de konumun ikinci türevi, yani bir daha türevi alacağız. Bir daha türevi alırsak şuradan, eksi 2 sinüsün türevi, eksi 2 kostur. 2 kostün türevi, eksi 2 sin'dir. Sin 2 t'nin türevi de,
+
+126
+00:35:34,867 --> 00:35:46,047
+Eksi 5 var başta, sin 2t'nin türevi ne demektir? İçinin türevi 2. Sin'in türevi ne? Kos, kos 2t. Eksi 5'te çarparsak, eksi 10, kos 2t şeklinde olur.
+
+127
+00:35:46,047 --> 00:35:58,047
+Evet, böylece inveyi de tanımlamış olduk, bulmuş olduk.
+
+128
+00:35:58,335 --> 00:36:04,335
+Sürat de unutmayacağız. Sürat neydi? Hızın büyüklüğüydü.
+
+129
+00:36:07,335 --> 00:36:20,315
+Evet, burada sürati büyüklüğü deyince, tabii nasıl büyüklük deyince, yani uzunluk ya da modül diyorduk.
+
+130
+00:36:20,672 --> 00:36:42,132
+Kat sayıların kareleri toplamının kare kökü demektir. Büyüklüğü böyle buluyorduk ya da uzunluğu böyle buluyorduk. Uzunluğu bulmak demek. Büyüklük de uzunluk aynı burada. Değil mi? O zaman bakıyoruz. Şurada, Vt'miz şurada. 2 sinterenin karesi, 2 kostanenin karesi geliyor. Bir de ne var?
+
+131
+00:36:42,963 --> 00:36:55,304
+Şurada, son halini yazalım. 2 sin t'nin karesi, 2 kos t'nin karesi, 5 sin 2 t'nin karesi, 25 sin, yani 5 sin 2 t'nin karesi diye yazdık.
+
+132
+00:36:55,764 --> 00:37:03,284
+Şurası 4 sin kare artı kos kere geliyor, oradan 1, yani 4 geldi. 25 sin kare 2 t. Bu da ne oldu?
+
+133
+00:37:04,743 --> 00:37:08,543
+Sürat oldu. Evet, sürat hızın büyüklüğü demek idi.
+
+134
+00:37:09,460 --> 00:37:24,059
+Veya hızlı sürat çarpış yönlü şeklinde yazabiliyorduk. Bu da iki bilgi var. Bir, hız sürat çarpıyor. Bir de sürat ne demekti? Sürat hızın büyüklüğü demek idi.
+
+135
+00:37:26,559 --> 00:37:34,920
+Peki, 7P bölü 4'teki değerlerini soruyor bunların. Her birinde 7P bölü 4 yazarsam.
+
+136
+00:37:35,347 --> 00:37:40,347
+Şurada hızı bulmuştuk. 7P bölü 4 yazarsak, yani 7P bölü 4 dediğimiz nedir?
+
+137
+00:37:42,608 --> 00:37:51,127
+225 derece değil mi? 7 çarpı P bölü 4, yani 7 çarpı 45 demek, o da 225.
+
+138
+00:37:53,127 --> 00:37:56,728
+Yani P artı P bölü 4 gibi düşünerek değerleri bulacağız.
+
+139
+00:37:59,068 --> 00:38:02,728
+Şurada ne vardı? Sinüs, eksi 2 sinüs.
+
+140
+00:38:03,476 --> 00:38:19,235
+Sinüs 7 pi bölü 4, yani sinüs pi bölü 4 demektir ama 7 pi bölü 4'ün bulunduğu bölgede sinüs işareti eksi olduğu için bu eksi sin pi bölü 4 demektir.
+
+141
+00:38:19,756 --> 00:38:28,336
+Değil mi? Yani eksi kök 2 bölü 2. Eksi kök 2 bölü 2. Kat sayısı bir de eksi 2 var. Eksi 2 ile çarparsak ne gelir? Kök 2.
+
+142
+00:38:30,164 --> 00:38:38,804
+sinüs 7P bölü 4, eksi sinP bölü 4, oradan eksi kök 2 bölü 2, eksi 2 ile çarptık, kök 2 geldi.
+
+143
+00:38:39,423 --> 00:38:51,083
+Aynı şekilde, cos 7P bölü 4 ne demektir? Yine 3. bölgede cosünüsün işareti eksi olduğu için, bu da eksi cos P bölü 4'tür.
+
+144
+00:38:56,755 --> 00:39:07,376
+2 ile çarparsak, eksi. 2 ile mi çarpmamız gerekiyor? Evet. 2 ile çarparsak, burada niye şey olmuş?
+
+145
+00:39:07,596 --> 00:39:10,215
+Hocam, dereceyi yanlış aldık. Nasıl?
+
+146
+00:39:10,855 --> 00:39:17,376
+225 değildi, 315 ediyor galiba. 7P bölü 4.
+
+147
+00:39:19,496 --> 00:39:24,215
+Tamam, teşekkür ondan ya. Çok teşekkür ederim bu yerin için. Kim konuştu?
+
+148
+00:39:25,715 --> 00:39:26,895
+[öğrenci] hocam.
+
+149
+00:39:27,076 --> 00:39:30,815
+He [öğrenci], tamam. Sen yoktun başta derste [öğrenci], baktım sana.
+
+150
+00:39:31,675 --> 00:39:33,615
+Hocam, diğer ders geç bitti de.
+
+151
+00:39:34,335 --> 00:39:36,595
+10 geçe falan yetmiyor mu şey olarak?
+
+152
+00:39:37,475 --> 00:39:44,615
+Şey hocam, bir de ben bir 3 dakika falan şey yaptım, ekstra geç geldim, 13'te falan.
+
+153
+00:39:45,875 --> 00:39:46,875
+Ondan dolayı oldu.
+
+154
+00:39:46,875 --> 00:39:47,536
+Tamam, pek.
+
+155
+00:39:47,536 --> 00:39:48,375
+Hadi oca bırakıyor.
+
+156
+00:39:48,788 --> 00:40:05,807
+Tamam canım, sağ olasın. 7 çarpı, pardon, 7 çarpı pi bölü 4, 7, e, 32 zaten, 7, 5, 35, işte, 28, 30, 315, evet, 315 oldu. Dolayısıyla, bir dakika, durup öbürü ne oldu? Şimdi oraya gelelim.
+
+157
+00:40:06,807 --> 00:40:15,927
+Sinüs 7 pi bölü 4, yani sinüs 7 pi bölü.
+
+158
+00:40:16,563 --> 00:40:24,764
+4, sinüs, 2 pi, eksi, pi bölü 4 dersi olur mu? Olur.
+
+159
+00:40:25,483 --> 00:40:33,043
+4. bölgede sinüsin işareti ne? Eksi. Buradan tamam. Ama kosünüse gelince, bu tamam. Kosünüse gelince ne olacak?
+
+160
+00:40:33,224 --> 00:40:39,144
+Kosünüs, orada artık kosünüs. Kosünüs 2 pi, eksi, pi bölü 4.
+
+161
+00:40:39,956 --> 00:40:55,896
+Kosinüs, pi bölü 4'tür. Çünkü 4. bölgede, kosinüsün işareti nedir? Artı. Sinüs eksi, kosinüs artı. O yüzden bu kosinüs pi bölü 4, yani 1 bölü kök 2 oluyor şurası. Şurası artı oldu.
+
+162
+00:40:56,815 --> 00:41:00,815
+Dolayısıyla 2 ile çarptığımız zaman, şuradaki 2 var, 2 ile çarptığımız zaman,
+
+163
+00:41:01,364 --> 00:41:18,144
+kök 2 oldu. Evet, teşekkürler [öğrenci]'ın uyarısı için. Evet, 315 derece, kosinüs 315 tek, 1 bölü kök 2 olduğu için, burası artı geldi. Zaten fark edecekti de belki ama yerinde bir uyarı oldu. Evet, artı 5K şeklinde bulduk.
+
+164
+00:41:20,364 --> 00:41:27,943
+AT'yi de bulmak için, A7P bölü 4 yazarsak burada, aynı şekilde AT'de ne var? Farklı olarak,
+
+165
+00:41:28,371 --> 00:41:44,152
+Kosinüs 7 pi bölü 4'ün, 1 bölü kök 2 olduğunu biliyoruz. Sinüs 7 pi bölü 4'ün de, eksi 1 bölü kök 2. Onları yerine yazacağız. Tamam. Başka?
+
+166
+00:41:48,755 --> 00:42:08,795
+Şurada yalnız 10 kosünüs 2 çarpı 7 pi bölü 4 var. 2 çarpı 7 pi bölü 4 oldu. Değil mi? Yani kosünüs 7 pi bölü 2 mi oluyor? Evet, öyle oluyor galiba değil mi?
+
+167
+00:42:11,635 --> 00:42:35,336
+Evet, kosünüs 7 pi bölü 2 oluyor. 7 pi bölü 2 de bu da 7 çarpı. Şöyle, bir saniye. 7 pi bölü 2 oluyor. Şöyle, 7 pi bölü 2. Yani kosünüs, 3'ünü 6 pi artı pi diye düşündüğümüz zaman, değil mi?
+
+168
+00:42:40,115 --> 00:43:00,496
+2 pi'yi, 3 pi artı pi bölü 2 veya, ne oluyor bu? 7 çarpı 90. Tam bir açı olmuyor mu? Olmuyor değil mi? 630 derece oluyor.
+
+169
+00:43:00,496 --> 00:43:06,135
+270'e geliyor hocam. Nasıl? 270'e geliyor. O yüzden dahil etmemişiz.
+
+170
+00:43:06,547 --> 00:43:33,307
+Evet, şimdi 4 pi artı şey, 270'e mi geliyor? 3 pi bölü 2 mi oldu? Şey. Evet hocam, 3 pi bölü 2. 2 pi artı 3 pi bölü 2 böyle oldu değil mi? 2 pi artı 3 pi bölü 2 oldu. Evet. 2 pi artı 3 pi bölü 2 oldu. O da 7 pi bölü 2. Dolayısıyla 3 pi bölü 2'ye geldi. Yani kısmi 3 pi bölü 2, o da nedir? Sıfırdır. Sıfır olduğu için de şurada yok.
+
+171
+00:43:33,844 --> 00:43:51,283
+Evet, kosülüs 2 pi artı 3 pi bölü 2 oldu. O da 2 pi'den 3 pi bölü 2 fazla. Bu kosülüs neye eşit olacak? 3 pi bölü 2'ye eşit. Kosülüs 3 pi bölü 2'de nedir? Sıfırdır. O yüzden sıfır olarak bir şey gelmedi.
+
+172
+00:43:52,203 --> 00:43:58,083
+Pekala. Şimdi geçelim bakalım. Neredeyiz?
+
+173
+00:44:00,115 --> 00:44:12,916
+Bir türev alma kurallarını verelim. Burada tabii türev alma kurallarını elbette real değerli fonksiyonlar için biliyoruz ama vektör değerli fonksiyonlar için de hemen hemen benzer kurallar var.
+
+174
+00:44:14,076 --> 00:44:24,175
+Evet, iki tane vektör değerli fonksiyonumuz var. UT ve VT. Bir de bu skaler fonksiyon. Bu bildiğimiz şekilde yani FX gibi düşünün bu FT'yi.
+
+175
+00:44:26,068 --> 00:44:32,028
+f, t, f, x gibi düşünün. Bu bildiğimiz skaler bir fonksiyon ama şunlar vektör değerli.
+
+176
+00:44:34,068 --> 00:44:41,468
+Evet, u'nun toplamın türevi, türevler toplamına eşit, farkın türevi, türevler farkına eşit. Bildiğimiz şekilde, dikkat edin.
+
+177
+00:44:42,195 --> 00:44:58,675
+Çarpım türevi nasıl alınıyordu? Birincinin türevi, burada yalnız birisi skaler fonksiyon, diğeri vektör değerli fonksiyon. Yine çarpımın türevi kuralı aynen çalışıyor. Birincinin türevi çarpı ikinci, ikincinin türevi çarpı birinci. Bu da bildiğimiz şekilde işliyor.
+
+178
+00:45:00,980 --> 00:45:22,980
+Birisi skaler fonksiyon, birisi vektör fonksiyondu. Şimdi ikisi de vektör fonksiyon, yine aynı şekilde birincinin türevi çarpı, ikinci, ikincinin türevi çarpı, birinci. Tamam, bu da bildiği bir şekilde. Peki, vektörel çarpım olursa, onun türevini alın derlerse, evet, şu vektörel çarpım, o zaman yine aynı şekilde birincinin...
+
+179
+00:45:23,119 --> 00:45:48,460
+Türevi çarpı, çarpı derken burada vektörel çarpım bu. Bu çarpı nasıl çarpım? Vektörel çarpım. Çünkü şurada iki tane vektörün vektörel çarpımı var. Birincinin türevi çarpı derken vektörel çarpım buradaki çarpı ikinci artı. İkincinin türevi çarpı vektörel çarpım birinci. Evet, bu şekilde. Evet, buradaki skaler çarpım. Dikkat edin.
+
+180
+00:45:48,884 --> 00:46:15,564
+Buradaki ise nasıl çarpı? Vektörel. Vektörel, bu skaler çarpı. Skaler çarpı türevi. Son olarak şey, 5 pardon, 5'te U çarpı FT. Yani bu aslında birleşkenin türevi gibi düşünün bunu. Birleşke bu. UFT'nin türevi. Bunun türevini alırken ne yapıyoruz? Birleşkenin türevini nasıl alıyorduk? İçinin türevi çarpı U üstü. Hani şu F.
+
+181
+00:46:16,179 --> 00:46:43,159
+Gx'in türevini nasıl alıyorduk? Hatırlarsanız, G üstü x çarpı F üstü Gx diye alıyorduk. Değil mi? G üstü x çarpı F üstü. Aynısı. O zaman içinin türevi, işte burada bakın, F üstü, F üstü T çarpı U üstü FT. Yani zincir kuralı, yani bileşkenin türevi. Tamam mı?
+
+182
+00:46:43,411 --> 00:46:59,451
+Bu da aynı şekilde çalışıyor. Yani matematik 1'de gördüğümüz üzere, bir daha söylüyorum, bu f t'nin türevi f üstü t çarpı u üstü f t. Bildiğimiz şekilde, matematik 1'deki gibi.
+
+183
+00:46:59,451 --> 00:47:06,251
+Tamam mı? Peki. Altıncısı.
+
+184
+00:47:06,804 --> 00:47:24,164
+Burada bir bilgi, bazen bunu örnek olarak da verilir. Eğer R sabit uzunluklu, yani uzunluğu sabit bu demek, bir vektörer fonksiyon ise o zaman R çarpı R üstü sıfırdır.
+
+185
+00:47:31,476 --> 00:47:50,096
+Reus t'ye veya diyebilirsiniz ki, konum hıza diktir. Çünkü, rt çarpı, rt c kare sabit olduğu için, şunun, rt'nin karesi şöyle yazılabilir değil mi?
+
+186
+00:47:50,676 --> 00:47:55,256
+rt çarpı rt diye yazabiliyorduk. O zaman bu c çarpı c'den c kare olur.
+
+187
+00:47:55,256 --> 00:47:56,615
+Tamam mı?
+
+188
+00:47:58,164 --> 00:48:13,124
+Bu böyle yazılabiliyordu. Ne sabitse, R sabit uzunlukluysa, o zaman RT çarpı, RT c kare, buradan skaler çarpımın türevi, birincinin türevi çarpı, ikinci, ikincinin türevi çarpı, birincinin toplamıydı.
+
+189
+00:48:13,744 --> 00:48:22,284
+R üstü çarpı RT, RT çarpı R üstü, o zaman ne olur? 2 RT çarpı R üstü, eşit 0. Buradan ne çıktı?
+
+190
+00:48:22,867 --> 00:48:32,608
+RT çarpı, yani R çarpı R üstü eşit sıfır. Bu ne demek? R dik, R üstü. Hız konuma dik şeklinde söyleriz.
+
+191
+00:48:33,347 --> 00:48:39,688
+Eğer R sabit uzunlukluysa hız konuma diktir. Yani R çarpı R üstü sıfırdır. Bir daha söylüyorum.
+
+192
+00:48:40,347 --> 00:48:47,447
+R sabit uzunlukluysa hız konuma diktir. Yani R çarpı R üstü sıfırdır bilgisini de vermiş olduk.
+
+193
+00:48:51,572 --> 00:48:58,212
+Evet, bir uzay eğrisi boyunca yay uzunluğu, bunu da verelim.
+
+194
+00:49:00,572 --> 00:49:07,172
+Evet, kutupsal koordinatlarda yay uzunluğunu vermiştik.
+
+195
+00:49:07,731 --> 00:49:11,771
+Burada da bir uzay eğrisi boyunca yay uzunluğu var.
+
+196
+00:49:13,192 --> 00:49:17,512
+Kat sayılar nelerse onların türevlerini, kareleri toplamını, kare küpü. Bu ne demek?
+
+197
+00:49:18,387 --> 00:49:35,847
+Bu da şu demek tabii. Şu demek, şurada aşağıda yazmışız, bu demek. Niye? Çünkü Vt neydi? Vt'nin büyüklüğü neydi daha doğrusu? Vt'nin büyüklüğü neydi? Önce Vt neydi mi deseydik acaba? Şöyle Vt neydi diyelim. Vt şuydu.
+
+198
+00:49:44,628 --> 00:49:55,007
+dz bölü dt, k'ydı. Bunun büyüklüğü ne demektir? Bunun büyüklüğü de neydir? Kat sayıların kareleri toplamanın kare küpüdür. Değil mi?
+
+199
+00:49:55,548 --> 00:50:06,688
+d'ye bölü dt'nin karesi artı dz bölü dt'nin karesinin kare küpüdür. Zaten bu da neydi? Bunun adı da neydi? Süratte.
+
+200
+00:50:12,532 --> 00:50:14,132
+Şunu yapılmamız gerekiyor.
+
+201
+00:50:14,952 --> 00:50:16,892
+Sürati integre A'dan B'ye.
+
+202
+00:50:18,412 --> 00:50:37,771
+Vektör fonksiyonlarda bir vektör fonksiyon verildiği zaman, yani eğrinin konum vektörü verildiği zaman, onun uzunluğunu bulmak istiyorsak bir A'dan B'ye, aslında sürati integre edeceğiz A'dan B'ye, o demek.
+
+203
+00:50:38,420 --> 00:50:53,539
+Süratin integralı, demek ki vektör değerli fonksiyonun bir eğrinin uzunluğu, eğrinin uzunluğunun vektör değerli bir eğrinin uzunluğu ne yapıyormuşuz?
+
+204
+00:50:53,719 --> 00:50:59,239
+Süratin integralı, L'ye eşit, süratin, süratin integralı böyle.
+
+205
+00:51:00,219 --> 00:51:04,900
+Nereden, nereye, A ve B sınırları arasında süratin integralini alıyoruz.
+
+206
+00:51:06,771 --> 00:51:25,771
+Evet, örnek, işte bir planör mü varmış? Bir planör, RT eğrisi boyunca bir helismiş bu, helis. Eğrisi boyunca tırmanışa geçiyor. Bu eğri boyunca tırmanışa geçiyormuş. Planörün T eşit sıfırdan Pi'ye kadar olan...
+
+207
+00:51:26,387 --> 00:51:49,867
+Süratı uzunluğu ya da aldığı yolun uzunluğu da deriz tabii. Planör olduğuna göre aldığı yolun uzunluğu. Yani soru ne olur? Eğri uzunluğu sorusu olur. Eğri uzunluğu ne demekti? İntegret, süratı integret demekti. Süratı integret. Bu. Sınırları yaz, süratı integret. Sürat neydi? Hızın büyüklüğü. Hızı bulalım burada. VT nedir?
+
+208
+00:51:53,331 --> 00:52:04,331
+Şu kosinus t'nin türevi neydi? Sin t. Nasıl sin t? Eksis sin t. Karesini al sin kare t. Değil mi? Bunun türevi kos t. Karesini al kos kare t. Bak biri geldi burada.
+
+209
+00:52:05,032 --> 00:52:15,192
+t'nin türevi bir artı bir. Birin karesi geldi. İşte bu neydi? Şurada neyi bulmuş olduk? Süratı bulmuş olduk. Sürat bu.
+
+210
+00:52:16,532 --> 00:52:34,752
+Sürat'in integralini alacakmışız. Nereden nereye? Sıfırdan 2 piye kadar. Şurası 1 olduğuna göre buradan ne geldi? Kök 2 geldi. Kök 2'nin integrali sıfırdan 2 piye kadar. Kök 2 t'dir. Sıfırdan 2 piye. Kök 2 çarpı burası 2 piye eksi sıfır olduğu için ne olur?
+
+211
+00:52:40,096 --> 00:53:01,875
+pi olmuş olur. 2 kök 2 pi olmuş olur. Evet, süratin integralini alıyoruz ama süratin ne olduğunu unutmayalım. Hızın büyüklüğü sürat, hızın büyüklüğü idi. Bu şekilde neyi buluyoruz? Vektör değerli eğrinin uzunluğunu ya da işte aldığı yolun uzunluğunu buluyoruz.
+
+212
+00:53:09,811 --> 00:53:23,771
+Evet, burada da integral'ı gördük. Artık bitti sanırım konum. Zaten en son integral nasıl alınır? O vardı. Böylece, bitti, ne bitti? Konumuz bu. Vektör değerli fonksiyonlar bu kadar.
+
+213
+00:53:27,476 --> 00:53:38,716
+Biraz daha soru çözelim bununla ilgili. Geçen hafta uzayda doğru düzlemlerle ilgili bir uygulamamız vardı. Ben sizi onunla paylaşmıştım. Bunu paylaşmadım. Önce bunu bir paylaşayım.
+
+214
+00:53:55,443 --> 00:53:59,744
+[öğrenci] gelince bir haber edersen, [öğrenci] buradaydı değil mi?
+
+215
+00:54:00,643 --> 00:54:02,083
+Kontrol ediyorum hocam.
+
+216
+00:54:20,403 --> 00:54:21,864
+Hocam dosya açılıyor, geldi.
+
+217
+00:54:22,563 --> 00:54:24,463
+Geldi değil mi? Tamam, teşekkürler.
+
+218
+00:54:25,483 --> 00:54:31,503
+Peki, şimdi geçen haftaki, bunu paylaştım sizinle, o uygulamayı açacağım.
+
+219
+00:54:31,723 --> 00:54:34,864
+Oradan bunlarla ilgili bir de soru çözelim, bunun konuyu kapatalım.
+
+220
+00:54:41,172 --> 00:54:42,991
+Yeni bir paylaşım yapalım.
+
+221
+00:54:44,991 --> 00:54:48,791
+Evet, uzayda doğru düzlem uygulama şu olması lazım.
+
+222
+00:54:50,231 --> 00:54:51,471
+Evet, bakalım.
+
+223
+00:54:53,531 --> 00:54:54,152
+Evet, burada.
+
+224
+00:54:59,188 --> 00:54:59,548
+Bir dakika.
+
+225
+00:55:01,788 --> 00:55:03,188
+Onuncu soru muydu acaba?
+
+226
+00:55:03,528 --> 00:55:05,307
+On, on, on bir de soruydu.
+
+227
+00:55:05,407 --> 00:55:07,228
+Vektörer fonksiyonlar demişiz.
+
+228
+00:55:07,307 --> 00:55:09,648
+Bakın, bu uygulama sizde var.
+
+229
+00:55:11,708 --> 00:55:16,008
+Buradaki şimdi soruları çözelim birlikte.
+
+230
+00:55:19,539 --> 00:55:29,919
+Şimdi, uzayda zamana bağlı olarak hareket eden bir cismin konum fonksiyonu RT, bu şekilde veriliyor, cos t, i, sin t, j, t kökü, k ile veriliyormuş.
+
+231
+00:55:30,599 --> 00:55:45,059
+Cismin konum ile iğme vektörü arasındaki açı ne zaman 2 pi bölü 3 olur? Cismin konumu ile iğme vektörü arasındaki açı ne zaman 2 pi bölü 3 olur?
+
+232
+00:55:45,556 --> 00:55:58,615
+Tabii bir kere konum, konumun ne olduğunu biliyoruz. Konum RT demek zaten. Konum, konumuz RT. Var elimizde. İME'de AT diye gösteriyorduk. Bu neydi?
+
+233
+00:55:59,188 --> 00:56:11,968
+hızın türevi veya konumun ikinci türevi de. R2 üstü T diyelim isterseniz. Veya V'nin hızın türevi demekti. Değil mi? Öyle de söyleyebiliriz.
+
+234
+00:56:12,327 --> 00:56:22,188
+Şimdi o zaman onları bir bulalım. Yani cismin konumu ile eğimi mektörü arasındaki. Konumu elimizde zaten bu.
+
+235
+00:56:28,275 --> 00:56:33,655
+Evet, bir dakika, cismin konum fonksiyonu, cismin konumu ile iğme vektörü arasındaki açı.
+
+236
+00:56:35,596 --> 00:56:40,655
+Konumu ile iğme vektörü değil de ne olmuş burada? Doğru mu bakayım? Şuraya bakayım. Biraz sanki...
+
+237
+00:56:43,655 --> 00:56:48,775
+Şuraya hızlı yazmışız. Hesaplarken de öyle mi hesaplamışız?
+
+238
+00:56:49,972 --> 00:57:08,712
+Yok, bu hız, tamam, pardon, tamam, tamam, doğru hesaplamada sıkıntı yok, evet. Peki, şimdi tabii neyi bulmak için? Önce iğme vektörünü bulmak için hızı bulmamız gerekiyor, değil mi? Vt, yani birinci türevi alacağız, bu hızın türevi idi, şey konumun türevi idi, hız konumun türevi.
+
+239
+00:57:17,364 --> 00:57:27,644
+t köküçün türevi köküç. Bu. Bu ne? Hız. Bu hız oldu. Şimdi konumu bulalım. Konumda şey var da ne diyeceğiz?
+
+240
+00:57:29,083 --> 00:57:41,523
+Simdek boşuna da neyse. Evet, hızı bir daha söyleyelim. Vt eşit. Vt eşit. Vt eşit. Re üstü t idi.
+
+241
+00:57:42,420 --> 00:58:09,300
+cos t'nin türevi sin t, şey, eksi sin t, sin t'nin cos t, t kök üçün türevi kök üç. Şimdi a t'yi bulacağım, bunun bir daha türevini alacak, ve üstü t idi, a t hızın türeviydi, eksi cos t, cos t'nin eksi sin t, kök üçün türevi nedir? Sıfır. Evet, bu a t. Peki, r t'yi de şöyle yazarsak, bu ne demek aynı zamanda?
+
+242
+00:58:09,780 --> 00:58:15,560
+Cos t, sin t, böyle de yazılabilir. Değil mi? Böyle yazılabiliyorduk, kısallık olsun diye.
+
+243
+00:58:16,280 --> 00:58:26,740
+Şimdi, bunlar arasındaki açı 2 pi bölü 3 olmasını istiyorsam, o zaman, cos 2 pi bölü 3 eşittir.
+
+244
+00:58:35,635 --> 00:58:42,415
+Yani ime çarpı r bölü uzunlukları çarpımı. Nereden söyledik bunu?
+
+245
+00:58:43,655 --> 00:58:51,895
+Skaler çarpımdan değil mi? Skaler çarpım formülü neydi? rt çarpı, at eşittir. Nasıl yazabiliriz?
+
+246
+00:58:52,855 --> 00:59:02,415
+Bunların uzunlukları çarpı kosünüs teta'ydı formül. Buradan kosünüs teta'yı çektik yani.
+
+247
+00:59:02,996 --> 00:59:16,576
+Kosinus 2 pi bölü 3, yani kosinus 120 ne demektir? Eksi sinüs 30 demektir. O da eksi 1 bölü 2'dir, eşittir. Bunları çarparsak, RT ile AT'yi çarpalım, şurada bulmuştuk.
+
+248
+00:59:28,083 --> 00:59:55,563
+at ile at bu da neyi çarpacağız? Şunu, evet, konumu çarpacağız. Çünkü konumda yeme arasındaki diyordu. Kos t ile eksi kos t'yi çarptık, eksi kos kare t, sin t ile eksi sin t'yi çarptık, eksi sin kare t, sin kare t, sonra sıfırla kök üçün çarpımından bir şey gelmedi. Dolayısıyla pay ne oldu, eksi bir oldu.
+
+249
+00:59:56,083 --> 01:00:21,303
+Şurası eksi bir, bölü, neyin ne vardı? R'nin konumun büyüklüğü vardı. Şunun büyüklüğüne bakalım. Rt'nin büyüklüğü, kos kare t, artı sin kare t, artı kökün karesi 3. 3, 1, 4, buradan ne gelir?
+
+250
+01:00:25,300 --> 01:00:49,500
+Doğrumu yazdık. Kos karete, RT'nin şeyi, kos karete artı sin karete, pardon, kos karete artı sin karete artı köküçün karesi kaç oldu? 3. Evet, doğru. Tamam. Kos kare artı sin kare, artık buradan ne geldi?
+
+251
+01:00:52,179 --> 01:01:08,659
+Kök 3, bir dakika, RT'de kök 3 vardı, kök 3'ün karesinden ne oldu? 3 oldu, şurası 1, burada ne oldu, burada niye farklı yazmışız? Kos kare artı sin kare artı kök 3'ün karesi.
+
+252
+01:01:10,500 --> 01:01:19,039
+3, 1, 4, kök 2 olması gerekmiyor mu bunun? Ne olmuş bu? 3'te, 3, he pardon, kök 3.
+
+253
+01:01:19,539 --> 01:01:45,380
+T var burada, pardon şunu yanlış söyledim, pardon. Şurada T kök 3 var. T kök 3'ün karesi, 3T, T kök 3'ün karesi, 3T kare, pardon. T kök 3'ün karesi, 3T kare. Şurası 1, 1 artı 3T kare dolayısıyla. 1 artı 3T kare, 1 artı 3T karenin kare küpü oldu. 1 artı 3T kare.
+
+254
+01:01:45,679 --> 01:01:48,119
+Kök içinde, 1 artı 3 te kare.
+
+255
+01:01:49,759 --> 01:01:50,039
+Evet.
+
+256
+01:01:51,679 --> 01:01:54,400
+Çünkü şurası bakın, t kök 3.
+
+257
+01:01:54,819 --> 01:02:00,500
+Ben sadece kök 3 diye şey gördüm değil mi?
+
+258
+01:02:00,920 --> 01:02:04,719
+Kök 3 teğenin, t kök 3'ün karesi 3 te kare.
+
+259
+01:02:04,900 --> 01:02:06,519
+Dolayısıyla 1 artı 3 te kare oldu.
+
+260
+01:02:07,007 --> 01:02:14,827
+Sonra, bt vardı, vt'nin, at'nin büyüklüğü vardı, at'nin büyüklüğü de şurada, nedir?
+
+261
+01:02:15,847 --> 01:02:31,307
+At şu, cos kare t, artı sin kare t, at'nin büyüklüğü, at'nin büyüklüğü, bir de sıfır var orada, sıfırın karesi falan neyse.
+
+262
+01:02:32,067 --> 01:02:33,567
+Dolayısıyla ne geliyor oradan? Bir geliyor.
+
+263
+01:02:34,260 --> 01:02:49,500
+Kök 1 oluyor. Kök 1, 1. Dolayısıyla sonuç ne çıktı? Eksi 1 bölü 2 eşittir. 1 bölü kök 3, 3 artı t kare, 3 artı t kare 4, t eşit artı eksi 1 şeklinde çıkmış oldu.
+
+264
+01:02:51,120 --> 01:03:01,120
+Evet, zor bir soru mu? Değil. Önemli olan buradaki ivmenin, ivmenin, a, t'nin.
+
+265
+01:03:02,003 --> 01:03:17,643
+AT'nin, RT'nin, DV bölü DT olduğu veya D kare, R bölü DT kare olduğunu bilmek lazım.
+
+266
+01:03:17,824 --> 01:03:25,043
+Yani iğmenin hızın türevi olduğu veya konumun ikinci türevi olduğunu bilmek gerekiyor.
+
+267
+01:03:25,043 --> 01:03:28,344
+Ondan sonra şu eşitlik önemli.
+
+268
+01:03:28,847 --> 01:03:44,547
+RT çarpı AT, RT'nin uzunluğu çarpı, AT'nin uzunluğu çarpı, aralarındaki açının kosünüsünden bunu çek. Zaten teta verilmiş, kosünüs teta eşittir.
+
+269
+01:03:44,967 --> 01:03:53,827
+Skaler çarpımı yapmış, şu uzunlukları çarpımda böyle, bu kadar. Zor değil. Ama işte dediğim gibi ivmenin ne olduğunu bilmek gerekiyor.
+
+270
+01:03:59,251 --> 01:04:24,952
+Şimdi diğer soru, uzunluk. Vektör değerli fonksiyonlarda uzunluk neydi? Süratı integre et demekti. Evet, uzunlukla ilgili bir soru var. Vektör değerli fonksiyonlarda, eksi bir, bir aralığında kalan kısmın uzunluğu ne demekti uzunluk? Uzunluk eşittir, sürat. Süratı integre et demekti. Sürat ne demekti? Hızın büyüklüğü.
+
+271
+01:04:25,748 --> 01:04:42,288
+Hız ne demekti? Hız da konumun türeviydi. O zaman önce hızı bulmamız lazım. Hız konumun neydi? Türeviydi. Vt eşit o zaman. Şurada şunun türevi gelecek.
+
+272
+01:04:44,387 --> 01:04:47,128
+Onun türevini alalım. 3 bölü 2 başa gelir.
+
+273
+01:04:48,148 --> 01:05:12,468
+1 artı t kare çarpı 3 bölü 2 eksi 1 çarpı, bir de içinin türevi var, nedir? 2t. Şu ikiler kısaldı. O zaman ne olur? 3, 1 artı t kare üzeri 1 bölü 2 çarpı t mi oldu? Böyle oldu. Değil mi? Ne oldu? Yani 3t, 1 artı kök içinde,
+
+274
+01:05:16,532 --> 01:05:40,332
+1 artı t karenin kare kökü bu. İlk bileşen bu oldu. 3 t, 3 t, kök 1 artı t kare. Sonra ikincinin türevi. İkincisinin türevinde, evet o da benzer şekilde alınır. O da şöyle oluyor, eksi 3 t. Bir daha almıyorum çünkü aynı türlü türevi zaten. Onun türevi de eksi 3 t, 3 kare kök 3 eksi t kare.
+
+275
+01:05:41,364 --> 01:05:59,283
+Olur. Şurada 4T karenin türev ve de 8T. Demek ki VT bu. Ne demek? VT demekti biliyorsunuz. VT yani hız oldu bu. Hızın büyüklüğünü hesaplayacağız. Büyüklüğünü hesaplarken şuradaki kat sayıların kareleri toplamının kare kökü.
+
+276
+01:05:59,943 --> 01:06:04,783
+3T kök 1 artı T karenin karesi. 9T kare 1 artı T kare.
+
+277
+01:06:05,940 --> 01:06:13,400
+Bunun karesi, 9'te kare, 3 eksi t kare, artı 8'te kare de 64'te kare. Ne geliyor buradan bakalım.
+
+278
+01:06:16,620 --> 01:06:31,380
+Şimdi, 9'te kare, 3, 9, 27'te kare, 9'te kare daha, 36'te kare.
+
+279
+01:06:32,115 --> 01:06:56,875
+Şuradan 64 tekare geliyor. Yani 100 tekare geliyor değil mi? 100 tekare. 100 tekare geldi. Başka? 100 tekare. Şuradan da ne geliyor? Onlar kısalıyor zaten. Evet, şu 9 tekareyle tekarenin çarpımı ve 9 tekareyle eksi tekarenin çarpımı. Onlar birbirini götürdü.
+
+280
+01:06:57,300 --> 01:07:21,920
+Sadece üstte kare geldi kök içinde. O da mutlak 10 çarpı mutlak t diye yazılır. Yalnız t'miz nereden nereye? Eksi birden biri olduğu için bunu ikiye ayırmamız lazım. Eksi birden sıfıra kadar mutlak t, eksi t olarak çıkar. Sıfırdan bire kadar t olarak çıkar. Bu önemli burada tabii. Burada 10 t diye çıkartmanız yanlış olur. Dikkat edin.
+
+281
+01:07:24,628 --> 01:07:33,988
+Mutlak t diye çıkarıp, sonra eksi birden sıfıra eksi t diye, sıfırdan bire t diye yazmamız gerekiyor. İntegre edersek onu 10 çıkıyor cevap.
+
+282
+01:07:35,068 --> 01:07:48,908
+Evet, bu kadar. Demek ki unutmayacağımız şey burada da nedir? Eğri uzunluğunu hesaplarken, sürati, sürati integre ediyorduk.
+
+283
+01:07:48,908 --> 01:07:51,268
+Sürati integre etmekte ne demek? Bu demektir.
+
+284
+01:07:53,012 --> 01:07:54,192
+Formülümüz böyleydi.
+
+285
+01:07:56,851 --> 01:07:57,152
+Evet.
+
+286
+01:07:57,912 --> 01:07:58,192
+Peki.
+
+287
+01:08:01,672 --> 01:08:02,711
+13. soru.
+
+288
+01:08:03,632 --> 01:08:04,711
+Evet, bu nasıl bir şey?
+
+289
+01:08:05,311 --> 01:08:09,612
+Eğrisinin aralığında b kare eşit 4ac iken kalan uzunluğuna.
+
+290
+01:08:09,612 --> 01:08:10,831
+Evet, bir şey verilmiş.
+
+291
+01:08:13,231 --> 01:08:14,731
+Şöyle büyüdü.
+
+292
+01:08:16,819 --> 01:08:24,340
+B kare eşit 4 ac iken uzunluğu bulalım. Yine uzunluk aynı şekilde. Yalnız B kare yerine ne yazın diyor? 4 ac yazın diyor.
+
+293
+01:08:27,039 --> 01:08:40,439
+Yine nedir? Tabii Vt'mizi bulmamız lazım aynı şekilde. Vt'de neydi? Konumun türeviydi. At karenin türevi 2 at değil mi?
+
+294
+01:08:43,188 --> 01:08:56,908
+C, L, N, T'nin türevi, L'nin türevi, 1 bölü T. Bu. Bunların kareleri toplamını kare küpküne alacağız. 2A, T'nin karesi, 4A kare, T kare, B'nin karesi, B kare, C bölü T'nin karesi, C kare bölü, D kare.
+
+295
+01:08:58,408 --> 01:09:05,728
+Buradan, şurada, B kare yerine ne yazacağız? Şuradaki bilgiyi yazmamız lazım. 4AC.
+
+296
+01:09:08,015 --> 01:09:11,895
+O zaman 4a kare t kare artı 4ac oldu, c kare bölü d kare oldu.
+
+297
+01:09:12,495 --> 01:09:19,835
+Bu ne işe yaradı? Şu içerisi tam kare oluyor. 2a t artı c bölü t'nin karesi.
+
+298
+01:09:20,495 --> 01:09:23,975
+Değil mi? Çünkü çarpımların iki katı şu orta terimi veriyor mu?
+
+299
+01:09:26,036 --> 01:09:37,195
+Çarparsak t'ler kısalır, 2ac, 2 ile çarp, 4ac. O halde demek ki bu nedir gerçekten? 2at artı c bölü t'nin karesi, kare kök dışına böyle çıkar, nereden nereye kadar diyor.
+
+300
+01:09:38,036 --> 01:09:44,056
+Birden t'ye pozitif zaten, onun için mutlak değer dışına pozitif olarak aldık.
+
+301
+01:09:45,956 --> 01:09:53,376
+Birden bir t'ye kadar demiş, 2at artı c bölü t'yi integr edeceğiz.
+
+302
+01:09:53,811 --> 01:09:56,791
+2a çarpı t'nin integrali t kare bölü 2.
+
+303
+01:09:57,992 --> 01:09:58,252
+Değil mi?
+
+304
+01:09:59,032 --> 01:10:02,672
+C, bir bölü t'nin integrali ln t.
+
+305
+01:10:03,631 --> 01:10:06,532
+Burada birden t'ye kadar değerler yazılacak.
+
+306
+01:10:06,851 --> 01:10:08,672
+t'ye bağlı şöyle bir ifade çıkıyor.
+
+307
+01:10:09,851 --> 01:10:10,072
+Evet.
+
+308
+01:10:10,871 --> 01:10:12,492
+Bu da zor mu? Değildi.
+
+309
+01:10:13,012 --> 01:10:14,131
+Aynı şekilde bir soru.
+
+310
+01:10:14,451 --> 01:10:17,612
+Sadece işte türevler falan biraz daha farklı, başka bir şey yok.
+
+311
+01:10:23,252 --> 01:10:43,412
+Evet, bir başka sorumuz. Evet, uzayda zamana bağlı hareket eden bir parçacığın hız vektörü verilmiş bu sefer. T eşit bir de hız ve vektörleri arasındaki açıyı bulun. Burada da yine ivmenin hızın türevi olduğunu bilmemiz gerekiyor. O yeterli değil mi?
+
+312
+01:10:46,852 --> 01:10:48,204
+Hız ve...
+
+313
+01:10:48,564 --> 01:10:53,804
+t eşit 1'de hız ve inme vektörler arasındaki açı. O halde i ve ymeyi bulacağız, değil mi?
+
+314
+01:10:55,043 --> 01:11:00,024
+İ ymeyi bulacağız. İ ymeyi de demiştik ki hızın neydi? Türevi. Bunun türevini alacağız.
+
+315
+01:11:01,203 --> 01:11:08,864
+t artı 1'in türevi nedir? Hız yazayım şuraya. a eşittir, a t eşittir diyeyim.
+
+316
+01:11:17,171 --> 01:11:18,431
+2T'nin türev ne? 2.
+
+317
+01:11:20,611 --> 01:11:22,072
+1, 2, T, 2.
+
+318
+01:11:23,072 --> 01:11:27,851
+İşte ne oldu? İşte iğmemiz bu.
+
+319
+01:11:28,652 --> 01:11:30,611
+İğmemiz bu. T eşit birdeki değeri bunun.
+
+320
+01:11:32,011 --> 01:11:35,931
+İşte şurada 1 yazarsak, 1, 2, 2 oluyor.
+
+321
+01:11:36,931 --> 01:11:39,291
+1, 2, 2 oluyor. A, 1 diyelim.
+
+322
+01:11:39,291 --> 01:11:43,291
+1, 2, 2 oluyor. Bunun büyüklüğü,
+
+323
+01:11:44,884 --> 01:12:10,144
+A1'in büyüklüğü, şimdi kosinüsü bulacağım çünkü, A1'in büyüklüğü nedir? 1 artı 4 artı 4, 8, 9, 3, 3 çıktı. Aynı şekilde, hız ve yeme arasındaki açıyı, hız zaten kendisi, burada 1 yazarsak hızda, 1 yazarsak ne olur? İşte 1, 1, 2, 0, 2, değil mi?
+
+324
+01:12:10,676 --> 01:12:34,336
+Nereye sıfır geldi? Şurası sıfır geldi. B1 eşit, 2, 0, 2. 2, 0, 2 oldu. Buradan da B1'in uzunluğu, B1'in uzunluğu, 2'nin karesi artı, 2'nin karesi oldu. Yani kök 8 oldu, o da 2 kök 2.
+
+325
+01:12:34,899 --> 01:12:48,139
+2 kök 2 oldu. Formülü yazdık, şey, skaler çarpım tanımı gereği, böyle yazabiliriz. A1 bölü, A1 B1, A1'nin uzunluğu, çarpı B1'nin uzunluğu. Bunları bulmuştuk, yerlerine yazdık, ne çıktı?
+
+326
+01:12:51,439 --> 01:12:59,059
+1 bölü kök 2 çıktı, kosünür. 1 bölü kök 2 ne zaman olur? Hangi açı için olur? Pi bölü 4 için olur.
+
+327
+01:12:59,636 --> 01:13:04,356
+Evet, bu da zor bir soru değil. Önemli olan ime'nin ne olduğunu bilmek.
+
+328
+01:13:07,956 --> 01:13:26,275
+Diğer soru, parçacık t eşit sıfırda 1-1-2 noktasında ise, parçacık t eşit sıfırda 1-1-2 noktasında ise, yani ne demek?
+
+329
+01:13:36,051 --> 01:14:00,311
+1-1 parçacık t eşit 0'da, 1-1, 2 noktasındaymış parçacık. Konumunu vermiş değil mi bize? Nerede? t sıfırken. Yani r sıfır için diyor ki, r sıfır için 1-1, 2.
+
+330
+01:14:01,747 --> 01:14:24,047
+noktasında diyor. Yani, şu kat sayılar ne olacak o zaman? I, 1 çarpı I, artı, eksi 1 çarpı J, artı, 2 çarpı K biçimdedir diyor. T eşit sıfırda. T yerine ne yazdık? Sıfır yazdık. Bu bilgiyi veriyor bize. O zaman RT'yi bulun diyor.
+
+331
+01:14:26,047 --> 01:14:27,107
+RT'yi bulun diyor.
+
+332
+01:14:27,828 --> 01:14:47,108
+Şimdi RT biraz önce demiştik ki, VT'nin, VT neydi? VT, R üstü T idi. O zaman VT'nin integralı ne olur? RT olur. Evet.
+
+333
+01:14:47,788 --> 01:14:52,108
+Hız konumun türevi idi. O zaman integralini alırsak.
+
+334
+01:14:52,703 --> 01:14:59,823
+Hızın integralini alırsak ne olur? Konumu buluruz. İşte onu yapıyoruz. Hızın integralini alıyoruz. Hız yukarıda şurada.
+
+335
+01:15:02,363 --> 01:15:08,804
+Bunun integralini alacağız. İntegralini alırken de tek tek kat sayıların integralini alıyoruz. T artı birinin integrali.
+
+336
+01:15:08,804 --> 01:15:17,403
+T kare bölü 2 artı T'dir. Tamam mı? İyi. Yani şöyle bu VT'nin integralini şöyle alıyorum.
+
+337
+01:15:19,315 --> 01:15:27,775
+Evet, şöyle, integral t artı 1, dt, i şeklinde, aynı şekilde devam ediyoruz.
+
+338
+01:15:29,075 --> 01:15:42,315
+İntegral, t kare eksi 1, dt, j, artı integral, 2t, dt, k, şeklinde integralını aldık, vt'nin integralını aldık böyle.
+
+339
+01:15:46,963 --> 01:16:03,123
+t kareydi bu, tek yük bölü 3 eksi t. Şurada 2 t var, bunun integralı d nedir? 2 t kare bölü 2'den, t kare geldi, t kare k. Artı bir d ne gelecek? İntegral c gelecek, artı c.
+
+340
+01:16:14,420 --> 01:16:19,120
+R0'ın bize ne olduğu söylendi.
+
+341
+01:16:20,899 --> 01:16:24,319
+I eksi J artı 2K.
+
+342
+01:16:27,899 --> 01:16:32,659
+Şu R0 bilgimiz vardı. Şurada R0, I eksi J artı 2K.
+
+343
+01:16:35,079 --> 01:16:39,760
+Şunu yazdık. Başta bu bilgi var bize. Verdi bu bilgiyi.
+
+344
+01:16:40,212 --> 01:16:56,172
+R0 esit, sıfır yazdığımız takdirde, şurası sıfır, burası sıfır, buradan burası da sıfır, C geldi, R0 eşit ne oldu? C oldu.
+
+345
+01:16:56,492 --> 01:17:05,231
+Ama şu bilgiyle birleştirirsek bunu, bu ikisi, yani C yerine ne yazacağız? C yerine ne yazacağız?
+
+346
+01:17:05,844 --> 01:17:27,324
+Şunu yaz, şu vektör gelecek C yerine, bu o demek. R0 eşit C. Ama aynı zamanda R0 neydi? I-J artı 2K. Demek ki şuradaki C yerine şunu yazmamız yeterli olacak sorunun çözümü için. Onu da yazarsak sonra, yani RT eşit C.
+
+347
+01:17:28,243 --> 01:17:53,603
+RT eşit, t kare bölü 2 şu oldu, t kare bölü 2 artı ti, t küp bölü 3 eksi t j, artı t kare k, artı şu. Sonra da işte, şurada düzenleme yapmışız, cevap bu oldu. Sonra düzenleme, düzenleme derken, işte i'nin kat sayısı burada 1, şuraya 1 eklemişiz işte. Sonra j'nin kat sayısı 1-1 geliyor, eksi 1 eklemiş şuraya.
+
+348
+01:17:54,228 --> 01:18:02,528
+Sonra burada 2 geliyor, 2'yi de şuraya ekledik, k'nın kat sayılarını birleştirmiş olduk, iyici k'nın kat sayılarını toparlamış olduk.
+
+349
+01:18:02,587 --> 01:18:02,988
+Bu şekilde.
+
+350
+01:18:04,048 --> 01:18:16,468
+Evet, burada t eşit sıfırdaki şu noktada deyince, r sıfırın şu vektöre, r sıfırın şu bilgiyi yazmak önemli, r sıfır eşit.
+
+351
+01:18:16,819 --> 01:18:26,699
+i-g artı 2k şeklinde olduğunu söylemek önemli. Yani şu baştaki şu bilgiyi i yerine yazmak önemli bizim için.
+
+352
+01:18:28,760 --> 01:18:37,859
+Evet, sonraki soru, RT eşit verilmiş, RT konum vektörü verilmiş.
+
+353
+01:18:39,479 --> 01:18:41,819
+RT eğrisinin 1.01 noktasından...
+
+354
+01:18:42,484 --> 01:18:47,744
+E, kök 2, 1, bölü E noktasına kadar olan eğri uzunluğu verilmiş.
+
+355
+01:18:48,884 --> 01:18:50,924
+Olan eğri uzunluğunu hesaplayın diyor.
+
+356
+01:18:51,724 --> 01:18:52,904
+İki tane nokta var.
+
+357
+01:18:53,704 --> 01:18:59,004
+Şimdi, RT eğrisinin 1, 0, 1 noktasında.
+
+358
+01:18:59,704 --> 01:19:03,524
+Şimdi ne zaman 1, 0, 1 oluyor? Hangi T değer için 1, 0, 1 oluyor değil mi bu?
+
+359
+01:19:03,524 --> 01:19:04,184
+Önce bir onu.
+
+360
+01:19:04,756 --> 01:19:23,376
+Bulalım, değil mi? Sonra zaten eğri uzunluğunu hesaplarken formülümüz, biliyoruz o zaten neydi? Uzunluk eşittir. Vt, süratin integraliydi. Onu biliyoruz. O tamam.
+
+361
+01:19:24,463 --> 01:19:39,583
+Ne demekti? Bu da şu içerisi ne demekti? Şu içerisi de re üstü t demektir. Tamam. O re üstü t bulunur, yerine yazılır. Ama şimdi şu ne demek bu? RT 1.01 noktasında hangi t için 1.01 oluyor? Bu bakmamız lazım.
+
+362
+01:19:40,344 --> 01:19:50,123
+Yani ne zaman ET 1 olacakmış? Kök 2 t sıfır olacakmış. Bu da 1 olacakmış. Hangi t için sağlanıyor? Bakalım şurada. ET 1.
+
+363
+01:19:50,996 --> 01:20:07,115
+0, kök 2t bu. t0 yazsak olur mu? Hepsini sağlar. Demek ki t0. t0'dan nereye kadar değişiyor? Bu noktaya ne zaman ulaşır? Bu sefer et'yi eşitleyeceğim.
+
+364
+01:20:11,796 --> 01:20:19,296
+İşte şurada, t'yi eşitledik. Kök 2 t'yi bu sefer, kök 2'ye eşitledik. t kaç çıkıyor? 1 çıkıyor belli.
+
+365
+01:20:19,976 --> 01:20:29,595
+E üzeri eksi t'yi de neye eşitleyeceğiz? 1 bölüğe eşitleyeceğiz. 1 bölüğe. Evet, buradan t bir sağlıyor. Her denklem sağlar. t yine bir yazarsak hepsi sağlanır.
+
+366
+01:20:30,036 --> 01:20:36,775
+Dolayısıyla t sıfırdan nereye kadar değişiyormuş? Sıfırdan bir et kadar değişiyormuş. Bunu gördük. Gerisi kolay zaten.
+
+367
+01:20:37,279 --> 01:20:39,619
+Re üsü t'yi bulmayı biliyoruz zaten.
+
+368
+01:20:40,959 --> 01:20:48,260
+E t'nin türevi E t, kök 2 t'nin türevi kök 2, e üzeri eksi t'nin türevi eksi e üzeri eksi t.
+
+369
+01:20:49,379 --> 01:20:51,959
+Re üsü t demek ne demekti? Bu V t.
+
+370
+01:20:54,840 --> 01:21:02,959
+E t'nin karesi e üzeri 2 t, kök 2'nin karesi 2, e üzeri eksi t'nin karesi e üzeri eksi 2 t.
+
+371
+01:21:03,376 --> 01:21:16,115
+Bu da ne demektir? Tam kare var burada. Et artı e üzeri eksi t'nin karesi, et artı e üzeri eksi t diye çıkar. Pozitif olduğu için mutlak değer var ama o da aynen çıkar.
+
+372
+01:21:17,956 --> 01:21:26,456
+Evet, o halde integre edeceğiz. Şunu bulduk. İntegre edeceğiz. Et eksi e üzeri eksi t'yi integre edersek, e üzeri t'nin integrali.
+
+373
+01:21:29,876 --> 01:21:55,355
+eksi e üzeri eksi t. Orası nasıl olmuş ona bir bakalım. Şurası artıydı. Şu bir dakika, şu artı olacak. Burada artı yazılması lazım. Sonra integral alınca şurada eksi geliyor. Tamam. Evet, şurada artı olması lazım. Çünkü reviste, şu arada artı bakın. Şurada artı olacak, eksi yazılmış. Şu artı olacak, sonra eksi oluyor.
+
+374
+01:21:55,840 --> 01:22:22,960
+O da e kare eksi bir bölü e oluyor. Evet, burada da şu bilgiyi bir daha söyleyelim. Şu eğri hangi t değeri için buraya ulaşıyor? Bunu bulmak lazım. O da alt sınır demek oluyor. Onu alt sınır olarak yazmamız gerekiyor. İşte t nereden nereye kadar değişiyor. Sonra hangi t değeri için burada oluyor? Değil mi? Hangi t değeri için burada oluyor?
+
+375
+01:22:23,423 --> 01:22:43,824
+Onları nasıl bulduk? Şu kat sayıları sırayla bunu 1'e, bunu 0'a ve sonuncusunda 1'e eşitleyerek T'nin ilk değerini bulduk. Sonra aynı şekilde T'nin ikinci değerini bulduk. Sonra neyin türevini aldık? Süratın türevini aldık. Bu veya ne demekti bu? Konumun.
+
+376
+01:22:44,243 --> 01:22:59,243
+Birinci türevi demek ki içerisi. Onu yaptık. Sıfırdan bire kadar integre edince sorumuz bitti. Evet, bu da bilgiler özümsendi mi diye test edilebilir. Yani bilgilerimiz...
+
+377
+01:23:00,756 --> 01:23:17,695
+derste verilen bilgiler, özümseyip özümsemediğimizi test eden bir soru aslında. Çünkü ne demek bu yani? 1-0-1 noktasından bu noktaya kadar gitmesi kadar eğrinin uzunluğunu hesapla derken bu nokta…
+
+378
+01:23:18,100 --> 01:23:29,640
+t'nin hangi değerine karşılık geliyor? O t'yi bulmak gerektiğini düşünmeniz lazım. Burada da 2. t değerini bulmak gerektiğini düşünmek gerekiyor. Gerisi de zaten eğri uzunluğu, süratli de onu bilmek yeterli.
+
+379
+01:23:30,940 --> 01:23:44,860
+Evet, diğer sorumuz neymiş? Ona bakalım. Diyor ki, bu RT konum vektörünün veya eğrisinin t eşit sıfırdaki t doğrusunun denklemini bulun.
+
+380
+01:23:46,804 --> 01:24:01,744
+Evet, burada bu t doğrusunun denklemi deyince, şimdi doğru denklemini uzayda nasıl buluyorduk? Uzayda doğru denklemi için şu vardı hatırlarsanız.
+
+381
+01:24:03,864 --> 01:24:11,364
+Doğruya paralel bir vektör gerekiyordu ve bu da diyelim ki L'ye doğrusu, üzerindeki bir noktada P0 olsun.
+
+382
+01:24:13,652 --> 01:24:41,192
+Bu bilgi lazım bize. Bu B'de A'yı, B'yi, C'k vektör olsun. Buna paralel. Paralel olarak tuttuk. Ama X eşit, X0 artı A't, Y eşittir. Y0 artı B't, Z eşit, Z0 artı C't şeklindeydi. İşte burada, bunun türevini düşünürseniz, R'e'nin, R'e'nin türevini düşündüğümüz zaman, yani bunun T'e'ti,
+
+383
+01:24:41,631 --> 01:25:00,291
+Doğruya, aradığımız doğruya paralel vektör oluyor. Evet, bir daha söylüyorum. Yani hız vektörü, konumun türevini aldığınız zaman bizim aradığımız t doğrusuna paralel vektör. Evet, t doğrusuna paralel vektörü nasıl buluyormuşuz? Hız vektörüyle buluyormuşuz.
+
+384
+01:25:00,591 --> 01:25:10,311
+v'nin t eşit sıfırdaki değerini bulursak, bu bizim aradığımız doğruya, yani t doğrusuna paralel vektörü, yani v'yi bulmuş oluyoruz.
+
+385
+01:25:10,751 --> 01:25:12,152
+Tamam mı? Bu bilgi önemli.
+
+386
+01:25:13,311 --> 01:25:15,191
+rt verilmişti yukarıda.
+
+387
+01:25:16,031 --> 01:25:18,611
+Hatta vt'yi bulmuş muyduk, vt'yi bulmuş muyduk?
+
+388
+01:25:18,691 --> 01:25:21,252
+vt'yi de bulduk, vt'yi de bulmuştuk şurada.
+
+389
+01:25:22,868 --> 01:25:25,628
+Evet, b, t şurada vardı, vardı.
+
+390
+01:25:27,208 --> 01:25:32,748
+E, t, e, t, i, kök 2, j, eksi, e, üzeri, eksi, t idi.
+
+391
+01:25:32,848 --> 01:25:34,968
+T eşit sıfırdaki değeri bunun, böyle oluyor.
+
+392
+01:25:35,468 --> 01:25:38,508
+İşte bu neymiş, ne diyoruz? Paralel vektör.
+
+393
+01:25:40,068 --> 01:25:41,348
+Yön vektörü de diyorduk buna.
+
+394
+01:25:42,728 --> 01:25:45,448
+Yani şu v, v'ye karşılık geldi değil mi?
+
+395
+01:25:46,068 --> 01:25:47,268
+Evet, ona karşılık geldi.
+
+396
+01:25:47,807 --> 01:26:13,927
+Dolayısıyla, şuradaki A'mız 1, 1 olduğu için 1 çarpı t geldi. 1 çarpı t. Şu kök 2 olduğu için kök 2 çarpı t geldi. Şurada eksi 1 olduğu için eksi t, yani z eşit, eksi t kat sayısı var. Peki, nokta nedir? T eşit sıfırdaki değerini, T eşit sıfırdaki konumuna bulalım. T eşit sıfırdaki konumu sıfır yazarsak.
+
+397
+01:26:15,604 --> 01:26:42,324
+Şurada RT'de 0 yazalım. 0 yazarsak E üzeri 0 nedir? 1. Kök 2 çarpı 0'dan ne gelir? Kök 2 çarpı 0'dan 0 gelir. Ve şurada E üzeri 0'dan da ne gelir? E üzeri 0'dan da 1 gelir. Demek ki 1, 0, 1. T eşit 0'daki bulunduğu konum RT'nin.
+
+398
+01:26:42,720 --> 01:26:51,500
+Bu. Evet, yani P0 dediğimiz, yani şu doğru denklemini bulurken üzerindeki nokta P0 olarak neyi alıyoruz?
+
+399
+01:26:52,040 --> 01:27:00,640
+1.01'i alıyoruz. İşte 1.01 yazınca da denklemin bu oluyor. Bu da minik bir soru belki ama önemli bir soru. Burada neyi unutmayacağız?
+
+400
+01:27:01,140 --> 01:27:14,360
+Demek ki bir eğrinin konum vektörü verildiği zaman, yani bir eğri verildiği zaman size, vektörel bir eğri verildiği zaman, oradaki t-t doğrusunun denklemini bulurken hızın, hızın ne olduğunu unutmayacaksınız.
+
+401
+01:27:14,780 --> 01:27:26,400
+Hızın, hızın doğruya paralel vektör olduğunu unutmayacaksınız. Bu bilgi önemli, bu soruda bu mesajı almanız lazım. Evet, hızın doğruya paralel vektör olduğunu unutmanız gerekiyor.
+
+402
+01:27:31,475 --> 01:27:34,255
+Evet, şurada sayfamız daha varmış.
+
+403
+01:27:36,115 --> 01:27:36,715
+Peki.
+
+404
+01:27:42,547 --> 01:27:50,387
+Şimdi 16. soru şu, eğrisinin t sıfırdaki t doğrusunun parametrik denklemlerini bulalım diyor.
+
+405
+01:27:51,787 --> 01:28:03,507
+Evet, t doğrusunu biraz önce söylemiştim. Hızı bulduğunuz zaman o ne oluyordu? Doğruya paralel vektör oluyordu.
+
+406
+01:28:03,507 --> 01:28:08,267
+Evet, hızı bulduğumuz zaman doğruya paralel vektör buluyoruz. O zaman bakalım.
+
+407
+01:28:09,171 --> 01:28:13,551
+Hızı hemen bulduk burada. Re üstü t yani bu hız.
+
+408
+01:28:15,071 --> 01:28:21,911
+Demekti. Sin t'nin türevi kosün üstte. T karenin türevi 2, kosün eksisin artı oldu.
+
+409
+01:28:22,811 --> 01:28:31,531
+2 t, e t'nin türevi, e t. Bu ne oldu? Bizim paralel vektörümüz t doğrusuna paralel vektörümüz oldu.
+
+410
+01:28:31,931 --> 01:28:35,111
+Uzayda doğru denklemi bulmak için bir paralel vektöre ihtiyacımız vardı.
+
+411
+01:28:36,243 --> 01:28:52,243
+V'yi bulduk. V, T, onu ne diyorduk? V diye söylüyorduk. Burada V dediğimiz V, T yani oluyor. Hangi noktadaki? T eşit sıfırda. T yerine sıfır yazarsak, cos sıfır bir. Burası...
+
+412
+01:28:52,703 --> 01:29:17,763
+0, 0, 0 geldi. Evet, 1, 0, 1 oldu. T eşit 0'da doğruya paralel vektör neymiş aslında? Yani V dediğimiz, I artı 0, J artı K imiş değil mi? 1, 0, 1 yani bu şekilde vektörmüş. Şu V dediğimiz ya da V, T dediğimiz burada. I artı K. T eşit 0 için.
+
+413
+01:29:19,412 --> 01:29:29,392
+Peki, t eşit 0 olduğu zaman noktayı bulmamız lazım. Üzerindeki bir noktayı bulmamız lazım, değil mi? Üzerindeki noktayı bulacağım.
+
+414
+01:29:29,392 --> 01:29:43,112
+T 0 için 0 yazarsak, evet, t 0 için ne olur?
+
+415
+01:29:46,707 --> 01:29:57,188
+t yerine 0 yazdığımız zaman sinüs 0, 0, x 0 mı 0? Şurada 0 yazarsak, 0, kosinüs 0, 1, eksi 1 geldi.
+
+416
+01:29:58,387 --> 01:30:06,447
+Şurada e üzeri 0 ne midir, e üzeri 0 da nedir? 1 geldi. O zaman p 0 dediğimiz nokta, 0, eksi 1, 1 oldu.
+
+417
+01:30:07,307 --> 01:30:10,707
+v dediğimiz yani burada vt, vt'mizde...
+
+418
+01:30:10,975 --> 01:30:36,055
+i artı k geldi sadece. Denklemi yazarken şöyle yapıyorduk. 0 artı i'nin kat sayısı t. y eşittir. Eksi 1 artı 0 t. Çünkü j'nin kat sayısı yok. z eşittir. 1 artı k'nın kat sayısı 1 olduğu için t.
+
+419
+01:30:36,884 --> 01:30:54,083
+Evet, x eşit t, y eşit eksi bir, z eşit bir artı t şeklinde bulduk. Burada da unutmayacağız, t doğrusunun denklemini vektöre değerli, bir vektör değerli fonksiyon verildiği zaman, t doğrusunun denklemini bulurken, konumun türevini alacağız.
+
+420
+01:30:54,083 --> 01:31:00,844
+O bizim t doğrusuna paralel vektör olmuş oluyor. İşte burada üzerindeki nokta t eşit sıfır olduğu için.
+
+421
+01:31:02,163 --> 01:31:06,483
+üzerindeki bir noktayı bulduk ve denklemi elde ettik.
+
+422
+01:31:08,963 --> 01:31:13,803
+Evet, tabii bu soruları bir daha tekrar kendi başınıza çözebilir durumda olmanız gerekiyor.
+
+423
+01:31:13,803 --> 01:31:15,843
+Sınavda başarılı olabilmek için.
+
+424
+01:31:17,935 --> 01:31:26,535
+Rt eşit, lnTi, t-1 bölü t'nin eğrisinin t eşit 1'deki t doğrusunun parametrik denklemini bulun.
+
+425
+01:31:26,675 --> 01:31:31,615
+t eşit 1'deki t doğrusunun. Yine aynı tip bir soru. Ama işte biraz türevler filan var.
+
+426
+01:31:32,835 --> 01:31:36,935
+t vektör bulacağız. lnT'nin türevi var burada.
+
+427
+01:31:37,536 --> 01:31:43,115
+Değişik olarak, ln t'nin türevi, 1 bölü t geliyor. Bölümün türevi var, bölümün türevini de herkes bilir.
+
+428
+01:31:43,216 --> 01:31:58,636
+Payın türevi 1, çarpı payda t artı 2, eksi, paydanın türevi 1, çarpı payda t eksi 1, değil mi? t eksi 1, bölü paydanın karesi, t artı 2'nin karesi, o da şurada.
+
+429
+01:31:59,347 --> 01:32:10,647
+Sonra, t çarpı ln t'nin türevi, o da çarpı mı türevi? 1 çarpı ln t, ln t'nin türevi 1 bölü t, çarpı birinci t, o da burada. Şunları kısalıyor çünkü.
+
+430
+01:32:11,567 --> 01:32:18,047
+Evet, orada hangi nokta diyor? 1, 1 yaz. İşte bu nasıl vektör? İşte vt dediğimiz.
+
+431
+01:32:19,123 --> 01:32:30,403
+V, T burada ama aynı zamanda bizim ilk başta uzayda doğrular konusunda V olarak nitelendirdiğimiz vektör, V yani T doğrusunda paralel vektör buydu.
+
+432
+01:32:32,763 --> 01:32:43,723
+Bir yazınca, bir bölü üç, bir oluyor. Çünkü zaten burada şey, evet, bir yazınca burası bir, burası ne oluyor? Şunlar zaten gitmiş, değil mi?
+
+433
+01:32:47,380 --> 01:33:06,399
+Ne oldu? Burası 1 için 3, 9, 3 bölü, 3 bölü 9 oldu. Yani 1 bölü 3 oldu. İşte burada 1 bölü 3. Şurada LN1, 0, 1 geldi. İşte VT dediğim nedir? İşte I artı 1 bölü 3J'yi artı K biçiminde yazacağımız bir vektör.
+
+434
+01:33:06,819 --> 01:33:13,099
+T eşit 1 için ne değerlerini alıyor? T eşit 1 için LN1, 0.
+
+435
+01:33:13,844 --> 01:33:40,303
+L1 geliyor, t eşit bir, L1 oluyor, o sıfır. 1 yazarsak bu da sıfır oluyor, 1 yazarsak bu da sıfır oluyor, L1 sıfır çünkü sıfır sıfır, hepsi sıfır oldu, evet. O zaman sıfır, x eşit sıfır artı, şuradan i'nin sayısı 1 olduğu için t, y eşittir sıfır artı, 1 bölü 3 olduğu için 1 bölü 3 t, z eşittir sıfır artı, 1 olduğu için t. Bu kadar.
+
+436
+01:33:41,395 --> 01:33:46,416
+Evet, bu da yine aynı tip bir soru. Sadece türevleri biraz farklı olabilir, olmuş.
+
+437
+01:33:46,416 --> 01:34:01,975
+Son soru sanırım bu. Evet, iki tane zamana bağlı hareket eden A ve B cisimlerin vektörer konum fonksiyonları, yani konumları verilmiş, vektörer olarak verilmiş konumları.
+
+438
+01:34:09,203 --> 01:34:16,023
+Tabii çarpıştıkları anda konumlar aynı olmuş olur. Çarpıştıkları anı ve bu andaki konumlarını bulun.
+
+439
+01:34:16,743 --> 01:34:22,963
+Ve bu andaki konumlarını bulun. Evet işte A şıkkı kolay. Çarpıştıklarında konumlar aynı olacak değil mi?
+
+440
+01:34:23,663 --> 01:34:29,083
+Konumlar aynı olacağına göre bakalım ne çıkıyor? Buradan konumlar aynı yaptık. T değeri ne çıkıyor?
+
+441
+01:34:29,083 --> 01:34:35,003
+Şunları eşitleyeceğiz. Konumlar aynı olacağına göre. 5T eksi 6T kareye eşit.
+
+442
+01:34:36,659 --> 01:35:04,099
+Buna eşit, 9 da buna eşit. 9 t kare, şuradan hemen bir kere t eşittir, artı eksi 3. Ama sanırım eksi 3 sağlamıyor. Çünkü mesela eksi 3 yazsak, t kare eşit. Buradan ne oluyor? Eksi bir değer oluyor, bu olmaz. Dereyselik t eşit kaç oluyor? 3. Evet, t kare eşit negatif oluyor. Birinci denklemde sağlamıyor birinci denklemi. Veya ikinciyi de sağlamıyor değil mi? İkinciyi de sağlamıyor. Olay t 3'tür.
+
+443
+01:35:04,448 --> 01:35:10,327
+3'te karşılaşıyormuş, t eşit 3 iken çarpıştıkları anda t eşit 3'müş.
+
+444
+01:35:11,068 --> 01:35:18,087
+t 3 için 3 yazdık, 3 yazarsak, şurası 9, burası 9, burası 9 olur.
+
+445
+01:35:18,448 --> 01:35:21,827
+Diğeri de aynı olması lazım zaten, evet, 9, 9, 9.
+
+446
+01:35:23,347 --> 01:35:28,688
+Evet, demek ki o vektör neydir? 9i, 9j artı 9k, bunu soruyor.
+
+447
+01:35:29,827 --> 01:35:30,507
+Evet.
+
+448
+01:35:32,115 --> 01:35:36,556
+Çarpışma anında A ve B cisimleri arasındaki açıyı hesaplayın.
+
+449
+01:35:37,916 --> 01:35:41,056
+Evet, A ve B cisimleri arasındaki açıyı hesaplayın.
+
+450
+01:35:42,016 --> 01:35:47,076
+O açı da T vektörleri arasındaki açıdır. Evet, burada da o bilgi var.
+
+451
+01:35:48,296 --> 01:35:56,615
+Evet, şimdi çarpıştıkları anda cisimler arasındaki açı, burada bir bilgi daha var.
+
+452
+01:35:57,576 --> 01:35:59,456
+Cisimler arasındaki açı.
+
+453
+01:36:01,140 --> 01:36:26,539
+eşittir. t vektörleri arasındaki açıyı soruyor size. Ama bu da ne demektir aslında? Bunların hızları arasındaki açı. Yani bunun vt'sini bulacağız. Diyelim ki v1t, v1t bunun hızı.
+
+454
+01:36:27,252 --> 01:36:44,132
+bulacağız. Yani A üstü T ile, öyle diyeyim isterseniz, A üstü T ile B üstü T arasındaki açı, hangi anda, A üstü T ile B üstü T arasındaki açı, hangi anda, T eşit birde.
+
+455
+01:36:44,132 --> 01:36:54,132
+İşte, pardon bir diyorum, kaçtaydı? 3'te, değil mi? Evet, çarpıştıkları an demişti, çünkü T'yi 3 bulmuştuk, 3. Yani A üstü 3 ile,
+
+456
+01:36:55,380 --> 01:37:21,979
+ile V üstü 3 arasındaki açı. A üstü'yü bulduk, şuradan. 5i artı 2tj, 9'un türevi 0. Bu. V üstü'yü bulalım. 2ti, 2j, tekrar en türevi de 2tk. 3 yazdık. Buradan 5'e 6 geldi, şurası 6 olur.
+
+457
+01:37:23,891 --> 01:37:49,931
+Diğeri de 3 yazdık. 3 yazarsak 6, 2, 6 olur. Açı formülünü hatırlayayım. V1 çarpı V2, yani bu V1 çarpı V2 dediğim, işte A üstü 3, değil mi? A üstü 3 çarpı V üstü 3, böyle bunların uzunlukları. Oradan da theta böyle garip bir şey çıkıyormuş. Arkosiniz, yani bildiğimiz bir açı değil. Arkosiniz.
+
+458
+01:37:50,771 --> 01:37:56,231
+İşte 30, 42 bölü, 61, çarpı 76'nın karikül şeklinde çıkıyor işte.
+
+459
+01:37:57,931 --> 01:38:05,251
+Evet, bu da bir başka örnek soru. Sanırım bitti burada. Evet, burada bitti, uygulama, tular bitti.
+
+460
+01:38:06,091 --> 01:38:14,572
+Hocam, bir şey soracaktım da, bu PDF'i tekrar atabilme şansınız var mı? Şu chatbox'a.
+
+461
+01:38:15,391 --> 01:38:16,271
+Tabii tabii, atarım.
+
+462
+01:38:17,619 --> 01:38:18,559
+Atıyorum şimdi.
+
+463
+01:38:29,524 --> 01:38:30,083
+Evet.
+
+464
+01:38:32,824 --> 01:38:36,364
+Bu sayede doğru düzlemler uygulama, doğru düzlem uygulama şu.
+
+465
+01:38:38,264 --> 01:38:38,743
+Evet.
+
+466
+01:38:41,743 --> 01:38:44,703
+Şu anda benden çıktı görünüyor.
+
+467
+01:38:46,144 --> 01:38:47,184
+Siz de bir bakın bakalım.
+
+468
+01:39:06,323 --> 01:39:07,163
+Teşekkür hocam.
+
+469
+01:39:08,103 --> 01:39:22,163
+Tamam. Peki. Rica ederim. Şimdi, biraz aramı versek, biraz kaptırdık kendimizi. Biraz 2.30'daki gözüküyor benim saatim.
+
+470
+01:39:24,443 --> 01:39:32,103
+Biraz daha devam edip bitirsek daha iyi olur. Çünkü hani bir saat gibi biraz şey yapıyorduk, arayı daha erken veriyorduk, biraz uzamış.
+
+471
+01:39:32,724 --> 01:40:00,000
+Biraz daha devam edip bitirelim mi? Yoksa hocam, yorulduk mu dersiniz? Bir 10 dakika ara verelim mi? Yoksa devam edelim. Bir yarım saat kadar anlatıp bitireyim diye düşünüyorum bir taraftan. Bir taraftan da sizin durumunuz nasıl? Evet, [öğrenci] dedi ki bitirelim hocam dedi. Başka fikri farklı düşünen var mı? Biraz daha yarım saatte anlatayım, bitirelim. Ara vermeyelim diye düşünüyorum. Yani ya da biraz anlatayım, erken de bitirelim.
+
+472
+01:40:00,000 --> 01:40:00,820
+Bir şey olmayalım çok.
+
+473
+01:40:08,307 --> 01:40:25,107
+Şimdi neyip paylaşacağız? Bakalım ne var? Çok değişkenli. Ona var mı burada? Bir dakika, biraz bekleteceğim sizi. Şimdi... Şurada var mı? Çok değişkenli.
+
+474
+01:43:41,171 --> 01:43:46,291
+Şimdi çok değişkenli fonksiyonlar, biraz başlayalım sonra bitiririz.
+
+475
+01:43:48,351 --> 01:43:57,931
+Şimdi çok değişkenli fonksiyonlar deyince önce re karedeki iki değişkenli fonksiyonu yani bir bahsedelim.
+
+476
+01:43:59,051 --> 01:44:01,131
+D boştan farklı bir küme.
+
+477
+01:44:04,948 --> 01:44:08,548
+D boştan farklı bir hüküme olmak üzere, re karenin içindeki bir hüküme tabii.
+
+478
+01:44:09,588 --> 01:44:21,668
+D'deki her x'ye nokta çiftini, bir fx'ye, real sayısına, ki z dedik ona, eşleyen f kuralına iki değişkenli fonksiyon diyoruz.
+
+479
+01:44:22,768 --> 01:44:30,828
+Evet, yani şöyle diyoruz. Eskiden diyorduk ki x diyorduk, f ile tek değişkenli de bu nereye gidiyordu? fx'e.
+
+480
+01:44:31,155 --> 01:44:41,056
+Şimdi biz x'yi aldık, f ile neye götürdük? f x'yi götürdük, ona da z dedik, değer olarak z dedik. Buna ne diyoruz? İki değişkenlik.
+
+481
+01:44:43,636 --> 01:44:58,536
+Kendi fonksiyonu. Eğer bu en tane değişken olursa, en değişkenli oluyor. x'en olsun, f nereye götürsün? Nereye götürür? Tabii ki f x 1, x 2, x'en. Buna da ne diyoruz? En değişkenli.
+
+482
+01:44:59,060 --> 01:45:03,420
+en değişkenli fonksiyon.
+
+483
+01:45:03,920 --> 01:45:06,720
+Tabii real bizimkiler, real de çalışıyoruz.
+
+484
+01:45:07,260 --> 01:45:08,159
+Şu bir real sayı.
+
+485
+01:45:10,279 --> 01:45:12,000
+Real sayı, bu da real sayı.
+
+486
+01:45:14,199 --> 01:45:24,079
+Yani her x'ye'yi, bir fx'ye karşılık getiren, bir fx'ye real sayısı işleyen fonksiyon 2 değişkenli.
+
+487
+01:45:24,079 --> 01:45:25,760
+Genel olarak en değişken varsa,
+
+488
+01:45:26,355 --> 01:45:34,275
+x1, x2, x'ene karşılık fx'en real sayısını eşleyen fonksiyona neye değişkenli fonksiyon diyoruz.
+
+489
+01:45:34,815 --> 01:45:36,435
+Burada bir iki tanım da önemli.
+
+490
+01:45:37,455 --> 01:45:40,015
+Şurada z var ya, z'ye bağımlı değişken diyoruz.
+
+491
+01:45:40,095 --> 01:45:41,835
+Bizim x ve y'ye de ne diyoruz?
+
+492
+01:45:42,835 --> 01:45:46,935
+Bağımlı değişkenli, x ve y'ye değerler verdiğimizde neyi elde ediyoruz?
+
+493
+01:45:47,435 --> 01:45:48,395
+Z'yi elde ediyoruz.
+
+494
+01:45:49,035 --> 01:45:52,035
+Evet, z'nin bağımlı değişken olduğunu unutmayalım.
+
+495
+01:45:53,492 --> 01:46:08,212
+Evet. Şimdi geometrik olarak da bir yüzey gösterir. Bu iki değişkenli fonksiyon. Z eşittir, fx'ye nedir? Bir yüzey gösterir. Evet, bu neymiş? Bir yüzey.
+
+496
+01:46:09,072 --> 01:46:18,612
+Yani şimdi mesela şöyle düşünün. Ne demek hocam o diyeceksiniz. Mesela x kare artı y kare eşit bir. Bu bizim ne gösterir?
+
+497
+01:46:19,007 --> 01:46:44,268
+Böyle bir çember gösteriyordu. Nerede? X'ye düzleminde, yani re karede. Veya x'ye düzleminde mi? Ama eğer bir uzay olursa, o zaman bir silindire karşılık gelir. Bakın, bu x kare artı y kare eşit bir uzayda, yani re kükte.
+
+498
+01:46:45,652 --> 01:46:46,731
+Bir silindir olur.
+
+499
+01:46:47,952 --> 01:46:49,011
+Bu önemli.
+
+500
+01:46:49,792 --> 01:46:50,851
+Yani şöyle olur.
+
+501
+01:46:51,271 --> 01:46:54,051
+Siz x kare artı, şunu böyle nokta nokta devam ettin.
+
+502
+01:46:54,131 --> 01:46:55,591
+Şunu nokta nokta getirin.
+
+503
+01:46:56,431 --> 01:46:57,792
+Şunu da nokta nokta götürün.
+
+504
+01:46:58,431 --> 01:47:01,712
+Şu, bu x kare artı y kare eşit bir uç.
+
+505
+01:47:01,832 --> 01:47:02,931
+X, Y.
+
+506
+01:47:03,731 --> 01:47:04,412
+Şurası Z.
+
+507
+01:47:06,100 --> 01:47:11,080
+Şurayı 1'de kesiyor, burayı 1'de peşiyor, şurada eksi 1'de kesiyor, şurada eksi 1'de kesiyor.
+
+508
+01:47:11,640 --> 01:47:16,420
+Bunu z boyunca yükselttiğiniz zaman, şöyle bir silindir olur. Tamam mı?
+
+509
+01:47:17,480 --> 01:47:19,060
+Evet, ne oldu? Silindir oldu.
+
+510
+01:47:20,520 --> 01:47:33,300
+Evet, demek ki reküpte x kare artı y kare, re kare de bir çember olabilir ama, re kare de bir çember olabilir ama, re kare de bir çember olabilir ama, re küp deyince o bir silindir olur.
+
+511
+01:47:33,747 --> 01:47:37,407
+Bu önemli. Evet, bu şekilde.
+
+512
+01:47:38,467 --> 01:47:41,527
+Şimdi, devam edelim.
+
+513
+01:47:42,047 --> 01:47:44,787
+Evet, yani bir yüzey oluyor.
+
+514
+01:47:45,567 --> 01:47:56,027
+Z eşit fx'i gördüğünüz zaman, tabii bu da denklem olarak, işte z eşit x kare artı y kare bir yüzeydir.
+
+515
+01:47:56,027 --> 01:47:57,167
+Z eşit.
+
+516
+01:47:57,747 --> 01:48:14,247
+İşte x'ye bir yüzeydir. Ve bu yüzeylerin bazılarını ben size kalıp olarak denklemlerini vereceğim. Yani bazılarını tanıyoruz diyeceğim. Tanımanız gerekiyor diyeceğim daha doğrusu. Sonra vereceğiz onların denklemlerini, formüllerini vereceğiz.
+
+517
+01:48:15,387 --> 01:48:23,087
+Şimdi bunlar da tabii tek değişkenli fonksiyonlarda hatırlarsanız limiti görmüştük matematik 1'de. Sonra
+
+518
+01:48:23,796 --> 01:48:49,476
+Limitten sonra türev, sonra da integral gördük. Demek ki bunların da aynı şekilde limit türev integrali var mı? Var. Evet, bunların da limit türev integrali göreceğiz. Ama tabii onları limitine, limite geçmeden önce ne oluyor, ne yapmıştık? Tanım kümelerini, fonksiyonların bulmayı öğrenmiştik. Şimdi burada da tanım kümelerini bulabilmek önemli bizim için.
+
+519
+01:48:54,420 --> 01:49:08,020
+Bakalım, tanım kümeleri. Tanım kümelerini belirlerken, bir de şu bilgiyi de bir üstünden geçelim. Genel olarak neye değişkenli bir fonksiyon? Double V eşittir.
+
+520
+01:49:08,940 --> 01:49:20,060
+F, X1, X2, XM biçiminde gösterilir. Aynı şekilde X1, X2, XM bağımsız değişken. Double V ne oluyor bu sefer? Bağımlı değişken olur.
+
+521
+01:49:20,724 --> 01:49:40,984
+Şimdi tanım kümelerini bulurken, tek değişkenlerdekine benzer şekilde, tek değişkenlerinde diyorduk ki mesela, fonksiyonun kökü çift kuvvettense, mesela fx eşit, kök içinde gx ise, diyorduk ki gx büyük eşit, sıfır için bu fonksiyon tanımlıdır diyoruz, değil mi?
+
+522
+01:49:40,984 --> 01:49:47,564
+Burada da aynı şey geçerli. Veya şöyle bir fonksiyon olsun, fx eşit, gx bölü hx.
+
+523
+01:49:48,372 --> 01:50:02,212
+Rasyonel bir fonksiyon olsun. Gx'li hx polinom olsun. Burada ne zaman tanımlı diyorduk? hx farklı, sıfır için tanımlı diyorduk. Bu kurallar burada da geçerli. İşte ln fx ne zaman tanımlı diyorduk? fx büyük.
+
+524
+01:50:03,315 --> 01:50:07,815
+Sıfır için tanımlı diyorduk. Yani orada bildiğimiz bilgiler burada tekrar kullanacağız.
+
+525
+01:50:08,996 --> 01:50:25,195
+Şimdi mesela fonksiyon vermişiz. Z eşit kök y eksi x kare. Tanım kümesi haliyle ne olacak? Kare kök olduğundan dolayı y eksi x kare, kök içi y eksi x kare olduğuna göre, y eksi x kare büyük eşit sıfır, o da y büyük eşit x kare olacak.
+
+526
+01:50:26,476 --> 01:50:29,496
+Tanım kümesi bu. Peki değer kümesi?
+
+527
+01:50:30,260 --> 01:50:40,980
+X ve Y'ye değerler verdiğimiz zaman bu kök ne olur? Büyük eşit sıfır olur. En küçük sıfır olur. O zaman nereden nereye kadar değişir? Sıfırdan sonsuza kadar değişir. Bir daha söylüyorum.
+
+528
+01:50:41,800 --> 01:50:51,220
+X ve Y'ye verebildiğimiz kadar bütün real sayıları verdiğimizde en geniş olarak Z'nin en küçük sıfır olacağını görürüz.
+
+529
+01:50:52,020 --> 01:51:03,780
+0'dan sonsuza kadar değişebileceğini görüyoruz. Z için en geniş küme, Z'nin alabileceği en geniş değer aralığı 0 sonsuza aralığı olur. O da değer kümesi olur.
+
+530
+01:51:05,260 --> 01:51:18,700
+Gelelim 1 bölü x'ye. 1 bölü x'ye, bu rasyonel olduğu için x'ye ne olması lazım? 0'dan farklı ise tanımlıdır. x'ye 0'dan farklı ne demek? Yani ne olur? İkisi 1'den...
+
+531
+01:51:18,771 --> 01:51:34,011
+İkisi birden sıfır olsa sıfır olabilir. Daha açabilir miyiz bunu diye baktım ama gerek yok belki. İkisi sıfırdan farklı olduğunda sıfırdan farklı olabilir. Değil mi?
+
+532
+01:51:37,071 --> 01:51:43,171
+İkisi sıfırdan farklıysa, x farklı sıfır ve ne olması lazım?
+
+533
+01:51:43,923 --> 01:51:54,863
+y'nin farklı sıfır. Çünkü biri sıfır olsa ne olur? Sıfır olur. x'ye sıfırdan farklıysa, x'ye sıfırdan farklı olması lazım değil mi? x sıfırdan farklı, y sıfırdan farklı olması lazım.
+
+534
+01:51:56,663 --> 01:52:09,863
+Peki, bir bölü x'ye hangi değerleri alır? x'ye yerine ne yazarsak yazalım. Ne olmaz? Sıfır olmaz. Sıfır haricindeki tüm real sayıları elde edebiliriz.
+
+535
+01:52:10,239 --> 01:52:24,479
+Değil mi? Bu sıfır yapın, bunu sıfır yapamayız. 1 bölü x'ye sıfıra eşit olmayacaktır hiçbir zaman. Onun için değer kümesi ne olur? R eksi sıfır. Evet, R eksi sıfır olur. Z eşit sinüs x'ye'ye gelelim.
+
+536
+01:52:26,979 --> 01:52:35,979
+Düzlemin tümüdür tanım kümesi çünkü sinüs her yerde tanımlı. Sinüs her yerde tanımlı olduğu için düzlemin tümüdür. Yani R karenin tamamında nedir?
+
+537
+01:52:36,368 --> 01:52:38,828
+Tanım kümesi re karenin tamamı olmuş olur.
+
+538
+01:52:39,408 --> 01:52:41,668
+Değil mi? Düzlemin tümü, bu da düzlem demek.
+
+539
+01:52:43,708 --> 01:52:45,628
+Düzlem, düzlemin tümünde tanımlıdır.
+
+540
+01:52:45,628 --> 01:52:52,548
+Yani her iksiye için, her iksiye için bu z tanımlı.
+
+541
+01:52:54,028 --> 01:52:57,128
+Tanımlı. Yani re karenin tamamı da tanımlıdır.
+
+542
+01:52:57,348 --> 01:53:02,008
+Çünkü sinüs fonksiyonu her yerde tanımlı o sebepten.
+
+543
+01:53:03,539 --> 01:53:13,279
+Fakat sinüs ne? Hangi değerler alabilir? Sinüs, eksi 1 ile 1 arasında değerler alıyordu. Yani z'ler nerede değişir? Eksi 1 ile 1 arasında değişir. Onun için bu değer kümesi.
+
+544
+01:53:15,940 --> 01:53:21,659
+Evet, gelelim diğer örneğe. Diğer örneğimiz de double ve eşit.
+
+545
+01:53:23,500 --> 01:53:24,779
+Double ve eşit.
+
+546
+01:53:26,676 --> 01:53:36,296
+ve eşittir. Neymiş? X kare artı, Y kare artı, Z kare. Kare kökü olduğuna göre, X kare artı, Y kare artı, Z kare, büyük eşit sıfır olacaktır.
+
+547
+01:53:37,216 --> 01:53:45,136
+Bu her zaman zaten büyük eşit sıfır, en küçük sıfır olur. O zaman yine bu da 3 değişkenli olduğu için, bu sefer uzay tümü.
+
+548
+01:53:45,136 --> 01:53:54,036
+Yani her X, Y, Z için tanımlı. Uzay, 3 boyutlu uzay.
+
+549
+01:53:57,108 --> 01:54:06,087
+Uzayın tamamında tanıdık. Peki, hangi değerleri alır? En küçük sıfır değerini alır. O zaman değer kümesi sıfır sonsuz. Bitti. Evet.
+
+550
+01:54:08,087 --> 01:54:16,027
+Üç değişkenliğe de bir örnek olmuş oldu. Başka örneğimiz, başka örneklerimiz de varmış. Evet, bakalım.
+
+551
+01:54:16,807 --> 01:54:20,967
+1 bölü x kare artı y kare artı z kare. Bunun tanım kümesini bulalım.
+
+552
+01:54:22,323 --> 01:54:30,663
+Şimdi bu da, bu 1 bölü x kare artı y kare artı z kare kesir olduğuna göre payda sıfır olmaması lazım değil mi?
+
+553
+01:54:31,763 --> 01:54:36,723
+y kare artı z kare sıfırdan farklıysa tanımlı. Bu ne zaman sıfırdan farklı olur?
+
+554
+01:54:40,943 --> 01:54:47,303
+Hepsi sıfır olsa sıfır olurdu. Değil mi? Yani biri sıfırdan farklı olsa,
+
+555
+01:54:48,564 --> 01:55:06,264
+Sıfırdan farklı olur. Bir tanesinin sıfırdan farklı olması yeter. Yani x kare artı y kare artı z kare sıfır olsun deseydik, o zaman derdiniz ki hocam bu x, y, z hepsi sıfır. Her biri sıfır olursa, hem x hem y hem z sıfır olursa sıfır olur derdiniz.
+
+556
+01:55:07,264 --> 01:55:14,804
+Bu kareler toplamı sıfırdan farklıysa, o zaman nokta olarak sadece üçünün sıfır olduğu yeri çıkarmamız lazım, o bu.
+
+557
+01:55:15,699 --> 01:55:30,699
+Evet, yani 3'ü aynı anda 0 olmasın, aynı anda 0 değilse, fayda 0 olmaz. 3'ü aynı anda 0 olmasın yeter. İkisi 0, biri 0'dan farklı olsa da 0'dan farklı olur. Ama 3'ü aynı anda 0 olmamalı, yani böyle olmalı.
+
+558
+01:55:32,380 --> 01:55:39,079
+O ne? X, Y, Z, 3'ü 1'den aynı anda 0 olmamak demek bu.
+
+559
+01:55:40,220 --> 01:55:40,720
+Peki.
+
+560
+01:55:41,395 --> 01:55:52,296
+Double V, 1 bölü x kare artı y kare artı z kare sıfıra eşit olabilir mi? Olmaz. Bunu sıfıra yapamayız. Onun için değer aralığı nedir? Sıfır sonsu aralığıdır.
+
+561
+01:55:54,975 --> 01:56:05,435
+Sonuncu Double V eşit, x'ye elen z, bu zaten tanımlı her yerde x'ye, elen z'ye nerede tanımlı? Z büyük sıfır.
+
+562
+01:56:06,515 --> 01:56:26,155
+Z büyük sıfır, yani şöyle düşünürsünüz, üst yarı uzay, X, Y, Z, üst yarı uzay oluyor aslında değil mi? Şöyle yukarısı, şöyle nokta nokta, şöyle nokta nokta var, üst yarı uzay değil mi? Z büyük sıfır, böyle üst yarı uzay.
+
+563
+01:56:36,148 --> 01:56:46,207
+x, y, z yerine istediğiniz sayıları yazdığınızda tüm real sayıları elde etme şansınız var. Onun için x sonsuz son sarılığı bu.
+
+564
+01:56:48,387 --> 01:56:55,768
+Evet, bir iki örnek daha var. Bakalım nedir bu? Fonksiyonu tam bölgesi, bulup çizin diyor.
+
+565
+01:56:55,768 --> 01:57:01,747
+Z bulup çizelim.
+
+566
+01:57:02,144 --> 01:57:18,424
+Çizilmiş ama biz de bir daha beraber yorum yapalım. Bir bölü kök neymiş? 1-x²-y². Ne olacak? 1-x²-y². Bu kök sıfırdan farklı olacak ama kare kök olduğu için bir de büyük olacak.
+
+567
+01:57:19,164 --> 01:57:25,044
+1-x²-y². Eşit sıfır ama sıfır olamaz. Büyük sıfır o zaman.
+
+568
+01:57:25,971 --> 01:57:43,631
+Faydalı olduğu için sıfır olamaz. O zaman x kare artı y kare küçük ne olacak? Bir. O da ne demekti? O da x kare artı y kare küçük bir ne demek? Çemberin içi. Şu. Değil mi? Evet. Bu da çemberin içi demekti. Kendisi dahil değil, eşitlik yok çünkü.
+
+569
+01:57:48,884 --> 01:57:49,363
+Evet.
+
+570
+01:57:55,859 --> 01:58:01,760
+Evet, böyle birkaç örnek daha var. Onları bir bitirelim. Seviye ilgisi var. Onu da tanımlayalım.
+
+571
+01:58:06,868 --> 01:58:15,967
+Evet, z eşit, x kare artı y kare eksi 1, güzel bir soru. Tanım bölgesini bulup çizin diyor.
+
+572
+01:58:16,828 --> 01:58:23,448
+Şimdi bir kere birincisi, evet şurada yapmışız, x kare artı y kare eksi 1, büyük eşit 0. Tamam.
+
+573
+01:58:24,667 --> 01:58:27,768
+İçerisi, çünkü kare kök olduğuna göre bu büyük eşit 0. Tamam.
+
+574
+01:58:28,707 --> 01:58:32,807
+Buradan x kare artı y kare büyük eşit 1 olur. Diğerinde,
+
+575
+01:58:33,296 --> 01:58:59,195
+Eleni tanımını unutmayalım. Eleni neydi? İçinde böyle bir fonksiyon varsa bunun ne olması lazım? Tanımlı olması için büyük sıfır olması lazım. Dolayısıyla 4 eksi x kare eksi y kare büyük sıfır. x kare artı y kare küçük 4. Şimdi hem bu hem bu olacak. V var çünkü. V olduğuna göre kesişim. Yani bu büyük eşitleri sağlayacak ama küçük 4'ü de sağlayacak bu. V var, dikkat edin.
+
+576
+01:58:59,859 --> 01:59:20,859
+İkisi de olacak. O yüzden kesişimi alacaksınız. Yani şurada kesişim var. 1 ile 4 arası demek. X kare artı, y kare eşit bir şu neydi? X kare artı, y kare eşit bir bir çemberdi. Ondan daha büyük istiyor. Daha büyük olacak diyor yani dışarısı. Ama...
+
+577
+01:59:20,979 --> 01:59:35,319
+Şu ne demekti? X kare artı y kare küçük 4, yani 2'nin karesi. X kare artı y kare eşit 2 çemberinin neyi olacak? İçi olacak çünkü küçük 2. Küçük 2'nin karesi olduğu için çemberinin içi olacak. Bu kadar.
+
+578
+01:59:38,140 --> 01:59:48,100
+Evet, bir başka soru. Tanım bölgesini bulup çizin diyor yine. Burada da birkaç aşama var, dikkat edelim. 9 eksi.
+
+579
+01:59:49,171 --> 02:00:16,551
+Evet, 9 eksi, x kare, 9 x kare, eksi y kare, büyük eşit sıfır olması lazım. Büyük sıfır. Eşit faydalı olduğu için eşitlik de yok. O zaman bu da 2 kare farkı olduğu için 3x eksi y, 3x artı y'dir. O zaman ne olacak? Ya ikisi artı artı, bu birinci durum. Veya ikisi de ne olacak? Eksi eksi olması lazım. 1 artı 1 eksi olmaz. Birinci durumu ayırt edelim. 3x eksi y büyük sıfır, yani 3x büyük y.
+
+580
+02:00:17,652 --> 02:00:32,351
+3x artı y büyük sıfır, yani y büyük 3x, eksi 3x. Evet, ne oldu yani? y eksi 3x'den büyük, v var burada tabii, v. Kesişimi alacağız. Bu v bu, aynı anda sağlanacak kesişim.
+
+581
+02:00:34,112 --> 02:00:44,892
+y eksi 3x'den büyük, 3x'den. y eşit, eksi 3x şöyle bir doğru. y eşit 3x, bu y eşittir, eksi 3x.
+
+582
+02:00:45,811 --> 02:00:47,011
+y eşit 3x.
+
+583
+02:00:48,891 --> 02:00:49,051
+Bu.
+
+584
+02:00:49,951 --> 02:00:50,171
+y
+
+585
+02:00:50,171 --> 02:00:53,371
+3x'den
+
+586
+02:00:53,371 --> 02:00:55,692
+küçük
+
+587
+02:00:55,692 --> 02:01:01,231
+3x'den küçük
+
+588
+02:01:01,231 --> 02:01:02,791
+o zaman
+
+589
+02:01:02,791 --> 02:01:04,451
+şurası.
+
+590
+02:01:05,631 --> 02:01:06,911
+Sadece biri yazıyorum şu anda.
+
+591
+02:01:08,152 --> 02:01:08,411
+Böyle.
+
+592
+02:01:09,171 --> 02:01:10,652
+3x'den küçük
+
+593
+02:01:10,652 --> 02:01:12,551
+eksi 3x'den büyük.
+
+594
+02:01:13,460 --> 02:01:16,460
+Şinli bir de acá, şu...
+
+595
+02:01:26,228 --> 02:01:26,828
+Sırık.
+
+596
+02:01:31,699 --> 02:01:38,419
+Şöyle olsun. Şimdi diğerine yapacağım bakın. 3x'den küçük, eksi 3x'den büyük. O zaman şöyle.
+
+597
+02:01:41,559 --> 02:01:58,459
+Şimdi size soruyorum. Biri bulduk mu? Her ikisinin kestiği yer neresi? Şöyle de şunu biraz daha atar ve şu tarafta uzattığımızda şurası olur. Bak şu. Şu kısım. Tamam mı? Sarı ve kırmızının kestiği yer burası. Şu.
+
+598
+02:01:58,899 --> 02:02:18,919
+Şu aşağıya doğru da geliyor. Şu aslında kırmızı çizgiler değil mi normalde? Dolayısıyla şu bölge olduğunu, birin böyle olduğunu görün. Evet, tamam. Bir böyle. Aynı şekilde 2'yi de bulalım. İkisi de eksi eksi idi. Yani şu çıktı. Onu da şöyle yapalım. Y3x'den büyük.
+
+599
+02:02:22,420 --> 02:02:32,859
+y eşittir 3x, y eşittir, y eşittir, eksi 3x, y, 3x'den büyük.
+
+600
+02:02:36,564 --> 02:02:38,824
+3x'den büyük, şöyle.
+
+601
+02:02:41,584 --> 02:02:42,904
+Evet, 2'yi buluyoruz.
+
+602
+02:02:43,824 --> 02:02:45,524
+y-3x'den küçük.
+
+603
+02:02:49,171 --> 02:02:53,651
+y eksi 3x'den küçük, eksi 3x'den küçük.
+
+604
+02:03:03,731 --> 02:03:13,551
+Neresi oldu? Bak, şu parça. Değil mi? Şurası. İşte. Şu gösterdiğim. Evet, ikiye. Bir ve iki.
+
+605
+02:03:15,212 --> 02:03:25,572
+Tabii, burada şunu da unutmayın. Böyle bu şekilde cevap şu. Görüyorsunuz burada. Bu veya tabii. Bir veya iki bu. Bir veya iki.
+
+606
+02:03:26,771 --> 02:03:54,271
+Bir kendi içinde kesişimi barındırıyor, iki de kendi içinde kesişimi barındırıyor ama tabloyu çizerken bir de olabilir veya iki de olabilir. Onun için biri böyle aldık, ikiyi böyle aldık. Bir veya iki şeklinde. Bu da olsa sağlanır, artı artı olsa da sağlanır, eksi eksi olsa da sağlanır. O demek böyle. Biri bul, ikiyi bul, trafiği tamamlar. Evet, bu iyi bir soru.
+
+607
+02:03:56,051 --> 02:03:57,251
+Başka soru.
+
+608
+02:03:59,171 --> 02:04:01,551
+fx, y eşit, y eksi x kare.
+
+609
+02:04:02,211 --> 02:04:02,911
+Bölgeyi çiz.
+
+610
+02:04:04,071 --> 02:04:05,091
+Kolay bu tabii.
+
+611
+02:04:05,191 --> 02:04:08,871
+y eksi 3 x kare büyük eşit sıfır, y büyük eşit x kare.
+
+612
+02:04:09,071 --> 02:04:10,291
+O da zaten ne olacak?
+
+613
+02:04:10,671 --> 02:04:11,791
+Kendisi dahil yukarısı.
+
+614
+02:04:12,911 --> 02:04:13,191
+Kolay.
+
+615
+02:04:14,031 --> 02:04:20,471
+Evet, şimdi bir seviye eğrisi nedir?
+
+616
+02:04:20,571 --> 02:04:22,771
+Tanımı var, tanımı vereceğiz.
+
+617
+02:04:23,667 --> 02:04:46,147
+Seviye eğrisi, nedir onu söyleyelim. Bir fx'e fonksiyonunun, yani fx'e eşit c yapıyoruz. Bu elde ettiğimiz eğriye seviye eğrisi diyoruz. Okuyalım tanım yine. Bir fx'e fonksiyonunun, bir fx'e eşit c sabit değerine sabit olduğu noktalar kümesi, f'nin seviye eğrisi olarak adlandırılır.
+
+618
+02:04:47,347 --> 02:04:56,847
+F'nin tanım kümesindeki X'ye için uzaydaki bütün X'ye, F'x'ye noktalar kümesi F'nin grafiğidir. F'nin grafiğine Z eşit F'x'ye yüzeyidir. Demiştim ben size Z eşit F'x'ye.
+
+619
+02:04:58,287 --> 02:05:01,688
+Pardon, nereye geçtik hemen? Birden çok hızlı.
+
+620
+02:05:09,876 --> 02:05:32,496
+Evet, seviye eğrisi bir daha özetle ben size uzatmayalım lafı. Evet, fx'ye, fx'ye verildiği zaman, fx'ye'yi bir, c'ye'yi esitlerseniz bu ne oluyormuş adı? Seviye eğrisi.
+
+621
+02:05:37,811 --> 02:05:43,871
+Z eşit efiksiye de ne gösterir? Unutmayı. Bu da yüzey gösterir.
+
+622
+02:05:45,231 --> 02:05:45,572
+Dedik.
+
+623
+02:05:46,831 --> 02:05:48,251
+Şimdi örnek vereceğiz zaten.
+
+624
+02:05:51,051 --> 02:05:53,331
+Vermemiz lazım. İllaki bir örnek.
+
+625
+02:05:53,891 --> 02:05:54,931
+Ya da yazarız bir tane.
+
+626
+02:05:56,152 --> 02:05:57,572
+Şimdi bir dakika.
+
+627
+02:05:58,100 --> 02:06:04,900
+Şimdi bakın, burada biraz bu notta, bu kısmı çok dikkate almanızı istemiyorum.
+
+628
+02:06:05,060 --> 02:06:13,040
+Çünkü burada, biz bir şekilde nasıl olmuş bilmiyorum ama, notu bir başka arkadaşımız hazırladı.
+
+629
+02:06:13,880 --> 02:06:17,080
+Şu üstteki Y, X, Y, Z'yi biz genelde şey yapıyorduk ya.
+
+630
+02:06:22,484 --> 02:06:31,764
+Z'yi üstte alıyoruz ya, burada Y'ler üstte. Bir şey değişmiyor ama biz genelde hep Z'yi üstte aldığımız için ben size burayı dikkate almamanızı isteyeceğim sizden.
+
+631
+02:06:33,224 --> 02:06:41,024
+Hocam neyi dikkate alacağız diyeceksiniz. Ben şimdi sizle bir şey daha paylaşacağım. O temel eğrileri tanımanız açısından.
+
+632
+02:06:42,100 --> 02:07:07,520
+Bu sayfa yerine ben size bir paylaşım yapacağım. Unutturmayın. [öğrenci], [öğrenci], yani diğer öğrencilerim. Unutturmayın. Önümüzdeki ders, hocam şu erilerin listesini paylaşacaktınız dersiniz bana. Ya da şimdi mi paylaşsam acaba? Neyse önümüzdeki ders paylaşırız, paylaşalım. Biraz daha anlatayım şimdi. Ondan sonra bu listeyi paylaşacağım. Şu eri, şey, yüzeyler listesi. Kuvvetler etik yüzey diyoruz bunlara.
+
+633
+02:07:07,920 --> 02:07:15,420
+Yüzey listesini paylaşacağım. Ama bu sayfayı dikkate almayın, onu söylüyorum. Sonra bununla ilgili bir, tek bir sayfa paylaşacağım size.
+
+634
+02:07:19,475 --> 02:07:26,336
+Şimdi, peki, o zaman, bunu bu sayfayı dikkate almıyoruz dedim.
+
+635
+02:07:26,336 --> 02:07:31,456
+Evet, şöyle.
+
+636
+02:07:35,699 --> 02:07:52,699
+Evet, seviye eğrisini bu sayfaya yerine belki birazdan paylaşırız dersi bitirmeden olmadı. Ama onun üzerinde biraz konuşmamız da lazım. Neyse, bir tane şu seviye eğrisi ve kontrol eğrisini bitirelim. O eğriler, yüzeyler üzerinde biraz konuşuruz olmazsa.
+
+637
+02:07:52,699 --> 02:08:02,840
+Şimdi seviye eğrisine örnek verelim. fx'i eşit, yüz eksi, x kare, y kare var. Hocam diyeceksiniz, şimdi bu niye böyle?
+
+638
+02:08:04,595 --> 02:08:22,095
+paylaşmamız gerekiyor. O paylaşımı şimdi yapmamız gerekiyor. Bir dakika. Paylaşımı durduralım bir kere. Yeni paylaşım için bakalım şurada.
+
+639
+02:08:42,771 --> 02:08:44,751
+Tirelim bir dakika.
+
+640
+02:09:01,268 --> 02:09:07,167
+Hocam, paylaşmışken bu az önceki dersin de PDF'ini paylaşabilir misiniz?
+
+641
+02:09:07,667 --> 02:09:12,007
+Ha, bir dakika tamam, onu da paylaşırım, tamam canım. Bir dakika dur, paylaşmadık ya.
+
+642
+02:09:13,568 --> 02:09:19,307
+Şu kuadratik yüzey, bir dakika, şunu bir kaydedelim.
+
+643
+02:09:23,028 --> 02:09:24,028
+Evet.
+
+644
+02:09:31,188 --> 02:09:35,188
+Tamam.
+
+645
+02:09:47,475 --> 02:09:57,315
+Neyi paylaştık? Dur bakalım. Yanlış şey. Şunu önce şunu bir paylaşayım. Sohbete atayım şunu. Tamam mı?
+
+646
+02:10:01,235 --> 02:10:08,015
+Biterlim hocam diyor [öğrenci]. Yorulduk mu [öğrenci]? Pardon ne oldu ya?
+
+647
+02:10:14,355 --> 02:10:15,275
+Evet, sıkı mı?
+
+648
+02:11:06,100 --> 02:11:10,180
+Geldi mi? Bir bakın bakalım. Bugünkü ders çok değişkenli fonksiyonlar.
+
+649
+02:11:19,315 --> 02:11:20,336
+Geldi hocam.
+
+650
+02:11:20,855 --> 02:11:27,895
+Tamam. Şimdi, kuatratik yüzeyler, tek bir sayfa olarak gelecek.
+
+651
+02:11:33,844 --> 02:11:36,184
+O da geldi hocam.
+
+652
+02:11:36,184 --> 02:11:38,184
+Tamam, şimdi...
+
+653
+02:11:47,699 --> 02:12:12,260
+Şimdi bu ben bizim kitaptan aldım. Hangi kitap? Kalkulus, Thomas Kalkulus. Tamam mı? Oradan fotoğrafını çektim. İşte neyse, PDF yaptık. Bunu bilmeniz gerekiyor. Bu daha iyi bizim için. Çünkü biz Z'yi üste alıyoruz. Buna göre çalışacağız hep. Şimdi buradaki yüzeyleri tanımanız gerekiyor. Temel yüzeyler bunlar.
+
+654
+02:12:14,579 --> 02:12:21,020
+Bir saniye, baktığınızda, şu yüzeyleri bitirelim en azından.
+
+655
+02:12:22,020 --> 02:12:30,119
+Şimdi şu elipsoid, bakın, şu elipsoid denklemi deyince şunu bileceksiniz.
+
+656
+02:12:32,239 --> 02:12:35,520
+Yani beyzbol topu diyebilirsiniz değil mi? Beyzbol, yumurta gibi.
+
+657
+02:12:36,520 --> 02:12:37,619
+Beyzbol topu, yumurta.
+
+658
+02:12:38,131 --> 02:12:51,192
+şeklinde. Böyle bir denkleme biz elipsoit diyoruz. Bu denklemi görünce elipsoit, elipsoit görünce bu denklemi yazabilmek önemli. Tamam mı? Elipsoit diye böyle bir denklem. Nasıl şekil? Şuradaki işte maviyle olan şekil.
+
+659
+02:12:52,452 --> 02:13:05,192
+Şimdi hocam bu elipsler falan var burada ne demek diyeceksiniz. Mesela şurada elipsoiti hani biraz daha açmak istersek.
+
+660
+02:13:06,131 --> 02:13:28,551
+Şöyle diyebiliriz. Şimdi, diyelim ki z'yi sıfır alırsanız, o zaman x'ye düzlemini elde edersiniz. Yani şu taban düzlemini elde edersiniz. Z sıfır olunca bu denklem, x kare bölü a kare artı y kare bölü b kare eşit bir olur. Bu da şu elips olur.
+
+661
+02:13:30,551 --> 02:13:31,147
+Şurada...
+
+662
+02:13:31,188 --> 02:13:39,028
+X'i artı eksi A'da kesecek.
+
+663
+02:13:39,668 --> 02:13:43,448
+Yani şurası A, şöyle nokta nokta devam ettim, şurası eksi A.
+
+664
+02:13:44,408 --> 02:13:46,088
+Şöyle şöyle nokta nokta devam ettim.
+
+665
+02:13:46,268 --> 02:13:50,248
+Y'yi de artı eksi B'de kesen elips.
+
+666
+02:13:50,428 --> 02:13:50,908
+Bu elips.
+
+667
+02:13:50,908 --> 02:13:54,908
+Yani aslında bu elipsleri birleştirerek şu elipsoy da oluşturuyoruz.
+
+668
+02:13:55,008 --> 02:13:55,228
+Tamam mı?
+
+669
+02:13:55,984 --> 02:14:16,804
+Bu z eşit sıfırdaki, yani z eşit sıfır ne demek? X'ye düzlemi demek. X'ye düzlemi de bu. Peki z'yi, y'yi sıfır alsanız, y'yi sıfır alırsanız, o zaman da x'ye düzlemi demekti bu.
+
+670
+02:14:23,376 --> 02:14:50,916
+Z kare bölü, C kare eşittir, bir elips olur. O da, ne olur bakın, X'i yine artı eksi A'da, yani şurada kesecek, Z'yi de artı eksi C'de kesecek. Yani şöyle, şöyle bir elips olacak. Z'yi şurada C'de, nokta nokta nokta nokta, şöyle ineceksiniz, şurada eksi C'de kesecek. Bu elips olacak, tamam mı? Bu hangi elips?
+
+671
+02:14:51,604 --> 02:15:10,404
+x kare bir şu, şu elips, şu elips tamam mı? Üçüncü bir elips daha var, o da ne için sıfır? x sıfır. x sıfırsa o zaman y kare bölü b kare artı z kare bölü c kare eşit bir olacak.
+
+672
+02:15:10,404 --> 02:15:15,124
+Bu da y'yi artı eksi b'de kesecek, şunlardan geçecek.
+
+673
+02:15:16,627 --> 02:15:33,847
+Z'yi de artı eksi C'de gezecek. Yani şöyle olacak o da. Tamam mı? Bunları birleştirince şu oluyor işte. Yani şu beyzbol topu veya yumurta değil, o oluyor. Yani elbisayet oluyor. Tamam mı? Burada izah ettiği o. Şurada. Tamam mı?
+
+674
+02:15:34,260 --> 02:15:57,579
+Demek ki elipsoidi tanıyacağız. Elipsoid bu. Çok mu? Birinci derecede bu mu çok çıkıyor sorularda? Değil. Ama bunu bilmek gerekiyor. Elipsoidden ziyade şu paraboloid daha çok çıkıyor karşımıza. Küre çıkabiliyor karşımıza. Küre ve paraboloid arkasından küre daha çok sorularda karşımıza çıkabiliyor.
+
+675
+02:16:01,716 --> 02:16:11,615
+O da şu. Şekil olarak da bu. Hocam bu da nasıl? Burada şunlar da ne yapmışlar diyeceksiniz belki. O da şöyle mesela.
+
+676
+02:16:13,195 --> 02:16:27,476
+Şimdi şöyle bu şu eğriler nereden oluşuyor? Mesela Z eşit C yazsanız burada. İşte şu Z eşit C. Z eşit C şu demek.
+
+677
+02:16:28,756 --> 02:16:30,296
+Z eşit C.
+
+678
+02:16:33,115 --> 02:16:36,835
+Z eşit C şöyle bir düzlem ya, C'de kesen.
+
+679
+02:16:37,536 --> 02:16:40,115
+Z eşit C düzlemi, C'de kesen bir düzlem.
+
+680
+02:16:40,736 --> 02:16:41,015
+Şimdi,
+
+681
+02:16:41,956 --> 02:16:46,256
+Z eşit C'de bunun denklemi ne olur?
+
+682
+02:16:46,716 --> 02:16:53,896
+X kare bölü A kare, artı Y kare bölü B kare eşit, Z, C ise C bölü C'den 1 olur.
+
+683
+02:16:54,324 --> 02:17:08,224
+Yani z eşit ç'de böyle bir elips oluyor. Onu söylüyoruz yani. Bu böyle bir elips. Şurada bir elips var. Bu elips. Yukarıdaki şu kısım oradan geliyor. Şurada z eşit ç var. Yukarıdaki bu.
+
+684
+02:17:22,420 --> 02:17:28,420
+x kare olur. Böyle bir parabol oluşur. Yani şu oluşuyor.
+
+685
+02:17:30,420 --> 02:17:34,860
+z eşit c, şöyle bir parabol.
+
+686
+02:17:39,092 --> 02:17:41,432
+Şu parabol, değil mi? Şu şekilde.
+
+687
+02:17:42,672 --> 02:17:49,412
+Şöyle bir parabol oluyor. Onun denklemi z eşit c bölü a kare x kare. Böyle bir parabol oluyor.
+
+688
+02:17:49,412 --> 02:18:03,092
+Bir de aynı şekilde x sıfır olursa, o zaman z eşit x sıfır olursa, c bölü b kare y kare parabol oluyor.
+
+689
+02:18:04,352 --> 02:18:05,692
+O da şuradaki.
+
+690
+02:18:07,540 --> 02:18:10,659
+Şöyle bir parabol, onları birleştirince bu şekil oluşuyor.
+
+691
+02:18:12,200 --> 02:18:28,640
+Şey çok kullanılıyor özellikle, şu ABC'nin 1 olduğu durumda, ABC bir iken, bu Z eşittir, X kare artı Y kare parabol, şey, parabol diyor, parabol diyor, parabol o idi olur.
+
+692
+02:18:29,060 --> 02:18:34,640
+Bu çok kullanılır, kabaca onu çizmeyi bilmek önemli, yani şöyle, şöyle bir.
+
+693
+02:18:34,963 --> 02:18:58,203
+şekil olduğunu bilmek önemli. Bu şekilde karşımıza çok çıkıyor. Z eşit x kare artı y kare bir paraboloittir. O da şöyle bir yüzeydir. Yani içi dolu değil tabii bunun. Böyle bir yüzey. Evet, bu şurada z eşit c. Bu şekilde eliptik paraboloidi de tanımlamak gerekiyor.
+
+694
+02:18:58,783 --> 02:19:02,243
+Koni çok çıkmama vakla birlikte koni de eklemiş şu.
+
+695
+02:19:04,115 --> 02:19:05,115
+Eliptik koni.
+
+696
+02:19:06,256 --> 02:19:09,976
+Eliptik kanatlı hiperboleit var burada.
+
+697
+02:19:10,756 --> 02:19:12,355
+Kanatlı hiperboleit.
+
+698
+02:19:12,796 --> 02:19:17,216
+O da fazla, çok ve hiperboleit pek birinci derecede kullanılmıyor.
+
+699
+02:19:18,436 --> 02:19:18,636
+Evet.
+
+700
+02:19:21,995 --> 02:19:23,136
+Hiperboleit.
+
+701
+02:19:24,084 --> 02:19:31,924
+Denklem olarak bilmek lazım, bilmeniz gerekiyor bu denklem olarak bilmek lazım ama çok çıkıyor mu çıkmıyor pek hiperboloid sormuyoruz.
+
+702
+02:19:34,144 --> 02:19:34,984
+Fazla.
+
+703
+02:19:37,384 --> 02:19:42,324
+Şu kanatlı hiperboloid deyince şu.
+
+704
+02:19:43,864 --> 02:19:45,164
+Evet, böyle olabilir.
+
+705
+02:19:47,504 --> 02:19:48,604
+Evet, bu şekilde.
+
+706
+02:19:52,659 --> 02:19:53,340
+Şurada
+
+707
+02:20:04,115 --> 02:20:04,675
+Evet.
+
+708
+02:20:09,956 --> 02:20:11,576
+Hiperbolik paraboloid.
+
+709
+02:20:12,995 --> 02:20:14,515
+Şimdi bu iki kanatlısı.
+
+710
+02:20:15,155 --> 02:20:17,755
+Şunun bir dakika, şu eliptik konunun bir de iki kanatlısı var.
+
+711
+02:20:19,796 --> 02:20:21,456
+Onu da söyleyelim bu arada şu.
+
+712
+02:20:22,515 --> 02:20:23,576
+Denklemi de bu şekilde.
+
+713
+02:20:29,576 --> 02:20:30,456
+Şurada.
+
+714
+02:20:34,131 --> 02:20:40,171
+X kare bölü A kare, kanatlı hiperboloid dedik, o şurada şekli.
+
+715
+02:20:44,652 --> 02:20:49,791
+Hiperbolik paraboloid, o da grafiği bu biçimde.
+
+716
+02:20:51,171 --> 02:21:01,592
+Şurada tabii elipsler var, bakın şurada mesela, X kare bölü A kare, artı Y kare bölü B kare, eşittir bir Z sıfır olsa, şurada.
+
+717
+02:21:02,835 --> 02:21:22,835
+Z sıfır olsa, x kare bölü a kare, artı y kare bölü b kare eşit bir elips olur. O elips şuradaki bak. Şu elips. Z sıfır ne demekti zaten? X'ye düzleme demekti. O. Sonra, şuradaki...
+
+718
+02:21:28,244 --> 02:21:55,144
+Z eşit C olduğu zaman ne olur? Plan gibi bir takım. Z eşit C'deki durumu nedir bunu? Onu da görelim mesela. Z eşit C olsa, o zaman x kare bölü a kare, artı y kare bölü b kare, z yine C yazarsa, c kare bölü c kare bir, iki. İki. Değil mi? Şuradaki. Şöyle bir, şu üstteki elips oluşuyor.
+
+719
+02:21:55,860 --> 02:22:11,900
+Aynı şekilde onun bir de aşağıda var. Z eşit eksi c düzleminde de, z eşit eksi c de olsa öyle ola. Z eşit eksi c de de, yani şu alttaki de, yine z eşit eksi c için yine aynı elipsi çizeceğiz.
+
+720
+02:22:13,120 --> 02:22:20,299
+Şurada da, şunları da düşünelim.
+
+721
+02:22:23,412 --> 02:22:24,792
+Y sıfır olsa
+
+722
+02:22:31,860 --> 02:22:32,280
+diyelim.
+
+723
+02:22:35,180 --> 02:22:45,100
+x0 olsa mesela, x0 olsa, önce onunla başlayalım. x0 olsa bu ne olur? y kare bölü b kare eksi z kare bölü c kare eşit bir hiperbol olur.
+
+724
+02:22:46,780 --> 02:22:54,720
+Bol olur. Yani y'yi artı eksi b'de kesen, y'yi artı eksi b'de kesen,
+
+725
+02:22:57,907 --> 02:23:22,807
+Z'yi de artı eksi C'de kesen, değil mi? Şöyleydi. Y'yi artı eksi B'de kesiyor. Şöyle diyelim. Y'yi artı eksi B'de kesecek.
+
+726
+02:23:23,667 --> 02:23:26,067
+Z'de artı eksi C'ye de kesecek değil mi?
+
+727
+02:23:31,092 --> 02:23:31,652
+Şöyle
+
+728
+02:23:40,115 --> 02:24:04,435
+y'ye attık mı? Evet, böyle bir hiperbol değil mi? Sonra aynı şekilde y eşit sıfırsa, o zaman da x kare bölü a kare eksi, z kare bölü c kare eşittir, bir hiperbol olacak.
+
+729
+02:24:08,180 --> 02:24:14,360
+Tabii şöyle, x'i artı eksi a'da, z'yi de artı eksi c'de kesecek.
+
+730
+02:24:16,799 --> 02:24:17,040
+Evet.
+
+731
+02:24:20,560 --> 02:24:22,600
+A, yani şöyle olacak.
+
+732
+02:24:25,000 --> 02:24:28,260
+Şu arkadaki aslında şöyle yapılmış galiba, şu şekilde.
+
+733
+02:24:29,739 --> 02:24:30,720
+Şöyle yapılmış.
+
+734
+02:24:31,252 --> 02:24:36,652
+Yani bu hiperboller ve elipslerin birleşiminden bu şekil elde ediliyor, onu demeye çalışıyorum.
+
+735
+02:24:37,292 --> 02:24:44,172
+Ama siz kaba olarak, yani şu denklemi gördüğünüzde, kanatlı hiperboloid deyince, ya şekil budur demeniz lazım.
+
+736
+02:24:45,252 --> 02:24:47,932
+Eliptik konu deyince, şekil budur dememiz lazım.
+
+737
+02:24:50,632 --> 02:24:54,551
+İşte hiperbolik paraboloid deyince, şekil ve denklem bu.
+
+738
+02:24:56,020 --> 02:25:01,960
+İki kanatlı deyince bu. Genelde bunlar çok çıkmıyor ama, işte bu tabloyu da bir vermemiz lazım.
+
+739
+02:25:02,200 --> 02:25:14,080
+Yani zaten göreceksiniz fazla bunlarla ilgili değil de, genelde paraboloid, elipsoid ve küre ağırlıklı.
+
+740
+02:25:14,080 --> 02:25:21,479
+Küre de tabii genel olarak, küre denklemini bir ara değineceğiz yine ama, nedir? X kare, X eksi, A'nın karesi.
+
+741
+02:25:21,523 --> 02:25:29,963
+Artı y eksi b kare, artı z eksi c'nin karesi eşit, b kare şeklinde, bu da negent denklemi, küre denklemi.
+
+742
+02:25:30,644 --> 02:25:36,243
+Bu şekilde verilebilir ama bunu burada vurgulamadık ama vurgulayacağız onu, bir yerde geçiyor olacak.
+
+743
+02:25:36,603 --> 02:25:39,504
+Geçmesi lazım, geçmemildiyse denklem bu şekilde yine.
+
+744
+02:25:41,783 --> 02:25:46,263
+Evet, merkezi işte abc, yarı çapı re olan küre böyle olur.
+
+745
+02:25:47,572 --> 02:26:05,112
+Evet, bu tablo elinizde bulunsun. Hani soru çözerken falan, tablo elinizde bir çıktı olarak alırsanız daha iyi olur. Çalışırken elinizin altında bulunmasında fayda olabilir diye düşünüyorum. Evet, bu böyle. Şimdi o soruya gelelim.
+
+746
+02:26:07,252 --> 02:26:08,211
+Vaktimiz nasıl?
+
+747
+02:26:10,332 --> 02:26:11,092
+Evet.
+
+748
+02:26:13,108 --> 02:26:38,407
+Paylaşımı durduralım. Bir paylaşım daha açalım. Evet. Çok değişkenli fonksiyonlar. Şimdi ikinci sayfada şurada. Bunu iptal ettik. Şu. Seviye eris denklemi veriyorduk. Hocam diyeceksiniz ki bu denklem, bana onu soracaktınız. Onun için buraya geçtim. Şimdi z eşit.
+
+749
+02:26:40,531 --> 02:26:46,111
+z eşit, x kare artı y kare neydi? Şöyle bir
+
+750
+02:26:49,683 --> 02:26:51,883
+Paraboloid bu.
+
+751
+02:26:53,163 --> 02:26:57,263
+Yani z eşit, z eşit x kar artı yukarı böyle bir paraboloid.
+
+752
+02:26:59,304 --> 02:27:01,963
+Şu z eşit c de şu üstteki
+
+753
+02:27:06,963 --> 02:27:16,304
+Z eşit, şurası sıfır için c. Yani nasıl oluşuyor? Z eşit y'ye sıfır veriyorsunuz, z eşit x kareyi çiziyorsunuz.
+
+754
+02:27:16,883 --> 02:27:26,123
+X'e sıfır veriyorsunuz, z eşit x kare parabolu. Y'ye sıfır veriyorsunuz, z eşit y kare.
+
+755
+02:27:33,620 --> 02:27:56,960
+Z eşit 1'de de x kare artı, hatta şunu şöyle diyelim bir dakika, şu 1, şey değil de 1 diyelim. Z eşit 1'de, z eşit 1'de ne olur? x kare artı y kare eşit 1. Şuraya 1 yazsam, 1 yazsam, z eşit 1 düzlemindeki denklemi x kare artı y kare eşit 1 olur.
+
+756
+02:28:01,236 --> 02:28:06,976
+Z eşit y kare paraboli, z eşit x kare, onları birleştirdik, böyle bir şekil elde ediyoruz.
+
+757
+02:28:08,396 --> 02:28:13,835
+Bir de x kare artı y kare eşit biri çizdik, z eşit bir düzleminde, böyle bir paraboli.
+
+758
+02:28:13,835 --> 02:28:28,056
+Şimdi bu böyle, şimdi bunu bu tarafa doğru çizerseniz, yani negatif z'ye göre, z'nin negatif tarafına göre yansıtırsanız bunu, o zaman bu şöyle olur, z eşit eksi x kare, eksi y kare olur.
+
+759
+02:28:29,236 --> 02:28:42,776
+Bu verilen denkleme bakın, 100 eksi, x kare, eksi, y kare. Yani 100 birim aşağıya atılmış. Dolayısıyla, 100 birim aşağı mı, yukarı mı? Yukarı çünkü artı 100, 100 eklenmiş yani. O zaman bu denklem nasıl olacak normalde?
+
+760
+02:28:42,776 --> 02:28:50,636
+Şimdi, şöyle olmasına rağmen.
+
+761
+02:28:52,340 --> 02:29:04,880
+z eşit, eksi x kare, eksi y kare, 101'i yukarı atarsak böyle olur. Şurası yüzde kesecek. Böyle bir paraboloid olur. Bu oradan geliyor.
+
+762
+02:29:06,040 --> 02:29:17,959
+Evet, paraboloid denklemini bilmekten, bilmek gerekiyor. Evet, bir daha söylüyorum. Şöyle nokta nokta, şurası z. Z eşit.
+
+763
+02:29:19,796 --> 02:29:28,416
+eksi x kare, eksi y kare, 100 birimli kare atarsak böyle olur.
+
+764
+02:29:29,556 --> 02:29:36,256
+Şurası 100 olmak kaşılıyla, şurası 100, z eşit, 100 eksi, x kare, eksi y kare olur.
+
+765
+02:29:37,596 --> 02:29:45,975
+Paraboloid denklemini unutmayalım. Z bölü c eşittir, x kare bölü a kare, artı y kare bölü b kare, bu paraboloid idi.
+
+766
+02:29:48,468 --> 02:30:15,948
+Eğer bu ABC'yi bir alırsanız, X kare artı Y kare olur. Nerede ne yaptık? ABC'yi bir aldık. Bir alınca bu en basit hali bu oluyor. Tamam mı? Peki, işte diyoruz ki biz seviye eğrisini, birkaç tane seviye eğrisini bulalım. Sıfır eşit diyelim bunu. Yüz eksi, X kare eksi, Y kare eşit, sıfır dersek, X kare artı Y kare eşittir. Onun karesi çember olur.
+
+767
+02:30:16,724 --> 02:30:17,524
+Şu çember.
+
+768
+02:30:19,304 --> 02:30:26,904
+Yüze eksi, x kare eksi, y kare eşittir, 51 olursa, x kare artı, y kare eşittir, 49 olur.
+
+769
+02:30:27,184 --> 02:30:30,064
+Yani yarı çapı 7 olan çember bu.
+
+770
+02:30:31,204 --> 02:30:34,304
+Yüze eksi, x kare eksi, y kare eşittir, kaç?
+
+771
+02:30:34,824 --> 02:30:40,443
+75 olursa, x kare artı, y kare eşit, 5'in karesi, yani şu içerideki çember olur.
+
+772
+02:30:40,524 --> 02:30:42,064
+Seviyelileri birer çember olur.
+
+773
+02:30:42,744 --> 02:30:43,544
+Onu söylüyoruz.
+
+774
+02:30:44,500 --> 02:31:10,139
+Son olarak da kontür eğrisinden bahsedelim. Çok kullanmıyoruz kontür eğrisini ama tanım olarak vermiş kitap. Kontür eğrisi de uzayda Z eşit C düzleminin bir Z eşit FXE yüzeyini kestiği eğri, FXE eşit C diyelim temsil eden noktalardan oluşur. Buna FXE eşit C kontür eğrisi. Yani Z eşit C diye eşit derseniz, o zaman bir kontür eğrisi oluyor.
+
+775
+02:31:11,827 --> 02:31:32,007
+Z eşit C'deki karşılığını bulursanız o demek. Mesela örnek olarak, şu eğrinin fx'e eşit 75 bir kontrol eğrisi. Yani z eşit 75 ile kesiştirirseniz bunu, z eşit 75, z eşit 75 ile çizerseniz,
+
+776
+02:31:32,691 --> 02:31:40,171
+Bunu, ne olur o zaman? Zaten 75'e eşitleyince ne olacak bu tabii? 100 eksi x kare, eksi y kare ama z eşit c'de çiziyoruz. O önemli.
+
+777
+02:31:40,991 --> 02:31:54,151
+Z eşit 75'te çiziyoruz. Eşittir 75. x kare artı y kare eşit, 5'in karesi olur. Orada bir çember olur ama o çember nerede? Z eşit c'de. Tamam mı? Z eşit c'de çizerseniz.
+
+778
+02:31:54,579 --> 02:32:15,220
+O zaman Z eşit C'de bulduğunuz eğriye kontür eğrisi diyoruz. Z eşit C düzlemindeki bulduğumuz eğriye biz ne diyoruz? Kontür eğrisi diyoruz.
+
+779
+02:32:18,579 --> 02:32:29,560
+Yüze ile Z eşit C düzleminin kesişimi olan eğri. Bir başka deyişle, Z eşit Fx'ye yüze ile Z eşit C düzleminin kesişimi olan eğri.
+
+780
+02:32:32,299 --> 02:32:43,100
+Eğri, öyle diyelim. Bu şekilde. Şimdi limit ve sürekliliğe geçmeyeceğim. Gelecek ders geçeceğim. Bunu da paylaşmıştım sizinle zaten. Notları paylaşmış oldum.
+
+781
+02:32:43,567 --> 02:32:49,587
+Önümüzdeki ders, yani yarın, limit ve sürekliliğe başlayacağım.
+
+782
+02:32:50,768 --> 02:32:55,108
+Evet, sormak istediğiniz, takıldığınız, tekrar etmemi istediğiniz bir yer var mı?
+
+783
+02:33:05,876 --> 02:33:08,275
+Evet, alttan yazabilirsiniz. Mesaj kısmından.
+
+784
+02:33:25,363 --> 02:33:40,783
+Rica ederim [öğrenci]. Evet, o zaman önümüzdeki ders görüşmek dileğiyle, hepiniz size iyi günler diliyorum. Kendinize iyi bakın, sağlıkla kalın. Yani yarın görüşürüz. Yarın saat 1'de dersimiz yine. İyi günler, evet.
+
+785
+02:33:42,123 --> 02:33:42,943
+Görüşürüz hocam.
+
+786
+02:33:47,824 --> 02:33:48,423
+Kapatıyorum.

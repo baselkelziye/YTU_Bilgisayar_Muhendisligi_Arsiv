@@ -1,0 +1,1847 @@
+1
+00:14:01,587 --> 00:14:02,567
+Herkese merhaba.
+
+2
+00:14:18,580 --> 00:14:33,639
+Evet, dün kutupsal koordinatları bitirmiştik, değil mi? Kutupsal koordinatları işledik dün. Parametrik denklem ve kutupsal koordinatlarla ilgili bugün soru çözecektik.
+
+3
+00:14:42,803 --> 00:14:47,644
+Şimdi, kaç kişiyiz? 27 kişi görünüyor. Evet.
+
+4
+00:14:49,483 --> 00:14:57,864
+Başlayalım. Şimdi, x eşit 4 sinüs teta, y eşittir 2 kosünüs teta 50 sinüsinin, t eşit pi bölü 4'deki t etinin denklemini bulun.
+
+5
+00:14:59,524 --> 00:15:04,864
+Şimdi t et denkleminin, bir kere önce t et denklemini yazmak lazım. Onu bir hatırlamamız lazım.
+
+6
+00:15:07,539 --> 00:15:18,599
+t-t denklem için şuydu formülümüz, x0, y0 noktasındaki bir fonksiyonun t-t'nin denklemi y-y0 eşit m çarpı x-x0 biçimindeydi.
+
+7
+00:15:19,299 --> 00:15:25,139
+Burada ms türevdi, yani x0 noktasındaki türev idi hatırlarsanız.
+
+8
+00:15:27,283 --> 00:15:37,963
+Formülümüz buydu. O halde türevi bulmamız lazım. Burada tabii parametrik türevi söz konusu. Yani dy bölü dx dediğimiz, dy bölü dt, dx bölü dt şeklinde buluyorduk. Geçen ders vermiştik.
+
+9
+00:15:39,764 --> 00:15:54,823
+Y üstü bu şekilde tanımlıydı. Noktamızı bir de bulacağız. tp bölü 4 için acaba bizim x sıfırımız ve y sıfırımız nedir? tp bölü 4 için 4 sinüs p bölü 4.
+
+10
+00:15:55,283 --> 00:16:04,483
+x0'ımız eşittir 4 sinüs pi bölü 4'ten, yani 4 çarpı kök 2 bölü 2'den, 2 kök 2 değil mi?
+
+11
+00:16:04,943 --> 00:16:13,343
+y0'ımız da 2 kosinüs pi bölü 4'ten, 2 kök 2 bölü 2'den, kök 2 olur. Yani şu noktaları böyle bulduk.
+
+12
+00:16:15,203 --> 00:16:19,343
+Şimdi o zaman ne gerekiyor? Burada y0 yerine...
+
+13
+00:16:19,635 --> 00:16:33,495
+2 kök 2 yazacağız. Bu güzel. Şurada x0 yerine 2 kök 2 yazacağız. Geriye ne kaldı? Şurada denklemimizde açık olan f üstü. f üstü yuvmamız lazım.
+
+14
+00:16:34,775 --> 00:16:42,515
+pi bölü 4'teki değerini bulacağız tabii onun. f üstü x0 derken, genel kartezyen koordinatlarda denklem böyleydi.
+
+15
+00:16:46,355 --> 00:16:53,635
+Y'nin X'e göre türevi, Y'nin T'ye, X'in de T'ye göre türevi olduğunu biliyoruz. Parametrik türevi böyle yapılıyordu, bulunuyordu.
+
+16
+00:16:54,255 --> 00:17:01,135
+4 sinüsün, şey, önce Y'nin türevi, 2 kosünüsün türevi, eksi 2 sinüs, güzel, öyle yazdık.
+
+17
+00:17:01,956 --> 00:17:08,195
+4 sinüsün türevi de 4 kosünüs. Bu da eksi 1 bölü 2 tanjant.
+
+18
+00:17:09,523 --> 00:17:19,263
+pi bölü 4 demektir. Tanjant 45 1 olduğu için cevabımız nedir? Eksi 1 bölü 2 oluyor. Demek ki şuraya ne yazacağız? Eksi 1 bölü 2 yazacağız. Bu kadar.
+
+19
+00:17:20,083 --> 00:17:27,363
+y eksi kök 2 eşittir. Eksi 1 bölü 2 çarpı. x eksi 2 kök 2 diye türevi kolayca bulacağız.
+
+20
+00:17:28,563 --> 00:17:31,843
+T doğrusu denklemini kolayca bulmuş olabilirsin.
+
+21
+00:17:32,500 --> 00:17:47,819
+Burada sorudaki tek yeni bilgi, eski matematik bir bilgisinin ötesinde parametrik türev. Parametrik türevde eğim nasıl bulunur? O, başka bir şey yok soruda.
+
+22
+00:17:54,163 --> 00:18:09,683
+Evet, ikinci soru. Bu biraz tabi farklı. X eşit XT, Y eşit yani X ve Y, T'nin fonksiyonu. Evet, bu ne demek? X, XT, Y, YT demek. X ve Y, T'nin fonksiyonları. Evet.
+
+23
+00:18:10,963 --> 00:18:22,003
+Şimdi şöyle bir denklem verilmiş. T kare sin x artı x küp evzeri t, y eşit t sin t eksi 2 t. Parametrik denklemleri verilen eğilir t eşit sıfırdaki t doğrusunun denklemi.
+
+24
+00:18:22,543 --> 00:18:34,324
+t eşit sıfırdaki t doğrusunun denklemi. Şimdi t doğrusunun denklemi yine biraz önce bulduğumuz üzere y eksi y sıfır eşit m çarpı x eksi x sıfır diye yazabiliriz.
+
+25
+00:18:34,996 --> 00:18:42,876
+y eksi, y sıfırımız nasıl bulacağız? Sıfır yazarsak şurada, t yerine sıfır yazdığımız zaman x'i buluruz.
+
+26
+00:18:42,876 --> 00:18:57,976
+t yerine sıfır yazarsak, sıfır sin x, değil mi? Gitti. Artı x küp eşittir. Nedir? e üzeri sıfır.
+
+27
+00:19:01,364 --> 00:19:16,724
+Buradan x küp 1, x eşit 1 çıktı. Evet, x eşit 1 çıktı. x'imiz 0. t yerine ikinci denklemde 0 yazarsak, y eşittir 0, sin 0, eksi 2 çarpı 0'dan 0, 1'e 0.
+
+28
+00:19:17,403 --> 00:19:19,564
+Demek ki şu y 0 dediğimiz ne oldu?
+
+29
+00:19:23,188 --> 00:19:33,908
+x0, y0 dediğimiz 1'e 0, yani y-0 eşittir, m çarpı x-1. Evet, olmuş oldu, değil mi?
+
+30
+00:19:36,588 --> 00:19:42,488
+Peki, bu şekilde oldu. Peki, neyi bulmamız lazım?
+
+31
+00:19:43,628 --> 00:19:50,327
+y üstüyü bulmak için de, d y bölü d x, o neydi? d x, d y bölü d t.
+
+32
+00:19:50,836 --> 00:19:59,016
+Böyle dx bölü dt. O halde neler gerekiyor bana? Y'nin t'ye göre türevi, x'in t'ye göre türevi gerekiyor. Bunları bulmamız lazım.
+
+33
+00:20:00,456 --> 00:20:09,456
+Şimdi, önce dx bölü dt'yi bulalım. Şu ilk tenklemi, ilk tenklemi, t'ye göre türetelim.
+
+34
+00:20:10,456 --> 00:20:17,615
+T'ye göre türetelim. Şimdi yalnız unutmayın, x, x, t'nin fonksiyonu. Bunu dikkatli alarak türevi alacağız.
+
+35
+00:20:18,195 --> 00:20:29,536
+Hani kapalı fonksiyon türevinde yaptığımız gibi, y orada x'in türeviyken, y x'e bağlı iken kapalı fonksiyon türevini nasıl alıyorsunuz o şekilde davranacağız.
+
+36
+00:20:30,255 --> 00:20:36,195
+Yani şurada çarpımın türevi var. Evet, her iki tarafın kime göre türevi? T'ye göre türevini alıyoruz.
+
+37
+00:20:38,395 --> 00:20:41,615
+Bunun da t'ye göre türevini alıyoruz.
+
+38
+00:20:42,995 --> 00:20:45,215
+Şimdi t karenin türevi 2t. Tamam.
+
+39
+00:20:45,844 --> 00:20:57,044
+Bunun türevini aldık. Birincinin türevi çarpı, ikinci çarpı, sinüs. Güzel. Sonra x küpün türevini alırken, xt'nin fonksiyonu olduğu için 3x kare deyip bırakmayacağız. Evet, bir daha söylüyorum.
+
+40
+00:20:57,304 --> 00:21:07,064
+x t'nin fonksiyonu olduğu için, x küpün türevini 3x kare deyip bırakamazsınız. Çünkü xt'ye bağlı fonksiyon. Bir de ne gelecek? x'in t'ye göre türevi gelecek.
+
+41
+00:21:07,064 --> 00:21:12,804
+Evet, x küpün türevini alırken, nasıl aldık? 3x kare.
+
+42
+00:21:14,355 --> 00:21:39,455
+Pardon, şu birinci türevi bitirmedik daha değil mi? T karenin türevi 2t dedik, çarpı sinüs x, sinüs türevi, kosinus x çarpı, t karenin türevi, şey, kosinus x çarpı, bir de x t'nin fonksiyon olduğu için burada, x eşit x t olduğu için, bir de ne getirdik? dx bölü dt. Sinüs türevini şöyle aldık. Sinüs türevi kosinus ama,
+
+43
+00:21:40,276 --> 00:22:04,576
+x'in, x t'ye bağlı olduğu için bir de x'in t'ye göre türevi geldi. İkinci türevinden bu geldi. Çarpı birinci t kare. Şimdi x küpünü de aynı şekilde unutmayalım. 3x kare demeyeceğiz. 3x kare çarpı x'in t'ye göre türevi diyeceğiz. Eşittir. E üzeri t'nin t'ye göre türevi nedir? E üzeri t. Evet bir daha anlatıyorum. t karenin türevi 2t çarpı sinüs.
+
+44
+00:22:05,364 --> 00:22:17,584
+Sinüs'ün türevini alırken, x, t'nin fonksiyon olduğu için, cos x diye bırakmayacağız. Bir de içinin türevi, yani x'in türevi olarak dx bölü dt'yi getireceğiz. Sinüs x'in türevini böyle aldık, çarpı t kare.
+
+45
+00:22:18,503 --> 00:22:30,943
+t üzeri t'nin, t'ye göre türevi zaten t üzeri t. Şimdi neymiş? t0 x1 için neyi bulacağız? x'in t'ye göre türevini t eşit sıfır noktasında bulacağız.
+
+46
+00:22:32,852 --> 00:22:44,292
+Peki, t0, x1 yazdık. t0 yazınca, bir kere şurası gitti. t yerine 0 yazdık, gitti. Yine ikincisini de 0 yazdık, burası gitti.
+
+47
+00:22:46,132 --> 00:22:55,512
+3x çarpı, x yerine ne yazıyorum? 1, o zaman 3 çarpı 1, dx bölü dt eşit. Sağ tarafta e üzeri 0, e üzeri 0, 1.
+
+48
+00:22:56,019 --> 00:23:10,779
+dx bölü dt, buradan ne çıktı? 1 bölü 3. Nerede? t eşit sıfırda. Evet, yani şu y üstü, şurada bizim ne oldu? Paydamız, paydamız şurası ne çıktı? 1 bölü 3 çıktı.
+
+49
+00:23:12,059 --> 00:23:15,619
+Evet, paydamız 1 bölü 3 çıktı. Şurası 1 bölü 3 oldu. Gelelim.
+
+50
+00:23:16,211 --> 00:23:40,531
+y'nin t'ye göre türevini bulacağım. y de dikkat edin t'nin fonksiyonu. Onun için dikkat edeceğiz türevi alırken. y'nin türevi, yani d y bölü dt diye yazdık. Ama y kare olsaydı 2y çarpı d y bölü dt diyecektik. Burası y kare olsaydı 2y çarpı d y bölü dt diyecektik değil mi? Peki.
+
+51
+00:23:45,460 --> 00:24:04,660
+Peki, sağ tarafta t çarpı sinüs t'nin türevi, t'nin türevi, t'nin türevi, evet t'nin türevi, bir çarpı sinüs t, sinüs t'nin türevi, kosinüs t çarpı t, eksi 2 t'nin türevi de eksi 2.
+
+52
+00:24:05,332 --> 00:24:08,232
+O halde dy bölü dt, şurası oldu.
+
+53
+00:24:09,532 --> 00:24:10,972
+dy bölü dt, bu tamam.
+
+54
+00:24:11,552 --> 00:24:15,132
+Şimdi burada t yerine 0 yazarsak, sin 0, 0, bu 0.
+
+55
+00:24:16,572 --> 00:24:17,912
+t 0 olduğu için bu gitti.
+
+56
+00:24:18,132 --> 00:24:19,092
+Sadece kaç kaldı?
+
+57
+00:24:19,192 --> 00:24:19,632
+Eksi 2.
+
+58
+00:24:19,832 --> 00:24:21,372
+dy bölü dt de eksi 2 oldu.
+
+59
+00:24:21,592 --> 00:24:25,552
+Bunları oranlarsak, eksi 2'nin 1 bölü 3 oranı eksi 6.
+
+60
+00:24:26,112 --> 00:24:27,272
+Demek ki şuraya ne yazacağım?
+
+61
+00:24:27,612 --> 00:24:29,372
+Şu form şurada eksi 6 yazacakmış.
+
+62
+00:24:30,572 --> 00:24:31,092
+Evet.
+
+63
+00:24:33,715 --> 00:25:00,036
+eksi 6'ya yazacağız. O zaman da ne oldu? Sadece bize t doğrusu eğimini sormuştu. Eğer, pardon, denklemi sormamış. Denklemi sorsaydı biraz öncekini yapacaktık ama bizim için şu yeterli. Denklemi sorsaydı az önceki gibi y eksi, işte y sıfırımız sıfır, eşit eğimimiz eksi 6 çarpı x eksi ne diyecektik? 1 diyecektik.
+
+64
+00:25:02,259 --> 00:25:29,720
+Bu şekilde. Evet, bu tip sorulara da alışık olun. Yani, size doğrudan y eşittir, t'ye bağlı, y t biçiminde verilmez, t'ye bağlı bir ifade verilmeyebilir. Böyle veya x eşit, x t biçiminde değil, böyle bu şekilde denklem halinde verilebilir. Yani y'yi direkt t'ye bağlı, burada y'yi direkt t'ye bağlı vermiş ama, x'i direkt t'ye bağlı vermemiş. Bakın, yani bu denklemden x'i.
+
+65
+00:25:30,112 --> 00:25:36,231
+Çekemiyoruz, değil mi? Gördüğünüz üzere. Böyle de verebilir yani. Böyle verdiğinde türev almaya da hakim olmak gerekiyor.
+
+66
+00:25:38,692 --> 00:25:51,072
+Evet, yani farklı bir soru. İyi bilmemiz lazım. Peki, diğer soru. Parametrik denklemleriyle verilen eğriliği t-1 noktasındaki t-t doğrusunun denklemini bulun.
+
+67
+00:25:53,292 --> 00:25:55,872
+T-t doğrusunun denklemi soruluyor bu sefer.
+
+68
+00:25:57,652 --> 00:26:05,092
+Evet, yine bir kere t eşit eksi 1 olduğu için hemen bu noktada x ile y nedir diye bulduk.
+
+69
+00:26:05,231 --> 00:26:11,132
+x eşittir, işte eksi 1 yazarsak 2 çarpı eksi 1'in karesi artı 3'ten, bu 5.
+
+70
+00:26:13,211 --> 00:26:18,432
+Evet, y de nedir? Eksi 1 yazdığımızda, eksi 1 üzeri 4'ten, 1.
+
+71
+00:26:19,351 --> 00:26:22,351
+Evet, demek ki 5'e 1, hemen denklem neydi? y eksi y sıfır.
+
+72
+00:26:22,867 --> 00:26:30,887
+1 eşittir, m çarpı x eksi 5. Bir kere bu kadarını hemen yazdık. Geriye m kaldı, m de parametrik türevden buluyorduk.
+
+73
+00:26:30,987 --> 00:26:41,228
+dy bölü dt, dx bölü dt. y'nin t'ye göre türevi kolay, 4t küp. Bunun türevi 4t. Buradan t kare oldu. t yerine kaç yazacağız?
+
+74
+00:26:48,147 --> 00:26:52,607
+x'in karesinden 1 olmuş oldu. Demek ki eğimde 1, şunu yerine de 1 yazıyoruz, bitti.
+
+75
+00:26:56,051 --> 00:26:59,891
+Evet, bir yazdık, bitti. Bu kolay bir soruydu bu.
+
+76
+00:27:17,587 --> 00:27:19,627
+Evet, dördüncü bir.
+
+77
+00:27:28,147 --> 00:27:31,728
+Evet, dördüncü soru. Yine parametrikle ilgili bir soru.
+
+78
+00:27:34,687 --> 00:27:41,367
+Parametrizasyonu ile verilen eğrinin uzunluğunu bulun. Uzunluk formülünden yapacağız. Yani formül bilmemiz gerekiyordu bunda.
+
+79
+00:27:41,367 --> 00:27:48,107
+Bu formülümüz, t için bir aralık verilmiş bakın.
+
+80
+00:27:50,291 --> 00:27:58,411
+Eksi sıfırla pi bölü 2 arasında, formülümüz de x bölü dt'nin karesi, artı d'ye bölü dt'nin karesi, çarpı dt biçimindeydi ne?
+
+81
+00:27:59,251 --> 00:28:02,851
+Eğri uzunluğu formülü buydu, bunu bilmemiz gerekiyor, tabi bilmezsek olmaz.
+
+82
+00:28:04,011 --> 00:28:06,451
+Sonrası gerisi türev alma, parametrik türev.
+
+83
+00:28:06,951 --> 00:28:12,411
+Şimdi x'in t'ye göre türevi, kosinüsün türevi sinüs, eksisi 8'i sinüs t.
+
+84
+00:28:13,531 --> 00:28:16,011
+Burada ne var? Çarpımın türevi var şurada.
+
+85
+00:28:17,107 --> 00:28:31,007
+8 çarpı diyelim, t'ye göre türevi 1 çarpı sinüs t. Sinüs t'nin türevi kosünüs t, çarpı t olur. 8 ile çarparsak şurası olmuş olur.
+
+86
+00:28:31,967 --> 00:28:40,067
+Evet, peki bunlar gider mi? Gider. Şurada eksi vardı. Gider. 8 t kosünüs t oldu. dx bölü dt bu. Karesi lazım bana.
+
+87
+00:28:41,367 --> 00:28:43,208
+Şunun karesini almış olacağız.
+
+88
+00:28:43,859 --> 00:28:48,019
+8t, kosinus t'nin karesi, 64t kare, kosinus kare.
+
+89
+00:28:48,859 --> 00:28:55,639
+Şimdi y'nin türevini alalım. 8 sinüs t'nin türevi, 8 kosinus t.
+
+90
+00:28:57,000 --> 00:28:59,000
+Şurada çarpım var, onu da şöyle alalım.
+
+91
+00:28:59,119 --> 00:29:02,460
+Eksis 8 parantezde t'nin türevi 1, 1 çarpı kosinus t.
+
+92
+00:29:03,219 --> 00:29:07,879
+Kosinus t'nin türevi, eksis sinüs t, t çarpı, eksis sinüs t.
+
+93
+00:29:08,599 --> 00:29:10,819
+Kosinus t'nin türevi, eksis sinüs t.
+
+94
+00:29:11,443 --> 00:29:38,063
+Çarpı birinci t geldi. Dolayısıyla ne oldu? Eksi 8 kosül üst t. Şurası artı t, artı 8 t sürüs t. Burada da kısalma var mı? Şunlar gitti yine. 8 t kosül üst t'nin karesini de alırsak bu oldu. Taraf tarafa toplarsak ne çıkar bu da? 64 t kare olur. Ne olur bu? İşte dx bölü dt'nin karesi, artı dy bölü dt'nin karesi bu olur.
+
+95
+00:29:39,092 --> 00:29:54,192
+Yerine yazdığımızda, mutlak 8T diye çıkar. Ama T pozitif olduğu için, bu 8T olarak yazılır. T'nin türü, integrali, T kare bölü 2, dolayısıyla 4T olur.
+
+96
+00:29:54,532 --> 00:29:59,711
+Pi bölü 2 yazarsak, 4 çarpı, pi kare bölü 4, değil mi?
+
+97
+00:30:00,596 --> 00:30:06,316
+P bölü 2 yazar, P kare bölü. Buradan da ne olur? P kare. Zaten sıfır yazınca ne gelmez? Bir şey gelmez.
+
+98
+00:30:07,655 --> 00:30:13,516
+Evet. Bu kadar. Burada tamamen formül bilmek gerekiyor. Başka bir şey yok sonra da.
+
+99
+00:30:20,884 --> 00:30:29,483
+Diğer soru, ile çizilmiş yolun uzunluğunu bulun. Yine yol uzunluğu falan dese de, sonuçta bir eğri, yol dediğimiz bir eğridir.
+
+100
+00:30:30,663 --> 00:30:34,724
+Burada da tamamen yine parametrik türev sorusu oluyor bu.
+
+101
+00:30:35,384 --> 00:30:39,884
+Parametrik türev sorusu. Parametrik türevde de biraz önce verdiğimiz üzere L dediğimiz neydi?
+
+102
+00:30:40,943 --> 00:30:46,764
+Kök içinde dx bölü dt'nin karesi artı dy bölü dt'nin karesiydi.
+
+103
+00:30:47,988 --> 00:31:14,927
+Çarpı dt şeklinde idi. Burada da x bölü dt çok kolay. Hemen t karenin türevi 2t bitti. 1x t karenin türevi eksi 2t. Karelerini al. 4t kare, 4t kare ne oldu? Evet. 4t kare, 4t kare. Değil mi? Buradan 8t kare oldu kök içinde.
+
+104
+00:31:16,115 --> 00:31:31,255
+8 tk oldu. Bu da 2 kök 2 mutlak t oldu. Nereden nereye? Eksi birden sıfıra t değişiyor. Eksi birden sıfıra değişiyor. Değil mi? Evet, böyle oldu.
+
+105
+00:31:36,884 --> 00:31:43,324
+t eksi birden sıfıra değiştiği için, burası bir kere, bir dakika doğru yaptık değil mi? 2 kök 2 mutlak t.
+
+106
+00:31:45,523 --> 00:31:54,184
+Şurada yalnız t eksi bir ile sıfır arasında olduğu için, değil mi? Mutlak t ne olacak? Eksi t diye çıkacak.
+
+107
+00:31:54,884 --> 00:32:01,903
+t negatif olduğundan. Eksi t. O zaman bu ne olur? Eksi 2 kök 2 t diye yazacağız. dt.
+
+108
+00:32:03,028 --> 00:32:27,228
+0'a eksi 1. 2 kök 2, t kare bölü 2. Önünde eksi var. Şu ikiler de kısaldı, eksiyi unutmayalım. Eksi kök 2 tekrar olmuş oldu. Eksi kök 2 tek kare, eksi birden sıfıra. O da eksi kök 2, sıfır yazarsak sıfır, buradan da eksi bir olmuş olur. Dolayısıyla ne çıkar? Kök 2 çıkar.
+
+109
+00:32:29,523 --> 00:32:40,203
+Evet, kök 2 oldu. Zor bir soru değil, kolay bir soru. Burada hata yapmalısı da zayıf zaten. Formül bilmek şart. Tabii, formülsüz olmaz.
+
+110
+00:32:41,923 --> 00:32:50,743
+Evet, peki. Diğer bir soru, altıncı sorumuz. Parametrik denklemiyle verilen eğrinin t eşit eksibirdeki normal doğrusunun denklemi.
+
+111
+00:32:51,188 --> 00:32:56,228
+Şimdi bu da tabii normal doğrusunun denklemini biliyor muyuz? Onu test eden bir soru.
+
+112
+00:32:56,768 --> 00:33:04,567
+Şimdi y-y0 eşit, m çarpı x-x0, t-et denklemiydi. Nerede? x0, y0'da.
+
+113
+00:33:05,728 --> 00:33:08,988
+Normal denklemini yazarken buna mt diyelim, t-etin denklemine.
+
+114
+00:33:15,455 --> 00:33:42,935
+Normal eğimini bulurken, eksi bir bölü mt'yi kullanıyorduk. Başka bir şey yoktu. Yani, y eksi y sıfır eşittir. M normal yerine, aslında normal denklemi şu, eksi eksi eksi eksi sıfır. Fakat bunun yerine bunu nasıl hesaplıyorduk? Şurada. Eksi bir bölü mt'ye yazıyorduk. Evet, bu kadar. Bu bilgiyi istiyor bizden. Şu denklemi bu şekilde, işte m normal yerine eksi bir bölü mt yazabiliyor musunuz?
+
+115
+00:33:43,604 --> 00:34:00,784
+Bunu istiyor başka bir şey, birçok özelliği olan bir soru değil. Peki, bakıyoruz hangi noktada t eşit, eksi bir? Bir kere eksi bir için ne değerini alıyor bakalım. Şurası beş olur, burası da ne olur? Bir olur. Demek ki beş bir noktasından geçer normal doğrusunun denklemi böyle olacak.
+
+116
+00:34:02,064 --> 00:34:09,003
+t'nin denklemini bulmak için parametrik türevi kullanacağız haliyle. d'ye bölü dt bölü dx bölü dt.
+
+117
+00:34:09,523 --> 00:34:19,183
+Y'nin t'ye göre türevi 4t küp, 2t karenin türevi 4t, kısaldı, t kare oldu, 4'ler kısaldı, t kare oldu.
+
+118
+00:34:19,804 --> 00:34:29,523
+Burada ne yazacağım? Kaçtı bizim t'miz? Eksi 1. Eksi 1 yazarsak, t'in eğimi 1. Normalin eğimi de şu formülden.
+
+119
+00:34:30,483 --> 00:34:43,523
+hem t şarpı hem normal eksi 1 olduğu için, normal neyimi eksi 1, getireceğim şurada y eksi noktamız neydi? 5'e 1, y eksi 1 eşittir, hem normal yerine eksi 1 yazacağım, x eksi 5 diyeceğim, bitecek.
+
+120
+00:34:44,703 --> 00:34:52,344
+O da şu oluyor. Evet, y eşittir, eksi x artı 5, artı 1, 6, y eşit, 6 eksi x.
+
+121
+00:34:53,344 --> 00:34:57,344
+Şu bilgiyi istiyor bize, bu bilgi var mı sizde diye.
+
+122
+00:34:57,840 --> 00:35:03,740
+Normal doğu denklemi nedir, bunu bilmenizi istiyor. Gerisi, zaten çok zor bir türevler yoktu.
+
+123
+00:35:07,731 --> 00:35:09,291
+Evet, bu soru da böyle.
+
+124
+00:35:13,907 --> 00:35:16,967
+Gelelim yedinci. Artık kutupsal sorular başlıyor burada.
+
+125
+00:35:19,967 --> 00:35:21,447
+Evet, kutupsal soruları.
+
+126
+00:35:29,139 --> 00:35:33,920
+Evet, kutupsal koordinatlarla ilgili sorumuz, ilk sorumuz.
+
+127
+00:35:36,480 --> 00:35:43,079
+Evet, birinci sorumuz, 4 kosinüs teta, 4 sinüs teta eğrilerinin sınırladığı ortak alan.
+
+128
+00:35:45,159 --> 00:35:46,900
+Evet, şimdi ortak alan.
+
+129
+00:35:48,639 --> 00:35:51,800
+Ortak alan deyince eğrileri ister istemez çizmemiz lazım.
+
+130
+00:35:52,403 --> 00:36:00,703
+Daha önce verdiğim kalıplar vardı. O eğrilerin onlardan ikisi var burada şimdi bu soruda.
+
+131
+00:36:02,644 --> 00:36:06,764
+Evet, ikisi var. Şimdi 4 kosünüs de şöyleydi.
+
+132
+00:36:09,123 --> 00:36:19,304
+Şimdi hatırlarsanız, kosünüs eğrisi, yani şu tip bir eğri, bu R eşittir.
+
+133
+00:36:19,891 --> 00:36:22,051
+A kosünüs teta.
+
+134
+00:36:23,371 --> 00:36:29,391
+Teta sıfır için, teta sıfır için, re eşittir, a oluyordu.
+
+135
+00:36:30,051 --> 00:36:37,652
+Re eşit a, yani şurası a'ydı, şurası a bölü 2'ydi, bu re eşit şeyin neyini, hangi elimiz?
+
+136
+00:36:38,451 --> 00:36:40,152
+A kosünüs teta elisi buydu.
+
+137
+00:36:45,556 --> 00:37:12,215
+Evet, sonra 90 için, hatta bunları biraz hatırlayalım diye yazıyorum. 90 için ne oluyordu bu? Kosinus 90, 0, 0. Bakın şu nokta. 90 için aldığı değer. Değil mi? Böyleydi. Hatırlarsanız. Hatta, eksi pi bölük için neydi mesela? Yine 0'dı. Orası şu. Şuradan. Değil mi? Eksi pi bölük için aldığı değer bu. Değil mi?
+
+138
+00:37:13,172 --> 00:37:37,871
+eksi pi bölü 2'den, sıfıra kadar, olan kısım. Sıfırdan pi bölü 2'ye kadar olan kısım. Değil mi? Bu, geçenler söyledik. Diğeri, diğer eğrimiz de şu, neredeydi bu? Diğer eğrimiz, 4 sinüs teta.
+
+139
+00:37:39,155 --> 00:37:50,435
+4 sinüs teta erisi de, şu genel olarak genel formu şuydu, re eşittir, a sin teta erimiz de böyleydi.
+
+140
+00:37:51,315 --> 00:38:00,376
+Yine sıfır için, teta sıfırsa, sinüs sıfır sıfır, re sıfır. Şurada kesiyordu.
+
+141
+00:38:07,956 --> 00:38:17,436
+R ne oluyordu? Sin 91 A oluyordu. Şurası A. Değil mi? Şurası da A bölü 2. Değil mi? Sıfırdan 90'a. Böyleydi.
+
+142
+00:38:18,256 --> 00:38:25,356
+Şimdi bu eğrileri bilmemiz gerekiyor. Yani sonra da bunları çizemezsek, sınırladığı bölgeyi de bulamayız yani.
+
+143
+00:38:26,796 --> 00:38:34,596
+Hasbelkader belki doğru da bulabilirsiniz, bilemiyorum ama çizmemiz gerektiğinde, kalıp eğrileri bilmemiz gerektiğini söylemiştim geçen ders.
+
+144
+00:38:34,996 --> 00:39:00,115
+Şimdi bunları işte burada çizmişiz. Şimdi tabii nerede kesişir bunlar? Şu pi bölü 4'ü bulmak lazım. Kolay tabii. 4 kosünüs, 4 sinüs birbirini eşitleyeceğiz. Gitti bunlar. Kosünüs sinüse ne zaman eşit olur? Pi bölü 4'te eşit olur. Bunu biliyoruz. Demek ki şu eğrimiz şu. Şurası pi bölü 4, şu açı pi bölü 4. Theta eşit pi bölü 4.
+
+145
+00:39:00,884 --> 00:39:13,983
+Şimdi, ortak alan, deyince ortak alan da şurası tabii. Ortak alan bu. Şimdi, bu alanı nasıl hesaplayacağız? Bu alanı nasıl hesaplayacağız?
+
+146
+00:39:20,983 --> 00:39:27,003
+Şimdi, sıfırdan, şimdi bu alan iki parça bir kere. Bakın şu, şöyle.
+
+147
+00:39:29,492 --> 00:39:30,731
+Bu alan 2 parça.
+
+148
+00:39:32,932 --> 00:39:44,932
+Şunu çizdiğimiz takdirde bakın, şu alt kısım, şu parça, şu aşağıdaki parça, şu aşağıdaki parçayı bulacağım, yukarıdaki parçayı bulacağım.
+
+149
+00:39:46,152 --> 00:39:56,292
+Evet, şimdi aşağıdaki parça, şu teta açımız pi bölü 4. Değil mi? Peki şu teta açımız ne?
+
+150
+00:39:58,195 --> 00:39:59,155
+teta sıfır.
+
+151
+00:40:00,895 --> 00:40:07,295
+Sıfırdan açı pi bölü dörde geldiğinde olan taralı kısım şu.
+
+152
+00:40:09,935 --> 00:40:12,715
+O zaman formülümüz ne olacak bu aşağıdaki parça için?
+
+153
+00:40:13,336 --> 00:40:20,395
+Bir bölü iki sıfırdan pi bölü dörde dört sin tetanın karesi.
+
+154
+00:40:20,395 --> 00:40:21,496
+Bir daha söylüyorum.
+
+155
+00:40:22,295 --> 00:40:23,947
+Şu taralı bölgeyi...
+
+156
+00:40:24,340 --> 00:40:33,500
+Taralı bölgedeki açı değişim, bu önemli, açı kısmı önemli burada. Açı kısmını anlarsanız gerisini yaparsınız sorularda.
+
+157
+00:40:33,500 --> 00:40:43,980
+Şimdi bu taralı bölge oluşurken bizim tetamız nereden nereye değişiyor? O önemli. Tetamız sıfırdan pi bölü 4'e kadar değişiyor.
+
+158
+00:40:44,340 --> 00:40:49,160
+Bu kısmı yakalarsanız, bütün soruları, şekli de, kalıpları da bilirseniz yaparsınız.
+
+159
+00:40:50,460 --> 00:41:00,020
+Sıfırdan pi bölü 4'e kadar. Bu alt kısım bu. Gelelim üstte. Bu hangi eğri de yalnız oldu bu? Sinüs tonun için 4 sinüsün karesini aldım.
+
+160
+00:41:00,020 --> 00:41:08,680
+Bu bitti. Artı üst parça. Üst parça için eğrimiz ne? Üst parça için eğrimiz.
+
+161
+00:41:10,195 --> 00:41:22,076
+Şu, kosünüs eğrisi, kosünüs eğrisi, üst parça için eğrimiz kosünüs, şöyle, bu, re eşit 4 kosünüs teta, üst parçayı, şuraya hesaplayacağız.
+
+162
+00:41:22,855 --> 00:41:34,435
+Orası için tetamız ne? Pi bölü 4'ten bu bölge için nereye kadar değişiyor? Pi bölü 2'ye kadar değişiyor bu bölge.
+
+163
+00:41:35,603 --> 00:41:51,923
+Bu bölgenin oluşmasını sağlayan açıl, açı, açıdaki değişim şu, theta pi bölü 4'den pi bölü 2'ye kadar gidiyor. O zaman bu bölge oluşuyor.
+
+164
+00:41:53,144 --> 00:41:58,603
+O halde diyeceğim ki, bu artı şu yukarıdan alanı var ya diyeceğim, artı 1 bölü 2.
+
+165
+00:41:59,168 --> 00:42:07,868
+pi bölü 4'den pi bölü 2'ye kadar 4 kosünüs tetanın karesi diyeceğim. Böyle. Tamam mı? Bitti.
+
+166
+00:42:08,507 --> 00:42:17,868
+Ama burada açılar kısmı, açı, o bölgeyi oluşturan açıların değişim, hangi aralıkta, nasıl bir değişim yaptığını açılarım.
+
+167
+00:42:18,467 --> 00:42:26,588
+İyi gözlemlerseniz, iyi oturtursanız, o zaman yaparsınız soruları. Evet. Bu şekilde. A'sı böyle.
+
+168
+00:42:27,088 --> 00:42:43,108
+Bu ikisinin toplamı, tabii integral alınır. İntegrali hesaplamayın demiş, hesaplanabilir. Biraz işlemi var elbette. Ama yazmak önemli. Çünkü integralleri genelde çok komplikli olmuyor. Önemli olan integralleri yazabilmek. Bu şekilde.
+
+169
+00:42:44,948 --> 00:42:52,007
+Şimdi, ikinci soru, eğrimizi biraz değiştiriyoruz.
+
+170
+00:42:54,036 --> 00:43:21,256
+sorumuzun, eriler aynı da bölgeyi değiştirmemizi istiyor. Evet, bölge. Bölgemiz ne? Diyor ki, 4 kosinüs theta, 4 sinüs theta'nın, 4 kosinüs theta'nın içinde, 4 sinüs theta'nın dışında kalan, diyor. Evet, 4 kosinüs'ün içinde,
+
+171
+00:43:21,876 --> 00:43:49,136
+4 sinüsün dışında kalan alan. Evet, yani 4 kosünüsün dışında, şey içinde, 4 sinüsün dışında. Şu bölge. 4 kosünüsün içinde, 4 sinüsün dışında. Sinüsün dışında olacak. Şimdi sinüsün dışında, sinüs bu, onun dışında, dışarısı. Öbürünün de içinde olacak. O zaman şurayı dahil etmeyeceğim. Şu aradaki parçayı, şu kısım olacak.
+
+172
+00:43:51,188 --> 00:43:54,887
+Bunu söylüyorum. Şimdi iki şekilde çözmüşüz. Bir bakalım.
+
+173
+00:43:58,387 --> 00:44:07,188
+Evet, bir bakalım. Şimdi yine önce birinci yolu bir anlatayım.
+
+174
+00:44:14,963 --> 00:44:32,963
+Şimdi, bir kere, tüm alanı düşünseniz, yani tüm alanı düşünseniz, tamamını düşünseniz, tamamında, yani 4 kosün üstün tüm alanını düşünseniz, o eksi p bölükü de, biraz önce yazmıştım, eksi p bölükten p bölükü kadar, yani şuradan başladık açı.
+
+175
+00:44:32,963 --> 00:44:38,963
+Şöyle, şimdi şuradan başladık.
+
+176
+00:44:40,963 --> 00:44:42,083
+Şöyle.
+
+177
+00:44:43,251 --> 00:44:51,492
+tamamını, alanın tamamını düşünsek, bu alanı hesaplamak için şöyle yapmam lazım.
+
+178
+00:44:51,652 --> 00:45:05,172
+Eksi p bölü 2'den, şurası, eksi p bölü 2'den, p bölü 2'ye kadar, şöyle, şeklimiz şu, tüm alanı düşünseniz, eksi p bölü 2'den, eksi p bölü 2 için sıfır alıyor.
+
+179
+00:45:05,172 --> 00:45:08,132
+Eksi p bölü 2'den, döndük döndük sıfıra geldik.
+
+180
+00:45:10,068 --> 00:45:30,807
+X, P ve sıfıra, döndük, döndük, döndük, tekrar nereye geldik? P bölü 2, P bölü 2'de de sıfır. Tüm alanı bulmuş olurum. Ama tüm alan istenmiyor tabii bizden. O zaman önce tüm alanı yazıyorum buraya. Sonra, eksi fazlalıkları çıkaracağım. Şimdi diyeceksiniz ki hocam fazlalık ne? Fazlalık 2 parça.
+
+181
+00:45:37,012 --> 00:45:48,492
+Yukarıda hesapladığımız üzere, aşağıdaki parçayı nasıl hesaplıyorduk? Bu hangi eğri? Sinüs. Şu parça var. Bu parça ne? Bunun alanını biraz önce hesapladık. A şıkkında var. Bu parça neydi? Şu.
+
+182
+00:45:49,832 --> 00:46:03,272
+1 bölü 2'si olmak üzere 4 sinüsün karesiydi. Çünkü o sinüs eğrisinin 0'dan pi bölü 4'e kadar olan değişimiyle şöyle, bakın pi bölü 4 bu, şurası da teta 0.
+
+183
+00:46:04,083 --> 00:46:08,503
+teta sıfırdan pi bölü dörde kadar değişirken sinüs eğrisinde şu alan oluşuyor.
+
+184
+00:46:09,563 --> 00:46:16,003
+Tamam mı? O bu. Peki üstteki parça neydi? Üstteki parça pi bölü dörtten teta nereye kadar değişiyor?
+
+185
+00:46:16,163 --> 00:46:25,783
+Pi bölü ikiye kadar değişirken, neredeki eğrimiz ne? Dört kosünüst. Dört kosünüstteki değişim.
+
+186
+00:46:26,983 --> 00:46:29,503
+O eğrimiz ne? Kosünüst. Dört kosünüst.
+
+187
+00:46:30,260 --> 00:46:39,640
+Evet, o üstteki parçanın alanı da neydi? Buydu. O ikisini çıkarırsam, ikisinin toplamını çıkarırsam, o zaman ne olur? Bu istenen alanı bulunurum.
+
+188
+00:46:40,820 --> 00:46:46,260
+Evet, tüm alan budur. Ya hocam tüm alan, belki bazılarınız diyecektir, hocam burası...
+
+189
+00:46:46,335 --> 00:47:06,775
+4 kosünüs, ben bu 4 kosünüsün ne olduğunu biliyorum. Tabii tüm alanı hesaplamanın başka yolu elbette basit olarak herkes muhtemelen söyleyecek. Hocam şurası 4 değil mi, şurası da 2 değil mi? Tamam, yarı çapta 2 birim değil mi diyeceksiniz. Pire kare olduğuna göre. Biz kutupsal ile hesapladık. Ama böyle tabii ki nedir bu? Tüm alan, yani şu.
+
+190
+00:47:07,251 --> 00:47:21,052
+Şu parçayı, şurası hariç, tüm alan ne oluyor? 4P oluyor, değil mi? Buradan da aynı şekilde bulunur. Ama kutupsalla hesaplamaya çalışıyoruz. Amacımız o. Yoksa bu dairelerin alanları belli. Değil mi?
+
+191
+00:47:23,492 --> 00:47:26,792
+P çarpı re kareden 4P. Değil mi?
+
+192
+00:47:27,832 --> 00:47:29,172
+Hocam, bir soru sorabilir miyim?
+
+193
+00:47:29,492 --> 00:47:47,852
+Sor canım. İkinci yoldaki ilk integralimiz var ya hocam, 4 kosin tükaresi, onu eksi pi bölü 2'den pi bölü 4'ü bu şekilde yazabiliyor muyuz? Çünkü eksi pi bölü 2'den 0'a kadar eksi çıkacak, diğerinde de artı çıkacak. Böyle yazarsak sağlıklı bir sonuç elde edebilecek miyiz?
+
+194
+00:47:48,811 --> 00:47:55,092
+Şimdi bakalım bir dakika, şimdi birlikte bakalım, yorumlayacağım şimdi ona bir de evet o yolda anlatayım.
+
+195
+00:47:57,235 --> 00:48:00,255
+Şimdi ikinci yol söylüyor arkadaşınız, bakalım.
+
+196
+00:48:01,675 --> 00:48:11,855
+Şimdi ikinci yol, eksi pi bölü 4'ten, pi bölü 4'e, eksi pi bölü 4'ten, pi bölü 4'e kadar.
+
+197
+00:48:12,015 --> 00:48:19,876
+Yani, eksi pi bölü, buradan başladık, şöyle geldik, şu, şu, şurası dahil hesapladık.
+
+198
+00:48:20,775 --> 00:48:24,275
+Değil mi? O hesapladığımız bölge ne olacak? Burası dahil.
+
+199
+00:48:25,876 --> 00:48:48,416
+Değil mi? Burası dahil. Eksi pi bölü 2'den, pi bölü 4'e, şurası dahil. O zaman şu, ne yapmam lazım ben de? Şu parçayı çıkarmam lazım. O parçayı biraz önce o sinüsten kaynaklanıyordu. Sinüsten kaynaklananı, nerede oluşuyordu? Sıfırdan, pi bölü 4'e kadar. Evet, çıkardı. Şimdi, anladın mı? İsim neydi? Bak, şöyle.
+
+200
+00:48:48,943 --> 00:49:12,304
+Buradan geldik, şu parçanın tamamı, şu beyaz da dahil. Ama o beyaz neye eşitti? Beyaz, kimden kaynaklanıyordu o? 4 sinüsten kaynaklanıyordu. Nereden nereyeydi? Sıfırdan. Pi bölü 4'e kadar olan kısmı hesapladık. Aynı sonucu verir. Bir daha söylüyorum. Şöyle geldik. Eksi pi bölü 2'den.
+
+201
+00:49:13,460 --> 00:49:19,199
+Şurası daha iyi, şu beyazlık daha iyi, tüm alan şu, eksi pi bölü 2'den pi bölü 4'e kadar.
+
+202
+00:49:20,720 --> 00:49:28,000
+Tamam mı? Ama şu, şu, üst parçayı çıkarmamız gerekiyordu. O üstteki parça ne demekti?
+
+203
+00:49:28,619 --> 00:49:34,159
+Daha önce söylemiştik, şu parça, şurası, bu, şu hangi eğri bir kere?
+
+204
+00:49:34,623 --> 00:49:51,423
+Sinüs erisi, re eşittir, 4 sinüs teta'nın nereden nereye kadar değişimiyle oluşuyor? Sıfırdan, sıfırdan pi bölü 4'e kadar değişimiyle oluşuyor. Onu çıkarmam lazım, o parçayı çıkarmam lazım, o parçayı da çıkarmışız. Tamam mı?
+
+205
+00:49:51,643 --> 00:50:00,000
+Hocam, benim demek istediğim şeydi, eksi pi bölü 4'e alırsak eğer, şey, kutup...
+
+206
+00:50:00,019 --> 00:50:07,259
+Çizgisinin altında kalan kısım eksi çıkacak ya hocam. Hani böyle yazmak tam sonucu verecek mi diye.
+
+207
+00:50:07,359 --> 00:50:09,559
+Yok yok, o bir sakatlık yaratmıyor.
+
+208
+00:50:10,859 --> 00:50:12,980
+O zaman tamam mı? Teşekkürler.
+
+209
+00:50:13,639 --> 00:50:14,980
+Tamam, bir sakatlık yaratmıyor.
+
+210
+00:50:16,339 --> 00:50:18,500
+Evet. Peki.
+
+211
+00:50:22,000 --> 00:50:26,179
+Yine tabii sonuçlar hesaplanıp görülebilir ama bizden sonuçlar istenmiyor.
+
+212
+00:50:26,623 --> 00:50:28,083
+Geçelim şimdi diğerine.
+
+213
+00:50:32,864 --> 00:50:37,003
+Peki.
+
+214
+00:50:37,663 --> 00:50:39,003
+Şimdi üçüncüsünde neydi?
+
+215
+00:50:39,443 --> 00:50:44,884
+Galiba 4 sinüsün içinde, kosünüsün dışında olması lazım.
+
+216
+00:50:44,983 --> 00:50:46,283
+Bir bakalım yine yukarıda.
+
+217
+00:50:47,083 --> 00:50:47,563
+Böyle değil mi?
+
+218
+00:50:47,884 --> 00:50:48,083
+Evet.
+
+219
+00:50:48,223 --> 00:50:48,483
+Kimin?
+
+220
+00:50:48,824 --> 00:50:51,143
+4 kosünüsün dışında, 4 sinüsün içinde.
+
+221
+00:50:51,243 --> 00:50:52,324
+Belli zaten şekilden.
+
+222
+00:50:52,384 --> 00:50:53,123
+Onu söylemiş.
+
+223
+00:50:53,907 --> 00:51:05,347
+Evet, bu durum. Şimdi bunu da yine iki yolla. Birincisi birazcık daha uzun ama birincisini bir anlatayım yine de.
+
+224
+00:51:13,347 --> 00:51:18,547
+Şimdi tüm alanı hesaplamak istersek nasıl hesaplarız bir kere?
+
+225
+00:51:25,780 --> 00:51:27,619
+Tüm alanı hesaplamak istersek,
+
+226
+00:51:36,019 --> 00:51:36,480
+Evet.
+
+227
+00:51:41,940 --> 00:51:56,099
+Tüm alanı hesaplamak istersek ne yaparız? Deriz ki şu sıfırdan, bu birinci yol bir kere anlatıyorum, sıfırdan döndük doksana geldik, bitirdik, pi de bitti.
+
+228
+00:51:56,659 --> 00:52:03,480
+Sıfırdan piye kadar tüm alan hesaplamak isteseydik, sıfırdan piye kadar dört sinis tetanın karesi olurdu.
+
+229
+00:52:04,920 --> 00:52:09,139
+İşte o. Peki ben ne istiyorum?
+
+230
+00:52:09,684 --> 00:52:36,684
+Şu iki parçayı çıkaracağım. Bir burada parça var, bir de burada parça. O parçaları daha önce sapladık zaten. Neydi şu? Alttaki parça nasıl oluşuyordu? Alttaki parça sinüsten kaynaklanan oluşan parçaydı. Değil mi? Şu alttaki parça nasıl kaynaklanıyordu? Hangi açılar, açı nasıl değiştikçe oluşuyor? Sıfırdan pi bölü dörde kadar değiştikçe oluşan bölge...
+
+231
+00:52:38,356 --> 00:53:04,836
+Şuydu, o açı sinüste, sinüstetanın eğrinin taradığı bölge şuydu. İşte o da 4 sinüstetanın karesiydi. Yukarısı neydi? Yukarısı da kosünüste oluşuyor. Kosünüste nereden d kadar? Pi bölü 4'ten pi bölü 2'ye kadar oluşan kısım boydu. Onu çıkardık, bitti. Bu birinci yol. Belki bu daha uzun işleme ama görmesi de çok zor değil. Peki.
+
+232
+00:53:06,228 --> 00:53:09,068
+İkincisi ne? İkinci yol şu.
+
+233
+00:53:11,228 --> 00:53:12,228
+Şimdi...
+
+234
+00:53:16,436 --> 00:53:26,636
+Pi bölü 4'ten, Pi'ye kadar olan bölge, şuradan başlasam, devam ettim, açıyı değiştirdim, değiştirdim, değiştirdim, getirdim.
+
+235
+00:53:27,836 --> 00:53:33,936
+Ne oldu? Şurası da dahil hesaplamış olur.
+
+236
+00:53:35,356 --> 00:53:38,976
+Şu üstteki parça dahil, o parçayı çıkarmam gerektiğini görüyor musunuz?
+
+237
+00:53:39,096 --> 00:53:43,116
+Pi bölü 4'ten başladığım zaman, açıyı değiştirdim, değiştirdim, geldim.
+
+238
+00:53:43,572 --> 00:54:07,692
+Şu üst parçayı da aldım. Sadece o üst parçayı çıkarmam lazım. O da kimde oluşturan, nasıl oluşuyordu? P bölü 4'ten P bölü 2'ye kadar kosinüsteki değişimle oluşuyordu. Onu çıkarmış oluyorum. Şimdi evet, anladınız mı? Şuradan başladık. Devam ettik. Şu üst parçayı almış oldum. Şunu hesaplamakla. Ben diyorum ki şu üst parça nasıl oluşuyordu? Üst parçanın değeri neydi?
+
+239
+00:54:08,307 --> 00:54:18,128
+Bu kosinüsten dolayı oluşuyor. Nereden nereye kadar? Pi bölü 4'ten pi bölü 2'ye kadar değişimle oluşuyor o yüz parça. Onu çıkarmam lazım. Bitti. Bu kadar.
+
+240
+00:54:19,088 --> 00:54:23,148
+Tabii kolay olan ikincisi. Bu kadar.
+
+241
+00:54:29,523 --> 00:54:53,203
+Evet, bu bitti mi? 6, şey, bir sonraki. Evet, 8. Önceki 7 miydi? Evet, 8. Evet, 8. 8. Bir kısmı da size bırakırım. Yaparsınız zaten çözümler var elinizde. Şimdi gelelim şu 8. 8'de ne diyor? 8'de de diyor ki,
+
+242
+00:54:53,588 --> 00:55:18,408
+R eşit 2 kosürüs teta, tabi bu soruları lütfen kendiniz çözümler burada diye olup batı kağıdı veya bunların diyelim ki çıktısını aldınız. Oturup oradan birebir bakarak diye soru sana soruldu, çözümü bilmiyorsun, sen ne yapıyorsun? Ona bakarak sınava kendinizi hazırlayın. Bakmadan acaba ne yapabiliyorum? Yapamadınız, bakın, iyi yorumlarsanız.
+
+243
+00:55:18,768 --> 00:55:24,007
+Sıkıntı olmaz. Sonra oturma, oturur yani. Bir daha karşınızda çıktığında yaparsınız.
+
+244
+00:55:24,007 --> 00:55:33,147
+Evet, şimdi bir kere, tabii çözümden hemen anlaşılıyor ayrı bir konu ama nasıl oluşturuyoruz bu çözümü bir bakalım.
+
+245
+00:55:35,967 --> 00:55:44,867
+Şimdi bu eğrilerimiz bir kere. 2 kosinüs teta.
+
+246
+00:55:45,295 --> 00:55:51,435
+R eşit kök 2'yi unutmayın. R eşit a şuydu. Bu.
+
+247
+00:55:56,851 --> 00:56:08,751
+Bunu bileceğiz. Değil mi? R eşit A'yı çizeceğim. O zaman R kök 2, şu. İşte görüyorsunuz kök 2, şurası eksi kök 2. Bu çember olduğunu biliyoruz.
+
+248
+00:56:11,152 --> 00:56:21,751
+Evet. Şimdi, peki bu, bunu söyledik. R eşit 2 kosünüs tetanın da yine...
+
+249
+00:56:22,164 --> 00:56:25,524
+Çözüme gireceğiz ama girmeden şöyle olduğunu biliyoruz.
+
+250
+00:56:27,004 --> 00:56:37,284
+R eşit A kos tetanın da, şurası A olmak üzere, böyle bir eğri olduğunu biliyoruz. Bunları çizdik.
+
+251
+00:56:38,564 --> 00:56:49,204
+Burada kesiştiler. Kesiştiler, nerede kesiştiler? Eşitlersek, 2 kosu, kök 2'ye, pi bölü 4. Demek ki şurası pi bölü 4. Zaten şekil üzerinde de gösterdik.
+
+252
+00:56:49,844 --> 00:57:04,344
+Şimdi, şimdi teta sıfırdan bakın, tabi bunlar simetrik yani üst parçayı bulursam, alt parçada aynı. O zaman tamamı a ise burası a bölü 2 diyeceğim.
+
+253
+00:57:06,063 --> 00:57:16,324
+a bölü 2 diyeceğim. Üst parçayı bulup, üst parçayı bulursam 2 ile çarptım bitti. Oradan a'yı çekerim veya. Üst parça bakın nasıl oluşuyor.
+
+254
+00:57:18,771 --> 00:57:31,211
+Hangi açılar nasıl değiştiğinde? Sıfırdan, teta pi bölü dörde kadar değiştiğinde, ne oluşur bir kere?
+
+255
+00:57:32,691 --> 00:57:38,711
+Eğer iki kosünüs teta eğrisini düşünürsem, şu aradaki, şurası dahil, hepsi olur.
+
+256
+00:57:40,831 --> 00:57:43,031
+Şu aradaki kısım dahil, hepsi olur.
+
+257
+00:57:43,031 --> 00:57:45,003
+Ama ben...
+
+258
+00:57:45,139 --> 00:57:57,339
+Şu şeyi istemiyorum, şu parçayı istemiyorum, şu dilimi istemiyorum, şu içerideki dilimi istemiyorum, şu şöyle gelen dilimi istemiyorum burada.
+
+259
+00:57:58,039 --> 00:58:06,319
+Bu dilimi çıkarmam gerekiyor. Normalde, bir dakika, sıfırdan dedim, pi bölü 4'e kadar olunca şurasını da dahil etmiş oluyorum.
+
+260
+00:58:06,859 --> 00:58:12,299
+Değil mi? İşte onu çıkarmam lazım. Onu ne? O da kök 2'den...
+
+261
+00:58:12,724 --> 00:58:20,624
+Kök 2, o ne? O da sıfırdan pi bölü 4'e kadar kök 2 erisinden kaynaklı alan.
+
+262
+00:58:21,824 --> 00:58:29,604
+Yani şöyle, şurası pi bölü 4, ben şu parçayı çıkaracağım.
+
+263
+00:58:31,044 --> 00:58:35,684
+Şu parça nasıl oluşuyor? Theta pi bölü 4, theta 0.
+
+264
+00:58:40,628 --> 00:58:52,028
+R kök 2 eğrisinin belirlediği alan, 0'dan pi bölü 4'e kadar şu parça oluyor. O zaman onu çıkarmam lazım.
+
+265
+00:58:53,048 --> 00:59:05,968
+Dolayısıyla ne oldu? Diyorum ki, 0'dan pi bölü 4'e kadar 2 kositeta kare, bu bizim şu alanı veriyor diyorum, şurası dahil veriyor.
+
+266
+00:59:07,891 --> 00:59:18,591
+A bölü 2 bu oluyor. Ama sen şu içerideki parçayı çıkarmam gerektiğine göre, o da benim diyorum, şu içerideki şu parça neye eşit diyorum.
+
+267
+00:59:19,431 --> 00:59:28,031
+1 bölü 2, kök 2'nin karesi D teta. Nereden nereye peki diyorum. Ben hangi açıyla bu bölgeyi elde ediyorum diyorum.
+
+268
+00:59:30,996 --> 00:59:36,976
+pi bölü 4'e kadar değiştirdiğini de elde ediyorum diyorum. Onu çıkarıyorum. İşte bu. Bitti. Bu kadar.
+
+269
+00:59:38,895 --> 00:59:43,835
+O parçayı çıkarınca istediğim ne oluyor? Oluyor.
+
+270
+00:59:47,956 --> 00:59:58,556
+Ama yukarıdakini almamış oluyorum. Orada dikkat edin. Yani şu arası şu olmamış oluyor. Çünkü pi bölü 4'e kadar tarayınca, normalde ilk şu integral şunun tamamını veriyor.
+
+271
+00:59:58,556 --> 01:00:13,056
+Pi bölü 4'ün altında. Sıfırdan pi bölü 4'e alınca da şu küçük, şu içerideki parçayı çıkarmış oluyorum. Bitiyor. Bu kadar. Evet. Bu soruların bir kısmı tabii bizim sınavlarda sorduğumuz sorular.
+
+272
+01:00:13,440 --> 01:00:29,420
+Onun için 3 aşağı 5 yukarı sınav sorularınız da bunlara paralel olacak. Bu soruları güzelce kendiniz bakmadan çözebilir duruma geldiğiniz zaman sınava bu konu için hazırlanmış. Kendinizi hazır kabul edebilirsiniz.
+
+273
+01:00:29,420 --> 01:00:36,559
+Evet, şimdi biraz yedinci sorunun bir benzeri ama burada kardiyoid var.
+
+274
+01:00:38,500 --> 01:00:39,619
+Kardiyoid var.
+
+275
+01:00:43,987 --> 01:00:47,247
+Ona bakalım. Şimdi tabii kardiyoidleri de bilecektik yani.
+
+276
+01:00:48,007 --> 01:00:51,587
+Bilecektik. Onun da şimdi şöyle ufak bir hatırlatayım ben.
+
+277
+01:00:52,447 --> 01:01:05,627
+Şimdi şuydu. Şu tip bir kardiyoidimiz, R eşit A, 1 eksi cos theta'yı. Değil mi? Bunu bilmemiz lazım.
+
+278
+01:01:06,627 --> 01:01:11,327
+Şimdi bu da gördüğünüz gibi x eksenine göre simetrikti.
+
+279
+01:01:11,923 --> 01:01:12,843
+Ne yapıyorduk?
+
+280
+01:01:15,663 --> 01:01:18,243
+Sıfırdan pi'ye kadar çizip simetrini alıyorduk.
+
+281
+01:01:20,303 --> 01:01:29,503
+Şimdi, teta sıfır için, bu re eşit, a çarpı, kosinus sıfır bir, burası sıfır, sıfır, sıfıra sıfır, şurasıydı.
+
+282
+01:01:30,623 --> 01:01:38,963
+Değil mi? Sonra doksan için, teta sıfır, teta pi bölü iki için, re eşittir, kosinus doksan sıfır.
+
+283
+01:01:39,764 --> 01:01:50,544
+A. Yani şurası neydi? A'ydı. A'ydı. Şimdi tabii bizim sorumuzda A'mız 1 oldu, dikkat edin. Burası A.
+
+284
+01:01:53,284 --> 01:01:54,344
+Şurası A.
+
+285
+01:02:00,275 --> 01:02:01,355
+Bizim şurası a.
+
+286
+01:02:02,755 --> 01:02:11,215
+Evet. Sonra pi içinde, teta pi için, r eşittir, a çarpı, bir eksi, kosünüs pi eksidir.
+
+287
+01:02:12,355 --> 01:02:13,135
+Eğdi, iki a.
+
+288
+01:02:14,576 --> 01:02:15,576
+Şurası iki a idi.
+
+289
+01:02:16,395 --> 01:02:19,036
+Böyle eğrileri bu şekilde yorumlanmayı bilmemiz gerekiyor.
+
+290
+01:02:20,735 --> 01:02:23,675
+Eğrimiz, böyle çiziyorduk kabaca.
+
+291
+01:02:23,675 --> 01:02:26,355
+Kalıp eğrilerden biriydi, bilmemiz gerekiyordu.
+
+292
+01:02:26,900 --> 01:02:54,140
+Yani şurası, bizim A'mız şu anda 1. Burada A 1 var, dışarıda 1 var. Onun için şurası, haliyle şurası 1 olacak, burası da ne olacak? 2 olacak. İşte böyle. Değil mi? Şimdi bunu bir hatırladıktan sonra, R eşit 1 zaten biliyoruz. R eşit 1 deyince, şuralar 1, 1, eksi 1, eksi 1 diye böyle bir yarı çapı.
+
+293
+01:02:55,411 --> 01:03:09,891
+1 olan çember 7. Şimdi diyor ki, bu eğrisinin dışında, ilk soru da, eğrisinin içinde, reşit 1'in içinde, bunun da dışında olduğuna göre tam olarak burası bir kere. Peki.
+
+294
+01:03:12,931 --> 01:03:16,231
+Peki. Şimdi nasıl yapacağız?
+
+295
+01:03:22,579 --> 01:03:44,640
+Şimdi sıfırdan şu parça, ben şöyle diyeceğim, hocam ben bu dörtte biri bulurum falan diyeceksiniz, bazıları dedi bile muhtemelen. Şu dörtte birlik daire değil mi? Yarı çapı belli, dairenin tüm alanı belli, ondan şunu çıkaracağım diyenler vardır ama kutupsal yazalım. Amacım o.
+
+296
+01:03:48,692 --> 01:04:03,931
+Şu eğride, şu daireli 4, yani şu parçadan, şu parçanın tamamından, r eşit 1'in tamamından neyi çıkaracağım? Şu kısmı çıkaracağım. Değil mi? Onu çıkarmam lazım. Onun denklemi de aslında bu.
+
+297
+01:04:03,931 --> 01:04:12,331
+O zaman diyeceğim ki sıfırdan pi bölü 2'ye, şu bu eğrimiz r eşit 1, birin karesi, birin karesi, eksi şu.
+
+298
+01:04:12,851 --> 01:04:25,032
+Şu parçayı çıkarmam lazım. Sonra ne olacak? Tabii yarısını bulmuş olacağız. O parça ne demek? O da sıfırdan kaça kadardı? Biraz önce yaptım. 90'a kadardı. Şu parçanın oluşması nasıl mümkün?
+
+299
+01:04:26,052 --> 01:04:38,847
+Sıfırdan 90'a kadar hangi eğrideki değişim? 1-kosülüsteki değişim. Sıfırdan 90'a kadar değiştiği zaman şu parça oluşuyor. Tamam mı? Sıfırdan...
+
+300
+01:04:38,847 --> 01:04:50,608
+90'a kadar değiştiğinde şu parça oluşuyor. O zaman onun alanı 1 bölü 2 sıfırdan pi bölü 2'ye kadar 1 eksi cos theta'nın neyi olur? Karesi.
+
+301
+01:04:51,168 --> 01:04:53,407
+İşte onu çıkarmam lazım. İşte çıkardık. Bitti.
+
+302
+01:04:56,048 --> 01:05:02,488
+Evet. Sonra da tabii a bölü 2 bu. Buradan bulduğunuz sayı a bölü 2 olacak. A bölü 2 işte ne çıkarsa.
+
+303
+01:05:03,027 --> 01:05:06,708
+C çıktı, o zaman A 2C olmuş olur, değil mi?
+
+304
+01:05:08,567 --> 01:05:21,527
+Şimdi, tam tersi, 1'in dışında, 1 eksi kusün üstünde içinde olduğu için, o zaman bu parçaya soruluyor, bu sefer bu parçayı bulun diyor.
+
+305
+01:05:22,807 --> 01:05:23,867
+Yazın diyor integral ile.
+
+306
+01:05:25,627 --> 01:05:26,167
+O nedir?
+
+307
+01:05:28,847 --> 01:05:29,367
+Şimdi,
+
+308
+01:05:30,579 --> 01:05:35,079
+Şöyle geldiğim zaman, nereden nereye kadar hesaplıyordum bunu?
+
+309
+01:05:35,079 --> 01:05:43,479
+P bölü 2'den, P bölü 2'den, P'ye kadar hesaplarsam neyi bulurum? Şöyle şunu bulurum.
+
+310
+01:05:44,499 --> 01:05:44,839
+Şöyle.
+
+311
+01:05:48,039 --> 01:05:53,879
+Siz P bölü 2'den, P'ye kadar hesaplarsanız, P için aldığı değer neydi? 2A.
+
+312
+01:05:55,139 --> 01:05:57,859
+90 için aldığı değer neydi? A. Değil mi?
+
+313
+01:05:59,476 --> 01:06:24,736
+Yani burada da tabii 1, burası da kaçtı? 2. 1'e 2'ydi değil mi? 1'e 2'ydi. 1'e 2. Diyeceğim şu parça, pi bölü 2'den pi'ye kadar, bu alan 1 bölü 2, pi bölü 2'den pi'ye kadar, 1 eksi kos tetanın karesidir, diyeceksiniz bana bu alan.
+
+314
+01:06:24,736 --> 01:06:26,876
+Ama ben neresini istemiyorum bunun, bakın.
+
+315
+01:06:27,668 --> 01:06:29,188
+Şu parçayı istemiyorum, şu.
+
+316
+01:06:31,628 --> 01:06:32,987
+Şuralar da taralı burada.
+
+317
+01:06:33,327 --> 01:06:35,168
+Şuradaki parçayı çıkarmam lazım.
+
+318
+01:06:35,327 --> 01:06:37,367
+O hangi eriden kaynaklı?
+
+319
+01:06:39,427 --> 01:06:41,068
+Hangi eriden kaynaklı?
+
+320
+01:06:43,248 --> 01:06:45,047
+R eşit birden kaynaklı.
+
+321
+01:06:45,128 --> 01:06:46,487
+Yani o parça şu.
+
+322
+01:06:47,728 --> 01:06:49,228
+Şu parçayı nasıl oluşturacağım?
+
+323
+01:06:49,788 --> 01:06:52,168
+Pi bölü 2'den pi'ye kadar.
+
+324
+01:06:53,492 --> 01:07:03,592
+O parçanın değeri, pi bölü 2'den pi'ye kadar bir kare d teta diyeceğim. Bir bölü 2'si de var önünde. Değil mi? Onu çıkarmam lazım. İşte onu çıkardık.
+
+325
+01:07:04,572 --> 01:07:17,312
+İşte. Nerede yazdık? Bir kare d teta. Bu ne demek aslında? Bir bölü 2, bir eksi kosit teta'nın karesi d teta, eksi bir bölü 2, bir kare d teta.
+
+326
+01:07:17,312 --> 01:07:20,532
+Bir kare dediğim, yani şu parçayı ne yaptık? Şu beyaz parçayı.
+
+327
+01:07:20,947 --> 01:07:30,067
+Çıkarmamız gerektiği için onu çıkardık. O da yarısına eşit oldu. Şu aşağısı da yarısı. Bu A bölü 2, burası da A bölü 2. Değil mi? Bitti. Bu şekilde.
+
+328
+01:07:31,127 --> 01:07:42,747
+Şimdi ikisinin sınırladığı ortak alan, şu üçüncüsü ortak alanı soruluyor. Evet, o ortak alan, bunu hesaplayalım şimdi.
+
+329
+01:07:46,771 --> 01:07:47,291
+Evet.
+
+330
+01:07:49,551 --> 01:07:50,231
+Oda?
+
+331
+01:07:57,076 --> 01:07:59,196
+Onu nasıl söyleyeceğim?
+
+332
+01:08:01,096 --> 01:08:04,756
+O da, bakın, şu parça var.
+
+333
+01:08:06,696 --> 01:08:09,115
+Şu parça sıfırdan doksana kadar şu.
+
+334
+01:08:10,115 --> 01:08:10,776
+Şu integral.
+
+335
+01:08:11,376 --> 01:08:12,896
+Şu parçanın değeri.
+
+336
+01:08:13,436 --> 01:08:14,856
+Şurada bak, bir bölgede dahil tabii.
+
+337
+01:08:15,576 --> 01:08:19,655
+Şu parça sıfırdan, şurası doksan için aldığı değerde hatırlarsanız aç olarak.
+
+338
+01:08:20,536 --> 01:08:23,935
+Sıfırdan doksana kadar oluşan kimdeki değişim?
+
+339
+01:08:24,340 --> 01:08:50,199
+R eşit, bir eksi kosünüs tetadaki değişim burası. İşte o değişimin değeri, parçanın değeri bu olmuş oluyor. Sonra şu parça gerekiyor bana. Tabii yarısı bu. Şu parça gerekiyor. Hocam diyeceksiniz ki o da kimdeki değişim? R eşit, birdeki değişim. Nereden nereye peki? Pi'ye kadar. Pi bölükten, pi'ye kadar bir kare değil. Bir kare.
+
+340
+01:08:50,676 --> 01:08:58,216
+D, T, T. O parçayı da eklersem, o zaman istediği alanın yarısını bulmuş olurum. A bölü 2 deyip buradan hesaplıyoruz. Bu kadar.
+
+341
+01:08:59,396 --> 01:09:15,316
+Evet, yani şu parça var. O parça sıfırdan pi bölü 2'ye kadar olan şuna eşit. Şuradaki parça, o da buna eşit. Dolayısıyla onların toplamı alanın yarısını veriyor.
+
+342
+01:09:18,515 --> 01:09:20,195
+Tocuzun çoğu, tabii öyle.
+
+343
+01:09:29,939 --> 01:09:53,299
+Evet, bunu da çözelim. Ondan sonra gerisini olmadığını size bırakalım. Yani diğer soruları siz tek tek yine geri sorulara bakın. Galiba hep kutupsal gidiyor. Şimdi bu da nasıl? İki kosümüs tetanın içinde, köküçün dışında. Şimdi köküç, bunları yine tanıyacağız, tanımamız gereken eğriler dedik.
+
+344
+01:09:55,299 --> 01:09:56,100
+Evet.
+
+345
+01:09:57,235 --> 01:10:00,136
+2 kosin üst teta biraz önce de yaptık, böyle bir eğri.
+
+346
+01:10:02,376 --> 01:10:04,095
+2 kosin üst teta böyle bir eğri.
+
+347
+01:10:05,735 --> 01:10:15,095
+Kök 3 de, işte R kök 3'ü biraz önce de söylediğimiz üzere, R kök 3, şurası kök 3, kök 3, kök 3.
+
+348
+01:10:16,180 --> 01:10:35,539
+Kök 3, eksi kök 3, eksi kök 3 ve kök 3 olan bir çember, yarı çapı kök 3 olan çemberdi hatırlarsanız. İki kosü de böyle çizdik. Ne diyor? Bu iki kosün içinde, evet bura, doğru, diğerinin dışında. Tamamı aslında da, tabii ilk başta kök 3'ün dışında dediği için tam burası.
+
+349
+01:10:38,323 --> 01:10:55,283
+Nasıl hesaplayacağız? Şimdi şu çok önemli, şu parça nedir? 2 kos'u kök 3'e esitlersek, eğerlerinin eklemi, re eşit 2 kos teta, eşittir kök 3, re eşitledik, kos teta, kök 3 bölü 2 olunca, haliyle tetamız ne de olur?
+
+350
+01:11:05,332 --> 01:11:12,432
+Nasıl yapacağım? Şimdi şu değişime bakacağım.
+
+351
+01:11:14,792 --> 01:11:24,172
+Theta sıfırdan pi bölü altıya kadar değişince benim şu alanı bulurum. Şu parçada dahil. Yani şöyle.
+
+352
+01:11:28,884 --> 01:11:34,923
+teta sıfırdan pi bölü altıya kadar değişince şu alan olur.
+
+353
+01:11:38,804 --> 01:11:50,844
+Değil mi? Bu alan olur. Ama ben şuradaki şu parçayı istemiyorum, şu şu. Şuradaki gözüken şu içeriği istemiyorum. Onu ne yapmam lazım? Çıkarmam lazım. Evet, onu çıkarmam lazım.
+
+354
+01:11:51,564 --> 01:12:02,064
+Diyorum ki sıfırdan pi bölü 6'ya kadar 1 bölü 2, sıfırdan pi bölü 6'ya kadar 2 cos theta'nın karesi eksi 1 bölü 2. Neyi çıkarmam lazım? Şu parça.
+
+355
+01:12:02,644 --> 01:12:10,283
+Diyeceksiniz ki, hocam, o parçada nereden kaynaklanıyor? Theta sıfırdan pi bölü 6'ya kadar değişirken, şu eğriden kaynaklanan parça.
+
+356
+01:12:10,844 --> 01:12:20,944
+Bu eğri kim? Re eşit köküç. O zaman neyi çıkaracağım? Köküçün karesi d theta diyeceğim. Nereden nereye? Sıfırdan pi bölü 6'ya. Bu kadar.
+
+357
+01:12:22,564 --> 01:12:28,043
+İçerideki şu parça, re eşit köküçten kaynaklanan parça sıfırdan.
+
+358
+01:12:28,979 --> 01:12:40,699
+P bölü 6'ya kadar, kök 3'ün karesini hesaplarsam, o parçanın değerini bulmuş olurum, onu çıkardım mı, yarısını bulurum alanın. Sonra tamamı da bulunur. Bitti. Bu kadar.
+
+359
+01:12:43,299 --> 01:12:54,599
+Diğeri, 2 kosünüs tetanın dışında, kök 3'ün içinde. Evet, kök 3'ün içinde. 2 kosünüsün.
+
+360
+01:12:55,859 --> 01:13:00,479
+Dışında. Evet, şimdi onu nasıl hesaplıyoruz?
+
+361
+01:13:04,979 --> 01:13:18,279
+O da, şimdi bakın, onu da şöyle diyeyim, şu parçayı çıkarmam, şurada minik bir parça var ya, şöyle deseydim ben, siz diyecektiniz zaten muhtemelen de, şöyle.
+
+362
+01:13:19,459 --> 01:13:26,840
+Bakın, buradan, pi bölü altıdan başlasanız, şuraya kadar gelseniz, şu parça dahil, hepsi olur.
+
+363
+01:13:27,699 --> 01:13:31,639
+Kimde? R eşit, bu alan ne olur? 1 bölü 2.
+
+364
+01:13:32,307 --> 01:13:55,968
+Kök 3'ün karesi, DTT olur. Ama şurada bir var ya fazlalık, orayı istemiyorum ben. Orayı istemiyorum. Yani şu, bakın şurada işaret ettiğim, şurayı çıkarmam lazım oradan. O nasıl? O da pi böl 6'dan, pi böl 6'dan kimde oluşuyor o?
+
+365
+01:13:56,979 --> 01:14:22,459
+Nerede? Kök 3'te oluşan, değil mi şey? 2 kosta oluşan, şu parça. Bu parça nasıl oluşuyor? Şurayı nasıl hesaplarsınız? Bu pi bölü 6'dan nereye kadar değişiyor? Theta eşit, pi bölü 2'ye kadar değişiyor. Bu parçanın değeri nedir? Onu çıkarmam lazım. 1 bölü 2, pi bölü 6'dan pi bölü 2'ye kadar, i'nin karesi.
+
+366
+01:14:22,931 --> 01:14:32,912
+2 cos theta'nın karesi olur. Çünkü theta, bu bölgenin oluşmasını sağlayan theta'daki değişim, pi bölü 6'dan pi bölü 2'ye kadar.
+
+367
+01:14:33,492 --> 01:14:40,691
+Evet, o neymiş bir daha söylüyorum, 1 bölü 2, 2 cos theta'nın karesi de theta, şu küçük parça.
+
+368
+01:14:41,291 --> 01:14:44,492
+Onu çıkardım, o yarısını elde etmiş oldum, sonra iki kat aldım, bitti.
+
+369
+01:14:46,152 --> 01:14:48,152
+Şimdi sonuncusu ortak alan.
+
+370
+01:14:49,971 --> 01:14:51,791
+Evet, sonuncusu da ortak alan.
+
+371
+01:14:55,796 --> 01:14:56,716
+Evet, şu.
+
+372
+01:15:00,532 --> 01:15:04,532
+Evet, ortak alanda nasıl yaparız?
+
+373
+01:15:06,672 --> 01:15:09,612
+Şimdi ortak alanda şu küçük parça var bakın.
+
+374
+01:15:11,032 --> 01:15:13,891
+Ortak alanda, ortak alan.
+
+375
+01:15:13,992 --> 01:15:15,432
+O küçük parça nasıl oluşur?
+
+376
+01:15:16,152 --> 01:15:16,352
+Şu.
+
+377
+01:15:17,872 --> 01:15:18,891
+Şunun değeri şudur.
+
+378
+01:15:20,391 --> 01:15:21,212
+Niye diyeceksiniz?
+
+379
+01:15:21,811 --> 01:15:25,952
+Çünkü teta sıfırdan şöyle değil mi bu?
+
+380
+01:15:26,996 --> 01:15:46,056
+Ben şu parçayı pi bölü 6'ya kadar, theta sıfırdan, theta eşit pi bölü 6'ya kadar hesaplarsam, şu parçayı hesaplamış olur muyum? Olurum. Değil mi? O parçayı bulmuş olurum.
+
+381
+01:15:46,896 --> 01:15:53,095
+Kim? R eşit ne eğilisi üzerinde? Kök 3 eğilisi üzerinde o parçayı bulurum. Ama bir de yukarısı var.
+
+382
+01:15:53,684 --> 01:16:20,963
+Bir de nereye ekleyeceğim? Şuraya ekleyeceğim. Şuraya ekleyeceğim. O da nedir? Kimden kaynaklanan? Kosünüsten kaynaklanan. O parça nedir? Değerimiz çünkü re eşit ne? 2 kosünüs teta. O nereden nereye oluşuyor? Pi bölü 6'dan şurası.
+
+383
+01:16:21,939 --> 01:16:35,479
+Pi bölü 2'ye kadar, değil mi? Evet. O parça, yani şu üstteki parça, şu parça, yani şöyle diyeyim, şu parçayı bulmam lazım. Bu parça nereden nereye oluşuyor?
+
+384
+01:16:35,659 --> 01:16:44,439
+Teta, pi bölü 6'dan, pi bölü 2'ye kadar değiştiği zaman kimdeki değişim? R eşittir. 2 kosünüs tetadaki değişim.
+
+385
+01:16:44,916 --> 01:16:53,316
+O zaman o alan 1 bölü 2, 2 kosinus teta'nın karesi d teta diyeceğim, pi bölü 6'dan pi bölü 2'ye kadar.
+
+386
+01:16:54,115 --> 01:17:02,236
+Onu eklemem gerekiyor. Bu kadar. Bitti. Bu. Şu yukarıdaki parçanın şunun hesabını unutmayın. Onun hesabı bu.
+
+387
+01:17:04,015 --> 01:17:10,435
+Şu aşağı, şu alttaki parçanın hesabı o da bu. İki katını alacağız simetrik olduğu için.
+
+388
+01:17:15,028 --> 01:17:15,507
+Evet.
+
+389
+01:17:22,068 --> 01:17:22,748
+Teşekkürler.
+
+390
+01:17:26,707 --> 01:17:28,647
+Evet, şimdi diğer soruda ne var?
+
+391
+01:17:31,688 --> 01:17:34,107
+Bu ne farkı var bunun?
+
+392
+01:17:34,607 --> 01:17:41,507
+Bu da R4, theta pi bölü 2, R eşit 2 sekant.
+
+393
+01:17:42,228 --> 01:17:49,948
+Şimdi bir kere burada da eğrileri biraz bu sekant bir eğri ben size geçen ders söylemiştim. R eşit 4'ü hemen zaten çizersiniz. O çember biliyoruz.
+
+394
+01:17:49,948 --> 01:18:01,627
+Theta eşit pi bölü 2, hani y eksenine karşılık gelen ışınımızdı. Tamam. Bu idi. R eşit pi, theta pi bölü 2. Theta pi bu. Şu ne demekti bir de?
+
+395
+01:18:09,395 --> 01:18:33,915
+Bu da 2 eşittir, r kosinus teta. Ama bu neydi? x'ti. Demek ki aslında bu x eşit 2 doğrusu. Yani bu r eşit 2 sekant teta dediğimiz aslında ne demektir aynı zamanda? x eşit 2 doğrusu. Bu içeriden geçeceğini görmeniz lazım. İşte şuradan geçiyor. Aslında şurası 2 değil mi? Olduğunu görmek gerekiyor.
+
+396
+01:18:34,676 --> 01:18:37,016
+Peki, bunlar nerede kesişir?
+
+397
+01:18:39,496 --> 01:18:45,776
+Şurada denklemleri eşitleyerek bulacağız. Birisi R eşit 4. Şu şurası nedir diyoruz.
+
+398
+01:18:46,396 --> 01:18:54,716
+Diğeri R eşit 2 cos theta. 4 eşittir 2 cos theta deyince, burası 2.
+
+399
+01:18:55,596 --> 01:18:57,316
+Cos theta eşit 1 bölü 2.
+
+400
+01:18:58,695 --> 01:19:00,156
+Theta 60, 1 bölü 3.
+
+401
+01:19:00,692 --> 01:19:17,631
+olduğunu görmek gerekiyor. Yani kesişim noktasındaki açı, pi bölü 3. Onu gördük. Peki, alan nedir? Alan, altta üst simetri görüyorsunuz. Üstteki alanı hesaplarsam, yarısını hesaplamış olurum.
+
+402
+01:19:18,931 --> 01:19:24,891
+Üstteki alanda, şimdi diyeceksiniz ki, üstteki alan ne? Üstteki alan,
+
+403
+01:19:30,131 --> 01:19:35,111
+Şu, bizim şunun adı neydi? X eşit 2 doğrusu ama diğer adı 2.
+
+404
+01:19:36,531 --> 01:19:37,351
+Sekant theta.
+
+405
+01:19:38,251 --> 01:19:39,511
+2 sekant theta'yı da.
+
+406
+01:19:41,751 --> 01:19:45,391
+Biz 2 sekant theta'yı,
+
+407
+01:19:45,391 --> 01:19:48,391
+2 sekant theta'yı,
+
+408
+01:19:49,851 --> 01:19:51,271
+eğrisinin,
+
+409
+01:19:51,859 --> 01:19:59,739
+oluşturduğu alana ki o bir doğru veya evet bu sekant theta eğrisinin oluşturduğu alanı
+
+410
+01:20:03,252 --> 01:20:19,131
+Şu parçayı, teta'yı sıfırdan pi bölüçe kadar değiştirdiğim zaman, eğrimiz de şu olduğu için, olduğu için şu alan oluşturur.
+
+411
+01:20:19,551 --> 01:20:20,592
+Tamam mı? Bu önemli.
+
+412
+01:20:30,323 --> 01:20:35,884
+Pi bölü 3'e kadar nedir? 2 sekant, teta'nın karesi. Neresi? Şu parça.
+
+413
+01:20:37,823 --> 01:20:46,884
+Peki, ondan sonra şu yukarıdaki parça ne peki? O da pi bölü 3'ten, pi bölü 2'ye kadar hangi eğriden kaynaklanan?
+
+414
+01:20:47,064 --> 01:20:51,984
+Şu dıştaki eğri kimden kaynaklanan? R eşit 4'ten kaynaklanan alandır.
+
+415
+01:20:53,003 --> 01:20:55,043
+O alanın değeri ne? O alanın değeri de bu.
+
+416
+01:20:56,083 --> 01:21:05,724
+Bitti. Sonra, tabii yarısını hesaplamış oluyoruz. 2 ile çarp biter. Evet. Bu şekilde.
+
+417
+01:21:18,100 --> 01:21:23,159
+Yine alan soruları var. Başka alan ağrıç soru var mıymış burada? Bir bakayım.
+
+418
+01:21:25,340 --> 01:21:26,079
+Ortak alan.
+
+419
+01:21:29,260 --> 01:21:32,020
+Evet, bayağı alan sorusu var ama 18 tane. İyi.
+
+420
+01:21:33,640 --> 01:21:34,200
+Yeter.
+
+421
+01:21:36,120 --> 01:21:36,500
+Evet.
+
+422
+01:21:37,300 --> 01:21:37,659
+12.
+
+423
+01:21:44,500 --> 01:21:54,159
+Evet, şunun da yorumunu yapalım ve gerisini size bırakayım. Yani üzerinden geçme, geçersin bir daha çözümlere bakarak.
+
+424
+01:21:55,119 --> 01:22:01,639
+Önce soruyu kendinize yazarsınız, çözmeye çalışırsınız. Çözemeyince de çözümden çözemezseniz şayet.
+
+425
+01:22:02,440 --> 01:22:09,359
+Çözüme bakarak çalışırsınız diye düşünüyorum. Şunu da yapalım, bırakalım bugünlük.
+
+426
+01:22:10,228 --> 01:22:14,307
+R eşit 1 eksi sinteta, R eşit sinteta, erilerin sınırladığı bölgenin alanını bu.
+
+427
+01:22:16,587 --> 01:22:28,587
+Şimdi bir kere, şu erileri bir kere tanıyacağız. Daha önce de söyledim, şu iki eriyi bileceğiz demiştim.
+
+428
+01:22:29,288 --> 01:22:36,407
+R eşit sinteta bir kere, şöyle bir eri. R eşit A sintetayı bileceğiz demiştik.
+
+429
+01:22:36,756 --> 01:23:00,695
+Şurası a'ydı, şurası a bölü 2. Bunu bileceğiz. Eğer burası bu sorudaki gibi 1 olursa, a'mız 1, bu da 1 bölü 2 olur. Tamam mı? Bunu çizdik. Diğer eğriyi de bileceğiz. O eğrimi de, kalıp eğrileri bilmeniz gerekiyor demiştim. Bu eğri. Bu re eşit neydi? a bir eksi sinteta buydu.
+
+430
+01:23:03,699 --> 01:23:08,619
+pi bölü 2'ye kadar çiziyorduk, sonra y'ye göre yansıtıyorduk.
+
+431
+01:23:09,500 --> 01:23:11,399
+Eksi pi bölü 2 için aldığı değer burası.
+
+432
+01:23:12,920 --> 01:23:16,019
+R eşit a çarpı, teta eşit eksi pi bölü 2 için.
+
+433
+01:23:17,599 --> 01:23:21,719
+1 eksi, eksi 1 sine, eksi 90, eksi 1'dir, 2a.
+
+434
+01:23:22,420 --> 01:23:23,379
+Şurası 2a'ydı.
+
+435
+01:23:24,099 --> 01:23:25,479
+Eksi pi bölü 2 için aldığı değer.
+
+436
+01:23:26,180 --> 01:23:28,760
+Şimdi sıfıra geldiğim zaman, teta sıfır için.
+
+437
+01:23:29,427 --> 01:23:52,307
+R eşitli sin 0, 0, A şurası A'ydı. Sonra, theta 0 için A'ydı. Theta eşit pi bölü 2 için ise, R eşit A çarpı sin 91, 0 oluyordu. Evet, 0 oluyordu. Yani şurası, 0 oldu. Ne zaman? Theta pi bölü 2 olduğu zaman.
+
+438
+01:23:52,724 --> 01:23:58,684
+Sonra y ekserine göre simetriyeni alıyorduk. Bu eğriler bilinmesi gerekiyor.
+
+439
+01:24:00,804 --> 01:24:08,604
+Bizim tam A'm, A burada 1 tabii bizim. Burası 1, burası da 2. Bu şekilde. Bunları bilmemiz gerekiyor.
+
+440
+01:24:09,863 --> 01:24:16,443
+Şimdi diyor ki bu alanı hesaplayın. Şimdi bu alanda iki parça, iki parça.
+
+441
+01:24:18,068 --> 01:24:31,868
+Şu alttaki parçaya bakın. Şu alttaki parça, kimden kaynaklanan o? Şu eğrimiz hangi eğri? Sintetadan kaynaklanan eğri. Ne diyeceğim? Nereden nereye kadar değişiyor?
+
+442
+01:24:31,868 --> 01:24:44,068
+Teta sıfırdan pi bölü altıya kadar değişirken şu eğriden, yani re eşit sintetadan kaynaklanan parça oluyor şurası. Onun değeri budur. Sonra
+
+443
+01:24:45,235 --> 01:25:10,876
+Diğer parça, üst parça şu üstü, teta pi bölü 6'ı. O nereden nereye kadar? Pi bölü 6'dan, şu pi bölü 6'dan nereye kadar? Pi bölü 2'ye kadar şu üstteki bizim hangi yerimiz o? R eşit bir eksi sinüs tetadan kaynaklanan parça o. Nereden nereye? Teta pi bölü 6'dan pi bölü 2'ye kadar değişik. İşte onun değeri de bu. Bu ikisini toplarsanız.
+
+444
+01:25:11,988 --> 01:25:22,427
+yarısını bulmuş oluruz. 2 ile çarpınca, yani yarısı, bunu a'yı bulduktan sonra, 2 ile çarparız, biter.
+
+445
+01:25:23,167 --> 01:25:29,007
+Tabii şurada yalnız integral hesaplarken unutmayın, sin karenin integrali geliyor. Sin kare yerine ne yazmak önemli?
+
+446
+01:25:30,007 --> 01:25:35,427
+1 eksi, cos 2 teta bölü 2 yazmayı unutmayacağız. Eğer cos kare çıkarsa karşımıza,
+
+447
+01:25:35,855 --> 01:25:40,095
+1 artı kosünüs 2 teta bölü 2 yazmayı unutmayacağız. Bunlar önemli.
+
+448
+01:25:41,615 --> 01:25:47,135
+Evet, geri soruyu sizlere bırakıyorum. Yani tekrar ama mutlaka bunları çözün.
+
+449
+01:25:47,915 --> 01:25:51,415
+Önce kendiniz çözmeye çalışın. Çözemezseniz çözümlere bakın.
+
+450
+01:25:52,055 --> 01:25:57,495
+Bu sorular önemli soru tipleri. Bir kısmı zaten bizim sınavlarımızda sorulmuş sorular.
+
+451
+01:25:58,495 --> 01:26:02,555
+Sizi sınavla hazırlamak için epeyce yeterli olur diye düşünüyorum.
+
+452
+01:26:03,283 --> 01:26:08,764
+Evet, benim anlatacaklarım bu kadar. Sizin sormak istediğiniz bir şey var mı? Yoksa serbestsiniz.
+
+453
+01:26:22,131 --> 01:26:24,951
+Bunu paylaşayım diyeceksiniz. Kimsede ses çıkmadı.
+
+454
+01:26:27,171 --> 01:26:27,911
+Paylaşalım mı?
+
+455
+01:26:34,996 --> 01:26:39,856
+[öğrenci], evet, PDF'yi atarsanız dedi [öğrenci]. Evet, atalım bakalım.
+
+456
+01:26:51,667 --> 01:26:57,007
+Dün at, yok atmamıştım, evet doğru, dün atmamıştım. Şimdi geldi mi [öğrenci], bir cevap yaz bana bakalım.
+
+457
+01:26:57,987 --> 01:26:59,467
+Geldi hocam, şimdi gruba atar.
+
+458
+01:26:59,467 --> 01:27:07,307
+Geldi mi? Tamam, peki. İyi. Tamam, bu artık çıktı alıp çalışırsanız daha iyi olur, önerim.
+
+459
+01:27:07,307 --> 01:27:15,967
+Yani elinizde kağıt olarak bulunursa daha iyi olur diye düşünüyorum, çalışırken daha rahat edersiniz gibime geliyor.
+
+460
+01:27:16,532 --> 01:27:26,091
+Evet. Peki görüşmek dileğiyle, kimseden ses çıkmadı, ya haftaya, önümüzdeki hafta görüşmek dileğiyle kendinize iyi bakın, iyi çalışmalar, kolaylıklar diliyorum hepinizden.
+
+461
+01:27:28,511 --> 01:27:29,471
+Görüşürüz hocam.
+
+462
+01:27:30,051 --> 01:27:31,271
+Görüşmek üzere, evet.

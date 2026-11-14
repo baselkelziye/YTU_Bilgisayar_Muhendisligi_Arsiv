@@ -1,0 +1,1991 @@
+1
+00:03:20,723 --> 00:03:24,003
+Evet, kimler burada? [öğrenci] burada, her zamanki gibi.
+
+2
+00:03:26,503 --> 00:03:45,783
+Evet, kimler? [öğrenci] burada. [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci] var, [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci].
+
+3
+00:03:47,219 --> 00:03:50,879
+[öğrenci], Allah [öğrenci] var, bir de [öğrenci] da gelmiş.
+
+4
+00:03:53,800 --> 00:03:59,699
+Peki, şimdi 23 kişi var şu anda.
+
+5
+00:04:03,439 --> 00:04:07,099
+Evet, iki değişkenlerde limit ve süreklilik kısmına başlayacaktık.
+
+6
+00:04:09,972 --> 00:04:29,711
+Dün giriş yaptık. Çok değişkenli fonksiyonların tanım kümesinin bulunuşu ve seviye eğrilerinden bahsettik. Biraz kuadratik yüzeylerle ilgili bir, kuadratik yüzeylerin denklemlerini verdik dün ayrıca.
+
+7
+00:04:29,711 --> 00:04:35,211
+Şimdi limit ve sürekli bir anlatacağım.
+
+8
+00:04:38,420 --> 00:04:45,740
+Biraz daha beklesek mi acaba? Bağlananlar var mıdır diye düşünüyorum. O yüzden bekliyorum ama gelecekler.
+
+9
+00:04:51,124 --> 00:04:57,124
+Evet, şöyle tek değişkenli fonksiyonlarda limit tanımını hatırlarsınız.
+
+10
+00:04:58,364 --> 00:05:08,944
+Orada şöyleydi, limit tanımı, her epsilon büyük sıfır sayısına karşılık bir delta büyük sıfır sayısı bulunmalı.
+
+11
+00:05:16,180 --> 00:05:27,379
+eksi, l, küçük, epsilon sağlanıyorsa, o zaman, fx'in limiti, nerede? x, x0'da eşit, l'dir, diyorduk.
+
+12
+00:05:29,560 --> 00:05:36,139
+Böyleydi. Tek değişkenlerde, limit tanımı buydu. Bir x0 noktasındaki limiti böyle tanımlı, diyorduk.
+
+13
+00:05:41,012 --> 00:05:58,891
+Bu şekildeydi. Şimdi, çok değişkenli, iki değişkenli için vereceğiz. Limit tanımı şöyle. Her epsilon pozitif sayısına karşılık, epsilon pozitif, x eksi a'nın karesi artı y eksi b'nin karesi küçük delta. Bu şu demek tabii ki.
+
+14
+00:05:59,312 --> 00:06:08,192
+Yani x eksi a kare, artı y eksi b kare, küçük delta kare. Yani bu ne demek? Aslında bir çember. Nasıl bir çember?
+
+15
+00:06:09,459 --> 00:06:33,720
+Yarı çapı şey, AB, merkeze AB, yarı çapıda ne olan? Bir delta olan bir çember değil mi? Böyle bir çemberin içi. Hatta değil mi? Bu X'ler, X, Y ikilleri böyle değiştikçe, yani bu AB noktasının, AB noktasının civarında,
+
+16
+00:06:34,355 --> 00:06:48,355
+xye noktaları böyle bir çemberin içindeyken, AB merkezli bir çemberin içindeyken, fxye ile l arasındaki fark, normalde tek değişkenlerinde fx eksil l'ye diyorduk.
+
+17
+00:06:49,355 --> 00:06:58,135
+Yani fx'in l'ye uzaklığı delta, burada epsilon diyorduk.
+
+18
+00:06:58,675 --> 00:07:03,115
+Burada fxye oluyor, tabii ki değişkenli olunca fxye eksi l oldu.
+
+19
+00:07:05,015 --> 00:07:16,555
+Küçük epsilon olacak şekilde, epsilon'a bağlı bir delta sayısı varsa, fxye fonksiyonunu a, b noktasındaki limiti l'dir diyoruz ve böyle yazıyoruz.
+
+20
+00:07:17,775 --> 00:07:20,895
+xye a, b'ye giderken fxye eşit l'dir diye yazıyoruz.
+
+21
+00:07:21,895 --> 00:07:25,895
+Yani biraz önce anlattığım gibi, şurada.
+
+22
+00:07:26,355 --> 00:07:40,115
+Şekil olarak da burada aşağıda gördüğünüz üzere, AB merkezli çemberin içindeki x'e noktalarının F altındaki görüntüsüleri, fx'e'ler de, nerede kalıyor?
+
+23
+00:07:40,115 --> 00:07:49,275
+Evet, nerede kalıyor fx'e'ler de? Şu aralıkta kalıyor. L artı, epsilon ile L eksi, epsilon arasında değişiyor.
+
+24
+00:07:53,439 --> 00:07:59,919
+AB merkezli çemberinin serisi. Bunun görüntüsü olan, F altındaki görüntüsü, Fx'yeler nerede kalması lazım?
+
+25
+00:08:00,619 --> 00:08:08,219
+L artı Epsilon, L eksi Epsilon arantında kalıyorsa, o zaman Fx'yenin limiti L'dir diyoruz.
+
+26
+00:08:09,679 --> 00:08:17,439
+Bu şekilde. Şimdi bu hocam nerede kullanılıyor? Tek değişkenliğinde de pek, yani...
+
+27
+00:08:18,004 --> 00:08:33,324
+Limitin doğruluğunu, limit şu sayıdır denildiği zaman, limit x'ye diyelim ki 0, 0'a giderken, fx'ye eşit bir sayı, mesela 3, 3 olduğunu gösterin dedikleri zaman, bu tanımı kullanıyoruz.
+
+28
+00:08:33,423 --> 00:08:42,564
+Çok fazla, bunun dışında pek kullanmıyoruz. İspatlarda kullanıyoruz bu tanımı yani. İspatlarda. Bu tanım nerede var? İspatlarda kullanılıyor.
+
+29
+00:08:43,091 --> 00:08:55,851
+Tabii önemli aslında ama test sınavlarında falan tabii ki fazla, çok fazla işimize yaramıyor ama limitin bir sayı olduğunu göstermede işimize yarıyor.
+
+30
+00:08:57,432 --> 00:08:59,971
+Şimdi geçelim ikinci sayfaya.
+
+31
+00:09:01,831 --> 00:09:04,072
+Bu arada söyleyeceğim şeyler şunlar.
+
+32
+00:09:05,427 --> 00:09:16,668
+Limit varsa tektir. Bunu unutmayın. Önemli bir tane olur. Yani iki limit olmaz. Aynı tek değişkenli fonksiyonlarda olduğu gibi. Limit varsa tektir.
+
+33
+00:09:19,087 --> 00:09:28,587
+Y eşit fx'in tek değişkenliğinde ne demiştik? x eşit a'da limiti varsa a'nın hem sağında hem de soldan limiti neydi? Birbirine eşitti.
+
+34
+00:09:29,971 --> 00:09:36,031
+Z eşit fx'nin bir ab noktasında limitinin olması için ab'ye nasıl yaklaşırsak yaklaşalım.
+
+35
+00:09:36,491 --> 00:09:39,331
+Orada bir sağdan bir soldan yaklaşma söz konusuydu.
+
+36
+00:09:39,951 --> 00:09:46,812
+Oysa burada bir ab noktası olduğu için bu ab'ye her yönden yaklaşma söz konusu.
+
+37
+00:09:46,951 --> 00:09:48,751
+Nasıl yaklaşırsak yaklaşalım.
+
+38
+00:09:49,991 --> 00:09:51,791
+Hep aynı limiti bulmamız lazım.
+
+39
+00:09:55,104 --> 00:10:06,444
+Yaklaşması lazım. A, B'ye nereden yaklaşırsak yaklaşalım. Aynı fx'ye'nin de aynı L sayısına yaklaşması lazım.
+
+40
+00:10:06,564 --> 00:10:15,884
+Orada sağ ve sol vardı. Burada her yön var. Nasıl yaklaşırsak yaklaşalım. Yani her yönden yaklaştığımızda limitin olması için aynı sonuç çıkmalı.
+
+41
+00:10:15,884 --> 00:10:18,724
+Yani fx'ye hep L'ye yaklaşmalı.
+
+42
+00:10:20,500 --> 00:10:24,319
+Şimdi limit kuralları benzer şekilde, tek değişkenliğindeki gibi.
+
+43
+00:10:25,480 --> 00:10:31,600
+fx'nin limiti l, gx'nin limiti m ise, o zaman toplamın limiti, limitler toplamına eşit.
+
+44
+00:10:31,700 --> 00:10:41,759
+Yani limit f artı, limit g, eğer arası eksi ise, eksi. Limit f artı, toplamın limiti, limitler toplamına eşit.
+
+45
+00:10:42,440 --> 00:10:43,360
+Bu şekilde diyoruz.
+
+46
+00:10:44,379 --> 00:10:47,799
+Bölümün limiti, limitler bölümüne eşit ama payda sıfır olmayacak.
+
+47
+00:10:48,692 --> 00:11:08,132
+Sabiti dışarı alabiliriz, böyle. Yani limit k çarpı f, k limit f diyebiliriz. Bu da tabii k çarpı l demektir. Bu limit f l olduğu için değil mi? Veya tersine buradan sağ tarafa bakarsanız k'yı içeri atabilirsiniz. Onu demek istiyoruz.
+
+48
+00:11:10,484 --> 00:11:22,544
+N pozitif tam sayı olmak üzere limit içeri alınabilir. Limit F üzeri diyelim ki N olsun. Bunu nasıl yazabiliriz? Limit F üzeri parantezin içini alıp sonra kuvvet alabiliriz.
+
+49
+00:11:24,463 --> 00:11:28,604
+Temel özellikler bunlar tek değişkenlerde olduğu gibi çalışıyor dikkat ederseniz.
+
+50
+00:11:33,703 --> 00:11:37,364
+Örneğimiz var. Limit X'ye 2, 1'e gidiyormuş X'ye.
+
+51
+00:11:38,515 --> 00:11:55,836
+Evet, x'ye 2, 1'e giderken, evet şu x soru, x'ye ne nasıl yapabilirim? Limit, bir dakika. Evet, limit x'ye 2, 1'e gidiyor. 2, 1 sayısına x, y bölü.
+
+52
+00:11:56,596 --> 00:12:23,216
+x kare artı y kare, hiçbir tanımsızlık, belirsizlik yok. Direkt yerine yazıyoruz. x yerine 2, y yerine 1 yiyoruz. 2 eksi 1 bölü 2'nin karesi artı 1'in karesi. Dolayısıyla 1 bölü kaç? 5 şey, x'in miydi arası? 2'nin karesi artı 1 bölüş niye olmuş bu? 2 eksi 1, 1, 1 bölü, he x'miş bu pardon, şunu düzeltiyorum. x kare yazmışım ben, x'miş. Dolayısıyla,
+
+53
+00:12:24,115 --> 00:12:49,896
+Şu, şu da değişecek. Evet, kaç olacak? 2 bölü, 1 bölü 3 olarak, 1 bölü 3 olacak. Yani bir belirsizlik yoksa, direkt yazıyoruz. Evet, fonksiyonun, herhangi bir fonksiyonun da belirsizlik yoksa, tanımsızlık yoksa, o zaman limiti bulurken, x yerine bu değeri, y yerine diğer değeri.
+
+54
+00:12:50,515 --> 00:12:58,135
+yazıyoruz. X 2'ye gidiyor, Y 1'e. Bu aynı anda demek. Yani bu ne demek? X 2'ye giderken Y de 1'e gidiyor demek bu.
+
+55
+00:12:58,735 --> 00:13:03,315
+Dolayısıyla X yerine 2 yaz, Y yerine 1 yaz. Belirsizlik, tanımsızlık yoksa. Böyle yapıyoruz.
+
+56
+00:13:04,295 --> 00:13:12,255
+Ama diğeri öyle değil bakın. Burada 0 bölü 0 var. 0 0'a gidiyor. Hem X 0'a gidiyor, Y de 0'a gidiyor.
+
+57
+00:13:12,255 --> 00:13:17,255
+Burada belirsizlik var. 0 bölü 0 oluyor. O zaman...
+
+58
+00:13:17,268 --> 00:13:33,688
+Tek değişkenlerde olduğu gibi özdeşliklerden yararlanma yapıyoruz. Çarpanlara ayırma veya özdeşliklerden yararlanarak hesaplıyoruz. Şöyle ki, şurada bu sıfır bölü sıfır gördükten sonra,
+
+59
+00:13:34,144 --> 00:14:00,363
+x parantezini alırsak x eksi y olur, pi. Pi'de de kök x eksi kök y olur. Tabii ki bunlar kısalır. Burada ne kalır? Kök x artı kök y kalır. Yani x çarpı limit var tabii burada. Kök x artı kök y olur. x sıfıra gidiyor, y de sıfıra gidiyor. Yani bu ne demek? x'ye sıfıra gidiyor demek. Dolayısıyla ne yazar? Sıfır yazarsak sıfır çıkar. Bitti.
+
+60
+00:14:01,172 --> 00:14:10,111
+Evet, bir daha söylüyorum. Tanımsızlık ya da belirsizlik yoksa, direkt yaz. Eğer tanımsızlık, belirsizlik varsa, özdeşliklerden veya çarpanları ayırmadan yararlan.
+
+61
+00:14:11,192 --> 00:14:27,211
+Yaptığımız şey bu oldu. Bakın, x-y'leri, x-y ile şu kök x'i, yani kök x artı kök l ile çarptık ama pratikte tabii biz x çarpı x eksiye, bunu çarpanları ayırmayı bildiğimiz için, bunu yerine ne yazdık? x çarpı kök x eksi, kök y.
+
+62
+00:14:27,988 --> 00:14:37,388
+Kök x artı, kök y yazdık. Payda da zaten kök x eksik, kök y olduğu için, tabii limitler var. Bunlar gitti, hemen sıfır yazınca sıfır çıktı.
+
+63
+00:14:39,348 --> 00:14:46,168
+Evet, diğer soru. Şimdi bakın, bu olduğunu gösterin. Yani dedim ya, ispatlarda tanımı kullanıyoruz, tanımı kullanacağız.
+
+64
+00:14:46,168 --> 00:14:52,348
+Evet, ispatlarda tanımı kullanıyoruz.
+
+65
+00:14:55,028 --> 00:14:59,808
+Bu önemli. İspatlarda tanım kullanılır. Kullanalım. Her epsilon büyük sıfır için tanım şöyleydi.
+
+66
+00:15:00,568 --> 00:15:07,068
+X eksi A'nın karesi, artı Y eksi B'nin karesi, küçük delta diye başlayacaktık.
+
+67
+00:15:07,168 --> 00:15:14,708
+A sıfır, B sıfır. O zaman böyle olur. Ne olur burası? O zaman X kare artı Y kare olur. Kare kök içinde küçük delta.
+
+68
+00:15:15,348 --> 00:15:19,468
+İken. Bunu biliyoruz. Ne olacaktı? İken.
+
+69
+00:15:20,467 --> 00:15:31,168
+fx eksi, fx'ye eksiyle küçük epsilon olmasını sağlayan, epsilon, epsilon olmasını sağlayan bir delta bulacaktık.
+
+70
+00:15:31,987 --> 00:15:42,148
+fx'ye yerine yazarsak, şu fx'ye, ne olur işte fx'ye, eksi limit ne, limitimiz sıfır, limit yerine sıfır yazdık.
+
+71
+00:15:42,148 --> 00:15:47,687
+Küçük epsilon olacak şekilde delta bulacağız, var mı? Böyle bir delta var mı? Bunu araştıracağız.
+
+72
+00:15:49,299 --> 00:16:09,299
+Evet, bakalım. Şimdi araştıralım, bakalım. Küçük delta yapmak istiyorum. Şimdi burası ne oldu? 4x y kare, küçük x kare artık. Bu elimizde var ama unutmayın. Şu var elimizde. Şunu biliyorum. Bundan yararlanacağım biraz da. Bu var elimizde. Şimdi bu 4x...
+
+73
+00:16:10,611 --> 00:16:23,711
+y kare, 4y kare çarpı, 4 çarpı mutlak x diye yazar. Bu pozitif olduğu için, yazabiliriz. Bu pozitif olduğu için, büyük eşit sıfır. Aynen dışarı çıktı. Aynen çıktı. Mutlak x diye kaldı bu.
+
+74
+00:16:24,631 --> 00:16:35,211
+Şimdi, şundan yararlanmak istiyorum ya, bu ne demek aynı zamanda? x kare artı y kare küçük. Ne demek?
+
+75
+00:16:39,187 --> 00:16:48,548
+Delta kare demek gerekirse böyle düşünüyorum. Ama şimdi bakalım, y kare var burada. Şu ifadeden şunu elde etmek için şöyle yapıyorum.
+
+76
+00:16:48,548 --> 00:16:58,148
+Y kareden daha büyük olanı yazıyorum sağa, sağ taraf büyüyor. Evet, bir daha söylüyorum. Y kareden daha büyük olanı yazdım. Y kareye ne ekledim? X kare ekledim.
+
+77
+00:16:58,248 --> 00:17:02,248
+Niye peki X kare ekledim? Çünkü X kare artı Y kare küçük delta kareyi biliyorum. O yüzden.
+
+78
+00:17:02,899 --> 00:17:18,731
+Bir daha söylüyorum. Y kare yerine daha büyük olan y kare artı x kareyi yazdım, sağ tarafı büyüttüm. Bu doğru mu bu eşitsizlik? Doğru. Şimdi o zaman bunları kısalttım. Dolayısıyla 4 mutlak x oldu. O da...
+
+79
+00:17:19,635 --> 00:17:30,516
+4 kare kök x kare diye de düşünülebilir. Yine aynı mantıkla x kare yerine daha büyük olanı yazdık. Niye yazdık hocam? Çünkü şunu biliyorum. Bu bilgi hep kullanacağız.
+
+80
+00:17:31,735 --> 00:17:43,655
+Hep kullanacağız bunu. Evet, x kare artı y kare yazdım. Peki o zaman ben şurada ne biliyordum? Kare kök x kare artı y kare delta'dan küçük.
+
+81
+00:17:44,531 --> 00:17:54,411
+O zaman bu da 4 delta'dan küçük olur. Bu bundan küçük olduğu için 4 delta. Ben ne istiyordum? fx'ye küçük, eksi'ye küçük, epsilon istiyordum.
+
+82
+00:17:55,411 --> 00:18:05,311
+Şimdi neyi gördüm şu anda? fx'ye, eksi'ye, burada işlem yaptım, şunu gördüm. fx'ye, eksi'ye küçük ne oldu? Küçük 4.
+
+83
+00:18:06,163 --> 00:18:29,324
+Delta oldu. Ama ben eşit küçük epsilon olmasını istiyorum. O zaman diyorum ki şu, ben 4 delta olduğunu gördüm ya, fx'i eksileyenin 4 delta'dan küçük olduğunu gördüm ya, ona epsilon diyorum. Ve istediğim deltayı şimdi elde ettim. Epsilon bölü 4 pozitif. İşte epsilon bu. Delta. Böyle bir delta bulduğunuz zaman, herkesin deltası aynı olmayabilir. O zaman...
+
+84
+00:18:29,332 --> 00:18:38,231
+Limit nedir diyoruz. Limit fx'ye kaç burada? L. Limit fx'ye nedir? Sıfırdır şeklinde söylüyoruz.
+
+85
+00:18:38,612 --> 00:18:47,231
+4 delta değil de bir arkadaşınız 5 delta dese yanlış mı olur? Yine doğru olur. O zaman bir başka delta, epsilon bölü 5 olur. Problem yok.
+
+86
+00:18:48,092 --> 00:18:54,452
+Yeter ki doğru, her işi doğru yapalım. Her işi bu verilene göre uygun yapalım. Delta tek türlü belirli değil.
+
+87
+00:18:56,531 --> 00:19:01,871
+Evet, bu şekilde. Limit varlığını gösterme, böyle. Genelde klasik sınavlarda sorulan bir tip.
+
+88
+00:19:05,556 --> 00:19:10,436
+Peki, başka burada bir şey var mı? Geçelim diğer sayfaya.
+
+89
+00:19:12,215 --> 00:19:20,635
+Evet, şimdi iki kat limit ya da ardışık limit, bu da bir tanımını söyleyelim, nerede kullanıldığını söyleyeceğim.
+
+90
+00:19:22,175 --> 00:19:30,416
+İki kat limit şuna diyoruz, bildiğimiz şu limit için, şu limit x a'ya gidiyor, y'de b'ye, x'ye a b'ye gidiyor.
+
+91
+00:19:31,923 --> 00:19:43,183
+Önce B'ye göre limiti hesaplayıp, sonra bulduğumuz bu limitin tekrar A'ya göre hesaplanması ile elde ettiğimiz limit L1 olsun.
+
+92
+00:19:44,063 --> 00:19:50,284
+Bunun tersini yapalım. Yani önce A'ya göre limiti hesaplayalım.
+
+93
+00:19:51,663 --> 00:19:57,304
+X A'ya göre hesaplayalım. O limiti tekrar B'ye göre hesaplayalım. Buna da L2 diyelim.
+
+94
+00:19:59,028 --> 00:20:18,907
+Burada şu var, bunu şurada kullanıyoruz. Aslında şu ası çok gerekli değil aslında. Bu L1, L2'den farklıysa limit yok. Yani ardışık limitler, bunlara ardışık limit ya da iki kat limit diyoruz. Buna ne diyormuşuz? Ardışık limit.
+
+95
+00:20:21,172 --> 00:20:42,731
+limitler, ardışık limitler. Yani önce y'ye göre, sonra x'e göre alma, önce x'e, sonra y'ye göre alma. Buna ardışık limit. Zaten arka arka alıyoruz. O yüzden ardışık diyoruz, ardışık limit. Burada bulduğumuz l1 ve l2 birbirinden farklıysa limit yok. Burada kullanıyoruz. Limitin olmadığını göstermek için kullanılıyor bu. Ama l1 eşit l2 ise,
+
+96
+00:20:44,500 --> 00:20:53,360
+Yani limit var diyemiyoruz. Burası biraz şey olmuş, biraz kötü yazılmış. L1 eşit L2 ise limit var diyemeyiz.
+
+97
+00:20:57,680 --> 00:21:10,140
+Diyemeyiz. Tamam mı? Evet, A'yı öyle düzenleyelim. Evet, bir daha söylüyorum. L1 eşit L2 ise limit var diyemeyiz. A'sı bu. Evet, L1 eşit L2 ise
+
+98
+00:21:11,604 --> 00:21:37,604
+B ise limit var diyemiyoruz. Tamam mı? B ama şunu kesin söylüyoruz. L1, L2'den farklıysa limit yoktur. Bitti. Bir daha söylüyorum. Ardışık limitler eşitse limit var kesin diyemiyoruz. Onun için A'yı çok anlamlı. Yani anlamlı da yani işimize yarayan B'si. Ardışık limitler farklıysa limit yok unutmayın. Demek ki ardışık limitler ne işe yarıyormuş? Ardışık limitler...
+
+99
+00:21:38,355 --> 00:21:59,575
+var fakat farklıysa o zaman limit yok diyoruz. Bunu bileceksiniz. Ardışık limit ne işe yarıyor? Limit olmadığını söylemek için, ardışık limitleri bulduğumuzda birbirinden farklıysa limit yok diyebilmeye yarıyor. Ama ardışık limitler eşitse limit var diyemiyoruz. Onu unutmayın.
+
+100
+00:22:01,779 --> 00:22:29,240
+Biraz bu ifadede şey olmuş, iki kat limit vardır falan gibi, yani ardışık limitler vardır ama limit var diyemeyiz. Limitin var olduğunu garanti etmez. Şu ifade dahi, ardışık limit vardır, yani ardışık limitler var, iki kat limitler var, fakat, öyle desek daha iyi olur, fakat bu limitin varlığını garanti etmez.
+
+101
+00:22:29,663 --> 00:22:42,163
+Ardışık limitler var. Yani L1 eşit L2 ise ardışık limitleri bulmuşuz demek ki. Bulmuş olabiliriz ama limit var diyemiyoruz. Fakat L1, L2'den farklıysa limit yok diyebiliyoruz. Bu önemli.
+
+102
+00:22:57,683 --> 00:23:10,324
+L değerine nasıl yaklaşırsak yaklaşalım, X'ye noktaları, AB noktasına nasıl yaklaşırsa yaklaşsın, FX'ye de aynı L değerine yaklaşıyorsa o zaman limit var diyoruz.
+
+103
+00:23:11,604 --> 00:23:19,024
+O sebepten, şimdi limitin olmadığını göstermek için 2 yol testi ya da çift yol testi denilen bir test var.
+
+104
+00:23:19,423 --> 00:23:24,044
+Yani herhangi iki farklı yoldan farklı limitler bulursak limit yok diyebiliyoruz. Bir daha söyleyeyim.
+
+105
+00:23:24,596 --> 00:23:45,375
+Limitin olmadığını göstermek için. Bir, artışık limitler bul. Farklıysa limit yok. Bir. İki, herhangi iki yoldan yaklaş, farklı limitler varsa yine yok. Bir daha söylüyorum. Bir, artışık limitler bul, farklıysa limit yok. İki, herhangi iki yol.
+
+106
+00:23:47,508 --> 00:23:52,408
+boyunca AB'ye yaklaştığımızda farklı limitler bulursak, bir neyli limit yok diyoruz.
+
+107
+00:23:54,048 --> 00:23:54,268
+Evet.
+
+108
+00:23:56,248 --> 00:23:56,888
+Bakalım.
+
+109
+00:23:59,688 --> 00:24:00,328
+Evet.
+
+110
+00:24:01,828 --> 00:24:03,448
+Burada bir daha özetmişiz.
+
+111
+00:24:03,888 --> 00:24:04,908
+Birinci yol demişiz.
+
+112
+00:24:05,008 --> 00:24:07,808
+Limit fx'ye limitin mevcut olmadığını göstermek için.
+
+113
+00:24:07,908 --> 00:24:10,088
+İki kat limitin mevcut olmadığı gösterilebilir.
+
+114
+00:24:10,848 --> 00:24:12,188
+Yani yukarıda söylediğimiz.
+
+115
+00:24:12,596 --> 00:24:20,935
+Ne demiştik? L1 farklı, L2. İse limit yok. Limit yok. İse limit yok dedik.
+
+116
+00:24:22,995 --> 00:24:31,296
+İki, ikinci yol. Yollarından ikisi boyunca alınan limitlerin farklı olduğu. Mesela tabii bu y eşit x demişiz ama.
+
+117
+00:24:31,988 --> 00:24:41,008
+İlla böyle olmak zorunda değil. Genelde bunları kullanırız ama x, y, sıfır, sıfıra gidiyorsa bunları kullanırız. İlla böyle olması gerekmiyor.
+
+118
+00:24:42,308 --> 00:24:53,488
+Fonksiyon şeye bağlı, x, y'nin nereye gittiğine bağlı ama x, y, sıfır, sıfıra gidiyorsa y eşit x, x kare, x küp veya y eşit kx, kx kare. Bu bir takım yollar sonsuz var tabii.
+
+119
+00:24:54,308 --> 00:24:56,988
+Yani işin özü herhangi...
+
+120
+00:24:59,092 --> 00:25:10,251
+İki farklı yoldan limit alındığında farklı çıkarsa limit yoktur.
+
+121
+00:25:15,476 --> 00:25:41,696
+Farklı ise limit, yok özeti bu. Bu yollar işte bazen x, x kare olur, bazen x eşit y kare olabilir falan filan. O x, y'nin nereye gittiğine bağlı olarak değişir. Kx, kx kare, kx küp filan gibi de olabilir. Ama limit tabii bir k değerine bağlı olursa da olmaz yani limit. Tabii k değerine bağlı olursa k'ya değerler verdikçe değişir. Şimdi örneklerle yapacağım zaten.
+
+122
+00:25:45,428 --> 00:25:54,488
+Evet, limit k'ye bağlı çıkarsa da, yani k'ya ya da işte y'ye eşit, y'ye eşit, mx boyunca yaklaştık.
+
+123
+00:25:54,768 --> 00:26:00,888
+Mesela limit m'ye bağlı çıktı. m'ye değiştikçe limit de değişir. O zaman limit olmaz diyeceğiz.
+
+124
+00:26:01,568 --> 00:26:04,428
+Şimdi neyse, örneklerle şimdi anlayacaksınız.
+
+125
+00:26:06,828 --> 00:26:08,308
+Evet, bir örneğimiz şu.
+
+126
+00:26:10,003 --> 00:26:16,804
+Limit, fonksiyonumuz şu. 3x kare eksi y kare bölü, 3y kare artı x kare, 0, 0'daki limitin varlığını araştır.
+
+127
+00:26:17,683 --> 00:26:23,703
+Şimdi, ardıçlık limitlerle bakalım. Önce y'ye göre limit alın. Y'ye göre limit alırsak bu 0.
+
+128
+00:26:26,384 --> 00:26:34,463
+Bakın, şurası 0, burası 0, gitti. 3x kare, x kareye böldük, 3. 3, limit, limit.
+
+129
+00:26:35,188 --> 00:26:40,708
+x sıfıra giderken 3 çıktı, sabitin limiti kendisi olduğu için artık tek değişkenli oldu, 3 bitti.
+
+130
+00:26:42,288 --> 00:26:52,028
+Artışık limitlerden bir tanesi, L'ye 1 diyelim mesela, 3. Diğeri, önce x'e göre alalım, x'e göre aldık bu sıfır, x'e göre x sıfıra gidiyor, bu sıfır.
+
+131
+00:26:52,568 --> 00:27:02,348
+Buradan y kareler gitti, eksi 1 bölü 3. Limit, eksi 1 bölü 3 oldu. Kim? y sıfıra giderken, bakın, şu anda tek değişkene indi, eksi 1 bölü 3.
+
+132
+00:27:02,771 --> 00:27:30,635
+Bu da L2. L2 eksi 1 bölü 3 çıktı. Bunlar birbirinden farklı, limit yok. Yollardan birisi bu. Ardışık limit yöntemi çalıştı. Her zaman çalışmayabilir. Eşit çıksaydı, limit var diyemeyecektik mesela. Evet, eşit çıktayız, limit var diyemeyecektik. İkinci yol, y eşit x. Hocam niye y eşit x diyeceksiniz. Şimdi burada x'ye 0, 0'a gidiyor ya. 0, 0'a. Bu ne demek? x 0'a gidiyor ve...
+
+133
+00:27:30,644 --> 00:27:46,423
+y sıfıra gidiyor demek. Şimdi y eşit x alırsam, x sıfıra gitse, y eşit x aldığım için, y eşit x boyunca aldığım için, y burada x sıfıra giderse, y de nereye gider? Sıfıra gider. Onun için y eşit x almak mantıklı.
+
+134
+00:27:46,423 --> 00:27:55,023
+Tabii y eşit mx alsanız da olur. Bu da doğrudur, x sıfır için. Burada x sıfıra giderse, y nereye gider yine?
+
+135
+00:27:55,796 --> 00:28:08,696
+Sıfıra gider. Böyle de alabilirsiniz genel olarak. Başka da alabilirsiniz. Tek türlü değil bu. Bir arkadaşınız y eşit x alır, bir arkadaşınız y eşit 2x alır. Sorun değil. Yetergi olmadığını gösterin eğer yoksa.
+
+136
+00:28:22,451 --> 00:28:46,651
+0, 0'a giderken, 3x kare, eksi y kare bölü, neymiş? 3, 2, y kare, artı x kare. Ne yaptık? Eşittir dedik. Limit, y eşit x'e, y yerine x yazacağız. O zaman ne olur? 3x kare, eksi x kare bölü, tabii x'e 0, 0'a giderken, kıyalım.
+
+137
+00:28:48,723 --> 00:29:14,983
+Y yerine X yazdık. 3 X kare artı X kare oldu. Evet, buradan ne oldu? 2 X kare bölü limit de var tabii başında. 2 X kare bölü 4 X kare oldu. Yani 1 bölü 2 çıktı. Evet, demek ki Y eşit X boyunca 1 bölü 2 çıktı. Ama her yoldan aynı limiti bulmanız gerekiyor. Fakat Y eşit X kare boyunca yaklaşınca, X kare yazınca Y yerine burada.
+
+138
+00:29:15,571 --> 00:29:23,591
+O zaman ne olur şurası? 3x kare, eksi x veri 4, 3x veri 4, artı x kare oluyor. Ne için? y eşit x kare için.
+
+139
+00:29:25,091 --> 00:29:31,411
+x kare parantezini alıyoruz buradan. Sonra da x yerine sıfıra yazarsak, sıfıra yazarsak ne çıkıyor?
+
+140
+00:29:32,531 --> 00:29:40,291
+0, 3, 3 çıkıyor. Bakın farklı. Herhangi iki yoldan farklı değer aldatma elde ederseniz limit mevcut değil diyebiliyorsunuz.
+
+141
+00:29:40,723 --> 00:30:06,743
+Evet, hocam y eşit x diye bir arkadaşınız, mesela mx alsaydık, y eşit mx boyunca yaklaşsaydık ne olurdu bakın? Böyle de düşünebilirdi bir arkadaşınız. Yazalım. 3x kare, eksi, m kare x kare, 3m kare x kare, eksi artı x kare. Bakın şimdi bu eşittir.
+
+142
+00:30:07,220 --> 00:30:33,932
+x0'a giderken, x kare parantezini alırsak, 3 eksi m kare olur. x kare parantezini alırsak, 3 m kare artı 1 olur. Evet, böyle olur. Bunlar gitti. Ne çıktı? 3 eksi m kare bölü, 3 m kare...
+
+143
+00:30:34,067 --> 00:30:52,788
+Artı bir çıktı. M'ye bağlı çıktı. Mesela M1 için 2 bölü 4 oldu. 1 bölü 2 oldu. Ama M0 için 3 çıktı mesela. Değil mi? Farklı değerler çıktı. Yoktur diyebiliriz. Böyle de yapabilirdik.
+
+144
+00:30:54,048 --> 00:31:00,288
+Yeter ki iki yol bulun. Fix değil yollar. İstediğiniz yolu kullanın. Ama farklı bulursanız.
+
+145
+00:31:01,460 --> 00:31:16,680
+Limit yok diyorsunuz. Aynı bulursanız limit yok diyemezsiniz. Hemen. Çünkü her yolu denemediniz. Yani onun için çok, yani limitin olmadığını düşünüyorsanız, o zaman farklı iki yol bulmaya çalışmanız gerekiyor.
+
+146
+00:31:17,172 --> 00:31:33,612
+Burada y eşit x ile x kare demiş. Ben y eşit mx yazdım. mx için de limitin ne olduğunu gördük. m'ye bağlı çıktı. m'ye bağlı demek m'ye farklı değerler verince farklı sayılar çıktı. O yüzden limit olmadığını söyleyebildik.
+
+147
+00:31:34,731 --> 00:31:40,731
+Evet, bir daha söylüyorum. y eşit mx yazarsam, y eşit mx.
+
+148
+00:31:42,740 --> 00:32:06,980
+y eşit mx, eksiye sıfır sıfıra giderken, tabii 3x kare oldu, eksi m kare x kare oldu, bölü, 3 m kare x kare oldu, artı x kare, x kareler gitti buradan, limit, 3 eksi m kare bölü, x kareler gitti, 3 m kare, artı 1 oldu, yani şu limiti de silebilirim, böyle oldu.
+
+149
+00:32:06,980 --> 00:32:10,180
+Bu da değişiyor, sıfır yazarsam 3 çıkar.
+
+150
+00:32:10,740 --> 00:32:37,779
+0 yazarsam 3 çıkar, 1 yazarsam 2 bölü 4 çıkar, 1 bölü 2 çıkar. Bunlar farklı. O yüzden limit yok. Limit yok. Tek bir yol değil. Y eşit, x, y eşit, x kare boyunca yaklaştık. Yine farklı çıktı. Gördüğünüz gibi. Limit yok yine diyebildik. Yeter ki öyle iki yol bulun ki, öyle iki yol bulun ki, limitler farklı çıksın. Evet, bu şekilde.
+
+151
+00:32:39,539 --> 00:32:41,700
+Şimdi, başka örnek.
+
+152
+00:32:44,399 --> 00:32:50,039
+İkinci yol Kx, o benim yaptığımı yapmış burada. Tamam, yapılmış. Y'yeci Kx ya da Mx fark etmez.
+
+153
+00:32:50,799 --> 00:32:58,139
+Sonuç kime bağlı? K'yı, yani M'ye bağlı demiştik biraz önce. Sonuç M'ye bağlı olduğu için veya K'ya bağlı olduğu için limit yok.
+
+154
+00:33:05,076 --> 00:33:32,556
+Peki, ikinci bir başka bir soru. 0, 0'da bir başka soru. Fonksiyonunu 0, 0'daki limitinin varlığını araştırın. Y eşit kx kare demişiz. Çünkü y eşit kx kare desek anlamlı mı bakalım? x sıfıra giderse, x yerine 0 yazar, x'i 0'a götürürseniz ne olur? x'i 0'a götürürseniz, x'i 0'a götürdünüz. y'de nereye gider? 0'a götürür. Demek ki kx kare seçebilirim.
+
+155
+00:33:33,587 --> 00:33:50,528
+O zaman bakıyorum, x sıfıra giderken, 2x kare çarpı y yerine kx kare yazdık, bölü, x üzeri 4 artı kx kare yazdık, k kare x üzeri 4 olur, değil mi?
+
+156
+00:33:56,819 --> 00:34:05,099
+1 artı k kare, bakın k'ya bağlı çıktı. Yani sonuç k'ya bağlı, limit mecrubu. Bu şu demek, mesela k yerine 1 yazarsanız, 2 bölü 2'den 1 olur.
+
+157
+00:34:06,199 --> 00:34:14,739
+k1 için. k yerine 0 yazarsanız, sonuç 0 olur. Başka bir şey yazarsanız başka. Ama bunlar farklı olduğu için limit yok.
+
+158
+00:34:16,519 --> 00:34:23,819
+Hocam, kx kare demeseydik de, k'yi 1 alarak x kare dese bir arkadaşınız, bir arkadaşınız da 2x kare dese.
+
+159
+00:34:24,307 --> 00:34:44,407
+Zaten o zaman ne çıkacak? İşte buradan 2 bölü, 2'den 1 çıkacak gerçekten. 2x kare olursa, k 2 olduğu için 4 bölü 5 çıkacak mesela. Değil mi? Birisi y'yi x kare alsa, diğeri y'yi 2x kare alsa, buradan da farklı limitler buluruz. Bunun gibi. Tamam mı? Bu şekilde yapabiliyorsunuz.
+
+160
+00:34:50,228 --> 00:35:06,007
+Sonuç, 2 bölü 2'den 1, 1 çıkıyor limit. K 0 için 0 çıkıyor limit. Farklı limit olmaması gerekiyordu. Bunlar eşit değil. O yüzden limit yok.
+
+161
+00:35:08,148 --> 00:35:13,188
+Diyoruz. Evet, bu şekilde. Limit olmadığını göstermeye çalışıyoruz.
+
+162
+00:35:14,516 --> 00:35:21,435
+Yine sorular çözeceğiz. Bununla ilgili burada sadece birkaç örnek var ama tabii soru çözme dersimiz oluyor biliyorsunuz.
+
+163
+00:35:23,475 --> 00:35:32,756
+Evet, bir fxf fonksiyonu. Şimdi sürekliliğe gelelim. Şimdi tek değişkenlerdeki gibi süreklilik tanımı da.
+
+164
+00:35:35,516 --> 00:35:37,975
+Tek değişkenlerde nasıl yapıyorsak öyle.
+
+165
+00:35:39,476 --> 00:35:42,976
+Şimdi süreklilik şuydu, tek değişkenleri bir hatırlayalım.
+
+166
+00:35:45,536 --> 00:35:50,416
+fx fonksiyonu x eşit x0'da ne zaman süreklidir diyorduk.
+
+167
+00:35:51,776 --> 00:35:55,336
+Süreklidir ancak ve yalnız şöyle diyorduk.
+
+168
+00:35:55,416 --> 00:35:57,716
+1. fx0 mevcut.
+
+169
+00:35:59,916 --> 00:36:04,756
+Mevcut. Yani x0'da tanımlı ya da x0'da fonksiyon tanımlı olacak.
+
+170
+00:36:04,756 --> 00:36:06,836
+2. Limit mevcut.
+
+171
+00:36:13,076 --> 00:36:15,215
+Mevcut bu 3, bunlar birbirine eşit.
+
+172
+00:36:19,219 --> 00:36:36,659
+fx eşit fx sıfır, böyleydi. Değil mi? Sürekli olması bu demektir. Bir daha söylüyorum. fx, x eşit sıfır da süreklidir. Ancak ve yalnız şöyle olursa süreklidir. fx sıfır mevcut, yani x sıfır da tanımlı. x eşit x sıfır da f tanımlı o demek bu.
+
+173
+00:36:39,572 --> 00:37:02,792
+2, limit mevcut. 3, bunlar birbirine eşit. Yani limit değeri, x0'da aldığı değere eşit fonksiyon olacaktır. Aynısı burada geçerli. 1, AB noktasında tanımlı. 2, limit mevcut. 3, FAB eşit limit. Bitti. O zaman sürekli. Tek değişkenli de olduğu gibi.
+
+174
+00:37:06,900 --> 00:37:14,900
+Evet, şimdi örneklere gelelim. Bir fonksiyonun tanım kümesinin her noktasında sürekliyse o fonksiyona tabii sürekli diyoruz.
+
+175
+00:37:15,500 --> 00:37:20,420
+Tanım kümesinin her noktasında sürekliyse o fonksiyona süreklidir diyoruz. Örnek.
+
+176
+00:37:23,059 --> 00:37:31,260
+Evet. Peki. Şimdi mesela bu fonksiyon sıfır sıfırda sürekliliğini araştırın diyor.
+
+177
+00:37:33,012 --> 00:37:47,851
+0, 0'da tanımlı mı belli. Nedir F0, 0? 0'mış. F0, 0, 0'mış. Birinci şart sağlandı. Evet, F0, 0'da tanımlı. Çünkü 0, 0 için ne alıyormuş fonksiyon? 0 değerini alıyormuş.
+
+178
+00:37:50,072 --> 00:37:56,112
+İkinci limit var mı? Limit yokmuş bakın. Y eşit KX boyunca yaklaşırsak, buna hakkımız var mı?
+
+179
+00:38:00,016 --> 00:38:27,376
+y eşit kx seçerseniz, x sıfır için y de nereye gider? Bunu sıfıra götürürseniz burada, y de sıfıra gider. x'i sıfıra götürürseniz y de sıfıra gidiyor. O zaman hakkımız var. y eşit kx seçebiliriz yani. Evet, o halde y yerine kx yaz burada. Yaz kx. kx yazdık, kx yazdık. Ne oldu? Böyle oldu. Neler gidiyor bakıyoruz. x kareler gidiyor. 2k bölü 1 artı kare. k'ye varlığı limit yok. Dolayısıyla süreksiz. Bitti.
+
+180
+00:38:28,275 --> 00:38:53,596
+2k bölü, k kare çıktı, limit, k'ya bağlı limit yok. Niye? Çünkü 1 yazarsak limit 2 bölü 2'den 1 çıkıyor, k 1 için. K 0 için limit ne çıkar? K 0 için limit, 0 çıkar. O yüzden limit yok. Limit yoksa süreksiz. İlk koşula baktık ama limit olmayınca süreksiz diyebildik. Bu kadar.
+
+181
+00:38:54,356 --> 00:39:08,436
+Zor değil gördüğünüz gibi, değil mi? Ama hocam y eşit k x demedi de bir arkadaşınız, hocam ben y eşit x baktım, y eşit 2x baktım. Olur. Böyle de olabilir tabii ki.
+
+182
+00:39:09,236 --> 00:39:16,996
+Ha, iki kat limit sonuç vermediği için demişiz. İki kat limiti deneseniz, sonuç vermiyor gerçekten. Öyle olmalı. Bakalım iki kat limitle baksaydık.
+
+183
+00:39:20,980 --> 00:39:32,140
+x0'a giderken, limit y0'a giderken baksak, limit y0'a giderken bu ne olur? y yerine 0 yaz, 0 olur. Limit 0 da 0 olur, 0 veriyor.
+
+184
+00:39:33,420 --> 00:39:46,260
+y0'a, önce x0'a gitse, x0'a gitse yine 0 oluyor, 0. İki kat limitler eşit çıkıyor. O zaman limit var diyemiyoruz. Limit var diyemeyiz.
+
+185
+00:39:48,755 --> 00:40:05,036
+Evet, 2 kat limitler eşit çıkıyor. Bakın, yani önce x yerine 0 yazın, 0, limit 0, 0. x yerine 0 yazın, 0, limit 0, 0, limit. O zaman 2 kat limitler eşit çıkarsa var diyemiyorduk. Bu önemliydi. Evet, o yüzden süreksiz bitti.
+
+186
+00:40:06,695 --> 00:40:15,516
+Başka örnek. Evet, diğer örneğimiz şu. x küp eksi x y kare bölü x kare artı y kare.
+
+187
+00:40:16,179 --> 00:40:24,719
+Yine sıfır sıfır noktasında sürekli olduğunu gösterin demiş. O zaman önce tanımlı olması lazım. Tanımlı mı? Bakalım.
+
+188
+00:40:28,211 --> 00:40:55,751
+F0, 0 nedir? Belli, belli, zaten 0'mış. Birinci kısa alandı. Limit var mı? 2. Limit var mı bakalım. Limit, şeyden gösteriyoruz, limit var mı? Şimdi, olduğunu gösterin dediği için sürekli olduğunu, o zaman yol testinde, yani farklı yollardan yaklaşıp limit olmadığını gösteriyor. Limit olduğunu gösterin dediğine göre tanımı kullanacağız.
+
+189
+00:40:56,340 --> 00:41:12,300
+Tanım hatırlayın. Tanım da şuydu. X eksi A'nın karesi artı Y eksi B'nin karesi küçük delta iken ne olacaktı? F eksiye eksi L küçük epsilon olacaktı. Bu olacak.
+
+190
+00:41:13,000 --> 00:41:20,659
+Şimdi A sıfır, B de sıfır. O zaman ne olacak? X kare artı Y kare küçük delta iken
+
+191
+00:41:21,076 --> 00:41:38,596
+Fonksiyonumuzu yazacağım. Nedir fonksiyonumuzda? İşte x küp eksi, x'ye kare bölü, x kare artı y kare eksi sıfır, limit sıfır olduğu için. Küçük epsilon sağlayacağım, bunu sağlandıracağım. Şunu kullanarak. Yapalım. Bakıyorum ne oluyor yapmaya çalışırsak.
+
+192
+00:41:38,596 --> 00:41:41,596
+Evet, şurada bakın.
+
+193
+00:41:50,036 --> 00:41:51,235
+Şey geçtik, pardon.
+
+194
+00:41:54,356 --> 00:41:54,856
+Açtı.
+
+195
+00:41:57,615 --> 00:41:57,936
+Evet.
+
+196
+00:41:59,275 --> 00:41:59,856
+Şimdi,
+
+197
+00:42:00,755 --> 00:42:02,115
+inşallah bunu yaptık.
+
+198
+00:42:02,115 --> 00:42:03,195
+Bunu yapmıştık.
+
+199
+00:42:10,963 --> 00:42:11,963
+Evet, şöyle.
+
+200
+00:42:13,143 --> 00:42:13,463
+Şimdi.
+
+201
+00:42:19,155 --> 00:42:44,916
+Şurada bakın, fx-y'yi yazıyorduk, değil mi? fx-y'yi yazıyorduk. fx-y'ye şu oldu, fx-y'yi yazıyorduk. L 0 olduğu için, şurada, şurada yazayım mı ben? x küp eksi, xy kare, bölü, x kare artı, y kare eksi, limit 0. 0 olduğu için bunun bir anlamı kalmadı. Şu gitti.
+
+202
+00:42:45,588 --> 00:43:00,948
+Bu eşittir, şöyle yazabilir miyiz? Bakalım. Eşittir. Mutlak x çarpı, x kare eksi y kare bölü, x kare artı y kare pozitif olduğu için aynen dışarı çıktı. Değil mi?
+
+203
+00:43:03,327 --> 00:43:12,347
+Bizim bir deneyimiz vardı, şu vardı elimizde. Bu küçüktür, şöyle diyebilir miyim? Mutlak x çarpı.
+
+204
+00:43:13,139 --> 00:43:35,419
+X kare eksi ye kare yerine daha büyük olanı yazsam, yani X kare artı ye kare yazsam, sağ taraf büyür. Daha büyük olanı yazdım. Niye daha büyük? Bu X kare eksi ye kare. X kareden ye kare çıkarılmış, buraya ye kare eklenmiş. Daha büyük olduğu belli. Niye hocam öyle yazıyorsunuz? Çünkü şunu kısaltacağım. X kare artı ye kare. Bunlar gitti.
+
+205
+00:43:36,179 --> 00:44:02,699
+Küçük ne buldu? Mutlak x. Bak x demek, yani kök x kare demek bir anlamda, değil mi? Onu niye kullanacağım? Şimdi küçük diyeceğim, şunu kullanacağım. Burada kök x kare küçüktür, kök x kare artı y kare, doğru mu? Tabii ki doğru, çünkü y kare ekledim içeriye. Bu da küçük delta biliyorum. Deltayı da epsilon seçtim, bitti. O halde limit var.
+
+206
+00:44:03,923 --> 00:44:25,644
+Çünkü delta bulduk. Bir delta bulursanız limit var. Dolayısıyla limit var. İlk koşul tanımlıydı. Tanımlılık var. 0, 0'daki değeri 0, 0, 0'daki değeri 0. O sağlandı. 2, limit var. O sağlandı. 3, bunlar eşit mi? F0, 0. Evet.
+
+207
+00:44:28,052 --> 00:44:36,192
+0, 0'daki değeri, limitin 0 olduğunu gösterdiğimize göre, şu L buydu, limitin 0 olduğunu göstermiş olduk.
+
+208
+00:44:37,232 --> 00:44:39,952
+X'ye 0, 0'a giderken tanımdan gösterdik.
+
+209
+00:44:41,012 --> 00:44:43,792
+F'x'ye'nin ne olduğunu gösterdik, 0 olduğunu gösterdik.
+
+210
+00:44:43,892 --> 00:44:46,732
+F0, 0'da 0, o da 0.
+
+211
+00:44:46,992 --> 00:44:48,652
+Dolayısıyla nedir? Sürekli. Bitti.
+
+212
+00:44:48,652 --> 00:44:49,412
+Bu kadar.
+
+213
+00:44:51,172 --> 00:44:53,092
+Evet, olduğunu gösterilmiş sorusu böyle.
+
+214
+00:44:56,244 --> 00:44:56,864
+Teşekkürler.
+
+215
+00:45:02,771 --> 00:45:05,311
+Evet, böylece bu soruyu da hallettik.
+
+216
+00:45:08,871 --> 00:45:11,851
+Evet, son sayfama.
+
+217
+00:45:14,251 --> 00:45:16,851
+Evet, tamam bir bakalım, evet.
+
+218
+00:45:19,371 --> 00:45:28,011
+Son şu, tek değişkenliği de olduğu gibi bu özelliklerde, hani çok uzak değil bize, tek değişkenliği de olan özellikler var burada.
+
+219
+00:45:28,755 --> 00:45:52,155
+Bileşkelerin sürekliliği, eğer f fonksiyonu AB'de sürekli ve G'de AB'de sürekli ise, G'de FAB'de sürekli ise, sürekli olan bir fonksiyon ise, o zaman G HX'ye yani bileşke GFX'ye de,
+
+220
+00:45:52,884 --> 00:46:04,604
+fx'ye şeklinde tanımlı birleşken fonksiyon da abd süreklidir. Yani şurada şöyle diyelim, gfx'ye. Burada f abd sürekli.
+
+221
+00:46:06,064 --> 00:46:08,364
+f abd sürekli.
+
+222
+00:46:10,704 --> 00:46:15,064
+g'de f abd bir değer ya.
+
+223
+00:46:15,407 --> 00:46:34,867
+G'de şu içerideki fonksiyonun aldığı FAB değerinde sürekli ise, G'de şu burada FAB noktasında sürekli olacak, G'de FX'nin AB için aldığı değer olan FAB'de de sürekli ise, sürekli olacak.
+
+224
+00:46:36,307 --> 00:46:56,507
+Aldıkça hep sürekli fonksiyonlar elde ediyoruz. İçerideki fonksiyon AB'de sürekli, onun bileşkesi de AB'de sürekli ise, onun dışındaki fonksiyon da, içerideki fonksiyonun aldığı değer de sürekli ise süreklidir.
+
+225
+00:46:57,047 --> 00:47:01,867
+Yani sürekli fonksiyonların bileşkesi süreklidir, bir başka değişiklik, öyle diyelim. Mesela şöyle.
+
+226
+00:47:02,996 --> 00:47:16,375
+e üzeri x nasıl bir fonksiyon? Sürekli. Değil mi? Yani x sürekli, e üzeri x de sürekli. Şimdi burada x eksiye sürekli bir fonksiyon.
+
+227
+00:47:17,295 --> 00:47:25,255
+e üzeri x eksiye sürekli bir fonksiyondur. Niye? x eksiye sürekli olduğu için, e üzeri x de sürekli olduğu için, e üzeri x eksiye sürekli.
+
+228
+00:47:25,255 --> 00:47:28,755
+Onu demek istiyoruz. Bir daha söylüyorum. x eksiye sürekli.
+
+229
+00:47:29,300 --> 00:47:50,180
+x eksi y sürekli, e üzeri x şeklindeki fonksiyonlar da sürekli, onun için e üzeri x eksi y de sürekli diyoruz. Bir daha söylüyorum. x eksi y sürekli, e üzeri x şeklindeki fonksiyon da sürekli, o zaman e üzeri x eksi y de sürekli, sürekli fonksiyonların birleşkisi de sürekli.
+
+230
+00:47:50,180 --> 00:47:52,180
+Buraya bakıyorum, bu sürekli.
+
+231
+00:47:53,907 --> 00:48:13,907
+Tamam. Kosünüs x de sürekli fonksiyondur. Bu da sürekli. Kosünüsün içine bunu atarsanız, x'ye bölü, x kare artı 1'i atarsanız, bu da sürekli. Sürekli fonksiyonların birleşkesi sürekli yani. Bu sürekli mi? Bakıyorum. 1 artı x kare artı yıkı. Bu sürekli. Yani...
+
+232
+00:48:14,559 --> 00:48:40,339
+Bu pozitif olduğu için tabii, pozitif değil mi? Pozitif olduğu için sürekli. Ln x hangi durumda sürekli? x pozitif de sürekli ama içerisi zaten pozitif, onun için bu da sürekli. Tamam mı? Bu şekilde. Evet, bir daha söyleyeyim. Bu sürekli. Kendi başına. Ln x ne zaman sürekli? x büyük sıfırsa sürekli ama burada burası zaten büyük sıfır, onun için bu fonksiyon da sürekli. Bu kadar.
+
+233
+00:48:41,492 --> 00:48:59,072
+Evet, 2'den fazla değişkenli fonksiyonlar, 2 değişkenli fonksiyonlar için yapılan limit ve sürekli tanımları ile sonuçları 3 veya daha fazla değişkenli fonksiyonlar için de geçerli. Örnek, çok fazla kullanmıyoruz. 2 değişkenli üzerinde daha çok duruyoruz. Mesela şöyle bir örneğimiz var.
+
+234
+00:49:01,572 --> 00:49:06,072
+Bir örnek olsun. Girekiyor bazen de.
+
+235
+00:49:07,731 --> 00:49:14,932
+Şimdi x, y, z, x, 1'e gidiyormuş, y, 0'a gidiyormuş, z'ye de, x, 1'e gidiyormuş.
+
+236
+00:49:16,632 --> 00:49:20,652
+Direkt eğer bir sürü tanımsızlık ya da belirsizlik yoksa yerine yazıyoruz direkt.
+
+237
+00:49:21,112 --> 00:49:29,992
+Ne olur o zaman? E üzeri x, 1'e gittiği için 1 yazacağız, z, x, 1'e gittiği için x, 1 yazacağız, e üzeri 1, x, 1, e üzeri 0, o da nedir? 1.
+
+238
+00:49:30,592 --> 00:49:34,552
+Faydaya bakıyorum, z yerine x, 1 yazacağım, x, 1'in karesi işte burada.
+
+239
+00:49:34,992 --> 00:49:42,532
+Kosinus, x yerini, y yerine sıfır yazacağım, bu sıfır oluyor. Kosinus sıfırda 1, 1 artı 1, 2, 1 bölü 2.
+
+240
+00:49:43,731 --> 00:49:46,771
+Evet, dolayısıyla 3 değişkenlidir ve böyle limit alıyoruz.
+
+241
+00:49:48,172 --> 00:50:02,371
+Tabii, şöyle başka, ne demişiz? Evet, böyle başka 3 değişkenli olup da sürekli, tanım kümeleri neyse, tanım kümeleri gibi fonksiyonlar, tanım kümeleri boyunca süreklidir.
+
+242
+00:50:02,900 --> 00:50:09,099
+Tanım kümelerine bağlı olarak böyle fonksiyonlarda tanımlı oldukları yerlerde süreklidir şeklinde söyleyebiliriz.
+
+243
+00:50:09,179 --> 00:50:13,159
+Yani ln x artı y artı z nerede tanımlıysa orada süreklidir.
+
+244
+00:50:13,859 --> 00:50:14,799
+Yani ne demek bu?
+
+245
+00:50:15,679 --> 00:50:17,879
+Şu demek, bu ne zaman tanımlı?
+
+246
+00:50:18,039 --> 00:50:25,819
+x artı y artı z büyük sıfır için ln x artı y artı z nedir? Süreklidir.
+
+247
+00:50:28,039 --> 00:50:28,779
+Bunun gibi.
+
+248
+00:50:28,779 --> 00:50:29,819
+Tamam mı?
+
+249
+00:50:30,739 --> 00:50:51,099
+Evet, burada ne var? X farklı bir için sürekli. Tanımlıdır X farklı bir için. Dolayısıyla süreklidir. Sinüs S'de, bu zaten her yerde süreklidir. Bu sinüs S zaten ne sık bir fonksiyondur? Sinüs S sürekliydi zaten. Sinüs S sürekli fonksiyondu. Bu fonksiyon ne oldu sonuç olarak? X farklı bir için sürekli.
+
+250
+00:50:52,480 --> 00:50:57,279
+Dedik. Evet. Bu, bu şekilde.
+
+251
+00:50:58,579 --> 00:51:11,480
+Evet, böylece iki değişkenli fonksiyonlarda ya da iki ya da daha fazla değişkenli aslında onları da vermiş olduk ama asıl olarak iki değişkenli fonksiyonlar üzerinde duracağımızı söyledik, duruyoruz.
+
+252
+00:51:13,119 --> 00:51:16,420
+Sürekli limit ve sürekli kavramlarını vermiş olduk.
+
+253
+00:51:16,420 --> 00:51:18,800
+Soru çözmedik fazla, doğru.
+
+254
+00:51:26,675 --> 00:51:36,455
+Biraz başlayalım mı, yoksa yarına mı bırakalım, ne dersiniz? Biraz yarına bıraksak gibime geldi, bir tekrar edersiniz diye düşündüm ama, bakayım sizin de fikrinizi bir alayım.
+
+255
+00:51:42,483 --> 00:51:44,503
+Yazabilirsiniz mesaj kısmından.
+
+256
+00:51:46,104 --> 00:51:50,403
+Yorumlar, hocam yok, devam edelim derseniz biraz daha anlatırım. Biraz sonra çözeriz, olmadı.
+
+257
+00:51:51,324 --> 00:51:52,384
+Veya yarın çözeriz.
+
+258
+00:51:53,304 --> 00:51:55,304
+Bizim yarın dersimiz yok.
+
+259
+00:51:56,083 --> 00:51:57,344
+Ha, yarın diyorum. [öğrenci].
+
+260
+00:51:58,364 --> 00:52:00,724
+Yarına bırakalım. [öğrenci] de güzel cevap vermiş.
+
+261
+00:52:01,423 --> 00:52:02,684
+Haftaya, pazartesi.
+
+262
+00:52:08,755 --> 00:52:14,275
+Ederim mi devam? Biraz çözeyim mi? Yoksa haftaya mı devam edelim? Bunları bir tekrar edersiniz.
+
+263
+00:52:16,275 --> 00:52:17,495
+Birkaç tane çözeyim olmadı.
+
+264
+00:52:21,396 --> 00:52:27,876
+Ama ileride miyiz? Konu olarak neredeyiz? Paylaşmadık bunu değil mi? Paylaşmış mıydın bunu [öğrenci]?
+
+265
+00:52:28,635 --> 00:52:31,135
+Gelmişti hocam. Bir kontrol edeyim hemen.
+
+266
+00:52:31,675 --> 00:52:33,496
+Bir bak bakalım paylaşmış mıyız.
+
+267
+00:52:34,496 --> 00:52:38,356
+[öğrenci] dedi. [öğrenci] mı? Doğru mu okuyorum [öğrenci] bilmiyorum da.
+
+268
+00:52:49,043 --> 00:52:51,143
+Evet hocam, dün atmıştınız bunu.
+
+269
+00:52:51,823 --> 00:52:52,603
+Attık değil mi? Tamam.
+
+270
+00:52:53,603 --> 00:52:54,303
+Şimdi,
+
+271
+00:52:55,863 --> 00:52:57,003
+burada.
+
+272
+00:53:08,500 --> 00:53:11,820
+Peki. Kimseden ses çıkmadı.
+
+273
+00:53:25,300 --> 00:53:44,420
+Bir iki tane çözelim bence de. Hemen bitirmeyelim. Şimdi paylaşımı durduralım bir. Yeni bir paylaşım yapalım bakalım. Umarım bunu şey yaptık mı? Çok değişkenli fonksiyonlar, uygulama. Pardon, yanlış oldu.
+
+274
+00:53:46,980 --> 00:53:49,460
+Hocam biz galiba konuyu bitirmişiz.
+
+275
+00:53:50,519 --> 00:53:50,800
+Nasıl?
+
+276
+00:53:52,947 --> 00:54:01,747
+Arasınav öncesi konuyu bitirmişiz hocam. En son ikiden fazla değişkenli fonksiyonlar başlığı verilmiş. Az önce de ona baktık ya, 3 değişkenli.
+
+277
+00:54:01,747 --> 00:54:09,967
+Evet, evet. Tamam, doğru. Yok, iyi gittik de soru çözecek. Soru çözelim mi diye düşündüm. Yani ileri gittik zaten, iyiyiz yani.
+
+278
+00:54:11,347 --> 00:54:17,047
+Şimdi bir dakika, şu, bunun uygulaması nerede? Bu uygulamasını bir bulayım da.
+
+279
+00:54:24,275 --> 00:54:31,695
+Hocam, çok değişkenli fonksiyonların türevinden veya integralinden sorumlu değiliz, değil mi?
+
+280
+00:54:32,556 --> 00:54:33,576
+Sınavda mı diyorsun?
+
+281
+00:54:34,235 --> 00:54:36,495
+Genel olarak ileride işleyecek miyiz?
+
+282
+00:54:36,815 --> 00:54:38,915
+İşleyeceğiz. Kısmi türev var orada zaten.
+
+283
+00:54:39,395 --> 00:54:41,975
+Kısmi ve kapalı türev, tamam hocam, konu başlığı.
+
+284
+00:54:41,975 --> 00:54:43,715
+Onlar var, evet, onları vereceğim.
+
+285
+00:54:44,515 --> 00:54:46,195
+Şimdi şu, bir dakika.
+
+286
+00:54:58,387 --> 00:55:00,587
+Şu uygulama, indir şunu uygulayalım.
+
+287
+00:55:35,539 --> 00:55:51,539
+Evet, birkaç soru çözeyim. Öyle bırakayım sizi. Evet, bu arada bunu bir sizinle paylaşayım.
+
+288
+00:56:11,219 --> 00:56:13,039
+Gelince [öğrenci]
+
+289
+00:56:16,628 --> 00:56:17,827
+Bir haber verin bakalım.
+
+290
+00:56:18,547 --> 00:56:20,427
+Geldi hocam, şimdi bir kontrol ediyorum.
+
+291
+00:56:20,867 --> 00:56:21,688
+Kontrol et bakalım.
+
+292
+00:56:28,244 --> 00:56:29,224
+Açılıyor hocam.
+
+293
+00:56:29,904 --> 00:56:40,364
+Tamam. Peki, o zaman başlayabiliriz. Şimdi aşağıdaki fonksiyonların tanım bölgesini belirleyip çizin. Geçen ders tanım bölgesini belirleme yapmıştık.
+
+294
+00:56:41,824 --> 00:56:44,764
+Çözümü burada olsa bile bir üzerinden bir geçelim biz.
+
+295
+00:56:44,764 --> 00:56:46,644
+Şimdi.
+
+296
+00:56:50,739 --> 00:56:57,279
+Şimdi ln biliyorsunuz, ln y eşit, z eşit, ln g x'ye var burada.
+
+297
+00:56:58,519 --> 00:57:01,019
+ln g x'ye var, bunun pozitif olması lazım.
+
+298
+00:57:01,619 --> 00:57:02,419
+Ne olması için?
+
+299
+00:57:03,039 --> 00:57:03,999
+Tanımlı olması lazım.
+
+300
+00:57:04,239 --> 00:57:05,739
+Tanımlı olması büyük sıfır.
+
+301
+00:57:06,219 --> 00:57:08,899
+1 eksi y kare bölü x büyük sıfır olmalı.
+
+302
+00:57:10,179 --> 00:57:12,679
+Şimdi x negatifse, iki durum var x için.
+
+303
+00:57:12,679 --> 00:57:17,419
+x negatif olsa, x negatif olsa,
+
+304
+00:57:18,036 --> 00:57:23,936
+O zaman 1 eksi y kare bölü x küçük sıfır olur.
+
+305
+00:57:25,356 --> 00:57:39,816
+x negatif olsa, 1 eksi y kare bölü x küçük sıfırdır. Niye? x negatif olsa,
+
+306
+00:57:43,603 --> 00:57:44,423
+Öyle mi olur?
+
+307
+00:57:51,987 --> 00:57:56,487
+Tamam, bir dakika. Tamam, böyle olur ama şöyle, bir dakika dur.
+
+308
+00:57:57,288 --> 00:58:00,708
+Bir şey oldu. Şimdi şuradan başlayalım. Biz ne istiyoruz?
+
+309
+00:58:01,288 --> 00:58:07,648
+1-y² bölü x² büyük sıfır olmasını istiyoruz.
+
+310
+00:58:07,648 --> 00:58:13,148
+Bu da ne demektir?
+
+311
+00:58:14,507 --> 00:58:15,507
+Şimdi bir dakika.
+
+312
+00:58:26,612 --> 00:58:39,711
+1 eksi y kare bölü x büyük sıfır olmasını istiyoruz. Yani, 1 büyük y kare bölü x olmasını istiyoruz.
+
+313
+00:58:54,099 --> 00:58:59,699
+Bunun olması için şöyle diyebilir miyiz?
+
+314
+00:59:06,835 --> 00:59:16,075
+y kare x pozitif olsa, o zaman her tarafı x ile çarparım, y kare küçük, x olur. Değil mi?
+
+315
+00:59:16,835 --> 00:59:33,295
+x pozitif olsa böyle, x negatif olsa burada, o zaman, x negatif olsa, bir büyük y kare bölü x.
+
+316
+00:59:34,739 --> 00:59:57,459
+Evet, x negatif olsa, bu sağlanır mı? x negatif olsa, bir büyük y kare bölü x, bu negatif olsa, bu da negatif olacak, sağlanmaz değil mi? x küçük sıfır için bir şey gelmiyor. Bunu sağlattıramayız değil mi? x küçük sıfır olsa, bir büyük y kare bölü x kare olur. Bu negatif.
+
+317
+01:00:00,371 --> 01:00:02,711
+Yine negatif olacak, değil mi sonuç olarak?
+
+318
+01:00:04,211 --> 01:00:04,871
+Bir dakika.
+
+319
+01:00:08,452 --> 01:00:09,612
+Şöyle dedik.
+
+320
+01:00:11,411 --> 01:00:11,791
+Bir dakika.
+
+321
+01:00:16,628 --> 01:00:18,448
+Şimdi şurayı bir daha söyleyeceğim.
+
+322
+01:00:21,428 --> 01:00:27,728
+Bu böyle olmalı. Bu böyle olması için şöyle diyeceğiz.
+
+323
+01:00:29,768 --> 01:00:30,648
+Bu böyle olmalı.
+
+324
+01:00:44,211 --> 01:01:12,011
+küçük bir, böyle olmalı. Y kare bölü x küçük bir ise, x büyük sıfır için y kare küçük x. Düşünmem lazım. Y kare küçük x olur. Yok x küçük sıfır ise, o zaman negatifle çarpacağım için her tarafı,
+
+325
+01:01:12,083 --> 01:01:24,723
+y kare bölüklüğü x, yani x ile çarptım, bu büyük bir çarpı x oldu, böyle oldu. Şunlar kısalır, o zaman y kare büyük ne olur? x olur.
+
+326
+01:01:26,723 --> 01:01:29,843
+Evet, y kare büyük, x olur.
+
+327
+01:01:31,843 --> 01:01:39,403
+Evet, bir daha söylüyorum o zaman. Yani, evet, x pozitif ise,
+
+328
+01:01:40,340 --> 01:01:42,099
+Y kare büyük X olur.
+
+329
+01:01:45,759 --> 01:01:46,500
+Değil mi?
+
+330
+01:01:52,724 --> 01:01:55,804
+Dolayısıyla y kare büyük x şurası oldu.
+
+331
+01:01:57,083 --> 01:02:01,423
+Şey y kare, onu da şöyle söyleyelim.
+
+332
+01:02:04,764 --> 01:02:08,364
+Evet, y kare, yani ikincisi ikinci durum, y kare küçük x oldu.
+
+333
+01:02:09,284 --> 01:02:11,083
+Y kare küçük x ne demektir?
+
+334
+01:02:11,764 --> 01:02:13,543
+Y kare küçük x de şu demektir.
+
+335
+01:02:17,492 --> 01:02:31,852
+x eşit y kareyi düşünelim. x eşit y kare şu. x eşit y kare. x büyük y kare olduğuna göre, şurası olur. Bu, şundan gelen, ikincisinden gelen bu.
+
+336
+01:02:44,659 --> 01:03:11,780
+O zaman, ne olur x negatif olursa, y kare büyük x oldu. Değil mi? Şurası artı, bakalım. Evet.
+
+337
+01:03:15,603 --> 01:03:19,083
+Şöyle oldu, 1-y kare, böyle x kare büyük sıfır.
+
+338
+01:03:23,844 --> 01:03:27,344
+Doğru yazdıkmış, sol tarafı 1, 1'den geliyor mu bu?
+
+339
+01:03:27,483 --> 01:03:37,864
+R x küçük sıfır için, bu 1-y kare x küçük sıfır olsa, bu pozitif, 1 artı y kare küçük sıfır oluyor.
+
+340
+01:03:40,563 --> 01:03:43,203
+Burası doğru mu olmuş, olmamış mı? Bir dakika.
+
+341
+01:03:44,643 --> 01:03:46,543
+Hocam, birinci tanımda hata var.
+
+342
+01:03:47,324 --> 01:03:52,183
+Değil mi? Burası biraz yanlış olmuş gibi geldi. Bana da onun için niye acaba oluyor mu diye bakıyorum.
+
+343
+01:03:53,023 --> 01:03:56,603
+Evet, 1-Y, negatif olmuyor ki burası, pozitif oluyor.
+
+344
+01:03:57,143 --> 01:03:58,623
+Evet hocam, işaret yanlış.
+
+345
+01:03:59,364 --> 01:04:04,364
+Evet, bu yanlış olmuş. Şu X negatif olursa, şurada da X var, artı.
+
+346
+01:04:04,884 --> 01:04:08,083
+1 artı Y kare bölü X kare ne oluyor? Pozitif oluyor.
+
+347
+01:04:08,467 --> 01:04:21,247
+Değil mi? Yani şey, x küçük sıfır ise, x küçük sıfır ise, 1 eksi y kare bölü x kare x büyük sıfır olmuyor.
+
+348
+01:04:21,607 --> 01:04:30,207
+Şey, şey, küçük sıfır olmuyor. Ne oluyor? Büyük sıfır oluyor mu? Oluyor değil mi? Evet, o daima sağlanıyor.
+
+349
+01:04:30,207 --> 01:04:34,007
+X küçük sıfır ise, şurası, şunu bir dakika, şunu söyleyeyim.
+
+350
+01:04:34,931 --> 01:04:54,711
+x küçük sıfır ise, 1 eksi y kare bölü x, onun ben pozitif olmasını istiyorum. Fakat o ne oluyor? Evet, pozitif oluyor. Değil mi pozitif oluyor? Onu yanlış yazılmış oraya, ondan bacaladık. 1 eksi y kare bölü x, şu negatif. Şurada da bir eksi var.
+
+351
+01:04:55,251 --> 01:05:19,072
+Dolayısıyla şu komple pozitif oldu. Yani büyük ne oldu? Sıfır oldu. X küçük sıfır olan yerde bu daima sağlanıyor. Tamam, şimdi bir daha özetleyeceğim baştan. Bir daha söylüyorum. Şu büyük sıfır olacak. Çünkü, şimdi düzeldi, bu eksi. Bir önde de eksi var, bu artı.
+
+352
+01:05:20,851 --> 01:05:40,791
+Burası artı. Yani bu daima sağlanıyor. Yani şu içerisi daima pozitif oluyor zaten. O zaman x'in küçük sıfır olduğu yer neresi? x küçük sıfır, x'lerin negatif olduğu yerler burası. Bu işte o yüzden bir. Tamam mı? Şimdi anlaşıldı.
+
+353
+01:05:44,788 --> 01:06:04,027
+x pozitif ise, şöyle yazabilirim ben bu, 1-y kare bölü x. Buradan şöyle derim, 1 büyüktür y kare bölü x. Her tarafı x ile çarparım x pozitif olduğu için. O zaman derim ki, y kare x büyük y kare oldu.
+
+354
+01:06:13,139 --> 01:06:37,539
+İçi, işte 2. Yani şurası. 2. Bu 1, bu 2. Bitti. Evet, şurada bir yanlışlık olmuş. Onu düzeltinceye kadar biraz şey yaptık. Şurası büyük sıfır olacak. Küçük sıfır değil, büyük sıfır olacak. Büyük sıfır olunca, demek ki x küçük sıfır için daima içerisi pozitif oluyorsa, yani buradaki değerler sağlıyor.
+
+355
+01:06:38,291 --> 01:07:04,452
+Ve x büyük sıfır için de içerisi sağlıyor. x eşit y karenin iç kısmı şurası. Bu kadar. Tanım bölgesi bu. Şunu düzeltelim. Böyle olursa, bu 1 olur, bu da 2 olur, işte 1 burası. Tüm x küçük sıfır değerleri. Bu da x büyük y kare. Bu da x büyük y kare şurası. Evet, bu kadar.
+
+356
+01:07:05,108 --> 01:07:08,408
+Şimdi gelelim B'ye. B'ye gelelim.
+
+357
+01:07:11,068 --> 01:07:22,908
+Arkosünüz. Evet, fx'i eşit. Arkosünüz y eksi x kareydi. Bunun arkosünüzün tanımlı olduğu aralık şuydu, değil mi?
+
+358
+01:07:22,908 --> 01:07:31,848
+Arkos gx. Ne olması gerekiyordu? gx.
+
+359
+01:07:32,628 --> 01:07:50,048
+Mutlak değerce küçük eşit 1 için tanımlıydı, arkos. Dolayısıyla şu y eksi x kare mutlak değerce küçük eşit 1 olacak. Yani y eksi x kare, eksi 1 ile 1 arasında olması gerekiyor.
+
+360
+01:07:51,307 --> 01:07:57,228
+Bu da ne demek? Her tarafı x kare ile toplarsak, x kare eksi 1, x kare artı 1 olur.
+
+361
+01:07:59,092 --> 01:08:13,432
+y 1 artı x kareden küçük, 1 eksi x kareden, x kare eksi 1'den nedir? Büyük. Değil mi? O da tabii burada şekil olarak var zaten ama y eşit, şu 1 artı x kare, y eşit x kareyi düşünelim.
+
+362
+01:08:13,432 --> 01:08:23,871
+Değil mi? y eşit x kare, y eşit bir 1 artı x kare, burası, y eşit 1 artı x kareden küçük, diğeri x kare eksi 1'de buydu.
+
+363
+01:08:24,467 --> 01:08:26,987
+1 ile, eksi 1 de kesiyor.
+
+364
+01:08:28,188 --> 01:08:30,627
+Y eşittir, x kare, eksi 1.
+
+365
+01:08:31,427 --> 01:08:37,868
+x kare artı 1'den küçük, şunu çizip, aradakini hani, göstermek için çizdim, şuna gerek yok tabii.
+
+366
+01:08:41,779 --> 01:08:58,020
+Evet, böyle. X'i bir, bir de kesti. Şöyle, X kare artı birden küçük, X kare artı birden küçük, X kare eksi birden büyük. Dolayısıyla ne oldu? Şu ara bölge olmuş oldu.
+
+367
+01:08:58,639 --> 01:09:09,119
+Evet, burada bilmemiz gereken arp kosinus GX'in tanım aralığı, GX'in mutlak değerce 3 keşitli olması gerekiyor, 1 olması gerekiyor.
+
+368
+01:09:10,003 --> 01:09:10,644
+Bu önemli.
+
+369
+01:09:13,283 --> 01:09:14,824
+Evet, bir başka soru.
+
+370
+01:09:16,844 --> 01:09:21,564
+fx'i kare kök x eksi y kare bölü ln x eksi 2.
+
+371
+01:09:22,384 --> 01:09:23,744
+Şimdi burada ne durumlar var?
+
+372
+01:09:23,844 --> 01:09:31,344
+Bir, şu kare kökten gelen x eksi y kare büyük eşit sıfır olacak.
+
+373
+01:09:31,564 --> 01:09:33,043
+Bu da x büyük eşit y kare demek.
+
+374
+01:09:33,043 --> 01:09:34,404
+Tamam, kare kökten bu.
+
+375
+01:09:35,956 --> 01:10:02,855
+Bir payda sıfır olmayacak, yani x bir olmayacak, x üç olmayacak, değil mi? Elen bir payda sıfır olmayacaksa x üç olmayacak demektir, bir o olmayacak. Bir de elenin tanımından gelen x eksi iki büyük sıfır olacak, x büyük iki. İkiden büyük fakat üç olmayacak, işte şu. İkiden büyük, şu, fakat üç olmayacak.
+
+376
+01:10:03,380 --> 01:10:12,619
+Değil mi? 3 şey var. 1, 2, 3. Bu 3'ünü birleştirirsek, x büyük y kareyi biraz önce çizmiştik.
+
+377
+01:10:14,000 --> 01:10:21,559
+x eşit y kare bu. Normalde böyle. Ama bir de x büyük 2'yi düşündüğümüz zaman ne olacak?
+
+378
+01:10:25,555 --> 01:10:40,036
+Evet, x büyük 2'yi düşündüğümüz zaman, büyük 2, nokta nokta çizecek, değil mi şu nokta nokta? Büyük 2 olunca burası. Fakat o da yetmez, x 3 de olmayacak.
+
+379
+01:10:41,075 --> 01:10:51,475
+x 3 de olmayacak, o zaman 3'ü de nokta nokta çizeceğim, böyle nokta nokta çizeceğim, o zaman ne olacak? Şu şekil, değil mi? Şurası.
+
+380
+01:10:53,268 --> 01:10:54,487
+Şunlar nokta nokta.
+
+381
+01:10:56,208 --> 01:11:00,847
+3 nokta, 2 seçtiği doğrusu hep nokta nokta olacak. Bu şekilde devam edecek.
+
+382
+01:11:02,667 --> 01:11:02,868
+Evet.
+
+383
+01:11:05,047 --> 01:11:05,827
+Bu kadar.
+
+384
+01:11:07,507 --> 01:11:11,288
+Tabii bunları siz kendi kendinize bakmadan çözebiliyor olmanız gerekiyor.
+
+385
+01:11:11,387 --> 01:11:14,108
+Onu da söyleyeyim. Yani o duruma gelmeniz lazım.
+
+386
+01:11:16,108 --> 01:11:16,628
+Evet.
+
+387
+01:11:17,171 --> 01:11:38,572
+Z eşit, arksinüs. Arksinüs'ün tanım kümesi tıpkı arkkosinüs gibiydi. Yani arksinüs, gx'in tanım kümesi şöyleydi, gx küçük eşit bir için tanımlıydı.
+
+388
+01:11:39,091 --> 01:11:43,031
+Evet, gx küçük eşit bir için tanımlıydı. Dolayısıyla burası küçük eşit.
+
+389
+01:11:43,604 --> 01:11:51,164
+Yani y-1 bölü x küçük eşit 1 olacak. Dolayısıyla y-1 bölü x, x-1 ile 1 arasında olacak.
+
+390
+01:11:53,324 --> 01:12:04,484
+Burada x büyük 0 için x ile çarparsınız her tarafı. x pozitifse burada. Her tarafı x ile çarparsanız ne olur?
+
+391
+01:12:04,484 --> 01:12:10,924
+Eksi x ile y-1 bu arada olur. Sonra her tarafı 1 eklerseniz, 1 ekledik, 1 ekledik.
+
+392
+01:12:11,380 --> 01:12:13,319
+1 ekledik, böyle oldu. Bu 1.
+
+393
+01:12:14,500 --> 01:12:19,139
+x negatifse, o zaman x ile çarptığınızda yön değiştirir.
+
+394
+01:12:19,340 --> 01:12:24,680
+Bakın, x negatifse, x'i 1 küçük eşit, y'e x'i 1 bölü x, küçük eşit 1.
+
+395
+01:12:25,559 --> 01:12:27,219
+x ile çarptığınızda ne olur? Böyle olur.
+
+396
+01:12:27,219 --> 01:12:32,340
+x'i x, y'e x'i 1, büyük eşit, x'i x.
+
+397
+01:12:32,539 --> 01:12:37,059
+x ile çarptık, yeni değiştirdi. x ile çarptık, yön değiştirdi.
+
+398
+01:12:37,619 --> 01:13:04,020
+Şöyle oldu yani. Sonra 1 ekledik her tarafa. Böyle oldu. İki tane denklem var. Evet. Evet. Burada da bunlarda ne demek? Y eşit 1 artı x'i. Şimdi şöyle birlikte yapalım. Y eşit 1 artı x'i şu biliyorsunuz ki.
+
+399
+01:13:05,108 --> 01:13:07,188
+Şimdi, şöyle mi yapsam?
+
+400
+01:13:08,927 --> 01:13:12,307
+Y eşit x'i unutmayalım. Her zaman y eşit x bizim için önemli.
+
+401
+01:13:12,968 --> 01:13:17,007
+Y eşit eksi x de budur. Orijinden geçen, doğrular bunlar.
+
+402
+01:13:18,288 --> 01:13:20,988
+Başlangıçta şurada 45 derecelik açı yapar değil mi?
+
+403
+01:13:21,788 --> 01:13:27,868
+Bu artık bunlar. Y eşit x artı 1 deyince, y eşit x artı 1 deyince bir birim yukarı atıyorduk.
+
+404
+01:13:27,948 --> 01:13:30,208
+Bu y eşittir, x artı 1. Değil mi?
+
+405
+01:13:31,648 --> 01:13:32,667
+Şu birinciye bakalım.
+
+406
+01:13:33,104 --> 01:13:45,504
+y eşit eksi x bu, y eşit eksi x bu, y eşit ne diyor? Eksi x artı 1 diyor, onu da bir birim yukarı atarsak, bu da y eşittir, eksi x artı 1.
+
+407
+01:13:46,384 --> 01:13:58,564
+Değil mi? Şimdi gelelim, ne diyor bana? y eşit 1 artı x'den, 1 artı x'den, y 1 artı x'den küçük. O zaman şu hepsi.
+
+408
+01:13:59,796 --> 01:14:01,656
+Şu 1'i yapıyorum daha.
+
+409
+01:14:02,796 --> 01:14:03,096
+Burası.
+
+410
+01:14:04,115 --> 01:14:09,436
+Eksi x artı 1'den büyük.
+
+411
+01:14:10,016 --> 01:14:10,596
+O zaman şöyle.
+
+412
+01:14:14,387 --> 01:14:37,487
+Neresi oldu? Bakın sarı, mavi ve sarının olduğu yer şurası. Bak şu. Şu bölge. Anladınız mı? Böyle yaptık. Mavi ve sarı olan yer çözüm. Bir böyle. Tamam mı? Şimdi siliyorum. İkiye gelelim. İki de ye eşit.
+
+413
+01:14:41,011 --> 01:14:48,072
+Şimdi y eşit ne gerekiyor? y eşit 1 artı x buydu. y eşit eksi x artı 1 de buydu değil mi?
+
+414
+01:14:49,671 --> 01:14:57,371
+eksi x y eşit x artı 1. y eşit eksi x artı 1. Ne istiyor benden?
+
+415
+01:15:00,111 --> 01:15:06,572
+bunun y eşit eksi x artı 1'den küçük, y eşit eksi x artı 1'den küçük şöyle.
+
+416
+01:15:09,619 --> 01:15:19,920
+Peki, y eşit, 1 artı x'den büyük, 1 artı x'den büyük, neresi? Şurası, değil mi?
+
+417
+01:15:23,891 --> 01:15:27,011
+Hem sarı hem kırmızı olan yer neresi? Şurası, işte şu.
+
+418
+01:15:29,591 --> 01:15:32,672
+Tamam mı? Bu da 2. Bu kadar. Bitti.
+
+419
+01:15:33,891 --> 01:15:34,871
+Evet, Ds'de böyle.
+
+420
+01:15:41,076 --> 01:15:47,975
+Evet, peki. İkinci limit sorularına mı geldik? Evet, daha varmış böyle.
+
+421
+01:15:51,195 --> 01:15:55,996
+Şöyle, şu. Arkosilüs, biraz önce Arkosilüs'ün tanımını vermiştim.
+
+422
+01:15:58,756 --> 01:16:07,536
+Hatırlarsanız. İçerisi ne olacaktı? Küçük eşit bir. O da bu demektir, değil mi? Şurası mutlak derece küçük eşit bir de bu demektir.
+
+423
+01:16:07,988 --> 01:16:33,148
+Her tarafı x kare artı 1 ile çarpma hakkım var mı? Pozitif. Var. Çarptık. Çarparsak, eksi x kare, eksi 1, küçük eşit, y eksi 1, küçük eşit, x kare artı 1. Her tarafı 1 eklersem, 1 ekledim, 1 ekledim, 1 ekledim. Dolayısıyla ne oldu? y eşittir, eksi x kare bunlar gitti.
+
+424
+01:16:34,036 --> 01:16:37,036
+Burası y, burası da x kare artı 2, yani şu oldu.
+
+425
+01:16:39,496 --> 01:16:41,516
+Evet, o da ne demektir?
+
+426
+01:16:41,636 --> 01:16:43,656
+Eksi x kareden büyük, eksi x kare bu.
+
+427
+01:16:44,336 --> 01:16:47,136
+Eksi x kareden büyük, dışarısı.
+
+428
+01:16:48,236 --> 01:16:50,416
+y büyük eşit, eksi x kare, burası.
+
+429
+01:16:52,316 --> 01:16:55,296
+Yukarıda var ama, kesişimi alacağım.
+
+430
+01:16:55,856 --> 01:16:57,696
+x kare artı 2, x kare artı 2 şu.
+
+431
+01:17:01,555 --> 01:17:12,835
+Ondan küçük, x kare artı 2'den küçük. Hepsi. Ama ikisinin de kesiştiği yer neresi oldu? Şu, sarı ve kırmızı olan şu bölge, ara bölge. Bu kadar.
+
+432
+01:17:14,956 --> 01:17:27,536
+Diğer f, elen x'ye artı x eksiye eksi bir. Elenin tanımını hatırlayalım. Şurası ne olması lazım? Pozitif. Şu büyük sıfır olmalı.
+
+433
+01:17:28,627 --> 01:17:41,087
+O sıfırdan büyükse, şimdi şurada x parantezine aldığım zaman şurada y artı 1, y artı 1, tekrar y artı 1 parantezine aldık, böyle, bu olması lazım. Bunun için kaç durum var?
+
+434
+01:17:42,627 --> 01:17:47,167
+Bir, ikisi de artı olabilir veya ikisi de eksi olabilir, ikisi artı ise bu.
+
+435
+01:17:49,087 --> 01:17:55,167
+Buradan x büyük bir, x y büyük eksi bir, ikisi eksi ise bu, bu, bu.
+
+436
+01:17:55,167 --> 01:17:56,127
+Evet.
+
+437
+01:17:57,619 --> 01:18:06,159
+Evet. V ya tabii. Bu olacak veya bu. Evet. X büyük bir, Y büyük, eksi biri çizeceğiz.
+
+438
+01:18:11,155 --> 01:18:18,695
+Evet, x büyük bir, neye bakacağız? x büyük bir, y büyük eksiklik, o ne demektir?
+
+439
+01:18:19,996 --> 01:18:37,296
+Şimdi x büyük bir, şu orijin olsun, x bu, x eşit bir, bu olsun, değil mi? x büyük bir, şu tarafı, x büyük bir, sonra
+
+440
+01:18:39,859 --> 01:18:44,119
+Y'e, nedir? Y büyük eksi 1. Y eşit eksi 1 şu.
+
+441
+01:18:46,699 --> 01:18:51,659
+Eksi 1 bu olsun. Y küçük, y büyük eksi 1. O zaman bu.
+
+442
+01:18:55,220 --> 01:19:10,180
+Kesin neresi? Bakın, şu parça, şu bir, şurası oldu. Tabi nokta nokta olacak, eşitlik yok çünkü. Neresi oldu? Şu kısım. Değil mi? O da şurada. Aynı şekilde x küçük bir, şuna bakalım şimdi.
+
+443
+01:19:23,667 --> 01:19:25,767
+y küçük eksi 1'e bakacağız.
+
+444
+01:19:29,235 --> 01:19:31,956
+y eşit eksi 1 diyelim, y küçük eksi 1.
+
+445
+01:19:33,416 --> 01:19:38,336
+O da, y küçük eksi 1 deyince de şurası.
+
+446
+01:19:41,779 --> 01:19:48,219
+İkisinin kırmızı ve mavinin olduğu yerler, tabii şu kırmızıyı bir tane daha şuradan çizersem daha da anlarsınız.
+
+447
+01:19:49,279 --> 01:19:58,779
+Kırmızı ve mavinin olduğu yerler, neresi oldu? Hem kırmızı hem mavi olacak, tam şu şu bölge, değil mi? Şurası, şu altı.
+
+448
+01:19:59,859 --> 01:20:06,399
+Bu da şu, iki. Tamam, bu kadar. Evet, bu yorumu yapmak gerekiyoruz orada.
+
+449
+01:20:09,939 --> 01:20:14,859
+Diğer soru, bu biraz daha komplike gibi görünüyor. Bakalım nasılmış?
+
+450
+01:20:16,699 --> 01:20:25,500
+Elen x kare artı y kare eksi x, y kare x eksi bir artı y. Şimdi büyük sıfır olacak tabii.
+
+451
+01:20:26,619 --> 01:20:31,300
+O zaman yine ne parantezini aldık şurada? Y kare parantezini alırsak.
+
+452
+01:20:33,184 --> 01:20:48,543
+Şurayı, y kare parantezine aldık, x artı 1, eksi parantezine aldık, x artı 1, büyük sıfır. Burada tekrar x artı 1 parantezine aldık, y kare artı 1 çarpı, x artı 1, büyük sıfır.
+
+453
+01:20:48,543 --> 01:20:59,783
+Değil mi? Bu olmalı. Burada yine aynı mantık var, artı artı eksi eksi, değil mi? Artı artı eksi eksi. O zaman ne oluyor? 1.
+
+454
+01:21:01,043 --> 01:21:09,203
+İkisi de artıysa, y kare eksi bir büyük sıfır, x artı bir büyük sıfırsa orada iki şey çıkıyor karşımıza.
+
+455
+01:21:10,283 --> 01:21:14,283
+y büyük bir, y kare büyük biri nasıl çözüyorduk biliyorsunuz.
+
+456
+01:21:15,203 --> 01:21:23,423
+y kare eksi bir büyük sıfır, kökleri eksi bire bir, işaret artı eksi artı, nasıl yerler istiyorum?
+
+457
+01:21:23,423 --> 01:21:28,064
+Artı, y küçük eksi bir ve y büyük bir çıkıyor, şunlar yani.
+
+458
+01:21:28,351 --> 01:21:52,992
+Bunlar. B, A. Evet. O zaman bir bu, bir bu, bir de bu. Ne yapacağım? Y büyük bir için X büyük eksileri düşüneceğim. Yine Y küçük eksileri için X büyük eksileri. Yani iki tane çıktı. Birin A'sı ve B'si çıktı. Evet. Bir A ve B çıktı. Onları da şurada gördük. Sonra iki.
+
+459
+01:21:53,587 --> 01:21:59,728
+İkisi de eksi olabilir. Bu eksi, bu eksi olabilir. O zaman y kare küçük biri çözmem gerekiyor.
+
+460
+01:21:59,807 --> 01:22:06,288
+Y kare küçük biri ne demek? Az önce yaptık ama y kare küçük sıfır, eksi bir, bir. İşaret ne?
+
+461
+01:22:06,768 --> 01:22:12,047
+Y karenin işareti artı, artı, eksi, artı. Nasıl yerleri istiyorum? Küçük sıfır, eksi bir ile bir arası.
+
+462
+01:22:12,648 --> 01:22:17,427
+Y eksi bir ile bir arası bu. Sonra x artı bir küçük sıfır bu. Bu da iki.
+
+463
+01:22:18,967 --> 01:22:19,448
+Evet.
+
+464
+01:22:19,956 --> 01:22:47,135
+Şimdi, onları da tek tek yaparsak, yani bir a'yı yapalım. X büyük eksi bir. Ne yapayım şurada ben hemen? Kolay değil mi? Bu zor değil. X büyük eksi bir. X eşit eksi bir neresi? Şurası. X büyük eksi bir diyor. X büyük eksi bir diyor. O zaman X büyük eksi bir şöyle. X büyük eksi bir bu. Y büyük bir, y eşit biri düşünelim.
+
+465
+01:22:48,659 --> 01:22:51,480
+diye bir.
+
+466
+01:22:55,188 --> 01:23:13,207
+Bu, pardon. İkisinin kesişimi neresi olur? Şu taraf, şu. Bir ağa gördüğünüz gibi şurası. Nereden itibaren başlıyor? Şuradan başlıyor. Şu noktadan değil mi? Şurada bak. İkisi kırmızı ve sarı olduğu yer. Buradan bir ağa bu. Bir ağa şurası.
+
+467
+01:23:13,207 --> 01:23:21,447
+Hopple, tamam mı? Sonra x büyük, eksi bir, y küçük bir, bir b de.
+
+468
+01:23:23,220 --> 01:23:37,800
+O da zor değilim. Bir B ile beraber bir yapalım. Diğerini de bırakırım olmalı. Şöyle yapalım. X büyük eksi bir. X eşit eksi bir bu. X büyük eksi bir. X büyük eksi bir burası.
+
+469
+01:23:41,587 --> 01:23:47,407
+Y küçük eksidir.
+
+470
+01:23:47,627 --> 01:23:48,547
+Şunu bir den.
+
+471
+01:23:50,427 --> 01:23:51,627
+Böyle devam etti.
+
+472
+01:23:51,827 --> 01:23:56,587
+Y küçük eksidir.
+
+473
+01:23:56,747 --> 01:23:59,367
+Şöyle geldim, geldim, geldim, geldim.
+
+474
+01:24:00,327 --> 01:24:04,807
+Kırmızı ve mavi olan yerler nereden başladı?
+
+475
+01:24:04,927 --> 01:24:06,207
+Şuradan başladı şu bölüm.
+
+476
+01:24:07,636 --> 01:24:32,176
+Oldu. Yani şurası. Değil mi? Doğru. Evet. Aynı şekilde şu sonuncusundan da y-1 ile bir arası, y-1, y-1 ile bir arasındayken, yani böyle burası,
+
+477
+01:24:34,036 --> 01:24:48,056
+x küçük eksi 1 olsun istiyoruz. x küçük eksi 1, x eşit eksi 1'i düşünelim şu. x eşit eksi 1, x küçük eksi 1 olmasını istiyorum. Küçük eksi 1 bu.
+
+478
+01:24:49,756 --> 01:25:01,596
+Şimdi maviye bakayım. Mavi ve kırmızı. Mavi ve kırmızı. Nerede çakıştı? Şu. Şu bölgede. Değil mi? Şurası. O da neresi? Şu şekile bakarsanız bu demek.
+
+479
+01:25:03,828 --> 01:25:05,028
+Tamam mı? Bitti. Bu kadar.
+
+480
+01:25:08,467 --> 01:25:23,627
+Evet, Aş. Aş'ta da ne var? Ark kosülüs. İki tane var. Kesişimini alacaksınız, tanım kümelerini. Toplam şeklinde bir bu. Birincisinin tanım kümesi bulunacak. İkincisinin tanım kümesi bulunacak. Ne almak lazım? Kesişim.
+
+481
+01:25:23,627 --> 01:25:35,247
+Bunun tanım kümesi, y bölü x kare küçük eşek 1. Bunun tanım kümesi v diyeceğiz. Yani kesişim al demek bu. 1 eksi x kare büyük sıfır.
+
+482
+01:25:36,692 --> 01:26:01,271
+1-x² büyük 0 ne demek? Kökler eksi 1, 1. Nasıl istiyorum? Pozitif yerler istiyorum. Eksi artı, eksi, eksi 1 ile 1 arası. Değil mi? Eksi 1 ile 1 arası olur buradan. Diğerinden de y bölü x² eksi 1 ile 1 arası demek. Ama x farklı 0 durumunda ne yapabilirim? Eksi x² ile y.
+
+483
+01:26:02,260 --> 01:26:29,480
+Ne arasında diyebilirim? X kare ile çarpalım. Yeter ki X sıfır olmasın. O zaman eksi X kare ile X farklı sıfırı unutmadan böyle yazabilirim. Tamam mı? Yazmışız. Şöyle olmuş. X farklı sıfırı unutmamak koşuluyla. Bir de şu vak geldi. Biraz önce yaptık. Y küçük, evet yapalım şimdi. Y eşittir X kare bu. Tamam mı? Şu birincisini yapayım.
+
+484
+01:26:29,908 --> 01:26:56,387
+y eşit eksi x kare bu. Ne diyor bana? y eksi x kare ile x kare arasında olacak diyor. Ama v bakım var. Bir de bu. Yani normalde y şöyle çizmem lazım. Böyle devam etmesi lazım. Ama x de hangi arada kalsın istiyor? x de x eşit eksi 1 ile
+
+485
+01:26:58,771 --> 01:27:02,152
+x eşit bir arasında kalsın istiyor. O zaman şu bölge.
+
+486
+01:27:04,091 --> 01:27:04,311
+Şu.
+
+487
+01:27:05,631 --> 01:27:08,152
+Değil mi? Dışarısı yok. Şunlar yok. Yani şu.
+
+488
+01:27:09,671 --> 01:27:12,711
+Evet, cevabımız ne olmuş oldu? Şu aradaki bölge.
+
+489
+01:27:14,271 --> 01:27:15,851
+Oldu ama nokta nokta şuralarda.
+
+490
+01:27:16,591 --> 01:27:19,471
+Klasik sınavda böyle sorular soruyorduk, onu söyleyeyim.
+
+491
+01:27:20,372 --> 01:27:24,112
+Testte de sorulabilir mi? Hangisi? Tanım bölgesi aşağıdakilerden hangisidir?
+
+492
+01:27:24,452 --> 01:27:25,412
+Olabilir tabii.
+
+493
+01:27:30,292 --> 01:27:54,632
+Evet, limite geçmişiz. Limite yarın geçelim diyorum. Yarın diyorum haftaya, pazartesi. Limit kısmından ilgili sorular çözerek başlamış olursam tekrar olur. Siz yalnız o anlattığım örnekleri bir tekrar ederek gelin. Haftaya kaçıncı sorudan başlayacağız? İkinci soru. Ya oğlum bu bayağı bir soru var herhalde. Dur bakayım.
+
+494
+01:27:56,712 --> 01:27:57,852
+O çok güzel.
+
+495
+01:27:58,612 --> 01:28:16,932
+Efe'yi soru, ooo bayağı üretir yani, ooo 22 soru aman Allah'ım. Yok, 24 soru, ooo bunları bir çözseniz tamam. Bayağı şey olur. Öğrenme sağlanır yani. Evet, peki, söyleyeceğiniz bir şey yoksa bana serbestsiniz.
+
+496
+01:28:21,779 --> 01:28:26,880
+Hepinize iyi günler, iyi dersler diliyorum. Haftaya görüşmek dileğiyle.
+
+497
+01:28:28,800 --> 01:28:29,640
+Görüşürüz hocam.
+
+498
+01:28:50,547 --> 01:28:55,747
+Evet, hepinize iyi günler. Önümüzdeki hafta görüşmek dileğiyle. Yalnız tekrar ederek gelin lütfen.
