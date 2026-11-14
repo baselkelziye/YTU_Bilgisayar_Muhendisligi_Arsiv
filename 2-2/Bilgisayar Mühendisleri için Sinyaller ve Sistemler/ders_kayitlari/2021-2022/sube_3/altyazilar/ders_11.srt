@@ -1,0 +1,543 @@
+1
+00:10:40,724 --> 00:10:46,224
+Arkadaşlar, üçü beş geçe falan mı dedim, üçte mi dedim, şu an ne söyledim, unuttum, acileden.
+
+2
+00:10:57,812 --> 00:10:59,892
+Tamam, beş geçeyse bu zaman biraz daha bekleyelim.
+
+3
+00:14:29,556 --> 00:14:38,376
+Evet, buranın yeni linkini de paylaşabilirsiniz arkadaşlar. Ben birkaç kanaldan yine mail göndermeye çalıştım. Artık ne kadar ulaştıysa.
+
+4
+00:16:31,283 --> 00:16:37,963
+Şimdi, bugünkü dersin kayıtlarında linkler oluşunca Google Drive'daki klasöre kopyalamış olurum.
+
+5
+00:16:38,963 --> 00:16:43,683
+Biz başlayalım, birazcık bir şey daha anlatacağım. Ondan sonra dersi bitireceğiz.
+
+6
+00:17:04,307 --> 00:17:14,307
+Şimdi işaretten yakın saklık bölgesini, biraz önce basit işaretleştiğimiz şey için duymuştuk. Bir de şu işarete bakalım.
+
+7
+00:17:14,307 --> 00:17:29,132
+Q üzeri N, U, N'in Roku nedir? Bizim burada Z dediğimiz şeyin ne olduğunu biliyoruz. Z, R çarpı.
+
+8
+00:17:30,963 --> 00:17:32,963
+E üzeri J omega.
+
+9
+00:17:33,963 --> 00:17:46,963
+O zaman şurada işaretin n düzlemindeki şeyi düzlemini almaya çalışalım, dönüşümü almaya çalışalım diye n eşittir x sonsuzdan artı sonsuza.
+
+10
+00:17:47,963 --> 00:17:51,963
+Çünkü bunun Fourier transformunu almaya kalktığınızda sonsuz çıkacak.
+
+11
+00:17:52,963 --> 00:17:55,963
+2 üzeri n, u n.
+
+12
+00:17:59,796 --> 00:18:06,196
+R, z üzeri eksi n yazmak yerine, burada z yerine doğrudan R üzeri eksi n yazıyor.
+
+13
+00:18:06,716 --> 00:18:11,836
+Çünkü yakın saklık bölgemizi aslında biz bunu da biliyoruz. Şu kosmust bir işaret dikkat ederseniz, eylül verici yönelden.
+
+14
+00:18:12,596 --> 00:18:14,895
+R üzeri eksi n dedim.
+
+15
+00:18:16,175 --> 00:18:17,456
+Bunu
+
+16
+00:18:18,236 --> 00:18:19,516
+bir adım açarsak
+
+17
+00:18:21,296 --> 00:18:23,596
+şu n sıfırdan başlar
+
+18
+00:18:24,635 --> 00:18:25,655
+sonsuza kadar
+
+19
+00:18:26,612 --> 00:18:38,612
+2 üzeri n çarpı v üzeri eksen n dediriz. Şeyde biraz da n parantezini alırsak, n eşittir sıfırdan son sıra kadar.
+
+20
+00:18:38,612 --> 00:18:51,092
+2 çarpı v üzeri eksi 1 üzeri n. Şimdi bunun bakın Fourier dönüşümü yok ama z dönüşümü var. Eğer ki şurası 2 çarpı v üzeri eksi 1
+
+21
+00:18:53,140 --> 00:18:58,100
+Şurayı şöyle not edeyim, aşağıdan devam edeceğim. 2 çarpı R üzeri eksi 1.
+
+22
+00:18:59,100 --> 00:19:01,420
+Birden küçükse mutlak değerce.
+
+23
+00:19:02,100 --> 00:19:05,060
+Nedir? Z dönüşümü de vardır.
+
+24
+00:19:05,780 --> 00:19:10,260
+Fourier dönüşümü yoktur diyeceğiz. Çünkü Fourier dönüşümünde ne yapıyoruz?
+
+25
+00:19:10,460 --> 00:19:12,180
+E üzeri j omega ile
+
+26
+00:19:13,140 --> 00:19:17,220
+çarpıyoruz. O da 2 çarpı E üzeri j omega sonsuza götürdü bize.
+
+27
+00:19:17,620 --> 00:19:19,940
+Fakat burada R gibi bir sayı ekledik.
+
+28
+00:19:20,211 --> 00:19:27,711
+R gibi bir sayı sayesinde şöyle bir ön şart elde edelim. Tabi işaret burada biraz değişmiş oluyor mu? Elbette değişmiş oluyor, ona bir şey demiyoruz.
+
+29
+00:19:27,711 --> 00:19:44,011
+2 x R üzeri eksi bir mutlak değerce birden küçükse bunun z dönüşümü var. O zaman 2 bölü R küçüktür 1 diyelim. Bunu dışarıya atarsak R büyüktür 2 elde ederiz değil mi?
+
+30
+00:19:47,412 --> 00:20:09,152
+2'den büyük olduğu. Eğer bunu Z düzleminde tekrar çizlik olsak, şurada şey koyduğumuzda, Z, mutlak değerce 2'den büyük değerlerde Z dönüşümü var. Yani çizdiğimiz zaman 2'den büyük değerlerde işte ROG, şöyle diyeceğiz, eğer bunu ROG olarak kabul edersek, böyle bir Region of Convergence gidecek.
+
+31
+00:20:09,551 --> 00:20:13,211
+Yoksa normal şartlar altında şu ifadeyi açarsak bu nedir?
+
+32
+00:20:14,211 --> 00:20:15,571
+Açık formüla yazalım.
+
+33
+00:20:15,651 --> 00:20:31,711
+1 artı, n eşittir sıfırken, 2 çarpı r üzeri eksi 1 artı, 2 çarpı r üzeri eksi 1'in karesi, 2 çarpı r üzeri eksi 1'in karesi şöyle.
+
+34
+00:20:32,500 --> 00:20:54,980
+Bu sonsuza kadar gider. Ama bunun sonsuzdan küçük olduğu bir aralık R değeri için vardır deyip bu şekilde Roku tespit edebiliyoruz. Zaten hem Laplace'da hem de Z-transform'unda Fourier dönüşüm shift'i bize veriliyor. Yani dönüşümün kendisi bir de yanında region of convergence. Ancak bununla ters dönüşüm mümkün hale gelebiliyor.
+
+35
+00:20:57,940 --> 00:21:07,240
+Şimdi bir şey daha vardı. Neyse, şuradan da bir özet geçelim. Önce tekrar etmiş oluruz. Şu slide'ı da ben size paylaşacağım PDF olarak. Plastromu atarız.
+
+36
+00:21:08,440 --> 00:21:14,140
+Hem de dönemin genel bir şeyini aratmış olalım. Gelecek akıllı dersi atmayacağımız için.
+
+37
+00:21:14,640 --> 00:21:24,140
+Arkadaşlar, ayrık zamanlı işaretler dedik. Bunların frekans düzeninde analizinden bahsettik. Ve dönemin başında hedefimiz neydi?
+
+38
+00:21:24,243 --> 00:21:32,543
+İşaret sadece zaman düzleminde veya en düzleminde değil de farklı düzlemlerde de analiz etmek. Bunun failları, kolaylıkları var.
+
+39
+00:21:33,303 --> 00:21:48,243
+Tabii bu dersin devamı niteliğinde olan dersleri alırsanız, sayısal işaret işlemi olabilir veya haberleşmeci olsaydınız, haberleşme sistemleri, kontrolcü olsaydınız, kontrol sistemleri gibi dersler alacak olsanız,
+
+40
+00:21:48,511 --> 00:22:12,571
+O zaman daha anlamlı oluyor buradaki bilgisayar. Yani burada gördüğünüz en fazla sayısal işaret işlemedeki dersle birleştiriyorsunuz bilgisayar öğrencisi olarak. Tam bir farkı var mı? Yani işte bir yerlerde gördük gibi şeyler oluyor. Normaldir bunu söylemeniz. Problem değil. Ama bunların her birinin karşılığı var. Yeri geldiğinde eğer bu sistemlerle çalışacaksanız tekrardan bunlarla karşılaşacaksınız diyelim.
+
+41
+00:22:14,932 --> 00:22:30,251
+Zet'in mantığı DTFT'nin genelleştirilmesi arkadaşlar, şuradaki şeyin kenar hale getirilmesi dedik. Bunun ispatını kompleks eksponansiyel bir şekilde bir bileşenle olacağını söyledik. R çarpı E yüzele J omega.
+
+42
+00:22:30,836 --> 00:22:54,836
+Z diye bir şeyimiz var, bir değişkenimiz var. Değişken dönüşümü sayesinde bu işi çok daha rahat bir şekilde yapabiliyoruz. Bakın burada bu kitapta buna transfer fonksiyonu denmiş, Z dönüşümündeki karşılığı. Normalde Laplace'da transfer fonksiyonu, Z transformunu, Z bildiğiniz deminde buna Sistem fonksiyonu denmiş ama ikisini de kullanmakta sıkıntı yok. Sadece frekans responsunun farklı olduğunu falan bilelim.
+
+43
+00:22:55,347 --> 00:23:17,327
+Şimdi sürekli zamanlarda diferansiyel denklemlere vardı. Yani gerçek anlamda türev vardı. İşte y'nin ikinci merkezeden türevi falan diyorduk. Ama burada Difference Equation'lar olacak. Bu Difference Equation'ları da şöyle formlarda yazıyoruz. Çok rahat bir şekilde z-transform'unu alıp Difference Equation'ları çözmek çok kolay hale geliyor.
+
+44
+00:23:19,092 --> 00:23:39,192
+Örnek olarak bu bir sistem. Bakın bu sistem YZ nasıl hesaplıyor? XZ'i bir bölü A0 ile çarpıyormuş. Ondan sonra onu da B0 ile çarpıyormuş. Ama XZ'e bir gecikme verdiriyor, tekrar çarpıyor. Bir gecikme daha verdiriyor, tekrar çarpıyor. İşte kaç tane gecikme veriyorsa XZ belki 5 defa gecikme verilecek, 5 defa yankı.
+
+45
+00:23:39,700 --> 00:23:48,900
+Ondan sonra bu gecikmeler bir doğrudan tekleniyor, bir de fark alınarak ekleniyor. Yani bu öyle bir şey ki YZ, X-detin kendisini bir alıyor.
+
+46
+00:23:48,900 --> 00:24:00,700
+Kendisini A0 kadar ölçekliyorsunuz. Sonra X-detin bir geciktirilmiş halini bir fark olarak, yani eksi X-dli bir terim, X-d-eksi mesela işte...
+
+47
+00:24:00,980 --> 00:24:15,240
+xz çarpı z üzeri eksi bir, bir de artı xz çarpı z üzeri eksi bir, alfa böyle kat sayılarla. Bakın bu bir sistem, bunu analiz etmesi bayağı güç bir şey ama z-transformu çok daha kolay hale getiriyor.
+
+48
+00:24:16,140 --> 00:24:28,279
+Universe z-transformu şu kontrol integrali, matematikçi olsaydınız bununla bayağı bir uğraştırıyor insanları. Bu integrali almak doğrudan z-e göre şey almak gibi değil arkadaşlar. Ekstra karmaşık bir şey içerdiği için bu veri.
+
+49
+00:24:28,756 --> 00:24:39,256
+Başka başka şeyler yapmak gerekiyor. Bunun da ayrıca yöntemi var. Biz bunu hep kullanmıyoruz. Onun yerine Z-Transform çiftlerini kullanıp işlem yapmak daha kolay hale geliyor.
+
+50
+00:24:39,256 --> 00:24:53,756
+Bunun varlığından bahsettik. Varlığı ne olacaktı? Şu toplam sembolünün sonucunun sonsuzdan küçük olması gereken durumlardı. Onu da izzete göre şey yapabiliriz. Örneğin burada sol ve sağ taraflı sinyaller denmiş. Bakın bu bir sağ taraflı sinyaldir.
+
+51
+00:24:54,291 --> 00:25:15,731
+Şu da sol taraflı bir sinyaldir. İşte belli bir aralıkta işaretin değerleri sıfır, ondan sonra başlıyor. Right-sided sinyal XR dediği şey şu, şu da left. Biz bunları genelde UN'lerle veya UN'x-N'lerle ifade ediyoruz. Veya U-N-1 dediğimiz nedir? Şimdi eksi N yaparsak bir işareti.
+
+52
+00:25:16,243 --> 00:25:29,243
+Şurayı gösterir. Eksi bir dediğinde, şuradaki değerden itibaren de bunu da çıkar demektir. İşte şunlar hariç, şöyle git bunların hepsi eksi eksi eksi olsun demektir. Diyeceğiz. Başka right-sided...
+
+53
+00:25:29,839 --> 00:25:54,420
+işaret, eksponansiyel sinyal var. Tabii bu bir miktar öne alınmış. Yani şu n0 noktasından itibaren çalışıyor veya burada bu şekilde çalışıyor. Bunlar da diğer işaretler. Bunların z-transformunu aldığımızda elde edeceğimiz z-aralığı, işte bize region of convergence'imizi söylüyor. Bunlardan konuştuk. Buradaki örneklere de bakabilirsiniz. İşte bir işaret
+
+54
+00:25:56,079 --> 00:26:14,679
+Yani iki tane işaretin işte A işareti B işareti diyelim Z transformunu aldığınız aynı şeyler çıkar. Ama bunun yanında dönüşüm formunu uygularken bulacağınız ROG size o ayrımı sağlıyor. Hangisi hangisinin dönüşümünü tam o belirginleşmeyi o söylüyor.
+
+55
+00:26:24,692 --> 00:26:49,251
+Şunlar başka işaretlenmiş. Şu şekilde. Bunun roku şu şekilde çıkıyor. Bunun bir roku çıkmamış. Yani bu aralıkta başka bir şeye gerek yok. Sonlu bir işaret. Yani eksi 12'den artı 12'ye. Dolayısıyla burada bir sonsuza giden bir durum yok. Ama şurada sonsuza giden bir durum var. İşte eksi'den geliyor falan böyle bir su bir değer var. Şunların roklarını falan bulmuş. Bunlar şeyden bulmalıdır.
+
+56
+00:26:50,003 --> 00:27:16,963
+Şu çiftlerden bazılarını gördük, UN'i gördük, şunu gördük, şunu gördük. Şimdi bir şeyi N ile çarpmak için böyle ezber yapmaya gerek yok demiştik. Z üzeri bir şeyle çarpılıyorsa, yani türevi alınıyorsa aslında bir şeyle çarpılmak demek, türevi alınıyorsa orada bir N ile çarpım var dedik. Sinüslerle, kosmüslerle çok ilgilenmiyoruz arkadaşlar. Yani gereksiz yere zorluyor. Bakın bu ifadelerin aynısı. Z bölü Z-1, Z bölü Z-1 sadece region of convergence değişiyor.
+
+57
+00:27:17,460 --> 00:27:20,780
+Şu şekilde diğer işaretlerde dönüşümleri mümkün.
+
+58
+00:27:21,559 --> 00:27:22,840
+Ayrını buradan yapacağız.
+
+59
+00:27:23,599 --> 00:27:31,539
+Özelliklerinden bahsettik. Eğer işaretler ayrı ayrı yazılabiliyorsa toplamını çarpma şeklinde bunları linearlik özelliğinden ayrı ayrı z dönüşümüne alabiliyoruz.
+
+60
+00:27:31,800 --> 00:27:35,900
+Timeshift'i çok konuştuk. N0 kadarsa N0 çarpımını ekliyoruz.
+
+61
+00:27:36,139 --> 00:27:39,480
+Scale yapacaksak z düzleminde z bölü a kadar.
+
+62
+00:27:39,740 --> 00:27:42,300
+Bunu a üzeri n ile çarpıyoruz demektir.
+
+63
+00:27:42,644 --> 00:27:56,543
+Elimde GZ varken ben GN'i elde edeceğim ama Z bölü A varmış. O zaman GN'i A üzeri N ile çarparak bunu bulabilirim. Ha, Rok'ta da ne kadar oluyor? Roku Alfa kadar veya A kadar çarparak sonucu elde edeceğiz.
+
+64
+00:27:57,268 --> 00:28:05,668
+Time Reversal, eksi n ise burada z üzeri eksi bir, sadece burada rok değişiyor ve z yerine z üzeri eksi bir yazıyorsunuz.
+
+65
+00:28:05,788 --> 00:28:11,907
+Time Expansion dediğimizde aynı şey aslında, n bölü k yapmak demek, genişletmek için.
+
+66
+00:28:12,488 --> 00:28:15,708
+n bölü k yaptığımızda z üzeri k yazıyorsunuz z dönüşümünde.
+
+67
+00:28:16,508 --> 00:28:19,608
+Conjugation çok önemli değil ama z domain differentiation dediğimiz
+
+68
+00:28:20,064 --> 00:28:28,064
+Burada türev aldığımızda, bir şeyin türevini aldıysak, burada n ile çarpmak demektir, eksi n ile çarpmak demektir. Bunu da kullanıyoruz.
+
+69
+00:28:29,064 --> 00:28:38,064
+Konvolüsyonu en fazla kullanacağız, işte difference işlemlerini kullanacağız dedik. Bu zaten doğrudan ortak parantez alma yöntemi de çıkan bir şey.
+
+70
+00:28:38,064 --> 00:28:47,064
+Bunun z dönüşünü gz, bunun z dönüşünü gz çarpı z üzeri eksilir, gz parantezini aldığında 1 eksi z üzeri eksilir, doğrudan bulabilirsiniz.
+
+71
+00:28:48,019 --> 00:28:56,720
+Accumulation toplama da bu işaretin eksi sonsudan belli bir aralığa kadar toplamı, aslında bunun bir z dönüşünü alıyorsunuz belli aralıkta.
+
+72
+00:28:57,440 --> 00:29:01,720
+Yani toplamış oluyorsunuz z bölü z üzeri eksi bir diye ifade ediliyor.
+
+73
+00:29:01,720 --> 00:29:15,720
+Şimdi Initial Value ve Final Value Teoron işaretin ben eğer ve sistemin g n'ini biliyorsam n sıfırdan küçüklükteki değerleri için işaretin başlangıç değerleri, g sıfırı,
+
+74
+00:29:16,051 --> 00:29:28,971
+Şu şekilde bulunuyor, GZ'in Z'i sonsuza götürüp limitini alıyorsunuz. Elinizde GZ var ama siz G0 arıyorsunuz. G0 tabii en yerine koyacak. Bunun ters dönüşümünü alıp en yerine 0 koymanıza gerek yok.
+
+75
+00:29:29,591 --> 00:29:36,591
+Burada Z'i sonsuza gönderip limitini almanız yeterli. Aynısı final value theorem içinde var. Yalnız burada şuna bakmak gerekiyor.
+
+76
+00:29:37,587 --> 00:30:03,748
+Şimdi final value'da da normalde g n'in en sonsuzdaki değerine bakacağız. Elimde g n formülü var. Ama elimizde sadece şu an için g z varsa g n'e geri dönüşümü yapmaya gerek yok. Onun z üzeri eksi birleşarpıp z birdeki sonucunu almak final değeri alır. Mesela bir sistem verelim. y t e üzeri eksi 5 t ut olsun.
+
+77
+00:30:04,372 --> 00:30:26,692
+Bunun başlangıç değeri 0'dır. Final variable de sonsuz verirsiniz. 0 verdiğinizde bu, e üzeri 0, 1, yani 1 gibi bir, hatta şuraya 10 diyelim, 10 gibi bir sonuç elde edersiniz. T eşittir sıfır anda. İşte sistemi açtınız, çalıştınız. Sonsuz verdiğinizde e üzeri sonsuz, eksi sonsuz 0'dır. Bu ne olacaktır? Şöyle azalıp gidecektir. Böyle bir sonuç elde edeceksiniz.
+
+78
+00:30:28,884 --> 00:30:37,884
+gerek N düzleminde, gerek Z düzleminde veya Laplace'da N düzleminde değişken dönüşümü yapmadan yapmak mümkün.
+
+79
+00:30:37,884 --> 00:30:45,884
+Yani burada ben YT'yi biliyorum ama elimde YS olsaydı, Laplace karşı olsaydı, Initial Value ve Final Value teoremlerini kullanabiliyordum.
+
+80
+00:30:45,884 --> 00:30:53,884
+Aynı şekilde YN gibi düşünün bunu, ayrık zamanlı gibi düşünün. Ayrık zamanlı olsa YN eşittir 10 çarpı E üzeri eksi.
+
+81
+00:30:54,195 --> 00:31:06,675
+5N, UN böyle bir işaret olacak ama bu ayrık işaret. Bunun final value'sunu bulmak için tekrardan şey yapmaya gerek yok. Eğer elimizde yine YZT varsa tabii ki şunları kullanabiliyoruz.
+
+82
+00:31:08,516 --> 00:31:13,795
+Özelliklerine bakmıştık. Inverse set diagramı şeyinde de ne yapıyoruz? Mesela buradaki örnekleri de artık çözelim.
+
+83
+00:31:14,395 --> 00:31:20,096
+Pi ve paylıları basit kesirler şeklinde yazmak bizim için önemli. Bakın burada Zeynos Convergence bilgisini vermiş.
+
+84
+00:31:20,096 --> 00:31:21,615
+H ise şöyle bir şey olsun.
+
+85
+00:31:22,387 --> 00:31:36,887
+Şimdi burada içeriye açıyor ve şunu paydalarına, basit kesimlere ayıracak. Basit kesimlere ayırırken burada da iki tane şey yapmış. Birincisi polinom bölmesi yöntemiyle yapalım demiş. Bu biraz zor olan bir şey bence.
+
+86
+00:31:37,987 --> 00:31:44,587
+Şimdi şu ifadeyi açtığınızda şunu bulursunuz, ondan sonra yukarıdakini aşağıya bölüyor. Yukarıdakini aşağıya sürekli bölerek
+
+87
+00:31:44,884 --> 00:31:52,364
+İşte aşağıdan şu z dönüşümünü şu şekilde elde edebiliyor. Yani şu dönüşüme getiriyorsunuz. En son şu şekilde yazdığınızda.
+
+88
+00:31:52,923 --> 00:31:59,804
+Veya bundan daha kolay SENTETIC DIVISION'ın yerine PARÇAL FRACTION EXPENSION dediğimiz, bizim de derste çok anlattığımız şey var.
+
+89
+00:32:00,423 --> 00:32:07,563
+Şu ifadelere göre parçalı kesirleri ayırarak A, B, FAS sayıları bulmak. Burada tabii bir şeye dikkat etmek lazım.
+
+90
+00:32:08,692 --> 00:32:33,912
+Önce arkadaşlar, şuradaki Z çarpanlarından birini Z olarak paydaya alıyoruz. Bu, zaman gecikmesiyle alakalı bir kavram. Z dönüşümünde böyle bir şey var. Örneğin şurada Z kare varsa, bu Z kareyi şuraya alıyor. Ondan sonra şunlara göre paydaları bulup, sonra tekrar Z kareyi bir zaman gecikmesi kavram olarak ucuna ekliyor. Herhalde bir örneği vardır bunun. Evet, mesela şuna bakalım.
+
+91
+00:32:34,352 --> 00:32:38,452
+z-1 bölü 2, z-z artı 2.2 bölü 9.
+
+92
+00:32:38,452 --> 00:32:52,612
+Şimdi bunu ters set dönüşümünü alırken, time shifting yaparak yz bölü şu demiş, işte x set bölü bu demiş.
+
+93
+00:32:53,292 --> 00:33:00,812
+Sonra z kare ile x set arasında şu ters set dönüşümün değerlerini yazmaya çalışmış.
+
+94
+00:33:01,523 --> 00:33:13,723
+Ve buradan şu noktaya gelip bunun burada Yn ve Xn arasındaki bağıntıyı bulacağız. Gerçekten bu partial fraction değil bu. Hani öyle olsa bir şey yapardı.
+
+95
+00:33:15,543 --> 00:33:24,883
+Bu da kullanılabilir ama çok fazla tavsiye ettiğim içeriği. Biz partial fraction'ı kullanarak şurada çok daha düzgün örneğin şu nedir? Z çarpı K1, Z eksi P1.
+
+96
+00:33:28,468 --> 00:33:45,028
+P1 üzeri n çarpı un demektir. Yani 2 bölü z eksi ne diyelim 3. Bu nedir? 3 üzeri n çarpı 2, 2 çarpı 3 üzeri n, un şeklinde bir ifade olacak. Şunları bulmak bizim çok rahat sonucu elde etmemizi sağlıyor.
+
+97
+00:33:48,088 --> 00:33:50,327
+Sonra mesela demiş ki burada
+
+98
+00:33:51,028 --> 00:34:01,627
+Şöyle bir şey var, Zero-Poll diagramını çizin. Zero-Poll diagramı çizmek için şuraları sıfıra eşitleyeceğiz, Pay ve Payday. Bu şekilde sonucu bulacağız. Burada zaten örneğin var.
+
+99
+00:34:03,827 --> 00:34:16,028
+Şunlara geçebilirsiniz. Inverse'ı mesela şu. Böyle bir örnekte mesela bakın iki taraflı bir sinyal bu işaret. Region of Convoyus'un şu aralıkta. Küçüğün
+
+100
+00:34:16,371 --> 00:34:43,491
+sağın küçük ile büyük arasında. Şimdi şurası nedir? 0.5 üzeri N'dir. Öyle değil mi? Şurada 2 üzeri N'dir. Fakat burada Region of Convolgius öyle bir şey ki, bir tane şöyle, bir tane de şöyle, şurası 2 diyelim, şurası 0.5. Şu arada, bu arada olduğu için, şurada sağ taraflı, burada sol taraflı çalışacak. Ve burayı bu şekilde eksi 2 üzeri N deyip,
+
+101
+00:34:43,807 --> 00:34:47,248
+işaretin sonucunu böyle ifade edeceğiz. Bu dönüşümün sonucu budur.
+
+102
+00:34:49,788 --> 00:34:55,087
+Mesela z2'den büyükse, o zaman bakın bu tek taraflı bir işaret, hatta sağ taraflı bir işaret.
+
+103
+00:34:55,688 --> 00:35:01,708
+Bu 0.5 üzeri n, bu 0.2 üzeri n, burayı sıfır yapan değerlere bakıyoruz.
+
+104
+00:35:02,408 --> 00:35:03,307
+Eksi 2 üzeri n.
+
+105
+00:35:03,664 --> 00:35:23,584
+Un şeklinde, şundan kaynaklı olarak böyle söyleyebiliriz. Bakın burada da tam tersden gelmiş, bu sol taraflı işaret. Yine 0.5 üzeren, eksi 0.2 üzeren. Önüne bir eksi gelmesinin sebebi de negatif olacağı için şuradaki negatiklikten kaynaklı kurallan geliyor. Bunu da böyle söyleyebiliriz.
+
+106
+00:35:24,052 --> 00:35:50,672
+Şimdi yirmi lateral dediği şey de tek taraflı Z-transformu. Örnek olarak ben bu Z-transformumu eksi sonsuzdan sonsuza değil de sıfırdan sonsuza veya eksi sonsuzdan sıfıra yaparsam hesaplarsam aynı Bat-Bas'ta olduğu gibi buna da tek taraflı dönüşüm diyoruz. Aynı şeyler var. Bunu da nerede kullanıyoruz? Fark denklemlerinin dönüşümünde.
+
+107
+00:35:51,072 --> 00:36:00,072
+Şimdi, fark denklemleri bize bir sistemi tanımlayan diferansiyel denklemler gibi bir şeydi. Diferansiyel denklem çözemediğim için Laplace'da çok rahat çözmüştük.
+
+108
+00:36:00,072 --> 00:36:15,072
+Ama unilateralde tek tarafta yine başlangıç koşulları veriliyor. Şimdi bir şeyin başlangıç koşulları verildiyse, başlangıç koşullarını çıkarmamız gerekiyor. Laplace'da nasıl mesela S, Y, T, Y hesaplarken
+
+109
+00:36:16,447 --> 00:36:31,547
+YS-Y0'ı çıkartıyoruz. Burada da benzer şekilde YZ'den Y0'ı çıkartacağız. Yalnız ikinci dereceden türev gibi düşünün. Bir de burada bunun tekrar bir türevini alacağız.
+
+110
+00:36:43,860 --> 00:36:55,860
+Y0. Şimdi bunun tekrar türevini almak ne demek? Z- yani şurası birinci dereceden fark denkle biri, Y-1.
+
+111
+00:36:55,860 --> 00:37:08,860
+Bunun tekrar aldığımızda bir Z ile çarpacağız. Bir de burada Y-1'e karşılık geliyor şu içerisinde 0 yazdığımızdaki değer.
+
+112
+00:37:08,864 --> 00:37:19,663
+sıfır geldi. Şunu çıkartacağız. İşte z kare eksi y sıfır deyip bu şekilde aslında şurada z olması lazım da.
+
+113
+00:37:19,663 --> 00:37:26,663
+Bu gerçi doğrudan hepsini toptan yazdığı için bu şekilde uzun uzun yazmış.
+
+114
+00:37:26,867 --> 00:37:37,367
+Yani bu özelliği kullanarak, yani biz gerçi şey sormayacağız size, tek taraflıyı sormayacağız, genelde iki taraflı da yeterli ama Laplace'da tek taraflı sorabiliriz.
+
+115
+00:37:37,367 --> 00:37:41,268
+Onunla alakalı zaten geçen hafta örnekler yapıldı.
+
+116
+00:37:41,268 --> 00:37:46,467
+Bunu bulduğunda yerine yazdığımda sistem şöyle çıkıyormuş, bakın bu nedir?
+
+117
+00:37:46,467 --> 00:37:49,068
+1 bölü 4 üzeri n.
+
+118
+00:37:49,268 --> 00:37:56,268
+Eğer bizim şu region of convergence'ımız da 1.4'ten büyükse, u enderiz işini tırırız.
+
+119
+00:37:58,268 --> 00:38:10,208
+Evet, böyle bir şey. Ha, gerçi devam ediyor, pardon. Sağ tarafı, pardon, şu sağ taraf şöyle. Şimdi burada yz'lerle x'leri, yani yz'leri yalnız bırakacak.
+
+120
+00:38:10,208 --> 00:38:16,208
+Yz'i yalnız bıraktığında sonuç şöyle bir şey geldi. Şimdi gelelim şu ifadenin dönüşümüne. Burası nedir?
+
+121
+00:38:16,559 --> 00:38:43,420
+1 bölü 4 üzeri UN, 1 bölü 4 üzeri N, çarpı başta 16 bölü 3 var. Dışarıdaki Z'i dışarıda bıraktı. Bunu çünkü Z bölü Z eksi bir şeklinde söylediği için, yani Z şurada da olabiliyordu ama şurada Z, şurada Z, şurada Z, şurada Z kapa karıştırılması, onu dışarıya almış. Şurası 1 bölü 2 üzeri N, şurası 2 bölü 3 üzeri 1 üzeri N, 1 üzeri N yazmaya gerek yok.
+
+122
+00:38:43,791 --> 00:38:47,551
+Bu işte sağ taraf şey olduğu için doğrudan UN yazdı bitirdi.
+
+123
+00:38:48,991 --> 00:38:54,351
+Zero-Pol diagramları da görmüştük. Burada da bazı örnekler var, bunları da bakarsınız.
+
+124
+00:38:56,231 --> 00:39:01,032
+Sonra işte DTFT dönüşümüne geçiyor burada.
+
+125
+00:39:02,072 --> 00:39:09,991
+Bunlara da bakılabilir. Sondaki örnekler zaten biraz açıklamalı, bazı frekans düzenine geçişler, örnekler var.
+
+126
+00:39:10,516 --> 00:39:24,815
+Zannediyorum yeterince bu konuda örnek gösterir. Konu kısadır. Yani bizim ders de size, size lazım olanı kadarında bence bu kadar yeterli arkadaşlar. Daha fazla detaya da gerek yok. Sizin bir sorunuz var mı?
+
+127
+00:39:30,356 --> 00:39:57,756
+Normalde haftaya ders yapmamayı düşünüyoruz. Ali Can Hocam ne yapar bilmiyorum. Ben kendi grubum için, benim sınıfımda şey var, mazire sınıfına girecek öğrenci var. Onun için haftaya ders yapmayı düşünmüyorum. Bir şey lazım olursa, bir şey gerekirse haber veririz. Ödevlerimizi de bu hafta içerisinde okumuş olacak. Finalde Z dönüşümü, Laplace dönüşümü, geriye doğru bütün konulardan sorumlu olacaksınız. Varsa sizin sorunuzu alayım.
+
+128
+00:39:58,483 --> 00:40:01,884
+Yoksa aklımdayken şunu da şeye kaydedeyim.
+
+129
+00:40:03,884 --> 00:40:05,083
+Sizin
+
+130
+00:40:05,083 --> 00:40:08,184
+paylaşımınıza
+
+131
+00:40:08,184 --> 00:40:10,483
+sas
+
+132
+00:40:10,483 --> 00:40:11,583
+x-wide
+
+133
+00:40:11,583 --> 00:40:20,076
+y
+
+134
+00:40:18,963 --> 00:40:20,076
+Z
+
+135
+00:40:29,600 --> 00:40:40,172
+y
+
+136
+00:40:28,211 --> 00:40:39,792
+Hepinize ayrık sınavında başarılar. Herhalde sizden bir soru yok, öyle görünüyor. Peki, görüşmek üzere arkadaşlar, kolay gelsin. Size de iyi günler.
