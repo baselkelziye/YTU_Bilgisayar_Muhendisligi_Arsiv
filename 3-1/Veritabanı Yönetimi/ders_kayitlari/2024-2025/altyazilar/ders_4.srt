@@ -1,0 +1,2643 @@
+1
+00:02:50,228 --> 00:02:53,828
+Hocam selamlar. Sesiniz bize gelmiyor hocam.
+
+2
+00:03:11,572 --> 00:03:12,171
+Programlama.
+
+3
+00:03:14,171 --> 00:03:14,731
+Ödünleri.
+
+4
+00:03:15,111 --> 00:03:18,972
+Yani, ER diyagramı, sisteminin sağlıca programlama olanaklığı.
+
+5
+00:03:19,611 --> 00:03:20,651
+O yüzden kısıtlı.
+
+6
+00:03:21,831 --> 00:03:24,412
+Yani, böyle çok şey yapamıyoruz ödünlerde.
+
+7
+00:03:24,412 --> 00:03:35,472
+Ama, halişten, post-programda, eğer arada, saydım, veya kesinlikle, bir fazla saydım, bunlarda çok şey yapabiliyoruz.
+
+8
+00:03:35,632 --> 00:03:38,412
+Yani, teknoloji olabilir veya...
+
+9
+00:03:38,448 --> 00:03:43,448
+...hikoloji terasyonlarla şişki şeklinde yapabiliyoruz.
+
+10
+00:03:43,448 --> 00:03:47,448
+Çünkü onlar böyle prosedürlendiriyor.
+
+11
+00:03:47,448 --> 00:03:51,448
+Ama esküel nasıl gidil?
+
+12
+00:03:51,448 --> 00:03:53,448
+Ekser yapabiliyor.
+
+13
+00:03:53,448 --> 00:03:59,448
+O yüzden işin başında da yol ayrılığı başında başlıyor.
+
+14
+00:03:59,448 --> 00:04:02,448
+Yani esküelde yapabileceğim şeyler şişki.
+
+15
+00:04:02,448 --> 00:04:04,448
+Takıyı da kapatabilir miyiz yani?
+
+16
+00:04:05,460 --> 00:04:07,460
+Sayıdan, ben de...
+
+17
+00:04:07,460 --> 00:04:10,460
+Sayıdan, ben de teşekkür ederim.
+
+18
+00:04:10,460 --> 00:04:16,460
+Evet, şimdi...
+
+19
+00:04:16,460 --> 00:04:22,460
+Reactionlerde işte bekleksiz ve işte bu window sorgular var.
+
+20
+00:04:22,460 --> 00:04:25,460
+Rank sorgular var.
+
+21
+00:04:25,460 --> 00:04:28,460
+Ve kick sorgular var.
+
+22
+00:04:29,396 --> 00:04:39,896
+Bunlar da oldukça önemli. Fakat bunları biz sesmeni derste aktardık. Dönemin sonunda belki birkaç vası bahsedelim.
+
+23
+00:04:39,896 --> 00:04:48,696
+Ben Antibes'te, meslekten bir ders anlarınızı da bunları görmeleri, yani sorgulaması da. Bunların bir tekim bazı yapıları var.
+
+24
+00:04:48,875 --> 00:04:53,175
+Bir de, ökmetimden, birkaç da olsa burada derste görmek olabilir.
+
+25
+00:04:55,156 --> 00:05:00,716
+Ama daha geniş kalkan bu Ulu Dolmanok'ta sizde bu ücreti falan bir süreler etmiştim.
+
+26
+00:05:01,375 --> 00:05:06,156
+O da şimdi akımlar dersi arayıp alansızda.
+
+27
+00:05:25,267 --> 00:05:29,687
+Yani hiç mi gelmiyor, az mı geliyor ses?
+
+28
+00:05:31,467 --> 00:05:34,987
+Şu an daha iyi oldu hocam ama, az önce hiç gelmiyordu.
+
+29
+00:05:35,907 --> 00:05:38,187
+Biraz geliyordu yani, hiç gelmiyor değildir.
+
+30
+00:05:40,247 --> 00:05:40,527
+Evet.
+
+31
+00:05:43,527 --> 00:05:48,907
+Evet, biraz geldiğini varsayarak devam ediyorum. Biraz daha yüksek sesle kurmaya gayret ederek.
+
+32
+00:05:50,447 --> 00:05:52,407
+Sizden de mesaj gelmediği için.
+
+33
+00:05:55,348 --> 00:06:01,008
+Sizin de sesiniz gelmiyor. Yani yazmanıza gerek yok. Konuşarak da bir tebki verebilirsiniz.
+
+34
+00:06:04,627 --> 00:06:05,127
+Evet.
+
+35
+00:06:08,127 --> 00:06:09,007
+Şimdi,
+
+36
+00:06:09,007 --> 00:06:13,168
+Evet, ne diyorduk?
+
+37
+00:06:14,227 --> 00:06:19,127
+Evet, yani diğer seçmeli derslerde bunu, bu eksikliği giderebiliriz.
+
+38
+00:06:19,707 --> 00:06:23,987
+Şimdi, böyle SQL, SQL declarative olduğu için,
+
+39
+00:06:24,415 --> 00:06:39,076
+Yani bu ne demek? Sistem, mesela ne oldukça karmaşık? Yani sistemin fiziksel olarak kaynakları kullanması oldukça optimize ve karmaşık ve kullanıcıdan uzak, kullanıcıdan bağımsız.
+
+40
+00:06:39,176 --> 00:06:46,836
+Kullanıcı, yani physical independence deniyor buna. Yani sorgu, biz sadece sorguyu yazıyoruz.
+
+41
+00:06:46,995 --> 00:06:51,375
+Fakat işte bu da bir kısıtlama getiriyor. Yani sorgu ile yapabileceğimiz şeyler belli.
+
+42
+00:06:51,956 --> 00:07:16,536
+Bir şey arıyoruz. Bir şeyi sorguluyoruz. Yani bir analitik bir düşünce yapısıyla bir şeyi sorguluyoruz. Ama bazı şeyleri yapamıyoruz. Mesela kullanıcıdan bir input alarak programın akışını değiştiremiyoruz. Yani söylediğim şey tipik bir procedural language şeyi değil mi? Hani bir geri besleme alarak kullanıcıdan.
+
+43
+00:07:16,927 --> 00:07:20,187
+Programın akışı dinamik olarak değişmesi mesela.
+
+44
+00:07:21,920 --> 00:07:33,860
+Veya işte bir print alamıyoruz mesela, bir yere bir mesaj gönderemiyordur. Ama bu programlama dinlerini bunları yapabiliriz. Veya burada birkaç örnek daha ekledim ben, bunları.
+
+45
+00:07:34,860 --> 00:07:45,400
+Orijinaldınlardan farklı olarak. Mesela SQL diyor, does not provide the expressive power of a general purpose language.
+
+46
+00:07:46,836 --> 00:07:51,956
+Örneğin, consider calculating the first 10 terms of Fibonacci sequence.
+
+47
+00:07:52,735 --> 00:07:55,495
+Fibonacci sequenceleri hatırlayan vardır belki değil mi?
+
+48
+00:07:56,656 --> 00:07:57,456
+Neydi?
+
+49
+00:08:01,396 --> 00:08:18,735
+Evet. Toplama değil mi? Mesela 10, ben açı 10 dediğimiz zaman, 1, 1 artı 1, artı 2, artı 3, yani ilk o 10 sayının toplama. Doğru mu? Öyle miydi? Öyle.
+
+50
+00:08:20,156 --> 00:08:24,316
+12 sayının toplamı, doğru. Evet. Her zaman 12 sayının toplamı oluyor.
+
+51
+00:08:25,492 --> 00:08:46,011
+Şimdi bunu mesela yazmak istesek SQL ile yazamayız. Yani veya buna benzer bakın mesela sorgulayın. Yani procedural'da çok kolay yazabileceğim çok şey var ve çok hızlı çalışabilecek. SQL ile bunları yazmamıya çok zor.
+
+52
+00:08:46,351 --> 00:08:48,791
+ya da belki de imkansız yani.
+
+53
+00:08:49,231 --> 00:08:51,371
+Ama bunla ilgili çok örnek yapabiliriz.
+
+54
+00:08:51,451 --> 00:08:58,251
+O zaman veya işte burada işte istatistel analizler yapma, mesela kompleks istatisteli.
+
+55
+00:08:58,371 --> 00:09:05,571
+Bizim burada yaptığımız S-PERD'e basit istatistel şeyler, gruplandırma, o gruplama içerisindeki kum elime fonksiyonları falan.
+
+56
+00:09:05,851 --> 00:09:07,051
+Bunları yapıyoruz yani.
+
+57
+00:09:07,443 --> 00:09:18,443
+Ama burada işte karmaşık böyle şeylerin yapılması, istatistiksel analizlerin yapılması mesela SQL gibi onları desteklemiyor. Onları yapamıyoruz.
+
+58
+00:09:18,932 --> 00:09:37,932
+Veya işte, yine aşağıdaki maddeyi de okuyabiliriz. Demek ki o zaman, bu veriyi çekip, yani verimiz böyle, vezi tabanında, o veriyi çekip, o veri üzerine bir takım böyle işlemler, daha güçlü bir programlama diline ihtiyacınız var. Bir takım işlemler yapabilmek için daha karmaşık işlemler yapabiliriz.
+
+59
+00:09:37,932 --> 00:09:45,932
+Şimdi burada tabii bir çok yol karşımıza çıkıyor. Bunlardan bir tanesi, böyle...
+
+60
+00:09:46,035 --> 00:09:58,515
+Üst uygulama dilleri, Post Language kullanarak programları yazmak ve bu programlar da veritabanına erişecekler.
+
+61
+00:09:58,515 --> 00:10:12,035
+Bu erişim noktasında da temel olarak iki farklı yaklaşım var. Bir tanesi TENİK SQL ve diğeri ise EMBEDID, STATIC SQL. Bunu duyan var mı daha önceden?
+
+62
+00:10:13,652 --> 00:10:30,792
+Veritabanında biz konsolda, şu anda laboratörde yaptığınız mesela, konsolda, ne demek konsolda? Veritabanına bağlanan bir arayüz, PCAdmin mesela, onunla bir konsolda açıyor ve connectionla bağlanıyor.
+
+63
+00:10:30,792 --> 00:10:38,332
+Yani buradaki connectionla bir GDBC olmayabilir. Yani o PCAdmin'in kendi protokolüyle bağlanıyor veritabanına.
+
+64
+00:10:41,652 --> 00:10:52,532
+Bu yüzden biz sorguları gönderebiliyoruz. Veya işte update yapabiliyoruz. Veya ufak stort prosedürlileri çalıştırabiliyoruz, fonksiyonları çalıştırabiliyoruz vs.
+
+65
+00:10:53,395 --> 00:11:12,675
+Fakat bunu bir Java programında, bir C++, C++, C++ gibi mesela orlardan veya Python gibi kullanışlı dinlerden, bu veri tabanına erişmek için bir arayüze ihtiyacımız var. Yani bir driver denilen sürücüye ihtiyacımız var.
+
+66
+00:11:13,172 --> 00:11:19,771
+Bunlar da programlama diline göre değişiyor ve bu sürücülerin kullandıkları bir protokol var.
+
+67
+00:11:19,771 --> 00:11:23,572
+Java için bu ZDBC, Java database connectivity.
+
+68
+00:11:23,572 --> 00:11:28,971
+Ötekiz için ODBC oluyor C için.
+
+69
+00:11:28,971 --> 00:11:33,372
+Python için yine bir kütüphane var onlarla bağlanıyor.
+
+70
+00:11:34,227 --> 00:11:44,127
+Şimdi burada iki tane ana şey var. Farklı iki yol var. Bir tanesi dynamic SQL, ötekisi de embedded, static SQL.
+
+71
+00:11:44,267 --> 00:11:54,407
+Dynamic SQL'de biz bağlantılarımızı yaptıktan sonra veritabanına, o veritabanının sürücüsünü yükleyerek,
+
+72
+00:11:54,703 --> 00:12:13,443
+Sürücü ne demek biraz daha söyleyeceğim, driver. Bu sürücüyü programımıza include ederek, import ederek daha doğrusu değil mi? Java terminolojisinde ne yapıyoruz? Import ediyoruz. C++'la C'de mesela include ediyoruz değil mi? Yanlış olmasın. Bir de teyit ediyoruz.
+
+73
+00:12:16,052 --> 00:12:29,451
+İşte bunu böyle biz bu kütüphaneyi, bu driver'ı böyle import ettiğimiz zaman, JDBC ile, bize eğer hangi programlama dili olursa olsun, bu süreç iki kategori bütün hepsi için geçer.
+
+74
+00:12:29,512 --> 00:12:33,872
+Hangi programlama dili olursa olsun, yani C, Java, hangisi.
+
+75
+00:12:42,611 --> 00:13:09,891
+Runtime'da, online olarak bir string ile, ledetabanına gönderiyor isek, tamam mı? Bu, dinamik SQL. Yok, eğer SQL'leri, biz program içerisine böyle, derc ettiysek, program içerisinde SQL'ler var. Ve ben programımı, compile ederken, o SQL'ler de compile ediliyorsa, artık böyle paket halinde programım oluştu. Tamam mı?
+
+76
+00:13:10,240 --> 00:13:18,240
+Her şey bitti. Artık runtime'a geçeceğim. Artık SQL'ler belli. Tamam mı? Compile edilmişler. Ve onu çalıştırıyorum.
+
+77
+00:13:18,323 --> 00:13:25,323
+İşte bunlarda static SQL deniyor. Hayal edebildiniz mi? Hepimiz bir program yazmışızdır elbette.
+
+78
+00:13:25,323 --> 00:13:38,323
+Şimdi burada ama bu programların içerisinde bir veri tabanı, eylemlerini nasıl gömeceğiz, nasıl yerleştireceğiz? Mesele o. Burada da iki yol olduğunu söyledim. Bir tane systemic SQL, statik, static SQL. Tamam mı?
+
+79
+00:13:44,947 --> 00:14:08,028
+yazıyoruz. Ama embedded SQL'de, SQL'e embed, embed ne demek? Embedit, gömülü. Yani o programın içerisine gömülü. Yani bir string ile falan yazmıyorum. Burada bir takım böyle flagler var. O flaglerle o programın içerisinde SQL'i yazıyorum. String içerisine yazmıyorum. Bir kere ilk adım atarken bambaşka iki yolla başladık.
+
+80
+00:14:08,436 --> 00:14:14,036
+Bunların tabi böyle yaygın kullanımı maksatları bir.
+
+81
+00:14:15,283 --> 00:14:22,563
+Yani her şeyi, yapmak istediğim her şeyi, eğer işte karar verdim, bunu ben işte üst uygulamada yapmam gereken bir şey ver.
+
+82
+00:14:22,903 --> 00:14:25,683
+Ya acaba da yapmaya karar verdim, partim de, CD, her neyse.
+
+83
+00:14:26,104 --> 00:14:29,063
+Bundan sonra da bu iki yolla bütün hepsini yapabilirim.
+
+84
+00:14:29,144 --> 00:14:31,864
+Ama genel karakteristikleri burada listelenmiş.
+
+85
+00:14:31,984 --> 00:14:39,063
+Yani dynamic SQL biraz daha flexible, daha esnek, yani daha çok şeyi daha kolay yapabilir.
+
+86
+00:14:43,283 --> 00:14:45,663
+İstediğim SQL'leri gönderebiliyorum.
+
+87
+00:14:46,604 --> 00:15:07,264
+Hayal edin mesela, birçok uygulama, web uygulamaları olabilir özellikle, esneklik gerektiren, runtime'da bu SQL'lerin iletilmesi, onların compile edilmesi, runtime'da olması daha fleksibel uygulamalar için daha uygun olacaktır.
+
+88
+00:15:08,148 --> 00:15:16,468
+Fakat yukarıda ikinci maddeyi söylemiş oldum. Birinci maddeyi söyledik. Her maddeyi bir daha okuyalım, şey yapmayalım.
+
+89
+00:15:16,468 --> 00:15:26,868
+Dynamics SQL component of SQL, Allowed Program Construct, Asamble SQL Quiz at Runtime, within a string diyelim bir de buraya ekleyelim tamam mı? Onu belki ekleyebilirdik.
+
+90
+00:15:26,868 --> 00:15:30,548
+Ve bir string içerisinde bunları Runtime'da gönderiyor.
+
+91
+00:15:31,124 --> 00:15:37,204
+İkincisi, flexible uygulamalar, web uygulamaları falan. Bunlar daha flexible gerektiriyor.
+
+92
+00:15:38,264 --> 00:15:46,944
+Üçüncüsü, less efficient. Bak hemen bir dezavantaj karşılaştı. Yani bütün avantajlar bir noktada toplantısı zaten değil de artık ortadan kalkar.
+
+93
+00:15:47,043 --> 00:15:49,624
+Ama öyle değil. Yani burada mesela less efficient.
+
+94
+00:15:50,543 --> 00:15:54,163
+Since access plans for dynamic statements are generated at runtime.
+
+95
+00:15:56,163 --> 00:15:57,163
+Bu cümle...
+
+96
+00:15:57,491 --> 00:16:06,731
+Önemli. Yani şimdi biz SQL'i madem runtime'da ortaya çıkıyor böyle, ne çıkıyor daha belli değil. Yani benim yazacağım SQL iç içe sorgular olur.
+
+97
+00:16:07,155 --> 00:16:22,155
+işte, correlated sorgu olur, ne istediğimi bilmiyorum, hangi tabloları kullanacağım. O yüzden bunların, runtime'da pop-up şekilde ortaya çıkıyorsa, bunlar demek ki compile edilecekler veritabanı tarafında.
+
+98
+00:16:22,155 --> 00:16:31,155
+Bu programın compile'dan hariç, program compile edildi. Stringler var, o stringin içerisinde bir şeyler var, SQL var.
+
+99
+00:16:35,155 --> 00:16:43,195
+Veritabanı'na gitti, veritabanında compile edilecek. Veritabanı compile demek, veritabanın sorguyu optimize etmesi demek.
+
+100
+00:16:43,892 --> 00:16:50,991
+Optimizasyon ve veritabanlarında oldukça kabarık bir dosya, kabarık bir, çok önemli bir mesele.
+
+101
+00:16:50,991 --> 00:17:01,951
+Yani, tamam, yaklaşık veritabanı tarihçesi boyunca günümüze kadar SQL, NO SQL veritabanların her zaman sistemin dinamiği merkezi yani, önemli bir nokta yani.
+
+102
+00:17:02,011 --> 00:17:05,871
+Şimdi kapalı kutu bizim için, niye böyle falan filan demeye gerek yok. Yani demek ki zor bir mesele.
+
+103
+00:17:06,132 --> 00:17:10,991
+İşte, ne sepişint olması o. Ortaya çıkan böyle pop-up sorgular,
+
+104
+00:17:11,892 --> 00:17:23,731
+Veritabanı gince compile edilecek. O zaman demek ki biraz daha yavaş, sıcak programın çalışması. Bunları anlıyoruz yani. Bunları böyle intuition olarak böyle anlayabiliyoruz.
+
+105
+00:17:23,731 --> 00:17:38,331
+Evet. Satılımcılar. Evet. Karşı tarafta bir sorun yok herhalde. Orada da bir 20 kişi katılmıyoruz. Şimdilik iyi gidiyoruz. Evet. Sohbette bir şey yok.
+
+106
+00:17:39,443 --> 00:17:44,443
+Ses gelmiyor hocam demiş, eski kayıtlarda, demek ki şimdi ses geliyor herhalde.
+
+107
+00:17:45,443 --> 00:17:46,443
+Evet.
+
+108
+00:17:46,443 --> 00:17:49,443
+Ve şu madde de oldukça önemli.
+
+109
+00:17:49,443 --> 00:17:55,443
+More security risks. Tamam mı? Yani program runtime'da açık yani.
+
+110
+00:17:56,211 --> 00:18:24,211
+Runtime'da çalışırken program bir takım komutlar geliyor. O komutlar etrafa zarar verebilir. Tamam mı? Ama diğer bunları kullanan protokoller bunlar. JDBC, ODBC, ADO falan bunlar. Embedded SQL'de ise dediğimiz gibi buna Statik SQL'de diyebiliriz. Burada provides a means by which a program can interact with a...
+
+111
+00:18:24,211 --> 00:18:51,432
+database server, yine aynı ifade. SQL statement are translated at compile time into function calls. SQL statement'lar programın içerisinde gömülü, ne oldukları belli. Flexibility azaldı. O zaman böyle runtime'da gibi istediğim şeyi yapamıyorum yani. Biraz azaldı, flexibility azaldı. Ama compile edildiği zaman programla beraber onlar da compile ediliyorlar.
+
+112
+00:18:51,827 --> 00:18:56,827
+Yani program kompakt bir şekilde, çok hızlı çalışacak bir hale geldi yani.
+
+113
+00:18:56,827 --> 00:18:57,827
+Değil mi?
+
+114
+00:18:59,059 --> 00:19:06,779
+At one time, these function calls, yani o SQL'ler denilmiş bir fonksiyon çağrılarına dönüştürüldü.
+
+115
+00:19:07,019 --> 00:19:09,179
+Yani function call'lara.
+
+116
+00:19:09,539 --> 00:19:12,859
+Connect to database using API that provides dynamic SQL.
+
+117
+00:19:13,019 --> 00:19:16,639
+Arkada da dynamic SQL kütüphaneleri kullanılıyor.
+
+118
+00:19:16,719 --> 00:19:20,819
+Yani dynamic SQL'ün üzerinde bu bir ambalaj gibi yani, ambalaj olarak düşünebilirsiniz.
+
+119
+00:19:22,132 --> 00:19:27,132
+Can not change at runtime, less flexible, hard to debug.
+
+120
+00:19:27,132 --> 00:19:36,132
+Bakın bu yorumlar hemen karşımıza çıkıyor. Bunlar tabii biraz ne oluyor bize? Biraz abstrakt oluyor yani ama kavramsal olarak meseleyi anlamaya çalışıyoruz yani.
+
+121
+00:19:36,132 --> 00:19:49,132
+O gün de biz embedded SQL bir müddet yazdık, bir tecrübemiz oldu, 1-2 ay. Sonra oturduk, CDB's de bir şeyler yazdık, tecrübemiz oldu. Sonra bir karşılaştırma yaptık, her şeyi hazmettik, içimiz esindi öyle mi?
+
+122
+00:19:50,003 --> 00:20:07,631
+Öyle değil. Öyle olması için zamana ihtiyacımız var. Değil mi? Oturup kendimiz birkaç ay MBC çalışmamız lazım. Onunla ilgili programlar yapmamız lazım. Ha, compile ediyor. İşte dinamik, daha hızlı çalışıyor falan. Bunları yapmamız lazım. O yüzden ister istemez bunlar böyle biraz bize havada kalacaktır. Ama...
+
+123
+00:20:07,632 --> 00:20:14,352
+En yordamıyla da anlıyoruz kavramları değil mi? Meselimiz o yani, muslunlardaki mesele o. Maksadımız o yani.
+
+124
+00:20:14,771 --> 00:20:21,432
+Laboratuvarda CDBSE örnekleri var dönemin sonuna doğru. Emili Desklar yapmıyorsunuz zannedersem.
+
+125
+00:20:22,548 --> 00:20:45,847
+Ama hani işte bunu daha ileri taşımak için bunlar günümüzde kullanılan yöntemler ama yaygın olarak kullanılan JDBC, ODBC gibi dinamika daha flexible olması noktasında ne kadar güvenlik açıkları da olsa, less şey de olsa, biraz daha yavaş da olsa mesela, less flexible, less efficient da olsa daha flexible olmasından dolayı ilk madde daha yaygın.
+
+126
+00:20:46,324 --> 00:20:57,644
+İkinci madde, more efficient execution. Çünkü artık böyle, böyle şey, her şey compile edildi baştan, daha hızlı çalışıyor.
+
+127
+00:20:58,067 --> 00:21:04,788
+Daha secure olmuş oluyor. Bütün güvenlik tedbirleri alınmış mesela artık oradaki programın çalışması için gibi vesaire.
+
+128
+00:21:04,788 --> 00:21:11,028
+Burada da kullanılan protokoller bunlar. Şimdi bunlardan ilgili basit kod parçaları göreceğiz. Yapılan işler basit.
+
+129
+00:21:11,028 --> 00:21:20,067
+Ama daha karmaşık şeyler yapılabilir. Yani maksadınız burada, genel mimariyi anlamak, genel bunların maksadını anlamak.
+
+130
+00:21:20,067 --> 00:21:26,067
+Ve işte orijinal bir nokta var, Dynamic SQL'de bir tür person.
+
+131
+00:21:26,067 --> 00:21:44,228
+proper statement'tan bahsedeceğiz. Bu bizim için biraz daha efficient kılacak. Bu dinamik eskileri biraz daha efficient kılacak. Zaten flexible ya, less efficient dedik. Bunu biraz daha efficient kılmak için proper statement var. Bu Java'da da var, ODBC'de de var, Python'da da var.
+
+132
+00:21:45,140 --> 00:21:55,420
+İşte bu iyileşmeden bahsedeceğiz. O zaman şu daha da cazit hale geldi. Hem flexible zaten, hem de efficiency'yi biraz arttıracağız. Neyle?
+
+133
+00:21:55,740 --> 00:22:02,260
+RIPERSTATEMENT DABILA. Şunu onlara nasıl? Ana hatlarıyla böyle. Aklımıza gelen bir mana, kafamıza takılan bir şey var mı şimdi?
+
+134
+00:22:02,260 --> 00:22:04,020
+Evet.
+
+135
+00:22:06,760 --> 00:22:07,420
+Efendim?
+
+136
+00:22:13,940 --> 00:22:34,660
+Şimdi burada veri büyüklüğü falan, eee, dan ziyade, artık host programdayız. Tamam mı? Yani Java tarafındayız. JDBC tarafındayız. CFO. Yani verinin miktarından ziyade, ben bu veriyi çekeceğim. Az ya da çok bir şey çekeceğim. Orada bir programda bir şeyler yapacağım. Bir web uygulaması olabilir bu.
+
+137
+00:22:35,347 --> 00:22:42,467
+Stok takibi olur, iyi bizimiz olur, her neyse. İşte onun flexibilitesinden bahsediyoruz, onun efficiency'sinden bahsediyoruz.
+
+138
+00:22:42,827 --> 00:22:46,107
+Veritabanı tarafında değiliz artık, hardayız, host program tarafında.
+
+139
+00:22:48,948 --> 00:22:59,808
+Şimdi, JDBC'nin, yani bu çok zaten bilinen bir şeyler. Yani bunu biraz tabii mutlaka daha detaylı okuyun, şey yapın. Bu da ben ana hatlarıyla.
+
+140
+00:22:59,928 --> 00:23:09,568
+Şimdi, çoğu bu şeyde, bu tip böyle host programdan, dili tabanına ilişimde, o protokolün gerektirdiği bir takım adımlar var.
+
+141
+00:23:09,568 --> 00:23:16,928
+Nevada'da işte obje oryantı bir programın da dili olduğu için, burada işte bir takım objelerle, nesnelerle,
+
+142
+00:23:16,948 --> 00:23:25,208
+bu connection'ı açıyoruz, bir statement gönderiyoruz, statement'ı execute ediyoruz ve result set alıyoruz.
+
+143
+00:23:25,408 --> 00:23:29,388
+result set'in metadetasını bilmiyorsak da result set metadeta kullanıyoruz.
+
+144
+00:23:30,108 --> 00:23:35,508
+Bu söylediğim maddelerde bakın bir obje var, connection objesi, statement objesi.
+
+145
+00:23:35,807 --> 00:23:56,288
+Sonra, Visual Set objesi, Statement'ı açtım, Execute ettim. Sonra Visual Set ortaya çıktı. Visual Set objesi. Visual Set'i bilmiyorsam, Dynamic SQL ne, bilmiyorum ya ne gönderdim, ne göndereceğim, runtime de belir olacak, ne gelecek. Visual Set'in metadetasını öğrenmem lazım. Visual Set'in metadeta ile de gelen verinin şamasını öğreniyorum.
+
+146
+00:23:57,087 --> 00:24:02,768
+İşte bu objeler karşımıza çıkacak şimdi, değil mi? Anahtarıyla baktığımız zaman bu meseleleri halledecek objeler olması lazım.
+
+147
+00:24:04,339 --> 00:24:08,759
+Evet. Şimdi bu bir API. Ne demek API?
+
+148
+00:24:09,460 --> 00:24:18,460
+Yani bizim bu bağlantıyı yapabilmemiz için bir arayüz. Bu arayüzde işte bu biraz önce söylediğim objelerle biz bu işleri yapacağız.
+
+149
+00:24:18,740 --> 00:24:31,980
+Bu içerisi demek ki oldukça karışık. Apleri duyduğumuz zaman malum hepimizin o Apleri bir şeye içerisinde karmaşık olan bir şeye bağlanmamız için yani orada iş yapabilmemiz için bizim için bir interfaz sağlıyor.
+
+150
+00:24:31,980 --> 00:24:36,980
+İşte burada bu GDB'si bu maksatla.
+
+151
+00:24:37,460 --> 00:25:05,039
+CDBC bir protokol, bir standart tamam mı? Bunun bir takım böyle işte protokolün bazı adımları var, esasları var. Şimdi her firma diyelim işte Oracle veya işte MLSSK Server, TCSK, bu protokoldeki bilinen objeleri, bilinen işlemleri kendi internal işlemlere dönüştürmek için bir driver.
+
+152
+00:25:05,460 --> 00:25:33,460
+ortaya atıyor, driver. Tamam mı? İşte, PJSQL driverı, Oracle driverı, MSSQL driverı, sürücüsü. E ne yapıyor o driver demek ki? Bu GDBC protokolüyle gelen, yani program bizim şeyi kullanıyor, işte o bilinen GDBC şeylerini kullanıyor. Ve bu şeye, Oracle'a bağlanacaksa, o bilinen fonksiyonları ne yapacak? Oracle kendi internuna dönüşüyor.
+
+153
+00:25:33,460 --> 00:25:55,679
+Dönüştürecek. Tamam mı? Çünkü Oracle driverını yükledik programımızda. Onu import ettik. İşte bu driver, universal bilinen bu protokolün sağladığı fonksiyonları, connection statement, onları ne yapıyor? Internal'da şeye dönüştürüyor. O veri tabanına has olacak şekilde dönüştürüyor. Evet.
+
+154
+00:25:56,115 --> 00:26:07,875
+Ana hatları da bunlar var demek ki. Connection statement, sonra test results, execute queries ve tabii exception handling mekanizmaları falan da var.
+
+155
+00:26:07,875 --> 00:26:10,295
+Yani tipik bir şey.
+
+156
+00:26:11,124 --> 00:26:38,264
+Ceva programı. Şimdi burada iki tane GDBC kodu görüyoruz. Buradaki maksadımız connection'ın açılması. Ondan sonra şurada da bir update var. Sonra da GDBC'nin genel kavramlanamazsı. Yani öyle bir çok kapsamlı bir GDBC programı da görmeyeceğiz. Ama bazı önemli noktalara burada değiniyoruz. Bir tanesi şu. Şimdi burada biraz önce dediğimiz gibi bir connection açılması var.
+
+157
+00:26:39,124 --> 00:27:07,004
+Statement'ın açılması var. Ve burada statement açıldıktan sonra burada esas işi yapıyoruz. Ne yapacağız? Yani veriyi çekiyoruz. İşte verin, size bir analiz yapacağız veya veri tabanı güncelleyeceğiz falan bir şeyler yapacağız. Daha sonra burada da exception handling var. İşte burada gelen kodlara göre de hata işte bir network hatasını, veri tabanı intern hatasını, işte sintaks error mu mesela SQL gönderdik ya.
+
+158
+00:27:07,124 --> 00:27:11,984
+tüm bunları o bayraklarla ortaya çıkan numaralarla da detaylandırabiliriz yani.
+
+159
+00:27:12,364 --> 00:27:15,864
+Şimdi bu Java 7 ve sonrasındaki olan bir sintaks.
+
+160
+00:27:16,104 --> 00:27:21,144
+Tamam mı? Bu gramer, buradaki ortaya çıkan bu program daha güncel bir şey.
+
+161
+00:27:21,304 --> 00:27:25,504
+Çünkü burada bakın enteresan bir şey var.
+
+162
+00:27:26,044 --> 00:27:31,884
+Bu try parantezi içerisinde connection açıyor ve statement var.
+
+163
+00:27:32,044 --> 00:27:34,264
+Ona değinmeden önce şu connection'e biraz bakalım.
+
+164
+00:27:35,124 --> 00:27:45,304
+Bu connection de bakın ne yapıyor? Bir URL ile şu URL sırası. Yani şu makineye bağlandık.
+
+165
+00:27:46,420 --> 00:27:57,340
+Bu makinede 2000 portuna bağlandık. 2000 port numarası, makinenin bir portla harici dünyaya açılıyor. 2000 numaralı porta bağlandık.
+
+166
+00:27:57,340 --> 00:28:03,299
+Bu makinede artık üniversite veri tabanına 2000 portunda kim bekliyor?
+
+167
+00:28:03,791 --> 00:28:12,451
+Oracle veritabanı ise o bekliyor, orada listen ediyor. Network communication falan, o gibi protokoller orada dönüyor.
+
+168
+00:28:12,811 --> 00:28:26,951
+FGSQL ise o orada bekliyor. Ve orada bu şeyi sinyeni aldığı zaman, üniversite veritabanına, o veritabanı içerisindeki bulunan üniversite veritabanına bağlandı.
+
+169
+00:28:32,084 --> 00:28:47,024
+TIN protokolüyle bu işi yapıyor. Tamam mı? Şimdi bu protokol, Oracle'ın sürücüsünün farklı böyle yani yüzlerce değil de 3-5 tane, 2-3 tane falan benim de hatırladığım böyle farklı şeyleri var, modları var.
+
+170
+00:28:47,359 --> 00:29:15,359
+TeamVax'ı TİK de vardır falan. Ne bileyim işte o detaylı işin içine girince onlar biraz daha aşağı çıkacak. Bunların aralarında farklar var. Yani programda bu bağlantıyla neleri yapabilirim, neleri yapamam, ne gibi güvenlik açıkları var, kaynakları nasıl kullanırım falan, işte multiple credit olabilir mi falan gibi. Yani sisteme çünkü sistem kaynakları kullanıyoruz hariçten. O yüzden bir sürü konfidasyon ayarları akla geliyor yani olması lazım. İşte onlar var.
+
+171
+00:29:15,359 --> 00:29:17,359
+Burada detaylandırmıyoruz.
+
+172
+00:29:19,359 --> 00:29:31,115
+Demek ki burada bu connection'ı, bu sürücüyle, bu protokolle açıp şu veri tabanına bağlandım ve bağlanan kişi user ID ve password ile bu veri tabanına bağlandı.
+
+173
+00:29:31,476 --> 00:29:59,375
+Şimdi bu tabi User ID, password'ü de böyle hani açıktan programda açıktan yazması, hadi User ID yazarız ama password'ü yazması da çok böyle akılkarı değil yani güvenlik noktasında. Burada başka detaylar da var. Yani bunları böyle User ID program, password'ü mesela farklı böyle daha güvenli yollarla alması lazım. Şükredi bir şekilde alması lazım. Veya environment, variable'larla bunların tanınlaması lazım.
+
+174
+00:29:59,476 --> 00:30:07,476
+gibi bir takım yollar var. Onları işin içindeki, öncekinden detaylı araştırabilirsiniz. Burada bir takım açıklar var.
+
+175
+00:30:07,476 --> 00:30:16,476
+İşte bakın, burada statement hemen açmış. Yani şu parantezin içerisinde statement açmış.
+
+176
+00:30:16,884 --> 00:30:21,003
+ve burada işlemleri yapıyor ve şurada da işlem sonunu oluyor.
+
+177
+00:30:21,003 --> 00:30:24,124
+Ve bir connection'ın close olması falan yok.
+
+178
+00:30:24,124 --> 00:30:29,124
+Oysa bir connection açıldığı zaman sistem kaynakları bu connection'a tahsis ediliyor.
+
+179
+00:30:29,124 --> 00:30:31,443
+Yani biraz böyle masraflı bir şey.
+
+180
+00:30:31,827 --> 00:30:34,707
+Çünkü oradan bir sorgu gelecek.
+
+181
+00:30:36,587 --> 00:30:38,288
+Compile edilecek o sorgu.
+
+182
+00:30:38,867 --> 00:30:42,627
+İşte tamponlar hafıza kullanılacak falan.
+
+183
+00:30:42,827 --> 00:30:45,048
+Yani işler, baya iş var orada yani.
+
+184
+00:30:45,187 --> 00:30:48,607
+Sistem ona bir şey vaat ediyor, tahsis ediyor.
+
+185
+00:30:49,167 --> 00:30:50,927
+Fakat bir connection close yok.
+
+186
+00:30:51,447 --> 00:30:55,807
+İşte bunun maksadı, yani şurada bu yeni versiyon böyle.
+
+187
+00:30:56,488 --> 00:30:58,707
+Şurada şurayı da okuruz birazdan.
+
+188
+00:30:59,827 --> 00:31:09,127
+Eskiden, mesela bakın şöyle, connection clause, statement clause'lar falan vardı. Yani, GDBC 7'den önce. Yani, herhalde işte 4-5 sene öncedir.
+
+189
+00:31:09,556 --> 00:31:14,676
+Böyle bir programda bakın. Şu driver'ı ilk olarak yüklüyor.
+
+190
+00:31:14,676 --> 00:31:21,156
+Connection'da bu driver ile beraber şu password ile bağlanıyor.
+
+191
+00:31:21,156 --> 00:31:24,276
+Şurada bunu biraz önce söylediğim şeyleri açıkladık.
+
+192
+00:31:24,276 --> 00:31:29,276
+Burada daha güvenli bir şekilde password'ı alması ile ilgili bazı yöntemler var.
+
+193
+00:31:29,276 --> 00:31:32,556
+Bunları sorgulayıp nasıl olduklarına bakabilirsiniz.
+
+194
+00:31:32,556 --> 00:31:37,556
+Programlama kapsamı içerisinde bunların ne manaya geldiğini incelersiniz.
+
+195
+00:31:37,556 --> 00:32:05,556
+Ben sadece ipuçları verdim yani. Sonra bakın statementı açıyor, burada bir şeyler yapıyor, sonra statementı kapattı ve connection de kapattı ve yine exception handling var burada. Genel yapı bu şekilde. Fakat burada problem, bu sırada bir takım böyle network veya veritabanı tarafında veya programın ana akışında, logical akışında bir takım arzalar olursa, bu exception'la buraya azıtlayacak ve bu statement...
+
+196
+00:32:05,556 --> 00:32:08,895
+Veya connection'ı kapatamayacağız. Bu gibi durumlar olabilir.
+
+197
+00:32:09,996 --> 00:32:10,416
+Tamam mı?
+
+198
+00:32:10,836 --> 00:32:20,416
+Böyle olursa, bu konularını kapatamazsak, belli bir timeout, threshold değerinin ne kadar bu program, bu kaynakları tutacak.
+
+199
+00:32:20,416 --> 00:32:24,616
+Oysa kaynak kıymetli. Çünkü birçok insan kullanıyor bu sistemi yani.
+
+200
+00:32:24,616 --> 00:32:30,956
+Yani demek istediğimi anladınız. Yani otomatik olarak bunu sistemin üzerine alması gerekiyor.
+
+201
+00:32:30,956 --> 00:32:38,836
+İşte bu sintaksta, bu gramerle diyoruz ki, ATG-JDB'si bunu böyle yapıyor demek ki.
+
+202
+00:32:38,836 --> 00:32:47,596
+Böyle yazınca. Şu statementı böyle açtıktan sonra, şu parantez içerisinde bunu böyle yaptıktan sonra, burada başımıza ne gelirse gelsin.
+
+203
+00:32:47,887 --> 00:32:56,327
+Bu akışta, çünkü, programından bağlanıyoruz. Belki uzun bir bağlantı olacak değil mi? Web uygulaması bu, form dolduruyoruz.
+
+204
+00:32:56,327 --> 00:33:08,967
+Yani bir süreç gerektiriyor bir şey, gerektiren bir şey. O zaman burada başımıza ne gelirse gelsin, bir exception olursa, default olarak, otomatik olarak burada connection kapanıyor, statement kapanıyor.
+
+205
+00:33:08,967 --> 00:33:15,687
+Kapanıyormuş. Yani içeride bunu hallediyor yani. Tamam mı? E hocam bu grame kullanmamız lazım. Yani güncel olan.
+
+206
+00:33:15,887 --> 00:33:23,827
+Bu. İşte burada bunu açıklıyor. Ensuring that programs close all such resources is crucial. Yani kritik.
+
+207
+00:33:25,727 --> 00:33:31,067
+They all you to do so may cause the database system's resource pools to become exhausted.
+
+208
+00:33:32,407 --> 00:33:36,447
+Yani gereksiz yere böyle kullanılmasını, harcanmasına sebep oluyor.
+
+209
+00:33:36,447 --> 00:33:41,947
+Resources open in the code within parentheses, not in curly brackets.
+
+210
+00:33:42,400 --> 00:33:59,960
+Our clause, automatically at the end of the try block. Yani şu try block'un sonunda otomatik olarak kapanıyor. Böyle bir gramer kullandık. Tamam mı? İşte bu mesela kritik bir nokta. Yani TVG, DBC programına baktığınız zaman böyle bir yapı göreceksiniz. Şurası mesela. Biraz garip bir form yani.
+
+211
+00:34:00,435 --> 00:34:08,435
+Başka parantez içerisinde hem connection hem stable touch yok. Ama böyle olunca demek ki burada bazı arızalar oluyor.
+
+212
+00:34:08,435 --> 00:34:13,435
+Evet, burada da aldığı notları daha detaylı okuyabilirsiniz. Evet, geçiyorum.
+
+213
+00:34:16,480 --> 00:34:32,319
+Bu, driver'ı yükledik. Mesela burada driver'ı yüklüyor eski versiyonlarda Java'nın. Ama burada driver'ı otomatik olarak programma, driver otomatik yükleniyor yani. Otomatik import ediyor. Tamam mı?
+
+214
+00:34:33,268 --> 00:34:45,587
+Burada bu driver'ı yükledik, statement'ı açtık. İşte şu, şurada doactual work diyor ya, işte orada da statement'ta mesela bir tane execute update yaptık.
+
+215
+00:34:47,123 --> 00:34:57,123
+Veya execute query yapabiliriz. Yani bir sorgu gönderip, onun result setini alabiliriz. Burada bir result seti alacak bir durum yok. Sadece bir update yaptık.
+
+216
+00:34:57,123 --> 00:35:11,123
+O yüzden update de dönen şey, result, geri dönen şey, bir sayı olacaktır. Burada o sayıya da bakmıyor. O sayı ne? Kaç tane tuple update ettik? Veya delete ise bu update.
+
+217
+00:35:11,123 --> 00:35:13,707
+Yani update delete olmuyor. Execute update.
+
+218
+00:35:13,748 --> 00:35:18,748
+Bu bir tane, execute update veya execute query. Şurada execute query var bakın.
+
+219
+00:35:18,748 --> 00:35:23,748
+Execute update olduğu zaman, ya içeride insert olacak, ya update olacak, ya delete olacak.
+
+220
+00:35:23,748 --> 00:35:33,748
+İşte bu modifiye edilen kaç kayıt ise, o kadar sayı gönderecek. Tamam mı? 3 tane insert ettiysek, 3 var.
+
+221
+00:35:33,748 --> 00:35:39,748
+3 tane couple delete olduysa, 3 gelecek. 5 tane update olduysa, 5 gelecek.
+
+222
+00:35:40,148 --> 00:35:50,728
+Yeni bir tablo da oluşturabiliriz. Yani data definition tarzı bir şeyler de yapabiliriz. Bu da mümkün. Yani bir tablonun yeni bir şama değiştirebilirim mesela.
+
+223
+00:35:50,728 --> 00:36:02,068
+Çünkü SQL, burada SQL göndereceğim için şu string içerisine, bakın dikkat ederseniz yine bu GDB'si olduğu için bakın string ile gönderiyorum şu şeyi, SQL'i string olarak oluşturdum şurada, string.
+
+224
+00:36:02,408 --> 00:36:07,847
+Onu da baştan söylemem lazım. Yani demek ki bu bir dynamic SQL, dynamic SQL formu.
+
+225
+00:36:08,148 --> 00:36:29,268
+Şu zaman burada ben yeni bir tablo oluşturabilirim. Mevcut tabloyu değiştirebilirim mesela. İşte bu durumlarda da result 0 oluyor. O zaman demek ki 0 veya integer bir şey, değişiklik olan kapıların sayısını ifade eden veya result set objesiyle de veri dönecek.
+
+226
+00:36:29,907 --> 00:36:49,188
+Evet, burada demek ki bu şekilde böyle, işte şurada da exception handling var gene. Eğer sorgu execute edersek, şu şekilde statement'taki şu fonksiyonu çağırıyoruz. Burada bakın string içerisinde gene şöyle bir sorgu gönderdim.
+
+227
+00:36:49,556 --> 00:37:07,235
+Bu sorgunun şemasını, şimdi burada ne kadar dinamik SQL de olsa, bunu işte demek ki programa bir yerden gelmiş bu yani. Tamam mı? İşte string bunu ben programın içerisinde yazmış. Ama herhangi bir şey de yazabilirim yani.
+
+228
+00:37:08,235 --> 00:37:14,796
+Biraz önce söylediklerimden hatırlarsanız, bu programın compile edilmesi sırasında şu compile edilmiyor.
+
+229
+00:37:15,572 --> 00:37:19,372
+Bu veritabanına gittiği zaman compile ediliyor. Tamam mı?
+
+230
+00:37:20,872 --> 00:37:28,572
+Sonra, şurada da bu sorgu, bize ne gönderdi, hangi objeyi gönderdi, Rizal Set'i gönderdi.
+
+231
+00:37:28,755 --> 00:37:40,755
+Visual Set'i gönderdi. Biz şimdi programın içerisinde SQL belli olduğu için Visual Set'i de bildiğimiz için Visual Set metadata'ya ihtiyacımız olmadı.
+
+232
+00:37:40,755 --> 00:37:46,755
+Ne göndereceği belli zaten. Çünkü bir Department Name ve Scalar bir şey gönderecek.
+
+233
+00:37:46,755 --> 00:37:56,268
+İşte onu burada proses ediyoruz. O objeni sağladı. GetString'de Department Name'i aldık ve bunu bir Val döngüsü içerisinde şey yaptım.
+
+234
+00:37:56,532 --> 00:38:03,692
+Şimdi dikkat ederseniz, veritabanı, bunu da belki dersin başında söylemem lazımdı.
+
+235
+00:38:03,692 --> 00:38:11,372
+Bir kere programın execution'un noktasında da yine temelde farklılık var.
+
+236
+00:38:11,472 --> 00:38:15,652
+Yani programlama dilinde biz bir değer tanımlıyoruz.
+
+237
+00:38:17,088 --> 00:38:40,188
+proses ediyoruz. Core döngüsü içerisinde bir şey var. Ama bir değer bazlı bir execution oluyor. Ama SQL tarafında, veritabanı tarafında bir tablo. Tabloda işte bazı tabloları seçiyorum, oradan yeni bir tablo çıkıyor. İç içe sorgular mesela. Yani tablo bazlı bir proses execution ortamı var. Yani ikisi böyle temelde mantık olarak farklı.
+
+238
+00:38:40,692 --> 00:39:08,692
+Buna da Empedance uyumsuzluğu deniyor. Elektrik mühendisliğinden gelen bir kelime ve gerçek. İki tarafın program execution kelsefesi farklı esasında. Bu da veritiklere de farklı olabilir. Bir anda Java'ya gittik. Database'den numaralik bazı şeyler çıkıyoruz. Integer, Double olacak mesela. O değeri ben programlamada program tarafı...
+
+239
+00:39:08,692 --> 00:39:19,751
+O hangi niteliğe, hangi tipe dönüşecek mesela? Tip uyumsuzluğunu düşünün veya işte bir değer bazlı çalışıyor.
+
+240
+00:39:20,211 --> 00:39:27,612
+Diğeri ise tablo bazlı çalışıyor. İşte burada o yüzden şurada mesela bakın getString ile şunu aldık.
+
+241
+00:39:27,612 --> 00:39:33,811
+GetFloat objesi ile şu ikinci şeyi aldık, ikinci nitelik değerini aldık.
+
+242
+00:39:33,811 --> 00:39:39,411
+Bunu şu while içerisinde, işte kaç tane kayıt geliyorsa onları yakalamış olduk yani.
+
+243
+00:39:40,532 --> 00:39:47,931
+Evet, yani burada, next ile o tapıların üzerinden iterasyon yaptım yani, o next ile.
+
+244
+00:39:47,931 --> 00:39:50,331
+Rizal set kaç tane eleman gönderecek bilmiyorum.
+
+245
+00:39:50,331 --> 00:39:55,931
+Yani burada, Rizal set bana bir tablo göndermedi esasında yani.
+
+246
+00:39:55,931 --> 00:40:02,331
+Direkt tabloyu alamıyorum. O tablo, Rizal set objesi o tablodaki tapıların üzerinde böyle prosedür.
+
+247
+00:40:02,331 --> 00:40:06,331
+Yani o empedans uyumsuzluğu bu şekilde aşılmış oldu burada. Neyse, evet.
+
+248
+00:40:10,036 --> 00:40:16,032
+Şimdi burada, işte connection açılması
+
+249
+00:40:16,032 --> 00:40:44,032
+ile ve işte burada bazı detaylar var. Evet, bunlar çok önemli değil. Gelelim şimdi, Purpose Statement'a. Önemli olan bir sunu burada. Şimdi, ne dedik? Programın içerisinde, JDBC, Dynamic SQL'de, ki SQL'ler string içerisindeler ve çoğu zamanda, hani gerçek hayatta düşündüğümüz zaman şöyle, ben burada bunu açıklayacağım.
+
+250
+00:40:44,032 --> 00:40:49,032
+Açık olarak yazmış ismi dediğimizi öğreniyoruz ya, oraya ben yazayım diyorum, string olarak programı.
+
+251
+00:40:49,032 --> 00:40:53,652
+Ama program compile edilirken, bu compile edilmiyor, biraz önce de söyledim zaten.
+
+252
+00:40:53,912 --> 00:40:55,892
+Bu nerede compile ediliyor? Runtime'da.
+
+253
+00:40:56,371 --> 00:41:06,371
+Runtime'da veritabanına gittiği zaman compile ediliyor. O yüzden programın çalışması biraz daha yavaş diyelim, embedded'e göre. Ama daha flexible olduğunu söylemiştik özetle.
+
+254
+00:41:06,371 --> 00:41:14,371
+Şimdi o zaman madem bu efficiency'yi, efficiency'deki bu azalmayı biraz arttırmak adına şöyle bir şey yapsak.
+
+255
+00:41:14,371 --> 00:41:23,371
+Eğer bu uygulamamız bizim, bu sorguyu, bu programın akışı içerisinde birçok kez böyle kullanıyor ise,
+
+256
+00:41:24,019 --> 00:41:34,760
+Farklı parametrelerle, ki bu yaygın bir durum. Yani niye? Çünkü bu uygulama birkaç böyle formdaki bilgileri, bir web uygulaması düşünün.
+
+257
+00:41:35,119 --> 00:41:44,180
+İşte elektronik ticaret olur, işte bir form doldurma olabilir orada, bir ürün seçme olabilir. Çoğu zaman bütün işler yapıyor, benzer şeyler yapıyor yani.
+
+258
+00:41:44,440 --> 00:41:47,740
+Tamam o zaman orada üretilecek olan SQL'ler belli zaten.
+
+259
+00:41:48,275 --> 00:42:16,275
+3 aşağı 5 yukarı belli. O zaman ilk SQL için yapılan compile'ı store edeyim, tamam mı? Yani veritabanı tarafında o kayda geçsin. Daha sonra gelen yeni parametrelerle o compile edilmiş veritabanındaki. Compile burada veritabanındakini kastediyorum. Çünkü program compile değil de program çalışıyor zaten. Tamam mı? Takip edebiliyoruz. Ama program çalışırken her seferinde...
+
+260
+00:42:16,275 --> 00:42:20,155
+Yeni gelen SQL için yeni veri tabanı compile etmesin diye.
+
+261
+00:42:20,735 --> 00:42:25,195
+Tamam mı? İşte, preferred statement bu noktada devreye giriyor ve çok yaygın olarak kullanılıyor.
+
+262
+00:42:25,775 --> 00:42:31,175
+Tamam mı? Anladık mı ana kavramı, ana yapıyı? Ana felsefesi olayın?
+
+263
+00:42:32,335 --> 00:42:37,915
+İlk SQL ve çoğu SQL programın kişiye, sen ne dedim? Çoğu SQL aynı formda, yapıda.
+
+264
+00:42:38,304 --> 00:42:50,304
+Böyle olunca, o zaman bunu şu şekilde, şöyle PreperStatement denilen bir obje ile bu statement yerine artık, Connection PreperStatement var bakın.
+
+265
+00:42:50,304 --> 00:42:59,304
+O PreperStatement da yapısı, yapısı ana hatlarıyla böyle şematik olarak ifade edilmiş. Yani, insert into Instructed Value.
+
+266
+00:43:00,788 --> 00:43:23,788
+Bu bir insert yapıyor. Yani yeni bir kullanıcı tamamlanacak mesela. Yeni bir giriş formu bu demek ki. Kullanıcı tamamlanacak. İşte burada her zaman program çalışıyor mesela. Her kullanıcı giderken bu SQL'i, bu insert'ü, editabanı gönderip de işte her zamanı da komple etmesin. Derdimiz o. Bu programı hızlandırıyor demek ki.
+
+267
+00:43:25,152 --> 00:43:34,652
+Biz bunu işin içine girip de böyle ölçüp biçmiş değiliz. Demek ki yavaşlatıyormuş. Olaya ister istemez biraz uzaktan bakıyoruz. Abstract olarak bakıyoruz.
+
+268
+00:43:34,652 --> 00:43:45,152
+Burada bu iyileşmeyi sağlamak adına bu formu, bu ana hatlarıyla bu insert into instructive values bunu
+
+269
+00:43:45,780 --> 00:43:51,420
+Runtime'da bu değerleri dolduracağız. Tamam mı?
+
+270
+00:43:51,420 --> 00:43:53,420
+Program ya...
+
+271
+00:43:53,920 --> 00:44:03,820
+esas program ya compile ederken ya da bazı sürücülerde, yani Oracle yapıyor, ticaretçiler yapmıyor. Bilmiyorum, arabalarında farklar var.
+
+272
+00:44:04,240 --> 00:44:19,079
+Bazısı ya program compile edilirken, tabiri caizse çaktırmadan, Oracle sürücüsü veri tabanına gönderip, oradaki şu yapıya, iskeleti veri tabanına daha compile edebilir.
+
+273
+00:44:19,079 --> 00:44:21,440
+Tamam mı? Ama genel konuşalım.
+
+274
+00:44:21,920 --> 00:44:29,920
+İlk sorgu böyle, rantanda ilk sorgu gönderildiği zaman veritabanına, kompile ettik. Veritabanı tarafında bu sorgu kompile edildi.
+
+275
+00:44:29,920 --> 00:44:37,920
+Bunun için de bilmiyoruz, orası demek ki karmaşık, çok kompile edildi. Bundan sonra, bundan sonra yeni bu...
+
+276
+00:44:38,195 --> 00:44:48,355
+Farklı değerlerle bu parametreler dolduğu zaman, farklı değerlerle bu parametreler dolduğu zaman artık aynı şablonu kullanacak. Programın efficiency'si artmış oluyor.
+
+277
+00:44:48,655 --> 00:44:57,655
+Tamam mı? Bakın burada şöyle bir örnek var. İlk olarak şu Purpose Statement objesine ben şu değerleri gönderdim. Bu değeri girdim ve update ettim.
+
+278
+00:44:57,655 --> 00:45:06,195
+İşte şu noktada, tamam mı? Bu noktada veritabanına bu gitti. Bu string içerisindeki bu SQL gitti ve veritabanına...
+
+279
+00:45:06,195 --> 00:45:10,595
+Java'ını compile etti bunu ve bu işlemi execute etti.
+
+280
+00:45:10,595 --> 00:45:16,195
+Execute update bunu yaptı. Daha sonra şu geldiği zaman artık compile etmeyecek.
+
+281
+00:45:16,436 --> 00:45:34,116
+Sadece şu değeri update ediyoruz. Set, string, execute update dediğimiz zaman sadece aynı şablonda, aynı şablonu, aynı compile kararıyla bu işlemi yapıyor. Sadece şunu değiştiriyor yani.
+
+282
+00:45:35,156 --> 00:45:38,216
+O zaman şöyle bir şeyimiz var.
+
+283
+00:45:38,216 --> 00:45:39,596
+Burada şöyle özetli olarak.
+
+284
+00:45:41,780 --> 00:45:59,400
+Compile1, execute many times. Fakat bu değil, Compile şeyi olmasın, programın Compile'ı değil. Tamam mı? Tekrar vurguluyorum. Veritabanı tarafında. Çünkü böyle bir mesele karşılığı çıkıyor. Programın içerisinde veritabanı eylemleri var, SQL'ler var yani.
+
+285
+00:46:00,244 --> 00:46:02,164
+Anladık mı? Ana hatlarıyla.
+
+286
+00:46:02,384 --> 00:46:03,844
+Olayın şeyi bu.
+
+287
+00:46:04,164 --> 00:46:06,463
+Detaylarında program oturup yazma,
+
+288
+00:46:06,564 --> 00:46:07,903
+kompile etme, jdbz var.
+
+289
+00:46:08,024 --> 00:46:09,983
+Onlar laboratuvar kısmı yani.
+
+290
+00:46:10,423 --> 00:46:11,463
+Burada biz ana
+
+291
+00:46:11,463 --> 00:46:14,324
+problemlerden bahsediyoruz. Ana kavramlardan
+
+292
+00:46:14,324 --> 00:46:15,403
+bahsediyoruz. Tamam mı?
+
+293
+00:46:16,916 --> 00:46:44,395
+Güzel. Şimdi, bu demek ki preferred statement'ın böyle bir avantajı var, efficiency noktasında. Fakat bu noktada da her şey böyle çok sağlam da değil. Bu arada onu da parantez içerisinde söyleyeyim. Yani, veritabanında optimizer var dedim ya, optimizer çok, tabircayız, akıllı diyorlar ya, o oldukça gelişmiş. Çünkü 30 senelik, 40 senelik bir birikim var orada. Yani veritabanında optimization konusu çok şey bir konu.
+
+294
+00:46:44,916 --> 00:47:12,456
+bilgisayar dünyasında, o dışa bilinen bir konu. 40 senelik bir geçmişi var. Fakat en çok problem, buradaki parametrik olan bu sorguların kompile edilmesi, optimize edilmesi. Çünkü şuradaki değerlerle ilk verilen optimizer'ın verdiği ilk karar biraz sallanıyor. Çünkü bu değerlere bağlı olarak verilen şama da biraz verilen karar da çok doğru olmayabilir.
+
+295
+00:47:12,916 --> 00:47:37,775
+O yüzden, yani, mesele tam %100 hallolmuş da değil bu arada. Tamam mı? Optimizer noktasında, FFIR'deki değerlere göre, kararlar değişebilir. Yani, daha hızlı çalışması, yavaş çalışmasından falan bahsediyorum yani. Optimizer'ın zorlandığı bir nokta bu yani. Bunu da, böyle, parantezlerinde söylemiş olayım. Diğer nokta, şimdi, burada,
+
+296
+00:47:40,403 --> 00:47:57,804
+Burada bazı problemler ortaya çıkıyor. Çoğu zaman biz bir web uygulaması örneği, öyle bir şey düşünelim. Biz bir form üzerinden, biraz daha büyütelim.
+
+297
+00:48:01,715 --> 00:48:23,155
+bir form üzerinden şöyle prefer statement kullanmazsak eğer şu string içerisinde bu string içerisinde formdan aldığım yani bir web formundan aldığım şu değerleri şu stringin içerisinde böyle gömersem
+
+298
+00:48:23,731 --> 00:48:33,851
+program içerisinde, şu stringi böyle oluşturursam, runtime'da aldığım şu değerlerle, bu çok tehlikeli bir şey.
+
+299
+00:48:34,871 --> 00:48:42,932
+Bunu şöyle, proper statement'a yaparsam, o tehlike ortadan kalkıyor. Şimdi bu tehlike nedir? Bir tehlike noktası var, security problemi var.
+
+300
+00:48:42,932 --> 00:48:49,552
+Bir de böyle yaparsam, bazı böyle, tabi ki, sinir bozucu şeyler de ortaya çıkabiliyor.
+
+301
+00:48:51,668 --> 00:49:14,208
+şeyler de var. Mesela böyle bir durumda şöyle bir name giremem. Yani de işte kuato, soğuz'a gibi mesela bir İtalyan bir isim veya işte neyse İspanyolca bir isim mesela bunları giremem. Çünkü o zaman bu formdan aldığım bu değer string içerisinde şu sintaks kullanıldı. Bakın şunun kullanılmasının sebebini
+
+302
+00:49:14,208 --> 00:49:24,788
+Geçen haftaki derste söyledim, buna dikkat edin dedim. Haftaya SQL injection probleminde hep karşımıza çıkacak dedim. Yani insert ederken şu şekilde bir form kullanmak gerekiyor.
+
+303
+00:49:25,619 --> 00:49:50,979
+Şöyle, bir kuata içerisine id yazıyorum, id var çarsa, name var çarsa, bir kuata, tek kuata, single kuata içerisine onu yazmam lazım. O zaman bu komutu ben string içerisine yazacağım için, tamam mı? Runtime'de aldığım değerleri şu şekilde single kuatalar içerisine bu şekilde böyle derc etmem lazım, içine koymam lazım, tamam mı?
+
+304
+00:49:51,668 --> 00:49:59,467
+Chapter 4'e geri gitmeyeyim. Insert into komutuna bakın. Insert into table, instructor values, işte
+
+305
+00:50:00,532 --> 00:50:06,331
+sınırnak içerisinde kuato id yazıyoruz. Sınırnak içerisinde tek sınırnak içerisinde isim yazıyoruz.
+
+306
+00:50:06,411 --> 00:50:11,811
+İşte o tek sınırnak içerisinde olması için şöyle bir bunu konstrakt etmem lazım yani.
+
+307
+00:50:12,211 --> 00:50:20,632
+İşte burada şöyle bir değer giremez hale geldim. Çünkü şurada tek kuata var. Buradaki kuatalarla onlar karışacak.
+
+308
+00:50:21,012 --> 00:50:44,211
+Hata verecek yani. Böyle bir diğer genel. Oysa, hani, universal olması lazım o forma. Ben İterlyancı isimle girmem lazım. Türkçede. Hep kuatada olması lazım. Oysa giren kişinin ne yapması lazım? Bunu escape ile şey yapması lazım. Yani kullanıcının o escape'i bilmesi lazım. Escape ile o kuatayı atması lazım. Burayı bozmaması için. Değil mi? Fakat böyle bir şey yapmıyoruz yani.
+
+309
+00:50:46,675 --> 00:51:14,655
+Şimdi, işte, prepared statement ile kullanırsak eğer, bu problem hallolmuş oluyor. Fakat bu çok basit bir problem. Yani, prepared statement'ın bunu halletmesi, yani niye? Çünkü, prepared statement demek ki ben set string falan dediğim zaman, buraya otomatik olarak ben tek kuat'a da girsem, bunu, bu obje, bu fonksiyon, demek ki o, onu escape ederek veri tabanına gönderiyor. Yani, bunun internal'ını bilmiyoruz. Yani, internal'ını da demek ki bunları halletmiş yani.
+
+310
+00:51:14,675 --> 00:51:27,715
+Tamam mı? Böyle olduğunu söyleyebiliriz. Bu meseleyi hallettik. Daha da önemlisi, gerek şu mesele olsun, gerek bu mesele olsun, gerek biraz önce compile one, execute multiple times.
+
+311
+00:51:27,715 --> 00:51:38,715
+Bu özet, bu öz ifadeleri anladık, içini onu anladık. Böyle bir faydası sağlamasının da ötesinde, hani...
+
+312
+00:51:39,987 --> 00:51:58,587
+Varsayalım ki sadece bir kez compile etti, bir kez kullandı, bir kez run etti diyelim. Birçok kez run edip de efficiency arttırmamış bile olsa, Purpose statement yine kullanılması lazım. Çünkü burada SQL injection problemi var. O ne demek?
+
+313
+00:52:00,027 --> 00:52:01,708
+SQL injection...
+
+314
+00:52:02,260 --> 00:52:25,260
+Bu string içerisine, bakın şu stringde şu şekilde şöyle bir şey var. Şu name'i benim string içerisinde aldım. Programdan aldım. Program nereden aldı? Formdan aldı. Bu name'i böyle kuata içerisine koyma var. Eğer şöyle bir şey yazarsa kullanıcı formda, webde formda, şöyle bir şey yazarsa eğer
+
+315
+00:52:25,811 --> 00:52:42,412
+Bu sorgu, yani bunu kullanıcı, tabii biraz tehlikeli bir kullanıcı. Yani SQL injection yapan kişi. Şöyle bir şey yazarsa eğer, ne oluyor bakın, name eşittir, yani şu stringin içerisinde ortaya çıkan manzara şöyle oluyor.
+
+316
+00:52:43,188 --> 00:53:01,588
+Bunu biraz daha çalışırken detaylı bakın. Şöyle bir şey ortaya çıkıyor. Name eşittir x or y eşittir y. Bunu yazdı yani kullanıcı. Ve son kuatayı yazmadı. Çünkü hayal ediyor, düşünüyor ki arkada eğer bu string'in prefer statement kullanılmıyorsa eğer bu açıyı yakalamış oldu.
+
+317
+00:53:11,188 --> 00:53:38,288
+kodayı yazmadı bakın. Şurada son bir koday yok. Ama şurada da şu name eşittir x ile bu false kıldı bunu. Tamam false olsun dertli ama sonra da or dedi. Yani şu, şuradaki meseleyi halletti. Or. Ve y eşittir y ile bütün instructor tablosunun bilgisine gelişmiş oldu. Enteresan. Yani, öyle değil mi? Bunu yapabilir.
+
+318
+00:53:38,900 --> 00:53:40,119
+Ve bu da ilk adımı.
+
+319
+00:53:40,512 --> 00:53:56,512
+Burada, o formda, SQL inject ederek, yani o doldurması gereken yerde bir name yazacak belki ama name yazmayarak, oraya bir takım başka SQL yazarak o SQL'i inject edebilir, tabloyu drop edebilir.
+
+320
+00:53:56,512 --> 00:54:08,512
+Çünkü bu program, dış dünyaya açıldığı zaman, kullanıcılar, o programın yetkileriyle veritabanına bağlanıyorlar. O programın yetkileriyle. O program, o veritabanına ne yapıyorsa,
+
+321
+00:54:08,512 --> 00:54:18,632
+Anlayıcılar da bu şeyle, bu komutlarla veritabanında araya SQL'ler incelik ederek çok şey yapabilirler.
+
+322
+00:54:19,932 --> 00:54:22,312
+Evet, meseleyi anladık herhalde ana hatlarıyla.
+
+323
+00:54:23,192 --> 00:54:30,952
+Mesela burada şöyle bir problem daha olabilir. Daha böyle şey, tahrip edici başka şeyler de olabilir.
+
+324
+00:54:36,416 --> 00:55:00,716
+şu şeyi kapattı, NM eşittir, X'i kapattı, sonra OR demedi de bu sefer noktalı virgülle, konsoldan biz SQL yazarken, insert update yazarken, noktalı virgülle kapatıp, ondan sonra diğer şeyleri yazıp, commit edebiliriz yani, o begin end arasında, bir transaction içerisinde noktalı virgüllerle bu SQL'leri ayırt ediyoruz.
+
+325
+00:55:04,416 --> 00:55:15,176
+şey yapıyor, bir tane komut yapıyor. Bu komut da, veritabanını bozan bir komut. Yani, updateinstructor, set salary, herkesin maaşına 10.000 ekledi mesela.
+
+326
+00:55:15,176 --> 00:55:19,976
+Kendi maaşına 10.000 ekleyebilir falan. Bir şeyler yapabilir. Herkesin bütün tabloyu silebilir.
+
+327
+00:55:19,976 --> 00:55:28,376
+Ve sonra da şu noktada duygu ile bunu execute etti. Ve şu koment ile de, son kuatayı...
+
+328
+00:55:28,496 --> 00:55:54,036
+Yoksa o son kuato, son kuato olduğunu düşünüyoruz. Eğer perverse statement olmasa, o son kuatının olduğunu varsayıyor. Bu hacker diyelim arkadaki. Ve şununla da onu attı. Ta ki bunlar çalışsın diye. Yoksa arkada şey veritabanı tarafında komut hatası verecekti. Yani bu sorgu çalışmayacaktı.
+
+329
+00:55:55,347 --> 00:56:15,768
+Böylece, o zaman burada ne yapmış oldu burada da, yalnız tabii çoğu verit, çoğu GDB'si, çoğu şey, işte burada farklı protokolle haber dedim ya, GDB'si TIN dedim mesela, işte farklı olan isimleri bilmiyorum şimdi.
+
+330
+00:56:23,347 --> 00:56:28,668
+Sadece bir statement alabilir. Ama burada biz birçok statement'ı execute ettik bakın.
+
+331
+00:56:29,039 --> 00:56:55,940
+Yani çoğu zaman bu kapalı veritabanı, JDBC protokolünde çoğu zaman kapalı ama açık da olabilir. Açık ise işte daha böyle tahribil şeyler olabilir yani SQL injection ile. Default olarak çoğunda kapalı ama onu açmış olabiliriz. Açılmış olabiliriz sebepten dolayı. Böyle olunca birçok SQL'i böyle peşi sıra çalıştırıp böyle basit bir formdan bu veritabanını böyle alt üst edebilir hariçteki bir kullanıcı.
+
+332
+00:56:56,371 --> 00:57:17,071
+Evet. Şimdi, bunlara da ilgili tabii başka örnekler var. Yani biraz araştırın sizde. Bu sadece bir ilk adım olmuş oldu. Zaten çok mesele var. Deditabanın dersinde. Hepsine böyle bir adım atıyoruz ufak. Böyle güzel siteler ben gördüm. Buraya hatta not almış olabilirim.
+
+333
+00:57:19,251 --> 00:57:47,251
+Şuraya başka örnekler de şey yaptım herhalde. Veya şunu açıklaması var zannederseniz. Özellikle ben de PPT olarak paylaşıyorum sizinle. Böyle bazı sunuların altında açıklamaları okuyun yani tam anlamak için. Kitaptaki açıklamaların benzeri. Bazıları Türkçe falan. Veya işte tabii onun bir yolunu bunun anlamak için tam. Veya diğer örneklere bakmak için bakın yani mutlaka. Evet. Mesela şu cümle de önemli. 2000'lerden önce falan daha işte pür pür...
+
+334
+00:57:47,251 --> 00:57:48,612
+PostgreSQL nasıl bunu hallediyor?
+
+335
+00:57:51,699 --> 00:58:15,899
+PreperStatement kullanmamız lazım burada. PreperStatement'da böyle stringlerin içerisine, şu şeyin içerisine, şurada, bunları soru işaretleriyle yazdığım şey, setString, setString, setIntlerle, işte birinci parametre de şu olacak, ikinci de bu olacak, üçüncü de bu olacak gibi bunlarla böyle daha kontrollü bir şekilde bunları aktarıyoruz veritabanına.
+
+336
+00:58:16,271 --> 00:58:31,871
+Tamam mı? Böyle olunca, böyle çaktırmadan arka planda şunu böyle girdiğim zaman, şu yakalanıyor, şu yakalanıyor mesela. Bunu girdi ya formda. Şunu yakalıyor o set string. Kuatayı yakalıyor.
+
+337
+00:58:31,871 --> 00:58:41,871
+Böyle olunca, prefer statement'ı kullandığımız zaman, bu tür problemler hiçbir zaman ortaya çıkmamış oluyor yani. Tamam mı?
+
+338
+00:58:43,092 --> 00:58:50,751
+Ve bu proposed step'in kullanılmazsa bununla ilgili çok böyle büyük tahribatlar olmuş yani.
+
+339
+00:58:51,152 --> 00:58:55,192
+Mesela şu cümleyi okursanız göreceksiniz, araştırın belki.
+
+340
+00:58:56,471 --> 00:58:57,751
+İlginç şeyler bulursunuz.
+
+341
+00:58:57,751 --> 00:59:01,311
+There have been a number of attacks in the real world using SQL injections.
+
+342
+00:59:01,931 --> 00:59:09,271
+Attacks on multiple financial sites have resulted in theft of large amounts of money by using SQL injection attacks.
+
+343
+00:59:13,139 --> 00:59:20,599
+Evet. Buradaki hikaye de böyle arkadaşlar. İlginç değil mi? Bence biraz daha kurcalayın.
+
+344
+00:59:23,155 --> 00:59:40,875
+Evet, burada JDBC'nin diğer özellikleriyle ilgili bilinen şeylerden bahsediyoruz. İşte Rizal Set metadata. Çünkü Rizal Set'i dinamik olarak ortaya çıkan bir SQL'de gelen veriyi bilmediğim için onun metadata'sına bakman lazım.
+
+345
+00:59:40,875 --> 00:59:48,875
+Meta detası da Rizal Set metadata objesinde saklı. Bunu burada öğreniyor. Rizal Set metadata'da kaç tane kalımı var?
+
+346
+00:59:49,280 --> 01:00:16,280
+Bu kalımların ismi ne? Tipi ne? Ta ki ona göre while açacak, onları iterat edecek. Biraz önceki şurada bunu ezbere yaptık. Çünkü burada dinamik olarak gönderdiğim SQL'i biliyordum yani. Ama dinamik olarak başka SQL'ler gelebilir runtime'da yani. O zaman metadata'yı bilmiyorum yani. O yüzden burada metadata kullanmadık. Ama daha genel şeylerle. Genelde mesela...
+
+347
+01:00:17,300 --> 01:00:45,300
+PC admin olsun veya database browserlar var. Eğer Java'da yazıldıysa, JDBC ile veritabanına bağlanıyorsa, orada daha çok bunlar kullanılacak. Çünkü o database browserı o kataloğa bakıyor. Veritabanı sorguyu gönderirken o tablo veritabanının bütün şamasını öğreniyor gibi mesela. Bunları yapması için o metadetayı daha çok kullanıyoruz.
+
+348
+01:00:45,300 --> 01:01:05,360
+daha çok kullanılacak. Yani şurada bunu söylüyor. Enable application more generic, search all cases gibi böyle bunlar akla geliyor. Yani bunu kullananlar kimdir diye mesela şey yaptığınız zaman. Bunları kullanmayız. Bunda çok orijinal şeyler yok yani. Bakarsınız bunu daha detaylandırmıyorum.
+
+349
+01:01:06,931 --> 01:01:15,152
+They can be used to write a database browser that allows a user to find tables in a database. Bu database'de hangi tablolar var?
+
+350
+01:01:15,771 --> 01:01:22,672
+Ta ki işte bunu bir portalda, web ortamında mesela bunu gösterecek mesela bütün veritabanın şemasına.
+
+351
+01:01:23,007 --> 01:01:49,788
+gibi uygulamalar olabilir. Examine the schema, Examine rows in a table, apply selection to see desired rows, and so on. The metadata information can be used to make code used for this task generic. Anladınız değil mi? Daha açıklayacak bir şey yok burada. Bunların kullanımı da oldukça burada açık. Gene metadata ile ilgili bir tablonun primary key'ini şu fonksiyonunu öğrenebiliriz.
+
+352
+01:01:50,356 --> 01:01:53,676
+Foreign key dene öğrenebiliriz mesela.
+
+353
+01:01:53,676 --> 01:01:54,476
+Bu gibi şeyler.
+
+354
+01:02:03,923 --> 01:02:06,143
+Evet, şimdi bir ara verelim arkadaşlar.
+
+355
+01:21:21,203 --> 01:21:41,123
+Evet arkadaşlar, JDBC'de, JDBC ile dinamik olarak veri tabanına bağlanmak ve sorgu veya execute update veya execute query gibi işlemlerin nasıl yapıldığını anahtarıyla gördük.
+
+356
+01:21:48,115 --> 01:21:53,716
+Bir takım güvenlik açıklarını olacağından bahsettik. SQL injection gibi.
+
+357
+01:21:54,415 --> 01:21:59,056
+İşte bunlara mani olmak için de yaygın olarak kullanılan preferred statement'lardan bahsettik.
+
+358
+01:21:59,876 --> 01:22:06,155
+Tabi JDBC çok kapsamlı bir protokol. Üzerine yazılmış birçok kitap var.
+
+359
+01:22:06,155 --> 01:22:12,415
+Bir de güncelleme gelen bir şey var. Yaygın kullanımı var.
+
+360
+01:22:13,823 --> 01:22:18,023
+Bunlardan bir tanesi de transaction'ların execute edilmesi.
+
+361
+01:22:18,023 --> 01:22:27,423
+Üst uygulama programından, host programda, böyle transaction'ları çalıştırabiliriz.
+
+362
+01:22:27,423 --> 01:22:36,224
+Ve connection'la, connection üzerinden gene bu transaction'ların yalıtım seviyelerini,
+
+363
+01:22:36,368 --> 01:22:46,167
+ayarlayabiliriz. Ve bu transaction kapsamı içerisinde, otocommit gibi kavramlar var. Bunları ayarlayabiliriz.
+
+364
+01:22:46,167 --> 01:22:54,368
+Tabii transaction konusu da çok kapsamlı bir konu. Buradaki meseleleri burada çok detaylandırmayacağım.
+
+365
+01:22:54,368 --> 01:23:04,076
+Ama transaction dediğimiz zaman aklımıza gelen mana, bir bütünlük gerektiren. Yani bunu da biggen ve
+
+366
+01:23:04,083 --> 01:23:18,123
+Connection, Start veya Biggen gibi komutlar, Biggen Transaction veya Commit ile bu program içerisinde, bu hareket içerisinde, transaction içerisinde bir veya daha çok veritabanı eyleme.
+
+367
+01:23:18,123 --> 01:23:29,283
+Yani burada tabii veritabanı eyleme de SELECT, FROM, WHERE'den ziyade UPDATE eylemleri ta ki bir değişiklik olacak, birden çok değişiklik olacak ve bunlar bir tüm link içerisinde olması lazım.
+
+368
+01:23:29,443 --> 01:23:30,583
+Ya Hap ya Hap işte Commit.
+
+369
+01:23:30,963 --> 01:23:57,863
+Onu sağlıyor, rollback, onu sağlıyor. O program içerisindeki bütün komitif, bütün işlemler, update'ler, hepsi olacak ya da hiçbir tanesi olmayacak. Ortada kalmaması lazım. İşte bu bütünlükle kastedilen bu yani. Yoksa o işlem yarıda kalınca manasını kaybediyor. Yani bununla ilgili güzel örnekler vermiştik. Hatırlayan var mı? Mesela bir web uygulaması.
+
+370
+01:23:58,931 --> 01:24:01,931
+BİR BİR BANKA PARA TRANSİTER URGULAMASI.
+
+371
+01:24:03,131 --> 01:24:06,131
+Burada kafamızda bir şey canlanıyor mu?
+
+372
+01:24:07,931 --> 01:24:10,731
+Hatırladınız mı? Transaction deyince.
+
+373
+01:24:11,231 --> 01:24:18,231
+Yani bu dersi aldığınız başka veritabanı almasanız dahi, bu derste bunu mutlaka bilmemiz lazım. Transaction.
+
+374
+01:24:18,631 --> 01:24:22,231
+Transaction'ın bir bütünlük gereksinimi. Asit.
+
+375
+01:24:22,579 --> 01:24:30,879
+Bu kelimeleri duymuşuzdur. Ama nedir dediğimiz zaman transaction niye bir bütünlük gerektiriyor? Burada ilgili bir örnek verebilecek olan var mı?
+
+376
+01:24:35,188 --> 01:24:35,648
+Evet.
+
+377
+01:24:41,043 --> 01:24:41,483
+Ö.
+
+378
+01:24:51,220 --> 01:25:17,880
+Evet. Güzel. Güzel. Doğru. Özet bir şekilde ifade ettin. Fakat tek kullanıcıda bile, yani tek bir proses, tek bir hareket, bir program, bir para transferi yapı, eş zamanlı çalışmalı. Burada bile bir tabloda işte bir değeri alıp işte yüz düşüreceğiz oradan.
+
+379
+01:25:18,256 --> 01:25:25,216
+diğer aynı tabloda veya başka tabloda bir değere o 100 lira transfer ediyoruz ve 100 lirayı ekleyeceğiz.
+
+380
+01:25:25,775 --> 01:25:30,996
+Bunu da aynı anda iki tapıl üzerine aynı anda yapamayız yani değil mi? Bunu hayal edebiliriz.
+
+381
+01:25:31,435 --> 01:25:38,236
+Bir tanesine 100 lira düştüğümüz zaman diğerine o 100 lirayı ekleyemezsek şimdi bu şekilde sırayla olacak bir işlem yani.
+
+382
+01:25:38,676 --> 01:26:05,556
+Eğer ortada kalırsa olmaz. Yüz lira kaybolmuş olacak yani. Bunun sebep olan şey ne? Database internal bir hata olabilir. Network hatası olabilir. Donanımsal bir hata olabilir. Yani o anda bu işlemleri yapan hareketler ortada kalmış olacaklar. Değil mi? Bu çok basit bir hata. Olası bir hata yani. Çok böyle küçük bir ihtimalle olabilecek bir şey değil. Kaldı ki verdiğin örnekte de eş zamanlı çalışan birçok.
+
+383
+01:26:05,971 --> 01:26:19,231
+Translator işlemi olabilir. O sırada Baki öğrenen olabilir. Mesela gibi. Demek ki burada problem, update'lerde. Yani güncellemelerde. Güncelleme olduğu zaman bunların ortada kalmaması lazım.
+
+384
+01:26:19,891 --> 01:26:31,884
+Ve güncellemede sırasında inconsistent olan vaziyet, hiç dünyaya açılmaması lazım. Inconsistent vaziyet ne? Bir tuppledan, bir hesaptan 100 lira düştüm. Şu anda...
+
+385
+01:26:32,020 --> 01:26:50,659
+inconsistent vaziyette. O anı düşünün, o anda 100 lira yok. O dış dünyada gözükmemesi lazım. O 100 lira diğer hesabı eklendiği zaman dış dünya görebilir. Yani diğer programlar görebilir. İşte bunlar, bu problemler, bu hareketin, bu programın tünlüğünü gerektiriyor.
+
+386
+01:26:51,039 --> 01:27:19,000
+Bütünlüğü gerektiriyor. Eş zamanlı çalışmada izolasyonu gerektiriyor. Yani ACID, I, Isolation. Durability, bu değişiklikler ilk olarak ana hafızada yapılıyor. Bunlar diske kavuşması lazım. Disk, permanent bir yer. Yani sürekli saklanan bir yer. Diske kavuşması lazım. İşte D de ona bakıyor. Yani o ACID'i de ana hatlarıyla bunları bilmemiz lazım. Bunları sistem gerçekleme dersinde daha detaylı inceliyoruz yani. Ama almasak bile transaction diyece bu meseleler akla gelmesi lazım.
+
+387
+01:27:19,039 --> 01:27:36,600
+İşte, JDBC'le bunları da kontrol edebiliriz. Rollback yaptık, connection, o izolasyon'ın yalıtım seviyeleri var. Read, committed, read, uncommitted, repeatable, read, sellelizable gibi mesela. Bunlar da bilinen, çok bilinen, yaygın bilinen şeyler.
+
+388
+01:27:37,844 --> 01:27:48,123
+SGDBC'de bu connection'ın ayarını, izolasyonunu böyle ayarlayabiliriz. Mesela web uygulamalarında çoğu zaman bu read committed şekilde set edilmiş.
+
+389
+01:27:48,884 --> 01:27:55,684
+Tabii bu bir gevşeklik yani. Yani bu hareketler iç içe gidebilirler. Şimdi burada neyi düşüneceğiz örnek olarak?
+
+390
+01:27:56,095 --> 01:28:05,615
+Biraz uzatıyorum ama tabii oldukça da önemli bir şey. Ama burada da ana hatları da şunları söyleyebiliriz. Mesela bir web uygulaması, bir koltuk rezervasyonu uygulaması.
+
+391
+01:28:05,815 --> 01:28:16,255
+İşte koltukta böyle birkaç koltuk uçakta rezervasyonunda birkaç koltuk kalmış, birazdan kapanacak yani. O sırada işte birçok kullanıcı bu koltukları almaya çalışıyorlar.
+
+392
+01:28:16,435 --> 01:28:22,956
+Veya işte sizin üniversite veritabanında ders alma hadisesi mesela bir anda açılıyor, herkes ders almaya çalışıyor.
+
+393
+01:28:23,359 --> 01:28:35,639
+Şimdi burada demek ki bir aplikasyonun, uygulamanın bunu senkronize etmesi var. Bir de bu isteklerin de veri tabanına ulaşması var.
+
+394
+01:28:36,539 --> 01:28:44,899
+Yani burada bu isteklerin veri tabanı ulaşmasında son bir koltuk kaldığı zaman
+
+395
+01:28:45,231 --> 01:28:53,231
+Bu koltuğu biri aldığı zaman mesela, ona yaşamasında bu koltuğu alamamış olabilir.
+
+396
+01:28:55,072 --> 01:28:58,351
+Veya işte biz sepete bir şey koyuyoruz mesela, bir ürün koyuyoruz.
+
+397
+01:28:58,471 --> 01:29:01,992
+Ama sepette onaylama sırasında stokta kalmadı diyebilir bize yani.
+
+398
+01:29:02,731 --> 01:29:06,311
+Ne demek istediğim, yani ben onu alabildiğimi düşündüğüm anda
+
+399
+01:29:06,804 --> 01:29:30,404
+Onu alabiliyordum gerçekten, o koltuğu veya o ürünü veya o dersi her neyse. Ama onay yaşamasında başkası girip aynı o son koltuğu gördü ve aldı ve onayladı yani. Demek ki burada bir izolasyon açığı var. Yani o izolasyon seviyesi biraz düşük. Son bir koltuğu düşünün, onu herkes gördü, biri aldı.
+
+400
+01:29:31,444 --> 01:29:35,184
+Diğeri aldığını zannediyor ama onay aşamasında alamadı yani.
+
+401
+01:29:36,203 --> 01:29:37,104
+Böyle bir şey olabilir.
+
+402
+01:29:37,811 --> 01:29:59,211
+Böyle oluyor zaten. Öteki türlü olmuş olsaydı, yani bu kadar gevşek olmasaydı yalıtım seviyesi, o zaman çoğu koltuk belki satım noktasında, satış noktasında daha şey olacaktı. Şimdi böyle olunca esnek gözüküyor, herkes alıyormuş gibi gözüküyor ama sonradan alamadığı anlaşılabiliyor yani. Alamamış olabiliyor.
+
+403
+01:30:00,000 --> 01:30:21,159
+Öteki türlü baştan daha katı bir izolasyon olmuş olsaydı o zaman koltuğu satma ihtimali de düşecekti. Çünkü biri alıyor gibi yapacaktı, diğeri onu alamasaydı tam açıklamak da zor oluyor. Bunu işte daha detaylı şey yapıyoruz derslerde, inceliyoruz o sistem gerçeklemede.
+
+404
+01:30:22,612 --> 01:30:35,452
+O zaman ikisi birden de vazgeçerse koltuğu satamayacaktı. O yüzden yalıtım seviyesi biraz gerçek tutarak herkes alıyormuş gibi yapıyor ama sonradan sepet onaylama sırasında bazıları düşüyorlar yani alamıyorlar mesela.
+
+405
+01:30:35,952 --> 01:30:49,712
+Yani bir takım stratejilerle bu yalıtım seviyeleri ayarlanıyor. İşte bu connection sırasında bunlar belirlenebiliyor. İşte GDP's bunları da yapabiliyormuş. Burada maksadımız o yani bu sunuyu almış. Ben transaction'a biraz saylandırmış oldum yani.
+
+406
+01:30:50,579 --> 01:30:56,919
+Evet, tabi bunlar böyle oldukça önemli konular yani, transaction meselesi tabi.
+
+407
+01:30:58,068 --> 01:31:14,068
+Evet, burada fonksiyonların çağrılması var. Birazdan fonksiyon konusunu göreceğiz. Gene JDBC'den mevcut veritabanı içerisindeki fonksiyonlar veya prosedürler call edilebilir, çağrılabilir. O fonksiyon, prosedürü ne yapacaksa bir rokor çıkartacak belki mesela.
+
+408
+01:31:25,359 --> 01:31:40,599
+execute ettik, onu tetikledik, Java şey tarafından, şu komutla, connectionla, prepare call'u çalıştırdık mesela. Tamam mı? Burada o fonksiyonla ilgili parametreleri girdik. Yani preferred statement'ın başka bir varyantı.
+
+409
+01:31:40,599 --> 01:31:51,719
+Preferred statement'ın bu sefer şey, call ettiğimle sorgu değil, şey, parametrik olarak bir fonksiyonu çalıştırdım. Yani.
+
+410
+01:31:52,307 --> 01:31:55,148
+Yani oldukça esnek, çok şeyler yapabiliyoruz.
+
+411
+01:31:56,028 --> 01:32:07,068
+İşte o uygulama neyi gerektiriyorsa, işte bu böyle patenleri, kavramları, bunları kullanılacak olan, işte GDP'sinin sağladığı o yapıları öğrenmek lazım.
+
+412
+01:32:07,207 --> 01:32:09,528
+Yani bu ayrı bir kurs yani sonuçta.
+
+413
+01:32:09,907 --> 01:32:12,688
+Ve bununla ilgili çok iş dönüyor piyasada, endüstride.
+
+414
+01:32:12,867 --> 01:32:17,287
+İşte GDP'siyle veya işte stop prosedürlerle ilgili çok işler yapılıyor.
+
+415
+01:32:17,760 --> 01:32:24,220
+Evet, çok daha fazla uzatmıyorum. Böyle birçok tutoryallar var.
+
+416
+01:32:24,608 --> 01:32:47,087
+SQL, Java'da gene bu sefer embedded SQL. Yani embedded gömülü olarak C programı içerisinde ben SQL'leri gömebilirim veya Java içerisinde. Java içerisinde gömdüğümüz zaman, yani static SQL oluyor bu. O zaman buna SQLG deniyor. Bakın burada dikkat ederseniz artık SQL'ler runtime'da compile ediliyor.
+
+417
+01:32:47,731 --> 01:32:56,571
+Yani şey, program şey olurken, compile edilirken bu SQL'ler de compile ediliyor.
+
+418
+01:32:56,571 --> 01:33:03,971
+Ve arkada dinamik SQL kutuphaneleriyle veri tabanına bağlanıyor.
+
+419
+01:33:04,391 --> 01:33:07,871
+Ve artık bir program compile edilmiş halde yani.
+
+420
+01:33:08,271 --> 01:33:10,431
+Burada açıktan şurada görebiliyoruz mesela.
+
+421
+01:33:10,611 --> 01:33:13,471
+Şu diyez ile şu bölge SQL ifadesi var.
+
+422
+01:33:13,571 --> 01:33:15,671
+Yani runtime'de SQL almıyoruz.
+
+423
+01:33:15,731 --> 01:33:27,051
+O yüzden biraz daha flexible değil bu tür uygulamalar. Ama daha efficient. Çünkü hepsi compile edildi. Debug etmek daha zor. Çünkü böyle farklı malzemeler var programın içerisinde.
+
+424
+01:33:27,051 --> 01:33:39,211
+Yani şu bölgeyi debug edemiyoruz mesela. EW programlarda bu gibi böyle yorumlar var. Yani debug problemi var mesela. Yani debugger burada özel bir debugger lazım belki.
+
+425
+01:33:43,507 --> 01:33:55,908
+Evet, bu gibi böyle şeyler var. ODBC şeyleri de var burada. Gene aynı kavramlar. Yani connection açıyoruz, statement, query'ler gönderiyoruz ve sonuçları alıyoruz.
+
+426
+01:33:55,908 --> 01:33:58,908
+Bununla ilgili böyle...
+
+427
+01:33:59,167 --> 01:34:14,288
+kavramlar. Buraya hiç zaten dahil etmemiş. Ama kitapta anlatıyor yani, kitaptan okuyabilir. Eğer SELECT tarzı programlamalarda yol kat edenler varsa, onlarda çalışanlar varsa o DBC öğrenmesi lazım yani cabadan ziyade.
+
+428
+01:34:15,507 --> 01:34:30,228
+gene C içinde gene embedded SQL, C kodu içerisinde şu şekilde böyle bölgeler, şu bölge içerisinde SQL ifadeleri görebiliyoruz.
+
+429
+01:34:30,747 --> 01:34:37,568
+Ama burada da bunlarla ilgili örnekler var. İşte feş ediyor mesela, orada kullanılan sintas böyleymiş.
+
+430
+01:34:38,068 --> 01:34:43,228
+Kavramlarda çok bir değişiklik yok ama kullanılan gramer formları burada.
+
+431
+01:34:43,507 --> 01:34:44,507
+görebilirim.
+
+432
+01:34:45,907 --> 01:34:46,207
+Evet.
+
+433
+01:34:49,427 --> 01:35:08,427
+Bir de embedded bir meselesi var. Bu da günümüzde yaygın olarak yaygınlaşmış son zamanlarda. Bir program içerisinde direkt olarak veri tabanına, kütüphanelerine bağlanmak.
+
+434
+01:35:08,427 --> 01:35:16,188
+Yani böyle Client Server Architecture değil de, direkt olarak veri tabanının apısını, veri tabanı o apıyı sağlıyor.
+
+435
+01:35:17,427 --> 01:35:25,827
+sorgu çalıştırma olsun, insert etme olsun, update olsun, bütün bu işlemleri, o API sayesinde şey yapabiliriz.
+
+436
+01:35:25,827 --> 01:35:32,667
+Ve çok daha hızlı yani. Çünkü JDBC gibi bir arayüz yok, böyle bir köprü yok yani. Çünkü o zaman alıyor yani.
+
+437
+01:35:33,108 --> 01:35:40,988
+İşte dinamik esker, embellit esker gibi o kavramı. Efsaneların bir yükü var yani. Tamam iki tane farklı dünya, o arada köprü yukurdu ama
+
+438
+01:35:40,988 --> 01:35:44,967
+o veritabanını biz program içerisine gömemeyeceğiz.
+
+439
+01:35:45,427 --> 01:35:47,127
+bana apilerini.
+
+440
+01:35:47,947 --> 01:35:54,807
+Bunun en güzel örnekleri, Oracle'ın Berkeley DB var mesela, 2000'den beri kullanılan.
+
+441
+01:35:55,247 --> 01:35:58,427
+O key value store mesela, ama distributed değil yani.
+
+442
+01:35:58,847 --> 01:36:01,867
+Distributed NoSQL tarzında level DB var mesela.
+
+443
+01:36:02,247 --> 01:36:09,287
+Bunlar mesela oldukça bu tip maksatlarda, bu maksat olarak yaygın olarak karşımda çıkıyor.
+
+444
+01:36:09,287 --> 01:36:11,287
+Burada da diğer örneklerini görüyorsunuz gene.
+
+445
+01:36:11,847 --> 01:36:13,427
+MySQL'in embedded versiyonu var.
+
+446
+01:36:13,427 --> 01:36:24,028
+SQL lite var, javadb var, javadaki şeyi var. Şurada dikkat çeken nokta bu, yani bir client server architecture yok.
+
+447
+01:36:24,207 --> 01:36:38,207
+Direkt olarak uygulamadan veritabanına erişmek var. Veritabanın modüllerine, optimizera, B3'ye, iç tarafta ne varsa onların sağladığı API imkanlarıyla daha veritabanın içindeyiz yani.
+
+448
+01:36:38,207 --> 01:36:44,207
+Daha hızlı çalışıyor. Embedded veritabanı olduğu için daha hızlı çalışıyor.
+
+449
+01:36:44,207 --> 01:36:46,207
+Evet.
+
+450
+01:36:46,207 --> 01:36:50,207
+Burada da bunlardan bahsediyoruz. Bu kısımda ise
+
+451
+01:36:51,220 --> 01:36:57,060
+Fonksiyonlar ve prosedürler var. Bunlara ilgili laboratuvarda birkaç hafta çalışma yapacaksınız.
+
+452
+01:36:57,720 --> 01:37:04,560
+Burada tabi basit bazı örnekler var. Genel olarak avantajı, genel olarak dezavantajlarından bahsediyoruz ilk maddede.
+
+453
+01:37:04,640 --> 01:37:08,060
+Mesela şu tek madde zaten yeterli anlamak için olayı.
+
+454
+01:37:08,060 --> 01:37:18,060
+Allow a single point of change to business rule. Bu cümle geçiyor genelde. Business rules dediği, o küçük dünyanın gerektirdiği bir takım iş kuralları.
+
+455
+01:37:19,123 --> 01:37:46,943
+Business Rules'la onu kastediyor. Yani işte bu üniversite veritabanında işte bir takım alınan kararlar var. İşte alttan dersi olan şu dersi alamaz. Ön koşulu dersi almış olması, geçmiş olması lazım. Yani o veritabanı, o küçük dünyaya has bir kural bu yani. İşte bunu benim default kısıtlarda bunu tanımlayamam yani. Bunun için bir fonksiyon yazmam lazım. Yani bir öğrenci işte bu dersi almaya çalışırken bakmamız lazım o dersin koşullarını aldı mı diye.
+
+456
+01:37:47,123 --> 01:37:52,503
+O iş kuralı, o küçük dünyaya has bir mesele bu yani. İşte onu biz top prosedürle yapabiliriz.
+
+457
+01:37:52,783 --> 01:37:55,083
+He ya trigger'la yapabiliriz. İşte bu dümdere onu söylüyor.
+
+458
+01:37:55,443 --> 01:38:00,623
+Allow a single point of business rule. Single point yani ben bunu uygulamada da yapabilirdim.
+
+459
+01:38:00,703 --> 01:38:09,163
+Uygulama seviyesinde de yapabilirdim. Yani yazdım o GDBC programında da işte o yine bir öğrenci bir ders almaya çalışan prosedür çalışıyor.
+
+460
+01:38:09,583 --> 01:38:15,123
+Sonra o öğrencinin işte bakması lazım aldığı derslerine geçti mi kaldı mı diye mesela öyle de yapabiliriz.
+
+461
+01:38:15,123 --> 01:38:27,724
+Bu uygulama seviyesine ama bunu böyle merkezde, basit bir iş ya, bunu merkezde birkaç tablo kontrolüyle yapabilirim. Merkezde bu tek bir yerde olacak. Birçok uygulama bu start prosedürleri kullanabilir.
+
+462
+01:38:28,307 --> 01:38:38,108
+ve o iş kuralı değiştiği zaman ben bir yerde o kuralı değiştireceğim. Bütün uygulamalar da hiç değişmeyecek. Onlara yine aynı noktaya merkezli bir konusunu kullanacaklar.
+
+463
+01:38:38,108 --> 01:38:48,108
+İşte bu yapı böyle hakimse, özellikle işte basit işlerde birçok uygulamanın kullanacağı böyle merkezi bir şeyse bu oldukça elverişli bir şey.
+
+464
+01:38:48,271 --> 01:38:54,952
+çoğu veritabanı bu şekilde böyle fonksiyon malzemeleri sağlıyor.
+
+465
+01:38:54,952 --> 01:39:04,672
+işte bir while dönüşü, for dönüşü mesela, değişken tanımlama, tuple, record tanımlama mesela gibi bu değerleri, işte bu programlama yapı taşlarını,
+
+466
+01:39:04,672 --> 01:39:06,872
+ama tabii çok kompleks değil yani.
+
+467
+01:39:06,872 --> 01:39:14,552
+ve buradaki dezavantaj, bu tip böyle stored procedure içerisindeki SQL'ler çok kolay optimize edilmiyor.
+
+468
+01:39:16,271 --> 01:39:27,532
+Biraz sistemi hantallaştırıyor. Triggerlar da keza öyle. Hem de tehlikeli. Yani security noktasında bazı tehlikeleri var. Bunlar böyle dikkat çekiyor.
+
+469
+01:39:27,532 --> 01:39:40,552
+Decor optimization, parallelism compared to built-in functions that are highly optimized. Built-in fonksiyonlar var. Mesela date olabilir veya string üzerinde birçok fonksiyonlar var.
+
+470
+01:39:44,271 --> 01:39:52,372
+stringin üzerinde prosesler yapılabilir mesela, kaç tane kareklerden oluşuyor, alt, substringin bulunmasıyla ilgili mesela olabilir.
+
+471
+01:39:52,532 --> 01:39:57,092
+DAT ile ilgili fonksiyonlar var. Böyle built'in çok fonksiyonlar var yani.
+
+472
+01:39:57,092 --> 01:39:59,972
+Bakın mesela, PCSK'in dokumentasyonda built.
+
+473
+01:40:00,000 --> 01:40:15,240
+Onlar çok optimize fonksiyonlar. Yani sisteme entegre edilmiş. Ama biz şimdi kullanıcıya diyoruz ki istediğin fonksiyonu yaz. Onu hemen sistem optimize edemiyor. Sistem için bunlar böyle bir dar boğaz noktaları oluyor yani.
+
+474
+01:40:16,467 --> 01:40:38,228
+Mesela burada bir fonksiyon tanımı var. Hemen zaten anlaşılıyor. Bunun gramellini, bunlardaki örnekler yapacaksınız. Gramelli bu şekilde. Bu belki Oracle olabilir. Diğer bir dezavantajı ise yazdığımız bir stored procedure o veri tabanına has yani.
+
+475
+01:40:38,644 --> 01:40:59,684
+SQL'in grameriyle yazdım onu. Kullanan malzemeler genelde while, or falan onları kullanarak gezeceğiz ama onu alıp da ben Oracle'da kullanamayacağım. Onu ona göre sevilmem lazım yani. Onun sintaksını çevirmem lazım. O yüzden bu da bir dezavantaj listesinde bu da var. Bu da geçmiyor ama bu da oluyor. Evet.
+
+476
+01:41:00,148 --> 01:41:08,667
+Bu fonksiyonları böyle, SQL içerisinde şu şekilde çağırmış, kırmızı nokta. Bu fonksiyonu çağırdık şu parametre ile.
+
+477
+01:41:08,667 --> 01:41:19,667
+Tamam bu şekilde. Procedür ise bir değer döndürmeyip, işte bir işlem yapmasına da procedure deniyor.
+
+478
+01:41:19,667 --> 01:41:26,108
+Gene procedure'ları böyle tanımlayabiliriz yani. Bir şey return etmeyenlere de procedure deniyor. İleride çıkacak karşımıza.
+
+479
+01:41:26,224 --> 01:41:36,224
+Tablo fonksiyonları ise, engeçinde çok farklı şeyler yok. Aynı şeyi farklı kaplarda sunuyor kullanıcıya. Öyle ifade kullanabiliriz.
+
+480
+01:41:36,224 --> 01:41:46,096
+Yani ana tema aynı. Ama farklı kaplarla kullanıcının böyle bir flexibit'i sağlamış oluyor programları için.
+
+481
+01:41:46,095 --> 01:41:57,996
+Mesela burada ne yapıyor? Şöyle bir fonksiyon, esasında bir tane tablo return ediyor. Tablonun da şeması var. Şurada da, şöyle bir bakın, şimdi ben dinliğim için hemen hızlı geçiyorum ama.
+
+482
+01:42:01,619 --> 01:42:10,339
+Tablo fonksiyonları, tablo fonksiyonlarının diğer bir isim, parameterizeView. Yani güzel bir isim esasında, tam maksada hitap ediyor.
+
+483
+01:42:10,739 --> 01:42:18,659
+Tablo fonksiyonları bir kere tablo üretecek. Bakın şurada bir fonksiyon var. Şurada bir gramer değişmedi ama hani TGS kalıda değişebilir.
+
+484
+01:42:18,659 --> 01:42:31,299
+Tablo fonksiyonları var, hatırladığım kadarıyla. TGS kalıda da var. Şurada mesela şöyle bir şey tanımlamış. Returns table, tablo döndürdü. Belki örnekle mesela.
+
+485
+01:42:38,739 --> 01:42:53,539
+İşte içeride ne yaptığı var. Yani bir şey yapmıyor. Sonuçta bir JOIN işlemi var herhalde. Şuradan aldığı bir parametreyle şu Department Name'i, o Department Name'deki instructor'ları buluyor.
+
+486
+01:42:54,195 --> 01:43:10,091
+Tabi basit bir şey yapıyor olayı anlamamız adında. Daha kalmış şeyler yapabiliriz. Ama burada orijinal olan bir tablo üretmesi bu fonksiyonun. O zaman buna table function deniyor. Bu neye denk geliyor esasında kavram olarak? Parametrize view'a karşılık geliyor.
+
+487
+01:43:10,195 --> 01:43:17,795
+Yani, nihayetinde, view, bir definition saklıyordu. Fakat, view'a biz bir parametre girmiyorduk yani.
+
+488
+01:43:17,795 --> 01:43:25,195
+View'da bir tablo veya birden çok tablodan bir sorgu ile bir görüntü ortaya çıkartıyorduk yani.
+
+489
+01:43:25,195 --> 01:43:34,395
+O view'u kullandığım zaman, o definition açılacak, execute edecekti. İşte burada da, definition'ımız gene view gibi.
+
+490
+01:43:38,195 --> 01:43:55,395
+view ortaya çıkıyor. O yüzden iki isim böyle bir araya gelmiş oldu. İşte burada bakın mesela bir parametrize view kavramı var. Instructor of'la bir tane tablo ortaya çıktı. O tablonun şamasını verdi.
+
+491
+01:43:56,115 --> 01:44:05,516
+Tabi gene, yani abstract kaçıyor. Demek ki programcı için elverişli bir şey oluyor bu yani. Ama işin içine girince biraz daha anlayacağız. Yani işte ister istemez.
+
+492
+01:44:05,516 --> 01:44:16,516
+Bu biraz böyle, ne gerek var? Demek ki gerek varmış yani. Böyle bir yorum yapabiliriz yani. Yani bunu ben Vibro'da yapabilirdim mesela.
+
+493
+01:44:18,228 --> 01:44:22,627
+Bunlar sistemin programın modüler olmasını sağlıyor.
+
+494
+01:44:22,627 --> 01:44:32,028
+Advantive in terms of code modularity, query flexibility, ability to encapsulate complex logic, bunlara imkan sağlıyor.
+
+495
+01:44:32,028 --> 01:44:36,028
+Bunlar birçok tecrübelerle ortaya çıkan yorumlar.
+
+496
+01:44:36,028 --> 01:44:43,627
+Biz o tecrübeleri yaşamadığımız için, maalesef bu konu kapsama içerisinde somut olarak bunu tam yapamıyoruz.
+
+497
+01:44:43,627 --> 01:44:45,827
+Benim hissettiğim öyle bir şey var burada.
+
+498
+01:44:46,228 --> 01:44:50,387
+Ama işin içine gelince bunlar karşımıza çıkacak. Yani bunların üzerine yoğunlaşacaksak eğer.
+
+499
+01:44:51,988 --> 01:44:52,268
+Evet.
+
+500
+01:44:52,608 --> 01:45:05,728
+Bunları söyleyebiliriz. Prosedürler ise direkt SQL'den çağrılmıyorlar. Prosedürler bir şey göndermediği için, return etmediği için prosedürler. Bunları hariçten böyle çağırıyoruz.
+
+501
+01:45:05,728 --> 01:45:20,587
+Yani içeride bir şeyi count etti mesela. Şunu decount olarak tanımladık. Şuraya onu yazdık mesela. Şu değere yazdık. Decount artık değerinde.
+
+502
+01:45:20,608 --> 01:45:32,408
+Bu işte fizik departmandaki hocaların sayısı var. Bu prosedür bir şey return etmiyor, bir değeri set ediyor yani. O yüzden SQL içerisinde kullanılmıyor yani.
+
+503
+01:45:32,408 --> 01:45:43,608
+Can not be code directly from SQL, curve is like stored functions. Aradaki fark bu. Gene ama aynı problemler var yani. Yani gerek fonksiyon olsun, gerek prosedür olsun. Bunların paralel...
+
+504
+01:45:44,243 --> 01:45:50,344
+çalışması. Çünkü bir de böyle sorguların optimize edilmesi önemli bir mesele tabanlarında.
+
+505
+01:45:50,884 --> 01:45:55,123
+Dediğim gibi ve bu sorgunun optimizasyonu ve intra-query
+
+506
+01:45:55,568 --> 01:46:23,368
+Yani sorgu içinde paralel çalışma gibi mesela, gene böyle güncel konulardan, hani sorguların paralel çalışması var, bir de sorgu içerisindeki yapılan işlemlerin paralel olması gibi şeyler var. İşte bunlarda çok zorluklar var yani bu geleneksel prosedür fonksiyonlarla. O yüzden öyle bakıldığı zaman geçmişe, bu gibi yapılar biraz böyle şey, soğuk bakılan şeyler yani prosedür fonksiyonlar.
+
+507
+01:46:23,568 --> 01:46:37,408
+Veri tabanlarında bu işlemleri yapıyorlar ama çok yaygın, kabul edilir, çok elverişli denilen yapılar değil. Bu gibi şeyler göreceksiniz baktığınız zaman.
+
+508
+01:46:38,368 --> 01:46:44,588
+Böyle yaygın kabul görmüş yapılar değil. Elbette yerine göre kullanılıyor yani ihtiyaca göre.
+
+509
+01:46:46,408 --> 01:46:49,368
+Evet, söylediklerimizin özeti var burada.
+
+510
+01:46:51,859 --> 01:47:07,260
+Burada da örneklerle bu içerisindeki while, repeat onlardan bahsediyor. Orijinal bir şey yok. For'lar falan onlardan bahsediyor. Bunları detaylı bakarsınız yani ve örnek programları yazarsınız.
+
+511
+01:47:07,260 --> 01:47:12,859
+Robotuarda veya kendiniz. Yine chapter'ın sonunda böyle örnekler var.
+
+512
+01:47:13,363 --> 01:47:32,903
+Bana biraz önce soru sordu. Söylemeye gerek yok. Kitabın her chapter'ın sonunda böyle exercise'lar var. Onların bazı soruların cevapları var. Onlar çok güzel bir çalışma ortamı yani. Bunlar mutlaka yapmak çok fayda sağlayacaktır yani. Evet. If-else blokları var mesela.
+
+513
+01:47:33,908 --> 01:47:38,088
+Evet. Şu ilk kırmızı maddeyi okuyun mesela.
+
+514
+01:47:38,268 --> 01:47:46,288
+Even the most basic features or procedural extensions to SQL have different syntax or semantics in different database products.
+
+515
+01:47:46,688 --> 01:47:50,408
+As a result, programmers have to learn a new language for each database product.
+
+516
+01:47:51,948 --> 01:47:53,208
+Yani, anladınız?
+
+517
+01:47:53,712 --> 01:48:01,872
+Mesela bir müddet Oracle öğrendiniz, orada procedure language yazdınız. Stop procedure yazdınız mesela.
+
+518
+01:48:01,872 --> 01:48:06,952
+Şimdi, P.J.S.Crad'da bir iş yaparken, orada stop procedure'i öğrenmeniz lazım.
+
+519
+01:48:06,952 --> 01:48:10,712
+Yani tam çok bambaşka şey değil ama ayrı bir grameri var yani.
+
+520
+01:48:10,912 --> 01:48:28,752
+O yüzden bu dezavantajı böyle şey yapmak için, halletmek için bütün bu şeyler bunların yerine biz yazacağımız o business logic'i, iş kuralını bir fonksiyonla yazacaksak bu external bir language'lı olsun.
+
+521
+01:48:29,363 --> 01:48:39,043
+C'de yazalım bunu, Python'da yazalım, Java'da yazalım mesela. Bu tabi biraz daha makineye biraz daha hakim olmayı gerektiriyor.
+
+522
+01:48:39,043 --> 01:48:51,483
+Çünkü bu sefer veritabanının kernel'ına hariçten bir fonksiyon include ediyoruz yani, inject ediyoruz. Burada bir takım security programları de var.
+
+523
+01:48:51,796 --> 01:49:09,196
+ve bunların aşılmasıyla ilgili bazı yöntemlerden bahsediyor burada. Şuraları okursanız dediklerimin özeti burada da geçiyor. Ama genel yapı bu şekilde. Yani bir prosedür oluşturuyoruz mesela. Language C dilinde yazacağız.
+
+524
+01:49:09,196 --> 01:49:18,396
+Ve bu kod, source kodu da şurada. Ben bunu böyle oluşturduğum zaman arkada bu compile ediliyor.
+
+525
+01:49:18,608 --> 01:49:27,328
+C compiler'ı, compiler'ı ve veritabanına bu entegre edildi. Built-in olarak sanki fonsu olmuş gibi.
+
+526
+01:49:27,328 --> 01:49:32,768
+Biraz daha advanced bir programlama ortamı var burada.
+
+527
+01:49:32,927 --> 01:49:47,647
+Ama böyle olunca birçok, şimdi ben bu yazdığım o C kodunda yazdığım o küçük dünyanın gerektirdiği bir iş kuralını C ile yazdığım zaman ben bunu TGSK'de de kullanabilirim, Oracle'da da kullanabilirim.
+
+528
+01:49:47,727 --> 01:49:57,047
+Yani daha böyle portable bir şey olmuş oldu. Değil mi? Portable bir şey oldu. Bütün data source'lar bunları kullanabilir, bütün veritabanları kullanabilir.
+
+529
+01:50:00,000 --> 01:50:05,000
+veya iş gören bir şey yaptıysam, bunu birçok veritabanları kullanabilecekler.
+
+530
+01:50:06,500 --> 01:50:10,120
+Tabii bu biraz da şey gerektiriyor yani.
+
+531
+01:50:10,700 --> 01:50:12,480
+Orada bununla ilgili bir çalışma yapmıyor.
+
+532
+01:50:13,400 --> 01:50:17,000
+Ama hani biraz merak eden bunu iyice kurcalayabilir.
+
+533
+01:50:17,580 --> 01:50:19,400
+Bunu öğrenebilir mesela bence.
+
+534
+01:50:20,220 --> 01:50:25,360
+Yani bu noktada bir israf olmaz yani bunu öğrenmek.
+
+535
+01:50:25,360 --> 01:50:26,160
+Bu demek istiyorum.
+
+536
+01:50:26,836 --> 01:50:40,396
+Bunun dezavantajları, bu gibi yöntemlerin dezavantajı. Code to implement function may need to be loaded into database system, executed in database system address space.
+
+537
+01:50:40,396 --> 01:50:47,996
+Bakın bu çok tehlikeli bir şey. Yani veritabanının address space'ine, veritabanın ile beraber bunu compile ediyoruz yani.
+
+538
+01:50:48,435 --> 01:50:59,435
+Veritabanının içinde bu veritabanının kaynaklarını kullanıyor. Adress space gibi mesela. O zaman burada da güvenlik açıkları hemen akla geliyor.
+
+539
+01:51:00,404 --> 01:51:21,684
+Risk to Accidental, Accidental Corruption of Database Traction, Security Risk gibi mesela. Bunlarla ilgili karşımda çıkan kelimeler de mesela son senelerde diyelim bu security problemleri, sandbox teknikleriyle bu yollar biraz daha genişletilmiş.
+
+540
+01:51:21,684 --> 01:51:28,404
+Yani bu tık böyle extensionlar veri tabanlarına, harici compilerlar.
+
+541
+01:51:29,844 --> 01:51:45,443
+değerlenen programlar, VELİTABANI'yla entegre edilebiliyor. Bu gibi tekniklerle. Burada o tekniği anlatıyor ana hatlarıyla. Daha merak edenler, bunlara yine bakabilir mi? Daha fazla bahsetmeyeceğim yani.
+
+542
+01:51:45,443 --> 01:51:57,844
+Evet, trigger meselesi, STOIC TRASEDİLİR'e göre biraz daha detaylı bir şey. Hem STOIC TRASEDİLİR'den bir mana oluyor,
+
+543
+01:51:57,844 --> 01:52:17,884
+Bazı şartlarda sağlanınca o fonksiyonu çalıştırıyoruz. Benzediği diğer bir nokta, assertionlar. Assertionlar çok böyle kaba bir yapıydı. Yani assertion bir sağlama yapıyoruz. Mutlaka view tabanının olması gereken bir şey.
+
+544
+01:52:21,235 --> 01:52:32,956
+Üç sınıftan ders, bizim üniversite veritabanının noktasına baksak, Üç sınıftan ders, işte belli bir ortalaması, belli bir sınırın altında olanlar, 4. sınıf dersini alamaz yani.
+
+545
+01:52:33,055 --> 01:52:38,655
+İlk 3 sene, 3. sınıfta olan bir öğrenci mesela, 4. sınıf dersi alamaz gibi bir mesela.
+
+546
+01:52:39,215 --> 01:52:44,255
+Böyle birçok asıl için düşünebilirsiniz, yine o iş kuralı, bir kapsamı içerisinde.
+
+547
+01:52:44,895 --> 01:52:48,916
+Şimdi burada, veritabanı da herhangi bir eylemde o asıl için dokunacak.
+
+548
+01:52:49,235 --> 01:52:59,395
+Böyle mi değil mi diye. Oysa o eylemi şekillendirsek, şu şartlarda şu hadise oluyorsa bu action'ı yap.
+
+549
+01:52:59,395 --> 01:53:10,815
+Yani event, condition, action, akışı olması lazım. Yani bir event oldu, o tabloya, şu tabloları, o tablonun şu niteliklerinde insert olduğu zaman
+
+550
+01:53:11,184 --> 01:53:22,623
+Event'ı biraz daha sentezledik, onu biraz daha detaylandık. İşte bu zaman, vcondition'a bak, o zaman şu assertion'u sağla mesela. İşte bu daha hafif bir yük olmuş oldu.
+
+551
+01:53:22,623 --> 01:53:32,623
+Bunun genel olarak kullanımı böyle, sintakse de gene stored procedure'a benziyor. Assertion'a göre çok daha hafif, daha flexible.
+
+552
+01:53:34,547 --> 01:53:39,547
+Böyle olmakla beraber ileride dezavantajlarından bahsedecek. O zaman gelince söylerim.
+
+553
+01:53:39,547 --> 01:53:46,547
+Burada ana hatlarıyla şeyi böyle yani mesela
+
+554
+01:53:46,547 --> 01:53:54,547
+Triggers can be activated before an event veya after an event which can serve as extra constraints.
+
+555
+01:53:54,547 --> 01:53:57,547
+Mesela şurada yaptığı şey nedir?
+
+556
+01:53:59,380 --> 01:54:07,900
+Create trigger, trigger, set now, trigger, before update of takes. Referencing diyor şu bold olanlar, keywordler.
+
+557
+01:54:10,868 --> 01:54:18,548
+Yani text tablosunda bir update ortaya çıktığı zaman update olan tupple'ları düşünün.
+
+558
+01:54:18,548 --> 01:54:21,188
+Onların yeni versiyonlarını düşünün.
+
+559
+01:54:21,188 --> 01:54:24,628
+Yani 10 tane tupple update oldu onların yeni versiyonlarını düşünün.
+
+560
+01:54:24,628 --> 01:54:27,268
+İşte o yeni versiyonlarına işaret ediyor şu.
+
+561
+01:54:27,268 --> 01:54:31,908
+Referencing new row as new row as new row.
+
+562
+01:54:31,908 --> 01:54:33,748
+Ve for each row.
+
+563
+01:54:34,228 --> 01:54:39,428
+Burada, Gramer'de bir opsiyon daha var. For each statement.
+
+564
+01:54:39,428 --> 01:54:45,428
+For each statement'da şuradaki yapacağı işlem, bütün o update olan,
+
+565
+01:54:45,779 --> 01:54:53,779
+TAPL'ların hepsi için bir şey yapacağım. Bu daha elverişli. Ama Forrest Statement'ta trigger yazmak daha zor. Biraz daha zor.
+
+566
+01:54:53,779 --> 01:55:03,779
+Diyelim bazı durumlarda ama Statement'ta yazmak gerekiyor. Zor oluyor o stili. Önceden geçen senelerde başka kitabın örneklerini kullanırken orada zor bir örnek vardı.
+
+567
+01:55:04,416 --> 01:55:27,655
+Ama bu sunuldarı ben daha hocalamıyorum. O örneği de şey yaptım yani çıkardım. Burada daha çok for each row örneği var. Sizde laboratörde bunlarla ilgili örneği yapacaksınız. For each row'u anlaması, yazması daha kolay. Burada ne yapıyor? Burada bir update statementı gelmiş. O update statementı birden çok kapılı update etmiş olabilir.
+
+568
+01:55:28,500 --> 01:55:41,779
+Değil mi? İşte bu hadise olduğu zaman, bu hadiseden önce, daha tx'de bu hamleyi yapmıyor, bu action'ı almıyor. Şunu kontrol ediyor. For each row, eğer when,
+
+569
+01:55:42,260 --> 01:56:08,900
+O, update olan tuple, eğer, onun, new row, yeni halinde, yeni halinin, great niteliği, eğer, boş ise, o zaman, burada, şey yapıyor, ona null atıyor. Yani boş bırakmıyor, null olarak belirledi. Tamam mı?
+
+570
+01:56:09,876 --> 01:56:11,876
+Yani bir şekle sokuyor yani.
+
+571
+01:56:15,155 --> 01:56:18,315
+Veya şey de yapabilirdi yani, ona izin vermeyebilir.
+
+572
+01:56:18,315 --> 01:56:22,836
+Artık o Kur'an neyse, yapmamız gereken şey deyse ona göre şekillendireceğiz burada.
+
+573
+01:56:22,836 --> 01:56:28,836
+Ama herhalde bu Event, Condition, Action'ı anladınız yani. Genel olarak form bu şekilde.
+
+574
+01:56:29,363 --> 01:56:43,363
+Trigger'ı burada tanımlıyoruz. O zaman ne zaman bu hadise olacak? Biz ne zaman TX tablosuna bir update yaptığımız zaman bu çalışacak. Assertishing gibi böyle ezbere yapılan işlemlerde o Assertion bakılmayacak yani.
+
+575
+01:56:43,363 --> 01:56:49,363
+O sisteme bir yük getiriyordu. Hatta ne dedik? 1. SQL'de Assertion yok yani. Assertion kullanamazsınız.
+
+576
+01:56:53,536 --> 01:57:03,215
+Tam tersi, TLC, ASSELT şey yok ama trigger var yani. Standart bağlayıcı olmuyor yani. Gerçek hayatta bazı şeyler değişiyor.
+
+577
+01:57:03,215 --> 01:57:07,775
+Evet, burada mesela yaptığı şey ne?
+
+578
+01:57:12,787 --> 01:57:14,787
+Şöyle bakarsanız
+
+579
+01:57:17,188 --> 01:57:20,188
+Bir kere, Trigger'ın ismi
+
+580
+01:57:21,188 --> 01:57:25,787
+Tx tablosunda, great update olduktan sonra
+
+581
+01:57:27,087 --> 01:57:28,087
+Tamam mı?
+
+582
+01:57:29,087 --> 01:57:31,087
+Bu, Tx tablosunda
+
+583
+01:57:31,287 --> 01:57:33,487
+Yeni role, eski role
+
+584
+01:57:33,787 --> 01:57:35,787
+Yani, update gelmiş olan
+
+585
+01:57:36,372 --> 01:57:44,212
+Hex role'larından, işte 10 tane, tuple update geldi mesela, işte onlar. For each role, her bir role'a bakıyorum.
+
+586
+01:57:44,692 --> 01:57:49,572
+Bunları şöyle kodladım. nRow, altRow, newRow, altRow.
+
+587
+01:57:49,672 --> 01:57:50,572
+Bunları kodladık.
+
+588
+01:57:51,052 --> 01:58:04,212
+Sonra eğer newRow grade f'den farklıysa veya grade'i null'dan farklıysa ve altRow f ise ve altRow null ise.
+
+589
+01:58:04,952 --> 01:58:09,912
+Demek ki bu ders önceden ya almamış hiç null,
+
+590
+01:58:11,123 --> 01:58:14,844
+Veya alıyor olduğu sırada null idi.
+
+591
+01:58:14,844 --> 01:58:24,243
+Veya geçen senelerde almış f, almış bu şartlarda. Yeni hali ise, new row, new row grade f'ten farklı yani geçtiyse.
+
+592
+01:58:24,243 --> 01:58:28,243
+Veya new row null'dan farklı ise.
+
+593
+01:58:28,243 --> 01:58:33,923
+Tamam mı? f'ten farklı ve null'dan farklı ise.
+
+594
+01:58:34,195 --> 01:58:42,595
+İşte bu şartlarda ne yapıyor? Student'daki total krediti, ki bu drive olması lazım demiştik.
+
+595
+01:58:42,735 --> 01:58:52,015
+Çünkü total kredit, böyle işte bu güncellemeler geldikçe, yani öğrenci dersi alıp geçtikçe bu total kredit orada uyuyor.
+
+596
+01:58:52,595 --> 01:58:58,315
+Değişmeyecek. İşte bu trigger ile ne yapmış olduk? Bunu sağlamış olduk. Consistence'ni sağlamış olduk.
+
+597
+01:58:58,996 --> 01:59:07,176
+Anladınız mı? Takip edebilirsiniz mi? O total credit, student tablosundaki total credit, öğrencinin toplam şu andaki kredisini ifade ediyor.
+
+598
+01:59:07,896 --> 01:59:13,856
+O zaman öğrenci ders aldıkça, o total creditin güncellenmesi lazım. İşte bu trigger onu yapıyor.
+
+599
+01:59:14,816 --> 01:59:22,776
+Ne zaman ki biz TX'te öğrencinin aldığı derslere notu girdik, işte o zaman ne oluyor?
+
+600
+01:59:24,275 --> 01:59:32,916
+Mesela, FOREACH ROE, HER BİR ROE için, O öğrencinin, ŞEYİ, TOTAL KREDITİ, HESAPLANIYOR, TAKRAR ŞURDA.
+
+601
+01:59:32,916 --> 01:59:43,235
+ŞURDA, ŞURDA MESELA, BAKIN, HER BİR, NROE, COURSE ID, COURSE ID'den, KREDISİ ÖĞRENİLDİ.
+
+602
+01:59:43,235 --> 01:59:45,555
+COURSE TABLOSUNDA, KREDI BİLGİSİ VAR.
+
+603
+01:59:45,555 --> 01:59:51,395
+Yani, bu dersten, madem geçmiş, HEPTEN, FARKLIN, ALDAN FARKLIN, O ZUMAN, O DERSİN KREDISİNİ,
+
+604
+01:59:51,551 --> 01:59:55,951
+NeuroCourseID'ye eşit olan course'dan bunu aldı.
+
+605
+01:59:55,951 --> 02:00:04,511
+Course, CourseID. İşte kredit bilgisini total kredite ekleyerek total kredite arttırmış oldu yani.
+
+606
+02:00:04,511 --> 02:00:14,911
+Güzel bir örnek bu yani. Tam böyle hem ne çok zor ne çok kolay, tam orta. Yani bu sorguyu, mesela şeyi iyice anlamak lazım yani.
+
+607
+02:00:17,076 --> 02:00:29,476
+Esasında hiç total credit olmasa, ben öğrencinin uygulama total kredisini istese, o daha mesela elverişli, daha iyi yani.
+
+608
+02:00:30,296 --> 02:00:37,636
+Çünkü bu bile biraz sisteme yük getiriyor. Çünkü ne zamanki teksti bir update oldu, o zaman bu trigger tetiklenecek yani.
+
+609
+02:00:38,056 --> 02:00:43,016
+O öğrenci için güncelleme yapacak yani.
+
+610
+02:00:46,036 --> 02:01:04,476
+Evet. Statement seviyesindeki trigger'lar da işte dediğiniz gibi instead of executing a separate action for each affected role, a single action can be executed. Bu for each statement'lar daha efficient esasında ama yazması bazen daha zor.
+
+611
+02:01:05,043 --> 02:01:07,364
+Bazen daha zor. Bununla ilgili örnek yok burada.
+
+612
+02:01:08,644 --> 02:01:10,824
+Yani merak edenlere şey yapabilirim.
+
+613
+02:01:10,923 --> 02:01:13,884
+Veya siz de araştırın, Forest Statement'la ilgili sorgulara.
+
+614
+02:01:14,203 --> 02:01:15,583
+Örneklere bakın mesela.
+
+615
+02:01:16,144 --> 02:01:19,644
+Kitapta egzersiz arasında olabilir yani.
+
+616
+02:01:19,684 --> 02:01:24,284
+Ben de tam şey yapmadım ama bende de var böyle bazı zor olanlar, örnekler var.
+
+617
+02:01:25,144 --> 02:01:27,703
+Merak edenlerle paylaşabilirim yani.
+
+618
+02:01:29,076 --> 02:01:35,395
+Burada trigger kullanmayla ilgili bazı tehlikelerden veya dezavantajlarından bahsediyor.
+
+619
+02:01:35,395 --> 02:01:46,115
+Mesela, yani burada bazı kısıtlarla biz yabancı anahtarı şekillendirebilir idik.
+
+620
+02:01:46,115 --> 02:01:53,796
+Mesela onDrillCascade. Bunu ben trigger ile yazmaya kalksam bu gereksiz olacak. Çünkü zaten bu yapı var yani.
+
+621
+02:01:57,011 --> 02:02:13,331
+Burada mesela yabancı anahtar silindiği zaman, yabancı anahtarın işaret ettiği tabloda veri silindiği zaman, ona işaret eden yabancı anahtarlar da, onlar da silinsin.
+
+622
+02:02:14,631 --> 02:02:24,471
+Bunu ben on delit kaskatla o yabancı anahtarı tanımlarken, bu anahtar kelimelerle bunu şekillendirebilirim.
+
+623
+02:02:24,768 --> 02:02:36,447
+Bu bana o data definition'ın, SQL'in sağladığı bir imkan. Ama biz bunu kullanmazsak, bunu trigger ile yapsak yapabiliriz. Ama daha uzun bir yol, daha tehlikeli bir yol olmuş oldu yani.
+
+624
+02:02:36,447 --> 02:02:48,887
+Veya hem bu var hem de trigger yazdık. Yine gerekse olur. Buradaki şeyi anladınız mı? Yani tam şununla ilgili bir örnek yazabiliriz. Yani on the task at. O zaman nasıl bir trigger olacak bu?
+
+625
+02:02:49,007 --> 02:03:13,167
+Yani, işte bir tabloda bir silme olduğu zaman, o tabloya işaret eden, yabancı anahtarı olan tabloları bulacağım. Tamam mı? O tablolarda da o silinen kaydı bulacağım yani. Ve onu sileceğim. İşaret ettiği tablolarda da o veriyi sileceğim. 10 dilit kaskat diyor. Burada bunu yapabilirim yani.
+
+626
+02:03:14,547 --> 02:03:19,547
+Eğer on dilit kaskat yoksa, varsa da yaparım gereksiz yere yani.
+
+627
+02:03:19,547 --> 02:03:23,547
+Bu örnek yapılabilir mesela.
+
+628
+02:03:23,547 --> 02:03:26,547
+Böyle örnektir.
+
+629
+02:03:26,547 --> 02:03:29,547
+Trigger yazabilirsin. Şu manayı veya on dilit update.
+
+630
+02:03:31,315 --> 02:03:45,595
+Yani işaret ettiği tabloda bir nitelik eğer primal 2 değiştiyse, primal 2 update olduysa o tabloya işaret eden diğer tablolardaki yabancı anahtarlar da update olacaklar.
+
+631
+02:03:47,935 --> 02:03:52,635
+Bu update otomatik olarak update olması. Tam bir trigger örneği mesela.
+
+632
+02:03:53,315 --> 02:03:57,327
+Her ne kadar biz bunu 10 dilit kaskatla veya 10 dilit...
+
+633
+02:03:57,328 --> 02:04:08,828
+OnUpdate, Cascade falan onları yapabiliyorsak da bunu trigger ile de yapabiliriz. Yani muhtemelen arkada built-in olarak bu trigger ile gerçekleniyor yani arkada sistem tarafında.
+
+634
+02:04:10,828 --> 02:04:19,828
+Evet, burada diğer böyle veritabanının zaten mevcut olarak...
+
+635
+02:04:20,340 --> 02:04:48,059
+kendi içerisinde yaptığı bazı şeyler var. Mesela replication, materialized view gibi mesela bu yapılar var. Bunların olduğunu bilmeden bunlara benzer işlevleri yapmaya kalkarsak, yani trigger'la, o zaman bu hem gereksiz bir kodlama olacak, hem de bu yapılarda da çakışacak yani bu manalarla da çakışacak. Öyle problemler var.
+
+636
+02:04:48,340 --> 02:04:57,840
+Yine şurada trigger'ın böyle kaskat bir şekilde başka trigger'ları tetiklemesi gibi mesela.
+
+637
+02:04:58,159 --> 02:05:00,460
+Yani birçok trigger yazdıysak böyle tabanında.
+
+638
+02:05:01,300 --> 02:05:07,279
+Biraz böyle hadisenin sonunu bilemeyebiliriz.
+
+639
+02:05:07,800 --> 02:05:10,119
+Çünkü o trigger başka şeyleri tetikleyecek.
+
+640
+02:05:10,720 --> 02:05:12,980
+Onlar da başka trigger'ları tetikleyebilir yani.
+
+641
+02:05:13,239 --> 02:05:14,659
+Böyle tehlikeli durumlar olabilir.
+
+642
+02:05:15,444 --> 02:05:28,564
+Gayri ihtiyar bir şekilde tam dikkat edilmezse. Bunlarla ilgili örneklere bakabilirsiniz. Burada çok onları detaylandırılabilir. Ama bilinen tehlikeli şeyler bunlar.
+
+643
+02:05:28,564 --> 02:05:41,564
+Evet, böylece kavramsal olarak ana hatlarıyla avantaj, dezavantajları noktasında
+
+644
+02:05:43,667 --> 02:05:58,167
+Uygulama programından veri tabanına bağlanma, GDB'si ve dinamik SQL, statik SQL gibi esaslarla veri tabanına bağlanma, oradan veri çekmeyle ilgili kavramlarını gördük.
+
+645
+02:05:58,463 --> 02:06:07,103
+Sonra fonksiyonlar, stored procedureleri gördük. Onların genel sintaksı, kremeli, avantajı, dezavantajı.
+
+646
+02:06:07,103 --> 02:06:18,304
+Ve yine bunlardan ziyade yine merkezde olacak şekilde ama C ile veya Python ile, Java ile yazılmış.
+
+647
+02:06:18,764 --> 02:06:22,103
+Fakat veri tabanıyla beraber compile edilen veri tabanının...
+
+648
+02:06:22,703 --> 02:06:36,703
+Kaynaklarını kullanan, biraz daha advanced uygulama programcı gerektiren ve biraz daha security açıkları olan yapılardan bahsettik. Bunun ismine ne dedik? External...
+
+649
+02:06:46,355 --> 02:06:59,195
+Example, external language routines, external language, harici dillerle bunu yapmayı öğrendik.
+
+650
+02:06:59,755 --> 02:07:04,996
+Veya işte gördük o kavramları. Ve gene trigger'lerden bahsettik.
+
+651
+02:07:05,695 --> 02:07:09,295
+Bunlarla ilgili birçok örnek yapabilirsiniz. Bence yapın.
+
+652
+02:07:11,444 --> 02:07:14,844
+Bunlarla ilgili avantajlı zavantajları araştırın.
+
+653
+02:07:14,844 --> 02:07:17,644
+Şimdi bu hafta burada bitirelim, bırakalım.
+
+654
+02:07:17,644 --> 02:07:28,844
+Haftaya kavramsal tasarım, ER, EIR ve onların kavramsal tasarımın ilişkisel model tablolarına dönüştürülmesi, onlardan bahsedeceğiz.
+
+655
+02:07:28,844 --> 02:07:35,444
+Böylece 5. haftayı bitiriyoruz. 6-7 haftada kavramsal tasarımını bitirmiş olacağız. Yani sınava kadar.
+
+656
+02:07:35,891 --> 02:07:44,891
+SQL, ilişkisel model, karnımsal tasarım, veritabanı dersinin %60-70'i bitmiş olacak.
+
+657
+02:07:45,891 --> 02:07:49,891
+Evet arkadaşlar, bakın burada şu siteleri de mutlaka bence bakın.
+
+658
+02:07:50,591 --> 02:07:59,691
+Bundan sonraki şeyler için buraya yazmışım ama, burada da şu ana kadar gördüğümüz bütün meseleler bu iki sitede çok güzel.
+
+659
+02:08:00,435 --> 02:08:10,435
+Çok güzel örnekler var. Bunlar zaten PGSQL'in, official dokumentasyonunda da olan şeyler, referanslar yani.
+
+660
+02:08:10,435 --> 02:08:26,283
+Evet, sorumuz var mı? Peki, teşekkür ederiz dinlediğiniz için. Haftaya görüşmek üzere. Arkadaşlar, bitiriyorum, kapatıyorum bağlantıyı. Sorunuz yoksa.
+
+661
+02:08:37,203 --> 02:08:38,243
+Size de iyi günler.

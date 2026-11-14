@@ -1,0 +1,2291 @@
+1
+00:01:08,115 --> 00:01:10,215
+Ses kontrol desin geliyor mu?
+
+2
+00:01:22,036 --> 00:01:48,036
+Evet, ekran paylaşımı yaptım. Bugünkü dersimizde ilk olarak normalizasyon konusunu işleyeceğiz. Fakat bizim kendi ders kitabımızdaki chapter 7 galiba, oradaki sunular çok hoşuma gitmedi. Yani anlatması zor oluyor. Biraz teorik bir tarzı var. O yüzden daha böyle...
+
+3
+00:01:48,500 --> 00:02:03,500
+istifadeli olması için daha önce kullandığım kaynaktaki sınırları size aktaracağım. Bu çok daha pratik bir çözüm öneriyor. O yüzden daha faydalı olacaktır.
+
+4
+00:02:12,948 --> 00:02:40,408
+Şimdi, bu da Elmasin'in kitabı. Bu da, yani, 2022 baskılı bir kitap. Gene böyle, 7. kaçıncı, 5. edişim diyor ama bayağı 7. edişim şu anda var. Bu 5. edişinin ders notları. Yani, her harikarda evvelki kitabımız kadar böyle güncelliğini koruyan bir kitap. Şimdi, bu konu, fonksiyonel bağımlılıklar ve normalizasyon.
+
+5
+00:02:40,788 --> 00:02:44,427
+İlişkisel model tasarımları için bir konu.
+
+6
+00:02:46,088 --> 00:02:50,228
+Yani olayın bir teori kısmı var, oldukça ağır.
+
+7
+00:02:50,228 --> 00:03:04,687
+Ama biz burada mümkün olduğunca, bazı böyle guide'lar, guide'lar, işte bazı böyle teknikler esaslar çerçevesinde iyi bir tasarım yapma için bazı yollar.
+
+8
+00:03:05,204 --> 00:03:25,204
+göstereceğiz, onları paylaşacağız. Bunların da içini doldurmaya çalışacağız mümkün olduğunca. Çünkü problem tabii oldukça karmaşık. Çünkü elimizde bir veri yığını var. Bu veri yığını ile ilgili birçok nitelik var.
+
+9
+00:03:25,584 --> 00:03:34,084
+Mesela düşünsek ki, biz üniversite veritabanını üzerinde çalıştık, şimdiye kadar değil mi? Sınavda da onunla ilgili sorduk zaten.
+
+10
+00:03:34,944 --> 00:03:42,804
+Gerçi şeyde de, laboratuvarda da bir company veritabanı, bu kitabın veritabanı o da. Eskiden bunu kullandığımız için o laboratuvarda o kaldı.
+
+11
+00:03:43,264 --> 00:03:53,183
+Company veritabanı. Orada mesela birçok tablo var. 8-10 tane tablomuz var. Bizim şu anda kullandığımız kitaptaki üniversite veritabanı da da gene öyle.
+
+12
+00:03:53,584 --> 00:03:56,264
+İşte öğrencilerin ders kayıtları ile ilgili maalesef.
+
+13
+00:03:57,264 --> 00:04:03,063
+Şimdi oradaki bütün nitelikleri tek bir tabloda, yani tek bir dosyada toplayabilirdim.
+
+14
+00:04:05,104 --> 00:04:08,283
+Yani niye onları dağıtayım birçok tabloya? Öyle değil mi?
+
+15
+00:04:10,228 --> 00:04:37,228
+Hepsi tek bir tabloda olsa, hem JOIN yapmaktan kurtulurum. Şimdi burada SQL'de bir de JOIN kurgusu yapmam gerekiyor. SQL'in ona göre bir grammari sintaksı oluyor. Bir de hakikaten tablolar dosyalar olarak saklanıyor arkada. O dosyaların açılıkta öyle birleştirilmesi de gerçekten sistem için bir yük yani. Hatta no SQL veri tabanları için en önemli...
+
+16
+00:04:38,228 --> 00:04:39,867
+şey,
+
+17
+00:04:40,915 --> 00:04:52,696
+Motivasyonlardan bir tanesi bu. Yani JOIN'in maliyetinden dolayı bunları bazı kurallara, bahsedeceğim kurallara uymayalım.
+
+18
+00:04:53,915 --> 00:05:07,915
+Bazı şeylerden ödün vererek, yani doğruluktan mesela, integrity denilen genel manada, ondan bir parça ödün vererek hızlı çalıştıralım gibi bir yaklaşım var. Elbette bir dayanak noktası var yani.
+
+19
+00:05:08,915 --> 00:05:19,035
+Ama demek istediğim, demek ki böyle join, tabloyu böyle dağıtmak, bilgiyi böyle farklı tablolara dağıtmak, demek ki böyle bir dezavantajı var.
+
+20
+00:05:19,635 --> 00:05:22,375
+Fakat bunu niye yapıyoruz? Şimdi ondan bahsedeceğim.
+
+21
+00:05:23,435 --> 00:05:34,975
+Ve o zaman madem bunu tamamıyla tek bir noktada toplamak, tek bir dosyada toplamak, bir takım integrity problemlerine sebep oluyor, şimdi onu göreceğiz.
+
+22
+00:05:36,915 --> 00:05:44,075
+Birçok tabloya böyle dağıtmak, ufak ufak tablolara dağıtmak, birçok join'e sebebiyet veriyor.
+
+23
+00:05:44,315 --> 00:05:50,915
+Şimdi biz onları birleştireceğiz. O zaman ortasında bir yol tutturmamız lazım. Yani bir tasarımda bir tuning.
+
+24
+00:05:51,375 --> 00:05:54,495
+Tasarım noktasında bir tuning, ayar yapmamız lazım.
+
+25
+00:05:54,656 --> 00:05:57,995
+Tabii bu böyle iki kere iki dört gibi bir şey değil.
+
+26
+00:05:58,515 --> 00:06:01,776
+Zaten kavramsat tasarımın başından beri söylediğimiz gibi.
+
+27
+00:06:03,055 --> 00:06:06,455
+Bu biraz böyle bir meleke, bir sanat diyelim.
+
+28
+00:06:07,755 --> 00:06:13,515
+Yani hem mühendislik tarafı var elbette, hem de bir tasarım melekesi, bir tecrübe gerektiriyor.
+
+29
+00:06:13,515 --> 00:06:19,375
+Yani designerlar, designer, tasarımcılar her meslekte ayrı bir...
+
+30
+00:06:19,375 --> 00:06:36,216
+ekol yani ayrı bir tarzları var. Hemen bir işe girdiğimiz zaman designer olarak girmiyoruz çoğu zaman. Bir tecrübe gerekiyor. Yani sistemi iyi tanımak gerekiyor vesaire. Yani bu noktada daha önce kavramsat aslamında dediğim gibi
+
+31
+00:06:37,012 --> 00:06:44,592
+Böyle elimizde deterministik tool'lar yok yani. O yüzden bir takım böyle heroistiklerle bu ayarı yapmaya çalışıyoruz.
+
+32
+00:06:44,711 --> 00:06:58,672
+Aynı physical design da böyle zaten. Yani physical design ile kastettiğimiz bu ders kapsamında değil ama yani bu dosyaların tipleri ne olacak, bu dosyalarda hangi indeksler, hangi veri yapıları, hangi algoritmalar kullanılacak, içerisi çok karmaşık yani.
+
+33
+00:06:58,672 --> 00:07:04,711
+Bunlarla ilgili böyle kesin her durum için şu gibi böyle kesin tool'lar.
+
+34
+00:07:05,012 --> 00:07:18,232
+yok yani. Şimdi bu ders kapsamı içerisinde biz tasarım noktasında bahsedeceğimiz için demek ki olayın ihtiyacı ve karmaşıklı noktasında bunlar söylenebilir.
+
+35
+00:07:18,792 --> 00:07:31,872
+Şimdi bu ders de bu chapter'ı inceleyeceğiz. Elmas Sinemati'nin kitabından. İlk olarak burada bazı böyle informal,
+
+36
+00:07:32,564 --> 00:07:33,144
+Yani
+
+37
+00:07:34,516 --> 00:07:45,735
+Common sense, yani genel manada, bir veritabanı tasarımcısı, genel olarak nasıl bir yaklaşımlarla, informal olarak yani, ne gibi yaklaşımlarla bu tasarım yapması lazım, değil mi?
+
+38
+00:07:46,396 --> 00:08:00,516
+Onunla ilgili bazı konu başlıklarımız var. Burada işte niteliklerin, semantiğinin net olması ve fazladan bilgi, tekrar bilgi içermemesi ve null veriyorlar.
+
+39
+00:08:02,516 --> 00:08:14,975
+Bu bölüme sebebiyet veren, gereksiz yer kaplayan veya bazı böyle ambiguity durumlara sebebiyet veren Null'ların olmamasından bahsedeceğiz.
+
+40
+00:08:15,115 --> 00:08:26,896
+Olmaması gerektiğinden ve Spurious denilen bu tabloları parçalamayı böyle çok kontrolsüz, dikkatsiz yaparsak,
+
+41
+00:08:26,896 --> 00:08:30,516
+bu parçaladığım tabloların birleştirilmesinin...
+
+42
+00:08:30,516 --> 00:08:39,516
+Şimdi, böyle stories denilen olayı belirsizliğe götüren, fazladan kayıtlar ortaya çıkıyor.
+
+43
+00:08:39,516 --> 00:08:48,516
+O yüzden bu decomposition'ı, yani parçalamayı, belli bir kurala göre yapmamız gerekiyor.
+
+44
+00:08:48,516 --> 00:08:55,183
+Evet, bu informal gidişten sonra, bazı böyle formal...
+
+45
+00:08:55,183 --> 00:09:05,843
+Yani biz mühendis olarak, mühendis adayı olarak, mühendis olarak ne istiyoruz böyle? Elimizde güzel algoritmalar olsun, konular olsun. Bunu yapmaya çalışıyoruz. Problemi çözelim yani.
+
+46
+00:09:06,163 --> 00:09:33,743
+Elbette biraz önceki dediğim tamamıyla art dedim ya, science art ikisinin karışımı. Science tarafı da var elbette. O yüzden bir parça algoritma var, bir tekstik yöntemler var ama işte tam mutlak olarak sonuca götürmüyor yani o manada. O yüzden işte bu ikinci kısmında da biraz böyle bazı kurallar var. Bazı elimizdeki kullanacağımız malzemeler var. Orada da fonksiyonel bağımlıdaki tanımımız var. Bunu zaten bir parça yapmıştık.
+
+47
+00:09:34,163 --> 00:09:48,943
+Onların inference rule'ları var. Yani bir takım böyle Armstrong kuralları denilen bir takım kurallar var. O kurallardan ürettiğimiz başka böyle fonksiyonel bağımlılık seti ortaya çıkacak.
+
+48
+00:09:49,423 --> 00:09:59,984
+Onlarla ilgili birkaç tanım var. Bu çok zor değil yani ama zor olan bir şeyin başlangıcı yani esasında. İşte o teorik olan şeylere çok girmeyeceğiz. O diğer chapter'da anlatılıyor.
+
+49
+00:10:00,000 --> 00:10:06,460
+Bizim ders kitabında da hepsini karıştırmış. O yüzden o sunuyu ben bıraktım artık.
+
+50
+00:10:07,139 --> 00:10:14,240
+Ezanı başka kitaba geçmek istemiyordum. Çünkü bu sefer karışıyor terminoleci ama çok karışmadı.
+
+51
+00:10:14,240 --> 00:10:24,379
+Bayağı içime sindi bu sefer. Bir de gene bu kitabın diğer karnavsal tasarımla ilgili bir chapter'ını daha paylaşmıştım sizinle.
+
+52
+00:10:24,439 --> 00:10:28,000
+Orada da karnavsal tasarım örnekleri vardı. O yüzden elinizde...
+
+53
+00:10:28,000 --> 00:10:34,019
+İşte böyle kavramsal tasarımla yani ER ile normalizasyonla ilgili birçok örnek olmuş oldu.
+
+54
+00:10:34,419 --> 00:10:59,859
+Bunu söylüyorum çünkü sınavda ders sonunda bahsedeceğim. Yani tasarımla ilgili çok, yani o soruyu yapan hemen hemen yok yani. 200 kişi arasında. Tek tık yani böyle. Yani ya o konu hiç çalışmadınız, ilişkisel model tasarımından bahsediyorum, İA diyagramından. Ya da yani hemiyet verilmiyor o konuya. Oysa çok önemli ve çok da zor değil yani. Orada bir takım kurallar var.
+
+55
+00:11:00,340 --> 00:11:10,980
+Maalesef o soru öyle yani. Şimdi o konunun devamı bu da yani. İlişkisel model, ER diyagramı yapıyoruz. ER'dan sonra ne yapıyoruz?
+
+56
+00:11:10,980 --> 00:11:22,439
+İlişkisel model tablolarını oluşturuyoruz. Bir takım dönüşüm kuralları var. O kurallarda böyle soğuk kurallar değil. Hepsinin içi dolum bir manası var yani. Burada anlatmaya çalıştım.
+
+57
+00:11:23,480 --> 00:11:26,439
+Onun manasını anlayın yani. Çok zor değil.
+
+58
+00:11:26,964 --> 00:11:34,864
+İşte onları yaptıktan sonra da bir de normalizasyon aşaması var. Yani o tabloda oluşturduk. Şimdi o normalizasyon aşamasındayız.
+
+59
+00:11:37,620 --> 00:11:55,059
+Şimdi ilk olarak burada bu normalizasyon denediğimiz şey de 5 tane normal forma. Yani normal kelimesi, bu bizim yaptığımız o tasarımı, yani kavramsal tasarım veya işte bir deyin fırtınası, kavramsal tasarım kağıda döktük, ondan sonra bunları tablolara dönüştürdük.
+
+60
+00:11:55,059 --> 00:12:05,620
+Ondan sonra bunu biraz daha böyle vizyonunu diyelim veya görüntüsünü, onu biraz daha mükemmeli yaklaştırmam lazım. Bunun için de bazı böyle formlar...
+
+61
+00:12:05,620 --> 00:12:20,120
+Normal formlar var. Yani herkesin kabul ettiği doğruluğu arttıran, performansı da göz önüne alan, çok fazla parçalamayan tabloları ama belli bir kıvama getiren bazı kurallar zinciri var.
+
+62
+00:12:20,724 --> 00:12:29,604
+Bunlar 1NF, 2NF isimli, böyle 5NF'ye kadar devam ediyor. Arada bir de BCNF var, Boyz Code, Normal Form var. Bunlardan bahsedeceğiz.
+
+63
+00:12:29,724 --> 00:12:39,464
+Bunu da bu kitap da iki kategoriye ayırmış, gayet de güzel olmuş. Bir tanesi ilk olarak ilk maddede gördüğümüz, 3. kısımda gördüğümüz, Restrictive.
+
+64
+00:12:39,464 --> 00:12:45,464
+Yani sadece bir tane primary key'imiz var, o primary key'i esas alarak...
+
+65
+00:12:46,163 --> 00:12:56,663
+Yani primary key de fonksiyonel bağımlılık tabii var, sanımlıca da o primary key esas alarak bir 2NF, 3NF tanımımız var.
+
+66
+00:12:57,043 --> 00:13:16,163
+Üçüncü, dördüncü madde ise general, daha genel manada. Yani çünkü bizim tablomuzda bir tek primary key yok. Candidate key de var. Candidate keyler de var. Bu primary key'i biz candidate key'lerin arasından seçtik esasında. O zaman o candidate key'ler de potansiyel bir probleme sebebiyet veriyorlar.
+
+67
+00:13:25,043 --> 00:13:27,823
+Gerekli olan malzemeler bir araya gelmiş oluyor.
+
+68
+00:13:29,103 --> 00:13:39,063
+Şimdi gerek bu kitapta gerek diğer bütün kitaplarda, veritabanı noktasında tasarım pratik olarak BCNF'ye kadar yapılıyor.
+
+69
+00:13:39,508 --> 00:13:59,908
+Olayın bir de 4NF, 5NF'si var ki o da teorik. Kitapta kalmış sadece. Yani ben de bayağı merak ettim, araştırdım. Yani gerçek hayatta 4NF'yi, 5NF'yi takip edip de onu tatbik etmeye çalışan çok yok. Çünkü oldukça peculiar kelimesi geçiyor. Yani oldukça garip.
+
+70
+00:14:00,207 --> 00:14:11,927
+Oldukça böyle şey, anlaşılması zor. Bir problem var 4NF, 5NF'de. Sadece birkaç cümle söylerim belki sonunda. Niye garip olduğuna dair.
+
+71
+00:14:11,927 --> 00:14:23,927
+Ama demek ki derslik maksadımız 1, 2, 3NF ve BCNF formlarını öğrenmek. Yaptığımız o tasarımı, ilişkisel model tablolarını bu formlara dönüştürmek.
+
+72
+00:14:24,868 --> 00:14:27,927
+Burada tabii yaptığım o, şu ana kadar yaptığımız o ortaya...
+
+73
+00:14:28,207 --> 00:14:47,707
+ortaya çıkan ER'dan sonra ortaya çıkardığımız ilişkisel model tabloda böyle çok garip, aldır ködür başka bir şey değil, dönüşmüyor. Orada bir ince bir ayar yapıyorum yani. Bazı tabloları biraz daha parçalamam gerekiyor yani. Mesele bu. Hani ne hayal edeceğiz şimdiden desek, böyle tasarımımız yaptım, tasarım böyle çok garip bir hale gelmiyor yani.
+
+74
+00:14:49,043 --> 00:15:04,363
+Orada bazı böyle şeyler yapıyoruz, değişiklikler yapıyoruz. Şimdi ilişkisel model tasarımda dediğimiz zaman böyle, bakın perfect değil yani, good bir tasarım tutturmaya çalışıyoruz. Design, good olması tatminkar yani.
+
+75
+00:15:05,940 --> 00:15:13,320
+Ve bunu böyle biz ilişkisel model tabloları üzerinde yapıyoruz. Yoksa viewlar üzerinde değil.
+
+76
+00:15:13,600 --> 00:15:20,360
+Çünkü bir gerçek manada bir veritabanımız var, tablolarımız var. Bir de dış dünyaya açılması var bunun.
+
+77
+00:15:21,280 --> 00:15:26,340
+Görmüştük view manasını. O dış dünyaya açılmasındaki o viewlar çok sayıda olabilir.
+
+78
+00:15:27,240 --> 00:15:33,940
+Onlardan bahsetmiyoruz yani. Onlar sadece logical şeyler. Biz böyle base tablolarımız var.
+
+79
+00:15:33,940 --> 00:15:40,660
+Bazı dosyalar, onlar kaç tane olacak, onların niteliklerinin belirlenmesi üzerine tasarım yapıyoruz.
+
+80
+00:15:40,660 --> 00:15:43,700
+Yani burada biraz daha netleştirmiş olduk yani böylece.
+
+81
+00:15:44,015 --> 00:15:53,615
+Şimdi, burada birtakım informal, böyle guide'larımız var. Ondan sonra daha formal konseptlerden bahsedeceğiz.
+
+82
+00:15:53,615 --> 00:16:00,895
+Ve bu formalin daha da formalı var. Yani bu chapter'da geçmiyorsa dediğim gibi. Bunların belli bir algoritma ile çözümlenmesi var.
+
+83
+00:16:00,895 --> 00:16:06,175
+Onun notasyonu falan da oldukça ağır yani. O yüzden ona girmeyeceğiz yani.
+
+84
+00:16:06,384 --> 00:16:08,043
+O chapter 11'de geçiyormuş.
+
+85
+00:16:08,823 --> 00:16:15,144
+Şimdi ilk olarak böyle ilişkisel model tasarımımızda semantiğin güçlü olması lazım.
+
+86
+00:16:15,384 --> 00:16:23,884
+Yani bir tasarım yaparken tablo isimler olsun, nitelikler olsun, düzgün isimler olması lazım.
+
+87
+00:16:24,124 --> 00:16:28,723
+Bir isim mesela bir tablodaki başka tabloda geçmemesi lazım.
+
+88
+00:16:29,124 --> 00:16:31,764
+Yani ki karışıklar sebebet vermesin mesela.
+
+89
+00:16:32,916 --> 00:16:40,876
+Ve gene bir mana, bütünlük ifade eden, bir mana, bir bütünlük ifade etmesi lazım tablomuzun.
+
+90
+00:16:41,235 --> 00:17:03,676
+O tabloda birden çok böyle varlık gözükmemesi lazım. Mümkün olduğunca. Çünkü bazen yani gözüküyor, karışıyor, karışması gerekiyor yani. Bir tek olması gereken başka tabloları olan yabancı anahtarlar. Mesela employee tablomuz var. Veya işte student tablomuz vardı mesela. O student'in departmanları var.
+
+91
+00:17:04,211 --> 00:17:31,911
+Şimdi ben o departmanın bütün detaylarını student detaylarıyla birleştirsem, bir tane instructor, student, işte department tablosu oluştursam, işte o zaman problem başlıyor. Niye başlıyor şimdi onu göreceğiz. Ama bir şekilde o kurguyu yapabilmek adına da student tablosunda bir tane department niteliği koydum. Yabancı anahtarı oldu ya, hatırlıyorsun. Aynı şey instructor'da da var. Buna çok var yani tasarımın içerisinde. Course'da var mesela, section'da var.
+
+92
+00:17:32,211 --> 00:17:53,531
+Hangi departmandaysa, course'un orantyana departmanı koyduk yani. Mesela. Veya section'da course'a işaret eden bir yabancı anatağı var. Yani bundan kaçmak mümkün değil. Tamamıyla course'la ilgili bilgileri, section'la ilgili bilgileri bırıklayamam yani. Ama burada yabancı anata ihtiyaç neyse orada durmamız gerekiyor. Burada kabaca onlardan bahsediyor bugün.
+
+93
+00:18:00,211 --> 00:18:03,112
+attributes should be kept apart as much as possible.
+
+94
+00:18:03,612 --> 00:18:05,652
+Yani cümlelerden de anlaşılıyor zaten.
+
+95
+00:18:06,071 --> 00:18:08,351
+Böyle keskin yapmaması çok mümkün olmuyor.
+
+96
+00:18:09,271 --> 00:18:13,831
+O zaman, design, aşama, detken ve explain is the relation by relation.
+
+97
+00:18:14,911 --> 00:18:20,491
+Her bir varlığı, her bir olguyu, kendi içerisinde tanımlayabileceğimiz bir şey olması lazım.
+
+98
+00:18:20,491 --> 00:18:24,491
+Mesela, buradaki kullanan halinde, Batur adı da, company veritabanı.
+
+99
+00:18:24,751 --> 00:18:33,751
+Burada mesela o kampiyon veritabanından bir kısmı gözüküyor. İşte employee desek, işte employee'de bu nitelikler var bakın, foreign key var burada.
+
+100
+00:18:34,996 --> 00:18:57,396
+Yani bunu ben güzelce burada tarif edebilirim. Hiç muğlak bir şey yok. Burada saklamam gereken işçilerin şu bilgileri olması lazım. Bu işçiler bazı departmanlarda çalışıyorlar. Departmanlar için de şu bilgiler olması lazım. İşte department number var, name var. Bir de her departmanın bir yöneticisi var.
+
+101
+00:18:57,940 --> 00:19:08,980
+Yöneticisi var. O zaman burada yöneticisi, employee niyetinde var olan bir şey. Oraya yabancı an attırılması lazım. Mesela, işte departmanlarımızın lokasyonları var.
+
+102
+00:19:10,059 --> 00:19:18,500
+Bunda böyle bir tablo yaptık. Mesela, projelerimizle ilgili, yani böyle, şimdi uzatmayayım, bunu düzgün bir şekilde anlatabilirim yani.
+
+103
+00:19:18,640 --> 00:19:24,839
+Veya düzgün bir şekilde bu gereksinim listesinden bunu oluşturabilirim yani. İkisi arasında dönüşümü rahat bir şekilde yapabilirim.
+
+104
+00:19:26,291 --> 00:19:48,611
+İşte burada da bir state, sample bir data var. Bir andaki bir instance var veritabanımızın. Şimdi gelelim burada eğer bazı tabloları böyle şekilde düzgün yapamazsam, bot bir tasarım yapamazsam ortaya bazı tekrarlar çıkacak.
+
+105
+00:19:48,943 --> 00:19:56,783
+Ve burada ilk söylenebilecek şey, o tekrarların ortaya çıkardığı gereksiz yer kaybı olacak.
+
+106
+00:19:56,783 --> 00:19:58,283
+Yani böyle olacak.
+
+107
+00:19:58,883 --> 00:19:59,783
+Diğer önemli problemler...
+
+108
+00:20:00,000 --> 00:20:20,400
+daha da sistem için zorlu olan, hem tespit edilmesi, hem bunun çözümlenmesi noktasında daha zorlu bir problem olan anomaliler, anormallikler var. Bunları da insert, delete ve update anormallikleri olarak gruplandırabiliriz. Şimdi onlarla ilgili bazı örnekler düşünelim.
+
+109
+00:20:28,000 --> 00:20:46,928
+Bütün company veri tabanımızdaki bütün nitelikleri bir arada tek bir tabloda düşünelim dedik. O örneği vermek biraz yer kaplayacak, o kadar uç bir noktaya gitmeyelim ama employee ile projekti bir arada düşünelim. Bunlar aynı dosyada olsunlar. Ne olacak bakalım. Yani bu şu demek, employee...
+
+110
+00:20:46,928 --> 00:20:59,048
+Project, EmployeeName, ProjectName, Number of Hours. Buradaki her bir niteliğin semantiği anlaşılıyor. Çok dile getirmeye gerek yok. İsimlendirmemiz de ona göre yapılmış zaten.
+
+111
+00:20:59,539 --> 00:21:16,539
+Şimdi burada bir projede birçok işçi çalıştığı için ben burada mesela bir numaralı projenin ismini, proje neyim mesela şöyle, bunu ben ismini değiştirsem,
+
+112
+00:21:24,468 --> 00:21:40,807
+İşçilerin sayısı kadar rekordta, orada değişikliği yapmam gerekiyor. Proje neyimi değiştirmem gerekiyor. Yani ben bir tek bir yerde bir değişiklik yapmak istiyorum. Arkada bu bana çok pahalıya mal oldu.
+
+113
+00:21:42,963 --> 00:22:00,403
+Anomali noktasında, bu anomallik mi? Bir nevi anomallik. Başka bir örnek vermek gerekirse, mesela bu projede, yani P1 projesi olsun mesela bu. P1 projesinde işte 100 tane işçi var. Yine bir tane işçi ekliyorum.
+
+114
+00:22:00,784 --> 00:22:23,544
+Bu yeni işçiyi eklerken de gene T1'le ilgili bilgileri gene girmem lazım. Yani 101. kez projenin T1 projesinin bilgilerini girmeye kalktım. Arka planda öyle bir manu almış oluyor. Buraya işte tamam, ilk defa girilecek. Employee'nin ismi, employee numarası falan. Buraya projenin neyim mi? Yanlış gidebilirim mesela.
+
+115
+00:22:24,147 --> 00:22:52,067
+Ama gene girebileceğim. Ona ilgili bir kısıt yok yani yanlış girdim diye. Eğer ayrı bir constraint, bir asya ölçüsü falan yazmadıysak yani. O zaman hani ne oldu bakın P1 için bir yerde PNM, işte robotik projesi oldu. Başka yerde TCK oldu. Yanlış harfi yazdım mesela. İşte bir update anormali olmuş oldu. Yani sistemin bununla ilgili bir şikayeti olmasına gerek yok.
+
+116
+00:22:52,147 --> 00:23:10,647
+Yani sistem için normal kısıtları haricinde bir şey yapmadım yani. Onları bozacak bir şey yapmadım yani. İşte bu update anormalliği. Bundan daha da tehlikeli olan insert ve delete anormallikleri var. Mesela yine aynı şema.
+
+117
+00:23:12,564 --> 00:23:29,284
+Böyle. Burada bir proje tanımlamak için o proje bilgisini ancak bir işçiyle, employee ile beraber girmem lazım. Yani bir daha employee yoksa ortada bu projeyi tanımlamam mümkün olmadı.
+
+118
+00:23:30,355 --> 00:23:42,235
+Bu da bir anormallik mesela. Yani ben bir projeyi tanımamak istiyorum. Yani bu modüler olduğu zaman bunu yapmak çok kolay. Proje tablosu var. Oraya yeni bir proje. İsterse projede hiçbir çalışan olmasın. İki sene sonra çalışmaya başlasın yani değil mi?
+
+119
+00:23:43,915 --> 00:23:54,875
+Aynı şekilde employee için de aynı problem söz konusu. Yani bir işçi girerken bu iş, illa bir projede çalışıyor olması lazım ki bu bilgiyi girebileyim.
+
+120
+00:23:55,508 --> 00:24:03,508
+Evet, o zaman insertte de böyle bir anormallik var. Dilitteki anormallik daha da kötü. Yani...
+
+121
+00:24:04,339 --> 00:24:16,059
+Mesela burada bir projeyi silmek istesek, eğer o projeyi de beraber, o projeyi de çalışan bütün işçileri de silmem gerekecek.
+
+122
+00:24:16,299 --> 00:24:21,579
+O projeyi ben artık burada görmek istemiyorum. P1 projesi, ismi falan belli burada.
+
+123
+00:24:22,119 --> 00:24:26,839
+O projeyi silmeye kalksak, o projeyi de çalışan işçileri de silmem gerekecek.
+
+124
+00:24:30,451 --> 00:24:43,692
+Tam tersi bir işçiyi silmek istesek, eğer bu işçi o projede son işçi ise, ben bu işçiyi silerken projeyi de silmiş olacağım yani. Oysa projeyi silmeyi kastetmiyordum yani.
+
+125
+00:24:44,019 --> 00:25:03,159
+O zaman demek ki bizim yaptığımız işlemlerde şimdiye kadar bir insert yapıyorsak, bunun etrafa böyle anormallikleri hiç düşünmedik yani değil mi? Ama böyle biraz yanlış bir tabloda, yani nitelikler böyle kontrolsüz bir araya gelmesinde, belki burada da niyetim de esasında performansı düşünüyorum.
+
+126
+00:25:12,019 --> 00:25:36,019
+Biliyorum ki, MP2 ve Project JOIN'ı masraflıymış. Ama ben de bunları bir araya getireyim. Bir araya getirirsek işte böyle arka planda bir de integrity konusu kapsamı içerisinde böyle anormalliklerin ortaya çıkmasını herhalde şey yaptık değil mi? Anladık. Yani bir parça hissettik en azından. Tamam mı? Evet. O zaman burada...
+
+127
+00:25:37,236 --> 00:25:50,556
+Aynı problem, Employee Project, Employee Department için, burada da mesela, Employee Department'da mesela, şu şekilde Department'ın da bilgileri aynı Employee tablosunda.
+
+128
+00:25:51,836 --> 00:26:03,316
+Burada 100 tane, 1000 tane Employee varsa veya bir departmanda 100 tane Employee varsa, o şu departman bilgisi 100 kez tekrar edecek.
+
+129
+00:26:03,859 --> 00:26:07,759
+Aynı şekilde aynı yorumları burada da söyleyebiliriz.
+
+130
+00:26:07,819 --> 00:26:12,680
+Veya biraz önceki anormallikleri Employee Department tablosunda da düşünebilirsiniz.
+
+131
+00:26:15,859 --> 00:26:41,839
+Şimdi, burada redundancy göstermiş yani. Biz onu anladık herhalde değil mi? Yani şuraya biraz daha bu instance'a bakarsanız, işte department 5 için bu verinin redundant olduğunu, tekrar ettiğini, işte tek bir satırda işte 5 numaralı department'ın ben, manager'ı değiştiyse, bütün o 5 numaralı department'ın diğer satırlarında da o update'i yapmam lazım.
+
+132
+00:26:43,859 --> 00:26:54,159
+Burada arkada bunun için bir trigger yazmam lazım mesela. Yani tek bir satırı ben beni değiştiriyorsam arkada triggerla anca bunu tamamlayabilirim yani.
+
+133
+00:26:54,759 --> 00:27:02,159
+Yani böyle ne yapıyor? O anormal neyi bizim terafi etmemiz için ekstra bir yük şey yapmamız lazım veya bilgi kaybı bile olabiliyor.
+
+134
+00:27:02,299 --> 00:27:11,699
+DREAT'te mesela biraz önce söylediğim son bir çalışansa ben o çalışanı siliyorsam o proje de silinmiş oluyor mesela. Yani daha kötü manzaralar da ortaya çıkabilir.
+
+135
+00:27:11,859 --> 00:27:22,159
+Bunlar istenilen şeyler değil elbette. İşte bu anomallikleri çözümlemek için burada şu employee proje tablosunu böyle ikiye ayırmış.
+
+136
+00:27:22,867 --> 00:27:30,867
+Şimdi birazdan söyleyeceğim bu ikiye ayırma. İşte bir decomposition yap. Composition bir araya getirmek, decomposition parçalamak.
+
+137
+00:27:30,867 --> 00:27:40,867
+İşte burada decompose ettik bir tabloyu iki parçaya ayırdık. Fakat öyle bir ayırdık ki bunun da belli bir kontrol, belli bir kurala göre olması lazım.
+
+138
+00:27:40,867 --> 00:27:45,771
+Yani bu parçalamada da. Burada mesela parçalamamız mesela...
+
+139
+00:27:46,067 --> 00:27:55,028
+Nasıl oldu? Şurada, employee name, project location, employee name, project location, şu iki sütunu aldım.
+
+140
+00:27:55,788 --> 00:28:06,067
+Şurada da diğer, şu project location ortak olmak üzere, çünkü bunları birleştirmek için,
+
+141
+00:28:06,483 --> 00:28:18,283
+Madem burada bu bilgiyi parçaladım, bunu parçalamak demek, bunları birleştirebilmek demek. Birleştirebilmek için de bir tane ortak nitelik seçmem lazım. Doğru mu? Evet.
+
+142
+00:28:18,643 --> 00:28:27,923
+Ortak niteliği burada yalnız seçtim. Bu yalnız seçmemden dolayı diğer bahsedeceğim problem ortaya çıkacak.
+
+143
+00:28:27,923 --> 00:28:30,403
+Şimdi ona geleceğiz.
+
+144
+00:28:33,715 --> 00:28:44,836
+O, evet, update anomalilerden bahsedelim. O zaman demek ki, design a schema that does not suffer from the insertion, duration, update anomaliler.
+
+145
+00:28:46,195 --> 00:28:54,495
+If there are anomalies, yani yaptığımız tasarımda bu anomalikler var, o zaman onu application'da çözmem lazım.
+
+146
+00:28:54,495 --> 00:29:00,536
+İşte NoSQL veri tabanlarında çoğu zaman zaten karmaşık işler application'a atıldığı için,
+
+147
+00:29:00,880 --> 00:29:10,920
+klasik veritabanı manasını bir parça kaybediyor. O yüzden zaten key value store gibi ifadeler duyuyoruz.
+
+148
+00:29:10,920 --> 00:29:28,300
+Yani işte graph store, tam database'in hakkını vermiyor yani tabi caizse. Key value store veya işte o isimlerde o store kelimesi geçiyor. Yani bunları biz kaydediyoruz ama klasik veritabanı kurallarına göre kaydetmiyoruz yani.
+
+149
+00:29:28,692 --> 00:29:56,451
+Ve o işi nerede yapıyorum? Mesela karmaşık joinları application seviyesine atıyor çoğu zaman. Integrity rule'larını buradaki gibi mesela kurallara uymayıp bazı anormallikleri application'da ben halledeceğim diyor. O yüzden yani genel yorum zaten noisyon veri tabanlarının dezavantajı noktasında o veri yığınlarındaki bu karmaşıklıkları application'ın yükünü arttırması. Yani bu böyle bir şey söyleyebiliriz burada.
+
+150
+00:29:56,692 --> 00:30:15,692
+Evet. Şimdi o Spurious'a geleceğim. Şu parçalama Spurious denilen, belirsizliğe sebebiyet veren tapıları ortaya çıkartmasına şey yapıyor. O üçüncü problem olarak karşımda çıkacak. Dördüncü problem olarak karşımda çıkacak şurada. Üçüncü problem...
+
+151
+00:30:16,980 --> 00:30:28,980
+Nallar, yani belirsiz olan nal bilgisinin olmaması gerektirir. Çünkü bu nallar, mümkün olunca az olması lazım. Eğer bu böyle olm...
+
+152
+00:30:33,395 --> 00:30:47,395
+Çok güzel bir örnek var. Bunları biraz değiştirdim. Yani, tabloyu örneklerden aldım. Dün, kendimizde örneklerden de biraz ekleyeceğim daha. O yüzden, bütün görev çok güzel olacak. Biraz örnek de koyacağım.
+
+153
+00:30:47,395 --> 00:30:58,395
+Biraz daha koyacağım. Yani, tam yetiştiremedim esasında bu derse. Ama bunu daha iyi bir seviyeye çekip sizinle tekrar paylaşacağım bunu veya güncelledim diye bilgi vereceğim.
+
+154
+00:30:58,483 --> 00:31:23,423
+Şimdi mesela, employee'lerin ofis bilgileri olmuş olsun. Employee şemasına bakın burada. Yabancı değilsiniz zaten, kampanı veri tabağına. Employee'de bir de ofis bilgisi olsa, fakat ofis bilgisi ancak %10-15 kadar bir işçi için mevcut olsa, diğerleri için bu mevcut olmasa, o zaman 1000 tane işçi de 800 tane null gözükecek.
+
+155
+00:31:23,743 --> 00:31:46,183
+O zaman demek ki burada bu tabloyu parçalamam lazım. Nasıl parçalayacağım? Employee offices. SSN, kimlik numarası ve Office number olarak. Kimlerin varsa gerçekten onlar için ayrı bir tablo tutmak yani. Bu tabi bir JOIN'a sabibiyet gelecek ama nallardan kurtulur. Yani nallardan kurtulmak için çok kolay bir yol. Diğer problemler bu kadar kolay değil yani.
+
+156
+00:31:47,731 --> 00:31:58,932
+Bunlarların ortaya çıkardığı problemler, Waste of Space malum ve diğer bir problem, biraz daha böyle şey, görmesi daha zor.
+
+157
+00:31:59,372 --> 00:32:06,951
+GROUP BY, Cumulative Funksiyonlar veya JOIN'lar da, bunlar ayrı bir JOIN gramelli gerektiriyor.
+
+158
+00:32:10,996 --> 00:32:38,875
+Başka veritabanları arasında tutarsızlığa sebebiyet veriyor. Yani bir veritabanı olanlara bir şekilde bakıyor, başka veritabanı başka bir şekilde bakıyor. Yani zaten bilirsizlik burada başlamış oluyor yani veya zorluk. Mesela biz bunun için ne tanımladık? Inner join'e alternatif olarak outer join'ler tanımladık. Bu esasında standart. Yani çok belli bir düzenlemeye gelmiş. Yani left outer join, right outer join, full outer join'la bu eşleşmeyenleri biz
+
+159
+00:32:38,996 --> 00:32:55,816
+Ne yaptık? Eşleşmeyenleri de görmeye gördük. Fakat burada nallar ortaya çıktı. Eşleşmediği için o eşleşmeyenleri nallara kapattık o bölgeyi. Ta ki işte sayabilmek için yani bunları.
+
+160
+00:32:58,387 --> 00:33:23,127
+Yani her halükarda demek ki burada bizim NAL value'ları farklı veri tabanlarında bu işte count edilmesi, maksimum minimumun bulunmasında ve join işlemlerinde, eşitliklerde tam böyle hepsi için ortak bir şey sebebiyet vermiyor. Normal ortak bir zeminin dışına çıkmış oluyoruz yani. O yüzden bu istenilen bir şey olmamış oluyor.
+
+161
+00:33:23,127 --> 00:33:26,187
+Bu NAL'ın manasını daha önce söylemiştik yani.
+
+162
+00:33:26,387 --> 00:33:41,547
+Bazı tuple'lar için geçersiz olabilir, geçerli olabilir ama bilmiyor olabiliriz. O tuple'lar için mevcut olmayabilir o bilgi. Mevcuttur ama bilmiyoruzdur gibi böyle şeyler oluyor. Hatta ne demiştik? Null eşittir Null.
+
+163
+00:33:41,903 --> 00:34:08,003
+True değil yani. Null eşittir. Null gene. Yani böyle 3 değerli bir lojik ortaya çıkartıyor Null. Oysa biz True-False'ü seviyoruz yani. Doğru mu, yanlış mı? Bir de ne karşımıza çıkıyor Null'la beraber? Null gibi True-False, Null. 3 seviyeli bir lojik ortaya çıkmış oluyor. Bu da makineye zaten uygun bir şey değil yani. Bu makinede ne var? 0-1 var. Yani felsefesine aykırı bir durum ortaya çıkmış oluyor yani.
+
+164
+00:34:08,916 --> 00:34:25,736
+Evet, gelelim Spurious denilen, Spurious'in kelimesi, manasına bakacaktım da, yani fazladan herhalde manasında ama daha ince bir manasında vardır herhalde. Bu, JOIN'lardan dolayı, Eranius, hatalı kapıların ortaya çıkması problemi.
+
+165
+00:34:25,736 --> 00:34:35,776
+Bu, burada, kelime de geçiyor, biz JOIN'larımızın böyle, lossless olmasını istiyoruz, lossless, yani kayıpsız.
+
+166
+00:34:36,371 --> 00:34:48,551
+non-editive, yani spurious, bu kelimeler geçiyor. Ne böyle ekstradan kayıtlar ortaya çıksın, editim, ne böyle spurious kayıtlar ortaya çıksın ve kayıpsız olsun.
+
+167
+00:34:48,731 --> 00:34:56,411
+Yani ben bunları birleştirdiğim zaman gene şu tablo ortaya çıksın. Şimdi ben bunları birleştirdiğim zaman bu tabloya ulaşabilecek miyim?
+
+168
+00:34:58,324 --> 00:35:18,824
+Ulaşamayacağım. Çünkü burada, mesela burada proje lokasyonunu ortak alarak ben bunları parçaladım ama bu proje lokasyonunun bu tabloyu birleştirmek için doğru bir ortak nitelik değil.
+
+169
+00:35:19,215 --> 00:35:32,615
+Çünkü bu proje lokasyonunda şu isim, şu proje lokasyonunda bu SSN'le beraber, diğer SSN'lerle de eşleşecek yani.
+
+170
+00:35:33,675 --> 00:35:43,995
+Burada tek doğru eşleşmeleri yakalamanın tek bir şartı var o da Yabancı Anad'da Prime League'in ikilisi üzerine bu JOIN'i yapmak yani.
+
+171
+00:35:44,788 --> 00:35:48,788
+Yani tabii gramer bize bütün join'ları yapmamıza imkan sağlıyor.
+
+172
+00:35:49,467 --> 00:35:55,088
+Ve bazı durumlarda bu tip join'ları da kullanabilirim ama bunu bilerek kullanmam lazım yani.
+
+173
+00:35:55,887 --> 00:36:01,347
+Bizim bu parçalamayı yabancı anahtar, RAMI 2 üzerine yapmamız gerekiyor.
+
+174
+00:36:01,628 --> 00:36:05,748
+Ki bu birleşmede şu tabloyu elde edebileyim.
+
+175
+00:36:06,047 --> 00:36:10,088
+Bu birleşme yaptığımız zaman burada işte 10 tane varsa bu birleşmeyle beraber.
+
+176
+00:36:10,996 --> 00:36:13,336
+20-30 tane kayıt çıktığını görün mesela.
+
+177
+00:36:14,076 --> 00:36:16,076
+Tamam mı? Kitapta bunu daha detaylı şey yapıyor.
+
+178
+00:36:16,576 --> 00:36:21,016
+Ama siz de bunu hemen, hayal, hayal, buradan zaten şey yapabilirsiniz yani.
+
+179
+00:36:22,615 --> 00:36:27,536
+O zaman demek ki burada, bu problemi de gördük.
+
+180
+00:36:29,876 --> 00:36:37,096
+Lostless join, yani kayıpsız join, propertiesi mutlaka olması gerekiyor yani bu parçalamalarımızda.
+
+181
+00:36:37,876 --> 00:36:42,736
+O zaman, the relations should be designed to satisfy the rule.
+
+182
+00:36:44,516 --> 00:36:45,916
+Lossless joint condition.
+
+183
+00:36:46,256 --> 00:36:50,336
+No suspicious of us should be generated by doing a natural join of any relations.
+
+184
+00:36:50,596 --> 00:36:53,076
+Parçaladım ya, bunları bir araya getireceğim.
+
+185
+00:36:53,516 --> 00:36:55,296
+Çünkü o join'ları kullanacağım.
+
+186
+00:36:55,376 --> 00:36:59,996
+O zaman, burada gereksiz o doğruluğu bozacak şeyler olursa, bilgi kaybolacak.
+
+187
+00:37:00,196 --> 00:37:02,256
+Ona zemin hazırlamış oluyorum yani.
+
+188
+00:37:03,891 --> 00:37:09,271
+O yüzden burada en ideali olan primary key, foreign key. Bunu biraz daha kurala bağlayacağız birazdan.
+
+189
+00:37:10,671 --> 00:37:21,651
+O zaman burada bir madde daha var. Fakat o çok şart değil. Sadece istenilen bir şey. Fakat olmasa da olur. O da dependency preservation denilen kelime.
+
+190
+00:37:22,099 --> 00:37:44,819
+Dependency Preservation. Şimdi burada bizim fonksiyonel bağımlılıklarımız bir tablo içerisinde bazı böyle fonksiyonel bağımlılıklar tanımlayacağız. Şimdi o tanımı yapacağım. Fakat biz bu tabloları böyle decompose ettiğimiz zaman bu fonksiyonel bağımlılıklar iki tabloya dağılırsa bunların veri tabanı tarafından takip edilmesi çok kolay değil.
+
+191
+00:37:45,199 --> 00:38:06,699
+Tek tablodakiler, JOIN yapılmadan takip edilebilir. Ama iki tabloya ben decompose ettiğim zaman o dependency, fonksiyonel bağımlılık da iki tabloya dağıldıysa, bu eklemeler çıkarmalarda, bu iki tabloyu JOIN ederek anca o dependency'yi sağlayacağım. Bu da zor olacak, sistem için ayrı bir yük olacak. Anladınız mı?
+
+192
+00:38:10,228 --> 00:38:28,487
+Yani, dekompose ediyoruz tabloları. Bir tabloda, ilk olarak şunu söyleyeyim, bir tabloda fonksiyonel bağımlılıklar var. Bu sadece primary key için değil, birazdan tanımayacağım. Farklı nitelikler arasında da fonksiyonel bağımlılıklar var. Yani bir nitelik bir niteliğe bağlı olduğunu söyleyeceğim birazdan.
+
+193
+00:38:28,487 --> 00:38:37,608
+Şimdi ben bunu dekompose ettiğim zaman, bu fonksiyonel bağımlılıktaki o nitelikler farklı tablolara gidiyorsa eğer,
+
+194
+00:38:37,983 --> 00:38:47,943
+Bu tablolarda güncelleme yaptığımız zaman o fonksiyonel bağımlılıkları sağlamak adına bunları JOIN ile anca test edebileceğim. Bu da sistem için ayrı bir yük olacak yani.
+
+195
+00:38:48,183 --> 00:38:56,844
+O yüzden dependency preservation tercih edilen bir şey ama doğruluğu bozan bir şey değil. Performansa etkileyen bir şey olmuş oluyor.
+
+196
+00:38:57,764 --> 00:39:04,103
+O yüzden property A is extremely important. Mutlaka olması gerekiyor bizim tasarımımızda.
+
+197
+00:39:04,527 --> 00:39:25,188
+Ama ikincisi, çok katı değil. Birazdan göreceğiz, 3NF, mesela dependency preserve ediyor, BCNF, dependency preserve etmiyor. Ama daha sağlam, daha katı mesela. Ama ne oluyor? İşte performansdan ödün vermiş oluyoruz. O yeni gelince tekrar ona söyleyeceğiz.
+
+198
+00:39:26,087 --> 00:39:31,188
+Evet, şimdi gelelim biraz daha formal tanımlarımıza. Fonksiyonel bağımlılık.
+
+199
+00:39:32,052 --> 00:40:00,000
+Şimdi bu işte goodness için elimizde bir malzeme olacak. Bütün normalizasyon adımlarını bu malzemeyi kullanarak tanımlayacağız. Bunları kullanamadığımız formlar da var. Onlar da 4NF, 5NF o yüzden zaten zor. Bunları kullanamadığımız için orada başka dependenciler var. Multi-valued dependency, joint dependency denilen anlaşılması formları.
+
+200
+00:40:00,000 --> 00:40:21,319
+Organizasyonu daha zor olan bağımlılıklar var. Ama BCNF'ye kadar olan, 1, 2, 3, BCNF'ye kadar olan, 3NF, BCNF'ye yakın olduğu için 3NF, BCNF'ye yakın birbirine. O yüzden ayrı bir kategori açılmamış yani. 4NF, 5NF ayrı. Onların bağımlılıkları farklı tanımlı.
+
+201
+00:40:22,963 --> 00:40:42,824
+Evet. Şimdi burada şu cümle. A set of attributes x, yani bir şemamızda, bir tablomuzda, bir grup nitelik, eğer function determines a set of attributes y, if the value of x determines a unique value for y.
+
+202
+00:40:46,963 --> 00:41:02,603
+Y'yi belirlemesi demek, yani çok garip, zor bir manada değil. Oldukça intüitif bir şey yani. Bu X'in Y'yi belirlemesi demek, X'de aynı değer ortaya çıktığı zaman, Y'de de aynı değer ortaya çıkması gerekiyor. Böylece X'yi belirlemiş oluyor. Anladınız mı?
+
+203
+00:41:04,183 --> 00:41:11,203
+X'in Y'yi belirlemesi demek, Y'nin X'i belirlemesi demek oluyor mu? Olmuyor. Evet.
+
+204
+00:41:11,764 --> 00:41:20,824
+Demek ki biraz daha iyi anlamış olur. Yani bunu anladıysak. X'i iyi belirleyebilir ama Y, X'i belirlemesini gerektirmiyor bu yani.
+
+205
+00:41:20,824 --> 00:41:23,664
+Şimdi bazı sample data üzerinde bunu göreceğiz.
+
+206
+00:41:26,420 --> 00:41:38,460
+Burada söylüyor, okuyun siz de. Bunu nasıl okuyoruz? X, Y'yi belirliyor veya Y, X'e fonksiyonel bağımlı. Hangi cümleyi kullanırsan X'e doğru.
+
+207
+00:41:46,927 --> 00:42:01,907
+For any two tuples, işte burada biraz daha formal olarak bunu ifade etmiş, T1, T2 tuples, aynı X değeri gözüktüğü zaman, T1, T2'de de Y aynı değer, Y niteliği aynı değeri olması gerekiyor. O zaman X, Y'yi belirlemiş oluyor.
+
+208
+00:42:06,228 --> 00:42:12,907
+Bunu biz grafiklerimizde, böyle bir arrowla belirteceğiz. Birazdan çıkacak karşımızda, hemen anlaşılıyor zaten.
+
+209
+00:42:13,652 --> 00:42:20,491
+Bu fonksiyonel bağımlılıklar nereden çıkıyor desek, gerçek hayattaki semantiklerden çıkıyor.
+
+210
+00:42:22,132 --> 00:42:23,711
+Şimdi örnekler de karşımda çıkacak.
+
+211
+00:42:25,071 --> 00:42:29,672
+Mesela, primil 2 diğer bütün nitelikleri belirliyor.
+
+212
+00:42:30,791 --> 00:42:35,132
+Veya diğer bütün nitelikler primil 2'ye fonksiyonel olarak bağımlı.
+
+213
+00:42:35,911 --> 00:42:39,652
+Yani biliyoruz ki primil 2'yi tekrar etmiyor ama tekrar etse...
+
+214
+00:42:39,887 --> 00:43:06,147
+Aynı değerlerle karşımıza çıkacak yani. Yani mesela bir TC kimlik numarası. Bizim adresimizi belirliyor. Beni belirliyor. Benim ismimi belirliyor. Soyadımı belirliyor. Telefon numaramı belirliyor. Yani benim kimlik numarası. Değil mi? Ama başka isimleri de belirliyor yani. O yüzden isimler SSN'yi belirlemiyor yani. Yani X'yi belirliyor, Y'yi belirlemiyor.
+
+215
+00:43:09,364 --> 00:43:15,984
+Burada bazı böyle semantiklerden yola çıkarak bu fonksiyonel bağımlılık örnekleri var.
+
+216
+00:43:16,104 --> 00:43:22,744
+Mesela SSN, yani işte bu örnekler işte TCEKİM hükmurası geçiyor da Social Security'dan bu geçiyor, anlıyorsunuz.
+
+217
+00:43:23,044 --> 00:43:24,664
+SSN'e ENEM'i belirliyor.
+
+218
+00:43:25,204 --> 00:43:32,204
+PROJEE NUMBER, PROJEE NAME, PROJEE LOKASYONU'NU BELİRLİNİYOR, PROJEE TABLOSUNA BAKTIĞINIZAZAMAN.
+
+219
+00:43:32,204 --> 00:43:37,204
+Ama SSN PROJEE NUMBER, OWN'U BELİRLİNİYOR.
+
+220
+00:43:37,204 --> 00:43:40,204
+Yani bir tek SSN, OWN'U BELİRLEMİYOR.
+
+221
+00:43:40,204 --> 00:43:43,204
+Çünkü ben başka projelerde ile çalışabilirim.
+
+222
+00:43:43,204 --> 00:43:46,204
+Veya tek bir proje, OWN'U BELİRLEMİYOR.
+
+223
+00:43:46,204 --> 00:43:51,204
+O projede başkaları, başka miktar çalışabilirler yani.
+
+224
+00:43:51,360 --> 00:44:04,480
+Evet, ikisi birden anca hours'ı belirliyor. İşte bu tabloda biz bu fonksiyonel belirlikleri semantiğe göre ortaya çıkarmamız lazım. Bunları dokümante etmem lazım. Bunlar daha sonra bizim normalizasyonumuzda kullanılacak.
+
+225
+00:44:04,480 --> 00:44:15,480
+Burada birkaç örnek de ben ekledim. Mesela state driver license number. Yani SSN çok kolay olduğu için şu örneklerde olabilir mesela.
+
+226
+00:44:16,019 --> 00:44:32,460
+Yani belli bir şehirde diyelim veya eyalette işte bir sürücü belgesi bir tek kişi de olabilir yani. Birçok kişi üzerine verilmez. O zaman SSN'e belirleyecek. Yani sen bunları belirlediğin gibi elbette. Çünkü bir kişinin birden çok sürücü belgesi olabilir mi?
+
+227
+00:44:33,364 --> 00:44:39,483
+Yani olabilir, belki tır sürücü belgesi vardır, ayrı, kamyon için vardır, bisiklet vardır falan olabilir belki, bilmiyorum.
+
+228
+00:44:39,684 --> 00:44:45,884
+Yani bunları düşünmek ne konuyu anladığımız anlaşılıyor yani. Yok vardır desek değişecek, yoktur desek farklı olacak yani.
+
+229
+00:44:46,584 --> 00:44:54,844
+Veya işte gene zip kod, telefon numarası araya kodunu belirliyor mu ülkemizde? Bilmiyorum belirliyor mu?
+
+230
+00:44:54,844 --> 00:45:00,963
+Yani yazdım ama posta kodu, araya kodu belirliyor, öyle mi?
+
+231
+00:45:02,099 --> 00:45:10,099
+Belirliyormuş. Amerika'da da belirliyor. O yüzden böyle yapmışlar. Ama altına bir notta düşmüş. Hayır için geçerli değil diye mesela.
+
+232
+00:45:12,884 --> 00:45:33,903
+O zaman burada biz bu fonksiyonel bağımlılıkları tanımlamamız demek bu bir kısıt. Yani mevcut olan veritabanın bize sağladığı built-in diyelim default kısıtla nelerdi? Mesela bir domain kısıtı vardı, onu ben sağlayacağım diyordu.
+
+233
+00:45:34,324 --> 00:45:43,324
+Ben orada, işte, UNIQ dersem o niteliğe, onu sağlıyorum. Prime 2'yi tanımladım mesela, onu sağlamak için sistem yükü üzerine alıyor.
+
+234
+00:45:43,324 --> 00:45:56,324
+Veya başka, yabancı anaditar kısıtı vardı. Bunu da sağlamak sistemin vazifesinde. Ben yabancı anaditarı tanımlıyorum, sonra hiç düşünmüyorum yani, o gerçekten onu sağlıyor mu sağlamıyor. Arkadaş sistem onun üzerine çalışıyor yani. Değil mi?
+
+235
+00:45:56,324 --> 00:45:59,211
+Ama biz bunları tanımlıyorsak,
+
+236
+00:45:59,219 --> 00:46:16,559
+Bunlar, bu iş kuralına göre, o semantiğe göre tanımlanan şeyler. Öyle değil mi? Bunu veritabanına benim aktarmam lazım. Bunları nasıl veritabanı enforce edecek, sağlayacak yani?
+
+237
+00:46:17,268 --> 00:46:30,108
+Bunun için ne yapmam lazım? Ayrıyeten, assertion veya trigger'lar da bunu anca yapabilir. O yüzden çok böyle, işte zaten biraz böyle pratiklikten uzaklaşması burada başlıyor esasında.
+
+238
+00:46:30,628 --> 00:46:41,228
+O yüzden böyle çok karmaşık fonksiyonel bağımlılıkların böyle veri tabanına sağlanması veri tabanından çok beklenmiyor, sistemler çok beklenmiyor.
+
+239
+00:46:41,928 --> 00:46:44,948
+Bunlar biraz application'a havale ediliyor yani böyle.
+
+240
+00:46:45,268 --> 00:46:55,268
+Çok karmaşık, öyle şeyler var ise, fonksiyonel bağımlılıklar varsa. Biraz bu noktada, işte, pratik şeyden uzaklaştık esasında.
+
+241
+00:46:55,268 --> 00:47:03,268
+Çünkü çoğu veritabanı bunu otomatik yapamaz zaten. Çünkü bilmiyoruz ki o küçük dünyanın o semantiğini nereden bileceğiz? Onları tanımam lazım.
+
+242
+00:47:03,268 --> 00:47:07,947
+Tanılamanın da yolu ayrıca bir fonksiyon, trigger, asıl ölçüm falan yazmak yani.
+
+243
+00:47:09,300 --> 00:47:33,920
+Evet, işte şu ikinci madde, bu constraintler, fonksiyonel bağımlılıklar, bütün relationler için sağlanması gerekiyor. Tamam, biz şimdi yolumuza devam edelim. Yani sağlanması gerekiyor. Ve mesela, Z için bir anahtar, bu zaten bildiğimiz bir şey değil mi? O anahtar, function determines all attributes in art.
+
+244
+00:47:35,092 --> 00:47:36,392
+Bu bir tane mi olabilir?
+
+245
+00:47:36,731 --> 00:47:37,312
+Bu anahtar.
+
+246
+00:47:37,972 --> 00:47:44,232
+Candidate keyler olduğu için, Candidate aday anahtarlar. Bu birden çok olabilir.
+
+247
+00:47:44,812 --> 00:47:51,512
+İşte biraz karmaşıklık da burada başlıyor yani. Bu Candidate keylerin arasından bir tane prime linki seçiyoruz.
+
+248
+00:47:51,512 --> 00:48:00,392
+Bu Candidate keyler, 1 nitelik, 2 nitelik, 3 nitelik, birden çok nitelik grupları olabilir. Bunların tespit edilmesi için bir algoritma var.
+
+249
+00:48:00,492 --> 00:48:05,192
+Onu buraya dahil etmemiş zaten. Ondan da ben bahsetmeyeceğim.
+
+250
+00:48:05,972 --> 00:48:11,132
+Ama bir takım böyle heroistiklerle bunu örneklerini yapacağız birazdan.
+
+251
+00:48:12,755 --> 00:48:38,895
+Şimdi mesela burada bir tane sample data var, bir instance var, teach tablosu, teacher var, course var, text var. Zaten anlaşıldığı gibi yani bir potansiyel probleme hazır. Yani teacher'larla beraber course da var, işte text da var mesela. Biraz şey, problemli bir şey olduğu belli. Biraz önceki o informal'daki şeylerimizi düşünürsek.
+
+252
+00:48:40,755 --> 00:48:51,395
+Yürünen manzara, eğer sadece instance'ın böyle olmasından ortaya çıkıyor, söyleyebileceğim fonksiyonel bağımlılıklar, sadece bu instance'ı bağlayacak yani.
+
+253
+00:48:52,655 --> 00:48:55,595
+Burada buna bakarak ne diyebiliriz mesela?
+
+254
+00:48:55,975 --> 00:48:57,495
+Teacher course'u belirliyor mu?
+
+255
+00:48:59,975 --> 00:49:01,195
+Belirlemiyor değil mi?
+
+256
+00:49:01,735 --> 00:49:03,955
+Text mesela course'u belirliyor mu?
+
+257
+00:49:07,443 --> 00:49:16,324
+Yani, belirliyor olabilir. Çünkü aykırı bir durum yok yani. Text course'u belirliyor olabilir. Aykırı bir durum var mı?
+
+258
+00:49:29,907 --> 00:49:53,567
+Aynı kitap farklı derslerde kullanılıyor. Tamam işte gerçek dünyada. İşte zaten ben de bu noktaya varmaya çalışıyorum. Yani, must be defined explicitly by someone who knows the semantics of the attributes of R. Yani biz bu instance'a bakarak bu fonksiyonel bağımlılıkları böyle listeleyemem yani. Ama semantini bilen birisi,
+
+259
+00:49:54,016 --> 00:50:00,155
+Burada şu fonksiyona bağlı olması lazım derse, artık bu instance'lar da ona göre şekillenmesi lazım.
+
+260
+00:50:00,155 --> 00:50:05,715
+Yani bu bağlayıcı olan bu yani. Buradan yola çıkarak bu instance'lar o kurala uyması lazım.
+
+261
+00:50:05,775 --> 00:50:12,516
+İşte onu zaten biraz önce ifade ettiğim o noktaydı. Yani veritabanı onu da sağlaması için ayrı bir yük olmuş oluyor veritabanın.
+
+262
+00:50:15,188 --> 00:50:25,908
+Şimdi bu bizim kurallarımız, semantiğe göre tanımlanmış olan bu kurallarımızdan yola çıkarak bazı ekstra diğer kuralları tanımlayabiliriz.
+
+263
+00:50:25,988 --> 00:50:32,988
+Yani buna da inference rule deniyor. Infer etmesi, ortaya çıkarması yani. Değil mi? Refer farklı, infer farklı.
+
+264
+00:50:33,408 --> 00:50:36,948
+Ve infer additional fonksiyonel bağımlıkları ortaya çıkartıyor.
+
+265
+00:50:38,164 --> 00:51:02,684
+Bu kurallar 3 tane ama 2 tane de böyle daha işimizi kolaylaştıracak 3 tane de daha additional'lar var. Böylece toplam 6 tane kural var. Her biri kendi içerisinde çok basit yani. Ama bunları böyle kullanmak da basit yani çok zor değil. Mesela x, y, x'in subset'iyse x, y'yi belirleyecektir.
+
+266
+00:51:03,603 --> 00:51:08,123
+X, Y kelimelerin nitelik isimleri anlaşılıyor. Değil mi?
+
+267
+00:51:08,123 --> 00:51:17,403
+Yani X, Y, mesela X'i de belirler. Y'yi de belirler. Çok trivial, minimal bir ifade. Doğru mu?
+
+268
+00:51:17,403 --> 00:51:23,403
+Evet. İkincisi, buna reflexif.
+
+269
+00:51:24,851 --> 00:51:38,691
+ismi böyle. Augmentation'da X, Y'yi belirliyorsa, X'in yanına ve Y'nin yanına aynı tili eklersem, burada ikisi de kural gene geçerli olacaktır. Değil mi?
+
+270
+00:51:40,331 --> 00:51:44,851
+Transitive'de X, Y'yi belirliyorsa, Y'de Z'yi belirliyorsa, X, Y'yi belirleyecektir.
+
+271
+00:51:46,708 --> 00:52:06,907
+Bunlar, diğer bütün fonksiyonel bağlılıkları, dokümente etmek için yeterli. Böylece, onlardan yola çıkarak biraz daha şunu genişletirsek, buna da decomposition deniyor. Yani X, Y, Z'yi belirliyorsa, X, Y ve X, Z'yi belirliyordur yani. Bu da oldukça intüitif.
+
+272
+00:52:07,264 --> 00:52:19,084
+X, Y, Z'yi belirliyor. Öyle bir kural buldum. Varmış o semantikte. X'in gelene bir nitelik ismi koyun. Yani course mesela, y, text mesela. Tamam mı? Anlıyorsunuz onu.
+
+273
+00:52:19,824 --> 00:52:32,844
+Evet. Union'da X, Y ve X, Z ise bu sefer X, Y, Z'yi belirliyor. Bu da kolay. Şu en sondaki biraz daha şey gerektiriyor. X, Y'yi belirliyorsa
+
+274
+00:52:33,492 --> 00:52:45,492
+O Y'yi içeren başka bir sol tarafta bir şey varsa, burada augmentation ile yani X, Y yapayım, şey X, W, Y, W ile augmente edeyim onu.
+
+275
+00:52:46,572 --> 00:52:54,672
+Böylece W, Y, Z'yi belirlediği için transitive ile de X, W'nun Z'yi belirlediğine ulaşabilirim yani.
+
+276
+00:52:55,891 --> 00:53:16,131
+Böylece her biri kendi içerisinde bu kurallar oldukça basit. Şimdi bunlar neyi niye söyledim? Bunlardan yola çıkarak biz bir fonksiyonel bağımlılık, küçük dünyada tanınmadığım fonksiyonel bağımlılığı, o küçük dünya için bütün fonksiyonel bağımlılıklara ulaşmak için kullanabilirim bu kuralları.
+
+277
+00:53:17,251 --> 00:53:19,331
+Buna F artı diyeceğiz.
+
+278
+00:53:23,251 --> 00:53:40,031
+Bir nitelik veya birden çok nitelik grubu içinde bunun belirlediği diğer fonksiyonel bağımlı kıldığı, kendisine fonksiyonel bağımlı kıldığı diğer nitelik grup setini ortaya çıkartabilirim.
+
+279
+00:53:40,467 --> 00:54:05,927
+Bu ikinci söylediğimi primary key, candidate key bulurken kullanacağız. Anladınız mı? Birincisini de, birincisi biraz daha şu anda kullanmayacağız. Çünkü o diğer algoritmada da kullanılıyor. Şimdi diğer sunumlara hazırlık yapıyor. O yüzden bu var. Bunu kullanmayacağız. Ama ikincisini kullanacağız. İkincisinde ne var bakın. Bir nitelik veya bir nitelik grubu, X diyelim ona. O acaba hangi nitelikleri belirliyor?
+
+280
+00:54:06,708 --> 00:54:12,967
+İşte primary key'i tespit ederken veya candidate key'leri tespit ederken bunu kullanacağız.
+
+281
+00:54:13,088 --> 00:54:14,527
+Closure'ı kullanacağız yani.
+
+282
+00:54:14,648 --> 00:54:22,248
+Ta ki bu benim şemamda, bu tabloda, bu fonksiyonel bağımlılık varsa primary key'i nedir?
+
+283
+00:54:22,827 --> 00:54:23,807
+Candidate key'i nedir?
+
+284
+00:54:24,527 --> 00:54:29,688
+Bunları tespit edebileyim ki normalizasyon kurallarını tatlik edebileyim.
+
+285
+00:54:30,367 --> 00:54:32,768
+Tamam mı? Rotamız böyle yani.
+
+286
+00:54:34,516 --> 00:54:52,096
+Evet. İşte bunlar yani bir X nitelik grubunun closure'ı, onun X'in tamamen belirleyeceği nitelik grubuna diğer biraz önceki işte inference rule'ların kullanarak bulabiliriz.
+
+287
+00:54:52,755 --> 00:55:05,055
+Burada F ve G'den bahsetmiş. Yani o fonksiyonel bağımlılık seti, F seti, G seti birbirine denk olması için bu tür kurallar var.
+
+288
+00:55:06,735 --> 00:55:08,675
+Yani bunlar zaten anlaşılıyor yani.
+
+289
+00:55:09,535 --> 00:55:11,583
+Şimdi bizim amacımız bir de...
+
+290
+00:55:11,583 --> 00:55:18,623
+Gerçi burada normalizasyon kurallarına çok geçmiyor ama konu kapsamın içerisinde çok da garip kaçmıyor.
+
+291
+00:55:18,623 --> 00:55:24,063
+Burada duracağız zaten. Bundan sonrasındaki diğer notasyonları kullanmayacağız.
+
+292
+00:55:24,283 --> 00:55:29,143
+Yani gramer biraz ağırlaşıyor bundan sonra. Ne demek istediğimi. Buradaki kesiyor yani.
+
+293
+00:55:30,383 --> 00:55:37,043
+Mesela ne dedim biraz önce? Bizim o küçük dünyamız içerisinde bir takım fonksiyonel bağımlılık setimiz var.
+
+294
+00:55:39,583 --> 00:56:01,363
+Zorlayacaksak, veritabanından bu fonksiyonel bağımlılıkları sağlamasını zorlayacaksak, enforce edeceksek, o zaman bu setin minimal olmasını isteriz. Öyle değil mi? Çünkü bu kurallar ne kadar fazlaysa, her bir ekleme çıkarmada bu kuralların tatbik edilmesi için bir trigger yazılacak, bir yasal için yazılacak yani.
+
+295
+00:56:01,811 --> 00:56:07,551
+O zaman bunun minimalini aramam lazım. İşte burada minimal olmasının metodunu söylüyor.
+
+296
+00:56:09,551 --> 00:56:19,591
+Şimdi birinci maddede sağ taraftakiler hep tek olsunlar. Sağ taraftaki yani belirlenenler tek bir nitelik olsunlar.
+
+297
+00:56:19,591 --> 00:56:28,531
+Sonra ben ikinci maddede buradaki herhangi bir bağımlılık kuralını çıkardığım zaman,
+
+298
+00:56:29,556 --> 00:56:48,916
+Bu kural, diğer kurallardan türetilebilsin. Demek ki o fazladaymış, o kural. Değil mi? Yani 10 tane kuralım var, ben bir tane kuralı çıkartıyorum, diğerleri tarafından o kural üretilebiliyor, türetilebiliyor yani o an son kural. O zaman onu çıkartayım, minimize etmeye çalışıyorum. İkinci madde esas yani, ikinci adım.
+
+299
+00:56:49,460 --> 00:57:05,920
+Üçüncüsünde ise sol taraftakileri minimize etmeye çalışıyorum. Yani X A'yı belirliyorsa X bir grup, nitelik grubu. O nitelik grubundan bir niteliği çıkardığım zaman yine A'yı belirliyorsa o zaman onu da minimize edeyim yani.
+
+300
+00:57:06,780 --> 00:57:11,920
+Böylece bu esaslar çerçevesinde şimdi bunlara böyle...
+
+301
+00:57:12,371 --> 00:57:22,371
+Sezgisel olarak tamam. Ama nereden çıktı, bunların ispatını soruyorsanız, onu hiç sormayın yani. O kısım biraz da şey, zor.
+
+302
+00:57:22,371 --> 00:57:29,355
+O yüzden ama bu kanaat veriyor bize yani. Çok da böyle garip bir şey kaçmıyor. Minimal bir set arıyorum yani.
+
+303
+00:57:29,652 --> 00:57:35,172
+Özellikle ikinci madde burada oldukça önemli. Üçüncü madde de sol tarafı minimize etmeye çalışıyoruz.
+
+304
+00:57:35,532 --> 00:57:41,391
+Şimdi burada, işte zaten bakın şuraya refer etmiş, şurada bunların algoritmaları var diye.
+
+305
+00:57:41,391 --> 00:57:43,971
+Ve bu da basit bir algoritma değil yani.
+
+306
+00:57:45,748 --> 00:58:08,548
+Ama temin de dediğim gibi, yani bu sizi korkutmasın, böyle ya bu kadar zor mu bir ilişkisel model, tablo tasarımı yapmak? Yani çoğu zaman informal guideline'lar ve ondan sonra ortaya çıkan tablolarda 3NF, BCNF'ye kadar orada da kullanacağımız malzemeler şey, primary key, candidate key'ler olacak.
+
+307
+00:58:13,748 --> 00:58:16,327
+kullanabileceğimiz bir şey olacaktır yani.
+
+308
+00:58:17,028 --> 00:58:21,128
+Ama yine, merak da ediyoruz ya böyle biraz şey.
+
+309
+00:58:21,548 --> 00:58:27,748
+Örnek olarak mesela şöyle bir fonksiyonel bağımlılık seti varsa, yani şemamız ne burada mesela?
+
+310
+00:58:27,748 --> 00:58:30,468
+A, B, D gibi bir şey değil mi? Başka bir şey yok.
+
+311
+00:58:30,568 --> 00:58:33,628
+A, B, D gibi bir şey veya A, B, C, D olsun fark etmez.
+
+312
+00:58:33,728 --> 00:58:38,528
+Yani burada bu tablomuz içerisinde böyle bir fonksiyonel bağımlılık seti varsa,
+
+313
+00:58:40,724 --> 00:58:46,444
+O zaman bunun minimali nedir diye şey yapsak, ilk olarak bakıyoruz, step 1 neydi?
+
+314
+00:58:46,884 --> 00:58:55,504
+Sağ taraftaki belirlenen taraf yani, fonksiyonel belirlenen taraf, tek olması. O zaten tek. Orada bir sorun yok.
+
+315
+00:58:56,284 --> 00:59:06,524
+Diğer kuralımız, 3. kural. Sol taraftaki 3. kuraldan bahsedeceğim. Sol tarafta birden çok nitelik varsa onları azaltabiliyor muyum?
+
+316
+00:59:07,059 --> 00:59:27,820
+Mesela burada, burada bir tane var, burada bir tane var, ABD. AB'yi acaba, AD'yi belirler mi? Yani B'ye ihtiyaç var mı? BD'yi belirler mi? A'yı çıkartabilir miyim? Bunlara baktığım zaman, şurada Armstrong kurallarını kullanarak, B'nin D'yi belirlediğini söyleyebiliriz.
+
+317
+00:59:34,927 --> 00:59:59,188
+Tamam mı? BA'yı belirliyorsa, ne koyuyor yana? B koyuyor. Yani BAB. BAB'yi de belirleyecek yani. BA'yı belirliyorsa, BAB'yi de belirleyecek. Zaten oldukça minimal, trivial bir çıkarım bu. BAB'yi belirleyecek.
+
+318
+01:00:00,000 --> 01:00:17,059
+AB'de D'yi belirliyordu. Transitiv kuralından dolayı B, D'yi belirliyor olacak. O zaman demek ki A'ya ihtiyaç yokmuş. Gördünüz mü? Burada bunu dokümante ediyor.
+
+319
+01:00:17,503 --> 01:00:39,724
+O zaman A'ya ihtiyaç yokmuş. O zaman bu hale geldi. İlk olarak bu böyle bir ben semantikten, gerçek hayattan çıkardığım şöyle bir şey, fonksiyonel bağımlılık grubu şu hale geldi. Bundan sonrası daha da kolay. Çünkü orada bakın ne çıktı karşımızda? BA, DA, BD.
+
+320
+01:00:45,652 --> 01:01:06,652
+BD, DA, BA'yı zaten ortaya çıkarttığı için sınav gerek yok. O zaman minimal neymiş? BD ve DA'ymiş. Biraz göz gelirmek gerekiyor kuralların arasında. O Transitive, Influence kurallarını düşünerek bu kuralların üzerinde dolaşmak gerekiyor.
+
+321
+01:01:06,652 --> 01:01:11,652
+Ve minimale ulaşmıyor. Buna daha minimale olabilir mi? Olamaz. Bunu çıkarsam,
+
+322
+01:01:12,596 --> 01:01:19,275
+Bunu şuradan inför edemem. Bunu çıkarsam, bunu buradan inför edemem.
+
+323
+01:01:19,635 --> 01:01:44,135
+İki tarafta da zaten tek nitelik kaldı. O zaman bu biliyoruz ki artık benim bu küçük dünya için bu minimal bir fonksiyon bağımlılık seti. Artık bunu ben veritabanının sağlamasını için bir trigger yazabilirim. İlla sağlamasını istiyorsam. Ama ne dedim o noktada? Çoğu zaman bunu sağlatmıyorlar veritabanına. Çünkü ayrı bir yük oluyor bu yani. İlla sağlanması gerekiyorsa application seviyesine sağlanıyor.
+
+324
+01:01:44,467 --> 01:01:48,588
+Evet. Şimdi o zaman ben iki tane örnek ekledim buraya.
+
+325
+01:01:49,108 --> 01:01:55,827
+Bunu hiç çözmeyeceğim burada çünkü zaman alır. Ama bu öğrendiklerimizden bu çözümü yapabilirsiniz.
+
+326
+01:01:55,827 --> 01:02:06,027
+Ve şöyle bir adım izlememiz lazım. Mesela biraz daha tabii karışık bir örnek. İkincisi daha da zor. Ben de çözmedim. İkini çözdüm sadece.
+
+327
+01:02:06,728 --> 01:02:16,847
+Burada mesela şöyle bir şemamız olsun. Bu tabii böyle çok garip değil. Yani burada bu küçük tabloda A niteliği, işte bir Corsa'ydı.
+
+328
+01:02:17,108 --> 01:02:26,867
+Section falan gibi bir şeyler. Ve burada şöyle bir fonksiyonel bağımlılık seti varmış. Bunu da o semantik, o küçük dünyayı bilen birisi, bunları çıkarın,ları yapabilir.
+
+329
+01:02:28,068 --> 01:02:39,268
+O zaman demek ki tablomuz ne kadar böyle şeyse, nitelik ne kadar çok ekliyorsak, tehlike o noktada artıyor yani. Bunu da söylemek gerekiyor.
+
+330
+01:02:39,268 --> 01:02:44,048
+Eğer böyle bir fonksiyonel bağımlılık grubu varsa elimizde,
+
+331
+01:02:44,079 --> 01:03:11,280
+Burada ben neyi arıyorum? Bu sefer minimal seti aramıyorum. Onu da arayabilirim. Onu da mesela şey yapın. O da bir örnek olur. Bir kısmı öyle olur. Diğer kısmı da ben burada esas konu başlığı. Bu relation'ın key nedir? Anahtarı veya anahtarları, kendi detkileri nelerdir? Burada neye bakmam lazım?
+
+332
+01:03:11,764 --> 01:03:37,764
+seçtiğim o nitelik, nitelik grubu, X diyelim, bütün tabloyu belirliyor mu? Neyi kullanacağım? Bu fonksiyonel bağımlılıkları ve inference rule'ları kullanacağım. Tamam mı? Hepsi kendi içinde basit ama zaman alıyor bazen. Çok olduğu zaman da dikkat gerektiriyor. Mesela eğer primary key'i seçeceksen bu tabloda, o zaman ne isterim burada? O primary key'nin...
+
+333
+01:03:38,708 --> 01:03:48,228
+Tek nitelik olmasını isteriz. O yüzden yola başlarken, A acaba primary key olabilir mi, anahtar olabilir mi, B olabilir mi, C olabilir mi de bunlara bakın mesela.
+
+334
+01:03:50,007 --> 01:03:57,107
+Daha sonra bunların olamayacağını göreceksiniz. Daha sonra bir de tabii ikili gruplara bakarken,
+
+335
+01:03:57,536 --> 01:04:21,875
+İkili gruplara, burada sol tarafta olanlardan başlamak lazım yani. Aramayı kısaltmak adına. Çünkü ABC'yi belirliyor. Yarısını daha fazla yol katettim yani. ABC'yi belirliyor mesela. Sonra AD'yi de belirliyormuş. Ne oldu? ABCD oldu. Sonra BF'yi de belirledi. F'de girdi. Ne kaldı?
+
+336
+01:04:24,371 --> 01:04:27,651
+TEF, G, FGH'yi de belirledi bakın.
+
+337
+01:04:29,331 --> 01:04:31,251
+En son, DIJ'yi de belirledi.
+
+338
+01:04:31,771 --> 01:04:46,111
+Şimdi burada, tatlı yazsanız zaten burada gözükmeyecek ama, AB, CLOS, yani AB'nin CLOSURE manasında, şurada söylemeyi unuttum ama, şu şey, CLOSURE şöyle ifade ediliyor, artı.
+
+339
+01:04:46,483 --> 01:05:07,083
+Niteliğin closure'ı da niteliğin üzerine artı koyma manasında. O zaman burada AB closure'ın R olduğunu görün mesela. O zaman AB bir kendi de etki. Başka böyle varsa, ikili, üçlü nitelik grupları varsa, onlar da kendi de etki. Onların da minimalini seçmem herhalde daha isabetli olacaktır.
+
+340
+01:05:07,860 --> 01:05:18,620
+Bu nispeten daha kolay ama biraz daha zor. İsterseniz bunu da deneyin. Yani A artı olabilir mi? B artı, C artı, bütün C'yi belirleyebilir mi?
+
+341
+01:05:19,400 --> 01:05:26,240
+Bunun olmadığını göreceksiniz. AB artı da belirlemiyor ama bir tek AB'de üçlü gruplardan bir tanesi belirliyor.
+
+342
+01:05:26,240 --> 01:05:35,240
+Ve böyle böyle diğer üçlü, dörtlü gruplar da olabilir kendi let key'ler. O zaman demek ki...
+
+343
+01:05:35,327 --> 01:05:44,988
+anahtar belirlemeyi, kendini belirlemeyi de yapabilecek bir hale geldik. Bu basit örnekleri pekiştirmeniz lazım. Hepsini burada yapmıyoruz.
+
+344
+01:05:44,988 --> 01:05:59,748
+Evet. Şimdi gelelim normalizasyonlara. Daha eğlenceli esasında. Yani şimdiye kadar genel manada herhalde genel hava anlaşıldı. Tek şurada biraz teorik gibi kaçıyor ama bunları şimdi kullanacağız.
+
+345
+01:06:03,987 --> 01:06:25,907
+Burada, şurada, Super Key ile şeyleri anlatmış. Bunları bildiğimiz şeylerle, o yüzden hızlı geçeceğim. Normalizasyon dediğimiz işte, unsatisfactory, bad relation'lardan kurtulup, good bir tasarım yapmak. Söyledik bunları. Biz burada 2NF, 3NF, BCNF'den bahsedeceğiz. Yani primary key'e bağımlılığı esas alan.
+
+346
+01:06:26,351 --> 01:06:45,371
+Ve daha sonra onu genelleştirip, candidate key esas alan genel formunu bahsedeceğiz. Bir de 1NF var, bakın o burada geçmiyor. 1NF, anahtara bağımlılıkla ilgili bir mesele değil. Yani tam anahtara bağımlılıkla ilgili değil. Orada başka bir şey var. Zaten 1NF'den başlayacak herhalde.
+
+347
+01:06:47,539 --> 01:07:15,480
+Eğer böyle baktığımız zaman tasarımımıza 2NF'yi sağlamıyorsa onu dekompose edeceğim veya 3NF'yi sağlamıyorsa. Bunlar 1NF'den başlayıp 3NF'ye, BCNF'ye kadar gideceğiz. Böylece bir tane 2NF, 3NF'yi sağlıyorsa mesela bizim şemamız, tasarımımız 2NF'yi de dolaylı olarak sağlayacak. Yani bunlar böyle iç içe girmişler. Öyle diyagramlar çok görürsünüz bu konu kapsam içerisinde.
+
+348
+01:07:15,539 --> 01:07:21,059
+BCNF ise benim tasarımım, 1NF'yi sağlıyor, 2NF'yi sağlıyor, 3NF'yi sağlıyor yani.
+
+349
+01:07:21,600 --> 01:07:27,000
+2NF ise 3NF'yi sağlamıyor, BCNF'yi sağlamıyor. O manada yani.
+
+350
+01:07:27,699 --> 01:07:51,579
+Evet, denormalizasyondan bahsetmiştik. Yani bunu ihtiyaca göre, eğer bu integrity veya anormalliklere tahammül ediyorsa, tasarımımız, sistemimiz, uygulamamız neyse, bunlardan ödün vererek denormalize edebiliriz. Yani normalize etmek, denormalize edebiliriz. Yani bunları decompose etmeyiz, parçalamayız yani. Tek bir tabloda kalır ama anormallikleri application'da halledeceğiz.
+
+351
+01:07:54,132 --> 01:07:57,911
+Super key tanımını biliyoruz. Burada okuyun.
+
+352
+01:07:58,411 --> 01:07:58,931
+Super key.
+
+353
+01:08:00,652 --> 01:08:04,511
+Fakat buradaki super key şey.
+
+354
+01:08:06,431 --> 01:08:14,331
+Is a set of attributes that no two tuples aynı olmayacak yani.
+
+355
+01:08:14,331 --> 01:08:15,611
+Peki.
+
+356
+01:08:16,532 --> 01:08:24,532
+Is a super key with additional property that removal of any attribute from key will cause key not be a super key anymore?
+
+357
+01:08:24,532 --> 01:08:27,532
+Yani bu da universal bir tanım yani.
+
+358
+01:08:27,532 --> 01:08:31,532
+Super key'i biliyoruz değil mi? İlişkisel modelde bunu öğrendik.
+
+359
+01:08:31,532 --> 01:08:35,532
+O super key minimal ise, sınavda da onu sordum zaten.
+
+360
+01:08:35,532 --> 01:08:36,532
+Değil mi?
+
+361
+01:08:37,268 --> 01:08:50,628
+O cümle, şimdi sınav sonuçlarına bakarken şey yaparız. Minimal süper key key oluyor yani. Süper key key olmayabilir.
+
+362
+01:08:51,891 --> 01:09:05,891
+Evet, bir de Candidate key tanımımız var. Onu da biliyoruz. Aynı şekilde zaten. Minimal super keylerden, yine minimal super key yani. Bunlar da Candidate key deniyor. Bunlardan bir tanesi seçiliyor. Abitre Radyet demiş.
+
+363
+01:09:06,271 --> 01:09:16,543
+Ama hani minimal super key'in minimalini seçmek herhalde primary key için daha isabetli olsa gerek. Bir de bir tanımımız daha var burada. General...
+
+364
+01:09:16,543 --> 01:09:43,123
+Tanım için kullanılıyor bu da. Prime attribute. Prime attribute ise, herhangi bir anahtarın, yani anahtarda candidate key kastediyorum, herhangi bir candidate key'in içerisinde olanlara prime key deniyor. Prime key, primary key değil, prime key. Yani orada o candidate key'in bir parçası olması manası var. Böyle değil ise,
+
+365
+01:09:43,636 --> 01:09:54,115
+Candidate keyin içerisinde değil ise, non-prime oluyor. Şimdi bunlar bizim 2NF, 3NF kurallarında geçecek. Ama maalesef bunları ispat edemeyeceğiz.
+
+366
+01:09:54,296 --> 01:10:01,176
+Ama bunların ispatları, prime olunca niye oluyor, niye olmuyor falan, dediğim gibi onlar biraz şey.
+
+367
+01:10:02,016 --> 01:10:05,216
+Şimdi, yani ispatı doğru yani.
+
+368
+01:10:06,596 --> 01:10:08,456
+Şimdi, first normal form,
+
+369
+01:10:10,996 --> 01:10:12,576
+2.45 değil mi saatimiz?
+
+370
+01:10:13,655 --> 01:10:13,835
+Evet.
+
+371
+01:10:15,335 --> 01:10:24,735
+Şimdi ilk normal formumuzun manası, bütün attribütlerin anahtara bağlı olması gerekiyor.
+
+372
+01:10:24,996 --> 01:10:26,975
+Bu zaten anahtarın tanımı yani.
+
+373
+01:10:27,875 --> 01:10:29,095
+Prime key'in tanımı bu.
+
+374
+01:10:29,716 --> 01:10:35,176
+O yüzden bir isolation'da beklediğimiz şey, bütün niteliklerin bu anahtara bağlı olması gerekiyor.
+
+375
+01:10:35,296 --> 01:10:54,916
+Fakat eğer burada multivalued attribute'ler var ise veya composite multivalued attribute'ler var ise ve nested bir şekilde yani hem multivalued hem composite olacak şekilde bir niteliğin içerisinde böyle bir tablo var ise
+
+376
+01:10:55,380 --> 01:11:08,020
+Hem composite hem multi-value, nesit olmuş oluyor. Böyle bir şey var ise, o zaman bu 1NF'ye aykırı olmuş oluyor. Yani zaten ilişkisel model, tablo tanımımıza aykırı olmuş oluyor esasında.
+
+377
+01:11:08,020 --> 01:11:21,460
+O zaman özeti olarak, burada bizim her bir netenin atomik olması lazım. Atomik. Tek bir değer ifade etmesi lazım. Yani bir dizli olmaması lazım. Bir dizli.
+
+378
+01:11:22,003 --> 01:11:37,804
+Yani asset of integer, asset of name mesela, asset of color mesela, böyle şeyler olmaması lazım. Ama şimdiki çok veritabanında, hatta tgsqd'de, bu esneklik var. Ama 1NF olarak kabul ediliyor.
+
+379
+01:11:40,979 --> 01:11:50,260
+Yani bunu böyle aldıktan sonra application'da onun proses edilmesi lazım. Yani onların parçalığı ayırması lazım. Yani o veritabanının yaptığı bir şey değil. Veritabanı bunu 1NF algılıyor.
+
+380
+01:11:51,139 --> 01:12:07,420
+Application'a gönderiyor, al sen bunu nasıl yaparsan parçala işte. Onun madem manasını biliyorsun semantikini, o yüzden onu parçala, proses et. Çünkü bu 1NF'yi sağlamıyorsa biz bunu nitelikleri böyle dağıtmamız lazım.
+
+381
+01:12:08,307 --> 01:12:12,307
+Yani mesela bilsek ki 3 tane...
+
+382
+01:12:13,811 --> 01:12:41,652
+değer var. Yani o Maltı-Veyrüt'ün 3 tane değeri var. Bu 3 değeri bunu parçalamam lazım. Ama herkes için o 3 değer şart değil yani. Olması şart değil. O yüzden burada bazı tapılar için nallar ortaya çıkacak. Bir de sorgular daha zorlaşacak. Yani ben bir sorguda bir niteliği kullanmak var, Maltı-Veyrüt olsun. Veya onu ben 3 niteliğe dağıtıp o sorguyu yazmak var. O daha zor olacak o sorguyu yazmak. Yani işi zorlaştırmış oluyor. O yüzden
+
+383
+01:12:41,811 --> 01:12:55,931
+Çoğu zaman veritabanlarında, ilişkisel model olarak geçen veritabanlarında dahi niteliklerin içerisine mantivelutek izin veriyor esasında. Yani burada bu kuralın dışına çıkmış oluyoruz.
+
+384
+01:12:57,427 --> 01:13:09,748
+Ama ne yapıyor? Yani onu, işte, application'a havale ediyor. Neyse, çok uzatmayayım burayı. O zaman şöyle bir manzara var bakın. Yani bu manzara olduğu zaman 1NF'ye aykırı olmuş oluyor.
+
+385
+01:13:09,748 --> 01:13:18,828
+Yani bakın burada ne var? Department location'lar var. Şurada. Bu department location'lar atomik değiller.
+
+386
+01:13:19,380 --> 01:13:28,140
+O zaman bunu parçalamam gerekiyor. Şu şekilde Department ve Department Location olarak.
+
+387
+01:13:29,000 --> 01:13:39,280
+Burada parçalamamış ama ya burada Department Location'u buraya dahil etmem lazım, Primary 2'ye dahil etmem lazım.
+
+388
+01:13:39,280 --> 01:13:40,960
+Değil mi?
+
+389
+01:13:41,587 --> 01:14:00,547
+Veya, Department Number, Department Location'ı ayrı bir tablo yapmam lazım. İkisi de bu atomikliği sağlamış olacak. Hangisini yapacağım? Duruma göre değişebilir. İkisi de olabilir.
+
+390
+01:14:02,948 --> 01:14:07,887
+Diğer bir atomikliği bozan bir şey, bu sefer Multi-Value, hem de Composite.
+
+391
+01:14:08,243 --> 01:14:24,623
+O zaman bu niteliğin içerisinde bir tablo demek oluyor. Composite, multivalued. Yani mesela projeler, yani her bir öğrencinin SSN, şurada employee,
+
+392
+01:14:25,203 --> 01:14:27,903
+Öğrenci diyorum, bu kampanya veri tabanı.
+
+393
+01:14:28,023 --> 01:14:40,863
+Tabii SSN, Employee Name ve bunun çalıştığı projeler desem, o projeler bu kişi şu projede şu kadar saat çalışıyor, şu projede bu kadar saat çalışıyor.
+
+394
+01:14:40,863 --> 01:14:41,723
+Yani orada bir bakın.
+
+395
+01:14:42,112 --> 01:15:09,831
+Multivalued, composite bir şey, yani bir tablo ortaya çıkmış oluyor. İşte o zaman benim şöyle bir tablom olmuş oluyor. Tek bir satırda şöyle bir tablo, bu satırda bir satır ortaya çıktı mesela şöyle. Şurada mesela 3 tane projede, 4 tane projede çalışıyorsa böyle bir şey ortaya çıktı. Değil mi? İşte bu da 1NF'ye aykırı olmuş oluyor. Bunun çözümü gene bu parçayı, bu tabloyu parçalamak. Yani employee project şöyle bunu,
+
+396
+01:15:10,112 --> 01:15:22,791
+İfade etsem SSN E name, PROJ, PROJ NUMBER, ARS diye bir tablom SSN E name olacak. Diğeri ise SSN PROJ NUMBER, ARS olacak.
+
+397
+01:15:22,791 --> 01:15:30,991
+Burada tek tabloda yaparsam bu sefer redundancy olacak.
+
+398
+01:15:35,859 --> 01:15:46,199
+Tek tabloda yaparsam, nasıl bir redundancy olacak? Ne redundant olacak? Ne tekrar edecek?
+
+399
+01:15:49,199 --> 01:15:57,020
+E-name tekrar edecek. Çünkü bir kişi 10 tane projede çalışıyorsa, o kişinin böyle parçalamasam,
+
+400
+01:15:57,376 --> 01:16:11,155
+Employee projede SSN ile proje numberı primary key yapsam, o SSN 10 projede çalışıyorsa, o ENA'mı 10 kez tekrar edecek. O yüzden burada parçalamak daha isabetli.
+
+401
+01:16:11,155 --> 01:16:18,916
+Ama burada bir tane nitelik, mult-u-v-lut olduğu için bunu tek tabloda anahtara dahil edebildim.
+
+402
+01:16:19,859 --> 01:16:28,819
+Burada department lokasyonunun daha detayı yok yani. O da tekrar etmeyecek bir şey. O semantiğe göre değişiyor yani.
+
+403
+01:16:30,659 --> 01:16:37,640
+Evet, ikinci NF'miz, 1NF'yi böylece bitirmiş olduk. Şu şekilde parçalama yaptık burada.
+
+404
+01:16:37,640 --> 01:16:41,779
+2NF'deki kuralımız,
+
+405
+01:16:43,444 --> 01:17:02,444
+Bundan sonra primary key kavramını kullanacağız. Burada prime attribute tanımlamıştık. Bir de şunu söyleyelim. Full Functional Dependency. Yani bir Y'nin Z'yi belirlemesinde Y...
+
+406
+01:17:02,804 --> 01:17:12,423
+Y'nin bir alt kümesi, Y nitelik grubunun bir alt kümesi eğer Z'yi belirliyorsa, Fully Functional Dependency olmamış oluyor.
+
+407
+01:17:12,703 --> 01:17:16,163
+Yani Y bütün haliyle Z'yi belirlemesi lazım.
+
+408
+01:17:17,463 --> 01:17:19,024
+Full Functional Dependency.
+
+409
+01:17:19,543 --> 01:17:23,064
+Mesela aşağıdaki örneklerden çok kolay anlaşılıyor.
+
+410
+01:17:23,503 --> 01:17:25,783
+SSM pay number hours'ı belirliyor.
+
+411
+01:17:27,347 --> 01:17:29,408
+Fully Dependency var burada.
+
+412
+01:17:29,908 --> 01:17:32,448
+Çünkü herhangi bir tanesini çıkarsam olmaz.
+
+413
+01:17:32,448 --> 01:17:35,448
+Ama SSN Proje Number ename
+
+414
+01:17:35,448 --> 01:17:38,387
+not
+
+415
+01:17:38,387 --> 01:17:41,307
+burada full functional dependency.
+
+416
+01:17:42,207 --> 01:17:44,728
+Neden? Çünkü SSN ename
+
+417
+01:17:44,728 --> 01:17:47,448
+belirliyor. Yani Proje Number'ın burada alakası yok yani.
+
+418
+01:17:47,927 --> 01:17:50,608
+SSN ename zaten belirliyor.
+
+419
+01:17:51,068 --> 01:17:54,167
+Ename'in ename ile bir şeyi yok.
+
+420
+01:17:54,996 --> 01:17:56,515
+Anladınız mı? Gayet açık.
+
+421
+01:17:59,375 --> 01:18:01,496
+SSN PNUMBER, AURZ'ı belirliyor.
+
+422
+01:18:02,435 --> 01:18:04,935
+SSN PNUMBER'da herhangi bir tanesini çıkartamam.
+
+423
+01:18:05,355 --> 01:18:06,795
+AURZ'ı belirleme noktasında.
+
+424
+01:18:07,355 --> 01:18:09,935
+Ama SSN PNUMBER'ın ENEM'i belirlemesinde,
+
+425
+01:18:10,695 --> 01:18:12,355
+SSN zaten ENEM'i belirliyor.
+
+426
+01:18:12,755 --> 01:18:14,076
+Orada PNUMBER gereksiz.
+
+427
+01:18:14,076 --> 01:18:15,855
+Evet, zor bir şey yok yani.
+
+428
+01:18:18,676 --> 01:18:22,816
+Ara versek iyi olur ama zaman harcamış olacağız. O yüzden ara vermeyelim.
+
+429
+01:18:24,116 --> 01:18:26,596
+Çünkü daha sınavlardan bahsedeceğiz.
+
+430
+01:18:26,596 --> 01:18:30,556
+Şimdi ikinci o zaman normal formumuzun genel kuralı şu.
+
+431
+01:18:31,176 --> 01:18:34,116
+All attributes should depend on the whole key.
+
+432
+01:18:35,296 --> 01:18:42,236
+Yani bütün yazdığım bağımlılıklar anahtara bulayım.
+
+433
+01:18:43,380 --> 01:18:47,320
+Functional Dependent olması lazım. Fully. Tamamıyla yani.
+
+434
+01:18:48,360 --> 01:18:52,340
+İkinci madde de, ikinci açıklama benzer. Birine ikinci madde aynı.
+
+435
+01:18:53,140 --> 01:18:58,820
+If every non-prime attribute A in R is fully functionally dependent on the primary key.
+
+436
+01:18:59,160 --> 01:19:07,500
+Non-prime attribute. Yani o tablodaki primary key haricindeki nitelikler, o primary key'e
+
+437
+01:19:08,564 --> 01:19:13,004
+Tamamıyla HULLY bağımlı olması lazım.
+
+438
+01:19:14,484 --> 01:19:24,923
+Mesela bu örnekte gayet güzel gözüküyor. Mesela employee projeyi bizim yaptığımız, evvelki o birleştirmemiz, employee projeyi birleştirdik ya bu 2NF'ye aykırı.
+
+439
+01:19:25,003 --> 01:19:33,564
+Çünkü, bakın fonksiyonel bağımlıklar güzel ifade edilmiş. Yani ayrı bir sağ tarafa yazmadım kuralları. Burada oklarla güzel ifade edilmiş.
+
+440
+01:19:33,564 --> 01:19:42,484
+Zaten o yüzden bir de bunu, sunuyu şey yaptım yani, evvelki sunuda en çok hoşuma giden bu oldu. Yani çok net bir şekilde.
+
+441
+01:19:42,484 --> 01:19:51,144
+Bu şekilde manzara ifade edilmiş oluyor. Anlatmak zor oluyor. Anlamak ayrı, anlatmak ayrı bir şey. O yüzden anlatmanın en kolay yolunu arıyorsun.
+
+442
+01:19:51,764 --> 01:20:02,824
+Derse şey yaparken. O yüzden şu bile çok ayrı. Şimdi şu da var. Çok bir tabanı kitabı var. Siz görmüşsünüzdür. 4-5 tane meşhur kitap var.
+
+443
+01:20:04,123 --> 01:20:09,904
+Saymaya gerek yok bilinen kitaplar. Hakikaten bazı konular, bazı kitaplarda çok güzel anlatılır.
+
+444
+01:20:10,195 --> 01:20:38,195
+Başka konu, çünkü yazarları da 3-4 tane, yani tek bir yazar değil, oldukça kötü yani. Yani hem chapter'ın content'i kötü, hem sunumu kötü, yani zor yani, diğerinden farklı, diğer sunulardan, diğer chapter'lardan. O yüzden yani ben bir dönem işte bir kitabı kullandım, başka dönem bir kitabı kullandım, hangi kitapta en güzel hangi chapter var şey yapabiliyorum yani. O yüzden bir cedde de...
+
+445
+01:20:38,195 --> 01:20:46,695
+Bu böyle şey yapmak, biraz çorba gibi oluyor ama, yani baksanıza mesela bizim kitapta, bu kadar güzel anlatmıyor yani.
+
+446
+01:20:46,695 --> 01:20:53,296
+Çok zor bir algoritma kısmından anlatıyor. Bu kadar güzel böyle practical şeyler yok yani orada.
+
+447
+01:20:54,076 --> 01:21:02,336
+Neyse, evet. Şimdi burada semantin'e bakın. Mesela SSN, PROJ NUMBER, ARZ'ı belirliyor.
+
+448
+01:21:02,815 --> 01:21:08,315
+Ama maalesef, Employee Name sadece SSN'e bağlı.
+
+449
+01:21:08,916 --> 01:21:12,615
+Proje Name, proje lokasyonda, proje number'a bağlı.
+
+450
+01:21:12,916 --> 01:21:15,416
+Fully Dependent değil.
+
+451
+01:21:16,115 --> 01:21:18,115
+O zaman 2NF değil.
+
+452
+01:21:19,828 --> 01:21:29,828
+Çünkü burada primary key, SSM ve proje number. Bir kere bunun primary key olduğunu biraz önceki şeylerden çıkartabiliriz.
+
+453
+01:21:30,228 --> 01:21:39,427
+Veya daha başa dönsem, tam bir çözüm yapma şey yapsam, buradaki fonksiyonel bağımlılıklardan SSM ve proje number'ın primary key olduğunu çıkarımını yapın.
+
+454
+01:21:39,427 --> 01:21:45,707
+Yani ezbere olmasın. Daha sonra e-name, primary key'in bu kısmına bağlı.
+
+455
+01:21:46,131 --> 01:21:55,011
+Proje name, proje lokasyon, yine onun bu kısmına bağlı, o zaman 2NF değil. 2NF yapmak için bunu parçalamam gerekiyor.
+
+456
+01:21:55,011 --> 01:22:03,952
+Burada nasıl parçaladım? İşte bu parçalamanın da lossless olması lazım. Burada da şöyle bir şey var.
+
+457
+01:22:05,131 --> 01:22:14,011
+Bu belirleyenler aynı tabloda birleşecek şekilde. Yani SSN, E name bakın şurada. Madem bunu belirliyor, o zaman...
+
+458
+01:22:14,131 --> 01:22:15,952
+Bunu bir tablo olarak parçaladım.
+
+459
+01:22:16,412 --> 01:22:23,992
+ProjeNumber, PNM, P lokasyonu belirliyorsa, ProjeNumber'ın PNM, P lokasyonu aynı tabloda bir araya gelmesi lazım.
+
+460
+01:22:26,311 --> 01:22:31,271
+Şurada da şu ikisi bunu belirliyorsa, tek bir tabloda bir araya gelmesi lazım.
+
+461
+01:22:31,372 --> 01:22:35,692
+Böylece bakımdan hepsi, 3 tablonun her biri 2NF'yi sağladı.
+
+462
+01:22:37,271 --> 01:22:40,091
+Yani hiçbir zaman, zaten tek nitelik olduğu için,
+
+463
+01:22:40,463 --> 01:23:05,844
+Fully function'ın olması lazım. Fully, yani tam, bütün primary key'e bağlı. Bir tane mifilik var zaten. Şurada da şu hours var. Bu ikisine birden bağlı olmuş oldum. Evet, şimdi şu 3NF için bir örnek. Ona geri dönüp tekrar bakacağız. Üçüncü normal formumuz ise, şöyle bir kuralımız var.
+
+464
+01:23:06,224 --> 01:23:13,503
+Dikkat ederseniz bu kurallar bizim önceden yaptığımız, verdiğimiz örneklerdeki anormallikleri ortadan kaldırıyor yani.
+
+465
+01:23:14,003 --> 01:23:23,483
+Employee project örneği vermiştim sunumun başında. Aynı şekilde şuradaki dependent şu örnekle gene bu sefer geçişlilik örneği var.
+
+466
+01:23:32,404 --> 01:23:54,784
+Onu tanımlamış burada. Zaten yaptık bu tanımı o infernist kurallarında. Yani X, Z'yi belirliyorsa böyle bir Y olmaması lazım. Yani Z'ye ulaşacak. Yani X, Z'yi belirliyorsa bir X, Y, Y, Z'yi belirleyecek bir ara bir nitelik olmaması lazım.
+
+467
+01:23:55,252 --> 01:23:59,632
+Eğer var ise, o zaman bu bir problem.
+
+468
+01:24:01,152 --> 01:24:06,392
+Burada anormallikler olabilir. Daha önce bahsettiğimiz anormallikler olabilir.
+
+469
+01:24:06,972 --> 01:24:13,512
+O zaman, 3. normal formumuzun kuralı, ALL ATTRIBUTS SHOULD DEPEND ON NOTHING BUT THE KEY.
+
+470
+01:24:15,112 --> 01:24:22,271
+Sadece anahtara bağlı. Anahtara bağlı olurken, ara başka bir niteliğe bağlı değil yani.
+
+471
+01:24:22,676 --> 01:24:34,856
+Yani kelimelerin içi dolu, yani buradaki cümleler tek özetliyor yani. Tamam, yani bunu bu şekilde çalışırken öyle şey yapın. Şu ilk maddeye ben şöyle özetledim yani. Zaten bir tabloda da bunu özetliyor.
+
+472
+01:24:34,936 --> 01:24:48,775
+All attributes should depend on the all key. Bütün anahtara, anahtarın bir kısmına bağlı olma durumu olmaması lazım. Yani böyleyse 2NF'yi bozuyor. Şurada da all attributes should depend on nothing but the key.
+
+473
+01:24:49,811 --> 01:24:56,291
+Nothing but the key. Sadece primary key'ye bağlaması. Onun için başka bir yere bağlı olmaması lazım. Yani geçiştilik olmaması lazım yani.
+
+474
+01:24:58,291 --> 01:25:05,891
+Evet. O zaman R can be decomposed into 3NF relations via the process, 3NF normalization.
+
+475
+01:25:06,891 --> 01:25:08,971
+İşte burada onu şey yapıyor.
+
+476
+01:25:09,876 --> 01:25:19,876
+Şurada bazı istisna durumlar var, onlara bakarsınız. Zaten genel şeyde bahsedeceğiz. O zaman 3 tane normal formu şöyle özetleyebiliriz.
+
+477
+01:25:19,876 --> 01:25:23,876
+Saat kaç oldu? İyi, az kaldı.
+
+478
+01:25:28,148 --> 01:25:30,788
+yol katıttık bayağı, yani az kaldık sonlarımız var.
+
+479
+01:25:32,908 --> 01:25:37,268
+O zaman bilinci normal formda, ALL AT TÜRBÜSTİFEND ON THE KEY.
+
+480
+01:25:37,747 --> 01:25:47,268
+Hani gene key manası var da, böyle var ya bunun, bütün nitelikler anahtara bağlı olması lazım.
+
+481
+01:25:47,368 --> 01:25:49,587
+Eğer multiple unit olursa bu bozulmuş oluyor.
+
+482
+01:25:51,448 --> 01:25:54,587
+İkincide, ALL AT TÜRBÜSTİFEND ON THE ALL KEY.
+
+483
+01:25:55,220 --> 01:26:03,220
+Fully Functionally Depends. Üçüncü normal formda, all attributes depend on nothing but the key.
+
+484
+01:26:03,220 --> 01:26:16,220
+Evet, şimdi burada, o zaman şu örneğe tekrar geri döneyim. Şurada Dependent vardı bakın. Şurada, Department Number, DNF,
+
+485
+01:26:16,916 --> 01:26:35,115
+Department Manager SSN var bakın. Şimdi burada şey bu SSN Department Name'i belirliyor. Çünkü bu SSN'in çalıştığı bir departman var. O departmanın da bir ismi var.
+
+486
+01:26:35,604 --> 01:26:41,524
+Yani bu SSM bunları belirlemiyor değil, bunları belirliyor ama bunlar,
+
+487
+01:26:41,524 --> 01:26:46,404
+DERAMIN 2'yi haricinde başka bir anahtara, başka bir niteliğe bağlı.
+
+488
+01:26:48,084 --> 01:26:54,963
+Böyle olduğu için bu RIDAN DINIS'ı buradan çıkıyor ve işte anormallikler buradan çıkıyor.
+
+489
+01:26:54,963 --> 01:26:59,204
+O yüzden bu tabloları böyle iki kısma parçalamam gerekiyor.
+
+490
+01:27:00,484 --> 01:27:02,484
+İşte dekompose ettik yani bunları.
+
+491
+01:27:04,020 --> 01:27:19,200
+Decompose ederken de şu, madem bunlar belirliyorlar, böyle bu tarafa aldım bunları. Fakat burada da D-number'ı tekrar etmem lazım. Ta ki bu bağlantıyı kurabileyim yani. Aksi taktirde bu join'i yapamayacağım yani.
+
+492
+01:27:19,699 --> 01:27:29,699
+Orada bu decomposedan sonra natural join yaparak birleştirme imkan sağlayacak bir ortak nitelik olması lazım.
+
+493
+01:27:29,699 --> 01:27:35,699
+O da ne dedik? Pramiliki, foreign key olması lazım. Pramiliki, foreign key geçmesi lazım.
+
+494
+01:27:35,699 --> 01:27:46,699
+Bunu yanlış yaptık. Oradaki veri kaybını göstermek adına ne yaptık şurada? Şöyle lokasyon bilgisi yaptık.
+
+495
+01:27:46,836 --> 01:27:55,196
+Çok gerideymiş. Şurada lokasyon bilgisiyle bu parçalama yaptık. O da hatalı sonuçta, yani fazladan rekordlar ortaya çıkardı.
+
+496
+01:27:55,196 --> 01:27:59,116
+Bunları birleştirdiğimiz zaman yalnız sonuç verecekti. Yani çok büyük bir problem yani.
+
+497
+01:28:08,340 --> 01:28:08,739
+Öl.
+
+498
+01:28:19,923 --> 01:28:44,264
+Şimdi şöyle bir örneğimiz var. Company veri tabanından ayrı olarak. Burada bir LOTS dediği zannedersem bir arazi gibi bir şey herhalde. Bu property ID, primary key, bütün bu tabloda bütün nitelikler bu property ID'ye bağlı oluyor. Primary key olduğu için bütün tabloyu belirliyor. Gayet güzel.
+
+499
+01:28:46,547 --> 01:29:08,307
+Fakat bununla beraber, COUNTY NAME ve LOT numarası, yani COUNTY mahalle manasını zannedersem, şeyde, yurt dışında, o mahalledeki LOT numarası, o mahalle içinde UNIQ yani. Ama farklı mahallelerde LOT ID aynı olabiliyor.
+
+500
+01:29:08,532 --> 01:29:14,932
+VOT ID. Mesela, Esenler bölgesinde 50 tane VOT var.
+
+501
+01:29:15,380 --> 01:29:30,200
+Bayrampaşa'da da 30 tane var, LOT. Bu LOT numarası da 1-2-3B'den başlıyorsa, o zaman burada anahtane olacak, mahalle ismi, esenler ve LOT numarası olacak.
+
+502
+01:29:30,200 --> 01:29:39,780
+Ama bir de TABU Kadastro'nun kullandığı bir property ID var ki o günü 3. ülke şapında. Böyle örneklendirebiliriz yani. Öyle değil mi?
+
+503
+01:29:40,435 --> 01:29:52,435
+Demek ki o semantiğe göre şu anahtara ek olarak gene bir tane veya birden çok nitelik grubuyla anahtarlar ortaya çıkabilir.
+
+504
+01:29:54,435 --> 01:29:58,435
+Şimdi buradaki fonksiyonel bağımlılıklar oldukça makul.
+
+505
+01:29:58,435 --> 01:30:00,000
+Yani bu zaten...
+
+506
+01:30:00,000 --> 01:30:04,079
+primary key olduğu için bakın hepsini belirliyor. Bunu belirliyor, bunu belirliyor, hepsini belirliyor.
+
+507
+01:30:04,480 --> 01:30:14,159
+Bununla beraber şu da candidate key olduğu için, şu grup da candidate key olduğu için, şu ikisi beraber, şu oklar diğerlerini belirliyor.
+
+508
+01:30:14,400 --> 01:30:22,560
+Bu okları anlıyoruz. Bununla beraber şu county name sadece tax rate'i belirliyor. Bir de tax rate eklenmiş buraya.
+
+509
+01:30:22,560 --> 01:30:27,119
+Yani vergi oranı. O da mahalleye bağlı.
+
+510
+01:30:27,572 --> 01:30:33,272
+O bölgeye bağlı bir şey. O bölgede alınan tax rate böyle. Bu kadar.
+
+511
+01:30:34,272 --> 01:30:37,672
+Tamam mı? Makul bir bağımlılık değil mi?
+
+512
+01:30:39,072 --> 01:30:52,372
+O zaman bu fonksiyonel bağımlılık var. Bununla beraber bir de arazinin fiyatı var. O da alanla belirlenecek. Yani araya, prensi belirleyecek. Yani 30 m² ise
+
+513
+01:30:53,716 --> 01:30:55,716
+İşte şu kadar olacak mesela. Değil mi?
+
+514
+01:30:56,316 --> 01:30:59,155
+Ara ya da o zaman privacy belirliyor diyebilirim.
+
+515
+01:31:04,212 --> 01:31:09,832
+Havadan geldi de yani o kimyaya ortaya çıkardığı kurallar olmuş oluyor.
+
+516
+01:31:09,832 --> 01:31:15,771
+Bakarsak burada 2NF'yi sağlıyor mu desek, 2NF'yi sağlıyor.
+
+517
+01:31:15,912 --> 01:31:21,851
+Şimdi ben 2NF'yi içimmiyorum şu anda, 1NF'de kendime göre bir tarzı var demiş.
+
+518
+01:31:23,992 --> 01:31:25,872
+2NF'yi falan da burada gözükmüyor.
+
+519
+01:31:27,471 --> 01:31:28,832
+Yani ondan bahsetmelik.
+
+520
+01:31:30,515 --> 01:31:36,515
+2NF'den başladım. 2NF'yi sağlıyor, yani eskile söyleyebilirim.
+
+521
+01:31:37,515 --> 01:31:48,515
+Primary key, 2 tane içerikten oluşuyor. O zaman, fully, all, bütün anahtara bağlı olması kesin yani.
+
+522
+01:31:48,515 --> 01:31:53,515
+Ama bu, leşkiliktir 2NF'dir. Birazdan general...
+
+523
+01:31:53,583 --> 01:32:19,263
+2NF'den bahsedeceğim. Yani, kendi etkileri de kapsam alanına alan testte, kendi etkileri de kapsam alanına alan general sorumluları 2NF'nin. Eğer ona da şey yaparsak, o zaman genel manada 2NF'yi sağlamayacak. Şimdi neden? Şurada şu taksitleyip, kendi etkilerin bir kısmına bağlı.
+
+524
+01:32:21,779 --> 01:32:44,259
+General 2NF'ye aykırı olmuş oldu. O zaman yine parçalamam gerekir. Şimdi o kenarda dursun, sadece Restrictive, yani çiftli olan, sınırlı olan, sadece primary key'i göz önüne alarak yaptığımızda, aradaki fark ne? Şöyle ki daha iyi bir tasarım olmuştur. Evet, bilmiyorum. Restrictive daha ilk adım olmuş oluyor.
+
+525
+01:32:45,427 --> 01:33:01,268
+Evet. O zaman bu 2NF'yi sağlayalım. Peki, 2NF'yi sağlıyor mu? Geçişlilik var mı? Ona bakacağız. Geçişlilik, evet var.
+
+526
+01:33:01,939 --> 01:33:16,279
+Hem şurada var, yani şunu şu anda düşünmüyoruz, hem şu bunu belirlemesinde var, yani property ID, tax rate'i emekleme gibi ama tax rate'i belirleyen bir de bu var, 3NF'ye aykırı.
+
+527
+01:33:16,279 --> 01:33:25,859
+Aynı şekilde price'i belirleyen sadece arayabilirdi. Ne dedik 3NF için?
+
+528
+01:33:29,011 --> 01:33:34,492
+anahtar haricinde 2NF, sadece primary key tarafından belirlenmesi lazım.
+
+529
+01:33:35,951 --> 01:33:36,931
+Nothing but the key.
+
+530
+01:33:38,271 --> 01:33:40,011
+Defendment, nothing but the key.
+
+531
+01:33:40,911 --> 01:33:43,431
+O zaman, demek ki 3NF'ye bu aykırı.
+
+532
+01:33:43,511 --> 01:33:49,811
+O zaman, 3NF'yi, 3NF için bunu, şey yapmam lazım.
+
+533
+01:33:51,492 --> 01:33:53,032
+Bu, bir deki, count name.
+
+534
+01:33:53,751 --> 01:33:55,871
+Burada, bu, ben ne dersen.
+
+535
+01:33:56,271 --> 01:34:08,951
+General için normalizasyon yok. General için yok. Evet. İkin nF'yi sağlamıyor.
+
+536
+01:34:10,551 --> 01:34:17,032
+İstilisal bilim ve stilisiyonun şu ana kadar gördüğümüz manada partnerlersek neyi partnerleriz?
+
+537
+01:34:17,555 --> 01:34:34,075
+Aslında bunu da parçalacağız. Doğru, bir şey var. Yani, 3NF için parçalama yapacağız. Şunu parçalacağız. COUNTY NAME, TAXPATE, böyle parçalacağız. Bir de, araya PRICE için parçalacağız.
+
+538
+01:34:34,075 --> 01:34:43,115
+Ve gerek COUNTY NAME burada kalacak, gerek araya da burada kalacak. Tanki bu tablolarla join yapabilirim ya. Anladınız mı?
+
+539
+01:34:46,323 --> 01:34:47,823
+Varmış bir konu de seçenek.
+
+540
+01:34:52,787 --> 01:34:54,007
+Yeni anlamadım.
+
+541
+01:34:56,007 --> 01:34:58,007
+Bunu biraz tekiştirmek gerekiyor.
+
+542
+01:34:59,207 --> 01:35:04,687
+Hemen, egzersizler bunun için en güzel, en kolay, en güzel yolu.
+
+543
+01:35:04,687 --> 01:35:08,567
+Şimdi, maalesef dersi çalışarak gelinme alışkanlığı yok.
+
+544
+01:35:08,567 --> 01:35:10,268
+Yani bu bir gerçek.
+
+545
+01:35:10,268 --> 01:35:14,087
+Yani bu işe, ben de sabah koydum herhalde.
+
+546
+01:35:14,644 --> 01:35:25,644
+Ama, şimdi, normalizasyon, neyse o bir tarafa, yani, şimdi hemen, müdür anlaşılmasının için değiliz zaten. Ama, hani, burada, sonuyu, bir kata örneklerle,
+
+547
+01:35:27,644 --> 01:35:37,884
+anlaşılmayı çok zor paylaşımlar. Bir konu anlaşılmasıyla. Üçekil, bu anlaşılık, yani, temel kavramlarda çok iyi programlar oluşuyor.
+
+548
+01:36:26,323 --> 01:36:41,923
+Burada sadece bir aaa, bu falan bir motivasyon oluyor. O kadar yani, küçük tek yapma, şey yapmayınca kavramların anlatılması, oturtması, bilme gelmesi çok mümkün değil gibi şey yani.
+
+549
+01:36:41,923 --> 01:36:51,043
+Ya süper bir aldığı şey olacak. Olabilir hemen anlayacak yani. Ama tekstremek için tekrar gelir.
+
+550
+01:36:51,731 --> 01:37:19,231
+Neyse, yani bununla ilgili yorumlar zaten bilinen yorumlar ama, evet, şimdi hepsini unutmayalım isterseniz. Şu haftaya kaldığımız yerden devam edelim. Şurada özet geçiyor bakın. Bir tek zaten şey kaldı, General Formlar kaldı. Şunu unutarıştık mı? General Formlarla beraber, BCNF var, orada da ufak bir ek bir mana var. Sonra da sulu bitiyor zaten.
+
+551
+01:37:19,695 --> 01:37:38,275
+Ben buraya birkaç tane daha örnek ekleyeyim. Böyle pratik uygulamalar noktasında güzel olur. Aynı bir dökümanı, buraya ekleyeyim. Anlatırken de, diğer sene de, daha kolay olmuş olur. Şunu özetleyeyim.
+
+552
+01:37:44,819 --> 01:37:55,159
+Şimdi 1NF dediğimiz gibi, Multi-Value, Trivite'lara, nested, translationlara izin vermiyor.
+
+553
+01:37:55,960 --> 01:38:04,819
+Multi-Value, nested. Bunları, forMimeration, forEach, Multi-Value, Trivite, forNested, translation.
+
+554
+01:38:04,819 --> 01:38:10,819
+Yani, nestedler içiyse de, her bir nested için bir tane tablo ortaya çıkartıyor.
+
+555
+01:38:13,203 --> 01:38:34,891
+Örnek, şurada bunu yeni ekledim şuraya. Bu örnek mesela güzel. Yani şurada, Candidate içerisinde, JAPHISTORY var. JAPHISTORY içerisinde de SadariHISTORY var. Yani o JAPHISTORY içerisinde de SadariHISTORY var. Bunları böyle farklı tabloları, bir tabloda birleştirdim. Multi-Varius yani.
+
+556
+01:38:34,996 --> 01:38:41,996
+tasarımını da böylece yapabilirim ama bu ne oldu? 1NF'ye aykırı olur. Ben bu 3 tane tabloya...
+
+557
+01:38:46,387 --> 01:38:53,948
+Sonra ikinci madde, bu mesela çok güzel bir özetlemiş oldu yani, çok bilasa tam özetlenmiş.
+
+558
+01:38:53,948 --> 01:38:59,148
+Tabii, hani bunun bu özeti ezberleyip, tatlik edebilirsin yani, o selalı olur.
+
+559
+01:38:59,148 --> 01:39:05,587
+Ama şeyi de, tabii o 2NF'de bilmek lazım yani. Mesela 2NF ne diyor?
+
+560
+01:39:05,587 --> 01:39:11,979
+For the relations of Raminity, Content, Multiple, Red, Reviews. Bunun için yeterli 2NF, İktal edelim.
+
+561
+01:39:12,404 --> 01:39:25,404
+For relations, primary key, multiple attribute, veya tek attribute varsa, 2NF, yani bu sorun yok. Yani restricted için, F, general'da birazdan onu genelletiyoruz. Candidate key'lerde işleyebiliriz.
+
+562
+01:39:26,404 --> 01:39:37,404
+Bu durum için, sizden en çok nitelik varsa, problem başlıyor. Eğer öyleyse, non-n key attribute, yani o priming key'in haricindeki başka nitelik,
+
+563
+01:39:40,287 --> 01:40:05,287
+Bu, bir function independent on earth, a topu, prime-in-y, no NUNKEY, no, czyli bir söz, no, yani 2NF'yi sağlaması için, no NUNKEY, EFT TRIBÜ, NUNKEY olan, sanatlar dışındaki, başka bir nitelik olmamasıyla, prime-in-y, altına bağımlı olan, bu bir function independent olması lazım.
+
+564
+01:40:06,003 --> 01:40:11,763
+Bunun için de Dikompose ediyoruz. Yani o Dikompose oldukça anlasıldı herhalde.
+
+565
+01:40:12,020 --> 01:40:29,020
+Onun da tabi bazı yüce noktaları var, onun da lost olmaması lazım ama genel bağlanası da anlaşılıyor. 3NF ise geçicilik noktasında tek nitelik, prime milikli için yine bakmam lazım.
+
+566
+01:40:29,020 --> 01:40:40,020
+Çünkü non-prime olan nitelikler sadece prime milikliğe bağlı olması lazım. Prime milikli halinde baktiyere bağlı olmaması lazım.
+
+567
+01:40:40,020 --> 01:40:43,340
+olmaması lazım. Eğer geçtiyse ona göre paylaşmamamız lazım.
+
+568
+01:40:45,400 --> 01:40:47,640
+Evet, arkadaşlar,
+
+569
+01:40:48,140 --> 01:40:51,260
+bugün bir ders noktasında duralım.
+
+570
+01:40:53,080 --> 01:40:57,820
+Yani, %80, %20, %20, %20 kaldı,
+
+571
+01:40:57,820 --> 01:40:59,060
+B, JNF kaldı.
+
+572
+01:40:59,680 --> 01:41:02,380
+Ve, %23'lerde örnek yaparız.
+
+573
+01:41:02,800 --> 01:41:04,580
+Böylece, bir dahaki hafta,
