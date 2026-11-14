@@ -1,0 +1,8203 @@
+1
+00:02:53,389 --> 00:02:58,889
+Evet, günaydın kıymetli arkadaşlar, biraz geç başladık bugün.
+
+2
+00:02:58,889 --> 00:03:06,889
+Şimdi ben slide'ı bulayım, iyisinizdir inşallah diye tabii güzel dileklerimizi iletelim sizlere.
+
+3
+00:03:06,889 --> 00:03:13,699
+En son neyi anlatacağım ya?
+
+4
+00:03:13,699 --> 00:03:17,699
+Şunu anlatmış olduğumuz lazım.
+
+5
+00:03:17,699 --> 00:03:24,550
+Parametre aktarma yöntemlerinde hissediyorum.
+
+6
+00:03:24,550 --> 00:03:41,479
+En son macro ile ilgili bir örnek yapmışız arkadaşlar.
+
+7
+00:03:41,979 --> 00:03:46,979
+Bugün de parametre aktarma yöntemlerine geçiyoruz.
+
+8
+00:03:46,979 --> 00:03:50,979
+Aslında geçen hafta bir tanesini gördük bunun.
+
+9
+00:03:50,979 --> 00:03:54,979
+Register'da üstünden yordamlar arasında parametre nasıl aktarılır onu görmüş olduk.
+
+10
+00:03:54,979 --> 00:04:00,979
+Bu hafta onun haricinde olan iki tane daha yöntem var, onları da görmüş olacağız.
+
+11
+00:04:00,979 --> 00:04:06,939
+Şu an 17'sindeyiz.
+
+12
+00:04:07,439 --> 00:04:11,439
+Evet, hiç tatile de denk gelmiyor.
+
+13
+00:04:11,439 --> 00:04:18,439
+Programda herhangi bir şekilde değişiklik olmadan herhalde dönem başında planladığımız gibi programımızı tamamlayabiliriz.
+
+14
+00:04:18,439 --> 00:04:20,439
+O şekilde anlaşılıyor arkadaşlar.
+
+15
+00:04:20,439 --> 00:04:26,439
+Şimdi parametre aktarma yöntemlerinden yazmaç üzerinden parametre nasıl aktarılıyor?
+
+16
+00:04:26,439 --> 00:04:28,439
+Geçen hafta görmüştük.
+
+17
+00:04:28,439 --> 00:04:32,439
+Yani iki tane yordamımız olduğunu düşünün.
+
+18
+00:04:32,439 --> 00:04:35,439
+Birisi main yordam, birisi de yardımcı yordam.
+
+19
+00:04:35,939 --> 00:04:39,939
+Main yordamdan yardımcı yordamı parametre gönderebilmek için
+
+20
+00:04:39,939 --> 00:04:46,939
+Register'ların içerisine yazdığımız çeşitli değerleri yine gittiğimiz yordamda Register'ların içerisinde bulabiliyorduk.
+
+21
+00:04:46,939 --> 00:04:50,939
+Veya gittiğimiz yordamdan geri dönüş yapabilmek için
+
+22
+00:04:50,939 --> 00:04:56,939
+o yordamda ayarladığımız Register'ların değerlerini döndüğümüz yordam içerisinde bulabiliyorduk.
+
+23
+00:04:56,939 --> 00:05:02,939
+Buna Register üzerinden parametre aktarma yani yazmaç üzerinden parametre aktarma şekli deniyor.
+
+24
+00:05:03,439 --> 00:05:05,439
+Bir diğeri ise mesela şöyle düşünelim.
+
+25
+00:05:05,439 --> 00:05:08,439
+Göndereceğimiz veri sayısı daha fazla.
+
+26
+00:05:08,439 --> 00:05:10,439
+Yani nasıl diyelim.
+
+27
+00:05:10,439 --> 00:05:14,439
+Bizim toplasanız 10 tane 12 tane Register'ımız var biliyorsunuz.
+
+28
+00:05:14,439 --> 00:05:19,439
+Bu Register'lardan daha fazla veri göndermek isteyebilirsiniz yordama.
+
+29
+00:05:19,439 --> 00:05:23,439
+Böyle bir durumda mesela sitein kullanılması elverişli.
+
+30
+00:05:23,439 --> 00:05:24,439
+Onu nasıl yapacağız?
+
+31
+00:05:24,439 --> 00:05:28,439
+Sitein içerisine çeşitli değerleri koyacağız.
+
+32
+00:05:28,939 --> 00:05:32,939
+Karşı tarafa gittiğimizde ise yine aynı siteyi kullandığımızdan ötürü programın bir tane siteyi oluyor.
+
+33
+00:05:32,939 --> 00:05:36,939
+Her yordamın değil arkadaşlar programımızın bir tane siteyi oluyor.
+
+34
+00:05:36,939 --> 00:05:38,939
+Bu hep bu şekilde kurgulanıyor.
+
+35
+00:05:38,939 --> 00:05:44,939
+Karşı tarafa gittiğimizde ise yine bizim koyduğumuz verileri sitein içerisinde okuyabileceğiz.
+
+36
+00:05:44,939 --> 00:05:46,939
+Böyle bir avantajı var.
+
+37
+00:05:46,939 --> 00:05:47,939
+Onunla başlıyoruz.
+
+38
+00:05:47,939 --> 00:05:54,939
+Ardından böyle sanki yüksek seviyeli dillerde global değişken tanımlamak gibi
+
+39
+00:05:55,439 --> 00:05:59,439
+Yardamların kullanabilmesine izin vereceğimiz bir yapıda.
+
+40
+00:05:59,439 --> 00:06:01,439
+Bugün görüyor olacağız.
+
+41
+00:06:01,439 --> 00:06:09,439
+Derse başlamadan önce sizin sormak istediğiniz, söylemek istediğiniz ekstradan bir şey var mı arkadaşlar?
+
+42
+00:06:09,439 --> 00:06:11,439
+Yok, tamam.
+
+43
+00:06:11,439 --> 00:06:13,439
+Şimdi birisini görmüştük zaten.
+
+44
+00:06:13,439 --> 00:06:15,439
+İkincisi site üzerinden parametre aktardık.
+
+45
+00:06:15,439 --> 00:06:17,439
+İkincisi site üzerinden parametre aktardık.
+
+46
+00:06:17,439 --> 00:06:25,319
+İkincisi site üzerinden parametre aktardık.
+
+47
+00:06:25,319 --> 00:06:28,730
+İkincisi site üzerinden parametre aktardık.
+
+48
+00:06:28,730 --> 00:06:30,730
+İkincisi site üzerinden parametre aktardık.
+
+49
+00:06:31,230 --> 00:06:33,230
+İkincisi site üzerinden parametre aktardık.
+
+50
+00:06:33,230 --> 00:06:35,230
+Örnek üzerinden yaparsak daha güzel anlaşılır.
+
+51
+00:06:35,230 --> 00:06:37,230
+Her daim diye bir düşüncemiz var.
+
+52
+00:06:37,230 --> 00:06:39,230
+Biliyorsunuz siz de bunu.
+
+53
+00:06:39,230 --> 00:06:41,230
+Onu ne denir ona yapalım.
+
+54
+00:06:41,230 --> 00:06:43,230
+Şimdi
+
+55
+00:06:47,569 --> 00:06:49,569
+Bir garip bir şey oldu.
+
+56
+00:06:49,569 --> 00:07:04,779
+Şöyle yapacağız.
+
+57
+00:07:04,779 --> 00:07:06,779
+Hocamın soru soruyor da dersle ilgili.
+
+58
+00:07:06,779 --> 00:07:08,779
+Ona mesaj atmış olayım.
+
+59
+00:07:08,779 --> 00:07:10,779
+Ders başlamadan.
+
+60
+00:07:11,279 --> 00:07:15,110
+Mesela şöyle bir sorumuz olsun arkadaşlar.
+
+61
+00:07:15,110 --> 00:07:21,040
+Ardışlık 3 elemanı
+
+62
+00:07:21,040 --> 00:07:23,040
+üçgen kenarı olmayan bir dizide
+
+63
+00:07:23,040 --> 00:07:25,040
+en tane üçgenin kenarı tutulmaktadır.
+
+64
+00:07:25,040 --> 00:07:27,040
+Üçgen kenarını
+
+65
+00:07:27,040 --> 00:07:29,040
+site üzerinden alan kenarlarını
+
+66
+00:07:29,040 --> 00:07:31,040
+alan ve bu üçgenin kenarının
+
+67
+00:07:31,040 --> 00:07:33,040
+bu üçgenin alanının karesini
+
+68
+00:07:33,040 --> 00:07:35,040
+ailesi yazısı üzerinden döndüren
+
+69
+00:07:35,040 --> 00:07:37,040
+bir harici yordam yardımıyla
+
+70
+00:07:37,040 --> 00:07:39,040
+en büyük üçgenin alanının karesini bulan
+
+71
+00:07:39,040 --> 00:07:41,040
+ekzotif bir programı yazalım.
+
+72
+00:07:41,040 --> 00:07:43,040
+Yani şimdi
+
+73
+00:07:43,040 --> 00:07:45,040
+Kabaca mesela
+
+74
+00:07:45,540 --> 00:07:47,540
+Kabaca mesela şey üzerinde
+
+75
+00:07:47,540 --> 00:07:49,540
+durmak gerekirse nasıl bir çalışma
+
+76
+00:07:49,540 --> 00:07:51,540
+yapacağız.
+
+77
+00:07:51,540 --> 00:07:53,540
+Bizim bir tane dizimiz var.
+
+78
+00:07:53,540 --> 00:07:55,540
+Bir tane dizimiz var.
+
+79
+00:07:55,540 --> 00:07:57,540
+Bu dizimizin içerisinde
+
+80
+00:07:57,540 --> 00:07:59,540
+üçgen kenarları var.
+
+81
+00:07:59,540 --> 00:08:01,540
+Ardışlık sıra gelmiş üç tane kenar.
+
+82
+00:08:01,540 --> 00:08:03,540
+Bir üçgenin kenarını belirtiyor bize.
+
+83
+00:08:03,540 --> 00:08:05,540
+Mesela 8, 15, 17
+
+84
+00:08:05,540 --> 00:08:07,540
+diyelim ki üç tane kenar gelmiş.
+
+85
+00:08:07,540 --> 00:08:09,540
+Bu üç tane kenarı
+
+86
+00:08:09,540 --> 00:08:11,540
+karşı tarafa
+
+87
+00:08:11,540 --> 00:08:13,540
+yani harici yordama,
+
+88
+00:08:13,540 --> 00:08:15,540
+alanının karesini hesaplayacak
+
+89
+00:08:15,540 --> 00:08:17,540
+harici yordama göndereceğiz
+
+90
+00:08:17,540 --> 00:08:19,540
+ve buradan bir netice
+
+91
+00:08:19,540 --> 00:08:21,540
+bekliyor olacağız.
+
+92
+00:08:21,540 --> 00:08:23,540
+Fakat şeyi güzel
+
+93
+00:08:23,540 --> 00:08:25,540
+kurulmamız lazım. Bunu sitein içerisine nasıl
+
+94
+00:08:25,540 --> 00:08:27,540
+koyacağız. Öteki türlü üç tane
+
+95
+00:08:27,540 --> 00:08:29,540
+registre kullanmamız gerekiyordu.
+
+96
+00:08:29,540 --> 00:08:31,540
+Biliyorsunuz karşıya göndermek için.
+
+97
+00:08:31,540 --> 00:08:33,539
+Üç registre de her daim elimizde
+
+98
+00:08:33,539 --> 00:08:35,539
+bulunabilen bir şey olmayabilir.
+
+99
+00:08:35,539 --> 00:08:37,539
+Öyle bir problem var.
+
+100
+00:08:37,539 --> 00:08:39,539
+Biz o sebeple daha
+
+101
+00:08:39,539 --> 00:08:41,539
+az registrelerin
+
+102
+00:08:41,539 --> 00:08:43,539
+kullanımı ve sitein kullanımı nasıl oluyor
+
+103
+00:08:43,539 --> 00:08:45,539
+onu görmek adına bir çalışma
+
+104
+00:08:45,539 --> 00:08:47,539
+yapıyor olacağız burada.
+
+105
+00:08:47,539 --> 00:08:49,539
+Ben tabi ki kalemimi
+
+106
+00:08:49,539 --> 00:08:51,539
+çalıştırabilirsem
+
+107
+00:08:51,539 --> 00:08:53,539
+evet
+
+108
+00:08:53,539 --> 00:08:57,049
+yani bir
+
+109
+00:08:57,049 --> 00:08:59,049
+update aldı bilgisayar.
+
+110
+00:08:59,049 --> 00:09:03,100
+Çok üzücü bir şekilde.
+
+111
+00:09:03,100 --> 00:09:05,100
+Geçende de böyle olmuştu.
+
+112
+00:09:05,100 --> 00:09:07,100
+Bu updatelerde bu kadar problem yaşamaması lazım
+
+113
+00:09:07,100 --> 00:09:18,279
+bilgisayarların.
+
+114
+00:09:18,279 --> 00:09:20,279
+En azından ışığı yanması lazım.
+
+115
+00:09:20,279 --> 00:09:22,279
+Hadi şeyi
+
+116
+00:09:22,279 --> 00:09:24,279
+anlıyoruz ama
+
+117
+00:09:24,279 --> 00:09:26,279
+şunu kablosuna çıkarıp
+
+118
+00:09:26,279 --> 00:09:28,279
+takalım. Belki bundadır
+
+119
+00:09:28,279 --> 00:09:38,570
+problem. Bir şeylere izin
+
+120
+00:09:38,570 --> 00:09:40,570
+vermek gerekiyor herhalde. Neyse belki
+
+121
+00:09:40,570 --> 00:09:42,570
+akış diagramını çizmeden de
+
+122
+00:09:42,570 --> 00:09:44,570
+şey yapabiliriz.
+
+123
+00:09:44,570 --> 00:09:46,570
+Şunu çok özür diliyorum ama
+
+124
+00:09:46,570 --> 00:09:48,570
+bir ayarlarına bakalım
+
+125
+00:09:48,570 --> 00:09:50,570
+çalışıyor mu hala kendinde mi diye.
+
+126
+00:09:50,570 --> 00:09:52,570
+Device not found. Evet.
+
+127
+00:09:52,570 --> 00:09:56,039
+Bilgisayarıma bir update yaptım da
+
+128
+00:09:56,039 --> 00:09:58,039
+bu yeni bilgisayar
+
+129
+00:09:58,039 --> 00:10:00,039
+geldi ya.
+
+130
+00:10:00,039 --> 00:10:02,039
+Her şey bozulmuş.
+
+131
+00:10:02,039 --> 00:10:04,039
+Gördüğü Wi-Fi daha önce
+
+132
+00:10:04,039 --> 00:10:06,039
+bağlandığım Wi-Fi hallarına bile
+
+133
+00:10:06,039 --> 00:10:08,039
+bağlanmıyor artık. Tekrar şifresini istiyor.
+
+134
+00:10:08,039 --> 00:10:10,039
+Yani
+
+135
+00:10:10,039 --> 00:10:12,039
+gerizekalılar bir işi becerememişler.
+
+136
+00:10:12,039 --> 00:10:18,580
+Ondan sonra update diye bize kakalıyorlar.
+
+137
+00:10:18,580 --> 00:10:20,580
+Evet. Neyse.
+
+138
+00:10:20,580 --> 00:10:22,580
+Tabletim yok. Görmüyor. Onu bir ara
+
+139
+00:10:22,580 --> 00:10:24,580
+verdiğimizde şey yaparız.
+
+140
+00:10:24,580 --> 00:10:26,580
+Bakarız. Mausla çizmeye çalışayım.
+
+141
+00:10:26,580 --> 00:10:28,580
+Çizebildiğim kadar, anlatabildiğim kadar.
+
+142
+00:10:28,580 --> 00:10:30,580
+Ondan sonra tekrar
+
+143
+00:10:30,580 --> 00:10:32,580
+döneriz.
+
+144
+00:10:32,580 --> 00:10:34,580
+Tableti ben o ara uzun bir
+
+145
+00:10:34,580 --> 00:10:36,580
+ara veririz. Orada hallederim.
+
+146
+00:10:36,580 --> 00:10:38,580
+Şimdi yapmaya
+
+147
+00:10:38,580 --> 00:10:40,580
+çalıştığımız şey ne? Öncelikle ona
+
+148
+00:10:40,580 --> 00:10:42,580
+bakalım arkadaşlar.
+
+149
+00:10:42,580 --> 00:10:44,580
+Bizim bir dizimiz var.
+
+150
+00:10:44,580 --> 00:10:46,580
+İşte bir iki üç virgül.
+
+151
+00:10:46,580 --> 00:10:48,580
+Virgül yok aslında ama
+
+152
+00:10:48,580 --> 00:10:50,580
+ben güzel anlaşılsın diye virgül koyuyorum.
+
+153
+00:10:50,580 --> 00:10:52,580
+Virgül. Bir iki üç
+
+154
+00:10:52,580 --> 00:10:54,580
+böyle virgül.
+
+155
+00:10:54,580 --> 00:10:56,580
+Devam ediyor yani dizinin elemanları.
+
+156
+00:10:56,580 --> 00:10:58,580
+Tamam. Ardışık
+
+157
+00:10:58,580 --> 00:11:00,580
+gelen üç tane eleman.
+
+158
+00:11:00,580 --> 00:11:02,580
+Bu üç tane eleman
+
+159
+00:11:02,580 --> 00:11:04,580
+bir üçgenin kenarını belirtiyor.
+
+160
+00:11:04,580 --> 00:11:06,580
+Mesela işte şurası sekiz olsun.
+
+161
+00:11:06,580 --> 00:11:08,580
+Şurası on beş olsun.
+
+162
+00:11:08,580 --> 00:11:10,580
+Mausla yazdığım için
+
+163
+00:11:10,580 --> 00:11:12,580
+yazamıyorum. Şurası da on
+
+164
+00:11:12,580 --> 00:11:14,580
+yedi olmuş olsun. Tamam.
+
+165
+00:11:14,580 --> 00:11:16,580
+Sekiz, on beş,
+
+166
+00:11:16,580 --> 00:11:18,580
+on yedi üçgeni gibi bir şey olmuş olsun.
+
+167
+00:11:18,580 --> 00:11:20,580
+Tabii bildiğimiz
+
+168
+00:11:20,580 --> 00:11:22,580
+kesin bir şey var. Burada
+
+169
+00:11:22,580 --> 00:11:24,580
+verilen üç tane kenar muhakkak bir
+
+170
+00:11:24,580 --> 00:11:26,580
+üçgen oluşturuyor. Hocam bir iki üç
+
+171
+00:11:26,580 --> 00:11:28,580
+olsa o bir üçgen olmaz. Onu nasıl
+
+172
+00:11:28,580 --> 00:11:30,580
+değerlendirelim falan. Hani öyle bir şey
+
+173
+00:11:30,580 --> 00:11:32,580
+düşünmeyelim şu an. Bu üç tane
+
+174
+00:11:32,580 --> 00:11:34,580
+kenar muhakkak bir üçgen oluşturuyor.
+
+175
+00:11:34,580 --> 00:11:36,580
+Bir diğeri şu,
+
+176
+00:11:36,580 --> 00:11:38,580
+bir diğeri şu. Yani
+
+177
+00:11:38,580 --> 00:11:40,580
+şu şimdi birinci üçgen.
+
+178
+00:11:40,580 --> 00:11:42,580
+Şu ikinci üçgen.
+
+179
+00:11:42,580 --> 00:11:44,580
+Şu da üçüncü üçgen. Mesela üç tane
+
+180
+00:11:44,580 --> 00:11:46,580
+üçgenimiz olduğunu düşünelim. Böyle bir
+
+181
+00:11:46,580 --> 00:11:48,580
+senaryoda. Nasıl
+
+182
+00:11:48,580 --> 00:11:50,580
+bir şey yapmamız lazım? Öncelikle
+
+183
+00:11:50,580 --> 00:11:52,580
+şunun değerini
+
+184
+00:11:52,580 --> 00:11:54,580
+site'in içerisine atmamız
+
+185
+00:11:54,580 --> 00:11:56,580
+lazım.
+
+186
+00:11:56,580 --> 00:11:58,580
+Şunun değerini site'in içerisine attık.
+
+187
+00:11:58,580 --> 00:12:00,580
+Sekiz.
+
+188
+00:12:00,580 --> 00:12:02,580
+Bunun değerini sonrasında site'in içerisine
+
+189
+00:12:02,580 --> 00:12:04,580
+attık. İlk üçgen için konuşuyoruz.
+
+190
+00:12:04,580 --> 00:12:06,580
+On beş.
+
+191
+00:12:06,580 --> 00:12:08,580
+Ondan sonra
+
+192
+00:12:08,580 --> 00:12:10,580
+on yedi.
+
+193
+00:12:10,580 --> 00:12:12,580
+Şunun değerini site'ye attık.
+
+194
+00:12:12,580 --> 00:12:14,580
+Sitek de biliyorsunuz bizim
+
+195
+00:12:14,580 --> 00:12:16,580
+şu şekilde
+
+196
+00:12:16,580 --> 00:12:18,580
+Wordtip'in de bir
+
+197
+00:12:18,580 --> 00:12:20,580
+organizasyon. Şunu da attık.
+
+198
+00:12:20,580 --> 00:12:22,580
+Karşı taraftan işte öncelikle
+
+199
+00:12:22,580 --> 00:12:24,580
+sekizin alınması, sonra
+
+200
+00:12:24,580 --> 00:12:26,580
+on beşin alınması, sonra da
+
+201
+00:12:26,580 --> 00:12:28,580
+on yedinin alınması gibi bir durum
+
+202
+00:12:28,580 --> 00:12:30,580
+söz konusu olacak.
+
+203
+00:12:30,580 --> 00:12:32,580
+Pekala
+
+204
+00:12:32,580 --> 00:12:34,580
+bu işlem gerçekleştirilirken
+
+205
+00:12:34,580 --> 00:12:36,580
+nasıl yapacağız?
+
+206
+00:12:36,580 --> 00:12:38,580
+İşte bizim zaten bir
+
+207
+00:12:38,580 --> 00:12:40,580
+site pointer'ımız vardı. Hatırlarsanız.
+
+208
+00:12:40,580 --> 00:12:42,580
+Yani site'in içerisinde
+
+209
+00:12:42,580 --> 00:12:44,580
+şu an nerede olduğumuzu gösteren
+
+210
+00:12:44,580 --> 00:12:46,580
+bir site pointer'ımız vardı.
+
+211
+00:12:46,580 --> 00:12:48,580
+Site pointer'ımızın değerini
+
+212
+00:12:48,580 --> 00:12:50,580
+otomatik olarak site'in
+
+213
+00:12:50,580 --> 00:12:52,580
+içerisine bir şey atıldığında
+
+214
+00:12:52,580 --> 00:12:54,580
+veya site'den bir şey çekildiğinde
+
+215
+00:12:54,580 --> 00:12:56,580
+kendisi değiştiriyordu. Biz
+
+216
+00:12:56,580 --> 00:12:58,580
+kontrol etmiyorduk site pointer'ı.
+
+217
+00:12:58,580 --> 00:13:00,580
+Ama bir de hatırlarsanız şimdiye kadar
+
+218
+00:13:00,580 --> 00:13:02,580
+hiç kullanmadık belki. Yeri geldiğinde
+
+219
+00:13:02,580 --> 00:13:04,580
+kullanacağız demiştik. Bir de base pointer'ımız
+
+220
+00:13:04,580 --> 00:13:06,580
+vardı. Base pointer.
+
+221
+00:13:06,580 --> 00:13:08,580
+Bu base pointer'ın değerini
+
+222
+00:13:08,580 --> 00:13:10,580
+işte site'den bir şeyler
+
+223
+00:13:10,580 --> 00:13:12,580
+okumak ve yazmak için kullanıyoruz açıkçası.
+
+224
+00:13:12,580 --> 00:13:14,580
+Site pointer'la
+
+225
+00:13:14,580 --> 00:13:16,580
+base pointer'ın değerini eşitledikten sonra
+
+226
+00:13:16,580 --> 00:13:18,580
+move base pointer virgül
+
+227
+00:13:18,580 --> 00:13:20,580
+site pointer diyerek eşitledikten sonra
+
+228
+00:13:20,580 --> 00:13:22,580
+biz artık base pointer'ı
+
+229
+00:13:22,580 --> 00:13:24,580
+site'in içerisine istediğimiz gibi
+
+230
+00:13:24,580 --> 00:13:26,580
+erişim yapmak için kullanabiliriz.
+
+231
+00:13:26,580 --> 00:13:28,580
+Sitek Word tipinde bir
+
+232
+00:13:28,580 --> 00:13:30,580
+organizasyona sahip olduğu için
+
+233
+00:13:30,580 --> 00:13:32,580
+mesela düşünelim
+
+234
+00:13:32,580 --> 00:13:34,580
+yani site pointer'ın
+
+235
+00:13:34,580 --> 00:13:36,580
+gösterdiği en son değer şu an
+
+236
+00:13:36,580 --> 00:13:38,580
+17. Site pointer'ı
+
+237
+00:13:38,580 --> 00:13:40,580
+base pointer'a eşitledikten sonra
+
+238
+00:13:40,580 --> 00:13:42,580
+base pointer'ın gösterdiği değer de
+
+239
+00:13:42,580 --> 00:13:44,580
+17. Base pointer artı
+
+240
+00:13:44,580 --> 00:13:46,580
+2'nin gösterdiği değerine
+
+241
+00:13:46,580 --> 00:13:48,580
+15. Base pointer artı 4'ün
+
+242
+00:13:48,580 --> 00:13:50,580
+gösterdiği değerine 8.
+
+243
+00:13:50,580 --> 00:13:52,580
+Yani karşı tarafa
+
+244
+00:13:52,580 --> 00:13:54,580
+gönderdiğimiz şeye böyle
+
+245
+00:13:54,580 --> 00:13:56,580
+göreceli bir şekilde
+
+246
+00:13:56,580 --> 00:13:58,580
+erişebiliyoruz.
+
+247
+00:13:58,580 --> 00:14:00,580
+Bu da güzel
+
+248
+00:14:00,580 --> 00:14:02,580
+yönlerinden birisi.
+
+249
+00:14:02,580 --> 00:14:04,580
+Pekala böyle göreceli bir şekilde
+
+250
+00:14:04,580 --> 00:14:06,580
+erişebiliyoruz. Ama
+
+251
+00:14:06,580 --> 00:14:08,580
+biz bunları
+
+252
+00:14:08,580 --> 00:14:10,580
+karşı tarafa gönderdik. Karşı taraftan aldık.
+
+253
+00:14:10,580 --> 00:14:12,580
+Sonra da ne diyor? Buyur oradan
+
+254
+00:14:12,580 --> 00:14:14,580
+bunları alsın.
+
+255
+00:14:14,580 --> 00:14:16,580
+Bu üçgenin alanının şu
+
+256
+00:14:16,580 --> 00:14:18,580
+üçgenin alanının karesini bulsun.
+
+257
+00:14:18,580 --> 00:14:20,580
+Bize AX
+
+258
+00:14:20,580 --> 00:14:22,580
+rejisteri üzerinden geri
+
+259
+00:14:22,580 --> 00:14:24,580
+döndürsün. Nasıl yapacağız bu işi?
+
+260
+00:14:24,580 --> 00:14:26,580
+Üç tane bizim kenarımız var.
+
+261
+00:14:26,580 --> 00:14:28,580
+Bu üçgenin nasıl
+
+262
+00:14:28,580 --> 00:14:30,580
+bulacağız alanının karesini?
+
+263
+00:14:30,580 --> 00:14:32,580
+Bir fikri olan var mı?
+
+264
+00:14:32,580 --> 00:14:40,570
+Arkadaşlar ben
+
+265
+00:14:40,570 --> 00:14:42,570
+2007 yılında üniversite sınavına
+
+266
+00:14:42,570 --> 00:14:44,570
+girdim. Siz çok yakın
+
+267
+00:14:44,570 --> 00:14:46,570
+bir zamanda girdiniz. Lütfen
+
+268
+00:14:46,570 --> 00:14:48,570
+üç tane kenarını
+
+269
+00:14:48,570 --> 00:14:50,570
+biliyorsak alanını nasıl buluruz?
+
+270
+00:14:50,570 --> 00:14:52,570
+Söyleyin yani.
+
+271
+00:14:52,570 --> 00:14:59,139
+Cidden hiçbirinizde yok mu ya?
+
+272
+00:14:59,139 --> 00:15:01,139
+Allah Allah.
+
+273
+00:15:01,139 --> 00:15:03,139
+Bu kadar çabuk
+
+274
+00:15:03,139 --> 00:15:05,139
+unuttunuz yani bütün her şeyi.
+
+275
+00:15:05,139 --> 00:15:09,990
+Geometri yani.
+
+276
+00:15:09,990 --> 00:15:11,990
+Evet U'lu alan formülü var
+
+277
+00:15:11,990 --> 00:15:13,990
+arkadaşlar. U'lu
+
+278
+00:15:13,990 --> 00:15:15,990
+şuraya titre koyalım.
+
+279
+00:15:15,990 --> 00:15:17,990
+U'lu alan formülü.
+
+280
+00:15:19,990 --> 00:15:21,990
+Hiç duymamamız bu tarz
+
+281
+00:15:21,990 --> 00:15:23,990
+şeyleri de enteresan.
+
+282
+00:15:23,990 --> 00:15:25,990
+U'lu alan formülü.
+
+283
+00:15:25,990 --> 00:15:27,990
+Neydi? U.
+
+284
+00:15:27,990 --> 00:15:29,990
+Eşittir.
+
+285
+00:15:29,990 --> 00:15:31,990
+Üçgenimizin kenarları A,
+
+286
+00:15:31,990 --> 00:15:33,990
+B
+
+287
+00:15:33,990 --> 00:15:35,990
+ve C
+
+288
+00:15:35,990 --> 00:15:37,990
+uzunluğundaysa
+
+289
+00:15:37,990 --> 00:15:39,990
+üçgenimizin
+
+290
+00:15:39,990 --> 00:15:41,990
+kenarlarının uzunluğunun
+
+291
+00:15:41,990 --> 00:15:43,990
+yarısına U diyorduk.
+
+292
+00:15:43,990 --> 00:15:45,990
+Tamam mı?
+
+293
+00:15:45,990 --> 00:15:47,990
+Ondan sonra üçgenimizin alanı ise
+
+294
+00:15:47,990 --> 00:15:49,990
+A, B,
+
+295
+00:15:49,990 --> 00:15:51,990
+C. Biraz
+
+296
+00:15:51,990 --> 00:15:53,990
+yamuk yazıyorum. Kusura bakmayın.
+
+297
+00:15:53,990 --> 00:15:55,990
+Yok kalemim yok.
+
+298
+00:15:55,990 --> 00:15:57,990
+Birazdan olacak ama.
+
+299
+00:15:57,990 --> 00:15:59,990
+A, B, C şöyle yapacağız.
+
+300
+00:15:59,990 --> 00:16:01,990
+A, B, C üçgeninin
+
+301
+00:16:01,990 --> 00:16:03,990
+alanı
+
+302
+00:16:03,990 --> 00:16:05,990
+eşittir. Şu kapama parantezini
+
+303
+00:16:05,990 --> 00:16:07,990
+görmeyin. Eşittir.
+
+304
+00:16:07,990 --> 00:16:09,990
+U çarpı
+
+305
+00:16:09,990 --> 00:16:11,990
+U
+
+306
+00:16:11,990 --> 00:16:13,990
+eksi
+
+307
+00:16:13,990 --> 00:16:15,990
+A çarpı
+
+308
+00:16:15,990 --> 00:16:17,990
+U
+
+309
+00:16:17,990 --> 00:16:19,990
+eksi
+
+310
+00:16:19,990 --> 00:16:21,990
+B çarpı
+
+311
+00:16:21,990 --> 00:16:23,990
+U
+
+312
+00:16:23,990 --> 00:16:25,990
+eksi
+
+313
+00:16:25,990 --> 00:16:27,990
+C.
+
+314
+00:16:27,990 --> 00:16:29,990
+Bu yani. Tamam mı?
+
+315
+00:16:29,990 --> 00:16:31,990
+Tabii şimdi böyle bir soruyu soruyoruz bırakıyoruz.
+
+316
+00:16:31,990 --> 00:16:33,990
+Mesela sınavda karşınıza gelse
+
+317
+00:16:33,990 --> 00:16:35,990
+yani geometrisini çözemeyeceksiniz.
+
+318
+00:16:35,990 --> 00:16:37,990
+Şu an çok şaşırdım açıkçası.
+
+319
+00:16:37,990 --> 00:16:39,990
+Geometrisini çözemeyeceğinize.
+
+320
+00:16:39,990 --> 00:16:41,990
+Çünkü U'lu alan formülü falan kullanım
+
+321
+00:16:41,990 --> 00:16:43,990
+formül budur demeyiz yani.
+
+322
+00:16:43,990 --> 00:16:45,990
+Hani üniversitede bunları bilerek
+
+323
+00:16:45,990 --> 00:16:47,990
+bize geldiğiniz için
+
+324
+00:16:47,990 --> 00:16:49,990
+bu tarz şeyleri bildiğinizi
+
+325
+00:16:49,990 --> 00:16:51,990
+yapıyoruz açıkçası.
+
+326
+00:16:51,990 --> 00:16:53,990
+Böyle çözeceğiz. Yani karşıya
+
+327
+00:16:53,990 --> 00:16:55,990
+8'i, 15'i, 17'i yöndereceğiz.
+
+328
+00:16:55,990 --> 00:16:57,990
+Bunların üçünü toplayacak, ikiye
+
+329
+00:16:57,990 --> 00:16:59,990
+bölecek. Böldü, U'yu buldu.
+
+330
+00:16:59,990 --> 00:17:01,990
+Daha sonra U'yla
+
+331
+00:17:01,990 --> 00:17:03,990
+U'dan A'yı çıkartacak,
+
+332
+00:17:03,990 --> 00:17:05,990
+U'dan B'yi çıkartacak, U'dan C'yi
+
+333
+00:17:05,990 --> 00:17:07,990
+çıkartacak.
+
+334
+00:17:07,990 --> 00:17:09,990
+Bu şekilde bir
+
+335
+00:17:09,990 --> 00:17:11,990
+alanın karesi. Tabii bu da alanının
+
+336
+00:17:11,990 --> 00:17:13,990
+karesini veriyor. Çok özür dilerim.
+
+337
+00:17:13,990 --> 00:17:15,990
+Aslında U'lu alan formülü, pardon şuraya yazmayalım.
+
+338
+00:17:15,990 --> 00:17:17,990
+Şöyle bir şey.
+
+339
+00:17:17,990 --> 00:17:19,990
+O yüzden adam alanının karesini
+
+340
+00:17:19,990 --> 00:17:21,990
+bulun diyor. Tamam mı? Direkt şu
+
+341
+00:17:21,990 --> 00:17:23,990
+karakökte hiç uğraşmayın diye
+
+342
+00:17:23,990 --> 00:17:25,990
+alanının karesini bulun demesinin sebebi o.
+
+343
+00:17:25,990 --> 00:17:27,990
+Şu karakökte hiç uğraşmıyorsunuz böyle olunca.
+
+344
+00:17:27,990 --> 00:17:29,990
+Bir güzellik
+
+345
+00:17:29,990 --> 00:17:31,990
+tanınmış burada yani.
+
+346
+00:17:33,990 --> 00:17:35,990
+Evet, anlaşılmıştır umarım.
+
+347
+00:17:37,990 --> 00:17:39,990
+Yazalım, ondan sonra
+
+348
+00:17:39,990 --> 00:17:41,990
+da çalıştıralım.
+
+349
+00:17:41,990 --> 00:17:43,990
+Sorusu olan varsa tabi soruyu alabiliriz.
+
+350
+00:17:43,990 --> 00:17:49,319
+Evet, beni duyuyor musunuz arkadaşlar?
+
+351
+00:17:49,319 --> 00:17:51,319
+En azından bir onu sorayım.
+
+352
+00:17:51,319 --> 00:17:53,319
+Bir, iki, üç.
+
+353
+00:17:53,319 --> 00:17:55,319
+Teşekkür ederiz.
+
+354
+00:17:57,319 --> 00:17:59,319
+Şimdi bakalım bağlanalım. Bilgisayarımız
+
+355
+00:17:59,319 --> 00:18:01,319
+açık.
+
+356
+00:18:01,319 --> 00:18:03,319
+Güzel.
+
+357
+00:18:03,319 --> 00:18:05,319
+Burada da yazabiliriz aslında.
+
+358
+00:18:05,319 --> 00:18:09,049
+Ya da burada yazalım. Bugün
+
+359
+00:18:09,049 --> 00:18:11,049
+her şey birbirine girdi. Yani bak
+
+360
+00:18:11,049 --> 00:18:13,049
+uzak masa üstüne bile bağlanamıyorum.
+
+361
+00:18:13,049 --> 00:18:15,049
+Yani bir update
+
+362
+00:18:15,049 --> 00:18:17,049
+bu kadar mı olur ya?
+
+363
+00:18:17,049 --> 00:18:20,779
+Neyse.
+
+364
+00:18:20,779 --> 00:18:22,779
+Dersdeyiz, küfür etmeyelim.
+
+365
+00:18:22,779 --> 00:18:24,779
+Eee,
+
+366
+00:18:24,779 --> 00:18:26,779
+ekranın tamamını paylaşalım ki şöyle
+
+367
+00:18:26,779 --> 00:18:28,779
+sizde şeyi görmüş olun.
+
+368
+00:18:28,779 --> 00:18:32,059
+Kip diyelim şimdilik.
+
+369
+00:18:32,059 --> 00:18:34,059
+[öğrenci] ondan sonra sileriz.
+
+370
+00:18:34,059 --> 00:18:36,059
+Sublime texte
+
+371
+00:18:36,059 --> 00:18:40,839
+yazalım. Şimdi
+
+372
+00:18:40,839 --> 00:18:42,839
+biraz da büyütebilirsek fontunu
+
+373
+00:18:42,839 --> 00:18:44,839
+güzel olur.
+
+374
+00:18:44,839 --> 00:18:46,839
+Şu zoom'ın şeyleri bir gitse
+
+375
+00:18:46,839 --> 00:18:48,839
+fontu nereden büyütüyoruz
+
+376
+00:18:48,839 --> 00:18:50,839
+bilen arkadaş hızlıca söylerse
+
+377
+00:18:50,839 --> 00:18:52,839
+daha güzel olur.
+
+378
+00:18:52,839 --> 00:18:59,160
+Edit text
+
+379
+00:18:59,160 --> 00:19:01,160
+böyle preference gibi bir şey
+
+380
+00:19:01,160 --> 00:19:03,160
+olsa, settings
+
+381
+00:19:03,160 --> 00:19:05,160
+font
+
+382
+00:19:05,160 --> 00:19:07,160
+larger
+
+383
+00:19:07,160 --> 00:19:09,160
+ne oldu? Larger oldu mu?
+
+384
+00:19:09,160 --> 00:19:11,160
+Bu mu yani? Böyle istediğimiz boyutları
+
+385
+00:19:11,160 --> 00:19:13,160
+giremiyor muyuz?
+
+386
+00:19:13,160 --> 00:19:15,160
+Ha, command plus la abi.
+
+387
+00:19:15,160 --> 00:19:21,450
+Command plus.
+
+388
+00:19:21,450 --> 00:19:28,599
+Plus mu yok?
+
+389
+00:19:28,599 --> 00:19:35,660
+Larger.
+
+390
+00:19:35,660 --> 00:19:37,660
+Bir kaç kere larger
+
+391
+00:19:37,660 --> 00:19:39,660
+yaptıracak bana herhalde.
+
+392
+00:19:39,660 --> 00:19:41,660
+Boyutumu girebilsem ne kadar güzel olurdu
+
+393
+00:19:41,660 --> 00:19:43,660
+aslında.
+
+394
+00:19:43,660 --> 00:19:45,660
+Neyse, daha güzel okunuyor herhalde. Şimdi
+
+395
+00:19:45,660 --> 00:19:47,660
+eee, bunu
+
+396
+00:19:47,660 --> 00:19:49,660
+exetifi bir programda yazacağımız için
+
+397
+00:19:49,660 --> 00:19:51,660
+öncelikle ana yordamımızı
+
+398
+00:19:51,660 --> 00:19:53,660
+yazalım. Oradaki değerlerimizi
+
+399
+00:19:53,660 --> 00:19:55,660
+tanımlayalım. Ondan sonra
+
+400
+00:19:55,660 --> 00:19:57,660
+yardımcı yordamımızı, şu
+
+401
+00:19:57,660 --> 00:19:59,660
+şeyin alanını
+
+402
+00:19:59,660 --> 00:20:01,660
+bulan, alanının karesini bulan
+
+403
+00:20:01,660 --> 00:20:03,660
+yardımcı yordamımızı yazmış
+
+404
+00:20:03,660 --> 00:20:05,660
+oluruz arkadaşlar.
+
+405
+00:20:05,660 --> 00:20:07,660
+Önce stack segmentte başlayalım.
+
+406
+00:20:07,660 --> 00:20:09,660
+S
+
+407
+00:20:09,660 --> 00:20:11,660
+define word 20
+
+408
+00:20:11,660 --> 00:20:13,660
+İşte bakın stack üzerinden eğer ki veri gönderecekseniz
+
+409
+00:20:13,660 --> 00:20:15,660
+buradaki sıkıntı başlıyor.
+
+410
+00:20:15,660 --> 00:20:17,660
+Ne demek istiyorum?
+
+411
+00:20:17,660 --> 00:20:19,660
+Sıkıntı başlıyor. Bugün en kaçı?
+
+412
+00:20:19,660 --> 00:20:21,660
+17, 12,
+
+413
+00:20:21,660 --> 00:20:23,660
+20, a.a,
+
+414
+00:20:23,660 --> 00:20:25,660
+asm diyelim. Bunu yine sizle paylaşırız
+
+415
+00:20:25,660 --> 00:20:27,660
+belki.
+
+416
+00:20:27,660 --> 00:20:29,660
+Allah Allah yine read only.
+
+417
+00:20:31,660 --> 00:20:33,660
+Buradaki sıkıntı ne?
+
+418
+00:20:33,660 --> 00:20:35,660
+Stack segmentin
+
+419
+00:20:35,660 --> 00:20:37,660
+büyük olabileceği
+
+420
+00:20:37,660 --> 00:20:39,660
+gibi bir şey tasarlamanız
+
+421
+00:20:39,660 --> 00:20:41,660
+gerekebilir. Yani şu an mesela
+
+422
+00:20:41,660 --> 00:20:43,660
+site'nin içerisine 3 tane veri koyuyoruz.
+
+423
+00:20:43,660 --> 00:20:45,660
+Ama site'nin içerisine 3'den fazla
+
+424
+00:20:45,660 --> 00:20:47,660
+veri koymanız gereken çeşitli durumlar
+
+425
+00:20:47,660 --> 00:20:49,660
+söz konusu olabilir.
+
+426
+00:20:49,660 --> 00:20:51,660
+Arkadaşlar. O yüzden
+
+427
+00:20:51,660 --> 00:20:53,660
+site'inizi ne kadar kullanıyorsunuz, maksimum
+
+428
+00:20:53,660 --> 00:20:55,660
+ne kadar dolduruyorsunuz bunu iyi
+
+429
+00:20:55,660 --> 00:20:57,660
+bilmeniz lazım. Bugün bunun bir
+
+430
+00:20:57,660 --> 00:20:59,660
+hesabını sizinle beraber yapacağız.
+
+431
+00:20:59,660 --> 00:21:01,660
+Harici yordamı yazarken site'imizin
+
+432
+00:21:01,660 --> 00:21:03,660
+yerler doluyor olduğunu göreceğiz.
+
+433
+00:21:03,660 --> 00:21:05,660
+My data segment
+
+434
+00:21:05,660 --> 00:21:07,660
+segment
+
+435
+00:21:07,660 --> 00:21:11,130
+para
+
+436
+00:21:11,130 --> 00:21:13,130
+D
+
+437
+00:21:13,130 --> 00:21:15,130
+şimdi değişkenlerimizi tanımlayalım. Kenarlar
+
+438
+00:21:15,130 --> 00:21:17,130
+diye bir dizimiz olsun.
+
+439
+00:21:17,130 --> 00:21:19,130
+Ars tarafa göndereceğim, uğraşmayayım diye
+
+440
+00:21:19,130 --> 00:21:21,130
+word tanımlamış
+
+441
+00:21:21,130 --> 00:21:23,130
+oldum. Eğer nasıl
+
+442
+00:21:23,130 --> 00:21:25,130
+mesela byte tanımlı olsaydı
+
+443
+00:21:25,130 --> 00:21:27,130
+a ise alırdınız, alırdınız, convert byte
+
+444
+00:21:27,130 --> 00:21:29,130
+to word yapardınız. O şekilde site'ye de
+
+445
+00:21:29,130 --> 00:21:31,130
+koyabilirdiniz. Yani
+
+446
+00:21:31,130 --> 00:21:54,130
+O işlerle hiç uğraşmayalım diye, bakın bir üçgen şu, bir üçgen bu, bir üçgen de şu, tam üç tane üçgenimiz var yani, o yüzden kaç tane üçgenimiz var, define word 3 ve en büyük alanın ne olduğunu merak ediyoruz.
+
+447
+00:21:54,130 --> 00:22:07,130
+En büyük alan tabi şu hesapladığınızda muhtemelen word gibi bir şeye karşılık gelebilir, soru şartla koyabilirsiniz, sıfırda koyabilirsiniz, herhangi bir şey atayabilirsiniz, içeride yapacağınız işleme göre.
+
+448
+00:22:07,130 --> 00:22:17,130
+Evet, yani şunları siteye koyuyoruz ve karşı tarafta bunları sitekten alarak bir operasyon gerçekleştireceğiz.
+
+449
+00:22:17,130 --> 00:22:44,130
+MyCodeSegment, segment para, ka, assume, cs, mycs, ds, myds, ss, myss şeklinde, ana yordamımızı yazalım, ana, hop, proc, far, hemen anayı kapatalım, ana, endProcedure, hemen üstünde return far,
+
+450
+00:22:44,130 --> 00:23:07,130
+mycs, end, segment, end, ana. Ne yapıyordu? push, ds, exhort, ax, ax, push, ax, move, ax, myds, move, ds, ax.
+
+451
+00:23:07,130 --> 00:23:16,130
+Artık bunları anlatmama gerek yok herhalde, bunları alışmışsınızdır diye düşünüyorum, hep standart yaptığımız çeşitli şeyler.
+
+452
+00:23:16,130 --> 00:23:24,130
+Şimdi bu işlemi kaç kere gerçekleştireceğiz? 3 tane üçgenimiz var şurada, o yüzden üç kere gerçekleştireceğiz kıymetli arkadaşlar.
+
+453
+00:23:24,130 --> 00:23:42,130
+Öncelikle cx'in değerini üçe set edeyim, move, cx, end. Biri tabi dizisel çeşitli operasyonlar gerçekleştireceğimiz için yani birinci üçgen için dizinin sıfırıncı, birinci, ikinci elemanını, ikinci üçgen için dizinin birinci, üçüncü, dördüncü, beşinci elemanını falan gönderiyoruz.
+
+454
+00:23:42,130 --> 00:23:58,130
+O yüzden yine bir indis yazmaçımızın olması güzel. Burada mesela işte s'yi kullanıyor olalım, s'nin değerini sıfırladım. Bizi yani kenarlar s'ı şu an 6'yı gösteriyor olacak arkadaşlar.
+
+455
+00:23:58,130 --> 00:24:13,130
+Tamam, çok güzel. Mesela şöyle diyelim yani kenarlar s'ı dediğimizde şunu göstermiş olduk. İşte bunu site'in içerisine atlıyor adam, atalım, push, bu işte attık.
+
+456
+00:24:13,130 --> 00:24:28,130
+Ardından bundan bir sonrakini yine atalım diyor. Ona nasıl erişiyorduk? Artı 2. Hocam niye artı 1 değil? Site word tanımlıydı çünkü. Word tanımlı olduğu için artı 2 ile erişiyoruz kıymetli arkadaşlar.
+
+457
+00:24:28,130 --> 00:24:42,130
+Yine artı 4 ile de, tabi buradaki önemli hususlardan birisi şu, önce bunu, sonra bunu, sonra bunu atıyorsak karşıda da önce bunu, sonra bunu, sonra bunu buluyor olacağız.
+
+458
+00:24:42,130 --> 00:24:57,380
+O yüzden hangi sırayla attığınızın da bir önemi var. Karşı tarafta bunu okuyan için dikkatle atmak lazım. Call falan bu. Call neydi hatırlarsanız.
+
+459
+00:24:57,380 --> 00:25:06,380
+Bizim harici yordamımızı call komutuyla çağırıyorduk yordamlarımızı. Burada da onu kullanıyor olacağız.
+
+460
+00:25:06,380 --> 00:25:21,380
+Şimdi yordamımız var, birazdan yazacağız bunu. Bu bize şu üçgenin alanının karesini buldu ve bize AX rejistörü üzerinden döndürdü.
+
+461
+00:25:21,380 --> 00:25:30,380
+Bir de soruda ne istiyordu hatırlarsanız, bu kenarların karelerinin en büyük olanını bulalım. En büyük olanını bulalım.
+
+462
+00:25:30,380 --> 00:25:38,380
+Mesela şu üçgeni gönderdim, sallıyorum şu an bana 12 döndürdü. Tamam mı? Şunu gönderdim 17 döndürdü, şunu gönderdim 4 döndürdü.
+
+463
+00:25:38,380 --> 00:25:45,380
+İşte şu 17'yi bulayım istiyorum. Anlatabiliyor muyum? O yüzden ilk gelen üçgeni, en büyük olanını başta sıfıra set etmiştim zaten.
+
+464
+00:25:45,380 --> 00:25:52,380
+Herhangi bir üçgenin alanının sıfırdan daha küçük olamayacağını bildiğim için. Üçgenin alanını, en büyük üçgenin alanını sıfıra set etmiştim.
+
+465
+00:25:52,380 --> 00:25:59,380
+Ve ilk gelen değerle bunu karşılaştırıyorum. İlk gelen değer sıfırdan daha büyükse en büyük alan bu olmuş olacak.
+
+466
+00:25:59,380 --> 00:26:15,380
+Yani compare AX rejistörü en büyük alan karşılaştırdım. Eğer ki below ise yani küçüğünde ise şu gelen değer bundan daha küçükse gelen değer daha küçüktür.
+
+467
+00:26:15,380 --> 00:26:30,380
+Küçük diye bir label'a zıplasın. Değilse, küçük değilse, büyük ve eşitse mesela onun değerini set edelim move en büyük alan virgül AX.
+
+468
+00:26:30,380 --> 00:26:37,849
+Burada şeyi de kurgulayabilirsiniz. Ya hocam eşit olduğunda da atamamıza gerek yok zaten o küçük falan.
+
+469
+00:26:37,849 --> 00:26:46,849
+Böyle olursa eşit olup da sıralama olarak en alanları eşit olup da sıralama olarak dizide sonda yer alanı buluruz.
+
+470
+00:26:46,849 --> 00:26:55,849
+Diğer türlü e-cool ile beraber yapılırsa ilkini buluruz. Yani o aradaki farkı zaten siz de anlayabiliyorsunuz nasıl bir şey olduğunu.
+
+471
+00:26:55,849 --> 00:27:03,849
+Ardından S'ının değerini artırmamız lazım ki bir sonraki elemana geçelim. S'ının değerini kaç arttıracağız arkadaşlar?
+
+472
+00:27:03,849 --> 00:27:14,279
+Altı. Çok teşekkür ediyoruz. Kesinlikle altı olarak arttırmamız gerekiyor. Niye?
+
+473
+00:27:14,279 --> 00:27:23,279
+Artık bizim ise bak şu S'ı, S'ı artı 2, S'ı artı 4. Artık şuradan başlayacağımız için şurası da S'ı artı 6.
+
+474
+00:27:23,279 --> 00:27:36,279
+S'ı virgül alt. Daha sonra loop ile beraber dönüyoruz. Yeni değerleri siteye atıp onları da kontrol ediyoruz. Bu.
+
+475
+00:27:36,279 --> 00:27:42,279
+Anayordanımız bu. Read only file. Niye buraya kaydettik o zaman biz bunu?
+
+476
+00:27:42,279 --> 00:27:47,279
+Kaydedemedikten sonra ben ne anladım bu işten. Save as.
+
+477
+00:27:47,279 --> 00:27:52,279
+Şöyle masaj üstüne kaydedelim ki böyle bir yerlere kaydetmemiş olalım.
+
+478
+00:28:03,819 --> 00:28:11,819
+Şimdi buraya kadar sorusu olan yoksa yardımcı yordamı yazalım arkadaşlar. Var mı buraya kadar sorusu olan?
+
+479
+00:28:11,819 --> 00:28:25,140
+Yok. Yardımcı yordamımızı yazalım beraber. Yine onu da kaydedelim ki bunları sizinle paylaşıyoruz.
+
+480
+00:28:25,140 --> 00:28:34,140
+Yerimi b.asm olmuş olsun. MyCode şu sefer şeyimi değiştiriyorum.
+
+481
+00:28:34,140 --> 00:28:40,140
+Segment tanımı para kod olmuş olsun.
+
+482
+00:28:40,140 --> 00:28:50,140
+Geçen haftadan hatırlarsanız tek bir tane kod segmenti yazdığımız durumda. Arkadaşlar ekstradan şey için uğraşmıyorduk.
+
+483
+00:28:50,140 --> 00:28:57,140
+İşte data segment tanımlamak için. Stake segment tanımlamak için ekstradan uğraşmıyorduk.
+
+484
+00:28:57,140 --> 00:29:03,140
+Direkt burada alan bul yordamını kullanıyor olacağız.
+
+485
+00:29:03,140 --> 00:29:13,140
+Procedure far. Niye far? Çünkü harici yani nasıl söyleyeyim intersegment bir yordam.
+
+486
+00:29:13,140 --> 00:29:21,140
+Bunu geçen hafta görmüştük. Intersegment bir yordam. Bunun kod segmenti MyCS. Bunun kod segmenti MyCode.
+
+487
+00:29:21,140 --> 00:29:34,140
+Intersegment bir yordam olduğu için tipinin de far olmasını bekliyoruz. Arkadaşlar alan bul diyerek and procedure kapattık.
+
+488
+00:29:34,140 --> 00:29:44,140
+MyCode and segment and tan sonra herhangi bir şey yazmıyoruz sonuna. Siz de fark etmişsinizdir zaten.
+
+489
+00:29:44,140 --> 00:29:53,140
+Şimdi bakın nasıl bir operasyon gerçekleştiriyor olacağım. Harici yordamlarda artık ben registre üzerinden veri almıyorsam.
+
+490
+00:29:53,140 --> 00:30:00,140
+Bu programda hali hazırda kullana gelmiş olduğum çeşitli registre'lar varsa.
+
+491
+00:30:00,140 --> 00:30:10,140
+Ama ben harici yordamı yazdığım için yani alan bul yordamını yazdığım için hangi registre'lerin orada kullanıldığını hangilerine müdahale etmemem gerektiğini bilmiyorum.
+
+492
+00:30:10,140 --> 00:30:25,140
+O yüzden arkadaşlar bunu hiçbir zaman unutmayın. Harici yordamlarınızın içinde kullandığınız registre'ların değerlerini kullanmaya başlamadan önce site'in içine atmanız.
+
+493
+00:30:25,140 --> 00:30:35,140
+Ardından bunları tekrardan program bitmeden hemen önce sitekten çekmeniz beklenir. Tamam mı?
+
+494
+00:30:35,140 --> 00:30:42,140
+Mesela ben bu programda kullanacağım registre'leri şöyle bir şey yapayım yazayım onları site'ye atayım.
+
+495
+00:30:42,140 --> 00:30:57,140
+Mesela ben BX kullanacağım. Normalde hani önce kod yazılır ondan sonra bu yapılır ama bir hani size bunun nasıl hesaplandığını göstermek için şey yapıyorum ve base pointer bu dört tane yazmaç'ı kullanacağım.
+
+496
+00:30:57,140 --> 00:31:06,140
+Şimdi gelin şurada bu yazmaçlarla ilgili bir hesaplama yapalım. Ondan sonra bu işe tekrardan geri dönelim.
+
+497
+00:31:06,140 --> 00:31:13,140
+Tamam yani kalemimin olmaması çok talihsiz tabii inşallah yazabiliriz.
+
+498
+00:31:13,140 --> 00:31:19,140
+Şimdi bakın şu bizim site'imiz tamam bu bizim site'imiz.
+
+499
+00:31:19,140 --> 00:31:23,140
+Site'in içerisine ilk ne attık? 3gen'in birinci kenarını.
+
+500
+00:31:23,140 --> 00:31:28,140
+Şurası K1 tamam.
+
+501
+00:31:28,140 --> 00:31:33,140
+Ardından şeyin ikinci elemanını attık.
+
+502
+00:31:33,140 --> 00:31:40,140
+Ben köşe fantez yapmayayım size K2 diyeyim siz anlayın bu 3gen'in ikinci elemanı arkadaşlar.
+
+503
+00:31:40,140 --> 00:31:44,140
+Ardından üçüncü elemanını attık K3.
+
+504
+00:31:44,140 --> 00:31:48,140
+Hocam nerede atıyoruz diye soran arkadaşlara şurada atıyoruz işte.
+
+505
+00:31:48,140 --> 00:31:52,140
+Birinci elemanı attık ikinci elemanı attık üçüncü elemanı attık.
+
+506
+00:31:52,140 --> 00:31:58,140
+Hocam bizden önce Stake'e de bir şeyler atmıştık onları niye göstermedik yani evet onlar da var daha hatta onları da gösterelim.
+
+507
+00:31:58,140 --> 00:32:04,140
+Doğru söylüyorsunuz o diyen arkadaş çok doğru söyledi yani onlar da var diye.
+
+508
+00:32:04,140 --> 00:32:10,140
+Stake böyle yamuk olmuyor tabi ama yine de şurada data segment var.
+
+509
+00:32:10,140 --> 00:32:14,140
+Data segment şurada da sıfır var.
+
+510
+00:32:14,140 --> 00:32:20,140
+Site'in içerisine bunları attık tamam şunları attık sonra şuna attık.
+
+511
+00:32:20,140 --> 00:32:26,140
+Ardından call harici yordan çağırdığımız anda ne oluyordu?
+
+512
+00:32:26,140 --> 00:32:32,140
+Öncelikle bizim kod segmentimizi site'in içerisinde bu call komutu otomatik olarak atıyordu.
+
+513
+00:32:32,140 --> 00:32:36,140
+Ardından bir de offset değerini atıyordu.
+
+514
+00:32:36,140 --> 00:32:38,140
+Off.
+
+515
+00:32:38,140 --> 00:32:40,140
+Off.
+
+516
+00:32:40,140 --> 00:32:42,140
+Set.
+
+517
+00:32:42,140 --> 00:32:44,140
+Hay be mouse'la ne kadar kötü yazıyorum.
+
+518
+00:32:44,140 --> 00:32:46,140
+Offset değerini site'ye atıyordu.
+
+519
+00:32:46,140 --> 00:32:50,140
+Bakın bizim şeylerimiz burada.
+
+520
+00:32:50,140 --> 00:32:52,140
+Ne denilir ona?
+
+521
+00:32:52,140 --> 00:32:54,140
+Üçgen kenarlarımız burada.
+
+522
+00:32:54,140 --> 00:32:56,140
+Ardından şu offset değerleri atıldı.
+
+523
+00:32:56,140 --> 00:33:04,140
+Ve biz şurada yazacağım program içerisinde şu dört tane yazmacı kullandığım için bunları da site'ye atıyorum.
+
+524
+00:33:04,140 --> 00:33:06,140
+Bunları da site'ye atıyorum.
+
+525
+00:33:06,140 --> 00:33:08,140
+Ne onlar abi?
+
+526
+00:33:08,140 --> 00:33:10,140
+Hemen yazıyoruz.
+
+527
+00:33:10,140 --> 00:33:12,140
+Bx.
+
+528
+00:33:12,140 --> 00:33:15,900
+Cx.
+
+529
+00:33:15,900 --> 00:33:17,900
+Cx.
+
+530
+00:33:17,900 --> 00:33:19,900
+Ne?
+
+531
+00:33:19,900 --> 00:33:21,900
+De.
+
+532
+00:33:21,900 --> 00:33:23,900
+De.
+
+533
+00:33:23,900 --> 00:33:29,670
+Ve base pointer.
+
+534
+00:33:29,670 --> 00:33:31,670
+Base pointer.
+
+535
+00:33:31,670 --> 00:33:35,670
+Site'in içerisinde bakın ne kadar veri attık.
+
+536
+00:33:35,670 --> 00:33:39,670
+Basit bir program için bile bayağı bir veri atmamız gerekti.
+
+537
+00:33:39,670 --> 00:33:45,670
+Site'imizin hemen şöyle Word tipinde organize olduğunu da şurada gösterelim.
+
+538
+00:33:45,670 --> 00:33:51,670
+Bir, iki, üç, dört, beş, altı, yedi, sekiz, dokuz, on, on bir.
+
+539
+00:33:51,670 --> 00:33:53,670
+Kafadan dört tane de böyle bir durumda.
+
+540
+00:33:53,670 --> 00:33:55,670
+Üç, dört tane de.
+
+541
+00:33:55,670 --> 00:33:59,670
+Onu son intraplara anlattığımız hafta göreceğiz.
+
+542
+00:33:59,670 --> 00:34:03,670
+Dört, beş tane de işletim sistemi kullansa.
+
+543
+00:34:03,670 --> 00:34:05,670
+On bir, on beş.
+
+544
+00:34:05,670 --> 00:34:07,670
+Biz değerimizi kaç set etmiştik?
+
+545
+00:34:07,670 --> 00:34:09,670
+Bakalım.
+
+546
+00:34:09,670 --> 00:34:11,670
+Yirmi.
+
+547
+00:34:11,670 --> 00:34:13,670
+Yirmi güzel.
+
+548
+00:34:13,670 --> 00:34:15,670
+Ama bundan hesapladığınız daha fazla stack kullanıyorsunuz.
+
+549
+00:34:15,670 --> 00:34:17,670
+Doluyor.
+
+550
+00:34:17,670 --> 00:34:19,670
+O zaman yirmi yetmez.
+
+551
+00:34:19,670 --> 00:34:21,670
+Onun hesabını da görmüş olduk.
+
+552
+00:34:21,670 --> 00:34:23,670
+Şimdi gösterdiği yer burası arkadaşlar.
+
+553
+00:34:23,670 --> 00:34:25,670
+Şuraya girdiğimiz anda.
+
+554
+00:34:25,670 --> 00:34:27,670
+Tamam mı?
+
+555
+00:34:27,670 --> 00:34:29,670
+Hatta yapalım.
+
+556
+00:34:29,670 --> 00:34:31,670
+Bakın kodu ilk ne yapacağız demiştim.
+
+557
+00:34:31,670 --> 00:34:33,670
+Move, base pointer virgül, stack pointer.
+
+558
+00:34:33,670 --> 00:34:37,670
+Stack pointer'ın değerini base pointer'ın içerisine atadım.
+
+559
+00:34:37,670 --> 00:34:39,670
+Tamam mı?
+
+560
+00:34:39,670 --> 00:34:41,670
+Base pointer'ın içerisine atadım.
+
+561
+00:34:41,670 --> 00:34:47,670
+Pekala ben şu üç tane veriye erişmek istiyorum.
+
+562
+00:34:47,670 --> 00:34:49,670
+Bu üç tane veriye erişmek istiyorum.
+
+563
+00:34:49,670 --> 00:34:51,670
+Nasıl erişeceğim?
+
+564
+00:34:51,670 --> 00:34:53,670
+Üstüne bir sürü şey koydum.
+
+565
+00:34:53,670 --> 00:34:55,670
+Pop yapamam.
+
+566
+00:34:55,670 --> 00:34:57,670
+Bu bir kere gidecek.
+
+567
+00:34:57,670 --> 00:34:59,670
+Yani pop yapmam uygun olmaz.
+
+568
+00:34:59,670 --> 00:35:01,670
+Bu bir kere gidecek.
+
+569
+00:35:01,670 --> 00:35:03,670
+Pekala buraya doğru nasıl erişelim?
+
+570
+00:35:03,670 --> 00:35:05,670
+İşte base pointer üzerinden.
+
+571
+00:35:05,670 --> 00:35:07,670
+Şu an stack pointer da.
+
+572
+00:35:07,670 --> 00:35:09,670
+Hop stack pointer da.
+
+573
+00:35:09,670 --> 00:35:11,670
+Aaa.
+
+574
+00:35:11,670 --> 00:35:13,670
+Bana tam bir zulüm.
+
+575
+00:35:13,670 --> 00:35:15,670
+İnternetim de yok zaten.
+
+576
+00:35:15,670 --> 00:35:17,670
+İnternete bak.
+
+577
+00:35:17,670 --> 00:35:19,670
+Şurası artı iki arkadaşlar.
+
+578
+00:35:19,670 --> 00:35:21,670
+Base pointer ve stack pointer'ın artı ikisi.
+
+579
+00:35:21,670 --> 00:35:23,670
+Şurası artıyı koymuyorum.
+
+580
+00:35:23,670 --> 00:35:25,670
+Zor geliyor diye dördü.
+
+581
+00:35:25,670 --> 00:35:27,670
+Şurası altısı.
+
+582
+00:35:27,670 --> 00:35:29,670
+Şurası sekizi.
+
+583
+00:35:29,670 --> 00:35:31,670
+Şurası onu.
+
+584
+00:35:31,670 --> 00:35:33,670
+Hop on.
+
+585
+00:35:33,670 --> 00:35:35,670
+Şurası on ikisi.
+
+586
+00:35:35,670 --> 00:35:37,670
+Şurası on dördü.
+
+587
+00:35:37,670 --> 00:35:41,719
+Şurası da on altısı.
+
+588
+00:35:41,719 --> 00:35:45,719
+Yani base pointer artı on iki ile k3'e.
+
+589
+00:35:45,719 --> 00:35:49,719
+Base pointer artı on dört ile k2'ye.
+
+590
+00:35:49,719 --> 00:35:51,719
+K'nın ikinci elemanına.
+
+591
+00:35:51,719 --> 00:35:53,719
+Base pointer artı on altıyla da.
+
+592
+00:35:53,719 --> 00:35:57,719
+K'nın birinci elemanına erişebiliyorum.
+
+593
+00:35:57,719 --> 00:35:59,719
+Tamam.
+
+594
+00:35:59,719 --> 00:36:01,719
+Önce U'yu hesaplayalım.
+
+595
+00:36:01,719 --> 00:36:03,719
+U'yu AX'in içerisinde toplayayım.
+
+596
+00:36:03,719 --> 00:36:05,719
+Çünkü AX'in içerisinden geri döndüreceğiz diyor ya.
+
+597
+00:36:05,719 --> 00:36:07,719
+Tamam.
+
+598
+00:36:07,719 --> 00:36:09,719
+At AX virgül.
+
+599
+00:36:09,719 --> 00:36:11,719
+Tamam AX virgül.
+
+600
+00:36:11,719 --> 00:36:13,719
+Base pointer.
+
+601
+00:36:13,719 --> 00:36:15,719
+Kaçtı unuttum.
+
+602
+00:36:15,719 --> 00:36:17,719
+On iki.
+
+603
+00:36:17,719 --> 00:36:19,719
+Artı on iki.
+
+604
+00:36:19,719 --> 00:36:21,719
+Hemen etle toplamaya devam edelim.
+
+605
+00:36:21,719 --> 00:36:25,719
+Verilerin küçük ve taşma olmadığını varsayıyoruz.
+
+606
+00:36:25,719 --> 00:36:29,719
+Onları siz evde kendiniz taşma olursa nasıl yaparız diye düşünün.
+
+607
+00:36:29,719 --> 00:36:31,719
+İçerisine koyduk.
+
+608
+00:36:31,719 --> 00:36:37,719
+On iki'deki, on dört'deki ve on altı'daki değerleri koyduk.
+
+609
+00:36:37,719 --> 00:36:39,719
+Hemen sonra ne yapıyoruz?
+
+610
+00:36:39,719 --> 00:36:41,719
+Bu U'nun iki katıydı.
+
+611
+00:36:41,719 --> 00:36:45,030
+Şunun toplamı U'nun iki katıydı.
+
+612
+00:36:45,030 --> 00:36:47,030
+İkiye bölmemiz lazım.
+
+613
+00:36:47,030 --> 00:36:51,030
+Tabii her biriniz ikiye bölmek denilince aklımıza hemen ne geliyor?
+
+614
+00:36:51,030 --> 00:36:53,030
+Shift right.
+
+615
+00:36:53,030 --> 00:36:55,030
+Logical right yeterli.
+
+616
+00:36:55,030 --> 00:36:57,030
+Çünkü kesinlikle pozitif olduğumu biliyoruz.
+
+617
+00:36:57,030 --> 00:37:01,030
+Üçgenin alanlığıysa bir şey pozitiftir yani.
+
+618
+00:37:01,030 --> 00:37:07,030
+O sebeple aritmatik right yapmamıza ekstradan gerek yok.
+
+619
+00:37:07,030 --> 00:37:09,030
+Tamam şimdi neyi bulduk biz?
+
+620
+00:37:09,030 --> 00:37:11,030
+U'yu bulduk.
+
+621
+00:37:11,030 --> 00:37:13,030
+AX'in içerisinde.
+
+622
+00:37:13,030 --> 00:37:15,030
+İşte AX'in içerisinde.
+
+623
+00:37:15,030 --> 00:37:19,030
+Şimdi U çarpı, U-A çarpı, U-B çarpı, O-C.
+
+624
+00:37:19,030 --> 00:37:21,030
+Tamam yapalım.
+
+625
+00:37:21,030 --> 00:37:23,030
+Şimdi U'yu bir koruyayım ben.
+
+626
+00:37:23,030 --> 00:37:25,030
+Bu arada internetimiz mi gidiyor?
+
+627
+00:37:25,030 --> 00:37:31,000
+Anlayamadım ben.
+
+628
+00:37:31,000 --> 00:37:33,000
+Yok tamam.
+
+629
+00:37:33,000 --> 00:37:39,000
+Telefondan bağlanıyorum da interneti de bütün herşeyler updateten gittiği için ona da bağlamadım.
+
+630
+00:37:39,000 --> 00:37:42,280
+AX'in içerisinde U var.
+
+631
+00:37:42,280 --> 00:37:44,280
+U'yu mesela BX'in içerisinde alalım.
+
+632
+00:37:44,280 --> 00:37:46,280
+Onu koruyalım.
+
+633
+00:37:46,280 --> 00:37:50,280
+Ondan sonra AX üzerinden çeşitli işlemler gerçekleştiriyor olacağız.
+
+634
+00:37:50,280 --> 00:37:52,280
+Kıymetli arkadaşlar.
+
+635
+00:37:52,280 --> 00:37:56,280
+Diyelim ki bizim yapmamız gereken işlem.
+
+636
+00:37:56,280 --> 00:38:08,280
+İşte o isteğin içerisinden aldığımız o kenar değerini AX'in değerinden yani şu an BX'in içerisinde koyduğumuz o değerden çıkartmak.
+
+637
+00:38:08,280 --> 00:38:10,280
+Nasıl çıkartıyorduk?
+
+638
+00:38:10,280 --> 00:38:12,280
+Subtraction operasörünü biliyorsunuz zaten.
+
+639
+00:38:12,280 --> 00:38:16,280
+En son U ile çarpacağımız için koruyorum bunu AX'in içerisinde.
+
+640
+00:38:16,280 --> 00:38:20,280
+BX artı B12 çıkarttık.
+
+641
+00:38:20,280 --> 00:38:24,280
+Move CX virgül AX diyelim.
+
+642
+00:38:24,280 --> 00:38:30,280
+Şu an BX'i AX'in içerisinde aldık.
+
+643
+00:38:30,280 --> 00:38:32,280
+BX'in içerisinde U var.
+
+644
+00:38:32,280 --> 00:38:34,280
+U'dan ilk kenarı çıkarttık.
+
+645
+00:38:34,280 --> 00:38:36,280
+Yani şu ifadeyi bulduk.
+
+646
+00:38:36,280 --> 00:38:38,280
+U'dan ilk kenarı çıkarttık.
+
+647
+00:38:38,280 --> 00:38:40,280
+Bu BX'in içerisinde arkadaşlar.
+
+648
+00:38:40,280 --> 00:38:42,280
+AX'in içerisinde de zaten U var.
+
+649
+00:38:42,280 --> 00:38:44,280
+Geriye ne kaldı?
+
+650
+00:38:44,280 --> 00:38:46,280
+Şunu ve şunu bulmak.
+
+651
+00:38:46,280 --> 00:38:48,280
+Çok güzel.
+
+652
+00:38:48,280 --> 00:38:50,280
+Bulalım onu ve onu.
+
+653
+00:38:50,280 --> 00:38:52,280
+Birisini de CX'in içerisinde koyacağız.
+
+654
+00:38:52,280 --> 00:38:56,280
+Subtraction CX virgül base pointer artı 14.
+
+655
+00:38:56,280 --> 00:38:58,280
+Tamam.
+
+656
+00:38:58,280 --> 00:39:00,280
+Bir diğerini de DI ile kullanıyoruz.
+
+657
+00:39:00,280 --> 00:39:02,280
+Çünkü register sayım çok fazla değil biliyorsunuz.
+
+658
+00:39:02,280 --> 00:39:06,280
+O yüzden index registerlerinde bu tarz durumlarda kullanabiliriz.
+
+659
+00:39:06,280 --> 00:39:14,280
+DI virgül base pointer artı 16 koyduk.
+
+660
+00:39:14,280 --> 00:39:20,280
+Şimdi AX, BX, CX, DI.
+
+661
+00:39:20,280 --> 00:39:22,280
+Üç tane fark.
+
+662
+00:39:22,280 --> 00:39:24,280
+Bir tane de U'nun kendisi var.
+
+663
+00:39:24,280 --> 00:39:26,280
+Dört tane değerim var.
+
+664
+00:39:26,280 --> 00:39:28,280
+Bunları işte birbiriyle çarpacağız.
+
+665
+00:39:28,280 --> 00:39:30,280
+Tamam mı?
+
+666
+00:39:30,280 --> 00:39:32,280
+Şuradaki gördüğünüz işlem gibi
+
+667
+00:39:32,280 --> 00:39:34,280
+bunları birbirleriyle çarpıyor olacağız.
+
+668
+00:39:34,280 --> 00:39:36,280
+Nasıl çarpacağız?
+
+669
+00:39:36,280 --> 00:39:38,280
+Multiplexion BX,
+
+670
+00:39:38,280 --> 00:39:40,280
+Multiplexion CX,
+
+671
+00:39:40,280 --> 00:39:42,280
+Multiplexion DI.
+
+672
+00:39:42,280 --> 00:39:44,280
+Bu.
+
+673
+00:39:44,280 --> 00:39:46,280
+Bu kadar çarpma işleri.
+
+674
+00:39:46,280 --> 00:39:48,280
+Yani şunu yapıyor.
+
+675
+00:39:48,280 --> 00:39:54,280
+Burada anlamayan arkadaşlar varsa bunları tekrar tekrar özetlemiş oldum.
+
+676
+00:39:54,280 --> 00:39:58,280
+AX ile BX'i çarpıyor.
+
+677
+00:39:58,280 --> 00:40:02,280
+Sonucu DX, AX ikilisine koyuyor.
+
+678
+00:40:02,280 --> 00:40:08,280
+Bizim verdiğimiz üçgenler dolayısıyla AX'i hiçbir zaman taşmadığı için sonuç hep AX'in içerisinde oluyor.
+
+679
+00:40:08,280 --> 00:40:12,280
+Zaten AX ile BX'i çarpınca şu ikisini çarpmış oluyoruz.
+
+680
+00:40:12,280 --> 00:40:14,280
+Tamam mı?
+
+681
+00:40:14,280 --> 00:40:16,280
+AX ile BX'i çarpınca.
+
+682
+00:40:16,280 --> 00:40:18,280
+Ve sonuç yine AX'in içerisinde olduğu için.
+
+683
+00:40:18,280 --> 00:40:20,280
+Tamam mı?
+
+684
+00:40:20,280 --> 00:40:22,280
+Yani şunu demek istiyorum.
+
+685
+00:40:22,280 --> 00:40:24,280
+Şunu çarptık.
+
+686
+00:40:24,280 --> 00:40:26,280
+Şu an AX'in içerisinde.
+
+687
+00:40:26,280 --> 00:40:28,280
+Biz ardından şurada da aynı şu işlemi yaptığımızda
+
+688
+00:40:28,280 --> 00:40:32,280
+CX ile AX çarpı.
+
+689
+00:40:32,280 --> 00:40:36,280
+CX yaptığımızdan ötürü.
+
+690
+00:40:36,280 --> 00:40:38,280
+Sonuç.
+
+691
+00:40:38,280 --> 00:40:40,280
+Şuna şunu çarpıyoruz.
+
+692
+00:40:40,280 --> 00:40:42,280
+Yine sonuç AX'in içerisinde oluyor.
+
+693
+00:40:42,280 --> 00:40:50,280
+Ardından en son şunu da DI ile de çarptığımızda sonuç yine AX'in içerisinde olmuş oluyor.
+
+694
+00:40:50,280 --> 00:40:58,280
+Bu üçgenin U'lu alan formülü gereğince
+
+695
+00:40:58,280 --> 00:41:02,280
+alanının karesini ben en son şu işlemi bitirdiğimde AX'in içerisinde buluyorum.
+
+696
+00:41:02,280 --> 00:41:04,280
+Pekala.
+
+697
+00:41:04,280 --> 00:41:06,280
+Zaten bana ne diyordu?
+
+698
+00:41:06,280 --> 00:41:08,280
+Sonucu AX üzerinden döndürsün.
+
+699
+00:41:08,280 --> 00:41:10,280
+Bu işlemi de yaptık bitirdik.
+
+700
+00:41:10,280 --> 00:41:12,280
+Yapmamız gereken şey ne?
+
+701
+00:41:12,280 --> 00:41:14,280
+Siteye attığımız bu değerleri sitekten temizlemek.
+
+702
+00:41:14,280 --> 00:41:16,280
+Bakın siteyi burada meşgul ediyoruz.
+
+703
+00:41:16,280 --> 00:41:18,280
+Bunları sitekten zaten korumak için atmıştık.
+
+704
+00:41:18,280 --> 00:41:20,280
+Tekrardan şu an çekiyoruz.
+
+705
+00:41:20,280 --> 00:41:22,280
+Şunu çekeceğiz.
+
+706
+00:41:22,280 --> 00:41:24,280
+Bunu çekeceğiz.
+
+707
+00:41:24,280 --> 00:41:26,280
+Şunu çekeceğiz.
+
+708
+00:41:26,280 --> 00:41:28,280
+Ve bunu çekeceğiz.
+
+709
+00:41:28,280 --> 00:41:30,280
+Bunlar silinmiş olacak.
+
+710
+00:41:30,280 --> 00:41:32,280
+Çekelim.
+
+711
+00:41:32,280 --> 00:41:34,280
+Hangi sırayla koyduysa tam tersi sırayla çekiyoruz.
+
+712
+00:41:34,280 --> 00:41:36,280
+En son giren ilk çıkıyor.
+
+713
+00:41:36,280 --> 00:41:38,280
+Sitenin çalışma mantığını anlatmıştık.
+
+714
+00:41:38,280 --> 00:41:40,280
+Pop.
+
+715
+00:41:40,280 --> 00:41:42,280
+Pop.
+
+716
+00:41:42,280 --> 00:41:46,780
+Pop CX.
+
+717
+00:41:46,780 --> 00:41:48,780
+Pop BX.
+
+718
+00:41:48,780 --> 00:41:50,780
+Hocam ben bir şey anlamadım.
+
+719
+00:41:50,780 --> 00:41:52,780
+Yani burada kullanacağımız
+
+720
+00:41:52,780 --> 00:41:56,780
+rejistörleri sitenin içerisinde koyuyoruz dediniz.
+
+721
+00:41:56,780 --> 00:41:58,780
+Ama AX'i de kullandık.
+
+722
+00:41:58,780 --> 00:42:00,780
+Bakın diğerlerini koydunuz. AX'i koymadınız.
+
+723
+00:42:00,780 --> 00:42:02,780
+Nasıl oldu?
+
+724
+00:42:02,780 --> 00:42:04,780
+Ama soru da şunu biliyoruz.
+
+725
+00:42:04,780 --> 00:42:06,780
+Bu soruyu soran kıymetli arkadaşım.
+
+726
+00:42:06,780 --> 00:42:08,780
+AX rejistörü üzerinden sonucun döneceğini biliyoruz.
+
+727
+00:42:08,780 --> 00:42:10,780
+Yani soru zaten bunu söylüyor.
+
+728
+00:42:10,780 --> 00:42:12,780
+O yüzden bizim
+
+729
+00:42:12,780 --> 00:42:14,780
+programımız da
+
+730
+00:42:14,780 --> 00:42:16,780
+anayordamımız da bunu bildiğinden ötürü
+
+731
+00:42:16,780 --> 00:42:18,780
+bu şekilde davranıyor.
+
+732
+00:42:18,780 --> 00:42:20,780
+Tamam.
+
+733
+00:42:20,780 --> 00:42:22,780
+Yani AX rejistörü üzerinden sen
+
+734
+00:42:22,780 --> 00:42:24,780
+bana veri döndüreceksin.
+
+735
+00:42:24,780 --> 00:42:26,780
+Ben AX rejistörüne önemli bir şey koymayacağım.
+
+736
+00:42:26,780 --> 00:42:28,780
+Sen kullanabilirsin.
+
+737
+00:42:28,780 --> 00:42:30,780
+Sıkıntı yok. Demiş oluyor.
+
+738
+00:42:30,780 --> 00:42:32,780
+AX üzerinden veri almayı kabul
+
+739
+00:42:32,780 --> 00:42:34,780
+ettiği için.
+
+740
+00:42:34,780 --> 00:42:36,780
+Hocam şu an sana da bir şey sorabilir mi?
+
+741
+00:42:36,780 --> 00:42:38,780
+Buyurun.
+
+742
+00:42:38,780 --> 00:42:40,780
+Biz AX rejistörünü sadece
+
+743
+00:42:40,780 --> 00:42:42,780
+hani oynama yapacağımızı söyledik herhalde.
+
+744
+00:42:42,780 --> 00:42:44,780
+Fonksiyonu çağıran kişi bunu
+
+745
+00:42:44,780 --> 00:42:46,780
+biliyor. Peki burada
+
+746
+00:42:46,780 --> 00:42:48,780
+çarpma yaptığımız zaman
+
+747
+00:42:48,780 --> 00:42:50,780
+DX'i sıfır atayacağımız için
+
+748
+00:42:50,780 --> 00:42:52,780
+onu da korumamız gerekmiyor mu?
+
+749
+00:42:52,780 --> 00:42:54,780
+Çünkü sadece AX'i değiştireceğiz demişiz.
+
+750
+00:42:54,780 --> 00:42:56,780
+Ama DX'te burada sıfırlanıyor.
+
+751
+00:42:56,780 --> 00:42:58,780
+Evet. Çok güzel. Teşekkür ediyorum.
+
+752
+00:42:58,780 --> 00:43:00,780
+Bunu birazdan fark etmemiz
+
+753
+00:43:00,780 --> 00:43:02,780
+gerekiyordu. Şimdiden fark
+
+754
+00:43:02,780 --> 00:43:04,780
+ettiğimiz güzel oldu. Bakın.
+
+755
+00:43:04,780 --> 00:43:06,780
+Buradaki olay şu.
+
+756
+00:43:06,780 --> 00:43:08,780
+Şimdi anayordamı
+
+757
+00:43:08,780 --> 00:43:10,780
+döndüğümüzde bunları kontrol ettiniz.
+
+758
+00:43:10,780 --> 00:43:12,780
+Ve hemen beşer gibi bunu fark ettiniz.
+
+759
+00:43:12,780 --> 00:43:14,780
+Yapacağınız işlem şu oluyor. Ben bunu
+
+760
+00:43:14,780 --> 00:43:16,780
+programı yazıp
+
+761
+00:43:16,780 --> 00:43:18,780
+ondan sonra düzeltip
+
+762
+00:43:18,780 --> 00:43:20,780
+ne oldu falan filan
+
+763
+00:43:20,780 --> 00:43:22,780
+deminizi bekliyordum açıkçası. Ama
+
+764
+00:43:22,780 --> 00:43:24,780
+şimdiden düzeltelim. Böyle bir soru geldi.
+
+765
+00:43:24,780 --> 00:43:26,780
+Güzel oldu. Push DX yazıyorsunuz.
+
+766
+00:43:26,780 --> 00:43:28,780
+Hemen muhteşem bir fikir.
+
+767
+00:43:28,780 --> 00:43:30,780
+Aklınıza geldi. Push DX
+
+768
+00:43:30,780 --> 00:43:32,780
+yazıyorsunuz. Pop DX
+
+769
+00:43:32,780 --> 00:43:34,780
+yazıyorsunuz. Ondan sonra
+
+770
+00:43:34,780 --> 00:43:36,780
+program başarılı
+
+771
+00:43:36,780 --> 00:43:38,780
+bir şekilde çalışmaya devam ediyor. Hocam
+
+772
+00:43:38,780 --> 00:43:40,780
+bu rakamları da arttırmamız
+
+773
+00:43:40,780 --> 00:43:42,780
+gerek. Her şey değişiyor.
+
+774
+00:43:42,780 --> 00:43:44,780
+Her şey değişiyor arkadaşlar işte.
+
+775
+00:43:44,780 --> 00:43:46,780
+Onu biraz sonra gösterecektim. Ama
+
+776
+00:43:46,780 --> 00:43:48,780
+soru güzel oldu. Hemen şimdi de
+
+777
+00:43:48,780 --> 00:43:50,780
+halletmiş olalım.
+
+778
+00:43:50,780 --> 00:43:52,780
+14, 16,
+
+779
+00:43:52,780 --> 00:43:54,780
+18. Bakın burası çok
+
+780
+00:43:54,780 --> 00:43:56,780
+önemli. Siteye. Yani
+
+781
+00:43:56,780 --> 00:43:58,780
+burada mesela fark ettik. Diyelim ki
+
+782
+00:43:58,780 --> 00:44:00,780
+fark etmedik.
+
+783
+00:44:00,780 --> 00:44:02,780
+Sonradan farklı bir register
+
+784
+00:44:02,780 --> 00:44:04,780
+koymaya ihtiyacımız oldu.
+
+785
+00:44:04,780 --> 00:44:06,780
+Kullanmaya ihtiyacımız
+
+786
+00:44:06,780 --> 00:44:08,780
+oldu. İşte
+
+787
+00:44:08,780 --> 00:44:10,780
+o kullanacağımız register'ı
+
+788
+00:44:10,780 --> 00:44:12,780
+hemen şuraya yazıp
+
+789
+00:44:12,780 --> 00:44:14,780
+burada kullanmak değil.
+
+790
+00:44:14,780 --> 00:44:16,780
+Bütün bu stek hesaplamalarını
+
+791
+00:44:16,780 --> 00:44:18,780
+tekrardan yapmamız lazım.
+
+792
+00:44:18,780 --> 00:44:20,780
+Arkadaşlar tamam. Burası
+
+793
+00:44:20,780 --> 00:44:22,780
+en önemli fark edilecek
+
+794
+00:44:22,780 --> 00:44:24,780
+kısım. Bir de şurada ne var?
+
+795
+00:44:24,780 --> 00:44:26,780
+DX var.
+
+796
+00:44:26,780 --> 00:44:28,780
+Tamam. Pop DX dediğimiz için bunu da
+
+797
+00:44:28,780 --> 00:44:30,780
+çektik stekten.
+
+798
+00:44:30,780 --> 00:44:32,780
+Pop DX
+
+799
+00:44:32,780 --> 00:44:34,780
+dediğimiz için stekten
+
+800
+00:44:34,780 --> 00:44:36,780
+bunu da çekmiş olduk. Pekala
+
+801
+00:44:36,780 --> 00:44:38,780
+şunları çekmemiz lazım stekten.
+
+802
+00:44:38,780 --> 00:44:43,980
+Nasıl çekeceğiz?
+
+803
+00:44:43,980 --> 00:44:45,980
+chatten birisi bir şey yazıyor. Ana yordamda DX'i
+
+804
+00:44:45,980 --> 00:44:47,980
+kullanmıyorsak neden steki atıp yeniden
+
+805
+00:44:47,980 --> 00:44:49,980
+çekelim ki hocam. Ana yordamın ne
+
+806
+00:44:49,980 --> 00:44:51,980
+kullanıp kullanmadığını bilmiyoruz.
+
+807
+00:44:51,980 --> 00:44:53,980
+Bize şirkette çalışıyoruz.
+
+808
+00:44:53,980 --> 00:44:55,980
+Diyorlar ki böyle alamların karısını bulan
+
+809
+00:44:55,980 --> 00:44:57,980
+yardımcı bir yordam yaz.
+
+810
+00:44:57,980 --> 00:44:59,980
+AX register üzerinden sonucu döndürsün.
+
+811
+00:44:59,980 --> 00:45:01,980
+Stekselen 3 tane veri alsın. AX register üzerinden
+
+812
+00:45:01,980 --> 00:45:03,980
+sonucu döndürsün. Adam ne yapmış
+
+813
+00:45:03,980 --> 00:45:05,980
+ana yordamda hiçbir zaman bilemezsin ki.
+
+814
+00:45:05,980 --> 00:45:07,980
+Yani onu yapan bölüm başka
+
+815
+00:45:07,980 --> 00:45:09,980
+frontend diyelim. Sen backend
+
+816
+00:45:09,980 --> 00:45:11,980
+yapıyorsun. Sen başkasın.
+
+817
+00:45:11,980 --> 00:45:13,980
+Evet.
+
+818
+00:45:13,980 --> 00:45:15,980
+Şimdi şu
+
+819
+00:45:15,980 --> 00:45:17,980
+verileri nasıl çekeceğiz? Şu offset
+
+820
+00:45:17,980 --> 00:45:19,980
+ve kod segment ve offset
+
+821
+00:45:19,980 --> 00:45:21,980
+değerlerini.
+
+822
+00:45:21,980 --> 00:45:23,980
+Bunlar nasıl kaldırılacak burada?
+
+823
+00:45:23,980 --> 00:45:27,449
+Hocam kol komutunda
+
+824
+00:45:27,449 --> 00:45:29,449
+kendisi yapmıyor mu o işleri?
+
+825
+00:45:29,449 --> 00:45:31,449
+Kol komutunda bunları
+
+826
+00:45:31,449 --> 00:45:33,449
+kendisi site'in içerisine koyuyor.
+
+827
+00:45:33,449 --> 00:45:35,449
+Kol komutu çağırıldığında bunlar
+
+828
+00:45:35,449 --> 00:45:37,449
+site'in içerisine konuluyor. Ama
+
+829
+00:45:37,449 --> 00:45:39,449
+nasıl geri kaldıracağız?
+
+830
+00:45:39,449 --> 00:45:43,849
+Bundan bahsetmemişsiniz demeyin ki.
+
+831
+00:45:43,849 --> 00:45:45,849
+Hocam ana yordama döndükten sonra
+
+832
+00:45:47,849 --> 00:45:52,150
+Evet. Ana yordama döndükten sonra
+
+833
+00:45:52,150 --> 00:45:54,150
+değil de return far
+
+834
+00:45:54,150 --> 00:45:56,150
+komutu. Return far komutu
+
+835
+00:45:56,150 --> 00:45:58,150
+bunları alıyor buradan.
+
+836
+00:45:58,150 --> 00:46:00,150
+Dönmesi gereken yerin hangi kod segment
+
+837
+00:46:00,150 --> 00:46:02,150
+ve hangi offset olduğunu anlıyor
+
+838
+00:46:02,150 --> 00:46:04,150
+ve oraya gidiyor. Tamam geçen hafta
+
+839
+00:46:04,150 --> 00:46:06,150
+zamanında söylemiştim bunu. Şu
+
+840
+00:46:06,150 --> 00:46:08,150
+komutları kaldıran şey return
+
+841
+00:46:08,150 --> 00:46:10,150
+yazamadık ya.
+
+842
+00:46:10,150 --> 00:46:12,150
+Return işte f. Tamam siz anlayın.
+
+843
+00:46:12,150 --> 00:46:14,150
+Return f. Şu ikisini
+
+844
+00:46:14,150 --> 00:46:16,150
+return f'ye kaldırıyor.
+
+845
+00:46:16,150 --> 00:46:18,150
+Eğer ki near tipi bir yordam olsaydı
+
+846
+00:46:18,150 --> 00:46:20,150
+sadece offset olacaktı. Yine return
+
+847
+00:46:20,150 --> 00:46:22,150
+komutuyla o offseti oradan
+
+848
+00:46:22,150 --> 00:46:24,150
+kaldırmış olacaktık. Tamam bunlar da
+
+849
+00:46:24,150 --> 00:46:26,150
+temizlendi. Şu üçü
+
+850
+00:46:26,150 --> 00:46:28,150
+kaldı. Aha işte
+
+851
+00:46:28,150 --> 00:46:30,150
+burada şey var.
+
+852
+00:46:30,150 --> 00:46:32,150
+Bunu kim kaldıracak?
+
+853
+00:46:32,150 --> 00:46:34,150
+İki tane burada yaklaşım sergileyebilirsiniz.
+
+854
+00:46:34,150 --> 00:46:36,150
+Bir,
+
+855
+00:46:36,150 --> 00:46:38,150
+gönderdiğiniz yordam
+
+856
+00:46:38,150 --> 00:46:40,150
+der ki tamam kardeşim sen hiç sıkıntı yapma.
+
+857
+00:46:40,150 --> 00:46:42,150
+Ben sana burada gönderiyorum.
+
+858
+00:46:42,150 --> 00:46:44,150
+Gönderdikten sonra
+
+859
+00:46:44,150 --> 00:46:46,150
+onları
+
+860
+00:46:46,150 --> 00:46:48,150
+stekten çekeceğim. Tamam mesela
+
+861
+00:46:48,150 --> 00:46:50,150
+şurada koydu ya bakın üç tane push
+
+862
+00:46:50,150 --> 00:46:52,150
+koydu. Tekrardan
+
+863
+00:46:52,150 --> 00:46:54,150
+pop yaparak çekebilir. Hangi registre
+
+864
+00:46:54,150 --> 00:46:56,150
+kullanmıyor mesela?
+
+865
+00:46:56,150 --> 00:46:58,150
+Kullanmadığı bir registrenin içerisinde çekebilir
+
+866
+00:46:58,150 --> 00:47:00,150
+şöyle. Üç tane
+
+867
+00:47:00,150 --> 00:47:02,150
+değeri çekmeniz lazım.
+
+868
+00:47:02,150 --> 00:47:04,150
+Şunları temizlemeniz lazım.
+
+869
+00:47:04,150 --> 00:47:06,150
+Bunlar temizlenmezse arkadaşlar
+
+870
+00:47:06,150 --> 00:47:08,150
+bunlar temizlenmezse program
+
+871
+00:47:08,150 --> 00:47:10,150
+sonlandığında doğru data segmente
+
+872
+00:47:10,150 --> 00:47:12,150
+geri dönemeyiz. Bunların
+
+873
+00:47:12,150 --> 00:47:14,150
+muhakkak temizlenmesi lazım.
+
+874
+00:47:14,150 --> 00:47:16,150
+İlk alternatif, ilk alternatifimiz şu
+
+875
+00:47:16,150 --> 00:47:18,150
+gönderdiğimiz
+
+876
+00:47:18,150 --> 00:47:20,150
+ana yordam içerisinde
+
+877
+00:47:20,150 --> 00:47:22,150
+bunları temizleyeceğiz. Harici yordamı
+
+878
+00:47:22,150 --> 00:47:24,150
+yazan kişi bunu bilmesi lazım.
+
+879
+00:47:24,150 --> 00:47:26,150
+Yani harici yordamı yazan kişiye siz
+
+880
+00:47:26,150 --> 00:47:28,150
+diyeceksiniz ki kardeşim sen o stekteki şeyleri
+
+881
+00:47:28,150 --> 00:47:30,150
+dert etme. Ben onları
+
+882
+00:47:30,150 --> 00:47:32,150
+temizleyeceğim. Senin hiç endişen olmasın.
+
+883
+00:47:32,150 --> 00:47:34,150
+Dediğinizde işte böyle bir
+
+884
+00:47:34,150 --> 00:47:36,150
+yapmanız lazım. Bir registrenin içerisine
+
+885
+00:47:36,150 --> 00:47:38,150
+bunları çekin veya
+
+886
+00:47:38,150 --> 00:47:40,150
+bir değişken işe ne istiyorsanız
+
+887
+00:47:40,150 --> 00:47:42,150
+boşa çekiyorsunuz yani.
+
+888
+00:47:42,150 --> 00:47:44,150
+Onunla bir işiniz olmadığı için amaç
+
+889
+00:47:44,150 --> 00:47:46,150
+BX registrenin içine almak değil. Oradan bir
+
+890
+00:47:46,150 --> 00:47:48,150
+şey çekmek tamam mı?
+
+891
+00:47:48,150 --> 00:47:50,150
+Boş alsın diye. Bir diğer
+
+892
+00:47:50,150 --> 00:47:52,150
+yöntemde şu
+
+893
+00:47:52,150 --> 00:47:54,150
+bize eğer ki ana yordamı
+
+894
+00:47:54,150 --> 00:47:56,150
+yazan kişi değilse ben 3 tane siteye bir şey
+
+895
+00:47:56,150 --> 00:47:58,150
+koyacağım. Sen onları dönmeden
+
+896
+00:47:58,150 --> 00:48:00,150
+stekten temizle. Onun
+
+897
+00:48:00,150 --> 00:48:02,150
+için de şunu yapıyoruz işte
+
+898
+00:48:02,150 --> 00:48:04,150
+stekten kaç byte
+
+899
+00:48:04,150 --> 00:48:06,150
+lık bakın
+
+900
+00:48:06,150 --> 00:48:08,150
+kaç byte lık
+
+901
+00:48:08,150 --> 00:48:10,150
+veri temizleyeceksem return far
+
+902
+00:48:10,150 --> 00:48:12,150
+dan sonra onu yazıyor.
+
+903
+00:48:12,150 --> 00:48:14,150
+6 byte lık veri temizle.
+
+904
+00:48:14,150 --> 00:48:16,150
+Dediğimiz anda
+
+905
+00:48:16,150 --> 00:48:18,150
+işte bizim şuradaki o
+
+906
+00:48:18,150 --> 00:48:20,150
+6 byte lık verimizi return
+
+907
+00:48:20,150 --> 00:48:22,150
+altı temizlemiş oluyor.
+
+908
+00:48:22,150 --> 00:48:24,150
+Şurası temizlemiş oluyor.
+
+909
+00:48:24,150 --> 00:48:26,150
+Tamam. İki farklı yaklaşım var
+
+910
+00:48:26,150 --> 00:48:28,150
+yani. İkisinden birisini
+
+911
+00:48:28,150 --> 00:48:30,150
+tercih edebilirsiniz. Hocam
+
+912
+00:48:30,150 --> 00:48:32,150
+şu da bir yaklaşım değil mi?
+
+913
+00:48:32,150 --> 00:48:34,150
+Şurada temizleyelim.
+
+914
+00:48:34,150 --> 00:48:36,150
+Pop. Sallıyorum yani.
+
+915
+00:48:38,150 --> 00:48:40,150
+Değişkenin içerisinden de
+
+916
+00:48:40,150 --> 00:48:42,150
+çekebilirsiniz. Sayı. Pop.
+
+917
+00:48:42,150 --> 00:48:44,150
+Sayı. Pop. Sayı.
+
+918
+00:48:44,150 --> 00:48:46,150
+Bir tane değişkeniniz olsa.
+
+919
+00:48:46,150 --> 00:48:48,150
+Bu da bir çözüm değil mi? Değil arkadaşlar.
+
+920
+00:48:48,150 --> 00:48:50,150
+Değil. Bakın.
+
+921
+00:48:50,150 --> 00:48:52,150
+Uyanmanız lazım.
+
+922
+00:48:52,150 --> 00:48:54,150
+Önce return far komutu
+
+923
+00:48:54,150 --> 00:48:56,150
+çalışıp şunları çekecek.
+
+924
+00:48:56,150 --> 00:48:58,150
+Bunları çekmeden
+
+925
+00:48:58,150 --> 00:49:00,150
+siz çektiğiniz o 3 tane komut
+
+926
+00:49:00,150 --> 00:49:02,150
+return far çalışmadan çekeceğiniz 3 tane komut
+
+927
+00:49:02,150 --> 00:49:04,150
+şey şu olur yani.
+
+928
+00:49:04,150 --> 00:49:06,150
+Doğru yere dönemezsiniz. Şu olur.
+
+929
+00:49:06,150 --> 00:49:08,150
+Tamam mı? Öncelikle
+
+930
+00:49:08,150 --> 00:49:10,150
+return far çalışacak. Ondan sonra
+
+931
+00:49:10,150 --> 00:49:12,150
+temizleyecek. O yüzden burada böyle bir şey yapamazsınız.
+
+932
+00:49:12,150 --> 00:49:15,980
+Tamam. İki alternatifiniz
+
+933
+00:49:15,980 --> 00:49:17,980
+var yani. Ya geldiğiniz yordamda
+
+934
+00:49:17,980 --> 00:49:19,980
+bunu yapacaksınız. Ya da
+
+935
+00:49:19,980 --> 00:49:21,980
+işte
+
+936
+00:49:21,980 --> 00:49:23,980
+şey tarafında yapacaksınız.
+
+937
+00:49:23,980 --> 00:49:25,980
+Burada harici yordam
+
+938
+00:49:25,980 --> 00:49:29,639
+tarafında yapacaksınız.
+
+939
+00:49:29,639 --> 00:49:31,639
+Evet. Sorusu olan var mı?
+
+940
+00:49:31,639 --> 00:49:33,639
+Sorusu olan varsa alalım.
+
+941
+00:49:33,639 --> 00:49:35,639
+Hocam.
+
+942
+00:49:35,639 --> 00:49:37,639
+Buyurun.
+
+943
+00:49:37,639 --> 00:49:39,639
+Sormak istiyorum. Bu kullandığımız yordamda
+
+944
+00:49:39,639 --> 00:49:41,639
+neden kullanacağımız
+
+945
+00:49:41,639 --> 00:49:43,639
+registerleri ilk başta tuş etmemiz gerekti?
+
+946
+00:49:43,639 --> 00:49:45,639
+Eğer tuş etmezsek kullanamazdık
+
+947
+00:49:45,639 --> 00:49:47,639
+aynı registerlere.
+
+948
+00:49:47,639 --> 00:49:49,639
+Yani kullanmaman gerekiyor. Adam
+
+949
+00:49:49,639 --> 00:49:51,639
+mesela şöyle bir şey yaptı. Bak şimdi çok
+
+950
+00:49:51,639 --> 00:49:53,639
+güzel anlayacaksın. Dedi ki
+
+951
+00:49:53,639 --> 00:49:55,639
+move
+
+952
+00:49:55,639 --> 00:49:57,639
+bx,7. Tamam mı?
+
+953
+00:49:57,639 --> 00:49:59,639
+Buradan ax dönüyor ya.
+
+954
+00:49:59,639 --> 00:50:01,639
+Ondan sonra da şunu yaptı.
+
+955
+00:50:01,639 --> 00:50:03,639
+add bx,ax.
+
+956
+00:50:03,639 --> 00:50:05,639
+Dönen ax'ın sonucunu
+
+957
+00:50:05,639 --> 00:50:07,639
+bx'in içerisine eklemek istiyor.
+
+958
+00:50:07,639 --> 00:50:09,639
+Diyelim şu iki satırı ben
+
+959
+00:50:09,639 --> 00:50:11,639
+uydurdum şu an. bx'in içerisine eklemek istiyor.
+
+960
+00:50:11,639 --> 00:50:13,639
+bx'in değeri ne? 7.
+
+961
+00:50:13,639 --> 00:50:15,639
+Sen eğer bx'i
+
+962
+00:50:15,639 --> 00:50:17,639
+sitenin içerisinde atmazsan bx'in değeri kim bilir
+
+963
+00:50:17,639 --> 00:50:19,639
+ne olacak burada yani? Bilmiyorsun.
+
+964
+00:50:19,639 --> 00:50:21,639
+Tamam. Şurada bir sonuç elde
+
+965
+00:50:21,639 --> 00:50:23,639
+edilecek ve 7'yi kaybedeceksin.
+
+966
+00:50:23,639 --> 00:50:25,639
+O yüzden
+
+967
+00:50:25,639 --> 00:50:27,639
+harici yordama gittiğimizde
+
+968
+00:50:27,639 --> 00:50:29,639
+hangi
+
+969
+00:50:29,639 --> 00:50:31,639
+register'ları kullanıyorsak
+
+970
+00:50:31,639 --> 00:50:33,639
+onları saklamamız lazım.
+
+971
+00:50:33,639 --> 00:50:35,639
+Çünkü bu register'lar ana yordam içerisinde
+
+972
+00:50:35,639 --> 00:50:37,639
+kullanıyor mu, kullanılıyor mu bilemeyiz.
+
+973
+00:50:37,639 --> 00:50:39,639
+Hiçbir zaman bilemeyiz.
+
+974
+00:50:39,639 --> 00:50:43,500
+Anladım hocam teşekkür ederim.
+
+975
+00:50:43,500 --> 00:50:45,500
+Ben teşekkür ederim. Başka soru soran arkadaş var mı?
+
+976
+00:50:45,500 --> 00:50:50,150
+Hocam steak üzerinden
+
+977
+00:50:50,150 --> 00:50:52,150
+bir şey döndürmemiz mümkün mü?
+
+978
+00:50:52,150 --> 00:50:54,150
+Çünkü orada en sonunda da şeyleri
+
+979
+00:50:54,150 --> 00:50:56,150
+çekiyor return farla. Herhalde
+
+980
+00:50:56,150 --> 00:50:58,150
+mümkün değil. Döndürebilirsin.
+
+981
+00:50:58,150 --> 00:51:00,150
+Hiç sıkıntı yok. Mesela şöyle
+
+982
+00:51:00,150 --> 00:51:02,150
+dersin abi.
+
+983
+00:51:02,150 --> 00:51:04,150
+Return 4 dedin.
+
+984
+00:51:04,150 --> 00:51:06,150
+Şimdi steak'in içerisine şuraya koyacaksın.
+
+985
+00:51:06,150 --> 00:51:08,150
+Nasıl koyacağını biliyorsun. Mesela sen şuraya
+
+986
+00:51:08,150 --> 00:51:10,150
+sonucu koymak istedin. Diyelim ki.
+
+987
+00:51:10,150 --> 00:51:13,559
+Artı 18 artık.
+
+988
+00:51:13,559 --> 00:51:15,559
+Bu 16 değil. Hani dx eklediğimiz için
+
+989
+00:51:15,559 --> 00:51:17,559
+anlıyorsunuz. Orayı düzeltmiyorum.
+
+990
+00:51:17,559 --> 00:51:19,559
+16 değil de 18 şu.
+
+991
+00:51:19,559 --> 00:51:21,559
+Yani steak'in içerisinde bir şey koymak istiyorsan
+
+992
+00:51:21,559 --> 00:51:23,559
+dönmeden önce şurada koy move
+
+993
+00:51:23,559 --> 00:51:25,559
+base pointer
+
+994
+00:51:25,559 --> 00:51:27,559
+artı 18,7
+
+995
+00:51:27,559 --> 00:51:29,559
+değerini koyduk mesela
+
+996
+00:51:29,559 --> 00:51:31,559
+steak'in içerisinde. Register'ın birisinde değerini koyabilirsiniz.
+
+997
+00:51:31,559 --> 00:51:33,559
+4 tanesini buradan çekersin.
+
+998
+00:51:33,559 --> 00:51:35,559
+Tamam geriye ne kaldı?
+
+999
+00:51:35,559 --> 00:51:37,559
+Şuradan bak. Şu ikisini
+
+1000
+00:51:37,559 --> 00:51:39,559
+çektin. 4 byte çekince şu ikisini
+
+1001
+00:51:39,559 --> 00:51:41,559
+çektin. Şurası kaldı. Sadece
+
+1002
+00:51:41,559 --> 00:51:43,559
+onu da döndüğün yerde
+
+1003
+00:51:43,559 --> 00:51:45,559
+şurada pop
+
+1004
+00:51:45,559 --> 00:51:47,559
+register'ın içerisini almak istiyorsun
+
+1005
+00:51:47,559 --> 00:51:49,559
+mesela.
+
+1006
+00:51:49,559 --> 00:51:51,559
+Böylece steak'ten de bir şey döndürebilirsin.
+
+1007
+00:51:51,559 --> 00:51:53,559
+Ama
+
+1008
+00:51:53,559 --> 00:51:55,559
+şunu güzel organize etmen lazım.
+
+1009
+00:51:55,559 --> 00:51:57,559
+Kaç tane şey döndürüyorsun?
+
+1010
+00:51:57,559 --> 00:51:59,559
+Bir tane döndürüyorsan oraya
+
+1011
+00:51:59,559 --> 00:52:01,559
+4 yazıp buradan bir tane alman lazım.
+
+1012
+00:52:01,559 --> 00:52:03,559
+Tamam.
+
+1013
+00:52:03,559 --> 00:52:05,559
+Önemli olan bu. Veya oraya hiçbir şey
+
+1014
+00:52:05,559 --> 00:52:07,559
+yazmayıp buraya ilk iki
+
+1015
+00:52:07,559 --> 00:52:09,559
+sesini boşa sallayıp üçüncüsünü
+
+1016
+00:52:09,559 --> 00:52:11,559
+alman lazım falan.
+
+1017
+00:52:11,559 --> 00:52:13,559
+Ama tabi sorduğun
+
+1018
+00:52:13,559 --> 00:52:15,559
+soru şuysa.
+
+1019
+00:52:15,559 --> 00:52:17,559
+Hocam ben
+
+1020
+00:52:17,559 --> 00:52:19,559
+şuraya koyayım steak'e bir şey.
+
+1021
+00:52:19,559 --> 00:52:21,559
+Onu döndüreyim yani. O zaman tek
+
+1022
+00:52:21,559 --> 00:52:23,559
+alternatifim var. Şeyde yapacaksın bunu.
+
+1023
+00:52:23,559 --> 00:52:25,559
+Gelen tarafta yapacaksın.
+
+1024
+00:52:25,559 --> 00:52:27,559
+Steak'ın içerisinde şuraya yerleştireceksin bunu.
+
+1025
+00:52:27,559 --> 00:52:29,559
+Ve bunu
+
+1026
+00:52:29,559 --> 00:52:31,559
+güzel bir yer alacaksın. Şu ikisini sallayacaksın.
+
+1027
+00:52:31,559 --> 00:52:33,559
+Aldığında.
+
+1028
+00:52:33,559 --> 00:52:35,559
+Steak'ın içinden de bir şey döndürebilirsin.
+
+1029
+00:52:35,559 --> 00:52:37,559
+Bu sorunun cevabı o.
+
+1030
+00:52:37,559 --> 00:52:39,559
+Şurayı temizleyelim tabi.
+
+1031
+00:52:39,559 --> 00:52:41,559
+Kafamız karışmasın.
+
+1032
+00:52:43,559 --> 00:52:45,559
+Evet başka sorusu olan var mı?
+
+1033
+00:52:45,559 --> 00:52:47,559
+Hocam sonucu başka
+
+1034
+00:52:47,559 --> 00:52:49,559
+register'larla da döndürebiliriz
+
+1035
+00:52:49,559 --> 00:52:51,559
+değil mi istersek?
+
+1036
+00:52:51,559 --> 00:52:53,559
+Tabi ki. Herhangi bir register
+
+1037
+00:52:53,559 --> 00:52:55,559
+kullanabilirsin. Mesela BX
+
+1038
+00:52:55,559 --> 00:52:57,559
+register'ın da kullanabilirsin.
+
+1039
+00:52:57,559 --> 00:52:59,559
+Böyle işte D'larla falan çok döndürülmesi
+
+1040
+00:52:59,559 --> 00:53:01,559
+uygun değil. Mümkünse
+
+1041
+00:53:01,559 --> 00:53:03,559
+sonuçlar bunu son hafta
+
+1042
+00:53:03,559 --> 00:53:05,559
+anlayacaksınız dersin son haftasında.
+
+1043
+00:53:05,559 --> 00:53:07,559
+Mümkünse sonuçlar AX register'ı üzerinden
+
+1044
+00:53:07,559 --> 00:53:09,559
+dönsün. Mümkün olmadığı
+
+1045
+00:53:09,559 --> 00:53:11,559
+durumda herhangi bir register'ı kullanarak
+
+1046
+00:53:11,559 --> 00:53:13,559
+döndürebilirsin. Sıkıntı yok.
+
+1047
+00:53:15,559 --> 00:53:17,559
+O zaman. Ama o zaman.
+
+1048
+00:53:17,559 --> 00:53:19,559
+Burada BX'i ayarladıysan mesela
+
+1049
+00:53:19,559 --> 00:53:21,559
+geldiğin tarafta da şunu yapacaksın yani
+
+1050
+00:53:21,559 --> 00:53:23,559
+compare AX virgül büyük alan değil yani.
+
+1051
+00:53:23,559 --> 00:53:25,559
+Orada BX'ten geliyorsun sonuç. Burayı da
+
+1052
+00:53:25,559 --> 00:53:27,559
+BX olacak. Şurası da BX olacak tamam mı?
+
+1053
+00:53:27,559 --> 00:53:29,559
+Burayı da ona göre
+
+1054
+00:53:29,559 --> 00:53:31,559
+yazman lazım yani.
+
+1055
+00:53:31,559 --> 00:53:33,559
+Orası önemli. Dikkat edilmesi
+
+1056
+00:53:33,559 --> 00:53:37,130
+gerek. Evet başka sorusu
+
+1057
+00:53:37,130 --> 00:53:43,059
+olan. Saatimiz kaç oldu?
+
+1058
+00:53:43,059 --> 00:53:45,059
+Oo saat 10 oldu. Arkadaşlar
+
+1059
+00:53:45,059 --> 00:53:47,059
+25 geçe tamam mı? Biraz bu benim
+
+1060
+00:53:47,059 --> 00:53:49,059
+teknik problemleri çözmem lazım.
+
+1061
+00:53:49,059 --> 00:53:51,059
+Bunu çalıştıralım.
+
+1062
+00:53:51,059 --> 00:53:53,059
+Öyle şey yapalım. Bu kodu
+
+1063
+00:53:53,059 --> 00:53:55,059
+çalıştıracağım ama onu remote'dan bağlamıyorum
+
+1064
+00:53:55,059 --> 00:53:57,059
+şu an. O sebeple
+
+1065
+00:53:57,059 --> 00:53:59,059
+25 geçe burada olalım. Dersle
+
+1066
+00:53:59,059 --> 00:54:01,059
+devam edelim. Kendinize iyi bakın
+
+1067
+00:54:01,059 --> 00:54:03,059
+diyorum.
+
+1068
+00:54:03,059 --> 01:24:06,859
+Görüşürüz.
+
+1069
+01:24:06,859 --> 01:24:08,859
+Evet merhaba arkadaşlar.
+
+1070
+01:24:08,859 --> 01:24:14,920
+Sesim geliyordur.
+
+1071
+01:24:14,920 --> 01:24:16,920
+İnşallah bir unit ediyorum.
+
+1072
+01:24:16,920 --> 01:24:18,920
+Başka bir isyara geçmiş olduk.
+
+1073
+01:24:18,920 --> 01:24:20,920
+Şimdi
+
+1074
+01:24:22,920 --> 01:24:24,920
+ekran paylaşımı yapalım.
+
+1075
+01:24:24,920 --> 01:24:33,060
+Yardımcımız
+
+1076
+01:24:33,060 --> 01:24:35,060
+kodlar burada.
+
+1077
+01:24:35,060 --> 01:24:37,060
+Bunları bir
+
+1078
+01:24:37,060 --> 01:24:39,060
+derleyelim ve nasıl bir
+
+1079
+01:24:39,060 --> 01:24:41,060
+netice
+
+1080
+01:24:41,060 --> 01:24:44,659
+alacağız. Görmüş
+
+1081
+01:24:44,659 --> 01:25:01,479
+aşama. Neydi?
+
+1082
+01:25:01,479 --> 01:25:03,479
+Neydi? 12.
+
+1083
+01:25:03,479 --> 01:25:05,479
+Evet.
+
+1084
+01:25:05,479 --> 01:25:07,479
+Hem A hem B uzantılı dosyamız
+
+1085
+01:25:07,479 --> 01:25:09,479
+burada. Her ikisinde
+
+1086
+01:25:09,479 --> 01:25:11,479
+hatta yaptığımız hataları olabilir. Derlerken
+
+1087
+01:25:11,479 --> 01:25:13,479
+onları görüyor olacağız arkadaşlar.
+
+1088
+01:25:13,479 --> 01:25:15,479
+A, S, M.
+
+1089
+01:25:15,479 --> 01:25:17,479
+Evet bakın bir tane
+
+1090
+01:25:17,479 --> 01:25:19,479
+hatamız var.
+
+1091
+01:25:19,479 --> 01:25:21,479
+Alan bull not defined.
+
+1092
+01:25:21,479 --> 01:25:23,479
+Hatırlarsanız geçen hafta da aynı hata
+
+1093
+01:25:23,479 --> 01:25:25,479
+karşılaşmıştık. Bir tarafta bunun
+
+1094
+01:25:25,479 --> 01:25:27,479
+burada olmadığını söylememiz.
+
+1095
+01:25:27,479 --> 01:25:29,479
+Diğer tarafta ise bunu
+
+1096
+01:25:29,479 --> 01:25:31,479
+publik olarak ilan etmemiz gerekiyordu.
+
+1097
+01:25:31,479 --> 01:25:33,479
+Kodumuzu dilerseniz
+
+1098
+01:25:33,479 --> 01:25:35,479
+o şekilde güncelleyelim. Şunları
+
+1099
+01:25:35,479 --> 01:25:37,479
+kapatayım.
+
+1100
+01:25:39,479 --> 01:25:44,390
+Nasıl yapıyorduk? Hatırlarsanız
+
+1101
+01:25:44,390 --> 01:25:46,390
+şurada.
+
+1102
+01:25:46,390 --> 01:25:48,390
+Bu Alan bull'u burada
+
+1103
+01:25:48,390 --> 01:25:50,390
+bulamazsın diye
+
+1104
+01:25:50,390 --> 01:25:52,390
+el isteyene
+
+1105
+01:25:52,390 --> 01:25:54,390
+Alan bull
+
+1106
+01:25:54,390 --> 01:25:56,390
+diyorduk.
+
+1107
+01:25:56,390 --> 01:25:58,390
+Şurda ise bunun publik bir şey
+
+1108
+01:25:58,390 --> 01:26:00,390
+olduğunu söylememiz gerekiyordu.
+
+1109
+01:26:00,390 --> 01:26:02,390
+Publik alan
+
+1110
+01:26:02,390 --> 01:26:08,649
+tekrar derleyelim.
+
+1111
+01:26:08,649 --> 01:26:10,649
+Güzel iki tane oldu.
+
+1112
+01:26:10,649 --> 01:26:12,649
+Hatamız.
+
+1113
+01:26:14,649 --> 01:26:17,930
+Alan bull. Birini
+
+1114
+01:26:17,930 --> 01:26:19,930
+satılır. Sintax error yapmış.
+
+1115
+01:26:19,930 --> 01:26:25,260
+Yanlış anlattı.
+
+1116
+01:26:25,260 --> 01:26:27,260
+Alan bull.
+
+1117
+01:26:29,260 --> 01:26:31,260
+Niye böyle oldu?
+
+1118
+01:26:31,260 --> 01:26:33,260
+Par yazmamız
+
+1119
+01:26:33,260 --> 01:26:35,260
+gerekli mi? Yok.
+
+1120
+01:26:35,260 --> 01:26:37,260
+Hocam ekstremde acaba E olacak mı?
+
+1121
+01:26:37,260 --> 01:26:39,260
+Olmayacak arkadaşlar.
+
+1122
+01:26:39,260 --> 01:26:41,260
+Geçen hafta bunu söyledim. E
+
+1123
+01:26:41,260 --> 01:26:43,260
+olmayacak. Şurda par diye
+
+1124
+01:26:43,260 --> 01:26:45,260
+ekstremden tekrar tanımamız gerekiyor.
+
+1125
+01:26:45,260 --> 01:26:47,260
+Bunu da
+
+1126
+01:26:47,260 --> 01:26:49,260
+hata oldukça güzel
+
+1127
+01:26:49,260 --> 01:26:51,260
+çözünmüyor. Kesinlikle
+
+1128
+01:26:51,260 --> 01:26:53,260
+E olmuyor.
+
+1129
+01:26:53,260 --> 01:26:55,260
+Tamam bunu düzelttik.
+
+1130
+01:26:55,260 --> 01:26:57,260
+B'sini de yapalım.
+
+1131
+01:26:57,260 --> 01:26:59,260
+B'de de sıkıntı yok.
+
+1132
+01:26:59,260 --> 01:27:01,260
+Link ederken beraber
+
+1133
+01:27:01,260 --> 01:27:03,260
+link ediyorduk.
+
+1134
+01:27:03,260 --> 01:27:05,260
+171220
+
+1135
+01:27:05,260 --> 01:27:07,260
+a.obj
+
+1136
+01:27:07,260 --> 01:27:09,260
+artı
+
+1137
+01:27:09,260 --> 01:27:11,260
+171220
+
+1138
+01:27:11,260 --> 01:27:13,260
+b.obj
+
+1139
+01:27:15,260 --> 01:27:17,260
+Tamam link etmeye de sıkıntı yok. Bir bakalım
+
+1140
+01:27:17,260 --> 01:27:19,260
+nasıl bir şey olmuş.
+
+1141
+01:27:19,260 --> 01:27:21,260
+171220
+
+1142
+01:27:25,260 --> 01:27:27,260
+İsmini ekstradan vermediğimiz için
+
+1143
+01:27:27,260 --> 01:27:29,260
+görüyorsunuz sadece a
+
+1144
+01:27:29,260 --> 01:27:31,260
+uzantılı bir
+
+1145
+01:27:31,260 --> 01:27:33,260
+executable dosya oluştu.
+
+1146
+01:27:33,260 --> 01:27:35,260
+171220 a.exe
+
+1147
+01:27:35,260 --> 01:27:37,260
+çalıştıralım bir bak.
+
+1148
+01:27:37,260 --> 01:27:39,260
+171220 a.exe
+
+1149
+01:27:39,260 --> 01:27:41,260
+hani sambo
+
+1150
+01:27:41,260 --> 01:27:43,260
+demiş olalım.
+
+1151
+01:27:43,260 --> 01:27:45,260
+Görüyorsunuz işte bizim standart
+
+1152
+01:27:45,260 --> 01:27:47,260
+data segmenti
+
+1153
+01:27:47,260 --> 01:27:49,260
+ve sıfır değerini
+
+1154
+01:27:49,260 --> 01:27:51,260
+siteye push ederek
+
+1155
+01:27:51,260 --> 01:27:53,260
+başlayan bir şey.
+
+1156
+01:27:53,260 --> 01:27:55,260
+Ardından bizim şeylerimiz başlıyor.
+
+1157
+01:27:55,260 --> 01:27:58,729
+Şey değerini
+
+1158
+01:27:58,729 --> 01:28:00,729
+cx3 koymamız
+
+1159
+01:28:00,729 --> 01:28:02,729
+eseyi sıfırlamamız
+
+1160
+01:28:02,729 --> 01:28:04,729
+ve sitein içerisine
+
+1161
+01:28:04,729 --> 01:28:06,729
+bu değerleri atmamızla
+
+1162
+01:28:06,729 --> 01:28:08,729
+devam ediyor. İlerleyelim.
+
+1163
+01:28:08,729 --> 01:28:10,729
+Mesela register'ları da bir görelim
+
+1164
+01:28:10,729 --> 01:28:12,729
+şu an. Register'larımızın şu anki
+
+1165
+01:28:12,729 --> 01:28:14,729
+değeri bu. Instruction pointer'ı görüyorsunuz
+
+1166
+01:28:14,729 --> 01:28:16,729
+sıfır olarak işaretlenmiş.
+
+1167
+01:28:16,729 --> 01:28:18,729
+Adım adım gittikçe instruction pointer'ın
+
+1168
+01:28:18,729 --> 01:28:20,729
+değeri de artıyor olacak.
+
+1169
+01:28:20,729 --> 01:28:22,729
+Site'in içerisine bir şey attıkça bakın
+
+1170
+01:28:22,729 --> 01:28:24,729
+site'in ilk değeri 28'di ilk register
+
+1171
+01:28:24,729 --> 01:28:26,729
+komutunu
+
+1172
+01:28:26,729 --> 01:28:28,729
+çalıştırdığımda. Ardından
+
+1173
+01:28:28,729 --> 01:28:30,729
+site'in içerisine bir şey attık 26 oldu.
+
+1174
+01:28:30,729 --> 01:28:32,729
+Tekrar bir şey atıyoruz. 24 oldu.
+
+1175
+01:28:32,729 --> 01:28:34,729
+Azalıyor yani. Sürekli burku.
+
+1176
+01:28:34,729 --> 01:28:36,729
+Data segmenti falan set ettik.
+
+1177
+01:28:36,729 --> 01:28:38,729
+Display data segmentinin sıfır dediğinizde
+
+1178
+01:28:38,729 --> 01:28:40,729
+work tipine görüyorsunuz.
+
+1179
+01:28:40,729 --> 01:28:42,729
+İlk elemanımız 6.
+
+1180
+01:28:42,729 --> 01:28:44,729
+İkinci elemanımız 8. Üçüncü elemanımız 5.
+
+1181
+01:28:44,729 --> 01:28:46,729
+Öncelikle bunları gönderiyor olacağız
+
+1182
+01:28:46,729 --> 01:28:48,729
+karşıya.
+
+1183
+01:28:48,729 --> 01:28:50,729
+Gönderelim. Üçüncü elemanımız
+
+1184
+01:28:50,729 --> 01:28:52,729
+5, 4, 5, 6,
+
+1185
+01:28:52,729 --> 01:28:54,729
+7, 8, 9.
+
+1186
+01:28:54,729 --> 01:28:56,729
+Ardından ikinci satırdaki
+
+1187
+01:28:56,729 --> 01:28:58,729
+ikinci 3, 0, 3, 0, 0
+
+1188
+01:28:58,729 --> 01:29:00,729
+bizim dizimizin boyutu.
+
+1189
+01:29:00,729 --> 01:29:02,729
+En büyük alan kısmı da o 3'den sonra
+
+1190
+01:29:02,729 --> 01:29:04,729
+gelecek alan kısmı.
+
+1191
+01:29:04,729 --> 01:29:06,729
+Aşama aşama en azından birisi için
+
+1192
+01:29:06,729 --> 01:29:08,729
+ilerliyor olalım.
+
+1193
+01:29:08,729 --> 01:29:10,729
+Site'in içerisine attığımız anda
+
+1194
+01:29:10,729 --> 01:29:12,729
+site'in değeri azıstek pointer'ın
+
+1195
+01:29:12,729 --> 01:29:14,729
+azalıyor. Bir tane daha artıyor, bir bir tane daha artıyor.
+
+1196
+01:29:14,729 --> 01:29:16,729
+Display.
+
+1197
+01:29:16,729 --> 01:29:18,729
+Site segmentinin sıfır sıfır 1 es.
+
+1198
+01:29:18,729 --> 01:29:20,729
+Dediğimizde, bu site'in içerisine
+
+1199
+01:29:20,729 --> 01:29:22,729
+attığımız, en son 5'i attık
+
+1200
+01:29:22,729 --> 01:29:24,729
+ondan sonra 8'i attık, ondan sonra da 6'i
+
+1201
+01:29:24,729 --> 01:29:26,729
+attık. Burada görebiliyoruz. Tamam mı?
+
+1202
+01:29:26,729 --> 01:29:28,729
+En son 5, sonra da 8, sonra da 6'i
+
+1203
+01:29:28,729 --> 01:29:30,729
+attık. Tamam. Call
+
+1204
+01:29:30,729 --> 01:29:32,729
+dediğimiz anda ne olacaktı?
+
+1205
+01:29:32,729 --> 01:29:34,729
+Bakın, şu an bizim kod
+
+1206
+01:29:34,729 --> 01:29:36,729
+segmentimiz, CS değerimize bakın
+
+1207
+01:29:36,729 --> 01:29:38,729
+0, 7, 6 et.
+
+1208
+01:29:38,729 --> 01:29:40,729
+CS değerimiz. Yeni bir kod
+
+1209
+01:29:40,729 --> 01:29:42,729
+segmentine geçiyoruz. 0, 7, 7, 2
+
+1210
+01:29:42,729 --> 01:29:44,729
+diye bir yeni kod segmentine geçiyoruz.
+
+1211
+01:29:44,729 --> 01:29:46,729
+Ve bunun sıfırıncı offsetine
+
+1212
+01:29:46,729 --> 01:29:48,729
+giderek bu işi gerçekleştireceğiz.
+
+1213
+01:29:48,729 --> 01:29:50,729
+Doğal olarak bizim programımızın
+
+1214
+01:29:50,729 --> 01:29:52,729
+yapacağı şey ne? Kod segmentimizi
+
+1215
+01:29:52,729 --> 01:29:54,729
+site'in içerisine
+
+1216
+01:29:54,729 --> 01:29:56,729
+atmak, ardından
+
+1217
+01:29:56,729 --> 01:29:58,729
+döndüğümüzde hangi offsetten
+
+1218
+01:29:58,729 --> 01:30:00,729
+devam edeceksin? Bunun değerini atmak.
+
+1219
+01:30:00,729 --> 01:30:02,729
+Yani 0, 1, 1 beğenin
+
+1220
+01:30:02,729 --> 01:30:04,729
+bir sonraki adresine, site'in
+
+1221
+01:30:04,729 --> 01:30:06,729
+içerisine atacak. Trace diyelim.
+
+1222
+01:30:06,729 --> 01:30:08,729
+Display.
+
+1223
+01:30:08,729 --> 01:30:10,729
+Kod segmentinin 0, 0, 1 pahası diyelim.
+
+1224
+01:30:10,729 --> 01:30:12,729
+Bakın, offset
+
+1225
+01:30:12,729 --> 01:30:14,729
+olarak
+
+1226
+01:30:14,729 --> 01:30:16,729
+attığı değer
+
+1227
+01:30:16,729 --> 01:30:18,729
+ve şey olarak
+
+1228
+01:30:18,729 --> 01:30:20,729
+attığı değeri burada görebiliyoruz.
+
+1229
+01:30:20,729 --> 01:30:22,729
+0, 0, 2, 0'ı
+
+1230
+01:30:22,729 --> 01:30:24,729
+20'yi yani, öyle söyleyeyim.
+
+1231
+01:30:24,729 --> 01:30:26,729
+Site'in içerisine offset olarak atmış.
+
+1232
+01:30:26,729 --> 01:30:28,729
+Kod segmentinin değerini 0, 7, 6
+
+1233
+01:30:28,729 --> 01:30:30,729
+et olarak kod segmentinin içerisine
+
+1234
+01:30:30,729 --> 01:30:32,729
+gitmiş durumda.
+
+1235
+01:30:32,729 --> 01:30:34,729
+Base'i de push ediyoruz.
+
+1236
+01:30:34,729 --> 01:30:36,729
+Etlik. Bakın,
+
+1237
+01:30:36,729 --> 01:30:38,729
+10, 1, 8 oldu.
+
+1238
+01:30:38,729 --> 01:30:40,729
+18 oldu yani, stack point'ın
+
+1239
+01:30:40,729 --> 01:30:42,729
+değeri. 16 oldu.
+
+1240
+01:30:42,729 --> 01:30:44,729
+DO'yu ettik, DX'i
+
+1241
+01:30:44,729 --> 01:30:46,729
+ettik, DX'i ettik. 10'a kadar düştü.
+
+1242
+01:30:46,729 --> 01:30:48,729
+Yani 10
+
+1243
+01:30:48,729 --> 01:30:50,729
+hexadecimal byte'lik,
+
+1244
+01:30:50,729 --> 01:30:52,729
+yani 16 byte'lik birileri kaldı.
+
+1245
+01:30:52,729 --> 01:30:54,729
+8 tane daha maksimum içerisinde bir şey
+
+1246
+01:30:54,729 --> 01:30:56,729
+koyabiliriz. Bu o manaya geliyor.
+
+1247
+01:30:56,729 --> 01:30:58,729
+Bu komutum mu?
+
+1248
+01:30:58,729 --> 01:31:00,729
+BP'ye virgül SP komutunu
+
+1249
+01:31:00,729 --> 01:31:02,729
+çalıştırmadan önce. Bakın,
+
+1250
+01:31:02,729 --> 01:31:04,729
+BP'nin değeri 0, 0, 0, 0.
+
+1251
+01:31:04,729 --> 01:31:06,729
+Stack point'ın değeri ise 0, 0, 1, 0.
+
+1252
+01:31:06,729 --> 01:31:08,729
+İşte BP'nin
+
+1253
+01:31:08,729 --> 01:31:10,729
+değeri de bu olacak, tahmin edeceğimiz üzere.
+
+1254
+01:31:10,729 --> 01:31:12,729
+AX'in değerini
+
+1255
+01:31:12,729 --> 01:31:14,729
+sıfırlamış oluyoruz. Ve
+
+1256
+01:31:14,729 --> 01:31:16,729
+artık BP'ye
+
+1257
+01:31:16,729 --> 01:31:18,729
+göre göreceli olarak,
+
+1258
+01:31:18,729 --> 01:31:20,729
+bakın, BP'ye göre, AX'in
+
+1259
+01:31:20,729 --> 01:31:22,729
+içerisine BP'ye göre göreceli
+
+1260
+01:31:22,729 --> 01:31:24,729
+olarak E inci, E
+
+1261
+01:31:24,729 --> 01:31:26,729
+14 demek. BP artı
+
+1262
+01:31:26,729 --> 01:31:28,729
+14'u AX'ın içerisine ekleyeceğiz. BP
+
+1263
+01:31:28,729 --> 01:31:30,729
+artı 14'te ne varmış? 5
+
+1264
+01:31:30,729 --> 01:31:32,729
+değeri varmış. Zaten ilk elemanımız 5
+
+1265
+01:31:32,729 --> 01:31:34,729
+değil mi? 5 değeri varmış.
+
+1266
+01:31:34,729 --> 01:31:36,729
+Ekledik. Sonra 8'i
+
+1267
+01:31:36,729 --> 01:31:38,729
+ekledik. Sonra da 6'i ekledik.
+
+1268
+01:31:38,729 --> 01:31:40,729
+Toplam 13 Hexade
+
+1269
+01:31:40,729 --> 01:31:42,729
+Simallik bir sayı çıktı. 13'ü
+
+1270
+01:31:42,729 --> 01:31:44,729
+2'ye böldük. 9
+
+1271
+01:31:44,729 --> 01:31:46,729
+kaldı. 9 Hexade
+
+1272
+01:31:46,729 --> 01:31:48,729
+Simallik bir sayı oldu.
+
+1273
+01:31:48,729 --> 01:31:50,729
+Bu 9 ne? Bu 9
+
+1274
+01:31:50,729 --> 01:31:52,729
+U değerimiz arkadaşlar.
+
+1275
+01:31:52,729 --> 01:31:54,729
+Ardından bunu BX'nin içerisine atıyoruz.
+
+1276
+01:31:54,729 --> 01:31:56,729
+BX de aynı oldu.
+
+1277
+01:31:56,729 --> 01:31:58,729
+9 oldu. Ve sırasıyla
+
+1278
+01:31:58,729 --> 01:32:00,729
+BX'den
+
+1279
+01:32:00,729 --> 01:32:02,729
+5'i çıkartıyoruz. 4.
+
+1280
+01:32:02,729 --> 01:32:04,729
+Ardından bunu CX'in içerisine atıyoruz.
+
+1281
+01:32:04,729 --> 01:32:06,729
+Attık.
+
+1282
+01:32:06,729 --> 01:32:08,729
+Şimdi mesela CX, ne kadar önemli bir şey
+
+1283
+01:32:08,729 --> 01:32:10,729
+şeyi fark etmişsinizdir.
+
+1284
+01:32:10,729 --> 01:32:12,729
+CX'in değeri. Bir üstteki
+
+1285
+01:32:12,729 --> 01:32:14,729
+registraların göstermine bakın. CX'in
+
+1286
+01:32:14,729 --> 01:32:16,729
+değeri 3. Niye geldiğimiz
+
+1287
+01:32:16,729 --> 01:32:18,729
+yordamda CX ne için kullanıyordu?
+
+1288
+01:32:18,729 --> 01:32:20,729
+O loop'un kaç kere tekrarlanacağını
+
+1289
+01:32:20,729 --> 01:32:22,729
+bilmemiz için kullanıyordu.
+
+1290
+01:32:22,729 --> 01:32:24,729
+Pekala biz CX'in
+
+1291
+01:32:24,729 --> 01:32:26,729
+değerini burada bozsak, farklı bir
+
+1292
+01:32:26,729 --> 01:32:28,729
+değer yapsak doğal olarak döndüğümüzde
+
+1293
+01:32:28,729 --> 01:32:30,729
+o loop'ta istediğimiz kadar
+
+1294
+01:32:30,729 --> 01:32:32,729
+tekrarlanmayacak. Bundan nasıl kurtuluyoruz?
+
+1295
+01:32:32,729 --> 01:32:34,729
+CX'in değerini
+
+1296
+01:32:34,729 --> 01:32:36,729
+programımızın ana kodunu yazmaya
+
+1297
+01:32:36,729 --> 01:32:38,729
+başlamadan önce sitenin içerisinde
+
+1298
+01:32:38,729 --> 01:32:40,729
+push ederek ve ana kod
+
+1299
+01:32:40,729 --> 01:32:42,729
+bittikten sonra tekrardan hop
+
+1300
+01:32:42,729 --> 01:32:44,729
+ederek CX'in değerini böylece
+
+1301
+01:32:44,729 --> 01:32:46,729
+korumuş oluyoruz ve loop
+
+1302
+01:32:46,729 --> 01:32:48,729
+3 kere dönmesini istiyorsak 3
+
+1303
+01:32:48,729 --> 01:32:50,729
+kere dönüyor.
+
+1304
+01:32:50,729 --> 01:32:52,729
+Ardından CX'in içerisine yine 9'u koyduk ve
+
+1305
+01:32:52,729 --> 01:32:54,729
+9'dan 8'i çıkarttık. 1 kaldı.
+
+1306
+01:32:54,729 --> 01:32:56,729
+Değerinin içerisine 6'i koyduk.
+
+1307
+01:32:56,729 --> 01:32:58,729
+Değereye bakalım. En sağda.
+
+1308
+01:32:58,729 --> 01:33:00,729
+Evet.
+
+1309
+01:33:00,729 --> 01:33:02,729
+Pardon. 9'u koyduk.
+
+1310
+01:33:02,729 --> 01:33:04,729
+6'ı çıkarttık. 3 oldu.
+
+1311
+01:33:04,729 --> 01:33:06,729
+Sırayla artık çarpıyorum.
+
+1312
+01:33:06,729 --> 01:33:08,729
+9 çarpı, 4 çarpı, 1 çarpı,
+
+1313
+01:33:08,729 --> 01:33:10,729
+3 yapacağım. AX'ın içerisinde
+
+1314
+01:33:10,729 --> 01:33:12,729
+olacak. 9'da 4'ü çarptım.
+
+1315
+01:33:12,729 --> 01:33:14,729
+Hani hexadecimal olarak
+
+1316
+01:33:14,729 --> 01:33:16,729
+çarptınız, biliyorsunuz zaten.
+
+1317
+01:33:16,729 --> 01:33:18,729
+Sonra da 1'le çarptım. Hiçbir şey
+
+1318
+01:33:18,729 --> 01:33:20,729
+değişmeyecek. Bir de 3'le çarptım.
+
+1319
+01:33:20,729 --> 01:33:22,729
+6 C. Yani şu an
+
+1320
+01:33:22,729 --> 01:33:24,729
+bu alanın karesinin değeri
+
+1321
+01:33:24,729 --> 01:33:26,729
+AX'ın içerisinde görüyoruz. Hexadecimal
+
+1322
+01:33:26,729 --> 01:33:28,729
+olarak 6 C'miş.
+
+1323
+01:33:28,729 --> 01:33:30,729
+İşleminizi tamamladıktan sonra
+
+1324
+01:33:30,729 --> 01:33:32,729
+sırayla bunları
+
+1325
+01:33:32,729 --> 01:33:34,729
+site'in içerisinden çekiyoruz. Her çektiğimizde
+
+1326
+01:33:34,729 --> 01:33:36,729
+stack point'ın değerinin arttığını görüyorsunuz.
+
+1327
+01:33:36,729 --> 01:33:38,729
+Bakın, return F6
+
+1328
+01:33:38,729 --> 01:33:40,729
+dediğimiz anda, mesela bunu
+
+1329
+01:33:40,729 --> 01:33:42,729
+sınavlarda genelde soracağız. Return F6
+
+1330
+01:33:42,729 --> 01:33:44,729
+ile beraber stack'ten
+
+1331
+01:33:44,729 --> 01:33:46,729
+kaç
+
+1332
+01:33:46,729 --> 01:33:48,729
+worth değer çeker?
+
+1333
+01:33:48,729 --> 01:33:50,729
+Bunu kim söyleyebilir? Kaç worth
+
+1334
+01:33:50,729 --> 01:33:52,729
+değer çeker? 3.
+
+1335
+01:33:52,729 --> 01:33:54,729
+Return F6
+
+1336
+01:33:54,729 --> 01:33:56,729
+çalıştığında.
+
+1337
+01:33:56,729 --> 01:33:58,729
+5 mi? 5.
+
+1338
+01:33:58,729 --> 01:34:00,729
+Süper. Return F
+
+1339
+01:34:00,729 --> 01:34:02,729
+far olduğu için zaten iki
+
+1340
+01:34:02,729 --> 01:34:04,729
+tanesini kendisi çekiyor arkadaşlar.
+
+1341
+01:34:04,729 --> 01:34:06,729
+İki tanesini kendisi çekiyor
+
+1342
+01:34:06,729 --> 01:34:08,729
+far'dan dolayı. Bir de
+
+1343
+01:34:08,729 --> 01:34:10,729
+yanına 6 yazdığımız için 3'de oradan
+
+1344
+01:34:10,729 --> 01:34:12,729
+geliyor. Yani toplam
+
+1345
+01:34:12,729 --> 01:34:14,729
+5 tane stack'den
+
+1346
+01:34:14,729 --> 01:34:16,729
+worth çekiyor.
+
+1347
+01:34:16,729 --> 01:34:18,729
+Stack point'ın değeri o şekilde düzenleniyor olacak.
+
+1348
+01:34:18,729 --> 01:34:20,729
+Bir A'ya 10
+
+1349
+01:34:20,729 --> 01:34:22,729
+işte yani o şeyi
+
+1350
+01:34:22,729 --> 01:34:24,729
+eklediğimizde 2,
+
+1351
+01:34:24,729 --> 01:34:26,729
+4 şeyine eriştik. Şimdi
+
+1352
+01:34:26,729 --> 01:34:28,729
+tabi artık conteyar yapacağız.
+
+1353
+01:34:28,729 --> 01:34:30,729
+AX'in içerisinde şu an 6J var.
+
+1354
+01:34:30,729 --> 01:34:32,729
+Görüyorsunuz. 6J ile
+
+1355
+01:34:32,729 --> 01:34:34,729
+başlangıçta ben en büyük
+
+1356
+01:34:34,729 --> 01:34:36,729
+alanın değerini 0'a set etmiştim.
+
+1357
+01:34:36,729 --> 01:34:38,729
+Onu karşılaştırıyoruz. Karşılaştırdık.
+
+1358
+01:34:38,729 --> 01:34:40,729
+6J ile
+
+1359
+01:34:40,729 --> 01:34:42,729
+0'ı karşılaştırdık. Jump
+
+1360
+01:34:42,729 --> 01:34:44,729
+below'sa, bilmem nereye zıplak
+
+1361
+01:34:44,729 --> 01:34:46,729
+değil. Jump below olmadığı
+
+1362
+01:34:46,729 --> 01:34:48,729
+için AX'in
+
+1363
+01:34:48,729 --> 01:34:50,729
+değerini en büyük alan
+
+1364
+01:34:50,729 --> 01:34:52,729
+değişkenin içerisine koymuş olduk.
+
+1365
+01:34:52,729 --> 01:34:54,729
+Ve S'ın değerini
+
+1366
+01:34:54,729 --> 01:34:56,729
+6'a atladık. Loop'la dönmeden önce
+
+1367
+01:34:56,729 --> 01:34:58,729
+data segmentimize bir bakalım.
+
+1368
+01:34:58,729 --> 01:35:00,729
+Bakın şurada. 2. satıra bakın.
+
+1369
+01:35:00,729 --> 01:35:02,729
+3 yazıyor. Bir daha 3 yazıyor. Sonra 6J yazıyor.
+
+1370
+01:35:02,729 --> 01:35:04,729
+En büyük alanı buraya 6J olarak koymuş
+
+1371
+01:35:04,729 --> 01:35:06,729
+olduk. Bir sonraki alanı hesaplayacağız.
+
+1372
+01:35:06,729 --> 01:35:08,729
+6J'den daha büyükse buraya gireceğiz.
+
+1373
+01:35:08,729 --> 01:35:10,729
+Trace.
+
+1374
+01:35:10,729 --> 01:35:12,729
+Gidelim. Şöyle güzelce yapalım
+
+1375
+01:35:12,729 --> 01:35:14,729
+işlemlerimizi. Görelim. Bakalım
+
+1376
+01:35:14,729 --> 01:35:19,100
+ne hesaplayacak.
+
+1377
+01:35:19,100 --> 01:35:21,100
+Multiplication.
+
+1378
+01:35:21,100 --> 01:35:23,100
+Bakın artık
+
+1379
+01:35:23,100 --> 01:35:25,100
+7-8 geldi.
+
+1380
+01:35:25,100 --> 01:35:27,100
+Hexade simar olarak. Yani 6J'den
+
+1381
+01:35:27,100 --> 01:35:29,100
+daha büyük olduğu için döndüğümüzde
+
+1382
+01:35:29,100 --> 01:35:31,100
+bunu karşılaştırırken 6J'nin
+
+1383
+01:35:31,100 --> 01:35:33,100
+yerini değiştiriyor.
+
+1384
+01:35:33,100 --> 01:35:35,100
+Olucak.
+
+1385
+01:35:35,100 --> 01:35:37,100
+Data segmentin 0 diyelim. Bu sefer
+
+1386
+01:35:37,100 --> 01:35:39,100
+6J 7-8 oldu.
+
+1387
+01:35:39,100 --> 01:35:41,100
+Bir sonraki 3J'ni hesaplayalım.
+
+1388
+01:35:41,100 --> 01:35:43,100
+Bir sonraki 3J'ni hesaplayalım hızlıca.
+
+1389
+01:35:43,100 --> 01:35:48,100
+Hesap gidiyoruz.
+
+1390
+01:35:48,100 --> 01:35:51,449
+Evet. Bir sonraki
+
+1391
+01:35:51,449 --> 01:35:53,449
+3J'nin alanı çok küçükmüş.
+
+1392
+01:35:53,449 --> 01:35:55,449
+Sıfır çıktı.
+
+1393
+01:35:55,449 --> 01:35:57,449
+Yani sıfırla bir arasında bir alanı var
+
+1394
+01:35:57,449 --> 01:35:59,449
+demek ki. O yüzden sıfır çıktı.
+
+1395
+01:35:59,449 --> 01:36:01,449
+Veya böldüğümüzden de kaynaklanıyor olabilir.
+
+1396
+01:36:01,449 --> 01:36:03,449
+Bizim yani formülümüzü kurguladıktan sonra
+
+1397
+01:36:03,449 --> 01:36:05,449
+işte mesela 3 hesaplıyorsunuz.
+
+1398
+01:36:05,449 --> 01:36:07,449
+3'ten 2'yi çıkartıyorsunuz.
+
+1399
+01:36:07,449 --> 01:36:09,449
+1 kalıyor. 2'ye bölüyorsunuz falan.
+
+1400
+01:36:09,449 --> 01:36:11,449
+Yani küsur atlı değerlerle bir alan hesaplanmayacağı için
+
+1401
+01:36:11,449 --> 01:36:13,449
+bizim
+
+1402
+01:36:13,449 --> 01:36:15,449
+80-86'da
+
+1403
+01:36:15,449 --> 01:36:17,449
+alan sıfır olarak durmuş. Olabilir.
+
+1404
+01:36:17,449 --> 01:36:19,449
+Yani bizim yaptığımızı lojik bir şekilde bir sonuç verebilir.
+
+1405
+01:36:19,449 --> 01:36:21,449
+Doğal olarak sıfır bulunduğu için
+
+1406
+01:36:21,449 --> 01:36:23,449
+78 Hz isminden
+
+1407
+01:36:23,449 --> 01:36:25,449
+daha büyük olmadığından itir.
+
+1408
+01:36:25,449 --> 01:36:27,449
+Bu sefer jump below 0029. offset'e zıplayacak.
+
+1409
+01:36:27,449 --> 01:36:29,449
+Şu benim T yazdığım
+
+1410
+01:36:29,449 --> 01:36:31,449
+imdeşin yanım sönün,
+
+1411
+01:36:31,449 --> 01:36:33,449
+yanım sönen yerin hemen üstünde
+
+1412
+01:36:33,449 --> 01:36:35,449
+kod segmentimizin değeri var.
+
+1413
+01:36:35,449 --> 01:36:37,449
+Sıfır-7-6-8 yanında da offset değeri var.
+
+1414
+01:36:37,449 --> 01:36:39,449
+Sıfır-4-29. İşte bu.
+
+1415
+01:36:39,449 --> 01:36:41,449
+Jump below ile 0024
+
+1416
+01:36:41,449 --> 01:36:43,449
+0029'a zıplayacak.
+
+1417
+01:36:43,449 --> 01:36:45,449
+Evet bakın 0029'a zıpladı.
+
+1418
+01:36:45,449 --> 01:36:47,449
+Sadece yeni değer ekledi.
+
+1419
+01:36:47,449 --> 01:36:49,449
+Evet. Loop ile beraber
+
+1420
+01:36:49,449 --> 01:36:51,449
+işte label'a, şu label'a
+
+1421
+01:36:51,449 --> 01:36:53,449
+offset değerine zıplamak istiyor.
+
+1422
+01:36:53,449 --> 01:36:55,449
+Ama işte CX'in
+
+1423
+01:36:55,449 --> 01:36:57,449
+değerini kontrol edecek. CX'in değeri sıfır
+
+1424
+01:36:57,449 --> 01:36:59,449
+olduğu için artık yeni bir
+
+1425
+01:36:59,449 --> 01:37:01,449
+işlem gerçekleştirmiyor. Ve işlemimiz
+
+1426
+01:37:01,449 --> 01:37:03,449
+bittiğinde bizim
+
+1427
+01:37:03,449 --> 01:37:05,449
+en büyük alanımızın karesini
+
+1428
+01:37:05,449 --> 01:37:07,449
+ikinci satırda iki tane üçün yanında olan
+
+1429
+01:37:07,449 --> 01:37:09,449
+78 olarak görüyoruz.
+
+1430
+01:37:09,449 --> 01:37:11,449
+Kıymetli arkadaşlar. Bu diyelim bitirelim.
+
+1431
+01:37:11,449 --> 01:37:13,449
+Evet.
+
+1432
+01:37:13,449 --> 01:37:20,789
+Sorusu olan var mı?
+
+1433
+01:37:20,789 --> 01:37:22,789
+Sorusu olan arkadaşımız yok.
+
+1434
+01:37:22,789 --> 01:37:24,789
+Buradan olduğum kadarıyla.
+
+1435
+01:37:24,789 --> 01:37:26,789
+Güzel. Yani bunları zaten sizinle paylaşırız yine.
+
+1436
+01:37:26,789 --> 01:37:28,789
+Anlaşılması çok zor şeyler değil.
+
+1437
+01:37:28,789 --> 01:37:30,789
+Sizin de fark ettiğiniz üzere
+
+1438
+01:37:30,789 --> 01:37:32,789
+rahat bir şekilde
+
+1439
+01:37:32,789 --> 01:37:34,789
+siz de bakıp şey yapabilirsiniz.
+
+1440
+01:37:34,789 --> 01:37:36,789
+Üzerinde çeşitli denemeler,
+
+1441
+01:37:36,789 --> 01:37:38,789
+testler falan yapabilirsiniz
+
+1442
+01:37:38,789 --> 01:37:40,789
+diye düşünüyorum.
+
+1443
+01:37:40,789 --> 01:37:42,789
+Şimdi bir diğer yöntemimize
+
+1444
+01:37:42,789 --> 01:37:44,789
+gelelim.
+
+1445
+01:37:44,789 --> 01:37:46,789
+İsterseniz
+
+1446
+01:37:46,789 --> 01:37:48,789
+spek üzerinden kısmını yapıyor. Bir de
+
+1447
+01:37:48,789 --> 01:37:50,789
+Örnekler üzerinden gidince
+
+1448
+01:37:50,789 --> 01:38:00,789
+güzel anlaşılıyor düzenaraus
+
+1449
+01:38:02,789 --> 01:38:04,789
+Yazınız.
+
+1450
+01:38:04,789 --> 01:38:06,789
+Şimdi bakın
+
+1451
+01:38:06,789 --> 01:38:08,789
+verilen bir dizi
+
+1452
+01:38:08,789 --> 01:38:10,789
+dizi bin elemanlı olabilir.
+
+1453
+01:38:10,789 --> 01:38:12,789
+Yani harcı yordam
+
+1454
+01:38:12,789 --> 01:38:14,789
+bin elemanlı bir diziyi
+
+1455
+01:38:14,789 --> 01:38:16,789
+registre üzerinden gönderemeyiz.
+
+1456
+01:38:16,789 --> 01:38:23,789
+satın edebileceğiniz üzere. Sitein içerisine atıp çekmemizde bence meşak kart yapabilirsiniz.
+
+1457
+01:38:23,789 --> 01:38:29,789
+Siteyi o boyutlarda tanımlayıp, 1000 tane elemanı sitein içerisinden alıp kontrol edebilirsiniz falan.
+
+1458
+01:38:29,789 --> 01:38:37,789
+Fakat bunun için bu tarz durumlarda, yani gönderilecek verenin büyük olması gerektiği durumlarda her şeyi de göreceğiz.
+
+1459
+01:38:37,789 --> 01:38:41,789
+Önümüzdeki haftada falan. Sonuçta bu bir dizi ise dizinin bir adresi var.
+
+1460
+01:38:41,789 --> 01:38:44,789
+Ben dizinin adresini tek bir değer olarak karşı tarafa göndereyim.
+
+1461
+01:38:44,789 --> 01:38:47,789
+Bu adresden itibaren okey, o manada bir problem yok.
+
+1462
+01:38:47,789 --> 01:38:52,789
+Ama hani external public komutları kullanarak yordam tanımları gerçekleştirmiştik.
+
+1463
+01:38:52,789 --> 01:39:00,789
+Bu yordam tanımlarını biz data segmentte tanımladığımız çeşitli değişkenler için de kullanabiliyoruz.
+
+1464
+01:39:00,789 --> 01:39:03,789
+Nasıl oluyor? Ona bakalım arkadaşlar.
+
+1465
+01:39:03,789 --> 01:39:09,300
+Evet, şimdi bakalım kalemimiz yazacak mı?
+
+1466
+01:39:09,300 --> 01:39:12,300
+Hmm, belki yazacak.
+
+1467
+01:39:12,300 --> 01:39:16,300
+Şimdi burada yapmamız gereken işlemi şöyle bir şey yapalım.
+
+1468
+01:39:16,300 --> 01:39:25,300
+Öncelikle tabi bir ana, başka bir hisare geçtireyim ki kalibrasyon kalemini biraz bozuk.
+
+1469
+01:39:25,300 --> 01:39:27,300
+O yüzden sıkıntılar çıkabilir.
+
+1470
+01:39:27,300 --> 01:39:31,300
+Az önce akış diyagramını çizememiştik kalem yok diye.
+
+1471
+01:39:31,300 --> 01:39:34,300
+Şimdi bir tık daha iyi.
+
+1472
+01:39:34,300 --> 01:39:39,300
+Dizimiz var ve dizimizin boyutu var bunu biliyorduk.
+
+1473
+01:39:39,300 --> 01:39:44,300
+Şimdi bir tane bizim prosedürümüz oluyor olacak.
+
+1474
+01:39:44,300 --> 01:39:49,300
+Prosedürümüz sıralı mı diye kontrol eden.
+
+1475
+01:39:49,300 --> 01:39:52,300
+Bunun içerisinde iki tane parametre alacak dizi ve en.
+
+1476
+01:39:52,300 --> 01:39:56,960
+Ve geriye döndürdüğü değerse S olsun.
+
+1477
+01:39:56,960 --> 01:40:03,960
+Bir boolean veya işte sıralıdırsa bir, sırasızsa iki, neyse döndüren bir şey olmuş olacak.
+
+1478
+01:40:03,960 --> 01:40:07,960
+Şöyle say ekrana yazılan şeyimiz olmuş olsun.
+
+1479
+01:40:07,960 --> 01:40:10,960
+Ve stop ile beraber bunu bitirelim.
+
+1480
+01:40:10,960 --> 01:40:13,960
+Şimdi gelelim şunu yazmaya.
+
+1481
+01:40:13,960 --> 01:40:17,960
+Sıralı mı?
+
+1482
+01:40:17,960 --> 01:40:20,960
+İki tane integer alıyor içerisine.
+
+1483
+01:40:20,960 --> 01:40:27,859
+Prototipini yazmış olalım.
+
+1484
+01:40:27,859 --> 01:40:31,859
+Evet, şimdi bir dizinin sıralı olup olmadığını nasıl kontrol ederiz?
+
+1485
+01:40:31,859 --> 01:40:33,859
+Tahmin edebileceğiniz üzere while ile kontrol ederiz.
+
+1486
+01:40:33,859 --> 01:40:35,859
+Niye for olmaz?
+
+1487
+01:40:35,859 --> 01:40:40,859
+Çünkü dizi eğer sıralı değilse ilk iki elemanda mesela anlaşılabilir bu.
+
+1488
+01:40:40,859 --> 01:40:45,859
+Sıralı olmadığı durumda daha da dizinin sonuna kadar gitmemize gerek yok.
+
+1489
+01:40:45,859 --> 01:40:49,859
+Sıralı olmadığını anladığımız durumda hemen çıkmamız lazım.
+
+1490
+01:40:49,859 --> 01:40:53,859
+O sebeple bunu while ile gerçekleştirmemiz gerekir.
+
+1491
+01:40:53,859 --> 01:41:00,859
+Doğal olarak çevrim o indisini while'a girmeden önce dizin set etmemiz gerekiyor.
+
+1492
+01:41:00,859 --> 01:41:02,859
+Kıymetli arkadaşlar.
+
+1493
+01:41:03,859 --> 01:41:07,859
+Ya dizi sıralıdır, sıralıysa dizinin sonuna kadar kontrol etmemiz gerekir.
+
+1494
+01:41:07,859 --> 01:41:10,859
+Yani ne zamana kadar gideceğiz?
+
+1495
+01:41:10,859 --> 01:41:12,859
+N-1 diyorum.
+
+1496
+01:41:12,859 --> 01:41:17,859
+Çünkü dizinin en son elemanı ile dizinin en son elemanından sonraki elemanının karşılaştırılmasını yapmamız gerekiyor.
+
+1497
+01:41:17,859 --> 01:41:19,859
+Yapmamız lazım.
+
+1498
+01:41:19,859 --> 01:41:23,859
+Dizinin en sondan bir önceki elemanıyla, ki N-1. elemanıdır.
+
+1499
+01:41:23,859 --> 01:41:27,859
+Dizinin en sonuncu elemanını karşılaştırmamız yeterli olacak.
+
+1500
+01:41:27,859 --> 01:41:29,859
+Bu yüzden N-1.
+
+1501
+01:41:30,859 --> 01:41:34,859
+Şuraya aşağıya da parantez içinde M yazmış bulalım.
+
+1502
+01:41:34,859 --> 01:41:37,859
+Ve istediğimiz şey ne?
+
+1503
+01:41:37,859 --> 01:41:39,859
+Küçükten büyüyor doğru.
+
+1504
+01:41:39,859 --> 01:41:53,859
+Dizinin iinci elemanı küçük olduğu sürece dizinin i artı birinci elemanından artı dön diyoruz.
+
+1505
+01:41:53,859 --> 01:41:55,859
+Peki halen nasıl dönecek?
+
+1506
+01:41:55,859 --> 01:41:57,859
+İki koşulda çıkabilir.
+
+1507
+01:41:57,859 --> 01:41:59,859
+Ya şu koşul bozuluyor.
+
+1508
+01:41:59,859 --> 01:42:01,859
+Ya da bu koşul bozuluyor.
+
+1509
+01:42:01,859 --> 01:42:03,859
+İkisinden birisi ile çıkabilir.
+
+1510
+01:42:03,859 --> 01:42:05,859
+Herhangi birisini burada kontrol edebilirsiniz.
+
+1511
+01:42:05,859 --> 01:42:07,859
+İ eşit eşit ise N-1 ile.
+
+1512
+01:42:07,859 --> 01:42:09,859
+Bu ne demektir?
+
+1513
+01:42:09,859 --> 01:42:11,859
+Dizi sıralı.
+
+1514
+01:42:11,859 --> 01:42:15,859
+Şu koşul bozulduğunda çıkıyorsa dizi sıralı demektir.
+
+1515
+01:42:15,859 --> 01:42:17,859
+Sıralı ise S'nin değeri sıfır olsun.
+
+1516
+01:42:17,859 --> 01:42:21,859
+Bizi bu koşul haricinde şu koşul bozularak çıkıldığında ise sırasızdır.
+
+1517
+01:42:21,859 --> 01:42:27,859
+S'nin değeri ise böyle bir durumda 1 olmuş olsun.
+
+1518
+01:42:27,859 --> 01:42:29,859
+Stop ile beraber son alalım.
+
+1519
+01:42:29,859 --> 01:42:30,859
+Ney?
+
+1520
+01:42:30,859 --> 01:42:32,859
+Nöterli bir şey yapacağımı kabaca dandıracağım.
+
+1521
+01:42:32,859 --> 01:42:34,859
+Anladınız diye düşünüyorum.
+
+1522
+01:42:34,859 --> 01:42:37,859
+Burada önemli nokta şunu.
+
+1523
+01:42:37,859 --> 01:42:53,859
+Harici yordama göndermek ve bunun harici yordamın bizim ana yordamımızın data segmentinin içerisinde bulunan bu değişkenlerin kullanmasını sağlamak.
+
+1524
+01:42:53,859 --> 01:42:54,859
+Evet.
+
+1525
+01:42:54,859 --> 01:42:59,859
+Buraya kadar sorusu olan yoksa direkt kodu yazarak başlayabiliriz diye düşünüyorum.
+
+1526
+01:42:59,859 --> 01:43:01,859
+Tamam sorusu olan yok.
+
+1527
+01:43:01,859 --> 01:43:03,859
+Evet.
+
+1528
+01:43:03,859 --> 01:43:09,859
+Şimdi yine hani niye ambersan kuduslar?
+
+1529
+01:43:09,859 --> 01:43:11,859
+Evet.
+
+1530
+01:43:11,859 --> 01:43:13,859
+Evet.
+
+1531
+01:43:13,859 --> 01:43:17,750
+Evet.
+
+1532
+01:43:17,750 --> 01:43:19,750
+Evet.
+
+1533
+01:43:19,750 --> 01:43:21,750
+Evet.
+
+1534
+01:43:21,750 --> 01:43:23,750
+Evet.
+
+1535
+01:43:23,750 --> 01:43:25,750
+Niye ambersan kullandığım bilmiyorum.
+
+1536
+01:43:25,750 --> 01:43:29,750
+Bilmiyorum. Segment tanımlarını yaparak başlayalım.
+
+1537
+01:43:29,750 --> 01:43:34,750
+Önce bir kaydedersek şey olur, renkli boyar mıyar bir şeyler yapar.
+
+1538
+01:43:34,750 --> 01:43:40,750
+17, 12, 20, c.asm olmuş olsun.
+
+1539
+01:43:40,750 --> 01:43:52,750
+Segment, para, stk, s, defined work, 20, dumplication factor,
+
+1540
+01:43:52,750 --> 01:44:01,750
+my ss, segment, my bs. Burada işte data segmentimizi tanımlayalım.
+
+1541
+01:44:01,750 --> 01:44:10,750
+Para. Önümüzdeki haftaların itibaren şunların para olmadığı çeşitli versiyonların nasıl bir şey için kullanıldığını daha detaylı görüyor olacağız.
+
+1542
+01:44:10,750 --> 01:44:16,750
+En değerimiz mesela defined work 7 olmuş olsun.
+
+1543
+01:44:16,750 --> 01:44:20,750
+S değerimiz başlangıçta 0 olsun.
+
+1544
+01:44:20,750 --> 01:44:24,750
+Eğer şey olursa direk set ederiz.
+
+1545
+01:44:24,750 --> 01:44:27,750
+1 olması gerektiği durumda direk set etmiş olabiliriz.
+
+1546
+01:44:27,750 --> 01:44:29,750
+Bir de dizimiz var.
+
+1547
+01:44:29,750 --> 01:44:47,750
+Sıralı, bir de sırasız olduğu durum için şunun değerini yükselttiğimiz bir nasıl sonuç veriyor.
+
+1548
+01:44:47,750 --> 01:44:50,750
+Beraber her ikisi için de test ediyoruz arkadaşlar.
+
+1549
+01:44:50,750 --> 01:44:53,750
+Ardından kod segmentimizi yazalım.
+
+1550
+01:44:53,750 --> 01:45:03,329
+Assume, kod segment, my.
+
+1551
+01:45:03,329 --> 01:45:07,329
+Bunları bilerek kopyalayıp yapıştırmıyorum. Yazıyorum yazmaya alışım diye.
+
+1552
+01:45:07,329 --> 01:45:12,329
+Ben de hala daha. Bakın yazıyorum ki yazmadıkça oturmuyor arkadaşlar.
+
+1553
+01:45:12,329 --> 01:45:15,329
+Kopyalayıp yapıştırdıkça ondan sonra sınavda patlıyorsunuz.
+
+1554
+01:45:15,329 --> 01:45:23,270
+Proc far, ana, ent, procedur.
+
+1555
+01:45:23,270 --> 01:45:32,270
+Bundan sonra my.cs, ent, segment, ent, ana.
+
+1556
+01:45:32,270 --> 01:45:35,270
+Şurada tabi bir return'imiz var.
+
+1557
+01:45:35,270 --> 01:45:39,270
+Hatta return yapalım. Bakın onların return'ı farklı olduğunda görüyoruz.
+
+1558
+01:45:39,270 --> 01:45:51,270
+Program yazacağım için kuş.ds, egzor.ax, kuş.ax, mu, ax.my.ds, mu, ds.ax.
+
+1559
+01:45:51,270 --> 01:45:56,270
+Bunlar zaten standart işlemlerimizi hatırlayabildiğimiz ölçüde.
+
+1560
+01:45:56,270 --> 01:46:07,270
+Şimdi bizim data segmentimizde bulunan şu ve şu değeri karşı tarafla paylaşacağımız için.
+
+1561
+01:46:07,270 --> 01:46:12,270
+Karşı tarafta paylaşacağımız için ekstradan siteye herhangi bir şey atmama gerek yok.
+
+1562
+01:46:12,270 --> 01:46:18,270
+Direkt call sıralımı yordamını çağırıyor.
+
+1563
+01:46:18,270 --> 01:46:21,270
+Sıralımı yordamı bana sonucu.
+
+1564
+01:46:21,270 --> 01:46:23,270
+Sonucunu da tanımamışız.
+
+1565
+01:46:23,270 --> 01:46:25,270
+Al'i registre üzerinden döndürsün.
+
+1566
+01:46:25,270 --> 01:46:29,270
+Onu yazmış mıyız burada nereden döndürsün diye.
+
+1567
+01:46:29,270 --> 01:46:31,270
+Tamam yazmamışız.
+
+1568
+01:46:31,270 --> 01:46:33,270
+Al'i registre üzerinden döndürsün.
+
+1569
+01:46:33,270 --> 01:46:36,270
+Arkadaşlar yazalım hemen.
+
+1570
+01:46:36,270 --> 01:46:39,270
+Al'i registre üzerinden döndüğünde compare al0'sa.
+
+1571
+01:46:39,270 --> 01:46:43,270
+Yani sıralımı diye bize al'i registre üzerinden döndürdü.
+
+1572
+01:46:43,270 --> 01:46:49,270
+Ya 0 yazacak al'i registrenin içerisinde ya da al'i registrenin içerisinde 1 yazacak.
+
+1573
+01:46:50,270 --> 01:46:57,270
+Eğer ki al0'sa sıfıra eşitse jump0 bize sıralıdır.
+
+1574
+01:46:57,270 --> 01:47:05,270
+Ve bu sıralı zaten başlangıçta esin değerini sıfıra set ettiğim için ekstradan bir set işlemine gerek duydurmaz beni.
+
+1575
+01:47:05,270 --> 01:47:09,270
+Ama eğer ki al'inin değeri sıfıra eşit değilse nedir?
+
+1576
+01:47:09,270 --> 01:47:10,270
+1'dir zaten.
+
+1577
+01:47:10,270 --> 01:47:18,270
+O zaman move s,1 diyerek bu işlemi böylece tamamlayabiliriz.
+
+1578
+01:47:18,270 --> 01:47:23,270
+Tamam move s,1 diyerek bu işlemi tamamlayabiliriz.
+
+1579
+01:47:23,270 --> 01:47:26,270
+Şimdi işte şu sıralımıyı yazalım.
+
+1580
+01:47:26,270 --> 01:47:32,270
+Ondan sonra bunlar nasıl diğer tarafta kullanılacak onları ayarlıyor olalım.
+
+1581
+01:47:32,270 --> 01:47:34,270
+Tabii sorusu olan varsa sorabilir arkadaşlar.
+
+1582
+01:47:34,270 --> 01:47:37,270
+Biraz hızlı gidiyorum belki ama sorusu olan var mı?
+
+1583
+01:47:37,270 --> 01:47:46,300
+Şimdi yeni bilgisayarı geçtiğim için chatten bir şeyler yazanlar var herhalde.
+
+1584
+01:47:46,300 --> 01:47:47,300
+Hayal yok.
+
+1585
+01:47:47,300 --> 01:47:48,300
+3.
+
+1586
+01:47:48,300 --> 01:47:51,300
+Tamam o başka bir sorununca ağabeymiş.
+
+1587
+01:47:51,300 --> 01:47:55,300
+Tamam şimdi yeni bir şeyimizi yazalım.
+
+1588
+01:47:55,300 --> 01:47:58,300
+Harici yordamımızın bulunacağı segment yazalım.
+
+1589
+01:47:58,300 --> 01:48:04,300
+Segment para test olmuş olsun.
+
+1590
+01:48:04,300 --> 01:48:05,300
+Bunu da kaydedelim ki.
+
+1591
+01:48:05,300 --> 01:48:12,300
+Boyasın 17,12,20, D nokta asm demiş.
+
+1592
+01:48:12,300 --> 01:48:16,300
+Esium kod segment my kod.
+
+1593
+01:48:16,300 --> 01:48:25,380
+Sıralımın far.
+
+1594
+01:48:25,380 --> 01:48:28,380
+Hemen bunu da return diyelim.
+
+1595
+01:48:28,380 --> 01:48:30,380
+Nasıl olduğunu görmüş olalım.
+
+1596
+01:48:30,380 --> 01:48:33,380
+Far yordamdan return yazsak da sıkıntı olmuyor.
+
+1597
+01:48:33,380 --> 01:48:36,380
+Miderleyici hizmetimize düzenliyor.
+
+1598
+01:48:36,380 --> 01:48:38,380
+And procedure.
+
+1599
+01:48:38,380 --> 01:48:40,380
+My kod.
+
+1600
+01:48:40,380 --> 01:48:42,380
+And segment.
+
+1601
+01:48:42,380 --> 01:48:46,380
+Ve en sonunda and'imizde yazmış olalım.
+
+1602
+01:48:46,380 --> 01:48:49,380
+Şimdi buraya geldiğimizde şunu varsayıyoruz.
+
+1603
+01:48:49,380 --> 01:48:50,380
+Kıymetli arkadaşlar.
+
+1604
+01:48:50,380 --> 01:48:51,380
+Şunu varsayıyoruz.
+
+1605
+01:48:51,380 --> 01:48:59,949
+Bizim elimizde dizi ve en değerleri var.
+
+1606
+01:48:59,949 --> 01:49:02,949
+Dizi ve en değerleri var.
+
+1607
+01:49:02,949 --> 01:49:07,949
+Sonucu al üzerinden döndüreceğimiz için başlangıçta al'i istediğiniz gibi setlim.
+
+1608
+01:49:07,949 --> 01:49:11,949
+Tabii böyle al'i egzorlamaktansa axl egzorlamak daha azı biliyorsunuz.
+
+1609
+01:49:11,949 --> 01:49:13,949
+Onu başlangıçta bir egzorlayalım.
+
+1610
+01:49:13,949 --> 01:49:15,949
+Egzor s' virgül s.
+
+1611
+01:49:15,949 --> 01:49:18,949
+Belli döngüsel işlemler yapacağım için bunu s'da kullanıyorum.
+
+1612
+01:49:18,949 --> 01:49:22,949
+En diye bir değerim olduğu için cx'nin içerisinde bunu koyabilirim.
+
+1613
+01:49:22,949 --> 01:49:36,119
+Şurada yaptığımız işlemi görüyorsanız en'in bir önceki elemanına kadar gideceğiz.
+
+1614
+01:49:36,119 --> 01:49:38,119
+Dizinin sonuna kadar değil.
+
+1615
+01:49:38,119 --> 01:49:42,119
+O sebeple decrement cx diyorum.
+
+1616
+01:49:42,119 --> 01:49:44,119
+Cx'in değerini birazaltıyorum.
+
+1617
+01:49:44,119 --> 01:49:49,119
+Ve bundan sonra artık şu işlemi yaparak başlıyorum.
+
+1618
+01:49:49,119 --> 01:49:52,119
+Yani şu s'ıydı, s'ıydı.
+
+1619
+01:49:52,119 --> 01:49:53,119
+Şu da neydi?
+
+1620
+01:49:53,119 --> 01:49:54,119
+Bizim için cx'di.
+
+1621
+01:49:54,119 --> 01:49:58,119
+S ile cx'i karşılaştırarak başlıyor olacağım.
+
+1622
+01:49:58,119 --> 01:50:01,119
+Compare s' virgül cx.
+
+1623
+01:50:01,119 --> 01:50:07,119
+Şimdi bu öyle bir compare ki s'ı da cx'de herhangi bir şekilde negatif olabilme ihtimali yok.
+
+1624
+01:50:07,119 --> 01:50:09,119
+Böyle olduğu anda hemen aklınıza ne gelecek?
+
+1625
+01:50:09,119 --> 01:50:11,119
+Eboğlu-biloğlu bir şeyler.
+
+1626
+01:50:11,119 --> 01:50:15,119
+Biloğlu eku olsa, büyüse hala daha sıralı.
+
+1627
+01:50:15,119 --> 01:50:19,119
+Devam et gibi bir karşılaştırma yapıyorum.
+
+1628
+01:50:19,119 --> 01:50:23,119
+Ardından şu işlemi gerçekleştireceğim.
+
+1629
+01:50:23,119 --> 01:50:24,119
+Şurayı.
+
+1630
+01:50:24,119 --> 01:50:27,119
+Tabii hemen yine neye uyanıyorsunuz?
+
+1631
+01:50:27,119 --> 01:50:30,119
+Ya burası dadd'e değere, burası da dadd'e değere.
+
+1632
+01:50:30,119 --> 01:50:34,119
+O zaman her iki tarafında bellek olduğu bir tompi yok.
+
+1633
+01:50:34,119 --> 01:50:38,119
+Bu sebeple birisini register'ın içerisine koyman lazım.
+
+1634
+01:50:39,119 --> 01:50:41,119
+Tabii onların tipi neydi?
+
+1635
+01:50:41,119 --> 01:50:42,119
+Şuradan bakalım.
+
+1636
+01:50:42,119 --> 01:50:43,119
+Byte.
+
+1637
+01:50:43,119 --> 01:50:46,119
+A-h'in içerisine koyayım mesela.
+
+1638
+01:50:46,119 --> 01:50:50,119
+Bizi, s'ı, a-h'in içerisine koyduk.
+
+1639
+01:50:50,119 --> 01:50:52,119
+Şimdi compare yapabilirim.
+
+1640
+01:50:52,119 --> 01:50:55,119
+Move, compare, a-h virgül.
+
+1641
+01:50:55,119 --> 01:51:00,119
+Bizi, s'ı, byte tanımlı olduğu için artı bir diyorum sadece.
+
+1642
+01:51:00,119 --> 01:51:01,119
+Karşılaştırıyorum.
+
+1643
+01:51:01,119 --> 01:51:03,119
+Dizinin elemanları negatif, pozitif de olabilir.
+
+1644
+01:51:03,119 --> 01:51:09,119
+Burada bu komputerden sonra greater'lı, less'li bir şeyler kullanman daha uygun olur.
+
+1645
+01:51:09,119 --> 01:51:17,119
+Bakın eğer ki şu eleman şundan büyükse bizi sırasız demektir.
+
+1646
+01:51:17,119 --> 01:51:18,119
+Doğru mu?
+
+1647
+01:51:18,119 --> 01:51:20,119
+Bizi sırasız demektir.
+
+1648
+01:51:20,119 --> 01:51:22,119
+Bu eleman tekrar söylüyorum.
+
+1649
+01:51:22,119 --> 01:51:25,119
+Şundan büyükse sırasız demektir.
+
+1650
+01:51:25,119 --> 01:51:30,119
+Küçük ve eşit olduğu durumlarda sıralı olarak kabul ettiğimizi söyleyebiliriz.
+
+1651
+01:51:30,119 --> 01:51:32,119
+Increment, s'ı.
+
+1652
+01:51:32,119 --> 01:51:36,119
+S'ının değerini bir arttırıyorum ki bir sonraki elemanla karşılaştırabilirim.
+
+1653
+01:51:36,119 --> 01:51:43,119
+Çünkü eğer ki sırasız değilse yani jump, great, sırasızsa zıpladı.
+
+1654
+01:51:43,119 --> 01:51:47,119
+Sırasız değilse yani below equal ise sıralı olduğu manasına gelir.
+
+1655
+01:51:47,119 --> 01:51:49,119
+Sıralı ise bir sonraki elemana geçeyim.
+
+1656
+01:51:49,119 --> 01:51:51,119
+Increment, s'ı diyorum.
+
+1657
+01:51:51,119 --> 01:51:56,119
+Ve artık bakın label ile şuranın bir ilişkisini kılıyor olacağız.
+
+1658
+01:51:56,119 --> 01:51:58,119
+Biraz daha yapalım neyse.
+
+1659
+01:51:58,119 --> 01:52:04,119
+Bir arttırdık ve bu işlem bir döngü işlemi olduğu için jump, dönle beraber dönüyor.
+
+1660
+01:52:04,119 --> 01:52:06,119
+Nereye döneceğim? Pekala.
+
+1661
+01:52:06,119 --> 01:52:08,119
+Nereye döneceğim?
+
+1662
+01:52:10,529 --> 01:52:12,529
+Compayer, şuraya kadar döneceğiz.
+
+1663
+01:52:12,529 --> 01:52:14,529
+Dön.
+
+1664
+01:52:14,529 --> 01:52:18,420
+Compayer, dön.
+
+1665
+01:52:18,420 --> 01:52:23,420
+Şimdi bizim ilk elemanımızı karşılaştırdık.
+
+1666
+01:52:23,420 --> 01:52:25,420
+Sıralı ise okey.
+
+1667
+01:52:25,420 --> 01:52:27,420
+Herhangi bir sıkıntı yok.
+
+1668
+01:52:27,420 --> 01:52:28,420
+Sıralıya zıplayacağız.
+
+1669
+01:52:28,420 --> 01:52:34,420
+Sıralı ise eğer ilk elemanı sağlanıyorsa buraya zıpladı.
+
+1670
+01:52:36,420 --> 01:52:37,420
+Bu bir dakika.
+
+1671
+01:52:37,420 --> 01:52:39,420
+Ben de bir toparlayayım kafamı.
+
+1672
+01:52:39,420 --> 01:52:41,420
+Jump, above equal, büyük eşitse.
+
+1673
+01:52:41,420 --> 01:52:43,420
+Tamam, sıralıya zıpladık.
+
+1674
+01:52:43,420 --> 01:52:46,420
+Yani dizinin en sonuna gelmişiz demek.
+
+1675
+01:52:46,420 --> 01:52:48,420
+Bakın above equal, büyük eşitse.
+
+1676
+01:52:48,420 --> 01:52:55,420
+E, benden büyük eşit olduğu durumda artık en sonuna gelmişiz.
+
+1677
+01:52:55,420 --> 01:53:01,420
+Yani bütün diziyi tamamlamışız ve herhangi bir problem yok.
+
+1678
+01:53:01,420 --> 01:53:06,420
+O yüzden o sıralı buraya label'ı yerleştirdik.
+
+1679
+01:53:06,420 --> 01:53:07,420
+Tamam.
+
+1680
+01:53:07,420 --> 01:53:09,420
+En sonuna kadar gittik çünkü.
+
+1681
+01:53:09,420 --> 01:53:14,420
+Eğer ki hala daha iyi enden küçükse şu işlemi kontrol ediyoruz.
+
+1682
+01:53:16,420 --> 01:53:19,420
+Bu işlem sonucunda iki durum karşımıza çıkabilir.
+
+1683
+01:53:19,420 --> 01:53:21,420
+E, dizinin sırasız olduğunu anlayabiliriz.
+
+1684
+01:53:21,420 --> 01:53:23,420
+Veya bir sonraki elemana geçebiliriz.
+
+1685
+01:53:23,420 --> 01:53:27,420
+Dizinin sırasız olduğunu anladığımızda sırasız.
+
+1686
+01:53:27,420 --> 01:53:29,420
+Label'ındaysa ne olacak?
+
+1687
+01:53:29,420 --> 01:53:30,420
+Mu.
+
+1688
+01:53:30,420 --> 01:53:32,420
+[öğrenci] değerini ne yapıyorduk?
+
+1689
+01:53:32,420 --> 01:53:34,420
+Bak işte yaglamadan bakacağız.
+
+1690
+01:53:34,420 --> 01:53:36,420
+Hangisinin sıfırlığıydı?
+
+1691
+01:53:36,420 --> 01:53:38,420
+Sırasızsa 1.
+
+1692
+01:53:38,420 --> 01:53:39,420
+Tamam.
+
+1693
+01:53:39,420 --> 01:53:40,420
+Mu.
+
+1694
+01:53:40,420 --> 01:53:42,420
+Al'e virgül 1 yapıyoruz.
+
+1695
+01:53:42,420 --> 01:53:45,420
+Başlangıçta zaten al'in değerini sıfırladım.
+
+1696
+01:53:45,420 --> 01:53:48,420
+Eğer ki sıfırsa bizim için herhangi bir problem yok.
+
+1697
+01:53:48,420 --> 01:53:51,420
+Al'in değerini ekstradan sıfır çekmeme gerek yok.
+
+1698
+01:53:51,420 --> 01:53:55,420
+Ama 1 olduğu durumu ekstradan benim set etmem lazım.
+
+1699
+01:53:55,420 --> 01:53:57,420
+Bunları böyle çıkarıyoruz.
+
+1700
+01:54:00,699 --> 01:54:03,699
+Evet, kafanızda genel olarak canlanmıştır.
+
+1701
+01:54:03,699 --> 01:54:05,699
+Diye düşünüyorum kıymetli arkadaşlar.
+
+1702
+01:54:05,699 --> 01:54:09,699
+Fakat hemen mesela sormanız gereken sorulardan birisini ben sorayım.
+
+1703
+01:54:09,699 --> 01:54:11,699
+Ve onları da ekliyor olalım.
+
+1704
+01:54:11,699 --> 01:54:14,699
+Hocam yani AX'i kullandık anlıyoruz.
+
+1705
+01:54:14,699 --> 01:54:18,699
+Oradan geri dönüş değere olacağını bildiği için AX okey.
+
+1706
+01:54:18,699 --> 01:54:20,699
+Ama S'yi kullandık.
+
+1707
+01:54:20,699 --> 01:54:22,699
+Bu da CX'i kullandık.
+
+1708
+01:54:22,699 --> 01:54:23,699
+Başka neyi kullanmışız?
+
+1709
+01:54:23,699 --> 01:54:24,699
+Başka bir şey kullanmışız.
+
+1710
+01:54:24,699 --> 01:54:26,699
+Bunları sitenin içerisinde atmayalım mı?
+
+1711
+01:54:26,699 --> 01:54:28,699
+Tabii atalım.
+
+1712
+01:54:28,699 --> 01:54:32,699
+Push, S'ı, push, CX.
+
+1713
+01:54:32,699 --> 01:54:38,699
+Bunları dönmeden önce de sitenin içerisinden çekmemiz gerekiyor arkadaşlar.
+
+1714
+01:54:38,699 --> 01:54:39,699
+Herhangi bir yerde çekebilirsiniz.
+
+1715
+01:54:39,699 --> 01:54:42,699
+Şurada bence daha uzun akış açısından.
+
+1716
+01:54:42,699 --> 01:54:46,699
+Push, CX, pop pardon.
+
+1717
+01:54:46,699 --> 01:54:51,699
+Pop, CX ve pop, S'ı.
+
+1718
+01:54:51,699 --> 01:54:56,699
+Kullandıklarımızı da böylece sitenin içerisinden çekmiş oluyoruz.
+
+1719
+01:54:56,699 --> 01:55:00,699
+Evet sorusu olan var mı?
+
+1720
+01:55:00,699 --> 01:55:01,699
+Sorusu olan yok.
+
+1721
+01:55:01,699 --> 01:55:03,699
+Sen nasıl bunları ortak olarak paylaşacağız?
+
+1722
+01:55:03,699 --> 01:55:04,699
+Onu söylemek istiyorum.
+
+1723
+01:55:04,699 --> 01:55:06,699
+Çünkü ilk yapacağımız şey neydi?
+
+1724
+01:55:06,699 --> 01:55:08,699
+Bakın burada sıralımın video orada mı var?
+
+1725
+01:55:08,699 --> 01:55:15,699
+Hemen bu sıralımıyı burada sen arama diye sıralımı söylüyorduk.
+
+1726
+01:55:15,699 --> 01:55:23,699
+Şuraya da gidiyoruz ve diyorduk ki public sıralımı diye söylüyoruz.
+
+1727
+01:55:23,699 --> 01:55:24,699
+Yordan konusunda ok.
+
+1728
+01:55:24,699 --> 01:55:28,699
+Değişkenleri de kullanırken şöyle bir tanım yapıyoruz arkadaşlar.
+
+1729
+01:55:28,699 --> 01:55:40,699
+Bu sefer bizim şuradaki N ve şuradaki dizi değişkenimizi diğer yordanlarda kullanabilsin diye public olarak tanımlıyoruz.
+
+1730
+01:55:40,699 --> 01:55:46,699
+Dizi public olarak tanımlıyoruz.
+
+1731
+01:55:46,699 --> 01:55:53,699
+Buraya geldiğimizde ise artık bizim alacağımız burada kullandığımız yani aslında yordan kullanımına çok benziyor.
+
+1732
+01:55:53,699 --> 01:55:59,699
+Burada kullandığımız N ve burada kullandığımız dizi değişkenlerini burada bulamazsın.
+
+1733
+01:55:59,699 --> 01:56:04,699
+Link aşamasında neyle link edildiysen, hangi segmentle link edildiysen.
+
+1734
+01:56:04,699 --> 01:56:15,699
+O segment hangi obje uzantılı dosyaya link edildiysen onun data segmentinin içerisinde bulunacaksın.
+
+1735
+01:56:15,699 --> 01:56:19,699
+Bulacaksın bunları diye yine extrn komutuyla dizi.
+
+1736
+01:56:19,699 --> 01:56:23,699
+Ama bakın burada bunlar değişken tanımlı olduğu için tipini söylememiz gerekiyor.
+
+1737
+01:56:23,699 --> 01:56:27,699
+Byte and Word olarak söylememiz gerekiyor.
+
+1738
+01:56:27,699 --> 01:56:36,699
+Böyle olunca tamam link etme aşamasında o dizinin data segment içerisindeki adresini burada kullanabiliyoruz.
+
+1739
+01:56:36,699 --> 01:56:41,699
+Veya N değerinin data segment içerisindeki adresini burada kullanabiliyoruz.
+
+1740
+01:56:41,699 --> 01:56:46,699
+Yani link ederken daha çok adreslerin birbirlerine match edilmesi gibi bir işlem yapılıyor.
+
+1741
+01:56:46,699 --> 01:56:49,699
+Buradan da onu görebiliyoruz.
+
+1742
+01:56:49,699 --> 01:56:51,699
+Derde sorusu olan yoksa derleyebiliriz.
+
+1743
+01:56:51,699 --> 01:56:53,699
+Hocam benim bir sorum var.
+
+1744
+01:56:53,699 --> 01:56:54,699
+Buyurun.
+
+1745
+01:56:54,699 --> 01:57:00,699
+Ben 19 ve 20 sıtırca yaptığımız işlemlerini anlamadım.
+
+1746
+01:57:00,699 --> 01:57:01,699
+Ne zaman yapacağız bunu?
+
+1747
+01:57:01,699 --> 01:57:04,699
+Çünkü hiçbir koşulda gitmiyor gibi oraya.
+
+1748
+01:57:04,699 --> 01:57:08,699
+Bunları sıralının altına koymamız gerekiyor gibi geliyor bana.
+
+1749
+01:57:08,699 --> 01:57:15,109
+Anlamadım demek istediğini bir daha söyleyebilir misin?
+
+1750
+01:57:15,109 --> 01:57:19,109
+Hocam döngünün içinde eğer sıralıysa gerek.
+
+1751
+01:57:19,109 --> 01:57:20,109
+Doğru söylüyorsun.
+
+1752
+01:57:20,109 --> 01:57:23,109
+Bir dakika düzgün bir yere yerleştirelim.
+
+1753
+01:57:23,109 --> 01:57:25,109
+Doğru söylüyorsun.
+
+1754
+01:57:25,109 --> 01:57:26,109
+Çok doğru söylüyorsun.
+
+1755
+01:57:26,109 --> 01:57:27,109
+Buradan dönüyor.
+
+1756
+01:57:27,109 --> 01:57:29,109
+Çok teşekkür ediyorum.
+
+1757
+01:57:29,109 --> 01:57:30,109
+Doğru söylüyorsun.
+
+1758
+01:57:30,109 --> 01:57:31,109
+Şu araya koyalım.
+
+1759
+01:57:31,109 --> 01:57:35,109
+Yani sıralıya zıpladığımızda da bir problem var.
+
+1760
+01:57:35,109 --> 01:57:37,109
+Şöyle de yapabiliriz.
+
+1761
+01:57:37,109 --> 01:57:39,109
+Tabii böyle yapmayalım.
+
+1762
+01:57:39,109 --> 01:57:42,109
+İlla bu burada kullanmak zorunda değil.
+
+1763
+01:57:42,109 --> 01:57:45,109
+Şöyle yapılabilir yani sıralıda.
+
+1764
+01:57:45,109 --> 01:57:48,109
+Ona koyduk labelı değiştiremeyiz diye bir şey yok.
+
+1765
+01:57:48,109 --> 01:57:50,109
+Buraya girmesi lazım.
+
+1766
+01:57:50,109 --> 01:57:51,109
+Çok teşekkür ediyorum.
+
+1767
+01:57:51,109 --> 01:57:53,109
+Güzel bir yerden yakaladım.
+
+1768
+01:57:53,109 --> 01:57:56,109
+Aslında mesela hani patladığını görmüş olacaktık.
+
+1769
+01:57:56,109 --> 01:57:58,109
+Benim de hani dikkatsizliğim olmuş oldu.
+
+1770
+01:57:58,109 --> 01:58:00,109
+Hepsi patlayacak değilsiniz yani.
+
+1771
+01:58:00,109 --> 01:58:04,109
+Ama böyle önceden uyarmakla teşekkür ederim.
+
+1772
+01:58:04,109 --> 01:58:05,109
+Güzel olmuş oldu.
+
+1773
+01:58:05,109 --> 01:58:09,109
+Yani burada problemi anladınız değil mi?
+
+1774
+01:58:09,109 --> 01:58:13,420
+Efendim burada problemi anladınız değil mi?
+
+1775
+01:58:13,420 --> 01:58:14,420
+Jump, dön burada dönüyor.
+
+1776
+01:58:14,420 --> 01:58:16,420
+Ve hep şuraya yazar.
+
+1777
+01:58:16,420 --> 01:58:18,420
+Yazdığımız herhangi bir şeyin hiçbir önemi olmayacak.
+
+1778
+01:58:18,420 --> 01:58:22,420
+Çünkü buradan zıplarken şuraya ve şuraya zıplıyoruz.
+
+1779
+01:58:22,420 --> 01:58:24,420
+Burada yazdığımız konular hiçbir zaman çalışmayacak.
+
+1780
+01:58:24,420 --> 01:58:27,420
+O yüzden evet böyle bir yere koyduğumuz güzel oldu.
+
+1781
+01:58:27,420 --> 01:58:30,420
+Evet başka sorusu olan var mı?
+
+1782
+01:58:30,420 --> 01:58:34,420
+Hocam AX'i push pop etmemize gerek var mı burada?
+
+1783
+01:58:34,420 --> 01:58:38,420
+Yani AX'i push pop etmemize kesin yani şöyle.
+
+1784
+01:58:38,420 --> 01:58:45,420
+Öncelikle AL ve ilgili bir şey AL üzerinden sonuçlandırdığımız için kesinlikle pop etmemen lazım.
+
+1785
+01:58:45,420 --> 01:58:48,420
+Yani şimdi mesela sen şurada AX'i push ettin.
+
+1786
+01:58:48,420 --> 01:58:50,420
+AL'nin değerini set ettin.
+
+1787
+01:58:50,420 --> 01:58:53,420
+Daha sonra bundan sonra AX'i pop ettin.
+
+1788
+01:58:53,420 --> 01:58:54,420
+Pop ettin.
+
+1789
+01:58:54,420 --> 01:58:56,420
+Zaten AL'nin set ettiğin değeri gidecek.
+
+1790
+01:58:56,420 --> 01:58:58,420
+Böyle bir problem var.
+
+1791
+01:58:58,420 --> 01:59:00,420
+Buradaki hassasiyet şey olabilir.
+
+1792
+01:59:00,420 --> 01:59:04,420
+Tamam AL üzerinden sonuç dönecek de AX'i ne yapacağız hocam?
+
+1793
+01:59:04,420 --> 01:59:08,420
+AX'i tek başına şey yapamıyorsunuz biliyorsunuz.
+
+1794
+01:59:08,420 --> 01:59:09,420
+Ne denir ona?
+
+1795
+01:59:09,420 --> 01:59:10,420
+Mesela nasıl bir şey olabilir?
+
+1796
+01:59:10,420 --> 01:59:11,420
+Şurada yapalım.
+
+1797
+01:59:11,420 --> 01:59:13,420
+AX'i koruyabilmek için.
+
+1798
+01:59:13,420 --> 01:59:16,420
+Push AX dedik tamam mı?
+
+1799
+01:59:16,420 --> 01:59:22,420
+Mesela şu sırasızdan hemen önce yapıp şöyle bir şey olabilir.
+
+1800
+01:59:22,420 --> 01:59:23,420
+Pop AX.
+
+1801
+01:59:23,420 --> 01:59:29,420
+Pop AX deyip AX'in AH'ını koruyup AL'ini set edebilirsiniz.
+
+1802
+01:59:29,420 --> 01:59:30,420
+Tamam.
+
+1803
+01:59:30,420 --> 01:59:34,420
+Ama mesela öyle bir durumda şuraya zıpladığınızda ne olacak?
+
+1804
+01:59:34,420 --> 01:59:35,420
+Tamam.
+
+1805
+01:59:35,420 --> 01:59:36,420
+Buraya zıpladığınızda ne olacak?
+
+1806
+01:59:36,420 --> 01:59:38,420
+Mesela bunu güzel kurgulamamız lazım.
+
+1807
+01:59:38,420 --> 01:59:39,420
+Kim söyleyebilir?
+
+1808
+01:59:39,420 --> 01:59:40,420
+Nasıl kullanılır?
+
+1809
+01:59:40,420 --> 01:59:41,420
+Nasıl?
+
+1810
+01:59:41,420 --> 01:59:44,090
+Hangi satıra yazalım yani?
+
+1811
+01:59:44,090 --> 01:59:49,100
+Çok güzel bir aralık var burada şimdi.
+
+1812
+01:59:49,100 --> 01:59:50,100
+Buyurun.
+
+1813
+01:59:50,100 --> 01:59:52,100
+Şimdi ilk başta kim yapabiliriz hocam?
+
+1814
+01:59:52,100 --> 01:59:53,100
+Move.
+
+1815
+01:59:53,100 --> 01:59:56,470
+Yok.
+
+1816
+01:59:56,470 --> 01:59:57,470
+Hayır.
+
+1817
+01:59:57,470 --> 01:59:58,470
+Pardon.
+
+1818
+01:59:58,470 --> 01:59:59,470
+Tamam.
+
+1819
+01:59:59,470 --> 02:00:00,470
+Kim söyleyebilir arkadaşlar?
+
+1820
+02:00:00,470 --> 02:00:01,470
+Arttınıza gelirse söyleyin.
+
+1821
+02:00:01,470 --> 02:00:02,470
+Yani burada bir trik var şu an.
+
+1822
+02:00:02,470 --> 02:00:03,470
+Güzel bir trik.
+
+1823
+02:00:03,470 --> 02:00:04,470
+Tabii bir kısım arkadaşlar dersler inlerken başka şeylerle de uğraştıkları
+
+1824
+02:00:04,470 --> 02:00:05,470
+için onlar hiç sorunun farkında da değildir.
+
+1825
+02:00:05,470 --> 02:00:07,779
+Olsun.
+
+1826
+02:00:07,779 --> 02:00:08,779
+Uzaktan eğitimin dezavantajları bu tarz problemler olabilir.
+
+1827
+02:00:08,779 --> 02:00:09,779
+Ama dinleyen benim tahminimce kaç kişiyiz şu an?
+
+1828
+02:00:09,779 --> 02:00:10,779
+Yetmiş beş kişiyiz.
+
+1829
+02:00:10,779 --> 02:00:11,779
+Beş kişi dinliyordur yani.
+
+1830
+02:00:11,779 --> 02:00:12,779
+O beş kişiden birisi.
+
+1831
+02:00:12,779 --> 02:00:13,779
+Bence bu soruyu soruyoruz.
+
+1832
+02:00:13,779 --> 02:00:14,779
+Nereye koyalım?
+
+1833
+02:00:14,779 --> 02:00:15,779
+Bu pop a iksir.
+
+1834
+02:00:15,779 --> 02:00:16,779
+A haşın değerini korumak istiyoruz sadece.
+
+1835
+02:00:16,779 --> 02:00:17,779
+Evet güzel.
+
+1836
+02:00:17,779 --> 02:00:18,779
+O zaman bunu düşünün arkadaşlar.
+
+1837
+02:00:18,779 --> 02:00:19,779
+Bak bu çok güzel bir soru.
+
+1838
+02:00:19,779 --> 02:00:20,779
+Bunu düşünün.
+
+1839
+02:00:20,779 --> 02:00:21,779
+Ben buraya yazmıyorum.
+
+1840
+02:00:21,779 --> 02:00:22,779
+Bunu düşünün nasıl olduğunu ki ondan sonra sınavda falan kalsın.
+
+1841
+02:00:22,779 --> 02:00:23,779
+Evet.
+
+1842
+02:00:23,779 --> 02:00:24,779
+Evet.
+
+1843
+02:00:24,779 --> 02:00:25,779
+Evet.
+
+1844
+02:00:25,779 --> 02:00:26,779
+Evet.
+
+1845
+02:00:26,779 --> 02:00:27,779
+Evet.
+
+1846
+02:00:27,779 --> 02:00:30,609
+Evet.
+
+1847
+02:00:30,609 --> 02:00:31,609
+Evet.
+
+1848
+02:00:31,609 --> 02:00:32,609
+Evet.
+
+1849
+02:00:32,609 --> 02:00:33,609
+Evet.
+
+1850
+02:00:33,609 --> 02:00:34,609
+Evet.
+
+1851
+02:00:34,609 --> 02:00:41,779
+Evet.
+
+1852
+02:00:41,779 --> 02:00:42,779
+Evet.
+
+1853
+02:00:42,779 --> 02:00:43,779
+Evet.
+
+1854
+02:00:43,779 --> 02:00:44,779
+Evet.
+
+1855
+02:00:44,779 --> 02:00:45,779
+Evet.
+
+1856
+02:00:45,779 --> 02:00:46,779
+Evet.
+
+1857
+02:00:46,779 --> 02:00:47,779
+Evet.
+
+1858
+02:00:47,779 --> 02:00:48,779
+Evet.
+
+1859
+02:00:48,779 --> 02:00:49,779
+Evet.
+
+1860
+02:00:49,779 --> 02:00:50,779
+Evet.
+
+1861
+02:03:33,340 --> 02:03:34,500
+Che pakete.
+
+1862
+02:03:34,500 --> 02:03:35,500
+Çin...
+
+1863
+02:03:35,500 --> 02:03:36,680
+Ve alt年前ki 1 sучu ve geç월 vi Plaid Zack��.
+
+1864
+02:03:36,680 --> 02:03:38,640
+Bakalım or juicy pri pes.
+
+1865
+02:03:38,640 --> 02:03:39,520
+Altlında hız immediately.
+
+1866
+02:03:39,520 --> 02:03:40,520
+Tıp этотisi.
+
+1867
+02:03:40,520 --> 02:03:41,520
+Evet buyrun jeans.
+
+1868
+02:03:41,520 --> 02:03:52,000
+Biraz Lehman kalan anything would be even 2 explained itself for the basic concept,
+
+1869
+02:03:52,000 --> 02:03:53,000
+that'sногainlessr.
+
+1870
+02:03:53,000 --> 02:03:54,979
+For me, the concept would be nothing but not to think itself.
+
+1871
+02:03:54,979 --> 02:03:57,199
+Therefore I would have to think from the baseline.
+
+1872
+02:03:57,199 --> 02:04:01,180
+You know, one way would be dealish, one way would be dealish for me.
+
+1873
+02:04:01,180 --> 02:04:03,640
+For example, I would be able to make a slip here.
+
+1874
+02:04:03,640 --> 02:04:04,640
+No no.
+
+1875
+02:04:04,640 --> 02:04:05,640
+4 guys.
+
+1876
+02:04:05,640 --> 02:04:08,119
+5, 6, 7. 7 tane eleman yerleştirilmiştir.
+
+1877
+02:04:08,119 --> 02:04:09,119
+Adım adım.
+
+1878
+02:04:10,539 --> 02:04:11,539
+İlerleyelim.
+
+1879
+02:04:12,119 --> 02:04:15,119
+ESO'yu push etti.
+
+1880
+02:04:15,119 --> 02:04:18,119
+Kol komutunu da çalıştırmışız. Bakın.
+
+1881
+02:04:18,119 --> 02:04:20,560
+Yukarıda kol komutunu da çalıştırdık. Harici yordama gittik.
+
+1882
+02:04:20,560 --> 02:04:23,520
+Anesambul yaparsak görürüz. Şu an harici yordamımızın
+
+1883
+02:04:23,520 --> 02:04:26,380
+içerisindeyiz. Kaçıncı offset'e kadar?
+
+1884
+02:04:26,380 --> 02:04:27,760
+Şu an görünmüyor.
+
+1885
+02:04:28,399 --> 02:04:31,340
+Şu an görünecek. Evet. Yani 20.
+
+1886
+02:04:31,340 --> 02:04:34,279
+En son 20. offset'te return far
+
+1887
+02:04:34,279 --> 02:04:37,279
+ile beraber o işlemi çalıştırdığımızda toparlanmış olacağız.
+
+1888
+02:04:37,279 --> 02:04:39,279
+Biz onlara return yazmıştık.
+
+1889
+02:04:39,279 --> 02:04:42,279
+Ama bakın return far olarak buraya eklemiş.
+
+1890
+02:04:42,279 --> 02:04:45,279
+Site'nin içerisinde ilgili değerleri attık. AX'i sıfırladık.
+
+1891
+02:04:45,279 --> 02:04:48,279
+SA'yı sıfırladık. SA'nın değeri öncesinde de sıfırladık zaten.
+
+1892
+02:04:48,279 --> 02:04:51,279
+CX'nin içerisinde yeni değerini koyduk.
+
+1893
+02:04:51,279 --> 02:04:53,279
+Bir az attık. SA'yla
+
+1894
+02:04:53,279 --> 02:04:55,279
+CX'i karşılaştırdık.
+
+1895
+02:04:55,279 --> 02:04:57,279
+Küçük değilse
+
+1896
+02:04:57,279 --> 02:04:59,279
+bir yere zıpladık.
+
+1897
+02:04:59,279 --> 02:05:01,279
+A'ın içerisinde
+
+1898
+02:05:01,279 --> 02:05:03,279
+yani daha hala
+
+1899
+02:05:03,279 --> 02:05:05,279
+son elemana gelmediğimiz için
+
+1900
+02:05:05,279 --> 02:05:07,279
+devam ettik akıştan.
+
+1901
+02:05:07,279 --> 02:05:09,279
+AX'ın içerisine
+
+1902
+02:05:09,279 --> 02:05:11,279
+12 değerini koyduk.
+
+1903
+02:05:11,279 --> 02:05:14,279
+12 ile 12'den bir sonraki elemanımız kaçtı?
+
+1904
+02:05:14,279 --> 02:05:16,279
+12, 13, 14.
+
+1905
+02:05:16,279 --> 02:05:18,279
+14'ü karşılaştırıyoruz.
+
+1906
+02:05:18,279 --> 02:05:21,279
+Küçük müdür? Şu an pardon büyük müdür? Hayır.
+
+1907
+02:05:21,279 --> 02:05:23,279
+Hemen altındaki satıra gittik.
+
+1908
+02:05:23,279 --> 02:05:26,279
+Infraction pointer'dan hemen altındaki satıra gittiğimizi anlıyoruz.
+
+1909
+02:05:26,279 --> 02:05:29,279
+Yoksa 001C offset'ine zıplardı.
+
+1910
+02:05:29,279 --> 02:05:31,279
+SA'nın değerini 1 atladık.
+
+1911
+02:05:31,279 --> 02:05:33,279
+SA'nın değeri 1 oldu.
+
+1912
+02:05:33,279 --> 02:05:47,119
+Ve loop'ta dönmeye başladık.
+
+1913
+02:05:47,119 --> 02:05:49,119
+Evet, bakın.
+
+1914
+02:05:49,119 --> 02:05:51,119
+Artık bu bir önceki satırda
+
+1915
+02:05:51,119 --> 02:05:54,119
+compared SA'yı virgül CX'te.
+
+1916
+02:05:54,119 --> 02:05:57,119
+CX'in değeri 6. SA'nın değeri de 6.
+
+1917
+02:05:57,119 --> 02:05:59,119
+Jump nut bile olsa buraya zıplıyordu.
+
+1918
+02:05:59,119 --> 02:06:02,119
+Hakikaten jump nut ile birbirlerine eşitler çünkü.
+
+1919
+02:06:02,119 --> 02:06:03,119
+Zıpladı.
+
+1920
+02:06:03,119 --> 02:06:06,119
+CX'in değerini pop ettik. SA'nın değerini pop ettik.
+
+1921
+02:06:06,119 --> 02:06:08,119
+Return ile beraber döndük.
+
+1922
+02:06:08,119 --> 02:06:11,119
+Dönerken stack pointer'ın değeri bakın 24 oldu.
+
+1923
+02:06:11,119 --> 02:06:14,119
+Ve AL'nin değeri bizim için önemli.
+
+1924
+02:06:14,119 --> 02:06:16,119
+AL'nin değeri şu an 0.
+
+1925
+02:06:16,119 --> 02:06:18,119
+AL ile 0'a karşılaştık.
+
+1926
+02:06:18,119 --> 02:06:20,119
+Eğer ki 0 ise, 0 ise 17'ye zıpla.
+
+1927
+02:06:20,119 --> 02:06:22,119
+Loop 17'ye zıpladık.
+
+1928
+02:06:22,119 --> 02:06:24,119
+Yani 17'i de programın return'ı zıpladık.
+
+1929
+02:06:24,119 --> 02:06:26,119
+Bunu da bitirdikçe interrupt ile beraber dönüyoruz.
+
+1930
+02:06:26,119 --> 02:06:28,119
+Ve programımızı sonlandırmış oluyoruz.
+
+1931
+02:06:28,119 --> 02:06:31,119
+Kısa bir data segmentinin 0'una baktığımızda
+
+1932
+02:06:31,119 --> 02:06:35,119
+burada S değerini 0 olarak görüyoruz.
+
+1933
+02:06:35,119 --> 02:06:38,119
+Tabii hemen şunu yapalım kıymetli arkadaşlar.
+
+1934
+02:06:38,119 --> 02:06:42,069
+Sıralı olmasın.
+
+1935
+02:06:42,069 --> 02:06:44,069
+17 olur.
+
+1936
+02:06:44,069 --> 02:06:48,069
+Sırayı bozalım ki sırası olduğu durumda da nasıl çalışıyor.
+
+1937
+02:06:48,069 --> 02:06:50,069
+Onu görelim.
+
+1938
+02:06:50,069 --> 02:06:52,069
+Tabii tekrardan derlememiz gerekecek.
+
+1939
+02:06:52,069 --> 02:06:57,069
+Mask 17, 12, 20, C.ASMA'yı derledim.
+
+1940
+02:06:57,069 --> 02:06:59,069
+Ondan sonra link ettim.
+
+1941
+02:06:59,069 --> 02:07:02,069
+Ondan sonra çalıştım.
+
+1942
+02:07:06,069 --> 02:07:09,069
+Şunları ilerledikten sonra bakın.
+
+1943
+02:07:09,069 --> 02:07:11,069
+Ne yazan buldum ya?
+
+1944
+02:07:15,069 --> 02:07:17,069
+C var. C'den sonra 1, 1 var.
+
+1945
+02:07:17,069 --> 02:07:19,069
+17 var yani.
+
+1946
+02:07:19,069 --> 02:07:23,069
+12, 17, 16, 18 diye gidiyor.
+
+1947
+02:07:23,069 --> 02:07:27,069
+Yani sırasız olduğunu göreceğiz program bittiğinde.
+
+1948
+02:07:27,069 --> 02:07:29,069
+Ve 3. byte'a bakın.
+
+1949
+02:07:29,069 --> 02:07:30,069
+İlk satırdaki 3. byte.
+
+1950
+02:07:30,069 --> 02:07:32,069
+Yani 0, 7, 0, 0.
+
+1951
+02:07:32,069 --> 02:07:34,069
+Zaten o dizimizin boyutuydu.
+
+1952
+02:07:34,069 --> 02:07:38,069
+Onun yanındaki 0, 0'un program sonlandığında 1 olmasını bekliyoruz.
+
+1953
+02:07:38,069 --> 02:07:39,069
+O dedik.
+
+1954
+02:07:39,069 --> 02:07:41,069
+Biz bile data segmenti sıfırı.
+
+1955
+02:07:41,069 --> 02:07:42,069
+Bakın.
+
+1956
+02:07:42,069 --> 02:07:47,069
+Sırasız olduğu için 1 olduğunu da böylece görmüş olduk.
+
+1957
+02:07:47,069 --> 02:07:53,069
+Yani aslında [öğrenci]'de yaptığınız işlem böyle dizimizi aktaracağınız zaman
+
+1958
+02:07:53,069 --> 02:07:59,069
+public ve Extrana komutu üzerinden
+
+1959
+02:07:59,069 --> 02:08:04,069
+sizin data segmentiniz içerisinde bulunan değerleri de
+
+1960
+02:08:04,069 --> 02:08:06,069
+aileşebilirsiniz.
+
+1961
+02:08:06,069 --> 02:08:08,069
+Kıymetli arkadaşlar.
+
+1962
+02:08:08,069 --> 02:08:15,890
+Evet sorusu olan var mı?
+
+1963
+02:08:15,890 --> 02:08:17,890
+Ben tabi zoom'u açayım.
+
+1964
+02:08:17,890 --> 02:08:18,890
+Ben sizi hiç göremiyorum şu an.
+
+1965
+02:08:18,890 --> 02:08:20,890
+Sorusu olan varsa soruyu alabiliriz arkadaşlar.
+
+1966
+02:08:20,890 --> 02:08:27,529
+Evet sorusu olan yok.
+
+1967
+02:08:27,529 --> 02:08:29,529
+Hiç mi?
+
+1968
+02:08:29,529 --> 02:08:30,529
+Tamam.
+
+1969
+02:08:30,529 --> 02:08:33,529
+O zaman bu haftalık burada noktalandırıyoruz.
+
+1970
+02:08:33,529 --> 02:08:35,529
+Lütfen siz de pratik yapın.
+
+1971
+02:08:35,529 --> 02:08:38,529
+Muhtemelen hafta sonu ödeviniz, ilk ödeviniz geliyor olacak.
+
+1972
+02:08:38,529 --> 02:08:41,529
+Ödeve bir an önce.
+
+1973
+02:08:41,529 --> 02:08:44,529
+İki haftalık falan bir süre oldu.
+
+1974
+02:08:44,529 --> 02:08:47,529
+Bir an önce başlamanızı şimdiden tavsiye ediyorum.
+
+1975
+02:08:47,529 --> 02:08:49,529
+Son ana sıkıştırmayın lütfen.
+
+1976
+02:08:49,529 --> 02:08:50,529
+Kıymetli arkadaşlar.
+
+1977
+02:08:50,529 --> 02:08:53,529
+Ondan sonra bir tane daha ödeviniz olacak çünkü finalden önce.
+
+1978
+02:08:53,529 --> 02:08:54,529
+Evet.
+
+1979
+02:08:54,529 --> 02:08:56,529
+Hocam bir şey sorabilir miyim?
+
+1980
+02:08:56,529 --> 02:08:57,529
+Tabi buyurun.
+
+1981
+02:08:57,529 --> 02:08:59,529
+Sınavın aynı şekil mi olacak?
+
+1982
+02:08:59,529 --> 02:09:01,529
+Karma sınav şeklinde.
+
+1983
+02:09:01,529 --> 02:09:02,529
+Evet.
+
+1984
+02:09:02,529 --> 02:09:03,529
+Vize olmayacak arkadaşlar.
+
+1985
+02:09:03,529 --> 02:09:05,529
+İkinci vizemiz yok.
+
+1986
+02:09:05,529 --> 02:09:09,970
+Yani bu dersin ikinci vizesi yok.
+
+1987
+02:09:09,970 --> 02:09:11,970
+Sadece final sınavı olacak.
+
+1988
+02:09:11,970 --> 02:09:18,060
+Başka soru?
+
+1989
+02:09:18,060 --> 02:09:19,060
+Hocam kıymetle ilgili değil.
+
+1990
+02:09:19,060 --> 02:09:21,060
+Genel olarak bir şey sorabilir miyim?
+
+1991
+02:09:21,060 --> 02:09:22,060
+Buyurun tabi ki.
+
+1992
+02:09:22,060 --> 02:09:29,060
+Şimdi uygulamada flagleri de korumamız gerektiğin durumlar karşımıza çıkabiliyor mu?
+
+1993
+02:09:29,060 --> 02:09:32,060
+Yani funksiyona girdikten sonra.
+
+1994
+02:09:32,060 --> 02:09:36,060
+Hani flagleri mesela ben de kullanmak istiyorum sonrasında.
+
+1995
+02:09:36,060 --> 02:09:41,060
+Herhalde anladığım kadarıyla detaylı bir dokumentasyon gerekiyor bu fonksiyonlar için.
+
+1996
+02:09:41,060 --> 02:09:43,060
+Yordanlar için yazdığımız zaman.
+
+1997
+02:09:43,060 --> 02:09:46,060
+Çünkü neyi nasıl yapacağımızı bildirmemiz gerekiyor.
+
+1998
+02:09:46,060 --> 02:09:48,060
+Neyi nasıl yapacağımızı bildirmemiz gerekiyor.
+
+1999
+02:09:48,060 --> 02:09:51,060
+Ama bizden istenilen temel şey şu [öğrenci].
+
+2000
+02:09:51,060 --> 02:09:56,060
+Muhakkak ve muhakkak mümkün olduğunca her şeyi korumamız beklemek.
+
+2001
+02:09:56,060 --> 02:09:58,060
+Biz eğer harici yordanı yazan kişiysek.
+
+2002
+02:09:58,060 --> 02:09:59,060
+Evet.
+
+2003
+02:09:59,060 --> 02:10:02,060
+Flagleri de korumamız beklemek.
+
+2004
+02:10:02,060 --> 02:10:05,060
+Fakat flagleri korumak için ne yapmamız lazım?
+
+2005
+02:10:05,060 --> 02:10:08,760
+Puşef.
+
+2006
+02:10:08,760 --> 02:10:11,760
+Puşef ve popef diye iki tane komutumuz vardı.
+
+2007
+02:10:11,760 --> 02:10:12,760
+Bunu da biliyorsunuz.
+
+2008
+02:10:12,760 --> 02:10:15,760
+Genellikle ama şu şekilde yaklaşılır.
+
+2009
+02:10:15,760 --> 02:10:16,760
+Onu söyleyeyim.
+
+2010
+02:10:16,760 --> 02:10:20,760
+Puşef ve popefle beraber flagleri koruyabilirsiniz.
+
+2011
+02:10:20,760 --> 02:10:21,760
+Eğer ki.
+
+2012
+02:10:21,760 --> 02:10:22,760
+Eğer ki.
+
+2013
+02:10:22,760 --> 02:10:25,760
+Sondan bir önceki hafta göreceğiz.
+
+2014
+02:10:25,760 --> 02:10:29,760
+Programımız bizi bir şeyden sitemin tarafından kesilirse.
+
+2015
+02:10:29,760 --> 02:10:31,760
+Bir interapt alırsa.
+
+2016
+02:10:31,760 --> 02:10:36,760
+Böyle durumlarda flagleri de kendisi sitenin içerisine koyuyor.
+
+2017
+02:10:36,760 --> 02:10:40,760
+Fakat programcılar şunu varsayıyor.
+
+2018
+02:10:41,760 --> 02:10:46,760
+Harici yordamdan döndükten sonra da flaglerin sitenin ne olduğunu bilemeyiz.
+
+2019
+02:10:46,760 --> 02:10:50,760
+O sebeple eğer bunun kontrolü yapılması isteniyorsa.
+
+2020
+02:10:50,760 --> 02:10:54,760
+Harici yordama gitmeden önce sitenin içerisine atılıp.
+
+2021
+02:10:54,760 --> 02:10:58,760
+Yine harici yordamdan dönüldükten sonra sitenin içerisinden çekilsiniz.
+
+2022
+02:10:58,760 --> 02:11:01,760
+Yani registrilerin kontrolü harici yordam tarafından.
+
+2023
+02:11:01,760 --> 02:11:03,760
+Kamiller olarak bırakılır.
+
+2024
+02:11:03,760 --> 02:11:06,760
+Flaglerin kontrolü kısmı ise.
+
+2025
+02:11:06,760 --> 02:11:10,760
+Çeyin içerisinde nedenle ona ana yordam içerisinde kullanılmıdır.
+
+2026
+02:11:10,760 --> 02:11:12,760
+Siz evet.
+
+2027
+02:11:12,760 --> 02:11:17,760
+Gitmeden önce ayarladığınız flaglere gittikten sonra da kavuşmak istiyorsanız.
+
+2028
+02:11:17,760 --> 02:11:18,760
+Kesinlikle değişir çünkü.
+
+2029
+02:11:18,760 --> 02:11:20,760
+Flagler kesinlikle değişir.
+
+2030
+02:11:20,760 --> 02:11:24,760
+Kavuşmak istiyorsanız muhakkak ve muhakkak yapmanız gereken şey.
+
+2031
+02:11:24,760 --> 02:11:27,760
+Gitmeden önce flaglerin değerini korumak.
+
+2032
+02:11:27,760 --> 02:11:31,760
+Döndükten sonra da o flaglere erişebilirsiniz diye.
+
+2033
+02:11:31,760 --> 02:11:33,760
+Teşekkür ediyorum hocam.
+
+2034
+02:11:33,760 --> 02:11:35,760
+Ben teşekkür ediyorum.
+
+2035
+02:11:35,760 --> 02:11:37,760
+Evet başka sorusu olan var mı?
+
+2036
+02:11:37,760 --> 02:11:42,760
+Hocam derste sorduğunuz al sorusunu cevaplayabilir misiniz acaba?
+
+2037
+02:11:42,760 --> 02:11:43,760
+Ben değil.
+
+2038
+02:11:43,760 --> 02:11:44,760
+Sizi cevaplayın ona.
+
+2039
+02:11:44,760 --> 02:11:46,760
+Size ödev olmuş olsun.
+
+2040
+02:11:46,760 --> 02:11:49,760
+Biraz çok güzel bir trik var orada.
+
+2041
+02:11:49,760 --> 02:11:51,760
+Orada biraz kafa yormak lazım.
+
+2042
+02:11:51,760 --> 02:11:53,760
+Peki hocam.
+
+2043
+02:11:53,760 --> 02:11:54,760
+Evet.
+
+2044
+02:11:54,760 --> 02:11:59,159
+Evet başka sorusu olan var mı?
+
+2045
+02:11:59,159 --> 02:12:02,880
+Yok.
+
+2046
+02:12:02,880 --> 02:12:05,880
+Bu haftalık böylece nokalandırmış olalım arkadaşlar.
+
+2047
+02:12:05,880 --> 02:12:07,880
+Kendinize iyi bakın.
+
+2048
+02:12:07,880 --> 02:12:09,880
+Haftaya görüşürüz diyorum.
+
+2049
+02:12:09,880 --> 02:12:10,880
+Sağlıcakla.
+
+2050
+02:12:10,880 --> 02:12:11,880
+İyi günler hocam.
+
+2051
+02:12:11,880 --> 02:12:13,880
+İyi günler.

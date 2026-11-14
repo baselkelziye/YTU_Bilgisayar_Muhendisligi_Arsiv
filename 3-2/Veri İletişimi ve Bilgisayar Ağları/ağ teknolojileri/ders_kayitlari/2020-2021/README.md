@@ -4,5 +4,5 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
-| — | Bahar | Ali Gökhan Yavuz | [sube_bilinmeyen/](sube_bilinmeyen/) |
+| 1 | Bahar | Ali Gökhan Yavuz | [sube_1/](sube_1/) |
 | 2 | Bahar | — | [sube_2/](sube_2/) |
