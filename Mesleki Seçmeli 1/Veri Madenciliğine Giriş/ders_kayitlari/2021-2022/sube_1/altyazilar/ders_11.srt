@@ -1,0 +1,3363 @@
+1
+00:00:13,715 --> 00:00:15,295
+Evet arkadaşlar, günaydın.
+
+2
+00:00:19,955 --> 00:00:22,076
+Sesim geliyor mu? Geliyor.
+
+3
+00:00:23,856 --> 00:00:25,195
+Bir dakika.
+
+4
+00:00:27,275 --> 00:00:28,695
+Evet, arkadaşlar katılıyor.
+
+5
+00:00:31,695 --> 00:00:34,055
+Birazcık bekleyelim, sonra da başlayalım.
+
+6
+00:00:47,444 --> 00:00:55,444
+Kaç kişiyiz? Şöyle bir dakika daha bekleyeyim. Sonra da hemen ekranımı paylaşayım ve de hep beraber başlayalım.
+
+7
+00:01:03,636 --> 00:01:05,396
+Kampari aşı mı tereke.
+
+8
+00:01:11,796 --> 00:01:37,156
+Şimdi bugün ne yapacağız? Bugün şöyle bir şeyler yapacağız. İlk olarak bir metot öğreneceğiz birazcık teorik olarak. Bu da Instant Based Learning dediğimiz bir sınıflandırma metodu. Şu an ekranda da ismini görüyorsunuz. Sonra burada bırakacağız. Daha sonra veri analizinde çokça kullanılan Pandas kütüphanesine bakacağız.
+
+9
+00:01:37,615 --> 00:01:42,775
+Ondan sonra pandasının üstünden geçtikten sonra ne yapacağız?
+
+10
+00:01:43,435 --> 00:01:53,575
+CircuitLearn kütüphanesi ile beraber Python kullanarak bir sınıflandırma işlemi hep beraber yapmış olacağız.
+
+11
+00:01:53,575 --> 00:01:54,415
+Tamam mı?
+
+12
+00:01:55,795 --> 00:01:58,515
+Şimdi hadi bakalım başlayalım.
+
+13
+00:01:59,216 --> 00:02:01,855
+Instance Based Learning ile başlıyoruz. Bu ne demek?
+
+14
+00:02:02,644 --> 00:02:07,244
+Şimdi instance-based learning, instance ne demek? Biraz ondan bahsedelim.
+
+15
+00:02:07,724 --> 00:02:14,444
+Instance dediğimiz şey aslında bir sample. Bizim neyimiz var? Bizim verimiz var bildiğiniz gibi.
+
+16
+00:02:15,444 --> 00:02:24,903
+Verideki her bir örneğimiz, her bir aslında işte tablomuz varsa bir satırınız ne? Tek bir instance'a tekabül ediyor.
+
+17
+00:02:25,939 --> 00:02:51,560
+Instance Based Learning'de aslında en temel classification yöntemi diyebiliriz. Şöyle bir şey yapıyoruz. Yani Instance Based Learning'de amacımız şu, örneklere bakarak herhangi bir model üretmeyeceğiz. Onun yerine var olan örneklere, sample'lara ya da instance'lara bakarak diyeceğiz ki bizim sınıfımız budur. Şimdi nasıl yapacağız?
+
+18
+00:02:52,403 --> 00:03:04,603
+Şöyle yapacağız. Yine bir training sample'larımız var elimizde. Training dataset'imiz var. Ama bundan bir model oluşturmayacağız. Sample'ların kendisi aslında model gibi.
+
+19
+00:03:04,603 --> 00:03:10,623
+Ve baktığımız zaman, şöyle söyleyelim.
+
+20
+00:03:10,996 --> 00:03:23,496
+Bizim sample'ımıza, bizim instance'ımıza en çok benzeyen ya da benzeyenlerin sınıfı neyse diyeceğim ki benim örneğimin, testteki örneğimin de sınıfı budur diyeceğim.
+
+21
+00:03:23,496 --> 00:03:34,776
+Tamam. Şimdi, sizce sıkıntı yoksa şu kamerayı kapatayım çünkü internetim birazcık sıkıntı oluşturuyor. Tamam.
+
+22
+00:03:38,963 --> 00:03:52,664
+Şimdi, Instance Based Learning'de en çok kullanılan ne? K-nearest, neighbor. Yani ne? En yakın K-komşu metodu.
+
+23
+00:03:52,664 --> 00:03:59,664
+Bu en çok kullanılan ve işte model öğrenmeye gerek olmayan, belki de aslında...
+
+24
+00:04:00,532 --> 00:04:09,952
+Yani bir model oluşturmadan sınıflandırma yapacağımız bir metot. Instance-based metotlara genellikle lazy learning metotlar da denir.
+
+25
+00:04:11,475 --> 00:04:29,216
+ve de diğer, yani işte instance-based metotlar, lazy metotlarken diğer model oluşturan, derste gördüğümüz metotlara baktığımız zaman işte decision tree, AWS, AWS gibi yöntemlere de eager metotları genellikle denir.
+
+26
+00:04:29,216 --> 00:04:38,216
+Tamam mı? Şimdi ne yapıyoruz? Bir model oluşturmadan nasıl sınıflandırma yapabilirim?
+
+27
+00:04:39,379 --> 00:04:55,139
+Bakalım. Şöyle bir şey yapacağız. Şimdi dedik ki en çok kullanılan instance based learning metodu ne? K-nearest neighbor learning. Dolayısıyla ne yapacağız? Diyelim ki, şu hemen bir görsel üzerinden anlatayım.
+
+28
+00:04:57,620 --> 00:05:05,139
+Şuraya bakalım. Tamam mı? [öğrenci] kırmızı halkayı görmeyin. Burada neler var? Baktığımız zaman
+
+29
+00:05:06,579 --> 00:05:13,100
+Örnekler var değil mi? İki tane sınıf var. Bir artılar var, bir de maviler var. Şöyle bir şey yapacağız.
+
+30
+00:05:13,699 --> 00:05:21,280
+Diyelim ki benim elime bir tane örnek geldi. Bunlar ne? Training'ler. Training'de kırmızı ve mavi iki tane sınıfım var.
+
+31
+00:05:21,280 --> 00:05:30,600
+Şimdi diyelim ki buraya bir tane örnek geldi. Kırmızı çizdiğime bakmayın. Bunu maviye dönüştürelim.
+
+32
+00:05:33,843 --> 00:05:43,603
+Şimdi şuraya bir örnek geldi. Hatta mavi de yapmayalım. Daha içinde olmayan bir renk yapalım. Şurada bir örneğim var. Tamam mı? Şu yeşille boyadığım yerde.
+
+33
+00:05:44,563 --> 00:05:54,363
+Şimdi bunun sınıfı kırmızı mı, mavi mi? Onu bulmaya çalışacağım. Nasıl bulmaya çalışacağım? Buraya en yakın instanslara bakacağım.
+
+34
+00:05:55,668 --> 00:06:01,728
+Ve burada K dediğim şey bir parametre. Yani K1 de olabilir, 10 da olabilir, 100 de olabilir.
+
+35
+00:06:02,367 --> 00:06:07,427
+K1 ise en yakın, ilk komşuma bakacağım. Buna en yakın hangisi? Diyelim ki bu.
+
+36
+00:06:08,707 --> 00:06:14,608
+Bu ne eksi? Bu eksisi diyeceğim ki benim testteki örneğim de eksidir diyeceğim.
+
+37
+00:06:15,447 --> 00:06:21,427
+Bakın model oluşturmuyorum. Ya da diyelim ki şurada yeni bir tane bilinmeyen şeyim var.
+
+38
+00:06:23,124 --> 00:06:41,104
+Şöyle bir tane yeni bir instance var. Bakıyorum şu mavi mi kırmızı mı? Bakıyorum en yakın ne? Kırmızı. En yakın kırmızı ise bunun da sınıfı nedir diyeceğim? Kırmızıdır diyeceğim. Tamam mı? Bu kadar basit gibi gözüken bir algoritma.
+
+39
+00:06:42,204 --> 00:06:48,963
+Ama bunun avantajı ne? Avantajı bir modele ihtiyaç olmaması. Peki.
+
+40
+00:06:50,259 --> 00:06:55,920
+Sıkıntısı ne? Bunun sıkıntısı da şu. En yakın komşuyu bulmak için ne yapmam lazım?
+
+41
+00:06:57,139 --> 00:07:02,259
+Tüm komşulara bakıp bunun en yakınını bulmam lazım. Değil mi? Dolayısıyla...
+
+42
+00:07:02,656 --> 00:07:16,615
+Bunun test zamanı, yani en yakın komşuyu bulma zamanı, ol bir ağaçtan, çünkü bir ağaca baktığınız zaman en tane örneğiniz varsa, dengeli bir ağaçta, logen zamanda bulurken, burada ne yapacaksınız?
+
+43
+00:07:16,735 --> 00:07:25,216
+En tane örneğiniz varsa, her birisiyle arasındaki uzaklığı hesaplamanız gerekeceği için en zaman sürecek, yani uzun sürecek.
+
+44
+00:07:25,216 --> 00:07:27,776
+Zaman açısından bir dezavantajı var.
+
+45
+00:07:28,564 --> 00:07:53,864
+Şimdi ne yapıyoruz? K dediğimiz şey bir aslında yani k-nearest neighbor dediğimiz şey şuradaki k bir parametre. Buna bir derseniz en yakın bir komşuya bakacaksınız. İki derseniz en yakın iki komşunun ortalamasını alacaksınız. Üç derseniz en yakın üç komşuyu bulup oylama yapacaksınız. K genellikle tek sayı seçilir bir oylama yapılacağı için.
+
+46
+00:07:54,355 --> 00:07:59,596
+ne olur? İşte 3-5 gibi tek sayı seçilir ki oylamada eşit çıkmasını oylar.
+
+47
+00:07:59,596 --> 00:08:06,175
+Ve de en yakın sample'ı bulurken uzaklığa bakmam lazım.
+
+48
+00:08:06,855 --> 00:08:09,555
+Dolayısıyla uzaklığa bakarken de ne kullanırım?
+
+49
+00:08:10,076 --> 00:08:13,615
+Gördüğünüz gibi öklik uzaklık kullanırım.
+
+50
+00:08:14,740 --> 00:08:27,240
+Öklü tuzak kullanarak genellikle ne olur? Diyelim ki sizin şeyiniz, şu X, İ dediğimiz şey var olan instanslar olsun.
+
+51
+00:08:27,240 --> 00:08:36,920
+Pardon. X, İ datasettekiler, training datasettinde olsun. X, İ de sizin.
+
+52
+00:08:37,716 --> 00:08:42,475
+Bulmaya çalıştığınız olsun. Yani iki tane instance arasındaki fark direkt.
+
+53
+00:08:42,975 --> 00:08:49,195
+Öklitte her bir attribütü birbirinden çıkarıp karesinin toplamının kare köküne eşit.
+
+54
+00:08:49,296 --> 00:08:52,296
+Yani bildiğimiz öklit formülü.
+
+55
+00:08:52,836 --> 00:08:54,576
+Bu şekilde ne yapacağız?
+
+56
+00:08:55,576 --> 00:08:57,596
+Tek tek tek tek uzaklıkları bulacağız.
+
+57
+00:08:58,556 --> 00:09:01,336
+Ondan sonra bunların minimumunu bulup
+
+58
+00:09:01,908 --> 00:09:11,128
+K kaçsa o minimum K taneyi alıp ortalamasını alacağız. Ortalama değil de oylamasını yapıp en çok oyu kazanan neyse budur diyeceğiz.
+
+59
+00:09:13,844 --> 00:09:31,004
+Burada da onu anlatıyor. Şimdi algoritmik olarak anlatmış. Training example'ları x, i ve klasları da klas x, i olsun. Yani x, i dediğimiz şey ne? Aslında bir vektör. Değil mi? Vektörün içinde ne var? Tüm attribute'larım var benim.
+
+60
+00:09:34,548 --> 00:09:41,448
+Tüm etribütler X, İ'de duruyor. 1 iken işte birinci satır, İ 2 iken ikinci satır gibi düşünebilirsiniz.
+
+61
+00:09:42,348 --> 00:09:45,708
+X, klas dediğimiz şeyde ne var? Sınıfı var.
+
+62
+00:09:46,427 --> 00:09:59,368
+Şimdi ne yapacağız? K eşittir 1 ise her bir örnek için, tüm İ'ler için benim var olan örneğimle arasındaki öklüt uzaklığı alacağım.
+
+63
+00:10:00,607 --> 00:10:13,467
+Öklüt uzaklığı bulacağım. Öklüt uzaklığı bulduktan sonra K1 ise minimum uzaklık bana en yakın olanı verecek. Dolayısıyla en yakın olanın sınıfı neyse diyeceğim ki bunun sınıfı da budur.
+
+64
+00:10:13,467 --> 00:10:23,907
+Eğer K1 değilse, K daha büyük bir sayı ise ne yapacağım? Yine tüm uzaklıkları bulacağım. Tüm uzaklıkları bulduktan sonra
+
+65
+00:10:24,275 --> 00:10:29,175
+En yakın k taneyi alacağım ve şurada gördüğünüz gibi bir formül yazmış.
+
+66
+00:10:29,295 --> 00:10:33,495
+Burada şöyle yapıyor. En yakın k taneyi de sınıflara oylayacağım.
+
+67
+00:10:33,655 --> 00:10:39,475
+Mesela k, diyelim ki k-nearest neighbor'da k eşittir 5 ise en yakın 5 taneyi buldum.
+
+68
+00:10:40,075 --> 00:10:45,435
+5 taneden 3 tanesi işte pozitif sınıftır, 2 tanesi negatif sınıftır dediyse
+
+69
+00:10:46,388 --> 00:10:57,807
+Oylamada 3 daha yüksek olduğu için ben de diyeceğim ki bu pozitif sınıftır diyeceğim. Bu şekilde çalışacak. Hemen bir örnekle bakalım.
+
+70
+00:11:01,235 --> 00:11:10,975
+Training Datam olsun. Sadece 5 tane örnek var. Gördük mü? Kaç feature'ım var? 2 tane feature'ım var. Bir tanesi A feature'ı, diğeri de B feature'ı.
+
+71
+00:11:11,676 --> 00:11:16,016
+Klaslarımda yes, no, yes, no diye gidiyor. 2 tane no var, 3 tane de yes var.
+
+72
+00:11:17,076 --> 00:11:28,115
+Şimdi diyor ki bana, şurada diyor, 3'e 3 gelirse, yani 3'e 3 gelmesi ne demek? Burası Train Datası'ydı. A'sı 3 olan.
+
+73
+00:11:28,596 --> 00:11:52,695
+ve B'si de şöyle 3 olan yeni bir tane instance geldiği zaman bunun sınıfı nedir? Yes midir, No mudur? Bunu bul bana diyor. Şimdi nasıl bulacağım? Hepsiyle tek tek uzaklıklarına bakacağım. İlk önce birincisiyle bakalım. Birincisiyle nasıl bulacağız? Şöyle yazalım.
+
+74
+00:11:55,951 --> 00:12:08,991
+Birincinin a'sı bir, b'si bir. Bununki üçe üç. Dolayısıyla ne yapacağız? Şuraya yazalım. Kare kötü nasıl yazacağımı şu an bilmiyorum ama dursun.
+
+75
+00:12:08,991 --> 00:12:20,671
+Diyeceğiz ki, üç eksi birin karesi artı yine üç eksi birin karesi olacak değil mi?
+
+76
+00:12:22,355 --> 00:12:48,716
+karesi ve bunun kare kökü. Kare kök diyelim. Kare kök fonksiyonu olsun artık yapacak bir şey yok. Dolayısıyla buradan ne çıkar? 3-1, 2-2'nin karesi 4, 4 artı 4'ten kare kök 8 çıkmış olur. Birinciyle uzaklığı bulduk. Bakın burada bunu vermiş. Sonra ikinciyle uzaklığı bulacağız. İkinciyle uzaklığı nasıl bulacağız? 2'ye 1.
+
+77
+00:12:50,035 --> 00:13:05,655
+3-2'nin karesi artı 3-1'in karesinin kare kökü. 3-2'den 1 geldi, 1'in karesi 1. 3-1'den 2 geldi, 2'nin karesi 4. Dolayısıyla kök 5 oldu uzaklığı.
+
+78
+00:13:07,115 --> 00:13:15,995
+Yine hepsini bulduk. Bakın tüm uzaklıklar nerede var? Şöyle gösterelim. Tüm uzaklıklar burada var.
+
+79
+00:13:16,563 --> 00:13:38,823
+Şimdi, k-nearest neighbor'da k eşittir 1 olsaydı, tamam mı? Yani k-nearest neighbor'da, şöyle yapalım, one nearest neighbor olsaydı, burada en küçük değer hangisi baktığımız zaman, kare kök 1. Değil mi?
+
+80
+00:13:39,764 --> 00:13:53,783
+Dolayısıyla diyecektim ki kare kök bir en yakın olan. Dolayısıyla şu üçüncü örnek benim instance'ıma en yakın olandır. Ve onun sınıfı neymiş? Yes'miş. Dolayısıyla benimkinin sınıfı da yes'tir diyecektim.
+
+81
+00:14:05,331 --> 00:14:30,792
+3 örneği bulmam lazım. Şimdi bakıyorum, minimum hangisi? Bu. Şöyle çizeyim. Üçüncüsü. Daha sonra en küçük minimumdan bir sonraki minimum. İkinci en yakın olan bu. Kök 5. Kök 32 çok daha büyük çıkacak. Üçüncü en yakın olan da bu. Sınıfın yeri, naive Bridge'i. Ve oylama yapacağız. Bakalım.
+
+82
+00:14:31,135 --> 00:14:47,875
+Oylamada no demiş, no demiş, yes demiş. Oylamada iki no var, bir de yes var. Hangisi daha büyük? No daha büyük olduğu için ne buldu? Trinearist neighbor'a baktığımız zaman no bulmuş oldu sınıfını. Değil mi?
+
+83
+00:14:48,207 --> 00:15:05,187
+Bakın, one nearest neighbor yapsaydım, PS bulacaktı. En yakın şuna bakacaktı. Three nearest neighbor yapınca şu üç taneye baktık. En yakın üç tanenin hangisi olduğunu bulduk. Onlarda da bir oylama yaptık. İki tane no, bir tane de yes çıktı.
+
+84
+00:15:05,779 --> 00:15:16,939
+Dolayısıyla oylamayı no kazandı. Diyeceğim ki, şunun sınıfı nedir? Eğer 3-nearest neighbor yaptıysam artık ben bunun sınıfını no olarak buldum diyeceğim.
+
+85
+00:15:16,939 --> 00:15:27,100
+En yakın komşulara bakarak. Oldukça basit bir yöntem. Buraya kadar bir sorunuz var mı? Sormak istediğiniz bir şey. Anlaşıldı mı?
+
+86
+00:15:30,644 --> 00:15:42,064
+Arkadaşlar, anlaşıldı mı? Zaten herhalde şimdiye kadar gördüğümüz en basit şey bu. Birçok makine öğrenmesi şeyde ilk buna örnek verir. Tamam, oldukça basit bir yöntem.
+
+87
+00:15:42,064 --> 00:15:49,283
+Şimdi hop silelim. Gelelim şuraya. Peki.
+
+88
+00:15:51,283 --> 00:16:03,683
+Bakın burada şöyle bir şey oldu. Ne oldu? Aslında en yakın olan yes derken daha bir tık daha uzaktakiler no dedi. Bunun önüne geçmek için bir yöntem daha sunulmuş. O da şu.
+
+89
+00:16:06,144 --> 00:16:09,323
+Weighted KNN classification yani ne yapacak?
+
+90
+00:16:09,748 --> 00:16:19,408
+Bir yerlerde ağırlığına bakacak. Neyin ağırlığına bakacak? Şimdi biz ne yapıyoruz? Oylama yapıyoruz. Oylamamız ne? Majority voting approach.
+
+91
+00:16:19,748 --> 00:16:27,827
+Oyla yani en yakın K taneyi bulup onlardaki oylamada çoğunluk majority ne çıkarsa o diyorduk.
+
+92
+00:16:27,827 --> 00:16:36,608
+Ama şimdi bu yöntem diyor ki distance weighted de. Her şeyin, her instance'ın oy hakkı eşit olması.
+
+93
+00:16:37,652 --> 00:16:42,752
+Nasıl olsun? Ağırlıklı olsun. Peki ağırlıkları neye göre verelim? Uzaklıklara göre verelim.
+
+94
+00:16:43,672 --> 00:16:53,612
+Diyelim ki ben şunu soruyorum. Tamam mı? Bu ne diye soruyorum.
+
+95
+00:16:53,612 --> 00:17:05,331
+Ve burada başka örneklerim var. Diyelim ki bu yakın olan kırmızı, uzakta olanlar da mavi.
+
+96
+00:17:06,132 --> 00:17:06,692
+Tamam.
+
+97
+00:17:07,539 --> 00:17:21,859
+Herkes oy verirken, diyelim ki bunun yeşilin ne olduğunu bulmaya çalışırken, işte tree near it, neighbor yaparken bir tane kırmızı iki mavi var, hop ikiye birden oylamadan mavidir demeyelim.
+
+98
+00:17:22,359 --> 00:17:33,279
+Oy verirken bunlar uzaklıklarına göre oy versin. Yani kırmızının oyunun ağırlığı daha fazla olurken mavilerin oyunun ağırlığı daha az olsun.
+
+99
+00:17:34,483 --> 00:17:37,443
+Dolayısıyla da ne yapmışlar böyle yapabilmek için?
+
+100
+00:17:37,983 --> 00:17:50,244
+Bakın şurada gördüğünüz üzere uzaklığının karesiyle orantılı olacak bir ağırlık hesaplamışlar.
+
+101
+00:17:51,344 --> 00:17:54,043
+Tamam? Bir bölü uzaklığın karesi.
+
+102
+00:17:54,603 --> 00:17:55,643
+Dolayısıyla ne oluyor?
+
+103
+00:18:00,948 --> 00:18:22,867
+etkisi daha fazlayken uzaktakilerin etkisi daha az oluyor. Burada da ne diyor? En çok oyu alan Ardmax V demişti. Burada bakın deminkinde direkt oylar vardı İ'ler. Burada ne var bile gördüğünüz gibi? Bunu V ile çarpıyorum. Herkesin oyunu bir bölü uzaklığın karesiyle çarparak ne yapıyorum?
+
+104
+00:18:23,311 --> 00:18:34,372
+En sonunda en büyük şey hangisine çıkarsa odur diyorum. Hemen bunun da bir örneği var. Hemen bakalım şuraya. Şunları hemen temizleyelim.
+
+105
+00:18:34,372 --> 00:18:38,692
+Hoppa. Tamam.
+
+106
+00:18:39,892 --> 00:18:53,712
+Şimdi bu hangisiydi? İlk yaptığımız örnekte değil mi? Diyordu ki bana, buraya yeni bir tane örnek geldiği zaman, yani 3'e 3 geldiği zaman, hoppa, 3'e 3 geldiği zaman, bunun sınıfı ne olur diyordu.
+
+107
+00:18:54,172 --> 00:18:58,112
+Hatırladık mı? Hatırladık. Şimdi uzaklıkları burada bulduk.
+
+108
+00:18:58,420 --> 00:19:15,180
+Minimum 3 tanesi hangisi? Yani en yakın olan 3 tanesi bu. Bu ve bu. Şimdi oylamada ne yapıyordum? Hemen 2 NO, 1 yes diyordum ama bu sefer öyle yapmayacağız. Bu sefer waited. Ona bakacağız. Dolayısıyla ne yapacağız? Şimdi NO diyenlerin ağırlığına bakalım.
+
+109
+00:19:17,488 --> 00:19:37,728
+Ağırlığı ne yapacağım? Bir bölü uzaklıkla çarpacağım. Şimdi birincini kaçla çarpıyorum? Yani birinci no'yu bir bölü kök sekizin karesi. Kök sekizin karesi artı sekiz çarpı bir tane no çarpı bir bunun onun artı.
+
+110
+00:19:44,019 --> 00:19:59,460
+Kök 5'in karesi. Buradan 1 bölü 5 gelecek. Buradan yine bir tane oy geldi. Çarpı 1. Dolayısıyla bunları topladığımız zaman ne çıkacak? 13 bölü 40 çıkacak. Değil mi? No'ların ağırlığını bulmuş olduk.
+
+111
+00:19:59,460 --> 00:20:09,259
+Çok güzel yazdım. 13 bölü 40. Tamam. Şimdi gelelim yes'in ağırlığına. Yes bir tane var gördüğünüz üzere.
+
+112
+00:20:09,647 --> 00:20:19,387
+Bunun ağırlığı ne? 1 bölü kök 1'in karesi, yani 1. Peki hangisi daha büyük? 13 bölü 40 mı daha büyük, 1 mi daha büyük? 1 daha büyük.
+
+113
+00:20:20,048 --> 00:20:25,668
+Dolayısıyla yesin ağırlığı daha büyük olduğu için, birden fazla yaz olsa yine onları toplayacaktık.
+
+114
+00:20:26,127 --> 00:20:32,548
+Yesin ağırlığı 1, 13 bölü 40'dan daha büyük olduğu için diyeceğim ki bunun sınıfı yesdir diyeceğim.
+
+115
+00:20:33,548 --> 00:20:35,847
+Tamam mı? Bu da ne?
+
+116
+00:20:36,307 --> 00:20:43,688
+Distance Weighted, şurada gördüğünüz üzere Distance Weighted KNN Classification.
+
+117
+00:20:45,807 --> 00:20:48,468
+KNN'ler de çok kullanılır sizce.
+
+118
+00:20:50,728 --> 00:20:54,548
+Şimdi KNN'deki sıkıntı ne? Birazcık ondan konuşalım.
+
+119
+00:20:55,988 --> 00:21:00,008
+Neyse önce bunu yapın, sonra konuşalım sıkıntılarını.
+
+120
+00:21:00,008 --> 00:21:02,448
+Şimdi vermiş diyor ki,
+
+121
+00:21:04,435 --> 00:21:18,275
+Yine iki tane feature'ımız var. Ondan sonra class'ımızda 3, Y, 2, N var. Tamam mı? 5'e 5 için Tree Nearest Neighbor'ı kullan diyor. Şimdi 5'e 5'te ne çıkacak? Hadi bakalım yapalım.
+
+122
+00:21:21,619 --> 00:21:26,179
+Buradan ne çıkacak? Dördün karesi, dördün karesi kök içinde. Değil mi?
+
+123
+00:21:29,875 --> 00:21:30,816
+Kök 32.
+
+124
+00:21:33,175 --> 00:21:36,375
+İkinci için ne çıkacak? Kendiniz çözün bakalım.
+
+125
+00:21:54,324 --> 00:21:55,324
+Çözdünüz mü?
+
+126
+00:22:02,067 --> 00:22:03,467
+Şunun aynısı çıkacak.
+
+127
+00:22:06,107 --> 00:22:10,927
+Şimdi, en yakınlara baktığımız zaman, en yakınlar ne çıktı?
+
+128
+00:22:11,788 --> 00:22:12,707
+Bakın şu çıktı.
+
+129
+00:22:15,487 --> 00:22:16,647
+Çözdünüz mü kendiniz?
+
+130
+00:22:25,460 --> 00:22:26,500
+Bu ve bu çıktı.
+
+131
+00:22:31,120 --> 00:22:40,560
+En yakın bu. Normal classification yaparsanız 2S binom. Direkt weighted olmayan yaparsanız, dolayısıyla yes'tir diyeceksiniz.
+
+132
+00:22:41,080 --> 00:22:47,440
+Değil mi? Yani şu ilkininki yes. Peki ikinciyi nasıl yapacağız? İlkini yaparsanız yes çıktı.
+
+133
+00:22:50,644 --> 00:22:58,644
+Distance weighted yaparsanız ne çıkıyor? Söyleyin bakalım. Çete yazın bakalım. Bekliyorum. İkinciye hemen bakın.
+
+134
+00:23:07,731 --> 00:23:31,111
+İkinci ne oluyor arkadaşlar? Kök 5 var. Dolayısıyla ne? 1 bölü 5 gelecek. Yes'ten. Değil mi? Yes'ten ne geliyor? 1 bölü 5. No'ya baktığımız zaman 1 artı 1 bölü 5 var. Dolayısıyla no'nun ağırlığı daha fazla. Değil mi? Dolayısıyla ne diyecek? Bu no diye demiş olacağım.
+
+135
+00:23:32,251 --> 00:23:34,491
+Kimseden cevap gelmedi beydit için.
+
+136
+00:23:35,476 --> 00:23:53,456
+Eyleme yapacak bir şey yok. Ne yaptım? Yanlış yapmışım zaten ya. Şunu aldım. Bu çizgi değilmiş. Şimdi hemen açıklayayım. Şunu açıkmayabilir. Tekrar bakıyorum. İki tane yes var. Yeslerde ne var? Hemen bakın.
+
+137
+00:23:54,259 --> 00:24:21,480
+1 bölü kök 10 ve 1 bölü kök 5 var. Dolayısıyla ağırlığı nasıl buluyorduk? 1 bölü uzaklığın karesi buluyorduk. 1 bölü kök 10'un karesinden 1 bölü 10 gelecek. Artı 1'e ne gelecek? 1 bölü 5 gelecek. Değil mi? Yes. Bunlar yes'ler. 1 bölü 5. Ne gelir peki bu? Baktığımız zaman 3 bölü 15 gibi bir şey geliyor.
+
+138
+00:24:21,855 --> 00:24:33,336
+Peki, no'ya baktığımız zaman ne var? Burada bir çıkmış. 6-5'in karesi artı 5-5'in karesinin kare kökü kök birden bir.
+
+139
+00:24:34,016 --> 00:24:43,996
+Buradan no'dan ne geliyor? Bir gelmiş oluyor. Hangisi daha büyük? No'nunki daha büyük. Dolayısıyla bu ne demiş oluyor? No demiş oluyor.
+
+140
+00:24:46,635 --> 00:24:48,316
+Umarım anlaşılmıştır.
+
+141
+00:24:50,132 --> 00:24:52,032
+Burada da çözümü var.
+
+142
+00:24:54,032 --> 00:24:57,192
+Şimdi gelelim k'yı nasıl seçeceğiz?
+
+143
+00:24:58,172 --> 00:25:00,052
+k çok çok küçükse ne olur?
+
+144
+00:25:01,211 --> 00:25:02,572
+Yani bir gibi, üç gibi.
+
+145
+00:25:03,092 --> 00:25:06,692
+Bakın baktığımız zaman aslında şu artlar hep dışarıda kalmış.
+
+146
+00:25:07,604 --> 00:25:30,604
+Burada mesela bunlar noise olabilir, olmayabilir. Ama kararı çok küçük seçerseniz bir ya da birkaç mesela üç tane falan örneğe takılı kalabilir. Dolayısıyla o seçtiği örnekler de noise olabilir. Bu sebeple de yanlış classification yapmış olursunuz.
+
+147
+00:25:32,051 --> 00:25:35,571
+Peki K çok büyük olursa ne olur? Mesela şuradaki gibi.
+
+148
+00:25:36,551 --> 00:25:45,811
+Şurada K'yı 5 seçseniz, tamam kırmızı diyecek ama böyle K'yı çok büyük seçerseniz de bu sefer başka klaslardan araya şeyler girmiş olur.
+
+149
+00:25:45,811 --> 00:25:58,171
+Tamam mı? Örnekler gelmiş olur. Bu sebeple de ne var sıkıntı? Yani daha fazla gereksiz örneğe bakarak onları oylamaya dahil etmiş olursunuz.
+
+150
+00:25:58,900 --> 00:26:03,060
+Bir de ne var burada? Bakın, attribütleri birbirinden çıkarıyoruz değil mi?
+
+151
+00:26:03,280 --> 00:26:05,400
+Olurken, attribütleri diye direkt çıkarıyoruz.
+
+152
+00:26:05,920 --> 00:26:12,259
+Şimdi, attribütlerin bir tanesi. Diyelim ki A attribütunun değerleri 0, 1 arasındaysa
+
+153
+00:26:12,259 --> 00:26:19,420
+ve attribütün değerleri de eksi 1 milyon, artı 1 milyon arasındaysa ne olur? Uzaklık hesaplarken.
+
+154
+00:26:20,564 --> 00:26:31,384
+B'deki farklar çok çok daha büyük olacağı için A'nın hiçbir anlamı kalmaz. Çünkü B domine eder. İşte bunun önüne geçmek için de ne yapmamız lazım?
+
+155
+00:26:31,955 --> 00:26:39,655
+Nearest Neighbor algoritmasını uygulamadan önce bütün bu aralıkları normalize etmemiz lazım.
+
+156
+00:26:40,175 --> 00:26:48,995
+Yani hepsini 0-1 aralığına scale edeceğiz. Ondan sonra k-nearest neighbor algoritmasını çalıştıracağız.
+
+157
+00:26:49,795 --> 00:26:52,895
+Tamam mı? Yoksa ne olur?
+
+158
+00:26:53,587 --> 00:27:03,007
+Yani böyle iki tane falan olmuyor zaten. Hangi sayı daha büyükse, hangi sayının aralığı daha büyükse o şeyi domine etmiş olur.
+
+159
+00:27:03,547 --> 00:27:09,207
+Yani o feature yüzünden diğer feature'lara hiç bakmamış olursunuz.
+
+160
+00:27:10,727 --> 00:27:16,547
+Başka bir sıkıntısı da ne? Bakın diğer modelleri, modeli oluştururken.
+
+161
+00:27:16,948 --> 00:27:42,348
+Training Time'da biz zaman kaybediyoruz. Mesela Decision Tree'i oluştururken zaman kaybediyoruz. Ama test aşamasında hızlı. Ama Can-Yaris Neighbor'a baktığımız zaman ne var? Bunda hiç model oluşturma yok. Dolayısıyla Training zamanında bir zaman kaybetmiyoruz. Ama ne var? Bunda test zamanında tek tek tek tek instanslara bakıyoruz. Değil mi?
+
+162
+00:27:44,884 --> 00:27:55,584
+Test zamanında işte minimumu buluyoruz vesaire test zamanında ne çalışıyor? Özellikle büyük dataseplerinde oldukça yavaş çalışıyor.
+
+163
+00:27:56,044 --> 00:28:00,864
+Peki bunu hızlandırmak için aklınıza bir şey geliyor mu? Bir yöntem şöyle bir şey yapsak diye.
+
+164
+00:28:09,299 --> 00:28:13,440
+Bir şey yazan var mı? Bunu nasıl hızlandırabilirsiniz?
+
+165
+00:28:19,092 --> 00:28:34,332
+Genellikle şöyle hızlandırıyorlar. Ozab gibi daha çok böyle işte datayı küp şeklinde tutan. Çünkü böyle iki boyutta olmuyor bizim şeyimiz. Datamız çok daha büyük boyutta oluyor. Datayı şöyle düşünün.
+
+166
+00:28:40,564 --> 00:28:53,203
+Datayı böyle parçalara böldüğünüzü düşünün, tamam mı? Yani daha hızlı çalışsın diye. Bunlar database üzerinde yapılan işlemler genellikle. Diyelim ki üçe üçlük bir grid'e çevirdim bunu, tamam mı?
+
+167
+00:28:54,084 --> 00:29:03,463
+Ve bu grid ile ilgili ortalama bilgileri tutuyorum. Diyelim ki ben şuradan bir instance sorduğum zaman, tamam mı?
+
+168
+00:29:04,660 --> 00:29:08,840
+İlk başta hepsine tek tek bakmıyorum da bu 9 tane grid'e bakıyorum.
+
+169
+00:29:09,167 --> 00:29:37,167
+Bu gridin hangisine düşer? Önce onu buluyorum. Sonra bu grid, yani ne yapmanız lazım? İşte feature'lara göre sıralı bir şekilde veri tabanında tutmanız lazım. Ondan sonra şu alandakilerle, yani işte bu alandakilerle karşılaştırarak, bununki budur diye karar veriyorum hızlandırmak için. Bu tarz algoritmalar mevcut. Yoksa büyük veri tavanlarında, büyük data setlerde ne oluyor? Çok çok çok yavaş çalışıyor.
+
+170
+00:29:37,167 --> 00:29:38,219
+veriyor
+
+171
+00:29:41,652 --> 00:29:48,272
+Şimdi ne yaptık? Bir yöntem daha görmüş olduk. Cain-Earist Neighbor yöntemi. Bununla ilgili soru var mı?
+
+172
+00:29:50,072 --> 00:29:59,792
+Şimdiye kadar gördüğümüz en en basit ne? Yöntem. İnsan aklına da böyle ilk gelebilecek yöntemlerden bir tanesi.
+
+173
+00:30:01,072 --> 00:30:05,872
+Anlamadığınız yer var mı? Sanırım. Yok, hiç yeten ses gelmiyor.
+
+174
+00:30:06,963 --> 00:30:32,224
+Şimdi hızlıca bir pandas ve nampayne onu göstereceğim. Şunları hemen bir silelim. Hemen böyle bir slide üzerinden geçeceğiz. Ondan sonra da kendimiz Python'da bir ne çalıştırmış olacağız? Bir sınıflandırma işlemini VEKA'da yapmıştık daha önce. Bunu Python'da kodlarla nasıl yaparız ona bakmış olacağız.
+
+175
+00:30:34,771 --> 00:30:54,112
+İlk pandasla başlayalım. Şimdi Python biraz bildiğinizi düşünüyorum. Bilmiyorsanız da çok çok bilmenize gerek yok. Python bir dil değil. Yapısal bir dil değil. Ne için yazılmış?
+
+176
+00:30:54,491 --> 00:31:02,031
+Tamamen sintaksı çok kolay olsun. İnsanlar kolay bir şekilde okusun ve kolay öğrenebilsin.
+
+177
+00:31:02,420 --> 00:31:29,720
+Mantığında bir dil. Yeni de bir dil ama kullanımı oldukça artan bir dil. Ve de interpretatif bir dil. Yani bir satır bir şey yazıp çalıştırdığınız zaman, yani tüm dosyayı yazıp, tüm programı yazıp, compile etmeden satır satır çalıştırabileceğiniz de bir program. O yüzden hata nerede? Yani adım adım giderseniz işte hatanız nerede vesaire checkpointlerle falan birazcık daha kolay.
+
+178
+00:31:30,163 --> 00:31:32,064
+Bulabileceğiniz bir dil.
+
+179
+00:31:33,104 --> 00:31:44,524
+Şimdi biraz Python kullandığınızı barz ederek Python'da veri analizinde kullanılan iki tane kütüphaneye bakacağız.
+
+180
+00:31:44,524 --> 00:31:55,304
+Tamam mı? Library'ye bakacağız. Bir tanesi Pandas. Pandas da NumPy üzerine kurulu bir library. Dolayısıyla biraz NumPy'a da bakmış olacağız.
+
+181
+00:31:55,703 --> 00:31:56,024
+Tamam mı?
+
+182
+00:31:58,420 --> 00:31:59,880
+Eh...
+
+183
+00:32:01,715 --> 00:32:18,995
+Şimdi Python'a, yani Pandas kütüphanesi nasıl olmuş? Pandas nereden geliyor? Python Data Analiz Kütüphanesi diye geçiyor. Open Source, açık kaynaklı, lisansı var. Yani işte ticari vesaire, her kürlü açık kaynak.
+
+184
+00:32:29,715 --> 00:32:39,335
+Veriyi genellikle neyle okuyoruz? Pandas kütüphanesiyle. İster veri tabanından, ister internetten, nereden istiyorsanız okuyorsunuz.
+
+185
+00:32:39,335 --> 00:32:43,835
+Tamam. Hemen bir dakika bir de şunu paylaşayım. Bir dakika.
+
+186
+00:32:43,835 --> 00:32:47,596
+Alacağım. Bu değil, bu değil.
+
+187
+00:32:56,147 --> 00:33:02,007
+Buraya baktığınız zaman da Pandas, Paydata.org diye bir şey var. Gördüğünüz üzere.
+
+188
+00:33:02,707 --> 00:33:09,707
+İşte non-focus tarafından, bu açık kaynaklı olduğu için tabii ki bunları support eden şeyler var. Bunları görebilirsiniz.
+
+189
+00:33:10,467 --> 00:33:17,867
+Bir de bu yon 10 dakikalık, işte Pandas 10 dakikalık tutorial gibi bir şey var. 10 minutes hands-on tutorial diye bir şey var.
+
+190
+00:33:17,867 --> 00:33:22,707
+Ona bakabilirsiniz. Onu da açtım, açmıştım ama.
+
+191
+00:33:24,307 --> 00:33:27,267
+Nerede olabilir? Neyse, şuna yazalım.
+
+192
+00:33:29,287 --> 00:33:32,587
+Pandas tutorial diyeyim. Muhtemelen.
+
+193
+00:33:33,407 --> 00:33:34,787
+Temminiz bir şeye gelecek.
+
+194
+00:33:37,187 --> 00:33:38,887
+Şu işte temminizli pandas.
+
+195
+00:33:40,267 --> 00:33:42,567
+Şuradan bakabilirsiniz, tamam mı?
+
+196
+00:33:43,567 --> 00:33:44,987
+1.3.4
+
+197
+00:33:44,987 --> 00:33:45,847
+Şimdi
+
+198
+00:33:47,155 --> 00:33:53,155
+Bu şekilde kendiniz de buradan pandasa ne yapabilirsiniz?
+
+199
+00:33:53,155 --> 00:34:08,155
+Hemen 10 dakikada buradan bakabilirsiniz ama bugün şu tuşu birazcık daha iyi olduğu için, şuradaki slide'lar daha bence iyi anlattığı için oradan anlatmayı tercih ediyorum.
+
+200
+00:34:11,699 --> 00:34:23,739
+Bunlardan biraz bahsettik. Şimdi BSD olduğu için lisansı gördüğünüz gibi LiveBilt ve Variety dışındaki tüm Modification, Distribution, Private Use hepsi var.
+
+201
+00:34:23,739 --> 00:34:28,800
+Şimdi Pandas'a baktığımız zaman NumPy üzerine kurulu.
+
+202
+00:34:29,684 --> 00:34:38,984
+Sci-Py dediğimiz Scientific Computing Tools for Python diye Sci-Py ekosistemi var.
+
+203
+00:34:38,984 --> 00:34:45,923
+Yani bilimsel hesaplamalar için geliştirilmiş bir ekosistemin parçası.
+
+204
+00:34:46,043 --> 00:34:49,164
+Yani NumPy kütüphanesi, şimdi ona da bakacağız.
+
+205
+00:34:49,824 --> 00:34:50,984
+Ve de baktığımız zaman...
+
+206
+00:34:51,572 --> 00:35:01,332
+Bir anda çıkmış bilimsel alanda daha çok paralı olan MATLAB vs. kullanılırken şu anda Python ne yapmış durumda?
+
+207
+00:35:02,231 --> 00:35:05,212
+Tamamen şeyi domine etmiş durumda.
+
+208
+00:35:06,492 --> 00:35:09,432
+Şimdi neye bakacağız?
+
+209
+00:35:10,547 --> 00:35:28,247
+Pandas'ta veri yapılarını nasıl tutarız? Seriler ve data frame'lere bakacağız. Ondan sonra da işte datayı nasıl import, export ederiz? Nasıl seçeriz? Nasıl boyutunu değiştiririz? Birleştiririz gibi şeylere bakacağız. Tamam mı?
+
+210
+00:35:29,427 --> 00:35:43,247
+Peki, bunun avantajı ne? Yani niye Pandas kullanıyoruz? Çünkü kullanması çok kolay, öğrenmesi çok kolay, veriyi basit bir şekilde, yani öğrendikten sonra da veriyi basit bir şekilde ne yapabiliyorsunuz? Modifiye edebiliyorsunuz. Tamam mı?
+
+211
+00:35:43,295 --> 00:35:55,795
+Peki hızlı mı? Yani şununla ilgili şeyler var. Alt tarafta Nampay çalıştığı için Nampay'da baktığımız zaman alt tarafta işte sihir ve fortranla çalışmış, yazılmış bir kütüphane.
+
+212
+00:35:56,395 --> 00:36:00,355
+Nampay hızlı çalışıyor. Çok büyük çünkü bazen çok büyük verilerle.
+
+213
+00:36:00,851 --> 00:36:28,851
+Çok boyutlu veriyle çalışmak zorunda kalıyorsunuz. Pandas özellikle görüntüyle vesaire uğraşıyorsanız yavaş kalabiliyor. O durumlarda çok pandas tercih edilmiyor. Eğer işte binlerce falan görüntü okuyacaksanız daha farklı yöntemleri var başka kutuhanelerde. Ama veri madenciliği için yani görüntüle falan uğraşmıyorsanız, yazılı datayla uğraşıyorsanız pandas gayet yeterli.
+
+214
+00:36:28,851 --> 00:36:38,552
+Bir kütüphane. Şimdi ilk lampayla başlıyoruz. Tamam mı? Sonra seri ve data frame ile bunlara bakacağız.
+
+215
+00:36:38,552 --> 00:36:46,052
+Abi şu da demin size gösterdiğim Pandas'ın kendi official sitesindeki 10 minutes to Pandas şey var.
+
+216
+00:36:46,996 --> 00:36:54,796
+Sonra buna mutlaka bakın. Tamam mı? Yani bunlara bakıp, hands on ne yapabilirsiniz? Bunlara bakabilirsiniz. İlk NumPy ile başlayalım.
+
+217
+00:36:55,376 --> 00:37:02,556
+NumPy dediğimiz nereden geliyor? Num, number'dan gelmiyor, numarikten geliyor. Numeral Python diye geçiyor. Tamam mı?
+
+218
+00:37:05,972 --> 00:37:16,512
+Hani diziler vardır, şimdi size bildiğinizi ifade ederek anlatıyorum. Neler vardır? Diziler vardır. Bir de çok boyutlu diziler vardır. Multidimensional array'ler.
+
+219
+00:37:16,512 --> 00:37:22,672
+İşte NumPy'da tasarlanırken, multidimensional array'leri,
+
+220
+00:37:23,347 --> 00:37:39,128
+yani multi-dimensional array'ler için bir datatif tanımlanmış. Tamam mı? Biz en çok neyi kullanıyoruz? Bunu kullanıyoruz. Bu da şu, nd array. Yani bu normal Python'ın içindeki array değil.
+
+221
+00:37:39,603 --> 00:37:50,763
+Bu NumPy'in içindeki, NumPy kütüphanesinin içindeki nd array aslında neyi? Objesi diyebiliriz. Tamam mı? Arayları nd array tutuyoruz.
+
+222
+00:37:50,843 --> 00:38:00,523
+nd nereden geliyor? nd n-dimensional'dan geliyor. Yani çok boyutlu, n boyutlu, n-dimensional array'den geliyor.
+
+223
+00:38:03,699 --> 00:38:16,999
+Dolayısıyla ne yapabiliyorsunuz? Yani normalde çok boyutlu eleğleri çarpsanız ya da işte normal şeyle, döngülerle vesaire işlem yapsanız ne olur? Çok çok yavaş sürer. Doğru mu?
+
+224
+00:38:27,443 --> 00:38:46,364
+İşte en üzeri, en küp gibi bir şey çıkıyor değil mi? İşte burada vektörel işlemleri, bu tarz vektörel işlemleri birazcık daha hızlı yapmamız için alt tarafta ne yapmış? Daha hızlı bir şekilde bunları yapabildiği için ne kullanıyoruz aslında? Alt tarafta NumPy kullanıyoruz.
+
+225
+00:38:46,364 --> 00:38:47,804
+Tamam.
+
+226
+00:38:48,804 --> 00:38:49,684
+Şimdi.
+
+227
+00:38:50,708 --> 00:39:15,668
+NumPy ile ilgili şey, NumPy, NDR'in yapısı aslında C'ye çok benziyor. Siz C'yi bildiğiniz için. C'deki gibi. Çünkü niye? C'de ne yapmanız lazım? İlk oluşturduğunuz, diziyi ilk oluşturduğunuz anda boyutunu vermeniz lazım. Değil mi? Yani diziyi oluştururken ben 5 elemanlı, hatta her elemanımda integer olacak.
+
+228
+00:39:16,947 --> 00:39:21,467
+Demeniz lazım ki hafızada ona göre yer ayrılsın.
+
+229
+00:39:22,487 --> 00:39:24,667
+Yani bu da aynı şekilde.
+
+230
+00:39:24,667 --> 00:39:26,271
+Yani ilk baştan...
+
+231
+00:39:26,271 --> 00:39:38,751
+kaç boyutlu olacağını dizinizin söylemeniz lazım ve de elemanlarının ne olduğunu, elemanlarının tipinin ne olduğunu belirtmeniz lazım.
+
+232
+00:39:39,191 --> 00:39:45,231
+Tamam mı? Şimdi mesela Python'da listeler var. NumPy'da değil, Python'ın kendisinde listeler var.
+
+233
+00:39:45,771 --> 00:39:54,271
+Liste dinamik olarak büyüyebiliyor. Baştan, yani siz sürekli listeye eleman ekleyebiliyorsunuz. Tamam mı? Dinamik olarak, boyutu fix olmak zorunda.
+
+234
+00:39:54,271 --> 00:40:05,271
+sabit olmak zorunda değil. Ama Nampay eleğeğlerin boyutu ne? Fix. Ve eğer ki siz bunun...
+
+235
+00:40:06,063 --> 00:40:16,103
+Boyutunu değiştirmek isterseniz, ne yapıyor? Hafızadan yeni yer alıyor, yeni bir tane ereğ oluşturuyor ve eski ereğiniz ne olmuş oluyor? Silinmiş oluyor.
+
+236
+00:40:16,103 --> 00:40:26,183
+Yani, diyelim ki beş boyutlu, beş uzunluğunda bir diziniz varsa, beş eleman olan bir diziniz varsa, hadi bunun boyutunu şöyle şöyle yap dediğiniz zaman,
+
+237
+00:40:27,003 --> 00:40:34,063
+yeni şunları ekle dediğiniz zaman, artık bunu on boyutlu hale getirir fonksiyonunu çağırdığınız zaman, o yeni hafızada yeni on boyutlu hale getirir.
+
+238
+00:40:34,063 --> 00:40:45,243
+10 boyut için yer alınıyor ve eski 5 boyutlu dizinizin elemanları ona kopyalandıktan sonra eski 5 boyutlu 5 elemanlı diziniz hafızadan silinmiş oluyor. Tamam mı?
+
+239
+00:40:45,536 --> 00:40:53,615
+Ve de listelere farklı farklı eleman koyabilirsiniz. Yani bir listenin içine Python'da hem integer hem float hem string koyabilirsiniz.
+
+240
+00:40:53,615 --> 00:41:11,736
+Ama NumPy'daki diziler aynen C'deki gibi hepsinin data tipi aynı olmak zorunda. Yani bir nd array'in data type'ı ya işte integer olmak zorunda ya hep bütün elemanlar float olmak zorunda gibi.
+
+241
+00:41:12,884 --> 00:41:26,884
+Tamam mı? Niye böyle yapıyorlar? Yani niye sizce Sile'de böyle yapmışlar? Çünkü arka planda neler var? Hep pointer'lar var. Değil mi? Ve pointer'larda diyelim ki işte burası...
+
+242
+00:41:27,072 --> 00:41:49,472
+8 byte, 8 byte, 8 byte gidiyorsa pointerı ona göre atlatıyor. Öbür türlü hep 8, 8 atlatıyor. Öbür türlü ne yapması lazım? Mesela listelerde farklı farklı elemanların boyutları çok çok daha farklı oluyor. Birbirinden farklı olacağı için bir de onu hesaplaması lazım. Dolayısıyla vektörel işlemleri, çarpma gibi işlemleri falan o kadar hızlı yapmasını aslında ne yapmış oluyor?
+
+243
+00:41:52,211 --> 00:42:01,311
+Engellemiş oluyor. Yani sağlamış oluyor baktığımız zaman şey için, NumPy için. Tıpkı C'ye benziyor aslında. Böyle diyebiliriz.
+
+244
+00:42:01,311 --> 00:42:10,951
+Peki, NumPy kullanacaksak ne yapıyoruz? Önce şunu yazalım. Buraya yazılmamış ama.
+
+245
+00:42:12,980 --> 00:42:31,240
+Hop şuradan text kodu yazmaya başlamadan önce diyorsunuz ki import diyorsunuz. Tamam mı? Import ne demek? Aynı C'deki gibi kütüphaneleri alıyor, sizin kodunuzun başına ekliyor. Import NumPy diyorsunuz.
+
+246
+00:42:35,284 --> 00:42:41,744
+Her NumPy'dan bir metot çağırdığınız zaman NumPy nokta deyip çağırmamız lazım. Tamam mı?
+
+247
+00:42:42,044 --> 00:42:48,004
+Her seferinde biz aşağı NumPy NumPy yazmayalım diye burada buna isim verebiliyoruz.
+
+248
+00:42:48,244 --> 00:42:51,144
+As NP denir genellikle yani NumPy'ın.
+
+249
+00:42:51,572 --> 00:43:03,132
+kısaltılmışı gibi. Artık programın içinde Nampai yazmama gerek yok. NP dediğim zaman, NP nokta dediğim zaman Nampai kütüphanesindeki metotları ne yapabileceğiz? Çağırabileceğiz.
+
+250
+00:43:03,132 --> 00:43:15,252
+Tamam mı? Şimdi, bakın aynı şeye çok benziyor, C'dekine çok benziyor.
+
+251
+00:43:16,307 --> 00:43:28,967
+Diyor ki, NumPy kütüphanesinden Ere'yi çağır, tamam mı? Ondan sonra şeyi farklı, NumPy'de ilk kullanmaya başlayanlar şu köşeli parantezlerle hep sıkıntı yaşar.
+
+252
+00:43:29,728 --> 00:43:37,307
+Şu metodun parantezi, metodun fonksiyonun açtı kapattı, yani fonksiyonun normal parantezleri.
+
+253
+00:43:37,307 --> 00:43:43,847
+Şu da şöyle büyük parantez, her boyutu farklı parantez içine yazıyorsun.
+
+254
+00:43:44,563 --> 00:43:57,063
+Lampayda. Yani diyelim ki buraya baktığımız zaman, işte bunları satır satır gibi düşünün. 3-0-20-230-21-275 olarak yazdım.
+
+255
+00:43:57,523 --> 00:44:07,783
+Tamam mı? Yani C'de de ilk oluştururken elemanları yazarsınız ya, C'de köşeli parantezin içine yazarsınız da neyse.
+
+256
+00:44:08,303 --> 00:44:19,743
+Burada ne yapıyoruz? Köşeli parantezin içine yazıyoruz. Ve bakın her bir satırı köşeli parantezlerle yazıyoruz.
+
+257
+00:44:20,192 --> 00:44:26,311
+Şimdi bunu dedikten sonra Python C gibi farkı, sonunda noktalı bir gir yok gördüğünüz gibi.
+
+258
+00:44:26,871 --> 00:44:34,131
+Bunu yazıp çalıştırdıktan sonra şu başında şu işaret olan komut satırı size diziyi oluşturuyor.
+
+259
+00:44:34,192 --> 00:44:39,111
+Bir eleyim var diyor, elemanları da 3-0, 20-230, 21-275.
+
+260
+00:44:39,711 --> 00:44:45,411
+Şurada elemanları görebilirsiniz tamam mı? 3-0, 20-230, 21-275 şeklinde.
+
+261
+00:44:46,003 --> 00:45:02,983
+Peki indekslemesi nasıl? C gibi sıfırdan başlıyor şeyler, yani indeksler. Tamam mı? Parametrelerde de şurası sıfır aksı olarak geçer, burası da bir aksı olarak geçer.
+
+262
+00:45:11,092 --> 00:45:19,092
+Ama sıfır yani sıfır da var. Şöyle bir iki diye sayma sıfırdan başlıyor ve sıfırıncı kolon yani yirmi biri elde etmiş olursunuz.
+
+263
+00:45:19,092 --> 00:45:27,092
+İsterseniz bunu virgülle de yazabilirsiniz ya da şöyle köşeli parantezde a, köşeli parantez iki, köşeli parantez sıfır olarak da yazabilirsiniz.
+
+264
+00:45:27,092 --> 00:45:32,092
+İkisi de aynı şeyi verir. Tamam. Şimdi indeksemede farklı bir şey.
+
+265
+00:45:32,092 --> 00:45:39,039
+İksiğide olmayan bir şey. İki nokta üst üste. Bu Python'ın özelliği. Bu şu demek.
+
+266
+00:45:39,039 --> 00:46:02,940
+Bunun, yani buradan şuraya kadar olan demek. Tamam mı? Yani şurası boş olmak zorunda değil. Atıyorum birden ikiye de yazabilirsiniz. Tamam mı? Ya da işte üçten, atıyorum şuraya üç dört yok da burada, üçten yirmiye kadar da yazabilirsiniz olsa. Tamam mı? Eğer ki boşsa bu en baştan demek. Yani bu en baştan ikiye kadar olan.
+
+267
+00:46:04,083 --> 00:46:12,971
+Şu tamamen boş iki nokta koyduğunuz zaman da hepsi demek. Yani birden, pardon sıfırdan en sona kadar...
+
+268
+00:46:13,396 --> 00:46:40,656
+olan kısmı demek. Ne yapıyor? A'da en baştan sıfır aksında sıfırdan ikiye kadar olan üç ve yirmiye alıyor. Birinci aksında hepsini alıyor. Yani hem sıfırın hem birinci kalanı alıyor ve size üç sıfır yirmiye iki yüz otusu döndürüyor. Eğer şöyle yapmış olsaydınız yani A'nın içinde şöyle iki nokta üst üste noktada gözükmüyor şu nokta.
+
+269
+00:46:41,108 --> 00:46:51,108
+2 nokta üst üste, virgül 2 nokta üst üste deseydinizde ne olacaktı? Tüm hepsini alacaktı. Tamam mı? Şuradaki tablonun hepsini almış olacak.
+
+270
+00:46:51,847 --> 00:47:00,708
+Burada aklınızda kalması gereken şey ne? C gibi sıfırdan başlıyor, Java gibi birden başlamıyor. Tamam mı? Birkaç tane şeye bakalım.
+
+271
+00:47:01,827 --> 00:47:02,947
+Attributuna shape.
+
+272
+00:47:03,295 --> 00:47:13,983
+Shape dediği zaman size bunun boyutunu veriyor. 3'e 2 olarak verecek. Her zaman 0 aksını önce alıyor. Tamam mı? 3'e 2 olarak size...
+
+273
+00:47:13,983 --> 00:47:29,543
+Shape attribute'u dönüyor. D-type diye bir şey var. D-type'da da data type'ı demek. Yani biz bunları noktalı olarak oluşturuyoruz. Şuralara nokta koyduğumuz için ne yaptı? Bunların hepsini float olarak oluşturdu. Float koymasaydınız integer olarak oluşturacaktı.
+
+274
+00:47:30,284 --> 00:47:40,023
+Diyor ki bunun A'nın, yani şurada oluşturduğumuz A eleğinin, A dizisinin data type'ı nedir dediğiniz zaman size float 64 olarak dönüyor.
+
+275
+00:47:42,036 --> 00:47:59,275
+a.itemize dediğiniz zaman da ne yapıyor? Her bir elemanın boyutu neyse size onu veriyor. Bu float olduğu için 8 byte tutulduğu için 8 olarak size dönüyor. Her bir elemanın kaç byte olduğunu size veriyor itemize'da.
+
+276
+00:48:08,083 --> 00:48:14,883
+İşte ilk satırdan ikinci satıra kadar olanını ve tüm spunlarını al, B'ye ata.
+
+277
+00:48:15,723 --> 00:48:18,663
+B'ye atama yaptığımız zaman ne olmuş oluyor?
+
+278
+00:48:19,303 --> 00:48:23,003
+Gördüğünüz gibi aslında veri tabanında view'ları gördünüz mü?
+
+279
+00:48:23,483 --> 00:48:24,483
+Görmenize de gerek yok.
+
+280
+00:48:24,603 --> 00:48:28,723
+Aslında dizinin bir view'unu oluşturup B değişkenini atamış oluyor.
+
+281
+00:48:28,723 --> 00:48:30,583
+Ve B'nin içinde ne var artık?
+
+282
+00:48:31,183 --> 00:48:35,163
+A3, 0, 20 ve 230 olmuş var.
+
+283
+00:48:36,244 --> 00:49:02,083
+Peki, şöyle bir atama yapmış. Diyor ki, B'nin sıfırın sıfırına sıfır ata. Yani geldik, şuraya hop, sıfır atamış olduk. Tamam mı? Burası artık sıfır olmuş oldu. Bakın, atamayı bu şekilde yaptık. Sonra A'yı yazdırmaya kalkarsanız böyle, print A'da diyebilirsiniz. Bakın ne yaptı? 3 yazmadı, sıfır yazdı.
+
+284
+00:49:03,572 --> 00:49:13,472
+Gördünüz mü? Dolayısıyla Vue oluşturduğunuz zaman, Vue'da yaptığınız tüm değişiklikler ne oluyor? A'yı doğrudan etkilemiş oluyor.
+
+285
+00:49:14,892 --> 00:49:27,932
+Burası önemli. Yani ben hani normalde değişkeni yedeklersiniz, sonra tekrar oluşturduğunuz değişken üzerinde işlem yaparsınız ya, burada onu yapamıyorsunuz.
+
+286
+00:49:28,596 --> 00:49:39,596
+View oluşturduysanız bu şekilde orada yaptığınız tüm değişiklikler burayı da ne yapıyor? Etkilemiş oluyor. Bakın hala NumPy'dayız. Pandas'a gelmedik.
+
+287
+00:49:40,956 --> 00:49:50,916
+Şimdi iki tane daha metoda bakacağız. Bir tanesi reshape şeklini değiştir. Öbürü de resize boyutunu değiştir. Şimdi bunların farkı ne?
+
+288
+00:49:52,403 --> 00:50:19,084
+Bakın reshape ne alıyor? İçine parametre alıyor. 2'ye 3. Tamam bu da yapıyor. Ama reshape yaptıktan sonra siz bunu ne yapıyorsunuz? B'ye atıyorsunuz. A'nın boyutu aynen kalıyor. Ama A 3'e 2'likti ya. Değil mi? 3 satırı, 2 tane de kolonu vardı. Reshape ne demek? A'yı al, 2 satır, 3 kolon haline getir.
+
+289
+00:50:19,795 --> 00:50:38,076
+Dolayısıyla ne yapıyor? Şuradan 3, 0, 20'yi alıyor. 230. Bunlar ilk satır olacak. 230, 21, 275'te ikinci satır olacak şekle getiriyor. Ama bu hangisi? Bakın burası B artı. B. A aynen kalıyor. Bir şey kullanırsınız.
+
+290
+00:50:38,735 --> 00:50:44,976
+Burada şekli değişen, eleğe de boyutu değişen ne? B.
+
+291
+00:50:45,523 --> 00:51:03,583
+Ama resize kullanırsanız resize'ı direkt A'nın kendisinde yapıyor. Yani A'nın kendisi artık ne oldu bakın? Değişmiş oldu. İkiye üçlük hale gelmiş oldu. Burada A reshape A'nın kendisini değiştirmezken resize A'nın kendisini değiştiriyor.
+
+292
+00:51:06,963 --> 00:51:22,684
+Hazır fonksiyonlar var. Matematiksel NumPy kütüphanesinin içinde gerçekleştirebileceğiniz, kullanabileceğiniz bir sürü şey var. Matematiksel fonksiyon var. Tamam mı?
+
+293
+00:51:23,092 --> 00:51:38,951
+Matematiksel demeyelim de içinde algoritmik şeyler de var. Mesela sort yapmak, ondan sonra bazı lineal altı ablada kullandığınız yöntemler gibi birçok neler var matematiksel diyeceğim ben onlara. Matematiksel fonksiyon var.
+
+294
+00:51:39,315 --> 00:51:43,675
+En en temelde, diyelim A nokta sum dediğiniz zaman ne yapıyor?
+
+295
+00:51:44,295 --> 00:51:48,395
+İliop buradaki A, Nampay dizisindeki tüm elemanları topluyor.
+
+296
+00:51:48,855 --> 00:51:51,015
+A nokta max dediğiniz zaman ne yapıyor?
+
+297
+00:51:51,715 --> 00:51:55,735
+Buradaki maksimum element neyse eleman 275 onu veriyor.
+
+298
+00:51:56,375 --> 00:52:02,115
+Şimdi bunlar da genellikle şu x diye bir şey var, parametre var.
+
+299
+00:52:06,963 --> 00:52:20,244
+Aksıdakileri, eksiz eşittir 1 derseniz de buradakileri göz önüne alıyor. Dolayısıyla siz, a-sum deyip eksiz 0 derseniz ne yapıyor? Şuradakileri kolon kolon toplamış oluyor aslında.
+
+300
+00:52:20,244 --> 00:52:30,884
+Önce birinci kolonu topluyor, 21 artı 20 artı 3, 44. Sonra ikinci kolonu topluyor, 0 artı 230 artı 275, 505 olarak size veriyor.
+
+301
+00:52:31,284 --> 00:52:51,284
+Bu şekilde işlemleri de yapabiliyorsunuz. Hatta işte sort fonksiyonuyla buna göre sıfıra göre bunu sort yap. Yani ne yapıyorsunuz? Kolonların yerini değiştiriyorsunuz. Ya da işte iki tane NumPy array'i al, işte üzerindeki medyanını ver, minini ver gibi şeyleri de ne yapıyorsunuz? Hızlıca yapabiliyorsunuz.
+
+302
+00:52:59,956 --> 00:53:21,415
+Neyse, yine de söyleyelim. Bir NumPy eleyimiz var, gördüğünüz gibi. İşte 3'e 0, yine oluşturdum. Deminki dizimin aynısı. 20'ye 230, 21'e 275. Bazen biz bunlara, aks yani her satır ve şeylere, kolonlara, satılara değil de daha çok kolonlara isim veriyoruz.
+
+303
+00:53:27,956 --> 00:53:39,536
+bu type h olsun, integer olsun, yani şu sıfır artık h olmuş oldu. Yani ilk bunu oluştururken söylüyorum. Aslında buna bir indeks veriyorum. Diyorum ki bu bir h.
+
+304
+00:53:43,123 --> 00:53:50,003
+Yani bu bir h değil, bunun ismi artık h. Şunun da ismi artık weight. Tamam mı? Daha önce da böyle yazacağım.
+
+305
+00:53:50,003 --> 00:54:06,883
+Ve baktığımız zaman bakın burası ne? Integer, burası ne? Float. Oluştururken böyle oluşturursanız ne yapabilirsiniz? Artık farklı tipleri tutabilirsiniz.
+
+306
+00:54:07,699 --> 00:54:23,920
+Tamam mı? Normal bir np.array'da ne demiştik ilk başta? Tüm data tipleri fixed'tir demiştik. Yani sen buraya bir tane float, buraya integer, sonra bir tane string koyamazsın demiştik. Ama eğer ki ilk tanımlarken böyle tanımlarsanız ne yapabilirsiniz?
+
+307
+00:54:25,588 --> 00:54:31,468
+kolonları tanımlayıp tiplerini her bir kolonun farklı veri yapısında tutabilirsiniz.
+
+308
+00:54:31,468 --> 00:54:36,468
+Ve artık diyelim ki A'nın içindeki H, tek tırnak içine yazıyoruz.
+
+309
+00:54:37,128 --> 00:54:47,068
+H kolonu dediğiniz zaman size şuradaki işte 3.0.21 değerini verir ya da A'daki işte V dediğiniz zaman 0.230'u size vermiş olur.
+
+310
+00:54:47,328 --> 00:54:52,148
+Peki niye böyle tutuyor? Çünkü çok boyutlu dizilerde nasıl tutulur aslında?
+
+311
+00:54:54,291 --> 00:55:10,531
+Satır satır tutulur değil mi? Dolayısıyla bu C'de öyle tutulur, bu da stutsun tutuluyor. Yani aslında burayı int olarak tutarken, yani hafıza çünkü hafıza düz bir şekilde gidiyor. Geri kalan kısımları da ne yapıyor? Float bunları eklemiş oluyor.
+
+312
+00:55:13,731 --> 00:55:20,132
+Şimdi bunları da silelim. Bu kadar lampay yeter. Şimdi geçelim Pandas'a.
+
+313
+00:55:20,980 --> 00:55:22,719
+Ara vermek istiyor musunuz?
+
+314
+00:55:26,420 --> 00:55:30,260
+Burada mısınız, yaşıyor musunuz? Yoksa kendi kendime konuşuyor muyum?
+
+315
+00:55:34,739 --> 00:55:36,739
+Ara vermek istiyor musunuz istemiyor musunuz?
+
+316
+00:55:38,199 --> 00:55:39,779
+Verelim tamam kaç dakika?
+
+317
+00:55:40,480 --> 00:55:42,480
+10 geçe burada olun tamam?
+
+318
+00:55:45,299 --> 00:55:47,900
+O zaman şimdi pandasla duralım ara verelim.
+
+319
+00:55:47,900 --> 00:55:50,699
+Biraz pandaza geçeriz sonra kodlamaya başlarız.
+
+320
+00:55:50,699 --> 00:55:51,900
+Tamam 10 dakika ara.
+
+321
+00:55:54,380 --> 00:55:56,699
+Kapatmıyorum, geri buradan bağlanabilirsiniz.
+
+322
+01:09:51,380 --> 01:09:56,600
+Evet arkadaşlar, umarım buradasınız. Haydi bakalım, kaldığımız yerden devam edelim.
+
+323
+01:10:00,243 --> 01:10:10,027
+Nerede kaldık? Tamam. Ne yaptık? En son lampay öğrendik. Şimdi lampayı çok kullanmayacaksınız muhtemelen bu dönemki projelerinizde. Ama...
+
+324
+01:10:10,068 --> 01:10:21,788
+Makine öğrenmesiyle ilgili bir şeyler yaparsanız, ondan sonra derin öğrenmeyle ilgili bir şeyler yaparsanız, ya da simülasyon vesaire bir şeyler yaparsanız mutlaka Nampay kullanıyorsunuz.
+
+325
+01:10:21,788 --> 01:10:28,788
+Nampayın da buradaki şey şu, Pandas Nampay üzerinde bina edildiği için aslında...
+
+326
+01:10:29,747 --> 01:10:39,667
+Veri yapıları da birazcık benziyor. Şimdi Pandas'ta ne yapacağız? İki tane veri yapısı var. Bir tanesi seri, diğeri de data frame. Bunlara bakalım.
+
+327
+01:10:40,167 --> 01:10:49,987
+Seri dediğimiz şey ne? Aslında bir boyutlu veri. Yani genellikle nerede? Bir sinyal verisi gibi düşünebilirsiniz ya da zaman serisi gibi düşünürsünüz.
+
+328
+01:10:51,347 --> 01:10:59,988
+Yani bir boyutlu diziler seri olarak geçiyor. Data frame'lerde iki boyutlu veriler olarak geçiyor.
+
+329
+01:11:01,460 --> 01:11:18,119
+Genellikle de data frame düşünürseniz, normalde bizim veri madenciliğinde nelerimiz var? Kolonlarımız var. Her biri bir attribute'a denk geliyor. Bir de obje dediğimiz instance ya da sample dediğimiz satırlarımız var.
+
+330
+01:11:18,119 --> 01:11:28,360
+Aslında her bir kolon bir variable olurken baktığımız zaman buradaki her bir line'de bir sample'a ne yapmış oluyor? Denk gelmiş oluyor.
+
+331
+01:11:29,043 --> 01:11:47,984
+Tamam. Şimdi gelelim şuraya. Dediğim gibi Pandas'ın içinde temel olarak iki veri yapısı var. Bir tanesi seris, bir boyutlu birisi. İkincisi de ne? DataFrame dediğimiz iki dimensional, iki boyutlu. Tamam mı?
+
+332
+01:11:48,340 --> 01:12:00,460
+Size Mutual, burası önemli birazdan bakacağız ve de buradaki aksları hani x0 ya da x1 vardı ya ya da kolonların ismini ne yapabiliyoruz?
+
+333
+01:12:01,020 --> 01:12:05,980
+Aslında değiştirip kullanabileceğiz. İlk serilerle başlayalım.
+
+334
+01:12:06,500 --> 01:12:11,239
+Şimdi serilere baktığımız zaman şurada bir seri gözlüyorsunuz. Diyeceksiniz ki bu iki boyutlu.
+
+335
+01:12:11,583 --> 01:12:32,283
+Niye bu tek boyutlu olsun ki? Yani ikiye ikilik diyebilirsiniz. Ama öyle değil. Buradaki verimin tutulduğu seri bu, şu. Şunu tamamen indeks gibi düşünebilirsiniz. Tamam mı? Yani şu tarafı, şu isimleri indeks gibi düşünebilirsiniz. Bunlar tutulan bir veri değil. Tamam mı?
+
+336
+01:12:32,372 --> 01:12:45,811
+Bir serinin boyutunu tanımlandıktan sonra tekrar ne yapamıyoruz? Değiştiremiyoruz. Ama kopyalarsak da daha büyük bir seri oluşturup onun içine ne yapabiliyoruz? Atabiliyoruz. Onda bir sıkıntımız yok.
+
+337
+01:12:48,979 --> 01:13:00,019
+Bir de ne var? Şimdi C'de olmayan NAN var. NAN da aslında birazcık NAL gibi düşünebilirsiniz.
+
+338
+01:13:00,019 --> 01:13:16,159
+C'deki NAL gibi. NAN'lar da ne? Aslında NALLAR gibi içinde bir değer olmayan şeyler, veri madenciliğinde de missing data'ya pekabili eden şeyler ne olarak tutuluyor? NAN olarak tutuluyor.
+
+339
+01:13:16,692 --> 01:13:37,152
+Tamam mı? Şimdi gelelim şuraya. Hemen ilk oluşturma işine bakalım. Bakın diyor ki, şimdi Pandas'ta da ne yapacağız? Bunun tepesinde bu yok, bu da önemli bir şey. Pandas kullanmadan önce Pandas'ı ne yapacağız? Import edeceğiz. Import, Pandas diyeceğiz.
+
+340
+01:13:37,939 --> 01:13:44,500
+Tamam mı? Böyle diyebilirsiniz. Ama sonra burada pandas nokta seri izlemeniz lazım.
+
+341
+01:13:44,760 --> 01:13:50,039
+İşte bunu yapmamak için s p d diyoruz ki daha kısa olsun. Yani hep p d olarak kullanılır.
+
+342
+01:13:50,479 --> 01:13:55,599
+p d gördüğünüz zaman lampayı anlayacaksınız. p d gördüğünüz zaman pandas anlayacaksınız.
+
+343
+01:13:55,599 --> 01:13:56,599
+Tamam mı?
+
+344
+01:13:57,908 --> 01:14:09,108
+Diyor ki seri oluştur. Serinin içindeki değerler 3, 20, 21. Şimdi index dediği bir şey var. Index dediği de buradaki değerlerin değerlere aslında isim veriyor.
+
+345
+01:14:10,688 --> 01:14:25,247
+Yani hani yaş olur ya da item 1, item 2, item 3 gibi bir şeyler olabilir. Bunlara şurada görmüş olduğunuz indexleri verdi. Name age dediği de şuradaki benim serimin, tüm serimin ismi.
+
+346
+01:14:26,771 --> 01:14:38,311
+Şimdi ne yapmış bakın, bu komutu çalıştırdıktan sonra diyor ki, bvindeksinde 3 var, şunda 20 var, bunda 21 var, name-i age, data type'ı da inticir 64 olarak vermiş.
+
+347
+01:14:39,131 --> 01:14:46,652
+Şimdi, şuna bakalım, s.eray diye bir şey var. Gördünüz mü?
+
+348
+01:14:48,180 --> 01:14:55,659
+Şimdi buraya baktığımız zaman da ne yapıyor? Aslında s şuydu değil mi? İçinde de veriler vardı.
+
+349
+01:14:56,159 --> 01:15:06,180
+s.ere dediğimiz zaman burada indeksleri vesaire var. İndekslerini falan almadan ne yapıyor? Şuradaki dataları 3'ü, 20'yi ve 21'i verileri alabiliyorsunuz.
+
+350
+01:15:08,100 --> 01:15:14,000
+Ne yaptık? s.ere. Aslında ne bu? Pandas erayı ya da pandas serisi verilerini.
+
+351
+01:15:14,452 --> 01:15:17,332
+Bu şekilde ağaç almamızı sağlıyorum.
+
+352
+01:15:19,332 --> 01:15:20,051
+Şimdi
+
+353
+01:15:22,036 --> 01:15:40,775
+Aynen deminki pd.serimin aynısı. S.dtype derseniz size datatype'ını verir. S.name derseniz şurada tanımladığınız edge'i verir. S.index derseniz de şuradaki indeks değerlerini verir. Bunları kullanmak zorunda değilsiniz. Yani indeks ve name parametreleri optional.
+
+354
+01:15:49,108 --> 01:16:05,907
+kapatabilirsiniz. Tamam mı? Yani illa işte indeksi ve neyimi vermek zorunda değilsiniz. Deminki data. Peki indeks ne işe yarıyor? İndeks genellikle diyelim ki bir seriniz var. Şöyle zaman serisi olsun.
+
+355
+01:16:08,407 --> 01:16:10,708
+Şöyle bir zaman seriniz olsun.
+
+356
+01:16:11,891 --> 01:16:30,211
+Diyelim ki ay ay dataları topluyorsunuz. Şurada 2017'nin ocağından başladınız. Ocak, Şubat, Mart, ondan sonra 2018'in ocağı bir daha böyle falan filan. Elinizde de şöyle aslında böyle kontinüüs değil de kesikli bir data var. Tamam mı? Her seneden 12 tane değer gelecek.
+
+357
+01:16:30,211 --> 01:16:32,711
+Şimdi bu değerleri böyle tutabilirsiniz.
+
+358
+01:16:33,908 --> 01:16:42,247
+Ama bazen pat diye bir değere erişmek istiyorsunuz. Bu değerleri sadece şuradaki kolonmuş gibi tutabilirsiniz.
+
+359
+01:16:42,247 --> 01:16:50,188
+Ya da her bir kolonu tarihini indeks olarak vererek yanında tutabilirsiniz. Yani diyelim ki atıyorum.
+
+360
+01:16:50,644 --> 01:17:02,384
+7, 2018, işte ne burada 2018 değeri. Bunları tarih olarak bilirseniz o tarihteki değere direkt ulaşabilirsiniz.
+
+361
+01:17:03,023 --> 01:17:06,244
+Dolayısıyla bakın burada da indeks nasıl kullandığını gösteriyor.
+
+362
+01:17:06,963 --> 01:17:16,003
+S serinin içindeki M'yi işte neyse şu indeksteki değeri getir dediğiniz zaman size pat ne yapıyor? 20'yi getiriyor.
+
+363
+01:17:16,304 --> 01:17:30,923
+Siz bunu demek zorunda değilsiniz. Şunu da diyebilirsiniz. Yani tutup indeks illa kullanmak zorunda değilsiniz. S1 de diyebilirsiniz. Ama ne diyebilirsiniz? S'in içinde isimle ulaşmak istiyorsanız, atıyorum.
+
+364
+01:17:31,507 --> 01:17:41,047
+İndeksin adını da yazıp o şekilde ulaşabilirsiniz. İkisi de size neyi verir? Orada ne varsa, oradaki değer neyse buna karşılık gelen onu vermiş olur.
+
+365
+01:17:41,827 --> 01:17:48,007
+Bir de indeksleri şöyle kullanabilirsiniz. Hani demin görmüştük ya diyelim ki birden ikiye kadar sıfırla başlar demiştik.
+
+366
+01:17:58,771 --> 01:18:12,032
+İkiye dediniz, tamam mı? Diyelim ki böyle verdiniz. İkiye de verebilirsiniz. İndekslerin ismiyle de ne yapabilirsiniz? Verebilirsiniz bu şekilde.
+
+367
+01:18:16,672 --> 01:18:18,492
+Şimdi gelelim şuraya.
+
+368
+01:18:19,123 --> 01:18:31,644
+Demin NumPy'da ne yapmıştık? Bir weave oluşturmuştuk. S'nin içindeki, yani şuradaki şeyi düşünün, S dediğimiz şey, şuradaki seri, 3.20.21'den oluşan, şuradaki aslında seri, H seri.
+
+369
+01:18:32,423 --> 01:18:44,043
+Diyor ki, S'nin içindeki, işte bir numaralı satırdan iki numaralı kadar olan satırı al, yani 20.21 şurayı al, bunu T'ye kopyalan.
+
+370
+01:18:44,659 --> 01:18:51,940
+Şimdi T'yi yaz, bunu çalıştırdığınız zaman size ne yapacak? T'nin değerlerini, adını ve D-type'ını verdik.
+
+371
+01:18:53,000 --> 01:19:01,739
+Sonra T'nin içindeki T'yan, T'yanı 22 olarak değiştirdi. Bakın burası 21'de 22 olarak değiştirdi. Ama bakın T'yi değiştirmedi, T'yi değiştirdi.
+
+372
+01:19:02,484 --> 01:19:09,484
+Sonra siz S'yi yazdırmak için S, Enter yaptığınız zaman S'deki değerinde değiştiğini göreceksiniz.
+
+373
+01:19:10,004 --> 01:19:15,444
+Yani V1 içinde yaptığınız değişiklik ne yapıyor? Sizin asıl serinizi de etkiliyor.
+
+374
+01:19:15,664 --> 01:19:20,804
+Tıpkı demin gördüğümüz NumPy'de olduğu gibi. NumPy'de de ne olmuştu? Aynı şey olmuştu.
+
+375
+01:19:20,924 --> 01:19:30,043
+Dolayısıyla ne yapın? Eğer ki datanın bir kısmını alıp onunla çalışıyorsanız, bunun diğer burada yaptığınız değişikliklerin ana veride de değişikliğe sebep olacağını
+
+376
+01:19:30,484 --> 01:19:51,123
+Unutmayın. Tamam mı? Şimdi gelelim şuraya. Biraz daha farklı bir işlem yapacağız. Diyelim ki, U diye bir seri oluşturdum. İçinde 230 ve 275 var. İki tane de indeks var. Bunları yazmak zorunda değil. Sonra bakın, şuraya bakın. S.add U dedik. Ne dedik?
+
+377
+01:19:52,212 --> 01:20:08,992
+Şu uyu al, şu yukarıdaki s'ye ekle. S'nin içinde işte üç tane vardı, tiyan tiyan ne kadar. Şimdi ne yaptık? Burada bakın u dedik, burada dedik ki işte tiyan tiyan 275 olsun. Gördünüz mü?
+
+378
+01:20:12,512 --> 01:20:17,832
+Diyelim ki, daha güzel olacak. Şimdi burası s, değil mi?
+
+379
+01:20:18,515 --> 01:20:45,195
+Sonra tuttum, yine bir tane U diye aynı şekilde bir seri daha oluşturdum. Bunun böyle kendi değerleri de var. Tamam mı? İki tane de elemanı var. Ondan sonra burada S. Buna add dediğiniz zaman, add yapmak zorunda değilseniz, num payın içinde artı da aynı şeyi görür. S artı U şeklinde de yapabilirsiniz. Ya da S nokta add U da diyebilirsiniz.
+
+380
+01:20:46,131 --> 01:20:54,471
+Bu ikisini birleştirir. Tamam mı? Artık sizin veriniz bunların hepsini içerir hale gelmiş olur.
+
+381
+01:20:54,471 --> 01:21:02,631
+Yani iki tane tablonuz varsa ne yapabilirsiniz? Add ile birleştirebilirsiniz. Şurada gördüğünüz üzere.
+
+382
+01:21:04,771 --> 01:21:09,271
+Şimdi, şurası birazcık önemli.
+
+383
+01:21:09,876 --> 01:21:28,655
+Yine şöyle bir şey yapacağız. Bakın aynı şey U'yu tanımladık. Ondan sonra diyorum ki S'ye U'yu add yap diyorum, fill value 0 diye bir şey var. Gördük mü? Bu şu demek, eğer ki, nasıl söyleyelim?
+
+384
+01:21:30,387 --> 01:21:37,407
+Otomatik Data Enayment yapacaksanız, şöyle söyleyeyim, olmayan değerlerin yerine sıfır koy.
+
+385
+01:21:37,507 --> 01:21:42,708
+Diyelim ki hepsini yazdınız, var olanları yazmadınız. Onlara ne yapabilirsiniz?
+
+386
+01:21:44,307 --> 01:21:53,887
+0 ekleyeceksiniz. Eğer orada bir şey demediyse. Şöyle anlatayım. Burada iki tanesini demiş. 230, 275. Bunları var olana ekleyeceğiz.
+
+387
+01:21:54,407 --> 01:22:04,727
+Değil mi? Artıyla. Ama birinciyi bir şey demedik. B'yi, B'yi bir şey demedik. Onu otomatikman onu artı 0 gibi al. Yani 3 artı 0'dan bunu 3 gibi alacağız.
+
+388
+01:22:06,847 --> 01:22:10,487
+Şimdi bunlar serilerle ilgili olan.
+
+389
+01:22:12,212 --> 01:22:29,492
+Şurada bakın, burada bir şey eklemediğimiz için ilkinde non olmuştu. Yani şurada direkt add u dediğimiz zaman değerleri toplayıp iki tane seriyi toplarken yani 275 artı 21, 230 artı 20'yi aldık.
+
+390
+01:22:29,492 --> 01:22:36,096
+Ama burada 3'e karşılık gelen bir şey yoktu. Dolayısıyla o non olmuş oldu. Ama eğer ki...
+
+391
+01:22:36,095 --> 01:22:45,395
+fill value 0 derseniz ona karşılık BB'ye bir şey gelmese bile 3 artı 0'dan fill value 0 derseniz ondan olmuş olmamış olur.
+
+392
+01:22:45,395 --> 01:22:46,275
+Olmamış olur.
+
+393
+01:22:47,715 --> 01:22:50,195
+Şimdi bunlar serilerle ilgiliydi.
+
+394
+01:22:50,595 --> 01:22:52,115
+Şimdi gelelim data frame'e.
+
+395
+01:22:53,075 --> 01:22:56,195
+Data frame'e bu da iki boyutlu.
+
+396
+01:22:56,895 --> 01:22:59,055
+Aynı bizim tablolarımıza benziyor.
+
+397
+01:22:59,055 --> 01:22:59,735
+Değil mi?
+
+398
+01:23:00,079 --> 01:23:17,199
+Tablolarda da ne var yine? X0, X1 veriyorsunuz. İlla bunlara, illa her satıra isim vermek zorunda değilsiniz. Zaten çok büyük verilerde böyle bir şey olmuyor. Tamam mı? Bunlar değer değil. Şurada gridde görünenler tamamen indekslerin isimleri.
+
+399
+01:23:17,695 --> 01:23:27,095
+Tamam. Normalde kolonlarda isim olur ama şu indekslerde isim gerçek hayatta olmaz. Bu sadece hani tutorial da size görün diye yapmış.
+
+400
+01:23:27,815 --> 01:23:41,376
+Peki. Aslında bir data frame ne? Dictionary of series yani serilerin mesela şurada bir tane age serisi var. Burada da weight serisi var. Bunların birleşmiş hali gibi düşünebilirsiniz.
+
+401
+01:23:42,547 --> 01:23:47,627
+Çok boyutlu aslında verimizi ne yapıyoruz? DataFrame'de tutuyoruz.
+
+402
+01:23:48,567 --> 01:23:55,247
+Tıpkı seriler gibi pd.dataframe diyoruz. Bakın bunun şeyi birazcık farklı, indekslemesi.
+
+403
+01:23:55,787 --> 01:24:00,407
+Çünkü dikişinlerler, yani birazcık Python biliyorsanız dikişinlerler böyle yazılır.
+
+404
+01:24:01,087 --> 01:24:08,407
+Şimdi dikişinleri gibi yazıyoruz. Şunu açtık. Dedik ki age kolonunun içinde 3, 20, 21 olsun.
+
+405
+01:24:09,108 --> 01:24:33,887
+Wait'in içinde np.numpay'dan none al, yani bir şey koyma, 230 koy, 275 koy dedik. Sonra şunu yazmak zorunda değilsiniz. Ama yazmış indeksleri de her bir satıra isim vermiş işte de, bilmem ne, bilmem ne, panda isimleri bunlar. Tamam, bu şekilde ne yaptık? Data frame'i oluşturmuş olduk.
+
+406
+01:24:35,891 --> 01:24:52,551
+Ve de işte data frame de df ile genelde gösterilir. df nokta data type'ları dediğimiz zaman size her bir seriyi gösteriyor. Age integer'dur diyor. Wait de float'dur diyor. Bunun data type'ı objedir diyor. Data frame'lerimiz objekt olmuş olur.
+
+407
+01:24:52,551 --> 01:24:54,291
+Objekt olur.
+
+408
+01:24:55,539 --> 01:25:02,560
+Biz peki böyle mi oluşturacağız? Hiç böyle oluşturmayacağız. Birkaç tane attribütüne bakalım. Aynı şeyin aynısı, NumPy'dakinin aynısı.
+
+409
+01:25:02,680 --> 01:25:13,739
+df.shape size kaç satır, kaç sütun olduğunu verir. Size içinde kaç eleman olduğunu verir. Kolonlar derseniz kolonların isimlerini ve data type'ını verir.
+
+410
+01:25:16,543 --> 01:25:21,524
+ve D-type'ı objek olarak gelir. Her bir satırımız obje, her bir sample'ımız obje olarak geçecek.
+
+411
+01:25:22,203 --> 01:25:30,923
+Peki data ile nasıl erişeceğiz? Ya kolon isimleriyle erişirsiniz. Ben pek böyle yapmam.
+
+412
+01:25:31,163 --> 01:25:34,423
+Ya da ne yaparsınız? Direkt kolonun numarasını verirsiniz.
+
+413
+01:25:34,423 --> 01:25:40,423
+Yani D-F-A-C dediğiniz zaman ne diyor? Şuradaki kolonu.
+
+414
+01:25:40,724 --> 01:25:50,203
+ifade etmiş olursunuz. Ama DF'in içinde, şuradaki tek tırnak edge yerine 0 yazarsanız da, şu kolonu göstermiş olursunuz zaten.
+
+415
+01:25:50,203 --> 01:25:59,564
+Ya da işte 0'dan 1'e kadar deseniz, şurada 0, 2 nokta üstü de 1 deseniz, size yine benzer bir şey ne yapmış olur? Vermiş olur.
+
+416
+01:26:01,963 --> 01:26:02,684
+Şimdi.
+
+417
+01:26:05,460 --> 01:26:09,859
+sum gibi şeyler de var, işte metotlar çalıştır, bunları geçiyorum.
+
+418
+01:26:10,720 --> 01:26:12,020
+Şimdi asıl kısma geldim.
+
+419
+01:26:12,779 --> 01:26:14,859
+Şimdi şu şeyi yazdım, bir silelim.
+
+420
+01:26:15,760 --> 01:26:17,619
+Anotek'ten clear older works.
+
+421
+01:26:18,420 --> 01:26:22,960
+Şimdi randomla data framing ne yapabiliriz?
+
+422
+01:26:24,220 --> 01:26:24,939
+Oluşturabiliriz.
+
+423
+01:26:25,020 --> 01:26:25,939
+Şimdi şuraya bir bakalım.
+
+424
+01:26:27,119 --> 01:26:27,500
+Ne yapıyor?
+
+425
+01:26:27,659 --> 01:26:28,460
+Date diye bir...
+
+426
+01:26:29,108 --> 01:26:41,188
+obje oluşturuyor. Demiş ki, data range de işte iki bir dönüş 0-1-0-1'den 5 periyotluk bir data serisi oluşturuyor aslında.
+
+427
+01:26:42,007 --> 01:26:53,148
+Tamam mı? Data bunlar var. Bu da oluşturduğunuz zaman size şunu dönüyor. DateTimeindex'te iki bir dönüş 0-1-0-1-0-1-0-2 böyle ay ay beş aylık şeyi dönmüş oldu.
+
+428
+01:26:53,148 --> 01:26:55,307
+Tamam mı? Şimdi
+
+429
+01:26:56,435 --> 01:27:08,435
+5 aylık değil özür dilerim ya. 5 günlük şeydi, periyot 5 dediği için frequency değil. 5 günlük veri oluşturmuş oldu. Yani burada 10 deseniz 10 günlük oluşturacak. Bu da başlangıç tarih.
+
+430
+01:27:09,195 --> 01:27:13,496
+Şimdi bunu alacak, bunu index olarak kullanacak. Bakın burada data frame oluşturuyor.
+
+431
+01:27:20,463 --> 01:27:34,304
+5'e 4'lük, yani 5 satırlık ve 4, özür dilerim 5, şöyle çizelim, 5 satırlık ve 4 kolonluk rastgele değerleri oluşturur, random değerleri oluşturur diyor.
+
+432
+01:27:34,864 --> 01:27:43,444
+Nerede? Şu oluşturduğu şey, yani şurada, şu kırmızıyla çizdiğim satırda oluşturulanlar, bu değerler. Tamam mı?
+
+433
+01:27:44,284 --> 01:27:47,644
+Sonra indeksi de şurada oluşturduğu date'ler olsun diyor.
+
+434
+01:27:48,180 --> 01:28:15,140
+Bu bunun indekse, bunlar veri değil, tamamen indekslemek amaçlı kullanacağım. Kolonlar da diyor, liste yap diyor, abcd olsun diyor. Kolonlarında list metodumuz abcd değil, kolon olarak verdik. Bir data frame'i böyle bir, içinde random oluşmuş, random veriler olan bir data frame'i ne yapmış olduk? Oluşturmuş olduk. İsmi de ne? df, data frame ismini verdik.
+
+435
+01:28:15,604 --> 01:28:22,539
+Şimdi çok kullanılan metotlar. Bir tanesi head. Head dediğimiz datamızın...
+
+436
+01:28:22,931 --> 01:28:34,252
+Parametri vermek zorunda değilsiniz, sayı vermek zorunda değilsiniz. Default değeri 5'tir. En fazla da 50'ye kadar çalışıyor galiba. Yani daha büyük sayı görürseniz bile ilk 50 tanesini gösteriyor.
+
+437
+01:28:34,851 --> 01:28:45,051
+Data'ınızın ilk işte hangi parametreyi verdiyseniz o kadar satırını gösterir. Tail dediğimizde de data'ınızın sondan o kadar değerini gösterir.
+
+438
+01:28:46,131 --> 01:28:52,751
+Yani şuradaki df.head 3 dediğim zaman şu 3 satırı bana 3 satırın verisini verecek.
+
+439
+01:28:53,251 --> 01:29:00,692
+df.tail 2 de dersem de şu son 2 satırı, sondan 2 satır neyse datanız da bana onu vermiş olacak.
+
+440
+01:29:01,091 --> 01:29:07,112
+Bu head çok işe yarıyor çünkü diyelim ki datayı aldınız, bir yerden database'den okudunuz, datayı bir hemen görmek istersiniz.
+
+441
+01:29:07,692 --> 01:29:11,692
+Dolayısıyla ne yapıyorsunuz? dataframe.head'i çağırmış oluyorsunuz.
+
+442
+01:29:11,692 --> 01:29:13,431
+Çağırıyorsunuz. Çok çok.
+
+443
+01:29:13,908 --> 01:29:27,368
+kullanılan bir metot. Şimdi gelelim, satırına nasıl göreceğiz? İndeks derseniz, indekslerin yani satır isimlerinin ne olduğunu görürsünüz.
+
+444
+01:29:27,547 --> 01:29:38,887
+DataFrame.colum isterseniz, kalımların ne olduğunu görürsünüz. Sonra, DataFrame.a derseniz, bir kolona a ismini vermiştik. Hatırlıyor musunuz?
+
+445
+01:29:39,507 --> 01:29:52,187
+Ya böyle dersiniz ya da köşeli parantezin içinde tek tırnak A derseniz, data frame'de A kolonunda hangi veriler varsa, şurada şu ikisi var, şunlar, bunları size yazar ama yazarken indekslerinde yazar.
+
+446
+01:29:53,547 --> 01:29:55,507
+Tüm datayı yazmış olduk.
+
+447
+01:29:57,827 --> 01:30:06,447
+Şimdi data frame'i to numpy ile direkt data frame içindeki sayısal değerleri numpy eriğine de dönüştürebilirsiniz.
+
+448
+01:30:06,996 --> 01:30:09,896
+Şu şeyle, Tunampay metoduyla.
+
+449
+01:30:11,115 --> 01:30:17,476
+Şimdi güzel tarafı bu. Hiç C'de olmayan ama çok acayip işe yarayan şeyler.
+
+450
+01:30:18,195 --> 01:30:19,056
+Bir tanesi ne?
+
+451
+01:30:19,936 --> 01:30:21,416
+Şimdi şuraya bir bakalım.
+
+452
+01:30:21,956 --> 01:30:24,436
+Şimdi DF'in içinde A diyebiliyorduk değil mi?
+
+453
+01:30:24,436 --> 01:30:26,676
+Yani şimdi DF benim data frame'im.
+
+454
+01:30:27,275 --> 01:30:31,775
+Data frame'imin içinde hop, tek tırnak A dediğim zaman neydi?
+
+455
+01:30:34,836 --> 01:30:46,356
+tüm verilerde, değil mi? Bunu böyle diyorduk. Ya da ne yapıyorduk? DF.A olarak da bunu gösterebilirsiniz. İkisi aynı şey.
+
+456
+01:30:46,356 --> 01:31:01,356
+Şimdi şuraya bir bakalım. Şu nedir? Diyor ki, DF'in A kolonundaki değerlerden büyüktür sıfır olanlar. Ama bu da neydi? DF'in içinde. Yani
+
+457
+01:31:01,844 --> 01:31:08,684
+Buradaki indeksleri alacağız. A'nın sıfırdan büyük olduklarını al. D-ifin içinde ne varsa onları getir.
+
+458
+01:31:09,524 --> 01:31:19,624
+Şimdi bakalım şuraya. Yukarıya bakalım. Şimdi A kolonum neresi? Nerede bu? Şurada. Değil mi?
+
+459
+01:31:20,627 --> 01:31:30,707
+Büyüktür 0 dediğimiz zaman ağanın sıfırdan büyük olduğu birinci var, ikinci var ve üçüncü var. Diğerlerinde küçüktür. Yani 3 birden başladım saymaya.
+
+460
+01:31:30,707 --> 01:31:47,408
+Yani şöyle sıfırdan sayalım. Sıfırda, birde ve üçte büyüktür sıfır. Dolayısıyla siz şunu dediğiniz zaman ağanın sıfırdan büyük olduğu 3 kolonunu size ne yapacak? Getirmiş olacak.
+
+461
+01:31:48,916 --> 01:31:51,195
+A'nın pozitif olduğu kolonlar.
+
+462
+01:31:51,895 --> 01:31:54,475
+Şimdi, şu birazcık daha farklı.
+
+463
+01:31:55,095 --> 01:31:57,076
+Ne yapıyor? Bakın burada bir atama yapıyor.
+
+464
+01:31:57,515 --> 01:31:59,615
+Gördünüz mü? Şöyle bir atama var burada.
+
+465
+01:31:59,615 --> 01:32:09,795
+Diyor ki, data frame'in içinde, data frame, büyüktür sıfır olanları df'e koy diyor.
+
+466
+01:32:09,956 --> 01:32:12,215
+E o zaman küçüktür sıfır olanları ne yapacak?
+
+467
+01:32:13,300 --> 01:32:29,880
+Yani büyüktür sıfır olanları DF'in içine geri koy diyor ama bir sürü küçüktür sıfır değer var. Onlar ne olacak? Onları da non olarak değiştirmiş oluyor. Küçüktür sıfırlı olanlar, negatif değerlerin hepsi nonla değişmiş oluyor.
+
+468
+01:32:29,880 --> 01:32:37,160
+Şimdi biz bunu C'de yapsak ne yaparız? İki tane for yaparız. Eğer değer deriz, if deriz, işte küçüktür şunsa şunu yap deriz.
+
+469
+01:32:37,811 --> 01:32:54,751
+Bir sürü döngüyle N-kare'de dönmek zorunda kalırız. Şimdi bunlar bu NumPy vektörel geliştirilmiş olduğu için ne yapıyor? Hızlı bir şekilde bu işlemleri C'dekinden çok çok daha hızlı bir şekilde ne yapabiliyor? Yapabiliyor.
+
+470
+01:32:54,751 --> 01:33:05,811
+Şimdi bunu çok kullanıyoruz. Daha doğrusu şöyle şeyleri çok kullanıyoruz. Çünkü bazen diyorsunuz ki, diyelim ki veri temizlemede diyeceksiniz ki, işte ondan büyük...
+
+471
+01:33:05,811 --> 01:33:14,271
+değerleri sil diyeceksiniz. Ya da 10'dan büyük değerleri, işte benim maksimumum o. Benimki elinizde değerler var.
+
+472
+01:33:15,491 --> 01:33:24,091
+Maksimum 10 olsun, değerleri şununla değiştir diyeceksiniz. O zaman bu şekilde indeksleme ne oluyor? Şunun gibi çok çok işimize yarıyor.
+
+473
+01:33:25,411 --> 01:33:31,991
+Şimdi yine eksik veriyle ilgili hazır fonksiyonlar var. Bunlar neler? Bir tanesi drop NA.
+
+474
+01:33:32,756 --> 01:33:38,636
+Bu ne demek? İçinde non olan yani missing non demek veri kayıt demek.
+
+475
+01:33:40,176 --> 01:33:46,516
+İçinde non olan ne varsa satır ya da sütün hepsini hop siliyor.
+
+476
+01:33:47,636 --> 01:33:53,536
+Yani non olanın satırını sütününü siliyor.
+
+477
+01:33:54,963 --> 01:34:06,844
+fill-na var. Bu ne demek? Nunları hangi değeri verirseniz parametre olarak onunla değiştiriyor. Yani now value'ları, boş alan value'ları mesela sıfırla değiştirebilirsiniz.
+
+478
+01:34:08,124 --> 01:34:17,423
+Ya da işte yüzle değiştirebilirsiniz. Tamam mı? Bu da size data frame'de is-na midir? Yani orada bir nun var mıdır?
+
+479
+01:34:18,163 --> 01:34:28,844
+Tamam mı? Onu vermiş oluyor. Yani df.isn'i de diyebilirsiniz ya da pandasın içinde isn'in içine df'i data frame parametri olarak da verebilirsiniz. İkisi aynı şey.
+
+480
+01:34:30,304 --> 01:34:41,184
+Tamam mı? Bu da ne yapıyor? İçindeki non olanları size indekslerine döndürüyor. Şimdi şuraya bakalım. Bu ne yapar? Df'in içindeki
+
+481
+01:34:41,568 --> 01:35:01,228
+fill-na'ları, none'ları doldur. Neyle doldur? Value 0. None'ları 0 ile değiştir. Eğer ben buraya 10 deseydim, içindeki null value'ları, none olanları ne yapacaktı? 10 ile değiştirecekti mesela. Bunlar da yine ne? Drop-na, fill-na ve iz-na oldukça kullanılan yöntemler.
+
+482
+01:35:02,707 --> 01:35:07,268
+Şimdi, peki gelelim şuraya. Data'yı nasıl okuyacağız?
+
+483
+01:35:08,268 --> 01:35:08,507
+Şimdi,
+
+484
+01:35:09,587 --> 01:35:25,788
+Datayı okumak için pandasın içindeki read.csv fonksiyonunu çağırıyoruz. İlla bu read.csv olmak zorunda değil. Bir sürü bunun alt çizgi dosya türü şeklinde formu var.
+
+485
+01:35:27,136 --> 01:35:37,296
+Read.csv'de dosyanızın adını verdiğiniz aynı klasörde ise, aynı klasörde değilse işte C'nin altında, şunun altında falan filan şeklinde adresini vermeniz lazım.
+
+486
+01:35:37,296 --> 01:35:50,076
+Ya da okuyacağınız csv bir internet adresinde ise şu tek tırnaklar arasına işte http 2.üstü ise oradaki web adresini csv'nin web adresini yazabilirsiniz.
+
+487
+01:35:50,707 --> 01:36:03,747
+Burada önemli bir şey var, parametre. Bu da ne? Index, alt çizgi, call. Bu ne demek? Sizin index, yani her CSV'nin içinde index kolonu on zorunda değil, değil mi?
+
+488
+01:36:03,747 --> 01:36:09,247
+Yani diyelim ki atıyorum, şu bir çizemedim.
+
+489
+01:36:09,684 --> 01:36:29,783
+Şu bir csv dosyası olsun. Direkt burada sayılar başlayabilir. Yani sizin başlık satırınız ya da şurada başlık satırınız ya da şuradaki ilk sütununuz indekse belirtecek diye bir şey yok. Dolayısıyla şu index call dediğimiz şey sizin orada başlığınız var mı yok mu onu size söylemiş oluyor.
+
+490
+01:36:30,420 --> 01:36:51,640
+Peki gelelim to.csv'ye. Bu ne demek? Var olan data frame'i yeni bir csv oluştur ve ona yaz demek. Bakın bu read.csv okuyor. Bu da yeni bir dosya oluşturarak adını da siz burada veriyorsunuz. Yeni bir fo.csv dosyası oluştur ve data frame'i o csv dosyasına yaz demek.
+
+491
+01:36:55,507 --> 01:37:05,887
+Şimdi, bundan çok bahsetmeyelim. İşte burada yine DataFrame'in üzerinde mean gibi, sum gibi farklı farklı şeyleri ne yapabiliyorsunuz, kullanabiliyorsunuz.
+
+492
+01:37:05,887 --> 01:37:12,167
+Bir de kullandığımız bir şey daha, value counts diye bir şey var. Bu da histogram gibi düşünebilirsiniz.
+
+493
+01:37:12,728 --> 01:37:21,627
+Diyelim ki işte DataFrame'in içinde value counts dediğiniz zaman her değerden kaç tane var? Onu size saymış oluyor. Tamam mı?
+
+494
+01:37:22,163 --> 01:37:45,463
+Concatenate iki tane data frame'i birleştiriyor. Append sonuna ekliyor. Merge aynı şeydeki gibi. Veri tabanındaki join ile birleştirirsiniz ya tabloları o şekilde birleştiriyor. Bunları çok kullanmazsınız muhtemelen. Şu gruplamayı kesin kullanırsınız. Çok kullandığımız bir şey group by. Ne demek? Önce şuna bir bakalım.
+
+495
+01:37:46,163 --> 01:38:10,163
+Diyoruz ki bir data frame oluştur diyoruz. A kolonunda full olsun, bar olsun, full olsun, bar olsun. Bu A kolonun değerleri. B kolonunda random dört tane sayı üret. Bunları B kolonuna koy. C kolonuna da random dört tane sayı üret. Bunları da nereye koy? C kolonuna koy. Bakın şu data frame'de satırlara indeks verdik mi? Hayır vermedik.
+
+496
+01:38:10,836 --> 01:38:19,196
+Satırlara indeks vermediysek, satırların otomatik indeksleri sıfırdan devam ediyor. Genellikle satırlara indeks verilmez.
+
+497
+01:38:19,196 --> 01:38:27,615
+Şu örneklerde, hangi örneklerde? Hep satırlara indeks verdi ya. Nerede verdi?
+
+498
+01:38:28,659 --> 01:38:35,579
+Tarih verdi. Şurada tarih olduğu için verdi. Ama satırlara index genellikle verilmez.
+
+499
+01:38:36,339 --> 01:38:41,059
+Şurada gördüğümüz şekilde olur. Data frame'i oluşturmuş.
+
+500
+01:38:41,759 --> 01:38:43,179
+Oluşturduktan sonra bakın.
+
+501
+01:38:45,239 --> 01:38:48,499
+Grup by a var, sum var. Bu ne demek?
+
+502
+01:38:48,939 --> 01:38:54,599
+Şimdi grup by a yaptığımız zaman a'nın elemanları ne var? Full var. İki tane bar var.
+
+503
+01:38:55,060 --> 01:39:08,620
+Bunların hepsini grupluyoruz. Yani Foo olanlar bir grup, sıfırıncı satır ve ikinci satır bir grup, birinci satır ve üçüncü satır var olanlar bir grup oluyor ve bunları grupladıktan sonra SumYap diyoruz.
+
+504
+01:39:09,600 --> 01:39:15,740
+SumYap ne demek? B kolonundaki Foo'lar işte eksi 0,12 artı eksi 0,73.
+
+505
+01:39:16,740 --> 01:39:17,400
+Tamam mı?
+
+506
+01:39:18,131 --> 01:39:26,011
+Bu Foo'nun şeyi oluyor, B kolonunun değeri. Yine C için yine Foo olan işte şu değerle şu değeri topluyoruz.
+
+507
+01:39:26,112 --> 01:39:31,872
+Sam dediği için. Bu Sam demek zorunda değil. Bunun mean'ini alabilirsiniz, minimumunu, maksimumunu, bir sürü şeyini alabilirsiniz.
+
+508
+01:39:32,492 --> 01:39:40,252
+Ama GroupPay data analizi yaparken yani aslında şeydeki Excel'deki pivot tablolar gibi birazcık oldukça ne yapıyor?
+
+509
+01:39:40,872 --> 01:39:44,351
+İşinize yaramış oluyor. Çok kullanılan yöntemlerden bir tanesi.
+
+510
+01:39:45,140 --> 01:40:04,280
+Tamam, bunlara çok gerek yok. Tamam, bunu da söyleyelim, burası önemli. Şimdi hep sayı mı olacak? Hayır, bizim kategorik değerlerimiz de var, değil mi? Evet, hayır gibi. Ondan sonra farklı farklı şeyler gibi. Hem DataFrame'de hem de serilerde kategorik dataları kullanabilirsiniz.
+
+511
+01:40:04,595 --> 01:40:09,155
+Şimdi kategorik data kullanacaksanız ne yapıyoruz? Bunları çift tırnak içine yazıyoruz.
+
+512
+01:40:09,796 --> 01:40:13,836
+Yani burada 3 kategori var bakın ve D-type'ını kategori olarak veriyoruz.
+
+513
+01:40:13,836 --> 01:40:23,355
+Yani integer 64 değil, float değil. D-type'ı diye kategori derseniz burada benim 3 kategorim var. Bunlar da A, B, C'dir şeklinde ne yapar? Anlar.
+
+514
+01:40:23,496 --> 01:40:31,635
+D-type'ı bakın kategori. Kategorilerde 3 tane objelerimiz A, B ve C kategorileridir diye size bunu söyler.
+
+515
+01:40:33,460 --> 01:40:37,840
+Şimdi son olarak, bu da farklı bir kütüphane, Pandas'tan farklı.
+
+516
+01:40:38,979 --> 01:40:39,119
+Ne?
+
+517
+01:40:40,180 --> 01:40:41,479
+Madplotlib.
+
+518
+01:40:43,479 --> 01:40:46,619
+Bu ne yapıyor? Bir şeyi çizdirmenizi sağlıyor.
+
+519
+01:40:46,739 --> 01:40:51,000
+Diyelim ki işte TS diye bir tane data frame oluşturmuş burada gördüğünüz üzere.
+
+520
+01:40:51,680 --> 01:40:55,479
+Head 3 dediğiniz zaman ilk 3 tane veriyi yazmış.
+
+521
+01:40:55,479 --> 01:40:56,319
+Şimdi.
+
+522
+01:40:57,043 --> 01:41:09,884
+Buradaki TS dediğim time seriyi kümülatif sum ile topluyor. Yani diyelim ki 10. satırdaysa 10. satıra kadar olan tüm datanın toplamı. 11. satırda en baştan 11'e kadar olan şeyin toplamı.
+
+523
+01:41:09,884 --> 01:41:21,884
+Tüm sum ile toplayıp TS'ye koydu. TS.plot dediğiniz zaman bakın size bu veriyi böyle ne yapıyor? Çizdirmiş oluyor. Plot da sizin çizdirmenizi sağlıyor.
+
+524
+01:41:23,028 --> 01:41:33,347
+Şimdi takılırsanız, şeye mutlaka bakın, şu 10 minutes şeyi var ya, bu slice da koyarım şeye, ya da koymama da gerek yok.
+
+525
+01:41:33,728 --> 01:41:41,608
+Direkt Google'a pandas.py.org'dan işte buradaki 10 minutes tutorial var. Takıldığınız yerde bakabilirsiniz.
+
+526
+01:41:41,608 --> 01:41:47,500
+Zaten internette çokça ne var? Tutorial var. Bu pandasla ilgili ya da...
+
+527
+01:41:48,051 --> 01:41:54,771
+Pandas'ta şunu nasıl yaparım diye sorsanız zaten Google'a size bir sürü şey ne yapar söyler.
+
+528
+01:41:54,771 --> 01:42:05,032
+Şimdi gelelim neye? Bizim yapacağımız şey. Şimdi Drive'ıma bir yandan yine pencerede açayım bir dakika.
+
+529
+01:42:07,711 --> 01:42:12,492
+Şimdi şunu paylaşalım sizinle. Artık kod kısmına geçiyoruz.
+
+530
+01:42:17,363 --> 01:42:31,823
+Şimdi, şey yapacaksanız, proje yaparken, isterseniz Python'ı kullanacağınız, herhangi bir kullanabileceğiniz, herhangi bir editör kurun.
+
+531
+01:42:32,563 --> 01:42:43,343
+İsterseniz işte bilgisayarınız yavaştır vesaire, direkt Google herkese, Drive'dan, Colab'de, yani işte Google Server'ına gidip.
+
+532
+01:42:43,600 --> 01:42:55,940
+Bir şey kurmadan, Drive, Google Drive üzerinden işlem yapabileceğiniz bir şey sağlıyor. Tamam mı? Şimdi nasıl açacaksınız? Drive'a gelelim.
+
+533
+01:42:55,940 --> 01:43:02,760
+Buradan gelemeyiz, şuradan gelemeyiz. Şuradan gidelim.
+
+534
+01:43:07,988 --> 01:43:17,728
+Drive'a geldiğimiz zaman tıkladım. Bakın buradan diğer dediniz. Şurada Google Call Laboratory diye bir şey var. Gördünüz mü?
+
+535
+01:43:18,228 --> 01:43:26,207
+Drive'a girdik, Google Drive'a girdiğiniz zaman direkt sağ klik yaptım. Buradan yeni klasör falan filan demiyorum.
+
+536
+01:43:26,887 --> 01:43:35,608
+Diğerden Call Laboratory derseniz, novbar yeni bir Call App sayfası açmış olursunuz.
+
+537
+01:43:35,859 --> 01:43:55,539
+Tamam. Şimdi, hoppa. Burası benim Colab klasörüm bu ders için oluşturduğumuz. Şimdi kodları Jüpiter Notebook gibi çalışıyor. Hiç şöpüterle Jüpiter Notebook'la çalıştınız mı bilmiyorum ama Jüpiter Notebook'un içine hem yazı yazabiliyorsunuz, isterseniz de ne yapabiliyorsunuz?
+
+538
+01:43:58,039 --> 01:44:02,539
+Şunu açayım. İsterseniz de kodu yazıp anında çalıştırabiliyorsunuz.
+
+539
+01:44:03,376 --> 01:44:15,416
+Tamam mı? Şimdi şurada kod var, metin var. Mesela şuraya tıkladım, metin oluşturdum. Metini burada oluşturmak istemiyorsanız yukarıya taşıyabiliyorsunuz.
+
+540
+01:44:15,416 --> 01:44:20,855
+Ya da burada metinle ilgili silme, ayarlaşı vs. yazısını yapıyorsunuz. Tamam mı?
+
+541
+01:44:21,300 --> 01:44:33,560
+Mesela metine ne yazacaksınız? Comment gibi yapabilirsiniz. Mesela atıyorum bu kod veri madenciliği, dersi de örnek olarak işlenmiştir yazdık. Tamam mı?
+
+542
+01:44:35,260 --> 01:44:39,000
+Bakın bunlar compile falan edilmiyor. Bunlar yazdığınız tekstler.
+
+543
+01:44:40,860 --> 01:44:42,200
+Tamam mı? Böyle yazdık.
+
+544
+01:44:43,220 --> 01:44:45,740
+Kod yazmak istiyorsanız da ne yapıyorsunuz?
+
+545
+01:44:46,996 --> 01:44:58,456
+Şuradan kodu tıklıyorsunuz. Kodu tıkladık, bakın buraya geldik. Tamam mı? Buraya istediğiniz Python kodunu yazabiliyorsunuz. Tamam mı? Yani atıyorum.
+
+546
+01:44:59,355 --> 01:45:01,435
+Yükselerle yazarsanız çalışmaz.
+
+547
+01:45:05,155 --> 01:45:11,876
+Tamam kendi şeyi de var. Kodu da tamamlıyor. Print 3 dedikten sonra, şuraya tıkladıktan sonra ne yapabiliyorsunuz?
+
+548
+01:45:12,500 --> 01:45:35,760
+Hoppa, çok yavaş çalıştı. Niye böyle çalıştı? Bu kadar yavaş çalışmıyor normalde. Şu an hala çalışıyor. Tamam bağlandı. 3'ü buraya yazdı. Yani aşağıda da ekran olarak, ekranın çıktısını ne yapıyorsunuz? Görebiliyorsunuz. Burada ne kadar RAM kullandığını falan filan gösterebiliyorsunuz. Veriniz çok büyükse.
+
+549
+01:45:36,275 --> 01:45:49,556
+gidip CPU'da çalıştırmıyor. Google size GPU ya da TPU veriyor. Tamam mı? Yani buradaki ayarlardan benim kodumu işte TPU'da çalıştır, daha hızlı çalıştır diyebiliyorsunuz.
+
+550
+01:45:50,275 --> 01:45:56,476
+Şimdi gelelim şuraya. Biraz büyüteyim daha kolay görün. Tamam şu koda bakalım hep beraber.
+
+551
+01:45:57,676 --> 01:45:59,676
+Import Pandas SPD
+
+552
+01:46:00,180 --> 01:46:18,020
+Bakın şunu, p-d'yi sileyim, bu p-d ne işe yarıyor? Import pandas dedim. Tamam mı? Böyle derseniz, şunlar da hata verecek. P-d'yi tanımadı. P-d ne demek? Buraya p-d değil de, her seferinde pandas yazmanız gerekir. Tamam mı? Böyle yazarsak, şunun da hata vermez.
+
+553
+01:46:18,579 --> 01:46:40,140
+Ama kimse böyle bir şey yapmıyor. Çünkü her seferinde artık yani bu bir de facto şey olmuş. Pandos genellikle S, P, D olarak. Yani buna bir el yaz veriyoruz. Kısaltma veriyoruz. Bu şekilde kullanıyoruz. İsterseniz buraya S, P, D demek zorunda değilsiniz. Kendiniz başka bir şey de uydurabilirsiniz şuraya ama herkes P, D diyor. Siz başka bir şey uydurmayın. Çünkü sizin yazdığınızı kurup birisi okuyacak.
+
+554
+01:46:40,927 --> 01:47:03,208
+Şimdi gelelim ikinci satıra. From Google, call app, import, false diye bir şey var. Bu ne demek? Benim şurada açmış olduğum call app'imde şurada bir sürü mesela bir csv dosyası var, bir txt dosyası var. Dolayısıyla ben hani read csv bir fonksiyonum vardı ya, diyorum ki bu benim alanım diyorum.
+
+555
+01:47:08,916 --> 01:47:14,156
+Diyorum ki benim colab alanımdan import files'ı kullanacağım diyorum.
+
+556
+01:47:14,376 --> 01:47:18,636
+Tamam mı? Yani bunu söylemezseniz oradaki kodunuzu bulamaz.
+
+557
+01:47:19,636 --> 01:47:21,596
+Şimdi birkaç tane şeye bakalım.
+
+558
+01:47:23,296 --> 01:47:26,436
+DF, PD, DataFrame oluştur demişim.
+
+559
+01:47:26,576 --> 01:47:30,516
+Neyimin içine Rafael, Denedon eterliyorum, Mask'ın içine Red Purple koy.
+
+560
+01:47:30,996 --> 01:47:33,216
+İşte Vip'ın içine de bunları koy demişim.
+
+561
+01:47:33,356 --> 01:47:35,696
+Sonra DF to CSV ne demek?
+
+562
+01:47:36,212 --> 01:47:40,932
+Bunu kaydet verilmişim. Mesela ne olarak kaydedelim?
+
+563
+01:47:42,032 --> 01:47:46,192
+bm, bm ne ya birleşmiş milletler gibi.
+
+564
+01:47:46,792 --> 01:47:52,312
+Benim adenciliği dersi.csv olarak kaydetsin, index false olarak dursun.
+
+565
+01:47:52,952 --> 01:47:53,432
+Tamam mı?
+
+566
+01:47:54,472 --> 01:47:59,072
+Şimdi, şu da files.download dediğiniz zaman, call app nerede çalışıyor?
+
+567
+01:47:59,272 --> 01:48:02,252
+Server'da çalışıyor değil mi? Benim bu kodum benim bilgisayarımda çalışmıyor.
+
+568
+01:48:02,252 --> 01:48:03,352
+Şu an ben neredeyim?
+
+569
+01:48:03,828 --> 01:48:13,768
+Serverdayım. Serverda çalıştırdıktan sonra bu vm dersi.csv'yi al, benim bilgisayarıma indir diyeceğim.
+
+570
+01:48:17,203 --> 01:48:30,203
+Çalıştıralım bakalım. Tamam, şu an çalıştı. Bakın ne yaptı? vm dersi.csv'yi benim bilgisayarıma indirdi. Şurada görüyorsunuz değil mi? Kolyevin içine de bakarsak gidip...
+
+571
+01:48:33,716 --> 01:48:35,176
+Şu an burasını F5 yapalım.
+
+572
+01:48:42,355 --> 01:49:06,036
+Bilgisayardan alıp buraya atmamız lazım. Benimki bununla senkronize değilmiş. Şimdi ne yapmış olduk? Gerçekten de indirdiğimiz VME dersini açalım. Bakalım yazdığımız şeyler var mı? Evet var. Bakın. Name, Mask, Weapon var. Ondan sonra işte Rafael.
+
+573
+01:49:06,579 --> 01:49:13,220
+Adı, mask, red, bir pına şu. Bakın ne yazdıysam. Böyle bir CSV oluşturdu mu? Evet, oluşturdu.
+
+574
+01:49:13,660 --> 01:49:20,960
+CSV'yi şeyle açalım. Bir de kaydetme. Hayır, kaldır. Tamam.
+
+575
+01:49:21,680 --> 01:49:28,600
+Şimdi CSV'yi bir de... CSV'yi buraya indirdik herhalde. Bekleyelim.
+
+576
+01:49:30,039 --> 01:49:32,660
+Bir dakika, ne bu şey edip her şeyi bir şey edelim.
+
+577
+01:49:34,804 --> 01:49:57,083
+Bakın, bunu aldım, birlikte aç dedim, not defteriyle açıyorum. CSV neydi? Commerce, comma, yani comma, virgül, separated version'da değil mi? Bunları böyle virgüllü, virgüllü, virgüllü yazdı. Yani bu bir Excel dosyası değil. Bakın, notpad'le açtığınız zaman virgüllerle ayrılma şeyi görüyoruz.
+
+578
+01:49:57,083 --> 01:49:59,503
+Tamam, şu da ne bizim?
+
+579
+01:50:00,000 --> 01:50:05,079
+Kolon isimlerimiz. Peki, şeyi niye yazmadım? Şuraya geldiğim zaman.
+
+580
+01:50:08,079 --> 01:50:09,840
+Ben de şeyden göremiyorum.
+
+581
+01:50:11,680 --> 01:50:16,539
+Tamam. Şimdi bunları ne yapmış oldu? Yazmış oldu. Bilgisayarımızı da indirdik.
+
+582
+01:50:16,659 --> 01:50:25,939
+Yani artık ne yaptık? Data frame'i oluşturduk, Excel'e yazdık. Ama biz böyle yazmayacağız. Ne yapacağız?
+
+583
+01:50:28,020 --> 01:50:40,280
+Biz Excel'i okuyacağız değil mi? Yani diyelim ki siz gittiniz, projeniz için bir CSV buldunuz. Bunu ne yapacaksınız?
+
+584
+01:50:40,948 --> 01:50:58,068
+read, işte pd.read.csv ile okuyacaksınız. Onu dosyayı alıp drive'daki bu call-up'in içine atacaksınız, call-up klasörünüzün içine. Sonra read.csv dediğiniz zaman otomatikman onu alıp bir data frame'in içine atmış olacak. Birazdan örnekte yapacağız.
+
+585
+01:50:58,068 --> 01:51:03,207
+Tamam mı? Şimdi Excel oluş içinde burada ne yaptık? csv oluşturduk.
+
+586
+01:51:05,043 --> 01:51:30,703
+Bakın burada da yeniden bir data frame oluşturuyor. Data frame'in içinde işte A'nın içinde 0, 3, 10 var. B kolonun içinde true, true, false var. Tamam mı? Sonra nokta to excel dediğimiz zaman git bunu pdwrite işte excel olarak yaz dediğimiz zaman ne yapıyor bunu? Bu sefer csv değil de excel olarak yazıyor. Tamam mı? Bu da ne yaptı?
+
+587
+01:51:32,564 --> 01:51:47,044
+Excel olarak yazdık. Peki, şuna bakalım. Data'da read csv derseniz ne yaparsınız? Var olan bir csv'yi, yani bilgisayarınızda kayıtlı bir csv'yi okursunuz.
+
+588
+01:51:48,044 --> 01:51:56,844
+Şimdi bir kaydedeyim. Dene csv diye bir şey yok. Çünkü böyle bir şey kaydetmedik. Çünkü bunun adını değiştirdik. Vm dersi yaptık değil mi?
+
+589
+01:51:57,423 --> 01:52:00,164
+Şimdi vm dersini oraya atmadık.
+
+590
+01:52:00,659 --> 01:52:10,640
+Drive'ı atmamız lazım ki okusun. Bir dakika bekleyin. Şunu alalım. Bozduk mu bunu herhalde bozmadık.
+
+591
+01:52:10,640 --> 01:52:19,939
+Şimdi, şurada Vm'in alt çizgi dersi mi?
+
+592
+01:52:23,091 --> 01:52:35,171
+Şey yaptığınız zaman, diyelim ki çalışıyorsunuz, hata veriyor. Hataları Google'da aratın. Tamam mı? Yani anlamadıysanız, hatayı alıp, kopyalayıp ne hatası olduğunu anlamadıysanız böyle yapın. Tamam mı?
+
+593
+01:52:35,171 --> 01:52:48,211
+Şimdi print deyip data head dedim. Print dememe gerek var mı? Print demesek de data head dediğimi dersek, bizim datamızın ilk işte şeylerini bakın, böyle yaptığım zaman kendisi.
+
+594
+01:52:48,319 --> 01:52:59,199
+Bu şekilde gözüküyor. Bakın bunlar index olduğu için bunları bold yazdı. Bunları bold bir şekilde ne yaptı? Yazmış oldum.
+
+595
+01:52:59,199 --> 01:53:04,199
+Data hit 1 dersem sadece en baştan bir veriyi gösterecek.
+
+596
+01:53:04,199 --> 01:53:05,643
+Tamam, bu şekilde.
+
+597
+01:53:11,091 --> 01:53:18,551
+Bir de şöyle yapalım. Data.net diyelim. Sizle paylaştığım zaman görmüş olun farkını. Tamam.
+
+598
+01:53:20,411 --> 01:53:27,331
+Peki, şimdi gelelim Iris.csv'ye. Bu neydi? Hatırlıyor musunuz? Bunu VEKA'da da yapmıştık.
+
+599
+01:53:27,331 --> 01:53:33,611
+Burada Iris.csv diye bir dosyan var. Çift tıklanın. Çiçek tipleri vardı. Hatırlıyorsunuzdur.
+
+600
+01:53:37,716 --> 01:53:42,716
+Adana'nın hiçbir zaman hatırlayamadığım başka bir yaprağın boyutları vardı.
+
+601
+01:53:43,296 --> 01:53:47,895
+Üç çeşitli de, bakın burada kategorik datam var, üç çeşitli çiçeğim vardı.
+
+602
+01:53:48,016 --> 01:53:53,076
+Bir tanesi Setoza, diğeri Versi kalır, diğeri de Virginia. Gördük mü?
+
+603
+01:53:55,376 --> 01:53:59,956
+Iris CSV diye bir dosyam, Drive'da ne? Kayıtlı.
+
+604
+01:54:05,652 --> 01:54:18,591
+Şimdi bu diyor ki, iris csv'yi oku, indeks kolonum var. Şöyle yapayım. 5 tane yazdıracağını görün. 150 satırım var toplam.
+
+605
+01:54:29,844 --> 01:54:37,683
+Birisi CSV diye dosya yokmuş. Ama var, şurada var. Bir dakika şunu şurada şey yapacağız.
+
+606
+01:54:40,803 --> 01:54:50,603
+Bir dakikanızı alacağım çünkü şunu çalıştırdıktan sonra. Şunu bir kapatayım. Birbirinden birbirinden çalıştırmışım.
+
+607
+01:54:57,619 --> 01:54:58,879
+Bunu buraya alalım.
+
+608
+01:55:12,595 --> 01:55:18,195
+Şimdi kaybedelim. Bir de şurada İris CSB'mizin adını nasıl anlatan bakalım.
+
+609
+01:55:21,971 --> 01:55:22,572
+Ancak, ok.
+
+610
+01:55:35,764 --> 01:55:48,804
+Virüs CSV'yi bulmuyor. Acaba farklı şeyden mi açtım? Deminki miydi? BME derse CSV'yi buradan okuduk değil mi? Çalıştırdık. BME derse var, bu niye yok?
+
+611
+01:55:51,324 --> 01:55:54,623
+Farklı. Şunu açıp yeniden hemen bir kopyalayayım.
+
+612
+01:56:01,652 --> 01:56:04,171
+Başında boşluk falan yapmış olabilirim yani.
+
+613
+01:56:04,171 --> 01:56:06,072
+Şimdi bir iğneyim yapalım.
+
+614
+01:56:09,192 --> 01:56:12,231
+Hiç tahmin ettiğim gibi bir şey de yok. Iris'e de seven var.
+
+615
+01:56:23,604 --> 01:56:25,604
+Çocuklar bunu bir indirip tekrar atacağım.
+
+616
+01:56:40,467 --> 01:56:42,648
+Bir şeyle mi alıp buna bakıyorum? Hayır, tamam.
+
+617
+01:56:44,867 --> 01:56:45,768
+Limon bir şey yaz.
+
+618
+01:56:51,699 --> 01:56:58,739
+F2 yapalım. İris 2. Acaba CSV, CSV diye mi kaydettim? Böyle bir şey yapmış oluyorum.
+
+619
+01:57:00,600 --> 01:57:06,140
+Tamam, tamam. İris 2, CSV olarak tekrar attım. Şuan bunu okuması lazım artık.
+
+620
+01:57:18,323 --> 01:57:26,444
+Dosyayı bulmaya, Allah Allah, çok ilginç. Index call, indeksleri de almazsa en azından dosyayı bulduğu hatası verilir.
+
+621
+01:57:39,828 --> 01:57:44,688
+td.ri, csv aynı kavuşunu okuduk. Bunu okuyamıyoruz. Niye okuyamıyoruz?
+
+622
+01:57:55,636 --> 01:57:57,816
+Hoca yapamadı çocuklar, yardım edin.
+
+623
+01:58:05,656 --> 01:58:10,136
+Bazen session açılıp kapanıyor, bağlantı koktuğu zaman.
+
+624
+01:58:11,076 --> 01:58:15,115
+Mesela bunu falan görmemiş olabilir ama bunu görmezse başka hata verir zaten.
+
+625
+01:58:26,484 --> 01:58:27,484
+Çöpki, akiş.
+
+626
+01:58:43,315 --> 01:58:50,895
+Neyse, bu şununla ilgili, yani Drive'la ilgili de yanlış yerden açtım diyeceğim. Yanlış yerden açmadım. Çünkü hazırladığımızı buraya kaydettik.
+
+627
+01:58:54,176 --> 01:59:00,636
+Hocam, Untitled şey burada mı? Python kodu? Alttaki mi?
+
+628
+01:59:01,555 --> 01:59:10,296
+Ben de birkaç tane Drive'mda farklı şeyler vardı. O mu dedim de şuradan emin oldum, şunu yeni oluşturduk. Şöyle bir şey yoktu.
+
+629
+01:59:10,804 --> 01:59:18,203
+BM dersi, CSV diye bir şey yoktu. Anladın mı? Şimdi çok saçma bir şey yapacağım. Tamam mı? Hazırsanız.
+
+630
+01:59:19,304 --> 01:59:30,564
+İlis, CSV'yi açacağız. Hatta şöyle yapacağız. Bir dakika. Bunun içindekileri oraya kopyalayacağım. Çünkü yani şu an diğerini okuyup bunu niye okumuyor? Hiçbir mantığı yok.
+
+631
+01:59:39,859 --> 01:59:47,079
+Bunlar niye böyle okuyor? Dosyada bir şey olabilir arkadaşlar ama dosyayı hiç görmüyor ki dosyada daha var demeyeyim.
+
+632
+01:59:47,079 --> 01:59:49,159
+Bir dakika hop.
+
+633
+01:59:54,963 --> 01:59:56,103
+Tövbe, çöpçes.
+
+634
+02:00:00,500 --> 02:00:01,359
+Şartlı şey.
+
+635
+02:00:15,444 --> 02:00:20,824
+Şey yapıyor canım, okuduğunun içine, bulduğunun içine ekleyeceğim. Çok saçma ama başka da bir şey akılama yanmıyor.
+
+636
+02:00:25,492 --> 02:00:26,092
+Kapyalı.
+
+637
+02:00:28,092 --> 02:00:30,172
+Şu an evet tamam kaydettim.
+
+638
+02:00:33,132 --> 02:00:36,452
+Çok saçma normalde bir şey yapmaması lazım da olabilir böyle şeyler.
+
+639
+02:00:48,435 --> 02:00:50,056
+Bunun hatası niye burada veriyor?
+
+640
+02:00:52,815 --> 02:00:54,155
+Demekleri çalıştırmışız.
+
+641
+02:01:07,699 --> 02:01:08,739
+Kaydetmedik mi?
+
+642
+02:01:11,680 --> 02:01:13,340
+Muhtemelen bunun internet.
+
+643
+02:01:19,520 --> 02:01:21,079
+Bunu Excel olarak kaydetti.
+
+644
+02:01:22,619 --> 02:01:26,600
+Neyse bir ara verelim de ben şu irisi tek olmadı, irisi bir şey webden okuruz.
+
+645
+02:01:26,600 --> 02:01:31,100
+Şu an kodda bir hata yok da şey görmüyor.
+
+646
+02:01:35,091 --> 02:02:02,051
+Iris csv mi görmüyor? Ya bu csv dosyası değil. Şunu şununla açınca, egzelle açınca bir daha egzesel mi yaptı özellikleri? Ben bir ara verelim 10 dakika, ben bir bunun özelliklerine bakayım. Tamam mı? Ondan sonra da, hocam bilgisayardaki partinden olmaz mı? Olur da size şimdi gösterirken böyle şey. Tamam, 10 dakika ara verelim isterseniz. Iris.
+
+647
+02:02:02,579 --> 02:02:08,420
+Data Link. Bakabilirsiniz siz de. Şuradan direkt şuradan okuyacağım.
+
+648
+02:02:30,036 --> 02:02:31,216
+Röldetemiz var.
+
+649
+02:02:53,076 --> 02:02:55,996
+Nekasih kapatı çözü açsam da meyamak çözü.
+
+650
+02:03:01,555 --> 02:03:04,755
+Burada mısınız? Duruyor musunuz, durmuyor musunuz?
+
+651
+02:03:17,375 --> 02:03:19,715
+Hocam, konudan bağımsız bir şey sorabilir miyim?
+
+652
+02:03:20,095 --> 02:03:20,635
+Tabii ki.
+
+653
+02:03:21,895 --> 02:03:27,715
+Çetede yazdım ama görmediniz. Veri analiz raporunda 4. ve 5. makarna nöresinde ne fark var?
+
+654
+02:03:29,203 --> 02:03:32,403
+Raporu hatırlamam lazım önce ya. Ne diyor? Oku bakayım.
+
+655
+02:03:34,163 --> 02:03:35,503
+Okuyayım bir saniye.
+
+656
+02:03:44,340 --> 02:03:54,260
+Hocam, dörtte diyor ki, veri madenciliği ile araştırılacak olan ilişki nedir? Tahmin, sınıflama vs. kullanacak olan yöntem, enat 3 adet farklı yöntem uygulamanız gerekecektir.
+
+657
+02:03:54,931 --> 02:04:03,051
+Şimdi bak, datanız şöyle olabilir. Datanız sınıflandırma yapacak olabilirsiniz. Kontinyüs bir değer tahmin edecek olabilirsiniz.
+
+658
+02:04:03,331 --> 02:04:12,291
+Yani regresyon mu kullanacaksınız, sınıflandırma mı kullanacaksınız, kümeleme mi kullanacaksınız? Herkesin şeyi farklı. İlkinde bunu açıklayacaksınız.
+
+659
+02:04:12,724 --> 02:04:23,824
+İkincide de üç tane metot söyleyeceksiniz. Diyeceksiniz ki mesela ben işte Random Forest kullanacağım, Ada Boost kullanacağım, bir de atıyorum naive Bayes kullanacağım. Bunları söyleyeceksiniz.
+
+660
+02:04:25,604 --> 02:04:26,304
+Tamam.
+
+661
+02:04:26,604 --> 02:04:27,864
+Tamam hocam, teşekkür ederim.
+
+662
+02:04:30,260 --> 02:04:45,800
+Tam durduğum zaman bir on dakika hemen bir ara verelim. Sonra ben şu datayı alayım. Tamam mı? Datayı internetten bir yerden HTTP ile çekelim. Bilgisayara indirmeden. Yani en azından adresini bulayım bu arada. Altı geçiyor. Çeyrek geçe başlayalım. Tamam mı? Hadi görüşürüz.
+
+663
+02:13:41,332 --> 02:13:45,232
+Evet arkadaşlar, hazırsınız. Hemen başlayalım. Şimdi ekranı paylaşalım.
+
+664
+02:13:50,003 --> 02:13:52,824
+Haydi bakalım, başlamış ette bir şey var.
+
+665
+02:13:53,332 --> 02:14:20,851
+Hocam, raporda veri setinin istatistiksel analiti derken ne kastediliyor? Veri setinde her bir attribütün, işte minimumu, maksimumu ne, medyanı ne, ondan sonra çünkü buna göre datayı temizlemeniz vs. gerekecek. Ondan sonra bug splotla çizdirebilirsiniz. Hatırlarsanız böyle şeyler vardı, bunları yapmanız lazım. Yani dataya baktığınız zaman, çünkü buradan neyi çıkarabilirsiniz? Noisy çıkarabilirsiniz. Datanızın dağılımının nasıl olduğunu çıkarabilirsiniz.
+
+666
+02:14:21,332 --> 02:14:30,572
+Vesaire onları soruyor. Var mı başka soru raporla? Varsa onları ilk şey yapalım. İlk cevaplayalım.
+
+667
+02:14:33,472 --> 02:14:36,891
+Herhalde yok. Olursa ders sonunda tekrar şey yaparsınız, sorarsınız.
+
+668
+02:14:38,052 --> 02:14:40,351
+Datayı temizleme kısmı rapordan sonra değil mi?
+
+669
+02:14:41,524 --> 02:14:51,884
+Ama temizleyeceğim demeyeceksiniz. Diyeceksiniz ki, yani istatiksel analizi yapacaksınız ki temizleyebilirsiniz. Tamam, burada istatiksel analiz.
+
+670
+02:14:53,524 --> 02:15:00,283
+Şimdi şöyle bir şey yaptım. Birkaç tane yöntemi var. Şöyle buradaki dosya.
+
+671
+02:15:02,452 --> 02:15:22,091
+Şu dosyayı niye görüyor? Çünkü bunu yeni yazıp indirdiğimiz için görüyor. Iris'i Drive'ımızda olsa da görmüyor. Birkaç tane yolu vardı yapmanın. Şu an en kolay buraya upload etmek gibi gözüktü. Şuraya şöyle bir şey. Şuna gerek yok. Şunu silebilirsiniz. Import Drive dedikten sonra.
+
+672
+02:15:22,560 --> 02:15:36,980
+Sizi bir yere yönelendiriyor. İster öyle yapabilirsiniz. Şu an ona gerek yok. Şöyle bir şey, files upload diye bir şey var. Driver bir şey upload etmemi istiyor. Burada kendi bilgisayarından Iris.csv'yi upload ederek kullandık.
+
+673
+02:15:44,724 --> 02:15:58,543
+Şu an irisi benim drive'ımın olduğu yere yükledi. Head dediğimiz zaman da bakın, ne yaptı? Bu şekilde bunları aldı. Peki burada indeks, sepal lenkti sanki indeksmiş gibi aldı.
+
+674
+02:15:59,324 --> 02:16:05,704
+Burada indeks yani sıfırıncı kolonum benim indeks kolonum olsun dedik ama burada bizim indeks kolonumuz var mı?
+
+675
+02:16:06,515 --> 02:16:20,756
+Hayır, yok. Bakın bunu sildim ki, görün diye. Keşke şurayı ayırsaydım. Şimdi tekrar yüklememiz de çekerse kendin de. Neyse. Biraz daha çalıştırdığımızda ayırırız. Hop. Bakın şu an ne yaptı?
+
+676
+02:16:21,716 --> 02:16:31,816
+Herhangi bir stünum, satır demin yanlış kadar satır dedim. Herhangi bir stünum index olsun demediğim için 4 tane attribute'um var bakın.
+
+677
+02:16:32,175 --> 02:16:40,156
+Burada da verayeti dediğimizde şeyimiz ne? Class'ımız. Gördünüz mü? 0,1,2,3,4 diye de indexlerimiz gidiyor.
+
+678
+02:16:40,156 --> 02:16:48,076
+Şimdi head dediğimiz zaman buraya 10 deseydik, şuraya 10 diyelim, şurayı da şöyle ayıralım.
+
+679
+02:16:51,443 --> 02:16:56,843
+Nesiden böyle dursun. Bakın 5 değil de 10 satırı size göstermiş olacak.
+
+680
+02:17:02,164 --> 02:17:20,783
+0'dan 9'da kadar ilk 10 satır. Tail dedi deseydiniz, sondan 10 satırı size gösterecekti. Şimdi başka bir şey, data.describe. Data.describe ne yapıyor? Çalıştıralım. Datanızla ilgili size genel bilgileri veriyor.
+
+681
+02:17:21,172 --> 02:17:32,952
+Yani diyor ki 150 tane satır var, 5 tane kolon var, işte indeksleri böyle, değerleri böyle diye size ne yapıyor bunu? Açık yani ne yapıyor? Hop anlatmış oluyor.
+
+682
+02:17:33,632 --> 02:17:41,572
+Şimdi gelelim şuraya. Bakın buradaki kolonlarımızın adı neydi? Sepaleng, Sepalvit, Petaleng, Petalvit'ti. Değil mi?
+
+683
+02:17:42,152 --> 02:17:47,832
+İsterseniz kolonlarınızın adını bu şekilde değiştirebilirsiniz.
+
+684
+02:17:49,427 --> 02:18:01,587
+A, B, C, D gibi. Artık bakın burada çalıştırmışım, şimdi değiştirmeyin bir daha. Data kolonlarının adını A, B, C, D olarak değiştir dediğimiz zaman, variety olarak da kalsın istedim.
+
+685
+02:18:01,587 --> 02:18:08,907
+Hadi çalıştıralım. Sonra variety ya da class yapalım. Biz burada classification yapacağız. Class olsun.
+
+686
+02:18:09,951 --> 02:18:17,211
+Bakın ne oldu? Artık datalarımızın adı, dataları kolonlarımızın adı, sepalleng, sepavit, petalleng değil de ne?
+
+687
+02:18:17,771 --> 02:18:20,831
+A, B, C, D oldu. Burada da kılasımız var. Tamam mı?
+
+688
+02:18:22,271 --> 02:18:33,991
+Şimdi Pandas'ta veriyi seçmek için iki tane yolumuz var. Bir tanesi satır numarasıyla, bir de verinin etketi. Yani şuradaki A, B, C, D ile.
+
+689
+02:18:34,548 --> 02:18:44,788
+Biz aslında neyi gördük? Ilocate'i görmedik. Şimdi Ilocate ne demek? Ilocate hangi satırlar arasında, hangi sütunlar arasında olduğunu söylüyor.
+
+690
+02:18:44,788 --> 02:18:58,048
+Mesela Ilocate bir derseniz ilk, yani mesela Ilocate sıfır derseniz ilk satır, bir derseniz ikinci satır, eksi bir derseniz Python'da eksiler hep sondandır, son satır.
+
+691
+02:19:02,484 --> 02:19:18,783
+0 dediğimizde virgülden sonrası ilk kolon yani tamamen ilk kolonun hepsi. Bu ikinci kolon ve tüm satırlar şeklinde gidiyor. Peki bu ne? Tüm satırlar virgül eksi bir. Eksi bir ne demek? Son sütun demek. Tamam.
+
+692
+02:19:20,544 --> 02:19:27,904
+Print data i locate sıfıra üç ne demek? Sıfırıncı satır üçüncü kolonda ne varsa onu print yap demek.
+
+693
+02:19:29,268 --> 02:19:35,028
+3. kolon, pardon 4. yani 0'dan başladığı için 4. kolon olmuş olduğunu söylüyor.
+
+694
+02:19:35,788 --> 02:19:36,847
+Şeklinde gidiyor.
+
+695
+02:19:37,108 --> 02:19:38,648
+Ilocate ile ne yapabilirsiniz?
+
+696
+02:19:39,247 --> 02:19:42,168
+Dataları bu şekilde gösterebilirsiniz.
+
+697
+02:19:42,788 --> 02:19:43,948
+Yani şuraya bakalım mesela.
+
+698
+02:19:44,067 --> 02:19:47,888
+Print Ilocate dedikten sonra 0'dan 5'e kadar ne demek?
+
+699
+02:19:48,448 --> 02:19:51,427
+0, 1, 2, 3, 4. satırlar.
+
+700
+02:19:52,308 --> 02:19:55,788
+0'ı atla, 1. ve 2. sütunlar demek.
+
+701
+02:19:56,788 --> 02:19:57,828
+Bu şekilde gidiyor.
+
+702
+02:19:59,828 --> 02:20:01,028
+Ya da ne yapabilirsiniz?
+
+703
+02:20:01,788 --> 02:20:04,628
+İsterseniz indekslerle de iş yapabilirsiniz.
+
+704
+02:20:04,628 --> 02:20:07,628
+Yani mesela...
+
+705
+02:20:08,595 --> 02:20:29,635
+Data.locate dedik. Şimdi birincisi iLocate'di. Yani indekse göre locate yapıyorduk. 0, 1, 2, 3, 4 diye. Bizim datamız çok olduğu için genellikle böyle yapıyoruz. Ya da artık ne yaptık? Stunlara abcdclass ismi verdik ya, locate dedikten sonra, yani log diyeceğiz. Log dedikten sonra içine stunun adını yazacağız.
+
+706
+02:20:34,548 --> 02:20:46,747
+B stünunu located, yani datanın B stünunu al ve içinde 1.4'e stünunu B stünunda 1.4'e eşit olanları getir demişim mesela.
+
+707
+02:20:47,747 --> 02:20:53,668
+Baktığımız zaman B'si 1.4'e eşit olanları böyle getirmiş. Gördüğünüz gibi.
+
+708
+02:20:56,371 --> 02:21:06,572
+Diyorum ki datanın içinde locate, beta B, B kolonu 1.4'ten büyük olanları getir ama bunların C'sini ve D'sini de getir.
+
+709
+02:21:06,791 --> 02:21:09,031
+Gördünüz mü? Tıklayalım.
+
+710
+02:21:11,272 --> 02:21:18,432
+Bakın B'si 1.4'ten büyük olanların, B'yi de yazdırtalım, sadece C'de yazmasın ki görün.
+
+711
+02:21:19,331 --> 02:21:21,211
+B'sini, C'sini, D'sini yazdıralım.
+
+712
+02:21:23,156 --> 02:21:31,716
+B'si gerçekten 1.4'den büyük olanlar bu şekilde A, B, C, D kolonlarını yazdır dedik.
+
+713
+02:21:33,515 --> 02:21:41,675
+Eğer bunu demeseydik ne olurdu? Hepsini yazdırır mıydı? Yazdırırdı. Ya da köşeli parantezlerin içine yazdırabilirsiniz.
+
+714
+02:21:41,796 --> 02:21:45,936
+2.3'de de koyabilirsiniz. Tüm satır ve sunları yazdık.
+
+715
+02:21:46,936 --> 02:21:48,816
+Birkaç tane hazır şey var.
+
+716
+02:22:03,460 --> 02:22:15,020
+Ya da first name var, tamam mı? First name, data, first name.isn, friends, tayşa, erik. Yani ne demek? İlk adı.
+
+717
+02:22:30,116 --> 02:22:36,675
+Şu da güzel, şuna da bakın. Data'yı getireceğiz, loket edeceğiz. IDC 100'den büyük olanları.
+
+718
+02:22:37,108 --> 02:22:50,808
+ve ID'si 200'den küçük olanları. Bu ne demek? ID'si 100 ve 200 arasında olanları getir ama bunların postalını ve web kononlarını getir. Tamam, hepsini getirme.
+
+719
+02:22:52,028 --> 02:22:52,727
+Gibi.
+
+720
+02:22:53,940 --> 02:23:05,840
+Böyle böyle şeyler de kullanabiliyorsunuz. Yani data çok büyük olduğu zaman böyle Excel'de aşağı inerek bakamıyorsunuz. Ama datayı analiz etmek için bu tarz komutları ne yapıyoruz? Kullanıyoruz.
+
+721
+02:23:06,620 --> 02:23:17,760
+Şimdi gelelim bugün ilk defa göreceğimiz başka bir kütüphaneye. Bu da ne? Şurada görmüş olduğunuz scikit-learn kütüphanesi.
+
+722
+02:23:21,840 --> 02:23:35,560
+Makine öğrenmesi metotlarının bir çoğunun içinde bulunduğu ve bizim de gördüğümüz karar ağaçları, random forest, naive Bayes gibi birçok metodun içinde bulunduğu kütüphane.
+
+723
+02:23:35,920 --> 02:23:44,639
+Tamam mı? Şimdi datayı neyle temizleyeceğiz? Pandas'la temizleyeceğiz. Yani datayı neyle okuyacağız, göreceğiz. Pandas'la alacağız, bir data frame'in içine koyacağız.
+
+724
+02:23:45,043 --> 02:23:56,344
+DataFrame'in içine koyduktan sonra iş bitecek mi? Hayır. Niye? Çünkü benim datamı, diyeceğim ki bunlar train datasıdır, bunlar test datasıdır şeklinde ayırmam gerekiyor. Değil mi?
+
+725
+02:23:57,224 --> 02:24:07,224
+Ayırdıktan sonra da scikit-learn'ın içinde ben hangi metodu kullanacaksam onunla beraber çalıştırmış olacağım. Şimdi gelelim buraya.
+
+726
+02:24:07,224 --> 02:24:10,064
+Ne olduğunu size hızlıca anlatayım.
+
+727
+02:24:12,020 --> 02:24:38,380
+Import et demiş. Sonra diyoruz ki, scikit-learn'ın içinde hazır en çok kullanılan dataset'ler var. Bu dataset'lerden bizim kullandığımız iris dataset'ine load et diyoruz. Ama bunu bu şekilde kütüphaneden direkt almak zorunda mısınız? Hayır, değilsiniz. Tamam mı? Yani bizim yaptığımız gibi işte read.csv ile de ne yapabilirsiniz? Okuyabilirsiniz.
+
+728
+02:24:39,252 --> 02:24:57,731
+Sonra da modellerden trend test split'i kullan diyeceğiz. Bunu birazdan ne olduğunu söyleyeceğim. Şimdi şurada kodumuz başlıyor. Altıncı satırda. Diyorum ki load iris fonksiyonuyla iris datasını al, şu data'nın içine koy. Tamam mı?
+
+729
+02:24:57,731 --> 02:25:05,531
+Data dediğimiz şey ne? Üstüne geldiğiniz zaman diyor ki bu 150'ye 5'lik bir data.
+
+730
+02:25:05,904 --> 02:25:26,524
+Ve de diyorum ki bu datadan bir data frame oluştur. Pandas'dan data frame oluştur. İçine data olarak datayı koy. Sonra datanın içindeki feature name'leri de, işte sepal, bit, link vs. var diye bunları da kolon ismi olarak kullanarak bir data frame oluştur dedim. Data frame değişkenime de df dedim.
+
+731
+02:25:27,507 --> 02:25:32,507
+Şimdi df.head yaz dediğiniz zaman ne yapacak? İlk 5 satırını yazacak.
+
+732
+02:25:33,007 --> 02:25:41,567
+describe dediğiniz zaman size bu veriyle ilgili bilgileri verecek. Bakın şimdi çalıştırdım.
+
+733
+02:25:41,904 --> 02:26:07,204
+Describe dediğimiz zaman da istatistiksel olarak, hani demin diyordunuz ya istatistiksel kısım nedir? İstatistiksel kısımda diyor ki kaç tane var? Bunların mini var. Tamamen bu describe metodu. Yani şurada describe fonksiyonunu çağırdık ya. Onun verdiği bir şey. Mesela sepal lenkte minimum ne? Maksimum ne? Aralardaki çeyreklerde yüzde yirmi beş, yüzde elli. Yani bu aslında medyan.
+
+734
+02:26:07,567 --> 02:26:23,547
+Bunlar ne? Size bunları vermiş oluyor. Tamam mı? Şurada da target dediğim şeyde classların ismi target olarak geçiyormuş bu şeyde. Target kolonu olarak geçtiği için Iris Datasette'de. Bakın 0, 1, 2, 3 tane neyim var? Farklı classım var.
+
+735
+02:26:25,047 --> 02:26:31,707
+Şimdi datayı ne yapacağım? Test ve train olarak ayırmam lazım. Tamam mı?
+
+736
+02:26:32,051 --> 02:26:43,572
+Bunu da kendiniz manuel ayırabilirsiniz. Yani indeksleri vererek şuradaki data frame, dfn içinde manuel olarak diyebilirsiniz ki işte şuradan şuraya kadar olanını atıyorum.
+
+737
+02:26:43,572 --> 02:26:50,451
+İlk 120 taneyi train için kullan, 121'den 150'ye kadar olanı test için kullan gibi de diyebilirsiniz.
+
+738
+02:26:50,951 --> 02:26:59,131
+Ya da şurada hazır, içinde bir random fonksiyonu olan ve datayı ayıran train test split diye, şurada bakın boyadım.
+
+739
+02:26:59,504 --> 02:27:14,444
+Bir, hazır fonksiyonum var. Bu neyin içinde? CircuitLearn'ın içinde geliyor. Bakın nereden geliyor? Şurada CircuitLearn'de model seleksyonun içinde trainTestSplit diye hazır var. Tamam mı?
+
+740
+02:27:15,724 --> 02:27:23,984
+Şimdi trainTestSplit'te diyorum ki DataFrame'in içindeki feature name'leri al. Bunlar ne? Bizim attribute'larımız.
+
+741
+02:27:24,724 --> 02:27:37,943
+df target dediğimiz classlarımız. Sonra bunun %10'unu test için kullan. Geri kalanını da %90'ını da ne için kullan? Train için kullan. Tamam mı demişiz?
+
+742
+02:27:38,984 --> 02:27:51,863
+İsterseniz testi %20 yapalım. Random state'de seçerken bir random seed oluşturarak seçecek ya, onun parametresi 42 değil, başka bir şey değil ne derseniz deyin. Tamam mı? Bunu çalıştıralım.
+
+743
+02:27:52,500 --> 02:28:02,459
+Bir şey yazmadı, yazmayacak zaten. Ama şeye bakabiliriz, mesela Xtrain'in shape'ine bakalım değil mi? Xtrain nokta shape dedim.
+
+744
+02:28:03,459 --> 02:28:14,819
+Şimdi çalıştıralım. Bakın, 120'ye 4'müş. Xtest'in shape'ine bakalım. Kaça kaçlık?
+
+745
+02:28:15,283 --> 02:28:20,883
+Bunun da 30 olmasını bekliyoruz değil mi? Attribute olduğu için o şeyleri yok.
+
+746
+02:28:22,083 --> 02:28:23,583
+Hoppa, x.text.
+
+747
+02:28:34,644 --> 02:28:46,584
+X-Tex.Shape'li ne? Bakın, 30'a 4. Gördünüz mü? Şurada gördük. Peki, bunların y'leri ne? Y'leri sadece bir kolon, değil mi?
+
+748
+02:28:47,584 --> 02:28:59,344
+Y-Tex.Shape dediğimiz zaman ne yapacak? 30'a şurası boş geldi. Bu ne demek? Birlik demek. Yani aslında bir 30'luk bir vektör. Yani sınıflar bunun içinde.
+
+749
+02:29:01,556 --> 02:29:03,556
+Şöyle bir daha yazdırsak mı?
+
+750
+02:29:06,096 --> 02:29:07,936
+Böyle yazmayacak ama.
+
+751
+02:29:10,456 --> 02:29:12,576
+Şuradaki gibi yazmamız lazım. Tamam.
+
+752
+02:29:12,948 --> 02:29:23,747
+Şimdi bakın neleri seçmiş? Print-wide test dediğimiz zaman, yani testte 30 tane örnek var ya, bunların sınıfları ne ve şu indeksleri, şuraya bakmayın, yani şurası indeksleri.
+
+753
+02:29:24,368 --> 02:29:32,788
+Hani random seçti ya, ilk random 73. satırdakini seçmiş, sonra 18'i seçmiş test örneği için. 30 tanesini test için seçti, değil mi?
+
+754
+02:29:32,788 --> 02:29:40,948
+Ve bunlardan mesela bir sınıfı 1'miş, sınıfı 0'mış, 2'miş, 1'miş, 0'miş, böyle böyle gidecek.
+
+755
+02:29:40,948 --> 02:29:55,788
+Elimde nasıl dağılım bakalım 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 tane falan sıfır var. Sanki ikiler daha çok da gibi.
+
+756
+02:29:55,788 --> 02:29:59,528
+Aslında eşit de dağıtmış. 30 taneden.
+
+757
+02:30:00,084 --> 02:30:12,204
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 tane 2 var şeklinde gidiyor. Tamam mı? Bunlar da sınıflar. Yani tahmin etmeye çalışacağımız şey ne? Y-test.
+
+758
+02:30:12,963 --> 02:30:19,884
+Data'yı ne yaptım? Data'yı x-train, yani x'in içinde neler var? Burası önemli, burayı söylemem lazım.
+
+759
+02:30:19,884 --> 02:30:27,224
+X'in içinde bizim feature'larımız var. Train için ayırdıklarımın feature'ı.
+
+760
+02:30:27,603 --> 02:30:36,103
+X testte de test için ayırdıklarımın feature'ları var. Bunların içinde sepaleng, sepalbit vs. vardı ya onlar var.
+
+761
+02:30:36,763 --> 02:30:43,063
+Y dediğimde de etketleri yani class'ın ne olduğu. Class'larda 0, 1 ve 2'den oluşuyor.
+
+762
+02:30:45,863 --> 02:30:47,383
+Şimdi geldim buraya.
+
+763
+02:30:49,299 --> 02:30:56,619
+scikit-learn.tree'den decision tree'leri seç dedim. Tamam mı? Bunları karar ağaçlarıyla sınıflandıracağım.
+
+764
+02:30:57,279 --> 02:31:04,639
+Şimdi buraya baktığımız zaman bunların birçok parametreleri var. Mesela işte maksimum deptin olsun tree'nin.
+
+765
+02:31:05,099 --> 02:31:08,700
+Mesela burada iki olsun demişim çünkü zaten dört tane attribütüm var.
+
+766
+02:31:10,420 --> 02:31:31,880
+Ondan sonra işte random state'in olsun vesaire vesaire bir sürü bunların parametreleri var. Yani her bir şeyin buradan hani sakitlerinden, tree'den, decision tree'yi seçtik ya buradan naive Bayes'i seçebilirsiniz. Random forest, Adabuse hepsi bunun içinde. Onu seçtiğiniz zaman bunların parametrelerinin ne geldiğine ne yapın? Mutlaka bakın. Tamam mı? Şimdi gelelim.
+
+767
+02:31:32,628 --> 02:31:52,488
+Train etme fonksiyonu mu? Train etme fonksiyonu ne? Fit. Yani modeli fit edeceğim. Neye fit edeceğim? X-train'e yani train'deki attribute'ların bunlar da neleri? Classları. Burada 120 tane örnek var. 120 tane örnekten bir modeli oluşturacağım.
+
+768
+02:31:53,968 --> 02:31:58,548
+Şimdi şurayı kestim. Görün.
+
+769
+02:32:00,628 --> 02:32:22,628
+Şimdi bakın şu an çalıştı. Tamam mı? Çalıştıktan sonra modelimiz var. Tamam mı? Şimdi artık bir modeli oluşturduk ya, model neyin içinde? CLF'mizin içinde. Yani CLF fit diyerek modeli oluşturduk.
+
+770
+02:32:23,283 --> 02:32:37,003
+Şimdi teste bakalım. Trenden oluşturduk ya. Diyelim ki testteki Ilocate sıfır neymiş? Aslında şurada da bakmıştık. Neydi? Birdi değil mi sınıfı hatırlarsanız? Sıfır mı bir mi? Evet birdi.
+
+771
+02:32:49,075 --> 02:32:51,055
+Test et bakalım ne çıkacak diyor.
+
+772
+02:32:51,536 --> 02:32:51,955
+Tamam mı?
+
+773
+02:32:53,036 --> 02:32:55,495
+Ve neyi tahmin ettiysen de bunu yaz.
+
+774
+02:32:55,495 --> 02:33:06,335
+Şimdi x-test, i-locate 0 dediğim zaman bana birinci sıfırıncı satırda yani ilk satırdaki verimin attribütlerini veriyor.
+
+775
+02:33:07,115 --> 02:33:07,595
+Tamam mı?
+
+776
+02:33:08,455 --> 02:33:11,615
+Ve de diyorum ki
+
+777
+02:33:11,680 --> 02:33:21,420
+Sadece iLocate 0 için bunu test et dediğim zaman, şunu silelim, yine burayı görün sadece.
+
+778
+02:33:29,340 --> 02:33:33,360
+Şöyle yapalım, bunu bozdum çünkü. Neyse, dursun.
+
+779
+02:33:35,283 --> 02:34:02,343
+Diyor ki, eray 1'dir diyor. Yani ben bunu 1 olarak tahmin ettim diyor. Bunun gerçek değeri neydi? Gerçek değeri de 1'de. Bunu doğru olarak tahmin etmiş. Peki sadece bunu değil de, burada sadece bakın ne yaptık? Sıfırıncıyı tahmin ettik. Mesela onuncuyu tahmin etseydik, modeli train ediyorum. Buradaki onuncu ne? Şuradan 10 tane sayarsanız bulursunuz. Bakın bu ne yaptı? 2 olarak.
+
+780
+02:34:02,932 --> 02:34:14,552
+Tahmin etti. Peki hepsini, testin hepsini tek tek tek tek mi soracağım? Hayır, testin hepsini sorabilirim. Ne yapıyorum? Şunu x tekste yazmasın, gerek yok.
+
+781
+02:34:17,971 --> 02:34:23,592
+Neyse, tamam yazsın. Şimdi X testlerin attribütlerini yazacak, sonra bir satır atla diyorum.
+
+782
+02:34:23,711 --> 02:34:30,671
+Diyorum ki X testlerin net predikt ettiysen, yani testteki tüm 30 örnek içinde bunların sonucunu yaz diyorum.
+
+783
+02:34:31,311 --> 02:34:37,671
+Bakın sonuçlar nerede burada? 1, 0, 2, böyle böyle tahmin edilen 30 tane değeri burada bana verdi.
+
+784
+02:34:37,671 --> 02:34:42,671
+Peki ne kadar doğru çalıştı? Bunu da hazır bana veren,
+
+785
+02:34:43,231 --> 02:35:08,272
+clf.score diye bir fonksiyonum var. İçine neyi veriyorum? Bakın şurada clf.score x testler vardı. x testleri ve y testleri veriyorum. Şimdi ne yapacak? Buradaki x testle kendisi şuradaki değerleri oluşturacak. Sonra bunların kaç tanesi y testle aynı ona bakacak.
+
+786
+02:35:10,164 --> 02:35:12,584
+0.96 gibi bir şey çıktı.
+
+787
+02:35:14,764 --> 02:35:15,944
+Bu ne yapıyor?
+
+788
+02:35:18,684 --> 02:35:21,463
+Burada da şöyle bir şey yapmışım. Ne yapmışım biliyor musunuz?
+
+789
+02:35:21,544 --> 02:35:27,504
+Ağaçların döngüyle, şurada ağaçtaki maksfetti 2 kullan demiştim ya, döngüyle
+
+790
+02:35:28,211 --> 02:35:50,831
+Max Depti 1'den 6'ya kadar değiştirmişim. Ve 1'den 6'ya kadar değiştirirken 1-6 olduğuna göre 5'e 5 tane değiştirmişim. Ve her seferinde tekrar ağacın Depti 1'ken, Depti 2'yken, Depti 3'ken ona göre bir modeli eğitmişim. Bakın CLF fikle modeli eğitiyorum.
+
+791
+02:35:51,247 --> 02:35:58,687
+Sonra da bakıyorum ne kadar çalışıyor. Ve her seferinde döngünün içinde bunun doğruluğu neyse yazdırıyorum.
+
+792
+02:35:58,687 --> 02:36:10,707
+Tıkladım. Bakın 0.63 çıktı ilk. Bu ne? Sadece depti birken ağacımın yani tek bir root varken nasıl çalıştı?
+
+793
+02:36:11,252 --> 02:36:20,731
+Burada deptimiz 2 iken nasıl çalıştı? Deptimiz 3 iken nasıl çalıştı? Deptimiz artık 4 iken 5 iken %100 çalışmaya başlıyor.
+
+794
+02:36:21,871 --> 02:36:28,512
+Şöyle de çalışsak %100 çalışacak mıymış? Max depte 2 değil de 5 deseydik.
+
+795
+02:36:31,891 --> 02:36:37,512
+Şurada bakalım skorumuza. Gerçekten de %100 ne yapıyor? Çalışıyor.
+
+796
+02:36:39,156 --> 02:36:46,736
+Çok zor değil gördüğünüz gibi. Her şey burada var. Her şey kütüphanenin içinde var ama hangi metodu kullanacağınız önemli.
+
+797
+02:36:46,736 --> 02:36:59,736
+Şimdi mesela bir güzel taraf, bir yerde bir hata yapalım. Ne yapacaksınız hata çıkınca? İnternetten bakacaksınız. Hatta alt aşağıda da çıkıyor. Yani hata verdiyse eğer işte...
+
+798
+02:37:00,208 --> 02:37:09,008
+Hoppa, bakın search stack overflow dediğiniz zaman hemen siz stack overflow'dan ya da oradan buradan ne yapabilirsiniz? Hatanın ne olduğuna bakabilirsiniz.
+
+799
+02:37:09,528 --> 02:37:20,228
+Şimdi aslında bugün bir örnek daha gösterecektim ama şöyle yapacağım, vaktim yetmeyecek. O örnek de bence çok güzel bir örnek. Şöyle bir örnek. Bir data var, tamam mı?
+
+800
+02:37:20,979 --> 02:37:28,719
+Bu tablo olarak vermiş. Yani CSV olarak değil, tablonun içinde, şunu birazcık büyüteyim, bu internetten bir tutorial.
+
+801
+02:37:29,319 --> 02:37:38,059
+Tamam mı? Meyvelerin işte label'ı var, adı var, ondan sonra işte kütlesi, boyutu, işte color skoru vs. var. Tamam mı?
+
+802
+02:37:38,700 --> 02:37:46,559
+Baktığımız zaman 7 feature'ı var, çok 59 tane de fruit var. Tamam mı? 59 tane satır var baktığımız zaman.
+
+803
+02:37:47,156 --> 02:38:09,436
+Sonra bu şöyle bir şey yapmış. Çizdirmek için Seaborn kütüphanesi var. Biz Plot kullandık, Medplotlib kullandık ama Seaborn birazcık daha böyle artistik şekiller çizmenizi sağlıyor. Bu Seaborn kütüphanesiyle ne yapmış? Bakın, Frütleri neyimlerine göre aslında histogramını çıkarmıştı. Apple, mandalin, orange, lemon. Buna böyle çizdirmiş. Kaç tane var?
+
+804
+02:38:10,004 --> 02:38:27,004
+Burada Box Plotlarını çizdirmiş. Bakın çok basit çizdirmesi. Mesela diyorsunuz ki, şurada göstereyim. Plot diyorsunuz, Save Figure, Feedbox diyorsunuz. Sonra hop, Show'la gösteriyorsunuz. Şurada kaybolma vesaire ne istiyorsanız parametrik olarak yazıyorsunuz.
+
+805
+02:38:28,304 --> 02:38:32,504
+Şimdi ben size bunu vereyim. Bunun linkini vereyim.
+
+806
+02:38:32,816 --> 02:38:57,355
+Bunu çalıştırın kendiniz. Tamam. İşte burada histogramdaki bin sayısını değiştirirseniz nasıl olur, ne olduğunu da anlatmış. Ondan sonra burada scatter plotunu çizmiş. Yani işte mesin şey, bakın bitle mes arasında nasıl bir korelasyon var. Bunları falan da görebiliyorsunuz. Sonra describe'la bunları yazdırmış. İstatistikler olarak nasıl değişiyor. Sonra ne yapmış?
+
+807
+02:38:58,739 --> 02:39:25,000
+Training ve Test Set'i oluşturmuş, Train, Test, Split oluşturmuş ama Menimax Scaler kullanmış. Bu da şöyle bir şey yapıyor, verimizi scale ediyorduk ya, minimum ve maksimum değer arasında bir scale yapıyorduk. Burada onu kullanmış, bunun ne olduğunu da anlatırım. Sonra işte Decision Tree ile mesela işte Scikit-Learn Tree'den Import Decision Tree Klasifiye ile yapmış. Sonra Scikit-Learn'den Neighbors'dan K-Nearest Neighbor yapmış.
+
+808
+02:39:26,355 --> 02:39:48,655
+Şu eldeyeyi falan geçin. Sonra mesela naive Bayes yapmış. Bunun Gauss filtrelisini yapmış. Support Vector Machine yapmış gibi gidiyor. Bir de mesela bakın burada farklı şeyler de var. Confusion Matris var mesela. Oluşturduktan sonra direkt Print Confusion Matris derseniz size bunu hop şurada görmüş olduğunuz şekilde çiziyor.
+
+809
+02:39:54,355 --> 02:40:18,476
+Report derseniz, sizin precision recall'unuz, F1 skorunuz ne? Bunları da size vermiş oluyor. Tamam mı? Şimdi bunun linkini Classroom'dan paylaşacağım. Bunu haftaya kadar yapın. Sonra burada göstermediğim birkaç tane bir şey var. Yine dersin başında. Onlara hızlıca bakarız. Tamam mı? Buradan devam ederiz. Şimdi ne yapacağım? Bunun linkini.
+
+810
+02:40:19,188 --> 02:40:29,128
+Size göndereceğim. Bunu mutlaka çözdüm. Tamam. Şimdi projeyle ilgili sorunuz var mı? İlk onu sorayım.
+
+811
+02:40:34,004 --> 02:40:46,144
+Hocam, bizim projemizde böyle nümerik değerler değil de sadece kelimelerle sınıflandırma olduğu için bu istatistiksel verileri nasıl göstereceğiz?
+
+812
+02:40:46,144 --> 02:40:55,103
+Şimdi eğer mesela tek statası varsa tek statasında şöyle bir şey yapman gerekecek. İşte her kelimeden kaç tane geçmiş?
+
+813
+02:40:55,540 --> 02:41:12,640
+Aynı da bağlaçları falan silip atman gerekecek. Tamam mı? Temizlemede. Dolayısıyla ya da işte ne gibi ve veya gibi kelimeleri falan hep atman gerekecek. Dolayısıyla bu kelimeler hangisi? Tamam mı? Hangi kelimeleri atacaksın? Bağlaç ya da işte şey.
+
+814
+02:41:13,236 --> 02:41:27,796
+Bazı kelimeler, o kelimeler neler olacak onlara karar vermen lazım. Sonra her kelime kaç kere geçiyor ona bakacaksın. Çok az geçen kelimeleri de atman gerekiyor. Bir threshold belirleyeceksin. Yani ne çıkar bilmiyorum. 3 mü 4 mü çıkar.
+
+815
+02:41:27,796 --> 02:41:36,816
+Diyelim ki diyeceksin ki işte 3'ten 4'ten az kullanılmış kelimeler bunlardır. Bunları da atıyorum. Bunları da kullanmayacağım falan demen lazım.
+
+816
+02:41:37,587 --> 02:41:44,887
+Şey, onları bugüne mi yapacağız hocam yoksa bu projenin, projeyi yollarken mi göstereceğiz, projeyi sunarken mi?
+
+817
+02:41:44,948 --> 02:41:52,488
+İşte bugün nasıl yapacağını yazıyor olman lazım. Bunu böyle yapacağım. Yani saymasam bile bunları böyle böyle yapacağım diye yazıyor olman lazım.
+
+818
+02:41:53,128 --> 02:41:54,808
+Tamamdır hocam. Tamamdır.
+
+819
+02:41:55,468 --> 02:42:03,308
+Şu raporu iki gün daha uzatayım sanırım çok geç kalmışsınız. İki gün uzatayım raporunuzu perşembeye yükleyin tamam mı? Ya da cumaya yükleyin. Tamam mı?
+
+820
+02:42:03,987 --> 02:42:12,948
+Classroom'dan duyurum şimdi. Cumaya kadar yükleyin. Ama yani detaylı bir şey yükleyin. Bu projenin amacı şu, artık yavaş yavaş ne yapacağınızı biliyorsunuz.
+
+821
+02:42:13,308 --> 02:42:21,847
+Hani proje son haftaya kalsın da sıkışmayın. Şimdiden dataya bakın, analiz edin. Bir şey çıkacak mı, çıkmayacak mı onlara bakın. Tamam mı?
+
+822
+02:42:21,847 --> 02:42:27,547
+Çünkü bu şeyleri istiyorum mesela, grafiklerimi falan istiyorum. Mesela şurada vardı ya. Bir dakika.
+
+823
+02:42:30,260 --> 02:42:43,720
+Yani şunları falan çizerseniz sizin yararınıza, diyelim ki işte sınıfların dağılımı nasıl, ondan sonra ya da işte istatistiksel analizle bir boxplot vesaire çizerseniz bunların hepsi sizin yararınıza olur.
+
+824
+02:42:45,460 --> 02:42:45,700
+Tamam mı?
+
+825
+02:42:45,700 --> 02:42:55,380
+Onları zaten çizmiştim de hocam, bu işte ekür şeyler, minler, medianlar, modlar vesaire var ya, onlar için demiştim ben daha çok, ya da interquartail'lar.
+
+826
+02:42:55,827 --> 02:42:59,347
+Tamam yani. Zor ya bizim şeyde yaptığımız şey.
+
+827
+02:42:59,367 --> 02:43:04,628
+Asıl istediğim o da şey yani ekstra da süre vereyim cuma akşama kadar tamam mı?
+
+828
+02:43:04,907 --> 02:43:05,628
+Tamamdır hocam.
+
+829
+02:43:06,188 --> 02:43:07,507
+Tamam başka sorun var mı?
+
+830
+02:43:08,788 --> 02:43:12,648
+Tam olarak bizim dersimiz evliliyordu ama ben okul seviyeyle harikas getirene etmeye çalışıyorum.
+
+831
+02:43:12,747 --> 02:43:16,808
+Verdiğim resimlere göre tanıma yapabilsin diye. Acaba doğruluğa arttırmak için neler yapabilirim?
+
+832
+02:43:16,907 --> 02:43:20,887
+Stage sayısı vesaire. Harikas get zaten üst düz mü tanıyorsun?
+
+833
+02:43:24,275 --> 02:43:25,115
+Nesne.
+
+834
+02:43:27,315 --> 02:43:29,915
+Harap asker yapıyorsam.
+
+835
+02:43:34,355 --> 02:43:44,495
+Ne yaparsın? Sonra konuşalım. Harika askerle niye tanıyorsun? Hızlı olsun diye mi?
+
+836
+02:43:47,796 --> 02:44:12,355
+Zaten atıyor, yani kaskette ne yapıyor, bakıyor, bu iyi çalışmadı deyip onları hiç kullanmıyor. Onları birazcık daha çalıştırabilirsin. Bir de nesneton, yani yüz tanımada ağırlar iyi çalışıyor da HOG diye bir metot var. O da birazcık daha tabii ki de yavaş çalışıyor. Hağır kadar iyi çalışmıyor. Doğruluğu HOG'de daha iyi. HOG'nin doğruluğu genelde nesnetonmada birazcık daha iyi çalışıyor.
+
+837
+02:44:17,236 --> 02:44:19,396
+Tamam ya, probleme göre bir şey diyebilirim [öğrenci].
+
+838
+02:44:20,695 --> 02:44:26,596
+Şu an şunu yapabilirsin gibi bir şey diyemeyeceğim. Ağır yani çok %100 çalışmayabilir.
+
+839
+02:44:29,236 --> 02:44:31,116
+Başka sorunuz yok herhalde.
+
+840
+02:44:31,695 --> 02:44:36,276
+Tamam, gruptan da yazın. Ben de Google Classroom'a yazacağım şimdi.
+
+841
+02:44:39,956 --> 02:45:05,275
+O zaman haftaya görüşürüz. Haftaya yapay sinir ağları göreceğiz. Bir de şu şeyin üzerinden de geçelim. Artık gördükten sonra o meyveli örneği mutlaka yapın hafta sonu. Onu yaparsanız zaten projenizi %80 falan halledebilecek şeye gelirsiniz. Tamam mı? Kıvama gelirsiniz. Kendinize iyi bakın. Haftaya görüşmek üzere. Bay bay.

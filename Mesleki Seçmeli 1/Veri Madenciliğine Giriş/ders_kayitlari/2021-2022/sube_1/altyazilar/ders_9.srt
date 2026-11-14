@@ -1,0 +1,3063 @@
+1
+00:00:04,352 --> 00:00:06,032
+Evet arkadaşlar, merhabalar.
+
+2
+00:00:08,432 --> 00:00:10,211
+Şimdi motorumuz da gelsin.
+
+3
+00:00:14,208 --> 00:00:15,367
+Şimdi açalım bakalım.
+
+4
+00:00:28,320 --> 00:00:50,200
+Evet. Birkaç duyurum var ilk neyle ilgili? Projeyle ilgili. Bugün projenizi ne yapmamız lazım? Proje öneri formunuzu yüklemeniz lazım. Değil mi? Biliyor musunuz? Biliyoruz. Tamam. Bununla ilgili bir sorunuz var mı?
+
+5
+00:00:53,823 --> 00:01:05,183
+Bir daha söyle, öneri formunda neler olması gerekiyor? Öneri formunda, şurada görmüş olduğunuz, ama göremediğiniz, şurada.
+
+6
+00:01:05,903 --> 00:01:20,224
+Data ile ilgili birçok şeyin burada olması lazım. Şimdi ilk veri analiz ve ön işleme raporumuz var.
+
+7
+00:01:21,632 --> 00:01:46,332
+Burada datanızla ilgili bilgi vereceksiniz. Yaptığınız işin bir amacı var, değil mi? Mesela ne yapacaksınız? Diyelim ki atıyorum, işte IMDB veri tabanından birini seçtiniz. İçinde izleyenler var, işte önceki yorumlar var, görüşler var vs. Bir kullanıcında önceden izlediği filmlere göre ne yapacaksınız? Diyelim ki ona bir film tavsiye edeceksiniz. Tamam mı?
+
+8
+00:01:46,492 --> 00:02:02,332
+Burada ilk olarak amacınızın, hedefinizin ne olduğunu söylemeniz lazım. Tamam mı? Motivasyonunuz ne? Bu projeyle elde etmek istediğiniz bilgi kazanımı ne? İlk onu söyleyeceğiz. Tamam mı? Ondan sonra veri seti hakkında bilgi. Nereden indirdiniz?
+
+9
+00:02:02,975 --> 00:02:22,235
+Ondan sonra veri setiniz nasıl bir veri? Atıyorum işte görüntümü, ses mi, text mi, yoksa tamamen işte bir spreadsheet mi, veri tabanından çekilen veri mi? Nasıl toplanmış? Ondan sonra işte kaç attribütünüz var, kaç tane objeniz var vesaire? Onları yazmanız lazım.
+
+10
+00:02:22,235 --> 00:02:29,036
+Sonra istatistiksel olarak her bir attribütün veri aralığı ne? Minimum, maksimum değerleri ne?
+
+11
+00:02:29,439 --> 00:02:40,800
+İşte boxplot çizdirip bakabilirsiniz. Tamam mı? Outlier'lar var mı? Eksik veri var mı? Eksik veri varsa bunu nasıl? Handle edeceksiniz. Tamam.
+
+12
+00:02:53,728 --> 00:03:10,488
+O zaman işte onunla ilgili vereceksin. Böyle böyle cümleler oluşmaktadır. Bakacaksın cümlede kaç kelime var. Değil mi? Sonra kelimenin içindeki mesela bağlaçları atacaksan bu da ön işleme. İşte bunları böyle atacağım, bunu böyle temizleyeceğim falan filan diyeceksin ya. Onları anlatman lazım o zaman. Tamam mı?
+
+13
+00:03:10,488 --> 00:03:11,488
+Ya da...
+
+14
+00:03:18,015 --> 00:03:20,354
+Bir ne bir rapor vardı ya? Bugün ne raporu var?
+
+15
+00:03:21,775 --> 00:03:25,575
+Haa pardon ya. Tamam neyse bunu anlatalım. Bu önemli otuz kasıma kadar.
+
+16
+00:03:25,963 --> 00:03:38,924
+Ondan sonra verinizi temizleyeceksiniz. Bazı öz niteliklerin tiplerini değiştirmeniz gerekecek. Yani atıyorum numerik değeri belki nominale çevireceksiniz vs. gibi işlemler yapacaksınız.
+
+17
+00:03:39,403 --> 00:03:47,984
+Ya da hani derste gördüğümüz normalizasyon gibi işlemler yapacaksınız vs. onları da anlatacaksınız. Sonra diyeceksiniz ki verim şöyle şöyle hale geldi.
+
+18
+00:03:47,984 --> 00:03:53,963
+Önceden bu kadar verim vardı. Temizledikten sonra elinde şu kadar veri kaldı. Şöyle oldu, böyle oldu. Şöyle baktığım zaman...
+
+19
+00:03:53,963 --> 00:04:02,264
+Etribütler arasındaki şöyle korelasyon çıktı, o yüzden bunları kaldırıyorum falan dedikten sonra da üç tane şöyle şöyle yöntem kullanacağım diyeceksiniz.
+
+20
+00:04:02,264 --> 00:04:14,264
+Tamam mı? Şimdi bugün ne var? Bugün konu olayı var. Tamam mı? Bugün herkes de onu soruyor. O zaman bugün rapor yok herhalde ya. Bugün rapor var mı? Nerede o?
+
+21
+00:04:20,576 --> 00:04:24,256
+Tamam, datanızı şeye gireceksiniz, plasumdaki.
+
+22
+00:04:37,824 --> 00:04:51,863
+Datayı bir kere şu klaslumdaki Excel'i tekrar açacağım. Tamam mı? Datayı ona girersiniz. Ondan sonra, datayı ona girdikten sonra da yine küçük bir rapor yazmanız bekleniyor. Bir dakika şu klasluma gidelim.
+
+23
+00:05:04,064 --> 00:05:06,064
+Şimdi buraya geldiğimiz zaman da
+
+24
+00:05:06,064 --> 00:05:08,684
+Şurada var.
+
+25
+00:05:12,255 --> 00:05:39,275
+Nerede dokuzu, ayın dokuzuna kadar şunu yapın dediği, şurada mı? Ha, şu işte, şu. Proje konusunu buldunuz ya, sonra bir de proje isimlerinizi yazdığınız bir tane şey var, egzer var. Onu kapattım yazmayı. Onun yanına datanızı bulduğunuz linki ekleyin ya da link bulmadıysanız, kendim şöyle şöyle data oluşturacağım falan filan diyorsanız, onu yazın ki, nıftar herkesin ne yaptığını görsün milletin. Tamam mı? Her birbirinizin ne yaptığını görün.
+
+26
+00:05:39,819 --> 00:05:53,280
+Ondan sonra diyeceksiniz ki sadece bunu öneri raporu dediğimiz şey, datam bu. Bunu niye raporlu yazdım? Şöyle kısa bir hemen bir sayfalık bir şey yapıyorsunuz. Çok uzun bir şey değil. Linkini veriyorsunuz. Tamam mı?
+
+27
+00:05:53,819 --> 00:06:07,100
+Datasette şu, şöyle toplanmış diyorsunuz. Çok kısaca. Ondan sonra Kaggle'dan buldunuz ya, Kaggle'da zaten onunla ilgili bir sürü şey var. Çözüm var zaten. Tamam mı? Tutorial var vesaire. Baktığınız zaman bir sürü şey var.
+
+28
+00:06:07,819 --> 00:06:11,639
+Bakıldığı zaman şunlar şunlar yapılmış diyorsunuz birkaç tane örnek.
+
+29
+00:06:12,319 --> 00:06:15,259
+Ama ben de bunlara benzer şöyle şöyle bir şey yapacağım deyip bırakıyorsunuz.
+
+30
+00:06:15,319 --> 00:06:17,939
+Yani bugün yükleyeceğiniz bir sayfalık kısa bir şey söyle.
+
+31
+00:06:26,752 --> 00:06:27,735
+Bu, bu, bu, bu.
+
+32
+00:06:39,680 --> 00:06:40,760
+A donı seyir, a donı.
+
+33
+00:06:47,903 --> 00:06:48,384
+Bakalım.
+
+34
+00:06:50,603 --> 00:06:52,923
+Tamam, iki bir yazmışsınız. Okey.
+
+35
+00:06:54,264 --> 00:07:03,723
+Burada tamam. Kategorinin tahmin edilmesi var ya, buraya birazcık daha diyelim ki, koyalım gidelim.
+
+36
+00:07:06,463 --> 00:07:12,043
+Şimdi, ne var? Elimizde user ratingleri var. Tamam.
+
+37
+00:07:16,896 --> 00:07:25,696
+Burada birazcık daha yani kategoriler var ya, kategoriler neler? Mesela kaç tane klasınız olacak? Onları net yazın. Tamam mı? Mesela gerilim, korku ve benzeri demişsiniz ya.
+
+38
+00:07:26,276 --> 00:07:30,716
+Bimkiş'te 10 tane varsa bu nedir? Multi-class klasifikasyon. Yani çoklu sınıflandırma.
+
+39
+00:07:31,372 --> 00:07:38,912
+Bunları falan yazın. Sonra işte dataset'in kısaca, yani baktığınız zaman hemen bakın bununla ilgili ne yapılmış.
+
+40
+00:07:39,072 --> 00:07:44,832
+Yani bu dataset'le, şuradan değil de, bu dataset'le ilgili tamam mı neler yapılmış bir bakın.
+
+41
+00:07:45,132 --> 00:07:49,152
+Şu şu metotlar en çok uygulanmış. Ben de bunu uygulayacağım gibi bir şeyler diyebilirsiniz.
+
+42
+00:07:50,472 --> 00:07:55,052
+Tamam. Böyle küçük bir şey daha yazıp tekrar yükleyin.
+
+43
+00:08:00,672 --> 00:08:03,592
+Şey yapabiliyorsunuz ya tekrar gönderebiliyorsunuz açık ya şey.
+
+44
+00:08:05,772 --> 00:08:08,072
+Update edebiliyorsunuz gönderdikten sonra.
+
+45
+00:08:08,072 --> 00:08:09,852
+Tamam mı? Olmaz yani.
+
+46
+00:08:11,632 --> 00:08:15,372
+Bu kadar. Bugünkü bu gün gideceğiniz hep bir sayfalık kısa bir şey.
+
+47
+00:08:15,872 --> 00:08:16,172
+Tamam mı?
+
+48
+00:08:17,052 --> 00:08:19,072
+Şimdi, geçen hafta ne yaptık?
+
+49
+00:08:24,543 --> 00:08:26,883
+Bayes gördük en sonunda. Bayes'ten önce ne gördük?
+
+50
+00:08:28,043 --> 00:08:29,323
+Bayes'ten daha iyi Bayes'ten.
+
+51
+00:08:30,183 --> 00:08:34,283
+Nave Bayes'i gördük. Evet. Bir metot daha gördük. Ne gördük?
+
+52
+00:08:35,483 --> 00:08:39,063
+Rullar vardı. Hiçbir ikimiz hatırlamıyor değil mi? Tamam.
+
+53
+00:08:39,963 --> 00:08:44,202
+Şimdi, geçen hafta ne yaptık? Sınıflandırmaya devam ettik. Tamam mı?
+
+54
+00:08:44,202 --> 00:08:51,323
+E sınıflandırma yöntemlerinden ilk ne görmüştük? Hatırlarsanız ilk karar ağaçlarını görmüştük. Tamam.
+
+55
+00:08:51,840 --> 00:09:01,840
+Karar ağaçları nasıl oluşturulur? İşte ondan sonra çeşitli yöntemler nelerdir? Information gain, Gini index vesaire bunların tanımını yapmıştık.
+
+56
+00:09:03,120 --> 00:09:08,840
+Hiç hatırlamıyor gibi bakıyorsunuz. Ondan sonra, geçen haftada...
+
+57
+00:09:09,056 --> 00:09:18,396
+Bir decision rule'lara baktık. Yani nasıl rule çıkartılır? İki approach vardı, iki yol vardı, top down ya da bottom up approach vardı.
+
+58
+00:09:18,516 --> 00:09:28,036
+Hatırlarsanız birinde özelden genel ya da genelden özel ya da kocaman bir rule alıp çıkarta çıkarta gidiyorduk ya da tek bir rule alıp buna çeşitli çeşitleri ekleyerek gidiyorduk.
+
+59
+00:09:28,595 --> 00:09:35,736
+Sonra da olasılık ve istatistikte gördüğünüz ne vardı? Bir Bayes kuralı vardı. Değil mi? Koşullu olasılıkla söylediğimiz.
+
+60
+00:09:37,120 --> 00:09:42,859
+Pro, nasıl söyleyelim? P, A, given B.
+
+61
+00:09:47,539 --> 00:09:49,159
+Ne yaptık?
+
+62
+00:09:51,500 --> 00:09:53,759
+Slide'dan başmak daha mantıklı da olabilir.
+
+63
+00:09:56,059 --> 00:10:04,620
+Dedik ki, B olayı olduğu zaman A'nın olma ihtimali.
+
+64
+00:10:05,035 --> 00:10:06,595
+Nasıl hesaplarız dedik?
+
+65
+00:10:15,488 --> 00:10:19,352
+Ne yaptık? Bu neyi şu an yazdım? Bildiğimiz...
+
+66
+00:10:24,895 --> 00:10:38,735
+Bayes kuralı. Değil mi? Bunu görmüştük. Ne yapıyorduk? Bir veri seti bize verildiği zaman ve test seti verildiği zaman oradaki yani diyor ki bana test setinde ne diyor? Ne diyor? Mesela atıyorum.
+
+67
+00:10:40,735 --> 00:10:50,475
+Diyelim ki işte hava, bulutlu, veri setim olsun. Tamam mı? Ondan sonra işte nem, normal.
+
+68
+00:10:51,135 --> 00:11:01,336
+Ondan sonra yağış. Yok, atıyorum. O gün tenis oynanır mı? Tamam mı? Şimdi, yani 0-1 diyeceğim.
+
+69
+00:11:02,156 --> 00:11:11,015
+Benimki veri setinde işte normalde hava nasıl olabiliyor? Bulutlu olabiliyor, güneşli olabiliyor ya da işte parçalı bulutlu olabiliyor.
+
+70
+00:11:11,227 --> 00:11:37,727
+Tamam mı? Nem, işte yüksek ve düşük normal olabiliyor. Yağış var ya da yok olabiliyor. Buna göre tenis oynanır mı? Oynanmaz mı? Elimde ne var? Bir training seti var. Değil mi? Ne yapıyorum? Böyle böyle bakıyorum. Hava bulutluysa tenis oynanmış mı, oynanmamış mı? Bunu ne yapıyorum? Hava bulutlu, bana verilen PBN havanın bulutlu olması. Hava bulutlu olduysa ne kadar tenis oynandı? Bunun havasını hesaplıyorum.
+
+71
+00:11:38,176 --> 00:11:45,336
+Sonra ne normalse yine training setten tenis oynanma ihtimalini hesaplıyorum.
+
+72
+00:11:45,496 --> 00:11:48,396
+Yağış var yoktan yeniden oynanma ihtimalini hesaplıyorum.
+
+73
+00:11:48,936 --> 00:11:54,176
+Sonra bunlardan ne yapıyorum? Bunları bir araya getirerek bir koşullar olasılık ortaya çıkarıyorum.
+
+74
+00:11:54,916 --> 00:12:01,176
+Buna göre sıfırın olasılığı ne, birin olasılığı ne, hangisi daha yüksekse tamam bunun sınıfı budur diyorduk.
+
+75
+00:12:03,552 --> 00:12:10,012
+Şimdi gelelim bugünkü konumda. Bugün yeni bir konuya başlıyoruz.
+
+76
+00:12:16,288 --> 00:12:19,648
+Açtık. Şimdi bugün ne yapacağız? Bugün öğreneceğimiz şeyler,
+
+77
+00:12:20,948 --> 00:12:29,008
+sonrası L yaparsak, tam ekran görün, tamam. Bugün öğreneceğimiz şeyler çok değerli bilgiler.
+
+78
+00:12:29,188 --> 00:12:38,228
+Yani ileride derin öğrenme de alsanız, makine öğrenmesi de alsanız, hep kullanacağımız şeyler, duyacağımız terimleri öğreneceğiz.
+
+79
+00:12:39,168 --> 00:12:47,067
+Bu da ne yapacağız? Aslında biz şimdiye kadar diyelim ki bana bir tepkili.
+
+80
+00:13:04,384 --> 00:13:13,664
+Doğruluk oranı, ekrisi dediğimiz doğruluk oranını bulup ne yapıyoruz? Diyoruz ki benim modelim işte oluştuğum model yüzde 84 çalışıyor.
+
+81
+00:13:14,084 --> 00:13:22,943
+Yüzde 85 çalışıyor. Tamam mı? Bugün ne öğreneceğiz? Bugün sadece doğruluk oranının çoğu durumda yeterli olmadığını göreceğiz.
+
+82
+00:13:23,524 --> 00:13:31,824
+Başka başka benim modelim ne kadar iyi çalışıyor bunu bana sevgili bir şey. Başka metriklerin neler olduğunu öğreneceğiz. Tamam mı?
+
+83
+00:13:32,576 --> 00:13:50,475
+Ondan sonra da Begin, Boosting gibi Ensemble, yani topluluk öğrenmemek yöntemleri var. Onları öğreteceğiz. Bunlar da ne işe yarıyor? Bizim doğruluğumuzu genellikle artırmaya yarayan yöntemler. Bunlar nasıl kullanılıyor? Bunları öğrenmiş olacağız.
+
+84
+00:13:50,475 --> 00:13:54,854
+Şimdi, işleyelim bakalım.
+
+85
+00:13:55,327 --> 00:14:20,268
+Dediğim gibi bugün üç tane şey var. İlk başta performans değerlendirme metriklerini, hani biz şimdiye kadar ne biliyoruz? Doğruluk oranını biliyoruz. Doğruluk oranının dışında başka metriklerini, onları öğreneceğiz. Ondan sonra performans değerlendirme metotlarını, biraz istatistikli yöntemler var, tezzi, testonasyon ama onları çok anlatmadan, drop eğrileri var, onlar neler, onlara bakacağız.
+
+86
+00:14:20,702 --> 00:14:27,702
+Biri ile ne yapacağız en sonunda da modeller nasıl karşılaştırılır? Birazcık ondan bahsedelim. Tamam mı?
+
+87
+00:14:27,702 --> 00:14:41,702
+Şimdi dedik ki, bizim bir modelimiz var, bunun performansını nasıl karşılaştırırız? Yani bir model var, tamam mı? Bir farklı parametrelerle çalıştırdınız, sonra başka parametrelerle modeli tekrar çalıştırdınız.
+
+88
+00:14:41,702 --> 00:14:47,702
+Ne yaparsınız? E-crisliye bakarız. Doğruluk oranına bakarsınız.
+
+89
+00:14:47,916 --> 00:15:04,615
+Tamam. Peki başka ne tip metrikler var? Şimdi onları öğreneceğiz. Okey. Ne yapıyoruz bir de? Yeni bir şey çıkıyor karşımıza. Yine şuradan anlatıyorum.
+
+90
+00:15:10,624 --> 00:15:37,723
+Şu bizim datamız olsun. Tamam mı? Şu da başka bir datamız olsun. Şimdi şu ne? Diyelim ki bu training set. Bu da ne setimiz? Test setimiz. Şimdiye kadar bunları öğrendik. Doğru mu? Doğru. Şimdi başka bir şeyden daha bahsediyorum. Nasıl yapıyorum?
+
+91
+00:15:38,272 --> 00:15:46,192
+Şimdi training setten bunun çalışması için training setten ne oluşturuyorum? Bir model oluşturuyorum.
+
+92
+00:15:46,192 --> 00:16:04,012
+Bir model oluşturuyorum. En son tam modeli oluşturduktan sonra ne yapıyorum? Test setten bir doğruluk bulmaya çalışıyorum. Tamam mı?
+
+93
+00:16:04,607 --> 00:16:27,067
+Şimdi testete sormamız için ne olması lazım? Bütün bu training işleminin bitmiş olması lazım. Değil mi? Peki model oluşturulurken, yani çoğu model iteratif çalışıyor. Tamam mı? Atıyorum. Ne kadar çalışıyor? İşte bin iterasyon çalışıyor, duruyor.
+
+94
+00:16:27,419 --> 00:16:35,619
+Bu model oluşturulurken benim modelim ne kadar iyi? Ben bunu görmek isteyebilir miyim? İsteyebilirim.
+
+95
+00:16:36,179 --> 00:16:40,559
+Bu yüzden üçüncü bir şey daha söylüyoruz. Yani üçüncü bir şey daha kullanılıyor.
+
+96
+00:16:41,318 --> 00:16:50,379
+Training setin, şurada başka bir renk kullanalım. Training setin küçük bir kısmını ayırıyoruz. Tamam mı?
+
+97
+00:16:54,751 --> 00:17:01,412
+Bu da ne? Validation dediğimiz doğrulama için kullanılan yöntem.
+
+98
+00:17:01,991 --> 00:17:09,771
+Yani bakın test seti kullanmam için benim tüm bu modeli oluşturup bilmem kaç iterasyon gidip en sonunda bakmam lazım doğruluğa.
+
+99
+00:17:10,092 --> 00:17:16,072
+Ama çoğu metot, mesela yapay sinir ağları gibi metotlar modeli zaten çok çok uzun çalışıyor.
+
+100
+00:17:16,172 --> 00:17:18,271
+Çalıştırdığımız süre bir sürü parametresi de var.
+
+101
+00:17:18,751 --> 00:17:29,351
+Çalıştırdınız, çalıştırdınız, 3 saat çalıştı. Görüntülerde çalışıyorsunuz diyelim ki. 3 saat sonra %60 çalışıyormuş demek insanın hoşuna gitmiyor.
+
+102
+00:17:30,072 --> 00:17:38,251
+Şimdi bunun yerine ne yapıyoruz? Daha hiç modelin tamamen, model yavaş yavaş oluyor değil mi? Yani bütün iterasyonlar bitmeden.
+
+103
+00:17:38,251 --> 00:17:46,031
+Diyelim ki her 30 iterasyonda bir modeli neyle oluşturuyorum? Şu training setten.
+
+104
+00:17:46,880 --> 00:18:12,220
+Şu kalan kısım yani artık training setimiz şöyle bir şey oldu. Tamam mı? Bunu oluşturduktan sonra her bilmem kaç iterasyonda bir, her iterasyonda bir de bakabilirsiniz. Validation setten küçük bir o andaki iterasyon için benim doğruluk oranım ne? Bunu hesaplıyorum. Tamam. Sonra ne yapıyorum? Şuradan devam ediyorum.
+
+105
+00:18:16,318 --> 00:18:33,979
+Hop hop. Nasıl bir şey bekliyorum? Hata oranımın ilk iterasyonlarda yükseklerden başlayıp, tamam mı? Giderek ne olması lazım? Düşmesi, sonra bir yerlerde de biraz böyle sabitlenmesini bekliyorum. Tamam mı?
+
+106
+00:18:34,619 --> 00:18:38,519
+Özellikle böyle modeliniz iyi çalışmıyorsa, rastgele bir şeyler buluyorsa.
+
+107
+00:18:39,050 --> 00:18:48,050
+Ne oluyor biliyor musunuz? Sizin datanız çalışırken bu validation da böyle böyle fluctuation'lar oluyor. Yani yükseliyor, artıyor, yükseliyor, artıyor.
+
+108
+00:18:48,470 --> 00:18:54,391
+Bakıyorsunuz böyle gidiyor, diyorsunuz ki burada bir yanlışlık var. Input'u yanlış vermiş olabilirsiniz, kodda hata yapmış olabilirsiniz.
+
+109
+00:18:54,931 --> 00:19:02,251
+Ta şu modelin oluşmasını beklemeden hop diye modeli durdurup bir hata var mı diye ne yapabiliyorsunuz? Bakabiliyorsunuz o sırada.
+
+110
+00:19:03,411 --> 00:19:05,451
+Tamam mı? Umarım anlaşıldı.
+
+111
+00:19:06,336 --> 00:19:10,436
+Şimdi buna da ne diyoruz? Validation set diyoruz.
+
+112
+00:19:12,031 --> 00:19:27,851
+Eskiden mesela data'yı ikiye ayırıyorduk ya, %80'ini train için, %20'sini test için diyorduk. Birçok metotla diyeceğiz ki mesela %20'si test, %15'i validation, kalan %65'ini training için kullan diyebiliriz.
+
+113
+00:19:27,851 --> 00:19:36,731
+Bu çoğu, yani bu şey en çok yapay sinir ağları gibi metotlarda validation'a ihtiyacımız var.
+
+114
+00:19:36,928 --> 00:19:56,928
+Yani karar ağaçları falan zaten çok çok yavaş çalışmıyor. Onlarda tüm modeli görmek isteyebilirsiniz. Çünkü onlarda daha sonra ağaç budandığı için birazcık performans da değişebiliyor. Ama yapay sinir ağları gibi şeylerde ne kullanıyoruz? Bir de beli değişim kullanıyoruz.
+
+115
+00:20:13,503 --> 00:20:15,183
+Demek ki bunu tek paylaşmışım.
+
+116
+00:20:17,583 --> 00:20:18,983
+Şimdi ne yaptık?
+
+117
+00:20:20,003 --> 00:20:21,003
+Yeni bir şey öğrendik.
+
+118
+00:20:21,843 --> 00:20:26,923
+Diyorum ki artık bir de validation has set diye geçebilir.
+
+119
+00:20:27,043 --> 00:20:29,343
+Direkt validation set diye de geçebilir.
+
+120
+00:20:29,343 --> 00:20:30,403
+Artık bir de ne yapacağız?
+
+121
+00:20:31,263 --> 00:20:34,782
+Performansı bakmak için bunu kullanacağız.
+
+122
+00:20:42,079 --> 00:20:44,859
+Evet, eğitim sırasında.
+
+123
+00:20:50,624 --> 00:20:57,604
+Evet, hele datanız da azsa ve kullandığınız metot, böyle çok şey değişmiyorsa mesela.
+
+124
+00:21:00,640 --> 00:21:22,840
+Evet, mesela Bayes kullanıyorsunuz, tamam mı? Bayes kullanıyorsanız eğer şey çok değiştirmez, yani mesela küçük bir kısmı da gördüm, görmedim, çok değiştirmez, çok parametresi de yok zaten. Dolayısıyla datanız hele bir de azsa hiç veli değişim falan kullanmanıza gerek yok. En çok veli değişimler de kullanıyoruz, yapay sinir ağlarında kullanacağız.
+
+125
+00:21:25,920 --> 00:21:36,779
+Hem hızlı çalışan hem de doğruluğun modele göre değişmediği mesela. Çünkü bu şeyde model tamamen hesaplama yapıyoruz.
+
+126
+00:21:36,779 --> 00:21:45,240
+Yani training setimiz var, orada bir şey öğrenmiyor, bir parametre öğrenilmiyor. O yüzden onlarda validation kullanmanın bir anlamı yok.
+
+127
+00:21:46,279 --> 00:21:52,360
+Şimdi performans ve biliyşim metriklere bakacağız ama şunu tanımını verdik. Sonra performansı nasıl?
+
+128
+00:21:53,152 --> 00:22:02,331
+Performans değerlendirme metotları ne? İşte birazcık bunlardan küçük küçük bahsettik aslında. Bunları bir toparlayacağız. Bunların isimlerini öğreneceğiz.
+
+129
+00:22:02,331 --> 00:22:16,550
+Cross validation'dan falan sözler olarak bahsetmiştik. Bunlar ne? Tekrar bunları göreceğiz. Sonra da diyelim ki iki tane farklı modeliniz var. Hangisi daha iyi? Birbiriyle nasıl karşılaştırırsınız? Bunlara bakacağız. Tamam mı?
+
+130
+00:22:17,291 --> 00:22:19,672
+Şimdi gelelim şuraya.
+
+131
+00:22:21,759 --> 00:22:36,220
+Bu confusion matrix, Türkçesi karmaşıklık matrisi. Tamam mı? Bu ne demek? Şimdi bunu anlamaya çalışalım. Dinleyin. Uyuyacaklar da uymasın. Uyanın. Tamam burası önemli.
+
+132
+00:22:37,220 --> 00:22:48,380
+Şimdi ben ne yapmaya çalışıyorum? Sınıflandırma yapmaya çalışıyorum. Değil mi? Dolayısıyla bunların gerçekten sınıflarını bildiğim değerler var.
+
+133
+00:22:48,736 --> 00:22:52,675
+Bir de benim modelimin ürettiği değerler var. Değil mi?
+
+134
+00:22:53,716 --> 00:23:01,996
+Diyelim ki şu mavi ile gösterilenler C ve C değil. Şöyle düşünün, bunlar iki sınıfmış gibi düşünün.
+
+135
+00:23:03,116 --> 00:23:07,956
+Tamam mı? Diyelim ki bu turu... Bir daha bununla yazmayalım.
+
+136
+00:23:11,807 --> 00:23:28,888
+Bu, diyelim ki artı, eksi gösteriyorduk ya, bu artı olsun, bu artı sınıfı olsun. Daha kolay anlatacağım. Bu da artı sınıfı olmayanlar, yani eksi sınıfı olsun. Mavi ile gösterdiklerimiz bunlar.
+
+137
+00:23:29,888 --> 00:23:39,368
+Şimdi, bunlar actual class, yani gerçek değerleri, var olan değerleri. Şimdi bir de benim modelim var. Modelimde ne yapacak?
+
+138
+00:23:40,672 --> 00:23:45,211
+Yine modelim diyecek ki ben bir şey verdiğim zaman bu artıdır, bu eksidir diyecek değil mi?
+
+139
+00:23:45,692 --> 00:23:51,132
+Kırmızılarda modelimin ürettiği artılar ve modelimin ürettiği eksiler.
+
+140
+00:23:51,132 --> 00:24:05,991
+Tamam mı? Şimdi şuraya baktığımız zaman, tablo olarak baktığımız zaman bu gerçekte artı olanlar ve benim modelimde artı dedikleri.
+
+141
+00:24:06,380 --> 00:24:33,140
+Yani benim doğru bulduğum artılar. Modelin doğru bulduklarını. Bunlara ne diyoruz? True pozitifler diyoruz. Çünkü bunlar artıymış. Benim modelimde ne bulmuş? Gerçekten bunları artı olarak bulmuş. Ne diyoruz? True pozitifler. Bunlar pozitifti. Ben de bunları doğru buldu. True pozitifler diyorum. Tamam mı? Şimdi gelelim şuraya.
+
+142
+00:24:33,632 --> 00:24:41,031
+Bakın bunlar gerçekte artıymış. Ama benim modelim bunları ne bulmuş? Bunlar artı iken,
+
+143
+00:24:43,031 --> 00:24:53,652
+bunları yazalım. Bunlar aslında artı iken model bunları ne bulmuş? Eksi olarak bulmuş. Değil mi?
+
+144
+00:25:01,344 --> 00:25:20,303
+Ama bakın kırmızılar ne? Predicted Plus'lar. Yani modelin predict ettikleri, tahmin ettikleri. Bunlar gerçekte artıymış ama model diyor ki bunlara eksi. Bunlara da ne diyoruz? Model bunlara ne dedi? Negatif dedi değil mi?
+
+145
+00:25:23,043 --> 00:25:27,523
+Şimdi bakın kırmızı modelin dedikleri. Model bunlara ne dedi? Eksi dedi.
+
+146
+00:25:28,511 --> 00:25:36,231
+Dolayısıyla bunlara model negatif diyor ama yanlış buldu. Dolayısıyla bunlara false negatifler diyoruz.
+
+147
+00:25:38,491 --> 00:25:42,152
+True pozitif kolay, pozitifken pozitif bulunanlar.
+
+148
+00:25:43,332 --> 00:25:51,011
+False negatif ne? Negatif bulmuş model ama yanlış, bu pozitif de aslında. Bunlara da false negatif diyoruz.
+
+149
+00:25:54,976 --> 00:26:04,095
+True, false, aslında asıl değerlendirme, sınıflar, artık sınıfta. Yanlış bulunuyor dediğimizde aslında false değil. Yanlış bulunuyorlar ne demek ki de öyle değil mi?
+
+150
+00:26:05,716 --> 00:26:16,396
+Yani abi, sözü gerekir. True, false sizin yaptığınız, şöyle kafanıza yazın. True ya da false sizin yaptığınız sınıflandırmanın doğru ya da yanlışlığı.
+
+151
+00:26:20,288 --> 00:26:39,067
+Ama bu false, yani yanlış. E bu eksi değilse nedir? Bu gerçekte artıdır. Tamam mı? Bunun değeri bu. Nasıl algıladığınıza göre. Tamam mı? Yani şey, bu ne olması gerekiyor gibi geliyor. Bu false pozitif olması gerekiyor mu gibi geliyor.
+
+152
+00:26:39,584 --> 00:26:49,004
+Değil ama. Tamam mı? Yani bu negatif, pozitif modelin bulduğu için kullanıyoruz. Çünkü ben onu görüyorum en sonunda. Yani modelin bulduğunu gördüğümüz için.
+
+153
+00:26:49,744 --> 00:27:06,163
+Şimdi, şunları silelim. Kolaydan başlayalım. Şuradan. Bakın, gerçekte neymiş? Negatifmiş. Benim modelimde bunu ne bulmuş? Negatif olarak bulmuş değil mi? Çünkü tabloya baktığımız zaman, gerçekte negatif.
+
+154
+00:27:06,508 --> 00:27:17,247
+Modelin bulduğu, bu da negatif. Dolayısıyla bunlar, tamam, model bana negatif verdi ve bu doğru. Dolayısıyla bunlara ne diyoruz? True negatifler diyoruz.
+
+155
+00:27:20,388 --> 00:27:26,548
+Kalk kalk kalk. Burası önemli evladım. Hep bunların üzerine gideceğiz şimdi. Burayı anlam, sonra uyum.
+
+156
+00:27:27,768 --> 00:27:32,208
+Şimdi gelelim false pozitiflere. Model ne demiş?
+
+157
+00:27:32,672 --> 00:27:44,791
+Pozitif demiş ama bu false. O zaman bu gerçekte ne? Eksi. Gerçekte eksi olup modelin pozitif bulduğuna ne diyoruz? False, pozitif diyoruz.
+
+158
+00:27:44,852 --> 00:27:57,812
+Bakın çünkü tabloya baktığımız zaman şurada ne var? Gerçek değerler var. Gerçekte bu eksiymiş. Model bunu ne buldu? Pozitif buldu. Değil mi? Model yanlış buldu. Dolayısıyla false, pozitif diyoruz.
+
+159
+00:28:02,208 --> 00:28:28,907
+Bakın, true pozitif ve true negatif ne demek? Yani true pozitif, pozitif buldun. True ama, tamam, gerçekten doğru buldu. True negatif, model negatif buldu. True olduğuna göre, tamam, bu gerçekten negatifti. Şimdi gelelim false negatif. False negatif ne demek? Model negatif buldu ama bu false yani yanlış. Demek ki bu gerçekte artıydı ama modelim buna eksi buldu. False pozitif ne demek? Model pozitif buldu.
+
+160
+00:28:29,599 --> 00:28:32,579
+Ama bu gerçekte neydi? Eksiydi.
+
+161
+00:28:33,579 --> 00:28:42,659
+True ya da false, sizin klasifier'ınızın, sınıflandırıcınızın, modelinizin doğru mu yanlış mı yaptığı diye aklınızda kalsın.
+
+162
+00:28:42,759 --> 00:28:45,519
+Pozitif, negatif de sanki klasiymiş gibi kalsın.
+
+163
+00:28:45,779 --> 00:28:47,259
+En kolay böyle öğrenirsin.
+
+164
+00:28:48,439 --> 00:28:49,879
+Şimdi hemen örnekle bakalım.
+
+165
+00:28:52,379 --> 00:28:53,179
+Bakamıyoruz.
+
+166
+00:28:54,751 --> 00:29:06,172
+Şimdi baksak da onlar çizilecek. Tamam. Şimdi burada o yazdıklarım burada var yine. Şimdi deminki tablomuz bakın burada mevcut. Değil mi?
+
+167
+00:29:16,736 --> 00:29:17,776
+Ben şunu açayım da.
+
+168
+00:29:21,728 --> 00:29:33,407
+Şimdi, hep bizim bir örneğimiz var değil mi? Geçen haftalarda kullandığımız işte yaşı şuysa, bilmem neyse işte bilgisayar aldı mı almadım. Tamam mı?
+
+169
+00:29:33,807 --> 00:29:42,388
+Diyelim ki biz bunda bir tane model öğrendik. Tamam mı? Ve modelin diyor ki bana confusion matrisi budur diye verdi. Bu ne demek? Hemen bakalım.
+
+170
+00:29:43,347 --> 00:29:48,307
+Bakın, bu buradakiler ne? Gerçek değerleri. Tamam mı?
+
+171
+00:29:48,895 --> 00:30:03,215
+Yani ilk sınıfındakiler gerçek değerler, şu ilk satırdakiler de modelin bulduğu değerler. Yani bunlar actual classlar, bunlar da prediktive. Yani model tarafından tahmin edilenler. Tamam mı?
+
+172
+00:30:06,576 --> 00:30:15,475
+Burası sadece teste yapılıyor. Confusion madresi tamamen testten çıkarıyoruz. Tamam mı? Training setten çıkartmıyoruz. Test setin confusion madresi.
+
+173
+00:30:16,991 --> 00:30:28,392
+Şimdi ne demiş bana? Bakalım, gerçekte 6954 kişi gerçekten bilgisayar almış. Benim modelim de bunları doğru tahmin etmiş.
+
+174
+00:30:29,892 --> 00:30:40,912
+46 kişi gerçekten bilgisayar almış. Ama benim modelim demiş ki bunlara, hayır bunlar bilgisayar almamıştır demiş. Burası ne? Yanlış.
+
+175
+00:30:41,407 --> 00:30:51,747
+Benim bilgisayarım, ne dedi benim metodum, modelim? Almamıştır dedi, negatif dedi. Değil mi? Diğer klas dedi. Ama bu ne yanlış? Dolayısıyla bu 46 kişine false, negatif.
+
+176
+00:30:53,387 --> 00:31:04,867
+Şuraya bakalım, daha kolay anlayayım diye. 2588 kişi gerçekten bilgisayara almamış, ne olmuş? Ve benim modelim bunu ne olarak tahmin etmiş? Değil mi?
+
+177
+00:31:05,695 --> 00:31:14,215
+Şu 410, yani bunlar true negatifler. 412 kişi de gerçekte bilgisayar almamış ama benim modelim demiş ki bunlar aldı demiş.
+
+178
+00:31:15,615 --> 00:31:19,434
+Değil mi? Dolayısıyla bunlar da ne? False, positive der.
+
+179
+00:31:20,815 --> 00:31:26,515
+Şimdi baktığımız zaman bir şey görmüş, bir şey dikkatimizi çekmiştir. Ne? Diagonal.
+
+180
+00:31:27,155 --> 00:31:32,635
+Diagonalda neler var? Doğru tahmin edilenler var değil mi?
+
+181
+00:31:33,036 --> 00:31:42,296
+Dolayısıyla şuradaki değerler ne kadar yüksek olursa ve şu değerler ne kadar küçük olursa şu dediklerim bu ve bu, diagonalda olmayanlar.
+
+182
+00:31:42,796 --> 00:31:50,656
+Ne demek? Benim modelimin başarısı o kadar yüksek demek değil mi? Peki satırı toplasak ne verir bize?
+
+183
+00:31:51,516 --> 00:31:54,115
+Mesela by computer yes olan şu satırı toplasanız.
+
+184
+00:31:54,720 --> 00:32:15,620
+Benim gerçek verimde kaç tane toplam yes var onu vermiş olayım. Toplam ben de işte altımdaki 4 artı 46'dan 7000 tane test setimde yes varmış. Şuradaki değerleri toplasanız da 3000 tane gerçekten bilgisayar almayan varmış. Bunlar gerçek değerler.
+
+185
+00:32:21,183 --> 00:32:37,344
+Aldı demiş. 2634 kişiye de almadı demiş. Tamam. Bakın şuradan baktığımız zaman şuradaki 366 kişi no iken bunlara ne demiş? Şu 366 kişiye yes demiş. Şuraya 366 yazacağım.
+
+186
+00:32:39,743 --> 00:32:43,344
+Tamam. Şuradan 366 kişilik şey.
+
+187
+00:32:43,872 --> 00:32:48,872
+Buraya kaymış. Model 366 kişiyi ne yapmış? Yanlış tahmin etmiş.
+
+188
+00:32:49,872 --> 00:32:51,072
+Değil aslında ya.
+
+189
+00:32:51,872 --> 00:33:03,672
+366 kişiyi ne yapmış? Aslında burada toplam yes 7000 ya. 366 kişiye fazladan yes demiş öyle.
+
+190
+00:33:04,872 --> 00:33:08,672
+Var evet o yüzden yanlış ifade etti ama şimdi kusaktım.
+
+191
+00:33:09,119 --> 00:33:28,559
+Yani toplam kaç kişiyi yanlış tahmin etmiş? 412 artı 46 kişiyi yanlış tahmin etmiş. Yesken no demiş veya no iken yes demiş. Tamam mı? Yani false pozitifler artı false negatif. Umarım anlaşılıyor. Hoppa. Tabii.
+
+192
+00:33:36,160 --> 00:34:02,660
+Tabii tabii yapıyorsunuz. Güzel soru. Şimdi diyelim ki bu hayvan örneği vardı geçen hafta. Hatırlıyor musunuz? İşte kuş, reptel, sürüngen bilmem ne diye. Şu olabilir. Bu da yesne olacak diye bir şey yok. Yine yazamayacağım için şunu alalım. Diyelim ki burası kuş sınıfı. Tamam mı? Burası da hop sürüngen sınıfı. Tamam mı? Dolayısıyla şurası da burası kuş, şurası sürüngen.
+
+193
+00:34:03,392 --> 00:34:05,511
+Bu neyi gösterir?
+
+194
+00:34:07,891 --> 00:34:18,011
+Şunu gösterir. Gerçekte 6054 tanesini kuşken kuş bulmuş, 46'sı gerçekte kuşken sürüngen olarak bulmuş.
+
+195
+00:34:18,470 --> 00:34:22,771
+Tamam mı? Yani illa yes no, evet, hayır, bir sıfır olacak diye bir şey yok.
+
+196
+00:34:22,771 --> 00:34:23,511
+Tamam mı?
+
+197
+00:34:26,251 --> 00:34:28,351
+Güzel soru, tamam sağ ol, ilk sordun.
+
+198
+00:34:31,168 --> 00:34:38,407
+Tabii ki. Şimdi öyle bir slide'ımız var. Sınıf sayımız arttıkça ne olacak? Multi-class'larda konfişim nasıl olacak onu da göreceğiz.
+
+199
+00:34:39,847 --> 00:34:50,847
+Şimdi peki E-Küresi'den bahsettim. E-Küresi neydi? Doğru bulduklarım bölü bütün hepsiydi değil mi? Yani yüzde kaçını doğru buldum aslında. Onu gösteriyordum.
+
+200
+00:34:50,847 --> 00:34:54,948
+Şimdi benim burada doğru bulduklarım nerede? Baktığım zaman.
+
+201
+00:34:56,063 --> 00:35:03,804
+Diagonalda true pozitifler ve true negatifler, bölü, tüm hepsi.
+
+202
+00:35:04,122 --> 00:35:10,282
+True pozitif, false negatif, false pozitif artı, true negatifler hepsi.
+
+203
+00:35:10,782 --> 00:35:15,103
+Neyi veriyor bana? Gördüğünüz üzere accuracy'yi veriyor.
+
+204
+00:35:15,844 --> 00:35:19,003
+Yüzde kaç doğrulukla çalışır? Bunu veriyorum.
+
+205
+00:35:20,702 --> 00:35:23,144
+Şimdi error rate dediğimiz şey de
+
+206
+00:35:24,384 --> 00:35:42,403
+Nedir? Bu ne doğruluk oranıysa? Bu da hata oranı. Yanlış bulduklarım. Yanlış bulduklarım hangisi? Şuradaki false negatif artı false pozitif bölü hepsi. Peki bunlar oran olduğu için şöyle bir şey yazabilir miyim?
+
+207
+00:35:45,983 --> 00:35:59,923
+Equis'i eşittir, bir eksi error rate. Bu olur mu, olmaz mı? Olur değil mi? Niye olur? Çünkü zaten şurada paya paya bak, paya ve paydasına baktığınız zaman.
+
+208
+00:36:00,447 --> 00:36:15,586
+Şunların toplumu zaten, yani ikisinin de paydası eşit. Burada true positive, true negative var. Burada false positive, false negative var. Dolayısıyla diyelim ki yüzde seksen doğrulukla çalışıyorsa sizin hata oranınız, error rate'iniz de nedir? Yüzde yirmidir.
+
+209
+00:36:16,887 --> 00:36:26,827
+Buna error rate'e misclassification rate, yani işte yanlış sınıflandırma oranı da denir. Tamam mı? Bunu da görürseniz çok şaşırmam.
+
+210
+00:36:26,827 --> 00:36:27,927
+Okey?
+
+211
+00:36:29,887 --> 00:36:36,627
+Şimdi işler karışacak hazırsanız. Şurayı silelim.
+
+212
+00:36:40,047 --> 00:36:49,807
+Şimdi bir şeyden bahsediyorum. Class imbalance probleme gelelim ama bunu örnek üzerinde göstermem daha güzel. Bekleyin.
+
+213
+00:36:50,127 --> 00:36:55,407
+Şimdi şuradan bakalım. Önce örnekte göstereceğim niye olmadığını sonra anlatalım.
+
+214
+00:36:57,952 --> 00:36:59,272
+Bir tane test var.
+
+215
+00:37:02,092 --> 00:37:03,052
+Tamam mı?
+
+216
+00:37:03,892 --> 00:37:07,652
+Ve bu test işte bir insan kanser mi değil mi gösteriyor.
+
+217
+00:37:08,152 --> 00:37:08,612
+Tamam mı?
+
+218
+00:37:08,612 --> 00:37:13,692
+Ve baktığım zaman elimdeki datada 300 tane kanser hastası var.
+
+219
+00:37:15,052 --> 00:37:19,211
+İşte 9700 tane de toplam kanser olmayan kişi var.
+
+220
+00:37:19,912 --> 00:37:20,392
+Tamam mı?
+
+221
+00:37:21,211 --> 00:37:22,692
+Şimdi bir model oluşturmuşum.
+
+222
+00:37:23,912 --> 00:37:24,532
+Modelim
+
+223
+00:37:25,568 --> 00:37:40,188
+yes'lerden 90 tanesine ne yapmış? Doğru demiş. Ondan sonra 9560 taneye de no iken no demiş. Şimdi ben bunu hesaplayacak olursam.
+
+224
+00:37:43,615 --> 00:38:04,536
+ekrisisi nedir? 90 artı 9560 bölü 10.000 mi? Değil mi? Peki bu ne eder? Yaklaşık %96'lık bir şey eder mi yaklaşık doğruluk? Şu modelimiz çok iyi çalışmış değil mi?
+
+225
+00:38:09,119 --> 00:38:13,599
+Sadece şuraya bakarsanız, benim modelim %96 çalıştı dersiniz.
+
+226
+00:38:14,599 --> 00:38:18,920
+Ama bakalım, amacımız zaten kanserlileri bulmak değil mi? Testin amacı o.
+
+227
+00:38:18,920 --> 00:38:27,099
+Zaten niye? Çünkü kanser orana baktığımız zaman kaç %3 gibi bir şey total popülasyonda.
+
+228
+00:38:27,579 --> 00:38:32,699
+Ama onların da ne yapmış? Yaklaşık 3'te birini ancak doğru bulmuş.
+
+229
+00:38:37,632 --> 00:38:40,912
+Hatta bak bazı modeller şöyle öğrenir, daha da abartayım.
+
+230
+00:38:41,912 --> 00:38:46,811
+Şimdi şurası 90 olmasın, 0 olsun. Tamam mı? Hop 90'ı sil.
+
+231
+00:38:48,152 --> 00:38:49,371
+Şurası da 300 olsun.
+
+232
+00:38:52,512 --> 00:38:55,871
+Yazamıyorum. Bu hocalar nasıl yazıyor ya bu şeysiz olmalı.
+
+233
+00:38:59,871 --> 00:39:04,311
+Şimdi bakın, datayı bozdum. Şöyle bir hale getirdim.
+
+234
+00:39:05,632 --> 00:39:20,791
+Benim modelim hiçbir yesi bulamıyor. Gerçekten kanser olanın kanser olduğunu bulamıyor. Bunların hepsini tutuyor. Ne diyor? No diyor. Tamam mı?
+
+235
+00:39:21,871 --> 00:39:29,710
+Peki, şu alt taraftakiler de böyle kalsın. Bu modelim böyle olsaydı benim doğruluk oranım kaç olurdu?
+
+236
+00:39:31,072 --> 00:39:44,092
+9.560 bölü 10.000 ben. Yaklaşık %95 olur muydu? Olurdu değil mi? Ama bakın bu hiçbir yesi bulamıyor zaten.
+
+237
+00:39:44,831 --> 00:39:55,911
+Aslında çok koditli bir model. Gerçekten hasta olanları bulamıyor. Hasta olmayanlar da çok çok bir azlık bir kısmına, neredeyse yüzde birlik bir kısmına hasta diyor.
+
+238
+00:39:56,470 --> 00:40:06,771
+Ama sadece ilk hülsüye bakarsanız ne var? Yüzde doksan beş. Yanlış mı hesapladım yüzde doksan beşi? Sorun ne o zaman?
+
+239
+00:40:16,479 --> 00:40:17,940
+0'a 0 nereden çıkaracağız?
+
+240
+00:40:23,903 --> 00:40:28,064
+Sadece buraya mı bakalım? Sadece şu satıra mı bakalım?
+
+241
+00:40:32,095 --> 00:40:32,696
+Aham.
+
+242
+00:40:36,320 --> 00:40:36,940
+Anladım.
+
+243
+00:40:42,367 --> 00:40:48,447
+Tamam olabilir ama buradaki problem ne? Yani niye böyle %95 eküosizleriniz nasıl bulamıyor? Buradaki başka bir problem var.
+
+244
+00:40:58,655 --> 00:41:09,016
+Aslında olan birinin hastalığı iletişimine çok büyük bir problem değil. Yani ciddiar durumda, asla olan birinin hastalığı iletişimine çok büyük bir problem.
+
+245
+00:41:09,576 --> 00:41:15,356
+Mesela atörümüzün daha çok şey, olsun evliliklere bakmamız gerekiyor.
+
+246
+00:41:15,675 --> 00:41:22,976
+Ama şöyle olsa, yes ile no'nun yerini değiştirebilirim. Yani bu kuş sürüngen örneği gibi düşün.
+
+247
+00:41:25,440 --> 00:41:30,679
+Anladın mı? Yani burada kuş, kuş, mesela kuşların hepsine gitti, sürüngen dedi. Yine aynı sorun var.
+
+248
+00:41:31,139 --> 00:41:35,940
+Diyesin o sorunun değil. İllaka yani az hastalık olacak gibi falan, Bayes'teki gibi değil.
+
+249
+00:41:36,380 --> 00:41:42,719
+Şu kuşların hiçbirini bulamadı, kuşların hepsine sürüngen dedi. Sürüngenlerin de birçoğunu sürüngen olarak zaten buldu.
+
+250
+00:41:42,719 --> 00:41:47,979
+Ne buradaki problem? Buradaki problem ne biliyor musunuz?
+
+251
+00:41:50,431 --> 00:41:56,970
+dengeli olmaması. Yani bakın benim training setime bakarsanız kaç tane yes var toplam?
+
+252
+00:41:58,751 --> 00:42:08,431
+300 tane. 10 bin tanenin sadece yüzde 3'ü yes sınıfına aitken yüzde 97'si no sınıfına ait.
+
+253
+00:42:08,431 --> 00:42:15,931
+Değil mi? Eğer datanız böyleyse ne olur biliyor musunuz? Genellikle modeliniz sizin
+
+254
+00:42:16,768 --> 00:42:26,607
+az sayıda olan sınıfımızı iyi bir şekilde öğrenemez. Neden? Çünkü zaten çok az var. Tamam mı? Buna ne diyoruz?
+
+255
+00:42:27,187 --> 00:42:37,647
+Data imbalance problemi diyoruz. Yani data'daki dengesizlik problemi diyoruz. Ama bu gerçek hayatta birçok yerde ne oluyor? Karşımıza çıkıyor. Tamam mı?
+
+256
+00:42:37,647 --> 00:42:40,487
+Şimdi baktığımız zaman plus'ta ne var?
+
+257
+00:42:41,728 --> 00:42:47,547
+Klasımızdaki sınıf sayılarında bir dengesizlik var.
+
+258
+00:42:49,311 --> 00:43:03,050
+Şimdi bunu, yani ne var? İşte birçoğu negatif kulasken az olanın pozitif kulası da olabilir. Genelde de bu merikal datalar da çok olabilir. Çünkü hastalık daha nadir görüldüğü için genel krala yaptığımız zaman.
+
+259
+00:43:03,710 --> 00:43:13,371
+Ya da işte bu Freud gibi olan olaylar var ya, diyelim ki datanızda, ya da atıyorum işte alıyorsunuzdur, alıyorsunuzdur, diyelim ki nabız alıyorsunuz. Tamam mı?
+
+260
+00:43:16,795 --> 00:43:36,655
+Atıyorum, düzensiz olmayan bir milyon tane varsa, düzensiz datamız 100-200 tane olabiliyor. Normal datada da oluyor. Ya da atıyorum, afet datası, dolu datası, dolu gibi şeyler çok az oluyor. Dolayısıyla böyle durumlarda datamız ne oluyor?
+
+261
+00:43:38,143 --> 00:43:45,184
+İmbalans olabiliyor. Şimdi imbalans data da nasıl metotlar geliştirebiliriz? Bunları sonra göreceğiz. Bugünün amacımız ne?
+
+262
+00:43:46,583 --> 00:43:56,463
+Datamız imbalans ise, yani datamız imbalans olmaması neyi gösteriyor bize? E-küresinin tek başına yeterli olmadığını gösteriyor değil mi?
+
+263
+00:43:56,992 --> 00:44:18,072
+Dolayısıyla ne yapacağız? Biraz ikinizden biri söyledi. Dediğinize geliyor. Tek başına ekürüsü yeterli değil. Başka metriklere ihtiyacım var. Tamam mı? Şimdi bir sürü metrik göreceğiz. Karışık gibi. Ama karışık değil. Tamam mı? Şimdi basit bir şekilde anlatmaya çalışacağım.
+
+264
+00:44:24,351 --> 00:44:49,031
+Tamam mı? O hassasiyet diye çevriliyor. Diğeri de specificity. Bu da duyarlılık Türkçesi. Tamam mı? Şimdi sensitivity ne yapıyor? Baktığımız zaman şöyle aklımızda tutun. Daha kötü bir renk alalım. Turuncu.
+
+265
+00:44:50,175 --> 00:44:57,456
+True pozitifleri, true pozitifler bölü, true pozitifler artı, false negatiflere bölüyor.
+
+266
+00:44:58,895 --> 00:45:03,375
+Yani yes'lerden kaçını doğru hesapladı?
+
+267
+00:45:03,476 --> 00:45:08,295
+Yani deminki kanser örneğinde 90 bölü 210'du ya, hatırladınız mı?
+
+268
+00:45:08,835 --> 00:45:11,254
+Ne çıkacak o zaman şeye, sense kripsi?
+
+269
+00:45:11,395 --> 00:45:14,655
+%50 gibi bir şey çıkacak, 90 bölü 210'dan.
+
+270
+00:45:14,655 --> 00:45:17,075
+Ama zaten sen bunu kafadan atsaydın.
+
+271
+00:45:19,007 --> 00:45:29,847
+Yok, direkt 300-300, pardon. Evet, çok pardon. Yüzde 30 gibi bir şey çıkacak. 91 artı kaçtı? Oradan baktığımız zaman. Tamam mı?
+
+272
+00:45:29,847 --> 00:45:36,407
+Tüm yani true pozitifleri tüm satıra bölüyoruz. Ne buluyoruz? Sensiz gibi buluyoruz. Tamam mı?
+
+273
+00:45:37,208 --> 00:45:44,647
+Şimdi bir şeyimiz daha var. Bu da ne? Specificity, yani duyarlılık. Bunda ne yapıyoruz bakın?
+
+274
+00:45:49,343 --> 00:45:54,464
+Bunda da true negatifleri alıp ne yapıyoruz? Yine satıra bölüyoruz.
+
+275
+00:45:54,564 --> 00:46:01,443
+Yani true negatifler bölü. Bu ne aslında? True negatif artı pozitifler.
+
+276
+00:46:02,204 --> 00:46:11,464
+Gerçekteki tüm negatifler değil mi? Yani aslında şurasını tüm negatiflere böldük değil mi?
+
+277
+00:46:13,863 --> 00:46:15,363
+Tüm negatifler.
+
+278
+00:46:15,710 --> 00:46:17,911
+Peki, şurası ne baktığımız zaman?
+
+279
+00:46:19,692 --> 00:46:20,970
+Hoppa, burası.
+
+280
+00:46:22,751 --> 00:46:24,871
+Burası da tüm pozitiflere denk geliyor mu?
+
+281
+00:46:31,552 --> 00:46:39,412
+Yani aslında true'u bulduğu pozitifler, tüm pozitiflerin yüzde kaçı, buna sensitivity diyoruz, tamam mı?
+
+282
+00:46:40,912 --> 00:46:49,972
+Specificity'de de negatifler, tüm negatiflerin yüzde kaçı, aslında accuracy'de bunları beraber değerlendirirken, burada ne yapıyoruz?
+
+283
+00:46:50,912 --> 00:46:54,412
+Pozitifleri kendi içinde, negatifleri kendi içinde değerlendiriyoruz.
+
+284
+00:46:55,164 --> 00:47:06,224
+Yani şu önemli, gerçekten hasta olan kişinin yüzde kaçına hasta demiş, bir de hasta olmayan kişilerin yüzde kaçına hasta değil demiş.
+
+285
+00:47:08,064 --> 00:47:12,384
+İçlerinde bunları bulmuş oluyor. Bunlar bunu tıkçılarda çok kullanıyor. Tamam mı?
+
+286
+00:47:12,843 --> 00:47:21,904
+Testlerde ya da işte kendi şeylerinde, diyelim ki radyologlar var, bilgisayardan bağımsız hastalık değerlendiriyorlar ya da patologlar.
+
+287
+00:47:22,367 --> 00:47:50,047
+Değerlendir, değerlendirdi ama şey var, doktorun şeyi değiştiriyor ya sonucu. Dolayısıyla işte aynı hastayı, bir aynı işte diyelim ki bin kişilik hasta var, bir bu doktor değerlendirdi, bir bu doktor değerlendirdi. Sonra gitti bir de başka bir test sonucu var. Aralarındaki bu şekilde farka bakıyorlar tamam mı? Her uzmanın işte yaptığı yani oradaki aslında classifier doktorun fikri olmuş oluyor. Buna göre onlar da bunu çok çok kullanıyor. Tamam mı?
+
+288
+00:47:50,558 --> 00:48:01,460
+Peki, size soru. Kuş sürüngen dedik ya, demin. Böyle olsa hangisi pozitifmiş, hangisi negatifmiş gibi nasıl anlayacağım?
+
+289
+00:48:02,019 --> 00:48:11,279
+Yani şöyle, soruyu daha düzgün sormaya çalışayım. Kuşu üstte yazsam, şuraya sürüngeni yazsam, diyeceğim ki, sensitivity'si atıyorum, %70'tir diyeceğim.
+
+290
+00:48:11,279 --> 00:48:18,019
+Ama değiştirdiğim zaman yerlerini, sürüngeni üstte kuşu altta yazdığım zaman, diyeceğim ki, sensitivity'si budur diyeceğim.
+
+291
+00:48:18,411 --> 00:48:19,210
+Nasıl olacak?
+
+292
+00:48:21,210 --> 00:48:23,092
+Niye? Ama değer değişiyor.
+
+293
+00:48:28,672 --> 00:48:45,252
+Spesifist oluyor değil mi? Dolayısıyla şeylerde, tool'larda vesaire birçok tool'da der ki, ikili yaparken hangisini pozitifmiş gibi almak istersin diye sorar. Tamam mı? Bu da aklınızda bulunsun.
+
+294
+00:48:45,871 --> 00:48:50,271
+Birazdan şey vekada gösteririm bunların nasıl olduğunu. Unutturmayın, unuttursam da unutturmayın, tamam.
+
+295
+00:48:51,912 --> 00:48:54,710
+Şimdi, ara istiyor musunuz?
+
+296
+00:48:55,052 --> 00:49:04,032
+Şunlar çıkınca, bir dakika, hadi bakayım belki ara, 58. Ara istiyorsanız söyleyin. Halimizden memnun istiyorsanız, ben memnunum.
+
+297
+00:49:07,744 --> 00:49:22,784
+Ne anladım? Hiçbir şey. Araya çıkalım. Tamam. Ne? Öyle dedim değil mi? Tamam kaç dakika istiyorsunuz? 10-15. İyi hadi 15 olsun o zaman. Çeyrek geçe görüşelim.
+
+298
+00:49:26,784 --> 00:49:33,103
+Sevgili online'lar. Ara veriyoruz 15 dakika. Çeyrek geçe görüşmek üzere.
+
+299
+00:49:35,231 --> 00:49:40,871
+Şöyle yapayım. Video diyor, beni görüyor musunuz? Bir dakika, bir dakika, bir dakika.
+
+300
+00:49:54,016 --> 00:50:21,476
+Bir şey demedim. Bir saniye şey alıyorsunuz. Tamam mı? Tasayı nereden buldunuz? Linkini. Ondan sonra işte datamızın basitçe işte kegleden aldınız ya da başka bir yerden aldınız. Tasayla ilgili netif çalışmalar yapılmış. Siz ne yapmayı planlıyorsunuz? Amacınız ne? Ona bakacağım, ona göre diyeceğim ki bu proje olur olmaz diyeceğim. Ben değiştir diyeceğim ya da bu az olur bak hani şunu da ekle diyeceğim ya da diyeceğim ki bu çok olur bunu yapamaktım. Bunu şey diyeceğim. Çıkart diyeceğim. Tamam mı? Yani öyle bir şey.
+
+301
+00:50:23,583 --> 00:50:26,403
+Bir kişi, biriniz, biriniz, biriniz iklese yetiyor.
+
+302
+00:50:28,963 --> 00:50:32,682
+Hocam, resimli, bir resim tutursak.
+
+303
+00:50:32,682 --> 00:50:33,643
+Olur.
+
+304
+00:50:33,723 --> 00:50:34,483
+Bir yapanlar var.
+
+305
+00:50:35,403 --> 00:50:36,202
+Ne yapacaksın?
+
+306
+00:50:36,522 --> 00:50:39,763
+Mesela Pokemon, hangi Pokemon onu bulmaya çalışacak?
+
+307
+00:50:40,182 --> 00:50:41,522
+Olur olur, zorlanmasın.
+
+308
+00:50:42,238 --> 00:50:50,238
+Tamam mı? Mesela filmde... Şey mi, koca filmde Pokemon'ı mı buluyorsun yoksa böyle kartlar var, üzerinde sadece Pokemon resimleri mi var?
+
+309
+00:50:50,238 --> 00:50:58,238
+Şimdi hangisini yani, o zorla göre filmin o resiminde de... Film çok zor olur, o da başka işler için içine girer ama resimler var.
+
+310
+00:50:58,238 --> 00:51:03,254
+Bu kim, bu hangisi, bu hangisi, bu hangisi diye mesela 10 tane varsa o zaman zor olmaz.
+
+311
+00:51:12,512 --> 00:51:14,392
+Onlar'lar kapatayım tekrar bağlanın, tamam?
+
+312
+00:51:23,827 --> 00:51:25,948
+Hadi bakalım, aldı gelmeymiş.
+
+313
+00:51:27,228 --> 00:51:27,908
+Gelmişti.
+
+314
+00:51:35,410 --> 00:51:37,631
+Bir kanınlarımız var.
+
+315
+00:51:40,730 --> 00:51:43,771
+Bu da sınıf. Online'lar el sallayın.
+
+316
+00:51:46,271 --> 00:51:49,550
+Harbiden sağladılar. Tamam, teşekkür ediyorum.
+
+317
+00:51:50,532 --> 00:51:54,651
+Arkadaşlar, haydi bakalım, başlayalım.
+
+318
+00:51:56,050 --> 00:51:59,032
+Online'lar siz de oturduğunuz yerde el sallayın arkadaşlar.
+
+319
+00:52:00,270 --> 00:52:01,550
+Online yatıyor.
+
+320
+00:52:02,016 --> 00:52:04,615
+Hadi bakalım, devam edelim. Nerede kaldık?
+
+321
+00:52:07,976 --> 00:52:08,935
+Kapatalım.
+
+322
+00:52:13,416 --> 00:52:23,455
+Dedik ki, E-Küresi bize özellikle datamızın imbalans olduğu durumlarda ne olmuyor?
+
+323
+00:52:24,536 --> 00:52:26,715
+Yeterli olmuyor tek başına.
+
+324
+00:52:26,715 --> 00:52:27,696
+Değil mi?
+
+325
+00:52:28,819 --> 00:52:48,259
+Ne dedik? O zaman iki tane daha metrik tanımladık. Bir tanesi hassasiyet, sensitivity. Ne yapıyoruz? True pozitifleri var olan tüm pozitiflere bölüyoruz. Yani true pozitiflere artı false negatiflere bölüyoruz. Tamam mı? Diğeri de ne? Specificsiyeler.
+
+326
+00:52:50,899 --> 00:52:52,360
+Siz söyleyin bakayım.
+
+327
+00:52:54,515 --> 00:53:21,875
+Spacificity. Duyarlılık. Bunda ne yapıyoruz? Burada da negatif olanlardan doğru bulduklarımızı tüm negatiflere bölüyoruz. Tamam mı? Anladık mı? En azından buraya kadar olanı anlayın. Şimdi işler karışacak. Niye? Şimdi buradan başka çok kullanılan iki metrik daha var. Tamam mı?
+
+328
+00:53:23,092 --> 00:53:39,672
+Şöyle yapacağız. İlk recall ile başlayacağız. Recall, sensitivity'nin aynısı. Hiçbir farkı yok. Yani true pozitifleri tüm pozitiflere yani true pozitif artı false negatiflere bölüyorum.
+
+329
+00:53:39,672 --> 00:53:49,490
+Yani sensitivity'nin bir adı da ne? Recall. Okey mi?
+
+330
+00:53:50,098 --> 00:53:58,560
+Tamam, burayı da öğrendik. Şimdi ne öğrendik? Ekülisi hariç 3 metrik daha öğrendik. Şimdi gelelim Precision'a.
+
+331
+00:53:58,560 --> 00:54:10,639
+Bak, şu yukarı atalım. Precision dediğimiz şey ne? Bu da ne yapıyor biliyor musunuz? Neyse, şöyle önce anlatayım.
+
+332
+00:54:19,252 --> 00:54:36,651
+Güzelim. True pozitifleri benim klasifierimin pozitif dediği hepsine yani şuraya bölüyorum. True pozitif artı false pozitiflere bölüyorum. Tamam mı? Bu da ne? Precision diyoruz buna da.
+
+333
+00:54:42,964 --> 00:54:50,103
+Bunun Türkçesi kesinlik gibi bir şey olabilir. Kesinlik. Kesinlik değil mi? Tamam.
+
+334
+00:54:51,303 --> 00:54:56,684
+Bakın, eğer true pozitifi şöyle aşağı doğru bölersek ne? Precision. Tamam.
+
+335
+00:54:56,684 --> 00:55:02,823
+Yani formülleri ezberlemeyin. Formülleri yani şöyle ezberleyin. Sensitri neden yapıyoruz?
+
+336
+00:55:03,162 --> 00:55:07,983
+True pozitifleri tüm var olan pozitiflere bölüyorum. Tüm var olan pozitifler nerede var?
+
+337
+00:55:08,404 --> 00:55:15,904
+True pozitifler artı false negatiflerde. Yani şu true pozitifleri şöyle şu satıra doğru bölüyoruz. Tamam mı?
+
+338
+00:55:15,904 --> 00:55:33,904
+Buna ne diyoruz? Recall sensitivity diyoruz. Peki, precision'da ne yapıyoruz? Şuradaki true pozitifleri aşağı doğru, benim plus firemın pozitif olarak bulduğu true pozitifler artı false pozitiflere bölüyorum. Tamam mı?
+
+339
+00:55:34,163 --> 00:55:37,642
+Böyle yaparsak Precision, şu tarafa doğru giderseniz Recall.
+
+340
+00:55:39,142 --> 00:55:41,803
+Bir tane de S-measure'ımız var.
+
+341
+00:55:42,564 --> 00:55:45,762
+Bu da aslında baktığımız zaman harmonik ortalama yaptığı şey.
+
+342
+00:55:45,904 --> 00:55:56,644
+Precision ile Recall'u tek bir kalemde, tek bir metrikte göstermeniz için 2x Precision x Recall bölü Precision artı Recall.
+
+343
+00:56:00,404 --> 00:56:07,144
+Şunu çok kullanmıyoruz. Bunu geçtim. Genellikle F1. F major ve F1 major kullanılıyor. Tamam mı? Şuraya şunu anlatmadım.
+
+344
+00:56:08,064 --> 00:56:24,824
+Şimdi hemen hızlıca bakalım. Bakamadık. Deminki örneğimiz. Hesaplayın bakayım. Açıkçıda kalem var. Söyleyin. Eccris'i nasıl beraber yapalım? Eccris'i nasıl hesaplayacağız?
+
+345
+00:56:28,180 --> 00:56:37,139
+Eccency'yi demin yaptık herhalde değil mi? Nasıl yapacağız? True pozitiflerle, true negatifler.
+
+346
+00:56:37,139 --> 00:56:53,199
+Yani 90 artı 9560, bu artı olmamış. Bölü 10 bin değil mi? Tamam. Error rate'imiz ne? Nasıl yapacağız?
+
+347
+00:56:55,603 --> 00:57:03,603
+Ya şunu birden çıkaracağız, ya bir eksi ekrisi diyeceğiz. Ya da yanlış bulduklarım. Yanlış bulduklarım nerede?
+
+348
+00:57:12,723 --> 00:57:13,122
+Ne?
+
+349
+00:57:16,122 --> 00:57:29,182
+210 hiç duymuyorum. Yanlış bulunanlar 210 yani false negatifler artı false pozitifler. 210 artı 140 yine böyle oldu.
+
+350
+00:57:31,124 --> 00:57:54,803
+Şu bölmeyi önce yapmayın. Burada parantez var gibi düşünün. Tamam mı? Sınavda böyle yapınca ben sizin puanınızı kırarsam, siz de hocam ama siz de derste böyle yapmıştınız diye itiraz etmeyin. Şurada parantez var, şunlarda ama siz görmüyorsunuz. Tamam mı? Sensivity'yi nasıl yapacağız? Sensivity'nin diğer adı neydi? Recall'du değil mi? Şurada. Neydi peki? Bu nasıl yapıyordu?
+
+351
+00:57:57,682 --> 00:58:09,343
+90 bölü, evet. Tüm pozitifler, tüm pozitiflerler de zaten şu satırda değil mi? 300. Peki, spesif, pisipiyi nasıl yapacağız?
+
+352
+00:58:13,343 --> 00:58:14,223
+Nasıl oldu?
+
+353
+00:58:18,228 --> 00:58:22,428
+Peki, evet, 9560 bölü, değil mi?
+
+354
+00:58:23,466 --> 00:58:24,168
+Yatamamışım.
+
+355
+00:58:28,206 --> 00:58:31,187
+9560 bölü, şunları karanteziye yazayım da.
+
+356
+00:58:32,247 --> 00:58:33,307
+9700 mü?
+
+357
+00:58:35,788 --> 00:58:39,687
+Çünkü burada negatifken negatif bulunanlar, değil mi?
+
+358
+00:58:40,067 --> 00:58:41,668
+Bu da neye eşit aynısı, tamam.
+
+359
+00:58:42,887 --> 00:58:44,228
+Neye eşitse neredeyse yüzde...
+
+360
+00:58:45,139 --> 00:58:55,199
+98, %99 falan bir şey çıkacak. Peki, precision'ımız neydi hatırlıyor muyuz? Aşağı doğru değil mi? 90 bölü 140.
+
+361
+00:58:59,699 --> 00:59:12,959
+90 bölü 90 artı 140. Tamam. Bir kolda neydi zaten? Sensizlik de aynıydı. Tamam. Okey miyiz? Herhalde okeyiz.
+
+362
+00:59:19,827 --> 00:59:46,747
+Tamam, bu da çözülmüş hallerim. Bakın baktığımız zaman Precision Verical ne çıkıyor? Yani oldukça düşük çıkıyor. Sensitivity %30 çıkıyor. Yani dolayısıyla böyle bir şey çıktığı zaman sadece ekrisiye baksaydık mükemmel modelim vardı diyecektik. Değil mi? Ama şunlara baktığımız zaman aslında modelimizin çok da iyi çalışmalarını ne yapabiliyoruz? Görebiliyoruz.
+
+363
+00:59:48,116 --> 00:59:54,736
+Evet, şimdi birinizin sorusu. Sadece iki tane sınıf yoksa, birden fazla sınıf varsa ne yaparız?
+
+364
+00:59:56,334 --> 01:00:01,455
+Şimdi ne oldu bakın? Confusion matrisimiz büyüdü. 2'ye 2'ydi değil mi?
+
+365
+01:00:02,236 --> 01:00:12,996
+Şimdi ne oldu? Deyim ki C1 sınıfı iken, gerçekten yine bunlar gerçekler, gerçek mavi ile gösterdikleri gerçek değerler, actual değerler kırmızılarda tahmin edilenler.
+
+366
+01:00:13,651 --> 01:00:31,651
+Şimdi C1 iken C1 bulunanlar şurada değil mi? Burası doğru. Burası 2 iken 2 bulunanlar. Burada M iken M bulunanlar. Diyelim ki M tane sınıfım var. Dolayısıyla diagonal'a baktığımız zaman ne var?
+
+367
+01:00:42,260 --> 01:00:52,619
+Hatalı şeyler. Mesela şurası ne demek? Aslında bu C1'miş ama ben bunu C2 olarak bulmuşum demek. Değil mi?
+
+368
+01:00:54,560 --> 01:01:07,160
+MİJ'de İ gerçek sınıfı, C'de tahmin edilen sınıf. Yani şurada M2 demiş ya, M sınıfı iken bu 2 olarak tahmin etmiş. Birazdan şu nokasyonu kullanacağız. O yüzden söylüyorum.
+
+369
+01:01:09,012 --> 01:01:11,512
+Şimdi aslında şeyi de bir göstereceğim.
+
+370
+01:01:11,512 --> 01:01:15,031
+Bakalım gösterebilecek miyim?
+
+371
+01:01:19,924 --> 01:01:39,123
+Şöyle açayım. Tekrar göstereyim. Şimdi Google'ı açtık. Ne yazdık? Yazamıyoruz. Matriks yazdım. Sonra da hop görsellere geldim. Hemen Zoom'dan da paylaştım ki diğer arkadaşlar da görsün.
+
+372
+01:01:43,603 --> 01:02:05,063
+Şimdi bakın, çok sınıf olduğu zaman, şuna bir tanesini tıklayalım. Kaç sınıf varmış burada? 1, 2, 3, 4, 5 sınıf varmış değil mi? Doğru mu? Burada da bakın ne yapmış? Aslında işte 198, 222 gibi değerler vermemiş de ne? Oranlarını vermiş. Gördünüz mü?
+
+373
+01:02:05,588 --> 01:02:14,127
+Yani şu satırın hepsini toplarsak ne çıkacak? Bir çıkacak. Her bir satır bir çıkacak. Çünkü sayıları okuması zor. Böyle yüzdesini anlamak birazcık daha kolay.
+
+374
+01:02:14,988 --> 01:02:28,348
+Ve ne yapmış? Renklendirmiş. Yani ne istiyorum? Aslında işte bu pembeye yakın olan şu diagonal'ımın pembe çıkarken diğer bütün karelerin aslında sıfıra sıfır gibi bir şey.
+
+375
+01:02:28,348 --> 01:02:32,448
+Yani çok daha açık bir mavi çıkmasını istiyorum değil mi? Siz bunu görüyor musunuz?
+
+376
+01:02:32,767 --> 01:02:34,267
+İlk bir de okunuyor gibi.
+
+377
+01:02:34,786 --> 01:02:34,887
+Tamam.
+
+378
+01:02:35,326 --> 01:02:37,467
+Yani genelde, peki bunu nasıl çiziyoruz?
+
+379
+01:02:37,607 --> 01:02:38,906
+Hazırı tool'larla çiziyoruz.
+
+380
+01:02:39,087 --> 01:02:40,806
+İşte konfijen matiz dediğiniz zaman.
+
+381
+01:02:41,227 --> 01:02:43,426
+Size otomatikman tool'lar bunu çiziyor.
+
+382
+01:02:43,566 --> 01:02:45,087
+Kendiniz de çizersiniz, podersiniz.
+
+383
+01:02:45,186 --> 01:02:45,786
+Çok zor değil.
+
+384
+01:02:46,247 --> 01:02:47,646
+Ama şeyi göstermek istedim.
+
+385
+01:02:48,686 --> 01:02:51,906
+Şu renkleri biraz, şu da fena değil.
+
+386
+01:02:53,806 --> 01:02:55,666
+Hatta böyle şeyler bile görebilirsiniz.
+
+387
+01:02:56,367 --> 01:02:57,666
+Bir daha tıklayalım.
+
+388
+01:03:02,771 --> 01:03:29,531
+Genellikle bu şekilde bir herhangi bir Color Map kullanarak, tamam mı? Hani bu yüzdelerini gösteriyor şu tarafa bakarsanız birden 0.8, 0.6 diye. Şurada çok çok küçük değerler var bu 0.06. Diğer taraflar hep 0'mış, beyaz beyaz. Tamam. Genellikle böyle renkli Confusion matrisleri de ne yapabilirsiniz? Eğer çok sınıfınız varsa bunları görürsünüz. Tamam mı?
+
+389
+01:03:30,291 --> 01:03:42,190
+Dediğim gibi burada bizim yaptığımızda hesapladığımız için değerler var ama bakın burada 0.57, 0.46 gibi neler var? Değerleri böyle bu şekilde yüzdesel olarak gösterir.
+
+390
+01:03:42,190 --> 01:03:45,210
+Tamam mı? Gelelim nereye?
+
+391
+01:03:48,791 --> 01:03:49,632
+Tamam, geldik.
+
+392
+01:03:50,411 --> 01:03:50,670
+Okey.
+
+393
+01:03:51,632 --> 01:03:53,670
+Şimdi ekürüsü nasıl hesaplayacağız?
+
+394
+01:03:54,642 --> 01:04:18,223
+Ecrise'yi hesaplamak kolay değil mi? Diagonaldaki hepsini toplayacağız. Bölü, bütün değerler diyeceğiz. Doğru muyum? Doğru. Peki error rate'i nasıl hesaplarsınız? Ya kalan hepsini toplayacaksınız diagonal hariç. Hepsine bölecek. Yani diagonal dahil hepsine böleceksiniz. Ya da bir eksi ekürise diyeceksiniz.
+
+395
+01:04:18,900 --> 01:04:26,680
+Bu da iyi. Peki, gelelim diğer metriklere. Precision'ı nasıl hesaplayacağız? Ya da recall'ı nasıl hesaplayacağız?
+
+396
+01:04:27,160 --> 01:04:35,459
+Recall'ı nasıl hesaplıyorduk? True pozitifler bölü cüm pozitifler. Yani true pozitifler artı false negatifler diyorduk.
+
+397
+01:04:35,459 --> 01:04:39,819
+Peki, burada nasıl hesaplayacağız recall'ı? Çok data var.
+
+398
+01:04:42,738 --> 01:04:58,498
+Her bir satır için, değil mi? Her bir sınıf için ayrı ayrı hesaplayacağız. Yani şurada C, İ diyor ya, değil mi? İ birken onun İ'ye İ'de bulunanı, yani kendi sınıfında true pozitifleri ne oldu?
+
+399
+01:04:58,498 --> 01:05:09,098
+Mesela şöyle anlatalım. Mesela İ birken C bir için recall hesaplıyorum. Tamam mı?
+
+400
+01:05:10,002 --> 01:05:22,262
+Nasıl hesaplayacağım? Doğru bulunanlar. Bunun true pozitifleri burada. Değil mi? Bölü hangisi? Şuradaki tüm satır. Tamam mı?
+
+401
+01:05:22,882 --> 01:05:34,262
+C2 için ne yapıyorum? True pozitifler neresi? Şurası. Değil mi? 2 iken 2 tahmin edilenler. Bölü, tüm satır. Böyle böyle gideceğiz.
+
+402
+01:05:34,262 --> 01:05:36,963
+Okey mi? Okey.
+
+403
+01:05:38,068 --> 01:05:52,068
+Bence okey, sizce de. Evet, her biri için ayrı ayrı recall bulacağız. Sonra da tabii ki de 100 tane sınıf varsa, böyle anlatmanın bir anlamı yok. Ne yapacağız? Ortalamasını alacağız. Tamam mı?
+
+404
+01:06:02,387 --> 01:06:06,007
+Yine precision'da ne yapıyorduk? Kolona doğru bölüyorduk. Değil mi? Hatırladık mı?
+
+405
+01:06:07,326 --> 01:06:17,546
+Sütun. M11 bölü neresi? Şunların hepsi. Tamam. M22 bölü bunların hepsi diyerek ne yapacağız?
+
+406
+01:06:17,546 --> 01:06:21,826
+Dipolu hesaplayacağız. Tamam. Peki size soru soruyorum.
+
+407
+01:06:23,252 --> 01:06:39,051
+Şimdi ortalama alacağım dedim ya, ortalama alırken ağırlık ortalama mı almam lazım yoksa düz ortalama mı? Anladınız mı? Yani şurada hepsinin bir değeri var değil mi? Class 1'de kaç tane var, Class 2'de kaç tane var? Yani hepsindeki sample sayısı farklı farklı.
+
+408
+01:06:40,651 --> 01:06:43,291
+Ağırlık ortalama alalım, normal mi?
+
+409
+01:06:46,964 --> 01:06:55,282
+Aynen öyle. Şimdi ama şunu da anlatayım. Tamam. Şimdi kalabilir. Önce şurayı anlatayım. Sonra şimdi bunu konuşalım.
+
+410
+01:07:00,212 --> 01:07:01,252
+But then, hmm?
+
+411
+01:07:03,051 --> 01:07:03,852
+What's the sound person?
+
+412
+01:07:09,332 --> 01:07:16,332
+Diyor ki, şey alırsak diyor, zaten az vardı, onu küçük sayıyla çarpacaktım ama istediğim o zaten.
+
+413
+01:07:19,311 --> 01:07:26,311
+Büyük sayıyla çarp. Ama o zaman ne olmuş olur? Ama datam az, ben onu göstermemiş olurum.
+
+414
+01:07:27,271 --> 01:07:30,132
+Neyse, şimdi göstereceğiz. Şimdi anlatalım, sonra konuşalım.
+
+415
+01:07:30,132 --> 01:07:32,892
+Şimdi ne yapıyoruz?
+
+416
+01:07:34,483 --> 01:07:47,503
+Precision ve Recall'u tamam. Tek tek hesapladık her bir sınıf için. Bunları iki farklı şekilde ne yapabiliriz? Birleştirebiliriz. Bir tanesi macro averaging, diğeri de micro averaging.
+
+417
+01:07:47,503 --> 01:07:58,723
+Macro averaging ile ne yapacağız? Her bir sınıf için bulup bulup direkt normal ortalamasını alıyoruz.
+
+418
+01:07:59,828 --> 01:08:19,328
+Şimdi, şöyle göstermek daha mantıklı. Direkt aldım hepsini. Satır satır, mesela bu satırdan precision'ı hesapladım. Bundan recall'ı hesapladım. Sonra da hepsinin normal ortalamasını aldım. Bu macroevredici. Ağırlık mağırlık, çarpma falan hiçbir şey yapmıyoruz.
+
+419
+01:08:27,026 --> 01:08:49,507
+Sonra da ne yapıyorsunuz? Ortalamasını alıyorsunuz. Yaptığımız bir şey yok. Şimdi gelelim micro-averaging'e. Bu birazcık daha farklı. Şimdi ne yapıyoruz biliyor musunuz? Her ikili için, daha doğrusu ikili denmez, her bir sınıf için sanki one versus olmuş gibi.
+
+420
+01:08:50,420 --> 01:08:57,420
+Çok güzel anlattım ama şimdi ben anlatacağım. Her bir, diyelim ki bu C1 kılası değil mi? C1 kılası için...
+
+421
+01:08:58,066 --> 01:09:20,468
+Sanki iki sınıf varmış gibi. C1, C1 değil gibi. İki sınıf varmış gibi. C1 olanlar ve C1 olmayanlar gibi. Bunu ikiliye getirdik. Sonra C2 için bir konfüjin matris daha yaptık. Yani her bir sınıf için böyle ikili, ikili, ikili, ikili konfüjin matris yapıyoruz. Tamam mı?
+
+422
+01:09:29,459 --> 01:09:37,620
+Anlamadım. Burada mı? A-a bunda hiç, o daha ortalama almadık. Tamam. Metoda?
+
+423
+01:09:39,826 --> 01:10:06,286
+Şimdi alacağız, durdur. Ortalama şurada yapacağız. Şimdi ilk başta, yani diyelim ki burada M tane sınıf varsa ne yapıyoruz? M tane confusion matrisi yapıyoruz. Ama confusion matrisi ne yapıyoruz? Diyelim ki bir için bire bir bulduklarım, true pozitif, tamam mı? Bir olmayanların hepsini yani ikiden M'e kadar olan tüm sınıflar sanki tek bir sınıfmış gibi onları da buraya ekliyoruz.
+
+424
+01:10:07,188 --> 01:10:19,307
+Tamam mı? Böylelikle kaç tane? M tane Confusion matrisini yaptık. Yaptıktan sonra bunların ortalamasını alıyoruz.
+
+425
+01:10:19,307 --> 01:10:26,218
+Tamam mı? Şurada TPI yani TruePositikleri buradan aldık. Aslında böyle yaptığımız zaman birazcık daha...
+
+426
+01:10:26,228 --> 01:10:33,747
+sayılar işin içine girmiş oluyor. Yani kaç adet olduğu mikro-average'de işin içine girmiş oluyor. Tamam mı?
+
+427
+01:10:33,747 --> 01:10:41,747
+Sonra da bu 10 tane şey var ya, 10 tane confusion maths var, onların ortalama. Tamam mı? Yaptığımız şey bu.
+
+428
+01:10:41,747 --> 01:10:51,026
+Şimdi burada da şey gösteriyoruz. Burada yani demin söylediğimizin örneğine bakalım. Birazcık daha kafamızda otursun. Bu mikro-average'deyiz hala.
+
+429
+01:10:51,188 --> 01:11:14,148
+3 tane sınıfım var, urgent, normal, spam. Tamam mı? Baktığımız zaman ilk başta urgent sınıfı için bakıyorum. 30 tane urgent var, 30 tane urgentken urgent olarak bulmuş. 10 tanesi aslında urgentmış ama bunların 7'sini normal, 3 tanesini spam olarak bulmuş. O zaman buraya ne yazdım? 10 yazdım. Tamam mı?
+
+430
+01:11:15,392 --> 01:11:27,272
+Peki, şeye bakarsak diğer tarafa. Normalde urgent olmayan ama benim urgent bulduğum 10 artı 5'ten 15 tane şey varmış. Buraya yazdım.
+
+431
+01:11:27,991 --> 01:11:35,872
+Sonra bir de aslında yine urgent olmayan ve benim urgent değil olarak normal ya da sistem olarak bulduğum.
+
+432
+01:11:36,276 --> 01:11:47,114
+40 artı 20 artı 15 artı 70 tane. Kaç eder? 85, 60 daha. 145 tane örnek varmış. Onu da buldum. Şuraya yazdım. Tamam mı?
+
+433
+01:11:47,114 --> 01:11:52,114
+Bu hangisi için? Urgent için Confusion Matrizi. Sonra aynı şeyi normal için yapacağım.
+
+434
+01:11:52,114 --> 01:12:03,276
+40 taneyi normalken normal bulmuşum. Değil mi? Ama 20 artı 10 taneyi normalken farklı iki klas olarak bulmuşum. O zaman buraya ne yazdık?
+
+435
+01:12:03,634 --> 01:12:19,134
+30 yazdım. Tamam mı? Şimdi şeye bakalım. Normal olmayan kaç tane var? Baktığımız zaman normal, şöyle bakalım.
+
+436
+01:12:20,515 --> 01:12:30,634
+Normarken normal bulduğum 40 tane var ama aslında normal olup da diğer sınıfta bulduğum 10 artı 20, 30 tane var. Onu da buraya yazdım. Tamam mı?
+
+437
+01:12:30,900 --> 01:12:53,640
+Şimdi gelip normal olmayanlara baktığım zaman ve benim normal dediğim 7 artı 15, 22 tane var. Değil mi? Ben bunlara ne demişim? Benim Pacification Metal'ım bunlara normal demişim ama bunlar normal değil. Değil mi? Post-Positive'ler. Geri kalanları da ne yaptık? Buraya yazdık.
+
+438
+01:12:53,950 --> 01:13:21,131
+Sonra spam için de aynı şeyi yapacağım. 70 burada olacak. Ondan sonra 5 artı 15. Bunlar neler? False negatifler. Hepsini yaptıktan sonra şu 30, 40, 70 var. Tamam mı? Şöyle göstereyim. Burada sigma'mız var. Ortalamamız yok. Buradan bunları yazdık hepsine. Tamam. Confusion maddesimizi oluşturduk. Sonra da buradan artık bu son kısımdan ne yapacağız?
+
+439
+01:13:23,092 --> 01:13:25,852
+Z-call, sensitivity onları hesaplayacağız.
+
+440
+01:13:27,072 --> 01:13:27,411
+Tamam mı?
+
+441
+01:13:29,411 --> 01:13:30,950
+Bu da micro-average.
+
+442
+01:13:38,930 --> 01:13:52,250
+Yüzde yetmiş.
+
+443
+01:13:54,516 --> 01:13:56,815
+İmbalans olduğunu nasıl anlayabiliyoruz?
+
+444
+01:13:57,115 --> 01:14:06,115
+Bu data imbalance mı? Aslında bakalım 40 tane urgent varmış, 70 tane normal varmış, 90 tane de spam varmış.
+
+445
+01:14:06,776 --> 01:14:12,696
+Yani şey kullanmıyoruz, bu sensifli, spesifli, illa imbalanssak, illa kullanacağız diye bir şey yok.
+
+446
+01:14:13,236 --> 01:14:16,155
+Bütün yöntem, yani bütün yöntemlerde buna bakıyoruz yine.
+
+447
+01:14:20,340 --> 01:14:26,199
+Evet, evet, onlara da yine bakıyoruz. Garanti olsun diye fix olarak.
+
+448
+01:14:31,892 --> 01:14:45,930
+Hem basitleştirmiş oluyoruz ama şöyle bir sıkıntısı var. Yes, no'ya geldik. Yani buradan tamam precision recall hesaplıyorum. Ama ben size şuradan bunu versem sadece şunu anlarız.
+
+449
+01:14:45,930 --> 01:14:55,572
+140 tanesinde spamken spam, urgentken urgent bir de normal miydi? Normalken normal bulmuş. Ama mesela bu 60'ın içinde ne var?
+
+450
+01:14:56,594 --> 01:15:12,036
+Tamam mı? Yani aslında bu 60'ın içinde de baktığım zaman false pozitifler var ama false pozitif derken bunun yüzde kaçı işte, bunun ne kadarı urgentdan gelmiş, nereden gelmiş onu bilemiyorum.
+
+451
+01:15:12,036 --> 01:15:19,776
+Tamam mı? Yani onu kaybetmiş oluyoruz ama daha kolay bir gösterim olmuş. Ne bozulmuş oluyor?
+
+452
+01:15:21,170 --> 01:15:23,250
+Tabii tabii, burada bozulmuş oluyor.
+
+453
+01:15:23,250 --> 01:15:26,651
+Bu da bir yalnız mesela, gördüküvermek için.
+
+454
+01:15:28,091 --> 01:15:32,510
+Hani böyle değil, bu da yanlış, bunu alakalıda, bu da o bulmuş bir kültür.
+
+455
+01:15:33,331 --> 01:15:38,430
+Mesela tabloda, röcunda 45 tane moğab var, yani yanlışken yanlış.
+
+456
+01:15:38,930 --> 01:15:40,950
+Ama gerçekten tablolar doğru değil mesela.
+
+457
+01:15:41,710 --> 01:15:43,071
+Bir daha söyle, normalde?
+
+458
+01:15:43,392 --> 01:15:47,632
+Normalde mesela, 40, 60, 20, 60, 60, 70'i, 45'e yazık ya.
+
+459
+01:15:48,468 --> 01:15:50,468
+Şurada mı?
+
+460
+01:15:50,468 --> 01:15:55,468
+Aslında bu da doğru bulmuş. Yani doğru bulmuş. Ama gerçekten doğru değil olamaz.
+
+461
+01:15:55,468 --> 01:16:08,468
+Ha evet, no iken no bulmuş gösteriyor ama aslında, ama şeye göre, urgent'a göre no. Urgent'a göre no ya, ona göre no buldu ama o no'nun içinde kendi içinde alt sınıflarda yanlış buldu. Alt sınıflarda evet.
+
+462
+01:16:09,106 --> 01:16:22,826
+Dediğin gibi. Ama urgent mi değil mi? Öyle baktığın zaman urgent değilken urgent değil buldun. Öyle düşününce de doğru. Ama bilgiyi kaybetmiş oluyoruz yani. Tamam. Ekstra bilgiyi birazcık kaybetmiş oluyoruz.
+
+463
+01:16:24,927 --> 01:16:30,386
+Tamam. Burada da şeyi gösteriyor işte. Aldık. Macro Average'de aldık. Ortalamasını aldık.
+
+464
+01:16:30,772 --> 01:16:36,450
+Micro Average'den bunu almıştık. Bakın ne oldu? Farklı çıkmış oldu. İkisinin de Precision'den.
+
+465
+01:16:36,450 --> 01:16:44,852
+Tamam mı? Yani bunu diyelim ki bir şey yaptınız, atıyorum Python'da scikit-learn'la yaptınız, sonra tuttunuz R'da yaptınız.
+
+466
+01:16:45,552 --> 01:16:54,651
+Tutup, aa bunların Precision'ları farklı çıkıyor, aynı metodu kullandım, bütün parametreleri aynı derseniz böyle küçük hesaplama farklarından olabilir.
+
+467
+01:16:55,092 --> 01:16:58,372
+Tamam mı? Yani o da aklınızda bulunsun. Tamam mı?
+
+468
+01:17:00,914 --> 01:17:05,975
+Şimdi, eyvah, niye eyvah? Tamam. Çünkü bir şey görmedim.
+
+469
+01:17:12,148 --> 01:17:17,847
+Tamamen şeyinize göre, yaptığınız çalışmaya göre çok büyük arada fark çıkmaz.
+
+470
+01:17:18,258 --> 01:17:40,298
+Ama şey, sadece şuna bakıyorum. İkisini de kullanmak mantıklı. Ama şunda sıkıntı olabilir. Bir metodu gittiniz, bir tool da denediniz. Başka metodu başka tool da denediniz. Bir tanesi fitifhanenin içinde makroaviric, öbürü mikroaviric hesaplıyorsa tamam mı? Hepsini aynı hesaplayın ki birbiriyle karşılaştırırken anlamlı olsun.
+
+471
+01:17:42,612 --> 01:17:56,372
+Orada önem kazanıyor. Yoksa arada çok işte yüzde çok büyük uçurumlar falan filan. Datanız çok imbalansla çıkabilir. Ama genellikle öyle şeyler yani çok nadir durumlarda arada büyük fark çıkabilir ama genellikle hiç çıkmıyor.
+
+472
+01:17:57,592 --> 01:18:05,670
+Çünkü datanız çok imbalansla zaten model bir şey öğrenmiyor. Hiç bulunuyor zaten o şeyi genellikle gerçek hayatta.
+
+473
+01:18:06,900 --> 01:18:15,559
+Şimdi, buraya kadar işimiz güzeldi. Niye? Sınıflar vardı, değil mi? O sınıfı doğru buldu mu bulmadı mı? Ona göre ne yapıyorduk? Karar veriyorduk.
+
+474
+01:18:17,539 --> 01:18:29,019
+Size soru, peki sınıflandırma yapmıyorsam, ben regresyon yapıyorsam, yani kontinyüz sürekli bir değer tahmin ediyorsam, nasıl hata bulurum?
+
+475
+01:18:34,738 --> 01:18:52,900
+gibi klasik yöntemlerle. Şimdi bakın eğer ki sınıflandırma yaptıysak bakacağımız şey accuracy, sensitivity, precision, recall, onlar ya da F1 major'ı tamam mı? Ama eğer sınıflandırma yapmıyorsam.
+
+476
+01:18:53,651 --> 01:19:13,450
+continuous, sürekli bir değer tahmin etmeye çalışıyorsam, sınıf yok. Yani sen 70.0'ı tahmin etmeye çalışıyorsun. Diyelim ki 62 tahmin ettim. Değil mi? Yani 62.7 tahmin ettim. Benim tahminim ne kadar iyi? Burada ne kullanıyoruz? Bir, mean absolute error. Yani tamamen...
+
+477
+01:19:14,642 --> 01:19:39,023
+Aradaki farka bakıyorum. Ama iki noktam yok benim. Niye benim böyle iki noktam yok bu kadar? Çünkü bir sürü tahmin yaptım ya, testletimde bir sürü şey var değil mi? Örnek var. Dolayısıyla olması gerekenden benim tahmin ettiğim değeri çıkartıyorum. Mutlak değerini de alıyorum ki sadece büyük de tahmin etsen, küçük de tahmin etsen aradaki uzaklığa bakmış oluyorum. Bunların da ortalamasını alıyorum.
+
+478
+01:19:39,603 --> 01:20:06,783
+Kaç örnek varsa? Bu absolute zaten mutlak değer demek. Ortalama, mutlak hata. Türkçesi böyle değildi, başka bir şeydi. Ama bunu M, A, E olarak ne yaparsınız? Görürsünüz her yerde. Tamam mı? Kısaca. Absolute erir. Bir de ne var bunun? Absolute veri kullanmayayım derseniz ne yaparsınız? Karesini alırsınız.
+
+479
+01:20:07,442 --> 01:20:33,284
+Bu da öklit uzaklık gibi olur. Uzaklıkları görmüştük ya bu Mannington distancedı. Ona benziyor. Bu da öklit uzaklığa benziyor. Aradaki farkın karesini aldık. Kaç helpsini aldık, topladık. Kaç tane de örnek varsa ona böldük. Eğer kontinist değerlerle çalışıyorsak mean atlet error, mean square error kullanıyoruz. Aslında sadece bunları kullanmıyoruz.
+
+480
+01:20:35,315 --> 01:20:39,434
+Bir de bunların işte yüzde verdiği vesaire vesaire şeyleri var.
+
+481
+01:20:40,834 --> 01:20:46,055
+Farklı yöntemler de var ama onlar da genellikle bu ikisi üzerinden.
+
+482
+01:20:47,394 --> 01:20:47,934
+Tamam mı?
+
+483
+01:21:02,036 --> 01:21:27,615
+Şimdi birinci kısım bitti. Performansa nasıl bakarız? Gelelim ikinci kısma. Performans değerlendirme. Yani ne yapacağız? Benim bir metodum var. Tamam mı? Şimdi grafiğe bakıyorsunuz. Burada sample size yani training setinizin büyüklüğü. Yani burada işte on, yüz, bin diye gidiyor. Burada da ekürsiniz var. Tamam mı?
+
+484
+01:21:28,372 --> 01:21:43,852
+Şimdi baktığımız zaman, şurada elimde hata oranları, hata demeyelim, doğruluk oranlarım var, tamam mı? Çok az bir örnekle çalıştırmışım, tamam mı? Birkaç örnekle.
+
+485
+01:21:44,340 --> 01:22:11,498
+%60, sonra bakın 10'a geldiği zaman birazcık daha artmış, işte % birazcık daha artmış, böyle böyle gidiyor. Sonra bir yerden sonra, binden sonra ne oluyor? %90'la yaklaşıyor ama çok daha değişmiyor. Değil mi? Şimdi bunu neye göre çizmiş? Farklı boyutlarda her seferinde modeli oluşturmuş, teste sormuş. Modeli oluşturmuş, teste sormuş her seferinde değil mi? Her bir veri boyutu için.
+
+486
+01:22:12,498 --> 01:22:31,179
+Şimdi, bir modelin performansını tamam, accuracy, sensitivity vs. vs. dedik. Bir de neye bakabiliriz? Sınıflar nasıl dağılmış, ondan sonra training setim, test setim doğru oranda dağılmış mı gibi şeyler de ne yapabilir? Bunu etkileyebilir.
+
+487
+01:22:31,179 --> 01:22:39,179
+Burada ne görüyorsunuz? Burada learning curve dediğimiz, buna eğitim eğrisi.
+
+488
+01:22:39,518 --> 01:23:05,518
+gibi şeyler söylenebiliyor. Burada örnekle beraber, yani siz eğer elinizde çok data varken, bakın şurada, %90'a yaklaşmak yerine az bir data kullansaydınız ne olacaktı? %80'lerde doğrultunuz kalacaktı. Değil mi? Mesela. Genellikle training data da şöyle gider ve bir yerden sonra doyuma ulaşır. Tamam mı? Training data da boyutunuz.
+
+489
+01:23:06,450 --> 01:23:07,651
+Doğal kılıkta bulunur.
+
+490
+01:23:09,190 --> 01:23:11,591
+Şimdi, peki, gelelim şu kısma.
+
+491
+01:23:15,190 --> 01:23:18,190
+Modelinizi oluştururken, tamam mı?
+
+492
+01:23:18,930 --> 01:23:21,911
+Hold out dediğimiz bir yöntem var, bu ne?
+
+493
+01:23:22,871 --> 01:23:31,911
+Genellikle bizim kullandığımız yöntem, yani hani demiştik ya datamızın %80'iyle atıyorum model oluşturuyorsak, falan %20'siyle ne yapıyoruz?
+
+494
+01:23:32,786 --> 01:23:43,927
+Test ediyoruz dedik, değil mi? İşte bu, holdout metot diye geçiyor. Testimiz hiçbir şekilde, test datamız hiçbir şekilde, train datamızın içinde olacak mı? Hayır, olmaması lazım.
+
+495
+01:23:43,927 --> 01:23:53,606
+Tamam mı? İşte genellikle iki bölü üçü ya da işte yüzde datamıza göre değişir. Tamam mı? Ama büyük bir kısmını ne yapıyoruz? Train'de kullanıyoruz.
+
+496
+01:23:54,247 --> 01:23:56,707
+Burada da ne demiştik? İşte datayı seçerken.
+
+497
+01:23:57,038 --> 01:24:18,179
+içinden random seçmek önemlidir. Çünkü datanız, yani diyelim ki datanız yıl bazında toplanmış olabilir. Çok eski yılların datasıya tren edip sonra son yıllardaki datayı da test olarak bulunursanız ne olur? Farklı farklı şeyleri ignore etmiş olursunuz. Hata oranınız büyük olabilir falan filan. Ben bunları söylemiştim.
+
+498
+01:24:18,939 --> 01:24:23,838
+Şimdi bir de şöyle bir şey var. Random sampling diye bir şey var.
+
+499
+01:24:24,190 --> 01:24:40,111
+Ne yapıyoruz biliyor musunuz? Holdout'u yani Holdout yapacağız ve yani yine datamızın atıyorum iki bölüm içinde train için kullanacağız. Bir bölüm içinde ne için kullanacağız? Test için kullanacağız. Tamam mı?
+
+500
+01:24:41,551 --> 01:24:47,371
+Train datamı ayırıyorum. Yani test datam yine ayrı bir şekilde duruyor. Tamam mı?
+
+501
+01:24:47,476 --> 01:25:01,276
+Ama trend datasının içinden hepsiyle değil de bir kısmıyla modeli öğreniyorum, random seçtim. Tamam mı? Sonra işte birkaç iterasyon sonra random başka data seçtim, tekrar çalıştırdım. Bunu şeyde çok kullanıyoruz.
+
+502
+01:25:01,696 --> 01:25:25,756
+Mesela yapay sinir ağlarında çok kullanıyoruz. Niye? Çünkü zaten çok büyük datayı aynı anda train etmeniz mümkün değil. İçinden random samping yapıyoruz. Yani train datasının içinden atıyorum, işte 100 taneyi seçtiniz, onunla birkaç iterasyon çalıştırdınız. Sonra başka 100 tane seçtiniz, onunla birkaç iterasyon çalıştırdınız şeklinde gidiyor. Tamam mı? Aklımızda böyle kalsın.
+
+503
+01:25:29,620 --> 01:25:40,319
+Normal yaptığımız şey holdout, evet. Yani datayı böldün, dedin ki %80'i tren için kullan, %20'i test için kullan dedin. Tamam, test datasını hiçbir şekilde treninde kullanmıyorsun, bu holdout.
+
+504
+01:25:40,319 --> 01:25:41,120
+Tamam mı?
+
+505
+01:25:43,620 --> 01:25:47,819
+Şimdi cross validation'a gelelim. Bu ne? Çapraz doğrulama.
+
+506
+01:25:47,819 --> 01:25:49,819
+Ne yapıyorum?
+
+507
+01:25:50,388 --> 01:26:16,667
+Burada bir parametreye karar vermem lazım. O da ne? Datamı kaç parçaya ayıracağım? Tamam mı? Kaç kümeye ayıracağım ya da kaç fold'a ayıracağım? Genelde fold olarak geçelim. Yani kfold dedi. Mesela k3 ise tamam mı? 3 fold diye geçer. Datayı 3'e ayırdım. Ne yapıyorum? 3 eşit parçaya. Tamam mı? Eşit olmak zorunda değil de yani şey. Bir artı bir eksi olabilir data tek seçirse.
+
+508
+01:26:17,076 --> 01:26:39,995
+Şimdi kümelerim, yani 3, 6 küme gibi düşünün. S1, S1, S1, S1. Şöyle yapıyorum. İlk iterasyonda 2 ile 3'ü train için kullandım. Sonra S1'i test için kullandım. Tamam mı? Bir yere etürüsü vs. onları kaydettim. Bir sonraki aşamada
+
+509
+01:26:41,011 --> 01:27:00,651
+1 ve 3'ü train için kullandım, 2'yi test için kullandım. En sonda da 1 ve 2'de train ettim, 3'ü test için kullandım. Ne oldu? Her bir fault bir kere train oldu, özellikle bir kere test oldu, en eksi bir kere de train olmuş oldu.
+
+510
+01:27:00,910 --> 01:27:02,951
+Niye böyle bir şey yapıyoruz ki? Ne gerek var böyle bir şeye?
+
+511
+01:27:09,044 --> 01:27:33,283
+Evet, onları da ortalaması. Ne oldum, ekürüsim budur dedim. Bunu niye ne zaman yapıyoruz biliyor musunuz? Datamız çok azsa. Tamam mı? Peki, size soru. Diyelim ki benim datasetimde n tane obje var, yani n tane satır var. Tamam mı?
+
+512
+01:27:33,647 --> 01:27:37,107
+Peki, en koltuk bir şey yaparsan ne demek bu?
+
+513
+01:27:42,163 --> 01:27:42,663
+Nie?
+
+514
+01:27:49,844 --> 01:28:11,643
+Niye? Yani diyelim ki N100 olsun. Tamam mı? 100 tane satırım var. Tamam mı? Yani 100 voltluk bir şey yapacağız. Her seferinde bir tanesi test olacak. Kalan 99'u train olacak. Olmaz mı böyle?
+
+515
+01:28:16,852 --> 01:28:36,951
+Tüm datayı ayırıyoruz. Geri kalın. Çok yavaş çalışır. Çünkü niye? Bir kere model edeceğimi, yüz kere model edeceğim. Değil mi? Ama böyle bir şey yapıyoruz. Yani kullanılıyor. Niye? Bazen elimizde çok az data oluyor. Tamam mı?
+
+516
+01:28:37,364 --> 01:29:03,623
+Şimdi diyeyim ki benim 100 tane datam var ama çok değerli bir datam. Bir şekilde bir şey öğrenmeye çalışıyorum. Şimdi ben bunun %70'ini train, %30'unu test desem datam %70'e inecek. Belki modeli çalışmayacak. Tamam mı? Data az olduğu için. Böyle yaparak en azından elimdeki maksimum datayla train yapmaya çalışıyorum. Tamam mı? Buna da ne deniyor biliyor musunuz? Bunun da biraz özel bir adı var.
+
+517
+01:29:04,980 --> 01:29:10,279
+leave one out deniyor. Leave one out, cross validation.
+
+518
+01:29:13,660 --> 01:29:19,379
+Derin öğrenmede falan filan kullanamazsınız ama az datan, datanız azsa ne yapıyorsunuz?
+
+519
+01:29:19,719 --> 01:29:23,040
+Leave one out yapıyorsunuz. Ne yapıyorsunuz? Enfold'a bölüyorsunuz.
+
+520
+01:29:28,243 --> 01:29:33,363
+Etmiyoruz. Diyelim ki bak şöyle, benim 10 tane, çok kötü bir sayı.
+
+521
+01:29:35,803 --> 01:29:36,964
+Parmağım 5, tamam.
+
+522
+01:29:38,984 --> 01:29:49,984
+Tamam mı, datam var, tamam mı? 100 tane datam var, hatta 1000 tane datam var. Tamam mı? 5 kümeye ayırdım. 5 kümeye ayırdım. Bu birinci küme, 1000 mi dedim en son?
+
+523
+01:29:50,723 --> 01:29:55,323
+200 burada, 200 burada, 200 burada, 200 burada, 200 burada. Tamam mı?
+
+524
+01:29:55,794 --> 01:30:20,116
+Şimdi beş kere train yapacağım. Şimdi ilk train'de birincisi test oldu. Şu dört taneyi train ettim. Oluşturduğum modeli, bunu hiç kullanmamıştım ya, buna sordum. Sonra ikinci iterasyon bu sefer bu test oldu. Bu geri kalan dört tane train oldu. Bu dört taneden model oluşturdum. Buna sordum. Tamam mı?
+
+525
+01:30:20,531 --> 01:30:40,991
+Şimdi üçüncüsü test oldu. Bu kalan dördü train oldu. Buna sordum. Five-polt yani beş şey var ve beş her seferinde hepsi teker teker test olacak. Böylelikle her bir polttaki her bir datam testin içinde kullanılmış olacak. Ve ben neyden emin olacağım? Şöyle bir şey olmayacak.
+
+526
+01:30:40,991 --> 01:30:44,951
+Çünkü modelimi çalıştırdım train'de sonra testte çok iyi çıktı.
+
+527
+01:30:45,332 --> 01:30:58,332
+Ama belki datanız azsa bir de, testte çok böyle ayrılabilir datalar vardı. Tamam mı? O yüzden testte iyi çalıştı. Böyle her bir fold'un ekrisisi birbirine yakınsa...
+
+528
+01:30:58,964 --> 01:31:25,143
+Tamam, oluşan model iyidir. Datamızın dağılımı falan filan iyidir. Ama şöyle olabilir, rastgele mesela şu beşinci de çok bulunması zor, outlier'lar vesaire gelmiş olabilir. Tamam mı? Dolayısıyla bu değer dördü testken, ekürüsü yüksekse, yüksekken, bununki düşük çıkabilir ama ortalamasını aldığımız için. Anladın mı? Bunu görmüş olacağız. Ama eğer hiç bunu yapmasaydım, holdout yapsaydım.
+
+529
+01:31:25,488 --> 01:31:38,428
+modeli çalıştırsaydım %80'i, şu 4'ü play, şu kayı kalan %20'si test edeseydim ve bu testin içinde de çok böyle outlier'lar vs. olsaydı, bu sefer de ekür isim yanlış report edecektim.
+
+530
+01:31:39,428 --> 01:31:50,167
+Böyle yapınca, cross-validation yapınca ne yapmış oluyoruz aslında? Birazcık daha tüm datayı aslında hem trail hem de test olarak parça parça parça parça kullanmış oluyoruz.
+
+531
+01:31:56,212 --> 01:31:59,352
+Değil, o başka bir yöntem bu site'in sonunda. Değil.
+
+532
+01:32:03,051 --> 01:32:07,892
+Güzel, tamam. Diyor ki tek model çıkmıyor mu? Genellikle şöyle yapılıyor.
+
+533
+01:32:08,011 --> 01:32:14,152
+Bu beş tane model oluşturdum ya, hangisi en iyisi onu alıyor. Onu size veriyor yani.
+
+534
+01:32:30,995 --> 01:32:42,794
+Onlardan işte ya bir sıfırız ya ama bir taneye sormuyorsun. Bir taneye soruyorsun onlardan bir tanesini seçiyorsun. Bir tanesini seçiyorsun. Yani iyi verenlerden bir tanesini seçiyorsun.
+
+535
+01:32:54,196 --> 01:33:20,114
+Testi hiç treyine katmıyoruz. Bakın, testi treyine katarsanız başarımınız artar. Tamam mı? Ama o da gerçek dünyada modeliniz iyi çalışmaz. Testi treyine katmıyorum. Mesela burada 3'e böldüm ya. Mesela ilkinde şurada S1 test. Sadece treyini S2 ve S3'te yapıyorum. S1 testte bunu soruyorum. Buradan hesaplıyorum doğruluğunu.
+
+536
+01:33:28,788 --> 01:33:33,388
+Hepsinde ayrı model oluşturuyorum. Her seferinde training modeli oluşturuyorum. Çünkü datam değişiyor.
+
+537
+01:33:34,768 --> 01:33:35,147
+Tamam mı?
+
+538
+01:33:37,506 --> 01:33:40,187
+Genelde de şöyle oluyor. Şimdi şöyle söyleyelim.
+
+539
+01:33:41,087 --> 01:33:47,667
+Live One Out ne için kullanılıyor? Live One Out gerçekten datam azsa nasıl çalışıyor?
+
+540
+01:33:47,808 --> 01:33:51,248
+Hani 99'dan bir model oluşturayım diye kullanılıyor ya.
+
+541
+01:33:51,698 --> 01:34:10,779
+Yani leave one out yaptınız, tamam. Datanızı maksimum bulansaydınız, diyelim ki %93 çıktı. Tamam mı başarınız? Yani baktınız fold'lara, %93'e buldunuz. Maksimum bu oldu. Sonra indirin biraz datanızı. Şöyle yapın, %90'ını train yapın, %10'unu test yapın.
+
+542
+01:34:11,102 --> 01:34:24,123
+Tamam mı? Modeli oluşturun. Eğer ekürsisi yüksekse o modeli kullanın. Biraz daha düşürün. Yani aslında yapmaya çalıştığımız şey şu. Bir dakika. Şu ilk bir grafiğimiz vardı ya.
+
+543
+01:34:26,123 --> 01:34:29,123
+Yani aslında şey size...
+
+544
+01:34:29,392 --> 01:34:56,310
+Live One Out size datanız maksimum iken, elinizde data az ya, ulaşabileceğiniz maksimum doğruluğu gösterecek. Tamam mı? Sonra datayı azaltarak, azaltarak, bakın bakalım, belki yüzde seksen beşle train edip, yüzde on beşle test yapsaydınız da aynı, çok yaklaşık bir doğruluğa ulaşıyor olabilirdiniz. Tamam mı? Onu da yüzde seksen beşle oluşturduğunuz modelde ne yaparsınız? Tabii ki kullanabilirsiniz. Böyle böyle bakarak gideceğiz.
+
+545
+01:34:57,683 --> 01:34:59,042
+Bir kere yapıp bırakmayın.
+
+546
+01:35:07,475 --> 01:35:33,931
+...
+
+547
+01:35:34,995 --> 01:35:40,594
+Ama şöyle yapıyoruz, bir label var, hepsinin her seferinde farklı sorduk, sorduk, sorduk, ortalamasını aldık.
+
+548
+01:35:44,531 --> 01:36:09,651
+Ama modeller şöyle düşünün. Model doksan dokuz taneden oluşuyor. Tamam mı? Doksan dokuz tanenin sadece bir tanesi farklı. Yani doksan, Livvan altta tamam mı? Birinci ve ikinci iterasyon olsun. Tamam mı? Bununla bunun arasında ikisinde de doksan dokuz tane train örneği var.
+
+549
+01:36:10,067 --> 01:36:23,348
+Ve sadece içlerinden bir tanesi farklı. Dolayısıyla bu ikisinin oluşturacağı model birbirine çok benzer oluyor. Anladınız mı? Yani o yüzden de çok bir şey fark etmiyor.
+
+550
+01:36:30,515 --> 01:36:51,776
+Modeller birbirine çok yakın, tamam mı? Aynı da çıkabilir, yani aynı da çıkabilir. Orada max, yani çok çok yakın oluyor ama amacım şu, yani Live One Out'taki amacım şu. Şimdi eğer, şurada göstereyim, datam zaten çok az, tamam mı? Eğer ben bunu hold out yapsaydım diyecektim ki yüzde seksenleri falan bulacaktım, tamam mı?
+
+551
+01:36:52,147 --> 01:36:56,448
+Ama azıcık daha data ekleyerek en azından ne yapmaya çalışıyorum?
+
+552
+01:36:56,567 --> 01:37:03,207
+Yüzde bunun doksana yaklaşabileceğini ve elimde biraz daha data olsa daha iyi çalışabileceğini göstermeye çalışıyorum.
+
+553
+01:37:04,207 --> 01:37:06,687
+Dolayısıyla şu model tabii ki bundan daha iyi.
+
+554
+01:37:06,687 --> 01:37:15,527
+Yani şurada bulduğumuz model ve yüzde doksan dokuzluğuyla sadece bir tane beşli için modeller zaten birbirine çok yakın.
+
+555
+01:37:15,607 --> 01:37:17,227
+Hangisini aldığınızı çok fark etmiyor.
+
+556
+01:37:20,147 --> 01:37:40,267
+Öyle düşünün. Sadece bir taneye sorduk, o rastgele olmuş olabilir gibi düşünebilirsiniz ama modeller zaten yakın. Öyle demek daha mantıklı. Burada amaç daha çok veriyle verimiz az olduğunda kullandığımız bir şey. Veriyi çoğaltarak en azından şuradaki şuraya yaklaşabilir miyim? Onu görmek.
+
+557
+01:37:45,875 --> 01:37:55,236
+Yine sıkıldınız. Aha, burada da işte, leave one out. Gerçekten datamız çok küçükse kullanıyoruz. Tamam mı bu?
+
+558
+01:37:58,236 --> 01:38:02,636
+Tamam, okey. Şimdi gelelim Street Fight, Cloud Cross Validation'a.
+
+559
+01:38:03,475 --> 01:38:20,794
+Şimdi ne yapıyoruz biliyor musunuz burada da? Şimdi example'dan gidelim. Diyelim ki inişli bir datamız var. 3000 tane de satırımız var. Tamam mı? Ve datamız imbalans. Yani 2400 tane negatif olsun, 600 tane de pozitif olsun. Ne demek bu datamızın?
+
+560
+01:38:22,875 --> 01:38:29,495
+Satmayamadım. %20'si sadece bir klasa aitken, geri kalan %80'i negatif değil mi?
+
+561
+01:38:30,835 --> 01:38:49,636
+Şimdi bu durumda siz deseniz ki yüzde işte rastgele bile seçseniz testinizin yüzde yirmisi otomatikman ne olacak? Pozitif olacak. Değil mi? Ama olmaya da bilir. Çünkü data az. Dolayısıyla ne oluyor biliyor musunuz?
+
+562
+01:38:55,187 --> 01:39:12,187
+Diyelim ki atıyorum, threefold cross validation yapacağız ya, yapacağız diyelim ki. Elimde de 600 pozitif var. O 600 pozitifi önce 200, 200, 200 her bir folda ayırdım, emin oldum. Çünkü 400 buna gitse, atıyorum 150 buna gitse, 50 buna gitse.
+
+563
+01:39:12,607 --> 01:39:34,147
+Şu üçüncü folkta belki pozitifleri iyi bulamayacak ama doğruluğu yüksek çıkacak. Bundan kurtulmak için ne yapıyorum? Bu 600'ü 200, 200 dağıtıyorum. Sonra negatif kılası da. 2400 tane var ya geri kalan. Onları da 800, 800, 800 bir şekilde dengeli dağıtıyorum. Tamam mı? Folkları.
+
+564
+01:39:41,716 --> 01:39:43,835
+Kölü fosu değiştirmek için son ne getirdik?
+
+565
+01:39:43,835 --> 01:39:45,515
+Evet, evet.
+
+566
+01:39:45,935 --> 01:39:49,355
+Yani mesela 3 fold yaptıysak 6 defa mı?
+
+567
+01:39:50,895 --> 01:39:56,535
+Yok, yanlış söylüyorum yani. Yanlış söylemiyorum da. Şimdi bunlar fold olsun. Çok güzel oldu.
+
+568
+01:39:57,895 --> 01:40:02,216
+Şimdi amacım şu. Çok elimde az sayıda pozitif var. Tamam mı?
+
+569
+01:40:02,580 --> 01:40:22,339
+Şimdi rastgele ayır desem, random bile ayırsam, şimdi bu 600'ün, elimde sadece 600 tane pozitif var ya, bu 600'ün çok büyük bir çoğunluğu buraya gelip, buraya çok az gelip, buraya hadi daha bile az gelebilir. Tamam mı? Hiç bile gelmeyebilir. Gelirdi. Neyse.
+
+570
+01:40:22,960 --> 01:40:29,580
+Dolayısıyla bundan kurtulmak için datam azsa şu 600'ü 200, 200, 200 ayırdım. Tamam mı?
+
+571
+01:40:30,899 --> 01:40:40,198
+Bütün şeylerin, faultlardaki eleman sayısı eşit olacağı için mecburen geri kalan bu 2400'ü de ayırdım. Her bir fault da 1000-1000-1000 olmuş oldu.
+
+572
+01:40:41,080 --> 01:40:50,620
+Dolayısıyla birazcık daha doğru bir test yaparken en azından bileceğim ki elimdeki datanın dağılımları her bir fault da eşit.
+
+573
+01:40:51,283 --> 01:40:59,203
+Yani amacım random dağıtsam belki data az olduğu için büyük eşitsizlik olacak. Bundan kurtulmam.
+
+574
+01:40:59,823 --> 01:41:06,102
+Amacım şu durumdan kurtulup hepsine eşit sayıda az olan sınıftan dağıtmak.
+
+575
+01:41:07,783 --> 01:41:16,283
+Öyle söyleyelim. Bunun sıkıntısı ne? Bunun sıkıntısı şu. Şu fold'da zaten çok az negatif var bir tane. Bunu bulamasa bile...
+
+576
+01:41:16,948 --> 01:41:27,928
+Anladınız mı? Şey çok yüksek çıkabilir, ekürisisi falan. Ortalama alınca da bunları etkileyebilir gibi. Bu da Stratified Cross Validation diye geçiyor.
+
+577
+01:41:44,339 --> 01:41:54,698
+Şimdi bootstrap de farklı bir şey. Tamam yine data büyükse hiç sorunumuz yok. Tamam hep bakın datanın az olduğu durumdan bahsediyoruz.
+
+578
+01:41:54,799 --> 01:42:02,399
+Data büyükse bir şekilde %70, %30, %80, %20 ayırdığımız anda dengeli bir şekilde olay çözülüyor.
+
+579
+01:42:02,899 --> 01:42:09,640
+Data asla kullanılan başka bir şey de ne? Bootstrap metodu. Şimdi ne yapıyoruz? İlk
+
+580
+01:42:10,484 --> 01:42:32,044
+Random, yine datamız küçükse bunu kullanacağız. Eğer ki datamız azsa ne yaptık? Random bir şekilde satırları seçerek training datayı oluşturdum. Tamam mı? Ama bir kere aldım diye, datam zaten az ya, bir kere aldım diye bunu tekrar almamazlık etmiyorum.
+
+581
+01:42:32,044 --> 01:42:37,424
+Diyelim ki 100 tane datam var. Tamam mı?
+
+582
+01:42:37,683 --> 01:42:50,964
+100 tane. Random bunlardan 50'sini seçeceğim. Tamam mı? Diyelim ki ilk random ikinciyi seçtim, ekledim. Sonra 2'yi buradan silmiyorum. Tamam mı?
+
+583
+01:42:50,964 --> 01:42:58,163
+Tekrar random seçerken 2 tekrar gelebilir data'da. Amacım birazcık datayı çoğaltmak.
+
+584
+01:42:58,323 --> 01:43:12,422
+Tamam mı? Yani bootstrap yaparken aslında yine alt küme, alt küme seçiyorum ama alt küme seçerken elime o örneklerden birkaç tane vesaire ne yapabilir? Gelebilir.
+
+585
+01:43:12,422 --> 01:43:25,290
+Tamam mı? Yani şimdi bunun bir örneği vardı burada da yok. Eski saytlarda bunun bir görseli vardı. Şimdi ben hızlıca şunun üzerinden geçelim. En bilineni...
+
+586
+01:43:25,395 --> 01:43:49,515
+632 bu strep metodur. Çünkü datasetim var, B tane de ne var? Satır var. Tamam mı? Bunu B kere sample yaptım. Yani içinden D tane örnek seçtim. Ama seçtiğim örnek bununla aynı olmak zorunda değil. Tamam mı? D tane seçince birebir aynısı olmuyor. Çünkü aynı şeyi birkaç sayı farklı seçmiş olabiliriz. Bazıları da hiç seçilmemiş olabilir. Tamam mı?
+
+587
+01:43:49,971 --> 01:44:16,551
+Dolayısıyla seçilmeyenler de test sette kalmış oldu. Sonra ne yaptım? Genellikle istatistik olarak bakıldığı zaman random seçiyoruz ya, ilk baştaki datanın %63'ü seçilirken geri kalanlar birden fazla kere seçilirken.
+
+588
+01:44:17,908 --> 01:44:19,596
+Evet, şimdi, bu ne?
+
+589
+01:44:24,212 --> 01:44:51,431
+Şimdi burada şeyler var, tamam mı? Sayılar var gibi düşünün. Ondan sonra geldim. Random sayı ürettim. Tamam bu seçildi. Geldim buraya ekledim. Random sayı üretti, bu seçildi. Buraya ekledim. Tamam mı? Random ürettim. Tekrar bu üretilebilir. Tamam mı? Buradan silmiyorum. Geldim şunun aynısından. Geldim bir daha dataya ekledim. Tamam mı? Burada D tane diyelim ki datam vardı.
+
+590
+01:44:52,212 --> 01:44:56,631
+Bootstrap yaparak yeni D tane datayı daha oluşturdu.
+
+591
+01:44:57,172 --> 01:44:57,551
+Tamam mı?
+
+592
+01:44:58,091 --> 01:45:10,451
+Ve diyor ki istatistiksel olarak baktığımız zaman şuradaki datanın yüzde altmış üçü gelirken yaptık ya bazıları da hiç seçilmeyecek.
+
+593
+01:45:10,571 --> 01:45:13,712
+B kere yaptık ya bazıları hiç seçilmedi.
+
+594
+01:45:13,892 --> 01:45:17,832
+Dolayısıyla mesela bu şurası hiç seçilmediyse bu data burada yok.
+
+595
+01:45:17,832 --> 01:45:19,192
+Burada var.
+
+596
+01:45:19,535 --> 01:45:24,114
+Şimdi seçilenler training set olurken, burada geri kalanlar test set olur.
+
+597
+01:45:25,748 --> 01:45:51,468
+Ve bunun %63'ü türeğine giderken, % geri kalan işte yaklaşık %36-37'si de testte kalıyor. Tamam mı? İstasyon olarak gösterilmiş. Yani burada da şey yapıyor. İşte her bir tapılın seçilme ihtimali, satırın seçilme ihtimali bir bölüde, işte seçilmeme ihtimali bir eksi bir bölüde. Ondan sonra buradan bu ihtimali hesaplıyor. Tamam mı?
+
+598
+01:45:53,844 --> 01:46:12,424
+modeli çalıştırdıktan sonra şuradaki formüle göre accuracy hesaplıyor. Yani bu da bootstrap çok küçük datada kullanılan bir metot. Ne olduğunu bilin yine.
+
+599
+01:46:13,908 --> 01:46:28,087
+Random seçiyoruz ama random seçerken birden fazla kere seçilme ihtimali var. Seçilmeyenler test eti oluşturuyor. Tamam mı? Seçmeyenler de test eti olarak %37 civarında. Ondan sonra da ne yapıyorum?
+
+600
+01:46:30,035 --> 01:46:45,274
+Bir kere yapmıyorum tabii ki de bunu. Tamam mı? Çünkü random seçtik ya. Bunu diyelim ki işte 10 kere, 20 kere, parametreyi kaç verdiyseniz farklı farklı sample'larla modeli oluşturuyorsunuz. Sonra da her bir modelin ortalamasını alıp hesaplıyorsunuz.
+
+601
+01:46:49,652 --> 01:46:50,752
+Kalanlar teyze, Tövbe.
+
+602
+01:47:02,995 --> 01:47:28,895
+Bakalım. Bu K kere yaptığımız için ortalamasını alacağız. Bir kere yapmıyoruz bu işlemi, K kere yapıyoruz. Tamam mı? Bu K oradan geliyor. Ondan sonra bu da topluyoruz. Ortalama değil de bu toplama. Çarptık ya, bunu 0.62 ile çarpıyoruz. Bunu bununla çarpıyoruz. Tamamen ekürüsü ya, tersten alarak çarpmış. Nasıl söyleyeyim?
+
+603
+01:47:29,428 --> 01:47:54,786
+normalize etmiş aslında. Yani boyutları farklı farklı ya. Tamam mı? Yani bunun doğruluğunu alırken boyutları farklı olduğu için normalize ederek çarpmış. Yani ikisini de sanki sample sayısı aynıymış gibi normalize edip o şekilde toplamış. O yüzden burada bu şekilde çarpıyoruz. Tamam mı? Var var tabii tabii. Yani bir data üç kere beş kere alınabilir.
+
+604
+01:47:56,339 --> 01:48:02,339
+Gerçek dünyada öyle olabilir mi diye ona bakıyor. Bir de şunu yapmaya çalışıyor. Yani şöyle çizersek aslında.
+
+605
+01:48:04,580 --> 01:48:12,140
+Çizemiyorum. Çizeceğim ama. Şöyle bir şey yapmaya çalışıyor aslında. Diyelim ki şöyle bir şey. Model oluşturmaya çalışıyorum ya.
+
+606
+01:48:17,319 --> 01:48:21,560
+Artı sınıfı var. Tamam mı? Burada var. Burada var.
+
+607
+01:48:22,895 --> 01:48:38,794
+Burada var. Ondan sonra arada bir de eksiler olsun. Tamam mı? Eksi, eksi, hoppa, eksi. Bir de burada böyle outlier eksi olsun.
+
+608
+01:48:39,379 --> 01:48:55,638
+Tamam mı? Şu ikisinin arasında. Şöyle yapmaya çalışıyor. Classifier bunları ayıracak ya, bir sonraki aldığında belki şu iki taneyi alırken dört taneyi alacak, hiç eksi almayacak. En azından şunu bulan bir classifier bulacak ki şu eksi outlier'dan kurtulacak gibi düşünüyorum.
+
+609
+01:48:55,638 --> 01:49:04,518
+Biraz amacı, o şey yani biraz amacı datanın içinden böyle hepsine şuna da bakayım, buna da bakayım demeden mesela datanın az bir kısmını alıp
+
+610
+01:49:04,660 --> 01:49:15,939
+Böylelikle sıkıntıları da bırakıp, sıkıntıları demeyelim de, en azından birazcık daha datayı genelleştirip daha iyi model bulabilir miyim? Yapmaya çalıştığı şey tamamen o.
+
+611
+01:49:16,680 --> 01:49:23,100
+Ama şeylerde, yapay sinralarında falan filan kullanılan bir metot mu? Hayır değil.
+
+612
+01:49:24,839 --> 01:49:31,819
+Ama mesela Bayes, şimdiye kadar bildiğimiz Bayes gibi ya da Tri gibi yöntemlerde kullanılıyor mu? Kullanılıyor.
+
+613
+01:49:32,531 --> 01:49:47,011
+Şimdi, aa günaydın. Çocuk da uyuyor uyuyor ama dinleyip soru soruyor. Böyle gözleri uyuyor. Tebrik ediyorum. Ara istiyor musunuz?
+
+614
+01:49:51,060 --> 01:50:09,959
+Şimdi bakın, bu kadar yol geliyorsunuz. Şimdi bazı mesela böyle hocalar olur. Mesela der ki, anlatırsan hop çıkar gider. O kadar yol geldi İstanbul'da. Onun yatağından kalk, ondan sonra geldi. Anlatalım yani. Değil mi? Anladınız mı? Anlamadım.
+
+615
+01:50:10,660 --> 01:50:17,459
+Hazır o kadar gelmişsiniz, dinleyin. Yani eğer, hocam biz dinleriz, anlatın, araya gerek yok diyorsanız.
+
+616
+01:50:18,355 --> 01:50:31,314
+Ne kadar kaldı, bakayım. Bu kadar konuşup bir şey demedim. Kısa bir ara, yani sanki uykunuz geldi gibi geldi, ondan da bu. Şunları anlat, şu istediksel kısımları hiç anlatmayacağım.
+
+617
+01:50:35,252 --> 01:50:35,931
+Çok bir şey.
+
+618
+01:50:38,571 --> 01:50:43,852
+İyi, hadi bakalım. Hemen kısa bir ara yapalım. Tamam mı? Sonra şu rock-roll anlatacağım. Bu önemli.
+
+619
+01:50:48,116 --> 01:50:59,395
+Sonra şunları bitiremeyeceğim. Buna rockcurve anlam ağzınıza göre. Buna yavaşlarım herhalde başlamam. Bunlar uzun sürer. Sonra yani rockcurveleri de öğrenip bugün gidersin. Tamam mı?
+
+620
+01:51:02,276 --> 01:51:07,076
+Onlinelar, bu sefer şey yapmıyor ama telefonumu bırakmam lazım. Onlinelar,
+
+621
+01:51:14,163 --> 01:51:18,484
+genelde efsan sen de içinde bir kol var ya genelde okuma alıyor
+
+622
+01:51:18,484 --> 01:51:24,484
+gitme ya 5-6 dakikada geliştim
+
+623
+01:51:24,484 --> 01:51:31,843
+5 geçe görüşelim online'lar kapatıyorum 25 geçe görüştüm
+
+624
+01:51:31,843 --> 01:51:34,636
+kapatmıyorum
+
+625
+01:59:20,276 --> 01:59:25,395
+Sevgili online'lar, bir dakika şu kablodan şöyle, bu değil.
+
+626
+01:59:29,971 --> 01:59:30,812
+Tablosu.
+
+627
+01:59:37,907 --> 01:59:46,647
+Zoom'u da telefondan bağlandık. İnşallah şey almamıştır. Arkadaşlar, telefonda geldiyse.
+
+628
+01:59:50,322 --> 02:00:13,242
+Evet, burası sınıf. Başlıyoruz online hara, hadi bakalım. Şimdi, nerede kaldık? Hoppa. Şimdi bayağı bir slide'larda modeli nasıl karşılaştırırız diye, yani modelleri oluşturduk. Aynı modeliçe.
+
+629
+02:00:13,746 --> 02:00:19,027
+parametrelerini değiştirerek aynı yöntemle birden fazla classifier oluşturabilirsiniz.
+
+630
+02:00:20,027 --> 02:00:26,607
+Ya da farklı farklı yöntemlerle farklı classifier'lar oluşturabilirsiniz.
+
+631
+02:00:28,306 --> 02:00:28,848
+Tamam mı?
+
+632
+02:00:30,086 --> 02:00:32,907
+Peki hangisi daha iyi? Nasıl bakarsınız?
+
+633
+02:00:37,331 --> 02:00:52,510
+Aynı testlere baktınız. Genellikle şimdiye kadar öğrendiğiniz, Acclusive, Precision, Recall tamam mı? Onlara bakarak tamam bu model daha iyi diyebilirsiniz. Ama bunun dışında da
+
+634
+02:00:52,831 --> 02:01:17,831
+Diyelim ki işte tenfold cross-validation yaptınız. Ondan sonra error ranklerini buldunuz. Birazcık daha işte T-testlerle vesaire bakabilirsiniz. Ama bunları hiç istatistikten hatırladığınızı zannetmiyorum. Tamam mı? Onları da anlatsam yani bir hafta daha gelecek. Çok da şey değil. O yüzden bu kısımları geçiyorum. Tamam mı? Yani bu biraz daha...
+
+635
+02:01:19,796 --> 02:01:30,015
+Onun yerine başka bir şey yapayım daha iyi. Şu asıl kısmı anlatacağım. Daha çok ilgisayacılar tarafından, işte T-Test vesaire, Pearson, Ay bu çok hoşluyorum.
+
+636
+02:01:31,456 --> 02:01:38,036
+Coefficient falan değil de daha çok ne kullanılıyor? Rock Curve'ü kullanılıyor.
+
+637
+02:01:38,036 --> 02:01:47,255
+Şimdi, şimdi Rock Curve'ü ne demek? Rock. Zaten buna baktığımız zaman bunun açılımı Receiver, Operating karakteristik.
+
+638
+02:01:47,698 --> 02:02:00,939
+Ne alaka? Alakası yok. Şöyle ki bu daha çok çok eskilerden sinyal haberleşmede kullanılan bir yöntem olduğu için işte bu alıcı falan filan diye isimde geçiyor.
+
+639
+02:02:01,599 --> 02:02:13,300
+Ama bu ne yapıyor? Modeli oluşturduktan sonra model hakkında size şiddet bilgi veriyor. Şimdi ne var? Bu bir frog curve. Tamam mı?
+
+640
+02:02:14,260 --> 02:02:35,679
+Bakalım, şurada true pozitifler var. Yani burada true pozitif yazıyor. Burada da false pozitifler var. Tamam mı? Ben ne isterim modelimde? True pozitif oranımın çok yüksek olmasını, false pozitif oranımın da düşük olmasını isterim. Değil mi? Yani, hop gelelim şöyle.
+
+641
+02:02:43,122 --> 02:02:52,924
+Şöyle gitsin. Ne olur, böyle inmez de bu. Benimki kötü çizdiğim için böyle aşağı doğru inmez.
+
+642
+02:02:52,924 --> 02:03:07,504
+Bu, sandikrizim bir şey. Yani maksimum tepe noktası nerede? Şurası. Burada baktığım zaman true pozitif oranım çok yüksekken, post pozitif oranım ne? Çok daha düşük.
+
+643
+02:03:07,827 --> 02:03:14,306
+Ve baktığımız zaman bunların toplamının 1 olması lazım değil mi? True pozitif ve false pozitif oranının.
+
+644
+02:03:14,306 --> 02:03:27,407
+Şimdi baktığımız zaman da eğer şey olsa modelimiz yani random hiç modeliniz yok kafadan 1-0 diyorsunuz. Tamam mı? %50 ihtimalle çalışan bir şeyiniz var.
+
+645
+02:03:27,827 --> 02:03:34,188
+Şurada görmüş olduğunuz maviyle çizilen şey doğru. Şu ne demek?
+
+646
+02:03:34,546 --> 02:03:48,268
+Bu modelinizin tamamen random çalışan, diagonal line dediği şeyde kafadan bir sınıfı söyleseniz oluşacak olan frog eğrisi bu.
+
+647
+02:03:48,268 --> 02:04:02,067
+Tamam mı? Frog eğrilerimizde ne var? Bakın, istediğim şey aslında bu neyi gösteriyor? Bizim true positive ve false positive arasında bizim modelimiz nasıl iyi çalışmış?
+
+648
+02:04:02,546 --> 02:04:10,166
+Bunu bulmaya çalışıyor. Dolayısıyla her bir klasifier ne yapabiliriz? Rock Curvy olarak çizebiliriz. Peki nasıl çizeceğiz?
+
+649
+02:04:13,166 --> 02:04:19,968
+Bir şeyden daha bahsedeyim. Rock Curvy'nin altında kalan alan. Mesela şu kırmızıya bakın. Bu alan neyi verir size?
+
+650
+02:04:21,806 --> 02:04:23,947
+Buna Area Under Rock.
+
+651
+02:04:24,175 --> 02:04:35,514
+Aslında size ekürisiyle ilgili bir şey söylemiş olur. Şimdi bunu nasıl çiziyoruz? Önce ona bakalım. Ondan sonra da hoppa.
+
+652
+02:04:41,620 --> 02:04:47,920
+Şimdi bakın M1 modelim var, bir de M2 var. Görüyor musunuz? Fena değil.
+
+653
+02:04:58,228 --> 02:05:00,928
+Daha iyi mi?
+
+654
+02:05:03,047 --> 02:05:07,827
+Şimdi M1 ve M2'ye baksanız ne söylersiniz? Yani iki farklı modelim var.
+
+655
+02:05:08,287 --> 02:05:14,428
+Rokörv'ün çizdirdiğin zaman kırmızı olan M1'miş, mavi olan M2'miş. Sizce hangisi daha iyi?
+
+656
+02:05:17,086 --> 02:05:18,428
+Niye M1 daha iyi?
+
+657
+02:05:22,354 --> 02:05:43,215
+True pozitif daha fazla. Nereden aldın? Yani şurada alsam desen değil mi? True pozitifin daha fazla. Yani %20'sine, aslında negatif olanların %20'sine sen pozitif derken ne yapıyorsun? Yaklaşık %50'den birazcık daha fazlasını da şu olarak buluyorsun.
+
+658
+02:05:43,894 --> 02:05:49,295
+Bir şey söyleyebilir miyiz? Ama böyle baksak, bunda da daha yüksek şu.
+
+659
+02:05:49,778 --> 02:05:57,219
+Şuraya baktığımız zaman true pozitifimiz daha yüksekken post pozitifimiz de yüksek. Nasıl yapacağız?
+
+660
+02:05:57,219 --> 02:06:13,219
+Evet, alana bakarsanız alan size çok daha şey verir. Burada bir şey söyleyemiyoruz. Hangisi daha iyi? Ama alana bakarak...
+
+661
+02:06:13,938 --> 02:06:40,238
+Bir şey söyleyebilirsiniz. Aslında iki şey de çok iyi değil. İki modelde çok çok iyi değil. Şimdi M1'e baktığımız zaman, işte baktığımız zaman false positive rate'i daha düşük dediğiniz gibi. M2'ye baktığımız zaman tamam doğruluğu yüksek, true positive yüksek ama true positive yüksek olduğu zaman false positive artıyor. Yani gidiyor bir sürü negatife de yanlışlıkla ne diyor? Pozitif diyor değil mi?
+
+662
+02:06:40,692 --> 02:06:43,192
+Şimdi bunu nasıl çiziyoruz ona bir bakalım.
+
+663
+02:06:44,831 --> 02:06:48,470
+Şimdi her seferinde şimdi bu ne öncün olduğunu anlayalım.
+
+664
+02:06:48,470 --> 02:06:49,192
+Tamam mı?
+
+665
+02:06:49,711 --> 02:06:51,430
+10 tane örneğim var.
+
+666
+02:06:52,352 --> 02:06:52,852
+Tamam mı?
+
+667
+02:06:53,451 --> 02:07:01,711
+Bu da aslında her bir şeyin, her bir örneğin ne yapıyor?
+
+668
+02:07:03,540 --> 02:07:09,220
+pozitif sınıfına, aslında şöyle söyleyeyim, pozitif sınıfına dair mi diyeyim onu göstermiş oluyor.
+
+669
+02:07:09,220 --> 02:07:16,979
+Yani diyor ki %95 ihtimalle pozitiftir diyor ya da bu diyor ki %53 ihtimalle pozitiftir diyor gibi düşünebilirsiniz.
+
+670
+02:07:17,679 --> 02:07:20,040
+Bu da gerçek değerleri.
+
+671
+02:07:22,340 --> 02:07:24,880
+Şu modelin buldukları gibi düşünün.
+
+672
+02:07:25,479 --> 02:07:27,420
+Bunu da gerçek değerleri gibi düşünün.
+
+673
+02:07:28,738 --> 02:07:30,540
+Şimdi nasıl yapacağız bunun için?
+
+674
+02:07:31,090 --> 02:07:43,130
+Her seferinde threshold'u değiştireceğim. Threshold'u değiştirerek, değiştirerek her threshold için bir true pozitif oranı bir de false pozitif oranını hesaplamış olacak.
+
+675
+02:07:43,130 --> 02:07:53,652
+Mesela threshold'un bir olsa ne olur? Hiçbirine pozitif demez değil mi?
+
+676
+02:07:55,090 --> 02:08:06,291
+Hiçbirine pozitif demediği için true pozitifimizde, post pozitifimizde ne olur? X'de 0 olur. Doğru mu? En yüksek threshold'dan başlayalım.
+
+677
+02:08:07,430 --> 02:08:20,812
+Değil mi? Ters durumu düşünelim. Threshold'um 0 desem ne olacak? Bunların hepsine pozitif diyecek benim modelim. Değil mi?
+
+678
+02:08:22,068 --> 02:08:47,367
+Doğru mu? Doğru. Dolayısıyla bütün gerçekten pozitif olanları pozitif olarak bulacak mı? Bulacak. Dolayısıyla true pozitif oranım bir olur. Peki, negatifler ne olur? Yani gerçekte pozitif olmayanlar. Onlara da pozitif dedim. O zaman false pozitif oranım da bir olur mu?
+
+679
+02:08:48,148 --> 02:09:10,688
+Threshold'u 0 olarak alsa. Değil mi? Şimdi bu sebeple de bakın aslında olmadığım. Şurada gösterelim. Şu kısım ne demek? Bizim Threshold'umuzun en yüksek olduğu tamam mı? 0'a 0 noktası ve hiçbirine pozitif demediğimiz.
+
+680
+02:09:11,412 --> 02:09:16,812
+Dolayısıyla hiçbirine pozitif demediğimiz için true pozitif de, post pozitif de sıfır.
+
+681
+02:09:17,711 --> 02:09:23,312
+Bir de ne var? Thresh oldumun sıfır olduğu, artık hepsine pozitif dediğim kısım var.
+
+682
+02:09:24,171 --> 02:09:28,470
+Hepsine pozitif diyorsa ne olacak? True pozitif oranın biri olacak.
+
+683
+02:09:28,591 --> 02:09:31,692
+Çünkü pozitifler de, pozitiflerin hepsine zaten pozitif desin.
+
+684
+02:09:31,692 --> 02:09:34,831
+Peki, thresh oldum.
+
+685
+02:09:35,635 --> 02:09:45,894
+0 olursa ne oldu? Diğer birisi negatiflere de pozitif dedi. O zaman ne oldu? Fospozitif oranım da geldi, 1 olmuş oldu.
+
+686
+02:09:45,995 --> 02:09:53,135
+Dolayısıyla şurası trash olduğun en yüksek olduğu noktayken 0'a 0. Şurası da trash olduğunun en düşük olduğu.
+
+687
+02:09:53,995 --> 02:10:00,635
+Yani şurası hiçbirine pozitif demediğim kısım. Burası da artık hepsine pozitiftir dediğim kısım.
+
+688
+02:10:01,300 --> 02:10:04,260
+Şimdi adım adım adım adım preş olduğu değiştireceğiz.
+
+689
+02:10:05,859 --> 02:10:09,479
+Bakın ne yapmış? Birazcık datayı inceleyelim. Probability değerlerimiz var.
+
+690
+02:10:09,939 --> 02:10:13,620
+Maksimum 0.95, minimum 0.25 değil mi?
+
+691
+02:10:14,179 --> 02:10:20,479
+Bunlardan 1, 2, 5 tanesi gerçekte pozitifmiş. Geri kalan 5 tanesi de ne? Normalde negatifmiş.
+
+692
+02:10:20,479 --> 02:10:22,283
+Tamam mı? Şimdi...
+
+693
+02:10:23,635 --> 02:10:34,054
+Şuraya yaptığım şey, yani şurada anlatayım. Şimdi bu data diğer datanın aynısı. Baktığımız zaman 10 tane şey var. 0,25, 0,43 gidiyor. Tamam mı?
+
+694
+02:10:35,876 --> 02:10:45,755
+Hop, tamam. Geldim. 0,25, 0,43. Değerleri buraya yazdık. En büyüğü 0,95'ti. Bir de buraya biri yazdım. Tamam mı? Biri kendimize getirdi. Bir sıfır.
+
+695
+02:10:46,755 --> 02:10:49,595
+Şimdi bunlar da gerçek değerleri, klasları.
+
+696
+02:10:50,483 --> 02:10:54,143
+Artı, artı, beş tane artımız var, beş tane de eksimiz var.
+
+697
+02:10:55,422 --> 02:10:55,622
+Okey?
+
+698
+02:10:56,683 --> 02:11:00,242
+Şimdi tek tek tek tek ne yapacağım? Threshold koyup bakacağız.
+
+699
+02:11:00,502 --> 02:11:04,002
+Şimdi gelelim şuraya. Threshold'ı alsam.
+
+700
+02:11:05,903 --> 02:11:08,983
+Tek tek gösteriyor muydu? Şuradan bakalım.
+
+701
+02:11:10,464 --> 02:11:12,483
+Şöyle şöyle bakalım, tamam mı?
+
+702
+02:11:13,282 --> 02:11:13,603
+Evet.
+
+703
+02:11:15,392 --> 02:11:31,550
+Bak şimdi bakacağız. Desem ki, trash oldum, 0,25'tir desem. Tamam mı? Yani büyük eşittir dediği için, 25 dahil alsam. Yani bu ne demek?
+
+704
+02:11:32,072 --> 02:11:38,232
+Thresh oldum, 0,25'ten büyük olan hepsini pozitif olarak alıyorum desem.
+
+705
+02:11:39,314 --> 02:12:01,595
+Tamam mı? Burada 10 tane değer var. 10 tane değerden 5 tanesi pozitif, 5 tanesi negatif. Ne olacak? True pozitifim? 5. True pozitifim ne? Pozitifken pozitif dediklerimin oranı. Şimdi 0, 25'ten büyüklere 1 desem. Tamam mı? Nasıl yazsam buraya? Şöyle şuradan yazayım tamam mı?
+
+706
+02:12:05,010 --> 02:12:26,951
+Şimdi 0 büyük eşittir 0, 25 olanları true pozitif diyeceğiz. Tamam mı? Baktığın zaman burada 1, 2, 3, 4, 5 tane artı var. Hepsine de artı dedim. 5 tanesi gerçekten pozitifti. Değil mi? Ondan sonra ne yaptım? Ben bunların hepsine de artı dedim. Dolayısıyla true pozitifimiz.
+
+707
+02:12:27,924 --> 02:12:53,184
+Yani true positive rate'imiz ne oldu? Bir oldu beş bölü beşten. Tamam mı? Şimdi gelelim eksilere. Beş tane eksi vardı. Ben sıfır yirmi beşten büyük olanların hepsine artı dediysem ne olacak? Bunlar gerçekten negatiftir. Değil mi? Ben bunlara artı dediğim için ne oldu? Bunlar false pozitif oldu. Beş bölü beşten bir. Bunu da bulmuş olduk. Dolayısıyla threshold'umuz sıfır yirmi beşken ne oluyor? Bakın.
+
+708
+02:12:54,162 --> 02:13:03,344
+Şöyle bir şey çıkmış oluyor. Şimdi gelelim şuraya. Bu sefer treş oldumuz, şimdi burayı iyi dinleyin. Şöyle ayırayım.
+
+709
+02:13:03,884 --> 02:13:17,563
+Büyük eşittir, kırk üç ol. Kırk üçten büyüklere ne diyorum? Artı, şuraya kadar. Kırk üçten küçüklere ne diyorum? Eksi. Değil mi?
+
+710
+02:13:23,282 --> 02:13:40,742
+Bir tane vardı değil mi? Şimdi baktığımız zaman bu bir tane ne? Negatif dedim. Değil mi? Ama yanlış bu aslında ne? Artı. Dolayısıyla bu false negatif. Tamam mı? Peki bu tarafta başka var mı?
+
+711
+02:13:41,236 --> 02:14:04,796
+Yok. Dolayısıyla şurada true negatifim yok. Sıfır. Bu tarafa bakarsak, bir, iki, üç, dört. Dört tane artım, art dört tanesine ben ne dedim? True pozitif. Yani dört tane true pozitifim var. True pozitifim oranım ne? Dört bölü beşten toplam pozitife sıfır sekiz çıkmış oldu. Tamam mı?
+
+712
+02:14:06,867 --> 02:14:11,086
+Ha yok, bu şekilde gidince nasıl yok?
+
+713
+02:14:14,188 --> 02:14:18,166
+Evet, bir tanesini hesaplayınca diğeri bir eksi ya, oradan hesaplayabilirsin.
+
+714
+02:14:18,546 --> 02:14:20,086
+Yani evet, oradan hesaplayabilirsin.
+
+715
+02:14:21,666 --> 02:14:24,108
+Dolayısıyla bakın ne oldu, şunu bulmuş olduk.
+
+716
+02:14:24,188 --> 02:14:28,787
+Şimdi artık false positive'in birken true positive rate'im 0.8 oluyor.
+
+717
+02:14:28,888 --> 02:14:30,028
+Dolayısıyla hangisini bulduk?
+
+718
+02:14:31,086 --> 02:14:32,428
+Şu noktayı bulmuş olduk.
+
+719
+02:14:33,586 --> 02:14:34,006
+Tamam mı?
+
+720
+02:14:35,732 --> 02:14:42,952
+True positive rate 0.8 iken şu aşağıdaki x-80'im yani post-positive'im bu çıkmış oldu.
+
+721
+02:14:43,652 --> 02:14:47,251
+Şimdi gelelim şu kısmına. Fresh oldu değiştiriyoruz.
+
+722
+02:14:48,532 --> 02:14:49,930
+Fresh oldu ne oldu bu sefer?
+
+723
+02:14:54,260 --> 02:15:13,479
+0.53 oldu. Tamam mı? Şimdi ne diyorum? 0.53'den küçüklere eksi diyorum. 0.53'den büyüklere artı diyorum. Tamam mı? Hemen bakıyoruz. 0.53'den küçük bir tane eksim varmış. Buna eksi demişim. O zaman true negatifim ne? Bir. Değil mi?
+
+724
+02:15:16,179 --> 02:15:20,340
+Bu dahildi ya. Anladınız mı? Şurası büyük eşittir ya.
+
+725
+02:15:21,586 --> 02:15:47,327
+O yüzden şurada bir çizeyim hatalı. Şöyle yapacağız. Burayı yaptık mı ya? 0,43'e yaptık değil mi? Tamam o zaman şey, treş oldu yalnız söylerim. Tamam. 0,53'e baktığımız zaman bunlara ne dedik? Eksi. Bunlara ne dedik? Artı. Değil mi? Hemen bakıyoruz.
+
+726
+02:15:48,434 --> 02:15:57,434
+Bu tarafta iki tane plus artı iken ben bunlara ne demişim? Eksi demişim. Değil mi?
+
+727
+02:15:58,930 --> 02:16:21,171
+Evet. Ve de bu tarafa baktığımız zaman eksiyken eksi, true negatifimiz bir. Buraya bakalım. Bir, iki, üç. Üç tane artı artı iken artı demişim ama iki tanesi burada kaldığı için. Baktığımız zaman true pozitif rateimiz ne çıkacak? Aslında direkt şuradan bakalım. Üç bölü beş çıkacak. Değil mi? Peki, false negatife baktığımız zaman.
+
+728
+02:16:22,004 --> 02:16:34,004
+Bu ne çıkacak? Ya da false positive'e bakalım. Daha kolay. False positive'e baktığımız zaman 1, 2, 3, 4 tanesi burada. 4 bölü 5'den 0, 8 çıkmış olacak.
+
+729
+02:16:34,764 --> 02:16:41,903
+Dolayısıyla ne yaptık? Bir tanesi 0, 6 çıktı. Yani false positive rate'im 0, 6 iken true positive rate'im 0, 8 çıktı.
+
+730
+02:16:42,804 --> 02:17:09,443
+Sonra bir daha Blur-Aid-Reachault alacağım. Bunların hepsini eksi diyorum. Eksi dersem kaç tanesi true pozitif olur, false pozitif olur? Böyle adım adım adım. En son şu bir sıfıra kadar geliyorum. Tamam mı? Bakın adım adım. Şurada hepsini tek tek hesapladık. Tamam mı? Sonra en son bir de ne demek? Hepsine ne diyoruz? Bunların hepsine negatif derken bunların hepsini bunlara da pozitif diyoruz değil mi?
+
+731
+02:17:10,354 --> 02:17:26,635
+Bir de threshold bir, büyük eşit bir aldıktan sonra elimde hiçbir yok. Dolayısıyla baktığımız zaman true positive rateimizde, false positive rateimizde sıfır çıkıyor. Şuradaki sıfıra sıfır noktası. Şu en aşağıya çizdiğim. Tamam mı? O da en son burası olmuş oluyor.
+
+732
+02:17:27,635 --> 02:17:33,474
+Ve rock curlere baktığımız zaman, benim burada böyle köşeli köşeli bir şey çıktı.
+
+733
+02:17:37,331 --> 02:17:42,690
+Ama rockcurvler hep böyle kör şeklinde. Niye öyle oluyor? Anladınız mı?
+
+734
+02:17:44,626 --> 02:17:51,706
+Evet, aralık. Çünkü normalde burada 10 tane data var. Gerçekte daha fazla data olduğu için tamam mı? Bu şekilde çıkmıyor.
+
+735
+02:17:52,187 --> 02:18:00,506
+Ve bir de bazı tullar bunu böyle smooth ederek çiziyor. Tamam şu yeşille çizdim ya smooth ettim. Bazı tullar da smooth ederek çiziyor.
+
+736
+02:18:00,506 --> 02:18:08,666
+Ama gerçek çizseniz böyle böyle basamak basamak gittiğini görürsünüz. Ya da kendiniz fob yazdığınız zaman basamak basamak gider.
+
+737
+02:18:13,331 --> 02:18:21,230
+Hiçbir şey anlamadım.
+
+738
+02:18:24,930 --> 02:18:25,730
+Şu mu?
+
+739
+02:18:28,230 --> 02:18:29,951
+Alan olarak burada buraya alacağız.
+
+740
+02:18:30,111 --> 02:18:31,130
+Yani şunun altı.
+
+741
+02:18:32,947 --> 02:18:44,947
+Yok yok, sadece area under rock. Yani şurayı alacağız. Diğer tarafta hiç işimiz yok ama orası da zaten bir çarpı bir olduğu için bir eksi o tarafı onça olacak ama o kullanılmıyor. Tamam mı?
+
+742
+02:18:44,947 --> 02:18:57,947
+Okey. Peki bunların hepsi şöyle olsaydı, hepsini doğru buluyorsaydı, yani şu class, şurası gerçekten eksi olsaydı tamam mı? Bunlar artı olmasaydı.
+
+743
+02:19:00,639 --> 02:19:27,059
+Bakın ne olacaktı? Ben şuraya threshold'u koyduğum zaman, baktığımız zaman true negatifimiz, özür dilerim, şuradaki true pozitif oranımız 1 olmuş olacaktı. Doğru mu? Peki false pozitifimiz ne olacaktı? O da baktığımız zaman yine 1 olmuş olacaktı.
+
+744
+02:19:27,407 --> 02:19:51,947
+Dolayısıyla, şurada değil de yani çok erkenden, eğer ki bu böyle bir şey olsaydı, bizim bu curve'ümüz başta bir şey bulamaz, bulamazken sonra pat diye ne olacaktı? Şu tepeden gidecekti. Tamam mı? Ama gerçek dünyada böyle örnekler olmadığı için çok nadir görülen bir durum. Rock curve böyle çiziliyor. Tamam mı? Bunu sorarım bize de.
+
+745
+02:19:54,027 --> 02:19:54,626
+Okey?
+
+746
+02:19:56,242 --> 02:19:58,084
+İnşallah mam sanırım dediğimi.
+
+747
+02:19:59,344 --> 02:19:59,763
+Tamam.
+
+748
+02:20:01,242 --> 02:20:04,023
+Peki, bir de nelere bakacağız model bakar seçerken.
+
+749
+02:20:04,223 --> 02:20:07,844
+Tamam, accuracy, precision kolonlara baktık, hızına bakacağız, tamam mı?
+
+750
+02:20:08,282 --> 02:20:11,884
+Ama hızına bakarken training time çok önemli değil.
+
+751
+02:20:11,884 --> 02:20:13,943
+Çünkü training kaç kere yapıyorsunuz?
+
+752
+02:20:14,862 --> 02:20:17,223
+Bir kere yapıyorsunuz, sonra modeli kullanıyorsunuz.
+
+753
+02:20:17,322 --> 02:20:22,084
+Dolayısıyla daha çok test zamanı birazcık daha nedir?
+
+754
+02:20:22,644 --> 02:20:24,443
+Önemlidir. Tamam mı?
+
+755
+02:20:24,818 --> 02:20:52,620
+Sonra datamızdaki şeyleri biliyoruz değil mi? Yani outlier'lar ne, noise olan veriler hangisi? Bunları nasıl sınıflandırıyor? Bunu bir analiz edin. Tamam mı? Modeli bulduktan sonra işte içinde çok böyle şey değerler varsa, yani ki vardır ama değil, gerçek data sinmiyorsunuz. Öyle datalara karşı nasıl biliyor? Onları çoğunlukla işte A sınıfı olarak mı değerlendiriyor, B sınıfı olarak mı değerlendiriyor? Onlara bakmanız lazım.
+
+756
+02:20:52,818 --> 02:21:10,960
+Ondan sonra neye bakmanız lazım? Şöyle şeyler var artık. Bunlar bu Azure'un içinde vs. yani birçok şeyin içinde, cloud sistemin içinde girdiğiniz zaman bu algoritmalar hazır bir şekilde var.
+
+757
+02:21:10,960 --> 02:21:19,460
+Tamam mı? Yani kendiniz yazmada, kendiniz önce lokalde çalıştırdınız, en iyi parametreleri buldunuz, en iyi modeli buldunuz. Tamam.
+
+758
+02:21:19,892 --> 02:21:27,412
+Sonra bunu artık işte deploy ederken cloud sistemine girdikten sonra var olan parametreleri verebiliyorsunuz.
+
+759
+02:21:27,412 --> 02:21:46,831
+Bazı algoritmalar yani algoritmanın özelliğine göre değişiyor. Cloud'da nasıl çalışır, nasıl scale olur? Bunların bazen işte şey data üreterek, sentetik data üreterek bunların performansına da ne yapmanız lazım? Bakmanız gerekebiliyor bazı durumlarda.
+
+760
+02:21:47,251 --> 02:21:57,571
+Tamam. Bu da başka bir şey. Diyeceğimiz şey bu kadar herhalde. Tamam. Burada kalıyorum. İlk defa bir şey bitiremedim.
+
+761
+02:21:57,571 --> 02:22:10,850
+Bu mu? Neye dahil mi? Bu. Tamam. 45'te kaldık. Hastaya ensemble metiklerden başlayacağız. Begging, boosting anlatacağız.
+
+762
+02:22:11,698 --> 02:22:15,920
+Sonra, hafta yedinci hafta mı? Sonraki hafta mı bize var?
+
+763
+02:22:18,500 --> 02:22:27,559
+Ya başka metot anlatırım? Ya normalde bugün bunu bitirip haftaya yaparsınları anlatacaktım ama neyse ne haftaya ne anlatacağıma bir bakayım. Tam süreye göre karar vereceğim. Tamam?
+
+764
+02:22:28,720 --> 02:22:29,660
+Bugün de bu kadar.
+
+765
+02:22:32,260 --> 02:22:36,340
+Proje, ha şeyi unutursam bana hatırlatın, Excel'i açın. Tamam?
+
+766
+02:22:36,340 --> 02:22:37,760
+Ama Excel'i açma.

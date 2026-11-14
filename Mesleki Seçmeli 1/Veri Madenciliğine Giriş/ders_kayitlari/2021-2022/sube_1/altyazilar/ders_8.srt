@@ -1,0 +1,3135 @@
+1
+00:00:38,389 --> 00:00:41,768
+Evet günaydın online'lar ve offline'lar.
+
+2
+00:00:43,768 --> 00:00:45,169
+Burada online'lar.
+
+3
+00:00:55,669 --> 00:00:57,048
+Ekranımı paylaşıyorum.
+
+4
+00:01:12,565 --> 00:01:16,844
+Herhalde gözüküyor sanırım. Altı kişimiz burada var.
+
+5
+00:01:18,344 --> 00:01:22,884
+Evet, başlayalım mı? Nasılsınız, iyisiniz?
+
+6
+00:01:25,525 --> 00:01:31,384
+İyiyiz. Yavaş yavaş simaları tanıyorum ama yok. Yine de çok zor.
+
+7
+00:01:33,525 --> 00:01:36,005
+Tamam. Ne yaptık geçen hafta?
+
+8
+00:01:40,661 --> 00:01:44,581
+Ne yapar?
+
+9
+00:01:46,200 --> 00:02:00,941
+Evet, güzel. Karar ağaçlarını gördük değil mi? Karar ağacı nasıl oluşturulur? Bunun içinde kullanılan yöntemler vardı. Ne yaptık? Information Game, bilgi kazancı, ağacı nasıl bölersek daha iyi olur. Değil mi? Ona baktık.
+
+10
+00:02:01,460 --> 00:02:16,501
+İkincisi de, ikincisi demeyelim de, daha sonra da bunu yapmak için bir entropiyle, entropi kullanarak bilgi kazanımını nasıl formalize ederiz ona baktık. Bir de ne yaptık? Cini indeksle nasıl formalize ederiz ona baktık.
+
+11
+00:02:17,300 --> 00:02:25,601
+Bugün ne yapıyoruz? Bugün yine classification'dan devam ediyoruz. Dediğim gibi önümüzdeki birkaç hafta daha, muhtemelen hatta bir seye kadar.
+
+12
+00:02:26,164 --> 00:02:28,404
+Bu farklı farklı yöntemleri göreceğiz.
+
+13
+00:02:28,884 --> 00:02:31,044
+Bugün göreceğimiz yöntemler çok daha kolay.
+
+14
+00:02:31,784 --> 00:02:34,143
+Sonra kafanızı çok karıştırmayacak.
+
+15
+00:02:34,943 --> 00:02:36,023
+Basit yöntemler.
+
+16
+00:02:36,505 --> 00:02:39,143
+Sonra da vaktimiz kalacağını düşünüyorum.
+
+17
+00:02:39,764 --> 00:02:41,904
+VK ile VK'yı göstereceğim size.
+
+18
+00:02:42,824 --> 00:02:48,224
+Ondan sonra da VK ile nasıl bir karar ağacı uygulaması yaparız.
+
+19
+00:02:48,784 --> 00:02:49,684
+Basitçe ona bakacağız.
+
+20
+00:02:50,643 --> 00:02:50,844
+Okey?
+
+21
+00:02:52,103 --> 00:02:52,344
+Şimdi.
+
+22
+00:02:52,821 --> 00:02:55,080
+Rule-based classification ile başlayalım.
+
+23
+00:02:56,041 --> 00:02:56,781
+Rule-lar ne?
+
+24
+00:02:58,139 --> 00:02:58,781
+Kurallar.
+
+25
+00:02:58,940 --> 00:03:03,940
+Yani kurallar kullanarak sınıflandırma nasıl yaparız?
+
+26
+00:03:05,639 --> 00:03:06,700
+Şimdi kurallar ne?
+
+27
+00:03:06,860 --> 00:03:08,080
+Birazcık onlara bakalım.
+
+28
+00:03:08,721 --> 00:03:17,561
+Kural dediğimiz şeyler, if şöyle şöyle ise budur şeklinde ifade ettiğimiz.
+
+29
+00:03:17,941 --> 00:03:30,561
+Yapılar. Bunlara ne diyoruz? Rullar yani kurallar diyoruz. Bunlar if'ten diye geçiyor. Yani if şöyle şöyle şöyle deni de ise diye çevirelim. İse şudur.
+
+30
+00:03:30,920 --> 00:03:41,321
+Şimdi kurala baktığımız zaman if var. If'ten sonra bir condition var. Bu conditionlarda neler olacak? Attribütlarımız olacak. Tamam mı?
+
+31
+00:03:41,568 --> 00:03:51,907
+Attribütlerimiz derken, işte bu bundan küçükse, bu bundan büyükse, şu şuna eşitse gibi Attribütler Condition'da olurken,
+
+32
+00:03:52,608 --> 00:03:56,288
+Consequent dediğimiz kısımda da direkt sınıflar olacak.
+
+33
+00:03:57,487 --> 00:03:57,809
+Tamam mı?
+
+34
+00:03:58,327 --> 00:04:06,589
+Yani, diyoruz ki eğer Attribütler'da şu, şu, şu varsa buraya Ent ile bağlıyoruz, Or falan kullanmıyoruz.
+
+35
+00:04:07,285 --> 00:04:12,285
+den deyip sınıfı budur. Buna da konsekünt diyoruz. Tamam mı?
+
+36
+00:04:13,384 --> 00:04:24,724
+Mesela baktığımız zaman eğer işte age'i yahut sınıfı ve student evet ise o zaman vice computer sınıfı yani klasifikasyonumuz buymuş yes.
+
+37
+00:04:25,485 --> 00:04:31,204
+Ya da işte şurada mesela sıcak tanlıysa ve yumurtluyorsa o zaman klası birddür.
+
+38
+00:04:31,584 --> 00:04:46,384
+Burada bakın, denden sonra sadece neler oluyor konsekünt kısmında, sonuç kısmında? Sadece sınıf oluyor. Bu bir kural. Kuralın ne olduğunu gördük. Anlaması oldukça basit.
+
+39
+00:04:46,384 --> 00:04:58,164
+Şimdi şöyle yaparsam daha iyi görürsünüz. Rule-based classifier'larda rule için iki tane şey tanımlayacağım. Bir tanesi coverage, öbürü ecurisi.
+
+40
+00:04:58,740 --> 00:05:07,840
+Bunlar için, bu kitap coverage kullanıyor ama başka yerlerde support terimini de görebilirsin. Tamam mı?
+
+41
+00:05:07,840 --> 00:05:18,900
+Kavriç yerine support terimini görürseniz çok şaşırmayın. Şimdi, rule ne dedik? Eğer şöyle, şöyle ise o zaman sınıfı budur diyoruz değil mi?
+
+42
+00:05:20,940 --> 00:05:25,000
+Tamam, kuralın böyle bir şey olduğunu anladım. Şimdi iki tane.
+
+43
+00:05:25,568 --> 00:05:49,889
+Aslında bize sayısal olarak değer verecek şey tanımlayacağız. Bir tanesi coverage dediğimiz şey, şu ilki. Baktığımız zaman buradaki, direkt şuradan anlatmak daha mantıklı. Buradaki rule tüm datanın yüzde kaçını aslında cover ediyor, gösteriyor.
+
+44
+00:05:52,820 --> 00:06:00,721
+Şimdi condition'ımız var ya bizim, condition hangisi? If'den sonraki, den'den önceki kısım.
+
+45
+00:06:00,721 --> 00:06:17,840
+Tamam mı? Dolayısıyla benim datamın içindeki objelerimin, yani satırlarımın yüzde kaçı bu kurala uyuyor? Ama kuralın sadece hangi kısmına? Condition kısmına uyuyor.
+
+46
+00:06:19,029 --> 00:06:29,568
+Denden sonraki sınıf kısmına bakmıyorum. Sadece attribute kısmına. Datanın yüzde kaç uyuyor ona bakıyorum. Buna ne diyoruz? coverage diyoruz. Bir de ne var? accuracy var.
+
+47
+00:06:33,331 --> 00:06:52,152
+Bizim kuralımızın bu sefer den kısmı da işin içine giriyor. Den kısmını da işin içine kattığımız zaman bizim aslında kuralımız ne diyelim yüzde kaç doğrulukla çalışıyor? Aslında onu buluyoruz.
+
+48
+00:06:52,152 --> 00:06:57,172
+Şimdi, coverage'e baktığımız zaman D dediğimiz şey benim datada toplam kaç satır oldu?
+
+49
+00:06:57,748 --> 00:07:10,068
+Ama payda tamam paydası bu. Payda ne var? Benim if'ten sonraki attribütlerle belirlediğim condition datamın yüzde kaçını tekabül ediyor? Tamam mı?
+
+50
+00:07:10,068 --> 00:07:24,228
+Bu da yüzde kaç, bu attribütü sağlayanlardan kaçını benim kuralım doğru bir şekilde sınıflandırabiliyor? Tamam mı? Şimdi şuradan bakarsak daha iyi anlayacağız.
+
+51
+00:07:24,565 --> 00:07:36,045
+Şimdi bakalım buna. Diyor ki, status single ise then class no'dur demiş. Şimdi coverage neydi? Burada toplam kaç satırımız var datada? 10 satırımız var.
+
+52
+00:07:36,905 --> 00:07:48,585
+Peki, coverage de dedik ki sadece şu kısma bakıyoruz. Sadece şu kısma bakıyoruz dedik değil mi? Dolayısıyla burada bunun single olduğu bir, iki,
+
+53
+00:07:49,201 --> 00:07:56,000
+3, 4 var. 4 bölü ondan bunun coverage'i 0.4 diyeceğiz. Tamam mı? Ya da %40 diyeceğiz.
+
+54
+00:07:56,500 --> 00:08:02,981
+Şimdi accuracy'ye baktığımız zaman, accuracy'de sadece, demin coverage'te bütün dataya baktık ya,
+
+55
+00:08:03,641 --> 00:08:09,901
+accuracy'de sadece bu şartı, condition'ı sağlayanlardan kaçını doğru bulmuş?
+
+56
+00:08:09,901 --> 00:08:16,681
+Class no demiş ya, single no. Tamam bir tanesi doğru. Single no, ikincisi de doğru. Single yes.
+
+57
+00:08:17,009 --> 00:08:33,907
+Bir tane yanlış, single yes yanlış. Dolayısıyla dört taneden sadece iki tanesini doğru sınıflandırdığı için accuracy ise iki bölü dört yüzde elliye tekabül ediyor. Tamam mı? Bunları kurallarda birazdan kullanacağız. Bunların ne olduğunu.
+
+58
+00:08:34,907 --> 00:08:42,148
+Şimdi birazcık daha, biraz büyüteyim. Başka bir örnek.
+
+59
+00:08:43,221 --> 00:09:06,120
+Bir de tam var. Baktığımız zaman, şurada işte tür, burada işte sıcak kanlı mı, soğuk kanlı mı gibi şeyler. Sonra doğurabilir mi, doğuramaz mı, uçabilir mi, uçamaz mı, suda yaşar, yaşamaz. Eğer böyleyse sınıfı nedir? Tamam memeliler, sürüngenler, balıklar vs. böyle geçiyor.
+
+60
+00:09:08,469 --> 00:09:18,148
+Mesela, D1 dediğimiz şey birinci kuralları. Eğer give birth no ise ve can fly yes ise o zaman klasi birth'tür demiş.
+
+61
+00:09:19,809 --> 00:09:30,909
+Bakalım, şuradan çizelim. Ne diyor give birth no olanlardan, can fly da yanda hemen yes olanlar.
+
+62
+00:09:30,909 --> 00:09:33,389
+Burada değil, burada değil. Şu var mesela.
+
+63
+00:09:34,773 --> 00:09:51,352
+No yes olan, değil mi? Bir bu var, başka bir de bu var, bir de bu var, değil mi? Give birth, no olup, can fly yes olanlar birthdür demiş. Bakalım doğru mu? Evet, evet, evet.
+
+64
+00:09:51,352 --> 00:10:00,273
+Şimdi bunun cover içine baktığımız zaman burada kaç satır var bu rule için? Saydınız mı? 2, 4, 6, 8, 10, 12, 14.
+
+65
+00:10:00,481 --> 00:10:20,481
+16, 18, 20 satır var. Tamam mı? Toplam 3 tanesi burada olduğu için coverage'i 3 bölü 20. Peki, accuracy'sine 3 tane var. 3'ü de doğru. 3'ü de evet, benimki bird dediğim gerçekten bird. O zaman 3 bölü 3'ten, accuracy'si de %100 diyoruz.
+
+66
+00:10:20,481 --> 00:10:25,040
+Şimdi başkasına bakalım, başka kurala. Give bird noise, a living water yes.
+
+67
+00:10:28,532 --> 00:10:30,192
+Yok değil, şu bu.
+
+68
+00:10:30,913 --> 00:10:31,211
+Şu.
+
+69
+00:10:35,380 --> 00:10:36,019
+Yes, yes.
+
+70
+00:10:37,081 --> 00:10:37,360
+Şu.
+
+71
+00:10:39,420 --> 00:10:41,059
+Bu kadar mı?
+
+72
+00:10:44,821 --> 00:10:58,081
+Herhalde bu kadar. Başka göremedim. Tamam. Eğer böyleyse plus fişiz demiş. Doğru mu? Evet, fişler, fiş, fiş, fiş. Bu da yine %100 ekrisiyle çalışan başka bir kural.
+
+73
+00:10:59,920 --> 00:11:01,500
+Üçüncüye baktığımız zaman.
+
+74
+00:11:08,788 --> 00:11:13,048
+Beaverty ise, blood type-ı, worms ise memelidir demiş.
+
+75
+00:11:13,768 --> 00:11:16,369
+Living water sometimes ise nedir?
+
+76
+00:11:19,088 --> 00:11:21,489
+Amfibiyendir demiş. Tamam, şurada bir tane var.
+
+77
+00:11:21,869 --> 00:11:23,928
+Sadece bir tane var, iki tane var şurada da.
+
+78
+00:11:24,708 --> 00:11:25,168
+Bakın şu.
+
+79
+00:11:26,749 --> 00:11:26,907
+Tamam.
+
+80
+00:11:28,188 --> 00:11:28,548
+Şimdi,
+
+81
+00:11:30,389 --> 00:11:31,468
+Buraya hemen sileyim.
+
+82
+00:11:33,968 --> 00:11:35,407
+Buraya baktığımız zaman,
+
+83
+00:11:36,000 --> 00:11:54,941
+Güzel, neredeyse hepsini doğru düzgün sınıflandırıyor mu kurallar? Güzel gibi değil mi? Yani en azından iki tanesine baktık. İki tanesi de yüzde yüz müydü? Yüzde yüzdü. Peki, şimdi tamam, buradan kuralları çıkardık, modeli oluşturduk.
+
+84
+00:11:54,941 --> 00:12:02,259
+Artık buradaki model dediğimiz şey ne? Training Set'ten kuralları oluşturduk değil mi? Şimdi buraya bakalım, nasıl çalışacağız?
+
+85
+00:12:02,804 --> 00:12:09,764
+Şimdi kurallarımız burada. Sınıflandırma test zamanında diyelim nasıl çalışır buna bakacağız.
+
+86
+00:12:10,443 --> 00:12:16,384
+Şimdi ilkine bakalım. Lemur, warm, yes, no, living water, no, klası nedir?
+
+87
+00:12:17,023 --> 00:12:21,904
+Give birth, no ise, can fly, yes ise o zaman klas birddür diyor.
+
+88
+00:12:25,864 --> 00:12:28,364
+Şimdi şuraya baktığımız zaman.
+
+89
+00:12:29,205 --> 00:12:53,585
+Birinciye bakalım, daha rule'dan gitmeyelim, tamam mı? Şimdi birinci satır için. Birinci kural işe yarıyor mu? Give birth to no mu? Değil. O zaman ikiye geçtim. Give birth to no mu? Değil. Üçe geçtim. Give birth to yes mi? Evet. Blood type of warm mu? Evet. O zaman bunun sınıfına ne diyeceğiz? Memelidir diyeceğiz.
+
+90
+00:12:59,157 --> 00:13:03,817
+İlkini seçtik. Tamam. Şimdi ikinciye bakıyoruz.
+
+91
+00:13:06,697 --> 00:13:16,536
+Hemen bakıyorum. Bunun give word to no, can fly yes mi? Hayır. No, live in water yes mi? Hayır.
+
+92
+00:13:17,897 --> 00:13:26,057
+Give word to yes, blood type worm mu? Evet, doğru mu? Üçe mi girdi bu? Turtle'da.
+
+93
+00:13:27,029 --> 00:13:28,889
+Gerdi hata yapmış olabilirim miyim?
+
+94
+00:13:29,749 --> 00:13:30,549
+Give birth yes.
+
+95
+00:13:36,019 --> 00:13:49,940
+İkinciye bakıyorum. Blood type of cold, 3'e girmedi, pardon. Give word, no, tamam, buraya girdi. Can fly, no, o zaman reptel, değil mi?
+
+96
+00:13:55,092 --> 00:13:58,492
+Ne yapıyoruz? Kurallarda ne gördünüz? Sıranın önemli olduğunu.
+
+97
+00:13:59,492 --> 00:14:01,092
+Değil mi? Çünkü niye sırayla bakıyorum?
+
+98
+00:14:01,732 --> 00:14:07,353
+Yani eğer buna uyan başka bir şey olacaksaydı başka bir şey olacaktı.
+
+99
+00:14:10,053 --> 00:14:16,331
+Şimdi, turtle'a baktığımız zaman, dedim ki ben bu reptayl'dir dedim, şuraya bakın.
+
+100
+00:14:17,553 --> 00:14:20,972
+Ama burada, hoppa.
+
+101
+00:14:21,715 --> 00:14:29,397
+Şu kurala bakarsak, ikinci satır için, Turtle'da. Living Water is some times mı?
+
+102
+00:14:30,397 --> 00:14:38,236
+Evet, o zaman kıl kılası, Amfibi ne olacak şimdi? Reptile mi, Amfibi mi ne yapacağız?
+
+103
+00:14:42,876 --> 00:14:48,757
+İkisine de uydu, hem dörde uyuyor, hem beşe uyuyor. İkinci satır.
+
+104
+00:14:52,277 --> 00:15:19,177
+Sıraya göre olabilir, olmaya da bilir. Dolayısıyla şöyle söyleyelim, kuralları oluştururken neye dikkat etmemiz lazım? Şuna dikkat etmemiz lazım. Eğer ki sınıflandıracağımız tapıl, obje, birden fazla kurala uyuyorsa ne yapacağız? Nasıl bir strateji izleyeceğiz? Bunu konuşmamız lazım. Ama önden söyleyeyim, bir tanesi sırayla yapma, diğeri de oylama yapma.
+
+105
+00:15:20,692 --> 00:15:48,293
+Sonra, şimdi gelelim şuraya. Dogfish Shark. Şimdi bakalım. Give word to yes. Give word to yes olduğu için üçüncüye uyuyor. Hemen bakıyorum. Şunlarınkine olduğu için geçtim. Give word to yes, blood type of warm ama bunun blood type of cold. Üçe uymadı. Give word to no, buna da uymadı. Living water sometimes demiş ama bunun living water yes. E, beşe de uymadı. Beşine de uymadı değil mi? Şu satır.
+
+106
+00:15:50,804 --> 00:15:51,764
+Ne olacak şimdi?
+
+107
+00:15:56,053 --> 00:16:02,333
+Yeni bir şey ekleyebilirsiniz.
+
+108
+00:16:02,952 --> 00:16:03,893
+Ve ne yapabilirsiniz?
+
+109
+00:16:04,133 --> 00:16:06,593
+Yani yine buradan çıkacağı, çıkartacağımız olan şey ne?
+
+110
+00:16:07,232 --> 00:16:12,513
+Eğer ki hiçbir kural tetiklenmiyorsa, ne yapacağız?
+
+111
+00:16:12,952 --> 00:16:14,312
+Yine buna da ne yapmamız lazım?
+
+112
+00:16:15,473 --> 00:16:16,853
+Karar vermemiz lazım.
+
+113
+00:16:33,491 --> 00:16:35,732
+Şimdi göreceğiz. Öyle bir şey de yapabilirsin.
+
+114
+00:16:38,672 --> 00:16:42,672
+Yapabiliriz. Yani tek bir klasta da yapabilirsin. Göreceğiz nasıl yapacağımızı.
+
+115
+00:16:43,452 --> 00:16:51,711
+Şimdi iki tane tanım vereceğim. Bir tanesine Moods'la Exclusive Rule'lar. Yani bu ne demek?
+
+116
+00:17:00,692 --> 00:17:11,251
+iki tane rule trigger olmuyorsa, tetiklenmiyorsa, diyeceğim ki bu uçlu exclusive diyeceğim.
+
+117
+00:17:12,852 --> 00:17:21,251
+Dolayısıyla her bir tuple, her bir objek, her bir satır sadece tek rule'da olabilir.
+
+118
+00:17:23,052 --> 00:17:27,911
+İkinci vereceğimiz örnekte, yani deminki örnek buna uyuyor mu? Şu.
+
+119
+00:17:28,949 --> 00:17:42,048
+Hayır, uymuyor değil mi? Niye? Çünkü şu Turtle'da ne oldu? Baktığımız zaman hem 3, hem 4 hem de 5 tetiklenmiş oldu değil mi? Yani hem reptel dedik hem amfibi dedik mesela.
+
+120
+00:17:55,681 --> 00:18:04,240
+Value'ların her kombinasyonu için eğer ki elimizde rule varsa bu da ne diyeceğiz? Exhaustive rule'lardır diyeceğiz.
+
+121
+00:18:04,661 --> 00:18:09,781
+Ve dolayısıyla ne olacak? Her bir kayıt için bir rule olması lazım.
+
+122
+00:18:10,141 --> 00:18:18,620
+Dolayısıyla mesela şurada Docfish Shark için bir rule var mı? Hayır yok. O zaman bu exhaustive değil.
+
+123
+00:18:19,620 --> 00:18:22,401
+Şimdi algoritmalarımızı buna göre kullanacağız.
+
+124
+00:18:22,772 --> 00:18:32,772
+Şimdi ne dedik? Mutual Exclusive olması neydi hatırlarsanız? Bir tane obje iki rul tarafından aynı anda belirlenmemesi gerekiyordu değil mi?
+
+125
+00:18:32,772 --> 00:18:39,772
+Şimdi bunu nasıl çözeriz? Bunların daha doğrusu işte Mutual Exclusive değilse nedir?
+
+126
+00:18:40,181 --> 00:18:45,181
+Bir tane tapı birden fazla ruhlu tetikleyebilir.
+
+127
+00:18:45,640 --> 00:18:47,221
+Şimdi nasıl çözeceğiz?
+
+128
+00:18:47,721 --> 00:18:51,160
+Birincisi demin de dediğim gibi sıralı kurallar kullanılıyor.
+
+129
+00:18:51,481 --> 00:18:56,381
+Yani kurallar rastgele olmayacak, belirli bir şeye göre sıralanmış olacak.
+
+130
+00:18:57,241 --> 00:18:58,179
+Dolayısıyla da...
+
+131
+00:18:59,317 --> 00:19:11,436
+Baktın, birinci kurala baktın, ikinci kurala baktın. Eğer böyle bakmaya devam ediyorsun, kurallardan bir tanesine sırayla bakarken uyuyorsa hop ne diyeceğiz? Break diyeceğiz, diğer kalanlara bakmayacağız.
+
+132
+00:19:13,297 --> 00:19:22,536
+Dolayısıyla ne olması lazım? Ruhların bir şeye göre sıralanması lazım. Peki neye göre sıralarsınız siz ruhları böyle bir şey olsa?
+
+133
+00:19:26,229 --> 00:19:26,709
+Ne?
+
+134
+00:19:41,204 --> 00:20:00,424
+Ya sadece, diyelim ki şöyle yaptık. Daha fazla koşul koydum. Eğer ki işte blood type'ı koltza, give birth'ı yes'e, can fly'ı no'ysa, dedim ki dogfish şarttır dedim. Burada üç tane şey saydım değil mi? Bunu da alsam senin dediğin gibi en başa koysam.
+
+135
+00:20:07,893 --> 00:20:26,173
+Give words yes ve can fly no olanlar otomatikman ya da böyle benzer bir şey varsa yalnız sınıflandırma olur. İlk bakacağız ya. Dolayısıyla tamam DocFix şarkı hallettin ama buna benzeyen başka şeyleri de hop yalnız sınıflandırma ihtimalin yükselir.
+
+136
+00:20:26,867 --> 00:20:29,348
+Ne yapacağız o zaman? Neye bakalım?
+
+137
+00:20:29,348 --> 00:20:44,907
+Bir özellikle kendi özgünün özelliklerine göre sınıflandırırız. Önce o kuralı kuralı kuralarız. Mesela bu hatta bu hormonun sadece tek bir klas varsa o kuralıyı ilk başa kuralarız.
+
+138
+00:20:44,907 --> 00:20:48,668
+Bu hatta bu hormonun sallıyorsa gibi.
+
+139
+00:20:50,099 --> 00:20:58,820
+Olabilir ya da neye bakarız? Demin iki tane şey verdik değil mi? Tamam verdik. Kavriçi ve ekürisi dedik. Doğru mu?
+
+140
+00:21:00,200 --> 00:21:10,120
+Dolayısıyla ekürisi daha yüksek olan ve kavriçi daha yüksek olanları daha yukarıya koymalıyız ki hem algoritma daha hızlı çalışmış olur.
+
+141
+00:21:10,120 --> 00:21:12,400
+Çünkü üstten bakar, tamam bu ise çıkar.
+
+142
+00:21:12,751 --> 00:21:31,512
+Hem de çok özelleşmiş, mesela koyduğunuz kural sadece iki şeyde çalışıyorsa, tamam mı? Yani sadece iki tane training sette örnek var. Çok nadir görülen bir kuralsa onu başa koyarsanız ne olur? Onunla yalnız sınıflandırılacaklardan kurtulmuş olursunuz. Yani aşağıya koyarak.
+
+143
+00:21:33,652 --> 00:21:39,913
+İkinci çözümümüz ne? Bir tanesi kuralları sıralamak. İkincisi de ne? Oylama yapmak.
+
+144
+00:21:40,148 --> 00:22:01,668
+Ne yapacağız? Diyelim ki izin veriyorum bütün her bir tuple için yani sorarken her bir satıl için bütün kurallara tek tek tek tek soruyorum. Tamam mı? Bir tuple birden fazla kuralı tetikleyebilir ve ne yapıyorum? Eğer birden fazla kuralı tetiklediyse aralarında oylama yapıyorum.
+
+145
+00:22:02,656 --> 00:22:26,675
+Diyelim ki deminki örnek için işte iki tane reptal dedi, bir tane de fiş dediyse oylamada reptal kazanmış, üç kural tetiklendi, iki tanesi reptal dedi, bir tanesi de fiş dedi. Tamam mı mesela? Oylamada reptal kazancı için tamam, reptaldir diyorum. Tamam mı? Bu da başka bir çözüm. Tamam mı? Herhalde anlaşılmıştır burası.
+
+146
+00:22:27,924 --> 00:22:43,125
+Bir de şöyle bir şey var bunda, yaparken hani direkt voting yaparken aslında ağırlıklı şey yapılıyor, oylama yapılıyor. Şöyle ki, elimizde o kuralın ekürisesi var ya,
+
+147
+00:22:44,373 --> 00:22:59,373
+O ekürisiye göre oylama yaparken, verdiği oyu ekürisiyle çarparak, daha doğruluğu yüksek olan sınıflandırmaların daha yüksek oy vermesini sağlayabiliyorsunuz.
+
+148
+00:23:00,952 --> 00:23:09,973
+Tamam, şimdi burada ne yaptık? Bakın, Munch ile ekskluyuziv yaptık. Neydi bu? Bir tapı birden fazla kuralı tetiklerse ne yapabiliriz?
+
+149
+00:23:10,517 --> 00:23:22,156
+Bir, kuralları sıralarız. İlk hangisine uyuyorsa hop orada çıkarız, ilkidir deriz. İkinci yöntemde ne? Oylama yaparız. Bütün kurallara yine bakarız. Oylama sonucuna göre karar verebiliriz.
+
+150
+00:23:22,836 --> 00:23:32,036
+Şimdi gelelim, exhaustive. Bu ne demekti? Hiçbir kural tetiklenmezse, deminki dok fiş şartta olduğu gibi ne yaparız?
+
+151
+00:23:32,820 --> 00:23:44,040
+Bunun için de şöyle bir şey yapabiliriz. Default bir class kullanabiliriz. Yani default rule'umuz ne? En sona sıralayla gidiyorsanız, sıralama yapıyorsanız sıralamayla çözeceksiniz.
+
+152
+00:23:46,000 --> 00:23:56,059
+Sıralı bir şekilde ilkinde çıkacaksınız. Eğer ki hiçbir şeyi tetiklemiyorsa ne yapacağız? Bir tane yeni class oluşturuyorum. Bu da ne?
+
+153
+00:23:57,268 --> 00:24:10,869
+Default cluster diyorum. Buna atacağım. Ama şöyle bir şey yapabilir miyim? Tamam, kullanıcı sana mesela şurada bu hayvanın türünü sordu. Sen diyorsun ki türü Default cluster. Kullanıcıya böyle bir şey diyebilir miyiz?
+
+154
+00:24:26,036 --> 00:24:26,916
+Word mi var?
+
+155
+00:24:28,817 --> 00:24:36,456
+Diyelim ki atıyorum tamam mı burada 20 tanenin içinde 7 tanesi memeliyse diyoruz ki default klasım memelidir diyorum.
+
+156
+00:24:37,057 --> 00:24:37,416
+Tamam mı?
+
+157
+00:24:38,817 --> 00:24:39,977
+Şurası şuradaysa.
+
+158
+00:24:40,820 --> 00:24:58,660
+Default Class diyoruz. Dolayısıyla hiçbiri olaya girmediyse Default Class atanıyor. Genellikle de Majority Class neyse, benim training setimin içinde en fazla olan sınıf hangisi ise Default Class'ını da o olarak atıyorum.
+
+159
+00:24:59,660 --> 00:25:08,040
+Tamam. Dur var mı buraya kadar? Bir şey yapmadık aslında. Bakın ne yapıyoruz? Yarım saattir.
+
+160
+00:25:08,628 --> 00:25:19,428
+İki tane şey tanımladık, coverage, accuracy. Sonra rule'ları gördük. Rule'da bir condition olacak, bir de if'den sonraki kısım, denden sonraki kısma da consequence diyoruz.
+
+161
+00:25:19,949 --> 00:25:30,288
+Sonra da ne yaptık? Mutual exclusive tanımladık. Bu neydi? Bir rule birden fazla kere tetik, öyle değil. Bir tuple birden fazla rule'u tetiklerse ne yaparız?
+
+162
+00:25:30,509 --> 00:25:35,288
+İkincisi de hiçbir rule tetiklenmezse ne yapılır? Yani yapılan stratejiler nedir?
+
+163
+00:25:36,628 --> 00:25:47,469
+Onları gördük, rullarda. Çepte bir şey var, bakalım. Eküriste'ye göre sıralanmalı demiş [öğrenci] ama [öğrenci]'ı sözü dilerim, yeni gördüm.
+
+164
+00:25:48,989 --> 00:25:57,529
+Birinin üstünde bir şeyi açın ya. Kapatayım mı bunu? Kapattık. Bir şey yazarsanız chatten yazın, online'lar.
+
+165
+00:25:58,836 --> 00:26:16,356
+Tamam, şimdi gelelim kuralları nasıl sıralarız? Dedik ki, mutlu etkisi de kuralları sıralamak gerekir dedik değil mi? Ve sıralı da insan üstüne giriyorsa orada çıkalım dedik. Kuralları nasıl sıralayabilirsiniz?
+
+166
+00:26:26,580 --> 00:26:31,839
+Rule-based ordering'de accuracy'sine göre ve coverage'ine göre ne yaparız? Sıralarız.
+
+167
+00:26:31,839 --> 00:26:42,320
+Niye? Çünkü baktığımız zaman aslında accuracy'si ve coverage'i yüksek olan rule'lar nedir?
+
+168
+00:26:43,280 --> 00:26:52,660
+En çok olan sınıftır ve test sette de benzer bir sorunun geleceğini beklediğim için daha hızlı ve doğru bir şekilde ne yapabilirim?
+
+169
+00:26:53,204 --> 00:27:14,063
+Cevap vermiş olur. İkincisi de ne? İkincisi de sınıf tabanlı sıralamıyor. Bunda da ne oluyor biliyor musunuz? Sınıf tabanlı da aynı sınıf yani ilk olarak bir sınıfın rulları oluyor. Onlar bittikten sonra diğer sınıfın rulları, daha sonra da diğer sınıfın rulları oluyor. Yani rullar neyine göre sıralanıyor?
+
+170
+00:27:20,339 --> 00:27:30,019
+Bir klasın içindeki sıra önemli mi? Önemli değil. Aynı klas olacak şekilde. Çünkü zaten hepsinin sonucu aynı olmuş oluyor.
+
+171
+00:27:34,259 --> 00:27:38,140
+Şuradaki göstereyim. Mesela, ilk rule bezle bakalım.
+
+172
+00:27:41,140 --> 00:27:47,681
+Rule bezde ne var? Tamamen bunların kalitesine göre, yani ekmişsine ve karbecine göre sıraladığımız durumda.
+
+173
+00:27:49,000 --> 00:27:59,240
+Şimdi, bakacağız, diyelim ki işte tüyü var, ondan sonra, havada bir yaratıklı vesaire, börtür.
+
+174
+00:28:02,901 --> 00:28:12,641
+Fakat kandımı falan filan onlar var. Bakacak, bakacak, bakacak. Diyelim ki şurada şu dediyse hop burada ne yapacağız? Duracağız. Diğerlerine bakmıyoruz.
+
+175
+00:28:13,280 --> 00:28:20,441
+Klas beze bakarsanız da bakın klaslar kendi aralarında ne olmuş? Yani klas, klas tıralanmış.
+
+176
+00:28:20,441 --> 00:28:29,500
+İlk olarak burpler, sonra memeli, sonra amüpler, reptaller. En sonunda da neler var?
+
+177
+00:28:31,348 --> 00:28:56,447
+Alıp var. Tamam mı? Şimdi şu ikisinin yerinin değişmesi önemli mi? Çok da önemli değil. Yani kendi içerisindeki sıra çok önemli değil. Ama şunun ve şunun sırasının değişmesi, yani ilk şunları alıp dörtleri aşağı alırsanız ne olur? Umucunuz bayağı değişmiş olur.
+
+178
+00:28:56,723 --> 00:29:07,324
+Tamam. Çünkü neye bakıyorsunuz? Buraya girdiği anda yine hop ne yapıyoruz? Çıkıyoruz sırada da. Değil mi? Yani şu ikinci bird tetiklendiği anda çıkabiliyoruz.
+
+179
+00:29:08,523 --> 00:29:12,544
+Tamam. Çünkü şu olabilir. Yani şurada amipte atıyorum.
+
+180
+00:29:13,875 --> 00:29:34,875
+Şu, şu dedikten sonra üçüncü bir şey, burada olmaz mı? Üçlü yok mu? Üçlü yok. Şurada bir üçüncü bir şey olsa, tamam mı? Şurada üçüncüsü, diyelim ki A feature'ı eşittir, X olsun. Tamam mı? Sonra aşağıda da sadece peder var, bir de şuysa yes olsun.
+
+181
+00:29:35,635 --> 00:29:40,757
+Diliyorsanız, bakın bu üçlü şey çok şey değiştirir. Çünkü niye? Üç tanesine bakacak.
+
+182
+00:29:41,105 --> 00:30:04,085
+Eğer ağası x değilse, x ise 4 diyecek. Ağası x değilse, ta aşağıda sadece feather ve yellow creatures'a geçse, başka bir sınıf diyecek. Bunun sınıfı tamamen değişecek. Anladınız mı? Anladınız mı? Şimdi tekrar anlatıyorum. Şimdi şunu şöyle değiştirdim.
+
+183
+00:30:06,099 --> 00:30:33,720
+Şimdi burada şöyle bir şey olsun. Skin cover, header var. İşte aerial creature, yes. Bir de üçüncü ağası da ağ diye bir feature olsun, o da X olsun. Tamam mı? Bu ise bird diyorum. Ama aşağıda şu amipte şöyle bir şey olabilir. Sadece ilk iki attribütünün olduğu. Skin cover, feathers. Tamam mı? Aerial creature, yes.
+
+184
+00:30:34,164 --> 00:30:49,563
+ise buna amfibide, klası amfibidir diyorsanız ne olacak? Burada A'sı X ise bird diyecek ama A'sı X değilse şu iki tanesi uymasına rağmen ne olacak?
+
+185
+00:30:50,983 --> 00:30:57,664
+Buna bird demeyecek, gelecek burada amfibi diyecek. Şimdi siz eğer amfibilerle birdlerin yerini değiştirirseniz
+
+186
+00:30:58,836 --> 00:31:06,135
+Ne olur? Tamamen şuradaki şey, şuradaki feature, bunu aşağı alırsanız, şuradaki rule'um boşa çıkmış olur.
+
+187
+00:31:06,135 --> 00:31:13,577
+Çünkü ilk ikisine uyanların hepsine amfibi demiş olur. Dolayısıyla bu sınıfların kendi içindeki sıralama önemli değil.
+
+188
+00:31:14,317 --> 00:31:19,496
+Ama birbirleri arasındaki sıralama birçok şeyi ne yapar? Değiştirir.
+
+189
+00:31:28,949 --> 00:31:44,329
+Şimdi, classification rule'ları nasıl oluştururuz? Bir direct metotlar var. Şimdi bunları göreceğiz, refer gibi. Bir de indirect metotlar var. Bunlar da genellikle indirect metotlar ilk başta bir decision tree oluşturacağız.
+
+190
+00:31:52,916 --> 00:31:59,175
+Decision Tree'i oluşturma yöntemiydi. Decision Tree'i oluşturacağız, sonra oradan da rule'ları pekini çıkartacağız.
+
+191
+00:32:00,056 --> 00:32:06,175
+Peki gelelim dairek metotlara. Burada ne yapacağız? Rule'ları direkt datadan çıkartacağız.
+
+192
+00:32:09,175 --> 00:32:13,896
+Hadi bakalım. Şimdi ilk dairek metotla bakıyoruz.
+
+193
+00:32:14,996 --> 00:32:15,916
+Şimdi genellikle...
+
+194
+00:32:16,723 --> 00:32:24,223
+Ne yapıyoruz? Direkt training datadan rule'ları çıkartıyoruz. En çok kullanılan Ripper algoritması.
+
+195
+00:32:24,943 --> 00:32:28,104
+Boyle'da bayağı kullanılan yöntemlerden bir tanesi.
+
+196
+00:32:28,764 --> 00:32:33,344
+Şimdi birazcık notasyonlara bakalım. Biraz daha büyük sanmına iyi olur musunuz?
+
+197
+00:32:35,563 --> 00:32:37,304
+Şimdi bakın ne yapacağız?
+
+198
+00:32:38,196 --> 00:32:43,776
+Her verilen sınıf için, sınıfları da C1, C2 şeklinde göstereceğiz.
+
+199
+00:32:43,776 --> 00:32:44,536
+Tamam mı?
+
+200
+00:32:45,996 --> 00:32:47,375
+Şimdi şuraya bakalım.
+
+201
+00:32:50,116 --> 00:32:51,316
+Daha iyi görünüştüm.
+
+202
+00:32:51,556 --> 00:32:52,856
+Herhalde fena değil.
+
+203
+00:32:53,135 --> 00:32:53,336
+Tamam.
+
+204
+00:32:53,795 --> 00:32:54,675
+Şimdi ne var?
+
+205
+00:32:54,896 --> 00:32:56,295
+İlimde bir training data.
+
+206
+00:32:56,656 --> 00:32:58,576
+Training data'yı neyle gösteriyorum?
+
+207
+00:32:59,295 --> 00:33:00,875
+E-notasyonuyla gösteriyorum.
+
+208
+00:33:01,656 --> 00:33:03,236
+Her bir satır için.
+
+209
+00:33:03,797 --> 00:33:28,577
+A'lar, attribute'lar, B dediğim şeyler de bunların değerleri. Attribüt'ün değerleri, veri önünün verisi. Tamam. Y'de ne? Sınıflar. Kaç diyelim ki? Beş sınıf. Yani banyarı postification yapıyorsanız iki sınıfımız var. Ama mazı plus bir şeyimiz var. Daha fazla sınıfımız var. Y'lerde ne? Sınıflar. Tamam.
+
+210
+00:33:29,588 --> 00:33:46,728
+Bakın A dediğim şey, mesela işte deminki şeyde kulak sayfı vesaire alken, B dediğim şeyde ne var? Kulak sayfının warm mu yoksa cold mu olduğu var. Burada da işte reptile mu, memos mu, onlar mı? Tamam mı?
+
+211
+00:33:56,339 --> 00:33:59,420
+Class için. Y'ler nerede?
+
+212
+00:34:00,860 --> 00:34:05,259
+Ve bunları rastgelecisine yani setlediği için G1.
+
+213
+00:34:07,640 --> 00:34:08,759
+Tamam mı?
+
+214
+00:34:10,179 --> 00:34:11,401
+Bunun için ne yapıyorum?
+
+215
+00:34:11,679 --> 00:34:14,060
+Stopping condition is not madscan.
+
+216
+00:34:14,200 --> 00:34:15,401
+Yani buy-in için de.
+
+217
+00:34:15,700 --> 00:34:17,179
+Ne olduğunu söyleyeceğiz.
+
+218
+00:34:18,179 --> 00:34:20,240
+Yine birazdan ne olduğunu konuşacağız.
+
+219
+00:34:20,821 --> 00:34:23,460
+Learn one rule diye bir metod.
+
+220
+00:34:24,212 --> 00:34:32,613
+Ne yapıyor burada? Benim E datamda, hatırlardınız, training datamda, attribütlere ve bunun sınıfına bakarak bir kural öğreniyoruz.
+
+221
+00:34:33,751 --> 00:34:49,013
+Bu kurala uyan katırları training datadan çıkarıyorum. İlerikli şeylerde bakmama gerek yok. Ondan sonra R kural listesiydi. Kural listesine de yeni kuralımı ekledim.
+
+222
+00:34:50,772 --> 00:35:15,173
+Sonra geldik buraya. Yeniden, trend atam azaldı değil mi? Yine şurada learn one rule, her seferinde bir tane rule öğreniyorum. Sonra bunları ne yapıyorum? Trend atamdan çıkarıyorum. Stopping condition ne olabilir peki burada? Bütün şeylerin datanın bitmesi olabilir.
+
+223
+00:35:15,828 --> 00:35:20,068
+Başka ne olabilir? Şimdi data bitmeyebilir. Ama biterse güzel olur.
+
+224
+00:35:23,508 --> 00:35:27,629
+Ama burada satır satır gidiyoruz ya. Feature, feature gitmiyoruz. Tamam.
+
+225
+00:35:28,607 --> 00:35:32,209
+Burada hiç feature, feature gitmiyoruz ama learn one rule'un içinde feature'ler.
+
+226
+00:35:32,568 --> 00:35:35,488
+A dediğim attribute'ler ve bunların değerleri. Tamam.
+
+227
+00:35:36,589 --> 00:35:41,107
+Şimdi, nerede olur biliyor musunuz? Eğer ki şöyle bir şey koyabilirsiniz.
+
+228
+00:35:43,376 --> 00:35:49,376
+E-curisi yüzde bilmem kaçtan düşükse bir daha iyi bir kural bulamıyorsanız dur gibi bir şey söylenebilir.
+
+229
+00:35:50,657 --> 00:35:56,956
+Bu algoritma nasıl çalışıyor? Böyle çalışıyor. Gidiyor. Orijinal data setin bu iki tane klas var.
+
+230
+00:35:57,657 --> 00:36:05,317
+İlk başta, bakın burada da bir de sınıf sınıf gidiyor gördünüz mü? İlk başta artı sınıflarını bulmaya çalışıyor.
+
+231
+00:36:05,776 --> 00:36:08,477
+Artı sınıfını cover eden bir rule buldu diyelim ki işte.
+
+232
+00:36:09,524 --> 00:36:34,784
+X'unla şunun arasındaysa, Y'de bununla bunun arasındaysa dedi mesela. Sonra geliyor bunu datadan çıkardı ama bu R1'i de kural tabanına ekledi. Bir sonraki adımda yeni bir tane R1'i ekledik. R1 şurayı kapsıyor. Sonra şurası için yeni bir kural buldu. Hop bunu ekledi. Ama bakın burada şu kural şunu da ne yapıyor? Kapsıyor mu?
+
+233
+00:36:35,572 --> 00:36:44,072
+A1 kapsadı. Ama ekücisi mesela yüzde 90'dan büyükse bunu göz ardı ediyoruz.
+
+234
+00:36:46,072 --> 00:36:57,513
+R2 burayı kapsadı. Böyle böyle işte. R3 diye böyle böyle ne yapıyoruz? Gidiyoruz. Sonra sadece eksiler kaldığı için ne yapacağız? Eksiler için bu kural daha yazıp çıkacak.
+
+235
+00:36:57,513 --> 00:36:58,751
+Şimdi.
+
+236
+00:36:59,765 --> 00:37:21,525
+Sadece şunu söyleyeyim. Bir de en son default rule diye bir şeyden bahsetmiştik. Eğer ki ne olacak? Gerçek hayatta böyle keskin şeyler yok. Hiç bulamadığımız sınıflar için default class tanımlayacağız. Tamam mı? Yani eğer şöyle şöyleyse default class diyeceğiz. Ona da en çok ne varsa mesela atıyorum burada eksik daha çok. Örneğin de default class'ı eksik ediyoruz.
+
+237
+00:37:23,795 --> 00:37:37,236
+Onu görsel olarak gösteriyor. Peki şimdi neyi bilmiyoruz biz? Bu algoritmadaki learn one rule diye bir şey var değil mi? Rule'u nasıl öğreneceğiz? Ne yapardınız siz? Rule'u nasıl öğrenirdiniz?
+
+238
+00:37:43,316 --> 00:37:50,056
+Ben size desem ki, kodunu verdim size, sadece LearnOneRule diye bir tane komisyon yazacağım.
+
+239
+00:37:51,196 --> 00:37:52,875
+Bir şey yaptığımız mantıklı olurdu.
+
+240
+00:37:57,781 --> 00:38:01,821
+Ne? İkıristiği kullanabilirsin, evet.
+
+241
+00:38:06,999 --> 00:38:09,201
+Attribütleri ekleye ekleye gidersin, değil mi?
+
+242
+00:38:09,560 --> 00:38:11,781
+Yani ben ne yapardım?
+
+243
+00:38:12,040 --> 00:38:17,901
+Gelin ki her bir attribute için bir class da bakardım attributelara.
+
+244
+00:38:19,019 --> 00:38:21,781
+Gelin ki hangisinin tavrıcı daha fazlaysa.
+
+245
+00:38:22,260 --> 00:38:28,181
+ve sadece o klasit bir attributelerde, mesela onu kat diye eklerdim.
+
+246
+00:38:28,321 --> 00:38:32,541
+Grit gibi algoritma. Çalışır mı? Çalışmış ama biraz çalışır.
+
+247
+00:38:32,541 --> 00:38:34,301
+Şimdi gelelim şuraya.
+
+248
+00:38:35,141 --> 00:38:37,521
+Dern one rule dediğimiz şey ne?
+
+249
+00:38:38,517 --> 00:38:52,236
+Ne yapmak istiyoruz? Bu yolumuzun olabildiği kadar, sınıf gibi çok sıfı olarak baktığımız sınıftan, sınıftan o kadar çok bitermek istiyorum.
+
+250
+00:38:53,376 --> 00:39:05,116
+Arada az sayıda ne yapabilir? Ekürüsü %100 olmayacağı için, yani %100 olabilir de çoğu zaman olmayacağı için, birkaç tane başka sınıflardan da değer içerebilir.
+
+251
+00:39:05,973 --> 00:39:16,093
+Peki, size soru. En tane etribüyotum varsa bir klas için kaç farklı rule yazabilirim?
+
+252
+00:39:25,108 --> 00:39:48,589
+N'in birlisi artı N'in ikilisi artı N'in üçlüsünden N'in nlisine kadar gidiyor. Dolayısıyla bu yapılabilir bir algoritma mı? Optimumunu bulabilir miyim? Bulamam değil mi? Optimum çalışan ruhlu bulmak gayet zor. Dolayısıyla da ne yapacağız?
+
+253
+00:39:49,205 --> 00:39:54,245
+Genel, yani şöyle bir şey, bulunan rullar optimal rullar olmayacak.
+
+254
+00:39:55,945 --> 00:39:56,224
+Değil mi?
+
+255
+00:39:56,945 --> 00:40:00,644
+Ve de ne yapıyoruz? Aslında bu ne? Exponential search problemi.
+
+256
+00:40:01,425 --> 00:40:07,685
+Bayağı bildiğiniz, çok normal bilgisayarlarda, büyük N'lerde çalışmayacak.
+
+257
+00:40:07,685 --> 00:40:08,325
+Bir.
+
+258
+00:40:09,397 --> 00:40:22,577
+Yöntem, Opticulu, Global Optimum bulmamız. Dolayısıyla ne yapacağız? Onun yerine greedy bir şekilde bulabildiği kadar rule'ları bulmaya çalışacak. Tamam mı? Dolayısıyla ne yapıyor? İlk başta bir tane rule.
+
+259
+00:40:23,188 --> 00:40:50,688
+Kafadan buluyor. Tamam mı? Rastgele algoritma nasıl çalışırsa. Sonra da ne yapıyor? Rule'u iyileştirmeye çalışıyor. Yani şunu da eklesem daha iyi olur mu? Bunu da eklesem iyi olur mu? Diyelim ki bir attribute ile başlıyor. Ondan sonra ekürsisi en iyi olan attribute'u buldu. Ona bunu eklesem daha iyi olur mu? Sonra daha iyi olduysa üçüncüyü de eklesem iyi olur mu? Şeklinde ne yapıyor?
+
+260
+00:40:51,251 --> 00:41:16,472
+Search yaparak giden bir metodu var. Şimdi rule-growing stratejiye bakalım. İki tane yöntemimiz var. Bir tanesi genelden özele, diğeri de özelden genele. Şimdi şurada gösterirsem daha iyi anlarsınız. Şimdi bu ne demek? General'da ne yapıyor? Benim dediğim gibi tek bir tane attribute ile başlıyor.
+
+261
+00:41:18,420 --> 00:41:43,241
+Tamam mı? Sonra bunu da eklersek, yani işte boşluğa başladı ya, sonra işte bir taneyle başladı. Skin cover, hair ise budur. Body temperature ise budur. Heslex ise budur. Sonra baktı ki buna bir şey daha eklerse, tamam mı? İşte buraya Heslex eklerse, artık word yes eklerse budur.
+
+262
+00:41:45,492 --> 00:41:54,513
+Yani ne yapıyor? Boştan başlayıp tek tek ekleyerek ekleyerek eğer ki ekür sesi arttıysa buradan rullar bulmaya çalışıyor.
+
+263
+00:41:55,033 --> 00:42:06,113
+Ama burada ne olacak? Bakın şurada Hezlex ne olsa bu demiş. Şurada bir daha var. Body temperature, warm blood ise ve Hezlex'i yese memelidir demiş.
+
+264
+00:42:06,593 --> 00:42:10,712
+Dolayısıyla bu yöntemde ne olur? 3D de gittiği için.
+
+265
+00:42:11,795 --> 00:42:23,856
+Çok fazla tekrarlayan şey olur değil mi? Yani aynı kurallığın içinde, yani condition içinde dört tane varsa bunun ikilisi de başka bir kural olarak durabilir.
+
+266
+00:42:24,396 --> 00:42:28,455
+Dolayısıyla bu metotta general to specific de ne yapmamız lazım?
+
+267
+00:42:28,455 --> 00:42:32,455
+Daha sonra şeyleri...
+
+268
+00:42:34,483 --> 00:42:42,524
+Kuralları elememiz lazım. Tamam mı? Hani ağaca bu diyorduk ya, pürüne diyorduk ya, burada da yine kuralların elenmesi gerekiyor.
+
+269
+00:42:43,325 --> 00:42:47,964
+Şimdi general specific'e bakalım. Boş bir rule ile başladık. Tamam mı?
+
+270
+00:42:49,205 --> 00:43:02,185
+Ve bu ne? Hiçbir şey ifade etmiyor. Çünkü hep her şey içerecek. Ondan sonra tek tek buraya bir şey ekliyorum. Yani şuraya condition içine ekleyebildiğim kadar attribute eklemeye çalışıyorum.
+
+271
+00:43:02,185 --> 00:43:12,185
+Ve de nasıl yapıyoruz? Hepsine baktım baktım. Yani diyelim ki işte ilk bir attribute'a baktım. Tamam mı? Ondan sonra...
+
+272
+00:43:13,140 --> 00:43:17,580
+Baktım, doğruluğu hangisiyse tamam, onu seçtim ya da ilk, üçünü seçtim.
+
+273
+00:43:17,919 --> 00:43:24,720
+Algo atmayı böyle fark edebiliyor. Sonra ikinci attribüt ekliyorsunuz. Sonra iyileşiyorsa üçüncü attribüt ekliyorsunuz.
+
+274
+00:43:24,780 --> 00:43:30,120
+Böyle böyle böyle böyle. İyileşme yaptığı sürece attribüt eklemeye ne yapıyoruz? Devam ediyoruz.
+
+275
+00:43:30,660 --> 00:43:36,140
+Eğer bir yerden sonra iyileşmiyorsa, daha iyi sınıflandırma yapamıyorsak ne yapıyoruz? Orada duruyoruz.
+
+276
+00:43:37,715 --> 00:44:03,496
+Bu neydi? Bu general to specific. Şimdi gelelim şuna. Bu da ne? Tam tersi. Specific to general. Bakın ne var ilkinde? İlkinde bütün attribükler var. Değil mi? Sonra bunlardan çıkarta çıkarta çıkarta çıkarta kuralları bulmaya çalışacağız. Hem genel kuralları yazdık.
+
+277
+00:44:05,973 --> 00:44:29,933
+Sonra da çıkartarak bulmaya çalışacağız. Yani ilk olarak şurada gördüğünüz gibi, şöyle yapalım, bulduk. Ondan sonra da ne yapıyoruz? Daha fazla, şuna baktığımız zaman, buna kaç tane şey uyar? Baktığımız zaman, çok az uyar değil mi?
+
+278
+00:44:30,933 --> 00:44:41,152
+Ne yapmış buradan mesela işte, hibernate snow var ya, burada da varmış, bir şey ne çıkarmış buradan, body temperature'i çıkarmış.
+
+279
+00:44:42,353 --> 00:44:52,133
+Body temperature'i çıkarmış, bunu çıkarttığı zaman daha doğruluğu ve ekmişsiz yani doğruluğu ve de cover içine okumuş oluyor, açmış oluyor.
+
+280
+00:44:53,613 --> 00:44:58,693
+Daha genelleşmiş oluyor ve bu eğer daha iyi sınıflandırıyorsa buradan devam ediyor.
+
+281
+00:44:58,928 --> 00:45:05,867
+Sonraki vakti bir hangisini çıkarırsa daha iyi olacak. Oradan bu şekilde ruhları bulmaya devam edelim.
+
+282
+00:45:17,108 --> 00:45:27,108
+Evet, şeye göre, çünkü her bir etribüksün şeyi farklı. Belki bazı şeylerde tek bir etribüksle bile sınıflandırma yapabiliyor olabilirsin bazı sınıflarda.
+
+283
+00:45:35,108 --> 00:45:38,909
+Şöyle de olabiliyor, etribüksleri çıkarma sırası.
+
+284
+00:45:39,669 --> 00:46:05,447
+En iyi attribütü çıkarmayayım, en az şey çıkarayım diyebilirsin. Ama onda da şimdi bu grid algoritma ya, onu çıkartın çıkartın belki sonra hiç daha iyisini bulamayabiliyorsun. O yüzden genellikle böyle şeyler vardır. Optimizasyon dersi alınca görürsünüz. Mesela algoritmayı 10 farklı şeyle başlatırsınız, 10 rastgele. Hangisi daha iyi buluyorsa oradan devam edersiniz falan. Genelde öyle yöntemler kullanılıyor.
+
+285
+00:46:06,069 --> 00:46:24,049
+Yani çıkarttıktan sonra bunda geri dönüş yok ya, yani senin dediğin gibi olsa. Bu durumlarda çok iyi çalışmaya, çalışmaya biniyor. Tamam, bunlar tamamen yani gerçek çözümü bulması mekansta yakın olduğu için genelde işte hangisi öptümünün aydınır, oradan giden şeyler.
+
+286
+00:46:27,209 --> 00:46:33,288
+Evet, önemli. Ama genelde çıkarıyor çıkarıyor, hangisi daha iyi o adımda, bu daha iyi oradan devam edelim.
+
+287
+00:46:34,964 --> 00:46:51,265
+Burada da birazcık senin dediğinden bakıyor. Şimdi hangisini ekleyeceğiz, hangisini çıkaracağız? Neye göre bakarsınız? Tabii ki ekürisye göre bakarsınız değil mi? Yani çıkardığın zaman ekürisyü düşüyorsa onu çıkartmanın bir anlamı var mı? Yok.
+
+288
+00:46:53,105 --> 00:46:59,745
+Dolayısıyla ne yapıyoruz? Ekürisyeye bakıyoruz ama tek başına ekürisyü yeterli olur mu?
+
+289
+00:47:00,372 --> 00:47:26,991
+Olmaz. Çünkü zaten o örnekten, diyelim ki sizin binlik bir trendsetiniz var ve sadece iki tane obje, iki tane satır ona uyuyorsa ve sizin rulunuz o iki taneyi buluyorsa ekürsiniz %100'dür zaten. Doğru mu? Dolayısıyla neye de bakmanız lazım? Kavriçe de bakmanız lazım. Yani sizin o rulunuzun, condition kısmı tüm datanın ne kadarına tekabül ediyor?
+
+290
+00:47:27,444 --> 00:47:34,904
+Çünkü biz öyle bir yerden gidersek neredeyse her satır için tek rule yazdım gibi bir şeye doğru gider.
+
+291
+00:47:35,124 --> 00:47:37,944
+Tek eküritseye bakmak. Dolayısıyla ne yapmamız lazım?
+
+292
+00:47:39,004 --> 00:47:41,223
+Tabi ki de bakılması gerekiyor.
+
+293
+00:47:41,365 --> 00:47:43,944
+Şimdi bir metriyimiz var. Bu da ne?
+
+294
+00:47:45,345 --> 00:47:50,764
+Foil Information Gain. Zaten foil diye kendi başına Ripper gibi bir metot da var.
+
+295
+00:47:51,964 --> 00:47:52,664
+Bakalım mı buna?
+
+296
+00:47:53,908 --> 00:48:03,268
+Aradan sonra mı bakalım? Tamam, ara verelim. Kaç dakika istiyorsunuz? On, on beş, söyleyin.
+
+297
+00:48:05,348 --> 00:48:16,669
+İstesiniz çıkmıyor. On beş, ha. Tamam, hadi on beş dakika ara. Çet, çocuklar çete yazmış. Arkadaşınız şey yapmış.
+
+298
+00:48:21,397 --> 00:48:42,876
+Anladınız mı? Anlamadınız. Ben ses geliyor diye mikrofonu kapattım. Ama öbür arkadaşlar mikrofonu kapatabilir mi? Hayır, o zaman bizi de duymuyoruz. Pardon ya, neyse herhalde duymuştur arkadaş. Pardon. Arkadaşlar, on beş dakika ara beş geçe görüşürüz. Kapatıyorum dersi online'lar. Çok pardon. Empati yapamadım.
+
+299
+00:49:17,236 --> 00:49:20,315
+Evet.
+
+300
+00:49:21,835 --> 00:49:23,114
+Geldim, geldim.
+
+301
+00:49:33,076 --> 00:49:35,776
+Hazırsa kaldığımız yerden devam edebiliriz.
+
+302
+00:49:38,095 --> 00:49:46,795
+Şimdi dedik ki learn one rule dedik. Sonra ne yapabiliriz dedik? Eccracy'ye bakabiliriz, coverage'e bakarız dedik. Ama Eccracy tek başına işe yaramaz.
+
+303
+00:49:46,996 --> 00:49:52,335
+Çünkü sadece bir tane bile rule varsa ve onu sağlıyorsa %100 Eccracy'me olmuş olur dedik.
+
+304
+00:49:53,015 --> 00:49:55,235
+Dolayısıyla içinde, şuradan bakalım.
+
+305
+00:49:56,564 --> 00:50:02,363
+Bir metreye ihtiyacım var. Hem accuracy'i işin içine koysun hem de coverage'i koysun.
+
+306
+00:50:03,363 --> 00:50:08,784
+Tamam. Buna da dedik ki buna da foils information gain diyelim dedik.
+
+307
+00:50:09,563 --> 00:50:21,304
+Tamam. Şimdi gelelim bu ne? Bu ne? Bu bir benim kuralım ne kadar iyi bunu ölçen bir metrik. Tamam. Hem içinde coverage var hem de accuracy var.
+
+308
+00:50:21,304 --> 00:50:22,284
+Şimdi.
+
+309
+00:50:23,602 --> 00:50:36,322
+Diyelim ki, R0'da diyor ki, ilk rulumda, eğer attribute'um şuysa, class'ım şudur. Tamam mı? Sonra da diyorum ki, ben buna ikinci B attribute daha ekledim.
+
+310
+00:50:36,322 --> 00:50:42,563
+Eğer şuysa, A şuysa, B şuysa, class'ım budur dedim. Şimdi bakıyorum.
+
+311
+00:50:43,828 --> 00:51:07,888
+A şöyle söyleyeyim. Şu rule mu daha iyi, R0 mı daha iyi? Yoksa bunu genişlettim, R1 mi daha iyi? Nasıl bakacağız? Şimdi pause information gain'e bakalım. İki tane rule alıyoruz. Bir tanesi R0 değil mi? İlk rule'un. Diğeri de R1. Şimdi şunları söyleyelim. P ne demek? P dediğimiz şey pozitif, N'lerde negatiften gelmiş. Tamam mı?
+
+312
+00:51:08,180 --> 00:51:11,900
+P0 dediğim şey, R0'la yani ilk rule'la ilgili.
+
+313
+00:51:13,520 --> 00:51:20,400
+P1 dediğim de ikinci bir atribüt eklediğim rule'la ilgili şey.
+
+314
+00:51:21,080 --> 00:51:22,378
+Ne yapmışım bakın burada?
+
+315
+00:51:23,259 --> 00:51:27,340
+Bir rule ne yapacak? Her şeyi tamamen %100 doğru bulamaz değil mi?
+
+316
+00:51:28,020 --> 00:51:29,900
+Dolayısıyla burada...
+
+317
+00:51:35,252 --> 00:51:50,692
+Amadıkları. Tamam? Aslında bu biraz ekürisi gibi. Tek başına baktığınız zaman. Ama bunun içine alırken ne yapıyoruz? Şöyle bir şey yapıyoruz.
+
+318
+00:51:50,852 --> 00:52:02,512
+Log 2 tabanında P1 bölü yani ekledikten sonraki hali eksi rule'u yani B'yi ekledikten sonraki hali R0 dediğimde rule'un ilk hali.
+
+319
+00:52:02,864 --> 00:52:12,604
+Bundaki doğru bulunanlar, bölü hem doğru bulunan hem yanlış bulunanlar. Yani rulon kapsadığının hepsi şeklinde ne yapabiliriz? Söyleyebiliriz.
+
+320
+00:52:13,342 --> 00:52:23,584
+Daha sonra da bunu ne yapıyor? P1 ile çarpıyor. P1 ne demek? R1'i kapsadığı pozitifler. Niye bunu bununla çarpıyor sizce?
+
+321
+00:52:23,584 --> 00:52:26,324
+Yani şu P1 ile çarpmak ne işe yarar?
+
+322
+00:52:31,060 --> 00:52:35,620
+P1 ne demek? Kuralın son halini doğru buldukları.
+
+323
+00:52:42,132 --> 00:52:45,231
+Ve direkt sayıyla çarpıyor baktığımız zaman.
+
+324
+00:52:48,596 --> 00:53:12,074
+Aslında azaltmıyoruz da, şöyle söyleyelim, çarparak yani bildiğimiz bir kat sayıyla çarpmış oluyoruz. Ve kat sayıyla çarparken, şöyle düşünün, rule iyileştirmiş olsun, tamam mı? R1'le, ben bir şey daha ekledim ya.
+
+325
+00:53:12,883 --> 00:53:18,524
+Diyelim ki B'yi eklemek benim şeyi arttırmış olsun. Direkt örnek üzerinden gidelim.
+
+326
+00:53:19,043 --> 00:53:24,062
+Dolayısıyla şurada lok 2 tabanında P1, P1 artı N1 var. Burada P0 var.
+
+327
+00:53:24,704 --> 00:53:29,942
+İyileştiyse ne olacak? Buradaki P1'ler artmış olacak değil mi? Baktığımız zaman.
+
+328
+00:53:30,463 --> 00:53:32,744
+Dolayısıyla şu parantezin içinden nasıl bir şey çıkacak?
+
+329
+00:53:33,644 --> 00:53:37,004
+Lok 2 tabanındaki eseri nasıl bir şey çıkardı? Geçen hafta konuşmuştuk.
+
+330
+00:53:37,783 --> 00:53:38,764
+Negatif çıkar değil mi?
+
+331
+00:53:39,603 --> 00:53:44,264
+Peki, burada bir negatif daha var ama bakın. Negatif, eksi, negatif bir şey.
+
+332
+00:53:50,802 --> 00:53:55,622
+Doğal dolayısıyla bu sanki artı gibi gelmiş olacak. Şu kısmı.
+
+333
+00:54:00,372 --> 00:54:01,492
+Kafalar karıştı.
+
+334
+00:54:02,992 --> 00:54:04,951
+Bakın örneği var mı? Yok.
+
+335
+00:54:08,660 --> 00:54:14,860
+Tamam, şuradan sayısal olarak. Şimdi şöyle söyleyelim. Ne yapmaya çalışıyorum? Biraz daha başa gittim.
+
+336
+00:54:16,420 --> 00:54:23,259
+Algoritmamın içinde, hatta en başa gittim. Algoritmamın içinde Learn One Rules var diye bir şey vardı. Hatırladık mı?
+
+337
+00:54:24,879 --> 00:54:26,827
+Bunlar ne yapıyorduk? Her seferinde...
+
+338
+00:54:26,899 --> 00:54:46,319
+Datayı parça parça cover edecek, sınıfları ayrılacak, rullar bulmaya çalışıyorduk. Bunun içinde iki tane yöntem vardı. Bir tanesi en genelden başlıyorduk, ekleyerek, özelleştirerek gidiyorduk rulları. Hatırladık mı? Değil mi? Diğerine de özelden başlayarak sile sile gidiyorduk.
+
+339
+00:54:48,723 --> 00:54:52,423
+Rul buluyorum ben ama şimdi algoritmam nasıl çalışacak?
+
+340
+00:54:53,043 --> 00:55:01,202
+İşte diyelim ki ilk Rula, diyelim ki genelden özel ede Rula birinci etribüyot ekleyecek, ikinci etribüyot ekleyecek, üçüncü etribüyot ekleyecek.
+
+341
+00:55:01,322 --> 00:55:03,483
+Bakacak hangisi daha iyi bu üç taneden.
+
+342
+00:55:03,483 --> 00:55:07,435
+Şimdi bunu yaparken dedik ki sadece...
+
+343
+00:55:07,795 --> 00:55:20,475
+Yani, accuracy'ye baktım dedik ama sadece accuracy'ye bakaması mantıklı değil. Çünkü sadece bir taneyi bile cover ediyorsa, dataset'in içinde %100 accuracy çıkar dedik. Dolayısıyla cover içi de alması gerekiyor. Değil mi?
+
+344
+00:55:20,896 --> 00:55:29,055
+Diyelim ki şu örneğe bakalım, belki biraz daha aklımıza yatar. Şimdi training data da 60 pozitif olsun, 100 tane negatif örnek olsun.
+
+345
+00:55:29,216 --> 00:55:35,596
+Yani iki tane klas var, bunları klas olarak düşünebilirsiniz. 60 pozitif var, 100 tane negatif var.
+
+346
+00:55:35,596 --> 00:55:45,536
+Şimdi R1'in içinde 50 tane pozitif ve 5 tane negatif varsa, R2'de de 2 pozitif ve de hiç negatif örnek yoksa.
+
+347
+00:55:46,196 --> 00:56:02,175
+Hangisi daha iyidir baktığımız zaman? Sadece ekürsiye baksak, R2 daha iyi değil mi? %100 gözüküyor. Ama ve lakin hiç aslında etkisi çok az. Sadece iki tane örneği ayırabiliyor.
+
+348
+00:56:03,396 --> 00:56:11,836
+60 pozitiften. Ama şuna baktığımız zaman 60 tanenin 50 tanesini pozitif olarak sınıflandırırken,
+
+349
+00:56:12,112 --> 00:56:21,552
+Beş tane de negatif olarak buluyor. Dolayısıyla bu negresisi yaklaşık %90 civarı gözükse de, cover içine daha yüksek.
+
+350
+00:56:21,552 --> 00:56:27,372
+Dolayısıyla diyoruz ki, yeni bir tane metreye ihtiyacımız var. Metrik de şu, tamamen.
+
+351
+00:56:29,012 --> 00:56:33,992
+R0, tamam mı? Sadece içinde A ise kalası şudur diyorum.
+
+352
+00:56:35,987 --> 00:56:43,127
+A ise, A, B, B ise yani A'nın yanına ikinci bir atribüt olan B'yi ekledim. Tamam mı?
+
+353
+00:56:43,547 --> 00:56:52,226
+B klası budur diyorum. Şimdi bakıyorum. Şu R0 mı daha iyi yoksa B'yi ekleyince R1 daha iyi bir hale geldi mi gelmedi mi?
+
+354
+00:56:52,547 --> 00:56:53,927
+Tamam mı? Bunu anlamaya çalışıyorum.
+
+355
+00:56:54,607 --> 00:57:01,427
+Bunun için de bakın şurada P1 aslında bölü P1 artı M1 ne demek?
+
+356
+00:57:02,228 --> 00:57:07,468
+Bunun doğru sınıfladıkları bir de artı ne bir? Yanlış sınıfladıkları.
+
+357
+00:57:07,927 --> 00:57:16,067
+Yani şuraya baktığımız zaman elli pozitif beş tane negatif vardı ya, bu elli bölü elli beş gibi bir değer gelecek buradan.
+
+358
+00:57:16,627 --> 00:57:17,048
+Tamam mı?
+
+359
+00:57:19,387 --> 00:57:27,947
+Şimdi buraya baktığımız zaman eğer ki bu çok iyi bir sınıflandırıcıysa bunun değeri kaç olacak? Bire yakın bir şey olacak.
+
+360
+00:57:29,127 --> 00:57:29,567
+Doğru mu?
+
+361
+00:57:30,324 --> 00:57:39,702
+Eğer ki iyi sınıflandıramadıysa mesela, 1 bölü 2 civarı bir şey olacak. Doğru mu?
+
+362
+00:57:40,702 --> 00:57:51,604
+Dolayısıyla burada alırken ve yani bakalım şu iken daha yüksek bir şey çıkarsa nedir? Daha iyi sınıflandırıyor demektir.
+
+363
+00:57:51,604 --> 00:57:53,604
+Ama yaparken şimdi...
+
+364
+00:57:54,163 --> 00:58:10,043
+R1 var. Bir de burada diyelim ki C ekleyecek buna. A ve C, klas üçü. Yani klas diyecek. A ve D diyecek. Dolayısıyla hangisini alayım derken C'ye D'ye de bakması lazım. İşte bir de bunu ne yapıyoruz? P1'le çarpıyoruz. P1 ne? Bunun pozitif bulduğu.
+
+365
+00:58:10,451 --> 00:58:25,652
+Hangisinin cover'ıcı daha çok? Yani P1 dediğinde çarpmak aslında ne kadar çok datayı cover ediyorsa kat sayı gibi onunla çarpmış oluyor. Başka bir şey yapmıyor aslında. Tamam mı? Öyle söyleyelim.
+
+366
+00:58:29,875 --> 00:58:32,475
+Böyle çok, yani kafa karıştıracak bir şey değil.
+
+367
+00:58:34,134 --> 00:58:39,216
+Şimdi, bu neydi? Bu direct metotu. Rule'ları iki şekilde yapabiliriz dedik.
+
+368
+00:58:39,674 --> 00:58:43,336
+Bir direct metot dedik, daha sonra da algoritmayı verdik.
+
+369
+00:58:43,774 --> 00:58:45,995
+Bir de dedik ki indirect metot vardır dedik.
+
+370
+00:58:46,174 --> 00:58:50,554
+Bununla da decision tree'yi oluşturursunuz C4.5 gibi yöntemlerle.
+
+371
+00:58:51,216 --> 00:58:52,394
+Sonra da ne yapacağız?
+
+372
+00:58:52,820 --> 00:58:58,960
+Tree'nin root'undan başlayarak leaf'lere giderek giderek kuralları ne yapacağız? Yazacağız.
+
+373
+00:58:59,778 --> 00:59:03,600
+Root'tan her bir leaf'e olan pet'teki şeyleri ekleyeceğiz.
+
+374
+00:59:04,120 --> 00:59:10,639
+Yani age küçüktür 30'sa ve student'ı no ise işte by computer no.
+
+375
+00:59:11,220 --> 00:59:15,100
+Buradan başlayarak hepsini ne yapıyoruz? Bir kural olarak yazıyoruz.
+
+376
+00:59:15,100 --> 00:59:19,000
+Peki kurallara baktığımız zaman mutual exclusive midir?
+
+377
+00:59:22,034 --> 00:59:42,294
+Değildir değil mi? Çünkü niye? Her şey bir kural içine girer. Niye? Çünkü naive kadar gittiği için. Ve ağaçlardan bahsederek bir etribütü bir kere kullanıyorduk demiştik. Değil mi? Peki, egzostil midir? Açıkta kalan var mıdır? Neden yoktur?
+
+378
+00:59:46,995 --> 00:59:53,054
+Trendset'ten oluşturduğumuz için ExosTri. Açıklı bir şey.
+
+379
+00:59:53,054 --> 01:00:00,274
+Bu da, yani budanmamış Tri'den nasıl yaparsınız?
+
+380
+01:00:02,355 --> 01:00:07,815
+Çok anlatmamıza gerek yok. Yani dediğim gibi, Root'tan başlayarak, Leaf'lere giderek.
+
+381
+01:00:10,899 --> 01:00:32,960
+şey şeklinde yazarsınız, kural şeklinde yazarsınız. Burada da şey anlatıyor. Eğer ağaç kullanmamışsa işte birden fazla kere geçebilir ya, orada ne yaparsınız anlatıyorum onu geçiyorum. Tamam. Şimdi kurallar bu kadar. Şimdi geçiyoruz ikinci bir yönteme. İstatistiksel bir yöntem olan naive Bayes Classification.
+
+382
+01:00:34,740 --> 01:00:39,339
+Bu tamamen istatistikten veri madenciliğine girmiş bir metot.
+
+383
+01:00:40,759 --> 01:00:51,438
+Ne yapıyorsunuz? Dediğim gibi Bayes sınıflandırıcılar tamamen istatistiksel yöntemler ve kullandığı şey de Bayes teoreminin kendisi.
+
+384
+01:00:51,438 --> 01:00:53,178
+Olasılıklı istatistikte.
+
+385
+01:00:53,971 --> 01:01:04,812
+%99 gördüğünüz bir yöntem. Tamam mı? Ve baktığımız zaman işte en basiti bunun şeyleri var, farklı farklı çeşitleri var.
+
+386
+01:01:04,812 --> 01:01:14,030
+Ney Bayes klasifi var. Bunun dışında işte Blif Networkler vs. var. Onlar da yine bunlardan türemiş şeyler.
+
+387
+01:01:14,484 --> 01:01:31,302
+Ve baktığımız zaman yine şey değil, tüm optimal Bayes metodunun yani inference'ını yapmak, bütün şeyleri çıkarmak çok büyük veri setlerinde olası değil.
+
+388
+01:01:31,504 --> 01:01:35,144
+Ama çıkardığı kadarıyla ne yapıyor? Güzel sonuç veren bir yöntem.
+
+389
+01:01:35,942 --> 01:01:38,903
+Şimdi gelelim probability kısmına.
+
+390
+01:01:40,850 --> 01:01:42,572
+Şimdi P A dediğimiz şey ne?
+
+391
+01:01:46,899 --> 01:01:49,538
+A eventinin, A olayının olma ihtimali.
+
+392
+01:01:50,219 --> 01:01:53,479
+Peki, şurada PA given B ne demek?
+
+393
+01:01:54,278 --> 01:01:57,558
+B olduğunda, değil mi?
+
+394
+01:01:58,158 --> 01:01:59,778
+A'nın olma ihtimali.
+
+395
+01:02:00,958 --> 01:02:04,778
+Peki, A ve B, independent mu değil mi?
+
+396
+01:02:10,034 --> 01:02:14,115
+Neden bağımsız olması lazım?
+
+397
+01:02:18,100 --> 01:02:37,139
+Tamam, burası dursun, birazdan söyleyeceğiz. Şunu da notasyonda kesişim olarak düşünebilirsiniz. Tamam mı? Şu bazı kitaplarda virgül diye geçer. A kesişim, B gibi düşünebilirsiniz. Bu da ne? Joint probability. Yani A ve B'nin olma ihtimali.
+
+398
+01:02:38,360 --> 01:02:39,139
+Sayın mı?
+
+399
+01:02:40,019 --> 01:02:45,580
+Ve burada baktığı zaman kesim olduğu için işte A kesim de eşittir, B kesişim A gibi ne yapabilirsiniz?
+
+400
+01:02:45,759 --> 01:02:49,220
+Eventleri düşünebilirsiniz. İkisinin de olma ihtimali.
+
+401
+01:02:50,259 --> 01:03:00,500
+Şimdi Bayes teoremine baktığımız zaman, yani böyle yazmaya çalışacağım bakalım ne kadar yazacağım.
+
+402
+01:03:00,500 --> 01:03:06,740
+Şimdi A kesişim B ne demek baktığımız zaman?
+
+403
+01:03:07,283 --> 01:03:08,283
+Şöyle çizeyim.
+
+404
+01:03:10,323 --> 01:03:12,964
+Bu A event olsun, bu da B event olsun demek.
+
+405
+01:03:13,724 --> 01:03:14,244
+Tamam mı?
+
+406
+01:03:15,764 --> 01:03:16,163
+Şimdi.
+
+407
+01:03:20,596 --> 01:03:36,956
+Şu koşullu olasılıkta, B olduğu zaman, A'nın olma ihtimalinde bakın, B olmuş, tamam mı? Bunu biliyoruz. Tamam, B olmuş, şu B'nin olduğunu biliyoruz.
+
+408
+01:03:37,875 --> 01:03:47,395
+Ama bu olduğu zaman, bir de ne var diyor? Şunun olma ihtimali diyor. Yani aslında şurası, değil mi? Dolayısıyla bakarsanız.
+
+409
+01:03:49,394 --> 01:03:51,375
+Şöyle yazarız, yazabilecek miyiz bakalım?
+
+410
+01:03:54,375 --> 01:03:55,056
+P-A
+
+411
+01:03:58,802 --> 01:04:20,302
+Given B eşittir desek. Şimdi ne yapıyorum? Bunların kesişi mi? P-A kesişim, B bölü. P-B midir? Budur değil mi? Peki, ben bunu şu şekilde yazabilir miyim?
+
+412
+01:04:26,995 --> 01:04:41,054
+A olduğunda B, yani A given B dediği zaman, yine bu P, A kesişim B, bölü A'nın probabilisi midir?
+
+413
+01:04:41,815 --> 01:04:43,875
+Evet, şimdi tutsam.
+
+414
+01:04:46,615 --> 01:04:51,674
+Şu ikisi ortak mı? Kesişimler. Ortak değil mi?
+
+415
+01:04:52,370 --> 01:04:55,291
+Buradan bunu çeksem, şunu yazabilir miyim ben?
+
+416
+01:04:56,811 --> 01:04:59,931
+P, yazamıyorum.
+
+417
+01:05:01,030 --> 01:05:04,691
+Bu parantez.
+
+418
+01:05:07,431 --> 01:05:08,510
+Böyle yazacağız.
+
+419
+01:05:09,370 --> 01:05:10,191
+Bunu çeksek.
+
+420
+01:05:12,471 --> 01:05:14,471
+Bakın sadece yaptığım şey şunu çeksem.
+
+421
+01:05:15,951 --> 01:05:17,770
+P, A, given, B.
+
+422
+01:05:18,831 --> 01:05:19,370
+Tamam mı?
+
+423
+01:05:19,711 --> 01:05:43,792
+Ne olacak? Bölü var burada. Bölü buraya nasıl geçer? Çarpım olarak geçer değil mi? Pb. Peki, eşittir desem. Şu ikinci denklemden de yine P-A kesişin B'yi çeksem. Bunu da bu şekilde yazabilir miyim? PbA çarpı P-A olarak yazabilir miyim? Yazabilirim. Değil mi?
+
+424
+01:05:45,202 --> 01:06:01,062
+Dolayısıyla da, bakın şu pb'yi de aldım. Tamam mı? Buradan sildim. Şuraya aşağıya bölü pb olarak yazdım.
+
+425
+01:06:07,092 --> 01:06:16,192
+Ne oldu? B olduğunda A'nın olma olasılığı neye eşit? A olduğunda B'nin olma olasılığı çarpı, A'nın olma olasılığı bölü, B'nin olma olasılığı.
+
+426
+01:06:16,192 --> 01:06:31,692
+Değil mi? İşte bu ne? Bu bildiğimiz Bayes teoremi. Yaptığımız hiçbir şey yok. Yaptığımız şey, şuradaki kesişimleri çekip birbirini eşitlemek.
+
+427
+01:06:32,818 --> 01:06:42,078
+Eşitledikten sonra da elimizde kalan şey, yani bir tarafı çekerseniz buradan, bu ne? Bildiğimiz Bayes teoremi oldu.
+
+428
+01:06:43,278 --> 01:06:48,338
+Şimdi bunları yaptık, hemen hızlıca bir örneğe bakalım.
+
+429
+01:06:49,798 --> 01:06:51,719
+Şimdi, üst kere şimdi dedim.
+
+430
+01:06:53,118 --> 01:06:56,538
+Elimde, peki bunu ben elimdeki veriye nasıl uygulayacağım?
+
+431
+01:06:57,278 --> 01:06:58,098
+Tamam, buna bakalım.
+
+432
+01:06:58,708 --> 01:07:01,627
+B olduğu zaman A'nın olması ne demekmiş?
+
+433
+01:07:02,468 --> 01:07:06,488
+Şimdi A ve B'nin bunları true-false, true-false yapmış tamam mı?
+
+434
+01:07:07,268 --> 01:07:08,326
+Şimdi bakalım buraya.
+
+435
+01:07:09,607 --> 01:07:12,607
+Şimdi A'ya baktığım zaman kaç satır var burada?
+
+436
+01:07:13,048 --> 01:07:14,607
+İkisinde de 7'şer satır var.
+
+437
+01:07:14,607 --> 01:07:15,288
+Değil mi?
+
+438
+01:07:16,087 --> 01:07:17,907
+Peki A'nın olma ihtimali ne?
+
+439
+01:07:18,127 --> 01:07:21,028
+1, 2, 3, 4 tanesi true.
+
+440
+01:07:21,615 --> 01:07:30,895
+O zaman 4 bölü 7. P, A 4 bölü 7. P, B kaç? Ona bakalım. 1, 2, 3 bölü 7 de B'nin olma ihtimali.
+
+441
+01:07:33,596 --> 01:07:41,395
+7 tane slotta şöyle düşünün, zaman slotu gibi düşünün. Mesela birinci slotta A da olmuş, B da olmuş.
+
+442
+01:07:42,115 --> 01:07:48,556
+İkinci slotta A olmuş, B olmamış. Üçüncü slotta A olmamış, B olmuş gibi düşünebilirsiniz.
+
+443
+01:07:49,236 --> 01:07:56,316
+Dolayısıyla A'nın olma ihtimali 4 bölü 7 iken B'nin olma ihtimali şu satıra baktığımız zaman alttaki satıra 3 bölü 7'yi bulduk mu bulduk.
+
+444
+01:07:57,256 --> 01:08:04,336
+Şimdi neyi bulalım? A olduğunda B'nin olma ihtimalini bulalım.
+
+445
+01:08:04,336 --> 01:08:15,796
+Şimdi A olduğunda B olmuş mu? Evet burada olmuş. A olduğunda B olmuş mu? Olmamış.
+
+446
+01:08:16,626 --> 01:08:41,767
+Çarpı koyalım. A da olmamış. A olmamış. A olduğunda B olmuş mu? Olmuş. Burada A olmamış. A olduğunda B olmuş mu? Hayır olmamış. Değil mi? Dolayısıyla bakarsak kaç durum var? 4. Yani 1, 2, 3, 4. İki tanesi tikli, iki tanesi çarpı. O zaman 2 bölü 4 diyeceğiz. A olduğunda B'nin olma ihtimali.
+
+447
+01:08:42,132 --> 01:08:46,211
+Tam tersten bakarsak, B olduğunda A'nın olma ihtimaline bakarsak.
+
+448
+01:08:49,010 --> 01:08:50,530
+True, true, bir.
+
+449
+01:08:52,510 --> 01:08:53,692
+Şöyle gelelim.
+
+450
+01:08:54,152 --> 01:08:54,932
+True, false.
+
+451
+01:08:55,250 --> 01:08:57,192
+True, true. Şunu çarpı yapalım.
+
+452
+01:08:59,192 --> 01:09:02,050
+Başka renk yazacağım.
+
+453
+01:09:03,090 --> 01:09:03,971
+True, true.
+
+454
+01:09:04,871 --> 01:09:05,672
+Tamam, okey.
+
+455
+01:09:07,050 --> 01:09:08,090
+True, false.
+
+456
+01:09:08,892 --> 01:09:09,451
+Çarpı.
+
+457
+01:09:10,836 --> 01:09:35,615
+True true bu başka da yok zaten. Dolayısıyla B olduğunda A'nın olma ihtimaline 2 bölü 3. Peki A kesişin B'ye bakarsak, A kesişin B ne demek? İkisinin de olması. Değil mi? Nedir? Bu true true olan bir bu var. Bir de true true olan bu var. O zaman 2 bölü kaç? Toplam 7 tane slot olduğu için 2 bölü 7 de A kesişin B.
+
+458
+01:09:39,124 --> 01:09:44,864
+Burada da yerine koyarak olup olmadığını göstermiş Bayes teorimi. Korekliği de böyle zaten şey olmaz.
+
+459
+01:09:45,962 --> 01:09:51,482
+Ama ne demek B olduğunda A'nın olmasıyla? A kesişin B aynı şey mi?
+
+460
+01:09:54,420 --> 01:10:05,400
+Değil değil mi? Yani A kesişim ikisinin de olması iken, şuradaki koşullu olasılıkta A olduğunda B'nin olması ne içeriyor?
+
+461
+01:10:05,880 --> 01:10:11,880
+Bakın kesişim ikisinin de true true olduğunu içerirken, PB given A ne yapıyor?
+
+462
+01:10:12,140 --> 01:10:17,558
+Bunda A olacak, A olduğunda B'nin false olanları da buraya dahil.
+
+463
+01:10:17,558 --> 01:10:18,880
+Tamam mı?
+
+464
+01:10:26,228 --> 01:10:43,288
+Peki, şu soruyu yapmaya çalışalım. Şöyle yapalım, görmeyiz. Tamam. Şimdi, soruya bakalım. Diyor ki, menenjit varsa diyor, menenjit %50'de boyun tutulmasına neden olur diyor. Tamam mı?
+
+465
+01:10:52,884 --> 01:10:55,364
+Boyun tutulması ihtimali 1 bölü 20.
+
+466
+01:10:56,702 --> 01:11:03,124
+Peki, bir hastanın boynu tutuksa menenjit olma ihtimali nedir? Bunu soruyor.
+
+467
+01:11:03,903 --> 01:11:04,624
+Nasıl yapacağız?
+
+468
+01:11:07,242 --> 01:11:08,804
+Direkt Bayes teoreminden değil mi?
+
+469
+01:11:09,344 --> 01:11:15,864
+Ne yapacağız? Eşittir dedikten sonra, demeyeceğim muhteşem kalemimle, şuradan göstereceğim.
+
+470
+01:11:20,276 --> 01:11:24,214
+Boyun tutulması varsa menenjit olma ihtimali Bayes teoreminden ne?
+
+471
+01:11:24,694 --> 01:11:31,434
+Menenjitse boyun tutulması olma ihtimali çarpı menenjit olma ihtimali bölü, boyun tutulması olma ihtimali değil mi?
+
+472
+01:11:32,654 --> 01:11:39,434
+Koyduğu zaman bakın ne çıkıyor? 10.000'de 2 gibi çok çok düşük bir oran çıkmış oluyor.
+
+473
+01:11:40,056 --> 01:11:44,596
+Bunlar zaten istatistikten olasaktan biraz bildiğiniz şeyler.
+
+474
+01:11:44,596 --> 01:11:45,894
+Peki.
+
+475
+01:11:47,188 --> 01:11:50,827
+İki olayın, iki eventin birbirinden bağımsız olması ne demek?
+
+476
+01:11:51,968 --> 01:11:55,208
+Eğer ki, şurası bir kesişim olarak düşünebilirsiniz.
+
+477
+01:11:55,968 --> 01:11:59,528
+Bunların kesişimleri birbirinin çarpımına eşitse nedir?
+
+478
+01:12:00,448 --> 01:12:02,988
+İki olay birbirinden bağımsızdır.
+
+479
+01:12:03,567 --> 01:12:04,688
+Mesela şuraya bakalım.
+
+480
+01:12:06,708 --> 01:12:10,607
+Üç uzunluğunda bitlerim var gördüğünüz gibi.
+
+481
+01:12:10,607 --> 01:12:13,988
+Sekiz tane durumu.
+
+482
+01:12:14,462 --> 01:12:29,762
+Şimdi A eventi diyor ki, rastgele oluşan üç bitmiş bir şeyin bir ile başlama ihtimali event A, event B'den bir ile bitme ihtimali. Tamam mı?
+
+483
+01:12:30,482 --> 01:12:35,384
+Şimdi baktığımız zaman bunlar birbirinden bağımsız mıdır değil midir? Nasıl yaparsınız?
+
+484
+01:12:36,242 --> 01:12:58,384
+P-A'yı bulacağız, P-B'yi bulacağız, bir de bunların kesişimini bulacağız. Yani birle başlayıp birle bitenleri bulacağız. Eğer ki kesişimleri birbirlerinin çarpımına eşit ise, diyeceğiz ki bunlar bağımsızdır diyeceğiz. Şimdi A'ya bakalım. A'nın birle başlaması. Burada kaç tane string var? 2 üzeri 3'den 8.
+
+485
+01:12:59,250 --> 01:13:12,290
+Kaç tanesi bir ile başlar? Ben size söyleyeyim yarısı. 1 bölü 2 demeyelim de 4 bölü 8. Peki kaç tanesi bir ile biter? Yine yarısı. Bu da 4 bölü 8.
+
+486
+01:13:12,290 --> 01:13:24,076
+Şimdi, peki diyor ki A kesişim B ne demek? Bir ile başlaması ve bir ile bitmesi. Bir ile başlayıp...
+
+487
+01:13:24,115 --> 01:13:33,866
+Bir ile biten kaç tane durumum var? Bir bu var, bir de bu var. İki tane. Yani 2 bölü 8. Şimdi bakıyorum. Eğer ki 2 bölü 8 eşit ise...
+
+488
+01:13:37,906 --> 01:13:39,467
+2 bölü 8, bakacağız.
+
+489
+01:13:43,538 --> 01:13:49,679
+Eşit midir? Soru işareti. 4 bölü 8 çarpı 4 bölü 8.
+
+490
+01:13:51,358 --> 01:13:52,338
+Üf yazamıyorum.
+
+491
+01:13:56,884 --> 01:14:00,963
+Neyse bu 4 bölü 8 tamam mı? Bakıyoruz bu buna eşit mi değil mi?
+
+492
+01:14:05,663 --> 01:14:08,384
+Eşit. O zaman diyoruz ki bunlar bağımsızdır.
+
+493
+01:14:09,844 --> 01:14:17,624
+C'ye bakalım bir de C yapmış. Demiş ki iki tane bir içermesi. Bundan bağımsız mıdır değil midir?
+
+494
+01:14:18,104 --> 01:14:20,564
+Şimdi ne yapıyoruz? Zaten PAPB'yi biliyoruz.
+
+495
+01:14:21,778 --> 01:14:49,200
+Peki, iki tane bir içeren kaç tane varmış? Üç tane varmış, üç bölü sekiz. Tamam. Sonra diyor ki A ve C bağımsız mıdır? Bunları soruyor. Şimdi C, üç bölü sekiz, iki tane bir içermesi. Bu da bir ile başlayanlar. Değil mi? P, A'da bir ile başlayanlar. Peki, bir ile başlayıp iki tane bir içeren kaç taneymiş? İki tane yine, iki bölü sekiz.
+
+496
+01:14:49,714 --> 01:15:01,836
+Baktığımız zaman 4 bölü 8 çarpı 3 bölü 8, 2 bölü 8'e eşit mi? Hayır değil. O zaman bunlar bağımsız mıdır? Hayır, bağımsız değildir.
+
+497
+01:15:02,494 --> 01:15:11,894
+İki tane bir içermesi ile bir ile başlaması olayları bağımsız değildir. Bunu bulmuş olduk.
+
+498
+01:15:12,914 --> 01:15:18,214
+Peki, iyi, güzel, hoş. Ben bunu nasıl kendi datama uygulayacağım?
+
+499
+01:15:21,748 --> 01:15:22,146
+Hmm?
+
+500
+01:15:25,618 --> 01:15:39,740
+Dataya nasıl uygularız bunu? Bayes teoremi biliyorsunuz değil mi? Şimdi benim elimde bir training set var. Bayes teoremini training sette Bayes teoremini nasıl uygularım?
+
+501
+01:15:48,307 --> 01:15:49,386
+Hiç fikir yok mu?
+
+502
+01:15:54,194 --> 01:16:17,454
+Şimdi burada A, B, C dediğimiz eventler ne? Neye denk gelecek? Attribütlere denk gelecek değil mi? Peki, P, A, işte Given Bay diyoruz ya, buradaki B attribüklarken A ne olmuş olacak? Klası olmuş olacak aslında.
+
+503
+01:16:17,906 --> 01:16:35,767
+Yani, diyeceğiz ki, eğer ki attribütleri bu ve bu ve bu ise, ise demiyorum, given'dan, yani given'dan sonrası attribütler bunlarsa, sınıfın olma ihtimali nedir? Bunu bulmuş olacağız. Yapmaya çalıştığım şey bu.
+
+504
+01:16:36,288 --> 01:16:42,067
+X dediğimiz, verimizin bir örneği, veri olsun, tamam mı? Sınıfını biliyor muyum? Biliyorum, tamam mı?
+
+505
+01:16:44,692 --> 01:16:53,152
+H dediğim şey de hipotez olsun. X datası, yani X attribütleri gibi düşünebilirsiniz.
+
+506
+01:16:53,711 --> 01:16:56,810
+Class C'ye ait mi değil mi? Attribütler var mı? Veriyorlar.
+
+507
+01:16:57,230 --> 01:16:59,030
+Ve dolayısıyla ne yapmaya çalışıyorum ben?
+
+508
+01:16:59,634 --> 01:17:21,076
+Şu X hipotezimde diyorum ki X bunu verdiğim zaman, yani deminki hayvan türleri örneğinden gidersek, kan tipi sıcak kanlıysa ve ondan sonra uçma yeteneği evet var gibi var, evet ise onlar nereye gidiyor? X'e girmiş oluyor.
+
+509
+01:17:24,654 --> 01:17:33,875
+Bu hipotezim, yani bu hipotezimde ne diyeceğiz? Bu, bu klasa ait midir? Onu söylemeye çalışacağız.
+
+510
+01:17:35,914 --> 01:17:39,714
+Tamam mı? Ve burada da ne yapıyoruz? Şimdi şunları söyleyelim yine.
+
+511
+01:17:41,434 --> 01:17:48,654
+Şimdi hipotezimle X, C sınıfına ait mi değil mi? H ile gösterdiğim şey o. Tamam mı?
+
+512
+01:17:50,578 --> 01:17:58,220
+Bizim priori probabilitimiz, yani bunun bu sınıfa ait olma ihtimali.
+
+513
+01:17:58,838 --> 01:18:07,058
+Peki, hipotez verildiği zaman bu data olma ihtimali, bölü, datanın kendisi olma ihtimali.
+
+514
+01:18:07,058 --> 01:18:14,419
+Ve ne yapacağız? Bu probabilitleri hesaplayacağız. Hangi sınıfınki daha yüksek çıkarsa diyeceğim ki bunun sınıfı budur diyeceğim.
+
+515
+01:18:14,940 --> 01:18:17,298
+Bu karışık anlatma, şimdi şuradan anlatacağız.
+
+516
+01:18:18,770 --> 01:18:21,711
+Şimdi gelelim, direkt örnek üstünden göstereyim.
+
+517
+01:18:26,030 --> 01:18:27,951
+Continuous var mı? Yok burada. Tamam.
+
+518
+01:18:28,550 --> 01:18:33,750
+Şimdi buna bakalım, tamam. Görüyor musunuz datayı? Görüyorsunuz. Kaç satırımız var? 14 tane.
+
+519
+01:18:34,411 --> 01:18:37,490
+Sınıflar ne? Şu, Bayes Computer, No mu, Yes.
+
+520
+01:18:38,030 --> 01:18:45,490
+Baktığımız zaman 4-5 tanesi No iken, 9 tanesi de Yes.
+
+521
+01:18:45,759 --> 01:18:58,980
+14 tane. Dolayısıyla şimdi bunun yes olma ihtimali tek başına ne? 9 bölü, on, 9 bölü, on, dört. No olma ihtimali de 5 bölü, on, dört. Tek başına bunları bulduk.
+
+522
+01:19:10,674 --> 01:19:29,894
+Yes, yani burası class, tamam mı? Class'ı yes ise, işte yaşın 31'den küçük olma ihtimali, 31-40 arası olma ihtimali, 40'dan büyük olma ihtimali. Direkt sayıyorum kaç tane olduğu. Ama bakın burada ne var? Given kısmından sonra class'ımızın ne olduğu var.
+
+523
+01:19:37,663 --> 01:19:49,344
+3 tanesi 40 yaşından büyük. No'lara baktığımız zaman 5 tane no var. 30'dan küçük şu. 30'dan küçük 3 tane var. Dolayısıyla 3 bölü 5 geliyor.
+
+524
+01:19:49,604 --> 01:19:58,663
+Ya da 31-40 arası olup da no olan baktığımız zaman hiç yok. Dolayısıyla 0 gelmiş. Tamam mı?
+
+525
+01:19:59,682 --> 01:20:02,844
+Sonra aynı şeyi şimdi ne yaptık? H için yaptık.
+
+526
+01:20:03,316 --> 01:20:15,056
+Sonra income için yapıyoruz, gelir için. Tamam mı? Bakıyorum, eğer bilgisayar almadığını biliyorsam, income'ı nedir? Olasılıkları hesapladım.
+
+527
+01:20:16,434 --> 01:20:27,296
+Sonra da ne yapıyorum işte aynı şeyi student için ve credit rating için yaptım mı? Yaptım. Hepsinin ihtimali bulduk mu? Bulduk.
+
+528
+01:20:28,115 --> 01:20:30,474
+E peki böyle hepsine tek tek tek tek mi yapacağız?
+
+529
+01:20:31,412 --> 01:20:34,290
+Probobisleri. Hayır, ne yapacağız?
+
+530
+01:20:38,002 --> 01:20:53,103
+Şöyle bir şey yapacağız. Şimdi en yüksek, bunlardan en yüksek olanları alıyoruz. Burada en yüksek olan kaç? 4 bölü 9 mu? Yes. Peki burada en yüksek olan yine 4 bölü 9, income'ı medium olan. Tamam.
+
+531
+01:21:03,796 --> 01:21:12,476
+Yes için ama, no için değil. Şurada birleştirelim. Tamam mı? Ve şimdi ne yapıyorum? Bunlara dörtlü dörtlü bakıyorum. Nasıl yapacağız?
+
+532
+01:21:13,394 --> 01:21:38,515
+Eğer ki ve bunların hepsinin independent olduğunu düşündüğü için şunu bulmaya çalışıyor. Bir kişinin yaşı 30'dan küçükse, income-ı medium-sa, student-ı yes-se, credit-faire-se bunların ihtimallerini çarptığı zaman bilgisayar alır mı? Yes-mi, no-mu? İşte 0.0044 çıkıyormuş. Tamam mı? Peki bunlar bilgisayar almaz mı? Yani şu tarafına baktığımız zaman.
+
+533
+01:21:39,188 --> 01:21:54,688
+Ne çıktı? 0-0-19 çıktı. Değil mi? Ama bunları tek başına alabilir miyim? Yine alamam. Niye? Çünkü ne yapmam lazım? Normalize etmem lazım. Toplamda 9 no var.
+
+534
+01:21:55,607 --> 01:22:03,688
+Yok, 9 yes var, 5 no mu var? 9 yes, 5 no var ya, bunları priori probabiliteleriyle de çarpmam lazım. Dolayısıyla...
+
+535
+01:22:05,140 --> 01:22:16,819
+Diyorum ki, alanlardan, bilgisayar alanlarla ne yapıyorum? Alanların x olanları, yani attribütleri şu olanların çarpımı bana şunu verdi, 0.9.28.
+
+536
+01:22:17,778 --> 01:22:24,038
+No olanların, yani 5 bölü 14 ile şuradaki bulduğum değeri çarptığım zaman da bunu verdi.
+
+537
+01:22:24,819 --> 01:22:27,660
+Dolayısıyla hangisi daha yüksek? Bu daha yüksek.
+
+538
+01:22:31,188 --> 01:22:56,906
+şeyi, karşılığı yes'tir diyorum. Tamam mı? Bunu buldum. Şimdi nasıl buldum? Şöyle söyleyelim. Şimdi şunların hepsini hesapladım, bir yerde tutuyorum. Tamam mı? Bunları nereden hesapladın? Training setten hesapladım. Şimdi geldim test zamanına. Test zamanında diyor ki bana.
+
+539
+01:22:57,344 --> 01:23:17,224
+Bir kişinin yaşı otuzdan küçükse, income, mediumsa, student, yes, credit fairsa bu bilgisayar alır mı almaz mı bana bul diyor. Tamam mı? Ben de Bayes teoreminden ne yapacağım? Şuna bakacağım. Elimdeki zaten data yani şuradaki training setten olasılıkları çıkartacağım.
+
+540
+01:23:22,976 --> 01:23:48,335
+bilgisayar aldıysa yani şu data da bilgisayar aldıysa yaşı otuzdan küçük olma ihtimali nedir? Şu. Tamam mı? Yes yani bir şunu yes için hesaplayacağım ihtimali bir de no için hesaplayacağım. Tamam mı? Ne olmuş aslında bu ne demek? Bilgisayar alanların data da da tama göre.
+
+541
+01:23:48,947 --> 01:24:00,367
+Kaç tanesi x'miş? Yani x'in içinde ne var? Yaşı 30'dan küçük, income, medium, student, yes. Onlar da nerede var? Şuradaki tablondan çıkarttığım ihtimaller yani.
+
+542
+01:24:00,367 --> 01:24:02,907
+Tamam mı? Buna göre hesapladım.
+
+543
+01:24:03,668 --> 01:24:09,088
+Sonra aynı şeyi almayanlardan kaç tanesi şuna uyuyor? Yani şöyle söyleyelim.
+
+544
+01:24:09,927 --> 01:24:21,487
+Almayanların age'i küçüktür 30 olan, bilgisayar almamış income'ı medium olan, almamış student yes olanların ihtimallerini ne yaptım? Çarptım.
+
+545
+01:24:22,347 --> 01:24:28,847
+Sonra bir de bunları toplam yes ile no ile çarptım ki burada zaten bir şey olmasın diye. Tamam mı? Yine formülden.
+
+546
+01:24:29,280 --> 01:24:33,139
+Sonra hangisinin ihtimali daha yüksek çıktıysa diyorum ki bu budur diyorum.
+
+547
+01:24:33,679 --> 01:24:41,199
+Yani aslında bana verilen bir etribük için şu tablodan ihtimalleri Bayes törenine göre hesaplayıp ne diyorum?
+
+548
+01:24:42,199 --> 01:24:46,239
+Sınıfını bulmaya çalışıyorum. Yapmaya çalıştığım şey tamamen bu.
+
+549
+01:24:48,239 --> 01:24:50,239
+Herkes bayıldı. Hiç kimse bir şey anlamış ki.
+
+550
+01:24:50,239 --> 01:24:56,059
+Bir daha söyle.
+
+551
+01:25:00,148 --> 01:25:23,688
+Onları da aldık. Bak, burada yes'ini aldık. Aynı şeyi. Bak, burası test kısmı. Test kısmında bunu veriyor bana. Bunun kılası yes midir, no mudur onu soruyor. Tamam mı? Şimdi burada yes olanlar için bu attribütler, bir de burada no olanlar için bu attribütler. Aynı attribütler. Çünkü bu testte. Yok büyük, büyük yok, büyük yok. Tamam mı? Onu şey için.
+
+552
+01:25:24,755 --> 01:25:46,556
+Büyükler daha çok etkiler. Onu anlatmak için aslında söyledim de şey değil, orayı karıştırmayayım. Büyük yok. Hepsine bakıyorum. Şuradan bakacağım. Yaşı 36, 30'dan düşükse 3.5. İşte öğrenciyse, student yes ise 1 bölü 5. Bunları alacağız. Buradan çarpacağız. Olasılıkları hesapladık.
+
+553
+01:25:46,963 --> 01:25:54,742
+Yani bu tabloda olmayan tamamen yeni bir test şeyi. Tamam mı? Yes ve no'yu hesapladık ama şurada bir de ne yaptık?
+
+554
+01:25:55,123 --> 01:26:03,543
+Kendi tüm yes ve no'ların probabiliteleriyle prior probabiliteleriyle çarptık. En yüksek ihtimali ise budur dedim.
+
+555
+01:26:05,083 --> 01:26:06,123
+Bunun zor tarafı ne?
+
+556
+01:26:10,643 --> 01:26:11,083
+Hmm?
+
+557
+01:26:17,396 --> 01:26:45,356
+Burada bayağı çok şeyde böyle sayıp ya bunları bir yerde tutacaksınız. Test zamanında bayağı bir işlem yapmanız gerekiyor. Bir problemimiz daha var. O da ne? Bakın şurada şöyle bir sıfır var. Tabloda gördünüz mü? Değil mi? Yani no olup da almayan hiç kimse yokmuş. Peki ben bu formülde şuraya sıfırı koysam ne olur? Direkt sıfırlar. Dolayısıyla...
+
+558
+01:26:45,588 --> 01:27:00,306
+Test setinizde, yani az örnek varsa, özür dilerim, tren setinizde az örnek varsa sıfırlar gelecektir. Dolayısıyla bir sıfırda ne yapar? O sınıfın bulunma ihtimalini tamamen ortadan kaldırır.
+
+559
+01:27:01,728 --> 01:27:12,068
+Yani yaşı işte 30-40 arasında olan hiç kimseye bilgisayar alır demez. Hepsine no der bu sistem. Tamam mı? Dolayısıyla bunun bir sorunu ne?
+
+560
+01:27:12,916 --> 01:27:23,016
+Bu. Alır der, alır der. Sıfır çıkacak için diğeri daha yüksek çıkar. Peki bunu önlemek için ne yapacağız?
+
+561
+01:27:25,255 --> 01:27:38,056
+Burada bir örnek var ama geçelim bunu. Aynen öyle yapılacak şey bu. Şurada bir örnek daha var. Kendiniz yapın demiş ama yapalım mı? Yapmayalım zaten sıkıldınız.
+
+562
+01:27:38,675 --> 01:27:52,954
+Bunun içinde ne yapıyoruz? Ya smoothing kullanacağız. Yani sıfırdan kurtarmak için ya smoothing kullanacağız ya da şurada gördüğünüz gibi mesela her hepsine bir eklemiş. İki tane yolumuz var.
+
+563
+01:27:54,387 --> 01:28:12,728
+naive Bayes implement etmesi gayet kolay. Genellikle iyi sonuç verir ama ne yapar? Çok yavaş çalışır. Sıfır olduğu gibi durumları handle etmeniz gerekir. Bir de ne yaptık burada? Bütün attribütlerin independent olduğunu farz ediyoruz. Değil mi?
+
+564
+01:28:13,427 --> 01:28:30,768
+Niye? Çünkü Bayes teoremini kullanıyoruz. Bayes teoremini nereden çıkarttık? Kesişimden çıkarttık değil mi? Dedik ki, işte eventler independent'dur dedik. Dolayısıyla burada da eğer ki attribute'ler arasında, gerçek dünya arasındaki attribute'ler independent değilse ne olur?
+
+565
+01:28:34,195 --> 01:28:41,536
+İyi çalışmaz. Bizim aslında başta yaptığımız şey, bahzettiğimiz assumption ne olur? Boşa çıkmış olur.
+
+566
+01:28:53,268 --> 01:29:05,228
+[kişisel bilgi]
+
+567
+01:29:06,588 --> 01:29:08,568
+Tamam, soru var mı buraya kadar?
+
+568
+01:29:11,628 --> 01:29:17,867
+Tamam, burada da diyor ki, dependency var, yani biz bunların independent olduğunu farz ettik diyor ya.
+
+569
+01:29:18,260 --> 01:29:27,260
+Peki, dependent olduğunu biliyorsak ne yapacağız diyor. O zaman da Bayes'in belief networkler var. Birazcık daha farklı çalışıyor. Onları kullanabiliriz diyor. Tamam mı?
+
+570
+01:29:28,619 --> 01:29:35,699
+Şimdi, Veka anlatayım mı? Yoksa hafetle mi anlatayım? Tüm motivasyonumuz çökerkeniz.
+
+571
+01:29:41,396 --> 01:29:46,876
+Oylama yapıyorum. Anlatın diyenler? Anlatmayın diyenler kimse kaldırmayacak.
+
+572
+01:29:49,996 --> 01:29:57,835
+Haydi. Üç umru ister anlatın ister anlatmayın geri kalan. Ne yapalım iyi tamam. Ara veriyorum yine on dakika tamam. On birde görüşelim.
+
+573
+01:29:59,635 --> 01:30:00,456
+Uygulama yapalım.
+
+574
+01:30:02,956 --> 01:30:05,036
+Durun durun ara vermiyorum şeyler.
+
+575
+01:30:05,552 --> 01:30:19,831
+Proje grubu o, bugün son. Tamam. Sonra ben proje oluşturmadım falan demeyin. Google Cloud geldi mi şey mail? Tamam, gruplarınızı oluşturduğunuz mu? Tamam. Şimdi ara veriyorum. Tamam. Hah, söyle.
+
+576
+01:30:24,275 --> 01:30:27,855
+Kullanabilirsiniz.
+
+577
+01:30:28,855 --> 01:30:31,114
+Hocam belki internetten soru soranlar var.
+
+578
+01:30:31,114 --> 01:30:32,076
+Oraya bakmadım.
+
+579
+01:30:33,215 --> 01:30:33,954
+Ne soru soranlar?
+
+580
+01:30:33,954 --> 01:30:35,375
+Oraya çıkan, kaylanmadık zaten.
+
+581
+01:30:36,155 --> 01:30:38,175
+Çocuklar sesi duyuyor, şey yapmışlar.
+
+582
+01:30:38,315 --> 01:30:39,215
+Onları düşünün.
+
+583
+01:30:39,596 --> 01:30:45,536
+Düşün sen arada böyle chat olunca şuradan bazen inip bir şey geliyor ama gelmedi yani.
+
+584
+01:30:47,394 --> 01:30:48,135
+Hata yaptık.
+
+585
+01:30:49,596 --> 01:30:51,434
+10 dakika.
+
+586
+01:31:09,204 --> 01:31:15,903
+Topşehir diyelim. Dersi kapatmıyorum. Veri setinin büyüklüğü ile ilgili bir kısıt yok ama çok çok büyük bir şey.
+
+587
+01:31:16,523 --> 01:31:21,724
+Ha, küçük bir şey almayın, çok küçük. Zaten metotlarınız sayı çalışmaz. Çok küçük bir data bulmayın.
+
+588
+01:31:22,943 --> 01:31:26,903
+Şimdi benim örnek yapacağım mesela, benim yapacağım örnekteki gibi bir data bulmayın.
+
+589
+01:31:30,579 --> 01:31:33,099
+Aha, proje için. Çep'ten sormuşlar da.
+
+590
+01:31:34,079 --> 01:31:35,018
+Iris Data Set.
+
+591
+01:31:39,507 --> 01:31:51,927
+Hiç duymuyorum ben yani. Konunun haftaya diye hatırlıyorum ya. Ama tarihleri yazdım. Bakın hep salı salı vermeye çalıştım da. Yine de bir bakın şeye.
+
+592
+01:34:59,155 --> 01:35:01,996
+Gençler, şu an aradayız ya, tamam, online'la.
+
+593
+01:43:04,563 --> 01:43:10,382
+Onlar yardımse başlıyoruz. Uyanın artık, sıfır uyanın. Sıfır az sıkıcı.
+
+594
+01:43:16,244 --> 01:43:42,324
+Bunları bir kontrol edelim. Tamam. Buradalar, hadi bakalım başlayalım. Şimdi ne yapacağız? Veka'ya bakacağız. Şimdi Veka ne? Veka, Yeni Zelanda'da geliştirilmiş, yani şurada görmüş olduğunuz Bayıkato Üniversitesi'de geliştirilmiş bir tur. Tamamen ceva ile yazılmış.
+
+595
+01:43:43,860 --> 01:44:10,099
+Dolayısıyla aynı zamanda şey, kodları vesaire de açık. İsterseniz metotların, kodlarını direkt kendiniz indirip çalıştırıp üzerine değişiklik yapabilirsiniz. İsterseniz de ara yüzünü kullanarak çalıştırabilirsiniz. Tamam. Ne yapıyorsunuz? Geliyorsunuz şuradan indiriyorsunuz. Şimdi ne yapacağız biz? İndirilmişini kullanacağız.
+
+596
+01:44:19,764 --> 01:44:21,063
+Evet, evet, evet.
+
+597
+01:44:25,876 --> 01:44:40,815
+Çok büyük bir program değil. Güzelliği ne? Güzelliği şu. Hemen hızlı bir şekilde ne yapabilirsiniz? İşlerinizi yapabilirsiniz. Şimdi şuradan batı setlerinden de bir şey indirelim.
+
+598
+01:44:40,815 --> 01:44:42,835
+Hıt hıt hıt.
+
+599
+01:44:44,795 --> 01:44:46,315
+Kocanız çıktı görürüz mü?
+
+600
+01:44:52,980 --> 01:44:57,800
+Şimdi datayı nereden bulacaksınız proje içinde genel olarak? Bir Kaggle'a bakın.
+
+601
+01:44:58,380 --> 01:45:00,340
+Hocam, ekran paylaşımı yapabilir misiniz?
+
+602
+01:45:00,340 --> 01:45:03,619
+Çok pardon ya, çok çok sonsuz pardon.
+
+603
+01:45:15,092 --> 01:45:22,851
+Kaggle'da çok ciddi data var. Proje içinde ne yapabilirsiniz? Kaggle sitesini kullanabilirsiniz.
+
+604
+01:45:23,751 --> 01:45:30,351
+Ama şöyle bir şey var. Bazı, diyelim ki dataset'e baktınız, dataset'in tutorial'da olabiliyor.
+
+605
+01:45:30,351 --> 01:45:36,710
+Yani diyelim ki, neye bakalım, atıyorum, şöyle bir.
+
+606
+01:45:41,235 --> 01:45:51,235
+Bir daha söyle. Şirket ekliyor, üniversite ekliyor, kişi ekliyor. Hatta mesela competition'lar var, baya paralı şeyler de oluyor.
+
+607
+01:45:52,155 --> 01:45:58,554
+Yani hani yapıp sonucunu gönderip, modelini gönderip, yani onların gönderdiği data da sonucunu bilmiyorsun, test edip gönderiyorsun.
+
+608
+01:45:58,695 --> 01:46:04,715
+Ona göre yarışma vesaire de olabiliyor. Çok şey değil. Güvenilir data yani genel olarak.
+
+609
+01:46:08,659 --> 01:46:31,699
+Bir metotla atıyorum çözümü de var, kodu da var. Tamam mı? Diyelim ki. Ne yapacaksınız projede? Direkt o hazır kodu alıp kullanmıyoruz. Kendimiz başka metot geliştiriyoruz. Tamam mı? Ya da kodu alıyorsunuz bazı yerlerini değiştirip öyle kullanıyorsunuz gibi gibi. Tamam mı? Çok şeyse, genelleşmişse. Şimdi VEKA'ya bakalım.
+
+610
+01:46:31,699 --> 01:46:34,838
+Ne istiyelim? Tamam.
+
+611
+01:46:36,563 --> 01:46:39,304
+Şimdi ve karının bu ara yüzü dediğin gibi
+
+612
+01:46:44,018 --> 01:47:00,280
+Şimdi, şurada görmüş olduğunuz üzere acayip basit ineği var, ara yüzü var. Bu da şey, oranın ne kuşu olur? O yöreye ait kuş olduğu için şu kuşu bol bol şeyde de göreceksiniz.
+
+613
+01:47:00,840 --> 01:47:02,922
+Baktığınız zaman şurada işte program...
+
+614
+01:47:07,827 --> 01:47:20,788
+Tools'larda Package Manager'da Open Source olduğu için başkaları tarafından da yazılmış, farklı farklı tamam mı özelleşmiş paketler var.
+
+615
+01:47:20,788 --> 01:47:24,947
+Veri madenciliğinde kullanabileceğiniz. Mesela atıyorum işte.
+
+616
+01:47:26,483 --> 01:47:42,684
+Diyelim ki, şuradan biraz aşağı inelim, arayüzü pek güzel değil ama, mesela işte CS Forest diye yeni bir algoritma geliştirilmiş, classification için buraya koymuşlar. Tamam, buradan indirip yine VK'nın da ne yapabilirsiniz? Kullanabilirsiniz.
+
+617
+01:47:42,684 --> 01:47:52,402
+Tamam, hidden markov modeller vesaire vesaire. Buradan seçip daha sonra install yaparak kendiniz standart gelen,
+
+618
+01:47:54,164 --> 01:48:06,844
+Metotların dışında bunu da kullanabilirsiniz. Tamam mı? Şimdi gelelim Explorer'a. Explorer en çok kullanacağımız, olağan kullanacağımız arayüz diyebiliriz. Tamam mı?
+
+619
+01:48:06,844 --> 01:48:21,164
+Baktığımız zaman neler var? Pre-proses var. Buradan datayı açacağız. Tamam mı? Datayı açtıktan sonra üzerinde çeşitli işlemler yapabiliyorsunuz, filtreleme yapabiliyorsunuz.
+
+620
+01:48:21,204 --> 01:48:31,443
+Şimdi datayı açalım. Birkaç şey yapabilirsiniz. URL'den data alabilirsiniz. İnternetten çekebilirsiniz. Mesela tıklayıp URL'i buraya yazdıktan sonra datayı alabilirsiniz.
+
+621
+01:48:31,443 --> 01:48:45,543
+Ya da veri tabanına bağlayabilirsiniz. Şu an bende bir şey yüklü değil. Ama buradan bir veri tabanıyla bağlantınızı oluşturup veri tabanında datanızı çekebilirsiniz.
+
+622
+01:48:46,708 --> 01:48:54,507
+Onun dışında, generate kısmını kullanmazsınız. Şimdi şuradan kendi datasını bulmaya çalışacağım.
+
+623
+01:48:55,507 --> 01:49:04,507
+Şimdi şöyle ne bulmaya çalışacağımı anlatayım. Beka yüklediğiniz zaman kendinin içinde default data setler de yükleniyor.
+
+624
+01:49:04,507 --> 01:49:09,106
+Tamam mı? Şimdi onu bulmaya çalışıyorum.
+
+625
+01:49:11,106 --> 01:49:13,907
+Şurada, anakondanın içinde ama bu.
+
+626
+01:49:17,907 --> 01:49:31,708
+Benim başka şeylerde kullandığım datalar. Neyse tamam, bunu kurşunil datayı oynadıysam işimize yaramayacak. Şöyle bir şey yapacağız. Şuradan gelip Iris datayı yükleyeceğiz.
+
+627
+01:49:42,387 --> 01:49:44,467
+Şurada. Şimdi bu iris datası ne?
+
+628
+01:49:44,588 --> 01:49:45,588
+Ekran paylaşıma gitti.
+
+629
+01:49:46,427 --> 01:49:47,047
+Nasıl gider?
+
+630
+01:49:51,768 --> 01:50:03,387
+Şimdi, Google'a iris csv yazdığınız zaman, iki şey söyleyecektim unuttum. Şimdi bir Cagle data seti var, bir de UCI diye bir şey var, tamam mı? Böyle üç tane çıkacak.
+
+631
+01:50:05,108 --> 01:50:06,047
+Data set diyelim.
+
+632
+01:50:11,731 --> 01:50:37,731
+Burada da yine datasetler var. Baktığınız zaman bayağı bir dataset var. İnsanlar işte yaptıkları çalışmaların ya da Kaggle'dan daha eski ama Kaggle daha gelişmiş. Tamam burada sadece data varken Kaggle'ın içinde videolar var, tutoryallar var, başka başka şeyler de var. Ama data bulmak için şu UCI'ın Machine Learning Repositörüsü'nde kullanabilirsiniz proje için. Tamam mı?
+
+633
+01:50:41,076 --> 01:50:51,255
+Şuradan, virüs bunun içinde de vardır. Virüs datasına baktık. Bunun ne olduğunu anlatayım. Şimdi bu bir çiçeklerle ilgili bir veri seti. Tamam.
+
+634
+01:50:51,896 --> 01:51:05,614
+Üç tip çiçek var içine baktığınız zaman. Attribütlarımıza baktığımız zaman sadece dört tane attribüt var. Bunlar da işte yaprak, çiçeklerin yaprakları vardır ya, kaç yaprak bilmem ne yaprak, ne yapraktı.
+
+635
+01:51:08,371 --> 01:51:15,032
+Çanak yaprak, ha işte bunlardan biri o, biri o. Bunların genişliği ve boyu bu. Tamam mı?
+
+636
+01:51:21,012 --> 01:51:29,291
+Çiçeğimiz var. Şimdi bunları klasifiye etmeye çalışacağız. Bu da bunlarla ilgili yapılan bilimsel çalışmalar. Şimdi datayı nereden indireceğiz?
+
+637
+01:51:43,956 --> 01:51:45,536
+Download Data Folder.
+
+638
+01:51:46,436 --> 01:51:47,516
+Bu zaman yazıyor, tamam.
+
+639
+01:51:48,235 --> 01:51:51,956
+Şimdi iris.datayı indirirsek neyi de indirecek?
+
+640
+01:51:53,295 --> 01:51:54,315
+Format ne bilmiyorum.
+
+641
+01:51:55,795 --> 01:51:58,635
+Tamam, bu dursun. Şuradan da iris.csv'yi indirelim.
+
+642
+01:51:59,155 --> 01:52:01,175
+Şimdi baktığımız zaman, önce şuradan bir bakalım.
+
+643
+01:52:02,643 --> 01:52:26,523
+Yaprakları var bakın, Lenkler, Sepal ve Ketal yapraklar. Bunun Lenkli Viti, Lenkli Viti var. Şurada da bakın, Verayeti dediğimiz şey de Klasımız. Klasımızda Setoza var, Bersi Color var, bir de Virginia var. Üç dip çiçek var. Toplam bakarsak %50 ya da %50 bir tane de neyim var? Bakın %50 mi, %51 mi? Birden başladığı için, tamam mı?
+
+644
+01:52:26,931 --> 01:52:36,072
+150 tane de, yani her bir çiçekten 50 tane örnek var galiba. 50 tane olacak şekilde 50 çarpıştan 150 tane örneğimiz var. Şimdi bunu indirelim.
+
+645
+01:52:37,951 --> 01:52:43,072
+Şunu şuradan alıp, şöyle alabiliriz.
+
+646
+01:52:49,204 --> 01:52:51,784
+Bunu böyle indirirsem ne olur? Şöyle mi indireyim?
+
+647
+01:52:53,344 --> 01:52:54,443
+Ne indirecek?
+
+648
+01:53:02,036 --> 01:53:05,476
+Tamam. Şunu şuradan alayım.
+
+649
+01:53:13,844 --> 01:53:16,943
+Şimdi CSV ne demek peki? CSV ile çalıştınız mı hiç?
+
+650
+01:53:19,043 --> 01:53:21,764
+Hı, comma separated version dediğimiz
+
+651
+01:53:21,764 --> 01:53:24,724
+Şuraya indireyim.
+
+652
+01:53:25,384 --> 01:53:26,344
+Şuraya çıkart.
+
+653
+01:53:27,264 --> 01:53:29,023
+Bambazla çıkartalım artık iyice.
+
+654
+01:53:29,023 --> 01:53:29,804
+Çöp çöp.
+
+655
+01:53:31,163 --> 01:53:31,844
+F5
+
+656
+01:53:31,844 --> 01:53:35,682
+Çıkarsana ya.
+
+657
+01:53:38,503 --> 01:53:39,443
+Aldım.
+
+658
+01:53:43,123 --> 01:53:57,922
+Şuraya slide'ların içine attım tamam mı? Şimdi geldim VEKA'ya. Explorer'dayım. Ne yapıyorum? Open file dedim. Şimdi CSV dosyası Excel'de CSV olarak kaydedebilir.
+
+659
+01:53:58,702 --> 01:54:09,262
+Coma separated version demek. Şimdi şurada bir açayım bunu da. Şimdi en çok yapılan hatayı anlatacağım. Bakın burada virgüllerle ayrılmış tamamen.
+
+660
+01:54:09,599 --> 01:54:26,119
+Sepal Length, Sepal Bit, stringleri çifttırmak içine almış. Bunu da alabilir, önemli değil. Burada da kendileri ve sınıflar var. Tamam mı? Siz bunu böyle Excel'de açabilirsiniz ama bir de ne yapabilirsiniz?
+
+661
+01:54:26,804 --> 01:54:46,804
+Open with diyelim, birlikte aç dedikten sonra noktalarını da açalım. Aslında bu böyle bir dosya. Her bir kolon aslında virgülle ayrılmış. En çok yapılan hata ne söyleyeyim? En çok yapılan hata şu Excel'in ayarları var. Şimdi İngilizce'de...
+
+662
+01:54:49,172 --> 01:55:01,692
+Şöyle söyleyeyim. Şu 1.4'ü İngilizce'de 1.4 yazıyoruz ama Türkçe'de ne yazıyoruz? 1.4 yazıyoruz. Değil mi? Binlik ayracı olarak da biz ne kullanıyoruz? 100.000.
+
+663
+01:55:03,251 --> 01:55:30,192
+Yani bu noktaları, nasıl söyleyeyim, bu nokta, İngilizce'de noktalar ondalık için kullanılırken bizde ne için kullanılıyor? Sanki yüz binlik ayracıymış gibi değil mi? Yani her yüz binlik denmez ona ya. Her üç basamak arasına nokta koyuyoruz. Dolayısıyla Excel'in ayarlarında da Türkçe Excel'de, İngilizce Excel'de şöyle bir şey oluyor. Eğer Türkçe Excel'iniz varsa ayarları da ona göre ise HOMA Separated Version'ı noktalı virgülle ayırıyor.
+
+664
+01:55:31,155 --> 01:55:52,195
+Tamam mı? Türkçe olan Excel'lerde. Yani virgül yerine noktalı virgül oluyor. Şu sayı 5.1 ya, o da 5.1 yazıyor. Anladınız mı? Yani şöyle anlatayım. Şimdi İngilizce'de bu 5.1 demek değil tabii ki.
+
+665
+01:55:54,516 --> 01:55:58,875
+Şimdi buna nokta koyduğum için bu şey sadece.
+
+666
+01:56:01,175 --> 01:56:02,835
+Etin, şurada yazacağım.
+
+667
+01:56:04,355 --> 01:56:10,775
+Etin yapalım, şuraları metin yapalım. Bu sefer dosyayı bozacağız üzerinde şey yaptığım için.
+
+668
+01:56:12,914 --> 01:56:14,135
+Çimlendirmeyeceğim, neyse.
+
+669
+01:56:24,052 --> 01:56:41,492
+Metin yapınca da şimdi başka sorum çıkaracağız. 5.1 dedik, 5.1 dedik, tamam mı? Sen böyle 5 virgüllerle yazdıysa, sen bunu CSV'de açarsan ne zanneder? Burada 2 kolon var zanneder, değil mi? Virgüllerde.
+
+670
+01:56:43,347 --> 01:56:54,646
+Çünkü o şuna göre ayarlanmış. Dolayısıyla Excel'de eğer ki Excel'iniz Türkçe ise ve CSV kaydederken böyle böyle yap ayarlamadıysanız tamam mı?
+
+671
+01:56:55,507 --> 01:57:03,967
+Ve ne yapar? Yani açarken sorun yaşarsın. Virgül yerine de bunları 5,1 var diyelim ki bir de 4,6 var.
+
+672
+01:57:04,436 --> 01:57:10,036
+Bunları şimdi kaydederken 5,1,4,6 diye mi kaydediyor?
+
+673
+01:57:10,416 --> 01:57:13,775
+CSV, Türkçe Excel'de? Hayır. Arasına noktalı virgül koyuyor.
+
+674
+01:57:15,235 --> 01:57:15,735
+Tamam mı?
+
+675
+01:57:16,155 --> 01:57:25,735
+Dolayısıyla eğer ki CSV açarken bir sorun yaşıyorsanız, yüksek ihtimalle bu virgül noktalı virgül ve noktadaki sorunlardandır.
+
+676
+01:57:26,216 --> 01:57:26,555
+Tamam mı?
+
+677
+01:57:27,176 --> 01:57:29,655
+Excel'inizin versiyonuna göre onu düzeltirseniz.
+
+678
+01:57:30,100 --> 01:57:36,060
+Tekrar save as yaparsınız, farklı kaydet yaparsınız, bundan kurtulursunuz. Şimdi bunu kapatalım, kaydetmeyelim.
+
+679
+01:57:37,260 --> 01:57:48,020
+Şimdi geldik geri ve kaya. Aç dedik, şimdi gel bakalım, desktop'a, data mining'in içine, slide'ların içine kaydettik.
+
+680
+01:57:49,618 --> 01:58:04,979
+Bu ARFF var, ARFF'den de bahsedelim. Baktığınız zaman JSON açabiliyorsunuz, bu SVM ile ilgili, LibesVM açabiliyorsunuz, CSV açabiliyorsunuz. Bir de ARFF diye, bekanın kendi formatı var, onu açabiliyorsunuz.
+
+681
+01:58:04,979 --> 01:58:17,158
+Şimdi CSV açalım, CSV'yi tuttum, open dedim. Bakalım ne oldu? Şimdi açtığımız zaman, bakın buraya kolonlarımız geldi.
+
+682
+01:58:17,587 --> 01:58:44,247
+Gördünüz mü? Ve de şimdi burada dağılımını görebiliyoruz. Sepal renkte baktığımız zaman burada istatistik bilgileri minimum kaçmış, maksimum kaçmış, ortalaması kaçmış, standart sapması kaçmış. Ve burada üç tane farklı renk görüyorsunuz ya. Bu neye göre boyamış? Klaslara göre boyamış. Üç farklı çiçeğimiz var ya, üç tane klas var değil mi? Şurada bakın klas da verayet diyor. Yani klas olarak bunu seçtim diyor.
+
+683
+01:58:44,591 --> 01:58:51,030
+Ve buna da nominal yazmış. Bakın, nominal yazmış. Nominal olduğu için bu şekilde boyamış. Tamam mı?
+
+684
+01:58:51,810 --> 01:58:56,530
+Eğer bu değil de class'ın sepal renk deseydim, bunlar numerik bakın, boyamıyor.
+
+685
+01:58:56,530 --> 01:59:06,690
+Niye? Çünkü hepsi kontinuüs, farklı farklı değer. Tamam mı? Ama numerik değil de nominal bir değer seçtiğim için bakın, dağılımlarını ilk ötüle yapabiliyoruz.
+
+686
+01:59:07,230 --> 01:59:10,992
+Sepal renkini görebiliyoruz. Mesela bitse baktığımız zaman böyleymiş.
+
+687
+01:59:11,422 --> 01:59:24,863
+Petal renk böyleymiş, petal bit de böyleymiş. Tamam mı? Şimdi gelelim filtreye. Bakın şuraya tıkladığımız zaman, burada neredeyim? Ön işlemedeyim.
+
+688
+01:59:25,224 --> 01:59:34,304
+Ön işlemedeyim, filtrelere geldiğimiz zaman, burada hem attribüt bazında yani tüm kolonu etkileyen,
+
+689
+01:59:34,622 --> 01:59:39,603
+Ya da instance, tek satır bazında yapabileceğiniz filtreler var.
+
+690
+01:59:40,144 --> 01:59:43,082
+Şimdi bunlar da supervised ve unsupervised olarak ayrılmış.
+
+691
+01:59:43,224 --> 01:59:48,644
+Supervised neydi? Eğer ki elimizde labellar varsa biz buna supervised yöntem diyorduk.
+
+692
+01:59:48,644 --> 01:59:52,762
+Label yoksa kümeleme gibi yöntemlere unsupervised diyoruz. Hatırladık mı?
+
+693
+01:59:53,323 --> 01:59:56,903
+Burada buna göre metotları supervised ve unsupervised olarak iki ayırmış.
+
+694
+01:59:56,983 --> 01:59:57,863
+Şimdi gelelim supervised.
+
+695
+01:59:58,603 --> 02:00:00,082
+Şimdi neler var burada?
+
+696
+02:00:00,500 --> 02:00:23,979
+Mesela öğrendiklerimize bakalım. Nominal to binary diye bir şey var. Bu ne demek? Nominal değerimizi binary'ye çevir demek. Değil mi? Şimdi tıkladım. Peki, ha bakın şuraya seçtim ya. Nominal to binary dedim. Şurayı tıkladığınız zaman bunun parametreleri açılır.
+
+697
+02:00:25,171 --> 02:00:52,230
+Buradan da ne yapıyorsunuz? Binary attribute, yani üzerine gelirseniz ne olduğunu da yazar. Binary attribute'ları işte nominale çevirsin mi, çevirmesin mi, ondan sonra bütün veri yuları mı yapsın gibi şeyler var. Tamam mı? Bunlardan bu ayarlarını oynayabilirsiniz. Apply dediğimiz zaman çevirecek. Ama çevirmeyelim. Niye çevirmeyelim? Çünkü datam bozulacak.
+
+698
+02:00:52,850 --> 02:00:59,612
+Şimdi, ya da ne var? Mesela, discretize var. Gördünüz mü? Tıklayayım şeylerini.
+
+699
+02:01:00,252 --> 02:01:07,112
+Discretize yaparken mesela bin binlere ayıracak. Bin bin, kontinus bir değeri diyelim ki ayıracak.
+
+700
+02:01:07,452 --> 02:01:09,711
+Ayırırken mesela binin aralığı ne olsun?
+
+701
+02:01:10,002 --> 02:01:23,002
+Ya da attribute, first class derseniz bütün attribute'leri diskretize eder. Mesela first class değil de sadece üçüncü attribute'i yapmak istiyorsanız, üç yazıyorsunuz. Gibi gibi şeyleri var. Tamam mı?
+
+702
+02:01:26,002 --> 02:01:33,002
+Birden birden. Birden başlıyor, sıfırdan başlanıyor. Python'da sıfırdan başlıyor, bu da birden başlıyor. Tamam mı?
+
+703
+02:01:38,002 --> 02:01:49,224
+Şimdi instanslarda bakın, remove range var. Diyelim diyorsunuz ki şurada, şu aralıkta olan attribute'leri ya da instansları diyeyim.
+
+704
+02:01:49,283 --> 02:01:54,384
+Yani attribute'un aralığı şu olanları at diyorsunuz. Mesela 10'dan, diyelim ki 18 yaş altına almayacaksınız.
+
+705
+02:01:54,783 --> 02:02:01,884
+Yaşı 18'den küçük olanları sil diyorsunuz mesela. Ya da remove duplicate diyorsunuz. Aynı satırdan.
+
+706
+02:02:02,224 --> 02:02:04,564
+Birden fazla varsa ne yapıyorsunuz?
+
+707
+02:02:07,028 --> 02:02:28,408
+siliyorsunuz gibi gibi. Remove it values var. Tamam mı? Değeri şu olanları siliyorsunuz. Gibi gibi neler var? Ön işleme ile ilgili birçok yöntem şurada mevcut. Tamam mı? Filter kısmında mevcut. Şimdi tamam. Herhalde çok şey değil. Basit. Klasifaya gelelim.
+
+708
+02:02:29,652 --> 02:02:42,412
+Önce şuraya bir bakalım. Select, önce classifier kafanızı karışmayın. Classifier'a geldik. Şimdi classifier'da, bakın burada bizim öğrendiğimiz classifier'lar var. Biz şimdiye kadar ne öğrendik?
+
+709
+02:02:42,970 --> 02:02:53,230
+Triller'i öğrendik, değil mi? Burada triller var. Rulları bugün öğrendik. Burada rule'lar var. Bir de ne öğrendik?
+
+710
+02:02:55,028 --> 02:03:00,846
+Bayes'in içinde naive Bayes'in içinde naive Bayes'in öğrendik. Değil mi? Diyelim ki naive Bayes ile bunu.
+
+711
+02:03:04,979 --> 02:03:17,219
+Classify edelim. Şimdi burada da test options'ları var. Şimdi use training set yaparsanız benim training setimde 150 tanesi örnek var ya hepsini training için kullanır. Tamam test yok.
+
+712
+02:03:18,340 --> 02:03:29,139
+Supply test derseniz eğer başka bir yerde başka bir file'ınız daha varsa başka bir dosyanız daha varsa test için kullanacağınız tamam buradan bunu seçersiniz.
+
+713
+02:03:30,198 --> 02:03:32,500
+Şimdi cross validation ne demek?
+
+714
+02:03:33,076 --> 02:03:46,234
+Cross Validation şu demek, çapraz doğrulama. Burası önemli. Diyelim ki fault 10 dedi ama fault 3 olsun. Şimdi bunu anlatması zor olacak 10 ile. Bu şu demek, Cross Validation.
+
+715
+02:03:47,255 --> 02:03:59,475
+Rastgele benim datamı 3 kümeye ayır. 3 folda ayır. Tamam mı? 3 tur tekrarlayacağım. İlk turda şu 2 tanesi. Bunlar A, B, C olsun. A ve B.
+
+716
+02:03:59,920 --> 02:04:12,359
+tren için kullanılırken C test için kullanılacak. İkinci turda A ve C tren için kullanılırken B test için kullanılacak. Üçüncü turda B, C tren için kullanılırken bu sefer A test olacak.
+
+717
+02:04:13,059 --> 02:04:21,520
+Dolayısıyla her bir sample'ım bir kere test edilmiş olacak ve her seferinde farklı bir model öğrenilmiş olacak data farklı olduğu için.
+
+718
+02:04:21,520 --> 02:04:26,960
+Ve sonuçta da bunun neyini vereceğiz? Ortalama hatasını vermiş olacak.
+
+719
+02:04:27,283 --> 02:04:42,523
+Tamam mı? Cross validation niye kullanılır? Niye böyle bir şeye gerekliymüşler? Genellikle data az olduğu zaman tamam mı? Test mesela yüzde 10'unu teste ayırdığınız zaman yüzde 10'a 20-30 tane örnek geliyorsa
+
+720
+02:04:43,252 --> 02:04:53,292
+Çok az bir şeyiniz vardır. Tamam mı? Datanız vardır. Dolayısıyla bunun yerine cross-validation ile birkaç kere daha modeli oluşturup oluşturup tüm data üzerinde doğrulamış oluyoruz.
+
+721
+02:04:54,091 --> 02:05:03,971
+Percentage split ne demek? Bu da data mı? Ayır, rastgele. Diyelim ki %80'ini train için kullan. Geri kalan %20'sini de test için kullan demek.
+
+722
+02:05:03,971 --> 02:05:10,692
+More options da output'u göster. Tamam, her bir sınıf için istatistikleri var.
+
+723
+02:05:11,828 --> 02:05:28,228
+Confusion matrisi daha öğrenmedik. Bir de şunu da output predictionsları da gösterelim. Yani şeyleri, neleri predict ettiğini plain text olarak, düz text olarak göster diyelim. Tamam mı?
+
+724
+02:05:29,108 --> 02:05:36,627
+Bir de bir şey daha var. Mesela ayırıyoruz ya, yüzde seksenini ayır dedim ya. Preserve order derseniz şurada.
+
+725
+02:05:37,140 --> 02:05:51,699
+Şafıl yapmadan datayı alır. Tamam mı? Yani sırayı koru demek. İlk %80'i tren için kullanır. Sırayla geri kalan %20'yi. Tamam mı? En sondaki verileri de test için kullanmış olur. Bunu tıklamıyoruz.
+
+726
+02:05:52,699 --> 02:05:57,539
+Şimdi ne seçtik, naive Bayes seçtik. Start dedik. Hop, şak diye çalışıyoruz.
+
+727
+02:06:02,386 --> 02:06:11,188
+Ne güzel. Hop biraz büyümüyor da. Şurayı kapatsak biraz okunur mu ışıktan? En azından şunu kapatsak biraz.
+
+728
+02:06:12,948 --> 02:06:18,466
+Şimdi, nasıl büyüyor ya? Bir dakika.
+
+729
+02:06:21,167 --> 02:06:25,268
+Aklıma daha saçma bir yöntem geldi ama saçma yöntemi yapacağım. Hazır olun.
+
+730
+02:06:28,051 --> 02:06:30,930
+Dört, yapıştır, yapıştır.
+
+731
+02:06:32,171 --> 02:06:33,572
+En azından kontrolü çöz.
+
+732
+02:06:34,451 --> 02:06:35,530
+Şey büyümüyor oradan.
+
+733
+02:06:36,411 --> 02:06:38,291
+Tamam.
+
+734
+02:06:38,831 --> 02:06:39,652
+Burada.
+
+735
+02:06:40,256 --> 02:06:57,274
+Ne yapıyor? Ne kullandığımızı söylüyor. New Bayes kullanmışız. Tamam, Relation dediği şey, RFF formatında var da, şu anda bir tanımlamadığımız için, dataset'in adını buraya yazmış. Iris.csv diye onu yazmış ama burada RFF yapsaydık kendimizi tanımlıyorduk.
+
+736
+02:06:57,274 --> 02:07:01,055
+150 tane instance, yani satır varmış.
+
+737
+02:07:01,618 --> 02:07:11,340
+Beş tane de attributum var. Attributum neler olduğunu yazmış. Test modu da yüzde seksenini trend için kullan, geri kalanı test için kullan diyoruz. Tamam mı? Classifier modele bakalım.
+
+738
+02:07:12,219 --> 02:07:25,578
+Şimdi, klaslara baktığımız zaman datamızın, üç sınıfımız vardı ya, yüzde otuz üçü Setoza, yüzde otuz üçü, Welskaler, yüzde otuz üçü de Virginia'ymış. Tamam mı? Yani eşit sağlam, hepsinden elli örnek var.
+
+739
+02:07:26,036 --> 02:07:39,216
+Burada da istatistiksel değerlerine bakıyorsunuz. Sephalenktin işte, Bini, standart sapması vesaire neymiş bunları görüyorsunuz. Her üçü içinde görebilirsiniz. Pardon, her beşi içinde aslında.
+
+740
+02:07:40,036 --> 02:07:46,036
+Şimdi bu da ne? Bu benim predictionlarım yani tahminlerim. Modeli oluşturduktan sonra
+
+741
+02:07:46,546 --> 02:07:54,167
+Şunu söylüyor. Birinci instans testinde Virginia'ymış, Virginia bulmuşum. İkincisi versikalırmış, versikalır bulmuşum.
+
+742
+02:07:54,747 --> 02:08:02,587
+Şimdi hangisine, burada da şeyleri var, prediction errorları. Yani ne kadar, confidence gibi düşünebilirsiniz, ne kadar güvenilir olduğunu.
+
+743
+02:08:03,528 --> 02:08:14,087
+Mesela yanlış bulduğuna bakalım. Hiç yanlış bulmamış mı? Şunu yanlış bulmuş bakın. Virginia'yı versikalır olarak bulmuş, on sekizinci örnekte.
+
+744
+02:08:15,314 --> 02:08:32,716
+Tamam. Onun dışındakiler başka hata var mı? Bunlar test olanlar. Evet, 30 tane de test ettik. 150 tane vardı, %20'si. 30 tane de test var. Niye bu kadar? Çok iyi çalışmış. Bu kadar iyi, yalnız çalıştım.
+
+745
+02:08:32,716 --> 02:08:39,716
+Ve baktığımız zaman 30 taneden 29'unu, normal sizin projeler böyle çalışmayacak, 29 tanesini.
+
+746
+02:08:40,372 --> 02:08:51,372
+Acayip şey yapmış. Bunların ne olduğunu göreceğiz. Bunların ne olduğunu öğreneceğiz. Tamam. Bunları da daha öğrenmedik. Bu da confusion matiz ama bunu da daha öğrenmedik.
+
+747
+02:08:51,372 --> 02:09:06,752
+Şimdi. Ya da. Tamam. Nave Bayes var. Tree kullanalım. Ya da rule kullanalım. Rule'un nasıl olduğunu görelim. Mesela şey kullanalım.
+
+748
+02:09:07,764 --> 02:09:09,002
+Hop start dedim.
+
+749
+02:09:11,484 --> 02:09:13,283
+Bu %100 çalıştı mesela.
+
+750
+02:09:14,304 --> 02:09:17,304
+Şurada da, ruhları bulduğu ruhu söylüyorum.
+
+751
+02:09:18,930 --> 02:09:36,470
+Okuyorum. Petal renk büyük eşit 3 ise ve petal renk küçük eşit 4-8 ise ve petal renk küçüktür 1.6 ise dıt dıt dıt dıt dıt versi kalırdır. Tamam mı? Birinci rule bu. İkincisi petal renk 4.5'tan büyük ise Virginia'dır.
+
+752
+02:09:38,511 --> 02:09:45,451
+En sonunda da default rule. Bakın önünde hiçbir şey yok. Geri kalanları da setos olarak yap demiş. Ama şimdi size bir şey göstereceğim.
+
+753
+02:09:45,939 --> 02:09:54,180
+%80 değil de datamın %50'sini tren için kullanayım, %50'sini de test için kullanayım.
+
+754
+02:09:54,519 --> 02:09:59,798
+Tamam. Şimdi neyi bekliyoruz? Doğruluğun düşmesini bekliyoruz. Bakalım ne olacak?
+
+755
+02:10:01,260 --> 02:10:10,099
+%100'den %94'e düştü. Dört tanesi hata var. Şapıl yapıyor, bir daha değişebilir.
+
+756
+02:10:11,444 --> 02:10:22,663
+Ya da mesela bakın, naive Bayes'e geri geldim, buradan tıkladım. Person Discipline'i 50'i iken tekrar çalıştırdım. Pardon, çalıştırmamışım, burası bu kalmış, özür.
+
+757
+02:10:23,104 --> 02:10:30,484
+naive Bayes'de daha çok etkilenmesini bekliyoruz, değil mi? Probabilite hesaplayacağı için. %50 ile naive Bayes'i çalıştır diyorum.
+
+758
+02:10:36,819 --> 02:10:51,000
+Şimdi doğru seçtim. Çalıştırdım. Bakın ne oldu? Yine bayağı düşmedi ya. Yine %96 çalışıyor. Bayağı iyi çalışmış olduk. Tamam mı? Yaptığı şey bu.
+
+759
+02:10:52,698 --> 02:10:57,479
+Şimdi şurayı da biraz anlatayım. Bu ne? Birazcık Visualize diye bir şey var.
+
+760
+02:10:58,292 --> 02:11:07,292
+Hiçbir şey görmüyor, görünüyor, fena değil. Şimdi burada üç tane renk var. Bakın şurada yeşiller var aslında. Burada kırmızı var. Şurada da maviler var. Ya da bakın yeşil.
+
+761
+02:11:08,082 --> 02:11:19,943
+Kırmızı, mavi. Bu ne biliyor musunuz? Bu bizim variety ile ve sepal renkli arasındaki ilişkiyi gösteriyor. Mesela şuna baktığımız zaman bunlar hep doğru gitmiş.
+
+762
+02:11:20,283 --> 02:11:31,422
+Niye? Çünkü petalvit ile petalvit. İkisi de aynı olduğu için, yani bir korelasyonu bir olduğu için böyle çekiyor. Ama bakarsanız petalvit ile petal renkli arasında da bir pozitif.
+
+763
+02:11:32,020 --> 02:11:43,500
+Korelasyon var. Ya da şuraya baktığınız zaman petal renkte sepalvit arasında bayağı ayrılabilir olduğunu görebiliyorsunuz. Göremiyorsunuz da çok. Görülüyor yani. Tamam.
+
+764
+02:11:44,859 --> 02:11:55,100
+Yani yaptığımız şeyler böyle. Çok zor değil bunu kullanması. Bir de bunun kendi formatı var. Biraz da ondan bahsedeyim. ARFF diye. Şimdi ARFF ne?
+
+765
+02:11:56,020 --> 02:12:04,039
+VEGA'nın kendi data formatı. Tamam mı? CSV verebilirsiniz, sorun yok. Şunlar hep comment. Commentleri geçtim.
+
+766
+02:12:04,680 --> 02:12:12,199
+ARFF formatı okunuyor, tamam. Attribution Iris. Tamam, relation'a ne ismi vermek istiyorsanız veriyorsunuz.
+
+767
+02:12:12,578 --> 02:12:18,578
+Sonra attribütleri tanımlıyorsunuz. Mesela burada tanımlarken bunlar nümerik attribüt olduğu için
+
+768
+02:12:18,944 --> 02:12:44,064
+Real olarak tanımlamış, real sayı olarak. Attribute klası da diyor ki, klasımızın içindeki şeyler neyse değerler, nominal değerler buraya yazıyoruz. Tamam mı? Mesela kadın erkek olsa kadın virgül erkek yazacak mıyız? Burada işte üç tane çiçek tipim var, onu yazıyorum. Sonra et data yazdıktan sonra datayı bu şekilde virgüllerle ayırarak satır satır yazıyorum. Bu da nokta arff uzantılı.
+
+769
+02:12:44,496 --> 02:13:11,234
+Veka'nın kendi data formatı. Peki Veka'yı ne zaman kullanırsınız? Elinizde bir data var. Tamam mı? CSV. Şimdi bunun bir sıkıntısı var. Java ile çalıştığı için işte JVM üzerinde çalışıyor. JVM'de de bazen memori hatası verebiliyor. Tamam mı? Şu datanız çok büyükse özellikle bazı metotlarda yani yapay sinraları falan çalıştırmaya kalkarsanız.
+
+770
+02:13:11,859 --> 02:13:25,260
+Datanız da büyükse, memori hatası alıyorsunuz. Birkaç şekilde bunun kendi ayarlarında diyor ki işte bilgisayar hafızasının bu kadarını JVM'e ayır diyor. Onu yükseltebiliyorsunuz ama yine çok büyük datalarla falan çalışmıyor.
+
+771
+02:13:26,198 --> 02:13:38,060
+Datanız şey var elinizde. Temizlerken de kurala göre temizlemek birazcık daha kolay oluyor. Yani bence şu pre-process'ten filterle temizleyince çok göremiyorsunuz.
+
+772
+02:13:38,292 --> 02:14:05,152
+Ama kendiniz kod yazsanız, şu şu olanları temizle yazsanız biraz daha kolay oluyor. Tamam mı? Yani kod nasıl daha kolay oluyor? Bence daha kolay oluyor. Çünkü burada her zaman sonucu pat diye arka planda yaptığı için kendiniz çok göremiyorsunuz. Data var elinizde, çok temizlemeyeceksiniz. Hemen hızlıca sınıflandırma yapabilir misiniz, yapamaz mısınız? Diyelim ki hızlıca ona bakacaksınız. O zaman VEKA'yı ne yapabilirsiniz? Hızlı bir şekilde.
+
+773
+02:14:05,908 --> 02:14:32,688
+kullanabilirsiniz. Tamam. Hazır to. Dediğim gibi ama diyelim ki yapıyorsunuz server da arka planda çalışacak. Diyelim ki işte kural tabanla sınıflandırma çalıştıracaksınız. O zaman ne yapacaksınız? Bekanın sitesine gideceksiniz. Bunu yapan Java kodunu indireceksiniz. O kodu çağıracaksınız. Tamam. Çünkü ara yüzden bir şey çalıştıramazsınız.
+
+774
+02:14:33,332 --> 02:14:51,832
+Bekent gibi. Tamam, Bekent kullanması çok basit. Hızlıca bir şey çalışır mı çalışmaz mı diye bakmak istiyorsanız ya da işte hemen küçük bir dataset'iniz varsa hızlı bir şekilde ne yapabilirsiniz? Kullanabilirsiniz. Tamam.
+
+775
+02:14:52,631 --> 02:14:58,011
+Ama şeyi çok oynayamıyorsunuz. Yani metotların da parametrelerini çok oynayamıyorsunuz. Onu da bir daha göstereyim de.
+
+776
+02:15:01,939 --> 02:15:21,279
+Diyelim ki trilerden seçelim. Trilerden tuttum. J48 seçtik. Tamam mı? Şuraya tıklayarak, şurada parametreleri var. Bestize dediği, triyi oluştururken her seferinde kaç örnek üzerinden oluştursun? Çünkü bütün datadan oluşturamıyor.
+
+777
+02:15:21,819 --> 02:15:28,139
+Binary split yapsın mı? Yani binary split görmüştük. İkili mi gitsin, bazen üçlü dörtlü split yapmaya izin versin mi?
+
+778
+02:15:28,595 --> 02:15:52,614
+Ondan sonra işte pürünün yapsın mı? Yani budama yapsın mı? Vesaire vesaire şeyleri var. Tamam mı? Burada ama çok şey yapamıyorsunuz. Yani burada size ne veriyorsa sadece bunları değiştirebiliyorsunuz. Kodla birazcık daha parametreleri oynayabiliyorsunuz. Avantajı o. Okey? Tamam.
+
+779
+02:15:55,060 --> 02:16:00,060
+Niye sıkıcı oldu ya? Bu dersleri niye giderek daha sıkılıyorsunuz? Başta daha eğleniyor gibiydiniz.
+
+780
+02:16:02,939 --> 02:16:04,140
+Sıkıcı mı? Çok mu sıkıcı?
+
+781
+02:16:11,220 --> 02:16:20,260
+Allah yardımcınız olsun. Hareketlisi oysa. Tamam, okey. O zaman bugünlük bu kadar benden.
+
+782
+02:16:22,500 --> 02:16:32,920
+Ne diyeceğim? Bir şey demeyeceğim, grupları oluşturun, tamam? Konu bulamazsanız ya da bulduğunuz konuyu maille sorun ya da classroom'un altına yazıp sorun, tamam mı?
+
+783
+02:16:34,420 --> 02:16:40,559
+Şimdi sorun. Online arşi sizin sorunuz varsa alayım yoksa kapatıyorum. Boşar bir şey yapmayalım.
+
+784
+02:16:44,212 --> 02:16:52,971
+Bu eski. Online'lar soru yok herhalde. Görüşmek üzere.

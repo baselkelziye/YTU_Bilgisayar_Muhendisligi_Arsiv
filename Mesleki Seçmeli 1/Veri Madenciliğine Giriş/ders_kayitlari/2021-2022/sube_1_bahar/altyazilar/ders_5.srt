@@ -1,0 +1,3387 @@
+1
+00:00:07,283 --> 00:00:09,103
+Merhaba arkadaşlar, sesim geliyor mu?
+
+2
+00:00:14,868 --> 00:00:16,108
+Beni duyabiliyor musunuz?
+
+3
+00:00:27,091 --> 00:00:28,032
+Hoş geldiniz.
+
+4
+00:00:37,908 --> 00:00:39,968
+Sesim geliyor ama ben sizi duyamıyorum.
+
+5
+00:00:40,628 --> 00:00:41,948
+Geliyor hocam.
+
+6
+00:00:42,508 --> 00:00:43,927
+Tamam, teşekkürler. Sağ olun.
+
+7
+00:00:46,108 --> 00:00:52,287
+O zaman yavaş yavaş başlayalım. Hepiniz hoş geldiniz. Umarım güzel bir bayram tatili geçirmişsinizdir.
+
+8
+00:00:55,731 --> 00:01:01,212
+Şimdi ekran paylaşımı yapayım. Ekranım yansıdı sanırım size.
+
+9
+00:01:02,832 --> 00:01:03,391
+Evet hocam.
+
+10
+00:01:03,771 --> 00:01:03,971
+Tamam.
+
+11
+00:01:05,772 --> 00:01:10,831
+Derse başlamadan önce bir hatırlatma açısından projeyle ilgili konuşalım.
+
+12
+00:01:11,932 --> 00:01:18,091
+Proje için bir dosya yükledim online yıldızda. Belki göremiz olmuştur şimdiye kadar.
+
+13
+00:01:20,180 --> 00:01:22,960
+Bir submission linki oluşturmuştuk hatırlarsanız.
+
+14
+00:01:23,480 --> 00:01:31,060
+Yani raporunuzu yükleyeceksiniz ama raporun formatıyla ilgili bazı detayları burada konuşmak için ekledim bunu.
+
+15
+00:01:35,060 --> 00:01:35,084
+Öncelikle...
+
+16
+00:01:35,219 --> 00:01:52,079
+Zaten bir öneri formu göndermiştiniz. O öneri proje önerisi üzerinde çalışmalar yapabiliyorsunuz. Bazı gruplar iki ya da üç kişi olabilir. Kısmen yanlış çalışmak isteyen bireysel olarak da yapabilirsiniz diye konuşmuştuk onları.
+
+17
+00:01:52,659 --> 00:01:57,179
+Bazı görselleştirmeler eklemeniz bekleniyor çalışmalarınızda.
+
+18
+00:01:57,959 --> 00:02:02,879
+Onun dışında bununla ilgili bazı örnekler verdim. Bu linkler fayda olabilir.
+
+19
+00:02:03,079 --> 00:02:06,139
+Yani veri görselleştirme konusunu detaylıca konuştuk zaten.
+
+20
+00:02:07,059 --> 00:02:13,120
+Çeşitli veri görselleştirme grafikleri ve arayüzleri mevcut.
+
+21
+00:02:13,799 --> 00:02:18,120
+Bunlardan sizin çalışmanıza en uygun olanları seçerek bazı...
+
+22
+00:02:18,527 --> 00:02:24,347
+Ön işleme, veri keşfi işlemlerini yapabilirsiniz. Bunların detayına girmeyeceğim.
+
+23
+00:02:24,947 --> 00:02:29,827
+Ama nasıl bir formatta raporunuzu yazmanız gerekiyor onu hatırlatayım.
+
+24
+00:02:30,668 --> 00:02:38,267
+Aslında bir IEEE konferans makalesi formatında yapmanızı bekliyorum.
+
+25
+00:02:38,407 --> 00:02:45,827
+Orada da bu linkten şablona ulaşabilirsiniz. Burada Word ya da Latex olarak nasıl kolayınıza geliyorsa.
+
+26
+00:02:46,931 --> 00:03:10,911
+Burada örneklerini bulabilirsiniz. Sonrasında raporunuzu bu formatta hazırlamanız bekleniyor. Yani işte raporunuzun, projenizin başlığı, burada kimler, hangi grup üyeleri mevcut, bunların detayları bir kısa abstrak yazmanız gerekecektir.
+
+27
+00:03:11,635 --> 00:03:26,135
+Abstract şu oluyor, aslında bütün çalışmanızın kısa bir özeti. Yani böyle birkaç paragraf olabilir. İki, üç paragraf diyelim. Projenizin konusu nedir? Önce bir kısa giriş yapmanız gerekiyor.
+
+28
+00:03:28,479 --> 00:03:36,500
+Neyi bulmaya çalışıyorsunuz? Neyi hedefliyor bu proje? Burada yaptığınız çalışmalar hakkında kısaca bir iki cümle yazabilirsiniz.
+
+29
+00:03:36,919 --> 00:03:47,719
+Yani diyelim ki veri madenciliğinde bir sınıflandırma işlemi yapıyorsanız. Burada birkaç algoritma kullandıysanız bu algoritmaların isimleri ve...
+
+30
+00:03:47,967 --> 00:04:10,967
+Yaptığınız testlerin en önemli bulgularını, bir iki cümleyle söyleyebilirsiniz. Yani işte birçok algoritma kullandınız ve bunların içinde diyelim ki SVM en başarılı çıktı. İşte %85 accuracy ile diğerleriyle daha başarılı bir şekilde eğitme imkanı buldunuz. Bunu söyleyebilirsiniz. Sonrasında da eksik gördüğünüz veya...
+
+31
+00:04:12,596 --> 00:04:22,036
+Yani bu makale veya bu çalışma dahilinde yapmadığınız bir şey varsa bir iki cümleyle de bunları özetleyebilirsiniz. Yani abstrak kısa bir özet diyebiliriz.
+
+32
+00:04:23,696 --> 00:04:32,956
+Sonrasında projenizin giriş kısmı yani introduction kısmında da daha detaylıca bu alanı tanıtmanız lazım.
+
+33
+00:04:34,740 --> 00:04:55,360
+Yaptığınız çalışmada neyi tahmin ediyorsunuz? Bir kredi riskini tahmin edeceksiniz. Burada bir kredi riski tahmini nedir? Neden önemlidir? Bu tahmin yapmada kullandığınız yöntemlerin neyi çözeceği, hangi problemi halledeceğinizle ilgili böyle kısa bir giriş yapmanız lazım birkaç paragraf.
+
+34
+00:04:55,860 --> 00:05:03,819
+Sonrasında bu detayları ilerleyen kısımda kullandığınız metodları açıklarken belirtileceksiniz.
+
+35
+00:05:03,819 --> 00:05:12,819
+Ama introduction kısmında bir genel giriş oluyor. Burada çok teknik detaylara girmiyorsunuz. Herhangi bir karşılaştırma da olmuyor. Bu şekilde yapmanızı...
+
+36
+00:05:13,747 --> 00:05:27,747
+Bekleriz. Sonrasında veriyle ilgili detayları paylaşabilirsiniz. Data Exploration'ı da veri keşfi dediğimiz ikinci bir başlık yapabilirsiniz. Burada da işte grafiklerle, figürlerle...
+
+37
+00:05:28,367 --> 00:05:43,408
+Veri setini açıklayabilirsiniz. Histogramlar veya barprotlar neyse bunları kullanarak hem hedef değişkenlerle arasındaki ilişkileri, belki korrelasyonları gösteren veri tanımamıza yardımcı olacak bazı görseler ekleyebilirsiniz.
+
+38
+00:05:43,408 --> 00:05:46,067
+İkinci başlık şeklinde.
+
+39
+00:05:47,572 --> 00:06:02,091
+Bu tabii ki bir şablon. Buradaki formatın birebir aynısı olması beklenmiyor. Ama şuradaki bir örnek üzerinden gideyim. Makalede nasıl bir yapı oluşur, nasıl bir şey beklenir.
+
+40
+00:06:02,831 --> 00:06:08,572
+Üçüncü alt başlık olarak da metodoloji. Yani kullandığınız algoritmalar. Mesela buradaki örnek...
+
+41
+00:06:10,387 --> 00:06:16,427
+İşte ondan sonra buradaki yazarlar. Bir genel abstract gördüğünüz gibi.
+
+42
+00:06:18,067 --> 00:06:20,108
+Introduction'da konuyu tanımlıyorsunuz.
+
+43
+00:06:21,527 --> 00:06:29,747
+Sonrasında background ya da bu background bilgisi gerekiyorsa o konuyla ilgili detaylar verebilirsiniz.
+
+44
+00:06:29,967 --> 00:06:33,167
+Burada görsellerle bunu detaylandırabilirsiniz.
+
+45
+00:06:33,615 --> 00:07:00,536
+Sonrasında aslında sizin kullandığınız metodoloji oluyor. Üçüncü alt başlık. Buna metodoloji de diyebilirsiniz. Ya da çalışmanızın başka bir şekilde isimlendirmiş sistemi de diyebilirsiniz. Burada hangi algoritmaları kullandınız, bu algoritmalarında hangi parametreler vardı, neden bu algoritmaları seçtiniz, bunların hiper parametreleri nelerdi, bu tarz yaklaşımları burada açıklayacaksınız.
+
+46
+00:07:01,747 --> 00:07:29,247
+Sonrasında bir de buraları geçiyorum. Aslında aynı şeyler oluyor. Evaluation ya da results diyebilirsiniz buraya. Burada da uyguladığınız testler. Yani veriyi böldünüz, testing, training yaptınız. Bir kısmını analiz ettiniz. Burada bulduğunuz metrikler, accuracy, F1, precision, record ölçümlerle bunları yapıyorsanız bunların
+
+47
+00:07:29,615 --> 00:07:33,495
+Test sonuçları, burada nümerik değerlerle bunları ifade etmeniz beklenir.
+
+48
+00:07:34,075 --> 00:07:36,335
+Sonrasında görsellerle de bunu destekleyebilirsiniz.
+
+49
+00:07:37,955 --> 00:07:49,555
+Test sonuçlarınızı, işte böyle görsellerle sizin bulduğunuz yöntemlerin karşılaştırması, hangisi daha hızlı, hangisi daha yavaş, hangisi daha başarılı gibi metriklerle bunları görselleştirebilirsiniz.
+
+50
+00:07:55,475 --> 00:08:02,575
+Literatür taraması dediğimiz şeyde de bunu bu aşamada da yapabilirsiniz ya da introduction'dan sonra da olabilir.
+
+51
+00:08:03,815 --> 00:08:11,435
+Burada da birkaç tane makaleyle, çok detaylı olmasını beklemiyorum. En azından yaptığınız çalışmaya benzer birkaç makale okuyun.
+
+52
+00:08:12,216 --> 00:08:21,075
+Bu makalelerle sizin yaptığınız çalışma arasındaki benzerlikler, farklılıklar, bunları da böyle bir iki paragraf şeklinde yazarsanız güzel olur.
+
+53
+00:08:22,324 --> 00:08:46,104
+Sonrasında da conclusion'larda bir genel özet tekrar yapıyorsunuz. Abstract'akine benzer başka bir ifadeyle. Ve böylelikle raporunuzu da tamamlamış oluyorsunuz. Referansları da buradaki gibi ITP değil, citation style şeklinde yapabilirsiniz. Burada özgürsünüz ama hani böyle numaralı yapmanızı tercih ederim, tavsiye ederim.
+
+54
+00:08:46,611 --> 00:08:56,932
+Sadece tutarlı olması önemli. APA ya da MLA'yı fark etmez. Böyle bir formatta raporunuzu hazırlamanızı bekliyorum diyebilirim.
+
+55
+00:08:58,131 --> 00:09:06,791
+Sonuç olarak Yıldız, online Yıldız'dan yükleyeceğin şey buradaki gibi bir makale formatında bir rapor.
+
+56
+00:09:07,031 --> 00:09:13,451
+Yani bunu da grup çalışması yapıyorsanız sadece bir tane grup üyesinin yüklemesi yeterli.
+
+57
+00:09:13,775 --> 00:09:16,916
+Çünkü diğerlerin ismi olacağı için onları görebiliriz.
+
+58
+00:09:17,615 --> 00:09:19,355
+Hocam, rapor İngilizce olmak zorunda mı?
+
+59
+00:09:19,796 --> 00:09:24,375
+Yok değil. Bu makale örneği sadece İngilizce olduğu için. İngilizce olmak zorunda değil.
+
+60
+00:09:24,916 --> 00:09:31,015
+Türkçe yapabilirsiniz. Daha kolay hissediyorsanız İngilizce de yapabilirsiniz. Hiç fark etmez. İngilizce veya Türkçe size kalmış.
+
+61
+00:09:31,775 --> 00:09:32,475
+Teşekkür ederim.
+
+62
+00:09:32,975 --> 00:09:33,775
+Ben teşekkür ederim.
+
+63
+00:09:34,495 --> 00:09:35,975
+Var mı bununla ilgili sorusu olan?
+
+64
+00:09:38,644 --> 00:09:48,644
+Yani scriptlerinizi filan bu rapora eklemeyin. Şunu yapabilirsiniz, hani GitHub hesaplarınız filan varsa scriptleri ona ekleyip link verirseniz iyi olur.
+
+65
+00:09:49,424 --> 00:09:59,944
+Şöyle hani burada footnote şeklinde script linkini belirselseniz güzel olur. Oradan hani buradaki GitHub linki mesela eklerseniz iyi olur.
+
+66
+00:10:00,000 --> 00:10:07,280
+Ama buraya kodunuzu eklemek. Burada sadece rapordan, sizden beklediğim böyle bir makale formatında bir rapor.
+
+67
+00:10:11,572 --> 00:10:20,771
+Ama dikkat edilmesi gereken bir nokta daha var. O da şu. Lütfen kendi kelimelerinizle yazın.
+
+68
+00:10:22,227 --> 00:10:33,827
+Hani literatür tarafında veya introduktörde veya metodlarla ilgili başka makalelerden veya başka web sayfalarından bunları birebir kopyalamayın.
+
+69
+00:10:34,187 --> 00:10:39,487
+Çünkü intihar raporuna sokacağım bunları. Yazdığınız şeyler kendi cümlelerinizde olmak zorunda.
+
+70
+00:10:39,587 --> 00:10:43,487
+Atıf vermeniz birebir cümleleri kullanabileceğiniz anlamına gelmiyor.
+
+71
+00:10:44,148 --> 00:11:03,508
+Yani bir çalışmaya atıf verdiğiniz zaman oradaki direkt kopya hakkınız olmuyor. Şu oluyor sizin, kaynağı başka bir yerde olabilir bu fikrim ya da bir cümlenin. Atıf vererek parafreyz etmeniz lazım. Yani başka şekilde, anladığınız şekilde kendi cümlelerinizle yazmanız lazım.
+
+72
+00:11:03,956 --> 00:11:09,995
+Bunun tek istisnası şeydir, alıntı yaparsanız. Yani birebir ağızdan alıntı.
+
+73
+00:11:10,115 --> 00:11:20,276
+Yani işte çift tırnak içinde bir cümle, iki cümle mesela önemli bir fikirse ve aynı cümlelerle kullanmanız gerekiyorsa bu şekilde kullanabilirsiniz atıf verin.
+
+74
+00:11:20,615 --> 00:11:26,896
+Ama tırnak işaretine değilse bu intihale girer. Yani bu aslında bir problem, plejezim olur.
+
+75
+00:11:27,336 --> 00:11:31,355
+O yüzden bu alışkanlığı şimdiden kazanmanızı öneririm. Biraz da o yüzden.
+
+76
+00:11:31,860 --> 00:11:36,319
+Burada, buna dikkat edeceğim. Lütfen kendi cümlelerinizle yazınız.
+
+77
+00:11:38,080 --> 00:11:51,600
+Buradaki orana göre puan, eğer hani çok fazla varsa ve hani copy paste gibi durumlar varsa puanlarınız da kırılma olacak. O yüzden tekrar hatırlatmakta da fayda var.
+
+78
+00:11:58,323 --> 00:12:10,743
+Rapor tahmini olabilir. Biraz daha uzun olabilir referanslarla falan fark etmez. Ama tek kişi çalışan bir projede 5-6 sayfa uygundur.
+
+79
+00:12:11,423 --> 00:12:22,763
+Sayfa sayısı biraz da yaptığınız analizlerle ve gruptaki eleman sayısıyla orantılıca artması beklenir ama 5-12 sayfa arasında bir rapor gayet uygun.
+
+80
+00:12:24,884 --> 00:12:33,264
+Raporunuzun da son tarihi 22 Mayıs. Çünkü ondan sonraki hafta, daha doğrusu o hafta sunumlarımız var.
+
+81
+00:12:33,264 --> 00:12:41,524
+Yani takdime bakarsak, yani 3 hafta aslında süremiz var. 27'sinde.
+
+82
+00:12:42,676 --> 00:13:01,356
+Ve üçün de sunumlarımız olacak. Sunum tarihini de paylaşacağım. Sizlerin hangi grup ne zaman sunum yapacak? Onların sırasında paylaşacağım sizin de. Onu da takip edersiniz. O hafta sadece grup üyeleri olarak sınıfta bir sunum yapmanız gerekecek. Onu da hazırlanırsınız.
+
+83
+00:13:03,976 --> 00:13:08,236
+Raporla ilgili sorusu olan var mı veya eklemek istediğiniz bir şey var mı?
+
+84
+00:13:11,731 --> 00:13:20,511
+Burası açık mı? Sanırım sorusu olan yok. O zaman kaldığımız yerden dersten devam edelim.
+
+85
+00:13:22,851 --> 00:13:30,312
+Şimdi geçen hafta sınıflandırma konularını büyük oranda tamamladık.
+
+86
+00:13:30,772 --> 00:13:40,792
+Zamanımız kalırsa belki önümüzdeki hafta ya da sonraki hafta, iki hafta sonra yine şey yapabiliriz.
+
+87
+00:13:41,352 --> 00:13:45,672
+Hem boosting hem de begging yöntemlerine değineceğiz.
+
+88
+00:13:45,752 --> 00:13:53,452
+Orada yine biraz konuşabiliriz sınıflandırma ve regresyonla ilgili yapılacak veya dikkat edecek konular.
+
+89
+00:13:53,452 --> 00:13:57,412
+Ama şimdilik o algoritmaları sonlandırmış olarak kabul edebilirsiniz.
+
+90
+00:13:58,163 --> 00:14:11,084
+Bugün sınıflandırmadan sonra kümeleme ya da cluster analizi dediğimiz yöntemi, veri madenciliği önemli bir alan olarak ön plana çıkan diğer bir yaklaşımı inceleyeceğiz.
+
+91
+00:14:11,624 --> 00:14:17,484
+Burada da farklı algoritmalar var. Bunları da birlikte görme şansımız olacak, konuşma şansımız olacak.
+
+92
+00:14:17,484 --> 00:14:18,684
+Şöyle yapalım.
+
+93
+00:14:20,436 --> 00:14:33,736
+Cluster ya da kümeleme nerede kullanılır? Neden böyle bir şeye ihtiyaç var? Yani öncelikle şunu söyleyeyim, cluster analizi bir unsupervised ya da gözetimsiz öğrenme yöntemi.
+
+94
+00:14:33,896 --> 00:14:42,236
+Yani veri madenciliğinde hatırlarsanız gözetimli, gözetimsiz, yarı gözetimli ya da reinforcement pekiştirmeli dediğimiz.
+
+95
+00:14:42,676 --> 00:14:52,375
+Yöntemler var. Bunların içinde de gözetimsiz kısımda en önemli analiz türlerinden bir tanesi klaster analizi yani kümeleme analizi.
+
+96
+00:14:53,056 --> 00:15:02,995
+Diğer bir yaklaşım da anomali detection ya da anomali tespiti veya özellik çıkartımı dediğimiz algoritmalar, yaklaşımlar işin içine giriyor.
+
+97
+00:15:03,676 --> 00:15:06,436
+Kümelemenin birçok kullanım alanı var.
+
+98
+00:15:10,336 --> 00:15:15,196
+Analizler için kullanılıyor. Bunların başında mesela şunu sayabiliriz.
+
+99
+00:15:16,355 --> 00:15:25,255
+Segmentasyon, market segmentasyonu. Farklı firmaların çeşitli backgroundlardan müşterileri var.
+
+100
+00:15:26,255 --> 00:15:29,216
+Bu müşteriler kendi arasında belli benzerlikler taşıyor mu?
+
+101
+00:15:30,096 --> 00:15:37,615
+Bunları belli gruplara ayıracak olsaydık hangi tür talepleri ve kişiler
+
+102
+00:15:38,067 --> 00:15:55,427
+bulabilirdik. Bu tarz gruplar oluşturabilirdik. Mesela bu bir örnek olurdu. Veya işte reklam vereceksiniz. Hangi tür kitleye hedef yapacaksınız? Bunlara göre reklamları tasarlayacaksınız. Bu başka bir örnek olabilir. Bunun dışında yani
+
+103
+00:15:56,916 --> 00:16:12,956
+Sınırsız sayıda örnek verilebilir, biyolojiden verilebilir, burada farklı farklı genler benzer nitelikler taşıyor mu? Veya farklı proteinlerin benzerliklerine yola çıkarak fonksiyonları hakkında fikir sahibi olabilir miyiz?
+
+104
+00:16:15,755 --> 00:16:23,655
+Markalar, sosyal medya analizi, hangi tür kişiler belli bir benzerlik taşıyor? Bunlar kendi arasında.
+
+105
+00:16:24,211 --> 00:16:32,491
+Gruplandırılabilir mi? Gibi çeşitli uygulamalar var. Bunları çok daha fazla artırabiliriz.
+
+106
+00:16:34,091 --> 00:16:38,851
+Peki, buradaki kümelemeyi, yani gruplamayı nasıl ortaya çıkarıyoruz?
+
+107
+00:16:38,851 --> 00:16:49,431
+Yani birden farklı gruplar, birden çok sayıda grup varsa bunlar için de nasıl bir ayrıştırma işlemi yapma söz konusu oluyor?
+
+108
+00:16:52,500 --> 00:17:07,440
+Öncelikle bu bir gözetimsiz öğrenme yöntemi olduğu için burada küme sayısı hakkında her zaman ve standart bir çıkarım yapmak söz konusu olmayabiliyor.
+
+109
+00:17:07,440 --> 00:17:19,840
+Yani şunu ifade etmeye çalışıyorum. Kesinlik derecesi muğlaklık içerebilir. Yani küme analizinde kesinlik çok mümkün değil.
+
+110
+00:17:20,531 --> 00:17:28,951
+yaklaşım söz konusu. Yani belli derecede gerçekliğe yaklaşımı biz hesap ediyoruz aslında.
+
+111
+00:17:30,211 --> 00:17:38,531
+Örnek vermek gerekirse, şimdi buradaki veri noktalarına bakarsak bu çok bariz bir şekilde birbirinden ayrıca...
+
+112
+00:17:38,531 --> 00:17:41,531
+Birbirinden ayrıca...
+
+113
+00:17:41,531 --> 00:17:42,931
+Pardon.
+
+114
+00:17:44,660 --> 00:18:05,400
+Birbirinden ayrışan noktalar ortaya çıkmış. Burada kırmızı noktalar var, kahverengi noktalar ve mavi noktalar var. Bunlar arasındaki gruplar çok net bir şekilde ayrıştırılabiliyor. Burada küme tanımı kolayca tanımlanabilir. Ama bu her zaman mümkün olmayabilir.
+
+115
+00:18:06,132 --> 00:18:28,752
+Bir kümeleme çalışmasında amacımız ne aslında? Kümeleme fonksiyonu ya da kümeleme yapılan görevin temel amacı nedir? İki tane şeyi optimize eder kümeleme analizi. Bundan bir tanesi küme içi benzerliği artırmak.
+
+116
+00:18:29,587 --> 00:18:53,148
+Bir objektif fonksiyonumuzdur ya da optimizasyon fonksiyonudur. Yani eğer bir küme oluşturuyorsak bu küme içindeki benzerlikler minimum olmalı. Öyle ki bunlar birbirine çok benzer olsun. Yani birbirine olan uzaklığı kısa olursa ne oluyor? Bunlar arasındaki benzerlik yüksek olmuş oluyor. Birinci hedefimiz bu.
+
+117
+00:19:01,844 --> 00:19:08,324
+Peki ikinci fonksiyon nedir ya da hedef fonksiyonu ne olur sizce? İkinci olarak neyi optimiz etmeye çalışıyoruz?
+
+118
+00:19:11,859 --> 00:19:16,740
+Kümelerin de birbirinden mümkün olduğunca farklı olmasını aslında sağlamaya çalışıyoruz.
+
+119
+00:19:17,579 --> 00:19:33,160
+Aynen öyle. [öğrenci]'in de söylediği gibi aslında burada küme içindekiler birbirine benzerse, küme dışındakiler de birbirinden o kadar farklı olmalı ki, bu kümelerin birbirinden ayrı şeyler olduğunu net bir şekilde ortaya koyabilirim.
+
+120
+00:19:36,660 --> 00:19:52,700
+Fonksiyonumuz var. Birincisi küme içindeki mesafeleri minimize etmek, diğer bir yaklaşımda kümeler arasındaki mesafeleri de maksimize etmek. Bu durumda ayrıştırmayı en başarılı şekilde sağlamış oluyoruz.
+
+121
+00:19:53,980 --> 00:20:00,900
+Ama dediğim gibi bu her zaman bu kadar kolay değil. Mesela buradaki örneğe bakarsanız, burada kaç tane küme görüyorsunuz?
+
+122
+00:20:02,099 --> 00:20:08,639
+Toplamda 20 tane nokta var. Yani 20 tane kişi olduğunu söylersek. Kaç tane gruptan topluluk?
+
+123
+00:20:10,839 --> 00:20:11,480
+2.
+
+124
+00:20:12,180 --> 00:20:15,339
+2. Güzel. Başka önerisi olan var mı?
+
+125
+00:20:20,307 --> 00:20:23,827
+Eğer cluster sayısını artırırsak 6'da diyebiliriz.
+
+126
+00:20:24,268 --> 00:20:31,928
+6'da diyebilirsiniz değil mi? Burada bir tane, şurada da bir tane, bir tane de burada. Bunlar da 3 tane, 6 tane başka.
+
+127
+00:20:45,523 --> 00:20:54,523
+Hocam, aslında mesela bir sayı söylesek o sayıya uygun olanı da bulabiliyoruz. Dört desek ona da uydurabiliriz, beş desek Baycon'a da uydururuz.
+
+128
+00:20:55,243 --> 00:21:04,343
+Aslında dördü bekliyordum, dördü diyebiliriz değil mi? Şurası bir dört. Yani bu bir grup. Şu ikisi bir grup. Şu daha ayrı onlardan, bu da bir grup.
+
+129
+00:21:05,063 --> 00:21:11,663
+Sonrasında bu bir grup olabilir, bu da bir olabilir. Yani dört tane de diyebiliriz. Dört de altı da, iki de doğru.
+
+130
+00:21:12,660 --> 00:21:14,200
+Başka bir şey söyleyebilir miyiz?
+
+131
+00:21:17,660 --> 00:21:21,200
+Söyleyebiliriz. Her birisini ayrı kabul ederseniz 20 tane de söyleyebilirsiniz.
+
+132
+00:21:21,420 --> 00:21:28,020
+Yani gördüğünüz gibi küme tanımı her zaman çok net olmayabilir.
+
+133
+00:21:28,200 --> 00:21:31,080
+Yani bu iki demek gayet makul değil mi?
+
+134
+00:21:31,140 --> 00:21:36,000
+Burada iki tane farklı küme var veya buradaki gibi 6 tane küme de olabilir.
+
+135
+00:21:36,627 --> 00:22:01,587
+Hatta az önce söylediğimiz gibi dört tane de olabilir. Burada bir tane, şurada bir tane, bu da bir tane, bu da. Demek ki küme tanımı oldukça muğlaklık içerebiliyor. Burada sizin aslında neyi kümelemek istediniz ya da ne kadar ölçü bir küme uzaklığı, küme benzerliği kabul ettiğinize göre bu sayı değişir.
+
+136
+00:22:01,951 --> 00:22:26,031
+Ama gördüğünüz gibi bu sayılar arasında, bu noktalar arasındaki benzerliği tespit edebiliyoruz ama bunun ölçüsü veya bunun farklı bir grup olduğu noktasında kesim ya da ayrım noktasını tespit etmek biraz zor. Bu da sizin küme içinde nasıl bir kullanıma ihtiyacınız var ya da nasıl bir küme tanımınız var buna göre şekilleniyor.
+
+137
+00:22:27,476 --> 00:22:50,216
+Kümeleme aslında iki tane temel yaklaşımla yapılır, kümeleme algoritmaları. Bunlar da Partitional Clustering diyoruz ya da Hierargic Clustering. İki tane kümeleme yaklaşımı var, yaklaşım olarak bunları söyleyelim. Bunların kendi içinde farklı algoritmalar var ama birincisi Partitional Clustering.
+
+138
+00:22:50,900 --> 00:23:04,140
+Partitional clustering şu demek, her bir nokta ya da her bir vektör neyse artık nasıl tanımlıyorsanız bu uzak içinde, bunların her birisi sadece tek bir tane cluster, tek bir kümeye ait olabilir.
+
+139
+00:23:04,980 --> 00:23:17,180
+Yani orijinal noktalarımız bunlar, bunu partition şeklinde yani bölmeli bir kümeleme yaptığınız zaman burada 3 tane kümeden oluşuyor bu bölme işlemi.
+
+140
+00:23:18,099 --> 00:23:27,380
+Ve her bir nokta, gördüğünüz gibi her bir nokta sadece tek bir tane kümeye ait olmak durumunda. Şuradakilerde tek bir tane kümeye ait her birisi.
+
+141
+00:23:28,759 --> 00:23:44,120
+Hiyerarşik kümelemede ise birden çok kümeye ait olabilir. Yani hiyerarşik kümelemede iç içe birden çok kümeye ait olabilir noktalar. Bunlar da belli bir hiyerarşiden bakışınıza göre.
+
+142
+00:23:45,044 --> 00:24:05,023
+Şekilleniyor. Hierarşik kümeleme, mesela şuradaki örneğe bakalım. Bu bir dendogram yapısı gibi. Şurada P2 aynı zamanda bu içteki kümeye ait, sonra ortadaki kümeye ait ve en dıştaki kümeye de ait olarak görebiliyoruz. Ama P1 sadece dışarıdaki kümeye ait.
+
+143
+00:24:06,548 --> 00:24:10,168
+Bunlar da iç içe gördüğünüz gibi hiyerarşik bir yapı sağlıyor.
+
+144
+00:24:10,408 --> 00:24:19,827
+Yani burada P2 hem bu içteki kümeye hem bu ortadaki kümeye hem de en dıştaki kümeye ait olarak gösterilebilir.
+
+145
+00:24:23,208 --> 00:24:30,048
+Bunların da hesaplanması ya da analiz edilmesi farklı algoritmalarla yapılabiliyor.
+
+146
+00:24:30,579 --> 00:24:35,259
+Partitional Clustering genellikle k-means ve varyantlarıyla hesap edilir.
+
+147
+00:24:35,259 --> 00:24:44,799
+Burada k-means, x-means, fuzzy x-means, fuzzy k-means gibi varyantlar var ama temel olarak algoritma k-means algoritması ve bunun türevleri.
+
+148
+00:24:47,339 --> 00:24:54,099
+Tabi bir de şey var, DB scan bir anda var, onu da konuşuyoruz. Onlar da yoğunluk temelli. Ama onlar da Partitional kümeleme.
+
+149
+00:24:55,251 --> 00:24:59,331
+Diğer bir yaklaşım da, hiyerarşik kümeleme.
+
+150
+00:25:00,031 --> 00:25:05,331
+Hiyerarşik kümelemeyi de aşağıdan yukarı şekilde kümeleme yapabilirsiniz.
+
+151
+00:25:05,431 --> 00:25:08,471
+Buna agglomeratif kümeleme de denir ya da batmab.
+
+152
+00:25:09,471 --> 00:25:14,071
+Ya da tepeden aşağı kümeleme, top-down clustering.
+
+153
+00:25:14,291 --> 00:25:16,851
+İkisi de aslında aynı şeyi buluyor.
+
+154
+00:25:18,231 --> 00:25:22,771
+Nereden başladığınıza göre bu algoritmalar farklılık gösteriyor.
+
+155
+00:25:24,051 --> 00:25:31,091
+Şimdi ilk olarak Partitional Clustering'de bir K-Means algoritmasını konuşalım.
+
+156
+00:25:31,191 --> 00:25:36,791
+K-Means algoritması oldukça yaygın bilinen ve yaygınca kullanılan bir algoritma.
+
+157
+00:25:37,571 --> 00:25:43,411
+Fikri de basit, şöyle, elimizde farklı farklı noktalar var.
+
+158
+00:25:45,411 --> 00:25:46,871
+Şöyle çizelim isterseniz.
+
+159
+00:25:55,220 --> 00:25:57,580
+Elimizde farklı farklı noktalar olsun.
+
+160
+00:26:04,860 --> 00:26:17,760
+Aslına bakarsanız bunların her birisi X, P, X, 2, X, 3 gibi farklı boyutlardan oluşan bir uzay.
+
+161
+00:26:18,163 --> 00:26:41,044
+Bu üç boyut olmak zorunda değil, çok sayıda bir boyut olabilir. Yani her bir noktamız aslında, diyelim ki P1 noktası, kişiler arasında bir kümeleme yapacağız. Mesela bizim sınıfta bir tane öğrenci var ama kaç tane arkadaş grubu var. Birinci kişinin özelliği, mesela yaş olabilir.
+
+162
+00:26:44,435 --> 00:26:56,615
+Sonra boy olabilir, başarı düzeyi gibi bir sürü değişkenimiz olsun. 19, 1.80 gibi gibi.
+
+163
+00:26:57,316 --> 00:27:10,715
+T2, 20, 1.75 gibi. Bunun gibi birçok noktadan olacak. Yani her bir noktayı aslında bu şekilde, çok boyutlu şekilde gösterebiliriz.
+
+164
+00:27:11,839 --> 00:27:29,259
+normal olarak bir noktaya dönüştürdük. Soyut şekli ifade etmek için. Bunun gibi N tane noktamız olsun. Bunlar da farklı farklı yerlerde dağılmış olabilir.
+
+165
+00:27:33,523 --> 00:27:51,663
+Şimdi k-means şunu yapıyor, k-means algoritması için iki tane şeye ihtiyacımız var. Birincisi bir uzaklık metriyi bulmamız lazım. Bir uzaklık metriyi kullanacağız. Bir şeye göre uzaklığını ölçeceğiz.
+
+166
+00:28:01,332 --> 00:28:13,832
+Metreyle ihtiyacınız var. Benzerlikle uzaklık ters orantılı. Aradaki mesafe artıyorsa ne oluyordu? Benzerlik azalır.
+
+167
+00:28:14,472 --> 00:28:23,712
+Yani belli noktalar arasındaki benzerliği nasıl tespit ediyorduk? Uzaklığını hesap ederek bununla ters orantılı bir şekilde hesaplama yapıyorduk.
+
+168
+00:28:23,712 --> 00:28:27,612
+Yani noktalar arasındaki benzerliği bulmamız lazım. Diğer bir önemli nokta da ne?
+
+169
+00:28:29,107 --> 00:28:32,927
+Birkaç tane küme olacağına nasıl karar veriyoruz?
+
+170
+00:28:35,008 --> 00:28:36,327
+Nasıl verebiliriz?
+
+171
+00:28:42,548 --> 00:28:45,048
+Her parametre olarak belirlemiyor mu hüküme sayısını?
+
+172
+00:28:45,587 --> 00:28:50,248
+Evet. Bunu aslında algoritma dışarıdan parametre olarak alıyor.
+
+173
+00:28:50,248 --> 00:28:57,248
+Yani k-means özelinde bunu biz bir parametre olarak alıyoruz. Yani k sayısı...
+
+174
+00:29:00,852 --> 00:29:07,652
+küme sayısına eşit oluyor. Bunun nasıl bulunabileceğine dair bazı yaklaşımlar var ama konuşacağız.
+
+175
+00:29:07,652 --> 00:29:16,092
+Ama öncelikle k-means'in kabulü şu, varsayımı şu, kullanıcı bu sayıyı biliyor.
+
+176
+00:29:16,756 --> 00:29:31,135
+Yani bunu nasıl test edersiniz? Belki sizin bir ön bilginiz vardır. İşte diyelim ki bu veri seti 3 tane ya da 5 tane veya 8 tane kümeden oluştuğuna dair bir ön bilginiz olabilir.
+
+177
+00:29:32,415 --> 00:29:44,016
+Veya bir görselleştirme yaptığınızda burada sizin tahmininize göre, ön bilginize göre 3 tane sınıf, 3 tane pardon küme olduğunu düşünüyorsunuz.
+
+178
+00:29:45,107 --> 00:29:53,787
+Şimdi burada algoritmanın kendisi için bunu biz parametre olarak algoritmaya vermek zorundayız.
+
+179
+00:29:54,447 --> 00:29:59,127
+Yani diyelim ki üç tane küme olduğunu ön bilgi olarak algoritmaya sunuyoruz.
+
+180
+00:30:00,027 --> 00:30:01,427
+Sonraki aşamada şu oluyor.
+
+181
+00:30:03,327 --> 00:30:05,827
+Algoritma k-miz şöyle çalışır.
+
+182
+00:30:06,907 --> 00:30:08,747
+Üç tane rastgele...
+
+183
+00:30:10,099 --> 00:30:33,720
+Merkez noktası diyelim. Bir tanesi C1 olsun, bir tanesi C2 olsun, üçüncü de C3 olsun. Bunlara centroid ya da merkez nokta dediğimiz nokta olarak ifade ediyoruz.
+
+184
+00:30:37,556 --> 00:30:41,856
+seçiliyor bu noktalar üstünden rastgele nokta olarak belirleniyor.
+
+185
+00:30:42,816 --> 00:30:45,176
+Birinci aşamada yapılan işlem şu.
+
+186
+00:30:45,176 --> 00:30:55,676
+Her bir noktanın bu üç sentroidada uzaklığını hesabiliyoruz.
+
+187
+00:30:57,556 --> 00:31:05,395
+her bir noktanın bunlara göre uzaklıkları hesap edilir. Buna diyelim ki D1, bu D2, bu D3 olsun.
+
+188
+00:31:05,395 --> 00:31:14,276
+Sonrasında bunlar için de minimum olanı X, C, İ diyelim buna.
+
+189
+00:31:20,147 --> 00:31:26,367
+Ona atanır. Yani diyelim ki bu P noktası nereye gidecek?
+
+190
+00:31:29,287 --> 00:31:38,087
+Pİ diyelim buna. Yani hangi kümeye atanacak? Onu belirleyen şey bu uzaklık. Hangisine yakınsa oraya atanır.
+
+191
+00:31:38,307 --> 00:31:46,527
+Şimdi diyelim ki bu nokta en yakın C1 oldu. Dolayısıyla aslında bu nokta şimdi C1'e ayrı.
+
+192
+00:31:47,508 --> 00:31:57,048
+İkincisi için aynısını yapıyoruz. Üçüncüsü için aynısını yapıyoruz. Bütün noktalar için. Bunları hesap ettik. Bütün noktalar için aynı işlemi yapıyoruz.
+
+193
+00:31:59,688 --> 00:32:06,288
+Sonrasında birinci aşamada, birinci algoritma,
+
+194
+00:32:13,428 --> 00:32:14,128
+Şunu yapıyor.
+
+195
+00:32:17,368 --> 00:32:22,807
+Her noktayı, her noktanın sentroidları,
+
+196
+00:32:26,675 --> 00:32:29,375
+olan uzaklıkları bu.
+
+197
+00:32:35,251 --> 00:32:38,251
+Ancak, ne?
+
+198
+00:32:45,428 --> 00:32:50,067
+Hangi sentroid en yakınsa o sentroidin bulunduğu kümeye.
+
+199
+00:32:52,388 --> 00:32:53,728
+Hayır, kümeye.
+
+200
+00:33:01,652 --> 00:33:05,332
+Birinci aşamada bu oldu. Yani birinci aşamada öncelikle bunu yapıyoruz.
+
+201
+00:33:06,991 --> 00:33:18,872
+Ve sonrasında şöyle bir şekil olduğunu varsayalım. Şuna yakın noktalar C1'e geldi. Diğer noktalar C2'ye geldi. Şuradaki noktalara da C3'e geldi.
+
+202
+00:33:20,531 --> 00:33:27,951
+Bu aşamada, şimdi gördüğünüz gibi aslında bu centroid noktaları bu kümelerin merkezinde değil.
+
+203
+00:33:29,332 --> 00:33:31,712
+Şunları tekrar çizecek olsaydık.
+
+204
+00:33:33,892 --> 00:33:42,792
+Buradaki C3, yani bütün bu noktaların, bu kümeye ait noktaların merkezi şuralarda bir yerde olacak.
+
+205
+00:33:42,932 --> 00:33:43,292
+Değil mi?
+
+206
+00:33:44,012 --> 00:33:48,472
+Yani aslında C3 prime noktası burada bir yerde olacak.
+
+207
+00:33:49,212 --> 00:33:52,772
+Şuraların ortası da şurada bir yere taktikabilecek.
+
+208
+00:33:56,596 --> 00:34:01,416
+O kümenin içine, merkeze gelecek şekilde kaydırıyoruz. Bu da C2'den üstü olsun.
+
+209
+00:34:02,576 --> 00:34:03,736
+İkinci aşamada ne yapıyoruz?
+
+210
+00:34:05,696 --> 00:34:06,736
+Centroidleri...
+
+211
+00:34:11,891 --> 00:34:20,351
+Kümelerin merkezine kaydırıyoruz.
+
+212
+00:34:26,195 --> 00:34:29,195
+Merkezine kaydırdık. Sonrasında ne oluyor?
+
+213
+00:34:34,003 --> 00:34:36,363
+Sonrasında bu işlemi tekrar ediyoruz.
+
+214
+00:34:39,283 --> 00:34:40,684
+Bu gitti, bu da gitti.
+
+215
+00:34:41,403 --> 00:34:43,783
+Parmak, şu gitti, bu da gitti.
+
+216
+00:34:45,643 --> 00:34:46,943
+Tekrar şunu yapalım.
+
+217
+00:34:49,603 --> 00:34:54,703
+Şimdi artık şu nokta var. Şuradaki nokta var, şuradaki nokta var, şuradaki nokta var, şuradaki nokta var.
+
+218
+00:34:55,264 --> 00:34:59,983
+Şimdi bunlara göre tekrar her bir noktanın uzaklığını hesap edeceğiz.
+
+219
+00:35:01,523 --> 00:35:09,743
+Diyelim ki şöyle bir tane küme oluştu, şurada da başka bir küme oluştu, burada da başka bir küme oluştu. Sonra bunları tekrar kaydıracağız, tekrar devam edeceğiz.
+
+220
+00:35:12,443 --> 00:35:16,963
+Bütün bu işlemi, yani şöyle yapayım.
+
+221
+00:35:22,863 --> 00:35:23,943
+Tekrar edelim de.
+
+222
+00:35:26,260 --> 00:35:32,840
+Bütün bu işlemi tekrar edeceğiz. Ne zamana kadar? Converge olana kadar ya da duraksayana kadar.
+
+223
+00:35:36,659 --> 00:35:46,380
+Praksiyana kadar ya da küme, şöyle diyelim, küme algısı değişmeyene kadar.
+
+224
+00:35:52,340 --> 00:35:53,960
+Bütün bu işlemi tekrar etmesin.
+
+225
+00:35:55,560 --> 00:36:03,600
+Belli bir nokta ne olacak? Bu noktalar kaya kaya buraya geldi, sonra şuraya geldi, sonra tekrar buraya geldi.
+
+226
+00:36:03,680 --> 00:36:09,840
+Artık bu çok hareket etmeye başlayacak. Çünkü bu kümeler içindeki noktaların konuları değişmemeye başlayacak.
+
+227
+00:36:10,260 --> 00:36:15,039
+Benzer şekilde bu önce buraya kayacak, sonra buraya kayacak, sonra bir noktada sabitleşecek.
+
+228
+00:36:19,635 --> 00:36:28,576
+Üç tane küme ve bunların etrafında çeşitli sayıda noktadan oluşan bir sonucumuz ortaya çıkmış olacak.
+
+229
+00:36:29,376 --> 00:36:32,695
+Bu da bizim son halindeki kümemiz olmuş oluyor.
+
+230
+00:36:33,975 --> 00:36:39,336
+Yani isterseniz bunu bir örnek üzerinden adedelim.
+
+231
+00:36:41,336 --> 00:36:42,539
+Şuradaki...
+
+232
+00:36:43,188 --> 00:36:48,868
+Tek düzlemde, yani tek doğru üzerinde bunu göstermek, belki anlatmak daha kolay olabilir.
+
+233
+00:36:49,548 --> 00:36:54,148
+Elimizde iki tane küme olacağını varsayıyoruz.
+
+234
+00:36:54,828 --> 00:36:56,828
+Ve burada çeşitli noktalarımız var.
+
+235
+00:36:58,308 --> 00:37:00,148
+Altı, dokuz tane noktamız olsun.
+
+236
+00:37:00,148 --> 00:37:08,788
+İşte bir tanesi, iki, birisi, üç noktasında, bir dörtte, on, on, bir, on, iki, yirmi, yirmi beş ve otuzda olacak şekilde.
+
+237
+00:37:10,003 --> 00:37:26,843
+9 tane noktamız var. İlk başlangıç centroidlerimizi 2 ile 4'te seçtiğimizi varsayalım. Şimdi üçgenler bir küme, yuvarlaklarda başka bir küme olacak. Her bir noktanın küme merkezinde uzaklıklarına hesap ediyoruz. İkinin ikiye uzaklığı.
+
+238
+00:37:27,411 --> 00:37:46,871
+Yani aslında en yakın 2'ye. 4'e uzaklığından çok daha yakın. Dolayısıyla 2 noktası 1. kümeye atanmış olacak. 3 noktası 1. ile 3. kümeye aslında uzaklığı aynı ama 1. kümeyi öncelikle atamaya başladığımız için oraya atamış olalım.
+
+239
+00:37:51,775 --> 00:38:00,596
+11, 12, buradaki kalanların hepsi 4'e 2'den daha yakın. Dolayısıyla buradaki kümeler üçgen şeklinde ikinci kümeye atanmış olsun.
+
+240
+00:38:02,096 --> 00:38:11,415
+Şimdi tekrar küme merkezlerini güncellediğimizi görüyoruz. Burada da şimdi az önce ikide olan küme merkezi şimdi nereye gelecek?
+
+241
+00:38:12,155 --> 00:38:17,255
+Bu ikisinin ortasının neresi? 2,5'a gelecek. Yani küme merkezi 2'den 2,5'a kaydı.
+
+242
+00:38:18,804 --> 00:38:26,563
+Üçgenlerin ortalaması nerede? Bütün hepsinin orta noktası 16'ya geliyor. Şuradaki bir nokta olmasını bekliyoruz.
+
+243
+00:38:27,844 --> 00:38:35,063
+Şimdi ikinci döngü başladığı zaman artık her bir noktanın uzaklığını yeni merkezlere göre karşılaştırıyoruz.
+
+244
+00:38:35,824 --> 00:38:37,663
+İkinin iki uçağı uzaklığı.
+
+245
+00:38:38,099 --> 00:38:52,919
+16'ya uzaklığından daha yakın. 3'ün de öyle, 4'ün de öyle. Ama 10'un uzaklığı 2. kümeye daha yakın. 11'in de öyle, 12'in de öyle. Dolayısıyla bütün bu noktalar 16'ya. Yani 2. kümeye atanacak.
+
+246
+00:38:54,639 --> 00:39:03,199
+Şimdi artık gördüğünüz gibi küme sayısı değişti. Bu kümenin, üçgenlerin oluşturduğu kümenin orta noktası 18'e kaydı. Yuvarlakları 2'de 3'e kaydı.
+
+247
+00:39:04,052 --> 00:39:11,532
+Bu işlemi devam ederseniz, dördüncü ve en sonunda beşinci iterasyonda şunu göreceksiniz.
+
+248
+00:39:12,132 --> 00:39:19,172
+Birinci kümenin merkezi yedi olacak, ikinci kümenin merkezi yirmi beş olacak ve şu üç tane üçgen.
+
+249
+00:39:19,519 --> 00:39:28,200
+İkinci kümeye bu altı tane yuvarlak da birinci kümeye atanmış olacak. Artık bundan sonra küme merkezleri hareket etmemeye başlayacak.
+
+250
+00:39:28,280 --> 00:39:37,720
+Yani buna convergence ya da nuraklama diyebiliriz. Bu noktadan sonra artık kümeler oluşmuş ve son halini almış olarak ortaya çıkıyor.
+
+251
+00:39:40,947 --> 00:40:00,000
+K-means'in mantığı bu. Aslında oldukça basit bir algoritma. Öncelikle bir metrik tanımlıyorsunuz, uzaklığı ölçecek. Bu uzaklık metri öklü de olabilir, Manhattan olabilir, Cosibus olabilir, fark etmez. Bu uzaklık metriyle benzer.
+
+252
+00:40:00,000 --> 00:40:10,039
+Müllerliği tespit edeceksiniz ya da mesafeyi tespit edeceksiniz. Sonrasında k sayısını belirtmeniz gerekiyor. Kaç tane küme olmasını istiyorsunuz ya da kaç tane küme olduğunu varsayıyorsunuz.
+
+253
+00:40:11,619 --> 00:40:21,000
+Bu adımlardan sonra ilk sentroidler tespit edilir. Sonrasında bu işlemler tekrar ederek de küme sayısı ortaya çıkmış oluyor.
+
+254
+00:40:21,000 --> 00:40:26,199
+Ama burada bazı problemler var. Mesela en büyük problem nedir?
+
+255
+00:40:27,284 --> 00:40:43,684
+Küme sayısı. Bunu nasıl test edeceksiniz? Yani küme sayısını, birincisi kaç tane küme olduğunu nasıl vereceksiniz? İkincisi, bu küme başlangıç noktalarını nasıl oluşturmak gerekir? Ya da bunlar sonuca etkiler mi?
+
+256
+00:40:48,403 --> 00:41:04,723
+Bunun gibi çeşitli sorunlar var. Bunun yanında bir de aslında kümelerin şekli, kümelerin yapısı, büyüklüğü de bizim çeşitli zorluklarla karşılaşmamıza sebebiyet veriyor.
+
+257
+00:41:04,723 --> 00:41:11,783
+Yani acaba küme yapısı bir konkab mı ya da konveks şekil mi oluşturuyor?
+
+258
+00:41:13,652 --> 00:41:20,632
+Sonuç olarak, nihai olarak elde ettiğimiz kümelemeye etki eden faktörlerin başında geliyor.
+
+259
+00:41:21,432 --> 00:41:22,772
+İsterseniz bir de şunu görelim.
+
+260
+00:41:23,252 --> 00:41:30,592
+Acaba başlangıç noktalarını farklı seçmek bir sonucu değiştiriyor mu?
+
+261
+00:41:30,972 --> 00:41:37,872
+Başlangıç noktalarının seçimi küme yapısını değiştirebiliyor mu?
+
+262
+00:41:39,251 --> 00:41:53,932
+Şu kümeye bakalım. Orijinal noktalarımız bunlar olsun. Daha kolay tespit etmek için yeşil noktalar, kırmızı ve mavi noktalar şeklinde gösterdiğimizi varsayalım. Sizce burada kaç tane küme ortaya çıkması beklenir?
+
+263
+00:41:59,668 --> 00:42:09,728
+Üç tane değil mi? Yani aslında çok bariz bir şekilde ayrılmış. Şunlar yeşil noktalar bir küme, şurada bir küme var, şurada da kırmızı bir küme var.
+
+264
+00:42:09,847 --> 00:42:19,427
+Yani bu aralarda kalan bazı noktalar var ama bundan çok önemli bir farklılık yaratmıyor. Yani bunları ayrı bir küme değil de bu kümelere ait noktalar şeklinde görebiliriz.
+
+265
+00:42:20,307 --> 00:42:27,027
+Ve birinci kümenin şuradaki noktalardan ikinci kümenin buradaki üçüncü kümenin de buradan oluşmasını bekleriz.
+
+266
+00:42:28,532 --> 00:42:53,372
+İsterseniz deneyelim bakalım. Şimdi optimal olarak bulacağımız ya da beklediğimiz küme yapısı bu. Ama bu üç küme bu şekilde de sonlandırılabilir. Yani birinci küme şurası, ikinci küme burası, üçüncü küme de şunu tamamı. Bu bir suboptimal kümeleme olur. Ama bu da mümkün. İsterseniz bunun nasıl mümkün olduğunu konuşalım. Birinci yaklaşımımız şu olsun.
+
+267
+00:42:53,780 --> 00:43:02,099
+rastgele seçtiğimiz sentroidlerimiz böyle dağılmış olsun. Bir tanesi burada rastgele bir nokta, ikisi burada, üçüncü de burası olsun.
+
+268
+00:43:03,731 --> 00:43:28,672
+Şimdi burada ne olacaktır? İlk başta bütün bu yeşil noktalar buraya daha yakın değil mi? Yani bu mavi noktalar da şuraya daha yakın, kırmızı noktalar da buraya daha yakın. İkinci iterasyon da ne olacaktır? Şimdi yeşillerin orta noktası nerede? Şuralarda bir yerde değil mi? Yani bu aşağı doğru kayacak. Onu tahmin edebiliyoruz. Mavilerin ortalaması da buraya doğru bir yerde.
+
+269
+00:43:30,003 --> 00:43:50,963
+Kırmızıların ortası da şurada bir yerde. Dolayısıyla ikinci iterasyonda olmaması bekleriz. Kaydırdım. Gördüğünüz gibi yeşil buraya kaydım, mavi buraya, kırmızı da biraz aşağı. Şimdi yeni kümeye göre kırmızıların ortası narısı olacak, biraz daha aşağıya kayacak, şuralarda bir yerde olacak. Mavi de biraz daha aşağıya kayacak, yeşil de biraz daha aşağıya kayacak.
+
+270
+00:43:57,748 --> 00:44:02,367
+Kırmızı da biraz küçük bir ilmeyle aşağı kaydı.
+
+271
+00:44:03,788 --> 00:44:10,087
+Üçüncü iterasyonda bu hareket devam edecektir. Buradaki mavi sayısı daha çok olduğu için aşağı doğru çekecek.
+
+272
+00:44:10,387 --> 00:44:15,147
+Yani şuralarda bir yerde olacak, yeşil de şuralarda bir yerde, kırmızı da şuralarda bir yerde.
+
+273
+00:44:16,547 --> 00:44:21,367
+Devam ediyoruz. Beşinci iterasyonda şuradaki maviler de...
+
+274
+00:44:22,324 --> 00:44:29,044
+kaybolacak. Bu maviler daha aşağıya gelecek. Yeşil, şu da kaybolacak, aşağıya gelecek. Kırmızı da biraz aşağıya gelecek.
+
+275
+00:44:30,104 --> 00:44:36,584
+Devam ediyoruz. Beşinci iterasyon. Altıncı iterasyonda bu iş daha da sabitleşmeye başladı ve bitti.
+
+276
+00:44:37,764 --> 00:44:43,944
+Gördüğünüz gibi birinci iterasyonda burada başlamıştık. İterasyonlar sonucunda elde ettiğimiz.
+
+277
+00:44:44,628 --> 00:44:54,847
+Küme yapısı bizim de tahmin edeceğimiz gibi optimal bir yapıya sahip. Yani şuradaki üst noktalar, kırmızı küme, mavi küme, yeşil küme.
+
+278
+00:44:56,467 --> 00:45:05,788
+Burada herhangi bir problem yok. Peki aynı noktaları, şimdi az önceki noktalar ama sadece sentroidlerin yerlerini farklı seçtiğimizi varsayalım.
+
+279
+00:45:05,927 --> 00:45:10,727
+Yani farklı noktalardan başladığımı varsayalım. Bir tanesi burada başlıyor, ikincisi burada, üçüncüsü burada.
+
+280
+00:45:11,807 --> 00:45:14,347
+Bu durumda nasıl bir sonuç elde ederdik ona bakalım.
+
+281
+00:45:14,347 --> 00:45:21,367
+Şimdi mavilerin ortalaması nerede? Nerede denk gelecek ikinci iterasyonda? Şuralara doğru değil mi?
+
+282
+00:45:22,003 --> 00:45:31,124
+Şuralara doğru kayacak. Yeşil de şuraya doğru kaymasını bekleriz. Kırmızıların ortalaması da şuraya doğru kayacak. Bakalım ne oluyor?
+
+283
+00:45:32,284 --> 00:45:41,184
+Evet, ikinci iterasyonda gördüğümüz bir yeşiller buraya kaydı, maviler buraya, kırmızı da buraya. Kırmızı artık çok fazla değişmeyecek. Bu ikisinin ortalaması buralarda bir yerde.
+
+284
+00:45:42,104 --> 00:45:45,384
+Mavi azıcık aşağı kayacak, yeşil biraz sola kayacak.
+
+285
+00:45:46,164 --> 00:45:53,844
+Bak, gördüğünüz gibi bu şekilde devam ediyoruz. Artık kırmızı hiç değişmiyor. Mavi biraz daha aşağıya, yeşilleri biraz aşağıya.
+
+286
+00:45:54,504 --> 00:46:00,264
+Beşte de gördüğünüz gibi hareket edilmesi azaldı ve beşinci iterasyondan sonra artık değişmeyecek.
+
+287
+00:46:00,264 --> 00:46:10,284
+Çünkü şu noktaların buraya uzaklığı daha uzak. Yani bu mavi daha yakın, yeşiller de aynı şekilde. Haliyle değişmiyor.
+
+288
+00:46:14,195 --> 00:46:17,315
+Bir optimal kümeleme değil.
+
+289
+00:46:18,855 --> 00:46:26,235
+Aynı noktalar başlangıç noktasının seçimine göre farklı şekilde kümeleme ortaya çıkarabilir.
+
+290
+00:46:26,235 --> 00:46:27,675
+Buna ciddi bir problem.
+
+291
+00:46:30,016 --> 00:46:37,335
+Peki, bunu nasıl çözebiliriz? Sizin önerileriniz nelerdir? Nasıl yöntemler kullanmak avantajlı olabilir?
+
+292
+00:46:37,475 --> 00:46:40,195
+Ya da bu problemi nasıl engelleyebiliriz?
+
+293
+00:46:41,907 --> 00:46:43,067
+Önerisi olan var mı?
+
+294
+00:46:57,940 --> 00:47:03,160
+Evden fazla çalışıp o ortalamaları gibi bir şey alabiliriz belki.
+
+295
+00:47:04,780 --> 00:47:13,780
+Güzel. Çok sayıda deneyebiliriz değil mi? Yani birden çok defa deneyip bunlar içinden belki uygun olanları seçebiliriz. Bu bir seçenek. Güzel.
+
+296
+00:47:17,460 --> 00:47:25,119
+Başka önerisi olan var mı? Ya da bunu denersek belki fayda olabilir diyebileceğiniz bir konu var mı?
+
+297
+00:47:34,804 --> 00:47:41,984
+Ne kadar mantıklı bilmiyorum ama birbirinden en uzak noktalardan başlayabiliriz. İç içe seçilmemesi adına.
+
+298
+00:47:42,864 --> 00:47:50,844
+Güzel. Bu arada aslında mantıklı. Peki buna nasıl başlayabiliriz seçmeye [öğrenci]?
+
+299
+00:47:50,844 --> 00:47:59,224
+Yani nasıl? Yani diyelim ki 5 tane küme seçeceğiz. Uzaklıktan kastımız nasıl olacak? Yani şöyle mi olacak?
+
+300
+00:47:59,699 --> 00:48:04,599
+Öncelikle ikisi arasında en uzak noktayı mı bulacağız? Yani o küme içinde.
+
+301
+00:48:05,639 --> 00:48:10,399
+Yoksa bir tanesini rastgele seçip diğerlerini ona göre uzak noktalardan seçeceğiz.
+
+302
+00:48:10,399 --> 00:48:14,399
+Bir tane rastgele seçip diğerlerini ona göre uzak seçmek daha mantıklı gibi geliyor.
+
+303
+00:48:14,639 --> 00:48:19,659
+Ama birbirleri arasındaki ilişkiyle uzak olması gerektiği için karmaşıklı çok artıyor modeli başlatmak için.
+
+304
+00:48:21,119 --> 00:48:22,000
+Emin olamadım Orta.
+
+305
+00:48:22,759 --> 00:48:23,139
+Anladım.
+
+306
+00:48:23,572 --> 00:48:32,852
+Yani burada hani dediğim gibi rastgele seçim yapıp sonrasında diğerlerini onlara göre uzak noktalardan seçebiliriz. Bu da bir yöntem olabilir.
+
+307
+00:48:35,432 --> 00:48:42,692
+Burada sadece şöyle, o rastgele seçilen noktanın konumu biraz sıkıntı doğurabilir ilk başta seçtiğimiz.
+
+308
+00:48:43,284 --> 00:48:55,903
+Hocam, ilk seçtiğimiz noktayı maksimum X ve Y'ye, yani kaç tane artık feature varsa, devlet sayı olacak şekilde seçip, ondan sonra [öğrenci]'nin dediği gibi en uzak 2-3 noktayı seçebiliriz belki.
+
+309
+00:48:58,003 --> 00:49:01,844
+Her bir sefer sonrasında tekrar en uzak noktayı bulup ona göre seçebiliriz belki.
+
+310
+00:49:04,804 --> 00:49:09,683
+Yani şunu mu öneriyorsun [öğrenci]? Öncelikle feature sayısı kadar.
+
+311
+00:49:10,195 --> 00:49:19,855
+Birbirine uzak noktalar mı seçelim? Sonrasında bunları mı sentroid olarak kabul edelim? Tam olarak başlangıcımız nasıl olacak onu anlayamadım.
+
+312
+00:49:19,855 --> 00:49:33,855
+Burada y ekseninde ve x ekseninde maksimum y ve x'e sahip, yani mesela en üstteki noktayı seçebilecek şekilde bir kanama yapabilirsek, ondan sonra buna en uzak noktayı...
+
+313
+00:49:33,972 --> 00:49:42,352
+seçeriz ikinci küme olarak. Sonra bu ikisine en uzak noktayı, üçüncü kümenin merkezi olarak seçebiliriz. Böyle bir şey yapılabilirse.
+
+314
+00:49:43,232 --> 00:49:59,192
+Anladım. Bu da olabilir. Yani öncelikle şunu öneriyorsun. Hani boyut sayısına göre en uzak şey seçelim. Burada, x80'de veya y80'de. Tabii burada şöyle bir problem var. Çok boyutluysa bu durumda nasıl olacak?
+
+315
+00:50:00,000 --> 00:50:06,239
+problemimiz var. Ama hani iki boyut olduğunu varsayalım. Y eksendeki maksimum nokta, sonra buna en uzak noktayı seçtik.
+
+316
+00:50:06,339 --> 00:50:14,400
+Diyelim ki burada da en uzak nokta buradaki Y noktası oldu. Üçüncü noktayı da bu ikisine en uzak noktayı test edebiliriz.
+
+317
+00:50:14,400 --> 00:50:22,259
+Belki buralarda bir yerde olacaktır. Sonrasında bunları başlangıç noktası olarak verebiliriz. Bu da çözebilir, bu da faydalı olabilir.
+
+318
+00:50:23,092 --> 00:50:31,352
+Ama işte burada boyut sayısı arttıkça hangi boyuta göre en uzak noktayı seçmiş olacağız gibi çeşitli problemlerimiz de ortaya çıkabilir.
+
+319
+00:50:31,432 --> 00:50:38,652
+Ama bunlar hepsi güzel fikirler ve benzer şeyler kullanılabiliyor.
+
+320
+00:50:39,552 --> 00:50:46,532
+Burada benim de önerebileceklerim, öncelikle [öğrenci]'in de söylediği gibi çok sayıda şey yapabilirsiniz.
+
+321
+00:50:47,476 --> 00:50:59,076
+Test yapabilirsiniz ve bunlar içinden seçebilirsiniz küme yapısını. Ama burada tabii ki kaç defa bunu yapacağınız gibi bir problem ortaya çıkabiliyor.
+
+322
+00:50:59,676 --> 00:51:09,956
+Ama bu kümeler tekrar edildikçe noktaların nerelerde olabileceğine dair bazı fikirler elde edebiliyorsunuz. Bunların ortalamasını kullanabilirsiniz.
+
+323
+00:51:10,676 --> 00:51:12,776
+Bu da bir çözüm olabilir başlangıç.
+
+324
+00:51:13,427 --> 00:51:18,268
+Diğer bir yöntem de şu olabiliyor, örneklem alabilirsiniz.
+
+325
+00:51:18,688 --> 00:51:26,527
+Yani bir örneklem alıp, bunun içinde bir hiyerarşik kümeleme yapıp, sonra bunların merkezlerini kullanabilirsiniz.
+
+326
+00:51:27,087 --> 00:51:30,188
+Bu da bir yöntem olabilir ama hiyerarşik plastikini henüz konuşmadık.
+
+327
+00:51:30,188 --> 00:51:36,067
+O yüzden burada çok detaylarına girmeyeceğim ama onu konuştuktan sonra şekillenecektir.
+
+328
+00:51:36,567 --> 00:51:40,208
+Bir örneklem üzerinden önce yapıp bunların merkezlerini kullanmak olabilir.
+
+329
+00:51:40,608 --> 00:51:58,608
+Çünkü örneklemin merkezi de kümeyi yansıtacaktır. Bunun yanında diğer bir yaklaşım da şu olabilir. Siz aslında K sayısından daha fazla sayıda sentroid seçersiniz rastgele ve bunlar içinden sizin sentroidleri...
+
+330
+00:52:00,307 --> 00:52:25,407
+Daha iyi ayrım yapabilecek, daha büyük boşluklar oluşturabilecek noktalar. Yani diyelim ki k sayısını 5 kullanacaksınız, siz 7 tane küme seçtiniz. Bunlar sonucunu ortaya çıkacak, sentroidlerde birbirine en uzak olacak şekilde bu 5 tanesini, bunları içinden seçebilirsiniz. Bu da bir yöntem olabilir.
+
+331
+00:52:25,972 --> 00:52:40,732
+Post Processing uygulayabilirsiniz. Bu biraz daha veriyi gördükçe, siz baktınız, suboptimal bir şekil var. Sonrasında burada daha uygun olacak.
+
+332
+00:52:41,135 --> 00:52:58,315
+noktaları seçme yöntemi olabilir. Yani bu işlemimiz bitti, sonuçlarımızı gördünüz, doğru çalışmıyor. Sonra belki bir iki tanesi klaster noktanın sendörününize uygundur ama yeni bir nokta için biraz burada manuel bir yönlendirmeyle belki seçme imkanı olabilir.
+
+333
+00:53:02,900 --> 00:53:10,000
+k sayısını seçmeniz gerekmeyen bisecting k-means dediğimiz bir yaklaşım izleyebilirsiniz.
+
+334
+00:53:10,780 --> 00:53:20,780
+Burada da aslında az önce [öğrenci]'in de, [öğrenci]'in de bahsettiği gibi noktalar arasında en uzak olması bizim için anlamlı değil mi?
+
+335
+00:53:20,780 --> 00:53:29,780
+Çünkü ne kadar uzak olursa bu initial centroidler, dolayısıyla bunlar arasında bu suboptimal çözümler,
+
+336
+00:53:29,844 --> 00:53:56,164
+ortaya çıkması da azalıyor. k-means, bisecting k-means de aslında bunu kullanıyor. Şunu yapıyoruz, bisecting k-means de biz küme sayısını seçmiyoruz. Neyi seçiyoruz? Bir uzaklık metriyi seçiyoruz. Yani cluster içindeki maksimum uzaklık hakkında bir yaklaşım beliriyoruz. Yani şöyle örnek vereyim.
+
+337
+00:53:58,068 --> 00:54:08,768
+Bayeset'in key'imizde şunu biz seçtiğimizi varsayalım. İki boylu çiziyorum kolay.
+
+338
+00:54:08,768 --> 00:54:14,928
+Görselleştirmek için. Şimdi verilerimiz farklı farklı noktalara dağılmış olsun.
+
+339
+00:54:22,867 --> 00:54:38,867
+Burada kaç tane küme olacağını bilmiyorum. Ama şöyle bir metriyim var. Diyelim ki küme içi uzaklık. Bunun belli bir birimden küçük eşittir olmasını istiyorum.
+
+340
+00:54:42,356 --> 00:54:56,896
+Ne yapmaya çalışıyoruz? Küme içi uzaklığı minimize eden bir yaklaşım seçiyorum. Diyorum ki bu uzaklık 5'ten küçük olmak zorunda. Yani her bir noktanın küme içindeki sentroid uzaklığının buradan küçük olmasını istiyorum.
+
+341
+00:54:58,643 --> 00:55:09,623
+Başlangıç noktası için de rastgele iki nokta seçiyoruz ama burada da yaklaşımımız, [öğrenci]'e söylediği gibi bunları birbirine en uzak iki noktayla başlarsak daha uygun olur.
+
+342
+00:55:09,623 --> 00:55:21,463
+Yani bu durumda ne yaparız? Her noktanın her noktaya uzaklığına bakıp maksimum olan iki noktayı tespit edebiliriz. O da şu olsun, en uzak iki nokta şu ikisi olsun. Şu ikisi olduğunu varsayalım.
+
+343
+00:55:22,132 --> 00:55:26,771
+Bunu hesapladığımızı varsayalım. Her bir noktan, her bir noktada uzaklığını hesap ettik. Bu ikisi en uzak nokta.
+
+344
+00:55:27,431 --> 00:55:29,471
+Hocam, karar şekle çok arttırmaz mı?
+
+345
+00:55:31,231 --> 00:55:38,971
+Aslında bunu şöyle arttırmaz.
+
+346
+00:55:39,192 --> 00:55:44,911
+Yani tabii ki en sukarlık bir işlem olur. Her birisinin uzaklığını hesap etmek ama bunu bir kez yapacağız.
+
+347
+00:55:45,684 --> 00:55:52,984
+Ama şunu yapabilirsiniz, belli juristiklerle bunu da en sukar yapmadan da yapabilirsiniz.
+
+348
+00:55:53,564 --> 00:55:57,224
+Hani boyut sayısından belki yaklaşımlar ortaya çıkılabilir.
+
+349
+00:55:58,624 --> 00:56:04,460
+Boyut sayısının işte daha doğrusu bu boyutlar arasındaki mesafenin en uzak olacağını...
+
+350
+00:56:04,563 --> 00:56:13,283
+ortaya çıkaracak şekilde X boyutundaki en yüksek mesafe, Y boyutundaki en yüksek mesafe gibi üstlüklerle bunu yakın satabilirsiniz.
+
+351
+00:56:13,283 --> 00:56:14,403
+Ama çok da önemli değil bu.
+
+352
+00:56:15,103 --> 00:56:16,203
+Tamam, teşekkür ederim.
+
+353
+00:56:16,663 --> 00:56:19,103
+Çok da önemli değil ama oradan haklısın.
+
+354
+00:56:19,343 --> 00:56:22,703
+Eğer boyun sayısı çok artarsa bunun gibi bir problem ortaya çıkabiliyor.
+
+355
+00:56:22,983 --> 00:56:24,443
+En su kayalık bir işlem çıkar.
+
+356
+00:56:25,143 --> 00:56:26,743
+Her birisini de karşılaştırsak.
+
+357
+00:56:27,443 --> 00:56:29,783
+Şimdi diyelim ki bu iki noktayı tespit ettik.
+
+358
+00:56:30,516 --> 00:56:51,296
+Sonrasında şunu yapıyoruz. Normal k-means yapılıyor. Bundan sonra k-means yaptık. Yani centroid 1, centroid 2'ye göre her bir noktanın uzaklığını tespit ettik. Şöyle bir şey oldu. Birinci şeklimiz burada, ikinci şeklimiz de burada.
+
+359
+00:56:54,547 --> 00:57:02,207
+Sonrasında sadece küme içindeki uzaklıkları hesap ediyorum. Bu küme içinde en uzak mesafe neresi? Onu tespit ediyorum.
+
+360
+00:57:02,207 --> 00:57:09,447
+Yani bu küme içindeki en uzak mesafeyi bulduk. Diyelim ki en uzak mesafe, centroid en uzak mesafe burası olsun.
+
+361
+00:57:11,827 --> 00:57:20,967
+Buradaki uzaklık bu şeyden büyük mü? D sayısından büyük mü değil mi? Büyükse şunu yapıyorum.
+
+362
+00:57:22,931 --> 00:57:34,571
+Şurası en uzak mesafedeki yeni bir klaster oluyor. Burada C3 oluyor. Ama bu az önce iki tane klasterımız vardı. Bunu bölmüştük. İki klaster olmuştuk.
+
+363
+00:57:34,971 --> 00:57:43,231
+Şimdi sadece burası için bunu yapıyorum. Sonra bunun için de yapacağım. Burayı böldükten sonra şimdi burası artık en uzak mesafe 5'ten büyük.
+
+364
+00:57:43,231 --> 00:57:48,371
+Dolayısıyla burayı bölmemiz gerekecek. Şimdi şunu kaldırıyorum.
+
+365
+00:57:50,420 --> 00:58:05,840
+Bunu kendi içinde sınıflara ayırdım. Şurada bir küme oluştu. Şurada da şöyle bir küme oluşmuş olsun. Bir de şöyle bir küme oluştu. Şurada da bir küme var.
+
+366
+00:58:06,740 --> 00:58:17,240
+Sonrasında bunun için yapıyorum. Buranın da uzaklığı oldukça yüksek. Dolayısıyla bunu da bölünmesi lazım. Bunu da böldüm. Bir şekilde böldüm ve şöyle bir yapı olmuş olsun.
+
+367
+00:58:21,076 --> 00:58:30,615
+Kaldırayım. Yani bunu da aslında böyle bir şeyle bölmüş olduk gibi düşünüyorsunuz. Şurası bir küme, burası da başka bir küme.
+
+368
+00:58:33,456 --> 00:58:44,615
+Sonrasında bu işlemi devam ediyorum. Buraya geldim. Burada en uzak mesafe 5'ten büyük mü? Büyük diyelim. Şu iki nokta en uzak mesafe. Burayı bir daha böldük. Yani aslına bakarsanız...
+
+369
+00:58:45,940 --> 00:58:49,420
+Şöyle bir şekil ortaya çıkmış oldu. Bir de şurada bir tane var.
+
+370
+00:58:51,880 --> 00:58:53,040
+Buna da devam ediyoruz.
+
+371
+00:58:54,360 --> 00:58:57,400
+Bunu da böldük. Mesela diyelim ki şurada bir tane küme var.
+
+372
+00:58:58,180 --> 00:59:00,280
+Şurada bir küme var. Bir tane de burada var.
+
+373
+00:59:02,080 --> 00:59:05,340
+Artık buraya bakıyorum. Burada bölecek bir şey kalmamış olsun.
+
+374
+00:59:05,340 --> 00:59:08,400
+Burada çünkü en uzak mesafe.
+
+375
+00:59:09,364 --> 00:59:34,911
+Buradan kısa, 5'ten kısa. Şurada diyelim ki belki vardır veya yoktur. Burada da aynı olsun. Burayı da bölmemize gerek yok. Burayı da bölmemize gerek yok. Ama burayı bölmek gerekecek. Burayı tekrar aynı şekilde, sadece burası için yapıyoruz. Burada bir küme ortaya çıktı. Şurada da bir küme ortaya çıktı. Bu işlemi devam ede ede. Şurada bir tane küme, şurada bir...
+
+376
+00:59:34,911 --> 00:59:38,371
+Küme, en sonunda burada bir küme, belki burada tek bir küme.
+
+377
+00:59:39,731 --> 00:59:54,411
+Şimdi en sonunda elde ettiğimiz küme sayısı, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 tane kümemiz ortaya çıktı.
+
+378
+00:59:55,032 --> 00:59:58,932
+Yani k sayısını bilmem gerekmiyor, sadece şuna eminim ama.
+
+379
+01:00:00,980 --> 01:00:06,539
+En fazla mesafe bu X birimden daha kısa olacak gibi düşünebiliriz.
+
+380
+01:00:07,559 --> 01:00:12,599
+Dolayısıyla ne olmuş oluyor? Şimdi küme sayısı otomatik olarak artıyor.
+
+381
+01:00:12,800 --> 01:00:17,059
+Yani bu dağılıma göre kendisi şeklini ortaya çıkarabilir.
+
+382
+01:00:17,159 --> 01:00:22,019
+Bu esnek bir şekilde. Daha yüksek bir küme de olabilir, daha dar bir küme de olabilir.
+
+383
+01:00:23,159 --> 01:00:26,119
+Bazı kümeler daha dense olabilir, yani daha yoğun.
+
+384
+01:00:26,500 --> 01:00:28,159
+Bazı kümeler daha seyrek olabilir.
+
+385
+01:00:28,980 --> 01:00:44,920
+Tabii burada da şöyle bir problem var. Birinci problemimiz ne? Bu uzaklığı nasıl bulacağız? Aslında problemimizi k sayısını tahmin etmekle, şimdi uzaklık ölçüsünü tahmin etmeye dönüştürmüş olduk.
+
+386
+01:00:45,840 --> 01:00:48,579
+Bunun şöyle bir avantajı olabilir.
+
+387
+01:00:50,324 --> 01:01:13,523
+Sizin için aslında Bayeserik'in keyimiz şunu sağlıyor. Eğer küme içinde benzerliği belli bir uzaklıkla ifade edebiliyorsanız, yani o küme içinde çok büyük farklar oluşmasın. Küme içi mesafeleri minimize edecek şekilde kümelemeler yapmak istiyorsanız, bu durumda uygun bir çıkarım elde edebilirsiniz.
+
+388
+01:01:14,099 --> 01:01:39,000
+Yani o şeyi garanti ediyor. Kümeler içindeki elemanlar birbirine oldukça yakın olacak. Bunu garanti ediyor ama kümeler arasındaki mesafeler hakkında böyle bir garantisi yok. Bir de şöyle bir problem var. Burada da böyle ayrık değerlerin teker teker küme oluşma gibi bir riski var. Bundan uzaklaştıkça tabii ki çok az sayıda elemanı olan kümelerle de.
+
+389
+01:01:39,391 --> 01:01:49,612
+oluşturabilirsiniz. Yani burada tabii ki tercihe göre bir trade-off ortaya çıkarıyor. Bu da bir diğer bir yaklaşım olabilir K-Says hakkında.
+
+390
+01:01:50,552 --> 01:01:51,491
+Ki problemlerle ilgili.
+
+391
+01:01:53,132 --> 01:01:54,431
+Buraya kadar sorusu olan var mı?
+
+392
+01:01:58,011 --> 01:02:05,531
+Ama bütün bu yaklaşımlar içinde yüksek boyutlu veri olduğu durumda
+
+393
+01:02:05,619 --> 01:02:16,759
+Boyut sayısı arttıkça bu işler zorlaşıyor. Küme tanımı yapmak zorlaşıyor. Mesela buradaki gibi, gördüğünüz gibi aslında kümelemeyi neye göre yapacaksınız?
+
+394
+01:02:16,879 --> 01:02:24,579
+Boyut sayısı arttıkça bunlar arasındaki farklı yoğunluklarda, farklı bölgelerde kümelemeler, gruplamalar ortaya çıkabilir.
+
+395
+01:02:24,679 --> 01:02:29,539
+Burada küme tanımını yapmak biraz zorlaştırıcı bir süreç olur.
+
+396
+01:02:32,628 --> 01:02:38,528
+Diğer bir yaklaşım da hiyerarşi kümeleme. Ama öncesinde burası ile ilgili sorusu olan var mı? Ara vereceğiz.
+
+397
+01:02:39,788 --> 01:02:41,827
+Hocam ben konudan bağımsız bir şey sorabilir miyim?
+
+398
+01:02:42,228 --> 01:02:42,468
+Tabii.
+
+399
+01:02:43,588 --> 01:02:45,268
+Sınavlara bakabildiniz mi?
+
+400
+01:02:46,208 --> 01:02:53,628
+Baktım [öğrenci]. Aslında bitmek üzere. Muhtemelen bugün tamamlayacağım. Açıklama yaparım.
+
+401
+01:02:55,251 --> 01:02:59,592
+size online yıldızdan şeyleri paylaşırım sonuçları.
+
+402
+01:03:00,052 --> 01:03:01,192
+Tamamdır hocam, teşekkür ederim.
+
+403
+01:03:01,632 --> 01:03:02,452
+Ben teşekkür ederim.
+
+404
+01:03:02,952 --> 01:03:06,132
+Yani çok az son sorunun bir kısmı kaldı.
+
+405
+01:03:06,552 --> 01:03:07,532
+Onu da bugün tamamladım.
+
+406
+01:03:09,952 --> 01:03:11,731
+Başka soru soru var mı arkadaşlar?
+
+407
+01:03:11,831 --> 01:03:12,311
+Ardından önce.
+
+408
+01:03:14,771 --> 01:03:16,452
+O zaman bir 15 dakikara verelim.
+
+409
+01:03:17,092 --> 01:03:20,012
+3'ü 20 geçe kaldığımız yerden devam edeceğiz.
+
+410
+01:03:20,751 --> 01:03:21,932
+15 dakika sonra görüşmek üzere.
+
+411
+01:19:06,292 --> 01:19:07,592
+Tekrar hoş geldiniz arkadaşlar.
+
+412
+01:19:18,163 --> 01:19:19,384
+Görüntüm geldi mi?
+
+413
+01:19:20,163 --> 01:19:21,023
+Görüntü geldi mi?
+
+414
+01:19:22,063 --> 01:19:23,063
+Geldi hocam.
+
+415
+01:19:23,683 --> 01:19:24,423
+Teşekkürler.
+
+416
+01:19:26,203 --> 01:19:27,543
+O zaman şimdi devam edelim.
+
+417
+01:19:29,403 --> 01:19:32,884
+Aradan önce kemiğinizi konuşmuştuk.
+
+418
+01:19:33,003 --> 01:19:38,144
+Şimdi diğer bir kümeleme yaklaşımı olan yaraşık kümelemeyi konuşalım.
+
+419
+01:19:39,783 --> 01:19:42,463
+Yaraşık kümelemede şunu yapıyoruz.
+
+420
+01:19:42,863 --> 01:20:00,000
+Birden çok küme yapısı ortaya çıkabilir. Bu kümeler içine de geçebiliyor. Dendogram gibi şekillerle de bunu gördüğümüz gibi. Sağdaki dendogram aslında hiyerarşik kümeleme biraz dendogram gibi.
+
+421
+01:20:00,000 --> 01:20:07,000
+Şuradaki küme yapısı burada dendogramdaki noktalara tekabül ediyor.
+
+422
+01:20:07,659 --> 01:20:13,239
+Bunu iç içe olacak şekilde en dışta tek bir küme var.
+
+423
+01:20:13,380 --> 01:20:18,360
+Gördüğünüz gibi içinde de başka kümelerden oluşan bir yapı var.
+
+424
+01:20:18,979 --> 01:20:22,180
+Bir tane nokta birden çok kümeye ait olabilir.
+
+425
+01:20:22,360 --> 01:20:24,659
+Ama en az bir tanesine ait olmak durumunda.
+
+426
+01:20:24,940 --> 01:20:27,079
+Ağaç yapısı gibi de gösterebiliyor.
+
+427
+01:20:28,115 --> 01:20:40,976
+Bu algoritma nasıl başlar? Burada herhangi bir k sayısı belirtmemiz gerekmiyor. Yani küme sayısı hakkında bir ön koşulumuz yok. Çünkü her bir nokta birden çok kümeye ait olabiliyor.
+
+428
+01:20:40,976 --> 01:20:54,796
+Burada şöyle ifade edeyim, iki tane yaklaşım izleyebilirsiniz. Birincisi agglomeratif ya da bottom-up yaklaşımı. Bu daha sıklıkla kullanılır.
+
+429
+01:20:55,507 --> 01:21:14,547
+Başlangıç noktasında her bir nokta bir küme olarak kabul edilir. Buradan yola çıkarak bunlar tek bir küme oluşturana kadar birleştirerek bu işlem devam eder. Bu aşağıdan yukarı yöntemi şeklinde ifade ettiğimiz yöntem böyle çalışıyor.
+
+430
+01:21:15,220 --> 01:21:23,659
+Yani başlangıç noktasında her bir nokta bir küme, sonrasında en yakın kümeler birleştirerek bir üst hiyerarşik küme oluşturuluyor.
+
+431
+01:21:24,120 --> 01:21:27,520
+Öyle ki en sonunda tek bir küme kalana kadar bu işlem devam eder.
+
+432
+01:21:29,159 --> 01:21:33,600
+Divisive ya da yukarıdan aşağı yöntemde ise tam tersi.
+
+433
+01:21:34,323 --> 01:21:49,623
+Bütün noktalar tek bir küme. Sonrasında burada birbirine uzak olan kümeler ayrıştırılarak, ikiye bölünerek, en sonunda her bir nokta ayrı bir kümeye tekabül edecek şekilde kümeleme işlemi yapılır.
+
+434
+01:21:50,363 --> 01:21:58,903
+Ama biz daha çok aglomeratif yöntemle başlıyoruz. Yani aşağıdan yukarı şekilde. Bunun için de işlem şöyle çalışıyor.
+
+435
+01:22:00,020 --> 01:22:03,260
+Şöyle ekran üzerinden göstereyim onu.
+
+436
+01:22:07,252 --> 01:22:07,572
+[öğrenci].
+
+437
+01:22:13,332 --> 01:22:27,452
+Örneğimiz şu olsun. Elimizde farklı farklı noktalar var. P1, P2, P3, P4 ve P5 olsun.
+
+438
+01:22:28,811 --> 01:22:33,152
+Şimdi bunları şöyle noktalarla gösteriyorum.
+
+439
+01:22:38,131 --> 01:22:44,431
+Bunlar farklı düzenlerde olabilir ama sadece konumlarını pozisyon olarak görmek için böyle yapmamızı varsayalım.
+
+440
+01:22:45,431 --> 01:22:51,652
+Şimdi her bir noktanın diğer noktalara olan uzaklığını hesap ediyoruz.
+
+441
+01:22:52,731 --> 01:22:57,072
+Her bir noktanın diğer noktalara olan uzaklığını hesap ediyoruz.
+
+442
+01:22:59,831 --> 01:23:02,992
+Aynı şekilde bunları hesap ediyoruz.
+
+443
+01:23:06,163 --> 01:23:17,543
+üzerinde tutuyoruz. Ve bu madresin ismi Proximity Matrix. Şurada göstereyim hatta. Buraya çizeyim daha kolay görebiliriz.
+
+444
+01:23:19,724 --> 01:23:30,843
+Şuraya çizeyim. Bir Proximity Madresimiz var. Yani uzaklık madresi diyelim buna. P1, P2, P3.
+
+445
+01:23:31,891 --> 01:23:38,371
+P4 ve P5'ten oluşan noktalarımızın şurada. Şöyle göstereyim.
+
+446
+01:23:41,131 --> 01:23:47,811
+Aynı şekilde buradan P1'in P1'i uzaktı, P2'nin, P3'ün, P4'ün ve P5'in.
+
+447
+01:23:49,931 --> 01:23:51,992
+Şöyle çizelim.
+
+448
+01:23:55,891 --> 01:24:04,992
+Her bir noktanın kendisine uzaktı ne olacaktır? Sıfır olacaktır değil mi? Her bir noktanın kendisine uzaktı sıfır. Yani köşegenleri sıfır olan bir maddes.
+
+449
+01:24:07,751 --> 01:24:16,131
+Sonrasında P, İ, C, P, C her birisi için bu işlemleri hesap ediyoruz. Mesela burada ölçüt uzaklığı kullanabilirsiniz.
+
+450
+01:24:16,627 --> 01:24:24,227
+İşte birincisinin ikincisinin uzaklığı şeklinde bütün her birisi için hesapladınız ve burada değerleri bulduğumuzu varsayalım.
+
+451
+01:24:24,647 --> 01:24:38,247
+P1'in P2 uzaklığı 0.7. P1'in P3 uzaklığı 0.9. Diğerin uzaklığı 1.5. Şunun uzaklığı 4 olsun.
+
+452
+01:24:39,572 --> 01:24:50,932
+Bütün bunları doldurduk. Tabi bunlar simetrik olacağı için 0.9, 0.7, 1.5, 4 gibi bütün bu değerleri doldurdunuz.
+
+453
+01:24:52,131 --> 01:25:03,731
+Sonrasında minimum olan uzaklığı tespit edeceğiz. Her bir aşamada proximity madresinde minimum uzaklıkta olan değeri tespit ediyoruz.
+
+454
+01:25:05,171 --> 01:25:11,811
+Uzaklıklar içinde birbirine en yakın olan hangisi bunu bulmaya çalışıyoruz? Diyelim ki şu ikisi birbirine en yakın.
+
+455
+01:25:13,011 --> 01:25:13,931
+P ile P3.
+
+456
+01:25:15,431 --> 01:25:17,631
+Şunu yazıyoruz, bu ikisini birleştiriyorum.
+
+457
+01:25:17,851 --> 01:25:26,851
+Şimdi bu ikisini tek bir nokta, orta noktasında gösterdiğimiz noktayla birleştiriyorum.
+
+458
+01:25:26,851 --> 01:25:29,771
+Yani başlangıç noktasında kaç tane?
+
+459
+01:25:30,159 --> 01:25:42,619
+Merkez noktamız, kümemiz vardı. 5 tane. Burası C1, burası C2, C3, C4 ve C5'ten oluşan 5 tane noktamız, 5 tane kümemiz vardı.
+
+460
+01:25:43,319 --> 01:25:52,700
+Şimdi 2. aşamada bu ikisi birleşecek, buna C2 bu oldu. Ya da C2 bu. İkisi birleşecek, tek bir nokta oldu.
+
+461
+01:25:54,579 --> 01:26:14,880
+Şimdi bunları tekrar gösterecek olursak, ikinci aşamada, burası C2 oldu, şurası C3 oldu, burası da C4 oldu. Yani dört tane kümemiz var şu an. Bu işlemi birleştirmedik. Devam edelim. Bu şekilde devam edelim.
+
+462
+01:26:24,564 --> 01:26:33,043
+Yani burası C1, C1, C2, C3, C4.
+
+463
+01:26:34,944 --> 01:26:43,724
+Şimdi Proximity matrisinde şu ikisi birleşti ve bunların orta noktası yeni nokta olmuş oldu.
+
+464
+01:26:43,804 --> 01:26:50,844
+Yani Proximity matrisimiz aslında bu ikisinin orta noktasını birleştirdiğimiz zaman dörde dört bir matrisle dönüştü.
+
+465
+01:26:56,979 --> 01:27:14,979
+İşte C1 diyeyim, C2, C3, C4 olsun. C1, C2, C3, C4. Tekrar bu işlemi tekrar ediyoruz. Şimdi bunların uzaklığını tekrar hesap ediyorum. 0.7, 0.1.2 oldu. Bunlar da işlemi topladık.
+
+466
+01:27:22,804 --> 01:27:33,783
+Şuradaki örneğe bakarak şuna karar vermiş olalım. Diyelim ki en yakın mesafe bu ikisi. O zaman ikinci aşamada bunları birleştirmiş oluyoruz.
+
+467
+01:27:36,304 --> 01:27:48,564
+Bu ikisini birleştirdim. Şu an tek bir sınıf oldu bunlar ve bunların orta noktası bizim yeni sınıf merkezi oldu. Yani bu bizim yeni noktamız oldu. C3 olacak.
+
+468
+01:27:50,292 --> 01:28:03,292
+Şimdi bunları tekrar uzattığımızı varsayalım. Elimizde 3 tane cluster kaldı. Bu proxy matrisi tekrar güncelliyoruz.
+
+469
+01:28:04,692 --> 01:28:17,452
+Burada fix de birleşti. Geriye 3 tane cluster kaldı. Yani matrisimiz 3'e 3. C1, C2, C3.
+
+470
+01:28:19,252 --> 01:28:24,992
+C1, C2, C3. Bunların uzaklığını hesap ettik.
+
+471
+01:28:27,292 --> 01:28:32,431
+1.5, 1.7, 2.5. Pardon.
+
+472
+01:28:34,012 --> 01:28:36,652
+1.5, 1.7, 2.5.
+
+473
+01:28:37,412 --> 01:28:42,972
+Şimdi buradan en yakın mesafenin C1 ile C2 arasındaki mesafe olduğunu tespit ediyoruz.
+
+474
+01:28:43,912 --> 01:28:46,431
+Yani bu C1 ile C2 arasındaki mesafe.
+
+475
+01:28:47,220 --> 01:28:58,579
+En kısa mesafe. Bu ikisinin orada noktası C1 oldu. Burası da tek bir nokta kaldığı için bu ikisini birleştiriyoruz.
+
+476
+01:29:01,279 --> 01:29:08,979
+Burası C1, burası da C2 ve son olarak en sonunda C1. Tek bir tane sınıf kalacak şekilde bölmüş olduk.
+
+477
+01:29:16,659 --> 01:29:26,899
+Bir hiyerarşik kümeleme sahipmiş. Yani başlangıç noktasında beş tane kümemiz vardı, bitiş noktasında bir tane kümemiz kaldı.
+
+478
+01:29:27,439 --> 01:29:31,619
+Ve bu hiyerarşik yapıya sahip bir küme yapısı oraya çıkmış oldu.
+
+479
+01:29:34,639 --> 01:29:43,619
+Hiyerarşik kümelemenin şöyle bir avantajı da var. Aslında hiyerarşik kümeye nereden kesti alırsanız o kadar sayıda...
+
+480
+01:29:44,180 --> 01:30:05,380
+Küme görebiliyorsunuz. Yani şu noktadan iki hisse alsaydım, beş tane kümeden bahsediyor olacaktık. Her birisi ayrı küme. Şu noktadan iki hisse alsaydım, yani tepeden baktığımızı bahsedelim. Tepeden baktığımız zaman şunu görecektik değil mi?
+
+481
+01:30:10,804 --> 01:30:20,104
+Tepeden baktığımız zaman, şu noktadan baktığımız zaman burası P1, burası P2, P3, P4, P5.
+
+482
+01:30:20,564 --> 01:30:26,904
+Tepeden baksaydık böyle dört tane aslında Partitional Clustering gibi bir yapı ortaya çıkmış olacaktı, görecektik.
+
+483
+01:30:27,804 --> 01:30:29,764
+Şuradan kesin alsaydım.
+
+484
+01:30:33,684 --> 01:30:36,104
+3 tane küme görmüş olacaktık.
+
+485
+01:30:36,784 --> 01:30:38,284
+Bu durumda ne olacaktı?
+
+486
+01:30:38,804 --> 01:30:43,484
+Şurada P3, P4, P2 burada.
+
+487
+01:30:44,444 --> 01:30:46,144
+P2, P3 burada olacaktı.
+
+488
+01:30:48,244 --> 01:30:49,764
+Ve şu ikisi birleşmiş olacaktı.
+
+489
+01:30:51,744 --> 01:30:54,384
+Yani 3 tane küme görmüş olacaktık.
+
+490
+01:30:56,204 --> 01:31:00,604
+P2, P3, P4, P5.
+
+491
+01:31:02,163 --> 01:31:09,163
+Şuradan kest almış olsaydık, bunun içinde de, şurada birleştirmiş olacaktık.
+
+492
+01:31:10,603 --> 01:31:17,143
+Yani böyle bir yapı ortaya çıkmış olacaktı. En tepeden baksaydık, k-1 hepsini görmüş olacaktık.
+
+493
+01:31:19,103 --> 01:31:27,803
+Yani, kiyeranşık yapıda, kiyeranşık kümelemede, farklı kestilerden baktığınız zaman farklı kümelemeler görebiliyorsunuz.
+
+494
+01:31:28,340 --> 01:31:38,500
+Başlangıç noktasında her bir nokta başka bir küme, bitiş noktasında ise tek bir küme olacak şekilde bunları ayrıştırabiliyorsunuz.
+
+495
+01:31:42,612 --> 01:31:44,291
+Burası ile ilgili sorsulan var mı?
+
+496
+01:31:49,652 --> 01:31:59,352
+Yani gerar şüküme de iki tane şeye ihtiyacımız var. Birincisi proximity matrisine ihtiyacımız var, uzaklık madresi. Bu madresi bir tarafta tutuyoruz.
+
+497
+01:31:59,812 --> 01:32:05,792
+Sonrasında her bir noktayı diğerine göre uzaklığını hesap ediyoruz, proximity matrisi dolduruyoruz.
+
+498
+01:32:06,172 --> 01:32:14,312
+Bu uzaklıklardan yola çıkarak minimum uzaklığı sahip iki tane kümeyi birleştiriyoruz. Her bir adımda iki küme birleştirilir.
+
+499
+01:32:15,604 --> 01:32:24,964
+Ta ki bu birleştirmeler sonucunda tek bir küme kalana kadar bu işlem devam eder ve bunun sonucunda ortaya çıkan kümeye de hiyerarşik küme diyoruz.
+
+500
+01:32:27,584 --> 01:32:39,464
+Yani burada gördüğünüz gibi bir uzaklık matrisi tutuyoruz. Bu matris üzerinde her bir işlemi güncelleyerek, her bir adımda güncelleme yaparak bu işlemler tekabül eder.
+
+501
+01:32:40,884 --> 01:32:51,163
+Sonrasında bunlar birleştirerek bir sonraki adımda yeni küme ortaya çıkarıyor. Yeni küme ortaya çıkararak bunların en sonunda tek bir kümeye kadar birleştirilmesi söz konusu.
+
+502
+01:32:58,899 --> 01:33:07,839
+küme arasındaki uzaklığı nasıl test edeceğiz? Yani birer birer obje olarak baktığımız zaman, bunun arasındaki uzaklığı bulmak kolay.
+
+503
+01:33:08,439 --> 01:33:18,339
+Ama birden çok objeden oluşan kümeleri nasıl sınıflandıra ya da nasıl benzeştirebiliriz? Yani şöyle çizeyim isterseniz.
+
+504
+01:33:23,380 --> 01:33:28,920
+Küme algısında şöyle bir durum ortaya çıkabilir.
+
+505
+01:33:30,880 --> 01:33:32,800
+Bazı noktalar var.
+
+506
+01:33:34,840 --> 01:33:37,020
+Şurada bazı noktalar var.
+
+507
+01:33:39,079 --> 01:33:41,000
+Bir de şurada bazı noktalar var.
+
+508
+01:33:42,579 --> 01:33:45,659
+Bu C1, bu C2, bu C3.
+
+509
+01:33:47,920 --> 01:33:50,444
+Hatta bunu biraz daha da...
+
+510
+01:33:50,836 --> 01:34:00,416
+Karma ışıklaştırabiliriz. Tamam, böyle oldu. Sizce C1, C2'ye mi yoksa C3'e mi daha yakın?
+
+511
+01:34:06,484 --> 01:34:09,544
+Peki buna nasıl karar verdiniz?
+
+512
+01:34:12,484 --> 01:34:21,704
+Aslında ben sınırları birbirine daha yakın diye söyledim bunu ama, ödükecek olsaydık orta noktalarını bulup belki aralarındaki mesafeye bakıp dedik.
+
+513
+01:34:22,260 --> 01:34:41,900
+Aslında birden çok yaklaşım izleyebiliriz değil mi? Birincisi minimum uzaklık. Yani bu ikisi arasındaki minimum uzaklığa bakabilirsiniz. Bunun en yakın, diğer küme en yakın noktası burası. Bunun en yakın noktası burası. Bu uzaklığa baktım. Bir de şu uzaklığa baktım. Hangisi daha kısa? Buna D13.
+
+514
+01:34:42,547 --> 01:34:52,788
+1-2 diyelim. Hangisi kısaysa buraya göre seçebiliriz. Bu bir seçenek olabilir. Her zaman doğru olmayabilir ama bu da bir seçenek. Bu ne zaman çalışmaz mesela?
+
+515
+01:35:01,460 --> 01:35:05,859
+Büyük kümeler varsa ve hepsinin sınırları birbirine yakın satılıyor musun?
+
+516
+01:35:06,819 --> 01:35:12,340
+Evet, hem sınırları birbirine yakın olabilir, kümeler büyük olabilir, bir de ayrık değerler olabilir değil mi?
+
+517
+01:35:12,420 --> 01:35:18,800
+Mesela aslında şu küme şöyle olsaydı, kümenin çoğu burada.
+
+518
+01:35:21,439 --> 01:35:24,099
+Burada bir tür noktası var ama şurada bir tane nokta var.
+
+519
+01:35:26,195 --> 01:35:32,135
+İki tane en yakın nokta sadece buraya tekabül etti ama aslında bu küme, şuraya belki daha yakın.
+
+520
+01:35:33,335 --> 01:35:40,515
+Sadece bir tane nokta ayrı değer burada minimum hesap ettiğimiz için küme algısını değiştirebiliyor. Bu bir problem.
+
+521
+01:35:41,755 --> 01:35:47,115
+Diğer bir yaklaşım ne olabilirdi? Benzer şekilde maksimum alabilirdik değil mi?
+
+522
+01:35:48,875 --> 01:35:50,996
+Maksimum nasıl kullanabilirdik?
+
+523
+01:35:55,475 --> 01:36:16,015
+İki kümenin birbirine en uzak noktalarını karşılaştırdım. En yakın noktalarında ilgili de en uzak. Yani en uzak noktalarına kadar uzak mı? Onların mesela şöyle buradaki nokta en uzak, burada da en uzak nokta. Şunun uzaklığına bakardım. Bir de bu noktanın buraya en uzak noktasına bakardım. Hangisi birine daha uzaksa o iki üçünün birinden farklıdır diyebilirsiniz. Bu da bir seçenek.
+
+524
+01:36:16,467 --> 01:36:20,567
+Burada da aslında minimumun tersi yaklaşımlar ortaya çıkabilir.
+
+525
+01:36:20,688 --> 01:36:29,228
+Benzer bir şekilde eğer bir ayrık değer olabilirse veya kümelerin uzaklığı çok anlamlı, dağılmamışsa burada da problem ortaya çıkabilir.
+
+526
+01:36:29,787 --> 01:36:32,867
+Bu ikisindeki sorunları gördük. Başka ne kullanabiliriz?
+
+527
+01:36:35,707 --> 01:36:37,607
+Kümenin merkezlerinin uzaklıkları.
+
+528
+01:36:38,367 --> 01:36:40,728
+Kümelerin merkez uzaklığı değil mi? Onu da yapabiliriz.
+
+529
+01:36:44,404 --> 01:37:02,484
+Orta noktasını hesap ettik ve orta noktasına da merkeztik. Şurası C noktası. Şunun ortası burası olsun, bunun da ortası burası. Sonra bu ortalar arasındaki uzaklığa baktım. Hangisi daha uzaksa o farklı, hangisi daha yakınıza o kadar yakın diyebiliriz. Bu da bir seçenek.
+
+530
+01:37:10,068 --> 01:37:12,207
+Ya da, sentri, sentri, merkezi.
+
+531
+01:37:16,851 --> 01:37:23,671
+Merkez nokta dolayıdır. Bu da bir seçenek. Başka peki ne yapabiliriz?
+
+532
+01:37:25,471 --> 01:37:34,011
+Hocam, iki küme arasındaki, yani iki kümede de yer alan tüm noktaların birbirlerine olan mesafeyi bulup ortalama gibi bir şey.
+
+533
+01:37:35,911 --> 01:37:43,111
+Güzel. Nasıl hesap ederiz? Bunu biraz daha detaylı söylemek gerekirse. Nasıl yapacağız?
+
+534
+01:37:43,604 --> 01:37:45,924
+Birinci kümedeki noktaların?
+
+535
+01:37:47,644 --> 01:38:01,264
+Noktaların aslında çok karmaşıklık yüksek olabilir gibi ama hepsinin ikinci noktadaki her bir noktaya olan uzaklığı gibi bulup sonra ortalama anlarız.
+
+536
+01:38:03,124 --> 01:38:06,984
+Aslında ortalama almaya gerek yok. Direkt toplam uzaklığı üzerinden de yapılabilir.
+
+537
+01:38:08,144 --> 01:38:09,524
+Toplam uzaklığı üzerinden de yapılabilir, evet.
+
+538
+01:38:10,420 --> 01:38:17,680
+Yani bu noktaların bu noktalara uzaktıklarını, bu noktaların buradaki noktalara uzaktıklarını hesap edebilirsiniz.
+
+539
+01:38:17,760 --> 01:38:21,600
+Toplamda ne kadar ettiğini hesap edebilirsiniz.
+
+540
+01:38:23,200 --> 01:38:25,700
+Evet, bu yaklaşıklar ise kullanılabilir.
+
+541
+01:38:25,700 --> 01:38:29,200
+Ve bunların hesapları söz konusu oluyor.
+
+542
+01:38:29,340 --> 01:38:31,700
+Yani ne yapıyoruz? Uzaklığı, minimuma...
+
+543
+01:38:32,115 --> 01:38:38,036
+maksimum ya da bu noktaların uzaklıklarının ortalama uzaklığını hesap edebiliriz.
+
+544
+01:38:38,155 --> 01:38:39,336
+Grup ortalamasını.
+
+545
+01:38:39,896 --> 01:38:42,876
+Ya da işte sentrolik seçip bunlar arasındaki uzaklığını seçebilirsiniz.
+
+546
+01:38:43,796 --> 01:38:44,916
+Bütün bunlar kullanılır.
+
+547
+01:38:44,976 --> 01:38:46,216
+Bir de Ward metodu var.
+
+548
+01:38:46,516 --> 01:38:49,155
+Ward metodu da aslında benzer bir şey yapıyor.
+
+549
+01:38:49,155 --> 01:38:57,076
+O da uzaklıkların, yani uzaklıklarının kare köklerine.
+
+550
+01:38:57,460 --> 01:39:10,659
+göre bu işlemi yapıyor. Diğer bir ifade de şunu aslında yapıyor. Word metodu biraz daha farklı bir çözüm yapıyor ama hesap ettiği benzer. Onu şöyle anlatalım.
+
+551
+01:39:16,851 --> 01:39:17,791
+Şöyle noktamız olsun.
+
+552
+01:39:23,507 --> 01:39:25,387
+Bu birinci kümemiz.
+
+553
+01:39:29,747 --> 01:39:31,407
+Şurada da başka bir küme var.
+
+554
+01:39:34,347 --> 01:39:35,547
+Bu ikinci kümemiz.
+
+555
+01:39:39,252 --> 01:39:41,972
+Bir de üçüncü köyümüz olsun şurada.
+
+556
+01:39:46,996 --> 01:39:47,996
+Bu da C3 olsun.
+
+557
+01:39:50,895 --> 01:40:00,735
+Şimdi, her bir nokta aynı yerde olmuş olsaydı, bu kümeler birbirine çok yakın olsaydı, bu iyi bir şey değil mi?
+
+558
+01:40:00,815 --> 01:40:04,815
+Yani aslında bu kümeli noktaların birbirine yakın olması istemem bir şey.
+
+559
+01:40:04,916 --> 01:40:06,115
+Çünkü bunlar birbirine çok benzer.
+
+560
+01:40:06,612 --> 01:40:27,851
+Haliyle istediğimiz şey bu. Bu kümeler içindeki noktalar birbirinden uzaksa, küme içi noktalar birbirinden uzaksa, ne oluyor? Bu küme algısı biraz bozulmaya başlıyor. Yani buna biz hata diyebiliriz değil mi? Yani küme noktaları birbirinden uzaksa, işte bu i noktası j noktasından uzaksa,
+
+561
+01:40:29,011 --> 01:40:35,271
+Buna bir hata metri diyebiliriz. Bu mesafe ne kadar artıyorsa hata o kadar artıyor diye hesap edebiliriz değil mi?
+
+562
+01:40:36,491 --> 01:40:43,511
+Yani aslında şöyle bunlara distance diyelim, distance i diyelim.
+
+563
+01:40:44,871 --> 01:40:49,431
+Hatta bunun kare kök sonuçta bunlar olduğunu varsayalım.
+
+564
+01:40:50,551 --> 01:40:54,631
+i eşittir birden n'e kadar bu mesafelerin toplamı.
+
+565
+01:40:55,988 --> 01:41:06,988
+Mesela şey diyelim, sum of the square error. Hataların kare kök toplamı. Aslında bunun kare kök içinde olduğu için bunu ayrıca yazmıyorum.
+
+566
+01:41:07,807 --> 01:41:17,028
+Buna SSC diyelim. Şimdi bu kümenin kendi hatası. Yani buna SSC 1 diyelim.
+
+567
+01:41:19,444 --> 01:41:24,704
+Şunun da asla sscsi olabilir, bunun da hepsinin olabilir. Word metodu şunu yapıyor.
+
+568
+01:41:28,340 --> 01:41:29,640
+Word metodu diyelim.
+
+569
+01:41:33,235 --> 01:41:46,456
+Diyor ki, c1'i c2 ile birleştirdiğim zaman, bu SS'i ne kadar artar?
+
+570
+01:41:49,795 --> 01:41:58,275
+Bir de, buna c1, c1, c1 denerim.
+
+571
+01:42:00,340 --> 01:42:13,780
+Şöyle yapayım. İyi diyelim. 1-3 olsun. Hangisi daha çok oranda hatayı artırıyorsa, yani toplam hatayı artırıyorsa ne diyebiliriz?
+
+572
+01:42:19,188 --> 01:42:24,547
+Hatana kadar artarsa bunlar birbirine ne kadar? Yetim mi uzak mı?
+
+573
+01:42:25,108 --> 01:42:25,787
+Uzaktır.
+
+574
+01:42:25,787 --> 01:42:37,887
+Aynen öyle. Yani bu similarity 1, C1, C2 büyüktür.
+
+575
+01:42:41,684 --> 01:42:51,084
+C1, C3. Aslında bunu yapacağız. Yaptığı şey şu oluyor, ben C1 ile C2'yi birleştirseydi, tek bir küme yapsaydım.
+
+576
+01:42:53,604 --> 01:43:02,204
+Şimdi tek bir küme yaptım bunları. Bunun SSC'sini hesap ediyorum. Yani her birisinin uzaklığına uzaklığa karakürklerini topladım.
+
+577
+01:43:03,224 --> 01:43:08,724
+Buna diyelim ki X birim oldu. Sonrasında aynı işlemi şurada yapıyorum.
+
+578
+01:43:10,771 --> 01:43:18,231
+Aynı işlemi şunun için yapıyorum. Bu ikisini birleştirseydim ve bu başka bir küme olsaydı.
+
+579
+01:43:18,851 --> 01:43:31,231
+Buradaki SSY'yi, buna da Y diyoruz. Şimdi bu ikisini karşılaştırıyorum. Hangisinde bu hata farkı artıyorsa demek ki bu iki küme o kadar daha uzak.
+
+580
+01:43:33,332 --> 01:43:45,232
+Haliyle benzerlikleri düşük. Buna göre de sınıflandırma ve benzerlik işlemini yapıyoruz. Yani Word metodu da diğer bir yöntem olarak kullanılır.
+
+581
+01:43:45,912 --> 01:43:54,392
+Ve bu diğerlerine göre biraz daha esnek ve daha genellenebilir bir çözüm. O yüzden algoritmalar çoğunlukla Word yöntemine kullanılır.
+
+582
+01:43:54,800 --> 01:44:04,400
+Bu da aslında daha önceki metriklerde de söylediğimiz gibi toplam hatalar, karar kök toplamlarını işit.
+
+583
+01:44:04,880 --> 01:44:09,920
+Bu nasıl artıyorsa, eğer birleştirdiğiniz zaman artıyorsa demek ki bu yükümeler birbirine çok benzer değil.
+
+584
+01:44:10,540 --> 01:44:13,420
+Bu çok artmıyorsa o zaman bu yükümeler birbirine daha benzer.
+
+585
+01:44:13,840 --> 01:44:15,840
+Buna göre de bir sıralama yapmış oluyoruz.
+
+586
+01:44:20,180 --> 01:44:21,820
+Bunları konuştuk.
+
+587
+01:44:25,520 --> 01:44:31,400
+Burada hani diğerlerine göre de aslında noise ve outlier'lara göre de daha dirençli.
+
+588
+01:44:31,400 --> 01:44:44,480
+Onun da sebebi ne? Çünkü sadece noise ve outlier değil, birçok nokta işin içine katıldığı için noise, outlier değerlerinin bütün her şeyi değiştirmesine engel olabiliyoruz.
+
+589
+01:44:45,043 --> 01:44:56,244
+Yalnız K-Means'le ilgili bir problemden bahsedebiliriz. Hatta şey için de bahsedebiliriz. Yerarşik kümeleme için de bahsedebiliriz.
+
+590
+01:44:57,024 --> 01:45:06,724
+Burada küme şekli fark ediyor değil mi? Yani kümenin algısı ve şekli, büyüklüğü bizim için bir kümenin sonucuna etkilen bir problem.
+
+591
+01:45:06,884 --> 01:45:10,164
+Mesela yerarşik kümelemede ne gibi problemlerle karşılaşıyoruz?
+
+592
+01:45:11,667 --> 01:45:19,688
+Öncelikle bunun işlem kompleksitesi keyfimizden fazla mıdır, az mıdır sizce yaran şükümlenin?
+
+593
+01:45:26,612 --> 01:45:33,251
+Hangisi kompleksli olarak, karmaşıklık olarak daha etkilidir? Keyimiz mi, hiyerarşik mü?
+
+594
+01:45:34,152 --> 01:45:35,311
+Hiyerarşik gibi hocam.
+
+595
+01:45:36,631 --> 01:45:39,231
+Daha efektif mi yoksa daha yavaş mı?
+
+596
+01:45:39,931 --> 01:45:40,532
+Daha yavaş.
+
+597
+01:45:40,532 --> 01:45:46,532
+Daha yavaş, evet. Çok daha yavaş. Hem hesaplama hem de aslında...
+
+598
+01:45:47,604 --> 01:46:00,963
+Space olarak, alan olarak, memori olarak daha yavaş, daha az etkili. Çünkü proximity matris dediğimiz şey ne? Aslında entroparlık bir alan memori tutmanız lazım. Her noktanın her noktaya uzaklığı.
+
+599
+01:46:01,963 --> 01:46:06,403
+Ve bunu ne için yapıyorsunuz? Farklı boyutlar için, yaranşılar için yapıyorsunuz.
+
+600
+01:46:06,579 --> 01:46:34,039
+Tek bir hiyerarşide bitmiyor. Mesela hiyerarşi en maliyetli. Ama ondan sonra da azalarak da devam ediyor sonuçta. Birçok hiyerarşi için proksinin madresi güncelleyerek tutuyorsunuz. Bu hem maaliyet olarak çok yavaş hem de aynı zamanda alan olarak memori'de yer tutma açısından ciddi bir yer işgal ediyor. Veri sayısı arttıkça ve boyut sayısı arttıkça ciddi bir yavaşlık ortaya çıkaracaktır.
+
+601
+01:46:34,676 --> 01:46:52,235
+Diğer bir nokta da, hiyerarşik kümelemede aslında en sık noktadan bir tanesi de şu. İki tane kümeyi birleştirdikten sonra bir daha onları geri alamıyorsunuz değil mi? Bir yanlışlık olduysa, yani şurada göstereyim.
+
+602
+01:46:58,899 --> 01:47:04,339
+Yani şu ikisini bir kez birleştirdikten sonra diğer bir yaraçlarda bunlar birleşik olmuş oluyor.
+
+603
+01:47:04,419 --> 01:47:17,139
+Belki şu ikisi birleşmiş olsaydı, hani bu örnek de çok doğru olmabilir ama, belki daha doğru olsaydı artık bu şansımızı kaybetmiş olduk.
+
+604
+01:47:17,319 --> 01:47:24,499
+Bir kez bu ikisi birleştirdikten sonra bir sonraki yaraçı, yüksek yaraçı, hepsi şunu bir alt küme olarak alacak.
+
+605
+01:47:24,499 --> 01:47:25,659
+Yani şunu kastediyorum.
+
+606
+01:47:26,484 --> 01:47:38,864
+Yerarşide ikişeye geçtiği için, mesela şu ikisi birleştikten sonra artık diğer bütün kombinasyonlar, diğer bütün kombinasyonlar şunun üstüne inşa edilmiş oluyor.
+
+607
+01:47:40,364 --> 01:47:51,604
+Alt seviyelerde yapılan suboptimal kümeleme birleştirmeleri sonradan artık düzeltilemeyebiliyor. Bunun gibi bir problem var.
+
+608
+01:47:52,020 --> 01:48:06,020
+Onun dışında direkt bir objektif fonksiyonu bir şey minimize etmiyor. Burada sadece şunu yapıyoruz aslında. Her bir hiyerarşi için uzaklıkları minimize etmiş oluyoruz. Bunun gibi bir...
+
+609
+01:48:06,963 --> 01:48:09,884
+Bir yaklaşımla bu hedef işlemi yapılıyor.
+
+610
+01:48:10,663 --> 01:48:17,844
+Onun dışında da burada da tabii ki outlier ya da noise noktaları varsa şekli etkileyecektir.
+
+611
+01:48:18,484 --> 01:48:29,463
+Farklı sayıda, farklı şekillerde küme yapıları ortaya çıktığı zaman bunlarla ilgili problemler ortaya çıkabilir.
+
+612
+01:48:34,131 --> 01:48:41,031
+eleman içeren klasterlar söz konusuysa bunları da böyle bölmeye daha meyillidir.
+
+613
+01:48:41,871 --> 01:48:54,791
+Diğer bir problem de aslında kümeyi nasıl, nereden keseceğiniz yani hangi noktada bunun optimal bir kümeleme olduğuna karar vermek biraz zor.
+
+614
+01:49:01,695 --> 01:49:03,676
+Hüristik yaklaşımlar gerekiyor.
+
+615
+01:49:05,096 --> 01:49:07,796
+Hiyerarşikle ilgili problemleri bu şekilde özetleyebiliriz.
+
+616
+01:49:09,836 --> 01:49:13,136
+Diğer bir kümeleme yöntemi de DB-Sken.
+
+617
+01:49:13,296 --> 01:49:15,456
+DB-Sken neden önemli veya neden gerekli?
+
+618
+01:49:15,636 --> 01:49:18,476
+Aslında şurada, onu da açıklamakta fayda var.
+
+619
+01:49:18,796 --> 01:49:25,256
+Şimdi hiyerarşik kümeleme ve k-means, konveks yapıları kümeleme yapabilir mi?
+
+620
+01:49:30,644 --> 01:49:36,184
+Konveks yapıları yapar. Peki, konkav yapıları yapıyor mu? Yani şunu da söylüyorum. Veriler böyle dağılç oldu.
+
+621
+01:49:46,100 --> 01:49:48,360
+Bu da, fakta, fakta, birin otada bir svar.
+
+622
+01:49:56,532 --> 01:50:01,512
+Bunları farklı renkte yaparsan daha nedenlaşılır. Elimizde üç tane küme olsun.
+
+623
+01:50:03,872 --> 01:50:08,212
+Ama bu kümeler arasında şöyle ilginç bir dağılım olduğunu varsayalım.
+
+624
+01:50:09,772 --> 01:50:13,592
+Bu bizim siyah kümesi.
+
+625
+01:50:15,432 --> 01:50:18,332
+Onun dışında bir mavi kümesi var.
+
+626
+01:50:27,123 --> 01:50:29,123
+Bir de şöyle...
+
+627
+01:50:42,771 --> 01:50:45,791
+Bir de böyle kırmızı bir küme mi de olsun?
+
+628
+01:50:54,100 --> 01:51:17,100
+Sizce böyle bir dağılım olduğu zaman burada kaç tane küme var ve bunlar nasıl dağılırsa uygun olur? Nasıl bölünmesi beklenir? Şöyle olması beklenir değil mi? Burası bir küme. Şurası bir küme. Ve şurası da başka bir küme. Asla...
+
+629
+01:51:17,332 --> 01:51:25,292
+Böyle şekillerde 3 tane küme olmasını bekleriz. Böyle bölünmesini bekleriz. Peki k-means, k eşittir 3 seslerimiz ne yapar?
+
+630
+01:51:27,012 --> 01:51:36,012
+Bu şekilde dağılmaz. Daha yuvarlak olarak bu şekilde dağılır. Yani uzunlama sonan şekilleri algılayamaz. Kırmızıyı ya da mağarını.
+
+631
+01:51:36,012 --> 01:51:41,732
+Aynen öyle. Evet, nasıl bölecektir? [öğrenci]'nin de dediği gibi aslında
+
+632
+01:51:42,271 --> 01:51:49,371
+konveks bir şekilde bölecektir. Yani şurası belki bir küme olacak, şurası başka bir küme olacak, burası da başka bir küme olacak.
+
+633
+01:51:50,551 --> 01:52:02,491
+Çünkü neden? Fonksiyonun kendisi, öklü tuzaklığı, çemberimsi şekiller değil mi? Aslında üzerine bir kümeleme atıyor.
+
+634
+01:52:02,491 --> 01:52:07,531
+Yani bir sentroid etrafında bir çember çiziyor, bir halka çiziyor.
+
+635
+01:52:08,212 --> 01:52:22,032
+gibi düşünebilirsiniz. Yani tabii bu eliptik de olabilir. Aslında konveks yapıları, konveks, iç büke yapıları şey yapıyor değil mi? Pardon, konveks dış büke oluyor değil mi?
+
+636
+01:52:22,532 --> 01:52:34,391
+Konveks yapıları, yani konveks yapıları kümelebilir. Ama konkav yapıları k-miz yapamaz değil mi? Yani konkav.
+
+637
+01:52:35,475 --> 01:52:57,475
+Şu mesela bir konkav yapı. Konkav yapıları k-miz kümeleyemez. Çünkü uzaklık fonksiyonu buna tanımlı değil. Dış bir k- ve iç bir k- yani konveks ve konkav yapıları aynı anda...
+
+638
+01:53:02,323 --> 01:53:10,144
+Aynı anda kümeleme yapamaz. Yerarşi kümeleme de aynı şekilde. Böyle bir problem ortaya çıkıyor.
+
+639
+01:53:10,144 --> 01:53:18,344
+İşte aslında DB Scan'in temel amacı da biraz bu problemlere çözüm üretmeye yönelik.
+
+640
+01:53:19,043 --> 01:53:28,663
+DB Scan algoritması, konkav yapılarda da çalışır. DB Scan yoğunluk temelli.
+
+641
+01:53:32,787 --> 01:53:37,247
+Yoğunluk temelli bir algoritma.
+
+642
+01:53:40,007 --> 01:53:41,887
+Çalışması da şu şekilde.
+
+643
+01:53:43,828 --> 01:53:46,667
+DB-Scan'de farklı farklı şekiller olabilir.
+
+644
+01:53:47,167 --> 01:53:50,787
+Farklı konkab ya da konveks fark etmez.
+
+645
+01:53:53,108 --> 01:53:57,068
+Burada sadece bilmemiz gereken iki tane metrek.
+
+646
+01:53:57,716 --> 01:54:15,456
+İki tane bilgiye ihtiyacımız var. Yani K-Minizde K-SYS'ne ihtiyacımız vardı. Burada ise iki tane parametre ihtiyacımız var. Birincisi şu, EPS dediğimiz bir yarıçak. Bir noktadan başlayacak bir yarıçak uzaklığı.
+
+647
+01:54:24,051 --> 01:54:34,051
+Çember, varsayalım. Bu uzaklılığın kendisine de dediğimiz bir nokta. Yani çemberin...
+
+648
+01:54:37,779 --> 01:55:01,779
+Yarı çapı diyelim. Minimum, minimum FTSD'miz bu kadar alanda, pardon, direkt çember yarı çapı diyelim. Bir de diğer bir bilgimizde ihtiyacımız var. Bu da bizim point sayısı, min PTSD.
+
+649
+01:55:03,636 --> 01:55:07,756
+Yani bu yarı çap içinde kaç tane nokta var?
+
+650
+01:55:08,416 --> 01:55:14,156
+İkinci bilgimizde minimum PTS yani minimum points.
+
+651
+01:55:14,736 --> 01:55:20,636
+Bu yarı çapın içinde bulunması gereken minimum nokta sayısı.
+
+652
+01:55:22,316 --> 01:55:24,636
+Şunu diyebilirsiniz, yoğunluk...
+
+653
+01:55:24,671 --> 01:55:29,931
+ölçüde olduğu için bir yarı çizdiğim zaman bu çemberin içine 5 tane nokta düştü.
+
+654
+01:55:29,931 --> 01:55:36,831
+Veya 3 tane nokta düştü. Bu durumda küme yoğunluğunu belirliyorsunuz.
+
+655
+01:55:38,171 --> 01:55:48,791
+Sonrasında DB Scan şunu yapıyor. Her bir noktanın sınıflandırılması yapılıyor.
+
+656
+01:55:49,811 --> 01:55:57,971
+Üç tane nokta şeklinde bunlar ifade ediyor. Birincisi core noktalar, ikincisi sınır noktalar, border pointler, üçüncü de noise noktası.
+
+657
+01:55:57,971 --> 01:56:16,152
+Şunu yapıyor, hangi noktalar merkez noktası ya da core nokta? Eğer bir PS kadar çember çizdiğim zaman min PTS'den daha fazla sayıda veya eşit sayıda nokta düşüyorsa, onun etrafına bu bir merkez noktası olmuş oluyor.
+
+658
+01:56:16,532 --> 01:56:18,671
+Bu bizim merkez noktalarımızdan bir tanesi.
+
+659
+01:56:20,211 --> 01:56:26,891
+Eğer kendi noktanın etrafında, yani şöyle ifade edeyim.
+
+660
+01:56:29,752 --> 01:56:31,372
+Bu bir merkez nokta olsun.
+
+661
+01:56:31,372 --> 01:56:39,051
+Bu bizim noktamız bir EPS, kükemelsizlik.
+
+662
+01:56:39,372 --> 01:56:41,372
+Burada bir nokta var, burada bir nokta var.
+
+663
+01:56:44,212 --> 01:56:58,072
+Toplamda 1000 PTS'den daha büyük sayıda, burada 5 tane noktamız var, 1000 PTS, 4 olsun, 4 noktamız var.
+
+664
+01:56:58,172 --> 01:57:03,052
+4'ten daha çok sıkıyor, bu nokta bir alan hatikabül ediyor.
+
+665
+01:57:03,052 --> 01:57:08,732
+Bu noktanın kendisi, bu noktanın kendisi, kor noktası.
+
+666
+01:57:12,180 --> 01:57:27,340
+Bazı noktalar, mesela şu noktayı ders edelim. Bunun kendisi bir core nokta olmayabilir. Bunun etrafında bir, EPS'e kadar uzaklaştırdığı zaman mesela dört tane yoğunluk düşmüyor. Buraya üç tane düşmüş oldu.
+
+667
+01:57:27,340 --> 01:57:38,540
+Ama bunun kendisi başka bir core noktanın içine girdiği için burasıdan border diyor. Border noktası. Nasıl bir noktası?
+
+668
+01:57:41,108 --> 01:57:56,528
+Bunun yanında bazı noktalar da, mesela şurada bir nokta olsun, kendisi ne bir merkez nokta ne de başka bir merkez noktanın sınırı değilse buna da noise.
+
+669
+01:57:59,268 --> 01:58:02,108
+Noise noise ya da gürültü.
+
+670
+01:58:04,756 --> 01:58:15,155
+Bunun etrafında ithalerince yoğunluk yoksa bir yarış yap çizdiğimiz zaman minimum point dediğimiz sayıdan daha az eleman düşüyorsa bu bir noise noktası olmuş oluyor.
+
+671
+01:58:16,676 --> 01:58:22,115
+Şimdi öncelikle bu noktaları tespit ediyoruz. Bu neye yarıyor? Şunuya edeceğim.
+
+672
+01:58:22,115 --> 01:58:32,076
+Şimdi örnek verelim. Bu bizim core noktamız. Şuraya min tts4 aldığımızı varsayalım. Çember eşit, çember 1 genişliğinde olsun.
+
+673
+01:58:32,851 --> 01:58:39,071
+Pardon, buradan çemberi çizince gördüğünüz gibi 1, 2, 3, 4, 5 tane nokta düşüyor bu core nokta.
+
+674
+01:58:39,931 --> 01:58:48,211
+Şuraya bakıyorum, border point'e. Bunun kendisinin etrafında bir çember çiziyorum ama bunun kendisi gördüğünüz gibi bir core nokta değil.
+
+675
+01:58:48,211 --> 01:58:56,211
+Çünkü PTS değerinden daha az sayıda konususu var. Ama bu bir core noktanın...
+
+676
+01:58:57,171 --> 01:59:05,411
+içerisine tekabül ediyor. Dolayısıyla bu bir sınır noktası olmuş oluyor. Yani bu core noktaya ait. Buna border point diyoruz.
+
+677
+01:59:06,611 --> 01:59:11,811
+Burada ise noise noktası örneği var. Mesela bunun etrafında bir çember çizdiğim zaman
+
+678
+01:59:13,492 --> 01:59:34,992
+MinPTS'den az sayıda komşusu var. Dolayısıyla bu bir core nokta değil. Aynı zamanda başka bir core noktanın da içine girmiyor, halkasına girmiyor. Dolayısıyla border point değil. Demek ki bu bir noise. Bunları hesap ettikten sonra şunu yapıyoruz. Bizim orijinal noktalarımız bunlar. Bunları MinPTS ve EPS değerlerine göre sınıflandırıyoruz.
+
+679
+01:59:39,412 --> 01:59:54,652
+Mavi noktaları kendisi, yoğunluğun çok olduğu nokta değil ama yoğunluğu çok olan noktalara yakın. Onların komşuları, border pointlar. Bu kırmızılar ise noise. Yani bu kırmızıları işin içine sınıflandırmaya, kümelemeye dahil etmiyoruz.
+
+680
+01:59:56,931 --> 02:00:05,752
+Algoritma nasıl çalışıyor? Şuna çalışıyorum. Uzaklık hesap edeceğiz core noktalarla diğer noktalar arasında. Bunun için de şunu yapıyoruz.
+
+681
+02:00:06,144 --> 02:00:14,083
+Density Connected dediğimiz noktalar arasında bir erişilebilirlik metreyi hesaplıyoruz.
+
+682
+02:00:14,083 --> 02:00:22,284
+Yani şöyle, eğer bir core noktayla başka bir core noktaya erişebiliyorsam, bunlar arasında bir aslında edge var.
+
+683
+02:00:22,423 --> 02:00:26,284
+Yani bir bağlantı söz konusu. Bütün bunlar birleştiriliyor.
+
+684
+02:00:26,484 --> 02:00:31,064
+Yani her nokta başka bir core noktaya erişilebiliyorsa,
+
+685
+02:00:31,572 --> 02:00:37,351
+Yani o core noktayla başka bir core nokta varsa, bunlar arasında bir şey çizmiş oluyoruz.
+
+686
+02:00:37,912 --> 02:00:41,431
+Yani bunları birleştirmiş oluyoruz, diğer bir faaline, bir cluster faaline getirmiş oluyoruz.
+
+687
+02:00:41,771 --> 02:00:51,271
+Bunlar arasında bir bağlantı çubuğu ya da bir edge, bir köşe çizdiğimiz zaman bunlar aslında tek bir kümeye ait olmuş oluyor.
+
+688
+02:00:52,271 --> 02:00:54,988
+Şimdi bir noktadan başka...
+
+689
+02:00:54,996 --> 02:01:05,615
+Kornoktalara da erişebilirim. Bu nokta buraya erişebiliyor, bu buraya erişebiliyor, bu buraya erişebiliyor. Sonuç olarak buradaki noktalar her birisi birbirine erişebiliyor.
+
+690
+02:01:05,735 --> 02:01:14,576
+Bunu da density connected diyor. Yani bu noktadan bu noktaya belli bir petle, belli bir yolla bağlanabiliyorsam bunlar density connected.
+
+691
+02:01:14,576 --> 02:01:20,636
+Yani aslında bunlar aynı kümeye ait diye ifade edebiliriz.
+
+692
+02:01:21,524 --> 02:01:38,204
+Algoritma şöyle çalışıyor, bütün bu core ve border ve noise noktalarını tespit ettikten sonra noise'ları çıkarıyoruz. Onları zaten kümelemeye dahil etmeyeceğiz. Ondan sonra core noktalar içinde her bir core nokta henüz kümesi belirli değilse,
+
+693
+02:01:38,576 --> 02:01:44,235
+diğer erişilebildiği bütün core noktalara bağlanıyor ve bu bir klustere esayen ediliyor.
+
+694
+02:01:44,755 --> 02:01:56,295
+Öncelikle birinci core noktayı aldım. Sonrasında henüz sınıfı olmayan bütün core noktalarla buna erişilebilen core noktaları birleştirdim. Tek bir kluster oldu.
+
+695
+02:01:57,695 --> 02:02:05,735
+Sonra artık buna erişebilecek başka bir kluster kalmadıktan sonra geriye kalanlar için tekrar başlıyor. Bu işlemleri devam ede ede ede ede.
+
+696
+02:02:06,739 --> 02:02:16,119
+Tamamlıyoruz. Border noktalarını da ona en yakın core noktaya atıyoruz. Böylelikle sınıflandırmalar ortaya çıkmış oluyor.
+
+697
+02:02:16,639 --> 02:02:31,539
+Yani şöyle örnek verelim. Şuraya bakarsanız. Şimdi burada core noktalarına baktık. Core noktaları gördüğünüz gibi bu yeşiller. Şuradan herhangi bir tanesine başladık.
+
+698
+02:02:32,212 --> 02:02:51,652
+Bunlar henüz bir sınıfa ait değil. Bu core noktayı bir sınıf yaptım. Sonra bunun içinde buna erişebilen bütün core noktaları buna atadım. Çünkü buna erişebiliyoruz. Bunlara erişebildiğimiz için bunlar bu sınıfa ait oldu. Şuraya kadar eriştik. Bütün bunlara şurada erişebiliyoruz. Şu şekilde erişebiliyoruz. Bunlara erişebiliyoruz.
+
+699
+02:02:52,312 --> 02:02:59,652
+Şimdi buradaki core noktalar bittikten sonra şuradaki core noktalardan buraya erişmek mümkün değil. Dolayısıyla geriye kalan...
+
+700
+02:03:00,051 --> 02:03:12,211
+Core noktalar, şurası mesela Core noktalar, bütün sınıfa ait olmamış Core noktalardan erişebildiklerime erişmeye başlıyorum. Bunların hepsine erişebiliyoruz. Dolayısıyla bunların hepsi aynı bir sınıf bitti.
+
+701
+02:03:12,752 --> 02:03:20,612
+Sonra geri kalan core noktalar bunlar. Şuradaki core noktalar kendi kendine erişebiliyor. Buradakiler kendi kendine, buradakiler kendi kendine, şurası da kendi kendine.
+
+702
+02:03:21,112 --> 02:03:28,752
+Ve dolayısıyla bütün bunlar erişilebilmiş oldu. Border noktalarında en yakındaki core noktaları ait olan sınıfa atanır.
+
+703
+02:03:28,752 --> 02:03:37,892
+Yani şuradaki border noktalar. Buranın sınıfına, şuradakiler. Buranın sınıfına, buradakiler, buranın sınıfına. Ve sonuç olarak bütün bu noktaları sınıflandırmış oluyoruz.
+
+704
+02:03:39,984 --> 02:03:47,584
+Artık göz ardı edilir. Burada 1, 2, 3, 4, 5, 6 tane cluster'ımız oluşmuş olacak nihayetinde.
+
+705
+02:03:51,188 --> 02:03:53,608
+Buraya kadar sorsa olan var mı? Burası açık mı?
+
+706
+02:04:00,243 --> 02:04:03,724
+Yani yoğunluklarına göre bunları birleştirmeye başlıyoruz.
+
+707
+02:04:04,583 --> 02:04:14,524
+Bu nokta, bir core nokta, buradan ulaşabildiğim bütün noktalar, birbirine erişebildiğin bütün noktalar tek bir sınıfa ait olmuş oldu.
+
+708
+02:04:14,524 --> 02:04:18,203
+Şimdi burada sınıflandırmamış core noktalar var.
+
+709
+02:04:18,703 --> 02:04:23,944
+Buradan herhangi bir tanesini seçtiğim zaman buna erişilebilen bütün core noktalar bu sınıfa ait olmaya başlıyor.
+
+710
+02:04:25,583 --> 02:04:27,644
+Buradakiler buraya erişemiyor çünkü mesafe var.
+
+711
+02:04:28,307 --> 02:04:39,588
+Sonrasında geri kalanlar içinde konotaları birleştiriyoruz ve burası da tamamı başka bir sınıf içinde bir küme yapısı ortaya çıkarmış oluyor.
+
+712
+02:04:41,168 --> 02:04:54,668
+Şimdi şunu sorabilirsiniz, peki bu min-pts ve eps değerlerini nasıl açacağız? Yani bu uzaklığı nasıl tespit edeceğiz?
+
+713
+02:04:56,659 --> 02:05:04,300
+Bunu ölçmek için bir çözümünüz var mı? Siz ne düşünürsünüz? Bunları nasıl test edebiliriz?
+
+714
+02:05:07,180 --> 02:05:15,479
+Bunları bilmek için bir yaklaşımımız olabilir mi? Neye göre bunları tespit etmek uygun olur?
+
+715
+02:05:24,564 --> 02:05:27,544
+Bu yarış yapımı, buyurun.
+
+716
+02:05:27,724 --> 02:05:44,164
+Yani min-PTS yine bir şey gibi sanki bir hiperparametre. Orada aklıma bir şey gelmedi ama bu EPS'yi, yani birkaç tane nokta olayını aslında bizim verimizin yoğunluğuna göre de şey yapamamış.
+
+717
+02:05:44,244 --> 02:05:49,724
+Daha dağınık ayrıksa daha düşük ama çok öyle yoğunsa daha yoğun gibi seçilebilir sanki.
+
+718
+02:05:50,260 --> 02:05:59,980
+Doğru. Aslında EPS neye göre şekillenecek? Yoğunluğa göre değil mi? Eğer verimiz çok dens ya çok yoğunsa EPS'nin büyük ve küçük olmasını isteriz.
+
+719
+02:06:02,960 --> 02:06:05,260
+EPS'nin yüksek yoğunsa?
+
+720
+02:06:06,540 --> 02:06:11,180
+EPS çok yoğun olursa, çok yüksek olursa ne olur? Ne yapar bu durumda?
+
+721
+02:06:15,764 --> 02:06:21,963
+Daha yoğun olan bölgeleri seçmeyecek mi şey olarak? Daire içerisinde, kor nokta olarak.
+
+722
+02:06:23,344 --> 02:06:24,904
+Şöyle örne görelim mesela.
+
+723
+02:06:33,108 --> 02:06:34,547
+Şurada çok sayıda nokta var.
+
+724
+02:06:36,768 --> 02:06:39,207
+Şimdi EPS değerini yüksek seçersek ne olur?
+
+725
+02:06:41,487 --> 02:06:43,707
+Her birisi her birisine erişir değil mi?
+
+726
+02:06:45,927 --> 02:06:47,688
+Yani aslında ne yapacak sonuç olarak?
+
+727
+02:06:50,007 --> 02:06:51,188
+Tek bir sınıf olacak.
+
+728
+02:06:55,764 --> 02:07:03,684
+Çünkü her birisi birine erişebiliyorsa tek bir sınıf yapacak. Demek ki çok yoğun olursa EPS'nin düşük olması istenir.
+
+729
+02:07:05,284 --> 02:07:11,324
+EPS düşük olursa burası bir sınıf, belki şurası başka bir sınıf olur, şurası da başka bir sınıf olur.
+
+730
+02:07:13,324 --> 02:07:14,984
+Anladım hocam, şimdi anladım.
+
+731
+02:07:15,444 --> 02:07:19,104
+Peki EPS ne zaman yüksek olması istenir?
+
+732
+02:07:20,435 --> 02:07:21,756
+Ayrık olunca aslında.
+
+733
+02:07:21,876 --> 02:07:32,716
+Aynen. O zaman da yoğunlukları düşük olursa, çok düşük olursa, bu durumda EPS'ye yükseltmek isteriz ki.
+
+734
+02:07:32,836 --> 02:07:35,836
+Çünkü bu durumda da her birisi ayrı bir sınıf olacak. Bunu da çok istenmez.
+
+735
+02:07:36,895 --> 02:07:44,796
+Ama EPS'yi biraz büyütürseniz belki şunlar bir sınıf olacak, şunlar belki bir sınıf olacak, bu noise olur gibi düşünebiliriz.
+
+736
+02:07:45,332 --> 02:07:52,092
+Yani eğer çok ayrıksa ya da spars dağılmış nokta var, o zaman EPS'nin de yüksek olmasını isteriz.
+
+737
+02:07:52,732 --> 02:07:55,212
+EPS'nin de yüksek olmasını isteriz. Yani yoğunlukla alakası var.
+
+738
+02:07:55,792 --> 02:07:59,832
+Min-PTS'nin de bunların aslında ters oranında bir ilişkisi var, o da önemli.
+
+739
+02:08:00,972 --> 02:08:04,372
+Bunun için şöyle bir metrik tanımlayabiliriz.
+
+740
+02:08:04,372 --> 02:08:08,852
+Bir hüristik çalıştıracak olsaydık, şunu yapabilirdik.
+
+741
+02:08:11,220 --> 02:08:19,500
+Elimizde noktalar var ve bu noktalar içerisinde min PTS gibi bir K değerimiz olsun.
+
+742
+02:08:19,619 --> 02:08:22,479
+Diyelim bir dördüncü, beşinci yakın komşu.
+
+743
+02:08:22,739 --> 02:08:28,680
+Yani aslında az önce hani sum square error gibi bir metrik hesaplıyorduk ya, onun gibi düşünelim.
+
+744
+02:08:28,680 --> 02:08:36,060
+En uzak dördüncü komşusuna, her bir noktanın dördüncü komşusuna, beşinci komşusuna ve onuncu komşusuna
+
+745
+02:08:36,627 --> 02:08:42,187
+En uzak mesafesi kaç birim? Bunu hesap edeceğiz.
+
+746
+02:08:42,827 --> 02:08:49,887
+Yani birinci noktadan itibaren bütün noktaların kendisinin dördüncü komşusuna uzaklığını bulacağız.
+
+747
+02:08:51,027 --> 02:08:52,587
+Ve bunları sıraladığımızı varsayalım.
+
+748
+02:08:52,847 --> 02:08:55,787
+Şimdi bu şekli daha net görebilirsiniz böyle.
+
+749
+02:08:57,047 --> 02:08:57,887
+Ve bunları sıralalım.
+
+750
+02:08:59,267 --> 02:09:00,847
+Şunu fark edeceksiniz.
+
+751
+02:09:03,572 --> 02:09:15,452
+4. komşusuna uzaklığı çok yakın. Çünkü çok yoğun noktaların 4. 5. veya işte mi PTS olarak kabul etmek isteriz, 3. neyse. 3. komşusuna uzaklığı çok yakın olacak.
+
+752
+02:09:15,592 --> 02:09:27,152
+Çünkü aslında o core noktaysa, merkezi ve yoğunsa, densizliği yüksekse ne olacak? Onun etrafındaki uzaklık küçük olacak. Şöyle kast edeyim.
+
+753
+02:09:27,152 --> 02:09:28,992
+Şimdi.
+
+754
+02:09:30,131 --> 02:09:36,491
+Şurada belki örnek vermek gerekirse, şöyle örnek verelim.
+
+755
+02:09:37,131 --> 02:09:40,651
+Şimdi bu noktanın dördüncü komşusuna uzaklığı çok küçük değil mi?
+
+756
+02:09:40,711 --> 02:09:43,311
+Çünkü şuradakilerin hepsi çok yakın.
+
+757
+02:09:43,411 --> 02:09:46,811
+Yani şu dördüncü noktası belki burası ve sıfıra çok yakın.
+
+758
+02:09:47,911 --> 02:09:51,471
+Şuradaki noktanın da dördüncü komşusuna uzaklığı da çok yakın.
+
+759
+02:09:52,131 --> 02:09:53,071
+Şunların da fena değil.
+
+760
+02:09:53,684 --> 02:10:03,244
+Şunların da fena değil. Ama şuradaki bir noktanın dördüncü konusuna uzaylıkta ne kadar? Şöyle bir dördüncü konusuna bakmış olsaydım.
+
+761
+02:10:07,188 --> 02:10:28,547
+Şurada değil mi? Baya uzak. Şu birim uzaklığı baya uzak. Ama bunun gibi şeylerin sayısı daha az olacaktır. Aslında bu bir noise olduğunu gösteriyor değil mi? Noise olmayı yüksek. Çünkü noise noktalarının k-n. noktasına, komşusuna uzaklığı yüksek olmaya başlıyor.
+
+762
+02:10:31,923 --> 02:10:37,583
+k-n. komşuna mesafesi kısa olmuş olacak.
+
+763
+02:10:39,063 --> 02:10:43,503
+Ve bunları sıralarsanız şöyle bir şekil ortaya çıkar.
+
+764
+02:10:45,783 --> 02:10:47,783
+3 aşağı, 5 yukarı böyle bir şekil ortaya çıkıyor.
+
+765
+02:10:48,275 --> 02:10:57,975
+Öncelikle kısa, bu mesafe yakın çünkü bunlar oldukça yoğun noktalar ve belli bir noktaya kadar artmakla birlikte çok büyük bir artış ortaya çıkmıyor.
+
+766
+02:10:58,435 --> 02:11:01,956
+Ama belli bir noktada dramatik bir artış ortaya çıkmaya başlıyor.
+
+767
+02:11:03,176 --> 02:11:03,815
+Dramatik artış.
+
+768
+02:11:03,815 --> 02:11:08,216
+Bu da şu demek, şuradaki noktalar az sayıda nokta var ama bunlar noise.
+
+769
+02:11:08,596 --> 02:11:13,756
+Yani işte 2700'den itibaren 3000'e kadar noktalar noise.
+
+770
+02:11:17,747 --> 02:11:21,807
+Bir merkez nokta olarak düşünülmesine gerek yok.
+
+771
+02:11:23,067 --> 02:11:37,447
+İşte şuralar, şu aralık, şuralarda bir yerde, yani 7 ile 10 arasında bir nokta, bizim distance olarak, EPS noktası için kullanabileceğimiz bir yer, aday.
+
+772
+02:11:38,687 --> 02:11:40,907
+Eğer buralarda bir yerde bir noktaya da kesersek,
+
+773
+02:11:41,300 --> 02:11:53,560
+O merkez noktalar birbirine yakın noise noktaları çıkarmış oluyoruz. Bu da bizim için aslında uygun bir aday EPS noktası gibi olmuş oluyor.
+
+774
+02:11:54,480 --> 02:12:08,200
+Yani burada bir noktada 7-10 arası bir değer seçmiş olsaydık buradaki noise'lar bizim sonucumuzu çok etkilemeyecekti. Daha uygun değerlerde bir EPS seçmiş olacaktık.
+
+775
+02:12:08,979 --> 02:12:11,199
+Böyle bir hüristik bir yaklaşım seçmiş oluyoruz.
+
+776
+02:12:12,939 --> 02:12:14,519
+Hocam bir şey sorabilir miyim?
+
+777
+02:12:14,760 --> 02:12:14,960
+Tabii.
+
+778
+02:12:15,519 --> 02:12:23,800
+Az önceki analizimizi yaparken, min-PTS'i 4 kabul edip yaptığımızda çıkan grafik mi bu?
+
+779
+02:12:24,720 --> 02:12:26,920
+Evet, aslında biraz öyle olmuş oluyor.
+
+780
+02:12:27,019 --> 02:12:31,079
+Yani bunu şöyle yapabilirsiniz, farklı min-PTS'ler için de yapabilirsiniz bu grafikleri.
+
+781
+02:12:32,340 --> 02:12:37,380
+Peki bu farklı MİM-PTSS arasında yaptığımızda MİM-PTSS'ye nasıl karar vereceğiz?
+
+782
+02:12:38,180 --> 02:12:49,900
+MİM-PTSS'de şöyle, aslında yoğunlukla da biraz ilişkili olarak bakacaksınız. Bu dramatiklik nasıl şekilleniyor? Biraz bununla alakalı olacak.
+
+783
+02:12:50,260 --> 02:13:02,840
+Diyelim ki 3 için nasıl bir şekil elde ediyorsunuz? 4 için nasıl bir şekil elde ediyorsunuz? 5 için. Eğer 4 için daha net bir kırılım ortaya çıkıyorsa, demek ki bu 4 daha uygun bir seçenek olacak.
+
+784
+02:13:03,980 --> 02:13:05,119
+Anladım, teşekkür ederim.
+
+785
+02:13:05,119 --> 02:13:11,119
+Ben teşekkür ederim. Yani bu değerleri bir görsel...
+
+786
+02:13:11,247 --> 02:13:24,387
+Çizerek baktığınız zaman tespit etmesi biraz daha kolay. Ama bu şu demek değil. Her zaman bu en istir demek çok doğru değil. Ama bu büyük oranda size bir fikir verir. Yani hangisinin daha uygun olabileceğine dair fikir verir.
+
+787
+02:13:25,332 --> 02:13:35,932
+Bunun çok, tabii ki, çoğu durumda çalışması yeterli olacaktır ve istenilen şekilde farklı farklı klasterlar oluşturabilirsiniz.
+
+788
+02:13:36,052 --> 02:13:43,152
+Bunun gibi mesela, konkav yapıları ne k-means, ne hayrarki kümenevde yapmanız mümkün değil.
+
+789
+02:13:43,352 --> 02:13:45,772
+DB-Scan'da bunları üretmek oldukça kolay.
+
+790
+02:13:46,372 --> 02:13:48,292
+DB-Scan'da ise şöyle bir problem var.
+
+791
+02:13:49,252 --> 02:13:51,252
+O problem de şundan kaynaklanabilir.
+
+792
+02:13:51,252 --> 02:13:53,100
+MIM-PTS'nin de çok...
+
+793
+02:13:53,555 --> 02:14:07,636
+çalışamayacağı nokta orası. Yani burada noise var bir problem değil. Farklı şekillerde, farklı sayıda, farklı yapılardaki küme neleri tespit edebiliyor. Problem şurada kaynaklanıyor. Eğer yoğunluklar farklıysa.
+
+794
+02:14:08,532 --> 02:14:21,811
+Yani DB-Scan'de MIM-PTS ve EPS değerlerini biz bütün algoritma için standart aldığımız için eğer yoğunluk farkları oluşuyor, mesela şurada daha yoğunluk farkı var, burada farklı farklı yapılar var.
+
+795
+02:14:21,811 --> 02:14:36,532
+Bu durumda çok iyi çalışmıyor. Çünkü gördüğünüz gibi sizin alacağınız EPS değerine ve MIM-PTS değerine göre küme yapıları çok anlamlı olmayabilir. Yani buradaki parametreler...
+
+796
+02:14:36,532 --> 02:14:38,811
+oldukça hassas
+
+797
+02:14:38,811 --> 02:14:41,292
+boyut, yüksek boyut ve
+
+798
+02:14:41,292 --> 02:14:43,152
+yoğunluk
+
+799
+02:14:43,152 --> 02:14:44,231
+farklılıkları
+
+800
+02:14:44,231 --> 02:14:47,011
+küme algısını etkileyebilir.
+
+801
+02:14:50,292 --> 02:14:51,092
+Debi
+
+802
+02:14:51,092 --> 02:14:53,292
+iskenli de avantajları, dezavantajları
+
+803
+02:14:53,292 --> 02:14:54,952
+bu şekilde sayılabilir. Aslında bütün
+
+804
+02:14:54,952 --> 02:14:57,132
+algoritmaların bazı trade-off noktaları
+
+805
+02:14:57,132 --> 02:14:59,231
+var. Dezavantajları biraz
+
+806
+02:14:59,231 --> 02:15:01,372
+sizin probleminize,
+
+807
+02:15:01,612 --> 02:15:02,292
+dafasetinize
+
+808
+02:15:02,671 --> 02:15:08,751
+Uygun olacak şekilde bunları optimize etmeniz ve uygun olanı seçmeniz mümkün.
+
+809
+02:15:09,551 --> 02:15:17,532
+Bazen karşılaştırma yaparak hangisinin daha uygun seçenekler ortaya çıkaracağını da test etmek daha uygun bir yaklaşım olabilir.
+
+810
+02:15:20,032 --> 02:15:24,231
+Sorusu olan var mı veya eklemek istediğiniz bir nokta var mı?
+
+811
+02:15:30,420 --> 02:15:43,900
+Benzer bir öneride bulunabilirim. K-means'de de bu az önceki görsel K değerini seçmek için kullandığımız bir yöntem var. Buna da Elbos yöntemi diyebiliyoruz.
+
+812
+02:15:43,900 --> 02:15:52,220
+Onu da şöyle ifade edeyim. Verilerimiz böyle dağılmış olsun.
+
+813
+02:16:04,948 --> 02:16:06,448
+Verilerimiz böyle dalmış olsun.
+
+814
+02:16:11,668 --> 02:16:17,668
+Şimdi k sayısını bir alsaydınız, şurada aşağı şunu seçeyim.
+
+815
+02:16:22,323 --> 02:16:27,524
+Thumb square error yöntemini hesaplayalım. K sayısı 1 olsaydı,
+
+816
+02:16:36,788 --> 02:16:46,227
+k-n değeri, 1, 2, 3, 4, 5, 6 gibi gidiyor. Bunun gibi değerler.
+
+817
+02:16:48,668 --> 02:16:59,927
+Şimdi, eğer hepsi tek bir küme olsaydı, yani k sayısı 1 olsaydı, şurada bir değerimiz var, sum of the square error ne olacaktı?
+
+818
+02:17:01,203 --> 02:17:13,883
+Bütün hepsini işleyecek değil mi? Şunun hepsini işleyecek de. SSI değerimiz, yani şu olacak değil mi? Yani DI diyelim, birden N'e kadar.
+
+819
+02:17:16,583 --> 02:17:23,723
+N'e kadar. Her bir küme için, CI için bu işlemi yapıyoruz. Bunları toplamak.
+
+820
+02:17:24,115 --> 02:17:32,396
+Burada bir tane küme olduğu için bütün hepsinin toplamı olacak. Yani bu oldukça yüksek bir hata oranı olacak değil mi? Yüksek bir nokta olmuş olacak.
+
+821
+02:17:33,536 --> 02:17:39,536
+Şimdi bunu ikiye bölseydik, k'yi ikiye bölseydik nasıl bir şekilde ortaya çıkacaktı?
+
+822
+02:17:43,412 --> 02:17:47,492
+Tahminen şuradaki gibi bir yapı ortaya çıkar.
+
+823
+02:17:50,952 --> 02:17:52,752
+Şuradaki gibi bir yapı ortaya çıkar.
+
+824
+02:17:53,351 --> 02:17:56,452
+The sum of the square error artar mı, azalır mı?
+
+825
+02:18:05,268 --> 02:18:20,028
+Azalır değil mi? Hem de dramatik bir şekilde azalmasını beklersin. Çünkü az önceki Sam-Aftosquare error'da şu boşlukların tamamını ekliyorduk karelere. Oldukça yüksek bir hata oran olacak değil mi? Yani ciddi bir şekilde azalmasını beklersin.
+
+826
+02:18:21,508 --> 02:18:30,128
+Şimdi k sayısını 3 yapsaydık, yine bu işlemler 1. küme için, 2. küme için, 3. küme için bunları hesap edecektik.
+
+827
+02:18:30,675 --> 02:18:33,995
+Ne olmasını beklersiniz? Hata payının artmasını mı, azalmasını mı?
+
+828
+02:18:36,915 --> 02:18:47,575
+Yine azalmasını bekleriz değil mi? Mesela şurası, küme, şurası, küme, küme. Yani şuradaki boşluktan kaynaklı hataların azalmasını bekliyoruz.
+
+829
+02:18:48,495 --> 02:18:50,056
+Yani bu biraz daha azalacak.
+
+830
+02:18:54,868 --> 02:19:06,848
+Bu defa şuradakilerde azalmalar olacaktı. Diyelim ki şurası bir küme, şurası bir küme, şurası bir küme haliyle şuradaki boşlukları azalacaktı.
+
+831
+02:19:07,328 --> 02:19:14,968
+5 yapsanız şurası azaldı, şurası azaldı. Yani bu azalarak devam etmeye başlayacak değil mi? Azalarak devam etmeye başlayacak.
+
+832
+02:19:16,648 --> 02:19:20,968
+Bir noktadan sonra artık azalacak ama.
+
+833
+02:19:21,327 --> 02:19:47,087
+Sabit ve yakın başlayacak. Bu K sayısı N'e eşit olduğu zaman ne olacak? Sıfırlanacak değil. Çünkü her birisi bir küme ise o zaman sum of the square error sıfır. Herhangi bir hata olmaz. Demek ki bu hatanın sıfır olmasını istemiyoruz. O zaman kümelemenin bir anlamı kalmaz. Demek ki belli bir noktada kesmemiz lazım. Ama nerede keseceğiz?
+
+834
+02:19:47,487 --> 02:19:57,227
+Burada kesersek çok anlamı kalmaz çünkü herkes bir küme. Burada kesersek herkes bir küme olduğu için adal 0. Bunda bir anlamı yok. Demek ki ortalarda bir yerde keseceğiz.
+
+835
+02:19:57,227 --> 02:20:15,067
+İşte buranın uygun kesme noktasını böyle gelip bir noktada sabitleşmeye başlıyorsa burası bizim için uygun bir k sayısı olarak aday nokta oluyor. Yani aslında bunun ismi de elbow bir yönde bir denir.
+
+836
+02:20:15,827 --> 02:20:42,747
+Evet, o yani dirsek. Hani dirsek koldan bümrüt hızlıca aşağı iner, sonra sabit kalır ya şurada dirseğimiz. Dirsek belli bir noktadan sonra sabit kalır. Onun gibi. Hızlıca aşağı iniyor, sonra iğne kaybedip, yatayda azalarak devam etmeye başladığı nokta bizim uygun K aday noktamız olarak tespit edebileceğimiz bir nokta. Yani genellikle sum of the square error'ı hesap ederseniz
+
+837
+02:20:43,316 --> 02:20:51,695
+Şöyle yapılar ortaya çıkartıyor. Önce çok hızlı düşer, sonra azalarak düşmeye devam eder, devam eder, sonrasında sabit kalmaya başlar.
+
+838
+02:20:52,456 --> 02:20:57,536
+Yani şu dirsek noktaları, şuralarda bir nokta, bir ya da bir iki aday sizin için olabilir.
+
+839
+02:20:58,076 --> 02:21:03,515
+Yani çok hızlı düşüp, şöyle şöyle sabit kalıyorsa, şurası mesela uygun bir aday olabilir.
+
+840
+02:21:04,556 --> 02:21:10,436
+Veya böyle düşüp böyle gidiyorsa, buralarda bir yer sizin için uygun k sayısı olabilir.
+
+841
+02:21:11,412 --> 02:21:28,832
+Buna da elbow yöntemindedir. Bunun bir başka yaklaşımı var. Aslında o da bu elbow ile aynı şeyi hesap ediyor. Onun hesap etmesi biraz daha karmaşık, kompleksliği yüksek. O yüzden şu an için elbow konuşmamız yeterli.
+
+842
+02:21:39,476 --> 02:21:42,515
+Sezgisel metriklerle ölçmeniz mümkün.
+
+843
+02:21:44,616 --> 02:21:49,436
+Benim anlatacaklarım bu kadar arkadaşlar. Kümeleme ile ilgili var mı? Sizi sormak istediğiniz veya eklemek istediğiniz.
+
+844
+02:21:59,188 --> 02:22:14,348
+Sanırım sorusu olan yok. O zaman burada sonlandırabiliriz. Haftaya sınıfta görüşmek üzere. Yüzde dersimizi işleyeceğiz. Şimdiden kendinize iyi bakın. İyi hafta sonları diliyorum. Görüşmek üzere. Hoşçakalın.
+
+845
+02:22:14,448 --> 02:22:15,927
+Teşekkür ederim hocam. Görüşmek üzere.
+
+846
+02:22:16,108 --> 02:22:17,348
+Teşekkürler hocam. İyi günler.
+
+847
+02:22:17,368 --> 02:22:18,268
+Sağ olun. İyi günler.

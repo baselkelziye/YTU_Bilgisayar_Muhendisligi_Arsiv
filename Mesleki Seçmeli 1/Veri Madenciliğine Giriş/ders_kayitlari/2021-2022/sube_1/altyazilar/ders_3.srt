@@ -1,0 +1,779 @@
+1
+00:00:11,507 --> 00:00:14,267
+Selam. Haydi bakalım.
+
+2
+00:00:15,587 --> 00:00:16,527
+Ekranı paylaşalım.
+
+3
+00:00:18,307 --> 00:00:20,147
+Belki dedim üçüncü çeptara.
+
+4
+00:00:23,987 --> 00:00:24,427
+Bir de olmadı.
+
+5
+00:00:26,487 --> 00:00:27,387
+Şimdi
+
+6
+00:00:32,340 --> 00:00:55,360
+Şimdi burada birkaç tane tekrümüz var. Boxcloth en neyi? Biraz daha içinde istatistiksel şey. Dedik ki, Boxcloth görüyorsunuz. Medyan, değil mi? Sonra Q1 ve Q3'ü görebiliyor.
+
+7
+00:00:58,996 --> 00:01:15,355
+Maksimum değil ama niye? Çünkü outlier değil. Tamam mı? Hani aşıkta bir outlier varsa maksimum o çıkacak. Ama ekstrim değerler, uç değerler diyebiliriz. Tamam mı? Bunu R'la vermiş, R kullanmamızdır. Bahseye girelim.
+
+8
+00:01:17,855 --> 00:01:22,776
+Nerede? Sayısal analiz kullanmış olabiliriz.
+
+9
+00:01:27,956 --> 00:01:38,956
+Ar benziyor, bazı taraf Metbaba da benziyor. Örnekleri Ar'da, niye Ar'da? İşte Python başka taraflara da gitti. Yani işte arayüz vesaire.
+
+10
+00:01:38,956 --> 00:01:49,956
+Veri madenciliğinde en popüler bir Ar. Özellikle birazcık daha matematik istatistikçiler daha popüler.
+
+11
+00:01:54,644 --> 00:02:05,064
+Yani şöyle, scikit-learn ile uygulamayacağız ama slide'la bir şeyler ağır, en azından zaten bu da benziyor, birazcık aşinalı olsun diye.
+
+12
+00:02:05,064 --> 00:02:13,084
+Yani tutup şu kod neye sormam ama böyle slide'a bakarken de ağır böyleymiş diye bakarsanız, şey çok benziyor. Tamam.
+
+13
+00:02:13,723 --> 00:02:20,663
+Farkından dediği zaman hani deyizliği vardır, minimum diye. Bu onları veriyor.
+
+14
+00:02:22,292 --> 00:02:46,411
+Matlab'da da çok benzer. Öyle değil, parametre olarak alıyor Python. Bu ne? Bu bar chart. Herkesin herhalde en çok ağırlığı. Bunlara hızlı hızlı bakın. Histogram ne? Histogram ile ilgili biz. Histogram'ın özgürlüğü ne? Bar chart ile histogram'ın farkı ne?
+
+15
+00:02:52,243 --> 00:03:02,564
+Bar Chart birazcık daha iyi ve size diyor ki Mayıs'ta atıyorum satış. X, Y'den direkt okuyabiliyorsunuz.
+
+16
+00:03:03,484 --> 00:03:11,024
+Bu anda yine barlarla gösteriliyor. Ama şurada ne var? Burda frekans var.
+
+17
+00:03:11,024 --> 00:03:17,900
+Yani bu ne demek? Kaça kaçlık bilmiyorum ama diyelim ki 35-40 arasında.
+
+18
+00:03:19,027 --> 00:03:28,027
+ki frekansı bir, yani aslında aralığa bağlımın içinde kaç tane örnek düştüğünü gösteriyor. Tamam mı?
+
+19
+00:03:28,027 --> 00:03:38,027
+Peki, histograma da genel, kendiniz verirseniz, edifat parametresi vardır işte genel.
+
+20
+00:03:38,027 --> 00:03:44,027
+10 şeye böler, 10 bine böler, 1000 diye geçiyor.
+
+21
+00:03:47,316 --> 00:03:54,235
+içine doldur ya da işte otomatikçede ne yapabilirsiniz? Siz programda kendiniz verebilirsiniz de.
+
+22
+00:03:56,195 --> 00:04:03,096
+Skater Plus'da geçiyorum. Bunları şey, RK anlatırken size gösteririm. Sadece bir şey söyleyeyim.
+
+23
+00:04:06,015 --> 00:04:07,355
+Korelasyon biliyor musunuz?
+
+24
+00:04:11,443 --> 00:04:18,223
+Feature'lara bakarken ikili, ikili, ikili, tamam mı? Birbirleriyle korele mi?
+
+25
+00:04:19,483 --> 00:04:23,103
+Ya da işte negatif korelasyon var mı diye bakarız.
+
+26
+00:04:24,644 --> 00:04:31,244
+Özel, diyelim ki x ve y arasında şöyle bir ne pozitif korelasyon, datamız bu şekilde.
+
+27
+00:04:38,387 --> 00:04:58,288
+Attribütlerin arasında çok korelasyon olmasın. Her zaman. Her zaman istemez korelasyon olmasın. Çünkü niye? Attribütlerinizin hepsi böyle pozitif, correlated çıkarsa bu şu demek. Sizin zaten bütün attribütleriniz aynı şeyi söylüyor demek.
+
+28
+00:05:05,300 --> 00:05:22,899
+sonucu elde edersiniz. Yani her zaman pozitif korelasyon iyi olmayabilir. Bunları nasıl bakıyoruz falan gösterirken, gösteri fena değil, orada size gösterir. Skiyatördürür.
+
+29
+00:05:22,899 --> 00:05:29,939
+Gelelim bugünün üçüncü konusuna. Datanın benzerliğini açmak.
+
+30
+00:05:30,803 --> 00:05:37,803
+Siz neyin benzerliğini ölçeceğiz? Yani tablomuz var, ne ile neyin benzerliğini ölçebiliriz?
+
+31
+00:05:40,803 --> 00:05:48,803
+İki vektörün, yani iki instansın, iki objenin birbiriyle benzerliğini ölçebiliriz, değil mi?
+
+32
+00:05:48,803 --> 00:05:54,803
+Peki nasıl ölçersiniz? Bildiğiniz yöntem var mı? Ben olsam, şöyle yapsam bir şey çift herhalde dediğiniz şey var mı?
+
+33
+00:05:59,668 --> 00:06:21,268
+Farkını alırsın. İki şey, iki rektör. Bir bilene kadar değilse farkının, para yakın çıkması ilersin. Ama şöyle bir şey var. Eksi değer de çıkacak. Değil mi toplar? O zaman, hepsini alıp, sonra kare köpülürsün, toplar. Bir yöntem, başka?
+
+34
+00:06:23,795 --> 00:06:25,896
+Onu anlatacağız böyle bilmiş mi?
+
+35
+00:06:25,896 --> 00:06:27,175
+Geri yönetim.
+
+36
+00:06:34,579 --> 00:06:36,280
+Vektörler çarparsınız.
+
+37
+00:06:40,723 --> 00:06:46,103
+Güvek çarpımı var. Dat Pro Dat. Ne oluyor?
+
+38
+00:06:51,379 --> 00:06:58,979
+gibi, değil mi? Yani bildiğiniz yön, çıkarır karesini alırım dediğimde, değil mi?
+
+39
+00:06:58,979 --> 00:07:14,299
+Burada kullanılan metrikler var. Her zaman şeylerimiz aynı oluyor, her zaman sayısal olmak zorunda değil. Doğru mu? Peki kategorikse ne yapacağız, nominalse falan ne yapacağız?
+
+40
+00:07:18,899 --> 00:07:44,240
+Evet, zaten kullanmanız için bunları sayı değiştirmemiz gerekecek. Tamam mı? Diyoruz ki, similarity yani bir tane satır diyeyim. Tamam mı? İki ocağı birbirine ne kadar benziyor? İki sütunun arasındaki benzerlikle ölçersiniz. İki satır ne kadar benziyor? Bunu da benzerlikle ölçeriz. Tamam mı? Ya da funksiyonlar ile.
+
+41
+00:07:45,267 --> 00:08:11,807
+diyebiliriz. Tamam. Genellikle similarity'ye, yani benzemez diyoruz. Yani uzaklık. Çünkü mesela öklit uzaklığı diyoruz değil mi? Niye uzaklığı? Çünkü genellikle benzerim nedir? Distance'dır. Tamam mı? Şimdi betliklerde de göreceğiz. Genellikle 0-1 aralığında bir şey çıkabilir ama çıkmak zorunda.
+
+42
+00:08:12,468 --> 00:08:19,927
+Değil, bazı sıfırdan büyük, sonsuza kadar bile çıkarır, daha büyük değerler çıkabilir.
+
+43
+00:08:20,268 --> 00:08:21,348
+Şimdi bunlara bakalım.
+
+44
+00:08:22,668 --> 00:08:26,168
+Şimdi burada söylediğimiz şey, ipaçıya bakalım.
+
+45
+00:08:26,848 --> 00:08:29,448
+P ve Q, iki tane data objets.
+
+46
+00:08:31,828 --> 00:08:33,448
+K-me tarafına bakalım.
+
+47
+00:08:33,688 --> 00:08:35,307
+Yani inter ya da ratio.
+
+48
+00:08:35,587 --> 00:08:36,488
+Bunlar sayısız.
+
+49
+00:08:38,484 --> 00:09:05,264
+Birbirinden çıkan mutlak değerini yapabilirsiniz. Değil mi? Ve iyi kötü bir şeyler, en basit haliyle. Peki, ordinal ise, sıra önemli ise, yani orta, küçük, büyük gibi bir şeyse, değerli bir, iki, üç gibi ya da sıra bir, iki, üç gibi ne yapabilirsiniz? En ömrüt edebilirsiniz, ulandırırsınız. Küçük bir, orta, iki, büyük, üç gibi. Değil mi?
+
+50
+00:09:05,748 --> 00:09:32,567
+ve bunu yaptıktan sonra eğer sınıflandırma başladıysanız o yüzden en eksi bir par. Aradaki farkı buluyorsunuz ve onu en büyük değere bölüyorsunuz. Yani aslında oran elde etmeye çalışıyorsunuz. Onu birden çıkarıyorsunuz. Nasıl? Şöyle diyelim ki küçük, tabii bir iki, sıfırdan başlayalım. Sıfır, bir iki kullandım.
+
+51
+00:09:33,427 --> 00:09:46,747
+2 ile 0 arasındaki uzaklığı bulmak için, ilk sıfırı çıkardınız, onu 2'ye bölüp, en büyük değere bölüp, 1, 1'den çıkarıyorsunuz ve değeri buluyorsunuz.
+
+52
+00:09:47,587 --> 00:09:52,307
+Formülü bu. İlla bunu kullanmanda değilsiniz. Peki nominallerde ne yapacağız?
+
+53
+00:09:54,307 --> 00:09:59,148
+Değil mi? Ona bakabiliriz. Tamam mı? Kalamıyoruz. 1, 3, 4, 5 de yazın.
+
+54
+00:10:00,371 --> 00:10:05,171
+İkisi eğer ki aynı değilse de birdir diyoruz.
+
+55
+00:10:07,491 --> 00:10:13,571
+En çok bilinen nasıl çıkarıyoruz?
+
+56
+00:10:13,711 --> 00:10:22,131
+Her bir atribüt yani beş tane atribütümüz var ya biz satırları karşılaştırıyoruz.
+
+57
+00:10:22,131 --> 00:10:28,131
+Birinci kolon dedim yani iki satırın çıkarttınız.
+
+58
+00:10:29,491 --> 00:10:45,431
+Artı ikinciyi birbirine aldınız. Artı böyle böyle gidiyor. Ne yapmam lazım? Çökünü almam lazım. Değil mi? Kaç da kaç arasında çıkar? 0-1 arasında çıkar mı?
+
+59
+00:10:50,484 --> 00:10:53,804
+0-1 arasında çıkacak diye yok. Tamam mı?
+
+60
+00:10:55,764 --> 00:11:00,004
+Burada ne yapmış? Burada övlamış P1 ve P2.
+
+61
+00:11:01,564 --> 00:11:04,544
+Tek tek tabloya yazmış gördüğünüz gibi. Metrik zaten.
+
+62
+00:11:05,484 --> 00:11:12,464
+İnanmıyorsanız 2-0'ın karesi artı 2-0'ın karesinin kare küpünü alarak buradaki değerleri elde edebilirsiniz.
+
+63
+00:11:14,524 --> 00:11:15,444
+Tamam mı?
+
+64
+00:11:16,884 --> 00:11:23,364
+Bildiğiniz şuradaki formülü uzamış bir şey yok. Şimdi gelin Minkowski uzaklığı.
+
+65
+00:11:24,464 --> 00:11:31,183
+Aslında Öklid'in bilmiş hali. Yani Öklid'de 2 idi değil mi?
+
+66
+00:11:32,484 --> 00:11:40,024
+Kararık, karesini alıyorduk. Kararısını aldığımız uzak değere gerek yok. Sonra bir de kökünü alıyorduk. Böyle 2.
+
+67
+00:11:45,683 --> 00:11:58,303
+3-4 ile de gidebilir. Tamam mı? Şimdi Minkowski Distance değer, R2 buna ne diyorum ben? Öklit transfer diyorum. Peki R1 ise, R1 ise nasıl olur?
+
+68
+00:12:05,043 --> 00:12:08,923
+Mutlaka değer var ya. Sizin mutlaka değer var.
+
+69
+00:12:12,628 --> 00:12:26,567
+Yaşın sonrası derslerinden burcalayayım ben düzeltirim. Burada mutlak bir yer var. Dolayısıyla ne olacak? Aynı değerlerde sıfır çıkar. Aynı olmayan değerlerde ne çıkacak? Daha büyük bir değer ortaya çıkacak.
+
+70
+00:12:40,052 --> 00:12:57,252
+Çünkü niye? Bu ya H, R1 ise Mellaton'dısınız. Sonra dediğimiz gibi R, onun limitli hali var. Bu da deminki işte L iken, L2 iken görürsünüz.
+
+71
+00:12:57,992 --> 00:13:07,112
+Mellaton, R'nin bir olduğuna L1, tamam mı? İşte bunun L1, ikisinin arasındaki uzaklığı böyle verir.
+
+72
+00:13:08,307 --> 00:13:10,468
+normu denir, genellikle.
+
+73
+00:13:11,548 --> 00:13:12,108
+Binin yeter.
+
+74
+00:13:14,427 --> 00:13:15,028
+Şimdi,
+
+75
+00:13:16,028 --> 00:13:16,268
+biz
+
+76
+00:13:16,268 --> 00:13:18,468
+önemli
+
+77
+00:13:18,468 --> 00:13:21,288
+söyleyecek.
+
+78
+00:13:22,108 --> 00:13:22,388
+Eğer
+
+79
+00:13:22,388 --> 00:13:25,768
+uzaklık, bir uzaklık.
+
+80
+00:13:26,348 --> 00:13:27,468
+Şuradaki özel
+
+81
+00:13:27,468 --> 00:13:30,468
+sağlıyorsa, bir uzaklık
+
+82
+00:13:30,468 --> 00:13:31,187
+metreydir.
+
+83
+00:13:31,648 --> 00:13:38,207
+Yani bu uzaklık, uzaklık meclis ediyorsan, şuradaki özellik nedir? Sağlıyordur.
+
+84
+00:13:41,940 --> 00:13:48,800
+Baktığımız zaman eğer her türlü değeri oluştuyorsa pozitif.
+
+85
+00:13:50,800 --> 00:13:51,960
+Simetrik nedir?
+
+86
+00:13:53,160 --> 00:13:56,280
+Birbirinden çıkarıyoruz ya da başka şeyler yapıyoruz ya.
+
+87
+00:13:56,280 --> 00:14:03,960
+X, Y ile D, X, Y, Y, Y ile X ile simetrik diyeceğiz.
+
+88
+00:14:04,060 --> 00:14:04,520
+Bir de ne var?
+
+89
+00:14:05,620 --> 00:14:09,400
+Üçgen bir kenar uzunluğu.
+
+90
+00:14:10,323 --> 00:14:12,363
+Olamaz. Tıklı bu da onun gibi.
+
+91
+00:14:13,923 --> 00:14:15,003
+Yani üç tane.
+
+92
+00:14:16,903 --> 00:14:21,183
+Tamam mı? X ve Z'nin uzaklığı küçük eşit olmalı.
+
+93
+00:14:22,583 --> 00:14:24,323
+Z'nin uzaklığı artı Y, Z'nin.
+
+94
+00:14:26,003 --> 00:14:26,963
+Tamam mı?
+
+95
+00:14:28,943 --> 00:14:31,403
+Tıklı üçgenler gelen şey gibi.
+
+96
+00:14:31,803 --> 00:14:34,403
+Mesela öp bakalım. Öp bir zaman pozitif mi?
+
+97
+00:14:35,563 --> 00:14:37,363
+Evet. Simetrik midir?
+
+98
+00:14:38,548 --> 00:14:55,188
+Simetrik çıkarttığınız zaman. Peki şunu sarma. Üçgenden biliyorsun. Üçgenden alırken kenar uzaklığını alarak yapıyorsunuz değil mi? Dolayısıyla uzaklığı bir metriktir diyebiliriz.
+
+99
+00:14:57,748 --> 00:15:03,828
+Bunları söyledik. Geçeyim. Şimdi geldik başka bir şeye.
+
+100
+00:15:05,620 --> 00:15:10,399
+etriber binary'i yapacağız. 0-1-0'san uzaklık ölçeceğiz.
+
+101
+00:15:12,480 --> 00:15:14,320
+Yine birileri çıkarır toplarım aslında.
+
+102
+00:15:21,331 --> 00:15:22,172
+Bir de var mı?
+
+103
+00:15:39,956 --> 00:15:53,316
+Çünkü binary'daki birin üzeri bilmem kaç olarak dönüyordum. Çıkarttığımız zaman bunu kaybetmiştim. Bunu da yapmak için bir formül yapabilirsiniz ama kullanırsanız bir.
+
+104
+00:15:54,916 --> 00:16:04,216
+Bunun da simetrik, binary variable'ı simetrik ve simetrik olmayan için. Simetrik de neydi? 0-1 arasında.
+
+105
+00:16:05,395 --> 00:16:27,635
+Siyaf kız erkek değil mi? Yani bir sıfır gibi bir şey yoktu. Şimdi şöyle olsun ki uzunluğun yani x sıfır için yani işte x sıfır olduğu, y sıfır olduğuna f sıfır, şu ilk baştaki x'i gösteriyor, ikincisi de y gösteriyor. Yani şu x'inin de bir olduğu, şu bir y'nin sıfır olduğunu düşünün. Tamam mı? Burada ne oluyor?
+
+106
+00:16:31,347 --> 00:16:44,128
+X'in 0 olduğu Y'nin 0 olduğu bölü demek. Bu formül ne yapıyor? Bir bakın bakalım.
+
+107
+00:16:46,967 --> 00:16:57,967
+Şimdi vektör. Uzun bir vektör var. İki tane vektör. Vektörün birinci elemanı bu 0 ise F0 0'dır.
+
+108
+00:16:58,368 --> 00:17:22,688
+Bu bir, bu sıfırsa, bir sıfırdır. Üstteki sıfır, bu bir sıfırdır. Bir sıfırdır değil mi? Şu bölümün ne yapıyor? Bakın ikisinin farklı olduğunu buluyor. Yani bir tanesi birken diğeri sıfır olanlar. Sıfır ve bir bir olanı almamış. Aynı olanları almamış. Değil mi? Farklı olanları.
+
+109
+00:17:23,667 --> 00:17:26,027
+Neye bölüyor? Hepsinin topukuna bölüyor.
+
+110
+00:17:30,036 --> 00:17:43,436
+Yaptığı şey bu. Asimetrik ne yapıyor? Bir sanki sıfırdan bir daha önemli gibi ya, farklı olanları sıfır sıfıra olanları almıyor.
+
+111
+00:17:43,436 --> 00:17:55,175
+Tamam tek farkı. Sonra, yakartık o efisiyan ama bunu, bu nerede kullanılıyor biliyor musunuz daha çok? Söyle.
+
+112
+00:18:01,619 --> 00:18:14,000
+Hem orada alınıyor hem de resimler yapılıyor ya mesela işte olduğu yeri diyelim ki kırmızı boyadı. Onun gerçeği vardı. Arası ne kadar danzıyor?
+
+113
+00:18:14,839 --> 00:18:24,119
+Bir araba var, bir iki tane mask var, maske. Ama arabanın olduğu yerler bir, bir, bir.
+
+114
+00:18:27,316 --> 00:18:37,876
+algoritmanız buldu ama yüzde yüzde ordu. Her köşeden de buldu. Bir de bir onda da gerçekten arabanın bir olmadığı yerler sıfır.
+
+115
+00:18:39,315 --> 00:18:44,835
+Metodunuz ne kadar doğru çalıştığı diye buna bakmanız lazım. Ne kadar ölçüştüğüne bakmanız lazım.
+
+116
+00:18:45,576 --> 00:18:51,755
+Dolayısıyla yakın efisiyent burada çok kullanılıyor. Burada yapılan şey de aynı. Nasıl yaparsınız? Gerçekten.
+
+117
+00:18:52,307 --> 00:19:07,307
+Yanlış bulunan, yani birken sizin sıfır bulduğunuz pikseller, araba olup da sizin araba değildir dediğiniz yerler, altı araba değil ama soruya araba dediğiniz. O pikseller yani hatalılardır.
+
+118
+00:19:20,307 --> 00:19:45,947
+Mesela. Tamam? Ya da yine dediğim için de yine şey geçerli. Geçeyim buna. Burada da onu göstermiş ama bu örneği tamam. Yani baktığımda birken sıfır bulunanlar, sıfırken bir, sıfırken bir bulunanlar. Doğru bulunanlar var. Ne yapacaksınız?
+
+119
+00:19:48,019 --> 00:20:02,300
+Bunları doğru bulduklarını sıfırken gördüğünüz gibi iş yok. Dolayısıyla kaç tane? 1, 2, 3, 4, 5, 6, 7 taneyi doğru bulduk. 7 bölü hepsi.
+
+120
+00:20:02,300 --> 00:20:09,440
+Tamam mı? Buradan bulduk. Bir de bunu göstereyim.
+
+121
+00:20:14,387 --> 00:20:33,107
+Bu da birken bir gerçekten arabayken araba olduğu ne? Tamam doğruların kesişim yeri, bölü, artı sıfırken bir bulunanlar bir background'ı hiç ortaya koymadı.
+
+122
+00:20:33,107 --> 00:20:35,747
+Sıfır, araba dışında kalan var ya.
+
+123
+00:20:37,847 --> 00:20:39,167
+Artık oefisiyenti.
+
+124
+00:20:41,076 --> 00:20:53,076
+Bu kosansi bile sonuncu olabilir ya da son önemli. Bir tane vektörüm var. Tamam mı? X, V, Y, bu da neteksin halinde çok çok.
+
+125
+00:20:53,076 --> 00:21:03,564
+Bu da bir vektör. Değil mi? Arasındaki uzaklığa nasıl?
+
+126
+00:21:17,556 --> 00:21:21,596
+2 kakör arasındaki açılımın kosinüsü, siz de bunun uzaklığı.
+
+127
+00:21:23,116 --> 00:21:25,476
+Olarak da bakın neye eşittir?
+
+128
+00:21:27,596 --> 00:21:28,236
+Bunların
+
+129
+00:21:28,236 --> 00:21:31,356
+çarpımı
+
+130
+00:21:31,356 --> 00:21:32,196
+böyle
+
+131
+00:21:32,196 --> 00:21:34,776
+ne görüyorsunuz? Bunların
+
+132
+00:21:34,776 --> 00:21:37,196
+L2 çizgi değil mi?
+
+133
+00:21:37,736 --> 00:21:38,196
+Bunların
+
+134
+00:21:38,196 --> 00:21:40,596
+nasıl bulursunuz?
+
+135
+00:21:42,536 --> 00:21:44,376
+Bütün elemanların karesini alıp
+
+136
+00:21:45,844 --> 00:21:47,844
+alalım. Tamam mı?
+
+137
+00:21:49,844 --> 00:21:53,844
+Kostabilerite diyoruz. Peki bunun değerleri kaç arası çıkar?
+
+138
+00:21:58,579 --> 00:22:03,380
+Eksi 1 ile 1 arasını çıkart. Eksi nasıl çıkacak? Şurası eksi çıkar mı?
+
+139
+00:22:11,667 --> 00:22:12,347
+Sen çok önden.
+
+140
+00:22:13,487 --> 00:22:15,027
+Şurası ne zaman eksi çıkar?
+
+141
+00:22:20,403 --> 00:22:22,043
+H çıkar mı?
+
+142
+00:22:23,463 --> 00:22:24,503
+B-i çıkar mı?
+
+143
+00:22:26,563 --> 00:22:27,723
+Nasıl çıkacak?
+
+144
+00:22:33,587 --> 00:22:48,028
+Belki elemanlardan negatif bir pozitif varsa ne olur? Eksi çıkabilir. Değil mi? Dolayısıyla kosünüs olur, eksi bir ve gider gelir. Tamam mı?
+
+145
+00:23:04,435 --> 00:23:14,215
+Bu, bu sizi yanılıyor. Çünkü, bir artı, bir ekleyen, sonra, bireri, bireri, artı, bireri, artı, bireri, ne yapıyor?
+
+146
+00:23:14,215 --> 00:23:23,096
+Onu gözden tutuyor. Sonra, eksiklikle, bununla ilgili de nasıl konuşacağız? Böyle bir şey diyecek.
+
+147
+00:23:27,059 --> 00:23:36,379
+Peki. Şunu sorayım. Peki 0 olmasına sahip yani 1 ile daha birbirine benzer yoksa 0 mı? X ve Y birbirine çok benziyor. 0 mı çıkar 1 mi?
+
+148
+00:23:42,451 --> 00:23:43,292
+Yedikçe.
+
+149
+00:23:48,660 --> 00:24:13,380
+Çünkü araların açı, kosinüsü dedik ya, iki, dört, bir, bir aynıysa nedir? Açı zaten sıfır. Kos sıfır nedir? Hı? Biridir. Değil mi? Dolayısıyla birse, ne kadar birse birbirine çok benziyordur demiş. Tamam mı? Burada da sanırım onu söylüyor. Tamam. Eğer açı sıfırsa diyor.
+
+150
+00:24:14,324 --> 00:24:34,364
+Biridir diyor. Tamam. Şey yapmak aslında uzun ne demek? Aslında ne demek demek değil mi vektörü? Bunu birim vektörü haline olarak söyleyebiliriz.
+
+151
+00:24:34,364 --> 00:24:39,804
+Çalışırken bak. Bunu da geçiyorum.
+
+152
+00:24:41,811 --> 00:25:06,651
+Bu önemli. Korelasyon. Korelasyonu niye kullanıyorsunuz? İstatistikte ne olarak gördünüz? İkişasındaki ilişki söylüyor değil mi? Neğer ilişki söylüyor. Bu ne demek? Yani birisi artıyorken diğeri azalıyor. Bu bir şey söyler. Ne demek? Bu demek. Yani diğeri de artıyor mu?
+
+153
+00:25:08,307 --> 00:25:16,307
+Bir de azalıyor mu? Ya da bir bağımsız mı? Aralarında korelasyonu nasıl hesaplamak?
+
+154
+00:25:16,307 --> 00:25:35,307
+Özellikle yukarıda bir x'ını hesaplamak. Değil mi? Sonra hesaplamaların çarpımına bölmeniz lazım ki
+
+155
+00:25:36,403 --> 00:25:53,783
+Olabilir. Tamam ama koreasyon içinde, biz tutup bunları hesaplıyoruz. Hayran emin gördük gösterdim ya, genellikle tool'lar, ya da işte kütüphanelerin içinde, kütüphaneler arasındaki kreasyonunu gösteren şey oluyor.
+
+156
+00:25:54,523 --> 00:25:56,723
+Varyasyonun bir olması ne demek artı bir olması?
+
+157
+00:25:57,299 --> 00:26:00,819
+Aralarında pozitif lineer kuralasyon olduğunu gösterir.
+
+158
+00:26:01,319 --> 00:26:06,019
+Eksi bir olması aralarında negatif lineer kuralasyon olduğunu gösterir.
+
+159
+00:26:06,159 --> 00:26:09,059
+Yani mesela buradan bir şey.
+
+160
+00:26:09,879 --> 00:26:14,419
+Bunlara baktığımız zaman kuralasyon çıplarını görüyoruz.
+
+161
+00:26:14,619 --> 00:26:15,359
+Eksi bir ne demek?
+
+162
+00:26:16,220 --> 00:26:18,259
+Aralarında negatif kuralasyon var.
+
+163
+00:26:18,399 --> 00:26:21,039
+Yani bir tanesi artarken azalıyor.
+
+164
+00:26:21,639 --> 00:26:22,879
+Sıfır beş olmayı ne demek?
+
+165
+00:26:25,460 --> 00:26:33,240
+Aralarında hiç korelasyon yok. Artı bir olmasın, biri artarken de artıyor anlamına gelir.
+
+166
+00:26:36,500 --> 00:26:46,060
+Korelasyonun sıkıntısı ne? Liner şeyleri gösterir, artar olarak. Non-linear şeyleri size göstermez.
+
+167
+00:26:53,556 --> 00:27:09,396
+Önce, sonra artmış değil mi? Peki buradan bunların arasında korelasyon yok dersin.
+
+168
+00:27:21,332 --> 00:27:32,032
+Artarken ne oluyor? Değil mi? Aslında yarısına kadar korelasyon varken daha sonra iklimatif korelasyon var.
+
+169
+00:27:32,032 --> 00:27:47,532
+İklim de bunun şekli çizilmiş. Sanırım bitmiş son da şunu da. Peki tamam, bense de çalışıyorsunuz, staja başladınız. Şimdi datayı analiz edelim.
+
+170
+00:27:48,435 --> 00:27:57,855
+Ne yapacaksınız? Önce baktınız, tipli, işte istatistiksel olarak, outlier varsa onları sildiniz.
+
+171
+00:27:59,475 --> 00:28:06,296
+Aralarındaki attributes'lerin kolon ya da Fitch'in benzerliğe bakacaksınız.
+
+172
+00:28:07,556 --> 00:28:15,255
+Fitch'ler demin de, her bir o benzerliğe bakacaksınız. Farklı bir sınıflar var. Hangisi kullanacağınıza nasıl veracaksınız?
+
+173
+00:28:17,811 --> 00:28:44,031
+Genellikle veriye göre ama en çok kullanılan genellikle öklük uzaklık ve eğer ki datamız pozitifse kosinüz uzaktır. Tamam. Mesela görüntü işlemi, text mining gibi bir şey yapıyorsanız ya kart uzaktır. Onun dışında bu istatisteki kareler falan vardır ya, hatırlıyor musunuz? Onlar da sıkça ne olur? Uzaklık olarak kullanılır.
+
+174
+00:28:44,415 --> 00:28:57,415
+Bir de artı sözü söyleyeyim unutmadan. Bazı benzerlikler. Tamam mı? Yani ne gibi? Mesela şimdi distribütü alırken, tamam mı?
+
+175
+00:28:58,415 --> 00:29:07,415
+Şöyle yapabilirsiniz. İşte asimetrikse, sıfırsa şöyle şöyle sıfırsa, bir say.
+
+176
+00:29:16,084 --> 00:29:25,384
+Entropi birazcık farklı. Entropi de data'nın size ne kadar bilgi veriyor, onu gösteriyor.
+
+177
+00:29:27,243 --> 00:29:30,183
+Tamam, karar ağaçları entropi üzerine kuracağız.
+
+178
+00:29:42,579 --> 00:29:55,299
+Şunu söyle, iki tane vektörüm var ya, var içinde. İçinde bilgi içerdiğine göre birbirine, aslında o da ortak kelimeler varsa onu söyle.
+
+179
+00:29:56,220 --> 00:30:01,299
+Aslında uygulamaya göre ne oluyor? Değişmiş oluyor.
+
+180
+00:30:02,779 --> 00:30:03,299
+Tamam mı?
+
+181
+00:30:04,200 --> 00:30:06,259
+Son sorunu sorup dersi bitiriyorum.
+
+182
+00:30:07,460 --> 00:30:08,319
+Birleştirmiş geçtim.
+
+183
+00:30:08,319 --> 00:30:09,720
+Bu da öfke.
+
+184
+00:30:10,324 --> 00:30:28,564
+Nasıl yapacağım diyor. Tamamen uygulamaya göre karar vereceğim. Kosinus uzaklığı metrik midir, değil midir? Metrik olması için ne olması lazım? Simetri sıfırdan büyük olması lazım falan dedik. Kosinus uzaklığı metrik midir?
+
+185
+00:30:32,852 --> 00:30:37,332
+Ama şey kullanırsam, benimki tekst atısında kullanıyorum, hiç nefes vermiyor bana.
+
+186
+00:30:39,412 --> 00:30:40,092
+Metriktir.
+
+187
+00:30:45,711 --> 00:30:47,031
+Onu sağlıyor mu?
+
+188
+00:30:50,804 --> 00:30:54,403
+Bu neye kadar düşünün, tamam? Uzaklığı metrik midir, değil.
+
+189
+00:30:58,184 --> 00:30:59,804
+Online'lar bu da mısınız?
+
+190
+00:31:01,024 --> 00:31:02,903
+Aa, erken getirmişim, bu sefer de bideceğim.
+
+191
+00:31:05,044 --> 00:31:12,484
+Sıvı ıslıkları falan şey koyuyorum, klasruma, klasruma, Google klasruma üye olmayan hala çok arkadaş var.
+
+192
+00:31:13,484 --> 00:31:15,364
+Klasruma üye olun, okey?
+
+193
+00:31:18,675 --> 00:31:19,675
+Günaydın.
+
+194
+00:31:22,355 --> 00:31:23,875
+Haydi görüşürüz.
+
+195
+00:31:25,496 --> 00:31:27,316
+Günaydın, bay bay. Kapatıyorum.
