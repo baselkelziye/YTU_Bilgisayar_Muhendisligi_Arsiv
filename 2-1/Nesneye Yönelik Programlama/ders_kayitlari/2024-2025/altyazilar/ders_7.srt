@@ -1,0 +1,2023 @@
+1
+01:01:12,628 --> 01:01:14,048
+Günaydın arkadaşlar.
+
+2
+01:01:14,668 --> 01:01:17,088
+[öğrenci] seni host yapmış galiba sistem.
+
+3
+01:01:17,228 --> 01:01:22,128
+Ben bir gir çık yapınca benim hostluğumu bana geri verir misin?
+
+4
+01:01:22,128 --> 01:01:25,528
+Şuradaki more işaretine tıklayıp oradan make host var.
+
+5
+01:01:25,888 --> 01:01:26,728
+Onu seçersen.
+
+6
+01:01:34,452 --> 01:01:35,752
+Teşekkür ediyorum.
+
+7
+01:09:13,268 --> 01:09:18,587
+Evet arkadaşlar, online'daki arkadaşlarım ve sınıftakiler hoş geldiniz.
+
+8
+01:09:20,408 --> 01:09:25,587
+Bugün uygulama dersimizde konumuz kalıtım olacak.
+
+9
+01:09:25,768 --> 01:09:33,228
+Online'daki arkadaşlar seslelik problem var mı, nasıl geliyor, güzel mi, ekranı görüyor musunuz? Bana bir geri bildirim yaparsanız.
+
+10
+01:09:35,288 --> 01:09:36,127
+Yok hocam.
+
+11
+01:09:41,076 --> 01:09:50,615
+Tamam, ekran paylaşımını görüyor musunuz? Görüyorsunuz.
+
+12
+01:09:51,916 --> 01:09:53,235
+Eclipse açık şu anda.
+
+13
+01:09:54,136 --> 01:09:59,155
+Ben videomu kapatacağım. Siz ekranı daha iyi böyle istinetsiz görün. Tamamdır.
+
+14
+01:10:02,155 --> 01:10:02,996
+Şimdi.
+
+15
+01:10:08,051 --> 01:10:08,991
+Bugün ne de?
+
+16
+01:10:13,460 --> 01:10:17,920
+olacak. Yerleşelim sınıftaki arkadaşlarımızla.
+
+17
+01:10:20,640 --> 01:10:27,980
+Böyle bir uygulamada temel olarak aslında kalıtım nedir?
+
+18
+01:10:32,083 --> 01:10:38,023
+Biz kalıtımı nasıl UML'da gösterip nasıl kodluyoruz bunu göreceğiz.
+
+19
+01:10:39,283 --> 01:10:44,923
+Şimdi siz sınıfları, bunlar arasındaki ilişkileri gördünüz. Bir sınıf, diğer sınıfın.
+
+20
+01:10:47,028 --> 01:11:10,507
+Başlangıçta onu da söyleyeyim. Yoklama evet alınıyor. Online katılımınızda mutlaka ad soyadıyla girmiş olun arkadaşlar. Başkasının ad soyadıyla girmeyin. Çünkü siz hangi isimle girdiyseniz o şekilde yoklama listesine düşeceksiniz. Hatta süreleriniz falan da düşüyor. Onu da belirtmiş olayım ne kadar bağlantıda kaldığımız. Yoklama direkt alınacak yani otomatik sistem alıyor.
+
+21
+01:11:12,148 --> 01:11:16,328
+Buradaki arkadaşlar için de ders bitiminde az kişiyiz zaten.
+
+22
+01:11:16,488 --> 01:11:18,307
+Yoklama listesini burada gezdireceğim.
+
+23
+01:11:18,608 --> 01:11:21,208
+Toplam sayımsa ona göre imza atarsınız.
+
+24
+01:11:22,948 --> 01:11:25,028
+Tamamdır. Şimdi sorumuza dönelim.
+
+25
+01:11:26,028 --> 01:11:29,887
+Bizim kalıtımda yöner gösterimimiz.
+
+26
+01:11:31,060 --> 01:11:44,280
+Hani bire bir ilişkiler, bire çok ilişkiler, siz bunları gördünüz. Normalde okun yönü bizim için önemliydi, okun çeşidi bizim için önemliydi, içinin işte elmas şeklinde olması, dolu olması, boş olması. Farklı anlamlar gösteriyordu.
+
+27
+01:11:45,040 --> 01:11:56,860
+Kalıtım ilişkisinde de aynen öyle farklı bir ok var. İçi boş bir üçgen bize şunu gösteriyor. Bunlar alt sınıflardır, subclass dediğimiz.
+
+28
+01:11:57,587 --> 01:11:59,927
+Nereden milas alırlar?
+
+29
+01:12:00,507 --> 01:12:03,207
+Üst classları, süper classlarından alırlar.
+
+30
+01:12:07,731 --> 01:12:12,551
+Superclass'larından alırlar dedik. Peki neyi alıyorlar Superclass'tan?
+
+31
+01:12:12,971 --> 01:12:18,591
+Şimdi bu sınıf şöyle bir mantık var. Bunun bütün üye alanlarını kullanır.
+
+32
+01:12:19,188 --> 01:12:33,268
+Erişir, bütün metotlarını da kullanır. Yani aynen klasik bir miras ilişkisini düşünün. Çocuk babasının her şeyine ona miras kalır. Bir de üstüne kendi malını mülkünü koyar gibi basitçe böyle tamamlayacak olursak.
+
+33
+01:12:33,908 --> 01:12:47,188
+Sınıflar üsttekinin her şeyini alır kullanır. Bir de kendisi ne yapar? Ekstra kendi metotları olabilir, kendi üye alanları olabilir. Ama üst sınıfın her şeyini kullanmakta bir kalıtı ilişkisi kullanır.
+
+34
+01:12:47,188 --> 01:12:52,648
+Kurulmuşsa altını üst sınıftan rüya alanlarına erişir, metotlarına erişir diyoruz.
+
+35
+01:12:53,488 --> 01:13:06,288
+Şimdi YML'de yine belki bugün ilk defa göreceğiniz farklı bir access modifier dediğimiz bir erişim belirteci var ki şu anda ekranda bilmiyorum çok hoş görünmüyor gibi.
+
+36
+01:13:06,836 --> 01:13:16,655
+Şurada hesap mal ve bakiyelerin başında kare işareti dediğimiz bir işaret var. Bu bizim erişim belirticimizin protected olduğunu gösteriyor.
+
+37
+01:13:17,176 --> 01:13:23,036
+Biz bu zamana kadar temel iki tane belirtic görmüştük. Neydi bunlar? Eksi ve artı olarak gösterdiğimiz.
+
+38
+01:13:23,036 --> 01:13:31,856
+Mesela eksi dediğimde onun belirticine anlama geliyordu. Private. Artı olanlar ne anlama geliyordu? Public.
+
+39
+01:13:32,372 --> 01:13:37,192
+Şimdi bunları gördüğümde de bu kareyi diyeceğim ki bu protected.
+
+40
+01:13:37,351 --> 01:13:38,612
+Protected'ın olayı ne?
+
+41
+01:13:39,492 --> 01:13:44,092
+Bu biraz daha kalıtımda öne çıkan bir işaret belirteci.
+
+42
+01:13:44,092 --> 01:13:52,391
+Şimdi ben bunu private yaparsam erişmek sıkıntı olur ama protected yaparsam çünkü private her zaman kendi sınıfında erişilir.
+
+43
+01:13:52,811 --> 01:13:55,092
+Protected yaparsam alttaki sınıf...
+
+44
+01:13:55,923 --> 01:14:19,764
+Direkt olarak, hani bir getir, seter kullanmasına gerek kalmadan ne yapabilir? Direkt bakiyeye erişir, bakiye belirteşin. Normalde hani neydi klasik mantıkta? Mesela alt sınıflarda bu var. Bunlar hepsi nasıl? Private, private. Bunun metoduna erişmek için dışarıdan biri ne yapıyor? Onun public getirini, seterini kullanıyordu. Bunun o erişim, o dünya alanına erişmek için.
+
+45
+01:14:20,851 --> 01:14:27,751
+Burada da biz alt sınıftan üst sınıfın o üye alanına erişmek için işte get bakiye, get hesap no'yu yapmamıza gerek kalmasın.
+
+46
+01:14:27,832 --> 01:14:32,532
+Çünkü bunlar arasında zaten bir ilişki kuruyoruz dediğimiz için protected'ı kullanıyoruz.
+
+47
+01:14:32,692 --> 01:14:39,011
+Ve ben direkt bakiye eşittir şudur, hesap no'yu eşittir budur deyip kendi içimde bu sınıfta bunu değiştirip düzenleyebiliyorum.
+
+48
+01:14:39,811 --> 01:14:40,971
+Protected'ın olayı bu.
+
+49
+01:14:41,471 --> 01:14:45,351
+Aynı şekilde protected'ı bir de paketlerde de kullanabiliyorsunuz.
+
+50
+01:14:45,351 --> 01:14:47,652
+Bir paket içerisindeki sınıflarda da.
+
+51
+01:14:48,180 --> 01:15:00,300
+Aralarında bir kalıtım ilişkisi olsun veya olmasın. O paketin sınıfları birbirine eğer protected bir belirteç vermişse direkt olarak getire setire gerek kalmadan alıp kullanabiliyor.
+
+52
+01:15:01,140 --> 01:15:10,039
+Bu bilgiyi verdikten sonra gelelim bizim şu bugünkü konumuz ne, sorumuz ne bunu bir anlayalım ondan sonra da çözmeye başlayalım.
+
+53
+01:15:15,155 --> 01:15:39,916
+Banka hesap modellenmiş bize banka hesabı. Diyor ki, bir hesap diye sınıfın var senin. Bunun da işte üye alanları ve metotları var. Bir de bu sınıf daha özelleşmiş. Yani kalıtma aslında biz ne zaman kullanıyoruz? Daha özel A sınıflar oluşturmak istediğimde, bir şeyi daha böyle çoğullayacağım zaman.
+
+54
+01:15:40,404 --> 01:15:58,244
+İşte bir üst sınıf var ama onun daha spesifik sınıfları var. Onun daha genel bir sınıf hakkında daha özel sınıflar yapmam gerekiyor. Daha özel metotlar koymam gerekiyor. Yukarıda bir metot veriyorum ama aşağıda o metodun içini belki daha özel, o sınıfa göre değişikliği doldurmam gerekiyor.
+
+55
+01:16:01,268 --> 01:16:17,627
+Sımıt var ama bireysel hesap var, ticari hesap var, bir bankada çeşitli hesaplar var. Ben buna göre işte para yatırılması, para çekmesi farklı olacak. Bu sebepten burada bir kalıtım ilişkisi kuruyorum.
+
+56
+01:16:20,020 --> 01:16:29,780
+Şimdi gelelim bunun kodlamasına soluyor. Önce hesap sınıfını kodlayalım. Ona bir yakınlaştıralım. Bilgisayarı burada olanlar da kodlamaya başlayabilir.
+
+57
+01:16:30,860 --> 01:16:39,760
+Ne yapıyorduk? Şu bölgede üye alanlarımızı artık private veya public değil bu işareti gördüm. Ne yapacağım? Protect yapacağım.
+
+58
+01:16:47,572 --> 01:16:52,271
+Paket oluşturup onun içerisinde ben yazacağım kodlarımı.
+
+59
+01:16:56,243 --> 01:17:00,363
+Burada bir class oluşturdum.
+
+60
+01:17:01,183 --> 01:17:03,123
+Hesap sınıfını yazacağım.
+
+61
+01:17:05,384 --> 01:17:06,943
+Fabric class hesap geldi.
+
+62
+01:17:07,543 --> 01:17:12,384
+Şimdi bunu dedim ki, üye değişkenleri ne olacaktı?
+
+63
+01:17:12,384 --> 01:17:13,523
+Protected'da.
+
+64
+01:17:13,983 --> 01:17:19,203
+Hızlıca bakıyorum, bir integer hesaplama bir de double buckiest varmış.
+
+65
+01:17:20,051 --> 01:17:42,831
+Demek ki insanlar bir hesap oluştururken bunun bir hesap no bilgisi var. Bir de bakiye bilgisi var. Bu da double'da. Bu bilgileri yazdım. Şimdi geliyorum. Bunun diğer metotları nelermiş bunlara bakmaya. Biz şunu biliyorduk. Bu kısımda metotlar olurdu.
+
+66
+01:17:43,539 --> 01:17:48,619
+Metodlarda sınıf adıyla aynı olan metoda biz ne diyorduk?
+
+67
+01:17:49,979 --> 01:17:52,539
+Sınıf adıyla birebir, constructor.
+
+68
+01:17:53,319 --> 01:17:54,579
+Yani yapıcı metot.
+
+69
+01:17:55,380 --> 01:17:58,420
+Burada dikkatinizi çektiğinizde bunlardan iki tane var.
+
+70
+01:18:00,199 --> 01:18:02,479
+Biz buna ne diyor olacağız?
+
+71
+01:18:02,859 --> 01:18:03,720
+Overloading.
+
+72
+01:18:04,260 --> 01:18:06,279
+Bir metot veya bir constructor.
+
+73
+01:18:07,279 --> 01:18:09,800
+Farklı sayıda parametreler için.
+
+74
+01:18:10,804 --> 01:18:38,604
+İçerisi farklı şekilde doldurulabilir. Bu metot olarak da düşünebilirsiniz. Constructor'da eğer bu çiftliği veya işte 3 kere 4 kere de yapabilirsiniz. İçerisine alacağı parametre sayısına göre. Bunu tekrarlıyorsak, Constructor'da bunu yaptıysak Constructor Overloading, metotlarda yaptıysak Method Overloading. Aynı isimde yazıyorsunuz metodu ama parametrelerinin ya sayısı farklı olur. Mesela burada sayılar farklı. Birinde iki parametre var.
+
+75
+01:18:38,804 --> 01:19:02,804
+tek parametre var. Bu ikisini farklı araştırır. Ama şu da olabilirdi. İkisinde de ikişer tane parametre olur ama mesela üstteki integer double, alttaki de double double olabilir. Bu da doğrudur. Önemli olan birebir spesifik aynı şekil olmasın parametreleri. Yani her ikisi de şunu yazamazsın. Hesap int double, hesap int double bunu yaptırmaz. Fakat parametrenin...
+
+76
+01:19:03,252 --> 01:19:09,532
+sayısı, sırası ve tipleri farklı olursa bunu bize kabul eder, overloading yapabiliriz.
+
+77
+01:19:10,052 --> 01:19:18,952
+Bu da metodları aslında aynı isimli bir metod kullanıp onu farklı parametre için özelleştirmeyi bize sağlıyor.
+
+78
+01:19:19,332 --> 01:19:22,372
+Bir polymorphism yaklaşımı oluyor overloading.
+
+79
+01:19:22,868 --> 01:19:33,847
+Şimdi ben burada constructor'ımı ne diyor bana? Bir hesap numara bakiyeyle. Yani aslında mantığı şudur. Ben yeni bir hesap oluştururken hem hesap numarasını mutlaka vereceğim. Gördüğünüz gibi her ikisinde de.
+
+80
+01:19:35,068 --> 01:19:44,028
+Pardon birinde bakiyeyle mi oluşturuyormuş? Birinde şu yanlış olmuş. Şunu görmeyin.
+
+81
+01:19:46,131 --> 01:20:04,911
+Tamam, PNG'yi aldığım için düzeltemiyorum. Şurayı ben düzeltacağım soruyu. Şurasının içerisi integer olacak. Yani bir insan ya hesabını direkt hesap numarası ile oluşturacağız bir hesap nesnesini ya da hem hesap numarasını vereceğiz hem de yanına bir de double vacayesini yazacağız. İlk hesap oluştururken bu anlama geliyor.
+
+82
+01:20:15,252 --> 01:20:17,072
+Burada evet şöyle bir şey oluyor.
+
+83
+01:20:30,131 --> 01:20:38,871
+Kullanacaksak eğer, şimdi normalde biz bir sınıfı oluşturduğumuzda illa o sınıfa constructor yazmamız gerekiyor mu? Gerekmiyor.
+
+84
+01:20:38,871 --> 01:20:44,871
+Siz constructor oluşturmadan da bir sınıf oluşturursunuz, metodunu yazarsınız, nesne oluşturur, çalıştırırız.
+
+85
+01:20:46,531 --> 01:20:57,511
+Ama şimdi ben böyle parametreleri olan, işte farklı parametrelerle bir constructor yazdıktan sonra artık bir sınıfta hani
+
+86
+01:20:58,068 --> 01:21:12,908
+O nesneyi böyle direkt new hesap dedim ve nesneyi oluşturmak isteyeyim. Sonra üye alanlarını ona atarım diyemiyorum. En başında o zaman şunu yapacağım. Geleceğim boş bir constructorını da yazmak zorundayım.
+
+87
+01:21:13,887 --> 01:21:20,168
+Boş constructor ne? Hani bir parametre almayacak. İçerisini daha sonra ben kendi sınıf içinde dolduruyor olacağım.
+
+88
+01:21:22,739 --> 01:21:33,779
+Oradan yapmadığımız için havada kalmış olabilir ama şunu bilelim, constructor'ı bu şekilde yazdıysak bu şekilde artık atıyorum bir main class'ta bu parametrelerle kodlarız.
+
+89
+01:21:34,639 --> 01:21:44,199
+Direkt işte new hesap bir nesne oluşturmak istediğimde içi boş bir constructor da yazmak zorundayım parametresi olmayacak gibi.
+
+90
+01:21:45,420 --> 01:21:46,319
+Şimdi ben geleyim.
+
+91
+01:21:47,220 --> 01:22:04,980
+İki tane constructor dedim. Bunlar da public'te. Bunları kodlamaya başlayayım. Bir tanesi dediğim gibi UML'de o integer olacak. Onu yanlışlıkla double yazmışız. Bir tanesi direkt hesap numarası ile açtığımız versiyonu.
+
+92
+01:22:13,492 --> 01:22:37,952
+Benim sınıf değişkenim. Bakiyesi de, aslında lisede gerek yok. Direkt bakiye eşittir 0 diyeceğim. Şuradaki lisi niye kullandığımızı biliyor muyuz? Onu bir özetleyelim tekrar hatırlayalım mı? Burada benim sınıf değişkenlerim ne? Hesap, nova ve bakiye. Değil mi? Bu sınıfın değişkenleri bunlar.
+
+93
+01:22:38,484 --> 01:23:06,104
+Şimdi burada ben bir constructor olur, bir metot olur. Bununla dışarıdan bir parametre gönderiyorum. Dışarıdan bir veri gönderiyorum. O yüzden diyorum ki buradaki this yani benim artık bu sınıf için çünkü metotlar çalıştıracağım. Orada kullanacağım değişkenler üzerinden oradaki değişkenleri ben bu sınıfın metotlarında kullanacağım için artık buranın hesap numarası yani this hesap no senin dışarıdan gönderdiği şu hesap no'ya ben bunu
+
+94
+01:23:06,399 --> 01:23:16,839
+Eşliyim. Mesela bakiye de dislememe gerek yoktu. Çünkü zaten bakiye değişikliği tek bir tane. Dışarıdan bir bakiye almadığım için burada onu sıfıra direkt eşitleyebilirim.
+
+95
+01:23:17,279 --> 01:23:26,599
+Diz göstermek belki okunabilirliği güzelleştirir. Buranın, bu sınıfın bakiye sınıf değişken ne sen bu da yer atıyorsun gibi anlaşılabilir.
+
+96
+01:23:26,599 --> 01:23:32,079
+Şimdi bu bir tane benim konstraktörümde bazen söyleyemiyor.
+
+97
+01:23:32,979 --> 01:23:44,039
+Bir diğeri de her iki parametresi de olan yani hem hesap noluyordu hem de bir ne alıyordu? Bakiye bilgisi alıyordu.
+
+98
+01:23:46,039 --> 01:23:48,359
+Bunu da nasıl yazıyordum?
+
+99
+01:23:50,259 --> 01:23:53,419
+Hesap nol ve bakiyeleri aslında aynı şekilde.
+
+100
+01:23:57,844 --> 01:24:11,024
+Buranın artık hesapın olsun. Artık bakiye daldığım için dışarıdan. Buranın bakiyesi senin bana dışarıdan gönderdiğin o bakiye olarak kayıtla diyorum.
+
+101
+01:24:13,024 --> 01:24:18,324
+Şimdi constructorlarım da bu şekilde yazıldı. Tamam. Geliyorum metotlara.
+
+102
+01:24:20,435 --> 01:24:24,576
+Para yatırma, para çekme ve bilgi gösterme metotları var.
+
+103
+01:24:24,576 --> 01:24:36,975
+Şimdi, para yatırmada ne var? Bir tutar verecek ona, double D diye. Şu aşağıda açıklamaları var. Siz soruyu daha sonra incelemek isterseniz okursunuz.
+
+104
+01:24:37,615 --> 01:24:42,095
+Biz size laplarda da soruyu verdiğimizde böyle kısa kısa açıklamalarını yapıyoruz metotlar.
+
+105
+01:24:42,484 --> 01:24:49,404
+Şimdi para yatırı da bir double değişkeni bu nedir? Yatırılacak tutardır. Double türünde demek ki bir tutar yatıracağım.
+
+106
+01:24:50,584 --> 01:25:02,404
+Bunu yatırırken ne yapacak? Benim bir bakiyem var. Dışarıdan bir tutar geliyor, mantığı kuralım. Ne yapacak? Bu tutarı o bakiyeye ekleyecek ve yeni bakiyeniz bu olacak diye ekrana bir de bilgi yazdıracak.
+
+107
+01:25:02,404 --> 01:25:04,504
+Metodun yapmasını istediğimiz görevi bu.
+
+108
+01:25:05,108 --> 01:25:15,688
+Bağır olan tutarı alıp, yani senin yatırdığın tutarı alıp bakiyeyle toplayıp toplam şu kadar yeni bakiyeniz bu olmuştur diye ekrana bir sistem altına bilgi vermesini istiyoruz.
+
+109
+01:25:16,148 --> 01:25:18,548
+Şimdi bunu kodlayalım, para yatırmayı kodlayalım.
+
+110
+01:25:21,948 --> 01:25:24,387
+Bu da yine para yatırmada.
+
+111
+01:25:28,020 --> 01:25:34,720
+Dışarıdan da ne alıyordu? Tutar değerinde. Yatırılacak tutar. Bunu alıyor.
+
+112
+01:25:36,340 --> 01:25:48,000
+Şimdi dönüş tipinin sadece bir bilgi mesajı istiyorum. Yani sistem altlık bir şey istiyorum. Return değişkeninde bir, işte integer'da bir şey olmayacak. O yüzden dönüşüm void.
+
+113
+01:25:50,100 --> 01:26:02,960
+Şimdi para yatırmayı kodluyorum. Şöyle bir kontrol de yapmak istiyorum. Kullanıcı kan oraya işte eksi 500 demesin. Eksi bir rakam girmesin. Doğal olarak tutar sıfırdan büyük olsun. Bir de bu koşulu koyarak, bu kontrolü yaparak kodlayayım.
+
+114
+01:26:02,960 --> 01:26:15,960
+Diyorum ki tutar, if, eğer tutarım sıfırdan büyükse yapacağın işlemler sıfırda olmasın, sıfır diye bir şey yatırmasın.
+
+115
+01:26:17,268 --> 01:26:19,148
+Yapacağı işlemler şu olsun.
+
+116
+01:26:20,148 --> 01:26:21,887
+Bakiye artık ne olacak?
+
+117
+01:26:22,528 --> 01:26:26,688
+Var olan bakiye ve tutar olacak.
+
+118
+01:26:26,688 --> 01:26:30,648
+Ve bir sistem altla da.
+
+119
+01:26:35,444 --> 01:26:42,224
+Neyi bilirsin bana? Ne kadar para yatırıldı? Bu kadar tutar.
+
+120
+01:26:42,224 --> 01:26:44,224
+Yatırıldı.
+
+121
+01:26:49,124 --> 01:26:52,544
+Ve ne dedim? Yeni bakiyeyi de bana söylesin.
+
+122
+01:26:54,044 --> 01:26:54,944
+Yeni bakiye.
+
+123
+01:26:56,624 --> 01:27:01,284
+O da artık bakiye olarak geldi.
+
+124
+01:27:02,547 --> 01:27:23,827
+Öyleyse bunu yapsın. Eğer sıfırdan küçük bir değer yatırmış, yani yanlış bir ifadeyle oraya gelmişse, o zaman da desin ki, yine bir ekrana bilgi mesajı göndersin ve orada da şunu desin, geçersiz tutarı yatırıldı.
+
+125
+01:27:29,043 --> 01:27:33,724
+O da tutarı ne kadar yatırmaya çalıştığını ekrana yaz.
+
+126
+01:27:37,684 --> 01:27:43,104
+Para yatırımı bu şekilde. Online'da sorum mu oldu sanki bir ses şey yaptım ama.
+
+127
+01:27:50,739 --> 01:27:52,779
+Şimdi para yatırmayı da gösterdim.
+
+128
+01:27:53,719 --> 01:27:57,760
+Diyorum ki alt sınıflarda da şöyle bakalım.
+
+129
+01:27:58,979 --> 01:28:03,059
+Class'ın artık hani o inherit olması, kalıtımla alınması.
+
+130
+01:28:03,639 --> 01:28:05,260
+Olaylara bir giriş yapalım.
+
+131
+01:28:05,340 --> 01:28:07,479
+Burada hemen para çek kısmını göstermeden.
+
+132
+01:28:08,180 --> 01:28:12,920
+Gelelim buradaki bireysel hesap ve ticari hesap kısımlarında bir kodlayalım.
+
+133
+01:28:12,920 --> 01:28:16,119
+Bir kalıtım ilişkisinde bu sınıfları nasıl kodluyoruz bunu bir görelim.
+
+134
+01:28:16,564 --> 01:28:19,724
+Şimdi iki tane sınıfım var. Hızlıca geldim.
+
+135
+01:28:28,884 --> 01:28:30,583
+Bir tanesi
+
+136
+01:28:30,583 --> 01:28:34,484
+bireysel hesap
+
+137
+01:28:34,484 --> 01:28:37,884
+bir diğeri
+
+138
+01:28:43,283 --> 01:28:50,323
+Ticari hesap. Bunları şimdi, class, ilişkisini kurarken ne yapıyorum?
+
+139
+01:28:50,743 --> 01:28:58,283
+Sınıfdan o yalanları alabilmeleri için şunu ekliyorum. Sınıf adını yazdıktan sonra, extends.
+
+140
+01:29:00,307 --> 01:29:20,927
+Ondan alır. Hatta bunu belki üst sınıfı şöyle bir mantıkla extend keywordunu kullanıyorlar. Artık üst sınıfı genişletiyorsun. Sen alt sınıfta hem üst sınıfı kullanacaksın hem de kendin ona bir şeyler bekliyor oluyorsun. Extend ne yapar? Nereden alır? Hesaptan diyoruz. Bu şekilde ne yaptık? Burduk.
+
+141
+01:29:20,927 --> 01:29:23,007
+Şimdi.
+
+142
+01:29:24,307 --> 01:29:28,627
+Bireysel hesabında kendi yine constructorları vardı.
+
+143
+01:29:30,188 --> 01:29:31,028
+Geldik.
+
+144
+01:29:32,347 --> 01:29:35,188
+Onun da bakın, şurada buna dikkat etmenizi istiyorum.
+
+145
+01:29:36,407 --> 01:29:41,768
+Şimdi bana soruda verilen bilgilerde bir bireysel hesap oluşturulurken hangi alanları alıyormuş?
+
+146
+01:29:43,547 --> 01:29:47,987
+Diyor ki, her iki hesap türde oluştururken hesap no bilgisinin olması gereklidir.
+
+147
+01:29:48,887 --> 01:29:50,987
+Yani bir hesapta bu bilgiyi istiyoruz.
+
+148
+01:29:51,764 --> 01:29:58,904
+Hesap numara bilgisine ek olarak bireysel hesaplar için şifre ve günlük çekim limiti de olmalı.
+
+149
+01:29:59,484 --> 01:30:06,783
+3 tane şey saydı bana. Hesap numar bilgisi istiyor. Şifre istiyor ve günlük çekim limiti istiyor.
+
+150
+01:30:08,684 --> 01:30:09,423
+Geldim buraya.
+
+151
+01:30:12,364 --> 01:30:14,203
+Hatta önce Yemen'de de bakalım.
+
+152
+01:30:16,212 --> 01:30:41,472
+Hesap numarası, şifre ve günlük çekim limiti. Şimdi UMLN'e baktığımız zaman bir esel hesabım. Neyi gösteriyor bize? Aslında sadece iki tane alan varmış gibi duruyor. Yani günlük çekim limiti ve şifre. Bunun üye alanları bakın, eklendi üsttekinden ekstra olarak. Burada ben bu sınıf içerisinde hesap mı o diye bir üye alan görmüyorum ama görmeme de gerek yok. Çünkü zaten yukarıda kullanılmıştı.
+
+153
+01:30:41,908 --> 01:30:44,688
+O yüzden direkt onu oradan alacağım.
+
+154
+01:30:45,171 --> 01:30:50,931
+Ve bu sebepten constructor'ımı da UML'de gösterirken bu kafanızı karıştırmasın.
+
+155
+01:30:51,051 --> 01:30:53,651
+Siz de üstteki üye alanı buraya yazmayabilirler.
+
+156
+01:30:54,151 --> 01:30:57,971
+Ama siz bu demek değildir ki constructor sadece bu iki değişkenle kuruyorsunuz.
+
+157
+01:30:58,431 --> 01:31:03,851
+Mutlaka o bahsettiği şekilde, soruda istediği şekilde üst sınıftan aldığım üye alanı da buraya ekleyeceksin.
+
+158
+01:31:03,991 --> 01:31:06,051
+Yani benim constructor'ımda aslında şu parametre var.
+
+159
+01:31:06,391 --> 01:31:10,791
+Bunların bir tanesini üst sınıftan aldığım için buraya yazmamış olabilirim.
+
+160
+01:31:11,220 --> 01:31:14,900
+Bu bir UMLN'de sizin çıkaracağınız bilgi olarak gizlenmiş olabilir.
+
+161
+01:31:15,060 --> 01:31:19,140
+Bu şekilde açık açık yazılabilir ama bu şekilde de gelebilir.
+
+162
+01:31:28,020 --> 01:31:35,180
+Aynen. Şifre şimdi yukarıda bak, string. Benim içerisinde burada bana gösterdiği şifre ve günlük çekim limiti.
+
+163
+01:31:35,520 --> 01:31:39,320
+Ben diyorum ki bir de hesap no var. Integer dediğin gibi bir integerim olması gerekiyor.
+
+164
+01:31:39,420 --> 01:31:43,600
+İşte diyorum onu ben buraya yazmadım. Nereden aldım onu? Buradan aldım.
+
+165
+01:31:44,020 --> 01:31:51,140
+O yüzden burada da göstermek gibi bir zorunluluğu yok Yemen'de. Çünkü onu senin yukarıdan aldığını bilmen gerekiyor.
+
+166
+01:31:52,051 --> 01:31:53,711
+Orada bir kalıtım kurulduğu için.
+
+167
+01:31:54,171 --> 01:31:59,992
+Buradaki string şu şifrenin stringi, double dediği de çekim limitinin double'ı.
+
+168
+01:31:59,992 --> 01:32:03,451
+Her üye alanında bakın illa construct'ı yazmamıza gerek yok.
+
+169
+01:32:03,751 --> 01:32:05,811
+Çekilen miktar burada ayrı bir şekilde kalıyor.
+
+170
+01:32:06,011 --> 01:32:08,652
+O başka bir metodun içerisinde demek ki kullanılacak gibi.
+
+171
+01:32:14,515 --> 01:32:19,675
+Aynen öyle. Constructor'ı kodlarken o üye alanı süperden aldığımızı göstereceğiz.
+
+172
+01:32:19,876 --> 01:32:24,615
+Ama burada ne diyorum? Sadece UML'de bu şekilde yazabilir. UML de öyledir.
+
+173
+01:32:25,135 --> 01:32:27,255
+Sınavda da çok karıştırılan bir konu oluyor.
+
+174
+01:32:27,415 --> 01:32:32,095
+Burada sadece iki tane alan görünce yukarıdan alınan sanki hesap dışıymış gibi değil.
+
+175
+01:32:32,895 --> 01:32:36,815
+Onu alıyoruz. Onu birazdan nasıl aldığımızı da göreceğiz zaten bu Constructor içinde.
+
+176
+01:32:37,335 --> 01:32:41,876
+Süper keyword ile yukarıdan o değişiklerini alıp kullanıyor olacağız.
+
+177
+01:32:42,963 --> 01:32:52,564
+Şimdi bireysel hesabımız o zaman biz kodlayalım. 3 tane üye alanı var. Şifre yeni geldi bunlar. Şifre günlük çekim. Bugün çekilen miktar. Bunları bir kodlayalım.
+
+178
+01:32:56,115 --> 01:32:59,675
+Bunlar artık private string to ship around.
+
+179
+01:33:05,524 --> 01:33:11,304
+Private, diğer neydi? Double'du, günlük çekim limiti.
+
+180
+01:33:15,828 --> 01:33:22,168
+Bir de diğer bir değişkenim, bugün çekilen miktar diye o kişinin günlük çektiğini tutacağız.
+
+181
+01:33:22,388 --> 01:33:25,128
+İşte bir metotta belki kullanacağız.
+
+182
+01:33:26,508 --> 01:33:33,168
+Bugün çekilen miktar diye başka bir değişkenim daha var.
+
+183
+01:33:33,168 --> 01:33:38,888
+Şimdi ben constructorımı kuruyorum.
+
+184
+01:33:42,387 --> 01:33:43,967
+Nelerle kuracaktım?
+
+185
+01:33:46,307 --> 01:33:49,068
+Soru da bana vermişti, bunu kullanacağım.
+
+186
+01:33:49,587 --> 01:33:55,108
+Bir hesap numarası var, yani bir integer hesap numarası var.
+
+187
+01:33:55,768 --> 01:33:57,587
+Bir string ne var?
+
+188
+01:33:58,887 --> 01:33:59,807
+Şifre var.
+
+189
+01:34:00,407 --> 01:34:01,868
+Bir de double ne var?
+
+190
+01:34:03,188 --> 01:34:05,688
+Günlük çekim limiti, bunu direkt kopyalayayım.
+
+191
+01:34:11,636 --> 01:34:30,416
+Ne yapıyor olacağım? Constructor'ımı kodluyor olacağım. Şimdi bu üç tane parametreyi aldım. Hesapına baktığım zaman nerede? Üst sınıfta. Onu oradan şu şekilde süper keyword ile çekeceğim.
+
+192
+01:34:31,028 --> 01:34:40,228
+Süper hesap no dediğim zaman o bilecek ki bu üst sınıftan, extend ile aldığım sınıftan hesap no'yu oradan alıyorum. Çünkü burada öyle bir üye alan yok.
+
+193
+01:34:41,507 --> 01:34:52,128
+Şimdi geri kalanlar aynı. Dışarıdan aldığım şifrem artık buranın şifresi olsun. Dışarıdan aldığım günlük çekim limiti artık.
+
+194
+01:34:56,916 --> 01:35:14,036
+Çekimlimit olsun. Bir de herkesin o ilk etapta, tabii ki bugün çekilen miktarı nedir? Sıfırdır. Onu da burada sıfıra eşitleyeyim diyorum. Bugün çekilen miktarı sıfır olsun. Başlangıçta bunu da böyle atamış, belirtmiş olayım.
+
+195
+01:35:19,444 --> 01:35:27,604
+Aynen öyle. Bu şu anlama geliyor zaten. İleride buraya mesela main class'a gideceğim. Bireysel hesap nesnesi oluşturacağım parametrelerle.
+
+196
+01:35:31,859 --> 01:35:37,099
+Yok, orada zaten hani yukarıdakinden alıyorsun anlamında. Bir şey eşitleme yapmana gerek kalmıyor.
+
+197
+01:35:37,920 --> 01:35:38,920
+Üst nüfus da belirttim.
+
+198
+01:35:46,323 --> 01:35:53,403
+Aynen. Buna dizlemenize de gerek yok. Çünkü dışarıdan böyle bir parametreli veri almıyorsun. Dizi burada koyabilirsiniz de koymayabilirsiniz de.
+
+199
+01:35:53,743 --> 01:36:01,363
+Dizin kullanımı biraz da dediğim gibi okunurluk açısından. Bu sınıfın değişken olduğunu belirtmek için de kullanılıyor. Ama bir gerekliliği yoktu şu an burada kullanmanın.
+
+200
+01:36:02,683 --> 01:36:09,183
+Şimdi ben bunu kaydettiğimde artık constructor'ım. Okey. Burada her şeyi yazabilirim.
+
+201
+01:36:14,579 --> 01:36:16,399
+Biz yukarıda gördük.
+
+202
+01:36:22,579 --> 01:36:25,800
+Ticari hesabı da kodlayıp mı gelsek buraya acaba?
+
+203
+01:36:34,484 --> 01:36:38,924
+Aynen, üye alanları ve constructorları yaparken ticari hesabı da kodlayalım.
+
+204
+01:36:39,664 --> 01:36:45,424
+Hemen açalım onu da sonra da metodosu kodlamalarına geçeriz.
+
+205
+01:36:46,184 --> 01:36:48,864
+Ticari hesabının yine bir hesap nobilisi olsun.
+
+206
+01:36:49,504 --> 01:36:51,104
+Bir de kredi limiti olsun.
+
+207
+01:36:51,264 --> 01:36:53,524
+Ticari hesaplarda bir tık değişik bir işlem yapacağız.
+
+208
+01:36:53,684 --> 01:36:57,384
+Kişinin bakiyesi, yani o hesabın bakiyesi sıfıra da düşebilecek.
+
+209
+01:36:57,484 --> 01:37:01,764
+Çünkü şu kadar kredi hesabı var, o krediden kullandı diyeceğiz gibi bir şeyler yapacağız.
+
+210
+01:37:02,323 --> 01:37:06,423
+O yüzden ticari hesapta bir de kredi limiti vereceğiz. O double olacakmış.
+
+211
+01:37:08,384 --> 01:37:15,623
+Şeyde, zaten hesap numarasını da integer bir şekilde yukarıdan alacaktı.
+
+212
+01:37:15,703 --> 01:37:23,363
+O yüzden bunu şu anda UML'de bana gösterdiği tek değişkeni olan kredi limitini double olarak aldım.
+
+213
+01:37:24,003 --> 01:37:29,483
+Geldim, burada, burada pratik bir şekilde ne yapıyorduk buradan da?
+
+214
+01:37:38,355 --> 01:37:40,895
+Şöyle files'ı diyelim generate etsin.
+
+215
+01:37:41,376 --> 01:37:43,615
+Otomatik olarak bunu getirdi.
+
+216
+01:37:44,076 --> 01:37:46,956
+Ben burada içerisine şunu da belirtmek istiyorum yine.
+
+217
+01:37:46,956 --> 01:37:49,755
+Hesap no'sunu alacak.
+
+218
+01:37:49,915 --> 01:37:54,415
+Çünkü burada constructor'ı sadece buradaki değişkenden aldık.
+
+219
+01:37:54,555 --> 01:37:57,796
+Benim istediğim hesap no'lu bir şekilde gelmesiydi.
+
+220
+01:37:58,296 --> 01:37:59,635
+O yüzden bunu ekledim.
+
+221
+01:38:00,435 --> 01:38:02,835
+Bunu da yanımda getirdim.
+
+222
+01:38:15,283 --> 01:38:15,983
+Doğru.
+
+223
+01:38:16,343 --> 01:38:18,503
+Bu nasıl? Extend etmek.
+
+224
+01:38:21,423 --> 01:38:22,183
+Tamamdır.
+
+225
+01:38:24,643 --> 01:38:28,023
+Şimdi, bunun da üye alanını yaptık. Constructor'ını koyduk.
+
+226
+01:38:28,183 --> 01:38:29,623
+Artık sırada ne var?
+
+227
+01:38:30,203 --> 01:38:32,183
+Metotların içerisini doldurmak var.
+
+228
+01:38:33,763 --> 01:38:37,724
+Şimdi, para yatırma kısmı aslında bu da yine,
+
+229
+01:38:37,724 --> 01:38:40,724
+ne bakayım?
+
+230
+01:38:42,163 --> 01:38:44,203
+Fokus me ekstra rastekma.
+
+231
+01:38:53,171 --> 01:39:14,811
+Şimdi para çek kısımlarını kodlayalım. Para çek metotlarında şu şekilde bir ilerleme var. Burada bana belirttiği para çekerken ne kadar çekecek? Şimdi bireysel hesaplar için konuşuyorum. İkisi de çünkü farklı bir para çekme metodu ilerliyor.
+
+232
+01:39:15,347 --> 01:39:38,087
+Bireysel hesaplar para çekerken şunu yapıyor. Onların bir çekeceği tutar var. Bir de şifreli olarak bu parayı çekme durumları var. Şuradaki string onun şifresi. Bu şifreyi girerek, çünkü onlar da şifre bilgisi almıştık. Bu şifreyle işte şu kadar miktarda para çek gibi bir şey var.
+
+233
+01:39:38,515 --> 01:40:00,000
+Bir metodun detayında benden şunları da tabii kontrol etmem gerekiyor. Şimdi bir kişi bir giriş yaptı, daha doğrusu bir şifre yazdı, bir tutar çekmek istiyor. O zaman burada ilk yapacağım şey ne olacak? Bir kere şifre doğru mu buna bakacağım metodun içinde. Yani biraz koşullu, kontrollü bir metot olacak bu. Şifreyi doğru girdim ona bakacağım. Ondan sonra neye bakacağım?
+
+234
+01:40:00,000 --> 01:40:14,719
+Hocam, bu kişi girdiği tutar, doğru bir tutar mı? Çünkü bakiyesinin altında bir şey çekmek isteyebilir. Yani bakiyesinin üstünde bir şey çekmek isteyebilir. O da bakiyeyi eksiye düşürür. Bunu istemiyorum. Girdiği tutar acaba bakiyesiyle?
+
+235
+01:40:15,475 --> 01:40:17,615
+Nasıl? Bunun bir kontrolünü yapacağım.
+
+236
+01:40:18,295 --> 01:40:21,876
+Ve bir de bunlarda günlük çekim limiti koymuştuk.
+
+237
+01:40:22,215 --> 01:40:26,095
+Bugün çekilen miktar diye bir, pardon, günlük çekim limiti vardı.
+
+238
+01:40:26,095 --> 01:40:31,215
+Bu da yine o bireysel hesabın esnesi oluştururken verdiğim bir bilgiydi.
+
+239
+01:40:31,475 --> 01:40:33,595
+Her bir bireysel hesabın belli bir limiti vardı.
+
+240
+01:40:33,695 --> 01:40:35,555
+Acaba o limiti aşıyor mu, aşmıyor mu?
+
+241
+01:40:35,895 --> 01:40:37,956
+Onun da bir kontrolünü yapmam gerekecek.
+
+242
+01:40:38,495 --> 01:40:40,755
+En sonunda da eğer bunu, tamam.
+
+243
+01:40:41,427 --> 01:40:45,568
+Yatırabiliyorsa, bütün şartları sağlamışsa ne yapıyorum?
+
+244
+01:40:45,847 --> 01:40:56,807
+Öpüceğim işlem basit bir matematikle artık tutarı bakiyeye, bakiyeden tutarı çıkarıyorum ve kalan bakiyeyi de ekrana yazdırıyorum.
+
+245
+01:40:57,927 --> 01:41:00,827
+Bunu adım adım kodlayalım. Biraz dediğimiz gibi koşullu olacak.
+
+246
+01:41:02,768 --> 01:41:04,768
+Bireysel hesapta kodlayacağız dedik.
+
+247
+01:41:06,768 --> 01:41:07,487
+Public.
+
+248
+01:41:08,372 --> 01:41:31,792
+Para çek. Şimdi konlamaya başlayalım. Double tutar. Bir tutarı var. İki tane parametresi vardı bunun. Bir de şifresi. Girilen şifre diyelim ona da. Al. Şimdi para çekecek bu kişi. Benim bu oyduyunu unutmam.
+
+249
+01:41:33,300 --> 01:41:40,700
+Bu olayla dönüşteki sadece bir işte şey vereceğim için sistem altta bir şey yazdıracağım. Herhangi bir dönüşüm yok. O ita bırakıyorum.
+
+250
+01:41:41,460 --> 01:41:49,440
+Şimdi burada çekeceğim parada ne dedim? Koşullarım var, kontrollerim var. O zaman kontrol edelim. İlk etapta neyi? Şifreyi kontrol edeceğim.
+
+251
+01:41:50,100 --> 01:41:58,000
+Şifre string bir değerdi. Stringler üzerinde, string destelerde şöyle bir metot var. Çalıştırabileceğimiz girilen.
+
+252
+01:41:59,000 --> 01:41:59,560
+String.
+
+253
+01:42:00,724 --> 01:42:02,944
+Ekor, ekor, ekor.
+
+254
+01:42:03,944 --> 01:42:04,423
+Aynen.
+
+255
+01:42:09,779 --> 01:42:36,539
+Şifre dediğim zaman. Şimdi bu, girilen şifre, nokta, equals, şifre ne demek? Yani şu bir nesine, bu diğer nesine. Bunlar birbirine direkt eşit olduğu zaman, birebir aynısı olduğu zaman, büyük küçük harf de bu dönemde, aynısı olduğu zaman bu true döner. Ben bunun false dönmesini istiyorum. Yani böyle bir şey false durumdaysa, ekrana desin ki sen yanlış şifre girdin. O zaman başına.
+
+256
+01:42:38,644 --> 01:42:57,644
+Ürünlem atıyorum. Burası false'a düştüyse yani böyle bir şey artık yanmışsa. Sen bana şunu yaz ekrana değil ki senin şifre hatalı. Hatalı şifre gerildi. İşlem iptal edildi. Şimdi geldim. Eğer...
+
+257
+01:42:58,963 --> 01:43:02,203
+Yine başka bir koşula devam ettiğim için bir ansifi getiriyorum.
+
+258
+01:43:02,844 --> 01:43:05,484
+Bu sefer biz şunu da kontrol etmeyi seviyoruz tabii.
+
+259
+01:43:05,484 --> 01:43:16,904
+Ve tutarımız sıfırdan küçük veya eşitse yani eksi bir sayı veya sıfır gibi bir şey çekmeye çalışıyorsa bu zaman da yine bir uyarı yapsın.
+
+260
+01:43:17,003 --> 01:43:20,484
+Bunun da yanlış olduğunu yapmaması gerektiğini söylesin.
+
+261
+01:43:25,939 --> 01:43:27,459
+Burada da ne desin?
+
+262
+01:43:30,359 --> 01:43:32,920
+Birilen tutar, sıfırdan.
+
+263
+01:43:36,724 --> 01:43:38,163
+Büyük olmalı.
+
+264
+01:43:40,244 --> 01:43:42,163
+Burada da bu şekilde yazsın.
+
+265
+01:43:44,443 --> 01:43:46,043
+Başka bir koşulda.
+
+266
+01:43:47,163 --> 01:43:50,404
+Eğer bunların da bir de neydi?
+
+267
+01:43:50,804 --> 01:43:51,963
+Bir çekim tutarı vardı.
+
+268
+01:43:52,083 --> 01:43:53,104
+Tamam girdi, tutar.
+
+269
+01:43:53,203 --> 01:43:54,304
+Artık şifreyi doğru girdi.
+
+270
+01:43:54,804 --> 01:44:09,264
+0'dan büyükte girdi tutarı. Ama bu sefer bir günlük çekim limiti var. Bunu da bir kontrol etmem gerekiyor. Acaba doğru bir limit de mi çekmek istiyor? Günlük çekim limitini açtı mı? O zaman diyorum ki senin bugün çektiğin miktar.
+
+271
+01:44:12,203 --> 01:44:15,984
+Bugün çekilen miktar.
+
+272
+01:44:19,091 --> 01:44:23,391
+Buna tutarı eklediğim zaman, yani çekmek istediği tutarı eklediğim zaman.
+
+273
+01:44:25,551 --> 01:44:36,711
+Eğer günlük çekim limitini artık aşmış duruma geliyorsan, bu sefer de yine ne yapamazsın?
+
+274
+01:44:37,531 --> 01:44:41,251
+Günlük çekim limitini aşamazsın.
+
+275
+01:44:46,228 --> 01:44:52,847
+Günlük çekim limiti aşıldı. Bunu da böyle yazdık.
+
+276
+01:44:54,747 --> 01:44:56,908
+Günlük çekim limiti nasıl deriz onu?
+
+277
+01:44:57,908 --> 01:45:01,208
+Aşıldı ama öyle kalsın. Aşılacak yani.
+
+278
+01:45:03,208 --> 01:45:08,228
+Ve son bir koşulda da çekim limiti de okey.
+
+279
+01:45:08,228 --> 01:45:13,208
+Son artık neye geldim? Çekmek istediğim tutar benim bakiyemi.
+
+280
+01:45:14,868 --> 01:45:31,728
+Bakıyamdan küçük olmalı ki, küçük veya eşit olmalı ki, benim bakıyam sıfıra düşmesin. Eğer burada artık doğruysa, bu koşulda tutmuşsa, ne yapalım? Şunu yazalım. Burada birkaç satır yazacağım için parantezleri açtım.
+
+281
+01:45:38,676 --> 01:45:45,695
+Pratik olarak şöyle gösterelim. Bakiye eşittir, bakiye eksi tutar olsun.
+
+282
+01:45:46,716 --> 01:45:51,556
+Ve bugün çekilen miktar da artık onu tutuyorum çünkü.
+
+283
+01:45:54,676 --> 01:45:56,396
+O da neye eşit olsun artık?
+
+284
+01:45:56,916 --> 01:46:02,256
+Senin çektiğin tutara artı şekilde gelecek. O da daha önce de çekmiş olabilirsin.
+
+285
+01:46:03,988 --> 01:46:15,188
+Bugün çekilen miktarı artı bir de o tutarı ekledim. Sonra yine bir bilgi mesajı atayım ekrana. Onda da diyeyim ki ne kadar para çekildi?
+
+286
+01:46:17,188 --> 01:46:19,268
+Ne kadar çekildi?
+
+287
+01:46:20,828 --> 01:46:22,568
+Çantaya aslında koyalım.
+
+288
+01:46:24,388 --> 01:46:27,688
+Bugün toplam çekim onu da yazalım.
+
+289
+01:46:30,579 --> 01:46:36,180
+Artı diyelim. Bugün çekilen miktar.
+
+290
+01:46:38,819 --> 01:46:43,500
+Bunu da yine TL olarak söyleyelim.
+
+291
+01:46:43,500 --> 01:46:49,199
+Bir de yeni bakiyeniz de ne olmuş oldu artık?
+
+292
+01:46:50,479 --> 01:46:57,340
+Bakiye olarak göstermiş oldu.
+
+293
+01:47:02,963 --> 01:47:05,824
+Zatmak, batır, kal.
+
+294
+01:47:07,984 --> 01:47:10,023
+Şöyle bir şey mi kapatmadım da?
+
+295
+01:47:18,260 --> 01:47:19,399
+Şimdi geldim.
+
+296
+01:47:24,212 --> 01:47:26,532
+Bir de bunun hani Elsif yaptık da.
+
+297
+01:47:29,532 --> 01:47:34,612
+Eğer bu da tutturulmadıysa yani bu kişi...
+
+298
+01:47:34,612 --> 01:47:36,372
+Onu şuraya yapmak gerekiyor.
+
+299
+01:47:41,140 --> 01:47:46,340
+Artık bakiyesinden fazla bir tuta çekmeye çalışıyorsa onun uyarı mesajı bu sefer ne olacak?
+
+300
+01:47:49,739 --> 01:47:53,900
+Evet, dersiz bakiye diyeceğiz direkt.
+
+301
+01:48:00,819 --> 01:48:11,539
+Bunu da bu şekilde yazacağız. Para çekme işlemi. Bireysel hesap için biraz uzundu. Fazla parametresi vardı. Bunları kontrol ederek ilerlemiş olduk. Var mı burada sorusu olan?
+
+302
+01:48:16,948 --> 01:48:19,628
+Şimdi ticari hesap için onu da kodlayalım.
+
+303
+01:48:26,100 --> 01:48:28,940
+Orada da parametreler nelerdi bakıyorum.
+
+304
+01:48:29,840 --> 01:48:34,780
+Double burada sadece çekilecek tutar görünüyor ticari hesapta.
+
+305
+01:48:37,020 --> 01:48:40,780
+Double tutar diyorum ona ne kadar çekilecekse.
+
+306
+01:48:40,780 --> 01:48:46,200
+Şimdi burada çekerken ticari hesapların bir kredi limiti var.
+
+307
+01:48:46,300 --> 01:48:48,540
+Yani bunların bakiyeleri eksiğe düşebilir.
+
+308
+01:48:49,747 --> 01:48:53,827
+Ama o sırada bir limit verilmiş onlara, hani oradan kullanılacağı bir kredi limiti değişkeni.
+
+309
+01:48:54,387 --> 01:48:59,227
+Oradan alıp hani bakiyelerine sanki öyle ekleme yapıyorlarmış gibi düşünebilirsiniz.
+
+310
+01:48:59,688 --> 01:49:03,627
+Limitleri de tabii ki oradan kullandıkça onu da yine güncelliği olacağız.
+
+311
+01:49:04,347 --> 01:49:04,847
+Değişecek.
+
+312
+01:49:04,847 --> 01:49:11,287
+Şimdi bu kişinin, geliyorum bir kişi para çekme durumunda, kontrol edeceğim ne var?
+
+313
+01:49:11,987 --> 01:49:16,647
+Tutarının yine sıfırdan bir kişiye girmesini istiyorum, eksi bir şey çekemez.
+
+314
+01:49:17,300 --> 01:49:19,300
+Ve bir de çekiciye tutarım.
+
+315
+01:49:19,960 --> 01:49:23,040
+Hem bakiyesinden hem de ona verilen limitten yüksek bir şey olmaz.
+
+316
+01:49:23,159 --> 01:49:25,220
+Yani hem bakiyesi artı kredi limiti.
+
+317
+01:49:25,260 --> 01:49:26,659
+Bu ikisinin toplamını geçemez.
+
+318
+01:49:27,000 --> 01:49:28,420
+Ondan da daha fazla bir şey çekemez.
+
+319
+01:49:29,140 --> 01:49:32,280
+O zaman bunun koşulunda iki tane olayım var.
+
+320
+01:49:32,819 --> 01:49:34,420
+Birincisi dedim tutar.
+
+321
+01:49:34,840 --> 01:49:37,000
+Bu sıfırdan büyük olacak.
+
+322
+01:49:38,280 --> 01:49:38,640
+Ve
+
+323
+01:49:40,884 --> 01:49:48,564
+Ne yapacağım? Bu tutar yine neyden küçük olmak veya eşit olmak? Sıfırlayabilir de bütün parasını çekerek.
+
+324
+01:49:49,324 --> 01:49:56,744
+Bakiyesi ve kredi limitinden ne yapmak zorunda? Küçük olmak zorunda.
+
+325
+01:49:57,744 --> 01:49:59,664
+Şimdi böyleyse bu işlemi yaparız.
+
+326
+01:50:08,979 --> 01:50:29,479
+Böyleyse bu işlemi yapacağız. Ne yapacağız? Bakiyesi artık bakiye eksi tutar şeklinde güncellenecek ve sistem out ile ne yazacağım? Ne kadar çekildiğini yazacağım.
+
+327
+01:50:37,171 --> 01:50:37,931
+Sonra
+
+328
+01:50:42,100 --> 01:50:43,100
+Yeni bakiye
+
+329
+01:50:43,100 --> 01:50:47,480
+Onu da
+
+330
+01:50:47,480 --> 01:50:50,680
+Bakiye'de yazdım.
+
+331
+01:50:52,600 --> 01:50:53,579
+Bu şekilde
+
+332
+01:50:53,579 --> 01:50:56,780
+Yeni bakiyelerini göstermiş
+
+333
+01:50:56,780 --> 01:50:57,960
+olacağım.
+
+334
+01:50:58,700 --> 01:51:01,340
+Peki bu şartı sağlamazsa
+
+335
+01:51:01,340 --> 01:51:03,520
+Onu da bir else ifadesiyle
+
+336
+01:51:03,520 --> 01:51:05,020
+Hani neden
+
+337
+01:51:10,036 --> 01:51:25,815
+Yanlış olduğunu göstermek için. Ya yetersiz bakiye veya geçersiz tutar. Yani geçersiz bir tutar girdi, eksi beş yüz girdi, bir şey girdi, yanlış bir rakam girdi. Ya da ne var?
+
+338
+01:51:29,652 --> 01:51:31,092
+Bakiyesi yetmeyecek.
+
+339
+01:51:32,551 --> 01:51:34,592
+Şimdi para çek kısmını da gösterdik.
+
+340
+01:51:36,592 --> 01:51:37,231
+Efendim.
+
+341
+01:52:18,323 --> 01:52:19,923
+Bakiye eksi çıkabilir.
+
+342
+01:52:21,644 --> 01:52:24,823
+Bakiye burada eksiye düşebilir. Orada bir sıkıntımız yok.
+
+343
+01:52:27,003 --> 01:52:27,683
+Çıkar.
+
+344
+01:52:34,292 --> 01:52:44,971
+Veter ki orada şeye düşmesin. Şu ikisinin toplamından daha da düşük bir şey, daha da büyük bir şey çekmeye çalışmasın.
+
+345
+01:52:54,420 --> 01:52:55,359
+Evet, [öğrenci].
+
+346
+01:52:59,923 --> 01:53:03,923
+Şimdi yukarılarda bir metodu...
+
+347
+01:53:08,212 --> 01:53:14,792
+Biz burada da bir para yatır, para çek metodu var. Evet, biz bu hesabın içini sanırım doldurmadık para çek kısmında.
+
+348
+01:53:16,012 --> 01:53:20,471
+Doldurmuş muyduk yoksa bakayım ne? Tamam, sadece para yatırını doldurmuşuz.
+
+349
+01:53:21,452 --> 01:53:25,252
+Aynen öyle. Yukarıda bir metodu doldurursunuz. Bakın aynı isimde metotlar.
+
+350
+01:53:25,252 --> 01:53:31,952
+Aşağıda onu tekrar yazıp içini eğer dolduruyorsanız buna biz override diyoruz. O metodu.
+
+351
+01:53:32,659 --> 01:53:37,079
+Üstüne ezmek ve kendi sınıfına göre, onu ihtiyacına göre düzenlemek.
+
+352
+01:54:01,011 --> 01:54:23,031
+Onu burada kullandırmayacağım zaten şimdi. Orada bir düzenleme yapılacak. Burada ben aşağılarda mesela para yatırı kullandıracağım ona direkt. Hiçbir şekilde hatta yazmayacağım bile direkt para yatırı alacak. Ama para çek yukarıda. Aslında biz bu örnekte koymadık ama biraz da abstraction'dan da bahsedeceğim.
+
+353
+01:54:23,859 --> 01:54:44,079
+Yukarıda kalan paraçek metodunun içini hiç doldurmayacağım. Onu abstract yapacağım en sonunda. O zaman onu direkt aşağıda istediğim gibi override edebileceğim. Bu durumda evet, yukarıdan da kullanılabilir. Ama ben şu an yukarıdaki paraçek kısmını kullanmayacağım. Aşağılarda onu kendim yazmış olacağım.
+
+354
+01:54:47,667 --> 01:54:49,167
+Hesap kısmındaki
+
+355
+01:54:53,844 --> 01:54:57,304
+Para çek olayını anlarım diyeceğim ama.
+
+356
+01:54:58,103 --> 01:54:59,683
+Şerle de çekilebilir bu arada.
+
+357
+01:55:00,264 --> 01:55:00,923
+Dediğin doğru.
+
+358
+01:55:01,123 --> 01:55:03,163
+Biz burada şifreyle bir çekim yaptık.
+
+359
+01:55:03,243 --> 01:55:04,683
+Bireysel hesap için konuşalım.
+
+360
+01:55:05,844 --> 01:55:10,824
+Üst sınıfta onu yazdığım zaman direkt tutar üzerinden şifresiz bir çekim de var.
+
+361
+01:55:10,824 --> 01:55:12,324
+Yani demek ki alt sınıf.
+
+362
+01:55:12,423 --> 01:55:16,824
+Eğer yukarıda ben para çek metodunu direkt şifresiz bir çekim yapabiliyorsam.
+
+363
+01:55:17,684 --> 01:55:32,384
+Alt sınıfta onda yine şifresiz bir şekilde kullanma hakkı var. Yani o da var. Onu da yapar. Bir de ekstra o şifreli de çekebilir. Burada da yine aynı iki metodu kullanmış. O zaman da bir de overload işin içine girmiş. Overload etmiş oluyorum. Aynı metodu, aynı isimli metodu.
+
+364
+01:55:52,884 --> 01:56:04,324
+Aynen öyle. Eğer alta değiştirmek istiyorsan, yani o metot, o parametrelerle üst sınıfınkini kullanmasın diyorsan, aşağıda onu kendin overwrite edip o sınıfın ihtiyacına göre düzenlemen lazım.
+
+365
+01:56:05,123 --> 01:56:09,603
+Hiç yazmıyorsan direkt üst sınıfınkini aynen kullanabilir anlamına geliyor.
+
+366
+01:56:11,744 --> 01:56:13,943
+Şundan bir toparlayayım.
+
+367
+01:56:20,532 --> 01:56:34,572
+Şimdi şurayı tekrar bir kısaca özetleyeyim. Neden para yatırdı böyle bir, nereye zor bak, para çek, ticari para çek. Ticari'nin para çekinde neden böyle bir şey yaptık?
+
+368
+01:56:36,792 --> 01:56:45,731
+Çünkü ticari'lerde bakiye eksiğe düşebilir. Bakiyesinden daha fazla bir para çekiyor olabilir. Bunu yaparken.
+
+369
+01:56:46,228 --> 01:56:52,128
+Bir de onların kredi limiti var. Adamın 10 bin bakiyesi vardır. 5 bin kredi limiti vardır.
+
+370
+01:56:53,048 --> 01:56:58,608
+Ve orada diyelim ki toplam onun çekebileceği para orada 15, 12 çekebilir bu adam.
+
+371
+01:56:59,528 --> 01:57:06,228
+Ve bu bakiyesinden de ben bunu düşürürüm. Bakiyesi neye düşer? Eksi 2 bine düşer mesela.
+
+372
+01:57:08,243 --> 01:57:33,523
+Bu adamın çekebileceği toplam tutar her zaman bakiyesi de kredi limitinin toplamından küçük bir değer olmalı. Çünkü bunları artık sıfırlayamaz. Bu maksimum çekebileceği para. Şimdi bakiyem mesela eksi 2000'e düştü. İşte kredi limitim var. Ne yaptım benim kredi limitime de 5 dedim. Artık ne çekebilirim mesela? 3000 çekebilecek durumdayım. Yani o limitim benim. Ne oldu?
+
+373
+01:57:34,612 --> 01:57:47,352
+Limit aynı sabit kalıyor ama hesaptayken bakiye eksiğe düşmesi mantıken senin çekebileceğin belli bir nokta var artık. Oraya kadar çekebilirsin. Mesela üç bine kadar çekebildi. Artık daha fazlasını çektirmiyoruz ama.
+
+374
+01:57:47,695 --> 01:58:11,575
+Gibi gibi. En son zaten bakiyem eksi beşe düştü diyelim. Bir üç bin daha çekmek istedi. Eksi iki bakiyeden üç bin çekerse ne olur bakiye eksi beşe düşer. Kredi limitin de beşti. Ben bu adam artık sıfırladı. Bundan daha fazlasını çektiremem. Limitini de artık doldurmuş oldu. Oradaki mantık bu aslında bakiye ile kredi limitinin toplanması olayı. Bakiye'yi burada eksiye düşürebilirsiniz.
+
+375
+01:58:29,587 --> 01:58:53,207
+Bak şimdi tekrar demin yaptığımız hesabı anlatıyorum. Bakiye 10 bin, kredi limiti 5 bin. Kredi limitin üzerine bir değişiklik yapmama gerek yok. Bakiyem 10 bin, kredi limitim 5 bin. Toplayın, 15 bin. Bu adam kaç çekmek istiyor? 12 çekmek istiyor. Çekebilir mi şu durumda? Çeker. 12'yi çekti, bakiyem ne oldu 12'yi çekince?
+
+376
+01:58:55,315 --> 01:59:19,815
+Eksi 2 bakiye. Aklımızda tutuyoruz. Bakiye eksi 2. Kredi limitini kaçtı? Onu değiştirmedim. 5. Eksi 2, 5. Toplayın bu adamın aslında otel parası. Ne? Şimdi bu adam geldi. Bir 3 daha çekmek istiyor değil mi? Şurada. Ben burada neyi direkt kontrol edeyim? Kredi limiti 5. Onu değiştirmeme gerek yok. Bakiyem ne kadardı?
+
+377
+01:59:20,884 --> 01:59:46,623
+Eksi 2 idi. Topladım 3. Adam 3 çekebilir mi? Çeker. Çektiği zaman artık ne oldu bakiyesi? Bakiye eksi 5. Krediyi değiştirmeme gerek yok. Yok, kredi 5'ti zaten. Ama toplayın artık bu. Eksi 5 artı 5 ne yaptı? 0. Zaten bunun artık bir çekeceği bir şey kalmadı. Yani kredi limitini o yüzden değiştirmeme gerek kalmıyor. Bu şekilde bir bağlantı kurarsan.
+
+378
+01:59:48,627 --> 02:00:00,727
+Farklı yöntemler olabilir. Bu tek değildir. Farklı bir mantıkla da siz bu hesabı yapabilirsiniz. Ama bu da pratik bir şekilde kredi limiti sabit kalsın. Ben bakiye zaten eksiğe düşebilen bir şey diye düşünmüş olabilirim.
+
+379
+02:00:05,971 --> 02:00:06,431
+Şimdi
+
+380
+02:00:06,431 --> 02:00:12,891
+Gelelim, para çekleri yaptık.
+
+381
+02:00:16,340 --> 02:00:20,260
+Hesap sınıfında da biz para yatırmayı yapmıştık.
+
+382
+02:00:22,539 --> 02:00:27,579
+Ticari hesaplar, birisi hesaplar. Orada para yatırmayı direkt üst sınıftan kullandı.
+
+383
+02:00:27,680 --> 02:00:28,319
+Öteceğim ona.
+
+384
+02:00:31,440 --> 02:00:34,920
+O zaman gelelim biraz main de şimdi denemeler yapalım.
+
+385
+02:00:36,039 --> 02:00:39,500
+Bir de main sınıfı oluşturayım ki yani main metodun olduğu benim orada.
+
+386
+02:00:43,699 --> 02:00:55,159
+Main class'ın şöyle mail metoduyla gelsin. Programın çalışacağı sınıf. Şimdi buraya bir tane bireysel hesap oluşturacağım.
+
+387
+02:00:58,963 --> 02:01:01,123
+Bireysel hesap.
+
+388
+02:01:02,884 --> 02:01:04,163
+Buna bireysel diyeyim.
+
+389
+02:01:06,963 --> 02:01:09,263
+Nasıl oluşturuyorum?
+
+390
+02:01:09,403 --> 02:01:12,984
+New bireysel hesap.
+
+391
+02:01:14,644 --> 02:01:15,923
+N'leri verecektim içine.
+
+392
+02:01:16,023 --> 02:01:17,843
+Üç tane parametresi var.
+
+393
+02:01:18,323 --> 02:01:18,923
+Hesap no.
+
+394
+02:01:21,663 --> 02:01:22,423
+Değil mi?
+
+395
+02:01:22,843 --> 02:01:23,804
+Hesap no'su vardı.
+
+396
+02:01:23,884 --> 02:01:25,343
+Şimdi onları içine dolduracağım şu an.
+
+397
+02:01:26,707 --> 02:01:33,667
+Bu şekilde yazıyorum. Şifresi vardı. Bir de günlük limiti vardı değil mi?
+
+398
+02:01:34,287 --> 02:01:42,207
+Hesap numaramı burada string bir değer veriyordu. Hesap no integer'dı. Şifrem string'ti.
+
+399
+02:01:43,047 --> 02:01:50,207
+Hesap no'yu bin bir gibi bir şey vereceğim. Şifreyi ne vereyim? Şifreyi de bir iki üç dört vereyim ama bu string olduğu için şöyle.
+
+400
+02:01:50,931 --> 02:02:06,931
+Bu şekilde göstereyim. Günlük limitim de yine double'da. Onu da şu şekilde 10.000 diyelim, 1.000 diyelim onu da olarak verdim. Ben böyle bir bireysel hesap nesnesi oluşturdum.
+
+401
+02:02:06,931 --> 02:02:15,931
+Şimdi bireysel hesapta geldim bireysel hesabım içerisinde.
+
+402
+02:02:19,412 --> 02:02:46,412
+Şimdi bakıyorum ben bu sınıfta para yatır olarak bir şey kullandım mı? Bireysel hesapta kullanmadım. Ama hesap sınıfında para yatırı kullanmıştım. Double bir tutar alıyordu. O yüzden ben artık bunu aralarında o kalıtımı kurduğum için bireysel hesapta da artık para yatır bakın ben yazdığım zaman önerilerde de çıkıyor.
+
+403
+02:02:47,060 --> 02:02:53,120
+Bana ne kadar tutar da para yatırmak istiyorsan ekrana geldim.
+
+404
+02:02:57,811 --> 02:03:02,671
+Neden geldi? Çünkü üst sınıfta ben bunu zaten kodlamıştım para yatırmayı.
+
+405
+02:03:03,371 --> 02:03:05,752
+Kalıtımla bu şekilde almış oldum.
+
+406
+02:03:09,395 --> 02:03:11,935
+Evet, 2000 lira yatırdı. Yeni bakayım, 2000.
+
+407
+02:03:13,036 --> 02:03:15,395
+Peki, para çekmek isteseydim...
+
+408
+02:03:21,268 --> 02:03:29,847
+Burada da artık neyim var? Benim hangi tutarda para çekeceğim ve de şifre bilgilerim var.
+
+409
+02:03:30,507 --> 02:03:36,667
+Mesela yanlış bir şifre girdiğim zaman doğru kontrolü yapıyor mu?
+
+410
+02:03:37,448 --> 02:03:40,768
+Baktığımda bana hatalı şifre diyor. Çünkü şifrem hatalı.
+
+411
+02:03:42,387 --> 02:03:43,768
+Sonra bunların...
+
+412
+02:03:46,804 --> 02:03:52,743
+Neyi vardı? Günlük limiti vardı. Ben bu nesne için onu 1000 olarak belirlemiştim. Şurada görünüyor.
+
+413
+02:03:53,344 --> 02:03:57,984
+Günlük limiti aşma durumu varsa diyorum. Burada yine şifreyi doğru girelim.
+
+414
+02:04:00,984 --> 02:04:07,043
+Ama bu sefer limit aşıldı. Hatalı şifre ve limit aşımı oldu.
+
+415
+02:04:10,612 --> 02:04:18,072
+Artık para çek kısmında böyle doğru parametrelerle, uygun parametrelerle gelirsem o da nedir?
+
+416
+02:04:19,931 --> 02:04:22,951
+1000 çekebilir miyim? Çekerim. Limitim de o kadar zaten.
+
+417
+02:04:24,791 --> 02:04:30,692
+1000 çekelim. Şifrem de 1, 2, 3, 4 olduğu için bunu bana artık gösterir.
+
+418
+02:04:31,692 --> 02:04:36,492
+Bugün toplam çekim 1000 lira. Yeni bakiyen 1000 lira olarak kaldı.
+
+419
+02:04:38,996 --> 02:04:48,275
+Sonra bir tane ticari hesap oluşturalım. Onu da görmüş olalım.
+
+420
+02:04:52,148 --> 02:04:53,987
+Bu da ticari.
+
+421
+02:04:59,060 --> 02:05:23,800
+New ticari hesap. Bunun içerisine LR'la dolacaktı. Bunda da bir hesap numarası vardı yine. Bir de kredi limiti vardı. Hesap numarası integer, kredisi de double olarak kredi limiti geliyordu. Limitimde 5000 vardı. Hesap numarası da 2001 olarak gösterdi.
+
+422
+02:05:24,467 --> 02:05:39,247
+Şimdi ticari için de aynı şey geçerli. O da bu sefer para yatırsın önce de. Bakın onun da sınıfında bir ne yoktu? Para yatır metodu yoktu. Onu da yine yukarıdan aldım kalıtımla.
+
+423
+02:05:41,987 --> 02:05:50,307
+O da artık para yatırabiliyor mu? Yatırıyor. O da 10.000'le yatırdı. Yeni bakiyesi 10.000 oldu.
+
+424
+02:05:51,264 --> 02:06:02,304
+O da artık para çekebilir mi? Çekebilir. Para çek dediğim zaman, yine verdiğimiz örneklerden gidelim.
+
+425
+02:06:03,664 --> 02:06:13,564
+12.000 para çekecek. Bakın yeni bakiyesi artık eksi 2.000 olarak geliyor.
+
+426
+02:06:18,804 --> 02:06:22,584
+Bir kere daha para çekmek istesem.
+
+427
+02:06:33,524 --> 02:06:34,504
+Şöyle aşağıma.
+
+428
+02:06:45,108 --> 02:06:51,968
+Artık kredi limitini de aştığı için 5000'i ne yaptı? Çektirmedi. Limitinin üstüydü.
+
+429
+02:06:53,048 --> 02:07:12,728
+Şimdi, bunları bir de bir info metodu vardı şu UMLN'de. Bilgi göster metodu var. Onların içi de yine her sınıf için işte hesap numarası nedir, bakiyesi nedir, bunların detayları oluyor bunun içinde de.
+
+430
+02:07:13,268 --> 02:07:17,167
+Ben size paylaşacağım kodda bunları da yine gösteriyor olacağım.
+
+431
+02:07:17,307 --> 02:07:23,307
+Tamamen bilgi göster metodunun içerisinde dediğim gibi o hesabı, o nesneye ait bilgiler var aslında.
+
+432
+02:07:23,407 --> 02:07:25,948
+Bir nevi to stringin daha böyle formatlanmış hali.
+
+433
+02:07:26,387 --> 02:07:28,567
+Hesap numarası, şu bakiyesi, bu gibi gibi.
+
+434
+02:07:29,047 --> 02:07:36,728
+Onu şu an burada uzun uzun kodlamayacağım vakit kaybolmasın diye ama ben size dediğim gibi en son göndereceğim kod dosyasını da o metodun da içini göreceksiniz.
+
+435
+02:07:39,859 --> 02:08:05,340
+Burada anlatmak istediğim bir konu daha var. Onu da son olarak söylemek istiyorum. Şimdi biz dedik ki aşağılarda şu para yatırma kısmı yukarıda yazılmıştı. Hatta UML'de ben bunları da sileceğim olmasına çok gerek yok. Çünkü yukarıdan aynen aldık, kullandık. UML'de yazmamıza gerek yok. Para yatırma fix.
+
+436
+02:08:06,163 --> 02:08:17,523
+Peki, para çekme kısmında ne vardı? Her bir sınıf kendine göre farklı şekillerde çekim yapabiliyordu. İşte bu şifreli çekiyordu, bu limitli çekiyordu gibi gibi.
+
+437
+02:08:18,068 --> 02:08:37,688
+Şimdi ben yukarıda da bir para çek metodu yazıp içini doldurur muyum? Doldururum. Hesap kısmında da. Burada da yine bir para çek metodu olur. Temel olarak o da ne yapar? VML'de bana gösterdiği gibi. Gelir, bir double değişken verir, bakiyeye direkt o istenen tutarı ekler. Düz bir para yatırma mantığı.
+
+438
+02:08:38,707 --> 02:08:47,527
+Bazı durumlarda biz sınıflar arasında şöyle bir şey yaparız. Üst sınıf bireysel olarak o da vardır ve ondan da nesne oluşturulup kullanılabilir.
+
+439
+02:08:48,532 --> 02:09:11,532
+Bizim örneğimiz gibi örnekle bazı durumlarda da şu vardır. Bu üst sınıf aslında hiçbir şekilde nesne üretmeniz gerekmez ondan. Onu kullanacağımız bir durum yoktur. O tamamen bir template olarak, bir kalıp olarak vardır orada. Temel üye alanlar alt sınıflarda da tekrar tekrar bulunmasın diye oraya yazılmıştır belki. Ama alt sınıflar her zaman kendine göre özelleşmek zorundadır.
+
+440
+02:09:16,532 --> 02:09:25,631
+Esne oluşturmanız gerekmez. Böyle durumlarda biz abstraction dediğimiz olayı kullanıyoruz. Abstract bir class oluşturuyoruz. Bunu nasıl yapıyoruz?
+
+441
+02:09:26,515 --> 02:09:32,355
+Diyoruz ki bir metot, buradaki mesela para çekme metodu.
+
+442
+02:09:32,915 --> 02:09:35,615
+Şimdi alt sınıflar kendine göre özelleştirecek.
+
+443
+02:09:35,755 --> 02:09:42,136
+Ben de eğer bu durumda kullanılabilir mesela hesap sınıfı olabilir ondan nesne üretebilirsiniz bizim şu anki tasarımımızda.
+
+444
+02:09:42,536 --> 02:09:47,876
+Hesap diye bir nesne de üretebilirsiniz ama diyorum ya bazı durumlarda bunu üretmenize gerek kalmaz.
+
+445
+02:09:48,659 --> 02:10:03,719
+Buna gerek yoktur. Üst sınıf sadece o metot var. Sen bunu altta kendine göre kodla dediğiniz zamanlar vardır. Bunun için de biz abstract metot ve doğal olarak orada bir metot abstract ise class da abstract olur. Bunu kullanırız.
+
+446
+02:10:04,399 --> 02:10:09,239
+Şimdi ben size aynı örnek, birebir aynısını şöyle göstereceğim.
+
+447
+02:10:12,340 --> 02:10:23,819
+Dedim ya, bir sınıfı abstract nasıl yaparsınız? Bir kere metot, o sınıfın metotlarından biri abstractsa, burada ara çekme metodunu abstract yapmışız.
+
+448
+02:10:24,720 --> 02:10:33,399
+Bakın, metodun gövdesi yok, o süslü parantezler açılmamış, içi doldurulmuyor. Böyleyse buna biz abstract metotluyoruz.
+
+449
+02:10:33,399 --> 02:10:37,136
+Amaç ne burada? Samlılığı zaten alt sınıflarda kendine göre...
+
+450
+02:10:37,136 --> 02:10:40,016
+override edeceksin, üstüne yazacaksın, içini dolduracaksın.
+
+451
+02:10:41,195 --> 02:10:42,576
+O yüzden burada yazmıyorum.
+
+452
+02:10:43,456 --> 02:10:45,096
+Bakın, metodun ismini abstract et.
+
+453
+02:10:47,056 --> 02:10:51,796
+Burada da sınıf otomatikman abstract class oluyor.
+
+454
+02:10:51,876 --> 02:10:53,736
+Metodlardan biri abstract sos sınıfta.
+
+455
+02:10:54,976 --> 02:10:56,796
+Sınıfta abstract class olmak zorunda.
+
+456
+02:10:58,396 --> 02:10:59,195
+Geldim.
+
+457
+02:11:00,316 --> 02:11:03,836
+Bunu artık buraya yazdım ya, alt sınıflarına geliyorum.
+
+458
+02:11:05,619 --> 02:11:12,319
+Bakın, buralarda artık bu para çek metodunun içine mutlaka yazılması gerekir.
+
+459
+02:11:13,079 --> 02:11:18,920
+Şimdi şunu yapıp kaydettiğimde bana mesela hata verecek.
+
+460
+02:11:20,500 --> 02:11:23,239
+Diyecek ki, anemptomatik metotlar var.
+
+461
+02:11:23,239 --> 02:11:25,195
+Sen üst sınıftan kalıntımla...
+
+462
+02:11:25,684 --> 02:11:49,684
+Yani sen bu sınıfı üst sınıfa kalıtımla bağladın. Üst sınıfında abstract metodu var. Onu almak ve kendi için implement etmek zorundasın. Hani programı bir nevi, altta mutlaka bu metodu doldur. Ona uygun bir şekilde doldur dediğimiz durumlarda üst sınıfı abstract yapıyoruz, o metodu abstract yapıyoruz üst sınıfın bir metodunu. Ki aşağıdaki sınıflar onu gözden kaçırmasın. Mutlaka ve mutlaka doldursun, override etsin.
+
+463
+02:11:50,707 --> 02:11:54,427
+Anlaşıldı mı bu kısım? Neden abstract class? Nasıl bunu kurduk bu mantığı?
+
+464
+02:12:05,427 --> 02:12:09,467
+Kağıdında da bu oldu. Burada niye kestim? Biraz da şunu göstereyim diye.
+
+465
+02:12:12,547 --> 02:12:15,228
+Burada yine source kısmında
+
+466
+02:12:15,228 --> 02:12:20,887
+override implement metod görüyorsunuz.
+
+467
+02:12:22,899 --> 02:12:43,899
+Bunu tıkladığınız zaman, mesela üst sınıfın metotları direkt burada çekiyor. Hatta şunun başına bak, para çek metodu abstrakt olduğu için artık başına A koymuş, abstract class. Ve onu kendi otomatik tiklemişsin, sen bunu kesin override edeceksin. Bir de onun para yatır metodu var, istersen onu da override edebilirsin. Override etmek ne demek? Üst teki metodu aşağıda aldım ve kendi içine...
+
+468
+02:12:44,047 --> 02:12:50,287
+İstediğim gibi ihtiyacımı uygun olarak yazdım. Ezdim yani o metodun üstüne yazdım anlamına geliyor.
+
+469
+02:12:50,727 --> 02:13:02,707
+Burada istediğim metodları seçip okeylediğim zaman bakın başına bir override sözcüğüyle getirdi ve metodu buraya koymuş oldu.
+
+470
+02:13:05,768 --> 02:13:08,768
+Ben eski halini yine getireyim, yapıştırayım.
+
+471
+02:13:10,612 --> 02:13:14,391
+Temel olarak kalıtımda işlemlerimiz böyleydi.
+
+472
+02:13:16,131 --> 02:13:19,131
+Sizin sormak istediğiniz bir soru var mı?
+
+473
+02:13:19,872 --> 02:13:20,612
+Ben hemen...
+
+474
+02:13:20,612 --> 02:13:21,872
+Efendim?
+
+475
+02:13:23,152 --> 02:13:24,631
+Ben bir sınıfı sayayım şu an.
+
+476
+02:13:33,171 --> 02:13:36,471
+Başka sorusu olan varsa alabilirim.
+
+477
+02:13:44,115 --> 02:13:52,316
+Şöyle, eğer bir sınıfta bir metot abstrakt olarak yazılmışsa, o sınıf mutlaka abstrakt olmalı.
+
+478
+02:13:53,236 --> 02:13:56,115
+Yani o sınıfı abstraktan başka bir şey olarak artık söyleyemiyoruz.
+
+479
+02:13:57,655 --> 02:14:00,595
+Metotları abstrakta en az bir metodu.
+
+480
+02:14:00,775 --> 02:14:03,355
+Abstrakt olmayan konkret dediğimiz metotlar da vardır.
+
+481
+02:14:03,515 --> 02:14:05,056
+Şunlar mesela normal metotlar değil.
+
+482
+02:14:05,675 --> 02:14:09,015
+Ama bir tanesi abstrakta sınıfı abstrakt olmak zorunda oluyor.
+
+483
+02:14:14,420 --> 02:14:14,720
+Evet.
+
+484
+02:14:18,612 --> 02:14:26,912
+Dediğim gibi ben kodun tam halini şu şekilde, şu sınıflarının bilgiyi göster, metotlarının olduğu halini de paylaşıyor olacağım sizlerle.
+
+485
+02:14:27,891 --> 02:14:31,271
+Ders kaydını da yine Furkan Hoca'nın hesabında olacak herhalde.
+
+486
+02:14:32,572 --> 02:14:41,612
+Online'da Furkan Hoca'nın öğrencileri direkt o ders kaydı olduktan sonra belki linki bulursa, link oluşursa Classroom'a da paylaşabilir.
+
+487
+02:14:43,551 --> 02:14:45,452
+Dinlediğiniz için teşekkür ediyorum.
+
+488
+02:14:54,836 --> 02:14:57,496
+Bir tane üst sınıfı metotlarını kullanıyorsun.
+
+489
+02:15:02,963 --> 02:15:03,644
+Şöyle.
+
+490
+02:15:10,963 --> 02:15:12,443
+Mesela bu örnekte
+
+491
+02:15:16,819 --> 02:15:17,612
+Arkadaşlar, class, object,
+
+492
+02:15:20,979 --> 02:15:22,979
+Burada değişkenini kullandık.
+
+493
+02:15:22,979 --> 02:15:24,979
+Sesini bir de.
+
+494
+02:15:26,979 --> 02:15:31,979
+Burada mesela bir override etsek, üstten bir şeyi.
+
+495
+02:15:37,811 --> 02:15:43,731
+Bu şekilde üstte bir metodu da yine yazıp, altta o bize süperle getiriyor.
+
+496
+02:15:43,891 --> 02:15:54,092
+Yani süper para yatır dediğin zaman, sen aslında evet burada da bir metot var ama, sen yukarıdakini kullan anlamında söylemek istiyorsan süper nokta para yatır diyorum.
+
+497
+02:15:54,811 --> 02:15:56,852
+Demişti ki bunu yazmana da gerek yok.
+
+498
+02:15:57,460 --> 02:16:01,680
+Direkt yukarıdakinin para yatırı metodunu da zaten alıp kullanıyordu.
+
+499
+02:16:01,800 --> 02:16:05,139
+Ama illa ben sınıfında da para yatırı yazacağım diyorsam bu şekilde yazabilirsin.
+
+500
+02:16:05,280 --> 02:16:10,180
+Veya içine özelleştirme için burayı silen ona göre düzenleyebilirsin.
+
+501
+02:16:18,355 --> 02:16:19,355
+Yönesliy.
+
+502
+02:17:05,523 --> 02:17:09,103
+Teşekkürler arkadaşlar. Dersi kapatıyorum. İyi günler hepiniz.
+
+503
+02:17:10,263 --> 02:17:15,183
+Hocam paylaşacak mısınız acaba? Recazlem kodların bir kısmını da kaçırdığım yerler oldu.
+
+504
+02:17:18,683 --> 02:17:19,783
+Yazarken takip edelim.
+
+505
+02:17:19,783 --> 02:17:23,644
+Tabi payıta paylaşılacak şeylerde, kodlarda paylaşılıyor olacak.
+
+506
+02:17:23,644 --> 02:17:24,663
+Teşekkür ederim. İyi günler.
