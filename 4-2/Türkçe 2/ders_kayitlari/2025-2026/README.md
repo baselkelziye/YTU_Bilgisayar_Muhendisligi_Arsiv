@@ -5,6 +5,7 @@
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
 | 1 | Bahar | — | [sube_1/](sube_1/) |
+| 2 | Bahar | Arzuhan Kocabaş | [sube_2/](sube_2/) |
 | 11 | Bahar | — | [sube_11/](sube_11/) |
 | 12 | Bahar | — | [sube_12/](sube_12/) |
 | 15 | Bahar | — | [sube_15/](sube_15/) |
