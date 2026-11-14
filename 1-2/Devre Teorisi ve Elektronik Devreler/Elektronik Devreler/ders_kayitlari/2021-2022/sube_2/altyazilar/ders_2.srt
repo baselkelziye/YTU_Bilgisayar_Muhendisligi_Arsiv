@@ -1,0 +1,1415 @@
+1
+00:00:50,515 --> 00:00:54,855
+Biraz bekleyin arkadaşlar. Onu 10 gece başlayalım.
+
+2
+00:07:42,324 --> 00:07:51,584
+Evet arkadaşlar, başlayalım. [kişisel bilgi] ama Gökhan Hoca'nın grubuna katıldığınızı düşünüyorum.
+
+3
+00:07:53,184 --> 00:08:01,324
+Herhalde yarı edilen teknolojisi noktasında bir ders olmuş. Bu hafta ne yapacağız? Bu hafta ilk başta...
+
+4
+00:08:02,132 --> 00:08:17,172
+Bu sensörler, yani sizin projenizde kullanmanızı beklediğimiz, yani elektronik devreler projesinde, labında değil, projesinde kullanmanızı beklediğimiz bazı sensör ve eyleyiciler hakkında bir kısa dersle başlayacağız.
+
+5
+00:08:18,031 --> 00:08:24,132
+Bu sensörlerin aslında mentalitesinin nasıl olduğu, neyi ölçtüğümüz, neyi ayarladığımız vesaire bunlara biraz değineceğiz.
+
+6
+00:08:25,043 --> 00:08:40,423
+Sonrasında burada bir ödeviniz olacak. Ödev vereceğim. Aynı geçen hafta olduğu gibi. Sonrasındaki konumuz ise aslında yarı iletken elektroniğinde ilk devre elemanımız olan diyot üzerine olacak.
+
+7
+00:08:40,423 --> 00:08:47,063
+Bu arada kaydediliyormuş, tamam. Dersim bir daha kaydını almayalım.
+
+8
+00:08:52,148 --> 00:08:55,288
+O zaman şöyle başlayalım.
+
+9
+00:09:08,307 --> 00:09:19,347
+Bu arada chatten Classroom'a ait yani lab'ın duyurları ve ders içerikleriyle alakalı yapacağımız duyurları paylaşıldı.
+
+10
+00:09:19,648 --> 00:09:27,028
+Paylaşılacağım. Classroom kodunu attım. Enrol olalım, sınıfa kaydolalım.
+
+11
+00:09:29,528 --> 00:09:31,107
+Evet, kaydolanlar var zaten.
+
+12
+00:09:39,860 --> 00:10:05,360
+Sınıfa kaydolalım. Rahatsızlığım biraz daha devam ediyor arkadaşlar. Belki bir ara veririz diye düşünüyorum. Öksürük tutarsam. Nihayetinde çok uzatmamaya çalışacağım. Ben de rahatsızım zaten. Şu an ekran yansıyor olması lazım. Evet ilk etapta bizim projemizde kullanmanızı beklediğimiz sonuçta elektronik devrelerde kasıtımız şu bizim projelerde.
+
+13
+00:10:06,131 --> 00:10:17,691
+Gördüğümüz, teorik olarak göreceğimiz devre elemanlığının dış dünyayla beraber kullanımında bir amaca hizmet edecek şekilde kullanımında uygulanması.
+
+14
+00:10:18,131 --> 00:10:43,271
+Bu noktada sensör ve eyleyici, Türkçe işevirlikleri, yapıları inceleyeceğiz ilk başta. Sensörleri belirleyen bazı parametreler var, performanslarını tanımlayan. Bu performansları tanımlayan parametrelere değineceğiz. Birkaç sensör tanımlaması yapacağız, örnek vereceğiz. Nasıl bir uygulamada kullanılacağı noktasında. Bu size bir fikir verecektir. Nasıl bir elektronik devre projesi seçmem lazım.
+
+15
+00:10:43,663 --> 00:10:51,124
+Sorusuna aslında bu sensörleri seçerek hangi amaca izin edeceğini bilerek seçmek daha mantıklı olacaktır.
+
+16
+00:10:52,264 --> 00:11:00,283
+Eğleyicilere geleceğiz. Eğleyici aslında sensörün tam tersi olan bir yapıda olan devre elemanları.
+
+17
+00:11:02,183 --> 00:11:09,403
+Sonra da laboratuvarda ölçü harikleri noktasında işte ölçümü nasıl yapacağımızla alakalı kısaca bir bahsedeceğiz.
+
+18
+00:11:16,115 --> 00:11:29,216
+Aslında sensör ve eğlenceleri arkadaşlar, transdüysör diye geçer. Yani transdüysör dediğim şey de aslında fiziksel bir birimi, niceliği farklı bir niceliğe çeviren.
+
+19
+00:11:29,716 --> 00:11:54,596
+Konverter'lardır, çeviricilerdir. Örneğin, fiziksel sıcaklığı, normalde tenimizle hissediğimiz bir sıcaklığı bilgisayar tarafında veyahut da herhangi bir elektronik devre tarafında gösterilmesi için bir sensör ile bunun değiştirilmesi, yani okuduğumuz niceliğin değiştirilerek başka bir nicelikle gösterilmesi işini yapan devre elemanları.
+
+20
+00:11:54,596 --> 00:11:57,536
+Mesela sıcaklığı, elektrik gerilimi.
+
+21
+00:11:57,716 --> 00:12:03,355
+Yani normal bir voltaj gerilimi genlik değeriyle beraber göstermek bir transdüysör işidir.
+
+22
+00:12:03,716 --> 00:12:04,836
+Bir sensör işidir.
+
+23
+00:12:05,576 --> 00:12:14,296
+Yani transdüysörler ana konsept, ana başlık altında alınırsa sensörler ve eyleyciler buradaki iki tane alt başlık olacaktır.
+
+24
+00:12:14,875 --> 00:12:20,515
+Burada da biz bu derste de sensör ve eyleyciler noktasında örnekler vereceğiz.
+
+25
+00:12:25,908 --> 00:12:45,908
+Genleşmesiyle o normal dijital olmayan albog termometreler de kendi anlamında yani dijitalize etmiyor ama kendi anlamında fiziksel sıcaklık niceliğini başka bir fiziksel genleşmeyle alakalı metreye dönüştürüp bir ölçüm veriyor. Sonuçta bir fiziksel...
+
+26
+00:12:46,707 --> 00:13:02,607
+Birimi, başka bir birime çeviren devre elemanları veyahut da bu mentaliteyle çalışan her şey bir transfüsy olabilir. Mikrofon da aynı şekilde. Normalde bizim sesimizdeki ses dalgalarını dijitalize ederek bir başka ses dalgasına, elektriksel sinyale çeviriyor.
+
+27
+00:13:04,067 --> 00:13:10,607
+Şimdi burada dediğim gibi sensörlerin performansları var. Bu performanslar tamamen...
+
+28
+00:13:11,539 --> 00:13:28,415
+Fokus olunacak, ilgileyecek olan probleme göre belirlenebilen sensör. Daha doğrusu hangi sensörü kullanacağımızı tanımlarken, biz bu sensörün data sheeti, yani kataloğuna bakarak performansını...
+
+29
+00:13:28,416 --> 00:13:49,156
+Yani uygun olup olmadığına karar veririz. Peki o data sheet'inde, yani katalogunda, tanımlayıcı katalogunda diyelim Türkçesi, belirtilen sensörler hakkında yazan bazı ana başlıklar var. Birincisi mesela range. Yani maksimum ve minimum hangi değerler arasında ölçüm yapabileceği.
+
+30
+00:13:55,984 --> 00:14:17,544
+Örneğin, çok yüksek sıcaklıklarda işlem yapan bir elektronik devre ve ona göre bir karar mekanizması oluşturan bir tasarım yapılacak. Burada tutup da range'i yetmeyen bir sensörün kullanılması mantıksız. Bu noktada range'lerin yani sensörün ölçebileceği maksimum ve minimum değerlerin ne olduğu önemli.
+
+31
+00:14:18,676 --> 00:14:30,596
+Başka bir kritik öneme sahip performans metri ise çözünürlük. Yani en ufak fiziksel olarak hissedilebilecek o...
+
+32
+00:14:30,676 --> 00:14:43,996
+Ufak değişimlerin ne kadar sensör tarafında hissedildiğine ait bir parametre. Yani eğer ki siz çok hassas bir problemde, çok hassas bir ölçüm yapmak istiyorsunuz,
+
+33
+00:14:43,996 --> 00:14:56,176
+Resolution dediğimiz çözünürlüğü çok düşük olan, yani adım basamakları, ölçüm aralıkları çok geniş olan bir sensörü kullanmak mantıklı değildir.
+
+34
+00:14:57,076 --> 00:15:16,016
+Hata payı, şimdi her sensörün bir ölçtüğü değer bir de gerçekte olması beklenen değer vardır. Aslında buna yuvarlama hatası da diyorlar. Biz bunu bahsettiğimizi hatırlıyorum. Analog sinyaller veya dijital sinyallerden bahsederken şunu söylemiştik.
+
+35
+00:15:17,076 --> 00:15:45,036
+Dünya yani normal gündelik hayat continuous waveformdur. Yani devamlı olarak değişkendir. Şu an sıcaklık işte o 12.532 bin bilmem kaç olabilir. Bu bir günler sonrası daha giderebilir. Yani sonsuza kadar giden bir şu anki sıcaklığı bahsedebilirim. Ama şimdi sensörler bu kadar hassas olmayabilir. Rezil oluşunun düşük olabilir. Yani bir error hata payı gerçek ile ölçtüğü arasında hep olacaktır. Tahtaki rezil oluşunun düşükseğer çok da yüksek.
+
+36
+00:15:45,076 --> 00:15:57,235
+Bu da bir parametre. Yani buradaki hata payının ne olduğu da sensörlerdeki kaliteyi diyebileceğimiz veya uygulamaya göre sensör seçimimizde ana etmenlerden bir tanesi.
+
+37
+00:15:58,615 --> 00:16:11,036
+Eccuristic, Ineccuristic Uncertainty dediğimiz bir parametre. Yani doğruluk payı. Yani en fazla beklenen hatanın ne olacağıyla alakalı bir bilgi de veriyor bu data sheetler, kataloglar.
+
+38
+00:16:12,083 --> 00:16:31,763
+Şimdi burada aslında ekuresi ve prezisyon tabirleri illa elektronikte değil pek çok yerde karşınıza çıkabilir. Hatta son sınıfta işte makine öğrenmesi vesaire dersleri aldığınızda bu karşınıza çıkacak. Göreceksiniz ki ikisi farklı parametreler. Türkçe çevrimizde ekuresi doğruluk, prezisyon da kesinlik olarak geçer.
+
+39
+00:16:33,268 --> 00:16:47,708
+Aslında çok böyle tabirler birbirine oturuyor gibi ama arada çok büyük bir fark var. Nedir? Mesela şu aşağıda mavi olan gerçek ölçüm değeri olsun. X'in ne olduğu önemli değil. Mavi ölçmesi gereken bir değer.
+
+40
+00:16:49,556 --> 00:17:11,056
+Şehlerle sensörden ölçülen değerleri aldığımızda eğer ki dağılım şu soldaki gibi ise low precision yani düşük kesinlik, düşük doğruluk deriz. Çünkü ölçmemiz gereken de uzak bir noktaları ölçmüşüz ve dağınık bir şekilde ölçmüşüz. Yani her seferinde farklı ölçme yapmışız. Ki bu en istenmeyen sensör şekli.
+
+41
+00:17:11,576 --> 00:17:14,195
+Öteki tarafta orta B şekline bakalım.
+
+42
+00:17:15,092 --> 00:17:21,192
+Bu arada sormadım ama sunum yansıyor değil mi size? Ben de üç monitör olunca belki...
+
+43
+00:17:21,192 --> 00:17:21,852
+Evet hocam.
+
+44
+00:17:21,852 --> 00:17:35,012
+Tamam. Ortadaki B grafiğine bakalım. Şimdi ölçmemiz gereken değerden çok uzaktaki bir değer kümlenme olmuş ama uzak bir değeri ölçmüşüz.
+
+45
+00:17:35,372 --> 00:17:41,612
+Şimdi burada yüksek kesinlik var. Niye? Çünkü her seferinde sensör aynı hata oranıyla bir değer ölçüyor.
+
+46
+00:17:42,579 --> 00:17:53,880
+Ama baktığımızda ekorolojisi düşük çünkü aslında olması gereken değerden uzakta bir değer ölçü. En istenen sensör tipi zaten C şıklındaki çizime ait.
+
+47
+00:17:55,819 --> 00:18:06,699
+Hem hata payı olacak her sensörde var. Bu error diye tabir ettiğimiz kısımda zaten veriş kitlerinde, data kataloglarında sensörlere ait.
+
+48
+00:18:07,251 --> 00:18:34,811
+Bu veri veriliyor. Bir hata payı var, rezonans aralığı var, salınım aralığı var. Burada da bir hata olacak ama bu hatanın ne kadar ufak olması bizi ekrisinin daha yüksek olmasını sağlayacak. Ve her seferinde sonuçta bir kere ölçüp bırakmıyorum. Bir elektronik devre tasarımı yaptım. Havanın sıcaklığını 10 saniyede bir ölçsün, bana 10 saniyede bir göstersin. Her ölçümde absürt farklı noktalara gitmemesi de bizim keskinliğimizi.
+
+49
+00:18:35,251 --> 00:18:49,412
+Yani en istenen şey yüksek keskinlik, yani her seferinde benzer sonuçlar vermesi ve bu sonuçların gerçekte olan sonuçlara çok daha yakın olarak vermesi istenen sensör mimarisi.
+
+50
+00:18:52,019 --> 00:19:06,119
+Burada da gene bir error ve prez iş arasında bağlantı var. Yani misal oku her seferinde aynı yere atmak keskinliği belirtir. Yani çok keskin atışlar yaptığını söyler ama doğru atışlar yaptığını söylemez.
+
+51
+00:19:06,119 --> 00:19:20,019
+Yani oku eğer ki 12'den vuruyorsan ve her seferinde 12'den vuruyorsan hem doğru atış yapmışsındır hem keskin atış yapmışsındır gibi güncel hayatta ok örneğinden anlatabiliriz.
+
+52
+00:19:20,019 --> 00:19:34,700
+Başka bir parametre, linearite, doğrusallık. Şimdi normalde gündelik hayat doğrusal bir eğrinde değil. Daha doğrusu şöyle söyleyelim. T zamanı ile.
+
+53
+00:19:35,104 --> 00:20:00,284
+Ölçülen sıcaklık değişkeni doğrusal değildir. Doğrusal olmayandır. Ama şimdi şöyle düşünebiliriz. Burada XC'yi biz sensör ve gerçek değer olarak algılarsak bunun doğrusal olması beklenir. Neden? Çünkü basınç 5 atm olan bir şeyi benim sensörüm 5 okudu, 10 atm olan bir şeyi 8 okudu.
+
+54
+00:20:00,660 --> 00:20:26,440
+O doğrusal olmadığı için ileriye doğru yanlış bir kestirim de yapacak demektir. Ve bu ayrım tabii ki doğrusal olmadığı için kestirilemez. En büyük sıkıntı bu. Yani doğrusallığın bize faydası, bir sensördeki doğrusal özelliğin olması bize faydası ileriye doğru kestirim de yapabiliyor olmamız. Ama hiçbir sensör yüzde yüz doğrusal değildir. Çünkü sonuçta bu fiziksel etmen.
+
+55
+00:20:27,539 --> 00:20:52,599
+Sensitivity, hassaslık. Yani dediğimiz resolution ile bu belirge, yani birbirine kuralı olan iki tabir. Onu detaylıca gerek yok anlatmaya. Şimdi sensörlere bakacağımızda sensörler aslında yapı anlamında belli başlı elektrikde de gördük. Yani devre teorisinde de gördüğümüz veya bu derste de göreceğimiz yapılardan oluşuyor. Nedir bunlar? Direnç yıplarından.
+
+56
+00:20:53,044 --> 00:21:04,504
+İndirttiği, yani bobin yapılarından, kapasitif, yani kondansatör yapılarından, fizyoelektrik. Yani fizyoelektrik nedir arkadaşlar? Fikri olan var mı?
+
+57
+00:21:08,372 --> 00:21:10,172
+Hiç duyduk mu fizyoelektrik?
+
+58
+00:21:11,412 --> 00:21:15,652
+Kuvvetle elektrik, gerilim değeri değişen bir şey olabilir mi?
+
+59
+00:21:15,932 --> 00:21:18,032
+Neyle gerilim değeri değişen duyamadım.
+
+60
+00:21:18,092 --> 00:21:19,892
+Kuvvetle ya da basınçla.
+
+61
+00:21:20,152 --> 00:21:23,592
+Evet, basınçla gerilim değeri değişen devre elemanları.
+
+62
+00:21:24,211 --> 00:21:26,152
+Temelde bu da aslında diyot tabanlı olacak.
+
+63
+00:21:26,152 --> 00:21:28,112
+Sonra fotorezistik.
+
+64
+00:21:29,072 --> 00:21:32,912
+Yine güneş eşeğiyle direnci değişen bir sensör şekli.
+
+65
+00:21:33,432 --> 00:21:34,112
+Elastik.
+
+66
+00:21:34,516 --> 00:21:51,996
+Gelme ve yüzme diyelim. Bu elastiki yapıdan doğan gerilim ve bazıları gerilim değiştiriyor, bazıları direnç değiştiriyor ama ikisi de aslında akımın sabit, direncin değişmesinden türüyor. Veya termal, sıcaklık algılayan sensörler.
+
+67
+00:21:52,596 --> 00:22:15,155
+Şimdi bu sensörlere yüzeysel bakacağız. Dediğim gibi çok detaylı anlatmayacağız. Sonuçta siz daha projenizi belirlemediniz. Ayrıca klaslomu incelerseniz orada dokümanları arkadaşlar paylaşmışlar. O dokümanlarda özellikle proje dokümanını iyice okuyalım arkadaşlar. Ve orada istenen çerçevede bir proje bulalım.
+
+68
+00:22:15,763 --> 00:22:40,063
+Bu projeyi bulurken de ne kullandığı sensörler, yani projedeki kullanılan sensörleri, işte bugün anlattığımız tabirlerde kafamızda canlandıralım. Bu ne sensörü olabilir? Mesela sıcaklık ölçen devre dedik. İyi de burada direnç tabanlı bir sıcaklık mı ölçülüyor, gerilim tabanlı bir sıcaklık mı ölçülüyor vs. Bunları analiz etmenizi zaten proje raporlarında da öneride de bekliyoruz.
+
+69
+00:22:40,824 --> 00:22:43,763
+Burada da bunun bir ön hazırlık olarak biz de derste...
+
+70
+00:22:43,763 --> 00:22:49,583
+Bunları ekleyelim istedik. Şimdi sıcaklık sensörlerine baktığımızda çok fazla farklı çeşidi var.
+
+71
+00:22:49,583 --> 00:22:58,783
+Mesela direnci değişen sıcaklık sensörleri. Yani aslında şöyle bir baktığımızda uzun şu kablodan belki şu ortadakini görürsünüz.
+
+72
+00:22:58,943 --> 00:23:04,583
+Uzun bir kablo var ama bu kablonun içerisinde aslında tel sarılmış durumda. Ve bu telin...
+
+73
+00:23:04,624 --> 00:23:28,443
+Direnci rezitif etkisiyle bu ısınıyor. Isındığında burada farklı bir gerilim üretiyor. Yani aslında direnç teli bu. Şurada da mesela sol tarafta da bir sıcaklık rezitif termometre var. Bu termometrinin içerisinde de yollar var ziksek halinde. Ama sıcaklıkla bu yolların direnci değişeceğinden bize farklı bir gerilim üreten sensörler diyoruz.
+
+74
+00:23:29,299 --> 00:23:53,179
+Termistor, ayrı bir lafı bahsedelim, lineer bir rezitif termometrlar, dirençle sıcaklık ölçen termometrlar lineerdir ama çözünürlükleri, duyarlılıkları çok düşüktür. Çünkü o etkiyi, o fiziksel sıcaklığın direnci değiştirme etkisi minimal sıcaklıklar arasından pek mümkün değildir.
+
+75
+00:23:53,811 --> 00:24:02,251
+Bu yüzden daha çok bunlar fabrikasyonlarda, yani fabrikalarda büyük sıcaklık değişimleri tespitinde kullanılır.
+
+76
+00:24:03,763 --> 00:24:28,183
+Termistor, daha ufak sıcaklık sensörleri. Bu da bir rezidans etkiye sahip ama bunlar daha sensitiv, daha ufak, daha kullanışlı, ufak entegrelerde kullanılma, daha ufak çatlı devrelerde kullanılan sensitivitisi, hassasiyetliği bir tık daha yüksek olan sıcaklık sensörleri termistorler. İki tane örneği var.
+
+77
+00:24:30,195 --> 00:24:47,576
+En çok belki de kullanacağınız bir başka sıcaklık sensörü transüstör, yani yarı iletken tabanlı. Bugün yarı iletkenlere değineceğiz. Zaten her hafta, geçen hafta biraz izah edildi. PN Junction nasıl birleşiyor vesaire mevzuları. Bu haftada yine üstünde duracağız diyot anlatırken.
+
+78
+00:24:48,500 --> 00:25:03,139
+Bu en çok bilinen LM35 sıcaklık sensörü ve bu sensör bir yarı iletken yani transistör tabanlı bir sensördür. Ucuz, çok ucuz yani bütün neredeyse sıcaklık.
+
+79
+00:25:03,412 --> 00:25:31,412
+Entegre devrelerinde genellikle bu kullanılır ama dezavantajını çok ilimitli. Tutup da bir fabrikada bunu bir sıcaklık ölçümü için kullanamayız. Yani eksi ediliği 150 derece diyor ama 150 dereceye dayanmıyor açıkçası. Yanıyor. Kılıfını koruyabilirseniz etrafını dayanabiliyor ama çok da o kadar göreceksiniz hani siz de belki yakacaksınız. Ufacık bir gerilim veya akımın yüksek olması bu entegreyi yakıyor.
+
+80
+00:25:31,412 --> 00:25:38,412
+Linear ve EC2-100 yani kolay kullanıma sahip bir sıcaklık sensörü.
+
+81
+00:25:38,412 --> 00:25:49,412
+Fotovoltaik nedir arkadaşlar? Hiç duyduk mu? Gerçi yazıyor ama yine de duyanımız var mı?
+
+82
+00:25:55,539 --> 00:26:20,619
+Çantalara böyle telefonu şarj etmek için solar paneller asılırdı. En azından yolunda yürürken çantam güneşten solar panel içerideki telefonu şarj etsin diye. Belki bilmiyorum ben yaşlı olduğum için eskilerden de kalmış olabildi. Şimdi powerbankler oluşuyor millet. Yani fotovoltaikler arkadaşlar güneş enerjisini alıp elektriğe çeviren.
+
+83
+00:26:21,236 --> 00:26:47,416
+Sensörler. Yani solar, sel diye de geçiyor bunlara ayrıca. Yani güneş enerjisini depolayan, bataryomodunu takarsak buna, güneş enerjisinden aldığı elektriği, elektrik formunu çevirdiği transdüüsör olmasından dolayı elektriği bir powerbank'te şarj olarak kullanabiliyorsun veya telefonu şarj ediyorsun ama çok çok düşük ve akım seviyelerinde üretiyor.
+
+84
+00:26:49,044 --> 00:27:05,764
+Fotodiyotlar da aynı şekilde. Bunun daha ufak kullanımı, sadece üzerinde bir ışığın var veya yok olduğunu anlayabileceğimiz kadar akım üreten versiyonları. Bunlar fotovoltaikler bir tıp daha büyük. Zaten şekilde var.
+
+85
+00:27:07,204 --> 00:27:16,604
+Ama aslında aşağıdaki yazı fotodiyot da yazmış ama aslında bu fotovoltaik, yani fotodiyotun çok daha büyüğü. Fotodiyotlar daha ufak oluyor genelde.
+
+86
+00:27:18,163 --> 00:27:30,524
+Foto Kondaktif, bu da güneş enerjisiyle iletkenliği sağlayan, yani bir elektrik üretimi değil, iki bacak arasındaki iletkenliği sağlayan yapılar sunan bir sensör.
+
+87
+00:27:31,059 --> 00:27:47,259
+LDR'ler bunlardan bir tanesi. Bunu da belki bazı projelerde çok rahat kullanabileceğiniz bir şey. Örnek vermek gerekirse, işte gündüzleyin ışıkları söndüren devre, geceliğinde ışıkları yakan devre. Yani ters mantıkla kullanacağız tabii.
+
+88
+00:27:49,715 --> 00:28:14,375
+String Ağaç, bu da elastiki sensörler demiştik. Onlardan bir örnek. Bu işte üzerinde normalde araçların emniyet kemeri, bipleme sesleri olur ya onun koltukta. Aslında o koltuğun altında böyle bir sensör var. Oturduğunda biri ağırlık ölçmüyor orası. Orası aslında genleşmeyi ölçüyor. Genleşince elim gözükmüyor bunun kamerada.
+
+89
+00:28:16,339 --> 00:28:41,500
+Evet, biraz ufak kalıyor bu. Genleşince direnç rezidif etkisi değiştiğinden farklı bir gerilim ölçüyoruz. Daraldığında farklı bir gerilim ölçüyoruz. Yani aslında sensörün ölçtüğü şey baskının yaptığı gerilimler. Elastik iyilik. Bu da bu tarz sensörlerden biri. Bununla alakalı da proje çok yapılıyor. Sıtrengi aşılarla alakalı. Yani güzel projeler çıkıyor.
+
+90
+00:28:43,028 --> 00:29:03,347
+Switchler zaten muhtemelen çok sıkça kullanacağımız bir sensör. Bu niye sensör? Çünkü burada da aslında mekanik bir açma-kapamayı hissetmeye hedefliyoruz. Bir hareket eden kısım var. O hareket eden kısım devreyi açık devre veya kapalı devre moduna getiriyor. Yani bir bilgi girişi veriyor sensör. Bir veya sıfır olarak.
+
+91
+00:29:05,347 --> 00:29:08,188
+OptoSwitchler, bunu da çok sık kullananları gördüm.
+
+92
+00:29:08,528 --> 00:29:33,587
+Projelerde. Soldaki, aşağıda iki tane optoswitch yani ışıkla anahtarlama, ışığın durumunla alakalı anahtarlama yapan sensörler. İki tane versiyonu var aşağıdan. Soldaki geri geri giden arabaların kameralı olmayan işte bip bip ötüyor ya sonra daha sık bip bip ötüyor vesaire. Oradan örnek verilebilir. Source dediğimiz yerden bir lazer gider.
+
+93
+00:29:34,079 --> 00:29:59,759
+Bu lazerin karşı yerden tepmesiyle, yani ölçeceği duvar veya bir şeyle geri tepmesini sensör algılar. Ne zaman bu yakınlaşınca daha yüksek, uzun olunca daha düşük bir geyelim üretir. Bu anlamda bir sensörleme olarak kullanılabilir. Başka sağdaki de aslında iki tane, burada ayrı, aynı koordinatta bulunan iki sensör burada farklı.
+
+94
+00:30:00,000 --> 00:30:18,259
+Sors her zaman sorsadan gelen ışığı alıyor. Ne zaman bu araya bir kağıt girsin veya bir kağıtla kapıya alın. O zaman onun ışığını almadığı için farklı bir gelin. Aldığında farklı bir gelin üreten. Switchler bunlar.
+
+95
+00:30:19,763 --> 00:30:37,384
+Bunları da çokça kullanılıyor. Odaya giren insanları saymadan kullananlar var. Veya güvenlik alarmı üzerinde kullananlar var. Yani farklı farklı projelerde bunlar kullanılıyor. Optoswitchlerde çok sık gördüğüm sensörlerden biri.
+
+96
+00:30:38,132 --> 00:30:50,471
+Bundan sonraki sensörler aslında yer değiştirme sensörleri. Bunlara çok girmeyeceğim. Yani aslında bir motorun ters olarak kullanılması diyebiliriz. Bunlara çok girmeyeceğim.
+
+97
+00:30:56,051 --> 00:31:03,192
+Evet, ses sensörleri bu da çokça sıkça kullanılan bir sensör şekli. Ki zaten mikrofon ve speaker aslında bunlar.
+
+98
+00:31:03,831 --> 00:31:10,291
+Speaker burada ekçer, mikrofonda aslında girişi alan, algılayan, sesi algılayan bir sensör.
+
+99
+00:31:10,731 --> 00:31:17,071
+Bunu da aslında içerisinde kıpraşan, aynı kulaktaki yapı nasılsa kulakta duyma işlemi nasıl oluyor?
+
+100
+00:31:17,711 --> 00:31:21,831
+Normalde çekici öz, üzeri kemiklerinin kıpraşmasıyla oluşuyor değil mi?
+
+101
+00:31:22,131 --> 00:31:24,051
+Burada da aslında bir kıpraşımın...
+
+102
+00:31:24,051 --> 00:31:26,692
+Tespiti üzerine mikrofon bizim sesimizi algılıyor.
+
+103
+00:31:28,811 --> 00:31:32,951
+Şimdi sensörler devrede en çok nasıl kullanılıyor ona biraz değinelim.
+
+104
+00:31:33,875 --> 00:31:54,855
+Aslında rezidif sensörlerden bahsedecek olursak, yani direnç bir şeyle, bir fiziksel değerle direnci değişen sensörlerden bahsedeceksek. Mesela işte LM35 buraya verilmez belki ama o akıma değişiyor çünkü. İşte rezidif termostuarla, sıcaklığı, dirençle değişen veya strenk karşılar buraya verilebilir.
+
+105
+00:31:56,339 --> 00:32:06,079
+Kullanımı aslında gerilim bölücü anlamında kullanıyor bu sensörler. Neydi gerilim bölücü hatırlıyor muyuz acaba? Kalemim burada.
+
+106
+00:32:14,163 --> 00:32:16,324
+Yerinin bölücüyü hatırlayan var mı aramızda?
+
+107
+00:32:24,468 --> 00:32:29,807
+Yok mu aramızda hatırlayın? Yani ben şuradaki gerilimim ne olur benim?
+
+108
+00:32:39,124 --> 00:32:40,064
+V bölü 2.
+
+109
+00:32:40,964 --> 00:32:45,884
+R bölü 2 mi? Nasıl yani?
+
+110
+00:32:47,304 --> 00:32:48,664
+V bölü 2 dedim.
+
+111
+00:32:49,144 --> 00:32:55,404
+Tamam, pardon. V bölü 2 niye dedin? Bunlar R, R değil.
+
+112
+00:32:55,424 --> 00:32:57,384
+Tabii eşitlerse. Evet, aynen.
+
+113
+00:32:57,864 --> 00:33:00,124
+Yani demeye çalıştın. R2 bölü R1.
+
+114
+00:33:00,384 --> 00:33:00,724
+Aynen.
+
+115
+00:33:02,004 --> 00:33:05,284
+R1 mi yoksa R1 artı R2 mi?
+
+116
+00:33:06,195 --> 00:33:30,855
+Bu değil mi? Yani aslında ben ana koldaki gerilimimi ölçmek istediğim direnç üzerindeki gerilimi birbirine oranla ölçüyorum. Yani gerilimi bölüyorum. Nasıl bölüyorum? R2 bölü R1 artı R2 ile bölüyorum. Ve ana koldaki gerilim V ise şu noktası benim için V çarpı R2 bölü R1 artı R2 oluyor. Şimdi biz buraya sensör bağladığımızı düşünüyorum.
+
+117
+00:33:32,243 --> 00:33:49,823
+Bu sensördeki okunan değere göre buradaki V değişecek mi? Değişecek. Yani eğer ki ben String-Darge kullandığımı düşünüyorum ve üzerinde kimse oturmuyor. Yani koltuğun altına yerleştirdim. Kimse oturmuyor ve burada R kadar bir direnç var. Burada da 5'ye olsun.
+
+118
+00:33:51,203 --> 00:33:56,203
+Ne okuyacağım? V çarpı R bölü artı R'den V bölü altı okuyacağım değil mi?
+
+119
+00:33:56,788 --> 00:34:23,807
+Şu an buna göre bir kontrol mekanizması yaptım. Dedim ki V bölü 6, hadi burası da 60 volt olsun, olmaz da o kadar. Neyse, 10 voltun altındaki değerlerde ben bir şey bibl etmeyeceğim. Yani böyle bir kontrol mekanizması yaptım. Ama ben buraya oturduğumda bu R değeri artacak değil mi? Daha da direnci artacak. Arttığı için de bu örnek verelim 5R olduğunu düşünelim.
+
+120
+00:34:24,096 --> 00:34:44,195
+O zaman ne olacak? 30 volt oldu burası. Doğru mu? Yanlış mı? 5V, 10V? Yok doğru, 30 volt oldu. Yani arttı. İşte buradaki şu gerilim artışıyla alakalı yeni bir değer elde ettik. Yani biri oturdu bilgisi, fiziksel bir bilgi. Bana elektronik anlamda ifade eden gerilim bilgisini demişti.
+
+121
+00:34:45,012 --> 00:35:04,972
+Aslında sensörler gerilim bölücü devre olarak kullanılırlar genelde. Yani direnç yapısında. Siz de belki devrimizde bulacağınız proje önümüzde bu anlamda kullanıyor olabilirsiniz. Bunu analiz etmenizi bekliyoruz projelerden.
+
+122
+00:35:07,827 --> 00:35:15,427
+Tabii, Switch'lerin kullanımı da mevcut bu anlamda. Neden? Çünkü bir gerilim bölücü, eğer Switch açıksa buradan V0 ne okurum?
+
+123
+00:35:20,500 --> 00:35:29,500
+Mesela şu an ne okurum buradan şu durumdayken? Sıfır okurum değil mi? Switch kapalıysa, yani şu devre kendini tamamlarsa ne okurum?
+
+124
+00:35:30,500 --> 00:35:37,500
+V. Ne acaba? Tam tersi söyle.
+
+125
+00:35:39,500 --> 00:35:45,500
+Evet, şu an ama Switch açıkken V sıfırdan B mi okurum ben?
+
+126
+00:35:46,003 --> 00:35:47,743
+Hayır, kapalı iken dedim.
+
+127
+00:35:47,743 --> 00:36:10,123
+Tamam, kapalı iken V sıfırdan V okurum diyorsun. Ama bak şöyle, normalde V'nin oluşabilmesi direncin üzerinden geçmesi lazım. Ben buraya kısa devre edersen bir şey okuyamam ki. Çünkü sonuçta okumam için üzerinden geçmesi gerekir. Geçmeyecek kısa devre geçişler.
+
+128
+00:36:11,603 --> 00:36:28,083
+Açıkken bu anahtar o zaman V0'dan bir beli okurum. Kapattığım vakit V0'ın herhangi bir değer olmaz. Ama anahtarın sıkıntısı şu, kapatma esnasında bir bouncing oluşuyor. Bunu şeyde çok göreceksiniz.
+
+129
+00:36:29,083 --> 00:36:37,563
+İşte eğer ki bir elektronik devre projesi yaptınız, butonlu bir proje ama butona sensitif olarak değişen bir state'i var.
+
+130
+00:36:38,099 --> 00:36:44,699
+O zaman butona basmakla pek çok durumu birden atlatabileceksiniz.
+
+131
+00:36:45,079 --> 00:36:47,099
+Atlatmış olacak. O da bouncing'den dolayı.
+
+132
+00:36:47,319 --> 00:36:51,039
+Tam olarak buraya bu switchlerin bir sıkıntısı var.
+
+133
+00:36:51,400 --> 00:36:52,460
+Tam olarak şey yapamıyor.
+
+134
+00:36:52,920 --> 00:36:56,000
+Yani birden kapanmıyor eğer ki manyetik değilse.
+
+135
+00:36:57,680 --> 00:37:02,260
+Hocam, switch açıkken V0'dan bir değer okuruz dediniz değil mi?
+
+136
+00:37:02,804 --> 00:37:27,744
+Switch kapandığında bir değer okumayız. Switch açıkken bir değer okuruz. Ne okuruz peki? İşte buradaki VD'yi okuruz. Şöyle düşün, burası 0 volt. Şu an devre birbirini tamamlamıyor. Ben buraya bir ölçü aleti koydum değil mi? Burası maksimum bir dirence sahip. Sonsuz. Sonsuz 10. Ya açık devre bu demek değil mi? Sonsuz 10 demek.
+
+137
+00:37:28,179 --> 00:37:31,980
+Ve bu sonsuz dirençin üzerindeki geyelim aslında buradaki geyelim olacak.
+
+138
+00:37:34,039 --> 00:37:38,779
+Switch açıkken V0 buradaki V'ye eşit olur.
+
+139
+00:37:41,119 --> 00:37:44,300
+Şu dikdörtgen olarak gördüğünüz şey bir direnç değil mi?
+
+140
+00:37:45,300 --> 00:37:46,639
+Üstteki mi? Evet.
+
+141
+00:37:52,596 --> 00:38:13,716
+Her şeyi diyorsun sen. Yani V çarpı R sonsuz bölü R sonsuz artı R kadar okumaz mıyız mı diyorsun? Ama şöyle bir limitleme V çarpı. Şimdi açık devre dediğimiz yapı sonsuz direnç demek değil mi?
+
+142
+00:38:15,027 --> 00:38:37,747
+Tamam, o zaman bunun üzerindeki gerilimi ölçeceğim değil mi? V çarpı sonsuz direnç. Şöyle sonsuz 10 bölü. Sonsuz 10 artı R dedi. Şimdi buradan dimitlersek yani buradaki V'yi okumaz mıyız? Sonuçta ufacık bir şey kalırsa olsun yanında.
+
+143
+00:38:37,747 --> 00:38:40,467
+Tamam, anladım hocam. Teşekkürler.
+
+144
+00:38:42,579 --> 00:39:03,319
+Kapattığımızda ne olur peki? Kapatalım. Kısa devre olacak. Kısa devre olan bir şeyin üzerinde zaten bir gerilim birikmez. Neden? Çünkü direnç yok. Dirençimiz 0.10. V çarpı 0 bölü 0 artı R'den ne gelir? 0 gelir. Değil mi?
+
+145
+00:39:06,996 --> 00:39:07,496
+Evet.
+
+146
+00:39:11,923 --> 00:39:39,123
+Kapasite, kondansatör ve bobin kullanan sensörler de var ama genelde bu sensörler AC Circuit, yani alternatif akımda çalışıyor. Çünkü biraz devleti örneğinde hatırlarsanız, kondansatör ve indiktör, frekans dediğimiz, AC'de bir periyoda tekabı gelen frekans bilgisiyle bir depolama yapıyordu. Ne kadar sık frekans var, o kadar az depolama.
+
+147
+00:39:39,923 --> 00:39:50,543
+Ne kadar uzunsa o kadar uzun sürede depolama yaptığı için 5D, 4D mevzusunu hatırlarsanız, aslında EC devreler üzerinden çalışan sensörler mevcut.
+
+148
+00:39:51,684 --> 00:40:06,724
+Şimdi geldik sensörler dışında, eyleyiciler. Bu eyleyiciler aslında basitçe düşünecek olursak, motorlar veya fan, yani dış dünyaya sensörden okuduğum veri işledikten sonra yansıttığımız eyleyiciler.
+
+149
+00:40:07,380 --> 00:40:23,159
+İşte bu ısıtıcı olabilir. Hani havayı ısıtan veya işte fan olabilir veya işte motor olabilir gibi dış dünyaya output üreten eyleyiciler.
+
+150
+00:40:24,380 --> 00:40:32,720
+Isıtıcı anlamında direnç heaterları var zaten. Işık da bir tabii eyleyici.
+
+151
+00:40:33,523 --> 00:40:39,523
+En çok bilenini led değil mi? Ledlerde bugün göreceğiz. Diyot yapısında yapılacak.
+
+152
+00:40:39,523 --> 00:40:49,523
+Ve farklı gerilim seviyelerinde farklı renkte ışıklar üreten eyleyciler. Yani dışarıya ışık veriyor, bir input almıyor, dışarıya veriyor.
+
+153
+00:40:49,523 --> 00:40:55,523
+Output olan sensör demeyeceğim eyleyici bunlar. Yani ek bir şey açırlar.
+
+154
+00:40:57,076 --> 00:41:11,016
+Tabi bunun da versiyonları var. Liquid kristaller var. Bir sıvıyla bu ekrana yazma notları var. Normal ledler zaten bir gelimin farklı gelin boyutlarında farklı renkler oluştuğu için farklı renkli ledler oluşuyor.
+
+155
+00:41:13,331 --> 00:41:40,131
+Sonra başka ışıkla alakalı ekçi açıları örnek vermek gerekirse fiberoptik iletişimi. O da aslında biliyorsunuz ki cam boruları içerisinde ışığın iletimiyle aslında iletim sağlanıyor. O yüzden çok daha kıslı normal kablonitlere nazara. Burada optik polimer veya cam kullanılan iki mimarisi izah edilmiş ve bir tane de ışık sensörü olarak da lazer biyot kullanılıyor.
+
+156
+00:41:42,003 --> 00:41:58,003
+Selenoidler, manyetik alan bu da bir eyleyici, ekçe içir. İçerisinde manyetik alan var ve bunu tutuyor. Ne zaman biz buraya bir gelimi verdiğimizde manyetik alan oluştuğu için selenoid başı dediğimiz şu baş içeriye.
+
+157
+00:41:58,387 --> 00:42:16,728
+İçeride kalıyor. Yani mıknatıs çekiyor. Ama işte gerilim öyle bir şey oldu ki buradan bir gerilimi kestik. Yani sensörden okuduğumuz veriye göre gerilim kesildi. Bu selenoid başı dışarıya atar. Böyle bir eyleyici, ekçüe içir. Onu off modu için kullanılıyor genelde.
+
+158
+00:42:18,164 --> 00:42:37,344
+Başka hani eyleyici olarak aslında ölçü aletlerinin grafik şu, tabii bizdekiler dijital şu anda, analog olan göstergeleri de aslında bir eyleyici. Arka tarafta manyetik alana göre bu değişen, hareket eden ve bize bir bilgi gösteren, alt kutureten şeylerdir aslında ölçü aletleri.
+
+159
+00:42:38,931 --> 00:43:01,831
+Motorlar da en bilinen eyleçlerden. AC motor, bildiğimiz gibi yüksek güç için kullanılan motorlar. DC motorlar daha düşük, oyuncak amaçlı veya farklı düşük güç tüketen, isteyenler için geçerli ama arada AC, DC'deki DC'nin avantajı daha prez için, daha kesin olarak çalışması.
+
+160
+00:43:03,507 --> 00:43:29,267
+Step motorları adım motorları diye geçer. Aslında burada bir de biz pozisyonla alakalı da kontrolü sağlarız. Hatta step motorla alakalı şöyle bir yapısı var. Normalde buraya artı verdim, buraya eksi verdim. Motorun yönü böyle durur. Sonra ben bu artı pozitifleri, yani polarizasyonu sağa doğru kaydırdım. Motor adım adım sağa gider.
+
+161
+00:43:30,003 --> 00:43:38,003
+İşte bu döngüyü yaptığım sürece de Step Motor tık tık tık tık tık tık atacaktır. Ama işte örneğin...
+
+162
+00:43:38,483 --> 00:44:06,383
+En çok bu nerede kullanılabilir onu anlatalım. Misal kamera, yani etrafı görecek kamera ama etrafı görmesi için kameranın altında bir motor modülü var. Kamerayı taktım, motor döndürüyor etrafı. Şimdi burada DC motor kullanırsak 5 volt verdiğimde motor çalışacak, vermediğimde çalışmayacak. 5 volt verdiğimde motor çalıştı, iyi de bakmak istediğim yer belli bir açıysa orada 5 volt kestiğimde şak diye durmayacak.
+
+163
+00:44:06,483 --> 00:44:30,163
+Yani lokasyon bilgisini DC motorlarda kaybediyorum. 5 voltu verdiğim sürece çalışacak sonra keseceğim duracak. Evet ama yani ya görüntü geç geliyorsa, ben gördüğüm an kestiğimde daha ileride durursa gibi farklı yaklaşımlar var. Ama step motorlarda her biri bir adım. Diyorum ki ben 3 adım elektrik ver. A, B, C, tık tık tık duracak.
+
+164
+00:44:30,675 --> 00:44:46,555
+Daha kontrol, daha yön eyleme kontrol olarak baktığımız kısmın açısından step motorlar. Robotik alanında da çok çok kullanılan motorlardır step motorlar. Daha çok kullanılıyor. Hatta burada örnek de vermişiz herhalde.
+
+165
+00:44:49,295 --> 00:44:52,855
+200 adıma kadar açılan step motorlar var.
+
+166
+00:44:57,748 --> 00:45:25,748
+Ses eyleyicileri, hoparlörler, ultrason sensörleri, ultrasonik sensörler. Ultrasonik sensörler de güzel. Aslında o sensör anlamında anlatmak lazımdı buradaki eyleyici ama ultrasonik ses çıkaran sensörler buradakiler ama bir de ultrasonik input olarak aldığı sensörler var. Robotta da çok kullanılan sensörlerden. Ucuz olması, ses sinyali gönderip karşıdan seken sese göre etkili.
+
+167
+00:45:25,748 --> 00:45:27,627
+Tahtonik Cizmi Tespik'ten Sensörler.
+
+168
+00:45:32,692 --> 00:45:58,391
+Evet, genel olarak bahsettiğimiz kısımlar bunlar. Şimdi bir de ölçü aletlerine bakalım. Bizim de aşağıda sizin ölçmenizi istediğimiz laplarda kullanacağınız ve kararı rüyanız osyoskop yapısı var. Osyoskop analog dijital olabilir. Aşağıdakiler hem analog var hem dijital var. Nasıl ayarladılar bilmiyorum. Ve bir de dijital multimetrelerde değer ölçümü için kullanacağımız ölçü aletleri.
+
+169
+00:45:58,835 --> 00:46:22,035
+Şimdi şunu hiçbir zaman unutmayalım. Ben her daim DAP'a girdiğim asistanlıkken de söylüyordum. Oselaskop bir değer, devreye bir gerilim, devreye bir akım, devreye herhangi bir şey vermez. Frekans vermez. Oselaskop dediğimiz alet adı üstünde yani ölçü aletidir.
+
+170
+00:46:22,708 --> 00:46:30,067
+Tamam mı? Bunu hiçbir zaman unutmayalım. Yani mesela şöyle bir ostroskopu bağladık. Şöyle bir grafik çıktık.
+
+171
+00:46:33,780 --> 00:46:42,900
+Tamam mı? Şimdi ben bu grafiği böyle görüyorum ve bir şeyler yaptım burada, ayarlar yaptım. Bu grafiği şöyle görüyorum.
+
+172
+00:46:47,123 --> 00:47:00,983
+Şimdi ben girişteki gerilimi değiştirmedim. Girişteki akımı değiştirmedim. Girişteki frekansı değiştirmedim. Sadece ölçü aletinin çözünürlüğünü değiştirdim.
+
+173
+00:47:02,931 --> 00:47:17,632
+Yani bu bir ölçü aleti ve ekrandaki çözünürlüğü oynuyorum ben. Bunu hiçbir zaman unutmuyoruz. Yani örneğin girişteki gerilimi 5 volt yap bakalım dediklerini de tutup burayla oynamayın. Burayla alakalı bir şey değil bu.
+
+174
+00:47:18,260 --> 00:47:39,640
+İki voltu beş volt yapın dediler. Burayla alakalı bir şey değil bu. Tamam mı? Ölçü aletidir bu. Gerilim üreten, akım üreten. Şurayı kullanırsanız tabii burası bir beş voltlu yanlış olmasın. Beş volt tepeden tepeye bir kare dalga üretiyor ama burası sadece test ucu. Gücü buradan almayacaksınız sizler herhalde.
+
+175
+00:47:42,675 --> 00:48:02,875
+Tamam, ölçü aleti. Herhalde baktığım laf yönünüze ilk hafta size izah edeceklermiş zaten. O yüzden şu an sadece ana tabiriyle ölçü aleti olduğunu bilirim. Bu da dijital ölçü aleti, dijital hosyoskop. Multimetrelerde üstünde hem gerilimi hem akımı.
+
+176
+00:48:04,115 --> 00:48:22,276
+Hem de direnç değerini ölçmemize yarayan aletler aşağıdakiler. Bunlar aslında avometre diyorlar. Aklınızda bulunsun. Avometrelerle aşağıda da ölçüm yapabileceksiniz. Laplarda haftaya başlıyorlar da laplarınızla.
+
+177
+00:48:30,643 --> 00:48:56,603
+Ne gerilemiyse, hangi noktanın gerilemiyse oraya paralel girmeniz lazım. Bunu hiçbir zaman unutmuyoruz. Akım ölçecekseniz, akım sekmesine bunu getirmeniz ve ölçeceğiniz hangi kolun akımıysa o kolu diskonekt edip, yani ana koldan veya işte başka bir kendi devrenin tamamlandığı koldan çıkartıp araya seriye girmeniz lazım.
+
+178
+00:48:56,960 --> 00:49:04,119
+Amperi seri ölçelim, akımı, voltu yani gerilemi paralel bağlayarak ölçelim.
+
+179
+00:49:05,079 --> 00:49:14,759
+Direnci nasıl ölçeceğim? Bir eş değer devre direnci veya herhangi bir direnci ölçeceksem kesinlikle devreye bağlı olmaması lazım.
+
+180
+00:49:14,759 --> 00:49:21,759
+Yani devre üzerinde, yani devreden kastım şu, gerilim kaynağı bağladınız.
+
+181
+00:49:22,579 --> 00:49:46,460
+İşte burada bir direnç var, burada bir direnç var, burada da bir direnç var. Ve siz eş değerde bu devre tamamlanıyor. Eş değer devreyi ölçmek istiyorsunuz. Bir buraya tuttum, bir buraya tuttum şu probların ucunu. Bu eş değer direnci ölçmez arkadaşlar. Eş değer direnci ölçmek için bunu buradan çıkartacağım. Devre olmayacak.
+
+182
+00:49:47,284 --> 00:49:56,884
+Bunun üzerinden ölçeceğim. Ölçtüğüm değer bu ikisinin seri, paralel. Bu paralelliğin şuna seri olduğu değer neyse bunu ölçelim.
+
+183
+00:49:59,284 --> 00:50:07,284
+Tamam mı? Bunlar ufak nüanslar. Lahtta işinizi vereceğini düşündüm. Bunları gözden kaçırmayalım.
+
+184
+00:50:08,851 --> 00:50:36,491
+Genel olarak bu derste, giriş dersimizde daha bir ders daha yapacağız. Sensörleri izah etmeye çalıştık. Çünkü sensörler sizin projemizde kullanmanız gereken, hatta actuatorlar kullanmanız gereken en önemli iki şey. Bunları seçerken nelere dikkat etmemiz lazım? Veya seçtiğiniz hazır proje bulunuz, sensör bilgilerini açıp okumanız gerekir ki, neyi nasıl ölçüyor? Bunu alplayabilmeniz.
+
+185
+00:50:36,851 --> 00:51:03,531
+Bunlarla alakalı genel parametreleri, genel tabirleri izah etmeye çalıştık. Ödeviniz şu. Projenizi 15 Nisan demişler. Belirlemeniz lazım ama ben olsam o kadar gece kalmam. Bir an önce projeyi belirlerim. Çünkü sonuçta yol alacaksınız.
+
+186
+00:51:04,384 --> 00:51:16,903
+Kalınca işler çok sıkışıyor. İkinci ödeviniz sizin. Projenizde kullanacağınız sensörün data sheet'ini okumak. Data sheet veyahut da veri kataloğu diyorlar Türkçe selamlar.
+
+187
+00:51:19,603 --> 00:51:37,023
+Mesela siz projenizde sıcaklık sensörü veya sıcaklık ölçümü yapacaksınız. Sıcaklık sensörü de LM35 seçtiniz. Demin anlatmıştım. Bu LM35'in data sheetini okumanızı ve precision, yani şurada sunumun başına gelin tek tek yazmayın.
+
+188
+00:51:45,331 --> 00:52:10,471
+Range, Resolution, Error, Accuracy gibi burada gördüğünüz hepsi bir sensörde olmak zorunda değil. Hepsi bir sensörün data sheetinde belirtilmek zorunda değil. Belirtildiği kadarıyla bunu data sheetten okuyup, elle yazıp sisteme PDF olarak yükleyeceksiniz. Ben şimdi online yıldızdan ders sonunda ödevi açacağım. Oraya yüklemenizi istiyorum.
+
+189
+00:52:11,347 --> 00:52:36,607
+Örnek verelim, DM35. Diyeceksin ki, range'i data sheet'inde blablabla. Resolution'ı data sheet'inde 0.01 santibrat derece blablabla. Neyse işte artık. Error'u yani hata payı, data sheet'inde diyor ki artı eksi yüzde beş diyor mesela. Veya işte Ecurice'i diyor ki artı eksi yüzde on diyor gibi.
+
+190
+00:52:37,715 --> 00:52:46,835
+Bunları Data Sheet'inden okuyup, buraya kısa kısa, çok izah etmenize gerek yok, Data Sheet'i okuyup gördüğünüzü görmem lazım.
+
+191
+00:52:48,016 --> 00:52:51,275
+Ama tabii Projeniz'de kullandığınız sensör olmasını istiyorum.
+
+192
+00:52:52,016 --> 00:52:56,335
+Ya tutup da işte LM35 anlatma hocam, ben de LM35 enerjilik yapayım değil.
+
+193
+00:52:57,235 --> 00:53:12,375
+Çünkü sizin projeleriniz zaten online Excel formu açılmış. Oraya yazmanız istenecek. Orada ben Koreli olup olmadığına bakacağım. Bu sensör, gerçekten izlettiğiniz sensör projede kullanılır mı, kullanılmaz mı? İnceleyeceğim.
+
+194
+00:53:14,955 --> 00:53:17,775
+Tamam mıyız? Ödevi anlaşıldı mı?
+
+195
+00:53:22,164 --> 00:53:26,844
+Devamlaşıldıysa arkadaşlar, dur bakayım. Bir soru var herhalde.
+
+196
+00:53:30,164 --> 00:53:37,404
+Evet, o kısmı. Hangi sensörü kullanmazsan [öğrenci]?
+
+197
+00:53:49,043 --> 00:53:56,363
+Evet sıkıntı olur dedim ya. Projenizi belirleyeceksiniz. Projenizdeki sensörün data sheetini bana yazacaksınız.
+
+198
+00:54:02,996 --> 00:54:17,936
+Projeyi nasıl ayarladıklarını bilmiyorum. Grup 1'in böyle bir ödevi de olmayabilir. Ben grup 2 olarak size verdim. Hani hoca belki verir belki vermez bilmiyorum. Benim grubumun ödevi bu, ikinci ödevi.
+
+199
+00:54:24,724 --> 00:54:35,164
+Projeler 4 kişiye yazılmış Excel edendi. O kısım tam emin değilim ama 4 kişi de olabiliyorsunuz. Tam bilmiyorum şu an. Yani asistanlar size duyulacaktır.
+
+200
+00:54:37,684 --> 00:54:45,164
+Yüz dedik ödevlerle alakalı sonra ayarlarım. Yani şu an belli bir yüz dedik yok. Ama sonuçta ödevleriniz boşa gitmeyeceği garanti.
+
+201
+00:54:47,884 --> 00:54:49,503
+Muhtemelen %10 falan olur.
+
+202
+00:54:53,972 --> 00:55:17,192
+Tamam arkadaşlar, bir ara verelim hemen. Su vesaire bir genizimi ıslatayım ben de. Dört kişiyi sadece bulup ikiye. Bilmiyorum [öğrenci], onun duyurusunu yaparlar diyorum. Ama yani muhtemelen karma olmanıza izin verirler diye öngörüyorum. Ama bilmiyorum, onun duyurusu yapılır.
+
+203
+00:55:20,724 --> 00:55:38,483
+Saat şu an 11'e 4 var, yanlış olmasın. 11'e 10 geçe tekrardan buradayız arkadaşlar. Diyotlara giriş yapacağız. Önemli bir giriş olur. Lütfen katılalım. 11'e 10 geçe görüşürüz.
+
+204
+01:05:55,795 --> 01:06:08,735
+Evet arkadaşlar, başlayalım. Ekran geliyordur diye düşünüyorum. Evet, geldik. İlk yarı iletken devlet elemanımıza diyor.
+
+205
+01:06:13,811 --> 01:06:32,591
+Evet, şimdi ilk etapta diyotu kesinlikle bilmemiz gereken bir kuralı var zaten. Nedir? Tek taraflı akım geçiren devre eleman diyeceğiz. Hani yüzeysel anlamda ilk bileceğimiz şey bu ibadet.
+
+206
+01:06:39,699 --> 01:06:59,299
+Sadece ve sadece tek taraflı akım geçirir. Bu en çok öğrenmemiz gereken, bilmemiz gereken bir kayda olacak. Ne demek istiyorum ben? Diyotun sembolü ayrıca şu sol tarafta gösterdiğimiz gibidir. Ve iki terminal yani iki tane ucu vardır, iki bacağı vardır.
+
+207
+01:06:59,760 --> 01:07:04,660
+Ve bu iki bacağının arasında bir iletim olup olmama durumu söz konusudur.
+
+208
+01:07:04,660 --> 01:07:26,220
+Şimdi diyotu doğru olarak bağladığımda iletime geçecek. Doğru olarak bağlamadığımda bir şekilde ters bağladığımda da diyot açık devre, open circuit olarak bir akımın sıfır olan, yani akımın geçmediği bir devre elemanı olarak kullanacağız.
+
+209
+01:07:27,443 --> 01:07:54,043
+Tamam mı? Yani en ideal, en bilinen, en basit tabiriyle bir diyot eğer ki doğru bağlanırsa akım geçirecek. Ne kadar bir akım? Sonsuz bir akım ideal olarak. Sonsuz bir akım geçirecek. Yani devrenin beslediği, istediği bütün işte devre tarafından diğer devre ekipmanları, direnç kelimelerine neyse çok önemli, üst limiti olmayan bir şekilde sadece devreli ki o.
+
+210
+01:07:54,900 --> 01:08:05,300
+Diğer elemanlarla belirlenmiş akımı geçirecek. Ama eğer ki biz doğru bağlayamazsak açık devre olacak ve akım geçmeyecek.
+
+211
+01:08:06,599 --> 01:08:12,900
+Neden bu peki böyle? Diyod'un karakteristiğine biraz daha detaylıca bakacaksak.
+
+212
+01:08:12,900 --> 01:08:15,900
+Şimdi ne dedik? Diyod benim için...
+
+213
+01:08:18,131 --> 01:08:45,491
+İletim bölgesinde sonsuz akım geçiriyor. Bu bir akım gerilim grafiği. Yani sağ taraf 0 voltun üstünde olan her yerde akımı geçiren bir devre eman olduğunu gösteriyor. İletken değil, yani kesimde olduğu bölgede ise ki negatif gerilimler olarak bunu biz analiz edeceğiz. Akımın yani I değerinin 0 olduğunu görüyoruz. Yani herhangi bir akım geçmiyor.
+
+214
+01:08:47,764 --> 01:09:07,644
+Biz burada iki tane tabirden, Forward Resistance ve Reverse Resistance'dan bahsedeceğiz. Yani ileri yöndeki direnç, geri yöndeki direnç. Eğer ki ben doğru bağladıysam bu diyotu, ileri yöndeki direnci benim için sıfırı gösterecek. Çünkü bir direncin olmadığını idealde kabul edeceğiz. Pratikte bu böyle değil ama.
+
+215
+01:09:08,307 --> 01:09:16,788
+Geri yönde, yani reverse, ters yönde bir dirençten bahsedeceğimiz vakittir. Sonsuz bir dirençten bahsedeceğiz ki akımı sıfır olsun.
+
+216
+01:09:19,028 --> 01:09:40,228
+Şimdi yarı iletken materyallerine biraz daha denelim. Aslında bizim elektronikte 3 tane yarı iletken materyalimiz var. Silisio, Germanyum ve Gadium Arsenio. Bunlar kendi içerisinde ufacık bir farklı saflaştırma prosedüründen sonra N ve P type dediğimiz yani
+
+217
+01:09:41,971 --> 01:10:04,572
+Elektronların daha fazla olduğu ve proton, yani holes diye de İngilizce çevirdiğimiz, protonların daha fazla olduğu iki farklı materyal moduna geçiriliyor. Yani normal bir silisyon veya germanyumun bir saflaştırma, doping diyoruz buna, doping işleminden sonra N-type veya P-type olma durumunu söz konusu.
+
+218
+01:10:05,684 --> 01:10:25,644
+Peki neden N-type ve P-type yapıyoruz? Çünkü biz bu ikisini birleştirerek demin ki söylemeye çalıştığımız o işte tek yönünde akımın geçtiği, tek tarafta akımın geçmediği yapıyı oluşturmaya hedefliyoruz. Şimdi N-type'da elektronlar fazla, P-type'da da protonlar yani hostlar fazla diyoruz.
+
+219
+01:10:26,292 --> 01:10:34,311
+Şimdi normalde bu ikisini yan yana getirdiğimizde biz bir junction diye tabir ettiğimiz PN junction oluşturuyoruz.
+
+220
+01:10:34,311 --> 01:10:41,471
+Proton yani P type'ın ve N type'ın beraber birleşimini gösteren bir junction oluşturuyoruz.
+
+221
+01:10:41,572 --> 01:10:48,311
+Normalde teoride yan yana bunlar gelir. Evet ama burada biz bir de...
+
+222
+01:10:49,684 --> 01:10:57,463
+Şurada, yan yana geldiğinde aralarındaki elektron akımlarının, yani elektron transferlerinin olmasına izin veriyoruz.
+
+223
+01:10:58,304 --> 01:11:04,344
+Şimdi P-type ve N-type iki tane yapıyı yan yana getirdik. Aralarındaki elektron akış verişi başladı.
+
+224
+01:11:05,283 --> 01:11:09,744
+Şimdi P-type'de dedik protonlar fazla. N-type'da da elektronlar fazla.
+
+225
+01:11:10,244 --> 01:11:16,564
+E şunu biliyorum ben, elektronlar protonlara yapışmak isteyecek. Yani buradan buraya elektron akışı geçecek, değil mi?
+
+226
+01:11:18,323 --> 01:11:26,203
+Doğru. Elektronlar buradan, yani eksiler bu tarafa, artılar da bu elektronlara yapışmak isteyecek, bu tarafa geçecek.
+
+227
+01:11:26,623 --> 01:11:41,003
+Ve bir süre sonra bu kısım dengesini tekrar sağlayabilmek için yan yana getirdiğimizde ortada bir depletion region diye talip edeceğimiz bir bariyer oluşturacak.
+
+228
+01:11:41,716 --> 01:12:06,436
+Yani şu bariyerde, şu orta kısım balans noktasına gelecek. Elektrik yüklerinin eşit olduğu, herhangi bir pozitifin yani pi'nin fazla ve n'nin fazla olmadığı ikisinin beraber toplu halde durduğunda eşit bulunduğu bir bölge oluşuyor. Biz bu kısma bariyer bölgesi, İngilizcesi Deplation Region olarak belirteceğiz.
+
+229
+01:12:09,011 --> 01:12:18,671
+Tabi bu bölge oluşurken ufak bir akımlar oluşacak. Ters yönde bir akım, düz yönde bir akım. Bu akımlara da değineceğiz şimdi ne olduğunu.
+
+230
+01:12:20,471 --> 01:12:23,671
+Evet, burada tekrardan özetliyoruz doping işlemini.
+
+231
+01:12:30,804 --> 01:12:39,164
+Fazla Olduğu, Entayp dediğimiz şey ise elektronların fazla olduğu ve bunlar aslında mobile yani hareketli yükler diye tabir edeceğiz.
+
+232
+01:12:39,164 --> 01:12:51,604
+Ve birleştirdiğimizde bu ikisini biz hareketli yük olan P-Tayp'taki P'lerin bu tarafa, Entayp'taki N'lerin elektronların da bu tarafa gelip şu arada bir bariyer oluşturmasını konu alacağız.
+
+233
+01:12:51,783 --> 01:12:58,363
+Neden bir bariyer oluşuyor? Çünkü dengesiz iki taraf birbiri arasındaki transferle şu ortadaki bölge dengeli hale geliyor.
+
+234
+01:12:58,771 --> 01:13:02,092
+İmbalanslar Balans Modu. Bunu oluşturuyor şuraya.
+
+235
+01:13:05,716 --> 01:13:15,935
+Evet, depilation layer veya buna bir başka ismi de de space charge layer diyorlar. Ama bizim en çok kullanacağımız depilation layer ifadesi olacak bu nokta için.
+
+236
+01:13:22,323 --> 01:13:28,423
+Evet, yani biz bu kısma, Depthation Layer kısmına potansiyel bir bariyermiş gibi davranacak diyeceğiz.
+
+237
+01:13:28,423 --> 01:13:35,283
+Yani şu iki bariyerin içerisindeki bölgenin toplam yükleri gene balans moduna geçecek.
+
+238
+01:13:36,103 --> 01:13:43,703
+Ama bir taraf bu tarafı balansladığı için, öteki taraf da bu tarafı balansladığı için buraların da balans olmasını sağlayacak.
+
+239
+01:13:46,484 --> 01:13:58,184
+Peki, potansiyel olarak farklar art, zamanla yani şuradaki Distance Depth, Leash'inleri arttıkça, genişledikçe, Distance'ı arttıkça potansiyel farkımız da artacak.
+
+240
+01:14:01,684 --> 01:14:13,684
+Şimdi burada iki tane akım oluşacak dedik, potansiyel baliyerde. Yani bu depresyon için oluşurken bir tanesi divisyon akımı. Ötekisi de herhalde buna salınım diye Türkçe'ye çeviriyorlar.
+
+241
+01:14:13,684 --> 01:14:25,684
+Bilmiyorum, drift akımı. Şimdi defisyon akımı aslında artı yüklerin eksi tarafa. Tekrar çizelim isterseniz. Şurada bir depresyon için olsun.
+
+242
+01:14:28,627 --> 01:14:40,363
+Buralar artı, şuralar eksi, şu artı, buralar eksi. Şimdi difüzyon akımı bizim aslında...
+
+243
+01:14:40,372 --> 01:14:57,712
+Ardelerin bu tarafa gitmesinden doğan bir akım. Drift akımı ise eksilerin bu tarafından geçmesiyle oluşan bir akım. Bunlar çok cüzi akımlar. Hani bunları biz ideal diyot dediğimizde dikkate bile almayacağız. Sadece tabir olarak gösterelim.
+
+244
+01:15:08,372 --> 01:15:15,252
+Bizim için ufak iki tane akımın oluşmasına neden oluyor. Biri difüsyon akımı, ötekisi de salınım, drift akımı.
+
+245
+01:15:17,252 --> 01:15:23,592
+Burada da örnek var. Şimdi gelelim peki diyotun.
+
+246
+01:15:24,115 --> 01:15:42,556
+Bağlayacağız devre sonuçta. Şu an diyodun havadaki durumunu biz analiz ettik. Yani ucunda herhangi bir gerilim yok. Ben bir P-type ürettim. Yani bir germanyum veya sülüstrümün yeri iletkenliği içerisine birazcık P yani protonları fazla olsun diye saflık yani doping yapıp işlemi yaptım.
+
+247
+01:15:42,556 --> 01:15:51,556
+N-type içinde yine başka bir germanyum içerisine yine doping işlemiyle N-type moduna getirdim ve bu ikisini havada birbirine herhangi bir gerilim bağlamadan uçlarına.
+
+248
+01:15:52,115 --> 01:16:17,916
+İç içe yan yana elektron ve protonların değişimini sağlayabilecek şekilde yan yana birleştirdi. Bu noktada bir devre işinleri oluştu ve şu an dengede. Elimizde diyot var havada tutuyoruz böyle. Peki ben bunu devre içerisinde nasıl kullanabilirim? İki kullanım tarzı var. Bir doğru polarma, iki ters polarma anlamında. Doğru polarmadan kastımış şu.
+
+249
+01:16:18,579 --> 01:16:24,799
+P-type tarafına pozitif, N-type tarafına da negatif bir gelin vermek demek.
+
+250
+01:16:25,159 --> 01:16:30,779
+Bunun şekli vardı ya. Şuradan anlatayım. Buralara tek tek bakayım. Yok, tamam.
+
+251
+01:16:35,796 --> 01:16:52,275
+Evet, şuradan anlatalım direkt. Havada tuttuğumuz diyor, herhangi bir şeye bağlı değil. Bir depreysin region'ı var ve potansiyel yani normal depreysin region olduğundan dolayı bir potansiyeli var, farkı var yani. VB dediğimiz bir gelin farkına sahip.
+
+252
+01:16:52,275 --> 01:17:00,676
+Şimdi öteki tarafta ben bunu doğru polar mı yaparsam yani şöyle bir gelin bağladım. Artı eksi.
+
+253
+01:17:01,811 --> 01:17:11,652
+Burası p-type, burası n-type. Buraya artı verdim, buraya eksi verdim. Şimdi bu artılar, burası p-type olduğu için burada artılar fazla.
+
+254
+01:17:11,652 --> 01:17:19,152
+Değil mi? Şurada da bir tane depreşim de yapıştırdım. Bunlar eksi, şunlar artı.
+
+255
+01:17:21,011 --> 01:17:47,251
+Şuralarda eksi değil mi? Şimdi buradaki eksi ve buradaki artı ne yapacak? Aslında ben artıları buradan daha çok bastıracağım. Eksileri buradan daha çok bastıracağım. Ve buradaki Depthation Ration bölgesi ufalacak. Ufaldığı için de potansiyel fark düşecek. Ve bu nedenle buradaki bariyerin boyutu azalmış olacak.
+
+256
+01:17:47,988 --> 01:17:59,048
+Ne zaman doğru polarma, forward bias dediğimiz yani p-type'ına artı n-type'ına eksi bir gerilim beslemesi verdiğimizde.
+
+257
+01:17:59,923 --> 01:18:08,844
+Öyle bir noktadan sonra bu Depleation Region artık sıfırlanacak değil mi? Herhangi bir arada bariyer kalmayacak.
+
+258
+01:18:08,844 --> 01:18:22,203
+Bariyer kalmadığı durumda elektronlar bütün artıya hareket edecek. Şu elektronunu oku. Elektronların hatırlarsanız devlet örgüsünde bahsettiğimiz elektron yönünün tersine akım oluşur demiştim.
+
+259
+01:18:22,579 --> 01:18:45,899
+Elektronlar böyle hareket ediyorsa, yani eksiden artaya gidecek sonuçta elektronlar böyle hareket ediyorsa akımım benim bu yanda oluşmuş olacak. Ve bu akım aslında benim difisyon akımımın çok daha yüksek olan bir akım versiyonu olacak. Bu da normal devrenin akımını gösterecek bana. Yani difisyon akımım artacak.
+
+260
+01:18:46,420 --> 01:19:12,800
+Difüzyon akımının sonuçta P-type'ın N-type'ı olan geçiş akımıydı. Drift akımı dediğimiz akımda N-type'ın yani elektronların protona geçişildi. Burada difüzyon akımı artacak çünkü bir bariyer kalmadı ve normal akıma döndü artık. Ama drift akımım aynı kalacak. Drift akımım değişmeyecek. Hala ters akım var yani. O da şu gösterdiğimiz okusun.
+
+261
+01:19:14,163 --> 01:19:31,804
+Şimdi gelelim öteki tarafa. Yani ters polarman, reverse polarman da ne oluyor? Buraya eksi bağladım. Buraya artı bağladım. Ve burada bir depletion bölgemi vardı. Değil mi? Şimdi burası eksisi ağır olan taraf.
+
+262
+01:19:32,819 --> 01:19:53,920
+Burası artı depreşim içinde, şurası eksi, burası da artısı fazla olan olan. Şimdi ilk baktığımızda şunu görüyoruz. Zaten elektronlar, şuradaki elektronlar bizim güç kaynağının pozitifine doğru gidecek. Değil mi? Ve buradaki depreşim bölgesi artacak. Daha da büyüyecek.
+
+263
+01:20:00,000 --> 01:20:18,440
+Bu deflation region bölgesi eksiler daha çok geldiği için eksi noktasında artacak. Elektron noktasında. Ve artık deflation region bölgemiz daha da gelişecek. Yani gelişleyecek. Böyle gelişince benim aslında potansiyel farkım iki nokta arasında gitgide artacak.
+
+264
+01:20:18,800 --> 01:20:34,460
+Arttığı için de burada bir bariyerimiz daha da büyük moda gelecek ve bu modda da bir akım geçmeyecek. Ta ki hangi akım? Sadece ve sadece. Ufacık da olsa iç akım dediğimiz drift akımı oluşacak.
+
+265
+01:20:42,612 --> 01:20:56,652
+Doğru polarma yönteminde aslında aradaki bariyeri biz minimize ediyoruz. Beslemeyi doğru yaptığımız için. Ters bağlama modunda da aradaki deplation region'a bölgeyi genişletmiş oluyoruz.
+
+266
+01:21:00,435 --> 01:21:14,395
+Bu ufak akımlar, yani sızıntı akımlarıyla alakalı bir formül var. Dediğim gibi çok önemli değil. Hani üzerinde durmayacağım. Bir formül var hesaplama formülü ama üzerinde durmayacağım. Ama şu grafiği analiz edeceğiz. Nedir bu grafik? Şudur.
+
+267
+01:21:21,779 --> 01:21:28,779
+O şöyle ters olduğunda, ters polarma yaptığımızda, eksi gerilim verdiğimizde.
+
+268
+01:21:28,779 --> 01:21:30,635
+Giyotumuzu çizelim.
+
+269
+01:21:40,243 --> 01:22:05,343
+Şu an doğru verdik değil mi? Doğru polarma verdiğimizde iletime geçeceğiz. Ters polarma verelim. Şu an ters polarma verdim. Eksiye artı, bir de şu kısımlara bahsetmedik. Burası okun ucu olduğu için şu taraf eksidir ve biz buraya katod deriz arkadaşlar. İsmi katoddur. Şu kısım ise P-type'ın fazla olduğu kısım anoddur.
+
+270
+01:22:06,868 --> 01:22:11,868
+Burası P-Type, burası da N-Type.
+
+271
+01:22:12,868 --> 01:22:15,868
+Semiconductor'un kullanıldığı bölgeler.
+
+272
+01:22:16,868 --> 01:22:24,868
+Şimdi katot kısmına, yani N-Type'in olduğu kısmına ben artı, geliğim kaynağımda eksisini anota verdim de.
+
+273
+01:22:24,868 --> 01:22:32,868
+Ne olacak? Buradaki N-Type'lerin hepsi bu tarafa geçecek, P-Type'lerin hepsi bu tarafa geçecek veya buradan buraya gelecek ve burası Depthation Ration'ı arttıracak.
+
+274
+01:22:33,231 --> 01:22:58,912
+Ters kolar mı yapıyorum? Yani eksi V veriyorum şu an fark ettiyseniz. Eksi V verdiğim senaryolarda ideal diyapta, yani şeyde, yani işlemlerde bizim hesaplamaya katacağımızda biz burayı sıfır alacağız. Yani herhangi bir akım geçmiyor diyeceğiz. Ama Deployation Race'in arttığı için Drift akımı oluşacak. Neye göre? Bu formüle göre.
+
+275
+01:22:59,412 --> 01:23:21,192
+Drip akımı, I-S diye göstereceğimiz çok cüzi eksi I-S olmasının nedeni neden? Çünkü içerisinde şöyle bir akım oluşacak. Benim gerilim kaynağıma ters. Böyle bir akım oluştuğu için de ters eksi I-S şeklinde göstereceğiz. Yani Reverse Saturation akımı oluşacak I-S'de.
+
+276
+01:23:21,587 --> 01:23:35,247
+Biz bunu ama pratikte, yani pratikte bu oluşacak ama teoride biz bunu sıfırmış gibi soruları çözeceğiz. Çünkü çok cüz'i, yani bu hesaplamaya hiç girmeyeceğiz. Ama oluştuğunu bilelim. Neden oluştuğunu da bilelim.
+
+277
+01:23:36,647 --> 01:23:43,627
+Doğru polarmada, peki doğru polarmada niye şöyle olmadı sizce?
+
+278
+01:23:48,404 --> 01:23:54,444
+Doğru polarma da iletime geçiyor. Direkt akım geçmesini beklerim. Artı V'lerin herhangi bir değerinde.
+
+279
+01:23:56,664 --> 01:24:07,524
+Yani şöyle bağladığımı düşünelim. Artılar, eksiler doğru polarma. Debtation V için bir süre daralacak. Daraldıktan sonra iletim devam edecek.
+
+280
+01:24:08,204 --> 01:24:11,084
+Peki neden böyle değil? Şurada gözüklüyor gibi.
+
+281
+01:24:13,704 --> 01:24:15,424
+Öz direnci olduğu için olabilir mi?
+
+282
+01:24:15,859 --> 01:24:34,859
+Evet, öz direnci diyebiliriz. Yani olabilir. Yani tam değil ama olabilir, mantıklı. Bir de neden? Şimdi biz pratikte, teoride biz bunu böyle kabul edeceğiz. Evet, eğer ki soruda ideal diyot denmiyorsa o zaman...
+
+283
+01:24:35,636 --> 01:24:52,796
+İdeal, yani Germanyum ve Silüsüm'den doğan içerisinde bir Deplation Regime bölgesi var demişti. Onu kısıyoruz dedik ya. Misal Germanyum'da, yanlış oğlan Silüsüm'de 0.7 Volta kadar o Deplation Regime bölgesi kapanmıyor.
+
+284
+01:24:52,796 --> 01:24:56,856
+Yani şurada bahsettik ya biraz.
+
+285
+01:24:58,868 --> 01:25:19,568
+Şimdi bu havada duran bir diyot. Germanyum bir diyot, silisyum bir diyot olsun. Silisyum diyotu devreye ben bağladığımda doğru polarma yapsam bir de bu bölgenin bir kapanması, sıfırlanması lazım bu bariyeri. Bunun sıfırlanabilmesi için doğal olarak silisyumun materyalinden kaynaklanan bir 0,7 voltun verilmesi gerekiyor.
+
+286
+01:25:23,060 --> 01:25:41,840
+Hani pratikte diyotu direkt böyle sıfırdan yani 0.1 voltta direkt iletime geçirmesini sağlayamıyoruz. Ta ki işte bu değer kullanılan şeye göre değişiyor. 0.7 gibi bir değer olduğunu düşünelim. Ondan sonra iletime geçiyor. Böyle bir nüans var.
+
+287
+01:25:43,636 --> 01:26:00,115
+Dediğimiz gibi üç durumu var. Aslında iki durumu var ama biri havada tuttuğumuz, herhangi bir şeye bağlamadığımız, yani polarma yapmadığımız durum. İleri doğru yönlü, yani ileri yönlü polarizasyon yaptığımız, sonra da ters yönde besleme yaptığımız durum. Üç tane çalışma durumu var.
+
+288
+01:26:01,836 --> 01:26:11,056
+Havada durduğu durumda dediğimiz gibi işte herhangi bir gerim veya akım geçmiyor. Havada duruyor, içerisindeki kullanılan materyalden doğan bir depreşim bölgesi oluşuyor.
+
+289
+01:26:13,235 --> 01:26:28,675
+Tekrar ediyoruz bu kısımda. Ters polarmada işte normalde N ve P olması lazım. Yani katod, anod ve katod buralar değil mi? Katod olması gereken.
+
+290
+01:26:29,427 --> 01:26:49,747
+Bu noktalarda ben katota artı anota eksi verirsem depresim bölgesi açılacak. Açıldığı için de ufacık bir minority IS dediğimiz o sızın drift akımı oluşacak ve benim tek bu akımı göreceğim. Nasıl? Ters bir şekilde göreceğim ama. Sonuçta ölçü aletim benim. Şöyle ölçtüğümüzü düşünelim.
+
+291
+01:26:50,387 --> 01:27:07,868
+Veyahut da amperi ölçüyorsak, gelimi ölçmüyorsak buraya seri girmemiz lazım. Buraya bir ampermetre koydum. Sonuçta Is'ye ters bir şekilde olursa, eksi Is şeklinde göreceğim ampermetrede. Ama bu çok çok cüzi. Belki de mili amperden de daha düşük bir değer olacak.
+
+292
+01:27:13,300 --> 01:27:32,440
+İse bu deplejim rejimi artık bitecek. Sıfırla yine bir ısıya oluşacak. Hep ı ısıya var ama bu ısıya ımajoritiden çok çok ufak olacak. Ve benim ekranda ampermetrede göreceğim ıd aslında ımajoritiye eşit olacak neredeyse. Yani aslında geçen akıma eşit olacak. Buradan beslemeden üretilen akıma eşit olacak.
+
+293
+01:27:38,899 --> 01:28:06,119
+Evet, tekrardan bu grafimiz var. Bu diyotun karakteristik grafiği arkadaşlar. Akım, gerilim grafiği, diyotun üzerinde oluşan gerilim ile diyotun içinden geçen akımın grafiği. Eğer ki diyotun üzerindeki gerilimimiz eksi ise ki bu ters polarma demek. Ters polarma ise bir sızın takımımız var sadece. Reverse bias dediğimiz kısım burası. Eğer ki doğru polarma verdiysek.
+
+294
+01:28:06,771 --> 01:28:29,871
+Yani germanyum için 0,3, silisyum için 0,7 olarak tanımlanmış o materyallerin kendi öz yapılarından doğan Adaptation Region bölgesini 0,3 ve 0,7 ile elege edip elimine edip ondan sonra iletime geçmeyi sağlayan yapısı var. Doğru polar mı?
+
+295
+01:28:31,992 --> 01:28:33,691
+Anlaşıldı mı bu kısım arkadaşlar?
+
+296
+01:28:39,347 --> 01:28:49,007
+Bunlardan bahsettik zaten. Bir başka diyot daha var. Bir alt diyotun bir alt versiyonu diyebiliriz buna. Zener diyotlar.
+
+297
+01:28:49,987 --> 01:28:59,147
+Şimdi şöyle diyotu şöyle tanımladık. Doğru polarmada iletime geçecek. 0.3 veya 0.7 voltun ötesinde iletmeye geçecek.
+
+298
+01:28:59,147 --> 01:29:04,327
+Ters polarmada da kesimde kalacak bir ufacık sızın takımımız olacak. O kadar.
+
+299
+01:29:04,756 --> 01:29:27,556
+Ama şimdi breakdown voltaj diye bir şey var. Yani bozulma gerilimi. Şimdi biz diyor tu ters polarizasyonla çok daha yüksek gerilim hatlarında ters bir şekilde polarize etmeye çalışırsak, devam edersek yani bu bir süre sonra bozulacak. Ve bozulduğu yer breakdown bölgesi olacak.
+
+300
+01:29:27,988 --> 01:29:49,748
+Normalde diyotun çalışması bu. Yani bir süre sonra ters kullanma da bozulacak ve o zaman da akımı maksimum geçirecek. Şimdi bunu görmüşler ve diyotu bir katkı daha yapmışlar. Demişler ki zener diyot çıkaralım. Nedir bu? Zener diyotun üzerinde yazılan gerilimi ters polarizasyonla aşıldığında iletime geçen, iki taraflı iletime geçiyor.
+
+301
+01:29:50,387 --> 01:30:11,807
+Doğru polarmada normal işte Germanyum, Büsnü, Metaryallerine göre iletime geçiyor. Ters polarmada da zener diyotun üzerine yazılan gerilimi geçince iletime geçen bir yeni alt diyot üretilmiş. Bu zener rejyon diyorlar bu kısma yani zener diyotun üzerinde yazan gerilim seviyesinin geçildiği bölge. Ters polarizasyon.
+
+302
+01:30:13,779 --> 01:30:29,420
+Evet, Gradyum Arsenide 1.2 Volt'u geçmek gerekiyormuş. Forward BIAS'da Silikon 0.7, Gen Mnium'da 0.3 Volt'u geçmek gerekiyor. İki bariyeri kendi içerisindeki Deplation Regen'i tamamen ortadan kaldıralım.
+
+303
+01:30:30,355 --> 01:30:43,235
+Sıcaklığın bir etkisi var diyotlar üzerinde. Sıcaklık doğru polarmada azaltıyor o 0.7-0.3 gibi biyaz kondakşını. Ters polarmada da biyazı arttırıyor.
+
+304
+01:30:50,292 --> 01:31:04,912
+Şimdi biz genelde doğru akımlarda çalışacağız ama doğru akımlarda normalde diyotun üzerindeki o diyotun direnç etkisini diyotun üzerinden geçen akımla diyotun üzerinde oluşan gelinme bölerek normal bir on kanlı çerçevesinde hesaplayabiliyoruz.
+
+305
+01:31:04,912 --> 01:31:07,596
+Çünkü işte şu noktadaki...
+
+306
+01:31:07,699 --> 01:31:35,039
+Gösterilen direnç aslında B'de bölü I'de ediyoruz. Şimdi alternatif akımda formül biraz değişiyor. Çok önemli değil. Bu sadece enerjik olarak söylüyorum. Alternatif akımda biz değişim aralığına bakarak karar vermemiz lazım. Yani işte bir ölçe aldın. Onun gerilim karşılığı neydi? Bir başka ölçe aldın. Onun gerilim karşılığı veya akım karşılığı ne diyordun? Bunların ikisi arasındaki farkından.
+
+307
+01:31:35,667 --> 01:31:52,927
+Bir direnç, alternatif akım direnci çıkıyor diyordu. Çok farkı olmuyor aslında. Normal doğru akımdan çok farklı bir direnç değeri göstermiyor. Şimdi diyotu normalde biz böyle de gösterebiliriz. Demin anlattık şöyle de gösterebiliriz.
+
+308
+01:31:54,068 --> 01:32:06,807
+Şuradaki siyah çizgi, ki bazen bu gri de olabiliyor, bizim için katotun bölgesini gösteriyor. Yani yakın olan kısım katot bölgesi, uzak olan kısım da anot bölgesini gösteriyor.
+
+309
+01:32:08,408 --> 01:32:10,828
+Aynı şu aşağıdaki olduğu gibi.
+
+310
+01:32:12,148 --> 01:32:15,807
+Ve biz bunu normalde hani...
+
+311
+01:32:16,724 --> 01:32:43,444
+Gerçekte pratikte kullanacağımız vakit, yani devre tasarımında modelleyeceksek yandaki gibi modellememiz lazım. Eş değer devresini. Nasıl modelliyoruz? İçerisinde sanki girişe ters bağlanmış bir 0.7 volt varmış gibi. Bu neyi sağlıyor bize? Aslında bu kısım bize depletion region'ı modellemeyi sağlıyor. Neyi? Silisyon.
+
+312
+01:32:43,859 --> 01:33:01,439
+Germanyum için bu 0.3, arsenik için 1.2 volt ters polarmalı bir şekilde bağlanan ucu gösteriyor. Kendi içerisinde bir iş direnci var, 10-10'luk. O çok göz ardı ediliyor ama normalde bir iş direnci var.
+
+313
+01:33:05,395 --> 01:33:29,715
+Dediğimiz, bunların dışında bizim eğer ki sorda ideal diyot kullanılmış dediyse bunları zaten neglike edileceğiz. Sonuçta bizim için ideal diyotun grafiği şu olacak. Sıfır, burası da maksum. Ama ideal diyot demiyorsa, işte normal diyot diyorsa bir sızıntı akımım var. Biraz sonra artan şöyle bir grafiğim olması belirli.
+
+314
+01:33:33,587 --> 01:34:00,108
+Geçelim. Bir de şu etkisi var diyotların. Normalde bir uzun süremizsel doğru polar malı bir şekilde diyotu kullanıyoruz. Yani akım geçiriyoruz içerisinden. Anotuna artı, katotuna eksilerdi. Sonra birden ben akımın yönünü değiştirdim. Yani ters akım verdim. Yani ters polar ile ettim. Birden sıfıra düşmüyor. Normalde istenen bu. Dizaret response şuradaki nokta noktalı gösterilen. Ama
+
+315
+01:34:01,076 --> 01:34:09,735
+Doğal yapısından dolayı aynı şekilde tam tersi bir süre daha akım geçirir. Yavaştan bunu nomine eder, sıfırlar.
+
+316
+01:34:12,135 --> 01:34:13,155
+Öyle bir yapısı var.
+
+317
+01:34:17,939 --> 01:34:38,359
+Eğer işte dedik ya, data sheetleri okuyacaksınız sensörlerde. Diyodlar içinde data sheetler var. Bakarsak göreceğiz ki işte o data sheetlerin içerisinde ters akımın ne kadar olacağı spesifik voltajlarda ve sıcaklıklarda, işte doğru akımın ne kadar olacağı spesifik voltaj ve sıcaklıklarda, bunlar hep belirtilir.
+
+318
+01:34:38,359 --> 01:34:45,439
+İşte kapasitans olarak da kullanılabilir. Onun seviyesi işte. Reverse recovery time dediğimiz işte şuradaki.
+
+319
+01:34:45,939 --> 01:34:54,559
+Belli bir süre sonra normale geliyor ya, recover ediyor yani. Aslında doğru kol armadan sonra hemen istediğimiz sıfıra düşmesi akımı.
+
+320
+01:34:55,519 --> 01:35:10,039
+Diyotun akımının üzerinden geçen akımı. Ama bu böyle olmuyor. Bir süre sonra recover oluyor. O recover'dan geçen şu TRR, benim için data sheetlerde önemli bir parametre. Ters akımı önlemek için kullanılıyor çünkü diyotlar.
+
+321
+01:35:11,988 --> 01:35:17,568
+Çalışma sıcaklıkları vs. Bunlar data şıklarda belirtilen bazı spesifikasyonlar.
+
+322
+01:35:19,288 --> 01:35:29,168
+Diyotun gösterimi var. Devrelerde pek çok farklı gösterim var. Anot, katot, pi ve n olduğu bizim en çok kullanacağımız şekli var.
+
+323
+01:35:29,568 --> 01:35:42,927
+Normal işte size malzeme listesi yayınlanmış herhalde. Alacaksınız malzeme listesinde göreceksiniz ki işte diyot da var. Diyotu alacaksanız işte eksisi bu çizginin olduğu kısım olacak. Farklı farklı diyotlar mevcut.
+
+324
+01:35:44,916 --> 01:36:08,216
+Peki diyotun yanıp yanmadığını, testini nasıl yapacağız? Üç yöntemi var. Diyot checkerlar, aslında multimetreler aşağıdaki laflarda da var bu özellik. Multimetrelerin diyot ve transüstör kontrol ücretleri var sağ alt köşelerinde. Diyot checkerlar dediğimiz kısım, aslında diyotun üzerinde doğru iletimde ne kadar bir gerilim birikiyor bunu ölçüyor.
+
+325
+01:36:09,235 --> 01:36:22,136
+Yani işte Galium arsene 1.2 volt diyor, Checker'lar 1.2 voltu ölçmesi lazım. Silikon 0.7 volt ölçüyor. İşte bu değerler eğer okunmuyorsa demek ki diyordunuz lozulmuştur deniyor.
+
+326
+01:36:22,868 --> 01:36:42,448
+Bir başka kontrol yöntemi eğer diyot çıkımı yoksa ölçe aletlerinin 10 metrelerle. Neden 10 metreler? Çünkü ters polarizasyonda ben diyotun sonsuz direnç, yani çok yüksek direnç göstermesini bekliyorum ki akım geçmesin. Yani depreşim, region böyle bir kişi çok büyük olsun.
+
+327
+01:36:49,300 --> 01:36:56,119
+Düşük direnç değerini gösteriyorsa benim için diyot çalışıyordur diyeceğim. Yani bir sıkıntısı yoktur diyeceğim.
+
+328
+01:36:57,460 --> 01:37:19,899
+Curve Tracker'lar, o silaskoplarla ölçülen aslında deminki gösterdiğimiz sematik. Burası akım, burası gerilim. Doğru polarizasyonda 0-7'nin üstünde akım zaten 0'dan 1'den çıkıyor. Ama ters polarizasyonda çok çok cüzi bir akım değerini görmemiz bekleniyor. Böyle de kontrol edebiliriz o silaskop üzerinden.
+
+329
+01:37:22,707 --> 01:37:36,787
+Zener diyotu bahsettik. Bir daha gelelim. Zener diyot ters taraftan da akım geçiriyor ama ne zaman potansiyel farkı ters taraftan bağlandığında zenerin üstünde yazan gelin değerini geçtikten sonra.
+
+330
+01:37:36,787 --> 01:37:47,787
+Misal 1.8 volt zener diyot kullandı demek. Ters yönde, ters polarizasyonla 1.8 volt verirsem ben bu zenere ters yönde de akım geçireceğini söylerim.
+
+331
+01:37:49,203 --> 01:37:58,203
+Ama 1.1 verdiğimde ters yönde akım geçirmez. Düz yönde 1.1 verdiğimde zaten 0.7'nin üstü her şeyde geçilecektir.
+
+332
+01:38:01,123 --> 01:38:14,663
+Ledler bir başka diyot şekli. İşte normalde ışık yansıtılan diyotlar. Bunun tek farkı yine doğru polarizasyonla çalışıyor. Ama farklı gerilim seviyelerinde, farklı ışık dalga boylarında ışık yansıtıyor.
+
+333
+01:38:15,923 --> 01:38:18,563
+Mesela ledi ters takarsanız ışık yanmaz.
+
+334
+01:38:20,703 --> 01:38:26,983
+Tabi bu ledlerin ortak anot ve ortak katot şeklinde birden fazla kullanılır mı söz konusu?
+
+335
+01:38:27,563 --> 01:38:32,304
+Ortak anotta anot uçlarına bir uca diğerlerini kontrol için kullanırız.
+
+336
+01:38:32,543 --> 01:38:36,963
+Ortak katotta ise katot uçları bir uca diğerleri kontrol için kullanılır.
+
+337
+01:38:38,463 --> 01:38:40,463
+Ortak anot ve ortak katot diyotlar.
+
+338
+01:38:40,992 --> 01:38:44,711
+Yani pek çok diyotun bir araya gelmesiyle oluşan diyot maddesi.
+
+339
+01:38:47,511 --> 01:38:48,951
+Sorunuz var mı arkadaşlar?
+
+340
+01:38:51,475 --> 01:39:15,015
+Diyotlara hızlı bir giriş yaptık. MP yapılarını anlatmış olması lazım hocanın. Onlara yine ben de biraz bir şeyler bahsettim ama neden diyotlarda böyle declaration bir için oluşuyor vs. o kısımlarda anladığınızı düşünüyorum. Çünkü transistörde de aynı mantık var, FET'te de aynı mantık olacak. Diyot bunlar için iki terminal ucuna sahip olduğundan bu diye anlaşılması daha kolay.
+
+341
+01:39:17,155 --> 01:39:18,576
+Soru var mı?
+
+342
+01:39:21,971 --> 01:39:26,572
+Sorumuz yoksa arkadaşlar, dersi bitirebiliriz.
+
+343
+01:39:28,572 --> 01:39:32,572
+Dokümanları paylaşacağız, evet. Hatta paylaşalım.
+
+344
+01:39:38,131 --> 01:39:46,211
+Şöyle paylaşalım. Geçen seneki PDF'ler bulundu ama bir şey değiştirmediğinizi düşünüyorum.
+
+345
+01:39:50,003 --> 01:39:55,583
+Şunları şöyle ilk üç haftanınkini hemen dersi bitirmeden bir klaslumda paylaşalım.
+
+346
+01:39:55,583 --> 01:39:57,683
+Bakış.
+
+347
+01:40:05,076 --> 01:40:07,216
+Bu da.
+
+348
+01:40:11,636 --> 01:40:13,235
+Bunları şöyle atarsak gelir mi?
+
+349
+01:40:27,315 --> 01:40:34,755
+Evet, şu an birinci, ikinci ve üçüncü hafta sunumları diye ben duyurdum. Bu üçtü herhalde en son işledi.
+
+350
+01:40:37,615 --> 01:40:40,055
+Evet, diyor tutu en son işledi, bu üçtü.
+
+351
+01:40:53,300 --> 01:41:17,320
+Sonraki haftaya bir bakayım düzeltmem gereken bir şey var mı diye. Yok herhalde, evet onu da paylaşayım. Dördüncü haftaki konular önemli. Yani diyotların kullanımlarıyla alakalı sunumlar olacak. Dördüncü haftayı kaçırmayalım lütfen.
+
+352
+01:41:20,787 --> 01:41:31,447
+Tamam mıyız? Başka sorumuz var mı arkadaşlar? Yok herhalde. Ben sonraki hafta, dördüncü haftayı da paylaşayım hatta.
+
+353
+01:41:31,447 --> 01:41:42,887
+Dördüncü hafta sonunda şuradan şöyle atamıyorum.
+
+354
+01:41:53,332 --> 01:42:04,872
+Tamam. Haftaya görüşmek üzere o zaman diyorum. Sorumuz var mı başka? Yok herhalde. İyi dersler arkadaşlar, iyi çalışmalar. İyi günler.

@@ -1,0 +1,987 @@
+1
+00:02:20,852 --> 00:02:22,051
+Merhabalar arkadaşlar.
+
+2
+00:02:26,099 --> 00:02:41,519
+Şimdiki dersimizi grup 1 ve grup 2 olarak ortak yapacağız. Şimdi ben gerek Classroom'a gerek Samuza Hocanıza ilettim ders linklerini. Bir 5 dakika bekleyelim. Onu 5 geçe gibi dersimize başlıyoruz. Olur mu?
+
+3
+00:05:50,004 --> 00:06:00,864
+Tekrar merhabalar arkadaşlar. Katılım biraz düşük gibi gözüküyor ama bu derste değişik bir transistör yapısına doğru geçiş yapacağız arkadaşlar.
+
+4
+00:06:02,444 --> 00:06:05,684
+Daha önce gördüğümüz transistör tipi, sesim geliyor mu bu arada?
+
+5
+00:06:08,403 --> 00:06:09,004
+Geliyor ya.
+
+6
+00:06:09,004 --> 00:06:10,084
+Tamamdır.
+
+7
+00:06:10,516 --> 00:06:21,176
+Bundan önceki derslerde arkadaşlar bipolar jonksiyon transistörleri görmüştük. Bir saniye. Grup 2'den katılan arkadaşımız var mı acaba şu anda?
+
+8
+00:06:28,884 --> 00:06:31,244
+Ben varım hocam. Ben de varım.
+
+9
+00:06:31,963 --> 00:06:34,984
+Size nereden iletildi link?
+
+10
+00:06:37,064 --> 00:06:41,804
+Classroom'dan gördük hocam. O Classroom'dan gelen o mail bildiriminden.
+
+11
+00:06:45,300 --> 00:06:53,139
+Bir saniye. Çünkü diğer grupta da şey açılması lazım. Bir arayayım bakayım.
+
+12
+00:07:02,387 --> 00:07:04,331
+Bir saniye arkadaşlar.
+
+13
+00:08:17,396 --> 00:08:39,156
+Arkadaşlar, eğer grup şeyiniz varsa, şimdi ben Hamza Hoca'nıza ulaşamadım. Eğer WhatsApp grubunuz falan varsa paylaşın oradaki linki. Bazıları classroomdaki mesajları görmemiş olabilir. O yüzden isterseniz onu bir WhatsApp üzerinden paylaşın arkadaşlar.
+
+14
+00:08:41,172 --> 00:08:48,752
+Çünkü grup 2 dersini de, Hamza Hocanın dersini de bu ortaklaşa yapacaktık. Ona ben linkleri ilettim ama şu an ulaşamadım.
+
+15
+00:08:49,692 --> 00:08:58,552
+Belki canlı ders kısmına gelip Classroom mesajını görmeyen arkadaşlarınız vardır. Onlara bir gönderin arkadaşlar.
+
+16
+00:09:00,692 --> 00:09:07,012
+Tamamdır. Paylaştıysak. O zaman bir iki dakika daha bekleyelim.
+
+17
+00:09:08,563 --> 00:09:11,003
+Ongeçe gibi başlayalım dersiniz arkadaşlar.
+
+18
+00:10:47,668 --> 00:10:54,268
+Dersimize başlayalım artık. Nasılsa iletmişsinizdir. Gelen arkadaşlarımıza devam edelim.
+
+19
+00:10:54,447 --> 00:10:57,628
+Merhabalar arkadaşlar. Geçmiş bayramız mübarek olsun öncelikle.
+
+20
+00:10:58,668 --> 00:11:04,988
+Şimdi biz bu dersimizde yeni bir transistör tipine geçiş yapacağız.
+
+21
+00:11:05,427 --> 00:11:11,927
+Biliyorsunuz daha önce gördüğümüz transistörle BJT yani bipolar jonksiyon transistör deniyordu.
+
+22
+00:11:16,083 --> 00:11:27,103
+NPN veya PMP şeklinde iki tane jonksiyon yani ekleme sahip transistör yapılarıydı.
+
+23
+00:11:27,103 --> 00:11:34,103
+Dikkat ederseniz burada bir IB akımı vardı. Yani baz akımı vardı. Baz akımı ile beraber transistörün...
+
+24
+00:11:34,639 --> 00:11:40,279
+Akım yapması, çalışması, on durumuna geçmesi veya off durumuna geçmesi ayarlanabiliyordu.
+
+25
+00:11:40,279 --> 00:11:52,500
+Bugün göreceğimiz FET'ler ise farklı bir transistör tüp arkadaşlar. Bunlar Filed Effect Transistor.
+
+26
+00:11:54,355 --> 00:12:11,296
+Yani alan etkili transistörler olarak geçiyor. Temelde ne yapıyor? Yine bu da aynı şekilde bir transistör. Yani ne yapıyoruz? Bir güçlendirme de kullanıyoruz.
+
+27
+00:12:11,759 --> 00:12:19,500
+Ondan sonra aynı şekilde Switching Device olarak, Switching Device neydi? 1-0 gibi lojik işlemler için kullanabiliyoruz.
+
+28
+00:12:19,500 --> 00:12:29,960
+Ve Empedans Uydurma Devrelerinde kullanabiliyoruz. Farkları neler bunların? Biraz sonra FET'lerin çalışma şekline biraz daha ayrıntılı bakacağız.
+
+29
+00:12:30,120 --> 00:12:36,460
+Niye alan etkili transistörler denildiğini, yapılarını biraz daha inceleyerek anlatacağız.
+
+30
+00:12:37,076 --> 00:12:56,776
+Temel olarak farklarına bakacak olursak, ilk arkadaşlar, en çok bilmeniz gereken BJT'ler akım kontrollü cihazlar. Yani bakın bu bir BJT yapısı. Bakın burada bir IB akımı var. Bu IB akımına göre biz ne yapıyoruz?
+
+31
+00:12:57,299 --> 00:13:22,279
+Ic akımının akıp akmamasını sağlayabiliyoruz. Neydi? Ic eşittir, beta, Ib'yi de hatırlarsınız. Ib akımı yoksa Ic de akmıyordu aynı şekilde. Bjt'ler akım kontrollü bir devre elemanı iken, FET'ler ise gerilim kontrollü. Gerilim kontrollü devre elemanları.
+
+32
+00:13:24,083 --> 00:13:39,203
+FET'lerin giriş direnci, giriş impedansı daha yükseklik iken BJT'lerin ise daha büyük kazançlar, gain dediği burada, hani amplified ediyoruz ya girişteki, inputtaki.
+
+33
+00:13:40,019 --> 00:13:59,240
+İl sinyali güçlendiriyoruz. Güçlendirmede kullanılırken BCT'ler daha yüksek kazanımlara güçlendirme kat sayılarına sahip. FET'ler ise daha yüksek giriş direncine sahip. Yani bir önceki devreden daha iyi şekilde soyutlayabiliyor kendini.
+
+34
+00:13:59,240 --> 00:14:07,359
+FET'lerin bir özelliği var arkadaşlar. Sıcaklık değişimlerine daha az hassas.
+
+35
+00:14:07,731 --> 00:14:21,351
+Bu da bizim için iyi bir şey. Çünkü devre elemanları, devre genel olarak BJT'nin kullandığı devre yapılarında sıcaklık değişimlerinin etkilenmemesi bizim daha stabil devrelerde çalışmamızı sağlayabiliyor.
+
+36
+00:14:21,351 --> 00:14:34,347
+Ve de BJT'ler arkadaşlar entegre devrelerde daha rahat implemente edilebiliyor. Yani daha rahat uyarlanabiliyor. Bunun dışında FET'ler...
+
+37
+00:14:34,388 --> 00:14:50,607
+Statik Elektriğe daha fazla hassaslar. Yani statik elektrikler daha rahat etkileniyorlar diye genel bir giriş yapalım.
+
+38
+00:14:51,607 --> 00:14:58,208
+Peki, bizim FET tiplerimizde bahsettiğimiz alan etkili transistörlerin yapıları neler?
+
+39
+00:14:58,932 --> 00:15:16,192
+FET'ler arkadaşlar en başta ikiye ayrılıyor. Şu şekilde. Burada da açıklamaları var. Bir tanesi J-FET. Bu Junction FET yani eklemsel FET olarak geçiyor. İkinci yapı ise MOSFET.
+
+40
+00:15:17,491 --> 00:15:42,571
+MOSFET adını az çok duymuşsunuzdur belki elektronik cihazlarla alakalı. MOSFET'ler de metal oksit semikondaktır. Yani metal oksit yarı iletken FET'ler olarak geçiyor. Metal oksit yarı iletken FET'lerin adından anlaşıldığı gibi alan etkisini yarattığı kısımda metal oksit bir yapı var. MOSFET'ler kendi içerisinde ikiye ayrılıyor arkadaşlar.
+
+41
+00:15:45,587 --> 00:15:50,548
+Limon Svet veya İmo Svet.
+
+42
+00:15:55,187 --> 00:16:21,388
+Şimdi burada D-Mosfetler arkadaşlar, Depletion MOSFET, E-Mosfetler ise Enhancement MOSFET olarak geçiyor. Bunları daha sonra göreceğiz. Bunlardan kanal oluşturmalı ve kanal ayarlamalı MOSFET'ler olarak anlatacağız arkadaşlar.
+
+43
+00:16:22,259 --> 00:16:43,360
+Şimdi isterseniz ilk başta FET'lerin içerisinde J-FET'le geçelim. Daha sonra MOSFET'lerin içerisinde önce bunu göreceğiz. Sonra D-MOSFET ve E-MOSFET yapılarını görmeye başlayacağız arkadaşlar. Önce J-FET'in en basit FET yapısı olan J-FET'in nasıl oluşturduğunu görelim.
+
+44
+00:16:44,275 --> 00:17:00,275
+Şimdi burada bir cifretin yapısı gözüküyor. Burada şu gördüğünüz şekli aslında şöyle bir silindir gibi düşünebilirsiniz. Şöyle bir silindir aslında. Bu silindirin etrafına şöyle belli bir...
+
+45
+00:17:00,500 --> 00:17:20,119
+P tipinde, önce burada mesela N tipi bir jifet var burada. Aynı BJT transistörlerde olduğu gibi N tipi ve P tipi diye her bir FET tipinin iki yapısı var. N jifet ve de P jifet şeklinde.
+
+46
+00:17:20,660 --> 00:17:31,280
+İki yapı var. Aynı sakında N tipi D-Mosfetler ve P tipi D-Mosfetler, N tipi E-Mosfet ve P tipi E-Mosfetler var arkadaşlar.
+
+47
+00:17:32,640 --> 00:17:40,380
+Şimdi burada N tipi bir J-Fet. Yani benim burada oluşturmuş olan şu silindirin ana yapısı N-J-Fet'ten.
+
+48
+00:17:41,011 --> 00:17:54,111
+N tipi malzemeden oluşuyor. Etrafına sarılan kuşak ise şöyle yaptığımda belli bir derinliğe kadar, burada görmüş olduğunuz derinliğe kadar P tipi malzeme ile kaplanıyor.
+
+49
+00:17:54,111 --> 00:18:00,511
+Yani silindirin etrafına bir kuşak gibi P tipi malzeme geçirilmiş durumda.
+
+50
+00:18:01,451 --> 00:18:03,980
+Şimdi hatırlarsanız...
+
+51
+00:18:04,627 --> 00:18:28,527
+Bizim BJT'lerimizde uçlarımızın adı neydi? N-tipi bir tane çizeyim burada. Bizim Deysimiz vardı, Kollektörümüz vardı ve Emetörümüz vardı. Şimdi burada arkadaşlar yeni FET tiplerinde bu uçların adları değişiyor. Yine FETler de 3 bacaklı devre elemanları.
+
+52
+00:18:29,951 --> 00:18:46,331
+Baz yerine gate, kolektör yerine drain ve emitter yerine ise arkadaşlar source bacakları gelecek.
+
+53
+00:18:47,612 --> 00:18:51,271
+Şimdi dikkat edin. Ne demiştik biz burada?
+
+54
+00:18:52,819 --> 00:19:11,059
+BJT'ler, şuradaki IB akımı ile kontrolü, akım kontrollü devre elemanları demiştik. Benim FET yapılarımda ise arkadaşlar, Gate ile Source arasındaki gelinim yani VGS ile beraber buradaki ID akımı yani Drain akımı.
+
+55
+00:19:11,539 --> 00:19:30,920
+Veya IS akımı. Bu da aynı. Nasıl ki IC eşittir, IE demiştik daha önceki transistör yapılarında. Yani emetör ve kolektör akımları yaklaşık olarak birine eşit demiştik. Burada da I Drain akımı, I Source akımına eşit. Burada tam anlamıyla eşit diyebileceğiz.
+
+56
+00:19:39,539 --> 00:19:51,679
+Yani Gate ile Source arasındaki gerilim, artı eksi VGS diyelim, benim şuradaki akımımı, yani direğinden Source'a giden akımımı etkiliyor arkadaşlar.
+
+57
+00:19:52,279 --> 00:19:58,299
+Dediğim gibi, eğer ana malzeme, burada mavi olarak gördüğümüz ana malzemenin tipi neyse,
+
+58
+00:20:00,000 --> 00:20:15,220
+Jifet'in de yapısı o. Örneğin bu N tipi bir jifet. N jifet olarak geçiyor. Tam tersi olabilirdi. Mavi olarak gördüğünüz kısımda P tipi malzeme olup N tipi malzeme bir kuşak gibi sarılabilirdi arkadaşlar.
+
+59
+00:20:24,915 --> 00:20:45,635
+Baz yerine dikkat edin arkadaşlar, Source, Gate ve Drain tarzında 3 kapımız oluyor. 3 tane girişimiz vardı. Source kaynak demek arkadaşlar. Kaynak. Dikkat ederseniz BJT'lerde de onun adı Emitter'e denk geliyordu. Emitter ise yayıcı demektir.
+
+60
+00:20:47,476 --> 00:20:54,276
+Aynı buradaki gibi gider manasında kullanılıyor. O tarafta ise BJT tarafında ise kolektördü.
+
+61
+00:20:54,376 --> 00:21:01,876
+Kolektör ucu yani toplayıcı uçtu. Gate de kapı manasında kullanılıyor. Burada da baz olarak kullanılıyor dikkatinizi çekerse.
+
+62
+00:21:01,876 --> 00:21:15,056
+Source kaynağın yani suyun geldiği kısım. Gate bunun ayarlandığı. Gate'ten bir ayarlama yaparak kaynağın source üzerinden boşalıp devrenin tamamlanması.
+
+63
+00:21:15,476 --> 00:21:35,596
+Sağlanıyor gibi düşünebilirsiniz. Yani devrenin içerisinde elektronların akma yapısını biz Gate ile Source arasındaki şu şuradaki, diyelim artı eksi VGS ile yani onun ayarlanması, onun debisinin ayarlanmasını sağlayan yapı ile ayarlamaya çalışıyoruz diyebiliriz.
+
+64
+00:21:42,003 --> 00:22:02,703
+Çalışma karakteristiğinde nasıl bir şey var, yapı var? Ona bakacağız arkadaşlar. Şimdi bunu önce şeylerden bakalım. 3 tane tip var arkadaşlar. VGS'nin 0 olduğu, yani gate ile source'un arasında 0 gerilimin olduğu, yani gerilim farkının olmadığı.
+
+65
+00:22:03,251 --> 00:22:15,931
+VGS'nin 0'dan küçük olduğu ve VGS'nin 0'dan büyük olduğu kısımlarda neler yapılıyor ona bakacağız.
+
+66
+00:22:22,451 --> 00:22:27,392
+Burada bu Gate ucuyla Source ucu arasında herhangi bir gerilim farkı yok.
+
+67
+00:22:27,852 --> 00:22:30,532
+Gerilim farkı olmadığı için burada temel yapı şu arkadaşlar.
+
+68
+00:22:30,972 --> 00:22:32,231
+Niye alan etkili demişler.
+
+69
+00:22:33,192 --> 00:22:42,692
+Benim buradaki Gate ve Source uçlarına uyguladığım gerilimle beraber bakın P ve N tipi malzeme birleştiğinde
+
+70
+00:22:42,692 --> 00:22:49,951
+şöyle P ve N tipi malzeme birleştiğinde muhakkak arasında Depletion Region dediğimiz bir bölge oluşuyor.
+
+71
+00:22:50,548 --> 00:23:07,887
+Ne yapıyor o Depletion Region'ı hatırlayacak olursanız, bizim buradaki eksiler P'ye doğru gitmeye çalışıyor, artlar N'ye doğru geçmiyor. Orada bir geçiş bölgesi oluşuyor. Burada arkadaşlar şu gri olarak gördüğünüz kısım Depletion Region'ı.
+
+72
+00:23:17,107 --> 00:23:32,387
+Ben bu yapıyı, gerilim uyguladıkça arkadaşlar, bu diplation region artmaya başlar. Yani büyümeye başlar. Büyümeye başladığında şuradaki akımın geçmesi zorlaşır.
+
+73
+00:23:33,172 --> 00:23:43,572
+En sonunda buradaki Deplation Region'a birbirlerine yapıştığı zaman artık benim şurada pembe olarak çizmiş olduğum şu akım akması engellenir.
+
+74
+00:23:43,572 --> 00:23:51,172
+Yani ben aslında Deplation Region'a beraber Deplation Region'ı azaltarak, genişleterek veya daraltarak
+
+75
+00:23:51,508 --> 00:24:18,067
+Ne yapıyorum? Akımın akmasını, bu ıd akımı, ıs akımına eşit. Çünkü ana kolda bak direğinden gelen akım şöyle geliyor. Bunlar daima birbirlerine eşit. Hatırlarsanız ıc, ıe yaklaşık olarak eşit demiştik. Buradaysa tam bir eşitlik var. Çünkü aynı direğinden gelen akım neyse ıs'de de o akım olmuş oluyor.
+
+76
+00:24:19,347 --> 00:24:33,307
+Burada dikkat edeceğiniz en önemli şey şu. Demek ki ben Depletion Region'ı ne yapıyorum? Genişleterek veya daraltarak ID'nin veya IS'nin miktarını ayarlıyorum.
+
+77
+00:24:33,875 --> 00:25:01,755
+Buna niye alan etkili demişler arkadaşlar? Dikkat edin. Ben buradan herhangi bir akım göndermiyorum. Sadece gate ve source arasına bir gerilim uygulayarak depletion region'ı genişletip arttırıyorum. Dolayısıyla alan etkili denmesinin nedeni bu. Uyguladığım gerilimlerle beraber, elektrik alanına beraber depletion region'ı değişiklikler yaparak akımın miktarını belirlemiş oluyorum.
+
+78
+00:25:01,875 --> 00:25:19,355
+Yani öbürkünde neydi? IB eşittir. IC eşittir. Beta çarpı IB kadardı. Yani hakikaten bir IB akımı ile beraber ne yapılıyordu? Onun belli bir katsayıyla çarpılmış şeklinde. Beta kadar yükseltilmiş haliyle işlem yapıyordu.
+
+79
+00:25:25,811 --> 00:25:41,231
+Akım ayarlanıyor. O yüzden bunları alan etkili, elektrik alan etkili gibi düşünebilirsiniz. Yapılar oluşuyor. Bakın VGS sıfır olduğunda, bu depletion regionu biraz daha böyle, bakın şurada kanal var.
+
+80
+00:25:42,516 --> 00:26:08,516
+Dolayısıyla akım ıd'den çıkıp ıs'ya doğru gidiyor. Akımın tersi yönünde elektronlar hareket ettiğini bildiğiniz için elektronları bakın burada ne yapmış? Elektronların yönü şöyle bir sileyim bir daha net bir şekilde görün. Bakın elektronları yönü hareket yönü bu. Zaten source denmesinin nedeni o. Elektronun kaynağı bu şekilde gidiyor. Akım ise elektronun yönlerinin tam tersi.
+
+81
+00:26:10,483 --> 00:26:20,103
+Buradan akım akarak devam ediyor. Peki, şimdi burada akım ne zaman durur arkadaşlar?
+
+82
+00:26:22,103 --> 00:26:32,583
+Eğer, şimdi ben VGS'yi sıfırda tutuyorum. VGS'yi sıfırda tuttuğumda deminki gibi şuradaki kanal, şu kanal açık bir şekilde.
+
+83
+00:26:35,791 --> 00:26:47,351
+Yükseltirsem ne olur? Burayı pozitif, pozitif bir gerilim uygularsam ne olmuş olacak? Bu durumda arkadaşlar, buradaki Depletion Region ne yapacak? Genişleyecek.
+
+84
+00:26:52,500 --> 00:27:01,759
+Şurada elektronlar çoğalarak, buradaki kanalı kapayacaklar.
+
+85
+00:27:02,500 --> 00:27:08,980
+Bunun tam tersi durumda demek ki VGS'nin negatif olduğu durumlarda ise elektronlar itilecek.
+
+86
+00:27:11,188 --> 00:27:23,028
+Ve de benim dipli işin region'ım daralmaya başlayacak. Çünkü P buradaki elektron aldığı için bunları itmeyecek. Ve de buradaki N kanalı açık hale gelecek.
+
+87
+00:27:24,248 --> 00:27:37,028
+Genel olarak çizecek olursam arkadaşlar, jifetin çalışma karakteristiğine bakacak olursam, şöyle bir eğrisi vardır arkadaşlar. Burası BGS.
+
+88
+00:27:38,112 --> 00:27:55,811
+Burası ID. Hani nasıl ki ben daha önce VCE ve de IC grafiğini çiziyorsam, ID ile arasında şöyle bir şey var. Ana değişim gösterilecek olan VGS'dir. Ve de ID akımı ise şuradan kanaldan geçecek akımı gösterir.
+
+89
+00:27:56,115 --> 00:28:04,776
+Maksimum ne zaman oluyor? VGS arasında, yani şurada VGS'nin sıfır olduğu durumda maksimum ıde akmaya başlıyor.
+
+90
+00:28:04,776 --> 00:28:06,556
+Maksimum ıde akmaya başlıyor.
+
+91
+00:28:07,556 --> 00:28:16,635
+Negatif gerilim vermeye başladıkça arkadaşlar, negatif gerilim vermeye başladıkça yavaş yavaş elektronları içecek.
+
+92
+00:28:21,715 --> 00:28:39,096
+Gerilimde artık akım akıtmıyor. Çünkü çok fazla negatif burası biliyorsunuz negatif VGS. Negatif VGS de şurada. Burası V pinçof. Ben burada demin göstermiştim ya.
+
+93
+00:28:39,423 --> 00:28:50,784
+Eğer ben belli bir gerilim uygulayacak, artı da zaten artı gerilim verdiğimde direkt buradaki depletion region kapanıyordu. Zaten sıfırdı. O kısımda çalıştırmıyoruz.
+
+94
+00:28:51,624 --> 00:29:02,923
+Fakat negatif gerilim vermeye başladıkça arkadaşlar, negatif gerilim vermeye başladıkça P'leri ne yapmaya? Daha fazla çekecek buraya ve depletion region'ı iyice kapatacak.
+
+95
+00:29:04,208 --> 00:29:29,208
+İyice tam anlamıyla kapanır. Aynı böyle parmak, hani parmaklarımızı uç uça değdirdiğimizde veya baş parmağımızla, değil mi, şeyi birleştirdiğimizde işaret parmağımızı birleştirdiğimizde şu şekilde. Buna bir pinç, yani tutam veya bir cimdik şeklinde diyorlar. Yani bir bine değmesi şeklinde parmakların uçlarını. Pinch of deniyor buna İngilizce.
+
+96
+00:29:29,940 --> 00:29:56,940
+Pinçof ve bir çimdik almak veya parmaklarının ucunu birleştirmek gibi düşünün. Şöyle. Burası arkadaşlar kapandığında buna VP gerilimi, Pinçof gerilimi deniyor. Belli bir gerilimde ne yapıyor arkadaşlar? Artık I-D akımı sıfıra vürüyor. Peki I-D akımı maksimum nerede? Artı, eksi, VGS geriliminde VGS geriliminin sıfır olduğu kısımda.
+
+97
+00:29:58,259 --> 00:30:09,559
+Şimdi bunlara bir bakalım. Bazı karakteristikleri hızlıca geçiyorum. Karakteristik çizimleri. Benim, bana asıl lazım olan kısma geliyorum.
+
+98
+00:30:09,559 --> 00:30:12,179
+Şimdi.
+
+99
+00:30:12,884 --> 00:30:28,783
+Demin de bahsetmiştim. P kanal jifetler de oluşabilir. Bu sefer ana malzeme P tipinde, kuşaktaki malzeme N tipinde olur. Bu sefer tam tersi karakteristikle çalışıyor arkadaşlar.
+
+100
+00:30:39,392 --> 00:30:58,311
+SS, maksimum gelin maalesef. ISS deniyor. Şuraya ise bu sefer de tam tersi gelin. Yani pozitif VGS gelin uygulanmaya başladığında pinch of gelin oluşu. Negatif kısımlarda ise çalıştırılmıyor bu devre elemanı.
+
+101
+00:30:59,380 --> 00:31:17,180
+Şimdi ben buraya, burada VGS'ye pozitif uygulamaya başladığımda, bakın bu N tipi malzemenin etrafında ne yapmaya başlayacak? Elektronlar çoğalmaya başlayacak, öyle değil mi? Yani depletion regionu genişleyecek.
+
+102
+00:31:17,556 --> 00:31:31,635
+P tipi malzemede bu sefer tam tersi bir karakteristik ortaya çıkmış olacak. Deminkinde neydi? Sol tarafa doğru bir eğim var. Dikkat edin burada da bir eksponansiyel bir azalma söz konusu.
+
+103
+00:31:34,196 --> 00:31:44,635
+Şimdi N tipi malzemeli jifet nasıl gösteriliyor? N tipi malzemede hatırlayın arkadaşlar. Şöyle bir silindirimizi düşünecek olursak.
+
+104
+00:31:45,268 --> 00:31:51,768
+Ana malzeme N tipindeydi. Çevresine sarılan kuşak P tipindeydi.
+
+105
+00:31:51,768 --> 00:32:05,708
+Burada benim gate'im arkadaşlar, daha önce de göstermiştim. Gate direkt hangi tip malzeme kuşağa direkt bağlı gördüğünüz gibi.
+
+106
+00:32:11,827 --> 00:32:26,768
+Şu gördüğünüz kısım kanalın tipini gösteriyor. Eğer ok kanala doğruysa anlayın ki aynı şeydeki gibi. NPN yapılardaki gibi. Neydi? Buradaki yapıda.
+
+107
+00:32:27,667 --> 00:32:48,847
+Şöyle çizdiğimizde N, P, N'de. Dıştaki ok dışarı gösteriyorsa şu malzeme ve şu malzeme N tipindeyim. Burada ise kanalı gösteriyor. Kanalla doğru bir ok var. Kanalla doğru ok varsa anlayın ki şu ana kanalı, kanalın oluştuğu kısım N tipi malzemeden oluşuyor.
+
+108
+00:32:55,155 --> 00:33:14,815
+Şu şekilde drain, gate ve source uçlarımız var. Ana bir kanal var. Bu kanalda şu silindiri gösteriyor. Asıl silindirin tipini. Eğer ok dışarı doğruysa, içeri doğruysa ana malzeme n tipinde demek. Bu n jifetin.
+
+109
+00:33:18,099 --> 00:33:27,919
+N tipi jifet yapıyı gösteriyor. Öbürküsünde ise P tipi olduğunda ise bunun dışarı doğru oku gösterecek arkadaşlar.
+
+110
+00:33:30,019 --> 00:33:36,919
+Evet, şimdi benim hani şurada çizmiştim ya şeyleri.
+
+111
+00:33:37,359 --> 00:33:43,439
+I, D, S, S diyeyim buraya. Jifette maksimum akım.
+
+112
+00:33:43,776 --> 00:34:08,195
+Dikkat edin, N tipinde ve P tipinde. Her ikisinde de arkadaşlar VGS'nin sıfır olduğu kısımda maksimum akım akar. Neden? Çünkü o durumda N tipi malzemenin etrafında belli bir diplişim bölgesi vardır ve şu ana kanal açıktır.
+
+113
+00:34:10,068 --> 00:34:31,128
+N tipinde negatif gerilim uygulamaya başladıkça veya P tipinde pozitif gerilim uygulamaya başladıkça bu kanal kapanmaya başlayacak. En sonunda belli bir V pin çoruk geriliminde artık o diplitiyon regionlarının birbirlerine kavuşması durumunda artık drain'den sorsa akım akmayacaktır.
+
+114
+00:34:38,164 --> 00:34:54,484
+Burada gördüğünüz gibi pozitif bölgede çalıştırılmaz. Antipijifiyette ne yapılır? Negatif gerilimle sıfırla negatif gerilim arasında bir pinch of gerilim arasında şu bölgede istenilen miktar kadar akım elde edilir.
+
+115
+00:34:56,324 --> 00:35:02,284
+P tipi malzemede ise arkadaşlar pozitif gerilim uygulanır. Şuralardaki negatif gerilimler hiç uygulanmaz.
+
+116
+00:35:04,307 --> 00:35:22,807
+Şimdi bunu gördük. Peki, ıd akımını nasıl bulacağız? Hani dikkatinizi çekiyorsa, şöyleydi. Yani burada bir eksponansiyel bir azalım var n tipinde veya p tipinde yine eksponansiyel bir azalım var. Nereye kadar var? Pinçof gerilimine kadar.
+
+117
+00:35:22,807 --> 00:35:29,307
+Şu maksimum VGS'nin sıfır olduğu durumda maksimum akımı ıdss.
+
+118
+00:35:30,003 --> 00:35:49,623
+Akımı deniyor. Maksimumdaki akımın yeri olarak. Buna göre bir şuradaki VGS-ID grafiğinde, herhangi bir noktadaki ID akımını bulabilmek için IDSS'yi
+
+119
+00:35:50,260 --> 00:36:10,440
+Şöyle eksponansiyel bir değişiklik. Pinch of gerilimi arkadaşlar transistöre özel bir akımdır. Şeydir, gerilimdir. Yani ID akımının sıfır olduğu, onun verilmesi lazım. VGS uygulanan gerilimdir. Yani Gantle Sors arasında uygulanan gerilimdir.
+
+120
+00:36:14,068 --> 00:36:28,068
+Buradaki değerine göre ne yapılıyor? IDSS de bir sabit, VP de bir sabit. VGSS'nin değerine göre ID akımı belirleniyor. Yani ana koldan geçen akım, drain'den sorsa geçen akım.
+
+121
+00:36:29,588 --> 00:36:54,788
+Benim asıl çalışma akımım veya on durumda çalışır durumda cifeti tuttuğum akım. Bakın buradaki neyle belirleniyor? VGS ile beraber belirleniyor. O yüzden FET'lere VGS'den dolayı gerilim kontrolü devre elemanları adı veriliyor arkadaşlar.
+
+122
+00:36:55,539 --> 00:37:17,500
+Burada da onu göstermiş. Demin farklı grafikler çizmişlerdi. Burada ı, d ve v, d, s grafiğini çizmiş. Farklı v, g, s değerlerine göre akımın ne olduğunu bakmış. V, g, s sıfır olduğunda ı, d'nin şuraya denk geldi. V, g, s eksi bir olduğunda şuraya denk geldi. V, g, s eksi iki olduğunda buraya geldi.
+
+123
+00:37:22,547 --> 00:37:31,807
+Ne var? Pinch off gelimine kadar, belli bir pinch off gelimine kadar en sonunda akım sıfırlanmış durumda.
+
+124
+00:37:34,327 --> 00:37:37,747
+Burada bana sormak istediğiniz bir soru var mı şu ana kadar arkadaşlar?
+
+125
+00:37:40,147 --> 00:37:41,987
+Bu N tipi jifet için.
+
+126
+00:37:43,927 --> 00:37:48,807
+P tipi jifette bu sefer şu görmüş olduğunuz eğim.
+
+127
+00:37:50,003 --> 00:37:53,844
+VGS'nin pozitif tarafında oluşacak arkadaşlar.
+
+128
+00:37:57,144 --> 00:38:01,364
+Evet, Jifet eğrisi nasıl çizilir?
+
+129
+00:38:02,764 --> 00:38:09,623
+VGS sıfır olduğunda, bakın arkadaşlar, şuraya sıfır geleceği için ID eşittir, IDSS bulunuyor.
+
+130
+00:38:11,092 --> 00:38:33,172
+VGS ve Pinchoff olduğunda ise, VP buraya yazdığında, Pinchoff'da ise ve 1B-1, 0, ID akımı sıfırlanıyor. Bunu biliyoruz. Aradaki değerlerde ise arkadaşlar, ID eşitli, IDSS çarpı, 1-VGS ve VP'nin karesi şeklinde aradaki değerler hesaplanmış oluyor.
+
+131
+00:38:34,132 --> 00:38:58,211
+Aynı şekilde transistör gibi arkadaşlar. Bunlar da 3 bacaklı devre elemanları. Drain, Gate ve Source uçlarından oluşuyor. Bu içeriği gösterdiği için ben ne diyorum? Kanal N tipinde. N kanal, N kanal jifet bunu. N kanal jifet veya N jifet.
+
+132
+00:38:59,572 --> 00:39:02,112
+Olarak adlandırabiliriz arkadaşlar.
+
+133
+00:39:03,891 --> 00:39:07,612
+Bakın P tipinde ise ok dışarı gösterecek.
+
+134
+00:39:07,612 --> 00:39:13,492
+Yani kanal değil, kanalın etrafına sarılan kuşak N tipinde.
+
+135
+00:39:14,132 --> 00:39:18,231
+Kanalın kendisi ise P tipinde olduğunu anlayacağız.
+
+136
+00:39:20,211 --> 00:39:25,592
+Peki, burada MOSFET'lere gelelim.
+
+137
+00:39:26,452 --> 00:39:43,192
+Bizim MOSFET yapılarımızdaysa arkadaşlar, iki tip MOSFET'imiz bulunuyor demiştik. Bir tanesi Depletion Type, bir tanesi Enhancement Type diye. Depletion Type'a geçecek olursak, önce Depletion Type'a bir bakalım.
+
+138
+00:39:44,115 --> 00:40:05,135
+Burada arkadaşlar biraz daha karmaşık yapılar oluşmaya başlıyor. Dikkat edin. Neydi? MOSFET demiştik. İkinci tip MOSFET. Buradaki MOSFET yapısı neydi? Metal Oksit. Metal Oksit Semiconductor.
+
+139
+00:40:08,755 --> 00:40:32,715
+Metaloksit Semiconductor. Ne olacak bu? Bakalım. Depletion Type MOSFET arkadaşlar. Birinci tipi bu. Kanal ayarlamalı MOSFET olarak adlandırılıyor. Eşittir. D MOSFET.
+
+140
+00:40:36,179 --> 00:40:56,859
+Burada temelde şurada şu siyah olarak görmüş olduğunuz kısımlar arkadaşlar metal oksit yapılar. Bunlar yalıtkan kısımlar. Metal oksit yapılar yalıtkan yapılar. Dikkat edin uçlar bu metal oksitlere yani yalıtkan olan yerlere ne yapılmış?
+
+141
+00:40:57,248 --> 00:41:24,507
+Birleştirilmiş. Metaloksit yapılara birleştirilmiş. Yani devreyle direkt iletken bir yapıları, devreyle iletken bir neleri diyeyim arkadaşlar. Kontakları şuradan. Şuradaki yapılardan. Arada dikkat edin. Drain ve Sors'un sadece malzemeyle kontakları var. Şuradan görüyorsunuz.
+
+142
+00:41:25,588 --> 00:41:40,448
+Şöyle baştan çizeyim buraya. Bakın, gate'in şurada bir iletken metal kontaklarla bağlanmış. Şu çizgili olarak gördüğünüz kısımlar silisüm oksitler yani yalıtkanlar.
+
+143
+00:41:42,347 --> 00:41:51,868
+Dikkat edin, direğinin metal kontaklarla içerideki en tipi malzeme ile irtibatı var. Sorsun da aynı şekilde burada var.
+
+144
+00:41:52,371 --> 00:42:06,431
+Dikkat edin, gate herhangi bir şekilde şuradaki aradaki taralı bölgeden dolayı direkt şey değil, malzeme ile direkt teması yok. Yalıtkan bir tabaka var çünkü arasında.
+
+145
+00:42:06,431 --> 00:42:17,231
+Dikkat edin, burada şurada kontağın bulunduğu şu kısımda metal kontakla en tipi bir malzeme birleşmiş.
+
+146
+00:42:17,715 --> 00:42:31,675
+Burada da metal tabakayla N tipi malzeme birleşmiş. Ve araya arkadaşlar bir koridor gibi, şurasını kastediyorum, bir koridor gibi N tipi malzeme ile birbirlerine bağlılar bunlar.
+
+147
+00:42:32,555 --> 00:42:42,935
+Dikkat edin, burada alt tarafta P tipi bir taban malzeme, P taban malzemesi var. Bu arkadaşlar N kanal.
+
+148
+00:42:44,275 --> 00:43:06,655
+N kanal Dimosfet veya N Dimosfet olarak geçiyor. Bir de bunun P tipi Dimosfetler. Burada tam tersi yapı olacak. Bu sefer N tipi malzeme, P tipi malzemelerle kontaklar kurulacak Drain ve Source üzerinden.
+
+149
+00:43:12,244 --> 00:43:28,664
+Bir kanal şeklinde, bakın burada bir kanal var, buraya kanal deniyor. En tipi kanallı yapılı üzerinde buradaki bölgeyi daraltıp açarak ne yapacağız arkadaşlar? Akımın miktarını vereceğiz. Akımın akış yönü bu arkadaşlar bakın.
+
+150
+00:43:30,043 --> 00:43:38,443
+Veya şöyle çizeyim. Akımın akış yönü şu. Şöyle geliyor.
+
+151
+00:43:40,596 --> 00:44:00,976
+Bu şekilde bu ıd akımı, bu ıs akımı, bu da ıd eşit. Demek ki ben burada gate source arasındaki gerilimi ayarlayarak şuradaki kanal dediğim şu yapıyı daraltıp genişleterek oradan geçen akımın miktarını belirleyeceğim arkadaşlar.
+
+152
+00:44:05,396 --> 00:44:27,216
+Hatırlarsanız bu depletion, D-type MOSFET'ti. D-type MOSFET. Önce N tipinden başlıyoruz. Burada çizilen N tipinde. N kanal. D-type MOSFET. Depletion type MOSFET.
+
+153
+00:44:27,731 --> 00:44:54,011
+Şimdi burada dikkat edin, Jifet'te neydi arkadaşlar? En kanalı Jifet'te. Şöyle maksimum akım akıtılıyordu ve Pinch Off gelimi vardı. Şurası da ne grafiydi? Burası VGS, burası ise Drain akımıydı. Şuradaki yer IDSS, şurası ise VGS ve Pinch Off gelimi olarak adlandırılıyordu.
+
+154
+00:44:54,804 --> 00:45:03,983
+Şimdi burada arkadaşlar, en kanalda bakın ben burada en kanalda şurayı çizeyim.
+
+155
+00:45:06,003 --> 00:45:14,284
+Aynı en kanal bakın şuraya kadar olan kısım şurası aynı en kanal cifretin aynısı.
+
+156
+00:45:14,284 --> 00:45:18,523
+Neden? Çünkü ben burada ben burada.
+
+157
+00:45:19,295 --> 00:45:35,035
+VGS gerilimine, VGS gerilimi eğer sıfırsa, eğer sıfırsa buradaki VGS gerilimi sıfırsa, burada bir kanal var, hazır kanal var. Bunun üzerinden maksimum bir akım akıyor, IDSS akımı akıyor.
+
+158
+00:45:36,715 --> 00:45:41,675
+Onu da şurada gösterebilirim. Bakın şurası IDSS çizdiğim yer.
+
+159
+00:45:45,460 --> 00:45:59,480
+Ben negatif gerilimi, buraya negatif gerilim uygulamaya başladıkça, yani buradaki VGS negatif gerilime doğru geçtikçe, buradaki N yapısı giderek daralacak.
+
+160
+00:45:59,480 --> 00:46:13,423
+Şöyle çizeyim biraz daha üzerinden. Ben negatif gerilim uyguladıkça, ne yapacak arkadaşlar? N'ler, elektronlar buradan kaçmaya çalışacak. Dolayısıyla burası...
+
+161
+00:46:13,423 --> 00:46:28,523
+Adım adım, şöyle çizemedim. N'ler dışarı kaçmaya çalışacak. Negatif VGS sıfırdan küçükse. Ne olacak? Burası gittikçe daralacak. Gittikçe daralacak. En sonunda buradaki kanal kopacak.
+
+162
+00:46:35,572 --> 00:46:59,572
+Ne yapacak? Orası kapanacak. Bakın, buradaki yapıda onu gösteriyor. Yani kanalın kapandığı kısım yine V-Pinch-Off olarak adlandırılıyor. Çünkü ne yapmış oluyor? Buradaki kanal ortadan aşamalı olarak kalkmış oluyor. Örneğin, eksi bir uyguladım diyelim. Eksi bir volt uyguladım diyelim. Belli bir miktar elektron kaçtı. Kanal şurası kaldı.
+
+163
+00:47:03,347 --> 00:47:06,027
+Şöyle bir geri alayım bunu.
+
+164
+00:47:06,027 --> 00:47:12,748
+Eksi 2 volt uyguladayım. Önce şuradan bir geri nasıl alacağız bunu? Şöyle silerek alayım.
+
+165
+00:47:24,244 --> 00:47:24,844
+İçinlini.
+
+166
+00:47:30,643 --> 00:47:57,443
+Örneğin, eksi 2 uyguladım diyelim. Biraz daha daralacak. Burası biraz daha daralacak. En sonunda pinçork geyelim ne varacak? Fakat tam tersi bir durum da olabilir. Dikkat edin. Jifet'te ne yapıyordu? VGS eşittir sıfırdan itibaren burada herhangi bir operasyon yapılmıyordu. Fakat burada VGS'ye pozitif verdiğimizde mi olur arkadaşlar?
+
+167
+00:47:58,036 --> 00:48:16,956
+Önce onu bir çizelim. VGS, buraya uyguladığımız VGS büyük sıfır olduğundan olur. Pozitiflerden dolayı buraya daha çok çekeceğinden buraya N bölgesi kalınlaşmaya başlar. Dolayısıyla şuradan geçecek akımın miktarı artar.
+
+168
+00:48:17,811 --> 00:48:34,111
+Burası ise bakın, burada tam tersine, burada hiç işlem yokken, VGS büyüktür, sıfırda hiç işlem yokken, D-Type MOSFET'te ne yapılıyor? Şu kısımına doğru akım akmaya başlıyor.
+
+169
+00:48:34,111 --> 00:48:44,651
+IDSS jifrette maksimum akımken, D-Type MOSFET'te ise daha yüksek akımlara ulaşılabiliyor.
+
+170
+00:48:45,907 --> 00:49:05,108
+Burada kafa karıştırıcı bir şey daha var. D-type MOSFET, depletion-type MOSFET neydi? Kanal ayarlamalı. Bir de E-type MOSFET var. O da kanal oluşturmalıydı. O da enhancement-type MOSFET olarak geçiyor.
+
+171
+00:49:06,099 --> 00:49:27,940
+Burada kanal ayarlamalı demesinin nedeni hali hazırda bir kanal var burada. Yani en tipi malzeme oraya görünmüş. Yani kanal oluşturulmuş zaten. Sadece o kanalı ayarlıyoruz genişliğini. Genişliğini ayarlıyoruz. Dolayısıyla buna kanal ayarlamalı deniyor.
+
+172
+00:49:29,268 --> 00:49:47,268
+Şuradaki kısım sizi yanıltmalısın. Şu kısma kadar yani negatif gerilim uygu sıfıra kadar uygulanan gerilim. Depletion Mode. Aynı adı vermişler burada. Şu kısmı ise Enhancement Mode adını vermişler. Yani...
+
+173
+00:49:47,764 --> 00:50:05,284
+Burada Depletion bölgesinin genişliğinin ayarlandığı, burada Enhancement dediği ise Depletion bölgesinin genişletildiği kısım manasında farklı olarak, D-type ve E-type'dakinden farklı bir şey kullanım burada.
+
+174
+00:50:05,284 --> 00:50:14,684
+Mod olarak kullanıyor. VGS sıfırdan küçükken Depletion mod, büyükken Enhancement mod olarak geçiyor. Orası aklınızı karıştırmasın.
+
+175
+00:50:17,108 --> 00:50:39,628
+Evet, bu da buraya kadar bir sorunuz var mı arkadaşlar? Bu anlattıklarım en kanal oluşturmalı, kanal ayarlamalı. Dimosvet. Dimosvet deyince ne diyeceksiniz? Kanal ayarlamalı.
+
+176
+00:50:41,367 --> 00:50:42,948
+Hocam bir şey söylemeyeyim.
+
+177
+00:50:43,268 --> 00:50:43,468
+Tabii.
+
+178
+00:50:43,987 --> 00:50:52,587
+Orada, az önce gördüğümüz Splation tipindeki MOSFET'te bir sağda bir terminal daha vardı. O ne yapıyor tam olarak?
+
+179
+00:50:53,307 --> 00:51:08,587
+Bu substrate'in şey yaptığı genellikle toprağa bağlanan bir kısım. Yani P tip malzemenin üzerinde de sonuçta bir elektron devresinin yapılması için ana malzemenin bağlandığı gerilim tipi. Bunu böyle bir uç olarak düşünmeyin arkadaşlar.
+
+180
+00:51:09,588 --> 00:51:37,068
+Anojilarımız Drain, Gate ve Source şeklinde. Şimdi dikkat edin, bu karakteristikleri depletion modda yani VGS sıfırdan küçükken yani şurada aynı jifetin karakteristiğine benziyor. Dolayısıyla aynı akım VGS-ID grafiği için aynı formülü kullanabiliyoruz.
+
+181
+00:51:38,036 --> 00:51:55,136
+Enhancement moddaysa, şurayı diyorum. Aynı bu formülü yine kullanmaya devam ediyoruz. Cifetten farkı ne? Enhancement modunun olması. Yani VGS'nin pozitife geçmesi. VGS'nin pozitif olabilmesi. Bunlar hep en kanaldıydı.
+
+182
+00:52:03,764 --> 00:52:16,804
+VGS grafiği bu sefer P tipi malzemede, P kanal jifette, P kanal jifette, şöyle P kanal jifette, buraya kadar geliyordu.
+
+183
+00:52:16,804 --> 00:52:25,884
+P kanal D type MOSFET'teyse arkadaşlar, şurayı aşabiliyoruz. Şurayı aşabiliyoruz. Aynı şekilde.
+
+184
+00:52:26,903 --> 00:52:31,204
+Yine aynı formül kullanılıyor burada. Aynı formül kullanılacak.
+
+185
+00:52:31,731 --> 00:52:56,271
+Fakat dediğim gibi şu kısımlar Enhancement modu olarak, yani zenginleştirme modu olarak, Enhancement modu olarak ne yapıyor? VGS eşittir sıfır bariyerini aşıyor. Yani o kısımdan sonra var olan kanal genişlemeye devam ediyor.
+
+186
+00:52:58,963 --> 00:53:25,344
+Evet. Bakın burada da P tipi malzemeli halini vermiş. Bu sefer de P kanal var. Buna da P kanal D-type MOSFET. P kanal, kanal ayarlamalı. Yani D-type MOSFET demek kanal ayarlamalı MOSFET demek.
+
+187
+00:53:25,972 --> 00:53:33,231
+Kısaca bu. Deplation bölgesi. Yani oradaki kanalı kastediyor. Şuradaki kanalı kastediyor.
+
+188
+00:53:33,891 --> 00:53:44,512
+Dediğim gibi tam tersi bir grafik çizilmiş oluyor burada da. Peki bunu nasıl şey yapacağız? Biz en çok bunu gördük şöyle.
+
+189
+00:53:45,452 --> 00:53:52,932
+N-kanal MOSFET'i gördük. Burada da kanal bu. Ana malzemenin yapısı bu.
+
+190
+00:53:53,427 --> 00:54:02,788
+Şurada bir hazır kanal var. İçeriği gösteriyorsa, şöyle içeriği gösteriyorsa, bu ikisi aynı gösterin. Farklı iki gösterin burada.
+
+191
+00:54:03,688 --> 00:54:10,927
+Substrate'i genellikle source'a bağlamış burada. Dikkatinizi çekiyorsa şu şekilde. Ne yapılıyor burada?
+
+192
+00:54:11,927 --> 00:54:14,608
+Hazırda zaten kanal var.
+
+193
+00:54:15,251 --> 00:54:35,612
+O kanalı ayarlamaya çalışıyoruz biz. Yani bizim burada bakın ana malzeme üzerinde kanalımız var. Gate ise bakın buradaki mantık yani çizimdeki mantık bu. Şu. Dikkat ederseniz zaten gate değmiyordu. Orada bir silisyum tabaka vardı hatırlarsanız. Bakın gate şurada.
+
+194
+00:54:37,300 --> 00:54:55,239
+Değmiyor zaten ana malzeme. Arada bir silisyum tabaka var zaten. Bu da onu gösteriyor. Gate değmeden, ana şeye, kanala, yapıya değmeden orada ne yapabiliyor? Etkisinde bulunabiliyor.
+
+195
+00:55:01,139 --> 00:55:12,119
+Şöyle yeşille çizleyeyim. Gate'in karşısında hazırda kanal varsa. Demek ki kanal varmış. O kanalın genişliği ayarlanacak manasında kanal ayarlamalı.
+
+196
+00:55:13,639 --> 00:55:27,579
+MOSFET diyoruz. Peki kanal oluşturmalı da ne olacak? Aynı şey olacak arkadaşlar. Şöyle gate değmeyecek. Ama kanal yok orada. Kanalı biz oluşturacağız. Bu şekilde çiziliyor orada.
+
+197
+00:55:28,884 --> 00:55:36,004
+Arkadaşlar, yani şurası kesikli bir şekilde çizilmiş olacak. Birazdan göstereceğim.
+
+198
+00:55:38,424 --> 00:55:48,024
+Evet, burada da speklerle alakalı yapılar var. Dikkat edin, kanalın eğer ok içeri gösteriyorsa şu şekilde.
+
+199
+00:55:48,947 --> 00:56:13,327
+Anlayın ki kanal, yani değdiği yer, kanalın tipi ne olduğunu gösteriyor. İçeri gösterirse N kanal, dışarı gösterirse P kanal. Kanalın tipi, şurada bak, kanaldan uzaklaşıyorsa anlayın ki bu kanal P kanal. Kanalın içini gösteriyorsa burası anlayın ki N kanal ayarlamalı MOSFET veya D-type MOSFET.
+
+200
+00:56:16,179 --> 00:56:25,440
+E-Type MOSFET'e geçtik. Yani bu da Kanal Oluşturmalı MOSFET. Yani E-MOSFET.
+
+201
+00:56:29,811 --> 00:56:40,371
+Dikkat edin, deminkinden farkı şu. Şurada yeşille çizdiğim kısımda bir depletion bölgesi, bir bağlantı bölgesi yok.
+
+202
+00:56:40,371 --> 00:56:49,512
+Biz uyguladığımız gerilimle şuraya depletion bölgesini oluşturup şöyle akımın akmasını böyle sağlayacağız.
+
+203
+00:56:50,331 --> 00:56:55,371
+Şu anda boşluk görünen kısımda önce bir kanal oluşturacağız. Şöyle.
+
+204
+00:56:55,956 --> 00:57:22,756
+Kanalı açacağız, genişleteceğiz onu. Ondan sonra ne yapılacak? Akım akmaya başlayacak bu kanal üzerinden. Burada da belli bir gelin uygulayana kadar, örneğin burada N tipi malzeme var değil mi? Şurada bir N tipi malzeme var. Dolayısıyla ben VGS'ye ne uygularsam burada N tipi malzeme, N tipi bir kanal oluşur.
+
+205
+00:57:24,307 --> 00:57:37,688
+VGS'ye pozitif uygularsam, artı eksi VGS olursam ne yapılacak arkadaşlar? Eğer pozitif gelin uygularsam şuraya N tipi malzemeler yığılmaya başlayacak. Yani burada pozitif.
+
+206
+00:57:38,164 --> 00:58:03,864
+gerilim varsa, bakın burada, kanalın etkisinden dolayı N tipi malzemeler burada birikmeye başlar. VGS'yi arttırdıkça pozitif yönde ne yapılacak? Daha fazla N tipi malzeme buraya birleşecek. Bakın burada kanal oluştu. Fakat ilk kanalın oluşması, akımın akması için VGS'nin belli bir gerilimin, VGS şöyle yaptığında VGS belli bir threshold geriliminin.
+
+207
+00:58:04,179 --> 00:58:26,179
+Üstüne çıktığında ilk defa burada bir kanal oluşmuş olacak. İlk defa o kanal oluşacak. VGS arttırıldıkça o kanal genişleyecek. Burada da onu gösteriyor arkadaşlar. Belli bir gerilime kadar V-Threshold burası. Akım yok. Ondan sonra pozitif gerilim arttırıldıkça...
+
+208
+00:58:27,284 --> 00:58:31,824
+Orada N tipi bir kanal oluşacak ve hızlıca artacak arkadaşlar.
+
+209
+00:58:32,844 --> 00:58:38,204
+Dikkat edin. Oluşan kanalın tipi. Burada oluşacak kanal N kanaldır değil mi?
+
+210
+00:58:38,204 --> 00:58:48,864
+N tipi bir kanal oluşacak. Buna N kanal E-type MOSFET. N kanal kanal oluşturmalı MOSFET adını vereceğiz arkadaşlar.
+
+211
+00:58:50,003 --> 00:59:16,844
+Bakın, burada da şeyi var. Dikkat edin, D-Type MOSFET, yani kanal ayarlamalı MOSFET ile J-FET'lerin karakteristikleri aynı. D-Type'de tek bir fark pozitif bölgeye veya negatif bölgeye de, yani enhancement modda da geçebiliyor. Bunun karakteristiği ise bambaşka. Belli bir threshold geliminden sonra arkan artan bir ID-VGS grafiğine sahip.
+
+212
+00:59:17,396 --> 00:59:27,416
+Peki P kanalı oluşturmalı olsaydı ne olacaktı? Bu şekilde değil de, şöyle çizeyim, tam tersi bir grafiği olacaktı.
+
+213
+00:59:28,236 --> 00:59:32,416
+Belli bir threshold gelin var. Burada da eksponansiyel bir artış var.
+
+214
+00:59:32,416 --> 00:59:42,736
+Onun kanal oluşturmalı, yani E-type mosfet'in K çarpı VGS-V threshold'un karesi şeklinde eksponansiyel bir eğrisi var.
+
+215
+00:59:45,972 --> 01:00:07,572
+Transistöre özgü bir değer. Burada gördüğünüz gibi IDVGS grafiğinin değişkenlerini çizebiliyoruz. Yani Y eşittir, K X eksi, B'nin karesi gibi bir formül diye düşünemiyorsunuz matematiksel olarak.
+
+216
+01:00:11,903 --> 01:00:25,664
+İd10 bölü, VGS yani akım, transistör çalışırken ki VGS10'daki akımlarından bulunabiliyor.
+
+217
+01:00:27,219 --> 01:00:44,420
+P kanalı geçelim şimdi. P kanalda ise demin bahsettiğim gibi buraya artı eksi VGS'ye negatif gerilimler uygulandığında, negatif şey yaptığında burada P tipinde bir kanal oluşacak. İlk defa belli bir threshold geriliminde.
+
+218
+01:00:44,420 --> 01:00:54,420
+Yani negatifi arttırdıkça buradaki kanal genişleyecek diye düşünebilirsiniz arkadaşlar. Aynı demin anlattığım gibi burada kanal yok.
+
+219
+01:00:54,963 --> 01:01:07,947
+O yüzden delikli çizmişler. Aslında biz bu kanalı biz oluşturuyoruz manasında. Delikli olması VGS-0 iken herhangi bir akım yok. Çünkü kanal oluşmamış. Ancak...
+
+220
+01:01:07,956 --> 01:01:23,536
+N tipi malzeme de pozitifte, P tipi kan oluşturmalı ise negatif gerilimde bu kanallar oluşuyor ve devrede akım akmaya başlıyor diye düşünebilirsiniz.
+
+221
+01:01:29,268 --> 01:01:45,948
+Onun dışında tabii ki MOSFET teknolojisi bugünümüzde elektronik, elektronik yani transistör sektörünün en çok kullanılan yapıları. Stabilizasyonu, akım stabilizasyonu, sıcaklık stabilizasyonu gibi konulardı.
+
+222
+01:01:46,868 --> 01:01:54,388
+Bunun dışında çok daha karmaşık yapılar da çıkmış. VMOS diye Vertical MOSFET şeklinde çok daha karmaşık yapılar var.
+
+223
+01:01:54,835 --> 01:02:07,515
+Simos, belki en çoğunuz bunu çoğunuz duymuşsunuz değil mi? Simos Devices'ler diyoruz biz. Simos yapılarda. Bakın burada P tipi malzeme var, N tipi malzeme buraya konmuş, çeşitli kanallar oluşturulmuş.
+
+224
+01:02:08,019 --> 01:02:24,219
+VSS, VG bunlar nedeni lojik circuit dizaynında daha fazla, daha yüksek giriş empedansına sahip transistörler, yüksek giriş empedansına veya direncine sahip olmak demek kendini bir önceki devreden soyutlayabilmek demek.
+
+225
+01:02:24,219 --> 01:02:36,019
+Daha hızlı sıfır bir geçişleri yani bakın biz sayısal bilgi iletirken sıfır ve birleri ne kadar sık iletebilirsek elektronik olarak ayrıştırabilirsek.
+
+226
+01:02:36,019 --> 01:02:59,559
+Bu mu daha iyi? Data iletim için yoksa bu mu daha iyi? Hangisi dahi? Hızlı 0-1 geçişlerini yakalayabildiğimiz şeyleri önemli. Bir de güç harcaması. Daha az güç harcayarak nasıl bu dataları iletiriz veya işlem yaptırırız kısmı da önemli bir kısım.
+
+227
+01:03:01,172 --> 01:03:10,112
+Arkadaşlar, sadece N tipi için, mesela bu N kanal jifet.
+
+228
+01:03:15,347 --> 01:03:34,427
+Bakın ve Pinch Off'tan başlıyor. IDSS'ye kadar gidiyor. N kanal bu. Formülü bu. Ondan sonra şurada N kanalı oluşturmalı. N kanal D-Type MOSFET. Yani kanal ayarlamalı.
+
+229
+01:03:38,516 --> 01:03:58,195
+Bakın, aynı jifet karakteri ne kadar buraya kadar ama pozitif bölgeye de geçebiliyor. Aynı şekilde burada N kanal oluşturmalı. N kanal E-type MOSFET. Bu da kanal oluşturmalı.
+
+230
+01:04:00,340 --> 01:04:21,599
+Sadece n'ler için yapılmış bir özet tablosu gibi. Burada da pozitif bir gelinimle itibaren gittikçe artabiliyor. Peki bunun p'sini nasıl düşüneceksiniz? Tam tersini düşüneceksin bu şekilde. Şu şekilde olacak. Bununki nasıl olacak? Şöyle olacak. Peki bununki nasıl olacak? Şu şekilde olacak gibi düşünebilirsiniz.
+
+231
+01:04:23,019 --> 01:04:27,599
+Bunlarla alakalı sorular çözeceğiz. Şu anda teorik bir anlatım yaptık.
+
+232
+01:04:28,436 --> 01:04:33,256
+Ama soruları çözdükçe çok daha iyi kavrayacaksınızdır diye düşünüyoruz arkadaşlar.
+
+233
+01:04:34,456 --> 01:04:36,616
+Sizin sormak istediğiniz sorular var mı?
+
+234
+01:04:37,496 --> 01:04:39,936
+Teorik bir anlatımla geçti bu hafta.
+
+235
+01:04:40,656 --> 01:04:43,956
+Genel olarak bu yapıların nasıl çalıştığını anlamaya çalıştık.
+
+236
+01:04:44,476 --> 01:04:46,496
+Sizlerin sormak istediği bir soru var mı arkadaşlar?
+
+237
+01:04:52,947 --> 01:05:11,707
+Evet, grup 2'den gelen arkadaşlar sizler de görebilmişsinizdir umarım. Sizlere mail gelmiş miydi grup 2 için şey olacağı dersin grup 1 ile beraber işleneceği bilgisi klasrumu haricinde?
+
+238
+01:05:12,507 --> 01:05:13,268
+Evet hocam geldi.
+
+239
+01:05:14,367 --> 01:05:17,527
+Tamamdır. Hamza hocanız attı yani size mail değil mi?
+
+240
+01:05:18,467 --> 01:05:18,807
+Aynen.
+
+241
+01:05:19,380 --> 01:05:31,640
+Tamamdır. Teşekkürler. O zaman bu haftalık bu kadar diyelim. Sizlerin başka sorusu varsa onları cevaplayabilirim. Hepsiyle alakalı bu teorik anlatım kısmıyla alakalı sorusu olan.
+
+242
+01:05:33,940 --> 01:05:38,280
+Yok zannedersem. Hepinize iyi hafta sonları diliyorum.
+
+243
+01:05:38,320 --> 01:05:39,780
+Can ders kaydını paylaşacak mısınız?
+
+244
+01:05:40,220 --> 01:05:43,460
+Evet evet ders kaydını paylaşacağım arkadaşlar tekrar.
+
+245
+01:05:43,600 --> 01:05:44,320
+Tamam teşekkür ederim.
+
+246
+01:05:44,520 --> 01:05:46,580
+Kendinize iyi bakın. Tekrar görüşmek üzere.
+
+247
+01:05:47,411 --> 01:05:54,092
+Klasınızı paylaşır mı arkadaşlar birazdan? Kolay gelsin hepinize görüşmek üzere.
