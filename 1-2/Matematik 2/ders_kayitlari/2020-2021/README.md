@@ -7,3 +7,4 @@
 | 15 | Bahar | — | [sube_15/](sube_15/) |
 | 20 | Bahar | — | [sube_20/](sube_20/) |
 | 35 | Bahar | — | [sube_35/](sube_35/) |
+| 52 | Bahar | Muttalip Özavşar | [sube_52/](sube_52/) |

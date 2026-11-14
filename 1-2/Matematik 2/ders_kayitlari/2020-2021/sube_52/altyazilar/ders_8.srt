@@ -1,0 +1,2711 @@
+1
+00:00:02,740 --> 00:00:04,240
+Evet, merhaba arkadaşlar.
+
+2
+00:01:14,388 --> 00:01:18,928
+Evet. Birkaç dakika bekleyelim arkadaşlar.
+
+3
+00:01:21,928 --> 00:01:24,008
+Derse herkes katılabilsin.
+
+4
+00:01:50,067 --> 00:01:51,647
+Evet, merava targ.
+
+5
+00:02:14,068 --> 00:02:16,368
+Tamam, can you see my whiteboard?
+
+6
+00:02:29,427 --> 00:02:38,367
+Ok, let's summarize topics we introduced yesterday. So yesterday we introduced the parametric equation.
+
+7
+00:02:41,147 --> 00:02:55,807
+As recall, parametric equation is nothing else than the motion equation of some object traveling on the plane or in the space or time.
+
+8
+00:02:56,372 --> 00:02:57,912
+Arametric equation.
+
+9
+00:03:02,912 --> 00:03:07,492
+So, suppose that you study in the n-dimensional space.
+
+10
+00:03:08,772 --> 00:03:11,572
+This is a general form.
+
+11
+00:03:12,391 --> 00:03:14,192
+N-dimensional space.
+
+12
+00:03:15,132 --> 00:03:19,132
+We generally use the real n-dimensional space.
+
+13
+00:03:19,699 --> 00:03:43,019
+So we have n-coordinates. Okay, so x1-coordinates depends on time. x2-coordinate depends on time. And dot, dot, dot, the n-coordinate depends on time. But this is general form of parametric equation.
+
+14
+00:03:43,955 --> 00:03:46,715
+The final coordinates depends on time.
+
+15
+00:03:46,715 --> 00:03:51,595
+So this is the motion.
+
+16
+00:03:52,935 --> 00:03:55,775
+The motion equation.
+
+17
+00:03:56,995 --> 00:04:01,475
+Equation of some object.
+
+18
+00:04:03,875 --> 00:04:05,795
+Some object.
+
+19
+00:04:06,715 --> 00:04:08,536
+So traveling.
+
+20
+00:04:09,675 --> 00:04:11,036
+Traveling.
+
+21
+00:04:12,500 --> 00:04:15,199
+in the n-dimensional space.
+
+22
+00:04:15,819 --> 00:04:16,120
+Okey.
+
+23
+00:04:17,620 --> 00:04:20,399
+En boyutlu uzayda hareket eden, arkadaşlar,
+
+24
+00:04:23,060 --> 00:04:28,079
+zamanla hareket eden bir nesnenin hareket denklem olarak düşünebilirsiniz.
+
+25
+00:04:28,079 --> 00:04:29,060
+Tamam mı gençler?
+
+26
+00:04:29,159 --> 00:04:31,399
+Parametrik denklemlerin genel şeyi budur.
+
+27
+00:04:31,939 --> 00:04:35,040
+Tabii ki biz en boyutlu uzayı göremeyiz.
+
+28
+00:04:35,219 --> 00:04:37,360
+3 boyuttan sonra 4, 5, 6.
+
+29
+00:04:37,939 --> 00:04:42,679
+Arkadaşlar, biraz farklı oluyor işler. Biz öyle gördüğümüz gibi değil.
+
+30
+00:04:45,600 --> 00:04:46,360
+Evet.
+
+31
+00:04:47,399 --> 00:04:54,159
+Ok, now, polar koordinat. Let me talk about polar koordinat system.
+
+32
+00:04:57,843 --> 00:04:58,843
+Sorry.
+
+33
+00:05:01,563 --> 00:05:03,563
+Polar koordinates.
+
+34
+00:05:06,043 --> 00:05:14,563
+So in the case of polar coordinates, so we can express some point in terms of the distance to origin
+
+35
+00:05:16,004 --> 00:05:21,563
+and the angle between this line segment.
+
+36
+00:05:21,843 --> 00:05:48,463
+between the point and origin and the x-axis. Okay, so this is some representation. Okay, so this is equivalent to saying x, y. So as you see, we can represent some point on the plane by distinct type coordinate systems. So there is some transition between polar coordinate system and
+
+37
+00:05:48,819 --> 00:06:04,720
+Cartesian coordinate system. So we got this transition. So as you see from geometry, we can see that the orthogonal projection of this line segment with the length r to x-axis given by r times cosign theta.
+
+38
+00:06:05,319 --> 00:06:14,960
+And the orthogonal projection of this line segment on to vertical axis y given by, so r times sin theta. Okay.
+
+39
+00:06:16,276 --> 00:06:33,176
+As you recall, it is better to study bipolar coordinates in the case that you need to compute areas of some radius, something like that.
+
+40
+00:06:33,676 --> 00:06:37,076
+So if you have some radius, something like that.
+
+41
+00:06:38,875 --> 00:06:42,987
+So it is better to study by...
+
+42
+00:06:44,276 --> 00:06:47,975
+Polar koordinat, if you wish to compute the area of this region.
+
+43
+00:06:48,716 --> 00:06:52,815
+So, in that case, so this is the basic form of this.
+
+44
+00:06:52,915 --> 00:06:56,855
+So, we split this region into sufficiently,
+
+45
+00:07:01,016 --> 00:07:05,295
+in a circular section, circular region section.
+
+46
+00:07:05,495 --> 00:07:07,055
+So, let's zoom this.
+
+47
+00:07:07,055 --> 00:07:08,596
+If you zoom this,
+
+48
+00:07:12,084 --> 00:07:13,144
+line segment.
+
+49
+00:07:13,843 --> 00:07:16,084
+So we are going to see such...
+
+50
+00:07:18,603 --> 00:07:21,084
+So we got some data here.
+
+51
+00:07:28,211 --> 00:07:31,411
+So here, so we got r, so r.
+
+52
+00:07:32,371 --> 00:07:37,411
+And so this is the piece of some circular curve.
+
+53
+00:07:38,111 --> 00:07:47,831
+Okay, so the area of this, dA, so 1 over 2 r squared, d theta.
+
+54
+00:07:47,831 --> 00:07:53,631
+So this is equivalent to some vah.
+
+55
+00:07:53,983 --> 00:08:00,063
+pi r² alpha degree over
+
+56
+00:08:01,076 --> 00:08:03,115
+360 dere, ok.
+
+57
+00:08:03,735 --> 00:08:06,456
+Now, so, everyone knows this, I think.
+
+58
+00:08:07,055 --> 00:08:11,456
+This is in terms of degree, this is in terms of radian value.
+
+59
+00:08:11,975 --> 00:08:17,915
+So, this is only one piece if you integrate infinitely many pieces, something like that.
+
+60
+00:08:17,975 --> 00:08:24,036
+So, if you integrate this, but in order to integrate this, we need to put some bar here.
+
+61
+00:08:24,036 --> 00:08:27,576
+So, as you see, this bar starts to rotate.
+
+62
+00:08:28,468 --> 00:08:32,288
+At ray, theta is equal to alpha.
+
+63
+00:08:33,067 --> 00:08:38,468
+And this rotation, finish, at ray, theta, beta.
+
+64
+00:08:42,728 --> 00:08:54,468
+Okay, as you see, if we integrate this from the A, so theta is equal to, from alpha, theta is equal to beta, we rotate our...
+
+65
+00:08:56,083 --> 00:09:19,223
+bar, around origin. So do not forget to put 1 over 2. And from theta alpha to theta beta and r square. So look at here. So during this rotation, the end point of this bar rotating around origin changed. So as you see,
+
+66
+00:09:19,796 --> 00:09:34,016
+End point of these bars dating around origin must be on some polar curves. Let's say this is R is equal to F of theta. So as you see, we got this F of theta.
+
+67
+00:09:34,899 --> 00:09:59,403
+Bu dağda.
+
+68
+00:10:00,115 --> 00:10:09,115
+Buraya kadar sorusu olan var mı? İşin mantığını biliyoruz artık. Kutupsal koordinat ne zaman kullanılır, ne zaman kullanılmaz öğrenmiş olduk.
+
+69
+00:10:10,515 --> 00:10:18,475
+Simetri durumlarından bahsetti. Genel durumunu verdik. Grafik çizimini arkadaşlar vermedik. Ondan da kısaca bir bahsedeyim.
+
+70
+00:10:18,475 --> 00:10:19,895
+Sketching, graf.
+
+71
+00:10:29,587 --> 00:10:39,187
+Okay, now, given some curve, given a polar curve,
+
+72
+00:10:43,923 --> 00:10:50,423
+R is equal to f of theta over some interval.
+
+73
+00:10:52,903 --> 00:10:53,683
+Then,
+
+74
+00:10:55,683 --> 00:10:56,683
+we mainly
+
+75
+00:11:00,340 --> 00:11:01,019
+Fallo
+
+76
+00:11:04,724 --> 00:11:10,668
+...follow the steps.
+
+77
+00:11:13,844 --> 00:11:14,344
+Hello.
+
+78
+00:11:15,344 --> 00:11:17,024
+The first step
+
+79
+00:11:23,860 --> 00:11:28,519
+Compute
+
+80
+00:11:37,043 --> 00:11:37,543
+Sorry.
+
+81
+00:11:40,104 --> 00:11:40,844
+Period
+
+82
+00:11:44,244 --> 00:11:45,244
+Of F.
+
+83
+00:11:48,183 --> 00:11:50,644
+Okay, define the list value.
+
+84
+00:11:51,644 --> 00:11:52,443
+The list
+
+85
+00:11:53,683 --> 00:11:54,604
+positive
+
+86
+00:11:57,744 --> 00:11:58,644
+t value.
+
+87
+00:12:01,084 --> 00:12:02,084
+Such that
+
+88
+00:12:06,772 --> 00:12:14,292
+such that f of theta plus t is equal to f of theta.
+
+89
+00:12:15,572 --> 00:12:17,892
+Okay, now this is the first step.
+
+90
+00:12:18,212 --> 00:12:23,932
+So you need to compute the period of given function f of theta.
+
+91
+00:12:24,132 --> 00:12:25,092
+The second step.
+
+92
+00:12:28,947 --> 00:12:33,587
+Investigate
+
+93
+00:12:37,460 --> 00:12:54,659
+Sine of, the sine of derivation, to analyze increasedness and decreasedness of this polar curve, derivation, of f of theta.
+
+94
+00:12:56,659 --> 00:13:01,299
+Now the third step, the first step.
+
+95
+00:13:08,083 --> 00:13:16,483
+Find, or, sorry, investigate, symmetry.
+
+96
+00:13:20,980 --> 00:13:25,259
+Kays'ı, for given function f of theta.
+
+97
+00:13:27,320 --> 00:13:28,379
+Final step.
+
+98
+00:13:29,480 --> 00:13:31,900
+Okay, now we can write this.
+
+99
+00:13:40,148 --> 00:13:46,148
+Determine
+
+100
+00:13:46,148 --> 00:13:47,148
+Some proper
+
+101
+00:13:47,148 --> 00:13:47,436
+Determine
+
+102
+00:13:51,187 --> 00:13:53,187
+...intervall...
+
+103
+00:13:55,187 --> 00:13:56,187
+...for...
+
+104
+00:13:56,187 --> 00:13:58,187
+...theta values.
+
+105
+00:13:59,187 --> 00:14:01,187
+Taking into account...
+
+106
+00:14:03,187 --> 00:14:05,187
+...consideration obtainable.
+
+107
+00:14:05,187 --> 00:14:06,187
+OK.
+
+108
+00:14:06,187 --> 00:14:09,187
+Now let's introduce some examples.
+
+109
+00:14:09,187 --> 00:14:12,187
+Example, so this is basic example.
+
+110
+00:14:12,187 --> 00:14:13,187
+You are given some...
+
+111
+00:14:13,187 --> 00:14:15,187
+...polar function.
+
+112
+00:14:15,187 --> 00:14:17,187
+1 plus...
+
+113
+00:14:17,812 --> 00:14:22,292
+Cosine theta. Okay, let's sketch this graph.
+
+114
+00:14:23,251 --> 00:14:25,991
+This graph. Okay, now first step.
+
+115
+00:14:26,552 --> 00:14:30,131
+So, what is the period of this function?
+
+116
+00:14:30,131 --> 00:14:37,591
+We are looking for the least positive value, satisfying f of theta plus t is equal to f of theta.
+
+117
+00:14:38,432 --> 00:14:41,932
+Okay, as you see, let me say this is...
+
+118
+00:14:42,004 --> 00:14:43,624
+This is f of theta.
+
+119
+00:14:44,344 --> 00:14:53,964
+So it's obvious that f of theta plus 2 pi is equal to f of theta.
+
+120
+00:14:53,964 --> 00:14:58,303
+Okay, so this is the least value satisfying this condition.
+
+121
+00:14:58,884 --> 00:15:02,004
+So for all theta real values, we got this.
+
+122
+00:15:02,484 --> 00:15:07,764
+So this implies that, okay, the period is 2 pi.
+
+123
+00:15:10,131 --> 00:15:15,991
+Now, this means that it is sufficient to, it is sufficient to,
+
+124
+00:15:19,443 --> 00:15:22,883
+sketch, the curve,
+
+125
+00:15:26,163 --> 00:15:27,603
+on some interval,
+
+126
+00:15:29,683 --> 00:15:30,963
+some interval,
+
+127
+00:15:32,163 --> 00:15:33,083
+with the length,
+
+128
+00:15:37,235 --> 00:15:38,735
+With the length 2 pi.
+
+129
+00:15:39,495 --> 00:15:43,615
+Okay. 2 pi uzunluklu bir aralık üzerinde eğriyi çizmek şimdilik yeterli.
+
+130
+00:15:44,375 --> 00:15:45,495
+Okay, let's go on.
+
+131
+00:15:45,495 --> 00:15:47,835
+Okay, let's study, let's study,
+
+132
+00:15:48,835 --> 00:15:50,815
+Symmetric case of this function.
+
+133
+00:15:51,035 --> 00:15:51,195
+Also,
+
+134
+00:15:53,335 --> 00:15:55,415
+Decrease and increase of this function.
+
+135
+00:15:55,915 --> 00:15:57,475
+Derivation of this function.
+
+136
+00:15:58,155 --> 00:16:01,215
+Adım adım uygulamak zorunda değilsiniz arkadaşlar, tamam mı?
+
+137
+00:16:02,175 --> 00:16:04,595
+Okay, let's study derivation of this function.
+
+138
+00:16:06,388 --> 00:16:13,768
+Derivation of this function, minus sin theta.
+
+139
+00:16:14,588 --> 00:16:16,468
+Okay, focus on this.
+
+140
+00:16:19,588 --> 00:16:21,968
+But let's study symmetric cases.
+
+141
+00:16:24,468 --> 00:16:33,608
+So we know that cosine minus theta is equal to cosine theta.
+
+142
+00:16:35,251 --> 00:16:41,331
+So, this implies that, so for all theta, so we got this.
+
+143
+00:16:41,331 --> 00:16:49,091
+So, this implies that the graph, the curve, the polar curve has a symmetry.
+
+144
+00:16:52,851 --> 00:16:54,091
+As a symmetry
+
+145
+00:16:54,091 --> 00:16:57,891
+About
+
+146
+00:17:01,971 --> 00:17:03,412
+Horizontal Axis
+
+147
+00:17:07,763 --> 00:17:11,763
+Okay, now we know this, the period is 2 pi.
+
+148
+00:17:12,963 --> 00:17:14,864
+Taking into account this 2 fact,
+
+149
+00:17:16,543 --> 00:17:17,843
+2 fact,
+
+150
+00:17:18,763 --> 00:17:22,623
+so, this, we can imply that
+
+151
+00:17:22,623 --> 00:17:25,823
+it is sufficient to
+
+152
+00:17:32,756 --> 00:17:33,736
+The Studying
+
+153
+00:17:40,852 --> 00:18:04,812
+over minus pi pi, because of this fact, as you see, because of this minus theta and theta, so we got some interval which has symmetry about origin, okay, because of this fact, so we take this interval which has symmetry about origin and sketch.
+
+154
+00:18:09,811 --> 00:18:16,811
+ve
+
+155
+00:18:37,940 --> 00:18:59,360
+So, take into account this fact, so just use this fact, so we know that f prime of theta is minus sine theta, this is negative over 0 pi.
+
+156
+00:19:07,188 --> 00:19:08,628
+All investigations.
+
+157
+00:19:09,168 --> 00:19:12,428
+Taking into account this cloud, okay?
+
+158
+00:19:12,928 --> 00:19:15,307
+So we can sketch our graph, okay?
+
+159
+00:19:15,407 --> 00:19:19,327
+So let's consider some spatial values between 0 and pi.
+
+160
+00:19:19,327 --> 00:19:27,327
+So let's sketch this graph, theta 0, theta pi over 4, theta...
+
+161
+00:19:27,923 --> 00:19:45,923
+is equal to pi over 2, and theta is equal to pi. So just pick up some spatial values from this interval. Okay, now, so let me sketch some polar coordinate system.
+
+162
+00:19:47,923 --> 00:19:51,923
+Okay, so let me use black color.
+
+163
+00:19:52,692 --> 00:20:20,052
+So, our function, r is equal to 1 plus cosine theta. So, just substitute theta 0 into our function. The r, the distance, the origin is 2. So, we got this. And r is 2 and theta is 0. Okay, theta is 0. We are at this position. Okay, at this position.
+
+164
+00:20:21,203 --> 00:20:34,563
+Now, so if you substitute theta pi over 4, okay, if you substitute theta pi over 4, so we got some value here, somewhere here, 1 plus, somewhere here.
+
+165
+00:20:36,723 --> 00:20:48,824
+So r is 1 plus square root of 2 over 2, and theta is pi over 4, somewhere here.
+
+166
+00:20:49,652 --> 00:20:57,331
+Now, if you substitute theta pi over 2, you are going to obtain r is 0 somewhere here.
+
+167
+00:20:59,331 --> 00:21:06,431
+r is 0, sorry, r is 1, and theta is pi over 2.
+
+168
+00:21:06,552 --> 00:21:13,771
+We know that this ray, so this ray is theta, let me use different color.
+
+169
+00:21:18,228 --> 00:21:21,327
+This is theta is 0.
+
+170
+00:21:22,468 --> 00:21:23,468
+This is ray.
+
+171
+00:21:26,307 --> 00:21:30,228
+Theta is equal to pi over 4.
+
+172
+00:21:31,108 --> 00:21:31,948
+This is ray.
+
+173
+00:21:33,168 --> 00:21:36,327
+Theta is equal to pi over 2.
+
+174
+00:21:36,948 --> 00:21:37,908
+And this ray.
+
+175
+00:21:38,567 --> 00:21:40,268
+Theta is equal to pi.
+
+176
+00:21:40,468 --> 00:21:41,148
+This is ray.
+
+177
+00:21:41,928 --> 00:21:43,448
+Theta is equal to.
+
+178
+00:21:43,859 --> 00:21:52,599
+3 pi over 2, or minus pi over 2, and this is equivalent to, theta is equal to 2 pi.
+
+179
+00:21:52,599 --> 00:22:04,879
+Okay, now, as you see, we got some period, 2 pi, and we divide our interval into a subinterval, so here.
+
+180
+00:22:05,971 --> 00:22:17,172
+minus pi, pi, and we see that it is symmetric about horizontal x's because of f of minus theta is equal to f of theta.
+
+181
+00:22:18,031 --> 00:22:22,751
+And taking into account this fact, so what does it tell us?
+
+182
+00:22:23,751 --> 00:22:25,516
+So it tell us...
+
+183
+00:22:25,907 --> 00:22:36,347
+So, the distance to origin is always decreasing, as long as you rotate around origin from theta 0 to theta pi ray, okay?
+
+184
+00:22:37,387 --> 00:22:45,027
+The distance to origin is always decreasing, okay, during the rotation from theta 0 ray to theta pi.
+
+185
+00:22:45,027 --> 00:22:47,367
+So, let's sketch this.
+
+186
+00:22:49,227 --> 00:22:51,887
+Let me use green color.
+
+187
+00:22:54,355 --> 00:23:20,375
+As you see, the distance to origin is always increasing. If you substitute theta pi, you are going to obtain 0. The distance to origin 0 here. Can you see that? So this is the semi part, upper semi curve of this curve. So if you got the symmetry of this, let's take the symmetry of this.
+
+188
+00:23:20,756 --> 00:23:23,716
+with respect to horizontal axis.
+
+189
+00:23:26,356 --> 00:23:28,276
+So this is the cardioid.
+
+190
+00:23:28,796 --> 00:23:29,876
+Cardioid cure.
+
+191
+00:23:30,416 --> 00:23:30,696
+Okay.
+
+192
+00:23:31,536 --> 00:23:32,876
+This is cardioid.
+
+193
+00:23:33,276 --> 00:23:36,496
+Evet arkadaşlar, cardioid eğrisini çizdik.
+
+194
+00:23:36,956 --> 00:23:37,976
+Anlaşmayın bir yer var mı?
+
+195
+00:23:38,256 --> 00:23:39,976
+Hocam ben anlamadım bir yer var mı?
+
+196
+00:23:41,976 --> 00:23:43,396
+Herkes anladı galiba.
+
+197
+00:23:47,892 --> 00:23:53,591
+Yata-yekskene göre simetrisini aldık [öğrenci].
+
+198
+00:23:53,632 --> 00:23:54,971
+Okay, we can generalize this.
+
+199
+00:23:56,831 --> 00:24:09,251
+So if you wish to increase the volume, if you wish to enlarge this cardioid, we put here some positive number, A1 plus.
+
+200
+00:24:09,811 --> 00:24:16,571
+Cosine theta, so a is positive. Okay, now, so in that case, we got this general.
+
+201
+00:24:23,604 --> 00:24:26,703
+Okay, so here, A is positive, attention here.
+
+202
+00:24:29,683 --> 00:24:34,483
+Okay, now, so this is your test. Please try to sketch this. Another example.
+
+203
+00:24:36,624 --> 00:24:50,384
+So sketch the graph of this polar curve. Let's try to sketch this polar curve. This is your test.
+
+204
+00:24:50,963 --> 00:25:04,903
+Please try to sketch this graph. Herkes, bir öncekinde bir artı kosyonüs theta'yı çizdik. Şimdi bir eksi kosyonüs theta'yı çizelim bakayım. Herkesin önünde kağıt kalem olsun. Çizmek için uğraşsın bunu.
+
+205
+00:25:17,107 --> 00:25:18,768
+Evet gençler, bekliyorum.
+
+206
+00:25:28,915 --> 00:25:32,535
+Evet, [öğrenci] diri. Orada mısın [öğrenci]?
+
+207
+00:25:43,092 --> 00:25:45,332
+[öğrenci]. Orada mısın [öğrenci]?
+
+208
+00:25:54,867 --> 00:25:56,507
+Damla, [öğrenci].
+
+209
+00:26:06,099 --> 00:26:07,879
+Evet, kimse yok ya derste.
+
+210
+00:26:10,399 --> 00:26:11,619
+Evet, [öğrenci].
+
+211
+00:26:12,919 --> 00:26:14,819
+Çözüyorsun değil mi? Çizmeye çalışıyorsun.
+
+212
+00:26:15,539 --> 00:26:17,839
+Öğrendiklerini pekiştirmeye çalış, [öğrenci].
+
+213
+00:26:19,999 --> 00:26:21,019
+Önce ne yapıyorduk?
+
+214
+00:26:21,619 --> 00:26:23,999
+Periyodunu belirliyorduk. Periyodu zaten belli.
+
+215
+00:26:23,999 --> 00:26:25,319
+2 pi.
+
+216
+00:26:27,239 --> 00:26:29,599
+Simetri durumlarını belirle, incele.
+
+217
+00:26:30,836 --> 00:26:41,415
+Hangi eksenlere göre, nereye göre simetrik? Yine zaten aşikar. Yatay eksene göre nedir? Simetrik.
+
+218
+00:26:45,172 --> 00:26:50,352
+Ondan sonra, artanlık azalanlığını incele. O zaten sinüs teta.
+
+219
+00:26:53,312 --> 00:26:59,932
+Yine 0 pi ile çalışabilirsiniz. Eksi pi pi ile çalışabilirsiniz. Eksi pi pi'nin uzunluğu 2 pi.
+
+220
+00:27:00,564 --> 00:27:08,703
+Ama ben sıfırla pi aralığında çalışırım. Ondan sonra simetrisini alırsam, eksi pi, pi aralığında çalışmış olurum.
+
+221
+00:27:09,144 --> 00:27:16,624
+Çünkü yata eksene göre simetrikti. F eksi teta, eşittir f teta. Sıfırla pi arasında sinüs teta zaten pozitif.
+
+222
+00:27:17,395 --> 00:27:21,175
+Özel değerler veririm 0 ile pi arasında teta'ya.
+
+223
+00:27:21,576 --> 00:27:27,756
+Teta 0, teta pi bölü 4, teta pi bölü 2, teta pi değerlerini veririm.
+
+224
+00:27:28,355 --> 00:27:35,276
+Ondan sonra bakarım. Türevini de göz önünde bulundururum. Türevi de pozitif zaten söz konusu aralık üzerinde.
+
+225
+00:27:35,675 --> 00:27:40,936
+R eşittir f teta neydi arkadaşlar? R orada uzaklığı ifade ediyordu.
+
+226
+00:27:41,456 --> 00:27:45,316
+Bir tane çubuk yerleştiriyorsunuz orjine. Orjine etrafında.
+
+227
+00:27:45,395 --> 00:28:09,875
+Dönüyor. Tabii çubuğun uç noktasının orijinal olan uzaklığı R, dönme esnasında değişecektir. Ama bu değişim işte artan mı, azalan mı? O yüzden türevini aldık. Türev pozitif olduğundan dönme esnasında ne olacak arkadaşlar? Artıyor mu, azalıyor mu? Evet, artıyor gözüküyor. Onları, o belirlediğiniz özel noktaları birleştireceksiniz zaten. O türevle de zaten uyumlu olduğunu göreceksiniz.
+
+228
+00:28:10,451 --> 00:28:15,011
+Cevap ortaya çıkacak. Bu kadar basit arkadaşlar. Öyle gözünüze büyütmeye gerek yok.
+
+229
+00:28:16,432 --> 00:28:20,832
+Genellikle basitleri anlatıyoruz. Önceden daha karmaşık polar eğitimler anlatılıyordu.
+
+230
+00:28:21,672 --> 00:28:25,251
+Şimdi onları kaldırmışlar. İşin temelini öğretiyoruz. Geçiyoruz.
+
+231
+00:28:30,259 --> 00:28:33,899
+Evet, bizselay. Bizselay, güneş.
+
+232
+00:28:40,788 --> 00:28:44,008
+Çizdin mi [öğrenci]? Kılçusu keç, Scraft?
+
+233
+00:29:15,028 --> 00:29:18,688
+Evet, biraz daha bekleyelim. Herkes çizsin arkadaşlar.
+
+234
+00:29:51,988 --> 00:29:54,428
+[öğrenci]. Ne yaptın [öğrenci]? Çizdin mi?
+
+235
+00:30:21,940 --> 00:30:26,919
+Ok, let's sketch together. I think some of you will sketch.
+
+236
+00:30:29,679 --> 00:30:41,460
+Now the period of this, period, 2 pi, and let's derivate, ok, let's investigate this symmetric case.
+
+237
+00:30:41,460 --> 00:30:47,299
+F of minus theta is equal to F of theta.
+
+238
+00:30:49,011 --> 00:30:50,251
+It has symmetry
+
+239
+00:30:50,251 --> 00:30:54,652
+About
+
+240
+00:30:54,652 --> 00:30:56,851
+X axis
+
+241
+00:31:02,804 --> 00:31:24,004
+Ok, so, for these two information, give us, so, we choose this interval, minus pi, pi, the length of this interval, 2 pi, and because of this fact, so, we got some interval, which has symmetry about origin.
+
+242
+00:31:27,635 --> 00:31:41,955
+Okay, let's derivate this. F prime of theta and sine theta, that is positive over 0 pi.
+
+243
+00:31:42,836 --> 00:31:54,435
+So, first of all, we study on this interval. After sketching the graph of this curve on this interval, we can take its symmetry.
+
+244
+00:31:54,943 --> 00:32:14,604
+about x-axis because of this fact. Okay. As you see. Now, let's choose some spatial values from this interval. Theta 0, theta pi over 4, theta...
+
+245
+00:32:20,596 --> 00:32:25,435
+Data, pi over 2, data pi.
+
+246
+00:32:26,615 --> 00:32:29,775
+Also, you can study on minus pi 0.
+
+247
+00:32:30,275 --> 00:32:33,635
+Xp0 üzerinde de çalışabilirsiniz arkadaşlar, sıkıntı yok.
+
+248
+00:32:38,675 --> 00:32:46,836
+At the rate theta 0, just write here, our function 1 minus cosin theta.
+
+249
+00:32:47,415 --> 00:32:55,455
+If you substitute theta 0 into this function, the r is 0.
+
+250
+00:32:56,355 --> 00:33:00,016
+So we start at this point.
+
+251
+00:33:00,016 --> 00:33:04,016
+So if you substitute theta pi over 2, so...
+
+252
+00:33:04,307 --> 00:33:12,087
+We got some 1 minus square root of 2, okay, somewhere here, the distance to origin.
+
+253
+00:33:12,627 --> 00:33:19,887
+If you substitute theta pi over 2, the distance to origin is 1, somewhere here.
+
+254
+00:33:22,467 --> 00:33:24,619
+If you substitute...
+
+255
+00:33:24,660 --> 00:33:32,600
+teta pi, so if you start teta pi, you are going to obtain the distance to origin here, so not here, okay, here.
+
+256
+00:33:34,080 --> 00:33:43,260
+So we are going to put some dot here, here. So if you make connection between this point,
+
+257
+00:33:50,099 --> 00:33:55,779
+Çünkü bu faktör, as you see, the distance to origin is always increasing.
+
+258
+00:33:57,000 --> 00:34:01,419
+So, distance to origin, look at the length of these red bars.
+
+259
+00:34:02,799 --> 00:34:07,819
+During the rotation, its length is increasing. Can you see that?
+
+260
+00:34:16,019 --> 00:34:25,239
+So, this is one piece. If you take symmetry of this piece about x-axis, you are going to update. Let me use.
+
+261
+00:34:30,579 --> 00:34:31,079
+Here
+
+262
+00:34:34,963 --> 00:34:41,583
+So, this is the graph of r is equal to 1 minus cosine theta.
+
+263
+00:34:41,583 --> 00:34:57,304
+So, actually, direction of, so the distance between this and this, so here, so the coefficient of cosine theta is positive, direction is right-hand side, and here the, the,
+
+264
+00:34:58,036 --> 00:35:02,775
+Coefficient of cosine theta is negative and direction is left and side.
+
+265
+00:35:03,536 --> 00:35:09,756
+Okay, I hope the direction of your heart is always positive during your life.
+
+266
+00:35:11,635 --> 00:35:13,155
+Evet arkadaşlar, gördünüz mü?
+
+267
+00:35:14,315 --> 00:35:18,336
+Kosinus'un kat sayısı positive olursa kalbin yönü sağ oluyor.
+
+268
+00:35:19,036 --> 00:35:21,536
+Negatif olursa kalbin yönü sol oluyor.
+
+269
+00:35:22,296 --> 00:35:23,576
+Dikkat edin ona, tamam mı?
+
+270
+00:35:29,364 --> 00:35:42,443
+Okay, so again we can enlarge this cardioid by putting some factor here, A times generalization of this cardioid curve.
+
+271
+00:35:46,291 --> 00:35:52,411
+Çok kötü oldu bu. Benim çizimlerim iyi değil arkadaşlar.
+
+272
+00:36:00,788 --> 00:36:04,327
+Ok, so this is general
+
+273
+00:36:12,275 --> 00:36:14,036
+A is positive here.
+
+274
+00:36:15,275 --> 00:36:15,495
+Now,
+
+275
+00:36:15,735 --> 00:36:18,955
+let's sketch another
+
+276
+00:36:18,955 --> 00:36:21,155
+example.
+
+277
+00:36:25,204 --> 00:36:43,024
+1 plus sine 8. I think you can forecast this graph immediately. Doğrudan hemen tahmin edebilirsiniz bunun grafiğini. Nasıl bir şeydir? Nasıl olacak arkadaşlar? Hiç çizme uğraşmadan, işlem yapmadan.
+
+278
+00:36:44,864 --> 00:36:52,144
+So I think you can manage this, but you can see this graph is something like that.
+
+279
+00:36:55,476 --> 00:36:56,675
+Okey. Ah, sorry.
+
+280
+00:36:58,096 --> 00:37:00,056
+Şeye dönüştürdü. Otomatik.
+
+281
+00:37:00,916 --> 00:37:01,836
+Böyle değil arkadaşlar.
+
+282
+00:37:18,132 --> 00:37:18,632
+Okay.
+
+283
+00:37:19,692 --> 00:37:27,632
+So as you see, since the coefficient of sine theta is positive, the direction of your heart is up.
+
+284
+00:37:28,152 --> 00:37:28,391
+Okay.
+
+285
+00:37:29,132 --> 00:37:32,072
+Now, so you can immediately verify.
+
+286
+00:37:32,692 --> 00:37:36,712
+So this is true derivation of this, cosine theta.
+
+287
+00:37:37,592 --> 00:37:40,912
+And again, so we have period 2 pi.
+
+288
+00:37:43,292 --> 00:37:44,692
+So look at here.
+
+289
+00:37:44,792 --> 00:37:45,840
+So this is...
+
+290
+00:37:45,840 --> 00:37:56,680
+Minus, okay, so we can take here, so theta is equal to minus pi over 2, and theta is equal to,
+
+291
+00:38:00,467 --> 00:38:02,427
+So, look at its symmetry case.
+
+292
+00:38:03,148 --> 00:38:05,547
+It has symmetry about
+
+293
+00:38:05,547 --> 00:38:08,987
+vertical line.
+
+294
+00:38:12,724 --> 00:38:14,724
+Çünkü bu faktörde,
+
+295
+00:38:26,356 --> 00:38:37,276
+So, first of all, we study on these intervals, just study on minus pi over 2, pi over 2.
+
+296
+00:38:37,816 --> 00:38:48,676
+Then take the symmetry of the graph obtained over this interval, okay, with respect to vertical line here.
+
+297
+00:38:48,676 --> 00:38:52,115
+So, if you study this, okay, let's focus on this.
+
+298
+00:38:52,480 --> 00:39:07,960
+So, as you see, cosign theta, derivation of this function, cosign theta, is positive over this interval, minus pi over 2, pi over 2.
+
+299
+00:39:10,143 --> 00:39:13,903
+Yeni bu bölümde de orginin yöntem.
+
+300
+00:39:36,275 --> 00:39:41,155
+Tabii ben biraz şekli şey çizdim, şu daha kısa görünüyor, normalde daha uzun görünmesi lazım arkadaşlar.
+
+301
+00:39:42,135 --> 00:39:43,115
+Şekli aldanmayın.
+
+302
+00:39:44,655 --> 00:39:50,395
+Gittikçe, mavi çubukların, döndürdükçe mavi çubukların uzunlukları artacak.
+
+303
+00:39:51,456 --> 00:39:51,996
+Gördünüz mü?
+
+304
+00:39:56,820 --> 00:40:00,560
+Şurası biraz daha şöyle olsa daha iyi olur.
+
+305
+00:40:01,159 --> 00:40:01,320
+Tamam.
+
+306
+00:40:07,219 --> 00:40:07,839
+Şöyle olsun.
+
+307
+00:40:08,739 --> 00:40:08,859
+Evet.
+
+308
+00:40:09,539 --> 00:40:09,839
+Okey.
+
+309
+00:40:10,119 --> 00:40:10,899
+Is there any question?
+
+310
+00:40:17,748 --> 00:40:21,228
+Sorusu olan yok galiba. Gayet anlaşılır.
+
+311
+00:40:23,228 --> 00:40:31,228
+Okay, so as you see, if you reverse its sign, so the graph of...
+
+312
+00:40:38,835 --> 00:40:46,855
+So, this is the graph of r is equal to 1 minus sine theta.
+
+313
+00:40:47,635 --> 00:40:50,975
+Also, you may put some coefficient here.
+
+314
+00:40:52,615 --> 00:40:53,455
+A, okay.
+
+315
+00:40:56,735 --> 00:40:59,615
+Sorusu olan yok galiba, herkes kardiyo eti öğrendi.
+
+316
+00:41:14,739 --> 00:41:16,619
+İletin, let me ask you this question.
+
+317
+00:41:17,259 --> 00:41:18,099
+It's a question.
+
+318
+00:41:27,923 --> 00:41:33,684
+Fark, ok, bu, given some radia.
+
+319
+00:41:50,099 --> 00:41:51,800
+Inside the circle.
+
+320
+00:41:55,668 --> 00:41:57,708
+R is equal to one.
+
+321
+00:41:59,668 --> 00:42:01,028
+And outside
+
+322
+00:42:07,315 --> 00:42:13,996
+Cardioid R is equal to 1 minus O sin theta.
+
+323
+00:42:16,475 --> 00:42:18,795
+Then item A
+
+324
+00:42:20,915 --> 00:42:21,595
+express
+
+325
+00:42:25,036 --> 00:42:26,036
+the integral
+
+326
+00:42:29,748 --> 00:42:40,908
+So in the test exam generally, you are asked to obtain some integration model, giving you the area of region.
+
+327
+00:42:40,908 --> 00:42:50,307
+Okay, integral for area of region.
+
+328
+00:42:54,356 --> 00:42:57,936
+Item B, find, area.
+
+329
+00:43:01,652 --> 00:43:02,132
+Tamam.
+
+330
+00:43:04,711 --> 00:43:08,672
+Okey. Herkes çizsin bakalım bölge neresi.
+
+331
+00:43:08,771 --> 00:43:13,052
+First of all, try to identify your region.
+
+332
+00:43:14,332 --> 00:43:16,952
+The inside, the circle R1.
+
+333
+00:43:17,492 --> 00:43:21,211
+Outside, the cardioid, 1 minus cosin theta.
+
+334
+00:43:22,731 --> 00:43:24,452
+Evet, herkes belirledi mi bölgeyi?
+
+335
+00:43:47,315 --> 00:43:47,715
+Evet.
+
+336
+00:43:53,523 --> 00:43:58,784
+Now, let's illustrate this region.
+
+337
+00:44:03,347 --> 00:44:16,088
+So, first of all, we sketch some circle with radius R1, and let's sketch 1 minus cosine theta.
+
+338
+00:44:16,708 --> 00:44:20,728
+So, this is 1, 1, 1, 1.
+
+339
+00:44:20,728 --> 00:44:23,588
+But we study on the polar coordinate system.
+
+340
+00:44:24,648 --> 00:44:29,867
+And let's sketch cardioid.
+
+341
+00:44:35,539 --> 00:44:35,899
+Ok.
+
+342
+00:44:41,972 --> 00:44:43,632
+This is our cardioid.
+
+343
+00:44:44,632 --> 00:44:48,711
+R is equal to 1 minus cosine theta.
+
+344
+00:44:49,992 --> 00:45:00,652
+Now, so our region inside the circle R1, and outside the cardioid 1 minus cosine theta.
+
+345
+00:45:01,592 --> 00:45:02,992
+So this is our region.
+
+346
+00:45:05,391 --> 00:45:09,092
+Inside the circle, neresi arkadaşlar?
+
+347
+00:45:10,579 --> 00:45:13,739
+outside the cardoid.
+
+348
+00:45:15,980 --> 00:45:17,639
+So, this is our region.
+
+349
+00:45:21,715 --> 00:45:27,135
+Look at here, express the integral for area of this region.
+
+350
+00:45:27,556 --> 00:45:32,996
+So there are many, there may be many integration models to compute this area.
+
+351
+00:45:33,936 --> 00:45:45,155
+So let me, so item A, so we put, so we, we put some bar, okay, let me put green.
+
+352
+00:45:46,675 --> 00:45:47,135
+Oh, sorry.
+
+353
+00:45:56,371 --> 00:45:59,031
+Bir dakika arkadaşlar. Elim kaydı.
+
+354
+00:46:01,031 --> 00:46:01,991
+Zoom şu oldu.
+
+355
+00:46:06,483 --> 00:46:11,123
+Ok, so if you put some bar here,
+
+356
+00:46:20,628 --> 00:46:22,748
+İki, let, zoom in.
+
+357
+00:46:39,476 --> 00:47:06,536
+Okay, now, so as you see, if you try to rotate our bar from the ray theta minus pi over 2, theta pi over 2, so area is 1 over 2 from theta is equal to minus pi over 2, theta is equal to pi over 2.
+
+358
+00:47:07,027 --> 00:47:25,647
+So, look at that. This endpoint is always on the R1. So, this is R1, 1. So, this is always on the R2 is equal to 1 minus cosine theta. Okay.
+
+359
+00:47:26,516 --> 00:47:44,856
+Now, so R1 square minus R2 square, attention here, R1 must be bigger than R2, yes, that's true. So, this is theta. Okay. So, this is the first integration model.
+
+360
+00:47:48,596 --> 00:48:11,235
+1 minus 1 minus cosine theta, square d theta. So, look at here, so we got symmetry here, so we got symmetry, symmetry, so that's why we can multiply this.
+
+361
+00:48:12,115 --> 00:48:32,856
+Ok, 1 over 2 times from 0 to pi over 2, 1 minus, just expand this, 1 plus 2 cosine theta minus cosine square theta. Is that correct?
+
+362
+00:48:34,856 --> 00:48:36,356
+These and this simplify.
+
+363
+00:48:37,204 --> 00:49:02,604
+So, we got this. Okay, so, from 0 to pi over 2. So, if you integrate this, okay, let me write this, cosin theta, minus, if you write this in terms of some trigonometric expression with lower degree, cosin 2 theta over 2 theta.
+
+364
+00:49:04,371 --> 00:49:06,632
+Now, let's integrate this.
+
+365
+00:49:09,511 --> 00:49:12,491
+Okay, 2 times sine theta,
+
+366
+00:49:13,051 --> 00:49:19,071
+minus 1 over 2, if you integrate 1, we got theta,
+
+367
+00:49:19,911 --> 00:49:23,031
+plus if you integrate this, 1 over 2,
+
+368
+00:49:23,551 --> 00:49:25,271
+sine 2 theta.
+
+369
+00:49:26,192 --> 00:49:29,112
+Okay, so upper bound, lower bound.
+
+370
+00:49:29,811 --> 00:49:33,431
+Lower bound, 0. Upper bound, pi over 2.
+
+371
+00:49:34,391 --> 00:49:41,611
+Okay, so you are going to obtain 2 minus 1 over 2 times pi over 2.
+
+372
+00:49:42,571 --> 00:49:47,371
+Okay, so this is 0. If you substitute 0, 0, 0, 0, 0.
+
+373
+00:49:47,371 --> 00:49:53,251
+Okay, so this is 2 minus pi over 4 unit squared.
+
+374
+00:49:53,451 --> 00:49:55,851
+Is there any calculation error?
+
+375
+00:49:58,228 --> 00:50:00,527
+Var mı hata arkadaşlar? Hesaplama hatası.
+
+376
+00:50:02,907 --> 00:50:05,407
+Evet. Gördünüz mü? B ışık gıda burada.
+
+377
+00:50:10,996 --> 00:50:15,416
+Evet, sınavlarda genellikle integral nedir diye soruluyor arkadaşlar.
+
+378
+00:50:16,376 --> 00:50:24,135
+Şıklarda bu ya simetri durumu göz önünde bulundurarak elde edilen integral çıkar veya direkt bu çıkar.
+
+379
+00:50:24,896 --> 00:50:26,456
+İkisinden birini işaretlersiniz.
+
+380
+00:50:27,076 --> 00:50:30,016
+Evet, geçiyorum sorunuz yoksa.
+
+381
+00:50:30,916 --> 00:50:32,956
+Okay, have a break. Bir ara verelim.
+
+382
+00:50:32,956 --> 00:50:34,376
+Break 10 minutes.
+
+383
+00:50:41,172 --> 00:50:42,132
+Sorunuz var mı?
+
+384
+00:50:42,932 --> 00:50:43,952
+Varsa cevap yap.
+
+385
+01:02:52,211 --> 01:02:56,211
+Evet, merhaba gençler. Kaldığımız yerden devam edelim.
+
+386
+01:03:19,795 --> 01:03:23,135
+Ok, so let me write another question.
+
+387
+01:03:37,364 --> 01:03:39,804
+Ok, let me sketch some.
+
+388
+01:03:44,436 --> 01:03:48,036
+Let me sketch some polar curve.
+
+389
+01:03:53,364 --> 01:03:54,503
+So, let's sketch.
+
+390
+01:04:02,356 --> 01:04:03,884
+Kardioid Kürb
+
+391
+01:04:07,443 --> 01:04:17,243
+So, this is r is equal to 1 plus cosin theta.
+
+392
+01:04:18,683 --> 01:04:21,443
+Okay, let me sketch another polar curve.
+
+393
+01:04:28,788 --> 01:04:31,807
+Tamam, you don't need to, let me sketch some.
+
+394
+01:04:43,987 --> 01:04:46,967
+Çizemedim ama
+
+395
+01:04:46,967 --> 01:04:48,467
+şöyle
+
+396
+01:04:53,427 --> 01:04:54,447
+Daha düzgün çizelim.
+
+397
+01:05:01,076 --> 01:05:02,155
+Çok da düzgün olmadı.
+
+398
+01:05:02,836 --> 01:05:03,076
+Okay.
+
+399
+01:05:03,576 --> 01:05:11,756
+So let's say this is r is equal to 1, 2, cos theta.
+
+400
+01:05:14,256 --> 01:05:16,635
+Ya da hiç önemli değil arkadaşlar.
+
+401
+01:05:16,776 --> 01:05:17,376
+Şöyle yapalım.
+
+402
+01:05:17,675 --> 01:05:19,036
+Genel veriyorum arkadaşlar.
+
+403
+01:05:20,556 --> 01:05:23,736
+So this is a times cos theta.
+
+404
+01:05:23,736 --> 01:05:25,324
+So we got...
+
+405
+01:05:25,588 --> 01:05:29,128
+e times 1 minus cosine theta.
+
+406
+01:05:29,728 --> 01:05:31,532
+Okay, let's...
+
+407
+01:05:42,291 --> 01:05:44,092
+Let's consider this region.
+
+408
+01:05:48,244 --> 01:05:51,443
+Let's say this is area A.
+
+409
+01:06:02,996 --> 01:06:19,136
+Ok. So express this area A in terms of polar coordinates. Express the integral for the area of this region.
+
+410
+01:06:20,956 --> 01:06:26,876
+Evet, bu A bölgesini veren, A bölgesinin alanını veren integralı ifade ediniz arkadaşlar.
+
+411
+01:06:27,876 --> 01:06:30,256
+Yani şurası genel, tamam mı?
+
+412
+01:06:30,579 --> 01:06:38,199
+Interception point, interception ray, let's say theta, bilmiyoruz bunu, A ve B'nin durumuna göre değişir o.
+
+413
+01:06:38,899 --> 01:06:41,439
+Theta is equal to alpha.
+
+414
+01:06:42,239 --> 01:06:42,479
+Okay.
+
+415
+01:06:44,159 --> 01:06:45,279
+Interception rays.
+
+416
+01:06:50,996 --> 01:06:52,596
+Evet, herkes ifade etsin bakayım.
+
+417
+01:07:10,963 --> 01:07:12,284
+Polar integrations.
+
+418
+01:07:25,396 --> 01:07:25,836
+Evet.
+
+419
+01:07:35,891 --> 01:07:38,931
+Daha sonra şunu ifade edin, B'yi ifade edelim.
+
+420
+01:07:40,671 --> 01:07:41,711
+Şöyle olsun.
+
+421
+01:07:52,724 --> 01:07:53,744
+O güzel olmadı.
+
+422
+01:07:54,864 --> 01:07:55,483
+Şu olsun.
+
+423
+01:08:06,356 --> 01:08:06,796
+B.
+
+424
+01:08:09,356 --> 01:08:17,256
+So, express the area B in terms of polar coordinates by using integration.
+
+425
+01:08:17,256 --> 01:08:17,796
+Okay.
+
+426
+01:08:22,100 --> 01:08:47,200
+Sınavlarda böyle sorular geliyor arkadaşlar. Bölgeyi tabi böyle vermez. Cümle içerisinde verir. Ondan sonra der ki bu bölgenin alanını veren integral aşıklarından hangisidir? Tarzında sorular gelir. Evet. Buldunuz mu A'yı B'yi veren integralleri? Sonuç hesaplamayacaksınız arkadaşlar. O yüzden genel yazdım.
+
+427
+01:08:48,340 --> 01:08:55,300
+A çarpı kosinus teta, B çarpı konularını, belli bir yerden, belli bir yere kadar döndüreceksiniz çubuğu.
+
+428
+01:08:55,360 --> 01:08:58,319
+Teta alfadan teta bta, genel bir formül yazacaksınız.
+
+429
+01:09:14,515 --> 01:09:33,655
+So, how can we compute this? A times cosine theta intercept. Okay, so in order to compute this interception race, we need to solve commonly. Okay, B times cosine, sorry, B times.
+
+430
+01:09:37,011 --> 01:09:52,511
+b times 1 plus cos theta. If you solve commonly two-polar curves, you are going to obtain theta is equal to alpha and theta is equal to beta.
+
+431
+01:09:54,511 --> 01:10:00,431
+Common interception race, let me write here, interception race.
+
+432
+01:10:02,431 --> 01:10:03,031
+Interception.
+
+433
+01:10:05,460 --> 01:10:16,319
+Okay, now one of them is here, so theta beta, let's say theta beta is zero.
+
+434
+01:10:23,155 --> 01:10:25,255
+Or pi, whatever you say.
+
+435
+01:10:26,296 --> 01:10:27,255
+Dikkat edin arkadaşlar.
+
+436
+01:10:40,404 --> 01:10:42,252
+Bu, bu
+
+437
+01:10:50,547 --> 01:11:12,927
+Bu sinüs olacak arkadaşlar. Niye demiyorsunuz? Sin theta. Kosinüs olmaz o. Okey. Orada mısınız gençler? Benim yazdığım şeyler, her şeyi doğru olarak görmeyin. Hata yapabiliyorum. Bu sinüs theta olacak. Yoksa hata olur. Bak şurada çözerseniz theta sıra sıfır olacak.
+
+438
+01:11:19,315 --> 01:11:23,636
+This is pi olacak. This is pi.
+
+439
+01:11:25,275 --> 01:11:27,056
+Okay, not zero.
+
+440
+01:11:31,444 --> 01:11:36,844
+Bu, bu, sin, teta, ok.
+
+441
+01:11:42,739 --> 01:11:50,460
+So we have this pi, theta pi, interception ray, and this is theta alpha.
+
+442
+01:11:51,059 --> 01:11:53,819
+So alpha depends on the value of a and b.
+
+443
+01:11:54,539 --> 01:11:58,100
+So now, so let's do item a.
+
+444
+01:11:59,680 --> 01:12:00,579
+Okay, sorry.
+
+445
+01:12:01,479 --> 01:12:03,680
+So if you put here some bar,
+
+446
+01:12:06,680 --> 01:12:10,159
+our goal is to compute this.
+
+447
+01:12:10,547 --> 01:12:13,547
+region, area
+
+448
+01:12:22,644 --> 01:12:24,043
+Okay, here.
+
+449
+01:12:24,924 --> 01:12:33,324
+Now, during this rotation, A is equal to, we rotate our region from theta alpha.
+
+450
+01:12:34,260 --> 01:12:56,280
+Here, it's coming from the interception rays to theta pi, so another interception ray. So if you substitute theta pi here, you are going to obtain r0. If you substitute theta pi here, you are going to obtain r0. Okay, theta pi. So upper end point.
+
+451
+01:12:57,716 --> 01:13:24,856
+Of this bar, so this is always on the R1, here let's say this is R1, let's say this is R2, okay, R1 square, A times sine theta square, minus R2 square, B times 1 plus cosine theta square, okay.
+
+452
+01:13:27,091 --> 01:13:41,531
+D theta. So this is the integration giving us the area of region A. Tamam mı arkadaşlar? Benden her şekilde B'yi yapın siz. Bekliyorum arkadaşlar.
+
+453
+01:13:45,524 --> 01:13:47,623
+B'yi veren integrali yazın bakalım.
+
+454
+01:13:49,884 --> 01:13:52,444
+Test sınavında genellikle integral hesaplattırmıyorlar.
+
+455
+01:13:53,304 --> 01:13:56,944
+A'yı veren integrali, B'yi veren integrali bulun şeklinde geliyor.
+
+456
+01:13:56,944 --> 01:14:09,944
+In the multiple choice exam, test exam, generally you are asked to obtain integration model giving you the area of region.
+
+457
+01:14:17,108 --> 01:14:26,208
+B bölgesinin veren integrali yazın. B bölgesinin alanını veren integrali yazın arkadaşlar.
+
+458
+01:14:34,100 --> 01:14:36,140
+Anlaşımın bir yeri yok değil mi? Is there an equation?
+
+459
+01:14:50,644 --> 01:14:53,364
+Evet, [öğrenci]. Anladın değil mi [öğrenci]?
+
+460
+01:14:59,380 --> 01:15:00,699
+[öğrenci] burada bile yok.
+
+461
+01:15:05,587 --> 01:15:06,148
+Okey.
+
+462
+01:15:08,387 --> 01:15:09,987
+Yapıyorsunuz değil mi gençler?
+
+463
+01:15:12,047 --> 01:15:16,108
+B bölgesinin alanını veren integrali yazın.
+
+464
+01:15:16,288 --> 01:15:21,067
+Express the integration for the area of region B.
+
+465
+01:15:22,347 --> 01:15:31,047
+So we put some bar rotating around origin, but during this rotation focus on the end point of bar.
+
+466
+01:15:32,948 --> 01:15:37,568
+So, during the rotation of bar, the end point of bar changes.
+
+467
+01:15:37,808 --> 01:15:37,948
+Okay.
+
+468
+01:15:38,968 --> 01:15:48,247
+So, from some ray to theta alpha, from theta zero to theta alpha, the end point of the bar always on some curve.
+
+469
+01:15:48,868 --> 01:15:56,448
+After the ray, theta alpha, the end point of bar is always on the other curve.
+
+470
+01:15:58,707 --> 01:16:02,927
+So, you need to obtain two distinct type integration model.
+
+471
+01:16:06,644 --> 01:16:13,612
+İnteklerimizin biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine biriniğine bir
+
+472
+01:16:26,387 --> 01:16:30,288
+Herkes gördü değil mi? İki tane integral kullanmamız gerektiğini.
+
+473
+01:17:02,420 --> 01:17:05,140
+Bulmuşsunuzdur umarım. Çok öyle zor değil.
+
+474
+01:17:05,260 --> 01:17:06,020
+Ok, let's
+
+475
+01:17:06,020 --> 01:17:09,739
+let me use green color.
+
+476
+01:17:10,540 --> 01:17:12,700
+So, from theta 0
+
+477
+01:17:12,700 --> 01:17:14,520
+to theta alpha
+
+478
+01:17:19,507 --> 01:17:33,260
+So, the endpoint is always on the circle, i times sine theta, from theta alpha to...
+
+479
+01:17:36,467 --> 01:17:43,807
+teta pi, the end point is always on the cardioid. Can you see that?
+
+480
+01:17:46,467 --> 01:17:57,608
+So the B integration, so the area of B region given by this integration, 1 over 2, from teta 0 to teta alpha,
+
+481
+01:17:58,676 --> 01:18:07,195
+Ata, teta, alfa, is the common interception ray of circle and cardioid.
+
+482
+01:18:07,956 --> 01:18:12,015
+And times, so sorry, so we got this.
+
+483
+01:18:13,015 --> 01:18:25,195
+So, A times, R1 is A times sine teta, square times R2, zero, you don't need to write this, zero square, and the theta.
+
+484
+01:18:25,695 --> 01:18:34,136
+Plus, the next integration, from the level theta alpha to theta pi.
+
+485
+01:18:34,956 --> 01:18:52,155
+So look at here, so end point of this bar is always on the cardioid, and b times 1 plus 4 sine theta square minus lower end point of this bar, always on the 0.
+
+486
+01:18:52,916 --> 01:18:56,576
+0 square, R0, so d theta.
+
+487
+01:18:57,175 --> 01:18:59,095
+Okay. Is there any question?
+
+488
+01:19:01,236 --> 01:19:03,836
+Bu kadar arkadaşlar. İşlem yapmıyorsunuz.
+
+489
+01:19:04,836 --> 01:19:07,636
+Böyle bitiriyorsunuz. Okay, so what about
+
+490
+01:19:07,636 --> 01:19:10,675
+what about C? Let me write here C.
+
+491
+01:19:12,256 --> 01:19:13,576
+Let me use
+
+492
+01:19:13,576 --> 01:19:15,836
+this.
+
+493
+01:19:20,979 --> 01:19:21,500
+Ok.
+
+494
+01:19:38,707 --> 01:19:40,307
+Ok, let's say this is C.
+
+495
+01:19:42,688 --> 01:19:49,327
+Let's express the area of C in terms of polar coordinates.
+
+496
+01:19:50,368 --> 01:19:55,847
+C bölgesinin alanını veren integrali ifade ediniz.
+
+497
+01:19:57,227 --> 01:20:02,507
+Express the integration for the area of region C.
+
+498
+01:20:15,380 --> 01:20:41,239
+Evet, bekliyorum gençler. Ders, derste öğrenilir diyenler, derste umarım çalışıyorlardır. Zaten derse katılmayanlara yapacak bir şey yok. Ben başarının tanımını yapmıştım arkadaşlar geçen günü. Başarının tanımı, birim zamanda sorumluluklara verdiğiniz önemdir ya da birim zamanda yeni getirdiğiniz sorumluluklardır.
+
+499
+01:20:44,500 --> 01:20:49,659
+Başarı bir sonuç değildi, bir süreç idi. O da bu tanından ortaya çıkıyor.
+
+500
+01:20:53,876 --> 01:20:55,596
+Hocam bir şey sorabilir miyim?
+
+501
+01:20:55,935 --> 01:20:56,256
+Sor.
+
+502
+01:20:57,156 --> 01:21:01,076
+Hocam ben B'yi biraz daha farklı buldum ama şey yaptım.
+
+503
+01:21:01,836 --> 01:21:05,615
+İlk başta sıfırla Pi'yi bölü 2 arasında önce şey yazdım.
+
+504
+01:21:05,716 --> 01:21:11,556
+B çarpı bir artı cos tetanın karesi eksi A çarpı sin tetanın karesi şeklinde buldum.
+
+505
+01:21:12,136 --> 01:21:12,976
+Yanlış mı oluyor?
+
+506
+01:21:13,855 --> 01:21:15,756
+Yanlış oluyor. Sen onu nasıl yaptın?
+
+507
+01:21:15,756 --> 01:21:16,756
+Bir artı.
+
+508
+01:21:18,163 --> 01:21:26,804
+Şey işte, önce bu üst sınırı, sonra onun alt sınırını şey yaptım işte, çıkartarak yaptım karelerine.
+
+509
+01:21:28,804 --> 01:21:36,123
+Yani şöyle söyleyeyim, genellikle o tarz şeyler doğru olabilir ama burada yani çubuk yöntemi en doğru olanı.
+
+510
+01:21:36,224 --> 01:21:42,183
+Kutupsal koordinatların mantığında hareket edeceksin. Yani bir çubuk koyacaksın, çubuğu döndüreceksin.
+
+511
+01:21:42,800 --> 01:22:05,039
+Yani hata bu şekilde ancak minimize edilir. Diğer türlü evet doğru olabilir. Tamam şu an ne demek istediğini anlamadım. Sana tahtada olsaydın gelip gösterirdin yüz yüze eğitimde. Şu an anlayamadın ne demek istediğini ama büyük ihtimal yanlıştır. Genellikle yanlış oluyor o tarz çözümler. Burada çünkü normal bir şey yok. Normal geometriden hareket edilir.
+
+512
+01:22:06,420 --> 01:22:29,180
+İntegral bulmak istiyorsan, en güzel yol, çubuğu yerleştireceksin, döndüreceksin. Nereden nereye döndürüyorum? Döndürme esnasında çubuğun uç noktası nerede? Yani orijina uzak olan kısmı nerede? Orijina yakın olan kısmı nerede? Bunlara bakarsın. 1 bölü 2, ondan sonra R1'in karesi, R2'in karesi diyorsun. D, teta diyorsun. O şekilde ortaya çıkıyor.
+
+513
+01:22:29,716 --> 01:22:36,876
+Yani diğer yollardan integral'i ifade edin tarzı bir şey olunca genellikle bu yöntem. Başka yöntem bilmiyorum.
+
+514
+01:22:38,856 --> 01:22:40,256
+Tamam hocam, teşekkür ederim.
+
+515
+01:22:41,036 --> 01:22:47,056
+Sen aynı sonucu bulman lazım normalde. Yani işlemi yaptığında bulamıyorsan hatalıdır.
+
+516
+01:22:49,332 --> 01:22:58,292
+Ben çubuk yöntemini kullanmayı tercih ediyorum. Şu çubuk yöntemini bir şekilde öğrenin arkadaşlar. Bunu her yerde kullanacağız. Özellikle çok katlı integrallerde.
+
+517
+01:23:03,252 --> 01:23:16,792
+Bilmiyorum ki başka yolu yok gibi geliyor bana. Senin dediğin şekilde düşünüyorum. Şu an göremedim başka yoldan yapılabileceğini. Tek yol bu. İntegral ifade edin derse tek yol bu.
+
+518
+01:23:41,652 --> 01:24:02,012
+Ok, let's express the area of region. So in this case we put some bar, ok let me use black color, or let me use brown color. So we put this bar, ok here.
+
+519
+01:24:06,163 --> 01:24:09,443
+So, from the theta, look at here.
+
+520
+01:24:10,423 --> 01:24:11,623
+So, we can write this.
+
+521
+01:24:11,963 --> 01:24:14,823
+So, theta, so this is minus pi.
+
+522
+01:24:16,863 --> 01:24:18,384
+Ya, şöyle düşünebilirsiniz arkadaşlar.
+
+523
+01:24:18,623 --> 01:24:20,923
+Bakın, x'i p'den geliyor olarak düşünebilirim.
+
+524
+01:24:20,983 --> 01:24:27,343
+So, this is equivalent to theta is equal to minus pi in the reverse direction, negative direction.
+
+525
+01:24:27,343 --> 01:24:27,703
+Okay.
+
+526
+01:24:28,224 --> 01:24:30,043
+Now, so, item C.
+
+527
+01:24:30,583 --> 01:24:32,983
+Okay, so, this is theta.
+
+528
+01:24:34,420 --> 01:24:36,739
+minus pi over 2.
+
+529
+01:24:38,399 --> 01:24:40,520
+Okay, so this is theta 0.
+
+530
+01:24:42,340 --> 01:24:44,800
+And this is theta alpha.
+
+531
+01:24:45,380 --> 01:24:51,559
+Okay, so from the minimum values to maximum values.
+
+532
+01:24:51,739 --> 01:24:53,460
+Okay, now look at here.
+
+533
+01:24:54,020 --> 01:24:57,360
+But let's use another color here.
+
+534
+01:24:58,420 --> 01:24:58,699
+So,
+
+535
+01:25:14,579 --> 01:25:19,020
+Farklı bir renk kullanmamaya gerek yokmuş. Yine kahverengi kullansam yetermiş.
+
+536
+01:25:19,800 --> 01:25:22,399
+Okay, I think it is sufficiently used.
+
+537
+01:25:25,180 --> 01:25:26,340
+Brown color.
+
+538
+01:25:27,000 --> 01:25:32,399
+Because the endpoint is always on the same curve, polar curve.
+
+539
+01:25:33,420 --> 01:25:34,059
+Can you see that?
+
+540
+01:25:34,139 --> 01:25:40,399
+From the level minus pi to level theta zero, the endpoint is always on the...
+
+541
+01:25:40,756 --> 01:25:42,296
+Cardioid, okay?
+
+542
+01:25:43,756 --> 01:25:47,556
+Now, from this level, theta zero level,
+
+543
+01:25:49,236 --> 01:25:50,636
+the end point,
+
+544
+01:26:02,963 --> 01:26:11,684
+Okay, end point is always on the cardoid, lower end point is always on the circle. Can you see that?
+
+545
+01:26:14,184 --> 01:26:19,043
+Okay, so let's write this. Item C, let me erase some parts here.
+
+546
+01:26:24,307 --> 01:26:25,368
+Let me use
+
+547
+01:26:34,547 --> 01:26:35,667
+Ne almadı ya?
+
+548
+01:26:48,851 --> 01:26:52,851
+Okay, let's use this region.
+
+549
+01:26:53,851 --> 01:27:02,891
+From minus pi, 1 over 2, from theta is equal to minus pi to theta 0.
+
+550
+01:27:04,891 --> 01:27:14,211
+So we got this, b times 1 plus cosine theta.
+
+551
+01:27:14,836 --> 01:27:33,095
+square, you don't need to write zero square here, theta, and plus from, let me put one over two, from theta zero to theta alpha. Can you see that? Theta alpha.
+
+552
+01:27:35,764 --> 01:28:00,264
+Bu, opland point of this bar rotating around, rotating around origin is always on the cardioid, cardioid, so square of b times 1 plus cosine theta, square minus, lower end point is always on the circle, and square theta.
+
+553
+01:28:02,963 --> 01:28:09,183
+Bu, bu, integrasyon model, radyan C'nin bölgeyi darıyor.
+
+554
+01:28:09,984 --> 01:28:11,083
+Var mı anlaşmayayım bir yer?
+
+555
+01:28:14,163 --> 01:28:18,783
+Gördünüz mü arkadaşlar, çubuğu koyunca, döndürünce zaten bölgeyi tarıyor.
+
+556
+01:28:19,543 --> 01:28:24,663
+Bölgeyi tarama esnasında siz zaten integrali doğal olarak inşa etmiş oluyorsunuz.
+
+557
+01:28:25,007 --> 01:28:44,708
+Yani bunun en kestirme yolu bu. Eğer bir bölgenin integralini, bir bölgenin alanını veren integralı ifade edin diyorsa, arkadaşlar başka yol yok, benim bildiğim yol bu. Ama şurada eksi p'den sıfır değil, sıfırdan p'yi de alabilirsiniz. Yani şurası yer değişebilir, yine sonuç değişmeyecek.
+
+558
+01:28:45,300 --> 01:28:58,659
+0'dan piye de alsanız, şey olmuyor. Ama ben burada böyle döndürme, böyle sürekli olsun diye, yani kesiksiz olsun diye, 0'dan alfaya olacak şekilde aldım, bağlantılı olsun diye. Evet.
+
+559
+01:29:00,860 --> 01:29:10,520
+Okey, let's go on. Herhalde herkes öğrendi. Neyse, bir tane daha ödev yapalım, bir tane daha alıştırma yapalım bununla alakalı.
+
+560
+01:29:29,684 --> 01:29:40,024
+Okay, this is cardioid, r is equal to a times 1 plus sine theta.
+
+561
+01:29:47,956 --> 01:29:51,876
+Bir de kesişsinler arkadaşlar. Yani kesişrek şekilde yapmam lazım.
+
+562
+01:29:55,380 --> 01:29:56,319
+Ötekini de
+
+563
+01:30:20,819 --> 01:30:23,359
+1- sin theta.
+
+564
+01:30:23,639 --> 01:30:24,219
+Is that correct?
+
+565
+01:30:26,859 --> 01:30:27,579
+Okay.
+
+566
+01:30:31,123 --> 01:30:33,123
+Let me use green color here.
+
+567
+01:30:40,979 --> 01:30:47,000
+Let's express the area of this region in terms of polar coordinates.
+
+568
+01:30:49,279 --> 01:30:52,319
+Bu bölgeyi Allah'ını veren integral ifade edin.
+
+569
+01:30:53,219 --> 01:30:56,559
+Express the integration for the area of this region.
+
+570
+01:31:03,956 --> 01:31:11,876
+Namely, it is inside, this cardioid, outside, this cardioid.
+
+571
+01:31:31,315 --> 01:31:33,775
+Bekliyorum arkadaşlar, sizlerin duyması için de.
+
+572
+01:31:34,775 --> 01:31:36,115
+Ders terste öğrenilir.
+
+573
+01:31:39,764 --> 01:31:45,084
+dersinizi dersi öğrenin, diğer vakitlerinizi başka işlerle mi değerlendirin?
+
+574
+01:31:47,523 --> 01:31:58,084
+Sınava yakın zamanda da dediğimiz gibi, böyle çıkmış soruları bile çözseniz bakmadan, zaten konu tekrar yapmış olacaksınız.
+
+575
+01:32:09,876 --> 01:32:10,296
+Evet.
+
+576
+01:33:07,091 --> 01:33:10,591
+Okey. Buldunuz mu? Herkes buldu mu?
+
+577
+01:33:15,859 --> 01:33:23,079
+Bölgeyi tarayan bir tane dönen bir çubuk oluşturmanız lazım.
+
+578
+01:33:23,479 --> 01:33:25,539
+Orjin etrafında döndüreceksin bu çubuğu.
+
+579
+01:33:27,119 --> 01:33:31,299
+Dönme etrafında çubuğun orjina uzak olan kısmı hangi eğri üzerinde?
+
+580
+01:33:31,939 --> 01:33:34,340
+Orjina yakın olan kısmı hangi eğri üzerinde?
+
+581
+01:33:35,379 --> 01:33:39,779
+Onları belirledikten sonra zaten 1 bölü 2, R1'in karesi, R2'in karesi, Dt'ta.
+
+582
+01:33:40,340 --> 01:33:42,439
+Alan formülünden geliyor daire dilimi.
+
+583
+01:33:43,028 --> 01:33:47,587
+Entegre ediyorsunuz. Entegre sembolünü koyuyorsunuz. Cevap zaten çıkıyor.
+
+584
+01:33:58,644 --> 01:34:03,604
+Ok, let's put some black bar here.
+
+585
+01:34:07,539 --> 01:34:18,443
+Bu, bu
+
+586
+01:34:23,091 --> 01:34:23,731
+Oh, sorry.
+
+587
+01:34:33,619 --> 01:34:36,479
+Aynı olmadı ama siz aynı olduğunu biliyorsunuz.
+
+588
+01:34:46,003 --> 01:34:48,764
+As you see, we have symmetric case, ss.
+
+589
+01:34:50,184 --> 01:34:54,043
+Okay, so we can write this area, let's say this is a.
+
+590
+01:34:56,043 --> 01:34:59,724
+a is 2s, 2s is equal to a.
+
+591
+01:35:00,264 --> 01:35:03,423
+a is equal to 1 over 2 times.
+
+592
+01:35:04,543 --> 01:35:06,043
+So from...
+
+593
+01:35:08,524 --> 01:35:10,604
+Niye çalışmıyor bu ya silgi?
+
+594
+01:35:11,943 --> 01:35:12,283
+Okay.
+
+595
+01:35:16,115 --> 01:35:24,775
+From theta 0 to theta, okay, theta pi, we can write theta pi.
+
+596
+01:35:27,156 --> 01:35:41,775
+Upper endpoint of the bar rotating around origin is always on the a times 1 plus sine theta square minus, lower endpoint is always on the this.
+
+597
+01:35:43,283 --> 01:36:10,203
+Cardioid, a times 1 minus sine theta, square theta. So, by using the symmetric case, so we can write this also, from theta 0 to pi over 2, okay, we got this, a times 1 plus,
+
+598
+01:36:10,931 --> 01:36:16,971
+sin, eta, 2 ile çarpıyorum arkadaşlar. Yani 2'ye böldüm aslında.
+
+599
+01:36:21,971 --> 01:36:22,572
+Şöyle.
+
+600
+01:36:30,131 --> 01:36:32,351
+S'yi hesaplıyorum, 2 ile çarpıyorum.
+
+601
+01:36:37,811 --> 01:36:44,171
+Bu. Bak, burası değişti. Bak, dikkatinizi çekeyim. S'yi hesapladım. İkiyle çarptım.
+
+602
+01:36:45,332 --> 01:36:52,391
+Okay, we first compute the area of S from theta 0 pi over 2. Okay, let me write here.
+
+603
+01:36:55,131 --> 01:37:04,992
+So, 1 over 2 times 1 over 2. Okay? This is simplified. Okay.
+
+604
+01:37:05,524 --> 01:37:12,104
+Bu şekilde iki farklı gösterim. İki ışıklarda ya bu ya bu ikisinden biri olacak arkadaşlar. Var mı soru sola?
+
+605
+01:37:13,783 --> 01:37:15,024
+So what about this?
+
+606
+01:37:23,859 --> 01:37:25,859
+Let me use...
+
+607
+01:37:32,884 --> 01:37:36,463
+Let's express the region area.
+
+608
+01:37:39,123 --> 01:37:40,123
+B.
+
+609
+01:37:41,203 --> 01:37:41,543
+Okay.
+
+610
+01:37:43,463 --> 01:37:49,203
+Let's express the integration for the region denoted by blue color.
+
+611
+01:37:51,584 --> 01:37:56,423
+Evet, mavi renk ile gösterilen bölgenin alanını ifade ediniz.
+
+612
+01:37:58,863 --> 01:38:00,023
+Integral ile.
+
+613
+01:38:16,851 --> 01:38:18,952
+Önce simetri durumunu düşünmeden yapın.
+
+614
+01:38:19,051 --> 01:38:21,572
+First of all, try to obtain some integration
+
+615
+01:38:21,572 --> 01:38:25,251
+without taking into account symmetry case.
+
+616
+01:38:25,871 --> 01:38:30,532
+Then you can obtain some integration model
+
+617
+01:38:30,532 --> 01:38:33,851
+considering the symmetry cases.
+
+618
+01:38:34,731 --> 01:38:39,652
+We have in fact, so S, S, S, S, S, S, S.
+
+619
+01:38:41,072 --> 01:38:43,091
+4S, let's say 4S.
+
+620
+01:38:43,731 --> 01:38:45,852
+Or as is equal to b.
+
+621
+01:38:57,716 --> 01:39:02,275
+Gerçi öyle bu kadar şey gelmez ya. Karmaşık, komplike, bayağı bir komplike olacak bu.
+
+622
+01:39:16,916 --> 01:39:25,115
+Tek bir integral ile ifade edemezsiniz zaten arkadaşlar. Bunu mecburen şey yapacağız. Bunu simetri durumunu göz önünde bulundurarak sorarlar arkadaşlar.
+
+623
+01:39:25,956 --> 01:39:27,195
+Ok, let me write here.
+
+624
+01:39:28,636 --> 01:39:32,316
+So, first of all, we compute s.
+
+625
+01:39:33,236 --> 01:39:41,496
+Just compute s from theta 0 to theta pi over 2.
+
+626
+01:39:42,195 --> 01:39:44,635
+1 over 2 from
+
+627
+01:39:48,243 --> 01:39:55,763
+1 over 2, from theta, 0 to theta, pi over 2, just compute this.
+
+628
+01:39:58,463 --> 01:40:06,923
+Okay, 8 times 1 minus sine theta, square, d theta.
+
+629
+01:40:07,543 --> 01:40:09,783
+So you may also obtain other one.
+
+630
+01:40:10,443 --> 01:40:14,443
+Okay, so just pick up some of them and multiply.
+
+631
+01:40:16,435 --> 01:40:16,915
+4
+
+632
+01:40:32,564 --> 01:40:40,384
+S'lerden bir tanesini alırsınız, ondan sonra 4 ile çarparsınız arkadaşlar, onu hesaplayıp bunu bulursunuz. Başka türlü de olabilir.
+
+633
+01:40:40,384 --> 01:40:55,384
+Or, you can write this. Şıklarda bu ya bu olur. Bugün neden çalışmıyor bu şey ya? Tabletin dokunmatik ekranı. Arkadaşlar, kusura bakmayın. Sürekli...
+
+634
+01:40:59,699 --> 01:41:18,539
+Or, you can write, you can take this as, from 1 over 2 times, from minus, so this is theta is equal to minus pi over 2, from minus pi over 2 to theta 0.
+
+635
+01:41:22,996 --> 01:41:32,435
+Upper endpoint of the bar rotating around, origin is always on the, a times, 1 plus sine theta.
+
+636
+01:41:36,083 --> 01:41:53,387
+ve b'ye 4'ye
+
+637
+01:41:54,484 --> 01:41:58,024
+Bakın, 4 farklı durum, 4 farklı şekilde şıklarda olabilir.
+
+638
+01:41:58,564 --> 01:42:05,384
+Eksi 1 bölü 2'den 0'a, h kare 1 artı sin kare teta, sin 1 artı sin teta, karesi d teta, 2 ile çarpabilirsiniz.
+
+639
+01:42:06,004 --> 01:42:09,504
+Diğer serileri de alıp, bender şekilde yapabilir arkadaşlar.
+
+640
+01:42:10,304 --> 01:42:11,204
+Burayı da alır.
+
+641
+01:42:11,324 --> 01:42:16,264
+Similarly, you can obtain this s here, and multiply obtain result by 4.
+
+642
+01:42:16,444 --> 01:42:21,804
+Similarly, you can obtain this s, okay, now then multiply by 4.
+
+643
+01:42:22,163 --> 01:42:27,163
+4 farklı durumda karşımıza gelebilir. Evet, var mı sorusu olan? İzlerini koy için.
+
+644
+01:42:28,404 --> 01:42:29,863
+Hocam, ben bir şey sorabilir miyim?
+
+645
+01:42:30,203 --> 01:42:30,463
+Sor.
+
+646
+01:42:31,724 --> 01:42:37,644
+Hocam, şimdi bir tane dairenin alanı alabilir miyiz? Yani bu şekilde yazabilir miyiz?
+
+647
+01:42:37,644 --> 01:42:43,163
+Daire ilisi var mı? İzlerini circular curve de.
+
+648
+01:42:44,283 --> 01:42:46,203
+Demek istedim ki hocam, mesela şöyle.
+
+649
+01:42:47,144 --> 01:42:48,904
+Daireye benziyorsun bu, doğru mu?
+
+650
+01:42:50,195 --> 01:43:11,996
+Yani hocam şimdi şöyle yuvarlak bir daire içinde öyle mavi çizgiler oluyor ya hocam ben bunu bahsettim, bunu demek istedim. Ben bu şekilde mesela yaptım. A çarpı bir eksi sintetakare eksi, A çarpı bir artı sintetakartı. Ben böyle yani farkını aldım hocam bu şekilde. Yapabilir miyim bu şekilde?
+
+651
+01:43:14,420 --> 01:43:18,039
+Yapabilirsin olur. 2S hesaplamak için yaparsın ama.
+
+652
+01:43:18,639 --> 01:43:19,859
+2S yapmak için.
+
+653
+01:43:19,859 --> 01:43:26,219
+Ama olur olur. 2S hesaplamak için yaparsan olur. O daire değil de 2S hesaplamak için olur. Yani sen şunu diyorsun.
+
+654
+01:43:26,659 --> 01:43:28,579
+Pardon hocam. Daire değilim doğrudur.
+
+655
+01:43:30,199 --> 01:43:31,399
+Sen şunu söylüyorsun.
+
+656
+01:43:37,492 --> 01:43:40,271
+Kesişmesi lazım.
+
+657
+01:43:45,844 --> 01:43:47,844
+İlk bir şey, bir şey, bir şey.
+
+658
+01:43:50,823 --> 01:43:52,243
+Of course, you can do that.
+
+659
+01:43:57,395 --> 01:43:59,716
+If you put some bar here,
+
+660
+01:44:04,467 --> 01:44:07,827
+Olmaz. Nasıl olacak o?
+
+661
+01:44:11,507 --> 01:44:31,243
+Ok, you cannot do that. Yapamazsın onu. Nasıl yapacaksın? Çubuğu koydun bu bölgeyi taramak için. Çubuğun uç noktası daima burada. Bak, burada R1'in karesi, R2'nin karesi diye bir şey gelmiyor. Sıfır geliyor. Bak, böyle geldi. Ondan sonra çubuğu...
+
+662
+01:44:37,011 --> 01:44:45,571
+Ondan sonra bu geldi. Bak, yanlış yapıyorsunuz. Gördünüz mü? Eğer çubuk koyup yapmazsanız hatalı olur. Rebenin karesi ile Ekenin karesi diye bir şey yok.
+
+663
+01:45:00,979 --> 01:45:22,659
+teta 0, teta 0, teta 0, upper end point of this bar, black bar, is always on the a times 1 plus sine teta square, minus lower end point is always on the 0, 0 square.
+
+664
+01:45:26,195 --> 01:45:31,576
+d-theta, plus 1 over 2.
+
+665
+01:45:33,036 --> 01:45:34,756
+Now, okay, you cannot do that.
+
+666
+01:45:35,456 --> 01:45:41,576
+From theta 0 to theta pi over 2.
+
+667
+01:45:43,735 --> 01:45:45,635
+Okay, da da da, bla bla bla.
+
+668
+01:45:47,975 --> 01:45:50,604
+Tamam gençler, bak gördünüz mü, öyle...
+
+669
+01:45:51,444 --> 01:45:56,743
+Çubuk yöntemiyle yapmazsanız, işlem hatası yaparsınız, mantık hatası yaparsınız daha doğrusu.
+
+670
+01:45:57,323 --> 01:46:03,283
+Ama çubuk ile ne yapıyorsunuz? Daha doğru bir mantıkla, daha doğru bir yolla sonuca ulaşıyorsunuz.
+
+671
+01:46:03,804 --> 01:46:05,684
+Doğru yapıp yapmadığınızı anlayabilirsiniz.
+
+672
+01:46:06,783 --> 01:46:14,884
+Daha çok ben nasıl hata yapmam ya da hataları nasıl tespit ederim, bunun üzerine çalışma yapmanız lazım.
+
+673
+01:46:15,507 --> 01:46:25,608
+Böyle hareket ederseniz, sınavda da hatalarınızı tespit edebilirsiniz. Çoğunlukla zaten hata yapıyoruz, insanız. Önemli olan hatalar tespit edebilme yeteneğine sahip olmaktır.
+
+674
+01:46:26,247 --> 01:46:27,328
+Evet, ne yapıyoruz?
+
+675
+01:46:30,287 --> 01:46:42,868
+Sorunuz yoksa dersi bitirelim arkadaşlar. [öğrenci]'ın dediği, [öğrenci] sen mi demiştin? [öğrenci] senin dediğin şekilde R1'in karesi, R2'nin karesi olmuyor. R2 sıfır geliyor her iki durumda da. Sıfırdan farklı bir şey gelmez.
+
+676
+01:46:43,667 --> 01:46:45,327
+Tamam hocam, teşekkür ederim, tamam.
+
+677
+01:46:47,807 --> 01:46:53,728
+Sorunuz yoksa bitiriyorum. If you don't have any questions, so just finish our lecture.
+
+678
+01:46:56,367 --> 01:46:57,747
+Okay, see you next week.

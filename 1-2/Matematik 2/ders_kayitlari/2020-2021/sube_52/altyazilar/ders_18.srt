@@ -1,0 +1,2703 @@
+1
+00:00:47,347 --> 00:00:48,688
+Tamam, iyi günler arkadaşlar.
+
+2
+00:00:50,007 --> 00:00:50,847
+Nasılsın?
+
+3
+00:00:57,875 --> 00:00:59,115
+Can you see my shading?
+
+4
+00:01:13,908 --> 00:01:20,748
+Ok, yesterday we learned how to apply chain rule.
+
+5
+00:01:22,748 --> 00:01:31,028
+Today you are going to learn gradient vector and directional derivations if you have enough time.
+
+6
+00:01:32,028 --> 00:01:36,128
+Now let's start our lecture.
+
+7
+00:01:38,099 --> 00:01:42,959
+Gradient vector, so what does it mean, gradient vector? So, gradient.
+
+8
+00:01:49,140 --> 00:02:07,140
+Gradient means, terminologically means, derivation. Okay, so gradient vector is a vector whose components are derivation of some function with respect to independent variable. Okay, so let's start by...
+
+9
+00:02:11,252 --> 00:02:16,712
+functions, gradiyan vektörs for function with two variables.
+
+10
+00:02:27,156 --> 00:02:28,516
+to variable functions.
+
+11
+00:02:31,716 --> 00:02:35,355
+Okay, now for this we have some
+
+12
+00:02:38,516 --> 00:02:43,636
+let, so z is equal to f of
+
+13
+00:02:45,235 --> 00:02:46,116
+x, y
+
+14
+00:02:49,556 --> 00:02:50,576
+such that
+
+15
+00:02:56,340 --> 00:02:57,340
+Function
+
+16
+00:03:07,795 --> 00:03:08,915
+Derevations.
+
+17
+00:03:12,659 --> 00:03:20,479
+f sub x and f sub y, partial derivation exist.
+
+18
+00:03:25,747 --> 00:03:26,267
+Okay.
+
+19
+00:03:28,827 --> 00:03:30,548
+At the point
+
+20
+00:03:30,548 --> 00:03:33,467
+A, B.
+
+21
+00:03:34,927 --> 00:03:38,487
+Now, so in that case, so we define
+
+22
+00:03:38,487 --> 00:03:40,527
+gradient vector
+
+23
+00:03:40,527 --> 00:03:43,847
+gradient
+
+24
+00:03:43,847 --> 00:03:46,447
+vector
+
+25
+00:03:51,027 --> 00:03:56,228
+F at the point
+
+26
+00:03:56,228 --> 00:04:01,187
+AB is defined
+
+27
+00:04:05,268 --> 00:04:06,807
+by this.
+
+28
+00:04:07,667 --> 00:04:09,387
+Okay, we denote this notation.
+
+29
+00:04:10,727 --> 00:04:12,507
+So, gradient of
+
+30
+00:04:12,507 --> 00:04:15,347
+f at the point p.
+
+31
+00:04:15,527 --> 00:04:17,307
+Sometimes we use this notation.
+
+32
+00:04:18,528 --> 00:04:20,127
+Sometimes we use
+
+33
+00:04:20,127 --> 00:04:22,807
+this notation.
+
+34
+00:04:28,627 --> 00:04:31,027
+Okay, derivation value
+
+35
+00:04:31,027 --> 00:04:36,908
+with respect to x at the point P
+
+36
+00:04:36,908 --> 00:04:38,467
+times
+
+37
+00:04:38,467 --> 00:04:39,767
+i
+
+38
+00:04:39,767 --> 00:04:44,987
+plus derivation value of f with respect to y
+
+39
+00:04:44,987 --> 00:04:46,548
+at the point P
+
+40
+00:04:46,548 --> 00:04:48,347
+j.
+
+41
+00:04:48,908 --> 00:04:51,827
+Attention here, so we have two.
+
+42
+00:04:53,875 --> 00:05:09,596
+İndependent variable, that's why we have two components. So we use basic standard vectors, i and j component. Okay, now, so sometimes we use this pair. Okay, so f,
+
+43
+00:05:18,132 --> 00:05:43,971
+Okay, so this is the definition of gradient vector. I think everyone got this definition. It's a very simple definition. Now, maybe in future you are going to learn, you are going to study data science or maybe artificially intelligent. There is some algorithm. So gradient, so this is out of topic, gradient, deskant,
+
+44
+00:05:45,555 --> 00:05:46,555
+Algoritim.
+
+45
+00:05:51,923 --> 00:06:08,171
+Bu, bu
+
+46
+00:06:10,324 --> 00:06:23,923
+İleride kullanacaksınız arkadaşlar, belki bazılarınız branşınızla alakalı bir yapay zeka algoritması geliştirmek istiyorsanız, bu gradient descant algoritması diye bir algoritma var. İleride kullanma ihtimaliniz yüksek.
+
+47
+00:06:36,596 --> 00:06:55,875
+with two variables, x squared plus y squared plus cosine x plus y.
+
+48
+00:07:02,612 --> 00:07:06,672
+x pi, y 0
+
+49
+00:07:10,740 --> 00:07:13,759
+Okay, pi over 2, let me write here, pi over 2.
+
+50
+00:07:14,819 --> 00:07:31,759
+Now, so, first of all, we need to compute derivation of z with respect to x, 2x minus sin x plus y, derivation of x with respect to x, 1.
+
+51
+00:07:38,995 --> 00:08:06,395
+pi, okay, we got pi minus, so y is 0, 1. Is that correct? And derivation of z with respect to y, 2y minus sin x plus y times 1. And if you substitute coordinates of
+
+52
+00:08:08,403 --> 00:08:32,403
+P point, you are going to obtain minus 1. Is that correct? And the gradient value of f at the point i over 2, 0, is a pair, consists of values of partial derivation.
+
+53
+00:08:33,268 --> 00:08:35,768
+ve respecte x ve respecte y, respectively.
+
+54
+00:08:36,088 --> 00:08:38,208
+Okay, now minus 1.
+
+55
+00:08:38,567 --> 00:08:42,968
+So, this is gradient vector of z at the point p.
+
+56
+00:08:44,067 --> 00:08:47,948
+And equation, I think everyone got this.
+
+57
+00:08:48,728 --> 00:08:55,368
+Now, so similarly, we can introduce gradient vector for functions with three variables.
+
+58
+00:08:55,368 --> 00:08:56,888
+Okay, so general case.
+
+59
+00:09:00,148 --> 00:09:01,268
+General case.
+
+60
+00:09:02,067 --> 00:09:08,628
+Of course, in real application, you have to use this general case in future.
+
+61
+00:09:08,768 --> 00:09:10,708
+For example, you have some function,
+
+62
+00:09:12,827 --> 00:09:17,208
+depends on n variables.
+
+63
+00:09:20,916 --> 00:09:30,936
+And independent variables, as you see, and independent variables, and independent variables, ve, this is very important.
+
+64
+00:09:37,620 --> 00:09:49,180
+Okay, so in that case, gradiyan vektör of, and you are given some point, let's say this is a1, a2, dot, dot, dot, an.
+
+65
+00:09:49,180 --> 00:10:02,139
+So, gradiyan vektör of w at point p given by this vektör f.
+
+66
+00:10:04,436 --> 00:10:15,736
+sub x1, e, f sub x2, p, this is a vector consisting of n components, okay?
+
+67
+00:10:17,615 --> 00:10:20,375
+f sub xn, p.
+
+68
+00:10:21,956 --> 00:10:23,676
+Okay, so this is general case.
+
+69
+00:10:23,676 --> 00:10:29,635
+Now, let's introduce some example with three independent variables.
+
+70
+00:10:30,516 --> 00:10:31,196
+For example,
+
+71
+00:10:32,947 --> 00:10:34,124
+Yuga'nın
+
+72
+00:10:40,788 --> 00:10:41,587
+W
+
+73
+00:10:48,211 --> 00:11:01,771
+W is equal to x square plus y square plus z square plus cosine x times y times z.
+
+74
+00:11:02,991 --> 00:11:07,771
+Okay, let's compute this.
+
+75
+00:11:12,403 --> 00:11:20,624
+Functions gradien at the point x pi over 2, so x is
+
+76
+00:11:28,115 --> 00:11:29,096
+Daha şöyle olsun.
+
+77
+00:11:55,028 --> 00:11:56,427
+Böyle bir şey düşünün arkadaşlar.
+
+78
+00:11:58,528 --> 00:12:21,128
+Now derivation of w with respect to x, 2x minus sin, x times y times z, time derivation of argument of cosin with respect to x, y times z, if you substitute coordinates of p point,
+
+79
+00:12:21,620 --> 00:12:32,639
+Let me write here. So we have 2 times pi over 2, 2 power 1 over 3 minus, so this is pi over 2.
+
+80
+00:12:35,700 --> 00:12:38,960
+And so we have this one.
+
+81
+00:12:42,740 --> 00:12:46,720
+Okey, is that correct? Herhalde doğru yaptık.
+
+82
+00:12:56,947 --> 00:13:02,847
+Derivation of argument of cosine with respect to y, x times z.
+
+83
+00:13:03,248 --> 00:13:05,668
+Similarly, you are going to obtain the same value.
+
+84
+00:13:17,203 --> 00:13:25,884
+Okay, similarly, dot, dot, dot, dot, dot, dot, dot, dot, dot, you are going to obtain same expression.
+
+85
+00:13:25,884 --> 00:13:33,983
+Okay, now, so gradyan vector of f or w, doesn't matter, so let's write w.
+
+86
+00:13:35,243 --> 00:13:37,963
+Do not forget to put p notation here.
+
+87
+00:13:38,743 --> 00:13:44,603
+Now, so this one, w sub x, p.
+
+88
+00:13:46,451 --> 00:13:53,532
+W sub y of p, W sub z of p.
+
+89
+00:13:54,831 --> 00:13:59,871
+Okay, so this is our gradient vector at the point p.
+
+90
+00:14:01,751 --> 00:14:05,231
+Okay, any question about gradient vector?
+
+91
+00:14:10,323 --> 00:14:19,423
+Okay, let me talk about directional derivation. So, this is very important definition, directional derivation.
+
+92
+00:14:24,436 --> 00:14:26,124
+Directional
+
+93
+00:14:33,779 --> 00:14:36,500
+So, consider basic case.
+
+94
+00:14:37,759 --> 00:14:39,860
+So, this is basic cases.
+
+95
+00:14:41,139 --> 00:14:42,980
+So, in fact, this is
+
+96
+00:14:42,980 --> 00:14:47,039
+derivation of any function
+
+97
+00:14:47,039 --> 00:14:49,080
+with respect x
+
+98
+00:14:49,080 --> 00:14:51,159
+at point a, b.
+
+99
+00:14:53,300 --> 00:14:55,519
+This is a basic
+
+100
+00:14:55,519 --> 00:14:57,220
+directional derivation
+
+101
+00:14:57,220 --> 00:14:58,860
+in the direction of
+
+102
+00:14:59,827 --> 00:15:25,008
+1, 0 vector, ok, 1, 0 vector is the unit vector, ok, lies on the x-axis, ok, so this is limit as h goes to 0, f of a plus h, b minus f of a, b over,
+
+103
+00:15:25,812 --> 00:15:28,252
+H. So look at here, so this is
+
+104
+00:15:28,252 --> 00:15:30,932
+Directional Vector
+
+105
+00:15:30,932 --> 00:15:34,132
+Directional
+
+106
+00:15:34,132 --> 00:15:38,052
+Vector
+
+107
+00:15:38,052 --> 00:15:39,892
+Of
+
+108
+00:15:39,892 --> 00:15:40,971
+F
+
+109
+00:15:45,011 --> 00:16:02,511
+at the point P in the direction, in the direction of i-vector, 1, 0.
+
+110
+00:16:02,831 --> 00:16:04,751
+Okay, so this is very important.
+
+111
+00:16:06,868 --> 00:16:16,288
+You can define directional vector of f at the point ab in the direction j vector.
+
+112
+00:16:16,288 --> 00:16:23,447
+So suppose that we have some function with
+
+113
+00:16:51,375 --> 00:17:07,795
+Directional derivation. So, this is also directional derivation in the direction, in the direction, j vector, 0, 1. Okay?
+
+114
+00:17:10,295 --> 00:17:17,715
+Now, so we can generalize this situation. So, we can talk about instance 10 is rate of change of f.
+
+115
+00:17:18,228 --> 00:17:24,807
+of some function at the point P in the direction of any vector, any unit vector.
+
+116
+00:17:25,048 --> 00:17:28,148
+But look at here, so this is unit vector.
+
+117
+00:17:28,907 --> 00:17:32,168
+The unit vector means its length, its norm is 1.
+
+118
+00:17:32,508 --> 00:17:36,208
+This is unit vector, its length, its norm is 1.
+
+119
+00:17:36,867 --> 00:17:44,628
+So in order to define directional derivation, so we need some unit vector.
+
+120
+00:17:48,339 --> 00:18:03,920
+Some unit vector, unit vector, any unit vector, u, okay, so unit vector means its norm is 1.
+
+121
+00:18:07,667 --> 00:18:25,547
+So, in that case, so we can define directional derivation of f at the point, at the point, let me write s, so at the point p in the direction u.
+
+122
+00:18:37,715 --> 00:18:47,536
+Ok, let me use another definition. Some people use this notation. So, this is Nabula vector, ok, not delta.
+
+123
+00:18:49,635 --> 00:18:53,155
+Ok, so some people use this notation.
+
+124
+00:19:02,195 --> 00:19:23,976
+Okay, now, so in this case, we have this definition. Limit as s goes to 0 f of a plus s b.
+
+125
+00:19:23,976 --> 00:19:28,275
+Oh, sorry.
+
+126
+00:19:29,107 --> 00:19:32,047
+Yanlış yaptık arkadaşlar. Bir dakika mantık hatası oldu.
+
+127
+00:19:42,228 --> 00:19:46,448
+Ok, limit as S goes to 0, F of
+
+128
+00:19:50,259 --> 00:19:54,000
+Aslında bu tanımı vermesem de olur ama yine de verelim.
+
+129
+00:20:03,124 --> 00:20:04,084
+f of
+
+130
+00:20:04,084 --> 00:20:07,164
+a plus
+
+131
+00:20:07,164 --> 00:20:10,923
+so a
+
+132
+00:20:10,923 --> 00:20:14,164
+b plus s
+
+133
+00:20:18,996 --> 00:20:20,856
+A plus S
+
+134
+00:20:25,172 --> 00:20:28,492
+Şöyle yapalım arkadaşlar. Bunu vermeyelim. Hiç kafanız karışmasın ya.
+
+135
+00:20:30,811 --> 00:20:32,152
+Direkt şeye geçiyorum arkadaşlar.
+
+136
+00:20:35,092 --> 00:20:36,592
+Kafanız karışmasın.
+
+137
+00:20:42,644 --> 00:20:53,104
+Okay, now, so, we can directly write this. In fact, this is theorem, but we can, we can use this theorem as definition. Okay, now, so, gradient vector.
+
+138
+00:20:58,291 --> 00:21:04,192
+Şunun için de şöyle bir notasyon kullanalım arkadaşlar. Şurayı da siliyorum. Notasyonu da siliyorum.
+
+139
+00:21:10,132 --> 00:21:22,812
+Okay, let me clean this notation. Let's use this notation. This notation is better than this. Okay, so this, d, derivation, so.
+
+140
+00:21:27,827 --> 00:21:34,668
+So, sometimes we use this notation, derivation of f, directional derivation of f.
+
+141
+00:21:41,907 --> 00:21:44,067
+I think this notation is better than this.
+
+142
+00:21:46,127 --> 00:21:46,627
+Okay.
+
+143
+00:21:50,836 --> 00:21:51,355
+Biz.
+
+144
+00:21:55,124 --> 00:22:21,584
+Now at the point P, at the point P, at the point P, okay, let me write, şu notasyonu kolay, at the point P, given by this, gradient vector of F at the point P, this is gradient vector, dot product,
+
+145
+00:22:26,516 --> 00:22:28,956
+dot product uvektör.
+
+146
+00:22:30,256 --> 00:22:32,176
+Ok, this is gradient vektör.
+
+147
+00:22:34,276 --> 00:22:35,615
+Direkt bunu kullanın arkadaşlar.
+
+148
+00:22:36,256 --> 00:22:37,976
+Hiç uğraşmayalım diğer tanımla.
+
+149
+00:22:39,076 --> 00:22:40,276
+Gradient vektör.
+
+150
+00:22:44,019 --> 00:22:45,380
+This is unit vector.
+
+151
+00:22:46,740 --> 00:22:47,539
+Unit vector.
+
+152
+00:22:51,059 --> 00:23:10,819
+Okay, so this is directional derivation. Directional derivation of, directional derivation of f at the point p in the direction,
+
+153
+00:23:14,932 --> 00:23:17,352
+in the direction u.
+
+154
+00:23:18,812 --> 00:23:23,492
+So as you see, we define directional derivation by dot product.
+
+155
+00:23:24,211 --> 00:23:31,372
+Dot product of gradient vector of f at the point p and unit vector.
+
+156
+00:23:33,211 --> 00:23:36,332
+Let's introduce some example.
+
+157
+00:23:37,552 --> 00:23:38,552
+Example.
+
+158
+00:23:41,875 --> 00:23:51,756
+So you are given some function with two variable, x squared plus y squared.
+
+159
+00:23:54,036 --> 00:23:57,336
+And so let's given some vector v.
+
+160
+00:23:58,196 --> 00:24:03,115
+So let's write here 1 minus 1.
+
+161
+00:24:04,736 --> 00:24:06,156
+Okay, compute.
+
+162
+00:24:08,788 --> 00:24:34,887
+Compute instantaneous, instantaneous, rate of, change of, f, at the point, at the point, one, one, in the direction, in the direction,
+
+163
+00:24:37,299 --> 00:24:37,799
+V
+
+164
+00:24:42,067 --> 00:24:55,847
+Okay, now look at here, in order to compute directional derivation of some function, so the vector given in the equation must be unit vector, but here, so this v vector is not unit.
+
+165
+00:24:56,687 --> 00:25:01,187
+So first of all, you need to normalize that vector.
+
+166
+00:25:03,667 --> 00:25:07,867
+So first of all, let's compute the normal of this.
+
+167
+00:25:08,256 --> 00:25:18,476
+The norm of this v-vector, square root of 1, square plus minus 1 square, not unit.
+
+168
+00:25:19,296 --> 00:25:27,256
+So that's why we need to obtain some unit vector by dividing this v-vector by its norm.
+
+169
+00:25:29,716 --> 00:25:34,736
+As you see, we have some unit vector, 1 over square root of 2.
+
+170
+00:25:35,667 --> 00:25:37,907
+Minus 1 over square root of 2.
+
+171
+00:25:39,267 --> 00:25:44,147
+Now, so we know that, so those are in the same direction.
+
+172
+00:25:44,407 --> 00:25:51,607
+That's why we need to choose this u vector, okay, which is normalization of v.
+
+173
+00:25:52,747 --> 00:25:56,807
+Now, so gradient vector, we need to compute gradient vector.
+
+174
+00:25:56,967 --> 00:26:00,707
+First of all, we need to compute derivation of f with respect to x.
+
+175
+00:26:01,971 --> 00:26:10,971
+2x, ve gerekli bir değerler, bu değerler, bu değerler, p, 1, 1, ve 2.
+
+176
+00:26:11,731 --> 00:26:22,611
+Derivation f ile y, 2y, ve değerler, bu değerler, p, p, y, 2.
+
+177
+00:26:27,663 --> 00:26:32,344
+We obtain gradient vector of f at the point p.
+
+178
+00:26:34,703 --> 00:26:37,783
+So, 2, 2. As you see, we have some vector.
+
+179
+00:26:38,624 --> 00:26:44,463
+Now, directional derivation of f at the point,
+
+180
+00:26:46,083 --> 00:26:47,743
+okay, let me use this notation,
+
+181
+00:26:49,203 --> 00:26:54,583
+directional derivation of f at the point p
+
+182
+00:26:55,220 --> 00:26:57,760
+in the direction, u.
+
+183
+00:27:01,299 --> 00:27:03,159
+Okay, you may use this notation.
+
+184
+00:27:05,240 --> 00:27:10,579
+Now, so this is dot product of gradient vector.
+
+185
+00:27:14,228 --> 00:27:16,528
+ve u, unitvektör.
+
+186
+00:27:18,128 --> 00:27:26,428
+So, 2, 2, dot product, 1 over 2, minus 1 over square root of 2.
+
+187
+00:27:26,948 --> 00:27:40,628
+So, if you apply dot product rule here, 2 times 1 over square root of 2, minus 2 times 1 over square root of 2, so the answer is 0.
+
+188
+00:27:41,236 --> 00:27:52,196
+So, as you see, instant standard rate of change of surface in the direction of u at the point p is 0.
+
+189
+00:27:52,196 --> 00:28:03,616
+This means that there is no change, there is no change in the, in the high of, in the high of surface. Okay.
+
+190
+00:28:05,811 --> 00:28:16,531
+So, I will explain geometrically this. Now, let's write here, geometric comments. Geometric interpretations.
+
+191
+00:28:21,011 --> 00:28:21,491
+Okay.
+
+192
+00:28:22,392 --> 00:28:24,612
+So first of all, let's talk about this.
+
+193
+00:28:24,692 --> 00:28:30,711
+So this is directional derivation of f at the point p.
+
+194
+00:28:31,652 --> 00:28:41,791
+So given by this gradient vector of f at the point p dot product u unit vector.
+
+195
+00:28:42,312 --> 00:28:43,451
+Okay, so we know this.
+
+196
+00:28:43,451 --> 00:28:44,451
+So this is...
+
+197
+00:28:44,531 --> 00:29:06,451
+Nothing else than the length of the norm of gradient vector at the point P times the norm of U, the norm of U times the angle between, cosine of angle of between gradient vector and U vector.
+
+198
+00:29:06,451 --> 00:29:11,491
+So we know that this is unit vector, this is unit vector, so this is one.
+
+199
+00:29:11,859 --> 00:29:25,439
+And this is, okay, the length of gradient vector at the point P times cosine theta.
+
+200
+00:29:26,099 --> 00:29:34,199
+So as you see, the sign of this directional derivation depends on the value of cosine.
+
+201
+00:29:34,199 --> 00:29:35,479
+Okay, here.
+
+202
+00:29:36,059 --> 00:29:38,979
+So taking take out this equality.
+
+203
+00:29:39,571 --> 00:29:41,891
+We can introduce these commands.
+
+204
+00:29:43,131 --> 00:29:53,932
+So, if, if, u, unit vector, is parallel to, is parallel to,
+
+205
+00:30:03,988 --> 00:30:05,932
+İst parallel 2.
+
+206
+00:30:09,044 --> 00:30:11,364
+Paralel demeyelim de, şöyle diyelim arkadaşlar.
+
+207
+00:30:12,944 --> 00:30:17,544
+Eğer aralarındaki açı sıfır olursa diyelim, diğer türlü de paralel olur.
+
+208
+00:30:18,504 --> 00:30:19,404
+Ok, let me
+
+209
+00:30:19,404 --> 00:30:22,164
+Array this part.
+
+210
+00:30:22,944 --> 00:30:24,864
+Ok, the first case, if
+
+211
+00:30:29,044 --> 00:30:30,144
+Theta 0
+
+212
+00:30:39,028 --> 00:30:40,988
+Let's say this is gradient vector.
+
+213
+00:30:45,332 --> 00:30:45,812
+Bye.
+
+214
+00:30:51,028 --> 00:30:58,567
+Then, obviously, directional derivation will take the maximum value.
+
+215
+00:31:03,316 --> 00:31:09,004
+Bu bir
+
+216
+00:31:18,771 --> 00:31:19,051
+Tamam.
+
+217
+00:31:20,251 --> 00:31:20,651
+Now,
+
+218
+00:31:21,371 --> 00:31:22,291
+Second case,
+
+219
+00:31:25,683 --> 00:31:29,943
+İzmir, stat.
+
+220
+00:31:36,915 --> 00:31:38,495
+F-surface
+
+221
+00:31:38,495 --> 00:31:41,235
+Changes
+
+222
+00:31:41,235 --> 00:31:46,675
+Most rapidly
+
+223
+00:31:50,703 --> 00:31:53,703
+F-surface,
+
+224
+00:31:50,644 --> 00:31:51,703
+in the direction
+
+225
+00:31:57,864 --> 00:32:02,864
+F-surface,
+
+226
+00:31:57,491 --> 00:31:58,932
+In the direction u.
+
+227
+00:32:00,751 --> 00:32:09,152
+In the direction of u or gradient vector, doesn't matter. In the direction of gradient vector.
+
+228
+00:32:18,451 --> 00:32:32,091
+Demek ki bir yüzey nasıl değişiyormuş? En hızlı değişti. Yüzeyin en hızlı arkadaşlar artıyor diyebiliriz. O yönde artıyor. Çünkü pozitif ya.
+
+229
+00:32:32,091 --> 00:32:44,811
+Because of the fact that this is positive value, this f surface is rising most rapidly in the direction of gradient vector.
+
+230
+00:32:48,948 --> 00:32:55,908
+F'n surface is rising most rapidly in the direction of gradient vector.
+
+231
+00:32:58,388 --> 00:32:59,908
+Now, the second case.
+
+232
+00:33:04,980 --> 00:33:18,299
+If theta 0, well not 0, pi, then, so they have reverse directions.
+
+233
+00:33:19,420 --> 00:33:25,140
+Let's say this is u, let's say this is gradient vector at point p.
+
+234
+00:33:31,892 --> 00:33:32,612
+as
+
+235
+00:33:32,612 --> 00:33:35,232
+minimum value.
+
+236
+00:33:35,612 --> 00:33:37,032
+So we got minus
+
+237
+00:33:37,032 --> 00:33:39,872
+this.
+
+238
+00:33:44,435 --> 00:33:59,875
+Ok, this means that, this means that, f surface decreases, f surface decreases, most rapidly.
+
+239
+00:34:06,963 --> 00:34:08,163
+in the direction
+
+240
+00:34:08,163 --> 00:34:11,923
+minus
+
+241
+00:34:11,923 --> 00:34:15,403
+of gradient
+
+242
+00:34:15,403 --> 00:34:15,963
+vector.
+
+243
+00:34:15,963 --> 00:34:16,623
+Okay.
+
+244
+00:34:17,823 --> 00:34:22,203
+In the reverse direction, let me write here, reverse direction
+
+245
+00:34:22,203 --> 00:34:23,123
+of
+
+246
+00:34:23,123 --> 00:34:25,804
+gradient
+
+247
+00:34:25,804 --> 00:34:26,363
+vector.
+
+248
+00:34:33,907 --> 00:34:42,587
+Evet. Demek ki, gradyan vektörle zıt yönde, x'y'leri değiştirirseniz, en hızlı bir şekilde yüzey azalacaktır arkadaşlar.
+
+249
+00:34:42,587 --> 00:34:57,648
+Ok, the final comment. So if theta is pi over 2, so what does it mean? In that case, they are orthogonal to each other.
+
+250
+00:34:58,387 --> 00:35:06,188
+So, let's say this is gradient vector at the point P. Let's say this is unit vector.
+
+251
+00:35:07,947 --> 00:35:21,667
+Then, F does not change. So, gradient vector, so, directional derivation, directional derivation will be zero. This means that no change.
+
+252
+00:35:23,587 --> 00:35:24,987
+No change.
+
+253
+00:35:27,795 --> 00:35:39,076
+F, means that F does not change in the direction of a vector which is orthogonal to gradient vector.
+
+254
+00:35:40,456 --> 00:35:43,355
+Okay, let's comment on this back.
+
+255
+00:35:52,467 --> 00:35:54,068
+Okay, consider this example.
+
+256
+00:35:55,507 --> 00:35:56,827
+So we introduce this.
+
+257
+00:35:57,407 --> 00:36:02,987
+Z is equal to x squared plus y squared.
+
+258
+00:36:03,228 --> 00:36:05,068
+So we know how to sketch this.
+
+259
+00:36:05,587 --> 00:36:08,707
+So the surface, this surface is something like that.
+
+260
+00:36:10,847 --> 00:36:12,627
+So this is paraboloid.
+
+261
+00:36:12,627 --> 00:36:13,528
+We know this.
+
+262
+00:36:16,980 --> 00:36:19,260
+Let me sketch
+
+263
+00:36:23,731 --> 00:36:24,552
+This surface.
+
+264
+00:36:32,052 --> 00:36:33,972
+Okay, so this is our surface.
+
+265
+00:36:38,804 --> 00:36:41,483
+Let's take some point on the surface.
+
+266
+00:36:48,275 --> 00:36:55,675
+So we have p point, AB, AB, p point.
+
+267
+00:36:57,475 --> 00:37:01,475
+Look at here, so we have level curves here, but look at here.
+
+268
+00:37:04,675 --> 00:37:14,555
+We have level curves here. As you see, on the circles, on the circles living on the same level, the surface
+
+269
+00:37:15,572 --> 00:37:35,931
+High does not change. Dikkat edin arkadaşlar. Seviye eğriler üzerinde, çemberler üzerinde yüzeyin yüksekliği değişiyor mu? Değişmiyor. Farz edin ki bir dağ gibi düşünün onu arkadaşlar. Ne yapıyorsunuz? O dağın üzerine bir yol çiziyorsunuz ama o yolun yüksekliği asla değişmiyor. Ama yolunuzda bir çember şeklinde.
+
+270
+00:37:43,155 --> 00:37:54,695
+Yolun yüksekliği değişmiyor. Siz dağın üzerindeki, bir çember şeklindeki yol üzerinde hareket ediyorsunuz. O zaman işte ne oluyor? Yöne göre türev sıfır olmuş oluyor. Tamam mı gençler?
+
+271
+00:37:56,115 --> 00:37:56,936
+Yani ne demek?
+
+272
+00:37:58,016 --> 00:38:00,216
+Ok, let me use red color.
+
+273
+00:38:00,936 --> 00:38:05,195
+So, gradient vector in that case, so you got this gradient vector.
+
+274
+00:38:09,427 --> 00:38:11,427
+So, let's say this is unit vector.
+
+275
+00:38:12,887 --> 00:38:16,927
+So, u vector. So, we have some u vector here.
+
+276
+00:38:22,804 --> 00:38:24,244
+And let's say this is
+
+277
+00:38:29,139 --> 00:38:35,260
+Gradient vector, gradient vector, somewhere here.
+
+278
+00:38:36,260 --> 00:38:39,699
+So as you see, we have orthogonality here.
+
+279
+00:38:46,260 --> 00:38:51,740
+Now, so in that case, so we got this orbit.
+
+280
+00:38:52,940 --> 00:38:54,720
+So let me use black color.
+
+281
+00:39:02,643 --> 00:39:06,403
+As you see, this is the surface.
+
+282
+00:39:08,923 --> 00:39:10,643
+F does not change.
+
+283
+00:39:11,863 --> 00:39:19,383
+So, for example, here, so you got, so x, y, z is somewhere here.
+
+284
+00:39:19,543 --> 00:39:20,703
+Let's say this is a.
+
+285
+00:39:21,364 --> 00:39:36,703
+X, Y, Z value is A. So here, X, Y, Z value is A. Here, coordinates of this point, X, Y, Z value is A. X1, Y, Y. X2, Y2.
+
+286
+00:39:57,139 --> 00:40:01,679
+As, gradiyan vektör, of P.
+
+287
+00:40:05,940 --> 00:40:08,579
+ortogonal 2, unit vector.
+
+288
+00:40:09,680 --> 00:40:13,119
+Anlaşımını yalanır mı gençler?
+
+289
+00:40:15,159 --> 00:40:15,720
+Bu böyle.
+
+290
+00:40:16,720 --> 00:40:18,559
+Okay, consider next case.
+
+291
+00:40:19,000 --> 00:40:21,440
+So, we introduce this in fact, for example,
+
+292
+00:40:22,300 --> 00:40:25,860
+so, point, so let's say this is point 1, 1.
+
+293
+00:40:26,940 --> 00:40:29,699
+Let's consider unit vector,
+
+294
+00:40:30,319 --> 00:40:32,199
+1 over square root of 2.
+
+295
+00:40:32,628 --> 00:40:58,467
+Minus 1 over square root of 2. We introduced this example before. Now, gradient vector of f at the point p. So, recall this. So, this is 2, 2. As you see, now, those are orthogonal to each other. Gradient vector of f at the point p is orthogonal to.
+
+296
+00:40:59,507 --> 00:41:01,047
+u unit vector.
+
+297
+00:41:01,807 --> 00:41:05,027
+Okay, so the dot product of those vector is zero.
+
+298
+00:41:05,207 --> 00:41:06,228
+Okay, somewhere here.
+
+299
+00:41:06,347 --> 00:41:09,847
+So this is, let's suppose that this is vector u is
+
+300
+00:41:09,847 --> 00:41:12,688
+one over square root of two,
+
+301
+00:41:13,207 --> 00:41:15,188
+minus one over square root of two.
+
+302
+00:41:15,847 --> 00:41:17,427
+Okay, now look at here.
+
+303
+00:41:17,527 --> 00:41:19,527
+So we have also this direction
+
+304
+00:41:19,527 --> 00:41:22,587
+here.
+
+305
+00:41:23,447 --> 00:41:25,307
+So this is minus u.
+
+306
+00:41:27,956 --> 00:41:50,956
+Okay, now we can, let's say this is u1, u1 vector, so let's say this is u2 vector, so the reverse of u1 vector, so u1, so as you see, we have two directions in which directional derivation is zero, meaning that
+
+307
+00:41:51,572 --> 00:42:12,231
+Okey, if you travel in this direction or in this direction, the surface, high does not change. Dikkat edin arkadaşlar, yani U1 yönünde gidiyorsunuz, bir de ters yönde arabayı hareket ettiriyorsunuz. Hangi yönde hareket ederseniz, zaten yükseklik değişmeyecek arkadaşlar. Ona dikkat edin.
+
+308
+00:42:12,576 --> 00:42:23,576
+O zaman ne yapıyorum? 2 tane yüksekliğin, yüzey yüksekliğinin değişmediği 2 tane yön var aslında. Gradiyen vektöre dik olan 2 tane vektör var. Birisi U1, diğeri de eksilisi. Tamam mı?
+
+309
+00:42:27,539 --> 00:42:40,739
+Yen, so we have this, so in that case we have this, reverse of this one, minus 1 over square root of 2, we multiply this u1 by minus 1, and 1 over square root of 2.
+
+310
+00:42:40,739 --> 00:42:48,059
+Okay, now again, so gradient vector of f at the point p, so we have this 2, 2.
+
+311
+00:42:54,047 --> 00:43:20,608
+Gradient vector of f at the point p and u2 is also zero. Okay. Now I think this example explains everything about directional derivation. Okay. Now let's next case. Now what about this next case? Let me sketch this surface.
+
+312
+00:43:21,076 --> 00:43:27,596
+Y, Z,
+
+313
+00:43:32,884 --> 00:43:35,823
+Okay, let's sketch our paraboloid.
+
+314
+00:43:42,483 --> 00:43:45,387
+Ok, suppose that...
+
+315
+00:43:48,467 --> 00:43:50,307
+So you take some point here.
+
+316
+00:43:52,087 --> 00:43:57,467
+So actually in this direction, the high of surface is increasing.
+
+317
+00:43:57,467 --> 00:44:02,467
+In this direction, high of surface decreasing.
+
+318
+00:44:03,347 --> 00:44:04,007
+Can you see that?
+
+319
+00:44:04,587 --> 00:44:08,467
+Now, how can we explain this situation in terms of directional derivation?
+
+320
+00:44:09,887 --> 00:44:14,227
+So first of all, let's consider orthogonal projection of this point.
+
+321
+00:44:14,867 --> 00:44:15,567
+This point.
+
+322
+00:44:16,275 --> 00:44:22,036
+Koordinatörü, this point P, A, B, F of A, B.
+
+323
+00:44:22,635 --> 00:44:31,615
+Okay, now coordinate, ortogonal projection of this point onto A, B.
+
+324
+00:44:32,876 --> 00:44:39,735
+Okay, now in this case, we consider this vector.
+
+325
+00:44:46,356 --> 00:44:52,516
+Fard edin ki arkadaşlar, bu yönde gidiyorsunuz, noktalarınızda şey, yöne göre türeviniz böyle oldu.
+
+326
+00:44:59,492 --> 00:45:02,492
+Direktörler için
+
+327
+00:45:02,492 --> 00:45:05,492
+ve bu noktada bir noktada.
+
+328
+00:45:05,492 --> 00:45:18,492
+Bu noktada bir noktada.
+
+329
+00:45:18,492 --> 00:45:22,492
+Şimdi bu noktada bir noktada.
+
+330
+00:45:25,427 --> 00:45:31,027
+Ok, the gradient vector, dot product of gradient vector,
+
+331
+00:45:35,059 --> 00:45:37,199
+And you, Vector, sorry, this is you.
+
+332
+00:45:42,675 --> 00:45:48,335
+Minus, gradient vector, of f at point p.
+
+333
+00:45:48,556 --> 00:45:59,255
+So as you see, so gradient, the directional derivation is negative, and the minimum value, so in this direction, so in this direction,
+
+334
+00:46:02,255 --> 00:46:05,255
+look at here, in this direction,
+
+335
+00:46:06,228 --> 00:46:10,008
+The surface high is decreasing most rapidly.
+
+336
+00:46:10,427 --> 00:46:17,488
+Eğer gradyan vektörle u arkadaşlar zıt yönlü olursa, o zaman siz dağdan aşağı doğru iniyorsunuz demektir.
+
+337
+00:46:17,568 --> 00:46:19,488
+This means that you go down.
+
+338
+00:46:20,568 --> 00:46:28,048
+If gradyan vektör is in the reverse direction of unit vektör, this means that you go down.
+
+339
+00:46:28,867 --> 00:46:30,188
+But in the case...
+
+340
+00:46:30,452 --> 00:46:38,492
+Gradient vector and unit vector have the same direction. This means that you go up. Okay. Go down.
+
+341
+00:46:41,492 --> 00:46:46,332
+Go down on the surface. What is the case?
+
+342
+00:46:47,412 --> 00:46:58,052
+In the case, gradient vector and unit vector have the same direction. In that case, we have this.
+
+343
+00:47:02,003 --> 00:47:23,563
+Bu, bu
+
+344
+00:47:26,931 --> 00:47:28,351
+Herhalde anlaşıldı arkadaşlar.
+
+345
+00:47:31,451 --> 00:47:31,731
+Evet.
+
+346
+00:47:32,951 --> 00:47:33,791
+Sorusu olan var mı?
+
+347
+00:47:44,340 --> 00:47:52,239
+Ok, let's give this example. Bu için. Bir ara verelim değil mi? Ara vakti geldi mi?
+
+348
+00:47:54,239 --> 00:47:58,039
+Evet, bir ara verelim arkadaşlar. Ok, let's give some break. 10 minutes break.
+
+349
+00:48:00,599 --> 00:48:05,880
+Sorunuz varsa cevaplayalım. Hocam ben şurayı anlamadım dediğiniz yer var mı?
+
+350
+00:48:21,684 --> 00:48:23,504
+Evet, sorusu yok herhalde kimsenin.
+
+351
+00:48:24,444 --> 00:48:26,604
+Okey, see you 10 minutes later.
+
+352
+01:01:48,692 --> 01:01:50,052
+Evet, merhaba gençler.
+
+353
+01:01:51,871 --> 01:01:54,791
+Okay, let's solve some questions.
+
+354
+01:02:13,748 --> 01:02:16,588
+find the directional derivation
+
+355
+01:02:28,340 --> 01:02:30,579
+rate of
+
+356
+01:02:30,579 --> 01:02:34,119
+w
+
+357
+01:02:46,324 --> 01:02:47,204
+W
+
+358
+01:02:47,204 --> 01:02:50,443
+XZ
+
+359
+01:02:50,443 --> 01:02:54,204
+Plus
+
+360
+01:02:54,204 --> 01:02:56,523
+Y Square
+
+361
+01:02:56,523 --> 01:02:57,083
+Z
+
+362
+01:02:57,083 --> 01:03:00,043
+Y Square
+
+363
+01:03:03,923 --> 01:03:06,164
+y² x plus
+
+364
+01:03:06,164 --> 01:03:09,844
+cosin
+
+365
+01:03:09,844 --> 01:03:11,423
+xz
+
+366
+01:03:11,423 --> 01:03:14,384
+so as you see, this is
+
+367
+01:03:14,384 --> 01:03:16,884
+some function with three variables
+
+368
+01:03:16,884 --> 01:03:17,584
+okay
+
+369
+01:03:17,584 --> 01:03:20,344
+at the point
+
+370
+01:03:20,344 --> 01:03:25,124
+at the point p
+
+371
+01:03:25,124 --> 01:03:26,943
+1
+
+372
+01:03:26,943 --> 01:03:28,584
+0
+
+373
+01:03:29,588 --> 01:03:32,368
+Pi over 2, in the direction.
+
+374
+01:03:40,179 --> 01:03:42,219
+in the direction v.
+
+375
+01:03:43,460 --> 01:03:44,199
+1,
+
+376
+01:03:45,359 --> 01:03:47,519
+minus 1, 1.
+
+377
+01:03:48,139 --> 01:03:50,900
+So, this is not standard example.
+
+378
+01:03:52,019 --> 01:03:53,299
+So, as you see, this function
+
+379
+01:03:53,299 --> 01:03:56,699
+has three independent variables.
+
+380
+01:03:56,859 --> 01:03:57,599
+So, that's why
+
+381
+01:03:57,599 --> 01:04:01,139
+this is
+
+382
+01:04:01,139 --> 01:04:04,359
+three independent
+
+383
+01:04:04,359 --> 01:04:05,079
+variable.
+
+384
+01:04:08,820 --> 01:04:32,740
+Gradient vector of W at the point P, F sub x, P, F sub y, P, F sub z, E. Gradient vector consists of three components.
+
+385
+01:04:35,023 --> 01:04:37,083
+So, let's compute f sub x.
+
+386
+01:04:38,763 --> 01:04:41,463
+So, derivation of w with respect to x.
+
+387
+01:04:42,523 --> 01:04:57,903
+So, z plus y square minus sine x times z times, derivation of argument of cosine with respect to x.
+
+388
+01:04:57,903 --> 01:04:59,223
+So, this is z.
+
+389
+01:04:59,923 --> 01:05:01,483
+And the value of...
+
+390
+01:05:01,972 --> 01:05:20,372
+This derivation at the point, at the point P, 1, 0, pi over 2, x is 1, z is pi over 2, y is 0, answer is 0.
+
+391
+01:05:22,072 --> 01:05:26,172
+Sıfır mı oluyor arkadaşlar? Ne oluyor? Yanlış olmasın.
+
+392
+01:05:29,460 --> 01:05:35,039
+x yerine p bölü 2 yazdık, z yerine p bölü 2 yazdık, sıfır geliyor. Doğru mu arkadaşlar?
+
+393
+01:05:36,159 --> 01:05:38,139
+Is there any mistake?
+
+394
+01:05:40,079 --> 01:05:51,480
+Okay, now, the derivation of f sub y, so derivation of f with respect to y, so in that case, we have 2yx,
+
+395
+01:05:53,539 --> 01:05:55,467
+we have this,
+
+396
+01:05:56,788 --> 01:06:00,148
+So, the value of this at point P
+
+397
+01:06:03,668 --> 01:06:22,108
+So, this is 0, f sub z, derivation of f with respect to z, x plus, so x minus, sorry, x minus sin, x times z times x.
+
+398
+01:06:23,628 --> 01:06:30,188
+So, the value of this at the point, 1, 0, pi over 2.
+
+399
+01:06:31,923 --> 01:06:51,103
+1 minus sin, x is 1, z is pi over 2, times x is 1. So I see 1 minus 1, so it is again 0. So I see gradient vector is 0.
+
+400
+01:06:52,943 --> 01:06:58,703
+Gradient vector of f at point p, 0 vector.
+
+401
+01:07:01,108 --> 01:07:05,608
+0, 0, 0.
+
+402
+01:07:07,468 --> 01:07:13,068
+Now, so we need to obtain unit vector.
+
+403
+01:07:13,188 --> 01:07:15,268
+This is not unit, but you don't need to write this.
+
+404
+01:07:15,268 --> 01:07:26,628
+The unit vector, v over normal v, the directional derivation of w,
+
+405
+01:07:28,820 --> 01:07:48,000
+Directional derivation of f, so you can write this. Directional derivation of f in the direction, let me use d u, f or w, doesn't matter, at the point p. Notasyonlar karışıyor yapıya, şunu şöyle yapalım.
+
+406
+01:07:56,980 --> 01:08:06,099
+Bu, bu, bu, gradient vector, gradient vector, dot, unit vector, this is always zero.
+
+407
+01:08:07,860 --> 01:08:15,539
+Okay, so this means that the surface height does not change, okay, in this direction and at this point.
+
+408
+01:08:19,619 --> 01:08:22,819
+Bir başka örnek bulalım.
+
+409
+01:08:24,340 --> 01:08:25,680
+So, another example.
+
+410
+01:08:36,819 --> 01:08:45,059
+find, find directional derivation, find the directional derivation,
+
+411
+01:08:49,268 --> 01:09:14,128
+Fini, direktsal derivation of f given by three independent variables, sin x times z plus ln 3 z squared.
+
+412
+01:09:15,731 --> 01:09:18,711
+plus, exponential, x, y.
+
+413
+01:09:20,471 --> 01:09:21,431
+At the point,
+
+414
+01:09:22,851 --> 01:09:23,871
+at the point,
+
+415
+01:09:24,291 --> 01:09:26,791
+so, in the direction, okay, let me write here,
+
+416
+01:09:27,532 --> 01:09:28,431
+in the direction,
+
+417
+01:09:31,431 --> 01:09:33,511
+or at the point, let me write here,
+
+418
+01:09:33,532 --> 01:09:34,652
+at the point, a,
+
+419
+01:09:35,971 --> 01:09:37,971
+0, 1, 1,
+
+420
+01:09:38,112 --> 01:09:42,092
+in the direction,
+
+421
+01:09:46,771 --> 01:09:49,051
+Of a vector
+
+422
+01:09:52,724 --> 01:09:53,783
+Connecting
+
+423
+01:09:58,420 --> 01:10:03,980
+A.011 to B.
+
+424
+01:10:06,040 --> 01:10:07,520
+Point B.
+
+425
+01:10:07,520 --> 01:10:10,140
+2, 3, 0.
+
+426
+01:10:15,636 --> 01:10:35,015
+Evet, 3 değişkenli F fonksiyonunun, 3 bağımsız değişkenli F fonksiyonunun, A noktasında ve A'yı B'yi bağlayan vektör yönünde, yöne göre türevini bulunuz.
+
+427
+01:10:37,015 --> 01:10:41,195
+Evet, yapın bakalım gençler, aynı yukarıdaki gibi.
+
+428
+01:10:48,435 --> 01:10:59,555
+Dikkat edin, iki değişkenli değil, bağımsız değişken sayısı 3. O yüzden birim vektörünüz, verilen vektör birim hale gelecek ve 3 koordinatlı olacak.
+
+429
+01:11:00,695 --> 01:11:05,755
+Aynı zamanda yöne göre türev de elbette 3 bileşenli olacak.
+
+430
+01:11:16,243 --> 01:11:19,283
+must contain three components, okay?
+
+431
+01:11:20,903 --> 01:11:29,884
+And the direction, the vector, also must be consisting of three components.
+
+432
+01:11:34,836 --> 01:11:40,656
+First of all, you need to focus on the number of independent variables before solving question.
+
+433
+01:11:42,436 --> 01:11:49,736
+Soruyu çözmeden önce verilen fonksiyonun bağımsız değişken sayısına bakacaksınız. Orası önemli.
+
+434
+01:11:52,036 --> 01:11:58,376
+Evet. Yapıyorsunuz değil mi gençler? Yöne göre türev. Ders derste öğrenilir. Unutmayın bunu.
+
+435
+01:12:01,619 --> 01:12:11,619
+Whether you learned or not, by solving this question, you need to test yourself, by solving this question.
+
+436
+01:12:25,939 --> 01:12:27,959
+[öğrenci], arhir ala.
+
+437
+01:12:39,764 --> 01:12:41,244
+[öğrenci], I think.
+
+438
+01:12:43,824 --> 01:12:46,123
+[öğrenci], are you here, [öğrenci]?
+
+439
+01:13:00,659 --> 01:13:11,739
+[öğrenci] de burada değil. Arkadaşlar, herkes herhalde arazi olmuş. Burada olanlar buradayım yazabilir mi? Merak ettim. Kaç kişi var?
+
+440
+01:13:54,996 --> 01:13:58,155
+İşi yok demek ki, 31 kişi burada.
+
+441
+01:14:01,355 --> 01:14:07,036
+73 kişi gözüküyor ama yarısından çoğu yok terste.
+
+442
+01:14:08,376 --> 01:14:09,435
+Sıkıntı yok.
+
+443
+01:14:11,115 --> 01:14:14,435
+Başarı birim zamanda yerine getirilen sorumlulukların miktarıdır.
+
+444
+01:14:17,255 --> 01:14:20,716
+Yapacak bir şey yok arkadaşlar, başarısız olmak istiyorlarsa.
+
+445
+01:14:21,496 --> 01:14:22,556
+Kendi tercihleridir.
+
+446
+01:14:24,948 --> 01:14:30,888
+İnsanı diğer varlıklardan ayıran en önemli özellik, tercih yapabilme hakkına sahip olmasıdır.
+
+447
+01:14:50,260 --> 01:15:08,800
+Evet, bulan var mı? Yöne göre türevi. Ya da söz konusu noktada, verilen yönde değişim oranını. Türev demek değişim oranı demek. Ortalama değişim oranı veya anlık değişim oranı. Tabi burada anlık değişim oranı söz konusu. Evet. Okey.
+
+448
+01:15:12,219 --> 01:15:14,380
+Solution, let's solve this problem.
+
+449
+01:15:16,884 --> 01:15:22,083
+Now, so first of all, we need to, we need to construct our point A.
+
+450
+01:15:22,783 --> 01:15:24,224
+Okay, this is very important.
+
+451
+01:15:25,224 --> 01:15:27,804
+Okay, now, so our vector,
+
+452
+01:15:30,283 --> 01:15:31,583
+so B vector,
+
+453
+01:15:33,324 --> 01:15:36,543
+AB vector, AB vector, we know that,
+
+454
+01:15:36,543 --> 01:15:39,344
+OB minus OA,
+
+455
+01:15:42,771 --> 01:16:10,012
+2-0, 2, 3-1, 2, 0-1, 1, this is not unit, not unit, that's why we need to obtain some unit vector, by dividing v vector by its length, the length of v, okay, length of v, 3,
+
+456
+01:16:18,931 --> 01:16:23,351
+Attention here, the length of v is 3.
+
+457
+01:16:25,291 --> 01:16:35,252
+Now, so this is our unit vector. By using this unit vector, we want to compute directional derivation of f at the point a.
+
+458
+01:16:36,211 --> 01:16:40,832
+Now, so we need to compute direct gradient vector of f.
+
+459
+01:16:40,832 --> 01:16:45,971
+Since our function has three components, our gradient vector
+
+460
+01:16:48,020 --> 01:16:54,239
+F sub x, F sub y, F sub z.
+
+461
+01:16:54,780 --> 01:17:00,819
+So we need to compute F sub x, derivation of f with respect to x.
+
+462
+01:17:01,540 --> 01:17:10,840
+So derivation of sine, cosine, x times z, times inside, derivation of inside with respect to x, z.
+
+463
+01:17:11,840 --> 01:17:13,319
+And plus,
+
+464
+01:17:14,676 --> 01:17:23,896
+Derivation of ln 3 z squared is 0, with respect to x. Derivation of exponential x, y, with respect to x, this.
+
+465
+01:17:24,656 --> 01:17:40,416
+Now, if you substitute coordinates of a point, attention here, 0, 1, 1, x is 0, y is 1, so this is 1, 1, 1, so this is 2. Is that correct?
+
+466
+01:17:41,460 --> 01:17:48,659
+Now, similarly, we can compute f sub y, derivation of f with respect to y.
+
+467
+01:17:48,659 --> 01:17:50,880
+So let me make it smaller.
+
+468
+01:17:51,799 --> 01:17:54,960
+Okay, now derivation of f with respect to y.
+
+469
+01:17:55,420 --> 01:17:59,579
+So exponential x times y times x.
+
+470
+01:18:00,059 --> 01:18:06,699
+And the value of this derivation at the point a, 0, 1, 1.
+
+471
+01:18:07,444 --> 01:18:12,444
+The answer is zero and derivation of f with respect to z.
+
+472
+01:18:13,204 --> 01:18:25,024
+So cosine x times z times x plus derivation of ln 3z squared with respect to z.
+
+473
+01:18:25,024 --> 01:18:30,604
+6z over 3z squared.
+
+474
+01:18:33,460 --> 01:18:59,760
+Okay, now if you substitute coordinates of a point into this derivation value, you are going to obtain 2. Is that correct? So this is 1, so this is 0, sorry. So we got 2. Now gradient vector of f at the point a.
+
+475
+01:19:04,115 --> 01:19:07,855
+is obtained by combining these obtained values.
+
+476
+01:19:08,036 --> 01:19:09,775
+Okay, 2, 0, 2.
+
+477
+01:19:10,355 --> 01:19:11,615
+So this is gradient vector.
+
+478
+01:19:12,515 --> 01:19:19,355
+Now, directional derivation of f in the direction u at the point a.
+
+479
+01:19:20,615 --> 01:19:26,996
+Nothing else than gradient vector, dot product of gradient vector at the point a.
+
+480
+01:19:27,876 --> 01:19:28,939
+And...
+
+481
+01:19:31,636 --> 01:19:32,716
+unit vector.
+
+482
+01:19:33,716 --> 01:19:46,695
+Okay, now, so 2, 0, 2, that product, 2 over 3, 2 over 3, minus 1 over 3.
+
+483
+01:19:47,576 --> 01:19:53,816
+That product of this vector, 4 over 3, plus 0, minus,
+
+484
+01:19:55,028 --> 01:19:56,308
+2 over 3.
+
+485
+01:19:56,908 --> 01:19:58,968
+The answer is 2 over 3.
+
+486
+01:19:59,108 --> 01:20:01,228
+So as you see, we got positive value.
+
+487
+01:20:02,308 --> 01:20:07,188
+So if you choose x, y, x, y, z pairs in the direction of u,
+
+488
+01:20:07,188 --> 01:20:17,728
+okay, in that case, our surface is rising by this change of rate.
+
+489
+01:20:18,131 --> 01:20:33,031
+Dikkat edin arkadaşlar. A noktasından itibaren U vektörü yönünde x, y, z'ler seçtiğinizde W değerleri, yani x, y, z'ye bağlı olan W değerleri ne olacak arkadaşlar?
+
+490
+01:20:33,332 --> 01:20:44,072
+2 bölü 3 değişim oranıyla ne yapacak? Yükselecek. Değişim oranı pozitif. O zaman yükselmiş olacak, artmış olacak fonksiyon değeri. W değeri artacak.
+
+491
+01:20:46,131 --> 01:20:47,211
+Is there any question?
+
+492
+01:20:59,028 --> 01:21:07,768
+Bunu herkes yapacak arkadaşlar. Herkesin yapmasını istiyorum. 5 dakika süre vereceğim. 5 dakikada herkesin yapmasını istiyorum.
+
+493
+01:21:07,768 --> 01:21:18,888
+You have 5 minutes to solve this problem. You have some function with 3 independent variables.
+
+494
+01:21:19,828 --> 01:21:25,968
+X square plus 2y square plus 3z.
+
+495
+01:21:30,707 --> 01:21:37,587
+Ok, compute, you are given two points, so those are points, not vectors.
+
+496
+01:21:41,652 --> 01:22:08,112
+Given some function f with three independent variables and two points, m endpoints, find the change rate, change of change rate of f at the point m, at the point m.
+
+497
+01:22:08,851 --> 01:22:20,059
+in the direction
+
+498
+01:22:20,059 --> 01:22:22,959
+direction of
+
+499
+01:22:22,959 --> 01:22:25,619
+mn
+
+500
+01:22:25,619 --> 01:22:28,100
+ok
+
+501
+01:22:38,931 --> 01:22:43,672
+Şimdi bunun grafiğini hayal edemezsiniz arkadaşlar. Bunun grafiği 4 boyutlu uzayda.
+
+502
+01:22:44,612 --> 01:22:54,172
+Ama hayal edemezsek dahi ne yapabilirsiniz? Soyut olarak, matematiksel olarak bazı yorumlarda bulunabilirsiniz.
+
+503
+01:22:54,172 --> 01:23:05,252
+İşte böyle değişim oranını hesaplamak gibi. 3 değişkenli bir fonksiyon. W değişkeni x, y, z dersek 4 boyutlu uzayda olur bunun grafiği.
+
+504
+01:23:05,811 --> 01:23:14,012
+Hayal edemesek dahi, yöne göre türevlerini ne yapabiliriz? Hesaplayabiliriz. Değişim oranlarını hesaplayabiliriz.
+
+505
+01:23:24,148 --> 01:23:24,868
+Bekliyorum.
+
+506
+01:23:32,275 --> 01:23:33,456
+Yapıyorsunuz değil mi gençler?
+
+507
+01:23:34,895 --> 01:23:43,136
+Önce, first of all, you need to determine the number of independent variables for the function given in the equation.
+
+508
+01:23:44,175 --> 01:23:54,296
+Okay, it's obvious that our function has three independent variables, meaning that gradyan vector consists of three components.
+
+509
+01:24:01,524 --> 01:24:04,524
+must be given by three components.
+
+510
+01:24:10,547 --> 01:24:15,907
+Ok, buket found 18 over 3.
+
+511
+01:24:29,235 --> 01:24:32,015
+Anybody, did anybody find the same answer?
+
+512
+01:25:22,836 --> 01:25:24,636
+Evet, bekliyoruz gençler, yapın.
+
+513
+01:25:26,976 --> 01:25:29,015
+Ders, derste öğrenilir, dedik.
+
+514
+01:25:30,396 --> 01:25:33,476
+Öğrenip öğrenmediğinizi test etmeniz gerekir.
+
+515
+01:25:35,076 --> 01:25:36,515
+Eksi 24 mü?
+
+516
+01:25:38,115 --> 01:25:41,296
+Eksi 24, bir yerde hata yapmışsındır [öğrenci].
+
+517
+01:26:34,387 --> 01:26:35,387
+Bulunuz mu gençler?
+
+518
+01:27:23,220 --> 01:27:24,220
+gelebilir.
+
+519
+01:27:25,220 --> 01:27:28,220
+You may obtain some negative values.
+
+520
+01:27:28,220 --> 01:27:32,220
+It's normal, but I think you made mistake.
+
+521
+01:27:33,220 --> 01:27:36,220
+You made mistake in your calculation.
+
+522
+01:27:36,220 --> 01:27:38,220
+Okay, let's do it together.
+
+523
+01:27:39,220 --> 01:27:45,220
+So, first of all, we need to determine the number of independent variables.
+
+524
+01:27:45,220 --> 01:27:47,220
+Look at here.
+
+525
+01:27:47,220 --> 01:27:50,220
+So let me use blue color.
+
+526
+01:27:50,640 --> 01:28:16,380
+So, 1, 2, 3. So, let's say this is W. Okay, so our function W or F depends on three independent variables. So, this is very important. So, 1, 2, 3. Okay. Now, 1, 2, 3. 1, 2, 3. 1, 2, 3. So, first of all, let's construct direction vector. So, Mn.
+
+527
+01:28:17,684 --> 01:28:34,583
+On, minus On, and 2 minus 1, 2 minus 1, 1, 4 minus 2, 2, 2 minus 0, 2.
+
+528
+01:28:34,724 --> 01:28:41,583
+So this is gradient vector, not gradient vector, sorry, direction vector, so which is not unit.
+
+529
+01:28:43,604 --> 01:28:46,203
+since its norm is 3.
+
+530
+01:28:47,404 --> 01:28:52,043
+1², 2², 2², 2², 2², so 3.
+
+531
+01:28:52,564 --> 01:28:57,043
+So we need to obtain some unit vector in the same direction.
+
+532
+01:28:59,844 --> 01:29:01,363
+Okay, v over
+
+533
+01:29:04,404 --> 01:29:05,363
+the norm of v.
+
+534
+01:29:06,324 --> 01:29:10,164
+Okay, 1 over 3, 2 over 3.
+
+535
+01:29:10,931 --> 01:29:36,931
+2 over 3. Okay, so this is our unit vector. We are going to use this unit vector to compute directional derivation. We need gradient vector of W or F. Okay, F sub X, F sub Y, F sub Z, since our function has three independent variables. Let's compute F sub X.
+
+536
+01:29:38,228 --> 01:30:00,148
+Derivation of f with respect to x, 2x, the value of this at the point, at the point m, attention here, so 1, 2, 0, 2. Derivation of f with respect to y, 4y.
+
+537
+01:30:02,931 --> 01:30:10,371
+Ve bu derivation at point M, 1, 2, 0, 8.
+
+538
+01:30:11,011 --> 01:30:13,652
+Derivation of F with respect to Z,
+
+539
+01:30:15,192 --> 01:30:16,331
+the answer is 3.
+
+540
+01:30:17,112 --> 01:30:18,171
+So this is 3.
+
+541
+01:30:19,131 --> 01:30:26,192
+This implies that derivation of F sub Z at point M,
+
+542
+01:30:28,572 --> 01:30:29,771
+answer is 3.
+
+543
+01:30:30,228 --> 01:30:38,968
+So, gradiyan vektör is a vektör consist of three components, 2, 8, 3, respectively.
+
+544
+01:30:39,747 --> 01:30:46,587
+Okay, now, so it remains to compute that product of u and gradiyan vektör.
+
+545
+01:30:46,587 --> 01:30:48,368
+Let me put it here.
+
+546
+01:30:50,188 --> 01:30:54,587
+Now, if you compute that product of...
+
+547
+01:31:02,260 --> 01:31:24,940
+Bu bir sıfı sıf
+
+548
+01:31:25,779 --> 01:31:36,279
+2 times 1 over 3 plus 8 times 2 over 3 and 2 times 3 over 2.
+
+549
+01:31:37,119 --> 01:31:43,559
+Bana ne geliyor arkadaşlar? 2 bölü 3, 16 bölü 3.
+
+550
+01:31:45,332 --> 01:31:54,252
+Burası da 2, burası ne geliyor? 18 bölü 3, 6, 2 de buradan 8. Cevap 8 geliyor, işlem hatası yapmadıysak.
+
+551
+01:31:55,512 --> 01:32:04,592
+So, I found 8. Where did you mistake? Take out your calculations. Nerede hata yaptığınızı kontrol edin.
+
+552
+01:32:14,131 --> 01:32:18,271
+Z'ye göre türevi sıfır gelmiyor. Bak orada 3Z var.
+
+553
+01:32:18,431 --> 01:32:20,572
+Ok, actually we have 3 times Z.
+
+554
+01:32:23,051 --> 01:32:23,572
+Ok.
+
+555
+01:32:30,484 --> 01:32:33,804
+I think everyone got this directional derivation.
+
+556
+01:32:35,324 --> 01:32:38,604
+Okay, let me ask you some non-standard example.
+
+557
+01:32:44,595 --> 01:32:46,075
+Yenif'un,
+
+558
+01:33:02,228 --> 01:33:03,868
+İmplicit form
+
+559
+01:33:35,667 --> 01:33:36,167
+Okey.
+
+560
+01:33:37,927 --> 01:33:40,167
+Then, compute.
+
+561
+01:33:47,539 --> 01:33:48,880
+The change rate
+
+562
+01:33:53,939 --> 01:34:07,916
+F
+
+563
+01:34:03,220 --> 01:34:07,360
+1, 1, 1, in the direction.
+
+564
+01:34:16,467 --> 01:34:19,467
+F
+
+565
+01:34:16,275 --> 01:34:17,435
+in the direction
+
+566
+01:34:35,880 --> 01:34:38,284
+F
+
+567
+01:34:33,908 --> 01:34:37,847
+Ok, let's try to compute this problem.
+
+568
+01:35:13,683 --> 01:35:16,683
+F
+
+569
+01:35:13,587 --> 01:35:14,907
+Evet, yapmışsınız gibi gençler.
+
+570
+01:35:57,600 --> 01:36:06,600
+F
+
+571
+01:35:56,724 --> 01:36:20,503
+Okay, first of all, try to determine the number of independent variables for the function given in the equation. So what is the number of? Of course, two. In fact, we have two independent variables, meaning that your gradient vector must contain three components, has two components, and
+
+572
+01:36:20,916 --> 01:36:27,316
+Vektör, direksiyon vektör, must be given by two components.
+
+573
+01:36:27,456 --> 01:36:29,796
+Okay, so you need to verify these informations.
+
+574
+01:36:32,796 --> 01:36:33,935
+In your mind.
+
+575
+01:37:05,524 --> 01:37:06,024
+Okay.
+
+576
+01:37:08,024 --> 01:37:12,304
+Did everybody find the same answer? [öğrenci] found too.
+
+577
+01:37:25,971 --> 01:37:30,992
+Biraz daha bekliyorum. Herkes bulsun. Birkaç dakika daha bekliyorum.
+
+578
+01:38:13,939 --> 01:38:15,779
+Ok, let's solve together.
+
+579
+01:38:17,840 --> 01:38:18,439
+Solution.
+
+580
+01:38:20,239 --> 01:38:27,039
+So our function consists of, our function depends on two independent variables.
+
+581
+01:38:27,699 --> 01:38:35,719
+And so first of all, we need to compute, we need to verify whether direction is unit or not.
+
+582
+01:38:36,100 --> 01:38:38,000
+The norm of this being
+
+583
+01:38:39,123 --> 01:38:42,603
+is square root of 2, not unit.
+
+584
+01:38:43,663 --> 01:38:51,304
+That's why we need to obtain some unit vector by dividing v by the norm of v.
+
+585
+01:38:52,943 --> 01:39:03,543
+And for is 1 over square root of 2 minus 1 over square root of 2, which is direction vector we are going to use.
+
+586
+01:39:03,724 --> 01:39:05,260
+Okay, now...
+
+587
+01:39:05,844 --> 01:39:15,844
+So, let's compute gradient vector. So, since our function depends on two independent variables, our gradient vector
+
+588
+01:39:15,844 --> 01:39:31,404
+consists of two components f sub x, f sub y. Okay. Now, as you see, the number of this direction, this gradient vector must be
+
+589
+01:39:31,404 --> 01:39:33,064
+consistent with
+
+590
+01:39:33,652 --> 01:39:39,332
+The components of, the number of components of direction vector, otherwise you make mistake.
+
+591
+01:39:40,072 --> 01:39:44,432
+Okay, f sub x, derivation of f with respect to x.
+
+592
+01:39:44,471 --> 01:39:46,072
+So how can we compute this?
+
+593
+01:39:46,612 --> 01:39:52,492
+Since we have implicit form, we may use implicit formula for derivation.
+
+594
+01:39:52,811 --> 01:40:00,000
+So derivation of the f over the x, we know that minus capital F.
+
+595
+01:40:00,000 --> 01:40:18,899
+X over capital, so let me write here, let me write here, let me use this notation, Z sub X or Z sub X doesn't matter.
+
+596
+01:40:21,899 --> 01:40:24,220
+Okay, capital F, Z.
+
+597
+01:40:25,079 --> 01:40:26,260
+Okay, now,
+
+598
+01:40:27,252 --> 01:40:39,452
+Capital F of x, y, z is equal to x square z plus x times z square plus y times z minus 3.
+
+599
+01:40:40,912 --> 01:40:50,952
+Minus derivation of capital F with respect to x, 2x z plus z square.
+
+600
+01:40:52,212 --> 01:41:06,372
+over derivation of capital F with respect to z, x square plus 2 x, z plus y. Is that correct?
+
+601
+01:41:07,572 --> 01:41:14,932
+Now you need to substitute the point p, x, 1, y, 1, z, 1.
+
+602
+01:41:15,532 --> 01:41:18,692
+x yerine bir, y yerine bir, z yerine bir yazarsanız arkadaşlar,
+
+603
+01:41:19,184 --> 01:41:33,463
+Eksi 3 bölü 3'ten, 3'ten mi geliyor? 1, 1, 4. 4 geliyor değil mi? Eksi 3 bölü 4 geldi. Hata yapmadıysak. Evet. Eksi 3 bölü 4. Bu değer.
+
+604
+01:41:47,507 --> 01:42:14,747
+sub z minus derivation of capital F with respect to y. So we have z only. Okay. Over x squared plus 2xz plus y. And the value of this derivation at point P, which coordinates 1, 1, 1, respectively. So minus 1 over 4.
+
+605
+01:42:15,155 --> 01:42:38,456
+Now, gradiyan vector at the point P is minus 3 over 4 minus 1 over 4. Is that correct? I think there is no mistake in these calculations. Now, so it remains to compute that product of
+
+606
+01:42:42,515 --> 01:43:05,015
+Gradient vector, at the point P, and unit vector, minus 3 over 4, minus 1 over 4, dot product, unit vector, we have this.
+
+607
+01:43:10,420 --> 01:43:18,539
+4 square root of 2 plus 1 over 4 square root of 2.
+
+608
+01:43:19,539 --> 01:43:20,920
+Ne geldi arkadaşlar?
+
+609
+01:43:22,739 --> 01:43:27,539
+Eksi 2 bölü 4 kök 2.
+
+610
+01:43:28,199 --> 01:43:29,060
+Düzellerseniz,
+
+611
+01:43:32,532 --> 01:43:44,291
+Böyle bir şey buldum ben arkadaşlar. İşlem hatası yapmadıysak. Siz nasıl iki buldunuz? Birimleştirmediniz mi? Nerede hata yaptınız? Hatasını gördü mü herkes?
+
+612
+01:43:49,587 --> 01:43:55,087
+Okay, did anybody see his or her mistake in his or her calculations?
+
+613
+01:44:05,108 --> 01:44:10,628
+Evet gençler, dikkat edeceksiniz. Yöne göre türevde çok dikkat gerekiyor.
+
+614
+01:44:13,628 --> 01:44:17,748
+4 dakikamız var. Hadi bir tane daha yapalım, siz yaparsınız.
+
+615
+01:44:22,195 --> 01:44:27,155
+Benzer şekilde bir tane daha örnek yapalım. Hatasız bir şekilde yapın bakalım. Example.
+
+616
+01:44:46,644 --> 01:44:49,724
+Ne olsun? Bir dakika. Bunun noktayı da şöyle belirleyelim.
+
+617
+01:44:49,904 --> 01:45:03,423
+Pi, x, x, pi over two, z one, y, pi.
+
+618
+01:45:07,283 --> 01:45:09,923
+Okey. Şurada X olsun arkadaşlar.
+
+619
+01:45:14,836 --> 01:45:42,315
+So this is, let's say this is 2. Türev var mı yok mu bilmiyorum. Türev var kabul ediyorum. So I suppose that there is derivation, there are derivations. Okay. Now, compute, compute and uvector, let me write this uvector. So 1 minus 1, compute.
+
+620
+01:45:42,899 --> 01:45:48,559
+Direktörde derivatı f' at point p, if any.
+
+621
+01:45:51,956 --> 01:45:54,016
+Varsa tabii, mevcut olmak zorunda değil.
+
+622
+01:45:54,716 --> 01:46:06,376
+If there is no derivation, partial derivation f sub x, either f sub y, in that case, there is no directional derivation.
+
+623
+01:46:06,775 --> 01:46:11,956
+Evet arkadaşlar, böyle durumda ne yapacağız? Yapın bakalım, herkes yapsın.
+
+624
+01:46:13,636 --> 01:46:17,155
+Zihnimden yazdım bu örneği hemen. Fırından yeni çıktı.
+
+625
+01:46:24,372 --> 01:46:26,431
+Compute Directional Derivation.
+
+626
+01:46:36,020 --> 01:46:39,100
+İpliçit form, not explicit.
+
+627
+01:46:50,707 --> 01:46:59,347
+Evet. Bekliyorum arkadaşlar. Sıkıntı değil. 3-5 dakika daha fazladan işler. Çözeriz bu problemi.
+
+628
+01:47:11,699 --> 01:47:16,699
+F'nin x'e göre ve z'nin x'e göre ve y'ye göre türevleri var değil mi arkadaşlar? Tanımsız değil.
+
+629
+01:47:17,579 --> 01:47:25,539
+In order to compute directional derivation of f, f sub x and f sub y must exist.
+
+630
+01:47:26,639 --> 01:47:29,719
+Otherwise, you cannot compute directional derivation.
+
+631
+01:47:55,123 --> 01:48:00,724
+Okey. Acele etmeyin. Sakin sakin yapın.
+
+632
+01:48:22,515 --> 01:48:36,275
+Okay, [öğrenci], there is no f sub z. Our function depends on two independent variables. Of course, we have f sub x and f sub y, but we don't have f sub z.
+
+633
+01:48:50,420 --> 01:48:55,884
+Tamam.
+
+634
+01:48:59,507 --> 01:49:01,507
+X'e
+
+635
+01:49:03,148 --> 01:49:28,507
+F'e
+
+636
+01:49:24,532 --> 01:49:29,391
+minus cosine yz minus 2.
+
+637
+01:49:30,351 --> 01:49:43,912
+Okay, now let's compute minus f sub x, derivation of f with respect to x, cosine xz, times derivation of xz with respect to xz,
+
+638
+01:49:43,912 --> 01:49:47,752
+and plus sin
+
+639
+01:49:48,979 --> 01:50:12,419
+yz times derivation of yz with respect to x0. Okay, so we got 0. Over derivation of F, capital F, with respect to z, cosin xz times x plus sin yz times y.
+
+640
+01:50:18,100 --> 01:50:35,100
+P, pi over 2, pi, 1, into z sub x, we are going to obtain z1, x'imiz arkadaşlar, pi bölü 2, 0 geliyor, doğru mu arkadaşlar? 0 bulduk.
+
+641
+01:50:38,100 --> 01:50:41,500
+Z'nin y'ye göre türevine bakalım.
+
+642
+01:50:49,524 --> 01:51:14,964
+Ok, so this is 0 sin yz times z over cosin xz times x plus sin yz times y. If you substitute coordinates of p point into z sub y, you are going to obtain
+
+643
+01:51:17,011 --> 01:51:20,891
+Y is pi.
+
+644
+01:51:24,891 --> 01:51:28,771
+Şurada şey geliyor mu arkadaşlar? Bir dakika. Sıfırdan farklı değer geliyor mu?
+
+645
+01:51:29,551 --> 01:51:30,692
+Hata yaptığım bir dakika.
+
+646
+01:51:31,692 --> 01:51:34,452
+Şurada sıfır olmaması lazım.
+
+647
+01:51:34,912 --> 01:51:36,072
+Is this 0 or not?
+
+648
+01:51:37,332 --> 01:51:40,231
+X is pi over 2.
+
+649
+01:51:40,551 --> 01:51:41,731
+So this is also 0.
+
+650
+01:51:41,731 --> 01:51:43,771
+This is also 0.
+
+651
+01:51:45,363 --> 01:51:47,604
+Okay, so this is also zero.
+
+652
+01:51:49,724 --> 01:51:53,663
+Y, pi, okay, so no derivation, not zero.
+
+653
+01:51:54,684 --> 01:51:56,083
+Sorry, sorry for that.
+
+654
+01:51:57,403 --> 01:52:00,503
+So we got indeterminat form.
+
+655
+01:52:01,644 --> 01:52:04,943
+Zero over zero, indeterminat form.
+
+656
+01:52:10,547 --> 01:52:13,547
+0 over 0 indeterminate form.
+
+657
+01:52:18,387 --> 01:52:31,587
+Okay, now, so, you need to create, in this case, you need to obtain explicit form of z, but it is not easy to obtain explicit form of z in such question.
+
+658
+01:52:32,507 --> 01:52:41,807
+Okay, that's why, so, it is impossible manually to compute these derivations. Okay, you need to obtain, you need to apply.
+
+659
+01:52:42,452 --> 01:52:55,452
+Definition of partial derivation, but in order to apply definition of partial derivation, you have to obtain explicit form of z, but it is not easy to obtain explicitly z.
+
+660
+01:52:58,836 --> 01:53:19,656
+O yüzden, yani burada z'yi açık bir şekilde yazmanız gerekir. Türevin tanımını kullanmanız gerekir. Onun için de açık bir şekilde z'yi, x ve y'ye bağlı olarak yazmanız gerekir. Bu arkadaşlar, zihnimden yazdım bu soruyu. Yani bu çok zor bir problem. Sınavda böyle bir şeyle karşılaşma ihtimaliniz sıfır. Tamam mı gençler?
+
+661
+01:53:22,260 --> 01:53:25,300
+Direkt there is no derivative diyemiyoruz.
+
+662
+01:53:25,820 --> 01:53:26,619
+[öğrenci].
+
+663
+01:53:27,659 --> 01:53:28,199
+Dikkat et.
+
+664
+01:53:28,659 --> 01:53:29,560
+Belirsizlik var.
+
+665
+01:53:30,520 --> 01:53:32,500
+Belirsizlik olma durumunda ne yapıyorduk?
+
+666
+01:53:32,500 --> 01:53:36,280
+Ben anlatmıştım dün ya da geçen hafta, ondan önceki hafta.
+
+667
+01:53:36,820 --> 01:53:40,420
+Eğer bir fonksiyonu türevini hesaplarken doğrudan türevini aldınız.
+
+668
+01:53:40,863 --> 01:54:01,083
+Türev fonksiyonunda verilen noktanın koordinatlarının yerine yazdığınızda bir belirsizlik geliyorsa 0 bölü 0. Ama 1 bölü 0 belirsizlik değil. 1 bölü 0 sonsuz veya eksi sonsuz. O zaman dersiniz ki türev yoktur. Ama 0 bölü 0 gibi bir durum varsa belirsizlik vardır. O zaman türevin tanımını kullanmak zorundasınız.
+
+669
+01:54:01,779 --> 01:54:07,659
+Ama türevin tanımını kullanmak için de açık bir şekilde z eşittir fx y'yi yazmak zorundasınız.
+
+670
+01:54:08,220 --> 01:54:16,640
+Ama burada kapalı bir şekilde verilen bu denklemde z'yi x'e ve y'ye bağlı olarak yazabilmeniz öyle kolay değil.
+
+671
+01:54:17,380 --> 01:54:24,460
+Yani yaklaşık olarak yazabilirsiniz. Belki analitik olarak tam kesin bir şekilde yazamazsınız.
+
+672
+01:54:24,927 --> 01:54:35,948
+O yüzden böyle bir soru sınavda gelmez. Anlaşıldı mı gençler? Eğer sınavda böyle bir şey yakalıyorsanız, büyük ihtimal hata yapmışsınız demektir.
+
+673
+01:54:37,248 --> 01:54:45,268
+Sıfır bölü sıfır şeklinde bir şey yakalıyorsanız sınavda yüzde doksan dokuz nokta dokuz dokuz dokuz yani yüzde yüz hata yapmışsınız demektir.
+
+674
+01:54:46,028 --> 01:54:51,688
+Ama bir bölü sıfır gelebilir. Bir bölü sıfır gelirse, sayı bölü sıfır o zaman türev yoktur dersiniz.
+
+675
+01:54:52,115 --> 01:54:53,676
+Herhalde anlaşıldı gençler.
+
+676
+01:54:56,655 --> 01:54:59,376
+Evet, kendinize iyi bakın gençler. Haftaya görüşmek üzere.

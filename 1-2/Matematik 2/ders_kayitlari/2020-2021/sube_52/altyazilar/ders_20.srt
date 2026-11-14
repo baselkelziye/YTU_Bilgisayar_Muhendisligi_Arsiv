@@ -1,0 +1,2039 @@
+1
+00:00:04,500 --> 00:00:14,759
+Evet, merhaba gençler. Kusura bakmayın, acil bir durum oldu. Derse geç katılmak zorunda kaldım. Sesim geliyor mu gençler?
+
+2
+00:00:24,179 --> 00:00:26,019
+Evet, birazcık daha bekleyelim.
+
+3
+00:00:52,371 --> 00:00:55,751
+Evet, birkaç dakika sonra başlayalım arkadaşlar dersinize.
+
+4
+00:01:03,188 --> 00:01:06,867
+Sınavınız nasıl geçti? Korular nasıldı gençler?
+
+5
+00:01:22,900 --> 00:01:26,960
+Sesim gelmiyor galiba. Sorular kötü müydü arkadaşlar, zor muydu?
+
+6
+00:01:38,260 --> 00:01:41,880
+Güzel. Umarım hepsini yapmışsınızdır.
+
+7
+00:01:51,859 --> 00:02:16,240
+Güzel arkadaşlar. Memnun oldum sizin adınıza. Ama finalde şöyle söyleyeyim. Mazeret sınavından eğer daha kolaysa, ya mazeret sınavı zorluğunda olacak bizim çözdüğümüz dünkü, ya da ondan çok az bir seviye daha zor olabilir. Çünkü ekstradan konular gelecek. Bunu bu şekilde değerlendirme yapabilirsiniz.
+
+8
+00:02:18,804 --> 00:02:31,804
+Şimdi biz arkadaşlar 11. haftadayız. Biz en son ne gördük? Şöyle bir Bologna Yıldız Edüter'i açalım. En son ben size ne anlatmıştım?
+
+9
+00:02:37,331 --> 00:03:02,412
+Türkçe konuşuyorum. Derste İngilizce konuşacağım. Merak etmeyin. İlk önce ne anlatmamız gerekiyor? Onlara bir bakalım. Biz size en son ne yaptık arkadaşlar? Gradiyenler, 3 değişkenli fonksiyonlar. Bunlardan bahsetmiş miydik arkadaşlar? Kapalı türev bahsettik. Yönlü türevler, gradyen vektör bahsettik.
+
+10
+00:03:02,768 --> 00:03:06,627
+Düzlemde yönlü türevler bahsetti.
+
+11
+00:03:06,707 --> 00:03:13,288
+Yönlü türevin yorumu, hesaplama ve gradiyenler, seviye eğrilerinin t-etleri ve gradiyenler, tamam.
+
+12
+00:03:13,947 --> 00:03:20,087
+3 değişkenli fonksiyonlar, 3 değişkenli fonksiyonların gradiyenlerinden falan da bahsettik arkadaşlar.
+
+13
+00:03:20,087 --> 00:03:24,867
+T-et düzlemler, evet en son t-et düzlemlerde kalmışız.
+
+14
+00:03:25,367 --> 00:03:28,647
+T-et düzlemler, onlardan bahsedersek arkadaşlar.
+
+15
+00:03:30,195 --> 00:03:36,936
+10. hafta bitecek. Biz zaten 11. haftadayız. Doğru mu? Bu hafta çok fazla bir şey işleyemeyeceğiz ama haftaya yakalarız. Merak etmeyin.
+
+16
+00:03:38,735 --> 00:03:39,415
+Evet.
+
+17
+00:03:39,415 --> 00:03:44,635
+Bugün, tanjent planlarına ulaşabilirsiniz.
+
+18
+00:03:44,635 --> 00:03:45,135
+Tamam.
+
+19
+00:03:45,135 --> 00:03:46,635
+Bir sürüye kadar.
+
+20
+00:03:47,756 --> 00:03:48,756
+Tamam.
+
+21
+00:03:48,756 --> 00:03:49,756
+Ben,
+
+22
+00:03:49,756 --> 00:03:52,747
+videoyu izleyelim.
+
+23
+00:04:20,531 --> 00:04:22,771
+Okay, can you see my whiteboard now?
+
+24
+00:04:31,891 --> 00:04:33,172
+Ok, let's make it.
+
+25
+00:04:36,532 --> 00:04:38,652
+Ok, today we are going to learn
+
+26
+00:04:38,652 --> 00:04:44,351
+how to obtain tangent planes.
+
+27
+00:04:49,971 --> 00:04:54,971
+Tangent Plane.
+
+28
+00:04:54,971 --> 00:04:57,971
+Now, given some surface,
+
+29
+00:05:05,331 --> 00:05:15,031
+some surface, by algebraic equation, by an implicit form.
+
+30
+00:05:17,951 --> 00:05:20,611
+Okay, so we consider implicit form.
+
+31
+00:05:22,932 --> 00:05:29,572
+So capital F of xyz is equal to zero.
+
+32
+00:05:29,711 --> 00:05:29,991
+Okay.
+
+33
+00:05:30,451 --> 00:05:39,991
+Now, so this is implicit form. We know explicit form. Explicit form is of the form z is equal to f of x, y. So z depends on x and y.
+
+34
+00:05:39,991 --> 00:05:45,251
+But let me sketch some surface, something like that.
+
+35
+00:05:46,951 --> 00:05:52,651
+So we have three-dimensional coordinate system.
+
+36
+00:05:53,076 --> 00:06:17,456
+Okay, so let's say this is our surface implicitly. Okay, so this is our surface. So corresponds to this capital F of x, y, z is equal to zero. So let me, let me take some point somewhere here.
+
+37
+00:06:23,603 --> 00:06:29,663
+We are looking for the equation of tangent plane at this point.
+
+38
+00:06:30,363 --> 00:06:35,764
+Okay, so let's say this is the point P, x0, y0, z0.
+
+39
+00:06:35,764 --> 00:06:43,504
+So given some point and point P, x0, y0, z0.
+
+40
+00:06:43,963 --> 00:06:45,144
+Okay, now.
+
+41
+00:06:45,588 --> 00:06:53,208
+So, how can we compute the equation of this plane, which is tangent to the surface at the point P?
+
+42
+00:06:53,208 --> 00:06:58,188
+Okay, now, so in order to compute...
+
+43
+00:07:02,963 --> 00:07:25,144
+In order to compute normal line, normal vector to this tangent plane, so we use gradient of F. So look at here. So as you see, this vector, so this vector, the normal vector, the normal vector, the normal vector, the normal vector, okay, in,
+
+44
+00:07:25,519 --> 00:07:49,639
+3-dimensional space. So this means that your normal vector contains three components. Okay, so as you see, one, two, three. So if you consider gradient of this capital F, okay, the normal vector, and let's say this is n, so n is parallel to
+
+45
+00:07:51,028 --> 00:08:00,008
+Grad, capital, gradient f. Okay, capital, uh, gradient of capital f. Okay, so we know this. So this means that
+
+46
+00:08:00,008 --> 00:08:07,708
+gradient of capital f is some multiple of
+
+47
+00:08:08,244 --> 00:08:18,964
+Normal vector, okay? So they are co-linear. Co-linear means they are parallel to each other, okay? Now we can write this. So lambda is some scalar.
+
+48
+00:08:19,964 --> 00:08:23,084
+Here. Now, taking into account this fact,
+
+49
+00:08:23,668 --> 00:08:50,988
+Bu, bu
+
+50
+00:08:51,635 --> 00:09:00,135
+So, gradient of capital F, ortogonal to, ortogonal to Px vector. So, Px vector.
+
+51
+00:09:01,135 --> 00:09:17,435
+Now, so this means that by the definition of orthogonality, Px vector dot product gradient F, results zero, scalar number. So, Px, x minus x zero.
+
+52
+00:09:18,772 --> 00:09:32,951
+y-y0, z-z0. We learned how to obtain px vector. px vector means it's a vector with initial point p and destination point x.
+
+53
+00:09:32,951 --> 00:09:43,312
+Okay, now dot product, gradient vector, so gradient vector, derivation of capital F with respect to x at the point p.
+
+54
+00:09:43,988 --> 00:09:55,628
+Derivation of capital F with respect to y, and value of this at the point P, and the value of derivation of capital F with respect to that at the point P.
+
+55
+00:09:56,348 --> 00:10:05,948
+Okay, now as you see, so this is equal to zero. This is equal to zero. If you do this, x minus x zero times,
+
+56
+00:10:08,567 --> 00:10:10,388
+as you see, this is formula.
+
+57
+00:10:10,964 --> 00:10:16,104
+But you don't need to memorize this formula. There are hundreds of formulas in mathematics.
+
+58
+00:10:17,144 --> 00:10:21,524
+Okay, so it is not so easy to memorize all formulas. Okay.
+
+59
+00:10:22,584 --> 00:10:28,744
+I think you should learn the philosophy behind each formula.
+
+60
+00:10:29,204 --> 00:10:33,784
+So, mathematics is this. Mathematics is to learn philosophy behind each formula.
+
+61
+00:10:34,403 --> 00:10:36,844
+Mathematics is not to memorize formulas.
+
+62
+00:10:37,364 --> 00:10:45,984
+Matematik formülleri ezberlemek değildir arkadaşlar. Matematik formüllerin arkasında yatan felsefeyi öğrenmek demektir. Tamam mı?
+
+63
+00:10:46,284 --> 00:11:00,204
+Okay, so this is the equation of tangent plane. Tangent plane to surface at the point B. Okay, let me introduce some examples about this.
+
+64
+00:11:05,331 --> 00:11:05,791
+Ok.
+
+65
+00:11:20,244 --> 00:11:40,244
+Okay, example. Let me find out some proper example for this. Consider this example. Compute, compute the equation of, equation of tangent plane.
+
+66
+00:11:42,227 --> 00:12:08,567
+Ok, so let me write here. So in the equation, generally you have this structure. Equation of plane, which is tangent, which is tangent to the surface, surface z is equal to f of xy, given by implicit form.
+
+67
+00:12:09,043 --> 00:12:30,203
+given by implicit form x square y plus z square x plus y square z is equal to 3 at the point 111.
+
+68
+00:12:30,203 --> 00:12:34,823
+Okay, now, so let's do this example.
+
+69
+00:12:35,412 --> 00:12:43,351
+So, first of all, so if you may forget your formula, first of all, just sketch some surface here.
+
+70
+00:12:46,251 --> 00:13:00,572
+And so by using this implicit equation, so we can obtain capital F of x, y, z, capital F of x, y, z, x square y plus z square x.
+
+71
+00:13:00,980 --> 00:13:21,980
+Let's write here 3x. Let's write here 3x. Z square x plus y square z minus 3x. Okay, now as you see we have some capital F depends on three independent variables. Now, so just...
+
+72
+00:13:22,932 --> 00:13:38,532
+So, x0, 1, 1, 1. So, let me use black color here. So, just sketch some plane here. And so, gradient f. So, we need gradient f. So, in fact, this is not normal vector.
+
+73
+00:13:39,028 --> 00:13:52,428
+Normal, this gradient f is parallel to normal vector. That's why it is, okay, you may write, you may sketch gradient f something like some normal vector. Okay, in fact, so this is not
+
+74
+00:13:53,011 --> 00:13:58,151
+Normal vektör. This gradient f is just parallel to normal vektör.
+
+75
+00:13:59,331 --> 00:14:03,851
+Dikkat edin, gradient f normal vektöre paralel, aşağı yönlü de olabilir ama aynı doğrultuda.
+
+76
+00:14:04,291 --> 00:14:09,011
+Ya da belli bir skaler katı olabilir ama ben normal vektörmüş gibi çiziyorum. Dikkatinizi çekerim.
+
+77
+00:14:09,812 --> 00:14:13,052
+Yani sıkıntı olmayacak. En nihayetinde nokta çarpımları sıfır olacak.
+
+78
+00:14:13,052 --> 00:14:17,771
+Now, so taking into account this, x is any point on the plane.
+
+79
+00:14:18,192 --> 00:14:32,672
+So, as you see, gradient f, so we need gradient f, so derivation of capital F with respect to x, 2xy plus z squared minus 3.
+
+80
+00:14:33,052 --> 00:14:39,172
+So, we need the value of, we need the value of this derivation at the point 111.
+
+81
+00:14:39,891 --> 00:14:43,331
+So, the answer is, is that correct? 0.
+
+82
+00:14:45,139 --> 00:14:55,259
+Now, derivation of capital F with respect to y, x square plus 2y z.
+
+83
+00:14:56,359 --> 00:15:02,039
+So, the value of this derivation at the point P, 111.
+
+84
+00:15:02,259 --> 00:15:05,219
+So, if you substitute 111, we got 3.
+
+85
+00:15:05,859 --> 00:15:11,779
+And derivation of capital F with respect to z, if you derivate this expression with respect to z.
+
+86
+00:15:12,659 --> 00:15:17,799
+Y, z, varibas, are constant terms.
+
+87
+00:15:17,799 --> 00:15:30,460
+Okay, now indicate 2zx plus y squared, and finally, we need to substitute coordinates of p into this obtained derivation.
+
+88
+00:15:31,179 --> 00:15:33,259
+Now, if you do this, again, you have this.
+
+89
+00:15:33,720 --> 00:15:37,960
+So, your gradient value at the point p,
+
+90
+00:15:38,511 --> 00:15:41,991
+...vector consists of three components.
+
+91
+00:15:42,551 --> 00:15:46,591
+Attention here, your gradient vector must contain three components.
+
+92
+00:15:46,871 --> 00:15:49,991
+Otherwise, you cannot obtain tangent plane.
+
+93
+00:15:49,991 --> 00:15:51,659
+Okay, now...
+
+94
+00:15:52,083 --> 00:16:19,183
+Px vector, so we know that Px vector, dot product, gradiant vector at the point P must be zero. If you do this equation, if you simplify this equation, Px vector, x minus 1, y minus 1, z minus 1. Attention here, coordinates of x, x, y, z, they are, okay, x point is any point on the plane. So dot product.
+
+95
+00:16:20,596 --> 00:16:22,756
+0, 3, 3.
+
+96
+00:16:22,936 --> 00:16:24,836
+Okay, now is equal to 0.
+
+97
+00:16:24,936 --> 00:16:25,876
+If you do this,
+
+98
+00:16:27,716 --> 00:16:28,496
+dot product,
+
+99
+00:16:29,756 --> 00:16:32,456
+3 times y minus
+
+100
+00:16:32,456 --> 00:16:33,776
+1.
+
+101
+00:16:34,451 --> 00:16:52,031
+3 times z minus 1 is equal to 0. If you do this, so y minus 1 plus z minus 1 is equal to 0. Y plus z is equal to 2. So as you see, x is arbitrary here.
+
+102
+00:16:52,436 --> 00:17:09,615
+X is arbitrary, but Y and Z coordinates hold this equation. X keyfi olacak burada. Y ve Z koordinatları ise Y artı Z eşittir. İki denklemini sağlayacak. Var mı soru sula? An equation about this solution.
+
+103
+00:17:22,996 --> 00:17:24,356
+Spatial case.
+
+104
+00:17:26,956 --> 00:17:32,996
+But as you see, first of all, I have introduced the general form of this formula.
+
+105
+00:17:33,756 --> 00:17:38,816
+So your surface is given by implicit form.
+
+106
+00:17:38,936 --> 00:17:40,215
+What about the case?
+
+107
+00:17:40,356 --> 00:17:46,936
+Your surface is given by explicit form.
+
+108
+00:17:48,051 --> 00:17:58,571
+Aten here. So what? But gradient of lowercase f so consists of two components. Okay, two components.
+
+109
+00:17:59,988 --> 00:18:24,875
+Bu, bu
+
+110
+00:18:24,915 --> 00:18:29,215
+As you see, we consider this capital F of x, y, z.
+
+111
+00:18:29,996 --> 00:18:41,795
+Now, if we do this, we know that x minus x, 0, times derivation of capital F at the point P, okay, and y minus y, 0.
+
+112
+00:18:42,115 --> 00:18:44,355
+We learn how to obtain this formula.
+
+113
+00:18:47,235 --> 00:18:49,395
+Z minus z, 0.
+
+114
+00:18:50,516 --> 00:18:55,856
+F sub z p, we know this, is equal to zero. We know how to obtain this.
+
+115
+00:18:57,596 --> 00:19:12,115
+Okay, take into account this fact, attention here. So, x minus x zero times derivation of capital F with respect to x here. So, here we got only this, okay.
+
+116
+00:19:15,443 --> 00:19:23,563
+Y minus Y zero, derivation of capital F with respect to Y, because of this explicit form, we can write this.
+
+117
+00:19:26,224 --> 00:19:35,644
+And Z minus Z zero, times derivation of capital F with respect to Z, here we got one, can you see that, is equal to zero.
+
+118
+00:19:38,124 --> 00:19:39,980
+Okay, so this is the...
+
+119
+00:19:41,875 --> 00:19:43,355
+Explicit form case.
+
+120
+00:19:43,655 --> 00:19:44,496
+Okay, example.
+
+121
+00:19:46,596 --> 00:20:08,855
+Now, so compute, compute the equation of, equation of plane, which is tangent, which is tangent to the surface.
+
+122
+00:20:10,740 --> 00:20:14,740
+given by
+
+123
+00:20:14,740 --> 00:20:16,279
+explicit form
+
+124
+00:20:24,852 --> 00:20:41,632
+Z is equal to f of xy, x squared plus yx plus y squared at the point, at the point, attention here, 1 minus 1.
+
+125
+00:20:42,412 --> 00:20:42,791
+Okay.
+
+126
+00:20:50,612 --> 00:20:59,811
+So, in such cases, solution, you don't need to memorize formulas. I think it is better to obtain F, implicit form.
+
+127
+00:21:02,392 --> 00:21:04,071
+Let's say this is z.
+
+128
+00:21:06,152 --> 00:21:13,731
+So, you can write this x squared plus yx plus y squared minus z.
+
+129
+00:21:13,731 --> 00:21:15,872
+So, this is x zero.
+
+130
+00:21:16,352 --> 00:21:35,511
+Bu, y'o, but we need z'o, z'o is equal to, by using this explicit form, f of x'o, y'o, and the answer is minus 1. Is that correct? Now z'o is minus 1. Now, so in fact,
+
+131
+00:21:37,236 --> 00:22:02,316
+Bu, bu
+
+132
+00:22:04,084 --> 00:22:07,763
+Plane, so we know that, gradient f,
+
+133
+00:22:10,923 --> 00:22:29,403
+dot product, p x, 0. We know this. Let's compute gradient f, derivation of capital F with respect to x, 2x plus y, substitute the point p,
+
+134
+00:22:30,451 --> 00:22:52,572
+x1, y-1, so 1. Derivation of capital F with respect to y, x plus 2y. Now, if you substitute coordinate of p, you are going to obtain x1, y is minus 1, minus 1.
+
+135
+00:22:58,644 --> 00:23:14,644
+First of all, we say that that variable depends on x and y by the rule f. Can you see that? That is equal to f of x y. By using this explicit form and by using this...
+
+136
+00:23:15,155 --> 00:23:17,155
+Bu bir noktada bir noktada var.
+
+137
+00:23:17,155 --> 00:23:21,155
+Y'e bir noktada var.
+
+138
+00:23:21,155 --> 00:23:23,155
+Ve bu noktada var.
+
+139
+00:23:23,155 --> 00:23:38,091
+Y'e bir noktada var.
+
+140
+00:23:38,516 --> 00:23:43,116
+p point, so minus 1. I think everything is clear now.
+
+141
+00:23:44,276 --> 00:23:45,736
+Oh, okay. Is that 1?
+
+142
+00:23:47,976 --> 00:23:53,916
+x yerine 1, y yerine x'i 1 yazarsak, evet, 1 geliyor, doğru, haklısın.
+
+143
+00:23:56,156 --> 00:24:02,396
+İşlem hatası yapmış. Okay, so correct that 1. That 0 value is 1, not minus 1.
+
+144
+00:24:03,092 --> 00:24:27,592
+Okay, thank you for correcting my mistake. Okay, now, so by using this fact, so 1 minus 1 minus 1 dot product Px, x minus x0, y minus y0, z minus z0,
+
+145
+00:24:29,011 --> 00:24:37,991
+is equal to zero, x minus one, minus y minus one, minus z plus one is equal to zero.
+
+146
+00:24:38,911 --> 00:24:45,791
+Now, as it is and is simplified, x minus y minus z is equal to plus one.
+
+147
+00:24:46,651 --> 00:24:48,991
+So, this is our equation.
+
+148
+00:24:51,051 --> 00:24:56,271
+An equation, herhalde anlaşıldı.
+
+149
+00:25:02,996 --> 00:25:08,296
+Anlamayan var mı gençler? Burada olanlar burada yazabilir mi? Merak ettim kaç kişi şu an derste.
+
+150
+00:25:17,044 --> 00:25:17,504
+Güzel.
+
+151
+00:25:32,084 --> 00:25:41,163
+Evet gençler. Limit sorusu nasıldı gençler? Limit sorusu nasıldı? Limit, süreklilik, tanım bölgesi vardı değil mi sınavda?
+
+152
+00:26:07,155 --> 00:26:10,716
+Kolay mıydı soru? Limit sorusu, süreklilik sorusu.
+
+153
+00:26:37,619 --> 00:26:43,319
+Evet, şimdi arkadaşlar, linearleştirmeden bahsedeceğim.
+
+154
+00:26:43,460 --> 00:26:45,699
+Let me talk about linearization.
+
+155
+00:27:05,107 --> 00:27:06,107
+Evet.
+
+156
+00:27:06,107 --> 00:27:08,107
+As is well known,
+
+157
+00:27:08,107 --> 00:27:10,107
+once upon a time,
+
+158
+00:27:10,107 --> 00:27:13,107
+most of the people usually think of that
+
+159
+00:27:13,107 --> 00:27:16,107
+the surface of our Earth is plain.
+
+160
+00:27:16,107 --> 00:27:17,107
+OK.
+
+161
+00:27:17,107 --> 00:27:20,107
+But from the mathematical point of view
+
+162
+00:27:20,107 --> 00:27:23,107
+this misconception is true.
+
+163
+00:27:23,107 --> 00:27:24,107
+OK.
+
+164
+00:27:24,107 --> 00:27:27,107
+In fact, this misconception is related
+
+165
+00:27:27,107 --> 00:27:28,779
+to linearization method.
+
+166
+00:27:29,268 --> 00:27:55,388
+Arkadaşlar, yani bir zamanlar insanların o dünya yüzeyi düzdür diye düşünüyorlardı. Aslında bu düşüncenin, yanlış düşüncenin arkasında linereleştirme mantığı yatar. Neden diyeceksiniz? Çünkü siz belirli bir yüzeye, bir nesnenin yüzeyine yeterince yakın pozisyonda bulunursanız ne olur arkadaşlar? O yüzey düzmüş gibi görünür. Aslında linereleştirmenin mantığı da budur arkadaşlar. Tamam mı?
+
+167
+00:27:55,731 --> 00:27:59,011
+Okay, let me talk about linearization.
+
+168
+00:28:05,203 --> 00:28:14,083
+So, if, first of all, consider the spatial case, single variable case, let's consider single variable case.
+
+169
+00:28:21,460 --> 00:28:28,480
+Now, in the case of single variable function, y is equal to f of x, let Mr. Cage's sum.
+
+170
+00:28:33,428 --> 00:28:36,468
+So, look at here.
+
+171
+00:28:39,067 --> 00:28:41,107
+Let me choose some point here.
+
+172
+00:28:41,327 --> 00:28:43,448
+Okay, so consider this point.
+
+173
+00:28:43,908 --> 00:28:45,428
+Let's say this is A.
+
+174
+00:28:49,811 --> 00:28:57,071
+Okay, now let's compute derivation of this function at the point a.
+
+175
+00:28:57,071 --> 00:29:10,771
+So we choose limit as x goes to a, as x goes to a, f of x minus f of a over x minus a.
+
+176
+00:29:10,891 --> 00:29:11,531
+We know this.
+
+177
+00:29:12,031 --> 00:29:13,963
+Okay, from the definition of...
+
+178
+00:29:14,932 --> 00:29:19,192
+Derivation, we can write this. Let's say this is delta f.
+
+179
+00:29:26,036 --> 00:29:27,916
+Let's say this is delta x.
+
+180
+00:29:30,396 --> 00:29:53,276
+We know that delta f over delta x, we may regard this average, average rate of, this is average rate of change of f.
+
+181
+00:29:53,683 --> 00:30:17,364
+over, interval ax or, or, xa. So we know that x value may be at right hand side of a or at the left hand side of a. Okay. Now, so if you consider this limit case, so let me use blue color here.
+
+182
+00:30:20,948 --> 00:30:46,220
+Bu, bu
+
+183
+00:30:46,451 --> 00:31:07,112
+ax veya x-a aralığı üzerinde ortalama değişim oranıdır. Siz limit durumuna geçerseniz, yani limit x-a'ya yaklaşırken sürekli yaklaşıyor demek, durmaksızın yaklaşıyor demek. Bu durumda da ne olur arkadaşlar? Aslında siz yüzeye yeterince yaklaşıyorsunuz demektir. Şurada bakın yeterince yaklaşıyorum. Gördünüz mü?
+
+184
+00:31:07,700 --> 00:31:26,700
+Gittikçe yaklaşıyorum. Nokta artık bir doğruymuş gibi algılanabilir. Yani ben oradaki o kırmızı çizgiyi bir nokta gibi düşünebilirim. Noktanın bir tanımı yoktur. Matematiksel tanımı yoktur. Bu yüzden noktayı siz herhangi yeterince küçük bir nesne olarak düşünebilirsiniz. Bu özel durumda ben oradaki noktayı...
+
+185
+00:31:26,771 --> 00:31:36,831
+Ne yapabilirim? Bir t doğruymuş gibi düşünebilirim arkadaşlar. Tamam. O da ancak limit durumunda gerçekleşir. Yani limit x a'ya yaklaşırken.
+
+186
+00:31:37,251 --> 00:31:46,971
+Şimdi bir an için yaklaştım, yaklaştım, yaklaştım. Belki yerden sonra yaklaşmayı keseyim. Tamam. Okey. Now let's try to approach a f of a point.
+
+187
+00:31:46,971 --> 00:31:53,971
+Okey. Let's try to zoom a f of a point. Something like that. LTC. Okey. Now, but after...
+
+188
+00:32:17,683 --> 00:32:36,943
+Delta f bölü delta x. So we can write this whenever x point sufficiently close to a point. So we can write this approximation relation. Okay, instance, then it's rate of change of f approximates.
+
+189
+00:32:37,491 --> 00:32:59,471
+Average rate of change of f. Whenever x is sufficiently close, a. So we can write this. Dikkat edin arkadaşlar, libiti kaldırırsam, belli bir süre sonra libiti kaldırdım. Ondan sonra neyi buluyorum? Ortalama değişim oranının anlık değişim oranına yaklaştığını görebiliyorum. Buradan işler dışlar yapalım.
+
+190
+00:33:02,067 --> 00:33:27,428
+So, you are going to obtain this f prime of a times x minus a, delta x, x minus a. So, approximates delta f, f of x minus f of a. If you simplify this, f of x approximates f of a plus f prime of a.
+
+191
+00:33:27,827 --> 00:33:46,968
+times delta x, x minus a. So we can write this whenever x is sufficiently close a. Now, so this is the linearization. This is the linearization of f at the point a. So everyone knows this from last semester.
+
+192
+00:33:47,571 --> 00:34:09,072
+Linerizasyon of f at the point a. So attention here. So whenever x is sufficient to close a, this means that you sufficiently zoom on this graph. Okay. Now in that case, as you see, so if you sufficiently zoom on this graph, so your non-linear graph looks like some line. Can you see that?
+
+193
+00:34:11,284 --> 00:34:17,284
+So, in fact, the misconception of ancient people is based on this...
+
+194
+00:34:18,284 --> 00:34:19,284
+Oh, sorry.
+
+195
+00:34:26,612 --> 00:34:31,932
+Misconception of ancient people is based on this linearization method.
+
+196
+00:34:32,832 --> 00:34:39,912
+Dikkatin arkadaşlar, o eski insanların yanlış algısı aslında lineerleştirme mantığının üzerine kurgulanmıştır.
+
+197
+00:34:40,652 --> 00:34:44,271
+Aslında kısmen doğru diyebiliriz. Tamamıyla yanlış diyemeyiz.
+
+198
+00:34:44,851 --> 00:34:52,152
+Evet, ne yapıyoruz arkadaşlar? Buradan hareket ederek ben ne yapabilirim? Birçok uygulamalar yapabiliyordum.
+
+199
+00:34:52,291 --> 00:35:01,591
+Okay, if I use this linearization method, we can compute some number approximately. Okay, that is the application of linearization.
+
+200
+00:35:02,452 --> 00:35:07,412
+Now, what about the case? What about the case? Let me sketch here.
+
+201
+00:35:14,228 --> 00:35:15,448
+What about the case?
+
+202
+00:35:17,148 --> 00:35:21,547
+That is equal to f of x, y.
+
+203
+00:35:22,168 --> 00:35:30,108
+So as you see, but in this case, your variable depends on single independent variable.
+
+204
+00:35:30,108 --> 00:35:31,387
+We have these three.
+
+205
+00:35:32,148 --> 00:35:38,728
+But in this case, you have two independent variables.
+
+206
+00:35:42,612 --> 00:35:47,291
+But in this case, so let me sketch, surface.
+
+207
+00:35:49,811 --> 00:35:54,332
+So x, y, z.
+
+208
+00:35:54,791 --> 00:35:56,672
+Let's sketch some surface.
+
+209
+00:35:56,952 --> 00:35:59,132
+As you see, this surface is not plain.
+
+210
+00:36:00,051 --> 00:36:08,711
+But if you choose some point on the plane, on the surface, sorry, on the surface, p, x0,
+
+211
+00:36:09,523 --> 00:36:12,283
+y 0, z 0.
+
+212
+00:36:13,384 --> 00:36:27,703
+Now, so if you sufficiently zoom on this point P, your point is, looks like, okay, your point is, some point, okay, something like point on the plane.
+
+213
+00:36:28,023 --> 00:36:29,943
+Okay, so this is tangent plane.
+
+214
+00:36:31,703 --> 00:36:32,743
+Daha da küçük çizeyim.
+
+215
+00:36:33,163 --> 00:36:34,923
+Daha da küçük çizebilirsiniz şurada.
+
+216
+00:36:39,795 --> 00:37:05,635
+Okay, now as you see, so this means that, so we have that variable, so delta z, let me write here delta z, f of xy minus f of x0, y0 here. So you have some xy here, something like that here.
+
+217
+00:37:06,291 --> 00:37:13,092
+x p point x y, so here p point x zero y zero z zero, okay.
+
+218
+00:37:14,092 --> 00:37:33,032
+So we have this delta z, and so we have derivation of that with respect to x and derivation of that with respect to y, so we can write this delta z approximates f of x, f sub x, sorry.
+
+219
+00:37:34,159 --> 00:37:42,579
+The point P, delta x, plus f sub y, p, delta y.
+
+220
+00:37:43,519 --> 00:37:54,279
+So where, delta x, x minus x zero, delta y, is equal to y minus y zero.
+
+221
+00:37:54,779 --> 00:37:57,179
+Okay, we can write this approximation relation.
+
+222
+00:37:58,339 --> 00:37:59,880
+So this is called differential.
+
+223
+00:38:01,940 --> 00:38:06,099
+Total Differential, ok? Differential.
+
+224
+00:38:10,132 --> 00:38:12,672
+But in this case, there is no limit process.
+
+225
+00:38:13,672 --> 00:38:15,452
+Here, no limit process.
+
+226
+00:38:18,032 --> 00:38:19,832
+No limit process.
+
+227
+00:38:20,132 --> 00:38:22,112
+Differential approximation relation.
+
+228
+00:38:23,872 --> 00:38:25,811
+Differential approximation method.
+
+229
+00:38:27,992 --> 00:38:31,132
+No limit process here in this case.
+
+230
+00:38:31,412 --> 00:38:36,851
+But if you consider limit process, we are going to obtain, we are going to write this dz.
+
+231
+00:38:51,092 --> 00:38:53,731
+But in this case, x, y pair,
+
+232
+00:38:55,572 --> 00:38:56,771
+approximates,
+
+233
+00:38:57,811 --> 00:39:00,612
+approximates x0, y0.
+
+234
+00:39:01,331 --> 00:39:03,971
+Okay, from everywhere.
+
+235
+00:39:04,372 --> 00:39:07,412
+Okay, so this is the total differentials.
+
+236
+00:39:08,051 --> 00:39:09,572
+But this is the list.
+
+237
+00:39:09,572 --> 00:39:11,572
+Okay, this is the total differentials.
+
+238
+00:39:18,835 --> 00:39:41,775
+Ok, by using this differential approximation relation, so we can obtain some upper linearization method. Delta z, let's try delta z, f of xy minus f of x0 y0, approximates f sub x. Ok, sorry for that. Arkadaşlar bir dakika bekleyin.
+
+239
+00:40:11,411 --> 00:40:36,912
+Okay, now by using differential approximation relation, we can obtain linearization of z, f of xy, we know that delta z, f of xy minus f of x0, y0, approximates f sub xp times delta x, x minus x0, plus f sub y, p times delta y, y minus y0.
+
+240
+00:40:37,460 --> 00:41:04,940
+Now, our goal is obtain some linear surface, which is approximating non-linear surface f of xy. Look at here, fx0y0 plus f sub xp x minus x0 plus f sub yp times y minus y0.
+
+241
+00:41:05,280 --> 00:41:07,080
+Okay, so this is called
+
+242
+00:41:07,080 --> 00:41:11,240
+Linearization of
+
+243
+00:41:11,240 --> 00:41:14,760
+Linearization
+
+244
+00:41:14,760 --> 00:41:18,080
+Linearization of
+
+245
+00:41:18,080 --> 00:41:24,820
+Z is equal to f of xy, which is nonlinear surface
+
+246
+00:41:24,820 --> 00:41:27,540
+At the point
+
+247
+00:41:29,204 --> 00:41:32,044
+Y0, x0, y0.
+
+248
+00:41:32,044 --> 00:41:34,864
+So, attention here, left-hand side.
+
+249
+00:41:35,864 --> 00:41:38,084
+Okay, in fact, so this is the linearization.
+
+250
+00:41:38,084 --> 00:41:39,684
+Sorry, sorry, sorry for that.
+
+251
+00:41:40,724 --> 00:41:42,204
+So, this is the linearization.
+
+252
+00:41:42,204 --> 00:41:45,124
+Let me use different color here.
+
+253
+00:41:45,124 --> 00:41:47,504
+Right-hand side is the linearization.
+
+254
+00:41:48,824 --> 00:41:49,664
+Okay.
+
+255
+00:41:50,504 --> 00:41:51,324
+Yeah.
+
+256
+00:41:52,664 --> 00:41:55,943
+Okay, as you see, left-hand side.
+
+257
+00:41:56,244 --> 00:42:22,364
+z is equal to f of xy, left hand side is non-linear surface, non-linear surface, looks like, looks like some linear surface, some plane, okay? Whenever xy pairs is sufficiently close, is sufficiently close,
+
+258
+00:42:24,659 --> 00:42:26,239
+x0, y0.
+
+259
+00:42:26,900 --> 00:42:27,920
+Dikkat edin arkadaşlar.
+
+260
+00:42:28,059 --> 00:42:33,420
+x0, y0 ikilisine yeterince yakın seçerseniz x ve y'leri, o zaman ne olur?
+
+261
+00:42:33,907 --> 00:42:57,747
+Sizin linear olmayan, doğrusal olmayan yüzeyiniz düz bir, yanına olacak arkadaşlar, doğrusaldan kastım yani ne demek? Düzlem. Düzlemsel olmayan yüzeyiniz düzdenmiş gibi davranacak. Yani siz onu dünya yüzeyini düz gibi zannediyeceksiniz. Zaten öyle olacak. Bakın, gördünüz mü? Şuraya dikkat edin. Evet, herhalde anlaşıldı.
+
+262
+00:42:59,699 --> 00:43:05,579
+Bunu kullanarak arkadaşlar biz birçok yaklaşık değer hesaplaması yapabiliriz.
+
+263
+00:43:05,579 --> 00:43:11,239
+Mesela example, basit bir örnekle izah edelim.
+
+264
+00:43:11,239 --> 00:43:13,199
+Okay, compute.
+
+265
+00:43:20,755 --> 00:43:22,435
+An approximate value
+
+266
+00:43:29,523 --> 00:43:30,763
+value 4
+
+267
+00:43:39,059 --> 00:43:42,259
+Ne olsun, 9'a tamamlamak istiyorum arkadaşlar.
+
+268
+00:43:45,259 --> 00:43:46,960
+Ya da, yapalım.
+
+269
+00:44:04,755 --> 00:44:09,516
+By using linear approximation method or differential approximation method.
+
+270
+00:44:10,175 --> 00:44:14,355
+By using linear approximation or differential approximation method.
+
+271
+00:44:15,795 --> 00:44:18,036
+Evet, böyle bir soru arkadaşlar.
+
+272
+00:44:19,875 --> 00:44:23,056
+Ara vermiyorum gençler. Zaten geç başladık derse.
+
+273
+00:44:23,755 --> 00:44:25,855
+Saat 11'e kadar devam edelim.
+
+274
+00:44:28,692 --> 00:44:31,491
+Böyle bir soru arkadaşlar. Sizce ne yapabiliriz?
+
+275
+00:44:31,551 --> 00:44:43,851
+Okay, so do you think, what can we do in order to compute an approximate value for this number by using linear approximation method or differential approximation method?
+
+276
+00:44:45,231 --> 00:44:47,672
+What can we do? Think about that.
+
+277
+00:44:48,551 --> 00:44:53,652
+First of all, you need to pick up some point, proper point.
+
+278
+00:44:54,356 --> 00:44:58,716
+ve bir kısım, bir kısım, bir kısım.
+
+279
+00:45:04,500 --> 00:45:07,500
+Evet. Do you think what is our function?
+
+280
+00:45:11,251 --> 00:45:13,251
+Size bu ne olacak arkadaşlar? Solution.
+
+281
+00:45:16,192 --> 00:45:22,172
+This is our function. X square plus y square.
+
+282
+00:45:22,451 --> 00:45:31,592
+As you see, its surface, this is non-linear surface, not linear. Non-linear surface.
+
+283
+00:45:37,907 --> 00:45:41,907
+Şimdi, bu noktada bir noktada,
+
+284
+00:45:41,907 --> 00:45:53,931
+bir noktada,
+
+285
+00:45:57,139 --> 00:46:19,400
+Ok, ok, that's good. So, this is 3, 4. So, for this, if you substitute this coordinate into rule of function, you are going to obtain some value without computing, without using some calculator. That's good.
+
+286
+00:46:25,056 --> 00:46:27,556
+This is x0, this is y0.
+
+287
+00:46:28,635 --> 00:46:43,395
+Now, we know that delta z approximates f sub xp plus f sub yp.
+
+288
+00:46:43,576 --> 00:46:44,235
+We know this.
+
+289
+00:46:44,915 --> 00:46:45,436
+Ah, sorry.
+
+290
+00:46:46,016 --> 00:46:47,215
+Do not forget to put.
+
+291
+00:46:51,027 --> 00:46:52,047
+Delta X
+
+292
+00:46:55,668 --> 00:47:03,068
+Delta x plus f sub y p times delta y.
+
+293
+00:47:03,827 --> 00:47:10,448
+Now, by using this, z minus z zero, z zero, five.
+
+294
+00:47:12,367 --> 00:47:15,668
+So, we need to derivate f sub x.
+
+295
+00:47:16,228 --> 00:47:18,008
+So, we need to obtain f sub x.
+
+296
+00:47:18,188 --> 00:47:21,867
+Derivation of this, 2x over 2 times.
+
+297
+00:47:22,324 --> 00:47:25,903
+square root of x square plus y square.
+
+298
+00:47:26,584 --> 00:47:35,284
+So we need to compute value of this derivation at the point, at the point p.
+
+299
+00:47:36,144 --> 00:47:37,804
+x3, y4 arkadaşlar.
+
+300
+00:47:40,923 --> 00:47:45,144
+3 bölü 5. Ben her şekilde bunu hesaplarsanız,
+
+301
+00:47:51,123 --> 00:47:52,343
+4 bölü 5.
+
+302
+00:47:53,903 --> 00:48:00,583
+Okay, if you substitute coordinates of p into f sub y, we are going to obtain this.
+
+303
+00:48:00,583 --> 00:48:13,823
+Now, so this is 3 over 5 times delta x, x minus x minus x zero three plus.
+
+304
+00:48:14,835 --> 00:48:20,055
+4 over 5 times, delta y, y minus y zero, 4.
+
+305
+00:48:21,075 --> 00:48:39,115
+Now, as you see, z is equal to, z is f of x, y, z is f of x, y, approximates, let me use this, approximates 5 plus 3 over 5 times x minus 3.
+
+306
+00:48:39,699 --> 00:48:44,779
+4 over 5 times y minus 4.
+
+307
+00:48:45,659 --> 00:48:48,099
+Okay, look at here, so attention here.
+
+308
+00:48:48,499 --> 00:48:55,279
+If you write here some z, so this is tangent line, can you see that?
+
+309
+00:48:55,759 --> 00:49:03,059
+Tangent line, not line, tangent plane at the point p.
+
+310
+00:49:04,059 --> 00:49:07,239
+In fact, this is also linearization of
+
+311
+00:49:07,635 --> 00:49:08,876
+linearization
+
+312
+00:49:08,876 --> 00:49:11,155
+of
+
+313
+00:49:11,155 --> 00:49:13,396
+f at the point p.
+
+314
+00:49:13,776 --> 00:49:15,556
+Okay, now, so if you
+
+315
+00:49:15,556 --> 00:49:17,096
+substitute f of
+
+316
+00:49:17,096 --> 00:49:21,696
+so look at here, so our actual number
+
+317
+00:49:21,696 --> 00:49:23,135
+given in the equation here
+
+318
+00:49:23,135 --> 00:49:25,356
+f of this
+
+319
+00:49:25,356 --> 00:49:27,956
+f of 3.01
+
+320
+00:49:27,956 --> 00:49:29,836
+and
+
+321
+00:49:29,836 --> 00:49:31,635
+3.99
+
+322
+00:49:31,635 --> 00:49:34,096
+approximates
+
+323
+00:49:34,612 --> 00:49:51,392
+5 plus 3 over 5 times 3.01 minus 3 plus 4 over 5 times y is 3.99 minus 4.
+
+324
+00:49:52,211 --> 00:50:00,332
+Okay, now if you do this calculations and we got this.
+
+325
+00:50:01,523 --> 00:50:03,115
+ve katlı,
+
+326
+00:50:06,931 --> 00:50:13,451
+Tamam mı gençler? Bunları yapın, bulun. Var mı da şimdiden bir yer?
+
+327
+00:50:14,831 --> 00:50:19,331
+Aniquation. Basit bir soru ama bize çok şey anlatıyor.
+
+328
+00:50:21,552 --> 00:50:24,092
+Hocam ben anlamadım dediğiniz yer var mı?
+
+329
+00:50:24,092 --> 00:50:26,532
+Aniquation about this solution.
+
+330
+00:50:30,452 --> 00:50:55,972
+Yok galiba gençler. Lineerleştirmeyi de anlattım. Mantığını umarım anlamışsınızdır. Konuları erken bitirip yine soru çözmek istiyorum gençler. Öyle çok soru çözmek tamam güzel ama konuyu öğrendiysek çok da hiç yapmanın anlamı yok. Sınava yakın zamanda yine bahsedeceğiz gençler. Evet. Herhalde anlaşıldı.
+
+331
+00:50:59,668 --> 00:51:09,768
+Şimdi arkadaşlar, lokal ekstremum değerlerden falan bahsedeceğim. Onlar bizim için önemli. Oradan sınav da geliyor finalde.
+
+332
+00:51:09,768 --> 00:51:17,168
+Şimdi ekstremum değerlerden bahsedeceğim. Bu bir genel soru. Ekstremum değerlerden bahsedeceğim.
+
+333
+00:51:35,668 --> 00:51:36,908
+Saddle Points.
+
+334
+00:51:38,428 --> 00:51:41,408
+Saddle Points, semer noktaları.
+
+335
+00:51:42,148 --> 00:51:48,688
+Eğer noktası veya, evet o bildiğiniz adların üzerine konulan, eğerle alakalı arkadaşlar.
+
+336
+00:51:49,948 --> 00:51:51,428
+Semerle alakalı. Evet.
+
+337
+00:51:52,468 --> 00:51:52,788
+Okay.
+
+338
+00:51:53,048 --> 00:51:55,668
+First of all, let me talk about some...
+
+339
+00:51:59,411 --> 00:52:01,071
+Some notion, open region.
+
+340
+00:52:01,491 --> 00:52:03,191
+So what does it mean, open region?
+
+341
+00:52:04,191 --> 00:52:06,831
+So, for example, open region.
+
+342
+00:52:07,371 --> 00:52:08,411
+So consider this.
+
+343
+00:52:10,311 --> 00:52:12,671
+Open ball, let me write here, open ball.
+
+344
+00:52:13,491 --> 00:52:14,551
+Open ball.
+
+345
+00:52:15,071 --> 00:52:17,231
+So we can write also, open ball.
+
+346
+00:52:18,071 --> 00:52:18,351
+So,
+
+347
+00:52:21,171 --> 00:52:23,111
+So, on the plane,
+
+348
+00:52:23,111 --> 00:52:24,931
+So this is open ball.
+
+349
+00:52:27,160 --> 00:52:37,160
+bir noktada,
+
+350
+00:52:25,684 --> 00:52:53,452
+Bu, bu
+
+351
+00:52:54,195 --> 00:52:57,096
+Y2 plus y minus y0,
+
+352
+00:52:58,135 --> 00:53:00,056
+square, smaller than,
+
+353
+00:53:00,775 --> 00:53:02,275
+smaller than some,
+
+354
+00:53:03,056 --> 00:53:04,375
+okay, r2.
+
+355
+00:53:04,615 --> 00:53:06,855
+Okay, now, so this is open ball.
+
+356
+00:53:07,976 --> 00:53:09,096
+Now, if you consider,
+
+357
+00:53:10,415 --> 00:53:11,395
+if you include,
+
+358
+00:53:16,628 --> 00:53:18,604
+Bu, bu
+
+359
+00:53:24,500 --> 00:53:27,480
+Now, in this case, we consider this.
+
+360
+00:53:30,599 --> 00:53:37,619
+X minus X zero square plus Y minus Y zero square.
+
+361
+00:53:38,219 --> 00:53:41,739
+But in this case, we put equality case here, R square.
+
+362
+00:53:42,519 --> 00:53:44,639
+Okay, now, so this is closed ball.
+
+363
+00:53:45,204 --> 00:53:53,984
+Why do we keep concept open disk? In fact, some people say open disk, some people use open disk, closed disk. Doesn't matter.
+
+364
+00:53:55,044 --> 00:53:55,324
+Okay.
+
+365
+00:53:56,524 --> 00:53:59,664
+Now, let me talk about local extremum values.
+
+366
+00:54:00,444 --> 00:54:01,124
+Local
+
+367
+00:54:01,124 --> 00:54:04,664
+extremum
+
+368
+00:54:04,664 --> 00:54:08,504
+values.
+
+369
+00:54:14,291 --> 00:54:25,171
+Ok, given some function, given a function, explicitly, that is equal to f of x, y,
+
+370
+00:54:27,291 --> 00:54:31,991
+defined on, defined on some region,
+
+371
+00:54:35,795 --> 00:54:38,995
+Define on region R.
+
+372
+00:54:39,955 --> 00:54:49,235
+And so we choose, okay, we take some point AB from this domain of F, okay?
+
+373
+00:54:52,947 --> 00:55:18,148
+Now we say that the point, the point AB, so this is very important definition, the point AB is called, is called a local maximum point if and only if
+
+374
+00:55:20,755 --> 00:55:34,556
+If and only if, for all, for all x, y pairs living in domain of f, okay, f of x, y,
+
+375
+00:55:40,500 --> 00:55:44,699
+Bigger than or equal to, oh sorry.
+
+376
+00:55:48,307 --> 00:55:51,307
+f of ab, let me write, f of ab,
+
+377
+00:55:52,807 --> 00:55:56,127
+bigger than or equal to f of
+
+378
+00:55:56,127 --> 00:55:58,107
+x, y.
+
+379
+00:55:59,527 --> 00:56:01,768
+Okay, so this is the definition of
+
+380
+00:56:01,768 --> 00:56:04,007
+local max. Similarly,
+
+381
+00:56:04,748 --> 00:56:06,648
+similarly, we can write this,
+
+382
+00:56:09,648 --> 00:56:12,587
+the point, so this is the first definition,
+
+383
+00:56:15,827 --> 00:56:42,527
+And similarly, AB is local maximum, local minimum, sorry, is said to be local minimum, a local minimum point, if and only if, f of for all, but we need to put it for all, x, y,
+
+384
+00:56:43,764 --> 00:56:52,504
+living in R, F of AB, smaller than or equal to F of X, Y.
+
+385
+00:56:53,044 --> 00:56:56,504
+So this is the definition of local minimum point.
+
+386
+00:56:57,284 --> 00:57:02,724
+Now let's talk about these definitions by using some figure.
+
+387
+00:57:05,464 --> 00:57:10,064
+For example, you have some surface, something like that.
+
+388
+00:57:11,347 --> 00:57:12,347
+Evet.
+
+389
+00:57:12,347 --> 00:57:13,347
+So,
+
+390
+00:57:13,347 --> 00:57:14,347
+here
+
+391
+00:57:14,347 --> 00:57:17,347
+this is the local max.
+
+392
+00:57:30,228 --> 00:57:57,260
+AB'ye, bu durumda A1'ye, B1'ye, bu da A1'ye, bu da A1'ye, bu da A1'ye, bu da A1'ye, bu da A1'ye, bu da A1'ye, bu da A1'ye, bu da A1'ye, bu da A1'ye, bu da A1'ye, bu da A1'ye, bu da A1'ye, bu da A1'ye, bu da A1'ye, bu da A1'ye, bu da A1'ye, bu da A1'ye, bu da A1'ye, bu da A1'ye, bu da A1'ye, bu da A1'ye, bu da A1'ye, bu da A1'ye, bu da A1'ye, bu da A1'ye, bu da A1'ye, bu da A1'ye, bu da A1'ye, bu da A1'ye, bu da A
+
+393
+00:57:58,612 --> 00:58:25,612
+Zf'a1, v1, ok, this distance here, local maximum, zf'a1, v1, local maximum value, local maximum value, ok, so a local maximum value, so here, let me use different color,
+
+394
+00:58:42,099 --> 00:58:42,619
+Okay.
+
+395
+00:58:43,900 --> 00:58:44,880
+Attention here.
+
+396
+00:58:46,800 --> 00:58:48,980
+Let's say this is the point P.
+
+397
+00:58:50,440 --> 00:58:53,000
+Point A2, B2.
+
+398
+00:58:53,340 --> 00:58:57,039
+So this is local minimum point.
+
+399
+00:59:00,596 --> 00:59:09,056
+And the corresponding value, that is equal to f of a2b2, a local minimum value.
+
+400
+00:59:09,816 --> 00:59:13,416
+Okay, do not confuse value and points.
+
+401
+00:59:13,816 --> 00:59:15,776
+Noktaları ve değerleri karıştırmayın arkadaşlar.
+
+402
+00:59:15,776 --> 00:59:16,996
+Barmanlaşmayın bir yer.
+
+403
+00:59:18,175 --> 00:59:21,596
+Any question about these definitions?
+
+404
+00:59:24,563 --> 00:59:28,563
+Okay, now look at this example, basic example.
+
+405
+00:59:29,824 --> 00:59:31,683
+Let me talk about absolute.
+
+406
+00:59:32,903 --> 00:59:34,543
+Okay, let me talk about absolute.
+
+407
+00:59:36,364 --> 00:59:44,203
+But here, so look at here, so this is not all whole domain of, this R is not whole domain of F.
+
+408
+00:59:44,203 --> 00:59:49,284
+So this is just some region contained by domain of F.
+
+409
+00:59:49,543 --> 00:59:50,403
+Attention here.
+
+410
+00:59:50,963 --> 01:00:14,523
+But if you put all domain, okay, if for all x, y payers living in the domain of f, okay, and you have this condition f of a, b bigger than f of x, y.
+
+411
+01:00:16,788 --> 01:00:19,668
+For all attention. This means that
+
+412
+01:00:19,668 --> 01:00:22,068
+This point
+
+413
+01:00:26,708 --> 01:00:32,548
+is absolute, attention here, absolute, sorry, so this may be bigger, this may be
+
+414
+01:00:32,548 --> 01:00:52,867
+more than one point, an absolute point, an absolute maximum point, and the value is unique, and f of a, b
+
+415
+01:00:54,195 --> 01:01:21,596
+is the attention here. The absolute, the maximum value. The absolute, absolute, maximum value. Namely, briefly, maximum value. Okey. Dikkat edin arkadaşlar. Nokta birden fazla olabilir ama arkadaşlar değer bir tanedir. Buna dikkat edin. Değer bir tanedir.
+
+416
+01:01:22,867 --> 01:01:30,988
+Nokta birden fazla olabilir. O yüzden en artıklılığını kullandım. Ama değer bir tanedir. Dikkatinizi çekerim.
+
+417
+01:01:31,608 --> 01:01:41,648
+Her şekilde eğer şu koşul sağlanırsa, tanım bölgesindeki arkadaşlar, her xy için, bakın herhangi bir r değil, tanım bölgesinin altındaki bir r için değil.
+
+418
+01:01:49,396 --> 01:01:50,616
+is called
+
+419
+01:01:50,616 --> 01:01:57,816
+an absolute minimum point.
+
+420
+01:02:00,336 --> 01:02:00,776
+And
+
+421
+01:02:00,776 --> 01:02:03,416
+f of a, b
+
+422
+01:02:03,416 --> 01:02:05,436
+is said to be
+
+423
+01:02:05,436 --> 01:02:07,776
+the absolute minimum value.
+
+424
+01:02:08,696 --> 01:02:09,856
+Attention here.
+
+425
+01:02:10,616 --> 01:02:11,396
+Okay, example.
+
+426
+01:02:11,796 --> 01:02:14,656
+Let me introduce some examples.
+
+427
+01:02:21,331 --> 01:02:29,531
+Consider this quadratic expression with two independent variables x² plus y².
+
+428
+01:02:30,931 --> 01:02:32,371
+Attention here.
+
+429
+01:02:33,431 --> 01:02:38,971
+So let's investigate local max and local min points of this function.
+
+430
+01:02:40,831 --> 01:02:46,791
+Okay, do you think, is there any local maximum value?
+
+431
+01:02:48,596 --> 01:02:54,076
+But, taking into account this fact, look at here.
+
+432
+01:02:55,076 --> 01:03:04,155
+So, domain of f, domain of f, the set of all real numbers.
+
+433
+01:03:04,655 --> 01:03:05,496
+So, we know this.
+
+434
+01:03:06,736 --> 01:03:14,576
+Taking into account this fact, for all x, y, contained by domain of f,
+
+435
+01:03:16,820 --> 01:03:25,340
+We know that f of 0, 0, smaller than f of xy.
+
+436
+01:03:26,500 --> 01:03:28,500
+So it is obvious fact.
+
+437
+01:03:28,500 --> 01:03:36,580
+This says that 0, 0.00 is n.
+
+438
+01:03:37,500 --> 01:03:41,260
+Is n absolute.
+
+439
+01:03:44,628 --> 01:04:04,788
+minimum point, but the corresponding value is unique. F of 0, 0 is the absolute minimum value, which is 0.
+
+440
+01:04:04,788 --> 01:04:06,028
+Okay?
+
+441
+01:04:08,916 --> 01:04:23,556
+Okay, there is no absolute maximum value. No absolute maximum value in no absolute maximum point.
+
+442
+01:04:27,827 --> 01:04:43,827
+İngiltere
+
+443
+01:04:47,635 --> 01:04:56,995
+If you consider some restriction here, so P x y, so x square plus y square,
+
+444
+01:05:02,576 --> 01:05:15,576
+İngiltere
+
+445
+01:05:00,788 --> 01:05:01,788
+Evet.
+
+446
+01:05:19,572 --> 01:05:20,112
+Yer.
+
+447
+01:05:25,492 --> 01:05:26,332
+Look at here.
+
+448
+01:05:27,172 --> 01:05:47,852
+In this red section, so this is the value, okay, this is the curve, level curve, x square plus y square is equal to 4, is circle, is circle on the plane, on the plane, that is equal to 4.
+
+449
+01:05:49,032 --> 01:05:50,792
+Ve işte 2, doğru mu arkadaşlar?
+
+450
+01:05:56,019 --> 01:06:06,440
+Z eşittir, 4 düzleme üzerinde. Ne oluyor arkadaşlar? Bir çember. Şimdi buraya dikkat edin. Böyle bir kısıtlama var. Bu kısıtlamayı düşünecek olursak,
+
+451
+01:06:13,012 --> 01:06:40,351
+P00, so this is an absolute minimum value, minimum point, sorry, in the restriction R, and the value is the absolute value, meaning that the least value, the minimum value, zero. This is unique. Attention here.
+
+452
+01:06:40,851 --> 01:06:42,172
+So, let's look at here.
+
+453
+01:06:44,331 --> 01:06:48,371
+There are infinitesim, many absolute points.
+
+454
+01:06:52,532 --> 01:06:55,431
+There are infinitely many absolute points.
+
+455
+01:07:00,884 --> 01:07:02,003
+İç point
+
+456
+01:07:07,987 --> 01:07:34,867
+x, y, z, such that, z is 4 here, such that x square plus y square is equal to 4, is an absolute point,
+
+457
+01:07:37,427 --> 01:07:39,748
+in R, but
+
+458
+01:07:39,748 --> 01:07:42,507
+so you don't need to write this in fact
+
+459
+01:07:42,507 --> 01:07:44,887
+here, you don't need to write it, but
+
+460
+01:07:44,887 --> 01:07:46,147
+that is not mistake.
+
+461
+01:07:47,547 --> 01:07:48,547
+Each point
+
+462
+01:07:48,547 --> 01:07:51,748
+is an absolute point in R
+
+463
+01:07:51,748 --> 01:07:54,487
+but
+
+464
+01:07:59,155 --> 01:08:13,115
+f of x y, the 4, is the absolute maximum value.
+
+465
+01:08:14,895 --> 01:08:23,216
+An absolute maximum value, let me write here, so here, the maximum value is 4.
+
+466
+01:08:24,835 --> 01:08:25,636
+Anlaşıldı mı arkadaşlar?
+
+467
+01:08:26,676 --> 01:08:49,676
+This corresponds to these values. Herhalde anlaşıldı. Anlaşmayan bir yer yok. Herhangi bir kısıtlama verilirse ne olacak arkadaşlar? Maksimum değerini bulabiliriz. Eğer fonksiyonu sürekliyse arkadaşlar, look at this. So this function is continuous everywhere and your...
+
+468
+01:08:49,844 --> 01:09:07,164
+Your region is closed region, closed as you see, this is closed. So let me write here theorem. So this theorem is very important in the engineering, in the optimization theory. In fact, this is very important in the optimization theory. So if your function
+
+469
+01:09:07,164 --> 01:09:11,283
+continues,
+
+470
+01:09:11,283 --> 01:09:14,644
+continues over
+
+471
+01:09:14,644 --> 01:09:16,104
+some
+
+472
+01:09:16,659 --> 01:09:17,899
+Kloset region.
+
+473
+01:09:22,420 --> 01:09:37,739
+Then, there exists, there exists, the maximum value, namely absolute maximum value, and the minimum value.
+
+474
+01:09:39,880 --> 01:09:46,420
+Okay, so this theorem is very important in the optimization theory, in the artificial intelligence.
+
+475
+01:09:46,771 --> 01:10:03,172
+Dikkat edin arkadaşlar, eğer sizin fonksiyonunuz sürekliyse, kapalı bir bölge üzerinde sürekliyse, o zaman ne olur? Kesinlikle bu fonksiyonun alabileceği en büyük değer ve en küçük değer vardır. Dolayısıyla siz bir algoritma yazarsınız, bir yapay zeka algoritması yaparsanız, nedir?
+
+476
+01:10:09,587 --> 01:10:37,288
+noktalarını bulmaya çalışırsınız. Birden fazla çözüm olabilir. Yani yapay zekanız için birden fazla çözüm olabilir. Bakın burada size ne yapabilir arkadaşlar? Aynı karı veren birden fazla çözüm yöntem olabilir. Veya da minimizasyon yapacaksınız, maliyeti düşüreceksiniz. Ama burada maliyeti düşüreceksiniz. Yalnızca bir çözüm var. Sadece ona gidersin. Ama burada yapay zekanız şunlardan birine gider arkadaşlar. Sonsuz tane çözüm var. Karşılık gelen değer bir tane.
+
+477
+01:10:37,587 --> 01:10:41,167
+Aynı halde anlaşıldı arkadaşlar. Bu teorem çok önemli.
+
+478
+01:10:42,028 --> 01:10:45,788
+Bahsettim. Normalde müfredatta burada yok ama ben size bahsedeyim.
+
+479
+01:10:47,627 --> 01:10:49,567
+Evet, sorunuz yoksa devam ediyorum.
+
+480
+01:11:00,659 --> 01:11:03,299
+Tamam, let's talk about critical points.
+
+481
+01:11:04,539 --> 01:11:08,520
+Ya da tam karıştırmayın arkadaşlar, süremiz daraldı.
+
+482
+01:11:12,948 --> 01:11:16,108
+Ya da kritik noktanın tanımını verelim, öyle devam edelim gençler.
+
+483
+01:11:16,108 --> 01:11:20,007
+Ok, let me introduce critical points. Definition of critical points.
+
+484
+01:11:21,868 --> 01:11:23,188
+Critical points.
+
+485
+01:11:39,636 --> 01:11:43,916
+Saddle Point tanımını verdim mi? Vermedim. Saddle Point'i de vereyim arkadaşlar.
+
+486
+01:11:45,456 --> 01:11:47,296
+Ok, let me talk about Saddle Point.
+
+487
+01:11:50,868 --> 01:11:53,448
+Saddle point. So what does it mean, saddle point?
+
+488
+01:11:58,739 --> 01:12:03,779
+Ok, let me sketch some surface.
+
+489
+01:12:04,539 --> 01:12:08,600
+So, by using this surface, we can introduce definition of saddle point.
+
+490
+01:12:09,279 --> 01:12:12,879
+So, for example, you have some surface, something like that.
+
+491
+01:12:18,899 --> 01:12:28,719
+ve if you choose some point on this surface here, consider this orthogonal projection onto
+
+492
+01:12:36,212 --> 01:12:40,132
+Ok, so let's say this is point P, A, B.
+
+493
+01:12:41,092 --> 01:12:44,032
+So let me, let me separate some regions here.
+
+494
+01:12:44,332 --> 01:12:47,391
+Okay, let me use red color here.
+
+495
+01:12:50,391 --> 01:12:53,432
+So consider red region here.
+
+496
+01:12:54,552 --> 01:12:59,272
+And consider black region here.
+
+497
+01:13:03,220 --> 01:13:12,739
+Ok, let's say this is R, open region, open disk, open ball, so total, open ball.
+
+498
+01:13:12,739 --> 01:13:30,300
+Ok, so the PAB is called saddle point, a saddle point, semernoktası, olarak adlandır, if and only if,
+
+499
+01:13:31,764 --> 01:13:57,244
+There exists, there exists some, an open region, an open ball, are, where, for some, x, y, pairs, f of x, y,
+
+500
+01:13:58,100 --> 01:14:15,300
+F of AB, and for some x, y values, f of x, y, smaller than or equal to f of AB.
+
+501
+01:14:15,540 --> 01:14:16,360
+So look at here.
+
+502
+01:14:17,260 --> 01:14:23,880
+So if you choose x, y somewhere here, so if you consider its height somewhere here,
+
+503
+01:14:24,724 --> 01:14:31,844
+Asi, the height of this black point, black dot, is smaller than the red dot.
+
+504
+01:14:31,844 --> 01:14:39,184
+Okay, and if you consider some, let me use yellow.
+
+505
+01:14:39,956 --> 01:15:05,324
+Yeni bu yalama y
+
+506
+01:15:06,260 --> 01:15:19,220
+İkisine de saddle noktası diyebilirsiniz arkadaşlar. İster dikizli şimdeki AB ikilisine, ister ABFAB üçlüsüne saddle noktası diyebilirsiniz.
+
+507
+01:15:19,700 --> 01:15:20,620
+Var mı anlaşım en bir yer?
+
+508
+01:15:22,100 --> 01:15:24,720
+Any question about this definition?
+
+509
+01:15:29,108 --> 01:15:56,087
+Ok, let me introduce critical point. Dersi olan var mı gençler? Saat 11'de. 11'de dersi olan varsa bitireceğim. Yoksa devam edeceğim. Tamam o zaman gençler, dersi olanlar varmış. Hapteye o zaman kaldığımız yerden devam ederiz. Tamam mı gençler? Kendinize iyi bakın. Gençler, hepinize başarılar diliyorum.
+
+510
+01:15:57,011 --> 01:16:20,011
+Son haftalara doğru yaklaşıyoruz. Muhakkak son haftalara doğru arkadaşlar dersleri takip edin, işi sıkı tutun. Son 2-3 haftadaki performansınız, kınavlarındaki başarınızı inanılmaz etkileyecek. Muhakkak derslere katılın, düzenli bir şekilde çalışın, sağlığınıza dikkat edin. Evet gençler, hepinize başarılar diliyorum.

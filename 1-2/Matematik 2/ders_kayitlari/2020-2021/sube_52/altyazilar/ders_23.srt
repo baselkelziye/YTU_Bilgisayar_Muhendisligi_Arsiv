@@ -1,0 +1,3099 @@
+1
+00:02:30,771 --> 00:02:32,771
+Okay, good afternoon friends. How are you?
+
+2
+00:02:34,231 --> 00:02:34,951
+Merhaba arkadaşlar.
+
+3
+00:02:38,611 --> 00:02:39,711
+Sesim geliyor galiba.
+
+4
+00:02:49,204 --> 00:03:12,504
+Evet, geçen hafta çift katlı integrallere geçiş yapmıştık. Hatta örnek çözmüştük. Çift katlı integrallerle nasıl alan hesaplanır, ondan bahsetmiştik. Değil mi arkadaşlar? Biz 13. haftadayız değil mi? Bu hafta 13. hafta. Haftaya derslerde son galiba.
+
+5
+00:03:21,108 --> 00:03:28,527
+13. haftadayız. Tamam. Haftaya derslerde son bitirelim. Bu hafta dersleri bitirelim. Haftaya örnek yapalım arkadaşlar.
+
+6
+00:03:29,688 --> 00:03:40,348
+Şöyle örneklerimizi yaparız elimizden geldiğince. Geçmiş yılların sorularını da çözeriz. Pınar Hoca derlemişti. Pınar Hoca'nın notların arasından buluruz.
+
+7
+00:03:41,108 --> 00:03:45,548
+Ondan sonra arkadaşlar, sınavımızın tarihi belli olmuş muydu? Ne zamanda sınavımız?
+
+8
+00:04:00,659 --> 00:04:05,479
+Tamam, biz hazır olalım. Her halükarda derslerimize çalışalım, uygulamalarımızı yapalım.
+
+9
+00:04:06,219 --> 00:04:11,120
+Merak etmeyin, 14. haftadan sonra da arkadaşlar, benim özel kanalım var, yeni kurdum.
+
+10
+00:04:11,840 --> 00:04:17,099
+Ben orada tabii ki buraya, burada çözüm sorulara benzer sorular da olacak, farklı sorular da olacak.
+
+11
+00:04:17,699 --> 00:04:22,459
+İsteyenler oradan kanalıma girer. Arkadaşlar, soru çözümlerini takip edebilirler.
+
+12
+00:04:25,524 --> 00:04:38,463
+MTF Akademi yazarsanız arkadaşlar, kanalımdan takip edebilirsiniz. Tabii yeni kurdum. Bir haftalık bir muazzesi var. Siz oradan takip edebilirsiniz arkadaşlar, tamam mı? Evet.
+
+13
+00:04:41,524 --> 00:04:42,683
+Dersimize başlayalım.
+
+14
+00:04:55,636 --> 00:05:00,156
+Şu an ekran görülmüyor değil mi arkadaşlar? Şu an görülüyor değil mi?
+
+15
+00:05:12,211 --> 00:05:12,692
+Evet.
+
+16
+00:05:14,951 --> 00:05:16,192
+Sesim de geliyor.
+
+17
+00:05:17,351 --> 00:05:17,672
+Güzel.
+
+18
+00:05:18,632 --> 00:05:19,651
+Devam edelim arkadaşlar.
+
+19
+00:05:21,651 --> 00:05:21,991
+Okay.
+
+20
+00:05:23,192 --> 00:05:26,471
+Double integration in terms of polar coordinates.
+
+21
+00:05:26,471 --> 00:05:36,271
+So today, so let me open a new whiteboard.
+
+22
+00:05:37,271 --> 00:05:39,052
+Let me make it white.
+
+23
+00:05:52,211 --> 00:05:55,951
+Double integration by polar coordinates.
+
+24
+00:06:14,067 --> 00:06:17,367
+Now, so in this case, given
+
+25
+00:06:17,367 --> 00:06:20,528
+region
+
+26
+00:06:25,043 --> 00:06:33,024
+R, bi, polar, koordinat,
+
+27
+00:06:37,492 --> 00:06:38,492
+As follows.
+
+28
+00:06:41,492 --> 00:06:48,492
+So in this case, our theta is bigger than alpha ray, smaller than or equal to beta ray.
+
+29
+00:06:50,492 --> 00:07:02,492
+The distance r to origin is bigger than f of theta polar curve and smaller than g of theta.
+
+30
+00:07:04,372 --> 00:07:17,091
+So, then, the double integration, double integration of a function,
+
+31
+00:07:22,771 --> 00:07:49,771
+A function hr theta over r is given by this. Double integration of hr theta. So we write dr d theta. Okay.
+
+32
+00:07:50,675 --> 00:08:15,716
+d, r, d, theta. So in this case, the area element in this case given by r, d, r, d, theta. So attention here, in terms of polar coordinates, d, a, area element, can be written in terms of r, d, r, d, theta. Okay. Now, so in this case, we write this. So as
+
+33
+00:08:17,108 --> 00:08:34,528
+So, theta changed from alpha to beta, and the r changed from lower bound, look at here, lower bound for r, f of theta, upper bound for r, g of theta.
+
+34
+00:08:37,172 --> 00:08:40,612
+Now, we write this h, r, theta.
+
+35
+00:08:40,892 --> 00:08:46,432
+First of all, we integrate with respect to r, then we integrate with respect to theta.
+
+36
+00:08:46,432 --> 00:08:52,592
+Okay, now let me sketch our region. Our region is something like that.
+
+37
+00:08:56,820 --> 00:09:21,996
+Bu, bu
+
+38
+00:09:24,436 --> 00:09:33,436
+So you rotate your region from the level, theta alpha ray to theta beta ray, during this rotation around origin.
+
+39
+00:09:33,436 --> 00:09:47,436
+So upper end point with respect to origin is always on the R, G of theta, and lower end point with respect to origin always on the...
+
+40
+00:09:47,764 --> 00:09:50,864
+R is equal to f of theta.
+
+41
+00:09:51,064 --> 00:09:58,364
+Okay, so we got this kind of rotational scanning, not vertical scanning or horizontal scanning.
+
+42
+00:09:58,364 --> 00:09:59,124
+Okay.
+
+43
+00:10:00,000 --> 00:10:17,900
+As you see, unlike the case of Cartesian coordinate, so we scan our region by some bar rotating around origin during this rotation, upper end point with respect to origin is always on the g of theta, and lower end point is always on the f of theta. I think everything is clear to you.
+
+44
+00:10:18,720 --> 00:10:21,740
+Now, so this is integral domain R, okay.
+
+45
+00:10:22,159 --> 00:10:29,639
+Now, over this integral domain R, so your task is to compute this function h of r theta.
+
+46
+00:10:30,279 --> 00:10:42,500
+Okay, but here, this is area element, so attention here, area element here, r d r d theta, because if you make some zoom here,
+
+47
+00:10:46,035 --> 00:10:47,415
+So, let me make zoom.
+
+48
+00:10:48,415 --> 00:10:50,435
+If you make zoom, so you got this.
+
+49
+00:10:50,795 --> 00:10:51,055
+Okay.
+
+50
+00:10:51,935 --> 00:10:52,995
+So, you got this.
+
+51
+00:10:53,615 --> 00:10:56,135
+So, we take some point here.
+
+52
+00:10:57,975 --> 00:11:11,295
+So, if you make some zoom on this point, you may regard this point as a sufficiently small circular shelf.
+
+53
+00:11:11,827 --> 00:11:18,387
+So, everyone knows this, okay? As you see, if you make this room, so we got this d theta.
+
+54
+00:11:20,227 --> 00:11:28,387
+D theta, okay? Now, area element of this, so this is R, so something like that, this is R, so you can write this.
+
+55
+00:11:29,107 --> 00:11:36,727
+Tamam mı arkadaşlar? Yani bunu yapabilirseniz, dolayısıyla ne oluyor? Bunun alanı normalde 1 bölü 2, r kare, d teta.
+
+56
+00:11:37,127 --> 00:11:42,947
+Ben bunu alan cinsinden entegre edeceğim, r, d, r. Şimdi 1 bölü 2, r kareyi düşünün arkadaşlar.
+
+57
+00:11:43,687 --> 00:11:52,687
+Aslında nedir? r, d, r. r, d, r'nin integralini alırsanız, r kare bölü 2 gelir. Doğru mu? r, d, r, d teta şeklinde ifade edebilirim. Tamam mı?
+
+58
+00:11:52,687 --> 00:11:56,268
+O şekilde düşünebilirsiniz. Okey.
+
+59
+00:11:58,004 --> 00:11:59,203
+Herhalde anlaşıldı.
+
+60
+00:12:00,783 --> 00:12:03,644
+Çok detaya girmiyorum, teoriye girmek istemiyorum.
+
+61
+00:12:05,423 --> 00:12:10,124
+Aslında videolarda kanalımda teoriden bahsedeceğim, nasıl geldiği, nereden elde edildiği.
+
+62
+00:12:10,844 --> 00:12:13,304
+Şimdi burada bahsetmiyorum arkadaşlar, geçiyorum.
+
+63
+00:12:13,304 --> 00:12:13,864
+Okey.
+
+64
+00:12:16,244 --> 00:12:20,604
+So, let me write this question.
+
+65
+00:12:22,283 --> 00:12:22,963
+Question.
+
+66
+00:12:29,875 --> 00:12:55,875
+So, find the integration limits. You may see such question in the exam. Find the integration, find the integration limits, bounds, of this double integration, double integration, FR data.
+
+67
+00:12:56,659 --> 00:13:09,379
+dA, and dA is r d r d theta, attention here, not d x d y. So where r is a region,
+
+68
+00:13:27,283 --> 00:13:29,604
+x² plus y²,
+
+69
+00:13:29,744 --> 00:13:31,583
+4.
+
+70
+00:13:32,264 --> 00:13:33,264
+Y.
+
+71
+00:13:33,524 --> 00:13:37,303
+2.
+
+72
+00:13:37,303 --> 00:13:37,864
+X.
+
+73
+00:13:37,864 --> 00:13:38,443
+2.
+
+74
+00:13:39,903 --> 00:13:41,884
+Now look at here, your function
+
+75
+00:13:41,884 --> 00:13:44,144
+is a polar function.
+
+76
+00:13:44,884 --> 00:13:51,644
+Here, this means that you need to express your region in terms of polar coordinates.
+
+77
+00:13:51,903 --> 00:13:55,744
+Okay, otherwise you cannot compute this double integration.
+
+78
+00:13:56,563 --> 00:14:07,183
+So, integration limits must be written in terms of polar coordinates because of the fact that your function, integral function, is a polar function.
+
+79
+00:14:07,484 --> 00:14:09,823
+I think everyone got this fact.
+
+80
+00:14:09,823 --> 00:14:12,864
+Dikkat edin, integral fonksiyonumuz kutupsal fonksiyonumuz.
+
+81
+00:14:12,884 --> 00:14:20,683
+olduğundan dolayı integral bölgesini mecburen, kartezyen bir şekilde verirse bile mecburen kutupal koordinatlarda ifade edeceğim.
+
+82
+00:14:20,683 --> 00:14:27,303
+Let me first sketch our region given in terms of Cartesian coordinates here.
+
+83
+00:14:28,764 --> 00:14:37,884
+So this is the inside of circle with radius 2.
+
+84
+00:14:39,860 --> 00:14:41,220
+I think this is not symmetric.
+
+85
+00:14:44,659 --> 00:14:46,460
+Okay.
+
+86
+00:14:47,019 --> 00:14:47,580
+This is good.
+
+87
+00:14:48,100 --> 00:14:51,379
+Now, so let's say this is x, let's say this is y.
+
+88
+00:14:52,179 --> 00:14:56,100
+Now, this is the 2, 2, minus 2.
+
+89
+00:14:56,720 --> 00:14:59,720
+Now, y is bigger than or equal to square root of 2.
+
+90
+00:14:59,819 --> 00:15:01,879
+Let me use another color.
+
+91
+00:15:02,484 --> 00:15:08,044
+to sketch horizontal line, y is equal to square root of 2, somewhere here.
+
+92
+00:15:09,744 --> 00:15:12,404
+I approximately not like that, in fact.
+
+93
+00:15:13,624 --> 00:15:13,944
+Okay.
+
+94
+00:15:15,464 --> 00:15:24,024
+Now, this is the horizontal line, y is bigger than or equal to square root of 2, and x must be positive, which one?
+
+95
+00:15:24,124 --> 00:15:27,644
+So, we cannot include left-hand side, so this is our region.
+
+96
+00:15:28,628 --> 00:15:54,548
+I think everyone got this region. So this region, okay, colored by red bars is our region, integral domain. Now, so our task is to express this region in terms of polar coordinates. So how can we manage this? So let me put some bar rotating around origin. So this interception ray is very important.
+
+97
+00:16:01,235 --> 00:16:05,836
+As you see, we rotate some bar around origin.
+
+98
+00:16:06,515 --> 00:16:12,155
+So, attention here, during this rotation, just focus on the endpoints of this bar rotating around origin.
+
+99
+00:16:12,795 --> 00:16:17,755
+And the maximum level for this bar is theta is equal to pi over 2.
+
+100
+00:16:19,655 --> 00:16:22,755
+Now, so double integration, let me use...
+
+101
+00:16:24,115 --> 00:16:50,995
+Black color. So double integration i. So we start by theta. Left-hand side integration symbol stands for theta. The lower bound, the left-hand side integral symbol is theta is equal to, we need to find out this. So how can we find out this? By soaring commonly y is equal to square root of 2 and this circle x squared plus y squared.
+
+102
+00:16:51,375 --> 00:16:57,755
+is equal to 4 and y is equal to square root of 2 when you substitute this.
+
+103
+00:17:00,255 --> 00:17:07,135
+Ne geliyor arkadaşlar? Ortak çözerseniz aslında r eşittir 2 çemberiyle onu ortak çözeceksiniz arkadaşlar.
+
+104
+00:17:07,936 --> 00:17:10,795
+r eşittir 2 ile onu ortak çözerseniz.
+
+105
+00:17:10,795 --> 00:17:14,255
+So in terms of polar coordinates, so this is r2.
+
+106
+00:17:14,804 --> 00:17:24,184
+If you express this in terms of polar coordinates, so this is r times sine theta is equal to square root of 2.
+
+107
+00:17:24,184 --> 00:17:36,284
+When you solve this and this in terms of polar coordinates, commonly here, if you substitute here, r is 2, so this means that
+
+108
+00:17:36,627 --> 00:17:45,227
+I see two times sine theta is equal to square root of two. Doğru mu arkadaşlar?
+
+109
+00:17:46,127 --> 00:17:57,927
+Buradan theta altında 3 bölü 4. Şurasını da bulabilirsiniz. Şurada y yerine kök 2 yazarsanız, x yerine arkadaşlar şöyle kök 2 geliyordu. Doğru mu arkadaşlar?
+
+110
+00:18:04,115 --> 00:18:07,715
+Theta is equal to pi over 4.
+
+111
+00:18:10,956 --> 00:18:11,855
+Tamam mı arkadaşlar?
+
+112
+00:18:12,355 --> 00:18:15,135
+If you substitute theta pi over 4,
+
+113
+00:18:15,956 --> 00:18:18,655
+okay, you are going to obtain this equality.
+
+114
+00:18:19,076 --> 00:18:21,456
+So, this is theta is equal to pi over 4.
+
+115
+00:18:21,807 --> 00:18:27,907
+Şimdi, so, the lower bound for theta values is pi over 4.
+
+116
+00:18:28,108 --> 00:18:33,168
+The maximum value for theta values is theta is equal to pi over 2.
+
+117
+00:18:33,827 --> 00:18:40,807
+Okay, so this means that we rotate our bar, okay, around origin from the level pi over 4 to level pi over 2.
+
+118
+00:18:41,268 --> 00:18:43,608
+So, what about second integration symbol?
+
+119
+00:18:43,608 --> 00:18:46,288
+Let me use red color.
+
+120
+00:18:50,003 --> 00:19:03,183
+So, during this rotation, lower endpoint of this blue bar is always on the y is equal to square root of 2, but we need to express y is equal to square root of 2 in terms of r.
+
+121
+00:19:03,183 --> 00:19:10,083
+So, r is square root of 2 over sin t. So, lower endpoint is always on this polar curve.
+
+122
+00:19:10,516 --> 00:19:14,276
+2 over sin theta.
+
+123
+00:19:14,276 --> 00:19:19,316
+And during this rotation, upper end point is always on the R2.
+
+124
+00:19:19,316 --> 00:19:21,236
+So we write R2.
+
+125
+00:19:21,236 --> 00:19:27,635
+But we don't know the rule of f r theta, we just write f r theta.
+
+126
+00:19:27,635 --> 00:19:32,916
+And our area element in terms of polar coordinates are the r theta.
+
+127
+00:19:32,916 --> 00:19:36,115
+Okay, now so you can compute this integration.
+
+128
+00:19:37,619 --> 00:19:39,339
+Obtaining this rule.
+
+129
+00:19:39,759 --> 00:19:42,639
+Okay, if this rule is given in the equation.
+
+130
+00:19:42,839 --> 00:19:47,339
+Eğer f, r, teta kuralı verilirse arkadaşlar, direkt integral hesaplayabilirsiniz.
+
+131
+00:19:47,859 --> 00:19:51,179
+Any question about this equation?
+
+132
+00:19:52,139 --> 00:19:53,960
+Sınırları belirlemek çok önemli arkadaşlar.
+
+133
+00:19:54,119 --> 00:19:58,960
+It's very important to obtain integration bounds limits.
+
+134
+00:20:01,419 --> 00:20:02,139
+Okay.
+
+135
+00:20:02,740 --> 00:20:20,740
+Now, similarly, you can compute, you can compute any area by double integration here. So, for example, you got this region. So, let's say this is theta alpha, let's say this is theta beta.
+
+136
+00:20:23,740 --> 00:20:24,740
+Oh, sorry.
+
+137
+00:20:28,819 --> 00:20:43,440
+Okay, now, so let's say this is the curve, polar curve. R is equal to f of theta. Let's say this is another curve. R is equal to g of theta.
+
+138
+00:20:47,731 --> 00:21:00,612
+Now, so in this case, so as you see, we can compute this area in terms of, in terms of polar coordinates.
+
+139
+00:21:00,612 --> 00:21:09,492
+But if you study on the polar coordinate system, so you rotate your bar from the theta alpha to theta beta.
+
+140
+00:21:10,016 --> 00:21:38,016
+Bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda
+
+141
+00:21:38,016 --> 00:21:40,316
+İntegrate with respect to theta.
+
+142
+00:21:40,496 --> 00:21:43,715
+Okay, so this is the computation formula.
+
+143
+00:21:43,916 --> 00:21:47,776
+Okay, this is the formula for computing area of this R.
+
+144
+00:21:48,016 --> 00:21:49,536
+Even bipolar coordinates.
+
+145
+00:21:49,536 --> 00:21:51,215
+Bu da ne olur arkadaşlar?
+
+146
+00:21:51,375 --> 00:21:54,596
+Bir bölgenin kutsal koordinatlarla alanını hesaplamayı verir.
+
+147
+00:21:54,956 --> 00:21:58,856
+Aslında tek değişkenli integral formülüye indigenecektir arkadaşlar.
+
+148
+00:21:59,036 --> 00:22:00,956
+Bunu yaparsanız bakın ne yapıyorsunuz?
+
+149
+00:22:00,996 --> 00:22:01,735
+1 bölü 2.
+
+150
+00:22:02,536 --> 00:22:03,135
+Ne geliyor?
+
+151
+00:22:03,315 --> 00:22:04,376
+Theta alfadan.
+
+152
+00:22:05,268 --> 00:22:21,347
+teta, beta'ya alırsanız, re kare geldi. Re kare bölü 2 geldi, bunun integraline alırsanız. Üst sınırınız f teta, al sınırınız g teta. Gördünüz mü? Tek değişkenli, kutsal koordinat alan formülü geldi.
+
+153
+00:22:24,948 --> 00:22:30,367
+F teta'nın karesi, hatırladınız herhalde bunu, G teta'nın karesi. Gördünüz mü?
+
+154
+00:22:33,875 --> 00:22:34,576
+Şöyle yapalım.
+
+155
+00:22:35,576 --> 00:22:36,355
+Okey.
+
+156
+00:22:38,556 --> 00:22:40,676
+Geçiyorum arkadaşlar. Herhalde anlaşıldı.
+
+157
+00:22:55,604 --> 00:22:58,604
+Bir an önce sorulara geçmek istiyorum, konuları bitirip.
+
+158
+00:23:00,344 --> 00:23:06,463
+Şimdi arkadaşlar, from Cartesian Coordinate,
+
+159
+00:23:10,163 --> 00:23:12,043
+Cartesian co-ordinates.
+
+160
+00:23:17,076 --> 00:23:22,036
+Polar Koordinates
+
+161
+00:23:28,500 --> 00:23:32,039
+Okay, now recall the Cartesian coordinates.
+
+162
+00:23:34,319 --> 00:23:36,940
+So let's suppose that this is
+
+163
+00:23:36,940 --> 00:23:44,440
+some region given by Cartesian coordinate and dA.
+
+164
+00:23:45,359 --> 00:23:47,879
+So here dA
+
+165
+00:23:51,571 --> 00:23:56,051
+can be considered as sufficient, a small square.
+
+166
+00:23:56,051 --> 00:23:57,051
+Okay.
+
+167
+00:23:57,051 --> 00:24:12,451
+Now, so you can, you can express this, this double integration given, given by Cartesian coordinates, okay, by using polar coordinate system.
+
+168
+00:24:12,451 --> 00:24:14,379
+So in this case,
+
+169
+00:24:14,804 --> 00:24:19,864
+So you can write this in fact, but generally we got the same region.
+
+170
+00:24:20,224 --> 00:24:30,024
+Okay, now so we can write this f, x is equal to r cosine theta, y is equal to r sine theta.
+
+171
+00:24:30,923 --> 00:24:35,264
+And so if you substitute this x is equal to r,
+
+172
+00:24:35,892 --> 00:24:42,932
+x is equal to r, cosin, theta, y is equal to r, sin, theta.
+
+173
+00:24:43,771 --> 00:24:55,851
+Okay, now, so by using this and by using differential relation, you can obtain this, dA can be written in terms of r, dr, e, theta in this way.
+
+174
+00:24:55,991 --> 00:24:59,571
+Okay, now you can, you can get this transition.
+
+175
+00:25:00,531 --> 00:25:05,551
+Okay, now let's consider this example, basic example.
+
+176
+00:25:08,072 --> 00:25:11,231
+Okay, compute that.
+
+177
+00:25:14,548 --> 00:25:33,248
+So, given a region, given a region, r by x-axis, bounded, let me write here, bounded by,
+
+178
+00:25:37,811 --> 00:25:41,331
+bounded by x-axis
+
+179
+00:25:41,331 --> 00:25:49,611
+and y is equal to square root of 1 minus x square.
+
+180
+00:25:53,236 --> 00:26:00,436
+Then, compute this double integration over R.
+
+181
+00:26:05,140 --> 00:26:06,380
+So, attention here.
+
+182
+00:26:09,200 --> 00:26:23,779
+If your region is associated with some circle, if your region is bounded by some circular curve, it is better to apply transition from Cartesian coordinate to polar coordinate system.
+
+183
+00:26:23,980 --> 00:26:24,140
+Okay.
+
+184
+00:26:24,900 --> 00:26:29,980
+Now, in order to simplify your double integration, it is strictly advised.
+
+185
+00:26:30,483 --> 00:26:45,643
+Dikkat edin arkadaşlar. Eğer sizin bölgeniz bir çember ile sınırlıysa, dairesel bir bölge ile ilişkiliyse, çoğunlukla kartezyenden kutupsala geçiş yapmanız avantaj sağlayacaktır. Tamam mı gençler?
+
+186
+00:26:45,643 --> 00:26:53,823
+Tamam. Şimdi, ilk önce, bizim integral domenimizin.
+
+187
+00:26:55,092 --> 00:26:59,672
+So, look at here. So, this is the upper semicircle, which reduce 1.
+
+188
+00:27:01,092 --> 00:27:01,532
+Here.
+
+189
+00:27:03,052 --> 00:27:07,172
+This is y is equal to square root of 1 minus x square.
+
+190
+00:27:08,092 --> 00:27:10,292
+And so, x-axis here.
+
+191
+00:27:11,252 --> 00:27:14,512
+I think that there is something missing here.
+
+192
+00:27:15,052 --> 00:27:19,272
+Burada bir şey eksik arkadaşlar. Gerçi yok, eksik yok. Her şey tamam, tamam. Sıkıntı yok.
+
+193
+00:27:19,272 --> 00:27:19,592
+Okay.
+
+194
+00:27:22,548 --> 00:27:42,548
+There is no something missing. Okay, so this is x, y. Now, so this is integral domain. Now, first of all, we need to put some bar in order to scan our region. Look at here, upper endpoint is always on the...
+
+195
+00:27:43,347 --> 00:27:51,187
+R is equal to 1. If you transform this into polar coordinate form, you are going to obtain R is equal to 1 circle.
+
+196
+00:27:52,347 --> 00:27:56,548
+Okay, so this is always on the R0, lower end point, look at here.
+
+197
+00:27:57,268 --> 00:28:06,347
+Now, so, this bar starts to rotate from the level theta 0 and theta 1.
+
+198
+00:28:06,927 --> 00:28:10,907
+Now, you can write this integration in terms of polar coordinates.
+
+199
+00:28:11,380 --> 00:28:32,260
+So from theta 0 to theta 5, from r 0 to r 1, if you substitute x is equal to 1, r cosine theta, r square, cosine square theta plus r square.
+
+200
+00:28:32,703 --> 00:28:43,663
+sin2, theta. So this is dxdy. When you transform dxdy into polar form, you are going to obtain rdr dtheta.
+
+201
+00:28:45,303 --> 00:28:55,663
+Okay? Everything is okay? Now, so when you simplify your obtained expression, so from 0 to 1, so this is...
+
+202
+00:29:25,523 --> 00:29:53,439
+Yeni Y
+
+203
+00:29:53,440 --> 00:30:07,639
+So, if you integrate this, 1 over 2, exponential, r square, so, we got this, theta, is equal to from 0 to pi.
+
+204
+00:30:08,064 --> 00:30:16,824
+Şimdi, if you substitute this, 1 over 2, if you substitute r1, e minus, if you substitute r0 here, we got this.
+
+205
+00:30:17,424 --> 00:30:20,764
+And so the theta, look at here, this is a constant term.
+
+206
+00:30:21,324 --> 00:30:29,524
+So 1 over 2, e minus 1 times, integration of the theta is theta from 0 to pi.
+
+207
+00:30:34,400 --> 00:30:36,500
+Bu, bu, bu, bu, bu, bu.
+
+208
+00:30:49,011 --> 00:31:16,491
+Dikkat edin arkadaşlar, size öyle bir integral verecekler ki, kartizen koordinatlar da verilmiş. Siz bunu ister ilk önce x'e göre almaya çalışın, ister y'ye göre almaya çalışın, hiç fark etmez. Neresinden bakarsanız bakın, çok zor bir integral ile karşılaşacaksınız. Eğer bölgeniz zaten bir çember ile sınırlandırılmışsa veya dairesel bir bölge ile ilişkiliyse arkadaşlar, büyük ihtimal kutupsal koordinatlara geçiş yapmak zorunda kalacaksınız. Evet gençler.
+
+209
+00:31:16,915 --> 00:31:19,015
+Eni Koy için sorusu olan var mı?
+
+210
+00:31:21,940 --> 00:31:35,920
+Belirttiğim gibi arkadaşlar, 14. haftada bol bol sorular çözeceğiz. Daha fazla sorular da çözeceğim. 14. haftadan sonra benim YouTube kanalımı, yeni açtığım kanaldan videolarımı takip edebilirsiniz. Belirteyim şimdiden.
+
+211
+00:31:36,440 --> 00:31:49,660
+MTF Akademi diye, tamam mı arkadaşlar? Bir kanal kurdum. Burada matematik, teoloji, felsefe üzerine arkadaşlar paylaşımlarda bulunacağım. Başka hocalardan da ricada bulunacağım. Tamam mı gençler?
+
+212
+00:31:49,940 --> 00:32:00,720
+Sadece matematik olmayacak. Tabii ki ilk etapta matematik olacak. Açılımı matematik, teoloji, felsefe. Evet. Devam ediyorum.
+
+213
+00:32:09,172 --> 00:32:11,352
+Sorusu olan yoksa devam ediyorum gençler.
+
+214
+00:32:12,572 --> 00:32:14,951
+Any question about this topic?
+
+215
+00:32:25,332 --> 00:32:26,551
+Ok, new topic.
+
+216
+00:32:28,491 --> 00:32:29,051
+Substitution.
+
+217
+00:32:36,531 --> 00:33:08,716
+T
+
+218
+00:32:53,428 --> 00:33:02,708
+Change of Variables in Multiple Integration. Çok değişkenli fonksiyonlarda değişken değişimi.
+
+219
+00:33:02,708 --> 00:33:03,808
+Okay.
+
+220
+00:33:05,808 --> 00:33:08,288
+Let me use black color.
+
+221
+00:33:13,316 --> 00:33:13,816
+T
+
+222
+00:33:13,011 --> 00:33:24,692
+Let, z is equal to f of x, y, be a continuous function. So this is very important.
+
+223
+00:33:33,299 --> 00:33:41,299
+over region R.
+
+224
+00:33:41,299 --> 00:33:44,500
+This is a very important condition, attention here.
+
+225
+00:33:48,723 --> 00:33:51,723
+Consider, consider, consider.
+
+226
+00:33:56,084 --> 00:34:00,524
+A coordinate transformation.
+
+227
+00:34:10,547 --> 00:34:12,547
+Bu, bu, bu.
+
+228
+00:34:15,987 --> 00:34:17,427
+X is equal to
+
+229
+00:34:29,364 --> 00:34:39,083
+G and H are continuous functions.
+
+230
+00:34:42,083 --> 00:34:42,844
+Okay.
+
+231
+00:34:45,203 --> 00:34:51,583
+Now, so in this case, in this case, we rotate our region.
+
+232
+00:34:51,583 --> 00:34:52,403
+So here,
+
+233
+00:34:53,076 --> 00:35:04,115
+At the beginning, we have two independent variables for the output function z here, input x, second input y.
+
+234
+00:35:04,496 --> 00:35:15,716
+Now, in this case, we take x, y inputs from some region, something like that.
+
+235
+00:35:18,355 --> 00:35:20,216
+Let's say this is r.
+
+236
+00:35:21,715 --> 00:35:31,376
+Let's say this is R. Now, by applying this transformation, by the transformation,
+
+237
+00:35:38,420 --> 00:36:01,159
+So, we got a new coordinate system. So, after applying transformation, as you see, we have a new pair for inputs. Input 1, u, input 2, v. Okay. Now, so here, so we got a new coordinate system, u, v.
+
+238
+00:36:01,811 --> 00:36:10,471
+Now, in this case, your region, geometric shape of your region may change, something like that. So, for example, you got this.
+
+239
+00:36:15,411 --> 00:36:16,211
+No, we don't know.
+
+240
+00:36:16,831 --> 00:36:17,971
+Something like that, maybe.
+
+241
+00:36:23,092 --> 00:36:27,307
+Bu, bu, R'ı
+
+242
+00:36:32,148 --> 00:36:32,988
+R'
+
+243
+00:36:32,988 --> 00:36:35,268
+Ok.
+
+244
+00:36:41,012 --> 00:36:46,012
+So in this case, in this case, you have some double integration.
+
+245
+00:36:47,552 --> 00:36:50,492
+Let's say that, so this is double integration.
+
+246
+00:36:54,804 --> 00:37:02,344
+F of x, y, dA, dA is equal to dX times dY.
+
+247
+00:37:03,524 --> 00:37:20,663
+Okay, now, when you apply transformation, transformation of coordinates into this double integration, you are going to obtain, you are going to obtain, so if you do this, R times, you can write this.
+
+248
+00:37:23,860 --> 00:37:37,440
+Yani ne yazacaksınız arkadaşlar? X gördüğümüz yere, ne demiştik? GH mı demiştik? X gördüğümüz yere GUV, Y gördüğümüz yere de HUV yazacaksınız.
+
+249
+00:37:37,440 --> 00:37:40,039
+Bunu yazınca,
+
+250
+00:37:48,608 --> 00:38:10,468
+So in this case, so we got a new region integration domain, r'f, x is g of uv, y is h of uv, and so we got here Jacobian.
+
+251
+00:38:10,468 --> 00:38:14,387
+So let me write here Jacobian d.
+
+252
+00:38:15,092 --> 00:38:21,072
+x, y, over, d, u, v.
+
+253
+00:38:22,072 --> 00:38:25,652
+I will explain this.
+
+254
+00:38:27,512 --> 00:38:30,412
+Now, d, u, d, v.
+
+255
+00:38:35,635 --> 00:38:54,675
+So dy prime, so this is da, so da, where da is dxdy, where da prime, da prime is du dv or dv du, okay?
+
+256
+00:38:55,188 --> 00:39:23,148
+Now, attention here. So you consider sufficient a small point here. In this case, you consider this point, sufficient a small point as a sufficient a small square. If you make zoom here, so you got some sufficient small square. But after applying this transformation, your sufficient a small square will take another geometric shape. So in order to compute the area of this geometric shape of
+
+257
+00:39:23,188 --> 00:39:43,967
+You are going to obtain this. Dikkat edin, o yeterince küçük nokta, yeterince küçük kare olarak düşündüğünüz, o yeterince küçük kareyi arkadaşlar, bu değişken dönüşümünü yaptığınızda, o yeterince küçük karenin alanı değişecektir. O da işte bu şekilde hesaplandı. Bu kare içine, daire içine aldığım şekilde. Peki nedir burada arkadaşlar? Ver, ver.
+
+258
+00:39:45,547 --> 00:39:48,148
+So this is called Jacobian.
+
+259
+00:39:52,851 --> 00:40:13,851
+So, attention here. In this case, x depends on u and v. Y depends on u and v. We can talk about partial derivation of dependent variable with respect to independent variable. So we use determinants, symbol, derivation of x with respect to u here. Let me use...
+
+260
+00:40:14,159 --> 00:40:30,699
+Let me use this color, derivation of x with respect to u here, and derivation of x with respect to v here, and let me use red color, derivation of y with respect to u here, and derivation of y with respect to v right here.
+
+261
+00:40:31,731 --> 00:40:49,311
+Okay, now this means that x is differentiable function with respect to u and with respect to v. So this is another precondition. Otherwise you cannot obtain this transitation. Okay, you need to put the second precondition. X and y have to be
+
+262
+00:40:50,356 --> 00:41:10,216
+Dikkat edin arkadaşlar. X'in ve Y'nin U'ya ve V'ye göre B'lerin hep bir olduğunu görmemiz lazım. Tamam mı arkadaşlar? Burası anlaşıldı. Burada şöyle bir gerçek var arkadaşlar. Bu nedir biliyor musunuz? Şöyle yazabilirim ben.
+
+263
+00:41:10,612 --> 00:41:31,351
+duv birbirinin tersidir. Yani ben bir bölü şöyle yazabilirim. d yer değiştirebilirim bunu. duv bölü dxy yazabilirim. Böyle bir özellik var. Bu ne demektir o zaman? Bu nedir? Bu da arkadaşlar şu yazıyorum.
+
+264
+00:41:33,588 --> 00:41:41,867
+U'nun X'e göre, U'nun Y'ye göre, B'nin X'e göre, B'nin Y'ye göre. Herhalde anlaşıldı bunlar.
+
+265
+00:41:42,688 --> 00:41:48,008
+Any question about these properties? Burada sorusu olan var mı?
+
+266
+00:41:50,108 --> 00:41:55,088
+Jakobiyen'in nereden geldiği müfredat dışı anlatmıyorum. Sadece bu kısmı veriyorum. Geçiyorum arkadaşlar.
+
+267
+00:41:58,188 --> 00:42:01,168
+Burada olanlar burada yazabilir mi? Kaç kişi var merak ettim.
+
+268
+00:42:03,219 --> 00:42:07,259
+68 gözüküyor ama herhalde yine 25-30 kişiyle ders yapıyoruz.
+
+269
+00:42:22,739 --> 00:42:24,199
+Evet, tahmin ettiğim gibi.
+
+270
+00:42:28,436 --> 00:42:30,376
+Güzel. Devam.
+
+271
+00:42:32,056 --> 00:42:33,335
+Okay, let's go on.
+
+272
+00:42:35,096 --> 00:42:36,876
+Let me introduce some example.
+
+273
+00:42:43,827 --> 00:42:44,867
+Example
+
+274
+00:43:05,076 --> 00:43:22,456
+y over 4, so y over 2, sorry, y over 2 plus 1, 2x minus y over 2, da.
+
+275
+00:43:22,456 --> 00:43:23,596
+Okay.
+
+276
+00:43:25,736 --> 00:43:29,016
+By transformation.
+
+277
+00:43:37,076 --> 00:43:46,895
+u is equal to 2x minus y over 2, and v is equal to y over 2.
+
+278
+00:43:48,775 --> 00:43:49,576
+Okay.
+
+279
+00:43:51,975 --> 00:43:56,635
+Now, so, you may see such question in the final exam.
+
+280
+00:43:57,364 --> 00:44:06,664
+You are given some double integration in terms of x and y coordinates and some transformations for x y coordinates.
+
+281
+00:44:07,503 --> 00:44:15,503
+Okay, and you are asked to express your double, original double integration in terms of new coordinate system, uv.
+
+282
+00:44:16,124 --> 00:44:21,344
+So, first of all, we need to, we need to express, we need to.
+
+283
+00:44:22,452 --> 00:44:24,452
+Şimdi bu region.
+
+284
+00:44:24,452 --> 00:44:26,452
+Bakın, x,
+
+285
+00:44:28,452 --> 00:44:30,452
+bu y, bu y.
+
+286
+00:44:30,452 --> 00:44:32,452
+Bu y.
+
+287
+00:44:50,260 --> 00:44:53,720
+...given in terms of x, y coordinate.
+
+288
+00:44:53,720 --> 00:44:54,640
+So this is R.
+
+289
+00:44:54,640 --> 00:44:56,760
+Okay, so this is R.
+
+290
+00:44:57,280 --> 00:45:01,380
+Now, focus on this transformation.
+
+291
+00:45:02,300 --> 00:45:04,220
+Let me simplify this.
+
+292
+00:45:04,380 --> 00:45:06,080
+U is equal to...
+
+293
+00:45:06,080 --> 00:45:07,800
+You need to express x and y.
+
+294
+00:45:08,120 --> 00:45:09,680
+Okay, with respect to u.
+
+295
+00:45:09,760 --> 00:45:11,340
+But you don't need to do this.
+
+296
+00:45:11,340 --> 00:45:14,400
+But so in order to get easily this,
+
+297
+00:45:14,900 --> 00:45:15,940
+in order to...
+
+298
+00:45:17,556 --> 00:45:35,115
+get is this, let's express x and y in terms of u and v. So we got this x minus y over 2 and v is equal to y over 2. Okay, as you see if you substitute this, so y is equal to 2v.
+
+299
+00:45:37,115 --> 00:45:39,836
+And so x is equal to
+
+300
+00:45:39,836 --> 00:45:42,896
+u plus
+
+301
+00:45:42,896 --> 00:45:44,635
+v.
+
+302
+00:45:45,940 --> 00:45:46,840
+Can you see that?
+
+303
+00:45:51,360 --> 00:45:53,239
+Okay, so this is very important.
+
+304
+00:45:54,179 --> 00:46:03,599
+So in order to make similarity between this structure, x is equal to g of uv, and y is equal to h of uv.
+
+305
+00:46:03,799 --> 00:46:05,440
+Okay, so this is g, this is h.
+
+306
+00:46:05,440 --> 00:46:10,739
+So as you see, so we have continuous and differentiable function.
+
+307
+00:46:11,603 --> 00:46:27,883
+u ve v. Can you see that? So this is a very important condition. Now, so, let's express this r in terms of u ve v. So we know that y over 2 is equal to v.
+
+308
+00:46:28,883 --> 00:46:34,623
+Because y and iki v are some. So by substituting y is equal to 2 v.
+
+309
+00:46:39,668 --> 00:46:43,088
+X yerine U artı V yazarsam.
+
+310
+00:46:46,708 --> 00:46:49,168
+Y bölü 2 arkadaşlar, o da V.
+
+311
+00:46:56,019 --> 00:47:02,500
+Gördünüz mü arkadaşlar? Ben burada ne bulurum? O zaman, V'miz, işlem hatası mı yaptık?
+
+312
+00:47:04,300 --> 00:47:12,240
+V'miz sıfırdan ikiye değişiyor. U'muz da sıfırdan bire değişiyor.
+
+313
+00:47:14,360 --> 00:47:16,119
+Bu şekilde değil mi gençler?
+
+314
+00:47:20,211 --> 00:47:45,711
+Okay, I think everyone got this idea. By substituting x is equal to u plus b, y is equal to 2v into inequalities giving us the region r. You are going to obtain a new region in terms of u-b coordinate system. Look at here. So this is not rectangular region, not rectangular region.
+
+315
+00:47:47,155 --> 00:47:54,155
+Bu yüzden bu
+
+316
+00:47:54,155 --> 00:48:13,155
+Bu
+
+317
+00:48:12,128 --> 00:48:35,088
+Dikkat edin. Sırasını önemsemeksizin, herhangi bir sırada integral alabilirsin. Çünkü yeni değişkenler cinsinden benim çift katlı integralim artı. Ne oldu arkadaşlar? Yani R üzerinde aldım. Ne oldu? 2x-y bölü 2da yeni koordinatlar cinsinden ne oluyor?
+
+318
+00:48:39,956 --> 00:48:59,615
+U sıfırdan U bire. Ondan sonra V değişiyor. Sıfırdan V ikiye. Şunu da yaparsanız, X gördüğünüz yere ne yazacaksınız? U artı V, Y gördüğünüz yere yazarsak arkadaşlar ne geliyor? Yazalım.
+
+319
+00:49:06,996 --> 00:49:08,235
+yazalım.
+
+320
+00:49:08,776 --> 00:49:10,956
+DA'yı gördüğümüz yere ne yazacaktık arkadaşlar?
+
+321
+00:49:11,356 --> 00:49:11,876
+Jacobian.
+
+322
+00:49:12,615 --> 00:49:14,115
+X, Y.
+
+323
+00:49:14,956 --> 00:49:17,036
+X, Y'yi kime dönüştürmüştük?
+
+324
+00:49:17,396 --> 00:49:18,936
+U, V'ye dönüştürmüştük.
+
+325
+00:49:19,655 --> 00:49:23,476
+Bunu yazacaksınız. İlk önce V'ye göre alacağım. İlk önce V'yi yazdım.
+
+326
+00:49:24,076 --> 00:49:26,916
+Ondan sonra U'ya göre alacağım. Ondan sonra U'yu yazdım.
+
+327
+00:49:26,916 --> 00:49:27,436
+Tamam mı?
+
+328
+00:49:28,536 --> 00:49:29,615
+Herhalde anlaşıldı.
+
+329
+00:49:32,083 --> 00:50:00,000
+Tamam mı? Şunu hesaplamak zorundayım. Let me compute this. Let's compute this. Okay, by using this. Determinant, derivation of x with respect to u, derivation of x with respect to u, 1. Derivation of x with respect to v, 1. Derivation of y with respect to u, here. Derivation of y with respect to u, 1.
+
+330
+00:50:00,000 --> 00:50:06,000
+U'un 0'ı, ve derivisiyonlar, y'un v'un 2'ı, ok?
+
+331
+00:50:06,539 --> 00:50:09,619
+So, this is Jacobian, so this is the 2.
+
+332
+00:50:11,059 --> 00:50:16,379
+Okay, now, so let me follow from here, from 0 to 1.
+
+333
+00:50:16,719 --> 00:50:18,559
+From 0 to 2.
+
+334
+00:50:19,299 --> 00:50:20,960
+Şunlar 2V'ler gitti.
+
+335
+00:50:21,179 --> 00:50:22,599
+U ne geliyor arkadaşlar?
+
+336
+00:50:22,879 --> 00:50:23,579
+2'ler gitti.
+
+337
+00:50:23,759 --> 00:50:25,259
+2U, 2 buradan geldi.
+
+338
+00:50:25,419 --> 00:50:25,659
+Değil mi?
+
+339
+00:50:26,259 --> 00:50:28,919
+Arkadaşlar, 2U'umuz kaldı burada.
+
+340
+00:50:29,480 --> 00:50:32,359
+2U, D, V, D, U.
+
+341
+00:50:33,079 --> 00:50:33,399
+Evet.
+
+342
+00:50:34,500 --> 00:50:36,259
+Bu şekilde hesaplarsanız,
+
+343
+00:50:37,159 --> 00:50:40,419
+sıfırdan 1'e, ilk önce V'ye göre integral alacağız.
+
+344
+00:50:40,419 --> 00:50:41,619
+2U, V.
+
+345
+00:50:42,739 --> 00:50:56,420
+0'dan 2'ye, du, ilk önce b'ye göre integral alıyoruz, dikkatinizi çekeriz. Ne olur? 4u, ondan sonra u'ya göre integral alıyorsunuz, değerli arkadaşlar.
+
+346
+00:50:58,059 --> 00:51:06,699
+4u kare bölü 2, 0'dan 1'e, ne geliyor arkadaşlar? Cevap 2 mi geliyor?
+
+347
+00:51:09,108 --> 00:51:10,668
+Bir yerde hata yapmadık değil mi?
+
+348
+00:51:25,460 --> 00:51:30,519
+Evet, devam. İşlem hatası yapmadıysak doğru, mantık doğru.
+
+349
+00:51:38,675 --> 00:51:40,576
+Herhalde anlaşılır değerli arkadaşlar.
+
+350
+00:51:41,596 --> 00:51:44,495
+Şimdi, bir de arkadaşlar,
+
+351
+00:51:47,675 --> 00:51:51,375
+50 dakika olmuş. Bir ara verelim arkadaşlar, aradan sonra devam edeceğiz.
+
+352
+00:51:51,875 --> 00:51:54,935
+Aradan sonra soru çözümlerine başlayacağım. Birkaç konu kaldı.
+
+353
+00:51:55,415 --> 00:51:58,675
+Has olmayan integraller var. Onu da soru üzerinden anlatacağım.
+
+354
+00:51:59,255 --> 00:52:02,415
+Konumuz kalmadı gibi duruyor. Bundan sonra full soru çözeceğiz.
+
+355
+00:52:02,815 --> 00:52:04,175
+Şansızsınız yaklaşık.
+
+356
+00:52:04,563 --> 00:52:14,923
+7-8 saat full soru çözeceğiz. Finale sizi hazırlayacağız genel soru çözümü yaparak. Sorusu olan yoksa, 15 dakika ara veriyorum gençler.
+
+357
+00:52:14,923 --> 00:52:20,163
+If you don't have an equation, so just give some break.
+
+358
+00:52:54,771 --> 00:52:57,512
+15 dakika ara gençler. Görüşürüz 15 dakikada sonra.
+
+359
+01:14:37,652 --> 01:14:40,131
+Evet, merhaba arkadaşlar. Sesim geliyor galiba.
+
+360
+01:14:46,163 --> 01:14:49,123
+Ok, let's do some general exercises.
+
+361
+01:14:51,123 --> 01:14:51,564
+Ok.
+
+362
+01:14:57,427 --> 01:15:08,587
+Exercises. So the first exercise is about double integration. Please try to solve these problems. Equation 1.
+
+363
+01:15:11,167 --> 01:15:22,768
+Let me use blue color. So compute this double integration from 0 to 1. So from square root of y to
+
+364
+01:15:24,532 --> 01:15:45,212
+1, ok, radikal of 4 plus x3, and dxdy. So let's compute this double integration. You may see such problem in the final exam.
+
+365
+01:15:47,332 --> 01:15:48,212
+Ok.
+
+366
+01:15:48,851 --> 01:15:53,851
+İkincisi, soruda verilen orijinal sırasına göre,
+
+367
+01:16:06,771 --> 01:16:15,012
+Bu çift katlı integral kolay bir şekilde hesaplanabilir mi, hesaplanamaz mı? Bunu belirlemeye çalışacaksınız değerli arkadaşlar.
+
+368
+01:16:15,891 --> 01:16:26,032
+Mesela kare kök içinde 4 artı x küp, bunun integralini x'e göre, şimdi soruda verilen haliyle ilk önce x'e göre integral al diyor.
+
+369
+01:16:26,032 --> 01:16:30,192
+Bu haliyle x'e göre integrali almak.
+
+370
+01:16:30,579 --> 01:16:38,680
+işlemlerini yapmak kolay mı değerli arkadaşlar? Kare kök içinde 4 artı x küpünün integralini almak kolay mı? X'e göre.
+
+371
+01:16:46,676 --> 01:17:10,916
+Evet, düşündünüz değil mi? X'e göre integral almak kolay değil. Mecburen Y'ye göre integral alacaksınız. O zaman çubuğunuzu tarayan, bölgenizi tarayan çubuğun pozisyonunu değiştireceksiniz. İlk önce soruda verilen haliyle çubuğu nasıl konumlandırılmış onu belirleyeceksiniz.
+
+372
+01:17:11,347 --> 01:17:22,847
+Daha sonra o çubuğun pozisyonunu değiştireceksiniz. Dikeyse yatay, yataysa dikey hale getireceksiniz. Ve integrali yeniden kurulayacaksınız değerli arkadaşlar. Tamam mı?
+
+373
+01:17:29,811 --> 01:17:40,371
+Evet, [öğrenci]. Oradasın değil mi [öğrenci]? Soruda verilen haliyle, çubuk bölgemizi dikey bir şekilde mi tarıyor, yatay bir şekilde mi tarar [öğrenci]?
+
+374
+01:17:43,796 --> 01:17:54,115
+Soruda verilen integral sırasına göre, biz dikey kesitlerle mi integral hesaplıyoruz, yatay kesitlerle mi? Soruda istenilen şey hangisi?
+
+375
+01:17:55,976 --> 01:17:57,115
+Diyorsunuz değil mi gençler?
+
+376
+01:18:26,771 --> 01:18:30,092
+Evet, sen cevap ver. Yaptın, hesapladın mı?
+
+377
+01:18:32,731 --> 01:18:38,692
+Soruda verilen haliyle, çubuğun konu mu? Yatay mı, dikey mi?
+
+378
+01:18:51,667 --> 01:19:01,987
+Ok, so first of all consider this x is equal to square root of y, x is equal to 1, y is equal to 0, and y is equal to 1.
+
+379
+01:19:02,447 --> 01:19:09,467
+So this means that your bar scans your region by horizontal cross sections.
+
+380
+01:19:09,467 --> 01:19:17,647
+At right hand side, so we have at right hand side, we have x is equal to 1.
+
+381
+01:19:18,452 --> 01:19:27,051
+At the left-hand side of this horizontal bar, so we have x is equal to square to y.
+
+382
+01:19:27,752 --> 01:19:29,551
+Okay, here.
+
+383
+01:19:30,092 --> 01:19:36,352
+Now, so in order to compute this double integration easily, so we need to sketch our region.
+
+384
+01:19:36,872 --> 01:19:38,332
+So let's sketch our region.
+
+385
+01:19:42,092 --> 01:19:44,051
+Now, so we...
+
+386
+01:19:45,444 --> 01:19:49,444
+Bu
+
+387
+01:19:44,916 --> 01:20:05,136
+Y'a y
+
+388
+01:20:05,136 --> 01:20:32,056
+Skiber, both sides of the equality x squared is equal to y. So this means that we consider a positive arm of parabolic curve. This is x is equal to square root of y. Now, so attention here. So which one is our region? Is this our region or is this our region? Which one is our region?
+
+389
+01:20:33,971 --> 01:20:37,971
+Bu koncentrasyon, bu koncentrasyon, bu koncentrasyon,
+
+390
+01:20:37,971 --> 01:20:45,971
+bu koncentrasyon, bu koncentrasyon,
+
+391
+01:20:45,971 --> 01:20:56,171
+bu koncentrasyon, bu koncentrasyon, bu koncentrasyon,
+
+392
+01:21:31,539 --> 01:21:58,479
+Okay, now one of you say, one of you say A, one of you say B. Which one is? I think one of you make mistake. Okay, so let's figure out, let's verify, let's verify our region. So, look at here, if you put here some, let me put red bar here.
+
+393
+01:22:00,595 --> 01:22:13,935
+Now, as you see, this red bar, scan our region from the minimum level y0 and the maximum level y1. Okay, so that's good.
+
+394
+01:22:15,195 --> 01:22:27,975
+And during this horizontal scanning, right hand point is always on the x1, left hand point is always on the x square root of y. Okay, that's true. The answer is b.
+
+395
+01:22:29,832 --> 01:22:33,832
+bu koncentrasyon, bu koncentrasyon, bu koncentrasyon,
+
+396
+01:22:28,532 --> 01:22:30,532
+Y'e bu.
+
+397
+01:22:30,532 --> 01:22:32,532
+Şimdi bu birçok.
+
+398
+01:22:32,532 --> 01:22:36,532
+Birçok bir par var.
+
+399
+01:22:36,532 --> 01:22:40,532
+Bir par var.
+
+400
+01:22:40,532 --> 01:22:56,032
+Y'e bu par var.
+
+401
+01:22:50,720 --> 01:23:11,500
+Bu da bu
+
+402
+01:23:11,572 --> 01:23:17,092
+I think everyone that how to verify your region by using integration limits.
+
+403
+01:23:17,092 --> 01:23:19,672
+Okay, our region is B, not A.
+
+404
+01:23:33,779 --> 01:23:43,359
+Dikkat edin, integrasyon sınırlarını çubuğunuzun üzerine yerleştirdiğinizde, taradığınızda uyumlu olması lazım. Eğer uyumlu gelmiyorsa hata yapmışsınız demektir arkadaşlar. Tamam.
+
+405
+01:23:44,079 --> 01:23:52,219
+Okay. Now, so, in order to easily compute our double integration, we need to change position of our bar.
+
+406
+01:23:52,219 --> 01:23:58,559
+Okay, let me use black color or blue color, doesn't matter.
+
+407
+01:23:59,028 --> 01:24:25,324
+Bu birkaç
+
+408
+01:24:26,547 --> 01:24:39,387
+Upper end point is always on the y is equal to x squared, and lower end point is always on the y is equal to zero.
+
+409
+01:24:40,188 --> 01:24:42,188
+Okay, y is equal to zero.
+
+410
+01:24:43,007 --> 01:24:48,268
+Now, so in this case, we first integrate with respect to y, not x.
+
+411
+01:24:53,971 --> 01:25:00,391
+So from 0 to 1, from now we are ready to integrate this.
+
+412
+01:25:01,331 --> 01:25:06,471
+As you see square root of 4 plus x cube is independent from y, that is constant.
+
+413
+01:25:07,051 --> 01:25:11,211
+So that's why if we integrate this term with respect to y, you are going to obtain this.
+
+414
+01:25:11,791 --> 01:25:14,931
+4 plus x cube times y.
+
+415
+01:25:15,631 --> 01:25:17,492
+So let's apply fundamental theorem.
+
+416
+01:25:18,691 --> 01:25:19,731
+Part 2.
+
+417
+01:25:26,579 --> 01:25:32,420
+From 0 to 1, just substitute upper bound and lower bound.
+
+418
+01:25:38,452 --> 01:25:58,512
+Now, as you see, we need to do change of variable substitution method. Let's say 4 plus x cubed is equal to u, 3x squared dx du. x squared dx is equal to 1 over 1 over 3 du.
+
+419
+01:25:59,475 --> 01:26:09,095
+ve, if you change lower bounds and upper bounds, if you substitute x0 into this transformation, we are going to obtain lower bounds for u0, u0 is 4.
+
+420
+01:26:09,556 --> 01:26:18,315
+If you substitute upper bounds for x into this transformation, you are going to obtain upper bounds for u, which is 5.
+
+421
+01:26:19,615 --> 01:26:23,475
+And so, if you substitute u is equal to 4 plus...
+
+422
+01:26:24,148 --> 01:26:31,788
+X'cubre, we are going to obtain this, and X'cquared dx is equal to 1 over 3 eu, 1 over 3 we wrote here.
+
+423
+01:26:32,688 --> 01:26:41,208
+Okay, so as you see, we can easily transform this problem into a new single multiple integration, depending on u.
+
+424
+01:26:41,208 --> 01:26:46,208
+So, 1 over 3 u to power.
+
+425
+01:26:46,899 --> 01:26:49,879
+3 over 2 over 3 over 2.
+
+426
+01:26:50,260 --> 01:26:58,319
+Okay, now, so lower bound, upper bound, if you apply fundamental theorem part 2, you are going to obtain some answers.
+
+427
+01:26:59,039 --> 01:27:01,799
+Okay, any question about this solution?
+
+428
+01:27:03,579 --> 01:27:06,659
+Do not hesitate. If you have any question, just ask.
+
+429
+01:27:07,659 --> 01:27:09,420
+Okay, soru soran yok galiba.
+
+430
+01:27:10,420 --> 01:27:10,799
+Geçiyorum.
+
+431
+01:27:19,667 --> 01:27:20,987
+Okay, next question.
+
+432
+01:27:22,647 --> 01:27:24,407
+So, let's make it bigger.
+
+433
+01:27:29,844 --> 01:27:39,003
+So, given some region, given some region R bounded,
+
+434
+01:27:43,060 --> 01:28:01,540
+Y zero line, horizontal line, y is equal to x line, and y is equal to square root of 4 minus x square.
+
+435
+01:28:08,884 --> 01:28:11,703
+daha, compute, disintegration.
+
+436
+01:28:17,716 --> 01:28:42,731
+İlk olarak, bu kısımda, 2x y
+
+437
+01:28:43,347 --> 01:28:57,907
+Ok, recall the fact that if you have some region which is associated with some circle or some circular shell, it is better to do this computation in terms of polar coordinates.
+
+438
+01:28:57,907 --> 01:29:05,028
+Ok, I think this is about computing double integration in terms of polar coordinates.
+
+439
+01:29:05,788 --> 01:29:07,488
+I think everyone can see this.
+
+440
+01:29:21,363 --> 01:29:23,083
+Evet gençler, yapıyorsunuz değil mi?
+
+441
+01:29:28,307 --> 01:29:34,788
+Bu kolay, zor bir integral gelmeyecek. Önemli olan dönüşümü düzgün bir şekilde yapabiliyor olmak.
+
+442
+01:30:32,275 --> 01:30:32,695
+Evet.
+
+443
+01:31:23,475 --> 01:31:26,435
+Cevap 1. Biri bulan var mı?
+
+444
+01:31:45,811 --> 01:31:53,091
+Hatta payıda arkadaşlar, kartezyen koordinatlarda noktayı yeterince küçük bir kare olarak düşünüyorduk.
+
+445
+01:31:53,731 --> 01:31:58,412
+Bir kenar uzunluğu dx, diğeri kare ya da dikdörtgen fark etmez.
+
+446
+01:31:59,211 --> 01:32:00,931
+dx, dy şeklinde.
+
+447
+01:32:10,579 --> 01:32:19,020
+Yani kare olarak düşünebilirsiniz. Birisi oradaki yönlerden birisi x doğrultusunda, ötekisi y doğrultusunda olduğundan dx, dy demeniz lazım.
+
+448
+01:32:20,000 --> 01:32:28,260
+Ona dikkat edin. Aslında orada noktalarını ne yapıyorsunuz arkadaşlar? Hem x yönünde hem y yönünde değiştiriyorsunuz. O yüzden dx ve dy demeniz gerekir.
+
+449
+01:32:29,920 --> 01:32:37,399
+Türev'in mantığını düşünecek olursanız, iki değişkenli noktayı iki farklı yönde hareket ettiriyorsunuz.
+
+450
+01:32:38,323 --> 01:32:39,523
+Ona dikkat edeceksiniz.
+
+451
+01:32:40,663 --> 01:32:41,083
+Evet.
+
+452
+01:32:45,587 --> 01:33:03,427
+Kutupsala geçince ne olacak arkadaşlar? O kare bölgeniz, noktanın kare olarak düşünülmüş hali, bu sefer yeterince küçük bir daire dilinci olarak düşünülecek. O da nedir? Kartezen değil de kutupsal koordinatlarda R, D, R, D, T, T. Tamam mı?
+
+453
+01:33:12,020 --> 01:33:13,720
+Evet, bulan yok mu gençler?
+
+454
+01:33:17,524 --> 01:33:18,604
+[öğrenci] buldun mu?
+
+455
+01:33:33,363 --> 01:33:37,343
+[öğrenci] bölgeyi çizdin mi ilk önce? Bölgeyi belirledin mi?
+
+456
+01:33:40,563 --> 01:33:42,323
+Bölgeyi belirle ilk önce [öğrenci].
+
+457
+01:33:44,903 --> 01:33:46,243
+Bölgemiz nasıl bir bölge?
+
+458
+01:33:49,183 --> 01:33:51,304
+Pizza dilimi gibi bir bölge, doğru mu?
+
+459
+01:33:52,884 --> 01:33:57,003
+Y eşittir x'in altında, çemberin içinde.
+
+460
+01:34:01,684 --> 01:34:05,484
+Dikkat edin, y eşittir, sıfır doğrusu, x 80'i,
+
+461
+01:34:10,068 --> 01:34:11,268
+y eşittir 0
+
+462
+01:34:11,268 --> 01:34:13,987
+dedik.
+
+463
+01:34:14,087 --> 01:34:15,247
+y eşittir x
+
+464
+01:34:15,247 --> 01:34:18,268
+orada bir şey eksik aslında.
+
+465
+01:34:19,487 --> 01:34:19,987
+bölgeyi
+
+466
+01:34:19,987 --> 01:34:24,108
+bölgede bir şeyler eksik verilmiş galiba.
+
+467
+01:34:24,667 --> 01:34:26,188
+Evet. Devam ediyoruz arkadaşlar.
+
+468
+01:34:26,327 --> 01:34:27,768
+Ben yapayım. Okey.
+
+469
+01:34:32,979 --> 01:34:36,679
+Gerçi eksik var mı bakalım. Beraber çizerek görelim eksik var mı yok mu.
+
+470
+01:34:42,195 --> 01:34:46,796
+Bu, y-axis, y-axis, consider the upper semicircle,
+
+471
+01:34:49,396 --> 01:34:50,996
+with radius 2.
+
+472
+01:34:56,083 --> 01:35:15,083
+Tamam, tamam.
+
+473
+01:35:18,836 --> 01:35:36,596
+Let me use black color for circle y is equal to radical of 4 minus x square, which is circle, and let me use red color here.
+
+474
+01:35:37,136 --> 01:35:40,956
+So as you see, 1, 2, 3, we have three boundary curves or lines.
+
+475
+01:35:41,296 --> 01:35:44,396
+Okay, now let me sketch our region.
+
+476
+01:35:44,976 --> 01:35:46,396
+So by using...
+
+477
+01:35:46,676 --> 01:35:50,276
+Yel'o, ok, so this is our region.
+
+478
+01:35:51,776 --> 01:36:10,096
+Ok, now if you try to solve this problem in terms of Cartesian coordinate, you need to scan, you need to scan your region by horizontal cross section or vertical cross section, but in that case you cannot easily integrate this with respect to either x or y.
+
+479
+01:36:10,096 --> 01:36:11,536
+So that's why
+
+480
+01:36:11,984 --> 01:36:27,924
+Ok, since you have some region which is associated with circular curve or circular region, so it is better to apply transformation of this problem into polar coordinate system.
+
+481
+01:36:27,924 --> 01:36:33,404
+Ok, so let's transform this problem into polar coordinate system.
+
+482
+01:36:33,404 --> 01:36:39,144
+So in this case, we put some bar, let me use here, this.
+
+483
+01:36:41,747 --> 01:36:48,627
+So our bar starts to rotate from the level theta 0.
+
+484
+01:36:50,427 --> 01:37:08,268
+Let me write here from theta 0 to, if we express y is equal to x in terms of polar coordinates, you are going to obtain theta is equal to pi over 4 ray from theta 0 to theta pi over 4.
+
+485
+01:37:08,627 --> 01:37:24,647
+İntek
+
+486
+01:37:31,456 --> 01:37:58,796
+Okay, now if write x is equal to r cosign theta times y is equal to r times sine theta over x squared plus y squared, x squared plus y squared is equivalent to r squared, and dxdy is equivalent to in terms of all the coordinates r, dr, d theta. I think everyone got these calculations.
+
+487
+01:37:59,956 --> 01:38:07,956
+We did so far. Herkes anladı mı buraya kadar? Var mı sorusu olan? Hocam ben anlamadım. Burası en önemli kısım.
+
+488
+01:38:10,536 --> 01:38:13,655
+Sorusu olan yoksa devam ediyorum. Bundan sonrası işlem zaten.
+
+489
+01:38:15,036 --> 01:38:25,036
+Sıfırdan pi bölü dörde, sıfırdan ikiye. İşlemleri yapacak olursak arkadaşlar, şurada re kareler gider.
+
+490
+01:38:25,587 --> 01:38:43,528
+Gördüğünüz gibi 2 tane, cos, teta, sin, teta, dr, d, teta. İlk önce, r'ye göre integral alacaksınız. 0'dan pi bölü 4'e. r'ye göre integral alarsam, şurası sin 2 teta.
+
+491
+01:38:53,140 --> 01:38:54,819
+Evet.
+
+492
+01:38:58,420 --> 01:39:10,780
+Direkt çoğunlukla direkt integral yazın şeklinde geliyor [öğrenci]. Merak etme. Ben sadece artık alışılageldiği için artık yapmak zorunda hissediyorum kendimi. Her zaman yapmıyorum bildiğiniz gibi integral sonuçlarını.
+
+493
+01:39:11,280 --> 01:39:19,260
+Sıfırdan pi bölü dörde. Ne yapıyorum? Burada dört tane sinüs 2 teta, d teta.
+
+494
+01:39:19,731 --> 01:39:25,971
+İntegralini alırsak, 4 bölü 2 çarpı sinüs 2 teta, sinüs 2 teta diyorum, pardon.
+
+495
+01:39:27,652 --> 01:39:38,791
+Ne olacak? Eksi kosünüs 2 teta, 0'dan pi bölü 4'e yaparak cevabınızı bulacaksınız arkadaşlar.
+
+496
+01:39:39,531 --> 01:39:42,811
+Üstel matası yapmadıysak, böyle geliyor.
+
+497
+01:39:45,747 --> 01:40:12,967
+Bir yerde işlem hatası yaptık mı? Bak buradaki reyi unutmuşuz. Gördünüz mü? Buradaki reyi unutmuşuz. Şöyle işlem hatası yapıyoruz. Buradaki reyi unutmuşuz. Görmemişiz. R, re kare bölü 2. O zaman burası ne oluyor arkadaşlar? 2. Gördüğünüz gibi arkadaşlar, şurası eksi kosünüs 2 teta gelecek.
+
+498
+01:40:14,036 --> 01:40:19,115
+Tamam. Bunu da yaparsanız arkadaşlar, cevap 1 gelecek.
+
+499
+01:40:23,475 --> 01:40:28,576
+Evet. Bak adım adım giderseniz hatanızı görebiliyorsunuz kontrol ettiğinizde.
+
+500
+01:40:28,576 --> 01:40:37,475
+Okey, any question? You may see such question in the final exam. Final sınavında bu tarz sorularla karşılaşacaksınız.
+
+501
+01:40:38,296 --> 01:40:44,796
+Bütünlemeye kalmayın. İyi çalışın. Bütünleme daha zor olacak. Onu belirteyim size.
+
+502
+01:40:55,444 --> 01:41:00,384
+Let's go on. Okay, this is your, this is your task. Please try to solve this problem.
+
+503
+01:41:04,692 --> 01:41:07,731
+So let me use black color.
+
+504
+01:41:09,351 --> 01:41:13,231
+From 0,
+
+505
+01:41:14,391 --> 01:41:15,311
+To 1,
+
+506
+01:41:16,771 --> 01:41:18,412
+From,
+
+507
+01:41:24,307 --> 01:41:28,728
+y to 1,
+
+508
+01:41:30,128 --> 01:41:30,788
+exponential,
+
+509
+01:41:32,087 --> 01:41:33,247
+minus x square,
+
+510
+01:41:34,807 --> 01:41:36,087
+dx, dy.
+
+511
+01:41:36,728 --> 01:41:39,528
+Okay, let's try to solve this double integration.
+
+512
+01:41:41,528 --> 01:41:42,247
+Evet.
+
+513
+01:41:46,771 --> 01:41:54,211
+Sınavda ne sorarlar? Bunun integrasyon sırasını değiştirirseniz ya da bu integral aşağıdakilerden hangisine eşittir?
+
+514
+01:41:55,012 --> 01:42:02,952
+Farklı bir integral. Aslında integrasyon sırasının değiştirilmesiyle elde edilen diğer bir integral. Diğer halini sorabilirler.
+
+515
+01:42:20,467 --> 01:42:22,967
+Bekliyorum arkadaşlar. Sizler yapmaya çalışın.
+
+516
+01:43:04,979 --> 01:43:12,459
+Evet, mecburen ne yapacaksınız arkadaşlar? İntegrasyon sırasını değiştireceksiniz. Herkes bunu gördü galiba.
+
+517
+01:43:13,359 --> 01:43:23,759
+As you see, if you try to solve this problem by, okay, with respect to x, first, it is not easy.
+
+518
+01:43:24,679 --> 01:43:28,559
+You cannot easily integrate explanation minus x squared with respect to x.
+
+519
+01:43:29,692 --> 01:43:38,692
+Tamam, tamam.
+
+520
+01:43:28,912 --> 01:43:37,644
+Bu nedenle, bu termen y'invekli bir y'invekli bir y'invekli bir y'invekli bir y'invekli bir y'invekli bir y'invekli bir y'invekli bir y'invekli bir y'invekli bir y'invekli bir y'invekli bir y'invekli bir y'invekli bir y'invekli bir y'invekli bir y'invekli bir y'invekli bir y'invekli bir y'invekli bir y'invekli bir y'invekli bir y'invekli bir y'invekli bir y'invekli bir y'invekli bir y'invekli bir y'invekli bir y'invekli bir y'invekli bir y'invekli
+
+521
+01:44:52,756 --> 01:44:54,716
+Evet, bulan var mı değerli arkadaşlar?
+
+522
+01:47:37,427 --> 01:47:37,728
+Evet.
+
+523
+01:48:11,636 --> 01:48:16,676
+Bir bölü iki güzel, [öğrenci] bulmuş. Okay, let's do it together.
+
+524
+01:48:19,156 --> 01:48:31,836
+Okay, first of all, let's sketch our region. So as you see, so this is x is equal to y, x is equal to 1, so this is y is equal to 0, this is y is equal to 1.
+
+525
+01:48:31,836 --> 01:48:34,336
+So first of all, let's sketch this region.
+
+526
+01:48:36,948 --> 01:48:41,148
+Y0, Y1, somewhere here.
+
+527
+01:48:46,739 --> 01:48:50,159
+y is equal to x, x is equal to y, here.
+
+528
+01:48:53,079 --> 01:49:02,960
+Now, if you put, if you put this bar, so here, horizontal bar, is that correct?
+
+529
+01:49:03,840 --> 01:49:08,876
+It is our region? No, this is not correct. Look at here, right-hand point is always on the...
+
+530
+01:49:09,235 --> 01:49:19,235
+X is equal to Y, but that's why, you cannot see here, X is equal to Y, so this is mistake. Okay, not this. Okay, let me...
+
+531
+01:49:27,095 --> 01:49:29,095
+Tamam, tamam.
+
+532
+01:49:26,547 --> 01:49:44,779
+Bu bizim
+
+533
+01:49:44,819 --> 01:50:12,811
+Ve bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu böl
+
+534
+01:50:13,108 --> 01:50:19,007
+This is 0, this is 1, from x0 to x1.
+
+535
+01:50:19,868 --> 01:50:23,608
+So we scan our region by vertical cross-sections.
+
+536
+01:50:24,228 --> 01:50:33,828
+During this vertical cross, vertical scanning, upper end point is always on the y is equal to x, and lower end point is always on the y0.
+
+537
+01:50:34,708 --> 01:50:35,768
+Okay, can you see that?
+
+538
+01:50:36,188 --> 01:50:38,108
+Now here, so...
+
+539
+01:50:38,260 --> 01:50:50,280
+Explanation minus x squared, which is integral function, we first integrate with respect to y because of this fact, attention here, then we integrate obtain result with respect to x.
+
+540
+01:50:50,280 --> 01:51:03,540
+So we got this. So from 0 to 1, explanation minus x squared times y, so from y0 to yx, so we apply fundamental theorem.
+
+541
+01:51:04,064 --> 01:51:06,984
+Part 2 from 0 to 1.
+
+542
+01:51:07,484 --> 01:51:10,584
+So, x-square times x.
+
+543
+01:51:11,124 --> 01:51:15,543
+And we are going to obtain 0 being substituted by 0 into integral result.
+
+544
+01:51:15,884 --> 01:51:17,264
+Okay, now we got this.
+
+545
+01:51:17,264 --> 01:51:20,384
+So, this is nothing else than minus 1 over 2.
+
+546
+01:51:20,744 --> 01:51:23,104
+Exponation minus x-square.
+
+547
+01:51:23,784 --> 01:51:25,484
+Okay, 0, 1.
+
+548
+01:51:26,064 --> 01:51:27,463
+Minus 1 over 2.
+
+549
+01:51:27,644 --> 01:51:29,084
+Exponation minus 1.
+
+550
+01:51:29,555 --> 01:51:37,015
+And when you substitute 0, 1 over 2 times 1. So this is our answer. I think there's no mistake.
+
+551
+01:51:39,695 --> 01:51:40,036
+Okay.
+
+552
+01:51:41,915 --> 01:51:44,795
+Herkes herhalde buldu bunu. Basit bir soruydu.
+
+553
+01:51:45,875 --> 01:51:47,835
+Bunu herkesin bulması lazımdı.
+
+554
+01:51:52,212 --> 01:51:52,732
+Okay.
+
+555
+01:51:54,992 --> 01:51:56,472
+Let's solve this problem.
+
+556
+01:52:00,051 --> 01:52:09,471
+So example, question, whatever you say. From 1 to 2, from 1 to 2, soru mu var arkadaşlar?
+
+557
+01:52:12,891 --> 01:52:16,692
+Üstteki hacmi seçsek de aynı çıkar mı? Hacimden kastın ney [öğrenci]?
+
+558
+01:52:23,891 --> 01:52:39,711
+Üstteki bölgeyi diyorsun. Üstteki bölgeyi seçtiğinde aynı çıkmaz [öğrenci]. Çünkü e üzeri eksi x kare, üstte burada b bölgesinde farklı değerler alır. Burada farklı değerler alır.
+
+559
+01:52:43,699 --> 01:52:53,939
+Bak, gerçi x, x farklı değerler alır mı? x, y'ler farklı değerler almıyor sanki. Altta da alsam, üstte de alsam, yok farklı değerler alır.
+
+560
+01:52:56,979 --> 01:53:10,179
+Gerçi x alsam, bir dakika, x, burada x, burada da aynı zamanda x, x, x. Sanki aynı değerler gelir gibi duruyor ya. Ama bir bak bakayım sen. O şekilde al bakayım ne oluyor.
+
+561
+01:53:11,347 --> 01:53:13,668
+Aynı gelmek zorunda değil. Tamam?
+
+562
+01:53:15,467 --> 01:53:17,008
+Aynı gelmek zorunda değil.
+
+563
+01:53:17,108 --> 01:53:22,908
+E üzeri x, x kare eğer her iki tarafta da aynı değerleri alıyorsa, bütün x, y'ler için, bunu ispat etmen lazım.
+
+564
+01:53:23,048 --> 01:53:25,208
+O zaman tamam aynıdır dersin.
+
+565
+01:53:25,807 --> 01:53:25,948
+Tamam?
+
+566
+01:53:27,528 --> 01:53:27,847
+Ok.
+
+567
+01:53:28,648 --> 01:53:38,387
+Next question, from 1 to 2, integration, and from 1 over x to x.
+
+568
+01:53:40,020 --> 01:53:46,360
+x2 over y2, dy dx.
+
+569
+01:53:48,960 --> 01:53:51,460
+Evet, so for this integration,
+
+570
+01:53:53,460 --> 01:53:56,580
+for this integration, item A,
+
+571
+01:53:57,740 --> 01:53:59,420
+compute double integration,
+
+572
+01:54:03,988 --> 01:54:05,728
+Compute the integration.
+
+573
+01:54:08,307 --> 01:54:17,528
+Item B, change the order of integration.
+
+574
+01:54:18,627 --> 01:54:19,887
+Evet, herkes yapsın arkadaşlar.
+
+575
+01:57:01,876 --> 01:57:10,695
+İntegrali hesapladınız mı? Verilen sırada hesaplayabilirsiniz. Sıklık yok. Verilen sırada integrali herkes hesaplar.
+
+576
+01:57:24,212 --> 01:57:26,832
+Evet, 9 bölü 4, [öğrenci].
+
+577
+01:57:27,372 --> 01:57:27,992
+Good for you.
+
+578
+01:57:29,412 --> 01:57:34,212
+Okay, the value of this double integration is 9 over 4.
+
+579
+01:57:34,332 --> 01:57:36,811
+I think everyone can find this answer.
+
+580
+01:57:36,811 --> 01:57:48,652
+So in the test exam, generally, you are asked to compute, you are asked to express double integration by changing the order of integration.
+
+581
+01:57:48,932 --> 01:57:49,112
+Okay.
+
+582
+01:58:26,036 --> 01:58:30,955
+Evet, A şıkkı 9 bölü 4. Herkes bulmuştur galiba. B şıkkını yaptınız mı gençler?
+
+583
+01:58:58,836 --> 01:58:59,396
+Okay.
+
+584
+01:59:01,656 --> 01:59:07,496
+Now, I think item A is easy for everyone.
+
+585
+01:59:08,276 --> 01:59:15,136
+So, let's integrate this with respect to y minus x squared over y.
+
+586
+01:59:19,380 --> 01:59:30,740
+from y is equal 1 over x to y is equal to x. Daha önce bunu yapmış mıydık? Sanki bunu yaptık diye hatırlıyorum ama. Bunu yaptığınız 9 bölü 4 geliyor.
+
+587
+01:59:30,740 --> 01:59:32,560
+So item b.
+
+588
+01:59:38,484 --> 01:59:46,084
+So, first of all, in order to give answer for item b, we need to sketch our integral domain.
+
+589
+01:59:46,884 --> 01:59:50,844
+So, let's say this is y is equal to 1 over x, y is equal to x.
+
+590
+01:59:51,384 --> 02:00:00,264
+So, this is, let me use, this is x is equal to 1, this is x is equal to 2.
+
+591
+02:00:01,024 --> 02:00:03,464
+Okay, let me sketch our region.
+
+592
+02:00:04,180 --> 02:00:08,960
+Y is equal to 1 over X is something like that.
+
+593
+02:00:09,939 --> 02:00:13,140
+So this is Y is equal to 1 over X.
+
+594
+02:00:13,899 --> 02:00:18,779
+And Y is equal to X, let me use black color for Y is equal to X.
+
+595
+02:00:18,880 --> 02:00:21,039
+So this is Y is equal to X.
+
+596
+02:00:21,699 --> 02:00:23,000
+And from X1,
+
+597
+02:00:23,444 --> 02:00:42,083
+Bakın, here, from x1, interception point of y is equal to x and y is equal to 1 over x is 1. So from x1 to x2, okay, here. So we got this. Let me write x2 point somewhere here.
+
+598
+02:00:45,024 --> 02:00:50,423
+So this is our region. We can verify this by putting some bar.
+
+599
+02:00:50,815 --> 02:00:53,255
+Bu bir bu bir bar.
+
+600
+02:00:53,255 --> 02:00:54,795
+Bakın bu bu
+
+601
+02:00:54,795 --> 02:01:08,416
+bu
+
+602
+02:01:08,416 --> 02:01:12,015
+y
+
+603
+02:01:12,015 --> 02:01:30,455
+Upper endpoint is always on the yx, as you see we have y is equal to x here as upper bound for second integration symbol. And lower endpoint of this blue bar is always on the y is equal to one over x, which is seen as lower bound for second integration symbol.
+
+604
+02:01:30,795 --> 02:01:40,015
+During this vertical scanning, lower bound for vertical scanning x1 here, and upper bound for vertical scanning here x2.
+
+605
+02:01:40,255 --> 02:01:48,255
+y
+
+606
+02:01:40,015 --> 02:01:45,015
+Evet, bu konuda bu konuda var.
+
+607
+02:01:45,015 --> 02:01:50,015
+Bu konuda değiştirebilirsiniz.
+
+608
+02:01:50,015 --> 02:01:55,015
+Bu konuda bir konuda var.
+
+609
+02:01:55,015 --> 02:02:01,015
+Bu konuda var.
+
+610
+02:02:01,140 --> 02:02:13,300
+Okay, the minimum level for horizontal cross-section is y is equal to 1 over 2. From 1 over 2, horizontal level to max level y1.
+
+611
+02:02:13,716 --> 02:02:38,876
+So right-hand point is always on the add, you see x is equal to two. And left-hand point is always on the, so unit right here, x is equal to one over y. Now, during the level y one horizontal level, okay, let me use green color, so not green color, yellow color. So from the level, horizontal level, look at here.
+
+612
+02:02:39,347 --> 02:02:47,948
+y1, right-hand point is always on the x is equal to 2, left-hand point is always on the x is equal to y.
+
+613
+02:02:48,068 --> 02:02:54,268
+So this means that you cannot, you cannot compute this double integration by using only one integration.
+
+614
+02:02:54,648 --> 02:02:57,387
+So we need to use two distinct type double integration.
+
+615
+02:02:57,688 --> 02:03:06,507
+Okay, now so this i integration is equal to, let me use black color here, i integration is equal to from,
+
+616
+02:03:07,347 --> 02:03:21,688
+y is equal to 1 over 2, y is equal to 1. During this horizontal scanning, right hand point is always on the x2, left hand point is always on the x is equal to 1 over y.
+
+617
+02:03:22,307 --> 02:03:33,748
+And so we write this x squared over y squared. We first integrate with respect to x, then we integrate with respect to 1. Now plus, so from the level,
+
+618
+02:03:34,579 --> 02:04:02,079
+y1, horizontal level, to the maximum level, when you substitute x2 into here, the maximum level y2. From y1 to y2, horizontal level, okay, right-hand point is always on the x2, left-hand point is always on the xy, and again, we first integrate with respect to x, and then we integrate with respect to y.
+
+619
+02:04:02,416 --> 02:04:29,496
+Evet, var mı soru soru soru?
+
+620
+02:04:32,948 --> 02:04:37,148
+Sorusu olan yok galiba. Herkes mantığını kavradı diye düşünüyorum.
+
+621
+02:04:41,492 --> 02:04:45,211
+Biyara verelim. Ok, let's give some break. 10 minutes break.
+
+622
+02:04:52,148 --> 02:04:53,707
+Onda ki para gençler.
+
+623
+02:23:36,852 --> 02:23:40,312
+Merhaba arkadaşlar. Kaldığımız yerden devam edelim. Ders bitmedi.
+
+624
+02:23:46,708 --> 02:23:47,808
+Sesim geliyor değil mi?
+
+625
+02:23:56,211 --> 02:23:57,691
+Kalmıştık, bakıyorum.
+
+626
+02:24:05,683 --> 02:24:12,984
+çift katlı integral öğrendik mi arkadaşlar? Mantığını herkes öğrendi galiba. Öğrenmeyen kalmadı. Umarım.
+
+627
+02:24:22,420 --> 02:24:23,244
+Doğ
+
+628
+02:24:41,907 --> 02:24:45,027
+Bakıyorum, şurada güzel soru var mı? Ah, okey.
+
+629
+02:24:45,687 --> 02:24:49,847
+So, this is the volume question. You may see such question in the exam.
+
+630
+02:24:55,283 --> 02:24:56,664
+Find Volume.
+
+631
+02:25:03,092 --> 02:25:16,292
+Volume of a zone, a region, in the three-dimensional space, which is under the surface.
+
+632
+02:25:20,292 --> 02:25:27,092
+Bunu çözmüş müydük daha önce? Böyle bir şey çözmüş olabilirim. Hatırlamıyorum çözmediğimi.
+
+633
+02:25:32,051 --> 02:25:33,551
+above the region.
+
+634
+02:25:39,412 --> 02:25:41,332
+region given by
+
+635
+02:25:47,731 --> 02:25:49,131
+İnequalitesi.
+
+636
+02:25:59,667 --> 02:26:05,128
+Evet, çözmedik herhalde böyle bir şey değil mi? Bunu çözmedik diye hatırlıyorum.
+
+637
+02:26:09,843 --> 02:26:34,804
+Okay, let's try to find out the volume of solid, volume of a zone, which is under the surface, that is equal to 1 minus x squared, and above the region given by inequalities, y is bigger than 0 or equal to 0, and y is less than 1 or equal to 1, and x is bigger than or equal to 0, and x is smaller than y or equal to y.
+
+638
+02:26:34,804 --> 02:26:35,523
+Okay.
+
+639
+02:26:36,595 --> 02:27:03,095
+Dikkat edin, bir bölgenin üzerinde bir çadır var. O çadır zeminine ayağınızı bastığınızda, ayağınız arkadaşlar, xy koordinatlı olacak. O xy koordinatına karşılık gelen yükseklik sadece x'e bağlı olarak z eşitti, 1-x². Yani çadırın yüksekliği, sizin ayağınız xy konumundayken, verilen r bölgesinde, çadırın yüksekliği arkadaşlar,
+
+640
+02:27:03,584 --> 02:27:14,904
+Nasıl verilecek? 1-x² şeklinde verilecek. Böyle bir çadır yüzeyi altında, R bölgesi üzerinde, o çadırın iç hacmi arkadaşlar nedir? Soru bu aslında.
+
+641
+02:27:15,504 --> 02:27:23,684
+Soru anlaşıldı galiba. Tabi pozitif olmasına dikkat edin. Eğer pozitif değilse verilen bölgede çadırın yüksekliğini pozitif yapmak için mutlak değer Z alırsınız.
+
+642
+02:27:25,204 --> 02:27:28,463
+Mutlak değer Z, DA ile hesaplanır. Dikkatinizi çekelim.
+
+643
+02:27:36,180 --> 02:27:48,299
+Buna benzer sorular çözmüştük. Yapıyorsunuz değil mi gençler? Çadır yüksekliğini belirleyin. Mutlak dereçli Z1-Z2 normalde çadır yüksekliği. 200'e yarasında kalan bölgenin hacmi sorulabilir.
+
+644
+02:27:48,852 --> 02:27:59,711
+O zaman o bölgenin iki yüzeyin arasını, iki yüzeyi destekleyen arkadaşlar, bir tane çubuk koyarsınız, direk koyarsınız. Direğin 3 noktası işte Z1'de olur, alt 3 noktası Z2'de olur.
+
+645
+02:27:59,852 --> 02:28:09,532
+Tabii hareket esnasını Z1 ile Z2 yer değiştirebilir. O yüzden çubuk direk yüksekliğini mutlak değer için Z1-Z2 olarak düşünürsünüz. Ona dikkat edin.
+
+646
+02:28:54,164 --> 02:28:58,164
+Evet, bulan var mı arkadaşlar? Cevap 5.12 gelecek.
+
+647
+02:28:58,904 --> 02:29:01,664
+The answer is 5 over 12.
+
+648
+02:29:05,971 --> 02:29:21,824
+Ok, let's do it together. Let me use blue color. So, we don't know exactly the graph of z is equal to 1 minus x squared. Ok, you may consider this something like that. So, let's say this is...
+
+649
+02:29:21,824 --> 02:29:25,304
+z is equal to one minus x squared.
+
+650
+02:29:25,644 --> 02:29:29,004
+So let's say this is our region, so something like that.
+
+651
+02:29:29,504 --> 02:29:33,524
+So as you see, this is on the, on the r, so this is r.
+
+652
+02:29:33,783 --> 02:29:36,684
+So let me put some bar here, oh, bar.
+
+653
+02:29:37,299 --> 02:29:59,739
+Z2 is always on zero, and this is Z1. Z1 is equal to 1 minus x squared, and make zoom, zoom. We may regard this sufficiently teeny bar as sufficiently teeny.
+
+654
+02:30:00,884 --> 02:30:17,203
+Rectangular prism dv, ok, the volume of this rectangular prism dv is equal to the higher bar, the absolute of z1 minus z2 times, and so make it zoom here, so this is sufficient.
+
+655
+02:30:18,100 --> 02:30:43,479
+small square here, we may put here, e x dy or dy dx, doesn't matter, it depends on the structural function and geometric shape of region. So if we integrate these rectangular prisms, okay, rectangular prism, if rotate this rectangular prism under the surface that is equal to 1 minus x squared and above the region R, something like that. Okay.
+
+656
+02:30:46,100 --> 02:31:12,520
+Çizdim. Şekle odaklanmayın. Siz mantığına odaklanın. Ne oluyor arkadaşlar? R bölgesi üzerinde, Z1'imiz zaten pozitif gelecek bölge üzerinde. Daima mutlak değer. 1-x². Ne yalım? Dx, dy veya dy, dx. Evet. Ben bunu hesaplamam lazım arkadaşlar. O yüzden şunu kesin bir şekilde yazmak zorundayım. Şu bölge nasıl bir bölge? Yani böyle değil normalde. Bu böyle değil.
+
+657
+02:31:13,012 --> 02:31:26,152
+Tamam mı? Ben bunu nasıl hesaplayacağım? Şurada hemen geleyim. Şöyle düzgün bir şekilde bölgemizi çizelim. Y0'dan Y1'e çubuğumuz değişiyor yatay bir şekilde.
+
+658
+02:31:36,308 --> 02:32:01,508
+Burası x. x eşittir y. Bu. O zaman bizim bölgemiz burası olacak. Bakın çubuğumuzu koyduğumuzda, gördüğünüz gibi, if you put your bar to scan your region, so this bar scans our region, scans our region from the level y0 to y1, as you see, direct this horizontal scanning, right hand point is always on the x, y.
+
+659
+02:32:02,227 --> 02:32:27,627
+Ve bu y0'a y1'a y
+
+660
+02:32:27,700 --> 02:32:30,659
+Z2 is 0, attention here.
+
+661
+02:32:32,960 --> 02:32:35,620
+And dx, dy.
+
+662
+02:32:36,659 --> 02:32:38,120
+An equation here.
+
+663
+02:32:39,796 --> 02:32:58,835
+Dikkat edin arkadaşlar. Burada ilk önce x'e göre integral alacaksınız. Tabi x eşittir 0'dan x eşittir y'ye değişiyor. Şimdi x eşittir 0'dan x eşittir y'ye. Bu bölge üzerinde 1 eksi x kare nedir? X'i 0'dan x 0 ile 1 arasında olacak. Dolayısıyla burası daima pozitif olacak. Sıkıntı yok.
+
+664
+02:33:09,236 --> 02:33:12,236
+Bu yüzden bu bölgeye kadar bu bölgeye kadar.
+
+665
+02:33:12,236 --> 02:33:20,236
+Bu bölgeye kadar, y'e kadar y'e kadar 0'a kadar 0'a kadar 1'a kadar.
+
+666
+02:33:20,236 --> 02:33:23,052
+Bu yüzden bu bölgeye kadar bu bölgeye kadar.
+
+667
+02:33:27,827 --> 02:33:54,587
+Diy. Now, let's go on from y0 to y1. So if we integrate it with respect to x, or x minus x cubed over 3, and dy, so let me put upper bound and lower bound. So x0, xy, let me put dy here.
+
+668
+02:33:54,992 --> 02:33:59,492
+Şimdi y0'a y1'e integrin.
+
+669
+02:34:19,731 --> 02:34:25,231
+Bu, fundamental theorem part 2, 1 over 2 minus 1 over 12.
+
+670
+02:34:25,752 --> 02:34:31,631
+So, when you expand the first rational number, we are going to obtain this.
+
+671
+02:34:32,631 --> 02:34:33,711
+An equation.
+
+672
+02:34:38,995 --> 02:34:43,955
+Sorusu olan var mı? 5 böl 12'yi bulduk. Herhalde 5 böl 12'yi herkes bulmuştur.
+
+673
+02:34:50,835 --> 02:34:51,455
+devam ediyoruz.
+
+674
+02:35:11,443 --> 02:35:13,243
+Ok, Compute.
+
+675
+02:35:21,747 --> 02:35:24,567
+Compute double integration.
+
+676
+02:35:26,007 --> 02:35:29,148
+Now, you don't need to say this double integration.
+
+677
+02:35:29,367 --> 02:35:30,587
+Compute the integration.
+
+678
+02:35:31,468 --> 02:35:33,587
+Compute the integration
+
+679
+02:35:33,587 --> 02:35:40,387
+of function with two variables
+
+680
+02:35:40,387 --> 02:35:42,567
+given by
+
+681
+02:35:42,567 --> 02:35:45,968
+1 minus 3y
+
+682
+02:35:45,968 --> 02:35:46,727
+over
+
+683
+02:35:46,727 --> 02:35:49,067
+3gen
+
+684
+02:35:52,468 --> 02:35:53,468
+Bounded,
+
+685
+02:35:55,588 --> 02:35:56,268
+by,
+
+686
+02:35:57,908 --> 02:35:59,028
+the curves,
+
+687
+02:36:01,308 --> 02:36:01,908
+curves,
+
+688
+02:36:02,788 --> 02:36:06,388
+x is equal to minus y square, and,
+
+689
+02:36:08,388 --> 02:36:11,708
+x is equal to minus two plus,
+
+690
+02:36:12,508 --> 02:36:13,388
+y square.
+
+691
+02:36:15,908 --> 02:36:18,427
+Okay, you may see such question in the next.
+
+692
+02:36:19,700 --> 02:36:20,340
+Exam.
+
+693
+02:36:22,100 --> 02:36:28,620
+Okay, you have to understand this is multiple integration, double integration because of this fact.
+
+694
+02:36:29,180 --> 02:36:34,460
+So we have two input, two independent variables for our function f.
+
+695
+02:36:35,020 --> 02:36:36,600
+Okay, we don't need to say double.
+
+696
+02:36:44,435 --> 02:36:53,975
+Evet, yapın bakayım gençler. Herkes yapsın. Bekliyorum. Ders derste öğrenilir. Bunu unutmayın.
+
+697
+02:37:14,484 --> 02:37:14,984
+Evet.
+
+698
+02:37:24,275 --> 02:37:31,096
+Oradasınız değil mi arkadaşlar? Baya bir sessizlik var. Herhalde dersi birçoğu terk etti.
+
+699
+02:37:36,628 --> 02:37:43,887
+[öğrenci], sen 100 mü almıştın [öğrenci]? Kaç kişi 100 almıştı ya? 2-3 kişi 100 almıştı. Tebrik ederim sizleri.
+
+700
+02:37:45,828 --> 02:37:50,788
+Kim, sen almamış mıydın? Kim almıştı? 100 alan kimlerdi? Onlar derste şu an değil mi?
+
+701
+02:37:55,924 --> 02:38:00,164
+Alırsın inşallah [öğrenci]. Sıkıntı değil, finalde alırsın inşallah.
+
+702
+02:38:15,891 --> 02:38:41,351
+Arkadaşlar, başarının tanımını biliyorsunuz. Başarı aslında sorumluluk fonksiyonunun türevidir. Her kişinin tabii ki sorumlulukları içinde bulunduğu şartlara göre değişebilir. Ama yine başarının tanımı değişmez aslında. Başarı dediğimiz şey sorumluluk fonksiyonunun türevidir. Kim olursanız olun, hangi koşulda olursanız olun, her zaman kendinizi kendinizle kıyaslayın.
+
+703
+02:38:41,664 --> 02:39:08,963
+Bir önceki duruma göre hangi durumdasınız? Yani bugününüz düne benziyor mu? Buna bakın. Bugününüz düne benziyorsa o zaman sorumluluklarınızı yerine getirmiyorsunuz demektir. Daha da kötüsü, bugününüz dünden daha gerideyse daha da kötü demektir. Yani sürekli sorumluluklarınıza karşı duymuş olduğunuz hassasiyet artarsa, başarıyı bir sonuç aslında orada elde ettiğiniz şeyler başarılı olmanın bir sonucudur. Eğer sizin sorumluluk fonksiyonunuzun türevi pozitif olursa daima,
+
+704
+02:39:09,376 --> 02:39:30,155
+Zorluklarınıza karşı duymuş olduğunuz hassasiyet fonksiyonu türevi pozitif olursa, bunu unutmayın. Hayatta bir şekilde başarılacaksınız arkadaşlar. Ama bugün ama yarın. Ama hep negatif olursa sıkıntı yaşarsınız. İlla yüz aldım ben başarılıyım ya da yüz alamadım başarısızım demek başarının tanımıyla uyuşmuyor arkadaşlar. Onu belirteyim size.
+
+705
+02:39:31,572 --> 02:39:37,311
+Zaten kanalımda da zaten başarının tanımının, sorumluluk fonksiyonunun türevi olduğunu ispat etmiştim. İsterseniz.
+
+706
+02:39:46,772 --> 02:39:48,551
+Evet, bulan var mı gençler?
+
+707
+02:40:51,028 --> 02:40:54,047
+Evet, let's do it together.
+
+708
+02:40:55,707 --> 02:41:13,567
+Now, so our integral function given by this rule, so our, let me sketch our region, so x is equal to minus y squared, so we have parabolic curve, x is equal to minus y squared, something like that.
+
+709
+02:41:17,843 --> 02:41:23,683
+And x is equal to minus 2 plus y squared. So, we got this.
+
+710
+02:41:29,075 --> 02:41:33,215
+x is equal to minus 2 plus y square.
+
+711
+02:41:34,335 --> 02:41:40,255
+And this is x is equal to minus y square.
+
+712
+02:41:40,915 --> 02:41:48,235
+Now, so this is our integral domain on which we are going to integrate our function f of x, y.
+
+713
+02:41:48,915 --> 02:41:55,115
+Now, so let me write explicitly our integral, double integration.
+
+714
+02:41:56,371 --> 02:42:04,092
+R, our integral function, is given by f of xy, ea.
+
+715
+02:42:05,151 --> 02:42:12,691
+Now, so which kind of scanning is the best one? Horizontal ones or vertical ones? Which one?
+
+716
+02:42:14,431 --> 02:42:23,551
+Think about this question. First of all, you need to identify the position of the bar, scanning your region.
+
+717
+02:42:27,700 --> 02:42:48,120
+Of course, horizontal one. Let me put some horizontal bar here. During this horizontal scanning, okay, first of all, let me write the left-hand side integration symbol. Lower bound for left-hand side integration symbol. You need to compute the interception point. If it's all commonly,
+
+718
+02:42:48,608 --> 02:42:53,448
+x is equal to minus 2 plus y square, and x is equal to minus y square.
+
+719
+02:42:53,567 --> 02:43:04,827
+If you substitute x is equal to minus y square, you are going to obtain interception point y is minus 1, and second interception value y is 1.
+
+720
+02:43:04,827 --> 02:43:16,247
+Okay, now from the minimum level, horizontal level minus 1, to maximum level y is equal to 1, we scan our region by horizontal cross-section.
+
+721
+02:43:16,608 --> 02:43:27,427
+During this horizontal cross-section scanning, focus on right-hand point. Right-hand point is always on the same curve, which is x is equal to minus y square.
+
+722
+02:43:28,867 --> 02:43:38,927
+And left-hand point, let me use yellow color here. Left-hand point is always on the x is equal to
+
+723
+02:43:39,827 --> 02:44:03,367
+2 plus y². I think everyone got this idea. So now let me substitute the rule of f of xy, which is 1 minus 3y. Now we first integrate with respect to x, then we integrate obtain result with respect to y. So this is our integration.
+
+724
+02:44:04,115 --> 02:44:10,976
+İntekler, let's compute this from minus 1 to 1. We first integrate with respect to x.
+
+725
+02:44:13,056 --> 02:44:18,855
+Now x is equal to minus 2 plus y square, x is equal to minus y square.
+
+726
+02:44:19,515 --> 02:44:24,316
+Now if you compute, if you apply fundamental theorem part 2 into this,
+
+727
+02:44:25,995 --> 02:44:31,376
+1 minus 3y times, substitute minus y square.
+
+728
+02:44:33,043 --> 02:44:36,984
+and plus 3y minus 1.
+
+729
+02:44:37,563 --> 02:44:43,603
+Eksiyle çarptım arkadaşlar. Bir de şey geliyordu ya. Ondan sonra eksi 2 artı y kare.
+
+730
+02:44:43,963 --> 02:44:52,763
+Evet, bunları yaparsanız arkadaşlar, açıp düzenlerseniz bir şeyler gelecek. Uzun uzun sınavda tabii ki bunlar gelmiyor.
+
+731
+02:44:53,443 --> 02:44:59,923
+Tarz böyle. Sadece integral sorar muhtemelen size. Şuraya odaklanmanız istenir. Burası önemli.
+
+732
+02:45:00,979 --> 02:45:05,700
+Tamam mı gençler? Tabii siz yine de hesaplayın bunları. 8 bölü 3 geliyor mu diye bakın.
+
+733
+02:45:06,700 --> 02:45:07,020
+Tamam.
+
+734
+02:45:07,619 --> 02:45:10,700
+So let me solve the last question.
+
+735
+02:45:27,667 --> 02:45:28,347
+Bir dakika.
+
+736
+02:45:29,768 --> 02:45:30,507
+Şuradan.
+
+737
+02:45:31,407 --> 02:45:33,448
+Evet. Şöyle bir soru çözelim.
+
+738
+02:45:38,868 --> 02:45:41,768
+You may see such question in the final exam.
+
+739
+02:46:05,268 --> 02:46:07,268
+Ok, Compute Disintegration.
+
+740
+02:46:11,796 --> 02:46:12,315
+Evet.
+
+741
+02:46:16,435 --> 02:46:17,615
+Bekliyorum gençler.
+
+742
+02:46:20,255 --> 02:46:27,135
+So first of all, focus on the geometric shape of integral domain.
+
+743
+02:46:28,615 --> 02:46:36,795
+When integral domain is associated with some circular curves,
+
+744
+02:46:36,795 --> 02:46:43,236
+it is better to apply transformation of this double integration
+
+745
+02:46:44,180 --> 02:46:46,659
+İnto polar koordinat sistem.
+
+746
+02:46:47,200 --> 02:46:47,400
+Okay?
+
+747
+02:46:48,500 --> 02:46:49,840
+Do not forget this fact.
+
+748
+02:46:52,460 --> 02:46:53,819
+Yapmaya çalışın gençler.
+
+749
+02:47:46,131 --> 02:48:12,332
+Evet gençler, bölgemiz, dikkat edin, bir dairesel bölge ya da dairesel bölgenin bir parçası. O zaman ne yapacağız? Kutupsal koordinatlara geçmek zorundasınız. Zaten böyle x kare artı y kareli bir şeyler görürseniz, dikkat edin arkadaşlar, böyle kare kök de olabilirdi orada. Kare kök içinde x kare artı y kareli bir şeyler görürseniz, arkadaşlar,
+
+750
+02:48:13,043 --> 02:48:19,723
+Ne yapacaksınız? Kutupsal koordinatlara geçiş yapacaksınız. X eşittir R cos theta, Y eşittir R sin theta.
+
+751
+02:48:20,304 --> 02:48:33,203
+Bölgenizi çizeceksiniz. Bölgenizi dike ve yatay çubukla taramayacaksınız. Bölgeyi ne yapacaksınız? Tarayan, orijin etrafında dönen veya uzantısı orijin etrafında dönen bir çubuk ile tarayacaksınız.
+
+752
+02:48:33,824 --> 02:48:40,503
+Böylelikle theta işte belli bir açıdan belli bir açıya kadar değişecek. Yani çubuğunuz belli bir açıdan belli bir açıya kadar dönecek.
+
+753
+02:48:41,043 --> 02:48:48,443
+Bu dönme esnasında, çubuğun uç noktalarında hangi kutupsal eğitimler var, onlara dikkat edeceksiniz.
+
+754
+02:48:48,603 --> 02:48:56,723
+Sol taraftaki integral, kutupsal koordinatlarda teta için, sağ taraftaki integral de r'ler için verilir arkadaşlar.
+
+755
+02:48:57,324 --> 02:49:04,603
+Daha sonra integrand fonksiyonunda x gördüğünüz yere r cos teta, y gördüğünüz yere r sün teta, ve x, d, y der de ne olacak arkadaşlar?
+
+756
+02:49:05,283 --> 02:49:08,403
+Daire dilimcine dönüşecek, r, d, r, d teta olarak.
+
+757
+02:49:09,043 --> 02:49:13,183
+Bunları yapınca arkadaşlar, probleminiz çözülebilir bir hale gelecek.
+
+758
+02:49:13,583 --> 02:49:17,003
+Bu haliyle zaten x'e göre integral almak isteseniz yapamazsınız.
+
+759
+02:49:17,563 --> 02:49:18,603
+Ona dikkat edin.
+
+760
+02:49:18,644 --> 02:49:19,383
+Tamam mı arkadaşlar?
+
+761
+02:49:19,943 --> 02:49:21,984
+Bunu size ben ödev olarak bırakayım.
+
+762
+02:49:22,083 --> 02:49:23,603
+Siz bunu yapmak için uğraşın.
+
+763
+02:49:23,963 --> 02:49:25,183
+Herkes yazdı mı bu soruyu?
+
+764
+02:49:25,683 --> 02:49:28,664
+Yarın zaten derste kaldığımız yerden devam edeceğiz.
+
+765
+02:49:28,664 --> 02:49:30,743
+Tabii öncesinde de bir tane soru atlamışım.
+
+766
+02:49:30,824 --> 02:49:32,063
+Unutturmayın, onu da çözelim.
+
+767
+02:49:32,819 --> 02:49:45,099
+Öncesinde bir soru atlamışız. Güzel bir soruymuş. Onu da çözelim. Yani bunu ve öncesindeki soruyu unutmayalım arkadaşlar. Atılatın bana. Çözelim. Evet. Var mı sorusu olan?
+
+768
+02:49:52,211 --> 02:49:54,231
+Yarın buradan devam edeceğiz gençler.
+
+769
+02:49:59,667 --> 02:50:02,907
+Kendinize iyi bir akın, sağlıcakla kalın arkadaşlar. Yarın görüşürüz.
+
+770
+02:50:20,020 --> 02:50:43,260
+Normalde bir tarih var, mazeret sınavları için bir şeyde yok mu? Web sitesinde bütün bilgiler yayınlanıyor diye biliyorum. Yani ben de web sitesinden öğreniyorum, bana herhangi bir bilgi gelmedi. Sen kendi bölümüne mail atıyorsun, benim bildiğim kadarıyla. Kendi bölüm sekreterliğine mail at, mazeretini belirt, anlatabiliyor muyum?
+
+771
+02:50:44,051 --> 02:50:48,391
+Onlar bizim bölümle iltibada geçiyorlar. O şekilde, tamam mı?
+
+772
+02:51:02,420 --> 02:51:11,899
+[kişisel bilgi] Yani mazeret genellikle sınavın bitiminden hemen sonra şey olur, gönderilir. [kişisel bilgi]
+
+773
+02:51:13,700 --> 02:51:23,840
+Yani sınav bitiminde hemen, ya hatta sınav bittikten sonra, yani ben mazeretim var, şu şu durumdan dolayı sınava katılamadım. Sınav bittikten, belli bir süre geçtikten sonra olmaz.
+
+774
+02:51:25,260 --> 02:51:26,619
+[kişisel bilgi]
+
+775
+02:51:30,579 --> 02:51:41,239
+Hastaysan hasta raporunu, hastane raporunu sunarsın kendi sekreterliğine. Onlar bizim bölüme iletirlerdi. [kişisel bilgi] Tamam mı? Hadi kolay gelsin. İyi günler.
