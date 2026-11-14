@@ -1,0 +1,3763 @@
+1
+00:00:29,652 --> 00:00:33,411
+Evet, tekrar paylaşımını başlatalım bakalım şimdi.
+
+2
+00:00:40,051 --> 00:00:47,756
+...
+
+3
+00:01:06,900 --> 00:01:09,260
+Arkadaşlar, batalik, nüvəsiz.
+
+4
+00:01:15,347 --> 00:01:27,347
+9'sunu online başlarmışımız 9 olacak online. Birazdan başlarız. Cevabımız çok az ama yapacak bir şey de yok.
+
+5
+00:01:27,347 --> 00:01:37,347
+Ya aşağılaştığım ortamı hazırlayalım. Bak yakın parlak ve doğal fark ettim.
+
+6
+00:01:40,915 --> 00:01:41,915
+Teşekkürler.
+
+7
+00:02:40,948 --> 00:02:43,948
+Evet, dinamik manum aile location. Tamam, pekara.
+
+8
+00:02:46,948 --> 00:02:51,148
+Şimdi tabi avantajı kısmı, azıcık bell bahsettik.
+
+9
+00:02:51,148 --> 00:02:59,948
+Bellek alanı ayrılmadan ve ondan sonra kullanmadan, pointerla kullanmadan ve ayırdığın şeyi bırakmaktan.
+
+10
+00:02:59,948 --> 00:03:05,948
+Fakat, daha da bir şekilde konuşacağız tekrar.
+
+11
+00:03:05,948 --> 00:03:07,948
+Bunu ne zaman yapalım?
+
+12
+00:03:08,948 --> 00:03:19,668
+Ayrıca başlayalım dediğim, yine pek fazla katılınca olmaz girmek geliyor ama, beş dakika sonra başlayalım, bardağın öyle şuan kimse yok.
+
+13
+00:03:23,379 --> 00:03:34,891
+Onki, 09, 10 a.k.a. katalifizac
+
+14
+00:09:37,172 --> 00:09:39,491
+Evet, pekala, başlayalım. Gelen olmadı ama...
+
+15
+00:09:41,491 --> 00:09:49,892
+Belki biraz yavaş ilerleriz. İlk ders saatim 10-16 tarp belki de. Ama hani gösterdiğim gibi açık açık yazdık.
+
+16
+00:09:51,012 --> 00:10:03,012
+Bazen bazı şeyleri son dakika bırakabiliyorum benim kabahatim ama o mesajı 4 gün önceden yolladık. Yani artık gelenliği tercih eden arkadaşlarım gelebilirlerdi.
+
+17
+00:10:04,115 --> 00:10:07,115
+Başlayalım bizim yardım ederlerimizle.
+
+18
+00:10:09,115 --> 00:10:16,115
+Şimdi bugün dinamik bellek yönetiminin ayrıntılarıyla konuşacağız ve uygulayacağız.
+
+19
+00:10:16,115 --> 00:10:22,115
+Bazı örneklerini de yapıp bugün en azından bu noktaya kadar gelmiş olmak istiyorum.
+
+20
+00:10:22,115 --> 00:10:30,028
+Ve geldiğiniz noktaya kadar da vizede klasikosu bir sınav yapacağız inşallah. Bunlar bu şekilde.
+
+21
+00:10:36,275 --> 00:10:56,915
+Hafıza yönetimi için gerekli fonksiyonlar std.pask hannesinde malloc komutu parametre olarak ne kadar bir alan bahçesinden belli ihtiyacımız olduğunu alıyor ve bize birbirini izleyen...
+
+22
+00:10:57,120 --> 00:11:04,480
+Bu kadar byte'lık bir alan döndürüyor bize. Daha doğrusu o alana başlangıç noktasında bir işaretçi döndürüyor.
+
+23
+00:11:04,480 --> 00:11:11,519
+Tüm bu bellek ayırma fonksiyonları bize void işaretçi döndürüyor.
+
+24
+00:11:11,519 --> 00:11:20,559
+Biz o işaretçiyi, o alanda saklamayı düşündüğümüz veri tipi neyse, o türden işaretçiyi dönüştürüyoruz, test ediyoruz.
+
+25
+00:11:22,292 --> 00:11:31,612
+Burada dikkat etmemiz gereken şey, mesela diyelim ki 100 tane tam sayıya işleyecek bir alan mı? Alana mı ihtiyacımız var?
+
+26
+00:11:31,612 --> 00:11:38,892
+Bir tam sayının 4 byte'tan oluşturmayı unutmayıp 100x4, yani 400 byte istememiz gerek.
+
+27
+00:11:38,932 --> 00:11:52,331
+Burada da örneği integer için verdim. Gerek integer için olsun gerek farklı türler için olsun. Farklı veri yapıl türlerinin farklı byte kapasiteleriyle model veren bir platform olabilir.
+
+28
+00:11:52,331 --> 00:12:06,132
+O yüzden işi en sağlam almak için sizeof int çarpı 100. 100 tane integer açmıştık. Sizeof fonksiyonunu da kullanalım. Sizeof int çarpı 100. İşte size 100 adet tam sayı alabilecek.
+
+29
+00:12:06,255 --> 00:12:09,375
+alanın başlangıç noktasını geri döndüren konu.
+
+30
+00:12:11,055 --> 00:12:14,655
+Bir de cAlloc fonksiyonumuz var.
+
+31
+00:12:15,055 --> 00:12:18,735
+Aynı malloc gibi ama iki farkı var.
+
+32
+00:12:18,735 --> 00:12:22,175
+Birinci farkı parametreleri.
+
+33
+00:12:22,175 --> 00:12:23,855
+İki parametre arıyor.
+
+34
+00:12:23,855 --> 00:12:26,655
+Birinci parametre kaç eleman yükyen ayrılacak?
+
+35
+00:12:26,655 --> 00:12:29,935
+İkinci parametre elemanın byte cinsinden boyutu.
+
+36
+00:12:30,111 --> 00:12:42,111
+Burada da o zaman yine 100 tane tam sayılık alanlayınmak için C alloc 100 virgül size of int diyerek de çağıracağız. Aynı kapı.
+
+37
+00:12:42,111 --> 00:12:54,111
+C alloc'un ikinci önemli farkı ise bu geri döndürdüğü bellek alanındaki bütün byte'ları da sıfırlayarak geri döndürüyor. Malloc'ta böyle bir şey yok.
+
+38
+00:12:55,475 --> 00:13:04,775
+O anda bellekte ne artık vidiler varsa onlar da dolu geliyor falanlar. Fakat C alloc sıfırlayarak tartık etmiyor diyor.
+
+39
+00:13:04,775 --> 00:13:15,475
+Bir de realloc fonksiyonumuz var. Realloc fonksiyonumuz ise daha evvel ayrılmış bir bellek alanının boyunu genişletmeye yarıyor.
+
+40
+00:13:20,692 --> 00:13:40,692
+İlk parametre olarak bu genişletilmesi istenen bellek alanının başlangıcını gösteren işaretçi. İkinci parametre ise mallocta olduğu gibi toplam byte cinsinden kapasite. Şimdi burada
+
+41
+00:13:41,844 --> 00:13:43,844
+Böyle oluyor aslında.
+
+42
+00:13:43,844 --> 00:13:49,344
+Pratik olarak baktığımızda tamam daha evvel ayran alanın kapasitesini genişletiyor. Peki.
+
+43
+00:13:49,344 --> 00:13:52,344
+Ama aslında bellek yönetimi öyle bir şey değil.
+
+44
+00:13:52,344 --> 00:13:57,844
+Bellekte ilk boş bulunan yerden bir veri veriliyor.
+
+45
+00:14:00,344 --> 00:14:04,344
+O nedenle aslında arka planda gerçekleşen şey...
+
+46
+00:14:04,755 --> 00:14:17,155
+Bu yeni ebat neyse, o ebat kesintisiz olarak bize verebilecek yeni bir başlangıç adresiyle yeni bir alan veriliyor bize.
+
+47
+00:14:18,067 --> 00:14:34,708
+Ve bu realloc fonksiyonun geri döndürdüğü işaretçiyi yine previous pointer'a atarsak, eski işaretçimiz artık bellekte yeni bir alanı göstermiş olacak.
+
+48
+00:14:37,528 --> 00:14:42,708
+Ama eğer yeterince yer kalmışsa, çekmiyor da, değiştirmiyor da.
+
+49
+00:14:43,379 --> 00:14:49,059
+Başlangıç adresini değiştirmeyebilir. Yer yoksa mecbur değiştirecek, yer varsa değiştirmeyecek.
+
+50
+00:14:49,059 --> 00:14:54,500
+Ufak bir örnekle deneriz şimdi mesela bizim örneğimizde değiştirecek mi değiştirmeyecek mi.
+
+51
+00:14:54,500 --> 00:15:01,059
+Başka başka değerler tanımlamazsak değiştirmez diye düşünüyorum. Neyse, bıkacağız.
+
+52
+00:15:01,059 --> 00:15:06,379
+Void geri dönüş türü oldum ve type testing yapmamız gerektiğini söylemişim.
+
+53
+00:15:08,115 --> 00:15:20,836
+Peki, bu kadar alanı alıp kullandıktan sonra serbest bırakmayı da unutmamalıyız arkadaşlar. Free fonksiyonunu kullanacağız. Paranet olarak ilgili alanın başlangıç işaretçisini vereceğiz.
+
+54
+00:15:22,995 --> 00:15:29,995
+Örneğin kod yazarken her bir paranteze karşı kapanma parantezini yapmak zorundayız.
+
+55
+00:15:29,995 --> 00:15:39,995
+Benzer şekilde nasıl ve ne şekilde allocation yaptıysak onu da eşleniği şekilde free yapmayı unutmamalıyız.
+
+56
+00:15:40,995 --> 00:15:43,995
+Örneklerimiz bunun üzerine gidecek.
+
+57
+00:15:43,995 --> 00:15:46,731
+Şimdi başlayalım.
+
+58
+00:15:54,836 --> 00:15:56,836
+Açimide, cipi, pilote.
+
+59
+00:16:03,059 --> 00:16:05,819
+7. hafta dizinin izlerinden önceki hafta.
+
+60
+00:16:05,819 --> 00:16:06,571
+Evet.
+
+61
+00:16:10,004 --> 00:16:37,868
+hafta 0, 7, 3, 6, 7, 8, 8, 10 zaten ama. Tamam, kurucu hafta 0, 2 şeklinde olsun. C adını biraz daha farklı açtığımız. Gerçekten pvc edince oluyormuş. Yani daha belki örneklerimizde var ya, aynı adlandırma yolu şey diyelim. Şimdi buna da diyelim ki, dene,
+
+62
+00:16:40,115 --> 00:16:42,115
+6, 7, 8 tamam oluyor.
+
+63
+00:16:42,115 --> 00:16:44,115
+Dm, 0, 7.
+
+64
+00:16:45,115 --> 00:16:46,115
+Bu da şöyle edelim.
+
+65
+00:17:08,692 --> 00:17:11,092
+STD'li paşada eklemeyi unutmayalım.
+
+66
+00:17:12,092 --> 00:17:14,291
+Badem bu fonksiyonlar oradalar.
+
+67
+00:17:18,451 --> 00:17:37,387
+Şimdi, şöyle güzel bir tab yapalım. Oradan devam edelim. Evet. Evet. Peki. Peki. Neydi mesela? İnt dedik.
+
+68
+00:17:37,748 --> 00:18:03,692
+yadız ptr2 diyelim. Birisi işte bir, ötikisi ve ötikisi kapasiteli olacak. Bu arada ne diyelim mesela? Evet şimdi başka hiçbir değişken yapmadan, tanımlamadan yapalım şimdi bu işi. Dedim ki aynı şuradaki şeyleri dayanarak, örnekleri dayanarak en güzel şekilde işlemler yapacağız.
+
+69
+00:18:04,339 --> 00:18:21,619
+ctr1 eşittir. İşte int pointer'a çevireceğiz. Ha bu arada malloc ve gealloc'u da hani bunu sıfırlıyor mu sıfırlamıyor mu onun farkında iyice bir demonstre edelim.
+
+70
+00:18:24,500 --> 00:18:29,619
+Ya bazen de İngilizceye geçiyorsanız, ders notu İngilizce diye, onunla olabilir. Örnekleyelim.
+
+71
+00:18:33,619 --> 00:19:01,583
+Let me define size 100 diyelim. Daha olsun şimdilik. Int. Malloc. Öncelikle sayesinde eleman sırasını alalım. Size, şarkı, size of int diyelim. Aa bir de i konuşacak. Peki i başta tanımlayalım. Başka mı?
+
+72
+00:19:01,584 --> 00:19:07,584
+Başka ve sonra sorularımızın farkına olacak mı bakın. Peki.
+
+73
+00:19:07,584 --> 00:19:21,584
+I eşit sıfırdan I küçüktür size'a kadar I artı artı.
+
+74
+00:19:28,319 --> 00:19:29,819
+Şimdi şöyle yapalım.
+
+75
+00:19:31,319 --> 00:19:35,920
+Yıldız ptr1.6i.
+
+76
+00:19:36,420 --> 00:19:38,019
+Pointer alt metini kullanalım.
+
+77
+00:19:38,819 --> 00:19:41,819
+Ptr1'in başlangıcını da değiştirmek istemiyorum.
+
+78
+00:19:41,819 --> 00:19:44,779
+Çünkü realloc yapacağız, free yapacağız falan.
+
+79
+00:19:49,683 --> 00:20:04,443
+Bu arada ufak bir aynatı. Madem her bir mallocun eşleniği free olacak, en sonunda eşlenmesiyle free 1 dedim, tehlikle malloc etmediğin için onun free'si yok.
+
+80
+00:20:04,443 --> 00:20:11,443
+Öte yandan, bu free komutu serbest bırakılacak alanın başlangıcını ister.
+
+81
+00:20:13,715 --> 00:20:36,715
+ptr1'in kendi değerini artırsaydım, yani şöyle bir şeyler yapsaydım işte, ptr1 artı artı gibi pointer'ın başlangıç gösterdiği adresi değiştirecek bir şey yapsaydım eğer, o zaman bu free'imde problem olabilir. Bu nedenle o alanın başlangıcını değiştirmeden direkt
+
+82
+00:20:36,736 --> 00:20:46,336
+başlangıcından itibaren şu kadarıncı elemanı git göster şeklinde değerini göster şeklinde şey diyorum diyorum.
+
+83
+00:20:46,336 --> 00:20:53,615
+Bu arada bakın ne gibi değerler bellekler bize dönmüş olacaktı onları da görelim bakalım.
+
+84
+00:20:53,615 --> 00:20:55,615
+Kaybettim.
+
+85
+00:20:55,615 --> 00:20:58,896
+Aa şey yapalım, pause yapmak da unuttum.
+
+86
+00:20:58,896 --> 00:21:01,615
+System.
+
+87
+00:21:01,615 --> 00:21:03,615
+Pause.
+
+88
+00:21:06,195 --> 00:21:07,996
+Şimdi kalp çalışırsın.
+
+89
+00:21:12,051 --> 00:21:13,172
+and execute.
+
+90
+00:21:13,172 --> 00:21:14,611
+That's one of them.
+
+91
+00:21:14,611 --> 00:21:16,611
+Plodlam mode.
+
+92
+00:21:20,276 --> 00:21:21,756
+Ayyyyyy ya.
+
+93
+00:21:21,756 --> 00:21:25,076
+Artık bu sefer şey de yaptım yani.
+
+94
+00:21:27,476 --> 00:21:35,556
+Şüpheli olmaması için birazcık nesprant uzun isimleri koydum. Neyse ben şu an şunu devletişe bırakayım yine.
+
+95
+00:21:38,195 --> 00:21:40,596
+Kalkamama kontrol.
+
+96
+00:21:41,956 --> 00:21:44,836
+Sen başlatan o kadar devletişe bırak.
+
+97
+00:21:44,836 --> 00:21:46,356
+Tamam.
+
+98
+00:21:46,675 --> 00:21:57,295
+Evet, gördüğünüz gibi rastgele rastgele değerler. Araya boşluk koymadığım için bunun tam olarak ne olduğunu bilmiyoruz ama
+
+99
+00:21:57,295 --> 00:22:07,795
+yani kaç hangi değerler arasında ama nihayetinde anlayabileceğimiz şey bunların o bellek alanında rastgele ne var ne yokmuş bana getirdiğini görüyoruz.
+
+100
+00:22:14,387 --> 00:22:18,228
+PTR2'yi de C-alloc ile yapalım mesela.
+
+101
+00:22:22,963 --> 00:22:47,963
+C, pointer, c, ptr, 2 eşittir. C, alloc, hangisi hangisiydi? Fahit kilağını bilmiyorum ama aynı parametreleri, a doğru aynı sırasında vermekte yarar var. İlk başarından block element. Evet, size, peki.
+
+102
+00:22:48,660 --> 00:22:50,660
+Tabi, ne mümkün?
+
+103
+00:22:50,660 --> 00:22:52,660
+Umutluyor, alışkanlık kazanmak gerekir arkadaşlar.
+
+104
+00:22:52,660 --> 00:23:00,660
+Tabi aynı anda bir daha fazla dille çalışıyorken alışkanlıklar da alışkanlığın kurulmasında ufak bir şeyler yaşayabilirsiniz.
+
+105
+00:23:00,660 --> 00:23:02,660
+Ama dönüp bakarsınız ne olacak.
+
+106
+00:23:02,660 --> 00:23:12,660
+Bu gibi şeyler sınava girmeden önce de o tarafa kendiniz kanal izledi ederek hata veya yapmazsınız benim gibi.
+
+107
+00:23:16,276 --> 00:23:21,396
+göstermeye başlayalım. FreePetl 1, FreePetl 2 demeydi unutmayın.
+
+108
+00:23:26,771 --> 00:23:40,771
+Şimdi çalıştıralım. Bakın, o noktadan sonra sıfır verdiğini görüyorsunuz. Demek ki gerçekten anlatıldığı gibi çalışıyor işler.
+
+109
+00:23:54,451 --> 00:24:20,236
+ptr1, ptr1, ptr1, ptr1'den hangi adresi varmış? Sonra,
+
+110
+00:24:20,756 --> 00:24:23,256
+pt2 için de aynı şeyi yapalım.
+
+111
+00:24:23,936 --> 00:24:26,256
+Ha bir de şey diyeyim ki şemada.
+
+112
+00:24:26,256 --> 00:24:28,256
+Zahin bir de yazdık. Yenek yazıyoruz.
+
+113
+00:24:28,256 --> 00:24:29,756
+pt1
+
+114
+00:24:30,756 --> 00:24:31,756
+on
+
+115
+00:24:31,756 --> 00:24:33,756
+tents
+
+116
+00:24:33,756 --> 00:24:35,256
+diyelim.
+
+117
+00:24:36,456 --> 00:24:37,756
+Şöyle diyelim.
+
+118
+00:24:38,355 --> 00:24:40,756
+Ondan sonra for ile bunu yazsın işte.
+
+119
+00:24:44,627 --> 00:24:58,627
+Sonra gelin ptr2'ye. Bunu da şöyle yapalım. ptr2.binded.add.binamnlaya ptr2.contents. Ha şunu da iklimi unutmayalım.
+
+120
+00:25:00,627 --> 00:25:07,467
+Sonra free'lerimiz var. Onları gösterelim. Sonra da işte, truth diyelim.
+
+121
+00:25:12,276 --> 00:25:32,436
+Ptr2 begins at şu, content böyle böyle böyle. Ptr2 begins at. Şimdi bakalım nelerden başlamışlar? 38007, 496 ve 904. Şimdi bu sayıların da 16 tabanlarda olduğunu unutmayalım. Galiba birinin direkt gittiği yerden ötkisi başlıyor sanki. Bir bakalım.
+
+122
+00:25:36,243 --> 00:25:58,243
+Bilimsel modu var mıydı? Bakın. Var herhalde. O oraya koy demekmiş. Peki. Bilimsel. Peki. Hadi koy köşeye. Fena değilmiş. Ama bir dakika. Böyle yapınca ne? Köşeye çıkma şeyi yok. Bilimseli köşeye koyamazsın. Sağ olamak. Neyse. Tamam peki.
+
+123
+00:26:02,355 --> 00:26:08,355
+Ayo, faket nevş, dafaza, şey, çikun nevş, büyütü vş. Şimdi, se itabın, azıya bak.
+
+124
+00:26:13,460 --> 00:26:14,099
+Anadam mı?
+
+125
+00:26:18,867 --> 00:26:19,867
+Bıkayım bakayım.
+
+126
+00:26:21,867 --> 00:26:22,867
+İşler, bakalım.
+
+127
+00:26:27,867 --> 00:26:28,867
+Evet.
+
+128
+00:26:29,867 --> 00:26:34,867
+Bunun için başka şey yapalım. Başka proje yapalım ya da ne bileyim.
+
+129
+00:26:37,867 --> 00:26:41,867
+Haa, bilgisayardan yapayım şöyle. Çok da dert değil arkadaşlar. Ama şöyle yapalım.
+
+130
+00:26:47,827 --> 00:26:52,188
+16 tabanında elle çıkan yapmaya çalışalım. O kadar da abartmayalım.
+
+131
+00:26:52,188 --> 00:26:56,908
+Ha bir dakika. Ne demiştik? Şöyle diyelim. Öylesi daha kolay.
+
+132
+00:27:02,036 --> 00:27:25,036
+Bir tane sayfa. Ne verdi bana yöncesini? 38407496. 38407496 mi demiştim? 496. 16'ı tabanlı olduğunu unutmayalım. Ondan sonra acaba.
+
+133
+00:27:25,311 --> 00:27:30,511
+100, 16, buna 100 ekleyeceğiz. Ama şimdi o ondalıklı.
+
+134
+00:27:30,511 --> 00:27:45,311
+Ha, bir dakika. Şöyle yapalım. Size nasıl, şimdi çok olsun diye çok da yükselim ama size diyelim ki 16 yapalım tamam. 16 elemanlık.
+
+135
+00:27:45,311 --> 00:27:48,811
+Ve sadece bir basamak. Kaydet.
+
+136
+00:27:52,307 --> 00:28:04,427
+Şimdi daha iyi olacaktır şimdi. 16 çarpı 4, yani 4 eklemiş olacağız aslında birer basamağına.
+
+137
+00:28:19,796 --> 00:28:28,796
+Bir dakika ya, niye bu 16'lık değil ki? 10'lık, % değil diyorum, 10'lık. Neyse. Beni dinleyen bir arkadaşım olsa uyarıldı benim.
+
+138
+00:28:28,796 --> 00:28:39,796
+Evet, gerçekten de öyle. Şimdi 0, 4, 8, 80. Evet, 80'den 8'i çıkartabilirim. O kadar kafam basıyor. 72 diyelim.
+
+139
+00:28:46,996 --> 00:28:48,996
+Alt kere ödeyeyim, 4.
+
+140
+00:28:48,996 --> 00:28:49,996
+Aya da var 2.
+
+141
+00:28:49,996 --> 00:28:52,996
+Ha, 62 oluyor aslında. Yan çıkardım.
+
+142
+00:28:52,996 --> 00:28:54,996
+Yok yan çıkardım.
+
+143
+00:28:54,996 --> 00:28:57,996
+Eee, 8, 80, evet.
+
+144
+00:28:57,996 --> 00:28:59,996
+Arada evet bir şey var.
+
+145
+00:28:59,996 --> 00:29:01,996
+808, 880.
+
+146
+00:29:01,996 --> 00:29:03,996
+Var arada da bir şey.
+
+147
+00:29:07,571 --> 00:29:31,883
+8, 80
+
+148
+00:29:31,892 --> 00:29:53,892
+Peki, o 8, bir tane 8'inde bir tane int dedim ama o 4. Neyse. Anlamsız int. Daha fazla kovalamaya gerek yok. Esas şu an beni ilgilendiren şey, realloc yaptığımda ne olacak? Yoluna bakalım.
+
+149
+00:29:58,003 --> 00:30:02,683
+Realloc yaptığınızda sıfırlayacak mı sıfırmayacak mı? Onlara bir şey söylüyor mu?
+
+150
+00:30:02,683 --> 00:30:06,863
+Contentos Previous Alkitab'in
+
+151
+00:30:06,863 --> 00:30:10,183
+Bunu da bir denemeniz lazım mesela diyelim ki.
+
+152
+00:30:10,183 --> 00:30:13,663
+16'da iyi bir şey. Tamam. Peki.
+
+153
+00:30:13,663 --> 00:30:17,663
+Şimdi P3Begins şu. Şimdi şöyle bir şey yapalım.
+
+154
+00:30:17,663 --> 00:30:21,043
+Anlamlı sayılar olması için diyelim ki
+
+155
+00:30:23,412 --> 00:30:50,380
+yıldız ptr 1 artı i eşittir. i çarpı 10 aralar aksın. Tamam mı? Peki evet. ptr 1, yıldız ptr 1 sıxız, yıldız ptr 1 artı 1 10 şeklinde gitsin bakalım. Ondan sonra Cema realoc diyelim.
+
+156
+00:30:50,579 --> 00:30:54,180
+Bunu da ptr2'ye atalım.
+
+157
+00:30:54,180 --> 00:30:59,579
+Ptr2 eşittir int çarpı, evet.
+
+158
+00:30:59,579 --> 00:31:05,980
+Realloc, ha şu size çarpı size of int olacak, şu da ptr1 olacak.
+
+159
+00:31:05,980 --> 00:31:07,371
+Tamam mı? Peki.
+
+160
+00:31:07,955 --> 00:31:25,955
+Buradan başlıyor diyeceğiz. Pteklinin başlangıçta şudur diyeceğiz ve içeriği de şudur diyeceğiz. Ha bir dakika, bir de bu ikiyle çarpalım. Daha genç bir alan ya. Çarpı iki. Ondan sonra açıma. Ve ya da çarpı iki diyelim.
+
+161
+00:31:27,316 --> 00:31:29,316
+Bakalım ne diyecek?
+
+162
+00:31:29,316 --> 00:31:36,316
+Peki, realloc dedikten sonra, acaba realloc yaptığımızda free yapmamıza gerek var mı? Olabilir.
+
+163
+00:31:40,316 --> 00:31:42,316
+Problem çıkartsa realloc yapmayız.
+
+164
+00:31:46,316 --> 00:31:47,316
+Peki, nerede şimdi?
+
+165
+00:31:50,316 --> 00:31:52,316
+Ha, ağa basamamışım ya.
+
+166
+00:31:52,316 --> 00:31:53,316
+Ha, hep şey mi?
+
+167
+00:31:53,316 --> 00:31:55,276
+Realloc, evet.
+
+168
+00:31:58,163 --> 00:32:12,243
+Evet, güzel, pekala. Şimdi bakın, ilk noktada aynı adresi geri döndürdü. Yani eğer yer varsa taşımıyor demişti. Tamam yer varmış demek ki.
+
+169
+00:32:12,803 --> 00:32:17,203
+Sıfırdan yüz elliye kadar ilk içerik. Geri kalan şeyler almayın random içerik.
+
+170
+00:32:18,963 --> 00:32:36,963
+Peki, madem öyle şurada da, for döngüsünde, acaba şu içeriğine bir baksak, ptr1'in içeriğine, size çarpı iki kadar yaptırız. Hiç problem yok. İsterimiz kadar götürtür bizi for döngüsünde. Tamam.
+
+171
+00:32:36,963 --> 00:32:41,963
+Ve sonra bakalım bunlar ve onlar aynı mı? Bir bakalım.
+
+172
+00:32:48,660 --> 00:33:05,160
+Haa, bir dakika. Farklı yere geldiler ve şimdi bir dert var. Programda şey etmiyor, açılmıyor. Yani devam etmiyor. Peki. Diyecek bir şeyim yok. Ben C izin verir diye düşündüm. Vermedi. Evet, peki.
+
+173
+00:33:12,948 --> 00:33:20,108
+Şimdi bakalım. Şu terminali sonlandı. Tamam.
+
+174
+00:33:26,548 --> 00:33:37,268
+Şunu yapmadan önce düzgün çalışıyordu. Çarpık 2 demeden düzgün çalışıyordu. Ondan sonra program oluşturdu. Yani o Life Free'lerden değil herhalde.
+
+175
+00:33:42,195 --> 00:33:56,195
+Evet. Ama şunu, PTR2, Frontend diyen yerde takılması da çok ilginç. Yani ben şurada daha başka neler var demiştim. K, P2 diyerekten.
+
+176
+00:33:58,195 --> 00:34:09,963
+Yani belli ki ne varsa göstersin diyorum ama belki de bir şekilde artık o terminal penceresinde ayrılmamış bir alana gitmeye çalıştım belki de. Bilemeyeceğim.
+
+177
+00:34:14,420 --> 00:34:22,420
+Başlangıç adresi de farklı olmuş ve bir sıfır dedi. Belki yer mi aynamadın mı? Bir şey olmuştu. Neyse.
+
+178
+00:34:22,420 --> 00:34:33,420
+Ters giden şeyin zaten bilerek bir şeyleri farklı veya nasıl, nasıl desem yani doğru kelimeye bulamadım.
+
+179
+00:34:33,420 --> 00:34:42,284
+Peki tamam. Olay bu. Realloc şeyi boşaltmıyor. Onu da söyleyelim. Yılızdan isterseniz eklenerek.
+
+180
+00:34:44,244 --> 00:35:02,244
+Tamam, previous section'e ne olurum tek? Evet, peki. Never assume that additional are very clear. Kimisi yapabiliyormuş, kimisi yapamıyormuş olabilir. Tamam, peki abi. Bir de ne demiştim? Sonra bir de intg olsun diyeyim ki.
+
+181
+00:35:06,068 --> 00:35:15,068
+Acaba o zaman bunların ayrılma adreslerine bir şey olmayacak mı? Olmayacak. Yani yapabiliyorsa taşımıyor. Tamam peki. Evet.
+
+182
+00:35:15,068 --> 00:35:19,068
+Peki bu kadar şey örnekleme yeter herhalde diye düşünüyorum.
+
+183
+00:35:24,500 --> 00:35:33,500
+Hatta bundan sonra şöyle çalışmaya başlayayım mı? Bilip de yapmak daha eğlenceli. Söyleye de öyleyemez. Peki.
+
+184
+00:35:35,500 --> 00:35:39,500
+Burada hiç katılımcımız arttı mı? Yok. Neyse, ne yapalım.
+
+185
+00:35:43,891 --> 00:35:57,387
+Evet, her şey identik. Şimdi gelelim diğer örneklerimize. Bunu bir yere koymuş muyum? Şuradan bakabilirsiniz falan filan diye. Belki olmaz.
+
+186
+00:36:07,795 --> 00:36:08,795
+Arkadaşlar, bu.
+
+187
+00:36:13,331 --> 00:36:33,331
+Tamam, yapalım şimdi. Aslında ne kadar fark edecek? Ha, şey, şu tip matiz, yani her mallocun, her allocun diyeyim, eşlemik free'si olmasını, evet, iyi örnekleyen bir şey.
+
+188
+00:36:40,692 --> 00:36:54,452
+Sonra Ctrl ve il. Tabiki, dimitimendim ve berbat. Sonrasına devam edelim. Haa, tamam. Area Requestion, Matrix Requestion farklı farklı örneklermiş. Tamam, pekala.
+
+189
+00:36:54,452 --> 00:37:05,012
+Tamam, yapalım. Tamam, nokta nokta ihtiyacımız yok tabiki. Aslında bunu yaptık. Burada çok farklı bir şey yok. Yani böyle şeyler çok yaptık. Herhalde burada bir şeyimiz yok.
+
+190
+00:37:10,867 --> 00:37:34,268
+Şöyle şunu unutmayalım. Evet. Şöyle diyelim. Şöyle diyelim. Şöyle diyelim. Şöyle ve şöyle. Evet. Şimdi burada çok zor bir şey yok. En elemanlık bir dizi için bellekte yer ayırmak.
+
+191
+00:37:34,367 --> 00:37:47,927
+Ve ona göre daha sonra da boşaltmakla ilgili fonksiyonumuz, main fonksiyonumuz. Burada dikkatinizi çekebileceğimiz bir şey, benzinlik için haftalarda da yaptık.
+
+192
+00:37:47,927 --> 00:38:00,807
+Bunlar için istediği kadar sayıda elemanlık bir alan ayırmak için bunu dizilerle yapsak, sabitli kapasite belirlemek zorundayız. Şöyle bir size bir iltifanyede. Hardcoded.
+
+193
+00:38:01,396 --> 00:38:03,396
+We are hand coded.
+
+194
+00:38:03,396 --> 00:38:06,396
+Bir şeye girmemiz gerekiyor.
+
+195
+00:38:07,059 --> 00:38:19,460
+sayı girmemiz gerekiyor. Ama ihtiyaçlarımızın çalışma anında kullanıcı tarafından belirleyeceği bir nokta söz konusuysa bu şekilde Memoreallocation yapacağız.
+
+196
+00:38:19,460 --> 00:38:34,460
+Cast etmeyi unutmayacağız. N x eleman sayısı veya cialogda n x eleman boyutu cialogda n x eleman boyutu.
+
+197
+00:38:35,059 --> 00:38:59,059
+Bu arada, şunu da good practice uygulama olarak söyleyelim. İstenilen boyutta, kapasitede yer ayıramıyorsak eğer bunu belirtip, ondan sonra çöme return-1 diye non-zero bir exit kod ile sıfır olmayan bir çıkış değeri ile çıkmamız en doğru uygulamadır.
+
+198
+00:38:59,635 --> 00:39:12,056
+Şu anki örneklerimizde onu es geçtik. Çünkü zaten o kadar yerimiz vardır diyerekten hiç bunu kontrol etmedik. Ama siz lütfen kontrol etmeyi unutmayın.
+
+199
+00:39:14,195 --> 00:39:19,695
+Evet, buradan çıkartacağımız başka bir ders yok. Ötekine geçelim.
+
+200
+00:39:36,244 --> 00:39:38,564
+ve, şimdi ulaşın.
+
+201
+00:39:45,619 --> 00:39:52,119
+Gidintileri zırnakları ayarlayalım. Önce gidintileri ayarlayalım. Hazır.
+
+202
+00:39:52,119 --> 00:39:55,119
+Benim Haps sekme tuşundayken.
+
+203
+00:40:05,652 --> 00:40:07,652
+Find and Place yapabilir miyim?
+
+204
+00:40:08,851 --> 00:40:15,251
+Şimdi onu oradan oturun, oradan kes, oradan yapıştırdım. Bu kadar uzun değil konu. Böyle devam edebilirim.
+
+205
+00:40:20,211 --> 00:40:36,211
+Şimdi bakın.
+
+206
+00:40:36,211 --> 00:40:43,211
+Burada dikkat etmemiz gereken şey bu sefer iki boyutlu bir dizi.
+
+207
+00:40:43,211 --> 00:40:46,211
+Bir matriz için bellekte yer ayırılırız.
+
+208
+00:40:46,835 --> 00:40:51,335
+Belli bir sayıda satırımız, belli bir sayıda sütunumuz olacak.
+
+209
+00:40:51,335 --> 00:40:57,335
+Şimdi, böyle bir durumda, biz ne diyorduk, ne yapıyorduk?
+
+210
+00:40:57,335 --> 00:41:04,335
+Şimdi, Yıldız Yıldız Mart diyelim, tamam mı?
+
+211
+00:41:04,335 --> 00:41:07,335
+Şimdi, sütunlarımız sıfı.
+
+212
+00:41:07,335 --> 00:41:12,335
+İşte bir, iki.
+
+213
+00:41:13,268 --> 00:41:29,768
+.colon, calls. Ama o calls kaçsa, eksi bir sıfırdan bir eksiye kadar. Ondan sonra gelelim roll'lara şimdi.
+
+214
+00:41:44,788 --> 00:41:46,788
+Love of Sexiness
+
+215
+00:41:50,708 --> 00:42:08,708
+Şimdi tam bir dörtgen matrisi yapmak istiyorsak, yani aslında arkadaşlar olay şu, benim yıldız yıldız mat alanında her bir satırım aslında, sıfırıncı satır, satırları o yüzden farklı renklendireyim.
+
+216
+00:42:17,715 --> 00:42:32,115
+Satırlarım var. Ve burada yapmam gereken şey, kaç adet satırım varsa, o kadar tane, bunlar da int mi? int pointers yapmam.
+
+217
+00:42:32,115 --> 00:42:42,115
+Int yıldız yıldız mat tamam mı? Şimdi benim sıfırıncı satırım aslında yıldız mat sıfır.
+
+218
+00:42:42,115 --> 00:42:44,115
+Tamam mı?
+
+219
+00:42:44,628 --> 00:43:07,068
+Birinci satırım, yani bir indisi satırım, aslında Yıldız Mat 1, şu da Yıldız Mat 2 şeklinde gidiyor. Ve şurası ise mesela örneğin, Mat 01. Bakın artık bu başa Yıldız koymaz.
+
+220
+00:43:08,884 --> 00:43:22,244
+İki boyutlu pointer demek, sütun sayısı kadar, özür dilerim, satır sayısı kadar, sütun kapasiteli pointer demek.
+
+221
+00:43:23,884 --> 00:43:28,644
+Mat sıfır, bu anlamdaki ilk pointer, mat bir, bu anlamdaki ikinci pointer.
+
+222
+00:43:30,484 --> 00:43:31,463
+Tekrarlıyorum.
+
+223
+00:43:36,275 --> 00:43:44,595
+Sütun eleman sayısı kapasiteli pointer veya şöyle de söyleyebilirim.
+
+224
+00:43:44,595 --> 00:43:51,475
+Satı sayısı kadar sütun sayısı elemanlı dizi.
+
+225
+00:43:51,475 --> 00:43:56,595
+Böyle de söyleyeyim. Dizi değil pointer ama benzetme açısından bu ikinci delimi bu şekilde söyleyeyim.
+
+226
+00:43:56,595 --> 00:44:03,475
+Olay bu arkadaşlar. O yüzden bir kere yıldız yıldızmak için yer istedikten sonra
+
+227
+00:44:04,083 --> 00:44:11,283
+Her bir satıl için, stüm kadar elemanlı yer istememiz gerekecek.
+
+228
+00:44:11,283 --> 00:44:28,483
+O yüzden buradaki kodumda, bir kere öncelikle şurada, tüm matriz için alan istedikten sonra, ama bu yeterli değil ve dikkat ederseniz,
+
+229
+00:44:33,043 --> 00:44:41,043
+En satın sayın.
+
+230
+00:44:41,043 --> 00:44:45,043
+M de sütun sayın.
+
+231
+00:44:45,043 --> 00:44:49,043
+Aslında bunu öyle yapsak çok daha iyi olacak.
+
+232
+00:44:49,043 --> 00:44:51,043
+Rollscore.
+
+233
+00:44:51,043 --> 00:44:52,076
+Peki.
+
+234
+00:44:57,876 --> 00:45:12,876
+Evet ki zaten isterken de o şekilde söylüyoruz ama değişken isimlerinin de mümkün olduğu kadar anlamı kolaylaştırıcı şekilde olmasında yarar var.
+
+235
+00:45:12,876 --> 00:45:22,876
+Şöyle. Ondan sonra şöyle. Şöyle.
+
+236
+00:45:23,215 --> 00:45:43,795
+Evet, enleri hep yaptık. Şimdi de enleri yani kolonları yapalım. Şöyle kaydedelim, derdim. Bakın unuttum bir şey var mı? Bir şey var. Aa, i tanımlamamışım. Tamam, pekala. Hemen onu yapalım.
+
+237
+00:45:52,596 --> 00:45:53,596
+Tamam.
+
+238
+00:45:53,596 --> 00:45:55,596
+Şöyle yapabilirsiniz.
+
+239
+00:45:55,596 --> 00:45:56,596
+Kodlaşlarına alayım.
+
+240
+00:46:00,467 --> 00:46:01,467
+Onlar için.
+
+241
+00:46:04,947 --> 00:46:22,947
+Tabi sığmayacak meseleleri var. O zaman şöyle yapalım. Neyse ya ben şuna not düşüvereyim. Aynı şeyi bir daha burada şey edeyim. Gözden geçiriz. Yine açıklama. Diyelim ki.
+
+242
+00:46:30,356 --> 00:46:38,896
+Fakat hepsinden önce derleme hatasına sebep olan şu i'yi de koymayı unutmayalım.
+
+243
+00:46:41,236 --> 00:46:44,176
+Evet, skenikodumuza geri dönelim bakalım.
+
+244
+00:46:46,156 --> 00:46:52,316
+Şimdi, öncelikle iki boyutlu alınçı için yer istedik.
+
+245
+00:46:53,012 --> 00:47:17,452
+yeri, şuraya kadar da, yer istedik, yeri elde edemediysek de problem var dedik ve çıktık. Ondan sonra her bir satır için bu kadar sütun elemanlık int içecek şekilde satırları ayrıca yer açmak zorunda kaldık. Sonra işte bu matrisle ne işlemler yapacaksak yaptıktan sonra free şeklinize dikkat edin.
+
+246
+00:47:17,940 --> 00:47:28,380
+Şu for döngüsüyle istediğiniz malloc için eş değer for döngüsüyle free yaptık.
+
+247
+00:47:28,380 --> 00:47:32,700
+For ile malloc yaptık, for ile free yaptık. Tek bir free yaptık.
+
+248
+00:47:32,700 --> 00:47:43,380
+Fakat Matisse'in kendisini isterken tek bir malloc ile yer ayırmıştık. Bunu sabit bırakırken de tek bir komutla free yaptık. Ondan sonra da bitti.
+
+249
+00:47:43,827 --> 00:47:51,827
+Bakalım şimdi, bu program herhangi bir derleme hatası vermemişse, yol çalışıp bitmiş demektir.
+
+250
+00:47:51,827 --> 00:48:00,827
+Abartalım mı biraz? 100 satır 50 situn.
+
+251
+00:48:00,827 --> 00:48:04,827
+Yani, bu çok büyük bir bellek değil nihayetinde.
+
+252
+00:48:04,827 --> 00:48:08,827
+Şöyle diyelim, şuraya da hop hop hop.
+
+253
+00:48:08,827 --> 00:48:10,827
+Böyle daha güzel olacaktır.
+
+254
+00:48:11,603 --> 00:48:15,323
+Peki, eee, o da durum bu.
+
+255
+00:48:21,492 --> 00:48:43,492
+Şimdi burada şunu söyleyeyim. Bakın dikkat ederseniz, biz burada her bir satır için sütün kadar eleman istedik. Ama böyle yapmak zorunda değiliz. Başka bir değişle. Şuradaki bellek alanında her bir satırın aynı uzunlukta olmasına gerek yok.
+
+256
+00:48:49,472 --> 00:49:05,472
+bir matrisin ana köşegenin şu şekildeydi. Soldan sardığı çatlaz. Ve bunun öyleydi değil mi? Ana köşegen soldan sardığı. Yanılıyorsam lütfen düzeltin beni.
+
+257
+00:49:05,472 --> 00:49:08,472
+Düzeltmeyen arkadaşım yok ama siz kafanızdan düzeltin.
+
+258
+00:49:08,947 --> 00:49:17,807
+Diyelim ki, öyle bir olay yapıp, bu ana köşe genin ır kısmını modelleyeceğiz.
+
+259
+00:49:17,807 --> 00:49:21,007
+Art kısmıyla ilgili hiçbir işlem yapılmayacak.
+
+260
+00:49:21,007 --> 00:49:31,248
+O zaman boşuna benim dörtgen şeklinde veya matrisin karesi kare şeklinde yer ayırmama gerek yok.
+
+261
+00:49:34,175 --> 00:49:37,375
+Ben şöyle bir şey yapabilirim mesela diyelim ki.
+
+262
+00:49:40,175 --> 00:49:43,695
+Şimdi şunu boşaltalım.
+
+263
+00:49:46,175 --> 00:49:48,976
+Ana köşegenin üstü diyelim ki.
+
+264
+00:49:49,775 --> 00:49:52,175
+Şunu da o zaman böyle.
+
+265
+00:50:01,215 --> 00:50:06,215
+3 olsun. Tamam.
+
+266
+00:50:08,215 --> 00:50:11,215
+Şimdi bak, bak, bak, bak.
+
+267
+00:50:11,215 --> 00:50:14,215
+Şimdi bunu da tabi...
+
+268
+00:50:14,215 --> 00:50:17,215
+Hop, hop, hop.
+
+269
+00:50:17,215 --> 00:50:20,215
+Şimdi eksi bir, şu eksi iki.
+
+270
+00:50:21,215 --> 00:50:24,215
+Şu daha eksi üç olsun.
+
+271
+00:50:24,215 --> 00:50:26,215
+Şimdi.
+
+272
+00:50:29,204 --> 00:50:55,084
+Bu ana köşegen ve ana köşegen dahil olacak şekilde üstünü ele alıyor sana ya. Benim ilk satımımda bu kadar elemanım var. İkinci satımımda ondan bir eksik sayıda elemanım var. Düşüncü satımımda ondan da bir eksik sayıda elemanım var.
+
+273
+00:50:55,092 --> 00:51:10,092
+Sarı, yeşil biraz daha çıkışıyor. Bakmak nokta. Aa, pardon, bunu böyle ödü tut çekmem lazım. İlk başta biz, sonra...
+
+274
+00:51:10,324 --> 00:51:16,624
+Ama illaki satır sütun numarasını most time'e sıfırdan başlıyoruz. Yok öyle bir şey yapalım.
+
+275
+00:51:16,624 --> 00:51:19,864
+Neyse tamam o zaman önemi lütfen mazuru görün.
+
+276
+00:51:19,864 --> 00:51:28,523
+Ters köşegenin ana köşegenin diğer köşegenin üstü şeklinde bir işlem yapacaksak eğer diyelim ihtiyacımı öyle genişleteyim.
+
+277
+00:51:28,523 --> 00:51:35,523
+Bu şekilde gitti gitti her bir satırda azalan sayıda bir azalacak sayıda eleman isteyebiliriz mesela.
+
+278
+00:51:38,324 --> 00:51:55,324
+yüzünde sadece tek elemanlık bir yer olacak. Bir üstünde iki elemanlık yer olacak. Onun üstünde üç elemanlık yer olacak şeklinde. Mesela bu şekilde de yapabilirim.
+
+279
+00:52:03,860 --> 00:52:21,460
+Her seferinde biraz eleman yapacağım. İki tane for döngüsü, iki tane for döngüsü ile bunu yapabilirim. Ama o zaman tabi ki bu alanla ulaşacak kod yazarken de yine aynı şekilde iki iki for ile o alandaki elemanları işlemem gerekecek.
+
+280
+00:52:22,356 --> 00:52:40,816
+Bu bir esneklik arkadaşlar. Belki her zaman ihtiyacımız olacak bir esneklik değil ama bilmenizi istedim ki iki boyutlu bir alanda bu alanın her bir satırında farklı sayıda adet eleman olabilir. Bunu bilmenizi istedim zaten.
+
+281
+00:52:42,576 --> 00:52:43,556
+Evet, pekala.
+
+282
+00:52:51,635 --> 00:53:00,635
+Evet, şimdi ara bir ara veririz. Aradan sonra bu işlemlere bakmaya başlarız diyorum. Saat 9.55 diyelim.
+
+283
+00:53:05,139 --> 00:53:10,740
+09.55 ten 10.55 ye kadar 10 dakika.
+
+284
+01:07:24,244 --> 01:07:38,244
+Evet, bakalım. A, vaktini biraz geçirmişiz. Bu arada iki kişi gelmiş, hoş gelmiş. O zaman şimdi yeni gelen arkadaşlarım için şöyle bir ne yaptığımızı söyleyeyim hızlıca. Ondan sonra devam edelim.
+
+285
+01:07:38,244 --> 01:07:48,244
+Yaptığımız şey şu oldu arkadaşlar. Şu iki yansıyı, Dynamic Memorial Location konusunu aydın tır olarak tartıştık.
+
+286
+01:07:48,980 --> 01:07:55,179
+ve buradaki tartışmalarla ilgili, buradaki yazanlarla ilgili örnek kodlar yazdık.
+
+287
+01:07:55,179 --> 01:08:02,779
+Yazdığımız kodlarımız için burada söylenen her şeyin kelimesi kelimesine doğru olduğu anlaşıldı.
+
+288
+01:08:02,779 --> 01:08:10,380
+Burada işlemleri yaparken nelere çok özellikle dikkat etmemiz gerekiyor?
+
+289
+01:08:15,092 --> 01:08:26,092
+Hızlıca, çok hızlıca söylersem. Malloc fonksiyonun aslında kullanımını gördük daha önceki haftalarda temel olarak. Üstüne jlloc eklendi.
+
+290
+01:08:26,239 --> 01:08:47,639
+malloc'da eleman sayısı çarpı elemanın saklanma alanı size of ile hesaplanacak şeklinde ediyorduk. Şimdi çarpı yerine virgül koyduğumuzda J-Lock diyor. J-Lock'un malloc'tan farkı döndürdüğü alandaki byte'ları da sıfırlayarak da artık geri döndürüyor. Malloc'da öyle bir şey yok.
+
+291
+01:08:47,828 --> 01:08:55,588
+Bir de yeni olarak realloc fonksiyonunu gördük. Bu realloc fonksiyonu, belli bir alanın
+
+292
+01:08:55,743 --> 01:09:05,743
+genişletilmesini sağlıyor. Ve mümkünse bu genişletilen alan, mevcut alanın sonuna eklenerekten devam ediyor. Böyle olduğunu gördük.
+
+293
+01:09:05,743 --> 01:09:19,743
+Mevcut bellekle ilgili bazı sıkıntılarımız, sorunlarımız varsa o zaman başlı başına bir bellek alanı taşıma şeklinde yürüyebiliyoruz. Bu mevcut alan Previous Pilter'e.
+
+294
+01:09:20,595 --> 01:09:44,595
+yeni oluşturulan alan işlemleri atıyorsak, gördük ki örnek kodlarımız ile, bu değil, izler bakarsınız. Örnek kodlarımız ile gördük ki, yeni oluşturulan alanın başlangıç adresi ile genişletmek istediğimiz eski pointer'ın gösterdiği alan, aynı alandan başladığını deneyimledik.
+
+295
+01:09:46,452 --> 01:09:58,452
+Fakat bu yeni bloktaki yeni eklenen alanların sıfırlanması konusunda herhangi bir garanti verilmiyor ve sıfırlanmadığını gördük.
+
+296
+01:09:58,452 --> 01:10:10,452
+Bu özellikle hani C-Log mantığıyla yaptığımız kodla henüz kullanılmayan alanların sıfır olarak olmasına dayanan bir algoritma yazdıysanız,
+
+297
+01:10:11,412 --> 01:10:21,012
+O zaman bu yeni bölgenin alanını kendiniz for döngüsü ile ek kod yazılaktan sıfırlamanız gerekecektir. Onu söyleyelim direkt.
+
+298
+01:10:24,627 --> 01:10:35,387
+ve nasıl malloc veya calloclar yaptıysak, hamd eşleniği şekilde free komutları vermeyi unutmayalım dedik.
+
+299
+01:10:35,387 --> 01:10:41,268
+Bu arada şunu da gördük. Örnek kodu geçelim.
+
+300
+01:10:41,268 --> 01:10:49,663
+Eğer belirli bir malloc işleminin sonucunda bize yeterince yer ayrılamamışsa, o pointer'ın değeri null olmuş oluyor.
+
+301
+01:10:49,663 --> 01:11:06,103
+Belki de yer ayrılamamıştır. Bu durumda böyle bir problem oldu falan deyip sıfır olmayan dönüş konuyla programdan çıkmak gerekiyor. Daha belki örneklerimizde bunu da yapmamıştık ama artık yapalım lütfen diyelim. Bundan sonra cıma...
+
+302
+01:11:10,547 --> 01:11:24,307
+Sonra bir dizi için yer ayırma konusunu örnekleyen çok basit kodumuz var. Zaten yaptık bunu. Sadece malloc ve geologla da yapabiliyoruz dedik ve işte bu yer ayırılamazsa dikkat edelim konusunu söyledik.
+
+303
+01:11:24,307 --> 01:11:33,307
+Daha ilginç, en enteresan bir şey. İki boyutlu bir alan ayırdık. Bunun için şu an zaten kodumuz hemen ekranda.
+
+304
+01:11:33,939 --> 01:11:43,939
+Kaç satır ve kaç sütunluk elemanlık yer ayıracaksam, bu arada aslında ayırdığım yerin illaki bir dörtgen olması gerekmiyor dedik.
+
+305
+01:11:43,939 --> 01:11:50,891
+Yani satır sayısı kadas, sütun sayısı elemanlık pointer.
+
+306
+01:11:50,996 --> 01:11:59,876
+oluşturuyoruz aslında dedik ve aslında her bir satırda harfi sayıda sütun da olabilir şeklinde bir şeyler dedik.
+
+307
+01:11:59,876 --> 01:12:09,556
+Orayı artık çok uzatmayayım ki burayı da zaten çok uzatmayacağım. Satır sayısı kadar sütun elemanlık alan ayırıyoruz aslında.
+
+308
+01:12:09,556 --> 01:12:17,876
+İki boyutlu martist dediğimiz iki boyutlu alan dediğimiz yer. Öyle bir alan. Ve tabii bunu yapabilmek için öncelikle
+
+309
+01:12:18,047 --> 01:12:29,047
+İki boyutlu alan istiyoruz. Ve dikkat ederseniz, buradaki olayımız satır sayısı kadar. Int pointer eleman boyutu neyse.
+
+310
+01:12:29,460 --> 01:12:51,739
+O kadar yani alan ayarıyoruz. Satır sayısı çarpı, stün sayısı ama stün sayılarımızdaki her bir eleman da aslında birer int pointer'ı bulacağım da. O zaman sizeof int deyip bu da int pointer'ı şeklinde şu yıldızı da eklemeyi unutmayalım. Bunu bir önceki ders saatinde vurgulamamıştım. Şimdi vurgulamış olayım.
+
+311
+01:12:52,212 --> 01:13:01,492
+Eğer yerimiz yoksa, şey yer ayrılmadı diye çıkmak. Ondan sonra, her bir satır için ayrı ayrı yeni bir derlek ayırma talebinde bulunmamız gerekiyor.
+
+312
+01:13:01,492 --> 01:13:04,692
+İşte satır sayısı kadar...
+
+313
+01:13:05,108 --> 01:13:11,308
+tüm sayısı elemanlık, elemanları da int değerler olacak şekilde de bu sefer.
+
+314
+01:13:11,308 --> 01:13:13,708
+Elemanlık taleplerinde bulacağız.
+
+315
+01:13:13,708 --> 01:13:19,708
+Buradaki, öncekinde dikkat ederseniz int pointer elemanları istiyoruz.
+
+316
+01:13:19,708 --> 01:13:24,708
+Burada ise int elemanları kapasitesi istiyoruz. Onu da vurduyelim şimdi.
+
+317
+01:13:28,243 --> 01:13:29,243
+Sonu var.
+
+318
+01:13:38,804 --> 01:13:56,304
+Şurada yanlış yazacağım. Satır sayısı kadar olan şeyi inşaatacağız. Bakın çünkü satır sayısı kadar, stün sayısı eleman istedik. O zaman yine satır sayısı kadar oluşturduğumuzun satırları free etmemiz gerekiyor.
+
+319
+01:13:56,467 --> 01:14:06,707
+Onu da bu ders saatinde fark ettim. Ve en sonunda iki boyutlu alan için istediğim alanını da bu şekilde free etmem gerekiyor.
+
+320
+01:14:06,707 --> 01:14:21,707
+Böyle bir şekilde kodu çalıştırdığımızda herhangi bir problem olmadan, 100 sütun, 100 satır ve 200 sütun. Bu kadar eleman ayarabilir hiç problem olmadan.
+
+321
+01:14:21,760 --> 01:14:31,628
+işlem yaptık da yapardık ama şimdi odamız burada bellekte yer ayırma. Evet, ın bu dedik ve şimdi örneklerde devam ediyoruz.
+
+322
+01:14:35,155 --> 01:14:51,155
+Evet. Şimdi sağlama işini biraz daha genişletelim. Daha esnekleştirelim. Bu örneğimiz öyle olsun. Matrix çarpımı öğrenilse size alıştırma olarak bırakıyoruz diyeceğiz.
+
+323
+01:14:54,155 --> 01:14:59,155
+Son bir eksempel daha var. O neymiş? O da Sting Matrix Operation. Onu da birlikte yapacağız.
+
+324
+01:15:00,243 --> 01:15:27,683
+O şekilde bunu kapatırız diye düşünüyorum. Belki şu functions kısmına girebiliriz ama girsek de burada belki bitiremeyebiliriz. Bu konularda vizede sorunlu olmazsınız arkadaşlar. Önemli olan işte dinamik bellek yönetimiyle ilgili her konu olmak üzere gördüğünüz bütün işlekten klasik usul bir sınav geçireceksiniz arkadaşlar.
+
+325
+01:15:28,020 --> 01:15:30,520
+Bu şekilde olacak. Şimdi,
+
+326
+01:15:30,520 --> 01:15:32,020
+Tazı uzayana,
+
+327
+01:15:32,020 --> 01:15:33,520
+bir şey oldu.
+
+328
+01:15:42,355 --> 01:15:45,235
+Şuradan, şükş bakalım.
+
+329
+01:15:52,148 --> 01:15:54,148
+Güzel, peki.
+
+330
+01:15:54,148 --> 01:16:04,148
+Şimdi, hala, hepsi yerinde. Ctrl A, Ctrl C, Ctrl A, Ctrl V.
+
+331
+01:16:04,148 --> 01:16:08,140
+Pekala, şimdi bakalım.
+
+332
+01:16:12,595 --> 01:16:37,595
+Bu arada, şunu dinlelim. Bakalım. Ha şu sort, bu sort, onlara da bir bahçeceğiz. Aslında karşılaştıkını yapmak için o da yararlı olabilir. Şimdi bakalım bu da nasıl, main function'a ne yapıyormuşuz bakalım. Selection sort yapıyormuşuz peki. O zaman.
+
+333
+01:16:37,939 --> 01:16:52,180
+Şuradaki, şu, sortselection sort birisi ile mevcut kodumuzu bir karşılaştırırız bakalım. Neyi daha yapıyoruz, ne kadar yapıyoruz diye. Önceki dersler hatırlarsanız, bu farklı.
+
+334
+01:16:53,140 --> 01:17:15,140
+Sıra arama örneklerimizi, birinci kriter, birinci ölçüt, bu kadar iyi fonksiyonlara ayırıyoruz. İkinci ölçüt, bu fonksiyonlar arasında veri aktörlığını nasıl yapıyoruz? Buna göre tartışarak incelemiştik. Bir nokta geldiğimiz noktada, dinamik bellek kullanmadan ve...
+
+335
+01:17:16,404 --> 01:17:31,404
+Tabi dezavantaj ve global pong değişkenlerde kullanarak bu da karşı edilmiyor. Bir selection sort işi yapmıştık. Dizinin gelinmesi, romanların yazılması, herhangi bir...
+
+336
+01:17:32,340 --> 01:17:43,100
+Minimum elemanın bulunması, selection sortu o şekilde ya, bilmen kaçıncı en küçük elemanın bu, bilmen kaçıncı gözde onun bulunduğu gözük elemanın yerlerini değiştir.
+
+337
+01:17:43,100 --> 01:17:45,340
+Şeklinde işlerimiz vardı.
+
+338
+01:17:45,340 --> 01:17:52,059
+Ve bu swap işin de main içerisinde yapıyorduk. Ayrıca başka fonksiyona kodlayamamıştık.
+
+339
+01:17:52,059 --> 01:17:58,460
+Tabi o nokta, bugün daha sonra geleceğimiz aslında şey.
+
+340
+01:17:58,739 --> 01:18:26,219
+Fonksiyonlar, bunun parametre aktarma, ince ekliği konusunu tartışacağız. Ondan sonra belki çok hakim oluruz. Fakat nihayetinde artık bir dinamik bellek yönetimi konusunu artık tamamen öğrendik. O zaman benim aslında global değişkenlere de pek ihtiyacım yok. Pointer gönderdik mi her şey olur biter. Yapabiliriz. Global değişkenlere ihtiyacımız kalmaz diye düşünüyorum.
+
+341
+01:18:26,739 --> 01:18:30,739
+Gerçekten o noktaya gelişebilmiş miyiz şu an?
+
+342
+01:18:30,739 --> 01:18:39,739
+Peki, şimdi main metodunda işte döngü değişkenimiz, n eleman sayımızda işleyecek değişkenlere ihtiyaçımız var.
+
+343
+01:18:39,739 --> 01:18:48,739
+Ve bütün elemanlarımız p pointer'ın gösterdiği bir dizi şeklinde ayrılmış alandan kullanılacak.
+
+344
+01:18:48,739 --> 01:18:50,739
+Evet, nihayet artık kullanıcımıza...
+
+345
+01:18:51,444 --> 01:19:00,564
+Kaç tam sayı girmek istediğimizi tam olarak söyleyip, onu kullanıcıdan alıp, artık belki de tam o kadar elemanlık yer sayırabilir.
+
+346
+01:19:00,564 --> 01:19:05,124
+Malloc ile ayırmışım, cihalloc ile de olur, hiç farketmiyor.
+
+347
+01:19:05,124 --> 01:19:09,764
+Ve kullanıcı gerçekten tam o kadar adet sayı gireceği için...
+
+348
+01:19:09,764 --> 01:19:13,284
+Hocam, bir şey söyleyebilir miyim, bölüyorum ama kusura bakmayın.
+
+349
+01:19:13,284 --> 01:19:18,004
+Unarım kimse derste erişememiş, o yüzden sadece üç kişiyiz.
+
+350
+01:19:18,131 --> 01:19:20,131
+Diğerleri giremiyor sanırım Zuma.
+
+351
+01:19:20,371 --> 01:19:22,111
+O da ilginç. Peki, şöyle yapalım o zaman.
+
+352
+01:19:24,891 --> 01:19:27,731
+Girenler, giremeyenleri çağırsın yapacağız.
+
+353
+01:19:28,131 --> 01:19:29,171
+Onun için de şöyle yapacağım.
+
+354
+01:19:30,511 --> 01:19:35,771
+Şimdi, tabii ders başlamadan ilk yollayamıyorsunuz ya.
+
+355
+01:19:36,251 --> 01:19:39,332
+Peki, davet edin. Davet bağlantısını kopyalar.
+
+356
+01:19:39,332 --> 01:19:44,332
+İşte kopyaladım. Şimdi bunu da şuradan sohbete...
+
+357
+01:19:46,644 --> 01:19:57,484
+yapıştırdım, gönderdim. Bu da demek oluyor ki online yıldızına giriş yapmasanız bile şu linkten katılabilirsiniz.
+
+358
+01:19:57,484 --> 01:20:05,004
+Bunu da şimdi nasıl buyuralım genel? Bunu da şöyle yapalım. Şuraya bir giriş yapayım.
+
+359
+01:20:10,323 --> 01:20:13,563
+Hocam, gruptan ben de paylaştığım attığınız linki.
+
+360
+01:20:13,563 --> 01:20:24,243
+Çok iyi, çok iyi. Şimdi, evet, siz öncelikle onu yapın, çok iyi. Ben daha bile hızlı erişirim belki. Ondan sonra acaba ben de buradan ayrıca tekrar göndereyim.
+
+361
+01:20:31,923 --> 01:20:38,923
+Yani bu tamamen arkadaşların girememesinin sebebi online yıldızdan kaynaklanan bir problem.
+
+362
+01:20:38,923 --> 01:20:43,923
+Nihayetinde şurada ders tanımlı. Bu ders...
+
+363
+01:20:44,923 --> 01:20:48,923
+Anaa! Yapsın! Üç grubunun ders.
+
+364
+01:20:50,923 --> 01:20:52,923
+Tamam, peki. Anlaşıldı.
+
+365
+01:20:52,923 --> 01:20:56,923
+Anlaşıldı ama yani ne kadar enteresandır ki...
+
+366
+01:20:56,923 --> 01:20:58,923
+Bakın...
+
+367
+01:20:59,347 --> 01:21:19,827
+Ders, evet iki grup açıldı, doğru, bir ve üç. Benim buradaki olay akışında ben üçü gördüm ve üçü tıkladım ve üçe bağlandım. Üç de bu siber güvenlik programı için açılan grup, halbuki benim de bire tıklamış olmam gerekiyordu. Oradan bir kaynaklanan problem var.
+
+368
+01:21:20,340 --> 01:21:29,340
+Evet, iki grup olunca, iki ayrı grubu bu şekilde açınca, tek grup altında birleştirilip vermeyince, orada böyle bir olay oldu.
+
+369
+01:21:29,960 --> 01:21:38,180
+Pekala, şimdi işler anlaşıldı. İşlerin nedeni anlaşıldı. Neden bu klas katılımcı vardı, ne oldu, ne bitti. Olaylar anlaşıldı.
+
+370
+01:21:38,579 --> 01:21:41,199
+Peki, bunu da bir yazalım şimdi madem öyle.
+
+371
+01:21:41,199 --> 01:21:49,960
+Aha, o zaman tabi, o zaman bu videonun kaydını da bu linkten giren arkadaşlar doğrudan göremeyecekler.
+
+372
+01:21:49,960 --> 01:21:51,960
+Vay, tamam peki.
+
+373
+01:21:51,960 --> 01:21:55,639
+Oy, nasıl yapalım şimdi bu işleri?
+
+374
+01:21:55,639 --> 01:22:02,639
+Nasıl yapalım, nasıl yapalım? Öncelikle bir şuraya girelim bakalım.
+
+375
+01:22:05,395 --> 01:22:07,395
+Başka, başka, başka, başka.
+
+376
+01:22:07,395 --> 01:22:08,395
+Peki.
+
+377
+01:22:08,395 --> 01:22:11,395
+Şimdi, adım adım yapacağız müşteri.
+
+378
+01:22:11,395 --> 01:22:12,395
+Diyelim ki...
+
+379
+01:22:21,652 --> 01:22:23,652
+Çeçlemci arası alalım öğrenciler.
+
+380
+01:22:26,652 --> 01:22:27,652
+Ve tabii ki...
+
+381
+01:22:28,652 --> 01:22:33,652
+Ah! Ve tabii ki benim şu gönderdiğim e-postada...
+
+382
+01:22:35,652 --> 01:22:43,652
+E-postayı birinci gruba yollamışım ama online'de ilk başta üçüncü grubun çıkınca, üçüncü grubun dersi linki üstünden girmişim. Bye bye.
+
+383
+01:22:45,652 --> 01:22:46,652
+Peki.
+
+384
+01:22:52,564 --> 01:22:54,539
+Şen de asla mey lanşlar.
+
+385
+01:23:00,659 --> 01:23:05,460
+Aş, Aş, Aş, Red Group 1 olan anayla.
+
+386
+01:23:23,220 --> 01:23:29,220
+Şimdi,
+
+387
+01:23:29,220 --> 01:23:33,220
+Online.yıldız'da
+
+388
+01:23:33,220 --> 01:23:37,220
+Olay Akışı'nda
+
+389
+01:23:37,220 --> 01:23:46,220
+İlk bilgirken, 3. Grup dersine tıklamam nedeniyle
+
+390
+01:23:46,220 --> 01:23:51,212
+Sisteme geleceğinizde
+
+391
+01:23:52,435 --> 01:24:04,435
+ders başlangıcını görememiş olacaksınız.
+
+392
+01:24:04,435 --> 01:24:16,235
+Aynı nedenle ders kayıdıda...
+
+393
+01:24:16,756 --> 01:24:42,195
+Kayıt edilen ders, bildiğimiz turda doğrudan görünmeli bir çektir. Derse tam itibariyle, yapıldığımı, aşağıdaki bağlantıyı izleyebilirler.
+
+394
+01:24:42,452 --> 01:25:07,452
+dersin tamamlanmasının ardından. Video linki, video bağlantısı. Öğrenci sayfasına daha kalıcı olan bir linkti. Öğrenci. OBS öğrenci sayfasına.
+
+395
+01:25:07,731 --> 01:25:18,051
+önderilecek mesaj ile paylaşılacaktır dedim.
+
+396
+01:25:24,851 --> 01:25:30,531
+Herkes ekranda, ha, çok bağlanatı yollamadım. Yolladız.
+
+397
+01:25:39,636 --> 01:25:56,036
+Evet, durum için lazım. Evet, sayınız da artıyor. Dari bahsettiğim kopyalar. Bundan sonra işim var. Şunu kapat şimdilik. Şöyle, şöyle. Bundan sonra, freecops da kendine gönders.
+
+398
+01:25:56,036 --> 01:26:06,836
+Eksik işim var. Subject'la dersi seçtim. E-posta dedim. Dosyayı göndermiyorum. Tamam, bunun gitmesi lazım artık.
+
+399
+01:26:07,923 --> 01:26:15,923
+disabled bir, etkileşmemiş bir görünüm var da dürümünün ama mesaj göndermişi oluyor.
+
+400
+01:26:20,243 --> 01:26:28,243
+Hay Allah ya. Bakalım şimdi. Evet bu arada ben dahil 18. Şu olmuşum.
+
+401
+01:26:32,404 --> 01:26:37,184
+Peki o zaman malumene 10.5 yapalım da işe başlamadan.
+
+402
+01:26:37,184 --> 01:26:44,584
+Bir blog ders gibi yaparız. Kalan zamanı o şekilde kullanırız.
+
+403
+01:26:51,572 --> 01:26:53,971
+Çeyreğol, patlam ki, dağılır.
+
+404
+01:26:59,828 --> 01:27:05,388
+Evet, şunu yapacağız. Peki. Yapacağız dedik. Bunun inceleyip birazdan başlarız.
+
+405
+01:27:05,388 --> 01:27:11,628
+Ve madem öyle, iki dakika sonra şu girizgahı tekrarlarız.
+
+406
+01:27:11,628 --> 01:27:15,188
+Hangi girizgahı? Şurayı tekrarlarız.
+
+407
+01:29:38,452 --> 01:29:40,332
+Evet, peki. Başaralım bakalım.
+
+408
+01:29:45,332 --> 01:29:58,872
+Evet, özür dilerim. Yani üzgünüm. Öngöremediğim etken ders, bu dersin ilk saatini herkese ulaştıramamama, canlı linkten ulaştıramamama sebep oldu.
+
+409
+01:30:02,547 --> 01:30:11,047
+telatisinin ilk ders saatini de gelen videoyu göndermemle yapmış oluruz inşallah.
+
+410
+01:30:11,047 --> 01:30:28,047
+Kanala sonunda da kesinlikle diğer aktarım şeylerine girmeyelim ve sınavımızı da bu 149. yansımın sonuna kadar olan yere kadar yürütelim.
+
+411
+01:30:28,047 --> 01:30:29,047
+Peki.
+
+412
+01:30:29,140 --> 01:30:45,460
+Şimdi, bu süreç içerisinde bir yeni katılımcı oldu, pekala. Şöyle söyleyelim, zaten daha evvelki, önceki haftaki çalışmalarımızda, dinamik bellek alıp bunu kullanma konusunda ön çalışmalarımız olmuştu.
+
+413
+01:30:45,460 --> 01:30:57,140
+İlk ders saatinde bunu bütün ayrıntılarıyla inceledik. Malloc ek olarak, Jalloc fonksiyonu da var dedik. Malloc ve Jalloc arasındaki farkla, birinci fark.
+
+414
+01:30:57,140 --> 01:31:10,420
+Bu noktada parametre çeşidi. Birincisinde eleman sırası n ise n çarpı size of element türü diyorduk. İkincisinde ise n virgül...
+
+415
+01:31:10,676 --> 01:31:13,036
+eleman boyutu diyorum.
+
+416
+01:31:13,036 --> 01:31:18,156
+Dize takviminin ne zaman konu açıklanacağı konusunda ise fikrim yok.
+
+417
+01:31:19,156 --> 01:31:26,256
+Şu an en son bölüm listesinde, bölüm WhatsApp grubunda bu konuyla ilgili henüz bilgi yok.
+
+418
+01:31:28,307 --> 01:31:33,368
+Pazartesi başlayacak sınavlar Cuma'ya kadar en geç duyurulu.
+
+419
+01:31:33,728 --> 01:31:39,927
+Burada vize haftasında genelde dersin kendi günlük saatinde oluyor.
+
+420
+01:31:40,208 --> 01:31:50,788
+Ama olur da sınıf ayarlayamama sonların nedeniyle başka günlerde taşınabilir derslerin vizeleri.
+
+421
+01:31:51,388 --> 01:31:55,247
+Genelde ders hangi günlükse vizesinde aynı gün yapmaya çalışıyoruz.
+
+422
+01:31:56,307 --> 01:31:58,307
+değişebiliyor.
+
+423
+01:31:58,307 --> 01:32:00,307
+Büyük olasılıkla.
+
+424
+01:32:00,307 --> 01:32:00,716
+Soru bu.
+
+425
+01:32:04,275 --> 01:32:16,335
+Bu sorumuzun en iyi doktor yanıtını da ne bileyim, Sırma Hoca, Hamza Hoca ve Can Hoca, Ali Can Hoca.
+
+426
+01:32:17,475 --> 01:32:26,055
+Başkan ve başkan yardımcılarının derslerini an arkadaşlar, onlar en yakın hocam işte şöyle ne zaman açıklanacak diye daha şey yanıtılabilir.
+
+427
+01:32:26,536 --> 01:32:30,575
+Yakında açıklanacaktı zaten en geç şımaya kadar açıklanması gerekirse.
+
+428
+01:32:31,252 --> 01:32:49,252
+Diyorum. Evet. Pekala. Evet. Malloc ve C, A, L, O'nun farkları. Birincisi parametrelerinin çeşitli bir sırası. İkincisi ise C, A, L, O, ayrılan bölgeyi içeriğini sıfırlayarak size veriyor. Aradaki iki fark bu. Bir de realloc fonksiyonu var.
+
+429
+01:32:59,252 --> 01:33:08,612
+alanı gösteren işaretçiyi veriyorsunuz, yeni toplam ebatı veriyorsunuz, size yeni bir pointer döndürüyor.
+
+430
+01:33:08,851 --> 01:33:18,452
+İsterseniz o döndürdüğü yeni pointerı yine eski pointer atayabilirsiniz. Hiç problem yok. Eski alan yine sizin bellek bloğunuzun başını göstermeye devam eder.
+
+431
+01:33:18,452 --> 01:33:31,051
+Ve bu arada arka planda genelde eğer yapabiliyorsa aynı bellek alanının sonuna eklenti ile genişletme işini yapıyor. Yapamıyorsa bambaşka bir alana taşıyor.
+
+432
+01:33:33,492 --> 01:33:41,711
+eski bilgiyi kaybetmiyor fakat genişletilen yeni alan içerisinde sıfırlamıyor şeklinde bir çalışma biçimimiz var.
+
+433
+01:33:41,711 --> 01:33:53,832
+Ve bu arada nasıl alloc, calloc, realloc falan yaptıysak, benzer ve telf sırasında free de yapmamız gerekiyor.
+
+434
+01:33:53,832 --> 01:33:58,512
+Nasıl ki her parantez açtığımız telf sırada kapatıyoruz.
+
+435
+01:33:58,512 --> 01:34:01,492
+Eşlemik diyeyim daha doğrusu çünkü parantez üstüne parantez açabiliriz.
+
+436
+01:34:01,492 --> 01:34:16,364
+diyeceğimiz gibi. En son açtığımızı en ilk kapatıyoruz. Şeklinde simetrik de diyebilirim. Benzer mantıkla her bir alloc fonksiyonları için free'leri de yapmamız gerekiyor.
+
+437
+01:34:16,404 --> 01:34:42,604
+dedik ve yer ayırırken de eğer yer ayrılamamışsa ilgili pointer'ın değerini nal oluyor. Onu da bir kontrol edip, eğer ayrılamamışsa ayrılamadır deyip, eksi bir non-zero return kod ile dönmemiz gerektiğini, daha evvel böyle yapmadığımızı ama yapsak iyi olur mu? Bundan sonra yapacağız. Siz de sınavlarda bu şekilde yapın şeklinde hatırlatmamızı yap.
+
+438
+01:34:43,188 --> 01:34:59,427
+ve ardından mesela örnek olarak, TrueMatch Allocation örneğinde iki boyutlu bir alan yani satırlar ve stünlar şeklinde alan ayırdığımızda nasıl bir kod olduğunu inceledik.
+
+439
+01:34:59,427 --> 01:35:03,908
+Bunu da şu an burada sadece kontrol, zeyreye paslam bir alabilir miyim?
+
+440
+01:35:03,908 --> 01:35:07,908
+Alabiliyorum, tamam peki. Evet, kodumuz yine burada.
+
+441
+01:35:08,083 --> 01:35:14,323
+Bu sefer madem iki boyutlu matriz gibi alan ayarıyoruz, o zaman çift pointers kullanıyoruz.
+
+442
+01:35:14,323 --> 01:35:18,804
+Ve satır ve sütun kadar elemanlar içeriyecek.
+
+443
+01:35:18,804 --> 01:35:24,243
+Ortaya çıkan resim aslında şöyle bir şey olacak. Şuradaki gibi bir durum olacak.
+
+444
+01:35:24,243 --> 01:35:33,203
+Satır sayısı kadar, bütün sayısı elemanlık pointerlar içerilecek.
+
+445
+01:35:33,296 --> 01:35:48,896
+durum bu. Örneğin Yıldız Mat 0 dediğimde bu ilk satırımın başlangıcını gösteren pointer. Yıldız Mat 1 dediğimde bu ikinci yani bir indisli satırımın başlangıcını gösteren pointer şeklinde ilerleyecek.
+
+446
+01:35:49,171 --> 01:36:07,171
+Ve herhangi bir mesela şu göz ise sıfır indis rüsnatı, bir indis sütunun gösterdiği yer olacak. Onu da hiç yıldız koymadan direkt böyle işte dizi operatörleri ile erişiyoruz. Ama isterseniz bunu önceki haftalarda gördüğümüz şeklinde...
+
+447
+01:36:08,532 --> 01:36:31,532
+Pointer aritmeti şekliyle de yapabiliriz isterseniz. Mesela buraya şöyle de yazabiliriz. Önce Satırs. Mat artı bir deyip, şurada çalışayım bari. Mat artı bir deyip, yıldız koyup, ondan sonra Stun için şöyle alıp,
+
+448
+01:36:33,536 --> 01:36:45,775
+Artı iki deyip şöyle yapıp, evet hani böyle yazabiliriz şuranın içeriğini mesela. Geçen haftalardaki, ha bir de şurayı, diskonuyu unutmayalım tabii ki.
+
+449
+01:36:45,775 --> 01:36:56,335
+Evet. Bu gözün içeriği şu şekilde yazabiliriz. Geçen haftalardaki pointer işlemlerini hatırlayın. Orada da, burada da oturup yapabiliriz abi.
+
+450
+01:36:59,380 --> 01:37:09,140
+İşte böyle bir alan sahibi olabilmek için, böyle bir ilk başta iki boyutlu alan talebinde bulunmam.
+
+451
+01:37:09,140 --> 01:37:14,899
+Ve bu sefer bakın, sütunlarındaki elemanlarım int pointer'dan olacak yani.
+
+452
+01:37:15,060 --> 01:37:30,399
+Dikkat çekmemiş istediğim nokta bu. Sonra her bir satır için, her bir satır pointer için şöyle bir malloc komuturu veriyorum. Bu sefer elemanların veri olacağından bu sefer sizeof int diyorum. Sizeof int pointer değil.
+
+453
+01:37:30,399 --> 01:37:40,060
+Sertleri kullanacağız edeceğiz. Daha sonra eşlenik sırada free etmemiz gerekiyor. Madem şöyle bir mallocumuz var, onun eşleniği şöyle bir free'miz var.
+
+454
+01:37:42,931 --> 01:37:56,291
+O satır pointer'ını boşaltıyoruz. Daha sonra komple bütün iki boyut alanını boşaltıyorum şeklinde çalışmamız gerekiyor. Peki.
+
+455
+01:37:56,659 --> 01:38:24,659
+Evet, herkes tamamsa artık katılımcı sayımız da biraz artmış. Şimdi bu iki dinamik bellek yönetimi üzerinden şeyler yapalım bakalım, bir şeyler yapalım. Bunu da yapmak için de Dynamic Sorting yapacağız ve bu dinamik sardama yaptığımız işini Selection Sort açısından baktığımızda daha evvel çalıştırdığımız ve incelediğimiz kod ile avantajlarını görerekten karşılaştıracağız.
+
+456
+01:38:24,659 --> 01:38:35,899
+Ve halaki kodumuz hem dinamik bellek kullanmıyordu, o açıdan dezavantajlı, hem de fonksiyonlar şu global değişkenleri kullanıyordu, o açıdan da dezavantajlı.
+
+457
+01:38:36,339 --> 01:38:43,859
+Şimdi artık bellek yönetimini bildiğimizde pointerların uclarında kaybetmeden fonksiyonlar arası aktarabileceğimizdir.
+
+458
+01:38:44,239 --> 01:38:48,079
+Bu işi çok daha iyi yapabiliyor olacağız Dynamic Sorting işinde.
+
+459
+01:38:52,659 --> 01:38:56,059
+Yapıştırdıktan sonra incelemeye başlayalım.
+
+460
+01:38:57,559 --> 01:38:59,259
+Evet, şimdi
+
+461
+01:39:00,559 --> 01:39:02,859
+Mean fonksiyonumuzun içerisinde
+
+462
+01:39:03,359 --> 01:39:08,059
+Döngü değişkenimiz, eleman sayımız ve kullanacağımız bellek
+
+463
+01:39:08,259 --> 01:39:11,460
+Başlangıç işaretçisini tanımıyoruz.
+
+464
+01:39:11,759 --> 01:39:14,259
+Kullanıcı karşı tam sayı girmek istiyorsa soruyoruz.
+
+465
+01:39:14,259 --> 01:39:19,259
+Kullanıcından bunu alıyoruz ve o kadar bir alan ayırıyoruz.
+
+466
+01:39:19,311 --> 01:39:36,311
+Eğer ayıramadıysak, T'nin değeri, T'nin kendisi NULL oluyor. O zaman, Berek ayıramadığı DIP ve X1 ile uygulamadan çıkıyoruz. Sonra tek tek kullanıcılar sayıları isteyelim ve o sayıları ilgili alana yazalım.
+
+467
+01:39:36,311 --> 01:39:44,311
+Dikkat ederseniz, T'nin P başlangıç adresini hiç kaybetmemeye çalışıyorum. P artı artı gibi bir şey demiyorum mesela.
+
+468
+01:39:44,787 --> 01:39:51,287
+Sadece o başlangıç adresinden şu kadar ilerisi şeklinde gibi programlar yapıyoruz.
+
+469
+01:39:51,287 --> 01:39:57,787
+Peki, şimdi bu programı biraz daha geliştirmeye de çalışacağız.
+
+470
+01:39:57,787 --> 01:40:01,787
+Örneğin elemanların girilmesi için ayrı bir fonksiyon da yazabiliriz mesela.
+
+471
+01:40:01,787 --> 01:40:07,787
+Bir de NTP'ye baktığında bakıyorum, burada herhangi bir global değişkende yok.
+
+472
+01:40:07,787 --> 01:40:08,587
+Tamam mı?
+
+473
+01:40:09,203 --> 01:40:13,703
+Önce sadece bir allusion yapmışız, fonksiyon tanımı yapmışız.
+
+474
+01:40:13,703 --> 01:40:15,384
+Print list diye bir fonksiyonun var.
+
+475
+01:40:15,384 --> 01:40:19,384
+Başlangıcının noktasını alıyor ve şu kadar element yazıyor şeklinde.
+
+476
+01:40:19,384 --> 01:40:25,963
+Eğer istersek bu print listi en yukarıda kodlayarak o allusiona ihtiyacımız da olmayabilir.
+
+477
+01:40:25,963 --> 01:40:28,683
+Hatırlıyorsunuz, bu önceki haftaların konusu.
+
+478
+01:40:29,747 --> 01:40:38,707
+Neyse, bakalım şu haliyle bir inceleyip çalıştırdıktan sonra bunu biraz daha fazla fonksiyonlara ayırabiliriz.
+
+479
+01:40:44,020 --> 01:40:57,020
+Peki, kullanıcından dili istedikten sonra bakalım girilendiğinizde nasıl bir şeymiş? Bir gösteriyor, sıkmamış ya. Ondan sonra TractionSort fonksiyonumuzu kullanıyoruz. Dikkat ederseniz...
+
+480
+01:40:58,420 --> 01:41:03,699
+Printlist'e olduğu gibi, Printlist'e parametre olarak bu başlangıç noktasını veriyoruz.
+
+481
+01:41:03,699 --> 01:41:16,420
+Ayrılan bellek alanının. Burada dikkat etmeniz gereken şey, kompsiyonun kendisinde, Printlist'te mesela, bu bir gelen pointer'dır şeklinde beyan ediyoruz. Öyle etmeliyiz zaten.
+
+482
+01:41:16,543 --> 01:41:27,784
+Ama gönderirken pointer'ın kendisini gönderiyoruz. Hani yıldız diye göndermiyoruz. Çünkü benim aslında bir başlangıç noktası göndermem gerekiyor.
+
+483
+01:41:27,784 --> 01:41:34,984
+Bir başlangıç pointer bekliyor benden daha doğrusu özür dilerim. Bu fonksiyon benden başlangıç pointer bekliyor.
+
+484
+01:41:34,984 --> 01:41:44,543
+Kendi içerisine de girip baktığımızda da bu başlangıç noktasını bir pointer ele alıp, şeklinde ele alıp, bakın pointer aritmeti
+
+485
+01:41:44,543 --> 01:42:02,864
+ile bu işlemleri yapıyor. O yüzden ben bu fonksiyona pointer'ımı gönderirken yıldız şeklinde değil pointer'ın bizatki kendisi olarak bunu aktarıyorum parametre olarak veriyorum. Benzer şekilde Selection Sort işinde
+
+486
+01:42:03,667 --> 01:42:31,667
+Bu pointer'ı veriyorum. Pointer vermem sayesinde benim bütün sıralama işlemlerini o fonksiyonda yapmam yeterli oluyor ve ayrıca bir global değişken kullanmama da, bir global dizi tanımlamama da falan hiç gerek kalmıyor. Peki, dizi gerçekten sıralanmışım diye de bakmak istiyorum. Sıralı dizi de şudur şeklinde yine listenin yazılması sağlanıyor. Ondan sonracıma başka bir işim kalmadı. Bir tek malloc.
+
+487
+01:42:31,667 --> 01:42:45,167
+konular şurada. Onun hdl free'si yer alıyor burada. Ondan sonra inşallah programımız bir çatlama patladı, patlama olmadan çalışıyor şeklinde ilerliyoruz. Selection sortu da bil.
+
+488
+01:42:45,359 --> 01:43:12,500
+İnceleyelim isterseniz nasıl çalışıyor. Print list inceleyelim. Selection sort'a da bakalım şimdi. Bu arada bubble sort falan var da. Selection sort daha kendi içerisinde ilginç. Çünkü fonksiyon içerisinde de ayrıca tekrar fonksiyon çağırıyoruz. Evet, nasıl çalışıyor selection sort'umuz? Sağlanacak alanı alıyor. Bu da kasten pointer adını B demişim mesela. P olması gerekmiyor tabii ki ismin ne olursa olsun işler değil.
+
+489
+01:43:12,832 --> 01:43:29,832
+ve N konumlu. Çünkü şey değil hani birinci minimumu al, birinci konuma koy. İkinci minimumu al, ikinci konuma koy şeklinde gidiyordu Selection Sortumuz. O yüzden...
+
+490
+01:43:30,260 --> 01:43:42,239
+Ama bir de şunu da unutmayın. Onu daha o şu get position of min için yaptığım bu açıklama. Geriye dönelim. Buradaki parametre listesini açıklayalım.
+
+491
+01:43:42,239 --> 01:43:57,279
+Şimdi artık dizilerle çalışmıyoruz. Dinamik bellek yönetimiyle çalışıyoruz. O yüzden kullanıcının kaç adet veri ile girdiğini bu fonksiyonlarıma da ikinci parametreye de herhangi bir parametre olarak vermem gerekiyor.
+
+492
+01:43:57,779 --> 01:44:04,779
+Daha evvel bir tane size diyorduk. Bunu ister define list, değişmeyecek şekilde tanımlayın.
+
+493
+01:44:04,779 --> 01:44:10,779
+Veyahut da global değişkine konul bir şeyler yapın. O şekilde bir yerlerden alabiliyorduk.
+
+494
+01:44:10,779 --> 01:44:16,779
+Şimdi dinamik bellek yönetiminde kullanıcının ne gireceği orada belirsiz. Ondakiler, yüzdekiler, binlikler.
+
+495
+01:44:17,460 --> 01:44:37,859
+Kaç eleman olduğu sayısı ile, parametrisi ile birlikte bu benim dinamik alanımın gösterdiği pointerı, bu eleman sayısını birlikte yöndermem gerekiyor. Bunu Printlist'te uygulamamışım ya da belki kısaca geçtim. Aynı şey onda da geçerli. Tamam başlangıç noktası burası ama kaç tane eleman gösterir?
+
+496
+01:44:38,228 --> 01:44:48,948
+Tamam, sağlamaya başlayacak. Başlangıç noktası burası ama kaç elemanlık bir alan bu? Bu bilgiyi de mutlaka aktarmayı unutmuyorum bu fonksiyonlara.
+
+497
+01:44:50,100 --> 01:44:59,780
+Peki, evet. Döngü değişkenim iyi. Selection Swords'un içerisinde. İlgide minimum elemanın pozisyonunun saklanacağı değişkenim.
+
+498
+01:44:59,780 --> 01:45:07,860
+Ve swapping işlemi için kullanacağı geçişi değişkenim. Bu swapping işlemini de ayrı bir fonksiyonla taşırız sizinle birlikte.
+
+499
+01:45:08,360 --> 01:45:13,860
+Ama bu aşamada şu şekilde bir çalışımı görelim. Sonra daha ayrıntısını yaparız. Peki.
+
+500
+01:45:14,271 --> 01:45:18,271
+Şimdi, for döngüsü içerisinde bütün elemanlar için
+
+501
+01:45:20,271 --> 01:45:21,887
+inci
+
+502
+01:45:21,887 --> 01:45:47,127
+elemanın B listesinde yer alan N elemanlı verinin inci, N küçük elemanın yerini bulmaya yönelik Get Position of Min diye fonksiyonumuz var. O fonksiyonun getirdiği değeri buna aktarıyorum. MinPost değişkenine aktarıyorum. Ondan sonra eğer gerçekten bir yer değişimi işlemi gerekiyorsa
+
+503
+01:45:48,500 --> 01:45:51,819
+O zaman yer değiştirme işlemini yapıyorum.
+
+504
+01:45:51,819 --> 01:45:59,059
+Bazen eşitlik de olabiliyor, eşitlik varsa boşuna yer değiştirme gibisinden bu if-controller var.
+
+505
+01:45:59,059 --> 01:46:05,819
+Yoksa aslında bu işi silebilirim de gibi geliyor bana.
+
+506
+01:46:05,819 --> 01:46:07,899
+Deniriz birazdan.
+
+507
+01:46:13,716 --> 01:46:29,315
+Şu biraz şey için işte, bu değişiklikler nasıl oluyor, her bir swapping işlemi ardından nasıl, dizinin yeni hali ne olmuş onu da görelim diyor. Yoksa burada bunun fonksiyonunu çağırlamasına ayrıca gerek yok aslında.
+
+508
+01:46:29,652 --> 01:46:42,192
+Böylece de Get Position of Mini'de bakarsan, o da onun üstünde tanımda, benzer şekilde hangi listeden, bu liste kaç elemanlı ve nereden itibaren aramaya başlayacağım.
+
+509
+01:46:42,192 --> 01:46:49,412
+E abi işte başka bir şey, bu benim kaçıncı minimumum, argotmanın bütün gözle baktığımızda. Döngü değişkenim.
+
+510
+01:47:11,828 --> 01:47:19,488
+For dönüşünden çıktığımızda da bu bulduğum en küçük elemanın yerini geri döndürüyorum. Nereye? Selection Sort'a geri döndürmüş oluyorum.
+
+511
+01:47:19,488 --> 01:47:25,788
+Evet, bu şekilde çalışan uygulamamızı bir koşturalım bakalım şimdi.
+
+512
+01:47:29,587 --> 01:47:47,648
+Evet, kaç tam sayı girmek istiyorsunuz? 8 girelim bakalım. Birinci tam sayı 57. İkincisi 96. Şu an çok rastgele girmeye çalışıyorum. İki basamaklı sayıları.
+
+513
+01:47:48,564 --> 01:48:15,164
+48 girelim mesela. Mesela hiç 70'li başlayan girmemişiz. 46 girelim. Hiç 20'li başlayan girmemişiz. 23 girelim. Evet pekala. Şimdi 57, 96, 15, 45, 33, 48, 76, 23 şeklinde dizi girdik. Sonra her bir seferinde dizinin en küçük, güncü elemanı ilgili konuma geliyor mu? Bakın.
+
+514
+01:48:15,220 --> 01:48:17,600
+Şuradan işaretlemeye başlayalım.
+
+515
+01:48:18,420 --> 01:48:21,340
+Buradaki en küçük, birinci en küçük eleman 15.
+
+516
+01:48:22,340 --> 01:48:26,579
+Ondan sonra [öğrenci], ikinci en küçük eleman 23.
+
+517
+01:48:26,780 --> 01:48:28,560
+Üçüncü en küçük eleman 33.
+
+518
+01:48:29,680 --> 01:48:34,579
+Dördüncü, en sondan bakayım, dördüncü en küçük eleman 45.
+
+519
+01:48:36,579 --> 01:48:38,800
+Beşinci en küçük eleman 48.
+
+520
+01:48:39,640 --> 01:48:42,020
+Altıncı en küçük eleman 57.
+
+521
+01:48:43,188 --> 01:48:46,307
+7. en küçük eleman 76.
+
+522
+01:48:47,188 --> 01:48:52,868
+Ve en sonda da 8 bu kalemde pek iyi yapamam ama yapmayı başarabildim.
+
+523
+01:48:52,868 --> 01:48:57,428
+Şeyimiz böyle durumlarımız böyle. Bakıyorum şimdi 15.
+
+524
+01:48:57,428 --> 01:49:03,347
+15 yerine komoldu. 15 sonra 23. 23 yerine komoldu.
+
+525
+01:49:03,347 --> 01:49:10,387
+Ondan sonra 33 yerine komoldu. Sonra 45 yerine komoldu.
+
+526
+01:49:10,612 --> 01:49:17,032
+Ondan sonra acaba ne var? 57, pardon. Evet, 48, 5. 48 yerine konuldu.
+
+527
+01:49:17,363 --> 01:49:44,083
+6.57 yerine konuldu. 7.76 yerine konuldu. Ve en son haliyle 96'da zaten bu ikisinin arasında swiping yapıldıktan sonra zaten en sonuncusu en dibe oturmuş oluyor. Böylece herhangi bir problem olmadan ne olmayan eleman gözüktü, ne sığaramada bir problem oldu. Güzel her şey yürüdü.
+
+528
+01:49:44,448 --> 01:49:51,328
+Şimdi bunu bir temizleyelim çizimleri ve iş pardon ve artık uygulamadan çıkar.
+
+529
+01:49:54,452 --> 01:50:06,412
+Şimdi ne demekse bunu biraz daha bölmeylemeye çalışalım bakalım. Mesela örneğin şu, eleman okuma fonksiyonu. Kodlayalım.
+
+530
+01:50:10,163 --> 01:50:18,163
+Şimdi, nasıl olsa bu fonksiyonu parametre olarak verdiğimde void return tipleriyle çalışabilirim kesinlikle.
+
+531
+01:50:19,163 --> 01:50:20,163
+Void.
+
+532
+01:50:21,163 --> 01:50:22,163
+Enter. List.
+
+533
+01:50:23,163 --> 01:50:24,163
+Diyelim.
+
+534
+01:50:24,163 --> 01:50:25,163
+Daha sonra çöme.
+
+535
+01:50:25,163 --> 01:50:33,163
+Ç isimleri aynı olması için, şimdi buradaki keseceğim koddaki isimler aynı olsun diye p diyeceğim.
+
+536
+01:50:33,163 --> 01:50:35,163
+P ve n diyeceğim.
+
+537
+01:50:35,163 --> 01:50:36,163
+Tamam mı?
+
+538
+01:50:36,243 --> 01:50:50,243
+int yıldız p ve int n diyeceğim. Şöyle, sonra şimdi şuradan şunu keseceğim.
+
+539
+01:50:55,507 --> 01:51:05,507
+yapıştıralım ve bu arada int i'ye ihtiyacım var. N'ye ihtiyacım yok. O zaten fonksiyon parametresi olarak geldi ama i'yi bir tanımlamaya ihtiyacım var.
+
+540
+01:51:05,507 --> 01:51:19,507
+Bundan sonra buraya artık diyeceğim ki enter list, ctrl, p. Burayı böyle yaptıktan sonra
+
+541
+01:51:20,724 --> 01:51:35,224
+Çegilir, run dizi değil, print list. Pekala, daha güzel. Ondan sonra şimdi şu Selection Sorting'ın şimdiki şu fazladan print listeleri kapatayım şimdilik. Ondan sonra başka ne var?
+
+542
+01:51:35,539 --> 01:51:41,779
+Aslında bellek ayırmak için bile bir şey olabilir ama onu en son yapmak istiyorum.
+
+543
+01:51:41,779 --> 01:51:50,659
+Peki, G, R, Print, Selection, R, Sort, Z, D, Show, fopen. Tamam, peki yani.
+
+544
+01:51:50,659 --> 01:51:53,220
+Bu olmuştur diye biliyordum.
+
+545
+01:51:53,220 --> 01:51:54,500
+Kayıt edelim.
+
+546
+01:51:56,659 --> 01:52:00,260
+Ha, n'i vermedik. Tamam peki.
+
+547
+01:52:00,260 --> 01:52:02,260
+Ve günler, yaklaşıklısın.
+
+548
+01:52:02,323 --> 01:52:10,323
+Bunu unutmuşum. Kaydedeyim şimdi. Contain çalıştayım. Evet, sıkısta size girmek istiyorum.
+
+549
+01:52:16,564 --> 01:52:29,284
+Evet, girilen cism bu, strc. Yani sığamda da problemi yok ve bir şeyler de çatlamadı patlamadı, veri eksikliği ya da fazlası yok. Düzgün bir şekilde olayla çalıştı diyelim.
+
+550
+01:52:29,284 --> 01:52:41,284
+Şimdi bir de neyi yapayım istemiştim? Swap işlemini yapayım istemiştim. Onun bir fonksiyonla yayayım demiştim. Ona bakalım şimdi. Özellikle bakın mesela Selection Sort'ta.
+
+551
+01:52:44,564 --> 01:52:52,884
+Tamamen iki tane elemanın swap edilmesi şeklinde yürütmek istiyorum.
+
+552
+01:52:52,884 --> 01:52:56,564
+Tamam şimdi. Ben şey double swap'ta da daha sonra yapacağım.
+
+553
+01:52:58,564 --> 01:53:07,684
+Void swap int yıldız a int yıldız d
+
+554
+01:53:07,859 --> 01:53:18,639
+Tamam mı? Şimdi burada iki elemanın yeri değişecek, o yeri değişecek elemanları işaret eden değerler göndermek zorundayım.
+
+555
+01:53:18,760 --> 01:53:21,899
+Aksi takdirde SWEP işlemi gerçekten yürümez.
+
+556
+01:53:22,279 --> 01:53:33,279
+Yapılan işlemin sonucunun kalıcı olması için, bu SWEP fonksiyon içinde yürüttüğüm işlemlerin etkilerinin kalıcı olması için aktarımın bu şekilde olması gerekmektedir.
+
+557
+01:53:33,939 --> 01:54:01,899
+Peki, şimdi ne ihtiyacım var int? İşte tmp'ye bir ihtiyacım var. Tamam mı? Ondan sonra tmp eşittir yıldız a, ondan sonra yıldız a eşittir yıldız b, ondan sonra yıldız d eşittir tmp şeklinde elemanlarımı değiştir diyorum.
+
+558
+01:54:01,939 --> 01:54:22,579
+Burada, şunlilik, biraz riskli, o yüzden hemen silmiyorum. Sadece yoluma alıyorum. Neyi değiştirmem gerekiyor? Sıraak. Birinci elemanım şu, Yıldız B.A.T. İkinci elemanım da Yıldız B.A.T. Impulse.
+
+559
+01:54:26,739 --> 01:54:40,159
+çalışırsa, ne ala çalışmazsa, bu fonksiyon parameter aklımlarının inceliklerini sizinle birlikte hatırladıktan sonra neden çalışmadığını dönüp anlamaya çalışırız.
+
+560
+01:54:40,159 --> 01:54:41,131
+Kalın.
+
+561
+01:54:45,268 --> 01:54:49,268
+Bir şey beğenmedi, bir şeyde, testing problemleri var diyor.
+
+562
+01:54:53,300 --> 01:55:09,163
+Haklı olabilir, değer değil işaretçi göndermem gerekiyor. Ama şu an şurada bu fonksiyonun çağrımında yıldız koyduğum için aslında değer göndermiş oluyorum. Tamam iyi. İyi yakaladı beni. Acemiliğimin...
+
+563
+01:55:09,395 --> 01:55:35,635
+Sonucumu şuradan warning alarak kalktım. Bunları, buradaki yıldızları silmem gerekiyor. Neden? Şununla aynı şekilde tamamen. Ben mesela Örneğin Enter List fonksiyonuna H'ye aktarıyorum. Yıldız P'ye aktarmıyorum. Neden Yıldız P'ye yazmamam gerektiğini de konuştum uzun uzun. Ama konuştum fakat sonra aklımdan gitmiş bu noktada. Oradaki yıldızları buradan silmem gerekiyor.
+
+564
+01:55:36,020 --> 01:55:42,020
+Peki, inşallah bu yaraycaksın bakalım.
+
+565
+01:55:42,020 --> 01:55:46,020
+Hadi bakalım.
+
+566
+01:55:46,020 --> 01:55:48,020
+8 sayı girmek istiyorum.
+
+567
+01:55:48,020 --> 01:55:51,020
+88.55
+
+568
+01:55:55,604 --> 01:56:10,604
+Evet, pekala. Düzgün bir biçimde snap de edebildiğini gördük. Kutlar edemeseydi zaten hatalı sıralamış sayıda elemanlar çıkacaktı. Bir son fazla sorgutu şu an kadar her şey oldu.
+
+569
+01:56:16,787 --> 01:56:41,787
+Peki, başka ne yapabilirim? Daha ne kadar bu şey edebilirim? Soksiyonlayabilirim. Bir bakayım. Ha, şurada. Elemanın yer ayrılması konusu. Evet, bu da yapsat iyi olur. Çünkü bu sefer şey yapalım isterseniz. Void return'e sahip değil de...
+
+570
+01:56:41,844 --> 01:56:47,844
+Ayrıdan alanı geri döndürecek şekilde fonksiyonu yazmaya çalışalım.
+
+571
+01:56:51,844 --> 01:56:59,844
+Tabi bu biraz şeye bağımlı. Element türüne bağımlı diyeceğim ama şu fonksiyonlar sanki bağımsız yani.
+
+572
+01:56:59,844 --> 01:57:08,844
+Tam selarlı değil de float'larla ulaşmak istesem, bütün int'li yıldızları, yıldızlı olan nt'li hepsini float'a zaten çevirmen gerekecek.
+
+573
+01:57:09,363 --> 01:57:26,363
+Haa, peki bana void pointer döndürse veya bu şekilde, ama boşverin hangi tipse o tipten pointer döndürsün ki boş yere kesti, main'de tekrarlamayayım. Peki, tamam.
+
+574
+01:57:26,363 --> 01:57:36,779
+int yıldız, allocate memo, realloc, int n adetlik.
+
+575
+01:57:36,948 --> 01:57:41,448
+Eleman, yer ayırsın bana.
+
+576
+01:57:41,448 --> 01:57:42,448
+Peki.
+
+577
+01:57:45,448 --> 01:57:52,448
+Ve tabiki, forInt, o şu aslında, ne bileyim, yerleşiyorlar.
+
+578
+01:57:52,948 --> 01:57:54,448
+ForInt, yani.
+
+579
+01:57:54,948 --> 01:57:56,448
+Bu eleman sayısı.
+
+580
+01:57:56,448 --> 01:58:00,448
+Burası int, çünkü neden? Şu int, yıldız.
+
+581
+01:58:00,448 --> 01:58:01,948
+Adını öyle koydum.
+
+582
+01:58:01,948 --> 01:58:03,448
+Pekala, şimdi bakalım.
+
+583
+01:58:03,631 --> 01:58:05,011
+Eeeh...
+
+584
+01:58:09,076 --> 01:58:17,636
+Peki, direkt diyeceğim ki, ha, iRom olsa da çıksın, return null döndürsün. Peki, diyeceğim şimdi.
+
+585
+01:58:17,636 --> 01:58:31,556
+Return int pointer'ı cast ettim. İşte, malloc, n-sharpı size of int.
+
+586
+01:58:35,123 --> 01:58:46,123
+Ama bellek ayrı alamamışsa da ayrılamadı demesinin kodluğu için de buradamı yürütelim. x0 diyerek buradamı yürütelim.
+
+587
+01:58:46,123 --> 01:59:00,652
+Oluruz peki. O zaman buna şu an bir pointı tanınlamam gerekecek. O zaman şuraya benzer şekilde şöyle şunu tanınlamam gerekecek. Ondan sonra tamamen benzer şekilde
+
+588
+01:59:01,587 --> 01:59:07,587
+Şurayı alıp, şuraya bir yapıştırmam gerekecek.
+
+589
+01:59:07,587 --> 01:59:15,587
+Tredi tamam yer ayırdım. Nars'la bellek ayılamadı ama return-1 değil de bu sefer exit demeliyim.
+
+590
+01:59:15,587 --> 01:59:19,587
+Ayılamadıysa direkt çıksın gitsin diyelim ki.
+
+591
+01:59:22,003 --> 01:59:30,003
+Şimdi buradaki return fonksiyonun return'ı olacak. Olmasın, direkt çıkılsın şeklinde burada exit demek istiyorum.
+
+592
+01:59:30,003 --> 01:59:34,003
+Exit, exit is.
+
+593
+01:59:34,003 --> 01:59:44,003
+Ondan sonra aşama. Ama böyle bir durum yoksa, return p diyerekten direkt bunu döndürsün.
+
+594
+01:59:49,363 --> 02:00:14,363
+Ctrl X demek istiyorum. Allocate memory for int. En adet. En adet için ayılsın. Hadi bakalım çalışacak mı? Dovul sesleri eşliğinde. Peki kaç tane ses istiyorsunuz? Sekiz.
+
+595
+02:00:21,587 --> 02:00:23,127
+22.000'e geldim.
+
+596
+02:00:23,907 --> 02:00:25,148
+88.000'e geldim.
+
+597
+02:00:25,367 --> 02:00:25,787
+Peki.
+
+598
+02:00:26,587 --> 02:00:29,608
+1, 2, 3, 4, 5, 6'yı atlamış oldum.
+
+599
+02:00:29,987 --> 02:00:30,847
+Peki. Evet güzel.
+
+600
+02:00:31,567 --> 02:00:32,268
+Her şey yolunda.
+
+601
+02:00:33,967 --> 02:00:35,167
+Eksik sayı çıkmadı.
+
+602
+02:00:35,367 --> 02:00:37,228
+Fazla sayı çıkmadı. Her şey sıralı
+
+603
+02:00:37,228 --> 02:00:37,907
+şekilde çıktı.
+
+604
+02:00:38,487 --> 02:00:40,947
+Ve memory allocation
+
+605
+02:00:40,947 --> 02:00:43,188
+dahi olmak
+
+606
+02:00:43,188 --> 02:00:45,587
+üzere her şeyi fonksiyonladı.
+
+607
+02:00:46,804 --> 02:00:49,963
+Böylece ne oldu, ne sağladım?
+
+608
+02:00:49,963 --> 02:00:58,483
+Bir kere her şeyden önce dinamik bellek alanıyla çalışmış oldum.
+
+609
+02:00:58,483 --> 02:01:06,723
+Sabit bir dizi ayırıp boş yere kullanılmayacak bir bellek alanı oluşturmadım.
+
+610
+02:01:06,996 --> 02:01:22,815
+Son acıma daha modüler bir kod oldu bu. Her bir yapılan alt iç kalemini kendi fonksiyonlarını ayırdım ve bunu yaparken ders notumdan kendi halinden biraz daha ileriye geçtim.
+
+611
+02:01:23,923 --> 02:01:44,923
+Alt iş kalemlerinin de alt iş kalemleri şeklinde ayırdım her şeyi ve global değişken de kullanmadım. Bütün aktarımları pointer kullanmanın sağladığı güçten yararlanarak ya fonksiyon parametresi ya da fonksiyondan geri dönen şeklinde işlerimi yaptım.
+
+612
+02:01:45,395 --> 02:01:53,395
+Bu anlamda her açıdan önceki çözüme göre üstün bir çözüm elde edebilmiş oldu.
+
+613
+02:01:53,395 --> 02:02:01,067
+Evet, şimdi sizlerin sorularını alayım. Eğer kafanıza takılan herhangi bir şey varsa, konuşalım.
+
+614
+02:02:15,956 --> 02:02:23,316
+Yoksa benim daha da başka bir şey gelmiyor bu örnekle ilgili. Şunu yapalım, bunu yapalım diyeceğim.
+
+615
+02:02:27,155 --> 02:02:34,636
+Peki. Ha, sohbete bir şey geldi bakalım. Bizi ne paylaşabilir misiniz? Tabii ki paylaşalım. Şöyle ki.
+
+616
+02:02:34,636 --> 02:02:47,996
+Aslında bir kere şu dynamic sorting scene'in bu ilk modifiye etmediğimiz halinin arası da olması lazım. Ama bir teyit edeyim.
+
+617
+02:02:48,692 --> 02:02:56,811
+Yanlışlıkla vermiş olmayayım. Şunu şöyle indireyim, şunu da şöyle indireyim de çekmesin. Alınma karışmasın.
+
+618
+02:02:56,811 --> 02:02:59,532
+Evet, girelim bakalım.
+
+619
+02:03:03,636 --> 02:03:06,356
+inşallah hızlı bir şekilde olur.
+
+620
+02:03:29,844 --> 02:03:44,344
+Bakın, diğer şey kodu 20-31 koduyla paylaşmışım ama yani kusura bakmayın önceki versiyon dersinin önceki koduyla paylaşmışım. Yapısal Programlama kaynakkodları, code.zip. O dosya.
+
+621
+02:03:47,699 --> 02:04:10,500
+Bu kod dosyası ve kendi içerisinde işte şu sıkıştırılmış dosya. Gördüğünüz gibi bu dosyalar buralarda var. Ama işte daha fazla ayrıntılı olarak yapmış olduğum halini, şimdi sizinle bu halini, tabii o şu an bu kodsta değil, onun C'de.
+
+622
+02:04:14,195 --> 02:04:19,195
+Şimdi birleşik bir sorun göstermemesi nedeniyle yeni sekme şeklinde yapmayayım.
+
+623
+02:04:19,195 --> 02:04:21,195
+Buna bakayım her şey.
+
+624
+02:04:21,195 --> 02:04:39,195
+Burada, burada, burada, eee, burada, Reşim tarihine göre eee, bir dakika, ne 15, 11, yok.
+
+625
+02:04:43,891 --> 02:04:45,131
+Say this.
+
+626
+02:04:50,547 --> 02:04:53,007
+and jdcp.con.
+
+627
+02:04:56,372 --> 02:04:59,492
+C, dest, fort, evet.
+
+628
+02:05:14,163 --> 02:05:27,603
+Ha bir dakika. Ay coda ve kodla. Ay Allah'ım ya Rabbi. Ya karşı da burada. Evet. Şimdi nedir? DNA07C şu. Evet 11.5'i bu. Pekala. Yine de bakalım.
+
+629
+02:05:32,404 --> 02:05:43,164
+Evet, hatta size sweat olması lazım. Evet, sweat de bu da var. Tamam, güzel. İyi. Bunu şimdi şuradan göndereyim bakalım.
+
+630
+02:05:43,164 --> 02:05:55,164
+Evet, başka soru yasla buyurun lütfen.
+
+631
+02:06:08,819 --> 02:06:17,319
+Şimdi başka, boble slotlar yani onu da çağırabiliriz, hiç problem değil.
+
+632
+02:06:17,408 --> 02:06:21,408
+Burada da benzer şekilde sort edebiliriz.
+
+633
+02:06:21,408 --> 02:06:27,908
+Daha burada komantimde de bakın yani şöyle demek yerine çok basit en basit pointer artikmeti şeklinde de bu şekilde gösterebiliriz dedik.
+
+634
+02:06:27,908 --> 02:06:38,408
+Ama bunu da strata gönderirken yıldız demeden b artı i virgül b artı j şeklinde göndermem lazım.
+
+635
+02:06:38,408 --> 02:06:44,408
+Nasıl ki selection sort da bu şekilde gönderdim orada da aynı şekilde göndermem lazım.
+
+636
+02:06:46,452 --> 02:06:48,452
+Pekala, bakalım başka.
+
+637
+02:06:52,627 --> 02:07:04,627
+D-MXLATIN'e baktık. Matris çarpımı işini size bırakıyorum. Ama şu string matris opu bunu güzelce çalışalım üzerinde.
+
+638
+02:07:13,844 --> 02:07:21,043
+Stimmatrixforge. O da yine aynı zıplı process içerisinde yer alıyor.
+
+639
+02:07:35,412 --> 02:07:38,731
+Tamam evet güzel. Bunu incelemek çok yaralı olacak.
+
+640
+02:07:42,484 --> 02:07:43,804
+A, ortağımda.
+
+641
+02:07:45,424 --> 02:07:47,864
+Bakalım şimdi.
+
+642
+02:07:48,884 --> 02:07:58,484
+Evet, şimdi bu da arkadaşlar şey kolaylığı olması için, anlatım ve gösterim kolaylığı olması için kullanıcının gireceği sayıda eleman...
+
+643
+02:07:58,644 --> 02:08:15,644
+Diğer de, satır sütum şeklinde ifade etmişim. Yani tek farkı o. Onun dışında yine iki boyutlu bellek ayırma şeklinde bu işi yürütüyor olacağız. Üç sütum.
+
+644
+02:08:16,148 --> 02:08:23,747
+Özgür dilerim, 3 satır, 64 stun. Çünkü 3 tane uzunca olabilecek string olsun istiyorum.
+
+645
+02:08:23,747 --> 02:08:37,739
+Gerçi o bütün 64 stunluk şeyler yapmamışım ama, daha sonra işlemi, yine de genişletilebilir bu örnek demek istiyorum. Bakın ne yapıyoruz?
+
+646
+02:08:37,811 --> 02:08:53,692
+matriz şeklinde olacak. O yüzden yıldız yıldız text demişim pointer'ıma. Matriz şeklinde alan istiyorum. Bu sefer jalloc ile yapmışım. Satı sayısı adans. Ondan sonra cıma.
+
+647
+02:08:53,692 --> 02:09:01,372
+Ama bu sefer char pointer olacak şekilde. İlk bellek isteğimi hanımlar tanınamaz yapıyorum.
+
+648
+02:09:01,587 --> 02:09:09,827
+Ondan sonra o yüzden şurada ilk satımda bu textumlar olmuşsa yer ayıramadım deyip main'den çıkıyorum.
+
+649
+02:09:09,827 --> 02:09:22,827
+Ondan sonra acıma, satır sayısı kadar chart pointer alanında sütun sayısı kadar, bir de chart eleman içeriyecek şekilde yer ayırma...
+
+650
+02:09:22,863 --> 02:09:43,863
+ihtiyacım var. Daha sonra en sona döndüğümde görüyorum ki öncelikle bu for döngüsünün aynısı şeklinde yerimi boşalttıktan sonra en son şirk boyutlu olan yerimi de boşaltmış oluyorum ve ondan sonra devam edeceğim. Şimdi...
+
+651
+02:09:51,572 --> 02:10:13,572
+Aslında bu her bir satırı tanımlarken, işte bakın bu içerimde bu kadar böyle yazabilirim de aslında. Fakat böyle yazmam yine de allocation için şey değil yani. Nasıl desem.
+
+652
+02:10:18,739 --> 02:10:41,739
+Bir dakika. Ayrı bir point. Tamam, pekala. Mat ayrı bir point. Şu an ona bakmayacağım. Önce text üzerinden gideceğim. Daha sonra bu texti mat üzerinden de yaparsam, bunlar aslında satır.
+
+653
+02:10:43,604 --> 02:11:01,604
+Haa, tamam yani tekst ayrı, mat ayrı örnek diyelim daha sonra. Ama daha sonra şunu da yapacağım, şunu da yapacağım demişim ama onları hiç mallocla yapmamışım. Mat'a hiç malloc istememişim. O zaman...
+
+654
+02:11:03,060 --> 02:11:09,460
+Peki, tam da neden o zaman şunları komand almışım? Belki de sunum çıkartıyordu diye almışım.
+
+655
+02:11:09,460 --> 02:11:28,460
+Peki, şimdi örneklerimiz iki ayrı art gruba ayrılıyor diyelim. Bu çift boyutta olan text alanımda bir de işte şu kadar stunluk mat adlı alanımda ayrı ayrı olmak üzere örneklerim var.
+
+656
+02:11:31,060 --> 02:11:42,060
+Hangi bir elemana, tek bir elemana erişmek için kullanabileceğim ekstradan Yıldız BP ve Yıldız MP şeklinde iki tane de karakter pointerım var.
+
+657
+02:11:42,060 --> 02:11:57,060
+Burada, bunu da özellikle şuradaki açıklamaya yapmak için de bu şekilde tanımlamışım. Bakın, karakter türünden bir BP işaretçisi ve yine karakter türünden MP işaretçisi var.
+
+658
+02:11:59,060 --> 02:12:04,640
+Tamamen ve sadece sağ taraflarındaki isimlere ait oluyor.
+
+659
+02:12:05,420 --> 02:12:09,380
+Ben bu satırı yazmak yerine şöyle de yazabilirim.
+
+660
+02:12:09,460 --> 02:12:13,060
+Çar Yıldız P noktaları, Çar Yıldız MP de yazabilirim.
+
+661
+02:12:13,060 --> 02:12:20,060
+Burada anlatmak istediğim şey, şu ilk yıldızın, kalem şeyini alayım.
+
+662
+02:12:24,595 --> 02:12:40,836
+KURAY'a ait olması ve bu nedenle ben buraya Yıldız tanımladığı için, Yıldız MP4 şeklinde yazdığım için buraya otomatik olarak bir tane daha Yıldız'ın gelmediğini göstermek için yapmışım size. Tamam mı?
+
+663
+02:12:41,268 --> 02:12:46,948
+O yüzden de bu yıldızı şuradaki BP'ye yapıştırarak gösterdim.
+
+664
+02:12:46,948 --> 02:12:51,427
+Şara yapıştırarak yazsaydım bile yine sonuç aynı olacaktı.
+
+665
+02:12:51,427 --> 02:12:56,707
+Bilgisayar burada boşlukların, o yıldızın nereye yapıştırıldığına bakmaz.
+
+666
+02:12:56,707 --> 02:12:59,108
+Boşluk sadece white space karakteri.
+
+667
+02:12:59,108 --> 02:13:03,507
+O olması gerektiği şekilde yorumlar yine kod.
+
+668
+02:13:03,507 --> 02:13:07,507
+Peki, iyi bunu söylemiş olduktan sonra.
+
+669
+02:13:08,819 --> 02:13:09,699
+Bakalım şimdi.
+
+670
+02:13:10,355 --> 02:13:36,996
+Evet, text için gerekli malloc işlemlerini yaptım. Bundan son açıma, şimdi her ikisini de, yani hem mat maddesini de, hem text alanımı da içerik olarak aynı içerikle yapmışım. Yalnız dikkat ederseniz, önceki haftalardaki string olaylarından hatırlayıp, bir şeyleri böyle eşittir diyerekten yazdığımızda bunlar immutable oluyordu. Yani değerleri değiştirilemiyordu.
+
+671
+02:13:38,355 --> 02:13:55,996
+Belki de bu yüzden büyük olasılıkla bu mat içerisinde yer alan içeriği değiştiremeyeceğim. Mesela şu sıfırı 9 yapamayacağım. Veyahut da x yapamayacağım mesela falan. Öyle olacağını görürüzsün herhalde. Yoksa da o örneği de kodlasın.
+
+672
+02:13:58,496 --> 02:13:59,996
+Evet, peki. Hem...
+
+673
+02:14:00,659 --> 02:14:09,940
+Yıldız Yıldız Text'te hem de Yıldız Mata içeriklerini yazıyoruz. Bu içeriklerin ne olduğunu bir yanda kenara Excel'de yazalım.
+
+674
+02:14:12,340 --> 02:14:16,500
+Şöyle küçülteyim şimdi bunu hatta daha da ilçimini dalaltayım.
+
+675
+02:14:16,980 --> 02:14:19,916
+Altılık mıydı? Neyse.
+
+676
+02:14:28,051 --> 02:14:54,051
+Altalım. Tamam peki. Altı eleman, bir de newline karakteri yedi elemanlık. Bu arada şunu da seçip azıcık daraltırsam zaten şöyle olabilir. Öncelikle text için yazılım. Gerçi aynı. 0, 1, 2, 3, 4, 5 ve slash n. Tamam mı?
+
+677
+02:14:54,100 --> 02:14:59,100
+Sonra 6,7,8,9,A,B.
+
+678
+02:14:59,100 --> 02:15:01,100
+Bundan sonra
+
+679
+02:15:01,100 --> 02:15:06,100
+C,B,B,G,H.
+
+680
+02:15:06,100 --> 02:15:08,100
+Evet tamam.
+
+681
+02:15:08,100 --> 02:15:11,100
+Şunları da Ctrl,C,C,V,C.
+
+682
+02:15:11,100 --> 02:15:14,100
+Ve şunların da hepsinde mesela ortada kardeşim.
+
+683
+02:15:20,115 --> 02:15:20,876
+Evet.
+
+684
+02:15:26,771 --> 02:15:27,771
+Kustanie.
+
+685
+02:15:36,307 --> 02:15:37,307
+...
+
+686
+02:16:24,243 --> 02:16:27,923
+Bir yandan şunu da açıldı arkadaşlar. Yapmam gereken acil bir şey var.
+
+687
+02:16:32,147 --> 02:16:40,147
+Birazcık kalsın da onu yapmam gerekiyor. Peki. Evet. Ne diyorduk şimdi?
+
+688
+02:16:40,147 --> 02:16:54,147
+Mesela indiriz. Evet. Pekala. Şimdi içeriklerin bu şekilde. İster text olsun ister matta olsun. Ondan sonra şimdi. Bakalım şimdi nasıl yürüyecek ve onları bir inceleyelim.
+
+689
+02:16:57,396 --> 02:17:11,796
+Şimdi, rowsu yazdırdım, teksti yazdırdım arkadaşlar. Tekrar yazdırmadım, nutu tekrar yazdırmadım. Aynı.
+
+690
+02:17:11,796 --> 02:17:22,195
+Şimdi, ekstradan tanımladığım işaretçilere bir bakın lütfen. BP'ye text 0 dedim, NP'ye de text 1 dedim.
+
+691
+02:17:25,716 --> 02:17:38,716
+Bu da demek oluyor ki BP işaretçisi benim textimin şu ilk satının başlangıcını gösteren işaretçi olacak. BP.
+
+692
+02:17:38,716 --> 02:17:45,716
+Bunu da kenarımı aldırayım.
+
+693
+02:17:45,716 --> 02:17:49,716
+BP burayı gösteriyor.
+
+694
+02:17:50,111 --> 02:18:11,111
+MP de burayı gösteriyor arkadaşlar tamam mı? Şey olaraktan gösteriyor. Satır olaraktan gösteriyor. Neyse, renklendiremedim ama şöyle göstereyim. MP burayı gösteriyor. MP de burayı. Şuraya gösteriyor.
+
+695
+02:18:17,012 --> 02:18:17,231
+Evet.
+
+696
+02:18:19,432 --> 02:18:19,992
+Peki ya da.
+
+697
+02:18:20,352 --> 02:18:20,792
+Şimdi bakalım.
+
+698
+02:18:22,452 --> 02:18:24,352
+Acaba ne çıkacak, ne çıkmayacak?
+
+699
+02:18:25,072 --> 02:18:27,772
+Tahmin de etmeye çalışalım bu arada.
+
+700
+02:18:29,112 --> 02:18:31,672
+Onun için de isterseniz şuraya gidelim mi?
+
+701
+02:18:32,231 --> 02:18:33,811
+1, 2, 3, 4, 5, 6, 6, 7, 8, 8, 8, 9, 10.
+
+702
+02:18:33,811 --> 02:18:34,012
+Peki.
+
+703
+02:18:34,832 --> 02:18:35,872
+Numara 1.
+
+704
+02:18:38,132 --> 02:18:39,231
+Numara 2.
+
+705
+02:18:40,012 --> 02:18:41,092
+Numara 3.
+
+706
+02:18:41,852 --> 02:18:43,952
+Bu şekilde devam edeceğiz şimdi.
+
+707
+02:18:44,691 --> 02:18:45,483
+Tamam.
+
+708
+02:18:50,067 --> 02:18:51,067
+B gidiyor.
+
+709
+02:18:52,567 --> 02:18:54,067
+Valla teka da avuş ama neyse.
+
+710
+02:18:54,067 --> 02:18:55,067
+Pekala.
+
+711
+02:18:56,067 --> 02:18:57,067
+Şimdi bakalım.
+
+712
+02:19:01,268 --> 02:19:09,268
+Her bir harfe, her bir karakteri, her bir yöntem olmasına, olmamasına, fiyata her şeye dikkat etmemiz gerekir.
+
+713
+02:19:09,268 --> 02:19:10,268
+Şimdi...
+
+714
+02:19:11,891 --> 02:19:33,332
+Output 1. Şimdi bu arada, şimdi Output 1, Output 2, Output 3 diye şeyleri içeriyle yapmaktansa, bu J değişkenini üzerinden yazdırıyorum. Tamam mı? Output 1, Output 2, Output 3 falan şeklinde. Ondan sonra her seferinde J'yi bir arttırıyorum.
+
+715
+02:19:33,332 --> 02:19:38,851
+Gerçi burada şu J artı artıları silip yerine şuraya J artı artı da yazabilirdim ama.
+
+716
+02:19:38,863 --> 02:19:40,863
+Neyse, olsun o kadar.
+
+717
+02:19:40,863 --> 02:19:49,863
+Şimdi, bakın dikkat ederseniz, %s olarak, yani string olarak neyi yazdıracak?
+
+718
+02:19:49,863 --> 02:19:59,863
+mp'yi yazdırır diyor. Peki benim mp nedir? Text 1'dir. O da şu satırı gösteriyor. Yani 6, 7, 8, 9, ab.
+
+719
+02:20:02,195 --> 02:20:30,195
+6, 7, 8, 9, A, B çıkmasını bekliyorum. Ondan sonra da şu slash n'leri boşuna koymadım. O printfler yapıldıkça her yeni printf son ikinci sırtıda çıksın. O n'leri buraya koymayayım gerekmiyorsa şeklinde diye bu slash n'leri koydum. Bunlar Nullan karakterleri değil arkadaşlar. Hatırlatırım. Sting işlemlerinde de işleri sağlamalıp mantıklı bir şeyler yapmak istiyorsak son stringlerin sonlarını slash n'leri koydum.
+
+720
+02:20:30,195 --> 02:20:37,275
+null karakteriyle işaretlerimiz geldiğini hatırlayın. strcpy bu işi otomatik olarak yapıyor.
+
+721
+02:20:38,175 --> 02:20:43,956
+Ama acaba mat maddesinde bunlar bir problemlere sebep olacak mı?
+
+722
+02:20:44,376 --> 02:20:45,736
+Onu da bakacağız, göreceğiz şimdi.
+
+723
+02:20:47,315 --> 02:20:50,835
+Peki, numara birinin çıktısının bu şekilde olmasını bekliyorum.
+
+724
+02:20:51,675 --> 02:20:52,995
+Numara ikimin çıktısı.
+
+725
+02:20:52,995 --> 02:20:57,615
+Peki, s string olarak mt artı bir.
+
+726
+02:20:58,100 --> 02:21:09,100
+Şimdi bak, mp aslında şimdi şunları şu tarafa yazsaydım daha iyi olur. Başlarına itibaren göstererek başlatıyor aslında. Yani bp şu satırı, mp de şu satırı başlıyor.
+
+727
+02:21:09,100 --> 02:21:21,100
+Hadi şöyle yapalım o zaman şunu keseyim şuradan, kes. Şuraya kesilen hücleri ekle diyelim ve artık hani oklarında doğru yeri göstermesini sağlayalım.
+
+728
+02:21:26,739 --> 02:21:34,739
+Tamam peki. O kadar clipboard'u, bu versiyonu, eski bir versiyon, o kadar iyi kullanan bir versiyon değil.
+
+729
+02:21:34,739 --> 02:21:40,340
+Ağzını açmışım şöyle, Ctrl, Ctrl, V, şunu da N yap kardeşim şeklinde ayarlayalım.
+
+730
+02:21:40,340 --> 02:21:41,340
+Peki güzel.
+
+731
+02:21:41,340 --> 02:21:45,340
+Şimdi, madem öyle.
+
+732
+02:21:45,340 --> 02:21:52,108
+Haa, şimdi madem bası biraz daha genişledi, şunu da şuraya alayım kardeşim demek istiyorum. Evet.
+
+733
+02:21:52,308 --> 02:22:01,808
+Birinin çıktısı bu şekilde olacağını bekliyoruz. İkinin çıktısı. %S olarak MP61.
+
+734
+02:22:01,808 --> 02:22:08,308
+Şimdi MP şurayı gösteriyor aslında başlayınca. Onun bir fazlası da 7'den itibaren gösteriyor.
+
+735
+02:22:08,308 --> 02:22:15,308
+O zaman ben 7, 8, 9, AB gelmesini bekliyorum. İkinciye çıktı.
+
+736
+02:22:18,324 --> 02:22:30,524
+Üçüncü çıktı olarak, mp artı ikinin diyor. Peki, o zaman burada da benzer mantıkla 8, 9, ab çıkmasını bekliyoruz.
+
+737
+02:22:32,103 --> 02:22:43,963
+Peki, yine string olarak, teksti yaz. Peki, şimdi, bu arada dikkat ederseniz tekst aslında iki boyutlu.
+
+738
+02:22:44,435 --> 02:22:52,935
+Buna rağmen bunu %50 şeklinde yaz dediğimde bu buggy. Yani ne çıkacak Allah bilirsin. Tamam mı?
+
+739
+02:22:52,935 --> 02:23:07,935
+Bu buggy diye işaretlediğim için bunu şu an için koşturmak istemiyorum. Tahminlerimin doğru olup olmadığını anlayabilmek için bu dördün sadece printf kısmını
+
+740
+02:23:08,159 --> 02:23:27,700
+şey alıyorum, koment alıyorum. J artı artı'yı almıyorum. Çünkü hep beşinci çıktığı şeklinde, beşinci çıktığı doğru tahmin edebilmiş miyim? Onu görmek istiyorum. Peki, beşe geliyorum. Yüzde S olarak Yıldız tekstini göster. Peki.
+
+741
+02:23:28,208 --> 02:23:48,208
+Nasıl bir nokta düşmüşüm? Ha, DEP, C, ha yold. Yıldız Yıldız yazasam da crash oluyor. Peki, o zaman herhalde bu şekilde çalışacak. Peki, yıldız text dediğim için, slash n'leriyle birlikte, belki bütün iki boyutlu maçesi gösterir diye düşünüyorum.
+
+742
+02:23:56,147 --> 02:24:06,147
+Çok da emin değilim hala. Bakalım ne olacak 5 için. Peki 6 için bug ediyor zaten.
+
+743
+02:24:06,147 --> 02:24:20,147
+Bunu da komandı alayım. Ama önce konuşalım neden. Bakın şimdi. Karakter olarak text'i yazdığı diyorum. Yahu text 2 boyutlu pointers. Yani buraya karakter ne çıkacak Allah aşkına?
+
+744
+02:24:20,768 --> 02:24:30,768
+%d desem başlangıç adresini yazdırır. Ama %c dediğim için yani o başlangıç adresinin hani Allah bilir neye denk gelecek?
+
+745
+02:24:30,768 --> 02:24:39,768
+Kocaman bir adres o. ASCII kodu o kadar geniş değil. List significant bitlerinden bakaraktan o neye denk gelirse? Onu mu yarayacağım?
+
+746
+02:24:39,768 --> 02:24:47,768
+Hiçbir fikrim yok. O yüzden şimdilik bunu yine komente alıyorum.
+
+747
+02:24:49,459 --> 02:25:14,119
+Sonra yine karakter olarak yıldız BP. Peki şimdi aslında burada da yine birazcık kopya çıkacağım. Şimdi %C deyip de yıldız BP dediğim için bir problem yok diyeceğim. Bana sıfır yazacak.
+
+748
+02:25:14,868 --> 02:25:31,548
+şey olarak yedinciki çıktı, olarak sıfır bir yazıcık. Şunu da şöyle yansıtayım da, şöyle olsun. Hatta bütün şuraları şöyle olsun. Evet.
+
+749
+02:25:31,548 --> 02:25:40,587
+Şimdi daratabiliyor muyum biraz daha? Daratırım. Şimdi daha fazla daratamam. Tamam. İddihaya güldüğünüz için.
+
+750
+02:25:44,435 --> 02:26:07,435
+8. Burayız. %c ile bakın yıldız koymadan BP yazdığımda kalksam, o da gösterdiği alan adres, bir önceki bu altının tartışmasıyla aynı mantık. %c deyip BP yazdığımda bu buggy. O yüzden onu da şimdi kapatıyorum.
+
+751
+02:26:12,915 --> 02:26:15,915
+Evet, kadar sonra hep C artık karakter.
+
+752
+02:26:18,915 --> 02:26:27,915
+Şuraya kadar 1, 2, 3, 4, 5, 6, 7, 8, 9'da, daha sonra 10 yazdığımda bu iki noktanın aynı hizalanması için şuraya kadar boşluk koydum.
+
+753
+02:26:27,915 --> 02:26:29,915
+Şoktan itibaren boşluk koymadım.
+
+754
+02:26:30,915 --> 02:26:32,915
+Bakalım şimdi burada ne diyoruz?
+
+755
+02:26:32,915 --> 02:26:36,915
+Yüzde C olarak, yıldız BP artı 2.
+
+756
+02:26:36,915 --> 02:26:37,915
+Peki.
+
+757
+02:26:38,675 --> 02:26:46,435
+Yıldız BP şu, artı biri bu, artı ikisi şu. Yani iki yazdıracak. Tek iki karakterini yazdıracak.
+
+758
+02:26:46,435 --> 02:26:54,435
+Sonra, böyle dikkat ederseniz, artık slash n'leri elle koymuşum. Açıkta diğer satırları yazılacak.
+
+759
+02:26:54,435 --> 02:26:59,315
+Peki, karakter olarak Yıldız teksti yazdık.
+
+760
+02:27:02,355 --> 02:27:11,076
+Yani aslında yıldız yıldız text desem şu çalışabilir ki o hali. Bu iki boyutlu bir matriz alanı.
+
+761
+02:27:11,076 --> 02:27:17,955
+Yani tek karakter olarak bir pointer. Yani büyük ihtimalle bunu da neye denkliyor bilemiyorum. Yine buggy tarihinde uymuyor.
+
+762
+02:27:17,955 --> 02:27:26,195
+Yani mantıklı bir şey yapmamış oluyorum. O yüzden bunu da yapıyorum. Fakat 11 için, ha bu arada bir dakika.
+
+763
+02:27:30,355 --> 02:27:57,975
+8 buggy, dur, hangi dakika, işinler, hayır tamam. 10 da buggy, 9 da bir çıkım olacak, 2 dedik tamam. 10 buggy, 11'e geliyoruz şimdi. 11'de yıldız yıldız text dediğim için, iki level interaction bana 0 yazacak yine. Orada bir problem beklemiyorum.
+
+764
+02:27:58,675 --> 02:28:24,155
+Sonra 12'ye geldik. Bakın, yıldız text artı 1, ondan sonra yıldız artı 2'ye. Yani 1, 2 elemanına ulaş diyor bana. 0 bu, 1 bu. 0, 1, 2 de bu. Yani 8 getirecek bana. 8'i karakteri yazacak. Kaça? 12'ye.
+
+765
+02:28:24,595 --> 02:28:33,595
+Evet, 12. 8'i yazdıracak. Peki. 13'e ne yazdıracak? Burada da bir şey var.
+
+766
+02:28:33,595 --> 02:28:48,595
+A2 3 desem okey ama 3 desem tamam pekala. Aynı mantıkla şuna da bakalım. Hep bunlar pointer alitmetinin değişik şeyleri hesaplamaları.
+
+767
+02:28:52,500 --> 02:29:10,899
+Şu ifade ile şu ifade birbirinin aynısı. Tamam mı? O zaman bana 1, 3 yani 8'in gösterdiğinden bir sonraki 9 yazılacak. 13. satır. Ama eğer şuraya...
+
+768
+02:29:12,468 --> 02:29:21,828
+Şu noktaya mesela, 3 yazmaya kalksam, öyle bir adres yok. Bakın, 0 adresi, 0 satırı, 1 satırı, 2 satırı var ama 3 satırı yok.
+
+769
+02:29:21,828 --> 02:29:29,508
+O yüzden ben oraya 3 yazmaya kalksaydım, köşe paranteş çekilmesine 3 yazmaya kalksaydım, hata alacaktım.
+
+770
+02:29:29,683 --> 02:29:42,003
+O yüzden bakın, köşeli parantez 3 yazsaydım şu noktaya, error alacaktım. Tamam mı? Ayrıca kaldı ki, şu artı 3'ü de köşeli parantez 3 içerisinde yazsam, o da yine derleme hatası olacaktı.
+
+771
+02:29:42,003 --> 02:29:56,644
+Burada bunları demek istiyorum. Gelelim 14. sıra. Şununla şu tamamen aynı şeye denk geliyor. Neden? Çünkü bakın, gerçi biri tekst, biri mat ama...
+
+772
+02:29:57,652 --> 02:30:03,252
+pointer aritmeti açısından aynı noktalara denk geliyorlar. O yüzden bu da 9.
+
+773
+02:30:07,252 --> 02:30:17,452
+Ve aynı şey orada da geçerli. Mat'ın da 3 incisli satırı yok. Hata verirdi bana.
+
+774
+02:30:18,452 --> 02:30:21,051
+15'te ise, yansıtılıyormuşuz bakalım.
+
+775
+02:30:22,355 --> 02:30:27,855
+1-6-2, yani bir önceki harfi 8 yazdıracak.
+
+776
+02:30:29,855 --> 02:30:33,355
+Ondan sonra kim? 16'da ne yazdırıyor?
+
+777
+02:30:35,355 --> 02:30:40,332
+Haa, enteresan bu. Biraz daha enteresan yazdırıyoruz. Peki.
+
+778
+02:30:43,379 --> 02:30:58,139
+Dime dikkat etmeniz gerekiyor ki, %D. Peki. Bakın. Mat 2, 4. 0, 1, 2 burası. 0, 1, 2, 3. 4 burası. D harfi. Tamam mı?
+
+779
+02:31:01,747 --> 02:31:03,747
+Bakınınız çok güzel gözükmez.
+
+780
+02:31:03,747 --> 02:31:05,747
+Otomatik diyeyim.
+
+781
+02:31:05,747 --> 02:31:07,747
+Şöyle yapayım.
+
+782
+02:31:07,747 --> 02:31:08,747
+G.
+
+783
+02:31:08,747 --> 02:31:12,747
+Bundan mat bir dörtü.
+
+784
+02:31:12,747 --> 02:31:16,747
+Sıfır bir, sıfır bir iki üç.
+
+785
+02:31:16,747 --> 02:31:18,747
+A harfini.
+
+786
+02:31:18,747 --> 02:31:19,747
+Bakın.
+
+787
+02:31:19,747 --> 02:31:21,747
+G'den A'yı çıkartacak.
+
+788
+02:31:21,747 --> 02:31:24,747
+Ne demek G'yi A'dan çıkartmak?
+
+789
+02:31:25,363 --> 02:31:52,603
+Aslında G'nin ASCII kodu olan kaç olacaksa, A'nın ASCII kodunu ondan çıkartacak. Büyük A 65'te hatırlarsınız aslında. 65, 66, 67, 67, 68, 68, 71. 71'den 65'i çıkartacak. Ve 6 yazacak bana. 6. Bu tamamen aritmetik olarak hesaplanan 6.
+
+790
+02:31:53,075 --> 02:31:56,595
+Şu gözdeki değerde hiçbir alakası yok.
+
+791
+02:31:56,948 --> 02:32:11,948
+Bu arada büyük ağın 65 olduğunu ezberledim, oradan yaptım ama aslında 65 olmasını hatırlamamda buna gerek yok. 65 olduğunu hatırlamama gerek yok. Bu küçük ağ da olabilirdi, onun ne olduğunu unutmuş olabilirdim.
+
+792
+02:32:11,948 --> 02:32:24,948
+Burada önemli olan ağının sayısal değeri neyse, ondan 1, 2, 3, 4, 5, 6 fazlasının sonraki harf değeri. O yüzden bundan bunu çıkarttığımda...
+
+793
+02:32:24,948 --> 02:32:30,648
+6 fark olacak şeklinde çıktı alacağımı söyleyebilirim.
+
+794
+02:32:31,207 --> 02:32:33,887
+Şu an işlemle ihtiyacım yok ama belki yazarız bir şeyler.
+
+795
+02:32:34,768 --> 02:32:39,968
+Bundan sonra şimdi hadi bakalım bir çalıştalım bakalım ne diyecek.
+
+796
+02:32:41,667 --> 02:32:45,608
+Ve doğumunu değerlendirebilmişiz bir bakalım şimdi.
+
+797
+02:32:47,316 --> 02:33:14,336
+6, 7, 8, 9, 10
+
+798
+02:33:14,335 --> 02:33:29,695
+11'de 0 yazdırdı güzel, 12'de 8 yazdırdı güzel, 13'de 9 yazdırdı güzel, 14'de 9 yazdırdı güzel, 15'de 8 yazdırdı güzel, 16'da 6 yazdırdı güzel. Tamam peki abi.
+
+799
+02:33:29,695 --> 02:33:37,295
+Evet, sizlere doğru şekilde anlatabilmişim hemen hemen ki. Şu hariç, 5 hariç, ona bir bakalım şimdi.
+
+800
+02:33:39,295 --> 02:33:41,295
+Şuna bakalım. Evet.
+
+801
+02:33:41,523 --> 02:33:46,804
+Tamam, bakın, bu da şundan kaynaklanıyor, büyük ihtimalle tek satır olduğunu.
+
+802
+02:33:46,804 --> 02:33:54,644
+Şimdi bu zaten teksti ya ve bunu str kopilerle yaptım ya, aslında şu anda ek karakter olarak slash 0 karakterleri var.
+
+803
+02:33:54,644 --> 02:33:55,963
+Hadi satın sonunda.
+
+804
+02:33:57,363 --> 02:33:59,843
+Bunları da ortadaymış isterseniz.
+
+805
+02:34:00,963 --> 02:34:03,843
+Ve hal böyle olunca,
+
+806
+02:34:05,443 --> 02:34:07,123
+Bunu da küçülteyim.
+
+807
+02:34:07,412 --> 02:34:28,912
+Daha da fazla piştiğim hatta. Sığ sığ diyelim şu alanıma. Hal böyle olunca artık End of String karakteri gördüğü için tüm maddesin diğer satırını yazdırmadan bitti, durakladı. O da ondan ibaret. Diğer dediklerimin hepsi dediklerimle aynı.
+
+808
+02:34:35,572 --> 02:34:40,692
+Bir iki dakika işlemci var arkadaşlar. Hemen geliyorum. İki dakika içerisinde geliyorum. Onları da yapacağız.
+
+809
+02:36:18,227 --> 02:36:21,108
+gelin bakalım şimdi. Onlara da bir bakalım.
+
+810
+02:36:27,156 --> 02:36:31,396
+Evet artık şu Excel penzelesine ihtiyaçım yok. Bunu öteyim.
+
+811
+02:36:33,156 --> 02:36:40,116
+Gerçi neden buggy olduğunu çekmiştik, konuşmuştuk komentlerken. Ama açalım ne olduğunu görelim.
+
+812
+02:36:45,427 --> 02:36:47,427
+Şimdi haa...
+
+813
+02:36:47,427 --> 02:36:49,427
+Tamam.
+
+814
+02:36:49,427 --> 02:36:53,427
+Unuttuğum olursa da değerleme hatasından şey deriz zaten.
+
+815
+02:36:53,427 --> 02:36:55,427
+Görürüz.
+
+816
+02:36:55,427 --> 02:36:57,427
+Haa da böyle.
+
+817
+02:37:02,484 --> 02:37:13,283
+Tamam ama, aa, tamam bakalım, Winker hataları verdi. Aa, neden çünkü şu programı kuş etmedi? Kapatma, tamam peki. Tekrar döne.
+
+818
+02:37:16,371 --> 02:37:20,371
+İnşallah problem olmaz. Bakalım.
+
+819
+02:37:20,371 --> 02:37:24,371
+Evet, şimdi bakalım. Nerelerde ne olacak?
+
+820
+02:37:24,371 --> 02:37:30,091
+Evet, enteresan şeyler. Peki güzel. Ne kadar enteresan. Görelim.
+
+821
+02:37:33,811 --> 02:37:42,811
+Şimdi nasıl yapayım şunu? Zaten başka yerim yokmuş. Tam denk geldi, yasıldı hepsi.
+
+822
+02:37:42,811 --> 02:37:54,811
+Peki, şimdi 4 için buggy demiştik. Hani o kadar buggy ki, bakın output'un o ve u harflerini bile bozdu.
+
+823
+02:37:58,995 --> 02:38:18,995
+O da nedir büyük ihtimalle söyleyeyim mi? Tahminim şu. String olarak text'i, iki boyutlu pointer'da olan text'i yazdırmaya çalışıyor. Bunların adresleri, içerikleri veya adresli de içerik herhalde.
+
+824
+02:38:26,131 --> 02:38:35,731
+Konsolda bulunduğunuz satının başına git anlamındadır. Ondan sonra bir karakteri, ne bileyim şu A-Unlaut'u gösteriyordur.
+
+825
+02:38:35,731 --> 02:38:41,492
+Yani o alanda yalan içerik A-Unlaut'a denk gelecek tıkladıktan sonra bir şey içeriyordur.
+
+826
+02:38:41,492 --> 02:38:46,932
+Yani öyle bir olaylar olmuştur ki böyle bir şeyler çıkmıştır arkadaşlar.
+
+827
+02:38:48,659 --> 02:38:56,659
+Tahminim bu ama gerçekten öyle mi bilemeyeceğim. Çok da diriplemeye gerek yok. Buggy kardeşim, buggy. Doğru bir şey yapmıyorsun nihayetinde.
+
+828
+02:38:56,659 --> 02:39:10,659
+Sonra girelim. A tut. Sekisi ne demiş? H demiş. Buggy olmakla birlikte H demiş bana. Tamam da H ne kardeşim? Acaba niye H?
+
+829
+02:39:13,299 --> 02:39:31,139
+Direkt text demişim, o text de h'den başlamıyor. Adres kıpırtıktan sonra denk mi gelen mi yoksa, matisa baktığımda ve en son eleman da diyemeyeceğim, slash n karakteri var bundan son açıdan.
+
+830
+02:39:37,332 --> 02:39:51,572
+Arput 8 buggy, buggy dedim arput 8 ile buggy dedim arput 10 aynı bir kodu çıkarmışlar bana. Yıldız BP, şey yapardım, direkt BP ve yıldız text.
+
+831
+02:40:05,332 --> 02:40:07,332
+Şuna mı denk geliyor?
+
+832
+02:40:09,332 --> 02:40:13,332
+Haa bu da 0 karakter. Şuna bir bakalım.
+
+833
+02:40:14,332 --> 02:40:16,172
+Aski table diye bakalım.
+
+834
+02:40:30,708 --> 02:40:32,708
+Vardaki slash sıfır mı?
+
+835
+02:40:34,708 --> 02:40:36,708
+Bakın slash sıfır mı?
+
+836
+02:40:36,708 --> 02:40:41,708
+Peki acaba o tek tırnak nedir?
+
+837
+02:40:42,708 --> 02:40:46,708
+Şu 27 mi? Yok o değil. O şu galiba.
+
+838
+02:40:53,139 --> 02:41:07,299
+Bakın, o şöyle bir enteresan karakter. Acaba fonçiyen var? Tırnak, şöyle eğik. Tırnak, neye denk geliyor bakalım.
+
+839
+02:41:07,299 --> 02:41:19,779
+Bunu bulabilir miymiş? Ha, şu. Ne? Şu. Şu. Nedir ki o nedir? Tablonun üstüne değer ne? Karyara kaçır. Desimal. Peki, desimal, octahex.
+
+840
+02:41:20,468 --> 02:41:42,468
+Desimaldi 96. Ya bilemedim şimdi kim bile ne denk geldi. Ama bütün o buglarda şu sıfı 96'nın karakterinin göstermesi de bir ilginç. Neyse. Diğer bug kısmına bakalım. Şunu şöyle yapayım.
+
+841
+02:41:43,347 --> 02:41:54,347
+8 ve 10'da aynı şey olmasına takılmışlık. Diğer yerlerde de bu agili şeyler yok. Tamam, fikir.
+
+842
+02:41:54,347 --> 02:42:00,347
+O zaman şimdi sizlerin sorularını alayım bu yaptığımız şeylerle ilgili.
+
+843
+02:42:00,347 --> 02:42:10,347
+Bir yandan ders notlarını bakayım. Ekstra bir şey var mı? Ekstra bir şey yok. Commentim falan var mı? Commentim de yok.
+
+844
+02:42:10,932 --> 02:42:12,932
+Yolumu yani gözden geçirme yolumu.
+
+845
+02:42:17,932 --> 02:42:19,932
+Peki, bugün 150'ye kadar yaptık.
+
+846
+02:42:22,932 --> 02:42:24,932
+Şunu göteyim artık.
+
+847
+02:42:26,932 --> 02:42:28,932
+Bismillahirrahmanirrahim.
+
+848
+02:42:33,932 --> 02:42:37,932
+Bugün evet, 150 yaptık.
+
+849
+02:42:38,623 --> 02:43:05,623
+Evet, çete bir şeyler gelmiş. Sınavlarla alakalı her ne ilginiz var? Şöyle ki konuşalım. Öncelikli olarak vize programını bilmiyorum şu an. Daha daha o konuda soru geldi. O yüzden bu soruyla da ilgili. O yüzden öyle söyleyeyim. Programı bilmiyorum. Genelde bir dersin vize sınıfını aynı gün içerisine koymaya çalışıyoruz.
+
+850
+02:43:06,623 --> 02:43:10,623
+O zaman bu da demek oluyor ki, Şarşem günü olacak herhalde izin izin.
+
+851
+02:43:10,623 --> 02:43:11,623
+Tamam.
+
+852
+02:43:12,852 --> 02:43:24,852
+Bazı sınıflarımızı daha küçük bölümümüzle, fakültemizin küçük bölümüyle ve servis dersleriyle paylaşmak zorunda olduğumuzdan başka saatleri kaydırabiliyoruz.
+
+853
+02:43:24,852 --> 02:43:26,852
+Çok büyük olasılıklar.
+
+854
+02:43:26,852 --> 02:43:33,852
+Ve bazen öyle oluyor ki, hiç sınıf öyle bulamadığımızda daha sonraki günlere kaydırmaya çalışıyoruz.
+
+855
+02:43:33,852 --> 02:43:37,852
+Yani çiçeğeşembe olmazsa, perşembe olacaktır diyelim ki bizim sınıfımız.
+
+856
+02:43:40,852 --> 02:43:53,172
+Daha önceki bir güne de kayabiliyor. Yani pazaratisi de olabilir belki bizim bu dersimizde. Ama genelde öyle yapmamaya çalışıyoruz yönetim olarak. Öyle yürütülüyor işlem. Bunlar bu.
+
+857
+02:43:53,172 --> 02:44:04,772
+Gelelim bizim sınavımıza. Şimdi nasıl bir şey olacak? Öncelikle klasik usul yapmakta uzlaş, anlaş, Girem Hoca ile klasik usul sınav olacak.
+
+858
+02:44:08,595 --> 02:44:31,595
+Şu yaptığımız türden, bu yaptığımız örnek türünden sorular gelebilir. Tabi ki bu kadar uzun bir kod içerisinden değil. Fakat, diyelim ki, şu içerikte, değiştirmeyi de deneyelim.
+
+859
+02:44:33,716 --> 02:44:46,716
+Şuradaki, işte madem bu math ile ilgili, şöyle üç tane satır verip, bunların çıktılarını aşağıya yazın, yanına yazın şeklinde sorularımız olabilir. Bu birinci tarzımız.
+
+860
+02:44:46,716 --> 02:45:00,652
+İkinci tarzımız, şöyle şu, yok bu değil, sort'a girelim, dynamic sorting C'ye mesela diyelim ki, işte
+
+861
+02:45:01,139 --> 02:45:25,260
+verilen en adet elemanın Selection Sort'a göre sağlanmasını sağlayacak bir program yazılacaktır. Bu programda mean metodunda şunlar şunlar yapılacak, şu şu şu işleri yapan da fonksiyonlar olacaktır. Tekninde bir sorumuz var.
+
+862
+02:45:25,716 --> 02:45:29,236
+ve kağıt üzerinde mesela
+
+863
+02:45:31,236 --> 02:45:34,835
+bazı fonksiyonların mesela getCostOfMe'nin
+
+864
+02:45:34,835 --> 02:45:36,435
+sadece
+
+865
+02:45:37,523 --> 02:45:39,923
+şöyle bir gövdesini vereceğiz belki.
+
+866
+02:45:39,923 --> 02:45:46,163
+Keza duruma göre, şuradaki parametrelerde de belki boşluklar verebiliriz.
+
+867
+02:45:46,163 --> 02:45:52,324
+Veya bazı parametreleri verip, bazı parametrenin yerine boşluklar yazmayı tercih edebiliriz.
+
+868
+02:45:52,324 --> 02:45:57,723
+Yani size belki bütün programı yazdırabiliriz.
+
+869
+02:45:57,723 --> 02:46:03,324
+Ama bunu da yaparken sizi belli bir tasarıma yönlendirmiş oluyoruz.
+
+870
+02:46:03,324 --> 02:46:05,523
+Böyle işte fonksiyon adlarını vererekten.
+
+871
+02:46:05,523 --> 02:46:19,383
+Bazı yerlere koyulması gereken boşluklar koyaraktan ve bazı yerlerde de mesela diyelim ki, ha bellek ayarımı kısmında yapmıştık ya mesela diyelim ki, bubble swap olmayacak bunda.
+
+872
+02:46:19,863 --> 02:46:24,583
+Printless diyeyim ki hadi o zaten basit, o yüzden bütün gövdesini vermişiz diyelim ki.
+
+873
+02:46:24,583 --> 02:46:27,023
+Ondan sonra derslere ne yapmıştık mesela?
+
+874
+02:46:27,403 --> 02:46:32,683
+İşte void, allocate memo demiştik mesela.
+
+875
+02:46:33,523 --> 02:46:48,459
+Bunları komple bir boş bırakmışız. Ya da hadi biraz daha merhametli davrandıysak bir virgül koyup ondan sonra buraya boş bırakmışız. Ondan sonra Cuma. Ha ama void değil de işte ne demişiz?
+
+876
+02:46:48,564 --> 02:47:01,844
+EntYields demişiz, allocate memory. Bu arada kod yazacağımız boşluklar bırakmışız. Sonra mesela şurada p eşittir, ondan sonra allocate memory, bir şeyler, bir şeyler demişiz mesela.
+
+877
+02:47:03,044 --> 02:47:11,443
+Eşittir, allocate memory, bir şeyler, bir şeyler demişiz mesela. Sonra bunlar kontrolünde özellikle burada silmişiz diyelim ki.
+
+878
+02:47:12,644 --> 02:47:14,044
+Bundan sonra şimdi.
+
+879
+02:47:15,636 --> 02:47:21,136
+Ondan sonra şöyle, şöyle, şöyle, şöyle. Bu arada boş diyelim ki. Ondan sonracıma.
+
+880
+02:47:21,747 --> 02:47:29,747
+Böyle bir şey vermişiz mesela. Siz bu fonksiyonun içini doldurmalısınız. Bu çağrımların içini doldurmalısınız.
+
+881
+02:47:29,747 --> 02:47:39,747
+Ondan sonra jıma memory allocation yapıldığında bunun free yapılmasında unutulmaması gerektiğinden bu allocate memory içerisinde özür dilerim, orada değil.
+
+882
+02:47:39,747 --> 02:47:46,747
+Memory ayrılamamışsa problem olabilir. O kontörde bu allocate memory içerisinde yapılması gerektiğini unutmayın.
+
+883
+02:47:46,747 --> 02:47:49,747
+Ondan sonra belki şuraya da hani bakalım.
+
+884
+02:47:49,747 --> 02:48:16,227
+bilmem ne anlamında, buraya free yazmanız gerekecek, free, fdm, bu ne olacak mesela gibi. Böyle bir belirli bir kod ama böyle boşluklar var. Bu boşlukları uygun bir şekilde dondurarak da kısmı kod yazmanızı da isteyebiliriz. Yani bu ders kapsamında şimdiye kadar bu iki tip formatta sorularımız oluyor. Birincisi tekrarlıyorum.
+
+885
+02:48:17,747 --> 02:48:45,327
+belirli bir main metodu gövdesi verip, ondan sonra cima, o main metodun gövdesinde çeşitli printfler olup, ondan sonra bu main'in çıktısı ne olur şeklinde size sorabiliyoruz. Bu birinci formatımız. Az önce konuştuğum şeklinde, değişik yerlerde boşluklu olacak şekilde ve nerede ne yapılması gerektiğini sorunun metninde anlattığımız şekilde bir kod yazmanızı bekliyor.
+
+886
+02:48:45,747 --> 02:49:12,347
+oluyoruz. Bu iki anahtar sorumuz var. Üçüncü yepyeni bir soru tarzı çıkartabilir miyim? Ben çıkartamam ama İrem Hoca çıkartabilir belki bilemiyorum. Ama bir konusunda çıkmaz diye tahmin ediyorum. Formatlarımız bunlar. Başka? Evet bu kadar bir şey değil bu kadar. Tamam ne demek?
+
+887
+02:49:12,799 --> 02:49:40,099
+Daha da başka ne yaratıcı olabiliriz? Yani, diyemiyorum ki yani böyle şeyler oluyor. Hep bu şekilde de sonut kuşağın kadar. Ha belki şu da olabilir, ne bileyim. Yerisinde bir kod veririz. Bazı satırlarında boşluklar olur. Bu kodun derleme hatası olmadan çalışması için hangi satıra, hangi satır ya da satırlara ne ya da neler eklememiz gerekiyor gibisinden de belki bir üçüncü tip format sorumuz olabilir.
+
+888
+02:49:41,043 --> 02:49:51,844
+Özellikle test usulü yaptığımız zaman, seri seçtiğimiz bir soru biçimidir bu. Ama tekrarlıyorum, bu sınırımızı klasik usulü olacağız.
+
+889
+02:49:51,844 --> 02:49:58,644
+Final sınırımızı test usulü yapacağız şeklinde, mensip kalanı almıştık.
+
+890
+02:50:00,000 --> 02:50:18,900
+Hocam da konuştuğumda tamam vizeyi bu şekilde klasik yapacağız ve bunun gibi sorular soracağız ve şuraya kadar yapacağız ki o şuraya kadar dediğimde bizim ders notlarımızda işte bu 150. yansıya kadar olan kısımda her şeyden sorumlu olacağımız bir sınav olacak.
+
+891
+02:50:19,763 --> 02:50:29,763
+Evet, buyrun başka soru nasıl alalım? Gerek dersle ilgili gerek sınavla ilgili anlatmayı atlamış olabileceğimiz bir şeyler olabilir.
+
+892
+02:50:35,796 --> 02:50:38,355
+O sana ben şu koda bakmak istiyorum bir yandan.
+
+893
+02:50:39,635 --> 02:50:41,932
+Bir şeyleri set etmek istiyorum.
+
+894
+02:50:45,459 --> 02:50:51,139
+Onları bir şöyle yapmaya çalışalım. Mesela bir mattan bir de textten yapalım.
+
+895
+02:50:56,755 --> 02:51:10,036
+Şimdi, max 0, 0 eşittir. Şimdi, 6, 2, 3, 4, 5 diyebilir mi? X olsun.
+
+896
+02:51:10,036 --> 02:51:23,556
+Max 0, 0, X diyelim. Ve, ha özür dilerim, text 0, 0, X diyelim. Ondan sonra,
+
+897
+02:51:23,860 --> 02:51:35,860
+Ben de benzer şekilde yapalım.
+
+898
+02:51:43,188 --> 02:52:10,688
+Ondan sonra açıma benzer şekilde şu C6 artı bilmem ne falan şöyle yapalım. Şimdi %7 %c karakter olarak çekmek istiyorum. Ondan sonra açıma 0, 0 demek istiyorum sadece. Ondan sonra şu 17. tüm, şurada 18. tüm olsun. Şunu da
+
+899
+02:52:12,404 --> 02:52:24,084
+text 00 yapalım mesela. İşte belirli bir yeri modifiye edemediğimi de görecek şekilde devam edelim.
+
+900
+02:52:24,084 --> 02:52:34,084
+En olden programı göçürmüyordu. O yüzden tekrar onları commentlamaya kalkışmayayım. Ama linker bağlayamadım. Neden? Çünkü WordPress entry, cryptocurrency yapmamıştım.
+
+901
+02:52:34,084 --> 02:52:36,084
+Tekrar yapalım bakalım.
+
+902
+02:52:43,252 --> 02:52:44,252
+Hiçbir şey yapmaz.
+
+903
+02:52:46,252 --> 02:52:47,252
+O da ilginç.
+
+904
+02:52:49,252 --> 02:52:50,252
+Yüzdeciye...
+
+905
+02:52:55,252 --> 02:52:56,252
+Aslında...
+
+906
+02:52:57,252 --> 02:52:57,708
+Evet.
+
+907
+02:52:58,739 --> 02:53:16,739
+Hiç çalışılamadı. Çıksızlık çuval, ha çuvalamadım. Bir terslik var. Press and key to continue. Takıldı kaldık. Neden? O da büyük ihtimalle immutable string olaylarındaki bu olaylardan kaynaklanıyor. Evet, bu da yok. Bu ortalıklar demek zorundayım.
+
+908
+02:53:28,628 --> 02:53:41,628
+Evet. Evet. Mat'taki bu mat olan şeydi. Dikkat ederseniz böyle immutable stringlerdi. Bu olmuyor. Bu problem.
+
+909
+02:53:41,628 --> 02:53:53,628
+Şimdi direkt bunu şuan komentliyorum. Şöyle. Ondan sonra bu buggy. Hatta crash diyeyim. Crash.
+
+910
+02:53:55,123 --> 02:54:21,123
+Immutable. Ama ötekisi mutable. Problem olmayacaktı diye düşünüyorum bakalım. Hadi ya. Neyse. Şunu anladık. En azından burada Ctrl C işe yaradı. C, 0, 0. Peki şey diyeyim.
+
+911
+02:54:27,316 --> 02:54:31,756
+Okey, dedi. Haa, da kaya.
+
+912
+02:54:34,932 --> 02:54:35,980
+...
+
+913
+02:54:44,404 --> 02:54:46,404
+Şöyleşiyor, listek istiyorlar.
+
+914
+02:54:53,556 --> 02:54:54,996
+Anlayamadım, baros.
+
+915
+02:54:58,131 --> 02:55:03,131
+Bir dakika, bir dakika. İlk atamayı yapmaya çalıştığım yerde direkt göçüyorsa.
+
+916
+02:55:03,131 --> 02:55:04,131
+Beyaz.
+
+917
+02:55:07,763 --> 02:55:10,763
+mat problemi. Şöyle bir ayırayım bakalım.
+
+918
+02:55:11,763 --> 02:55:13,763
+Umdaha sonra acaba.
+
+919
+02:55:14,263 --> 02:55:19,763
+Evet, unuttuk. Şimdi artık yıldız tek süzü de s dediğim için problem olmaması lazım.
+
+920
+02:55:19,763 --> 02:55:21,763
+Unuttuk. Bakalım.
+
+921
+02:55:21,763 --> 02:55:23,763
+Son sayılarda burada.
+
+922
+02:55:27,763 --> 02:55:28,763
+Ha, evet, tamam.
+
+923
+02:55:28,763 --> 02:55:32,763
+X'in değiştiğini görebiliyorum. Evet, ilk harfi X yapmıştık.
+
+924
+02:55:32,763 --> 02:55:35,647
+Orada çalıştı, işe yaradı. Pek, tamam.
+
+925
+02:55:35,647 --> 02:55:50,048
+Şu anda şunu da şöyle. Çok güzel. Peki, peki o zaman hani iki boyutlu... Haa, tek karakter için yıldız yıldız tek istemem lazım. Olduğunuz herhalde diye düşünüyorum.
+
+926
+02:55:50,048 --> 02:55:59,247
+%C olarak tan. Haa, e tabii ki ya. Ötekisinde...
+
+927
+02:55:59,924 --> 02:56:07,924
+Yok, karakter, karakter, karakter. Peki, %C, yıldız yıldız text. Bakalım.
+
+928
+02:56:09,924 --> 02:56:18,924
+Yine hani makul makul şeyler yapmaya çalışıyorum, göçmemeye çalışmıyorum. Evet, altı 18, iki stek karakter sonra press, end, key, continue.
+
+929
+02:56:26,255 --> 02:56:47,835
+Evet, peki başka? Text 00'ın da aslında çalışmasını bekliyorum. Yine şu noktada %c yapıp, yine bizde, ondan sonra text. Ama yıldız demem. Yıldız demem gerekir değil mi? Yıldız demem gerekir bu noktada.
+
+930
+02:56:48,979 --> 02:57:02,979
+Evin değilim şu an dersin sonu. Kendimi çok da keskin ve zeki hissetmiyorum. Tamam, güzel. Bir problem olmadı.
+
+931
+02:57:05,427 --> 02:57:23,667
+Ama dur bir dakika. En azından rakamlar tutmuyor ama çünkü şu j artı artı geçmem gerekiyordu. Ama yine de en azından en son gözümle takip ediyorum. Bu da x, bu da x. Tamam. Bir yıldız denme gerek kalmadı şu noktada. Evet. Peki.
+
+932
+02:57:23,667 --> 02:57:32,147
+Güzel. Ama şimdi bütün bunlar ben herhalde şunu yapmaya kalktığımda göçecek sanki.
+
+933
+02:57:34,868 --> 02:57:44,868
+Evet, direkt göçülüyor. Yani öyle bir şey ki, Ctrl C ile çıkabildim bu arada. Tamam peki.
+
+934
+02:57:44,868 --> 02:57:47,340
+O zaman şöyle diyeyim, şuraya.
+
+935
+02:57:51,252 --> 02:57:51,752
+dom.
+
+936
+02:58:01,363 --> 02:58:07,363
+Word dedik. Tamam. Her şeyi göstertiyor.
+
+937
+02:58:11,763 --> 02:58:13,763
+Diyelim. Evet.
+
+938
+02:58:17,763 --> 02:58:28,763
+Evet, yapacak bir şey yok. Çünkü onu o şekilde tanımladığımız için. Read'de problem yok ama write işleminde değiştirme işleminde her türlü problemi çıkartıyor bize.
+
+939
+02:58:32,763 --> 02:58:36,331
+Başka? Başka bir şey hakkıma gelmiyor.
+
+940
+02:58:38,067 --> 02:58:51,067
+Peki arkadaşlar, o zaman bugünlük bu kadar. Katılan, dinleyen herkese teşekkür ederim. Haftaya, sınavda da herkese başarı rahat edelim. Şimdilik Allah sınavı tak.
+
+941
+02:58:51,067 --> 02:58:52,843
+Oturumu sonuna atla.
