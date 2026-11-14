@@ -7,3 +7,4 @@
 | 13 | Bahar | Arzu Ekoç Özçelik | [sube_13/](sube_13/) |
 | 14 | Bahar | — | [sube_14/](sube_14/) |
 | 16 | Bahar | — | [sube_16/](sube_16/) |
+| 17 | Bahar | — | [sube_17/](sube_17/) |
