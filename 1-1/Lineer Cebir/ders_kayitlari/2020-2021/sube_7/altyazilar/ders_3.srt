@@ -1,0 +1,2835 @@
+1
+00:00:30,452 --> 00:00:31,132
+Güneşin hocam.
+
+2
+00:09:19,508 --> 00:09:21,427
+Günaydın arkadaşlar, nasılsınız?
+
+3
+00:09:26,868 --> 00:09:28,528
+İyiyiz hocam, siz nasılsınız?
+
+4
+00:09:28,788 --> 00:09:33,427
+Teşekkür ederim. Başlayalım. Çokça konumuz var. Geçen hafta geride kalmıştık zaten.
+
+5
+00:09:33,927 --> 00:09:38,168
+O konuları biraz hızlıca geçeceğim. Haftanın konusuna geçmek istiyoruz.
+
+6
+00:09:38,347 --> 00:09:44,008
+Esasında bu hafta başlayacağımız yeni konuyla biraz biraz dinerce birin içine girmiş olacağız.
+
+7
+00:09:44,148 --> 00:09:49,748
+Daha doğrusu denklem sistemlerinin çözümü yolunda ilk adımızı atmış olacağız arkadaşlar.
+
+8
+00:09:49,748 --> 00:09:53,048
+Geçen hafta en son involüt matrisde kalmıştık.
+
+9
+00:09:54,868 --> 00:10:03,868
+Karesel matris çeşitlerinden bahsediyorduk. İmbolik matrisin tanımını verip bırakmıştık. Mikrofon açık olan arkadaşlarımızın mikrofonların kafasında.
+
+10
+00:10:06,748 --> 00:10:13,768
+Köşegen matrisle devam edeceğiz. Köşegen matrisine karesel bir matris var elimizde yine. A karesel matris.
+
+11
+00:10:22,004 --> 00:10:30,004
+Sadece sıfırdan farklı olabiliyorsa, köşegen dışındaki elemanlar hep sıfırsa, bu matrise biz köşegen matris diyoruz.
+
+12
+00:10:30,104 --> 00:10:33,844
+Örnekle bu tip tanımlamalar örnekle daha iyi anlaşılır.
+
+13
+00:10:33,943 --> 00:10:39,344
+Köşegen matrisi biz diagonal, esas köşegen yardımıyla tanımlayabiliriz.
+
+14
+00:10:39,423 --> 00:10:43,754
+Yani diğer elemanlar hep sıfır olduğu için bir köşegen matrisini işte...
+
+15
+00:10:43,764 --> 00:11:00,764
+Diagonal matrisin D'sinden geliyor. Büyük D ile genelde gösterilir. İşte diagonal elemanlarını parantez içinde gösterilir. Bu ne demek? Sadece diagonal elemanlarını verirsem o matrisi vermiş olur mesajında. Çünkü geriye kalan bütün elemanlar sıfır olarak...
+
+16
+00:11:01,682 --> 00:11:10,243
+Tanımlanmış durumda. 3x3 tipinde bir karesel matris. Esas köşegen üzerindeki elemanlarımız 3-7 ve 2 olarak verilmiş.
+
+17
+00:11:10,602 --> 00:11:19,822
+Dikkat ederseniz, geriye kalan bütün elemanlar, yani esas köşegenin üstünde yer alan ve esas köşegenin altında yer alan elemanların tamamı sıfır.
+
+18
+00:11:19,822 --> 00:11:29,663
+Bu şekildeki matrislere biz köşegen matris diyoruz. 2x2 tipinde bir köşegen matrisimiz var. Yine 4x4 tipinde bir köşegen matris. Son örnek.
+
+19
+00:11:29,682 --> 00:11:37,682
+sıfırlar ihmal edilmiş. Yani buralarda yer alan elemanların tamamı sıfır olarak alınacak.
+
+20
+00:11:37,682 --> 00:11:46,682
+Eğer diagonal matriz bize dediyse ya da köşegen matriz dediyse biz esas köşegenin altı ve üstünde kalan bütün elemanların sıfır olduğunu söyleyebiliriz.
+
+21
+00:11:46,682 --> 00:11:53,682
+Tabii özel olarak birim matriz bir köşegen matriztir. Sıfır matrizi yine köşegen matriztir diyebiliriz.
+
+22
+00:11:58,899 --> 00:12:18,120
+Şöyle devam edelim. Üçgensel matris tarifi var. Üst üçgensel ya da alt üçgensel matrisler. Üst üçgensel olunca esas köşegenin altında kalan her şey sıfır. Üstte kalanlar sıfırdan farklı olabilir. Alt üçgensel deyince de esas köşegenin altında kalan her şey sıfırdan farklı. Üstü sıfır olacak.
+
+23
+00:12:26,899 --> 00:12:52,220
+formu elde ediyoruz. Yani aşağıda kalan şeyler hep sıfır. 3x3 tipinde bir üçgensel matris örneğimiz var. 4x4 tipinde bir üçgensel matris, üç üçgensel matris örneği var. Fakat şurada sıfırlar ihmal edilmiş yine. Onu da bilmemiz lazım. Bir matrisde bazı girdiler yazılmadıysa onların sıfır olduğunu kabul etmemiz gerekiyor arkadaşlar.
+
+24
+00:12:53,139 --> 00:12:58,840
+Benzer şekilde burada üst üçgensel tanımlandı, alt üçgenseli de tanımlayabiliriz.
+
+25
+00:12:59,220 --> 00:13:05,178
+Simetrik ve ters simetrik matrisler sınavlarda çokça sorulan soru tiplerinden biri.
+
+26
+00:13:05,360 --> 00:13:08,538
+Yani simetrik matrislerle ilgili genelde bunlar karıştırılır.
+
+27
+00:13:08,620 --> 00:13:18,058
+Ailen, potent, involü, işte ortogonal matrislerle birlikte simetrik ve ters simetrik de sınavlarda şıkların içinde bulunur.
+
+28
+00:13:18,740 --> 00:13:20,220
+Son yapılan sınavlarda.
+
+29
+00:13:20,700 --> 00:13:25,558
+Eğer bir matrisin transpozu kendisine eşitse, biz bu matrise simetrik matris diyoruz.
+
+30
+00:13:26,292 --> 00:13:53,711
+Bir matrisin transpozu kendisine eşitse, bu matrisse simetrik matris diyoruz. O yüzden simetrik dediğine göre, i farklı j için, yani esas köşegen üzerindeki elemanlar bizi ilgilendirmiyor. Transpozunu alırsak onlar aynı kalacak. Fakat esas köşegen üzerindeki elemanlar bizi çok ilgilendirmiyor. Neden? Çünkü transpoz aldığımızda a, i, i'ler yine kendisine eşit olacak. Yani a, i, i transpoza eşit olur.
+
+31
+00:13:54,292 --> 00:14:16,392
+İngilizler aynı ise. Fakat, Ig'den farklı ise, A, Ig eşittir. A, J, I'nin transpozuna eşit olur. Dolayısıyla, bir matris eğer transpozu kendisine eşitse, yani simetrikse, bu durumda, Ig'den farklı iken, A, J, I'ye eşit olmak zorunda.
+
+32
+00:14:17,043 --> 00:14:38,124
+Yani satırları, stüksyon, stüksyonları satır yaptık. İndisler birbirinden farklıysa simetrik olarak bu elemanlar birbirine eşit olacak. Şunun esas köşegen olduğunu varsayalım. Esas köşegene göre şöyle bir simetri olması lazım. Burası mesela A1-2 olsun. Şurada A1-1'imiz var. Burası A1-2, şurası A2-1.
+
+33
+00:14:38,802 --> 00:14:49,182
+Birbirine eşit olmaları gerekiyor. Ya da şurada işte bir yerde yazalım. An1, şurada A1N. Bunlar birbirine eşit olması lazım. Onu da daire içine alalım.
+
+34
+00:14:50,388 --> 00:15:03,668
+Oraya yıldız yaptık. Dolayısıyla esas köşegene göre elemanlar birbirine simetrik olarak arada ayna varmış gibi esas köşegen üzerine birbirine eşit olması gerekiyor. Bu şekildeki matrise bir simetrik matris diyoruz arkadaşlar.
+
+35
+00:15:09,072 --> 00:15:37,052
+Aii'nin transpozu kendisinin eksilisine eşitse, biz bu maddese tersimetrik diyeceğiz. Tersimetrikle de yine bazı sonuçlar çıkarabiliriz. Tersimetrikse, özel olarak Aii'ler eşittir, eksi Aii olması lazım. Dolayısıyla burada bir tarafa toplarsak ifadeleri, iki tane Aii, sol tarafa atmış olduğumuzu varsayalım, sıfır olması lazım. Buradan da neyi anlıyoruz? Aii'ler, yani aynı ilgisli elemanlar.
+
+36
+00:15:37,072 --> 00:15:53,552
+sıfır olmak zorunda. O zaman tersimetrik bir matrisde esas köşegen üzerindeki elemanlar hep sıfır olmak zorunda. Peki diğerleri, A, J, I'ler de, A, I, J'ler de eşittir. Şöyle diyelim, I farklı J için, eksi A, J, I olması lazım.
+
+37
+00:15:53,940 --> 00:16:06,480
+Simetrik durumdakinde elemanların eksilisine eşit olması lazım. Yani ters simetriklenmesinin sebebi de o ayna var arada yine, fakat aynada gördüğümüz elemanın eksi işaretlisi olacak.
+
+38
+00:16:09,748 --> 00:16:36,028
+Bakalım, simetrik ve ters simetrik matris örneklerimiz de olacak burada. Evet, şuradaki örneklere bakalım. A matrisine bakalım mesela. Esas köşegen bizi ilgilendirmiyordu. Esas köşegen üzerindeki elemanlar transpozisyonla yine sabit kalıyorlardı. Eksi 3, yine eksi 3. Şurada 5 var. Hangisi bu? A1, 3. Şurada A3, 1 var. Evet, yine 5 var. Birbirine eşit oldular.
+
+39
+00:16:36,916 --> 00:16:46,816
+Ve en son ne res kaldı? Şurası farklı bir kalem rengi kullanalım. 7, burası A23, A32'ye eşit olmuş oldu. Karşılık.
+
+40
+00:16:47,916 --> 00:16:53,316
+B matrisi, tersimetrik bir matris. Bir kere...
+
+41
+00:16:53,344 --> 00:17:04,243
+Köşegen elemanları sıfır. Neden? A, i, i, eksi, a, i olacağı için, tersimetrik olabilmesi için köşegen elemanlarının sıfır olması tanımın bir gerekli, tanımın zorunluğu kuluyor.
+
+42
+00:17:04,624 --> 00:17:14,824
+Diğer taraftan, a, 1, 2'de 3'ümüz var. Şurada eksi 3 var değil mi? Eksilisi var. Yani a, i, j, eşittir, eksi, a, j, i olmuş oluyor.
+
+43
+00:17:14,824 --> 00:17:19,462
+i farklı, j için. Şuraya bakıyorum.
+
+44
+00:17:22,290 --> 00:17:32,411
+Eksi 4, A1 3, A3 girin 4. Ondan sonra, A2 3'ün, A2 3'ün 5,
+
+45
+00:17:33,428 --> 00:17:47,528
+A3 için eksikleş. Dolayısıyla ters simetri özelliği sağlanıyor. Esas köşegene göre üstteki elemanlar alttakilerle işaret bakımında birbirinin zıttılar. O yüzden ters simetrik bir matris.
+
+46
+00:17:47,968 --> 00:17:58,468
+C matrisi hakkında ne söyleriz arkadaşlar? C matrisi simetrik midir, ters simetrik midir? Yoksa kendi halinde bir matris midir? Ne dersiniz?
+
+47
+00:18:01,490 --> 00:18:11,612
+Karesel değildir [öğrenci]. Teşekkür ederim [öğrenci]. Cevabın doğru. Çünkü biz şu ana kadar geçen hafta başladığımız bazı özel karesel matrisler diye başlığımızı atmıştır.
+
+48
+00:18:11,851 --> 00:18:29,490
+Karesel matrisler üzerinde biz işte bilim matris, ondan sonra skaler matris, ortogonal matris, aydan potent matris, ne potent matris, periyodik matris, involüt matris, köşegen matris, simetrik matris, tersimetrik matris. Bunlar hep karesel matris.
+
+49
+00:18:29,490 --> 00:18:36,830
+matrisel olmak zorunda. C matrisi karesel bir matris değil. Dolayısıyla bu matrisin simetrisinden ya da ters simetrisinden söz edemeyiz.
+
+50
+00:18:37,172 --> 00:18:37,872
+Sevgili arkadaşlar.
+
+51
+00:18:39,412 --> 00:18:44,672
+Evet, [öğrenci] de katılmış. [öğrenci] da demiş ki kendi halinde. Öyle bir tanım vermedik.
+
+52
+00:18:46,612 --> 00:18:49,310
+Ama herhalde beni teyit etti [öğrenci].
+
+53
+00:18:50,971 --> 00:18:54,951
+Burada aşağıda açıklamaları yapmışız. Onları siz okursunuz zaten.
+
+54
+00:18:55,152 --> 00:18:56,112
+Ortogonal matris.
+
+55
+00:18:56,818 --> 00:19:04,638
+Ortogonal matris nedir arkadaşlar? Tersi, transkozuna eşit olan matrise biz ortogonal matris deriz. Bir anlamda...
+
+56
+00:19:04,640 --> 00:19:32,420
+Şöyle de tanımlayabiliriz. A'nın transpozunu A ile çarptığında ya da A'yı A'nın transpozuyla çarptığında bana birim matrisi veriyorsa ki bu da ne demek? Buradan da gerek ve yeter koşulu A'nın transpozu eşitir A'nın tersi veya A'nın tersinin transpozunun tersi eşitir A ise bu ikisinden biri sağlanıyorsa bu durumda A matrisine biz ortogonal matris diyoruz.
+
+57
+00:19:32,640 --> 00:19:59,799
+İşte bilgiyi bir yerden bir yere aktarırken bizim çarptığımız o pareti çekme, herhalde bu grupta bana soru sorulmuştu. Hocam nerede kullanacağız şeklinde. Karşı tarafın çarptığı o, geçen derste bahsetmiştim, matris aslında ilk matrisin ortogonali. Yani daha doğrusu satırları ortogonal, karşılıklı satırları çarptığımızda sıfır olması gerekiyor. Ortogonal matrisin tanımı da bu arkadaşlar.
+
+58
+00:20:00,000 --> 00:20:23,319
+Peki, ortogonal matris örneği var mı? Evet, var. Yine sanırım bu derste hocam demişti ki, arkadaşınız, biz sadece real sayılarını mı girdi olarak alacağız? Logaritmik fonksiyon falan almayacak mıyız? Burada trigonometrik fonksiyon olarak aldık. A matrisinin girdilerini. 2x2 tipinde bir matris. A matrisi, karesel bir matris. Dolayısıyla tersi olabilir, olmaya da bilir. Bakalım.
+
+59
+00:20:23,923 --> 00:20:35,163
+Tersi transpozuna eşit mi? A'nın transpozunu şuraya yazalım. A'nın transpozu eşittir. Ne yaptık? Satırları sütun ya da simetrik olarak sütunları satır yaptık.
+
+60
+00:20:36,276 --> 00:21:04,276
+İlk sütunumuzu yazdık. İkinci sütunumuz, sinüs, eksi sinüs teta, kosünüs teta. Şimdi çarpalım bakın. Bir taraftan çarpmamız yeterli arkadaşlar. Herhangi bir taraftan çarpmamız yeterli. A çarpı A'nın transpozu. A'nın transpozu çarpı A'da diyebiliriz. Hiç önemli değil. Sonuç ne olacak? Sonuç yine karesel bir matris olacak. Biraz ince bir uç alalım. Çok büyük görünüyor. Şöyle maviyi oradan seçelim. Ne yapmam lazım? Birinci yi...
+
+61
+00:21:04,276 --> 00:21:14,174
+Girdiği şuraya C11 diyelim. Şurası C12, sonra C21'im olacak ve C22 girdilerim olacak. Buraya sığdırmaya çalışalım.
+
+62
+00:21:14,174 --> 00:21:26,955
+A'nın birinci satırını, A'nın transpozunun birinci sütunuyla çarpmam lazım. Orada ne geldi? Kosünüs kare tete artı sinüs.
+
+63
+00:21:27,296 --> 00:21:53,296
+Karekete geldi değil mi? Bu da bir arkadaşlar, hemfikirizm o konuda. Trigonometrik özdeşliklerden bir yarı çapığı bir olan bilim çember üzerinde sinüs ve kosünüs eksenlerinin, karelerini toplamış size hipotenüsü verecek pisagor teoreminin bir sonucu. Sonra ne yapalım? C1-2'ye hesaplayalım. Birinci satırı, A'nın birinci satırını, A'nın transpozunun birinci satırını ile çarptık. Eksi...
+
+64
+00:21:53,714 --> 00:21:59,214
+Kosünüs teta, sinüs teta artı, sinüs teta kosünüs teta.
+
+65
+00:22:00,515 --> 00:22:09,576
+Burada sırayı değiştirirseniz de çarpımların real sayılar, sonuçta kosünüs sinüs fonksiyonlarının değeri bir real sayı, real sayılarda değişme özelliği var.
+
+66
+00:22:09,654 --> 00:22:12,096
+O yüzden sıralarının bir önemi yok burası için.
+
+67
+00:22:12,434 --> 00:22:19,056
+İkinci satırı stundanla çarptığımızda C2-1 için ikinci satırı birinci stundanla çarpmam lazım.
+
+68
+00:22:21,586 --> 00:22:39,086
+Sin üst teta, kosün üst teta artı, kosün üst teta, sin üst teta oldu. Sonra ikinci satırı, ikinci tutumla çarptım sıralı olarak. Ne oldu? Sin kare teta, sin kare teta artı, kos kare teta.
+
+69
+00:22:39,586 --> 00:22:46,248
+Şöyle farklı bir kalem rengiyle bunların karşılıklarını altına yazalım. Bir kere şurası, bir.
+
+70
+00:22:46,996 --> 00:22:53,355
+Şurası birbirine zıt işaretçisi 0. Aynı şekilde şurası 0 ve şurası.
+
+71
+00:22:53,920 --> 00:23:13,779
+Sonuç itibariyle, A çarpı A'nın transpozu, 2 çarpı 2 tipinde bir birim matrisi eşit olmuş, şuraya I2 diyelim. O zaman, tersten A transpoz A'yı yapmama gerek yok. Birim matris için bir tanesinin sağlanması yeterli oluyordu.
+
+72
+00:23:14,339 --> 00:23:20,038
+Dolayısıyla, ne deriz? A'nın tersi transpozuna eşit. Yani,
+
+73
+00:23:20,606 --> 00:23:32,188
+A transpoz eşittir, A üzeri eksi bir ve tersine aynı şekilde bunlar birbirini gerektiren şeyler A eşittir, A'nın transpozunun tersi olmuş olur.
+
+74
+00:23:32,826 --> 00:23:38,946
+Çünkü biri diğerinin transpozu ise, pardon tersi ise, diğeri birinin tersi olacaktır.
+
+75
+00:23:39,467 --> 00:23:42,826
+Arkadaşlar, var mı sorularınız? Takip edebiliyor musunuz?
+
+76
+00:23:45,971 --> 00:23:48,211
+Devam edelim hızlıca çünkü konularımız çok.
+
+77
+00:23:50,516 --> 00:24:17,516
+Kompleks matrisler, bu özel matrislerin son konusu olacak. Esasında burada simetrik matris olmayı kompleks matrislere taşıyacağız. Bir de ortogonal matris olmayı, A'nın transpozunun, A'nın tersine eşit olması. Bu iki kavramı biz kompleks bir dili matrislere taşıyacağız. Bunlar tabii farklı ifade edilecek kompleks sayı olunca artık eşleniklikten söz edebiliriz.
+
+78
+00:24:18,516 --> 00:24:27,576
+Söz edebiliriz. Dolayısıyla kompleks bir matrisin konjüge transpozu, eğer kendisine eşiyse, ona hermitiyen matris diyeceğiz.
+
+79
+00:24:27,576 --> 00:24:28,715
+Formation matrix.
+
+80
+00:24:32,980 --> 00:24:52,359
+Kompleks Transpozu tersine eşitse biz buna da Unitary matris diyeceğiz. Yani simetrik matrisi Hermitia matrisine eşleştireceğiz. Ortogonar matrisi de Unitary matrisine eşleştireceğiz sevgili arkadaşlar. Hadi yapalım bunları da ve bu dersi geçen haftanın dersinin bitirmiş olup yeni dersimize başlayalım.
+
+81
+00:24:52,768 --> 00:25:17,886
+A matrisi yine karesel, burada bazı tanımlamaları yapacağız, o yüzden A'nın karesel olmasına gerek yok. Transpoz almada, eşlenik almada karesel olmasına gerek yok. A'nın elemanları kompleks sayılar. Yani şöyle yazabiliriz. A eşittir, A, I, J'lerden oluşuyor. M by M bir matris ve A, I, J nerede kompleks sayılar.
+
+82
+00:25:20,180 --> 00:25:21,259
+Bir kompleks sayı.
+
+83
+00:25:21,339 --> 00:25:25,638
+Tabii real sayıların kompleks sayıların içinde olduğunu bilmemiz lazım.
+
+84
+00:25:25,759 --> 00:25:39,180
+Real sayılar kompleks sayıların içinde, rasyonel sayılar da real sayıların içinde, tam sayılar rasyonel sayıların içinde, tam sayıları pozitif ve negatif olarak...
+
+85
+00:25:39,892 --> 00:25:51,510
+Tasnif edebiliriz. Doğal sayıları da tam sayıların içinde. Tabii real sayıları kendi içinde rasyonel, irrasyonel olarak, yani şuraya Q birleşim I olarak alabiliriz.
+
+86
+00:25:52,031 --> 00:26:01,810
+Şeklinde kompleks sayılar da kuaternionların içinde, kuaternionlar da oktonyonların içinde. Bu şekilde gidiyor arkadaşlar.
+
+87
+00:26:02,270 --> 00:26:07,230
+Oktonyon da bir Clifford ceviri. Size bütün sayı sistemlerini listelemiş oluyor.
+
+88
+00:26:10,804 --> 00:26:33,804
+Bir kompleks sayıyı biz real kısım ve imajiner kısım olarak ifade ediyorduk. Dolayısıyla bir kompleks sayının eşleniği kavramı kompleks kısmı, yani imajiner kısmı negatif işaretini almak demek. Çünkü real kısmın ne derler? Konjügesi, yani eşleniği kendisidir. O yüzden kompleks kısmı negatif işaretini almak.
+
+89
+00:26:37,971 --> 00:26:47,111
+Özelliği bu şekilde. Tabii farklı yerlerde eşlenik kavramı farklı olarak tanımlanır. Biz kompleks sayılardaki eşleniklik tanımını verdik.
+
+90
+00:26:48,242 --> 00:27:00,222
+Bir matrisi, kompleks girdili bir matrisin bütün girdilerinin, bütün bileşenlerinin, entry'lerinin eşleniğini alarak elde ettiğimiz matrisi biz A bar ile gösteririz.
+
+91
+00:27:00,282 --> 00:27:06,383
+A üzeri düz çizgiyle gösteririz ki buna da A matrisinin eşleniğindedir arkadaşlar.
+
+92
+00:27:06,603 --> 00:27:08,742
+Eşlenik alınca matrisin tipi değişmez.
+
+93
+00:27:08,863 --> 00:27:15,002
+Sadece girdilerinin, biz imajiner kısımlarını negatif ile çarptık, eksi ile çarptık.
+
+94
+00:27:16,242 --> 00:27:18,843
+A yani A var da yine
+
+95
+00:27:19,380 --> 00:27:46,259
+Ne olacaktır? A, i, j barlardan oluşacak. Öyle ki bu da yine m çarpı n tipinde. Başta yazmıştım bunu, m çarpı n tipindeydi. Dolayısıyla a matrisinin girdilerini ben konjugelerini aldığımda yine m çarpı n tipinde fakat a'dan farklı bir matris ama oradan a'ya geçebilirim. Bir daha eşlenik alırsam eşleniğin, eşleniği transpozda olduğu gibi z'nin eşleniğinin, eşleniği z'nin kendisidir.
+
+96
+00:27:46,816 --> 00:27:53,415
+Transpoz da olduğu gibi, transpozisyonda eşleniklikte mertebesi 2 olan bir işlem.
+
+97
+00:27:54,415 --> 00:27:56,455
+Eşlenik alma bir işlem sonuçları.
+
+98
+00:27:57,276 --> 00:27:58,056
+Evet arkadaşlar.
+
+99
+00:28:01,056 --> 00:28:02,576
+Şimdi yeni bir tanım daha vereceğiz.
+
+100
+00:28:02,915 --> 00:28:06,256
+Önce konjügesini aldık, transpozunu da alacağız.
+
+101
+00:28:06,256 --> 00:28:11,211
+Bir kompleks matrisin, bir kompleks matrisin,
+
+102
+00:28:11,250 --> 00:28:16,250
+Yine burada karesel olmasına gerek yok. Bir kompleks matrisin...
+
+103
+00:28:17,106 --> 00:28:31,528
+Elemandan eşleniğini alıp transpozunu almak, yani iki işlemi peş peşe yapmak. İlk işlemlerin sırası önemli değil. Transpozisyonla eşleniği alabilirsiniz. Bunları işte TVC ile gösterebiliriz ya da CVT ile gösterebiliriz.
+
+104
+00:28:31,528 --> 00:28:40,490
+Önce transpozisyon aldığınız sonra eşlenik aldığınız ya da önce eşlenik aldığınız sonra transpozisyon aldığınız birbirine eşit olacak sonuçta. Yani şöyle diyelim A üzeri.
+
+105
+00:28:40,756 --> 00:28:49,836
+tc diyelim, eşittir, a üzeri ct. Bu şekilde bir notasyon kullandım ama biz bu ikisini kombine edeceğiz, h ile göstereceğiz arkadaşlar.
+
+106
+00:28:50,276 --> 00:28:51,796
+a üzeri h görürseniz,
+
+107
+00:28:52,307 --> 00:29:20,228
+Eşlenik transpoz ya da transpoz eşlenik anlamamız gerekiyor. A matrisinin eşlenik transpozunu biz A üzeri H ile gösteriyoruz. Şu ana kadar tanımlama yaptık, kompleks sayıları dair. Eşlenik kavramını tanımladık, sonra transposyonla onu birleştirdiğimizde bir notasyon atadık ona A üzeri H olarak gösterdik. Yani şu karmaşadan kurtulmak için, önce eşlenik gemi albundan kurtulmak için doğrudan biz buna H dedik.
+
+108
+00:29:20,307 --> 00:29:33,928
+A üzeri, Aş dedik, şuraya kalem kayboldu, şuraya A üzeri, Aş demek, demek ki iki tane operasyona maruz kalmış bir matris, kompleks girdili bir matris.
+
+109
+00:29:33,928 --> 00:29:41,346
+Tabii kompleks girdili diyoruz, bazı girdileri real sayı olabilir, sonuçta her real sayı bir kompleks sayıdır.
+
+110
+00:29:41,606 --> 00:29:47,867
+En az bir tane girdisinin kompleks olması o matrise kompleks girdili dememiz için yeterli sebep.
+
+111
+00:29:50,548 --> 00:29:51,988
+Şimdi tanımımız geliyor.
+
+112
+00:29:53,307 --> 00:29:54,988
+Şurada neyi ifade ediyoruz?
+
+113
+00:29:55,867 --> 00:30:01,268
+Bir matrisin eşleniğinin transpozu, transpozunun eşleniğine eşittir.
+
+114
+00:30:01,847 --> 00:30:05,327
+Yani o CVT harflerinde gösterdiğim ifade.
+
+115
+00:30:05,667 --> 00:30:07,028
+Neden? Simetriden dolayı.
+
+116
+00:30:07,107 --> 00:30:12,667
+Önce eşlenik alıp, sonra transpoz almak ile, önce transpoz alıp, sonra eşlenik almak bize aynı şeyi verecek.
+
+117
+00:30:13,327 --> 00:30:14,067
+Sevgili arkadaşlar.
+
+118
+00:30:14,667 --> 00:30:17,028
+Var mı sorularınız? Varsa sorularınızı sorun.
+
+119
+00:30:19,954 --> 00:30:23,694
+Zaten sorunuz çok sorunuz olacağını düşünmüyorum. Tanımlamadılar.
+
+120
+00:30:26,954 --> 00:30:31,056
+Tanımımız geldi. Hermitiyen matris tanımı.
+
+121
+00:30:32,755 --> 00:30:36,076
+Bazı kitaplar notasyon olarak da şunu diyelim arkadaşlar.
+
+122
+00:30:38,214 --> 00:30:39,914
+A'nın...
+
+123
+00:30:40,468 --> 00:30:48,448
+Konjüge transpozunu A üzeri star ile gösteriyorlar, yıldızla gösteriyorlar. Bunlar hermityen matris denilecek birazdan.
+
+124
+00:30:50,067 --> 00:31:05,028
+Ve eğer real sayıysa, bir matrisin girdileri real sayıysa, A üzeri H, A üzeri transpoza eşit olacak. Neden? Çünkü real sayılarda eşlenip almanın bir anlamı yok. Eşleniği kendisi her birine alın.
+
+125
+00:31:05,202 --> 00:31:19,384
+Dolayısıyla haş yazmamıza gerek yok. Orada doğrudan transpos yazmak yeterli. Burada bir örneğimiz var. Hermitian matris tanımını vermeden önce. A matrisi 2x3 tipinde bir kompleks matris sevgili arkadaşlar.
+
+126
+00:31:20,948 --> 00:31:27,407
+Konjüge transpozunu elde etmek istediğimizde, istersek önce elemanların konjugelerini alacağız.
+
+127
+00:31:27,407 --> 00:31:34,867
+Yani şuraya eksi yazdım, şuraya artı yazdım, artı yazdım, eksi yazdım, artı yazdım, eksi geldi başına.
+
+128
+00:31:35,188 --> 00:31:41,567
+Ne olmuş oldu? Aslında a üzeri c'yi hesaplamış oldum. Bir de bunu transpozunu hesaplarsam, a üzeri h'yı hesaplamış olacağım.
+
+129
+00:31:41,667 --> 00:31:47,268
+Onları burada yaptık. a üzeri h dediğimiz şey, transpos aldık şöyle, dikkat ederseniz.
+
+130
+00:31:47,708 --> 00:31:48,728
+Birinci satırı.
+
+131
+00:31:48,948 --> 00:32:05,107
+Birinci sütuna yazdık, fakat eşleniklerini aldık. Yani aradaki işaret, eksi, artı, artı olmuş oldu. Artı, eksi, eksiyle, eksi, artı, artı olmuş oldu. Kompleks sayını ne yaptık? Eşleniklerini aldık. A üzeri, haşı elde etmiş olduk.
+
+132
+00:32:05,107 --> 00:32:14,107
+Eğer karesel bir kompleks matrisde, şu ana kadar verdiğimiz tanımlar herhangi bir matris için tanımlanabilir, verilebilir. Yani karesel olmayan bir matrisin,
+
+133
+00:32:14,462 --> 00:32:30,542
+Bir de bu hermisyen olmuş, hermitiyen olması lazım. Benim notlarım İngilizceydi, bir arkadaşım sağolsun kullanmak istedi, o da Türkçe'ye bazı kısımlarını ben çevireyim dedi.
+
+134
+00:32:31,742 --> 00:32:40,182
+Burada bazı, yani göz hızlı bir şekilde yaptığı için gözden kaçan şeyler olabilir. Bu hermitiyen olacak arkadaşlar. Onu ben kodu üzerinden düzelteyim.
+
+135
+00:32:41,682 --> 00:33:08,682
+A karesel bir matris. Karesel bir matrisin eğer konjüge transpozu kendisine eşitse, biz bu matrise Hermitiyen matris diyoruz. Hermitten geliyor. Hermit bir matematikçi. Hermitten geliyor bu. Hermitiyen matris diyeceğiz ki bu tarz matrisler Quantum Information'da ya da Quantum Communication'da
+
+136
+00:33:11,220 --> 00:33:12,059
+Kullanılıyor.
+
+137
+00:33:15,119 --> 00:33:18,019
+Özel dört tane matris var.
+
+138
+00:33:19,079 --> 00:33:21,099
+Hatta üç tane matris var.
+
+139
+00:33:21,880 --> 00:33:23,700
+Cat ve Bra hatalarını bize bulunuyorlar.
+
+140
+00:33:23,799 --> 00:33:26,359
+İki çarpı iki tipinde Pauli matrisleri.
+
+141
+00:33:26,700 --> 00:33:28,339
+Pauli matrisleri diye google'layın.
+
+142
+00:33:28,420 --> 00:33:30,180
+Sizler elektrik mühendisler aramızda.
+
+143
+00:33:30,640 --> 00:33:31,779
+Elektronik haberleşme.
+
+144
+00:33:32,140 --> 00:33:33,119
+Pauli matrisleri.
+
+145
+00:33:35,858 --> 00:33:49,798
+2 çarpı 2 tipinde kompleks girdiğini matrisler, bazda v bir bir bir tanesi z matrisi, faz hatasını kontrol eden matris, kompleks girdiği bir matris ve bit ve faz hatasının çarpımı ile x ve y'nin çarpımı ile elde ediliyor.
+
+146
+00:33:49,798 --> 00:33:56,798
+Ya da tam tersi y çarpı z eşit, pardon x çarpı y, z'yi eşit, o zaman y imajiner bir...
+
+147
+00:33:57,394 --> 00:34:11,635
+Kompleks bir matris olacak. Neyse, Hermitian matrislerin, o şeyde, Quantum Information Communication'da kullanım alanı var sevgili arkadaşlar. Demek ki, konjüge transpolu kendisine eşit olan matrise biz Hermitian matris diyeceğiz.
+
+148
+00:34:11,635 --> 00:34:22,195
+Bazı sonuçlar, simetrik matrislerden çıkardığımız bazı sonuçları buradan da çıkarabiliriz. Hermitian bir matris de özel olarak
+
+149
+00:34:23,155 --> 00:34:41,215
+A, i, i eşittir, A, i, i eşlenik olacak arkadaşlar. Dolayısıyla köşegen üzerindeki elemanlar real olmak zorunda. O zaman A, i, i ile eleman re olacak. Neden? Eşleniğinin kendisine eşit olması için real olması lazım. Bu bir kere bir şartımız.
+
+150
+00:34:41,215 --> 00:34:50,335
+Ve i, j'den farklı iken de A, i, j, A, i, i'nin neyine eşit olması lazım? Konjügesin bir şartımız.
+
+151
+00:34:51,699 --> 00:34:56,300
+Yani doğrudan tanımdan bizim çıkardığımız bir sonuç sevgili arkadaşlar.
+
+152
+00:34:57,018 --> 00:35:07,018
+Eğer A'nın konjüge transpozu eksilisine eşitse ki bu real girdiğin matrislerdeki ters simetrik matrise denk geliyor.
+
+153
+00:35:07,018 --> 00:35:11,840
+Az önce verdiğimiz tanıma göre. Buna da ters hermitken diyoruz arkadaşlar.
+
+154
+00:35:15,668 --> 00:35:34,268
+Hermitiyen matrislerde, yani ne olması lazım? Köşegen üzerindeki elemanların sıfır olması lazım. Antisimetriklerde olduğu gibi. Neden? Eksi A, İ, İ eşittir. A, İ, İ eşeniye eşit olacak. Dolayısıyla, hatta,
+
+155
+00:35:39,507 --> 00:35:56,086
+İmajiner olacak, çok pardon. İmajiner olması lazım. Pür imajiner olması lazım. Evet. Esas köşegen üzerindeki elemanlar sıfırda sağlar bunu. Pür imajiner olması lazım. Pür imajiner olunca da bu sağlanır. Yani mesela i'nin eşleniğini aldınız.
+
+156
+00:35:56,628 --> 00:36:09,288
+Eksi i olacak. Eksi i. Bir daha eksi ile çarptınız. Yine i'ye karşılık geldi. Dolayısıyla eğer i'nin katları olunca, yani bi'ler olunca, esas köşegen üzerinden koşul sağlanır.
+
+157
+00:36:10,507 --> 00:36:18,806
+Biraz antrenman yapmamız lazım. Bizim kompleks birbiri matrislerle ilgili çalışırken. Örnekler karalayın biraz defterinizi.
+
+158
+00:36:21,012 --> 00:36:36,931
+Evet, ne diyor? Burada açıklama geldi. Eğer bir matris antihermitiyense, yani ters hermitiyense, esas köşegen üzerindeki elemanlar ya sadece sıfırlardan oluşur, ya da sadece imajiner kısımdan oluşur. Özelliğinden dolu.
+
+159
+00:36:36,931 --> 00:36:43,992
+Yani tamamen şundan dolu. Aii eşittir, eksi Aii transpoz.
+
+160
+00:36:45,588 --> 00:36:53,788
+Pardon, eşlenik özelliğinden dolayı. Esas köşegen üzerindeki elemanlar ya sıfır ya da imajinal, pür imajinaldir.
+
+161
+00:36:54,996 --> 00:37:14,275
+Yeni bir tanımımız, bu kompleks matrislere dair son tanımımız, uniter ya da uniter matris tanımı. Yine karesel bir kompleks matrisimiz var. Bu da ortogonal matrisin analog tanımı, kompleks girdili matrislerdeki paralel tanımı diyebiliriz.
+
+162
+00:37:15,887 --> 00:37:36,608
+A'nın konjüge transpozunu çarpma her biri matris oluyorsa, diğer bir ifadeyle, A üzeri H eşektir A üzeri eksi bir, ya da V'ya, şöyle V'ya diyelim, V'ya, A üzeri H'ın inverse'u eşektir A oluyorsa.
+
+163
+00:37:37,188 --> 00:37:41,447
+Bu şekildeki matrise biz, uniter matris diyeceğiz sevgili arkadaşlar.
+
+164
+00:37:42,228 --> 00:37:43,148
+Örneklerimiz var.
+
+165
+00:37:44,436 --> 00:38:09,235
+A ve B matrisleri verilmiş. Matrisleri düşünelim demiş. Hadi düşünmeye başlayalım. Ne yapalım? Esas köşegen üzerindeki elemanlar real sayı bir kere. Ve esas köşegene göre karşılıklı elemanlara bakıyorum. Mesela 1-2'yi var. Burada onun eşleniği var. 1-2'yi.
+
+166
+00:38:09,940 --> 00:38:21,599
+4 artı 7'i var, 4 eksi 7'i, şurada 2'i var, eksi 2'i. Dolayısıyla esas köşegene göre elemanlar konjüge simetrik diyelim.
+
+167
+00:38:21,599 --> 00:38:32,559
+Yani A, İ, J eşit A, J, İ transpoz. Bir daha transpoz alırsanız şu da olur. Birbirini gerektirir bunlar. A, İ, J.
+
+168
+00:38:34,003 --> 00:38:49,384
+Transpozla konjugasyonu karıştırıyorum ben işaret olarak. Eşlenik aldım. Bu da ne olacak? A, J, I olacak. Bu simetrik durumdu. Ters simetrikti arkadaşlar. Bakalım. İkinci maddesimiz de yine.
+
+169
+00:38:49,920 --> 00:39:12,400
+Simetrik bir matris. Esas köşegen üzerindeki bütün girdilerimiz R ve esas köşegene göre bir konjüge simetri var. Yani eksi i, i. Ondan sonra eksi bir artı i. Burada eksilisi, burada bir sıkıntı var, bu değil. Bu matris simetrik değil. Neden?
+
+170
+00:39:13,043 --> 00:39:27,103
+Şurada real kısmının şeyini almış, eksili işaretini almış. Bu eleman için sağlanıyor. Şurası için de aynı şekilde, şu iki eleman için sağlanıyor. Dolayısıyla B matrisi hermitiyen değil fakat A matrisi hermitiyen.
+
+171
+00:39:28,103 --> 00:39:40,603
+Hermitiyen değil, hermitiyen değil diyelim ona da. Hermitiyen değil. Şöyle bir ünden koyalım. A matrisi hermitiyen, B matrisi.
+
+172
+00:39:41,023 --> 00:40:00,000
+Her müthiyen değildir. Açıklamalar zaten burada. B maddisi ne peki? Üniter bir maddisi. Yani tabii onu yapmak için B'nin tersini bulup çarpmamız lazım. Tabii tersi ne? Eşlenik transpoz. Bunun eşlenik transpozunu aldığımızda...
+
+173
+00:40:00,000 --> 00:40:14,400
+çarptığınızda test edin arkadaşlar. Bunun bir matris olduğunu, 3x3 tipinde bir matrisse eşit olduğunu göreceksiniz. Yani B'nin konjüge transpozu, B'nin tersine eşit olayısıyla B bir üniter matrisidir.
+
+174
+00:40:15,795 --> 00:40:32,775
+İşlem yapmamız lazım burada biraz. Yani uzun uzun diye işlemleri yapmadık. Konjüge transpozunu almak zor değil. 3x3 tipinde bir matris. 1 bölü 2 ile çarpacağız her bilgiyi değil. O 1 bölü 2 dışarıda da durabilir. Önemli değil. Sonra içeride skaler çarpımı yaparsınız sevgili arkadaşlar. Var mı sorularınız?
+
+175
+00:40:34,414 --> 00:40:39,775
+Biraz hızlı gittik. Gitmemiz gerekiyordu. Çünkü bugün çok önemli bir konuya gireceğiz.
+
+176
+00:40:40,224 --> 00:40:41,643
+Sorular yok herhalde.
+
+177
+00:40:42,164 --> 00:40:42,784
+Vardır sorum.
+
+178
+00:40:43,043 --> 00:40:43,503
+Evet buyurun.
+
+179
+00:40:44,184 --> 00:40:47,603
+Hocam benim sorum geçen haftanın son dersiyle alakalı.
+
+180
+00:40:47,963 --> 00:40:48,264
+Evet.
+
+181
+00:40:48,483 --> 00:40:49,224
+Sorabilir miyim?
+
+182
+00:40:49,523 --> 00:40:49,764
+Evet.
+
+183
+00:40:50,324 --> 00:40:58,603
+Hocam, geçen hafta biz dersin sonunda en son gördüğümüz konu bir matrisin kuvveti ve polinomlar da matrisler.
+
+184
+00:40:58,603 --> 00:40:58,864
+Evet.
+
+185
+00:40:59,244 --> 00:41:04,623
+Bu mesela atıyorum 2x kare eksi 3x artı 5 gibi bir polinomun kökünün matrisi olması.
+
+186
+00:41:04,804 --> 00:41:07,844
+Ama bir matrisleri karasel matris olarak gördük.
+
+187
+00:41:07,922 --> 00:41:10,643
+Yani illa bir kök karasel matrisi olmak zorunda.
+
+188
+00:41:10,996 --> 00:41:13,255
+Yani 3'e 2'ya da 2'e 3 olamaz mı?
+
+189
+00:41:13,516 --> 00:41:27,135
+Şöyle, kuvvet kavramı işin içine girdiği için kuvvet kavramı, matrislerde kuvvet kavramı, dolayısıyla eğer karesel değilse, M çarpı N tipindeki bir matrisi ben kuvvetinden söz edemem.
+
+190
+00:41:27,135 --> 00:41:36,096
+Yani çünkü M çarpı N tipindeki her bir matrisi ben kendisiyle çarpamam. Şöyle diyelim, ama biz hadi bunu spesifik edelim. 2 çarpı 3 tipinde olsun değil mi?
+
+191
+00:41:36,436 --> 00:41:38,996
+2 çarpı 3 tipindeki bir matrisi kendisiyle çarpa...
+
+192
+00:41:38,996 --> 00:41:46,536
+bilir miyim? A çarp A tanımlı olmaz değil mi? Bu tanımlı olmadığı için o zaman onlar karesel matris olmak zorunda.
+
+193
+00:41:47,827 --> 00:41:49,208
+Aynen, teşekkür ederim.
+
+194
+00:41:49,228 --> 00:41:57,688
+Yani karesel bir matris polinomun kökü olabilir. Ki zaten o polinomları biz bu dersin sonunda Kaylee Hamilton teoremiyle eşleştireceğiz.
+
+195
+00:41:58,188 --> 00:42:07,728
+Karesel bir matrisin karakteristik polinomundan söz edeceğiz. O yüzden orada kullandığımız matrisler karesel matrisler olması gerekiyor.
+
+196
+00:42:07,728 --> 00:42:13,728
+Neden? Çünkü karesel olmayan bir matrisin kuvvetinden söz edemeyiz sevgili arkadaşlar. Özel durumlar olabilir.
+
+197
+00:42:14,996 --> 00:42:16,996
+Tamam. Var mı başka soru?
+
+198
+00:42:18,596 --> 00:42:23,996
+Şu paylaşımı durdurayım. Yeni sunumu koyalım buraya.
+
+199
+00:42:24,996 --> 00:42:29,996
+Evet. Biraz siyah etken göreceksiniz. Arkadaşlar.
+
+200
+00:42:31,996 --> 00:42:34,996
+Şuradan yeni sunumuzu açalım.
+
+201
+00:42:36,996 --> 00:42:38,996
+İlişkileri kaybetmeyelim.
+
+202
+00:42:44,244 --> 00:43:00,583
+Bu dersi pür dikkat dinlemeniz gerekiyor. Bundan sonra çokça kullanacağız burada göreceğimiz kavramları sevdiler arkadaşlar. Çokça kullanacağız. Matrisler üzerinde elementer, satır ve sütun işlemlerini tanımlayacağız.
+
+203
+00:43:08,112 --> 00:43:19,371
+Bu konuyu çok dikkatli dinlememiz gerekiyor sevgili arkadaşlar. Bir matrisin eşelon formu. Eşelon basamak anlamına geliyor. Dışarıda şimşekler çakıyor sanırım.
+
+204
+00:43:21,510 --> 00:43:33,452
+Ya da yukarıdaki komşumuz şeyler buluyor. Öğrenci işleri var üstümüzde. Yerlerde bir şeyler buluyor. Sessize geldim bilmiyorum. Evet.
+
+205
+00:43:34,420 --> 00:43:38,099
+Bir matrisin eşelon formu nedir onu vereceğiz.
+
+206
+00:43:38,099 --> 00:43:44,900
+Ve biz bu kavramı bize verilen bir lineer denklem sistemini çözmek için kullanacağız.
+
+207
+00:43:44,900 --> 00:43:49,858
+O 2-3 hafta sonra, önümüzdeki hafta determinant konusunu göreceğiz.
+
+208
+00:43:50,032 --> 00:44:13,271
+Adjoint yardımıyla bir matrisin tersi varsa onu bulmayı göreceğiz. Bu hafta yine vereceğimiz eşelon form yardımıyla karesel bir matrisin tersi varsa onun tersini bulacağız. Ne demişti geçen haftaki dersimizde? Tersi bulmak esasında kolay bir iş değil. M çarpı ne tipinde bir matris için işte M çarpı ne tane denklem çözmek gerekecek.
+
+209
+00:44:15,059 --> 00:44:25,380
+Bunun için bazı pratik yöntemlerimiz olduğunu söylemiştik. Arkadaşımızın sanırım mikrofonu açıklayacaksak, arkadaşımız mikrofonu kapatırsa memnun olacağız. Çünkü gürültü yapıyor.
+
+210
+00:44:27,251 --> 00:44:37,690
+Eşelon form yardımıyla, işte bu metotlardan ilki eşelon form yardımıyla bir karesel matrisin tersi varsa onu bulacağız. Bu dersin son konusu olacak bu haftaki dersimizin.
+
+211
+00:44:38,050 --> 00:44:45,251
+Ve biz bu eşelon formu bundan sonra sürekli kullanacağız. Önce tanımını iyi anlamamız gerekiyor. Biraz...
+
+212
+00:44:45,503 --> 00:44:58,543
+Nasıl diyeceğim? Biraz çaba sarf etmeniz lazım. Böyle hem öncelik oturmayabilir. Çünkü birkaç şeyi arada düşünmeniz gerekecek. Zor değil ama biraz ne derler? Odaklanmanız, dikkat geçinmeniz gerekiyor.
+
+213
+00:44:58,623 --> 00:45:05,322
+Biraz da küçültelim. Çok büyük görünüyor ekran sırası. Evet. Konu başlıkları olarak bir matrisin eşelon formu.
+
+214
+00:45:05,876 --> 00:45:20,396
+Eşelon forma getirmek için matrisler üzerinde tanımladığımız üç tane temel işlem var. Bunlara elementer, yani temel satır ya da sütun işlemleri yapacağımız işlemler biz hem satır için yapabileceğiz hem sütun için yapabileceğiz.
+
+215
+00:45:20,396 --> 00:45:29,356
+Fakat denklem sistemi çözerken sadece ve sadece ya da bir matrisin tersini bulurken sadece ve sadece satır işlemleri kullanacağız. Bunda bir sebebi var.
+
+216
+00:45:30,960 --> 00:45:36,159
+Bir matrisin tersini elementer satır işlemleri yardımıyla bulacağız sevgili arkadaşlar.
+
+217
+00:45:36,500 --> 00:45:41,780
+Peki, bir matrisin eşelon formu nedir? Ya da basamak formu nedir?
+
+218
+00:45:42,780 --> 00:45:44,300
+Bunun için bazı koşullarımız var.
+
+219
+00:45:44,980 --> 00:45:51,739
+Dört tane koşul, onlar sağlanırsa satırca indirgenmiş eşelon formdadır diyeceğiz.
+
+220
+00:45:51,739 --> 00:45:55,699
+Buradaki indirgenmiş kelimesinin anlamı var.
+
+221
+00:45:58,704 --> 00:46:08,764
+Eşelon form olarak göstereceğiz. Belki Türkçe'de biz bunu RR, EF ile göstereceğiz. Çünkü indirgen bir şey, yani şu Reduce, R harfi ikinci R, Reduce'e karşılık geliyor.
+
+222
+00:46:09,284 --> 00:46:19,804
+Row Eşelon form dediğimizde daha farklı bir şey var. Yani aslında Reduce Row Eşelon form, Row Eşelon formdan daha güçlü bir kavga.
+
+223
+00:46:19,804 --> 00:46:26,704
+Yani Row Eşelon forma getirdikten sonra biraz da işlem yapıp Reduce Row Eşelon forma getireceğiz. O yüzden önce...
+
+224
+00:46:26,704 --> 00:46:45,443
+En gelişkin tanımı vereceğiz. Sonra ondan biraz iskonto yapıp row eşelon formunu tanımı vereceğiz. Yani indirgenmiş kelimesi burada önemli. Satırca indirgenmiş eşelon form nedir? Onun tanımını verelim sevgili arkadaşlar. Bir kere.
+
+225
+00:46:46,068 --> 00:47:12,987
+Birinci maddemiz, eğer matrisin içinde, herhangi bir matris, ne çarpı ne tipinde bize bir matris verelim. Matrisin içinde, eğer bütün girdileri sıfır olan, yani bir tane all zero row varsa, bütün girdileri sıfır olan bir satır varsa, onun matrisin en altına taşıyacağız. A matrisi bize verildi, içinde bir yerde bir satır var, bütün girdileri sıfır ya da iki tane ya da neye tane neyse, onların hepsini matrisin en altına taşıyacağız.
+
+226
+00:47:14,068 --> 00:47:19,927
+Şöyle karesel bir ifade olarak ya da dikdörtgensel bir şekil olarak düşünelim, satırları olacak.
+
+227
+00:47:20,387 --> 00:47:26,367
+Biz bütün sıfır olan satırları, onları da şöyle turuncuyla aşağıya taşıyacağız arkadaşlar.
+
+228
+00:47:26,547 --> 00:47:30,347
+İçeride var bunlar, bunları alıp hepsini aşağıya taşıyacağız.
+
+229
+00:47:30,608 --> 00:47:31,628
+Bu birinci koşulumuz.
+
+230
+00:47:31,806 --> 00:47:37,608
+Yani bütün girdileri sıfır olan satırlar varsa, onları matrisin en altına taşıyoruz.
+
+231
+00:47:37,608 --> 00:47:40,347
+Bu işlemleri sonra tanımlayacağız.
+
+232
+00:47:40,487 --> 00:47:42,068
+Yani satırları yer değiştirme.
+
+233
+00:47:42,068 --> 00:47:46,867
+İşte üzerinde bisikallerle çarpma, ondan gelecek elementer satır işlemleri ya da tutun işlemleri.
+
+234
+00:47:47,148 --> 00:47:56,268
+Birinci maddemiz bu. Bütün girdileri sıfır olan satır varsa en aşağıya taşıyacağız. Bu bir. Tamam, bitmedi. Devam ediyoruz. Dört tane maddemiz var.
+
+235
+00:47:58,068 --> 00:48:09,688
+İkinci maddemiz sıfırdan farklı ilk satırın soldan ilk elemanı bir olması lazım. Değilse bile o hale getireceğiz. Getiremiyorsak o hale getirilebilen bir satırla değiştirip yapacağız.
+
+236
+00:48:10,068 --> 00:48:36,148
+Yani, satırımızın diyelim sıfırdan farklı ilk girdi. Yani matrisin diyelim ilk sütunu hep sıfır. İlk sütun. Ne yapacağız? Sıfırdan farklı, hatta ilk satırın ikinci girdisi de sıfır. Fakat ikinci satırın ilk girdisi bir diyelim, şurası iki. Şu bir olan satırı birinci satıra taşıyacağız. Çünkü sıfırdan farklı ilk girdi, her sıfırdan farklı satırın ilk girdisi bir olacak.
+
+237
+00:48:36,563 --> 00:48:54,643
+Evet, sıfırdan farklı her satırın sıfırdan farklı ilk girdisi 1 olacak arkadaşlar. Bu ilk girdi dediğim birinci entry'de yer almak zorunda değil. İkinci, üçüncü neyinci entry'de yer alabilir? Tamam, bu da ikinci madde ama bunları beraber düşünüyoruz.
+
+238
+00:49:03,347 --> 00:49:06,387
+Her satırın, demeyeyim de sıfırdan farklı her satırın.
+
+239
+00:49:12,947 --> 00:49:31,306
+ismi var. Biz buna leading term diyoruz. Yani Türkçesi işte baş terim. Başlıca terim diyebiliriz. Lider terim daha güzel olur. Lider terim. Lider terim. Lider terim diyebiliriz. Leading term. Ona özel bir isim var artık. Sonra
+
+240
+00:49:32,371 --> 00:49:46,351
+Sıfırdan farklı ilk girdileri aşağı taşıdık. Sıfırdan farklı iki satırımızın ilk girdisini bir şekilde bir yaptık. Satır yeri değiştirerek, bir satırı bir rasyonel sayıyla çarparak bütün satırın elemanlarını bir şekilde biri elde ettik.
+
+241
+00:49:47,431 --> 00:49:51,550
+Evet, basamağı bu şekilde oluşturacağız. Üçüncü madde bize basamak formunu veriyor.
+
+242
+00:50:00,000 --> 00:50:24,239
+Altında ve sağında yer alamayacak. Yani birebir altında yer almaz. Altında ve sağında. Arada ve bağlacı kullanıyorum. Yani diyelim birinci satırın ilk girdisi şurada bir bir. İkinci satırın sıfırdan farklı ilk girdisi şurada yer alamaz. Burası sıfır olmak zorunda. Hemen sağında bir yerde. Şunu uzatabiliriz. Şurada yer alabilir, şurada alabilir, şurada alabilir.
+
+243
+00:50:27,891 --> 00:50:42,891
+Hatta, evet bir, ne oldu? Üçüncü sütunda şurada bir sıfır var, önemli değil, fakat şurada bir bir var. Oldu şimdi, basamak formunu oluşturduk. Ne diyor? Her satırın sıfırdan farklı, her satırın sıfırdan farklı ilk girdisi bir.
+
+244
+00:50:43,603 --> 00:51:05,902
+Ondan sonra gelen satırın sıfırdan farklı ilk irtisi 1 ve kendisinden önce gelen satırın sağında yer alır. Sağında yer alır. Değil mi? Koşul sağlanıyor. Üçüncü satır için düşünelim. Yine kendisinden önceki sıfırdan farklı lider terimlerin sağında yer alır. Altında yer alamaz arkadaşlar. Eşelon form da bu şekilde oluşuyor. Basamak form.
+
+245
+00:51:07,702 --> 00:51:08,543
+Hocam?
+
+246
+00:51:09,083 --> 00:51:09,702
+Evet, buyurun.
+
+247
+00:51:10,579 --> 00:51:14,139
+Bu birim matrisi olmadı mı? Yani direkt birim matrisi mi oldu?
+
+248
+00:51:14,239 --> 00:51:22,719
+Güzel yakaladınız. Birim matris bu koşulların hepsini sağlar. Yani birim matris doğal olarak reduced row echelon formundadır.
+
+249
+00:51:22,838 --> 00:51:30,539
+Yani satırca indirgenmiş echelon formundadır. Ama herhangi M çarpı M tipinde bir matrisi biz bu forma getirebiliriz.
+
+250
+00:51:30,599 --> 00:51:34,898
+Birim matrisi olmak zorunda değil. Birim matris koşulu sağlayan özel bir durum.
+
+251
+00:51:35,699 --> 00:51:38,798
+Biri matris koşulu sağlayan sadece özel bir durum.
+
+252
+00:51:39,858 --> 00:51:40,079
+Evet.
+
+253
+00:51:41,500 --> 00:51:42,719
+Üçüncü maddemiz buydu.
+
+254
+00:51:43,219 --> 00:51:50,938
+Dördüncü maddemiz, lider terimin bulunduğu her sütunda, diyelim bir sütunda bir lider terim var.
+
+255
+00:51:51,039 --> 00:51:53,458
+Her sütunda lider terim bulunmak zorunda değil.
+
+256
+00:51:54,228 --> 00:52:17,628
+Bir lider terim varsa, o lider terim kendi sütununun sıfırdan farklı tek elemanıdır. Yani lider terimin üstünde ve altında kalan bütün girdiler sıfırdır. Evet, bu da bizim son koşulumuz. ABCD ile birlikte bir matris ABCD koşullarını sağlıyorsa, biz o matrise satırca indirgenmiş eşelon formundadır.
+
+257
+00:52:18,228 --> 00:52:46,228
+Ne yaptık? Sıfırdan farklı, o zero rule'ları, yani bütün girdileri sıfır olan satırları matrisin en altına taşıdık. Sonra sıfırdan farklı, zaten bütün satırlar, geriye kalanlar sıfırdan farklı satırlar oldu. Yani bir satırın en az bir tane girdisinin sıfırdan farklı olması, onun sıfırdan farklı satır olduğunu söyler bize. Burada bir A, işte bir, bir sıfırdan farklı olsun. Geriye kalan her şey sıfır olabilir. Bu satır artık sıfır.
+
+258
+00:52:46,228 --> 00:52:52,268
+En az bir tane entries sıfırdan farklı olan satır, satır olarak sıfırdan farklıdır diyeceğiz.
+
+259
+00:52:52,708 --> 00:52:57,588
+İkinci olarak ne dedik? Sıfırdan farklı her satırın ilk girdisi birdir.
+
+260
+00:52:57,947 --> 00:53:02,806
+Yani demek ki ondan önceki bütün terimlerin sıfır olması lazım. Onu da söylemiş oluyuz aslında örtük olarak.
+
+261
+00:53:03,407 --> 00:53:13,088
+Sıfırdan farklı ilk girdik kendisinden önce gelen satırın sıfırdan farklı ilk girdisinin, yani o birin altında ve sağında yer alıyor.
+
+262
+00:53:14,228 --> 00:53:17,847
+Çünkü önce geldiğine göre altında dememe gerek yok. Sağında yer al.
+
+263
+00:53:18,088 --> 00:53:27,228
+Sonra sıfırdan farklı ilk girdiğinin bulunduğu her bir sütunda, yani lider terimlerin yer aldığı sütunlar, lider terimler bulundukları sütunun...
+
+264
+00:53:28,210 --> 00:53:43,052
+Sıfırdan farklı tek elemanı olur. Öyle de ifade edebiliriz. Örnekler verdiğimizde biraz daha oturmaya başlayacak fakat bu tanımı da oturtmanız matris çarpımı gibi ilk görenler için söylüyorum hemen olmayacak.
+
+265
+00:53:43,471 --> 00:53:51,331
+Öğrenmek ısrar etmektir. Öğrenmek çaba sarf etmektir. Dolayısıyla biraz düşünmek. Kendi içinizde bunu biraz düşüneceksiniz.
+
+266
+00:53:51,331 --> 00:53:55,271
+İşte mutfağa çay içmeye, çay almaya giderken aklınızda bulunacak.
+
+267
+00:53:56,210 --> 00:54:02,188
+Gerek yok, düşüneceksiniz güzelimdir. Matematik böyle önemlidir düşünerek. Düşünmeyi öğretir esasında.
+
+268
+00:54:03,219 --> 00:54:29,219
+Basit bir tanım ama onu oturtmanız için, onun size ait olması için üzerine biraz çaba sarf etmeniz gerekiyor. Bilenler tabii dersi belki iki, üç kez alan vardır aramızda. Onlar biliyordur, aşina olmuşlardır belki ama yeni görenlerin üzerine biraz düşünmesi gerekir. Ben zor olduğu anlamda söylemiyorum. Alışık olduğunuz mantık kodlarından biraz farklı bir düşünüş gerektiriyor. Yani farklı mantık yolları açıyoruz esasında.
+
+269
+00:54:31,507 --> 00:54:43,327
+Satırca indirgenmiş eşelon formdaki matris, matris de baş elemanlar matrisin sol üst köşesinden, sol üstten sağ alta doğru bir basamak oluşturur.
+
+270
+00:54:43,387 --> 00:54:49,407
+Dikkat ederseniz, bunu bilinçli olarak yaptım. Basamaklar şey değil, uniform değil yani, eşit dağılmamış.
+
+271
+00:54:49,648 --> 00:54:55,907
+Birinci basamağı biraz uzatın, diyelim şurada iki tane sütun varsa, şurada bir bir var, şurada sıfır var, burada da yine sıfır olmak zorunda.
+
+272
+00:54:55,907 --> 00:54:59,507
+Niye? Çünkü buraya biri koymuş. Sonra şuraya biri koyduk. Şuralar hep sıfır oluyor.
+
+273
+00:54:59,507 --> 00:55:21,306
+Sonra ne oldu? Şuraya bir koydum. Hemen şuraya bir koyabilirim falan. Sonra bitti. Aşağısı hep sıfır artık. Şuralar hep sıfır artık. Madrisi bu formda düşünebiliriz arkadaşlar. Basamak formunu oluşturduk. Basamakların, yatay basamaklarının uzunlukları şey olmak zorunda değil arkadaşlar. Ne derler? Uniform olmak zorunda değil. Birleşik olmak zorunda.
+
+274
+00:55:22,387 --> 00:55:32,588
+Biraz geometri bu, biraz şekle dönüştürüle ifade etme. Yapılan şey bu. Aslında biz bunu matematiksel olarak ifade etmeye çalıştık. Bunu nasıl elde ederiz?
+
+275
+00:55:33,168 --> 00:55:43,867
+Şey bir, nasıl derler? Böyle formal bir tanım değil. Kısıtlamaları aslında. O forma gelmesi için mümkün bütün kısıtlamalar en az kelime ile sıralanmış.
+
+276
+00:55:43,867 --> 00:55:46,768
+Şurada chat kısmı kaybolmuş, onu tekrar açayım.
+
+277
+00:55:47,315 --> 00:55:57,034
+Arkadaşlar, burada 3 tane mesaj var. Bakalım çek, neden açılmıyorsun çek. Nereye gitti? O evet, din altında kalmış.
+
+278
+00:55:57,554 --> 00:56:07,175
+Hocam ABC sağlıyorsa öyle dedik, D'nin içi. Hayır. ABC'de sağlıyorsa indirgenmiş eşelon formundadır. Satürcı indirgenmiş eşelon formundadır.
+
+279
+00:56:07,175 --> 00:56:09,775
+Eğer biz D'yi atarsak şey olacak o.
+
+280
+00:56:10,132 --> 00:56:15,192
+Satırcı eşelon form olacak. O geliyor. [öğrenci] sormuş. [öğrenci] gelecek o.
+
+281
+00:56:17,652 --> 00:56:20,552
+Hemen sağ altında olmak zorunda değil. Sağında bir yer.
+
+282
+00:56:21,396 --> 00:56:43,076
+Sağında bir yerde, hemen sağ altında olmak zorunda değil, onu söylemedik. İşte bu biraz da aklıma dönüp bakmayı gerektiriyor. Biraz daha, biraz. Aa gerçekten böyle değil mi? Kesin yargılar var cümlelerde. Yani böyle istediğimiz gibi anlayabileceğiniz cümleler değil. Matematik öyledir zaten. İstediğiniz gibi anlamınıza imkan vermez. O dil, dünyanın neresine giderseniz girin, evrensel her yerde aynı.
+
+283
+00:56:44,532 --> 00:56:49,492
+[öğrenci] biraz daha düşünmen lazım üzerinde. Tabii açıklayacağız zaten. Bundan sonra sık sık.
+
+284
+00:56:50,492 --> 00:56:59,291
+Eğer sadece A, B, C koşulları sağlanıyorsa bu matrisse biz satırca eşelon formundadır diyeceğiz sevgili arkadaşlar.
+
+285
+00:56:59,472 --> 00:57:07,431
+Buna da ref olarak yazalım. Önceki neydi? Reduce row echelon form. Bu row echelon form.
+
+286
+00:57:07,632 --> 00:57:11,251
+Yani demek ki bu rüdüz kelimesi çok önemli.
+
+287
+00:57:13,427 --> 00:57:16,166
+Hemen şu altına yazın. Bu şunu kapsar.
+
+288
+00:57:16,768 --> 00:57:18,788
+Rol Echelon formu kapsar. Evet.
+
+289
+00:57:22,387 --> 00:57:33,208
+Bir matriste sıfır satır olmayabilir, olmak zorunda değil. Yoksa sıfır satır oluşturmak için çaba sarf etmeyin. Sıfır satır olmayabilir, olmak zorunda değil.
+
+290
+00:57:36,148 --> 00:57:48,088
+Kimin bir tablosu var, bir pipo resmi, ondan sonra altına da yazmış, bu bir pipo değildir. Siz ne anlıyorsunuz bu cümleden arkadaşlar?
+
+291
+00:57:52,244 --> 00:57:56,724
+Bir pipo resmi var, altında da bu bir pipo değildir diyor. Ne anlıyorsunuz?
+
+292
+00:58:01,235 --> 00:58:02,474
+Şöyle bir tablolar.
+
+293
+00:58:04,074 --> 00:58:05,114
+Tablo duvarda.
+
+294
+00:58:07,815 --> 00:58:10,215
+Ya da ben şöyle bir bardak yapayım, ne olacak?
+
+295
+00:58:10,894 --> 00:58:13,034
+Şöyle bir bardak yapalım, bu da benim resmim olsun.
+
+296
+00:58:13,434 --> 00:58:22,135
+Bu bir bardak değildim, gerçi olmadı da, yani bu unique olmadı, pipo, evet yani, pipo resmi olduğunu anlıyoruz, matematik böyle bir şey.
+
+297
+00:58:22,574 --> 00:58:26,074
+Pipo resmi, yani basit değil, aslında çıkarın.
+
+298
+00:58:26,739 --> 00:58:34,119
+Resimdeki şeyin pipo olmadığını değil, resimdeki şey pipo ama o pipo değil, kendisi değil, piponun resmi o.
+
+299
+00:58:34,119 --> 00:58:35,119
+Değil mi?
+
+300
+00:58:36,179 --> 00:58:37,163
+Evet.
+
+301
+00:58:44,402 --> 00:58:50,204
+Yani bu bir bardak değildir desem doğru olmuş olur. Bu bir bardak değildir. Bu bir bardak değildir.
+
+302
+00:58:54,931 --> 00:58:59,210
+Bize rasyonel düşünmeyi öğretiyor aslında. Yalan söylemiyor, hayır, yalan söylüyor olur mu?
+
+303
+00:59:01,210 --> 00:59:09,771
+Eşya, yani bir şeyin resmi kendisi midir? Kalem niye kalemdir? Yazabildiği için kalemdir. Değil mi?
+
+304
+00:59:11,210 --> 00:59:17,231
+Yazdığı için mi kalem, yoksa kalem olduğu için mi yazıyor? Bunlar tabii derin sorular.
+
+305
+00:59:18,643 --> 00:59:34,503
+Yani o söylediği şey matematiksel olarak doğru. Ama bir sözelci itiraz edebilir bunu. Ki zaten dünyayı derbat hale getiren sözelciler zaten. Aramızda olmadığı için rahat konuşuyorum. Devam edelim arkadaşlar.
+
+306
+00:59:39,059 --> 00:59:43,900
+Ne diyor? Benzer olarak A matrisi. Şu açıklamayı biz yapalım.
+
+307
+00:59:45,219 --> 00:59:51,179
+Biz satır eşelon form ve satırca indirgenmiş eşelon formdan bahsettik.
+
+308
+00:59:51,179 --> 01:00:00,000
+Aynı şekilde column reduce eşelon form ya da column...
+
+309
+01:00:00,000 --> 01:00:08,599
+Eşelon form tanımlanabilir. Yani aynı işlemleri biz konular içinde yapabiliriz. Satırlar için yaptık, sütunlar içinde yapabiliriz sevgili arkadaşlar.
+
+310
+01:00:08,838 --> 01:00:18,599
+Oldu mu? Biz satırlar için verdik ki satırlar için kullanacağız. Denklem sistemi çözerken, ters bulurken. Ama determinanta sütun işlemi de yapmamız gerekebilir.
+
+311
+01:00:18,719 --> 01:00:28,000
+Satır sütunu konfeyne edebiliriz determinant hesabında. O sonucu değiştirmiyor. Dolayısıyla aynı işlemleri, aynı zaten ki biz şöyle bir...
+
+312
+01:00:28,000 --> 01:00:28,579
+Verir ki, ha.
+
+313
+01:00:29,811 --> 01:00:56,811
+Sadece satıra göre vermişiz. Satır gördüğünüz her yere sütun yerleştirin. Tanım, sütun eşelon forma ya da sütunca indirgenmiş eşelon forma gelmiş olacak. Sizin hemen fark ettiğiniz birim matris doğal olarak bir eşelon formdadır, bir basamak formu vardır ve bütün koşullar sağlanır. Lider terimler köşegenler üzerinde yer alıyor köşegen elemanları. Lider terim bulunduğu her sütunun sıfırdan farklı tek terimi.
+
+314
+01:00:57,811 --> 01:01:06,411
+İkinci ya da her bir lider terim kendisinden önce gelen lider terimin altında ve sağında yer alıyor.
+
+315
+01:01:07,771 --> 01:01:09,090
+Koşullar sağlanıyor.
+
+316
+01:01:09,411 --> 01:01:15,490
+Ve birim matrisde bütün girdileri sıfır olan bir satır olmadığına göre onları aşağı atmamızı gerek yok.
+
+317
+01:01:16,510 --> 01:01:20,331
+İkinci örneğimize bakalım.
+
+318
+01:01:20,411 --> 01:01:21,590
+Bu bir birim matris değil.
+
+319
+01:01:22,063 --> 01:01:42,503
+tipi nasıl bunun? 5x6 tipinde bir matris. 5 tane satırı, 6 tane sütunu olan bir matris. Mola verelim tabii ki sana hatırlattığın için. Teşekkür ederim. 4 dakika açmışız. Evet, moladan sonra devam etsek iyi mi olur sizce? Ya da hemen tanımı vermişken biz örneklere bakalım.
+
+320
+01:01:48,916 --> 01:02:15,615
+bence de. Pekişsin bence. Ara vermeyeyim. Sonra molada düşünün biraz. Yok. Arayı 15 dakika yapamayız. Pazarlık konusu olamaz o. 10 dakika biz daha. Evet. Bakıyoruz. Birinci satırın sıfırdan farklı ilk girdisi 1 ve bulunduğu sütunun sıfırdan farklı tek girdisi. Sonra ikinci satırın sıfırdan farklı ilk girdisi.
+
+321
+01:02:16,402 --> 01:02:42,483
+Sıfırdan farklı ilk girdisi ikinci pozisyonda yer alıyor ve bir. İlk girdisi demiyorum arkadaşlar. Sıfırdan farklı ilk girdisi. Çok önemli. Sıfırdan farklı ikinci girdisi dört, sıfırdan farklı üçüncü girdisi sekiz. Fakat sekiz, ikinci satırın altıncı girdisi. Dolayısıyla ikinci satırın sıfırdan farklı ilk girdisi bir ve ikinci pozisyonda yer alıyor.
+
+322
+01:02:42,592 --> 01:03:09,811
+Peki üçüncü satırın sıfırdan farklı ilk girdisi birinci pozisyonda değil, ikide değil. Olamazdı zaten, birde olamazdı. İkide de olamazdı. Neden? Çünkü sağında yer alması gerekiyor kendisinden öncekine. İkide de yer alamaz. Üçte olabilir, burada olabilirdi ama değil. Sorun değil. Evet, dördüncü pozisyonda. Bir sıkıntı yok ve merdivenimizi bitirdik.
+
+323
+01:03:10,068 --> 01:03:18,867
+Merdiviyon formu tamamlandı. İki tane sıfır satırımız var, onlar matrisin en altında. Onları en alta taşımışız zaten. Zaten o formda veriyorum.
+
+324
+01:03:19,795 --> 01:03:28,235
+Bize bir matris verilecek, bunu eşelon forma getirin dendiğinde, bu form, şu geleceğimiz, bu forma benzetmeye çalışacağız.
+
+325
+01:03:28,335 --> 01:03:35,735
+Yani gelecek, her bir matrisin bir forma getirilebildiğinde söyleyeceğiz ve satırca indirgenmiş eşelon form tek türlü belirlidir.
+
+326
+01:03:36,295 --> 01:03:46,815
+İşte [öğrenci] buldu farklı, [öğrenci] buldu farklı olmaz. [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], hepiniz aynı matrisi bulmak zorundasınız.
+
+327
+01:03:47,039 --> 01:03:58,699
+Satırca indirgenmiş eşelon form. Yani o reduce kelimesi çok önemli. Ama row eşelon form dediğimizde, yani satırca eşelon form dediğimizde farklı olabilir matrisler.
+
+328
+01:03:58,699 --> 01:04:07,518
+Orada da bazı şeyler aynı olmak zorunda. Bazı şeyler. Rank diye bir kavram tanımlayacağız. B matrisi satırca indirgenmiş eşelon formdadır.
+
+329
+01:04:07,599 --> 01:04:12,719
+Aynı zamanda bunlar satır eşelon formdadır da arkadaşlar, daha güçlü bir şey olduğu için.
+
+330
+01:04:13,119 --> 01:04:14,539
+Şöyle üzerine yazalım.
+
+331
+01:04:14,699 --> 01:04:15,960
+Reviews row, eşelon form.
+
+332
+01:04:16,699 --> 01:04:18,239
+Satırca, hırççı ne diyelim?
+
+333
+01:04:18,798 --> 01:04:22,079
+Satırca indirgenmiş eşelon form.
+
+334
+01:04:22,259 --> 01:04:22,460
+CF.
+
+335
+01:04:23,318 --> 01:04:25,159
+Satırca indirgenmiş eşelon form.
+
+336
+01:04:25,219 --> 01:04:26,500
+Böyle de diyebilirsiniz.
+
+337
+01:04:26,500 --> 01:04:26,798
+CF.
+
+338
+01:04:28,838 --> 01:04:31,000
+C matrisine bakalım.
+
+339
+01:04:31,918 --> 01:04:36,159
+C matrisi satırca indirgenmiş eşelon formda mıdır arkadaşlar?
+
+340
+01:04:36,858 --> 01:04:37,719
+Size sorayım ben.
+
+341
+01:04:42,996 --> 01:04:53,456
+Üzerinde düşünerek söyleyin, bir yerden okuyarak söylemeyin arkadaşlar. Ben sunumları paylaşıyorum, web sayfasında var. İyi öğrenciler onları önceden okuyor, farkındayım.
+
+342
+01:04:55,496 --> 01:05:06,675
+[öğrenci] demiş ki değildir. Doğru cevap verenlerin cevabı ilginç değil, yanlış cevap verenin cevabı ilginç olabilir. Evet, [öğrenci] neden değil, [öğrenci] neden değil? Neden?
+
+343
+01:05:08,724 --> 01:05:11,923
+Satürca indirgenmiş eşelon formda olduğunu düşünmüyorsunuz.
+
+344
+01:05:16,179 --> 01:05:17,259
+Söylebilir miyim ben?
+
+345
+01:06:11,059 --> 01:06:12,480
+Dersi terk etti hocam.
+
+346
+01:09:37,235 --> 01:09:39,255
+Merhaba arkadaşlar, sesimi duyabiliyor musunuz?
+
+347
+01:09:43,090 --> 01:09:44,070
+Evet hocam duyuyoruz.
+
+348
+01:09:44,890 --> 01:09:45,690
+Duyuyoruz hocam.
+
+349
+01:09:46,650 --> 01:09:47,371
+Evet hocam.
+
+350
+01:09:51,371 --> 01:09:55,650
+Davutpaşa'da elektrikler kesildi.
+
+351
+01:09:56,570 --> 01:09:57,890
+Dolayısıyla wifi var.
+
+352
+01:09:58,530 --> 01:10:00,010
+Dolayısıyla internet çok şey değil.
+
+353
+01:10:00,371 --> 01:10:00,751
+Ne derler?
+
+354
+01:10:00,810 --> 01:10:01,671
+Tabii değil.
+
+355
+01:10:02,171 --> 01:10:03,890
+Ara ara ses gidebilir.
+
+356
+01:10:04,530 --> 01:10:09,291
+Bu dersi wifi ile bitmeye çalışacağız.
+
+357
+01:10:10,067 --> 01:10:17,947
+Normal internetimiz kesildi. Aramız bitmiş miydi? Kaçta arayı verdik? Vermemiştik daha doğrusu arayı.
+
+358
+01:10:20,926 --> 01:10:25,966
+Arkadaşlar, 2-3 dakika daha bekleyelim. Biraz daha katılsınlar. Kalktığımız yerden devam edelim, olur mu?
+
+359
+01:10:36,564 --> 01:10:38,064
+Sende bir sorun yaşadın mı?
+
+360
+01:15:13,650 --> 01:15:15,511
+Merhabalar, kaldığımız yerden devam edelim.
+
+361
+01:15:21,811 --> 01:15:31,492
+Açık olanlar lütfen mikrofonlarını kapatsınlar. Olmadığını söylüyorlar da onların cevaptan bekliyorduk. Evet, hala buradalarsa lütfen katılsınlar bize.
+
+362
+01:15:38,898 --> 01:15:39,898
+Evet, kimler burada?
+
+363
+01:15:42,578 --> 01:15:43,458
+Hocam ben söyleyeyim.
+
+364
+01:15:43,458 --> 01:15:45,198
+Bir yerinin eşelon formda.
+
+365
+01:15:45,858 --> 01:15:46,500
+Evet.
+
+366
+01:15:46,760 --> 01:15:47,519
+Buradayım hocam.
+
+367
+01:15:47,898 --> 01:15:51,538
+Neden eşelon formda değil, tabi bunu söyleyeyim. Evet.
+
+368
+01:15:53,158 --> 01:16:02,538
+Hocam şimdi [öğrenci] söylemişti ama birinin olduğu sütunda sıfırdan başka sayı var. Bir de benim dediğim...
+
+369
+01:16:03,411 --> 01:16:25,650
+önceki birlerden, sol altta olması gerekmiyor mu? En son bir... Bakalım, şimdi ilk satırın sıfırdan farklı ilk girdisi bir, ve bulunduğu sütunun, birinci sütunun sıfırdan farklı tek girdisi. Burada bir sorun yok. Derse yeni başladım arkadaşlar. Yeni başladım.
+
+370
+01:16:26,162 --> 01:16:34,443
+Bağlantımız kesildiği için, dolayısıyla da koptu, bağlantımız koptu, yeniden Wi-Fi ile bağlandım. Umarım ders bir şekilde bitirebiliriz.
+
+371
+01:16:35,222 --> 01:16:39,222
+Bakıyoruz, ikinci satırın sıfırdan farklı ilk girdisi şurası.
+
+372
+01:16:41,682 --> 01:16:49,963
+Ve kendisinden önce gelen lider terimin sağında yer alıyor. Bulunduğu sütunun, üçüncü sütunun sıfırdan farklı ilk girdisi.
+
+373
+01:16:52,850 --> 01:16:53,850
+Birçok...
+
+374
+01:17:06,898 --> 01:17:08,739
+sağlanıyor burada. Ve bir tane
+
+375
+01:17:08,739 --> 01:17:10,398
+all zero row var bizde.
+
+376
+01:17:10,658 --> 01:17:11,798
+O da en aşağıda.
+
+377
+01:17:12,600 --> 01:17:14,559
+Formdadır diyenler doğru cevap verdi.
+
+378
+01:17:14,679 --> 01:17:16,760
+Ne demiştim? Yanlış cevap verenlerin cevabı
+
+379
+01:17:16,760 --> 01:17:18,859
+daha ilginç. A2-2'nin
+
+380
+01:17:18,859 --> 01:17:20,760
+şey bir olması gerekiyor
+
+381
+01:17:20,760 --> 01:17:22,619
+diyor [öğrenci]. Neden bir olsun [öğrenci]?
+
+382
+01:17:23,158 --> 01:17:24,658
+Neden bir olması gerekiyor ki?
+
+383
+01:17:25,739 --> 01:17:26,439
+Ne demiştik?
+
+384
+01:17:28,439 --> 01:17:29,158
+Altında
+
+385
+01:17:44,532 --> 01:17:46,051
+Hocam sesiniz gelmiyor şu an ya.
+
+386
+01:18:21,010 --> 01:18:22,171
+Tamam.
+
+387
+01:19:46,802 --> 01:19:48,962
+Sesimi duyabiliyormuşsunuz arkadaşlar.
+
+388
+01:19:49,862 --> 01:19:51,342
+Evet hocam, geliyor şu an.
+
+389
+01:19:51,823 --> 01:19:53,962
+Evet, tamam. Bağlantılar ara ara gidiyor.
+
+390
+01:19:56,362 --> 01:19:57,503
+Yine gitti hocam şu an.
+
+391
+01:19:58,443 --> 01:19:59,764
+Hocam, yine gidiyor.
+
+392
+01:19:59,764 --> 01:20:00,222
+Daha iyi gibi.
+
+393
+01:20:02,622 --> 01:20:07,122
+Wi-Fi bağlantısından dolayı arkadaşlar. Yani odan biraz şeye uzak.
+
+394
+01:20:07,987 --> 01:20:17,987
+Moderna uzak, fakültedeyim şu anda. Kapıyı açtım ama bu şekilde herhalde götüreceğiz dersi. Şu an kesik mi geliyor arkadaşlar? Nasıl?
+
+395
+01:20:18,867 --> 01:20:22,586
+Hocam arada kesik geliyor, gitar teli tıngırtısı gibi.
+
+396
+01:20:24,067 --> 01:20:31,466
+Wi-Fi bağlantısından dolayı, kalitesiz olduğu için ya da simya zayıf olduğu için.
+
+397
+01:20:32,528 --> 01:20:39,528
+O yüzden kesik kesik gelecek maalesef. Bu Wi-Fi'dan dolayı öyle. İyi bir bağlantı yok.
+
+398
+01:20:41,528 --> 01:20:54,528
+Ben bir sorayım. Şey gelecekse, ne derler, normal hat gelecekse kablolu internet, o zaman dersi o zaman yapılan sizin 11'de dersiniz vardır. Konuları da işlememiz gerekiyor.
+
+399
+01:20:54,994 --> 01:21:09,514
+Şöyle düşünüyorum, Zoom'un kaydettiği videolarda kesiltik olmayacak. Belki oradan dinleme şansımız olur. Ya öyle kabul edip tersi devam edeceğiz ya da biraz bekleyelim diyelim.
+
+400
+01:21:10,095 --> 01:21:13,034
+Hocam sesiniz iyi şu an devam edelim isterseniz.
+
+401
+01:21:14,067 --> 01:21:16,108
+Tamam, o zaman devam edelim arkadaşlar.
+
+402
+01:21:16,887 --> 01:21:23,487
+Şimdi, C matrisinin eşelon formunda olmadığını söyleyen arkadaşlarımıza bir cevap vermeye çalışıyorduk.
+
+403
+01:21:24,768 --> 01:21:27,966
+Ne demişlerdi? Şurada olması gerekir demişlerdi.
+
+404
+01:21:28,307 --> 01:21:31,768
+Tabii mesajlar da gittiği için onları görebilme şansım yok şu an için.
+
+405
+01:21:32,867 --> 01:21:33,768
+Bir şey söyledi mi?
+
+406
+01:21:34,127 --> 01:21:34,387
+Evet.
+
+407
+01:21:35,764 --> 01:21:44,724
+Ben ne demiştim? En sağ üstteki biri, birinin o sütunda sıfırdan farklı sayılar var demiştim ama sanırım o baş eleman...
+
+408
+01:21:44,724 --> 01:21:56,403
+Hayır ama o lider terim değil. Evet o lider terim değil. Yani her bir lider terim değil. Lider terim adı üstünde bulunduğu satırın lideri.
+
+409
+01:21:56,403 --> 01:21:59,340
+Tamam mı? Liderlerin o...
+
+410
+01:21:59,346 --> 01:22:05,106
+Bu sütunlarda tek lider var orada. Yani başka bir şey yok. Liderin yeri. Orada oturuyor tamam mı?
+
+411
+01:22:05,546 --> 01:22:20,346
+Mesela ikinci sütun burada ilginç. Bozmuyor. Buradaki iki hiçbir şey bozmaz. Çünkü lider terim değil. Onlar bozmaz. Onun bulunduğu sütunda eğer yukarıda başka sütunlar olsaydı sıfırdan farklı değerler olabilirdi. Ama aşağısında...
+
+412
+01:22:20,979 --> 01:22:37,918
+Olabilirse şurada bir tane bir olabilirdi. O lider terim olurdu bu durumda, şuranın sıfır olması gerekecekti. Ama öyle değil. Dolayısıyla burada bir bir olmadığı için, onu silelim. Şurada bir tane bir olma. Eğer olsaydı burası sıfır olacaktı. Fakat yok.
+
+413
+01:22:38,387 --> 01:22:50,768
+O yüzden şunları silelim. Hani birileri koyabileceğimiz yerleri ben işaretlemeye çalıştım. Dolayısıyla C'de Reduced Row Echelon formdadır. Yani satırca indirgenmiş Echelon formdadır.
+
+414
+01:22:54,610 --> 01:23:03,332
+Hayır, bence [öğrenci] öyle deme. Çünkü bilgi işlem buna, uzaktan eğitim merkezi önlemlerini aldılar, kaydediyorlar diye biliyorum.
+
+415
+01:23:04,711 --> 01:23:08,890
+Sorularına. Umarım öyle bir şey olmamıştır. Olduysa kötü olmuş.
+
+416
+01:23:10,032 --> 01:23:21,011
+Burada da eşelon form koşullarını sağlamayan matris örnekleri var. Mesela D matrisi neden eşelon formda değil? Size soralım sevgili arkadaşlar.
+
+417
+01:23:21,490 --> 01:23:24,051
+D matrisi neden eşit?
+
+418
+01:23:25,072 --> 01:23:26,371
+Cevap verebilir miyim?
+
+419
+01:23:26,911 --> 01:23:28,390
+Tabii buyurun. Kim cevap veriyor?
+
+420
+01:23:28,871 --> 01:23:29,291
+[öğrenci].
+
+421
+01:23:29,930 --> 01:23:30,730
+Evet [öğrenci], buyurun.
+
+422
+01:23:32,051 --> 01:23:39,371
+Satırda birden sonra iki gelmiş. Yani orada birden başka sayı olmalı. Sıfır olması lazım hepsi.
+
+423
+01:23:39,371 --> 01:23:41,452
+Ben bir cevap veriyorum.
+
+424
+01:23:41,746 --> 01:23:58,046
+[öğrenci], orayı düzeltelim, öyle geçelim. Orada ilk satır aslında bir şeyi bozmuyor. Yani bu iki sıfır olmak zorunda değil. Ya da şu dört. Çünkü ne demiştik? Lider terim, bulunduğu sütunun tek sıfırdan farklı elemanıdır. Satır için söylemedim.
+
+425
+01:23:58,046 --> 01:23:58,427
+Anladım.
+
+426
+01:23:58,427 --> 01:24:02,167
+Tamam mı? Bu arada eğitimlerimiz de geldi. Evet.
+
+427
+01:24:03,987 --> 01:24:08,427
+İlk satırda zaten lider terim yok. Hani biri yok.
+
+428
+01:24:09,076 --> 01:24:25,014
+Yani bütün girdileri sıfır olduğu için bunu aşağı taşımamız gerekir değil mi? Bu burada olamaz. Öyle diyordu. On zero row varsa onu aşağı taşı. Tamam. Başka da bir şey yok esasında. Şurada bir giden terimi. Aslında ikinci ve üçüncü satırları yer değiştirdiğimizde ne olacaktır?
+
+429
+01:24:34,144 --> 01:24:37,283
+0, 0, 0, 0 şeklinde olsaydı,
+
+430
+01:24:37,743 --> 01:24:50,582
+Bu durumda buna D üstü diyelim biz. Yeni matrisimiz D üstü olsun. Çünkü bir matrisin satır işlemi uyguladıktan sonra yeni elde ettiğimiz matris ona denk bir matris. Araya şöyle tilda koymak durumundayız. O gelecek birazdan.
+
+431
+01:24:50,884 --> 01:25:05,743
+Dikkat ederseniz basamak formu oluştu. Ve lider terimlerimiz bulundukları sütunun sıfırdan farklı tek elemanları. O yüzden D'nin satırca indirgi gelmiş eşelon formda olmamasının sebebi bir tane all zero rho var ve en altta.
+
+432
+01:25:05,743 --> 01:25:32,363
+Bu da değil. Sebebi o. Aynı zamanda bu satır eşelon formda da değil. Yani ref de değil. Çünkü ref olması için de o 0-0'ların en aşağıya taşınması gerekiyor. Evet. [öğrenci] yazmış, [öğrenci] yazmış. Evet, haklısınız arkadaşlar. Sıfır satırdan dolayı. E'ye bakalım. E neden değil? Hem eşelon formda değil, hem indirgenmiş eşelon formda değiller.
+
+433
+01:25:33,716 --> 01:25:34,854
+Evet, buyurun.
+
+434
+01:25:35,994 --> 01:25:37,014
+İsmimizi de söyler.
+
+435
+01:25:37,795 --> 01:25:38,034
+Evet.
+
+436
+01:25:38,534 --> 01:25:43,414
+[öğrenci] ben hocam, ikinci satırda lider terim bir değil, o yüzden.
+
+437
+01:25:45,335 --> 01:25:47,994
+İkinci satırda bir lider terim var, değil mi?
+
+438
+01:25:48,716 --> 01:25:52,875
+İkinci satırın sıfırdan farklı ilk girdisi, fakat bir değil bu.
+
+439
+01:25:53,136 --> 01:25:55,735
+O yüzden yine eşelon formda olamaz.
+
+440
+01:25:55,735 --> 01:25:58,774
+Ki başka bir sebebi var.
+
+441
+01:26:01,139 --> 01:26:10,238
+Bu olarak ekleyeceğimiz, üçüncü, satırın sıfırdan farklı ilk terimi, yani lider teriminin üzerinde yer alan girdiler de sıfır değil.
+
+442
+01:26:10,319 --> 01:26:37,679
+Bunu da ileri sürebiliriz. Yani şu birin üstünde yer alan, eksi iki ile üçün de sıfır olması gerekiyordu. Reduce row echelon, çünkü satırca indirgenmiş echelon form diyor burada. İndirgenmiş olabilmesi için şu üç ve eksi ikinin sıfır olması gerekir, şuradaki ikinin de bir olması gerekir. Biz işlem yaparak tabii satırca indirgenmiş echelon forma getirebiliriz. [öğrenci], Haklısın, ikinci satır bir ile başlamıyor. O ilk gördüğünüz şey.
+
+443
+01:26:38,319 --> 01:26:43,579
+T'ye gitmek istediğimizde de 3. satırın lideri T'nin üstünde sıfırdan farklı girdiler var.
+
+444
+01:26:44,059 --> 01:26:46,119
+F neden değil arkadaşlar?
+
+445
+01:26:52,819 --> 01:26:53,319
+Evet.
+
+446
+01:26:54,198 --> 01:26:55,819
+F neden satırcı...
+
+447
+01:26:56,639 --> 01:26:59,198
+Tabii buyurun. İsminizi söyleyerek.
+
+448
+01:26:59,960 --> 01:27:00,698
+Evet, [öğrenci] buyurun.
+
+449
+01:27:02,163 --> 01:27:11,823
+Üçüncü satırda lider terim birinin altında olmuş, ikinci satırdaki lider teriminin altında olmuş. Bir sahada olmak veya iki sahada fark etmek böyle olur.
+
+450
+01:27:11,823 --> 01:27:29,923
+Ya da sıfır olmak zorunda. Çünkü ikinci satırda bir lider terim var zaten, şurası var zaten. Lider terim bulunduğu sütunun tek sıfırdan farklı eleman olması lazım. Sıfır olması lazım buranın. Ya da buranın sıfır olması lazım. Yani üsttekinin sıfır olması lazım.
+
+451
+01:27:30,163 --> 01:27:33,163
+İkisinden birinin sıfır olması gerekiyor. Öyle değil mi?
+
+452
+01:27:33,163 --> 01:27:43,163
+Eğer şurası sıfır olsaydı yine sorun olacaktı. İki var burada, bunun bir olması gerekecekti. Şuraların sıfır olması gerekecekti falan.
+
+453
+01:27:43,163 --> 01:27:50,163
+Yani öyle bir senaryo düşünürsek. Şu haliyle silerin payı taktısını teşekkür ediyoruz cevabın için.
+
+454
+01:27:50,163 --> 01:27:52,163
+İkinci sütunda...
+
+455
+01:27:52,787 --> 01:27:59,606
+İki tane, bir var. Dolayısıyla onlardan en az bir tanesinin sıfır olması gerekiyor. Öyle de cevap verebiliriz.
+
+456
+01:28:00,146 --> 01:28:01,347
+Hocam bir şey sorabilir miyim?
+
+457
+01:28:02,046 --> 01:28:02,387
+Buyurun.
+
+458
+01:28:03,487 --> 01:28:06,847
+Ref ve bu L ref arasındaki fark ne acaba?
+
+459
+01:28:09,427 --> 01:28:18,546
+Tanıma gidip dördüncü koşu. Yani lider terim bulunduğu sütunun sıfırdan farklı tek girdisiyle RRF oluyor.
+
+460
+01:28:19,572 --> 01:28:30,271
+Eğer sadece lider terimin altında kalan girdiler sıfırsa, üstünde sıfırdan farklı terimler olabiliyorsa, o zaman RF oluyor.
+
+461
+01:28:32,091 --> 01:28:37,192
+Mesela bu matris, F matrisi, Ref formundadır arkadaşlar.
+
+462
+01:28:41,811 --> 01:29:04,771
+F matrisi ref formundadır. Ama RR, EF değil. Yani Reduce Row Echelon Form değil ama Reduce Echelon, pardon Row Echelon Form'da. Reduce Row Echelon Form'da değil ama Row Echelon Form'da. Neden? Çünkü lider terimi şurası olarak düşündüğümüzde ki öyle olmak zorunda, altında kalan her şey sıfır, üstü bizi ilgilendirmiyor Row Echelon Form'da. Tamam mı?
+
+463
+01:29:05,235 --> 01:29:13,095
+Basamak yine oluştu. F matrisi, satır eşelon formdadır, fakat satırca indirgenmiş eşelon formda değildir.
+
+464
+01:29:13,615 --> 01:29:22,636
+G matrisine bakıyoruz. Aynı şekilde G matrisi de satır eşelon formda, satır eşelon form örneği bu da.
+
+465
+01:29:23,122 --> 01:29:38,962
+Neden? Çünkü lider terimler kendisinden önce gelen lider terimin altında yer alıyor. Sıfır satırımız en altta. Lider terimin altındaki her şey sıfır. Fakat üstündeki şeyler sıfırdan farklı.
+
+466
+01:29:49,362 --> 01:29:54,823
+Fakat şöyle ekleyelim, row echelon formda, yani satır echelon formda.
+
+467
+01:29:56,842 --> 01:30:04,162
+Hepsi sıfır olmayan bir satırda kesinlikle bir olmalı mı? Evet, o bir de lider kelime olmalı. Haklısın.
+
+468
+01:30:04,722 --> 01:30:09,963
+Satır için söylüyorsak, tabii satır echelon formu arıştırıyorsak. Burada örneklerimiz vardı.
+
+469
+01:30:11,091 --> 01:30:30,192
+Mesela D matrisi, iki sütun olarak düşündüğümüzde sıfırdan farklı bir sütun ama satırca eşelon form dediğimiz için onu etkilemiyor. Ama sütunca eşelon form olsaydı senaryoda satırla sütunun rolünü değiştirmemiz gerekecek.
+
+470
+01:30:37,939 --> 01:30:41,939
+Bunun için söylediğin şey [öğrenci] sarklı git girdi bir olmak zorunda her zaman.
+
+471
+01:30:42,939 --> 01:30:49,707
+Burada da satır eşelon form örneklerimiz var iki tane. Sesim geliyor mu arkadaşlar?
+
+472
+01:30:54,226 --> 01:30:56,667
+Diğer ara bir gider gibi oldu da, şimdi iyi hocam.
+
+473
+01:30:56,887 --> 01:30:59,186
+Evet, tamam. Devam edelim.
+
+474
+01:30:59,746 --> 01:31:02,868
+Yeni örneğimizde, satır eşelon form örneği.
+
+475
+01:31:04,027 --> 01:31:06,347
+Bakıyoruz, basamak formu oluşuyor mu?
+
+476
+01:31:06,466 --> 01:31:07,947
+Sıfırdan farklı ilk girdi bir.
+
+477
+01:31:08,768 --> 01:31:14,091
+Kendisinden sonra gelen satırda, ikinci satırın sıfırdan farklı ilk girdisi bir ve bir önce...
+
+478
+01:31:14,579 --> 01:31:34,579
+Birinci satırın, birinci satırın, yer alıyor. Üçüncü satırın sıfırdan farklı ilk girdisi, ikinci satırın sıfırdan farklı ilk girdisinin sağında yer alıyor ve değil. Bu şekilde bitti. Ve bu lider terimlerin altında kalan her şey sıfır. Üstüyle ilgilenmiyoruz satır eşelon formunda. Dolayısıyla...
+
+479
+01:31:39,122 --> 01:31:44,643
+matris, satır eşelon formdadır. Aynı şekilde bilim matrizi ve ilgililmiş eşelon formda gibi.
+
+480
+01:31:54,930 --> 01:32:00,490
+Hocam, eğer üst üste sıfır olursa indirgenmiş işe ama formu oluyor.
+
+481
+01:32:04,340 --> 01:32:05,300
+Hoca korktu galiba.
+
+482
+01:32:05,619 --> 01:32:06,759
+Hoca gitti herhalde.
+
+483
+01:32:14,963 --> 01:32:33,304
+[öğrenci], maalesef şu anda sistem hataları düzeltemiyor. Sesini düzgün bir şekilde alamadım. Bu ne demek? No easy var. Yani yürültü var kanalda. Düzgün alamadım. Sorunu tekrar sorabilme şansım varsa benim sesim de muhtemelen o şekilde geliyor. Rahatsız edici bir şekilde size ulaşıyor.
+
+484
+01:32:35,463 --> 01:32:37,684
+Hocam, şu an daha iyice.
+
+485
+01:32:38,514 --> 01:32:44,595
+Birin, yani lider terimin, üstü de sıfır olursa indirgenmiş eşelon form mu?
+
+486
+01:32:44,615 --> 01:32:46,854
+Evet, evet, evet, aynen, tam olarak bu.
+
+487
+01:32:46,854 --> 01:32:47,514
+Tek farkı...
+
+488
+01:32:47,890 --> 01:32:49,530
+Tek farkı bu yani satırca.
+
+489
+01:32:49,530 --> 01:33:02,311
+Evet, tek fark bu. Evet, satırca indirgenmiş eşelon formun, satır eşelon forma üstünlüğü, lider terimler bulundukları sütunların sıfırdan farklı tek girdileri oluyor.
+
+490
+01:33:02,311 --> 01:33:10,350
+Yani sadece lider terim sıfırdan farklı oluyor. Fakat satır eşelon formda sadece altındakiler sıfır oluyor.
+
+491
+01:33:10,470 --> 01:33:14,490
+Üstündekiler sıfırdan farklı olabilir ki buradaki örneğimizde olduğu gibi.
+
+492
+01:33:15,890 --> 01:33:39,690
+Mesela bu sıfır sütunum bir şeyi bozmuyor zaten. Ki şuralarda sıfırdan farklı şeyler de olabilirdi. Bozmaz diyeyim şu iki tane pozisyonda sıfırdan farklı şeyler olabilirdi. Dikkat ederseniz, burada bir tane 5 var mesela. Satır eşelon, indirgenmiş eşelon formu bozar bu. Bir tane olması yeterli. Hatta şurada var, şurada var. Bunlar bozulur ama...
+
+493
+01:33:39,731 --> 01:33:53,332
+Satır eşelon form olur. Neden? Çünkü lider terimlerin altında kalan her şey sıfır. Yani satır eşelon form, indirgenmiş eşelon forma göre daha zayıf. Ama ona ulaşmak için bir adım var gibi düşünebiliriz.
+
+494
+01:33:56,179 --> 01:33:58,939
+Teşekkürler hocam.
+
+495
+01:33:59,100 --> 01:34:12,859
+Evet. Şimdi herhangi bir matrisin tanımlayacağımız bazı operasyonları, işlemleri kullanarak satır eşelon forma ve satırca indirgenmiş eşelon forma getirilebileceğini göreceğiz.
+
+496
+01:34:12,979 --> 01:34:17,000
+Bunun için öncelikle elementer satır sütun işlemlerini tanıtalım.
+
+497
+01:34:17,000 --> 01:34:22,398
+Üç tip işlemimiz var. Birinci tip herhangi iki satırı ya da sütunu yer değiştirmek.
+
+498
+01:34:22,500 --> 01:34:24,179
+Yani bunları muadil gibi...
+
+499
+01:34:24,179 --> 01:34:31,259
+Bir düşünebilirsiniz. Satır için söyledik, sütun içinde aynı şeyler yapılabilir. Biz satır üzerinden gidiyoruz, aynı şeyler sütun içinde yapılabilir arkadaşlar.
+
+500
+01:34:31,840 --> 01:34:40,399
+Birinci tip işlemimiz, herhangi iki satırı ya da sütunu yer değiştirmek. Yani herhangi iki satırı yer değiştirmek ya da artanık kolay sütunu yer değiştirmek.
+
+501
+01:34:40,532 --> 01:35:04,311
+Eğer tutun işlemi yapıyorsam. İkinci işlemimiz, bir satırı bir sabitle çarpmak, bir skalerle çarpmak. Bunu yapabiliriz. Ama sadece bir satırı, dikkat ederseniz, matrisi skalerle çarpmıyorum. Burası önemli. Sadece bir satırı belli bir skalerle çarpıyorum. Amacıma uygun bir şekilde. Üçüncü tip işlemimiz, bir satırı bir skalerle çarpıp sonra başka bir satırı ekliyorum.
+
+502
+01:35:05,108 --> 01:35:22,686
+Üç tane işlemim var. Birincisi, yer değiştirme. İkincisi, belli bir satırı bir sabitle çarpma. Üçüncüsü, belli bir satırı bir sabitle çarpıp başka bir satıra ekleyip yeni satır olarak onu atamak. Tamam. Bunları biz bir notasyonla göstereceğiz artık.
+
+503
+01:35:23,603 --> 01:35:36,724
+İki tane satırın yer değiştirmesini, yani i'inci satırla j'inci satırın yer değiştirmesini böyle, v alt indis i ile v alt indis j arasına çift taraflı ok yerleştirdim. Bu ne demek? Yer değiştirdik.
+
+504
+01:35:36,783 --> 01:35:43,662
+İ'inci satırla j'inci satırı yer değiştirdik. Aynı şeyi ben sütunlar için yaparsam, onu da c ile kolunun c'si ile gösteriyoruz.
+
+505
+01:35:43,662 --> 01:35:51,582
+Yani i'inci koluna j'inci kolunun yer değiştirmesi olarak gösteriyoruz. Bu bizim notasyonumuz. Çünkü bu notasyon bir dil.
+
+506
+01:35:51,603 --> 01:36:08,443
+oluşturacak. İşlem yaparken bunları belirtmek zorundayız üzerinde. Çünkü normalde nasıl derler, klasik yapılan sınavlarda bu tarz sorular olurdu. İşlemlerinizin takip edilebilmesi için o işlemlerinizi notasyonla göstermeniz gerekiyor. Yoksa onu görmek kolay değil yani.
+
+507
+01:36:10,226 --> 01:36:34,627
+Uğraşmamız gerekir. İkincisi, ikinci tip operasyonu da i'inci satırı ne demiş? Şu anlama geliyor. K katıyla değiştirdim ben. Yani i'inci satırın bütün girdilerini K skeleriyle çarptım. Sıkıdan farklı bir K skeleriyle çarptım. Notasyonu da bu şekilde. Sütun olunca i'inci sütunu ben K ile çarptım demek. Yani Ci yerine bunu atamış oldum.
+
+508
+01:36:37,939 --> 01:36:39,798
+Nasıl? Şu an ses geliyor mu arkadaşlar?
+
+509
+01:36:41,038 --> 01:36:41,639
+Geliyor hocam.
+
+510
+01:36:42,019 --> 01:36:50,219
+Evet tamam çok iyi. Devam edin. Gelmeyince mesaj kutusundan yazın ki gerçeği kaydedince ben düzgün kaydediceğini düşünüyorum. Umarım öyle olur.
+
+511
+01:36:50,643 --> 01:37:10,122
+Evet, çok güzel. Üçüncü tip operasyonumuzda bir satırı, yani biz eğer i'inci satırı K ile çarpıp onu j'inci satıra eklediğimizde onu K çarpı R'yi artı R'yi onu R'yi olarak, gene R'yi olarak atamış olur.
+
+512
+01:37:10,122 --> 01:37:17,362
+Yani yeni j'inci satırın, j'inci satırın kendisiyle i'inci satırın K katının toplanmış hali demek.
+
+513
+01:37:17,746 --> 01:37:29,226
+Ve bunu sütuna da uyarladığımızda, yinci sütuna ben eğer yinci sütunun K katını ekleyip kendisiyle toplarsam, onu şu şekilde bir notasyonla gösteriyoruz.
+
+514
+01:37:29,226 --> 01:37:33,367
+Tabi bu notasyonları farklı şekilde gösteren kaynaklar da var.
+
+515
+01:37:34,511 --> 01:37:57,051
+i, j ile, i'inci satırla i'inci sütunu yer değiştirmek. Bu sırası önemli değil bunun. H, j, i olarak da görülebilir. Ya da h, işte i, k dediğimiz zaman i'inci satırı k ile çarpmak falan. Bu notasyon biraz kafa karıştırıcı olduğu için benim verdiğim notasyon daha, yani bu şeyde birçok İngilizce kaynakta da böyle geçiyor.
+
+516
+01:37:57,051 --> 01:38:01,551
+Hani isteyen istediği notasyonu kullanabilir ya da kendinize bir notasyon uydurabilirsiniz.
+
+517
+01:38:02,511 --> 01:38:03,471
+İşin ucu karışmasın.
+
+518
+01:38:04,572 --> 01:38:07,350
+Hocam, bir şey sorabilir miyim?
+
+519
+01:38:07,412 --> 01:38:07,992
+Evet, buyurun.
+
+520
+01:38:09,252 --> 01:38:15,110
+Hocam, jinci satırla inci satır demişti, sütunu temsil etmiyor mu?
+
+521
+01:38:15,110 --> 01:38:16,371
+Hayır, şöyle.
+
+522
+01:38:16,735 --> 01:38:32,876
+Yani aynı işlemleri biz sütunlar içinde yapıyoruz. Solda dikkat ederseniz satır için yaptım, aynı şeyleri sütun içinde yapabiliriz. Bunları farklı iki konu başlığı gibi görebilirsiniz. Bir anda vermiş olduk. Elementar satır ve sütun işlemlerini beraber vermiş olduk.
+
+523
+01:38:32,876 --> 01:38:40,136
+Yani bir satırı bir sütuna eklemek gibi bir şeyimiz yok. Bunları kesinlikle birbirine karıştırmıyoruz. Ayrı ayrı bunlar. Tamam mı?
+
+524
+01:38:41,203 --> 01:38:46,663
+Yani hocam buradaki C ile İ ikisi de satır aslında değil mi? Biri farklı satır.
+
+525
+01:38:47,091 --> 01:38:49,351
+İ'de farklı bir satır gösteriyor.
+
+526
+01:38:49,971 --> 01:38:51,891
+C ile gösterdikleriniz mi?
+
+527
+01:38:52,171 --> 01:38:54,291
+J inci satır, i inci satır diyor ya.
+
+528
+01:38:54,332 --> 01:38:54,791
+Evet, evet.
+
+529
+01:38:54,791 --> 01:38:55,671
+Aslında satır.
+
+530
+01:38:55,851 --> 01:38:57,332
+Yani tanıma göre değil.
+
+531
+01:38:57,431 --> 01:38:58,152
+Tabii, tabii, tabii.
+
+532
+01:38:58,271 --> 01:38:59,631
+R-İ, R-J.
+
+533
+01:38:59,791 --> 01:39:01,572
+Yani i inci ro, j inci ro.
+
+534
+01:39:02,171 --> 01:39:02,412
+Öyle.
+
+535
+01:39:02,992 --> 01:39:04,671
+Ya da C-İ, C-J.
+
+536
+01:39:04,912 --> 01:39:06,511
+İnci kolun, j inci kolun.
+
+537
+01:39:06,511 --> 01:39:10,211
+Yani kolunlar içinde, kendi içinde operasyona tabi tutuyoruz.
+
+538
+01:39:10,291 --> 01:39:12,511
+Rolları kendi içinde operasyona tabi tutuyoruz.
+
+539
+01:39:12,511 --> 01:39:13,131
+Oldu mu?
+
+540
+01:39:13,351 --> 01:39:15,091
+Hocam, demeye çalıştığım şey şuydu.
+
+541
+01:39:15,091 --> 01:39:19,412
+Y'yi sadece sütun olarak kullanmıyor muyuz?
+
+542
+01:39:19,912 --> 01:39:23,271
+Hayır, hayır, o bir notasyon, oraya takılmayın.
+
+543
+01:39:24,992 --> 01:39:29,431
+Harf kalmadığı için şey de diyebilirdik, L, M ama M'yi de kullandık biz.
+
+544
+01:39:29,532 --> 01:39:32,271
+Dolayısıyla genelde bu indislerde İ, J kullanılır.
+
+545
+01:39:32,371 --> 01:39:34,652
+Hani o satıra ait, sütuna ait diye bir şey yok.
+
+546
+01:39:34,752 --> 01:39:37,431
+O genel bir konsept, öyle düşünmeyelim.
+
+547
+01:39:37,731 --> 01:39:38,951
+J sütunu temsil eder.
+
+548
+01:39:39,351 --> 01:39:43,032
+Zaten bu, şöyle diyelim, A maddisinin mesela bu,
+
+549
+01:39:43,091 --> 01:40:08,811
+R1 olsun. Şurası R2, şurası R3. Şurası derken bütün elemanlar. Yani R1 eşittir. 0, 0, 1, 2. R2 eşittir. 2, 3, 0, eksi 2. R3 eşittir. 3, 3, 6, eksi 9. Bir de C'leri yazalım arkadaşlar. C1'im. C1 eşittir.
+
+550
+01:40:09,395 --> 01:40:26,675
+0, 2, 3, c2 eşittir, 0, 3, 3, evet, c3 eşittir, 1, 0, 6, 0 ile 6 birbirine benzedi, ve c4 eşittir.
+
+551
+01:40:27,219 --> 01:40:40,998
+2-2-9 şeklinde yazabilirim. Yani bu indisler, i de diyebilirim, j de diyebilirim, k da diyebilirim, l de diyelim, [öğrenci]'in s'si de diyebilirim. Hiç önemli değil yani. O yüzden oraya çok takılmayın arkadaşlar.
+
+552
+01:40:41,578 --> 01:40:45,099
+Biz burada yaptığımız anlaşma, bizim bir dilimiz var, o dili kurguluyoruz.
+
+553
+01:40:46,538 --> 01:40:47,099
+Elementer...
+
+554
+01:40:47,636 --> 01:41:01,595
+Satır veya sütun işlemleri diye üç tane işlem tanımladık. Bunlar hem satırlara hem sütunlara uygulanabilir. Satırsa satırlar kendi içinde, sütunsa sütunlar kendi içinde. Birincisi, herhangi iki satırı yer değiştirmek.
+
+555
+01:41:01,840 --> 01:41:09,079
+İkincisi, herhangi bir satırı bir skalerle çarpmak. [öğrenci] demiş ki, hocam skaler nereden biz? Artık real sayılarla devam edeceğiz.
+
+556
+01:41:09,079 --> 01:41:16,800
+Yani kompleks bir matris verebilirse, tabii kompleks sayı da çarpabilirsin ama bu dersimizde genelde biz real girdirim matrisleri kullanacağız.
+
+557
+01:41:16,939 --> 01:41:21,840
+O skaler deyince hemen real sayı aklınıza gelsin. Öyle diyelim bu dersin kapsamı içinde.
+
+558
+01:41:22,340 --> 01:41:26,960
+Üçüncü operasyonumuzda bir satırı bir skalerle çarpıp başka bir satırı eklemek.
+
+559
+01:41:27,719 --> 01:41:29,460
+Hemen burada örnekler verelim.
+
+560
+01:41:29,806 --> 01:41:57,326
+Matris için demiş. A matrisi 3-4 ipinde bir matris. Mesela birinci satır ve üçüncü satırın yer değiştirilmesi artık o yeni bir matris olacak. Onu B ile gösterelim. B'yi aynı zamanda A'nın alt imkisinde R1-R3 şeklinde. Yani A matrisinin birinci ve üçüncü satırını yer değiştirerek ben B'yi elde ettim. Gerçekten öyle mi yapmış bakalım? Birinci ve üçüncü satırları yer değiştirmiş olması gerekiyor. Evet, gerçekten de değiştirilmiş.
+
+561
+01:41:57,679 --> 01:42:04,658
+Yani birinci B matrisini ben A matrisinden elde ettim. Bir tane elementer işlem uygu bir ara.
+
+562
+01:42:07,478 --> 01:42:08,898
+Sesim geliyor mu arkadaşlar?
+
+563
+01:42:10,759 --> 01:42:11,318
+Evet hocam.
+
+564
+01:42:11,719 --> 01:42:12,798
+Tamam, devam edelim.
+
+565
+01:42:15,859 --> 01:42:21,798
+Mesela A matrisinin ben üçüncü satırını bir bölgü 3 ile çarparsam A matrisi...
+
+566
+01:42:22,291 --> 01:42:27,931
+Şuradaydı. Üçüncü satırını bir bölü 3 ile çarptığımızda, bütün girdilerini bir bölü 3 ile çarpmam lazım.
+
+567
+01:42:28,470 --> 01:42:36,031
+1, 1, 2, eksi 3 şeklinde yeni bir satır olacak. O zaman, üçüncü satırı, yeni üçüncü satır, C matrisi diyelim ona biz.
+
+568
+01:42:36,031 --> 01:42:48,492
+C matrisinde, yeni üçüncü satırımız, nasıl atanmış? Üçüncü satır, A'nın üçüncü satırının bir bölü 3 ile çarpılmış hali ki şöyle oldu. Artık C, A'dan farklı bir şey.
+
+569
+01:42:49,460 --> 01:43:05,658
+Yani onu a alt diyeyim biz, 1 bölü çarpı r3, r3 şeklinde göstermişiz bu değil de bu notasyonla. Ne demek? Ben c'yi a'dan, a'nın 3. satırını 1 bölü 3 ile çarparak elde ettim demek. Ama c a'dan farklı bir matris.
+
+570
+01:43:06,228 --> 01:43:19,927
+D matrisinde ne yapmış peki? A matrisinin ikinci satırını eksi 2 ile çarpıp onu üçüncü satıra eklemiş ve yeni üçüncü satırım A'nın ikinci satırının eksi 2 ile çarpılmışını üçüncü satıra eklenmiş hali.
+
+571
+01:43:20,208 --> 01:43:30,507
+Hemen o işlemi şurada yapalım. A matrisinin ikinci satırını eksi 2 ile çarpalım. Şuraya R2 diyelim. Eksi 2 R. Eşittir ne olacaktır? Eksi 4.
+
+572
+01:43:31,027 --> 01:43:34,228
+Eksi 6, 0 ve 4 olmuş oldu.
+
+573
+01:43:34,326 --> 01:43:35,688
+R3 ne peki arkadaşlar?
+
+574
+01:43:35,867 --> 01:43:39,567
+R3'te 3, 3, 6, eksi 9.
+
+575
+01:43:39,707 --> 01:43:50,646
+Bunları taraf tarafa topladığımızda, şöyle, eksi 2, eksi 2, R2 artı R3 dediğimiz şey, karşılıklı girdileri toplayacağız.
+
+576
+01:43:50,646 --> 01:43:53,246
+Eksi 1, eksi 3.
+
+577
+01:43:53,646 --> 01:43:59,447
+6, ve şurası da eksi 5 olmuş oldu. Eğer doğru operasyonu yaptıysam.
+
+578
+01:43:59,887 --> 01:44:07,826
+Hocam en son değiştirdiğimiz için sanırım bir şey olacak. Yani C'deki R'yi çalmayacak mıyız?
+
+579
+01:44:08,427 --> 01:44:14,307
+Bir dakika bakalım. Oradan mı aldı? Hayır. D'yi A'dan doğrudan şey yaptım. D'yi ne diyor?
+
+580
+01:44:20,943 --> 01:44:27,003
+İkinci satırını, eksi iki ile çarptım, üçüncü satırına ekledim, onu yeni üçüncü satır olarak aldım.
+
+581
+01:44:27,003 --> 01:44:35,263
+Yani birinci satır ve ikinci satır aynen kalacak, üçüncü satırı eksi iki, R2 artır R3 olması lazım.
+
+582
+01:44:35,363 --> 01:44:38,202
+Onu da yukarıda hesaplamaya çalıştık, bakalım ne bulmuşuz?
+
+583
+01:44:38,603 --> 01:44:45,384
+Eksi bir, eksi üç, altı, eksi beş. Eksi bir, eksi üç, altı, eksi beş. Tamam mı? Bu şekilde işlemler oluyor arkadaşlar.
+
+584
+01:44:51,252 --> 01:44:54,271
+Burada, evet. Aynı şeyin devamı, yeni bir şey yok.
+
+585
+01:44:56,412 --> 01:45:06,371
+Eğer, denklik diye bir kavram tanımlayacağız. Eşitliği tanımlamıştık. A matrisi, eğer B matrisine eşitse, tipleri aynıydı ve karşılıklı girdileri birbirine eşitti arkadaşlar.
+
+586
+01:45:06,591 --> 01:45:09,431
+Şimdi de, denk matris diye bir kavram tanımlayacağız.
+
+587
+01:45:11,059 --> 01:45:33,059
+A matrisine sonlu sayıda elementer operasyon uygulanarak bir B matrisi elde edilebiliyorsa A ve B matrislerine biz denktir diyeceğiz. Buradaki örneklerde aslında A'dan denk matrisler üretti. Eşit değil kesinlikle. B matrisi A matrisine denktir arkadaşlar. Şöyle tilda ile gösteriyoruz onu. Hatta şöyle yazsam daha iyi olur. Çünkü A ile başladığımda...
+
+588
+01:45:35,059 --> 01:45:37,059
+Silgi alabilirsem...
+
+589
+01:45:37,298 --> 01:46:00,998
+Evet, şöyle. Evet, buyurun. A matrisi, D matrisine denktir bir kere. Neden? Çünkü ben D'yi A'dan elde ettim. Aynı şekilde şurada B ve C matrislerim vardı. A matrisi, C matrisine de denktir. Neden? A matrisine bir operasyon uygulayarak C'yi elde ettim. A matrisi aynı zamanda B matrisine de denktir.
+
+590
+01:46:02,259 --> 01:46:07,719
+Yani denklikle eşitliği karıştırmıyoruz. Denklik farklı bir şey, eşitlik farklı bir şey.
+
+591
+01:46:08,199 --> 01:46:16,978
+Denkliğin tanımı ne? Bir matris başka bir matristen elementer satır işlemleri yardımıyla elde edilebiliyorsa bu iki matrise denktir diyoruz.
+
+592
+01:46:17,978 --> 01:46:19,958
+Tamam, tanımı bulduk.
+
+593
+01:46:23,282 --> 01:46:25,422
+Şimdi bir örneğimiz... Evet, buyurun.
+
+594
+01:46:26,387 --> 01:46:33,268
+Hocam o zaman bütün matrisler birbirine denk olmuyor mu? Çünkü bir matrize istediğimiz işlemi uygulayıp başka bir matris elde edemiyor mu?
+
+595
+01:46:33,268 --> 01:46:54,387
+İstediğiniz işlem değil. Üç tane işlem, elementer işlem uygulayabiliriz ama her matrisi her matrise denk ettiremeyiz. En sonunda bir matrisin satırca indirgenmiş eşelon formuna denk ettirebiliriz. Arada başka matrisler de olabilir. Yani nihayet ulaşacağımız şey satırca indirgenmiş.
+
+596
+01:46:54,387 --> 01:47:01,987
+gelmiş eşelon form. B matrisi, C matrisine denk midir? Şimdi B matrisi ile C matrisi arasında bir ilişki var mı bakalım?
+
+597
+01:47:04,050 --> 01:47:30,050
+B matrisi, C matrisine denk midir? Evet, sonuçta denktir diyebiliriz muamak. Neden? Çünkü X'i de A'dan türetildi. Dolayısıyla B'yi A'dan elde etmek için uyguladığım işlemin tersini uygularsam, sonra C'yi A'dan elde etmek için A'ya uyguladığım işlemi de ben B'ye uygularsam, bu durumda B'den C'ye geçebilirim. O yüzden B matrisi, C matrisine denk hale getirilebilir. Ama şu haliyle,
+
+598
+01:47:32,434 --> 01:47:35,594
+Evet, denk getirilebilir, denktir diyebiliriz. Haklısın.
+
+599
+01:47:35,715 --> 01:47:36,795
+Hocam bir sorabilir miyim?
+
+600
+01:47:37,155 --> 01:47:37,475
+Evet.
+
+601
+01:47:37,835 --> 01:47:41,354
+Bu işlemleri eşelon forma getirmek için yapıyoruz değil mi?
+
+602
+01:47:41,514 --> 01:47:43,576
+Evet, evet, eşelon forma getirmek için yapacağız.
+
+603
+01:47:43,594 --> 01:47:47,655
+Eşelon durumda değil miydi ya? Ben yanlış mı anladım?
+
+604
+01:47:47,655 --> 01:47:52,674
+A, eşelon formda mı? A'yı görüyoruz ekranda. A, eşelon formda mı?
+
+605
+01:47:53,875 --> 01:47:54,274
+Değil.
+
+606
+01:47:55,795 --> 01:47:58,434
+Bunların hepsi eşelon forma getirmek için yapılan şeyler.
+
+607
+01:47:58,594 --> 01:48:06,555
+Evet, eşelon forma getirmek için. Çünkü matrisin eşelon formu, bir lineer denklem sistemi verildiğinde çözüme en yakın formudur.
+
+608
+01:48:06,735 --> 01:48:14,514
+Kat sayılar madrisini tanımlayacağız. Dolayısıyla eşelon form, bu dersin konsepti içinde çok önemli bir yere sahip.
+
+609
+01:48:14,975 --> 01:48:22,235
+Amaç burada elementer satır işlemleri de o yüzden tanımlanıyor. Bir matrisi satırca indirgenmiş eşelon forma getirme.
+
+610
+01:48:23,059 --> 01:48:29,719
+Bize bir matrise dair bilgiler verilecek. Denklem sistemlerini çözerken kullanacağız. Evet. Yani, evet buyurun.
+
+611
+01:48:31,079 --> 01:48:33,439
+Her matris eşelon forman getirilebilir mi?
+
+612
+01:48:33,439 --> 01:48:40,759
+Evet, kesinlikle getirilebilir. Onun teoremleri vereceğiz. Her bir matris eşelon forman getirilir ve bu tek türlü belirli.
+
+613
+01:48:41,318 --> 01:48:42,219
+Tek türlü belirli.
+
+614
+01:48:43,318 --> 01:48:48,738
+Ne demiştik? Burada yeni bir örnek. Bunları geçtik mi?
+
+615
+01:48:50,738 --> 01:49:03,460
+Notumuz vardı, nottan sonra gidiyorduk. Bakalım. Evet, bunları yeni bir notumuz vardı. Bunları verdik zaten. B, C, D matrislerini verdik. Teorem geldi.
+
+616
+01:49:15,859 --> 01:49:24,338
+Ya da sütunca denk bir maddesi ne diyoruz? Her a maddesi satırca, eşelon form'a bir maddesi satırca, sütunca denktir.
+
+617
+01:49:26,099 --> 01:49:33,859
+Yani herhangi bir maddesi biz yani onu söylüyor, satırca ya da sütunca eşelon forma getirebiliriz.
+
+618
+01:49:34,898 --> 01:49:38,199
+Herhangi bir maddesi biz satırca ya da sütunca eşelon forma getirebiliriz.
+
+619
+01:49:38,259 --> 01:49:42,539
+Burada dikkat ederseniz indirgenmiş demiyor, sadece eşelon form'i.
+
+620
+01:49:42,539 --> 01:49:43,138
+Tamam.
+
+621
+01:49:44,146 --> 01:50:07,266
+Herhangi bir matrisi biz satırca ya da sütünca eşelon formdaki bir matrise denk hale getirebiliriz. Onu söylüyor esas. Bir matris var elimizde. Ona işlemler uyguladık, bir yerde başka bir matris elde ettik. O yeni matrisimiz satır eşelon formda. Dolayısıyla ilk matris ona denk olacak. Her matris için bunu yapabiliriz.
+
+622
+01:50:10,163 --> 01:50:14,563
+Bir matrisin satırca indirgenmiş eşelon formu tek türlü belirlidir.
+
+623
+01:50:15,182 --> 01:50:26,523
+Tek türlü belirli demekle, yani siz matrisi işlemler uyguladınız, iki tane işte D ve D üstü gibi eşelon formlar buldunuz, satırca indirgenmiş eşelon formlar.
+
+624
+01:50:26,643 --> 01:50:34,163
+Bunlar birbirine eşit olmak zorundadır. Terste olduğu gibi bir matrisin tersi varsa tektir. Eşelon formu da vardır ve tektir.
+
+625
+01:50:34,335 --> 01:50:46,615
+Yani var mıdır sorusunun cevabı evet her zaman vardır. Bir matrisin, herhangi bir matrisin, satırca indirgenmiş eşelon formu her zaman vardır ve bu tek türlü beliridir arkadaşlar.
+
+626
+01:50:47,434 --> 01:50:55,735
+Satır eşelon formu demiyorum. Eşelon form birden çok olabilir çünkü sizin seçtiğiniz işleme göre farklı olabilir. Nerede o değişiklikler olur?
+
+627
+01:50:56,658 --> 01:51:18,379
+İşte yukarıda verdiğiniz örnekler, tabii oraya gitmeyeceğim ama, farklılıklar olabilir yani eşelon formlarda. Sizin işlem tercihinize göre farklılıklar olabilir. Fakat indirgenmiş eşelon formlar, ne yaparsanız yapın, hangi işlem sırasını tercih ederseniz edin, nihayetinde bulacağınız matrisler hep aynı olacak.
+
+628
+01:51:24,658 --> 01:51:34,759
+matris verdik, bulacağı indirgenmiş eşelon form aynı olmak zorunda. Eğer farklı buldularsa, bileceğim ki birileri hata yaptı. Tamam. Teorem bize onu söyledi.
+
+629
+01:51:35,027 --> 01:51:56,326
+Bir de bu lider terimlerle ilgili, lider terimin bulunduğu sütunlara biz pivot sütun diyoruz. Lider terimin pivot sütundaki o bire de biz pivot diyoruz. Öyle bir tanımlama var. Biz bunu şimdilik, yani çok kullanmamıza da gerek yok ama öyle bir genel kültür olarak bilginiz olsun.
+
+630
+01:51:58,067 --> 01:52:07,287
+Ne diyor? Bir A matrisini vermiş. A matrisinin hem satır eşelon formunu hem de satırca indirgenmiş eşelon formunu bulun diye bize bir soru vermiş.
+
+631
+01:52:07,407 --> 01:52:16,447
+A matrisi bizim yukarıda kullandığımız matris. Bir kere bakıyorum. Birinci satırda bir lider terim ilk girdide yok.
+
+632
+01:52:16,567 --> 01:52:25,327
+Dolayısıyla sonraki satırlarda ben lider terim. Ya birinci ve ikinci satırı yer değiştirmem lazım ya da birinci ve üçüncü satırı yer değiştirmem lazım.
+
+633
+01:52:25,427 --> 01:52:41,627
+Fakat burada zekice, akıllıca tercihler yapmak lazım. Yani işimizi kolaylaştıracak. Bu da biraz böyle antrenmanla, educated gasteniyomla, yani biraz bizim antrenman yapmamız gerekiyor. Yapınca, sezgisel olarak hangi tercih daha iyi onu şey yapabiliriz.
+
+634
+01:52:53,427 --> 01:53:18,547
+2 ile çarpmam lazım, 1 bölü 2 ile çarpmam lazım. Mesela şurada 3 bölü 2 olacak. Daha sonra onunla işlem yaparken rasyonel sayılarda işlem yapmak zorunda kalacağım ki çoğu kişi rasyonel sayılarla işlem yapmayı sevmez değil mi? Tam sayılarla işlem yapmak varken, pastanın bütününe sahip olmak varken neden yarısıyla çeyreğiyle uğraşalım değil mi? Paylaşmak güzeldir ama.
+
+635
+01:53:19,954 --> 01:53:45,875
+Kendimle çeliştim şu anda. Ne yaptım ben? Birinci ve üçüncü satırları önce yer değiştirdim. Birinci satırı, üçüncü satırı değiştirdim. Bir sonraki adımda ne yapacağım? Birinci satırı, yani R1'e, artık yeni birinci satırım şu, 3, 3, 6, eksi, 9 şeklindeki satır, 1 bölü 3, R yazacağım. Ya da ters yazdım. Bizim verdiğimiz notasyona göre tam tersini yapmam gerekiyordu.
+
+636
+01:53:49,332 --> 01:53:51,051
+Ama öbür türlü de anlaşılıyor.
+
+637
+01:53:52,192 --> 01:53:58,031
+R1 yerine, R1'in 1 bölü 3 ile çarpılmış halini yazmam gerekiyor.
+
+638
+01:53:58,031 --> 01:53:59,391
+Yazalım.
+
+639
+01:54:00,404 --> 01:54:03,782
+Şuraya sıkıştıralım. Araya şöyle tilde yazmam lazım.
+
+640
+01:54:04,583 --> 01:54:08,163
+1, 1, 3'e bağdım her bir girdisini.
+
+641
+01:54:08,342 --> 01:54:11,463
+2, eksi 3, ikinci satır aynen durdu.
+
+642
+01:54:12,083 --> 01:54:17,782
+2, 3, 0, eksi 2, 0, 0, 1, 2.
+
+643
+01:54:18,354 --> 01:54:30,895
+Bakıyorum, satır eşelon formdan uzak bir matris. Bu matrisde operasyon uygulamam lazım. Yapmam gereken şey, şu 2'den kurtulmak öncelikle. 2'den nasıl kurtulabilirim? İşlemimizi şuraya yazalım.
+
+644
+01:54:30,895 --> 01:54:45,614
+Eksi 2 tane R1 artı R2'yi R2'ye atayalım. Araya tilda koydum. Hemen devam edelim o zaman. Birinci satırım aynen kaldı. 1, 1, 2.
+
+645
+01:54:46,222 --> 01:54:48,282
+Eksi 3. Takip edebiliyor musunuz arkadaşlar?
+
+646
+01:54:50,523 --> 01:54:51,722
+Evet hocam.
+
+647
+01:54:51,842 --> 01:55:10,182
+Tamam. Devam edelim. Birinci satırı aynen kaldı. Ama en son matrisle devam ediyorum. Dikkat ederseniz artık yeni bir matris. Ben sürekli onlara şey atamayacağım. Yani şuraya C, D diyebiliriz. Bu da C matrisi olsun o zaman. Yani C, B'den elde edilmiş olacak. Diyebilirsiniz öyle. Ben kestirmeden gidiyorum.
+
+648
+01:55:10,899 --> 01:55:37,420
+Eksi 2 ile çarpıp topladığımızda ne olacak? Eksi 2 ile çarpalım. İlk işlem yaptığımız için. Birinci satır eksi 2 ile çarptım. Eksi 2, eksi 2, eksi 4 ve 6 oldu. İkinci satırım neydi? 2, 3, 0 ve eksi 2 idi. Bunları karşılıklı tabii bu toplama bizim bildiğimiz tam sayılardaki toplama gibi düşünmeyin. O zaman şu şeyi sileyim ben.
+
+649
+01:55:37,970 --> 01:55:39,490
+Çok anlamlı bir şey olmaz.
+
+650
+01:55:40,251 --> 01:55:42,130
+Ama şöyle altına bir çizgi yazabilirim.
+
+651
+01:55:42,332 --> 01:55:43,751
+Bir işlem yaptığımı belirtmek için.
+
+652
+01:55:43,871 --> 01:55:45,730
+0, şurası 1 oldu.
+
+653
+01:55:46,291 --> 01:55:48,610
+Eksi 4 ve 4 oldu arkadaşlar.
+
+654
+01:55:48,610 --> 01:55:54,371
+Demek ki yeni ikinci satırım 0, 1, eksi 4 ve 4.
+
+655
+01:55:54,630 --> 01:55:56,171
+Üçüncü satırım aynen kaldı.
+
+656
+01:55:56,230 --> 01:55:57,550
+Ona bir işlem yapmadım çünkü.
+
+657
+01:55:59,490 --> 01:56:01,591
+Hala kurtulmam gereken şeyler var.
+
+658
+01:56:01,751 --> 01:56:02,091
+Ne var?
+
+659
+01:56:04,179 --> 01:56:17,219
+Şu anda matris, satır eşelon forma geldi. Evet, satır eşelon forma geldi. Ama satırca indirgenmiş eşelon forma getirmek için yapmam gereken şeyler var. Şu an red formunu elde ettik.
+
+660
+01:56:20,119 --> 01:56:21,638
+[öğrenci] sorabilirsin sorunu.
+
+661
+01:56:24,579 --> 01:56:31,579
+Evet. Ne yapmam lazım? Dörtten kurtulmam lazım. Farklı bir kalem renci kullanalım.
+
+662
+01:56:31,951 --> 01:56:34,431
+4, eksi 4'ten kurtulmam lazım.
+
+663
+01:56:35,150 --> 01:56:38,630
+Eksi 4'ten. Neden? Çünkü burada bir lider terim var.
+
+664
+01:56:38,911 --> 01:56:40,770
+Üstünde kalan her şeyin sıfır olması lazım.
+
+665
+01:56:40,890 --> 01:56:43,190
+2'den kurtulmam lazım ve şurada bir tane 1 var.
+
+666
+01:56:43,591 --> 01:56:45,530
+Bu 3 tane elemandan kurtulmam lazım.
+
+667
+01:56:45,931 --> 01:56:49,790
+Öncelikle 3. satırı kullanarak eksi 4 ve 2'den kurtulacağım.
+
+668
+01:56:50,931 --> 01:56:54,030
+O zaman yapacağım işlemler R2'ye.
+
+669
+01:56:55,530 --> 01:56:56,890
+Hatta şöyle diyelim.
+
+670
+01:57:01,011 --> 01:57:14,171
+4 tane, 4 tane R3 artı R2 yaptım, bu benim yeni R2'm oldu. Yani ben 3. satırı 4 ile çarpıp, 2. satıra eklersem, bu 4'ten kurtulacağım.
+
+671
+01:57:14,451 --> 01:57:28,230
+Bir de, eksi 2 tane R3 artı R1'i R1 olarak atarsam, yine nereden şu eksi 2'den kurtulmuş olacak. İşlemleri yapalım.
+
+672
+01:57:28,818 --> 01:57:33,019
+Bunları açık açık yazmayacağım ama şuradaki mantığı aynen sürdürüyoruz.
+
+673
+01:57:34,099 --> 01:57:35,118
+Şuraya devam edelim.
+
+674
+01:57:35,679 --> 01:57:36,958
+Araya tildamızı koyduk.
+
+675
+01:57:38,219 --> 01:57:39,519
+Önce şunu yapalım.
+
+676
+01:57:39,779 --> 01:57:46,158
+Yani 3. satırı eksi 2 ile çarpıp, o zaman burası eksi 2, eksi 4 olacak.
+
+677
+01:57:46,279 --> 01:57:47,638
+Yukarıya eklemem lazım.
+
+678
+01:57:48,219 --> 01:57:51,019
+0 artı 1, 1. 0 artı 1, yine 1.
+
+679
+01:57:51,719 --> 01:57:53,578
+Eksi 2 artı 2, 0.
+
+680
+01:57:54,439 --> 01:57:55,978
+Sonra şurası eksi 4.
+
+681
+01:57:56,754 --> 01:57:58,934
+Artı eksi 3, eksi 7 olmuşum.
+
+682
+01:57:59,594 --> 01:58:02,414
+Eksi 4, artı eksi 3, eksi 7.
+
+683
+01:58:02,854 --> 01:58:09,175
+Sonra, 3. satırın, pardon 4 ile çarpıp 2. satıra ekliyorum.
+
+684
+01:58:09,295 --> 01:58:09,934
+Burası 0.
+
+685
+01:58:10,494 --> 01:58:11,414
+0 artı 0.
+
+686
+01:58:11,675 --> 01:58:12,735
+4 çarpı 0, 0.
+
+687
+01:58:13,094 --> 01:58:13,934
+Artı 0, 0.
+
+688
+01:58:14,055 --> 01:58:15,034
+4 çarpı 0, 0.
+
+689
+01:58:15,115 --> 01:58:15,954
+Artı 1, 1.
+
+690
+01:58:16,835 --> 01:58:18,574
+Sonra, 4 çarpı 1, 4.
+
+691
+01:58:18,774 --> 01:58:20,074
+Artı eksi 4, 0.
+
+692
+01:58:20,574 --> 01:58:21,735
+4 çarpı 2, 8.
+
+693
+01:58:22,615 --> 01:58:24,235
+Artı 4, 12.
+
+694
+01:58:25,298 --> 01:58:37,638
+Sonra üçüncü satırı aynı yazıyorum. 0, 0, 1, 2. İstediğim elemanları sıfırladım ama bir tane daha var. Onun için yine bir işlem yapmam lazım.
+
+695
+01:58:41,138 --> 01:59:08,138
+İşlemim ne olacak peki? Bu defa artık 3. satırla burayı sıfırlamam mümkün değil. Ne yapmam lazım? İkinci satırı kullanacağım. İkinci satırı eksi 1 ile çarpıp yani eksi R2 artı R1 olarak atarsam ne olacak? Burayı sıfırlamış olacağım. İşlemimi yaptım. Yani ikinci satırı...
+
+696
+01:59:08,832 --> 01:59:11,332
+eksi ile çarpı birinci satıra ekledi.
+
+697
+01:59:17,844 --> 01:59:32,563
+0 artı 1, 1, eksi 1 artı 1, 0, 0 artı 0, 0, eksi ile çarptık, eksi 12 artı 7, eksi 19.
+
+698
+01:59:33,243 --> 01:59:34,722
+Hata yapmış olabilirim buralarda.
+
+699
+01:59:35,542 --> 01:59:38,143
+Öyle bir örneği. Burası bu kadar büyümeyecek.
+
+700
+01:59:39,904 --> 01:59:44,302
+Şurası, aynen kaldı. 0, 1, 0.
+
+701
+01:59:45,106 --> 01:59:52,627
+12, 0, 0, 1, 2. Satırca indirgenmiş eşelon forma gelmiş oluyor.
+
+702
+02:00:00,020 --> 02:00:03,979
+Oldu mu? Bakalım sorularını mesaj kutusunda.
+
+703
+02:00:08,467 --> 02:00:20,427
+Şu an için soru yok. Şuradan işlemleri takip edelim. Burada tabii farklı şeyler yapılabilirdi. Mesela birinci satırla ikinci satır yer değiştirilip sonra o bir bölü ikiyle çarpılıp öyle devam edilebilir. Yapılabilir.
+
+704
+02:00:21,208 --> 02:00:26,768
+Onun gibi de ders var. Evet, onun gibi ders. O zaman örneği bitirelim. Ben de ders yapayım arkadaşlar. Olur mu?
+
+705
+02:00:27,762 --> 02:00:51,503
+Devam ettik işlemleri. Önce birinci ile üçüncü satır yer değiştirdik. Birinci satır bir bölüm 3 ile çarptık. Sonra birinci satır eksi 2 ile çarptık. İkinci satıra ekledik. Daha sonra ne yaptık? Şurada işlem. Satır eşelon form demişiz burada. Çeviren arkadaşımız onu satır eşelon form olarak yazmış.
+
+706
+02:00:51,923 --> 02:01:19,543
+Sef olarak yazılmış. Sonra devam ettik işlemlerimize. Hatamız yokmuş zaten. Doğru yapmışız. Satırca indir gelmiş. Sef formunu elde etmiş olduk. Bu şekilde bir basamak formu elde ettik sevgili arkadaşlar. Sizler de bu örnekleri tekrar edin. Matris'in tersini bulmayı haftaya sizde yine yetiştiremedik. Haftaya devam ederiz o zaman. Rankta kaldık arkadaşlar. Sabırla dinlediğiniz için hepinize teşekkür ediyorum.
+
+707
+02:01:19,923 --> 02:01:22,484
+Haftaya görüşmek üzere, hoşçakalın.
+
+708
+02:01:22,623 --> 02:01:23,863
+Kendinize iyi bakın hocam, sağ olun.
+
+709
+02:01:25,564 --> 02:01:26,324
+Teşekkür ederim.

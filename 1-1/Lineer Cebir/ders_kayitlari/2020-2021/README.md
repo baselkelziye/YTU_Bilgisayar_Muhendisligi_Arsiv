@@ -6,6 +6,7 @@
 | :---: | :---: | :--- | :--- |
 | 1 | Güz | Serpil Karayel | [sube_1/](sube_1/) |
 | 6 | Güz | — | [sube_6/](sube_6/) |
+| 7 | Güz | Mehmet Emin Köroğlu | [sube_7/](sube_7/) |
 | 14 | Güz | Mustafa Sarı | [sube_14/](sube_14/) |
 | 16 | Güz | İsmail Aydoğdu | [sube_16/](sube_16/) |
 | 31 | Güz | İsmail Aydoğdu | [sube_31/](sube_31/) |
