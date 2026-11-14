@@ -1,0 +1,2875 @@
+1
+00:00:33,908 --> 00:00:34,408
+Alright.
+
+2
+00:00:39,859 --> 00:00:46,018
+Bu, chapter 4, of our reference book, by Coleman Hill, right?
+
+3
+00:00:50,932 --> 00:00:53,932
+Bu, 9'th week'a geçti.
+
+4
+00:00:53,932 --> 00:00:57,932
+Şimdi, bu vektörle ilişkilerin başlığı için,
+
+5
+00:00:57,932 --> 00:00:58,932
+ama önce,
+
+6
+00:00:58,932 --> 00:01:01,932
+biz de öğrenelim,
+
+7
+00:01:01,932 --> 00:01:03,932
+ne gerek yok.
+
+8
+00:01:04,724 --> 00:01:09,284
+Vektörsünün planları, 3-spazı, etc.
+
+9
+00:01:09,444 --> 00:01:13,043
+Ve birçok produktu,
+
+10
+00:01:13,322 --> 00:01:15,804
+veçok produktu, veçok produktu,
+
+11
+00:01:16,004 --> 00:01:17,043
+veçok produktu.
+
+12
+00:01:17,804 --> 00:01:20,483
+Ayrıca birçok produktu.
+
+13
+00:01:20,683 --> 00:01:24,563
+Yani, real veçok spazı,
+
+14
+00:01:24,763 --> 00:01:26,364
+formalde definisi,
+
+15
+00:01:26,884 --> 00:01:31,683
+benzeri birçok kullanmak lazım.
+
+16
+00:01:32,084 --> 00:01:37,203
+vektörs vektörs vektörs ve tre-dimensional oclean space.
+
+17
+00:01:45,299 --> 00:01:48,539
+All right. This part is very easy to understand.
+
+18
+00:01:50,519 --> 00:01:55,058
+This notation we use to denote two-dimensional Euclidean space, right?
+
+19
+00:01:55,659 --> 00:01:57,838
+Which is familiar for you.
+
+20
+00:01:59,118 --> 00:02:04,259
+You have two perpendicular lines that we call x and y-axis, respectively.
+
+21
+00:02:04,259 --> 00:02:07,259
+They intersect in each...
+
+22
+00:02:08,211 --> 00:02:11,850
+Right here, at this point, which we call origin, right?
+
+23
+00:02:12,290 --> 00:02:17,450
+This is the positive direction of x-axis, and this is the positive direction of y-axis.
+
+24
+00:02:18,050 --> 00:02:24,770
+So what happens if you take a point, pick a point here, for example, right?
+
+25
+00:02:25,471 --> 00:02:31,770
+So since you are in two-dimensional space, that means any point or any vector...
+
+26
+00:02:32,756 --> 00:02:36,574
+has two component, right? So take a point P here.
+
+27
+00:02:45,300 --> 00:02:50,938
+X means this distance, and Y means this vertical distance, right, as you know.
+
+28
+00:02:51,860 --> 00:02:59,199
+So, you can consider P either as a point or as this vector here, right?
+
+29
+00:02:59,199 --> 00:03:04,199
+I mean, this set, the plane, I mean.
+
+30
+00:03:05,360 --> 00:03:10,127
+You can say that this is the set of all...
+
+31
+00:03:10,127 --> 00:03:37,467
+Orded pairs, or the set of all vectors in the plane, right? These are the same definition. And x and y here are just coordinates or component of the point p, or if you prefer as a vector, component of the vector v, right? You can, or x, but don't confuse this x with this one, right? The bold phase letter is used.
+
+32
+00:03:37,776 --> 00:03:42,776
+bu ve y'e real numbers
+
+33
+00:03:42,776 --> 00:03:45,776
+ama bu phase'in faysa
+
+34
+00:04:05,747 --> 00:04:14,086
+Here, you have one more direction, that means you have to include one more coordinate axis, which is z, which is z, right?
+
+35
+00:04:14,526 --> 00:04:26,846
+And this is the analytical expression right here. Look at this. This is the analytical expression of a vector into space, x-coordinate, y-coordinate, right?
+
+36
+00:04:27,528 --> 00:04:31,427
+And you can write, if you prefer, with this.
+
+37
+00:04:32,148 --> 00:04:44,728
+vektör op, o is the origin, vektör vektör vektör x vektör vektör x vektör vektör x.
+
+38
+00:04:51,603 --> 00:04:55,963
+Ve bu şekilde ve hala ve hala yöre bir araya koyduğumuzu.
+
+39
+00:04:55,963 --> 00:05:00,043
+Fakat bu 4.2'ye göre görüyoruz.
+
+40
+00:05:04,788 --> 00:05:15,468
+This is the vector x, or vector op.
+
+41
+00:05:18,206 --> 00:05:22,487
+You use this arrow to indicate the direction, right?
+
+42
+00:05:22,807 --> 00:05:23,348
+The direction.
+
+43
+00:05:24,927 --> 00:05:30,468
+Actually, the vector is a directed line segment, okay?
+
+44
+00:05:31,444 --> 00:05:56,396
+ve ve
+
+45
+00:05:56,435 --> 00:06:08,595
+Komorosily, with the directed line segment, OP, with tail at the origin and head at the point P, you can associate this column matrix.
+
+46
+00:06:11,699 --> 00:06:33,718
+A vektör, this is the definition, very easy, right? It is standard, elementary definition. A vektör in the plane or two-space is a two-by-one matrix. I mean, it's a column vector, right? It's a column vector. Some people write this way. Look at this. It's also acceptable, right?
+
+47
+00:06:34,836 --> 00:06:39,675
+You can also write as a row vector, but don't forget to put the transpose.
+
+48
+00:06:41,576 --> 00:06:41,836
+Okay?
+
+49
+00:06:42,755 --> 00:06:46,836
+So x and y are the component or entries of the vector x.
+
+50
+00:06:46,836 --> 00:06:53,875
+Don't confuse this bold phase letter with the coordinate x and y, right?
+
+51
+00:06:55,814 --> 00:06:59,636
+Let me show you here.
+
+52
+00:07:02,740 --> 00:07:21,220
+So, in two-space, as I said, you have two lines which are perpendicular, right? X-axis, y-axis, and this is the origin. This is your reference system, actually. Why? Because to represent any point or any vector, you need exactly two coordinates.
+
+53
+00:07:22,100 --> 00:07:41,519
+R3, 3-space, you have to include, as I said, one more direction, right? If this is X and this is Y, you include this direction Z, right? So you have three lines.
+
+54
+00:08:09,812 --> 00:08:21,331
+This is a unique plane, because just remember, if you have two lines that intersect each other, they determine a unique plane.
+
+55
+00:08:22,411 --> 00:08:30,091
+If you have three lines, two by two intersecting each other, then that means you have three planes, coordinate plane, right?
+
+56
+00:08:30,932 --> 00:08:36,331
+Coordinate plane, look at this. If you consider, for example, X and Y, so this is your...
+
+57
+00:08:37,298 --> 00:08:58,158
+Coordinate, one of your coordinate planes, right? X, Y. X, Y plane. Or sometimes we say Z equal to zero. Because in this plane, just consider this as your base month, right? So there is no Z here. That's why this is another.
+
+58
+00:08:58,606 --> 00:09:12,554
+X'y
+
+59
+00:09:20,019 --> 00:09:41,578
+This plane, coordinate plane, right? X, Z plane, where Y is always 0. That means if you pick a point here, Q, the second coordinate is always 0, right? The first and the third.
+
+60
+00:09:42,196 --> 00:10:03,659
+Bu, bu
+
+61
+00:10:09,202 --> 00:10:09,602
+Ok?
+
+62
+00:10:18,610 --> 00:10:33,672
+Maybe this is better, right? This is xy-plane, this is yz-plane, and this is xz-plane, right?
+
+63
+00:10:33,672 --> 00:10:41,110
+You have three coordinate planes in three spaces, okay?
+
+64
+00:10:42,532 --> 00:10:46,410
+If you take a point in this positive...
+
+65
+00:10:46,418 --> 00:11:05,019
+Octent, for example. Octent means 1 over 8 of R3, right? You divide in 8 pieces, and compartment, for example, this is the compartment where each x, y, z are strictly positive, for example.
+
+66
+00:11:05,019 --> 00:11:11,558
+So if you take a point, that means you consider this vector, boldface letter x.
+
+67
+00:11:12,274 --> 00:11:14,754
+And P has three coordinates, right?
+
+68
+00:11:15,595 --> 00:11:16,195
+I don't care.
+
+69
+00:11:27,764 --> 00:11:37,864
+So, in two-space, this is the standard representation of a vector as a two-by, don't forget, as a two-by-one column matrix, right?
+
+70
+00:11:38,504 --> 00:11:45,203
+If you take another, you can compare when these two vectors are set to be equal, for example.
+
+71
+00:11:47,604 --> 00:11:51,203
+If and only if their components are...
+
+72
+00:11:53,043 --> 00:12:00,504
+Coincident, right? Each component has to coincide with the corresponding entry of the other vector, right?
+
+73
+00:12:00,923 --> 00:12:13,244
+For example, let us consider 2, 3. This is one of the vectors. And V is 2, 4. These vectors are not equal because these entries are not equal, right?
+
+74
+00:12:13,964 --> 00:12:17,303
+It's not enough that one of the components coincide.
+
+75
+00:12:18,964 --> 00:12:34,724
+Each component has to coincide, right? To call vectors equal, all right? You can also use some other terminology about equality, for example. Let me show you.
+
+76
+00:12:47,058 --> 00:12:50,139
+That means u is this vector, right?
+
+77
+00:12:51,839 --> 00:12:53,479
+If you take another vector,
+
+78
+00:12:57,394 --> 00:13:07,134
+v, right? Let me put q here. The head of vector v is q, right? x' y'', right?
+
+79
+00:13:11,220 --> 00:13:25,159
+So, in terms of coordinate, we say that u is the same vector as if and only if x is equal to x prime, y is equal to y prime, right?
+
+80
+00:13:25,159 --> 00:13:38,799
+But as I said, you can use another terminology here, just using length. Look at this. This is another terminology, length, right?
+
+81
+00:13:40,562 --> 00:13:41,562
+Direction
+
+82
+00:13:53,971 --> 00:13:55,272
+Let me clear my screen.
+
+83
+00:13:59,028 --> 00:14:24,927
+Okay. Equality means this, and what about the sum? What about the sum or difference between two vectors? Let me see what is the definition in the sequel. Look at this paragraph here.
+
+84
+00:14:25,200 --> 00:14:35,980
+Frequently speaking, in physical applications, sometimes it's necessary to deal with a directed line segment PQ from the point P, not necessarily the origin, right?
+
+85
+00:14:36,220 --> 00:14:42,139
+Not always the tail of a certain vector should be located at the origin, right?
+
+86
+00:14:42,399 --> 00:14:45,320
+It can be any point in the plane.
+
+87
+00:14:46,278 --> 00:14:50,000
+So just consider P, which is not the origin, and another point Q.
+
+88
+00:14:50,548 --> 00:14:57,427
+Bu, bu, vektör, P, Q. Bu, bu, vektör, P, vektör, vektör, Q.
+
+89
+00:14:57,908 --> 00:15:00,326
+İzlediğiniz için, bu, vektör, koordinatör sistemler.
+
+90
+00:15:01,528 --> 00:15:06,466
+Bu, nasıl bir koordinatör, komponent, bu, vektör?
+
+91
+00:15:12,754 --> 00:15:35,595
+Whenever you have two point, two different point in the plane, you have one vector determined by them, right? Determined by them. How do you know? Look at this. The point P can be realized as a vector, as I said. The same way, the point Q is also a vector. Let me write U here.
+
+92
+00:15:36,211 --> 00:15:38,051
+Ve u
+
+93
+00:15:38,051 --> 00:15:39,951
+is the vector o,
+
+94
+00:15:40,110 --> 00:15:41,530
+the directed line segment
+
+95
+00:15:41,530 --> 00:15:42,591
+op,
+
+96
+00:15:43,471 --> 00:15:45,791
+and the vector v
+
+97
+00:15:45,791 --> 00:15:48,192
+is another directed line segment
+
+98
+00:15:48,192 --> 00:15:49,551
+o q.
+
+99
+00:15:51,110 --> 00:15:52,230
+But what is
+
+100
+00:15:52,230 --> 00:15:53,250
+the vector
+
+101
+00:15:53,250 --> 00:15:56,211
+given by the point
+
+102
+00:15:56,211 --> 00:15:57,412
+p and q, right?
+
+103
+00:15:57,572 --> 00:15:59,870
+p, q, this is the vector. Let me write w.
+
+104
+00:16:00,630 --> 00:16:01,912
+So what's the relationship
+
+105
+00:16:01,912 --> 00:16:03,471
+between w, u, and v?
+
+106
+00:16:08,850 --> 00:16:12,890
+It's already given the coordinates of P and Q here, right?
+
+107
+00:16:13,192 --> 00:16:16,370
+This is the coordinates of P, and these are the coordinates of Q.
+
+108
+00:16:18,572 --> 00:16:19,910
+Let me write here.
+
+109
+00:16:23,051 --> 00:16:26,791
+Look at this. This is the picture, P, Q.
+
+110
+00:16:27,390 --> 00:16:28,490
+This is the vector.
+
+111
+00:16:28,971 --> 00:16:32,431
+Coordinate of the point P are X and Y.
+
+112
+00:16:32,884 --> 00:16:45,124
+Coördinates of the point Q are X' Y' so what is the vector W coordinate? 2 by 1 vector, as I said. How do you know?
+
+113
+00:16:47,104 --> 00:16:55,443
+Look at this. Origin is here. This is the vector U, as I said. So the components are X and Y.
+
+114
+00:16:56,178 --> 00:17:11,467
+Bu, bu ve b'ye
+
+115
+00:17:17,522 --> 00:17:18,462
+Let me write.
+
+116
+00:17:24,692 --> 00:17:26,211
+PQ is
+
+117
+00:17:34,740 --> 00:17:35,200
+Why?
+
+118
+00:17:38,200 --> 00:17:41,960
+I'm going to give the definition of sum of two vectors, right?
+
+119
+00:17:42,480 --> 00:17:44,598
+Look at the vectors u and pq.
+
+120
+00:17:45,819 --> 00:17:51,299
+pq starts at the point where u ends, right?
+
+121
+00:17:51,420 --> 00:17:55,598
+I mean, the head of u is the tail of pq, right?
+
+122
+00:17:55,598 --> 00:18:00,859
+That means you can sum this vector with this one.
+
+123
+00:18:01,364 --> 00:18:27,663
+Obtain this one, right? I mean, u plus pq is equal to v, right? That's why pq is this one. So all you need to know is the definition of sum of two vectors or difference of two vectors, but this is very immediate because whenever you have
+
+124
+00:18:30,002 --> 00:18:30,962
+uvektör
+
+125
+00:18:34,644 --> 00:18:36,784
+R2, 2-space.
+
+126
+00:18:37,344 --> 00:18:37,844
+Look at this.
+
+127
+00:18:37,923 --> 00:18:39,063
+This is the definition, right?
+
+128
+00:18:39,784 --> 00:18:40,384
+Definition.
+
+129
+00:18:40,942 --> 00:18:51,644
+U plus V means, in terms of coordinate, you have to sum their corresponding component and write in the correct position, right?
+
+130
+00:18:54,163 --> 00:18:55,344
+This is the definition.
+
+131
+00:18:55,644 --> 00:18:59,284
+It doesn't matter if you consider difference, right?
+
+132
+00:19:00,276 --> 00:19:02,855
+vekizde, değişirme, ok?
+
+133
+00:19:06,324 --> 00:19:16,743
+Okay? So if this is a vector u, and if this is a vector v, u plus v is this vector, right?
+
+134
+00:19:21,236 --> 00:19:40,155
+We can give one more simple definition, for example, what's the meaning of if k is a non-zero scalar, and u is a vector in R2, k times u is another vector, right?
+
+135
+00:19:40,155 --> 00:19:46,955
+Another vector defined by, look at this, k times u is,
+
+136
+00:19:47,700 --> 00:19:50,619
+Let me write the component x, y.
+
+137
+00:19:52,460 --> 00:20:00,000
+Since u is a 2 by 1 column matrix, and since you already know the scalar multiplication for matrices,
+
+138
+00:20:02,000 --> 00:20:05,740
+you write immediately something like this, right?
+
+139
+00:20:06,440 --> 00:20:08,359
+So, this is the definition.
+
+140
+00:20:10,002 --> 00:20:14,163
+A múltiple of a vector, if you prefer, you can use this terminology.
+
+141
+00:20:14,363 --> 00:20:19,742
+This is a múltiple of the vector u, or u is multiplied by a non-zero, scala k.
+
+142
+00:20:20,762 --> 00:20:31,623
+Geometrically speaking, that means, for example, if this is u, and if k is positive, of course, then you extend or you contract.
+
+143
+00:20:32,083 --> 00:20:34,482
+It depends on the value of k.
+
+144
+00:20:36,596 --> 00:20:41,395
+K is positive, but less than 1.
+
+145
+00:20:42,175 --> 00:20:46,455
+Then, K times U means this vector, right?
+
+146
+00:20:47,476 --> 00:20:55,635
+If K is greater than 1, this is your vector, to extend, right?
+
+147
+00:20:57,056 --> 00:20:59,395
+And it might be negative also, right?
+
+148
+00:20:59,455 --> 00:21:01,715
+If K is negative, that means U.
+
+149
+00:21:05,364 --> 00:21:07,384
+You write something like this, okay?
+
+150
+00:21:10,064 --> 00:21:13,124
+Direction changes, but you are still on the same supporting line.
+
+151
+00:21:13,624 --> 00:21:20,503
+Supporting line means this line, excuse me, this line, supporting line I call.
+
+152
+00:21:32,530 --> 00:21:35,932
+So, look at this now.
+
+153
+00:21:36,451 --> 00:21:47,071
+After these definitions, standard, elementary definition, you can write exactly the vector, determined by a couple of points, different points, of course, right?
+
+154
+00:21:47,211 --> 00:21:48,412
+So this is the difference.
+
+155
+00:21:49,071 --> 00:21:50,132
+This is the difference.
+
+156
+00:21:50,211 --> 00:21:50,451
+Why?
+
+157
+00:21:51,990 --> 00:21:52,652
+Look at this.
+
+158
+00:21:53,672 --> 00:21:57,971
+Or maybe I can draw another picture.
+
+159
+00:22:00,084 --> 00:22:02,243
+This is beat. This is cue.
+
+160
+00:22:08,596 --> 00:22:15,236
+And as I have just said that PQ is Q minus P.
+
+161
+00:22:18,674 --> 00:22:20,934
+Or, it's better to write this way.
+
+162
+00:22:23,934 --> 00:22:24,634
+Why?
+
+163
+00:22:27,035 --> 00:22:29,255
+Because, look at this.
+
+164
+00:22:29,954 --> 00:22:34,974
+If you sum u and pq, you obtain v, right?
+
+165
+00:22:36,316 --> 00:22:40,875
+So, u plus pq is v.
+
+166
+00:22:42,914 --> 00:22:43,596
+So,
+
+167
+00:22:44,050 --> 00:23:01,672
+Now, since you already know, since now you know the definition of sum of two vectors, don't forget that u is the vector whose components are x, y, v is the vector whose components are x prime, y prime, right?
+
+168
+00:23:01,672 --> 00:23:08,030
+So we are going to determine entries of this vector pq.
+
+169
+00:23:09,682 --> 00:23:22,463
+Alright, so let me write x, y. I don't know, for now, the entries of pq, x prime, y prime, right?
+
+170
+00:23:24,844 --> 00:23:36,084
+Let me continue here, x plus some asterisks here, I don't care, then y plus some numbers, this is the
+
+171
+00:23:36,468 --> 00:23:44,827
+Açık, 2x1 matris, right? On the right-hand side, you have another one, which is 2x1 again.
+
+172
+00:23:46,107 --> 00:23:52,988
+And here, you see equality between two vectors, right? And this is possible if and only if.
+
+173
+00:23:54,048 --> 00:24:01,948
+Each corresponding entry, coincident, right? X plus asterisk here, equal X prime.
+
+174
+00:24:02,548 --> 00:24:29,007
+y plus asterisk here, y prime, right? So you solve this simple system to say what? This first asterisk is the difference of x prime x, the other one, the difference of y prime y, right? So finally, the vector pq,
+
+175
+00:24:34,548 --> 00:24:36,787
+You can write something like this.
+
+176
+00:24:39,027 --> 00:24:42,606
+But the correct way actually is this one, right?
+
+177
+00:24:45,086 --> 00:24:49,548
+Bu şekilde aklınızda tutabilirsiniz arkadaşlar. İki nokta ile verilen vektörün yazılışı.
+
+178
+00:24:50,548 --> 00:24:55,626
+Son noktadan ilk noktayı çıkartıyormuşum gibi. Tabii bunu koordinatları farkı olarak yorumlayacaksınız, tamam mı?
+
+179
+00:24:56,660 --> 00:25:10,039
+Yani bu üç boyutlu uzayda da böyledir, dört boyutlu, en boyutlu öklü uzayında da böyledir, bu kural değişmez. Yani vektörlerin toplamı, farkı, bir skalayla çarpımı, tamam mı? Bunlar bu şekilde.
+
+180
+00:25:14,039 --> 00:25:19,359
+Let me ask a simple question for you. Just look at this figure here.
+
+181
+00:25:20,146 --> 00:25:25,386
+You see different directed line segment representing the same vector v. Why?
+
+182
+00:25:26,928 --> 00:25:35,386
+You have a vector u, another vector v, but actually these represent the same vector. Why?
+
+183
+00:25:36,988 --> 00:25:40,708
+Söyleyecek olan var mı? Why these two vectors are actually the same?
+
+184
+00:25:48,500 --> 00:26:15,211
+Çünkü her ve eşit ve eş
+
+185
+00:26:16,019 --> 00:26:23,940
+And what about their directions? Do they indicate the same direction or not?
+
+186
+00:26:26,038 --> 00:26:31,259
+Why we say different directed line segment in the figure actually represent the same vector?
+
+187
+00:26:32,640 --> 00:26:34,838
+Any answer for this simple question?
+
+188
+00:26:39,316 --> 00:26:42,816
+Bu bir durumda aynı durumda.
+
+189
+00:26:46,536 --> 00:26:48,855
+Bu, aslında aynı vektörler.
+
+190
+00:26:48,996 --> 00:26:52,615
+Çünkü karakteristik değişecek.
+
+191
+00:26:53,096 --> 00:26:55,076
+Aynı length, aynı direkçon.
+
+192
+00:26:56,536 --> 00:26:59,655
+Doğrultu, yön ve şiddet aynı olursa, vektörler eşit olur.
+
+193
+00:27:00,180 --> 00:27:26,039
+Başka bir terminoloji de kullanılabilir dedim ya az önce iki vektörü karşılaştırmak için. Bunu kastetmiştim yani. Ya burada gördüğünüz, mesela şekil A'da gördüğünüz iki vektör de aslında aynı vektör. Şekil B'de gördüğünüz üç vektör de aslında tek vektör. Mesela burada bunlara eşit olmayan, bunlar gibi olmayan bir vektör yazmak istersen, mesela şöyle bir vektör yazarsan, şöyle, yani uzunluk olarak aynısını al ama yönünü değiştir mesela.
+
+194
+00:27:28,372 --> 00:27:30,412
+Bu mavi vektör yeşillerle aynı değil.
+
+195
+00:27:31,132 --> 00:27:38,432
+If you add this vector to the picture, so you add a different vector in characteristic, right?
+
+196
+00:27:39,432 --> 00:27:42,172
+It doesn't matter if it has the same length.
+
+197
+00:27:43,011 --> 00:27:44,471
+But what about the direction?
+
+198
+00:27:44,811 --> 00:27:45,332
+Look at this.
+
+199
+00:27:46,951 --> 00:27:48,011
+Opposite direction, right?
+
+200
+00:27:49,010 --> 00:27:55,570
+So you have all these three vectors represent just one class, and this vector represent another class.
+
+201
+00:27:55,651 --> 00:27:57,671
+These classes are different, right?
+
+202
+00:27:59,070 --> 00:27:59,671
+Okay.
+
+203
+00:28:03,954 --> 00:28:12,414
+I have already given this definition, some of the vectors in R2, right?
+
+204
+00:28:12,474 --> 00:28:21,576
+But it doesn't matter if you take these two vectors in R3, you just add one more component, right?
+
+205
+00:28:21,914 --> 00:28:25,255
+And then you are given a couple of vectors in R3.
+
+206
+00:28:25,255 --> 00:28:27,394
+And then their sum is again the same.
+
+207
+00:28:29,971 --> 00:28:36,432
+Formular, right? But just write this third component here. Okay? So it doesn't matter.
+
+208
+00:28:38,230 --> 00:28:41,432
+All right. What else do we have?
+
+209
+00:28:46,420 --> 00:28:48,578
+Bu figür is interesting, look at this.
+
+210
+00:28:49,680 --> 00:28:54,000
+You have u and b, and their sum is this one.
+
+211
+00:28:55,778 --> 00:28:58,278
+Their difference, why don't you check?
+
+212
+00:28:58,660 --> 00:29:00,980
+This is their difference, right?
+
+213
+00:29:01,538 --> 00:29:02,160
+Difference.
+
+214
+00:29:12,596 --> 00:29:14,076
+V minus U.
+
+215
+00:29:14,816 --> 00:29:15,096
+Okay?
+
+216
+00:29:20,276 --> 00:29:45,234
+All right, scala multiple, I have already given the definition, right? A multiple c or k times u of a vector u, k is non-zero or c, if you prefer c, this vector, right? I have already said, if the scala is positive, then this is the same direction as u, right? If this is u, this is c times u, the same direction.
+
+217
+00:29:46,259 --> 00:29:55,160
+Eğer c'ye negatif, c'ye negatif, c'ye negatif, c'ye negatif, c'ye negatif,
+
+218
+00:29:55,160 --> 00:29:55,380
+yi, evet?
+
+219
+00:29:58,338 --> 00:29:59,460
+Opposite direkçon.
+
+220
+00:29:59,838 --> 00:30:08,019
+Whenever you consider scalar multiple by a negatif number,
+
+221
+00:30:08,558 --> 00:30:11,160
+then you consider, that means you consider opposite direkçon,
+
+222
+00:30:11,220 --> 00:30:11,400
+right?
+
+223
+00:30:14,516 --> 00:30:42,016
+Okay, what else? Difference between vectors, this is the, actually the same definition of sum of two vectors, right? I mean, sum, look at this, difference between you and, this is actually the combination, combination of what? Sum of two vectors and scalar multiple, right? Scalar.
+
+224
+00:30:42,804 --> 00:30:44,503
+multiple, right?
+
+225
+00:30:45,223 --> 00:30:52,183
+Because you take one, multiply by minus one, and sum with another vector.
+
+226
+00:30:52,324 --> 00:30:53,903
+This is exactly u minus v.
+
+227
+00:30:54,223 --> 00:30:59,344
+That's why I said combination of a sun and scalar multiplication, right?
+
+228
+00:30:59,884 --> 00:31:01,084
+Now, vectors in space.
+
+229
+00:31:01,522 --> 00:31:29,419
+Yani, her şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şey
+
+230
+00:31:30,420 --> 00:31:53,866
+Bu, bu
+
+231
+00:31:54,355 --> 00:32:21,795
+From the positive x-axis to the positive y-axis, this is the positive x-axis, right? As you know, x positive. This is the positive y-axis. So if you curve, your fingers of the right hand in the direction of 90 degree rotation, in this way, this is the counterclockwise rotation, right? Counterclockwise rotation.
+
+232
+00:32:23,220 --> 00:32:25,440
+Bu yüzden bu şekilde positive direkçonelde.
+
+233
+00:32:27,920 --> 00:32:30,400
+Bu şekilde, bu şekilde,
+
+234
+00:32:30,400 --> 00:32:32,038
+bu şekilde,
+
+235
+00:32:32,038 --> 00:32:32,759
+bu şekilde.
+
+236
+00:32:33,160 --> 00:32:33,960
+Bu şekilde,
+
+237
+00:32:34,098 --> 00:32:39,598
+bu şekilde,
+
+238
+00:32:40,084 --> 00:32:45,163
+We are familiar with this terminology from trigonometry, if you remember, right?
+
+239
+00:32:45,564 --> 00:32:57,284
+So right-handed coordinate system means when you curl the fingers of your right hand in the direction of a 90 rotation in the counterclockwise way,
+
+240
+00:32:58,903 --> 00:33:06,503
+then your thumb will point in the direction of the positive z-axis. This is the positive z-axis, right?
+
+241
+00:33:07,538 --> 00:33:20,200
+Left-handed coordinate system, you can also say something about left-handed coordinate system, that means this is the direction, right? Negative direction.
+
+242
+00:33:25,076 --> 00:33:27,955
+Right-handed coordinate system is more usual, right?
+
+243
+00:33:32,403 --> 00:33:56,844
+All right. A vector in space, in space, excuse me, or tree space is a 3 by 1 vector. These x, y, z are the component or entries of the x, vector x, right? To compare vectors in space, you have to check that each entry are coincident, right?
+
+244
+00:34:00,242 --> 00:34:02,863
+Bu part, we can test quickly.
+
+245
+00:34:04,063 --> 00:34:06,242
+Look at this figure here.
+
+246
+00:34:07,623 --> 00:34:11,702
+You are in the three-dimensional Euclidean space.
+
+247
+00:34:11,983 --> 00:34:23,663
+You see, apparently you have two vectors, but actually they represent this different directed line segment actually represent the same vector, right?
+
+248
+00:34:23,663 --> 00:34:24,619
+Because they...
+
+249
+00:34:39,922 --> 00:34:49,083
+As I said, Scala Multiple, some vector, some, they are all valid in three space also.
+
+250
+00:34:49,083 --> 00:34:58,043
+Look at this, the same formula. The only difference is that you include one more coordinate, one more dimension, right?
+
+251
+00:34:58,503 --> 00:35:05,643
+One more dimension. For example, a very simple example, example four, you are given a couple of vectors in space here.
+
+252
+00:35:06,643 --> 00:35:07,884
+So what is the...
+
+253
+00:35:08,371 --> 00:35:33,971
+New vector, u plus v, minus 2 times u, this is a combination, right? 3 times u, plus minus 2 times v. If this is u, minus u means what? Look at this. Minus 2 times u is exactly this vector here, right?
+
+254
+00:35:36,692 --> 00:35:43,010
+So please write the coordinate of these two vectors, which are very elementary, right?
+
+255
+00:35:45,172 --> 00:35:45,612
+Okay.
+
+256
+00:35:48,090 --> 00:35:50,771
+Zero vector, this is also interesting. Look at this.
+
+257
+00:35:51,391 --> 00:35:53,391
+In R2 also we have zero vector.
+
+258
+00:35:54,271 --> 00:35:59,692
+Bolt phase letter is yours. Look at this. This is a 3 by 1 matrix.
+
+259
+00:36:00,563 --> 00:36:24,603
+whose entries are all zero, right? So zero vector means all entries or component are zero, right? This is the immediate consequence. Whenever you have a vector and if you sum, if you consider the sum between this u and zero, particularly zero vector, you will obtain the u itself, right? This is very easy.
+
+260
+00:36:26,452 --> 00:36:50,472
+U plus 0, 0. It doesn't matter if you consider the sum in this order. No difference, right? This is one property. Another property is that if you consider U, if you multiply U by minus 1 and consider this sum without, the order is not important. Look at this.
+
+261
+00:37:17,268 --> 00:37:22,626
+vektörs in, R2, R3, et cetera, right?
+
+262
+00:37:27,922 --> 00:37:37,103
+All right, we have some properties of these elementary operations, evolving vectors in R2, R2, or R3, right?
+
+263
+00:37:37,364 --> 00:37:43,123
+Suppose you have vectors u, v, w in two-space or three-space, it doesn't matter.
+
+264
+00:37:43,663 --> 00:37:48,384
+Suppose you are given some real numbers, c and e, probably they are not zero.
+
+265
+00:37:49,304 --> 00:37:50,922
+Then the following properties are...
+
+266
+00:37:52,692 --> 00:38:17,811
+Veyli, look at this. The first one says, let me enlarge the screen, look at this. The first one says that, it doesn't matter, the order, when you sum the vectors, right? U plus V is the same vector as V plus U, right? This is commutativity. The second property, B, this is called associativity, right? Associativity.
+
+267
+00:38:19,572 --> 00:38:29,092
+Roughly speaking, it says that it doesn't matter in what way you are regrouping the vectors here, right, to sum.
+
+268
+00:38:29,411 --> 00:38:34,911
+It doesn't matter if you sum first v and w and then add u to this new sum.
+
+269
+00:38:35,572 --> 00:38:44,532
+This vector will be exactly equal to the vector v, excuse me, w added to u plus v, right?
+
+270
+00:38:44,927 --> 00:39:11,266
+This is associativity. See, we have already said. Any vector, when added to zero, gives itself, right? This is zero. This is a kind of distributivity, right? You already know what's the meaning of scalar multiple, right? So this is just a manipulation, right? What's the meaning of scalar multiplication of vector sum?
+
+271
+00:39:11,614 --> 00:39:17,135
+Bu, eğer, u plus v is a vector, bu, a scalar multiple, right?
+
+272
+00:39:18,036 --> 00:39:22,396
+Scalar multiple, but you have to distribute this coefficient, this scalar c,
+
+273
+00:39:23,476 --> 00:39:25,916
+for both vectors involved in the sum, right?
+
+274
+00:39:26,315 --> 00:39:27,956
+So, cu plus cv.
+
+275
+00:39:29,076 --> 00:39:29,655
+Look at this.
+
+276
+00:39:29,775 --> 00:39:33,556
+This is another manipulation of scalar multiplication.
+
+277
+00:39:34,376 --> 00:39:37,835
+C and d are both real scalars, so they are sum.
+
+278
+00:39:38,387 --> 00:39:40,148
+A real scalar, right?
+
+279
+00:39:41,547 --> 00:39:44,427
+We have another distribution here.
+
+280
+00:39:44,967 --> 00:39:48,327
+This is equal to c times u plus d times u.
+
+281
+00:39:51,467 --> 00:39:56,168
+This is also a scalar multiple, but it's a bit different, right?
+
+282
+00:39:56,447 --> 00:40:01,108
+Slightly different version of scalar multiple of a vector.
+
+283
+00:40:01,907 --> 00:40:05,588
+So what I understand from this property g,
+
+284
+00:40:06,739 --> 00:40:25,318
+It doesn't matter in what order you consider the multiple of u, right? C times d times u is exactly the same. D times c times u or cd times u. It doesn't matter.
+
+285
+00:40:26,739 --> 00:40:38,739
+İmkincisi, bu real skala 1, bu noktada bir noktada değişim, çünkü değişim, ilerken, ilerken, ilerken, ilerken, ilerken, ilerken, ilerken, ilerken, ilerken, ilerken, aynı noktada.
+
+286
+00:40:39,739 --> 00:40:44,739
+Bu noktada, bu noktada, bu noktada, ama bu noktada, bu noktada, önemli.
+
+287
+00:40:44,739 --> 00:40:47,739
+Bu noktada, bu noktada, önemli.
+
+288
+00:40:48,739 --> 00:40:50,739
+Tidak, 10 more minutes.
+
+289
+00:40:50,739 --> 00:40:52,074
+Do you have any questions?
+
+290
+00:40:54,739 --> 00:41:12,659
+Okay, we have some exercises. I have to give scala product and cross product of vectors, right? These are, let me see.
+
+291
+00:41:16,306 --> 00:41:16,806
+Ok.
+
+292
+00:41:22,003 --> 00:41:25,422
+Length and direction of vectors in two-spaces or three-spaces.
+
+293
+00:41:25,884 --> 00:41:36,143
+So I have said, I have pronounced this term length or magnitude, but what's the expression of the magnitude?
+
+294
+00:41:36,943 --> 00:41:40,963
+Suppose let's start with the vector, with a vector in R2.
+
+295
+00:41:41,663 --> 00:41:45,724
+What's the meaning of this? What's the meaning of length or magnitude of such a vector?
+
+296
+00:41:47,891 --> 00:41:49,891
+Bu, herkesin var.
+
+297
+00:42:05,427 --> 00:42:08,847
+You have to consider this triangle here, right?
+
+298
+00:42:11,487 --> 00:42:14,788
+Hypotenuse is this number.
+
+299
+00:42:19,380 --> 00:42:29,018
+V1, V2, are real numbers. Don't forget this, right? The component of V are real numbers, right? Don't forget this.
+
+300
+00:42:32,532 --> 00:42:49,771
+Bu, bu
+
+301
+00:42:53,235 --> 00:43:09,414
+Okay, so it doesn't matter, actually, if you consider now a vector in 3 space, right? The formula is still valid, but the difference is that one more coordinate, one more entry is involved in the formula, right?
+
+302
+00:43:09,414 --> 00:43:12,195
+So let me write immediately here.
+
+303
+00:43:13,956 --> 00:43:17,956
+If you take a vector v here,
+
+304
+00:43:19,956 --> 00:43:29,956
+Of course, the three component, and this magnitude means what?
+
+305
+00:43:34,867 --> 00:43:36,367
+Okay, the same form.
+
+306
+00:43:45,235 --> 00:43:51,556
+Alright, you can deduce some other formulas related to the length or magnitude of vectors.
+
+307
+00:43:51,556 --> 00:43:55,775
+For example, if you are given a couple of vectors in R2,
+
+308
+00:44:02,099 --> 00:44:02,480
+Right?
+
+309
+00:44:05,659 --> 00:44:12,280
+And suppose we are interested in the magnitude of this difference, this difference, right?
+
+310
+00:44:14,940 --> 00:44:27,599
+Since you already know the difference, you write in terms of coordinate, and since you already know what's the meaning of length, you write.
+
+311
+00:44:28,275 --> 00:44:34,494
+B1U1² plus
+
+312
+00:44:38,867 --> 00:44:48,867
+Ok, put 2 here, right? Or delete these 2 and put square root here, right?
+
+313
+00:44:58,579 --> 00:45:12,556
+Ve bu farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir farkı ile ilgili bir fark
+
+314
+00:45:21,300 --> 00:45:32,480
+All right, let me see what we have. Direction of a vector in R2 is given by specifying its angle of inclination or slope.
+
+315
+00:45:33,099 --> 00:45:44,039
+The same way the direction of a vector in R3 is specified by giving the cosines of the angles that the vector v makes with the positive x, y, and z-axis respectively, right?
+
+316
+00:45:44,039 --> 00:45:48,699
+These are called direction cosines. Let me see.
+
+317
+00:45:49,940 --> 00:45:56,518
+I think I will need more time to speak, Scala product and cross product.
+
+318
+00:45:57,059 --> 00:46:05,940
+So maybe it's better to mention these two product.
+
+319
+00:46:07,278 --> 00:46:10,858
+Look at this, inner product or dot product, you already know.
+
+320
+00:46:11,860 --> 00:46:29,400
+Just remember, when we are learning matris multiplication, I have already said what's the meaning of dot product, right? Dot product in Rn, actually, because we were learning product of matrices of appropriate orders, right?
+
+321
+00:46:30,420 --> 00:46:57,219
+appropriate orders. So you already know the scalar or dot product of vectors, because just consider the rows or columns of a matriks as vectors, right? As vectors. So if you know dot product, you know scalar multiplication, right? So we have already mentioned dot product of vectors in R2, R3, actually in Rn.
+
+322
+00:46:59,027 --> 00:46:59,487
+Right?
+
+323
+00:47:01,186 --> 00:47:02,867
+This is the dot product.
+
+324
+00:47:05,166 --> 00:47:07,728
+Or standard inner product of two vectors.
+
+325
+00:47:07,827 --> 00:47:08,268
+Look at this.
+
+326
+00:47:08,427 --> 00:47:10,106
+One vector, one more vector.
+
+327
+00:47:10,527 --> 00:47:11,027
+Where?
+
+328
+00:47:11,186 --> 00:47:11,788
+In R2.
+
+329
+00:47:13,106 --> 00:47:14,867
+So this is the U.
+
+330
+00:47:16,567 --> 00:47:18,067
+Dot product of U, V.
+
+331
+00:47:19,067 --> 00:47:20,146
+Look at the formula.
+
+332
+00:47:21,146 --> 00:47:22,067
+U multiply.
+
+333
+00:47:24,052 --> 00:47:29,092
+corresponding entries or component and then sum their product, right?
+
+334
+00:47:29,172 --> 00:47:33,731
+This is the number that dot product gives you.
+
+335
+00:47:33,952 --> 00:47:37,172
+I mean, the definition of dot product is a real number, right?
+
+336
+00:47:37,172 --> 00:47:44,911
+It doesn't matter if you deal with vectors in tree space, right?
+
+337
+00:47:45,192 --> 00:47:48,152
+The formula is again the same, right?
+
+338
+00:47:48,452 --> 00:47:48,911
+Look at this.
+
+339
+00:47:49,072 --> 00:47:50,192
+This is the difference.
+
+340
+00:47:51,922 --> 00:47:57,623
+İlkülde bir component, bir term, bu sum, ama yine bir real number.
+
+341
+00:47:57,864 --> 00:48:03,224
+İlkülde bir dot product, iki vektör vektör in R3, bir real number.
+
+342
+00:48:16,659 --> 00:48:20,320
+Bu, bu, bu, definiçinin, dolde, product, R2, R3.
+
+343
+00:48:21,599 --> 00:48:22,159
+Rahim.
+
+344
+00:48:29,715 --> 00:48:30,514
+What else?
+
+345
+00:48:33,014 --> 00:48:35,155
+Let me see what we have here.
+
+346
+00:48:35,835 --> 00:48:41,474
+Suppose you have a couple of vectors that form this angle here, right?
+
+347
+00:48:41,474 --> 00:48:46,394
+So, let me say theta here.
+
+348
+00:48:48,574 --> 00:48:55,755
+So, how do you know that cosine of this angle is the dot product?
+
+349
+00:48:56,532 --> 00:49:02,192
+Bütün U and V, don't forget that this product is a real number.
+
+350
+00:49:03,371 --> 00:49:05,612
+Magnitude of U is another real number.
+
+351
+00:49:06,210 --> 00:49:08,672
+Magnitude of V is another real number.
+
+352
+00:49:08,791 --> 00:49:10,311
+So their product is a number.
+
+353
+00:49:11,032 --> 00:49:15,052
+If you consider this quotient, this is still a real number, right?
+
+354
+00:49:15,052 --> 00:49:22,411
+And suppose theta varies between 0 and pi, right?
+
+355
+00:49:27,315 --> 00:49:31,954
+It might be the case that theta is something like this, right? Doesn't matter.
+
+356
+00:49:33,434 --> 00:49:35,454
+How do you know this formula?
+
+357
+00:49:38,014 --> 00:49:41,675
+From where we can bring something like this?
+
+358
+00:49:42,175 --> 00:49:45,894
+Bunu hatırlayan var mı arkadaşlar? Bu formülü nereden elde etmiş olabilir sizce?
+
+359
+00:49:51,219 --> 00:49:57,900
+Kojinus kuralı diye bir şey hatırlıyor musunuz? Cosine rule from trigonometry. Do you remember something like that or not?
+
+360
+00:50:06,036 --> 00:50:17,835
+suppose, you have three points, not in the same lines, right? Collineer. So this is a triangle.
+
+361
+00:50:18,675 --> 00:50:31,635
+Suppose this is the angle theta, right? I mean, you can write something like this. The vector AB and AC.
+
+362
+00:50:32,659 --> 00:50:59,998
+The angle, let me write theta. How do you know? Suppose that this length is A and this length is B, this is C. So what is the cosine of theta? Do you remember this cosine rule, if I'm not wrong? Cosine rule. Do you remember, hatırlayan var mı arkadaşlar bunu?
+
+363
+00:51:05,427 --> 00:51:11,067
+Hatırlayan var mı bu kralı? Do you remember this formula from trigonometri or not?
+
+364
+00:51:20,018 --> 00:51:21,139
+Something like this.
+
+365
+00:51:26,547 --> 00:51:27,666
+Is it true or not?
+
+366
+00:51:34,643 --> 00:51:36,963
+Hatırlayan var mı arkadaşlar ikinciden bu formülü?
+
+367
+00:51:41,204 --> 00:51:50,244
+Evet, isterseniz bu kısmı artık bir sonraki derse bırakalım. Yani iç çarpım veya nokta çarpımı, biz matris çarpımlarından bahsederken aslında tanımını vermiştik değil mi?
+
+368
+00:51:53,063 --> 00:52:07,884
+Onu vektörlerin aralarındaki açı cinsinden ifadesini yazacağım. Bu da üçgenler için kosyonus kuralından geliyor zaten. Ondan sonra da vektör çarpımından bahsedeceğim, iki vektörün. Bir de karışık karma çarpımından bahsedeceğim. Bunlar benim 15 dakikamı alır.
+
+369
+00:52:08,436 --> 00:52:18,976
+Bunların bir takım sağladığı özellikler var. Onlardan da bahsederim. Peşinden de vektör uzaylarına geçerim. Sorusu olan var mı arkadaşlar? Do you have any question?
+
+370
+00:52:21,655 --> 00:52:29,016
+Hocam, bir önceki sayfada yazdığınız kural soru işareti koydunuz ya yanına. Bu değil miydi zaten cosünus formülü?
+
+371
+00:52:29,896 --> 00:52:33,255
+Tamam, böyle bir şeydi zaten. Ben belki eksi artı hatası yapmış olabilirim diye.
+
+372
+00:52:34,195 --> 00:52:38,675
+Anladım. Ben de böyle söyledim de. Tamamdır hocam peki.
+
+373
+00:52:38,675 --> 00:52:55,114
+Evet. Ama şimdi bunun nokta çarpımla, dot product'la alakası ne diyeceksin? Değil mi mesela? Değil mi? Yani burada A kare, B kare, C kare diyorsun. Yukarıda AB, AC vektörlerin arasındaki açıya teta demişim. Yani dot product nereden geldi? Şimdi sen burada A, iki nokta bir vektör tanımlar dedik ya az önce.
+
+374
+00:52:56,335 --> 00:53:01,255
+Şimdi mesela A vektörünün, A noktasının koordinatları A1, A2 olsun.
+
+375
+00:53:02,420 --> 00:53:24,760
+Tamam, B'ninkiler B1, B2 olsun. Mesela C noktasının koordinatları da C1, C2 olsun. Sen şimdi buradan A, B vektörünü nasıl yazacaksın? B eksi A demiştik değil mi? Kabaca aklınızda kalsın diye. Bu da ne demek? B1 eksi A1, virgül, B2 eksi A2 demek değil mi? Koordinatları farkı, iki vektörün farkını yazarken koordinatları farkını alıyorsun. Değil mi?
+
+376
+00:53:29,983 --> 00:53:57,184
+C'nin koordinatlarından A'nın koordinatlarını çıkarıyorsun ama aynı sıradaki koordinatların farkını alıyorsun. C1-A1, C2-A2. Değil mi? Mesela bu ikisinin, ya buna istersen U vektörü de, buna istersen V de ya. U ile V'nin nokta çarpımını nasıl yazacaksın sen bu durumda? Ne dedik biz? Yani bileşenlerin çarpımlarının toplamı dedik değil mi? V1-A1.
+
+377
+00:53:58,483 --> 00:54:13,722
+C1-A1 artı B2-A2, C2-A2 mi diyeceksin mesela? Yani iç çarpıma bağlayacağım yani, getirip bağlayacağım en sonunda, anlatabiliyor muyum? Oradan geliyor yani.
+
+378
+00:54:14,483 --> 00:54:15,742
+Evet hocam, anladım şimdi.
+
+379
+00:54:16,742 --> 00:54:17,663
+Var mı sorusu olan?
+
+380
+00:54:27,827 --> 00:54:30,447
+All right, see you next week. Bye.
+
+381
+00:56:45,619 --> 00:56:46,239
+Merhaba arkadaşlar.
+
+382
+00:56:51,186 --> 00:56:54,208
+Dersimize başlamadan önce sınavınız nasıl geçti diye bir sorsam.
+
+383
+00:56:56,447 --> 00:56:59,786
+Kaç kişi var? 17 kişi. Sesimin geliyor değil mi arkadaşlar?
+
+384
+00:57:13,364 --> 00:57:20,983
+İçinizden birisi geri dönüş yapabilir mi? Tamam. Sınavınız nasıl geçti? Söz alıp konuşmak isteyen var mı? Nasıl buldunuz sınavı?
+
+385
+00:57:29,715 --> 00:57:34,694
+Evet, kimse konuşmak istemiyor bugün. O zaman biz dersimize başlayalım.
+
+386
+00:57:38,451 --> 00:57:51,551
+Evet, bu yedinci haftadan kalan konu, tamam mı? Determinantın uygulamalarından. Kramer kuralı diye bir kısım vardı. Burası çok çabuk geçilebilecek bir şey, o yüzden üstünde durmadım sınav öncesinde.
+
+387
+00:57:51,551 --> 00:57:54,072
+Ok, let us consider now.
+
+388
+00:57:54,482 --> 00:58:00,942
+diğer kullanımlar için de bir kere
+
+389
+00:58:00,942 --> 00:58:05,643
+ve şimdi nasıl kullanılıyor
+
+390
+00:58:05,643 --> 00:58:08,382
+bu sistemler için kullanılıyor
+
+391
+00:58:08,382 --> 00:58:12,182
+bu teorim
+
+392
+00:58:12,182 --> 00:58:19,914
+Kramer'in
+
+393
+00:58:21,683 --> 00:58:28,103
+So, suppose you are given such a linear system, non-homogeneous, right?
+
+394
+00:58:28,183 --> 00:58:33,304
+If you represent in a matrix notation, you will write something like this.
+
+395
+00:58:34,462 --> 00:58:37,743
+And the column vector b is right here, okay?
+
+396
+00:58:38,503 --> 00:58:45,643
+As you know, and a, here is the coefficient matrix, okay?
+
+397
+00:58:46,523 --> 00:58:48,962
+And x is the solution.
+
+398
+00:58:51,858 --> 00:58:54,978
+Matris, or if you prefer, solution, vector, right?
+
+399
+00:58:56,518 --> 00:58:57,118
+Okay.
+
+400
+00:58:57,960 --> 00:59:05,318
+How many linear equations and how many variables or unknowns we have in this representation?
+
+401
+00:59:05,639 --> 00:59:06,058
+Look at this.
+
+402
+00:59:06,118 --> 00:59:11,639
+You see exactly a linear system of n equations in n unknowns, right?
+
+403
+00:59:11,938 --> 00:59:16,259
+So the number of equations and variables are the same, right?
+
+404
+00:59:18,547 --> 00:59:37,447
+Okay, so the Kramer's rule says, if determinant of this A, the coefficient matrix A of your system, sigma, if determinant of A is non-zero, that means if A is non-singular, then the system has the unique solution.
+
+405
+00:59:37,447 --> 00:59:44,626
+So what about the solution? This is the explicit phase of your solution, unique solution, right?
+
+406
+00:59:45,298 --> 00:59:55,858
+Let us see. You see that determinant of A appears for each variable, right? Look at this determinant.
+
+407
+00:59:58,440 --> 01:00:12,079
+But we have something different, right, in this position. So we have to say, we have to clarify what we should understand by A sub i. These are the matrices obtained from A.
+
+408
+01:00:12,724 --> 01:00:18,724
+By replacing the column i by b, right?
+
+409
+01:00:19,262 --> 01:00:22,703
+Let me write this way.
+
+410
+01:00:45,106 --> 01:00:48,567
+So, this is our system, Sigma, right?
+
+411
+01:00:52,882 --> 01:00:53,922
+This is the next one.
+
+412
+01:01:01,460 --> 01:01:14,559
+All right, look at this. X1 means, according to the theorem, determinant A1 divided by determinant of A.
+
+413
+01:01:14,559 --> 01:01:29,000
+So what is A1 here? I'm going to write A1. A1 means, since you are writing X1,
+
+414
+01:01:30,195 --> 01:01:45,615
+That means you should replace the column one, right? This is the column one, and this is the constant vector we have on the right-hand side of our linear system, right?
+
+415
+01:01:45,655 --> 01:01:53,454
+So you have to replace these two columns. A1 is obtained from A. Don't forget this, right?
+
+416
+01:01:54,623 --> 01:02:00,743
+You should write, of course, again, n by n matris, just like a.
+
+417
+01:02:01,623 --> 01:02:05,882
+But the difference between a1 and a is just the first column, right?
+
+418
+01:02:06,543 --> 01:02:07,202
+Look at this.
+
+419
+01:02:20,851 --> 01:02:27,851
+Bu, B1, B2, Bn'in
+
+420
+01:02:29,652 --> 01:02:37,652
+Bu, bu bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün.
+
+421
+01:02:37,652 --> 01:02:43,652
+Bu bölümünün bir bölümünün bir bölümünün bir bölümünün.
+
+422
+01:02:49,779 --> 01:03:00,840
+Komponent, the other variable, unknown, x2, you have to write the determinant of the corresponding matrix, A2, which is again obtained by A, right?
+
+423
+01:03:01,159 --> 01:03:07,460
+And then divide by this non-zero coefficient, non-zero constant, right?
+
+424
+01:03:07,880 --> 01:03:09,199
+So what is A2 here?
+
+425
+01:03:09,199 --> 01:03:14,118
+You have to change now the second column.
+
+426
+01:03:15,090 --> 01:03:17,471
+again, with this B.
+
+427
+01:03:19,551 --> 01:03:20,170
+Okay?
+
+428
+01:03:25,748 --> 01:03:27,748
+Bu, burada yazılıyor.
+
+429
+01:03:27,748 --> 01:03:29,748
+Örneğin herkesi değil mi?
+
+430
+01:03:29,748 --> 01:03:31,748
+Örneğin, bu screen.
+
+431
+01:03:37,586 --> 01:03:37,947
+Ok.
+
+432
+01:03:47,219 --> 01:04:13,378
+So, it's very clear. The picture is very clear. Look at this, the solution. You just need to check what? Write the coefficient matrix of your linear system. Check if its determinant is non-zero. If it is non-zero, I mean, if the matrix A is non-singular, then your system has a unique solution. And this is the solution, right? Explicitly speaking. Okay?
+
+433
+01:04:14,132 --> 01:04:30,152
+Ve you know what is A sub i in each unknown here, right? As I said, these matrices A sub i are obtained from A by replacing the column i by the constant b, right?
+
+434
+01:04:40,882 --> 01:04:44,342
+Metrics A sub i from A, right?
+
+435
+01:04:44,862 --> 01:04:46,983
+So its proof is not complicated.
+
+436
+01:04:48,103 --> 01:04:52,082
+Maybe we can spend some minute to talk about its proof.
+
+437
+01:04:52,143 --> 01:04:52,623
+Look at this.
+
+438
+01:04:53,523 --> 01:04:56,302
+For the one thing, if determinant is non-zero,
+
+439
+01:04:56,882 --> 01:04:58,963
+if it is non-zero,
+
+440
+01:04:59,483 --> 01:05:03,163
+then we know A is non-singular, right?
+
+441
+01:05:03,282 --> 01:05:04,243
+Everybody knows this.
+
+442
+01:05:05,203 --> 01:05:05,762
+What else?
+
+443
+01:05:07,251 --> 01:05:12,511
+This is the solution vector, and you can write immediately something like this.
+
+444
+01:05:14,492 --> 01:05:20,211
+Because, look at this, this is very easy to extract, right?
+
+445
+01:05:20,590 --> 01:05:21,251
+Look at this.
+
+446
+01:05:22,911 --> 01:05:31,310
+If A is non-singular, that means you have the inverse, right?
+
+447
+01:05:31,911 --> 01:05:33,996
+So what happens if you...
+
+448
+01:05:34,420 --> 01:05:44,599
+bu ekranı,
+
+449
+01:05:44,599 --> 01:05:45,279
+ne oluyor?
+
+450
+01:05:45,739 --> 01:05:46,199
+Let us
+
+451
+01:05:46,199 --> 01:05:48,358
+ekranalım.
+
+452
+01:05:53,203 --> 01:05:59,143
+Of course, the left-hand side, you can reorganize this way, right?
+
+453
+01:05:59,203 --> 01:06:03,963
+This is one of the properties of matrix multiplication, if you remember, right?
+
+454
+01:06:06,782 --> 01:06:07,403
+Okay.
+
+455
+01:06:08,063 --> 01:06:13,523
+And this product is just the identity matrix, right?
+
+456
+01:06:17,618 --> 01:06:30,099
+And finally, x is equal to this column vector, right? That's why it's written immediately, something like this.
+
+457
+01:06:31,378 --> 01:06:37,699
+It's not a big deal. You, yourself, can extract immediately, right?
+
+458
+01:06:38,259 --> 01:06:44,778
+Ama bu, A'ı non-singular, if A'ı non-singular, değil mi? Evet.
+
+459
+01:06:44,778 --> 01:06:47,259
+Evet, aslında, bir şey daha var.
+
+460
+01:06:47,259 --> 01:06:48,618
+Bir şey daha var.
+
+461
+01:06:48,618 --> 01:06:50,539
+Bakın, büyük matrisi.
+
+462
+01:06:50,539 --> 01:06:56,378
+İzlediğiniz için hatırlatmak istedim, bu şey gibi bir şey, ne?
+
+463
+01:07:00,210 --> 01:07:10,891
+Ne görüyorsunuz ki bu matrisi? Bu matrisi, ben de. Bu matrisi, bu matrisi? Bu matrisi, bu matrisi?
+
+464
+01:07:16,532 --> 01:07:20,850
+Konuşmak isteyen varsa söz alabilir arkadaşlar. Bu size tanıdık geliyor mu bu matris?
+
+465
+01:07:27,538 --> 01:07:33,099
+Niye kimse konuşmuyor ya? 19 kişi var ve hiç kimseden ses çıkmıyor yani. [öğrenci]'a soralım bakalım.
+
+466
+01:07:36,658 --> 01:07:45,018
+Azal cevap verebilir misin? Az önceki matris tanıdık geliyor mu sana? Sınav da oldu. Gelmiyor demen zor ya.
+
+467
+01:07:50,259 --> 01:07:50,759
+Evet.
+
+468
+01:07:55,282 --> 01:08:00,082
+[öğrenci] soralım, onun mikrofonu bile açık değil galiba.
+
+469
+01:08:05,523 --> 01:08:10,942
+Okay, [öğrenci] [öğrenci]'e soralım bakalım. [öğrenci], do you think that matrix is familiar for you or not?
+
+470
+01:08:20,627 --> 01:08:22,747
+Evet. Cevap vermek isteyen yok mu?
+
+471
+01:08:34,963 --> 01:08:43,363
+O da yok. Pekala. Keşke bu dersi yüz yüze yapsaydık arkadaşlar. Böyle bir online ders verdiğimi hatırlamıyorum. Bir buçuk senedir yani.
+
+472
+01:08:43,844 --> 01:08:50,503
+120 kişiyle de lineerce bir dersi yaptım ve gayet de verimli geçmişti yani. Öğrenciler peş peşe sorular soruyordu.
+
+473
+01:08:51,224 --> 01:08:56,503
+Yani bu sınıfta ne hikmetse hiç kimseden bir soru alamıyorum. Yani çok ilginç yani.
+
+474
+01:08:58,604 --> 01:08:59,282
+Evet.
+
+475
+01:09:03,282 --> 01:09:30,422
+Söylediği şey şu arkadaşlar, bakın size, let me resume what I was speaking. Suppose you have this linear system such that the coefficient matrix A is non-single, right? Let me write this way. We are going to understand the proof of theorem about Kramer's rule, right? Suppose A is a non-single matrix, right?
+
+476
+01:09:30,898 --> 01:09:34,898
+Bu, bu anlamda, bu anlamda, ileriyatı existen.
+
+477
+01:09:49,268 --> 01:10:16,108
+Bu, bu
+
+478
+01:10:20,180 --> 01:10:23,500
+Divided by determinant of a, y, right?
+
+479
+01:10:24,059 --> 01:10:27,739
+We have n units of variables, right?
+
+480
+01:10:28,539 --> 01:10:32,300
+So why we have, or from where it's coming, something like this.
+
+481
+01:10:32,899 --> 01:10:34,699
+This is the solution vector.
+
+482
+01:10:34,859 --> 01:10:37,819
+So you know each component, each component.
+
+483
+01:10:39,199 --> 01:10:42,739
+Let me write, okay, look at this.
+
+484
+01:10:43,779 --> 01:10:46,139
+Just, this is a remainder, right?
+
+485
+01:10:46,139 --> 01:10:47,139
+Remainder.
+
+486
+01:10:53,460 --> 01:11:01,898
+Just remember that inverse, there exists a relationship between the inverse of a non-singular matrix and the adjoint matrix, right?
+
+487
+01:11:02,618 --> 01:11:16,920
+One, if you multiply the adjoint of A, with this non-zero coefficient, one over determinant, you have to adjoint.
+
+488
+01:11:17,970 --> 01:11:25,003
+A'ın A
+
+489
+01:11:29,810 --> 01:11:37,171
+Transpose of this square matrix, whose entries are cofactors of each entries of your original matrix A, right?
+
+490
+01:11:39,211 --> 01:11:39,891
+Okay.
+
+491
+01:11:41,591 --> 01:11:48,411
+So, after this remainder, finally you can write
+
+492
+01:11:48,411 --> 01:11:52,570
+exactly
+
+493
+01:11:52,570 --> 01:11:56,992
+this expression here.
+
+494
+01:11:58,514 --> 01:12:02,375
+adjoint, a times b, right?
+
+495
+01:12:07,795 --> 01:12:15,734
+Bu bölümünün bir kısım var.
+
+496
+01:12:15,734 --> 01:12:19,295
+Öncelikle bir kısım var.
+
+497
+01:12:19,295 --> 01:12:24,295
+Öncelikle bu bölümünün bir kısım var.
+
+498
+01:12:24,295 --> 01:12:29,295
+Bu bölümünün bir kısım var.
+
+499
+01:12:29,295 --> 01:12:32,970
+Öncelikle bir kısım var.
+
+500
+01:12:34,514 --> 01:12:40,574
+A joint of A, right? Times B, of course, this is B, B is right here, okay?
+
+501
+01:12:45,492 --> 01:12:49,911
+So, that means you have such an expression.
+
+502
+01:12:51,971 --> 01:12:52,952
+Okay?
+
+503
+01:12:59,666 --> 01:13:01,666
+Kramer'in bir fotoğrafını veriyor.
+
+504
+01:13:08,595 --> 01:13:35,234
+Okay, now define such a matrix, A sub i. What's the meaning of it? Look at this. It seems almost, look at this, this matrix seems almost A, right? Almost, but not exactly. So what is the difference? Can anybody see the difference between A sub i and A sub i?
+
+505
+01:13:35,347 --> 01:13:36,947
+Coefficient matrix A
+
+506
+01:13:42,452 --> 01:14:02,731
+Here is the difference, right? The column, column, column A, I, excuse me, right? Column I. Replaced by B. So this is the definition of A sub I. All right?
+
+507
+01:14:04,371 --> 01:14:13,211
+In particular, for example, if you are interested in writing these metrics, so that means the first column must be replaced by B.
+
+508
+01:14:14,271 --> 01:14:17,271
+Okay, something like this. Look at this. This is the first column.
+
+509
+01:14:18,752 --> 01:14:23,192
+Column 2, column 3, and column A.
+
+510
+01:14:24,731 --> 01:14:28,252
+Except the first column, the rest is the same with the A.
+
+511
+01:14:28,252 --> 01:14:29,211
+Okay?
+
+512
+01:14:31,091 --> 01:14:41,591
+If you write A2, you have to write column 1, B, column 3, column N, so on, right?
+
+513
+01:14:42,350 --> 01:14:48,371
+So it's clear the definition or the description of these metrics here.
+
+514
+01:14:49,671 --> 01:14:56,390
+And it only remains to put these metrics in the expression.
+
+515
+01:14:57,492 --> 01:15:00,310
+We have seen right here, look at this.
+
+516
+01:15:02,171 --> 01:15:02,350
+Right.
+
+517
+01:15:05,171 --> 01:15:12,070
+For example, if i is 1, then you are going to write x1.
+
+518
+01:15:13,091 --> 01:15:22,152
+And x1 means a1, 1, b1, determinant a plus.
+
+519
+01:15:25,203 --> 01:15:31,904
+a, n, 1, b, n, divided by determinant a.
+
+520
+01:15:31,904 --> 01:15:33,323
+Right?
+
+521
+01:15:40,404 --> 01:15:40,863
+Alright.
+
+522
+01:15:44,404 --> 01:15:48,264
+Bu, all you need to know is just this formula here, right?
+
+523
+01:15:51,890 --> 01:15:59,490
+Bu metodoluz çok kolay, eğer A'ın nonsinguları, bak atıcı, çok kolay, aslında.
+
+524
+01:16:00,791 --> 01:16:08,310
+You have a quite nice formula, to write immediately, the unique solution of your system, right?
+
+525
+01:16:11,050 --> 01:16:18,890
+You have to manipulate your metrics, coefficient metrics, calculate its determinant, and then divide by.
+
+526
+01:16:19,411 --> 01:16:22,951
+Determinant of the coefficient matris a.
+
+527
+01:16:23,671 --> 01:16:27,770
+So let me skip this part quickly.
+
+528
+01:16:28,091 --> 01:16:29,671
+Consider this example here.
+
+529
+01:16:31,011 --> 01:16:40,350
+This example, one, we have a system that consists of three linear equations and three unknowns, right?
+
+530
+01:16:41,266 --> 01:16:42,707
+So, what about the solution?
+
+531
+01:16:43,207 --> 01:16:44,347
+Using Kramer's rule.
+
+532
+01:16:44,347 --> 01:16:57,666
+So, to use Kramer's rule, you have to check first if the coefficient matrix, I mean this matrix here, if determinant is zero or not.
+
+533
+01:16:58,487 --> 01:17:00,006
+Fortunately, it's not zero.
+
+534
+01:17:00,387 --> 01:17:02,847
+So, that means you can apply Kramer's rule here.
+
+535
+01:17:03,067 --> 01:17:04,987
+And you already know the solution, right?
+
+536
+01:17:05,746 --> 01:17:08,127
+You already know the formula, as I said.
+
+537
+01:17:08,947 --> 01:17:13,966
+Determine each unknown of your linear system, right?
+
+538
+01:17:14,108 --> 01:17:17,148
+For this example, I mean x1, x2, x3.
+
+539
+01:17:17,587 --> 01:17:18,847
+So x1 means what?
+
+540
+01:17:19,728 --> 01:17:22,006
+Let me write just once.
+
+541
+01:17:23,047 --> 01:17:23,907
+What is the x1?
+
+542
+01:17:23,987 --> 01:17:26,686
+x1 means determinant of a is right here.
+
+543
+01:17:27,108 --> 01:17:30,506
+You have to write determinant of a1.
+
+544
+01:17:31,127 --> 01:17:32,807
+So a1 was what?
+
+545
+01:17:34,931 --> 01:17:40,391
+The second and third column of A1 is just the same with the coefficient matrix A, right?
+
+546
+01:17:40,711 --> 01:17:43,992
+So this block you have to maintain, right?
+
+547
+01:17:43,992 --> 01:17:50,152
+3, 2, minus 1, minus 1, minus 1, 1.
+
+548
+01:17:50,891 --> 01:17:57,072
+So the first column should be replaced by the constant vector B on the right-hand side of your linear system.
+
+549
+01:17:57,192 --> 01:17:59,091
+I mean this, right?
+
+550
+01:17:59,211 --> 01:18:01,572
+So this is the first column.
+
+551
+01:18:03,347 --> 01:18:27,020
+Bu, bu
+
+552
+01:18:53,555 --> 01:19:06,055
+Minus 2, right? A2 means what? You keep the first and the third column of A, and just replace the second column of A by the constant B.
+
+553
+01:19:07,435 --> 01:19:13,734
+When I say constant, you don't have to understand a scalar, a real number, right? Constant vector.
+
+554
+01:19:14,335 --> 01:19:19,074
+Which means its coordinates are real numbers, right? You don't change anything.
+
+555
+01:19:20,179 --> 01:19:33,238
+All right. So x3 is in the same way you write here, determinant of a3. A3 means the first two columns of a are maintained, right?
+
+556
+01:19:33,538 --> 01:19:45,958
+So you just replace the third column by b. And this is the value of x3. So the solution vector of your linear system sigma is exactly this one.
+
+557
+01:19:47,411 --> 01:19:53,291
+Okay, you see very easy to solve by using Kramer rule, right?
+
+558
+01:19:55,871 --> 01:20:01,930
+But it's always good to check if your solution vector is correct or not, right?
+
+559
+01:20:01,930 --> 01:20:13,331
+So to check if it is correct means you have to put 2 instead of when you see x1, 3 for x.
+
+560
+01:20:14,836 --> 01:20:20,215
+2 and 4 by 4,
+
+561
+01:20:22,275 --> 01:20:26,555
+the value 4 for this unknown, right?
+
+562
+01:20:26,655 --> 01:20:30,536
+So each equation simultaneously has to be satisfied.
+
+563
+01:20:30,895 --> 01:20:33,595
+That means your solution vector is correct.
+
+564
+01:20:33,595 --> 01:20:34,315
+Okay.
+
+565
+01:20:36,376 --> 01:20:37,755
+Any question?
+
+566
+01:20:39,795 --> 01:20:42,655
+Hocam, ben bir şey sorabilir miyim izniniz olursa?
+
+567
+01:20:43,435 --> 01:20:47,336
+Sor, izin verir mi? Mutlu bile oldum yani, birisi soru sordu diye.
+
+568
+01:20:47,923 --> 01:21:00,884
+Teşekkür ederim hocam. Şimdi denklem sayımızla bilinmeyen sayımız eşit olduğu için bizim kullanabileceğimiz başka yöntemler de var değil mi? Mesela Gauss yok etmeyle ya da eşelon forma getirerek de çözebilirdik bu soruyu.
+
+569
+01:21:00,884 --> 01:21:10,963
+Tabii tabii. Bu öncekilerden farklı bir yöntem olarak karşımıza çıkıyor ama kare olmak zorunda. Yani kareden kastım denklem sayısıyla bilinmeyen sayısı eşit olacak.
+
+570
+01:21:12,103 --> 01:21:15,184
+Gauss yönteminde böyle bir şart yok ama kramer da var.
+
+571
+01:21:15,731 --> 01:21:17,011
+Tamamdır hocam.
+
+572
+01:21:17,032 --> 01:21:23,271
+Katsayı matrisini kullanıyorsun. Determinantlar var işin içinde. Determinant varsa işin içinde kare matris olmak zorunda diye aklında tut.
+
+573
+01:21:23,811 --> 01:21:25,011
+Evet, haklısınız hocam.
+
+574
+01:21:25,311 --> 01:21:36,011
+Kremer yöntemi çok basittir yani. Determinantı sıfırdan farklı olduğunu gördüğün anda, denklem ve bilim yasayısı da eşitse hemen tek çözüm olduğunu söyleyebilirsin.
+
+575
+01:21:36,412 --> 01:21:38,391
+Bulması da çok kolay gördüğünüz gibi yani.
+
+576
+01:21:39,252 --> 01:21:40,832
+Tamamdır hocam, teşekkür ederim.
+
+577
+01:21:41,271 --> 01:21:42,412
+Sınavınız nasıl geçti?
+
+578
+01:21:43,122 --> 01:21:44,862
+Soruları nasıl buldunuz arkadaşlar?
+
+579
+01:21:48,755 --> 01:21:56,336
+Bu söz alan arkadaş söyleyebilir mi? Nasıllı sınav soruları? Ben öğrencinin şeyini merak ediyorum ya. Her hoca da sormaz bunu yani bakın.
+
+580
+01:21:57,636 --> 01:22:00,435
+Geri dönüş almaya çalışıyorum sizden. Anlatabiliyor muyum yani?
+
+581
+01:22:01,195 --> 01:22:11,076
+Evet, evet. Bence sorular gayet çözülebilir türden de. Biraz ben son haftalara bıraktığım için çok istediğim verimi alamadım.
+
+582
+01:22:11,600 --> 01:22:19,219
+Bu şekilde bir de zaman yönetimimi de pek iyi yapamadım. Çünkü çok pratiğim yoktu. O yönden ben biraz sıkıntı yaşadım.
+
+583
+01:22:20,059 --> 01:22:21,960
+Çok soru çözmeniz gerekiyordu.
+
+584
+01:22:22,319 --> 01:22:31,300
+Evet, evet haklısınız. Ben orada bir sıkıntı yaşadım. Yani finalde buna uygun davranmayı düşünmüyorum. Daha fazla örnek çözerek hazırlanmayı.
+
+585
+01:22:31,300 --> 01:22:36,398
+Bakın arkadaşlar, mat bir sınavına da girdiniz değil mi siz? Veya girmediniz ikinci sınıfsınız diye biliyorum sizi.
+
+586
+01:22:36,788 --> 01:22:39,608
+Evet, ikinci sınıfız. Girmiştik online.
+
+587
+01:22:40,127 --> 01:22:41,707
+Orada kaç dakika verdiler size?
+
+588
+01:22:44,686 --> 01:22:47,768
+Birinci sınıftayken iki saatimiz vardı hocam yine.
+
+589
+01:22:48,028 --> 01:22:50,847
+Yok, ben bu hafta yapılan sınava giren var mı diye merak ettim.
+
+590
+01:22:50,847 --> 01:22:51,947
+Yok, hayır hocam.
+
+591
+01:22:52,268 --> 01:22:56,426
+75 dakika verdiler. Bakın biz size 100 dakika verdik.
+
+592
+01:22:57,047 --> 01:22:58,268
+Evet, haklısınız.
+
+593
+01:22:58,268 --> 01:23:03,947
+Yani fazladan da süre verdik. Ondan sonra şunu da unutmayın, dört yanlış bir doğruyu da götürmüyor.
+
+594
+01:23:04,500 --> 01:23:06,059
+Evet, o çok iyiydi zaten.
+
+595
+01:23:06,199 --> 01:23:11,539
+Şunu da unutmayın, 6 haftalık müfredattan 2 vize yerine geçen bir sınava girdiniz.
+
+596
+01:23:12,760 --> 01:23:19,000
+Değil mi? Yani burada bir sürü avantajı vardı yani. O yüzden çok beleş bir sınav da olmazdı yani.
+
+597
+01:23:20,378 --> 01:23:21,618
+Evet, haklısınız hocam.
+
+598
+01:23:22,979 --> 01:23:23,359
+Neyse.
+
+599
+01:23:25,418 --> 01:23:26,559
+Tamam, devam edelim.
+
+600
+01:23:30,130 --> 01:23:37,130
+Güzel bir fotoğraf, bu konuları, bu konuları, bu konuları, bakın.
+
+601
+01:23:50,931 --> 01:23:55,332
+You have equivalent expressions for a square matrix A, right?
+
+602
+01:23:55,832 --> 01:23:58,692
+If A is non-singular, then it implies.
+
+603
+01:23:58,871 --> 01:24:01,171
+Equivalent means here in this sense, right?
+
+604
+01:24:01,271 --> 01:24:08,511
+If A is non-singular, then this homogeneous system has only the trivial solution.
+
+605
+01:24:08,511 --> 01:24:13,511
+Trivial solution means x1, xn is all zero, right?
+
+606
+01:24:13,572 --> 01:24:15,072
+This solution always exists.
+
+607
+01:24:15,471 --> 01:24:16,211
+Remember that.
+
+608
+01:24:17,458 --> 01:24:21,238
+Bu bizim için değil, değil mi?
+
+609
+01:24:21,238 --> 01:24:26,378
+Trivial solution değil.
+
+610
+01:24:26,378 --> 01:24:28,458
+Evet, ama
+
+611
+01:24:28,458 --> 01:24:29,998
+A'nın nonsinguları,
+
+612
+01:24:29,998 --> 01:24:31,958
+ve o linear sistem hosumlu,
+
+613
+01:24:31,958 --> 01:24:33,498
+yoksa bir şey yok.
+
+614
+01:24:33,498 --> 01:24:35,798
+Bu, sadece trivial solution.
+
+615
+01:24:35,798 --> 01:24:36,798
+Ne daha?
+
+616
+01:24:36,798 --> 01:24:39,838
+Ve bu,
+
+617
+01:24:39,838 --> 01:24:39,882
+A'nın
+
+618
+01:24:40,020 --> 01:24:47,300
+I mean, this non-singular A at the beginning is raw or column equivalent to the identity matrix, right?
+
+619
+01:24:47,359 --> 01:24:55,420
+This was one of the expressions used in one question in your midterm exam, if I'm not wrong, right?
+
+620
+01:24:56,219 --> 01:25:03,119
+Every non-singular matrix is raw or, if you prefer, column equivalent to identity matrix, right?
+
+621
+01:25:03,979 --> 01:25:04,639
+All right.
+
+622
+01:25:04,992 --> 01:25:13,572
+So, if the linear system, non-homogeneous linear system, if your system is non-homogeneous, then it has a unique solution.
+
+623
+01:25:17,234 --> 01:25:30,055
+B, I have already said this, right? Unique solution, because A is non-singular, and then the inverse exists, right? If you multiply.
+
+624
+01:25:37,684 --> 01:25:50,987
+Bu, bu
+
+625
+01:25:54,739 --> 01:26:00,100
+A is a product of elementary matrices. This part is not so important, right?
+
+626
+01:26:01,960 --> 01:26:07,260
+Okay, we have, as usual, at the end of this section, some exercises.
+
+627
+01:26:08,340 --> 01:26:15,899
+Actually, we have just seven exercises, so it would be nice for you to take a look at these exercises, to understand.
+
+628
+01:26:17,639 --> 01:26:19,059
+Well, Kramen's rule, okay?
+
+629
+01:26:20,274 --> 01:26:23,494
+Why don't you sit and solve this or one of these exercises?
+
+630
+01:26:26,694 --> 01:26:28,895
+Determinants from a computational point of view.
+
+631
+01:26:29,135 --> 01:26:31,154
+This part is not of our interest.
+
+632
+01:26:32,514 --> 01:26:32,835
+Right?
+
+633
+01:26:36,947 --> 01:26:59,046
+Arkadaşlar, bakın, yani her seksinin sonunda egzersiz var ama sadece onlardan ibaret de değil. Bakın, we have also some supplementary exercises, so you don't have to skip, please don't ignore these exercises, right? Supplementary exercises and also something like this, true or false, right?
+
+634
+01:27:05,074 --> 01:27:11,695
+You yourself can produce a test question, for example, using this part. Look at this.
+
+635
+01:27:16,404 --> 01:27:22,523
+If determinant is 0, then A has at least two equal roles. Do you think it is true or not?
+
+636
+01:27:28,563 --> 01:27:34,863
+A is singular if and only if determinant is zero. This is of course and certainly true, right?
+
+637
+01:27:35,923 --> 01:27:42,904
+But what about three? Determinant of an element, okay, forget about elementary matrix for now.
+
+638
+01:27:43,904 --> 01:27:48,802
+What about the first one? True or false? Which one?
+
+639
+01:27:51,083 --> 01:27:52,823
+True değil mi hocam?
+
+640
+01:27:53,344 --> 01:27:55,063
+Hayır, it's false.
+
+641
+01:27:56,755 --> 01:28:00,755
+Çünkü bu matrisin ilişkisi, değil mi?
+
+642
+01:28:00,755 --> 01:28:04,755
+Matrisin ilişkisi, bu da doğru.
+
+643
+01:28:04,755 --> 01:28:10,755
+Ama adışını, bu kadar bir şey söyleyemiz.
+
+644
+01:28:10,755 --> 01:28:18,755
+Determinat, iki matrisin ilişkisi, değerlerine değerli değil.
+
+645
+01:28:18,755 --> 01:28:23,755
+Bazı matrisler için bunu bulabilirsin ama genelde doğru değil, yanlış.
+
+646
+01:28:25,971 --> 01:28:26,612
+Yanlış.
+
+647
+01:28:32,020 --> 01:28:44,199
+Mesela bunları toplayarak bir tane test sorusu hazırlayabilirsiniz. Nitekim sınav komisyonunun da yaptığı şey budur. Dolayısıyla bu egzersizleri de es geçmeyin arkadaşlar. Tamam mı?
+
+648
+01:28:45,279 --> 01:28:49,100
+Mesela sorularınızdan bir tanesi de yok muydu bu? Buna benzer bir şey?
+
+649
+01:28:51,180 --> 01:28:52,100
+Var idi hocam.
+
+650
+01:28:52,479 --> 01:28:56,219
+Neydi? Şöyle bir şey vardı değil mi? En çarpı enlik matrisler için A ve B.
+
+651
+01:28:56,851 --> 01:29:22,072
+M by M matrices değil mi? Bazı şıklar vermişti. Evet, determinant A, B, T mi demiştik? Böyle bir şey mi yazmıştık? Bu doğru mu değil mi mesela? Hadi true false burada kullanalım. Sınav sorusunun bir şıkkıydı bu mesela. Önermelerden bir tanesi, iki veya üç tane vardı. Aşağıdakilerden hangisi doğru veya hangileri doğru diye sormuştuk. Bu doğru mu mesela? Bunu bilebilmen için bak burada mesela matris çarpımı var.
+
+652
+01:29:22,579 --> 01:29:47,818
+determinantı dağıtabilirsin, değil mi? Yani. Ya burada kalem oynatmana da gerek yok. Yani A'nın transpozunun determinantı, B'nin transpozunun determinantı. Ama bir matrisle transpozunun determinantı da aynı, öyle değil mi? Yani şunun yerine determinant A yazabilirsin. Şunun yerine de determinant B, T yazabilirsin. Ondan sonra tekrar grupla bunu, buradan buraya geçersin, değil mi?
+
+653
+01:29:49,331 --> 01:29:51,371
+Yazılabiliyor demek ki. Bu doğru yani.
+
+654
+01:29:53,470 --> 01:29:55,251
+Burada kalem oynatmana bile gerek yok.
+
+655
+01:29:55,331 --> 01:30:02,871
+Bir matrisle transpozunun determinantının aynı olduğunu, iki matrisin çarpımının determinantının, determinantları çarpımı olduğunu bilsen yetiyor.
+
+656
+01:30:04,091 --> 01:30:08,091
+Değil mi? Kalem oynatmana bile gerek yok. Hesap kitap yapmana gerek yok.
+
+657
+01:30:09,951 --> 01:30:14,152
+O yüzden bu tip soruları pas geçmeyin. Daha önceden söylememiş olabilirim.
+
+658
+01:30:16,152 --> 01:30:16,591
+Tamam mı?
+
+659
+01:30:19,347 --> 01:30:45,167
+Tamam, do you have any questions? Let me see what kind of... Ah, quiz, okay. We have some more exercises here. Let me see. Look at this. I think we had something similar with this question, right? A, B, and C are two by two matrices. You know just their determinant without knowing matrices explicitly.
+
+660
+01:30:45,747 --> 01:30:52,188
+ve bu yeni bir determinatı, bu bir metriksiyonu, D'ye?
+
+661
+01:30:52,188 --> 01:31:01,188
+D'ye? Bu metriksiyonu, 6'a, A'B'inv. C'ı?
+
+662
+01:31:01,188 --> 01:31:07,307
+Bu metriksiyonu, D'ye?
+
+663
+01:31:14,387 --> 01:31:18,868
+Bu eğitim noktası necesite bir çözüm, tabii ki.
+
+664
+01:31:19,547 --> 01:31:26,327
+Ama siz de確inize, siz de bilgisayar, ne必須 de bilgisayar, matris A, B, ve C.
+
+665
+01:31:32,404 --> 01:31:39,702
+So, there did if you see, you are able to write the determinants matrix, right?
+
+666
+01:31:42,463 --> 01:31:47,884
+Birisi söyleyebilir mi? Bilmen gereken ne burada? D'nin determinantını yazabilmek için neyi bilmen gerekiyor?
+
+667
+01:31:48,683 --> 01:31:51,563
+Bakın sınav bitti arkadaşlar, bunlardan bahsetmesem de olur ama.
+
+668
+01:31:52,115 --> 01:32:02,014
+Neyse, sıcağı sıcağına olduğunuz sınavı söyleyelim, birkaç, beş yon dakika geçirelim yani, fark etmez. Ne gerekiyor, neye ihtiyacın var bu D'nin determinantını bulabilmek için?
+
+669
+01:32:06,228 --> 01:32:31,487
+Var mı fikri olan? Yani burada bir çarpım var değil mi? Bu çarpımın determinantı her bir matrisin determinantının çarpımı. Değil mi? A'nın transpozuyla A'nın kendisinin determinantı aynı. Tamam. B'nin determinantını vermiş mi? Vermiş. A'nın transpozunun determinantı A'yı bildiğin için onu da biliyorsun. C'nin determinantı 4 ama C'nin tersini bilmiyorsun. Determinantını bulabilir misin peki?
+
+670
+01:32:33,235 --> 01:32:47,594
+Var mı buna cevap vermek isteyen? C matrisi ortada yok. Sadece determinantını biliyorsun. Sıfırdan farklı olduğu için invertible olduğunu da biliyorsun. C'nin tersinin determinantı nedir o zaman? Var mı söylemek isteyen?
+
+671
+01:32:50,094 --> 01:32:54,055
+What is the inverse? Determinant of C inverse.
+
+672
+01:32:58,899 --> 01:33:01,799
+Bu, çok kolay değil, değil mi? Determinantı c.
+
+673
+01:33:11,059 --> 01:33:18,500
+How do you know? Because this means identity for any non-singular matrix, right?
+
+674
+01:33:18,500 --> 01:33:38,500
+So if you take determinant of both sides, you have one on the right side, because identity matrix has determinant one, and here you write determinant C times determinant C inverse is equal to one, and then you write this, okay?
+
+675
+01:33:43,219 --> 01:33:51,199
+All right, but you have to be very careful with the six, number six here, right?
+
+676
+01:33:52,818 --> 01:33:57,000
+So what is the answer? Can you say the answer?
+
+677
+01:33:59,139 --> 01:34:05,639
+Six times determinant of A transpose is the same as determinant of A.
+
+678
+01:34:06,639 --> 01:34:10,658
+Six times three times determinant of B is given.
+
+679
+01:34:11,122 --> 01:34:15,644
+Minus 2, determinant of C is 4.
+
+680
+01:34:17,122 --> 01:34:23,243
+So, determinant of its inverse is by this formula, 1 over 4.
+
+681
+01:34:23,904 --> 01:34:26,282
+Do you think this is the answer or not?
+
+682
+01:34:27,323 --> 01:34:34,384
+Let me put question mark here, because I don't claim that this is the determinant, right?
+
+683
+01:34:34,583 --> 01:34:35,484
+I'm just asking.
+
+684
+01:34:37,503 --> 01:34:41,782
+Çünkü, why? Çünkü, as I said, you have to be careful with this sexy, right?
+
+685
+01:34:45,652 --> 01:34:56,310
+Evet, fikrini söylemek isteyen var mı? Bunu da söyleyelim, geçelim artık arkadaşlar buraya. Vektör uzaylarına geçeceğim çünkü. Bu altı sayısıyla sayısına dikkat etmek gerekiyor başta. Neden?
+
+686
+01:35:00,755 --> 01:35:25,996
+Bakın bunlar işte mis gibi test soruları tamam mı yani? Matrisleri bilmene gerek yok ama determinantını sormuş. Özellikle determinantın özelliklerini bilerekten, kalem bile oynatmadan belki cevabını yazabileceğin soru ya. 5 dakikaysa bu soru, sen bunu 30 saniyede cevaplıyorsan, daha zor bir soruya 4,5 dakika eklemiş oluyorsun. Hem doğru cevap veriyorsun hem de zamandan kazanıyorsun yani. Değil mi?
+
+687
+01:35:27,795 --> 01:35:28,875
+Var mı cevabı olan?
+
+688
+01:35:34,324 --> 01:35:52,583
+Yani siz sormuyorsanız ben söylemeyeceğim çünkü bakın, siz kendiniz merak edip sormuyorsanız ben de cevabını söylemeyeceğim. Son kere söylüyorum bakın, bu altının anlamı nedir burada? Yani altıyla mı çarpacağım A'nın transpozunu, B'nin, C'nin, eksi, 1'nin determinantlarını, çarpımını altıyla mı çarpmak demek bu?
+
+689
+01:35:57,618 --> 01:35:58,100
+Evet.
+
+690
+01:36:08,338 --> 01:36:09,679
+Kimseden ses yok.
+
+691
+01:36:13,522 --> 01:36:18,922
+Discussion exercises, let me see what else we have here.
+
+692
+01:36:23,603 --> 01:36:41,342
+Hocam, şey miydi acaba? Bir tane kural vardı. Determinant K çarpı A. K üzeri N çarpı determinant A diyorduk. Yani 6 ile çarpmayacağız ama üstü işlemi mi yapacaktık? Orada tam emin olamadım.
+
+693
+01:36:41,342 --> 01:36:49,342
+Evet. Bir matrisin determinant kurallarını hatırla. Bir matrisin bir satırını.
+
+694
+01:36:50,067 --> 01:36:54,826
+Veya bir sütununu bir k sayısıyla çarparsan, sıfırdan farklı bir k'yi kastediyorum tabii ki.
+
+695
+01:36:56,806 --> 01:36:58,606
+Determinanta etkisi ne oluyordu bunun?
+
+696
+01:37:01,246 --> 01:37:06,146
+Skaler olarak çarpıyorsak tüm elemanları çarpmıyor muydu kat sayıyla verilen?
+
+697
+01:37:06,146 --> 01:37:15,226
+Hayır, bak şimdi şunu karıştırmayın. Matrisin skalerle çarpımıyla matrisin bir satırının bir skalerle çarpımı aynı şey değil.
+
+698
+01:37:15,603 --> 01:37:34,302
+Yani bir matrisi bir skalerle çarpmak demek, bütün elemanlarını aynı sayıyla çarpmak demek. Bu başka bir şey. Benim söylediğim bir matrisin sadece bir satırını veya sadece bir sütununu bir sayıyla çarpmaktan bahsediyorum. Diğer satırlarına dokunmuyorsun bu durumda. Yani bu skaler çarpım değil yani.
+
+699
+01:37:34,802 --> 01:37:39,823
+O zaman şu kural geçerli oluyor değil mi? K üzeri n çarpı determinant A.
+
+700
+01:37:40,423 --> 01:37:42,904
+Tamam. O zaman ne diyeceksin burada?
+
+701
+01:37:43,764 --> 01:37:48,724
+K üzeri N, K da burada 6 olduğuna göre, 6 ile çarpmış, 6 üzeri N, N ne burada?
+
+702
+01:37:52,503 --> 01:37:54,344
+Ne olabilir oradaki N?
+
+703
+01:37:57,583 --> 01:37:59,123
+Matrisin boyutu olsa gerek değil mi?
+
+704
+01:38:00,884 --> 01:38:04,863
+Neden? Çünkü A 3 çarpı 3, kaçlık vermiş burada? 2 çarpı 2'lik vermiş, bakın.
+
+705
+01:38:06,304 --> 01:38:07,564
+Bak, matrislere bak.
+
+706
+01:38:08,764 --> 01:38:09,904
+2 çarpı 2'lik.
+
+707
+01:38:13,202 --> 01:38:31,962
+2x2'lik bir matris. Yani 6 bir matris düşün, tamam mı? Şunu hesaplamaya kalksan, daha basite indirgeyelim, yani B, C'yi boşver. Ne diyeceksin bu zaman? 6'nın karesi mi diyeceksin? Determinant A. Bu mu?
+
+708
+01:38:35,022 --> 01:38:37,983
+Evet, çünkü boyutuydu en.
+
+709
+01:38:39,027 --> 01:39:03,447
+Evet, A2 çarpı 2'lik bir matris. Tamam da niye kuvveti geliyor? Bak, az önce söylediğim şeyle alakası var bunun. Şimdi, A matrisini 6 ile çarpmışsın. Tamam bak, burada matrisi skaler çarpımı var. Bir matrisin bir skalerle çarpımı var, onun determinantı var. Bir matrisi bir skalerle çarpmakla onun bir satırını bir skalerle çarpmak arasında ne fark var?
+
+710
+01:39:05,970 --> 01:39:10,730
+Her satırını aynı sayıyla çarparsan, o zaman matrisi en sonunda bir sayıyla çarpmış olmuyor musun?
+
+711
+01:39:12,911 --> 01:39:18,630
+Satır sayısı kadar, yani bak, A matrisi şöyle, iki çarpı ikilik bir matris tamam mı?
+
+712
+01:39:19,752 --> 01:39:26,591
+Bunun sadece birinci satırını altıyla çarparsan, bu 6A demek değil değil mi?
+
+713
+01:39:29,411 --> 01:39:30,110
+Değil mi?
+
+714
+01:39:32,338 --> 01:39:34,099
+Evet hocam, bu anlama gelmiyor.
+
+715
+01:39:34,099 --> 01:39:58,838
+Bir kere daha çarpman lazım ki o zaman eşit diyebilesin. O yüzden altının karesi geliyor. Satır sayısı kadar yaptığın için bunu. Yani her satırını aynı sayıyla çarpman lazım ki ben matrisi komple bu sayıyla çarptım diyebilesin. Yani determinant özellikleriyle bağlayabilmek için bunu böyle söylüyorum, tamam mı? En inci kuvveti oradan geliyor işte. En çarpı enlilik bir matrisin en tane satırı var çünkü.
+
+716
+01:39:59,699 --> 01:40:02,020
+Evet hocam, şu an anladım. Teşekkür ederim.
+
+717
+01:40:02,559 --> 01:40:04,798
+Evet. Başka sorusu olan var mı?
+
+718
+01:40:04,798 --> 01:40:05,500
+Another question?
+
+719
+01:40:11,380 --> 01:40:13,460
+Ok, let me clear this part here.

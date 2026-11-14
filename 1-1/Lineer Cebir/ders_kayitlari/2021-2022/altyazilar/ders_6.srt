@@ -1,0 +1,2695 @@
+1
+00:00:21,908 --> 00:00:29,771
+So now we can talk about determinants of square matrices, but before then...
+
+2
+00:01:38,066 --> 00:01:42,066
+Bu, ikisi de hazırlayacağım.
+
+3
+00:01:55,572 --> 00:01:59,751
+Ok, so let us see what is the determinant of square matrix.
+
+4
+00:02:00,311 --> 00:02:08,572
+In this book, I mean the Coleman Hill, it gives exactly in a nice way what's the definition of determinant.
+
+5
+00:02:09,611 --> 00:02:20,532
+But since this is a course of two hours per week, I'm not sure about if I have to give this formal definition of determinant.
+
+6
+00:02:36,658 --> 00:02:39,419
+Bu son son sonunda,
+
+7
+00:02:39,419 --> 00:02:44,060
+bir başka chapter yapmaya başlayalım.
+
+8
+00:02:48,116 --> 00:03:02,216
+So, if you have such a set formed by positive integers from one to n, arranged in an ascending order, as you see, this is an ascending order, right?
+
+9
+00:03:03,135 --> 00:03:10,914
+Whenever you have a rearrangement, something like this, of the members of this set,
+
+10
+00:03:11,412 --> 00:03:14,170
+You will have a permutation of S, right?
+
+11
+00:03:14,670 --> 00:03:22,352
+Actually, by permutation, you simply understand a bijection, a one-to-one and onto correspondence, right?
+
+12
+00:03:27,634 --> 00:03:39,175
+So, for example, if this is your set, let me ask you, how many permutation you have for such a set?
+
+13
+00:03:40,096 --> 00:03:51,556
+The cardinality, I mean, the number of elements of S is 4, right? For this set, where S is 1, 2, 3, 4.
+
+14
+00:03:51,986 --> 00:04:18,699
+How many permutations, how many bijections for this set you have? 4! L, right? 4 x 3 x 2 x 1. So, maybe this is not a good example. It's better to start this set of just three elements, right? You have six permutations. Some of them...
+
+15
+00:04:18,771 --> 00:04:20,831
+İven, some of them are odd.
+
+16
+00:04:21,091 --> 00:04:28,250
+So, you have to ask, what's the definition of odd permutation and even permutation?
+
+17
+00:04:28,432 --> 00:04:32,050
+This has to do with something called inversion.
+
+18
+00:04:33,432 --> 00:04:33,591
+Right?
+
+19
+00:04:33,891 --> 00:04:37,651
+For example, okay, it's clear that we have indeed six permutations.
+
+20
+00:04:37,951 --> 00:04:38,471
+Look at it.
+
+21
+00:04:38,471 --> 00:04:44,271
+The first, you can, actually it's written here, let me read for you.
+
+22
+00:04:44,790 --> 00:04:46,471
+You can put any one of the...
+
+23
+00:04:47,156 --> 00:05:13,451
+S'in 3, 2, 3, 3, 3, 3, 4, 4, 5, 5, 6, 6, 7, 8, 9, 9, 10, 10, 10, 10, 10, 10, 11, 10, 11, 11, 11, 11, 12, 12, 12, 13, 12, 13, 13, 13, 14, 14, 15, 15, 15, 16, 16, 16, 16, 16, 16, 16, 16, 17, 17, 17, 17, 17, 17, 17, 17, 18, 18, 18, 18, 19, 20,
+
+24
+00:05:14,290 --> 00:05:16,130
+1, 2, 3, right?
+
+25
+00:05:16,850 --> 00:05:18,370
+And if it continues this way,
+
+26
+00:05:18,591 --> 00:05:20,310
+of course, continue this way means
+
+27
+00:05:20,310 --> 00:05:22,411
+if your set contains
+
+28
+00:05:22,411 --> 00:05:24,072
+more than three elements, right?
+
+29
+00:05:24,630 --> 00:05:25,130
+If you
+
+30
+00:05:25,130 --> 00:05:28,110
+continue this way
+
+31
+00:05:28,110 --> 00:05:30,271
+until the end position can be
+
+32
+00:05:30,271 --> 00:05:32,490
+filled only by the
+
+33
+00:05:32,490 --> 00:05:35,670
+last remaining element,
+
+34
+00:05:36,310 --> 00:05:37,072
+then you will have
+
+35
+00:05:38,802 --> 00:05:55,942
+several permutations of your set, right? Let us apply it for this set of three elements. So, if you start with one, the next element in the sequence might be two.
+
+36
+00:05:57,108 --> 00:06:18,108
+Or, 3, of course, right? If it is 2, so the remaining element should be 3. If it is 3, the remaining member of S must be 2, of course, right? So this is two of the permutations, right? Two of the permutations. You have two more permutations, which starts with 2, right? The first...
+
+37
+00:06:18,288 --> 00:06:43,327
+İlk posisi, you have two. So, the next one in the sequence might be one or three. If it is one, of course, the remaining element is three. If it is three, the element in the sequence might be one, of course, right? You have two more permutations. In total, you have six, as I said before, right? So, let me give you the definition of inversion.
+
+38
+00:06:43,826 --> 00:06:48,447
+for you to distinguish even and odd permutations.
+
+39
+00:06:49,646 --> 00:06:53,346
+This is the formal and nice definition of determinant.
+
+40
+00:06:53,666 --> 00:07:06,406
+If you have linear algebra books in Turkish, you will see that most of them do not prefer to give this formal and nice definition,
+
+41
+00:07:06,548 --> 00:07:08,548
+but this is the nice one.
+
+42
+00:07:09,620 --> 00:07:27,120
+You cannot say that this is the two by two matrix and this one the determinant. Let us take this three by three determinant and this is the three by three matrix and this one is the determinant. This is not the definition. Inversion, look at this. Whenever you have such a permutation,
+
+43
+00:07:30,324 --> 00:07:45,644
+I don't know if you understand this expression. This is an expression of, how can I say, this is a sequence of numbers written in mixed order, for example, right?
+
+44
+00:07:46,043 --> 00:07:57,324
+These J1, J2, J sub n are one of those integers, 1, 2, 3, n, right? Coming from your set S. So this is one of the...
+
+45
+00:07:58,324 --> 00:08:03,184
+N! permutations you have, typically, the generic one, right?
+
+46
+00:08:03,843 --> 00:08:20,343
+So such a permutation, such a typical permutation is called to have an inversion if a larger integer, let's say J sub R, suppose this is the larger integer in this permutation,
+
+47
+00:08:20,343 --> 00:08:25,824
+if it precedes a smaller one, let's say Js, then you have an inversion.
+
+48
+00:08:26,324 --> 00:08:27,324
+Evet,
+
+49
+00:08:27,324 --> 00:08:28,324
+ve
+
+50
+00:08:28,324 --> 00:08:55,152
+bir
+
+51
+00:08:51,028 --> 00:09:17,706
+İkola, orta,
+
+52
+00:09:18,514 --> 00:09:45,375
+If you have a set S2, here means this set, right? 1 and 2. So you have 2!l permutation, which is 2. One is odd, one is even. This one is even because there is no inversion, right? Why no inversion? Because the last, excuse me, the largest number in the sequence is 2 and it precedes the smaller one, which is 1 here, right?
+
+53
+00:09:45,971 --> 00:09:49,610
+Bu, no inversion, vek bir definiçin, even.
+
+54
+00:09:50,010 --> 00:09:58,990
+The other permutation, the other permutation, is this one, and the largest number in the sequence does not precede the smaller one, which is one, right?
+
+55
+00:09:59,471 --> 00:10:02,110
+So this is, by definition, odd inversion.
+
+56
+00:10:02,770 --> 00:10:10,971
+Since the number of odd inversions is one for this permutation, the permutation itself, I mean the permutation two one, is...
+
+57
+00:10:13,220 --> 00:10:21,220
+So, determinant, now we are in a position to define, what is the determinant of a square matrix?
+
+58
+00:10:21,220 --> 00:10:31,220
+Look at this, A is given as a square matrix, so you have to understand immediately that determinant is for square matrices, right?
+
+59
+00:10:33,268 --> 00:10:55,807
+Determinant is a number associated to a square matrix. In what way associated? This is the way that you associate, right? The number of, look at this, this is just a notation, you sum the even and odd permutations of your set, right? Of your set S.
+
+60
+00:10:56,436 --> 00:11:23,216
+1, 2, n. How do you know that your set is this one? Because of your order of your matrix, right? This is m by n. So any row or any column contains n element. So that's why you have to fix such a set as. Consider the number of permutations, distinguish the even and odd ones, and then sum all of them.
+
+61
+00:11:26,676 --> 00:11:27,676
+Evet?
+
+62
+00:11:28,436 --> 00:11:41,676
+O zaman,
+
+63
+00:11:43,604 --> 00:11:44,083
+Okay.
+
+64
+00:11:46,644 --> 00:11:55,043
+So if you have, so now you can see in particular that the determinant of such a 2x2 matrix is exactly this one.
+
+65
+00:11:56,464 --> 00:11:59,264
+And this is the practical way to remember.
+
+66
+00:11:59,524 --> 00:12:04,484
+You multiply the entries you see on the fundamental diagonal.
+
+67
+00:12:07,840 --> 00:12:22,820
+O zaman,
+
+68
+00:12:07,220 --> 00:12:17,100
+ve bu dağılıkları,
+
+69
+00:12:17,100 --> 00:12:20,220
+bu dağılıkları,
+
+70
+00:12:20,220 --> 00:12:21,980
+bu dağılıkları.
+
+71
+00:12:21,980 --> 00:12:24,139
+Bu dağılıkları,
+
+72
+00:12:24,139 --> 00:12:33,707
+bu dağılıkları,
+
+73
+00:12:34,163 --> 00:12:46,962
+Bu, bu, bu, bu, set. Ve bu, you already know that you have two permutations, this one versus this. This is even, right? And this is old.
+
+74
+00:12:49,003 --> 00:12:49,623
+Right?
+
+75
+00:12:55,316 --> 00:12:57,316
+Ve bu definiçiyonu.
+
+76
+00:13:02,196 --> 00:13:09,456
+In the definition of determinant, you consider the product of entries of your matrix, matrix A, right?
+
+77
+00:13:10,076 --> 00:13:14,135
+Look at this, these are entries of A.
+
+78
+00:13:16,275 --> 00:13:23,316
+The number of rows is running from 1 to n, but the number of row columns, excuse me,
+
+79
+00:13:24,980 --> 00:13:31,740
+are exactly the permutations, are related with permutations, J1, J2, J sub n, right?
+
+80
+00:13:33,179 --> 00:13:33,480
+Alright.
+
+81
+00:13:36,299 --> 00:13:45,799
+So that's why you can see that, look at this, A1, let me write this right.
+
+82
+00:13:46,460 --> 00:13:50,779
+Let me put underline here, times,
+
+83
+00:13:55,860 --> 00:13:56,659
+Minus
+
+84
+00:14:01,620 --> 00:14:05,620
+Bakın, bu bir yöntem var.
+
+85
+00:14:07,120 --> 00:14:10,620
+Bu, bu yöntem var.
+
+86
+00:14:10,620 --> 00:14:23,620
+Bu yöntem var.
+
+87
+00:14:23,620 --> 00:14:25,620
+Bakın, bu yöntem var.
+
+88
+00:14:25,620 --> 00:14:26,412
+1, 2.
+
+89
+00:14:31,988 --> 00:14:32,988
+Evet?
+
+90
+00:14:54,772 --> 00:15:02,851
+You can apply exactly the same definition to another matrix. Let's see this one, 3x3, right?
+
+91
+00:15:06,355 --> 00:15:33,815
+How many permutations do we have? Six permutations. What is the number of odd permutations? It's three. And we have three more? Even permutations, right? So you have to use these permutations to calculate the determinant, to write, look at this. This one. Multiply by this one. These are the product of entries of your matrix. So they are numbered.
+
+92
+00:15:34,292 --> 00:15:37,292
+Evet, bu.
+
+93
+00:15:41,524 --> 00:15:56,724
+This underline, if you prefer you can put box, it doesn't matter, right? So the missing indices are coming from the even and odd permutations, right? That's what I'm talking about.
+
+94
+00:15:58,144 --> 00:16:04,024
+Okay? Look at this. Let me enlarge the screen.
+
+95
+00:16:06,024 --> 00:16:07,062
+Look at this.
+
+96
+00:16:07,668 --> 00:16:30,008
+I have said that we have three permutations. One, two, three. These are the even permutations. That's why their signs are positive, right? The other three permutations are odd. That's why their signs are negative, right? So, look at this.
+
+97
+00:16:34,004 --> 00:16:37,323
+1, 2, 3.
+
+98
+00:17:01,812 --> 00:17:04,571
+I can explain you, look at this, why this is even.
+
+99
+00:17:06,612 --> 00:17:14,471
+Because, look, three is the largest element, three is the largest number in this sequence, right?
+
+100
+00:17:14,892 --> 00:17:22,211
+And it precedes a smaller number, one, also it precedes a smaller number, two, right?
+
+101
+00:17:22,491 --> 00:17:26,750
+So two times inversion, two inversions, I have counted.
+
+102
+00:17:27,538 --> 00:17:34,538
+İki videoda, ikinci bir inversiyle,
+
+103
+00:17:34,538 --> 00:17:36,538
+4-3
+
+104
+00:17:36,538 --> 00:17:39,538
+ve
+
+105
+00:17:39,538 --> 00:17:42,538
+1'e de aynı şekilde
+
+106
+00:17:42,538 --> 00:17:43,538
+1'e de bir kere,
+
+107
+00:17:43,538 --> 00:17:47,538
+1'e de bir kere daha fazla
+
+108
+00:17:52,980 --> 00:18:17,996
+Bu, bu
+
+109
+00:18:19,220 --> 00:18:34,299
+2, excuse me, 2, 1, 3, and the last 1 is this, 3, 2, 1, right?
+
+110
+00:18:36,359 --> 00:18:41,920
+Okay, this is the formal definition, but there is a very nice way, look at this.
+
+111
+00:18:45,394 --> 00:19:00,778
+Bu, bu
+
+112
+00:19:04,146 --> 00:19:17,186
+These rows, indicating the right, to the right, are actually the positive, excuse me, the even permutation, right?
+
+113
+00:19:17,548 --> 00:19:27,548
+So their signs are positive. And then you consider the other rows, arrows, excuse me, indicating left, right?
+
+114
+00:19:27,548 --> 00:19:31,166
+So these are the odd permutations.
+
+115
+00:19:31,666 --> 00:19:59,596
+Bu, bu
+
+116
+00:20:00,000 --> 00:20:27,339
+consider their sum, if their sign is positive, right? You consider the same for the others. I mean, these blue roots, you multiply the numbers you see in blue roots, right? And multiply by minus 1, and that sum, all of them, right?
+
+117
+00:20:28,403 --> 00:20:51,276
+Bu, bu
+
+118
+00:20:55,412 --> 00:20:56,051
+Alright.
+
+119
+00:20:59,172 --> 00:21:00,071
+Look at this.
+
+120
+00:21:04,852 --> 00:21:14,632
+This is our matrix A, right? And I'm adding the first two rows here, right?
+
+121
+00:21:18,996 --> 00:21:46,443
+Bu, bu
+
+122
+00:21:46,451 --> 00:21:49,750
+Look at this, second root is this, right?
+
+123
+00:21:50,070 --> 00:22:00,790
+So you multiply all these three numbers and add to the number you obtain from the first red root, right?
+
+124
+00:22:00,790 --> 00:22:06,871
+The third red root, which contains this number, right?
+
+125
+00:22:07,171 --> 00:22:12,111
+You multiply 3 by 2 by 1, right?
+
+126
+00:22:12,692 --> 00:22:19,692
+So you sum all these three numbers. You do the same for the other roots. Let me...
+
+127
+00:22:23,858 --> 00:22:25,858
+Buna da bu kapların altyazı,
+
+128
+00:22:25,858 --> 00:22:27,858
+bu kapların altyazı,
+
+129
+00:22:27,858 --> 00:22:29,858
+tamam mı?
+
+130
+00:22:29,858 --> 00:22:31,858
+Bu, aynı şekilde.
+
+131
+00:22:31,858 --> 00:22:33,858
+Bu kapların altyazı,
+
+132
+00:22:33,858 --> 00:22:37,858
+bu kapların altyazı,
+
+133
+00:22:37,858 --> 00:22:39,858
+ve bu kapların altyazı,
+
+134
+00:22:39,858 --> 00:22:41,194
+bu kapların altyazı,
+
+135
+00:22:42,194 --> 00:22:54,515
+Determinant of A, which is 6, you will soon see that, whenever this number, I mean the determinant is not 0, your matrix is supposed to be non-zero.
+
+136
+00:22:55,394 --> 00:23:07,775
+So this is relatively easier than knowing if a given matrix is non-singular or not, using, for example, a raw echelon form or reduced raw echelon form, right?
+
+137
+00:23:10,612 --> 00:23:23,810
+You don't need to work with your matrix, put it in a, in a rubbish, put, make it equivalent to another matrix which is in rubbish non-form, just to know if it is singular or not, right?
+
+138
+00:23:24,211 --> 00:23:29,632
+You see, this determinant is much more simple, much more simple, right? Much more simple.
+
+139
+00:23:32,211 --> 00:23:32,971
+All right.
+
+140
+00:23:34,730 --> 00:23:37,770
+So, this method used for computing determinant.
+
+141
+00:23:43,804 --> 00:23:51,804
+Bu, ifa matris A is at least of order 4, you cannot apply this, right?
+
+142
+00:23:51,804 --> 00:23:59,804
+You cannot apply, if I'm not wrong, this is called Saro's rule.
+
+143
+00:23:59,804 --> 00:24:04,804
+We will also see another one, Laplace rule.
+
+144
+00:24:07,256 --> 00:24:17,256
+bu kapların altyazı,
+
+145
+00:24:07,092 --> 00:24:31,307
+Bu, bu
+
+146
+00:24:34,228 --> 00:24:34,948
+Alright.
+
+147
+00:24:36,468 --> 00:24:37,827
+Some exercises.
+
+148
+00:24:38,508 --> 00:24:43,407
+As always, we have exercises at the end of each subsection, right?
+
+149
+00:24:43,988 --> 00:24:48,028
+So we have some nice properties of determinants.
+
+150
+00:24:48,867 --> 00:24:59,948
+For example, if theorem 3.1 states one of these simple properties of determinant, it says...
+
+151
+00:25:02,036 --> 00:25:11,355
+N-square matrix ve a'ın transporu ile aynı determinants, değil mi? Bu, çok kolay.
+
+152
+00:25:12,556 --> 00:25:18,915
+Ve proof is also not difficult, çünkü, neden de determinants coincide?
+
+153
+00:25:18,915 --> 00:25:27,476
+Çünkü, when you take the transpose of A, you change the position of rows and columns, değil mi?
+
+154
+00:25:28,146 --> 00:25:54,058
+O, yani, even permutations become old, old permutations become even, but their number does not change, right? Does not change. And the sum will not be changed also, right? Roughly speaking, the proof is something like that, right? I don't care the...
+
+155
+00:25:54,228 --> 00:25:56,228
+Proof in details.
+
+156
+00:25:57,988 --> 00:26:05,587
+You can check, for example, in this example, what's the statement of the preceding theorem,
+
+157
+00:26:05,587 --> 00:26:09,188
+the matrix A, which we have already seen, right?
+
+158
+00:26:09,188 --> 00:26:15,428
+Look at this matrix, the preceding matrix A, right?
+
+159
+00:26:15,428 --> 00:26:19,372
+Whose determinant was formed as 6, right?
+
+160
+00:26:20,626 --> 00:26:29,428
+So, if you take its transpose and calculate its determinant separately, you will see that its determinant is again 6.
+
+161
+00:26:29,586 --> 00:26:35,407
+This is not surprising because theorem already claims and proves this fact, right?
+
+162
+00:26:36,988 --> 00:26:40,807
+Okay, so this property is quite clear to understand.
+
+163
+00:26:40,807 --> 00:26:44,747
+Another property says that if you change the...
+
+164
+00:26:45,268 --> 00:27:04,646
+Rölesi, you change the sign of determinant. I mean, suppose you are given a square matrix, if you change the position of two rows of this matrix, then you change the sign of its determinant, right?
+
+165
+00:27:10,163 --> 00:27:14,462
+You associate an equivalent matrix to the original one, right?
+
+166
+00:27:15,243 --> 00:27:23,624
+But the diff, okay, they are equivalent, but there is a difference between their determinants, right?
+
+167
+00:27:24,442 --> 00:27:30,784
+You change the roles, and that means you change the sign of determinants.
+
+168
+00:27:30,884 --> 00:27:34,284
+This is the statement of theorem 3.2.
+
+169
+00:27:34,836 --> 00:27:54,775
+I think it's also clear to understand, look at this, if B result from A by interchanging two different roles, the same happens for columns also, then B is equivalent to A, but its determinant is not equal to that of A, right?
+
+170
+00:27:55,615 --> 00:27:57,796
+The difference is just the sign.
+
+171
+00:27:59,355 --> 00:27:59,674
+Alright.
+
+172
+00:28:01,940 --> 00:28:11,278
+If two rows are equal, then determinant is zero. This is also nice, right? Why do you think this is true?
+
+173
+00:28:13,798 --> 00:28:20,960
+Suppose you are given a matrix in which two rows are equal, right? Why its determinant must be zero?
+
+174
+00:28:23,339 --> 00:28:25,480
+Because you can multiply.
+
+175
+00:28:26,132 --> 00:28:37,099
+bir de iki eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eşit bir eş
+
+176
+00:28:40,307 --> 00:28:44,307
+ve if you compute the determinant of the resulting matrix
+
+177
+00:28:44,307 --> 00:28:47,906
+that consists of zero in one of its rows
+
+178
+00:28:47,906 --> 00:28:51,508
+you will see that its determinant is necessarily zero, right?
+
+179
+00:28:56,115 --> 00:28:56,915
+Excuse me.
+
+180
+00:28:59,355 --> 00:29:08,336
+What else? If a row of A consists entirely of zeros, excuse me, if two rows are equal, then determinant is zero, right?
+
+181
+00:29:09,395 --> 00:29:17,195
+Look at this. If two rows are equal, then determinant is zero. All right.
+
+182
+00:29:17,776 --> 00:29:20,115
+This one says that if A...
+
+183
+00:29:21,460 --> 00:29:48,076
+A'ın a
+
+184
+00:29:50,612 --> 00:29:55,612
+3.3 say this one.
+
+185
+00:29:55,612 --> 00:29:56,612
+If...
+
+186
+00:29:57,612 --> 00:29:59,612
+I don't know, for example...
+
+187
+00:30:09,468 --> 00:30:13,468
+Çünkü bu Theorem, bu Theorem, hiç bir şey verilir.
+
+188
+00:30:31,826 --> 00:30:38,346
+Two rows are equal, so that means determinant is zero, right?
+
+189
+00:30:42,612 --> 00:30:58,632
+If b is, another one, another property, if b is obtained from a by multiplying a row of a by a real number, then this is the effect of determinant, right? This is the effect of multiplication in determinant, right?
+
+190
+00:31:10,708 --> 00:31:16,928
+And determinant of B, you will not say that equal to determinant of A, right?
+
+191
+00:31:17,188 --> 00:31:21,008
+They are equivalent, but it doesn't mean that they have the same determinant.
+
+192
+00:31:22,028 --> 00:31:27,288
+Alright? So this is the effect of scholar multiplication in determinant of B.
+
+193
+00:31:28,367 --> 00:31:29,607
+This is also nice.
+
+194
+00:31:31,700 --> 00:31:50,980
+Bir daha bir şey. B is obtained from A, by adding to each element of the rho R of A, k times the corresponding element of the rho S, of course here R and S are supposed to be non-coincident, right?
+
+195
+00:31:50,980 --> 00:31:56,878
+In this case, these two matrices possess the same determinant, okay?
+
+196
+00:32:00,818 --> 00:32:01,179
+Alright.
+
+197
+00:32:06,067 --> 00:32:26,866
+Look at this, example seven. Okay. I see a matrix determinant, two different matrices, determinant of two different matrices, right? But they have the same determinant. Matrices are different, but they have the same determinant.
+
+198
+00:32:30,482 --> 00:32:56,702
+We have obtained by adding the second row to the first row. Look at this. By adding twice the second row to the first row means you multiply the second row by two and add to the first row. And this means you will have 5, 0, 9 in first row, the resulting matrix, right? Suppose this is A, 1, 2, 3.
+
+199
+00:32:59,634 --> 00:33:27,371
+Bu, B'nin bir tane
+
+200
+00:33:31,538 --> 00:33:42,359
+If you obtain the determinant separately, you will see that both matrices have the same determinant, which is four, right?
+
+201
+00:33:53,844 --> 00:34:18,844
+Alright, Theorem 3.7 says that if your matrix A is upper, respectively, lower triangular, then determinant of such a matrix is simply the product of its entries on the fundamental diagonal, right? This is nice. This is nice. Look at this. Suppose you have such an...
+
+202
+00:34:19,411 --> 00:34:36,692
+upper triangular matrix, right? It might be lower triangular, it doesn't matter. So, determinant is easy to calculate. Just focus on the fundamental diagonal and multiply the entries you see there, right?
+
+203
+00:34:37,291 --> 00:34:45,431
+1, 1. This is what theorem 3.7 says to us, right? It's very easy.
+
+204
+00:35:03,411 --> 00:35:03,931
+Muttiye.
+
+205
+00:35:08,052 --> 00:35:10,311
+Then determinant of A.
+
+206
+00:35:16,851 --> 00:35:22,050
+Bu, again, ottened by multiplying the entries on the fundamental diagonal.
+
+207
+00:35:26,420 --> 00:35:26,739
+Ok.
+
+208
+00:35:30,260 --> 00:35:36,420
+All right, I think we are resuming what we have seen up to now, right here.
+
+209
+00:35:37,800 --> 00:35:42,900
+Interchanging rows, i and j, this is the notation, if you remember.
+
+210
+00:35:48,083 --> 00:35:50,182
+Let me see. Excuse me.
+
+211
+00:35:57,396 --> 00:35:59,715
+Let me read this paragraph here.
+
+212
+00:36:01,476 --> 00:36:06,916
+We introduce compact notation for elementary row operations on matrices.
+
+213
+00:36:06,916 --> 00:36:07,235
+Right.
+
+214
+00:36:08,114 --> 00:36:13,076
+In this chapter we use the same notations for rows and columns of determinants.
+
+215
+00:36:13,076 --> 00:36:13,476
+Alright.
+
+216
+00:36:16,036 --> 00:36:17,396
+So what you see here.
+
+217
+00:36:22,003 --> 00:36:48,976
+Bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda
+
+218
+00:36:48,976 --> 00:36:52,844
+Açık,
+
+219
+00:37:03,476 --> 00:37:09,255
+So, what's the meaning, what's the effect of this? Let us resume and then finish the lecture.
+
+220
+00:37:09,916 --> 00:37:17,114
+This means you interchange the rho i and rho j, right? What's the effect of it in the term? The determined change sign, right?
+
+221
+00:37:17,556 --> 00:37:24,255
+Look at this. Look at this. Whenever you perform such a...
+
+222
+00:37:24,628 --> 00:37:31,887
+Elementar raw operation, its effect in determinant is the change of sign, right? That's why we put it here, minus.
+
+223
+00:37:33,467 --> 00:37:43,447
+So this one is another metric, matrix B, which is equivalent to A, of course, and its determinant is the negative or opposite of the determinant of A.
+
+224
+00:37:43,867 --> 00:37:48,487
+Of course, A, I, and J must not be equal here, right?
+
+225
+00:37:49,619 --> 00:38:00,018
+vekutör, bu notation, bak atı, you multiply the row i by non-zero-scala k, vekutör, bu asa new row i.
+
+226
+00:38:38,675 --> 00:39:03,675
+...
+
+227
+00:39:03,219 --> 00:39:12,958
+If you don't have any questions, I will stop here and continue with the rest next week, right?
+
+228
+00:39:14,818 --> 00:39:15,338
+Alright.
+
+229
+00:39:17,838 --> 00:39:24,838
+Do you have any questions? I have a lecture at 1pm, so I have to stop now.
+
+230
+00:39:25,139 --> 00:39:27,018
+If you don't have any questions, any questions?
+
+231
+00:39:31,092 --> 00:39:33,992
+All right. Have a nice day. Bye.
+
+232
+00:40:13,586 --> 00:40:14,467
+Günaydın arkadaşlar.
+
+233
+00:40:17,507 --> 00:40:20,167
+Kaç kişi var bakayım sınıfta? 11 kişi.
+
+234
+00:40:21,467 --> 00:40:23,086
+Sesim geliyor değil mi? Duyuyorsunuz arkadaşlar.
+
+235
+00:40:30,035 --> 00:40:30,876
+Evet hocam.
+
+236
+00:40:31,736 --> 00:40:38,015
+Teşekkür ederim. Bir iki dakika bekleyelim isterseniz. Çünkü sınıfın büyük bir çoğunluğu henüz bağlanamamış.
+
+237
+00:40:42,291 --> 00:40:56,992
+Ekranımıza dönelim. En son bu örnekte kalmış olmamız lazım. Üzerindeki karalamalardan bakıyorum notlarıma. Evet, elementer satır işlemlerinden bahsetmişim.
+
+238
+00:40:59,692 --> 00:41:08,251
+Sorusu olan var mı? Diğer arkadaşlarınız gelene kadar bu bir dakika zarfında konuşmak isteyen sorusu olan varsa konuşabiliriz.
+
+239
+00:41:10,803 --> 00:41:21,783
+If you have any question, I can try to answer them now, right? Otherwise, I will start the lecture within one or two minutes.
+
+240
+00:41:30,772 --> 00:41:33,092
+All right, 17, student.
+
+241
+00:41:39,539 --> 00:41:44,099
+Ok, let us repeat what we saw last week.
+
+242
+00:41:46,900 --> 00:41:49,219
+I mean, exactly, this is the definition.
+
+243
+00:41:49,719 --> 00:41:51,159
+Definition 2.2, right?
+
+244
+00:41:52,080 --> 00:42:01,300
+What was the definition of elementary, row, respectively, column operation on a matrix A, not necessarily square, right?
+
+245
+00:42:02,740 --> 00:42:12,819
+Bu type of operation, I mean, elementary raw operation, on a given matrix A, is any one of the following operations.
+
+246
+00:42:12,939 --> 00:42:20,039
+Let us see the list. We have mainly three types of elementary raw operations.
+
+247
+00:42:20,160 --> 00:42:23,300
+The first one says that you can interchange.
+
+248
+00:42:24,146 --> 00:42:47,728
+Any two rows, respectively, columns, of course, right? This is called type 1, but it doesn't matter, right? You don't need to call type 1, type 2, type 3, it doesn't matter. One of the properties is that you can change the position of two rows or two columns. What else? You can also multiply a certain row by a non-zero number.
+
+249
+00:42:48,499 --> 00:43:13,451
+Bu bir diğer birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin bir
+
+250
+00:43:13,876 --> 00:43:15,876
+Bu ne yapalım,
+
+251
+00:43:15,876 --> 00:43:16,876
+Evet,
+
+252
+00:43:16,876 --> 00:43:23,876
+İzlediğiniz için,
+
+253
+00:43:29,523 --> 00:43:38,483
+Okay, so this notation means we are changing the rho i by rho j, right?
+
+254
+00:43:38,483 --> 00:43:53,304
+So if your matrix is here, and if this is the rho i, and this is the rho j, you can change the position.
+
+255
+00:43:53,304 --> 00:43:54,222
+I mean, rho j,
+
+256
+00:43:54,771 --> 00:44:04,132
+Rho i ve Rho i ve Rho j. Bu bir elementary Rho operation ve bu noktada bir noktada bir noktada.
+
+257
+00:44:05,092 --> 00:44:05,352
+Ok?
+
+258
+00:44:07,112 --> 00:44:13,391
+Or, in accordance with the list above, you can call type 1, right? Type 1.
+
+259
+00:44:14,011 --> 00:44:15,011
+This is type 2.
+
+260
+00:44:16,472 --> 00:44:17,071
+Look at this.
+
+261
+00:44:17,071 --> 00:44:20,815
+You are multiplying the Rho i by...
+
+262
+00:44:20,816 --> 00:44:42,675
+A non-zero scala k, and then this is your updated row i. This notation says exactly this one. You multiply the row i by k, and this is your new row i. You don't change the position of your row. You just change the entries in that row.
+
+263
+00:44:49,300 --> 00:45:07,720
+You can also multiply any row by a non-zero scalar k, and add to another row, and this might be your new or updated, if you prefer to use this term, you can call updated row.
+
+264
+00:45:17,076 --> 00:45:19,076
+Rho J, right?
+
+265
+00:45:20,996 --> 00:45:28,316
+Okay, that simply means you manipulate the entries, you change the entries located in Rho J.
+
+266
+00:45:29,196 --> 00:45:32,796
+Any questions regarding these notations or this convention?
+
+267
+00:45:33,956 --> 00:45:40,916
+If you have any questions, it's good to ask now, because you will be confused, okay, which is not good.
+
+268
+00:45:42,576 --> 00:45:43,916
+Okay, let us...
+
+269
+00:45:44,468 --> 00:45:47,208
+Repeat again this example.
+
+270
+00:45:48,908 --> 00:45:51,608
+Let me clear it once again.
+
+271
+00:45:52,387 --> 00:45:56,208
+Let me clear once again the screen.
+
+272
+00:45:58,968 --> 00:45:59,847
+All right.
+
+273
+00:46:01,248 --> 00:46:03,228
+You see, this is our matrix.
+
+274
+00:46:04,047 --> 00:46:05,948
+Not necessarily square, right?
+
+275
+00:46:06,568 --> 00:46:09,987
+So let us follow the steps suggested by the book.
+
+276
+00:46:09,987 --> 00:46:10,968
+It says,
+
+277
+00:46:11,923 --> 00:46:15,923
+İntrachan ilk ve 3rd row.
+
+278
+00:46:39,168 --> 00:46:46,128
+Unchange. Rho. You see? The same here.
+
+279
+00:46:49,248 --> 00:47:04,927
+So you have manipulated the matrix A to obtain this B. If you instead multiply the third row of initial matrix A by 1 over 3,
+
+280
+00:47:05,780 --> 00:47:10,460
+Then you obtain this, another matrix, C, right?
+
+281
+00:47:11,120 --> 00:47:11,700
+Look at this.
+
+282
+00:47:12,360 --> 00:47:19,940
+Multiplying the third row by a non-zero scala means you keep the first two rows, okay?
+
+283
+00:47:20,280 --> 00:47:21,760
+These two rows are unchanged.
+
+284
+00:47:22,340 --> 00:47:25,240
+You just update your third row.
+
+285
+00:47:26,420 --> 00:47:39,360
+So, if we use the notation, you have to write what? The third row is being multiplied by 1 over 3, and this is our new third row, right?
+
+286
+00:47:42,259 --> 00:47:42,860
+Okay.
+
+287
+00:47:43,800 --> 00:47:50,999
+What else? You can also try to multiply the row 2 by minus 2, and
+
+288
+00:47:53,312 --> 00:47:59,091
+Add this to row 3 of A to obtain another matrix D.
+
+289
+00:48:00,231 --> 00:48:16,231
+Let us write in terms of notation, row 2 is multiplied by minus 2, added to third row, and this is your new third row.
+
+290
+00:48:19,954 --> 00:48:46,596
+I don't know if you are following carefully, but when you do this, I mean this elementary operation, you see that you maintain, you keep the first two rows, look at this, you have the first two rows unchanged, right? You just manipulated the third row. In what way you are going to manipulate?
+
+291
+00:48:47,699 --> 00:49:14,780
+You add to this row, minus 2 times, second row, right? Look at this. If you multiply the second row, let me write here, second row of initial matrix A is this one, look at this. Let me write as a line vector, right? All right. So if you multiply by minus,
+
+292
+00:49:17,011 --> 00:49:17,452
+2
+
+293
+00:49:22,516 --> 00:49:23,836
+You will obtain this.
+
+294
+00:49:26,836 --> 00:49:27,556
+Alright?
+
+295
+00:49:28,296 --> 00:49:30,356
+If you add to the third row,
+
+296
+00:49:31,856 --> 00:49:36,556
+Let me write this way.
+
+297
+00:49:38,136 --> 00:49:40,216
+The third row of A,
+
+298
+00:49:41,216 --> 00:49:42,236
+Let me see where.
+
+299
+00:49:43,914 --> 00:49:45,376
+Let me write here.
+
+300
+00:49:58,548 --> 00:50:22,748
+Okay, so let us finish the calculation, minus 4 plus 3 gives you minus 1, minus 3 here, 6, and minus 5. Okay, so look at this, the last row of the matrix D, right? Okay.
+
+301
+00:50:24,500 --> 00:50:30,959
+You see, it's not a big deal, actually, right? It's easy to understand such calculations.
+
+302
+00:50:32,439 --> 00:50:37,500
+Let me give you one more definition here, which says...
+
+303
+00:50:38,132 --> 00:50:54,151
+An M by N matrix D is said to be raw equivalent to another M by N matrix A, if B can be produced or obtained by applying a finite sequence of elementary raw operations to A.
+
+304
+00:50:55,632 --> 00:51:02,231
+Whenever you, this definition says simply this one. Suppose you are given two matrices of the same order, right?
+
+305
+00:51:06,132 --> 00:51:15,932
+are from this set, the set or the universe of matrices n by n, real entries, right?
+
+306
+00:51:16,151 --> 00:51:27,651
+So suppose you are given two matrices of this set, and suppose we use this notation, this tilde means they are equivalent, right?
+
+307
+00:51:27,771 --> 00:51:30,332
+Not equal. You have to distinguish this.
+
+308
+00:51:31,507 --> 00:51:56,968
+Not equal, equivalent means, according to definition, this B, whenever this B is obtained from A, through a finite number of combinations of elementary raw operations, then we say these matrices are equivalent, or B is equivalent to A, right? It's quite clear definition. So let us see the next example.
+
+309
+00:51:58,420 --> 00:52:00,420
+Bu definiçin.
+
+310
+00:52:01,059 --> 00:52:11,020
+Actually, we have obtained more than one equivalent matrices to another given matrices in the example one, the preceding example.
+
+311
+00:52:11,020 --> 00:52:19,420
+I mean, let me show you the preceding example. Look at this.
+
+312
+00:52:19,603 --> 00:52:26,603
+B'ye yaptığınız bir altyazı yapmak için,
+
+313
+00:52:47,380 --> 00:52:53,059
+Ama, in each case, you have obtained an equivalent matrix, in just one step.
+
+314
+00:52:54,539 --> 00:53:00,520
+But in the definition, it says finite sequence, or finite number, if you prefer.
+
+315
+00:53:01,220 --> 00:53:01,360
+Right?
+
+316
+00:53:01,740 --> 00:53:08,160
+So, if you continue, for example, if you consider this B, which is equivalent to A, if you continue to apply...
+
+317
+00:53:08,564 --> 00:53:21,444
+Bu, eğer elementar raw operations, in each step, you will obtain in each step, an equivalent matrix to B, which is equivalent to A, right? There is a transitivity in that.
+
+318
+00:53:22,564 --> 00:53:23,564
+Okay?
+
+319
+00:53:25,564 --> 00:53:32,564
+So, in example four, we can also see this. Look at this. If at two times,
+
+320
+00:53:33,492 --> 00:53:50,151
+If we add 2 times row 3 of A to its second row, let me write the notations to follow better on the screen, 2 times row 3, this means, right?
+
+321
+00:53:50,151 --> 00:53:53,472
+And add this to second row.
+
+322
+00:53:54,771 --> 00:53:57,771
+Bu, bu, yeni bir kısımda bir kısımda.
+
+323
+00:54:22,035 --> 00:54:24,954
+ve 3rd row'a
+
+324
+00:54:24,954 --> 00:54:26,695
+birçok birçok
+
+325
+00:54:26,695 --> 00:54:41,996
+birçok
+
+326
+00:54:43,891 --> 00:55:10,570
+If you multiply by two, this third row, and then add to this, this is just arithmetic, right? I don't need to explain in details. Just arithmetic, right? You can do it by yourself easily, right? Any question? Do you have any question?
+
+327
+00:55:11,219 --> 00:55:20,319
+Let me see if you have some messages. Okay. We have now 29 persons, which is good.
+
+328
+00:55:20,939 --> 00:55:27,579
+Any question? Sorunuz varsa sorun arkadaşlar. Böyle kendi kendime konuşuyormuş gibi olmayı. Ben böyle konuşur, ters tamamlar, kapatır giderim yani.
+
+329
+00:55:28,199 --> 00:55:35,160
+Arada böyle sorusu olan varsa sorsun. Sözümü kesebilir. Sorun değil benim için. Daha da iyi olur yani.
+
+330
+00:55:37,363 --> 00:55:43,923
+Var mı sorusu olan? Any question? Any part which is not clear for you?
+
+331
+00:55:45,383 --> 00:55:47,444
+No, teacher. Yes.
+
+332
+00:55:52,180 --> 00:55:53,260
+I'm listening, yeah.
+
+333
+00:55:54,219 --> 00:55:56,079
+No, no, I said I have no question.
+
+334
+00:55:57,000 --> 00:55:58,400
+You have no question, okay.
+
+335
+00:56:00,199 --> 00:56:00,600
+Alright.
+
+336
+00:56:01,800 --> 00:56:03,180
+So, look at this.
+
+337
+00:56:04,338 --> 00:56:10,240
+After doing this elementary raw operation, we have obtained an equivalent matrix B, right?
+
+338
+00:56:10,240 --> 00:56:12,338
+B is equivalent to A.
+
+339
+00:56:15,252 --> 00:56:20,752
+Ve if you prefer to continue with these row operations, you are free to continue, right?
+
+340
+00:56:22,132 --> 00:56:27,492
+If you interchange the second and third row of B,
+
+341
+00:56:28,951 --> 00:56:32,951
+then you obtain another matrix that is called C here, for example.
+
+342
+00:56:33,352 --> 00:56:37,332
+C is obtained from B by applying this.
+
+343
+00:56:38,931 --> 00:56:42,932
+Operation, right? You just change the positions of the second and third row.
+
+344
+00:56:43,631 --> 00:56:48,952
+So C is a matrix which is equivalent to B, right? Rahu equivalent.
+
+345
+00:56:49,511 --> 00:56:52,070
+Because we are using main row operations, right?
+
+346
+00:56:52,212 --> 00:56:59,952
+If you use column, elementary column operations, then you will call that C is column equivalent to B, right?
+
+347
+00:57:01,150 --> 00:57:04,811
+All right, if you still prefer to continue.
+
+348
+00:57:05,262 --> 00:57:14,684
+For example, if you want to multiply the first row of C, the latest matrix C, right?
+
+349
+00:57:14,783 --> 00:57:26,024
+If you prefer to multiply the first row of this latest matrix by 2, then you obtain another matrix, let's say D.
+
+350
+00:57:26,024 --> 00:57:29,483
+And D is row equivalent to C, right?
+
+351
+00:57:31,155 --> 00:57:57,435
+Since we have transitivity here, look at this, D is equivalent. What's the meaning of transitivity? You have to understand the following. D is equivalent. We have said that D is equivalent to C, right? But we also said that C is equivalent to B, and we have also said that B is equivalent to A. So transitivity means this. You can say, finally, that D is equivalent to A, right?
+
+352
+00:57:59,700 --> 00:58:05,280
+D'eqüvalent to C, because you have applied just one elemental raw operation.
+
+353
+00:58:05,900 --> 00:58:12,119
+Again, C'eqüvalent to B, you have obtained, you have applied just one elemental raw operation.
+
+354
+00:58:12,800 --> 00:58:18,840
+B'eqüvalent to A in the same way, after applying just one elemental raw operation.
+
+355
+00:58:18,840 --> 00:58:23,760
+But D'eqüvalent to A after applying exactly three.
+
+356
+00:58:24,127 --> 00:58:30,828
+Raw operations, right? The number of operations you apply doesn't matter, right? Doesn't matter.
+
+357
+00:58:31,387 --> 00:58:38,127
+So these transitivity works well here in this way, right? These are equivalent to A, okay?
+
+358
+00:58:40,047 --> 00:58:45,367
+Three is a finite number of course, right? It was not a coincidence in the definition that we used.
+
+359
+00:58:46,267 --> 00:58:49,367
+A finite sequence or finite number of...
+
+360
+00:58:49,836 --> 00:58:56,836
+birçok
+
+361
+00:58:49,715 --> 00:59:15,883
+bu
+
+362
+00:59:16,563 --> 00:59:44,108
+Bu, bu
+
+363
+00:59:44,884 --> 00:59:47,884
+Ama bu bir şey değil.
+
+364
+00:59:47,884 --> 00:59:58,884
+Bu bir şey değil.
+
+365
+00:59:58,884 --> 01:00:02,124
+Bir şey değil.
+
+366
+01:00:02,164 --> 01:00:29,008
+I don't want to repeat one more exercise, right? Because as I said, it is mainly arithmetic, right? If you think you understood well, these elementary operations, so the rest is arithmetic, right? So I don't see the necessity to repeat this kind of simple calculation in more than one or two examples. So I suggest you to...
+
+367
+01:00:29,008 --> 01:00:32,008
+Sıkta bir metriş yapabilirsiniz.
+
+368
+01:00:32,008 --> 01:00:37,008
+Bu metriş yapabilirsiniz.
+
+369
+01:00:39,008 --> 01:00:40,008
+Evet.
+
+370
+01:00:40,008 --> 01:00:41,008
+Bu nedenle,
+
+371
+01:00:41,008 --> 01:00:44,008
+İlkeşem 5'i left.
+
+372
+01:00:44,008 --> 01:00:45,008
+Bu,
+
+373
+01:00:45,008 --> 01:00:47,008
+bu.
+
+374
+01:00:47,008 --> 01:00:49,008
+Bu.
+
+375
+01:00:49,008 --> 01:00:50,008
+Tamam.
+
+376
+01:00:54,548 --> 01:01:03,167
+For example, if you change the first and position of first and third row to obtain B, this is equivalent to A, right?
+
+377
+01:01:04,907 --> 01:01:09,867
+Did I say what was the meaning of pivot or leading one?
+
+378
+01:01:10,748 --> 01:01:15,427
+Something like this. Did I use this term, this terminology before?
+
+379
+01:01:16,088 --> 01:01:18,927
+What's the meaning of pivot or leading one?
+
+380
+01:01:22,610 --> 01:01:24,451
+I think so, right?
+
+381
+01:01:25,551 --> 01:01:33,070
+When we saw reduced raw echelon form, or raw echelon form, we have pronounced these terms, right?
+
+382
+01:01:33,171 --> 01:01:35,030
+Pivot, leading one, et cetera.
+
+383
+01:01:35,211 --> 01:01:37,831
+Leading one or pivot means what?
+
+384
+01:01:38,631 --> 01:01:49,030
+The first non-zero entry of any non-zero row, if it is one, is called leading one of that row or pivot.
+
+385
+01:01:49,536 --> 01:01:54,536
+Evet, bu işin bir ve üçün rol yaptık.
+
+386
+01:01:54,536 --> 01:02:09,536
+Bu işin bir ve üçün rol yaptık.
+
+387
+01:02:09,536 --> 01:02:12,536
+Çünkü ilk rol...
+
+388
+01:02:12,536 --> 01:02:14,536
+Bu ilk rol yaptık.
+
+389
+01:02:14,536 --> 01:02:16,536
+Bu bir non-zero rol yaptık.
+
+390
+01:02:17,011 --> 01:02:26,992
+But the first entry, which is not zero, is not one. I mean this number, right? This is not the leading one yet, right?
+
+391
+01:02:27,771 --> 01:02:40,172
+But you can manipulate, as I said before, last week, right? You can manipulate this and then obtain a leading one, right?
+
+392
+01:02:40,452 --> 01:02:43,610
+How do you do? You can, of course, divide.
+
+393
+01:02:44,048 --> 01:02:46,048
+İlk bir bölümde 2,
+
+394
+01:02:46,048 --> 01:02:50,048
+ve bu bölümde 1
+
+395
+01:02:50,048 --> 01:02:50,923
+bölümde 2
+
+396
+01:02:54,356 --> 01:02:56,675
+2, or multiply by 1 over 2, right?
+
+397
+01:02:57,235 --> 01:02:58,914
+But this is not the unique way.
+
+398
+01:02:59,896 --> 01:03:01,056
+This is not the unique way.
+
+399
+01:03:01,856 --> 01:03:02,756
+No, no, excuse me.
+
+400
+01:03:03,994 --> 01:03:04,475
+Okay.
+
+401
+01:03:06,556 --> 01:03:12,856
+You can do that, or, as suggested by the group, you can change the third row and the first row.
+
+402
+01:03:12,994 --> 01:03:16,256
+The third row already starts with something non-zero, right?
+
+403
+01:03:16,494 --> 01:03:18,494
+But it's not, it's still not 1.
+
+404
+01:03:19,923 --> 01:03:39,543
+Bu, after changing the first and third row, you multiply the first, the new first row, by 1 over 2, then you will obtain, look at this, in this step, you just change the first and third row, and the second and fourth row are unchanged, right? Unchanged.
+
+405
+01:03:45,396 --> 01:03:49,396
+1 over 2, ilk bir rol.
+
+406
+01:03:49,396 --> 01:03:53,396
+Bu, bu üçe yöntemde,
+
+407
+01:03:53,396 --> 01:03:57,396
+üçe yöntemde
+
+408
+01:03:57,396 --> 01:03:59,396
+bir rol var.
+
+409
+01:03:59,396 --> 01:04:01,396
+İlk bir rol var.
+
+410
+01:04:01,396 --> 01:04:03,396
+Bu, yöntemde,
+
+411
+01:04:03,396 --> 01:04:05,396
+bu yöntemde,
+
+412
+01:04:05,396 --> 01:04:06,283
+bu yöntemde.
+
+413
+01:04:10,036 --> 01:04:14,396
+C is equivalent to B, of course, right? B is equivalent to A.
+
+414
+01:04:17,096 --> 01:04:30,016
+So you can, you can, why, why do we do this? Because look at, let, let, let me return to the statement of the theorem. The theorem says that any non-zero matrix is Rav equivalent to another matrix in Rav-Eschelon form, right?
+
+415
+01:04:30,954 --> 01:04:32,076
+If, if you are.
+
+416
+01:04:33,331 --> 01:04:38,992
+Kereflüven, you will understand that this A is not in raw echelon form, right?
+
+417
+01:04:39,632 --> 01:04:41,452
+It's not in raw echelon form.
+
+418
+01:04:42,051 --> 01:04:50,271
+But according to a theorem, you can apply some finite combinations of elementary raw operations
+
+419
+01:04:50,271 --> 01:04:55,570
+and then put this A in raw echelon form, right?
+
+420
+01:04:57,684 --> 01:05:05,023
+I mean exactly the equivalent matrix you obtain after applying the raw operations, right, in this sense.
+
+421
+01:05:06,342 --> 01:05:08,704
+Is it okay for everybody or not?
+
+422
+01:05:10,543 --> 01:05:11,523
+Look at this.
+
+423
+01:05:13,842 --> 01:05:16,243
+We have stopped here, but you can continue.
+
+424
+01:05:16,802 --> 01:05:20,243
+Actually, you have to continue because C...
+
+425
+01:05:20,819 --> 01:05:26,459
+A, even though it is equivalent to A, it's not in raw eşelon form yet, right?
+
+426
+01:05:27,378 --> 01:05:28,459
+So what do you have to do?
+
+427
+01:05:28,520 --> 01:05:35,760
+For example, if you add minus two times the first row of this C to the fourth row of C,
+
+428
+01:05:36,679 --> 01:05:40,239
+then you produce another metric D, which is equivalent to C, right?
+
+429
+01:05:41,439 --> 01:05:42,059
+Look at this.
+
+430
+01:05:43,316 --> 01:05:52,856
+The first row of C, multiplied by minus 2, added to the fourth row, this, right?
+
+431
+01:05:54,516 --> 01:05:58,816
+And this is the D, which is equivalent to C, right?
+
+432
+01:06:00,036 --> 01:06:03,976
+So let me, so these three rows,
+
+433
+01:06:07,636 --> 01:06:12,636
+Bu bir şeyin birleştiğinde yazabilirsiniz.
+
+434
+01:06:16,146 --> 01:06:23,186
+All right, let me write, let me show you the matrix D, okay?
+
+435
+01:06:27,892 --> 01:06:29,992
+Do you think it is in raw eşelon form?
+
+436
+01:06:38,164 --> 01:06:41,722
+Do you think this D is in raw echelon form or not?
+
+437
+01:06:55,059 --> 01:07:21,859
+All right. It is not in raw eşelon form yet, right? Look at this. You have to focus on these numbers, right? But it's better to change first, second, and third row because, you know, the leading ones of non-zero rows must be in staircase position, picture, right? If you remember this.
+
+438
+01:07:22,222 --> 01:07:23,222
+Evet?
+
+439
+01:07:25,624 --> 01:07:27,624
+You have to obtain something like this.
+
+440
+01:07:29,624 --> 01:07:33,824
+It doesn't matter the other entry is, right?
+
+441
+01:07:35,824 --> 01:07:44,624
+So this D, even if it is equivalent to A, it is still in not rub-reduced form, right?
+
+442
+01:07:44,624 --> 01:07:48,222
+So you can continue, for example, identify.
+
+443
+01:07:48,336 --> 01:07:52,735
+A1, as the submetrics of D, obtained by deleting the first row of D.
+
+444
+01:07:53,975 --> 01:07:57,836
+Don't erase the first row of D, what does it mean?
+
+445
+01:07:59,496 --> 01:08:03,876
+Because the first row is according to what we want, right?
+
+446
+01:08:04,155 --> 01:08:08,836
+In this sense.
+
+447
+01:08:09,215 --> 01:08:15,316
+So repeat the preceding step, this submetrics A1, right?
+
+448
+01:08:15,796 --> 01:08:16,836
+A, instead of A.
+
+449
+01:08:20,435 --> 01:08:22,515
+I don't know if you understand, look at this.
+
+450
+01:08:23,115 --> 01:08:28,015
+Don't consider this first row, because it is in the format we wish, right?
+
+451
+01:08:28,055 --> 01:08:32,615
+So why don't you work with this sub-matrix, right?
+
+452
+01:08:32,615 --> 01:08:33,655
+Sub-matrix.
+
+453
+01:08:34,235 --> 01:08:37,774
+This is A1, sub-matrix of D.
+
+454
+01:08:39,994 --> 01:08:41,075
+And look at this.
+
+455
+01:08:41,715 --> 01:08:46,735
+This is the pivot of the second row of A1, right?
+
+456
+01:08:56,179 --> 01:09:16,426
+Bu da bu, bu
+
+457
+01:09:21,203 --> 01:09:22,203
+Okay.
+
+458
+01:09:24,762 --> 01:09:35,802
+Now you can multiply the second row of B1 by 1 over 2, which is what I've done here, right?
+
+459
+01:09:37,042 --> 01:09:41,563
+Why? Because this is the first non-zero entry, and it should be 1.
+
+460
+01:09:41,760 --> 01:09:58,059
+Bu, bu
+
+461
+01:10:00,404 --> 01:10:16,123
+C1, right? If you prefer to work with these sub-matris, let's say C1, right? So, this leading one is now in the correct position, right? Correct position, all right.
+
+462
+01:10:17,462 --> 01:10:18,283
+What else?
+
+463
+01:10:21,042 --> 01:10:25,923
+Some few steps left to finish the work, right?
+
+464
+01:10:27,796 --> 01:10:55,564
+Bu, bu
+
+465
+01:10:55,731 --> 01:11:08,030
+So, if you multiply one of them by minus one and add to the other one, you will have a completely zero row, right?
+
+466
+01:11:08,652 --> 01:11:16,030
+And if you remember, a completely zero row must be always located at the bottom of your matrix,
+
+467
+01:11:16,252 --> 01:11:19,932
+otherwise you will not have a matrix in raw eşelon form, right?
+
+468
+01:11:20,570 --> 01:11:23,070
+Let me show you.
+
+469
+01:11:26,418 --> 01:11:37,619
+But before then, you have to multiply, you have to try to multiply first this row here, let me show you this row.
+
+470
+01:11:38,578 --> 01:11:46,158
+You can think of multiplying first by 1 over 2 to obtain the pivot here, right?
+
+471
+01:11:46,878 --> 01:11:52,338
+And then in the sequel, you can multiply by minus 1 and add to the last row.
+
+472
+01:11:53,203 --> 01:12:00,364
+Açık, tamamen 0, rağ, exactly at the bottom of the matrix, right?
+
+473
+01:12:01,523 --> 01:12:20,824
+Then, look at this, you will obtain indeed a matrix H, which is in reduced, excuse me, it's not in reduced, rağ echelon form, it's just rağ echelon.
+
+474
+01:12:21,523 --> 01:12:44,783
+form, right? This matrix H is in raw echelon form, which is equivalent to A. A was a non-zero matrix, and it is equivalent, raw equivalent to a raw echelon form matrix H, right? This was exactly claimed by theorem, preceding theorem, right?
+
+475
+01:12:44,783 --> 01:12:45,323
+Right?
+
+476
+01:12:48,144 --> 01:12:48,783
+Okay.
+
+477
+01:12:50,418 --> 01:12:56,219
+Another theorem, let us just read the content of the theorem.
+
+478
+01:12:56,479 --> 01:13:03,479
+It says every non-zero n by n matrix is raw equivalent to a unique matrix in reduced raw isheloven form.
+
+479
+01:13:05,039 --> 01:13:05,300
+Right.
+
+480
+01:13:07,939 --> 01:13:11,800
+Do you see the difference between these two theorem or not?
+
+481
+01:13:11,959 --> 01:13:15,259
+Theorem 2.1 and Theorem 2.2.
+
+482
+01:13:16,658 --> 01:13:26,099
+The preceding theorem said that every non-zero, n by n matrix, is Rav equivalent to another matrix B, right, for example.
+
+483
+01:13:26,878 --> 01:13:36,800
+But here it says it is Rav equivalent to a unique matrix, let's say B, in reduced Rav echelon form.
+
+484
+01:13:36,878 --> 01:13:42,200
+This is the refined version of Rav echelon form, and that's why it is unique, right?
+
+485
+01:13:42,200 --> 01:13:43,760
+This is the difference if you compare.
+
+486
+01:14:12,756 --> 01:14:18,454
+...to solve just even numbers, or if you prefer odd numbers, right?
+
+487
+01:14:18,954 --> 01:14:28,796
+If I'm not wrong, at the end of the book, you have also the answers of exercises with odd numbers, right?
+
+488
+01:14:30,176 --> 01:14:32,300
+If you are self-confident, you can...
+
+489
+01:14:32,372 --> 01:14:40,752
+If you are a hard worker, I strongly recommend you to try to solve also exercises with even numbers, right?
+
+490
+01:14:41,030 --> 01:14:46,952
+It doesn't matter if you have answers at the end of the book, right?
+
+491
+01:14:47,191 --> 01:14:48,512
+It will be good.
+
+492
+01:14:50,391 --> 01:14:50,912
+Okay.
+
+493
+01:14:52,372 --> 01:14:53,952
+Lineer systems, not yet.
+
+494
+01:14:54,352 --> 01:14:58,492
+This is not in the course schedule of this week, right?
+
+495
+01:14:58,492 --> 01:14:59,659
+So let me...
+
+496
+01:15:00,180 --> 01:15:00,979
+Skip.
+
+497
+01:15:02,579 --> 01:15:02,940
+Ok.
+
+498
+01:15:05,940 --> 01:15:06,979
+Any questions?
+
+499
+01:15:08,100 --> 01:15:09,280
+Before the first break?
+
+500
+01:15:18,707 --> 01:15:29,627
+Let me see, quadratic interpolant, interpolation, these terms are not, these topics are not covered by the schedule, course schedule, right?
+
+501
+01:15:29,686 --> 01:15:40,448
+So if you don't care, this is a huge book, nobody can use in the algebra course of just two hours per week, right?
+
+502
+01:15:40,448 --> 01:15:44,727
+So you don't need to, you don't need to be worried.
+
+503
+01:15:47,220 --> 01:15:51,140
+All right, let me see what we have.
+
+504
+01:15:53,418 --> 01:16:03,979
+Okay, I think now we have to see how we can obtain the inverse of a non-singular matrix.
+
+505
+01:16:03,979 --> 01:16:14,600
+I think this is a good moment to show you how to obtain the inverse matrix of a non-singular matrix.
+
+506
+01:16:15,186 --> 01:16:16,506
+Square matrix, right?
+
+507
+01:16:18,108 --> 01:16:18,948
+Let me see.
+
+508
+01:16:20,307 --> 01:16:22,287
+Okay, this example is good.
+
+509
+01:16:24,028 --> 01:16:28,266
+If you remember, do you remember the definition of non-singular matrix or not?
+
+510
+01:16:31,207 --> 01:16:36,747
+What was the definition of non-singular or equivalent respectively regular matrix?
+
+511
+01:16:39,475 --> 01:16:45,136
+Don't use the term determinant because I didn't say anything about determinant, right?
+
+512
+01:16:47,216 --> 01:16:50,115
+What was the definition of non-singular matrix?
+
+513
+01:16:55,412 --> 01:16:57,412
+Don't you remember this definition?
+
+514
+01:17:03,091 --> 01:17:03,650
+Alright.
+
+515
+01:17:08,338 --> 01:17:09,479
+Let me...
+
+516
+01:17:13,811 --> 01:17:16,811
+Let me show you here.
+
+517
+01:17:19,652 --> 01:17:21,891
+Do you remember the inverse of a metric?
+
+518
+01:17:21,891 --> 01:17:24,131
+If, if, let me write here.
+
+519
+01:17:29,939 --> 01:17:52,439
+suppose, you have a square matrix, which is non-singular, right? So how to find its inverse, which exists, right? Because if it is non-singular, so we know that its inverse exists.
+
+520
+01:17:53,747 --> 01:17:58,747
+İzmir, bu soru, bu soru, ne?
+
+521
+01:17:58,747 --> 01:18:09,747
+So, whenever it exists, it's inverse, let us call a to the minus one, this is just the notation, right?
+
+522
+01:18:09,747 --> 01:18:16,650
+Whenever it exists, we know that this equality must be satisfied, right?
+
+523
+01:18:19,604 --> 01:18:26,604
+Bu birçok bir şekilde de birçok bir şekilde de alınsinglu metriklerine baktığınızda
+
+524
+01:18:26,604 --> 01:18:31,084
+çünkü, sizde bunu yapabilirsiniz,
+
+525
+01:18:31,084 --> 01:18:35,564
+bu metriklerinin birçok metriklerinin de birçok ordusunda
+
+526
+01:18:35,564 --> 01:18:39,324
+bu konuda çılgınca çalışmaların, değil mi?
+
+527
+01:18:39,324 --> 01:18:43,324
+Tiddiyiz, tiddiyiz.
+
+528
+01:18:47,060 --> 01:18:50,060
+Bu tür bir çoğunla ilgili bir şey var.
+
+529
+01:18:50,060 --> 01:18:54,060
+Bu, daha çok daha smart bir şekilde
+
+530
+01:18:54,060 --> 01:18:56,060
+daha iyi bir şekilde
+
+531
+01:18:56,060 --> 01:19:00,060
+almak için
+
+532
+01:19:00,060 --> 01:19:02,060
+şimdi
+
+533
+01:19:02,060 --> 01:19:06,060
+bu,
+
+534
+01:19:06,060 --> 01:19:07,060
+ve
+
+535
+01:19:07,060 --> 01:19:10,604
+bu,
+
+536
+01:19:12,722 --> 01:19:16,104
+All you have to do is the following, look at this.
+
+537
+01:19:16,503 --> 01:19:22,283
+Suppose you are given a matrix A, square matrix of order N, right?
+
+538
+01:19:23,023 --> 01:19:31,823
+So consider the identity matrix of the same order and call this an augmented matrix, right?
+
+539
+01:19:31,823 --> 01:19:35,722
+Or extended augmented.
+
+540
+01:20:04,275 --> 01:20:14,976
+Suppose you apply a finite number of suitable elementary raw operation, finite number, finite.
+
+541
+01:20:14,976 --> 01:20:17,855
+Let me write this way.
+
+542
+01:20:20,376 --> 01:20:24,844
+Finite number of...
+
+543
+01:20:27,988 --> 01:20:32,507
+Elementary Raw operations, right?
+
+544
+01:20:33,068 --> 01:20:40,908
+Here in the middle, you apply, you perform a finite number of elementary raw operations, right?
+
+545
+01:20:41,108 --> 01:20:42,587
+Or a combination of them.
+
+546
+01:20:43,807 --> 01:20:47,927
+If you observe that, you obtain the identity matrix,
+
+547
+01:20:48,318 --> 01:21:00,760
+On the left of this division, the matrix that will appear on the right, I don't know, of course, because I didn't give an explicit matrix, right?
+
+548
+01:21:00,838 --> 01:21:09,720
+So A is any implicitly given matrix. So I don't know what kind of elemental raw operation I will apply here because I don't know the entities of A.
+
+549
+01:21:09,720 --> 01:21:14,680
+So let me just put asterisk here. Asterisk is a square matrix of the same order.
+
+550
+01:21:15,283 --> 01:21:33,042
+A, right? So you will obtain a matrix here, and what you see on the right, this asterisk, this will be your inverse, right? This will be your inverse.
+
+551
+01:21:34,644 --> 01:21:41,343
+So let me, we have eight more minutes before the break.
+
+552
+01:21:41,760 --> 01:22:05,355
+Bu, bu
+
+553
+01:22:05,587 --> 01:22:14,447
+Assuming that A is non-singular, so we have some, there is a way to understand if a given matrix is non-singular or not, right?
+
+554
+01:22:14,548 --> 01:22:20,266
+Especially if you know the determinant, it's very easy to know if it is singular or not.
+
+555
+01:22:21,528 --> 01:22:32,307
+But since I didn't say anything about the determinant, suppose for now that A is given as a non-singular matrix, then we know that its inverse exists, right?
+
+556
+01:22:32,979 --> 01:22:58,283
+Bu, ilk başta, bu bir aşağı yukarı ile ilgili bir aşağı yukarı ile ilgili bir aşağı yukarı ile ilgili bir aşağı yukarı ile ilgili bir aşağı yukarı ile ilgili bir aşağı yukarı ile ilgili bir aşağı yukarı ile ilgili bir aşağı yukarı ile ilgili bir aşağı yukarı ile ilgili bir aşağı yukarı ile ilgili bir aşağı yukarı ile ilgili bir aşağı yukarı ile ilgili bir aşağı yukarı ile ilgili bir aşağı yukarı ile ilgili bir aşağı yukarı ile ilgili bir aşağı yukarı ile ilgili bir aşağı yukarı ile ilgili bir aşağı yukarı ile ilgili bir aşağı yukarı ile ilgili bir aşağı yukarı ile ilgili bir aşağı yukarı ile ilgili bir aşağı yukarı ile ilgili bir aşağı yukarı ile ilgili bir aşağı yukarı ile ilgili bir aşağı yukarı ile ilgili bir aşağı yukarı ile ilgili bir aşağı yukarı ile ilgili
+
+557
+01:22:59,220 --> 01:23:24,300
+Bu, bu
+
+558
+01:23:26,068 --> 01:23:34,167
+Ağmenetik, itsel aslında, sayesine, what kind of elementary operations must be used.
+
+559
+01:23:34,167 --> 01:23:43,868
+For example, since you have to obtain identity on the left, and you know the identity matrix
+
+560
+01:23:43,868 --> 01:23:53,568
+of order 3, starts with 1 in the first position, right, of the first row, so you have to put
+
+561
+01:23:56,403 --> 01:23:59,882
+Bu şekilde, bu şekilde, bu şekilde,
+
+562
+01:24:01,443 --> 01:24:03,403
+Bu, bu,
+
+563
+01:24:24,564 --> 01:24:45,203
+Every other element in this column must be zero, right? Because identity matrix is in a perfect format. I mean, it's a matrix in reduced rab-e-şelon form, right? That's why this column must consist of zero, except the leading one, right?
+
+564
+01:24:50,932 --> 01:25:15,831
+Next, target. All right? Target means I have to make a zero, right? How can you make it zero? For example, you can try to multiply the first row by minus five, and then add to the third row, and your new third row will start now with zero, right?
+
+565
+01:25:18,004 --> 01:25:26,984
+So, let us see the next step. Look at this. I said exactly, let me write the, look at this.
+
+566
+01:25:30,611 --> 01:25:32,611
+İlk başta iki röğe,
+
+567
+01:25:32,611 --> 01:25:34,611
+ama burada,
+
+568
+01:25:34,611 --> 01:25:36,611
+ben de bir röğe
+
+569
+01:25:36,611 --> 01:25:39,611
+yasak olarak,
+
+570
+01:25:39,611 --> 01:25:40,611
+çünkü,
+
+571
+01:25:40,611 --> 01:25:54,763
+yasak olarak,
+
+572
+01:25:54,836 --> 01:25:57,736
+A, or identity.
+
+573
+01:25:58,414 --> 01:25:58,515
+Okay?
+
+574
+01:25:58,995 --> 01:25:59,836
+So, this...
+
+575
+01:26:02,355 --> 01:26:06,495
+I don't have enough space here.
+
+576
+01:26:07,855 --> 01:26:09,414
+So, let me write here.
+
+577
+01:26:10,275 --> 01:26:13,256
+This matrix, augmented matrix,
+
+578
+01:26:13,515 --> 01:26:19,454
+after I multiply the first row by minus 5 and add to the third row,
+
+579
+01:26:20,144 --> 01:26:24,144
+yasak olarak,
+
+580
+01:26:19,796 --> 01:26:44,203
+Bu, bu
+
+581
+01:26:44,498 --> 01:26:58,798
+The first row multiplied by minus 5 added to the third row, and this is the new third row, right? So I have finally 0 here, 0 here.
+
+582
+01:27:02,644 --> 01:27:03,962
+Minus 4 here, right?
+
+583
+01:27:05,243 --> 01:27:05,823
+Look at this.
+
+584
+01:27:06,103 --> 01:27:13,903
+If you multiply by minus 5 and add here, you will obtain minus 4, right?
+
+585
+01:27:13,903 --> 01:27:20,943
+If you continue this way, you will obtain minus 5 here, 0 here, 1 here, right?
+
+586
+01:27:23,743 --> 01:27:24,462
+Okay.
+
+587
+01:27:25,650 --> 01:28:20,266
+Bu, bu
+
+588
+01:28:20,530 --> 01:28:41,644
+Ama yapınca
+
+589
+01:28:43,220 --> 01:28:50,020
+Çünkü bu ilk kolumnenin form we wish, vekutör olmalı. Bu, be careful with your operations.
+
+590
+01:28:50,020 --> 01:28:51,220
+Alright?
+
+591
+01:28:54,220 --> 01:29:01,020
+I will do, I will perform in the next step, this one.
+
+592
+01:29:08,211 --> 01:29:31,291
+1 over 2, and this is your new second row, right? So this first and third row are unchanged. This will be 1, this will be 3 over 2, this is 0, this is 1 over 2, and this is 0, right? Let me see. Look at this.
+
+593
+01:29:32,818 --> 01:29:48,239
+But the book is actually doing something else. This is not rare, this is not strange, because this way of obtaining a matrix in raw eşelon form is not unique, right? It's not unique.
+
+594
+01:29:49,079 --> 01:30:00,159
+Look at this. This was the first operation we had applied, and the sequel we said we can multiply the second row. Look at this.
+
+595
+01:30:00,948 --> 01:30:03,948
+1 over 2
+
+596
+01:30:03,948 --> 01:30:29,736
+Bu birçok
+
+597
+01:30:26,644 --> 01:30:28,644
+Bakın bu kolum.
+
+598
+01:30:28,644 --> 01:30:44,644
+Bu bir yolu.
+
+599
+01:30:50,004 --> 01:30:52,004
+You can try to let us...
+
+600
+01:30:56,051 --> 01:31:22,452
+Let me see. Since I said there is no unique way to obtain a raw echelon form, a matris in raw echelon form, right? Look at this. You can, here for example, you can, or you can multiply the second row by minus one, add to the first row and
+
+601
+01:31:22,932 --> 01:31:31,252
+Say that this is your first row. If you do this, then this one is going to be zero. Okay, right?
+
+602
+01:31:34,868 --> 01:31:35,868
+Ok?
+
+603
+01:31:37,468 --> 01:31:40,868
+But the book is using another.
+
+604
+01:31:41,468 --> 01:31:43,468
+That's why I say it's not unique, right?
+
+605
+01:31:43,827 --> 01:31:46,468
+Look at this. It's doing something else.
+
+606
+01:31:46,468 --> 01:31:47,468
+It says,
+
+607
+01:31:49,068 --> 01:31:53,667
+multiply by the third row by 1 over minus 1 over 4.
+
+608
+01:31:53,667 --> 01:31:57,068
+Why? Because you have to obtain 1 here, right?
+
+609
+01:32:02,484 --> 01:32:04,108
+Ok, so let me...
+
+610
+01:32:07,316 --> 01:32:12,896
+Let me just follow the same operations as the book suggests, right?
+
+611
+01:32:13,414 --> 01:32:20,676
+So let us make this minus 4 to become 1, right?
+
+612
+01:32:22,036 --> 01:32:22,536
+All right.
+
+613
+01:32:23,914 --> 01:32:25,095
+So look at this.
+
+614
+01:32:25,836 --> 01:32:26,988
+Now it is in...
+
+615
+01:32:32,819 --> 01:32:33,579
+All right.
+
+616
+01:32:34,720 --> 01:32:43,659
+So, you have to continue with some other operations, because this has to be zero, this has to be zero.
+
+617
+01:32:43,860 --> 01:32:44,420
+Look at this.
+
+618
+01:32:45,079 --> 01:32:47,640
+This has to be zero, and this one has to be zero.
+
+619
+01:32:53,427 --> 01:32:55,087
+Let me clear the screen.
+
+620
+01:32:57,427 --> 01:32:57,628
+Right.
+
+621
+01:32:58,628 --> 01:33:04,388
+For example, let us see what's the meaning of this operation.
+
+622
+01:33:05,408 --> 01:33:11,307
+Multiply the third row by minus 3 over 2.
+
+623
+01:33:11,448 --> 01:33:11,708
+Why?
+
+624
+01:33:11,827 --> 01:33:13,628
+Because we have 3 over 2 here.
+
+625
+01:33:13,628 --> 01:33:20,167
+If you add minus 3 over 2 to 3 over 2,
+
+626
+01:33:20,564 --> 01:33:30,243
+You will of course obtain zero here, right? That's why it suggests this operation. And the other one, look at this, this one.
+
+627
+01:33:36,659 --> 01:33:39,460
+Subtract the first and third road, right?
+
+628
+01:33:46,932 --> 01:33:49,932
+ve bu bir şey.
+
+629
+01:33:50,631 --> 01:33:51,932
+Bu, bu.
+
+630
+01:34:24,611 --> 01:34:27,011
+Çünkü bu konuları çok zor.
+
+631
+01:34:39,251 --> 01:34:48,431
+The nice thing here is that you have a way to check if the matrix you obtain is indeed inverse or not, right?
+
+632
+01:34:48,730 --> 01:34:55,171
+So why don't you check that this matrix is indeed the inverse of the given A.
+
+633
+01:34:55,171 --> 01:34:56,171
+I mean...
+
+634
+01:35:22,739 --> 01:35:24,739
+Bu, bu kalpiyatı.
+
+635
+01:35:24,739 --> 01:35:27,739
+Bu, bu kalpiyatı değil, ama
+
+636
+01:35:27,739 --> 01:35:29,739
+bu kalpiyatı,
+
+637
+01:35:29,739 --> 01:35:30,739
+bu kalpiyatı.
+
+638
+01:35:30,739 --> 01:35:39,739
+Bu kalpiyatı.
+
+639
+01:35:39,739 --> 01:35:43,739
+Bu, bu kalpiyatı.
+
+640
+01:35:44,468 --> 01:35:54,807
+A matrix, a square matrix of order n, is singular, if and only if it is raw equivalent to a matrix B that has a raw of zeros, right?
+
+641
+01:35:56,148 --> 01:36:00,628
+This says, this theorem says exactly this, look at this.
+
+642
+01:36:01,827 --> 01:36:08,548
+If such a matrix is equivalent to a matrix, of course, n by n, right?
+
+643
+01:36:10,068 --> 01:36:11,608
+Because if you, if you,
+
+644
+01:36:12,114 --> 01:36:19,875
+If you apply elementary raw operations to manipulate your matrix, you don't change the order of your matrix, right?
+
+645
+01:36:19,914 --> 01:36:24,354
+You just change the entries of its rows or columns, right?
+
+646
+01:36:24,774 --> 01:36:26,895
+The order does not change.
+
+647
+01:36:26,895 --> 01:36:35,818
+So, if your square matrix is equivalent to another square matrix, B, which has...
+
+648
+01:36:35,923 --> 01:36:55,684
+A row of zero, right? It doesn't matter in which row. Suppose that you have in some row something like this. It doesn't matter in what position you have this. So such a matrix is always singular, right? It's always singular.
+
+649
+01:37:02,164 --> 01:37:29,802
+Alright, so another example, so I give you as an exercise, right? Exercise. Please check that this is non-singular, right? Check that. Check if it is non-singular, right? Try to obtain a equivalent matrix in...
+
+650
+01:37:29,843 --> 01:37:32,144
+Eşelon form, right?
+
+651
+01:37:32,763 --> 01:37:35,302
+But in terms of augmented matrices, right?
+
+652
+01:37:37,483 --> 01:37:38,483
+Look at this.
+
+653
+01:37:39,483 --> 01:37:42,783
+You have to see what's going on here,
+
+654
+01:37:43,503 --> 01:37:44,542
+but at the end, you,
+
+655
+01:37:46,382 --> 01:37:52,503
+when you see this matrix, you will see that one of the rows is completely zero, right?
+
+656
+01:37:52,763 --> 01:37:56,184
+Since A is equivalent to a matrix,
+
+657
+01:37:57,108 --> 01:38:07,908
+İçerideki, eniyah, eşelon form, which contains a complete zero row, you will say that this is single, and if this is single, inversal does not exist, right?
+
+658
+01:38:08,888 --> 01:38:18,908
+This is actually a nice question. If you are not careful, you can say that this matrix is invertible and...
+
+659
+01:38:19,412 --> 01:38:27,292
+İngiltere, bu konuda da
+
+660
+01:38:27,292 --> 01:38:30,372
+bu konuda bir konuda
+
+661
+01:38:30,372 --> 01:38:33,292
+olduğunu söylemek istiyorum.
+
+662
+01:38:33,292 --> 01:38:36,292
+Bu konuda, bu konuda
+
+663
+01:38:36,292 --> 01:38:38,292
+bu konuda
+
+664
+01:38:38,292 --> 01:38:40,852
+Bu konuda bir konuda
+
+665
+01:38:40,852 --> 01:38:42,372
+bu konuda
+
+666
+01:38:46,079 --> 01:38:49,859
+ve ne kadar da etkiden, en azı kısımda, en azı kısımda?
+
+667
+01:38:51,720 --> 01:38:53,180
+Sadece, en azı kısımda?
+
+668
+01:39:15,443 --> 01:39:20,644
+...definition of determinant, I guess. Let me see what we have here.
+
+669
+01:39:22,943 --> 01:39:39,104
+Alright, yes. Many topics which don't interest, right? Alright. Determinant. So, do you have any question?
+
+670
+01:39:46,995 --> 01:39:47,756
+Any question?
+
+671
+01:39:49,676 --> 01:39:53,396
+If you have any question, you have to use your microphone, right? Not chat.
+
+672
+01:39:56,595 --> 01:39:57,316
+All right.
+
+673
+01:39:58,136 --> 01:40:07,914
+I'll give you a 10-minute break and start again the lecture at, let me say, 12.10, right?
+
+674
+01:40:08,914 --> 01:40:09,475
+Goodbye.

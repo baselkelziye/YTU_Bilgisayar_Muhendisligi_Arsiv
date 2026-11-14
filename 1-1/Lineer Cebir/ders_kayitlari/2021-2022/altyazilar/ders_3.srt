@@ -1,0 +1,1543 @@
+1
+00:00:19,859 --> 00:00:22,859
+Bu sayeden arkadaşlar, ses problemi yaşamıyoruz değil mi şu anda?
+
+2
+00:00:36,820 --> 00:00:38,020
+Sesim geliyor mu arkadaşlar?
+
+3
+00:00:48,371 --> 00:00:50,152
+Sesim geliyor mu arkadaşlar? Günaydın.
+
+4
+00:00:52,472 --> 00:00:58,792
+Tamam. Sınıf biraz yankı yapabilir çünkü bu sorunu çözmek için epey uğraştım.
+
+5
+00:00:59,192 --> 00:01:03,072
+Wi-Fi sinyali maalesef benim ofisime kadar ulaşmıyor.
+
+6
+00:01:04,352 --> 00:01:07,391
+Ben de iPad olmadan istediğim gibi bir ders veremeyeceğim için.
+
+7
+00:01:08,084 --> 00:01:18,784
+Yani teknik destek istedik, talep ettik, yardımcı olamıyor adamlar. Yani eternet kablosunu getirdik diyorlar sınıfımıza, Wi-Fi'ye karışamayız fazla, çekiyorsa çeker, çekmiyorsa çekmez gibi bir cevap aldım yani.
+
+8
+00:01:19,987 --> 00:01:22,067
+Tamam, şu an iyi çalışıyor.
+
+9
+00:01:22,527 --> 00:01:46,647
+Tamam, şu an iyi çalışıyor. Sen benim nerede olduğumu bilmiyorsun şu anda. Access Point'in dibine karargah vurdum şu anda. Ofisimde değilim yani. Göçebe gibi ders anlatıyorum size. Sırf sinyali iyi çekebilmek için buraya geldim. Boş bir sınıfı, yani sinyalin iyi çektiği yere yakın boş bir sınıf buldum şu anda. Yankı yapıyor olabilir yani sınıf. Yankı yapıyor mu arkadaşlar şu anda? Biraz da alçak sesle konuşabilirim o yüzden.
+
+10
+00:01:47,763 --> 00:02:13,644
+Tamam. Şimdi o zaman kaç kişi sınıfta? İlk hafta ders yapamadık. Çünkü dersiniz tanımlanmamıştı. İkinci haftada kampüs çapında bir sorun olmuş. Ben size geçen hafta verdiğim dersin kaydını izledim. Hiç anlaşılır gibi değil. Yani haklısınız. Ses gidip geliyor. Kopuk. Hiçbir şey anlaşılmıyor cümlelerin. Başa anlaşılıyor, sona anlaşılmıyor.
+
+11
+00:02:14,036 --> 00:02:37,816
+O da benden kaynaklanmıyor tabii ki. Yani şimdiye kadar hocalar da, öğrenciler de evlerinden, bulundukları yerden bağlandı derslere değil mi? Ama herkes kampüsten bir anda bağlanınca kaldırmadı demek ki. Neyse. Yani biz sıfırdan başlayacağız, üçüncü haftada dersler. Yani şöyle yapalım isterseniz ben, let me share the reference book.
+
+12
+00:02:50,195 --> 00:02:51,695
+Ekranımı görüyor musunuz arkadaşlar?
+
+13
+00:02:54,255 --> 00:02:54,835
+Evet hocam.
+
+14
+00:02:55,395 --> 00:02:55,656
+Okey.
+
+15
+00:02:57,036 --> 00:02:59,776
+Let me enlarge the screen a bit.
+
+16
+00:03:00,315 --> 00:03:01,255
+Hocam, katabı anlatırsın.
+
+17
+00:03:02,055 --> 00:03:06,596
+Kitabın adı, let me show you the first page.
+
+18
+00:03:18,068 --> 00:03:22,328
+Bu, bu, elementary lineer algebra with application.
+
+19
+00:03:23,448 --> 00:03:23,568
+Right?
+
+20
+00:03:23,968 --> 00:03:27,468
+Here's the authors, Bernard Coleman and David Hill.
+
+21
+00:03:28,188 --> 00:03:28,348
+Right?
+
+22
+00:03:28,968 --> 00:03:30,128
+It's not mandatory.
+
+23
+00:03:30,328 --> 00:03:32,328
+You can select the book you wish.
+
+24
+00:03:32,728 --> 00:03:32,948
+Right?
+
+25
+00:03:33,468 --> 00:03:37,548
+But I will mainly use, I will mainly follow this book.
+
+26
+00:03:38,648 --> 00:03:42,588
+And let me see what we have today.
+
+27
+00:03:45,556 --> 00:03:45,816
+Ok.
+
+28
+00:03:49,556 --> 00:03:59,456
+Bu kitabı başlıyor, ama bu kitabı başlıyor, bir parçok hafta da geliştirmek için, bu kitabı başlıyor.
+
+29
+00:03:59,456 --> 00:04:07,056
+Bu kitabı başlıyor, ama bu kitabı başlıyor, ama bu kitabı başlıyor.
+
+30
+00:04:15,795 --> 00:04:19,495
+Fundamental knowledge about matrices, right?
+
+31
+00:04:20,115 --> 00:04:26,536
+So, here is the formal definition of a matrix, right?
+
+32
+00:04:27,036 --> 00:04:30,216
+This is the, let me use red color.
+
+33
+00:04:31,716 --> 00:04:34,716
+So, I'm talking about this definition.
+
+34
+00:04:35,396 --> 00:04:38,875
+Here you see an M by N matrix A.
+
+35
+00:04:39,923 --> 00:04:52,563
+M by N means your matrix or your table, the format you see here, is not a square, right? I mean, it's a rectangle. The number of rows and columns are not a coincidence, okay?
+
+36
+00:04:52,943 --> 00:05:06,943
+So, by an M by N matrix A, you have to understand such a table, the M horizontal rows and N vertical columns, right? And these numbers,
+
+37
+00:05:08,052 --> 00:05:31,152
+We call entry of matrix, right? Mainly, we will consider matrices with real entries. I mean, these numbers, A, I, J, are real numbers, but of course, they might be, if you are interested in matrices with complex entries, you can, of course, take complex numbers, right?
+
+38
+00:05:31,603 --> 00:05:41,223
+As, as elements of, of, of, of your matrix. But we will mainly interested, mainly interested in matrices with real entries, real element. Okay.
+
+39
+00:05:42,263 --> 00:05:53,043
+So what, what happened, for example, if you are focused on the role I of this matrix, I, I'm talking about this role, a typical or generical role of your matrix, right?
+
+40
+00:05:53,443 --> 00:05:57,923
+So just take a quick look at the relationship with.
+
+41
+00:05:58,355 --> 00:06:03,975
+İndices i ve j, to locate an element, for example, this element.
+
+42
+00:06:04,795 --> 00:06:09,535
+How do you know about the position of this element?
+
+43
+00:06:10,435 --> 00:06:19,575
+You have to emphasize exactly in which row this element is located and also in which column.
+
+44
+00:06:25,779 --> 00:06:28,779
+Bu bir noktada bir noktada,
+
+45
+00:06:28,779 --> 00:06:43,779
+bir noktada bir noktada,
+
+46
+00:06:43,779 --> 00:06:45,779
+bir noktada bir noktada.
+
+47
+00:06:45,779 --> 00:06:47,779
+Bu noktada,
+
+48
+00:06:47,779 --> 00:06:50,779
+bir noktada,
+
+49
+00:06:51,668 --> 00:06:55,668
+Bu bölümde, n bölümde bir bölümde var.
+
+50
+00:06:55,668 --> 00:07:03,668
+Bu bölümde bir bölümde var.
+
+51
+00:07:03,668 --> 00:07:07,668
+Ayrıca bir bölümde var.
+
+52
+00:07:07,668 --> 00:07:13,668
+Ayrıca, bir bölümde var.
+
+53
+00:07:14,995 --> 00:07:36,875
+You are seeing a column, one of the column of your matrix A, right? You see just one column and more than one row you have, right? How many rows? You have to see the number of rows of your matrix. Since it is M, M and N are, of course, positive integer numbers here, right?
+
+54
+00:07:36,875 --> 00:07:38,375
+Okay.
+
+55
+00:07:39,348 --> 00:07:44,588
+M'de bu m'unit var.
+
+56
+00:07:44,588 --> 00:07:46,668
+Bu m'unit var.
+
+57
+00:07:46,668 --> 00:07:57,668
+M'unit var.
+
+58
+00:07:57,668 --> 00:07:58,668
+Evet.
+
+59
+00:08:04,915 --> 00:08:06,036
+Let me continue.
+
+60
+00:08:06,936 --> 00:08:08,096
+Is it okay this way?
+
+61
+00:08:08,355 --> 00:08:09,756
+I think it's clear.
+
+62
+00:08:10,156 --> 00:08:12,256
+It's not difficult to follow, right?
+
+63
+00:08:12,295 --> 00:08:18,116
+If I draw some pictures or if I write some expressions on the screen, right?
+
+64
+00:08:18,596 --> 00:08:26,576
+At least you can see in which line, in which expression I'm talking about, right?
+
+65
+00:08:27,956 --> 00:08:28,556
+Okay.
+
+66
+00:08:29,276 --> 00:08:32,115
+As I said, M and M, this...
+
+67
+00:08:32,624 --> 00:08:36,824
+İntekler, iki numarlar, pozitif, intekler, or natural numarlar.
+
+68
+00:08:38,223 --> 00:08:44,744
+And in particular, if they are equal, you have a square matrix, right?
+
+69
+00:08:45,584 --> 00:08:46,423
+Square matrix.
+
+70
+00:08:47,423 --> 00:08:52,024
+If not, you have a rectangular matrix.
+
+71
+00:08:53,460 --> 00:08:57,279
+Ve bu numarlarla ilgili bir nokta var,
+
+72
+00:08:57,420 --> 00:09:00,279
+bir nokta var,
+
+73
+00:09:00,279 --> 00:09:01,960
+bu nokta var,
+
+74
+00:09:01,960 --> 00:09:03,879
+bir nokta var,
+
+75
+00:09:03,879 --> 00:09:05,240
+bir nokta var.
+
+76
+00:09:05,240 --> 00:09:06,400
+Bu nokta var.
+
+77
+00:09:06,400 --> 00:09:07,879
+Bu nokta var,
+
+78
+00:09:07,879 --> 00:09:10,120
+bu nokta var.
+
+79
+00:09:10,120 --> 00:09:11,560
+Bir nokta var,
+
+80
+00:09:11,560 --> 00:09:13,240
+bir nokta var,
+
+81
+00:09:13,240 --> 00:09:14,360
+bir nokta var.
+
+82
+00:09:14,360 --> 00:09:15,560
+Bu nokta var,
+
+83
+00:09:15,560 --> 00:09:17,480
+bu nokta var.
+
+84
+00:09:17,480 --> 00:09:18,879
+Bu nokta var,
+
+85
+00:09:18,879 --> 00:09:20,879
+bu nokta var.
+
+86
+00:09:21,971 --> 00:09:49,391
+...is something like this. Let me skip the screen. Let me say one more word here. This is the compact notation to denote a matrix, right? Rectangular or square, it doesn't matter. This is a compact notation. Compact means just a short expression. Sometimes we don't want to write.
+
+87
+00:09:50,484 --> 00:09:56,084
+A matrisi, bu form, bu form, bu form.
+
+88
+00:09:56,084 --> 00:10:04,684
+So, it's preferable to write in a short form, or in a compact form, bu form.
+
+89
+00:10:04,684 --> 00:10:08,284
+It's just a notation of concern, okay?
+
+90
+00:10:08,284 --> 00:10:13,884
+So, let me show you a simple example here.
+
+91
+00:10:17,076 --> 00:10:19,076
+2x3 metriks.
+
+92
+00:10:44,371 --> 00:10:48,432
+Ejincisi, as you see, excuse me.
+
+93
+00:10:52,307 --> 00:10:56,307
+Ne, ne.
+
+94
+00:10:57,347 --> 00:11:00,307
+Ok, so look at the second matrix, B.
+
+95
+00:11:01,587 --> 00:11:05,867
+Each entry of B is, as you see, a complex number, right?
+
+96
+00:11:05,927 --> 00:11:08,507
+So this is a matrix with complex entries.
+
+97
+00:11:09,287 --> 00:11:15,668
+But as I said before, we will not be concerned with such matrices, right?
+
+98
+00:11:16,407 --> 00:11:19,787
+These kinds of matrices will be of importance in this course, right?
+
+99
+00:11:21,364 --> 00:11:45,844
+Okay, this is an example of a column matrix, or if you prefer you can still call column vector, or just a tree vector. Tree vector because it has tree elements, right? Whenever you have a vector with tree coordinate or tree component, we call tree vector, or a vector in R3. R3 means a three-dimensional eclidium spate.
+
+100
+00:11:46,244 --> 00:11:47,943
+What about the matrix D?
+
+101
+00:11:49,043 --> 00:11:58,364
+You see, the number of rows and columns are equal, so you have a square matrix here, square matrix 3x3, right?
+
+102
+00:11:59,203 --> 00:12:06,903
+And this might appear strange for you, but it doesn't, right?
+
+103
+00:12:06,984 --> 00:12:14,343
+Because any real number can be considered as a one-by-one simple matrix, of course, right?
+
+104
+00:12:15,028 --> 00:12:31,868
+Here, matrix F is an example of a row matrix, 3x, excuse me, one row, three columns, right? The other one, I mean, the column matrix C has three lines and just one column, right?
+
+105
+00:12:40,179 --> 00:12:44,899
+I told something about diagonal, but it didn't say anything, right?
+
+106
+00:12:44,960 --> 00:12:51,120
+So why don't we clarify the diagonal on this square matrix D?
+
+107
+00:12:52,279 --> 00:12:59,440
+Diagonal means you have to consider the entries where i and j are equal, right?
+
+108
+00:12:59,779 --> 00:13:04,840
+So such entries are located on this position.
+
+109
+00:13:04,840 --> 00:13:06,879
+This is the diagonal, okay?
+
+110
+00:13:07,344 --> 00:13:08,344
+Bu dağmenin.
+
+111
+00:13:11,344 --> 00:13:13,344
+Önceye
+
+112
+00:13:15,344 --> 00:13:17,344
+bir şey.
+
+113
+00:13:18,344 --> 00:13:19,344
+Yani
+
+114
+00:13:19,344 --> 00:13:20,344
+İzlediğiniz için
+
+115
+00:13:24,275 --> 00:13:24,596
+Ok.
+
+116
+00:13:31,700 --> 00:13:38,300
+Can you see the screen? I'm writing a square matrix, typical square matrix, right? N by N.
+
+117
+00:13:39,780 --> 00:13:42,340
+Is it okay? Because I changed the screen, right?
+
+118
+00:13:43,380 --> 00:13:44,540
+Yes, you can see.
+
+119
+00:13:44,540 --> 00:13:52,660
+Okay, I don't use laptop, I use my iPad, which is better to write on the screen, right?
+
+120
+00:13:52,780 --> 00:13:55,740
+You are seeing an N by N square matrix here.
+
+121
+00:14:00,436 --> 00:14:02,876
+Bu, bu, diagonal.
+
+122
+00:14:02,876 --> 00:14:12,276
+You see, each entry that you will see here satisfies some special condition.
+
+123
+00:14:12,276 --> 00:14:15,316
+i and j are equal.
+
+124
+00:14:15,316 --> 00:14:21,476
+I mean, whenever this happens, you have what?
+
+125
+00:14:21,476 --> 00:14:25,476
+Or, right?
+
+126
+00:14:25,476 --> 00:14:26,476
+So...
+
+127
+00:14:27,059 --> 00:14:34,679
+These elements give you the diagonal, fundamental diagonal, right? Let me write main.
+
+128
+00:14:38,388 --> 00:15:02,408
+Diagonal. Some people also say that this is the secondary diagonal. It doesn't matter, right? What is important here is the main diagonal or fundamental diagonal, right? This is the important, right?
+
+129
+00:15:03,956 --> 00:15:10,956
+ve bu sadece m'in nesine kadar
+
+130
+00:15:10,956 --> 00:15:18,956
+yukarıda m'in nesine kadar
+
+131
+00:15:18,956 --> 00:15:20,956
+bir yukarıda m'in nesine kadar
+
+132
+00:15:20,956 --> 00:15:22,956
+bir yukarıda diagona
+
+133
+00:15:22,956 --> 00:15:27,956
+tamamen
+
+134
+00:15:27,956 --> 00:15:30,860
+devam edelim
+
+135
+00:15:32,115 --> 00:15:33,975
+Let me see what we have here.
+
+136
+00:15:34,735 --> 00:15:42,315
+Okay, as I said, a column vector or a row vector might be considered as a vector, right, in an Euclidean space.
+
+137
+00:15:42,935 --> 00:15:53,596
+You have to know how many entries your row or column matrix has to know about the dimension of the Euclidean space, right?
+
+138
+00:15:58,703 --> 00:16:08,663
+N vektör, it says, right? N by one matrix means you have N rho, just one column, right?
+
+139
+00:16:10,644 --> 00:16:21,283
+So, such a rho matrix can be considered as an N vector, right? I mean, as an element of Rn. Rn means N-dimensional Euclidean space, right?
+
+140
+00:16:22,163 --> 00:16:25,024
+The standard Euclidean space. Everybody knows, okay?
+
+141
+00:16:25,620 --> 00:16:40,100
+The same way, it doesn't matter if you have a 1 by n vector, this might be also considered as an n vector in Rn.
+
+142
+00:16:40,100 --> 00:16:49,259
+n vector because of the number of entries or component or coordinate that your column or row matrix has, right?
+
+143
+00:16:51,668 --> 00:17:17,668
+vektör,
+
+144
+00:17:18,132 --> 00:17:43,372
+Bu, bu
+
+145
+00:17:43,443 --> 00:17:53,344
+Alright, some simple example you have here to understand why we use the matrix form of things, right?
+
+146
+00:17:53,603 --> 00:17:59,003
+For example, look at this example three, tabular display of data, okay?
+
+147
+00:17:59,344 --> 00:18:06,663
+In this table you see some airline distances between indicator cities and station miles, okay?
+
+148
+00:18:07,071 --> 00:18:21,931
+Of course, the diagonal of such a table or such a matrix will be zero, right? Because any distance between any city and itself is always zero, right?
+
+149
+00:18:21,931 --> 00:18:33,172
+For example, look at the distance, let me use the letter D, D of distance, distance between Madrid and London.
+
+150
+00:18:57,203 --> 00:19:04,943
+So, soon you will see that such matrices are actually called symmetric. Symmetric because of the following.
+
+151
+00:19:05,783 --> 00:19:21,763
+When you see the entries located on the upper triangular side of the main diagonal, you will see that in the lower triangular block,
+
+152
+00:19:22,740 --> 00:19:46,039
+Biloğun diagonali, are coincident, right? That's why we call it symmetric. Look at this. The same element. Let me use another color. For example, look at this. Symmetric in this sense, right? Or let me write one more. Look at this. Okay?
+
+153
+00:19:50,451 --> 00:20:03,852
+Bu bir tabla, ve bu bir matris, matris, değil mi? Bu bir sürü, değil mi? Evet, bu sürü, 4 cds.
+
+154
+00:20:07,667 --> 00:20:11,667
+ve kolumn position, bu sqa metriks 4x4.
+
+155
+00:20:12,667 --> 00:20:13,667
+All right.
+
+156
+00:20:15,667 --> 00:20:21,667
+Let me choose the red color again, skip the page.
+
+157
+00:20:23,667 --> 00:20:25,667
+One more interesting example here.
+
+158
+00:20:26,667 --> 00:20:28,667
+For example, look at this example 4.
+
+159
+00:20:29,667 --> 00:20:30,667
+Suppose that
+
+160
+00:20:31,763 --> 00:20:40,803
+Bu, bu fabriklerinizin 4
+
+161
+00:20:54,836 --> 00:21:05,236
+Producers, three types of product, right? Three types of product. You have four machines, and three types of product, three product.
+
+162
+00:21:06,676 --> 00:21:07,076
+Okay?
+
+163
+00:21:09,316 --> 00:21:19,476
+So, if we denote by A sub ij, the number of units of product i made by plant,
+
+164
+00:21:21,011 --> 00:21:27,471
+J, in one week, then you will have immediately such a 3x4 matrix, right? Look at this.
+
+165
+00:21:29,392 --> 00:21:43,071
+Plant or machine, for example, the machine tree, if you try to read off this column, you will say what?
+
+166
+00:21:44,019 --> 00:21:56,019
+Müşter 3, bu konuları, tersiap, tersiap, 420 unit, bir süreçlik, bir süreçlik, bir süreçlik, bir süreçlik.
+
+167
+00:22:04,692 --> 00:22:30,923
+Bu, bu
+
+168
+00:22:31,571 --> 00:22:32,771
+Product 3, right?
+
+169
+00:22:34,991 --> 00:22:38,231
+It doesn't matter the name of this product, okay?
+
+170
+00:22:38,331 --> 00:22:42,871
+That's why he called product 1, product 2, product 3.
+
+171
+00:22:43,051 --> 00:22:46,431
+If you want, you can specify the name of the product.
+
+172
+00:22:46,551 --> 00:22:47,411
+It doesn't matter, right?
+
+173
+00:22:48,151 --> 00:22:56,731
+What's matter here is that you need to know how many units of one of the product is produced.
+
+174
+00:22:57,811 --> 00:23:02,171
+...in any one of these plants or machines, right?
+
+175
+00:23:02,171 --> 00:23:04,571
+Is it clear for everybody this example?
+
+176
+00:23:07,571 --> 00:23:09,251
+Is it okay for everybody?
+
+177
+00:23:10,531 --> 00:23:11,531
+Yes.
+
+178
+00:23:12,011 --> 00:23:13,011
+Okay.
+
+179
+00:23:13,851 --> 00:23:17,731
+Alright, so we have another example,
+
+180
+00:23:17,731 --> 00:23:24,211
+but I don't have time to explain one by one.
+
+181
+00:23:52,276 --> 00:23:53,276
+Evet.
+
+182
+00:23:54,476 --> 00:23:58,276
+Bu, bir deşi bir deşi bir deşi bir deşi.
+
+183
+00:23:58,476 --> 00:24:00,476
+Bir deşi bir deşi bir deşi.
+
+184
+00:24:00,675 --> 00:24:04,476
+Bu, iki deşi bir deşi bir deşi.
+
+185
+00:24:04,675 --> 00:24:06,076
+Eşi bir deşi bir deşi.
+
+186
+00:24:06,276 --> 00:24:08,675
+İçi bir deşi bir deşi bir deşi.
+
+187
+00:24:08,875 --> 00:24:12,276
+Öncelikle, bir deşi bir deşi bir deşi bir deşi bir deşi.
+
+188
+00:24:12,476 --> 00:24:16,276
+İlk deşi bir deşi bir deşi bir deşi.
+
+189
+00:24:16,627 --> 00:24:23,627
+Yine dek bir
+
+190
+00:24:23,627 --> 00:24:25,627
+ve dek bir
+
+191
+00:24:25,627 --> 00:24:26,627
+kolumda
+
+192
+00:24:26,627 --> 00:24:27,627
+Evet
+
+193
+00:24:27,627 --> 00:24:28,627
+A
+
+194
+00:24:28,627 --> 00:24:29,627
+M
+
+195
+00:24:29,627 --> 00:24:30,627
+N
+
+196
+00:24:30,627 --> 00:24:43,915
+Bir
+
+197
+00:24:44,403 --> 00:24:56,624
+Then you can say about the equality. So this means what? A and B are actually the same metrics if and only if.
+
+198
+00:24:57,463 --> 00:25:04,183
+Well, what do you understand by equality? Intuitively speaking, let's say, well, what do you understand?
+
+199
+00:25:04,764 --> 00:25:09,243
+Each of these matrices have MN, M times N element, right?
+
+200
+00:25:11,188 --> 00:25:22,168
+So, for you to call equal these two matrices, you don't have to permit any exception.
+
+201
+00:25:22,168 --> 00:25:30,448
+I mean, each one of these MN elements, totally MN element, should coincide, right?
+
+202
+00:25:30,968 --> 00:25:36,168
+If you have just one element that are not equal but the rest...
+
+203
+00:25:36,531 --> 00:25:56,831
+are equal, you cannot call matrices equal, right? So without exception, I mean, each entry of A must be equal to each entry of B, but always in the same position, right?
+
+204
+00:26:04,276 --> 00:26:08,276
+Röve ve ilk bölüm, yani entry 1, 1.
+
+205
+00:26:08,956 --> 00:26:17,056
+If you compare this element with B2, 2, this is not the case, of course.
+
+206
+00:26:17,276 --> 00:26:18,756
+We are not doing this.
+
+207
+00:26:20,396 --> 00:26:25,096
+Take the elements of matrices, always in the same position, and then compare.
+
+208
+00:26:25,476 --> 00:26:28,136
+If they are equal, and if this happens,
+
+209
+00:26:28,596 --> 00:26:39,196
+Bu, each position, each location, right, then you can, without exception, I think it's clear what we have to understand by, without exception, right?
+
+210
+00:26:39,855 --> 00:26:46,956
+Every entry has to satisfy this condition, and then we can finally call both matrices equal, right?
+
+211
+00:26:47,296 --> 00:26:49,516
+Look at this. Let me enlarge the screen.
+
+212
+00:26:50,936 --> 00:26:53,936
+Aij is equal to Bayij4.
+
+213
+00:26:54,420 --> 00:27:02,020
+Each i and each j, you see, without exception, means exactly this.
+
+214
+00:27:03,120 --> 00:27:09,000
+Always take the same entries, I mean same means in the same location, right, and then compare.
+
+215
+00:27:10,080 --> 00:27:12,140
+If they are the same numbers or not.
+
+216
+00:27:21,619 --> 00:27:40,399
+If you see, A consists of real numbers, right, in its rows and columns, but the matrix B consists of some unknowns in one of its rows and columns.
+
+217
+00:27:45,076 --> 00:27:50,116
+In the secondary column of D, you see that each entry is unknown, actually.
+
+218
+00:27:50,376 --> 00:27:59,196
+But you can write immediately that these two matrices are equal, if and only if.
+
+219
+00:27:59,276 --> 00:28:04,076
+This symbol means if and only if. Necessary and sufficient condition, right?
+
+220
+00:28:05,036 --> 00:28:11,576
+If and only if, as I said, in each position, entries are coincident, right?
+
+221
+00:28:11,576 --> 00:28:12,636
+For example, look at this.
+
+222
+00:28:13,960 --> 00:28:15,960
+Bir
+
+223
+00:29:01,460 --> 00:29:06,120
+You have to proceed with the rest of rows exactly this way.
+
+224
+00:29:06,960 --> 00:29:07,519
+Look at this.
+
+225
+00:29:08,920 --> 00:29:10,700
+Look at the position of x.
+
+226
+00:29:11,000 --> 00:29:14,820
+It is on the second row and second column.
+
+227
+00:29:14,820 --> 00:29:17,620
+I mean, b22 is x, right?
+
+228
+00:29:18,320 --> 00:29:24,160
+So this has to be equal to a22, which is minus 3, right?
+
+229
+00:29:24,220 --> 00:29:27,460
+So you know the value of x.
+
+230
+00:29:28,372 --> 00:29:31,632
+A ve E, right?
+
+231
+00:29:32,091 --> 00:29:35,211
+So, last of all, we have Y.
+
+232
+00:29:36,011 --> 00:29:42,392
+You have to pick exactly the same entry of A in the same position, which is 0.
+
+233
+00:29:42,531 --> 00:29:43,852
+So, Y is 0, right?
+
+234
+00:29:44,991 --> 00:29:45,571
+Let me see.
+
+235
+00:29:45,652 --> 00:29:48,091
+We have one more unknown here left, okay?
+
+236
+00:29:48,491 --> 00:29:49,951
+So, Z must be 5.
+
+237
+00:29:51,152 --> 00:29:53,652
+If and only if, in this case,
+
+238
+00:29:54,612 --> 00:29:58,971
+Bu, bu, bu, çok çok farklı definiç.
+
+239
+00:30:00,112 --> 00:30:01,072
+Ve
+
+240
+00:30:03,332 --> 00:30:05,332
+herkesin anlamı kolayca anlamı.
+
+241
+00:30:06,231 --> 00:30:06,832
+Tamam.
+
+242
+00:30:08,152 --> 00:30:09,484
+Bu,
+
+243
+00:30:11,316 --> 00:30:18,415
+Let me see what we have here. Okay, this is important. We have to talk about some operations involving matris, right?
+
+244
+00:30:18,756 --> 00:30:28,475
+For example, you have addition between numbers, multiplication of numbers, real numbers. I'm talking about real numbers, right?
+
+245
+00:30:30,776 --> 00:30:38,076
+So you can think the same operations between matris also.
+
+246
+00:30:38,708 --> 00:30:49,428
+For example, what we have to understand by matrix addition, here is the definition, right? Definition 1.3.
+
+247
+00:30:50,868 --> 00:30:51,588
+All right.
+
+248
+00:30:53,348 --> 00:30:57,968
+Suppose A and B are both n by n matrices.
+
+249
+00:30:58,628 --> 00:31:00,768
+So one more remark for you here.
+
+250
+00:31:01,868 --> 00:31:03,428
+If you want to...
+
+251
+00:31:11,539 --> 00:31:15,539
+Bu yüzden de birçok için teşekkür ederim.
+
+252
+00:31:30,259 --> 00:31:39,379
+So what do we understand by the sum of these two matrices of the same order? A plus B. This will be another
+
+253
+00:31:42,019 --> 00:31:46,259
+matrix of the same order, of course, right? And what about the entries of C?
+
+254
+00:31:49,379 --> 00:31:55,379
+Look at this. Here is the formula, right? What do you understand by this formula here? Let me...
+
+255
+00:31:57,940 --> 00:32:04,740
+Anybody can tell me what we should understand from this formula here?
+
+256
+00:32:09,107 --> 00:32:18,367
+It says you have to take always the entries of matrices in the same position and then sum, sum because they are real numbers, right?
+
+257
+00:32:18,607 --> 00:32:28,147
+So you consider the sum of the real numbers and write in the same position to form the matrix C, all right?
+
+258
+00:32:28,607 --> 00:32:37,099
+So here is the first example. Both are two by three, so they...
+
+259
+00:32:37,652 --> 00:32:44,532
+Bu iki metriksiyonu, ve yeni metriksiyonu, C'ya birçok birçok birçok birçok.
+
+260
+00:32:44,532 --> 00:32:46,932
+Bu, iki metriksiyonu nasıl birçok?
+
+261
+00:32:46,932 --> 00:32:51,251
+Aslında, bu metriksiyonu, aynı zamanda,
+
+262
+00:32:51,251 --> 00:32:55,731
+ve aynı zamanda, aynı zamanda, aynı zamanda.
+
+263
+00:32:55,731 --> 00:32:57,731
+Bu çok kolay değil, değil mi?
+
+264
+00:32:57,731 --> 00:33:00,524
+Birçok, bu birçok, birçok, birçok, birçok.
+
+265
+00:33:00,948 --> 00:33:17,888
+You sum these numbers and write in the same position. I mean the first row, first column. For example, just focus on this entry of A, which is on the second row and second column, right? So take the corresponding entry of B.
+
+266
+00:33:18,259 --> 00:33:21,480
+I mean the entry of B in the second row and second column.
+
+267
+00:33:22,039 --> 00:33:23,880
+So this number is 3 here.
+
+268
+00:33:24,460 --> 00:33:27,320
+The sum of minus 1 and 3 gives you 2.
+
+269
+00:33:27,500 --> 00:33:29,480
+You have to write in the same position, right?
+
+270
+00:33:30,420 --> 00:33:35,500
+And you proceed this way to complete the matric C, all right?
+
+271
+00:33:36,660 --> 00:33:39,080
+This is very easy to understand.
+
+272
+00:33:42,080 --> 00:33:42,920
+All right.
+
+273
+00:33:43,680 --> 00:33:45,080
+Here we already...
+
+274
+00:33:46,451 --> 00:33:48,591
+A simple remark, right?
+
+275
+00:33:49,451 --> 00:33:56,151
+We now make a convention that when A plus B is written, both A and B are of the same size.
+
+276
+00:33:56,511 --> 00:34:01,511
+This is what I have already said.
+
+277
+00:34:02,811 --> 00:34:02,991
+Right?
+
+278
+00:34:03,731 --> 00:34:04,811
+So this is necessary.
+
+279
+00:34:06,791 --> 00:34:07,631
+Scala multiplication.
+
+280
+00:34:11,507 --> 00:34:18,207
+What's the meaning of scalar multiplication? Please don't confuse this with the matrix multiplication.
+
+281
+00:34:18,507 --> 00:34:25,108
+These are two different operations. Scalar multiplication, you have to understand simply the following.
+
+282
+00:34:25,268 --> 00:34:29,347
+You have a matrix, it's a rectangular or square, it doesn't matter, right?
+
+283
+00:34:29,907 --> 00:34:33,347
+Suppose you are given a matrix and...
+
+284
+00:34:34,195 --> 00:34:39,836
+You are given a scalar number, scalar, simply scalar, let's say, right? Scalar means a real number.
+
+285
+00:34:40,516 --> 00:34:45,956
+So what's the meaning of multiplication of your matrix by this scalar?
+
+286
+00:34:46,556 --> 00:34:59,275
+It means exactly the following. You have to multiply by this scalar each entry of your matrix, and then write in the same position.
+
+287
+00:35:02,164 --> 00:35:04,164
+Bu, yeni metrikler var.
+
+288
+00:35:04,164 --> 00:35:06,164
+Çünkü, bu metrikler var,
+
+289
+00:35:30,547 --> 00:35:34,787
+Here is the feature for you.
+
+290
+00:35:40,019 --> 00:35:51,140
+Let me, for the sake of simplicity, working with a square matrix, but it's not necessary. It might be n by n, rectangular, right? Doesn't matter.
+
+291
+00:35:51,500 --> 00:35:59,000
+So take a real number k, so what you have to understand by scalar multiplication is exactly such a matrix here.
+
+292
+00:36:06,547 --> 00:36:13,787
+K times A21, I'm multiplying each entry by the same number, as I said, right?
+
+293
+00:36:24,788 --> 00:36:39,127
+I think it's very clear, right? The definition is very clear. And this is, of course, another matrix. It's a new matrix that you produced from the old one, right? From the old one.
+
+294
+00:36:46,068 --> 00:36:54,048
+So, let me, I don't want to talk about in this, on this example 10, because it's very trivial, right?
+
+295
+00:36:54,368 --> 00:37:07,008
+So, let me skip this trivial example and say some few words about properties, one of the properties that matrix addition satisfies, right?
+
+296
+00:37:07,308 --> 00:37:13,648
+One of these properties is called associativity. Associativity means exactly this one, right?
+
+297
+00:37:16,851 --> 00:37:18,052
+Let me write here.
+
+298
+00:37:20,851 --> 00:37:21,771
+Look at this.
+
+299
+00:37:22,311 --> 00:37:25,871
+Suppose you are given three matrices, right?
+
+300
+00:37:26,831 --> 00:37:28,211
+Of the same order, always.
+
+301
+00:37:31,012 --> 00:37:37,012
+The associativity property says that for matrix addition, right?
+
+302
+00:37:37,072 --> 00:37:40,112
+I'm talking about the associativity for matrix addition.
+
+303
+00:37:40,911 --> 00:37:42,632
+It simply says the following.
+
+304
+00:37:42,960 --> 00:38:10,092
+İzlediğiniz için, bu, B ve C'ye birçok, ve
+
+305
+00:38:10,675 --> 00:38:14,675
+Bu nedenle çok trivial, bu konuda.
+
+306
+00:38:14,675 --> 00:38:18,476
+Bu konuda bu, bu konuda, bu konuda, bu konuda.
+
+307
+00:38:22,132 --> 00:38:27,632
+But we have to write for Matrix Edition.
+
+308
+00:38:30,172 --> 00:38:34,632
+It's very easy to prove this. You mainly use what?
+
+309
+00:38:36,772 --> 00:38:40,152
+Associated with the sum of real numbers, right?
+
+310
+00:38:42,312 --> 00:38:43,392
+All right.
+
+311
+00:38:46,931 --> 00:38:59,571
+Let me see what we have. Okay, we have seen the sum of two matrices, but you can similarly say subtraction of matrices, right?
+
+312
+00:39:00,171 --> 00:39:13,351
+Here is the notation, A minus 1. The definition is the same with the matrix addition. Why? Since we have seen scalar multiplication,
+
+313
+00:39:14,452 --> 00:39:40,972
+B, you have to understand what? The matrix B is being multiplied by the scalar minus 1, right? So this is another matrix. Why don't you sum this minus B with A in the next, right? So A plus minus B means the subtraction of these two matrices, right?
+
+314
+00:39:43,987 --> 00:40:00,107
+Okay, so I don't want to talk about this trivial example also, right? I have to earn some time because we couldn't have lecture for two weeks or almost, right?
+
+315
+00:40:00,768 --> 00:40:10,107
+Okay, example 12, say something about inventory control. If you are curious, I recommend you to...
+
+316
+00:40:20,547 --> 00:40:24,547
+Ne zamanlar, summation, notation.
+
+317
+00:40:25,547 --> 00:40:32,547
+Bu konuda, bu konuda, metriks edisyonu, bu konuda, nebette, iki matrices,
+
+318
+00:40:32,547 --> 00:40:37,547
+vekizde, iki matrices.
+
+319
+00:40:38,420 --> 00:40:45,340
+Of course, right? You can sum a finite number of matris, for example, not necessarily two or three, four, right?
+
+320
+00:40:49,907 --> 00:40:59,907
+Bu, bu, linear kombinasyonu var.
+
+321
+00:40:59,907 --> 00:41:01,907
+Çünkü, daha sonra, daha fazla zamanı
+
+322
+00:41:01,907 --> 00:41:05,907
+ile ilgili bu önemli bir süreçte
+
+323
+00:41:05,907 --> 00:41:08,907
+bu, linear kombinasyonu var.
+
+324
+00:41:08,907 --> 00:41:13,907
+Bu, bu, bu, bu, bu, bu.
+
+325
+00:41:18,612 --> 00:41:42,512
+Transpose of a matrix, not necessarily square, right? Whenever you read the definition, you understand immediately that to talk about the transpose of a matrix, you don't need that your matrix is square, right? It might be rectangular. All right. So what do we have to understand by transpose? You see?
+
+326
+00:42:09,523 --> 00:42:15,224
+If you change the row and columns, that means here you have two rows and three columns, right?
+
+327
+00:42:16,543 --> 00:42:22,184
+What's the meaning of change the position, change the rows of rows and columns?
+
+328
+00:42:23,144 --> 00:42:31,784
+Two will be the number of columns for the transpose, and three will be now the number of rows for the transpose.
+
+329
+00:42:32,364 --> 00:42:36,523
+I mean, the A transpose T is supposed to be...
+
+330
+00:42:37,012 --> 00:42:45,132
+3x2 matrisi, bu anlamda, ne? Bu anlamda, değişikliği ve kolumnsin,
+
+331
+00:43:04,563 --> 00:43:06,763
+For example, what is the transpose of A?
+
+332
+00:43:08,023 --> 00:43:14,663
+If we use this A here, you have to write a 3 by 2.
+
+333
+00:43:20,820 --> 00:43:21,820
+matris, vektör?
+
+334
+00:43:24,019 --> 00:43:27,800
+So, what is the entries of this new matris?
+
+335
+00:43:28,500 --> 00:43:30,360
+You take the first,
+
+336
+00:43:30,960 --> 00:43:34,019
+you take the first
+
+337
+00:43:34,019 --> 00:43:36,039
+rows,
+
+338
+00:43:36,360 --> 00:43:38,139
+and write as the first column,
+
+339
+00:43:38,320 --> 00:43:38,500
+okay?
+
+340
+00:43:39,659 --> 00:43:41,659
+So, you have to write 4 here,
+
+341
+00:43:42,840 --> 00:43:44,099
+minus 2 here,
+
+342
+00:43:44,880 --> 00:43:45,699
+3 here, right?
+
+343
+00:43:47,059 --> 00:43:48,400
+You have to take
+
+344
+00:43:50,579 --> 00:44:12,748
+Bir tane
+
+345
+00:44:42,003 --> 00:44:59,683
+A row matrix, right? Of course, if you write the column as a row, you will have a row matrix. If you write a row matrix as a column, you will have a column matrix, right? It's very easy. More than easy. It's trivial, I guess.
+
+346
+00:45:02,452 --> 00:45:04,231
+Bu, bu bu kitabı.
+
+347
+00:45:04,231 --> 00:45:07,032
+Bu kitabı, bu kitabı.
+
+348
+00:45:07,472 --> 00:45:09,112
+Bu kitabı, bu kitabı,
+
+349
+00:45:09,112 --> 00:45:09,992
+bu kitabı, bu kitabı,
+
+350
+00:45:09,992 --> 00:45:28,844
+bu kitabı,
+
+351
+00:45:28,884 --> 00:45:38,023
+You can filter, you can select some of them, and try to solve by yourself, right? By yourself.
+
+352
+00:45:40,384 --> 00:45:50,664
+And if I'm not wrong, you will obtain, you will find the answers of some of these exercises at the end of the book, right?
+
+353
+00:45:50,664 --> 00:45:53,623
+You can confirm what I'm saying.
+
+354
+00:45:54,943 --> 00:45:55,864
+For example,
+
+355
+00:45:56,755 --> 00:46:17,855
+Let me reduce the job. Let's say you are, you can try to solve odd numbers always. For example, in this section, you can focus on the exercises one, three, five, seven, nine, et cetera, right?
+
+356
+00:46:20,596 --> 00:46:28,476
+Eğer you like solving exercises, you can try to solve all, right?
+
+357
+00:46:29,336 --> 00:46:32,736
+Or how many you can solve, right? Doesn't matter.
+
+358
+00:46:34,676 --> 00:46:36,135
+All right. Any questions?
+
+359
+00:46:37,996 --> 00:46:42,655
+I have already completed the first section of the course today, right?
+
+360
+00:46:43,756 --> 00:46:45,056
+Any questions?
+
+361
+00:47:13,012 --> 00:47:18,212
+Ne zaman, bir diğer eğitim var.
+
+362
+00:47:18,212 --> 00:47:19,212
+8, eğer.
+
+363
+00:47:20,212 --> 00:47:21,212
+Bu, kolayca.
+
+364
+00:47:42,003 --> 00:47:48,003
+Ne düşünüyorsunuz?
+
+365
+00:47:53,811 --> 00:47:56,811
+Evet.
+
+366
+00:47:56,811 --> 00:47:57,811
+Öncelikle,
+
+367
+00:47:57,811 --> 00:47:59,811
+birkaç ve kolumlarınızı değiştirebilirsiniz.
+
+368
+00:47:59,811 --> 00:48:01,811
+Öncelikle,
+
+369
+00:48:01,811 --> 00:48:02,811
+birkaç birkaç,
+
+370
+00:48:02,811 --> 00:48:05,811
+tekrar tekrarlanırsınız.
+
+371
+00:48:05,811 --> 00:48:06,811
+Evet.
+
+372
+00:48:06,811 --> 00:48:08,811
+Bu, çok trivial.
+
+373
+00:48:08,811 --> 00:48:09,811
+Bu,
+
+374
+00:48:09,811 --> 00:48:22,811
+bu,
+
+375
+00:48:23,655 --> 00:48:25,655
+Evet.
+
+376
+00:48:23,284 --> 00:48:25,304
+Right. Look at this.
+
+377
+00:48:26,604 --> 00:48:31,984
+In exercises six through nine, so these are the matrices, right?
+
+378
+00:48:32,224 --> 00:48:34,184
+These matrices are already given.
+
+379
+00:48:35,864 --> 00:48:36,907
+So you can...
+
+380
+00:48:42,036 --> 00:48:53,855
+You can solve any one of these exercises, right? Because each matris is none, right?
+
+381
+00:48:55,996 --> 00:49:07,255
+Alright. Matris multiplication. Do you need a break? 10-minute break? It would be nice, maybe, right?
+
+382
+00:49:11,668 --> 00:49:13,648
+Evet, sir.
+
+383
+00:49:14,188 --> 00:49:25,807
+I'm going to stop now for 10 minutes, right? And at 12 o'clock we can continue, okay? So see you 10 minutes later, okay?
+
+384
+00:49:37,811 --> 00:49:57,412
+Let me say again, I have to go out of the application, right? Because, you know, some people maybe didn't enter in the first section of 50 minutes, right?
+
+385
+00:49:57,412 --> 00:50:03,711
+So I will end this meeting, and 10 minutes later, initiate again, okay?
+
+386
+00:50:04,500 --> 00:50:05,420
+Ok, see you.
