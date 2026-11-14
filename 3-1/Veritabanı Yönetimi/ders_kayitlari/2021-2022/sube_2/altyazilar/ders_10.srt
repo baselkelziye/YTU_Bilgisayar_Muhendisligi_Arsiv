@@ -1,0 +1,1007 @@
+1
+00:01:08,659 --> 00:01:09,200
+Merhaba hocam.
+
+2
+00:01:13,971 --> 00:01:15,971
+Merhaba Toprak Hocam. Şimdi host yaptım sizi.
+
+3
+00:01:16,751 --> 00:01:17,891
+Teşekkürler Hocam.
+
+4
+00:01:18,231 --> 00:01:19,611
+Rica ederim. İyi dersler.
+
+5
+00:01:20,071 --> 00:01:20,391
+Sağ olun.
+
+6
+00:01:56,947 --> 00:02:00,347
+Merhaba arkadaşlar, şöyle başlayalım ufaktan.
+
+7
+00:02:02,027 --> 00:02:03,147
+Ekran paylaşayım.
+
+8
+00:02:06,267 --> 00:02:10,367
+Şeyi görmüşsünüzdür, gruplarınız, projeleriniz belli oldu.
+
+9
+00:02:11,587 --> 00:02:14,947
+Şu labanana sayfasından ulaşabiliyorsunuz.
+
+10
+00:02:19,219 --> 00:02:22,379
+Burada girenlere göre atadık, olmayanlara rastgele atadık.
+
+11
+00:02:24,019 --> 00:02:35,219
+Burada projenizin ismi var. Bunun ayrıntısı yok. Buradan sonrasını hayal gücünüzle, araştırmalarınızla kendiniz belirliyorsunuz.
+
+12
+00:02:35,987 --> 00:02:47,427
+Yani mesela işçi bulma kurumu diyor. Bir işçi bulma kurumu olacak ama bundaki hangi bilgiler saklanması gerekiyor, hangi tablolar olacak, nasıl bir sistem olacak, orası size kalmış durumda.
+
+13
+00:02:49,828 --> 00:02:59,087
+Burada farklı farklı projeler var size hangisi denk geldiyse. Bunu yaparken, projeyi oluştururken yani.
+
+14
+00:03:00,979 --> 00:03:27,259
+Bazı en az asgari olmasını istediğimiz şartlarımız var. Bütün projeyi tek bir tabloyla da yapabilirsiniz mesela ama biz öyle istemiyoruz. En az 4 tablo olacak ve tabloda 10 kayıt olacak. Bu kayıtları da yine kendiniz rastgele olarak doldurabilirsiniz. Daha önce de söylediğim gibi programlama dili, platform herhangi bir kısıt yok. Mobil uygulama olur, web uygulaması olur, normal şeyden çalışan masaüstü uygulaması olur.
+
+15
+00:03:28,084 --> 00:03:55,623
+Mobil biraz yapması zor olduğu için büyük ihtimalle tercih edilmez. Diğer ikisini şey yapabilirsiniz. Başka, PostgreSQL kullanmanızı istiyoruz. Herhangi bir veritaban değil. Ve şu özellikleri sağlamalı. Notlandırılması buna göre olacak. Bunu PDF'den çevirince böyle yapıyor şeyi. Bunları okursunuz. Burada önemli olabilecek bir şey var mı? Bakıyorum.
+
+16
+00:04:06,324 --> 00:04:12,324
+Şu triggerları daha görmedik. Onları göreceğiz zaten diğer hafta. O yüzden sonraki hafta.
+
+17
+00:04:14,484 --> 00:04:21,764
+Tamam. Onun harici, şimdi sadece tablolar oluşturdum, çalışıyor gibi değil. Bir tane de ER diyagramı olması gerekiyor bu tabloların. Derste gördüğünüz.
+
+18
+00:04:22,403 --> 00:04:30,744
+Şuradaki şartları sağlayıp sağlamaması 60 puan. Veritabanı tasarımız 15 puan. Görsel olarak ve sistemin 25 puan olacak.
+
+19
+00:04:31,475 --> 00:04:36,875
+Bir de herhangi bir yetkilendirme yaparsanız, bunu yap da görmedik, görmeyeceğiz de büyük ihtimalle.
+
+20
+00:04:37,935 --> 00:04:44,055
+Hani bu yetkilendirme de şey, yani ben, kodları yazıyoruz ya, herhangi bir SQL kodunu düşünün.
+
+21
+00:04:44,175 --> 00:04:48,235
+Hani bir anda adam giriyor, işte delete from employee diyor, bütün tabular gidiyor.
+
+22
+00:04:48,395 --> 00:04:51,196
+Hani onu yapmasını istemeyiz, hani gerekler melekler olabilir de.
+
+23
+00:04:51,699 --> 00:04:55,699
+Belli bir zamanına göre yedeklendiyse bazı bilgileri kaybedebilirsiniz vs.
+
+24
+00:04:56,300 --> 00:05:02,840
+Bazı SQL konutlarını bazı yetkilerini çalıştıramaması, bazılarını çalıştırabilmesi üzerine bir şey bu.
+
+25
+00:05:04,039 --> 00:05:06,019
+Normal gerçek hayatta mantıklı yani.
+
+26
+00:05:07,419 --> 00:05:12,800
+Böyle bir şey uygularsanız, yani farklı bir kullanıcı bazı şeyleri gerçekleştiriyor, bazı şeyleri gerçekleştirmiyor.
+
+27
+00:05:13,039 --> 00:05:14,800
+Başta farklı bir kullanıcı farklı yetkileri var.
+
+28
+00:05:15,340 --> 00:05:17,879
+Bu da ekstra bir 15 puan ekleyecek notunuza.
+
+29
+00:05:19,348 --> 00:05:23,307
+Notları online olarak randevu sunacaksınız.
+
+30
+00:05:25,187 --> 00:05:31,328
+O kadar. Bir de hem şu tabloları oluşturan kodu da istiyoruz, bir de rapor istiyoruz.
+
+31
+00:05:32,927 --> 00:05:39,388
+Şu tabloları oluşturan kod dediğim, yani şunun gibi, bizim CampanDB oluşturan kodlar bunlar mesela.
+
+32
+00:05:39,567 --> 00:05:44,768
+Siz bir oluşturduğunuz tabloyu, bunları sonuçta bir şekilde oluşturacaksanız bunların kodlarını da istiyoruz.
+
+33
+00:05:45,812 --> 00:05:56,932
+ve genel projenin kodunu istiyoruz. Şey bu kadar. Bu projeniz %10 etkilecekmiş genel dersin notunu. Quizler de %10 etkilecek. Yani laptoplar da %20 etkilemiş olacak.
+
+34
+00:06:00,531 --> 00:06:04,851
+Başka bir şey diyecek miydim bununla ilgili? Şuna bir daha girelim.
+
+35
+00:06:08,627 --> 00:06:31,707
+Haftaki quizde dördüncü ve altıncı bu altıncı nef oluyor konularından olacak. Şu dördüncü hatırlarsanız bu aggregate fonksiyonları vardı. Hani minimax vesaire onlar vardı. Şu beşinci hafta programlama diliyle SQL'i bağladığımız için bu hani quizde sorulacak konu değil. Bir de bu hafta göreceğimiz fonksiyonlar olacak quizde.
+
+36
+00:06:32,531 --> 00:06:38,951
+Bu proje kısmıyla veya proje ödevle, ödev diyorum, bunlarla ilgili sorularınız var mı?
+
+37
+00:06:47,668 --> 00:06:50,688
+Tamam, yoksa bu haftanın konusuna geçebiliriz.
+
+38
+00:06:52,108 --> 00:07:00,308
+Şimdi bu haftanın konusu fonksiyonlar ama işte Procedure Language, PGSQL'deki fonksiyonlar veya nasıl okumuşsa bilmiyorum.
+
+39
+00:07:02,048 --> 00:07:06,668
+Şimdi fonksiyonlar ne işe yarıyor? Hani oradan girmemiz gerekiyor.
+
+40
+00:07:07,728 --> 00:07:12,148
+Yani herhangi bir programlama bilin de bir düşünün. Bütün hepsinde fonksiyonlar var.
+
+41
+00:07:12,884 --> 00:07:38,624
+Herhangi bir program fonksiyonsuz düşünülemez. Yani hani böyle şeyleri yapılabilir, işte modeller oluyor, şöyle oluyor, tekrar tekrar çarılıyor vs. ama çok çok temel bir şey. Yani aslında işimizi kolaylaştırıyorlar. Biz bu göreceğimiz dille fonksiyonlar ve trigger'lar oluşturabiliyoruz. Bu hafta sadece fonksiyonlara bakacağız. Bu fonksiyonlarla normal SQL'de yapamadığımız şeyleri de yapabiliyoruz. Yani çok karmaşık böyle iç içe değişik SQL sorgular olabilir.
+
+42
+00:07:39,088 --> 00:07:44,768
+Ama herhangi bir for if file atama kullanan programlama diliyle neler yapılabildiği ortada.
+
+43
+00:07:46,648 --> 00:07:50,567
+Normal SQL'den çok daha karmaşık şeyler yapabiliriz. Bunları kullanmak isteriz.
+
+44
+00:07:50,648 --> 00:07:54,987
+Veya düz for if file ile basit bir işlemimiz olsa bile buradan yapmayı tercih edebiliriz.
+
+45
+00:07:56,007 --> 00:08:03,288
+Bu SQL'de de kendi içinde fonksiyonlar var hazır tanımlı ama biz basitçe kullanacağımız işe yönelik fonksiyonlar yazabiliriz.
+
+46
+00:08:04,564 --> 00:08:10,423
+Bu dili kullanmamızın sebebi de SQL ile bir arada şey olması, yani entegre olması.
+
+47
+00:08:10,524 --> 00:08:16,764
+Hani SQL'de yazılırılan bütün veri tiplerini, hazır fonksiyonları bu yazacağımız kodlar içinde kullanabiliyoruz.
+
+48
+00:08:18,384 --> 00:08:22,184
+Şimdi bunları göreceğiz. Bir de dönüş şeyi var, mevzusu.
+
+49
+00:08:22,944 --> 00:08:25,764
+Şimdi normal C'de bir fonksiyon tanımladığınızı düşünün.
+
+50
+00:08:25,864 --> 00:08:28,903
+Hani dönüş tipini yazarsanız int ya da void, hani o kadardır.
+
+51
+00:08:29,184 --> 00:08:30,903
+Yani bir tane bir şey döner ya da bir şey dönmez.
+
+52
+00:08:31,348 --> 00:08:58,488
+Bunda çok farklı şekiller var. Yani bir tek bir şey dönebilir, hiçbir şey dönmeyebilir. Birden fazla şey dönebilir. Bu tek bir şey dönebilir de farklı farklı sintakslarla yazabiliyorsunuz. Biraz tercih meselesi. Burada basit tip dediği, biliyorsunuz integer, string vs. o tarz şeyler ya da daha biz şu anki konuştuğumuz bağlamda tablo gibi birden fazla şey içeren.
+
+53
+00:08:59,091 --> 00:09:00,371
+şeyler döndürebiliriz.
+
+54
+00:09:02,231 --> 00:09:04,971
+Mesela burada birden fazla dönüş yapılacaksa out kullanılır diyor.
+
+55
+00:09:05,051 --> 00:09:08,471
+Tek bir şey döndürecekse de out kullanılabilir ama kullanılmayabilir.
+
+56
+00:09:10,451 --> 00:09:12,432
+Onları göreceğiz ayrıntıların dediğim gibi.
+
+57
+00:09:15,172 --> 00:09:19,111
+Ya da herhangi bir tablonun pointerını döndürebiliriz.
+
+58
+00:09:20,311 --> 00:09:22,291
+Ya da bir şey döndürmek zorunda değiliz.
+
+59
+00:09:22,791 --> 00:09:24,291
+Şimdi böyle bir dil...
+
+60
+00:09:25,076 --> 00:09:41,355
+Herhangi SQL'de bir şey oluştururken create diyorduk. Create table, table adı, create database falan diyorduk. Bunda da programlama dilimizin adını yazıp bu şekilde create ile oluşturabiliriz. Ama bizim pgadmin kurduğumuzda otomatik geliyor bu. Bunu yazmamıza gerek yok o yüzden.
+
+61
+00:09:43,176 --> 00:09:52,436
+Şimdi aslında biraz sintaks anlatımı gibi olacak. Şimdi fonksiyonları yazarken yine şuradaki create gibi create function diye fonksiyon oluşturacağız. Tamam.
+
+62
+00:09:52,947 --> 00:09:59,548
+Ya bu şu an böyle biraz karmaşık gözüküyor, bir sürü keyword var ama bu bir hani iskeleti şablonu gibi.
+
+63
+00:10:00,067 --> 00:10:04,147
+Normal yazdığımız fonksiyonlar daha, ya bunların hepsini içermek zorunda değil.
+
+64
+00:10:05,268 --> 00:10:08,407
+Yani bundan şu şablondan daha kısa bir fonksiyon da olabilir yani.
+
+65
+00:10:10,028 --> 00:10:13,668
+Neyse, genel SQL mantığıyla işte create function ve fonksiyonun adı.
+
+66
+00:10:14,528 --> 00:10:18,008
+Daha sonra tabii fonksiyonlarda parametreler alabiliriz, almayabiliriz.
+
+67
+00:10:18,707 --> 00:10:31,567
+alacaksak, yine C'den düşünelim, mesela int i, int a, işte virgül koyuyorduk oraya, burada öyle değil. Önce adı, sonra tipi. C'de nasıldı, önce tipi, sonra adıydı. Bu şekilde alacağımız parametreleri yazıyoruz.
+
+68
+00:10:33,387 --> 00:10:44,667
+Eğer döneceğimiz parametreyi de burada belirtmek istiyorsak, şunun aynısı ama başına bir tane out koyuyoruz. Bu bizim, yani bunu döndüreceğiz bu fonksiyonu, onu ifade ediyor.
+
+69
+00:10:47,124 --> 00:10:56,244
+Daha sonra, buraya yazmadıysak, buraya returns'den sonra, bu sefer çıktığını verir. Hani, numerik, integer veya daha farklı şeyler olabilir.
+
+70
+00:10:56,564 --> 00:11:02,584
+As diyoruz. Yani, şuraya kadar böyle bir fonksiyonun şeyi, hani, tipleri, ne dönecek, ne yapacak, vesaire.
+
+71
+00:11:04,764 --> 00:11:09,144
+Daha sonra, hani, yine herhangi bir programların dilinde veya CD, genelde şöyle bir parantez açarız.
+
+72
+00:11:09,144 --> 00:11:11,044
+Ya da şöyle başka dillerde.
+
+73
+00:11:11,604 --> 00:11:19,163
+Burada iki tane tırnak, iki tane tırnak diyorum, iki tane dolar işareti başına ve sonuna koyabiliriz. Bu bir durum.
+
+74
+00:11:19,704 --> 00:11:26,244
+Ya da tek tırnak arasına yazabiliriz. Yani bunlardan birini seçip şunların arasına yazacağız kodumuzu. Şu parantezler yok.
+
+75
+00:11:28,824 --> 00:11:30,304
+Bunlardan mesela şunu seçmek.
+
+76
+00:11:30,676 --> 00:11:40,416
+İçeride tırnak kullanıyorsanız, şunu seçmek daha mantıklı olabilir. Teklikle uğraşmazsanız, eski karakterde vs. Ama yoksa tek tırnaklı bir şey, bunu da kullanabilirsiniz.
+
+77
+00:11:43,056 --> 00:11:56,156
+Ez dedik, bunu dedik, hangisini seçtiysek sonra başlayacağız. Bu dekler kısmı yine opsiyonel bir şey. İçeride herhangi bir değişken kullanacaksak, fonksiyonun içerisinde, yani fonksiyonun içerisinde burası, bu değişkenleri burada tanımlıyoruz.
+
+78
+00:11:56,724 --> 00:12:01,224
+Yani şurada aklıma geldi tanımlıyım değil de baştan burada tanımlanacak neyse o.
+
+79
+00:12:03,364 --> 00:12:09,604
+Daha sonra begin ve end arasına bu parantezi açma bu da kapama gibi yine yazacağımız kodları yazıyoruz.
+
+80
+00:12:09,703 --> 00:12:12,504
+Burada mantıksal lojimizi gerçekleştiriyoruz.
+
+81
+00:12:13,004 --> 00:12:17,224
+Daha sonra şöyle return dediysek şuraya o return'ı yazıyoruz.
+
+82
+00:12:17,344 --> 00:12:20,004
+Hani defonksiyonunca return yapıldığı gibi mantıken.
+
+83
+00:12:21,107 --> 00:12:46,467
+Burada da exception varsa yazabiliriz ama bu lafta yoktu diye hatırlıyorum. Genel şey böyle, normal örneklerle daha belli olacak. Şu declar kısmında tanımlamalar demiştik. Nasıl olacak bu tanımlamalar? Şöyle ismini ve tipini yazıyoruz. User ID diye bir değişkenim var, tipi integer. Quantity diye bir değişkenim var, tipi numerik.
+
+84
+00:12:46,768 --> 00:13:02,688
+URL, BARÇA veya bu önemli olabilir. Tamam, yine adını veriyoruz herhangi bir değişikliğin ama tipini bizim veritabanımızdaki tablolardan, onun tipi neyse o olsun şeklinde. Buraya özellikle belirterek değil de bu şekilde yazıyoruz.
+
+85
+00:13:02,688 --> 00:13:12,888
+Bu, yani şu kısım deck'lerin altına yazılacak kısım. O da şurada. Fonsiyon başladı, tiplerini vesaire, return'lerini yaptık. İki tane dolayı şartımızı koyduk, declare'ı dedik.
+
+86
+00:13:13,268 --> 00:13:18,128
+ve kullanacağımız veri tiplerini tanınalım. Ki bu olmaya da bilir, ola da bilir. Yani kullanacaksa.
+
+87
+00:13:21,888 --> 00:13:24,307
+Bu return'un yine ayrıntılarını anlatıyor.
+
+88
+00:13:26,707 --> 00:13:30,868
+Orada söyleyeceğimiz bir şey var mı? Şu örneklerden daha net olacaktır.
+
+89
+00:13:31,508 --> 00:13:36,648
+Şimdi en basit olabilecek örnek, iki sayıyı toplayan fonksiyonu yazacağız.
+
+90
+00:13:37,364 --> 00:13:44,823
+şeyimiz, sintaksımız, create function. Aslında bunu create function diyoruz da, önce orayı anlatayım. Daha sonra bunu create or replace ile değiştireceğiz.
+
+91
+00:13:45,543 --> 00:13:53,484
+Bu da şey gibi, hani bir tablo oluşturduğumuzda, işte oluşturduğumuzu aşağıda yazıyordu. Aynı tabloyu bir daha oluşturmaya çalıştığınızda şey diyecektir.
+
+92
+00:13:54,703 --> 00:13:58,624
+Bu tablo zaten var ve o çalışmayacaktı. Ama genelde fonksiyon yazarken.
+
+93
+00:13:59,572 --> 00:14:24,731
+Ben hep öyle yapıyorum. Biraz deniyorum, sonra biraz daha bir şeyler yazıyorum, sonra biraz daha yazıyorum. Aynı fonksiyonu sürekli değiştire değiştire gidiyorum. Şimdi bunda tekrar createFunction derseniz, bu örnek bir diye bir fonksiyon var diyecektir ve onu kaydetmeyecektir. O yüzden diyoruz ki, oluştur veya olan fonksiyonu değiştir şeklinde create or replace yazıyoruz ve fonksiyona devam ediyoruz. Ama ilk defa oluştururken böyle de yazabiliriz. Ama genelde bunu yazarız yani.
+
+94
+00:14:26,259 --> 00:14:33,379
+Tamam, create function dedik, fonksiyonun adını yazdık. Sonra, iki sayı toplayacağımız için iki tane sayı parametre almamız gerekiyor.
+
+95
+00:14:35,580 --> 00:14:38,740
+Bunlar, işte ikisi de nümerek olacak demişiz, num1 ve num2.
+
+96
+00:14:40,240 --> 00:14:44,059
+Şimdi, buraya kadar tamam, şuraya altlı bir şeyler de diyebiliriz, göreceğiz ama demedik.
+
+97
+00:14:44,179 --> 00:14:48,000
+Fonksiyonun, C'ye benziyor dediğim gibi, sadece şu ikisi yerleşti.
+
+98
+00:14:48,320 --> 00:14:54,720
+Daha sonra return yapacağı tip yazıyoruz. Return yapacağı tip de numarik olsun. İki sayı toplarsam yine numarik bir şey elde ederim.
+
+99
+00:14:56,259 --> 00:15:02,659
+Sonra S diyorum ve tırnaklarımı şöyle kapatıyorum. Ondan sonra bir tane değişken kullanmayı da bilirim.
+
+100
+00:15:02,759 --> 00:15:07,279
+Hani return, num 1 artırmamı tip diyebilirim. Ama ben bir tane değişkeni atayıp soru onu döndürmek istemişim.
+
+101
+00:15:08,000 --> 00:15:13,460
+O yüzden o değişkenin adı, o değişkenin tipi, daha sonra fonksiyonun artık mantığının başlayacağı yer.
+
+102
+00:15:14,484 --> 00:15:41,944
+Geliyor, bilgin ve ent arasına. Num1 ve num2'yi topluyorum. Bir toplam değişkenini atıyorum. Atama işlemi de yine eşittirle değil, şu iki nokta eşittirle yapıyorum. Biraz akış diagramlarında gördüğümüz gibi. Daha sonra bunu döndürüyorum. Şimdi bu aynı örneğin, şuraya da dilimi yazıyorum, o çok önemli değil şu anda. Aynı örneğin işte order place de yazabiliriz. Yanmaçta bahsetmiştim onunla. Şimdi burada return'u ne yaptık? Buraya bir şey demedik.
+
+103
+00:15:42,515 --> 00:15:49,855
+numarik diye bir type, yani döneceğimiz verinin tipi numariktir. Bunu, aynısını şu şekilde de yapabiliriz. Aynı şeye gelecek.
+
+104
+00:15:51,456 --> 00:15:54,196
+Aynı, yine iki sayı topluyoruz. Aynı fonksiyonu ama farklı şekilde yazıyoruz.
+
+105
+00:15:55,775 --> 00:15:57,735
+İşte num1 numarik, num2 numarik. Tamam.
+
+106
+00:15:59,316 --> 00:16:06,515
+Sonra, bizim bu fonksiyondan, biz num3 diye bir şey döneceğiz ve bunu titredebiliriz. Bunu, şu yine fonksiyonu yazarken parantezlerin içine tanımlıyoruz.
+
+107
+00:16:08,052 --> 00:16:14,331
+Daha sonra, şimdi burada artık bir kere tanımladık ya, tipi belli, ne olduğu belli. Şu işte, declare deyip, tekrar bunu tanımlamamıza gerek yok.
+
+108
+00:16:15,631 --> 00:16:30,091
+Şimdi, sonucumuz ne olacak? Bu ikisinin toplamı olacak. Bunu bu değişkene attık. Tamam, bitti. Zaten burada out dediğimiz için, bu end'e gelene kadar, bunun değişkenin içinde ne varsa, onu dönecek artık. Tekrar return num 3 dememe gerek yok. Ama burada vardı.
+
+109
+00:16:30,964 --> 00:16:36,804
+neyi döneceksem, şurada sadece tipini belirtmiştim, onu dönüyordum. Ama bu altlı yazımda, bu zaten kesin dönecek.
+
+110
+00:16:37,964 --> 00:16:40,824
+Tipini de burada belirttim, deklareye de girmiyor mu gerek yok, toplayıp dönüyorum.
+
+111
+00:16:42,104 --> 00:16:47,704
+Ki, bunun bir güzelliği mi, ya da bazıları sevmiyorum, bunu birden fazla da yapabiliyordum.
+
+112
+00:16:47,704 --> 00:16:54,464
+Yani, şöyle yaparsam, bu fonksiyonlar iki değer dönmüş. Burada, NAM3'e sıfır atarım mesela, hem NAM3 hem NAM4 dönmüş olur.
+
+113
+00:16:55,464 --> 00:16:58,484
+Bunun gibi, bunu birden fazla bir şey dönmek istiyorsak.
+
+114
+00:17:01,779 --> 00:17:05,900
+Şimdi, tamam bu fonksiyonu bir nereye yazacağız, bir de nasıl çalıştıracağız mevzusu var.
+
+115
+00:17:06,759 --> 00:17:08,059
+Şöyle bir açarsak.
+
+116
+00:17:27,124 --> 00:17:36,124
+çalışmamıza da gerek yok. Bu query tool vardı ya, normal SELECT, FROM, WHERE yazdığımız yer aynı, fonksiyonları oraya yazıyoruz aslında. Bir şey yapmıyoruz.
+
+117
+00:17:45,587 --> 00:17:54,728
+Şurada tablolarımız vardı. Şurada mesela function diyor. Bu tanımladığımız, hani create function dediğimizde, şunu yazdığımızda, burada o fonksiyon oluşuyor.
+
+118
+00:17:59,923 --> 00:18:15,763
+Şu dilde zaten kendisi otomatik olarak yine bu PCI Admin'de buraya geliyor. Hani, saytın en başında şu dili oluşturmamız gerekiyor yazıyordu. Nerede o? Şurada. Ama bu zaten içinde geldiği için zaten oluşturmuştur diyecektir.
+
+119
+00:18:18,451 --> 00:18:24,451
+Fonksiyonumuzu SELECT ile çağırıyoruz. Yani SELECT diyoruz, fonksiyonun adını yazıyoruz, parametre varsa çağırıyoruz.
+
+120
+00:18:24,451 --> 00:18:34,451
+Aslında biz bütün yaptıklarımızda SELECT FROM, WHERE yazıyorduk. Orada bazı fonksiyonlar vardı. Average, Max, Min vs. Onlar da aslında fonksiyon. Onları da SELECT ile çağırıyorduk aslında.
+
+121
+00:18:34,451 --> 00:18:45,451
+Yazdığımız fonksiyonu silmek istiyorsak da yine SQL'in şey key word'ı, alışılagelmiş olan drop diyoruz, fonksiyonu yazıyoruz ve fonksiyonun adını parametrelerini yazıyoruz.
+
+122
+00:18:46,003 --> 00:18:51,583
+Burada şunu da söyleyeyim, burada parametrelerini niye yazmamıza gerek var veya burada bu da örnek bir, bu da örnektir.
+
+123
+00:18:52,983 --> 00:19:03,703
+Bu nesneye de programlamadan hatırlarsınız, overload vardı. Aynı fonksiyon ismiyle birden fazla fonksiyon yazabiliyorduk. Nasıl anlıyorduk bunları? Bunların tipleri birbirinden farklı oluyordu.
+
+124
+00:19:04,363 --> 00:19:09,023
+Tipleri dediğim dönüş tipi olabilir, aldığı parametreler olabilir. Bu aynı şekilde bu dilde de var.
+
+125
+00:19:10,132 --> 00:19:16,652
+Yani aynı isimle farklı parametre alan fonksiyonu yazabilirsiniz. O yüzden silerken de tekrar parametre tipleri veriyoruz.
+
+126
+00:19:18,832 --> 00:19:20,872
+Biraz daha normal bir örneğe bakalım.
+
+127
+00:19:22,832 --> 00:19:26,392
+Şimdi adı verilen bir departmandaki çalışanların ortalama aşık olan fonksiyonu yazınız.
+
+128
+00:19:26,972 --> 00:19:31,352
+Şimdi bu normalde yapabileceğimiz bir şey ama fonksiyonun içerisinde görüyoruz.
+
+129
+00:19:31,972 --> 00:19:35,032
+Şimdi creator, replace dedik. Yeni bir fonksiyona oturacağız. Adını verdik.
+
+130
+00:19:36,788 --> 00:19:42,728
+Şimdi departmanın adı ne şekilde tutulduğunu bilmiyor olabiliriz veya değişecek olabilir.
+
+131
+00:19:44,087 --> 00:19:49,127
+Veya böyle yazmak istemişizdir daha iyi olduğu için diyelim.
+
+132
+00:19:50,407 --> 00:19:57,387
+Şöyle bir değişkenimiz var. Bu değişkenimizin tipi ne? Departman tablosundaki D-Name'in tipi neyse o. Bunun anlamı bu.
+
+133
+00:19:58,208 --> 00:20:03,127
+Daha sonra ortalama maaşın tipi nedir? Burada real bir sayıdır demişiz.
+
+134
+00:20:04,915 --> 00:20:14,435
+EZ diyoruz ve tek tırnakla fonksiyona başlıyoruz. Sonra bir değişken kullanacak mıyız? Evet kullanacağız. Mesela ortalama maaş soruyorsa onu bir maaş değişkenine atayabiliriz.
+
+135
+00:20:16,435 --> 00:20:26,555
+Bu da tamam. Daha sonra BIGIN ve END var. Şimdi bunu bulan sorguyu rahatlıkla yazabiliriz. Tablolarımız vardı vesaire onlara sorguyu yazabilirsiniz diye düşünüyorum.
+
+136
+00:20:27,215 --> 00:20:30,975
+SELECT FROM, WHERE, EMPLOYE ve DEPARTMAN tablosuna bu iki tabloyu JOIN'ledim.
+
+137
+00:20:31,508 --> 00:20:57,667
+ve average salary'ı aldım. Yani bunu çalıştırsaydım şu into maaşı hariç, aynı şekilde çalışırdım. Bu into da şey aslında, böyle değişken ataması gibi. Ama bu tablonun sonucunu buna atıyor. Ki aslında bu da, yani bu işlemin sonucunu, şunu atıyor diye düşünün. Bu değişkene. Daha sonra onu döndürüyoruz. Şunu bir çalıştırabilirsem çalıştırayım aslında. Böyle değildi.
+
+138
+00:20:58,867 --> 00:20:59,607
+şöyle alın.
+
+139
+00:21:04,531 --> 00:21:06,531
+Örnek 2 var diye onu...
+
+140
+00:21:13,875 --> 00:21:15,755
+Tamam, şimdi bu çalıştı.
+
+141
+00:21:17,155 --> 00:21:20,275
+Aslında şuraya gelmiş olması lazım. Nerede o?
+
+142
+00:21:26,420 --> 00:21:30,759
+Aynı şekilde, tamam. Şu into keyword'ünü göstermeye çalışıyorum.
+
+143
+00:21:31,759 --> 00:21:37,879
+Onları gibi şeyler söyleyeceğim. Şimdi bunu çalıştırdığımda, yani şuna mesela bir isim veriyorum.
+
+144
+00:21:37,879 --> 00:21:39,299
+Yani şöyle de çalışabilirim.
+
+145
+00:21:43,604 --> 00:21:51,544
+Çalışamazmış. Çünkü buraya ne olduğunu yazmamız lazım. Bir departman ne vardı acaba? Research yazalım.
+
+146
+00:21:59,347 --> 00:22:03,748
+Tamam. Bunu average olduğu için as diyordu. Bunu mesela ortalama diyebiliriz.
+
+147
+00:22:06,468 --> 00:22:09,307
+Bu da tamam. Ama bu into keyword'ü başka bir şey.
+
+148
+00:22:10,587 --> 00:22:14,887
+Şimdi mesela ne olacak? Aslında şurada dedim ki böyle bir değişken ve bunu atıyor aslında.
+
+149
+00:22:15,327 --> 00:22:19,067
+Burada da öyle yapacak. Tamam. Bir şey de göstermedi.
+
+150
+00:22:19,768 --> 00:22:25,728
+Şimdi bunu tekrar çalıştırdığımda bu sefer böyle bir relation, ortalama değil bir relation var diye bir hata veriyor aslında.
+
+151
+00:22:26,160 --> 00:22:31,660
+Yani bu bunu atadığında ortada bir tablo oluşmuş oldu ve bize ortalama diye yeni bir tablo oluştu.
+
+152
+00:22:32,759 --> 00:22:35,879
+Yani burada kullandığımız into işlemi aslında bize bir tablo oluşturuyor.
+
+153
+00:22:36,519 --> 00:22:40,700
+Bu sorgunun sonucu neyse onu yeni bir tablo olarak oluşturup buraya atıyor.
+
+154
+00:22:41,940 --> 00:22:49,259
+Yani şurada, tabii bu, şu an bu fonksiyonun sonucu tek bir sayı olduğu için o da onu gösterecek.
+
+155
+00:22:49,259 --> 00:22:50,220
+Mesela SELECT.
+
+156
+00:22:57,172 --> 00:23:16,372
+Yani, evil'lara da benziyor da demek istemiyorum da. Bu int şeyi burada değişken oluşturuyorken burada da onu bir tablo oluşturuyor. Aslında burada da tablo oluşturuyor, o tabloya dönüyor. Demiş olalım. Bu kadar yapmışken normal fonksiyonumuzu da çıkaralım o zaman. SELECT, örnek miydi, örnek miydi?
+
+157
+00:23:19,700 --> 00:23:21,000
+Ona ne veriyor duk.
+
+158
+00:23:22,079 --> 00:23:23,559
+Parametri, se oçur veriyor duk.
+
+159
+00:23:29,715 --> 00:23:33,755
+Yani bu şekilde sayırı yıl olduğu için bir yıl böyle döndü.
+
+160
+00:23:37,683 --> 00:23:42,683
+Burada da çağırma fonksiyonlarını silerken de yine bu şekilde siliyoruz fonksiyonu.
+
+161
+00:23:44,683 --> 00:23:46,683
+Mesela üçüncü örneğimiz neymiş?
+
+162
+00:23:47,683 --> 00:23:52,683
+Şimdi diğer fonksiyonlarda hep bir parametre alıyorduk. Bunda da herhangi bir parametre almıyoruz.
+
+163
+00:23:52,683 --> 00:23:55,683
+Yani hazır fonksiyonu çağırıyoruz hiçbir şey almadan.
+
+164
+00:23:56,683 --> 00:24:01,683
+Ne diyor? Departman tavlosundaki minimum ve maksimum departman numarasını bulup şu iki değişkeni atayan fonksiyonu yazın.
+
+165
+00:24:01,683 --> 00:24:03,683
+Bu iki değişkeni atıyorsa
+
+166
+00:24:04,339 --> 00:24:08,579
+Bunları döndürmek istiyoruz. O yüzden OUT diyoruz. Değişkenin adını ve tipini yazıyoruz.
+
+167
+00:24:09,579 --> 00:24:10,819
+Deklare edeceğimiz bir şey yok.
+
+168
+00:24:12,079 --> 00:24:16,399
+Bu INTO'yu şöyle, şunu şunu ata, şunu şunu ata gibi de kullanabiliyoruz.
+
+169
+00:24:18,059 --> 00:24:21,859
+Şurada bu söylediği minimum, maksimum departman numarasını buluyoruz.
+
+170
+00:24:22,059 --> 00:24:23,539
+Sonra INTO'dayıp bu iki değişkeni atıyoruz.
+
+171
+00:24:24,639 --> 00:24:25,939
+Kulanınca da herhangi bir şey almadık.
+
+172
+00:24:27,500 --> 00:24:30,439
+Şurada return vs. onları da yazmadık bu OUT'da yaptığımız için.
+
+173
+00:24:30,439 --> 00:24:31,599
+Bir tane değişken döndürdü.
+
+174
+00:24:34,644 --> 00:24:37,144
+Onlarca bu örnekte başka bir şey var mı?
+
+175
+00:24:41,619 --> 00:24:48,139
+Tamam, hani şu diğer örnekle bir tane şurada average dönüyor diye, bunda da iki tane dönecek. Yani şeyin iki tane de yeri olacak şu tablo.
+
+176
+00:24:52,500 --> 00:25:01,819
+Mesela 6 numaralı departmanda çalışanların sayısını bulun dediğinde yine bu döngüyü yazmayı biliyoruz. Burada bir parametre olarak biz bir şey alıyor muyuz? Yine almıyoruz.
+
+177
+00:25:03,019 --> 00:25:12,380
+6 numaralı departmanda çalışanları bulun. Bu kullanıcıya tekrar soracağınız bir şey yok ama numarası verilen departman deseydi departman namazı alırdı ama sadece 6 dediği için döngümüz bu kadar.
+
+178
+00:25:12,980 --> 00:25:20,280
+OUT'umuzu çalışkan sayısı dediğimiz için, bu count sayısını almak buydu. Bunun içine basıcı atabiliyoruz.
+
+179
+00:25:26,067 --> 00:25:33,968
+Yine 6 numaralı departmanda çalışanların sayısı 10'dan azsa, departmandaki çalışanların maaşına %5 zam yapalım.
+
+180
+00:25:35,208 --> 00:25:38,508
+Şimdi bu örnekle, şöyleyse böyleyse var, yani işin içine ilk giriyor.
+
+181
+00:25:39,248 --> 00:25:40,867
+Onu göstermek bu örneğin amacı da.
+
+182
+00:25:42,807 --> 00:25:44,347
+Şimdi maaşa zam yapabilirsiniz.
+
+183
+00:25:44,807 --> 00:25:46,248
+Tamam, bir şey dönmenize gerek.
+
+184
+00:25:46,647 --> 00:25:51,367
+Maaşı yaptıysanız, turu dönemdesiniz ve ama özellikle spesifik olarak bir şey dönmenize gerekiyor.
+
+185
+00:25:53,071 --> 00:25:58,432
+Herhangi bir şey dönmüyorsa, KITONUS VOID diyoruz. Yani hiçbir şey dönmüyor anlamda, VOID dönüyor anlamda.
+
+186
+00:26:00,932 --> 00:26:09,751
+Sonra çalışanların sayısını burada tanımlayıp sıfır demişiz. Daha sonra funksiyonun içini yazacağız. Buraya kadarı basit zaten.
+
+187
+00:26:12,451 --> 00:26:16,751
+Tamam, bu 6 numaralı departmanda çalışanların sayısı, onu bulduk.
+
+188
+00:26:17,236 --> 00:26:38,696
+nummerker değişkenini atadık. O değişkenini şu dekleri de tanımlamıştık zaten. Daha sonra bu ondan küçükse diyordu. Şimdi bu if sintaksımız şöyle if diyoruz, koşulumuzu yazıyoruz. Sonra normalde parantez yazdık. Burada den diyoruz. Yani bu den if'in başladığını şey yapıyor. Sonra bu if bir yerde bitecek. Onu da endif yazarak bitiriyoruz.
+
+189
+00:26:41,155 --> 00:26:44,476
+Tamam, şey bulmuştuk, nummerker sayısını bulmuştuk.
+
+190
+00:26:45,748 --> 00:26:50,488
+Bu işte employee tablosundaki salarileri güncelleme işlemimiz böyleydi.
+
+191
+00:26:51,567 --> 00:26:56,067
+Yani herkesin salarisini salari çarpı, işte %5 zam yapmış oluyoruz.
+
+192
+00:26:58,107 --> 00:27:01,988
+Departman'dan olsa altı olanları dediği için sadece altı numaralı departmanlıkları yaptık.
+
+193
+00:27:02,548 --> 00:27:05,988
+Bu da şey hali, bütün görebileceğimiz hali.
+
+194
+00:27:06,963 --> 00:27:14,104
+Yani burada şey yapılabilecek şeyler, bu begin ve en içine her türlü normal herhangi bir C'de veya programlarla yazdığımız şeyleri yazabiliriz.
+
+195
+00:27:14,624 --> 00:27:19,004
+Bildiğimiz SQL komutlarını yazabiliriz. Bu SQL komutlarında kullanılan fonksiyonları yazabiliriz.
+
+196
+00:27:19,743 --> 00:27:26,463
+Bu değişkenlere istediğimiz gibi manipüle edebiliriz. Herhangi bir koşulumuz varsa onu kullanabiliriz.
+
+197
+00:27:26,463 --> 00:27:33,223
+If'le veya switch case'le. Tabii if daha tercih edilir bir şey bence. Daha sonra döngüler varsa for.
+
+198
+00:27:33,584 --> 00:27:35,584
+Veya while gibi onları da kullanabiliriz.
+
+199
+00:27:36,403 --> 00:27:43,304
+Sadece mesela yine farklı işte olabilecek bir şey bu değişkenlerimizin şu declarerde kullandığımız bütün değişkenleri burada tanımlıyoruz.
+
+200
+00:27:43,824 --> 00:27:45,243
+Öncesinde fonksiyona başlamadan.
+
+201
+00:27:47,983 --> 00:27:51,504
+E tabi if varsa bir de else, else ya da else de oluyor.
+
+202
+00:27:52,483 --> 00:27:56,703
+Buradaki şeyimiz de yani if den tamam yapılacaklar.
+
+203
+00:27:57,140 --> 00:28:17,600
+ELSEIF diyeceksek, mesela Python'da ELIF yazıyoruz, burada başka dillerde ELSEIF yazıyoruz, burada da bu kadar. Her biri bir şey koyuyor gibi. Burada tekrar koşulumuz yazıyoruz, DEN diyoruz. Sonra ELSE diyoruz, onların hiçbiri değilse şeklinde. Yine NF ile bitiriyoruz. Yani İF'in başladı ve bittiği bu şekilde belli oluyor. Diğer ara şeyler varsa bu şekilde.
+
+204
+00:28:19,720 --> 00:28:24,600
+Burada işte STRING olarak atıyoruz. Bu fonksiyonun içinden bir parça gibi düşünebiliriz.
+
+205
+00:28:26,867 --> 00:28:34,247
+Tabii, switch case de var. Diğer programlarla ilerindeki gibi. Bunun sintaksta böyle diyoruz. Bunu çok söylemediğim için geçiyorum.
+
+206
+00:28:36,947 --> 00:28:53,287
+Bir de tabii, asıl şey yapan, döngüler. While ve for döngümüz var. While, işte döngünün koşulu. Bu mesela if'i if deyip, altta da end if diyorduk ya, bu loop'ları da, yani döngüleri de loop ve end loop'la bitiriyoruz.
+
+207
+00:28:54,003 --> 00:29:05,163
+Şu araya da yine yapılacak işlemlerimizi yapıyoruz. Forum farklı farklı tipleri var tabii. Kaçar kaçar gideceksiniz, nasıl gideceksiniz, tersten gidebiliyorsunuz vs.
+
+208
+00:29:06,824 --> 00:29:20,523
+İşte başlangıçtan bitişe kadar sayış değişkenini. Sonra şurada işte yapacakları yapıyoruz. Hani bir önce bir hangi sayıdan hangi sayıya kadar kaçar kaçar gideceğiz. Artıyor muyuz, azalıyor muyuz? Onları belirlememiz gerekiyor.
+
+209
+00:29:20,948 --> 00:29:30,008
+Bunun farklı farklı sintaksları burada. Zaten sintaks kendini anlatıyor. Reverse dediğinde, büyükten küçüğe doğru gidiyor.
+
+210
+00:29:30,268 --> 00:29:39,008
+Gelin de küçükten büyüğe doğru. İşte birden fazla arttıracaksak, işte BY değil, kaç ay kaçer olduğunu yapıyoruz. Gibi gibi.
+
+211
+00:29:40,668 --> 00:29:46,908
+Şu raise notice de şey, hani mesela genelde debug ederken ya da bir şey yazdırırken, kendi de öpüyoruz ya.
+
+212
+00:29:47,859 --> 00:29:59,359
+Buradaki print'sin şeycesi, bu değilcesi, raise notice. Bunu da yine bu fonksiyonu çalıştığımızda kusur burada değil, hani tablonun sonucu olarak değişiyor. Mesaj kısmında görüyoruz.
+
+213
+00:30:00,779 --> 00:30:03,920
+Mesaj kısmında mıydı? Bunu korktuyorsam da çalışmayacak.
+
+214
+00:30:09,364 --> 00:30:27,604
+Yani burada şeylere baktığımızda işte 1'den 5'e kadar giden bir x var. Tek tek yazdırıyor. Burada 5'den 1'e kadar giden bir x var. Burada 5'den 1'e kadar yani kusur ters küçü azalıyor. 2'şer 2'şer giden bir x var. Bunları o herhangi fonksiyonun gövdesine yazıp inceleyebiliriz.
+
+215
+00:30:30,584 --> 00:30:35,264
+Burada yine basit bir şey var. Yani tek bir sayı alıyoruz onu.
+
+216
+00:30:35,763 --> 00:30:50,104
+T artı 1 deyip şey yapıyoruz. Yani bu örneğin amacıda bu yapacağımız matematik işlemi sadece return'ın yanında yapmak. Herhangi bir ekstra bir özelliği yok. Şu biraz şey bir soru, meşay katkı diyelim. Yani adım adım işlem yapmaya gerekir.
+
+217
+00:30:51,844 --> 00:31:00,763
+İsmi verilen bir departmanda çalışanların ortalama maaşı verilen bir değerden küçükse, o departmandaki kadın çalışanların maaşlarının toplamı verilen bir limit üstündeyse,
+
+218
+00:31:01,140 --> 00:31:06,220
+O departmanda birden fazla projede çalışanların maaşlarını yine verilen bir oranda zam yapan fonksiyon yazınız diyor.
+
+219
+00:31:08,539 --> 00:31:11,279
+Yani şey benim için ilk okuduğumda anlaması zor bir şeydi.
+
+220
+00:31:12,619 --> 00:31:13,660
+Bir tane önce okumuştum o yüzden.
+
+221
+00:31:15,299 --> 00:31:18,440
+Şimdi isim verilen departman dediği bir tane departman olacak tamam.
+
+222
+00:31:18,759 --> 00:31:20,079
+Yani bir departmanda bir iş yapacağız.
+
+223
+00:31:21,740 --> 00:31:24,420
+Şimdi bu çalışanların, yani bu departmanda çalışan insanlar var.
+
+224
+00:31:24,460 --> 00:31:25,680
+Bir de bunların ortalama maaşı var.
+
+225
+00:31:26,836 --> 00:31:53,635
+verilen bir değerden düşükse diyor, o değeri de verecek. Yani bu, burada çalışanlar var, tamam bunların ortalama, çalışanların maaşlarının ortalaması şu değerden küçükse ve kadın, o departmanın çalışan kadınların maaşlarının toplamı yine bir değerden onu verecek. Büyükse, yani ilk koşulumuzda ERT var. İlki bu, ikincisi bu. Bu ilki ortalama maaşla ilgili, bu toplam maaşla ilgili. Tamam.
+
+226
+00:31:54,740 --> 00:32:19,740
+Bu sefer, birilerine zam yapacağız. Ne kadar zam yapacağız, onu da verecek. Ama herkese zam yapmayacağız. Birden fazla projede çalışanlara zam yapacağız. Onun fonksiyonu da bu şekilde. Nasıl yapmışız? Departman ismi alacağımız için onun tipini bu şekilde belirtmişiz. Ortalama maç real olduğu için real almışız.
+
+227
+00:32:22,867 --> 00:32:31,667
+Toplam maaşı da maaşın tipi neyse o olarak almışız. Zam oranını da sayı olarak almışız. Sadece zam yapacağız. Herhangi bir şey şey yapmamıza gerek yok. O yüzden boyut denmişiz.
+
+228
+00:32:34,147 --> 00:32:41,707
+Kullanacağımız değişkenleri tanımlamışız. Ne değişkenleri kullanmışız? Ortalama maaş, kadın maaşları. Ortalamayla bir toplamla ilgileniyoruz. Bu iki değişken.
+
+229
+00:32:42,387 --> 00:32:50,687
+Bir de departmanın adını veriyor da oradan numarasını bulmam lazım. Adından numarasını bulacağım ya, o numaranın olduğu değişken olması lazım. O da bu.
+
+230
+00:32:53,567 --> 00:33:02,787
+Mesela şu into hariç bu şeye baktığımızda, şuradaki bölüm ismi, departmanın numarası neyse, DN number neyse, onu bölüm no'ya atıyor sadece.
+
+231
+00:33:04,147 --> 00:33:08,427
+Bu da oradakilerin, bu bulduğumuz bölüm no'dakilerin ortalama maaşını buluyor.
+
+232
+00:33:10,836 --> 00:33:32,655
+Bu da oradaki kadın çalışanların maaşlarının toplamını buluyor. Artık if şartımı sağlayan şeyleri buldum. Daha sonra bir de parametreler almıştım. Ondan küçükse ve ondan küçükse sonra da söylediği gibi yapıyorum. Sonra den diyorum, ifime başlayayım. Şurada if dedim, koşullarımı yazdım, den dedim. Artık ne yapacağım, şey yapabilirim. Bir de endif deyip bitireceğim.
+
+233
+00:33:33,715 --> 00:33:47,295
+O da tamam. Şu end de zaten fonksiyonun bitişi. Bu içine de işte güncelleme konuları neydi? Update'di. Update'i en kolay. Tamam ne yapacağız? Suları'ya zam yapacağız. Onun oranını verdi. Matematiksel bir ifade, onu anlayabilirsiniz.
+
+234
+00:33:49,195 --> 00:33:59,095
+Bu SSN'i neyse yapacağım. Birden fazla neydi, projede çalışıyorsa yapacaktım. Onu da şu tabloyla bulmuşum.
+
+235
+00:34:00,564 --> 00:34:03,384
+Yani şu in, hani şu kadar değil, böyle bayağı gidiyor herhalde.
+
+236
+00:34:05,224 --> 00:34:08,943
+Bu SSN, bunun döndüğü işte listenin içindeyse dönecek.
+
+237
+00:34:09,264 --> 00:34:12,484
+Şimdi birden fazla çalışanları bulmak da ayrı bir soru gibi sorulabilecek bir şey.
+
+238
+00:34:12,864 --> 00:34:13,884
+Orada da bunu bulmuşuz.
+
+239
+00:34:15,744 --> 00:34:17,203
+Daha sonra bir şey döndürmek zaten.
+
+240
+00:34:17,463 --> 00:34:18,824
+Zam yapılıyorsa yaptık.
+
+241
+00:34:20,644 --> 00:34:21,163
+Bu kadar.
+
+242
+00:34:23,123 --> 00:34:24,864
+Son sayta da gelmiş oluyoruz.
+
+243
+00:34:25,492 --> 00:34:30,552
+Sormak istediğiniz bir şey var mı şu an işlediklerimizle veya QEAS'le veya projeyle ilgili?
+
+244
+00:34:38,835 --> 00:34:45,235
+Herkese iyi akşamlar arkadaşlar. Haftaya quiz var onu unutmayın. Böyle görüşürüz.
+
+245
+00:34:45,315 --> 00:34:47,775
+Hocam, quizin konuları ne olacak biliyor musun?
+
+246
+00:34:48,496 --> 00:34:55,175
+Quizin konuları bu hafta gördüğümüz fonksiyonlar ve dördüncü hafta gördüğümüz aggregate fonksiyonları.
+
+247
+00:34:55,295 --> 00:34:59,715
+Yani min, max, sum vs. Ama şimdi takdir edersiniz ki burada şey var.
+
+248
+00:35:00,244 --> 00:35:13,744
+Bunları zaten kullanabilmek için SELECT, FROM, WHERE yazmak gerekiyor. O yüzden şunlardaki şeyler de olacaktı. Ama şu iki konu, sıralama ve gruplama fonksiyonları ve bu hafta gördüğümüz fonksiyon tanımları.
+
+249
+00:35:14,724 --> 00:35:16,604
+GDBC ile ilgili bir şey olacak mı hocam?
+
+250
+00:35:17,804 --> 00:35:25,524
+Özellikle olmayacak. Yani herhangi bir programın bilgisine nasıl bağlanıyoruz, onun sorgusuyla veya koduyla ilgili bir şey çıkmayacak.
+
+251
+00:35:26,224 --> 00:35:27,304
+Sağ olun hocam, teşekkürler.
+
+252
+00:35:27,923 --> 00:35:33,224
+Rica ederim. Sonlandırıyorum o zaman. Görüşmek üzere. İyi akşamlar.
