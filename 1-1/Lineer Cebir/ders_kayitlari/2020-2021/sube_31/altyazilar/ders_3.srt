@@ -1,0 +1,2163 @@
+1
+00:00:00,000 --> 00:00:00,260
+Evet.
+
+2
+00:00:46,740 --> 00:01:11,939
+Hello to everyone. Sorry for the delay. My computer has been updated, so I didn't open it. Now everything is okay and we will start our lectures. Last week we were talking about
+
+3
+00:01:12,563 --> 00:01:15,371
+vekizli,
+
+4
+00:01:24,724 --> 00:01:31,724
+At last, we were on orthogonal matrices.
+
+5
+00:01:31,724 --> 00:01:33,724
+So, today...
+
+6
+00:01:37,427 --> 00:01:48,427
+İlk başta, ortogonal matrisi, ama ilk başta, öpene, rater nodes.
+
+7
+00:02:21,364 --> 00:02:21,884
+Veynar
+
+8
+00:02:47,955 --> 00:02:48,955
+Bu bir problem.
+
+9
+00:02:50,275 --> 00:02:51,555
+Bir telefonatör.
+
+10
+00:02:56,723 --> 00:03:00,783
+Maybe close it and reopen then.
+
+11
+00:03:17,204 --> 00:03:24,524
+Değerli öğrencilerler, kapatın ve mikrofonlarınızı dinledim.
+
+12
+00:03:43,795 --> 00:03:46,795
+[öğrenci], siz de kapatabiliyorsunuz.
+
+13
+00:03:46,795 --> 00:03:55,795
+Can you hear me? Ben de kapatabiliyorum. Zaten birisi kırılabilir. Bir anla durduramıyorum.
+
+14
+00:03:55,795 --> 00:04:00,491
+Bir yazar mısınız oraya arkadaşlar, mikrofon açık olan kapatsın diye.
+
+15
+00:05:00,980 --> 00:05:09,340
+Arkadaşlar, benimle bir şey herhalde anlamadı söylediğim arkadaş. Ben sizi duyuyorum. Mikrofonunuzu kapatırsanız biz de sizi duymayın. Olur mu?
+
+16
+00:05:10,620 --> 00:05:12,500
+Hocam bilgisayarın başına değil herhalde.
+
+17
+00:05:14,580 --> 00:05:15,780
+Bu var vahim de neyse.
+
+18
+00:05:31,795 --> 00:05:33,795
+Öğretmenin mi mikrofonu açıktın?
+
+19
+00:05:33,795 --> 00:05:35,795
+Evet, evet hocam.
+
+20
+00:06:03,060 --> 00:06:06,720
+[öğrenci] beni duyuyorsan lütfen mikrofonu kapatın.
+
+21
+00:06:11,879 --> 00:06:16,539
+Zaten bilgisayarla o kadar uğraştığım bile şimdi mikrofonla uğraşmak isteyemiyorum arkadaşlar.
+
+22
+00:06:24,339 --> 00:06:26,779
+İnan dağın kaputluyor, bu, per semanı suyur isimli.
+
+23
+00:06:31,699 --> 00:06:34,480
+[öğrenci], [öğrenci]'i müddet.
+
+24
+00:06:40,180 --> 00:06:44,860
+Hocam katılanların bölümünden şey kapatabilirsiniz, orada zaten gözüküyor. Nerede, nerede?
+
+25
+00:06:45,920 --> 00:06:49,220
+Burada partisi var, ona baksın.
+
+26
+00:06:49,860 --> 00:06:50,120
+Tamam.
+
+27
+00:06:50,800 --> 00:06:52,040
+Orada mute yazıyor.
+
+28
+00:06:53,259 --> 00:06:55,100
+Heh, güzel, bravo.
+
+29
+00:06:57,740 --> 00:07:01,139
+Tamam, onun resmiye eşaretleyince zaten çıkacak.
+
+30
+00:07:02,139 --> 00:07:02,620
+Okey.
+
+31
+00:07:09,267 --> 00:07:22,548
+Ok, let's start with thanks to [öğrenci] or who guided me to mute to [öğrenci].
+
+32
+00:07:26,420 --> 00:07:29,740
+Şimdi, başlayalım ortogonal matrisler.
+
+33
+00:07:33,427 --> 00:07:40,427
+Last week, we talked about Sükör matrisi, some special Sükör matrisi.
+
+34
+00:07:43,860 --> 00:08:08,060
+What is the orthogonal matrix or orthogonal matrices? The matrix with real entries A, if it's transpose equals to its inverse, it means that if A times A transpose equals to identity matrix, then we say that this matrix is orthogonal.
+
+35
+00:08:13,971 --> 00:08:16,871
+If, sorry,
+
+36
+00:08:27,187 --> 00:08:39,187
+If the transpose of A equals to inverse of A, then multiply both sides by A.
+
+37
+00:08:44,307 --> 00:08:47,487
+on the right, so,
+
+38
+00:08:52,403 --> 00:08:59,203
+Since A inverse times A equals to identity matrix.
+
+39
+00:09:05,748 --> 00:09:11,748
+A transpose times A equals to ident matrix.
+
+40
+00:09:11,748 --> 00:09:21,748
+So, if a matrix A satisfies this condition, then we say that this matrix is orthogonal.
+
+41
+00:09:21,748 --> 00:09:23,692
+For example,
+
+42
+00:09:28,148 --> 00:09:30,868
+Let A be a matrix like this.
+
+43
+00:09:31,868 --> 00:09:34,587
+Then let us check if it is orthogonal or not.
+
+44
+00:09:34,587 --> 00:09:39,028
+So, we have to multiply A with its transpose.
+
+45
+00:09:39,448 --> 00:09:40,587
+A is this matrix.
+
+46
+00:09:50,163 --> 00:09:54,163
+ve transposonu, A'ı,
+
+47
+00:09:56,163 --> 00:09:57,163
+will be,
+
+48
+00:09:59,163 --> 00:10:02,163
+replace the rows with the columns, so,
+
+49
+00:10:02,163 --> 00:10:07,163
+the first row of the transposon matrix will be,
+
+50
+00:10:08,163 --> 00:10:09,163
+cosθ,
+
+51
+00:10:10,163 --> 00:10:12,163
+minus sinθ,
+
+52
+00:10:14,163 --> 00:10:16,139
+and the second row,
+
+53
+00:10:16,148 --> 00:10:24,827
+will be the second column of A. So this is sine theta and cosine theta.
+
+54
+00:10:26,368 --> 00:10:39,648
+To multiply two matrices, first, the number of the columns of the first one must be equal to the rows, the number of rows of the second one.
+
+55
+00:10:40,067 --> 00:10:43,748
+Since this is 2 by 2 square matrix and...
+
+56
+00:10:44,851 --> 00:11:10,251
+Bu, 2x2
+
+57
+00:11:11,124 --> 00:11:16,084
+cos square theta plus sin square theta, which gives 1.
+
+58
+00:11:19,604 --> 00:11:33,124
+And the second entry, we have minus cos theta times sin theta plus sin theta times cos theta, which gives 0.
+
+59
+00:11:34,324 --> 00:11:35,524
+And for the second rule,
+
+60
+00:11:44,179 --> 00:11:52,979
+This is minus sine theta times cosine theta plus cosine theta times sine theta, zero.
+
+61
+00:11:54,179 --> 00:12:04,979
+And this gives sine square theta plus cosine square theta, one. So this is the identity matrix with size two.
+
+62
+00:12:06,355 --> 00:12:15,355
+Since A times A transpose equals to identity matrix, we say that A is an orthogonal matrix.
+
+63
+00:12:15,355 --> 00:12:16,355
+Okay.
+
+64
+00:12:30,995 --> 00:12:31,556
+Nam.
+
+65
+00:12:35,059 --> 00:12:39,419
+We are talking about complex magicis.
+
+66
+00:12:43,956 --> 00:13:10,251
+First, let us remember the set of the complex numbers. We denote the set of the complex numbers by C, which has elements A plus B, where A and B are
+
+67
+00:13:11,124 --> 00:13:23,703
+Green numbers and i2 equals minus 1. This is the set of complex numbers.
+
+68
+00:13:32,947 --> 00:13:57,028
+And for complex number C, a plus bi, the conjugate of this number is, sorry, for a complex number a plus ba, we have a is real part,
+
+69
+00:14:01,556 --> 00:14:05,556
+ve vektör, vektör, imajenery.
+
+70
+00:14:13,716 --> 00:14:31,276
+So, for a complex number C, the conjugate of C is denoted by C bar and is equal to the A minus B i.
+
+71
+00:14:32,276 --> 00:14:37,276
+So, the conjugate of a complex number to find the...
+
+72
+00:14:37,524 --> 00:14:45,783
+If you want to find the conjugate of the complex number, you only change the sign of the imaginary part of the complex number.
+
+73
+00:14:45,783 --> 00:14:46,183
+Okay.
+
+74
+00:14:49,004 --> 00:14:49,644
+So.
+
+75
+00:14:55,892 --> 00:15:07,892
+Let us donate or let A be a complex matrix. It means that the entries of A
+
+76
+00:15:14,388 --> 00:15:17,168
+A-R, kompleks naps.
+
+77
+00:15:24,403 --> 00:15:40,804
+And let us denote the complex of the A by A-bar. And we obtain A-bar by taking each element, by taking the conjugate of each element in A.
+
+78
+00:15:40,804 --> 00:15:42,004
+Okay.
+
+79
+00:15:46,676 --> 00:16:01,096
+So, if a is aij, then a bar, or the conjugate of a, equals a bar, aij bar.
+
+80
+00:16:01,096 --> 00:16:02,116
+Okay?
+
+81
+00:16:09,427 --> 00:16:10,048
+Kamla!
+
+82
+00:16:16,692 --> 00:16:34,252
+I explain what is conjugate. Okay, conjugate is, if c is a complex number, a plus b i, then the conjugate
+
+83
+00:16:39,379 --> 00:16:49,100
+Then the conjugate of C is denoted by
+
+84
+00:16:52,500 --> 00:17:15,940
+C bar n is equal to the a minus bi. Okay. This is the conjugate of a complex number. And if a is a matrix with all complex entries, we say that a is a complex number, complex matrix. And
+
+85
+00:17:16,403 --> 00:17:33,804
+We denote the conjugate of the complex matris by a bar, and we obtain a bar by taking conjugate of each element in a. Okay.
+
+86
+00:17:42,355 --> 00:17:43,456
+Thank you, [öğrenci].
+
+87
+00:17:50,612 --> 00:18:15,612
+Now, we know that transposent conjugation commute. It means that the transpose of the conjugate of the matrix is equal to the conjugate of its transpose.
+
+88
+00:18:15,859 --> 00:18:19,179
+So, the transposent conjugation is commutative.
+
+89
+00:18:20,919 --> 00:18:25,639
+We will denote or show these two operations by
+
+90
+00:18:25,639 --> 00:18:34,819
+a to the h or a star.
+
+91
+00:18:37,559 --> 00:18:41,119
+So, a to the h or a star means
+
+92
+00:18:42,644 --> 00:18:53,644
+Take a conjugate of a complex matris and then take its transpose, or take first transpose and then take conjugate.
+
+93
+00:18:53,644 --> 00:18:54,316
+Okay.
+
+94
+00:19:08,627 --> 00:19:15,727
+For example, let us find A to the H or
+
+95
+00:19:20,403 --> 00:19:21,284
+Enstrash.
+
+96
+00:19:26,708 --> 00:19:30,540
+A to the edge of A star, Echos.
+
+97
+00:19:34,932 --> 00:19:44,391
+Transpose of the conjugate of the matrix or the conjugate of the transpose of the matrix.
+
+98
+00:19:44,391 --> 00:19:49,771
+So, let us first find the conjugate of this matrix, A bar.
+
+99
+00:19:53,875 --> 00:20:01,375
+We have to take the conjugate of, or we have to find the conjugate of each element in A.
+
+100
+00:20:02,076 --> 00:20:07,496
+So, what is the conjugate of 2 plus 8i?
+
+101
+00:20:08,635 --> 00:20:09,635
+Minus 8i.
+
+102
+00:20:10,415 --> 00:20:15,195
+Okay, we only change the sign of the imaginary part.
+
+103
+00:20:15,395 --> 00:20:16,975
+This is real part.
+
+104
+00:20:20,819 --> 00:20:23,819
+ve bu imaginary part.
+
+105
+00:20:25,819 --> 00:20:30,819
+Yani sadece signerini değiştirelim.
+
+106
+00:20:30,819 --> 00:20:35,819
+Bu, 2-8i.
+
+107
+00:20:35,819 --> 00:20:40,819
+Bu, 5 plus 3i,
+
+108
+00:20:40,819 --> 00:20:43,819
+4 plus 7i,
+
+109
+00:20:43,819 --> 00:20:45,819
+minus 6i.
+
+110
+00:20:46,932 --> 00:20:51,851
+1 plus 4i, 3 minus 2i.
+
+111
+00:20:52,412 --> 00:20:54,491
+This is the conjugate of a.
+
+112
+00:20:55,592 --> 00:20:58,072
+Çok ufak bir şey sorabilir miyim?
+
+113
+00:20:58,072 --> 00:20:58,231
+Tabii.
+
+114
+00:20:59,451 --> 00:21:07,632
+Burada a üzeri h dediğimiz, diye ifade ettiğimiz şey tam olarak kompleks matrisi mi ifade ediyor yoksa eşleniğini mi ifade ediyor?
+
+115
+00:21:08,112 --> 00:21:10,172
+Soran kimdi, ismin ne? Ben göremiyorum da.
+
+116
+00:21:10,271 --> 00:21:10,871
+Ata hocam.
+
+117
+00:21:11,392 --> 00:21:12,451
+Ata bak şurada.
+
+118
+00:21:14,451 --> 00:21:15,711
+Şu eşitliği görüyor musun?
+
+119
+00:21:16,112 --> 00:21:16,612
+Evet.
+
+120
+00:21:17,372 --> 00:21:20,112
+Bu eşitliği ne söylüyor sana? Sen kendi cevaplı da sordun soruyu.
+
+121
+00:21:20,251 --> 00:21:22,231
+A'nın eşleniğinin transpozu diyor.
+
+122
+00:21:22,592 --> 00:21:24,751
+Ve da A'nın transpozunun eşleniği diyor.
+
+123
+00:21:24,872 --> 00:21:29,152
+Evet. O zaman A'ya yıldız ya da A'nın eşleniğinin transpozuymuş.
+
+124
+00:21:29,451 --> 00:21:30,471
+Tamam. Tamam hocam.
+
+125
+00:21:30,471 --> 00:21:32,231
+Tamam. Teşekkür ederim.
+
+126
+00:21:32,592 --> 00:21:33,112
+Rica ederim.
+
+127
+00:21:33,352 --> 00:21:36,051
+Şimdi.
+
+128
+00:21:36,051 --> 00:21:40,912
+A'nın transpoz.
+
+129
+00:21:52,147 --> 00:21:54,147
+So, eşel ekos
+
+130
+00:21:58,291 --> 00:22:17,067
+A'ın A
+
+131
+00:22:22,291 --> 00:22:24,291
+vektör konuları,
+
+132
+00:22:31,667 --> 00:22:37,847
+And this matrix is H sub of A to H.
+
+133
+00:22:37,847 --> 00:22:39,447
+Okay.
+
+134
+00:22:43,604 --> 00:22:57,084
+And, a complex matris A is said to be hermitian if the transpose of its conjugate equals itself.
+
+135
+00:22:57,084 --> 00:23:10,963
+Or it means that if h star or a to the h equals a, then this matris is called hermitian.
+
+136
+00:23:12,211 --> 00:23:20,211
+Evet, evet.
+
+137
+00:23:20,211 --> 00:23:22,211
+Evet,
+
+138
+00:23:22,211 --> 00:23:35,692
+Evet.
+
+139
+00:24:06,740 --> 00:24:21,180
+Now, here it is stated, if the transpose of the conjugate of the matrix is equal to itself, then it is hermitian.
+
+140
+00:24:21,180 --> 00:24:25,340
+Now, A is a matrix like this.
+
+141
+00:24:29,831 --> 00:24:31,831
+Evet.
+
+142
+00:24:29,811 --> 00:24:35,531
+ve bu matriksin künjigreğinde bu matriksin künjigreğinde
+
+143
+00:24:40,211 --> 00:24:42,211
+Böyle bir şekilde.
+
+144
+00:24:42,211 --> 00:24:48,211
+Bu, her adı konjugatorun, ve o zaman, transposatorun.
+
+145
+00:24:48,211 --> 00:24:54,188
+Bu, bu, A11 bar.
+
+146
+00:25:28,051 --> 00:25:40,011
+[öğrenci], if there are no imaginary numbers, it means that this is a real number, and the conjugate of each real number equals to itself.
+
+147
+00:25:40,011 --> 00:25:40,731
+Okay.
+
+148
+00:25:43,132 --> 00:25:49,971
+So for real numbers, the conjugate and the number are the same.
+
+149
+00:25:50,551 --> 00:25:50,791
+Okay.
+
+150
+00:25:56,435 --> 00:26:12,635
+Now, we want a will be or a equal to a star.
+
+151
+00:26:22,451 --> 00:26:31,811
+A star, it means that, each entry, each corresponding entry,
+
+152
+00:26:37,332 --> 00:26:39,332
+will be equal.
+
+153
+00:26:39,332 --> 00:26:43,332
+First, look at the diagonal of each matrix.
+
+154
+00:26:51,380 --> 00:26:56,980
+Taking a transpose of a matrix, a square matrix, doesn't change the diagonal.
+
+155
+00:26:56,980 --> 00:27:18,100
+So, from these two matrices, A11 equals A11 conjugate, A1, sorry, A22 equals A22.
+
+156
+00:27:18,771 --> 00:27:21,931
+bar, bar, and so on.
+
+157
+00:27:21,931 --> 00:27:38,631
+So, for the diagonal of a Hermitian matrix, when we have this condition, if A11 equals, or when A11 equals A11 bar?
+
+158
+00:27:39,251 --> 00:27:47,851
+Or, when the conjugate of the method, the conjugate of the entry or the conjugate of a number equals itself.
+
+159
+00:27:49,231 --> 00:27:56,011
+[öğrenci] ask here. [öğrenci] ask me a question like this.
+
+160
+00:27:58,211 --> 00:28:05,531
+He asked me that if we have no imaginary part, then what is the conjugate of a number?
+
+161
+00:28:07,892 --> 00:28:11,292
+So, if you have a real number, no conjugate.
+
+162
+00:28:12,852 --> 00:28:21,932
+Okay, if you have a real number, then the conjugate of a number and itself are the same.
+
+163
+00:28:22,451 --> 00:28:29,491
+So, for a hermitian matrix, the entries on the main diagonal are all real numbers.
+
+164
+00:28:30,192 --> 00:28:34,072
+Okay, because A11 equals A11.
+
+165
+00:28:34,932 --> 00:28:36,932
+Konjugate.
+
+166
+00:28:36,932 --> 00:28:44,932
+It means that the conjugate and the numbers are same, so they have to be the real numbers.
+
+167
+00:28:44,932 --> 00:28:53,932
+So in the Hermitian matrix, the entries on the main diagonal are all real numbers.
+
+168
+00:28:53,932 --> 00:28:55,932
+This is the first condition.
+
+169
+00:28:55,932 --> 00:28:58,932
+These are all real numbers.
+
+170
+00:29:02,163 --> 00:29:06,163
+ve diğer adırlarımızda,
+
+171
+00:29:10,036 --> 00:29:19,036
+Aij equals the conjugate of Aji.
+
+172
+00:29:19,036 --> 00:29:21,036
+Okay.
+
+173
+00:29:21,036 --> 00:29:29,036
+So, these two conditions are for hermitian matrices.
+
+174
+00:29:40,468 --> 00:29:50,268
+A star equals minus A, then we say that this matrix is skew-hermitian.
+
+175
+00:29:51,268 --> 00:30:07,588
+Okay, so for skew-hermitian matrix, we have A star equals minus A, so we have minus or
+
+176
+00:30:08,564 --> 00:30:12,723
+Negatives from each entry.
+
+177
+00:30:21,140 --> 00:30:23,140
+Tamam, izahettin.
+
+178
+00:30:24,340 --> 00:30:26,340
+Bu ne? 55.
+
+179
+00:30:27,240 --> 00:30:28,240
+Tamam.
+
+180
+00:30:28,240 --> 00:30:30,240
+Bu ne?
+
+181
+00:30:30,240 --> 00:30:31,640
+54.
+
+182
+00:30:31,640 --> 00:30:33,640
+Bu ne?
+
+183
+00:30:34,740 --> 00:30:36,240
+Hayır.
+
+184
+00:30:36,240 --> 00:30:37,240
+Evet, bu ne?
+
+185
+00:30:37,240 --> 00:30:38,240
+Bir dakika.
+
+186
+00:30:38,240 --> 00:30:39,240
+Tamam.
+
+187
+00:30:51,508 --> 00:30:54,387
+Ok, thank you sir, that's it. Just take a screenshot.
+
+188
+00:30:56,087 --> 00:30:56,447
+Ok.
+
+189
+00:30:58,447 --> 00:30:59,268
+Yeah, ok.
+
+190
+00:31:03,700 --> 00:31:11,379
+If A star equals minus A, then we see that the matrix A is skew hermitian.
+
+191
+00:31:12,019 --> 00:31:17,740
+So we have all negative entries from here.
+
+192
+00:31:18,740 --> 00:31:28,779
+So for skew hermitian matris, we have also some conditions, or we can get some conditions.
+
+193
+00:31:31,539 --> 00:31:32,360
+Like this.
+
+194
+00:31:39,412 --> 00:31:54,731
+For the main diagonal of a and a star, we have a11 equals minus a11 conjugate, a2 equals minus a2 conjugate and so on.
+
+195
+00:31:54,731 --> 00:32:02,092
+So, what is the condition to be a11 equals minus a11 conjugate?
+
+196
+00:32:05,779 --> 00:32:12,860
+What can be aii to satisfy this condition? Zero, okay, and?
+
+197
+00:32:13,960 --> 00:32:17,480
+When it's just imaginary or just real number?
+
+198
+00:32:18,200 --> 00:32:22,360
+No, just imaginary or just zero.
+
+199
+00:32:23,480 --> 00:32:30,220
+So to satisfy this condition, the entries on the main diagonal are all
+
+200
+00:32:32,180 --> 00:32:37,500
+0 for, a complex number,
+
+201
+00:32:41,619 --> 00:32:49,460
+Comptex numbers with only imaginary part.
+
+202
+00:32:49,460 --> 00:32:50,460
+Okay.
+
+203
+00:32:50,460 --> 00:32:54,619
+Please sir, imaginary or real number?
+
+204
+00:32:54,619 --> 00:33:07,859
+Only imaginary part, because, for example, if A11 is i, this is a Comptex number with only the imaginary part, then
+
+205
+00:33:15,667 --> 00:33:43,027
+minus 1, minus i, sorry. So, a11 equals minus a11y, okay? And if these are all 0, then 0 equals minus 0. So, it's also a satisfied condition. And the others, for the other entries, we have a,
+
+206
+00:33:43,471 --> 00:33:49,471
+Ij equals minus Aj i kınşgir.
+
+207
+00:33:50,111 --> 00:33:59,631
+Okay, or for the hermitian matrisis, we have these two conditions and for the hermitian we have also
+
+208
+00:34:00,831 --> 00:34:07,403
+two conditions. And this matrisis are also X-Pian matrisis.
+
+209
+00:34:07,731 --> 00:34:16,791
+I think we said that main digonal entries are all real parts of the complex number.
+
+210
+00:34:17,532 --> 00:34:18,291
+We just said that.
+
+211
+00:34:18,951 --> 00:34:21,391
+For the skip hamletian or for the hamletian?
+
+212
+00:34:22,051 --> 00:34:23,231
+For the hamletian.
+
+213
+00:34:24,251 --> 00:34:32,572
+For the hamletian, we said that the entries on the main digonal have to be all real numbers.
+
+214
+00:34:33,152 --> 00:34:33,371
+Okay.
+
+215
+00:34:34,739 --> 00:34:37,739
+ve
+
+216
+00:34:37,739 --> 00:34:38,739
+anteres
+
+217
+00:34:38,739 --> 00:34:39,739
+main diagonal
+
+218
+00:34:39,739 --> 00:34:41,739
+can
+
+219
+00:34:41,739 --> 00:34:42,739
+0
+
+220
+00:34:42,739 --> 00:34:43,739
+or
+
+221
+00:34:43,739 --> 00:34:44,739
+a complex number
+
+222
+00:34:44,739 --> 00:34:46,739
+with only imaginary part
+
+223
+00:34:46,739 --> 00:34:49,739
+When do we say that?
+
+224
+00:34:49,739 --> 00:34:50,739
+Sorry?
+
+225
+00:34:50,739 --> 00:34:52,739
+When do we say that
+
+226
+00:34:52,739 --> 00:34:53,739
+imaginary part
+
+227
+00:34:53,739 --> 00:34:56,739
+When a matrix is a secure hermitine
+
+228
+00:34:58,612 --> 00:34:59,612
+Sen...
+
+229
+00:34:59,612 --> 00:35:01,612
+Secure.
+
+230
+00:35:01,612 --> 00:35:02,612
+We have...
+
+231
+00:35:02,612 --> 00:35:04,612
+Teers.
+
+232
+00:35:04,612 --> 00:35:06,612
+I understand.
+
+233
+00:35:06,612 --> 00:35:07,612
+Thank you.
+
+234
+00:35:07,612 --> 00:35:08,612
+Teers.
+
+235
+00:35:08,612 --> 00:35:08,844
+Ok.
+
+236
+00:35:13,088 --> 00:35:14,251
+Sıkıya.
+
+237
+00:35:12,820 --> 00:35:14,251
+vekiket,
+
+238
+00:35:17,923 --> 00:35:21,420
+Sıkıya.
+
+239
+00:35:17,588 --> 00:35:20,967
+It is written here also, von Flori.
+
+240
+00:35:27,384 --> 00:35:29,384
+Sıkıya.
+
+241
+00:35:27,380 --> 00:35:27,780
+Ok.
+
+242
+00:35:37,083 --> 00:35:47,083
+Sıkıya.
+
+243
+00:35:36,467 --> 00:35:44,627
+And the last definition for context matris is the unitary matrix.
+
+244
+00:35:46,947 --> 00:35:58,307
+If you multiply a matrix with its star, then you have identi matrix, then it's called the unitary matrix.
+
+245
+00:35:59,731 --> 00:36:10,211
+A star finds, if A star finds A equals to identity matrix, then we say that this is a punitive matrix.
+
+246
+00:36:11,412 --> 00:36:24,291
+For example, here, for the matrix A, this is a complex matrix because we have some
+
+247
+00:36:25,119 --> 00:36:26,119
+Secure.
+
+248
+00:36:24,851 --> 00:37:10,219
+Bu, bu
+
+249
+00:37:16,148 --> 00:37:18,827
+Art, or, real.
+
+250
+00:37:25,588 --> 00:37:35,588
+This is A2 1 equals A2 1 equals A2 1.
+
+251
+00:37:39,411 --> 00:37:41,731
+1, 2, conjugate.
+
+252
+00:37:43,011 --> 00:37:53,971
+And the other side also the conjugates, 4 minus 7i, sorry, the conjugate of 4 minus 7i is here.
+
+253
+00:37:54,851 --> 00:37:58,371
+And also these are conjugates.
+
+254
+00:37:59,171 --> 00:38:04,291
+So for all i and j, we have aij equals.
+
+255
+00:38:06,164 --> 00:38:12,164
+Aji, Kringgate. So this matrix is, what is this matrix?
+
+256
+00:38:15,044 --> 00:38:15,764
+Hermitian.
+
+257
+00:38:19,764 --> 00:38:21,604
+So this is Hermitian.
+
+258
+00:38:24,164 --> 00:38:30,963
+And this is homework for you. Please multiply D by
+
+259
+00:38:34,739 --> 00:38:48,299
+B star, and get to identity matrix, no, no, bana. Then B is unitary matrix.
+
+260
+00:38:57,715 --> 00:38:58,016
+Ok?
+
+261
+00:39:02,996 --> 00:39:12,996
+Okay, [öğrenci] asked me, B is Y, skill hamletin, right, [öğrenci]?
+
+262
+00:39:15,996 --> 00:39:20,996
+Okay, for the matris to be a skill hamletin,
+
+263
+00:39:22,996 --> 00:39:24,996
+for entries on the main diagonal,
+
+264
+00:39:29,300 --> 00:39:34,380
+0, or a complex number with only imaginary part.
+
+265
+00:39:34,840 --> 00:39:38,180
+Okay, we have a 0, but there is a real number.
+
+266
+00:39:38,480 --> 00:39:39,060
+Real number.
+
+267
+00:39:39,960 --> 00:39:40,239
+Okay.
+
+268
+00:39:49,076 --> 00:39:56,836
+And for a hemity, maybe it can be a hemity matrix, because the entries on the main diagonal are all real numbers.
+
+269
+00:39:58,195 --> 00:40:06,675
+Okay, it satisfies the first condition. And the other one, this is i, this is minus i, okay, these are conjugate.
+
+270
+00:40:09,395 --> 00:40:14,275
+This is also a satisfactory condition, but for this, this is one plus i.
+
+271
+00:40:15,284 --> 00:40:23,284
+Bu konjugator, ters matris, ters matris, ters matris.
+
+272
+00:40:38,387 --> 00:40:47,268
+Ok, we finished some special sker matrisis.
+
+273
+00:40:50,228 --> 00:40:52,547
+Do you have any questions about this part?
+
+274
+00:40:57,427 --> 00:41:00,787
+I continue with the echelon form of matris.
+
+275
+00:41:01,108 --> 00:41:01,827
+Sorry, sorry.
+
+276
+00:41:02,835 --> 00:41:09,275
+Can you repeat the first part of this lecture before the complex matrices?
+
+277
+00:41:09,275 --> 00:41:12,875
+No, no, because, because, because we have no time.
+
+278
+00:41:13,355 --> 00:41:15,955
+Okay, no problem. I will rewatch the video.
+
+279
+00:41:15,955 --> 00:41:17,215
+Please, please. Okay.
+
+280
+00:41:20,295 --> 00:41:29,576
+We have a very restricted time, so we have to continue with that new topic.
+
+281
+00:41:31,251 --> 00:41:57,771
+Echelon form, matris, didn't get the homework, which one? I said that please compute if B is a unitary or not. Your homework is, please check that. No, no, I said that, come on, please check that.
+
+282
+00:41:58,771 --> 00:42:10,251
+Matris B, here, matris B, show that B is,
+
+283
+00:42:16,724 --> 00:42:36,043
+United. Okay. So, you have to show that the transpose of the conjugate of B multiplied by B equals 3 by 3 identity matrix. Okay.
+
+284
+00:42:45,811 --> 00:42:55,872
+Evet arkadaşlar, çocukları ben de çok severim de, sesleri gelince, yani görünmeyince şey oluyor, sadece sesleriyle.
+
+285
+00:42:57,992 --> 00:43:06,692
+Şimdiden bulalım kim olduğunu buradan. Bulalım peki, yani nelerle uğraşıyoruz arkadaşlar. Kimin açık, [öğrenci]'nin mi açık?
+
+286
+00:43:07,751 --> 00:43:08,952
+Kapattı hocam az önce.
+
+287
+00:43:09,011 --> 00:43:10,112
+Kapattım peki.
+
+288
+00:43:11,632 --> 00:43:12,291
+Tamam [öğrenci].
+
+289
+00:43:14,260 --> 00:43:19,340
+Ok, we will talk about now the issue of mathematics.
+
+290
+00:43:26,291 --> 00:43:28,532
+Först, först.
+
+291
+00:43:45,364 --> 00:43:53,844
+We define the radius row echelon form, or what's the row echelon form, or radius row echelon form of the matris.
+
+292
+00:43:55,844 --> 00:44:07,043
+We can briefly write this, RR, E, F, but I don't use this brief.
+
+293
+00:44:08,019 --> 00:44:11,019
+I only write video slow-resuval form.
+
+294
+00:44:11,019 --> 00:44:12,019
+Okay.
+
+295
+00:44:12,019 --> 00:44:16,019
+We have a matrix, m by hand matrix A.
+
+296
+00:44:26,996 --> 00:44:39,956
+If this matrix satisfies these four conditions, then we say that this is in reduced row echelon form.
+
+297
+00:44:40,756 --> 00:44:49,932
+Okay, so what is the first condition? All zero rows, if there are any.
+
+298
+00:44:50,643 --> 00:44:57,643
+Çünkü, bu noktör uzayları,
+
+299
+00:44:57,643 --> 00:45:01,643
+vektör uzayları, bu noktör uzayları,
+
+300
+00:45:01,643 --> 00:45:05,643
+bu noktör uzayları, bu noktör uzayları,
+
+301
+00:45:05,643 --> 00:45:06,507
+ok.
+
+302
+00:45:11,443 --> 00:45:20,963
+And the second condition, the first non-zero entry, from the left of a non-zero row, is a 1.
+
+303
+00:45:22,583 --> 00:45:27,403
+And we say that this entry is a leaving one.
+
+304
+00:45:32,340 --> 00:45:47,539
+Bu, each non-zero role, the leading one, that is one, occurs to the right and below any leading ones in preceding roles.
+
+305
+00:45:47,539 --> 00:45:57,539
+It means that if you have a one in this role, then the other leading one or the other one appears at the
+
+306
+00:45:59,059 --> 00:46:12,859
+right below of this. So we have one here and we have one at the right below of the present one.
+
+307
+00:46:15,000 --> 00:46:20,300
+So it's like a staircase.
+
+308
+00:46:27,284 --> 00:46:32,224
+Eshelon, eshelon means steatist.
+
+309
+00:46:38,771 --> 00:47:03,771
+Okay. And the third, no, and the last one, if a column contains a linic one, if a column contains one, then all other entries in this column are zero. So we have zero, zero here, and there's a linic one here, so zero, zero here.
+
+310
+00:47:04,340 --> 00:47:08,340
+Bu, bu, bu, 0, 0.
+
+311
+00:47:08,340 --> 00:47:22,340
+So, if a matrix, if an n by n matrix A, subspires all these four conditions, then we see that this is reduced, this is in the reduced row eşelon form.
+
+312
+00:47:22,340 --> 00:47:24,340
+Okay.
+
+313
+00:47:24,340 --> 00:47:27,340
+And, and.
+
+314
+00:47:29,364 --> 00:47:39,764
+We say that the matris in reduced row vizional form appears as a staircase, because we have one, one, one.
+
+315
+00:47:41,523 --> 00:47:55,204
+So this is like a staircase. Merdiven arkadaşlar, merdiven. Echelon, tatum of leading ones, scanning from the upper to the left corner of the matris.
+
+316
+00:48:01,523 --> 00:48:12,983
+If a matrix, m by m matrix, satisfies on the first third condition, then we say this is in the raw echelon form.
+
+317
+00:48:12,983 --> 00:48:29,124
+So, a matrix in the raw echelon form, it is not to be, or not, what is the condition for? Condition form says,
+
+318
+00:48:29,519 --> 00:48:34,559
+If a column contains a lineer one, then both other entries in that column are zero.
+
+319
+00:48:35,519 --> 00:48:44,000
+So, for a reduced row echelon form, we have all zeros on the columns, which includes the lineer ones.
+
+320
+00:48:45,599 --> 00:48:54,640
+In row echelon form, we have again the lineer ones.
+
+321
+00:49:06,516 --> 00:49:28,516
+But we have numbers above the leading ones like this. We have examples and we will take into a matrix in raw eşelon form and also reduce raw eşelon form.
+
+322
+00:49:34,675 --> 00:49:59,175
+We can also define the reduced column echelon form or column echelon form of a matris, but please, please don't use this column operations or now we will give some operations to a matris.
+
+323
+00:50:00,000 --> 00:50:18,000
+İlk olarak, we usually use radius row echelon form, or radius row echelon form, not column.
+
+324
+00:50:18,000 --> 00:50:18,956
+OK.
+
+325
+00:50:26,324 --> 00:50:27,603
+What do you mean? [öğrenci].
+
+326
+00:50:30,804 --> 00:50:37,684
+Another number? We have examples now. Okay. Let's look at these examples.
+
+327
+00:50:43,251 --> 00:51:09,572
+A, B, C are matrisi in reduced row eşelon form. Why? Because I look at for the matrix A, there is no zero row. And the first non-zero entry from the left of a non-zero row, this is non-zero row.
+
+328
+00:51:10,228 --> 00:51:22,228
+ve ilk nansura entry 1
+
+329
+00:51:22,228 --> 00:51:24,228
+1
+
+330
+00:51:24,228 --> 00:51:26,228
+ve
+
+331
+00:51:26,228 --> 00:51:28,228
+lindik ones
+
+332
+00:51:37,427 --> 00:51:44,427
+ve
+
+333
+00:52:08,532 --> 00:52:15,532
+Ve bu bölümde, bir bölümde, bir bölümde, bir bölümde.
+
+334
+00:52:15,532 --> 00:52:18,532
+Ve bir bölümde.
+
+335
+00:52:18,532 --> 00:52:25,532
+Ve bir bölümde, bir bölümde, bir bölümde, bir bölümde.
+
+336
+00:52:25,532 --> 00:52:35,532
+Bir bölümde, bir bölümde, bir bölümde.
+
+337
+00:52:42,547 --> 00:52:50,307
+We will finish the lecture at 23. Ok. Sal kan.
+
+338
+00:52:52,307 --> 00:53:02,107
+And the first column includes the leading one, so all other entries are zero.
+
+339
+00:53:03,788 --> 00:53:08,628
+The second column does not include the leading one.
+
+340
+00:53:09,300 --> 00:53:19,980
+ve 3'e 3'e 3'e 3'e 4'e
+
+341
+00:53:28,947 --> 00:53:29,927
+Another example.
+
+342
+00:53:42,036 --> 00:53:49,356
+Ne bu, bu matrisi? Bu matrisi in reduced row eşelon form, ne?
+
+343
+00:53:59,219 --> 00:54:05,219
+D'ye soruyor.
+
+344
+00:54:05,219 --> 00:54:07,219
+Evet, evet.
+
+345
+00:54:07,219 --> 00:54:11,219
+D'ye soruyor.
+
+346
+00:54:11,219 --> 00:54:15,219
+Çünkü, 3'ye soruyor.
+
+347
+00:54:15,219 --> 00:54:17,219
+Ve diğer soruyor.
+
+348
+00:54:17,219 --> 00:54:19,219
+Bu soruyor.
+
+349
+00:54:19,219 --> 00:54:23,219
+D'ye soruyor.
+
+350
+00:54:23,219 --> 00:54:25,219
+Çünkü, 0'ye soruyor.
+
+351
+00:54:27,911 --> 00:54:29,911
+D'ye?
+
+352
+00:54:27,059 --> 00:54:28,480
+On the second floor.
+
+353
+00:54:30,400 --> 00:54:31,099
+Hmm, okay.
+
+354
+00:54:31,299 --> 00:54:45,539
+Because we say that in condition 2, if a matris incuses 0 rows, then these rows have to be appeared at the bottom of matris.
+
+355
+00:54:45,819 --> 00:54:46,059
+Okay.
+
+356
+00:54:47,599 --> 00:54:50,839
+And for E, for E.
+
+357
+00:54:54,260 --> 00:54:57,260
+Bu bir şey değil.
+
+358
+00:54:57,260 --> 00:54:59,260
+Evet, 2'ye problemi.
+
+359
+00:54:59,260 --> 00:55:03,260
+Çünkü ilk bölümde,
+
+360
+00:55:03,260 --> 00:55:07,260
+ilk nonseron entry 1.
+
+361
+00:55:07,260 --> 00:55:09,260
+Ama ikinci bölümde 2,
+
+362
+00:55:09,260 --> 00:55:10,260
+değil 1.
+
+363
+00:55:10,260 --> 00:55:12,260
+Ve ikinci bölümde,
+
+364
+00:55:12,260 --> 00:55:14,260
+ilk nonseron entry
+
+365
+00:55:14,260 --> 00:55:16,260
+değil 1.
+
+366
+00:55:16,260 --> 00:55:18,260
+Bu bir şey değil.
+
+367
+00:55:18,260 --> 00:55:20,260
+Ve f'i'nin
+
+368
+00:55:24,275 --> 00:55:26,275
+Bu bir şey, bir şey yok.
+
+369
+00:55:26,275 --> 00:55:28,275
+Bu bir şey yok.
+
+370
+00:55:28,275 --> 00:55:30,275
+Bir şey yok.
+
+371
+00:55:30,275 --> 00:55:32,275
+Ve bu bir şey yok.
+
+372
+00:55:32,275 --> 00:55:34,275
+Bu bir şey yok.
+
+373
+00:55:34,275 --> 00:55:50,275
+Bir şey yok.
+
+374
+00:55:51,699 --> 00:56:12,203
+ve yine, F ve G ile bir yi
+
+375
+00:56:18,708 --> 00:56:22,067
+This mat sits as in raw eşelon form.
+
+376
+00:56:31,251 --> 00:56:31,811
+Möğle.
+
+377
+00:56:37,492 --> 00:56:55,891
+We show that we can put into a matrix in reduced row-eşelon form or row-eşelon form by using certain row-or-column operations.
+
+378
+00:56:55,891 --> 00:56:57,492
+And we...
+
+379
+00:56:57,811 --> 00:57:05,471
+Say that these operations as elemental rope or column operations.
+
+380
+00:57:10,612 --> 00:57:29,992
+[öğrenci], we don't have a break. Okay. We have a little time. So, in this lecture, we have 1 hour and 30 minutes full, then no break. Okay.
+
+381
+00:57:39,827 --> 00:57:40,487
+Fold.
+
+382
+00:57:45,427 --> 00:58:04,427
+If G is not eşelonu form, why is H? Which one? This one? These are not reduced of eşelonu form, [öğrenci]. This is in row eşelonu form, not reduced. Okay?
+
+383
+00:58:07,860 --> 00:58:11,240
+This satisfies A, B, and C.
+
+384
+00:58:11,980 --> 00:58:12,280
+Okay.
+
+385
+00:58:17,556 --> 00:58:24,956
+Şimdi, we will talk about elemental role or column operations.
+
+386
+00:58:39,539 --> 00:58:48,039
+[öğrenci], G, bak burada 1 var, reading 1 var, bunun bulunduğu üstündeki bütün elemanlar 0 olmadı.
+
+387
+00:58:48,500 --> 00:58:55,740
+Üstünde 2 var, bu 0 olmadığı için, Reduce Row eşelon formunda değil. Tamam mı?
+
+388
+00:58:57,760 --> 00:58:59,680
+Sağ olun [öğrenci]. [öğrenci] de söyledi.
+
+389
+00:59:04,628 --> 00:59:28,907
+Now, we can show that every matris can be put into a row or column echelon form, or introduced row echelon form, line use of the certain row operations. You can also use column operations, but
+
+390
+00:59:30,996 --> 00:59:48,876
+I don't recommend to use column operations. We generally use row operations. Okay. So, if you use column operations, it can sound complicated.
+
+391
+00:59:55,315 --> 01:00:05,715
+An elementary row, or column, operation on a matrix A is any of the following operations.
+
+392
+01:00:08,195 --> 01:00:20,516
+We have three types of these operations. Type 1, you can in time change any tools of a matrix or columns.
+
+393
+01:00:23,380 --> 01:00:43,380
+Then we will show this if you interchange any two rows of a matrix, then we will show this as Ri interchange by Rj.
+
+394
+01:00:43,380 --> 01:00:51,276
+If you interchange the i and jt row of a matrix, then we will show it like this.
+
+395
+01:00:51,795 --> 01:01:06,195
+Ok? Or if you interchange any two columns, then you show it by Ci interchange by Cj.
+
+396
+01:01:08,195 --> 01:01:12,795
+And you can multiply a row or a column by a non-zero number.
+
+397
+01:01:13,795 --> 01:01:15,195
+If you multiply...
+
+398
+01:01:17,364 --> 01:01:22,244
+The right row by the scalar k, then you show this.
+
+399
+01:01:26,963 --> 01:01:27,423
+Bye.
+
+400
+01:01:32,148 --> 01:01:42,148
+You replace the i't row by the k multiple of this row. Ok?
+
+401
+01:01:42,148 --> 01:01:58,148
+And type 3, you can add a multiple of one row to another. It means that you can multiply the i't row
+
+402
+01:01:59,315 --> 01:02:06,115
+A scatör, and add it to the j-roll.
+
+403
+01:02:10,483 --> 01:02:20,983
+You can multiply the ipro, place here, and add it to another row, or count.
+
+404
+01:02:20,983 --> 01:02:22,483
+Okay.
+
+405
+01:02:29,715 --> 01:02:30,576
+For example,
+
+406
+01:02:36,115 --> 01:02:37,416
+Bu, metriks A.
+
+407
+01:02:43,380 --> 01:02:49,119
+İntekler, yol 1 ve 3 ve 8.
+
+408
+01:03:01,619 --> 01:03:10,619
+Rho 1 ve Rho 3
+
+409
+01:03:10,619 --> 01:03:19,619
+Rho 1 ile Rho 3
+
+410
+01:03:35,572 --> 01:03:41,072
+İntar, change, the third and the first load, so we head.
+
+411
+01:04:02,708 --> 01:04:04,807
+So, this is the matrix B.
+
+412
+01:04:11,284 --> 01:04:17,603
+[öğrenci], we are not talking about the eşelon matrix, now. This is not in the eşelon form.
+
+413
+01:04:19,764 --> 01:04:28,083
+Okay, now we are talking about elementary row operations. Yeah, I see. This is not in the eşelon form. Okay.
+
+414
+01:04:31,123 --> 01:04:36,804
+Now, we use these elementary row operations.
+
+415
+01:04:37,268 --> 01:05:03,052
+Bu bir metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve bu metikselin ve
+
+416
+01:05:05,588 --> 01:05:08,048
+Or, again for A,
+
+417
+01:05:13,588 --> 01:05:14,728
+Matipayin,
+
+418
+01:05:16,228 --> 01:05:17,288
+Tö, çö, çö.
+
+419
+01:05:21,844 --> 01:05:34,344
+Rho of A by 1 over 3, or 1 to 3, winner, matris t.
+
+420
+01:05:38,068 --> 01:05:43,668
+We multiply the third row by 1 over 3.
+
+421
+01:06:04,340 --> 01:06:13,220
+We multiply this row by 1 over 3, so it is 1, 1, 2, minus 3.
+
+422
+01:06:18,291 --> 01:06:21,071
+And finally,
+
+423
+01:06:25,811 --> 01:06:27,632
+Elink.
+
+424
+01:06:31,668 --> 01:06:33,307
+Minus 2 times
+
+425
+01:06:39,443 --> 01:06:41,443
+Row of a
+
+426
+01:06:43,843 --> 01:06:45,843
+Row, which row
+
+427
+01:06:47,843 --> 01:06:48,843
+Row 2
+
+428
+01:06:50,963 --> 01:06:52,963
+Row 2 of a
+
+429
+01:06:53,523 --> 01:06:54,323
+A
+
+430
+01:06:57,748 --> 01:07:15,748
+So, row 3 of A, we have a matrix D, so a matrix D equals u multiply the second row of A.
+
+431
+01:07:19,380 --> 01:07:25,760
+8 by minus 2, and add it to the third row.
+
+432
+01:07:34,291 --> 01:07:38,291
+İlk olarak, ilk olarak bir şey değiştirecek.
+
+433
+01:07:38,291 --> 01:07:43,291
+Bu, bu, 0, 0, 1, 2.
+
+434
+01:07:43,291 --> 01:07:56,291
+Ve bu, 2, 3, 0, 2.
+
+435
+01:07:56,291 --> 01:08:01,003
+Ve bu, 3, 2, 3, 2.
+
+436
+01:08:01,523 --> 01:08:15,184
+So, we have minus 4 plus 3, 1, minus 6 plus 3, minus 3, 0, 6.
+
+437
+01:08:20,564 --> 01:08:23,884
+4, minus 9, minus
+
+438
+01:08:29,492 --> 01:08:35,492
+bu bir şey?
+
+439
+01:08:35,492 --> 01:08:37,492
+evet evet
+
+440
+01:08:37,492 --> 01:08:38,315
+evet evet evet
+
+441
+01:08:43,956 --> 01:08:47,235
+And these are the examples of the elemental role operations.
+
+442
+01:08:57,684 --> 01:09:15,684
+In the moment, we say that the matrix is equivalent to another matrix, if one can be obtained from another by applying a finite sequence of elementar rule or column operations.
+
+443
+01:09:21,716 --> 01:09:39,036
+using the elemental rule operations, we obtain D from A. So D is raw equivalent to A, and sometimes we show it or denote it by this example.
+
+444
+01:09:41,876 --> 01:09:47,076
+D is equivalent to A, or this is not DNA.
+
+445
+01:09:50,676 --> 01:09:55,836
+A is equivalent to D.
+
+446
+01:09:56,836 --> 01:10:10,156
+So, if you obtain a matris from another matris by using a final sequence of an elementary row or column operations,
+
+447
+01:10:10,156 --> 01:10:14,316
+then we say that these two matris are equivalent.
+
+448
+01:10:16,435 --> 01:10:17,275
+For example,
+
+449
+01:10:22,868 --> 01:10:24,620
+vektör uzayları,
+
+450
+01:10:28,851 --> 01:10:52,851
+matris a, if you multiply the third row by two and add it to the second row, multiply this row by two and add it to the second row, we have four minus three four seven six eight.
+
+451
+01:10:53,395 --> 01:10:58,415
+So, we have matrix B. So, B is row equivalent to A.
+
+452
+01:11:06,484 --> 01:11:15,824
+If you multiply the first row of B, sorry B is here, by 2, then you will have the matrix C.
+
+453
+01:11:17,004 --> 01:11:20,504
+So the matrix C is equivalent to, row equivalent to matrix B.
+
+454
+01:11:20,504 --> 01:11:30,923
+And also, we can also say that the matrix C is row equivalent to A.
+
+455
+01:11:34,387 --> 01:11:34,747
+Ok?
+
+456
+01:11:52,851 --> 01:12:12,631
+Now, we can say that for a non-zero, every non-zero m by m matrix A, we can find its row echelon form or reduced row echelon form.
+
+457
+01:12:17,971 --> 01:12:23,431
+is row equivalent to a matrix in row eşelon form.
+
+458
+01:12:24,271 --> 01:12:41,691
+It means that you can put into, you can put into every non-zero m by m matrix into a row eşelon form by means of the elemental row operations.
+
+459
+01:12:45,363 --> 01:12:50,187
+ve bu bölümde bölüm
+
+460
+01:12:56,340 --> 01:13:12,260
+Okay, now we give a method for using a reduced row echelon form of a matrix.
+
+461
+01:13:31,028 --> 01:13:37,188
+In any matrix, the first column with a non-zero entry is called the pure column.
+
+462
+01:13:40,627 --> 01:13:45,007
+ve ilk manzula entry, in the pivot column, is called pivot.
+
+463
+01:13:45,007 --> 01:13:56,807
+So, we use the pivot columns and the pivot to take into a matrix in reduced row echelon form of OR in row echelon form.
+
+464
+01:13:58,268 --> 01:14:01,195
+So, for this matrix...
+
+465
+01:14:06,612 --> 01:14:15,492
+Bu metriksiyonu, ilk nonserol kolum
+
+466
+01:14:15,492 --> 01:14:17,452
+Bu ilk kolum
+
+467
+01:14:21,171 --> 01:14:22,923
+vektör
+
+468
+01:14:29,268 --> 01:14:36,268
+ve ilk nonsura entry, bu pivote column, bu pivote column.
+
+469
+01:14:45,811 --> 01:14:46,431
+Aşk!
+
+470
+01:14:51,956 --> 01:14:52,515
+Slurin.
+
+471
+01:15:30,644 --> 01:15:50,860
+Bu bir
+
+472
+01:15:58,195 --> 01:16:06,916
+Now, for the matrix A, we will find its row echelon form and reduced row echelon form.
+
+473
+01:16:19,891 --> 01:16:24,108
+Bu metikleri için
+
+474
+01:16:45,652 --> 01:16:54,231
+Bu form, like this for, radius, flow, eşelon form.
+
+475
+01:16:57,587 --> 01:17:11,347
+Actually, for this example, for this example, we find the pivot column, the first column and the pivot is full.
+
+476
+01:17:12,567 --> 01:17:25,228
+But it is easy to find the reduced row eşelon form for making the first non-referent entry of the eşelon,
+
+477
+01:17:26,068 --> 01:17:53,324
+Bu, bu 1'e 1
+
+478
+01:17:53,492 --> 01:17:59,492
+Pivot must be on the first row, for this we...
+
+479
+01:18:01,492 --> 01:18:02,492
+We...
+
+480
+01:18:06,163 --> 01:18:15,163
+There is another method we are using here, but we use this method. So we changed the...
+
+481
+01:18:21,747 --> 01:18:27,659
+İntroda ilk bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey ile de bir şey
+
+482
+01:18:33,971 --> 01:18:37,451
+So, your hand, sorry, sorry, this is A.
+
+483
+01:18:43,923 --> 01:18:44,844
+So you have
+
+484
+01:19:02,163 --> 01:19:28,463
+Actually, here, we have to use the cubit, but it is easy to use 3 or the third row here, because if you write this row to the third row, or if you interchange the first row by the third row, you have the matrix like this.
+
+485
+01:19:29,587 --> 01:19:31,788
+So, look at here.
+
+486
+01:19:34,847 --> 01:19:37,247
+0, 0, and leaning 1.
+
+487
+01:19:37,807 --> 01:19:53,847
+And also, if you multiply the first row by 1 over 3, that would be 1, 1, 3, minus 3.
+
+488
+01:19:54,260 --> 01:19:58,260
+Bu nedenle, bir tane var.
+
+489
+01:19:58,260 --> 01:20:00,260
+Tamam.
+
+490
+01:20:04,659 --> 01:20:05,159
+Bu?
+
+491
+01:20:08,884 --> 01:20:10,683
+Evet [öğrenci], mikrofonun açıkmış.
+
+492
+01:20:19,923 --> 01:20:26,363
+We want to get, or we want to put this matris in raw echelon form, or radius raw echelon form.
+
+493
+01:20:30,195 --> 01:20:38,195
+Örneğin, ilk ve 3.0'a bu metriksiyonu.
+
+494
+01:20:38,195 --> 01:20:39,195
+Ok.
+
+495
+01:20:39,195 --> 01:20:41,195
+Bu, bu, bu, bu, bu.
+
+496
+01:20:57,076 --> 01:21:01,076
+Bu bir tane bir tane yapıyoruz.
+
+497
+01:21:01,076 --> 01:21:04,076
+İlk bir tane yapıyoruz.
+
+498
+01:21:09,652 --> 01:21:36,931
+B x B by 1 over 2, 3 sorry, so it gives 1, 1, 2, minus 3, 2, 3, 0, minus 2, 0, 0, 1.
+
+499
+01:21:37,587 --> 01:21:50,868
+So, then, using the leading one, you make the entries on this column zero.
+
+500
+01:21:50,868 --> 01:21:51,707
+So,
+
+501
+01:21:57,652 --> 01:22:07,591
+We multiply the first row by minus two and h to the second row.
+
+502
+01:22:07,591 --> 01:22:25,031
+So, d equals, we multiply the first row of c by minus two and h to the second row.
+
+503
+01:22:25,684 --> 01:22:26,583
+Sem mutlum.
+
+504
+01:22:28,404 --> 01:22:29,676
+Which is...
+
+505
+01:22:32,756 --> 01:22:56,940
+1 ve 1
+
+506
+01:23:02,387 --> 01:23:15,847
+Now, for the second row, we have again, the first non-zero entry from the left is 1, which is leading 1.
+
+507
+01:23:15,847 --> 01:23:26,448
+So, we have to make all other entries in this column to be 0. This is 0. So, we have to make this one 0.
+
+508
+01:23:28,448 --> 01:23:29,007
+How?
+
+509
+01:23:30,163 --> 01:23:30,703
+Storii.
+
+510
+01:23:36,020 --> 01:23:41,340
+So, we multiply the second row of d.
+
+511
+01:23:46,931 --> 01:24:14,011
+By minus 1, minus r2, and add it to the first row of d, which gives 1, 0, we multiply this by minus 1, so this is 4, 6, minus 4, minus 7.
+
+512
+01:24:16,212 --> 01:24:24,712
+0, 1, minus 4, 4, 0, 0, 1, 2.
+
+513
+01:24:25,712 --> 01:24:31,212
+And the mission is completed for the column 2.
+
+514
+01:24:32,212 --> 01:24:42,212
+And for the last row, we have the first non-entry 0 is also 1, it's the leading one.
+
+515
+01:24:42,387 --> 01:24:54,387
+We have to make all other entries in this column to be 0. So we multiply the third row by 4 and add it to the second row.
+
+516
+01:24:54,387 --> 01:25:02,387
+And multiply the third row by minus 6 and add it to the first row.
+
+517
+01:25:07,699 --> 01:25:33,019
+So, we have, finally we have,
+
+518
+01:25:45,363 --> 01:26:00,483
+We multiply this by minus 6, 1, 0, 0, minus 6, minus 12, minus 19.
+
+519
+01:26:01,363 --> 01:26:12,283
+And we multiply the third row by 4 and equal to the second row, so 0, 1, 0, 12.
+
+520
+01:26:12,671 --> 01:26:14,923
+vektör uzayları,
+
+521
+01:26:29,716 --> 01:26:31,716
+Bu...
+
+522
+01:26:46,996 --> 01:27:02,195
+This is the reduced row action form of the matris and end.
+
+523
+01:27:07,572 --> 01:27:08,332
+Iris.
+
+524
+01:27:12,948 --> 01:27:18,347
+This is Roll Echelon.
+
+525
+01:27:26,612 --> 01:27:26,971
+Ok.
+
+526
+01:27:31,539 --> 01:27:32,659
+Does it make sense?
+
+527
+01:27:38,996 --> 01:27:53,236
+Is it okay or not? Yes? Okay. So, we will continue in next week. Please, yeah.
+
+528
+01:27:57,587 --> 01:27:58,387
+Yes, [öğrenci].
+
+529
+01:28:11,412 --> 01:28:12,612
+Müşür, ziyaretabla.
+
+530
+01:28:28,115 --> 01:28:39,115
+For example, you ask, which one? There is no zero column in here. Where is zero column here?
+
+531
+01:28:57,811 --> 01:29:02,771
+Ok, but I don't understand your question. Why we use zero column?
+
+532
+01:29:06,644 --> 01:29:22,043
+If you do the elementary operations by columns, then you can use zero column or column. We only use raw operations. Okay.
+
+533
+01:29:24,204 --> 01:29:29,324
+So, please do not think column or column operations. Okay.
+
+534
+01:29:31,324 --> 01:29:32,564
+So, so.
+
+535
+01:29:33,363 --> 01:29:35,263
+Ve o, continue with.
+
+536
+01:29:51,988 --> 01:30:04,188
+If you don't have any questions, I wish you a good week and good days, and talk to you next week.
+
+537
+01:30:05,788 --> 01:30:17,488
+No, no, [öğrenci], please, please forget the column operation, okay. We don't use good column operations, okay. Only row operations, okay.
+
+538
+01:30:19,412 --> 01:30:23,731
+I wish all of you a good week and good days.
+
+539
+01:30:27,380 --> 01:30:28,380
+Sen
+
+540
+01:30:30,579 --> 01:30:32,076
+Hopp to see you
+
+541
+01:30:58,707 --> 01:30:59,247
+Bay bay.

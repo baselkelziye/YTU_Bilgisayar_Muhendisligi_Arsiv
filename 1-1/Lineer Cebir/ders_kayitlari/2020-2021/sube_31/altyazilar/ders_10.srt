@@ -1,0 +1,2227 @@
+1
+00:01:41,587 --> 00:01:42,047
+Good morning.
+
+2
+00:01:56,052 --> 00:01:56,972
+Can you hear me?
+
+3
+00:02:10,931 --> 00:02:36,587
+Bu, bu
+
+4
+00:02:38,484 --> 00:02:46,424
+İmportant moducusun over vektörs, vektör product.
+
+5
+00:02:47,884 --> 00:02:48,424
+Now,
+
+6
+00:02:50,903 --> 00:02:54,424
+first we define or introduce vektörs.
+
+7
+00:02:58,259 --> 00:03:06,419
+Many physical quantities, such as temperature or speed, we only have magnitude.
+
+8
+00:03:06,419 --> 00:03:20,900
+So, for these quantities, we can represent these quantities by only real numbers, and we say these real numbers as scalars.
+
+9
+00:03:25,716 --> 00:03:36,076
+Quantities, such as force and velocity, we have both, or we need both magnitude and direction.
+
+10
+00:03:37,536 --> 00:03:46,436
+So, these quantities can be represented by arrows having appropriate lengths and directions,
+
+11
+00:03:47,496 --> 00:03:52,475
+and emanating from some given reference point A, are called vectors.
+
+12
+00:04:04,563 --> 00:04:08,764
+The direct line segment AB is called a vektör.
+
+13
+00:04:12,915 --> 00:04:17,656
+A is initial point, or start point.
+
+14
+00:04:21,492 --> 00:04:26,492
+We use the terminal, point, or endpoint.
+
+15
+00:04:50,420 --> 00:04:51,420
+vektör
+
+16
+00:05:03,348 --> 00:05:04,388
+Bundan zora vektör.
+
+17
+00:05:12,500 --> 00:05:15,500
+vektör, izet direktör,
+
+18
+00:05:23,636 --> 00:05:24,636
+Main Segment
+
+19
+00:05:48,019 --> 00:05:49,019
+A,
+
+20
+00:05:51,319 --> 00:05:54,019
+which is called its misure point.
+
+21
+00:06:07,124 --> 00:06:10,864
+A.Q, sorry, A.B.
+
+22
+00:06:18,067 --> 00:06:22,027
+ve koltörler, it's tunnel point.
+
+23
+00:06:34,291 --> 00:06:42,371
+A and B are or A and B being distinct points.
+
+24
+00:07:04,180 --> 00:07:06,156
+vektör is denoted by
+
+25
+00:07:20,276 --> 00:07:21,276
+AB
+
+26
+00:07:24,884 --> 00:07:28,204
+Its magnitude is the length of the line.
+
+27
+00:07:46,548 --> 00:07:47,548
+Line Segment
+
+28
+00:07:55,891 --> 00:07:56,891
+Dinolta, pai.
+
+29
+00:08:07,636 --> 00:08:09,636
+AB or insan books.
+
+30
+00:08:16,596 --> 00:08:20,596
+ve bu direkçiyon aynı şekilde direkçiyonu ile dek bir şekilde
+
+31
+00:08:21,596 --> 00:08:30,596
+ve 0 vekçiyonu sadece bir point ve denilen bir 0.
+
+32
+00:08:43,251 --> 00:08:46,432
+Zira.
+
+33
+00:08:52,244 --> 00:09:06,860
+Now, let P0 and P1 be two points in R3. Here, this means,
+
+34
+00:09:10,100 --> 00:09:16,139
+X0, Y0, Z0, are all real numbers.
+
+35
+00:09:22,388 --> 00:09:24,388
+So, we have three R's.
+
+36
+00:09:25,388 --> 00:09:33,388
+This means that these points are the elements of R cubed.
+
+37
+00:09:33,388 --> 00:09:34,388
+Okay.
+
+38
+00:09:35,388 --> 00:09:49,388
+Then, the vectors with the initial point P0 and the terminal point P1 is denoted by
+
+39
+00:09:50,067 --> 00:09:53,148
+P0, P1.
+
+40
+00:09:56,187 --> 00:09:59,008
+And actually, we indicate the direction of a vector.
+
+41
+00:09:59,947 --> 00:10:07,127
+We draw an arrow from its initial point, P0 to the external point.
+
+42
+00:10:11,572 --> 00:10:16,091
+vektör P0, P1, is defined as
+
+43
+00:10:16,091 --> 00:10:19,292
+the first
+
+44
+00:10:19,292 --> 00:10:21,652
+coordinates
+
+45
+00:10:21,652 --> 00:10:23,292
+of the points
+
+46
+00:10:23,292 --> 00:10:26,731
+x1
+
+47
+00:10:26,731 --> 00:10:28,812
+minus x0
+
+48
+00:10:28,812 --> 00:10:31,792
+y1
+
+49
+00:10:31,792 --> 00:10:33,331
+minus y0
+
+50
+00:10:33,331 --> 00:10:34,532
+and z1
+
+51
+00:10:34,532 --> 00:10:37,772
+minus z0
+
+52
+00:10:42,259 --> 00:11:07,532
+ve ve
+
+53
+00:11:09,427 --> 00:11:16,427
+ve
+
+54
+00:11:27,731 --> 00:11:32,331
+Sum of the squares of the coordinates of the vector.
+
+55
+00:11:33,491 --> 00:11:38,412
+This is the first coordinate, the second coordinate, and the last coordinate.
+
+56
+00:11:38,971 --> 00:11:51,611
+So we take the squares of each coordinate or entry and sum them, then take the square root of this sum.
+
+57
+00:11:52,052 --> 00:11:58,572
+Gives the length or magnitude of the vector in R³.
+
+58
+00:11:59,711 --> 00:12:06,632
+Similarly, if we have a vector in R² or plane,
+
+59
+00:12:17,268 --> 00:12:18,768
+We have two coordinates.
+
+60
+00:12:32,596 --> 00:12:36,355
+In this case, vektör v
+
+61
+00:12:45,556 --> 00:12:52,895
+x1, 0, x1, minus x0.
+
+62
+00:12:58,004 --> 00:13:02,203
+vektör vektör konuları,
+
+63
+00:13:07,251 --> 00:13:08,251
+Güzel.
+
+64
+00:13:20,403 --> 00:13:20,743
+Ok?
+
+65
+00:13:32,019 --> 00:13:32,779
+For example,
+
+66
+00:13:37,139 --> 00:13:49,500
+For the vectors, sorry, for the points P0 and P1 in the R2 or in the eclidium plane,
+
+67
+00:13:57,331 --> 00:13:59,331
+Vektör v
+
+68
+00:14:01,892 --> 00:14:02,892
+is
+
+69
+00:14:03,771 --> 00:14:07,371
+minus 1,
+
+70
+00:14:08,971 --> 00:14:14,771
+and 3, minus, minus 2. We have the vector v as minus 2,
+
+71
+00:14:16,091 --> 00:14:17,091
+5.
+
+72
+00:14:17,371 --> 00:14:21,971
+Actually, we show these vectors in the
+
+73
+00:14:23,371 --> 00:14:24,371
+clean.
+
+74
+00:14:27,220 --> 00:14:32,660
+bu y'e y'e x'e x'e
+
+75
+00:14:32,660 --> 00:14:34,900
+bu point
+
+76
+00:14:40,724 --> 00:14:44,304
+Minus 2, minus 1, minus 2.
+
+77
+00:14:46,764 --> 00:14:49,264
+1, 2, 3, 4, 5, is here.
+
+78
+00:14:56,532 --> 00:15:00,731
+This vector is... sorry...
+
+79
+00:15:13,395 --> 00:15:23,875
+bu ve 29.
+
+80
+00:15:40,788 --> 00:15:54,827
+And if a vector has magnitude 1, then this vector is a unit vector.
+
+81
+00:15:58,995 --> 00:16:07,576
+If the magnitude of the vector is one, then it's called a unit vector.
+
+82
+00:16:13,683 --> 00:16:17,683
+For any non-zero vector v,
+
+83
+00:16:17,683 --> 00:16:24,683
+we can write this vector as the unit vector by
+
+84
+00:16:24,683 --> 00:16:28,683
+dividing this vector to its magnitude.
+
+85
+00:16:28,683 --> 00:16:35,683
+So, if a vector v is a non-zero vector,
+
+86
+00:16:35,683 --> 00:16:40,395
+then v over norm v
+
+87
+00:16:40,755 --> 00:16:50,755
+vektör, unit vektör, aynı direnç ve vektör.
+
+88
+00:16:54,964 --> 00:17:01,024
+Now, we will talk about some vector algebra.
+
+89
+00:17:04,819 --> 00:17:07,920
+Örneğin, neyizde vektör ediyon?
+
+90
+00:17:38,420 --> 00:18:05,067
+İlk vektör edisyon, let u ve vektörs in Rn, çünkü u ve ve n coğdinates, each of them belongs to the R, so here we can write
+
+91
+00:18:05,779 --> 00:18:10,380
+U and V are in R to the n.
+
+92
+00:18:12,839 --> 00:18:17,539
+Actually, we can say about these vectors,
+
+93
+00:18:18,940 --> 00:18:23,259
+these vectors have n coordinates.
+
+94
+00:18:23,259 --> 00:18:27,179
+So, to sum these two vectors,
+
+95
+00:18:27,539 --> 00:18:30,859
+we only add the corresponding
+
+96
+00:18:31,892 --> 00:18:50,652
+Corresponding coordinates means u plus v is equal to the u1 plus v1, u2 plus v2 and um plus vn.
+
+97
+00:18:50,652 --> 00:18:51,412
+Okay.
+
+98
+00:18:56,115 --> 00:19:08,115
+Actually, in the matrices, in the matrices, we called m by one matrices,
+
+99
+00:19:12,403 --> 00:19:17,403
+Vektörs.
+
+100
+00:19:19,403 --> 00:19:28,403
+So, so, it is same as the add or the addition of the matrices m by one matrices.
+
+101
+00:19:28,403 --> 00:19:34,403
+First, the type of the matrices have to be same.
+
+102
+00:19:34,403 --> 00:19:35,403
+Means,
+
+103
+00:19:36,980 --> 00:19:52,980
+We need two vectors which have the same number of coordinates, here n, and we only add the corresponding entries as in the matrices.
+
+104
+00:19:52,980 --> 00:19:53,836
+Okay.
+
+105
+00:19:58,900 --> 00:20:26,539
+For example, if you want to add these two vectors, you only add corresponding entries. These two vectors are in R-square. 1 plus minus 1, the first entry of the sum, and minus 1 plus 3. So u plus v.
+
+106
+00:20:27,316 --> 00:20:30,516
+vektör 0, 1.
+
+107
+00:20:32,016 --> 00:20:32,536
+Ok.
+
+108
+00:20:36,468 --> 00:20:42,008
+We can represent this addition on the plane as
+
+109
+00:20:54,740 --> 00:21:12,960
+u plus v means, we only adding v, taking on v, taking on v, this is v.
+
+110
+00:21:25,683 --> 00:21:29,144
+taking on v to the end of u.
+
+111
+00:21:29,144 --> 00:21:39,703
+And this is the vector u plus v.
+
+112
+00:21:40,124 --> 00:21:48,523
+We only take on v to the end of u.
+
+113
+00:21:49,104 --> 00:21:49,683
+Okay.
+
+114
+00:22:18,740 --> 00:22:44,107
+Actually, in the geometrical proofs, we can show this multiplication as, for example, let u,
+
+115
+00:22:45,652 --> 00:22:47,532
+Er Wiktors at...
+
+116
+00:22:51,124 --> 00:22:55,204
+Ve, bir diğer vektör.
+
+117
+00:23:29,236 --> 00:23:32,556
+İzlediğiniz için 2 let'ları ekleyelim.
+
+118
+00:23:33,836 --> 00:23:38,836
+İzlediğiniz için,
+
+119
+00:23:39,336 --> 00:23:56,736
+Buna,
+
+120
+00:23:56,864 --> 00:24:21,344
+v at the end of the, from the end of the u, then we have a parallelogram, and u plus v is the vector, from the initial point of u and v to the,
+
+121
+00:24:24,339 --> 00:24:25,339
+vektör,
+
+122
+00:24:29,940 --> 00:24:31,740
+U and V.
+
+123
+00:24:32,259 --> 00:24:32,639
+Okay.
+
+124
+00:24:35,039 --> 00:24:36,340
+This is the same as
+
+125
+00:24:36,340 --> 00:24:41,099
+taking V
+
+126
+00:24:41,099 --> 00:24:45,380
+at the end of the
+
+127
+00:24:45,380 --> 00:24:46,240
+U.
+
+128
+00:24:52,435 --> 00:25:18,435
+U plus V is a line like this. And what about the scalar multiplication? It is again same as the scalar multiplication over the matrices. If U is a vector in R to the n,
+
+129
+00:25:18,996 --> 00:25:23,996
+And lambda is a scalar or real number.
+
+130
+00:25:27,092 --> 00:25:41,852
+Scalar product, or scalar multiple of u by lambda, is a vector, which is obtained by multiplying each component, or each coordinate of u by lambda.
+
+131
+00:25:41,852 --> 00:25:51,592
+So, lambda u is equal to lambda u1, lambda u2, and lambda u n.
+
+132
+00:25:54,932 --> 00:26:08,711
+Actually, there is a historical note about the scalar and the vector, the word scalar and the word vector.
+
+133
+00:26:09,932 --> 00:26:19,592
+The term scalar was invented by 19th century by the Irish mathematician William Rowan Hamilton.
+
+134
+00:26:43,859 --> 00:26:59,299
+And the Hamilton use scalar to convey the sense of something that could be represented by a point on a scale.
+
+135
+00:27:00,919 --> 00:27:04,299
+And the word vector comes from...
+
+136
+00:27:13,460 --> 00:27:13,960
+Lucky!
+
+137
+00:27:18,675 --> 00:27:25,556
+Latin word, and it means carrier.
+
+138
+00:27:39,028 --> 00:27:39,347
+Ok.
+
+139
+00:27:41,827 --> 00:27:50,108
+So, these are the historical notes, not about the lecture or not about the exam.
+
+140
+00:27:50,108 --> 00:27:50,668
+Ok.
+
+141
+00:27:53,068 --> 00:28:03,108
+Your midterm exam 2 will be held on the...
+
+142
+00:28:06,740 --> 00:28:14,316
+12 hafta
+
+143
+00:28:40,084 --> 00:28:40,384
+Ok.
+
+144
+00:28:58,420 --> 00:29:05,279
+Karış da o belli değil ama 11. haftanın sonuna kadar olur. Yani 11. saatin sonuna kadar olur. Ben söylerim size, tamam mı?
+
+145
+00:29:12,948 --> 00:29:21,948
+If we scale the lambda, we have three or four different cases here.
+
+146
+00:29:26,740 --> 00:29:44,620
+Lambda is positive, then Lambda multiple of U is also positive, and has the same direction as U.
+
+147
+00:29:44,620 --> 00:29:53,500
+And if Lambda is negative, then Lambda times U has an opposite direction.
+
+148
+00:29:54,067 --> 00:30:07,908
+ve diğer özelliklerden de, bu vektör, vektör, bu ne önemli.
+
+149
+00:30:11,347 --> 00:30:22,647
+[öğrenci], sadece hafta olarak belli. Ben şu anda tarih belli değil. O yüzden sadece haftayı söyledim. Tamam mı? Yani şu andan itibaren 9, 2 haftanız daha var.
+
+150
+00:30:28,692 --> 00:30:39,291
+For example, for the vector v, which is 1,1, in our sketch,
+
+151
+00:30:43,380 --> 00:31:03,100
+ve λ, which is minus 2, if we multiply v by λ, we have minus 2 times 1, and minus 2 times 1 gives minus 2 minus 2.
+
+152
+00:31:10,387 --> 00:31:15,067
+1, 1, ve know that this is V.
+
+153
+00:31:20,468 --> 00:31:24,968
+Bu, bu, minus 2 V.
+
+154
+00:31:59,635 --> 00:32:08,635
+We can also write and note here the true vectors.
+
+155
+00:32:12,948 --> 00:32:14,148
+U &
+
+156
+00:32:18,355 --> 00:32:19,736
+Bir amit paralel.
+
+157
+00:32:31,635 --> 00:32:33,612
+ve denot ederek,
+
+158
+00:32:55,604 --> 00:32:56,983
+If one is
+
+159
+00:33:02,804 --> 00:33:06,963
+F1 is a scalar multiple of,
+
+160
+00:33:06,963 --> 00:33:07,963
+Z,
+
+161
+00:33:09,844 --> 00:33:11,500
+scalar multiple of,
+
+162
+00:33:15,667 --> 00:33:19,667
+of the other.
+
+163
+00:33:21,667 --> 00:33:38,667
+So you can think, you can think a scalar multiplication of a vector is stretching or shrinking the vector and as flipping the vector in the opposite direction.
+
+164
+00:33:42,612 --> 00:33:47,211
+For example, let this is the vector of V.
+
+165
+00:33:56,403 --> 00:34:00,683
+Bu ne?
+
+166
+00:34:05,299 --> 00:34:07,299
+This is...
+
+167
+00:34:07,299 --> 00:34:08,940
+3-me.
+
+168
+00:34:12,947 --> 00:34:16,947
+0.5V
+
+169
+00:34:17,947 --> 00:34:23,851
+ve
+
+170
+00:34:27,539 --> 00:34:28,619
+Minus two.
+
+171
+00:34:34,483 --> 00:34:42,983
+So, we can think of a scalar multiplication of a vector as stretching or shrinking the vectors.
+
+172
+00:34:42,983 --> 00:34:43,983
+Okay.
+
+173
+00:34:51,699 --> 00:35:01,859
+We will talk about the dot or in a product or in some books scaler.
+
+174
+00:35:04,340 --> 00:35:04,739
+Product.
+
+175
+00:35:19,251 --> 00:35:30,452
+Aslında, you know, we have already learned the dot product or inner product of two vectors from multiplication of the matrices.
+
+176
+00:35:30,452 --> 00:35:37,251
+So, we have already known the inner product.
+
+177
+00:35:40,851 --> 00:36:04,851
+Before introducing inner product, or that product, I want to talk about the analytic or component form of vectors. I think in this lecture notes.
+
+178
+00:36:06,739 --> 00:36:09,899
+You forget to talk about this company phone?
+
+179
+00:36:17,972 --> 00:36:24,852
+Analyktik, or, component formals.
+
+180
+00:36:35,764 --> 00:36:36,764
+vektörs.
+
+181
+00:36:39,884 --> 00:36:45,675
+We have some specific unit vektörs.
+
+182
+00:36:52,371 --> 00:36:53,311
+Tadam, sam.
+
+183
+00:36:57,748 --> 00:37:02,307
+Specific Unit Vectors
+
+184
+00:37:09,588 --> 00:37:12,268
+İşte bir, ovunyuz.
+
+185
+00:37:31,507 --> 00:37:36,507
+called maize vektörs.
+
+186
+00:37:44,916 --> 00:37:58,296
+I, 1, 0, 0, J, 0, 1, 0, and K.
+
+187
+00:38:04,179 --> 00:38:11,139
+0, 0, 1, in RQ, and
+
+188
+00:38:16,851 --> 00:38:18,931
+I want zero.
+
+189
+00:38:24,596 --> 00:38:29,916
+J01 in R².
+
+190
+00:38:30,996 --> 00:38:42,475
+So in R³, I, J, and K are the unit vectors, means these vectors have the magnitude 1.
+
+191
+00:38:45,295 --> 00:38:51,275
+And in R² or in the plane, a gradient plane, we have
+
+192
+00:38:51,795 --> 00:38:56,435
+Bu, s, i, 10, j, 0, 1.
+
+193
+00:38:58,255 --> 00:39:01,815
+These are useful for several reasons.
+
+194
+00:39:03,076 --> 00:39:14,775
+For example, they are mutually perpendicular, since they lie on the distinct coordinate axes, and they are all unit vectors.
+
+195
+00:39:28,307 --> 00:39:32,668
+Ve bu basis vektörsler,
+
+196
+00:39:32,668 --> 00:39:36,927
+bu vektörlerle bir şekilde bir skalar bir kombinasyonu ile
+
+197
+00:39:36,927 --> 00:39:38,688
+ve basis vektörsler.
+
+198
+00:39:38,688 --> 00:39:39,688
+Eks.
+
+199
+00:39:40,907 --> 00:39:44,268
+Eğer vektörlerle
+
+200
+00:39:48,371 --> 00:40:15,467
+given by a, b, we can write this as a, i plus b, j in r2. So you can think this i and j in the plane as
+
+201
+00:40:29,396 --> 00:40:37,196
+ve ve
+
+202
+00:40:40,436 --> 00:40:47,436
+vektör j, unit vektör on y.
+
+203
+00:40:51,123 --> 00:41:18,271
+Okay, so in a similar manner, if a vector v is given by a, b and c, we can write these vectors using this basis vector as a i plus b j plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus a i plus
+
+204
+00:41:18,271 --> 00:41:21,072
+c, k.
+
+205
+00:41:22,271 --> 00:41:31,952
+So, it means that, it means that every vector can be written as a unique scalar combination of these basis vectors.
+
+206
+00:41:32,511 --> 00:41:45,631
+Actually, we can use these basis vectors on r², on plane and on r³.
+
+207
+00:41:46,228 --> 00:41:47,228
+Okey.
+
+208
+00:41:49,228 --> 00:41:50,228
+So,
+
+209
+00:41:51,228 --> 00:41:53,228
+vektör v
+
+210
+00:42:00,148 --> 00:42:01,288
+izrütmez.
+
+211
+00:42:11,219 --> 00:42:21,659
+v is equal to a i plus p j plus c k, then we say that
+
+212
+00:42:28,340 --> 00:42:32,720
+V is in component.
+
+213
+00:42:37,556 --> 00:42:42,596
+İm kompanel form, öz, in analistik form.
+
+214
+00:42:52,659 --> 00:42:59,559
+So, here, A, B, and C are the I, J, and the K components, respectively.
+
+215
+00:43:00,159 --> 00:43:10,960
+We can also define the vector addition using these component form of vectors or analytic form of vectors.
+
+216
+00:43:13,659 --> 00:43:16,259
+Now, what is the inner product?
+
+217
+00:43:18,259 --> 00:43:19,759
+We have already learned.
+
+218
+00:43:20,079 --> 00:43:34,319
+İntek, we have two vektörs, or two matrices, and by one matrices, the inner product, or that product, or the scalar product.
+
+219
+00:43:42,867 --> 00:43:44,867
+or scalar product of
+
+220
+00:43:46,867 --> 00:43:50,867
+these two vectors is defined by
+
+221
+00:43:51,867 --> 00:43:52,867
+the sum of
+
+222
+00:43:53,867 --> 00:43:56,867
+the multiplication of the
+
+223
+00:43:56,867 --> 00:43:58,867
+corresponding entries.
+
+224
+00:43:58,867 --> 00:44:00,867
+so u dot
+
+225
+00:44:00,867 --> 00:44:02,867
+v is equal to
+
+226
+00:44:02,867 --> 00:44:07,867
+u1 times v1 plus u2 times v2
+
+227
+00:44:08,724 --> 00:44:11,224
+blablabla, u n times v n.
+
+228
+00:44:11,724 --> 00:44:19,724
+So this is the inner product or that product or scale product of two vectors.
+
+229
+00:44:20,724 --> 00:44:30,224
+For example, let u and v are vectors in art before.
+
+230
+00:44:33,523 --> 00:44:47,163
+So, the inner product of these two vectors is 2 times minus 1 plus 1 times 1 plus 0 times 3 plus 1 times 2 gives 1.
+
+231
+00:44:48,503 --> 00:44:59,764
+So, here it is important to say that the result of the inner product of two vectors is a real number.
+
+232
+00:45:00,788 --> 00:45:03,007
+So, disipli yok suda.
+
+233
+00:45:10,356 --> 00:45:12,376
+Splix to the A's.
+
+234
+00:45:17,108 --> 00:45:20,708
+Maybe, maybe, sorry.
+
+235
+00:45:27,668 --> 00:45:30,108
+To dat pravdžof
+
+236
+00:45:35,923 --> 00:45:37,403
+Dat, tratak yok.
+
+237
+00:45:42,612 --> 00:45:43,792
+2 vektörs.
+
+238
+00:45:49,396 --> 00:45:50,892
+Is it Scalers?
+
+239
+00:45:55,380 --> 00:46:01,140
+So, the scalar comes from here, scalar product means comes from here.
+
+240
+00:46:01,140 --> 00:46:07,780
+That product of two vectors is a scalar or a real number, not a vector.
+
+241
+00:46:14,260 --> 00:46:16,260
+Bu önemli.
+
+242
+00:46:18,660 --> 00:46:22,100
+So, the associative law
+
+243
+00:46:27,956 --> 00:46:31,155
+Ok, there is a question for you.
+
+244
+00:46:33,096 --> 00:46:34,096
+We say that
+
+245
+00:46:34,096 --> 00:46:40,695
+that program of two vectors is a scalar.
+
+246
+00:46:43,216 --> 00:46:43,815
+So
+
+247
+00:46:43,815 --> 00:46:47,695
+the associated
+
+248
+00:46:52,947 --> 00:46:53,748
+Loh!
+
+249
+00:47:01,972 --> 00:47:05,472
+Bu, bu, format, ekteşen.
+
+250
+00:47:12,500 --> 00:47:14,019
+Of rien numbers.
+
+251
+00:47:24,148 --> 00:47:24,788
+And
+
+252
+00:47:34,420 --> 00:47:36,420
+For addition of vectors,
+
+253
+00:47:48,148 --> 00:47:51,052
+Does not hold for the...
+
+254
+00:47:58,931 --> 00:48:00,631
+Not product of vektörs.
+
+255
+00:48:15,923 --> 00:48:33,684
+I mean, the question is that, if you have three vectors, then, then, can you multiply this?
+
+256
+00:48:38,835 --> 00:48:40,267
+3 vektörs
+
+257
+00:48:59,155 --> 00:49:03,083
+Can we define the inner product of three vectors?
+
+258
+00:49:14,516 --> 00:49:38,016
+Neden? [öğrenci] diyor ki, evet, neden? [öğrenci] diyor ki, hayır, neden? [öğrenci] diyor ki, evet, aynı size, zaten zaten diyor ki, neden? [öğrenci], neden? Bu, sana bir ödü var.
+
+259
+00:49:43,539 --> 00:49:45,539
+Evet, teşekkür ederim.
+
+260
+00:49:45,539 --> 00:49:47,539
+İyi.
+
+261
+00:49:47,539 --> 00:49:49,539
+Manuyanır, 6
+
+262
+00:49:52,788 --> 00:49:58,587
+V in a product, W is a scalar.
+
+263
+00:50:00,387 --> 00:50:03,587
+So, it's a real number.
+
+264
+00:50:05,587 --> 00:50:07,188
+And U is a vector.
+
+265
+00:50:10,788 --> 00:50:17,587
+You cannot product a vector.
+
+266
+00:50:20,724 --> 00:50:22,724
+ve a real number
+
+267
+00:50:22,724 --> 00:50:25,724
+in the sense of in a product.
+
+268
+00:50:25,724 --> 00:50:28,724
+Ok, since this is a scalar or real number
+
+269
+00:50:28,724 --> 00:50:30,724
+and this is a vector
+
+270
+00:50:30,724 --> 00:50:32,724
+you cannot product these two
+
+271
+00:50:32,724 --> 00:50:35,724
+these two vectors and
+
+272
+00:50:36,724 --> 00:50:38,724
+the real number.
+
+273
+00:50:38,724 --> 00:50:40,724
+So,
+
+274
+00:50:40,724 --> 00:50:42,724
+for the
+
+275
+00:50:44,724 --> 00:50:47,660
+for three vectors we cannot define
+
+276
+00:50:47,668 --> 00:50:50,128
+ve inners, ve dat, product.
+
+277
+00:50:50,728 --> 00:50:52,128
+Teşekkürler, [öğrenci].
+
+278
+00:50:56,307 --> 00:50:58,155
+ve
+
+279
+00:51:01,811 --> 00:51:08,011
+Properties, about the inner product of vectors.
+
+280
+00:51:13,204 --> 00:51:23,084
+Let u, v, v, v are the vectors in r to the n.
+
+281
+00:51:27,572 --> 00:51:32,072
+Alpha ve Data'a, the skaters.
+
+282
+00:51:37,172 --> 00:51:55,947
+ve ve
+
+283
+00:52:10,356 --> 00:52:16,356
+vektör konularını işleyeceğiz.
+
+284
+00:52:16,356 --> 00:52:22,356
+İndir product'in her yerine, bu vektör konularını işleyeceğiz.
+
+285
+00:52:22,356 --> 00:52:25,164
+Vektör konularını işleyeceğiz.
+
+286
+00:52:46,324 --> 00:52:58,324
+If you multiply a zero vector with another vector by the sense of the inner product, then you have zero.
+
+287
+00:53:01,907 --> 00:53:04,507
+Property 5 is also important.
+
+288
+00:53:05,947 --> 00:53:12,427
+If you use inner product from same vectors,
+
+289
+00:53:14,188 --> 00:53:20,067
+if you multiply a vector with itself by sense of inner product,
+
+290
+00:53:20,067 --> 00:53:24,307
+then you have the scale of its magnitude.
+
+291
+00:53:25,587 --> 00:53:27,188
+It comes from here.
+
+292
+00:53:29,204 --> 00:53:41,124
+Let us multiply u with u as the inner product. This gives u1 times u1.
+
+293
+00:53:48,724 --> 00:53:57,724
+Bu, u1² plus u2² plus u n².
+
+294
+00:53:59,724 --> 00:54:12,724
+And what is the magnitude of the u? The magnitude of u is the sum of the scales of its coordinates in the square root.
+
+295
+00:54:15,668 --> 00:54:26,868
+This is the square of, square of the magnitude of, the vectors u.
+
+296
+00:54:29,368 --> 00:54:34,367
+The property 7 is also very important.
+
+297
+00:54:40,148 --> 00:55:02,947
+U dot product V is equal to the magnitude of U times the magnitude of V times cosine theta, where theta is the angel between
+
+298
+00:55:15,987 --> 00:55:22,187
+between you and we.
+
+299
+00:55:27,764 --> 00:55:29,764
+Yes, yes, özellettin.
+
+300
+00:55:31,204 --> 00:55:32,748
+This is you.
+
+301
+00:55:37,811 --> 00:55:39,811
+Bu, teta.
+
+302
+00:56:04,692 --> 00:56:07,112
+Seven, sorry, eight.
+
+303
+00:56:15,923 --> 00:56:32,123
+Two non-zero vectors u and v. Two non-zero vectors u and v are perpendiculars.
+
+304
+00:56:39,188 --> 00:56:40,347
+İzhan on nice.
+
+305
+00:56:45,556 --> 00:57:10,827
+ve sadece bu ve bu
+
+306
+00:57:41,684 --> 00:57:42,144
+Ok.
+
+307
+00:57:51,668 --> 00:58:01,568
+Bu, bu, çok önemli.
+
+308
+00:58:02,568 --> 00:58:05,568
+Bu, bu, bu, çok önemli.
+
+309
+00:58:17,172 --> 00:58:24,291
+Magnitude of u times the magnitude of v times cosine theta.
+
+310
+00:58:24,291 --> 00:58:42,132
+So, we are looking for theta, cosine theta from here, cosine theta is equal to u in a product v over the magnitude of
+
+311
+00:58:45,523 --> 00:59:09,523
+u, times, magnitude of V. Therefore, taking arc cosine of each side we have, theta is equal to arc cosine.
+
+312
+00:59:35,027 --> 00:59:41,607
+where theta is the angle between the vectors u and v.
+
+313
+00:59:41,607 --> 00:59:42,327
+Okay.
+
+314
+00:59:46,643 --> 00:59:47,643
+For example,
+
+315
+00:59:52,563 --> 00:59:56,563
+Find the angle between the vectors u and v.
+
+316
+00:59:56,563 --> 01:00:18,563
+So, first, write the inner product of the vectors u and v is equal to the magnitude of u times magnitude of v times cosine theta.
+
+317
+01:00:19,059 --> 01:00:45,119
+So, what is the inner product of these two vectors? 2 times, 2 times minus 1, plus, 2 times 1, plus, 0 times 0, plus, 1 times, 2. So, this is minus 2.
+
+318
+01:00:46,612 --> 01:00:49,912
+2, 0, 2.
+
+319
+01:00:52,472 --> 01:00:57,512
+2 is equal to, what is the magnitude of u?
+
+320
+01:00:58,332 --> 01:01:10,912
+The magnitude of u is the square root of the sum of the squares of its coordinates, which is two squares.
+
+321
+01:01:14,675 --> 01:01:21,635
+plus 2 square plus 0 square plus 1 square.
+
+322
+01:01:21,635 --> 01:01:29,315
+This is 4, 8, 9 gives 3.
+
+323
+01:01:29,315 --> 01:01:35,315
+3 times, what is the magnitude of V?
+
+324
+01:01:41,972 --> 01:01:56,652
+minus 1 square plus 1 square plus 0 square plus 2 square, divs, 4, 5, 6.
+
+325
+01:01:56,652 --> 01:02:08,512
+So, this is square root 6 times cosine theta.
+
+326
+01:02:09,684 --> 01:02:21,164
+So, cosin theta is equal to 2 over 3 times square root 6.
+
+327
+01:02:22,164 --> 01:02:25,524
+Therefore, theta is a cosin.
+
+328
+01:02:29,396 --> 01:02:35,556
+2 over, 3 times square root, 6.
+
+329
+01:02:37,556 --> 01:02:37,836
+Ok.
+
+330
+01:02:48,371 --> 01:02:48,791
+Ok?
+
+331
+01:03:04,788 --> 01:03:11,788
+Ayrıca bir vektör olarak bir vektör olarak bir vektör olarak bir şekilde
+
+332
+01:03:11,788 --> 01:03:13,788
+yoktuğumda
+
+333
+01:03:14,788 --> 01:03:21,788
+bu konuda bir vektör olarak
+
+334
+01:03:22,788 --> 01:03:25,771
+bu konuda konuşmak için
+
+335
+01:03:33,204 --> 01:03:34,344
+No, yes.
+
+336
+01:03:38,036 --> 01:03:50,036
+The cross product is the second very, very important product of vectors in this lecture.
+
+337
+01:03:53,155 --> 01:03:55,716
+First, first,
+
+338
+01:03:58,916 --> 01:04:03,076
+to that product, sorry, the cross product or
+
+339
+01:04:08,115 --> 01:04:11,115
+vektör konuları sadece
+
+340
+01:04:14,804 --> 01:04:18,003
+is only defined
+
+341
+01:04:22,003 --> 01:04:23,324
+4 vektörs
+
+342
+01:04:30,739 --> 01:04:35,739
+in R³.
+
+343
+01:04:37,739 --> 01:04:38,739
+Okay.
+
+344
+01:04:39,739 --> 01:04:40,739
+This is
+
+345
+01:04:41,739 --> 01:04:43,739
+very, very, very
+
+346
+01:04:43,739 --> 01:04:45,739
+important.
+
+347
+01:04:45,739 --> 01:04:48,739
+So, we only define the cross product
+
+348
+01:04:49,739 --> 01:04:54,739
+for the vectors in R³.
+
+349
+01:04:57,940 --> 01:05:06,559
+Actually, the definition may appear strange, but we will see the geometric pages for it shortly.
+
+350
+01:05:08,319 --> 01:05:13,639
+Suppose that, suppose that, you,
+
+351
+01:05:18,675 --> 01:05:23,755
+Bu, vektör,
+
+352
+01:05:33,172 --> 01:05:40,172
+vektör vektör, r3, kaptör konuları,
+
+353
+01:05:40,172 --> 01:06:01,483
+vektör konuları,
+
+354
+01:05:57,172 --> 01:05:59,172
+ve,
+
+355
+01:05:59,172 --> 01:06:01,172
+queremos encontrar vektörs
+
+356
+01:06:17,491 --> 01:06:20,139
+vektör konuları,
+
+357
+01:06:15,443 --> 01:06:16,243
+vektör
+
+358
+01:06:16,243 --> 01:06:19,103
+s
+
+359
+01:06:19,103 --> 01:06:19,743
+w
+
+360
+01:06:24,179 --> 01:06:49,355
+ve bu ve bu veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyonun veksiyon
+
+361
+01:06:51,795 --> 01:06:52,795
+ortogonal
+
+362
+01:06:53,295 --> 01:06:54,795
+or törtten birlikte olur
+
+363
+01:07:12,692 --> 01:07:13,412
+Tu bot.
+
+364
+01:07:18,804 --> 01:07:22,884
+you and we.
+
+365
+01:07:25,923 --> 01:07:29,364
+so dismiss it, dismiss it.
+
+366
+01:07:35,795 --> 01:07:50,135
+If W is perpendicular or orthogonal to U, means that U in the product W is equal to 0.
+
+367
+01:07:51,355 --> 01:08:03,175
+And if V is perpendicular to W, means V in the product W is equal to 0.
+
+368
+01:08:03,987 --> 01:08:07,987
+Bu, bu ikiye ekranı bu,
+
+369
+01:08:10,987 --> 01:08:13,987
+u1x
+
+370
+01:08:15,987 --> 01:08:17,987
+u2y
+
+371
+01:08:17,987 --> 01:08:19,987
+u3z
+
+372
+01:08:20,987 --> 01:08:21,987
+0
+
+373
+01:08:24,987 --> 01:08:25,987
+v1x
+
+374
+01:08:25,987 --> 01:08:27,987
+v2y
+
+375
+01:08:27,987 --> 01:08:29,987
+v3
+
+376
+01:08:30,420 --> 01:08:32,180
+Z is equal to zero.
+
+377
+01:08:34,659 --> 01:08:37,699
+This is a linear, homogenous system.
+
+378
+01:08:39,219 --> 01:08:47,219
+Then, finding the solution of this system gives the vector w.
+
+379
+01:08:48,899 --> 01:08:55,539
+So, from here, solution of this system is
+
+380
+01:08:56,275 --> 01:08:58,735
+W is equal to
+
+381
+01:09:02,355 --> 01:09:10,435
+U2, litri, I, minus, sorry, sorry.
+
+382
+01:09:40,180 --> 01:09:40,940
+Topluyor.
+
+383
+01:09:54,579 --> 01:10:04,579
+We have not enough space for this. Okay, we can find the unknowns x, y and z, z
+
+384
+01:10:07,779 --> 01:10:14,340
+after solving this linear system and the vector w
+
+385
+01:10:16,979 --> 01:10:19,539
+and the vector w is called
+
+386
+01:10:22,195 --> 01:10:25,755
+The cross product of the vectors u and v
+
+387
+01:10:32,787 --> 01:10:34,787
+ve v
+
+388
+01:10:34,787 --> 01:10:38,787
+ve
+
+389
+01:10:41,787 --> 01:10:42,787
+Burada
+
+390
+01:10:44,787 --> 01:11:00,075
+ve
+
+391
+01:11:00,180 --> 01:11:00,820
+Ama
+
+392
+01:11:06,260 --> 01:11:13,260
+İndir product of two vectors is Scalers.
+
+393
+01:11:13,260 --> 01:11:14,260
+OK.
+
+394
+01:11:22,195 --> 01:11:36,595
+So, the cross product or the vector product of two vectors is only defined for the vectors in R3.
+
+395
+01:11:39,395 --> 01:11:46,115
+The vector product or the cross product of two vectors is also a vector.
+
+396
+01:11:49,203 --> 01:12:12,171
+Bu, bu
+
+397
+01:12:18,323 --> 01:12:29,323
+We denote the vector product as like this and like this and
+
+398
+01:12:37,844 --> 01:12:44,163
+If u is a vector like this and v is a vector like this, we say that
+
+399
+01:12:48,659 --> 01:12:55,260
+vektör konuları, bu vektörlerden bir şey yok.
+
+400
+01:13:00,307 --> 01:13:13,627
+U, cross product V is a vector, which is both perpendicular to V and U.
+
+401
+01:13:23,123 --> 01:13:37,163
+And the magnitude of this cross product gives the area of the parallelogram which has the adjacent size U and V.
+
+402
+01:13:37,163 --> 01:13:50,384
+So the area of this parallelogram is equal to the magnitude of the vectors U cross product V.
+
+403
+01:13:52,404 --> 01:13:57,404
+We will find, we will find the cross product of...
+
+404
+01:14:00,819 --> 01:14:04,659
+2 vektörs in R³, using determinant.
+
+405
+01:14:06,159 --> 01:14:19,739
+On the first row, we write the basis vectors i, j, and k.
+
+406
+01:14:20,739 --> 01:14:24,819
+On the second row, we write the first...
+
+407
+01:14:27,507 --> 01:14:38,307
+We write the entries of the first vector, and on the last row, we write the entries of the second vector.
+
+408
+01:14:38,307 --> 01:14:50,307
+And we will find the determinant. But here, we use Laplace Expansion.
+
+409
+01:14:57,844 --> 01:15:02,304
+Laplace, Expansion,
+
+410
+01:15:05,939 --> 01:15:12,119
+İlong, tut first row.
+
+411
+01:15:18,707 --> 01:15:22,539
+So, this gives...
+
+412
+01:15:25,619 --> 01:15:33,139
+I times, I is on the first row and the first column, so
+
+413
+01:15:40,307 --> 01:15:46,427
+Delay the first row and the first column to the determinant of this.
+
+414
+01:15:57,652 --> 01:16:14,152
+İzlediğiniz için, J, plus J, times minus 1, over J is on the first row and second column.
+
+415
+01:16:16,291 --> 01:16:24,492
+We'd laid the first row and the second column and it remains.
+
+416
+01:16:32,243 --> 01:16:32,923
+Plus
+
+417
+01:16:36,532 --> 01:16:38,112
+Last entry is k.
+
+418
+01:16:45,939 --> 01:16:52,279
+K times K is on the first row and the third column.
+
+419
+01:16:59,028 --> 01:17:10,628
+U1, U2, B1, U2, B1, U2, so.
+
+420
+01:17:14,355 --> 01:17:35,355
+We have this cross product of vectors is u2 times v3 minus u3 times v2 i minus
+
+421
+01:17:44,372 --> 01:18:02,212
+u1 v3 minus u3 v1 j plus u1 v2 minus u2 v1 k.
+
+422
+01:18:06,260 --> 01:18:12,260
+We can compute the cross product of two vectors using this determinant.
+
+423
+01:18:12,260 --> 01:18:13,260
+Okay.
+
+424
+01:18:30,003 --> 01:18:30,783
+For example,
+
+425
+01:18:39,028 --> 01:18:46,028
+Find i cross product j.
+
+426
+01:18:57,619 --> 01:19:13,500
+We know that in R³, i is 1, 0, 0, and j is 0, 1, 0.
+
+427
+01:19:13,500 --> 01:19:16,859
+Yeah, zaten, right, k.
+
+428
+01:19:18,459 --> 01:19:24,199
+So, i cross product j is equal to
+
+429
+01:19:24,595 --> 01:19:28,295
+write I, J, K here.
+
+430
+01:19:29,295 --> 01:19:40,295
+And on the second row, write the entries or the elements of I, which is 1, 0, 0.
+
+431
+01:19:40,795 --> 01:19:47,355
+And on the last row, write the entries of the J, 0, 1, 0.
+
+432
+01:19:48,755 --> 01:19:52,155
+So, this determinant is equal to.
+
+433
+01:19:54,068 --> 01:20:01,835
+line times, line this, this gives 0,
+
+434
+01:20:06,355 --> 01:20:32,939
+Minus J times, like this column and this row, zero, plus K times one. So, I cross product J gives K.
+
+435
+01:20:36,467 --> 01:20:45,167
+We have a circle, which is related to the basis vectors and their cross products.
+
+436
+01:20:53,716 --> 01:20:59,036
+This is i, this is j, this is k.
+
+437
+01:21:00,596 --> 01:21:09,676
+So, i inner product j gives k.
+
+438
+01:21:09,676 --> 01:21:12,996
+j inner product k.
+
+439
+01:21:17,043 --> 01:21:30,043
+k cross product i gives j.
+
+440
+01:21:31,043 --> 01:21:31,543
+Okay.
+
+441
+01:21:33,043 --> 01:21:42,943
+And also, we know that these basis vectors are perpendicular to each other.
+
+442
+01:21:44,724 --> 01:21:59,043
+i inner product j gives 0, j inner product k is 0, and i inner product k is also 0.
+
+443
+01:22:03,380 --> 01:22:03,760
+Okey?
+
+444
+01:22:09,619 --> 01:22:18,380
+So, we compute the cross product of vectors by using the determinant.
+
+445
+01:22:23,988 --> 01:22:29,988
+We already said that the cross product is only defined over R-cube, this is very very important.
+
+446
+01:22:35,539 --> 01:22:37,940
+Find the cross product of you and we.
+
+447
+01:22:42,644 --> 01:23:03,764
+A cross product of u and v is equal to write the basis vectors i, j and k on the first row and the entries of the u, 1 to minus 1 and entries of the second vector v is minus 2, 3, 4.
+
+448
+01:23:11,283 --> 01:23:12,083
+Lips
+
+449
+01:23:15,636 --> 01:23:20,796
+Bu vektör r³, 11-2, 7.
+
+450
+01:23:21,736 --> 01:23:40,976
+Actually, here, it's given method 2, but I think the method 2 is the same as the method 1, because, because, look at here, this is the determinant of the first entry, same.
+
+451
+01:23:42,836 --> 01:23:46,836
+We have minus in front of this determinant.
+
+452
+01:23:46,836 --> 01:23:55,836
+Here, the second and the first column are changed or replaced.
+
+453
+01:23:55,836 --> 01:24:07,275
+We know that in the determinant, if you replace two different rows or columns, then the determinant
+
+454
+01:24:07,828 --> 01:24:32,044
+bu, bu
+
+455
+01:24:39,091 --> 01:24:43,391
+The properties of the cross product are also very important.
+
+456
+01:25:05,779 --> 01:25:33,003
+Öncelikle, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, kroproduktin, krop
+
+457
+01:25:34,452 --> 01:25:40,271
+Bu ilk bölümde de
+
+458
+01:25:41,811 --> 01:25:48,452
+ve ilk bölümde
+
+459
+01:25:48,452 --> 01:25:55,452
+ilk bölümde
+
+460
+01:25:55,452 --> 01:25:57,452
+ama
+
+461
+01:25:57,452 --> 01:26:00,452
+ilk bölümde
+
+462
+01:26:01,076 --> 01:26:11,076
+So, it means that we replaced the row 2 and 3 of this determinant.
+
+463
+01:26:11,076 --> 01:26:18,076
+If you replace any two rows or columns in the determinant, the determinant changes its sign.
+
+464
+01:26:18,076 --> 01:26:27,076
+So, u cross product v is equal to the minus v cross product u.
+
+465
+01:26:29,171 --> 01:26:42,171
+...
+
+466
+01:26:45,939 --> 01:26:52,500
+You can also find the angle between the two vectors using this rule.
+
+467
+01:26:52,500 --> 01:27:12,340
+Take the magnitude of norm of those both sides. So the magnitude of u cross product v is equal to the magnitude of u times the magnitude of v.
+
+468
+01:27:13,108 --> 01:27:26,108
+sin theta. Normal n, or the magnitude of n is 1, since here n is given by a unit vector.
+
+469
+01:27:26,108 --> 01:27:40,811
+So, so the magnitude of the cross vector is equal to this one, and we also know that the inner product of two vectors is equal to
+
+470
+01:27:41,043 --> 01:27:47,783
+Magnitude u times, magnitude v times cosine theta.
+
+471
+01:27:47,783 --> 01:27:48,744
+Okay.
+
+472
+01:27:50,203 --> 01:28:06,344
+And another important property, if the cross product of two vectors is a zero vector, then it means that
+
+473
+01:28:08,787 --> 01:28:33,547
+bu iki tane
+
+474
+01:28:33,939 --> 01:28:42,260
+are, is a zero vector, then, these two vectors are parallel.
+
+475
+01:28:42,260 --> 01:28:44,399
+Okey.
+
+476
+01:28:49,203 --> 01:28:53,663
+Şimdi, birçok birçok oluşturduğumuz,
+
+477
+01:28:57,043 --> 01:28:58,043
+Lictis
+
+478
+01:29:06,036 --> 01:29:11,636
+Actually, this is also called a scalar triple product, not mixed product.
+
+479
+01:29:17,779 --> 01:29:20,939
+Scanner, triple.
+
+480
+01:29:25,684 --> 01:29:30,684
+We have two vectors u, v, and w.
+
+481
+01:29:32,684 --> 01:29:43,684
+The inner product of the vector u with the vector u cross product w is equal to,
+
+482
+01:29:43,684 --> 01:29:48,619
+and we say this product is the scattered triple product or mixed product.
+
+483
+01:29:50,163 --> 01:30:02,163
+Bu, bu vektör. Bu vektör, say, say, say, as, say, as, vektör A.
+
+484
+01:30:13,011 --> 01:30:19,011
+ve bu bu bir modeli skelülütebilir ve bu modeli skelülütebiliriz.
+
+485
+01:30:21,011 --> 01:30:22,539
+Bu modeli skelülütebiliriz.
+
+486
+01:30:26,836 --> 01:30:32,235
+u inner product with v cross product w is equal to,
+
+487
+01:30:32,636 --> 01:30:39,636
+we write the entries of the first vector on the first row
+
+488
+01:30:39,836 --> 01:30:47,235
+and write the entries of the second vector to the second row
+
+489
+01:30:47,436 --> 01:30:51,636
+and write the entries of the last vector to the last row.
+
+490
+01:30:51,836 --> 01:30:52,235
+And
+
+491
+01:30:53,939 --> 01:30:59,139
+Compute the determinant gives the result of the mixed product.
+
+492
+01:30:59,680 --> 01:30:59,959
+Ok.
+
+493
+01:31:04,851 --> 01:31:05,851
+Actually,
+
+494
+01:31:09,779 --> 01:31:15,947
+Bu, bu
+
+495
+01:31:25,076 --> 01:31:52,476
+This mixed product or this mixed product or scalar triple product gives the volume of the parallel pipe, which has the area of A and the base parallelogram.
+
+496
+01:31:54,100 --> 01:31:54,979
+Like, yes.
+
+497
+01:32:08,724 --> 01:32:23,924
+Geometrically, the mixed product gives the volume of two parallel pipe, which have the adjacent sides u, v and w.
+
+498
+01:32:34,579 --> 01:32:36,619
+Bu var liymaltı, parla pait.
+
+499
+01:33:02,771 --> 01:33:06,771
+...which has...
+
+500
+01:33:15,539 --> 01:33:19,539
+u, v, w.
+
+501
+01:33:19,539 --> 01:33:24,539
+Yani, bu soru var, bu üçe bir soru var.
+
+502
+01:33:24,539 --> 01:33:32,539
+Bu soru var, bu üçe bir soru var.
+
+503
+01:33:43,220 --> 01:34:10,828
+Bu, bu
+
+504
+01:34:10,836 --> 01:34:26,836
+You have the same result, but in one of them or two of them, you have the result as negative. If the result is negative,
+
+505
+01:34:34,036 --> 01:34:37,316
+Ben tek, absolute willim.
+
+506
+01:34:41,971 --> 01:34:46,091
+Ok, for the volume of the paralel pipe.
+
+507
+01:34:47,492 --> 01:34:50,572
+For example, for this example,
+
+508
+01:34:53,011 --> 01:35:00,652
+we find the result of this determinant, 20, which is positive.
+
+509
+01:35:00,652 --> 01:35:02,652
+So, the...
+
+510
+01:35:03,636 --> 01:35:11,636
+So, the volume of the parallel fight which have the adjacent size u, v, and w is 20.
+
+511
+01:35:12,636 --> 01:35:13,636
+Okay.
+
+512
+01:35:14,636 --> 01:35:18,636
+But if you find
+
+513
+01:35:26,868 --> 01:35:33,868
+10, this gives minus 20.
+
+514
+01:35:34,868 --> 01:35:36,868
+But again,
+
+515
+01:35:37,868 --> 01:35:43,868
+the volume of the parallel part which has the adjacent size U, V and W is 20.
+
+516
+01:35:43,868 --> 01:35:44,868
+Okay?
+
+517
+01:35:48,948 --> 01:35:53,648
+Mixed Product has also some properties.
+
+518
+01:36:01,235 --> 01:36:03,235
+This is important.
+
+519
+01:36:10,771 --> 01:36:16,271
+vekutör, last product.
+
+520
+01:36:21,747 --> 01:36:23,747
+Isturuholt Kruz produk
+
+521
+01:36:39,507 --> 01:36:43,288
+Eğer u, v, w, r³,
+
+522
+01:36:43,708 --> 01:36:48,807
+ve,
+
+523
+01:36:48,807 --> 01:36:54,007
+define twofold cross product of these three vectors as u cross product,
+
+524
+01:36:54,807 --> 01:36:56,807
+v cross product, w,
+
+525
+01:36:56,807 --> 01:36:58,108
+is equal to,
+
+526
+01:37:00,007 --> 01:37:02,007
+u in a product,
+
+527
+01:37:03,507 --> 01:37:04,507
+w,
+
+528
+01:37:06,108 --> 01:37:07,007
+v,
+
+529
+01:37:08,180 --> 01:37:14,180
+minus u in a product v, w.
+
+530
+01:37:17,180 --> 01:37:18,180
+For example,
+
+531
+01:37:21,180 --> 01:37:26,180
+Actually, the result of this product is a vector in R3, y.
+
+532
+01:37:27,180 --> 01:37:28,180
+For example,
+
+533
+01:37:28,756 --> 01:37:36,456
+Let u, v, and w vectors like these find the twofold cross product of these three vectors.
+
+534
+01:37:36,456 --> 01:37:44,956
+So u cross product v cross product w
+
+535
+01:37:58,260 --> 01:38:13,380
+W, V, minus, U, inner product, V, W.
+
+536
+01:38:15,060 --> 01:38:18,460
+So, what is U, inner product, W?
+
+537
+01:38:19,260 --> 01:38:25,500
+1 times 2, plus 2 times 1, 4.
+
+538
+01:38:27,507 --> 01:38:53,347
+4 times v, minus, what is u in a product v, minus 2, minus 2, 6, 4, minus 4, 0, oh, this is 0.
+
+539
+01:38:54,547 --> 01:38:58,627
+0, times, w.
+
+540
+01:38:59,627 --> 01:39:00,987
+So, this is 0.
+
+541
+01:39:02,347 --> 01:39:13,467
+We only multiply the vector v by 4, which gives minus 8, 12, 16.
+
+542
+01:39:13,807 --> 01:39:18,467
+So, this is a vector in r cube.
+
+543
+01:39:24,916 --> 01:39:25,336
+Ok.
+
+544
+01:39:27,736 --> 01:39:29,355
+Today is enough.
+
+545
+01:39:30,556 --> 01:39:33,156
+Do you have any questions or comments?
+
+546
+01:39:38,868 --> 01:39:49,068
+Evet [öğrenci], büyük ihtimalle. 8-11 olmaz, 8-11 olur mu? Zaten 6. hafta ne olacak? 6-7 ne olacak [öğrenci]?
+
+547
+01:39:53,619 --> 01:40:00,000
+Olmaz yani öyle. On bininci haftaya kadar olur. Bir de ilk sınav nereden olduysa onlarda dahil olur yani.
+
+548
+01:40:05,011 --> 01:40:06,331
+Ne demek istedim anladın mı?
+
+549
+01:40:08,851 --> 01:40:10,351
+İşte onu söylüyorum.
+
+550
+01:40:11,691 --> 01:40:26,311
+[öğrenci], I said that the exam topics includes the lecture notes from the week 6 to the week 11.
+
+551
+01:40:29,971 --> 01:40:33,511
+Okey. Ben de [öğrenci] onu kastediyorum tam.
+
+552
+01:40:37,779 --> 01:40:59,739
+Genelde birinci vizeye kadar olan yerden sorulmuyor genelde ikinci vizede görürken. O yüzden size tavsiyem önce birinci vizeden sonra ile şu ana kadar yaptığımız yere çalışıp zamanınız kalırsa da diğer tarafa çalışırsınız. Ama zaten şu var. Mesela matris çarpmasını öğrenmişiz ilk kısımda.
+
+553
+01:41:00,627 --> 01:41:06,627
+Zaten matris çarpmasıyla alakalı işlemler zaten soruldu. Yani o tarafın çalışılacak bir kısmı yok yani.
+
+554
+01:41:08,527 --> 01:41:11,207
+Tamam. Yani yeni konulara çalışmanız gerekir.
+
+555
+01:41:14,804 --> 01:41:15,304
+Ok.
+
+556
+01:41:19,315 --> 01:41:27,195
+So, hope to see you next week, and have a good day for all of you.
+
+557
+01:41:30,096 --> 01:41:30,935
+See you.
