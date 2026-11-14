@@ -1,0 +1,3987 @@
+1
+00:04:30,228 --> 00:04:33,067
+Arkadaşlar, günaydın, merhabalar. Sesim geliyor mu acaba?
+
+2
+00:04:46,483 --> 00:04:48,483
+Beni duyuyor musunuz arkadaşlar?
+
+3
+00:05:13,108 --> 00:05:21,447
+Günaydın arkadaşlar, ses geliyor mu? Bir çete en azından yazabilir misiniz? Kimseden tepki gelmeyince?
+
+4
+00:05:27,891 --> 00:05:28,851
+Teşekkür ederim.
+
+5
+00:05:30,031 --> 00:05:45,971
+Şimdi bugün birkaç tane bu ders ve bu dersin sonrasındaki konuları ilgilendirecek, gelecek dönemlerde size faydası olacak konuları anlatacağım.
+
+6
+00:05:47,271 --> 00:05:49,671
+Yetiştirebilirsek, eklerse gerek duymayacağız.
+
+7
+00:05:51,211 --> 00:05:52,872
+İlerleyebildiğimiz kadar gidelim.
+
+8
+00:05:58,995 --> 00:06:04,036
+Ses bu arada net mi? Böyle çok aşağıdan derinden gelen bir ses değil değil mi [öğrenci]?
+
+9
+00:06:08,564 --> 00:06:14,924
+Çünkü farklı bir bilgisayardayım. Mikrofon falan da değişik. Onun için net geldi. Tamam.
+
+10
+00:06:14,924 --> 00:06:30,284
+Sonra öyleyse. Şimdi birincisi şu void pointer ile alakalı basit bir örnek göstereceğim. Bu basit örnek. Gerçi void pointer'ı birazdan anlatalım. Önce programı parçalara bölme.
+
+11
+00:06:30,284 --> 00:06:33,284
+Şimdi biz şu ana kadar...
+
+12
+00:06:34,163 --> 00:06:43,663
+Bir proje, bir kod çalıştırdığımızda ne yapıyoruz? İşte devc++ da dosyadan yeni işte şey açıyorsunuz, source file açıyorsunuz.
+
+13
+00:06:44,663 --> 00:06:50,163
+Fakat hatta şu örnek üzerinde baktığımızda, bunu compile ettiğinde,
+
+14
+00:06:52,163 --> 00:06:58,663
+şu an hani ekranda gördüğünüz herhangi bir kaynak kod ne olduğu çok önemli değil.
+
+15
+00:06:59,699 --> 00:07:04,699
+Ama bu kaynak kodun sadece tek bir source file var. İşte bir şey nokta C.
+
+16
+00:07:05,740 --> 00:07:13,319
+Şimdi bunu değerlerken, bu arayüzümüz, dvc++ veya bunun gibi diğer uygulamalarda,
+
+17
+00:07:14,600 --> 00:07:20,000
+arkada bu projeyi değerleyip çalıştırmak için bir mekanizma kullanıyor.
+
+18
+00:07:21,199 --> 00:07:23,220
+Buna işte build mekanizması diyoruz.
+
+19
+00:07:24,692 --> 00:07:28,292
+Bakın bu kodun çalıştırılması için gerekli bir şey değil.
+
+20
+00:07:29,012 --> 00:07:33,812
+Kodu çalıştırmak için ne vardı? Compile vardı. Yani kaynak kodumuz vardı, source file.
+
+21
+00:07:35,331 --> 00:07:38,611
+Sonra bunu compile ediyorduk.
+
+22
+00:07:39,971 --> 00:07:45,331
+Compile ettikten sonra link aşamasını arka planda bir şeyler kendileri yapıyordu.
+
+23
+00:07:45,891 --> 00:07:50,611
+Sonra executable kodu ortaya çıkıyordu.
+
+24
+00:07:52,399 --> 00:08:03,919
+yaptığım şu compile işlem aslında şu ilk üç hatta ilk iki adımı içeren bir şey. Burada diyor ki şöyle bir mesaj diyor. Compiling single file.
+
+25
+00:08:05,120 --> 00:08:15,980
+Tek bir kaynak kodu değerlemeye çalışıyorum diyor. Bunu yaparken de diyor ki GCC diye bir şeyimiz vardı, derleyicimiz vardı. İlk hafta bununla alakalı bir örnek yapmıştım.
+
+26
+00:08:15,980 --> 00:08:17,299
+Komut satırı üzerinden.
+
+27
+00:08:17,908 --> 00:08:44,048
+Peki bu C compiler'ım buymuş. GCC'yi çalıştıracağım. Bu GCC'yi çalıştırırken kaynak kodum ne olacak? İşte şu CL'in içindeki, bilmem ne içindeki, şuradaki void pointer.c. Bunun bir obje faili olacak. Bu obje failinin üreteceği şey de şuradaki egze dosyası olacak. Bakın o hafta 15 klasörünü şöyle size göndereyim, göstereyim. Burada bir C dosyamız var. Bir tane de egze oluştu. Daha önceden bu yoktu.
+
+28
+00:08:44,563 --> 00:08:52,563
+Hatta şunu silelim, tekrardan compile edelim. Şunu yok edeceğiz.
+
+29
+00:08:56,563 --> 00:09:10,315
+Bu buraya tekrar geliyor. Şundan sonrakiler birazcık optimizasyon işleri. Yani ne ne ile nasıl değerleme yapılacak, kütüphaneler nasıl, statik kütüphaneler varsa bunlar yaparsın. Oraya şok şu an girmiyoruz.
+
+30
+00:09:10,451 --> 00:09:17,331
+Ve değerleme sonuçlandı diyor. Şimdi tek dosyaysa bu böyle. Şimdi ben dosya menüsünden yeni bir proje oluşturuyorum.
+
+31
+00:09:18,132 --> 00:09:22,771
+Bu projem işte boş bir konsol uygulaması olsun, C projesi olsun.
+
+32
+00:09:23,451 --> 00:09:25,771
+İşte proje 1 diyelim mesela.
+
+33
+00:09:28,412 --> 00:09:34,692
+Okey diyeceğim. Şimdi bu proje 1'imi nereye kaydetmek istediğimi söylüyor. Masa üstünde diyorum ki hafta 15'im vardı benim.
+
+34
+00:09:34,995 --> 00:09:41,755
+Şuraya bir projeler diyelim, böyle bir alt üst klasör açayım. Bunun içerisinde kaydet diyor.
+
+35
+00:09:42,755 --> 00:09:49,076
+Şimdi bu bakım bana bir kaynak kod oluşturdu. Şimdi bu kaynak kodun içinde yine tek bir dosya var.
+
+36
+00:09:50,435 --> 00:10:00,355
+Çalıştır dediğimde, mainlapta se'yi önce kaydetmemi söylüyor. Bakın şu an az önceki gelen mesaja göre birazcık farklı bir şey çıktı.
+
+37
+00:10:01,331 --> 00:10:15,011
+Compiling Project dedi. Single file demedi. Bu single file demediği için burada projeyle alakalı bir make file oluşturma yapıyorum diyor, build ediyorum diyor.
+
+38
+00:10:15,011 --> 00:10:26,591
+Ve az önceki açtığımız klasöre şöyle bir make file açıyor. Şimdi bunun ne olduğunu göreceğiz. Mantığını göreceğiz. Bu make file sizin aslında değerleme sürecinizi daha
+
+39
+00:10:27,379 --> 00:10:31,379
+Basit bir şekilde ve sistematik bir şekilde yapmanızı sağlıyor.
+
+40
+00:10:31,379 --> 00:10:33,379
+Sonra aşağıda devam ediyoruz.
+
+41
+00:10:33,379 --> 00:10:37,379
+Makefile'in nasıl çalıştığıyla alakalı şey var. Bunları birazdan anlatacağım.
+
+42
+00:10:37,379 --> 00:10:41,379
+Demek ki tek bir dosya olursa olay farklı. Şunu kapatalım.
+
+43
+00:10:41,379 --> 00:10:46,379
+Bakın bir proje oluşturdu da. Şimdi bu projenin içerisine bakıyorum.
+
+44
+00:10:46,379 --> 00:10:48,379
+Burada şu an sadece main.c var.
+
+45
+00:10:48,379 --> 00:10:54,251
+Biz buraya istersek kendimiz birazdan ekstra dosyalar ekleyeceğiz, fütfaneler ekleyeceğiz.
+
+46
+00:10:54,259 --> 00:11:03,259
+Bu tür fütüphaneleri beraber çalıştıracağız. Ve bunun build edilmesi, değerlenme aşaması tek bir dosya gibi değil.
+
+47
+00:11:03,259 --> 00:11:14,259
+Neden değil? Onu birazdan şimdi aşama aşama göreceğiz. Demek ki bir programı parçalamak ve make file oluşturmanın devsi tarafındaki şey buymuş.
+
+48
+00:11:14,259 --> 00:11:17,259
+Peki biz programı neden parçalara ayırırız? Şimdi...
+
+49
+00:11:18,131 --> 00:11:25,611
+Yazdığınız kodların hepsini tek bir C dosyasına yüklemek bir kere yeniden kullanılabilirliği azaltıyor.
+
+50
+00:11:26,891 --> 00:11:32,471
+Yani siz bir kod yazdığınızda onu başka yerlerde de kullanmak isteyeceksinizdir mantıklı olarak.
+
+51
+00:11:32,471 --> 00:11:43,391
+Bir projeye çalışıyorsunuz. Belki o proje birden fazla uygulama gerçekleştiriyor ve uygulamanın her birisi ortak olarak belli şeyler kullanıyor.
+
+52
+00:11:44,052 --> 00:11:49,172
+Şimdi şöyle düşünün, hepimizin mail adresleri var. Hepimiz mail gönderiyoruz.
+
+53
+00:11:49,172 --> 00:11:59,491
+Bu mail göndermeyle alakalı, işte Yıldız mail sayfasına girince işte bir arayüzünüz var ama, hepimizin mail gönderme işini yapan aslında tek bir tane kod var.
+
+54
+00:11:59,491 --> 00:12:07,092
+Mantığı aynı. Kimden kime hangi mesaj gidecek, attachment varsa nasıl gidecek? Bunun kodu tek bir tane.
+
+55
+00:12:07,092 --> 00:12:10,692
+Her birimizin hesabına ayrı ayrı bu koddan yazılmıyor.
+
+56
+00:12:10,964 --> 00:12:13,964
+Ne yapıyoruz? Bu kodu çağırarak bir servis alıyoruz.
+
+57
+00:12:13,964 --> 00:12:17,964
+Veya şöyle söyleyeyim, printf bir tane yazılmış bir kod.
+
+58
+00:12:17,964 --> 00:12:21,964
+Ama siz bütün projelerinizde printf'i ne yapıyorsunuz? Kullanıyorsunuz, çağırıyorsunuz.
+
+59
+00:12:21,964 --> 00:12:29,964
+Dolayısıyla büyük projelerde kendi kütüphanelerinizi yazmanız ve bu kütüphanelerinizi farklı şekillerde paylaştırmanız gerekir.
+
+60
+00:12:29,964 --> 00:12:34,964
+Bu dinamik kütüphaneler olabiliyor, statik kütüphaneler olabiliyor. Bunları birazdan konuşacağız.
+
+61
+00:12:38,131 --> 00:12:52,891
+main fonksiyonunun altında üstünde yazıyoruz ama başka dosyalara da yazabiliriz. Başka dosyalara yazarken fonksiyonların prototiplerini .h uzantılı dosyalara birazdan göreceğiz örneğini.
+
+62
+00:12:52,891 --> 00:13:02,795
+Fonksiyonların gerçeklemesini, implementasyonunu C dosyaların içerisinde yazıyoruz ve bu .h ile .c dosyalarını bir arada ilişkilendiriyoruz.
+
+63
+00:13:03,251 --> 00:13:13,251
+Yani siz include std.io yazdığınızda, işte bir printf çağırdığınızda aslında ne yapıyorsunuz? Bir header file üzerinden bir yerlerde yazılmış o printf'i çağırıyorsunuz.
+
+64
+00:13:15,251 --> 00:13:21,995
+Ve bu yazılmış C dosyalarının işte birisi .h, birisi C, ikisinin de...
+
+65
+00:13:22,484 --> 00:13:50,024
+ne olması lazım? İşte burada hani compiler'ın kafasının karışmaması için genellikle aynı isim olup olmadığına dikkat etmemiz gerekiyor. Benzer şekilde neler olabilir mesela? Örneğin global değişkenlerimiz var. Sadece fonksiyonlarınız değil, bazı global değişkenler vardır. İşte mesela pi sayısı diyelim bir yerde duruyor. Bu pi sayısını siz her seferinde her programın içerisinde gidip işte define olarak kopyalama yapıştırı yapmanıza gerek yok.
+
+66
+00:13:50,548 --> 00:13:54,908
+Bunu bir yere bir defa yazarsınız, oradan çağırırsınız. Bu size neyi sağlar?
+
+67
+00:13:54,908 --> 00:14:03,187
+Code application yaptığınızda, bir şeyi değiştirmek istediğinizde, gidip bir sürü yerden değiştirmek zorunda kalmayacaksınız.
+
+68
+00:14:03,187 --> 00:14:07,987
+Bakın ben buraya bir tane daha yeni bir C dosyeti ekleyeyim.
+
+69
+00:14:07,987 --> 00:14:11,668
+Yani geldim buraya mesela, buraya da bir define...
+
+70
+00:14:11,668 --> 00:14:14,067
+Ne yazamadık?
+
+71
+00:14:14,067 --> 00:14:18,227
+DefineP3.14 dedim.
+
+72
+00:14:21,011 --> 00:14:30,371
+Buraya da gelip define p 3.14 diyorum. Sonra diyorum ki ya benim hassasiyetim yeterli değil işte 3.14'ü şöyle birazcık arttırayım.
+
+73
+00:14:30,371 --> 00:14:37,811
+Şimdi gidip hepsinden ayrı ayrı değiştirme yapmak birazcık zahmetli. Projeler böyle her zaman bir iki tane dosyadan oluşmuyor.
+
+74
+00:14:37,811 --> 00:14:41,971
+Belki yüzlerce dosyadan oluşacak. Neyi nereye yazdığınızı bulamayacaksınız.
+
+75
+00:14:42,611 --> 00:14:52,611
+Bir yerde mesela p 3.14, bir yerde 3.145, bir yerde başka bir şey görünüyorsa, o zaman program yanlış davranışlar göstermeye başlayacaktır.
+
+76
+00:14:52,611 --> 00:15:00,611
+Dolayısıyla bu tarz sabitlerimiz de ne yapıyoruz? Tektir. Üst dosyaya yazıp onu an olarak çağıracağız. Peki.
+
+77
+00:15:02,611 --> 00:15:07,611
+Şunlar zaten söylediğimiz şeyler. Şimdi bakalım şurada basit bir örneğimiz var.
+
+78
+00:15:08,179 --> 00:15:12,179
+Bu örneği çalıştıracağım hatta, şimdi kopyalım.
+
+79
+00:15:12,179 --> 00:15:16,579
+Bir tane selamlama örneğimiz var. Main fonksiyonumuz şu.
+
+80
+00:15:18,579 --> 00:15:20,579
+Main'in içerisine alıyorum.
+
+81
+00:15:21,479 --> 00:15:25,379
+Çok böyle algoritmik derinliği olan bir örnek olmadığı için.
+
+82
+00:15:26,079 --> 00:15:33,379
+Tabii şu kopyalama yapıştırdığı da şuradaki tırnak işaretleri, bu Word formatındaki tırnak işareti, bunu C tanımaz arkadaşlar.
+
+83
+00:15:33,587 --> 00:15:48,947
+Bunları şununla değiştirmek gerekiyor. Nedense slide'da muhtemelen PowerPoint'in kendi şeyinden kaynaklı olarak bir yazı formatından böyle görün. Şimdi benim salut.c diye bir dosyam daha olacak. Onu da şöyle kaydedelim. Şuraya zaten açmıştık.
+
+84
+00:15:51,507 --> 00:15:52,867
+Salut.c.
+
+85
+00:15:54,747 --> 00:15:56,147
+S'sini küçük yapalım.
+
+86
+00:15:57,327 --> 00:15:58,667
+Bu ne yapıyor? Sadece bir tane
+
+87
+00:16:00,692 --> 00:16:07,412
+selam yazan fonksiyona sahip. Bu fonksiyonun, şimdi buraya bir tane daha dosya ekleyeceğim.
+
+88
+00:16:08,932 --> 00:16:15,172
+header file'ini yani fonksiyonun prototipini yazmam lazım. Onu da header file'in içerisine atıyorum.
+
+89
+00:16:17,731 --> 00:16:25,572
+Şimdi burada conditional compilation direktiflerimiz de var. Diyor ki, şimdi önce şunu da kaydederim, ondan sonra buraya geleyim.
+
+90
+00:16:27,604 --> 00:16:52,283
+salut.h diyeceğim buna. Bunu header file olarak söyleyeceğiz. Bakın bunun görüntüsü de klasörde farklıdır. Gerçi şey burada benim arayi göstermiyor da neyse. Şimdi bu diyor ki ben mail içerisinden bakın salut.h'ı input ediyorum.
+
+91
+00:16:53,491 --> 00:17:09,851
+Salut.c'yi include etsin. Bu salut.h diyor ki, burada bir tane şey tanımlanacak, bir fonksiyon var. Void point, hiçbir pointer almayacak. Yani şuraya void yazmak zorunda değiliz. Void hiçbir şeyde değer döndürmüyor. Böyle bir fonksiyon.
+
+92
+00:17:11,051 --> 00:17:18,271
+Peki şu başındaki şeyler ne? Eğer diyor daha önce salut.h tanımlanmamışsa, böyle bir fonksiyon prototipi tanımla ve bitir.
+
+93
+00:17:18,836 --> 00:17:25,076
+Bu da ne demek? Siz mesela bu fonksiyonunda bu kodu çalıştığınızda şurayı bir defa tanımlarsınız.
+
+94
+00:17:26,436 --> 00:17:29,876
+Sonraki denemelerinizde tekrardan bunu değerlemeye gerek kalmıyorsun.
+
+95
+00:17:30,516 --> 00:17:32,516
+Zaten değerlenmiş hali vardır.
+
+96
+00:17:33,796 --> 00:17:39,396
+Şimdi bakın mail üzerine geliyorum. Yine Compile menüsünden değerleyeceğim.
+
+97
+00:17:40,115 --> 00:17:41,316
+Bakın dedi ki...
+
+98
+00:17:42,387 --> 00:17:47,507
+Böyle bir şey değerliyorum dedi. Bununla alakalı bir şey yapıyorum dedi. Bunun ne olduğunu detaylı bakacağız.
+
+99
+00:17:47,507 --> 00:17:52,947
+Sonra bakın bunun içine gittiğimde benim main.semi main.o olarak değerledi.
+
+100
+00:17:52,947 --> 00:18:03,907
+Salute.semi salute.o olarak değerledi. Sonra bu salute.o ve main.o'yu proje.exe olarak executable haline getirdi.
+
+101
+00:18:03,907 --> 00:18:09,907
+Çünkü ne olmasa bir proje hem şu dosyası şu dosyadan hem de şu dosyadan oluşuyor.
+
+102
+00:18:10,291 --> 00:18:16,051
+Bu ikisinin tamamı bir şey. Arada da bağlamak için şu header file'ini kullanıyoruz.
+
+103
+00:18:16,051 --> 00:18:26,931
+Peki gelelim, bakın burada şu an proje 1.exem var. Çalıştırıyorum. Tabii çalışır çalışmaz hemen uygulama kapanıyor. Çünkü yazdırıp kapandığını görüyoruz.
+
+104
+00:18:26,931 --> 00:18:36,291
+Comment line'a gelelim, cmd'yi açalım. Şimdi ben o pet'e gideceğim. Cd desktop diyelim.
+
+105
+00:18:37,236 --> 00:18:49,796
+CD, Vestap, CD, Halkta 15'e gidelim. Halkta 15'in türesi yokmuş. CD projelere gidelim.
+
+106
+00:18:53,011 --> 00:19:07,731
+ır diyeyim, bakayım buradan. Evet, burada şu an proje 1.exe var. Proje 1.exe'yi çalıştır diyorum ve bana şurada gördüğümüz mesajı yani executable file'imi gösteriyor.
+
+107
+00:19:09,731 --> 00:19:13,731
+Evet, mesele bu arkadaşlar. Birincisi header file'leri kullanarak biz
+
+108
+00:19:14,355 --> 00:19:21,355
+Bir şeyi böyle parçalar ayırabilir. Tabi bu örnek birazcık saçma. Yani sadece merhaba yazdırmak için kütüphane yazılmaz.
+
+109
+00:19:21,355 --> 00:19:33,355
+Ama şöyle birazdan bir tane matematiksel işlemleri yapan bir örnek yapacağız. Örneğin siz ana programdan dizi işlemleri yapan bir kütüphaneye ihtiyacınız var.
+
+110
+00:19:33,355 --> 00:19:41,355
+Şimdi gidip o kütüphanenin tamamını buraya yazmayacaksınız. Dizi işlemleri altında bir kütüphane C dosyanız ve header file'nız olacak.
+
+111
+00:19:41,907 --> 00:20:04,827
+Sonra matris işlemleri için belki ayrı şeye ihtiyacınız var. Matrisin içerisinden diziyi kullanabilirsiniz. Düşünün. Matris sonuçta bir dizinin kompleks hali. Sonra karmaşık sayılarla alakalı işlemleriniz var. Bu karmaşık sayılarla alakalı ayrı bir kütfaklığınız var. Ve bu main içerisinden ve birbirleri içerisinden bunları header filerle çağırıp kullanabiliyorsunuz.
+
+112
+00:20:07,092 --> 00:20:33,952
+Yani bunu derlemenin yolu, az önce şurada gösterdiğim, önce salut.c'yi, ha burada bir dependentsi var. Şimdi bu program çalışırken main.c kime ihtiyaç duyuyor? STD.io'ya ihtiyaç duyuyor. Bu zaten derlenmiş bir şey. Bunda sıkıntı yok. Ama salut.h'a da ihtiyacımız var. Bu salut.h da kendi içinden salut.c ile alakalı. O zaman ne olması lazım arkadaşlar? Dikkat edin. Önce salut.c ilerleyeceğiz.
+
+113
+00:20:34,319 --> 00:20:36,319
+Sonra main'i değerleyeceğiz.
+
+114
+00:20:36,319 --> 00:20:40,319
+Sonra bunların obje pahillerini bir araya getirip executable şey oluşturacağız.
+
+115
+00:20:40,319 --> 00:20:43,319
+Bakın şunların yerini değiştirirsek olmaz.
+
+116
+00:20:43,319 --> 00:20:46,319
+Çünkü main'in değerlenmesi için önce salut'un değerlenmesi lazım.
+
+117
+00:20:46,319 --> 00:20:48,319
+Buna da dependency diyoruz.
+
+118
+00:20:48,319 --> 00:20:57,319
+Zaten bu dependency'den kaynaklı olarak bizim biraz önce bu şekilde şöyle kod yazarak sürekli değerleme yapmamız bir yerde zor oluyor.
+
+119
+00:20:57,319 --> 00:21:01,319
+Yani şu kodu sürekli yazmak, değerleme kodunu sürekli yazmak kötü bir şey.
+
+120
+00:21:01,811 --> 00:21:10,811
+Elimizde böyle bir ide de yoksa, ide neyi algılıyor? Bunlar arasındaki değerlemeyi algılıyor ve optimize etmeye çalışıyor. Hani bu da ayrı bir dava.
+
+121
+00:21:10,811 --> 00:21:16,811
+Ama bunu daha sistematik yapan ve daha kolay yapan bir şeye doğru ilerleyeceğiz.
+
+122
+00:21:16,811 --> 00:21:18,811
+Devam edelim.
+
+123
+00:21:18,811 --> 00:21:24,811
+Tabi bu birkaç tane dosyanın olduğu şeyi derlerken
+
+124
+00:21:25,364 --> 00:21:51,844
+File 1, File 2, bunların headerları, mesela bir tane File 1 var, onun headerı var, File 2 var, onun headerı var, File 3 var, onun headerı var, sonra Main var, onun headerı var. Bunların hepsinin bir ayrı ayrı değerleme sürecinden geçmesi lazım. Örneğin mesela Green, Common ve Blue demiş. Yani yeşil, mavi ve ikisinin ortak olduğu bir header var. Şimdi siz bunları değerlarken şu mesela iki defa değerlenebilir.
+
+125
+00:21:52,788 --> 00:21:58,788
+İşte şu if not defined dediğimiz şey, şu common içerisindeki şey, ne yapıyor? İki defa değerlemeyi önlüyor.
+
+126
+00:21:58,788 --> 00:22:04,788
+Çünkü green'i değerlerken zaten bu header'ı kullanıyorsun, blue'u değerlerken bu header'ı bir daha kullanıyorsun.
+
+127
+00:22:04,788 --> 00:22:16,460
+O zaman işler karışmaması gerekiyor. Bunları not defined falan yaparak kullanıyoruz ve ortaya tek bir programımız oluşacak, oluşuyor diyebiliriz.
+
+128
+00:22:17,715 --> 00:22:32,135
+Mesela üç tane şey için, bu dosya için green ve blue bir de yani main'i düşündük olsak işte green'i derledik, blue'u derledik, green ve blue'yu birleştirdik ve bunlardan executable file oluşturduk diyebiliriz.
+
+129
+00:22:32,855 --> 00:22:39,275
+Şimdi şu make command'e gelene kadar biz şurada anlattığımız bir örnek üzerinde, daha mantıklı bir örnek üzerinde görelim.
+
+130
+00:22:42,324 --> 00:22:46,483
+Projeyi böyle dc ile oluşturmayacağım. Yani normal kapatıyorum.
+
+131
+00:22:47,483 --> 00:22:51,483
+Hatta bunu close diyelim. Doğrudan kapatalım.
+
+132
+00:22:57,619 --> 00:23:08,259
+Örneğin, işimiz basit olsun diye bir matematiksel işlemler yapan bir şey tanımlayalım. Hatta nerede yazabiliriz? Notepad++'da yazalım.
+
+133
+00:23:10,299 --> 00:23:15,460
+Yani illaki her zaman şeye ihtiyacımız yok. Bunları kapatayım.
+
+134
+00:23:21,748 --> 00:23:27,948
+Birincisi, mesela ne olsun, factorial ve üst alma işlemleri yapan bir tane kütüphane yazalım.
+
+135
+00:23:29,428 --> 00:23:39,868
+Şimdi, bununla nesi olacak mesela, önce fonksiyonları yazılmayı, int factorial diyelim, bir tane n sayısı alacağız.
+
+136
+00:23:41,188 --> 00:23:43,528
+Hani işin algoritmik tarafına çok fazla girmiyorum.
+
+137
+00:23:44,528 --> 00:23:47,788
+Çünkü, hani mantığını öğrenelim yeter burada.
+
+138
+00:23:54,867 --> 00:24:01,127
+İşte bir tane R'miz var, başlangıçta bir. Bir tane İ'miz var.
+
+139
+00:24:02,127 --> 00:24:09,067
+Or, İ eşittir birden. İ küçüktür. Eşittir N'ye kadar.
+
+140
+00:24:09,067 --> 00:24:10,268
+Artı artı.
+
+141
+00:24:15,251 --> 00:24:38,471
+Mesela burada da bir tasarımla alakalı bir şey söyleyeyim arkadaşlar size. Örneğin bir göreviniz var ama göreviniz hani bu fonksiyonun doğruluğunu test etmekteyiz, bu fonksiyonun doğru çağrıldığını test etmez. Yani gerçekten bu faktöryel fonksiyonunu doğru bir şekilde çağırıyormuşsunuz. İşte header file falan. O zaman bu faktöryel kodunu yazmanıza gerek yok.
+
+142
+00:24:42,291 --> 00:25:05,071
+R eşittir 258. Yani şurayı yorum satırı kabul edin. Şu kısmı. Siz bu fonksiyonu doğru çağırdığınızda, buradan da 258 return doğru değeri aldığınızda, demek ki ben bu fonksiyonu doğru çağırabiliyorum. Hani buradaki örnek basit olduğu için kodu 3-5 satır yazarsınız da, eğer amacınız ilk aşamada o koda doğru erişim sağlayabiliyorsanız,
+
+143
+00:25:05,811 --> 00:25:11,811
+O kodun nasıl çalıştığıyla alakalı bir kontrol yapmanız beklenmiyor. Doğru erişim sağlıyor musunuz? Buna stop diyoruz.
+
+144
+00:25:11,811 --> 00:25:17,811
+Ne yaparsınız? Şuraya kendiniz basittir return değeri yazarsınız artık işin mantığı neyse.
+
+145
+00:25:17,811 --> 00:25:25,811
+Ha 258 görüyorsam demek ki ben bu koda doğru erişim sağlayabiliyorum. Ondan sonra kodun içerisi yazılacak da yazılır ayrı mesele.
+
+146
+00:25:25,811 --> 00:25:31,811
+Şimdi benim burada yaptığım şey bu. Bir tane üst al fonksiyonu yazalım. Power diyelim.
+
+147
+00:25:32,948 --> 00:25:37,448
+Ne olacak? İşte bir tabanın işte x üzeri n'e saklayalım.
+
+148
+00:25:54,644 --> 00:26:18,023
+1'den başlayacağız. N'e kadar gideceğiz. R eşittir. Tabi R'yi başlangıçta şurada 1 alalım. R çarpı x diyelim. Buna göre örnekleri çoğaltabilirsiniz. Örneğin bir kişileri dosyaya ekleme ile alakalı dosya işlemleriniz var. Dosyaya yaz.
+
+149
+00:26:18,804 --> 00:26:24,824
+Dosyadan kayıt sil, dosyadan güncelle, dosyadaki kayıtları göster, listele, dosyadaki kayıtları sırala.
+
+150
+00:26:25,764 --> 00:26:29,864
+Ne bileyim, dosyadaki kişinin adını güncelle, dosyadaki kişinin soyadını güncelle.
+
+151
+00:26:30,744 --> 00:26:34,104
+Bunların her biri bir fonksiyondur ve bu fonksiyonları burada arttırmanız gerekiyor.
+
+152
+00:26:34,784 --> 00:26:35,744
+Ben bunu kaydediyorum.
+
+153
+00:26:37,084 --> 00:26:40,384
+Kaydederken yine masa üstüme geleceğim.
+
+154
+00:26:43,664 --> 00:26:44,744
+Apto 15.
+
+155
+00:26:45,875 --> 00:26:47,875
+Projeler demeyelim.
+
+156
+00:26:49,236 --> 00:26:51,236
+Yeni bir klasör açalım.
+
+157
+00:26:52,516 --> 00:26:54,115
+Kütüphane diyeyim buna.
+
+158
+00:26:54,115 --> 00:26:56,115
+Şey veya matematik.
+
+159
+00:26:56,516 --> 00:26:57,875
+Ne diyelim?
+
+160
+00:26:58,355 --> 00:27:00,355
+Matematik diyelim.
+
+161
+00:27:03,155 --> 00:27:05,155
+Şimdi buraya bunu kaydedelim.
+
+162
+00:27:05,155 --> 00:27:06,596
+Bunu normalde
+
+163
+00:27:07,395 --> 00:27:10,516
+şimdi mat, mat nokta haş olduğu için mat diye kaydetmeyelim.
+
+164
+00:27:10,516 --> 00:27:12,036
+My mat diyelim.
+
+165
+00:27:13,299 --> 00:27:39,419
+mymat.c. Bunu kaydediyorum. C source file olarak kaydettik. Şimdi bize ne lazım? Bunların header file'larını oluşturmamız lazım. Header file'i ne var bunda? Faktüriyel ve power için şu fonksiyonların prototipleri var. Başka bir şey yok. Şimdi şunu alacağım. Buraya kaydedeceğim. Bunu alacağım. Buraya kaydedeceğim.
+
+166
+00:27:44,147 --> 00:27:54,587
+Yalnız bunların doğrudan bu şekilde yazılmasını istemiyorum. Şimdi C'yi burada header olarak görebilir miyiz? Neyse C olarak konuşalım.
+
+167
+00:27:54,587 --> 00:28:05,707
+İşte diyoruz ki burada if not defined, eğer bu daha önce define edilmemişse if, ne, ne demek not demek, that de defined demektir.
+
+168
+00:28:06,036 --> 00:28:12,256
+Burada bir etiket veriyoruz. Genellikle bu etiketlerde, hani bu bir makro şeyi olduğu için büyük harflerle yazılır.
+
+169
+00:28:12,256 --> 00:28:27,256
+My mat dedik ya, yani alakalı olsun diye yazacağımız bir header file şey. Eğer bu daha önce tanımlanmamışsa, bunu define et.
+
+170
+00:28:30,324 --> 00:28:34,264
+my mat.h
+
+171
+00:28:34,264 --> 00:28:36,824
+ve şurada da getirip
+
+172
+00:28:38,524 --> 00:28:41,124
+and if yazıyor.
+
+173
+00:28:41,824 --> 00:28:43,324
+Bunu da kaydediyorum.
+
+174
+00:28:45,324 --> 00:28:49,824
+Bu da my mat.hader file olarak
+
+175
+00:28:50,824 --> 00:28:52,324
+kaydedilecek.
+
+176
+00:28:53,124 --> 00:28:54,624
+Bakın şöyle gelelim.
+
+177
+00:28:56,660 --> 00:29:00,340
+Bir header'ımız var, bir de şeyimiz var.
+
+178
+00:29:03,740 --> 00:29:08,660
+Şu an uzantıları gördüğümüz için bunlar zaten bir tanesi header, bir tanesi şey sorusu olarak geliyor.
+
+179
+00:29:08,660 --> 00:29:14,019
+Şimdi bunlar matematikler işlemlerle yaklaşık. Benim bunu, hani projem kabul edelim ki bu kadar.
+
+180
+00:29:14,900 --> 00:29:20,180
+Önce main'e tarafına dönüşeceğim. Şimdi main tarafına geliyorum. Buna bir şey daha ekleyeceğiz birazdan.
+
+181
+00:29:23,508 --> 00:29:25,508
+include
+
+182
+00:29:27,847 --> 00:29:31,508
+Şimdi, biz std.io.h'i
+
+183
+00:29:32,067 --> 00:29:36,867
+neden küçüktür, büyüktür arasında yazıyoruz? Bütün projenin değerlendiği yerdeki
+
+184
+00:29:37,268 --> 00:29:44,307
+uzaya bakması lazım. Bu proje GCC'nin olduğu programın nerede kurulduğu yer, std.io orada.
+
+185
+00:29:44,468 --> 00:29:48,307
+Benim projem işte masaüstündeki klasörün üzerine. Onun için oradan bakıyoruz.
+
+186
+00:29:48,708 --> 00:29:49,748
+include
+
+187
+00:29:50,771 --> 00:30:01,991
+Burada işte tırnak kullanmamız lazım. My mat.h. Bunu getiriyorum. Sonra int main.
+
+188
+00:30:05,299 --> 00:30:09,799
+yapacağım. Burada diyelim ki, printer.
+
+189
+00:30:13,715 --> 00:30:17,715
+fonksiyonlarımızdan birisinin, işte faktöryel fonksiyonumuzu çağıralım.
+
+190
+00:30:18,715 --> 00:30:25,611
+Diyelim ki, 5 faktöryel eşiktir, yülle de.
+
+191
+00:30:29,715 --> 00:30:43,276
+Faktöriyel fonksiyonumuzu 5 olarak çağırdık. Şimdi faktöriyel fonksiyonu normalde burada yok. Printf de burada yok. İşte printf nereden geliyor? Şuradan geliyor. Faktöriyel nereden gelecek? Bunun üzerinden gelecek.
+
+192
+00:30:44,715 --> 00:30:53,715
+Bunu da böyle yazalım. Şu an için başka bir şeye gerek yok. MyMet.ca. Şimdi bunu da mail.c olarak kaydedeceğim.
+
+193
+00:31:01,364 --> 00:31:26,743
+Tamam. Şimdi geliyorum bunu değerlemeye. Normalde bizim yapmamız gereken, bakın şöyle uzunca bir iş. Tamam programımız yazıldı da, hadi bilgisayarımızda GCC dediğimiz bir değerleyici de var. GCC, burada GCC doğrudan çalışmıyor olmuş. GCC doğrudan çalışmıyorsa o zaman bunu environmental variable'a ekleyeceğiz. Tamam onu da yapalım.
+
+194
+00:31:28,468 --> 00:31:33,468
+Bu farklı şekillerde eklenebilir arkadaşlar. Bilgisayarın özelliklerine geliyorum.
+
+195
+00:31:34,468 --> 00:31:39,468
+Çünkü GCC'yi şu an şu comment promptu komut olarak tanımadı.
+
+196
+00:31:39,468 --> 00:31:42,468
+Bilgisayarın özelliklerinde
+
+197
+00:31:44,468 --> 00:31:46,468
+Şurada Advanced
+
+198
+00:31:46,468 --> 00:31:49,468
+Veya şöyle Environment
+
+199
+00:31:51,468 --> 00:31:54,316
+Variable'lar dediğimiz, şuraya geleceğiz.
+
+200
+00:31:54,900 --> 00:32:08,900
+Sistem özelliklerinden environment beraber. Benim burada pet kısmında bir havuzum var. Bu havuz, bilgisayarınızdaki doğrudan çalıştırılabilir komutların bulunduğu adresleri size söylüyor.
+
+201
+00:32:08,900 --> 00:32:20,204
+Bunu edit dediğimizde şu .net park ile uygulamalar varmış ama bakın burada şey, mesela Python doğrudan çalışıyor. Ben burada Python yazsam, bakın Python çalıştırdı.
+
+202
+00:32:21,299 --> 00:32:23,299
+Çünkü onu da aynı zamanda koymuşuz.
+
+203
+00:32:24,299 --> 00:32:26,299
+Kontrolizemiz diyeceğiz.
+
+204
+00:32:26,299 --> 00:32:30,299
+Ama baka C yok. Şimdi C'nin gcc derlecisi buraya ekleyeceğim.
+
+205
+00:32:30,299 --> 00:32:35,299
+Yeni dediğimde buraya bir yol söylemem lazım. Şimdi yol da şöyle.
+
+206
+00:32:35,299 --> 00:32:40,299
+Benim C derleyicim C'nin içerisindeki program files'in içerisinde değil.
+
+207
+00:32:40,299 --> 00:32:45,299
+Şurada olacak. Devcpp'nin içinde. Çünkü bu programı biz böyle kuruyoruz.
+
+208
+00:32:46,003 --> 00:33:09,003
+Mingi'ye ve 64'ün içinde, 1000'in içinde, şurada GCC. Yani bakın şu yolu, şu klasör yolunu şuraya bir defa tanıtacağım. Yeni diyelim, buraya kaydet diyorum, okey diyorum. Bu önceden daha zordu. Bu bilgisayar için kullanıcı variable, isterseniz bunu sistemin tamamına ekleyebilirsiniz. Yani buraya da yeni diyebiliriz.
+
+209
+00:33:11,763 --> 00:33:25,583
+Veya şöyle diyelim, edit diyelim önce, new diyelim, şöyle de ekleyebiliriz. Şimdi bunu set ettikten sonra tekrar GCC yazdığımızı şu an için görmüyor. Bunu kapatıp açmam gerekecek.
+
+210
+00:33:29,172 --> 00:33:33,571
+YCC yazmış. Bakın diyor ki şu an YCC var ama bir input faili vermedi.
+
+211
+00:33:33,571 --> 00:33:42,211
+Evet. Neredeyiz? Şu hafta 15 klasörümüz neredeydi? Bir dakika onu bir bulayım tekrardan.
+
+212
+00:33:42,211 --> 00:33:52,851
+Hafta 15 klasörümüz burada. Benim bu klasörün altına gitmem lazım. Şunu da şöyle ayarlayabilirsem.
+
+213
+00:33:56,948 --> 00:34:13,387
+Şimdi ben user içerisindeki PC'deyim. Yani C'nin içinde, users'ın içindeki PC'deyim. C'de, yani bu PC'nin içinden desktop'a geç diyorum, masa üstüne geç. C'de altta 15'e geç.
+
+214
+00:34:16,688 --> 00:34:21,127
+Oradan da C'de matematik tops'a geç.
+
+215
+00:34:22,208 --> 00:34:23,104
+Şimdi burada...
+
+216
+00:34:23,103 --> 00:34:37,103
+Dosyalara bak dediğimde main var, mymat var, c olarak da header var. Başka bir şey mi diyor? Bunları tek tek değerleyeceğiz. Değerleme yaparken önce benim mymat.h'ı değerlemem gerekiyor.
+
+217
+00:34:38,043 --> 00:34:45,763
+Diyorum ki burada gcc. Şurayı birazcık böyle yapalım. İkisini de aynı anda görün.
+
+218
+00:34:51,347 --> 00:34:52,527
+İlk yapacağım şey
+
+219
+00:34:52,527 --> 00:34:55,827
+bunu derleme
+
+220
+00:34:55,827 --> 00:34:57,168
+yapacağımızı söylemek için
+
+221
+00:34:57,168 --> 00:34:58,327
+track, c, c, c, y,
+
+222
+00:34:58,327 --> 00:35:00,007
+compilet, g, c, c, y
+
+223
+00:35:00,007 --> 00:35:02,547
+ve matematik nokta
+
+224
+00:35:02,547 --> 00:35:03,867
+pardon
+
+225
+00:35:03,867 --> 00:35:06,168
+şuraya gelelim. Yanlış yerdeyiz.
+
+226
+00:35:07,208 --> 00:35:07,827
+MyMath.
+
+227
+00:35:07,827 --> 00:35:08,447
+O.
+
+228
+00:35:13,172 --> 00:35:31,692
+mymat.c dosyasını derlediyorum. Bunu derlediğinde bize üreteceği bir dosya ismi var. Bunun ismini kendiniz söyleyebiliyorsunuz. Mesela şöyle çalıştırdığınızda, bakın buraya otomatik olarak bu dosyayla aynı isimde olacak şekilde mymat.o.
+
+229
+00:35:39,539 --> 00:36:05,659
+diye söylerseniz, size o isimde hatta mymathematic.o diye söylerseniz, size o isimde üretir. Default değerini kullanmamız bizim için yeterli. Bunun içerisine hatta sizinle ilk derste bakmıştık. Bu bir obje failiydi. Bunun daha önceleri vardı. Tres, hs falan vardı. O ilk derste yaptığımız örneklere bakarsınız. Bu tamam. Yani hedefimiz neydi?
+
+230
+00:36:06,324 --> 00:36:15,923
+Şu mymat.c'yi değerlemek için değerlenmiş hali var. Şimdi bir şey daha değerlememiz lazım. Main.c'yi değerlememiz gereken.
+
+231
+00:36:15,923 --> 00:36:23,724
+Bunu da değerleriz. Bu şekilde. Main.c'yi de değerlendir. Şimdi bu ikisinin birleştirilmesi gerekiyor.
+
+232
+00:36:23,724 --> 00:36:33,923
+Tabi bu ikisinin obje filerinin birleşmesi gerekiyor. Şimdi burada diyorum ki gcc yap. Şimdi bu bir compile işlemi değil. Bunları artık link edeceğiz.
+
+233
+00:36:34,387 --> 00:37:00,827
+main.o'yu birleştir. Ondan sonra main.o'dan sonra my mat.o'yu birleştir. Bunları output olarak my program.exe diye ikisini birleştirmiş halini yaz. Enter dediğimde bakın buna my program.exe'yi getirdi. Artık ben bu programı da oradan çalıştırabilirim.
+
+234
+00:37:02,164 --> 00:37:05,844
+5 faktörer 120. Burada anlaşılmayan bir şey var mı?
+
+235
+00:37:11,219 --> 00:37:26,960
+Peki, şimdi buna bir kütüphane daha ekleyeceğim. Bu da mesela ne olsun? Diziler olsun. İşte dizinin, bir dizinin toplamı, bir dizinin en büyük elemanı. İki tane fonksiyon, basit fonksiyonu da buna yazalım.
+
+236
+00:37:28,579 --> 00:37:37,659
+Şimdi dikkat edin bakın, my metin içerisinde, aslında şey, my metin içerisinde şunu da yazmamız lazımdı. Şu an ikisi de aynı.
+
+237
+00:37:38,079 --> 00:37:42,079
+şey olduğu için, aynı uzantı olduğu için ikisi birbirini gördüler.
+
+238
+00:37:42,079 --> 00:38:05,079
+Suriye, Include, aslında yazabiliriz. Bu fonksiyonların prototiplerini, otomatik çünkü kendisi tanımladığı şey, mymet.h, sını include etmemiz gerekiyor. Bunu unuttuk. Şimdi dizi işlemleri için de benzer şeyi yapacağım.
+
+239
+00:38:06,195 --> 00:38:32,556
+Önce header file'ini yazalım. Yani burada da tersten gelin. Mesela bir dizinin toplamını bulalım. İşte bir şeyin toplamı olsun. Integer, buraya bir tane pointer falan kullanmadan bir dizi alalım. Dizinin eleman sayısını alalım sadece. İşte bu dizi şudur ve eleman sayısı budur bu şekilde. Ve yine bir dizinin bir tane de maksimum'u bulan fonksiyonumuz olsun.
+
+240
+00:38:35,827 --> 00:39:01,327
+Max diyelim. Şimdi bunları ne yapmamız lazım? Bir header şuradakine benzer şekilde if not defined yapacağız. Eğer daha önce tanımlanmadıysa falan diye. Şimdi my mat.j demeyeceğiz. My divi header diyelim buna daha değil. Eğer divi header diye bir şey tanımlanmadıysa divi header'ı tanımla ve
+
+241
+00:39:02,579 --> 00:39:03,739
+and if yap.
+
+242
+00:39:05,019 --> 00:39:06,460
+Bunu da kaydediyorum.
+
+243
+00:39:07,679 --> 00:39:09,460
+Bu da mydizi.header olsun.
+
+244
+00:39:15,092 --> 00:39:19,592
+C olmayacak, nokta h, mydv.
+
+245
+00:39:22,292 --> 00:39:25,792
+Bununla alakalı şu iki fonksiyonu gerçekleştiren,
+
+246
+00:39:27,391 --> 00:39:33,592
+bu fonksiyonların tanımlarının yapıldığı şeyleri artık implementasyonlarını yazacağız buraya da.
+
+247
+00:39:34,092 --> 00:39:35,292
+Şöyle alalım.
+
+248
+00:39:41,331 --> 00:39:44,211
+Dizi toplamı ile alakalı basit bir kod.
+
+249
+00:39:45,331 --> 00:39:48,211
+Integer t eşittir 0 diyorum.
+
+250
+00:39:55,603 --> 00:40:01,363
+i sıfırdan başla, i küçüktür, n'ye kadar git, i art artı.
+
+251
+00:40:13,268 --> 00:40:17,708
+Toplam artı eşittir.
+
+252
+00:40:18,708 --> 00:40:21,708
+Bildiğinin iyisi.
+
+253
+00:40:26,068 --> 00:40:27,347
+ve turn 10.
+
+254
+00:40:28,488 --> 00:40:29,427
+Voodoo da.
+
+255
+00:40:34,260 --> 00:40:35,084
+yapıları.
+
+256
+00:40:38,996 --> 00:40:40,836
+Max eşittir sıfırıncı olsun.
+
+257
+00:40:42,476 --> 00:40:45,216
+Burada da şeyi tutalım.
+
+258
+00:40:47,756 --> 00:40:48,136
+If
+
+259
+00:40:48,136 --> 00:40:50,896
+Dizinin
+
+260
+00:40:50,896 --> 00:40:52,956
+iyisi
+
+261
+00:40:52,956 --> 00:40:56,195
+Şunu da birden başlatalım.
+
+262
+00:40:58,136 --> 00:40:59,416
+Büyükse dizinin
+
+263
+00:40:59,416 --> 00:41:01,356
+Max'ıncı elemanından
+
+264
+00:41:07,251 --> 00:41:20,871
+Max eşittir. İyi olsun. Buradan da dizinin Max'ını gönder. Şurada ne yapacağız arkadaşlar? Aynı bakın şunda olduğu gibi.
+
+265
+00:41:24,115 --> 00:41:28,556
+mydizi header file'ini yapacağız.
+
+266
+00:41:29,556 --> 00:41:34,076
+Bunu da mydizi nokta C olarak kaydediyoruz.
+
+267
+00:41:36,175 --> 00:41:38,055
+Şimdi projemiz büyüdü.
+
+268
+00:41:38,775 --> 00:41:40,515
+Büyüdüğü için ne yapmamız lazım?
+
+269
+00:41:41,655 --> 00:41:43,355
+Bir kere main'e de geliyorum.
+
+270
+00:41:43,475 --> 00:41:47,015
+Diyorum ki, bir tane dizi oluştur.
+
+271
+00:42:00,788 --> 00:42:01,708
+Prenzelt.
+
+272
+00:42:06,739 --> 00:42:08,419
+izi toplama.
+
+273
+00:42:15,411 --> 00:42:15,911
+Hopla.
+
+274
+00:42:30,003 --> 00:42:31,003
+izin bak.
+
+275
+00:42:32,164 --> 00:42:33,664
+Priya'yüzele ney-el-yaz.
+
+276
+00:42:47,507 --> 00:42:57,327
+Herhalde doğru. Şimdi bizim ne yapmamız lazım? Şu ana kadar yaptığımız işlemlerden mymat.h değişmedi ama myc değişti, mainc değişti.
+
+277
+00:42:58,027 --> 00:43:05,347
+My dizi diye bir şey geldi. Yani bakın şu an şunu kapatalım. Şuradakilerin çoğu çöp oldu.
+
+278
+00:43:05,347 --> 00:43:12,167
+O kadar yazdığımız kod içerisinde. Main'i tekrardan derleyeceksin.
+
+279
+00:43:12,947 --> 00:43:32,347
+MyDizy diye bir şey geldi, onu tekrardan değerleyeceksin gibi gibi bir sürü iş. Şimdi, önce şeyden, şunları silelim hatta. O file'larını silelim. Tipe göre sıralayayım. Şunları siliyorum.
+
+280
+00:43:41,235 --> 00:43:43,235
+Dvc'yi kaydetmedik mi ya?
+
+281
+00:43:45,436 --> 00:43:46,836
+Yok, kaydetmişiz.
+
+282
+00:43:49,235 --> 00:43:52,836
+Eksik olan, ha iki tane bundan, tamam, şu an tamam, doğruyu.
+
+283
+00:43:55,987 --> 00:44:12,288
+Yapacağımız şey önce my.mati.c'yi tekrardan, hiç değiştirmesek bile bu mantıkta ne yapıyoruz? Tekrardan obje failini oluşturuyoruz. Sonra my.dd.c'yi oluşturuyoruz.
+
+284
+00:44:14,827 --> 00:44:20,047
+Demiş ki, bakın diyor ki bunu diyor derlerken şöyle bir hatayla kaçtım. Hadi gel bakalım.
+
+285
+00:44:20,532 --> 00:44:24,532
+MyDB.c'nin içerisinde hatamız neredeymiş?
+
+286
+00:44:24,532 --> 00:44:34,532
+13. diyor, şurada diyor, bu fonksiyon içerisinde diyor, max'in içerisinde, iyi diyor, declare etmemişsin diyor. Evet, declare etmemişiz.
+
+287
+00:44:34,532 --> 00:44:40,532
+Geldik buradan bir daha, kaydediyoruz tekrardan.
+
+288
+00:44:40,532 --> 00:44:44,460
+Şimdi tekrar yap dediğimizde. Sonra diyor ki...
+
+289
+00:44:44,532 --> 00:44:48,852
+Bir tane diyor parantez sıkıntısı var diyor. Bu parantez sıkıntısı ne ola ki?
+
+290
+00:44:50,132 --> 00:44:54,132
+Evet, şu if'in parantezini de kapatmamıştı bakın.
+
+291
+00:44:56,532 --> 00:44:58,052
+Onu da hallettik.
+
+292
+00:44:58,932 --> 00:45:02,692
+Tamam, bu da oluştu. Sonra ne var? Main var.
+
+293
+00:45:07,443 --> 00:45:10,364
+Bu da tamam. Şimdi ne yapacağız? G, c, c. Bunları bağlayacağız.
+
+294
+00:45:11,324 --> 00:45:19,824
+Main.ou'yu, mydizi.ou'yu ve mymet.ou'yu bağla.
+
+295
+00:45:20,743 --> 00:45:22,443
+Output olarak da.
+
+296
+00:45:24,324 --> 00:45:24,643
+Evo.
+
+297
+00:45:26,844 --> 00:45:29,563
+Myprogram.exe bunun output'unu ver.
+
+298
+00:45:30,763 --> 00:45:31,783
+Gel myprogram'a.
+
+299
+00:45:34,099 --> 00:45:44,099
+Dili toplam dedi, 15 dedi, dilinin maksimum şeydi. Şurada bir karakter var herhalde yazarken mailin içerisinde.
+
+300
+00:45:47,219 --> 00:45:57,920
+Yani toplamadan kaynaklı muhtemelen şu ı görmüyor arkadaşlar. Türkçe karakter olduğu için. Neyse problem değil. Toplamının ı görmemiş problem değil. Ama sonucumuzu gördük.
+
+301
+00:45:58,880 --> 00:46:07,400
+Şimdi yaşadığımız zorluk ne? En ufak bir değişiklik de bütün derleme kodlarını tekrardan yazmak zorundayız. Bu makul bir şey mi? Makul değil.
+
+302
+00:46:07,400 --> 00:46:14,400
+Onun için diyoruz ki, böyle her şeyde bir GCC GCC yazmaya gerek yok. Bizim şu...
+
+303
+00:46:14,612 --> 00:46:15,931
+şeyin içerisine gireyim.
+
+304
+00:46:18,871 --> 00:46:24,711
+DLC plus plus'ın içerisindeki yani Ming-GV 64'ün içinde veya diğer denbecilerleri de var.
+
+305
+00:46:25,771 --> 00:46:26,092
+Burada
+
+306
+00:46:30,195 --> 00:46:31,595
+Make neredeydi ya?
+
+307
+00:46:33,115 --> 00:46:34,675
+Bir Make programımız var.
+
+308
+00:46:35,395 --> 00:46:36,655
+Make.exe'miz var.
+
+309
+00:46:37,655 --> 00:46:40,415
+Ama nerede? Onun yerini birazdan buluruz bir şekilde.
+
+310
+00:46:44,628 --> 00:46:47,628
+Hatta şundan belki bulsak daha iyi.
+
+311
+00:46:50,128 --> 00:46:53,128
+Projemizi açalım, o yerini bize daha kolay söyler.
+
+312
+00:46:55,428 --> 00:46:58,628
+Bakın şu önceki örneğimizi, bunu da değerlediğim de.
+
+313
+00:47:00,528 --> 00:47:04,928
+Ha, Ming-GV 32M8'miş. Tamam, doğrudan M8'liymiş.
+
+314
+00:47:14,483 --> 00:47:25,483
+Şu, bu program kendisi bir text dosyası alıyor ve bu text dosyasının adı içerisinde aslında şey var, içinde şunları yazıyorsunuz.
+
+315
+00:47:26,483 --> 00:47:36,483
+Ve siz bu programa diyorsunuz ki make abc.bbshake, yani böyle bir içinde text dosyası olan bir dosya veriyorsunuz.
+
+316
+00:47:37,483 --> 00:47:40,483
+Sizin göreviniz sadece bu make programını çalıştırmak.
+
+317
+00:47:40,788 --> 00:47:47,948
+Derleyeceğiniz şeyde de sürekli böyle kod satırından gelip bir şeyler yazmaktayız, o dosyanın içerisinde işlem. Buna biz makefile diyoruz.
+
+318
+00:47:47,948 --> 00:47:53,508
+Makefile'i birazcık slide'lerinden konuşalım, sonra örneğine, bizim şu örneğimize devam edeceğiz.
+
+319
+00:47:53,508 --> 00:48:03,948
+Makecommand'i birçok programın olduğu, hani bir sürü kod satırının olduğu şeyin derleme aşamasında daha sistematik yapmanızı sağlar. Şu an güncel işte bu...
+
+320
+00:48:04,244 --> 00:48:09,364
+Visual Studio Code'l vs. bu tarz mekanizmalar arka planda kullanıyorlar.
+
+321
+00:48:10,124 --> 00:48:22,364
+Öyle ki sizin programınız bakın, data, main, io diye şu o'lardan, bu o'lar da datac, datahash, mainc, io, ioc bunlardan oluştu. Yani bütün bir proje bunlardan oluştu.
+
+322
+00:48:22,804 --> 00:48:30,347
+Sizin görevimiz bu GCC biraz önce yazdığım komut satırına yazdığım, şuraya yazdığım şeyleri gidip şöyle bir dosyanın içerisine yapmak.
+
+323
+00:48:30,612 --> 00:48:42,612
+Bu MakePile'in kendine göre bir sistematiği var, ona geleceğiz biraz. Sonra bunu kaydedip, bu dosyanın kendisini, örneğin buna diyelim ki MyMakePile diyelim.
+
+324
+00:48:43,612 --> 00:48:55,371
+Bu MyMakePile'i Make programına girdi olarak veriyorsunuz. O girdi de arka planda ne yapıyor? Şuradaki şeyleri derleyip bağlama şeyleri, yani şuradaki yaptığım şeylerin arkasını tamamını kendisi yapıyor.
+
+325
+00:48:58,228 --> 00:49:05,048
+Burada başka söyleyeceğimiz şey, yani şuradaki söyleyeceğimiz şey. Evet, bakın şöyle bir şey diyeceğiz. Make diyeceğiz. MyMakeFile mi neyse.
+
+326
+00:49:05,048 --> 00:49:14,548
+Şimdi vereceğiz. Biz artık burada uzun uzun kod çalıştırmayacağız. Bir defa MyMake diyeceğiz. İşte pardon, make. .fc var bunun bir tane.
+
+327
+00:49:14,548 --> 00:49:23,028
+MakeFile.bilmem ne bilmem ne. Zaten devsi bunu arka planda yapıyor bakın.
+
+328
+00:49:23,135 --> 00:49:43,056
+Demiş ki, Ming-GV32MAKE'in içerisinde MakefileWin diye bir şey oluşturacağım. Bu MakefileWin dediğimiz şey de bakın bizim biraz önce projede oluşturduğumuz şeyin içerisinde kaydedilmiş bir dosya. Bunu derlerken böyle bir Makefile oluşturuyor kendisi.
+
+329
+00:49:44,019 --> 00:49:51,699
+Şimdi birazdan bunun makefile'ini, dc plus'asını oluşturduğu makefile de incelediyorum ama önce biz kendimiz, kendi şu kodumuz için yazalım.
+
+330
+00:49:51,699 --> 00:49:57,779
+Ben yine hafta 15 dediğimiz yerdeyim.
+
+331
+00:49:59,139 --> 00:50:03,539
+Şu matematik operasyonunun olduğu yerdeyim. Buraya bir tane makefile yazacağım.
+
+332
+00:50:05,012 --> 00:50:08,211
+Ve bu makefile'imizin mantığını şimdi konuşalım.
+
+333
+00:50:08,211 --> 00:50:13,572
+Makefile yukarıdan aşağıya çalışan ama referanslı çalışan bir dosya formatı.
+
+334
+00:50:15,572 --> 00:50:20,612
+Siz yapmak istediklerinizi hiyerarşik bir düzende burada tanımıyorsunuz.
+
+335
+00:50:20,612 --> 00:50:25,972
+Diyorsunuz ki, ve her tanımınız iki nokta üst üste kelimesiyle belirtiliyor.
+
+336
+00:50:25,972 --> 00:50:29,251
+Diyorsunuz ki mesela program diye bir şey var.
+
+337
+00:50:30,516 --> 00:50:35,816
+Bu program neden olacak? Main.o'dan olacak. Biraz önce yaptığımızı tam tersinden düşünün.
+
+338
+00:50:36,816 --> 00:50:44,416
+Main.o'muz var. MyDizi.o'muz var. MyMath.o'muz var.
+
+339
+00:50:46,016 --> 00:50:51,615
+Öyle ki, Main.o şundan oluşacak.
+
+340
+00:50:56,371 --> 00:51:02,952
+şundan oluşacak. Bunların tanımlarını yazacağız. mymat.o şunlardan oluşacak diyeceğiz.
+
+341
+00:51:03,891 --> 00:51:15,652
+Şimdi program bu dosya okunurken önce şuna bakıyor. Buna bakınca önce buraya geliyor. Sonra buraya geliyor. Ondan sonra buraya geliyor. Ondan sonra buna bakıyor. Ondan sonra buraya geliyor. Ondan sonra şuradan devam edecek.
+
+342
+00:51:16,572 --> 00:51:22,791
+Sonra program nedir arkadaşlar? GCC derleyicisine biz main.o'yu verdik.
+
+343
+00:51:24,884 --> 00:51:42,084
+mydizi.o'yu verdik, mymat.o'yu verdik, streo dedik, alt olarak myprogram.exe dedik. Hatta myprogram 2.exe diyelim, değişik çıktı.
+
+344
+00:51:53,748 --> 00:52:19,307
+Bize burada bunu değerleyebilmemiz için main.c'ye ihtiyacımız var. Matematik.h'a, dizi.h'a ihtiyacımız var. Bu ikisini alıyor. Main.c'den, mymath.h'dan. Bunları belki her zaman yazmaya da gerek yok aslında. Yani şurası biraz şey gibi de. Çünkü header file'leri tanımlamıyoruz.
+
+345
+00:52:19,764 --> 00:52:22,764
+Aslında main.o şu olacak.
+
+346
+00:52:22,764 --> 00:52:28,764
+gcc-c main.c'nin değerlenmiş hali.
+
+347
+00:52:28,764 --> 00:52:31,764
+Aynısı, şunu silelim.
+
+348
+00:52:34,996 --> 00:52:50,996
+mydidi.o'da gcc-c mydidi.c'nin değerlenmiş hali. Şunu silelim, şu an şimdi buraya belki gerek de yok. Şurada da gcc-c.
+
+349
+00:52:55,603 --> 00:52:59,603
+mymat.c'nin derlenmiş. Şimdi bunu kaydediyorum.
+
+350
+00:53:01,603 --> 00:53:15,603
+makefile olarak. Bu makefile'in uzantısını bu cmake uygulaması win olarak kaydediyor arkadaşlar. Onun için win diye kaydediyorum ve tutuyorum burada.
+
+351
+00:53:17,603 --> 00:53:21,603
+Şimdi yine aynı klasördeyim. Kaleis ekranı temizleyelim.
+
+352
+00:53:23,123 --> 00:53:26,923
+Hatta ekranı temizledikten sonra, şuradan...
+
+353
+00:53:31,251 --> 00:53:36,251
+Şu o dosyalarını da siliyorum. Çünkü bunlar biraz önce kendi oluşturduğumuz şeyler.
+
+354
+00:53:36,251 --> 00:53:42,251
+Şimdi benim make programım, make diye bir şey yok. Bu tanımıyor. Bakın.
+
+355
+00:53:42,251 --> 00:53:51,251
+Eee, gcc şu min gv'nin içindeki min gv 32 make'i görecek mi? Onu bakalım.
+
+356
+00:53:58,228 --> 00:53:59,467
+.make.
+
+357
+00:54:00,108 --> 00:54:04,228
+Bunu gördü. Çünkü biz ne yaptık? Biraz önce şu klasörün kendisini vermiştik.
+
+358
+00:54:04,467 --> 00:54:08,708
+gcc de burada, mingv32make de burada. Hepsi burada olduğu için buradan görüyor.
+
+359
+00:54:08,947 --> 00:54:11,507
+Diyorum ki ben buna git,
+
+360
+00:54:12,228 --> 00:54:13,668
+.f yap.
+
+361
+00:54:14,628 --> 00:54:15,907
+Şey üzerinden.
+
+362
+00:54:17,268 --> 00:54:19,268
+Ve neyi yaz?
+
+363
+00:54:21,347 --> 00:54:25,748
+Şuradaki oluşturduğumuz make file.
+
+364
+00:54:26,675 --> 00:54:28,215
+nokta win'i gönder.
+
+365
+00:54:30,516 --> 00:54:32,415
+Missing separator demiş.
+
+366
+00:54:33,016 --> 00:54:36,135
+İkinci satırında bir ayırıcı yok.
+
+367
+00:54:42,324 --> 00:55:09,204
+Şu an makefile derlerken bir şey yaptı. Şurada bir boşluk olabilir mi acaba? Bir bakayım arkadaşlar. Çünkü bunun özel bir formatı var. Her zaman yazmadığımız için bazen stop demiş. Şimdi main.o, matematik.o, mymat.o, gcc yap, main.o, matematik.o, mymat.o, yut, ro yap.
+
+368
+00:55:09,619 --> 00:55:10,980
+Program 2'de.
+
+369
+00:55:11,860 --> 00:55:14,500
+Main.ogcc olacak.
+
+370
+00:55:17,380 --> 00:55:18,740
+Bunları bir yazalım.
+
+371
+00:55:18,740 --> 00:55:20,179
+Main.c
+
+372
+00:55:21,780 --> 00:55:24,740
+My.h
+
+373
+00:55:25,860 --> 00:55:29,300
+My.dizi.h
+
+374
+00:55:30,980 --> 00:55:34,340
+My.dizi.c
+
+375
+00:55:35,635 --> 00:55:37,635
+May gizli nokta hoş.
+
+376
+00:55:41,108 --> 00:55:46,468
+My network was he...
+
+377
+00:55:50,452 --> 00:55:51,452
+IDROX'e
+
+378
+00:55:52,952 --> 00:55:53,952
+IDET
+
+379
+00:55:55,152 --> 00:55:57,952
+Tekrar bir çalıştırdım.
+
+380
+00:55:59,952 --> 00:56:02,924
+İkinci satırında bir şey vardı acaba.
+
+381
+00:56:14,675 --> 00:56:15,675
+pay it.
+
+382
+00:56:39,668 --> 00:56:44,528
+Evet, şey, burada bir tab gerekiyormuş arkadaşlar, onun için.
+
+383
+00:56:47,987 --> 00:56:49,047
+Şununla alakalı.
+
+384
+00:56:50,967 --> 00:56:51,287
+Evet.
+
+385
+00:56:51,727 --> 00:56:59,907
+Hani bu Python'dakine benzer bir şey de tabii bu otomatik olarak tabları gerektiriyor.
+
+386
+00:57:00,467 --> 00:57:01,287
+Tekrar deneyelim.
+
+387
+00:57:02,367 --> 00:57:02,627
+Evet.
+
+388
+00:57:03,047 --> 00:57:03,347
+Bakın.
+
+389
+00:57:03,607 --> 00:57:03,907
+Önce.
+
+390
+00:57:06,099 --> 00:57:16,460
+main.o yazdığım için önce gitti onu yaptı, daha sonra diğerini yaptı, daha sonra diğerini yaptı, daha sonra bunları birleştirdim. Şunları silmeyi deneyeceğim arkadaşlar bir saniye. Önce çalıştığını görelim de.
+
+391
+00:57:18,659 --> 00:57:23,680
+Artık bizim bu programı execute edebilmemiz için yapmamız gereken şey, yazmamız gereken şey sadece şu.
+
+392
+00:57:25,000 --> 00:57:29,800
+dfc++ zaten arkada bunu yapıyor. Eğer bir proje çalıştırıyorsanız, çoklu dosya çalıştırıyorsanız.
+
+393
+00:57:31,027 --> 00:57:36,627
+Sadece şunu yazdımdanım. Şimdi burada myProgram 2.exe'yi çalıştıralım. Mesela bakın, dir diyelim.
+
+394
+00:57:36,627 --> 00:57:47,228
+Buraya işte obje file'lerimiz gelmiş. myProgram 2 dediğimizde aynı konucu görebiliyoruz. Make file'ın güzelliği burada.
+
+395
+00:57:47,228 --> 00:57:55,027
+Sizin yüzlerce dosyanız olsa gidip bu komut satırından her bir dosya için ayrı ayrı bir şey düzenlemenize gerek yok.
+
+396
+00:57:55,027 --> 00:57:57,899
+Ne yapıyorsunuz? Sadece şu make file'nizi düzenliyorsunuz.
+
+397
+00:57:59,188 --> 00:58:11,188
+MakePine içerisinde nereye? Mesela yeni bir kütüphaneniz mi geldi? İşte ne geldi? İşte myString geldi mesela. myString.o. Bu myString.o'yu bir buraya tanımlıyorsun.
+
+398
+00:58:11,188 --> 00:58:23,188
+Bir buraya tanımlıyorsun. Ondan sonra gelip burada da eklentisini yapıyorsun. Neyse artık. Böyle sadece olması gereken şeyleri değiştirip
+
+399
+00:58:23,699 --> 00:58:34,379
+Şimdi bunun optimizasyon araçları da var. Onu da birazdan devsi üzerinde göstereceğim. Böyle şey yeterli. Şimdi şunları bir silmeyi deneyeceğim. Bunlara gerek olmayabilir. Ben not almışım ama.
+
+400
+00:58:34,379 --> 00:58:39,059
+Çünkü main.o şu şekilde oluşturacak. Desek yeterli.
+
+401
+00:58:39,059 --> 00:58:48,499
+Şunu tekrardan, şuradan silelim. Şunu da silelim.
+
+402
+00:58:53,748 --> 00:59:06,248
+Evet, ona da gerek yok. Doğrudan çünkü şey çalışır, ister buradan çalıştırın, ister MyProgram 2.0 egze diye doğrudan egzecut edebiliyorsunuz.
+
+403
+00:59:06,248 --> 00:59:13,748
+Şimdi gelin bu devsi şunu yapmak için ne yapmış bunu inceleyelim. Bundan sonra ara vereceğim.
+
+404
+00:59:13,748 --> 00:59:18,443
+Şimdi diyor ki bu bir proje, Makefile'i oluşturdum. Gidelim bakalım Makefile'ine.
+
+405
+00:59:21,684 --> 00:59:48,184
+Bakın, buraya makefile.bin diye biz hiç oluşturmadık. Otomatik olarak bunu açıp. Şimdi ben bunu açıyorum. Çok daha kapsamlı bir makefile bu. Ve bunun içerisinde bakın, mantık aslında aynı. Diyor ki, şu dolarla başlayanlar sabitlerimiz. Diyor ki, bin diye yazılan yerdeki şeyi buraya getir. Şimdi bu projenin adı proje bir olacağı için, bu proje şu binden oluşacak diyor.
+
+406
+00:59:49,780 --> 01:00:14,920
+Dolar ile başlayan yerde şu objeyi getirecek. Yani main.o, salut.o. Buradaki yapılan tanımların şunların yerine replace edildiğini düşünün. Biraz daha optimize yazıyor. Diyor ki bu executable olan şey şu objeden oluşacak. Bu derleyici gcc ile çalışacak. gcc link objesini alacak. Link objeleri de ne? main.o, salut.o.
+
+407
+01:00:15,347 --> 01:00:32,347
+Bunları binary olarak, hani bindeki gösterilen yere şey yapacak. Lips dediğimiz şey de, bunu yaparken de, dinamik libraryler ve gereksiz yere derlemeyi önlemek için, şuradaki Mingyav 64'ın içerisindeki libraryleri de buraya default olarak eklemiş.
+
+408
+01:00:32,347 --> 01:00:42,347
+Bakın bu main.o nasıl oluyormuş peki? Main.c'nin şu cc ile derleyen, yani gcc'den derlenecek bir dosya.
+
+409
+01:00:42,739 --> 01:00:58,919
+Şu flagler dediğimiz şey de arkadaşlar, bu kaçıncı seviye optimizasyon yaparak değerleneceği ile alakalı, C'nin farklı optimizasyon dereceleri var. Hatta C'yi hangi versiyona göre değerleyeceğinizi de söyleyebiliyorsunuz. Bununla alakalı şeyler.
+
+410
+01:00:58,919 --> 01:01:09,019
+Bakın, bizim yazdığımız kodla çok benziyor. Sadece şu dolarlar gidip şuradaki tanımları getiriyor. Bu C++ da değerlediği için C++ değerleyeceksen buna göre, C değerleyeceksen buna göre.
+
+411
+01:01:09,376 --> 01:01:14,656
+Ya başka değerlemeler yapacaksan. İşte objemiz bunlar olacak. Link objelerimiz de bunlar olacak.
+
+412
+01:01:14,656 --> 01:01:24,976
+Nereden şeyi getireceğimizi bakın bu Mingi'ye 64'ün içindeki make dosyasını yerini bulamam diye uzun uzun bunları getirmiş.
+
+413
+01:01:24,976 --> 01:01:34,576
+Çünkü sizin programınızda, bilgisayarınızda illaki bu biraz önce bilgisayarın ayarlarından şuradan yaptığım ayarları yapmak zorunda değilim.
+
+414
+01:01:34,963 --> 01:01:41,443
+Ne yapıyor? Bu programın değerleyici klasörü, ana klasörü neredeyse gidip onları sökünden bulup yazıyor.
+
+415
+01:01:41,443 --> 01:01:48,204
+Ben mesela şu makefile'i buradan yazıyorum, environmental variable'a ekledim.
+
+416
+01:01:48,204 --> 01:01:54,443
+Buradan yazmadan da çalıştırabilirdim. Ne yapardım? İşte c'nin içinde slash, program files'ın içine gir.
+
+417
+01:01:54,443 --> 01:01:57,443
+Onun içinde dc++'a gir.
+
+418
+01:01:58,708 --> 01:02:09,988
+dfc++'a gir, ne bileyim, onun içinde bilmem neye gir, ondan sonra ne var? Orada bir yerde mingb32 diye bir şey var. Öyle de çalıştırabilirim ama kısa olsun diye özellikle ekledik.
+
+419
+01:02:11,028 --> 01:02:24,548
+Bu tarz ayarlamaları yapıyor ve yine bakın şey şu, diyor ki bütün her şey, bütün bir program neden olacak? Şu binary'den oluşacak. Bu binary'de neden oluşacak? Şunlar da oluşacak.
+
+420
+01:02:24,596 --> 01:02:30,655
+Burada daha önceki şeyleri de siliyor. Yani ikinci bir değerleme yaptığınızda mevcutları sildirebilirsiniz.
+
+421
+01:02:31,835 --> 01:02:38,355
+Bu da şu demek, diyor ki, çıktı olarak ürettiğin Executable File'ın eski halini siliyorsun.
+
+422
+01:02:38,355 --> 01:02:41,695
+Şimdi ben mesela burada bir değerleme yaptım. My Program 2 var.
+
+423
+01:02:43,315 --> 01:02:46,295
+Şimdi bir daha yaptığımda bir My Program 2 daha oldu.
+
+424
+01:02:47,295 --> 01:02:51,956
+Şimdi Windows peki bunu nasıl yapıyor? Yani şu an iki tane My Program 2.
+
+425
+01:02:52,403 --> 01:02:54,403
+Burada olamayacak.
+
+426
+01:02:54,403 --> 01:02:59,403
+Arka planda eski MyProgram 2'nin silinmesi lazım. Bunu sildirmek için de
+
+427
+01:02:59,403 --> 01:03:04,403
+hali hazırda var olan bütün silinmiş dosyaları sildirebiliyorsunuz.
+
+428
+01:03:04,403 --> 01:03:08,403
+İşte neler silinecek? RM dediğimiz şu egzeler silinecek.
+
+429
+01:03:08,403 --> 01:03:12,108
+Diyor ki objeleri de sil, eski oğaları da sil.
+
+430
+01:03:12,307 --> 01:03:15,907
+Eski binary proje 1 egze bilmem neleri de sil.
+
+431
+01:03:16,467 --> 01:03:18,668
+rm egze dediğimiz şey de aslında bir program.
+
+432
+01:03:18,927 --> 01:03:22,708
+Bunu da daha sonra gerekirse anlatırız ama çok da gerekli.
+
+433
+01:03:23,268 --> 01:03:25,228
+Ne yapıyor? Bu da böyle bir şey kullanıyor.
+
+434
+01:03:25,228 --> 01:03:27,307
+Yani önden bazı atamaları var.
+
+435
+01:03:27,628 --> 01:03:31,208
+Makefile çok daha kapsamlı bir konu.
+
+436
+01:03:31,327 --> 01:03:33,927
+Hatta bunun güncel hali cmake diye bir şey var.
+
+437
+01:03:34,488 --> 01:03:37,248
+C++'çılar çok kullanırlar. İsterseniz inceleyebilirsiniz.
+
+438
+01:03:38,008 --> 01:03:38,947
+Burada bir sorumuz var mı?
+
+439
+01:03:42,324 --> 01:03:44,903
+Peki, bir 10 dakika ara verelim. Geldiğimizde devam ederiz.
+
+440
+01:13:55,091 --> 01:13:56,671
+devam edelim arkadaşlar.
+
+441
+01:13:58,371 --> 01:13:59,611
+Şu an görüntü geliyor herhalde.
+
+442
+01:14:14,804 --> 01:14:21,724
+Evet, bu şekilde projemizi, hani, make file ile build edip, executable file'ı oluşturabiliyoruz.
+
+443
+01:14:21,724 --> 01:14:26,404
+Şimdi bakın, bu tarzı şeye dependency graph diyorum.
+
+444
+01:14:28,043 --> 01:14:39,684
+Hani proje şunlardan oluşacak, bunlar bunlardan oluşacak ve bunlar içerisinde bakın, işte data.o, data.c'den, data.h'dan.
+
+445
+01:14:40,180 --> 01:14:48,840
+main.o işte şu üç tane dosyadan bir bağımlılık gösteriyor. Bu bağımlılığı burada ifade etmemiz gerekiyor.
+
+446
+01:14:48,840 --> 01:14:57,040
+Söylediğim gibi şu data.c, data.c yazmasak da olur. Zaten onlar aynı klasör altında olacağı için işleyebilir şeyler.
+
+447
+01:14:57,040 --> 01:15:06,120
+Bu aynı makefile aynı şeyde klasörde olması bekleniyor zaten.
+
+448
+01:15:06,484 --> 01:15:13,484
+Şurada make file'imizi buraya aynı klasörün altına attık değerleme yaparken. Yoksa petlerle çok uğraşılır.
+
+449
+01:15:15,484 --> 01:15:21,484
+Dosyaların modifiye edilip edilmediğini bu make kontrol ediyor.
+
+450
+01:15:21,484 --> 01:15:31,244
+Ve bir değişiklik olduğunda tekrardan değerleme yapabiliyor. Bunun değerleyici aşamalarında öyle bir optimizasyonu da var.
+
+451
+01:15:31,444 --> 01:15:55,324
+Eğer siz bu örneğin kodda şunu değiştirdiniz, şunu değiştirdiniz ama şunu değiştirmediniz. Şimdi bunu tekrardan değiştirmiyor. Onu söyleyebiliriz. Şuradaki pendensin nasıl olduğu ile alakalı, işte mesela bu tabi buradaki örnek şunu değiştirmek üzerine. Dediniz ki bunda bir edit yaptınız. Programımızı test ettiniz. Bir hata buldu.
+
+452
+01:15:56,212 --> 01:16:13,212
+Sonra dediniz ki edit içerisindeki kodu düzeltelim. Bu düzeltildiği için şunun da düzeltilmesi lazım. Çünkü ana kod değişti. Bu değişince proje tamamen değişecek.
+
+453
+01:16:13,212 --> 01:16:21,068
+Bunun değişmesinden kaynaklı olarak geri kalan şuradakilerin hepsinin değişmesine ihtiyaç var mı aslında yok.
+
+454
+01:16:21,971 --> 01:16:29,131
+Her dependentsli kendi içerisinde işte böyle bir şeye sahip, her bir kim kime bağlıdır şeklinde.
+
+455
+01:16:29,912 --> 01:16:34,771
+Makefile bunu optimize bir şekilde çalıştırabiliyor.
+
+456
+01:16:36,311 --> 01:16:40,412
+Şuradaki açıklamalar bunlarla alakalı, bunu geçelim.
+
+457
+01:16:46,804 --> 01:16:51,804
+Bir de makefile'de makrolar demişiz. Ben bunu zaten biraz önce size devsi üzerinden anlattım.
+
+458
+01:16:51,804 --> 01:17:04,804
+Yani obje diye bir tanımlama yapıp eşittirle bunu tanımlayıp bu objemiz data o, main o, io o'dan olacak deyip daha sonra buna dolar sembolü ve parantez içerisinden referans verebiliyorsunuz.
+
+459
+01:17:04,804 --> 01:17:08,804
+Bu da ne için kullanılır? Yani şu objeleriniz çok uzun olabilir.
+
+460
+01:17:08,804 --> 01:17:14,764
+İşte bu uzun satırı her seferinde uzun uzun yazmak zorunda kalmazsınız. Çünkü bakın biz biraz önce
+
+461
+01:17:14,899 --> 01:17:17,840
+Bunu şurda yaptık, otpet polası pasvidacii.
+
+462
+01:17:22,100 --> 01:17:48,460
+main file ederken, bakın hem şurada, hem de şurada aynı şeyi yazdık. Şimdi bu 20 tane şey olsaydı, burada da 20 tane, burada da 20 tane olacaktı. Bu olmasın diye işte dolarla, yukarıda bir defa tanımlama yapıp, bu tanımlamanın nerede geçtiyse, tamamen işte dolar sembolü ona erişim sağlayabiliyorsunuz. Bir de özel şeyler var, spesiyel makrolar var, işte C, C dediğimiz.
+
+463
+01:17:48,948 --> 01:17:59,708
+C flagler, derleme opsiyonları açtığımız. Bunlar dolarla başlıyor, diğer özel karakterlerle başlıyor. Şurada daha detaylarını görebilirsiniz.
+
+464
+01:18:00,988 --> 01:18:02,828
+Burası böyle. Şimdi gelelim.
+
+465
+01:18:05,188 --> 01:18:10,068
+Ayrıca bir slide hazırladım. Biraz bir kısmı biraz önündekin aynısı.
+
+466
+01:18:10,628 --> 01:18:15,308
+Ama lazım olan taraflar var bize burada. Onlara bakacağız.
+
+467
+01:18:15,891 --> 01:18:43,211
+header file'lar anladık. Modüler program yapmak için programı parçalamak da bize güzel bir araç oldu. Örneğin bir programımız var. Matematiksel işlem yapacaksınız, dosya işlemleri yapacaksınız, grafik arayüzü yapacaksınız. UI ana programımız var. Bunların hepsini tek bir dosyaya yazmıyoruz. Bu okey. Burada daha çok statik paneler oluşturuyoruz. Yani şu matematik nokta, h ve matematik noktası ile yazdığınız bir kod.
+
+468
+01:18:44,051 --> 01:18:53,051
+Programı çalıştırdığınızda tamamen ana kodun içerisinde, executable kodun içerisinde derleniyor. Bunu hatta şöyle görebiliriz.
+
+469
+01:18:54,051 --> 01:19:01,051
+Şimdi programlarımız bakın, main C bunlar 1 kilobaytlık, my program 126 kilobayt.
+
+470
+01:19:01,051 --> 01:19:11,787
+Çünkü biz burada statik olarak bir kütüphane kullandık. Hani main C, my mat C ve my dizisi bunları toplasanız işte 3 kilobayt bir şey.
+
+471
+01:19:11,956 --> 01:19:15,275
+Geri kalan nereden geldi? İşte STD, IO'dan falan geliyor.
+
+472
+01:19:16,216 --> 01:19:22,855
+Dinamik olarak bir sürü kütüphaneyi, şey, statik olarak bir sürü kütüphaneyi de include ederseniz programımız bu kadar şişebilir.
+
+473
+01:19:22,976 --> 01:19:26,716
+Ama her zaman bütün bir kütüphaneyi eklemek zorunda değiliz.
+
+474
+01:19:27,536 --> 01:19:32,175
+Şu header dosyalarıyla alakalı şeyler yaptığımız örnekler arkadaşlar. Aynı farklı sadece örnekler. Bunları geçelim.
+
+475
+01:19:35,828 --> 01:19:49,828
+Şurada söyleyecek. Yani bunlarda mesela eğer bir structure tanımlıyorsanız ve bu structure birden fazla yerde geçecekse, bunu bir başka dosyada tanımlayıp, kütüphane olarak tanımlayıp, o kütüphanelerden çağırabilirsiniz. Mesela bu da güzel bir kullanım.
+
+476
+01:19:49,828 --> 01:19:59,828
+Sadece p sayısı için falan söylemiyorum bu örneği. Hani fonksiyonların prototikleri olur. Bir de bu tarz structure tanımlarını koyabilirsiniz.
+
+477
+01:20:05,011 --> 01:20:15,011
+Şimdi, bu statik kütüphane. Yani aslında bir, birden fazla objep halini tek bir pakette topladığınız bir şey.
+
+478
+01:20:15,011 --> 01:20:23,011
+Ve program içerisinde link time'da link yaparken topluyorsunuz ve tek bir dosya oluşturuyorsunuz.
+
+479
+01:20:23,011 --> 01:20:29,011
+Yine bir kütüphane kullanımı var mı? Var. Hepsinin toplamı gibi bir şey oluyor.
+
+480
+01:20:29,908 --> 01:20:32,948
+bağımsız bir çalışabilir dosyanız var burada.
+
+481
+01:20:34,327 --> 01:20:36,788
+O kütüphaneyi kurulu olmadan da çalıştırabiliyorsunuz.
+
+482
+01:20:36,788 --> 01:20:37,427
+Şimdi bu ne demek?
+
+483
+01:20:38,728 --> 01:20:39,988
+Ben mesela ödev yaptım.
+
+484
+01:20:40,648 --> 01:20:42,628
+Hoca dedi ki bana çalışan programı gönder.
+
+485
+01:20:43,108 --> 01:20:43,868
+Kodu gönderme.
+
+486
+01:20:43,948 --> 01:20:44,968
+Ben kodu değerlemeyeceğim.
+
+487
+01:20:45,847 --> 01:20:47,768
+Şimdi çalışan programın kodları bunlar.
+
+488
+01:20:49,847 --> 01:20:55,968
+Ama eğer ki karşıdaki bir isya, hani Windows ise, ben sadece şunu karşı tarafa gönderirsem,
+
+489
+01:20:56,564 --> 01:21:22,524
+İsterseniz deneyelim. Bir bilgisayarınıza sizlerden birisi, bilmiyorum chatten yükleme yapabilir miyim? Bir deneme yapayım. Olmadı. Nasıl dosya yükliyorum burada? Şurada bir dosya yükleme aracı var da. Yani neyse, bu egzeyi başka bilgisayara taşıdığınızda buradaki kütüphanelere, kodlara, derleyiciye hiçbir şey sahip olmadan bu kodu çalıştırabilir.
+
+490
+01:21:23,060 --> 01:21:34,060
+Tabi aynı işletim sistemi falan olacak. Ne bileyim işletim sisteminin 64-64'dü olacak falan filan. Bu anlamda avantajlı. Fakat dezavantajlı programın boyutu büyüyor.
+
+491
+01:21:34,060 --> 01:21:46,060
+Kütüphane güncellerse program yeniden değerlenebilir. Onun için bu statik kütüphaneler dışında bizim dinamik kütüphanelere ihtiyacımız var. Bu da işletim sisteminden sistemine değişebilen bir şey. İşte Windows tabına DLL diyor.
+
+492
+01:21:46,836 --> 01:21:50,916
+Linux'te SO deniyor, Macbos'ta işte değerli pitti gibi şeyler var.
+
+493
+01:21:52,096 --> 01:21:54,736
+Burada basit bir Linux örneğini şey yapalım.
+
+494
+01:21:55,976 --> 01:22:05,355
+Örneğin, bütün bir uygulamamız matematik nokta, h ve istatistikle alakalı şeylerden oluşsun, şunlardan oluşsun.
+
+495
+01:22:06,516 --> 01:22:11,396
+Bunlar arasında paylaşımlı bir nesne oluşturuyor. GCC derleğisi bunu sağlayabiliyor.
+
+496
+01:22:12,275 --> 01:22:15,395
+Bunlar arasında sembolik bağlantılar kuruyorsunuz.
+
+497
+01:22:16,055 --> 01:22:23,995
+Sembolik bağlantıları çalıştırdığınızda ne zaman o mesela diyelim ki matematiğin içerisinde siz power ihtiyacınız var.
+
+498
+01:22:24,716 --> 01:22:28,595
+O power'ın ilgili rutini gidip sizin şeyinizden çekiliyor.
+
+499
+01:22:29,315 --> 01:22:31,036
+Ve hepsini bir araya getirmiyorsunuz.
+
+500
+01:22:32,175 --> 01:22:34,195
+Hepsini bir araya toplamıyorsunuz.
+
+501
+01:22:34,275 --> 01:22:37,775
+Gerekli olmayan kütüphaneler executable halinizin içerisinde olmuyor.
+
+502
+01:22:38,579 --> 01:23:03,920
+Bu da neyi sağlar? Bakın ben şu şeyi inkludetmişim. Neyse onun ne olduğunu. Ama diyorum ki bana Lib Matematik SO kütüphanesini çalışırken yükle. Running time'da yükle yani. Ben şuna ihtiyaç duyduğumda, bu kütüphanenin içerisindeki kare fonksiyonuna ihtiyaç duyduğumda o benim çalışan programımla bağlansın.
+
+503
+01:23:05,460 --> 01:23:15,700
+Biraz önceki Compile Time'da yükleniyordu. Artık yani iş bitmiş oluyor. Ama burada çalışma zamanında bu işlemi sağlayabiliyorsunuz dinamik kütüphanelerde.
+
+504
+01:23:15,700 --> 01:23:30,100
+Bunun farklı değerleme tarafını geçelim dinamik kütüphanelerle. Farklı şeyleri var. Şimdi optimizasyon seviyelerinden de bahsedeyim. Hani biz ilk derste bir kodu değerlerken işte ön işlemeler yapılacak.
+
+505
+01:23:30,836 --> 01:23:37,695
+Hani bunun aşamalarını göstermiştim. Sonra derleme, sonra işte link, bağ, işte assembly, sonra link yapıyorduk.
+
+506
+01:23:38,695 --> 01:23:50,355
+Derleme esnasında şunu görebiliyorsunuz. Optimizasyon yapmadan kodu derle derseniz, işte şu tr0 optimizasyon olmadan şey,
+
+507
+01:23:55,475 --> 01:24:03,475
+üretim optimizasyonu, genellikle şu tavsiye ediliyor gibi şeyler. Mesela şunu bile yapabiliyoruz. Sizin kodunuz var.
+
+508
+01:24:03,475 --> 01:24:15,475
+Kodda mesela ne yapıyorsunuz? Şöyle bir toplama işlemi yapıyorsunuz. Mesela burası birden n'e kadar olan sayıların toplamının kodu olsun. Öyle farz edin.
+
+509
+01:24:15,475 --> 01:24:22,475
+Şimdi derleyici bunu algıladığında diyor ki, bu zaten birden n'e kadar olan sayıların toplamı n çarpı n artı 1,2'dir.
+
+510
+01:24:23,956 --> 01:24:30,435
+Ne bileyim, burası mesela birden başlasın, 100'e kadar. İşte 100 çarpı 101 bölü 2'nin sonucu neyse, ben bunu böyle değerlerim.
+
+511
+01:24:31,435 --> 01:24:39,816
+Çalışma zamanında ekstra iş çıkartmaz. Çünkü çalışma zamanında bu kodu çalıştırmak yerine tek bir n çarpı n artı 1 bölü 2 sonucunu yazmak mantıklı.
+
+512
+01:24:40,296 --> 01:24:48,695
+Ha, her zaman değerleme zamanında olan şey çalışma zamanında olmaz. Eğer bizim elemanları kullanıcından alınacaksa bu olmaz. Bu değerle, bu optimizasyon yapılmaz.
+
+513
+01:24:49,363 --> 01:24:56,683
+Ama böyle önden tanımlı ve kod içerisinde değişme ihtimali yoksa bu tarz optimizasyonları yaptırabiliyorsunuz.
+
+514
+01:24:57,283 --> 01:24:59,523
+Derleyici optimizasyonu sayesinde.
+
+515
+01:25:01,083 --> 01:25:08,163
+Şurada da third party ve standart kütüphanelerimizin olduğu yani şeylerin açıklamalar var. Bunu size paylaşırım.
+
+516
+01:25:08,403 --> 01:25:14,203
+Standart, input standart, lip string, matematik, time. Bunları genellikle kullandık.
+
+517
+01:25:16,083 --> 01:25:42,043
+Diğer başka C planelerini görebiliyorsunuz. Mesela Assert dediğimiz şey bu hata ayıklamayla alakalı bir kütüphane. Çok fazla anlatmıyorum ama isterseniz kullanabilirsiniz. Şu diğer şeyler zaten çok yardımcı olması için. Burada da bir tane rasyonel sayılar örneği koydum. İncelemek isteyenler için. Rasyonel sayılarla alakalı kütüphane.
+
+518
+01:25:42,804 --> 01:25:51,923
+Normalde biz rasmenel sayıları double veya pullout ile sağlayabilir miyiz? Sağlayabiliriz. Ama ne dezavantajı var double veya pullout'un?
+
+519
+01:25:57,332 --> 01:25:57,832
+See you soon.
+
+520
+01:26:02,068 --> 01:26:29,347
+Şimdi integer 32 bit, float 32 bit, evet hassasiyetini double 64 bit. Şimdi integer 32 bit ile ben eksi 2 üzeri 32 den, 32 den sıfıra kadar, ondan da artı 2 üzeri,
+
+521
+01:26:30,387 --> 01:26:34,667
+31-1'e kadar değerler saklıyorum.
+
+522
+01:26:36,747 --> 01:26:43,587
+1 biti işarete koyarsak, geri kalan 31 biti, şurası, x-231 olacak.
+
+523
+01:26:45,007 --> 01:26:47,228
+Bu aralıkta bir değer saklama imkanımız var.
+
+524
+01:26:48,208 --> 01:26:49,708
+Şimdi şu çok büyük bir değer aslında.
+
+525
+01:26:50,963 --> 01:27:17,743
+Floating point'lerde böyle bir durum yok. Çünkü floating point'in, yani burada sadece bir bit, bir bit kaybımız var. 32 bitten bir biti işarete gidiyor. Burada bir bit işaret, float 32'den yaklaşık 8 bit hassasiyete gidiyor. Kaldı size, ne oluyor 32'den 10 çıkarın, 22 bit. Yaklaşık olarak 22 bit. Yani 22, 2 üzeri 22'ye kadar bir.
+
+526
+01:27:18,387 --> 01:27:25,387
+Tam sayı kısmını söyleyebiliyorsunuz. Ondalıklı sayı kısmına bir kısmı detayı gideceği için. Yaklaşık 8 bit olarak.
+
+527
+01:27:25,387 --> 01:27:33,387
+2 üzeri 31 nerede? 2 üzeri 32 nerede? Yaklaşık arada bir 10 kat şey, 2 üzeri 10 kat fark var. O da 1024 kat demek.
+
+528
+01:27:33,387 --> 01:27:45,387
+Şurada bu biraz daha azalıyor. Şimdi rasyonel sayılarda hatta long int yaparsak, long int double'u çok çok daha aşağıda. Bu 64 bittir.
+
+529
+01:27:46,100 --> 01:27:55,320
+ve işte iki üzeri altmış üçe kadar yani double'ın hassasiyesinden çok çok daha fazla bir değer aralı long int'le sağlayabiliyorsunuz.
+
+530
+01:27:55,320 --> 01:28:05,300
+Rastlenen sayılarda, sonuçta bir floating point sayılara atıf yapan şeyler olduğu için, siz böyle çok büyük sayıların
+
+531
+01:28:05,939 --> 01:28:13,739
+pay ve payda şeklinde yazılması sizin için daha önemli olabilir hassasiyet açısından. Daha fazla değer saklamak isteyebilirsiniz.
+
+532
+01:28:14,840 --> 01:28:21,359
+Çok büyük sayıları göstermek isteyebilirsiniz. Onun için bir rasyonel sayı, yani long olarak pay ve payda tanımlanmış.
+
+533
+01:28:22,319 --> 01:28:32,079
+Bunlarda float ile double ile uğraşmıyorsunuz. Örneğin iki sayıyı çarptınız, iki sayıyı topladınız veya iki sayı üzerinde bir rasyonel sayı işlemi yaptınız, mutlak değer aldınız, ne yapıyorsanız yapıyorsunuz.
+
+534
+01:28:32,368 --> 01:28:38,368
+Veya bunlardan kompleks sayı, karmaşık sayı oluşturacaksınız. Bu tarz işlemleri çok çok yaparız.
+
+535
+01:28:38,368 --> 01:28:43,768
+Onun için bu tarz fonksiyonların olduğu bir header file'imiz.
+
+536
+01:28:43,768 --> 01:28:54,368
+Rasyonel nokta aç. Burada tabi temel input alt işlemleri var. Bir tane structure tanımımız var. Sonra fonksiyonlarının işte yeni bir rasyonel sayı oluşturma.
+
+537
+01:28:56,243 --> 01:29:09,003
+Double değerden rasyonel sayıya dönüşüm yapma. İki rasyonel sayıyı toplama, çıkarma, çarpma, bölme. Rasyonel sayının negatifini alma, mutlak değerini alma, tersini alma. A bölgeyi B bölgeyi A yapma.
+
+538
+01:29:09,623 --> 01:29:14,523
+Veya şunlar karşılaştırma. İki rasyonel sayı eşit mi? Birbirinden büyük mü, küçük mü? Bunlara bakıyoruz.
+
+539
+01:29:15,783 --> 01:29:20,583
+Rasyonel sayının ekrana yazdırması, dosyaya yazdırması veya rasyonel sayıdan double'a dönüşüm.
+
+540
+01:29:21,203 --> 01:29:26,783
+Olabilecek kütüphane fonksiyonlarımız bunlar. Bakın bu structure tanımımız da burada.
+
+541
+01:29:27,804 --> 01:29:33,923
+Devam ediyoruz. Diyorum ki rasyonel sayının artık bu fonksiyonların gerçeklerini, işini yapalım.
+
+542
+01:29:35,023 --> 01:29:40,623
+Burada da birinci bölümde yardımcı fonksiyonlarım var. Mesela iki tane rasyonel sayıyı topladım veya çarptım.
+
+543
+01:29:40,623 --> 01:29:46,144
+Bunu sadeleştirmem gerekirse işte bir öklit algoritmasıyla EBOB'unu bulup.
+
+544
+01:29:46,547 --> 01:30:10,188
+ebobuna göre sadeleştirmen bir iki tane sayımız ebobunun bulma algoritması. Sadeleştirme yaparken pi ve pi diye ne yapacağım? Önce ebobunu bulacağım. Ondan sonra ebobunu bulduktan sonra pi ve pi diye böleceğim. Sadeleştireceğim. Bunlar bunun için kullanılıyor. Şu statik fonksiyonu neden burada yazılmış? Bu statik fonksiyon arkadaşlar sadece bu vasyonel nokta C içerisinden erişilsin diye yazılmış bir fonksiyon.
+
+545
+01:30:10,676 --> 01:30:15,096
+mesela Java'da veya diğer dillerde statik kelimesi farklı amaçlarla kullanılabilir.
+
+546
+01:30:15,096 --> 01:30:21,776
+Siz bunu bir kütüphane fonksiyon olarak yazsanız bile bu statik fonksiyonunu dışarıya kapatıyorsunuz müsaade.
+
+547
+01:30:21,776 --> 01:30:29,456
+Çünkü bu bir rasyonel C. İleride main.c'den doğrudan EBOB'u çağırmanız engellenmek istemelidir.
+
+548
+01:30:29,456 --> 01:30:32,956
+Sonra işte bir rasyonel sayı oluşturacağız.
+
+549
+01:30:33,555 --> 01:30:50,395
+Sadeleştirme yapmak istersek, rasyoneli double'a dönüştüreceğiz. Bu tarz fonksiyonların gereğini içerisinde yazıyoruz. Başka iki tane rasyonel sayıyı toplayacağız. Şimdi rasyonel sayıyı toplarken, bir şeyin payıyla paydasını çarpıp, öbürünün payıyla paydasını çarpıp falan filan.
+
+550
+01:30:51,395 --> 01:30:59,755
+Toplama algoritması, işte A bölü B artı C bölü de ne oluyor? A çarpı D artı B çarpı C bölü.
+
+551
+01:31:00,180 --> 01:31:21,300
+İşte B çarpı D. O mantıkla önce bu işlemi yapıyoruz, sonra bunu sadeleştiriyoruz. Sadeleştirirken Öklü [öğrenci]'i uyutmasını kullanıyoruz, bunu return ediyoruz. Return edeceğim şey rasyonel türlü. Çıkartma, çarpma, bölme, bir şeyin negatifini alma, mutlak değerini alma, ondan sonra tersini alma falan filan işlemler.
+
+552
+01:31:21,939 --> 01:31:34,819
+Halihazırda dediğimiz gibi bunlar bütün rasyonel noktası içerisinde bakın şuradaki kodla beraber ikisi de aynı dosya bu arada. Yani şu sadece kod yer yetmediği için yazılmış şeyler. Bunları dolduruyoruz.
+
+553
+01:31:36,699 --> 01:31:44,399
+Sonra main içerisinden biz diyoruz ki ana programımızda rasyonel sayı kütüphanemiz var. Ben bir rasyonel sayı oluşturacağım.
+
+554
+01:31:44,399 --> 01:31:48,960
+Diyelim ki rat.yeni çağırır. Bu rat.yeni nereden gelecek?
+
+555
+01:31:49,363 --> 01:32:00,623
+rasyonel nokta haşın içerisinden gerçek. Oradan bir 1 bölü 2 sayısı geliyor. Sonra işte 1 bölü 3 geliyor. İşte şuradan başka şey geliyor. 4 bölü 8 demişiz. Aslında bu 1 bölü 2. Gibi gibi.
+
+556
+01:32:01,743 --> 01:32:09,684
+Diyor ki 4 bölü 8'i sadeleştir yazdır. Şunun sadeleştirmiş yazdırmış. Toplama, çıkartma, çarpma bölmeyi bu şekilde kullanıyoruz.
+
+557
+01:32:15,283 --> 01:32:42,543
+kod testinde kullanılan bir şey diğer dillerde de var. Diyor ki, rasyonel toplayı çağır, rasyonel yeniyi çağır, bu ikisi birbirine eşit mi? Şimdi burada aset, buradan dönen değer birse size bir mesaj veriyor, işte bu eşittir veya değildir. Tabii siz rasyonel eşitin içerisinde ne tanımladıysanız, yani bu kafadan şey değil, global bir fonksiyon. Bunları görebiliyorsunuz. Kodları deneme imkanı var.
+
+558
+01:32:43,444 --> 01:33:10,224
+Bunun makefile de bakın şurada. Hani bu kadar kod yazdıktan sonra bunun makefile oluşturulacaksa, işte o makefile nasıl oluşturduğunu burada oluşturdum yazdım ben, inceleyebilirsiniz. Sonra bunun çalıştırılması, test edilmesi örnek sonuçlu görüyorsunuz. Mesela ikinci kez make çalıştırırsanız, aynı kod içerisinde herhangi bir şey yapılmadığı için olduğu gibi kalacak.
+
+559
+01:33:11,155 --> 01:33:22,756
+Yalnızca rasyonel C'yi değiştirdiğinde sadece main onu değerle, mesela rasyonel C'nin içerisi değerlenecek, main noktası bundan etkilenmeyecek diyelim.
+
+560
+01:33:23,615 --> 01:33:28,655
+Şu az önce gördüğümüz, bakın biraz önce benim de yaptığım hatayı buraya yazmışım ama ben de unuttum.
+
+561
+01:33:29,315 --> 01:33:33,756
+Boşluk değil, tab kullanılıyor şu makefile'in olduğu yerlerle, şuralarda.
+
+562
+01:33:33,756 --> 01:33:35,855
+Bunu da söyleyelim.
+
+563
+01:33:37,395 --> 01:33:47,155
+Projeyi genişletmek için mesela size buradaki şey işte rasyonelin kuvvetini alma, rasyonel ortalamasında burada fazla şey, farklı şeyler var gibi bunlara bakabilirsiniz.
+
+564
+01:33:48,715 --> 01:33:54,175
+Şimdi bunu da size ayrıca paylaşacağım. Burada zaten anlattık. Bunu geçelim.
+
+565
+01:33:55,175 --> 01:34:02,895
+Şimdi bir void pointer kısmımız var. Ona bir bakalım arkadaşlar. Ondan sonra şu jeneriklerden ve birazdan kureyden bahsedip dersi bitireceğiz.
+
+566
+01:34:03,796 --> 01:34:07,255
+Void pointer, dersin başında açmıştık şu kodu.
+
+567
+01:34:09,935 --> 01:34:18,635
+Bir pointer ve her türden pointerı cast ederek kullanmanızı sağlayan global bir şey aslında pointer tanımlayıcı.
+
+568
+01:34:18,635 --> 01:34:22,355
+Örneğin integer değeriniz var, float'unuz var, karakteriniz var.
+
+569
+01:34:22,355 --> 01:34:27,355
+Şimdi integer'ı kullanmak için pointer'u dönem, integer pointer'a ihtiyacınız var ama...
+
+570
+01:34:27,923 --> 01:34:50,423
+integer pointer'ını void pointer üzerinden cast ederek kullanabiliyorsunuz. Diyorsunuz ki bir tane void pointer'ım var. Bu pointer i'nin adresini tuttum. Ben i'nin gösterdiği yerdeki adresin değerine bakmak istedim de pointer'ı önce integer pointer'a şurada cast ediyorum. Bakın bu cast operasyonu daha öncelikli. Daha sonra dereferans yapıyorum.
+
+571
+01:34:50,931 --> 01:35:13,051
+Hatırlarsanız bir operasyonlar şeyimiz vardı, operatörlerin hiyerarşisi vardı. CAST şu dereferanstan daha öncelikli olduğu için önce bu yapılacak, ondan sonra bu yapılacak, ondan sonra eşittir yapılacak, ondan sonra onaklanacak. Bakın burada üç tane, birinci operatör, ikinci operatör, üçüncü operatör, üç tane operatörümüz var.
+
+572
+01:35:14,260 --> 01:35:21,760
+Sonra ben bunu ne yapıyorum? İşte float olarak devam ettirebiliyorum. Yani ayrı bir pointer tanımlamadan işte float üzerinden yapıyorum.
+
+573
+01:35:22,700 --> 01:35:28,039
+Bu örneğe bakınca anlamsız. Tamam void pointer her türden iş için kullanılıyormuş. Okey.
+
+574
+01:35:28,860 --> 01:35:36,280
+Ama yani üç tane yani bir void pointer yerine sonuçta bellekten üç pointer daha alırım, kullanırım diyebilirsiniz.
+
+575
+01:35:37,060 --> 01:35:41,380
+Fakat bunun daha güzel kullanıldığı şey var. Şimdi ona geleceğiz.
+
+576
+01:35:42,707 --> 01:35:48,707
+Bu da C ve jenerikler.
+
+577
+01:35:48,707 --> 01:36:02,347
+Şimdi bu bizim dersimizin tamamını içeren bir konu değil ama Stanford'ın CS107'si altında void pointer'ların da jeneriklerin kullanıldığı şeyler. Güzel bir program tasarlama şeydir.
+
+578
+01:36:02,676 --> 01:36:17,975
+Yani bunun üzerine zaten bilimcim işte bazı programlama dilleri yani çoğu C temelli olduğu için işte Python veya diğer diller çoğu C'den esinlenerek yapılan şeyler ki bazıları doğrudan C temelli diyebiliriz.
+
+579
+01:36:18,956 --> 01:36:25,336
+Hedefimiz şu, jenerik fonksiyonlar yazabilmek.
+
+580
+01:36:26,536 --> 01:36:30,115
+Jenerik kodlar yazabilmek. Örneğin SWEP üzerinden düşünelim.
+
+581
+01:36:31,060 --> 01:36:37,060
+Şimdi iki tane sayıyı swap yapmak istediğimizde, şimdi bu sayı integer olabilir, floating point olabilir.
+
+582
+01:36:38,060 --> 01:36:42,560
+Ama biz her zaman iki tane sayıyı swap etmek zorunda değiliz. İki karakteri swap edebiliriz.
+
+583
+01:36:43,520 --> 01:36:47,140
+Ne bileyim, iki tane structure değişkenini swap edebiliriz.
+
+584
+01:36:47,140 --> 01:36:50,119
+O zaman şöyle fonksiyon isimleri ortaya çıkar.
+
+585
+01:36:50,400 --> 01:36:57,860
+İşte swap integer, swap float, swap double, swap my struct, swap kitap, swap öğrenci gibi şeyler.
+
+586
+01:36:58,707 --> 01:37:08,147
+Bu kadar farklı swap ile başlayıp ayrı ayrı fonksiyonlar yapmak yerine, çünkü mantık olarak hepsi aynı, içeriği tamamen hepsinde aynı olacak.
+
+587
+01:37:08,147 --> 01:37:11,187
+Sadece değişen şey şurası dikkat ederseniz ve şunlar.
+
+588
+01:37:11,187 --> 01:37:16,707
+Acaba diyoruz ki bunu jenerik bir şekilde tanımlayabilir miyiz?
+
+589
+01:37:16,707 --> 01:37:22,707
+Bunun için güzel ama işe yaramıyor. Peki.
+
+590
+01:37:24,148 --> 01:37:39,668
+Burada hani bunun şey var, slide biraz detaylı ama hani hızlı akacak bir slide. Çünkü adım adım kodu anlatmaya gerek yok. Zaten bildiğiniz bir kod. Onun için geçiyorum. İşte iki tane sayı swap etmek istediniz. Ne yaparsınız? Swap işleminin makro mekanizmasını burada uzun uzun anlatmış.
+
+591
+01:37:39,668 --> 01:37:42,588
+Peki.
+
+592
+01:37:45,468 --> 01:37:49,068
+Diyor ki, ben diyor.
+
+593
+01:37:49,555 --> 01:37:57,955
+Shortlar için bunu söyleyelim. Yani integerlar için değil. Short ayrı bir değer ya. O zaman gidip kodu kopyalayıp, içerisinde short mi yazacağız?
+
+594
+01:37:57,955 --> 01:38:12,115
+Hani kod her şey aynı, sadece şu intler yerine short geldi. Tamam yazdık diyelim. Hani burada program gereksiz yere kalabalıklaşmaya başlıyor.
+
+595
+01:38:14,963 --> 01:38:24,384
+stringler için falan da düşünün. String üzerinden mesela iki tane stringi swap yapmaya çalışıyor. Burada karakter, ikinci dereceden karakter pointerıyla.
+
+596
+01:38:25,123 --> 01:38:37,823
+Swap string demiş bu da. Yani olayın herhalde esprisini anladınız. Şimdi bunu çözeceğiz. Bu kadar farklı swap şeyi olmaz.
+
+597
+01:38:42,771 --> 01:38:50,692
+Aynı işi yapan, aynı mantıkla çalışan 20 tane fonksiyon yazmanız lazım. Ki böyle böyle devam edip gidiyor.
+
+598
+01:38:52,771 --> 01:39:07,351
+Acaba bunu jenerik hale getiremez miyiz? Şunları yok edecek şekilde. Öyle bir şey olacak ki burada, bu bir pointer olacak birinci datanın, öbürü de ikinci datanın pointer olacak.
+
+599
+01:39:08,115 --> 01:39:11,416
+Ve bunları kendi içerisinde sıvı kopyalama yapacağız.
+
+600
+01:39:12,735 --> 01:39:14,676
+Ama şimdi burada şöyle bir durum var.
+
+601
+01:39:14,796 --> 01:39:17,456
+Şimdi integer olsa pointer üzerinden 4 byte.
+
+602
+01:39:18,256 --> 01:39:19,336
+Short olsa 2 byte.
+
+603
+01:39:20,055 --> 01:39:23,135
+Bu bir karakter bilmem bir şey olsa 8 byte gibi bir şey olacak.
+
+604
+01:39:23,315 --> 01:39:24,595
+Hani karakter pointer olsa.
+
+605
+01:39:25,815 --> 01:39:26,935
+Karakter pointer diyorum.
+
+606
+01:39:27,676 --> 01:39:30,796
+Çünkü karakter stringi değiştirmede kullandığımız bir araç.
+
+607
+01:39:31,996 --> 01:39:33,416
+Farklı bir şey var.
+
+608
+01:39:34,260 --> 01:39:45,260
+Bunu sağlamak bile kendi structurunuz olsa belki 20 byte olacak. Şimdi hem boyut problemi hem de belirti problemini nasıl çözebiliriz? Buna doğru ilerliyoruz.
+
+609
+01:39:45,260 --> 01:39:50,260
+Şimdi bizim boyut problemini çözmemiz yol aslında size of ile bu işlem yapılabilir.
+
+610
+01:39:50,260 --> 01:39:57,260
+Çünkü size of ne yapıyordu? Bir şeyin boyutunu size söyleyebiliyordu.
+
+611
+01:40:00,340 --> 01:40:13,680
+Void türde bunu alarak, Void pointer türde, diyoruz ki şuraya gelen şeyin türü her ne olursa olsun, ben onu size'ını da elde edebiliyorsam, size'lar üzerinden bu değişimi yapabilirim.
+
+612
+01:40:15,100 --> 01:40:26,739
+Bakın Void pointer burada işimize yaradı. Şöyle biraz yavaş gideyim burada. Önce diyor ki, geçici bellekteki datanın kopyasını bir yere kaydet.
+
+613
+01:40:27,572 --> 01:40:38,912
+Data'nın konumunu Data2'ye kopyalar. Data1'in konumunu. Data2'nin konumunu, geçici bellekteki konumunu, diğer Data2'ye kopyalar.
+
+614
+01:40:39,592 --> 01:40:49,152
+Şey, geçici bellekteki Data'yı Data2'ye kopyalar. Peki, Data tipini bilmiyorsak ne kadar tip olduğunu da bilemeyebiliriz.
+
+615
+01:40:54,292 --> 01:41:02,692
+size'ını bulabiliriz. Ama tipini bilmediğimiz şeyin size'ını bulabilmek de şey. O da ayrı bir problem olarak karşımıza gelecek.
+
+616
+01:41:02,692 --> 01:41:19,292
+O zaman acaba void pointer'ı kullanarak bu yapılabilir mi diye düşünülmüş ve burada gelen veriyi bir aslında karakter dizisi formatında şey alıyoruz. Bu bir gelen veri integer'da olsa.
+
+617
+01:41:19,764 --> 01:41:24,123
+floating point de olsa veya bir string de olsa karakter dizisi formatında alıyoruz.
+
+618
+01:41:25,184 --> 01:41:28,764
+Ve bunları bir byte dizisi şeklinde alıp daha sonra kest edeceğiz.
+
+619
+01:41:28,884 --> 01:41:31,364
+Ama bakın şunlar void pointer.
+
+620
+01:41:32,304 --> 01:41:33,564
+Swap'de sadece ne yaptık?
+
+621
+01:41:33,703 --> 01:41:37,724
+Şurada kaç tane byte olduğuna dair bir bilgi gönderdik.
+
+622
+01:41:39,024 --> 01:41:41,104
+Bunu da gönderirken zaten söylememiz mümkün.
+
+623
+01:41:41,104 --> 01:41:46,384
+Şimdi diyeceğiz ki bu data pointer'ın olduğu yerden
+
+624
+01:41:47,475 --> 01:42:14,475
+data birim pointer'ın olduğu yerden geçici bellek bölgesine bir atama yapacağız. Oradaki değerleri alacağız. Sonra onu diğerine aktaracağız falan. Fakat burada bir void pointer'ın dereferans edilme durumu var. Hangi türe dereferans edeceğimizi bilemiyoruz. İşte burada da memcopy, size daha önce anlattığım memcopy fonksiyonu geliyor. Bir kaynaktan bir destination'a şu kadarlık bilgiyi kaydet. Çünkü eşittir işlemi ne kadar veri yapacağını bilemez.
+
+625
+01:42:15,412 --> 01:42:17,711
+Ama ne yapar? Memcopy bunu yapar.
+
+626
+01:42:19,131 --> 01:42:25,412
+Siz mesela X ve Y'yi bu şekilde aldığınızda, X'in size'ı kadar şeyi bir yerden bir yere kaydırıyorsunuz.
+
+627
+01:42:25,412 --> 01:42:28,971
+İşte Y'den al, X'e kayda, şunun aynısını yapabiliyorsunuz.
+
+628
+01:42:29,460 --> 01:42:37,260
+veya MemoryMood'a yapabiliyorsunuz işte bir şeyden bir yere aktarımı yapabilmek için. Burada yardımcı fonksiyon olarak bu.
+
+629
+01:42:37,260 --> 01:42:45,659
+O yüzden bizim generics web fonksiyonumuzda şöyle bir şey eşittir yapmak yerine yine aynı mantığı muhafaza ederek ne yapabiliyoruz?
+
+630
+01:42:45,659 --> 01:42:53,260
+MemCopy veya MemMood fonksiyonlarını kullanarak diyoruz ki, data1 pointer'ın geldiği yerdeki değeri al.
+
+631
+01:42:53,260 --> 01:42:57,260
+Şurada n-byte'lık bir yer olsun.
+
+632
+01:42:57,779 --> 01:43:23,499
+n-byte'lık yeri geçici olarak burada sakla, n-byte kadar. Ondan sonra devamı gelecek. Yine aynısını, bu sefer SWEP'in ikinci aşaması, orada da bir memcopy yap, data 2'den data 1'e kaydet, n-byte kadar. Sonra da zaten bu ne olmuş oldu, adresler üzerinden değişim yapıldığı için tekrardan bu kadarlı kısmı diğer kısmı aktarıyoruz.
+
+633
+01:43:24,884 --> 01:43:31,384
+Car, tent yanlış değil mi? Bu yanlış deyimden kastım malloc yapılmalı içinden mi bahsediyorsun?
+
+634
+01:43:34,771 --> 01:43:37,831
+[öğrenci]. Yani onu mallocla da yapabilirsiniz. Sıkıntı yok.
+
+635
+01:43:38,572 --> 01:43:40,952
+Burada sadece olayın genel mantığını anlatmak için.
+
+636
+01:43:41,131 --> 01:43:44,872
+Yani şurada tabii bunun ne kadarlık veri olacağını bilemeyiz.
+
+637
+01:43:45,032 --> 01:43:48,492
+Hani 4 mi olacak, 10 mu olacak, şey mi olacak?
+
+638
+01:43:48,591 --> 01:43:50,351
+Hani bu bir sabit değil, değişken bir şey.
+
+639
+01:43:50,791 --> 01:43:53,152
+Onun için burada malloc kullanılabilir. O sıkıntı değil zaten.
+
+640
+01:43:55,091 --> 01:43:59,372
+Dolayısıyla arkadaşlar siz swap yaptığınızda, o fonksiyonu çağırdığınızda
+
+641
+01:43:59,828 --> 01:44:19,547
+X ve Y gibi iki tane değişkeniniz varsa şu kodda, integer değişkeniniz varsa, X ve Y'yi swap et adresleri üzerinden ve size of X veya size of Y'ye kadar veri gönder. Ne oluyor? Şurada geçici bir byte üzerinden bu veri swapini gerçekleştirebiliyorsunuz. Aynısını short üzerinden de yapabilirsiniz.
+
+642
+01:44:25,587 --> 01:44:46,167
+sector, na, costa karakter olur. Onları swap yapabiliyorsunuz. Veya bir kendi structure'nız var. O structure üzerinden işte bir şeyler yazdınız. O bir şeyleri kendi üzerinden değişiklik yapabiliyorsunuz. İşte void pointer'ın kullanım yerlerinden bir tanesi. Şimdi bunun bir adım ötesi var.
+
+643
+01:44:50,387 --> 01:44:52,347
+Bir adım ötesine de şöyle geleceğiz.
+
+644
+01:44:59,604 --> 01:45:06,324
+Çağır dizisi yapmamızın özel sebebi var mı? Var. Çünkü bunu byte'lar halinde vereyim, saklıyorsunuz.
+
+645
+01:45:08,123 --> 01:45:15,423
+Bir byte'da bir karaktere karşılık geldiği için bunu en mantıklı saklamanın yolu byte, şey karakter.
+
+646
+01:45:16,804 --> 01:45:19,583
+Tamam mı? Peki bu bir byte ne?
+
+647
+01:45:20,123 --> 01:45:26,904
+Float point'lerden double, 8 byte, şey 32, şey float 32 bit. Yani
+
+648
+01:45:27,699 --> 01:45:45,399
+Ne oluyor? 4 byte. O 4 byte'lık veri, 32 tane bit şuraya geliyor. 0 ve 1'ler şeklinde senin floating point sayın neyse, 0 ve 1'ler şeklinde burada bir bit dizisi şeklinde string olarak saklanıyor.
+
+649
+01:45:46,399 --> 01:45:53,760
+Onlar swap yapılınca, tekrar geri döndürülünce ne yapıyor o adres üzerinde? Senin floating point sayın yine floating point sayı ama swap yapılmış.
+
+650
+01:45:54,868 --> 01:46:18,708
+Bir structure dizisi olsa, işte kitabın adı var, id'si var, işte nevi, ispn var, onlar da sonuçta bir 01 dizisi. Onları swap yaptığında yine aslında karakter dizisinin önüne swap yapabiliyorsun. Bunu başka türlü, hani bir byte'ı en güzel match edeceğimiz bir tipi karakterdir. Anlatabildim mi [öğrenci]? Hani bu int olmaz. Çünkü int olsa int 4 byte.
+
+651
+01:46:19,572 --> 01:46:29,292
+Floating point'ten float da 4 byte, 4 byte, 4 byte da yapamayız. Ama byte byte, birer byte, birer byte bunu en güzel sağlamanın yolu karakteriz.
+
+652
+01:46:30,572 --> 01:46:32,891
+Şimdi bunun bir adım ötesi var.
+
+653
+01:46:35,131 --> 01:46:41,011
+İşte herhangi 8 bit olan karakter tipi deyince herhalde bir byte şey var, yani kar var.
+
+654
+01:46:41,395 --> 01:46:50,675
+Diğerleri bu şeye sağlamıyor. Yani bir baytlık veri tiplerinden başka C var olduğunu bilmiyorum. Onun için bu oluyor.
+
+655
+01:46:52,395 --> 01:46:57,395
+Tabi bu bir çözüm, yani bunun alternatif çözümün var. Bu çözümün şimdi bir sıkıntısını göreceğiz. Şimdi ona geliyorum.
+
+656
+01:47:23,155 --> 01:47:28,816
+Burada da mesela generic bubble sort. Aslında problem bu, evet. Bunun üzerine anlatabiliriz.
+
+657
+01:47:29,916 --> 01:47:33,836
+Şimdi swap yapacak kodu yazdık. Burada bir şey swap ediliyor.
+
+658
+01:47:33,836 --> 01:47:35,836
+Aslında...
+
+659
+01:47:39,764 --> 01:47:41,903
+Neyse, şundan gidelim de gerekirse ona gelelim.
+
+660
+01:47:43,923 --> 01:47:52,603
+Şimdi peki, bu swap'i yaparken, acaba biz bir dizinin içerisindeki herhangi iki elementi swap yapmada kullanabilir miyiz?
+
+661
+01:47:54,304 --> 01:47:57,603
+Herhangi iki değişkeni swap yapmak için şu fonksiyon çalışır.
+
+662
+01:47:59,184 --> 01:48:05,363
+Ama bir dizinin iki elementi olan bir swap yapmada bunu kullanabilir miyiz?
+
+663
+01:48:06,912 --> 01:48:15,471
+meselemiz burada bu. Arada bir slide atlamayayım da bir kontrol yapayım. Çünkü anlatalı baya yok bu değil.
+
+664
+01:48:18,431 --> 01:48:21,112
+Evet, şuradan devam edebiliriz.
+
+665
+01:48:24,471 --> 01:48:31,511
+Mesela ilk ve bir sayı dizisinin ilk ve son elemanlarını ve herhangi iki elemanını swerp yapmamak istendi.
+
+666
+01:48:32,371 --> 01:48:33,731
+Şöyle bir fonksiyon yazarsınız.
+
+667
+01:48:35,828 --> 01:48:37,028
+diziyi alırsınız.
+
+668
+01:48:38,268 --> 01:48:39,228
+Bu bir swap olabilir.
+
+669
+01:48:43,068 --> 01:48:47,728
+Fakat bunu yaparken biz az önceki şu fonksiyonu kullanırsak
+
+670
+01:48:47,728 --> 01:48:49,248
+ve
+
+671
+01:48:49,248 --> 01:48:51,808
+ne oluyor? Bu
+
+672
+01:48:51,808 --> 01:48:55,648
+şurada bir
+
+673
+01:48:55,648 --> 01:48:59,828
+generic fonksiyon var. Size of array kadar, array pointer kadar
+
+674
+01:48:59,828 --> 01:49:01,728
+bir size göndereceğiz diyoruz.
+
+675
+01:49:02,420 --> 01:49:17,539
+Bunu genelleştirdiğimizde, işte Bitint dizisinin son iki, ilk iki elemanı, yani aslında elemanların şeyi de çok önemli değil de, onu da söyleyebiliriz. İşte Short dizisi, String dizisi, Float dizisi, bunlar kendi aralarında yer değiştirilebilir.
+
+676
+01:49:26,003 --> 01:49:32,083
+fonsu dizinin uçtaki elemanlarını değiştirecek bir fonsu yaz dediğinde.
+
+677
+01:49:32,724 --> 01:49:35,243
+Acaba bu jenerik olur mu?
+
+678
+01:49:35,444 --> 01:49:36,764
+Yani bunu jenerik yapabilir miyiz?
+
+679
+01:49:36,984 --> 01:49:44,423
+Yani tamam şu içeriği jenerik de şimdi sınırları da jenerik yapabilecek bir hale getirelim.
+
+680
+01:49:44,524 --> 01:49:46,884
+Böyle üst üste bir sürü fonksiyonlar yazmıyor mu?
+
+681
+01:49:47,184 --> 01:49:49,423
+Şimdi aynı mantığı buraya uyarlamaya çalışacak.
+
+682
+01:49:50,944 --> 01:49:52,564
+Adına da slap and demiş.
+
+683
+01:49:54,260 --> 01:49:57,840
+O zaman diyor ki ben burada yine void pointer kullanıyorum.
+
+684
+01:49:57,840 --> 01:50:01,420
+Yani hiç böyle integer array, karakter array kullanmam.
+
+685
+01:50:01,679 --> 01:50:06,539
+Elemanlarımda her birinin size kadar şey yaparım. Az önceki swap pointlarımı çağırdım.
+
+686
+01:50:07,319 --> 01:50:08,599
+Peki bu çalışır mı?
+
+687
+01:50:10,139 --> 01:50:11,159
+Çalışmaz.
+
+688
+01:50:11,920 --> 01:50:15,260
+Çünkü diyor ki biz artık elementin size'ını bilmiyoruz.
+
+689
+01:50:16,019 --> 01:50:18,319
+Çünkü şuraya gelen şeyin size gitti.
+
+690
+01:50:19,099 --> 01:50:21,399
+Az önce buraya gelen şey integer'dı.
+
+691
+01:50:22,036 --> 01:50:31,935
+karakterdi. Integer ise burada da integer. Karakter ise burada da karakter. Ama bu void ise, void in size'ı da hiç yani şey, iki ise iki dört sebep olmuyor.
+
+692
+01:50:33,136 --> 01:50:38,536
+Dolayısıyla bu bilinmiyor. İkinci olarak pointer aritmetik burada geçerli olacak.
+
+693
+01:50:39,336 --> 01:50:48,336
+Verinin başı ile son arasındaki pointer aritmetik nasıl yapacağız? Bu da ayrı bir problem. Bu void pointer ile bir bilgi kaybı var.
+
+694
+01:50:50,036 --> 01:50:55,916
+Biz diyor ki, neyi bilmemiz lazım? Element'in size'ını bir parametre ekleyeceğiz buraya.
+
+695
+01:50:55,916 --> 01:51:03,355
+Diyor ki, bu element'in size'ı ile alakalı bir bilgi. Şu size alttan tereler arkadaşlar integer'dır.
+
+696
+01:51:03,355 --> 01:51:10,195
+Tam sayı gibi düşünebilirsiniz. Bir şeyin boyutunu pozitif tam sayı gibi düşünebilirsiniz. Hep integer gibi düşünebilir.
+
+697
+01:51:10,195 --> 01:51:15,556
+Artık ben SWAT üzerine bu size bilgisini göndermek yerine şunu göndereceğim.
+
+698
+01:51:16,627 --> 01:51:19,047
+Bu parametreyi göndersem o zaman bu olabilir.
+
+699
+01:51:20,287 --> 01:51:28,267
+Eğer mesela elementimiz 4 ise, bunlar arasında işte 4'e göre bir prep yapılacağını bize söylüyor.
+
+700
+01:51:29,547 --> 01:51:32,107
+Gibi gibi buradan devam edilebilir.
+
+701
+01:51:33,947 --> 01:51:35,567
+Neyse çok fazla şey yapmayacağım.
+
+702
+01:51:35,687 --> 01:51:39,647
+İşte integer ise, character ise, karakter ise nasıl olacağını falan burada söylemiş.
+
+703
+01:51:42,647 --> 01:51:43,447
+Peki.
+
+704
+01:51:44,532 --> 01:51:51,091
+İşte şurada hangi elementler arasında değişiklik yapılacağını birazcık pointer aritmetiyle bakın şöyle söylüyoruz.
+
+705
+01:51:52,231 --> 01:52:05,532
+Array ile array'in n artı birinci yani n'inci elemanı ama ondan birinci elemanı şey, array'in size'ı eksi birinci elemanı kadar bir, onunla ikisi arasında yer değişsin mantığını kurguluyor.
+
+706
+01:52:05,532 --> 01:52:10,612
+Ve burada da buradaki byte'ları tekrardan karaktere dönüştürüyor.
+
+707
+01:52:11,731 --> 01:52:20,051
+Hani karakter dizilerini bu sefer yine diziler, dizi üzerindeki elementleri ne olursa olsun karakter dizisi formatında yer değiştiriyoruz.
+
+708
+01:52:20,771 --> 01:52:29,971
+Olay bunun olduğu yere doğru gidecek ve çağıracağınız şey şuna yakın bir şey olacak. Bunun devamında bunun şeyi var en sonuna doğru gidelim.
+
+709
+01:52:31,971 --> 01:52:36,851
+Dolayısıyla bakın siz böyle bir string gönderdiğinizde bunların işte
+
+710
+01:52:37,043 --> 01:52:49,043
+Birincisiyle, şununla şunu yer değiştir dediğimizde, onu karaktercisi üzerinden değiştiriyor. Veya başka bir my structure gönderdiğimizde bunları değiştirebiliyorsunuz.
+
+711
+01:52:49,043 --> 01:52:58,043
+Jenerikler bu işe yarıyor. Daha bunun ileri seviye versiyonları var. Array'ı rotasyon yapmak.
+
+712
+01:52:58,043 --> 01:53:03,756
+Böyle bir fonksiyon yazacaksın. Baştan şu kadar elemanla, sondan şu kadar elemanı rotate et.
+
+713
+01:53:04,051 --> 01:53:10,291
+O zaman ne oluyor? Hani bu fonksiyonu, yukarıdaki yazdığımız fonksiyonu kullanalım desek, iş biraz daha karmaşıklaşır.
+
+714
+01:53:10,291 --> 01:53:17,051
+Bu böyle demedir. Sonra generic bubble sort'a gelmiş. Hani bubble sort'un burada mantığını anlatıyor. Onu geçiyorum.
+
+715
+01:53:18,051 --> 01:53:26,051
+Şimdi bubble sort'taki olay şu. Şöyle çizeyim. İşte benim böyle sayılarım var.
+
+716
+01:53:27,028 --> 01:53:32,307
+Şununla şu büyüklük-küçüklük ilişkisini sağlamıyorsa yer değiştiriyorum. Bununla bunu da değiştiriyorum.
+
+717
+01:53:33,028 --> 01:53:39,807
+Şimdi burada baş ve son yer değişimi diye bir şey yok. Komşu olan ikişerli ikişerli yer değiştiriyorum. Dikkat edersiniz.
+
+718
+01:53:40,628 --> 01:53:46,608
+Yani bu dizinin i ince elemanıyla dizinin i artı birinci elemanının yer değiştirilmesi söz konusu.
+
+719
+01:53:46,608 --> 01:53:50,668
+İşte swap yaparken şu şeyde şuraya gelelim.
+
+720
+01:53:51,923 --> 01:53:59,764
+Integer Bubble Sort veya işte herhangi bir Bubble Sort i ile i artı birinci arasında veya i ile i eksi birinci arasındaki bu swap'i gerçekleştirecek.
+
+721
+01:54:00,264 --> 01:54:15,363
+Az önceki bizim şu swap kodumuzu kullanıyor. Bunun daha jenerik halini işte yapan string'i, integer'ı, işte structure'ı şey yapan bir bubble sort, jenerik bir bubble sort fonksiyonu yapılmış.
+
+722
+01:54:15,363 --> 01:54:18,363
+Burada da aşama aşama bunu gösteriyor. Şöyle sonuna doğru gidelim.
+
+723
+01:54:22,100 --> 01:54:24,100
+Bakın yine void pointer'ı kullanıyoruz.
+
+724
+01:54:26,500 --> 01:54:32,100
+Değiştireceğimiz tipteki elementlerin boyutlarını, her bir element ne kadar kullanacak.
+
+725
+01:54:32,100 --> 01:54:38,100
+Sonra şu compare function'ı artan sırlamamı mı yapacaksın, azalan sırlamamı mı yapacaksın onu falan söylüyor.
+
+726
+01:54:38,100 --> 01:54:44,100
+İkisini de hem artan hem de azalan sırlamaya uygun olsun diye yapılmış bir şey.
+
+727
+01:54:44,100 --> 01:54:47,100
+Ascendings ise asending, disendings ise disending olacak.
+
+728
+01:54:49,332 --> 01:55:00,772
+Tam bir generic bubble sort fanesi oluşturulmuş. Bakayım burada devam var mı? Şurada kalıyor işte devamı. Yani kodu bu sitenin şeyinden indirebilirsiniz.
+
+729
+01:55:00,772 --> 01:55:09,772
+String'i compare ederken olay biraz farklı tabii ki. Hani integer comparison ile string comparison biraz daha farklı oluyor. Onları falan göstermiş.
+
+730
+01:55:09,772 --> 01:55:16,892
+Dolayısıyla bu void pointer'ların böyle kullanımları var arkadaşlar. Bunlar güzel örnekler.
+
+731
+01:55:17,171 --> 01:55:18,531
+Sizin bir sorunuz var mı burada?
+
+732
+01:55:21,251 --> 01:55:25,791
+Biraz da şeylerden bahsedip hemen dersi tamamlamaya çalışacağım.
+
+733
+01:55:28,611 --> 01:55:31,851
+Kendi slide'ımıza geri geliyoruz. Şimdi multi-thread programlama.
+
+734
+01:55:33,971 --> 01:55:37,431
+Şimdi bir program çalıştırdığımızda şu ana kadar programlarımız ne oluyor?
+
+735
+01:55:38,811 --> 01:55:44,611
+Baştan main'in ilk satırından başlıyor. İşte son satıra kadar tek bir execution pull-off devam ediyor.
+
+736
+01:55:45,747 --> 01:55:47,747
+Özyüken öncülü gördüğünü gözlemleyelim.
+
+737
+01:55:47,747 --> 01:55:49,739
+Ne oldu? Olmadı.
+
+738
+01:56:01,652 --> 01:56:03,872
+Şu an görüyor musunuz arkadaşlar çizdiklerimi?
+
+739
+01:56:03,872 --> 01:56:05,372
+Yani yazdıklarımı.
+
+740
+01:56:08,756 --> 01:56:12,516
+Net ekran var mı yoksa yeşil bir ekran mı görüyorsunuz?
+
+741
+01:56:19,444 --> 01:56:26,444
+Tamam. Şimdi thread execution flow şu. Şimdi main'de başladığımız koda. Niye yazamadık?
+
+742
+01:56:26,444 --> 01:56:34,444
+Main başlar. Aradaki fonksiyon çağırları önemli değil. Program tamamlanana kadar böyle tek bir akışla devam ediyor.
+
+743
+01:56:34,444 --> 01:56:43,444
+Şuradaki satır bitmeden bir alt satıra geçmezsiniz. Fakat bazı programlar vardır ki, bazı problemler vardır ki
+
+744
+01:56:44,115 --> 01:56:50,176
+eş zamanlı paralel çalışmaya, paralel gibi çalışmaya müsait. Örnek şunu vereyim.
+
+745
+01:56:52,235 --> 01:56:54,136
+İki tane dizimiz var.
+
+746
+01:56:59,283 --> 01:57:26,103
+Bu iki diziyi toplamak istiyorsunuz. Üçüncü bir diziye. Şimdi bunun kodunu yazmaya çalışsak ne yaparsın? İşte bir tane for döngüsü. İşte birden N'e kadar. C'nin iyisi eşittir. A'nın iyisi artı B'nin iyisi. Şimdi bu for döngüsünde C'nin sıfırı toplanmadan C'nin biri toplanmaz. Halbuki biz şunu yapabiliriz.
+
+747
+01:57:26,707 --> 01:57:50,707
+Sıfırları toplarken, sıfırlar kendi içinde toplandıken, birler kendi içinde toplanabilir. Yani eş zamanlı olarak toplanabilir. Arkadaki donanımımız buna müsait. Şu an çoğumuzun bilgisayarında işte dört tane işlemci, ne bileyim sekiz tane çekirdek. Yani komutu çalıştıracak donanım var ama yazılım ona müsait değil. Çünkü yazılım...
+
+748
+01:57:51,475 --> 01:57:55,895
+Önce A'nın sıfırıyla B'nin sıfırını toplayıp C'nin sıfırını toplamak üzerine.
+
+749
+01:57:57,095 --> 01:58:03,195
+Ondan sonra A'nın biriyle B'nin birini toplayıp C'nin birini toplamak üzerine oluşturulmuş bir şey.
+
+750
+01:58:03,815 --> 01:58:05,555
+Fakat bu kod paralel çalıştırılabilir.
+
+751
+01:58:06,275 --> 01:58:12,876
+İşte MultiThread Programlama sizin bu main'den başlayıp, niyeyse buraya yazılınca çiziyor,
+
+752
+01:58:13,655 --> 01:58:17,876
+Execution Flow'unuzu birden fazla parçaya bölebiliyorsunuz. Paralel çalıştırabiliyorsunuz.
+
+753
+01:58:18,931 --> 01:58:27,931
+Tabi kod buna müsaitse. Bakın şu durumda bu kod çalışmaz. Şöyle bir program yazmanızı istedim. Dizinin içerisinde elemanlar var, sayılar var.
+
+754
+01:58:29,771 --> 01:58:38,952
+Soru şu, sizden bu dizinin kümülatif toplamını yapmanızı istiyorum. Mesela burada bir var, iki var, üç var, dört var, beş var.
+
+755
+01:58:40,431 --> 01:58:42,811
+Bir ile ikiyi toplayacağız. Yani şöyle olacak.
+
+756
+01:58:45,492 --> 01:58:50,292
+1 burada kalacak. Aynen. 1'den öncesi yok. 1 ile 2'yi toplayacağız. Buraya yazacağız. 3.
+
+757
+01:58:51,932 --> 01:58:55,052
+1 ile 3'ü toplayacağız. Buraya yazacağız. 6.
+
+758
+01:58:57,092 --> 01:58:59,552
+6 ile 4'ü toplayacağız. Buraya yazacağız. 10.
+
+759
+01:59:01,412 --> 01:59:05,492
+10 ile 15'i toplayacağız. Arkadaşlar, bir saniye. Affedersiniz.
+
+760
+01:59:37,492 --> 02:00:03,692
+Evet, devam edelim. Bakın bu tarz bir kümülatif toplam işleminde, işte 1 ile 2'yi topladım, 3'ü buraya yazdım. 3 ve 3'ü, bir sonraki topladım, 6'ı buraya yazdım. Bir önceki toplamın, bir sonraki toplamın iterli. Burada belki, hani, single thread çalışmak mümkün gerekli. Ama şu tarz bir şeyde, multi thread çalışmaya ihtiyacımız olabilir. En azından kaynak kullanımını maksimize ederiz.
+
+761
+02:00:05,395 --> 02:00:17,036
+Veya maddesi çarpıyorsunuz. Bu maddesi çarparken şimdi bir satırla bir sütunu çarpıyorsunuz elementer olarak. Bu bir hücre ediyor. Bir maddesi paralel olarak çarpmak çok ciddi hızlandırmak demektir.
+
+762
+02:00:17,036 --> 02:00:28,956
+Bunu multi-thread programlamayla yapıyorum. C'de bunun farklı kütüphaneleri var. Ve bu kütüphaneler işletim sisteminden işletim sisteminde değişen bir şey.
+
+763
+02:00:29,460 --> 02:00:54,720
+Thread'in ne olduğunu bilelim. Execution flow'un birden fazla olması, multi-thread. Eğer kodunuz tek bir main function'dan ve tek bir execution flow'dan oluşuyorsa buna single thread diyoruz. Ve işletim sisteminden izin alarak bu işi yapıyoruz. Bunun gerçek hayat kullanımları çok fazla. Örneğin şu an ben size bir yandan ders anlatırken bir yandan bir şeyler çiziyorum.
+
+764
+02:00:55,444 --> 02:00:58,564
+Şimdi bunu yapabilmem multi-thread uygulama sayesindedir.
+
+765
+02:00:59,123 --> 02:01:03,123
+Böyle bir şey olmasaydı şu olurdu. Şimdi ben konuşuyorum, size sesim aktarılıyor.
+
+766
+02:01:03,444 --> 02:01:05,684
+Sesim aktarılırken bir şey göremezdiniz.
+
+767
+02:01:06,403 --> 02:01:11,684
+Veya görüntü var, görüntü varken sesimin aktarılmasını daha sonra başlardık.
+
+768
+02:01:11,923 --> 02:01:16,884
+Bunların sırasında işletim sistemi kendi belirlemediği için çok anlamsız karışık bir şey olurdu.
+
+769
+02:01:17,283 --> 02:01:20,963
+Düşünün, önce görüntü geliyor ama görüntüyle alakalı ses yok.
+
+770
+02:01:21,716 --> 02:01:28,716
+Ondan sonra görüntü değişiyor, ses başka bir şey oluyor, görüntü gidiyor, ses geliyor, böyle karma kuş, karma kuş olman bir şey oluyor.
+
+771
+02:01:28,716 --> 02:01:38,716
+Gerçek hayattaki insanların veya işte olayların eş zamanlılığının bir mekanizmasını burada görebiliyoruz. İşlemci çekirdeğimizin fazla olması sayesinde.
+
+772
+02:01:38,899 --> 02:02:05,719
+Veya web browserımız, her bir browserda, az önce açtık, her bir tabimiz kendi içerisinde, bir sayfadan gittiniz, notunuzu öğreniyorsunuz, bir sayfada YouTube'dan gittiniz, bir sayfada sosyal medyadasınız. Bunlar birbiriyle eş zamanlı çalışabilir. Bu eş zamanlıktan kastımız iki türlü. Birincisi gerçek paralellik. Gerçek paralellik şudur. İki tane işlemciniz varsa en az.
+
+773
+02:02:06,484 --> 02:02:11,724
+veya işlemci çekirdeğimiz varsa, gerçek paralellik %100 sağlayabilirsiniz.
+
+774
+02:02:12,724 --> 02:02:17,624
+Örneğin iki tane programınız vardır. Birisi bir programda çalışır, birisi bu programda çalışır.
+
+775
+02:02:18,124 --> 02:02:21,404
+Herhangi bir T anında ikisinin de aynı anda çalıştığını görürsünüz.
+
+776
+02:02:22,844 --> 02:02:25,424
+Buna gerçek paralellik veriyor. Diğeri de sanal paralellik.
+
+777
+02:02:26,324 --> 02:02:33,664
+Bir tane işlemciniz var. Sizin programlarınız sürekli işlemci içerisinde bulunacak diye bir kaide yok.
+
+778
+02:02:34,547 --> 02:02:39,047
+Örneğin ScanF yaptınız. ScanF yaparken ne yapıyorsunuz? Kullanıcıdan beri alıyorsunuz.
+
+779
+02:02:39,047 --> 02:02:48,547
+Veya printf yaptınız veya dosyaya bir şeyler yazıyorsunuz. Onlar nedir? İşlemci kullanmaya gerek duymayan, I.O. cihazlarını kullanan bir programdır.
+
+780
+02:02:48,547 --> 02:02:54,547
+O I.O.'yu kullanırken işlemciniz boş. Tek bir tane işlemciniz var.
+
+781
+02:02:55,604 --> 02:03:05,764
+Programınızdan bir tanesi işlemciyi kullanırken öbür tanesi işlemci dışında bir kaynak kullanıyor. İşte okuma yazma, input output deviceları dediğimiz şeyler.
+
+782
+02:03:06,564 --> 02:03:15,764
+Bunlar yer değiştirecekler. İllaki bir programla başka bir I.O. yapacak. O zaman tekrar işlemci boşa çıkacak. İşlemci boşa çıkınca o boşluğu öbür programda olduracak.
+
+783
+02:03:15,764 --> 02:03:22,404
+Buna da concurrency diyoruz. Tek bir işlemcinin olduğu şey. Concurrency şekilde.
+
+784
+02:03:22,579 --> 02:03:33,180
+İlla ki burada %100 paralellik sağlanmaz ama işlemciyi boşta bıraktığı anı yakalayıp bir program zaten işte ne bileyim bir şey yapıyor.
+
+785
+02:03:33,180 --> 02:03:39,180
+Biz de girip işlemciyi kullanalım mekanizması üzerine. Mesela bu concurrency olmasa şöyle bir şey olur.
+
+786
+02:03:39,180 --> 02:03:47,380
+Benim biraz önce bahsettiğim bir şey olur. Konuşurken size görüntü gelmez. Mouse'u bıraktığım zaman başka bir şey oluşur.
+
+787
+02:03:50,355 --> 02:03:58,515
+Peki bu Malt-Tread uygulamaları nasıl sağlayacağız? Bunun tabi daha detayları şeyde var, işletim sistemi dersinde size anlatılacak üçüncü sınıfta.
+
+788
+02:03:58,515 --> 02:04:08,355
+Ama en basitinden threadlerle alakalı şurada bazı detaylar var. Bunları isterseniz okuyayım. Bunlardan çok sorumlu olmayacaksınız da.
+
+789
+02:04:08,355 --> 02:04:16,355
+Teknik detaylar bunlar. Daha çok üçüncü sınıfta anlatacağız. Thread oluşturmak için bizim P-Thread kütüphanelikimizi kurye yüklüyoruz.
+
+790
+02:04:17,363 --> 02:04:41,803
+şey, include ediyoruz. Thread'in oluşturulması için bir fonksiyonumuz var. Thread'in bazı özelliklerinin atanması için bir işimiz var. [öğrenci] o soruna cevap vereceğim. Thread'in çalışması için yapmak istediğimiz bir fonksiyon var. Örneğin bu thread matrisleri çarpsın, öbür thread ne bileyim dizileri toplasın dediğim şey.
+
+791
+02:04:42,195 --> 02:04:51,195
+thread'i alacağımız bazı argümanlar olabilir. Thread'in bir dönüş tipi olabilir. Bunların basit örnekleri var. Bu örnekler üzerinden bir bakalım.
+
+792
+02:04:51,195 --> 02:05:07,195
+Şimdi bu uygulamayı birazdan çalıştık. Diyor ki bakın bir main function'da bir p thread oluşturulmuş, bir thread oluşturuyoruz. Bu ID'ye ihtiyacımız var çünkü. Bu p thread'den bir değişken oluşturuyoruz arkadaşlar.
+
+793
+02:05:07,796 --> 02:05:13,556
+Bu thread id isimini burada oluşturduğumuzda, bununla bunu ilişkilendirmek gibi düşünebilirsiniz.
+
+794
+02:05:14,115 --> 02:05:20,436
+Bunun default varsayılan özelliklerini kullanıyoruz ve diyoruz ki, bu thread bakın şurada bir function pointer alıyor.
+
+795
+02:05:20,836 --> 02:05:25,796
+Bu diyor ki, I am thread function diye bir şey olsun. Ekrana bir şey yazdım ve bunu sürekli yapsın.
+
+796
+02:05:26,436 --> 02:05:31,396
+Buraya da parametre olarak herhangi bir şey göndermiyoruz. Şu da oraya gönderilecek parametreleri söylüyor.
+
+797
+02:05:31,796 --> 02:05:33,796
+Herhangi bir parametre göndermeliyiz.
+
+798
+02:05:35,091 --> 02:05:40,532
+Ve sürekli thread function diye bir şey görüyoruz. Şimdi normal kod akışında thread olmasa
+
+799
+02:05:41,171 --> 02:05:44,891
+ne görürüz biz? Program başladı, buradan gidiyoruz.
+
+800
+02:05:46,131 --> 02:05:52,492
+Şöyle bir fonksiyon çağırmışız. Bu fonksiyon ne olur? Sürekli iOnThreadFunction, iOnThreadFunction diye böyle devam eder gider.
+
+801
+02:05:53,851 --> 02:05:59,572
+Siz bir şekilde bu fonksiyonu durdurmazsanız ne görürsünüz? Sürekli aynı mesajı görürsünüz.
+
+802
+02:06:00,451 --> 02:06:01,891
+Fakat bir yandan da
+
+803
+02:06:02,452 --> 02:06:06,051
+Şöyle bir şey görünüyor. Aşağıda da I am main function diye bir şey var.
+
+804
+02:06:06,851 --> 02:06:12,452
+Şimdi multiple thread olduğu için bir main function, bir thread function sonucunu göreceğiz burada.
+
+805
+02:06:13,051 --> 02:06:17,452
+Aradaki return değer de şey, bu thread bir şekilde çalışmasını sonlandırırsa,
+
+806
+02:06:17,652 --> 02:06:26,380
+ki sonlandırabilir. Hani thread işte başarılı bir şekilde oluşturuldu, thread şey oldu falan arada şu mesajları gördükten sonra bunu geçelim.
+
+807
+02:06:26,547 --> 02:06:42,547
+Bu program tekrardan main'in olduğu yere döner. Buraya döndükten sonra şu programımız kapatılır. Tabi bu thread hiçbir şekilde sonlanmıyor. Çünkü bu nedir? Sonuçluğa kadar çalışan bir while dönüştür. Dolayısıyla bu fonksiyon hiçbir zaman bitmeyecek.
+
+808
+02:06:51,091 --> 02:06:54,832
+Kopyalamaya çalışayım. İnşallah kopyalamıyoruz. Tamam.
+
+809
+02:07:01,395 --> 02:07:09,195
+Tabi bu P-Tread şey, her yerde, her işletim sisteminde POSIX thread dediğimiz bir kütüphanenin ürünü.
+
+810
+02:07:10,036 --> 02:07:12,755
+Soruna cevap vereceğim vardı, tekrar unutmadım onu.
+
+811
+02:07:13,155 --> 02:07:21,555
+Önemli olan burada şey şu, yani şunu derlemek komut satırından her zaman böyle kolay değil. Çünkü bu bir dinamik library.
+
+812
+02:07:22,835 --> 02:07:26,835
+Ama biz burada doğrudan devsiyle bunu şey yapabiliriz. Şimdi şuraya...
+
+813
+02:07:28,212 --> 02:07:29,212
+Red kieler.
+
+814
+02:07:34,195 --> 02:07:57,195
+Bakın, kod çalışıyor. Aradaki geçişleri görüyorsunuz herhalde. Bir thread main function, bir thread function sonucunu görüyoruz. Bu neyin göstergesi? Şu an bu bilgisayarda, bu programda iki tane thread'in çalışını gösteriyor. Şimdi ben Task Manager'ımı açıyorum eğer inceleyebilirsek. Oradan inceleyelim. Şu çalışan...
+
+815
+02:07:57,876 --> 02:08:04,456
+Neydi bu? Thread.shake. Bakın thread.exe diye bir tane burada uygulamamız var. Yakalayabilirsem.
+
+816
+02:08:06,856 --> 02:08:11,376
+Bunun cooperatisine gelelim. Gerçi buradan gelemeyiz.
+
+817
+02:08:11,376 --> 02:08:13,876
+Buradan.
+
+818
+02:08:29,011 --> 02:08:30,492
+Detaylarına gelelim.
+
+819
+02:08:32,411 --> 02:08:38,952
+Bakın thread.exe'nin ne kadar thread kullandığını burada gösterebilecek miyiz? Şöyle bakalım.
+
+820
+02:08:41,871 --> 02:08:44,431
+Şu detaylar şeyde açılır, select column diyelim.
+
+821
+02:08:49,043 --> 02:08:49,803
+koncept.
+
+822
+02:08:54,515 --> 02:08:57,676
+Bakın thread.exe şu an iki tane thread tüketiyor.
+
+823
+02:09:00,296 --> 02:09:01,076
+Gördünüz mü?
+
+824
+02:09:02,136 --> 02:09:03,596
+Şimdi bunu kapatacağım.
+
+825
+02:09:06,515 --> 02:09:08,475
+Bizim şu my programı açacağım.
+
+826
+02:09:09,256 --> 02:09:13,096
+Veya bir tane daha yeni bir source file açalım.
+
+827
+02:09:20,212 --> 02:09:22,692
+Yani single thread olan bir şeyimiz olsun.
+
+828
+02:09:23,812 --> 02:09:25,252
+Uygulamamız olsun.
+
+829
+02:09:41,460 --> 02:09:42,600
+Bu da böyle çalışıyor.
+
+830
+02:09:48,467 --> 02:09:50,467
+Prozessore geri geleyim.
+
+831
+02:09:51,467 --> 02:09:52,828
+Single Thread
+
+832
+02:09:55,068 --> 02:09:56,268
+Bir de kaçmasa
+
+833
+02:10:00,148 --> 02:10:03,148
+detaylar
+
+834
+02:10:10,452 --> 02:10:17,452
+Bakın, single thread, şu an bir tane thread'e sahip. Öbürü de iki tane thread.
+
+835
+02:10:19,551 --> 02:10:23,952
+Gördüğünüz gibi diğer uygulamalarda bir sürü thread'ler eş zamanlı olarak çalışıyor.
+
+836
+02:10:25,612 --> 02:10:29,452
+Şimdi BBG'de gördüğümüz çok küçük time slice'lara bölme işi de sanal.
+
+837
+02:10:30,391 --> 02:10:33,692
+Şimdi o multi-threading'tir, sanal paralelizm'dir.
+
+838
+02:10:34,952 --> 02:10:36,731
+Sanal multi-threading diye bir şey yok.
+
+839
+02:10:37,024 --> 02:10:39,024
+Onu şöyle söyleyelim.
+
+840
+02:10:43,539 --> 02:10:45,739
+İşletim Sistemi dersinde anlatacağım onları size.
+
+841
+02:10:46,640 --> 02:10:50,819
+Bir real veya factual paralelizm var.
+
+842
+02:10:53,300 --> 02:11:00,859
+Bu birebir bir sürü uygulamanın, bir sürü programın, bir sürü threadin, thread de olabilir, program da olabilir bu arada.
+
+843
+02:11:01,519 --> 02:11:02,439
+Onlar dair karımlar.
+
+844
+02:11:03,019 --> 02:11:06,720
+Eş zamanlı olarak birden fazla donanımı kullanması.
+
+845
+02:11:07,572 --> 02:11:34,452
+Yani işte marketteki kasayı düşünün. İki tane kasa var, bir kasada bir müşteri var, öbür kasada öbür müşterinin olması. Bu real paralel. Bir virtual veya paralelizm diyebiliriz bir şey var. Bu da threadlerde veya proseslerde karşımıza gelen bir şey. Birden fazla threadin, multi-threadin veya birden fazla prosesin pek bir işlemci kaynağını, pek bir işlemci çekirdeğini
+
+846
+02:11:35,252 --> 02:11:44,152
+ne olması? Eş zamanlı olmasa da çok küçük time slice'larla kullanmasıdır. Bu çok küçük time slice'lar neden var?
+
+847
+02:11:44,912 --> 02:11:54,152
+Çünkü bir proses işlemciye giriyor, bir miktar çalıştırılıyor, o prosesin veya o thread'in IO yapma ihtiyacı oluyor.
+
+848
+02:11:55,072 --> 02:11:59,351
+Gidecek ekrana bir şey yazacak, gidecek yazıcıdan bir şey yazdıracak veya bir yerden bir şey okuyacak.
+
+849
+02:12:00,252 --> 02:12:01,891
+O zaman işlemciyi boşaltması gerekiyor.
+
+850
+02:12:02,804 --> 02:12:14,003
+Doğal olarak. O boşaltılmış işlemciyi öbür prosesin veya threadin kullanması sanal paralelizm dediğimiz şey. Yani buna paralelizm veya sanal paralelizm deniyor. Şöyle de görebiliriz.
+
+851
+02:12:15,583 --> 02:12:24,963
+Concurrency, paralelizm, multi-threading, multi-threading mesela Google görsellerde arattığımızda.
+
+852
+02:12:28,500 --> 02:12:30,439
+Concurent da değil paralel de değil.
+
+853
+02:12:30,539 --> 02:12:32,840
+Bir iş çalışacak ondan sonra öbür iş çalışacak.
+
+854
+02:12:33,979 --> 02:12:34,859
+Bir tane core var.
+
+855
+02:12:36,039 --> 02:12:36,279
+Bu
+
+856
+02:12:36,279 --> 02:12:38,680
+Concurent ama paralel
+
+857
+02:12:38,680 --> 02:12:38,960
+değil.
+
+858
+02:12:40,359 --> 02:12:42,319
+Bir tane coreumuz var. Bir iş
+
+859
+02:12:42,319 --> 02:12:44,260
+biraz çalışacak. Onun boşluğunda
+
+860
+02:12:44,260 --> 02:12:46,539
+bakın şu çalışacak. Onun boşluğunda
+
+861
+02:12:46,539 --> 02:12:48,420
+şu çalışacak. Sonra onun boşluğunda bu çalışacak.
+
+862
+02:12:48,500 --> 02:12:49,380
+Onun boşluğunda bu çalışacak.
+
+863
+02:12:50,600 --> 02:12:52,579
+Bu Concurent değil paralel.
+
+864
+02:12:53,779 --> 02:13:19,319
+Çünkü birisi birini kullanıyor, öbürü birini kullanıyor. Bu hem concurrent hem paralel. Bakın dört tane işiniz var. Çünkü iki tane işiniz varsa, iki tane işlemciniz varsa bunu concurrent yapmanıza gerek yok. Birini birine yaptırsınız, birini birine yaptırsınız. Ama sonuçta sonsuz tane işlemcimiz olacak diye bir şey yok. Ama bir sürü prosesimiz var. Yani işlemci çekirdeği sayısı günümüzde.
+
+865
+02:13:19,712 --> 02:13:36,511
+hani 128'lere falan çıkabiliyor bazı işte Oracle Spark'larda falan. İşte Intel'de o kadar bile değil veya AMD'de. İşte iki tane core'nuz var veya sekiz tane core'nuz var. Benim şu bilgisayarda kaç tane varmış bir bakalım. Device Manager'a girelim.
+
+866
+02:13:46,228 --> 02:13:48,667
+CPU nerede? Ne prosesör?
+
+867
+02:13:49,728 --> 02:13:54,667
+2, 4, 6, 8 çekirdekli, işte 13. yüze bir işlemci.
+
+868
+02:13:55,188 --> 02:13:59,787
+Yani 8 tane formunuz var. Ama sizin 8 tane prosesiniz olmak yolunda değil.
+
+869
+02:14:00,307 --> 02:14:01,847
+8 proses olsa böyle olur.
+
+870
+02:14:02,347 --> 02:14:07,467
+Ne olacak? Belki 80 tane proses var ki gördük şurada bakın Task Manager'da çalışan prosesleri.
+
+871
+02:14:08,507 --> 02:14:10,807
+Bunların hepsi o kaynağı tüketiyorlar.
+
+872
+02:14:11,060 --> 02:14:20,460
+Ne oluyor? Burada hem paralelin hem de concurrence'in olduğu bir durum oluyor. Şu herhalde [öğrenci] senin soruna tam bir cevap olmuş olacak.
+
+873
+02:14:20,460 --> 02:14:25,460
+Şu küçük time slice'ların olduğu durum bize concurrence'yı sağlatır.
+
+874
+02:14:25,460 --> 02:14:36,460
+Peki, mesela ne yapalım? Devam edelim slide'dan biraz daha. Bakın şurada iki tane thread'imiz var.
+
+875
+02:14:37,076 --> 02:14:56,395
+Hani biraz önündeki örneğimizde bir tane thread oluşturduk, bir de main vardı, iki tane thread'imiz. Ama bakın şurada, iki tane thread oluşturacağız. Bir de main aslında üç tane thread çalışacak. Bu kodu çalıştırdığınızda ve incelediğinizde üç tane thread görüyorsunuz. Şimdi bu do something yapıyormuş, thread'in id'sini alıyormuş.
+
+876
+02:14:57,203 --> 02:15:02,203
+threadin IDC'ni, ben birinci threadim veya ikinci threadim diye ekrana bastırıyormuş.
+
+877
+02:15:02,203 --> 02:15:06,603
+Sonra bir, şurada bakın, boş for döngüsü var, birazcık bekletiyor.
+
+878
+02:15:06,603 --> 02:15:11,003
+Yani o ekranın hızlı akışını birazcık yavaşlatıyor.
+
+879
+02:15:11,003 --> 02:15:15,003
+Sonra threadler iki defa oluşacak, çünkü burada while döngüsü var.
+
+880
+02:15:15,003 --> 02:15:19,403
+İki tane thread oluşturuluyor. Threadlere herhangi bir özellik atamıyoruz.
+
+881
+02:15:19,403 --> 02:15:22,203
+Şu do-suntlet fonksiyonuyla aktarıyoruz ve...
+
+882
+02:15:22,323 --> 02:15:36,483
+thread'in içerisinde bir parametre de göndermiyoruz. Bakın gönderilen parametreler void pointer, buradan dönen parametre de void pointer olmak zorunda. Bu thread'in çalışacağı fonksiyonun özelliği bu. Şu da global değişken thread'lerin ID'lerini tutuyor.
+
+883
+02:15:38,103 --> 02:15:47,103
+Şurada da diyor ki, işte en son işler bittiğinde, bu program tamamlandığında, ne olsun? 5 saniye beklesin. Bu niye bekletiliyor?
+
+884
+02:15:47,412 --> 02:16:01,011
+Çünkü çocuk şu threadler bitmeden ana program biterse boşta duran iki tane thread olabilir. Önce bunlar bitsin, sonra bu bitsin isteniyor. Çünkü main'de kendisi bir thread. Çünkü burada üç tane thread var.
+
+885
+02:16:01,011 --> 02:16:07,412
+Bu kodları çalıştırabilirsiniz arkadaşlar. Bu sled olmadan çalıştırdığınızda...
+
+886
+02:16:07,667 --> 02:16:18,667
+Şöyle şey görürsünüz. Yani çıktılardan biri bu olur. Thread başarılı oluşturuldu. Birinci thread oluşturuldu. Thread başarılı oluşturuldu. Daha sonra devam olmaz çünkü ana program kapanır. Ekran gider.
+
+887
+02:16:18,667 --> 02:16:33,167
+Ama slip'i koyduğunuzda işte thread oluşturuldu, birinci thread çalışıyor. Thread oluşturuldu, ikinci thread çalışıyor. Bunu görürsünüz. Slip fonksiyonu sayesinde. Tekrar edeyim. Önce mesela birinci thread çalıştırıldı.
+
+888
+02:16:33,523 --> 02:16:44,963
+Sonra ikinci thread çalışıyor, şu mesajlar görünecek ya, şunu da görme imkanız var. Önce ikinci thread çalışıyor, sonra birinci thread çalışıyor şeyi de görülebilir. Şuradaki sıra da değiştirilebilir.
+
+889
+02:16:44,963 --> 02:17:00,163
+Çünkü üç tane birbiriyle eş zamanlı çalışmaya aday, üç tane aslında execution flow var. Bunların hangisi işlemciyi önce kullanacak, hangisi sonra kullanacak, buna işletim sistemi karar veriyor.
+
+890
+02:17:00,659 --> 02:17:05,879
+planlayıcısıyla, şu mesajın, şu kısımın yer değişmiş halinde görebilirsiniz.
+
+891
+02:17:07,319 --> 02:17:15,279
+Ama normal, doğal olarak şey devam eder, ilk göreceğiniz en yüksek aday budur.
+
+892
+02:17:15,659 --> 02:17:16,680
+Böyle söyleyemebilir.
+
+893
+02:17:20,244 --> 02:17:30,744
+Şurada da işte bir threadin çıkış yaparken hani bir threadden return ederken burada return kullanmıyoruz. Bu şeyde P-thread exit'i kullanıyoruz.
+
+894
+02:17:30,744 --> 02:17:43,044
+Exit yaparken de buradan ne değer döneceğini söylemek için diyor ki mesela şu return diye bir değişkenimiz varmış. Bunun adresini döndürsün. Bu döndürdüğünüz şeyde şurada P-thread join ile alıyorsun.
+
+895
+02:17:48,275 --> 02:17:52,036
+Şu satıra geldiğimizde, şuralara geldiğimizde 3 tane threadimiz var.
+
+896
+02:17:53,175 --> 02:17:58,436
+Bu 3 tane threadden şu ikisi şurada tamamlanmadan main'in devamı buradan gelmez.
+
+897
+02:17:59,236 --> 02:18:02,675
+Join o threadlerin bitmesini kesin kes bekler.
+
+898
+02:18:02,675 --> 02:18:05,236
+Biraz önceki slipten daha sağlıklı bir şey bu.
+
+899
+02:18:05,636 --> 02:18:07,316
+Çünkü slip 5 saniye dedik.
+
+900
+02:18:07,556 --> 02:18:11,956
+Belki thread 20 saniye çalışacaktır. O zaman ne olacak? Senin ana programın önden kapanacak.
+
+901
+02:18:11,956 --> 02:18:14,355
+Mesela bunu kopyalamaya çalışayım.
+
+902
+02:18:15,636 --> 02:18:16,636
+Bir de bunu deneyelim.
+
+903
+02:18:35,188 --> 02:18:35,688
+Aşk.
+
+904
+02:18:46,195 --> 02:18:50,495
+Şunlarla alakalı hatalarımız var.
+
+905
+02:18:58,804 --> 02:19:01,123
+Bakın, güzel bir çıktı geldi.
+
+906
+02:19:03,904 --> 02:19:06,384
+Kodu şöyle incelersek.
+
+907
+02:19:09,024 --> 02:19:11,984
+Tam biraz önce dediğimin aynısını yaşadık.
+
+908
+02:19:13,064 --> 02:19:14,744
+Bakın, ana program çalıştığında,
+
+909
+02:19:15,963 --> 02:19:19,884
+iki tane thread'in integer pointer'ünden şey tutuyoruz.
+
+910
+02:19:19,984 --> 02:19:21,744
+İşte thread oluşturuluyor birincisi.
+
+911
+02:19:23,144 --> 02:19:25,263
+İşte diyor ki, şurada
+
+912
+02:19:25,551 --> 02:19:30,551
+Do something fonksiyonunu çağıracaksın. Hiçbir parametre göndermeyeceksin. Tamam, güzel.
+
+913
+02:19:30,551 --> 02:19:35,551
+Hata olduysa hatayı bastır, onu da geçelim. Thread başarılı şekilde oluşturuldu.
+
+914
+02:19:35,551 --> 02:19:41,551
+Şimdi şurada hangisi önce oluşturuldu? Muhtemelen birinci önce oluşturulacak.
+
+915
+02:19:41,551 --> 02:19:44,551
+Yani onda sıkıntı yok. Şurada bakın join ediyoruz.
+
+916
+02:19:45,971 --> 02:20:02,611
+Join ederken edene kadar, 39-40'a gelene kadar main'e sıra gelmiyor. Bakın şu return value bilmem ne, şurası main'in kodu. Burası hiçbir şekilde çalışmaz. Önce o threadler çalışacak. Buraya geldiğimizde de diyor ki, thread'in kendisinin bilgisini al, id'sini alırsınız bu thread'le.
+
+917
+02:20:04,340 --> 02:20:27,340
+Hatta bu burada bastırılabilir, ekrana bastırılabilir. Ben yazdırmamışım ama. Eğer bu ID thread 0 ise birinci thread çalışıyor, değilse ikinci thread çalışıyor. Bakın ne olmuş? İkinci thread çalışmaya başlamadan birinci thread çalışıyor. Birinci çalışmaya başlamadan ikinci thread çalışmış. İlk sonlanan yine birinci olmuş. Çünkü...
+
+918
+02:20:28,435 --> 02:20:34,576
+Burada şunun mutlaka sonlanmasını bekliyoruz. Önce bu olacak, ondan sonra bu olacak.
+
+919
+02:20:35,355 --> 02:20:39,195
+Bu önce yüzü alıyoruz, sonra yüzü alıyoruz. Bakın burada olay şöyle oluyor.
+
+920
+02:20:39,695 --> 02:20:47,376
+Mesela thread 1 geldi, thread 1 işte şu satırı çalıştırdı, bu satırı çalıştırdı, bu satırı çalıştırdı derken hatta belki şuraya kadar geldi.
+
+921
+02:20:47,896 --> 02:20:54,796
+İşletim sisteminde diyor ki tamam sen thread 1 çık, ben biraz işlemciye thread 2'ye alacağım. Şimdi thread 2 geldiğinde
+
+922
+02:20:54,868 --> 02:21:00,747
+Bu satır çalıştı, bu satır çalıştı, bu satır çalıştı, bu satır çalıştı, bu satır çalıştı ve biz şöyle bir mesaj gördük.
+
+923
+02:21:01,368 --> 02:21:07,087
+Şurayı çalıştırdığında. Belki işletim sistemi ona biraz daha fazla kıyak geçmiş olabilir, bilemiyorum.
+
+924
+02:21:07,907 --> 02:21:10,387
+Dolayısıyla bakın bunu göreceğiz. Sonra tekrar threadbre sıra geldi.
+
+925
+02:21:10,468 --> 02:21:15,727
+Diyor, sen şurada kaldıydın daha önce. Şu kaldığın yerden devam et. Geri kalan satırlarınız çalıştır.
+
+926
+02:21:16,608 --> 02:21:18,268
+Ondan sonra return yapacaksan yap.
+
+927
+02:21:19,667 --> 02:21:26,547
+Bakın bu threadlerin çalışması tamamen şöyle, çizerek anlatayım.
+
+928
+02:21:29,843 --> 02:21:35,804
+Hani kod üzerinde belli bir miktar kodunu çalıştırıyor. Tabii makine kodu düşüneceksiniz.
+
+929
+02:21:36,623 --> 02:21:47,004
+Kalan kısmını kaldığı yerden devam ediyor. Aslında ne var burada? Bir stack memoryde, nasıl bir fonksiyon çağrısı yaptığımızda kaldığımız yeri unutmamak için stack memoryde tutuyorduk.
+
+930
+02:21:47,563 --> 02:21:55,063
+Bu threadlerin çalışmasında da işletim sistemi işlemciden thread'i çıkarttığında ne yapıyor? O kalan kısmı saklıyorsunuz.
+
+931
+02:21:58,227 --> 02:21:58,907
+Şu olsun.
+
+932
+02:22:01,608 --> 02:22:03,227
+İkinci threadimiz de bu olsun.
+
+933
+02:22:04,727 --> 02:22:06,227
+Bir de mainimiz olsun.
+
+934
+02:22:07,768 --> 02:22:09,448
+Bilerek farklı boyutlarda canım.
+
+935
+02:22:09,567 --> 02:22:13,807
+T1, T2, T3.
+
+936
+02:22:14,547 --> 02:22:17,027
+Ve bu boyutlara mesela bu 40 birimlik bir kod olsun.
+
+937
+02:22:18,087 --> 02:22:19,207
+Bu 30 birimlik olsun.
+
+938
+02:22:19,307 --> 02:22:20,268
+Bu 20 birimlik olsun.
+
+939
+02:22:21,127 --> 02:22:23,967
+Hani 40 satır, 30 satır, 20 satır düşünebilirsiniz.
+
+940
+02:22:24,819 --> 02:22:26,819
+Şimdi zaman akıp geçiyor.
+
+941
+02:22:27,819 --> 02:22:33,819
+Zaman ekseni düşünün ve işlemciyi kullanma şeyini düşünün. İşletim sistemi bu sistemi yönetiyor işlemciyi.
+
+942
+02:22:33,819 --> 02:22:41,819
+Diyor ki 0'dan 15'e kadar T1 sana imkan verdim git CPU'yu kullan.
+
+943
+02:22:41,819 --> 02:22:47,819
+Ne kadar kullanılabilir? 15 tanesini kullanabilir. Kaç tane kaldı? 25 tanesi kaldı.
+
+944
+02:22:48,819 --> 02:22:50,819
+Şimdi burada T1'in çalıştığını düşünelim.
+
+945
+02:22:51,283 --> 02:22:56,004
+Ne bileyim, buradan 15'den 30'a kadar adil işlem yapalım. Her birini 15'e verelim.
+
+946
+02:22:56,004 --> 02:23:00,724
+T3 sana imkan verdim dese, bunun da bir 15'ini kullanacak.
+
+947
+02:23:00,724 --> 02:23:02,724
+T3'ün 5 birimi kaldı.
+
+948
+02:23:02,724 --> 02:23:10,324
+Hadi bir 15 daha kuyruk mekanizması kullanalım. T2 olsun. T2'ye burada sıra verin.
+
+949
+02:23:10,324 --> 02:23:12,724
+Buradan da bir 15 ona kullandık.
+
+950
+02:23:12,724 --> 02:23:18,324
+Şimdi şuraya geldiğimizde, T1'in tamamlanması gereken 25 birim işi var.
+
+951
+02:23:18,644 --> 02:23:41,452
+T2'nin tamamlanması gereken 15 gram, T3'nin tamamlanması gereken 5 gram. Şimdi T3 tekrar T1'e sıra gelecek. Hani bir şey daha gidelim. İşte 30 şurası 45 oldu. 60'a kadar ne olacak? T1 yine girecek. Bir 15 daha işlem yapacak. Sonra 65'e kadar...
+
+952
+02:23:41,876 --> 02:23:46,876
+Çünkü diyecek ki T3 olarak ben girdim ama benim 5'lik işim kaldıydı.
+
+953
+02:23:46,876 --> 02:23:52,876
+Burada T2, 5 birim. Ondan sonra bakın ne oluyor? T1 ve T3 üzerinde rekabet.
+
+954
+02:23:52,876 --> 02:23:59,876
+İşlemciye sahip olma rekabeti. Böyle akış devam edip gidiyor. Bu bize neyi sağlıyor?
+
+955
+02:23:59,876 --> 02:24:07,876
+Şu an gördüğünüz birçok modern uygulama işletim sisteminin kendisi dahil olmak üzere Exercition Flow'u sağlıyor.
+
+956
+02:24:08,244 --> 02:24:13,844
+Çok uzatmadan bir örnek daha gösterip dersi tamamlayacağım arkadaşlar.
+
+957
+02:25:07,316 --> 02:25:34,496
+Şimdi hazır bir kod yazdırıyorum. Örnek olarak şu. 100 elemanlı bir dizimiz var. 2 dizimiz var. Bunları toplayacağız 3. diziye. Toplama işini 5 parçada yapmak istiyoruz. Örneğin birinci parçamız dizinin 1. den 20.ye kadarki kısmına ömrü 21. den 40.a kadar.
+
+958
+02:25:35,252 --> 02:25:38,112
+Bir thread de yazıcı threadimiz olsun.
+
+959
+02:25:39,352 --> 02:25:41,072
+Yazma işiyle uğraşsın.
+
+960
+02:25:42,512 --> 02:25:45,952
+Ve bunlar concurrent şekilde çalışsınlar.
+
+961
+02:25:47,211 --> 02:25:49,772
+Şöyle kodu alıyorum.
+
+962
+02:25:54,972 --> 02:25:57,912
+Bunu hızlıca yapay zekaya yazdı.
+
+963
+02:25:58,112 --> 02:25:59,252
+Yani doğru da yazdı.
+
+964
+02:25:59,832 --> 02:26:01,432
+Sadece arada şey var.
+
+965
+02:26:02,804 --> 02:26:11,443
+değişkenlerimi global olarak kullandım çünkü parametre geçişiyle alakalı şey şu an anlatmadığım için yani onu işletim sistemi dersinde anlatıyoruz.
+
+966
+02:26:11,443 --> 02:26:17,123
+Normalde bir thread'in içerisinde parametre geçişi yaptığımızda typecasting falan yapmadan o bizim için çok önemli değil.
+
+967
+02:26:17,123 --> 02:26:24,004
+Benim şöyle bir dizilerim olacak. Bu dizileri işte burada rastgele değerlerle dolduracağım.
+
+968
+02:26:25,587 --> 02:26:33,047
+Ne olduğu çok önemli değil. Bir tanesi 1-2-3-4 diye gitsin, öbürü de 10-20-30 diye öbürleri de zaten 0 olsun.
+
+969
+02:26:33,968 --> 02:26:38,808
+Thread oluşturacağım. Bir tane yazdırma için thread. Bir de işçi threadlerimiz toplama işlemini yapacak.
+
+970
+02:26:39,868 --> 02:26:51,528
+Bu işçi threadlere diyorum ki senin görevin birden şeye kadar, şu başlama ve bitişleri bunun için tutuyoruz.
+
+971
+02:26:51,840 --> 02:27:16,040
+1'den 20'ye kadar sen yap, 21'den şeye kadar bunu thread fonksiyonuna aktarmamız gerekiyor. Çünkü thread oluşturuyorum, thread'e özellik atamıyorum. Bu özellik atama meselesi çok detaylı. Thread'lerin mesela birbirine göre üstünlüklerini belirleyebilirsiniz. Az önce çizdim ya T1, T2, T3. Diyebilirsiniz ki T3 en yüksek öncelikli thread olsun. Bunu belirleme imkanınız var. Ama o bu dersin konusu değil.
+
+972
+02:27:16,659 --> 02:27:24,260
+Toplay yapacak bunların hepsi ve data olarak da işte başlangıç bitiş limitlerini gönderecek. Sonra bu bütün threadleri bekliyorum.
+
+973
+02:27:24,260 --> 02:27:35,860
+En son yazdırma threadini bekliyorum. Threadleri daha sonra destroy etmek yok etmek hani malloc'un yerine malloc'tan sonra free kullanmak gibi. Bakalım nasıl bir şey göreceğiz.
+
+974
+02:27:40,948 --> 02:27:43,628
+Five Threats, doklabiyelim.
+
+975
+02:27:45,508 --> 02:27:47,668
+Şu i'leri şu an tanımıyor.
+
+976
+02:27:56,308 --> 02:27:57,308
+binilde.
+
+977
+02:28:25,652 --> 02:28:45,652
+Bakın başlangıçtaki dizimiz buydu. Kısmen toplandıkça ne oluyor? İşte böyle gidiyor. Hatta bunu 100 demeyelim de 10 falan yapalım. Size'mızı 10 diyelim. Number of trade'imiz de mesela hani yine 5 olsun.
+
+978
+02:28:50,131 --> 02:28:57,011
+Bakın doğrudan aslında çok kısa sürede şey yaptı. Bunu ne miyim 10 değil de. Ekrana sadece 30 yapayım şöyle.
+
+979
+02:29:02,195 --> 02:29:23,995
+Yani aradaki geçişleri çok çok daha hızlı olduğu için doğrudan hani şey başlangıç dizimizi de hani şey ilk başta sonucu yazdırdı. Hani diğerlerini de ekrana bastırsak belki çok daha geçişleri görürüz. Ne yapmış oluyor? Yani bu süreyi paralelleştirerek çünkü gördüğünüz özelliğinde 8 tane işlemci çekirdeğim var.
+
+980
+02:29:24,531 --> 02:29:33,011
+Bu 5 tane thread burada, bir tane main'de, bir tane de ekrana yazılmada 6, 7 tane thread'i çok rahat çalıştırabilirim.
+
+981
+02:29:33,351 --> 02:29:37,211
+Çünkü işlemci gigahertz seviyesinde bir şey arkadaşlar.
+
+982
+02:29:37,511 --> 02:29:38,331
+Gigahertz ne demek?
+
+983
+02:29:39,171 --> 02:29:47,231
+Saniyede 10 üzeri 9 yani milyar tane işlem yapabilme kabiliyetine sahip.
+
+984
+02:29:47,371 --> 02:29:51,051
+Milyar tane makine kodu çalıştırma kabiliyetine sahip.
+
+985
+02:29:51,507 --> 02:30:17,507
+Bu, daha fazla sayıda işlemcimiz var. İşte 10 tane işlemci alırsa 10 milyar. İşte her işlemci de kendi içinde ne bileyim 4 GHz alınca 40 milyar tane işlem demek. Bu çok çok büyük bir şey. Bir de işlemler açısından veya prosesler, threadler açısından darboğaz işlemci değildir. Ana bellektir veya hardisttir. Zaten bizim RAM'imiz Megahertz seviyesinde çalışıyor.
+
+986
+02:30:18,291 --> 02:30:28,111
+Hard diskimiz neredeyse kilohertz'in biraz üzerinde değil. Onu da megahertz diyelim. Senin işlemcinin gigahertz olması bir anlam ifade etmiyor.
+
+987
+02:30:28,111 --> 02:30:38,912
+Yani saniyede zaten bilmiyor, 1 milyon işlem yapabilen belleğin var. Senin 1 milyar işlem yapan işlemcinin hiçbir şey değil, hiçbir işe yaramıyor.
+
+988
+02:30:44,031 --> 02:31:08,231
+Arkasına 10 şeritli yol yaptınız. Boğaziçi Köprüsü'ne 2 şeritli yaptınız. Bu yol ne olacaktır? Bir anlam ifade edecek mi? Etmeyecek. Çünkü o Boğaziçi Köprüsü'ndeki kuyruk arkadaki bütün 10 şeritlik yolu tıkayacaktır. Aynı mantık burada da söz konusu. Buradaki mantığımızda ne var? İşlemlerin kendileri doğal olarak ne istiyor? IO yapma isteğine sahipler.
+
+989
+02:31:09,012 --> 02:31:32,512
+Gidecek bir yerden veri okuyacak, bir yere veri kaydedecek. O veriyi okurken, kaydederken zaten ne yapmasa? İşlemciyi boşaltması lazım. Hangi şartta olursa olsun, bakın şuradaki görselimiz çok çok güzel. Bu boşaltma sürelerinde, bu aradaki time slice'larda ne yapabiliyoruz biz? İşlemciyi diğer prosesler veya thread'ler adına kullanıyoruz.
+
+990
+02:31:36,468 --> 02:31:44,468
+Proses, oluşturduğumuz, çalıştırdığımız şu programın çalışan hali. Bunun altındaki işlem parçacıkları threadlerdir.
+
+991
+02:31:44,468 --> 02:31:53,468
+Yani thread onun bir alt modülü gibi düşünülmesin ama bunların daha detaylı açıklamalarını işletim sistemi dersinde anlatıyoruz.
+
+992
+02:31:53,468 --> 02:31:57,468
+Evet, konumuz bu kadar. Sorumuz var mı arkadaşlar?
+
+993
+02:32:01,108 --> 02:32:27,927
+Yapısal Programlama dersinin içinde başka konu yok. Zaten TREP konusuyla ek olarak bir de size jenerikleri anlattım. O biraz bonus gibi oldu. Ek bir derse ihtiyacımız olmayacak. Onu söyleyelim. Haftaya ders yapmayacağız büyük ihtimalle ama ben yine haber veririm. Çünkü telafi sınavları var. Telafi sınavına girecek arkadaşlar var. Bunların sınavlarıyla ulaşacağız.
+
+994
+02:32:28,435 --> 02:32:36,435
+Eğer ders yapma durumunuz olursa size zaten mail ile bilgi veririm. Ders yapamazsak şimdiden sınavlarınızda başarılar diyorum.
+
+995
+02:32:36,435 --> 02:32:47,435
+Sınavımız test veya klasik olabilir. Bununla alakalı İrem Hanım ile henüz görüşmedik. Detaylı konuştuğumuzda size o konuda da bilgi vereceğiz.
+
+996
+02:32:47,435 --> 02:32:53,003
+Takipçimiz olmanız şeydir. Gruptan veya maillerden takip etmeniz yeterli. Sizin bir sorunuz var mı?
+
+997
+02:32:56,755 --> 02:32:59,255
+Peki, herkese iyi günler. Görüşmek üzere arkadaşlar.
