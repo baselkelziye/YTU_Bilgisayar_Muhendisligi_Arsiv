@@ -6,3 +6,4 @@
 | :---: | :---: | :--- | :--- |
 | 1 | Bahar | Z. Cihan Taysi | [sube_1/](sube_1/) |
 | 2 | Bahar | Dr. Ahmet Elbir | [sube_2/](sube_2/) |
+| 3 | Bahar | Z. Cihan Taysi | [sube_3/](sube_3/) |
