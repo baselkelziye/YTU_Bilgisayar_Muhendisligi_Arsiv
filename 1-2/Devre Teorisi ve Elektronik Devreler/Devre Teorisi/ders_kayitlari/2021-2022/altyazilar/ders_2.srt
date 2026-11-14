@@ -1,0 +1,3615 @@
+1
+00:01:38,707 --> 00:02:05,647
+Arkadaşlar merhabalar. Bu haftaki online dersimiz her iki grup içinde ortak olarak üretilecek. Sizden bir şey rica etsem, bu dersin WhatsApp grubu falan var sanırım, öğrencilerin takip ettiği. Orada dersin, bu online dersin linkini paylaşabilir misiniz? Ben yine Google Classroom üzerinden paylaştım ama her ihtimalle karşı chat ekranından da atsam.
+
+2
+00:02:06,227 --> 00:02:09,647
+Siz de bu şeylerden paylaştığınız WhatsApp gruplarından.
+
+3
+00:02:15,252 --> 00:02:15,891
+Doğru hocam.
+
+4
+00:02:17,072 --> 00:02:18,412
+Tamamdır, teşekkür ederim.
+
+5
+00:02:19,312 --> 00:02:21,451
+Birazcık arkadaşları da bekleyelim bu arada.
+
+6
+00:02:30,036 --> 00:02:34,135
+Google Classroom'a koydu mu diye tekrar bakıyorum. Google Classroom'da da duyuru çıktı.
+
+7
+00:02:49,876 --> 00:02:52,256
+Grup 2'den arkadaşlarımız var mı?
+
+8
+00:02:52,996 --> 00:02:53,676
+Grup 2'den.
+
+9
+00:03:05,907 --> 00:03:08,367
+Birkaç kişi var, duyuruzdan gördük değil mi?
+
+10
+00:03:12,467 --> 00:03:15,467
+Bir iki dakika yılı kadar daha bekleyelim arkadaşlar gelsin.
+
+11
+00:03:19,539 --> 00:03:46,299
+Bu haftaki konumuz RL, RC devreleri olacak. Temel olarak bunlardaki çözüm yaklaşımlarımız nedir, karşılaşabileceğimiz durumlar, senaryolar nelerdir? Onlar üzerinde duracağız, durum örnekleri üzerinde durmaya çalışacağız. Bununla ilgili olarak slidelerde Google Class üzerinden duyurdum ve hatta dönem sonuna kadar olan bütün duyuruları da koymuş oldum.
+
+12
+00:03:46,771 --> 00:03:59,771
+19 Mayıs'a gelen bir haftamız tatil oluyor. Bir de daha önceki haftalardan yetişmeyen konularımız vardı. Dolayısıyla Laplast Transform'ına ilişkin olan konuya giremeyeceğiz büyük ihtimalle.
+
+13
+00:04:00,591 --> 00:04:11,291
+Dolayısıyla kısa sınav ve final sınavımızın içeriklerini ona göre belirlemiş olacağız. Sınav zamanları yaklaştığı zaman yeniden bunların bir hürsünü yaparız.
+
+14
+00:04:11,795 --> 00:04:21,776
+Ama ilk başta ilan etmiş olduğumuz nedir onun adı? Takvimden birazcık kaymış durumdayız. Dolayısıyla Laplace'la ilgili olan çözümlemeye girmeyeceğiz.
+
+15
+00:04:23,055 --> 00:04:33,435
+Yani son iki haftaki konular yapıyor bunlar. İlan edilen takvimdeki onlar olmayacak büyük ihtimalle. Onun haricindeki konuları yapmaya çalışacağız.
+
+16
+00:04:37,435 --> 00:04:38,836
+Kaç kişi var bakalım.
+
+17
+00:04:39,540 --> 00:04:41,160
+26 kişi kadar gelmiş.
+
+18
+00:04:45,555 --> 00:04:48,615
+Şimdi ben bir sunumumu açayım bir yandan.
+
+19
+00:04:52,015 --> 00:04:58,255
+Peki, grup da RL ve RLC devrelerine başlamış durumda ve Singularity Functions'a kadar gelmişti sanırım.
+
+20
+00:04:58,255 --> 00:05:05,456
+Fakat böyle toparlayarak da tüm iki durumda da ulaşabilecek senaryoları inceleyeceğimiz bir durum oluşturmaya çalışacağız.
+
+21
+00:05:06,196 --> 00:05:08,895
+Bununla ilgili olarak ben ekran paylaşımı yapayım.
+
+22
+00:05:14,355 --> 00:05:27,995
+Şimdi arkadaşlar, RL ve RC devrelerini sadece direnç devrelerinden farklı kılan konular, RC kullandığımız zaman bir devre değişkeni, akım veya gerilim olabilir.
+
+23
+00:05:28,528 --> 00:05:39,048
+Ona ilişkin fonksiyonun zamana bağlı değeriyle, onun türevini, zamana bağlı değeri, birbirine bir linear fonksiyon olarak bağlı görünüyordu.
+
+24
+00:05:39,148 --> 00:05:45,368
+Benzer şey RL devreleri içinde geçerliydi. Yani ilgilendiğimiz bir tane devre değişkeni var, akım veya gerilim olabilir.
+
+25
+00:05:45,368 --> 00:05:52,368
+Öyle bir denklemle karşılaşıyoruz ki, bu fonksiyonun kendisi ve türevi birbirine linear bağımlı bir şekilde...
+
+26
+00:05:52,596 --> 00:06:09,056
+Toplanıp eşittir sıfır şeklinde bir fonksiyonla karşılaşıyoruz. Veya eşittir başka bir kaynak değeri olacak şekilde senaryolarla karşılaşıyorduk. Şimdi burada karşılaşacağımız senaryoları şöyle bir özetlemeye çalışalım. Şuraya yazabiliyor muyuz bakayım?
+
+27
+00:06:33,971 --> 00:06:40,871
+Yapısını değiştirmişler, bu karit olmuş ama, Ohm, Konecte eksperienz onu kaybet.
+
+28
+00:06:40,871 --> 00:06:59,872
+Şimdi şöyle diyebiliriz arkadaşlar bu noktada, şimdi göreceğimiz devreler, RLC devreleri veya RLC devreleri olacak. Bunlar baktığımız zaman birinci dereceden devreler ve ikinci dereceden devreler olarak.
+
+29
+00:07:00,208 --> 00:07:02,572
+ve
+
+30
+00:07:06,259 --> 00:07:08,579
+Devreler olarak isimlendirdiğimiz durumlar.
+
+31
+00:07:09,219 --> 00:07:15,500
+RL ve RC devrelerini öncelikli olarak kaynak olmayan durumlarda inceleyeceğiz.
+
+32
+00:07:18,240 --> 00:07:28,439
+Kaynak olmayan durumlarda devrenin bir takım fonksiyonlarının zamana bağlı olarak değer alabilmesi için ise burada tabii ki doğal olarak bir başlangıç durumları söz konusu olacak.
+
+33
+00:07:31,891 --> 00:07:45,671
+Dolayısıyla aslında biz RL, RC devrelerini kaynaksız durum için inceliyorken başlangıç durumlarını dikkate almamız. Başlangıç durumuna göre belirli bir başlangıç değerinden itibaren üstsel olarak azalarak sönülenecek değerlerle karşılaşıyoruz.
+
+34
+00:07:46,331 --> 00:07:50,731
+İkinci senaryoda RL, RC devreleri için kaynaklı devrelere bakıyor olacağız.
+
+35
+00:07:51,991 --> 00:07:59,051
+Kaynaklı devrelerde ise bu sefer çözümümüzü iki parçaya ayırmamız gerekecek. Bunlardan birisi doğal çözüm.
+
+36
+00:08:02,548 --> 00:08:04,507
+Diğeri ise zorlanmış çözüm oluyor.
+
+37
+00:08:06,088 --> 00:08:08,588
+İsim olarak bu şekilde isimleniyor.
+
+38
+00:08:08,768 --> 00:08:10,387
+Ve şunu da söylememiz lazım.
+
+39
+00:08:10,528 --> 00:08:18,567
+Kaynak olmayan durumlar, yani başlangıç durumlarını in-ishim, kondisyon olarak aldığımız durumlar da aslında zaten bunlar da doğal çözüme karşılık geliyor.
+
+40
+00:08:20,007 --> 00:08:28,168
+Dolayısıyla biz birinci dereceden bir diferansiyel denklemi eşittir sıfır için çözüyorsak bu bize doğal çözüm verecek.
+
+41
+00:08:28,432 --> 00:08:53,751
+Birinci dereceden bir diferansiyel denklemi eşittir bir değer için çözüyorsak bu da zorlanmış çözüm olacak. Yani şöyle özetle yazacak olursak, elimizde bir zamana bağlı fonksiyon var. Bunu y ile ifade edelim. Y eşittir, Ft şeklinde zamana bağlı bir fonksiyon olsun. Elimizde şöyle bir takım denklemler olacak. Y üstü artı Ay eşittir sıfır. Bu şekildeki bir denklemi çözmeye çalışıyorsak bu doğal çözüme denk geliyor olacak.
+
+42
+00:08:54,163 --> 00:09:02,743
+Zorlanmış çözüm örnekleri de şu şekilde olacak. Elimizde bir devre var. Bu devrede kaynak var. T eşittir sıfır anından itibaren devreyi etki etmeye başlıyor.
+
+43
+00:09:03,223 --> 00:09:12,043
+Dolayısıyla bu durumdaki zamana bağlı fonksiyonumuz için y üstü artı b y eşittir c şeklinde bir durumla karşılaşacağız.
+
+44
+00:09:12,043 --> 00:09:16,583
+Bu c'nin sabit olmasının anlamı ne? Kaynağımız dc bir kaynağı.
+
+45
+00:09:16,884 --> 00:09:25,624
+Eğer zamana bağlı bir kaynaksa buradaki eşittir tarafındaki C değeri değişiyor olacak. Bu da zorlanmış çözümün karşılık gelen durumu oluşturuyor olacak.
+
+46
+00:09:25,624 --> 00:09:33,283
+İkinci dereceden RLC devrelerine baktığımızda ise arkadaşlar burada yine öncelikli olarak kaynaksız çözümleri inceliyor olacağız.
+
+47
+00:09:34,723 --> 00:09:38,384
+Kaynaksız çözümleri. Bu kaynaksız çözümleri incelerken yine bizim...
+
+48
+00:09:38,384 --> 00:09:56,644
+Eğer bir kaynaksız devrede RLC elemanları varken ve bunların inişal değerleri yoksa çözüm eşittir sıfır. Dolayısıyla bu trivial çözüm olarak isimlendiriliyor. Dolayısıyla kaynaksız çözümün anlamlı bir şey olabilmesi için bizim bir takım başlangıç durumlarını kullanabiliyor olmamız gerekiyor.
+
+49
+00:10:01,107 --> 00:10:07,387
+Biz şunu biliyoruz. Kaynak olmayan bir durumda başlangıç durumu oluşturmak için ne yapmamız lazım? Şunu yapmamız lazım.
+
+50
+00:10:08,027 --> 00:10:16,887
+Devrede eksi sonsuzdan T eşittir T0 anına kadar bir kaynak var. Bu kaynak devreye sonsuz süre boyunca etki ediyor.
+
+51
+00:10:17,048 --> 00:10:24,027
+T eşittir T0 anda bu kaynağı devreden çıkartıyoruz bir şekilde. Switch olabilir veya başka bir şekilde olabilir. Devreden çıkartıyoruz.
+
+52
+00:10:24,532 --> 00:10:33,711
+Dolayısıyla bir initial condition oluşturuyoruz. Bu initial condition oluştururken de demek ki DC şartlardaki RL, RLC devresinin davranışını incelememiz.
+
+53
+00:10:34,592 --> 00:10:39,052
+Birinci dereceden devrelerde başlanmış durumu aslında şu şekilde ifade ediliyor.
+
+54
+00:10:51,668 --> 00:11:06,008
+İ, T eşittir, T sıfır, bir I sıfır değeri şeklinde başlangıç durumlarını hesaplıyor olacağız. Dolayısıyla bizim birinci derece, RL, RLC devrelerindeki initial condition başlangıç durumları bunlara göre oluşuyor olacağız.
+
+55
+00:11:06,408 --> 00:11:10,008
+İkinci dereceden RLC devrelerinde ise başlangıç durumu,
+
+56
+00:11:10,644 --> 00:11:34,824
+İki farklı şekilde elde ediyor olacağız. Bunlardan birincisi, iki tane değere ihtiyacımız var. Eğer gerilim cinsinden gidiyorsak, bunun için VT0 eşittir V0'a ihtiyacımız var. Bir de V üstü T0 eşittir V1 diyelim. Böyle bir değere ihtiyacımız var. V yahut da veya diyelim.
+
+57
+00:11:35,316 --> 00:11:49,016
+Veya bir akım değerimiz var. Bu akımın T0'daki değerini biliyoruz ve aynı zamanda bu akımın T0'daki veya T1'de diyebiliriz buna. İlla T0 anındaki bilmemiz gerekmiyor. T1 anındaki türevini biliyor olabiliriz.
+
+58
+00:11:49,395 --> 00:12:15,775
+Dolayısıyla bizim ihtiyacımız olan şey, burada mesela ne deriz ya, linear bir denklemde iki bilinmeyen varsa iki tane denkleme ihtiyacımız var. Tıpkı onun gibi diferansiyel denklemlerde iki tane bilinmeyen varsa, ki bunlar fonksiyonun kendisi ve türevinin değerleri demek oluyor. Bu durumda ise bizim yapacağımız işlem fonksiyonun değerini ve fonksiyonun türevinin belirli bir t anındaki değerlerini biliyor olmamız lazım ki bu başlamış durumların oluştuğu.
+
+59
+00:12:16,532 --> 00:12:38,532
+Başlangıç durumuna göre bu şekilde çalışıyor olacak. Başlangıç durumlarını belirledikten sonra da aslında bizim inceleyeceğimiz iki tip devre var arkadaşlar. Bunlardan birisi seri RLC devresi, ikincisi ise paralel RLC devresi olacak. Daha sonra döneceğiz. Bir de kaynaklı...
+
+60
+00:12:41,364 --> 00:12:44,504
+İçinde kaynak olan RLC devrelerini inceliyor olacağız.
+
+61
+00:12:45,543 --> 00:12:54,324
+Burada kaynaksız devrelerde elde etmiş olduğumuz başlangıç durumunu dikkate alarak elde etmiş olduğumuz çözümler arkadaşlar yine doğal çözüm olarak isimlendirilecek.
+
+62
+00:12:55,564 --> 00:13:05,704
+Fakat kaynaklı RLC devrelerinde ise iki tane çözüm elde ediyor olacağız. Bunlardan bir tanesi doğal çözüm, diğeri ise yine zorlanmış çözüm olarak.
+
+63
+00:13:06,163 --> 00:13:17,744
+isimlendiriliyor olacak. Doğal çözümden kast edilen ikinci dereceden bir denklem olduğu için, T'ye zamana bağlı bir fonksiyonumuz var, Y. Y'nin ikinci dereceden krevi olacak.
+
+64
+00:13:18,463 --> 00:13:30,423
+Artı, artı, yüze yapamadık. Artı, A, Y üstü, artı, B, Y. Eşittir sıfır şeklindeki bir takım denklemleri çözüyor olacağız. Bu doğal çözüme karşılık gelecek.
+
+65
+00:13:30,816 --> 00:13:50,956
+Zorlanmış çözümde ise Y üstü 2 üstü artı A Y üstü artı B Y eşittir C gibi bir sabite denk gelecek. Yani bu da ne demek? Devrede bir tane kaynak var. Bu kaynak T eşittir sonsuza gittiğinde çözümümüz buna benzemeli. Dolayısıyla burada da iki tane çözümü.
+
+66
+00:13:51,508 --> 00:14:18,248
+Bulmaya çalışıyor olacağız kaynaklı RLC devrelerinde. Önce eşittir sıfır yapıp bir çözüm elde edeceğiz. Daha sonra kaynağın veya zorlanmış çözümün tipine göre bir çözüm önerip bu ikisinin toplam olarak sonuç elde etmeye çalışacağız. Dolayısıyla bizim RLC devreleri dediğimiz zaman aslında karşımıza çıkması muhtemel durumlar bunlar olmuş oluyor. Bunlara ilişkin bir toparlama yapacağız dersimiz boyunca.
+
+67
+00:14:19,251 --> 00:14:31,551
+Aslında her iki grupta geçen hafta içerisinde kaynak olmayan RL ve RC devrelerini çözmüştü. Şimdi bunu burada yine tekrarlayarak ilerlemeye çalışalım.
+
+68
+00:14:35,891 --> 00:14:46,931
+Şimdi öncelikli olarak kaynaksız RL devresi ve RC devresi için bir takım başlangıç durumları oluşmuş iken bunların çözümlerini incelemeye çalışalım.
+
+69
+00:14:47,731 --> 00:14:49,672
+Şimdi birinci durum o zaman şu.
+
+70
+00:14:53,268 --> 00:14:57,768
+Bir kaynaksız RC devremiz var.
+
+71
+00:14:59,828 --> 00:15:03,268
+Burada başlangıç koşullarını belirleyip...
+
+72
+00:15:08,628 --> 00:15:11,187
+Çözümü nasıl elde edebiliriz ona bakmaya çalışacağız.
+
+73
+00:15:12,348 --> 00:15:15,088
+Şimdi şöyle bir senaryodan bahsedelim öncelikli olarak.
+
+74
+00:15:15,588 --> 00:15:17,628
+Devremiz şuna benzesin ilk başta.
+
+75
+00:15:18,628 --> 00:15:19,668
+Şöyle yapalım.
+
+76
+00:15:26,035 --> 00:15:51,235
+Burada bir Vs kaynağımız var, burada bir Z dirençimiz var, burada da bir kapasitemiz var. Şurada da bir anahtarımız olsun. Anahtar bu devreyi kapatıp şeye alması lazım. Onu nasıl hayal edebiliriz? Şuradan yine bir tane daha ek yolumuz olsun. Şu da bizim anahtarımız olsun. Anahtar buradan buraya kapanabiliyor.
+
+77
+00:15:52,211 --> 00:15:59,531
+Yönünü ters yaptım. Yönü şöyle olsun. Şurası menteşesi. Hatta şöyle yaparsam daha iyi olabilir.
+
+78
+00:16:00,531 --> 00:16:01,751
+Silgiyle şunu ayıralım.
+
+79
+00:16:14,803 --> 00:16:32,764
+Normalde devremiz bu şekilde çalışıyor. Ne zamandan ne zamana kadar çalışıyor? T eşittir, eksi sonsuzdan, nokta nokta nokta bir, T sıfır anına kadar bu şekilde çalışıyor. T eşittir, T sıfır anında anahtar bu yönde yön değiştiriyor ve devremiz şuna dönüşüyor.
+
+80
+00:16:32,764 --> 00:16:38,683
+R'imiz kaybolmuş. Devremiz şuna dönüşüyor.
+
+81
+00:16:41,043 --> 00:16:42,543
+Sadece bu elemanlar kalıyor.
+
+82
+00:16:43,063 --> 00:16:46,203
+Şimdi burada başlangıç koşulunu belirlemeye çalışalım.
+
+83
+00:16:46,823 --> 00:16:48,764
+Başlangıç koşulu kim için geçerlidir?
+
+84
+00:16:49,524 --> 00:16:50,223
+Söyleyebilir miyiz?
+
+85
+00:16:51,624 --> 00:16:53,483
+Başlangıç koşulu kim için geçerlidir?
+
+86
+00:16:58,131 --> 00:17:23,112
+Başlangıç koşulu derken bir de şunları hatırlamamız lazım. Mesela kapasite elemanının tanım bağıntısını düşünelim. Kapasite elemanının tanım bağıntısı nasıl? Şuraya bir kutusuk açalım. Ne diyorduk? Q eşittir C çarpı V idi zamana bağlı. Her iki tarafın türevini aldığımızda şöyle I eşittir C çarpı DVC bölü DT şekli bir durum elde edildi.
+
+87
+00:17:23,508 --> 00:17:35,307
+Burada bakın, türevini alındığına göre denklemde gerilimin kapasite elemanı için VC sürekli olmalı, gerilim sürekli olmalı.
+
+88
+00:17:37,508 --> 00:17:42,768
+Dolayısıyla bizim initial condition'ımız VC'ye göre belirli. Akımda değişiklik olabilir, zıtlamalar olabilir.
+
+89
+00:17:42,968 --> 00:17:47,347
+Çünkü türevini aldığımız zaman açma, kapama gibi durumlarda değişiklik gösterebilir.
+
+90
+00:17:47,347 --> 00:17:49,327
+Aynı şey endüktans için de geçerli.
+
+91
+00:17:52,307 --> 00:18:09,887
+Ondaki tanımantısı neydi? Akı eşittir, L çarpı, İ şeklinde yazıyordu. Akı, manyetik akı, bunun flaks dediğimiz şey, bunun türevini aldığımız zaman gerilime eşitli, her iki tarafın türevini aldığımızda yani, D'yi bölü, DT şeklinde bir senaryo elde ediyorduk.
+
+92
+00:18:09,887 --> 00:18:15,887
+Ve burada da yine akımın türevini aldığımız için, alabilmem için, İ'nin sürekli olması lazım. Yani burada da...
+
+93
+00:18:16,468 --> 00:18:23,708
+Akım süreklilik gösteriyor. Yani zıplamalar gösteremez. Ama gerilime baktığımız zaman gerilimde anlık zıplamalar olabilir.
+
+94
+00:18:23,948 --> 00:18:32,668
+Akımdaki türeve göre. Dolayısıyla bizim burada başlangıç koşulu olarak kastettiğimiz şey daha çok kapasite elemanında gerilime karşılık gelmiş olacak.
+
+95
+00:18:32,807 --> 00:18:39,327
+O zaman bizim burada aradığımızda aslında bu kapasite elemanının başlangıç durumu, yani başlangıç gerilimi belirlemek oluyor.
+
+96
+00:18:40,108 --> 00:18:43,968
+Eksi sonsuzdan T sıfır anına kadar devremiz bu şekildeyken.
+
+97
+00:18:44,531 --> 00:18:52,211
+T0 öncesinde, VC, T0 eksi anındaki VC'nin gerilimi nedir arkadaşlar?
+
+98
+00:18:56,372 --> 00:19:02,852
+Hemen anahtar kapanmadan önce, şuraya gelmeden önce, anahtar buraya gelmeden önce, BC gerilimimiz nedir?
+
+99
+00:19:07,412 --> 00:19:08,351
+So, on se oleden.
+
+100
+00:19:16,596 --> 00:19:39,076
+Evet, vs olacak. Şundan dolayı, devrede sonsuz, DC durumda, eksi sonsuzdan itibaren çalıştığı için, cevap doğru bu arada, açık devre eleman gibi çalışacak. Açık devre gibi çalıştığı için, R'den akım geçmeyecek. Bu devrede akım geçmeyecek. Dolayısıyla burada bir Kirchhoff gerilim kanunu yapsak, eksi vs, bunun gerilimi sıfır, R'ninki sıfır, bir de vc. vc'miz dolayısıyla ne eşit?
+
+101
+00:19:39,539 --> 00:19:59,519
+Vs gerilimine eşit olmuş olacak. Burada işte başlangıç koşulunu bu şekilde belirlemiş olduk. Daha sonra devremiz şuna dönüşmüş. Burada biz biliyoruz ki Vc, T0-Eşittir, Vs ise anahtarı kapattıktan sonra da arkadaşlar, şunu söyleyebiliriz.
+
+102
+00:20:00,000 --> 00:20:27,260
+Anahtarı kapattıktan hemen sonra da burada bir süreklilik olacağına göre, B, S, Y yine kapasite gerilimimiz eşit olmak zorunda. Dolayısıyla başlangıç durumunu bu şekilde oluşturduk. Burada denklemimizi yazacak olursak, Kirchhoff gerilim kanunu üzerinden, V, R artı, V, C eşittir, sıfır diyebiliriz. Burada akan akım her iki eleman için de aynı. V, R için, I çarpı, iyi küçük harfla yapalım çünkü zamana göre değişiyor. I çarpı, V değerimiz var.
+
+103
+00:20:28,000 --> 00:20:54,119
+RC gerilimimiz zaten bu şekilde. VC için yalnız biz şunu söyleyebiliriz. Ne diyeceğiz? Akım değeri, bu eleman üzerindeki akım değerimiz neye eşit? C çarpı DVC bölü DT'ye eşit. O zaman biz tek bir kol olduğu için IC akımı yerine IR akımı da diyebiliriz. Dolayısıyla şuradaki IR akımımızdı. IR akımının yerine de şu denklemi yazıyoruz. O zaman bunların yerine toparlayıp yazdığımız zaman.
+
+104
+00:20:54,644 --> 00:21:08,784
+C çarpı, R çarpı, DVC bölü DT, artı, VC eşittir sıfı. Gördüğünüz gibi ne demiştik daha önce? Bakın yukarıdaki denklemlerimize bakalım.
+
+105
+00:21:10,824 --> 00:21:18,224
+Y üstü, artı, A çarpı, Y eşittir sıfı şeklinde fonksiyonlarla karşılaşacağız demiştik. Bakın fonksiyonun türevi ve kendisi var.
+
+106
+00:21:18,579 --> 00:21:40,680
+Bir de burada sabitimiz var. Burada bir düzenleme yapıp şunu şu hale getiriyoruz denklerimizi. En yüksek türev ve sahip terimi tek başına bırakacağız. Dolayısıyla VC'nin üstü artı bir bölü RC, VC eşittir sıfır diye bunu düzenleyebiliriz. Burada önerebileceğimiz en genel çözüm ne şekilde olması lazım?
+
+107
+00:21:41,332 --> 00:22:05,292
+Şu şekilde, ben derste bu şekilde anlatmıştım. Diğer gruptan gelen arkadaşlarla da ortak olması açısından şöyle anlatalım. Bir tane fonksiyon var. Bunun türeviyle fonksiyonun kendisi birbirine lineer bağımlı. Yani öyle bir şey arıyoruz ki türevi kendisine benziyor. Türevi fonksiyonun parametresi cinsinden birbirine benziyor. Veya bir başka deyişle neyin türevini alırsam kendisi olur.
+
+108
+00:22:11,667 --> 00:22:28,507
+Eksponansiyel fonksiyonlar için bu şekilde oluyor değil mi? Eksponansiyel. O zaman benim burada önereceğim en genel çözüm, kapasitenin gerilimine ilişkin olarak önereceğim çözüm, bir A kat sayısıyla çarpılmış E üzeri alfa T şeklinde bir çözüm önerimi olsun.
+
+109
+00:22:28,507 --> 00:22:33,187
+Çözüm önerimin doğruluğunu nasıl kullanmalıyım?
+
+110
+00:22:33,503 --> 00:22:44,223
+Bu fonksiyonu getirip yerine koyduğum zaman, burada alfa ve a parametrelerini bulabiliyor ise, bu fonksiyon aslında yerine getirilmiş oluyor. Yani şartları yerine getirilmiş olacak.
+
+111
+00:22:44,223 --> 00:22:59,523
+O zaman bu fonksiyonu götürüp yerine yazacak olursam, bc'nin türevi ne olur? a çarpı alfa çarpı e üzeri alfa t olur. Artı bir bölü RC değerimiz var. Çarpı a çarpı e üzeri alfa t eşittir sıfır.
+
+112
+00:23:00,051 --> 00:23:23,491
+A çarpı E üzeri alfa T parantezini alalım. Alfa artı bir bölü RC kalıyor, eşittir sıfır. Eğer A sıfır olursa, A sıfır olursa V, C, T sıfır, trivial çözüm. Yani bu sıfır olması her zaman çözümdür zaten, bunu aramıyoruz. E üzeri alfa T zaten sıfır olamaz. Dolayısıyla sıfır olabilecek tek yer şurası, o zaman alfa eşittir eksi bir bölü RC durumuna ulaşmış oluyoruz.
+
+113
+00:23:28,000 --> 00:23:36,580
+Eksi T bölü RC iniş. A'yı nereden bulacağız? Büyük A'yı nereden bulacağız? Onunla ilgili ne dersiniz? Büyük A'yı nasıl bulacağız?
+
+114
+00:23:39,640 --> 00:23:50,920
+Alfayı bulduk. R ve C'yi biliyoruz. Devremizde R ve C değerleri var. Dolayısıyla onu bulduk. Alfadan bulabildik. Alfayı bulabildik. Büyük A'yı nasıl bulacağız? Ne dersiniz?
+
+115
+00:23:54,228 --> 00:24:11,147
+Bunun için de evet, bizim bir tane initial condition'ımız var. Bakalım neydi o initial condition'ımız? O da şu bakın, T eşittir, T0 anında Bs'ye eşit olacakmış. Bu arada ben T0 için yazmamışım, onu düzeltelim. Şimdi burada düzeltme yapmamız gerekiyor.
+
+116
+00:24:11,807 --> 00:24:20,147
+T0 anında anahtar açıldığı için arkadaşlar, aslında bizim denklemimiz en genel halinde şu şekilde olmalı.
+
+117
+00:24:21,011 --> 00:24:44,552
+Bunları ekleyelim. T0 anında anahtarı eklediğimiz için şu hale geldi. Aşağıda da şurada var. Bunu da T-T0 yapalım. Ve neticede elde ettiğimiz çözüm T-T0 için olmuş oldu. Buraları düzeltmiş olalım. Şimdi T0 anındaki değeri biliyoruz. O zaman biz şunu yazacağız. Elde ettiğimiz çözüm bu ya.
+
+118
+00:24:45,107 --> 00:24:56,687
+V, C, T0 eşittir V, S olmak zorunda. O zaman T yerine T0 koyduğumuzda, T0-T0, 0, E üzeri 0, 1. O zaman geriye A kalıyor.
+
+119
+00:25:11,935 --> 00:25:34,935
+RC olarak bulmuş oluyoruz. Şimdi burada sistem nasıl çalışıyordu? Kapasitemizin gerilimi bir Vs değerinden itibaren başlayacak ve deşarj ola ola T eşittir sonsuzda sıfıra gitmeli. Şimdi bakalım burada. Eğer ki ben gelip T'ye T0 verirsem, Vc değerimiz ne olur arkadaşlar?
+
+120
+00:25:35,796 --> 00:25:40,316
+T'ye T0 verdiğimde E üzeri 0, Vs oldu. Bunu sağladık.
+
+121
+00:25:41,256 --> 00:25:44,276
+T eşittir sonsuz olduğunda ne olmasını bekliyoruz?
+
+122
+00:25:45,416 --> 00:25:48,176
+Vc'nin 0 olmasını bekliyoruz. Bakalım onu sağlayacak mı?
+
+123
+00:25:50,736 --> 00:25:55,896
+Vs değerim var. E üzeri eksi sonsuz. Yani şu hale gelecek.
+
+124
+00:25:56,435 --> 00:26:13,375
+vs bölü sonsuz yani bir şey bölü sonsuz sıfıra gitmiş olacak. Dolayısıyla bu da deşarj olmayı sağlayan senaryo. Demek ki bizim aradığımız initial condition ile birlikte bir RC devresinin en genel çözümü kaynaksız bir durum için buna eşit olmuş oluyor.
+
+125
+00:26:14,375 --> 00:26:23,016
+Bunu zaten geçen hafta da görmüştük. Şimdi bunu RL devresi için yapmadan önce kaynaklı bir durum için senaryoyu genişletelim. Yani şunu yapalım.
+
+126
+00:26:24,180 --> 00:26:37,100
+Şimdi biz neyi hallettik burada, bu akışımız içerisinde? Biz şurayı halletmiş olduk ama sadece R, C, H. Şimdi şu tarafı geçen hafta görmemiştik. Burayı çözmeye çalışacağız. Buraya ilişkin bir çözüm halletmeye çalışacağız.
+
+127
+00:26:37,800 --> 00:26:50,200
+Bunun için de şöyle bir senaryomuz olsun. Şuraya aşağıya çizelim onu. Şuraya çizelim. Şunu diyeceğiz yani.
+
+128
+00:26:52,884 --> 00:27:01,644
+Hatta DC kaynak diyelim. DC kaynaklı bir RC devresi çözüm.
+
+129
+00:27:06,067 --> 00:27:26,067
+Kaynaklı bir RC devresi için bunu bahsediyoruz. Şimdi az önceki senaryoya benzer bir durum olsun. Bir R elemanımız var, bir C elemanımız var. Bir tane anahtarımız olsun. Bu anahtar...
+
+130
+00:27:32,596 --> 00:27:45,995
+Bu anahtar T eşittir, eksi sonsuzdan T sıfır anına kadar bu konumda duruyor. Daha sonra ise bu anahtar bu şekilde yer değiştiriyor.
+
+131
+00:27:50,635 --> 00:27:53,035
+Anahtar A konumunda.
+
+132
+00:28:02,291 --> 00:28:07,331
+T büyük eşit T0 için B konumuna geçiriliyor.
+
+133
+00:28:12,756 --> 00:28:18,355
+B konumuna geçiriliyor. Burada yazıyı birazcık izletme imkanımız var mı?
+
+134
+00:28:19,896 --> 00:28:29,156
+Bu B konumuna geçilecek. Bunun anlamı ne? Şöyle bakalım. RC ve VS değerlerimiz var. Sonsuz süre boyunca devre şu şekilde çalışmış.
+
+135
+00:28:29,296 --> 00:28:37,996
+Dolayısıyla biz artık VC, T0- için ne deriz? Devre sonsuz süre boyunca bu halde çalışıyor.
+
+136
+00:28:39,220 --> 00:29:06,259
+Bu haldeyken devremimiz için başlangıç durumu neye eşittir? Bu aynı zamanda neye eşit? Anahtar kapatıldıktan sonra yani T0'ın hemen sonrasındaki gerilime de eşit olacak ki kapasite elemanı için gerilimin sürekli olması gerektiğini konuşmuştuk. Bu neye eşit olacak arkadaşlar? Evet cevap. Cevap yok mu?
+
+137
+00:29:13,844 --> 00:29:15,023
+Yok mu arkadaşlar ya?
+
+138
+00:29:18,867 --> 00:29:46,248
+Şurası kendi başına bir DC durum. Kaynak da yok. Varsa da başlangıçta deşarj olmuş. Dolayısıyla eksi sonsuzdan itibaren geldiğimiz süreç içerisinde gerilim değerimizin sıfır olması gerek. Evet, burada herhangi bir başlangıç durumu olmadığı senaryoyu konuşuyoruz. Peki, T eşittir sıfır anında ne olacak? Eşdeğer devremiz şuna dönüşecek. T eşittir T sıfır anında eşdeğer devremiz şuna dönüşecek.
+
+139
+00:29:47,188 --> 00:29:52,488
+Direnç elemanımız var, kapasite elemanımız var, bir de kaynağımız var.
+
+140
+00:29:52,948 --> 00:29:59,728
+Şimdi az önce yaptığımız gibi yine Kirchhoff gerilimler kanunu üzerinden buradan yürüyecek olursak, kaynağın eksisinden girdim.
+
+141
+00:30:00,327 --> 00:30:05,188
+Eksi vs artı vr artı vc eşittir sıfır olacak.
+
+142
+00:30:06,028 --> 00:30:09,908
+Bu kolda akan akımımız I akımı, küçük harfli gösterelim yine.
+
+143
+00:30:10,420 --> 00:30:16,579
+Dolayısıyla, eksi vs artı i çarpı r artı vc eşittir sıfır olacak.
+
+144
+00:30:17,008 --> 00:30:21,367
+Burada kapasite elemanımızın tanım bağıntısından hareketle şunu yazabiliriz.
+
+145
+00:30:21,508 --> 00:30:25,728
+İ, C aynı zamanda R'ye eşit seri oldukları için.
+
+146
+00:30:26,367 --> 00:30:31,508
+Neye eşitti arkadaşlar bu da? C çarpı B, C'nin türevi yazılım.
+
+147
+00:30:32,248 --> 00:30:37,167
+Dolayısıyla bu akım değerimizi de getirip buraya yazacak olursak şu R değerimiz olsun.
+
+148
+00:30:37,768 --> 00:30:39,327
+Eksi ve şöyle düzenleyelim.
+
+149
+00:30:39,427 --> 00:30:40,907
+V, S'yi karşı tarafa attım.
+
+150
+00:30:41,907 --> 00:30:42,508
+Dolayısıyla.
+
+151
+00:30:43,251 --> 00:30:53,991
+RC çarpı, VC'nin türevi, artı VC eşittir, VS olacak şekilde bir sonuç elde etmiş oluyoruz.
+
+152
+00:30:54,471 --> 00:31:02,511
+Bakın ne oldu? Bir de düzenleyecektik, en yüksek türevi sahip elemanı tek başına bırakacaktık.
+
+153
+00:31:02,511 --> 00:31:09,231
+Dolayısıyla VC üstü türevi eşittir, artı bir bölü RC,
+
+154
+00:31:10,099 --> 00:31:26,599
+VC eşittir, VS bölü RC durumuna geldik. En son buraya kadar geldik. Burada bakın ne oldu şimdi? Zorlanmış çözüm durumu, bir fonksiyonumuz var VC. VC'nin trevi var, kendisi var ve bir sabit değere eşit.
+
+155
+00:31:26,599 --> 00:31:32,059
+VS sabit, DC bir gerilim kaynağı, RVC değerlerimiz sabit, oysa sabit bir kayıt değere eşit.
+
+156
+00:31:32,372 --> 00:31:54,312
+Bu tür denklemleri çözerken, yani eşit bir sıfır haricinde bir durum varken, biz bunu ikiye ayırıp çözüyoruz. Birincisi, doğal çözüm dediğimiz durum. Doğal çözüm hangi durumda geçerliydi? Eşitli sıfır olarak kabul edip, yani VC üstü artı bir bölü RC, VC eşittir sıfır denklemini çözüyoruz.
+
+157
+00:31:54,900 --> 00:32:01,940
+Bu tarafta ne yapacağız? Bu tarafta VC'ye, zamana bağlı olarak, VCT için şöyle bir öneride bulunacağız.
+
+158
+00:32:02,920 --> 00:32:12,040
+Nihai olarak T eşittir sonsuza gittiğinde, şu devreyi inceleyin, T eşittir sonsuza gittiğinde, VC gerilimimiz neye eşit olmalı? VS'ye eşit olmalı değil mi?
+
+159
+00:32:12,580 --> 00:32:17,759
+Dolayısıyla T sonsuza gittiğinde kaynağa benzeyen bir çözüm önerisi yapmamız lazım.
+
+160
+00:32:20,980 --> 00:32:41,120
+Buna A demeyelim, S diyelim şimdilik. S şeklinde bir tane daha çözüm önerimizi yapmış olalım. Bu durumda bizim nihai durumda şuradan gelecek eksponansiyel çözüm ile şuradan gelecek sabit değerlere benzeyen bir çözüm, S'yi bilmiyoruz şu aşamada. Bunların toplamı bana nihai çözümü verecek.
+
+161
+00:32:41,587 --> 00:32:46,327
+Buradaki eşittir S şeklinde yapmış olduğumuz öneri, burada ne öneriyorduk?
+
+162
+00:32:46,847 --> 00:32:51,708
+VC eşittir A çarpı E üzeri alfa T şeklinde bir şey öneriyorduk.
+
+163
+00:32:52,168 --> 00:32:55,387
+Burada da sabit bir değer önerdik. Bu ikisinin toplamı olacak.
+
+164
+00:32:56,008 --> 00:32:57,448
+Bu da zorlanmış çözümümüz.
+
+165
+00:32:58,327 --> 00:32:58,988
+Buna karşılık.
+
+166
+00:32:59,288 --> 00:33:03,288
+Şimdi bakalım, önce şuradan alfa kat sayısını elde etmeye çalışalım.
+
+167
+00:33:03,387 --> 00:33:05,488
+Çünkü bu büyük A'ya ilişkin bir cevap vermiyor.
+
+168
+00:33:05,948 --> 00:33:07,347
+Büyük A'yı nereden buluyorduk?
+
+169
+00:33:08,084 --> 00:33:27,284
+Büyük A'yı arkadaşlar, Initial Condition'dan buluyorduk. Bizim Initial Condition'ımız ne? Ne bulmuşuz? Neredeydi? V, C, T, 0, 0 eşit. Bunu bulduk. Bir de bir başka Initial Condition'ımız veya boundary uç değerimiz daha var. Devre bu şekilde olduğu için aynı zamanda şunu biliyoruz.
+
+170
+00:33:35,412 --> 00:33:49,672
+Neleri bulacağız arkadaşlar? Alfayı yerine koyup R ve C cinsinden bulacağız. A'yı bir başlangıç koşulundan, S'yi ise ikinci uç durumdan bulmaya çalışacağız.
+
+171
+00:33:50,531 --> 00:33:57,471
+Şimdi gelelim, burada önerdiğimiz denklem böyle bir şey olduğuna göre, doğal çözüm için. Onu yerine koyacak olursak, ne çıkacak yine?
+
+172
+00:34:02,867 --> 00:34:25,547
+Alfa çarpı E üzeri alfa T süremini aldık. Artı bir bölü RC, A çarpı E üzeri alfa T eşittir sıfır. A çarpı E üzeri alfa T parantezini alırsak, alfa artı bir bölü RC eşittir sıfır. Az önceki kaynaksız durumun aynısı. Burada alfa için önereceğimiz şey, eksi bir bölü RC oldu.
+
+173
+00:34:26,068 --> 00:34:45,188
+O zaman burada tabii önerdiğimiz denklem T-T0 olmalı. Onu düzeltelim şöyle yine. Eğer ki T eşittir sıfır anında durum değişiyorsa sıkıntı yok zaten. Ama bu şekilde bir güncelleme yapalım. O zaman doğal çözümden elde etmiş olduğumuz çözüm şu olmuş oldu.
+
+174
+00:34:48,916 --> 00:34:54,516
+A çarpı E üzeri eksi T bölü VC şeklinde bir fonksiyon olalım.
+
+175
+00:34:55,056 --> 00:34:58,376
+Şimdi şuradaki çözüm önerimizi yerine koyalım. Ne yapacağız?
+
+176
+00:34:58,496 --> 00:35:06,336
+Bu çözüm önerisini şu diferansiyel denklemde, pardon bu diferansiyel denklem değil, şuradaki denklemde yerine koyacağız.
+
+177
+00:35:07,115 --> 00:35:10,736
+Şuradaki denklemde yerine koyacağız. O zaman onu getirelim.
+
+178
+00:35:10,736 --> 00:35:14,936
+Bunu nerede arıyoruz o zaman? VC üstü. Şu denklemde arıyoruz.
+
+179
+00:35:15,411 --> 00:35:27,652
+Artı 1 bölü RC, Vs, pardon, Vc eşittir, Vs bölü RC olacakmış. Biz burada sabit bir değer önerdik, Vc'ye teyze. Getirelim, türemini alalım, sıfır.
+
+180
+00:35:28,851 --> 00:35:36,131
+S bölü RC eşittir, Vs bölü RC olacakmış. O zaman buradan S için elde ettiğimiz çözüm ne olmuş oldu arkadaşlar?
+
+181
+00:35:42,164 --> 00:36:01,324
+Şöyle diyelim, V, C, T için çözümümüz yine bu şekilde V, S oldu. Bu ikisini birleştirdiğimiz durumda ise, zorlanmış çözüm ve doğal çözüm için, nihai olarak V, C için elde ettiğimiz çözüm, zamana bağlı olarak şu oldu.
+
+182
+00:36:09,396 --> 00:36:13,775
+Sonra bir de ne var? Artı vs diye bir sabitimiz var.
+
+183
+00:36:15,256 --> 00:36:18,076
+Şimdi burada initial condition için ne vermiştik?
+
+184
+00:36:19,216 --> 00:36:23,996
+T0 anında, şunu yine yazmayı unutmuşum, şöyle yazalım.
+
+185
+00:36:25,576 --> 00:36:26,735
+T-T0.
+
+186
+00:36:27,956 --> 00:36:44,496
+Biz ne biliyoruz? VC, T0A'nın da 0 eşit olacak. T0 için T yerine T0 koyalım. Buradan ne kaldı? A kaldı, artı Vs eşittir 0 olacak. O zaman A'yı da eksi Vs olarak bulmuş oluyoruz.
+
+187
+00:36:44,496 --> 00:36:52,876
+Initial Condition'da yerine getirdikten sonra, uyguladıktan sonra bizim çözümümüz artık VCT değerimiz.
+
+188
+00:36:54,356 --> 00:37:11,256
+vs parantezine alabiliriz bunları. vs parantezine alabiliriz. vs parantezine aldığımızda 1-e üzeri eksi t eksi t sıfır bölü RC olarak elde edilen bir denklem olmuş oluyor.
+
+189
+00:37:11,256 --> 00:37:20,376
+Şimdi buradaki initial conditionları tekrar deneyelim. vc t sıfırın sıfır olması gerekiyor. Acaba bu sağlanıyor mu bakalım.
+
+190
+00:37:20,884 --> 00:37:23,804
+T0 yerine 0 koyalım. Bir soru var galiba.
+
+191
+00:37:28,532 --> 00:37:46,592
+Bak şimdi, artı bir değil, A-VS çıktı. Dolayısıyla şurada yerine koyalım. Şunu yazdığımız vakit, VS-VS çarpı E üzeri eksi T-T0 bölü RC oluyor.
+
+192
+00:37:47,132 --> 00:37:52,112
+Tamam, okey. O yüzden dolayı VS parantezini aldığımızda bir eksi E üzeri bir şey bir şey diye gidiyor.
+
+193
+00:37:52,851 --> 00:38:15,331
+Şimdi bakalım, bir initial condition'ı sağlıyor mu? T eşittir, T sıfır verdiğimizde sıfır oluyor mu? E üzeri sıfır, bir, bir eksi bir, sıfır, Vs ile çarptım, sıfır. Güzel, bunu sağladı. Bir de ne arıyorduk? Vc, T eşittir, sonsuz olduğunda bunun Vs olmasını bekliyoruz DC analizden dolayı. Acaba böyle mi? T yerine sonsuz verelim.
+
+194
+00:38:16,083 --> 00:38:28,663
+E üzeri eksi sonsuz, yani sıfır, bir eksi sıfır bir, vs çarpı bir vs. Bu da sağlam. Dolayısıyla kaynaklı bir RC devresini çözerken de izleyeceğimiz yaklaşım bu olacak.
+
+195
+00:38:30,003 --> 00:38:49,784
+Zaten mantık olarak düşündüğümüzde devreye bir kaynak değerini verdiğimiz anda sıfır değerinden itibaren eksponansiyel olarak bir vs değerine asimtotik olarak yaklaşması lazım. Burada üstel olarak bu yaklaşımı görmüş oluyoruz.
+
+196
+00:38:49,784 --> 00:38:55,103
+Çözümümüzü özetleyecek olursak tekrar şöyle yukarı çıkarak bakalım nasıl yaptık.
+
+197
+00:38:55,507 --> 00:39:21,907
+Kaynaklı bir RLC devresi için. Başlangıç durumumuzu bulduk. Sonsuz durumu için kaynağın baskın ve zorlayıcı çözüm olduğunu gördük. Daha sonra diferansiyel denkleminizi yazdık. Diferansiyel denklemimiz bir şeyin türevi arttı, bir şey eşittir, bir sabit değer çıktı. O zaman biz iki tane çözüm önerisinde bulunduk. Bunlardan birincisi homojen denklem için. Yani eşittir sıfır yapıp.
+
+198
+00:39:22,228 --> 00:39:45,148
+Hiçbir kaynak olmamış olsaydı bile devredeki R ve C'nin doğal davranışına ilişkin çözümü elde ettik. Oradaki önerdiğimiz çözüm, Türev kendisiyle yüner bağımlı olduğu için E üzeri alfa T şeklinde bir fonksiyon önerdik. Onu yerine koyduk. Yerine koyduktan sonra alfa değerimizi bulduk. Alfa değerimizi eksi bir bölü RC olarak bulduk.
+
+199
+00:39:45,588 --> 00:39:58,307
+Bunu not ettik. Daha sonra bizim genel denklemimiz içerisinde, zorlanmış çözüm içeren denklem içerisinde, zorlanmış çözüme benzer bir çözüm önerisinde daha bulunduk.
+
+200
+00:39:58,307 --> 00:40:00,000
+Zorlanmış çözümün sabit...
+
+201
+00:40:00,000 --> 00:40:16,559
+Sabit bir değer olduğu için sabit şeklinde sabit bir değer önerdik. Bu sabit değeri yukarıdaki diferansiyel denklemde yerine koyduk. Türevini aldık, sıfır. Sabitin türevi sıfır. Kendisi bölü RC eşittir. Vs bölü RC eşit olmalı. Orada sabit önerdiğimiz çözümün Vs olduğunu bulduk.
+
+202
+00:40:17,519 --> 00:40:25,300
+Sonrasında doğal çözümden gelen çözümle, doğrulanmış çözümden gelen çözümü birleştirip, nihai bir çözüm elde ettik.
+
+203
+00:40:25,652 --> 00:40:40,132
+Burada bilmediğimiz tek şey A, büyük A katsayısı. Onu bulabilmek için de başlangıç konumunu devreye aldık. Başlangıç durumu şartlarını oluşturduk. Yani T'ye T0 verdik. Oradan büyük A katsayısını eksi vs olarak bulduk.
+
+204
+00:40:40,692 --> 00:40:54,612
+Onu da yerine koyarak nihai çözüm elde etmiş olduk. Bizim iki tane uç durumumuz vardı T0'da ve sonsuzda. Bunları sağlayıp sağlamadığını kontrol ettik, sağladığını gördük ve nihai çözüm budur diye sonlandırmış olduk.
+
+205
+00:40:54,612 --> 00:41:00,092
+Bu noktada şuna bakabiliriz. Hem kaynaksız hem de kaynaklı senaryo için.
+
+206
+00:41:01,844 --> 00:41:25,044
+Neredeydi mesela? Şurada biz mesela kaynaksız durum için VC'yi bulduk. Hangi devrede? Şu devrede. Buradaki ana kol akımını bulabilir miyiz? Ne dersiniz? Yani biz kapasitenin gerilimini bulduk. Peki, IR eşittir, IC, T denklemimizi bulabilir miyiz? Bunu nasıl olacak? Ne dersiniz?
+
+207
+00:41:33,492 --> 00:41:34,532
+Bunun için ne dersiniz?
+
+208
+00:41:47,572 --> 00:42:05,092
+Burada biz VC gerilimini biliyoruz, değil mi? Kapasitenin tanım bağıntısından hareketle C çarpı VC olduğunu biliyoruz ya, her iki tarafın türevini alsak, ICT eşittir, C çarpı DVC bölü DT oluyor, değil mi?
+
+209
+00:42:05,752 --> 00:42:13,132
+Dolayısıyla biz aslında burada kapasite gerilimimizin türevini alsak, C ile çarpsak, ana kol akımını bulabilmeliyiz. O zaman gelelim.
+
+210
+00:42:13,503 --> 00:42:16,683
+V, C, T gerilimimizin türevini alalım zamana göre.
+
+211
+00:42:17,384 --> 00:42:23,303
+V, S çarpı, eksi bir bölü RC gelecek, kat sayıdan dolayı.
+
+212
+00:42:23,963 --> 00:42:31,123
+Çarpı, E üzeri, eksi, T eksi, T sıfır, bölü RC değerimiz olmuş oluyor.
+
+213
+00:42:31,243 --> 00:42:34,903
+Bu bizim, tabi bir de C ile çarpacağız, çarpı C var.
+
+214
+00:42:35,543 --> 00:42:40,703
+C'ler gitti, bu bizim I, T gerilimimiz, şey akımımız olmuş oldu.
+
+215
+00:42:41,652 --> 00:43:07,472
+IT akımımızı bu şekilde elde etmiş olduk. Yani türevini alıp diğer eleman şeyini bulabiliyoruz. Gerilimin akımını bulabiliyoruz. Aynı şeyi arkadaşlar getirip kaynaklı devre için de yapabiliriz. Devre kaynaklı halde olduğu için biz gerilimimizi bulduk, BC gerilimimizi bulduk. Şu. Anakol akımını bulmak istersek ne yapacağız? Yine aynı şeyi yapacağız. Geleceğiz. Şöyle yazalım.
+
+216
+00:43:08,755 --> 00:43:15,295
+ICT'yi bulmak istiyorsak, C çarpı DVC bölü DT'yi.
+
+217
+00:43:15,596 --> 00:43:22,195
+VC gerilimimiz burada. Buna zamana göre türemini alacağız. Sonra C ile çarpıp, ana kol akımını bulmuş olacağız.
+
+218
+00:43:23,035 --> 00:43:30,875
+Bu bizim, şurada tekrar yukarı çıkalım. Bizim derste göreceğimiz kategoriler arasında, hangisine denk geldi?
+
+219
+00:43:31,635 --> 00:43:56,876
+RL ve RC devreleri için sadece RC devresi açısından şu iki kolu bitirmiş olduk arkadaşlar. Şu iki kolu bitirmiş olduk. Aynı işlemi RL devresi için yapalım hızlıca. Aynı işleri RL devresi için yapalım. Dolayısıyla birinci olarak göreceğimiz şey burada şu olacak. Kaynaksız bir, niye böyle kötü yazıyor acaba?
+
+220
+00:43:58,291 --> 00:44:14,491
+RL devresi. Ama devrede bir takım akım gerilim değerleri oluşabilmesi için bir başlangıç durumu olabilmesi lazım. Bu başlangıç durumu neyle sağlanacak? RL devresi için bir başlangıç durumu oluşturmamız lazım. O da nedir?
+
+221
+00:44:20,784 --> 00:44:34,203
+Depolamış olduğu enerji ne üzerinden depoluyor onu bir akım değeri üzerinden depoladığı enerji ile başlangıç durumu var ve daha sonra bu direnç üzerinden deşarj oluyor olacak arkadaşlar.
+
+222
+00:44:34,864 --> 00:44:45,683
+Dolayısıyla kaynaksız bir RL devresi oluşturalım. Yine burada bu sefer bir akım kaynağımız olsun. Bu akım kaynağımız uzun süre boyunca devrede olsun.
+
+223
+00:44:45,683 --> 00:44:48,043
+Yani şöyle yapalım.
+
+224
+00:44:50,068 --> 00:45:06,308
+Uzunca bir süre boyunca devrede olsun. Kayna devremizde bir direnç, bir de endüktans elemanımız olsun. Daha sonrasında belirli bir zaman sonra anahtarımız A konumundan B konumuna getirilsin.
+
+225
+00:45:07,988 --> 00:45:14,528
+Burada da bir IS, bir akım gerilim değerimizden bahsedelim. Şimdi burada ilk aradığımız şey.
+
+226
+00:45:15,092 --> 00:45:23,832
+Şunları söyleyelim. T eşittir, eksi sonsuzdan T0 anına kadar anahtar A konumunda.
+
+227
+00:45:28,755 --> 00:45:38,275
+A konumunda. Dolayısıyla DC şartlarda bir başlangıç durumu hesaplayacağız buradan. Daha sonra T büyük eşit T0'da anahtar B konumuna geliyor.
+
+228
+00:45:41,235 --> 00:45:52,395
+B konumuna geliyor. Bu ne demek? Artık kaynaksız, enerji depolamış bir elikans elemanı var. Bunun üzerindeki enerji direnç üzerinden de şarj olacak veya buradaki enerji harcanacak.
+
+229
+00:45:53,268 --> 00:46:03,527
+Dolayısıyla bizim burada eksi sonsuzdan, yani sonsuz süre boyunca devre bir DC şartta çalıştığı için biz i ile T0'ı ne olarak buluruz arkadaşlar?
+
+230
+00:46:04,768 --> 00:46:07,168
+DC şartlarda en rüktans elemanı nasıl çalışıyordu?
+
+231
+00:46:12,532 --> 00:46:39,692
+Cevap geldi. Kısa devre olarak çalışıyordu ve cevabı da vermişti zaten. Dolayısıyla kısa devre olarak çalışıyor. Bu kolda akacak akım kaynak akımın eşit, I, S değerine eşit. Ve aynı zamanda enduktans elemanı için akım sürekli gösterecekti. O zaman ÖL, T0 artı hemen T0'dan sonraki anda da bu akım değerimizin I, S olduğunu söyleyebiliriz.
+
+232
+00:46:40,019 --> 00:46:45,759
+Şimdi gelelim, devremizin T0'a itibaren eşdeğerini çizelim şuraya.
+
+233
+00:46:47,579 --> 00:46:52,300
+Direncimiz var, endüktansımız var ve devre bu halde.
+
+234
+00:46:52,619 --> 00:46:54,079
+R ve L değerlerimiz var.
+
+235
+00:46:54,739 --> 00:46:56,139
+Anakolda tek bir akım var.
+
+236
+00:46:57,599 --> 00:46:59,699
+Bunu çözecek olursak şimdi ne yapıyoruz?
+
+237
+00:46:59,699 --> 00:47:05,739
+Burada bir ILT0IS'ye eşit.
+
+238
+00:47:05,860 --> 00:47:06,639
+Bunu biliyoruz.
+
+239
+00:47:08,244 --> 00:47:31,704
+Yazalım. VR artı VL eşittir sıfır. IR eşittir IL. Bunları biliyoruz. VR gerilimimiz neye eşit? IL çarpı R. Diğerine sahip. VL gerilimimiz neye eşit? Endüktan sıtanın bantısı neydi? Fi eşittir L çarpı I. Her iki tarafın süremini alacak olursak.
+
+240
+00:47:32,052 --> 00:47:56,731
+VL eşittir L çarpı DI bölü DT, hatta ÜL diyebiliriz. O zaman VL'yi getirip de yerine şunu yazabiliriz. L çarpı DIL bölü DT eşittir sıfır. Buradan çözümleme yapacak olursak, en yüksek türevli terimi tek başına bırakalım. Yani ÜL'nin türevi.
+
+241
+00:47:58,132 --> 00:48:12,032
+R bölü L, U, L eşittir sıfır şeklinde bir çözüm elde etmiş oluyoruz. Bakın burada çözümü kapasitete gerilim cinsinden elde etmiştik. Burada akım cinsinden, enifransın akımı cinsinden elde etmiş oluyoruz.
+
+242
+00:48:12,384 --> 00:48:21,244
+Bunu çözebilmek için önereceğimiz çözüm, kendisi var, türevi var, kendisi var, linear bağımlı, bir sabit üzerinden linear bağımlılar, eşitli sıfır olduğu için bu demek oluyor bu.
+
+243
+00:48:21,724 --> 00:48:25,284
+Dolayısıyla aradığımız şey, türevi kendisine benzeyen bir fonksiyon.
+
+244
+00:48:25,623 --> 00:48:33,123
+Yapacağımız öneri o zaman, ÖLT akımı için, T sıfır anında kapandığından dolayı,
+
+245
+00:48:33,556 --> 00:48:40,635
+Bir A katsayısı çarpı E üzeri alfa T şeklinde bir çözüm önerimiz var. Bunu getirip yerine koyacak olursak,
+
+246
+00:48:42,316 --> 00:48:45,456
+Türemini alacağız.
+
+247
+00:48:46,155 --> 00:48:55,016
+Alfa E üzeri alfa T artı R bölü L A çarpı E üzeri alfa T eşittir sıfır.
+
+248
+00:48:55,411 --> 00:49:10,672
+A3 çarpı E üzeri alfa T parantezini alacak olursak, alfa artı R bölü L eşittir sıfır. Bu sıfır olamaz. Bu zaten sıfıra gitmiyor. Dolayısıyla tek çözüm alfa eşittir eksi R bölü L için geçerli olduğunu görüyoruz.
+
+249
+00:49:21,012 --> 00:49:37,331
+R, L, R bölü L şeklinde bir çözünmüş. Büyük A'yı bilmiyoruz. Büyük A'yı nasıl bulacağız? Büyük A'yı bulabilmek için de tekrar gelip burada initial condition oluşturmuştuk. T0 anında Is'e eşit. Gene şeyi unutmuşuz orada, onları yazarak gelelim.
+
+250
+00:49:39,172 --> 00:49:45,092
+Burada demek ki önerdiğimiz çözüm eksi T0'dan itibaren başlayacağı için bu şekilde olacak.
+
+251
+00:49:46,099 --> 00:50:02,780
+Düzeltmiş olalım. Eksi T0, eksi T0, eksi T0. Bunları düzeltmiş olalım. Çözümümüz nihayet olarak bu. Bizim aradığımız initial condition da şuydu. Hesapladığımız.
+
+252
+00:50:13,972 --> 00:50:23,092
+A eşittir, I, S olarak elde edilmiş oldu. Bunu da getirip yerine koyacak olursak, şuradan bunu bulmuştuk, buradan da bunu bulduk. O zaman çözünürüz.
+
+253
+00:50:34,420 --> 00:50:47,000
+Akım denklemimizi elde etmiş oluyoruz. Burada initial condition sağlandığını tekrar kontrol edelim. T eşittir, T sıfıra gittiğinde E üzeri sıfır, I, S, I, S başlangıç gerilimimizle çalışıyoruz.
+
+254
+00:50:47,559 --> 00:50:56,139
+Ü, L, T sıfır eşit, I, S mi? Doğru işareti, I, S mi? Bunu sağladık.
+
+255
+00:51:01,364 --> 00:51:11,603
+Alfa T dedik değil mi? Alfayı eksi R bölü L bulduk. Doğru doğru evet onu düzeltelim. R bölü L olduğuna göre L bölü R olarak onları düzeltiyorum.
+
+256
+00:51:11,603 --> 00:51:22,244
+Hemen şöyle. Çok doğru. Hemen düzeltelim. Alfa T yazmıştık. Burada bir bölü alfa olacak. Dolayısıyla L bölü Z olarak.
+
+257
+00:51:22,963 --> 00:51:30,783
+Bunları düzeltmiş olalım. Şimdi T0'da ne olacaktı? I, S'ye eşit olmalı. E üzeri 0, 1. O zaman I, S oldu.
+
+258
+00:51:31,563 --> 00:51:44,663
+Ö, L, T sonsuza giderken ne olmalı? Sonsuza giderken ne olmalı? Devreye bakalım. Enerjisini harcayacak 0 olması lazım. T'ye sonsuz ver.
+
+259
+00:51:45,172 --> 00:51:50,632
+E üzeri eksi sonsuz, yani E üzeri eksi sonsuz, bir bölü E üzeri sonsuz.
+
+260
+00:51:51,007 --> 00:52:06,048
+Yani bir bölü sonsuz, yani sıfır. Dolayısıyla sıfıra gidiyor. Bunu da sağlamış olduk. Dolayısıyla kaynaksız bir RL devresinde başlangıç koşul var ise devre elemanlarının doğal çözümü üzerinden hareket ediyor oldu.
+
+261
+00:52:06,608 --> 00:52:15,188
+Aynı durumu şimdi gelelim bir kaynaklı RL devresi için çözelim. Tıpkı RLC devresinde yaptığımız gibi. Başlık olarak koyalım buraya.
+
+262
+00:52:22,516 --> 00:52:45,375
+Kaynaklı bir RL devresi için çözüm yapalım. Yine bir akım kaynağımız var. Bu akım kaynağı hemen devreye girmiyor. Devre uzun süre boyunca DC şartlarda kaynaksız bir şekilde çalışıyor. Daha sonrasında şöyle anahtarlarımızı hazırlayalım. Anahtar şöyle geliyor.
+
+263
+00:52:48,307 --> 00:53:09,347
+Bu A konumumuz, bu B konumumuz, T eşittir, eksi sonsuzdan, T sıfır anına kadar anahtar A konumunda, T büyük eşit T sıfırda ise, anahtar B konumunda.
+
+264
+00:53:11,168 --> 00:53:12,268
+Tamam, bu şekilde olsun.
+
+265
+00:53:12,788 --> 00:53:16,227
+Buna göre şurada R ve R değerlerimiz var.
+
+266
+00:53:17,607 --> 00:53:26,768
+Sonsuz süre boyunca bu şekilde kaldığı için biz burada initial condition olarak ÖL, T0, eksi, eşittir 0 diyebiliriz değil mi?
+
+267
+00:53:29,827 --> 00:53:33,307
+Herhangi bir şekilde, L üzerine bir enerji depolanmış olsa bile,
+
+268
+00:53:33,907 --> 00:53:40,268
+Sonsuz süre boyunca bu dirençle birlikte seri bir şekilde bağlı olduğu için bu enerji burada harcanacak.
+
+269
+00:53:40,407 --> 00:53:47,807
+Ve T0'ın hemen öncesinde buradaki akım değerimiz, UL'nin akım değeri 0 başlangıç değerine sahip olacak.
+
+270
+00:53:48,047 --> 00:53:50,628
+Bunu söyleyebiliriz.
+
+271
+00:53:51,768 --> 00:53:53,307
+Başlangıç koşulumuz bu.
+
+272
+00:53:55,347 --> 00:53:57,827
+Başlangıç koşulumuz burada elde edildi.
+
+273
+00:53:57,827 --> 00:53:59,887
+Şimdi biz bu devreyi gelelim.
+
+274
+00:54:00,275 --> 00:54:05,235
+T sıfırdan büyük eşit olduğu durumda yeniden eşdeğeriyle birlikte çizelim.
+
+275
+00:54:10,867 --> 00:54:15,667
+B'ye getirdik ya artık anahtarı. Yani devremizde R var.
+
+276
+00:54:18,547 --> 00:54:22,907
+IS akım kaynağımız var. Bir de endikans elemanımız var. Devre bu hale geldi.
+
+277
+00:54:23,527 --> 00:54:28,507
+Şimdi bunu çözelim. Buradaki elde edeceğimiz denklemi yazalım. Ne diyebiliriz?
+
+278
+00:54:29,167 --> 00:54:31,347
+Benzer şekilde. VR artı böyle.
+
+279
+00:54:33,467 --> 00:54:34,807
+Bunu yazamayız.
+
+280
+00:54:38,228 --> 00:54:39,908
+Ne diyecektik? Şöyle diyeceğiz.
+
+281
+00:54:43,548 --> 00:54:54,347
+Buradaki akım değerimiz, Is eşittir Is, Ir'ye eşit, o da eşittir, Il diyebiliriz.
+
+282
+00:54:54,347 --> 00:54:57,347
+Bunu diyebiliriz.
+
+283
+00:54:57,972 --> 00:55:10,452
+Ve benzer şekilde de kaynağın gerilim değeriyle birlikte buradaki VR ve VL toplamı da buradaki kaynağın gerilim değerine eşit olmak durumunda.
+
+284
+00:55:11,592 --> 00:55:20,192
+Şimdi burada bunu aslında paralel bir durum için çizsek daha güzel olabilirmiş.
+
+285
+00:55:21,572 --> 00:55:24,192
+Gerilim kaynağı olarak versek nasıl olur?
+
+286
+00:55:24,192 --> 00:55:24,952
+Düşünelim.
+
+287
+00:55:26,483 --> 00:55:43,684
+Şimdi devreyi yeniden değiştirmek yerine. Şöyle yapalım. Buradaki gerilim değerimiz belli olmadığı için. Şöyle yapalım arkadaşlar. Küçük bir değişiklik yapıyorum. Buradaki kaynağımızı bir gerilim kaynağı gibi düşünelim. Seri çizdiğimiz için ona daha uygun geliyor.
+
+288
+00:55:44,344 --> 00:55:51,903
+Vs olsun. Dolayısıyla başlangıç durumumuzda yine bu değişmiyor. Aşağı gelelim şöyle.
+
+289
+00:55:53,235 --> 00:55:55,875
+Aşağı geldiğimizde de yine şunu da değiştirelim.
+
+290
+00:56:07,603 --> 00:56:08,623
+Bu şekilde yazalım.
+
+291
+00:56:09,223 --> 00:56:11,723
+Şimdi az önceki denklemlerimizi yazalım.
+
+292
+00:56:12,263 --> 00:56:13,943
+Isay yok artık, onu da silerim.
+
+293
+00:56:16,423 --> 00:56:18,483
+Bunu şundan dolayı değiştiriyorum.
+
+294
+00:56:18,723 --> 00:56:23,423
+Eğer ki bu R ve L birbirini paralel şekilde çizmiş olsaydık kaynağı da,
+
+295
+00:56:24,023 --> 00:56:27,883
+orada kaynak üzerinden, bir akım kaynağı üzerinden ilerlemek daha pratik oluyor.
+
+296
+00:56:28,883 --> 00:56:31,963
+O yüzden dolayı şimdilik bu şekilde değiştirmiş olalım.
+
+297
+00:56:32,500 --> 00:56:41,440
+vs neye eşit olacak? Hatta şöyle diyelim, kaynağın eksisinden girdik, artı, V, R, artı, V, L eşittir sıfır diyeceğiz.
+
+298
+00:56:42,260 --> 00:56:46,380
+Şimdi burada vs'yi karşı tarafa atabiliriz. Eşittir vs.
+
+299
+00:56:47,760 --> 00:56:58,940
+V, R gerilimimiz şöyle diyelim, I çarpı R'ye eşit, ana kol akımımız iyi olduğu için ve aynı zamanda bu da V, L'ye.
+
+300
+00:56:59,699 --> 00:57:21,079
+Eşit. Şimdi Ndiktans'ın tanım bağıntısını getirelim buradan. Ndiktans'ın tanım bağıntısı neydi? VL eşittir. L çarpı DIL bölü DT şeklinde verdiğimiz bir durumdu. Dolayısıyla aynı zamanda biz IL'nin IR'ye de eşit olduğunu biliyoruz. O zaman bunu şöyle yazabiliriz.
+
+301
+00:57:26,831 --> 00:57:38,831
+Bölü DT eşittir, VS şeklinde bunu yazabiliriz. Düzenleyelim ve en yüksek dereceden terimi tek başına bırakalım. O zaman şunu yapmış oluruz.
+
+302
+00:57:40,991 --> 00:57:51,692
+ÖL'nin türevi artı her tarafı L'ye böleceğiz. Yani R bölü L, İL eşittir, VS bölü L olmuş olacak.
+
+303
+00:57:52,211 --> 00:58:06,711
+Şimdi denklemimiz bu. Bu denklem aslında bir diferansiyel denklem, bir de zorlanmış çözüm var. O zaman biz böyle bir senaryoyla karşılaştığımızda önce doğal çözüm elde edeceğiz, sonra da zorlanmış çözümü elde etmeye çalışacağız.
+
+304
+00:58:07,412 --> 00:58:16,231
+Zorlanmış çözüm için bizim kullanacağımız diferansiyel denklem, ÖL'nin türevi artı R bölü L, ÖL eşittir Vs bölü L denklemi.
+
+305
+00:58:17,588 --> 00:58:24,648
+Doğal çözüm için kullanacağımız denklem ise, UL artı R bölü L, UL eşittir sıfır denklemi olmuş olacak.
+
+306
+00:58:26,348 --> 00:58:28,228
+Şu türe var burada çıkmamış.
+
+307
+00:58:28,608 --> 00:58:33,508
+Şimdi bunun için yine az önce karşılaştığımız senaryoya benzer senaryolar.
+
+308
+00:58:33,648 --> 00:58:35,468
+Dolayısıyla biraz daha hızlı ilerleyeceğim.
+
+309
+00:58:35,468 --> 00:58:40,388
+Burada önereceğimiz, doğal çözüm için önereceğimiz çözüm, UL'nin.
+
+310
+00:58:40,820 --> 00:58:55,219
+En genel olarak A çarpı E üzeri alfa T şeklinde bir denkleme sahip olması. Burada önereceğim çözüm ise ÖLE'nin S diye sabit bir değer olsun.
+
+311
+00:58:55,719 --> 00:59:01,420
+Sabit bir kat sayı olsun. Bu şekilde bir çözüm önerisi. Bunu yerine koyduğumuz zaman şununla karşılaşacağız.
+
+312
+00:59:07,155 --> 00:59:12,935
+Artı, R bölü L, A çarpı E üzeri alfa T eşittir sıfır.
+
+313
+00:59:15,195 --> 00:59:23,795
+A, E üzeri alfa T parantezini alacak olursak, tabi burada yine şeyi unuttum, eksi T sıfır yazmalıyız.
+
+314
+00:59:26,096 --> 00:59:30,115
+Eksi T sıfır, eksi T sıfır.
+
+315
+00:59:31,555 --> 00:59:32,915
+Şunu da düzenleyelim.
+
+316
+00:59:35,635 --> 00:59:47,635
+E üzeri alfa T-T0 parantezinde alfa artı R bölü L eşittir sıfır yapıyor. Değil mi?
+
+317
+00:59:48,755 --> 00:59:59,536
+A sıfır olursa trivial çözüm. Bunu aramıyoruz. E üzeri alfa T zaten sıfır olamıyor. O zaman alfa eşittir eksi R bölü L diye bir sonuç elde etmiş oluyoruz.
+
+318
+01:00:00,000 --> 01:00:17,039
+O zaman bizim doğal çözümden önerdiğimiz çözümümüz, I, L'miz, sadece doğal çözümden gelen haliyle, A çarpı E üzeri eksi T eksi T sıfır bölü L bölü R çözümü.
+
+319
+01:00:17,039 --> 01:00:22,920
+Tıpkı doğal çözümde, kaynaksızdaki olduğu gibi. Burada zorlanmış çözümü yerine koyalım.
+
+320
+01:00:27,251 --> 01:00:34,751
+S eşittir, Vs bölü L oluyor. O zaman buradan S için elde edeceğimiz çözüm ne olmuş oldu arkadaşlar?
+
+321
+01:00:35,592 --> 01:00:42,152
+Vs gibi bir çözüm olmuş oldu. Burada biz şeyi yanlış yaptık. Şöyle gelelim.
+
+322
+01:00:47,764 --> 01:01:12,244
+Kaynağı buraya getirdiğimiz zaman, Vs bölü R'lik bir akım olacak. Onu bir yerde hesaba katmadık sanırım. Nerede o? Şuradan geliyor zaten. Tamam, buradan geliyormuş. L'ler gitti, Vs bölü R'lik bir çözüm önerimiz var.
+
+323
+01:01:12,596 --> 01:01:28,836
+Bu ikisini birleştirdiğimiz zaman, o zaman bizim ILT için önerdiğimiz genel çözüm, A çarpı E üzeri, eksi T, eksi T sıfır, L bölü R.
+
+324
+01:01:29,907 --> 01:01:37,267
+Artı, Vs bölü, Vs'yi karşıya atmıştık, Vs bölü, R değeri olmuş oldu.
+
+325
+01:01:37,827 --> 01:01:39,567
+Şimdi, Initial Condition'ımız neydi?
+
+326
+01:01:40,247 --> 01:01:48,067
+Ü, L, T, hatta T sıfır'daki değerimiz neye eşitti? Sıfıra eşitti.
+
+327
+01:01:48,067 --> 01:01:55,007
+O zaman, bunun yerine koyduğumuz zaman, yani Ü, L, T yerine T sıfır koyduğumuz zaman, A artı, Vs bölü, R kalır burada.
+
+328
+01:01:55,456 --> 01:02:00,736
+A'nın ne olduğunu görüyoruz? Eksi vs bölü R olduğunu görüyoruz.
+
+329
+01:02:02,096 --> 01:02:14,436
+A eksi vs bölü R ise, bunu da getirip yerine koyacak olursak, en nihai çözümümüz, kaynaklı durum için, I, L, T'miz şuna eşit olmuş oluyor.
+
+330
+01:02:22,516 --> 01:02:32,616
+Eksi, T eksi, T sıfır, L bölü R. Bu bizim nihai denklemimiz oluyor. Şimdi burada değerleri sağlantırmaya çalışalım.
+
+331
+01:02:33,456 --> 01:02:38,656
+I, L, T sıfırın sıfır olmasını bekliyoruz. Bakalım sağlıyor mu?
+
+332
+01:02:39,796 --> 01:02:44,976
+T yine T sıfır verdiğinde E üzeri sıfır bir, bir eksi bir sıfır, sıfırla çarptığım zaman sıfır.
+
+333
+01:02:45,619 --> 01:02:53,699
+Bu bizim initial condition'ımızı sağlıyor. Peki, ÜL, T eşittir sonsuza giderken ne olmasını biz bekliyoruz?
+
+334
+01:02:54,400 --> 01:03:04,199
+T sonsuza giderken artık devrede sadece kaynağımız olacağı için, bakın şu devremize gelelim, T eşittir sonsuza gittiğinde bu kısa devre tergili çalışacak,
+
+335
+01:03:04,619 --> 01:03:08,619
+V, S bölü R'lik bir akım değeri oluşmasını bekliyoruz. Bakalım onu verebilecek mi?
+
+336
+01:03:09,139 --> 01:03:22,019
+T yerine sonsuz koyduğumuzda, bu elde ettiğimiz nihai denklemde, T yerine sonsuz koyduğumuzda, E üzeri eksi sonsuz, yani bir bölü sonsuz, sıfır, bir eksi sıfır, bir, Vs bölü R kalıyor.
+
+337
+01:03:22,159 --> 01:03:27,019
+Vs bölü R, bu da bizim istediğimiz senaryo. Dolayısıyla bunu da sağlamış olduk.
+
+338
+01:03:28,899 --> 01:03:33,759
+Bu aşamada arkadaşlar biz, şu entepeye çıkalım tekrar.
+
+339
+01:03:36,596 --> 01:03:46,076
+Şöyle kaydıralım. RL, RLC devreler için kaynak olmayan, kaynaksız ve kaynaklı devreler için çözümü elde etmiş olduk. Burada özel senaryolar ne olabilir?
+
+340
+01:03:46,771 --> 01:04:14,771
+Devremizde iki tane kaynak olabilir. Farklı zamanlarda devreye giren kaynaklar olabilir. Burada devre teorisi teoremlerinden faydalanarak bunlara çözüm yapabiliriz. Nasıl örneğin? İki kaynağımız var. Bunlardan birisi T0 anda, birisi T1 anda devreye giriyor. Süperpozisyon mantığını kullanıyoruz. Süperpozisyon mantığında sadece kaynaklardan birisi var. Birisi için çözüm elde ediyoruz. Onu koyuyoruz kenara. Dine RT kullanarak. Daha sonra sadece ikinci kaynak devredeyken yine çözüm elde ediyoruz. Zorlanmış.
+
+341
+01:04:14,771 --> 01:04:34,151
+İki tane zorlanmış çözümün toplamı bizim nihai çözümümüz olacak. Bu şekilde genişletebiliriz. Bir de bizim burada görmüş olduğumuz çözümler, bakın ne oluyor? T eşittir, bir T sıfır anında devreye bir kaynak veriyoruz. Yani aslında bizim vermiş olduğumuz kaynaklar arkadaşlar, şöyle aşağı doğru kayabiliyorsak.
+
+342
+01:04:34,943 --> 01:04:43,044
+Bizim devreye vermiş olduğumuz kaynaklar genellikle şöyle bir takım fonksiyonlar oluyor. Bunu gerilim için yaptık.
+
+343
+01:04:43,044 --> 01:04:54,764
+Bir T0 anına kadar devrede yok. Daha sonra devreye girdik. Veya başka bir durum elde ettik. Pardon bu T'ydi. Şunu T yapalım.
+
+344
+01:04:56,564 --> 01:05:00,704
+T'ye Vs gerilimimiz. Veyahut da şunu yaptık.
+
+345
+01:05:00,992 --> 01:05:03,992
+Uzun bir süre boyunca devredeydi.
+
+346
+01:05:05,392 --> 01:05:07,332
+T0'ını da devreden kaldırdık.
+
+347
+01:05:07,432 --> 01:05:09,092
+Tamam, T0'a denk getireydik ama.
+
+348
+01:05:11,272 --> 01:05:13,172
+Daha sonra devreden kalktı.
+
+349
+01:05:14,072 --> 01:05:15,132
+Zamana bağlı vs.
+
+350
+01:05:15,392 --> 01:05:21,552
+İşte gördüğünüz gibi bu tür fonksiyonlar arkadaşlar, bunlar unit step function olarak isimlendiriyor.
+
+351
+01:05:21,972 --> 01:05:24,251
+Unit step function.
+
+352
+01:05:25,412 --> 01:05:26,392
+Baktığınız zaman,
+
+353
+01:05:26,719 --> 01:05:34,459
+Bir süreksizliği var, bir süreksizliği var ve türevini aldığımız zaman sonsuzlu durumlar oluşabiliyor.
+
+354
+01:05:34,979 --> 01:05:39,119
+Fakat gördüğünüz gibi diferansiyel denklem yaklaşımında kullanabilir olduk.
+
+355
+01:05:39,199 --> 01:05:48,399
+Dolayısıyla burada özel bir konu olarak özel fonksiyonlar dediğimiz, özel fonksiyonlar konusuna bir gireceğiz.
+
+356
+01:05:48,399 --> 01:05:53,999
+Bu özel fonksiyonlardan kasıt, şimdi unit step function verdik ya, bunun türevi integrali.
+
+357
+01:05:55,315 --> 01:05:59,235
+Türev, İntegral. Bunun türevi ne olur arkadaşlar?
+
+358
+01:06:00,255 --> 01:06:03,355
+Bunun türevi. Mesela her ikisi için de düşünelim.
+
+359
+01:06:08,179 --> 01:06:13,519
+Mesela birinci için düşünecek olursak ne olacak? Şurada bir vs değerimiz var.
+
+360
+01:06:17,972 --> 01:06:43,652
+T0 anında bir dürtü fonksiyonu olarak tanımlayabileceğimiz bir durum. Şöyle bir ok işaretiyle gösteriliyor. Bu bizim Vs'nin türevi olsun. Böyle bir senaryo. Bakın 0'dan bir pozitif Vs değerini çıktı. Yani buradaki değişik pozitif. Şunu ekleyecek olsak nasıl olacağım? Onu ekleyecek olsak da arkadaşlar.
+
+361
+01:06:44,179 --> 01:06:54,379
+Vs'nin türevi, T'ye bağlı fonksiyon, T0 anında aşağı yönlü bir yine impuls, impuls olarak isimlendiriliyor bu.
+
+362
+01:06:56,779 --> 01:07:03,179
+Türevi bu şekilde bir fonksiyona karşılıklı. İntegralini alıyor olsak ne olacak? İntegralini alıyor olsak bu sefer,
+
+363
+01:07:11,664 --> 01:07:16,664
+sıfırda sıfırda geliyor, T sıfırdan itibaren bir rampart fonksiyonu oluşturuyor.
+
+364
+01:07:18,423 --> 01:07:26,744
+İkinci fonksiyonun türevini, integralini alacak olsak ne olur? İkincinin, ikincinin, pardon şöyle yazalım.
+
+365
+01:07:29,104 --> 01:07:34,224
+İkincinin integralini alsak, bakın ne, eksi sonsuzdan itibaren,
+
+366
+01:07:34,963 --> 01:07:58,784
+Geliyor, geliyor, geliyor, artıyor, artıyor, artıyor. İntegral ala ala gelmiş. Belirli bir noktadan sonra sabitlenmiş. Yani onu da şöyle çizebiliriz. Biz T0 anında şöyle çizebiliriz bunu. Vs'nin integrali diyelim. T'ye bağlı olarak. Dolayısıyla arkadaşlar bizim burada görmüş olduğumuz fonksiyonlar, yani Singularity Function dediğimiz durumlar.
+
+367
+01:07:59,572 --> 01:08:06,312
+Birim basamak fonksiyonu, bunun integrali ve türevlerini birbirleri cinsinden nasıl yazabiliriz?
+
+368
+01:08:06,432 --> 01:08:14,572
+Onunla ilişkin bir senaryo. Dolayısıyla bir özel durum olarak buna tekrar gireceğim ama kısa bir açıklama olarak vermiş olalım şimdilik.
+
+369
+01:08:16,051 --> 01:08:26,772
+Birim basamak fonksiyonunun işte değere çıkması, değerden inmesi, integralleri, türevleri ve bunlar birbirleri cinsinden nasıl yazılıyor?
+
+370
+01:08:27,199 --> 01:08:40,960
+Bu konuya bir parantez açıp değineceğiz. Ama şimdilik bir ara verelim. Aradan sonra şuna geçeceğiz arkadaşlar. Aradan sonra RLC devrelerine bir bakıyor olacağız. Şöyle yukarı doğru kaydırabilirsem eğer bunu.
+
+371
+01:08:47,188 --> 01:09:10,868
+Şimdi RLC devrelerine bir bakıyor olacağız. Kaynaksız RLC devreleri, seri ve paralel RLC devresine bakacağız. Daha sonra kaynaklı RLC devresini inceleyeceğiz ve bunlara göre çözüm elde edeceğiz. Daha sonrasında dönüp az önce açtığımız parantezi tamamlayacağız. Yani singularity function, yani özel fonksiyonları ele alacağız. Şimdilik bir ara veriyoruz. Buraya kadar olanlarla ilgili sormak istediğiniz bir şey var mı?
+
+372
+01:09:12,467 --> 01:09:33,048
+Buraya kadar olanlarla ilgili sormak istediğim bir şey var mı arkadaşlar? Genel olarak anlaşıldı mı? Önemli çünkü. Özellikle sanırım büyük ihtimalle kısa sınav falan bu konular ağırlıklı olacak. Anlaşıldı mı bunlar? Dediğim gibi biraz örneklerle de çeşitlendirmeye çalışırız.
+
+373
+01:09:34,868 --> 01:09:53,868
+Tamamdır. Peki. Şimdi o zaman arkadaşlar bir 15 dakika ara verelim. 25 geçe tekrar geri döneceğiz. Aldığımız noktada da RLC devrelerine ilişkin benzer çözümlemeleri yapmaya çalışacağız. Sonrasında da işte farklı senaryolar ve özel fonksiyonlara bakmaya çalışacağız. Chat tarafına da yazayım. 25 geçe devam ediyorum diye.
+
+374
+01:10:03,636 --> 01:10:05,676
+Aradan sonra görüşürüz arkadaşlar.
+
+375
+01:10:06,156 --> 01:10:07,476
+Şunları sonlandırayım.
+
+376
+01:26:42,323 --> 01:26:43,603
+Arkadaşlar, merhabalar tekrar.
+
+377
+01:26:44,243 --> 01:27:02,763
+Şimdi, geçen dersteki bu Windows'da, Whiteboard'da yapmış olduğumuz çizimleri ben paylaştım. Şimdi, ikinci derste de benzer şekilde paylaşacağım. İkinci derste de bu bizim grafimizin ikinci tarafı, yani RLC devrelerinin source free, yani kaynaksız ve kaynaklı olan durumlarını ele alacağız.
+
+378
+01:27:02,763 --> 01:27:12,243
+Tabii biz burada hem geçen derste hem şimdiki derste göreceğimiz senaryolar bu RL, RC ve RLC devrelerinin özel birer halini.
+
+379
+01:27:12,243 --> 01:27:22,963
+Yani paralel bir RLC devresi, paralel bir seri bir RLC devresi, çok karmaşık olmayan bir RLC devresi, çok karmaşık olmayan bir RLC devresi üzerinden gördük.
+
+380
+01:27:22,963 --> 01:27:31,643
+Fakat bunları herhangi bir karmaşıklık seviyesindeki devreye genişletebiliyor olacağız. Nasıl yapacağız bunu? Bizim ihtiyacımız olan ney demek ki burada?
+
+381
+01:27:34,131 --> 01:27:59,191
+Kapasite veya endüktans elemanı için, RL ve RC için bahsediyorum. Kapasite ve endüktans elemanı için source free durumda. Demek ki belirli bir süre boyunca kaynak bağlı kalmış sonra bu kaynak kaldırılmış ve başlangıç koşulları oluşturulmuş. Bu karmaşık devreyi DC şartlarda çözüp C ve L elemanları için başlangıç durumlarını hesaplayacağız. C elemanı için gerilim, L elemanı için akım değerlerini hesaplayacağız. Bu bizim başlangıç durumlarımızı oluşturacak.
+
+382
+01:27:59,444 --> 01:28:17,244
+Aynı şey RLC devresi içinde geçer. Orada da göreceğiz şimdi. Bizim aslında ihtiyaç duyduğumuz iki tane başlangıç koşulu var. Başlangıç koşullarını biz basit devreler için yapıyor, çözüyor olacağız. Fakat herhangi bir karmaşıklılık devre içinde benzer şekilde diyeceğiz ki ilgilendiğimiz elemanın.
+
+383
+01:28:18,228 --> 01:28:36,007
+Akım veya gerilim değerine ilişkin olarak hem akımın veya gerilim, yani fonksiyonun belirli bir zamandaki değerine ihtiyacımız var. İkincisi de fonksiyonun belirli bir zamandaki türevine ihtiyacımız var diye olacağız. Ve bunu da herhangi bir karmaşıklıktaki devre için çözebiliyor olacağız arkadaşlar.
+
+384
+01:28:36,007 --> 01:28:41,768
+Şimdi geçen dersten kaldığımız noktada devam edelim. Ne demiştik geçen dersle ilgili olarak?
+
+385
+01:28:44,659 --> 01:28:51,100
+Parantez açmıştık. Singularity Functions, özel fonksiyonlar için. Onu daha kapatmadık. Biraz sonra tekrar gireceğiz.
+
+386
+01:28:51,100 --> 01:29:02,819
+2. RL, RLC'yi kaynaksız ve kaynaklı olarak çözdük. Şimdi de RLC devrelerini paralel ve seri kaynaksız devreler, daha sonrasında da kaynaklı devreler olarak çözmeye çalışacağız.
+
+387
+01:29:03,340 --> 01:29:09,299
+Şimdi o zaman birinci başlığımızı şöyle atabiliriz. Kaynaksız, şöyle diyelim.
+
+388
+01:29:12,148 --> 01:29:16,968
+Kaynaksız seri, RLC devresi.
+
+389
+01:29:23,572 --> 01:29:24,231
+Tevbe de ser.
+
+390
+01:29:24,627 --> 01:29:51,528
+Kaynaksız bir seri RLC devresi olduğu için arkadaşlar burada bizim iki tane başlangıç koşuluna ihtiyacımız var. Bir seri RLC devresi için oluşacak başlangıç durumları iki şey için olabilir. Birincisi bir kapasite elemanının T0'daki gerilim değeri bir A diyelim bir A kat sayısı olabilir. İkincisi ise enduktans elemanının T0'daki akım değeri belirli bir değere sahip olabilir.
+
+391
+01:29:52,627 --> 01:30:00,827
+O zaman VC ile İ ile seri bir RLC devresine birbirine göre türevli olarak bağlı. Dolayısıyla biz burada iki başlangıç koşulluğunu oluşturmuş olduk.
+
+392
+01:30:00,927 --> 01:30:05,608
+Fonksiyonun kendisi ve fonksiyonun türevi üzerinden bir bağlantı oluşturmuş olduk.
+
+393
+01:30:06,007 --> 01:30:08,807
+Şimdi buradaki mantığı şu devre üzerinden analiz edelim.
+
+394
+01:30:09,847 --> 01:30:17,108
+Devremiz bir kaynaklı devre. Uzun süre boyunca bu kaynak etki edecek. Daha sonra bu kaynağı devreden kaldırıyor olacağız.
+
+395
+01:30:17,108 --> 01:30:19,368
+Şöyle bir parça çizelim.
+
+396
+01:30:20,500 --> 01:30:35,720
+Burada anahtarımız olacak. Seri RLC devresi olduğu için, R elemanımız, Endüktans elemanımız, sonrasında da kapasite elemanımız mevcut. Bunları getirip bağladık.
+
+397
+01:30:35,720 --> 01:30:45,460
+Şöyle bağlayalım. Anahtarımızı da şöyle çizelim.
+
+398
+01:30:46,323 --> 01:30:56,384
+Anahtarın menteşesi şurada. Uzun süre boyunca A konumunda kalıyor. Daha sonra anahtarımız burada görmüş olduğunuz B konumuna geliyor.
+
+399
+01:30:57,003 --> 01:31:02,783
+Dolayısıyla devredeki Vs gerilimimiz uzunca bir süre boyunca burada inişli kondisyonları oluşturuyor.
+
+400
+01:31:12,787 --> 01:31:19,047
+Daha sonra T büyük eşit T0 için anahtar B'ye geçiyor.
+
+401
+01:31:19,447 --> 01:31:20,867
+Veya B'de diyebiliriz buna.
+
+402
+01:31:23,167 --> 01:31:24,747
+Böyle bir senaryo.
+
+403
+01:31:25,728 --> 01:31:30,287
+Kaynaksız olacak çünkü anahtar durum değiştirdikten sonra devrede kaynak kalmayacak.
+
+404
+01:31:30,927 --> 01:31:34,867
+Devredeki akım gerilim değişimleri neyle sağlanacak peki kaynaksız durum için?
+
+405
+01:31:34,867 --> 01:31:40,207
+En dükkans elemanın depolamış olduğu enerji ve kapasite elemanın depolamış olduğu enerji.
+
+406
+01:31:40,623 --> 01:31:48,623
+direnç elemanı üzerinden harcanacak ve dolayısıyla belirli bir başlangıç değerinden itibaren bir azalma göstermesini bekleyeceğiz.
+
+407
+01:31:48,703 --> 01:31:52,344
+Ama burada tabii özel durumlar var. Onları ele almaya çalışacağız.
+
+408
+01:31:53,304 --> 01:32:01,163
+Şimdi initial condition'ları belirleyelim burada. Devremiz şu A konumundayken oluşacak durumlara bakalım.
+
+409
+01:32:01,304 --> 01:32:05,963
+Nedir? Endüktans elemanı kısa devre, kapasit elemanı açık devre olarak çalışıyor.
+
+410
+01:32:07,007 --> 01:32:15,947
+ÖL, T0 anda kapandığı için, T0 eksi anında ÖL akım değerimiz nedir? Bu bizim aradığımız birinci başlangıç koşulu nedir?
+
+411
+01:32:17,728 --> 01:32:23,228
+Hemen cevabı yapıştırdık, sıfır olarak, evet sıfır oldu. Çünkü açık devre var burada, sıfır oldu.
+
+412
+01:32:23,927 --> 01:32:34,447
+İkinci başlangıç koşulumuz ne? O da VC, T0 eksi. Yani T0'dan hemen önceki anda gerilim değerimiz neye eşit? O da VS gerilimimiz eşit.
+
+413
+01:32:34,752 --> 01:33:01,032
+Akım akmıyor. Buradaki ÖLE sıfır. ÖLE sıfır olduğu için gerilimi sıfır. Türevinden geliyordu hatırlayalım. Akım akmıyor. VR sıfır. Sadece şunda bir gerilim düşümü var. O da Vs'ye eşit olacak. İki başlangıç koşulumuzu belirlemiş olduk. T eşittir. T sıfırdan büyük eşit için eşdeğer devremizi çizelim şimdi. Eşdeğer devremiz şuna eşit olacak.
+
+414
+01:33:03,252 --> 01:33:29,032
+R'miz var, L'miz var, C'miz var. Böyle bir devre. R, L, C devresi. Burada yazabileceğimiz şeyler, ana kol akımı I. I eşittir, I, R eşittir, I, C eşittir, I, L diyebiliriz. Ve benzer şekilde V, R artı, V, L artı, V, C eşittir, sıfır diyebiliriz.
+
+415
+01:33:29,555 --> 01:33:45,635
+Şimdi burada elemanların tanım bağıntısını da kullanarak şöyle diyeceğiz. R çarpı R artı VL gerilimimizi nasıl yazabilir? Şimdi endüktans elemanın tanım bağıntısına gelelim. Ne diyordu bu tanım bağıntısı?
+
+416
+01:33:53,652 --> 01:34:08,452
+Hatta şunu, I, L diyelim, böyle bir terimdi. O zaman bunu getirip yerine yazalım. L çarpı D, I, L bölü, D, T, artı, VC gerilimi için ne diyeceğiz? VC gerilimi için de şunu diyebiliriz.
+
+417
+01:34:10,391 --> 01:34:21,231
+IC, D, T eşittir, C çarpı, V, C diyebiliriz değil mi? Şu Q, Q, C, C çarpı, V, C idi.
+
+418
+01:34:21,716 --> 01:34:38,516
+Dolayısıyla VC'yi çektiğimiz zaman, VC eşittir, 1 bölü C, integral, IC, DT diyebiliriz. Onu da getirip yerine yazalım. 1 bölü C, integral, IC, DT eşittir, sıfır diyebiliriz.
+
+419
+01:34:47,252 --> 01:34:57,812
+İle üzerinden hareket etmiş olsak ne diyebiliriz? Burada kapasite gerilimi cinsinden, akım cinsinden değil de gerilim cinsinden yasak daha mı iyi olur diye düşünüyorum.
+
+420
+01:34:58,972 --> 01:35:03,372
+Evet, akım cinsinden değil de gerilim cinsinden yazalım. Hemen şöyle bir düzeltme yapalım buna da.
+
+421
+01:35:05,372 --> 01:35:10,152
+Bunu bu şekilde yazmayacağım. Gerilimler cinsinden yazacağım.
+
+422
+01:35:14,131 --> 01:35:15,091
+Şöyle yazalım.
+
+423
+01:35:17,591 --> 01:35:19,351
+VR dediğim şey, pardon.
+
+424
+01:35:21,951 --> 01:35:24,531
+IR çarpı R değerimiz.
+
+425
+01:35:25,131 --> 01:35:31,531
+Gerilim cinsinden bunu yazabilmek için, IR'yi bir gerilim terimi cinsinden yazabilmek istiyorsak ne diyebiliriz mesela?
+
+426
+01:35:34,644 --> 01:35:53,844
+IC akımımız niye eşittir? C çarpı DVC bölü DT'ye eşit. Mesela bunu IC'yi bu şekilde yazabiliriz. IC, IR'ye eşit olduğu için bu terim yerine de o zaman getirip RC, VC'nin türevi yazabiliriz.
+
+427
+01:35:56,148 --> 01:36:21,288
+Şimdi VL için de yazacağız. VL için de şunu yazabiliriz. Fi eşittir, L çarpı İ idi. Dolayısıyla ÜL diyelim, FiL diye. Bunun her iki tarafın türemini alacak olursak, VL, L çarpı, DİL bölü, DT şeklinde yazabiliriz. Buradan hangisini alabiliriz buradan? Yine ÜL'li bir terim geliyor.
+
+428
+01:36:24,564 --> 01:36:36,844
+VL terimi, hangisi cinsinden yasak? Akım cinsinden yasak daha mı iyiydi acaba ya? Tekrar bir bakalım.
+
+429
+01:36:38,644 --> 01:36:45,844
+UC'li terim geldi buradan. VC'li terimin kendisi gelecek. Burada VC'nin bir...
+
+430
+01:36:49,395 --> 01:37:15,415
+İkinci dereceden türevi geldi. Tamam, şöyle yapabiliriz. Bakın, VL terimi, L çarpı DIL bölü DT. Aynı zamanda ÜL, ÜC'ye eşit. Dolayısıyla şu terimi de buraya getirebilirim. O zaman L çarpı C çarpı neyin türevi? DVC bölü DT'nin ikinci türevi. O zaman şunu diyebiliriz işte.
+
+431
+01:37:15,699 --> 01:37:37,260
+LC çarpı VC'nin ikinci dereceden türevi diyebiliriz. Getirip onu da yazacak olursak buraya, LC çarpı VC'nin ikinci dereceden türevi artır, VC eşittir, 0 diye düzenleyebiliriz. Burada nasıl yazdığımızı, şu VL'yi şuradan çıkarttık, VC'yi de olduğu gibi kullandık.
+
+432
+01:37:38,039 --> 01:37:43,100
+Tekrar VL'yi nasıl elde ettiğimize bakalım. VL, L çarpı D ile bölü DT'ydi.
+
+433
+01:37:43,859 --> 01:38:10,319
+İL, İC'ye eşit. İC'de kapasite geriliminin türevi çarpı C'ye eşit. Onu getirdik. İL yerine İC yazdık. Sabit derim C dışarı çıkabilir. VC'nin türevinin türevi oldu. Yani ikinci dereceden türevi oldu. Şimdi bunu düzenleyecek olursak, şöyle çizelim. Burayı düzenleyecek olursak, şunu yazabiliriz. En yüksek anlamlı terimi.
+
+434
+01:38:10,752 --> 01:38:14,432
+Tek başına bırakacak bir şekilde, şöyle yazabiliriz.
+
+435
+01:38:15,572 --> 01:38:20,412
+VC'nin ikinci dereceden türevi, her tarafı, LC'ye bölüyoruz şimdi.
+
+436
+01:38:21,272 --> 01:38:24,472
+Artı, RC bölü LC, ne kaldı?
+
+437
+01:38:24,532 --> 01:38:27,072
+R bölü L kaldı, VC üstü.
+
+438
+01:38:27,732 --> 01:38:31,332
+Artı, VC bölü RC eşittir.
+
+439
+01:38:32,152 --> 01:38:33,952
+Sıfır değerini elde etmiş olduk.
+
+440
+01:38:34,420 --> 01:38:40,420
+Şimdi şeyden bir kontrol edelim seri devreler için.
+
+441
+01:38:41,840 --> 01:38:42,619
+Neredeydi?
+
+442
+01:38:47,679 --> 01:38:50,699
+Yazdığımız denklem sağlanıyor mu diye.
+
+443
+01:38:55,412 --> 01:39:22,731
+Evet, R bölü L, bir bölü L, C, V, C. Biz de L, C'ye bölecektik. Her tarafı L, C'ye bölecektik. Evet, iyi ki bakmışız. Bakın, kat sayısı L, C, her tarafı L, C'ye bölecektik. Yanlışlıkla buraya R, C'ye yazmışız. L, C olacak. Şimdi bakalım. R bölü L, bir bölü L, C. Tamam. Şimdi buraya kadar geldik.
+
+444
+01:39:23,604 --> 01:39:33,163
+Bakın burada da bu daha önceki RL ve RC devrelerinde izlediğimiz senaryoya benzer bir durum. Burada neye bakacağız? Burada şuna bakacağız arkadaşlar.
+
+445
+01:39:33,163 --> 01:39:35,344
+Şimdi.
+
+446
+01:39:35,792 --> 01:39:54,171
+Bir fonksiyon var. Bu fonksiyonun zamana bağlı bir fonksiyon. İkinci dereceden türevi, birinci dereceden türevi ve kendisi birbirlerine bir takım sabit değerler üzerinden lineer bağımlı var. Yani bizim yine burada aradığımız fonksiyon aslında türevi kendisine benzeyen bir fonksiyon.
+
+447
+01:40:00,000 --> 01:40:14,279
+Bu şekilde oluyor. T0 anında anahtar kapandığı için ona dikkat edeceğiz bu sefer. Yine A çarpı E üzeri alfa T, T-T0 şeklinde bir fonksiyon önerisinde bulunacak.
+
+448
+01:40:14,720 --> 01:40:26,220
+Yalnız buradan ikinci dereceden bir türev olduğu için alfaya bağlı ikinci dereceden bir denklem çıkacak. Şimdi bu önerimizi yerine yazalım. A çarpı E üzeri alfa T-T0 ikinci dereceden türevinde olur.
+
+449
+01:40:26,771 --> 01:40:39,072
+A çarpı, alfa, bir daha alfa gelecek, alfa kare, çarpı, kareyi güzel yazamadım, alfa kare, yani bunun iki kere türemini alırsak E'ye bağlı, alfa gelir, bir daha alfa gelir, alfa kare.
+
+450
+01:40:39,552 --> 01:40:46,851
+E üzeri, alfa, T eksi, T sıfır. Bunu yazdık. Artı, R bölü L.
+
+451
+01:40:47,859 --> 01:41:07,119
+VC'nin birinci dereceden türevi, A çarpı alfa, E üzeri alfa, T eksi, T sıfır gelir. Artı, bir bölü LC çarpı, A çarpı, E üzeri alfa, T eksi, T sıfır eşittir, sıfır denklemimizi elde etmiş olur.
+
+452
+01:41:07,119 --> 01:41:14,300
+Burada, A çarpı, büyük A çarpı, E üzeri alfa, T eksi, T sıfır parantezini alacak olursak.
+
+453
+01:41:14,739 --> 01:41:24,259
+Alfa kare, R bölü L alfa, artı, bir bölü LC eşittir sıfır şeklinde yazabiliriz.
+
+454
+01:41:24,899 --> 01:41:28,759
+A sıfır olursa trivial çözüm, hiçbir akım gerilim değeri yok.
+
+455
+01:41:29,499 --> 01:41:33,999
+E üzeri alfa T sıfıra gitmiyor zaten. Sıfıra gidebilecek olan tek yer burası.
+
+456
+01:41:34,739 --> 01:41:37,139
+O zaman buna göre denklemimizi yazacak olursak,
+
+457
+01:41:37,844 --> 01:41:53,264
+İki tane alfa çıkıyor, dikkat edecek olursanız burada. Alfa 1 ve alfa 2 olarak iki alfa çıkacak. İkinci dereceden bir kuadratik fonksiyon. Kaç tane kökü var? İki tane kökü vardır. O zaman bunları alfa 1 ve 2 eşittir. Nasıl hesaplıyorduk?
+
+458
+01:42:03,667 --> 01:42:20,768
+R kare bölü L kare, B kare, eksi 4 çarpı A1, bölü LC, kuadratik fonksiyonun köklerini bu şekilde buluyor. Bölü 2A, A da 1. O zaman elde ettiğimiz çözümler bunlar oldu şu anda.
+
+459
+01:42:29,684 --> 01:42:39,023
+İkiyi içeri atacak olursak dört olur değil mi? Dolayısıyla, pardon bir bölü iki olarak gelecek.
+
+460
+01:42:40,243 --> 01:42:48,104
+R kare bölü dört L kare eksi bir bölü LC diye bir değer elde etmiş olur.
+
+461
+01:42:48,403 --> 01:42:54,423
+Burada arkadaşlar bir düzenleme yapıp, bu köklerimiz var ya, bu köklerimize ilişkin olarak,
+
+462
+01:42:55,123 --> 01:42:58,103
+Şöyle bir şeyden bahsedebiliriz.
+
+463
+01:42:59,283 --> 01:43:13,123
+R bölü 2L'ye S desek, 1 bölü kök LC'ye de Omega desek, sanki denklemimiz şuna dönüştü.
+
+464
+01:43:20,532 --> 01:43:24,492
+S kare eksi omega kareye dönüşmüş oldu.
+
+465
+01:43:25,352 --> 01:43:34,972
+S ne, S şu, R'yi, L'yi biliyoruz. Burada da iki kat sayımız var. Dolayısıyla S belli. Bir bölü kök LC, omega da belli.
+
+466
+01:43:36,872 --> 01:43:42,452
+O zaman bizim aslında iki tane kat sayımız, alfa kat sayımız çıkıyor, dikkat edecek olursanız.
+
+467
+01:43:44,979 --> 01:44:11,619
+Biraz değişmiş oldu. Bizim önerdiğimiz sözüm bir taneydi. A çarpı E üzeri alfati idi. Ama iki tane varmış. Demek ki bizim denklemimiz, hani V, C, T, Y ilişkin denklemimiz hem A çarpı E üzeri eksi S artı S kare artı, pardon eksi idi, omega kare T.
+
+468
+01:44:12,079 --> 01:44:27,340
+Hem bunu sağlayacak alfa T, hem de V, C, T, başka bir kat sayı, illa aynı kat sayı olmak zorunda da değil, E çarpı, eksi, S eksi, S kare artı omega kare T.
+
+469
+01:44:27,500 --> 01:44:31,619
+Bu iki fonksiyonu da sağlıyormuş bizim diferansiyel denkler.
+
+470
+01:44:31,619 --> 01:44:35,372
+O zaman biz lineariteden biliyoruz ki,
+
+471
+01:44:35,507 --> 01:44:42,448
+Bu denklemi sağlıyorsa ve bu da denklemi sağlıyorsa aslında en genel çözüm bu ikisinin birleştirilmiş hali olmalı.
+
+472
+01:44:42,448 --> 01:44:58,448
+Ve aslında bizim V, C, T denklemimiz bir A kat sayısı çarpı E üzeri eksi S artı kök S kare eksi omega kare T artı bir B kat sayısı çarpı.
+
+473
+01:44:58,448 --> 01:45:00,448
+Bir de kayıralım.
+
+474
+01:45:03,060 --> 01:45:09,500
+Bir B kat sayısı çarpı E üzeri, eksi S'yi yanlış mı yazdık?
+
+475
+01:45:09,579 --> 01:45:13,859
+Şu eksi S, bunu şöyle düzenleyelim, bozmayalım.
+
+476
+01:45:17,079 --> 01:45:21,500
+Eksi S, artı mı demiştik? Artı demiştik, şöyle alalım.
+
+477
+01:45:28,148 --> 01:45:31,768
+T şeklinde en genel halinde bunu yazabiliriz.
+
+478
+01:45:32,407 --> 01:45:36,268
+Şimdi burada arkadaşlar bu en genel çözümümüzün özel durumları var.
+
+479
+01:45:36,527 --> 01:45:40,007
+Şimdi biz tekrar yukarı çıkalım şurada.
+
+480
+01:45:40,847 --> 01:45:41,847
+Şöyle yukarı çıkalım.
+
+481
+01:45:42,067 --> 01:45:44,287
+Önerdiğimiz çözüm şöyle bir çözümdü.
+
+482
+01:45:44,387 --> 01:45:46,867
+Burada iki tane alfa çıktı, iki tane kök çıktı.
+
+483
+01:45:46,987 --> 01:45:48,987
+O yüzden çözümümüzü genelleştirdik.
+
+484
+01:45:49,395 --> 01:46:10,996
+Her iki kökü içerecek şekilde de biz denklem çözümümüzü genişlettim. Büyük A ve büyük B nereden bulunacak? Bizim initial conditionlarımızdan. Initial conditionlarımız neler? Şurada ÖLT0, 0 ve VCT0, VS olmak üzere iki tane başlangıç durumumuz var. Ama asıl bizi ilgilendiren şu alfanın durumları.
+
+485
+01:46:18,452 --> 01:46:34,271
+S kare eksi omega kare büyüktür. Sıfır ise bizim alfa 1 ve alfa 2 ayrık real köklerimiz. Değil mi?
+
+486
+01:46:38,676 --> 01:47:02,155
+Yani burada, eksi S artı kök, S kare, eksi omega kare ile bunun eksilisi, artılı ve eksil versiyonun farklı iki tane kat sayı olmuş oldu. O zaman bizim çözümümüz iki tane E üzeri alfalı terim. Bunların çarpımı. Bu çözümlerden birisi. O zaman çözüm önerimiz V, C, T.
+
+487
+01:47:03,667 --> 01:47:06,587
+Herhangi bir değişiklik yapmama gerek yok.
+
+488
+01:47:07,648 --> 01:47:14,948
+A çarpı E üzeri alfa 1T artı A çarpı şey B diyelim.
+
+489
+01:47:15,608 --> 01:47:19,307
+B çarpı E üzeri alfa 2T şeklinde değer alıyor.
+
+490
+01:47:19,307 --> 01:47:26,688
+Alfa 1 ve alfa 2 R sayılar ve aynı zamanda alfa 1, alfa 2 eşit değil.
+
+491
+01:47:27,908 --> 01:47:29,887
+Birinci çözümümüz bu şekilde bir çözüm.
+
+492
+01:47:30,228 --> 01:47:48,748
+İkinci çözümümüz ise şu arkadaşlar. Eğer ki S kare eksi omega kare eşit sıfır oluyorsa, yani S kare omega kareye eşitse, S omega'ya eşitse, bu durumda alfa bir alfa ikiye eşit çıkıyor.
+
+493
+01:47:56,692 --> 01:48:14,531
+T'ye bağlı fonksiyonun toplamı şeklinde yazılması lazım. O zaman şuna geliyoruz arkadaşlar. O zamanki çözümümüz farklılaşıyor. Çözüm önerimiz farklılaşıyor. Şunu demek zorunda kalıyoruz. Niye gelmeli? O zaman çözüm önerimizi şu hale getirmeye zorunda kalıyoruz.
+
+494
+01:48:22,323 --> 01:48:47,023
+B çarpı T çarpı E üzeri alfa T demek zorunda kalıyor. İki farklı T'ye bağlı fonksiyon olması gerektiği için bunu bu şekilde yazmamız gerekiyor. Peki bu çözüm bizim denklemimizi sağlıyor mu? Bizim denklemimiz neydi? Hemen şuradan yukarı çıkalım birazcık alalım bunu. Bizim denklemimiz şu denklem.
+
+495
+01:48:53,779 --> 01:48:55,199
+Nasıl alabiliyoruz?
+
+496
+01:49:01,332 --> 01:49:03,092
+Tek tek seçti mesela.
+
+497
+01:49:10,131 --> 01:49:13,011
+Shift'den oluyormuş. Denklemimiz bu.
+
+498
+01:49:29,268 --> 01:49:30,668
+Niye oraya bırakıyorum onu?
+
+499
+01:49:31,788 --> 01:49:33,888
+Şöyle birerce yukarı kaydırağını tekrar.
+
+500
+01:49:43,891 --> 01:49:56,971
+Denklemimiz buydu değil mi? Bu denklemi sağlayıp sağlamadığına bakalım şimdi. Yani E üzeri alfa T, T çarpı E üzeri alfa T ile de linear bağımsızmış demiş oluyoruz burada.
+
+501
+01:49:57,251 --> 01:50:05,831
+Şimdi bunun iki tane T'ye bağlı fonksiyon olması gerektiği için bu şekilde yazmak zorunda kaldık. Bunu yerine koyup deneyelim.
+
+502
+01:50:06,311 --> 01:50:10,711
+Şimdi birinci şey, terim bunun ikinci dereceden türevi. Ne olacak yani?
+
+503
+01:50:11,188 --> 01:50:37,027
+A çarpı, birincinin türevi ne gelecek? Alfa kare gelecek. Çarpı E üzeri alfa T gelecek. Daha sonra şu ikincinin ikinci dereceden türevinden ne gelir? Birinci dereceden türevi nedir bunun? Birinci dereceden türevi E üzeri alfa T artı T çarpı alfa E üzeri alfa T gelir.
+
+504
+01:50:37,427 --> 01:51:04,847
+Bunun ikinci dereceden türevi ne olacak? Bunun da ikinci dereceden türevi şu olacak. B çarpı E üzeri alfa T, şöyle alalım. B'yi dışarı attık. Bir daha bunun türevini alıyoruz. Ne gelir? Alfa çarpı E üzeri alfa T gelir. Artı alfa çarpı E üzeri alfa T, artı T çarpı bir daha alfa gelecek buradan.
+
+505
+01:51:05,344 --> 01:51:28,583
+Alfa kare, E üzeri alfa T gelir. Şu, birinci türevi, bu ikinci türevi. İkinci türevi de getirip yerine yazalım. B çarpı alfa E üzeri alfa T artı, bundan iki tane varmış bakın, iki tane geldi. Artı B çarpı T çarpı alfa kare E üzeri alfa T.
+
+506
+01:51:30,100 --> 01:51:48,380
+Bu ikinci türev. Artı R bölü L, birinci dereceden türevi var. A çarpı alfa E üzeri alfa T artı R bölü L. Şunu yazacağız. B çarpı E üzeri alfa T artı R bölü L.
+
+507
+01:51:54,612 --> 01:52:07,512
+R bölü L, B çarpı, şuradaki teri, T çarpı, alfa, E üzeri, alfa, T. Sonra da, Vc bölü, Lc var. O da, 1 bölü, Lc.
+
+508
+01:52:11,220 --> 01:52:22,460
+A çarpı E üzeri alfa T, artı bir bölü LC, B çarpı T çarpı E üzeri alfa T. Terimlerimiz bunlar.
+
+509
+01:52:23,239 --> 01:52:30,039
+Şimdi burada E üzeri alfa T parantezini alacak olursak,
+
+510
+01:52:35,667 --> 01:52:44,727
+A çarpı alfa kare, burada var, burada var, ha gerçi T'de varmış orada, T'leri ayrı koyalım.
+
+511
+01:52:45,767 --> 01:52:47,847
+Şimdi evzeleri alfa T'leri alalım sadece.
+
+512
+01:52:49,987 --> 01:53:00,187
+2BA alfa, R bölüle A çarpı alfa, R bölüle B,
+
+513
+01:53:03,988 --> 01:53:30,468
+Telleri almıyorum şimdilik. Şunu da böyle alalım. Artı bir bölü LCA terim var. Artı T çarpı E üzeri alfa T parantezinde. Şu var. B alfa kare. Ondan sonra bir tane de terim nerede vardı? Şurada var.
+
+514
+01:53:31,572 --> 01:53:35,731
+Artı, R bölü L, B, Alfa.
+
+515
+01:53:37,292 --> 01:53:41,251
+Şimdi, Alfa dediğimiz parametre neye eşit arkadaşlar?
+
+516
+01:53:41,492 --> 01:53:42,891
+Alfa dediğimiz parametre, bakın.
+
+517
+01:53:43,912 --> 01:53:47,551
+Alfa dediğimiz parametre, bunlar birbirine eşitse, şöyle gelelim.
+
+518
+01:53:49,351 --> 01:53:53,771
+Bunlar birbirine eşitse, Alfa dediğimiz parametre, eksi S'ye eşit değil mi?
+
+519
+01:53:54,671 --> 01:53:57,971
+Bunlar birbirine eşitse, bu Alfa dediğimiz parametre,
+
+520
+01:54:00,692 --> 01:54:19,552
+Eksi S'ye eşit. Eksi S de neye eşit? S dediğimiz şey neydi? Azıcık daha yukarı çıkalım. Bakın ne demiştik? R bölü 2L. R bölü 2L. Eksi R bölü 2L terimine karşılık gelmiş oluyor.
+
+521
+01:54:28,756 --> 01:54:40,836
+eksi bir bölü alfa kare mi yapıyor? Bakalım. R bölü 2L yerine koyalım.
+
+522
+01:54:40,836 --> 01:54:49,096
+R bölü L çarpı B çarpı L.
+
+523
+01:54:56,819 --> 01:55:10,460
+R bölü L çarpı B, alfamız var, R bölü 2L, eksisi var. Bu tarafta B var, alfa kare neydi? R kare bölü 4L kare.
+
+524
+01:55:14,996 --> 01:55:17,316
+Bir terim eksik mi yazdık acaba?
+
+525
+01:55:19,556 --> 01:55:26,356
+R, R kare, B kare, eksikli terim geldi. Bir tane sanki bir yerden atlamış gibiyiz.
+
+526
+01:55:27,476 --> 01:55:28,816
+Tekrar kontrol ediyorum.
+
+527
+01:55:30,336 --> 01:55:32,696
+Alfa kare geldi, buradan alfa geldi.
+
+528
+01:55:46,260 --> 01:56:11,119
+Şunu atlamışız. Tamam. Evet, onu yazmadık mı hiçbir yere? Evet, yazmamışız. Tamam, doğru, güzel. Hemen onu da ekleyelim. O zaman şuraya bir ekleme daha yapıyoruz. Artı, artı bir bölü LC, bir de B'miz var.
+
+529
+01:56:11,764 --> 01:56:16,724
+O zaman burada artı bir bölü LC terimimiz de gelmiş olacak.
+
+530
+01:56:18,404 --> 01:56:19,564
+B'si de var.
+
+531
+01:56:21,204 --> 01:56:24,084
+Şeye gelelim şimdi. Bunlar birbirine eşit dedik ya.
+
+532
+01:56:24,404 --> 01:56:26,164
+Alfa 1, alfa 2'ye eşit dedik ya.
+
+533
+01:56:26,244 --> 01:56:28,164
+Yani aynı zamanda da ne demiş olduk?
+
+534
+01:56:29,264 --> 01:56:31,324
+Omega kare S kareye eşit.
+
+535
+01:56:32,044 --> 01:56:32,963
+Onu da demiş olduk.
+
+536
+01:56:34,644 --> 01:56:47,184
+Aynı zamanda Omega kare, S kareye eşit demiş olduk. Omega dediğimiz şey neydi? Omega kare neydi? 1 bölü LC. Bu da S kareye eşit.
+
+537
+01:56:48,404 --> 01:56:55,743
+Tekrar aşağı gelelim. S kare dediğimiz şey de neydi? Burada R kare bölü 4LC'nin karesiydi.
+
+538
+01:57:01,300 --> 01:57:25,440
+Şunları düzenleyecek olursak, buradan B R² bölü 4L², B R² bölü 4L², eksi B R² bölü 4, şey,
+
+539
+01:57:26,420 --> 01:57:31,000
+2L kare artı, buradan da ne gelecek?
+
+540
+01:57:36,307 --> 01:57:54,127
+B, S karemiz neydi? R bölü 2L'nin karesi. Yani R kare bölü 2L'nin karesi de 4L kare. Şunların toplamı ne yapıyor arkadaşlar? Sıfır yapıyor. Demek ki T çarpı E üzeri alfa T'li terimler sıfır yaptı.
+
+541
+01:57:54,347 --> 01:58:02,127
+Şuraya gelelim. Buraya baktığımızda da yine benzer bir şey olacak. Uzatmayayım.
+
+542
+01:58:02,479 --> 01:58:27,099
+Buradaki terimleri topladığımızda da LC omega kare eşittir S kare. R bölü L değerimiz bizim S bölü 2-2S'e eşit. Onları uygun şekilde yazdıktan sonra burada elde edeceğimiz değer de sıfır olmuş olacak. Bunun anlamı şu, bizim önermiş olduğumuz şuradaki yapı denklemi sağlıyor anlamına gelecek.
+
+543
+01:58:27,099 --> 01:58:28,619
+Çok uzak vakit kaybettim.
+
+544
+01:58:29,471 --> 01:58:51,771
+Bunu hızlı geçeceğim şimdi. Bu demek ki hangi durumda geçerli olan bir senaryo? Eğer ki bizim alfa 1 ve alfa 2'miz birbirine eşit ve real ise, tekrar yazalım, alfa 1 ve alfa 2'miz birbirine eşit ve real ise, burada real'i de yazalım, alfa real bir sayı, bu durumda
+
+545
+01:58:52,692 --> 01:58:59,491
+Çözümlerden birisi A çarpı E üzeri alfa T iken, diğer çözüm T çarpı E üzeri alfa T olmaktır.
+
+546
+01:59:00,931 --> 01:59:06,571
+İkinci senaryomuz bu. Üçüncü senaryoya bakalım. Üçüncü senaryomuz da şu olabilir.
+
+547
+01:59:09,631 --> 01:59:19,131
+Üçüncü senaryomuz da şu olabilir arkadaşlar. S kare eksi omega kare küçüktür sıfır olabilir. Böyle bir durum var ise.
+
+548
+01:59:19,572 --> 01:59:34,872
+Alfa 1 ve Alfa 2 nasıl çalışacak arkadaşlar bunlar? Bunlar karmaşık sayı oluyor. Karmaşık sayı oldukları durumda ise yapacağımız önerme şuna dönüşecek.
+
+549
+01:59:49,108 --> 02:00:00,627
+A diyelim, küçük A diyelim, AT çarpı E üzeri eksi İ, karmaşık sayı, Omega T formatına dönecek.
+
+550
+02:00:01,387 --> 02:00:06,487
+Bunu düzenleyecek olursak aslında şunu yazabiliriz. Şöyle birazcık şuradan aşağıya gelelim.
+
+551
+02:00:16,532 --> 02:00:18,552
+Düzenlenmiş haline bakın.
+
+552
+02:00:19,632 --> 02:00:23,032
+Burada en genel çözümümüz bu halde yazabilir.
+
+553
+02:00:23,032 --> 02:00:25,532
+Bunun anlamı da şuna karşılık geliyor arkadaşlar.
+
+554
+02:00:25,692 --> 02:00:31,352
+En genel çözümde terimin sinüslü ve kosinüslü halleri.
+
+555
+02:00:31,412 --> 02:00:32,372
+Burada bir şey var.
+
+556
+02:00:32,552 --> 02:00:38,332
+Yani sinizoidal işaret var ve bir de bir sönümleme katsayısı var.
+
+557
+02:00:39,692 --> 02:00:40,532
+Bu anlama geliyor.
+
+558
+02:00:40,672 --> 02:00:42,632
+Bunu da düzenleyecek olursak aslında.
+
+559
+02:00:43,699 --> 02:00:45,360
+Şuna karşılık geliyormuş.
+
+560
+02:00:48,360 --> 02:01:08,699
+A'ları tekrar içeri dağıtacak olursak, yani şununla şunu birleştirecek olursak, E üzeri AT çarpı A1 çarpı sinüs omega T artı A2 diyelim buna da, A2 çarpı
+
+561
+02:01:08,960 --> 02:01:12,280
+Kosünüs, Omega, T terimine karşılık gelmiş olacak.
+
+562
+02:01:12,800 --> 02:01:17,760
+Burada karmaşık sayıdan sinizoidal fonksiyona dönüş için şundan faydalanıyoruz.
+
+563
+02:01:18,900 --> 02:01:21,320
+Hemen onu da hatırlayalım, bir parantez açarak.
+
+564
+02:01:23,400 --> 02:01:31,300
+İ dediğimiz sayı neye eşit? Karmaşık sayı düzleminde. Burası real, burası imajiner.
+
+565
+02:01:32,275 --> 02:01:41,996
+Şu bir noktasına karşılık geliyor. İ sayısı bu değil mi? Bunu polar koordinatlarda yazacak olursak, 1 çarpı E üzeri ne diyeceğiz buna?
+
+566
+02:01:43,775 --> 02:01:52,755
+İ çarpı İ çarpı P bölü 2 diyeceğiz değil mi?
+
+567
+02:01:54,036 --> 02:01:59,755
+Veyahut da genelleştirecek olursak, bunu genelleştirmiş halini düşünelim veya bir sayısı neye eşit?
+
+568
+02:02:00,047 --> 02:02:14,228
+1 çarpı E üzeri 0 çarpı İ'ye eşit. Şuradaki katsayımız ne? Eksi 1 neye eşit? Eksi 1 eşittir. 1 geldiğimiz çarpı E üzeri İ çarpı Pi'ye eşit.
+
+569
+02:02:16,068 --> 02:02:26,887
+Veya şuradaki değerimiz neye eşit? Eksi İ bu neye eşit? 1 çarpı E üzeri burası 2 Pi olacak. 3 Pi bölü 2 mi oluyor?
+
+570
+02:02:28,243 --> 02:02:40,243
+3P bölü 2 eşit. Burası P. P bölü 2 daha eklediğimizde 3P bölü 2 çarpı İ şeklinde yazabiliyoruz. Bunu genelleştirecek olursak da şunu yazabiliriz.
+
+571
+02:02:58,195 --> 02:03:03,916
+Tanjant eksi bir, y bölü x şeklinde yazabiliyoruz.
+
+572
+02:03:04,815 --> 02:03:12,476
+Dolayısıyla buna göre aslında şuradaki karmaşık sayı çözümünün sinüs ve kosinüs karşılıkları olduğunu söylemek mümkün.
+
+573
+02:03:12,476 --> 02:03:15,235
+Buradan geri nasıl döneceğiz onu hatırlayalım.
+
+574
+02:03:17,395 --> 02:03:37,215
+Herhangi bir x, y, real ve imajiner değerleri olan karmaşık sayımızın, biz şuradaki genliğini ve açısını biliyorsak, R ve alfayı biliyorsak, x eşittir, R çarpı sinüs alfaya eşit, y de R çarpı, pardon, yanlış yazdım.
+
+575
+02:03:39,412 --> 02:03:50,212
+Kosünüs alfa eşit, Y'de R çarpı sinüs alfa eşit. O zaman bizim buradaki Z sayımızı şöyle yazabiliriz.
+
+576
+02:03:51,472 --> 02:04:00,332
+R çarpı kosünüs alfa artı İ çarpı R çarpı sinüs alfa olarak yazabiliriz. Bu X, Y'miz aynı zamanda şuna karşılık ediyordu.
+
+577
+02:04:00,851 --> 02:04:25,211
+Dolayısıyla bir genlik ve E üzeri İ şeklinde bir terim varsa bunlar sinüs ve kosünüs şeklinde yazılabilir diyoruz. Bu da bizim üçüncü senaryomuz arkadaşlar. Eğer ki burada E üzeri AT parametresine karşılık gelen A kısmı sıfırsa, bu sönümleme kat sayısıydı, şurada tek bir sinizöyden işaret kalmış oluyor. Yani bu sürekli bir osilasyon gösteren durum bu.
+
+578
+02:04:25,555 --> 02:04:46,475
+Eğer ki A üzeri A, T'de A negatif bir sayı olarak çıkacak, A negatif bir sayı olduğu vakit sönümlenen bir osilasyon görüyor olacağız. Bu üç çözüm arkadaşlar bizim kaynaksız seri bir RLC'de elde edebileceğimiz üç senaryoyu ifade eden durumlar olmuş oldu. Bunu sunumlarımızda da mevcut şu şekilde ifade edebiliriz.
+
+579
+02:04:47,475 --> 02:04:51,576
+Şöyle gelelim. Neredeydi?
+
+580
+02:04:52,659 --> 02:05:05,239
+Seri RLC devresiyle ilgili başlayan kısım, başlangıç koşullarımızı oluşturduk, denklemlerimizi yazdık, diferansiyel denklemi hallettik, iki tane kök bulduk alfa için.
+
+581
+02:05:05,239 --> 02:05:14,179
+Bu alfanın durumlarına göre bakarak, alfanın durumlarına bakarak, gelelim şöyle, alfanın durumlarına bakarak şunları söyleyebiliriz.
+
+582
+02:05:17,619 --> 02:05:30,159
+Farklı real sayılar çıkıyorsa bu over-damp t karşılık geliyor. Eğer eşit çıkıyorlarsa çözümlerimizden birisi t çarpı e üzeri alfa t oluyordu. Bu kritik sönümlü durum oluyor.
+
+583
+02:05:30,779 --> 02:05:41,919
+Alfa dediğimiz değer veya bizdeki alfa kat sayılarımız bizim çözümümüzdeki alfa bir alfa iki karmaşık sayı çıkıyorlarsa bu da under-damp durumuna karşılık geliyor.
+
+584
+02:05:42,644 --> 02:05:58,004
+Osillasyonlu durumdu. Şimdi bunların grafiklerine bakacak olursak, Overdamp dediğimiz durum, şu bizim referans değerimiz, bu referans değere alttan asimtotik olarak yaklaşmış oluyoruz. Hangi durumdu bu?
+
+585
+02:06:08,115 --> 02:06:32,756
+E üzeri alfa T şeklinde bir çözüm daha öneriyorduk. Bu çözümümüzde ise referans gerilim değerimizin üzerinden seyreden bir sonuç elde ediyoruz. Sonuncusunda ise bu sinüs ve kosin şeklinde yazabildiğimiz durum için ise bir osilasyon var, sinüzoidal bir işaret var. Buradaki alfa katsayımız, bu çözümdeki yani karmaşık sayının real kısmı eğer
+
+586
+02:06:33,555 --> 02:06:45,475
+Sıfırdan farklıysa bir zarf içerisinde sönümleme var. Eğer bu sıfırsa sönümleme olmadan sürekli bir osilasyon. Bunlar elde edebileceğimiz üç senaryoya karşılık gelmiş oluyor.
+
+587
+02:06:47,855 --> 02:06:57,555
+Özetçe söyleyecek olursak, ne yapmıştık burada? Baştan bir hatırlayarak gelelim. Elimizde...
+
+588
+02:06:57,712 --> 02:07:18,072
+Initial durumu bir kaynakla oluşturulmuş bir seri RLC devresi vardı. Anahtar T eşittir T sıfır ağında devreden kalkıyordu. Böyle olduğu için burada şeyleri T sıfırları yine yazmamışım ama bu her T'den sonra T eksi T sıfır var. Onları tekrar yazmadan bu şekilde belirtmiş olalım.
+
+589
+02:07:25,939 --> 02:07:49,439
+Differensiyel denklemini yazdık kaynaksız durum için. Çözüm önerimizi koyduk. Çözüm önerimizi yerine koyduğumuzda iki tane alfa kökü çıktı. Bu alfa köklerin durumuna göre üç senaryoyla karşılaştık. Seri kaynaksız RLC devresinde alfanın durumlarına göre üç farklı senaryoyla karşılaştık. Birincisi alfa 1 ve alfa 2 birbirinden farklı real sayılar çıkıyorsa bu durumda çözüm önerimiz şu.
+
+590
+02:07:52,979 --> 02:08:10,299
+Eğer ki alfa 1 ve alfa 2 tekrarlı kök çıkıyorsa, birbirine eşit ve tekrarlı kök çıkıyorsa ne oluyor? Bu durumda önereceğimiz çözümün iki tane T'ye bağlı fonksiyon içermesi lazım. Çünkü ikinci dereceden türev olacağız, yoksa anlamsız bir hale gelir.
+
+591
+02:08:12,467 --> 02:08:21,807
+Önerdiğimiz çözümün birisini koruyoruz ama diğerini t ile çarparak önerimizi genişletiyoruz ve en genel çözüm bu ikisinin toplam olarak bir duruma karşılık veriyoruz.
+
+592
+02:08:22,608 --> 02:08:32,347
+Üçüncü senaryo ise alfa 1 ve alfa 2 köklerimiz karmaşık sayı çıkar ise eşlenik karmaşık sayı çıkar zaten bu durumda kuadratik fonksiyonlarda.
+
+593
+02:08:32,979 --> 02:08:35,920
+Bu durumda ise çözüm önerimizi şöyle genişletiyoruz.
+
+594
+02:08:36,500 --> 02:08:45,559
+V, C, T, bir E çarpı, E üzeri alfa T, bu sönümleme katsayısı çarpı, burada da bir sinizoidal fonksiyonun en genel hali.
+
+595
+02:08:45,679 --> 02:08:49,559
+Bunu şöyle de düzenleyebiliriz arkadaşlar. Bunlar birbirine eşdeğer.
+
+596
+02:08:49,679 --> 02:08:53,519
+İki tane serbestlik derecemiz olması lazım. İki tane parametremiz olması lazım.
+
+597
+02:08:53,519 --> 02:08:56,159
+Çünkü iki tane initial condition'umuz var.
+
+598
+02:08:56,511 --> 02:09:00,511
+Buradaki fonksiyonu şöyle de yazabiliriz. Şunu şöyle de yazabiliriz.
+
+599
+02:09:00,511 --> 02:09:11,871
+E üzeri AT çarpı A1 çarpı hatta şöyle daha güzel yazayım.
+
+600
+02:09:16,756 --> 02:09:35,115
+Omega T artı B şeklinde de yazabiliriz. Ama burada yine şeyi unuttum ya. E üzeri AT'yi unuttum. E üzeri AT fonksiyonuyla birlikte. Yani biz istersek sinüsün ve kosünüsün başındaki bu kat sayıları içeride bir faz farkı olarak da koyabiliriz.
+
+601
+02:09:35,988 --> 02:09:44,128
+Ve aynı zamanda sinizöyler işaretin genliği olarak. Ya istersek bu şekilde A çarpı sinüs artı B çarpı kosünüs şeklinde yazabiliriz.
+
+602
+02:09:44,568 --> 02:09:53,608
+Veya A çarpı sinüs omega T artı bir fas farkı B şeklinde bunu yazabiliriz. İkisi de birbirine eşdeğer. Çözüm önerimiz buna dönüşmüş oluyor üçüncü sanayi.
+
+603
+02:09:53,608 --> 02:09:59,168
+Bu neye ilişkin bir çözümde arkadaşlar toparlayacak olursak. Buradaki çözümümüz ise.
+
+604
+02:10:00,307 --> 02:10:11,608
+Kaynaksız seri RLC devresi için çözümlerimizi analiz etmiş olduk. Şimdi benzer bir senaryoyu paralel RLC devresi için de yürütmeye çalışalım.
+
+605
+02:10:12,788 --> 02:10:22,347
+Burada şeyleri yapmadık, pardon ona gelelim. En son olarak ona gelelim. Bu initial conditionlarımız vardı hatırlayacak olursanız. Onları bir devreye alalım.
+
+606
+02:10:27,475 --> 02:10:37,675
+Gelelim şimdi birinci çözüm grubu için. Burada şöyle yanına doğru farklı bir kalemle yazmaya çalışalım. Şöyle kaydıralım.
+
+607
+02:10:42,100 --> 02:11:03,080
+Neydi initial conditionlarımız? Birinci durum iki ayrı bir kök durumu. Birinci koşulumuz neydi? VCT0 eşittir vs idi. İkinci durumda ILT0 eşittir 0. Biz denklemimizi VC'ye göre yazdığımız için şunu yapacağız. VC'de T yerine 0 koyacağız.
+
+608
+02:11:03,699 --> 02:11:11,460
+Veya T yerine T0 koyacağız. Aynı şekilde düşünün. Burada T dediğimiz şey aslında T-T0'a karşılıklı oluyor.
+
+609
+02:11:14,460 --> 02:11:20,900
+Dolayısıyla T-T0 bunları unutmuşuz gene.
+
+610
+02:11:22,340 --> 02:11:27,900
+Şimdi T yerine T0 koyduğumuzda burası E üzeri 0.
+
+611
+02:11:28,435 --> 02:11:37,415
+E üzeri sıfır bir yani. Dolayısıyla buradan gelen denklem A artı B eşittir Vs oluyor.
+
+612
+02:11:38,055 --> 02:11:44,555
+ÜLT sıfırı nasıl bulacağız? Bakın, ÜLT sıfırı bulabilmek için elimizde VC gerilimi var. Değil mi?
+
+613
+02:11:45,332 --> 02:12:02,412
+Ve şunu biliyoruz, UC akımı, C çarpı, VC'nin türeviydi. Bu aynı zamanda, ÜL'ye eşit, seri devre olduğu için. O zaman şunu yapacağız, devremizin T'ye göre türevini alacağız, sonra T yerine T0 yazacağız.
+
+614
+02:12:10,899 --> 02:12:24,380
+çarpı E üzeri alfa 1, T eksi T sıfır, artı B çarpı alfa 2, E üzeri alfa 2, T eksi T sıfır.
+
+615
+02:12:25,699 --> 02:12:36,939
+Burada T yerine T sıfır koyduğumuzda bir olur, bir olur. O zaman A çarpı alfa 1 artı B çarpı alfa 2 eşittir sıfır.
+
+616
+02:12:38,707 --> 02:13:04,047
+Alfa 1 ve alfa 2'yi ne cinsinden bulduk? R, L ve C cinsinden biliyoruz. Alfa 1 ve alfa 2 bunlar iki ayrı köktür zaten. Dolayısıyla elimizde iki denklem var. A artı B eşittir vs. A çarpı alfa 1 artı B çarpı alfa 2 eşittir 0. İki bilinmeyen iki denklem A ve B'yi çekip yerine koyduğumuzda nihai olarak A ve B bilinmeyenlerinde bulmuş olarak denklemimizi elde etmiş oluyoruz.
+
+617
+02:13:05,503 --> 02:13:23,824
+Diğer çözümler için de geçerli arkadaşlar. Hangi durum için? Critical damped durum. Yani eşit kök, tekrarlı kök olma durumunda. Ne yapacağız yine? Denklemimiz VC'ye ilişkin. O zaman VCT0'ı koyacağız. Şunları da düzeltmiş olalım tekrar.
+
+618
+02:13:26,564 --> 02:13:30,543
+T-T0, T-T0.
+
+619
+02:13:31,923 --> 02:13:33,764
+T yerine T0 gezeceğiz.
+
+620
+02:13:35,583 --> 02:13:39,184
+T yerine T0 yazdığımızda elde edeceğimiz denklem şu olur.
+
+621
+02:13:39,264 --> 02:13:40,264
+Şuradan ayıralım şunu.
+
+622
+02:13:42,503 --> 02:13:49,963
+A artı T yerine T0 koyduğumuz için B çarpı T0 bu bilinen bir değer.
+
+623
+02:13:49,963 --> 02:13:51,144
+T0 bilinen bir değer.
+
+624
+02:13:51,764 --> 02:13:52,664
+Vs'ye eşit.
+
+625
+02:13:53,224 --> 02:13:53,923
+Bir de bunun.
+
+626
+02:13:54,931 --> 02:14:01,811
+Türevi ile alakalı bir senaryomuz var. Türevi ile alakalı bir durum. O da neye eşit olacak? Sıfıra eşit olacak.
+
+627
+02:14:02,251 --> 02:14:12,431
+Tabi burada kapasite denkleminden dolayı bir C terimi var ama C parantezini aldığımız zaman eşittir sıfırdan dolayı kaybolacağı için onu yazmamıştım.
+
+628
+02:14:12,931 --> 02:14:19,451
+Aynı şeyi burada da yapabiliriz. Yine C'yi kaybedip birinci dereceden türevimiz şuydu sanırsam.
+
+629
+02:14:20,627 --> 02:14:26,487
+Bunun birinci dereceden türeminden alfa gelecek. O zaman yazacağımız denklem şuna dönüşecek.
+
+630
+02:14:28,527 --> 02:14:36,987
+A çarpı alfa artı, burada da T yerine T0 koyduğumuzda şuradan bir gelecek.
+
+631
+02:14:45,844 --> 02:15:09,463
+Alfa eşittir sıfır denklemi girecek. Alfayı biliyoruz, T0'ı biliyoruz. Dolayısıyla iki bilinmeyen iki denklem bunları çözerek yine sonuç elde edebiliriz. Üçüncü senaryomuz neydi? Eşlenik karmaşık kök çıkma durumu. Eşlenik karmaşık kök çıkma durumu şuradaki üçüncü senaryo. Ne yapacağız? Yine benzer şekilde hareket edeceğiz. Çözüm önerimiz şuydu, şu olsun.
+
+632
+02:15:11,872 --> 02:15:14,652
+vs'ye eşit, getireceğiz, t0 koyacağız.
+
+633
+02:15:14,932 --> 02:15:20,792
+a çarpı, şurada t-t0 var yine.
+
+634
+02:15:21,472 --> 02:15:23,332
+Tabi burada da t-t0 var.
+
+635
+02:15:25,332 --> 02:15:34,892
+t yerine t0 koyduğumuz zaman, a çarpı sinüs b eşittir vs.
+
+636
+02:15:35,892 --> 02:15:39,052
+Sonra yine bunun türevini alıp, t'ye göre türevini alıp,
+
+637
+02:15:39,444 --> 02:16:05,684
+VC türev T0 eşittir. Tabi C ile de çarpılmış hali sıfıra eşit olacak. O yüzden C gidiyor. Bunu demek istemişti. VC'nin türevinin T0'daki değeri de sıfıra eşit olacak. Buradan da yine iki bilinmeyen iki denklem A ve B değerlerini çekebiliyor olacağız arkadaşlar. Dolayısıyla kaynaksız bir devre için çözümlerimizi bu çerçevede yapabiliyoruz diyelim.
+
+638
+02:16:06,131 --> 02:16:21,131
+Buraya kadar olanla ilgili sormak istediğiniz bir şey var mı? Buraya kadar ne yaptık? Kaynaksız bir RLC devresinin çözümlemesini alfanın senaryolarına göre 3 farklı başlık altında incelemeye çalıştık.
+
+639
+02:16:21,131 --> 02:16:31,891
+Ve önerdiğimiz çözümün güncellenmiş hallerini belirlemiş olduk. 3 farklı senaryo, 3 farklı çözüm önerisi var. Var mı buraya kadar olanla ilgili sormak istedim?
+
+640
+02:16:36,468 --> 02:16:49,088
+Şimdi bunun yok ise şunu yapacağız. Kaynaklı bir, kaynaksız bir RLC devresi için ama bu sefer paralel bir senaryo için, paralel devre için bunu inceleyeceğiz.
+
+641
+02:17:09,363 --> 02:17:13,024
+Kaynaksız paralel bir RLC devresi şimdi senaryoya bakıyoruz.
+
+642
+02:17:23,572 --> 02:17:33,572
+Yine burada bir takım başlangıç durumları var. Başlangıç durumlarını oluşturan yine VC'nin T0'daki değeriyle ÖL'nin...
+
+643
+02:17:34,963 --> 02:17:45,903
+T0'daki değeri oluşturacak, bunlar oluşturulacak. Bu arada şunu söylemeden gerçi başladık. Bir RLC devresi veya ikinci dereceden devre dediğimiz devrelerde neyi kast ediyoruz?
+
+644
+02:17:46,443 --> 02:17:54,903
+Devre içerisinde L ve C elemanları varsa veya iki tane C, iki tane L elemanı varsa bunlar ikinci dereceden denklem olmuş oluyor. Onlara göre çözüm gerçekleştireceğiz.
+
+645
+02:17:55,203 --> 02:18:01,183
+Kaynaksız bir paralel RLC devresi için senaryomuzu şöyle kuralım. Bir akım kaynağımız var.
+
+646
+02:18:01,876 --> 02:18:12,675
+Daha sonra bir direncimiz var, bir endüktansımız var, bir de kapasite elemanımız var. Bunlar üzerinden çözüm yapmaya çalışacağız.
+
+647
+02:18:17,139 --> 02:18:31,159
+Devremiz uzunca bir süre boyunca kaynakla çalışıyor. A konumunda daha sonra B konumuna geçiyor. R, L ve C değerlerimiz mevcut. Burada da bir IS akım kaynağımız mevcut olsun.
+
+648
+02:18:46,420 --> 02:18:59,819
+Anahtar A konumunda olduğunu biliyoruz. T büyük eşit T0'da ise anahtar B konumuna geçtiğini biliyoruz. Dolayısıyla burada initial condition'lar anahtar A konumundayken oluşacak.
+
+649
+02:18:59,819 --> 02:19:11,680
+Buna göre aradığımız şeyler yani BC T0 eksi neye eşittir? Ve aynı zamanda IL T0 eksi neye eşittir?
+
+650
+02:19:14,195 --> 02:19:17,155
+Şimdi sıfır ama hangisi sıfır? Şimdi şöyle bakalım.
+
+651
+02:19:19,015 --> 02:19:21,995
+VC için. VC için sıfır olur mu?
+
+652
+02:19:24,296 --> 02:19:25,475
+Şöyle düşünelim.
+
+653
+02:19:26,855 --> 02:19:30,015
+Şimdi bir kere endüktans elemanı kısa devre gibi çalışacak.
+
+654
+02:19:30,015 --> 02:19:37,095
+Endüktans elemanı kısa devre gibi çalıştığı için, IS akımının tamamı L üzerinden geçecek.
+
+655
+02:19:37,216 --> 02:19:39,275
+Dolayısıyla aslında bizim ILT sıfır.
+
+656
+02:19:40,020 --> 02:20:01,560
+I, S'yi eşit olmuş olacak. Peki, R elemanından bir akım geçiyor mu? Geçmiyor. Sıfır. O zaman bunun gerilimi sıfır. Buna paralel olan BC'nin gerilimi de sıfır olmuş oluyor. Dolayısıyla burada başlangıç koşullarını buna göre oluşturulmuş olacağız. Devre anahtar kapandıktan sonra, yani B'ye geçtikten sonra eşdeğeri ne oluyor? Onu bir çizelim.
+
+657
+02:20:01,560 --> 02:20:04,560
+Bunu çizelim şöyle.
+
+658
+02:20:06,899 --> 02:20:07,959
+Yanıkçı sildi.
+
+659
+02:20:15,252 --> 02:20:41,172
+Aslında burada B'yi hiç koymayalım. Anahtar açılıyor olsun. Devre sadece şöyle yaparsak daha güzel olacak. Şunu şöyle kaldıralım. B konumuna gelsin ve boşa düşsün. Anahtar boşa düşsün. Sanki tekrar bir kısa devre oluşuyormuş gibi bir senaryo oluşuyor. Öyle bir durum istemiyoruz çünkü. B konumuna gelsin ve boşta dursun. O zaman devremizin eşdeğeri şu olacak. R var.
+
+660
+02:20:44,180 --> 02:20:55,280
+L var ve C elemanı var. L ve C enerji depolamış. Bunlar direnç üzerinden harcanıyor olacak.
+
+661
+02:20:55,459 --> 02:21:05,299
+Burada şunun gerilimi VR, VL ve VC gerilimleri birbirine eşit paralel oldukça için.
+
+662
+02:21:05,299 --> 02:21:09,299
+Yani VR eşittir, VL o da eşittir, VC diyebiliriz.
+
+663
+02:21:10,195 --> 02:21:21,716
+Ve bununla birlikte şu düğme göre şey alsak, ÜR, ÜL ve ÜC akımları, bunların toplamı da sıfır olacak değil mi?
+
+664
+02:21:22,376 --> 02:21:27,835
+ÜR artı ÜL artı ÜC eşittir, sıfır yazabiliriz.
+
+665
+02:21:28,835 --> 02:21:31,876
+Şimdi burada şunu yapacağız arkadaşlar.
+
+666
+02:21:33,216 --> 02:21:40,876
+Bu denklemi kullanarak, yani VR cinsinden, UR'yi yazmaya çalışacağız. Yani burada yerine koymaya çalışacağız.
+
+667
+02:21:41,636 --> 02:21:46,675
+UR dediğimiz akım neye eşit arkadaşlar? VR bölü R'ye eşit değil mi?
+
+668
+02:21:47,836 --> 02:21:59,096
+Artı, UL akımımızı nasıl ifade edebiliriz? UL akımımızı, tanım bağıntısını yazalım.
+
+669
+02:21:59,603 --> 02:22:05,883
+VL eşittir, L çarpı DIL bölü DT idi.
+
+670
+02:22:07,263 --> 02:22:13,723
+Bunu biliyoruz. Burada VL dediğimiz gerilim aynı zamanda VC gerilimine de eşit.
+
+671
+02:22:14,243 --> 02:22:18,144
+O yüzden biraz sonraki gelecek denklemi de oradan kullanalım.
+
+672
+02:22:19,003 --> 02:22:22,663
+IC, yine tanım bağıntısı üzerinden.
+
+673
+02:22:25,200 --> 02:22:46,580
+DVC bölü, DT'ye eşit. Buradaki gerilimlerin hepsine de bir V gerilimi ismini verelim şimdi. Hatta VC diyelim ki, VC cinsinden bir ÖL cinsinden yazmamızı tekrar bakıyorum. Demin ki VC cinsinden çıkmıştı. Bunu ÖL cinsinden yazmaya çalışmak daha iyi olacak.
+
+674
+02:22:50,220 --> 02:22:52,080
+O zaman tamam, güzel.
+
+675
+02:22:52,595 --> 02:22:54,956
+O zaman şunu, I, L olarak bırakalım.
+
+676
+02:22:56,416 --> 02:23:00,495
+V, R'miz de, V, L'ye eşit. Onu da şöyle düzeltelim.
+
+677
+02:23:01,315 --> 02:23:03,256
+Son olarak, I, C akımımızı yazacağız.
+
+678
+02:23:03,615 --> 02:23:06,876
+V, C dediğimiz gerilim yine, V, L'ye eşit. Onu da şöyle yazıyoruz.
+
+679
+02:23:08,695 --> 02:23:10,275
+O da, V, L'ye eşit.
+
+680
+02:23:10,275 --> 02:23:19,916
+C çarpı, C çarpı, D, V, L bölü, D, T şeklinde yazabiliriz.
+
+681
+02:23:20,755 --> 02:23:22,595
+I, C akımımızı.
+
+682
+02:23:23,555 --> 02:23:26,135
+I, L akımımızı nasıl yazacağız?
+
+683
+02:23:26,355 --> 02:23:33,555
+I, L akımımız içinde şuradan tekrar türeve mi, integrale mi dönüyor?
+
+684
+02:23:33,835 --> 02:23:35,935
+Biz tekrar şöyle kontrol edelim.
+
+685
+02:23:43,412 --> 02:23:48,992
+Türev integral bütün denklemlerimizi bir yazıp tekrar kontrol edelim şöyle.
+
+686
+02:23:51,132 --> 02:23:52,272
+Ne diyecektik?
+
+687
+02:23:53,812 --> 02:23:57,592
+I, R çarpı R, V, R'ye eşit.
+
+688
+02:23:58,891 --> 02:24:02,891
+Daha sonrasında I, C akımımız C çarpı.
+
+689
+02:24:06,355 --> 02:24:20,275
+C çarpı DVC bölü DTY eşit ve son olarak da VL gerilimimiz L çarpı DIL bölü DTY eşit.
+
+690
+02:24:21,576 --> 02:24:28,515
+Şimdi buradaki gerilim değerimizi VL üzerinden alsak ve IL cinsinden yazmaya çalışsak.
+
+691
+02:24:28,956 --> 02:24:30,355
+Ne ile karşılaşacağız bakalım.
+
+692
+02:24:31,219 --> 02:24:52,819
+I, C dediğimiz akım neye eşit oldu? C çarpı D, V, L bölü D, T'ye eşit oldu. Burada V, L'nin şu olduğunu biliyoruz. O zaman bunu da düzenleyecek olursak, C çarpı L, L'yi buraya getirdik.
+
+693
+02:24:53,203 --> 02:25:19,083
+çarpı İL'nin ikinci dereceden türevi olmuş olur. Demek ki ÜC'yi bu şekilde yazabiliriz. C çarpı L, ÜL'nin ikinci dereceden türevi. ÜL zaten kendisi, ÜL'yi bıraktık. Peki ÜR için ne yazabiliriz? ÜR, VR bölü R'ye eşit. VR'de VL'ye eşit. O zaman onu da getirip yazacak olursak,
+
+694
+02:25:19,540 --> 02:25:31,060
+L bölü R, burada bu VL, VR'ye eşitti. O zaman L bölü R ve İL'nin türevi olmuş olacak.
+
+695
+02:25:31,580 --> 02:25:41,180
+Şimdi bunları düzenleyecek olursak, bu denklemimizi düzenleyecek olursak, en yüksek türevli kat sayıyı da başa alacak olursak, her tarafı CL'ye bölmemiz lazım.
+
+696
+02:25:45,984 --> 02:26:00,864
+Her tarafı LC'ye böldüğümüz için 1 bölü RCÖL artı 1 bölü LCÖL eşittir 0 çıkmış oluyor.
+
+697
+02:26:01,247 --> 02:26:16,827
+Bakın arkadaşlar, burada yine bir fonksiyon, zamana bağlı fonksiyon, ikinci dereceden türevi, birinci dereceden türevi ve kendisi birbirlerine sahip kat seviyelerinden bağlı. O zaman burada önereceğimiz çözüm yine şu oluyor arkadaşlar, bu doğrumu onu da bir kontrol edelim. Paralel devre için.
+
+698
+02:26:20,915 --> 02:26:21,755
+Neredeydi?
+
+699
+02:26:24,536 --> 02:26:26,315
+Paralel RLC için.
+
+700
+02:26:28,955 --> 02:26:30,975
+Bir bölü RC, bir bölü LC.
+
+701
+02:26:31,635 --> 02:26:33,675
+Bir bölü RC, bir bölü LC. Tamam, güzel.
+
+702
+02:26:34,335 --> 02:26:40,875
+Şimdi bu durumda bizim önereceğimiz, I, L, T akımı için önereceğimiz çözüm şu oluyor.
+
+703
+02:26:41,396 --> 02:26:49,355
+En genel olarak A çarpı E üzeri alfa T eksi T sıfır şeklinde bir fonksiyon öneriyoruz.
+
+704
+02:26:49,855 --> 02:26:55,296
+Yine burada da arkadaşlar R, L ve C değerlerine göre 3 farklı senaryo oluşabilir.
+
+705
+02:26:55,416 --> 02:27:00,936
+Önce yerine koyup bir görelim bu önerdiğimiz şeyi. Yerine koyup ne ile karşılaştığımıza bakalım.
+
+706
+02:27:01,636 --> 02:27:03,576
+İkinci dereceden türevi ne gelir?
+
+707
+02:27:04,576 --> 02:27:05,195
+Alfa kare.
+
+708
+02:27:06,067 --> 02:27:10,047
+A çarpı E üzeri alfa T eksi T sıfır gelir.
+
+709
+02:27:11,547 --> 02:27:13,347
+Artı bir bölü RC.
+
+710
+02:27:17,139 --> 02:27:36,639
+Alfa, A çarpı E üzeri, Alfa, T eksi, T sıfır gelir. Birinci dereceden türevi var çünkü. Artı bir bölü, LC, A çarpı E üzeri, Alfa, T gelir. Eşittir sıfır. Yazabiliriz. Burada yine şeyi unuttuk. T eksi, T sıfır diyeceğiz.
+
+711
+02:27:44,852 --> 02:28:06,192
+Alfa kare artı bir bölü RC, alfa artı bir bölü RC eşittir sıfır diyebiliriz. Sıfır olursa trivial çözüm, bunu aramıyoruz. Sıfıra ulaşmaz zaten. Sıfır olabilecek tek yer burası. O zaman alfa bir ve iki şuna denkleyelim. Birazcık aşağı kaydıralım.
+
+712
+02:28:09,811 --> 02:28:28,112
+Alfa 1 ve alfa 2 şu oluyor, eksi 1 bölü RC, eksi B bölü 2 idi değil mi? B kare eksi 4AC bölü 2A. Yani şunu yazmak istiyoruz aslında, yanlış yazdık.
+
+713
+02:28:32,724 --> 02:28:37,023
+Kvadratik fonksiyon şuydu, yazalım yanımızda alıyorsun.
+
+714
+02:28:37,984 --> 02:28:48,504
+ax kare artı bx artı c eşit bir sıfır şeklindeki bir denklemin köklerini arıyorsak, x1 ve 2 şuna eşit oluyordu.
+
+715
+02:28:49,583 --> 02:28:57,144
+eksi b eksi artı kök içinde b kare eksi 4ac, 4ac.
+
+716
+02:28:57,907 --> 02:29:02,047
+Bölü 2A oluyordu. Bu çerçevede biz çözümümüzü gerçekleştiriyoruz.
+
+717
+02:29:02,528 --> 02:29:05,547
+Şimdi burada az önce yanlış yapmışız arkadaşlar da uyardı.
+
+718
+02:29:06,507 --> 02:29:24,948
+Burada eksi B dediğimiz şey, eksi 1 bölü RC, eksi artı kök içerisinde, 1 bölü RC'nin karesi B kare, eksi 4 bölü LC olmuş oluyor.
+
+719
+02:29:25,396 --> 02:29:35,056
+Bölü, Bölü 2. A değerimiz 1 olduğu için. Şimdi bunu da düzenleyecek olursak şunu yazabiliriz.
+
+720
+02:29:35,056 --> 02:29:51,056
+Alfa 1 ve alfa 2. Eksi 1 bölü 2RC. Eksi artı kök içerisinde 2 içeri aldığımız zaman 1 bölü 2RC'nin karesi.
+
+721
+02:29:51,987 --> 02:29:56,427
+Eksi, 4 ile 4 gitti, 1 bölü, LC kalmış oldu.
+
+722
+02:29:56,427 --> 02:30:17,007
+Yine burada düzenleme yapacak olursak arkadaşlar, 1 bölü RC'ye S desek, 1 bölü 2 RC'ye S desek ve 1 bölü kök LC'ye Omega desek,
+
+723
+02:30:17,620 --> 02:30:33,580
+Aslında çözümümüz şuna dönmüş oluyor. Alfa 1 ve 2. Az önce yaptığımız çözüme çok benzer bir durum. Ne olmuş oldu? S, eksi S, artı eksi, kök içerisinde, S kare eksi.
+
+724
+02:30:34,048 --> 02:30:53,348
+Omega kareye dönmüş oluyor. Burada S dediğimiz şey RC'ye bağlı, Omega dediğimiz şey LC'ye bağlı. Dolayısıyla bunlar bilinen değerler. Yine 3 senaryoyu buradan akıtabiliriz. Hangisiydi o senaryolar? Şunlar da hatırlayacak olursanız. Eğer ki S kare eksi Omega kare büyüktür sıfır ise,
+
+725
+02:31:01,876 --> 02:31:18,276
+Farklı alfa 2, alfa 1 ve alfa 2 real sayılardan değerler oluşuyor. Ve bu durumda önerimiz, Ü, L, T için önerimiz şu oluyordu.
+
+726
+02:31:26,548 --> 02:31:30,148
+Şeklinde, biraz yazı geriden geliyor, niye öyle oluyor bilmiyorum ama.
+
+727
+02:31:32,128 --> 02:31:34,008
+Bu genel çözüme gelmiş oluyoruz.
+
+728
+02:31:34,008 --> 02:31:43,668
+Eğer ki, S kare eksi omega kare eşittir sıfır ise, bu durumda alfa bir eşittir, alfa iki eşittir, alfa olmuş oluyor.
+
+729
+02:31:44,887 --> 02:31:47,008
+Çözümümüzü şu şekilde genişletiyorduk.
+
+730
+02:31:48,247 --> 02:31:49,008
+Ö, L, T.
+
+731
+02:31:51,488 --> 02:31:53,468
+Burada yine T eksi T sıfırı unuttuk.
+
+732
+02:31:54,164 --> 02:31:55,324
+Hep unutuyoruz onu.
+
+733
+02:31:56,463 --> 02:31:57,424
+T-T0.
+
+734
+02:31:58,764 --> 02:32:01,064
+Öl-T için önerimiz şuna dönüşüyordu.
+
+735
+02:32:01,304 --> 02:32:14,084
+A çarpı E üzeri alfa T-T0 artı B çarpı T çarpı E üzeri T-T0.
+
+736
+02:32:16,084 --> 02:32:18,024
+Alfamız var, alfayı unutmayalım.
+
+737
+02:32:18,664 --> 02:32:19,684
+Bu şekle dönüşüyordu.
+
+738
+02:32:21,396 --> 02:32:40,236
+Under-damped, critically damped, bir de over-damped vardı. Over-damped de hatırlayalım hangi durumda oluşurdu. Eğer ki S kare A x'i omega kare küçüktür sıfır ise bu durumda ne oluyordu arkadaşlar?
+
+739
+02:32:46,804 --> 02:33:09,504
+Karmaşık sayı oluyordu, eşlenik yok oluyordu ve bu durumda önerdiğimiz ILT çözümü de ya A çarpı sünüs omega T artı B çarpı E üzeri AT şeklinde bir çözüm oldu.
+
+740
+02:33:15,476 --> 02:33:23,956
+O da eşit, RL, Alfa 2, eşlenik oldukları için, RL kısımları aynıydı, A dediğimiz şey buna eşit.
+
+741
+02:33:24,596 --> 02:33:27,596
+Burada A ve V parametre olabiliyoruz. Veyahut da şöyle yazabiliyordu.
+
+742
+02:33:28,796 --> 02:33:36,695
+A çarpı sinüs, Omega T, artı V çarpı sinüs, pardon, kosünüs olacak.
+
+743
+02:33:45,108 --> 02:33:53,608
+Çarpı, E üzeri, A, T. A yine elde ettiğimiz köklerin real kısmı olmuş oluyordu.
+
+744
+02:33:54,347 --> 02:34:02,667
+Dolayısıyla bir paralel RLC devresi, kaynaksız paralel RLC devresini elde edeceğimiz çözümlerde yine benzer bir yapı izliyor.
+
+745
+02:34:03,347 --> 02:34:11,788
+Sadece bu seferki çözüm önerimiz, denklemin yapısı itibariyle, paralel devre olması itibariyle, enduktansın akımı cinsinden yazmış oluyor.
+
+746
+02:34:12,755 --> 02:34:14,975
+Bu şekilde bir senaryo ile karşılaşmış olduk.
+
+747
+02:34:15,415 --> 02:34:18,195
+Buraya kadar olanla ilgili sormak istediğiniz bir şey var mı arkadaşlar?
+
+748
+02:34:20,115 --> 02:34:21,435
+Bir sonraki aşamaya geçeceğim.
+
+749
+02:34:31,763 --> 02:34:42,324
+Tabii, mantık aynı. İkinci dereceden bir diferansiyel denklem yazıyor. Değişkenlerimiz farklı. Birisinde VC'yi zaman cinsinden bulmuştuk.
+
+750
+02:34:42,868 --> 02:34:49,628
+Formülasyon onu getirmişti. Burada da enduktansın akımını ikinci dereceden bir diferansiyel denklem olarak yazdık.
+
+751
+02:34:50,128 --> 02:34:56,828
+Fakat arka taraftaki yapı aynı. İkinci dereceden bir diferansiyel denklem varsa, bunun linier bir diferansiyel denklem olduğu için,
+
+752
+02:34:56,828 --> 02:35:05,368
+iki tane kökü olabilir. Bu iki kök real olabilir, farklı. Eşlenik olabilir, karmaşık eşlenik veyahut da tekrarlı kök olabilir.
+
+753
+02:35:05,508 --> 02:35:10,868
+Bunlara göre ki senaryolar her iki durumda da aynı. Orası değişmemiş. Tıpkı sizin bahsettiğiniz gibi orası değişmemiş olabilir.
+
+754
+02:35:10,868 --> 02:35:28,468
+Bunlar yalnız kaynaksız RLC devrelerin seri ve paralel olarak çözümleriydi. Kaynaklı bir devre için ne ile karşılaşırız? Ondan bahsedeceğim şimdi. Kaynaklı RLC devresine de ek olarak bir tane zorlanmış çözümümüzü daha katmamız gerekecek.
+
+755
+02:35:28,468 --> 02:35:37,067
+Şimdi ben bunu şöyle bir home'a geleyim. Yazı büyüdükçe tekrarlı zor oluyor.
+
+756
+02:35:37,620 --> 02:35:39,920
+Bunu da yine nasıl paylaştı, neredeydi?
+
+757
+02:35:48,211 --> 02:35:49,191
+Bir açısın bakalım.
+
+758
+02:36:02,227 --> 02:36:03,707
+Synchronize mi ediyor acaba?
+
+759
+02:36:09,396 --> 02:36:12,636
+Yine bunu da benzer şekilde link oluşturalım.
+
+760
+02:36:14,175 --> 02:36:15,636
+Bunu alalım.
+
+761
+02:36:16,116 --> 02:36:21,156
+Yine chat ekranından paylaşıyorum arkadaşlar bu ders boyunca yazdığımız şeyleri.
+
+762
+02:36:22,456 --> 02:36:24,156
+Buradan bakabilirsiniz.
+
+763
+02:36:24,576 --> 02:36:30,616
+Şimdi tekrar farklı bir ekran açıp.
+
+764
+02:36:34,195 --> 02:36:40,556
+Çok süremiz kalmadığı için tekrar ara vermeyeceğim. Kaynaklı bir RLC devresi için çözüm yapacağız.
+
+765
+02:36:41,195 --> 02:36:42,536
+Ders 3 diyeyim.
+
+766
+02:36:46,004 --> 02:36:48,684
+Benzer şekilde link oluşturalım.
+
+767
+02:36:51,844 --> 02:36:55,103
+Şimdiden bunu da paylaşıyorum dersin sonunda unutmamak adına.
+
+768
+02:36:58,932 --> 02:37:01,352
+Üç tane linkimiz oldu yani bu durumda.
+
+769
+02:37:03,432 --> 02:37:08,352
+Bunlar benim whiteboardta yazmış olduğum, yapmış olduğum çizimlere karşılık olan senaryolar.
+
+770
+02:37:08,352 --> 02:37:12,872
+Şimdi şuradan da kontrol edelim akışımızda bir kaçak var mı?
+
+771
+02:37:19,252 --> 02:37:24,112
+Seri RLC için yapmış. Paralel RLC için var mı?
+
+772
+02:37:27,827 --> 02:37:41,747
+Paralel RLC içinde yapmış. Tamam. Biz de benzer şekilde yapacağız. Şimdi burada göreceğimiz senaryolar arkadaşlar şunlara dair olacak. Birincisi, kaynaklı RLC devresi çözeceğiz paralel.
+
+773
+02:37:46,484 --> 02:37:50,064
+Kaynaklı RLC devresi çözeceğiz. Seri olmak üzere.
+
+774
+02:37:50,443 --> 02:37:55,084
+Ve burada çok detayına aslında girmemize gerek kalmayacak. Az önce konuştuğumuz şeyler olacak.
+
+775
+02:37:55,524 --> 02:37:58,024
+Çünkü burada çözümlerden birisi doğal çözüm olacak.
+
+776
+02:37:59,184 --> 02:38:00,943
+Diğeri ise zorlanmış çözüm olacak.
+
+777
+02:38:02,024 --> 02:38:05,263
+Yine benzer şekilde seri RLC devresinde de
+
+778
+02:38:05,907 --> 02:38:10,308
+Doğal çözüm ve zorlanmış çözüm ile karşılaşıyor olacağız.
+
+779
+02:38:10,948 --> 02:38:18,887
+Doğal çözüm dediğimiz şey her iki devre içinde, seri RLC devresinde biz şunları görmüştük hatırlayacak olursanız.
+
+780
+02:38:18,887 --> 02:38:28,027
+V, C, T için ya A çarpı E üzeri alfa 1T artı B çarpı E üzeri alfa 2T şeklinde bir şey öneriyorduk.
+
+781
+02:38:29,683 --> 02:38:36,883
+A çarpı E üzeri alfa T artı B çarpı T çarpı E üzeri alfa T şeklinde bir şey öneriyorduk.
+
+782
+02:38:37,623 --> 02:38:47,543
+Veyahut da üçüncü bir senaryo, E üzeri A T çarpı A çarpı sinüs omega T artı B şeklinde bir çözüm öneriyorduk.
+
+783
+02:38:47,543 --> 02:38:53,164
+Burada alfa, alfa 1, alfa 2, omega ve A, D.
+
+784
+02:38:54,195 --> 02:39:02,896
+Diferansiyel denkleme ile ilişkin yapmış olduğumuz öneriden çıkan alfa 1 ve alfa 2 köklerine karşılık gelen değerler oluyordu.
+
+785
+02:39:03,695 --> 02:39:09,975
+Aynı şey burada da geçerliydi. Burada sadece ÖLT için yapmış olduğumuz öneri farklılaşıyordu.
+
+786
+02:39:09,975 --> 02:39:18,195
+ÖLT cinsinden çıkıyordu. E çarpı E üzeri alfa 1T ve B çarpı E üzeri alfa 2T veya
+
+787
+02:39:19,028 --> 02:39:43,708
+Kökler tekrarlı çıkıyorsa, A çarpı E üzeri alfa T artı B çarpı T, B çarpı T çarpı E üzeri alfa T veyahut da kökler karmışık eşleri çıkıyorsa, E çarpı E üzeri alfa T çarpı A çarpı sinüs omega T artı B şeklinde.
+
+788
+02:39:44,308 --> 02:40:00,108
+Çözüm önerilerimizi sunuyorduk. Bunlar doğal çözüme karşılık senaryolar. Doğal çözüm nereden kaynaklanıyordu? Elemanların başlangıç durumlarından dolayı bunlar üretiliyordu.
+
+789
+02:40:00,531 --> 02:40:03,551
+Peki elemanların başlangıç durumlarını ne oluşturuyordu?
+
+790
+02:40:04,271 --> 02:40:11,491
+ÖL'nin T0-deki akımı ve VC'nin T0-deki gerilimi bunlar belirliyordu.
+
+791
+02:40:12,072 --> 02:40:14,011
+Aynı şey burası için de geçerli.
+
+792
+02:40:14,711 --> 02:40:15,791
+Nedir onun adı?
+
+793
+02:40:16,591 --> 02:40:17,912
+Şurası için de geçerli.
+
+794
+02:40:25,396 --> 02:40:27,936
+Kopyalamayı beceremiyorum, niye öyle oluyor bilmiyorum ama.
+
+795
+02:40:29,256 --> 02:40:31,236
+Aynı şey burası için de geçerliydi.
+
+796
+02:40:32,216 --> 02:40:36,436
+Şimdi gelelim farklı olan duruma, yani zorlanmış çözüm durumuna.
+
+797
+02:40:37,456 --> 02:40:42,256
+Zorlanmış çözümde senaryolarımız en temel olarak şu şekilde çalışacak.
+
+798
+02:40:42,816 --> 02:40:46,495
+Devremiz uzun bir süre boyunca kaynaksız bir şekilde çalışıyor olacak.
+
+799
+02:40:47,096 --> 02:40:49,896
+T eşittir, T sıfır anda devreye bir kaynak bağlayacak.
+
+800
+02:40:50,355 --> 02:41:01,636
+Şimdi öncelikli olarak bunu paralel devre için bir gerçeklemeye çalışalım. Pardon, seri devre için gerçeklemeye çalışalım. Seri devre hangisi? Şurasıymış. Şunu da gerçeklemeye çalışalım.
+
+801
+02:41:02,355 --> 02:41:16,136
+Senaryomuz nasıl bir şey olacak? Bir tane kaynağımız var. Kaynak bekliyor. Ondan sonra seri bir devremiz var. Dolayısıyla direncimiz, endüktansımız ve
+
+802
+02:41:16,528 --> 02:41:35,227
+Kapasite elemanımız mevcut. Anahtar uzunca bir süre boyunca boşta bekliyor. Şu şekilde. Daha sonra A konumundan, daha sonra B konumuna geçiyor. R, L ve C değerlerimiz burada da B, S değerimiz var.
+
+803
+02:41:44,115 --> 02:41:53,076
+T eşittir sıfır anında değişsin. Denklemimiz kolaylaşsın. Eğer T sıfır diyorsak, her T gördüğümüz yere T eksi T sıfırla değiştirmemiz lazım.
+
+804
+02:41:53,736 --> 02:42:02,636
+ÖL sıfır sıfır olacak, akım yok. Ve benzer şekilde VC sıfır da sıfır olmak durumunda. Bu bizim başlangıç durumlarımız.
+
+805
+02:42:03,156 --> 02:42:16,855
+Daha sonra kaynak devreye girdi. Kaynak devreye girdiğinde eşdeğer devremiz V, S, R, L ve C elemanlarının seri bağlantısı şeklindeki bir senaryoya karşılık geliyor. O zaman şunu yazabiliriz.
+
+806
+02:42:17,056 --> 02:42:25,236
+V, R artı, V, L artı, V, C eşittir, V, S yazabiliriz. Hangi durum için eşdeğerini de çizip sonra karışıklık olmasın.
+
+807
+02:42:29,843 --> 02:42:39,043
+T eşittir sıfır anında anahtar, B konumuna geldikten sonra, V, S, R, L ve C senaryomuz bu şekilde bir bağlantı sağlamış oldu.
+
+808
+02:42:39,563 --> 02:42:48,163
+Ve aynı zamanda da, I, R eşit, I, L eşit, I, C, o da eşittir bir I akımı, anakol akımı şeklinde karşılık buluyor.
+
+809
+02:42:48,163 --> 02:42:50,963
+Şimdi buradaki çözümümüze gelecek olursak,
+
+810
+02:42:51,540 --> 02:43:03,540
+Eğer ki böyle bir diferansiyel, önce diferansiyel denklem olarak yazalım, daha sonra devam edelim. Bunu nasıl yazmıştık? Bütün denklemleri VC cinsinden yazmaya çalışmıştık.
+
+811
+02:43:17,811 --> 02:43:28,652
+R çarpı, C çarpı, D, V, C bölü, D, T'di. Şu bizim, I, C'miz, aynı zamanda, I, R'ye eşit olduğu için bu şekilde yazabilirim.
+
+812
+02:43:29,332 --> 02:43:37,471
+I, L dediğimiz akım ve I, C dediğimiz akım neye eşitti? V, C dediğimiz değer, şey, I, C akımımız neye eşit?
+
+813
+02:43:37,471 --> 02:43:39,851
+I, C akımımız.
+
+814
+02:43:43,252 --> 02:43:44,812
+Bunu yanlış mı yazdık acaba?
+
+815
+02:43:49,811 --> 02:43:58,532
+RL akımımız, D, V, C, D, T. Sanki bir şeyi yanlış yazdık ama şöyle gelelim.
+
+816
+02:43:58,731 --> 02:44:05,652
+ÖL dediğimiz, ÖL'yi yazmıyoruz pardon. VL dediğimiz gerilim neye eşit? VL dediğimiz gerilim.
+
+817
+02:44:07,772 --> 02:44:13,852
+Tanım bağıntısını istiyorduk. VL eşittir. L çarpı. L çarpı.
+
+818
+02:44:14,579 --> 02:44:30,000
+D, İ, L bölü, D, T şeklinde yazıyorduk. Burada da L çarpı, Ü, L, Ü, C'ye eşit. Ü, C'yi nasıl yazıyorduk? Şurada da Ü, C'yi yazalım. C çarpı, D, V, C bölü, D, T şeklinde yazıyorduk. Dolayısıyla L çarpı, C.
+
+819
+02:44:30,804 --> 02:44:42,484
+V, C'nin ikinci dereceden türevi diyebiliyoruz. O zaman L, C çarpı V, C'nin ikinci dereceden türevi. Bu birinci dereceden türeviydi. Şunu bir yanlış yazmış olabiliriz.
+
+820
+02:44:42,744 --> 02:44:50,984
+R dediğimiz şey, I, C'ye eşit. C çarpı D, V, C bölü D, T. Bu da zaten V, C'nin kendisi.
+
+821
+02:44:52,275 --> 02:45:07,795
+Şunu yazıyorduk çünkü. Bu da VC eşittir, VS'yi eşit. Denklemimizi düzenleyecek olursak ve en yüksek türevli terimi tek bırakacak olursak, VC'nin ikinci dereceden türevi artı, her tarafı LC'ye bölüyoruz.
+
+822
+02:45:12,979 --> 02:45:29,659
+VC bölü LC eşittir, VS bölü LC olmuş oluyor. Bu bizim ikinci dereceden diferansiyel denklemimiz. Böyle bir denklemle karşılaştığımızda bunun iki tane çözüm olduğunu biliyoruz. Birincisi doğal çözüm, ikincisi zorlanmış çözüm.
+
+823
+02:45:30,835 --> 02:45:43,136
+Doğal çözüm için aslında bizim denklemimiz VC'nin ikinci dereceden türevi, R bölü L, VC'nin üstü artı, VC bölü LC eşittir sıfır denklemini çözmeye yönelik bir yaklaşımdı.
+
+824
+02:45:43,755 --> 02:45:54,575
+İkincisinde ise, yani dolayısıyla buradaki çözüm önerimiz, VCT için A çarpı E üzeri alfa T şeklinde bir çözüm önerisine bulunurduk.
+
+825
+02:45:55,059 --> 02:46:06,499
+Zorlanmış çözüm için ise bizim çözmeye çalıştığımız denklem VC'nin iki üstü artı R bölü L, VC'nin üstü artı VC bölü LC eşittir.
+
+826
+02:46:06,579 --> 02:46:09,079
+VS bölü LC denklemini çözmeye çalışıyoruz.
+
+827
+02:46:09,619 --> 02:46:15,619
+Nihai durumda T sonsuza gittiğinde şuna yakınlaması gerektiği için onu yazmadık, onu da yazalım yukarıda.
+
+828
+02:46:16,619 --> 02:46:21,579
+Burada devremiz bu hale geldikten sonra T sonsuza giderken ne olur arkadaşlar?
+
+829
+02:46:22,932 --> 02:46:47,820
+Ü, L sonsuz neye eşit olur? Sıfıra gidecek değil mi? Çünkü açık devre var. Benzer şekilde VC sonsuz da VS'ye gitmesi gerekiyor. Bunları da dikkate alarak devam ediyoruz şimdi. Demek ki T sonsuza gittiğinde buradaki zorlanmış çözümümüz şuna benzemesi lazım. O zaman buradaki VCT önemimizde S şeklinde sabit bir...
+
+830
+02:46:47,827 --> 02:47:11,768
+değerden oluşan durum olmuş oluyor. Bunu yerine koyduğumuzda yine alfa 1 ve alfa 2 kat sayılarını elde edeceğiz. Bu alfa 1 ve alfa 2'nin durumlarına göre alfa 1 farklı, alfa 2, alfa 1 ve alfa 2 real sayı olduğundaki çözümümüz az önceki bahsettiğimiz gibi.
+
+831
+02:47:12,208 --> 02:47:21,368
+V, C, T, A çarpı E üzeri alfa 1, T artı B çarpı E üzeri alfa 2, T oluyor. Bu bizim homojen çözümümüz.
+
+832
+02:47:23,088 --> 02:47:31,868
+Alfa 1 ve alfa 2'yi buradaki R, L ve C değerlerinden bulabiliyoruz ama A, büyük A ve büyük B değerini bilemiyoruz. Benzer şekilde bu birinci senaryoydu.
+
+833
+02:47:32,531 --> 02:47:35,912
+Yani doğal çözümün 3 durumunu ele alıyoruz. İkinci senaryo neydi?
+
+834
+02:47:36,451 --> 02:47:51,432
+Alfa 1, alfa 2'ye eşit ise, bunlar da alfa 1'e eşitse ve bu da bir real sayı ise, bu durumda V, C, T için önerimiz A çarpı E üzeri alfa T artı B çarpı T çarpı E üzeri alfa T şeklinde oluyordu.
+
+835
+02:48:00,084 --> 02:48:12,484
+Bu durumdaki önerimiz de V, C, T için A çarpı sinüs omega T artı B çarpı E üzeri A, T şeklinde bir denklem olmuş oluyordu.
+
+836
+02:48:13,363 --> 02:48:20,363
+Buradan A ve B'leri bilemiyoruz. Yani alfa 1 ve alfa 2 köklerinin durumlarına göre A ve B katsayılarımız var.
+
+837
+02:48:20,844 --> 02:48:25,783
+A ve B katsayılarını bulmak için ne yapmak lazım? Onu biraz sonra söyleyelim.
+
+838
+02:48:26,548 --> 02:48:40,987
+Bir de şurada zorlanmış çözümümüz var. Zorlanmış çözüm yerine yazdığımızda ikinci dereceden türevi sıfır, birinci dereceden türevi sıfır. Yani S bölü LC eşittir. VS bölü LC oluyor ve buradan S çözümümüz VS'ye eşit olmuş oluyor.
+
+839
+02:48:42,807 --> 02:48:46,147
+Bizim zorlanmış artı doğal çözüm önerimiz ise
+
+840
+02:48:46,739 --> 02:49:03,739
+Şunlardan bir tanesi, yani VC1, VC2 veya VC3'ten birisi gelecek. Bir de zorlanmış çözümden gelen çözümümüz gelecek. Yani bu ikisini birleştirdiğimizde, VCT için nihai olarak VIT,
+
+841
+02:49:04,979 --> 02:49:26,939
+V, İ, T dediğimiz alfa 1, alfa 2'den farklıysa şu. Alfa 1, alfa 2 eşitse bu. Alfa 1, alfa 2'den farklı ve kompleks sayılarsa eşlenirse bu. Buna karşılık gelsin. Artı S şeklinde bir terim olmuş oluyor. Bunun içerisinde A ve B parametrelerini bilmiyoruz ama S'yi biliyoruz. S neydi? B, S'yi eşit. Onu siz yerine yazalım.
+
+842
+02:49:28,020 --> 02:49:29,840
+Bu Vs'ye eşitti.
+
+843
+02:49:30,540 --> 02:49:35,420
+Şimdi, bu elde etmiş olduğumuz nihai çözümde, biz biliyoruz ki,
+
+844
+02:49:35,420 --> 02:49:42,900
+ÖL sıfır, sıfıra eşit, VC sıfır, VC sıfır neye eşitti, o da mı sıfırdı?
+
+845
+02:49:45,260 --> 02:49:46,260
+Seri devrede.
+
+846
+02:49:47,796 --> 02:50:00,376
+Seri devrede, ÖL0, 0, BC0, 0. Bu iki başlangıç durumunu kullanarak, iki bilinmeyen, iki denklem, A ve B katsayılarını bulabiliyor olacağız arkadaşlar.
+
+847
+02:50:00,556 --> 02:50:13,835
+Buradan A ve B'yi bulacağız. Zorlanmış çözümünü zaten bulmuştuk. Artık alfa 1 ve alfa 2'nin durumu neyse, ona göre ki gelen çözüm, oradaki AB katsayıları, büyük AB katsayıları ve B'seyi bulmuş olacağız.
+
+848
+02:50:16,051 --> 02:50:19,512
+Şey için de geçerli, birazcık küçülterek yazalım.
+
+849
+02:50:24,275 --> 02:50:36,996
+Benzer bir durum şuradaki paralel devre içinde geçerli. Paralel devre içinde yazacağımız denklem aslında şuna karşılık gelecek. Oradaki senaryoyu da şöyle yapalım.
+
+850
+02:50:44,244 --> 02:50:51,284
+Bir tane kaynağımız var. Paralel devre için bunu çizecektik. Çok detay çizmeyeceğim.
+
+851
+02:51:05,492 --> 02:51:06,532
+Şöyle çizelim.
+
+852
+02:51:09,492 --> 02:51:14,092
+T eşittir sıfır anında sisteme kaynak bağlanıyor.
+
+853
+02:51:14,092 --> 02:51:15,792
+R, L ve C.
+
+854
+02:51:16,452 --> 02:51:23,252
+Baktığımız zaman eksi sonsuzdan T eşittir sıfır anına kadar anahtar boşta.
+
+855
+02:51:26,272 --> 02:51:26,752
+Tamam mı?
+
+856
+02:51:27,052 --> 02:51:31,552
+T büyük eşit sıfırdan itibaren anahtar kapalı.
+
+857
+02:51:32,915 --> 02:52:00,236
+Anahtar boşluğuna göre buradaki başlangıç durumlarımız VC0, 0 diyebiliriz. Çünkü R üzerinden deşarj olmuştur. Ve benzer şekilde UL0 eşittir 0 diyebiliriz. Burada bir IS kaynağımız var. Ve T eşittir sonsuza giderken ne olması lazım? Endüktans kısa devre gibi çalışacak. Dolayısıyla UL sonsuz, IS'ye eşit olmak durumunda.
+
+858
+02:52:00,656 --> 02:52:18,095
+Ve yine VC sonsuzun da sıfıra eşit olması gerekiyor. Çünkü bütün akım buradan akacağı için ve R üzerine herhangi bir akım atmaz. Gerilim sıfır paralel oldukları için C'deki gerilimde sıfır olmuş olmalı.
+
+859
+02:52:18,579 --> 02:52:23,260
+Dolayısıyla burada biz denklemimizi yazacak olursak yine şunu yazabiliriz.
+
+860
+02:52:23,739 --> 02:52:28,599
+ÜR artı ÜL artı ÜC eşittir ÜS diyebiliriz.
+
+861
+02:52:29,420 --> 02:52:35,119
+ÜL, ÜR ve ÜC'nin hepsini şey cinsinden yazabiliriz.
+
+862
+02:52:35,199 --> 02:52:36,599
+ÜL cinsinden yazabiliriz.
+
+863
+02:52:36,659 --> 02:52:39,299
+Yani bunu yazdığında şöyle bir senaryoya karşılaşıyoruz.
+
+864
+02:52:39,796 --> 02:52:50,296
+ÖL'nin ikinci dereceden türevi artı bir kat sayı çarpı ÖL'nin birinci dereceden türevi artı bir başka kat sayı çarpı ÖL eşittir.
+
+865
+02:52:50,876 --> 02:52:54,156
+I, S şeklinde bir diferansiyel denklemle karşılaşmış oluyoruz.
+
+866
+02:52:54,716 --> 02:52:57,556
+Burada iki farklı çözüm olabilir diyorduk.
+
+867
+02:52:58,556 --> 02:53:03,496
+Burada A ve B'leri tekrar çözmekle uğraşmıyorum çünkü bir önceki slide'da bunları çözmüştük.
+
+868
+02:53:05,108 --> 02:53:14,208
+Buradan dolayı iki ayrı denklem çözümümüz var. Birincisi doğal çözüm. İkincisi zorlanmış çözüm.
+
+869
+02:53:16,887 --> 02:53:22,208
+Doğal çözümden kastettiğimiz ÖL iki üstü artı A çarpı ÖL.
+
+870
+02:53:23,924 --> 02:53:37,244
+ÜL üstü artı B çarpı ÜL eşittir sıfır denklemini çözmek oluyor. Dolayısıyla buradaki önerimiz ÜLT eşittir A çarpı E üzeri alfa T şeklindedir çözüm önerisi oluyor.
+
+871
+02:53:37,884 --> 02:53:46,824
+Doğrulanmış çözümde çözmek istediğimiz durum ÜL iki üstü artı A çarpı ÜL. Buradaki A'yı A1 yapalım da buradaki A ile karışmasın.
+
+872
+02:53:47,507 --> 02:54:05,808
+ÜL üstü artı B çarpı ÜL eşit bir ÜL'ye denk, ÜS pardon, ÜS şeklinde olacak ve buradaki çözüm önerimiz T eşitli sonuçta gittiğindeki durum neyse ona benzeyebilmesi için ÜLT için önerdiğimiz çözüm S şeklinde bir değer oluyor.
+
+873
+02:54:13,587 --> 02:54:24,888
+ÖLT zorlanmış çözümü, IS olarak elde etmiş oluyoruz. Burada B katsayısı RLC cinsinden bir değer.
+
+874
+02:54:25,648 --> 02:54:33,528
+Dolayısıyla, burada bir de C katsayısı var. Büyük ihtimalle. Şimdi eksik olmasın diye yazayım.
+
+875
+02:54:33,528 --> 02:54:36,788
+Ve bu neticede ÖL'yi bu şekilde elde ediyoruz.
+
+876
+02:54:37,332 --> 02:54:41,092
+Doğal çözüme geldiğimizde ise doğal çözümde 3 senaryo olabilir.
+
+877
+02:54:41,092 --> 02:54:50,012
+Alfa 1, alfa 2, real sayı ve alfa 1, farklı alfa 2 olabilir.
+
+878
+02:54:50,152 --> 02:55:04,572
+Bu durumda çözüm önerimiz ÖLT, A1 çarpı E üzeri alfa 1T artı A2 çarpı E üzeri alfa 2T şeklinde olabilir veya hep aynı şeyler de.
+
+879
+02:55:06,195 --> 02:55:27,155
+Vermek gerekiyor işte. Alfa 1, alfa 2'ye eşit ve bunlar real sayı ise, bu durumda ÖLT için çözüm önerimiz, A1 çarpı E üzeri alfa T artı B, A2 diyelim, A2 çarpı T çarpı E üzeri alfa T olabilir.
+
+880
+02:55:27,675 --> 02:55:33,435
+Veya üçüncü senaryo, doğal çözümün üçüncü senaryosu da hep aynı şeyler zaten dikkat ediyorsanız arkadaşlar.
+
+881
+02:55:34,067 --> 02:55:51,887
+Üçüncü önerimizde alfa 1 ve alfa 2 eşlenik karmaşık kökler ise, karmaşık sayı eşlenik kökler ise, bu durumda I, L, T için önerimiz, A çarpı E üzeri, pardon E değil,
+
+882
+02:55:53,716 --> 02:55:59,976
+Sinüs, Omega T artı B çarpı E üzeri AT şeklinde bir çözüm önerimiz olmuş oluyor.
+
+883
+02:56:00,236 --> 02:56:05,256
+Şimdi bu ikisini birleştirdiğimizde, doğal çözüm artı zorlanmış çözüm.
+
+884
+02:56:05,376 --> 02:56:10,976
+O zaman, I, L, T dediğimiz şey, I, K, T.
+
+885
+02:56:12,216 --> 02:56:20,476
+Burada şu K eşittir bir, K dediğimiz şey, eğer alfalar birbirinden farklı değer sayıysa, bunu kastediyoruz.
+
+886
+02:56:21,172 --> 02:56:33,072
+Eşitlerse bunu kastediyoruz. Karmaşık sayı varsa bunu kastediyoruz. Artı, Is şeklinde bir terim olmuş olacak. Çözümünü tekrar etmemek adına böyle yazıyorum.
+
+887
+02:56:33,843 --> 02:56:54,943
+Burada da aslında bu seçmiş olduğumuz doğal çözümde A ve B kat sayıları var. A ve B kat sayılarını bulabilmek için VC0'ın 0 olmasından ve IL0'ın 0 olmasından hareketle 2 bilinmeyen 2 denklem A ve B kat sayılarını bulup çözüm önerimizi nihai hale getirmiş olacağız arkadaşlar.
+
+888
+02:56:55,476 --> 02:57:02,356
+Buraya kadar olanla ilgili sormak istediğiniz bir şey var mı? Bunu da yine paylaşmış durumdayım. Bir kontrol edin erişebiliyor musunuz?
+
+889
+02:57:08,948 --> 02:57:11,028
+Erişip erişemediğinizi kontrol eder misiniz?
+
+890
+02:57:24,020 --> 02:57:29,620
+Burada bu kat sayıların nasıl hesaplandığıyla ilgili olarak, tamam açılıyorsun, süper.
+
+891
+02:57:31,700 --> 02:57:39,780
+Bu kat sayıların nasıl hesaplandığıyla ilişkili olarak bakacak olursak, birinci senaryoda kökler bu şekilde bulunuyordu.
+
+892
+02:57:39,920 --> 02:57:44,299
+Alfa 1 ve omega dediğimiz şeyler buradaki kat sayılar cinsinden verilmiş durumda.
+
+893
+02:57:44,299 --> 02:57:46,479
+İkinci senaryoda alfamız.
+
+894
+02:57:47,283 --> 02:58:03,283
+Var, omegamız sıfır çıkıyordu, omega sıfırımız sıfır çıkıyordu. Dolayısıyla bir T ile çarparak sonuç elde ediyordu. Eğer ki alfa omegadan küçükse, yani karmaşık sayı kök çıkıyorsa, burada elde ettiğimiz durum...
+
+895
+02:58:04,915 --> 02:58:11,076
+Hangi katsayı ne? İşte omega D dediğim şey omega 0 kare eksi alfa kare ondan bulunuyor.
+
+896
+02:58:11,615 --> 02:58:18,816
+Alfa dediğimiz şey bizim kendi alfamız yani karmaşık kökün real kısmı ve bu şekilde bir çözüm önerisi yazabiliyoruz.
+
+897
+02:58:18,915 --> 02:58:25,275
+Dediğim gibi bunu faz farkı ekleyerek de yazabilirsiniz. Aynı şeye denk geliyor.
+
+898
+02:58:26,095 --> 02:58:31,615
+Bu üç çözümü bu şekilde ifade etmiş oluyoruz. Şimdi bu dersimizi burada bitirelim. Süremiz de bitmiş oldu.
+
+899
+02:58:32,147 --> 02:58:40,987
+Vermiş olduğum slide'ları mutlaka inceleyin. Biz slide'lar üzerinden değil, doğrudan kategorik olarak bunları vererek çözümü yapmış olduk.
+
+900
+02:58:41,327 --> 02:59:01,407
+Önümüzdeki derste bunlara ilişkin olarak örnekler çözerek, daha karmaşık örnekler çözerek, farklı karmaşık yapılardan işin kondişinleri nasıl hesaplayacağız, diferansiyel denklemde çıkan bizim kendi fonksiyonumuzu bulduk ama bizden başka bir değere ilişkin çözümleme isteniyorsa onunla ilgili ne yapacağız gibi senaryoları konuşuruz.
+
+901
+02:59:02,868 --> 02:59:15,788
+Buraya kadar olanlarla ilgili sormak istediğiniz bir şey var mı? Bu haliyle biz RL, RC ve RLC devrelerinin zaman domenini teorik olarak bitirmiş oluyoruz. Bunların çözüm örneklerine haftaya bakacağız.
+
+902
+02:59:17,008 --> 02:59:19,548
+Buraya kadar olanlarla ilgili sormak istediğiniz bir şey var mı arkadaşlar?
+
+903
+02:59:27,987 --> 02:59:54,127
+Tamamdır. Şimdi ben buradaki ders kaydını da Google Classroom'dan paylaşacağım. Her iki grup da oradan linke tıklayarak girebilir ama linkin oluşması biraz zaman alıyor. Yani yükleme yaptıktan sonra link oluşuyor. Yani gün içerisinde yüklemeyi yaparım. Birinci grup da oradan online yıldız editlerinden erişebiliyor ama ikinci grubun da erişebilmesi için linki de koyacağım arkadaşlar. Benim bu haftalık anlatacaklarım bu kadar. Teşekkür ediyorum.
+
+904
+02:59:54,804 --> 02:59:56,683
+Haftaya tekrar görüşmek üzere arkadaşlar.
