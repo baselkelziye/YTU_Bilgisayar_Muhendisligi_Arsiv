@@ -1,0 +1,2079 @@
+1
+00:00:16,884 --> 00:00:17,903
+Merhaba hocam.
+
+2
+00:06:13,684 --> 00:06:17,684
+Arkadaşlar, sesim gibi olmak.
+
+3
+00:06:18,684 --> 00:06:20,427
+İnanılacağım geliyor.
+
+4
+00:06:27,283 --> 00:06:35,483
+Ben sizin sesinizi alamadım ama. Sesini... Tekrar bir ses verir misiniz?
+
+5
+00:06:36,504 --> 00:06:44,183
+Hocam sesim geliyor mu? Geliyor Herkese. Günaydın hocam. Günaydınlar.
+
+6
+00:06:49,139 --> 00:06:51,699
+Evet, biriniz başlayın öngülse.
+
+7
+00:06:53,740 --> 00:06:56,060
+Hocam, isterseniz ben başlayabilirim.
+
+8
+00:06:58,299 --> 00:06:59,459
+Tamam, başlayalım.
+
+9
+00:07:00,019 --> 00:07:01,899
+Tamam, ekran paylaşayım.
+
+10
+00:07:03,099 --> 00:07:03,599
+Paylaş.
+
+11
+00:07:17,651 --> 00:07:21,751
+Hocam şu anda ekranda sunum gözüküyor olması lazım.
+
+12
+00:07:25,072 --> 00:07:36,091
+Herkese merhaba, ben [öğrenci]. [kişisel bilgi]
+
+13
+00:07:36,851 --> 00:07:39,931
+İlk olarak sunum planımdan bahsetmek istiyorum.
+
+14
+00:07:40,884 --> 00:07:44,624
+İlk aşamada problem tanımından ve motivasyondan bahsedeceğim.
+
+15
+00:07:44,624 --> 00:07:46,364
+Geçeyim mi?
+
+16
+00:07:46,783 --> 00:07:49,624
+Geç abi. Görücü olacaksın sen bunları yapın.
+
+17
+00:07:49,624 --> 00:07:50,084
+Tamam hocam.
+
+18
+00:07:51,252 --> 00:08:03,091
+Tamamdır. Problem tanımına baktığımız zaman bildiğimiz üzere uzaktan algılama teknolojisindeki gelişmelerle birlikte artık yüksek çözünürlük bir devasa boyutta hacimlerde veriler üretiliyor.
+
+19
+00:08:03,572 --> 00:08:14,432
+Ve bu üretilen verilerin manuel olarak analiz edilmesi zor. Çünkü hem zaman alıcı hem insan hatasını açık bir süreç. Bu sebeple de otomatik sistemlere ihtiyaç duyuluyor.
+
+20
+00:08:14,432 --> 00:08:19,211
+Öte bir yandan bu görüntüler standart görüntülere göre daha karmaşık sahneler için.
+
+21
+00:08:19,252 --> 00:08:31,252
+Bu da modelleme sürecini zorlaştırıyor.
+
+22
+00:08:31,759 --> 00:08:53,379
+Motivasyonumuza baktığımız zaman az önce bahsettiğimiz üzere bu görüntülerin hacmi hızla artıyor ve manuel olarak analiz edilmesi zor. Aynı zamanda bu verilerden otomatik anlamsal bilginin çıkarılması gerekiyor. Çünkü AFET tespitinde, arazi kullanımında ve şehirleşme analizlerinde bir yorum ihtiyacı bulunuyor.
+
+23
+00:08:54,484 --> 00:09:06,084
+Öte yandan da karar destek süreçlerine bu görüntü açıklama sistemlerinin katkısı yatsınamaz. Bu sebeple de uzaktan açıklama uygulamalarında otomasyon ihtiyacı haykı fazla.
+
+24
+00:09:06,580 --> 00:09:31,620
+Literatür çalışmalarına baktığımız zaman ilk aşamalarda CNN, LSTM tabanında enkoder-dekoder mimarileri kullanılıyordu. Burada bir görüntüden özellik çıkarılıyor ve metin kelime-kelime üretiliyor. Ama bu mimari de tek bir global özellik vektörüyle temsil ediliyor verilen görseller. Bu da sahnenin farklı noktalarındaki ayrıntıların kaybolmasına neden oldu.
+
+25
+00:09:34,580 --> 00:10:01,160
+Bir tarafından attention mekanizması yönelildi. Bu mekanizmada modelin her kelime üretim adımında görüntülerinin farklı bölgelerine odaklanarak farklı özellikleri kaybetmemesi sağlandı. Yani tek bir global özellik vektörü yerine mekansal bir kullanılabilir hale geldi. Yani attention tabanlı modeller klasik enkoder-dekoder yapılarına göre daha tutarlı ve anlamlı cümleler yürütçülüyordu.
+
+26
+00:10:01,552 --> 00:10:08,731
+Uzaktan algılama alanındaki çalışmalara baktığımız zaman en önemlisi bu RSI-CD veri setinin oluşturulması oldu.
+
+27
+00:10:10,312 --> 00:10:16,512
+Genellikle bu alandaki çalışmalar attention tabanlı captioning modellerini bu veri setine uyarlıyordu.
+
+28
+00:10:18,012 --> 00:10:25,211
+Veri setine baktığımız zaman da çok ölçekli, yüksek çözenirlikli ve karmaşık olduğu için overfitting riski bir hayli yükseldi.
+
+29
+00:10:28,532 --> 00:10:44,312
+Yeni bir yöntem önermedim. Genel olarak attention tabanlı enkoder mimarisini temel aldım. Yeni bir yöntem önermekten ziyade bu yaklaşımı uzaktan aldığı görüntülerindeki başarısını ve sınırlamalarını analiz etmek için kullandım.
+
+30
+00:10:44,884 --> 00:11:12,884
+Veri setine baktığımız zaman, RSICD olduğunu söylemiştim, yüksek çözünürlükle bir görüntülerinden oluşan bir veri kümesi. İçerisinde havaalanı, liman, yerleşim alanı, tarım arazileri ve doğal alanlar gibi çeşitli kategoriler bulunuyor. Ve her bir resmi insanlar tarafından oluşturulmuş, beş farklı referans açıklamayla tanımlıyorlar. Bu veri kümesinde eğitim, doğrulama ve test olmak üzere üç farklı kısım bulunuyor.
+
+31
+00:11:12,884 --> 00:11:23,884
+Eğitim kısmına baktığımız zaman 8734 görüntü, doğrulama kısmında 1000 görüntü, test kısmında 1093 görüntü bulunuyor. Bu görüntüler CSC formatında ve...
+
+32
+00:11:24,399 --> 00:11:43,019
+Ayrı bir dosya halinde değil, csv içerisine byte dizisi olarak, gömülü olarak koyulmuş. Bu sebeple ben ilk olarak ön işleme kısmında bu görüntüleri byte dizisinin RGB formatına dönüştürdüm. Aşağı kısımda da zaten görülüyor byte dizisi olarak şey olduğu örnek olarak koydum.
+
+33
+00:11:43,399 --> 00:11:52,019
+İlk olarak ön işleme kısmını yapmak gerektiğini söylemiştim. Metini yani tanımları bir ön işleme kısmından geçirdim.
+
+34
+00:11:52,399 --> 00:11:56,959
+csv dosyalarında string olarak geliyordu bu tanımlar.
+
+35
+00:11:57,559 --> 00:11:59,840
+Bazen birleşik halde bulunuyor aynı zamanda.
+
+36
+00:11:59,980 --> 00:12:02,519
+Yani noktayla bitiyor bir cümle.
+
+37
+00:12:02,779 --> 00:12:06,100
+Herhangi bir boşluk bulunmadan yeni bir cümle başlıyordu.
+
+38
+00:12:06,480 --> 00:12:08,000
+Yani birleşik olarak bulunuyordu.
+
+39
+00:12:08,000 --> 00:12:13,000
+Bu birleşik halde bulunan açıklamaları ayrıştırılarak re-s ile...
+
+40
+00:12:13,299 --> 00:12:27,299
+Eğitim örneği haline getirildi. Daha sonrasında bütün harfler küçük harfe dönüştürüldü. Noktalama işaretleri temizlendi ve gereksiz boşluklar giderilmiş oldu. Daha sonrasında hepsi aynı formata getirilince...
+
+41
+00:12:27,615 --> 00:12:55,195
+Anlamca birbiriyle aynı olan cümleler ortaya çıktı. Overset'in keskini azaltmak için de bu anlamca aynı olan cümleleri elememiz gerekti. Bunları da azaltmış oldum. Daha sonrasında da bir kelime dağarcığı oluşturduk. Vokabilerli set oluşturduk. Bu seti de eğitim setindeki tüm açıklamalar tarandı. Kelimelerin frekanslarına göre sözlük oluşturuldu. Daha sonrasında da bu sözlüklere indeks atandı.
+
+42
+00:12:55,615 --> 00:13:04,215
+Görüntü İşleme kısmında ise ilk olarak elde ettiğimiz görüntüleri Byte dizisinden RGB formatına dönüştürmüştüm.
+
+43
+00:13:04,215 --> 00:13:10,415
+Oradan da Resizing yapmam gerekti. 224x224 boyutuna getirmem gerekti.
+
+44
+00:13:10,415 --> 00:13:17,015
+Çünkü Encoder kısmında resmen elbiyatı kullanıyordum ve bu girdi olarak 224x224.
+
+45
+00:13:17,216 --> 00:13:27,115
+İntik görselleri alıyordu. Bu sebeple buraya dönüştürmem gerekti. Ardından da 3 kanallık standart RGB uzayını dönüştürdüm tüm görüntüleri.
+
+46
+00:13:28,115 --> 00:13:45,516
+Daha sonrasında bir normalizasyon işlemi uyguladık. ResNet 50 kullandığımı söylemiştim. Bu model ImageNet veri kümesi üzerinde itildiği için bu veri kümesinin ortalama ve standart satma değerlerini kullanarak kendi veri setimi normalize etmem gerekti.
+
+47
+00:13:45,516 --> 00:13:55,516
+Tabi bunun amacı aydınlatma ve kontrast farklarını azaltarak bu pre-trade modelin ağırlıklarını daha verimli kullanalım. Herhangi bir data augmentation uygulanmadı.
+
+48
+00:13:56,019 --> 00:14:11,779
+Burada genel mimariyi görüyoruz. Sağ tarafta bir mimari çizim. İlk olarak 224-220 boyutuna getirilmiş görseller resmet 50 tabanlı enkoder ağdan geçiriliyor. Ağın son sınıflandırma katmanını dondurdu.
+
+49
+00:14:12,176 --> 00:14:22,676
+Yani bunun amacı, görüntüyü tek bir etiket yerine Feature Mapler şeklinde elde etmekti.
+
+50
+00:14:22,676 --> 00:14:26,676
+Elde ettiğimiz bu Feature Mapleri de attention mekanizmasına gönderdik.
+
+51
+00:14:26,676 --> 00:14:34,676
+Burada, o an üretilecek kelime ile en ilişkili görüntü bölgesine ağırlık puanları vererek odaklanıyoruz.
+
+52
+00:14:34,676 --> 00:14:38,176
+Bir konteks vektörü, yani bağlam vektörü oluşturuyoruz.
+
+53
+00:14:38,388 --> 00:14:44,208
+Attention tarafından oluşturan bu bağlam vektörü bir önceki kelime ve ilk kelimeler.
+
+54
+00:14:44,255 --> 00:15:02,816
+Önceki gizli durum LSTM tabanlı dekodere verilerek bir sonraki kelimenin olasılık hesabı yapılıyor. En yüksek olasılığa sahip kelime seçiliyor ve bir sonraki adım için döngüye sokunmuş oluyor. Cümle sonu belirteci gelene kadar da bu kelime tahmin etme işlemi devam ediyor.
+
+55
+00:15:03,316 --> 00:15:11,756
+Ayrıntılı olarak baktığımız zaman enkoderde ResNet50 kullandığımızı söylemiştik. Bu Pre-Trade Model Image Netver hükümesi üzerinde eğitildi.
+
+56
+00:15:12,255 --> 00:15:29,575
+Uzam sınıflandırma katmanını çıkarttık. Yani uzamsal bilgiyi elde etmeyi amaçladık. N çarpıda özellik haritaları alınmıştır diyor. Bizim projemizde 49 çarpı 2048 boyutundaki bir matris olarak elde ediyoruz bu özellik haritalarını.
+
+57
+00:15:30,035 --> 00:15:57,915
+Etansion'da 49 farklı bölgeye odaklanıyor. İki aşamalı eğitim stratejisi benimsedim. Eğitimin başında enkoder'i dondurdum. Sadece dekoder'e eğittim. Daha sonrasında da enkoder'in üst katmanlarını serbest bırakarak düşük bir öğrenme oranı ile veri seti üzerinde fun tuning işlemi yaptım. Enkoder'den elde edilen çifti. Az önce de bahsettiğim üzere n çarpı b boyutunda yani 49 çarpı 2048 boyutunda bir matristi. Bu matris uzamsal bilgi.
+
+58
+00:15:58,035 --> 00:16:01,775
+Yani mekansal bilgiyi koruyordu ve dikkat mekanizmasını iletiyordu.
+
+59
+00:16:02,932 --> 00:16:30,932
+Dikkat mekanizması da en adet farklı bölgeye ayrı ayrı, yani 49 adet farklı bölgeye ayrı ayrı bakıyor. Enkodardan gelen özelliklerle gizli duruma kullanarak bir uyum skoru üretiyor. Daha sonrasında bu uyum skorunu softmax ile normalize ederek dikkat ağırlıklarını dönüştürüyor. Bu ağırlıklar hangi bölgenin ne kadar önemli olduğunu gösteriyor. Görsel özelliklerin dikkat ağırlıkları ile çarpılıp toplanma sonucu da bir konteks vektör oluşuyor.
+
+60
+00:16:30,932 --> 00:16:39,091
+Yani her zaman adımında güncelleniyor. Ağaç derken yeşil alanlara yol derken de gri şeritlere odaklanmış oluyor bu mekanizma.
+
+61
+00:16:39,692 --> 00:16:48,052
+Elestiam kısımında yani dekoder kısımında 3 farklı bilgiyle besliyoruz. Önceki kelimenin word embeddingini yani vektör halini veriyoruz.
+
+62
+00:16:48,052 --> 00:16:53,971
+Daha sonrasında konteks vektörü ve gizli durumunu, ağın bir önceki hafızlık durumunu veriyoruz.
+
+63
+00:16:54,371 --> 00:16:58,552
+Çıklı olarak kelimelerin olasılık dağılımı oluşturuluyor.
+
+64
+00:16:58,932 --> 00:17:00,932
+En yüksek olasılıklı kelime seçilmiş oluyor.
+
+65
+00:17:01,331 --> 00:17:28,411
+Eğitim stratejisine baktığımız zaman Adam Optimizer kullandım. 32 bed size. Cross Entropy Loss kullandım. Learning Bays'leri burada görüyorsunuz. Enkoder ve dekoder farklı. Early Stopping kullanmak zorunda kaldım. Çünkü daha önce bahsetmiştim. Overfitting Risky vardı. Bu sebeple eğitim sırasında Loss'a göre değil de en önemli metrik olan Cider Skoruna göre eğitimi devam ettirdim veya durdurdum.
+
+66
+00:17:29,332 --> 00:17:32,652
+Düşmeye devam etse de bir süre sonra Cider 0'u
+
+67
+00:17:32,816 --> 00:17:42,215
+Düşmeye başlıyor. Yani anlamsal başarı azalmaya başlıyor. O sebeple Cider skoruna göre erken durdurma işlemi uyguladı.
+
+68
+00:17:42,215 --> 00:17:51,816
+Nicel sonuçları burada görüyoruz. 0.698 Cider, Meteor 0.420 ile Bilevi de 0.6'dan 0.2'ye kadar iniyor.
+
+69
+00:17:51,816 --> 00:18:00,516
+En önemli metrik Cider'di. Sahneye özgü ayırt edici başarıyı gösteren en kritik metrik. Meteor'da kelime kökleri ve eş anlamlılığı da dikkate alıyor.
+
+70
+00:18:00,816 --> 00:18:03,816
+Burayı da referans metinle karşılaştırıyor.
+
+71
+00:18:03,816 --> 00:18:09,316
+Tahti, ikili, üçlü ve dörtlü kelime eşleşmelerine bakıyor.
+
+72
+00:18:09,316 --> 00:18:11,816
+Bu skorları elde ettim.
+
+73
+00:18:11,816 --> 00:18:17,316
+Sağ tarafta da validasyon set üzerindeki metrik sonuçlarını görüyoruz grafik olarak.
+
+74
+00:18:17,316 --> 00:18:22,316
+Genellemeye baktığımız zaman test sonuçları doğrulama kümesine yakın ve dengeli.
+
+75
+00:18:22,316 --> 00:18:26,316
+Bu da overfitting'in kontrol altında olduğunu kanıtlıyor.
+
+76
+00:18:26,496 --> 00:18:33,936
+İki tane örneğe koydum nitel sonuçlara. Sol taraftaki görselde bir köprü bulunuyor, göl bulunuyor.
+
+77
+00:18:33,936 --> 00:18:40,416
+Many green trees are on two sides of river with bridge over it gibi bir açıklama üretti model.
+
+78
+00:18:40,416 --> 00:18:53,376
+Sağ tarafta da böyle bir yapı bulunuyor. Bayağı bir gemi falan var, liman var. Many buildings are located on both sides of a road, yine port gibi bir açıklama üretti.
+
+79
+00:18:53,715 --> 00:19:20,976
+Bunu zaten demo kısmında tekrar göreceğiz. Projemin güçlü ve zayıf yönlerine baktığım zaman dikkat yani attention mekanizması ile detay odaklı öğrenme. Model burada tüm sahne yerine kelime ile ilgili bölgeye odaklanıyor ve bilgi kaybını önlüyor. Aynı zamanda cidermetliğine baktığımız zaman da skorlar ve modelin sahnenin anayapısını ve baskı nesneleri boşalığı bir şekilde tanımladığını gösteriyor.
+
+80
+00:19:21,715 --> 00:19:45,583
+Önlere baktığımızda model proje overfitting eğiliminde bunu erken durdurmayla önlemeye çalıştık. Veri seti sınırlı olduğu için de nadir görülen nesneler için çok genel ifadeler üretiyor. Bunu çözmemiz gerekiyor. Bir diğer taraftan da baskı nesneler ve...
+
+81
+00:19:45,584 --> 00:19:52,884
+Başkın nesneler başarıyla tespit edilse dahi karmaşık mekansal ilişkileri ve küçük detayları ifade etmekte zorlanıyor.
+
+82
+00:19:53,564 --> 00:20:00,000
+Sanıç olarak baktığımız zaman dikkat mekanizmalı LSTM tabanlı yaklaşım anlamlı ve tutarlı ifadeleri üretmekte zorlanıyor.
+
+83
+00:20:00,000 --> 00:20:05,000
+için etkili bir yöntem. Cider metriyle ayırt edici görsel yapıları ve baskın nesneleri
+
+84
+00:20:05,000 --> 00:20:10,000
+başarıyla yakalayabildiğini gösteriyor. Ayrı zamanda geniş alanlar ve çoklu nesneler
+
+85
+00:20:10,000 --> 00:20:18,000
+içeren görüntülerde de görsel bölgeleri başarıyla gözlemliyor. Fine Tuning yapmıştık.
+
+86
+00:20:18,000 --> 00:20:21,000
+Bu da genelleme performansını arttırıyor.
+
+87
+00:20:22,483 --> 00:20:33,763
+Gelecekteki çalışmalarda ne yapılabilir? Transformer tabanlı mimariler kullanılabilir veya multi-et retention mekanizmaları kullanılabilir. Bunun için de daha büyük veri setlere ve donanım desteği gerekiyor.
+
+88
+00:20:34,443 --> 00:20:50,463
+Dediğim gibi genelleme yeteneklerini geliştirmek için daha büyük ve çeşitli uygu görüntüsü içeren veri setleri kullanılabilir. Aynı zamanda da açıklama üretiminin yanı sıra arazi sınıflandırma ve değişik tespiti gibi görevlerle birlikte çalışan entegre sistemler üzerine de çalışılabilir.
+
+89
+00:20:50,483 --> 00:20:54,683
+Sınımın bu kadar da referanslerim.
+
+90
+00:20:54,923 --> 00:20:56,364
+Dinlediğiniz için teşekkür ederim.
+
+91
+00:20:58,644 --> 00:21:00,703
+Hocam bir de şey
+
+92
+00:21:00,703 --> 00:21:03,603
+Buraya kapatayım.
+
+93
+00:21:05,543 --> 00:21:07,583
+Demok kısmını göstermek istiyorum.
+
+94
+00:21:14,612 --> 00:21:16,412
+Çalıştırmam gerekiyor.
+
+95
+00:21:53,619 --> 00:21:55,619
+Df ne oluyor programda?
+
+96
+00:21:56,919 --> 00:21:57,579
+Efendim hocam?
+
+97
+00:21:58,579 --> 00:22:05,259
+Program gösterdiğim kutla Df, Trim, Df, Df, Df var. Bunlar mı?
+
+98
+00:22:07,759 --> 00:22:09,959
+Hocam tam göremedim ama.
+
+99
+00:22:12,139 --> 00:22:12,939
+Hemen altta.
+
+100
+00:22:14,019 --> 00:22:15,039
+Burası mı?
+
+101
+00:22:16,699 --> 00:22:20,199
+Hocam, CSV dosyasından verileri okumak için.
+
+102
+00:22:25,140 --> 00:22:28,740
+Yolunu tanımladın. Kolek kullandım, yolunu tanımladım.
+
+103
+00:22:28,740 --> 00:22:32,740
+Sonra Pandas Kütüphaneşi...
+
+104
+00:22:32,740 --> 00:22:36,740
+Pd.riyik.csl diyor. Pd ne?
+
+105
+00:22:36,740 --> 00:22:42,740
+Pandas. Hocam bunu kısaltması Pd. Pandas s pd.
+
+106
+00:22:42,740 --> 00:22:44,740
+Pandas ne?
+
+107
+00:22:44,740 --> 00:22:46,740
+Evet.
+
+108
+00:22:52,915 --> 00:22:59,915
+Pandas ne pandas? Pandas kütüphane. Ne kütüphanesi?
+
+109
+00:23:01,915 --> 00:23:08,915
+Pandas baya kullanılan bir kütüphane ama çok ayrıntısı hakkında bilgim yok maalesef.
+
+110
+00:23:15,347 --> 00:23:24,347
+Ne kadarını buldun, aldın, ne yaptın? Yapay zekâ ile ne yazdırdın, sen ne yaptın?
+
+111
+00:23:24,347 --> 00:23:32,172
+Hocam valla bunu yapay zekâ ile birlikte yazdım. Kendim yazamazdım.
+
+112
+00:23:35,571 --> 00:23:40,571
+Zaten yanlış çalıştırmışım. Yapay zekadan yararlandım.
+
+113
+00:23:43,571 --> 00:23:49,571
+Enkoder CNN zaten okudu ben bir yerlerde, sunumlarda daha evvel gördüm.
+
+114
+00:23:49,571 --> 00:23:50,571
+Evet hocam.
+
+115
+00:23:50,571 --> 00:23:53,571
+Bu olduğu gibi var olan bir not bulmak.
+
+116
+00:23:54,571 --> 00:23:58,571
+Hocam var olan değil de, yapay zekadan yararlanırken...
+
+117
+00:23:59,443 --> 00:24:02,523
+O veriyor. Yani bir yerde hazır değil de.
+
+118
+00:24:02,523 --> 00:24:09,683
+O ismi gördüm yani. Direkt sanki bu notbook var mıydı acaba?
+
+119
+00:24:09,683 --> 00:24:15,923
+Yok hocam, bu notbook yoktu da sıfırdan yapay zeka ile birlikte oluşturdum.
+
+120
+00:24:15,923 --> 00:24:18,644
+Hazır değildi de.
+
+121
+00:24:18,644 --> 00:24:22,884
+Diğer arkadaşlar da şey yaptıysa.
+
+122
+00:24:25,044 --> 00:24:29,036
+Pardon, ben yanlış yere çalıştırdım. Burayı çalıştırmamam gerekiyordu.
+
+123
+00:24:47,059 --> 00:24:49,980
+Slide'de ne kadar yapay zeka kullandın?
+
+124
+00:24:49,980 --> 00:24:52,379
+Nerede hocam? Slide'da mı?
+
+125
+00:24:52,379 --> 00:24:55,460
+Evet. Slide'ı kendim oluşturdum hocam.
+
+126
+00:24:55,460 --> 00:24:57,460
+Hiç orada yapay zeka kullanmıyorum.
+
+127
+00:24:58,660 --> 00:24:59,980
+Yani sadece yapay...
+
+128
+00:24:59,980 --> 00:25:04,660
+Yapay zeka şeyi görünüyor ama. Hissediyorum yapay zeka ve slide'de.
+
+129
+00:25:06,019 --> 00:25:09,619
+Metinlerde mi? Genel olarak tasarımda mı?
+
+130
+00:25:09,619 --> 00:25:11,220
+Metinlerde.
+
+131
+00:25:11,380 --> 00:25:17,180
+Rapor üzerinden zaten şey yaptım genel olarak. Oradan tabii yararlandım da.
+
+132
+00:25:17,620 --> 00:25:21,079
+Raporu üzerinden yazdın, yapay zekanı yazdın.
+
+133
+00:25:21,859 --> 00:25:22,359
+Raporu mu?
+
+134
+00:25:23,700 --> 00:25:24,059
+Evet.
+
+135
+00:25:25,339 --> 00:25:26,839
+Yararlandım hocam her aşamada.
+
+136
+00:25:33,011 --> 00:25:36,091
+Yapay zekalıya ders geçme notu vereceğim.
+
+137
+00:25:38,311 --> 00:25:40,692
+Bana mı hocam yoksa genel olarak mı?
+
+138
+00:25:40,692 --> 00:25:44,711
+Yapay zekalıya vereceğim. Open AI'a geçecek bu dersin.
+
+139
+00:25:44,711 --> 00:25:46,071
+Anladım.
+
+140
+00:25:47,011 --> 00:25:52,731
+Hocam haklısınız valla ama olmadan da yapılmıyor artık ya. Biraz uyum sağlamak gerekiyor.
+
+141
+00:25:53,523 --> 00:26:00,523
+Ama siz öğrencisiniz. Sizin kendiniz yapmanız lazım. Öğrenmeniz lazım.
+
+142
+00:26:00,523 --> 00:26:09,523
+Evet, o konuda çok haklısınız hocam. Gerçekten düşünmemizi engelliyor. Öğrenme açısından da gelip.
+
+143
+00:26:09,523 --> 00:26:13,523
+Engelliyor düşünmeyi öğrenmeyi bil. Haklısınız hocam.
+
+144
+00:26:14,836 --> 00:26:24,076
+Hocam şöyle göstereyim, yanlış kısım çalıştırmıştım. Şu anda test set üzerinden seçtiği 6 tane görseli yorum yapıyor.
+
+145
+00:26:24,076 --> 00:26:30,076
+A small bridge is on river with many boats on it diye bir açıklama yaptı bu görsele.
+
+146
+00:26:30,076 --> 00:26:38,716
+A playground is surrounded by many green trees and several buildings. Bu şekilde.
+
+147
+00:26:40,723 --> 00:26:42,723
+Residen Tlalya.
+
+148
+00:26:42,723 --> 00:26:44,723
+Benim bu hasar yine Portmi Redalk.
+
+149
+00:26:48,339 --> 00:26:52,339
+Burada bu şekilde bir açıklama yaptı. Tekrar çalıştırayım.
+
+150
+00:27:08,627 --> 00:27:14,387
+Bu şekilde her defasında testletinden 6 tane görsel seçerek yorum yapıyor.
+
+151
+00:27:14,987 --> 00:27:17,387
+Burada mesela yanlış bir yorum yaptı.
+
+152
+00:27:17,947 --> 00:27:18,947
+Sanırım.
+
+153
+00:27:19,187 --> 00:27:21,787
+Aynen River dedi ama River yok.
+
+154
+00:27:24,107 --> 00:27:26,027
+Kör River diyor.
+
+155
+00:27:26,027 --> 00:27:31,227
+Kaki, bilmiyorum hiç denk gelmedim. Böyle yanlış bir kelime öğrenmiş.
+
+156
+00:27:33,395 --> 00:27:37,395
+Many cars and several green trees are around a church near a road.
+
+157
+00:27:42,996 --> 00:27:52,216
+Hocam bu şekildeydi. Projem. Başka bir göstermemi istediğiniz bir yer varsa.
+
+158
+00:27:52,976 --> 00:27:59,896
+Yukarıya doğru bir gel bakalım. Koduna ne kadar hakimsin merak ettim. Dur. Biraz bir kodu göremiyorum.
+
+159
+00:28:02,456 --> 00:28:06,796
+Hocam model yorumladığınız kısım değildi burası. Diğer kısmı mı açsam?
+
+160
+00:28:07,576 --> 00:28:08,336
+Niye?
+
+161
+00:28:08,980 --> 00:28:21,519
+Bu sadece modeli tekrardan yükleyip, mimarileri altyapısını yapıp tahmin yaptığı yer. Model eğitimi bir kısım daha var da o sebeple sorayım.
+
+162
+00:28:23,899 --> 00:28:27,240
+Modeli farklı notbukta mı yaptın?
+
+163
+00:28:27,240 --> 00:28:36,180
+Evet, model eğitimi farklı notbukta. Direkt burada göstermek için şey yaptığım kısımda.
+
+164
+00:28:37,236 --> 00:28:38,876
+Farklılar, bugünkü deri alın.
+
+165
+00:28:47,571 --> 00:28:48,871
+Dua, gula sergip.
+
+166
+00:28:56,468 --> 00:28:57,588
+Tak, Fidus.
+
+167
+00:29:09,332 --> 00:29:11,332
+Misal nakil ufijer veks.
+
+168
+00:29:13,572 --> 00:29:18,380
+Misal nakil.
+
+169
+00:29:30,579 --> 00:29:34,159
+Bunlar ne oluyor burada? Buralar ne oluyor burada?
+
+170
+00:29:35,539 --> 00:29:38,919
+Burada mı hocam? Tam olarak neyi soruyorsunuz?
+
+171
+00:29:39,659 --> 00:29:41,699
+Onu bana açıkla. Orada ne yapıldığı?
+
+172
+00:29:41,699 --> 00:29:44,651
+Hocam burada biz...
+
+173
+00:29:44,948 --> 00:30:10,307
+Elimizde veriler vardı, görseller vardı. Görsellerde her birinin için 5 tane caption olduğunu söylemiştim. Daha sonra bir preprocessing aşamasından geçirdim. Regex ile 5 farklı cümleye ayırmıştım ve hepsini küçük harflerle yazmıştım. Daha sonrasında deadapplication kısmı vardı. Anlamca aynı olan cümleleri azaltmıştım.
+
+174
+00:30:10,900 --> 00:30:22,380
+Burada da şey yapıyor. Train Validation Test Set'teki her toplam Caps'ın sayısını yazdırdım. Yani 8700 görüntü vardı.
+
+175
+00:30:22,511 --> 00:30:34,511
+29.719 tane Caption varmış bunların hepsi için. Normalde her bin 5 tane desen 40.000'e yakın, 40.000'den fazla Caption olması gerekiyor.
+
+176
+00:30:34,511 --> 00:30:49,511
+Tekrarları elediğimizde 29.719 toplam Caption sayısı kalmış. Validation ve test set için de bu şekilde. Burada da rastgele görseller seçerek bunların kaç tane Caption'larının olduğunu yazdırdık.
+
+177
+00:30:50,644 --> 00:30:56,783
+Hepsi 5 tane mi yoksa arada azalan değerler de var mı diye emin olmak için onları yazdırdım.
+
+178
+00:31:00,788 --> 00:31:05,488
+Pre-presesting aşamasındaki bir debug kısmı burası.
+
+179
+00:31:08,596 --> 00:31:11,596
+Peki. Peki, tamam.
+
+180
+00:31:13,596 --> 00:31:16,596
+Şimdi isminiz neydi?
+
+181
+00:31:16,596 --> 00:31:17,596
+[öğrenci].
+
+182
+00:31:23,124 --> 00:31:27,683
+Yeni aynı hintten notları...
+
+183
+00:31:31,796 --> 00:31:33,796
+Sunutları takip edebilirsiniz.
+
+184
+00:31:34,216 --> 00:31:35,056
+Tabi oldu hocam.
+
+185
+00:31:38,155 --> 00:31:40,056
+Buradaki çepe de yazdım şimdi.
+
+186
+00:31:41,016 --> 00:31:43,216
+WhatsApp'ta da vardı zaten sanırım.
+
+187
+00:31:44,415 --> 00:31:45,296
+Evet hocam vardı.
+
+188
+00:31:47,016 --> 00:31:54,336
+Şimdi [öğrenci], sunumunda bir sürü yazı yazmışsın.
+
+189
+00:31:57,172 --> 00:32:07,491
+Raporunu özetlemişsin. O bakımdan sunumun hoşuma gitmedi. Sunumundan bir şey anlamadım. Seni mi dinleyeceğim, bir sürü yazım okuyacağım.
+
+190
+00:32:08,052 --> 00:32:08,951
+Aklısındı hocam.
+
+191
+00:32:10,432 --> 00:32:22,172
+Zaman harcanmamış bir şey gibi geldi bana. Bir karşılaştırma yapmış mıydın sen yani? Farklı bir şeyler mi yaptın? Tek bir...
+
+192
+00:32:26,036 --> 00:32:37,376
+Bu kriterler neydi unuttum şimdi. Sonuçları yorumlamak, kota hakimiyeti, değişiklikler, karışıklaştırma, demo, epsa.
+
+193
+00:32:38,296 --> 00:32:41,436
+Yani evet sonuçları yorumlamıştım sanki biraz.
+
+194
+00:32:42,536 --> 00:32:46,636
+Metrikleri yorumlamıştım onu soruyorsanız.
+
+195
+00:32:48,136 --> 00:32:51,936
+Kota hakimiyeti bilmiyor değilim.
+
+196
+00:32:53,523 --> 00:33:01,123
+İş miktarı bana çok gelmedi. Sanki bir kod almış, onu böyle find yönetmişsin gibi hissettim ben.
+
+197
+00:33:03,923 --> 00:33:05,923
+Karşılaştırma...
+
+198
+00:33:08,623 --> 00:33:14,323
+Yoktu galiba, bilmiyorum var mı? Tek yöntemle farklı yöntemlerde var mıydı?
+
+199
+00:33:15,123 --> 00:33:17,523
+Farklı yöntem yoktu hocam, tek yöntem vardı.
+
+200
+00:33:17,523 --> 00:33:18,323
+Evet.
+
+201
+00:33:19,571 --> 00:33:22,771
+Karşılaştırma yok. Demo yapmışsın.
+
+202
+00:33:24,771 --> 00:33:28,171
+Ekstradan daha verecek bir puan görmüyorum.
+
+203
+00:33:30,571 --> 00:33:32,571
+Dolayısıyla ne oluyor?
+
+204
+00:33:37,172 --> 00:33:47,552
+Yani 75 almış oluyorsun. Ortalama 66. 9 puan ekliyorum ben. Oradan 75 almış oluyorsun.
+
+205
+00:33:48,632 --> 00:33:49,892
+Tamam hocam. Teşekkür ederim.
+
+206
+00:33:50,852 --> 00:33:54,652
+Ben teşekkür ederim. Bir sonraki arkadaşımız. [öğrenci] başlayabilirsin.
+
+207
+00:33:55,451 --> 00:33:57,052
+Ekranı paylaşıyorum hocam.
+
+208
+00:33:59,011 --> 00:34:00,132
+Görüyorsunuz değil mi?
+
+209
+00:34:00,132 --> 00:34:00,971
+Evet.
+
+210
+00:34:01,779 --> 00:34:10,779
+Ben Visual Cinem Veri setini kullandım ve bölgesel görüntü altyazılamayı nesne tabanlı olarak çalıştım.
+
+211
+00:34:10,779 --> 00:34:25,779
+Burada ele alınan problem şu. Bir sahneye ait genel bir özet çıkartıp belirgin bölgeyi bağımsız olarak doğal dil metinleri aracılığıyla tanımlayan görüntü altyazılama yönteminde.
+
+212
+00:34:28,307 --> 00:34:33,507
+Tek bir çerçevede görüntüyü açıklamaya çalışmak bilgi kayıplarına sebep olabiliyor.
+
+213
+00:34:33,507 --> 00:34:44,747
+Bunun için görüntüdeki dikkat çekici bölgenin bağımlı olarak tespit edilip o şekilde altyazılama yapılmasını önerdim çalışmada.
+
+214
+00:34:45,707 --> 00:34:50,507
+Literatüre baktığımızda CNN ve RNN kullanılarak...
+
+215
+00:34:50,804 --> 00:35:11,804
+Az önce de [öğrenci] bahsetti aslında. Kod çözücü kısmında LSM kullanılıyor. Görüntüden öz nitelik çıkarma kısmında da CNN kullanılıyor. Başka bir çalışmada Blipp modeli incelenmiş. Başka bir çalışmada da Medical Dataset üzerinde Blipp modeli...
+
+216
+00:35:12,052 --> 00:35:20,492
+Pine Tune edilmiş ve captioning için güçlü bir performans sergilediği saptanmış çalışmada. Benim çalışmamda
+
+217
+00:35:20,659 --> 00:35:43,439
+Burada iki aşamalı hibrit bir model mimari önerdim aslında. Görüntü ön işlenerek bir yola modeline aktarılıyor. Yoladan özellik çıkarma yapılıyor. Bilib modeline de bölge açıklamaları, soru cevap çiftleri ve yoladan gelen çıktılar input olarak belirip görüntü altyazıları oluşturuluyor.
+
+218
+00:35:44,532 --> 00:36:02,352
+Az önceki grafik üzerindeki açıklamam güzeldi. Yani bu tarz grafikler ve üzerinde mouse ile nerede bastıklarını gösterdiğim güzel bir yaklaşım.
+
+219
+00:36:02,352 --> 00:36:03,992
+Teşekkürler hocam.
+
+220
+00:36:10,739 --> 00:36:27,879
+Birden fazla deney yaptım. Üç farklı fine tuning yaptım. Bir de büyük bir dil modelini denedim. Lama'yı denedim. Biraz performansını kıyaslamak istedim fine tune ettiğim bilgisayar modelinin ve potansiyelini de görmek istedim. Lama modelinin.
+
+221
+00:36:28,379 --> 00:36:35,879
+Kullandığım veri setinde çok fazla görüntü bulunmakta. Baya büyük bir veri seti. Görüntü sayısı fazla olduğu için...
+
+222
+00:36:36,500 --> 00:36:41,940
+Bir imajdaki nesne sayısı da fazla, nesneler arasındaki ilişki sayıları da fazla.
+
+223
+00:36:41,940 --> 00:36:45,539
+Soru-cevap çiftleri de bir görüntü için oldukça fazla aslında.
+
+224
+00:36:46,860 --> 00:36:55,780
+Donanımsal kısıtlamalar nedeniyle tabii ki indirmek zorunda kaldım ve 2554 görüntüyü input olarak verdim modele.
+
+225
+00:36:56,720 --> 00:36:59,500
+Bir de normalde...
+
+226
+00:36:59,923 --> 00:37:07,623
+Öz nitelikler, nesneler arası, ikili ilişkiler, bölgesel açıklamalar ve soru cevap çiftleri için JSON dosyaları bulunuyor veri setinde.
+
+227
+00:37:08,324 --> 00:37:13,003
+Ben bölge açıklamaları ve soru cevap çiftlerini input olarak aldım.
+
+228
+00:37:13,003 --> 00:37:18,503
+Burada aslında soru cevap çiftleri modelin yapısına pek uyumlu değil.
+
+229
+00:37:18,896 --> 00:37:31,296
+Denemek amaçlı aldım. Çünkü sadece bölge açıklamaları yetersiz kalabilir diye düşündüm. Ama birazdan geleceğiz o sonuçlara. Veriset'in %80 eğitim, %10 doğrulama, %10 test olarak ayırdım.
+
+230
+00:37:31,296 --> 00:37:43,096
+Burada imajların ID'sini alıp bu JSON dosyalarını da aratıp ID'leri senkronize ettim. O şekilde JSON dosyalarını da küçülttüm.
+
+231
+00:37:46,324 --> 00:37:52,384
+Bilibe mimarisine baktığımızda burada multimodal mixture of encoder decoder yapısı bulunuyor.
+
+232
+00:37:52,624 --> 00:37:59,244
+Bu yapıda bir visual transformer kısmı bulunuyor.
+
+233
+00:37:59,244 --> 00:38:00,876
+Burada imajın...
+
+234
+00:38:01,108 --> 00:38:21,108
+Image Embedding olarak kodlanıyor. Bunun dışında görüntü metin için Unimodel Enkoder'ı bulunuyor. Bu resimde bulunmamakta ama görsel bilgiyi enjekte eden Image Grounded Text Encoder ve metini üreten Image Grounded Text Encoder bulunuyor.
+
+235
+00:38:27,347 --> 00:38:31,347
+Yola 11 Mimarisindeyse...
+
+236
+00:38:32,052 --> 00:38:42,152
+Öz niteliği çıkartan bir backbone bulunuyor. Öz nitelikleri birleştiren neck kısmı var. Bir de tahmini yapan detection head kısmı var.
+
+237
+00:38:44,032 --> 00:38:57,332
+Burada Yolo 11 oldukça optimize edilmiş bir Yolo modeli. Giriş görüntüsünden çok ölçekli öz nitelikler elde etmek için, hızlı elde etmek için C3-K2 blok yapısı kullanılıyor.
+
+238
+00:38:57,332 --> 00:38:59,032
+Burada input buna veriliyor.
+
+239
+00:39:00,052 --> 00:39:08,292
+Bu konuda nesne boyutlarındaki değişimlere karşı dayanıklılığı arttıran SPPF katmanı ve çok alıçlıktık fizyon mekanizması.
+
+240
+00:39:08,292 --> 00:39:09,172
+SPPF ne?
+
+241
+00:39:09,971 --> 00:39:10,452
+Efendim?
+
+242
+00:39:11,391 --> 00:39:12,731
+SPPF ne?
+
+243
+00:39:13,912 --> 00:39:16,372
+Açılımını hatırlamıyorum hocam.
+
+244
+00:39:19,795 --> 00:39:29,515
+Ama küçük bir imaj üzerinde küçük boyutlu nesneler de olabilir. Onun detekt edilmesini destekliyor aslında.
+
+245
+00:39:29,515 --> 00:39:32,515
+Ama açılımını hatırlamıyorum.
+
+246
+00:39:32,515 --> 00:39:38,515
+Bir de detection head de nesnenin...
+
+247
+00:39:38,931 --> 00:39:54,051
+Olasılığını hesaplıyor. Yani nesneyi detekledip klasife ediyor aslında. Lama mimarisinde ise iki farklı bölümden oluşuyor. Vision Encoder ve LLM bölümlerinden oluşuyor. Çok mutlu bir yapı diyoruz buna.
+
+248
+00:39:54,911 --> 00:40:05,051
+Vision Encoder kısmında 32 katmanlı vizyon kodlayıcıları ve 8 katmanlı global vizyon kodlayıcıları bulunuyor.
+
+249
+00:40:06,132 --> 00:40:14,132
+Giriş görüntüsü önce komünisyonel bir ağdan geçiyor. Özür dilerim.
+
+250
+00:40:14,132 --> 00:40:26,132
+Bir oraya bir oraya atlama. Beynim yanıyor. Sen slaytları değiştirdikçe algım parçalanıyor.
+
+251
+00:40:26,132 --> 00:40:28,132
+Buradan devam edelim.
+
+252
+00:40:28,132 --> 00:40:30,132
+Ve görselde kal.
+
+253
+00:40:30,420 --> 00:40:46,039
+Bundan da hiçbir şey anlamıyorum. Şu ekrana baktığımda bir sürü yazı, bir gürültü burası. Görsel tarafa gel, görsel tarafta ne anlatabiliyorsan anlat. Git gel de yapma.
+
+254
+00:40:47,320 --> 00:40:57,920
+Görsel tarafta ama bazı şeylerini göremiyorum. Görsel şey yapmıyoruz. Kocaman yapıp yazılarını göstermemiz lazım.
+
+255
+00:41:01,619 --> 00:41:04,619
+Konvensiyonel katmandan geçen imaj...
+
+256
+00:41:08,916 --> 00:41:12,416
+İmajin buna bakmak zorundayım hocam. Kusura bakmayın.
+
+257
+00:41:13,315 --> 00:41:14,775
+Sen bilmiyor musun bunu?
+
+258
+00:41:15,355 --> 00:41:17,496
+Tam olarak hatırlamıyorum hocam.
+
+259
+00:41:18,596 --> 00:41:19,936
+Sen yazmadın mı bunu?
+
+260
+00:41:20,056 --> 00:41:23,456
+Ben yazdım ama bir sürü model var kafamda.
+
+261
+00:41:25,135 --> 00:41:26,976
+Anlatabileceğin yerleri geç o zaman.
+
+262
+00:41:27,135 --> 00:41:27,876
+Geçiyorum hocam.
+
+263
+00:41:28,916 --> 00:41:38,916
+3 farklı fine tuning işlemi yaptığımdan bahsetmiştim. Bu işlemi yapmadan önce Bleep modelini pre-trained modeli denemek istedim önce lokalde.
+
+264
+00:41:38,916 --> 00:41:55,796
+Burada yola modelinin çıktılarını şöyle veriyorum modele. İmajda kırpıyorum yola modelinin oluşturduğu banding boxları kullanarak imajı kırpıp Bleep modeline o kırpılmış imajları input olarak veriyorum.
+
+265
+00:41:56,916 --> 00:42:09,016
+Sonuç olarak aslında iyi bir performans sergiliyor ama bazen bazı yerlerde mesela a man in a blue jacket dediği yerde burada mavi ceketli bir adam görememekteyiz.
+
+266
+00:42:09,756 --> 00:42:12,596
+Bu tarz durumlar olduğu için fine tuning edilebilir diye düşündüm.
+
+267
+00:42:21,300 --> 00:42:38,760
+Metin kod çözücüsünü eğitime dahil ettim. Burada epoch sayısını 3 olarak verdim, batch size 4 verdim. Learning rate'i de biraz düşük verdim. Sonuç olarak tekrarlayan metinler üretti ve burada sürekli pizza pizza pizza yazıyordu aslında.
+
+268
+00:42:41,108 --> 00:42:51,007
+Kötü bir sonuç verdi. Dolayısıyla bu sefer görme kodlayıcısını dondurup sadece Text Decoder'ı aktif bırakarak Fine Tuning işlemi yaptım.
+
+269
+00:42:51,047 --> 00:42:55,188
+Epoxy sayısını da arttırdım. Learning Rate'i de arttırdım. Bu default değeri zaten.
+
+270
+00:42:55,387 --> 00:43:04,467
+Burada biraz daha ümit verici sonuçlar verdi ama her resim içinde bu şekilde bir metin üretemedi.
+
+271
+00:43:04,628 --> 00:43:08,668
+Sadece Photo of deyip boşluk bırakıyordu bazı.
+
+272
+00:43:09,108 --> 00:43:31,228
+İmajlar için. Daha sonrasında da bu ilk iki ince yer işleminde hem region description json dosyasını hem de question answer pair dosyasını yani soru cevap pair'lerinin olduğu dosyayı input olarak verdim.
+
+273
+00:43:31,860 --> 00:43:43,699
+Üçüncüsünde ise sadece region description'ların olduğu json dosyasını input olarak verdim. Epoxy'sını da baya yükselttim. Sonuç oldukça iyi çıktı.
+
+274
+00:43:45,699 --> 00:43:47,380
+Burada gördüğünüz gibi
+
+275
+00:43:48,436 --> 00:44:02,196
+Kırmızı arabayı görüp kırmızı bir araba olduğunun farkında veya buradaki adamın saçının kısa olduğunun farkında, burada tişörtün üzerinde bir yazı olduğunun farkında. Her bir imaj için birer tane cümle oluşturuyor.
+
+276
+00:44:02,196 --> 00:44:09,596
+Bir de dediğim gibi Lama modelini denedim. Burada bir prompt oluşturdum bunun için aslında.
+
+277
+00:44:13,940 --> 00:44:25,139
+Oluşturduğu Bounding Box'ların koordinatlarını da verdim. Fakat o koordinatlara bakmasına gerek bile yok modelin. İmaj üzerindeki her şeyi başarıyla tanımlayabiliyor.
+
+278
+00:44:29,139 --> 00:44:30,987
+Yola modelinin...
+
+279
+00:44:30,996 --> 00:44:49,236
+Kırptığı resimleri input olarak verdim. Fine-tune ettiğim Bleep modeline, üçüncü modele. Tek tek böyle parçalayıp verdiğimizde aslında bir imaj üzerindeki bütün objelerin neler yaptığını veya nasıl tekstürleri olduğunu vesaire anlatmakta başarılı olabiliyor.
+
+280
+00:44:58,132 --> 00:45:23,132
+Karşılaştırdım. Şimdi en iyi model tabi ince yer 3. 3'ün sonuçları oldu. Birinci modelde ipok sayısı 3'tü. Bunun sebebi bundan dolayı sonuç kötü çıkmış olabilir diye düşündüm. Fakat ikinci fine tuning işleminde de ipok sayısını 5'e çıkartmama rağmen sonuç daha kötü oldu aslında. Onun validation değeri çok daha...
+
+281
+00:45:23,360 --> 00:45:38,140
+Yani loss değeri çok daha büyük. Üçüncüsünde burada sadece region description'ı input olarak vermek ve epoch sayısını oldukça arttırmak baya loss değerini azalttı.
+
+282
+00:45:41,240 --> 00:45:47,780
+Sadece üçüncü modeli sadece metriklerle değerlendirdim.
+
+283
+00:45:48,532 --> 00:46:04,892
+Buna göre modelin insan anlatımına yakın ve bütünlüğü koruyan metinler ürettiğini aslında kanıtlamış oldum. Çünkü bu değer aslında düşük gibi gözükse de aslında yüksek bir değer literatürle de karşılaştırdım.
+
+284
+00:46:06,719 --> 00:46:20,599
+Normalde 0.5'den küçük olduğunda aslında başarısız veya orta başarılı diyoruz. 0.5'den büyük olduğunda çok başarılı diyebiliyoruz modeli. Burada orta bir performans sergilediğini söyleyebiliriz bu değere göre.
+
+285
+00:46:26,132 --> 00:46:28,711
+Onun dışında önemli başka ne söyleyebilirim?
+
+286
+00:46:30,791 --> 00:46:32,791
+Bir de şöyle bir kıyaslama yaptım.
+
+287
+00:46:32,791 --> 00:46:34,791
+Yola modelinin...
+
+288
+00:46:35,188 --> 00:47:00,327
+Çıktısı olan yabanlık boxları kullanarak kırpıp metrikleri bir de o şekilde hesapladım. Daha düşük çıktı. Bunun sebebi şu olabilir diye düşündüm. Veri setindeki obje sayısıyla pretrain edilmiş yolodaki obje sayısı yani sınıf sayısı uyuşmuyor aslında. Çünkü ikisi de farklı veriler ile üretilmiş.
+
+289
+00:47:01,007 --> 00:47:21,107
+YOLO farklı bir veri seti ile eğitilmiş bir model. Bundan dolayı bu düşüklük olmuş olabilir diye düşündüm. Burada şöyle bir şey olabilir. YOLO modeli de Visual Genome veri setindeki objeler kullanılarak eğitilebilir. Bu sorun o şekilde ortadan kalkar diye düşünüyorum.
+
+290
+00:47:24,755 --> 00:47:41,055
+Literatürle de karşılaştırma yaptım. Başta bahsettiğim medikal veriler ile fine-tune edilen blip modelinde bunu maalesef yanlış kopyalamışım ama burada 0.09 çıkması gerekiyordu.
+
+291
+00:47:42,535 --> 00:47:47,755
+Bunu ikisini kopyalamışım. Kusura bakmayın. Burada oldukça düşük bir...
+
+292
+00:47:49,108 --> 00:48:01,808
+Nasıl okunuyor bilmiyorum ama bu metriyinde yeri oldukça düşük çıkmış burada ama sonuçları iyi çıkmış. Benimkinde de aslında oldukça yüksek bir skor oluştu. Benimkinin de sonuçları iyi.
+
+293
+00:48:06,164 --> 00:48:30,904
+Gelecek çalışmalar için ne yapılabilir? Dediğim gibi YOLO modeli de eğitilebilir. Bu şekilde kırpılan imajların doğruluğu aslında arttırılır. Visual Genome veri seti için söylüyorum sadece. Bir de LAMA gibi büyük değil modelleri aslında bunlara alternatif ama büyük modeller oldukları için donanımsal sıkıntılar sebebiyle real-time olarak kullanılmayabilir.
+
+294
+00:48:34,164 --> 00:48:46,564
+Aslında böyle iyi sonuçlar vermesi, gelecekteki otonom navigasyon, görsel asistanlar vesaire gibi konularda kullanılabilir akla getiriyor aslında. Bu kadar da anlatacaklarım.
+
+295
+00:48:54,963 --> 00:48:57,724
+Evet. Bu tarz üniversiteye bakalım.
+
+296
+00:48:57,724 --> 00:48:59,164
+Bu konuyu gösterdim ya.
+
+297
+00:49:00,124 --> 00:49:01,304
+Gösteririm hocam.
+
+298
+00:49:06,164 --> 00:49:30,164
+Demo kodum bu olmuş oluyor. Burada yola ile kırptığım imajları verip sonuçları görselleştirdim. Burada plakasını bile detekt edebiliyor. Ya da outdoor scene olduğunu anlayabiliyor.
+
+299
+00:49:35,699 --> 00:49:39,379
+Veri sitesinin farklı imajlarını da denedim aslında burada.
+
+300
+00:49:42,739 --> 00:49:46,179
+Eğitim yaptığım kod ya da faaliyet.
+
+301
+00:49:46,179 --> 00:49:47,379
+Eğitim yaptığım...
+
+302
+00:49:47,379 --> 00:49:49,439
+Bir saniye.
+
+303
+00:49:49,539 --> 00:49:50,619
+Üç tane yapmıştım.
+
+304
+00:49:50,679 --> 00:49:51,579
+Üçüncü sınıflayayım.
+
+305
+00:49:53,179 --> 00:49:54,460
+Eğitim yaptığım kod burada.
+
+306
+00:49:55,199 --> 00:49:58,139
+Burada veri sitine hazırladığım sınıf bu.
+
+307
+00:50:00,000 --> 00:50:03,579
+JSON dosyasını pars ediyorum aslında burada.
+
+308
+00:50:03,579 --> 00:50:06,659
+Eğitim yaptığım kodu göstersene ben.
+
+309
+00:50:06,659 --> 00:50:12,039
+Bu kod aslında eğitim yaptığım kodu ama fonksiyonu mu görmek istiyorsunuz?
+
+310
+00:50:12,039 --> 00:50:12,539
+Evet.
+
+311
+00:50:12,539 --> 00:50:14,079
+Burada.
+
+312
+00:50:14,079 --> 00:50:21,000
+Burada Vision Encoder kısmını dondurup Text Encoder kısmını aktif ediyorum.
+
+313
+00:50:21,000 --> 00:50:26,359
+Optimizer'da, bunlar default değerler aslında.
+
+314
+00:50:26,739 --> 00:50:33,739
+Bunları verdim. Learning Grades, Weight Decay vs.
+
+315
+00:50:37,588 --> 00:50:48,847
+Şu fonksiyonu şey için kullandım. Learning Rate'in dalgalanmadan azalması veya artması, eğitim sırasında artıp azaldığını da gördüm.
+
+316
+00:50:49,367 --> 00:50:55,867
+Dalgalanma yapmadan yapması yani modelin stabil bir şekilde aslında öğrenmesi için bu fonksiyonu kullandım.
+
+317
+00:51:07,572 --> 00:51:16,692
+Tamam yeter. Senin yapay zeka kullanımının nasıl olduğunu raporda, slide'da, kodda?
+
+318
+00:51:18,472 --> 00:51:30,752
+Bu yapı zaten kitapta paylaşılmış bir yapı aslında. Ama yapay zeka ile kendi data setime vs. uyarladım. Kendi olayıma yani uyarladım.
+
+319
+00:51:34,996 --> 00:51:37,775
+Ama test aşamasında falan daha önce...
+
+320
+00:51:37,775 --> 00:51:41,655
+Kod yüzde 10 falan var mı? Sanki bana öyle gibi geldi.
+
+321
+00:51:42,036 --> 00:51:42,596
+Nasıl hocam?
+
+322
+00:51:42,615 --> 00:51:45,056
+Yani yüzde kaç kod ekledin sen?
+
+323
+00:51:45,896 --> 00:51:47,615
+Bir daha söyleyebilir misiniz? Yüzde kaç?
+
+324
+00:51:48,496 --> 00:51:52,175
+Kodun yüzde kaç insan yazdın yani yapay zekasız?
+
+325
+00:51:54,056 --> 00:51:56,996
+Test kısmında ben aslında yazdım daha çok.
+
+326
+00:51:56,996 --> 00:52:00,996
+Burada ama kitap ve yapay zekayla zaten...
+
+327
+00:52:01,748 --> 00:52:11,547
+Tün edilebiliyor kendi işimize, çalışmamıza göre. Yani bir yüzdelik veremiyorum o yüzden şu an ama.
+
+328
+00:52:12,887 --> 00:52:13,427
+Bekleyin.
+
+329
+00:52:16,987 --> 00:52:20,467
+Burada başka sonuç olarak göstermem gerekiyor.
+
+330
+00:52:20,487 --> 00:52:21,467
+Teşekkürler.
+
+331
+00:52:22,647 --> 00:52:23,627
+Ben teşekkür ederim.
+
+332
+00:52:24,367 --> 00:52:25,567
+[öğrenci] değil mi?
+
+333
+00:52:25,827 --> 00:52:26,127
+Evet.
+
+334
+00:52:27,188 --> 00:52:32,148
+Hocam, bugün raporu verebiliyoruz değil mi? Odanızda bırakabiliyoruz.
+
+335
+00:52:33,508 --> 00:52:38,228
+Raporu yükleyeceksiniz. Şeyi oluşturdum ya ben.
+
+336
+00:52:42,608 --> 00:52:44,788
+Şey hocam, ıslak imzalı...
+
+337
+00:52:44,788 --> 00:52:47,668
+Onlarla bir TRD ödev oluşturdum.
+
+338
+00:52:47,968 --> 00:52:50,708
+Oraya yükledim. Islak imzalı da...
+
+339
+00:52:50,708 --> 00:52:54,208
+Yok, ıslak imzalı. Oraya yüklediyorsanız yeter mi?
+
+340
+00:52:56,980 --> 00:52:58,460
+Bırakabiliyoruz değil mi hocam?
+
+341
+00:52:59,240 --> 00:53:05,179
+Gerek yok bırakmamıza. Yani ıslak imzalı yüklediğiniz için...
+
+342
+00:53:05,179 --> 00:53:11,599
+Online Yıldız Edyo TR'ye yüklediniz ya.
+
+343
+00:53:11,880 --> 00:53:12,220
+Evet.
+
+344
+00:53:12,980 --> 00:53:15,639
+O yeterli. Islak imzalı gerek yok.
+
+345
+00:53:16,340 --> 00:53:18,800
+Ama final için gerekiyordu hocam diye hatırlıyorum ama...
+
+346
+00:53:18,800 --> 00:53:21,000
+Hayır, finalde de iptal etmiştim.
+
+347
+00:53:21,000 --> 00:53:22,780
+Ha, tamam hocam. Tamam.
+
+348
+00:53:25,043 --> 00:53:25,963
+Teşekkürler.
+
+349
+00:53:28,363 --> 00:53:41,823
+Şimdi der ya, senin slide'ların bana anlaşılır gelmediği bir kısmı, önemli bir kısmı böyle yazılarla doldurmuşsun.
+
+350
+00:53:41,823 --> 00:53:49,823
+Yani kendine olan notları slide'a koymazsın, kendine olan notları bir kağıda yazarsın.
+
+351
+00:53:51,059 --> 00:54:14,460
+Oradan kendin anlatırken kendin bakarsın. Kendin için olan notları slide'a koymuşsun. Slide şeye dönmüş. Anlamadım ben slide'ı. Yani karmaşık. Anlaşılırlıktan 60'ı verdim. Sonuçlarını yorumlatmışsın, 70'i veriyor.
+
+352
+00:54:16,755 --> 00:54:30,155
+Ona da 70 vereyim bari. İş miktarı birkaç versiyon yapmışsın, karşılaştırmışsın. Ama zaten her şeyi hazır almışsın. Ona da 70 vereyim.
+
+353
+00:54:31,595 --> 00:54:43,155
+Karşılaştırma yapmışsın kendisine. Oradan 80 vereyim. Demo var gibiydi. Demo uygulaman yoktu da.
+
+354
+00:54:44,211 --> 00:54:51,211
+Çalıştırılması uzun sürer diye sonuçları gösteriyordum. Colette zaten çalıştırmıştım.
+
+355
+00:54:51,211 --> 00:54:56,211
+Bir sürü örnek var yani. İstiyorsanız tekrar paylaşayım.
+
+356
+00:54:56,211 --> 00:55:00,211
+Demo application yoktu.
+
+357
+00:55:00,211 --> 00:55:07,211
+Yani oradan 80 veriyorum. Öncekine de 80 veriyorum. Demo application yoktu çünkü.
+
+358
+00:55:12,275 --> 00:55:17,395
+Hocam, az önce neyi hazır aldığımı söylediniz. Orayı kaçırdım daha. Tekrar edebilir misiniz?
+
+359
+00:55:18,675 --> 00:55:26,355
+Ben şimdi bu Spreadsheet'in linkini chat'e yapıştırdım görüyor musunuz?
+
+360
+00:55:28,915 --> 00:55:38,395
+Az önce yapıştırdım. O Spreadsheet'e gidip, kriterlere bakıp ne not aldığınızı görebilirsiniz.
+
+361
+00:55:41,139 --> 00:55:54,920
+Evet, teşekkür ediyorum. [öğrenci]. Merhaba. Merhaba, senin sunumuna başlayabiliriz. Tamamdır.
+
+362
+00:56:01,300 --> 00:56:03,300
+Geldi sanıyorum ekranın.
+
+363
+00:56:07,300 --> 00:56:10,300
+Bugün bitki yaprak görüntülerinden...
+
+364
+00:56:10,675 --> 00:56:32,035
+Hem yaprağın üzerindeki hastalık sınıfını hem de bu sınıfı açıklayan bir cümleyi üreten, aynı zamanda da bunun ısı haritası ile, grad cam ile birlikte bunu yaparken neresine bakmış yaprağın, bunu gösteren bir modelden bahsedeceğim.
+
+365
+00:56:32,724 --> 00:56:43,484
+Çalışmamın amacı sadece yaprakların hastalıklarını sınıflayan bir yapı değil de bunun kararını açıklayabilen bir sistem tasarlamaktır.
+
+366
+00:56:43,484 --> 00:56:52,684
+Yani girdi de yaprak fotoğrafımız var kısaca. Çıktı da ise üç şey istiyorum. Hastalığın etiketi, Türkçe açıklama cümlesi bir de ısı haritası.
+
+367
+00:56:56,019 --> 00:57:15,320
+Aslında derin öğrenmeyle birlikte yapraklardan böyle hastalık sınıflandıran çok çalışma var. Ama bu modeller çoğunlukla etiketi verip bırakıyorlar. Neden ona etiketi verdiğini söylemiyorlar. Yani tamam, örneğin Black Rod diye bir hastalık var. Bu Black Rod dedin ama bunu nereden anladın?
+
+368
+00:57:15,648 --> 00:57:34,788
+Bu yüzden ben de hem bunun sınıfını veren hem de basit bir cümle ile açıklayan, üstüne bir de ıs haritası gösteren bir sistem kurmak istedim. Bu da onun örneği burada. Böylece hem model çıktısı daha anlaşılır olur hem de kullanıcıya daha ikna edici olur diye düşündüm.
+
+369
+00:57:35,539 --> 00:57:57,380
+Veri seti. Veri set olarak çok bu tür projelerde kullanılan plastik bir veri seti kullandım. Plant Village. Çok temiz bir veri seti. Farklı bitki türlerinden böyle düzgünce çekilmiş fotoğraflar içeren, sağlıklı ve hasta görüntüler içeren bir veri seti.
+
+370
+00:57:57,380 --> 00:58:03,340
+Burada da görebilirsiniz. Mesela hastalıklı elma yaprağı, sağlıklı elma yaprağı. Hastalıklı yüzüm, sağlıklı yüzüm.
+
+371
+00:58:03,539 --> 00:58:16,860
+38 farklı sınıf var. Hatırladığım kadarıyla mısır, domates, patates, elma, üzüm.
+
+372
+00:58:17,588 --> 00:58:41,128
+Burada da örneklerini görebilirsiniz. Ben Veri Set'inin RGB versiyonu kullandım ve bütün görüntüleri 224-224 piksele yeniden alçaklendirdim. Veri bölerken de 8-10-10 oranını kullandım. %80 train, %10 validation, %10 test.
+
+373
+00:58:41,472 --> 00:58:54,271
+Böylece verinin büyük bir kısmını eğitime verip ayarları yapmak ve sondaki performansını ölçmek için ayrı hükümeler oluşturmuş oldum.
+
+374
+00:58:55,371 --> 00:59:05,271
+Asıl söylemek istediğim kontrollü, temiz bir veri seti olması. Hem sınıflandırma hem de açıklama üretimi yapıyorum bunun üstünde.
+
+375
+00:59:06,552 --> 00:59:08,871
+Genel mimarimiz bu şekilde.
+
+376
+00:59:09,396 --> 00:59:18,235
+Yani geride olarak tek bir yaprak görüntüsü veriyorum. Bu görüntü önce ortak bir enkodera.
+
+377
+00:59:20,403 --> 00:59:46,143
+ResNet 18 kullandım bunun için. Buna gidiyor. Enkoderdan çıkan özellikler de bir tarafta klasik bir tam bağlantılı fully connected katmana verilip hastalık sınıfına dönüştürülüyor. Aynı özellikler ikinci bir kolda elestiyan tabanlı bir dekodera gidiyor ve bu dekoderde bu Türkçe açıklamayı üretiyor.
+
+378
+00:59:47,635 --> 01:00:04,155
+Son olarak da sınıflandırmanın başlığından GradCamp hesaplayıp modelin yaprağın üstünde en çok dikkat ettiği bölgeleri böyle ısırtası şeklinde gösteriyor. Yani tek bir modelden 3 farklı çıktı elde etmiş oluyorum.
+
+379
+01:00:05,460 --> 01:00:19,259
+Sınıflandırıcı olarak ResNet 18 ve elde ettiğim sonuçların tablosunu görüyorsunuz. Sınıflandırmada ImageNet üzerinde önceden pre-trained bir ResNet 18 kullandım.
+
+380
+01:00:20,639 --> 01:00:26,599
+Önce son katmanı Planet Village'deki klas sayısına göre değiştirdim.
+
+381
+01:00:26,943 --> 01:00:41,983
+Önce sadece bu katman eğittim, diğerlerini de ondurdum. Optimizer olarak edim. Loss Function olarak da çapraz entropi, cross-entropi kullandım. Eğitimde de toplamda 5 epok koşturdum.
+
+382
+01:00:42,804 --> 01:01:03,963
+Validation kümesinde en iyi makro F1'ı vereni base model olarak kaydettim. Sonrasında da tabloda gördüğümüz test kümesine de ulaştım. Sonuçlara ulaştım. Loss %36 civarı, ökürüsü %91, makro F1 ise yaklaşık %88.
+
+383
+01:01:05,492 --> 01:01:21,872
+Bunun gibi temiz bir veri seti için bunlar çalışmalara, yani var olan literatür çalışmalarına yakın makul sonuçlar. Bu yüzden de Enkodur'u böyle sabitleyip bu şekilde açıklama modelini üretmeye geçmek için yeterli gördük.
+
+384
+01:01:21,936 --> 01:01:36,176
+Zaten klas sayımız da çok fazla olmadığı için 5 epoktan sonrası bana sanki overfit edebilirmiş gibi bir şey izlerim uyandığında. O yüzden 5 epok yeterli olduğunu düşündüm.
+
+385
+01:01:38,076 --> 01:01:45,636
+Modelin nereye baktığını görmek için de sonrasında Gretcam kullandım.
+
+386
+01:01:50,804 --> 01:01:59,244
+Burada ResNet 18'den gelen özellik vektörü LSTM Dekoder'a
+
+387
+01:02:00,692 --> 01:02:13,311
+Gidiyor yani başlangıç olarak. Bu Plant Village sadece bize sınıf etiketi verdiği için bu her sınıf için birer Türkçe cümle, şablon cümle tanımladım ben yani.
+
+388
+01:02:13,311 --> 01:02:20,591
+Mesela Apple ya da buradan örnek verelim işte Citrus Green'in hastalığı.
+
+389
+01:02:23,188 --> 01:02:47,067
+Bu hastalık için mesela portakal yaprağında bu hastalık görülmektedir gibi. Burada gördüğümüz cümle gibi basit bir şablon cümlem var. Bunu eğitim sırasında da bir hedef olarak kullanıp, bu dizide ilerlesin bunu isteyip, TOK'ın bazında da kuru sentropiyle birlikte elestirme ettim.
+
+390
+01:02:47,443 --> 01:03:06,463
+Sonra, oluşturduğum demoda da kullanıcı bir görüntü verdiğinde model bu yapıya göre bir açıklama üretiyor. Önce klas hastalık eşleşmesini veriyor. Sonrasında bu cümleyi veriyor. Sonrasında da bizde o gülatkenle birlikte ısı haritasını veriyor.
+
+391
+01:03:07,027 --> 01:03:27,367
+Yani aslında burada çok yaratıcı cümleler üretmekten ziyade böyle kabaca teşhisi bize söylesin istedim. Daha kısa okunaklı net olsun istedim. Sonra burada dediğim gibi modelin nereye baktığını görmek için kullandım bunu.
+
+392
+01:03:29,396 --> 01:03:48,736
+Burada ResNet'in son katmanından seçilmiş bir sınıfa ait gradleri aldım. Bu şekilde oluşturduğumuz hertesini. Sonra bunu orijinal yaprağının üstüne bindirdim. Bu arada demomuzdan alınmış bir ekran görüntüsü. Birazdan da uygulamalı göstereceğim.
+
+393
+01:03:56,148 --> 01:04:06,268
+Yaprak üzerinde koyu lekeler deseydi, yaprak üzerinde koyu lekeler en fazla neredeyse orayı daha yoğun kırmızı lif şartlamasını bekleyecektik.
+
+394
+01:04:06,588 --> 01:04:15,548
+Bunun gibi. Burada da örneğin şurada pürüme var. O yüzden bu bölgeye daha yoğun bir şekilde bakmış. Bunu anlıyoruz.
+
+395
+01:04:16,808 --> 01:04:21,788
+Oradaki leke bölgelerine daha yoğun bir dikkatle bakmış.
+
+396
+01:04:22,175 --> 01:04:49,536
+Yani bunda da aslında kullanıcıya vermek istediğim şey şu. Hani tamamen bir kara kutu olmasın yani Black Box olmasın. İşte model demek ki bu yüzden, şurası yüzünden bu kararı vermiş desin. Tabii ki bu hani temiz bir verset ile elde edilmiş örnekler ama gerçek hayatta bu böyle olmayacak. Yani bizim sıradan gördüğümüz şeyler belki de hani hastalık olacak.
+
+397
+01:04:50,175 --> 01:04:56,576
+O yüzden ben böyle bir uygulama kullansam bu şekilde bir şey beklerdim diye yola çıkarak yaptım.
+
+398
+01:04:58,395 --> 01:05:00,855
+Şimdi arayüzüme geçebilirim.
+
+399
+01:05:02,935 --> 01:05:07,036
+Burası da görebiliyorsunuz değil mi? Sadece PowerPoint'i paylaşmamışım.
+
+400
+01:05:08,635 --> 01:05:09,076
+Görüyorum.
+
+401
+01:05:09,684 --> 01:05:15,444
+Tamam, burası bizim demomuz. Şurası Colab'daki notbuğumda, bunun son ücreti.
+
+402
+01:05:15,444 --> 01:05:27,444
+Buraya ben şimdi yine bir plant veri setinden aldığım, yani oraya bir SQL sorgusuyla yazdığım her klastan random bir tane.
+
+403
+01:05:28,884 --> 01:05:50,723
+Yaprak görüntüsü ver diyerek elde ettiğim şeyleri kaydettim. Burada mesela hastalıklı, sağlıklı bir şey seçelim. Kiraz ve sağlıklı diye buldu. Burada dedi ki, bu bitkinin yaprağında hastalık belirtisi görülmemektedir. Yaprak sağlıklı görünmektedir dedi bize.
+
+404
+01:05:50,723 --> 01:05:53,844
+Yani yine sağlıklı olsa da...
+
+405
+01:05:55,315 --> 01:06:05,135
+Üç şey var. Bunlar paralel ayrı ayrı mi yoksa birbirine girdi mi? Yani tahmin edilen sınıf var. Bir sınıflayıcı var anladığım kadarıyla.
+
+406
+01:06:05,795 --> 01:06:07,115
+Evet, evet. Bunlar farklı.
+
+407
+01:06:07,115 --> 01:06:20,115
+Model açıklaması hem yaprağı hem de tahmin edilen sınıfı mı alıyor? Yoksa sadece resmi mi alıyor? Yoksa tahmin edilen sınıf?
+
+408
+01:06:20,436 --> 01:06:24,596
+Grad-Kendis'e ötesi ve yaprak görüntüsünü mü anlatayım?
+
+409
+01:06:24,596 --> 01:06:29,396
+Orada şöyle söyleyebilirim. Aslında yakın da...
+
+410
+01:06:30,643 --> 01:06:52,563
+Şöyle, şimdi dediğiniz, sorduğunuz soruyu direkt gösterebilirim. Orada, yani ilk başta atadığı sınıf bizim şeyimiz, yani burada şablon cümlemiz olarak burada yazdı. Yani burada onu tahmin ediyor ama burada model direkt otomatik bir cevap üretiyor, yani ona bakmadan. Ama bunların sonrasını da kıyasladım, eşleştiğini gördüm.
+
+411
+01:06:55,188 --> 01:07:12,268
+Tekrar et. Orada, burada, şurada diye kolumeler kullanıyorsun bana. Bir sınıflayıcın var mı?
+
+412
+01:07:13,847 --> 01:07:17,947
+Bir sınıflayıcın var. Ama burada açıklama üreten modeli...
+
+413
+01:07:17,947 --> 01:07:19,487
+Bir açıklayıcın var.
+
+414
+01:07:19,487 --> 01:07:20,427
+Evet.
+
+415
+01:07:21,327 --> 01:07:22,487
+Açıklayıcı...
+
+416
+01:07:22,831 --> 01:07:41,391
+Girdi olarak ne almıyor? Yaprağın görüntüsünü alıyor. Bu ResNet'e gidiyor. Evet almıyor, hayır. Bunlar üç ayrı şey aslında. Hiçbir biriyle iletişim kurmayan üç ayrı network öyle mi? Evet.
+
+417
+01:07:41,391 --> 01:07:43,391
+Tamam.
+
+418
+01:07:45,512 --> 01:07:48,391
+Bunun dışında bir tane de isterseniz.
+
+419
+01:07:48,724 --> 01:07:51,364
+Bir şey örnek vereceğim hastalıkla.
+
+420
+01:07:55,804 --> 01:07:59,004
+Mesela bu da elma, bileklot hastalığı varmış.
+
+421
+01:08:01,964 --> 01:08:09,724
+Burada bunu da ikisi birbiriyle eşleşti. Bu arada aslında şunu tamamen Türkçe değiştirmek çalışmıştım ama yanlışlıkla tahmin edilen sınıf...
+
+422
+01:08:09,903 --> 01:08:36,564
+Eşlemesini Türkçe'ye çevirdim. Sonradan fark ettim. Burada da daha çok mesela burayı işaretlemiş ama bu hastalıkta yani [kişisel bilgi] Şuradan başlamış mesela bunun hastalığı. Bu şekilde başlıyormuş. Yani bir yerde böyle boşluk olup oradan yayılıyormuş. Ama burada mesela yanlış bir, bambaşka bir yer işaretlemiş bize.
+
+423
+01:08:37,140 --> 01:08:45,140
+O yüzden Gretken bu Sertem çok iyi çalışmıyor. Bunda ileride böyle faytun edilebilir ya da belki...
+
+424
+01:08:45,140 --> 01:08:47,500
+Şimdi aslında bunlar üç ayrı şey ya.
+
+425
+01:08:48,120 --> 01:08:48,480
+Evet.
+
+426
+01:08:49,820 --> 01:09:00,960
+Yani bunların bu modelleri birbirine bağlaman veya üçünü de yapan tek model yapman belki ileri seviyeye çalışmak için diyorum mantıklı olabilir.
+
+427
+01:09:01,900 --> 01:09:02,220
+Evet.
+
+428
+01:09:03,636 --> 01:09:05,636
+Buradan...
+
+429
+01:09:05,636 --> 01:09:08,636
+Sınıflarına girip girdi yapabilirsin.
+
+430
+01:09:08,636 --> 01:09:10,636
+Evet ama aslında...
+
+431
+01:09:10,636 --> 01:09:13,636
+...möyleri biraz değiştirmen gerekecektir falan da.
+
+432
+01:09:13,636 --> 01:09:18,636
+Evet ama ben işte o LX, LSTM'den çıksın istedim açıklamaları.
+
+433
+01:09:18,636 --> 01:09:23,636
+Ama işte dediğim gibi o zaman sınıflandırıcıyla eşleşmeme problemi de var.
+
+434
+01:09:23,636 --> 01:09:26,636
+Bunu nasıl çözsem bilemedim açıkçası.
+
+435
+01:09:26,636 --> 01:09:28,636
+İşte ayrı modeller yapılacak.
+
+436
+01:09:30,612 --> 01:09:42,912
+Ya da önce sınıflattıracaksın mesela. Sonra sınıflayıcı zaten GradCAM'ı da üretiyor diye düşünüyorum.
+
+437
+01:09:42,912 --> 01:09:55,612
+Çünkü GradCAM sınıflayıcının sınıflayıcı network'ın katmanlarından oluşturuyor görüntüyü yanlış bilmiyorsam.
+
+438
+01:09:56,051 --> 01:09:59,371
+Evet, ben de bu projede ilk kez kullandım ama…
+
+439
+01:09:59,371 --> 01:10:13,591
+Sonra açıklayıcıya hem gerçek görüntüyü hem bulunan sınıfı hem de Grad-CAN'ın oluşturduğu görüntüyü, üçünü birden vermem lazım.
+
+440
+01:10:13,591 --> 01:10:22,591
+Bunun için de açıklayıcı böyle mesela ne kullandım burada, Blip miydi? Blip'i aldım, kullandım değil de…
+
+441
+01:10:22,836 --> 01:10:35,336
+Ona göre modeli birazcık değiştirip, biraz fine-tuning yapıp, açıklayıcı modeli ona göre toparlama lazım.
+
+442
+01:10:35,336 --> 01:10:39,536
+Evet, öyle bu sefer Gretkemin de doğruluğundan daha emin olabilirdim.
+
+443
+01:10:39,536 --> 01:10:42,536
+Benim onu yapmak en son aklıma geldi.
+
+444
+01:10:42,536 --> 01:10:47,336
+İnanılmaz kolay bir şey olarak, üretilen sınıfı...
+
+445
+01:10:49,140 --> 01:10:53,740
+Yazı, bir resminin içine yazı olarak yazabilirsin.
+
+446
+01:10:55,140 --> 01:11:11,740
+Sonra Gradka'nın ürettiği resmi, orijinal resmi ve sınıflayıcının ürettiği yazının resmini, üçünü bir resme concatenation edersin. Tek bir resmi elde edersin.
+
+447
+01:11:12,307 --> 01:11:18,887
+Sonra da al bunu açıkla diye bilip e falan verirsin. Muhtemelen güzel bir açıklama verirsen.
+
+448
+01:11:19,507 --> 01:11:27,188
+Evet, evet. Mantıklı. Teşekkür ederim hocam. Şimdi burada deneyimin sonuçlarından bahsedeceğim.
+
+449
+01:11:29,876 --> 01:11:34,296
+Burada aslında sınıflandırma modeli ve metin üretimi modelim demiştim.
+
+450
+01:11:35,396 --> 01:11:39,275
+Burada önceden de bahsettik ama tek bir şey de görmek istedim.
+
+451
+01:11:39,275 --> 01:11:44,056
+Burada 38 farklı sınıfımız var. Bunlardan rastgele tahminler üretiyor.
+
+452
+01:11:44,456 --> 01:11:48,376
+Ve modelin iyi bir düzeyde olduğunu söyleyeceğimiz çıktılar.
+
+453
+01:11:48,996 --> 01:11:51,056
+Metrik sonuçlarımızı görüyoruz.
+
+454
+01:11:51,315 --> 01:12:06,695
+Sonra bu metin üretimi içinde LSM modelimizde Bilev Skor'umuz %95 geliyor. Ama işte her sınıf için böyle hani temsilli bir cümle ürettiğimden dolayı bu yüksek bilev aslında beklenen de bir sonuç.
+
+455
+01:12:08,835 --> 01:12:11,476
+Bu değerlendirme ve sonuçlar.
+
+456
+01:12:15,667 --> 01:12:35,427
+Güçlü ve zayıf yönlerinden bahsetmek istiyorum modelim ve toplamda çalışmanın yani. Bunun güç tarafı çok basit bir mimariyle üç tane farklı katman sunması bize. Sınıf etiketi, cümle ve grethgem bunları birlikte görmek birbirini destekliyor.
+
+457
+01:12:35,887 --> 01:12:54,167
+Ve ResNet 18 gibi daha hafif bir model kullandığım için eğitim sürem de kısa. Hem de demoda da hepsi birlikte etkileşimli olarak rahat çalışan bir demomuz var. Ama öte yandan da bunun kısıtları da var tabii ki. Veri seti konusu.
+
+458
+01:12:54,528 --> 01:13:07,068
+Kontrollü bir veri seti olması mesela bir kısıt olsa olabilir. Çünkü gerçek sah hatarla görüntülerinde çok fazla noise var, çok farklı farklı ışık poşuları işin zorluğunu artıracaktır.
+
+459
+01:13:07,988 --> 01:13:18,927
+Sonrasında da metinler böyle şablon tabanlı olduğu için de yani gerçek bir captioning modeline göre de sınırlı esneklikte.
+
+460
+01:13:19,636 --> 01:13:33,935
+Grad Cam'da son olarak tek bir katmana baktığı için daha gelişmiş böyle belki explainable AI yöntemleriyle modelin kendini açıklayabilmesi daha çok işe de yarayabilir diye düşündüm.
+
+461
+01:13:34,695 --> 01:13:44,236
+Gelecek çalışmalarda, bilgisayar verisletin zaten gerçek hayatı biraz daha yaklaştırmak, sağ fotoğraflarıyla fine toning yapmak iyi olabilir.
+
+462
+01:13:45,427 --> 01:13:55,648
+İkincisi, böyle şablon cümle vermek yerine tamamen veriye odaklanıp, belki transform tabanlı daha güçlü bir caption modeli denenebilir.
+
+463
+01:13:55,648 --> 01:14:09,708
+Bir de farklı farklı açıklanabilirlik yöntemleriyle, farklı katmanlardan bir etkemler ya da birbirine entegre dediğimiz gibi,
+
+464
+01:14:11,028 --> 01:14:23,507
+Sistemlerle daha karşılaştırma yapıp daha kapsamlı bir analiz de üretilebilir. Böylece model daha genellenebilir ve açıklama kalitesi de daha yüksek bir hale gelebilir.
+
+465
+01:14:25,128 --> 01:14:29,988
+Dinlediğiniz için teşekkür ederim. Projemin tamamı GitHub'da mevcut. Raporuma da eklemiştim.
+
+466
+01:14:33,048 --> 01:14:34,468
+Teşekkür ediyorum.
+
+467
+01:14:37,300 --> 01:14:40,119
+[kişisel bilgi]
+
+468
+01:14:41,020 --> 01:14:41,300
+Evet.
+
+469
+01:14:42,260 --> 01:14:44,920
+Çok güzel. Ne yapıyorsunuz?
+
+470
+01:14:45,600 --> 01:14:51,380
+[kişisel bilgi]
+
+471
+01:14:52,100 --> 01:14:55,500
+[kişisel bilgi]
+
+472
+01:14:57,639 --> 01:14:59,960
+[kişisel bilgi]
+
+473
+01:15:00,979 --> 01:15:01,420
+Efendim?
+
+474
+01:15:02,319 --> 01:15:03,300
+Devam ediyor musunuz?
+
+475
+01:15:04,884 --> 01:15:29,144
+[kişisel bilgi]
+
+476
+01:15:29,488 --> 01:15:40,548
+[kişisel bilgi]
+
+477
+01:15:42,688 --> 01:15:47,387
+[kişisel bilgi]
+
+478
+01:15:47,387 --> 01:15:53,768
+[kişisel bilgi]
+
+479
+01:15:55,667 --> 01:16:00,108
+[kişisel bilgi]
+
+480
+01:16:02,227 --> 01:16:07,608
+[kişisel bilgi]
+
+481
+01:16:07,608 --> 01:16:19,667
+[kişisel bilgi]
+
+482
+01:16:22,996 --> 01:16:29,876
+Toprakta tabi cebelleşiyorsun muhtemelen kolay bir şey değil şu anda böyle.
+
+483
+01:16:29,876 --> 01:16:31,876
+Evet.
+
+484
+01:16:31,876 --> 01:16:35,851
+Oda mısak sürüyoruz, sohbet muhabbet ediyoruz. Onun gibi bir şey değil yani ama.
+
+485
+01:16:36,819 --> 01:17:00,239
+Evet, bir de pahalı yani. Çünkü gerçek üç boyutlu şeyler söz konusu ve bunu ben kendim istesem oturup bir proje yapamam. Sadece işte belki böyle hastalık şey aklıma geldi. Bir de budama yapmak çok zor. Babam hep bana böyle öğretir ama yanlış budama ağacın hayatını mahvediyor. O yüzden bununla ilgili bir proje aklıma geldi.
+
+486
+01:17:00,692 --> 01:17:13,311
+Belki böyle bir çalışma yapabilirim. Telefonu tuttuğumda ben ağaca, dalların hangi yöne nasıl bulayacağımı bana göstersin istiyorum.
+
+487
+01:17:22,387 --> 01:17:39,368
+Robotik acayip gelişiyor ama tabii robotlar genelde temiz böyle ideal yerlerdeler. Böyle tarım marım gibi yerlerde çalışan robotlar henüz daha çok ufukta görünmüyor.
+
+488
+01:17:41,171 --> 01:18:06,871
+Öncelikle süt sağma robotları var. Benim çok hoşuma gidiyor. İneye sütünü sağıyorlar. Bir makine yani. Evet. Hayvancılıkla da hani bir dönem yani lisanslı okurken özellikle çok ilgilenmiştim. Hani yapay zeka ile ilgili bir şey yazın dediğini hemen hayvancılık, yapay zeka ve hayvancılık bunu araştırıyordum.
+
+489
+01:18:11,699 --> 01:18:22,139
+Neyse peki. Yani şey de yapay zeka geliyor işlerini insanların elinden alacak mantığı var ya.
+
+490
+01:18:22,880 --> 01:18:23,359
+Evet.
+
+491
+01:18:23,859 --> 01:18:31,340
+[kişisel bilgi]
+
+492
+01:18:34,079 --> 01:18:36,800
+Yani toprağımız çok yok da.
+
+493
+01:18:37,747 --> 01:18:49,747
+Hocam, toprak bence çok önemli. Benim toprağım olsa satmam mesela. Herkes satıp ev alıyor ama yanlış mıydı?
+
+494
+01:18:49,747 --> 01:19:01,747
+[kişisel bilgi]
+
+495
+01:19:03,060 --> 01:19:10,500
+[kişisel bilgi]
+
+496
+01:19:11,220 --> 01:19:17,460
+[kişisel bilgi]
+
+497
+01:19:17,460 --> 01:19:18,660
+Evet.
+
+498
+01:19:19,460 --> 01:19:24,260
+Yani teknoloji, teknik işlemleri yediğe çok karışık.
+
+499
+01:19:24,260 --> 01:19:30,500
+Şimdi [öğrenci], anlaşılırlık olarak fena değil aslında sonunlu resimler.
+
+500
+01:19:30,644 --> 01:19:33,463
+Aşırı fazla gereksiz yazı yoktu.
+
+501
+01:19:33,963 --> 01:19:36,524
+Arkından iyi bir sunum.
+
+502
+01:19:39,083 --> 01:19:41,144
+Sonuçları bulunmamışsın.
+
+503
+01:19:42,684 --> 01:19:46,524
+Biraz bütünlemelere bir tık kötü not verme durumum var.
+
+504
+01:19:48,564 --> 01:19:52,664
+Bir ay bir fark var. Çünkü bir ay yok aslında da.
+
+505
+01:19:54,996 --> 01:20:02,816
+[kişisel bilgi]
+
+506
+01:20:04,736 --> 01:20:06,896
+Kod artı niyetin nasıldı?
+
+507
+01:20:09,176 --> 01:20:15,356
+Kodu ben sıfırdan kendim yazdım. Tabii ki ben de destek aldım ama hiçbir yerde olmayan bir şey.
+
+508
+01:20:18,644 --> 01:20:21,144
+Kodu göstermiştin sanki bana değil mi?
+
+509
+01:20:21,144 --> 01:20:24,144
+Kodu açmıştım, isterseniz tekrar açabilirim.
+
+510
+01:20:24,144 --> 01:20:26,144
+Tamam, gerek yok.
+
+511
+01:20:26,144 --> 01:20:37,144
+İş olarak aslında fena değil. İki farklı şeyi karşılaştırmışsın. En azından kullanmışsın.
+
+512
+01:20:37,144 --> 01:20:41,836
+Bir karşılaştırma yapmadım gibi ne geliyor? Var mı? Yok.
+
+513
+01:20:41,939 --> 01:21:02,420
+Sadece şey bakmıştım. Yani bu gerçek şablon cümlelerle modelin ürettiği cümlelere işte o klastan gelen. Ona baktım ama. Hani bu şey biraz önce gösterdim. İki tane cümle vardı ya. Birisi gerçek şablon cümle, birisi modelin ürettiği cümle. Ve onları kıyasladım sadece.
+
+514
+01:21:03,859 --> 01:21:07,899
+Ama sayısal bir kıyaslılma yoktu galiba.
+
+515
+01:21:10,836 --> 01:21:18,095
+Evet, yani o chat'teki linkten notlarını görebilirsin.
+
+516
+01:21:19,215 --> 01:21:21,836
+Görüyorum. Tamam hocam, teşekkür ederim.
+
+517
+01:21:22,295 --> 01:21:28,836
+Peki, başarılar. Bu tabii yarısı. Raporlarınızı da artık aslan arkadaşlar notlarınca.
+
+518
+01:21:29,456 --> 01:21:30,315
+Tamamdır.
+
+519
+01:21:30,315 --> 01:21:32,496
+Biz de denemeceğiz. Başarılar diliyorum.
+
+520
+01:21:32,836 --> 01:21:34,836
+Teşekkür ederim hocam, görüşmek üzere.

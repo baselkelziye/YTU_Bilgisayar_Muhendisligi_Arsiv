@@ -1,0 +1,3203 @@
+1
+00:00:17,588 --> 00:00:18,868
+Aydın Hocam, sesim geliyor mu?
+
+2
+00:00:21,208 --> 00:00:24,188
+Geliyor [öğrenci]. Sen beni duyuyor musun?
+
+3
+00:00:25,707 --> 00:00:26,707
+Evet hocam, duyuyorum.
+
+4
+00:00:27,347 --> 00:00:30,027
+Çok güzel. Bugün sen mi anlatıyordun?
+
+5
+00:00:30,948 --> 00:00:32,307
+Evet hocam, ilk ben başlayacağım.
+
+6
+00:00:33,847 --> 00:00:36,948
+Tamam, başla istersen. Yavaş yavaş.
+
+7
+00:00:36,948 --> 00:00:44,688
+Geçen hafta programa göre gidiyoruz. [öğrenci], [öğrenci], [öğrenci] ve [öğrenci] anlattı diye hatırlıyorum.
+
+8
+00:00:46,100 --> 00:00:46,600
+Tamam.
+
+9
+00:00:47,840 --> 00:00:48,400
+Evet, tamam.
+
+10
+00:01:18,995 --> 00:01:20,995
+Şu anda ekranımı görebiliyor musunuz?
+
+11
+00:01:20,995 --> 00:01:21,995
+Görüyorum.
+
+12
+00:01:39,572 --> 00:01:42,492
+Hocam başlayayım mı ben yoksa biraz daha bekleyelim arkadaşlar?
+
+13
+00:01:44,852 --> 00:01:51,492
+Başka kişi var, altı kişi var. Başla istersen ya. Vakit kaybetmeyelim.
+
+14
+00:01:53,611 --> 00:01:57,252
+Bugün veriden yeni örnekler üretebilen modellerin temel mantığını anlatacağım.
+
+15
+00:01:57,671 --> 00:02:04,492
+Yani sadece sınıflandırmak yerine görüntü, metin veya başka yapılar üretebilen modellerin nasıl çalıştığını giriş yapacağız.
+
+16
+00:02:07,091 --> 00:02:18,312
+İlk baş geçen dersi tekrar edeceğim. Bu slide'ın amacı geçen dersteki Represition Learning'in mantığını hatırlamak. Bugün göreceğimiz generatif modellerle bağ kurmak.
+
+17
+00:02:22,740 --> 00:02:34,220
+Self-supervised learning'i hatırlayacak olursak etiketlenmemiş bir veri kümesinden yani non-label datasetlerden kendimiz görev ve etiketler üretip modele yetiyorduk.
+
+18
+00:02:34,220 --> 00:02:46,780
+Bunu yaparken bir enkoder kullanıp veriden anlamlı bir temsil öğreniyorduk. Ardından bu temsil bir dekoder klasifier ya da reggisör tarafından farklı görevlerde kullanılabiliyordu.
+
+19
+00:02:47,828 --> 00:02:55,108
+Burada önemli nokta şu, etiketleri dışarıdan vermiyoruz. Model veriden otomatik olarak çıkartıyor.
+
+20
+00:02:57,807 --> 00:03:09,348
+Geçen dersimizde Self-Support Minds'e öğrendiğimiz Pre-Tex Test'lere bakmıştık. Bunlar görüntü üzerine yaptığımız dönüşümlere dayanıyordu.
+
+21
+00:03:09,948 --> 00:03:13,768
+Rotation, Impating, parçaları yeniden sıralama ve renklendirme gibi.
+
+22
+00:03:14,451 --> 00:03:23,371
+Ayrıca bazı yöntemlerde modellerdeki eksik kısımları tekrar oluşturmayı öğreniyorduk.
+
+23
+00:03:24,572 --> 00:03:26,012
+Bu MI gibi yöntemlerde.
+
+24
+00:03:29,412 --> 00:03:41,311
+Karşılık temelli temsili öğrenmede etiket kullanmadan benzer örnekleri birbirine yaklaştırıp, farklı örnekleri uzaklaştırarak anlamlı temsiller öğrenmeyi amaçlıyorduk.
+
+25
+00:03:42,867 --> 00:03:49,647
+Simsiyeler ve Moco aynı örneğin farklı görünümlerini pozitif çift kullanarak öğrenme yapıyordu.
+
+26
+00:03:49,867 --> 00:03:56,768
+CPC zaman bilgisinden yararlanıyordu. Dino'da negatif örneğe ihtiyaç duymadan güçlü temsiller elde ediyordu.
+
+27
+00:03:58,647 --> 00:04:09,147
+Bu Simsiyelerden her görüntünün iki farklı random augmented edilmiş versiyonunu oluşturuyoruz ve bunları enkoderden geçirip feature vektörlerine çıkartıyoruz.
+
+28
+00:04:10,163 --> 00:04:13,663
+Aynı görüntünün iki farklı versiyonu pozitif çift oluyor.
+
+29
+00:04:13,663 --> 00:04:17,663
+Slide'da bizim yeşil kareler ve kırmızı kareleri görüyoruz.
+
+30
+00:04:17,663 --> 00:04:22,663
+Yeşil kareler bunların benzer olmasını istediğimizi gösteriyor.
+
+31
+00:04:22,663 --> 00:04:30,663
+Diğer tüm görüntüler ise negatif çift olarak değerlendiriliyor ve kırmızı karelerde gösterildiği gibi bunların birbirinden uzak olması gerekiyor.
+
+32
+00:04:30,663 --> 00:04:34,663
+Ama bu yaklaşımın bir dezavantajı var.
+
+33
+00:04:35,411 --> 00:04:44,531
+Negatif örnek sayısı arttıkça öğrenme daha iyi hale geliyor. Bu yüzden çok büyük batch size gerekiyor. Çünkü batch size arttıkça negatif örnek sayımız artıyor.
+
+34
+00:04:47,091 --> 00:05:07,151
+Moco simsiyaların büyük batch gereksinimi çözmek için negatif örnekleri büyük bir kuyruk içinde saklıyor. Ayrıca Query tarafında Encoder güncelleniyor. K tarafı ise Momentum Encoder olarak NoGrad çalışıyor ve yavaşça güncelleniyor. Bu sayede batch size'a bağlı kalmadan çok sayıda negatif örneklerle Constructive Learning yapılabiliyor.
+
+35
+00:05:09,043 --> 00:05:21,603
+Dino'ya bakacak olursak, Dino etiket kullanmayan teacher-student yapısıyla temsili öğreniyor. Burada negatif örnek kullanmadan özellikle Wieson Transformer'larda güçlü ve anlamlı.
+
+36
+00:05:22,079 --> 00:05:31,759
+Görseller temsil ediliyor. Dino Vol. 2'de burada artık biz öğrenme şeyimizi, datasetimizi daha fazla yükseltmiş oluyoruz.
+
+37
+00:05:32,139 --> 00:05:40,939
+Dino Vol. 2, Dino'nun ölçeklendirilmiş ve güçlendirilmiş sunumda öğrenilen, öğreniyor. Bu özellikler pratikte yaygın olaraktan kullanılıyor.
+
+38
+00:05:42,319 --> 00:05:45,579
+Şimdi ben bugün asıl anlatacağım konuya giriş yapmak istiyorum.
+
+39
+00:05:47,091 --> 00:06:08,531
+Bugün generatif modellere giriş yapıyoruz. Yani artık sadece sınıflandırma yapmıyoruz. Verinin dağılımını öğrenip yeni örnekler üretebilen modelleri inceliyoruz. Bir görüntüyü açıklayan bir cümle üretmekten yeni bir görüntü oluşturmaya kadar pek çok görevin temelinde generatif modeller var. Bu derste bu modellerin temel mantığını ve neden bu kadar önemli olduklarını göreceğiz.
+
+40
+00:06:12,975 --> 00:06:37,415
+Elimizde giriş-çıkış ikilleri, yani x-y çiftleri var. Modelin görevi x'i aldığında doğru y'yi üretecek bir fonksiyon öğrenmektir. Sınıflandırma, regresyon, obje tespiti, semantritik segmentasyon ve image caption gibi bildiğimiz birçok görev bu kategoriye giriyor. Yani burada öğrenme tamamen etiketli verilere dayanıyor.
+
+41
+00:06:39,220 --> 00:06:59,260
+Burada bir kedi resmimiz var. Sınıflandırma, Supervised Learning'in en temel örneği. Burada giriş olarak bir görüntü veriyoruz ve bu modelden hangi sınıfa ait olduğunu söylemesini bekliyoruz. Örneğin bu fotoğrafı gören model, doğru etiket olan ket sonucunu üretmeyi öğreniyor.
+
+42
+00:07:00,339 --> 00:07:08,339
+Bir diğer örneğimize bakacak olursak, Image Captioning. Bu Spurvised Learning'in daha karmaşık bir örneği.
+
+43
+00:07:09,339 --> 00:07:14,439
+Çünkü modellar sadece bu nedir diye sormuyoruz. Az önce kedi resimde sadece bu nedir diye soruyorduk.
+
+44
+00:07:14,439 --> 00:07:22,860
+Burada artık sadece modellar sadece bu nedir diye sormuyoruz. Aynı zamanda görüntüyü tam bir cümle ile açıklamasını bekliyoruz.
+
+45
+00:07:23,283 --> 00:07:28,124
+Buradaki fotoğrafta bir valizin içinde oturan bir kedi var ve doğru çıktı.
+
+46
+00:07:29,044 --> 00:07:31,783
+A cat is sitting on a suitcase on the floor.
+
+47
+00:07:32,544 --> 00:07:43,104
+Model artık eğitim sırasında binlerce örneği görerek hem görüntüdeki nesneleri tanımaya hem de bunlar arasındaki ilişkileri anlayıp doğal bir cümle oluşturmayı öğreniyor.
+
+48
+00:07:43,104 --> 00:07:49,484
+Yani girişimiz bir görüntü burada ama hedefimiz ise onun anlamlı biçimde tarif eden bir cümle.
+
+49
+00:07:52,180 --> 00:07:59,520
+Diğer bir şeyimiz Object Detectin. Artık burada da görüntüde hangi nesnelerin bulunduğunu belirlemekle kalmıyor.
+
+50
+00:08:00,520 --> 00:08:08,980
+Aynı zamanda, fotoğrafta göründüğü gibi, aynı zamanda her bir nesnenin görüntü içinde tam olarak nerede olduğunu da işaret ediyor.
+
+51
+00:08:08,980 --> 00:08:13,980
+Bu örnekte, model iki köpeği ve bir kediyi hem doğru sınıflandırmış.
+
+52
+00:08:15,091 --> 00:08:20,711
+Hem de her birinin etrafına birer sınırlandırılmış bir kutu çizmiş durumda.
+
+53
+00:08:21,311 --> 00:08:26,871
+Yani model, görüntüyü hem sınıflandırma hem de konumlandırma açısından anlamayı öğreniyor.
+
+54
+00:08:27,691 --> 00:08:30,831
+Bu tür görevler supervised learning kapsamında.
+
+55
+00:08:30,831 --> 00:08:36,672
+Çünkü hem sınıf etiketleri hem de neslinin koordinatları eğitim sırasında modele verilmiş oluyor.
+
+56
+00:08:38,271 --> 00:08:42,131
+Bir diğer örneğimize bakacak olursak, semantic segmentation.
+
+57
+00:08:42,960 --> 00:09:04,960
+Artık burada görüntüyü piksel seviyesinde anlamayı hedefleyen bir supervise öğrenme problemimiz var. Model sadece artık burada bir kedi var demiyor. Bununla yetinmekle kalmıyor. Kedinin hangi piksellerden oluştuğunda tek tek işaret ediyor. Bu örnekte çimen, kedi, ağaç ve gökyüzü gibi farklı sınıflar ayrı renklere boyanmış durumda. Yani model...
+
+58
+00:09:05,268 --> 00:09:15,847
+Görüntüdeki her bir pikselin hangi kategoriye ait olduğunu öğreniyor. Bu tür görevlerde etiketleme çok detaylı ve eğitim sırasında her pikselin doğru sınıfa modeli veriliyor.
+
+59
+00:09:21,652 --> 00:09:39,032
+Şimdi Asperwise Learning'i anlatacak olursam, burada sadece elimizde yalnızca bir veri var. Burada etiketimiz yok. Sadece X değerlerimiz bulunuyor. Bu durumda modelin amacı verinin içindeki gizli yapıları, doğal gruplamaları veya örüntüleri ortaya çıkarmak.
+
+60
+00:09:39,860 --> 00:09:56,600
+Örneğin benzer görüntüleri bir araya getiren Kulustering, yüksek boyutlu verileri daha anlamlı bir uzaya indirgen, dimensional reductin veya verinin dağılımını modelleyen density estimation gibi görevler unsupervised learning'e giriyor.
+
+61
+00:09:57,500 --> 00:10:00,000
+Bu yaklaşımda model doğru cevabı görüyoruz.
+
+62
+00:10:00,000 --> 00:10:07,740
+Sadece verinin kendisinden bir yapı çıkarmaya çalışıyor. Örneklerine bakacak olursak burada K-Means Klostering var.
+
+63
+00:10:08,279 --> 00:10:13,419
+Bu unsupervised learning'in en klasik örneklerinden bir tanesi bu örneğimiz.
+
+64
+00:10:15,100 --> 00:10:23,039
+Burada elimizde bir etiket yok. Model veri noktalarını birbirine olan benzerliklerine göre doğal grupları ayırmaya çalışıyor.
+
+65
+00:10:23,508 --> 00:10:39,788
+Bu görselle üç farklı küme bulmuş. Mavi, kırmızı ve yeşil. Mavi, kırmızı ve yeşil bölgelerimiz var burada. Yani K-Means verinin içindeki yapıyı kendi başına keşfederek hangi noktaların birbirine benzediğini öğreniyor.
+
+66
+00:10:45,120 --> 00:10:56,259
+Yüksek boyutlu veriyi daha düşük boyutlu ama anlamını koruyan bir uzaya projelendirmek için kullanılan bir etkisiz öğrenme yöntemimiz burası.
+
+67
+00:10:56,259 --> 00:11:01,980
+Burada soldan üç boyutlu bir veriyi veri uzayı görüyoruz.
+
+68
+00:11:02,820 --> 00:11:10,360
+PCI bu verideki en çok varyans taşıyan doğru otuları bulup veriyi bu eksenlere göre yeniden ifade ediyor.
+
+69
+00:11:10,995 --> 00:11:22,655
+Sonuç olarak sağdaki gibi iki boyutlu bir gösterim elde ediyoruz. Böylece hem görselleştirme kolaylaşmış oluyor hem de verinin temel yapısı daha kompakt biçimde temsil ediliyor.
+
+70
+00:11:23,875 --> 00:11:30,555
+Yani aslında burada üç boyutlu bir veri uzayımızı iki boyutlu bir temsili gösterim elde etmiş oluyoruz bu örneğimizde de.
+
+71
+00:11:39,412 --> 00:11:59,991
+Generatif modellere geçişim temellerini oluşturuyor. Density Estimation, Unsupervised öğrenmenin temel amaçlarından biridir. Elimizde yalnızca veriler var ve bu verilerin hangi dağılımdan geldiğini, yani ikisinin olasılığını modellemeye çalışıyoruz.
+
+72
+00:12:00,371 --> 00:12:03,991
+Üstteki örnekte bir boyutlu veri noktalarını görüyorsunuz.
+
+73
+00:12:05,844 --> 00:12:10,644
+Model bu noktalara en iyi uyan sürekli bir dağılım eğrisi çıkarmaya çalışıyor.
+
+74
+00:12:12,324 --> 00:12:17,124
+Alttaki figürlerde ise kavramların iki boyutlu versiyonu var.
+
+75
+00:12:22,484 --> 00:12:29,184
+Verinin yoğun olduğu bölgeleri yüksek tepeler olarak, seyrek bölgeleri ise düşük değerler olarak model öğreniyor.
+
+76
+00:12:29,984 --> 00:12:37,824
+Density Estimation, jeneratif modellerin temelini oluşturuyor. Çünkü P2'si öğrendiğinizde artık o dağılımdan yeni modeller üretebiliyoruz.
+
+77
+00:12:43,572 --> 00:12:59,492
+Burada bize bu modeli anlatacağım ilk baş. Bu modelin amacı veriyi gördükten sonra etiketin olasılığını öğrenmektir. Yani bu görüntü bir kedi midir sorusuna cevap verir.
+
+78
+00:13:07,283 --> 00:13:17,504
+Genetiz modeller ise tam tersine. Verinin kendisinin nasıl oluştuğunu. Yani P2'si öğrenmeye çalışır. Bu sayede yalnızca var olan veriyi anlamakla kalmıyor.
+
+79
+00:13:17,603 --> 00:13:19,843
+Yani aslında [öğrenci]...
+
+80
+00:13:19,843 --> 00:13:23,823
+Burada X'in Y'ye göre olasılığını yapıyor. Burada sadece X'in olasılığını yapmış.
+
+81
+00:13:23,823 --> 00:13:27,083
+Evet, yani aslında P orada bir olasılık dağılımı.
+
+82
+00:13:27,943 --> 00:13:31,303
+Burada X'in Y'ye göre olasılığını yaparken burada X'in olasılığını sadece yapıyor.
+
+83
+00:13:35,187 --> 00:13:39,087
+Tüm X değerleri için tüm Y değerlerinin olasılığını veriyor.
+
+84
+00:13:40,827 --> 00:13:47,067
+Generative model tüm X değerlerinin olasılıklarını veriyor.
+
+85
+00:13:48,507 --> 00:13:54,107
+Conditional Generative model de tüm Y'ler için tüm X'lerin olasılıklarını veriyor.
+
+86
+00:13:54,227 --> 00:13:56,148
+Böyle bir elimizde dağılım olmuş oluyor.
+
+87
+00:13:57,007 --> 00:13:58,187
+Sonra da dediğin gibi...
+
+88
+00:13:59,316 --> 00:14:09,996
+Bu dağılımdan bir örnek seçebiliyoruz. Seçtiğimiz örnek yeni bir örnek olmuş oluyor. Kedilerle ilgili ise yeni bir kedi olmuş oluyor mesela.
+
+89
+00:14:13,516 --> 00:14:21,656
+Ked etiketi verilginde kedi örneği üretiliyor. Bu ayrımda bizim generatif modeli neden ihtiyaç duyduğumuzu anlamak açısından kritik öneme sahip oluyor.
+
+90
+00:14:27,508 --> 00:14:32,868
+Burada bir olasılık hatırlatması var. Density fonksiyonun ne olduğunu.
+
+91
+00:14:33,428 --> 00:14:38,008
+Burada Px'imiz bizim her olası x değerine pozitif bir sayı atıyor.
+
+92
+00:14:38,328 --> 00:14:42,768
+Bu değer ne kadar büyükse x'in gerçekleşme olasılığı o kadar fazla oluyor.
+
+93
+00:14:42,768 --> 00:14:49,528
+Bu fonksiyon normalize edilmiştir. Yani tüm x değerleri üzerinde integrali biri eşittir.
+
+94
+00:14:50,028 --> 00:14:55,328
+Bu nedenle toplam olasılık sabit oluyor. Ve bir x değerinin yoğunluğu arttıkça
+
+95
+00:14:55,508 --> 00:15:06,808
+Diğer X değerlerin yoğunluğun toplamını da korumak için görecel olarak azalmak zorundadır. Bizim olasılığımızın toplamı 1 olduğu için. Yani bazı X değerleri arttıkça diğer X değerlerin düşmek zorunda kalıyor.
+
+96
+00:15:12,179 --> 00:15:15,179
+Buradan bir görüntü X verildiği zaman
+
+97
+00:15:15,648 --> 00:15:26,888
+Diskriminatif bir model bu görüntünün hangi sınıfa ait olduğunu her ikisi için y olasılığı üzerinden ifade ediyor.
+
+98
+00:15:27,368 --> 00:15:33,608
+Örneğin burada model bu fotoğrafın cat olasılığının yüksek, dog olasılığının ise düşük olduğunu veriyor.
+
+99
+00:15:33,608 --> 00:15:39,768
+Bu olasılıkların toplamı her zaman bire eşittir. Yani olasılık dağılımı normalize edilmiştir.
+
+100
+00:15:40,248 --> 00:15:43,608
+Bu nedenle bir sınıfın olasılığı arttığında diğer sınıfların olasılığı...
+
+101
+00:15:43,648 --> 00:16:03,288
+Bu örneğimizde önemli olan nokta şu ki, bir görüntü için olasılık dağılımı hesaplanırken rekabet her zaman o görüntünün olası etiketleri arasında gerçekleşiyor.
+
+102
+00:16:03,288 --> 00:16:05,288
+Örneğin, kedinin...
+
+103
+00:16:05,844 --> 00:16:14,144
+Bulunduğu görüntüde CAT modelinin olasılığı yüksekken, dog olasılığı doğal olarak azalıyor.
+
+104
+00:16:14,704 --> 00:16:18,084
+Aynı şekilde köpek görüntüsüne de bu sefer dog olasılığı yüksek çıkıyor.
+
+105
+00:16:18,524 --> 00:16:23,943
+Yani her görüntü kendi içindeki sınıf seçenekleri arasında bir olasılık dağılımı kuruyor.
+
+106
+00:16:24,864 --> 00:16:27,043
+Farklı görüntüler birbirleriyle rekabet edemiyor.
+
+107
+00:16:27,783 --> 00:16:31,384
+Her görüntünün olasılık dağılımı tamamen kendisine ait oluyor.
+
+108
+00:16:35,091 --> 00:16:57,572
+Şimdi burada, yani bu şekil aslında biraz anlamsız görünüyor baktığımızda. Diskrenatif modellerin de bir sınırlandırılması var. Modern ne kadar mantıksız, görüntü ya da hiç gerçek nesne içermeyen bir görüntü görürse görsün, yine de ikisi erer için yeni olasılığı şeklinde bir etiket dağılımı üretmek zorunda.
+
+109
+00:17:01,759 --> 00:17:23,359
+Dok düşük olabilir fakat alttaki tamamen anlamsız renkli bir girdiği için de model mutlaka bir dağılım vermelidir. Yani görüntü ne kadar saçma olursa olsun model en yakın gördüğü kategorilere olasılık atıyor. Bu diskrenitif modellerin tüm olasılığı girişleri için zorunlu bir yeğe tahmini üretmesi gerektiğini gösteriyor.
+
+110
+00:17:28,435 --> 00:17:35,076
+Diğer örneğe bakacak olursak, generatif modellerde rekabet artık sınıflar arasında değil,
+
+111
+00:17:35,488 --> 00:17:48,008
+Tüm olasılığı görüntüler arasındadır. Yani model X'in olasılığını öğrenirken bu dağılımın toplamının yine 1 olduğu için yüksek olasılığa sahip bir görüntüyü arttırmak diğer görüntülerin olasılıklarını düşürüyor.
+
+112
+00:17:48,008 --> 00:17:56,887
+Kedi, köpek, maymun tamamen anlamsız bilgide. Hepsi aynı X'in olasılığı üzerinde yer alıyor ve probability mass'ten pay alıyor.
+
+113
+00:17:57,619 --> 00:18:11,619
+Bu nedenle generatif bir model hangi etiket doğru sorusu yerine hangi görüntüler daha olasılıdır sorusunu yanıtlıyor. Bu fark generatif modellerin neden farklı bir yaklaşım gerektirdiği anlamamız açısından önemli bir örnek.
+
+114
+00:18:16,339 --> 00:18:33,279
+Generatif modeller zor çünkü gerçek dünyanın olasılıklarını anlamaları gerekiyor. Örneğin bir köpeğin oturmasının mı yoksa ayakta durmasının mı daha olasılığı olduğunu bilmeli. Aynı şekilde üç bacaklı bir köpek mi yoksa üç kollu bir maymun mu daha olasılığı bunu ayırt edebilmeli.
+
+115
+00:18:35,827 --> 00:18:58,008
+Generatif modellerde tüm olasılık görüntüler aynı olasılık kütlesi için rekabet ediyorlar. Bu yüzden model mantıksız ya da gerçekleşir bir görüntüyle karşılaştığında ona çok düşük olasılık vererek aslında onu reddedebilir. Yani anlamsız girdileri küçük probability mass atayarak onların olasılığı olmadığını belirtme şansımız vardır.
+
+116
+00:19:04,084 --> 00:19:19,304
+Artık Condition'ın Generative Model kavramını açıklıyor artık bu slide'mızda ve çok önemli bir fikir ortaya koyuyor. Her bir etiket, y oluyor bu etiketimiz, tüm olasılı görüntüler yani x'ler üzerinde bir rekabet oluşturuyor.
+
+117
+00:19:20,211 --> 00:19:32,471
+Conditional Generative modellerde Y'nin X'e göre koşulu olasılığı üzerinden öğreniyoruz. Yani belirli bir etiket verildiğinde o etikete uygun görüntülerin nasıl daldığını modellemeye çalışırız.
+
+118
+00:19:32,915 --> 00:19:43,135
+Örneğin, cat etiketini şartladığımızda tüm olasılı görüntüler arasında sadece kediye andıran görüntüler yüksek olasılık alır, diğerleri düşük alır.
+
+119
+00:19:43,135 --> 00:19:50,275
+Aynı şekilde, dog etiketi verildiğinde bu kez köpeğe benzeyen görüntüler probability mass için rekabet eder.
+
+120
+00:19:50,816 --> 00:19:56,755
+Bu yüzden her bir label, tüm olasılı görüntüler üzerinde ayrı bir rekabet mekanizması oluşturur.
+
+121
+00:19:57,175 --> 00:20:00,155
+Conditional Generative modelin temel olarak fikri budur.
+
+122
+00:20:02,132 --> 00:20:19,912
+Buradan bir hatırlatma yapacağım Bayez kuralını. Çünkü bu üç model türü aslında Bayez kuralıyla birbirine bağlanıyor. Diskretif modeller, x'in y'ye göre koşullu ulasılığını öğrenirken, generatif modeller, p2'se odaklanıyor.
+
+123
+00:20:24,307 --> 00:20:40,967
+İşte bizim burada y'nin x'e göre koşullu olasılığını öğrenmeye çalışıyor. Bayez kuralına göre y'nin x'e göre koşullu olasılığı ifadesi, x'in y'ye göre koşullu olasılığının ile x'in olasılığının çarpımının y'nin olasılığa bölünmesiyle elde ediliyor.
+
+124
+00:20:41,548 --> 00:20:49,427
+Yani elimizde diskrenitif bir model ve bir jeneratif model varsa bunları birleştirerek koşullu bir jeneratif modeli oluşturabiliyoruz.
+
+125
+00:20:49,779 --> 00:20:52,480
+Bu da modeller açısından çok güçlü bir ilişki oluyor.
+
+126
+00:20:54,759 --> 00:20:57,879
+Burada Bayez kuralı bize şunu söylüyor.
+
+127
+00:21:01,460 --> 00:21:05,392
+Bayez kuralı burada bize şunu söylüyor. Eğer elimizde...
+
+128
+00:21:05,392 --> 00:21:21,692
+Y'nin X'e göre koşullu olasılığıyla öğrenen bir diskrenitif model ve X'e olasılığını öğrenen bir jeneratif model varsa bunları birbirine birleştirerek Y'nin X'e göre koşullu olasılığını yani conditional jeneratif model elde edebiliyoruz.
+
+129
+00:21:21,692 --> 00:21:30,392
+Burada Y'nin olasılığı etiketlerin ön dağılımı. Yani teoride 3 farklı model türü Bayez kuralı üzerinden birbirine bağlı.
+
+130
+00:21:30,900 --> 00:21:36,500
+Ancak pratikte bu birleşimi doğrudan yapıp kondisyonu jeneratif model üretmek çok yaygın değil.
+
+131
+00:21:39,580 --> 00:21:42,900
+Burada bir özetimiz gibi bir şey var.
+
+132
+00:21:46,771 --> 00:21:53,091
+Diskrenatif modeller veriye etiket atıyor ve etiketler kullanarak öğreniyor.
+
+133
+00:21:53,091 --> 00:21:56,171
+Bir karşılaştırma yapacak olursak bu modeller arasında.
+
+134
+00:21:56,171 --> 00:21:58,771
+Generatif modellerde...
+
+135
+00:21:59,955 --> 00:22:08,755
+Aykırı ve uyumsuz örnekleri tespit ediyor ve buradan etiketler olmadan etiketsiz şekilde öğreniyor.
+
+136
+00:22:09,515 --> 00:22:12,995
+Yeni veri üretmek için örneklemi yapabiliyor generatif modellerimiz.
+
+137
+00:22:12,995 --> 00:22:20,675
+Conditional generatif modellerimizde ise etiket atarken aynı zamanda olasılıksız dış örnekleri reddedebiliyor.
+
+138
+00:22:21,535 --> 00:22:23,615
+Etiketlerden de yeni veri üretebiliyor.
+
+139
+00:22:25,779 --> 00:22:48,960
+Burada gördüğümüz iki model türü, yani jeneratif modeller, kondiyatif modeller. Bu iki model türü de X'in olasılığına göre öğrenilen jeneratif modeller ve Y'nin X'e göre koşullu olasılığını öğrenen, burada jeneratif modellerimiz X'in olasılığına göre öğrenen modeller, kondiyatif modellerimiz de Y'nin X'e göre koşullu olasılığını öğrenen.
+
+140
+00:22:49,683 --> 00:23:03,403
+Genel olarak da Generative Models başlığı altına toplanıyor bu iki modelimiz. Yani literatürde bir E Generative Model dediğinde aslında bu iki aileyi birden kastetmiş oluyor.
+
+141
+00:23:03,403 --> 00:23:06,403
+Ancak pratik uygulamalara baktığımızda...
+
+142
+00:23:06,403 --> 00:23:16,403
+[öğrenci], şey diyecektim, burada İngilizcesi şöyle okunuyor. Conditional Generative Model'in...
+
+143
+00:23:18,420 --> 00:23:39,400
+Probability of X, Probability of X, Given Y. Yani Y'nin ne olduğunu biliyoruz. Given oradan geliyor. X'de işte Y'nin ne olduğunu bildiğimiz durumda X'in olasılığı. Yani Y mesela Label ise köpek gibi.
+
+144
+00:23:40,531 --> 00:23:56,611
+O zaman herhangi bir köpek resminin olasılığı, herhangi bir resmin olasılığı daha doğrusu. Resim uzayına bakarsanız, mesela 24x24 basit bir resim olsun, siyah beyaz olsun, gri seviye.
+
+145
+00:23:58,451 --> 00:24:01,371
+Uzayda 24x24 tane piksel var.
+
+146
+00:24:02,195 --> 00:24:28,115
+İki yüz elli altı tane gri seviye var. Bu kadar çok farklı resim var. O her bir resmin olasılığını veriyor. Yani Y'nin ne olduğunu biliyoruz. X'i olasılığını bize verecek. Türkçe'de bunu nasıl okuyoruz tam emin değilim de. Y'ye göre X değil de mesela ne denilebilir?
+
+147
+00:24:29,556 --> 00:24:31,716
+Y koşulu altında ikisini olasılabilir.
+
+148
+00:24:31,736 --> 00:24:33,516
+Y'ye göre X denilebilir aslında.
+
+149
+00:24:34,036 --> 00:24:35,836
+Y'ye göre X denilebilir.
+
+150
+00:24:36,796 --> 00:24:41,875
+X'e göre Y değil de Y'ye göre X veya Y koşulu ile X gibi falan dememiz lazım.
+
+151
+00:24:44,056 --> 00:24:44,976
+Tamam, devam et.
+
+152
+00:24:46,816 --> 00:24:47,556
+Buradan...
+
+153
+00:24:48,500 --> 00:24:53,379
+Literatürde bir generatif modellediğinde aslında bu iki aileyi birden kastetmiş oluyor.
+
+154
+00:24:53,639 --> 00:24:56,079
+Generatif modelle, Conditioned Generative modelleri.
+
+155
+00:24:56,079 --> 00:25:03,359
+Ancak pratik uygulamalara baktığımızda özellikle modern yöntemlerde en sık kullanılan Conditioned Generative modeller var.
+
+156
+00:25:03,839 --> 00:25:07,659
+Çünkü veri üretirken etikete göre yönlendirme imkanı sağlıyor.
+
+157
+00:25:09,779 --> 00:25:13,279
+Peki biz neden generatif modellere ihtiyaç duyuyoruz?
+
+158
+00:25:13,907 --> 00:25:38,167
+Bunu anlamamızın en iyi yollarından biri belirsizliği düşünmek. Bir girdiğe karşılık birden fazla geçerli çıktı varsa, yani mesela modelin y koşulu altında x'e göre olasılığı gibi bir dağılım öğrenmesi gerekiyor. Dil modelleri bunun mükemmel bir örneği. Burada bir language model örneğimiz var. Model verilen bir metinden.
+
+159
+00:25:39,092 --> 00:25:47,752
+Yeni bir metin üretirken her kelimeyi daha önce üretilmiş kelimelerle koşullu bir olasılık dağılımından örnek seçerek belirliyor.
+
+160
+00:25:48,392 --> 00:25:58,072
+Slide'daki kısa şiir de bunu anlatıyor. Model öğrendiği dağılımdan örnekler çekerek yapılandırılmış ama aynı zamanda özgür üretimler yapabilir.
+
+161
+00:25:58,072 --> 00:26:02,852
+Her yeni token kendinden önce gelen tüm tokenları koşullu olarak seçiliyor.
+
+162
+00:26:03,539 --> 00:26:17,299
+Yani din modelleri tamamen bir jeneratif model problemidir. Diğer bir jeneratif modelleri neden ihtiyaç duyduğumuzu anlamanın en iyi yollarından biri. Başka bir örneğimiz daha var.
+
+163
+00:26:17,299 --> 00:26:30,379
+Burada bu örneğimizde elimizde bir görüntü var. Bu görüntü de bize mesela tahtaya bir şey anlatıyor.
+
+164
+00:26:31,220 --> 00:26:43,259
+Hocamız, burada bir şey veriyor, bir x olaraktan bir görüntü veriyor. Burada bizim artık bir y çıktısını elde etmemiz gerekiyor. Burada da tek su image yapıyoruz.
+
+165
+00:26:44,319 --> 00:26:49,059
+Diğer bir örneğimiz, burada aslında daha bir kapsamlı bir örneğimiz var burada.
+
+166
+00:26:49,059 --> 00:26:49,860
+Burada.
+
+167
+00:26:50,451 --> 00:27:07,731
+Az önce metinden görüntü üretmeyi öğrendik. Bu örneğimizde. Şimdi artık bu generatif model yaklaşımını bir adım daha ileri taşıyoruz. Bu kez elimizde bir görüntü var ve bu modellen sonrasını tahmin etmek istiyoruz. Yani artık bir videoyu tahmin etmek istiyoruz diyebiliriz buradan.
+
+168
+00:27:07,731 --> 00:27:17,151
+Yani soru şu, bir sonraki kare de ne olur? Image to video modelleri tam olarak bu dağılımı göstermeye çalışıyor.
+
+169
+00:27:17,567 --> 00:27:24,528
+Model, sahnedeki nesnelerin fiziksel olarak nasıl hareket edebildiğini, yani değişkenlerin tutarlı olduğunu gösteriyor.
+
+170
+00:27:25,107 --> 00:27:33,767
+Örneğin buradaki kutuya bir Air Force koyan bir el var. Model bu hareketin devamında ne olabileceğini tahmin ederek video oluşturuyor.
+
+171
+00:27:33,767 --> 00:27:43,767
+Bu da generatif modelin sadece görüntüler ve metinlerle sınırlı olmadığını, zaman boyunca gelişen süreçleri de modelleyebileceğini gösteriyor.
+
+172
+00:27:46,483 --> 00:27:50,083
+Şimdi artık generatif modellerin taksonomisini inceleyeceğiz.
+
+173
+00:27:51,003 --> 00:27:55,803
+Generatif model dediğimiz aslında dev bir şemsiyemiz var ve bunun altında çok farklı yöntemlerimiz var.
+
+174
+00:27:56,803 --> 00:28:00,103
+Şimdi bunları dallarına ayırarak da netleştireceğiz.
+
+175
+00:28:01,683 --> 00:28:07,843
+Generatif modellerin ilk büyük kolu Exclibit Density model dediğimiz sınıf.
+
+176
+00:28:08,180 --> 00:28:16,039
+Bu modellerin ortak özelliği verinin olasılık dağılımını, yani x'in olasılığını açık bir şekilde hesaplayabilmeleri.
+
+177
+00:28:16,039 --> 00:28:23,800
+Yani artık model bize sadece örnek üretmekle kalmaz, aynı zamanda bir örneğin ne kadar olasılığı olduğunu nümerik olarak söyleyebilir.
+
+178
+00:28:25,236 --> 00:28:47,936
+Generatif modelleri biz burada aslında iki tane temel kategoriye ayırıyoruz. Birinci grubumuz Exclude Density dediğimiz modelli. Bunlar ikisinin olasılığını tam olarak hesaplayabiliyordu. Ama bu modelimiz, Impliclude Density Models, ikisinin olasılığını formül olarak vermiyor. Yani bir görüntünün olasılığını hesaplamamız mümkün değil.
+
+179
+00:28:48,723 --> 00:28:54,263
+Ancak dağılımdan örnek çekebiliyorlar. Yani yeni görüntüler üretebiliyorlar.
+
+180
+00:28:55,364 --> 00:28:58,844
+Bu da yeni görüntü oluşturabiliyorlar buradan.
+
+181
+00:29:00,263 --> 00:29:05,124
+Şimdi generatif modellerin bir alt sınıfı olan X-Clip Density modellerine iniyoruz.
+
+182
+00:29:05,124 --> 00:29:14,483
+Eğer model ikisinin olasılığını gerçekten hesaplayabiliyorsam bunun bir alt kategorisi daha var.
+
+183
+00:29:15,412 --> 00:29:26,852
+Track table density modensi. Bu modeller ikisinin olasılığını tam olarak, matematiksel olarak hesaplayabildiği için eğitim sırasında Locke-Line-Clive'un doğrudan optimize etmek mümkündür.
+
+184
+00:29:30,836 --> 00:29:55,996
+Burada, bu sınıfımızdaki bizim, bunu aslında birazdan anlatabilirim. Diğer kategorimiz, X-Clip Density'deki Approximately Density modellerimiz. Bu modellerimiz P2'si tam olarak hesaplayamıyor. Ama yaklaşık bir olasılık dağılımını öğreniyorlar. Bu sınıfın en bilinen örneği,
+
+185
+00:29:56,500 --> 00:30:09,640
+Variational Auto Encounter yani VAE. VAE gerçek PX'in olasılığını hesaplamak çok zor olduğu için bunun yerine optimize edilebilir bir alt sınırı kullanıyor ve dolaylı yoldan bir olasılık modeli öğretiyor.
+
+186
+00:30:11,380 --> 00:30:13,140
+Bir önceki slide'mızda...
+
+187
+00:30:13,907 --> 00:30:36,447
+Exclusive Density modelleri tamamlamıştık. Şimdi sağ taraftaki Inclusive Density modelleri geçiyoruz. Inclusive modellerin temel farkı neydi? Tam olarak X'in olasılığını hesaplayamıyorlardı. X'den olasılık üretebiliyorlardı. Bu kategoriye giren en bilinen yöntemlerden biri Generative Adversial Networks.
+
+188
+00:30:36,723 --> 00:30:48,803
+Bu modelimiz direkt sampling yapıyor. Model bize şu örnek şu olasılıkla geldi demiyor ama direkt olarak çok gerçekçi yeni örnekler üretiyor. Diğer bir alt katagörümüz.
+
+189
+00:30:49,152 --> 00:31:06,211
+Aynı dairik yöntemler. Bu modeller doğrudan, ikisinin olasılığından örnek çekmiyor. Bunun yerine itiraktif bir süreç kullanıyor. Önce veriyi gürültü ekleyerek tamamen bozuyorlar. Sonra bu süreci adım adım tersine çevirip gürültüden yeni bir örnek üretiyorlar.
+
+190
+00:31:06,211 --> 00:31:14,872
+Yani örnek üretimi tek adımda değil, çok sayıda küçük denezlik adımıyla gerçekleşiyor.
+
+191
+00:31:18,771 --> 00:31:24,091
+Bugün bunları dersimizde anlatacağız. Bu kısmını iyice. Arkadaşım anlatacak hatta.
+
+192
+00:31:30,067 --> 00:31:38,067
+Şuraya gelecek olursam. Şimdi generatif modellerin ilk alt kategorisi olan autografe modelleri geçiyoruz.
+
+193
+00:31:39,127 --> 00:31:46,867
+Bu modellerin aslında temel fikri çok basit. Bir veriyi, örneğin bir görüntüyü veya bir cümleyi parça parça sırayla üretiyorlar.
+
+194
+00:31:46,867 --> 00:31:51,727
+Her adımda üretilen yeni parça daha önce üretilmiş olanlara bağlı oluyor.
+
+195
+00:31:56,948 --> 00:32:02,768
+Bir sonraki piksel nedir veya bir sonraki kelime nedir sorusu sürekli tekrar ederekten tam veriyi oluşturuyor.
+
+196
+00:32:03,208 --> 00:32:09,488
+Aslında RNN'ler bunlardan değil mi? RNN, LSTM gibi şeyler. Otoregresif aslında.
+
+197
+00:32:11,368 --> 00:32:18,708
+Bunların en büyük avantajı ikisinin olasılığını birebir hesaplayabiliyorlar. Yani tam olasılık modeli veriyorlar.
+
+198
+00:32:22,195 --> 00:32:35,056
+Dezavantajına bakacak olursak üretimimiz yavaş olabilir. Çünkü her adım sırayla yapılmak zorundadır. Dil modelleri ve eski görüntü modelleri çoğu bu sınıfa giriyor. Şimdi artık bunların amacına bakacak olursak.
+
+199
+00:32:35,763 --> 00:32:57,443
+Autogresif modellerin amaçlarına bakacak olursak. Burada maksimum nakliudun amacı gözlemlediğimiz verinin olasılığını açıklayan açık bir fonksiyon yazmak. Yani ikisinin olasılığı parametrelere bağlı bir model olarak bu şekilde ifade etmek.
+
+200
+00:32:59,824 --> 00:33:12,804
+Modelin ayarladığımız parametrelerini gösteriyor. Bu ifademizde X verisinin W parametreleri altında verdiği modelin olasılığını göstermiş oluyor aslında bize.
+
+201
+00:33:12,804 --> 00:33:24,704
+Yani bu şekilde olmuş oluyor. X'in olasılığını X verisinin W parametreleri altında vermiş oluyoruz.
+
+202
+00:33:27,663 --> 00:33:44,043
+Tüm veri noktalarının olasılığını en büyük yapan parametreleri bulmak istiyoruz. Bu nedenle model parametrelerin, yani W'yu tüm örneklerin olasılıklarını çarpımış şeklinde maksimize edecek şekilde seçiyor.
+
+203
+00:33:46,603 --> 00:33:47,883
+Soru mu var?
+
+204
+00:33:50,703 --> 00:33:53,263
+Eğer bir şey yazdıysanız göremiyorum sence bildirim geliyor.
+
+205
+00:33:54,023 --> 00:33:55,063
+Elimizde
+
+206
+00:33:55,796 --> 00:34:02,456
+Burada artık olasılıkların çarpımı maksimize edecek şekilde seçiyoruz.
+
+207
+00:34:03,016 --> 00:34:07,976
+Kısaca eğitimi tüm verilerin birlikte en olasılığı olduğu W parametrelerini bularaktan seçiyoruz.
+
+208
+00:34:07,976 --> 00:34:18,576
+Burada bizim bu ifademiz W'nun maksimum şeysinde W hangi değerde en büyük olduğunu şey yapmaya çalışıyoruz.
+
+209
+00:34:18,916 --> 00:34:22,296
+Burada biz tüm veri noktada olasılıklarını çarpıyoruz.
+
+210
+00:34:22,708 --> 00:34:37,108
+Bu çarpımı maksimize eder. Yani W şimdi parametreler ya, X'in olasılığı yukarıda bize bir F fonksiyonuyla veriliyor.
+
+211
+00:34:39,108 --> 00:34:50,108
+Ve bu F fonksiyonunda W da var. Yani ağırlıklar. Biz nörel network eğitiminde ağırlık kullanıyoruz ya. O ağırlıklar.
+
+212
+00:34:50,452 --> 00:35:16,992
+Bir şekilde olasılığı elde ederken kullanılacak. Dolayısıyla en iyi ağırlıkları bulmak ya, olasılık nöral network eğitimi. Bu da işte en iyi ağırlığı bulacak. ArcMax, W. En iyi W'yu ver bize. Nasıl bir W? Maksimize etsin. Neyi maksimize ediyor.
+
+213
+00:35:18,739 --> 00:35:22,420
+Tüm x a'ların olasılıklarının çarpımını.
+
+214
+00:35:23,699 --> 00:35:29,399
+Burada x a'ların çarpımı, x a'lar birbirinden bağımsız varsayılıyor.
+
+215
+00:35:30,799 --> 00:35:38,639
+Birbirinden bağımsızsa, x birden x n'e kadar böyle bir sample'ın olasılığı nedir?
+
+216
+00:35:38,639 --> 00:35:42,279
+Tek tek şeylerin çarpımıdır.
+
+217
+00:35:43,500 --> 00:35:45,019
+Olasılıkların çarpımıdır.
+
+218
+00:35:45,844 --> 00:35:58,684
+Dolayısıyla her bir x'in olasılığını çarpıyor. Birleşik olasılık bulmuş oluyor. Joint Probability. Bunu olasılık dersinde anlatıyoruz biz.
+
+219
+00:36:01,083 --> 00:36:12,623
+Joint Probability'yi maksimize etmeye çalışıyor. Yani verinin, elimizdeki verinin birleşik olasılığını maksimize eden w nedir?
+
+220
+00:36:14,195 --> 00:36:22,195
+Bunu bulmaya çalışıyorum. Maximum Likely Load Estimation diye daha geçen hafta falan anlattım bunu ben olasılık dersinde.
+
+221
+00:36:22,195 --> 00:36:25,195
+Evet devam edelim.
+
+222
+00:36:33,235 --> 00:36:48,115
+Tüm bu olasılıkların çarpımını maksimize etmek zor olduğu için log alıyoruz. Log çarpımı toplama dönüştürüyor. Böylece problem log olasılıkların toplamını maksimize etmeye dönüşüyor. Ve hesaplama çok daha kolay bir hale gelmiş.
+
+223
+00:36:48,115 --> 00:36:58,455
+Türevini alacak ya şimdi bu maksimum bulmak için ne yapıyoruz? Türevini alıp sıfıra eşitliyoruz. Çarpımın türevini almak bela.
+
+224
+00:36:59,795 --> 00:37:12,415
+Ama toplamanın türevini almak çok kolay. Her bir terimin ayrı ayrı türevini alabiliyorsunuz. O yüzden log kullanılıyor ki çarpım toplamaya çevrilsin.
+
+225
+00:37:23,027 --> 00:37:43,167
+Logsus halini maksimize eden w ile loglu halini maksimize eden w aynı. Logunu aldığınızda fonksiyonu maksimize eden w değişmiyor. Böyle bir güzelliği var. Bir de türev alınması kolay hale geliyor.
+
+226
+00:37:44,788 --> 00:38:09,227
+Toplamada terimlerin ayrı ayrı türeğini alıyorsunuz. Çarpmada bir sürü terim olduğu zaman ne yapmanız gerekiyor? Birincisinin türevi çarpı diğerleri, artı ikincisinin türevi çarpı diğerleri, üçüncüsün türevi. Bu şekilde son derece kompleks hale gelebiliyor. Dolayısıyla logonu alma çok kullanılıyor.
+
+227
+00:38:11,764 --> 00:38:32,244
+Pratik hesaplamada da olasılık 1 ile 0 arasında. Bir sürü olasılığın çarpımını alırsanız, bunlar kısa bir zamanda 0'a gidiyor. Yani özel kütüphaneler kullanmazsanız.
+
+228
+00:38:33,588 --> 00:38:42,768
+Dolayısıyla log o bakımdan da işe yarıyor. Hemen toplamaya çevirdiğinizde sıfıra gitme derdi yok. Eksi sonsuza gitme derdi yok.
+
+229
+00:38:44,867 --> 00:38:55,228
+Bir bölü ikiyi bin kere bir bölü ikiyi çarpsanız çoğu makinede tak diye sıfıra gider. Özel bir kütüphane kullanmazsınız.
+
+230
+00:38:57,460 --> 00:39:05,140
+O bakımdan da işe yarıyor. Dolayısıyla hani bu log tricki çok kullanılıyor. Devam edelim yani.
+
+231
+00:39:06,291 --> 00:39:26,112
+Artık son adımda x'in olasılığının yerine x ve w'nun fonksiyonunu yazıyoruz. Çünkü artık olasılığı modelimiz hesaplıyor. Böylece log x ve w'nin olasılıklarının toplamını maksimize etmek bizim kayıp fonksiyonumuz oluyor. Ve bu fonksiyonu Gradient Descant ile optimize ediyoruz.
+
+232
+00:39:28,012 --> 00:39:32,932
+Bu bizim aslında kayıp fonksiyonumuz, bu gradiyon inişiyle maksimize ediliyor.
+
+233
+00:39:34,771 --> 00:39:52,652
+Burada artık bizim elimizde X'in bir dizi olduğunu varsarıyoruz. Yani X'imiz birden T'ye kadar olacak şekilde sıralı ögelerden oluşuyor. X'imiz burada bir dizi ve birden T'ye kadar olan sıralı ögelerden oluşuyor.
+
+234
+00:39:52,652 --> 00:40:00,711
+Bu bir dizinin ortak olasılıklılığını hesaplamak için olasılığın zincir kuralını uyguluyoruz.
+
+235
+00:40:01,139 --> 00:40:08,359
+Bu kural ikisinin olasılığını her adımın kendisinin önce gelen tüm ögelere karşı koşullu olduğu çarpanlarını ayırmamızı sağlıyor.
+
+236
+00:40:09,199 --> 00:40:14,339
+Zincir kuralı sayesinde ortak olasılığı tek tek koşullu olasılıklarını çarpma olarak yazabiliyoruz.
+
+237
+00:40:14,339 --> 00:40:19,619
+Burada zincir kuralı bir dizinin ortak olasılığını adım adım açmamızı sağlıyor.
+
+238
+00:40:20,500 --> 00:40:25,179
+Baştan tüm dizinin olasılığı bu şekilde gösteriliyor.
+
+239
+00:40:27,072 --> 00:40:41,292
+Bunun önce ilk ögenin olasılığını, yani X1'in olasılığını, ondan sonra ikinci ögenin birinciden sonra gelme olasılığını, ondan sonra üçüncünün hem X1'e hem de X2'ye bağlı olarak genişletebiliyoruz.
+
+240
+00:40:41,292 --> 00:40:53,472
+Bu şekilde devam ediyor. Bu bir dizinin tamamının olasılığını direkt hesaplamak zor olduğu için zincir kuralı bunu küçük koşullu parçalara ayırmış oluyor.
+
+241
+00:40:55,987 --> 00:41:19,027
+Burada aslında biz diyoruz ki, bunu daha sonra biz görmüştük. RNN'de her adımda gizli bir durum üretiyoruz çünkü biz ve bu gizli durumu o adımın olasılığını veriyor. Yani burada H1PX1'in olasılığı, H2X2'nin olasılığı şeklinde gidiyor o tarafa. Her adım önceki bilgiyi taşıyarak bir sonraki ögenin olasılığını tahmin ediyor. Bu da aslında dil modellemenin temelini oluşturuyor.
+
+242
+00:41:24,115 --> 00:41:42,755
+Transformer'da dil modelleme yaparken Masking kullanıyoruz. Bu maske her konunun yan konumunun yalnızca kendisinden önceki kelimeleri görmesini sağlıyor. Böylece model tıpkı RNN'de olduğu gibi XS'in yalnızca önceki ögelere bakarak tahmin edebiliyor.
+
+243
+00:41:45,496 --> 00:41:46,755
+Şimdi burada...
+
+244
+00:41:47,360 --> 00:41:55,340
+Otoragresif görüntü modellerinde bir resmi soldan sağ ve yukarıdan aşağı taradan bir değer dizisi gibi düşünüyoruz.
+
+245
+00:41:56,239 --> 00:42:02,699
+Yani sağdaki şekilde gördüğümüz gibi model resmi parça parça okuların gösterdiği sırayla okuyor.
+
+246
+00:42:03,400 --> 00:42:13,039
+Her küçük kutu bir sap piksel değerini temsil ediyor ve bu değer 8 bit olduğu için model her adımda 0 ile 255 arasında bir sınıf seçiyor.
+
+247
+00:42:13,780 --> 00:42:22,360
+Bu nedenle görüntü üretiminin ya da tahmini her sap pikselin önceki tüm piksellere bağlı olarak sırayla tahmin edilmesi anlamına geliyor.
+
+248
+00:42:23,340 --> 00:42:27,780
+Aranel kullanırsak bu sıra bağımlılımı ardışık gizli durumlarla kuruyoruz.
+
+249
+00:42:28,280 --> 00:42:34,720
+Transformer kullanırsak maskeli self-entiation ile gelecekteki pikselleri görmesini engelliyoruz.
+
+250
+00:42:34,980 --> 00:42:40,160
+Böylece model şekilden de gördüğümüz gibi resmi ok yönünde adım adım üretiyor.
+
+251
+00:42:42,003 --> 00:42:50,563
+Burada bir problemimiz var. Bu da problemimizin olması aslında bizim maliyetimiz. Çok pahalı olmuş oluyor.
+
+252
+00:42:57,427 --> 00:43:23,427
+Bu şekilde modelleyelim için yaklaşık 3 milyon subpikseli sırayla tahmin etmemiz gerekiyor. Bu da hesaplama açısından oldukça pahalı olmuş oluyor. Ama buna bir çözümümüz var. Subpiksel seviyesine tahmin yapmak yerine resim küçük parçaları bölüp bu küçük parçaları sıralı bir yapı olarak modelliyoruz. Böylece milyonlarca adım yerine çok fazla...
+
+253
+00:43:24,000 --> 00:43:33,779
+Çok daha az sayıda blog tahmini yapmış oluyoruz. Bundan sonrasını benim grup arkadaşım anlatacak. Bana herhangi bir sormak istediğiniz soru var mı?
+
+254
+00:43:37,360 --> 00:43:38,639
+Teşekkürler [öğrenci].
+
+255
+00:43:40,779 --> 00:43:42,639
+Merhaba hocam, ben devam edeceğim.
+
+256
+00:43:42,639 --> 00:43:46,079
+Ben bir paylaşımı durduğum.
+
+257
+00:43:47,019 --> 00:43:47,360
+Tamam.
+
+258
+00:43:49,940 --> 00:43:51,940
+Tamam, ben ekrama paylaşıyorum.
+
+259
+00:43:58,356 --> 00:43:59,195
+Geldi mi acaba?
+
+260
+00:44:00,536 --> 00:44:01,316
+Ekran geldi.
+
+261
+00:44:02,576 --> 00:44:08,155
+Tamamdır. Ben Variation Authority Encorders'lardan itibaren devam ediyorum.
+
+262
+00:44:11,987 --> 00:44:14,587
+Tamam, sorunsuzsa başlayacağım.
+
+263
+00:44:16,847 --> 00:44:28,147
+Varyasyonel otokodlayıcılar makine öğrenmesi modellerinde girdilerin varyasyonları şeklinde böyle yeni veriler üretmek için kullanılan generatif üretken modeller.
+
+264
+00:44:28,147 --> 00:44:33,927
+Diğer otokodlayıcılarla da ortak görevler yerine getirebiliyorlar.
+
+265
+00:44:34,107 --> 00:44:36,547
+Yani mesela noise, gürültü giderme gibi.
+
+266
+00:44:38,003 --> 00:44:49,863
+Tüm olarak varyasyonel otoenkoderler, geleneksel otoenkoderlerimizin olasılık sağlığı versiyonu aslında. Yani ham verilerden gizli özellikler.
+
+267
+00:44:51,891 --> 00:45:06,331
+Daha sonra model eğitildikten sonra çıkarım zamanında örnekleme yapabildiğimiz ve yeni örnekler de üretebileceğimiz şekilde öğrenilen gizli Z üzerine bir yapı uygulayabilir.
+
+268
+00:45:07,059 --> 00:45:17,659
+Yani daha somut bir şekilde eğitim verilerimiz X'in, yani burada üst simge İ'nin, X'in farklı bağımsız örnekleri anlamına geliyor.
+
+269
+00:45:18,199 --> 00:45:22,539
+Her birinin altında yatan gizli bir faktör Z'den üretildiğini varsayacağız.
+
+270
+00:45:23,119 --> 00:45:28,019
+Yani her X'i ile ilişkili yüzeyin altında gizlenen bir Z'i var.
+
+271
+00:45:30,356 --> 00:45:55,356
+Veri üretme prosedürüne göre önce Z'yi üretiyor, sonra Z'den X'yi üretiyor. Gördüğümüz görüntü üretmek için de bilmesi gereken her şey bu gizli faktör Z'de yer alıyor. Ama bu gizli faktör Z'leri biz göremiyoruz. Onları asla gözlemleyemiyoruz. Onlara ait bir veri setimiz de yok. Dolayısıyla sezgisel olarak...
+
+272
+00:45:55,827 --> 00:46:07,567
+X bir görüntü, Z ise o görüntü hakkında bilmemiz gereken her şeyi anlatan gizli bir özellik temsili diyebiliriz. Ama bu gizli vektörü de asla gözlemleyemeyeceğiz.
+
+273
+00:46:09,688 --> 00:46:21,228
+Eğitim tamamlandıktan sonra bir örnek sample oluşturabiliriz ve diğer kısıtlamada bu Z değerlerinin bilinen bir dağılımdan, bir distribüsyonundan gelmesini zorunlu kılmamız.
+
+274
+00:46:23,476 --> 00:46:40,516
+Yani varsayımda bulunuyoruz. Dolayısıyla model eğitildikten sonra az önce dediğimi tam olarak yapabiliyor oluyoruz. Bilinen dağılımdan, Distribution'dan bir Z değeri çekiyoruz. Bize bir örnek verecek olan koddan geçiriyoruz aslında.
+
+275
+00:46:45,972 --> 00:47:11,532
+Önsel dediğimiz prior varsayımı yapacağız. Neredeyse her zaman en yaygın olanı Unit Gauss Distribution, Birim Gauss Dağılımı. O zaman bunu nasıl eğiteceğiz? Bu imkansız gibi duruyor. Aslında bu ağı, nöral ağı eğitmek istiyoruz. Bu Z'leri alacak. Her ilk seçim bir Z bulacak. Z'leri de gözlemleyemeyiz. Ne yapacağız?
+
+276
+00:47:12,000 --> 00:47:24,619
+Maksimum olasılığa geri döneceğiz. Eğer gerçekten bir X ve Z verisetimiz olsaydı, aynı logları doğrudan kullanarak log olasılığında maksimize edebilirdik.
+
+277
+00:47:25,043 --> 00:47:43,723
+Önceden gördüğümüz şeyin aynısını kullanabilirdik. Ardından da Z'ye bağlı olup X'in ona koşullu bir üretken modeli olan P'yi eğitebilirdik. Ama Z'yi bilmediğimiz için bir an için biliyormuş gibi davranacağız.
+
+278
+00:47:44,788 --> 00:48:02,407
+Z'yi bilmediğimiz için de bunu marjinalleştirmeye deniyoruz. Yani etkisini azaltmak, önemsiz hale getirmek. Bunu deniyoruz. X'in olasılığının gözlemleyemesek bile var olması gereken bir ortak distribüsyona eşit olduğunu biliyoruz.
+
+279
+00:48:02,407 --> 00:48:11,967
+Ve X'in olasılığını elde etmek için Z'yi entegre edip bu marjinalleştirme işlemini yapabiliriz.
+
+280
+00:48:12,851 --> 00:48:17,931
+Şu işaret ne ilk defa görüyorum ben? Yaprak gibi bir işaret var orada.
+
+281
+00:48:19,791 --> 00:48:28,711
+İnteklasyon işareti galiba yanlış çıkmış değil mi o? İntegrasyon, DZ falan var.
+
+282
+00:48:28,711 --> 00:48:30,611
+Evet, integral.
+
+283
+00:48:31,284 --> 00:48:32,384
+Olması lazım.
+
+284
+00:48:32,704 --> 00:48:33,644
+İntegraldir bu.
+
+285
+00:48:34,524 --> 00:48:34,724
+Evet.
+
+286
+00:48:35,444 --> 00:48:39,084
+Çünkü biraz sonra anlatacağıma göre de
+
+287
+00:48:39,084 --> 00:48:40,924
+Marginalizyonda da zaten
+
+288
+00:48:40,924 --> 00:48:43,624
+Z'nin üzerinden integrasyon alırsan
+
+289
+00:48:43,624 --> 00:48:45,244
+Z'yi marginalize ediyorsun.
+
+290
+00:48:46,124 --> 00:48:48,504
+Yani Z'yi observe etmediğimiz için
+
+291
+00:48:48,504 --> 00:48:52,084
+onu marginalize edeceğiz diyor.
+
+292
+00:48:52,984 --> 00:48:53,424
+Evet.
+
+293
+00:48:53,424 --> 00:48:55,864
+O yüzden integral kullanıyoruz.
+
+294
+00:48:57,748 --> 00:49:10,327
+Bir ortak dağılım varmış gibi davranıp Z gibi bir şekilde dediğim gibi marjinalleştirebiliriz ve yine de bu maksimum olasılık hesaplamasını yapabiliriz bu sayede.
+
+295
+00:49:11,607 --> 00:49:17,248
+Nasıl çalıştığına bakalım. Burada da yine Çeynir Ulu kullanıyoruz zincir kuralını.
+
+296
+00:49:25,460 --> 00:49:38,260
+Z'ye bağlı olasılığına ve sadece Z'nin olasılığına ayırdım. Yani bu P'de Z'ye bağlı olasılık. Tamam. Bunu soldaki kod çözücümüzle hesaplayabileceğiz. Bu da eğitmeyi umduğumuz nörala.
+
+297
+00:49:48,692 --> 00:49:59,692
+Onun hakkında hesaplama yapabileceğimiz başka bir örnek dağılımı olduğunu varsayacağız diyebilirim.
+
+298
+00:49:59,692 --> 00:50:14,851
+Ama buradaki integral bir problem. Genel olarak bu sinir ağının girdisinin tüm uzay üzerinde integral almanın uygulanabilir bir hali yok.
+
+299
+00:50:15,284 --> 00:50:25,964
+Z'ye bağlı olarak x'in olasılığı bir nörali nöral A tarafından modellene çok çok karmışık bir fonksiyon olacak.
+
+300
+00:50:26,584 --> 00:50:31,144
+Bunu analitik veya tam olarak integral almanın hiçbir yolu olmayacak.
+
+301
+00:50:31,827 --> 00:50:44,827
+Burada sinir ağlarını ayrı ayrı parçalar için eğitebiliriz. Yani bu olasılıksal modelleme yaparken asıl temel fikir bazı olasılık...
+
+302
+00:50:45,907 --> 00:51:10,268
+Yani terimlerinden yola çıkmak. Bunların bazıları analitik olarak yazabileceğimiz ve belki akıl yürütebileceğimiz basit distributionlar olacak. Bazıları da öğrenilmiş bu nöral ağın birleşenleri olacak. Yani z verildiğinde x'in olasılığının prensibe göre maksimum olasılık yoluyla öğrenemeyeceğimiz bir nöral ağ olacağını varsayıyoruz.
+
+303
+00:51:10,643 --> 00:51:18,883
+Ama bu sinir ağı maksimum olasılık yoluyla öğrenmek için hangi amacı kullanabileceğimizi aslında yazmamız gerekiyor.
+
+304
+00:51:19,003 --> 00:51:23,483
+Burada şansımız yok çünkü Z'nin üzerinden integral almanın bir yolu yok.
+
+305
+00:51:23,983 --> 00:51:26,643
+Bu integral'i sonlu örnekleme yoluyla...
+
+306
+00:51:27,155 --> 00:51:49,515
+Yaklaşık olarak hesaplamayı deneyebiliriz. Ama genel olarak bu muhtemelen pek iyi çalışmayacaktır. Çünkü Z çok yüksek boyutlu bir uzay ve öyle olabilir. Eğitimimizin de sayısal bir integral almak çok iyi bir fikir olmayabilir. Bu yüzden başka bir şey denememiz gerekiyor.
+
+307
+00:51:50,132 --> 00:51:57,952
+Bias kuralı, az önce arkadaşımın da üstünü çizdiği gibi olasılıkla her zaman yaptığımız diğer bir şey.
+
+308
+00:51:57,952 --> 00:52:08,612
+O zaman Bias kuralını denelim. Bias kuralına sahipsek eğer Px yazmak için kullanabileceğimiz başka bir formülümüz daha olmuş oluyor.
+
+309
+00:52:09,572 --> 00:52:11,692
+Bu Px ne anlama geliyor?
+
+310
+00:52:14,675 --> 00:52:41,935
+Şimdi X verildiğinde Z'nin bu olasılık dağılımı terimini hesaplamanın iyi bir yolu yok. Bu terimi hesaplamak için de bir tür entegrele ihtiyacımız olurdu. Ama yine de şansımız pek iyi gitmiyor. Bunu da hesaplayamıyoruz. Ne yapacağız? Bunun göz dağılımı olduğunu varsayıyoruz. Bu yüzden de. Bununla bir şeyler hesaplayabiliriz. Burada entegrel yok.
+
+311
+00:52:42,324 --> 00:53:06,104
+O zaman okey. Şimdi de x verildiğinde z'nin bu olasılık dağılımını hesaplamanın iyi bir yolunu bulmamız gerekiyor. Bu terimi hesaplamak için de bir tür integrale ihtiyacımız vardı ama yine bunu hesaplayamıyoruz. Ne yapacağız? Başka bir sinir olarak kullanalım.
+
+312
+00:53:08,947 --> 00:53:28,988
+Autoencoder'lar şöyle burada altta olasılık terimini kullanıyoruz. Hesaplayamadığımız bir bias kuralı var. Bunu bizim için hesaplamaya çalışacak başka bir nora layıklayalım. Yani X verildiğinde Z'nin farklı bir koşullu dağılım olasılığını öğrenecek. Farklı fi ağırlıklarına sahip başka bir Q sinirağı olacak.
+
+313
+00:53:33,396 --> 00:53:38,396
+Z verildiğinde X'in gerçek P değerini yaklaşık olarak hesaplamaya çalışacağım.
+
+314
+00:53:40,416 --> 00:53:49,136
+Öyleyse bir şekilde bu altta yer alan ve hesaplayamadığımız terimi yaklaşık hesaplayan başka bir sinir ana sahip olabilseydik,
+
+315
+00:53:49,136 --> 00:53:57,036
+o zaman olasılığı hesaplayıp da bu maksimum olasılık yöntemini belki uygulayabilirdik ve her şey yolunda olurdu.
+
+316
+00:53:58,739 --> 00:54:19,579
+Varyosanel kodlayıcıları eğitirken yaptığımız şey bu aslında. Temelde iki farklı sinir ağını birlikte eğiteceğiz. Biri kodu çözücü, gizli kod olan o Z'yi girdi olarak alıyor ve veri X üzerinde bir dağılım çıktısı veriyor bize.
+
+317
+00:54:20,724 --> 00:54:27,884
+Diğeri de kodlayıcı, yani biri kod çözücü dedik, biri kodlayıcı, veri x'i girdik olarak alıyor.
+
+318
+00:54:28,264 --> 00:54:32,083
+Ve gizli kodlar z üzerinde bir dağılım çıktısı veriyor.
+
+319
+00:54:32,083 --> 00:54:38,304
+Bunların ikisi de kendi bağımsız örneklerle ayrı ayrı eğitilen, ayrı sinir ağları olacak.
+
+320
+00:54:39,903 --> 00:54:43,864
+Bir sinir ağından nasıl olasılık dağılımı elde edebiliriz?
+
+321
+00:54:45,423 --> 00:54:47,344
+Belirsiz gibi duruyor bu da.
+
+322
+00:54:48,019 --> 00:55:00,780
+Küf noktası her şeyi normal dağılıma zorlama. Yani sinir ağının normal dağılımının parametrelerini çıktı olarak vermesini isteyeceğiz. Bunu sağlamaya çalışacağız.
+
+323
+00:55:00,780 --> 00:55:13,580
+Kod çözücü ağa içinde kod çözücünün çıktısının dağılımını yani sinir ağının pikselleri olduğu köşegenleri.
+
+324
+00:55:14,228 --> 00:55:40,647
+Gauss doğrumun olacağını varsaymışız. Modelle bu diagonal Gauss Distribution'ın ortalamasını çıktı olarak veriyor bize. Kod çözücü için sabit bir varyans veya standart satma sigma kare varsayıyoruz. Kodlayıcı ağ için de aynı fikir geçerli. Model veri örneği x'si.
+
+325
+00:55:40,992 --> 00:55:52,492
+Girde olarak kalacak ve ardından x verildiğinde z'nin dağılımı q'yu modelleyen bir Gauss dağılımının parametrelerini çıktı olarak verir.
+
+326
+00:55:52,492 --> 00:56:05,932
+Bu durumda da kollayıcı dediğimiz nörala bu Gauss dağılımının ortalaması bir vektör ve bu yine Gauss dağılımının kovaryansını diagonalini temsil eden bir.
+
+327
+00:56:05,940 --> 00:56:08,599
+Başka bir vektör de çıktı olarak veriyormuş bize.
+
+328
+00:56:09,400 --> 00:56:16,180
+Burada bu diagonal yapıyı varsaymamız üst nokta aslında önemli.
+
+329
+00:56:16,400 --> 00:56:24,260
+Çünkü öbür türlü bu tam covariance maddesinde H²'lik girişleri modellememiz gerekecekmiş.
+
+330
+00:56:24,260 --> 00:56:29,700
+Burada da H çarpı ve pikselden oluşan bir görüntü hayal edeceğiz.
+
+331
+00:56:33,568 --> 00:56:45,248
+Tam kovaryans maddesi gibi olduğu anlamına geliyor. Prensipte görünürdü ki bu piksel çiftleri boyunca tam kovaryansı modelleyabiliyoruz.
+
+332
+00:56:45,811 --> 00:56:52,411
+Ama bu h karelik, v karelik giriş gerektiriyor ve çok büyük oluyor haliyle.
+
+333
+00:56:52,931 --> 00:57:01,431
+Bu yüzden de farklı değerler arasındaki herhangi bir yani korrelasyonu, ilişkiyi göz ardı etmemiz gerekmemiş.
+
+334
+00:57:02,331 --> 00:57:10,672
+Bu diagonal kovaryansın da artık verinin kendisiyle aynı boyutta bir vektör olduğu anlamına geliyor.
+
+335
+00:57:13,364 --> 00:57:23,244
+X'i verdiğimizde Z'nin MU'su, X verildiğinde Z'nin Sigması, Z ile aynı şekle sahip vektörler oluyor.
+
+336
+00:57:23,923 --> 00:57:31,443
+Yani sinirle aynı şekle sahip iki vektör üretiyor ve bunları dağız dağılımının parametreleri olarak ele alırız.
+
+337
+00:57:32,543 --> 00:57:37,744
+İşte sinir, norel A'dan nasıl dağılım üretebileceğimiz bu şekildeymiş.
+
+338
+00:57:38,664 --> 00:57:40,884
+Umarım açıklayabiliriz şimdi.
+
+339
+00:57:41,311 --> 00:58:04,311
+Eğer bu şeye sabit bir, yani sabit standart satmayla maksimum olasılık uygularsak aslında L2'ye iş değer hale geliyor. Ve bu güzel bir yol. Yani bunu yapmak istememiz de şu yüzden. Diagonalini modelleme çalışırken kod çözücü de...
+
+340
+00:58:05,076 --> 00:58:20,076
+Aynı şeyi modellemeye ve her pikselinde ayrı bir varyansını modellemeye çalışmam. Ama bu işe yaramıyormuş. Çünkü pikseller arasında herhangi bir kovaryans yapısını modelleyemiyorsan...
+
+341
+00:58:21,748 --> 00:58:40,748
+Herpiksel'in biraz değişmesine izin verildiği anlamına geliyor. Yani herpiksel'in de böyle biraz değişmesine de izin verilen bir miktar olduğu anlamına geliyor. Sonra bu dağılımdan da örnekleme yapıp...
+
+342
+00:58:41,684 --> 00:59:04,524
+Ortalamayı sabitlemek ve piksel başına, kalyansla ölçeklendirip de piksel başına bayağımsız gürültü eklemek pek mantıklı olmayacağı için genel olarak kod çözüldüğü için biraz böyle olasılık dağılımı çıktısı veriyormuş gibi davranmamız gerekiyormuş bu yüzden.
+
+343
+00:59:04,524 --> 00:59:08,944
+Ama genel olarak bu dağılımdan da örnekleme yapmıyoruz.
+
+344
+00:59:09,396 --> 00:59:14,755
+Tempel almıyoruz. Bunun yerine her zaman ortalama çıktı olarak veriyoruz.
+
+345
+00:59:14,755 --> 00:59:16,755
+Sonra...
+
+346
+00:59:18,324 --> 00:59:25,684
+Sabit sigma karesi. Sabit bir değer olarak bizim karşımıza çıkıyor. Sabit sigma karesi.
+
+347
+00:59:25,684 --> 00:59:34,963
+Ve köşegenler boyunca, biraz önce bahsettiğim köşegen boyunca sabit bir varyansa sahip ghost dağılımı.
+
+348
+00:59:35,764 --> 00:59:40,003
+Yani ghost dağılımının log olasını aslında maksimize etmek.
+
+349
+00:59:40,628 --> 00:59:52,028
+Ve yine ortalama ile is arasındaki o L2 mesafesini de minimize etmeye eşdeğer oluyor. Bu da güzel.
+
+350
+00:59:52,028 --> 00:59:57,028
+Bir kodlayıcımız ve bir de kod çözücümüz var.
+
+351
+00:59:57,028 --> 01:00:04,427
+Enkoder, decoder. Ama biri x'e girdi olarak alıp z üzerinden bir doğum üretiyor.
+
+352
+01:00:04,659 --> 01:00:11,659
+Diğeri ise x üzerinden bir dağılım üretiyor. Burada biraz o yüzden matematik gerekiyor.
+
+353
+01:00:24,916 --> 01:00:38,715
+Ekranın başlığımı görelim. Tamamdır. Pardon. Elbo, burada temel olarak maksimum olasılık hesaplaması yapacağız. Bu genellikle istediğimiz amacımız bu.
+
+354
+01:00:38,715 --> 01:00:49,436
+Üretken modellemedeki birçok amacın sebebi, asıl temeli yani, x'in log p'sini maksimize etmek istiyoruz.
+
+355
+01:00:50,132 --> 01:00:54,991
+Sonra da bunu Bayez kuralı ifadesinin log p'si olarak yazacağız.
+
+356
+01:00:55,331 --> 01:00:57,211
+Bu yüzden de Bayez kuralını kullanacağız.
+
+357
+01:00:59,751 --> 01:01:03,851
+Bunun payını ve paydasını X'e bağlı Z'nin Q'su ile çarpıyoruz.
+
+358
+01:01:05,471 --> 01:01:13,971
+Az önce bu diğer dağılımı yani X'e bağlı Z'nin Q'sunu modelleyen bir sinir Q'su daha eklemiştik.
+
+359
+01:01:14,132 --> 01:01:17,791
+Şimdi bu Bayez kuralı ifadesinin payını ve paydasındaki yoğunluk.
+
+360
+01:01:18,164 --> 01:01:43,704
+Terimini çarpıyoruz yani. Bir şekilde bu terimleri belirli sırayla yeniden düzenleyeceğiz. Yani hangi terimin oraya geldiğini sonra takip edebilmek için onları renk kodlarıyla işaretlemişler slide'da. Biraz logaritma var. Bunları üç ayrı terime ayırıyoruz.
+
+361
+01:01:45,844 --> 01:02:09,324
+Şimdi başka bir şey gerekiyor. Bu Px aslında z'ye bağlı değil. Şimdiye kadar da bu üç terim tamamen eş değer. Hepsi tam eşitlikler. Buradaki ifadede bir z olmasına rağmen aslında z'ye bağlı değil. Çünkü tüm z'ler birbirini götürüyor.
+
+362
+01:02:09,760 --> 01:02:25,540
+Ve Z'ye bağlı olmayan bir şeyimiz varsa eğer, her zaman o şeyin Z üzerinden bir beklentisini alabiliyoruz. Bunun Px olduğunu biliyoruz bu durumda. İstediğimiz herhangi bir dağılıma göre örnek.
+
+363
+01:02:26,228 --> 01:02:34,507
+Sample'lanmış, örneklenmiş Z'nin beklentisini PX'in beklentisinin üzerine her zaman rahatlıkla alabiliyoruz.
+
+364
+01:02:34,507 --> 01:02:41,527
+Bu şeyden dolayı herhalde değil mi? İzlal bu, arkadaşlar bu bayağı matematiksel olarak ağır.
+
+365
+01:02:41,527 --> 01:02:49,527
+Yani ben jeneratif modelleme ile ilgili ikinci dönem dersim var hatta.
+
+366
+01:02:53,268 --> 01:03:03,648
+Bayağı ağır. Autoencoder'lara göre veya daha sonra göreceğimiz kanunlara göre falan en ağır şey Variational Autoencoder'lar matematik olarak.
+
+367
+01:03:05,307 --> 01:03:14,148
+Şimdi burada niye Expectation yazabiliyoruz? Çünkü elimizde bir sample var. Yani bir eğitim yapacağız ya.
+
+368
+01:03:15,347 --> 01:03:34,507
+Diyelim ki köpekleri üretebilen bir şey yapmak istiyoruz. Elimizde bol miktarda köpek resmi var. Dolayısıyla toplamamız gerekiyor veri seti. O veri seti üzerinden beklenen değer alabiliyoruz. Doğru mu? Ben öyle anlıyorum.
+
+369
+01:03:34,900 --> 01:03:50,900
+Evet. Tamam, devam edelim. Ama çok kafam karıştı. Ben de çok zorlandım. Evet, evet. Burası şey, matematiği en zor şeylerden biri bu ders içinde de.
+
+370
+01:03:53,039 --> 01:04:01,119
+Şeyde anlatıyor, daha bir adım adım anlatıyor. Kuleşov diye bir hocanın slide'larını kullanıyorum da.
+
+371
+01:04:01,523 --> 01:04:28,123
+O ikinci derste. O daha bir adım adım anlatıyor. O daha iyi aslında. Ama tabii o daha fazla vakit harcıyor. Bu biraz daha yarım derste anlatmaya çalışıyor. O Variational'ı, o Auto Encoder'lara iki tam ders altı saat falan ayırıyor. Bu işte bir saat, yarım saat falan ayırmaya çalışıyorlar burada. Tabii atlanılan şeyler de olunca anlaşılması aslında daha zor oluyor.
+
+372
+01:04:29,523 --> 01:04:37,723
+Neyse sen devam et bakalım. Bir genel fikir edinmiş olalım merak edenler. Daha ayrıntılı araştırmalar ne yapabilir?
+
+373
+01:04:38,356 --> 01:04:57,916
+Tamam. Yani burada aslında Z'lerin birbirini götürmesi olay. Çünkü en başta da dediğimiz gibi biz Z'yi marjinalleştirmeye çalışıyorduk. Önemini azaltmaya çalışıyorduk. Çünkü bilmediğimiz bir şey ve olabildiğince aslında aradan çıkarmaya çalışıyoruz. Burada da birbirini götürmesi iyi bir şey.
+
+374
+01:05:03,443 --> 01:05:11,443
+Burada, yani şimdi elimizde burada üç tane terim var. Oldukça karmışık gözüken.
+
+375
+01:05:14,443 --> 01:05:28,443
+Ama işte ikinci bir, yani ilkini olduğu gibi devam ettiriyoruz burada. İkinci ve üçüncü terimler de aslında bu D, K, L. Yani K, L, Irak, Saman terimleri.
+
+376
+01:05:30,547 --> 01:05:34,787
+Olasılık dağılımları arasındaki farklılığın ölçüsü.
+
+377
+01:05:36,107 --> 01:05:37,187
+Bu son iki terimin.
+
+378
+01:05:40,187 --> 01:05:41,747
+Son iki terim.
+
+379
+01:05:42,387 --> 01:05:49,027
+Evet, bu tanıma sahip D-K-L. Bu yüzden de bunu şöyle yeniden yazabiliyoruz.
+
+380
+01:05:49,248 --> 01:06:00,567
+Yani ilk terim beklenti, sonra bu iki diğer K-L terimi, yani bu iki K-L terimi de farklı olasılık dalınları arasındaki tutarsızlık ya da farklılığı ölçüyor.
+
+381
+01:06:03,476 --> 01:06:24,016
+Aslında veriyi yeniden yapılandırma teribi. Bir z örneği alacağımızı söylüyor bize. Ve z'yi örnekleme yöntemimiz kodlayıcımız olan x verildiğinde z'nin q dağılımı. Yani x'i alıp kodlayıcıya iletiyoruz. Kodlayıcı x verildiğinde z'nin bir dağılımını q tahmin ediyor.
+
+382
+01:06:24,500 --> 01:06:30,139
+Bir z örneği alacağız. Ardından tüm bu z'ler üzerinden bir beklenti alacağız.
+
+383
+01:06:30,139 --> 01:06:35,500
+Z verildiğinde x'in log olasılığını da maksimiz edeceğiz bu sayede.
+
+384
+01:06:35,500 --> 01:06:43,179
+Bir veri yeniden yapılandırılıyor burada. Yani veri yeniden yapılandırma terimi bu.
+
+385
+01:06:43,179 --> 01:06:46,092
+Ve x veri noktası alıp...
+
+386
+01:06:46,132 --> 01:07:07,092
+Z üzerinde bir dağılım elde etmek için. Bunu yapmak için kod vericiden geçirirsek ve ardından da Z'nin üstündeki tahmin edilen bu dağılımın bir örneğini kod çözücüye iletirsek X'i de geri alacağız.
+
+387
+01:07:08,788 --> 01:07:21,208
+Öğrendiğimizi söylüyorum. Bunları matematiksel olarak kafamda tam oturtamıyorum. Ama buradaki ortadaki terim, önsel dediğimiz prior terim.
+
+388
+01:07:21,652 --> 01:07:31,612
+Bu X verildiğinde Z'nin Q'suyla Z'nin P's arasındaki K'le ıraksamasını, uzaklaşmasını ölçüyor.
+
+389
+01:07:31,891 --> 01:07:40,652
+Yani X verildiğinde Z'nin Q'su, yani kodlayıcı X verisine giriyor ve gizli uzay Z üzerinde bir dağılım üretiyor.
+
+390
+01:07:42,072 --> 01:07:47,231
+Yani bu kodlayıcının o gizli uzay üzerindeki tahmin edilen dağılımı.
+
+391
+01:07:47,699 --> 01:07:57,039
+Z'nin P'si gizli uzay için bizim varsaydığımız prior önsel, genellikle diagonal Gauss dağılımı.
+
+392
+01:07:57,480 --> 01:08:02,500
+Demiştik ya, genelde Gauss Distribution kullanılır.
+
+393
+01:08:02,500 --> 01:08:09,599
+Bu terimde şunu bize söylüyor, model X verildiğinde Z'nin dağılımlarını ayrı ayrı tahmin ediyor.
+
+394
+01:08:10,228 --> 01:08:21,247
+Ve bu tahmin edilen dağılımları bizim önceden belirlediğimiz, daha önceden seçtiğimiz bu basit Gauss Plyor'una uymasını istiyoruz.
+
+395
+01:08:21,247 --> 01:08:29,708
+Bu da modelimiz tarafından öğrenilen gizli uzayın Plyor'a, önseli ne kadar uyduğunu açıyor.
+
+396
+01:08:30,068 --> 01:08:32,048
+Aslında bu özetle.
+
+397
+01:08:33,788 --> 01:08:35,247
+Bu üçüncü terimde...
+
+398
+01:08:35,859 --> 01:08:56,139
+Yine karmaşık, sıkıntılı bir terim. Bu X verildiğinde Z'nin Q'su, yani kollayıcıya verilen giriş verisi. X verildiğinde Z üzerindeki tahmini dağılım ve bu da X verildiğinde Z'nin P'siyle ne kadar eşleşiyor? Bunu veriyoruz.
+
+399
+01:09:00,884 --> 01:09:14,404
+Dikoder'ın modellediği şeyin tersine çevrilmiş dağılıma. Yani bu terimi hesaplayamıyoruz. Çünkü bizi ilk başta zaten sıkıntıya sokan şey X verildiğinde Z'nin P'siydi.
+
+400
+01:09:15,283 --> 01:09:22,564
+Hatırlarsınız. Q'yu eklememizin tüm nedeni de zaten X verildiğinde Z'nin P'sini hesaplayamamamız. Şimdi ne yapacağız?
+
+401
+01:09:23,956 --> 01:09:48,956
+Bunu çöpe atıyoruz tabiri caizse. Kale ıraksamalarının her zaman sıfırdan büyük ya da sıfıra eşit olduğunu biliyoruz. Bu nedenle öyle davranıyoruz. Bu son terimde iki dağılımın kale ıraksaması olduğu için bu dağılımları genel olarak hesaplayamasak da sıfırdan büyük olması gerektiğini biliyoruz.
+
+402
+01:09:52,340 --> 01:10:15,340
+Bunu atıp gerçek olasılığa ait bir alt sınır elde edebiliriz. Son terimi atarsak eğer logpx'in bu iki terimden, o yeniden yapılandırma dediğimiz teriminden ve o önsel terimimizden büyük ya da eşit olduğunu biliyoruz. Ona göre davranıyoruz.
+
+403
+01:10:16,948 --> 01:10:22,448
+Variasyonel Enkoder'ımızı eğitmek için kullanacağımız loss fonksiyonu olacak.
+
+404
+01:10:22,448 --> 01:10:35,948
+Buradaki fikir de, bunun gerçek log olasılığına bir yaklaşım olmasıymış aslında. Bu log olasılığının bir alt sınırı.
+
+405
+01:10:36,000 --> 01:10:49,579
+Oluyormuş ve bu alt sınırı da maksimize edersek tam olarak yapamasak da gerçek log olasılığını da maksimize etmiş oluyoruz. Yani bu varyasyonel otoenkodörler için aslında eğitim hedefi.
+
+406
+01:10:51,420 --> 01:10:57,860
+Özetle, gerçek veri log olasılığı üstündeki varyasyonel alt sınır.
+
+407
+01:11:00,916 --> 01:11:10,336
+Bu şekilde adlandırılan değeri maksimize etmek için bir kodlayıcı Q ve bir kod çözücü P'yi birlikte eğitmek.
+
+408
+01:11:11,216 --> 01:11:18,456
+Buna bazen kanıt alt sınırı çevirisi Elbo deniyor. Elbo'yu maksimize edeceğiz.
+
+409
+01:11:18,456 --> 01:11:25,516
+Ve bu yine bir enkoder ve bir dekoderimiz var.
+
+410
+01:11:27,123 --> 01:11:47,523
+Eğitim prosedörü nasıl görünüyor? İçi girdi olarak alan ve Z üzerindeki dağılımı da çıktı olarak veren bir sinir kollayıcımız olacak. Daha sonra bu kale terimini tahmin edilen dağılıma uygulayacağız.
+
+411
+01:11:49,363 --> 01:12:05,563
+Sonra özellikle tahmin edilen dağılım, gauss dağılımı olmasını sağlayacağı için de tahmin edilen ortalamanın sıfır ve tahmin edilen standart satmanın da hepsinin bir olmasını teşvik edeceğiz.
+
+412
+01:12:14,899 --> 01:12:41,919
+Reparameterization, yeniden parametre, aslında parametrelendirme yöntemi kullanacağız. Bu tahmin edilen dağılımdan örnek alacağız. Bu yöntemde geriye doğru yayılım yapmamızı olanı tanıyormuş. Böylece de tahmin edilen dağılımdan yani Z örneklemini çekmiş oluyoruz.
+
+413
+01:12:42,323 --> 01:12:47,723
+Bu örnek z değerini aldıktan sonra kod çözücüden geçiriyoruz.
+
+414
+01:12:48,103 --> 01:12:52,663
+Kod çözücünün tahmin ettiği normal dağılımı elde ediyoruz bunu yaptığımızda.
+
+415
+01:12:53,863 --> 01:13:01,963
+Sonra kayıp fonksiyonunu yeniden yapılandırma terimini kod çözücünün çıktısına uyguluyoruz burada.
+
+416
+01:13:03,843 --> 01:13:07,663
+Yani çok korkutucu matematik.
+
+417
+01:13:08,384 --> 01:13:24,384
+Ama bu aslında çok da apayrı bir şey değil eğitim hedefimize ulaşmak için. Bu iki los birbirine karşı savaşıyor.
+
+418
+01:13:24,384 --> 01:13:31,384
+Temelde modeli bu gizli uzay zey üzerinden...
+
+419
+01:13:31,988 --> 01:13:51,808
+Darboğaz'a zorluyoruz. Bu iki terim gizli uzaydan farklı şeyler istiyor. Bu yüzden, Reconstruct, yeniden yapılandırma, Stigma'nın sıfır olmasını ve her data point x için mu x'in farklı bir vektör olmasını istiyor.
+
+420
+01:13:51,808 --> 01:13:59,768
+Eşsiz, benzersiz bir vektör olmasını istiyor. Çünkü eğer böyle olsaydı, yeniden yapılandırmanın amacına ulaşırdık.
+
+421
+01:14:00,083 --> 01:14:24,463
+Her data point için ayrı ve eşsiz vektörlerimiz olurdu. Hiçbir olasılık olmazdı. Her şeyi mükemmel bir şekilde yeniden yapılandırabilirdik. Yani Reconstructless'ın istediği bu. Ama o prior, önsel kayıp aslında sigmaların hepsinin biri olmasını istiyor. Çünkü unit gas distribüsün olmasını istiyor.
+
+422
+01:14:26,484 --> 01:14:46,904
+Bu iki loss'un istediğinden farklı. Bu varyasyonel otoenkoderleri eğitirken verilerimizi iyi bir şekilde yeniden yapılandırmak ve gizli uzayımızı da piliyorumuza yakın tutmakla bir denge kurmak için bu iki loss birbirine karşı tabirca ise savaşıyor.
+
+423
+01:14:47,539 --> 01:14:58,159
+Ve eğitim işlemi tamamlandıktan sonra önsel verilerimizden Z değerini örnekleyebilir ve bir örnek elde edebiliyor oluyoruz.
+
+424
+01:14:58,159 --> 01:15:04,159
+Gizli uzayımız diagonal gaussun.
+
+425
+01:15:06,420 --> 01:15:30,480
+Sahip olduğu gizli uzayımızdaki farklı girilenler arasında, farklı girdiler, inputlar arasında sunulan seçenekler de varmış. Bunları ayrı ayrı değiştirebiliyoruz ve bu ayrı boyutlar parçaları hakkında daha böyle faydalı, yorumlanabilir ya da ortogonal bir kodlarmış.
+
+426
+01:15:30,944 --> 01:15:42,624
+Bu durumda da çeşitli bir autoenkoder alınmış. Onu kayıt rakamlarından oluşan bir veri ayarında eğitilmiş.
+
+427
+01:15:42,624 --> 01:15:47,624
+Gizli uzayın iki değişimini değiştirip sayılar...
+
+428
+01:15:55,444 --> 01:16:21,884
+Olayı bu Z'yi vermesi bize değil mi? Yani latent bir uzay veriyor bize. Normalde mesela bir önceki şeylerde, otoregressive modellerde X'i modelleyen, X'in olasılık dağılımını veren bir eğitim var. Burada Z'yi de veriyor.
+
+429
+01:16:22,707 --> 01:16:26,567
+Z ne? Z öyle bir şey ki...
+
+430
+01:16:32,148 --> 01:16:44,567
+Öyle bir şey ki bir nevi x'i etkiliyor ama ne olduğunu hiçbir zaman gözle göremiyoruz. Böyle bir şey.
+
+431
+01:16:44,567 --> 01:16:54,627
+Şimdi böyle bir gizli vektörlerin, gizli uzayın elde edilmesinin birçok faydası var.
+
+432
+01:16:55,604 --> 01:17:04,004
+Bir faydasını burada göstermiş. Mesela Z'yi değiştirdikçe elde ettiğin şeyi değiştirebiliyorsun.
+
+433
+01:17:04,004 --> 01:17:13,004
+Veya şunu yapabilirsin. Benim bir öğrencim de şu anda akademisyen arkadaşımız [öğrenci] vardı mesela.
+
+434
+01:17:18,644 --> 01:17:21,004
+Yüz yaşlandırma ve...
+
+435
+01:17:21,619 --> 01:17:42,939
+Gençleştirme üzerine çalışmıştı doktorasında. Mesela yüz resminin bu latent uzayını elde ettikten sonra yüz resimlerinin z'leri elde ettikten sonra z'leri istediğin yöne değiştirip yüzü istediğin gibi değiştirebiliyorsun.
+
+436
+01:17:47,923 --> 01:17:54,944
+Gençleştirme yönünü bulduktan sonra o yöne gidersen yaşlanıyor. O yöne gidersen yüz gençleşiyor.
+
+437
+01:17:56,684 --> 01:18:05,923
+Veya şey yapabiliyorsunuz, bu Z uzayında diyelim ki ne yapabiliyorsun?
+
+438
+01:18:11,155 --> 01:18:32,715
+Gülen bir kadın resmini çıkarttınız. Z uzayındaki değerleri çıkarttınız. Bu size neyi veriyor? Ya da Gülenden nötr'ü çıkarttınız. Gülmenin Z uzayındaki değerini veriyor.
+
+439
+01:18:36,532 --> 01:18:46,272
+Bir erkeğe eklerseniz, nötr bir erkeğin Z uzayındaki değerine eklerseniz, erkek de o kadın gibi gülüyor.
+
+440
+01:18:47,731 --> 01:18:57,552
+Gibi. Yani şey yapabiliyorsunuz, enteresan bir şekilde oynamalar yapabiliyorsunuz.
+
+441
+01:18:57,692 --> 01:19:02,972
+Üretimler, toplamalar, çıkarmalar yapabiliyorsunuz. Çok enteresan işler yapabiliyorsunuz.
+
+442
+01:19:04,083 --> 01:19:24,423
+Mantığı da şuradan geliyor aslında biraz da. Mesela bir insanın görüntüsünü düşünelim. Bir insanın görüntüsünü etkileyen neler vardır? Mesela yaş, cinsiyet.
+
+443
+01:19:25,684 --> 01:19:50,544
+Etnisite yani işte Türk müdür, İranlı mıdır, Alman mıdır etnisite. Ten rengi belki. Yine etnisite ile ilgili belki ama. İşte ne bileyim kilo. Ondan sonra ne bileyim gençlerde ise işte çekirdek çok yiyor mu yemiyor mu işte suratında.
+
+444
+01:19:51,028 --> 01:20:15,928
+Bunlar, şeyler çıkıyor ya çok yağlı yerlerse. Bunlardan var mı yok mu? Şimdi bu X bunlar gördüğümüz şeyler. Surat görüntüsü falan. Z de işte bu şeyler. Etnisite, cinsellik, cinsiyet daha doğrusu işte kilo, yaş gibi şeyler.
+
+445
+01:20:18,003 --> 01:20:19,343
+Öğ...
+
+446
+01:20:23,380 --> 01:20:30,619
+Bu Z'leri modellemeye yarıyor. Çünkü Z'leri modellemeniz neden gerekiyor?
+
+447
+01:20:30,740 --> 01:20:35,960
+Şimdi ben saydım 10 tane şey ama saymadığım 100 tane daha şey var. Değil mi?
+
+448
+01:20:37,220 --> 01:20:39,900
+Hiç farkında olmadığımız birçok şey vardır belki.
+
+449
+01:20:41,119 --> 01:20:49,060
+Veri üzerinden görüntüyü etkileyen 10 binlerce farklı şey olabilir.
+
+450
+01:20:50,131 --> 01:20:55,831
+Bu görüntü üzerinden, elimizdeki veri üzerinden bunları çıkarıyoruz.
+
+451
+01:20:56,492 --> 01:21:00,452
+İsmi olmuyor belki. Mesela bir vektör çıkarıyoruz. Z vektörü.
+
+452
+01:21:00,452 --> 01:21:09,452
+Burada sadece slide'da iki boyutlu bir Z var ama problemin karmaşıklığına göre daha boyutu çok olacaktır.
+
+453
+01:21:10,032 --> 01:21:15,131
+Birinci boyut belki etnisiteye denk düşüyor. Belki düşmüyor.
+
+454
+01:21:15,568 --> 01:21:28,528
+Ne olduğunu bilmiyoruz Z'nin her bir boyutundaki şeyin ama o boyutlar hep o görüntüyü etkiliyor. Görüntüyü sonuç olarak veriyor.
+
+455
+01:21:29,648 --> 01:21:41,292
+Yani Z bu bakımdan değerli ama zorluğu da şurada. Yaptığımız iş çok daha zor var evlerde çünkü...
+
+456
+01:21:41,971 --> 01:22:06,292
+X'leri modellemekle kalmayıp Z'yi de modellememiz gerekiyor. Burada da bayağı bir gördüğümüz elbolar, matematikler, teorik bir kısım sıkıntılar oluşuyor. Onları çözmekle ilgili yakın approximation'lar, yakın samalar yapılıyor, ortalamalar alınıyor vs. vs.
+
+457
+01:22:07,412 --> 01:22:10,172
+Böyle bir özet geçmiş olayım.
+
+458
+01:22:11,632 --> 01:22:22,912
+Hocam, teşekkür ederim. Şimdi daha somut oldu. Özellikle şu son slide'ı bu Z'lerin oynaması olayında değişmesi olayını tam kavrayamamıştım.
+
+459
+01:22:24,052 --> 01:22:31,332
+Evet. Z'ler sonucu etkilediği için Z'leri değiştirdiğinizde sonuç süresin değişiyor.
+
+460
+01:22:31,332 --> 01:22:31,672
+Evet.
+
+461
+01:22:34,579 --> 01:22:36,079
+Aslında bu kadardı, bitti.
+
+462
+01:22:36,659 --> 01:22:37,000
+Tamam.
+
+463
+01:22:37,519 --> 01:22:38,399
+Teşekkür ederim.
+
+464
+01:22:39,779 --> 01:22:41,300
+Ben de teşekkür ederim.
+
+465
+01:22:41,300 --> 01:22:46,300
+Bir sonraki haftada yine Part 2'si var, Generative modelleri.
+
+466
+01:22:46,739 --> 01:22:52,779
+Evet. Bir sonraki slide'ı anlatacak [öğrenci] burada mı?
+
+467
+01:22:55,439 --> 01:22:58,399
+Buradayım hocam. [öğrenci]'le birlikte anlatacağız.
+
+468
+01:22:59,359 --> 01:23:01,179
+Tamam, hazırlık yaptınız mı?
+
+469
+01:23:01,619 --> 01:23:02,000
+Evet.
+
+470
+01:23:02,771 --> 01:23:10,992
+Tamam, bir ara verelim isterseniz. Şimdi saat buçuk gibi 10.40'a kadar bir ara verelim. Sonra siz başlarsınız olur mu?
+
+471
+01:23:11,291 --> 01:23:11,891
+Tamamdır.
+
+472
+01:23:12,771 --> 01:23:13,072
+Peki.
+
+473
+01:36:41,716 --> 01:36:50,155
+Merhabalar Arkadaşlar, biraz kendimize gelmişizdir umarım. [öğrenci]
+
+474
+01:36:53,908 --> 01:36:54,788
+Burada inmeceğim.
+
+475
+01:36:56,148 --> 01:36:57,368
+Evet, başlayabilirsin.
+
+476
+01:37:01,171 --> 01:37:02,652
+Görebiliyorsunuz değil mi ekranımı?
+
+477
+01:37:03,231 --> 01:37:03,692
+Görüyorum.
+
+478
+01:37:07,220 --> 01:37:12,159
+Bu kısım az önce anlatıldığı için buraya geçiyorum ama burada bir hatırlatma yapalım.
+
+479
+01:37:12,859 --> 01:37:15,659
+Generator modelleri ikiye ayırıyoruz.
+
+480
+01:37:16,275 --> 01:37:38,215
+Explicit Density modelleri verinin olasılığını hesaplarken, Implicit Density modelleri olasılığı hesaplamak yerine olasılık dağılımından örnekler çekiyor. Bu da kendi içinde ikiye ayrılıyor. Direct Sampling ve Indirect Sampling olmak üzere. Indirect Sampling kısmını [öğrenci] birazdan anlatacak. Ben GAN kısmını anlatacağım.
+
+481
+01:37:46,739 --> 01:37:49,560
+Buraları da geçiyorum. Az önce anlatıldığı için.
+
+482
+01:37:54,547 --> 01:38:15,168
+Autoregressive modelde verinin olasılık dağılımını veriler üzerinde maksimize ediyoruz. Yani Maximum Likelihood tabanla çalışıyor. Variational Autoencoders da verinin olasılık dağılımının maksimize edilmesi hedefleniyor. Bunun için burada gizli bir değişken tanıtılıyor. Az önce anlatıldığı gibi.
+
+483
+01:38:22,547 --> 01:38:43,748
+Bu dağılımdan sample almamıza olanak tanınır. Setup'ta elimizde data dağılımından çekilmiş veri örnekleri bulunmakta. İstediğimiz şey bu veri dağılımından yeni örnekler çekebilmek. Yöntemin ideası da gizli değişken tanıtılır. Z değişkeni.
+
+484
+01:38:44,275 --> 01:39:09,515
+Z dağılımı ile birlikte tanıtılıyor. Bu Z dağılımı, Gauss dağılımı gibi basit bir dağılım olabilir. Bu dağılımdan bir Z değişkini örnekleniyor. Generative Network'e girdi olarak veriliyor. Network'in çıktısı X ve bu X de Generative yani üretici dağılımına PG'den alınan bir örnek oluyor.
+
+485
+01:39:10,228 --> 01:39:16,627
+İstediğimiz sonuç, generatif dağılımı, gerçek veri dağılımına eşit olması.
+
+486
+01:39:22,771 --> 01:39:37,731
+Burada aslında iki tane ağın eğitimi söz konusu. Biri üretici ağ yani Generative Network, diğeri Discriminator Network yani ayırt edici ağ diyebiliriz.
+
+487
+01:39:38,591 --> 01:39:44,251
+Generative Network gizli değişken Z'yi alarak TG'den örneklenmiş sahte veriyi X'i üretiyor.
+
+488
+01:39:45,011 --> 01:39:58,791
+Diskriminator Network ise hem gerçek veriyi hem de üreticiden gelen sahte veriyi girdi olarak alıyor. Amacı girdinin gerçek mi yoksa sahte mi olduğunu bulmak ve doğru bir şekilde sınıflandırmak.
+
+489
+01:40:00,572 --> 01:40:09,771
+Generative Network, Diskriminator Network'ı kandırarak ürettiği sahte verilerin gerçek olarak sınıflandırmasını sağlıyor. Buradaki olay bu aslında.
+
+490
+01:40:10,612 --> 01:40:23,172
+Jointly Training yapılıyor. İki netwerkte eş zamanlı olarak eğitiliyor. Sonuç olarak PGE'nin paydata'ya konverge etmesi, yaklaşması bekleniyor.
+
+491
+01:40:27,412 --> 01:40:34,012
+Şimdi burada bir G ve D ikisi de bir minimax game kullanılarak eğitiliyor.
+
+492
+01:40:34,012 --> 01:40:42,072
+Burada eğitim sırasında discriminator güncellenirken objektif fonksiyonunda maximization yapılıyor.
+
+493
+01:40:42,332 --> 01:40:49,612
+Generative Network güncellenirken de objective fonksiyonunda minimization yapılıyor.
+
+494
+01:40:50,572 --> 01:40:52,212
+D'nin çıktısı DX.
+
+495
+01:40:52,948 --> 01:41:02,948
+Dx, x'in gerçek olma olasılığıdır. Dx'in 0 olması, x'in sahte olduğunu, 1 olması da gerçek olduğunu gösteriyor.
+
+496
+01:41:02,948 --> 01:41:15,820
+D'nin amacı şu ifadeyi maksimize etmek. Burada D'nin sınıflandırma doğruluğunu arttırmak hedefleniyor.
+
+497
+01:41:16,115 --> 01:41:28,655
+Gerçek veri için Dx bir olmasını istiyor. Bu terim maksimize edilirken, sahte veri için Dx'in sıfır olmasını istiyor.
+
+498
+01:41:28,655 --> 01:41:42,476
+Burada, ikinci terimdeki ifadede, Dgz sıfıra yaklaştığında log bir eksi sıfırdan log bir sıfır olacak. Bu şekilde ifade maksimize edilmiş oluyor.
+
+499
+01:41:46,068 --> 01:41:55,908
+G için ise, Generative Network için ise, B'nin maksimize ettiği ifade minimize edilmek isteniyor.
+
+500
+01:41:56,728 --> 01:42:02,968
+G ürettiği sahte verilerin gerçek olarak sınıflandırmasını istiyor. Yani D, G, Z'nin 1 olmasını istiyor.
+
+501
+01:42:03,208 --> 01:42:12,088
+Burada da logaritma 1-1, yani logaritma 0'dan burası eksi sonsuza gidiyor. G bu değeri minimize etmeye çalışıyor yani.
+
+502
+01:42:18,068 --> 01:42:33,048
+Burada aynı zamanda alternatif gradiyan güncellemeleri kullanılıyor. G ve D'nin training aşamasında. Bir adımda D eğitilirken G sabit tutuluyor. Bir sonraki adımda G eğitilirken D sabit tutuluyor.
+
+503
+01:42:34,988 --> 01:42:43,088
+D'nin güncellemesi sırasında fonksiyon gradiyanın yönünde hareket ettiriliyor. Yani burada toplama işlemi yapılıyor.
+
+504
+01:42:43,699 --> 01:42:50,460
+G'nin güncellenmesi sırasında ise gradiyanın tersi yönünde hareket ediliyor. Yani çıkarma işlemi yapılıyor.
+
+505
+01:42:53,579 --> 01:43:00,199
+GAN'larda klasik geleneksel öğrenmede olduğu gibi bir genel kayıp fonksiyonundan bahsedemiyoruz.
+
+506
+01:43:01,100 --> 01:43:02,720
+Öyle bir fonksiyon minimize edilmiyor.
+
+507
+01:43:03,980 --> 01:43:09,699
+Eğitim ilerlemesini değerlendirmek için bir loss curve yok. Bunun yerine...
+
+508
+01:43:10,387 --> 01:43:22,007
+Farklı bir yaklaşım kullanılıyor. Buradaki grafik de x ekseni d'nin g çıktısını gerçek olma olasılığına dair tahminini ifade ediyor.
+
+509
+01:43:22,007 --> 01:43:30,248
+y ekseni de g'nin objektif fonksiyonundaki terimini ifade ediyor. Yani bunu ifade ediyor.
+
+510
+01:43:34,387 --> 01:43:53,488
+Eğitimin başlangıcında G çok kötü performans sergiliyor. D gerçek sahteyi kolayca ayırt edebiliyor. Bu yüzden sahte görüntüye gerçeklik olasılığı veriyor. Düşük bir gerçeklik olasılığı veriyor.
+
+511
+01:43:55,627 --> 01:44:00,747
+G'nin baştaki kayıp değeri, buradaki gradyanın değeri sıfıra yakın.
+
+512
+01:44:01,551 --> 01:44:26,051
+Bu eğrinin türevi sıfıra yakın. Bu yüzden G'nin gradient düşünerek minimize etmeye çalışması başarısız oluyor. G'nin öğrenmesi duruyor. Vanishing gradient problem burada ortaya çıkıyor. Bunu çözmek için bu terimi değiştiriyoruz. Mavi terimden turuncu terimi değiştiriyoruz aslında.
+
+513
+01:44:27,091 --> 01:44:45,711
+Artık G bunu minimize etmeye çalışıyor. Başlangıçta gradiyan yataydı. Artık gradiyan dik. Dolayısıyla G yüksek gradiyan değerini minimize etmeye çalışıyor ve güçlü gradiyanlar çıkartıyor. Hızlı öğrenmeye başlıyor yani.
+
+514
+01:44:53,076 --> 01:45:19,096
+Herhangi bir p değeri için, pg değeri için burada bir iç objektif fonksiyonu tanıtılıyor. Bunu maksimize eden optimal d bu denklemle verilmiş. Optimal d değeri bu objektif fonksiyonuna konulduğunda dış objektif fonksiyonu g dağılımının yani pgx'in gerçek veri dağılımının p dataya.
+
+515
+01:45:19,891 --> 01:45:24,851
+Eşit olması durumunda minimize ediyor. Bu sağlanmış oluyor yani.
+
+516
+01:45:27,071 --> 01:45:37,711
+Burada şundan bahsetmişler. Pgp data'ya teorik olarak ulaşıyor fakat gerçek dünya uygulamalarında bu sonuç garanti edilmeyebilir.
+
+517
+01:45:38,791 --> 01:45:45,691
+Kullanan sinir ağları sabit bir kapasiteye sahip olduğundan optimal d ve g'yi temsil edemeyebilirler.
+
+518
+01:45:46,452 --> 01:45:57,452
+Sonsuz veri için aslında üretilmiş bir fonksiyon. Sonlu veri ekibisinin gerçek çözüme yakınlaması hakkında bir şey söylemiyor. Elimizdeki objektif fonksiyonu.
+
+519
+01:45:57,452 --> 01:46:10,284
+DC Ganlar yani Deep Convolutional Ganlar. Nantoy yani yüksek çözünürlü veriler üzerinde çalışan ilk Gan mimarisiymiş.
+
+520
+01:46:11,828 --> 01:46:21,828
+Bunlar da onunla ilgili paperlar. GPT için de aynı yazar GPT için de paper oluşturmuş. Burada ondan bahsediliyor.
+
+521
+01:46:22,828 --> 01:46:32,652
+StyleGAN diye bir GAN modeli var. Burada Generative Network'teki katmanlara Noise enjekte ediliyor.
+
+522
+01:46:32,851 --> 01:46:45,652
+Stili kontrol etmek için bir haritalama ağı kullanılıyor aynı zamanda. Burada stil nedir? Yüksek çözünürlüklü görüntü üzerindeki özellikleri kontrol eden parametrelerdir aslında.
+
+523
+01:46:46,851 --> 01:46:59,511
+Mapping Network girişteki rastgele gürültüyü, yani Z'yi, Fully Connected katmanları kullanarak işliyor ve Synthesis Network'e girdi olarak kullanılması için stile dönüştürüyor.
+
+524
+01:47:00,948 --> 01:47:13,948
+Bu StyleGAN'lar yüksek çözünürlüklü sentetik veri oluşturma için kullanılabilir. Eğer küçük bir veri seti varsa, Data Argumentation uygulanacaksa bu yöntem kullanılabilir.
+
+525
+01:47:15,948 --> 01:47:21,948
+Girişteki Latent Uzayının pürüzsüz olmasının sağladığı şey şu.
+
+526
+01:47:22,484 --> 01:47:34,924
+İki latent vector arasında yapılan interpolation üretilen görüntüler arasında kesintisiz ve yumuşak bir geçiş sağlıyor. Böylece daha yüksek kaliteli görüntüler elde edilmiş oluyor.
+
+527
+01:47:36,384 --> 01:47:45,644
+Bugga'nın avantajlarına gelecek olursak, generator ve discriminator'ı birlikte eğitmek iyi bir görüntü kalitesi sağlıyor.
+
+528
+01:47:48,148 --> 01:48:14,368
+Elimizde bizim yorumlayabileceğimiz bir kayıp eğrisi yok. Aynı zamanda eğitimin başlangıcında kararsızlıklar olabilir. Büyük modeller, büyük veriler için ölçeklendirmek de bu yüzden zor. Kararsızlık olabileceği için. Bu şekilde. Şimdi [öğrenci] devam edecek. Ekran paylaşımına mı? Peki teşekkürler [öğrenci]. Ben teşekkür ederim.
+
+529
+01:48:15,252 --> 01:48:17,252
+Gönlüm, setin geliyor mu?
+
+530
+01:48:17,252 --> 01:48:19,252
+Geliyor [öğrenci].
+
+531
+01:48:19,252 --> 01:48:23,252
+Tamam, ben şimdi ekran paylaşacağım.
+
+532
+01:48:25,252 --> 01:48:38,860
+Gönlüm çok popülerdi bu Generative Adversive. Generative model deyince hep GAN geliyordu aklımıza. GANlar. O ile ilk.
+
+533
+01:48:39,123 --> 01:48:52,744
+Başarılı imge üretme resimleri falan gunlarla başarılmıştı. Çok çarpıcıydı yani. Style gunlar falan acayip bir devrim gibi görünüyordu bize.
+
+534
+01:48:54,744 --> 01:49:03,543
+Hala da tabii çalışılan çok, üretici model çalışalım diye düşünen kimseler imgeler üzerinde.
+
+535
+01:49:04,372 --> 01:49:09,872
+Direkt GAN'larla başlıyorlardır diye tahmin ediyorum. Akıllarına ilk GAN'lar geliyorlardır.
+
+536
+01:49:09,872 --> 01:49:19,372
+Cenerator, seyirilmiş networkler. Ama şimdi difüzyon modelleri onları yakaladı gibi.
+
+537
+01:49:21,372 --> 01:49:25,572
+GAN'ların da bir kısım problemleri var. Arkadaşınız bahsetti.
+
+538
+01:49:28,500 --> 01:49:38,940
+Mod Collapse diye de ayrı benim aklıma gelen problemleri var. Eğitimi aslında daha zor diyorlar falan.
+
+539
+01:49:38,940 --> 01:49:48,119
+Difüzyon modeller onların yerini alıyor demeyeyim de şu sıralar onlarda popüler gibi gözüküyor.
+
+540
+01:49:48,119 --> 01:49:55,560
+Bakalım, devam edelim. Difüzyon modellere [öğrenci].
+
+541
+01:49:56,115 --> 01:50:01,156
+Tabii ki hocam. Ben [öğrenci]. Bugün difizyon modellere bakacağız.
+
+542
+01:50:02,996 --> 01:50:22,316
+Şimdi, tüm generatif modellerde olduğu gibi yapmak istediğimiz şey örnekler, samples üretmek ve ganlarda olduğu gibi bir gürültü dağılımından gelen örneklere bir veri dağılımına dönüştürmek istiyoruz.
+
+543
+01:50:23,444 --> 01:50:27,964
+Ama diffizyon modellerde bunu yapman yöntemimiz tamamen farklı olacak.
+
+544
+01:50:27,964 --> 01:50:36,404
+Şimdi az önce bahsettiğimiz gibi, GAN'larda generator üzerinden Z'yi doğrudan X'e götüren deterministik bir yaklaşım var.
+
+545
+01:50:37,004 --> 01:50:43,204
+Difizyon modelde ise daha örtük, implicit ve dolaylı, indirelik bir yaklaşım yapacağız.
+
+546
+01:50:44,644 --> 01:50:48,184
+Çipper'da terminoloji ve notasyonlar çok karışık.
+
+547
+01:50:49,876 --> 01:51:03,155
+Bundan bahsediyor. Matematik formüllerine de bazı yerlerde fazla girmemişler ama bunu Rectified Flow denilen yerde biraz daha inceleyeceğiz.
+
+548
+01:51:04,215 --> 01:51:13,135
+Şimdi diffizyon modellerde bir sımız var. Z yani görüntü dağılımı her zaman verimizle aynı şekle sahip olmak zorunda.
+
+549
+01:51:17,779 --> 01:51:23,559
+Görüntü varsa, bu gürültü dağılımı da bununla aynı şekilde sahip olmalı.
+
+550
+01:51:26,779 --> 01:51:34,439
+Şimdi yapacağımız şey, artan seviyelerde gürültüyle bozulmuş bir verimizin çok farklı versiyonlarını düşünmek.
+
+551
+01:51:34,939 --> 01:51:39,479
+Diyelim ki elimizde bir veri örneği var. Bu da bir kedi fotoğrafı olabilir. Burada gözüktüğü gibi.
+
+552
+01:51:40,020 --> 01:51:43,340
+Burada t eşittir sıfır için, yani t dediğimiz şey ne?
+
+553
+01:51:44,280 --> 01:51:46,680
+Şurada, şu karıştırıyor burayı.
+
+554
+01:51:50,940 --> 01:51:55,280
+Bizim gürültümüz sıfır demek, aslında gürültü yok demek.
+
+555
+01:51:56,100 --> 01:51:58,080
+Ve bu t sıfır bir arasında değişik.
+
+556
+01:51:58,080 --> 01:52:01,840
+T eşittir bir demek, tam gürültüye ulaşmak demek.
+
+557
+01:52:03,220 --> 01:52:07,820
+Bu durumda örnekler doğrudan gürültü dalımızdan gelecek.
+
+558
+01:52:07,820 --> 01:52:15,500
+Dolayısıyla bu T parametresi veri dalımız ile gürültü dalımız arasında düzgün bir şekilde ara değerler üreterek geçiş yapacaktır.
+
+559
+01:52:17,820 --> 01:52:19,820
+Devam edelim.
+
+560
+01:52:19,820 --> 01:52:24,220
+Şimdi buraya baktığımız zaman yeni bir yer açıldı.
+
+561
+01:52:24,220 --> 01:52:27,820
+Küçük genoizlik yapan bir sinir ağaiteceğiz.
+
+562
+01:52:28,372 --> 01:52:34,692
+Bu sinir ağa verinin bir örneğini alacak. Bu örnek belli bir ara gürültü seviyesiyle bozulmuş olacak.
+
+563
+01:52:35,292 --> 01:52:38,872
+Ve sinir ağa da bu gürültünün sadece küçük bir kısmını temizlemeye çalışacak.
+
+564
+01:52:39,612 --> 01:52:44,192
+Bizi bu şekilde yeteceğiz. Yani biraz temizlesin, gürültünün bir kısmını kaldırsın.
+
+565
+01:52:46,131 --> 01:53:04,011
+Daha sonra inference yani modelin örnek ürettiği vakitte yapacağımız şey yinelemeli yani iteratif bir prosedür olacak. Önce gürültü dağılımımızdan yani PZ'den doğrudan bir gürültü örneği çekeceğiz. Sonra sinir ağını tekrar tekrar bu örneği uygulayıp her seferinde biraz gürültüyü kaldıracağız.
+
+566
+01:53:04,251 --> 01:53:11,011
+Bunu ilk yaptığımızda tamamen gürültü olan bir örnekle başlayacağız. Sinir ağını ilk kez uyguladığımızda...
+
+567
+01:53:12,148 --> 01:53:36,887
+Ağda tam gürültüden, pardon ağa tam gürültüden bu verdiğimiz gürültüyü çıkarmaya çalışacak. Yani buradan minik bir veri yapısı hayal etmeye zorlanacak modelimiz. Sonra biraz daha az gürültülü bir örneğe geldiğimizde bunu yeniden sinir anı vereceğiz. Ve ağdan yine sadece biraz daha gürültüyü kaldırmasını isteyeceğiz.
+
+568
+01:53:37,587 --> 01:53:51,727
+Bu elde ettiğimiz görüntüler biraz daha denoid, yani görüntüsü azalmış ve aynı zamanda generated, yani üretilmiş bir görüntüde olacak. Böyle böyle her adımda biraz daha görüntüler, az hale gelecek görüntülerimizdeki.
+
+569
+01:53:55,907 --> 01:54:02,027
+Bir de kaç adım atacağımızda sabit bir hiperparametreye bağlı olacak burada.
+
+570
+01:54:03,507 --> 01:54:29,027
+Buraya geldiğimiz zaman, az önce bahsetmiştim, Rectified Flow. Bu bir aslında diffusion model kategorisi. Rectified Flow'da olay aslında kısaca şöyle. Yani aslında aynı şeylere sahibiz. PNO-yüz dağılımımız var. Bir de P-Data dağılımımız var. Her eğitim iterasyonda öncelikle öncül dağılımlarımızdan bir veri örneği çekeceğiz.
+
+571
+01:54:30,560 --> 01:54:46,500
+Ve veri dağılımımızdan bir X örneği de seçeceğiz. Yani hem Z'den hem X'den. PZ'den örnek çekebiliyoruz. Çünkü bu bizim kontrol ettiğimiz basit bir dağılım. Veri dağılımından örnek çekmek de sorun değil. Çünkü o bizim sonlu bir eğitim setimiz.
+
+572
+01:54:47,960 --> 01:54:57,700
+Ayrıca sıfır ile bir arasında üniform bir dağılımdan bir T seçeceğiz. T'ye ne demiştik? T bizim gürültüsü hepimizde. Sıfır gürültüsüz, bir tam gürültüsü olacaktı.
+
+573
+01:54:58,931 --> 01:55:08,452
+Şimdi veri örneğimiz X'den, yürültü örneğimiz Z'ye doğru uzanan bir vektör çezeceğiz. Burada bu kısımda gözüken.
+
+574
+01:55:09,811 --> 01:55:18,211
+X'den Z'ye bakan bu vektöre biz V diyeceğiz. Bu bir flow field yani akış alanının hızı, velocity olacak.
+
+575
+01:55:18,655 --> 01:55:28,295
+Sonra X tableau'nun üzerinde X ile Z arasında doğrusal interpellasyon ya da linear interpellation dediğimiz bir nokta olarak tanımlayacağız.
+
+576
+01:55:29,735 --> 01:55:30,695
+Burada gözüktüğü gibi.
+
+577
+01:55:35,576 --> 01:55:38,775
+Şimdi eğitim hedefimize gelelim.
+
+578
+01:55:39,119 --> 01:55:51,159
+Öğrenebilir parametreleri teta olan bir sinir ağı, yani f teta'yı eğiteceğiz. Bu an girdisi, gürültülü örnek x'te ve gürültü seviyesi t olacak. Hedefi ise yeşil vektör olan v'yi tahmin etmek olacak.
+
+579
+01:55:54,219 --> 01:55:57,519
+Evet, şimdi matematiğin ne?
+
+580
+01:55:57,967 --> 01:56:05,768
+Veya kavramlara baktığımızda biraz karışık gelebilir ama kod kısmına baktığımızda çok da basite indirgenliğini görebiliriz.
+
+581
+01:56:06,367 --> 01:56:12,347
+Veriset ne demiştik? Veriset üzerinde bir döngü kuruyoruz. Her iterasyonda X'in aynı şekli sahip.
+
+582
+01:56:12,347 --> 01:56:19,467
+DreamGouse olan bir z örneği çekiyoruz. 0-1 arası. Uniform bir dağılımdan T seçiyoruz.
+
+583
+01:56:20,884 --> 01:56:40,103
+X ile Z arasında linear interpolation ile XT'yi hesaplıyoruz. XT ve T'yi modeli veriyoruz. Kayıp yani loss da gerçek V ile modelin tahmini vektörü arasındaki mean squared error oluyor. Yani ortalama kare hatası. Bu şekilde eğitiyoruz. Geçelim diğer slide'a.
+
+584
+01:56:41,140 --> 01:57:05,140
+Peki, şimdi eğitimi tamamladık. İnfuranceden ne yapıyoruz? Gunlarda İnfuranceden biraz daha kolay, Z çekiliyor. Generator'dan geçiliyor ve bir veri örneği çıkıyor. Ama Diffusion modelde, burada özellikle Rectified Flow'da, tek başına pek kullanışlı olmuyor. Elimizde bir XT var, bir de V var. Bundan sonra yapmamız gereken...
+
+585
+01:57:06,547 --> 01:57:32,607
+Bir adım sayısı seçmek. Bu genellikle sabit bir parametre demiştik birkaç slide önce. Bu rectified flow modeller için genelde 50 iyi bir başlangıç olarak kabul ediliyor. Bazen de 30'a indirilip kötü sonuçlar almadan idare edilebiliyor. Daha sonra gürültü dağılımımızdan doğrudan bir X örneği çekiyoruz. Bu bilinen gürültü dağılımımızdan gelen tamamen rastge bir gürültü olmalı.
+
+586
+01:57:34,195 --> 01:57:48,255
+Ardından t eşittir 1'den başlayıp t sıfıra doğru geri doğru gideceğimiz bir döngü kuruyoruz. Bu bizim gürültü seviyemiz. Bu basit bir versiyon aslında. Gürültü seviyesini birden sıfıra doğru doğrusal olarak geri saracağız.
+
+587
+01:57:49,635 --> 01:57:59,175
+İlk iterasyon da tamamen gürültülü olan x t ile başlayacağız. O anki gürültü seviyesi t ile birlikte a vereceğiz ve a'dan v t tahminini alacağız.
+
+588
+01:58:00,180 --> 01:58:05,100
+Rectified Flow'da şimdi ne demiştik? Vt, onu bir daha hatırlıyorum.
+
+589
+01:58:05,100 --> 01:58:13,820
+Veri örneğinden, yürültü örneğine kadar uzanan vektörü temsil eder. Yani şu gördüğümüz yeşil kısım.
+
+590
+01:58:13,820 --> 01:58:17,100
+Bir sonrakine bakalım.
+
+591
+01:58:17,100 --> 01:58:22,460
+Şimdi geometrik olarak ne yaptığımızı görebiliyoruz grafikte.
+
+592
+01:58:23,699 --> 01:58:27,859
+Bu tahmin edilen V vektörü boyunca küçük küçük adımlar yapmalıyız.
+
+593
+01:58:29,279 --> 01:58:32,079
+Bizi V tek başına temiz örneğe götürmeyecek.
+
+594
+01:58:32,199 --> 01:58:34,899
+Bizi giden yörüngeye koyacak aslında.
+
+595
+01:58:38,559 --> 01:58:41,179
+Şimdi burada yine elemelere devam ediyoruz.
+
+596
+01:58:41,899 --> 01:58:49,079
+X, 2, 3 gibi biraz daha az gürültülü örnek elde ettiğimizde bunu yeniden modeli verip yeni bir V tahmini alacağız.
+
+597
+01:58:49,652 --> 01:58:56,052
+V'nin temiz örnekten Gülütölde'ne giden yönde olması gerektiğini tekrar hatırlasak güzel olabilir.
+
+598
+01:58:58,492 --> 01:59:06,412
+Tekrar bir iterasyon yaptığımız zaman bu sefer x 1 bölü 3 gibi daha az görüntülü noktalara gireceğiz.
+
+599
+01:59:09,112 --> 01:59:10,652
+Tekrar ettiğimizde...
+
+600
+01:59:12,627 --> 01:59:19,547
+Modeli çalışıp başka bir V elde edeceğiz. Bu sefer vektörün sonuna kadar gidiyoruz.
+
+601
+01:59:22,487 --> 01:59:32,447
+Evet, adınları return x yaptı. Yani hiçbir ürünün kalmadığı x0'a kadar biz ulaşmış olacağız bu adınları yaptığımızda.
+
+602
+01:59:32,447 --> 01:59:36,467
+Bu x0, diffusion modelimizden aldığımız örnek olacak.
+
+603
+01:59:38,899 --> 01:59:55,519
+Şimdi bu sürecin konumuna bakalım. Rastge bir örnekte başlıyorduk. Tamamen rastgele, yani random. Sonra T'yi birden sıfıra geri sararak adım adım ilerledik. Her yürütü seviyesinde mevcut örneğe ve T'ye göre modelden bir V tahmini aldık.
+
+604
+02:00:00,000 --> 02:00:05,479
+Gradient Descent adına benzeyen küçük iterasyonlar yapıp örneği güncelledik.
+
+605
+02:00:05,479 --> 02:00:08,599
+Bu döngüyü sürekli tekrar ettik.
+
+606
+02:00:11,379 --> 02:00:15,859
+Bu da Training ve Sampling'in birlikte olduğu kodlar.
+
+607
+02:00:17,079 --> 02:00:19,959
+Aslında çok da az bir yer kaplıyor işlediğimiz yere göre.
+
+608
+02:00:21,739 --> 02:00:26,299
+Şimdi burada Conditional Rectified Flow var. Yani koşullu oldu.
+
+609
+02:00:27,155 --> 02:00:46,515
+Buna baktığımız zaman veri dalımızın farklı alt parçalara ayrıldığını düşünebiliriz. Çünkü Stanford'da şöyle baktığımız zaman burada mesela kare ve üçgenleri ayırmış. Artık veri serimizde de X ve Y çiftleri var. Model Y'yi ek bir yardımcı girdi olarak alacak.
+
+610
+02:00:47,091 --> 02:01:12,051
+Sampling sırasında ise aynı şey. Tahmin edilen V'leri alırken modelin girdisine bu ek Y'yi veriyoruz ve onu kullanıyoruz. Artık Y kullanıcının kontrol edebileceği bir koşul sinyali oluyor. Buna Conditioning Signal deniliyor. Bu bir metin prob da olabilir, bir girdi görüntüsü olabilir ya da inference sırasında kullanıcının beklediği başka bir şey olabilir. Böylece bu modeller pratikte kontrol edebilir ve gerçekten işe yarar hale gelebilirler.
+
+611
+02:01:15,475 --> 02:01:28,155
+Şimdi, modelin bu Conditioning sinyaline, yani kosul sinyale ne kadar dikkat ettiğini kontrol edebileceğimiz bir ayar var mı? Bir sorusu ortaya çıkıyor.
+
+612
+02:01:29,075 --> 02:01:35,615
+Bu modelleri olduğu gibi eğitirsek, çoğu zaman bu sinyali takip edemediklerini tespit ediyoruz.
+
+613
+02:01:35,615 --> 02:01:42,115
+Bunu uzatmak için Classifier Free Guidance denen bir yöntem var.
+
+614
+02:01:45,716 --> 02:02:03,235
+Evet, burada. Yapacağımız şey bu koşulu difüjü modelini iteceğiz. Girde olarak XT'yi ve Y'yi vereceğiz. Ama her eğitim itarasında bir benzetme yapmam gerekirse aslında bozuk para atıyoruz.
+
+615
+02:02:05,363 --> 02:02:21,863
+Eğer yazı gelirse Conditioned Bilgisini siliyorum. Aslında burada bir %50 ihtimal kullanıyoruz. Yani y0 veya null bir değere çekersek Conditioned Bilgisini %50 ihtimalle yok etmiş oluyoruz.
+
+616
+02:02:25,939 --> 02:02:39,279
+Evet, burada açıklamaları zaten çeliştirdik. Bunu yaptığımızda, hani bu %50 olayını, bunu yaptığımızda model kavraması olarak iki farklı türde hız vektörü öğrenmeye zorlanmış olacak.
+
+617
+02:02:40,579 --> 02:02:44,500
+Birincisi Y'yi Nul yaptığımız, yani Condition Bilgisayar Mühendisliği yok ettiğiniz hız vektörü.
+
+618
+02:02:45,203 --> 02:02:59,483
+Gerçek bir condition girdisi y verdiğimiz, yani 0 olmayan, 0 olmayan durumda da burada tahmin ettiği hız vektörü tüm veri dağılma değil de o condition'ın sinyali altında tanımlanan koşul veri dağılımına doğru işaret etmek zorunda kalacak.
+
+619
+02:03:01,823 --> 02:03:03,323
+Burada görebiliriz.
+
+620
+02:03:05,463 --> 02:03:07,263
+Renkleri değiştirdim ilk zaman.
+
+621
+02:03:13,011 --> 02:03:26,992
+Evet. Şimdi skaler bir hiperparametre W seçiyoruz. Ve bu bir linear kombinasyon kullanıyoruz. Onu da zaten burada veriyor. 1 artı W, V'ye, eksi W, V'nul.
+
+622
+02:03:28,731 --> 02:03:38,471
+Bu vektör artık veri dağılımının tamamından çok koşullu dağılıma doğru daha fazla işaret ediyor. Asampling sırasında da modelin o raw tahmini yerine bu.
+
+623
+02:03:38,847 --> 02:03:42,648
+Vcfg dediğimiz vektöre göre adım atıyoruz.
+
+624
+02:03:44,328 --> 02:03:50,347
+Burada W0 dersek, tam olarak koşulu modeli de elde ediyoruz aslında.
+
+625
+02:03:50,347 --> 02:03:57,648
+W yükselttikçe modelin kondiçin eksik sinyaline daha fazla ağırlık vermeye zorlanmış bulunuyoruz.
+
+626
+02:03:59,220 --> 02:04:15,260
+Evet, burada yine kodları var. Buna Classifier Free deniyor. Çünkü şöyle, önceki paperlarda bir klasifier kaldırılmış. Daha sonra arından yeni bir paper daha yayınlanmış ve bunun ismi böyle kalmış.
+
+627
+02:04:20,115 --> 02:04:32,376
+Şimdi burada önemli notlarımız var. Bu yöntem pratikte yüksek kaliteli çıktır almak için gerçekten önemli ve difüzyon modellerde her yerde çok kullanılan kritik bir teknik.
+
+628
+02:04:32,376 --> 02:04:40,055
+Tek dezavantajı, sampling maliyetini iki katına çıkartması. Çünkü her iterasyonda modeli iki kez sonuçta olmamız gerekiyor.
+
+629
+02:04:43,220 --> 02:05:08,660
+Burada model aynı XT'yi üretebilecek tüm olası XZ çekilerin ortalamasını tahmin ediyor aslında. Min2 error altında en iyi tahmin koşullu ortalamadır. Bu yüzden buna optimal diyoruz. Modelin görevi bu XT nereden gelmiş olabilir sorusuna en olası ortalama cevabı vermek oluyor aslında.
+
+630
+02:05:10,739 --> 02:05:29,579
+Evet. Şimdi yapmamız gereken başka bir şey daha var. O da bazen T dağılımını ayarlamamız gerekiyor. Özellikle ham rectified flow modellerinde T uniform dağılımından örnek dediğimizi görmüştük. Bunun şöyle bir sonucu var. Tüm görüntü sebeplerinde burada eşit dönem veriyoruz.
+
+631
+02:05:33,579 --> 02:05:34,155
+Ama...
+
+632
+02:05:36,467 --> 02:05:44,648
+Bu noise olduğu zaman, tam gürültüdeyken, modelin optimal tahmini veri dağılımının ortasına doğru işaret edecek.
+
+633
+02:05:44,648 --> 02:05:57,588
+Burada problem aslında kolaylaşıyor. Ama gürültü sıfırken, optimal tahmin gürültü dağılımının ortasına doğru işaret edecek.
+
+634
+02:05:57,967 --> 02:06:01,208
+Bakın şurada grafimiz de değişiyor zaten.
+
+635
+02:06:05,332 --> 02:06:13,752
+Aslında modelin yapması gereken temel olarak bu iki dağılımın ortalarını öğrenmek.
+
+636
+02:06:16,332 --> 02:06:23,932
+Peki, ortalarda bir yerde ise ne olacak? İşte o zaman işler zorlaşıyor çünkü ortalarda bir XT örneği için.
+
+637
+02:06:24,692 --> 02:06:38,532
+Aynı XT'yi üretebilecek birden fazla XZ çifte olabilir. Ağın bu noktada gelebilecek tüm X ve Z çiftlerini ortalayan optimal yönü bulması gerekiyor. Yani bir expectation problemi çözmesi gerekiyor.
+
+638
+02:06:43,828 --> 02:07:05,307
+Evet. Şimdi noise schedule dediklerimiz var. Şimdi farklı gürültü planlamaları kullanmamız gerekiyor bu sorundan dolayı. Bunlardan en popüler olanı Logit Normal Sampling. Bu kabaca Gaussian'a benzen bir dağlı. 0 ve 1'e az. Orta seviyelere çok ağırlık veriyor.
+
+639
+02:07:08,212 --> 02:07:29,332
+Bir diğeri, Shifted Noise Schedules. Asimetrik olup ağırlığı daha çok bir tarafa kaydırıyor. Yüksek çözünürlüklü veri ölçeklenirken bunlar önemli hale gelebilir. Yani geliyor hatta. Yüksek çözünürlüklü görüntülerde komşu pikseller arasında çok güçlü korelasyonlar olabiliyor. Düşük çözünürlüklü görüntülerde ise bu korelasyonlar biraz daha zayıf.
+
+640
+02:07:31,315 --> 02:07:51,475
+Verideki korrelasyonun gücüne bağlı olarak bilgiyi düzgün parçalamamız için farklı miktarlarda yurt seviyesine ihtiyaç duyuyoruz. Bu schedulinglerde farklı çözünürlüklere doğru ölçeklenmeyecektir. Biz de bu schedulingleri kullanıyoruz.
+
+641
+02:07:57,619 --> 02:08:05,039
+Şimdi çok güzel formulasyonlar var ama yüksek çözünürlüleri de direkt çalıştırması kolay olmuyor.
+
+642
+02:08:05,559 --> 02:08:12,220
+Bunun için LDM yani Latent Division modellere geçiyoruz.
+
+643
+02:08:12,220 --> 02:08:18,859
+Şimdi burada 40 aşamalı bir prosedür var aslında. Önce bir Enkoder Ağı ve bir Decoder Ağı öğreteceğiz.
+
+644
+02:08:18,859 --> 02:08:22,460
+Enkoder görüntümüzü şurada mor ile gösterilen.
+
+645
+02:08:23,091 --> 02:08:39,751
+Bir latent uzaya projeksiyonluyor. Genellikle ideal olarak bu latent uzay görüntüyü hem uzamsal olarak D faktörüyle downsample ediyor, hem de 3 kanal yerine C kanala çıkarıyor.
+
+646
+02:08:45,779 --> 02:09:00,000
+Çıkmak sık görülen ayarlardan biri. Bu Enkador-Dekadorlar genelde tensionlı CNN'lerdir. Ama son çıkan makalelerde bazılarının VIT yani Vigil Transform tabanlı yapılar da denebiliyor.
+
+647
+02:09:01,079 --> 02:09:09,260
+Daha sonra Difusyon modelini ham piksel uzayı üzerinde değil de bu Enkador-Dekador'un keşfettiği latent uzayı üzerinde yitiyoruz.
+
+648
+02:09:10,484 --> 02:09:25,463
+Eğitim prosedüründe eğitim için bir görüntü örnekliyoruz. Birinci aşamada öğrendiğimiz bu enkodurdan geçirip bir latent elde ettiğimizde bu latente görüntü ekleyip,
+
+649
+02:09:25,463 --> 02:09:31,484
+diffusion modelini bu görüntülü latent denize edecek şekilde eğitiyoruz.
+
+650
+02:09:37,300 --> 02:09:51,700
+Sonra enkoduru donduruyoruz ve ona gradiyenti geri yaymıyoruz. Enkoduru sadece latent çıkarmak için kullanıyoruz. Bunlar önemli. Diffusion modelini doğrudan bu öğrenilmiş latent uzay üzerinde yediyeceğiz.
+
+651
+02:09:52,700 --> 02:09:59,980
+İnference'a geldiğimizde eğitim bittikten sonra şunu yapacağız. Rastgele bir latent örnekleyeceğiz.
+
+652
+02:10:00,000 --> 02:10:16,279
+Difusyon modelini bu latent üzerinde defalarca çalıştırıp tüm gürültüyü kaldıracağız ve temiz bir latent elde edeceğiz bunun sonunda. Bu temiz latentten son görüntü üretmek için de bekoları kullanacağız. Bu günümüzde difusyon modellerin en yaygın kullanılan şekli.
+
+653
+02:10:21,159 --> 02:10:23,739
+Şimdi burada bir soru gelmiş.
+
+654
+02:10:25,587 --> 02:10:32,188
+Enkodur, Dekodur'u nasıl eğitici? Bunun cevabı aslında Variation AutoEnkoder yani VAR.
+
+655
+02:10:33,395 --> 02:10:47,735
+Yani pratikte latent diffusion modelleri eğitirken kullandığımız encoder, decoder çoğu zaman bir aslında variation encoder oluyor. Ama VAL'lerle ilgili büyük bir problem var demiştik. Ürettikleri görüntüler bulanık.
+
+656
+02:10:59,699 --> 02:11:02,260
+Ne denir? Bottleneck yapacak.
+
+657
+02:11:03,680 --> 02:11:09,720
+Yani Enkoder Dekoder'ın bulanık, o kötü rekonstrüksiyonları etmesi kabul edilemeyecek.
+
+658
+02:11:10,899 --> 02:11:13,720
+Bize düzgün, temiz örnekler vermeyecek.
+
+659
+02:11:15,619 --> 02:11:20,340
+Peki, Wayne'in bu kalitesini nasıl düzelteceğiz?
+
+660
+02:11:20,340 --> 02:11:23,100
+Dekoder'ın arkasına başka bir şey koyabiliriz.
+
+661
+02:11:23,300 --> 02:11:24,539
+Yani bir ilgan koyabiliriz.
+
+662
+02:11:24,960 --> 02:11:26,300
+Burada diskremi yatırır.
+
+663
+02:11:29,203 --> 02:11:43,183
+Pratiklik şunu yapacağız. Görüntüyü latent uzaya kodlayan bir enkulör, latentten görüntüye giden bir dekulör, gerçek sahte ayet etmeye çalışan bir diskriminator ve latent uzayla çalışan bir difüjlü modele yeteceğiz.
+
+664
+02:11:47,043 --> 02:11:51,183
+Şimdi burada tüm haftalar boyunca öğrendiğimiz işte...
+
+665
+02:11:52,692 --> 02:11:58,112
+VLR, GAN'lar, Diffusion, işte hepsini o bilgileri burada kullanmış olduk.
+
+666
+02:12:01,432 --> 02:12:05,612
+Diffusion Transformer, yani DIT.
+
+667
+02:12:09,612 --> 02:12:11,500
+Şimdi bu...
+
+668
+02:12:11,923 --> 02:12:24,984
+Sinir ağlarının içeride neye benzediğini bilmiyoruz ama son yıllarda bir açıklık geldi. Bunlar aslında görece basit transformerların diffusion modellerde gayet iyi çalıştığını görüyoruz.
+
+669
+02:12:27,404 --> 02:12:36,923
+Bunlar genelde diffusion transformer deniyor. İçinde aslında çok da özel bir formül yok. Yani standart transform blokları var. Mimari tarafta...
+
+670
+02:12:37,876 --> 02:12:45,376
+Çözülmesi gereken asıl soruyu şöyle sorabiliriz. Koşul bilgisini nasıl ejekle edeceğiz?
+
+671
+02:12:46,815 --> 02:12:52,996
+Yani timestamp t, text veya gürültülü görüntü.
+
+672
+02:12:55,667 --> 02:13:01,827
+Bu koşullandırma sinyalini, Transform bloklarına aktarmak için birkaç yöntemimiz var.
+
+673
+02:13:01,987 --> 02:13:12,568
+Şimdi en yaygın yaklaşım Diffusion blokundaki bazı ara aktivasyonların ölçek ve kaydırma değerlerini, yani bu Scale Shift'i tahmin etmek.
+
+674
+02:13:13,327 --> 02:13:21,347
+Bu yöntem zaman adımı, yani Time Step bilgisini Diffusion modelleri enjekte etmek için de standart olarak kullanabilir.
+
+675
+02:13:22,612 --> 02:13:34,752
+Bir diğer yöntemimiz, Transformer'ların zaten seconds üzerinde, yani diziler üzerinde çalışan modeller olduğundan her şeyi tek bir sekansa yükleyebiliriz, tıkayabiliriz.
+
+676
+02:13:36,112 --> 02:13:43,372
+Timestamp'i sekansa koyabiliriz, metni sekansa koyabiliriz, istersek başka diğer şeyleri de sekansa koyabiliriz.
+
+677
+02:13:43,832 --> 02:13:48,752
+Transformer'da tüm bu diziyi birlikte modelleyecek.
+
+678
+02:13:49,524 --> 02:13:53,423
+Bunu Cross Attention ile ya da Joint Attention ile yapabiliriz.
+
+679
+02:13:54,623 --> 02:13:58,184
+Farklı modeller olabilir. İkisi ikisinin birden kullanılabilir.
+
+680
+02:13:59,583 --> 02:14:04,184
+Güncel diffusion transformalarında genelde timestamp ve skeleşif mekanizmasıyla,
+
+681
+02:14:04,184 --> 02:14:12,543
+metin veya diğer conditioning sinyallerini ise sekans birleştirme, yani sequence concentration diye mi söyleniyor?
+
+682
+02:14:13,876 --> 02:14:18,735
+Yani sekans birleştirmeyle kullanabiliriz.
+
+683
+02:14:20,155 --> 02:14:22,176
+Şimdi Text to Image'a geldik.
+
+684
+02:14:23,655 --> 02:14:28,975
+Bu öğrendiklerimizi, farklı problemlere nasıl uygulayabiliriz?
+
+685
+02:14:29,296 --> 02:14:35,076
+Şimdi en çok ilgi görenlerden, uygulamalardan biri metinden görüntü üretimi, Text to Image.
+
+686
+02:14:35,695 --> 02:14:39,855
+Burada bir metin promptu giriyoruz. Burada Stanford'ın girdiği ve çiftesini aldığı var.
+
+687
+02:14:41,908 --> 02:14:50,728
+Bu Pipeline nasıl işliyor? Metin Prompt'unu alıyoruz. Genelde önceden iletilmiş bir metin enkoder'ından geçiriyoruz.
+
+688
+02:14:50,728 --> 02:14:59,564
+Burada örnekleri var. T5 veya Clip. Aslında burada enkoder, dekoder...
+
+689
+02:15:00,020 --> 02:15:04,160
+Viya derken 7'den güzel bir dil modeli de eğitmek gerekiyor.
+
+690
+02:15:04,680 --> 02:15:08,300
+Yani önceden eğitilmiş, dondurulmuş bir metinle enkoduru kullanılabilir.
+
+691
+02:15:08,940 --> 02:15:16,300
+Bu enkodurdan gelen metin emeniklerini, yürültülü latentlerle ve Diffusion Time Steepi ile birlikte Diffusion Transformer'a veriyoruz.
+
+692
+02:15:17,220 --> 02:15:25,940
+O Transformer'da temiz latentler üretecek ve bu latentleri Viya Dekoder'dan geçerek son görüntüyü bize verecek.
+
+693
+02:15:28,532 --> 02:15:51,992
+Şimdi, evet burada mesela güçlü bazı açık kaynak modeller var. Mesela Flux bir DevTask Enkoder'dan bahsetmiştik. Mesela bu T5 ve Clip'le aslında 8x8 downsampling yapıyor. Bu latentler üzerinde 12 milyar parametre bir transformer'e itiyorlar.
+
+694
+02:15:55,380 --> 02:16:16,819
+Evet, Tekstu Video'ya geldik. Burada metin promptu giriliyor. Çıktı da bu promptu takip eden bir video kareleri dizisi oluyor aslında. Pipeline hemen hemen aynı. Metin yine önceden yetmiş bir metin en kılırından geçirip metin embeddiklerini alıyor.
+
+695
+02:16:17,395 --> 02:16:41,155
+Gürültülü latentler elde ediliyor. Tek fark latentlerin artık zamana karşılık yine ekstra bir boyutu var. Yani iki uzamsal boyuta, T ve W'ye ek olarak bir de zaman boyutu ekleniyor. Yani T. Dekodur da artık uzamsal, zamansal bir autoenkodur. Hem uzamsal hem zamansal olarak downsample ediyor ve sonra upsample ederek video piksellerini üretiyor.
+
+696
+02:16:45,811 --> 02:16:47,152
+Oynamıyor şu an.
+
+697
+02:16:51,592 --> 02:16:56,292
+Burada kritik nokta şu, dizilerin uzunluğundan dolayı eğitmesi çok maliyetli.
+
+698
+02:16:57,391 --> 02:17:04,031
+Yüksek FPS, yüksek çözünürlük, mesela onun dışında yüksek frame sayısı istiyorsak token sayısı inanılmaz artıyor.
+
+699
+02:17:04,031 --> 02:17:11,031
+Az önce bahsettiğimiz Textile Mixed Diffusion modelinde Transformer 1024 görüntü token üzerinde çalışıyordu ama...
+
+700
+02:17:11,540 --> 02:17:36,479
+Text-to-Video Diffusion modelinde mimari kabaca benzer görünse de, asıl fark dizi uzunluğunda. Burada yaklaşık 76 bin, 80 bin video tokeni işlemek zorunda kalınıyor. Maliyetle buradan geliyor. Burada video diffusyon modellerinin çağı diye bir başlık var. Aslında şuralarda bir yerde Google'ın V3 modeli olması lazım. Sanırım o gelmeden hazırlanmış bu.
+
+701
+02:17:36,884 --> 02:18:00,463
+Burada aslında görebiliriz hangisi açık kaynak, hangisinin raporu var, hangisinin çıkmamış. Mesela Sora var, Sora 2 çıktı, sonra bunlar da her yenisi çıktığında aslında devrim yaratacak nitelikte oluyor. Bir firma çıkarınca diğeri de çıkarıyor. Hepsi aslında birbirinin üstüne koyuyor. Daha kaliteli.
+
+702
+02:18:01,523 --> 02:18:03,963
+İşler ortaya koyuyorlar.
+
+703
+02:18:07,183 --> 02:18:09,144
+Diffusion Distillation'a geldik.
+
+704
+02:18:10,484 --> 02:18:15,824
+Şimdi diffusion modellerle ilgili problemlerden birine daha gelirsek sampling sırasında çok yavaşlar.
+
+705
+02:18:15,824 --> 02:18:22,083
+Bu iteratif prosedörü çalıştırdığımız için modeller de çok büyük olabiliyor.
+
+706
+02:18:22,164 --> 02:18:27,123
+10 milyarlarca parametre ve 10 milyarlarca token içeren sequester üzerinde çalışabiliyorlar.
+
+707
+02:18:27,763 --> 02:18:32,163
+Bu yüzden inference zamanı ciddi derecede ağırlaşıyor. Rectified Flow ile bile,
+
+708
+02:18:32,163 --> 02:18:35,063
+inference sırasında onlarca adım atması gerekiyor.
+
+709
+02:18:35,063 --> 02:18:38,263
+Bunun çözümü Distribution denen algoritma.
+
+710
+02:18:40,263 --> 02:18:47,263
+Distribution algoritmaları normalde inference'da 30, 50, 100 adım gerektiren bir diffusion modeli alıp,
+
+711
+02:18:47,263 --> 02:18:50,763
+modeli bir şekilde değiştiriyorlar.
+
+712
+02:18:50,763 --> 02:18:54,763
+Ve çok daha az adımda benzer kalitede örnek üretmeleri sağlanıyor.
+
+713
+02:18:54,995 --> 02:19:04,415
+Çoğu zaman örnek kalitesinden biraz ölüm veriliyor. Ama distil yaşındaki temel sorun, bu kalite kaybını minimumda tutarken adım sayısını azaltmak.
+
+714
+02:19:05,975 --> 02:19:10,055
+Bazı yöntemler tek adımlı samping... Pardon.
+
+715
+02:19:17,055 --> 02:19:18,055
+Biraz...
+
+716
+02:19:18,055 --> 02:19:19,515
+[kişisel bilgi]
+
+717
+02:19:20,735 --> 02:19:21,455
+Affedersiniz.
+
+718
+02:19:23,123 --> 02:19:25,724
+Geçmiş olsun.
+
+719
+02:19:25,724 --> 02:19:26,963
+Teşekkür ederim.
+
+720
+02:19:31,804 --> 02:19:33,263
+Şöyle yapalım.
+
+721
+02:19:35,004 --> 02:19:37,984
+Evet, yavaş demiştik. Sonra Distillation'ı bulduk.
+
+722
+02:19:39,263 --> 02:19:41,304
+Şimdi formüllerin yazılışları var burada.
+
+723
+02:19:42,504 --> 02:19:44,623
+Generalized bir fiirin adı altında.
+
+724
+02:19:45,763 --> 02:19:47,407
+En başta bahsettiğim gibi...
+
+725
+02:19:47,407 --> 02:19:52,047
+Bir sürü paper var ve hepsinde aslında ifade edilme şekilleri farklı.
+
+726
+02:19:54,047 --> 02:19:56,847
+Yani hiperparametre seçmek zaten bir dert.
+
+727
+02:19:58,647 --> 02:20:00,847
+Şimdi bir de...
+
+728
+02:20:07,507 --> 02:20:12,128
+Şimdi bir de t'nin fonksiyonu olan hiperparametrileri seçmemiz gerekiyor.
+
+729
+02:20:15,367 --> 02:20:18,647
+Hangisini yapacağız? Kestirmek pek mümkün değil.
+
+730
+02:20:18,647 --> 02:20:21,987
+Ama üç farklı matematiksel formalizm var burada.
+
+731
+02:20:22,927 --> 02:20:29,087
+Bunun için bu formalizmleri kullanıyoruz aslında.
+
+732
+02:20:33,172 --> 02:20:53,231
+Evet, burada o soruya geldik. Birincisi diffusion latent değişkeni. Temiz veri örneklerimiz var, x0'lar. Ama bunlara karşılık gelen giderek gürültülenmiş bir örnek dizisi de var latentler. Bunları gözlemleyemiyoruz. Ama var olduklarını varsayıyoruz. Bir varsayım yapıyoruz.
+
+733
+02:20:54,995 --> 02:21:15,175
+Bu mesela y'ye benziyor. Orada da z ve x vardı. Z'yi göremiyorduk. Ama model eğitmek istiyorduk. Burada da benzer bir matematiksel numara kullanıyoruz aslında. Veri olasılığının variyostan halsını maksimize ediyoruz. Bu da diffusion için latent değişkenli bir model yorumu veriyor.
+
+734
+02:21:17,108 --> 02:21:26,468
+Bir diğeri biraz daha farklı. Diffusion'ın score function ile modellendiği bir veri dağılımı paydata x'imiz var.
+
+735
+02:21:26,468 --> 02:21:33,427
+Ve score function log olasılığın x'e göre türevi olarak bulunuyor. Burada görebiliriz.
+
+736
+02:21:34,808 --> 02:21:42,148
+Log olasılığın x'e göre türevi. Bu her noktada yüksek olasılıklı bölgeni gösteren bir vektör alanı olacak.
+
+737
+02:21:42,592 --> 02:21:50,512
+Veri uzayındaki her nokta için score function bizi yüksek veri yoğunluğu olan yönlere işaret edecek, bizi yönlendirecek.
+
+738
+02:21:51,992 --> 02:22:02,812
+Bu diffusion'un bir diğer yorumu da veri dağılımını score function'unu öğrenmeye çalıştığı, hatta farklı gürültü seviyeleri için bir score function ailesi öğrendiği.
+
+739
+02:22:10,644 --> 02:22:20,004
+Function, ailesi var aslında. Function'lar var. Diffusion bu function'lardan öğrenecek.
+
+740
+02:22:25,139 --> 02:22:31,680
+Bizi yine benzer algoritmuna götüren ama farklı bir formalizm gibi oluyor.
+
+741
+02:22:33,180 --> 02:22:37,880
+Üçüncü ve biraz daha yeni ortaya çıkan bir bakış açısı var.
+
+742
+02:22:38,420 --> 02:22:42,360
+Diffusion var. Bu da stokastik diferansiyel denklemler.
+
+743
+02:22:45,683 --> 02:22:52,923
+Fikir aslında şöyle, gürültü dağılımından, veri dağılımına örnek taşıyan, sonsuz adımlarla tanımlanan bir diferansiyel denklem yazmak istiyoruz.
+
+744
+02:22:53,703 --> 02:23:00,144
+İnference sırasında sinir ağa, bu stokastik diferansiyel denklemi sayısı olarak çözen bir integratör gibi davranacak.
+
+745
+02:23:00,144 --> 02:23:08,423
+Bu perspektif sayesinde, inference sırasında bu denklemleri çözmek için çok farklı türde sayısal yöntemlere, integratörlere kapı açılacak.
+
+746
+02:23:09,203 --> 02:23:12,363
+Rectified Flow'da gördüğümüz gradient descent tarzı adım.
+
+747
+02:23:12,688 --> 02:23:21,388
+Bu bakış açısından bakıldığında aslında stokastik diferansiyel denkliğin üzerine konmuş bir forward-öyler integratörü gibi davranacaktır.
+
+748
+02:23:23,648 --> 02:23:32,348
+Burada bir blog paylaşılmış. Burada gördüğümüz 8 konuyla ilgili yazılar var. Bu linke bakmak yararlı olabilir.
+
+749
+02:23:33,567 --> 02:23:35,688
+Daha sonra otorigrisi falan küçük bir...
+
+750
+02:23:36,308 --> 02:23:59,828
+Özet geçirmiş. Ne yapılabilir? Bir silik latentler çıkarılır ve daha sonra bunun üzerinde yetilir. Ardından genel özet neler yaptık? Ganlardan bahsettik. Difüzyon modellerinden bahsettik ve latent difüzyon modellerinden bahsettik. Bir sonraki haftada Vision ve Language konuları işlenecek. Teşekkür ederim. Bu kadardı. Lecture on Earth.
+
+751
+02:23:59,828 --> 02:24:02,488
+Peki, teşekkürler.
+
+752
+02:24:03,667 --> 02:24:14,147
+Yani şimdi bu 3 saatte işlediğimiz mevzuyu aslında ben gelecek dönem bir dönem anlatıyorum.
+
+753
+02:24:14,667 --> 02:24:16,687
+Aslında bayağı geniş bir şey.
+
+754
+02:24:19,207 --> 02:24:28,187
+Orada mesela dediğim gibi işte vayelere belki 3 saat, belki 6 saat yanlış hatırlamıyorsam ayrılıyor.
+
+755
+02:24:29,971 --> 02:24:37,671
+Bu Difusyon modelleri içinde bu Score Function'ı bakış açısıyla anlattığını hatırlıyorum.
+
+756
+02:24:42,291 --> 02:24:57,011
+Autoregressive modellerden başlanıldığı yolda sonrasında bu vayeler var. Normalizing Flow modelleri diye ilişkili bazı burada geçmeyen modeller de anlatılıyor.
+
+757
+02:24:59,219 --> 02:25:17,611
+Ganların biraz daha genelleşmesi ve ayrıntılı halde anlatılması var. Yani ganlar aslında bir daha genel bir ailenin bir ferdi gibi bakılıp o şekilde ganlar üzerine...
+
+758
+02:25:20,724 --> 02:25:21,963
+Üzerinde duruluyor.
+
+759
+02:25:23,824 --> 02:25:25,484
+Bayağı matematiksel bir ders.
+
+760
+02:25:27,484 --> 02:25:38,443
+Yani hocalar, o slide'ları hazırlayan hoca çok ciddi olasılık teorisi üzerine kurmuş.
+
+761
+02:25:40,463 --> 02:25:44,304
+O da benim hoşuma gidiyor. Olasılık dersini de verdiğim için lisans da.
+
+762
+02:25:48,275 --> 02:26:02,175
+Araştırmacı için de iyi bir altyapı oluşturuyor. Yani sonuçta bir paper okurken biraz matematik görünce dağılmamak lazım değil mi? Veya kendiniz bir şeyler yapabilmemiz lazım.
+
+763
+02:26:14,579 --> 02:26:21,939
+Tuhaf kullanımları da var. Çok da sinir oluyorum. YouTube'a adam şey koyuyor mesela.
+
+764
+02:26:23,479 --> 02:26:29,599
+İşte videolara işte ilk başta YouTube'un gösterdiği videonun resmi var ya.
+
+765
+02:26:30,700 --> 02:26:37,659
+O resimleri artık bununla gayet enteresan, çekici şeyler yapıyorlar. Tıklıyorsunuz. Alakası yok, var.
+
+766
+02:26:43,252 --> 02:26:49,391
+Enteresan bir dönemden geçiyoruz. Yani bunlar artık o kadar iyi oldu ki, generatif modeller.
+
+767
+02:26:51,252 --> 02:26:54,351
+Tekst, özellikle tekst generatif modeller.
+
+768
+02:26:56,992 --> 02:27:01,851
+Üzerine kuruldu işte o yapay zekalar. Acaba işimizi elimizden alacak mı?
+
+769
+02:27:03,632 --> 02:27:06,351
+Belki de bir 5-10 yıl içinde...
+
+770
+02:27:07,219 --> 02:27:13,680
+Çalışan ihtiyacı %50'ye inecek, %30'lara inecek falan yani sektörlerde.
+
+771
+02:27:15,939 --> 02:27:29,559
+Bu imge üreten jeneratif modeller işte internette bol miktarda bu şekilde yapay zeka ile üretilmiş resim var, video var.
+
+772
+02:27:30,100 --> 02:27:47,900
+İnsanlarda da mesela ben bir şey izlediğim zaman yapay zeka ile üretilmişse hemen onu bırakıyorum. Nedense böyle bir şey oluştu bende. Youtube'da özellikle. Gerçek insanların ürettiği şeyleri izlemek istiyorum.
+
+773
+02:27:51,572 --> 02:27:56,172
+Ama bunlar da enteresan bir şekilde gayet iyi üretimler yapıyorlar.
+
+774
+02:28:01,459 --> 02:28:09,759
+Her teknolojinin kötüye kullanımı oluyor. Her aracın kötüye kullanımı olabilir, iyiye kullanımı olabilir. Bilmiyorum mesela.
+
+775
+02:28:14,520 --> 02:28:22,759
+Ders videosu üretimi falan gibi şeylerde birçok güzel kullanım alanları da olabilir. Görüntü video üretiminin.
+
+776
+02:28:26,260 --> 02:28:52,220
+2-3 yıllık bir şey. İlk 2016'larda falan başlamış. Acayip iyi olması. 5-6 yıl öncesi Style Gun ile beraber acayip başarılı sonuçlar gelmeye başlıyor. Style Gun 2 ile Style Gun ile beraber.
+
+777
+02:28:55,188 --> 02:29:01,688
+Bir taraftan gidilecek daha çok yol var gibi, bir taraftan şimdiden acayip iyi sonuçlar alınıyor gibi.
+
+778
+02:29:03,727 --> 02:29:08,528
+Welcome to the new world diyorlar ya, yeni dünyaya hoş geldiniz.
+
+779
+02:29:09,587 --> 02:29:13,548
+Yeni bir dijital dünya, yeni bir dünyaya bizi götüren bir şey oluyor gibi.
+
+780
+02:29:14,628 --> 02:29:22,168
+Devrim niteliğinde, böyle hani endüstriyel devrim vardı tarımsal topluluktan işte, endüstri topluluğuna.
+
+781
+02:29:22,708 --> 02:29:34,708
+Bu da şimdi yapay zeka, yani jeneratif özellikle. Yapay zeka öncesi ve sonrası toplum ne olacak göreceğiz ömrümüz yeterse.
+
+782
+02:29:40,868 --> 02:29:45,888
+Slide'lar da yine çok güzeldi. Ben slide'ları o barış anlatırken.
+
+783
+02:29:47,572 --> 02:29:57,972
+Baktım, 20-25'ten bu yıldan bile şey vardı yani. Referanslar vardı. 20-24'ten bir sürü referans vardı.
+
+784
+02:30:02,388 --> 02:30:07,388
+Evet, öyle bir özetlemiş olayım. Şimdi teşekkür ediyorum tüm arkadaşlarımıza.
+
+785
+02:30:11,388 --> 02:30:25,788
+Gelecek hafta [öğrenci], [öğrenci], [öğrenci], Yazım [öğrenci] var. Bunlar hazır olursa iyi olur.
+
+786
+02:30:27,412 --> 02:30:54,891
+14. slide'ı bitirdik dedi galiba arkadaşımız. 15 ve 16'yı bitirmiş oluruz gelecek haftaya. Başka konuşmamız gereken bir şey var mı? Ödev 1'leriniz notlandı. Ödev 2'lerinizin süresi doldu. Arkadaşlar, aslan arkadaşlar notluyorlar onları. Nasıl gidiyor ders? Öğreniyor musunuz? Ödevler vs. faydalı oluyor mu?
+
+787
+02:30:59,156 --> 02:31:01,156
+Biraz daha už galiba ama...
+
+788
+02:31:05,172 --> 02:31:08,432
+Hocam biraz uzun ama bence öğretiyor.
+
+789
+02:31:09,312 --> 02:31:09,612
+Değil mi?
+
+790
+02:31:11,832 --> 02:31:20,891
+Yani dersi öğrenmek isteyen birisi için Stanford'la hemen hemen aynı eğitimi alıyorsunuz burada.
+
+791
+02:31:23,332 --> 02:31:29,332
+Aynı ödevleri yapıyorsunuz. Gayet iyi bir eğitim olduğunu düşünüyorum. Öğretici bir şey olacaktır.
+
+792
+02:31:31,891 --> 02:31:35,291
+Konuşacağımız bir şey var mı?
+
+793
+02:31:36,611 --> 02:31:45,912
+Hocam ben şey sormak istiyorum. Ben tekrar proje önerisi yapacaktım. Size e-mail olarak gönderdim. Onunla devam edebilir miyim ben?
+
+794
+02:31:48,051 --> 02:31:56,211
+E-maillerin falan bayağı gerisindeyim. Herhalde devam edersin ya. Yani şey değil değil mi? Düz metin sınıflama falan değil.
+
+795
+02:31:56,819 --> 02:31:57,899
+Yok değil hocam.
+
+796
+02:31:58,260 --> 02:32:01,220
+Açıklanan örneklerle çakışmıyor herhalde.
+
+797
+02:32:02,360 --> 02:32:04,079
+Evet değil hocam ben baktım evet.
+
+798
+02:32:04,659 --> 02:32:07,540
+Tamam öyleyse devam et yani sıkıntı yoktur herhalde.
+
+799
+02:32:08,360 --> 02:32:09,520
+Tamam hocam teşekkürler.
+
+800
+02:32:09,819 --> 02:32:11,319
+Rica ederim.
+
+801
+02:32:14,772 --> 02:32:19,072
+Peki, iyi hafta sonları diliyorum. Haftaya görüşürüz arkadaşlar.

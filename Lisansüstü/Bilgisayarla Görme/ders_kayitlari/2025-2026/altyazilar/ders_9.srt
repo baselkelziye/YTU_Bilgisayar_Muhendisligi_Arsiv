@@ -1,0 +1,1103 @@
+1
+00:02:07,828 --> 00:02:09,288
+Arkadaşlar, merhabalar.
+
+2
+00:02:15,060 --> 00:02:17,280
+Merhaba hocam, sesiniz geliyor.
+
+3
+00:02:24,915 --> 00:02:35,515
+Aslında konuları bitirdik. Anlatımları kalan var mı diye açtım bir. Yani anlatım yapmak isteyen var mı? Yapamamış olan.
+
+4
+00:02:38,216 --> 00:02:39,256
+Ben varım hocam.
+
+5
+00:02:40,675 --> 00:02:44,276
+Tamam. Ne anlatacaksın? Dinleyelim. Başla.
+
+6
+00:02:45,816 --> 00:02:48,795
+Hocam ben dersin sonunda anlatsam olur mu?
+
+7
+00:02:49,656 --> 00:02:51,515
+Dersin sonu zaten şimdi.
+
+8
+00:02:52,735 --> 00:03:19,235
+Peki, şöyle, bir onun için açtım dediğim gibi anlatım yapacak kişi kaldıysa anlatsın diye. İkincisi de bir geri bildirim alalım, bir konuşalım gibi. Gerçi şeye de mesaj da attım, hani bir size konuşmak istemezseniz diye. Bir online bir konu da hazırlamıştım.
+
+9
+00:03:21,075 --> 00:03:27,075
+Bu konuyu.
+
+10
+00:03:30,580 --> 00:03:33,700
+bildirimlerinizi yurtdürebilirseniz sevinirim.
+
+11
+00:03:33,840 --> 00:03:36,520
+Onun haricinde söyleyecek bir şeyimiz varsa
+
+12
+00:03:36,520 --> 00:03:42,540
+yüz yüze konuşacağımız, konuşmamız gereken bir şey var mı?
+
+13
+00:03:49,716 --> 00:04:00,156
+Evet, yok gibi gözüküyor. Dediğim gibi, anonim olarak geri bildirim verebilirseniz ders hakkında,
+
+14
+00:04:00,156 --> 00:04:07,956
+dersin gelecek yıllarda daha iyi verilebilmesi açısından mutlu olurum.
+
+15
+00:04:07,956 --> 00:04:16,556
+Evet, bu durumda ders bitmiştir. [öğrenci] şimdi sen anlatacaksan bir şey anlat bakalım.
+
+16
+00:04:20,660 --> 00:04:24,460
+Hocam ben bir makale anlatacaktım ama OCR hakkında.
+
+17
+00:04:26,680 --> 00:04:27,440
+Tamam.
+
+18
+00:04:32,148 --> 00:04:33,668
+Görüntü, şey paylaşayım.
+
+19
+00:04:34,528 --> 00:04:35,768
+Ekranı paylaşayım ya.
+
+20
+00:04:51,348 --> 00:04:52,187
+Yerleniyor mu, hocam?
+
+21
+00:05:05,427 --> 00:05:19,467
+OCRnet'e Robust Deep Learning Framework ve Alphanumeric Character Recognition to Assist the Visually Impaired. Bu makale köyler için, görme engelli vatandaşlar için yürüme esnasında, hayat içerisinde...
+
+22
+00:05:19,467 --> 00:05:20,888
+Bu makaleyi görmüyor musunuz?
+
+23
+00:05:21,608 --> 00:05:23,807
+Şu an gözükmüyor mu hocam?
+
+24
+00:05:26,548 --> 00:05:27,888
+Tarayıcı gözüküyor.
+
+25
+00:05:43,124 --> 00:05:44,124
+Şimdi gözüküyor.
+
+26
+00:05:45,303 --> 00:05:45,944
+Evet.
+
+27
+00:05:49,971 --> 00:06:06,111
+Görme engelli vatandaşlar için sokakta yürürken veya herhangi bir yerde dinamik hayatta onlara yardımcı olacak bir sistem geliştirilmiş. OCR net. OCR optical character recognition.
+
+28
+00:06:06,963 --> 00:06:30,795
+Yani bildiğimiz mesela gördüğümüz dışarıdaki ekrandaki yazıları tanımlayan, otomatik olarak algılayan ve bize çeviren sistemlere deniyor. Bunun farklı dil modelleriyle de geliştirilmiş halleri var. Bu 2025'te yapılmış bir çalışma ve görme engelli vatandaşlar için sokakta yürürken...
+
+29
+00:06:30,867 --> 00:06:42,768
+Herhangi bir yere tuttuklarında, herhangi bir yere görmek istediklerini, okumak istediklerini onu okutup otomatikman sistem orada ne yazdığını anlatıyor.
+
+30
+00:06:42,768 --> 00:06:48,768
+Bunu öncelikle...
+
+31
+00:06:51,028 --> 00:07:17,068
+62 alfanümeri karakterler üzerinden eğitmişler ve 43 katmanlı bir network algoritması kurmuşlar. En başta tabii bu sistemler Google'ın Tesaract modelleriyle ve daha basit algoritmik modellerle yapıldığında önceki modeller çok gelişmiş değil. Ancak şimdiki modeller CNN.
+
+32
+00:07:17,552 --> 00:07:31,432
+ve RNN kullanarak aynı zamanda VIT, Visual Transformator ve Text Transformator'lar kullandıkları için çok daha ileri düzeyde, çok daha başarılı sonuçlar elde edilmiş.
+
+33
+00:07:32,951 --> 00:07:41,851
+Notable Accuracy, Accuracy'miz %95 çıkmış mesela bu makaledeki. Precision %94, yani gerçek değerlerle örtüşen Accuracy %94 çıkıyor.
+
+34
+00:07:42,355 --> 00:07:54,076
+Bicol %95, F1 skor da %96. Yani gayet yüksek rakamlar. Dışarıdaki denemik ortama kıyasla. Bu platform için Raspberry Pi kullanılmış.
+
+35
+00:08:01,076 --> 00:08:23,076
+Şimdi öncelikle sistemler normalde iyi işliyor. Bilgisayarda gözüken metinler için veyahut da elle yazılmış otomatik metinler için çok iyi işleyen sistemler var. Ama bunlar dinamik ortamda çok etkili olamayabiliyor.
+
+36
+00:08:23,956 --> 00:08:50,256
+Bu dinamik ortamlar altında da etkili çalışabilecek bir sistem arayışına gidilmiş burada. Bununla beraber bu görüntü tanıma işleminden sonra Raspberry Pi'ye sensörlere eklenip içeride işleme tabi tutulup çıkan sonuçtaki tekste hoparlör vasıtasıyla görme engelli vatandaşın duyacağı şekilde aktarılıyor.
+
+37
+00:08:53,107 --> 00:09:00,407
+Bunun için CNN, RNN, CRNN gibi algoritmalar kullanılmış.
+
+38
+00:09:07,860 --> 00:09:14,360
+CNN ve GRU modeller hibrit bir şekilde kullanılıyor ve Deep Learning Based algoritmalarıyla yapılıyor.
+
+39
+00:09:16,039 --> 00:09:33,860
+Real Time Assistive System, Edge Device Deployment, yani gerçek hayattaki karşılaşılan bazı problemler nedir? Işık düşmesidir. Ondan sonra mesela gürültü tabanlı problemler çıkabilir.
+
+40
+00:09:35,604 --> 00:09:45,403
+Mesela yazılar karışabilir, ince veyahut da birbirine karışmış yazılar olabilir. Bunları efektif bir şekilde ayırt edebilecek bir sistem geliştirme amaçlanmış.
+
+41
+00:09:53,395 --> 00:10:03,395
+Önceki sistemlere bakacak olursak, mesela Improved ResNet Based Spiral Convolution. Bu %99.82 başarı gösteriyor.
+
+42
+00:10:03,395 --> 00:10:15,395
+Daha sonra CNN'ler çıkıyor %81 olarak. Deep CNN'ler %85'e kadar. Custom CNN'ler %98.
+
+43
+00:10:18,303 --> 00:10:26,303
+Test aşamalarında hangi testlerden geçtiğini bilmiyoruz ama önemli olan burada dinamik modeller üzerinde çalışabilmesi.
+
+44
+00:10:27,003 --> 00:10:34,903
+Metodolojimiz şu şekilde. Öncelikle elde edilen görüntü preprocessing yapılıyor.
+
+45
+00:10:35,303 --> 00:10:38,803
+Daha sonra optical character decognition top plandan geçiliyor.
+
+46
+00:10:44,975 --> 00:11:05,155
+ciddi bir şekilde yapılıyor. Mesela bir ekran çekiliyor. Ekranın arka planıyla metinler arasındaki farklar, piksel arasındaki farklar yapılıp arka plan çıkarılıyor. Sadece metin bırakılıyor. Daha sonra bu Binarization, Noise Reduction gibi ve Normalizasyon gibi işlemlerden geçiriliyor.
+
+47
+00:11:07,276 --> 00:11:09,096
+Binarization işte mesela
+
+48
+00:11:09,423 --> 00:11:13,903
+Karartma veyahut da farklı renklerle dizayn etme.
+
+49
+00:11:14,423 --> 00:11:23,043
+Noise Reduction, arkadaki gürültüleri engelleme ve normalizasyon teknikleriyle preprocessing tamamlanıyor.
+
+50
+00:11:23,043 --> 00:11:33,483
+Optical Character Recognition Pipeline, Neuron Network için uygun bir şekilde hangi alfanümerik karakterler yazıldığını tahmin ediyor sistem.
+
+51
+00:11:34,644 --> 00:11:43,364
+Daha sonra da bunu Raspberry Pi ile bu çıkan teksti okuyacak şekilde sunucuya veriyor.
+
+52
+00:11:44,963 --> 00:11:54,244
+Mesela burada bir input imajimiz var. Bunu Preparate Processing'den geçiyor. Daha sonra CNN Feature Extraction yapılıp Feature Vectorlar çıkarılıyor.
+
+53
+00:11:54,804 --> 00:12:01,124
+Sonra bu Grow Layers'a gidilip oradan Fully Connected ve Output Layer. Bu daha önceden eğitilmiş modellerimizin.
+
+54
+00:12:01,203 --> 00:12:08,483
+Ağırlıkları ve BIAS'leri tanımlanmış modellerimizin içerisine girip daha sonra tekst olarak çıkıyor.
+
+55
+00:12:08,483 --> 00:12:17,843
+Ve bu tekstimiz Raspberry Pi'de tanımlanıp, Speech'e dönüştürülüyor.
+
+56
+00:12:23,379 --> 00:12:44,331
+Buradaki denklemlere bakacak olursak, mesela bu bizim pikselimizi gösteren bir ifade. İşte X'ye grafiğindeki mesela resimindeki piksel, belirli bir pikseli alıp bu thresholdu geçiyor mu geçmiyor mu diye bakıyor. Eğer geçerse bir veriyor, geçmezse sıfır veriyor. Yani...
+
+57
+00:12:44,340 --> 00:13:08,320
+Bir verirse bu bir harfin temelini oluşturan bir şey demektir. Sıfır veriyorsa arka plan demektir. Arka planı atıyor. Peki bu threshold'u neye göre belirliyor? Belirli kat sayılar veriyor pikseller için. Yani bunu aslında her resimde otomatikman düzenliyor sistem. Yani her bir resim için otomatik bir threshold belirliyor.
+
+58
+00:13:11,347 --> 00:13:21,288
+Mesela burada giren piksellerin kendi arasındaki farkları her bir threshold için deneniyor.
+
+59
+00:13:21,288 --> 00:13:24,347
+Ve aradaki en yüksek threshold seçiliyor.
+
+60
+00:13:24,347 --> 00:13:26,347
+Arc-min modeliyle.
+
+61
+00:13:28,347 --> 00:13:33,347
+Daha sonra bunlar Dilation metodundan geçiriliyor.
+
+62
+00:13:33,347 --> 00:13:35,347
+Dilation demek mesela...
+
+63
+00:13:35,408 --> 00:13:59,408
+Harfler arasında bağlantılar çok düşük veyahut da çizgiler arasındaki incelik çok az ya da çok fazla. Bunları düzenliyor. Eğer incelik çok azsa silinmişse mesela onu tamamlıyor. Erogin arkadaki gereksiz arka plan gürültülerini engelliyor. Bunu Max-Mean algoritmalarıyla yapıyorlar. Bu IB'de bizim...
+
+64
+00:14:00,916 --> 00:14:06,836
+Piksellerimizi temsil ediyor. Piksel numaralarımızı sayısal olarak. Daha sonra normalizasyon işlemlerinden geçiriliyor.
+
+65
+00:14:09,656 --> 00:14:24,916
+Burada CNN için Feature Extraction modellerimiz gösterilmiş. X'ye ve C'ye Out giriyor. Daha sonra her bir piksel için ayrı ayrı weight ve biaslerimizle işlemler uygulanıyor.
+
+66
+00:14:26,624 --> 00:14:32,544
+Revolulardan geçiriliyor. İkisiye modellerimiz. Yani burada aslında normalizasyon yapılıyor.
+
+67
+00:14:34,844 --> 00:14:44,304
+Daha sonra pooling işlemini görüyoruz. Pooling demek resmi küçültüyorsun ve daha hızlı işlem sağlıyor bu sana.
+
+68
+00:14:45,684 --> 00:14:47,624
+Veyahut da resmi...
+
+69
+00:14:48,083 --> 00:14:56,283
+Uygun piksellerde normalizasyondan sonra uygun piksellerle daraltıyorsun ve çok daha efektif bir sonuç elde ediyoruz.
+
+70
+00:14:58,384 --> 00:15:04,264
+Daha sonra burada filtrelerimiz gözüküyor. Her bir input channel'ımız için.
+
+71
+00:15:11,923 --> 00:15:30,423
+Reset Gate'imiz var. Update Gate'imiz var. Hidden State'imiz bu şekilde. TanH fonksiyonuyla tanımlanmış. Output Hidden State'imiz var. Bunlar Neural Network'teki ağlarımız.
+
+72
+00:15:30,423 --> 00:15:34,923
+Yani şuradan grafikten gösterecek olursak.
+
+73
+00:15:36,307 --> 00:15:42,527
+Gru Layers'tan çıktıktan sonra bu değerlerimiz Fully Connected Layer'da bu şekilde işleme tabi tutuluyor.
+
+74
+00:15:48,307 --> 00:15:49,528
+Bir tek iler.
+
+75
+00:15:54,227 --> 00:15:56,227
+Teşekkürler.
+
+76
+00:16:01,011 --> 00:16:01,631
+Burası mı?
+
+77
+00:16:03,031 --> 00:16:03,831
+Evet.
+
+78
+00:16:04,711 --> 00:16:05,111
+Yok yok.
+
+79
+00:16:08,628 --> 00:16:14,628
+Bu değil bu, aşağıdaki. Ha, 2-3.
+
+80
+00:16:14,628 --> 00:16:15,628
+Evet.
+
+81
+00:16:15,628 --> 00:16:21,628
+Input layer, feature extraction, sequential processing.
+
+82
+00:16:21,628 --> 00:16:27,628
+Then layers with kernel, kernel.
+
+83
+00:16:27,628 --> 00:16:36,044
+Kernel, the device, classification, out of the layers, after case of the instrument.
+
+84
+00:16:40,275 --> 00:16:43,795
+Proposed or CRN, Feature X Section.
+
+85
+00:16:44,995 --> 00:16:51,275
+Biraz yakınlaştırabilir misin şu Feature X Section'da ne yazıyor alt kısımlar var?
+
+86
+00:16:53,275 --> 00:16:54,715
+Vloglar var.
+
+87
+00:16:58,004 --> 00:17:03,004
+Başkan, fişim, fong, batch, master, dropout.
+
+88
+00:17:04,004 --> 00:17:06,004
+Böyle bloklar mı varmış?
+
+89
+00:17:07,004 --> 00:17:11,004
+Her bir feature için farklı bloklarımız var.
+
+90
+00:17:12,004 --> 00:17:15,003
+Her birisinde convolutional ve normalizasyon yapılıyor.
+
+91
+00:17:15,003 --> 00:17:17,003
+Batch norm yapılıyor.
+
+92
+00:17:17,003 --> 00:17:20,908
+Pulling yapılıyor ve dropout ile diğer feature'ımıza geçiriliyor.
+
+93
+00:17:24,115 --> 00:17:24,796
+Peki.
+
+94
+00:17:25,996 --> 00:17:28,336
+Buradaki max pool değerlerimiz giderek düşüyor.
+
+95
+00:17:31,455 --> 00:17:31,776
+Evet.
+
+96
+00:17:33,435 --> 00:17:33,796
+Peki.
+
+97
+00:17:35,895 --> 00:17:37,276
+Şu üstte ne göstermiş?
+
+98
+00:17:37,375 --> 00:17:38,135
+Type-tank falan.
+
+99
+00:17:39,975 --> 00:17:42,996
+Burada aslında işlemleri göstermiş hocam.
+
+100
+00:17:43,135 --> 00:17:45,955
+Pre-processing işlemlerinde neye dönüştürüyor?
+
+101
+00:17:45,955 --> 00:17:47,056
+Yaklaşamıyoruz.
+
+102
+00:17:51,251 --> 00:17:59,251
+Mesela bunlar bizim orijinal imeçlerimiz, görüntülerimiz. Daha sonra binarize olduktan sonra bunlara dönüşüyor.
+
+103
+00:18:00,251 --> 00:18:06,251
+Dilated'tan sonra buna, Erogin'dan sonra buna, Normalized'dan sonra buna dönüşüyor.
+
+104
+00:18:07,251 --> 00:18:12,251
+Binarize'de de işte koyu harika.
+
+105
+00:18:14,516 --> 00:18:27,836
+Elle yazılan üyelerde çalışıyor mu yoksa bilgisayarla yazılan karakterlerden mi çalışıyor mu?
+
+106
+00:18:27,836 --> 00:18:37,276
+Hocam, anlattığına göre sokakta, levhalarda veyahut da market kapaklarında gösterilen şeyleri iyi okuyor.
+
+107
+00:18:37,276 --> 00:18:41,276
+Düşüncesiyle çıkarılmış bir uygulama.
+
+108
+00:18:41,587 --> 00:18:43,587
+Hani el yazması geçmiyordu.
+
+109
+00:18:43,587 --> 00:18:44,587
+Tamam.
+
+110
+00:18:46,587 --> 00:18:48,587
+Tamam, devam.
+
+111
+00:18:49,587 --> 00:18:54,587
+Bir soru var mıydı? Sanki bir ses geldi ama soru değildi herhalde.
+
+112
+00:19:01,748 --> 00:19:04,748
+Daha sonra Generalization yaptırılıyor.
+
+113
+00:19:06,748 --> 00:19:16,748
+Ve en son çıkan tekstimiz Raspberry Pi ile Speaker vasıtasıyla görme engelli vatandaşımızın duyması sağlanıyor.
+
+114
+00:19:20,372 --> 00:19:42,452
+Datasetlerimiz bu şekilde. Numerik 10 tane karakter var. Uppercase 26, Lovercase 26, Total 62. Her bir numerik ve Uppercase gibi değerler için 3475. Raspberry Pi modeliyle yapılıyor hocam bu işlemler.
+
+115
+00:19:42,996 --> 00:19:44,996
+Kamera var. Kamera mesela...
+
+116
+00:19:44,996 --> 00:19:46,996
+Bu sorusu belli mi?
+
+117
+00:19:46,996 --> 00:19:48,996
+Cp, Cp falan yani.
+
+118
+00:19:48,996 --> 00:19:55,996
+O büyük ihtimal hangi model oldu? Model B diyor. P4, Model B. Onu araştırırsak olabiliriz.
+
+119
+00:19:58,996 --> 00:20:04,996
+Cep telefonundan en iyi bir kötü mü merak ettim. Çok büyük bir hardware istemiyor tahmin ediyorum.
+
+120
+00:20:04,996 --> 00:20:08,908
+Raspberry Pi'de çok büyük olmuyordu diye biliyorum ama...
+
+121
+00:20:13,268 --> 00:20:15,268
+Evet hocam, yani...
+
+122
+00:20:18,268 --> 00:20:21,268
+Bu işlem için yeterli olduğunu düşünüyor.
+
+123
+00:20:21,268 --> 00:20:22,268
+Demek ki yapalım.
+
+124
+00:20:22,268 --> 00:20:25,268
+Göstersene kaç Cp'ye gücü falan.
+
+125
+00:20:27,268 --> 00:20:31,268
+Nasıl bir dönelim istiyor onu merak ediyorum.
+
+126
+00:20:40,819 --> 00:20:44,400
+2-4-8 GB'lık çoğuslar var diyorum.
+
+127
+00:20:46,460 --> 00:20:49,519
+Yani cep telefonunda olabilecek bir şey mi bu da?
+
+128
+00:20:50,539 --> 00:20:53,619
+Değil mi? Şimdi modern cep telefonları...
+
+129
+00:20:56,059 --> 00:20:57,719
+İşler bilene nasıl?
+
+130
+00:21:05,203 --> 00:21:11,851
+Quad-Core-Cortex-A7-A8
+
+131
+00:21:20,660 --> 00:21:20,760
+Evet.
+
+132
+00:21:23,560 --> 00:21:39,820
+Yani bu yapay zeka uygulamasını yapıp, yani OSYAR uygulamasını yapıp içeride aynı zamanda da speaker'la işte bunu tekste teksti sese dönüştürme şeyini aşağı verecek düzeye getirmişler Asperify'da.
+
+133
+00:21:39,820 --> 00:21:41,740
+Evet.
+
+134
+00:21:45,203 --> 00:21:54,323
+Performanslarda Precision şu şekilde bir denklemi var. Recall. F1 skorumuz bu şekilde. Precision ile Recall'u çarpıyoruz. Altta da topluyoruz.
+
+135
+00:21:57,323 --> 00:22:08,483
+İşte bu konuda da %95'lere yaklaşan bir başarı bulmuş hocam.
+
+136
+00:22:19,028 --> 00:22:21,728
+Bu training loss'umuzu açıklıyor bu grafik.
+
+137
+00:22:23,627 --> 00:22:25,428
+Bunu da validation loss'umuzu açıklıyor.
+
+138
+00:22:26,327 --> 00:22:27,428
+Training Egoci.
+
+139
+00:22:31,428 --> 00:22:33,627
+O veri setine bir bakabilir miyiz?
+
+140
+00:22:33,627 --> 00:22:34,428
+Tabii ki.
+
+141
+00:22:36,327 --> 00:22:37,327
+Aşağıya.
+
+142
+00:22:39,627 --> 00:22:42,028
+Data Set Description'de.
+
+143
+00:22:51,827 --> 00:22:53,827
+Kıpırdatma şu ekranı da ortaya alınıyor.
+
+144
+00:22:55,827 --> 00:23:00,827
+Alfanumerik karakterler alınmış. Onlar üzerinden eğitilmiş.
+
+145
+00:23:00,827 --> 00:23:05,827
+3475 font stiliyle farklı farklı denenmiş.
+
+146
+00:23:05,827 --> 00:23:07,827
+Evet.
+
+147
+00:23:07,827 --> 00:23:13,827
+Yani baya bir çeşitte font stili denenmiş gözüküyor.
+
+148
+00:23:15,859 --> 00:23:29,119
+Gerçek dünya durumlarına uygun şekilde, aynı zamanda iluminasyona, dışarıdaki ışık farklılıklarına, gölge farklılıklarına uyumlu olacak şekilde.
+
+149
+00:23:33,715 --> 00:23:34,715
+Evet.
+
+150
+00:23:46,036 --> 00:23:48,036
+Körlerimiz bu şekilde.
+
+151
+00:23:50,036 --> 00:23:54,036
+Ecurisimiz %95'e çıkmış.
+
+152
+00:23:54,036 --> 00:23:59,788
+Precision %94, recall %95, f1 skorda %96.
+
+153
+00:24:07,284 --> 00:24:17,284
+Diğer şeylere kıyasla parametrelerimiz daha az. Train Time ortalama gözüküyor.
+
+154
+00:24:18,284 --> 00:24:19,284
+Mesela...
+
+155
+00:24:19,284 --> 00:24:21,284
+Bakalım.
+
+156
+00:24:23,284 --> 00:24:25,284
+15 milyon parametre.
+
+157
+00:24:27,284 --> 00:24:34,284
+SqueezeNet, DanceNet, MobileNet, onlar daha az ama onun haricinde oldukça az bir parametre.
+
+158
+00:24:34,996 --> 00:24:36,996
+Bir de veçin sen yanı var.
+
+159
+00:24:36,996 --> 00:24:38,996
+Ve bu tanıştayla.
+
+160
+00:24:38,996 --> 00:24:40,996
+Müzüye münün ne insanı.
+
+161
+00:24:45,299 --> 00:24:45,900
+Tamam.
+
+162
+00:24:51,059 --> 00:25:00,959
+Upper Cases Later'lar için Accurice'imiz %95 çıkmış. Lower Cases'ler için %96. Numerikler için %94.
+
+163
+00:25:20,019 --> 00:25:28,680
+Evet, bizim OSR.NET algoritmamız da öncekilere kıyasla daha iyi gözüküyor.
+
+164
+00:25:28,680 --> 00:25:31,039
+%98'i geçmemiş.
+
+165
+00:25:32,920 --> 00:25:38,940
+Hepsini aynı veri seti üzerinde test etmemiş gibi gözüküyor ama değil mi?
+
+166
+00:25:39,420 --> 00:25:42,039
+Evet. Datasetler farklı.
+
+167
+00:25:44,240 --> 00:25:45,259
+Tuhaf aslında.
+
+168
+00:25:48,051 --> 00:25:52,051
+Datasetleri de verip bir fikir vermek istemiş galiba.
+
+169
+00:25:52,051 --> 00:25:53,051
+Evet.
+
+170
+00:25:54,551 --> 00:26:00,051
+Aslında Datasetleri gayet kaliteli. 1300'e yakın font farklılıkları denemiş.
+
+171
+00:26:08,019 --> 00:26:10,019
+Mesela bu yazıları okuyabiliyor bu şekilde.
+
+172
+00:26:12,019 --> 00:26:17,019
+Calibri, Times New, Garamont, Beckerbill gibi fontları.
+
+173
+00:26:25,011 --> 00:26:33,011
+Bu kadar görüntüsü. Fiziksel olarak elle tutulurluğu bu kadar.
+
+174
+00:26:33,011 --> 00:26:43,011
+Yani bir kere bu seslendirebilecek görme engelliler için amaçlar yürüyor gibi.
+
+175
+00:26:43,011 --> 00:26:51,011
+Aynı zamanda sokakta yürürken de farklı işlevler için de kullanılabilir diyor makalede.
+
+176
+00:26:59,635 --> 00:27:00,315
+Bu şekilde hocam.
+
+177
+00:27:01,255 --> 00:27:03,135
+Tablation Study'de ne yapmışlar?
+
+178
+00:27:05,135 --> 00:27:06,255
+Tablation Study.
+
+179
+00:27:39,667 --> 00:27:41,667
+Bu kadar önemli.
+
+180
+00:27:43,667 --> 00:27:54,667
+A detailed layer-wise analysis conducted to evaluate the contribution of each convolutional block to OCR net's performance and the results are listed in table 11.
+
+181
+00:27:54,667 --> 00:28:03,667
+The first four convolutional blocks primarily extract low to mid-level spatial features such as edges and basic shapes.
+
+182
+00:28:07,604 --> 00:28:09,604
+Bu şeyler, veriler verilmiş.
+
+183
+00:28:09,604 --> 00:28:11,604
+Tadlaya bakalım ne demiş.
+
+184
+00:28:13,604 --> 00:28:15,604
+Tadlaya bakalım ne diyor.
+
+185
+00:28:15,604 --> 00:28:17,604
+Table 11.
+
+186
+00:28:17,604 --> 00:28:21,604
+Data wise statistical analysis of OCR net.
+
+187
+00:28:23,604 --> 00:28:26,604
+CNN blocks 14 only.
+
+188
+00:28:26,604 --> 00:28:30,604
+Standard formulation accuracy 0.92 F1 scores for.
+
+189
+00:28:30,604 --> 00:28:32,556
+Inflation.
+
+190
+00:28:32,596 --> 00:28:41,276
+CNN Artı Block 5, CNN Artı Block 5, 6 CNN Artı 5, 6 Seferbol Kamuvalılaşıyor.
+
+191
+00:29:00,660 --> 00:29:09,660
+Burada ekürisyen ve F1 skorlar artmış ama, inference time biraz daha fazla sürer almış.
+
+192
+00:29:09,660 --> 00:29:12,660
+Devamın, bir sıra 5'i isterim.
+
+193
+00:29:14,660 --> 00:29:21,660
+Our experimental observations revealed that the model's performance showed minimal improvements across these blocks alone,
+
+194
+00:29:21,660 --> 00:29:28,108
+with validation accuracy saturating around %93 after the fourth block.
+
+195
+00:29:28,692 --> 00:29:39,692
+İngiliziyon of the fifth and sixth convolutional blocks significantly enhanced the network's representatial capacity, capturing more complex textual features and patterns.
+
+196
+00:29:41,692 --> 00:29:49,692
+Initially implemented with standard convolutions, ES2 blocks increased the accuracy to the 0.25.
+
+197
+00:29:51,220 --> 00:30:03,220
+Upon replacing them with Dabfly's separable computations, we observed a further gain in accuracy up to 0.5, while also reducing the model's parameter count and inference latency.
+
+198
+00:30:03,220 --> 00:30:18,220
+It validates the architectural decision to use separable computations in later layers, enabling both performance enhancement and computational efficiency, particularly suited for edge deployment on Raspberry Pi platforms.
+
+199
+00:30:19,635 --> 00:30:26,075
+Initially implemented with standard convolations, these two blocks increased the accuracy to GDX100.
+
+200
+00:30:26,075 --> 00:30:35,596
+Upon replacing them with dev-wise separable convolations, we observed a further gain in accuracy up to GDX100,
+
+201
+00:30:35,596 --> 00:30:39,835
+while also reducing the modus parameter count and inference latency.
+
+202
+00:30:39,835 --> 00:30:46,555
+This validates the architectural decision to use separable convolations in later layers, enabling both
+
+203
+00:30:46,740 --> 00:30:53,740
+ve
+
+204
+00:30:58,291 --> 00:31:05,211
+Block 5-6, Block 5-6-3 Spreable Convolution'lar için farklı farklı deneyler yapmış.
+
+205
+00:31:05,951 --> 00:31:13,831
+Evet, Table 11'e bakalım dediğim gibi. Tekrar. Tamam, ekranı değiştirmeci bakalım.
+
+206
+00:31:19,188 --> 00:31:35,188
+Her bir bloğu ekledikçe performans artışını sanki koymuş oluyor değil mi? CNN Block 1.4 olması olmaz. CNN demiş orada sağ olunca.
+
+207
+00:31:36,188 --> 00:31:41,188
+Baştaki block. Sonra block 5'e ekleyince 0.92-0.93'e çıkmış.
+
+208
+00:31:42,612 --> 00:31:50,052
+Altıya ekleyince sanki 0.94.3, SeparaVol Convolution'a geçince 0.95.3 gibi
+
+209
+00:31:50,052 --> 00:31:58,932
+eldeciğe, yeni katmanın şeyine, katkısına böylece göstermiş.
+
+210
+00:31:58,932 --> 00:32:01,932
+Peki.
+
+211
+00:32:01,932 --> 00:32:07,724
+Bu...
+
+212
+00:32:07,731 --> 00:32:31,012
+Çalışma gösteri ki OCR net çalışması, yani CNN ve Guru Deep Learning'in beraber hibrit çalışması, %95 akürisiyle ve %96 F1 skoruyla başarılı bir sonuç çıkartmış ve görme engelli vatandaşlar için hızlı, dinamik hayat şartları için yeterli bir ürün ortaya koymuş.
+
+213
+00:32:34,195 --> 00:32:36,996
+Buradan da dataset'lerimize bakabiliriz.
+
+214
+00:32:50,291 --> 00:32:53,111
+Her bir font için ayrı ayrı şeyler denemiş.
+
+215
+00:33:11,827 --> 00:33:30,268
+Mesela burada sıfır rakamı için 1374 tane değer bulmuş. Datasetlerde değer eklemiş. Bu şekilde hocam. Beni dinlediğiniz için teşekkür ederim.
+
+216
+00:33:33,683 --> 00:33:37,263
+Yazarlı Öniversiteden hangi ülkeden?
+
+217
+00:33:37,263 --> 00:33:39,323
+Hemen göstereyim.
+
+218
+00:34:00,276 --> 00:34:02,276
+Hangi ülkeden oldukları aşağıda yazar mı acaba?
+
+219
+00:34:03,155 --> 00:34:09,655
+Yazar sayfamın. O sayfada yazar muhtemelen direkt. Birinci sayfanın altında yazar.
+
+220
+00:34:14,708 --> 00:34:19,708
+Department of Asia, Amnesty School of Engineering, India.
+
+221
+00:34:19,708 --> 00:34:29,708
+Ya da. Öteki de King's Heart University, Shruda Arabistan.
+
+222
+00:34:34,164 --> 00:34:36,164
+Teknik'in yanına.
+
+223
+00:34:38,164 --> 00:34:42,164
+Teşekkür ediyorum [öğrenci] de.
+
+224
+00:34:42,164 --> 00:34:43,164
+Teşekkür ederim hocam.
+
+225
+00:34:43,164 --> 00:34:47,164
+Güzelce bir çalışmaydı esasen.
+
+226
+00:34:47,164 --> 00:34:54,164
+İyi bir yerde sanki yayınlanmış gibi, ne çöz diye tam emin değilim ama.
+
+227
+00:34:54,164 --> 00:34:57,164
+Evet, 2025'te yayınlanmış hocam.
+
+228
+00:34:57,164 --> 00:34:59,628
+Evet. Şey olarak hani...
+
+229
+00:34:59,891 --> 00:35:09,211
+Yeni bir, çok büyük bir model değil ama Raspberry Pi'de çalışabilmesi değerli kılmış onu. Neden?
+
+230
+00:35:12,451 --> 00:35:18,051
+Körler için basit makineler üzerinde çalışabiliyor.
+
+231
+00:35:18,531 --> 00:35:19,531
+Değil mi?
+
+232
+00:35:19,531 --> 00:35:20,251
+Evet.
+
+233
+00:35:20,251 --> 00:35:23,652
+Görme engeller için.
+
+234
+00:35:26,143 --> 00:35:28,443
+Bu da tabi değerli kılığı.
+
+235
+00:35:30,503 --> 00:35:37,663
+Direkt bir Raspberry Pi, bir kamera birleştirilip bir cel sahne getirilebilir.
+
+236
+00:35:39,463 --> 00:35:44,583
+Ondan sonra görme engelli kişi normal kitapları okuyabilir.
+
+237
+00:35:44,583 --> 00:35:52,763
+Veya yolda gezerken bir yardımcı köpek gibi, değil mi?
+
+238
+00:35:53,076 --> 00:35:57,076
+Tabelaları okuyabilir.
+
+239
+00:35:57,076 --> 00:35:59,076
+Trafik levhalarını yorumlayabilir.
+
+240
+00:35:59,076 --> 00:36:01,076
+Evet.
+
+241
+00:36:01,076 --> 00:36:05,076
+Işıklara tutsa mesela kırmızı ışık diyip durmasını söyleyebilir sistem.
+
+242
+00:36:05,076 --> 00:36:16,076
+Aslında o yok burada ama aslında onun da olması. Daha bunun bir tık ilerisi çevreyi algılayıp onu anlatması gerekiyor değil mi?
+
+243
+00:36:16,076 --> 00:36:17,076
+Evet.
+
+244
+00:36:17,076 --> 00:36:18,956
+Yani yanında bir köpek...
+
+245
+00:36:19,731 --> 00:36:38,731
+Bir asistan olup kulağının dibinde, 5 metre sonra ana yola çıkıyoruz. Dediğim gibi kırmızı ışık yanıyor şu anda.
+
+246
+00:36:46,324 --> 00:37:12,003
+Merdiven aşağı indi, yukarı çıkan merdiven veya bir asansör var önümüzde. İki düğmesi var. Elini biraz yukarıya götür, basabilirsin falan filan. Yani şimdi düşününce aslında orada görme üzüldü vatandaşlar için.
+
+247
+00:37:12,788 --> 00:37:20,007
+İnsanlar için birçok yarar verici şey aslında uygulama var orada.
+
+248
+00:37:21,108 --> 00:37:26,568
+Mesela metro çıkışlarında hocam, 1-2-3 diye numaralar ve altında durak isimleri yazıyor.
+
+249
+00:37:27,327 --> 00:37:32,407
+Mesela ona göre çıkışı tarif edebilecek bir algoritma yapılabilir.
+
+250
+00:37:32,528 --> 00:37:36,248
+Doğru çıkış veya hangi çıkış nereye götürür?
+
+251
+00:37:36,980 --> 00:37:56,980
+Bu şey olarak da değerli okul yazı ağırlık önemli değiliz dünyasında. Her yerde o işaretler, yazılar onların mobilitesini artırıyor. Genelde geçme imkanlarını artırıyor.
+
+252
+00:37:56,980 --> 00:37:57,980
+Evet.
+
+253
+00:37:59,980 --> 00:38:01,980
+Güzel bir çalışma.
+
+254
+00:38:03,219 --> 00:38:13,979
+Bize de uyan bir çalışma aslında. Sonuçta şey olarak bu tür bir çalışmayı yapmak için çok büyük bir donanıma ihtiyaç olduğunu düşünmüyorum.
+
+255
+00:38:13,979 --> 00:38:28,460
+Sonuçta küçük bir, hedef zaten küçük bir donanımda çalışması olacağı için küçük bir donanım üzerinde test edilebilir, geliştirilmezler gibi bir şey yok.
+
+256
+00:38:28,724 --> 00:38:36,324
+Yani çıkıp da GPT'nin bir sonraki versiyonunu geliştireceğim gibi bir donanım ihtiyacı yok yani.
+
+257
+00:38:38,003 --> 00:38:42,824
+Veya işte en büyük görsel...
+
+258
+00:38:42,824 --> 00:38:43,764
+Yatımına ihtiyaç yok.
+
+259
+00:38:44,824 --> 00:38:45,184
+Efendim?
+
+260
+00:38:45,963 --> 00:38:50,384
+Çok büyük yatırımlar gerektirmeden başarılı bir sonuç elde edilebilecek bir proje.
+
+261
+00:38:51,104 --> 00:38:51,724
+Evet, evet.
+
+262
+00:38:52,524 --> 00:38:54,123
+Ondan da bir sürü ben de.
+
+263
+00:38:54,739 --> 00:39:03,840
+Evet, güzel bir teypist tutmuşsunuz. Teşekkür ediyorum.
+
+264
+00:39:04,359 --> 00:39:05,380
+Ben teşekkür ediyorum hocam.
+
+265
+00:39:07,979 --> 00:39:09,500
+İsminiz neydi?
+
+266
+00:39:10,380 --> 00:39:15,899
+[öğrenci].
+
+267
+00:39:17,340 --> 00:39:18,840
+Peki.
+
+268
+00:39:19,699 --> 00:39:24,299
+Başka anlatacağımız, konuşacağımız bir şey var mı arkadaşlar?
+
+269
+00:39:39,188 --> 00:40:00,208
+Teşekkür ediyorum. O zaman dersi bitirdik. Her şeyi işledik. Hedefimizde olan anlatılmasını istediğimiz her şeyi anlattık, dinledik. Bir iki tane bazladan paper da dinlemiş olduk. Teşekkür ediyoruz arkadaşlara.
+
+270
+00:40:01,876 --> 00:40:10,876
+Finallerimiz yine şey olacak. Anlatma biçiminde yaptığımız projelerin demo edeceksiniz. Sunumlarını yapacaksınız.
+
+271
+00:40:10,876 --> 00:40:16,876
+Paperlarını da basılı bir şekilde getireceksiniz.
+
+272
+00:40:16,876 --> 00:40:27,876
+Finaliniz olmuş olacak. Hem sunum hem getirdiğiniz paper. Aynı zamanda paperi yıkılacaksınız da sanırım. Ödevini ayarladım diye hatırlıyorum.
+
+273
+00:40:32,211 --> 00:40:49,591
+Bir bakayım. Ben son proje raporu diye bir ödev koymuşum. Oraya yükleyeceksiniz. Hem de getireceksiniz. Böyle biraz daha uygulamalı bir dönem geçirmiş olduk.
+
+274
+00:40:52,591 --> 00:40:56,331
+Görüşürüz diyelim. Konuşacağımız bir şey yoksa kapatıyorum arkadaşlar.
+
+275
+00:41:01,268 --> 00:41:02,688
+Görüşürüz hocam. İyi günler.
+
+276
+00:41:03,807 --> 00:41:05,368
+Evet, iyi günler başarınız.

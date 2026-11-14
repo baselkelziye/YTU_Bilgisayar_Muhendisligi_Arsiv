@@ -1,0 +1,1603 @@
+1
+00:00:33,555 --> 00:00:36,375
+Arkadaşlar, merhabalar. Sesim geliyor mu?
+
+2
+00:00:39,695 --> 00:00:40,715
+Geliyor.
+
+3
+00:01:04,212 --> 00:01:06,512
+Ben sizin sesinizi duyamadım ama.
+
+4
+00:01:09,780 --> 00:01:27,120
+Sesimiz geliyor mu hocam? Ah geldi. Bugün kim anlatıyordu? Biz anlatıyoruz hocam. 17. slide. Başlayabilirsiniz. Evet ben o zaman ekranımı yayayım.
+
+5
+00:01:31,700 --> 00:01:35,400
+Görünüyor mu hocam? Evet. Tamam.
+
+6
+00:01:36,147 --> 00:02:04,147
+Evet arkadaşlar, merhaba. Bu derste robot learning konusuna biraz giriyor olacağız. Yani robotlar nasıl öğreniyor, çevreyle nasıl etkileşiyor ve zamanda nasıl daha iyi hale geliyor bunları konuşacağız. Aslında burada ana fikir çok basit. Robotlara her şeyi tek tek kodlamak yerine, önceden söylemek yerine böyle algoritmalar kurup bırakıyoruz. Aslında denesinler, yapsınlar, ne bileyim bozsunlar, kırılsınlar vesaire kendi kendilerine öğrenmelerini bilmiyoruz.
+
+7
+00:02:04,147 --> 00:02:04,987
+Bekliyoruz aslında.
+
+8
+00:02:06,260 --> 00:02:34,240
+Şimdiye kadar aslında çoğunlukla supervised learning görmüştük. Burada iş nispeten daha rahattı. Çünkü elimizde veri vardı. Bir de doğru cevap da vardı. Mesela işte bir fotoğraf veriyorduk. Bu kedimin köpek mi diye soruyorduk. Doğru cevap belliydi. Çünkü önceden verileri eğitiyorduk ve etiket veriyorduk. Modelin yaptığı tek şey de verilen girdiği doğru etiketi eşlemeyi öğrenmek oluyordu. Yani yanlış yaparsa da düzeltiyorduk. Doğru yaparsa da tamamdı bizim için. Bir çıktı var.
+
+9
+00:02:34,259 --> 00:02:38,659
+Bunun için sınıflandırma, reglasyon gibi işler hep bu gruptaydı.
+
+10
+00:02:39,699 --> 00:03:06,219
+Bir de Self-Pervise Learning vardı. Burada iş biraz daha farklıydı. Bu sefer etiket yoktu. Sadece veri var. Model veriye bakıyor ve kendi kendine bir yapı çıkarmaya çalışıyordu. Mesela beni sıkıştırıyor, geri açıyor ya da eksik kısmını tahmin ediyor gibi işlemler yapıyordu. Ama hala önemli bir şey yoktu. Çünkü ortada yine bir çevreyle, gerçek dünyayla bir etkileşim yok. Modelin dünyada bir karşılığı yok. Sadece verilen veriye bakıyor.
+
+11
+00:03:07,699 --> 00:03:16,979
+Bugün ama geldiğimiz noktada artık robot örnek diye bir gerçek konuşuyoruz. Burada işin içine ajan olarak adlandırdığımız bir robot giriyor.
+
+12
+00:03:19,475 --> 00:03:47,396
+Bir de çevre devreye giriyor. Yani robot çevrenin içinde hareket ediyor, bir şey yapıyor. Yani artık robotun bir gerçek dünyada varlığı var. Karşılığı var ve yaptığı şeyin gerçek dünyada bir değişime sebep ortada oluyor. Burada amaç da şu aslında robotun amacı, ajanın amacı. Zamanla daha iyi kararlar almayı öğrenmek. Yani robot her seferinde biraz daha az saçmalısın diye uğraşıyoruz diyebiliriz.
+
+13
+00:03:47,475 --> 00:03:52,236
+Burada doğru ya da yanlış yok. Daha iyi ve daha kötü var aslında.
+
+14
+00:03:53,620 --> 00:04:21,620
+Burada robot örneklerini görüyoruz. Gerçek robot örnekleri. Mesela robotlar masada bir şey içiyor, yürüyor, net ne taşıyor. Ama burada önemli nokta şu, bunlar önceden yazılmış hareketler değil. Yani robot da işte şuradan, buradan kaldır, şu noktaya git, işte pozisyon, konu falan verelim. Bu tarz şeyler yok. Robot burada deneye deneye aslında neyin işe yaradığını örneği. Atıyorum sağ gidiyor, oraya uzanıyor, orada bir şey var tutuyor. Bu sefer tamam diyor ben oraya gittiğim zaman.
+
+15
+00:04:21,620 --> 00:04:47,620
+Burada bir şey var. Buradan bir öğrenme yapıyor aslında deneyerek. Robot Learning'in şu anda gerçekten çok hızlı büyüyen bir alan olduğunu görüyoruz burada. Çünkü büyük şirketlerin çok ciddi yatırımlar yaptığını, çok ciddi paraların döndüğünü görüyoruz. Burada sebep de açık. Çünkü öğrenilen robotlar aslında sadece fabrikada değil, bugün bizim evimizde, hastalığında, sokakta, her yerde kullanılabilir durumda oluyor. Dolayısıyla sektör...
+
+16
+00:04:48,851 --> 00:04:50,851
+Bu da büyüyor.
+
+17
+00:04:50,851 --> 00:05:02,851
+Bunun dışında grupları var. Toyota, Meta, Google, Nvidia gibi firmaların hepsi de aslında robot learning'in üzerine çalıştığını görüyoruz.
+
+18
+00:05:02,851 --> 00:05:08,851
+Çünkü bu iş sadece akademik bir yerde değil. Artık gerçekten gerçek dünyada bir karşılığı var.
+
+19
+00:05:11,668 --> 00:05:28,867
+Burada dersin yola dışına görmüyoruz. Önce problemi nasıl anlıyoruz, ona bakıyoruz. Sonra robot dünyayı nasıl anlıyor, onu konuşuyor olacağız. Ardından da RL, yani reinforcement learning'e geçiyor olacağız. En sonunda da hala çözülen sorunlar neler, nerede istihdamı, onlara bakıyoruz.
+
+20
+00:05:33,363 --> 00:05:55,103
+Problemi tanımlayalım. Bir robot növünlükte, çünkü ilk işimiz aslında problemi tanımlayabiliyor olmak. Bir hedef var, bir de robot var, bir de çiziksel dünya var aslında. Robot bir hareket yapıyor ve dünya buna tepki ediyor. Robot da bir geri bildirim alıyor. Bu dönüşü iddia sana devam ediyor. Aslında bütün hikaye şu dönüşünün etrafında var.
+
+21
+00:05:56,403 --> 00:06:16,303
+Mesela burada çok klasik bir örnek var. Olay bir çubuğu dengele tutmaya çalışan bir sistem. Robot çubuğun açısının hızını görüyor. Ona göre sağa veya sola itiyor. Çubuk düşmezse ödül alıyor. Düşakta da ceza alıyor. Aslında robot da deneye deneye deneye dengeyi öğreniyor diyebiliriz.
+
+22
+00:06:17,139 --> 00:06:38,120
+Burada da robotun yürümesini örneği var. Robot eklemlerinin açılarını ve hızlarını biliyor state olarak. Motor olarak kuvvet uyguluyor. Amaç basit. Dengede kal ve ileri git. El düşmeden konumunu değiştir. Ama bunu kimse robotun kafasından tabi ezberletmiyor. Aldırtmak olarak da yazdırıyor. Robot o yüzden lömeyi düşe kalkıyor. Yani bu çocuk gibi.
+
+23
+00:06:39,124 --> 00:06:56,964
+Burada da bir çok klasik ve aslında robotlar anlatıcıya yeri çok büyük olan Atara oyunları örneği var. Burada robot oyun oynuyor ama burada hani ekrandaki piksellere bakıyor ve hümeti terk ettiriyor sadece. Onun için buradaki hiçbir şeyin aslında bir anlamı yok. Onun için her şey pikselden ibaret.
+
+24
+00:06:57,363 --> 00:07:08,783
+Oyun kurallarını bilmiyor, düşünen kim, bu silah, bunlar ne, bunun adı hiçbir fikir yok. Sadece biliniyor aslında. Yaptığı hareketin piksel iki karşılıklarına göre bir öğrenme yapmaya çalışıyor.
+
+25
+00:07:10,355 --> 00:07:25,715
+Burada Go oyunu var. Go oyunu diğerlerine göre gerçekten çok zor bir oyun robot için. Çünkü bütün taşların konumunu görüyor. Tamam, konum bilgisayar. Nereye taş koyacağını da seçiyor ve en sonunda kazanıp kazanmadığına göre ödül alıyor.
+
+26
+00:07:25,715 --> 00:07:36,035
+Ama burada olay tek sonrası değil. Robot'un uzun vadeli stratejiyi görmekte bir oyun ve oyun önünde aslında bir kazanma durumunu oluyor.
+
+27
+00:07:37,812 --> 00:07:57,391
+Burada da bir tür üretme örneği var. Model mevcut kelimelere bakıyor ve sözlük kelimeyi tahmin ediyor. Doğru tahmin ederse ödül alıyor. Aslında bu da bir karar verme problemi. Aslında baktığımızda sadece gerçek dünyadaki hareket eylemleri değildi.
+
+28
+00:07:58,004 --> 00:08:17,004
+Bu tarz kelime üretme, metin üretme, dönüşme, chatbotlar gibi alanda da aslında robotlarının aktif. Çünkü kelime seçmek de aslında bir aksiyon robot için. Mesela işte chatbotlar. Burada da chatbot'u...
+
+29
+00:08:17,908 --> 00:08:31,127
+Örneğin de robotun amacı iyi bir sahbet arkadaşı olmak aslında. Konuşmanın şu anki haline bakıyor. Bir sonraki örneği seçiyor. Aslında burada onun bildiği durum şu anki anlık konuşma, anlık bağlı.
+
+30
+00:08:32,179 --> 00:08:46,519
+Ve cevap veriyor. İnsan memnun kalırsa ödül alıyor. Kalması da almıyor. Burada doğru cevap yok. Sadece daha iyi cevaplar var. Ve aldığı ödüllere veya celalara göre de kendi cevap bağlarını güncelleyerek öğrenmeye çalışıyor.
+
+31
+00:08:48,788 --> 00:09:10,508
+Beş katlayan robot örneği var burada da. Burada ne yapayım görüntüye bakıyor. Yani sensörü var. Görüntü alabiliyor bu sensörden. Buna bakıyor, bunu hareket ettiriyor. İnsan o katlanmış bizi beğenirse ödül var. Beğenmezse yok. Yani robot bu sefer robotunu öğretme insanın kendisi oluyor. O karar veriyor.
+
+32
+00:09:16,083 --> 00:09:44,063
+Eğer bir toparlayacak olursak, bu nokta problem tanımı ve robot algısı planlarını artık birazcık daha kapatmış oluyorum. Artık bazen robotun dünyayı nasıl gördüğünü ve biz bu işi nasıl çerçeve oturuyoruz. Demiştik ya şurada, amaç var, amaç dışarıdan geliyor. Evet ama state'i robot kendi sensörlerinden algıyarak oluşturuyor ve bunu aksiyon alıyor. Peki bu state, yani tamam veriler var ama verileri birleştirip nasıl?
+
+33
+00:09:44,083 --> 00:09:51,083
+Aslında artık robot percepçionda biraz daha buraya değinmeye olacağız.
+
+34
+00:09:51,083 --> 00:10:00,083
+Robot percepçion dediğimiz şey, robotun dünyayı nasıl algıladığı, yani kamera, lider, dokunma gibi bilgiler var.
+
+35
+00:10:00,083 --> 00:10:04,083
+İnsanın beş kilo organı var. Robotun da farklı farklı sensörleri var.
+
+36
+00:10:04,083 --> 00:10:11,083
+Robot da bütün bunlarda tabi içerisinde kendi kafasında bir durum ortaya çıkarıyor diyebiliriz.
+
+37
+00:10:12,148 --> 00:10:40,067
+Mesela bu resmi bakalım. Bu resimde bir bebek var. Her şey onun için çok yeni. Etrafında bir sürü farklı mesne var. İşte ne bileyim, kitap var, oyuncak var, hayvanlar var. Ama belki de bunların hepsi kitap var. Onun gözünde bir oyuncak veya başka bir şey. Bunu bilemiyoruz ama genelden bir şey için ortalık çok karışık. Aslında robotlar da bu şekilde. Çünkü robot için gerçek dünya düzenli. Burada mesneler net değil.
+
+38
+00:10:40,148 --> 00:10:47,148
+Neymi olduğu belli. Ortam sürekli değişiyor. İçeri biri girebilir, çıkabilir, yer değiştirebilir. İnsanlar hareket ediyor.
+
+39
+00:10:47,148 --> 00:10:54,148
+O yüzden robotun algısı da hiçbir zaman %100 doğru olmuyor. Hep bir belirsizlik var. Bir sonraki hamle, hep farklı olabilir.
+
+40
+00:10:55,148 --> 00:11:02,148
+Robotlar da görmek diyoruz ama görmekten kalınca sadece kamera değil. Çünkü robotlar için sadece kamera yok.
+
+41
+00:11:02,148 --> 00:11:07,968
+Nasıl insanın beş duyuyor olduğunu var. Robotlar da farklı farklı sensörler var.
+
+42
+00:11:07,967 --> 00:11:20,027
+Kuvvet sensörü gibi birçok sensörü dünyaya anlamlandırmaya çalışıyor. Olay aslında robotun bu birden fazla sensörden aldığı farklı farklı bir yerleri birleştirip anlamlandırması.
+
+43
+00:11:27,668 --> 00:11:53,687
+Önemli ve farklı bir robot vizyonu yapıyoruz. Bilgisayarla görmediği sistem sadece resme bakıyor. Robot vizyondaysa, robot hareket ediyor, ne bileyim, düşüyor, dokunuyor. Yani bir aksiyon var, bir hareket var, bir şeyler yapıyor ve bu işler yapmasıyla bir şeyler önelemiyor. Yani algı ve hareket birbirinden tamamen bağımsız değil. Robotun gerçek dünyada bir karşılığı var, bir varlığı var, bir müddeti var.
+
+44
+00:11:54,292 --> 00:12:00,772
+Ve duruma bağlı çevresel faktörler ve kendisinin hareketiyle çevrede bir değişim var.
+
+45
+00:12:03,032 --> 00:12:08,032
+Şimdi bu terimlere birazcık daha girelim. Bu terimler robotların için çok kritik.
+
+46
+00:12:08,980 --> 00:12:36,980
+Robotlar bizim öfümüzde gibi aslında düz bir çizgide çalışmıyor. Yani işte bir bakayım, sonra bir iş yapayım, sonra da bitsin gibi böyle sırayla algoritmik değil. Robot bir bakıyor, bir hareket ediyor. Ne bileyim o hareket de ortam değişiyor. Ortam değiştiğinde mecburen tekrar bakmak zorunda kalıyor gibi aslında bir sürü birbirini etkilen, o ala sesilesi var. Aslında hep bir döngü var ve döngü hep aynı yani. Önce çevreye ise görmüyor, sensörlerden algılıyor. Gördüğüne göre de bir fenle yapıyor.
+
+47
+00:12:36,980 --> 00:12:46,980
+Ama o örneği ortamı değiştirdiği için robot bir sonraki görüntüyü etkilemiş oluyor.
+
+48
+00:12:46,980 --> 00:12:57,980
+Mesela bir drone örneğinden bahsedelim. Drone engeli görünce yön değiştiriyor. Ama yön değiştirince bu sefer gördüğü manzara da değişiyor.
+
+49
+00:12:57,980 --> 00:13:02,980
+İşte robot kolu bir nesneyi daha iyi görmek için konuları değişiyor ama işte...
+
+50
+00:13:04,115 --> 00:13:19,115
+Kulluğunu oynatınca ortama değişiyor. Belki bir şeye çarpıyor, düşürüyor. O yüzden bir değişiklik var. Kısacası yani o bak dünyayı sadece izleyen bir şey değil. Yaptığı hareketler, dünyayı ve kendisini de kendi gördüğü şeyi de sürekli değiştirebiliyor.
+
+51
+00:13:21,115 --> 00:13:25,115
+Burada işte az önce örneklerde de söylediğim gibi işte drone var.
+
+52
+00:13:26,272 --> 00:13:31,732
+Robot kolay hareket ediyor. Yaptığı her şey bir sonraki etkilemiş oluyor.
+
+53
+00:13:31,852 --> 00:13:34,812
+Şimdi o üç örneğin tabi biz anlamda.
+
+54
+00:13:36,403 --> 00:13:57,744
+Aksiyon ve değişen perspektiflerini inceleyeceğiz burada. Mesela burada mavi ile algıyı, tüm zilede hareket ediyoruz. Robot önce bakıyor, sonra bir hamle yapıyor. Ama hamleyi yapınca gördüğü şey de otomatik olarak değişiyor. Yani işinin şu, robot görüyor, hareket ediyor, sonra tekrar bakmak zorunda oluyor.
+
+55
+00:13:58,663 --> 00:14:03,124
+Dediğim gibi, römeri geri görüp yön değiştiriyor. Ama yön değiştirince kameranın açısı da değişiyor.
+
+56
+00:14:03,443 --> 00:14:09,203
+Ve bu yüzden sürekli sürekli bir döngünün içerisinde oluşmuş oluyor.
+
+57
+00:14:09,203 --> 00:14:16,644
+Aslında bu görme hareket döngüsünü düzgün kapatabilmek.
+
+58
+00:14:16,644 --> 00:14:20,644
+Robot gördüğüne göre yaptığı hareket mantıklı olacak.
+
+59
+00:14:20,644 --> 00:14:24,323
+Yaptığı hareket de bir sonraki görmesini gerçekten daha iyi hale getirecek.
+
+60
+00:14:24,323 --> 00:14:29,283
+Tam bu koşullara sağlaması gerekiyor aslında robotun.
+
+61
+00:14:30,836 --> 00:14:36,495
+Neye kadar hiç bir şey yaptık? Öyle problemi nasıl kurduğumuzu görürdük. Sonra da robotun dünyayı nasıl haklıdık?
+
+62
+00:14:36,495 --> 00:14:42,875
+Şimdi aslında kritik soruya geleceğiz aslında. Robot bu gördüklerine bakıp nasıl kaliteli?
+
+63
+00:14:43,035 --> 00:14:46,375
+Yani evet tamam, state'i oluşturduk ama state'i action'a nasıl örtüyor?
+
+64
+00:14:46,915 --> 00:14:49,795
+İşte tam bu noktada da aslında alem deneye giriyor.
+
+65
+00:14:50,235 --> 00:14:58,836
+Enfaslık learning robotu çevrenin içine bırakıyor ve deneyden o, yani neyin işe yaradığını öğrenmesini sağlayacak.
+
+66
+00:14:58,836 --> 00:15:13,836
+Burada tabi doğru cevap değil. Bir şey yok. Sadece daha iyi sonuçlar ya da daha kötü sonuçlar. Robot önce içinde bulunduğu durumu görüyor. Bu onun o an dinliyorum.
+
+67
+00:15:14,292 --> 00:15:23,932
+Sonra buna bakıp bir hareket çekiyor. Ardından bak, çevre robotun yaptığına göre bir geri bildirim veriyor. Yani robotun yaptığından sonra çevrede bir kartı oluyor.
+
+68
+00:15:23,932 --> 00:15:35,332
+Atıyorum bir nesne var, nesneye kolunu uzattı, bir aksiyon yaptı. Belki de nesneyi çarptı ve nesneye düştü. Veya nesne kolun eline geldi ve havaya kalktı gibi bir geri bildirimi oluyor.
+
+69
+00:15:35,892 --> 00:15:37,932
+Mesela sonra tekrar o geri bildirimine...
+
+70
+00:15:41,587 --> 00:15:47,867
+Yani ben de neyliğin şeyin öğrenmesini sağlıyor.
+
+71
+00:15:50,484 --> 00:16:15,504
+Sonra bunlardan tabii puan kazanıyor. Ve aslında her türünde bir puanı var. Ve aslında bir sonraki hareketinde olay yüksek puanlı hareketi seçmek oluyor. Robot dönük biraz böyle çalışıyor. Bu an maskerini birazdan daha detaylı anlatacağım ama işin özü bu. Yani robot deniyor, sonuca bakıyor ve bir sonraki sefere biraz daha iyi denemeye çalışıyor. Bir önceki sefer aldığı sonuçlara göre.
+
+72
+00:16:17,875 --> 00:16:45,816
+Burada öğrenen şey bir robot ama robot da tek başına durmuyor dediğim gibi. Sürekli bir ortamın içinde. Ortam robota diyor ki şu an durum bu. Robot da buna bakıp bir hareket yapıyor. Robot hareketi yapınca ortam değişiyor. Ortam değişiyor, robotun gördüğü durum da değişiyor. Yani robot ne yaparsa yapsın bir sonraki ne göreceği aslında kendisi belirlemiş oluyor. Ama hep de bir bilirsizlik var yani. Kısacası robot oynadıkça oyun değişiyor. Robot da oyunun içinde, oyun değiştikçe de o yüzden.
+
+73
+00:16:45,875 --> 00:16:53,916
+Tekrardan robotta öğrenmiş oluyor. Burada robot falan yok. Ortam yok. Elimizde.
+
+74
+00:16:55,412 --> 00:17:16,311
+Baştan hazırlanmış bir dosya var. Bir veri seti var. Bu veri setinden veri alıyor. Model buna bakıp bir tahmin yapıyor. Sonra dosyada yazan doğru cevapla da karşılaştırıyor. Yalnızca ceza alıyor. Doğruysa artık puan alıyor diyebiliriz. Model ne yaparsa yapsın bu dosya asla değişmiyor. Aynı verilerle dönüp dolaşıyor.
+
+75
+00:17:23,412 --> 00:17:40,291
+Bu model ne yaparsa yapsın bu dosya değişmiyor. Aynı verilerle dönüp çalışıp çalışıyor. Yani model oyunun kurallarını değiştiremiyor. Herhalde tam tersi. Az önce söylediğim gibi değişiyor yani. Bu robotun yaptığı şey modeli de değiştiriyor, veriyi de değiştiriyor, her şeyi değiştiriyor.
+
+76
+00:17:51,412 --> 00:18:00,092
+Kesin ya kedidir ya değildir. Doğru yanlış olarak değil. Ama robotların bir şeyin iyi mi kötü mü olduğunu çoğu zaman da hemen anlayamıyoruz.
+
+77
+00:18:00,092 --> 00:18:07,092
+Yani az önce oyunda verdiğim gibi oyunun sonunda aslında yaptığı hareketler başarıya ulaştığımı görüyor oluyoruz.
+
+78
+00:18:10,632 --> 00:18:15,932
+Aralde aynı şeyi iki kere yapsam bile sonuç her zaman aynı da olmuyor.
+
+79
+00:18:19,892 --> 00:18:44,632
+Mesela bir robot kolu düşünelim. Aynı hareketi yapıyor ama bazen nesneyi tutuyor, bazen elinden düşürüyor. Chatbot da aynı şekilde. Aynı cevabı veriyor ama bazen insanlar beğeniyor, bazen de beğenmiyor. Chatcipt her zaman doğru cevabı vermiyor mesela. Diyoruz ki yanlış cevap verdin, daha iyi ver diyoruz. Onu düzeltiyoruz. Çünkü gerçek dünya da sabit değil. Her şey biraz rastgele. Dünya da her seferinde aynı tepkiyi vermiyor.
+
+80
+00:18:45,971 --> 00:19:06,731
+Robotun her hareketine her zaman aynı tepki gelmiyor. Ama SpendWise Learning'de durum net. Aynı veriyi verirsek aynı hatayı alıyoruz. Yani aynı doğru şeyi yaparsak da aynı ödülü almış oluyoruz. Ama herhalde aynı hareketi yapsam bile aldığın ödül değişebiliyor.
+
+81
+00:19:07,951 --> 00:19:08,751
+Bir saniye hocam.
+
+82
+00:19:20,147 --> 00:19:23,907
+Şimdi şu soruya geliyoruz aslında.
+
+83
+00:19:27,423 --> 00:19:48,403
+Neden? Herhalde bildiğimiz egg propagation yetmiyor. Ne yapıyorduk supervised learning'te? Belli o matematiğe vardı. Değişimle türev hesabı diyeyim. Türev hesabıyla bir loss fonksiyonumuz vardı. Bu loss fonksiyonunu hatayı indirgeye indirgeye başarıya ulaşmaya çalışıyoruz. Peki herhalde neden bu bildiğimiz yöntem işe yaramıyor?
+
+84
+00:19:52,672 --> 00:20:05,652
+Kolay. Çünkü model hata yapıyor ve biz bu hatanın nedenini geriye doğru hesaplıyoruz dediğim gibi. Ve modeli düzeltiyoruz fonksiyona göre. Fonksiyonunu da düzeltmeler yapabiliyor. Çünkü bir fonksiyon var ortada yani.
+
+85
+00:20:07,731 --> 00:20:35,392
+Linear durum var diyeyim. Lineare dönüştürülebilecek durumlar var. Ama aralde arada gerçek dünya var ve gerçek dünya inanılmaz düzensiz. Gerçek dünyanın matematiksel, lineare ve lineareleştirilebilecek lineare bir formülü yok. Çünkü aslında robot hareket ediyor, dünyada tepki veriyor. Sürekli bir değişim halindeler. Dünyanın türevini de alamaydı bu yüzden. Hatta geriye doğru da hesaplayamıyorum. O yüzden aslında bu klasik backprop önercimini de doğrudan kullanamıyorum.
+
+86
+00:20:36,147 --> 00:20:43,507
+O yüzden AREN daha dolaylı, işte deneyen uz yöntemleriyle aslında çalışan bir sistem.
+
+87
+00:20:44,884 --> 00:21:02,644
+Arhalde robot öğrendikçe davranışı değişiyor. Davranışı değiştikçe de karşılaştığın yıllar da değişiyor. Yani gördüğü şey hep aylık kalmıyor. Robot farklı hareketler yapmaya başladıkça bu sefer ortamın verdiği geri tepkiler de farklı oluyor.
+
+88
+00:21:02,644 --> 00:21:12,364
+Ve doğru hareketler yapmaya başladıkça daha iyi bir öğrenme oluyor. Çünkü bu sefer ortamdan aldığı bilgi başarı yönünde olmuş oluyor ama sual bazı örneğinde böyle bir durum yok.
+
+89
+00:21:12,884 --> 00:21:18,483
+Baştan belli. Baştan işte her şey etikette belli. Eğitim boyunca da hiç değişmiyor.
+
+90
+00:21:18,923 --> 00:21:23,963
+Ama herhalde veri hazır gelmiyor. Robot ne yaparsa veri de ona göre oluşuyor, değişiyor.
+
+91
+00:21:26,044 --> 00:21:32,584
+Kısacası süpervizyon üniversite veri sabit. Herhalde veri robotun kendi yaptıklarının sonucu aslında.
+
+92
+00:21:32,584 --> 00:21:40,203
+Yani burada ajan bir hareket yaptı. Çevre etkiledi. Çevre değişti. Çevreden bir durum çıktı. Ajan aldı gibi bir döngü var yine.
+
+93
+00:21:42,644 --> 00:22:07,824
+Bu örnek önemli çünkü bilgisayara oyunla ilgili özel bir bilgi verilmiyor aslında. Oyunlar farklı. Yani bir sürü Atari oyunu var. Oyunlar farklı. Kurallar önceden kodlanmıyor. Ve modele verilen tek şey ekrandaki pikseller. Başta da söylemiştim. Sadece pikseller var ve hareket yapabiliyor. Aynı algoritmayla farklı oyunlar oynayabiliyor ama ama çok basit zaten. En yüksek skor alma. Robot ekrana bakıyor. Ne bileyim gelişini öyle.
+
+94
+00:22:08,256 --> 00:22:11,955
+Tamamen anlamsız, sağa sola git ya da ateş et gibi basit hareketler yapıyor.
+
+95
+00:22:12,627 --> 00:22:40,627
+Skor artarsa, düşerse kötü. Robot oyun kurallarını bilmiyor. Ne bileyim top ne, raket ne, bunlar nerede? Bunun için hiçbir önemi yok onda. Sadece piksellere bakıyor. Belli rastgele hareketler yapıyor. Sonra o rastgele hareketlerin belli başlı puan karşılıkları var. Ve o rastgele hareketin puan karşılığı büyükse o hareket artık rastgelelikten çıkıyor. Onun için bir anlamlı hareket haline geliyor. Bir başarılı hareket haline geliyor. Bu sefer aslında öğrenmiş oluyor ve bir sonraki hamlesin...
+
+96
+00:22:40,627 --> 00:22:47,847
+O hareketten yüksek puan aldığını bilerek bir sonu kendisinde yapmış oluyor.
+
+97
+00:22:47,948 --> 00:22:50,488
+Aslında öğrenme süreci biraz böyle gerçekleşiyor.
+
+98
+00:22:50,548 --> 00:22:54,567
+Biraz karışık ama ben en azından kafamda bu şekilde oturttum.
+
+99
+00:22:55,923 --> 00:23:09,923
+Tek bir kare oyunda tabii ne olduğunu anlamaya da yetmiyor. Çünkü hareket tek bir fotoğraftan anlaşılmaz. Aslında video gibi akışı olan fotoğrafların yan yana dizildiği olaylar gerekiyor. Bu yüzden şöyle şeyler...
+
+100
+00:23:10,996 --> 00:23:25,716
+Bir şey yapılıyor. Çünkü topun değişimini görmek istiyorlar. Bilmere gidiyor, hızlanıyor, yavaşlıyor. Bunları görmek için de tek ölçü değil de arda arda gelen son dört kareyi alıyorlar. Model bu karelere bakarak ekranda neyin ne olduğunu, nelerin hareket ettiğini ve işte
+
+101
+00:23:26,291 --> 00:23:41,991
+Birbirleri nasıl işçi kurduklarını öğreniyor. Ama tabii biz bunu tek tek tanımlamıyoruz. Model kendi kendine çıkarıyor bunu. An sonunda da her yapılabilecek hareket için bir sayı çıkartıyor. Dediğim gibi az önce bu sayılar bu hareketi yaparsam ileride bana ne kadar kazanç sağlar sorusunun cevabı.
+
+102
+00:23:53,811 --> 00:24:07,811
+Modellini kurup kendi karanavir üyübekçisini aynı anda yaptığını gözlemliyoruz. Burada bir video var. Neyse şu an şey yapamayacağım. Bu videoyu anlatayım. Aslında Atari oyununu oynadığını görüyoruz.
+
+103
+00:24:10,483 --> 00:24:23,483
+Bilgisayar oyunda. Ajan diyeyim, kurulan model diyeyim. Model oyunu oynarken her karede aynı döngüsü tekrar ediyor. Önce ekrana bakıyor. Sonra yapabileceği her hareket için bir değer hesaplıyor. Bu değerlerde o hareket yaparsa...
+
+104
+00:24:23,483 --> 00:24:28,263
+Youtube'dan link var. Youtube'dan açıp seyrettiremiyor musun?
+
+105
+00:24:28,903 --> 00:24:32,463
+Açacağım ama acaba PDF'i yaydım ya gözüküyor mu hocam şu an?
+
+106
+00:24:35,844 --> 00:24:37,943
+Şeyi paylaşman gerekir.
+
+107
+00:24:38,367 --> 00:24:49,667
+Bir saniye, YouTube'u paylaşayım. YouTube'un olduğu tabu paylaşmayayım. Şu an oluyor mu hocam? Geldi, evet. Açayım bir yandan.
+
+108
+00:24:53,299 --> 00:24:55,519
+Bence bir dakikalık bir şekil.
+
+109
+00:24:55,879 --> 00:25:06,399
+Aynen. Burada modelin oyunu oynarken aslında sürekli aslında belli başlı hareketleri sürekli gelişimine tekrarladığını görüyoruz.
+
+110
+00:25:07,079 --> 00:25:12,939
+Bakıyor, yapacağı hareketi seçiyor. Derler işte dediğim gibi her hareketin belli bir puan karşılığı var.
+
+111
+00:25:12,939 --> 00:25:19,939
+Ve puana göre en iyi görünen hareketi seçiyor. 120 dakika eğitimden sonra artık...
+
+112
+00:25:20,564 --> 00:25:34,344
+Puanlar oluştu, skorlar oluştu. Hangi hareketinin neye mal olacağını öğrendi. Tabii 120 dakika bu arada yani az da değil aslında. Ve artık sürekli olarak görme ve hareket etme dönüşü çalışıyor oldu.
+
+113
+00:25:45,683 --> 00:25:48,443
+Profesyonel, belki insanın yapamayacağı hızlı yapıyor.
+
+114
+00:25:55,796 --> 00:26:12,696
+Duvardan deli kaçmanın daha faydalı olacağını keşfediyor. Öğrenmiş aldık. 240 dakika. 240 dakika çok gelmiyor bana. İleride 10 bin reportlar falan gördüm. Bir de bu basit bir oyun gider.
+
+115
+00:26:12,696 --> 00:26:22,936
+[öğrenci], sesini çok şey alıyorum ya. Nasıl anlatsam ki böyle. Boğuk, dalgalı dalgalı falan. Bazen gidiyor, bazen gelmiyor.
+
+116
+00:26:23,571 --> 00:26:25,191
+Biraz yaklaşmış bari.
+
+117
+00:26:25,811 --> 00:26:27,571
+Tamam hocam. Şu an biraz daha iyi mi?
+
+118
+00:26:28,071 --> 00:26:28,351
+İyi.
+
+119
+00:26:28,351 --> 00:26:33,351
+Tamam. Böyle ilerleyeyim. Ekranımı...
+
+120
+00:26:34,191 --> 00:26:43,351
+Hocam, iki yüz kırk dakika ama bu bir oyun yani. Gerçek dünyada aslında simülasyon...
+
+121
+00:26:44,192 --> 00:27:12,192
+Hatta yapınca da oyun sıfırlamakta bir maliyeti yok. Oyun kontrolü böyle ama gerçek dünyada işler böyle yürümüyor. Oyun için böyle bir zaman var ama gerçek dünyada hatalar daha pahalı. Ne bileyim zaman alıyor. Bazen de geri dönüşü olmuyor. Robot kırılabilir falan filan. Ama yine de bu hatalı çalışmaları robot görmek için çok önemli bir dönem noktası olmuş. Çünkü algıdan karara kadar...
+
+122
+00:27:12,192 --> 00:27:15,172
+Sözünürlükte öğrenebileceğini gösteriyor aslında burada robot vernik.
+
+123
+00:27:15,531 --> 00:27:18,132
+Ama tabii bu hala işin başlangıcı oluyor.
+
+124
+00:27:18,711 --> 00:27:21,112
+Asıl zor kısımda gerçek dünyada başlıyor.
+
+125
+00:27:21,872 --> 00:27:23,451
+Mesela burada da şunu görüyoruz.
+
+126
+00:27:24,211 --> 00:27:27,332
+Bilgisayar artık sadece hızlı hesap yapan bir şey değil.
+
+127
+00:27:27,832 --> 00:27:29,491
+Bildiğin lükmüyor gibi davranıyor.
+
+128
+00:27:29,932 --> 00:27:34,271
+AlphaGo önce insan ustaların oynadığı oyunlara bakıyor.
+
+129
+00:27:34,471 --> 00:27:35,392
+Önce oyunları izliyor.
+
+130
+00:27:36,051 --> 00:27:51,811
+Sonra o tarlası oynuyorsa o da izleyip buradan öğrenmiş oluyor ve bundan sonra da artık engel oynanmaya başlıyor. Oynadıkça daha iyi yollar duruyor ve en sonunda da 18 kez dünya şampiyonluğu olmuş Lise Dolu'da oynuyorlar. Yeniyor.
+
+131
+00:27:53,044 --> 00:28:11,184
+Burada iş daha da ilginçleşiyor. AlphaGo Zero'ya kimse şöyle ona böyle demiyor tabii. İnsan oyunu yok, örnek yok. Sadece oyunun kurallarını biliyor. Kendi kendine oynuyor, hata yapıyor. Hatasından da belli skorlar çıkartıp.
+
+132
+00:28:11,476 --> 00:28:34,256
+Aslında ders çıkartıyor diyebiliriz. Buna göre kendini güncelliyor. Bölü bölü öğreniyor ve önceki alfa go'yu bile geçiyor. Yani şunu görüyoruz, bilgisayarın her şeyi tek tek öğretmesi zorunda da değildir. Ortamı şartları doğru kurarsak kendi kendini öğrenebiliyor yani. Bizim bile tahmin edemeyeceğimiz şeyler yapabiliyor. Bunu görmüş oluyorlar bununla birlikte.
+
+133
+00:28:35,571 --> 00:28:42,571
+Burada bu işin adım adım mısır değiştiğini görüyoruz. İlk Alfa Go 4 bilgisayar işe insanları izlererek başlıyor. Sonra...
+
+134
+00:28:43,380 --> 00:29:05,660
+İşte bir uçan oyunlarını izliyor ve oyun altında kapıyor. Sonra kendi kendine oynaya oynaya seviyesini yükseltiyor ve dünya şampiyonunu da geliyor. Bir sene sonra da Alphabet Zero çıkıyor. Bu sefer diyorlar ki insan oyunu göstermeyelim sadece kuralları veriyorlar. Bilgisayar kendi kendine oynuyor, yanılıyor, düzeltiyor ve gidiyor en iyi insanları bile geçiyor.
+
+135
+00:29:05,660 --> 00:29:11,000
+Yani artık bu noktada insan öğretmenlikten de çıkıyor. Artık öğretmiyorlar.
+
+136
+00:29:11,796 --> 00:29:14,715
+Şöyle bir durum o da geliyor. Artık kendi örneklerinde kendi olasın.
+
+137
+00:29:16,375 --> 00:29:23,015
+Bir süre sonrasında fark ediyorlar. Bu sadece Go'yu özel değil, aynı sistemi alıp satrançta da geliyorlar.
+
+138
+00:29:23,255 --> 00:29:30,695
+Showbiter'e deniyorlar ve çalışıyor. Yani oyun özelliği değil de, bilgisayar teklif bir oyunu izlenmiyor da, inanıyorum oyun oynamayı.
+
+139
+00:29:34,867 --> 00:29:40,188
+Daha da eliri gidiyor. Bu sefer bilgisayara oyunun kurallarını bile açık açık anlatmıyorlar.
+
+140
+00:29:40,428 --> 00:29:45,448
+Yer oyunlarda neydi? Sadece oyun kurallarını anlatıyorlardı, ortamı kuruyorlardı ve bırakıyorlar.
+
+141
+00:29:46,188 --> 00:29:51,748
+Ama Muzilo'da artık oyun kurallarını da açık açık anlatmıyorlar. Sadece belli başlıyor.
+
+142
+00:29:52,548 --> 00:29:57,748
+Hemen şeyler söylüyorlar. Bilgisayar oynaya oynaya oyunun aslında kendi kurallarını da çözüyor.
+
+143
+00:29:57,748 --> 00:29:59,748
+Sonra da bu çözdüğü...
+
+144
+00:30:00,000 --> 00:30:25,519
+Önce oynuyor, önce hareket yapıyor, sonra düşünüyor. Burası aslında kritik bir nokta. Robot derneğinde insan ne yapıyor? Hareket etmek için önce düşünüyor ya. Robotlarda öyle bir şey yok. Önce hareket ediyor, sonra düşünüyor. Aslında bu birazcık gelecek dünyada her zaman sıkıntılı olma bir şey. Birazdan buna da aslında değiniyor olacağız.
+
+145
+00:30:26,932 --> 00:30:45,311
+Burada da 2019'da Lise 4, saat renci bırakırken çarpıcı bir cümlesi var. Onu çevireyim. Ne kadar çalışsam ve artık zirvede olamayacağımı anladık diyor. İşte bu cümle önemli çünkü bilgisayar insanı daha hızlı olduğuna için daha farklı düşünülmek için.
+
+146
+00:30:45,811 --> 00:31:07,431
+Bu da bize şunu gösteriyor ki doğru kalmış bir aler. İnsanın aklına gelen stratejileri bile bulabiliyor. Özetle bilgisayar önce insanı tatmin etti. Sonunda da artık kendi kendini öğrenmeye başladı. Artık neredeyse insan gibi davranmaya başladı. Böyle bir gelişimi var.
+
+147
+00:31:08,339 --> 00:31:18,719
+Şimdi buraya kadar tabi basit oyunlardan bahsediyorum. Artık Ket'in oynadığı ya da İsrail'e oynanan oyunları değil de, mesela Starcraft, Dota gibi oyunlar.
+
+148
+00:31:18,719 --> 00:31:24,719
+Güzel geldik ki bunlar çok dağılır. Starcraft mesela çok severim ama çok kompleks var.
+
+149
+00:31:24,719 --> 00:31:34,719
+Farklı karakterler var. Evrende bizden farklı karakterler, farklı güçleri. Yani bizden onlarca parametre var.
+
+150
+00:31:34,963 --> 00:31:56,543
+Ve hani, birçok takım arkadaşım var, rakiplerin var, zaman var gibi gibi. Mesela Strikecraft'ta AlphaStar var. AlphaStar modeli. AlphaStar ajanı diyeyim, bu insan seviyesinde oynamayı başarmış. Ve bunu tek bir ajanla değil de birden fazla ajanın birlikte öğrenmesiyle yapmış. 2018 yılında görüyordum.
+
+151
+00:32:01,663 --> 00:32:10,284
+Beş tane ajan kullanıyor. Beş tane ajanı takım gibi birlikte oynatıyor ve insanları yeniyor.
+
+152
+00:32:10,764 --> 00:32:18,163
+Yani artık mesela çekme hamle de değil, takım oyunu. Bir daha fazla robotu da aynı anda öğrenmek için sisteme sokabiliyorlar.
+
+153
+00:32:19,084 --> 00:32:28,663
+Bu örneklerde şunu gösteriyor aslında. Ayrıca sadece artık basit oyunları değil, çok oyunculu, çok parametreli oyunları da öğrenebiliyor.
+
+154
+00:32:29,907 --> 00:32:52,007
+Şimdi artık oyları bir kenara bırakıp gerçek dünyaya geliyoruz. Robotun artık ekranda değil, gerçek hayatta da bir şey yapması gerekiyor çünkü. Burada gördüğünüz robotlar yürümeyi, kurtmayı, emgebeli arazide dengede durmayı önlüyor. Şuraya baksana üzerinde insan durmuş ve buna rağmen dengede durmayı sonuçta bir arazide önlüyor.
+
+155
+00:32:53,172 --> 00:33:05,792
+Ama tabi o hiç kolay değil. Ne bileyim zemin kayıyor, taş var, çukur var, üzerine adam buymuş dediğim gibi, rüzgar var ne bileyim. Bir sürü farklı sıkıntı var.
+
+156
+00:33:05,792 --> 00:33:14,172
+Ve robotlar adımını şunu öğrenmeye çalışıyor. Ne bileyim ayağımı şuraya koyarsam düşer miyim düşmez miyim? Ne olur?
+
+157
+00:33:15,892 --> 00:33:34,152
+Ayağını oraya koyarak öğreniyor. İnsan ne yapar? İşte ayağını oraya koyarsa düşebilirdiğini hayal eder. Bunu hayal edip kapısına canlandırdığı için bunu yapmaz. Ama robot öyle değil. Robot ayağını gider oraya koyar ve düşerse artık orada düşüneceğini öğretir.
+
+158
+00:33:36,051 --> 00:33:51,551
+Öğrenmesi birazcık daha o yüzden sıkıntılı. Ama yine de robot bunu ezberlere hiyatıyor. Tamam bu dediğim şekilde yapıyor ama bu sefer dengeyi bir tıktan artık hissederek demek de olur mu bilmiyorum ama hissederek yapmış oluyor.
+
+159
+00:33:51,551 --> 00:34:02,551
+2024'de olmuş bu çöz var. 2020'de başlamış. 2024'de daha ilk defa survival montonu geçmişler işi.
+
+160
+00:34:04,948 --> 00:34:32,948
+Tamam, yürümek zor. Ama şimdi nesne tutmaya gelince daha da zorlaşıyor. İnsan için çok basit olan şeyler, mesela bir tutu çevirerek ya da bir nesneyi parmaklarıyla döndürmek ya da tutup o parmak falan gibi işlemler robot için tabii çok karmaşık oluyor. Çünkü robot burada mesela mesela ileride bir nesne var onu alıp havaya kalıyor.
+
+161
+00:34:32,947 --> 00:34:41,768
+Burada tamam gitti, onu tuttu bir şekilde. Ama kaldırdığı zaman onun ne kadar sıkılması, ne kadar yükselaması gerektiğini mesela bilmiyor.
+
+162
+00:34:41,768 --> 00:34:55,747
+Ve bu yüzden elinden kayıp düşebilir gibi şeyler var. Bunları deneyerek öğretiyor. Yani artık robot sadece güçlü olmaya değil de tamam onu gitti oradan avlanıyor, neyi ne kadar.
+
+163
+00:34:56,211 --> 00:35:01,952
+Tutacak, kavrayacak, kibar mı olacak, nazik mi davranacak, nazik mi davranacak. Bunları da öğrenmişim.
+
+164
+00:35:04,952 --> 00:35:08,952
+Şimdi biraz daha can sıkıcı tarafına geçiyoruz.
+
+165
+00:35:10,412 --> 00:35:14,952
+Modülferi Aral. Deneme yanılmayla öğrenen.
+
+166
+00:35:18,472 --> 00:35:20,012
+Yani yapıyor, bozuyor.
+
+167
+00:35:20,851 --> 00:35:34,831
+Başbame'ye söylediğimiz gibi. Bu yüzden inanılmaz sayıda deneme gerekiyor. AlphaGo Zero'nun başarısı mesela çok iyiydi ama arkasında binlerce, makine ve milyonlarca oyun vardı. Çok uzun denemelerin sonu yine o başarıyı elde ediyor.
+
+168
+00:35:46,420 --> 00:36:10,039
+Zero, bu bilgisayar da üç bin yıldan öğrenebilir diyor. Bu çok büyük bir aslında maliyet. O yüzden gerçek hayatta bu kadar deneme yapmak da çoğu zaman mümkün de değil yani. Bu problemlerden bir tanesi. Diğer probleme bakacak olursak güvenlik. Robot öğrenirken hata yapıyor ama robot hata yapınca sadece konu kaybetmiyor.
+
+169
+00:36:10,452 --> 00:36:30,452
+Birine çarpabiliyor mesela. Ne bileyim bir şeyi kırabiliyor. Direkt kendini kırabiliyor. Çok maliyetli de bir şey. Ya da ne bileyim farklı bir insana zarar verebiliyor. Farklı bir şeye zarar verebiliyor. Bir de aynı dediğim gibi az önce. Model neyin neden yaptığını pek anlatamıyordu. Mesela bir şey ters gitti diyelim. Dönüp işte o yüzden nerede ne yapıyorduk onu.
+
+170
+00:36:31,699 --> 00:36:39,939
+Kestiremiyorsun. Babası sadece deniyor. Aslında belki de bir amacı da yok. Orada insana zarar da vermek istiyor ama demerken zarar veriyor.
+
+171
+00:36:40,799 --> 00:36:48,759
+Yani öğreniyor ama çok geç öğreniyor. Bazen de mesela 10 binlerce öğrenmiş oluyor.
+
+172
+00:36:49,588 --> 00:36:56,807
+Bir diğer problemde de, tabii insanlar böyle öğrenmiyor. Dediğim gibi bu dünya kafamızda canlandırıyoruz.
+
+173
+00:36:57,347 --> 00:37:01,968
+Bir örnek daha verelim. Mutfakta mesela, sonra doğrarken şunu kestirebiliyorum.
+
+174
+00:37:02,128 --> 00:37:08,827
+Ya bıçağı şöyle tutarsak, şuraya doğru götürürsem, ya benim burada elim kesilir diyoruz ve onu denemiyoruz.
+
+175
+00:37:09,588 --> 00:37:12,188
+Dediğim gibi hayal edip düşünüp ona göre hareket ediyordum.
+
+176
+00:37:12,188 --> 00:37:16,948
+Ama robot öyle değil. Gider, elimi keser, elimi kesince öğrenirim ki o hareket.
+
+177
+00:37:17,376 --> 00:37:40,976
+O davranış ona zarar veriyor. Artık biz örneği öyle yapmadan artık olan da oldu. Özetle, model free, anal çalışıyor ama daha da riski ve yavaş. O yüzden artık biz dünyayı biraz daha anlayabilen, daha düşünebilen modellere doğru gitmemiz gerekiyor diye bir sorun yapabiliriz.
+
+178
+00:37:41,396 --> 00:37:46,735
+Ben dileğiyle teşekkür ederim. Şimdi de bütün slayt'tan arkadaşım devam edecek. Ben paylaşımı kesiyorum.
+
+179
+00:37:52,467 --> 00:37:54,108
+Peki, teşekkürler [öğrenci].
+
+180
+00:37:56,447 --> 00:37:58,708
+Ben paylaşıyorum şimdi hocam ekran mal.
+
+181
+00:38:05,012 --> 00:38:07,012
+Görebiliyor musunuz?
+
+182
+00:38:07,012 --> 00:38:09,012
+Evet.
+
+183
+00:38:09,012 --> 00:38:16,012
+Evet, şimdi model learning ve model based planning konusuna geçeceğiz.
+
+184
+00:38:16,012 --> 00:38:22,012
+Burada robotun dünyanın nasıl çalıştığını anladığına bakacağız.
+
+185
+00:38:22,012 --> 00:38:23,600
+Buradaki...
+
+186
+00:38:23,599 --> 00:38:31,480
+Temel amaç, dünyanın nasıl işlenen dair bir model, yani durum geçiş fonksiyonu öğrenmek.
+
+187
+00:38:31,480 --> 00:38:33,480
+Burada da görebileceğiniz gibi.
+
+188
+00:38:33,480 --> 00:38:36,840
+Ve bu modeli kullanarak geleceği planlamak.
+
+189
+00:38:36,840 --> 00:38:41,400
+Modelin doğruluğunu arttırmak için de şöyle bir şey izleniyor.
+
+190
+00:38:41,400 --> 00:38:45,079
+Planın ilk iyi eylemi gerçekleştiriliyor.
+
+191
+00:38:45,079 --> 00:38:47,440
+Oluşan yeni durum inceleniyor.
+
+192
+00:38:47,440 --> 00:38:50,679
+Gradient Descent ile plan optimize ediliyor.
+
+193
+00:38:51,603 --> 00:38:55,463
+Buradaki asıl soru ise bu durumu nasıl ifade edeceğimiz?
+
+194
+00:38:56,884 --> 00:39:01,244
+İlk yaklaşım olarak piksel dinamiği yaklaşımı var.
+
+195
+00:39:02,083 --> 00:39:04,603
+Literatörde Deep Visual Foresight deniyor.
+
+196
+00:39:05,723 --> 00:39:10,043
+Buradaki ağda kamera görüntüsünden gelecekti ki...
+
+197
+00:39:10,043 --> 00:39:10,403
+Efendim?
+
+198
+00:39:11,403 --> 00:39:15,304
+Sanki ekranı optimum şekilde kullanmıyorsun gibi.
+
+199
+00:39:15,304 --> 00:39:18,203
+Biraz büyütebilir misin görüntüyü?
+
+200
+00:39:18,771 --> 00:39:20,771
+Biraz daha büyüteyim.
+
+201
+00:39:22,972 --> 00:39:26,771
+Biraz daha. Bu da çok mu büyük oldu?
+
+202
+00:39:26,771 --> 00:39:27,771
+Evet.
+
+203
+00:39:28,771 --> 00:39:30,771
+Şöyle, böyle nasıl?
+
+204
+00:39:30,771 --> 00:39:35,771
+Bir tık daha büyüt. Alt slide'ı görmesek iyi olur yani.
+
+205
+00:39:37,771 --> 00:39:41,771
+Tamam, bu fena iyi. Bu iyi galiba.
+
+206
+00:39:41,771 --> 00:39:42,771
+Okey.
+
+207
+00:39:44,115 --> 00:39:57,315
+Buradaki ağda kamera görüntüsü alınıyor ve bu kamera görüntüsünden gelecekteki piksellerin nasıl görüneceği tahmin ediliyor. Bunun için de LSDM konvolüsyon layerları kullanılmış.
+
+208
+00:39:59,455 --> 00:40:11,175
+Burada bir video var ama bu açılmıyor. Robotun bu şişeyi ittirdiğinde nasıl bir hareket edeceğini, şişenin onu tahmin ettiğini gösteriyor burada.
+
+209
+00:40:13,715 --> 00:40:23,295
+Piksellerle çalışmak maliyetli olduğu için bütün görüntüdeki piksellerin hepsini tahmin etmek, Keypoint Dynamics adlı başka bir yaklaşım kullanılıyor.
+
+210
+00:40:24,435 --> 00:40:28,955
+Bütün pikselleri tahmin etmek yerine sadece nesnenin üzerinde belirli keypointler belirleniyor.
+
+211
+00:40:28,955 --> 00:40:34,635
+Ve bunların robot elemini gerçekleştirdikten sonra nerede olacağı tahmin ediliyor.
+
+212
+00:40:36,884 --> 00:40:47,644
+Burada da verilen videoda robot kutuyu iterken, robotun üzerindeki şu beyaz noktaların robotu ittikten sonra nereye geleceğini gösteriyor.
+
+213
+00:40:50,443 --> 00:40:57,364
+Peki katı olmayan, basit şekilde olmayan nesnelerde ne yapılıyor?
+
+214
+00:40:57,364 --> 00:41:03,764
+Örneğin burada verildiği gibi tanecik şeklinde olan nesnelerde Particle Dynamics isimli.
+
+215
+00:41:03,860 --> 00:41:16,400
+Burada nesneler binlerce küçük parçacık kümesi olarak modelleniyor. Tek bir nesne gibi görülmektense parçacık kümeleri olarak modelleniyor.
+
+216
+00:41:19,480 --> 00:41:27,159
+Burada bir örnek verilmiş. Bunları oynatamıyorum barisinde. Resim olarak gözüküyor.
+
+217
+00:41:29,427 --> 00:41:35,427
+Burada ise bu Particle Dynamics yaklaşımını kullanan bir proje verilmiş. Robocook isimli.
+
+218
+00:41:37,427 --> 00:41:47,427
+Burada görebileceğiniz belirli araçlar ile şuradaki hamur gibi bir nesneyi manipüle etmek amaçlanıyor.
+
+219
+00:41:47,427 --> 00:41:49,427
+Buradaki zorluk ise...
+
+220
+00:41:50,356 --> 00:42:00,876
+Amur şeklini tutabilen bir nesne olduğu için her işlem yapıldığında şekli değişmiş oluyor. Bunun üstesinden gelinmeye çalışılıyor.
+
+221
+00:42:02,996 --> 00:42:10,696
+Ve Prediction'da şu şekilde. Aşağıda görebileceğiniz Ground to Root var. Üstede yapılan Prediction var.
+
+222
+00:42:12,696 --> 00:42:16,136
+Burada kavrama işlemini görüyoruz.
+
+223
+00:42:16,851 --> 00:42:27,351
+Hamuru bir Particle Dynamics ile parçacık bulutu olarak temsil ediyor. Gördüğünüz mavi noktalar. Aslında hamurun Particle Dynamics ile temsil edilmiş hali.
+
+224
+00:42:28,371 --> 00:42:31,451
+Burada graf sinir ağları kullanılıyor.
+
+225
+00:42:31,951 --> 00:42:37,851
+Ve kavrama işlemini güzel bir şekilde tahmin ettiğini görebiliyoruz.
+
+226
+00:42:38,351 --> 00:42:40,652
+Veya Ground Truth'a yakın çıkıyor.
+
+227
+00:42:41,492 --> 00:42:54,811
+Aynı şekilde bastırma içinde aldığı cismi hamurun üstüne bastırdığını ve bastırınca nasıl bir sonuç olacağını güzel bir şekilde tahmin ettiğini görüyoruz.
+
+228
+00:42:56,592 --> 00:43:05,291
+Yine bu sefer silindirik bir objeyle hamuru açtığını görüyoruz. Yine tahminleri doğru yapıyor.
+
+229
+00:43:09,364 --> 00:43:27,364
+Burada da, buradaki hamurdan, şurada sol üstteki Dumpling'e kadar olan adımlarını gösteriyor. İlk önce bıçağı alacak, sonra tutucuyu alacak, sonra basacak, açacak gibi gibi adımları vermiş. Bunları yaparak başarılı bir şekilde en son Dumpling yapmayı başarabiliyor.
+
+230
+00:43:31,764 --> 00:43:55,903
+Şimdi ise Imitation Learning'e bakacağız. Burada robotun çevreyi keşfedip kendi kendine ödül araması yerine bir uzman dahil ediliyor. Bu uzman yapılacak işin nasıl yapıldığını biliyor. Örneğin bir insan. Yapılacak görevi gerçekleştirip karşılaştığı durumları, yaptığı eylemleri bir veri seti olarak kaydediyor.
+
+231
+00:43:56,820 --> 00:44:01,500
+Veri sütü olarak kaydediliyor ve bu veri sütü üzerinden supervised learning yapılıyor.
+
+232
+00:44:03,960 --> 00:44:10,380
+Burada işte örneğe örnek verilmiş bir annenin yaptığını, çocuğun taklit etmesi gibi. Burada uzman anne oluyor.
+
+233
+00:44:10,740 --> 00:44:12,860
+Çocuk ise bizim eğittiğimiz model.
+
+234
+00:44:15,443 --> 00:44:41,643
+Bu işin en temel yöntemi ise Diveronuş Klonlama, Behavior Cloning. Fakat burada da hata birikinden dolayı bir sorun oluşuyor. Sağda görebileceğiniz üzere. Robot küçük bir hata yapıp rotadan saptığı anda artık o uzmanın bilmediği bir alana gelmiş oluyor. Uzman hiç hata yapmadığı için de robotu tayinası düzelteceğini bilemiyor.
+
+235
+00:44:43,059 --> 00:44:47,659
+Ve hatalar birikerek, robotun tamamen başarısız olmasına yol açıyor.
+
+236
+00:44:51,635 --> 00:44:57,896
+Bu sorunu çözmek için de aslında uzmanın döngüye dair edilmesi gerekiyor.
+
+237
+00:44:59,076 --> 00:45:04,456
+Burada robot hata yaptığında uzman devreye giriyor ve aslında ne yapması gerektiğini söylüyor.
+
+238
+00:45:04,456 --> 00:45:13,756
+Bu feedback'i aldıktan sonra eğitim setine bu feedback ekleniyor ve model tekrardan eğitiliyor.
+
+239
+00:45:14,416 --> 00:45:15,655
+Böylelikle iteratif olarak.
+
+240
+00:45:16,307 --> 00:45:21,807
+Hata yaptıkça model veri seti güncelleniyor, tekrar ediliyor. Böyle böyle öğrenmiş oluyor.
+
+241
+00:45:24,807 --> 00:45:28,307
+Bir diğer yaklaşım ise Inverse Reinforcement Learning.
+
+242
+00:45:28,307 --> 00:45:31,807
+Davranış klonlamada robot ne yapıldığını kopyalıyordu.
+
+243
+00:45:31,807 --> 00:45:35,692
+Burada ise bunun neden yapıldığını anlamaya çalışıyor.
+
+244
+00:45:36,307 --> 00:45:50,628
+Uzmanın davranışlarını izleyerek ödül fonksiyonunu bulmaya çalışıyoruz ilk önce. Uzmanın maksimize etmeye çalıştığı bu ödül fonksiyonunu buluyoruz. Ondan sonra robotu bunu maksimize etmek için eğitiyoruz.
+
+245
+00:45:55,219 --> 00:45:59,819
+Burada explicit policy ile implicit policy'nin karşılaştırmasını vermiş.
+
+246
+00:46:01,379 --> 00:46:06,239
+Explicit de verilen bir görüntüye karşı bir eylem tahmini yapılıyor.
+
+247
+00:46:08,019 --> 00:46:15,199
+Fakat implicit de ilk öncelikle bir enerji fonksiyonu öğreniliyor.
+
+248
+00:46:15,199 --> 00:46:17,199
+Bu enerji fonksiyonu...
+
+249
+00:46:19,891 --> 00:46:30,692
+Robotun yapacağı işin verimliliğini gösteriyor. Enerjisi en düşük olan eylem bizim için en verimli, en istediğimiz eylem olmuş oluyor.
+
+250
+00:46:31,611 --> 00:46:38,132
+Bu yüzden bu fonksiyonu minimize eden değerleri eylem olarak tahmin etmiş oluyoruz.
+
+251
+00:46:38,891 --> 00:46:39,911
+Mühendisliğin farkı bu.
+
+252
+00:46:43,411 --> 00:46:45,451
+Burada yine bir örnek vermiş.
+
+253
+00:46:49,588 --> 00:47:14,847
+Burada başka bir yaklaşım anlatılıyor. Explicit ve Implicit'in dışında. Diffusion Policies isimli. Explicit'te şöyle bir sorun var. Ortalama değer tahmini yaptığı için, örneğin diyelim ki robot 3 yol ayrımından bir yere gidecek. Sola ve sağa gidebiliyor. Sola ve sağa gidebildiği için bunun ortalamasını alıp ortadan gitmeye çalışıyor.
+
+254
+00:47:15,476 --> 00:47:17,896
+Bu da bizim istemediğimiz şeylere yol açabiliyor.
+
+255
+00:47:19,615 --> 00:47:23,056
+İmplisitte ise enerji fonksiyonu bu sorun çözüyor.
+
+256
+00:47:23,916 --> 00:47:28,615
+Fakat eğitimi zor olmuş oluyor. Daha zor bir hale alıyor.
+
+257
+00:47:29,715 --> 00:47:34,516
+Diffusion Policy'de ise ilk öncelikle gürültüden başlanıyor.
+
+258
+00:47:35,476 --> 00:47:38,876
+Adım atıp temizleniyor. İterative Denoising yapılıyor.
+
+259
+00:47:39,668 --> 00:47:50,168
+Ve en sonunda eylem tahmin ediliyor. Bu da şu anki görüntü üretme modellerinin kullandığı bir yöntem. Bunun robotiğe uyarlanmış hali.
+
+260
+00:47:54,612 --> 00:47:56,612
+Yine bir örnek vermiş.
+
+261
+00:47:57,612 --> 00:48:04,612
+Robotik Foundation Modelsi şöyle. Diğer yöntemlerin aksine durumlar ve giriş fonksiyonları modellenmiyor.
+
+262
+00:48:05,612 --> 00:48:10,612
+Gözlem ve hedef alıp eylem üreten bir polisi kullanılıyor.
+
+263
+00:48:10,612 --> 00:48:15,612
+Aradaki matematiksel karmaşıklık ise tamamen Neural Network'lara bırakılıyor.
+
+264
+00:48:16,612 --> 00:48:21,612
+Burada birkaç örnek verilmiş. Imitation Learning ve Reinforcement Learning.
+
+265
+00:48:22,036 --> 00:48:24,036
+NumixCube çözümü yapılmış.
+
+266
+00:48:28,148 --> 00:48:52,008
+Bu modellerin kullanım sebebi ise mükemmel bir çıktı vermesi değil. Her şeyi mükemmel bir şekilde yapabiliyor olması değil. Fakat her zaman yapılabilir ve akıcı fiziksel hareketler ötebilmesi. Örneğin, misçer çıktı konuşurken her zaman doğru bilgi vermiyor fakat her zaman doğru gramer yapısı kullanıyor. Kullandığı dil her zaman doğru oluyor.
+
+267
+00:48:52,659 --> 00:48:56,759
+Burada da aynı mantık var. Her zaman yapılabilir bir eylem üretiyor.
+
+268
+00:48:57,519 --> 00:49:02,900
+İki tane örnek verilmiş. Vision, Language, Action Models, Large Behavior Models gibi.
+
+269
+00:49:06,739 --> 00:49:12,880
+Burada da bu alandaki ilerleme verilmiş. Hızlı bir şekilde ilerlediğini görüyoruz burada.
+
+270
+00:49:14,159 --> 00:49:17,739
+2024 senesinde yapılan Pi Zero projesi.
+
+271
+00:49:18,068 --> 00:49:22,068
+Ele alınmış detaylı şey. Ondan bahsedeceğim.
+
+272
+00:49:24,068 --> 00:49:31,068
+Bu modeli özel kalan şey, bir Cross Embodiment dataset üzerinde eğitilmiş olması.
+
+273
+00:49:31,068 --> 00:49:38,068
+Burada görebileceğiniz üzere, farklı farklı şekillerdeki robotlar içeriye bu dataset.
+
+274
+00:49:38,068 --> 00:49:45,068
+Ve bunun eğitilmesinin sebebi ise, bu modelin farklı şekillerdeki robotları kontrol edebilmesi.
+
+275
+00:49:46,324 --> 00:49:52,523
+Öncelikle bu veri seti üzerinden eğitiliyor. Bir pre-training yapılıyor.
+
+276
+00:49:52,523 --> 00:49:58,523
+Pre-training'de farklı farklı robotlardan oluşan bu seti alıyoruz.
+
+277
+00:49:58,523 --> 00:50:06,324
+Modeli eğitiyoruz ve sonunda masa silme gibi örneğin temel işleri yapabiliyor.
+
+278
+00:50:06,324 --> 00:50:08,523
+Fakat komplike işler için...
+
+279
+00:50:08,820 --> 00:50:21,360
+Post Training yapılıyor. Daha zorlu ve spesifik görevler burada öğretiliyor. Örneğin çamaşır makinesini boşaltma gibi veya çamaşır katlama gibi.
+
+280
+00:50:22,139 --> 00:50:29,300
+İşleri burada öğrenmiş oluyor. Ve sonuç olarak görülüyor ki, basit işleri güzelce bir şekilde yapabiliyor.
+
+281
+00:50:30,059 --> 00:50:32,844
+Komplike işleri güzelce yapabiliyor.
+
+282
+00:50:32,851 --> 00:50:47,631
+Hatta daha önce görmediği işleri de yapabilmeye başlıyor. Mesela buradaki kağıt havluyu değiştirmek gibi veya eşyaları çekmeceye koymak gibi daha önce görmediği, daha önce öğretilmeyen işleri de yapabiliyor.
+
+283
+00:50:51,668 --> 00:50:55,688
+Örnek verilmiş. Open Source olduğundan bahsedilmiş.
+
+284
+00:50:58,388 --> 00:51:01,428
+Son olarak da kalan zorluklardan bahsedeceğim.
+
+285
+00:51:03,008 --> 00:51:04,988
+Buradaki en büyük sorun Evaluation.
+
+286
+00:51:05,708 --> 00:51:09,728
+Çünkü robotik yapıyoruz. Gerçek hayata etkisi olan şeyler.
+
+287
+00:51:10,528 --> 00:51:14,108
+Bunları test etmek için fiziksel olarak o işi yaptırmamız gerekiyor.
+
+288
+00:51:15,008 --> 00:51:18,088
+Bu da pahalı, yavaş ve gürültülü bir işlem.
+
+289
+00:51:19,059 --> 00:51:29,059
+Aynı zamanda Training Loss'umuz ile başarı olurumuz her zaman Corel'e olmuyor. Loss azaldıkça başarı artacak diye bir kural yok.
+
+290
+00:51:29,059 --> 00:51:38,059
+Her zaman bu maalesef olmuyor. Bu da bize büyük bir zorluk yaşatıyor. Bunu çözmek için simülasyonlar kullanılıyor.
+
+291
+00:51:38,059 --> 00:51:45,963
+Prosedürler olarak gerçekçi ve çeşitli sahneler oluşturulması gerekiyor simülasyonlarda ki farklılık olsun.
+
+292
+00:51:46,356 --> 00:52:05,036
+Ve gerçeğe yakın olsun. Fakat gerçek hayatlarda tabii büyük bir fark olabiliyor. Özellikle kumaş sıvı veya deforme olabilen nesneler simülasyonlarda modellenmesi çok zor olduğu için gerçek hayatla baya bir fark olabiliyor arada. Bunun üzerine çalışılıyor.
+
+293
+00:52:06,356 --> 00:52:15,836
+Bu farkı en azından indirmek üzerinde çalışılıyor ve bu işi daha çok efektif yapıp daha hızlı bir şekilde simüle edebilmek üzerinde çalışılıyor.
+
+294
+00:52:19,156 --> 00:52:28,636
+Gelecek çalışmalarda World Models tekniğine bakılıyor. Burada sadece eylem üreten değil,
+
+295
+00:52:28,851 --> 00:52:52,672
+Eylem yapılırsa, yani daha eylemi yapmadan, o eylem yapıldığında dünya 3 saniye sonra nasıl görünür sorusunu yanıtlayan modeller geliştirmek hedefleniyor. Böylelikle robot o eylemi yapıp, hatasını görüp, ondan sonra hatasını çözmektense, önceden bunu yapınca nasıl bir hata yapabilir, onu tahmin edip ona göre hareket etmiş oluyor.
+
+296
+00:52:53,672 --> 00:52:55,991
+Burada da örneklerini görüyoruz.
+
+297
+00:52:56,851 --> 00:53:11,612
+Envidia Cosmos isimli bir modelle bunu mesela yapmaya başlamışlar. Robot yapacağı hareketi önceden tahmin ediyor ne olacağını yaptıktan sonra o tahmine bakarak o işlemi yapıp yapmayacağını karar veriyor.
+
+298
+00:53:15,612 --> 00:53:16,391
+Burada
+
+299
+00:53:17,043 --> 00:53:25,063
+İşte chat GPT gibi LLM'ler, VLM'ler, bu mevcut dil modelleri internet verisiyle eğitiliyor.
+
+300
+00:53:25,903 --> 00:53:31,244
+Bu yüzden fiziksel dünyayı, geometriyi veya yer çekimini tam olarak kavrayamıyorlar.
+
+301
+00:53:32,264 --> 00:53:42,963
+Burada bu sorundan bahsediliyor. Bunları alıp direkt bir robota koysak, bu konseptleri anlayamayacağı için baya bir zorluk yaratmış olacak.
+
+302
+00:53:48,532 --> 00:53:57,992
+Burada da robotlarımızın nasıl bir hayat sergilemesi gerektiğini görüyoruz. Yeni senaryolara açık olması gerekiyor. Ayak uydurabilmesi gerekiyor.
+
+303
+00:53:58,384 --> 00:54:18,603
+İnsan tercihine göre kendini adapte edebilmesi gerekiyor ve sürekli kendini geliştirmesi gerekiyor. Aynı bir insan gibi. Bizim istediğimiz şekilde çalışması, bizim avantajımız olacak şekilde kendini o kararlarına vermesi ve yaşadığı her şeyden tecrübe çıkarıp öğrenmesi.
+
+304
+00:54:22,900 --> 00:54:48,700
+Bir de tabii ki de robotik alanı sadece modelden itibar. Modelden çok daha geniş. Aslında bütün model, bütün robotik çalışmalar bir sistem çalışması. Burada modelden başka gecikme süreleri, hesaplama gücü, modüller arası iletişim gibi bir sürü faktör var. Bunların hepsinin bir anda düşünülmesi gerekiyor. Sadece işte çok iyi bir modelim var, çok güzel bir robot yapabilirim demek olmuyor.
+
+305
+00:54:49,364 --> 00:55:03,884
+Bütün bütün işin bütünüyle düşünmesi gerekiyor ve hepsi birbirini etkilediği için baya zor bir iş haline gelmiş oluyor. Her şeyin daha optimize olması gerekiyor. Sırf modelin güzel çalışması yetmiyor.
+
+306
+00:55:05,940 --> 00:55:26,940
+Son olarak da kalan challenge'lar. Gelecekte ne yapılması lazım? Onun için şöyle bir görsel verilmiş. Gelecekte robotlar bize nasıl yardım edecek? Nasıl engelleri aşacağız? Nasıl robotları üreteceğiz? Hedefimiz aslında bu. Bütün ev işlerinde bize yardım eden, ne yaptığını görebilen.
+
+307
+00:55:27,295 --> 00:55:34,715
+ve tamamen desteksiz bir şekilde insanlara yardım edebilen cihazlar olması planlanıyor.
+
+308
+00:55:36,255 --> 00:55:37,535
+Bu kadardı sunum.
+
+309
+00:55:43,092 --> 00:55:45,172
+Peki, teşekkürler [öğrenci].
+
+310
+00:55:46,372 --> 00:55:47,271
+Ben teşekkür ederim.
+
+311
+00:55:49,492 --> 00:56:01,652
+Şimdi bugün dersi burada bırakalım. Şöyle bir genel değerlendirme yaptıktan sonra bir sınava katılacağım az sonra.
+
+312
+00:56:05,612 --> 00:56:08,892
+Şimdi bitirdik mi tüm slide'ları?
+
+313
+00:56:11,188 --> 00:56:14,007
+231
+
+314
+00:56:15,027 --> 00:56:15,788
+Peki
+
+315
+00:56:19,059 --> 00:56:21,059
+Bakıyorum şimdi ona yaa.
+
+316
+00:56:23,059 --> 00:56:24,059
+Skeçim.
+
+317
+00:56:29,907 --> 00:56:53,907
+Human Centered AI diye bir şey var ama onun slide'ı yok. Dolayısıyla artık onu yapmayacağız. Böylece tüm Stanford'daki o dersin tüm slide'larını yapmış olduk. Bir şekilde. Son bölümleri biraz...
+
+318
+00:56:54,291 --> 00:57:10,092
+Hızlı geçmiş olabiliriz ama işte genel fikir edinmiş olduk. Zaten altyapıyı aldık. Dersin ilk yarısında ciddi durduk konuların üzerinde. Altyapıyı oluşturduk. Ondan sonrası zaten uygulamalar daha çok.
+
+319
+00:57:13,652 --> 00:57:22,791
+Şimdi anlatım yapmayıp da yapmak isteyen galiba bir öğrenci kaldı diye anlıyorum. Var mı bir öğrenci?
+
+320
+00:57:27,956 --> 00:57:55,256
+Evet, yani o bir öğrenci olursa gelecek hafta onu yaparız. Yine online yaparız. Ödevlerinizin sonuçları, sunumlarınız ne durumda? Asistanlar dürtmek gerekiyor mu arkadaşları? Ödev 1'i, ödev 2'yi sanırım yayınladılar.
+
+321
+00:57:57,268 --> 00:58:04,527
+Evet hocam, Ödev 2 yayınlandı. Ödev 3'ü de zaten bu akşam son teslim tarihi var.
+
+322
+00:58:05,588 --> 00:58:08,427
+Tamam, onlar geç değil öyleyse.
+
+323
+00:58:09,708 --> 00:58:11,987
+Yok hocam, şu an zamansız olarak bir sıkıntı yok.
+
+324
+00:58:11,987 --> 00:58:18,987
+Evet, finalinizi de yine normal projeleriniz olacak biliyorsunuz.
+
+325
+00:58:22,931 --> 00:58:43,231
+Bunun içinde 6 saatlik bir blok ayarlattırdım. Final sınavlarında. 6 saatlik bir böyle. Herhalde 6 saatte anlatılır. Derse devam eden o kadar fazla insan yoktur diye tahmin ediyorum.
+
+326
+00:58:45,371 --> 00:58:46,931
+Yine...
+
+327
+00:58:46,931 --> 00:58:47,891
+Buyurun.
+
+328
+00:58:48,532 --> 00:58:57,692
+Hocam, bizim final sınavımız ayın 22'sinde görünüyor ama final raporu son teslim tarihi ayın 16'sında görünüyor. Onu düzenleyecek misiniz?
+
+329
+00:58:59,792 --> 00:59:00,692
+Düzenleyeyim mi?
+
+330
+00:59:03,852 --> 00:59:12,992
+Yani o şimdi finallerdeki projenin son tarihini tahmini bir günü ayarlamıştık ta önceden.
+
+331
+00:59:14,612 --> 00:59:33,152
+Proje sınavları daha sonra belirlendi. Final sınav tarihleri takvimi daha sonra belirlendi. Yani biraz daha erken istemiş oluyoruz.
+
+332
+00:59:36,947 --> 00:59:39,347
+Ayın 22'sine miydi o?
+
+333
+00:59:40,607 --> 00:59:49,967
+Aynen hocam. Son sınav takvimine koymuşlar eğer değişiklik olmazsa. En azından ikinci sınav haftası da çalışmak için bize kadar. Çünkü ilk hafta biraz yoğun oluyor biliyorsunuz.
+
+334
+00:59:51,687 --> 00:59:57,027
+Tamam. Şimdi hangisi? Proje raporu demişim. 16'sında değil mi?
+
+335
+00:59:59,527 --> 01:00:02,268
+İşlemler, kopyala, bitiş tarihini uzat.
+
+336
+01:00:03,572 --> 01:00:10,492
+Bitiş tarihi 22'sinde ise 21'i 23.45'e uzatıyorum.
+
+337
+01:00:14,291 --> 01:00:18,491
+Tamam, 16'sından 21'inin akşamını uzattım.
+
+338
+01:00:19,471 --> 01:00:25,632
+Hocam, ödev 3'ü de 1-2 gün uzatmak için istesem çok şey mi istemiş oluruz acaba?
+
+339
+01:00:26,791 --> 01:00:29,351
+Tamam, ödev 3 ne zaman? Bugün mü?
+
+340
+01:00:29,351 --> 01:00:33,551
+Bu akşam da 1-2 gün böyle hafta sonunda kapsasa aslında.
+
+341
+01:00:34,911 --> 01:00:37,871
+Tamam, ödev 3 yayınlandı.
+
+342
+01:00:37,891 --> 01:00:38,692
+Çok iyi olurdu.
+
+343
+01:00:39,764 --> 01:01:04,124
+27-11, yok. 2-1 son tarihi. İşlemler, bitiş tarihini uzat. Bugün ayın ikisi hafta sonu ne oluyor? Monday 12. Pazartesiyi de vereyim. 12'nin. Bir dakika. Çok teşekkürler hocam. Gerçekten.
+
+344
+01:01:07,092 --> 01:01:12,632
+Beşi akşamına kadar uzatmış oluyorum. Beşi 23.45'e kadar.
+
+345
+01:01:13,372 --> 01:01:15,452
+Çok teşekkürler hocam. Sağ olun gerçekten.
+
+346
+01:01:15,731 --> 01:01:17,452
+Rica ederim. Onu da uzattım.
+
+347
+01:01:19,872 --> 01:01:20,592
+Tamam.
+
+348
+01:01:25,692 --> 01:01:28,172
+Başka konuşacağımız bir şey var mı arkadaşlar?
+
+349
+01:01:29,012 --> 01:01:32,912
+Hocam, final sunumları için her öğrenci için planlanan süre ne kadar?
+
+350
+01:01:35,860 --> 01:01:58,460
+Güzel bir soru. Onu aslında ne yapsak? Diğer ödevlerin tüm her şeyi gönderen kaç kişi var? Şöyle bir ödev üçü de alalım. Tüm ödevleri teslim etmiş. Proje kaç kişi sunacak? Kaç proje olacak?
+
+351
+01:01:59,891 --> 01:02:05,651
+Onu bir bilsek ona göre zamanı belirleriz. Onda kesin bir şey değil ya.
+
+352
+01:02:09,651 --> 01:02:12,291
+Bir tahmini bir şeyde bulunmamız gerekiyor.
+
+353
+01:02:15,764 --> 01:02:32,264
+En son size WhatsApp grubuna bir ödev 2'yi verenlerin listesini... Ödev 1 ve ödev 2 not listesi gelmişti değil mi? Ona göre kaç kişi devam ediyor derse bir anlamaya çalışalım.
+
+354
+01:02:38,264 --> 01:02:42,104
+20-25 WhatsApp grubu.
+
+355
+01:02:43,347 --> 01:02:45,347
+Bilgisayar, lagerin...
+
+356
+01:02:49,043 --> 01:02:54,304
+V2 ödevler, ödev 1, ödev 2'yi ekran da veren.
+
+357
+01:02:54,744 --> 01:02:59,804
+Toplamda 19 tane öğrenci ödev 2'den 0'dan farklı bir not almış.
+
+358
+01:03:00,503 --> 01:03:10,244
+Evet. Yani demek ki 19 desek, yani bunların aynen devam edeceğini varsaysak, projede vereceğini.
+
+359
+01:03:11,731 --> 01:03:28,931
+6 saatlik bir blok ayarlanmıştı. 6 kere 50 kaç ediyor? 6 kere 5 30. 300 dakika mı ediyor? Yanlış hesap etmiyorum değil mi?
+
+360
+01:03:31,931 --> 01:03:36,911
+Evet hocam, 300 dakika. Yani oradaki sayı 20.
+
+361
+01:03:37,588 --> 01:03:39,548
+20 desek 20 dakika oluyor.
+
+362
+01:03:39,927 --> 01:03:43,148
+300 bölü 19'da 15 dakika ediyor.
+
+363
+01:03:44,708 --> 01:03:48,887
+15 dakika diyelim arkadaşlar. Her bir sunum için 15 dakikanız var.
+
+364
+01:03:50,168 --> 01:03:51,668
+Tamamdır hocam. Teşekkür ederiz.
+
+365
+01:03:51,668 --> 01:03:52,548
+Rica ederim.
+
+366
+01:03:54,608 --> 01:03:55,887
+Hatta buraya yazayım.
+
+367
+01:03:58,467 --> 01:04:03,347
+Finallerde her sunum 15 dakika.
+
+368
+01:04:04,532 --> 01:04:21,652
+Vaka olmalı maksimum. Bir de finallerde rapor da istiyorum yazılı. Hani final olacağı için basılı, ıslak imzalı normal bir kağıt istiyorum.
+
+369
+01:04:23,652 --> 01:04:29,392
+Finallerde basılı, ıslak imzalı.
+
+370
+01:04:32,659 --> 01:04:33,419
+Kağıt.
+
+371
+01:04:35,299 --> 01:04:37,799
+Numa çıktısı mı yani hocam?
+
+372
+01:04:37,859 --> 01:04:47,039
+Evet, yani bildiğiniz çıktı. Çıktı alıp, zımbalayıp, imzanızı atıp getireceksiniz yani.
+
+373
+01:04:47,759 --> 01:04:52,159
+Onları finaliniz olarak saklayacağım da ya da finalinizin bir bölümü olarak.
+
+374
+01:04:54,899 --> 01:04:58,739
+Yani finaller online olmayacak, yüz yüze olacak.
+
+375
+01:05:14,516 --> 01:05:26,036
+Hocam, peki bu finallerin sunumu için sıralama yapılması uygun mudur? Yani bir tane Google Sheet açıp sonrasında dileyen öğrenci oradan sıra alsa ve o saatte o sunumu yapsa?
+
+376
+01:05:27,955 --> 01:05:42,096
+Olur. İsterseniz direkt şey yapalım. En kolay arkadaşlar bir ödev listesi atıyorlar ya, o sırayla yapın.
+
+377
+01:05:43,764 --> 01:05:49,664
+Onu numaraya göre mi sıralamışlar, rastgele mi? Herhangi bir sırası yok mu?
+
+378
+01:05:52,524 --> 01:05:53,104
+Yok.
+
+379
+01:05:56,104 --> 01:05:57,384
+Yok, numaraya göre.
+
+380
+01:05:59,224 --> 01:06:01,744
+Numara sırasına göre yapacağız arkadaşlar.
+
+381
+01:06:03,064 --> 01:06:10,784
+Paylaşılan pdf var ya, ç2006 ile başlıyor, 2209.
+
+382
+01:06:11,443 --> 01:06:14,943
+22'ler, 23'ler, 24'ler, 25'ler nasıl?
+
+383
+01:06:19,044 --> 01:06:21,244
+Yani o sıraya göre yapacağız.
+
+384
+01:06:21,464 --> 01:06:25,284
+Tabii gelen olur, gelmeyen olur.
+
+385
+01:06:28,584 --> 01:06:31,844
+En azından 1-2 saat evvel yine orada olun bence.
+
+386
+01:06:33,844 --> 01:06:38,443
+Yani 6 saatlik bir oturum diye son dakika gelirseniz, kaçırırsanız...
+
+387
+01:06:38,943 --> 01:06:40,784
+Final yani bu sıfır alırsınız.
+
+388
+01:06:46,516 --> 01:06:54,475
+Ne diyelim, öğrenci numarasına göre.
+
+389
+01:06:58,291 --> 01:07:03,492
+[öğrenci] sunumları öğrenci numarasına göre yapılacak.
+
+390
+01:07:08,628 --> 01:07:09,548
+Tamam.
+
+391
+01:07:13,204 --> 01:07:13,964
+Tamamdır hocam.
+
+392
+01:07:16,444 --> 01:07:16,944
+Peki.
+
+393
+01:07:18,824 --> 01:07:20,704
+Başladınız mı proje yapmaya?
+
+394
+01:07:23,424 --> 01:07:25,384
+Başladık hocam şu an.
+
+395
+01:07:26,244 --> 01:07:28,624
+Şeyler, ekürler biraz düşük ama arttıracağız.
+
+396
+01:07:29,504 --> 01:07:30,524
+Tamam. Peki.
+
+397
+01:07:31,884 --> 01:07:33,664
+Peki öyleyse. Hadi bakalım.
+
+398
+01:07:36,724 --> 01:07:47,884
+Yine haftaya online sanırım bir öğrenci bir rapor anlatacaktı. Bir ses seda da çıkmıyor ama onun için bir online toplanmış oluruz.
+
+399
+01:07:48,704 --> 01:07:50,144
+Çekte bir mesaj var.
+
+400
+01:07:55,956 --> 01:08:08,315
+Evet. Sonrasında da bu dönemi bitirmiş oluruz. Başarılar diliyorum. Kolay gelsin arkadaşlar. Aklınıza sağlık.
+
+401
+01:08:09,395 --> 01:08:10,875
+Teşekkürler hocam. İyi günler.

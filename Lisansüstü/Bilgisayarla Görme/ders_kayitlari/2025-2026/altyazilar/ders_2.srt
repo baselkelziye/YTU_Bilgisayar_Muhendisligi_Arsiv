@@ -1,0 +1,2291 @@
+1
+00:08:04,468 --> 00:08:06,128
+Arkadaşlar, günü müydünler?
+
+2
+00:08:08,807 --> 00:08:10,807
+Sesim geliyordur umarım.
+
+3
+00:08:29,939 --> 00:08:30,899
+Teşekkürler.
+
+4
+00:08:31,180 --> 00:08:31,579
+Üçlü.
+
+5
+00:10:17,875 --> 00:10:19,875
+Şimdi neredeyiz bakalım.
+
+6
+00:10:30,644 --> 00:10:34,644
+Geçen hafta şurayı bitirmişiz. Anladığım kadarıyla.
+
+7
+00:10:38,355 --> 00:10:43,495
+Bu hafta Neural Networkler ve Backpropagation'a bir bakacağız.
+
+8
+00:13:15,347 --> 00:13:18,827
+Geçen hafta optimizasyonla ilgili konuşmuştuk.
+
+9
+00:13:20,327 --> 00:13:23,487
+Gradient Descent, Stochastic Gradient Descent.
+
+10
+00:13:26,987 --> 00:13:35,467
+Stochastic Gradient Descent'in versiyonları, Momentum eklemi, RMS Probe, Adam.
+
+11
+00:13:40,467 --> 00:13:48,788
+Step Size'in, Learning Rate'in zamanla azaltılma yöntemleri. Bunlara bakmıştık.
+
+12
+00:13:51,127 --> 00:13:59,647
+Bugün biraz daha Network'lere gireceğiz. Network'ler çok fazla iş yapıyorlar, resim üretiyorlar.
+
+13
+00:14:04,087 --> 00:14:06,747
+Çok enteresan işler yapıyorlar.
+
+14
+00:14:12,947 --> 00:14:15,447
+Şimdi biz tabii en baştan başlayacağız.
+
+15
+00:14:28,052 --> 00:14:35,991
+Neural Networkler bu orijinal gördüğümüz lineer sınıflayıcıdan, ona bağlı esasen.
+
+16
+00:14:41,235 --> 00:14:55,076
+Hatırlarsanız Linear Sınıflayıcı şöyle bir şeydi. Input vardı. X. Bir W ağırlıklarıyla çarpıyorduk. Bir F değer, skor değeri elde ediyorduk.
+
+17
+00:14:59,475 --> 00:15:00,495
+Şimdi...
+
+18
+00:15:06,419 --> 00:15:07,419
+Bunu
+
+19
+00:15:11,635 --> 00:15:19,255
+İki layer'a çıkartmak istediğimizi düşünelim. Ne demek iki layer? İki tane arka arkaya sınıflayıcı koyacağız.
+
+20
+00:15:20,216 --> 00:15:21,475
+Nöral networklerde.
+
+21
+00:15:24,295 --> 00:15:25,535
+Ne yapıyoruz?
+
+22
+00:15:34,292 --> 00:15:40,204
+Bu önceki fonksiyon, yani şu fonksiyonu ne yapıyoruz?
+
+23
+00:15:45,172 --> 00:15:57,591
+Doğrusal olmayan bir fonksiyondan geçiriyoruz. Bu örnekte doğrusal olmayan fonksiyon sıfırla karşılaştırıyor değerleri.
+
+24
+00:16:00,947 --> 00:16:25,147
+sıfırdan büyük olanları alıyor. Sıfırdan küçük olanlar için sıfır döndürüyor. Bu bize şu ilk birinci F'i verecek. Sonra onu W2 ile çarpıp, yani yeni F yapıyoruz. Bu kısım yeni X olmuş oluyor.
+
+25
+00:17:05,523 --> 00:17:12,383
+Non-linear olması önemli orada. Non-linear bir fonksiyon istiyoruz. Neden?
+
+26
+00:17:16,723 --> 00:17:29,483
+Hatırlarsanız, geçen hafta görmüştük, daha önceki haftalarda doğrusal olmayan sınıflayıcılar, doğrusal olmayan problemlerde sorun yaşıyor.
+
+27
+00:17:34,900 --> 00:17:45,260
+Yani bu problemi şöyle tek bir doğrusal sınıflayıcıyla kırmızılarla mavileri ayıramazsınız. Bu problemi çözülmezsiniz.
+
+28
+00:17:49,880 --> 00:17:57,676
+Şey yaptığımızda, non-dinearlık koyduğumuzda, örneğin burada...
+
+29
+00:17:58,867 --> 00:18:03,227
+Polar koordinatlardan şeye geçmişler ama
+
+30
+00:18:06,227 --> 00:18:08,727
+öklit koordinatına geçmişler.
+
+31
+00:18:13,779 --> 00:18:17,299
+Daha doğrusu Öklik'ten polar koordinata geçmişler.
+
+32
+00:18:19,159 --> 00:18:26,319
+Ne oluyor? Şöyle rahatlıkla bunları ayrılabilecek hale, ayırabileceğiniz hale geliyor problem.
+
+33
+00:18:28,379 --> 00:18:33,240
+Dolayısıyla ordanan lineer bir fonksiyon istiyoruz.
+
+34
+00:18:47,731 --> 00:18:48,991
+Neural Network.
+
+35
+00:18:53,236 --> 00:19:01,816
+Şimdi bunu 3 network'e çıkarabilirsiniz. Fikir yine aynı. Daha kompleks bir probleminiz var.
+
+36
+00:19:01,816 --> 00:19:08,816
+Bir layer daha ekliyorsunuz mesela. 3 layer.
+
+37
+00:19:12,339 --> 00:19:13,227
+Önüm.
+
+38
+00:19:23,380 --> 00:19:44,220
+3 layer'a geçtiniz mesela. Fikir aynı. Bu çıktığı bu sefer yine bir non-linear fonksiyondan geçirip yine bir matrice ile çarpıyorsunuz. Ne yaptınız? Biraz daha kompleks bir problemi artık çözebilirsiniz.
+
+39
+00:19:52,180 --> 00:20:05,800
+Burada matriz çarpımlarının matriz çarpımı yaparken kullandığınız matriz boyutlarına dikkat etmeniz gerekiyor.
+
+40
+00:20:08,320 --> 00:20:18,579
+Mesela başlangıçta bir resim var diyelim ki 3072 boyut yani tüm pikselleri 3072 tane.
+
+41
+00:20:19,731 --> 00:20:22,371
+Diyelim ki 10 sınıfa ayıracağız.
+
+42
+00:20:24,192 --> 00:20:35,451
+O zaman şu matrislerin boyutlarını öyle ayarlamanız gerekiyor ki en sonunda 10 çıktı olsun.
+
+43
+00:20:36,451 --> 00:20:40,051
+Güzelce matrislerin boyutlarını tasarlamanız gerekiyor.
+
+44
+00:20:41,391 --> 00:20:45,591
+İki adım varsa, W1, W2 gibi ikili ayırsa.
+
+45
+00:20:46,003 --> 00:21:11,083
+İşte bunun çıktılarını bu matriz kabul edebilecek şekilde her bir matrizin bir boyutu giriş ile ilgili olacak. Kaç satır olduğu, kaç sütürün olduğu da çıktı sayısı ile ilgili olacak. W1'in 3072 şeyi olmalı.
+
+46
+00:21:12,276 --> 00:21:21,635
+W2'nin sütunu 100 tane satır olmalı. W2'nin 100 sütunu olmalı, 10 satır olmalı.
+
+47
+00:21:21,635 --> 00:21:28,796
+Yani matriz çarpımı yapıyoruz ya burada. Şu aradaki 100 de hiperparametre.
+
+48
+00:21:28,796 --> 00:21:38,056
+Yani aradaki o çıktı kaç boyutlu olsun bu bir hiperparametre.
+
+49
+00:21:38,708 --> 00:21:44,208
+Kesin bir şeyi yok. Deneme yanılmayla bulunan şeyler.
+
+50
+00:21:52,756 --> 00:21:57,756
+Bu nonlinear fonksiyonu activation function deniliyor.
+
+51
+00:22:04,155 --> 00:22:15,692
+Eğer onu kullanmazsanız, yani nonlinearliği kullanmazsanız, dediğimiz gibi bu kaç tane layer koyarsanız koyun.
+
+52
+00:22:16,627 --> 00:22:25,987
+Sonuçta matrisleri birbiriyle çarpmış oluyorsunuz. Matris çarpımı size yine bir matris veriyor.
+
+53
+00:22:25,987 --> 00:22:38,947
+Kaç kat, kaç layer kullanırsanız kullanın yine lineer bir sınıflayıcı olmuş oluyor. Yeni bir güç, yeni bir kompleksiyeti katmıyor.
+
+54
+00:22:41,619 --> 00:22:50,119
+Çeşitli aktivasyon fonksiyonları var. Bu işin tarihçesi için de denenmiş, geliştirilmiş.
+
+55
+00:22:57,523 --> 00:23:07,043
+Şimdilerde Reli fonksiyonu, bu az önce kullandığımız Max fonksiyonu yani.
+
+56
+00:23:09,763 --> 00:23:13,123
+Buna özel isim olarak Reli diyoruz.
+
+57
+00:23:16,163 --> 00:23:22,723
+Popüler oldu. Reli fonksiyonu oldukça başarılı sonuçlar veriyor.
+
+58
+00:23:24,852 --> 00:23:28,612
+Dolayısıyla direkt Relu ile başlayabilirsiniz.
+
+59
+00:23:29,472 --> 00:23:32,092
+Veya Relu'nun versiyonları var.
+
+60
+00:23:32,832 --> 00:23:34,892
+Şunlar hep Relu'nun versiyonları.
+
+61
+00:23:36,792 --> 00:23:41,432
+Geliştirilmiş işte Relu'yu biraz masajlamışlar.
+
+62
+00:23:46,231 --> 00:23:48,432
+Sigmoid tarihsel olarak...
+
+63
+00:23:49,779 --> 00:24:03,779
+Tanage ve Sigmoid ilk bu işler çıktığında kullanılıyordu. Ama şimdilerde çok iyi sonuç vermiyor. Verdiği düşünülmüyor. Yani deneylerde öyle görünmüş.
+
+64
+00:24:06,779 --> 00:24:14,779
+O yüzden pek kullanılmıyor. Daha çok Relu kullanılıyor veya Relu'nun işte daha ileri.
+
+65
+00:24:15,539 --> 00:24:21,139
+Elu, Gelu, Silu, Likirelu gibi şeyler kullanılıyor.
+
+66
+00:24:38,579 --> 00:24:49,579
+Mimari olarak baktığımızda, Network Mimarisi olarak baktığımızda, bu Layer'ların isimlendirilme şekilleri oluyor.
+
+67
+00:24:52,920 --> 00:24:59,659
+Girişimiz aslında bir Layer değil. Girişimiz giriş ama ona da bir Layer denildiği oluyor.
+
+68
+00:24:59,659 --> 00:25:05,440
+Yani bu X, Input Layer olarak geçiyor.
+
+69
+00:25:08,692 --> 00:25:22,351
+En son çıktı, yani sınıfların bulunduğu şey Output Layer. Aradaki katmanlara da Hidden Layer, gizli katman deniliyor.
+
+70
+00:25:22,731 --> 00:25:32,351
+Burada şimdi Layer'ları sayarsak 4 Layer var ama, yani Input Layer'ı da sayarsan ama, Input'ı ayırıyorsun.
+
+71
+00:25:34,963 --> 00:25:44,264
+Neural Network'ün kendisi 3 layer, 3 layer veya 2 hidden layer gibi söylenilebiliyor.
+
+72
+00:25:46,103 --> 00:25:53,744
+Son katman, buradaki layerler fully connected. Ne demek?
+
+73
+00:25:53,744 --> 00:26:00,744
+Her bir giriş uniti, giriş bileşeni.
+
+74
+00:26:02,996 --> 00:26:24,456
+Çıktıdaki bir sonraki, yani giriş katmanı, çıktı katmanıyla tam bağlı. Her bir komponent, her bir komponentle bağlı. Ne demek? Formülde onun değerinin hesaplanmasında etki ediyor demek.
+
+75
+00:26:28,339 --> 00:26:32,819
+Yerde böyle olmayan mimariler de göreceğiz.
+
+76
+00:26:37,203 --> 00:26:44,443
+Nöral Network'lerin hesabı aslında az önce söylediğimiz, ilk başta gösterdiğimiz gibi.
+
+77
+00:26:49,715 --> 00:26:51,715
+Bu F burada
+
+78
+00:26:51,715 --> 00:26:53,227
+Pardon
+
+79
+00:27:02,963 --> 00:27:12,563
+F aktivasyon fonksiyonu. Burada ne yapmışlar, ne kullanmışlar? Sigmoid kullanmışlar, basit olsun diye.
+
+80
+00:27:12,563 --> 00:27:20,963
+X girişimiz W ile X'i çarpıyor.
+
+81
+00:27:24,692 --> 00:27:37,951
+Formüllerde genelde bazen şu biyaz terimi oluyor. Her zaman biyaz terimi oluyor fakat formül gösterimlerinde formülü kalabalıklaştırdığı için ihmal ediliyor.
+
+82
+00:27:37,951 --> 00:27:51,152
+Yani formülde yazmasa bile biyaz var orada. Dolayısıyla biyazı her zaman düşünün, her zaman ekleyin. B1, B2, B3 gibi.
+
+83
+00:27:53,268 --> 00:28:03,728
+Bu formüllerde formülü kalabalıklaştırdığı için çoğu kez gösterilmiyor.
+
+84
+00:28:05,847 --> 00:28:19,508
+Bu da bir vektör. Yani şu h1 kaç bileşene sahip olacaksa b1 de o kadar bileşene sahip bir vektör oluyor ki toplama.
+
+85
+00:28:19,903 --> 00:28:22,284
+Matris toplaması yapılacak burada.
+
+86
+00:28:23,384 --> 00:28:25,884
+Birleşen birleşen o toplama başarılı olsun.
+
+87
+00:28:32,692 --> 00:28:34,692
+Aslında yani,
+
+88
+00:28:34,692 --> 00:28:37,692
+Nampayı da kullanırsanız,
+
+89
+00:28:40,692 --> 00:28:41,692
+Pardon.
+
+90
+00:28:52,531 --> 00:29:03,531
+Nampayı da kullanırsanız, yani böyle iki katmanlı bir network'ün kodlanmasını 20 satırda yapabiliyorsunuz.
+
+91
+00:29:08,211 --> 00:29:13,851
+Burada mesela network parametreleri, before world pass yaptınız.
+
+92
+00:29:14,612 --> 00:29:19,211
+Şimdi bir de gradiyanları hesap etmeniz gerekiyor.
+
+93
+00:29:19,991 --> 00:29:23,311
+Yani geçen hafta görmüştük hatırlarsanız.
+
+94
+00:29:26,391 --> 00:29:32,532
+Bu neural networklerdeki tüm amaç, doğru W'ları bulmak ya.
+
+95
+00:29:39,347 --> 00:29:47,587
+Dolayısıyla, gradiyanlar yardımıyla W'ların değerlerini birazcık değiştiriyoruz.
+
+96
+00:29:51,731 --> 00:29:53,371
+Şey yapıyoruz yani.
+
+97
+00:29:57,779 --> 00:30:04,339
+Gradiyant Descent yapıyoruz burada. Gradiyanları bulup Gradiyant Descent yapıyoruz.
+
+98
+00:30:15,059 --> 00:30:38,059
+Kaç layer olacak? Kaç, her bir layer'da kaç bileşen olacak? Bunlar formülü olmayan şeyler, bilinmeyen şeyler. Ama genel olarak, şunu şu görünmüş, daha çok layer varsa, her bir layer'daki...
+
+99
+00:30:38,740 --> 00:30:57,579
+Burada nöron lafını görüyoruz. Nöron biyolojiden geliyor ama biz de pek nöron kullanmadık. Çünkü biyoloji tarafından gelmiyoruz. Matematikten geliyoruz.
+
+100
+00:31:05,460 --> 00:31:16,260
+Aradaki o gizli katmanlardaki o vektörler var ya, o vektörlerdeki bileşen sayısı.
+
+101
+00:31:22,900 --> 00:31:24,940
+Geriye gidip göstermek istiyorum.
+
+102
+00:31:29,652 --> 00:31:39,692
+Şurada mesela H100 ya, yani pardon, bu niye böyle yapıyor anlamadım bir türlü ya.
+
+103
+00:31:49,460 --> 00:31:55,420
+Şu H100 ya, 100 nöronlu olmuş oluyor yani.
+
+104
+00:32:05,460 --> 00:32:22,800
+Dolayısıyla daha çok nöron, o ne demek? Daha büyük network, daha çok kapasite, daha kompleks problemler için daha kompleks sınırlar çizebiliyor.
+
+105
+00:32:31,092 --> 00:32:32,372
+Ne demiş?
+
+106
+00:32:39,923 --> 00:32:41,923
+Böyle bir öğüt vermiş.
+
+107
+00:33:03,700 --> 00:33:06,159
+Şimdi şunu demek istiyor diye tahmin ediyorum.
+
+108
+00:33:07,380 --> 00:33:15,480
+Nörel Network boyutu, boyutun artması, azalması.
+
+109
+00:33:15,480 --> 00:33:23,880
+Şimdi daha büyük boyutlu, daha çok katmanlı nörel Network demek, daha kompleks yapı demek.
+
+110
+00:33:24,039 --> 00:33:26,420
+Halbuki hatırlarsanız biz ne yapmak istiyorduk?
+
+111
+00:33:27,539 --> 00:33:28,480
+Okkamın...
+
+112
+00:33:29,107 --> 00:33:53,987
+O Camps Razor denilen bir şey vardı. Daha basit şeyleri tercih ediyorduk. Buradaki basitlik, Nörel Network'ü basit olarak seçmeye çalışmayın diyor. Onun yerine regularization terimini güçlü kullanın. O şekilde regularize edin diyor.
+
+113
+00:33:54,963 --> 00:34:11,463
+Genel olarak böyle bir tavsiye var. Çünkü modern nöral networkler inanılmaz korkunç büyük. Onları regülarize etmek için bu regülarizasyon terimlerini daha güçlü kullanın.
+
+114
+00:34:16,211 --> 00:34:22,572
+Bu nöral networklerin tabii fikir biyolojiden geliyor.
+
+115
+00:34:32,340 --> 00:34:47,539
+Beyindeki nöronlarla ilişkisi var. İlk böyle nöron network çalışmalarında beyindeki sinir hücreleri modellenmeye çalışılmış.
+
+116
+00:34:53,396 --> 00:34:56,736
+Sigmoid fonksiyonu da bayağı belirliyormuş.
+
+117
+00:35:00,476 --> 00:35:09,396
+Tabii biz direkt onu kullanmıyoruz. Yani biyolojik sinir sistemi, beyindeki o biyolojik yapı,
+
+118
+00:35:12,896 --> 00:35:16,396
+onu birebir daha ayrıntılı...
+
+119
+00:35:17,920 --> 00:35:38,420
+Taklit etmeye çalışan yapılar da var ama en azından bu derste biz biraz daha düzenli, belirli yapısı olan, basit matematiğe oturmuş o matriz çarpımları vesaire gibi.
+
+120
+00:35:39,956 --> 00:35:46,355
+Bir şey üzerine gidiyoruz. Dolayısıyla ben çok network, çok biyoloji...
+
+121
+00:35:51,123 --> 00:36:03,763
+Biyoloji tarafına değil de matematik tarafına bakma tarafı. Bizim dersimizde. Zaten biyolog değiliz. O işleri de bilmiyoruz.
+
+122
+00:36:09,108 --> 00:36:23,347
+Ama dediğim gibi bunu baya baya şey etmeye çalışan, taklit etmeye çalışan bir sürü çalışmalar da var. Daha beyine uyumlu yapmaya çalışan falan.
+
+123
+00:36:31,635 --> 00:36:37,956
+Çok da uymuyor yani. Şu anda biz birebir böyle bir benzerlikle gitmiyoruz.
+
+124
+00:36:39,635 --> 00:36:50,335
+Biraz daha matematik üzerinden gitmek istiyoruz. Matematik, sınır çizgileri, optimizasyon.
+
+125
+00:37:00,211 --> 00:37:13,971
+Geçen hafta gördüğümüz bu optimizasyon olayı vardı. Nöral Networklerde de bu optimizasyon sistemini kullanacağız birebir.
+
+126
+00:37:18,164 --> 00:37:21,204
+Skor fonksiyonumuz şu şekilde bir şey.
+
+127
+00:37:22,124 --> 00:37:23,644
+Non-linear t-ch-ren.
+
+128
+00:37:28,916 --> 00:37:30,716
+Bir skor fonksiyonumuz var.
+
+129
+00:37:34,483 --> 00:37:40,603
+Her bir nesne için
+
+130
+00:37:40,603 --> 00:37:47,083
+Hinge Loss denilen bir loss fonksiyonu kullanılıyor.
+
+131
+00:37:51,219 --> 00:37:54,139
+Bir regularizasyon terimi ekleniliyor.
+
+132
+00:38:00,880 --> 00:38:04,119
+Hatta iki tane regularizasyon terimi eklemiş.
+
+133
+00:38:06,500 --> 00:38:08,699
+Bu bir tane loss'u veriyor.
+
+134
+00:38:11,199 --> 00:38:17,399
+Bütün bu loss'ları toplayıp ortalamasını alırsanız da verideki loss'u, data loss.
+
+135
+00:38:20,563 --> 00:38:31,243
+Data Loss'u elde ediyorsunuz. Sanırım burada Data Loss artı Regularization demiş. Total Loss. Sanırım burada şey mi yapmış.
+
+136
+00:38:35,059 --> 00:38:40,079
+Şu ikisi bir galiba.
+
+137
+00:38:44,179 --> 00:38:45,179
+Yani,
+
+138
+00:38:48,692 --> 00:38:49,731
+Şöyle galiba.
+
+139
+00:39:01,523 --> 00:39:03,523
+Hinclos da
+
+140
+00:39:04,523 --> 00:39:05,523
+SC
+
+141
+00:39:05,523 --> 00:39:07,523
+şey
+
+142
+00:39:09,523 --> 00:39:10,923
+skorları
+
+143
+00:39:24,275 --> 00:39:38,855
+Gerçek, Label'ın skorunu her bir bileşenin skorundan çıkarıyorsunuz. Birle topluyorsunuz. Sonra yine Relu'ya veriyorsunuz.
+
+144
+00:39:46,675 --> 00:39:49,395
+Şimdi burada ne var?
+
+145
+00:39:49,395 --> 00:39:57,395
+Tabii gradient descent yapabilmek için...
+
+146
+00:40:03,251 --> 00:40:05,251
+Gradiyana ihtiyacımız var.
+
+147
+00:42:50,579 --> 00:42:53,599
+Gradiyanları nasıl hesap edeceğiz?
+
+148
+00:42:56,980 --> 00:42:58,440
+Buradaki...
+
+149
+00:43:01,492 --> 00:43:07,492
+Fonksiyon inanılmaz kompleks hale geliyor. Çünkü katman katman gidiyoruz.
+
+150
+00:43:11,699 --> 00:43:17,939
+Bir katman, iki katman, üç katman, en katman, şimdi modern yüz elli katman.
+
+151
+00:43:23,092 --> 00:43:32,811
+Dolayısıyla o gradiyanları analitik olarak elde etmek çok zor.
+
+152
+00:43:35,372 --> 00:43:39,731
+Bunun yerine ne kullanılıyor?
+
+153
+00:43:39,992 --> 00:43:43,051
+Back Propagation denilen bir algoritma var.
+
+154
+00:43:45,612 --> 00:43:49,971
+Computational Graph'lar üzerinden Back Propagation kullanılıyor.
+
+155
+00:44:19,443 --> 00:44:24,784
+Verilecek galiba. O yüzden geçiyorum.
+
+156
+00:44:28,692 --> 00:44:35,692
+Bütün bu modern networklerde hep backpropagation kullanılıyor.
+
+157
+00:44:37,391 --> 00:44:43,192
+Nasıl çalışıyor? Şöyle basit bir yöntem ile, basit bir örnekle görelim.
+
+158
+00:44:46,963 --> 00:44:51,064
+Diyelim ki, böyle bir fonksiyonumuz var.
+
+159
+00:44:56,943 --> 00:45:03,344
+Şimdi bu fonksiyon bize bir computational graf veriyor aslında.
+
+160
+00:45:04,623 --> 00:45:07,703
+X ile Y'yi alıyoruz, topluyoruz.
+
+161
+00:45:09,483 --> 00:45:14,104
+Q diyelim buna, Q'yu elde ediyoruz. Burada Q yok ama
+
+162
+00:45:18,164 --> 00:45:26,844
+Biz isimlendirelim yani. Z ile köyü topluyoruz. Sonuç F elde ediyoruz.
+
+163
+00:45:35,507 --> 00:45:40,707
+Şimdi bir forward pass yapalım. Yani diyelim ki gerçek değerler verelim.
+
+164
+00:45:42,068 --> 00:45:45,728
+X-2 olsun, Y-5 olsun, Z-4 olsun.
+
+165
+00:45:54,036 --> 00:46:01,716
+Basit. Eksi 2 ile 5'i topladık. 3 bulduk. Eksi 4 ile 3'ü çarptık. 12 bulduk.
+
+166
+00:46:10,036 --> 00:46:27,775
+Lokal gradiyanları hesap etmek kolay. X artı Y beraber Q'yu veriyordu. Q'nun X'e göre türevi 1, Q'nun Y'ye göre türevi 1. Yani şuradaki lokal türevleri hesap etmek kolay.
+
+167
+00:46:31,256 --> 00:46:33,336
+Şurada bir fonksiyonumuz var.
+
+168
+00:46:38,228 --> 00:46:50,807
+F'yi hesap ederken Q ile Z'yi çarpıyoruz. O da kolay. F'in Q'ye göre türevi Z'ye göre türevi Q.
+
+169
+00:47:01,748 --> 00:47:10,927
+X, Y, Z'ye göre türevini istiyoruz. Yani en sondaki çıktının en baştaki girdilere göre türevini istiyoruz.
+
+170
+00:47:12,528 --> 00:47:23,327
+Burada zincir kuralı var. Backpropagation yaparak zincir kuralı yardımıyla ne yapabiliyoruz?
+
+171
+00:47:25,139 --> 00:47:33,619
+Bunları basit bir şekilde, iteratif, adım adım hesap edebiliyoruz. Şimdi en başta f'in f'e göre türevini düşünelim.
+
+172
+00:47:36,399 --> 00:47:39,159
+Bu bir.
+
+173
+00:47:41,319 --> 00:47:44,680
+f'in z'ye göre türevini bulmak istiyoruz.
+
+174
+00:47:47,420 --> 00:47:50,119
+Bu direk olduğu için 3.
+
+175
+00:47:51,731 --> 00:48:14,851
+Şimdi f'in q'ye göre türevi, asıl backpropagation burada giriyor. Eksi 4. Yani gradiyanları yukarıdan aşağı doğru, geriye doğru back. Geriye doğru hesaplaya hesaplaya, ekleye ekleye gideceğiz.
+
+176
+00:48:17,972 --> 00:48:23,072
+Şimdi F'in Y'ye göre türevini hesap ederken artık neyi kullanacağız?
+
+177
+00:48:24,851 --> 00:48:28,832
+F'in Q'ya göre türevini zaten hesap etmiştik.
+
+178
+00:48:30,652 --> 00:48:33,292
+O önceden hesap ettiğimiz şeyi kullanacağız.
+
+179
+00:48:33,771 --> 00:48:34,771
+Türevi kullanacağız.
+
+180
+00:48:36,112 --> 00:48:37,952
+Zincir kuralıyla bu nedir?
+
+181
+00:48:39,092 --> 00:48:43,652
+F'in Q'ya göre türevini Q'nün Y'ye göre türeviyle çarparsanız
+
+182
+00:48:44,596 --> 00:48:48,596
+f'in y'ye göre türevini bulursunuz. Yani buraya gelmiş oluyoruz.
+
+183
+00:48:50,596 --> 00:48:53,596
+Burada terim olarak
+
+184
+00:48:56,596 --> 00:49:06,411
+bunu hesap ederken, lokal gradiyant q'un y'ye göre türevi. Buna lokal gradiyant deniliyor.
+
+185
+00:49:11,860 --> 00:49:19,699
+Yukarıdan gelen f'in q'ye göre türevi ne ise upstream gradient deniliyor. Bu terimleri kullanacağız bu slide'da.
+
+186
+00:49:24,884 --> 00:49:49,283
+Dolayısıyla ne oldu? Gradiyan, f'in y'ye göre gradiyana eksi 4 çıktı. Türevler hep basit. Lokal türevlere bakıyoruz. Bunlar da basit alınabiliyor. Analitik kısım basit oluyor yani. Olayı bu.
+
+187
+00:49:50,835 --> 00:50:13,036
+Bunlar memorize edilebilir. İmplementasyonda şunu bir kere buldunuz. Bir sonrakinde tekrar bulmanıza gerek yok. Bir kenarda hafızada tutuyorsunuz. Tak kullanıyorsunuz. Dolayısıyla oldukça esasen hızlı çalışan bir şey.
+
+188
+00:50:22,963 --> 00:50:26,104
+Tekrar bakalım. Şuna bir fokuslayıp.
+
+189
+00:50:54,675 --> 00:50:59,235
+Yukarıdan gelen gradiyanta upstream gradiyant diyoruz.
+
+190
+00:51:02,376 --> 00:51:07,475
+Oradaki gradiyanta ise lokal gradiyant diyoruz bir node'da.
+
+191
+00:51:10,475 --> 00:51:21,015
+Bir sonraki, buradaki gradiyan bir sonraki aşama için, yani biz downstream gradiyan diyoruz ama şuradaki node için upstream gradiyant olacak.
+
+192
+00:51:25,012 --> 00:51:47,832
+Böyle böyle sistem devam ediyor. Burada biraz daha kompleks bir örnek var. Sigmoid fonksiyonu bu sanırım. Yine forward'ı önce bir hesap etmemiz gerekiyor. Sonra geriye doğru adım adım ne yapabiliyoruz? Gidebiliyoruz.
+
+193
+00:51:52,179 --> 00:51:54,979
+Şimdi bu yaklaşımın şöyle bir güzel tarafı da var.
+
+194
+00:51:58,420 --> 00:52:00,859
+Sigmoid'in ne olduğunu biliyoruz.
+
+195
+00:52:01,399 --> 00:52:02,759
+Bu sigmoid fonksiyonu.
+
+196
+00:52:03,799 --> 00:52:06,920
+Sigmoid fonksiyonunun zaten analitik türevi var.
+
+197
+00:52:10,679 --> 00:52:13,059
+Şu şekilde tanımlanmış.
+
+198
+00:52:20,500 --> 00:52:36,539
+Dolayısıyla bu ara şunları boş verip olduğu gibi burası zaten sigmoid. Buradaki türevi kullanabiliriz. Yani buradaki nohutları kaldırıp buraya tek bir sigmoid nohutu koyabiliriz.
+
+199
+00:52:46,547 --> 00:52:56,367
+Şimdi bu gradiyanlar akarken bir kısım şeylerle çok karşılaşılıyor.
+
+200
+00:52:58,487 --> 00:53:05,747
+Bu durumlara isim vermişler ve nasıl çalıştığını incelemişler.
+
+201
+00:53:10,003 --> 00:53:36,663
+Mesela Add Gate demiş yani toplama kapısı. Ne yapıyor bu? Gradiyanları dağıtıyor. Yani 2 ile 2'yi, 3 ile 4'ü topluyorsunuz, 7 forward pasta. Şunu gözlemlemişler. Backward pasta, 2 geliyor ya, upstream'den 2 geliyor.
+
+202
+00:53:37,492 --> 00:53:42,572
+Bu upstream'den gelen 2'yi aşağıya dağıtıyor.
+
+203
+00:53:44,132 --> 00:53:50,332
+Copygate, yani 7 var. 7'yi 2'ye bu şekilde kopyaladınız.
+
+204
+00:53:53,932 --> 00:53:58,231
+Bu gradyant toplayıcı oluyor. Tersten baktığımızda.
+
+205
+00:54:00,292 --> 00:54:03,492
+Upstream'den gelen 4 ve 2 toplanılıyor.
+
+206
+00:54:04,788 --> 00:54:13,688
+Çarpım kapısı swap multiple ayırıyor. Yani 2 ile 3'ü çarpıp 6'a elde ediyorsunuz.
+
+207
+00:54:13,688 --> 00:54:28,688
+Geri dönüşte 5 ile buradaki gradiyanı bulurken şunu çarpıyorsunuz.
+
+208
+00:54:32,307 --> 00:54:36,748
+Yani çarpımların yeri değişmiş oluyor.
+
+209
+00:54:39,923 --> 00:54:51,724
+Max Gate'de, şimdi 0 ile 9'un maksimumu 9'dur. Pardon, 4 ile 5'in maksimumu 5'dir.
+
+210
+00:54:51,724 --> 00:55:01,264
+Forward Pass'ta. Yukarıdan gelen, diyelim ki 9 olsun. Gradyan. Aşağıya geçerken,
+
+211
+00:55:03,699 --> 00:55:13,019
+Max'dan gelene 9 geçiyor. Değeri 0 oluyor. Gradiyan 0 oluyor. Yani gradiyanın yönlendirilmesi.
+
+212
+00:55:16,019 --> 00:55:18,739
+Bu şekilde şey çok önemli.
+
+213
+00:55:20,880 --> 00:55:22,763
+Yani bu gradiyan işin...
+
+214
+00:55:26,324 --> 00:55:36,184
+Çok temeli. Gradiyanlar nasıl akıyor? Bu çok önemli hale geliyor. Nöral Network tasarımında.
+
+215
+00:55:40,340 --> 00:56:00,340
+Gradiyanlar patlıyor mu? Yani Exploding Gradiyanlar var veya Vanishing Gradiyan var. Gradiyanlar sönüp yok oluyor mu? Hangi bir kolda çok giderken başka bir yerde hiç gitmiyor mu? Yani Gradiyan akışını...
+
+216
+00:56:02,963 --> 00:56:08,564
+Gradiyan akışını düzenlemeye çalışıyor mimarilerin birçoğu gözlemlediğim kadarıyla.
+
+217
+00:56:11,104 --> 00:56:14,463
+Bunları göreceğiz ileride mimarilerde.
+
+218
+00:56:18,195 --> 00:56:24,336
+Bunları Nampay ile hesaplamak oldukça kolay.
+
+219
+00:56:29,844 --> 00:56:42,283
+Adım adım geriye doğru gitmeniz gerekiyor. Bunu biraz daha alt alta yazmaktansa daha modüler bir şekilde yazabilirsiniz.
+
+220
+00:56:42,283 --> 00:56:54,724
+Yazılım mühendisliği açısından. Mesela PyTorch çok bilinen bir şey böyle yapıyor. Mesela çarpım diye bir sınıf oluşturmuş.
+
+221
+00:56:55,764 --> 00:57:08,384
+Çarpımın bir forward'ı var. Yani bütün bu toplanmada da var bu. Hepsinde bir forward bir de backward metodu var.
+
+222
+00:57:16,148 --> 00:57:20,847
+Bu sırada hafızayı alma, saklamalar falan var.
+
+223
+00:57:25,460 --> 00:57:36,640
+Ne yapıyor? İşte o mantığı hemen kuruveriyor. Yani bu bu nodu güzelce kodlarsanız bu nodları birleştirerek
+
+224
+00:57:41,364 --> 00:57:42,059
+Teşekkürler.
+
+225
+00:57:46,387 --> 00:57:54,148
+Bu nodları birleştirerek güzel, çok büyük sistemler oluşturabiliyorsunuz.
+
+226
+00:58:04,692 --> 00:58:26,372
+PyTorch'ta bu tarz bir sürü node tanımlanmış, operasyon tanımlanmış. Mesela Sigma 8'in implementasyonuna bakmış. Tabii altyapı olarak hızlı olması için C++ kullanılmış ama mantık benziyor.
+
+227
+00:58:32,052 --> 00:58:38,231
+Forward'ı başka bir yerde tanımlamış, Backward'ı başka bir yerde tanımlamış ama mantık aynı.
+
+228
+00:58:41,072 --> 00:58:55,231
+Şimdi şey kolay, scalarlarla bu şekilde, gradiyan hesapları, Backpropagation kolay ama fonksiyonlarımız...
+
+229
+00:58:58,931 --> 00:59:21,331
+Vektör bizim. Hatta matris. Matrislerle vektörleri çarpıyoruz. Bu durumda nasıl çalışıyor bu işler? Ona bakmamız gerekiyor.
+
+230
+00:59:22,099 --> 00:59:43,720
+Öncelikle bir hatırlayalım. Normal derivatifde, normal türevde işte skalarsa y'de x'de ne var? x'i çok az değiştirdiğimizde y ne kadar değişir? Aslında türevin genel şeyi bu değil mi?
+
+231
+00:59:49,907 --> 00:59:50,927
+Şimdi
+
+232
+01:00:19,507 --> 01:00:20,268
+Girdi
+
+233
+01:00:20,268 --> 01:00:23,867
+bir vektörse
+
+234
+01:00:23,867 --> 01:00:26,268
+çıktı skalarsa
+
+235
+01:00:29,811 --> 01:00:33,911
+Girdi, arende bir vektör. Çıktı, sıkalar.
+
+236
+01:00:35,951 --> 01:00:40,051
+O zaman türev yerine gradiyan kullanıyoruz.
+
+237
+01:00:42,871 --> 01:00:46,191
+Çıktının her bir girdiğe göre türevini
+
+238
+01:00:47,211 --> 01:00:48,251
+içeriyor.
+
+239
+01:00:49,011 --> 01:00:50,551
+Bu
+
+240
+01:00:51,311 --> 01:00:54,391
+gradiyanın her bir bileşeni. Yani elimizde bir
+
+241
+01:00:57,972 --> 01:01:07,192
+Vektör var. Gradiyan bir vektör zaten. Bu vektörün her bir bileşeni
+
+242
+01:01:10,675 --> 01:01:12,295
+Ne yapıyor?
+
+243
+01:01:14,815 --> 01:01:18,795
+Çıktının o bileşine göre türevini söylüyor bize.
+
+244
+01:01:25,811 --> 01:01:36,771
+Peki, hem girdiği hem de çıktığı vektörse, o zaman buna Jacobian deniliyor.
+
+245
+01:01:41,111 --> 01:01:43,731
+Bir matrice dönüşüyor bu.
+
+246
+01:01:45,271 --> 01:01:49,675
+Çünkü şöyle düşünün, gradiyanın her birinin...
+
+247
+01:01:51,347 --> 01:01:58,467
+Tekrar gradyanının alındığını düşünün. Yani gradyanın gradyanı gibi bir şey oluyor bu.
+
+248
+01:01:58,467 --> 01:02:17,467
+Bu da bize bir matriz veriyor. Bu matrize Jacobian deniliyor. Jacobian'ın her bir bileşeni, o bileşenin yani Y'nin karşılık gelen bileşeninin
+
+249
+01:02:18,771 --> 01:02:26,991
+X'in karşılık gelen bileşenine göre değişimini bize vermiş oluyor veya türevini vermiş oluyor.
+
+250
+01:02:28,491 --> 01:02:41,391
+Yani bileşenlerin içine girdiğimizde gerek gradiyanın gerek Jacobian'ın yine birinci türevle karşılaşıyoruz.
+
+251
+01:02:41,391 --> 01:02:45,371
+Yine türev var her birinde. Standart, scalar gradiyan var.
+
+252
+01:02:46,036 --> 01:02:53,715
+Bütün bunlar, skalar gradiyanların vektör halinde ya da matriz halinde olmasıyla elde ediliyor.
+
+253
+01:02:54,675 --> 01:02:56,655
+Düzenlenmesiyle elde edilebiliyor.
+
+254
+01:03:03,059 --> 01:03:12,420
+Şimdi bunlara bir bakacağız. Öncelikle vektör formu.
+
+255
+01:03:17,652 --> 01:03:32,072
+Öncelikle vektörlere bakacağız ama bir ara verelim. Saat 10'u 5 geçiyor diyelim. 10'u 15 geçeye kadar 10 dakikalık bir ara verelim arkadaşlar.
+
+256
+01:18:09,587 --> 01:18:11,532
+Evet, devam edelim.
+
+257
+01:18:21,043 --> 01:18:23,043
+Vektörler var.
+
+258
+01:18:26,043 --> 01:18:30,043
+Vektörler varken nasıl yapacağız?
+
+259
+01:18:41,043 --> 01:18:49,283
+Şimdi en sondaki L yine sıkalar. Bunu biliyoruz.
+
+260
+01:18:53,747 --> 01:18:54,587
+Öğ...
+
+261
+01:19:02,868 --> 01:19:09,668
+Burada dx, dy, dz. Bunlar x, y ve z vektörleri ama.
+
+262
+01:19:12,948 --> 01:19:16,768
+Yani vektörler giriyor fonksiyona. Çıkışı da bir vektör.
+
+263
+01:19:23,604 --> 01:19:26,963
+Upstream Gradient'da bir vektör.
+
+264
+01:19:31,380 --> 01:19:33,819
+Çünkü L bir sıkılar.
+
+265
+01:19:41,043 --> 01:19:46,423
+Boyutu D, Z boyutunda geliyor. Yani Z'ye göre.
+
+266
+01:19:49,423 --> 01:19:53,663
+Türev alındığı için Z'nin boyutu olmuş oluyor.
+
+267
+01:19:58,515 --> 01:20:15,275
+Yine aşağı giden gradyanlar da Dx'in ve Dy'nin boyutunda. Bunları görüyoruz. Lokal gradyantlar peki ne? Bunlar Jacobian matrisleri.
+
+268
+01:20:27,444 --> 01:20:36,444
+Yani mesela Z'nin X'e göre türevi, Z'nin Y'ye göre türevi. Bunlar matris, Jacobian matrisleri.
+
+269
+01:20:46,836 --> 01:20:50,036
+Burada
+
+270
+01:20:52,275 --> 01:20:55,956
+R'lu kullandığınız zaman bir kısım böyle
+
+271
+01:20:58,275 --> 01:21:00,676
+basitlemeler de oluşuyor.
+
+272
+01:21:02,515 --> 01:21:05,876
+Aktivasyon fonksiyonu olarak
+
+273
+01:21:10,100 --> 01:21:11,940
+Örneğin girişimiz bu olsun.
+
+274
+01:21:19,604 --> 01:21:21,404
+Böyle bir vektör girişimiz.
+
+275
+01:21:25,171 --> 01:21:31,491
+Revu'dan geçirince negatif değerler sıfır oluyor. Pozitif değerler aynen kalıyor.
+
+276
+01:21:33,751 --> 01:21:38,491
+Şimdi upstream gradiyantın bu olduğunu varsayalım.
+
+277
+01:21:40,991 --> 01:21:44,071
+İşte 4 eksi 1, 5, 9 gibi geldi.
+
+278
+01:21:47,731 --> 01:22:11,072
+Şimdi, Relo'nun böyle bir özelliği var. İçeride bir Jacobian matrisi var ama, matrisin değerlerinin çoğu sıfır sadece.
+
+279
+01:22:15,828 --> 01:22:17,148
+Ana Diyogonaldeki
+
+280
+01:22:21,460 --> 01:22:24,020
+değerler sıfır olmayabiliyor.
+
+281
+01:22:31,060 --> 01:22:32,060
+Çünkü
+
+282
+01:22:34,060 --> 01:22:39,060
+dz bölü dx bu. Jacobian bunu temsil ediyor.
+
+283
+01:22:41,060 --> 01:22:42,060
+Ve
+
+284
+01:22:45,971 --> 01:22:52,331
+Mesela bunun, yani şunu elde ederken, şu değeri elde ederken veyahut fark etmiyor.
+
+285
+01:22:56,212 --> 01:22:58,231
+Sadece bu değer etki ediyor.
+
+286
+01:23:00,092 --> 01:23:02,612
+Diğer değerlerin hiçbir etkisi yok.
+
+287
+01:23:06,612 --> 01:23:12,711
+Dolayısıyla o değerlerin etkisini hep sıfır vermemiz gerekiyor. Şunlar hep sıfır.
+
+288
+01:23:22,387 --> 01:23:29,507
+Ve bu değerlerde hep bir gördüğümüz gibi. Yani sıfır olmayanlar hep bir.
+
+289
+01:23:33,300 --> 01:23:34,280
+Öğ...
+
+290
+01:23:43,380 --> 01:23:52,079
+Şimdi bununla da upstream gradiyanı çarptığınızda ne olacak? Aslında
+
+291
+01:23:57,140 --> 01:24:11,319
+Ne yapıyor? Şu sıfır olmayan değerlerle, onları seçiyor yani. Aslında şunu bir kolon matrisine çevirip, birleşen çarpımı yapmış oluyorsunuz.
+
+292
+01:24:22,868 --> 01:24:23,708
+Dolayısıyla
+
+293
+01:24:32,051 --> 01:24:37,531
+Burada, bunlar çok büyük şeyler bu arada. Yani bu Jacobian mesela.
+
+294
+01:24:44,372 --> 01:25:08,235
+Modern networklerde bayağı büyük şeyler oluyor. İleşen sayısı çok olduğu için Jacobian çok büyük. O Jacobian çarpımını ciddi ciddi normal matris matris çarpımıyla yaparsanız böyle çok zaman alıyor. Onun yerine bunun farkında olup...
+
+295
+01:25:11,764 --> 01:25:20,064
+Diagonali ile iki vektör matrisini bileşen çarpımına sokmak daha mantıklı.
+
+296
+01:25:24,020 --> 01:25:26,020
+Çok daha hızlı sonuç verecektir.
+
+297
+01:25:27,480 --> 01:25:30,280
+Buna implicit multiplication diyor.
+
+298
+01:25:34,484 --> 01:25:52,644
+Yani Jacobian'ı ciddiydi ciddi normal kurmaya eksplisit diyor. Jacobian'ı hiç kurmadan Jacobian'ın ana diagonalini oluşturup onunla çarpım almaya eksplisit diyor.
+
+299
+01:26:10,804 --> 01:26:20,804
+Şimdi biraz daha kompleksi matrislerle veya çok boyutlu matrisler, yani tensörlerle.
+
+300
+01:26:23,604 --> 01:26:33,804
+Yani matris 2 boyutlu, diyelim ki 3 boyutlu, 4 boyutlu, daha kompleks şeylere, daha çok boyutlu yapılara tensör diyoruz.
+
+301
+01:26:38,612 --> 01:26:54,152
+Şimdi L hala biz kalır. Bu var elimizde. Ama bu sefer X'imiz bir...
+
+302
+01:26:57,300 --> 01:26:58,796
+Matris
+
+303
+01:27:01,844 --> 01:27:15,863
+D satırdan, M sütundan oluşuyor. Dx, Mx. Yine Y bir matriz. D, Y, M, Y boyutlarında. Çıktığımız da bir matriz. D, Z, M, Z boyutlarında.
+
+304
+01:27:21,939 --> 01:27:38,599
+Şimdi upstream'den gelen gradiyan direkt DZMZ boyutlarında oluyor. Çünkü L bir skalar hala. L'yi skalar olarak tutabiliyoruz.
+
+305
+01:27:50,676 --> 01:28:05,816
+Downstream'ler de yine mesela X'e göre türev, Dx, Mx, X'in boyutlarında oluyor. Y'ye göre türev, Y'nin boyutlarında oluyor.
+
+306
+01:28:09,684 --> 01:28:11,984
+Lokal gradiyanlar nasıl olacak?
+
+307
+01:28:15,824 --> 01:28:16,844
+Bu bayağı tabii
+
+308
+01:28:16,844 --> 01:28:24,084
+bir matriz olarak düşünün. Fakat matrizin
+
+309
+01:28:24,084 --> 01:28:27,684
+bir boyutu
+
+310
+01:28:27,684 --> 01:28:31,963
+DX, MX matrizinin
+
+311
+01:28:31,963 --> 01:28:34,524
+toplam eleman sayısı kadar.
+
+312
+01:28:35,923 --> 01:28:40,083
+Diğer boyutu DZMZ'nin çarpımı.
+
+313
+01:28:41,083 --> 01:28:43,923
+Yani upstream gradiyanın boyutu kadar.
+
+314
+01:28:44,103 --> 01:28:46,644
+Yani yine matris bunlar.
+
+315
+01:28:47,163 --> 01:28:48,403
+Jacobian matrisleri.
+
+316
+01:28:48,403 --> 01:29:00,903
+Fakat çıkış matrisinin her bir bileşeninin, giriş matrisinin her bir bileşenine göre türevini içerdiği için boyutlar bu şekilde oluşuyor.
+
+317
+01:29:06,420 --> 01:29:08,860
+Burada bunun bir örneğini vermiş.
+
+318
+01:29:15,988 --> 01:29:17,988
+x2'ye 3
+
+319
+01:29:20,308 --> 01:29:22,308
+w3'e 3
+
+320
+01:29:24,548 --> 01:29:27,988
+Burada matriz çarpımı formülümüz şey
+
+321
+01:29:32,851 --> 01:29:42,291
+Y'imiz dolayısıyla ne çıkacak? 2'ye 4 çıkacak. Öyle mi oldu? Yanlış yorumluyorum herhalde. Başka bir şey oldu.
+
+322
+01:29:47,923 --> 01:29:52,744
+Bu 4. Ben bunu 3 gibi okmuşum. 4 stünüm var. Tamam.
+
+323
+01:29:56,627 --> 01:30:10,627
+3 sütun gibi görmüştüm. Dolayısıyla çarptığımız zaman 2'ye 4 olur. Çıktığımız 2'ye 4. İşlemimizde Matrix çarpımı.
+
+324
+01:30:12,627 --> 01:30:22,627
+Şimdi bunun şeyini upstream gradiyanına olacaktır. 2'ye 4 olacaktır demiştik.
+
+325
+01:30:24,212 --> 01:30:25,552
+Öğ...
+
+326
+01:30:29,652 --> 01:30:32,131
+İçeride oluşan Jakobyanlar nasıl?
+
+327
+01:30:41,460 --> 01:30:43,460
+dy bölü dx ne oluyor?
+
+328
+01:30:47,059 --> 01:30:48,719
+x'in boyutu 6
+
+329
+01:30:52,340 --> 01:30:57,380
+Girişim boyutu 2x48, 6x8, 48.
+
+330
+01:31:02,707 --> 01:31:04,707
+48 bileşen bunun için var.
+
+331
+01:31:09,684 --> 01:31:17,804
+Burada 3 kere 4, 12. Burada 8. 12 çarpı 8 ne yapıyor?
+
+332
+01:31:22,644 --> 01:31:25,543
+80, 16, 96 mu yapıyor?
+
+333
+01:31:44,819 --> 01:32:10,599
+Tabii daha büyük bir neural network'te bu sayılar büyük olacaktır. Mesela N64 olabilir, DVM 4096 olabilir. Birden Jacobianlar hafızayı dolduruyor. Birazcık daha büyük bir network'te. 256 GB memory.
+
+334
+01:32:12,404 --> 01:32:14,904
+İstiyor.
+
+335
+01:32:19,539 --> 01:32:27,960
+Benim şu anki bilgisayarımda mesela bu kadar hafıza yok. Bir tek çarpım için bu kadar hafızaya ihtiyacımız olabiliyor.
+
+336
+01:32:31,636 --> 01:32:40,236
+Yani mecburen, implicit bir şekilde çalışmanız gerekiyor. Yani Jacobian'ı oluşturmadan.
+
+337
+01:32:43,956 --> 01:32:48,108
+Çarpımı ya bölmeniz gerekiyor ya...
+
+338
+01:32:52,180 --> 01:32:53,899
+Şeyi düşünmeniz gerekiyor.
+
+339
+01:32:57,908 --> 01:33:07,808
+O Jakobyan çarpımının her elemanı nasıl oluşturulur düşünüp eleman eleman hesap etmeniz gerekiyor.
+
+340
+01:33:26,612 --> 01:33:30,971
+Yani mesela ikisi düşünelim.
+
+341
+01:33:37,460 --> 01:33:39,460
+X'teki bu eleman.
+
+342
+01:33:41,460 --> 01:33:46,460
+Bu eleman matriz çarpımına girecek W ile.
+
+343
+01:33:47,460 --> 01:33:57,460
+Şimdi Y elde edilecek. Bu eleman sadece Y'nin birinci satırı elde edilirken kullanılıyor.
+
+344
+01:33:57,460 --> 01:33:59,460
+Ne yapıyorsunuz?
+
+345
+01:34:01,460 --> 01:34:02,988
+W'nun
+
+346
+01:34:03,380 --> 01:34:05,940
+İlgili kısımlarıyla çarpıyorsunuz.
+
+347
+01:34:13,076 --> 01:34:26,076
+Mesela bununla bu satırı çarpıyorsunuz. 13'ü buluyorsunuz. Yine bununla diğer sütunu çarpıyorsunuz. 9'u buluyorsunuz.
+
+348
+01:34:29,076 --> 01:34:35,692
+Bu satır sadece şu satır kullanılırken, elde edilirken kullanılıyor.
+
+349
+01:34:46,931 --> 01:35:05,572
+Dolayısıyla L'yi Los fonksiyonumuzun Y'ye göre türevini aldığımızda, o türevde bu 1 ile ilişkili olan kısım yine sadece en üst satır olmuş oluyor.
+
+350
+01:35:28,627 --> 01:35:44,567
+Dolayısıyla L'nin X, N, D'ye göre türevini düşünelim. N, D burada işte. N, 1, D'de 2 olsun. Birden başlattım saymaya kolay olsun diye.
+
+351
+01:35:49,043 --> 01:36:07,304
+Elimizde böyle bir formül oluşuyor. Yani Jacobian'ı oluşturmadan Jacobian'ın bileşenlerini tek tek hesap edebiliyoruz.
+
+352
+01:36:34,579 --> 01:36:36,420
+Dolayısıyla ne geldi?
+
+353
+01:36:42,771 --> 01:36:44,771
+L'nin X'e göre türevi
+
+354
+01:36:44,771 --> 01:36:52,771
+şöyle bir formül ortaya çıkıyor. L'nin Y'ye göre türevini alıyorsunuz.
+
+355
+01:36:54,771 --> 01:36:55,431
+Şu.
+
+356
+01:36:59,796 --> 01:37:03,456
+Bunu W'nun transpozuyla çarpıyorsunuz.
+
+357
+01:37:04,536 --> 01:37:07,036
+L'nin X'e göre türevi oluşuyor.
+
+358
+01:37:07,935 --> 01:37:12,156
+Benzer mantıkla
+
+359
+01:37:12,996 --> 01:37:17,676
+L'nin W'ye göre türevi, yani şuna göre türevi
+
+360
+01:37:19,476 --> 01:37:23,716
+Bu sefer X'in transpozunu alıyorsunuz.
+
+361
+01:37:26,515 --> 01:37:34,376
+Yine L'nin Y'ye göre türevi ile çarpıyorsunuz. L'nin Y'ye göre türevi zaten upstream'den direkt geliyor.
+
+362
+01:37:35,995 --> 01:37:49,735
+Dolayısıyla burada Jacobian'ı hiç oluşturmadan, o Jacobian'ı atlayarak, iki maddesi birbiri ile çarparak ne yaptık?
+
+363
+01:37:57,460 --> 01:38:03,860
+Sonucu bulduk. Downstream Gradiyanları nasıl elde edileceğini bulduk.
+
+364
+01:38:06,420 --> 01:38:11,800
+Bu matriz çarpımı için yapılmış burada. Diğer işlemler için de toplama gibi,
+
+365
+01:38:12,559 --> 01:38:18,960
+işte çıkarım toplama gibi burada matriz çarpımı var.
+
+366
+01:38:19,444 --> 01:38:44,543
+kopyalama gibi konuşmuştuk ya, o gate'ler vardı. O gate'ler için önemli fonksiyonlar için bu şekilde matrisler için düşünülüp elde edilebilir. Dolayısıyla direkt bunlar kullanılabilir. Yani hiç jacopyana atlayarak.
+
+367
+01:39:11,507 --> 01:39:23,047
+Şimdi bir pdf'i daha bitirmiş olduk. Yani bu pdf'de neyi gördük? Neural Network'lere bir giriş yapmış olduk.
+
+368
+01:39:27,060 --> 01:39:38,200
+Bir ara verelim. 10 dakika bir ara verelim. Gelince de bir sonraki slide'lara geçeceğiz. CNN'lere bakmaya başlayacağız.
+
+369
+01:50:54,484 --> 01:50:56,244
+Tekrar merhabalar.
+
+370
+01:51:22,068 --> 01:51:23,608
+Şimdi kursun
+
+371
+01:51:33,587 --> 01:51:44,203
+Sıralamasında iki şey var. Bir ödev bir artık verilmiş durumda. İkincisi de...
+
+372
+01:51:49,171 --> 01:51:58,572
+Bir Backpropagation Review var. Burada slide'lar var. Colab bir notbook var.
+
+373
+01:52:00,771 --> 01:52:07,331
+Duraları size bırakıyorum ben. Buralara bir bakın. Backpropagation ile ilgili.
+
+374
+01:52:11,123 --> 01:52:13,423
+Ben bir sonraki slide'lara geçiyorum.
+
+375
+01:52:52,948 --> 01:52:54,948
+Bu derste CNN'leri göreceğiz.
+
+376
+01:52:59,444 --> 01:53:25,784
+Geçmişte ne yaptığımızla ilgili tekrarlar bunlar. Linear sınıflayıcıyı gördük. Optimizasyonu gördük. Nöral Networkleri gördük. Backpropagation'ı gördük. Matisler ve vektörlerle. Şimdi convolutional networklere bakacağız.
+
+377
+01:53:28,083 --> 01:53:43,863
+Burada yeni networklerimizi zenginleştirecek yeni şeyler öğreneceğiz. Convolution Layer'ı öğreneceğiz, Pooling Layer'ı öğreneceğiz. CNN'ler direkt imgeler için tasarlanmış.
+
+378
+01:53:49,844 --> 01:54:04,904
+İmgeler için imge tanıma, imge sınıflama ile ilgili çok önceden beri çalışmalar yapılıyordu tabii ki. Bir şey öne çıkmıştı bu CNN'ler çıkmadan önce.
+
+379
+01:54:10,579 --> 01:54:14,159
+İmge üzerinden böyle küçük patchler alıyorsunuz.
+
+380
+01:54:20,404 --> 01:54:30,404
+Sonra bu patchleri bir şekilde patchlerden özellik çıkarıyorsunuz. Sonra o patchlerin yerlerini modelliyorsunuz.
+
+381
+01:54:39,060 --> 01:54:46,700
+Şimdi CNN'ler buna benzer bir şey yapıyor. Yani yine patch'ler üzerinden çalışıyor aslında.
+
+382
+01:54:49,280 --> 01:54:57,060
+O zamanki işte o patch'lerle yapılan yaklaşımlar...
+
+383
+01:55:00,916 --> 01:55:04,836
+Bir nevi nöral network altyapısına taşınmış oldu.
+
+384
+01:55:10,515 --> 01:55:11,395
+Öğ...
+
+385
+01:55:18,612 --> 01:55:20,372
+Tarihçeden bahsetmiş.
+
+386
+01:55:22,172 --> 01:55:38,852
+Şimdi 2020'ye kadar konu oluşunu nörel networkler, CNN'ler hemen her bakımdan en iyi sonuçları veren networklerdi.
+
+387
+01:55:41,779 --> 01:56:00,639
+2021'den itibaren Transformer'lar öne çıkmaya başlıyor. Fakat bunu Lecture 8'de göreceğiz. Oraya da bakacağız. Transformer'lara bakacağız. Oraya giden yolda ama CNN'ler var.
+
+388
+01:56:04,819 --> 01:56:10,459
+Önce bu konvalı ışının layer neymiş ona bir bakalım.
+
+389
+01:56:14,036 --> 01:56:36,896
+Şimdiye kadar Fully Connected Layer'lar gördük. Ne yapıyorduk esasen? Elimizde bir imge varsa bunu tek bir vektör haline getiriyorduk. 3072 piksellik bir vektör haline getiriyoruz diyelim ki.
+
+390
+01:56:43,636 --> 01:56:47,216
+bir weight matrisi ile çarpıyoruz.
+
+391
+01:56:52,336 --> 01:56:53,615
+ne oluyor?
+
+392
+01:56:53,876 --> 01:56:59,756
+çıkan şeyi bir aktivasyon fonksiyonundan geçiriyoruz. non-dineerlikten
+
+393
+01:57:01,296 --> 01:57:03,596
+10 tane sınıfı elde ediyoruz.
+
+394
+01:57:11,604 --> 01:57:30,904
+Şimdi Convolution Layer'da elimizde filtreler oluyor. Yani resim böyle duruyor. Ama bu sefer böyle bir filtre düşünün. 5x5x3'lük, resim 32x32'ye 3'lük diyelim ki.
+
+395
+01:57:38,804 --> 01:58:04,804
+Convolutional Değer Üzerine, yani resim üzerinde kayıyor. Kayarken her bir pozisyonda karşılık gelen bileşenler çarpılıyor, toplanılıyor. Bir sonuç veriyor. Sonra kayıyor, bir yana kayıyor filtre. Karşılık gelen bileşenler çarpılıyor, toplanılıyor. Bu şekilde yeni bir...
+
+396
+01:58:05,555 --> 01:58:18,235
+İmge elde ediyorsunuz bir nevi. Resimden resim elde ediyorsunuz aslında. Bu yeni resme Activation Map deniliyor.
+
+397
+01:58:23,891 --> 01:58:37,931
+Şimdi konvolüsyon sırasında biraz boyutta kayıp oluyor. O neden? Onun ayrıntısına bakacağız ama diyelim ki 32'ye 32 ise bu 28'e 28'e düşüyor.
+
+398
+01:58:39,231 --> 01:58:45,652
+3 ise filtrede 3'e 3'lük olduğu için 1'e düşüyor. Activation Boyutu.
+
+399
+01:58:47,251 --> 01:58:50,431
+Bir başka filtre daha gezdirelim bu sefer.
+
+400
+01:58:52,627 --> 01:58:55,567
+Başka bir filtre bir başka activation map veriyor.
+
+401
+01:58:56,867 --> 01:59:00,727
+Altı filtre gezdirdiğimizi düşünelim. Altı farklı filtre.
+
+402
+01:59:01,608 --> 01:59:03,867
+Altı farklı activation map'imiz oluyor.
+
+403
+01:59:06,867 --> 01:59:16,247
+Dolayısıyla bu bizim bir sonraki katmandaki işte artık isterseniz inge deyin, isterseniz ne derseniz deyin.
+
+404
+01:59:16,688 --> 01:59:18,087
+Çünkü bu da devam edecek.
+
+405
+01:59:18,511 --> 01:59:41,631
+İşlemeye devam edeceğiz bunda. Bir de tabii beyazları da unutmayalım. Beyaz burada da var. 6 tane filtremiz var. Her filtre için bir de beyaz vektörü var. Konvolüsyondan sonra beyaz sayısıyla topluyoruz.
+
+406
+01:59:47,412 --> 02:00:10,532
+Şimdi, diyelim ki iki tane imge var elimizde. Her bir imge için böyle altı altı çıktı oluyor. Yani elimizde batch of imge bir imge batchi var. Böyle bir çıktı batchi oluşuyor. Bunların tabii şeyleri, boyutları.
+
+407
+02:00:12,404 --> 02:00:38,984
+Burada yeni bir boyut giriyor. Dördüncü boyut. Resim 3 boyutluydu. Yani 2 boyutlu resim, bir boyutta işte renk için renk 3 değer içerir ya. Öyle oldu. Şimdi 2 boyutta bu 5'ten dolayı, bir boyut daha 5'ten dolayı girdi. 4 boyutlu bir tensör haline geldi artık bu.
+
+408
+02:00:42,836 --> 02:00:54,156
+Benzer şekilde çıktı da dört boyutlu bir tensör. Yine filtrelerde yine dört boyutlu bir tensör.
+
+409
+02:01:01,779 --> 02:01:18,119
+Bu boyutlar falan şeyde önemli oluyor. Yani neural network'ünüzü böyle layer-layer kurduğunuz zaman bu boyutları güzelce birbiriyle denk olacak şekilde koymanız gerekiyor.
+
+410
+02:01:18,119 --> 02:01:27,119
+Bunun çıktısı bu olur. Öyleyse onun girdisi bu sayıda olmalı falan diye güzelce sayıları...
+
+411
+02:01:27,604 --> 02:01:54,123
+Oturtmanız gerekiyor. Bunlara isim vermiş. Tensörün dört boyutuna isim vermiş. Wid, Height, C'in yani input kanal sayısı. Renkli resimlerde üçtür bu. N'de beş.
+
+412
+02:01:55,891 --> 02:01:57,551
+Etçteki inge sayısı.
+
+413
+02:02:05,779 --> 02:02:29,840
+Filtre nasıl oluyor? H'daki ve W'daki filtre boyutu C'in aynı. Yani bu 3 ise, filtrede de burada 3 olması gerekiyor. Cout'da kaç kanal çıktı istiyorsunuz? Mesela burada 6 idi.
+
+414
+02:02:32,020 --> 02:02:39,820
+N'de yine aynı. Girdiniz N ise, girdi N'i işte 2 imge ise, çıktı da da 2 oluyor.
+
+415
+02:02:41,600 --> 02:02:52,520
+H ve W, çıktıdaki H ve W, girdi'deki H, W'ye eşit değil ama ilişkili. O ilişkiyi birazdan göreceğiz.
+
+416
+02:02:58,260 --> 02:03:07,500
+Şimdi bir Connet, bir CNN, bu tür convolutional layer'ların arka arkaya konulması ile oluşuyor.
+
+417
+02:03:07,500 --> 02:03:22,500
+Tabi arada aktivasyon fonksiyonları burada da kullanılıyor. Yani konvolüsyonu yapacaksınız. Sonra bir relü'den geçiriyorsunuz. Yine ondan sonra bir sonraki katmanı elde ediyorsunuz.
+
+418
+02:03:25,908 --> 02:03:32,308
+Yeni bir katman sayılmıyor. O katmanın yaptığı bir iş sayılıyor.
+
+419
+02:03:34,108 --> 02:03:37,508
+Bileşen bileşen her bileşeni reluden geçiriyorsunuz.
+
+420
+02:03:42,355 --> 02:04:04,655
+Hatırlarsanız, Linear Sınıflayıcı'da şöyle bir güzel analiz vardı. Her bir W'nun, W'yu, matrisi, ortalama W'lara bakmışlardı mesela. En benzer şeyleri öğrendiğini görmüşlerdi.
+
+421
+02:04:07,764 --> 02:04:12,543
+O sınıfının ortalamasına benzer bir şekilde aldığını görmüşlerdi W'nun.
+
+422
+02:04:16,543 --> 02:04:20,043
+Bu tarz analizleri şeyde de yapmışlar.
+
+423
+02:04:25,684 --> 02:04:32,384
+Öncelikle konvolüsyon networklerde W ne?
+
+424
+02:04:34,323 --> 02:04:55,583
+Filtreler. Bu bir kafa karışıklığı olabiliyor. Bazı ben doktor öğrencilerine falan soruyorum. Doktora yeterlik sınavları oluyor ya. Convolutional Network ne öğrenir diyorum. Hani söyleyemiyor adam.
+
+425
+02:05:00,051 --> 02:05:04,111
+Yani neyi optimize eder, neyi değiştirir, neyi öğrenir?
+
+426
+02:05:04,631 --> 02:05:08,631
+Cumulational Network bu filtre ve beyaz değerlerini öğreniyor.
+
+427
+02:05:10,072 --> 02:05:13,091
+İdeal filtre ve beyaz değerlerini öğreniyor.
+
+428
+02:05:13,091 --> 02:05:19,211
+O filtreleri şey yapmışlar.
+
+429
+02:05:21,011 --> 02:05:23,091
+Bu sefer filtrelerin bu şekilde...
+
+430
+02:05:25,268 --> 02:05:28,587
+İmgelere benzer şekiller aldığını görmüşler.
+
+431
+02:05:30,327 --> 02:05:40,747
+Yani bir nevi arabayı tanıyan filtre ortaya çıkıyor, kuşu tanıyan filtre ortaya çıkıyor gibi.
+
+432
+02:05:50,260 --> 02:06:05,880
+Bu tabi son layer'larda. Layer Layer şey yapılıyor. İlk layer'lar, daha en baştaki layer'ların şu şekilde basit özellik çıkarıcılara dönüştüğünü gözlemliyorlar.
+
+433
+02:06:08,559 --> 02:06:14,640
+İşte bu neural net örgüler çıkmadan bunlarla yapılırdı bu işler.
+
+434
+02:06:15,923 --> 02:06:20,523
+Edge Detection kullanılırdı. İşte Nokta Detection.
+
+435
+02:06:29,011 --> 02:06:43,992
+Harris noktaları vardı. Hesiyen blobları vardı. Bu noktalar bulunurdu. Gabor filtreleri vardı. Gabor'un işte şu mesela Gabor filtresine çok benziyor şurası.
+
+436
+02:06:46,492 --> 02:06:52,992
+Böyle arka arkaya Ejler'e benzer Gabor filtreleri.
+
+437
+02:06:55,283 --> 02:07:16,103
+Yine burada Edge Detection filtreleri vardır. Sobel gibi. Sobel Edge Detector gibi. Yine buna benzeyen birçok yapı var. Dolayısıyla ilk katmanlarda böyle alt seviye özellik çıkarıcılara dönüşüyor bu filtreler.
+
+438
+02:07:22,931 --> 02:07:27,652
+Daha derin networklerde bunları görselleştirmek zorlaşıyor.
+
+439
+02:07:30,791 --> 02:07:35,331
+En başlarda böyle basit kenarlar noktalardan oluşuyor.
+
+440
+02:07:35,492 --> 02:07:44,031
+Sonra doğru gidince daha kompleks mesela gözleri falan bulan filtreler ortaya çıkmaya başlıyor.
+
+441
+02:07:44,031 --> 02:07:50,412
+Yani aşağıdan yukarıya gittikçe filtrelerin öğrendiği şeyler daha kompleks oluyor.
+
+442
+02:07:53,011 --> 02:07:54,188
+Öğ...
+
+443
+02:07:58,452 --> 02:08:11,551
+Şimdi konvolüsyon bu şekilde çalışıyor dedik. Yani Spatial Dimensions'dan bakarsak, yani X ve Y'den bakarsak, Z'yi şu an için görmüyoruz.
+
+444
+02:08:11,551 --> 02:08:19,112
+Ya da kanal boyutunu görmüyoruz. Diyelim ki input 7'ye 7, filtre 3'e 3. Bu şekilde gidiyor.
+
+445
+02:08:24,787 --> 02:08:27,507
+Filtrenin ortası olarak düşünün.
+
+446
+02:08:29,067 --> 02:08:34,847
+Dolayısıyla input imgesinin şu kenarları için bir çıktı alınamıyor.
+
+447
+02:08:37,427 --> 02:08:43,447
+Dolayısıyla 7'ye 7'lik input, 5'e 5'lik bir output'a dönüşmüş oluyor.
+
+448
+02:08:46,087 --> 02:08:50,587
+Yani dolayısıyla çıktığı output'u biraz küçük oluyor.
+
+449
+02:08:52,020 --> 02:09:06,240
+Burada ne yapılabiliyor? Mesela, filtreyi uygulamadan önce biraz padding ile input büyütülüyor. Ki küçüldüğünde yine 7'ye 7 olsun.
+
+450
+02:09:09,684 --> 02:09:10,923
+Öğ...
+
+451
+02:09:15,347 --> 02:09:21,048
+Receptive Field algı alanı olarak geçiyor.
+
+452
+02:09:48,627 --> 02:10:01,587
+Çıkışta her bir hücre girişte bir alandan elde ediliyor. Yani fully connected değil bu.
+
+453
+02:10:04,087 --> 02:10:14,108
+Bu çıkış hücresi girişin belirli bir alanından elde ediliyor.
+
+454
+02:10:15,347 --> 02:10:23,347
+Buna Receptive Field deniliyor. Bu tabi dolaştırdığınız filtrenin boyutuyla ilişkili.
+
+455
+02:10:23,347 --> 02:10:27,148
+Kernel Size K
+
+456
+02:10:32,532 --> 02:10:56,852
+Şimdi konvolüsyonda da bu konvolüsyon layerları arka arkaya konuluyor konul netlerde. O zaman her bir çıkışın geriye doğru düşünerek nereden elde edildiğini hayal edebilirsiniz ve dolayısıyla Receptive Field Size'ı...
+
+457
+02:10:57,876 --> 02:11:03,136
+Gerideki Receptive Field Size'ı bulabilirsiniz. Şöyle bir formül vermiş.
+
+458
+02:11:07,539 --> 02:11:14,899
+Yani bu çıkış için bir önceki katmanda ne oluyor? Bilgiler buradan geldi.
+
+459
+02:11:16,899 --> 02:11:30,840
+Bu hücreler şuradan geldi. Şu hücre buradan geldi. Demek ki tüm filtre şuradan geldi.
+
+460
+02:11:33,652 --> 02:11:50,192
+Yine bu filtre şöyle baktığınızda şuradan geldi. Dolayısıyla geriye doğru gittiğinizde bu hücre şu alanın hepsini algılamış oluyor, görmüş oluyor.
+
+461
+02:11:57,619 --> 02:12:03,560
+Burada Receptive Field'dan bahsederken neden bahsedildiğine dikkat etmek lazım.
+
+462
+02:12:03,560 --> 02:12:10,220
+Hani önceki layer'daki hemen bu inputtaki ta gerideki olabilir.
+
+463
+02:12:15,380 --> 02:12:18,315
+Filtre kullandığımız için...
+
+464
+02:12:25,971 --> 02:12:42,351
+İmgeler büyüdükçe, her bir pikselin girişteki her bir pikselden etkilenmesini istiyorsak, filtrede küçük kullanıyorsak ne yapmamız lazım? Layer sayısını artırmamız gerekiyor.
+
+465
+02:12:47,444 --> 02:12:56,364
+Bunun için bazı sözümler var. Mesela strided convolution'da ikişer ikişer atlıyor.
+
+466
+02:12:57,564 --> 02:13:02,504
+Stride 2. Yani kaydırma 2 piksel 2 piksel.
+
+467
+02:13:05,004 --> 02:13:08,204
+Tabi bunun matematiği biraz daha farklı oluyor.
+
+468
+02:13:11,684 --> 02:13:14,724
+Output boyutu ne olur burada?
+
+469
+02:13:15,572 --> 02:13:18,412
+Kaydırdığımız için daha da küçülecek değil mi?
+
+470
+02:13:25,492 --> 02:13:30,092
+Mesela bu tür sorular önemli.
+
+471
+02:13:30,092 --> 02:13:48,292
+İmput girişi 32'ye 32'ye 3 ise, 10 tane 5, 5, 5x5 filtre kullanıyorsanız, stride 1 ise, pad 2 ise çıkış boyutları ne olur?
+
+472
+02:13:50,068 --> 02:13:55,667
+Ve çıkış boyutlarında çıkışta kaç tane bileşen olur?
+
+473
+02:14:00,180 --> 02:14:15,820
+Hesaplamaları yapabilmeniz gerekiyor. Kaç tane parametre olur öğrenilen, neural network'ün öğrenmesi gereken kaç parametre olur mesela?
+
+474
+02:14:18,200 --> 02:14:25,820
+Bu çok önemli tabii ki. Ne kadar çok parametre varsa neural network'ünüz o kadar güçlü oluyor ama eğitmesi de...
+
+475
+02:14:26,207 --> 02:14:32,807
+O kadar yavaş oluyor ve o kadar çok veri ihtiyacınız oluyor.
+
+476
+02:14:36,807 --> 02:14:39,207
+Bu örnekte mesela işte
+
+477
+02:14:40,507 --> 02:14:45,007
+760 tane Learn-Aber Parametre var diyor.
+
+478
+02:14:49,407 --> 02:14:51,807
+Learn-Aber Parametreler
+
+479
+02:14:52,051 --> 02:15:05,132
+Filtreler ve beyazlar demiştik. Dolayısıyla, filtre boyutu 3x55 ise 25x75, bir tane de beyaz için 76.
+
+480
+02:15:06,511 --> 02:15:14,492
+76 parametre bir filtreden geliyor. 10 tane filtre kullanacaksanız, 760 tane parametreniz oluyor.
+
+481
+02:15:18,836 --> 02:15:25,756
+Peki o zaman kaç tane çarpma toplama yapacağız? Bu da önemli.
+
+482
+02:15:28,235 --> 02:15:43,855
+Nöral Network eğitimindeki o çarpma toplama sayısına, yani işlem sayısına daha doğrusu az tutmaya çalışıyoruz ki eğitebilelim.
+
+483
+02:15:47,220 --> 02:15:49,220
+Çok vakit alacaktır değil mi?
+
+484
+02:16:00,948 --> 02:16:14,928
+Mesela burada çarpma toplama operasyon sayısına 768 bin tane dedi. Bunları ben sınav yaparken geçen yıllarda bunların hesabını soruyordum.
+
+485
+02:16:14,928 --> 02:16:25,068
+Böyle giriş sayıları veriyordum. Kaç operasyon gerekir, kaç parametre vardır? Öğrencilerin öğrenmesini istiyordum.
+
+486
+02:16:29,363 --> 02:16:31,363
+Burada mesela...
+
+487
+02:16:35,860 --> 02:16:47,260
+Nasıl hesap etmiş bakalım. Önce çıkış boyutunu hesap etmiş. 10 tane filtremiz var. 32'ye 32'lik. En boy.
+
+488
+02:16:50,260 --> 02:16:58,740
+Output volümü bu şekilde. 32 çarpı 30 çarpı 10'dan 10.240 bulmuş.
+
+489
+02:17:00,275 --> 02:17:03,355
+Parametre sayısı 760'tır zaten.
+
+490
+02:17:10,131 --> 02:17:17,311
+Her bir çıktı, çıktığının her bir elemanı bir fitre çarpımından geliyor.
+
+491
+02:17:20,311 --> 02:17:24,871
+Bias toplamasını burada ihmal etti galiba. Çok önemli değil gibi.
+
+492
+02:17:38,579 --> 02:17:55,860
+Dolayısıyla her bir çıktı. Bu filtrenin çarpımı ile elde ediliyor. 10.000 tane çıktı var. Dolayısıyla 768.000 çıktıya ulaşıyor.
+
+493
+02:18:03,860 --> 02:18:28,860
+Bunları artık bu sayılar nasıl hesaplanır şu bakımdan önemli. Yani mimarimizi tasarlarken benim bu mimarimde kaç tane input parametrem oluyor, öğrenilir parametrem oluyor, kaç tane hesaplama adımı oluyor. Bunları bilmeniz lazım ki.
+
+494
+02:18:30,484 --> 02:18:39,603
+Network'ünüzün eğitilmesi ne kadar zor? Kompleksitesi nasıl? Bunlar size bir fikir veriyor yani.
+
+495
+02:18:47,731 --> 02:18:59,891
+PyTorch'da bu convolution direk var.
+
+496
+02:19:04,724 --> 02:19:25,363
+Torch NNCone2D sınıfında. Birebir bizim kullandığımız şeyler var. Yani in channels C in, out channels C out. Bizim notasyona benziyor.
+
+497
+02:19:30,324 --> 02:19:41,764
+Stride, Padding, Dilation ve Groobing'i bu derste öğrenmedik. Siz kendiniz bakabilirsiniz veya şimdi bakacak mı bilmiyorum.
+
+498
+02:19:43,264 --> 02:19:54,584
+Bias, Padding modu her zaman sıfırla pad edilmeyebiliyor. Pad edilirken başka stratejiler de var.
+
+499
+02:19:56,147 --> 02:20:05,347
+Device GPU ya da CPU sanırım. D-Type, o da veri tipi Data Type.
+
+500
+02:20:09,268 --> 02:20:21,988
+Direkt bu bahsettiğimiz şeyi yapıyor. Konvolüsyonu yapıyor. Dolayısıyla konvolüsyon değerini bunu kullanarak oluşturabiliyorsunuz.
+
+501
+02:20:24,788 --> 02:20:33,835
+Şimdiye kadar iki boyutlu konvolüsyonu gördük. Ama konvolüsyon aslında...
+
+502
+02:20:34,388 --> 02:20:38,408
+Genel bir şey, bir boyutlu konvolisyon da tanımlayabilirsiniz.
+
+503
+02:20:39,448 --> 02:20:42,247
+Üç boyutlu konvolisyon da tanımlayabilirsiniz.
+
+504
+02:20:43,648 --> 02:20:46,148
+Yani genel fikir, bir filtre var.
+
+505
+02:20:48,108 --> 02:20:53,008
+Nesnenin üzerine koyuyorsunuz, karşılık gelen yerleri çarpıp topluyorsunuz.
+
+506
+02:20:53,008 --> 02:20:57,008
+Yani iç çarpım alıyorsunuz, vektör çarpımı yapıyorsunuz.
+
+507
+02:20:58,388 --> 02:21:04,868
+Bir sonraki katmanı elde ediyorsunuz. Bunu farklı boyutlarda düşünebilirsiniz.
+
+508
+02:21:06,388 --> 02:21:08,548
+Filtreyi kaydırıyorsunuz.
+
+509
+02:21:12,020 --> 02:21:12,844
+Öğ...
+
+510
+02:21:18,420 --> 02:21:34,880
+Şimdi bir de yine çok kullanılan direkt konvolüsyon değil ama boyutu indirgemeye yarayan bir de robustness veren bir şey var.
+
+511
+02:21:36,020 --> 02:21:37,220
+Pooling Layer'lar.
+
+512
+02:21:42,963 --> 02:21:44,963
+Bu oldukça basit esasen.
+
+513
+02:21:46,963 --> 02:21:57,963
+Diyelim ki elinizde 112'ye 112'lik spatial boyutlarda bir nesne var.
+
+514
+02:22:10,579 --> 02:22:14,939
+Burayı biraz karıştırmışlar sanki. Şu 224 olacak.
+
+515
+02:22:15,959 --> 02:22:19,279
+Yani şu boyutları karıştırmışlar slide'ı hazırlarken.
+
+516
+02:22:22,360 --> 02:22:23,759
+Şu daha güzel gösteriyor.
+
+517
+02:22:26,579 --> 02:22:30,680
+224'e 224'lük bir nesneniz var.
+
+518
+02:22:30,680 --> 02:22:32,680
+Ne yapıyorsunuz?
+
+519
+02:22:33,268 --> 02:22:55,507
+Satırlardan birini alıyorsunuz, değerini bırakıyorsunuz. Birini alıyorsunuz, değerini bırakıyorsunuz. Sütunların yine birini alıyorsunuz, değerini bırakıyorsunuz. Ne oluyor? 224'den 112'ye düşüyor. Boyutlar. Buna pooling deniliyor bir örnek olarak.
+
+520
+02:22:58,835 --> 02:23:04,615
+Şu şekilde karışmış sanırım bir hata var. Ama alt taraf güzelce anlatıyor.
+
+521
+02:23:08,404 --> 02:23:12,544
+Yine bir kernel tanımlanabiliyor.
+
+522
+02:23:18,195 --> 02:23:20,195
+Dediğim gibi basitçe
+
+523
+02:23:24,340 --> 02:23:38,939
+ROW'lara atlayarak, satırlara atlayarak yapılabildiği gibi, daha gelişmiş şey, şöyle bir şey yapılıyor esasen. Bir KURNEL tanımlanıyor. Mesela ikiye ikilik bir KURNEL düşünün.
+
+524
+02:23:41,239 --> 02:23:50,459
+Bu KURNEL yine resim üzerinde gezdiriliyor. Ama genelde stride öyle ayarlanıyor ki,
+
+525
+02:23:50,963 --> 02:24:03,324
+Bu kernel ile bir sonraki kernel'ın koyduğunuz yerleri, yani kernel'ın iki yeri çakışmayacak şekilde bir stride ayarlanıyor.
+
+526
+02:24:05,324 --> 02:24:09,724
+Ve mesela burada max pooling yapılmış. Yani ne demek?
+
+527
+02:24:10,963 --> 02:24:14,603
+Kernel'ın içerisindeki en büyük değer alınıyor.
+
+528
+02:24:24,147 --> 02:24:32,727
+Bunun gibi Average Pooling de tanımlanabilir. Yani Kernel'ın içerisindeki değerlerin ortalaması alınıp konulabilir gibi.
+
+529
+02:24:36,367 --> 02:24:39,628
+Şimdi bu şöyle bir güzelliği var.
+
+530
+02:24:42,268 --> 02:24:47,507
+Spatial Shiftler, yani Spatial dediğim zaman X'de ve Y'de anlayın.
+
+531
+02:24:54,324 --> 02:25:15,603
+X'de ve Y'de resimi hafif böyle kaydırdığınızda falan sonuç çok değişmemiş oluyor. Çünkü 6 burada da olsa en büyük, şurada da olsa en büyük ya. Dolayısıyla biraz invarians veriyor.
+
+532
+02:26:08,084 --> 02:26:16,844
+Bir de yeni öğrenilecek parametre de katmıyor. O da güzel bir şey.
+
+533
+02:26:18,644 --> 02:26:23,963
+Buradaki parametre yok. Öğrenmeniz gereken kernel içeriği yok.
+
+534
+02:26:27,004 --> 02:26:29,324
+Bu boyutlar yine önemli.
+
+535
+02:26:39,412 --> 02:26:43,092
+Bu slide'ı yeni görüyorum. Translation EQ Variance.
+
+536
+02:26:57,843 --> 02:27:07,203
+Önce konvolüsyon alıp translate etseniz ya da önce translate edip sonra konvolüsyon alsanız aynı noktaya geliyor diyor.
+
+537
+02:27:09,363 --> 02:27:10,963
+Değişmiyor çok fazla.
+
+538
+02:27:10,963 --> 02:27:23,804
+Yani nesnenin, diyelim ki şu kol yeri değişiyor belki ama içeriği değişmiyor diyeyim.
+
+539
+02:27:27,123 --> 02:27:29,383
+Bir dakika, burada da Translate varmış.
+
+540
+02:27:34,932 --> 02:27:46,812
+Yani bu şuraya önce konvolüsyon, pooling sonra translate ile de aynı yere geliyorsunuz. Önce translate sonra konvolüsyon ve pooling ile de aynı yere geliyorsunuz.
+
+541
+02:27:58,835 --> 02:28:16,036
+Bu da güzel bir şey oluyor. Çünkü nesnelerin, bu özellikler, imgelerin özellikleri biraz lokasyondan bağımsız olmalı.
+
+542
+02:28:16,036 --> 02:28:22,135
+Yani kurbanın kolu, imgenin her yerinde kurbanın kolu.
+
+543
+02:28:27,827 --> 02:28:38,867
+Bu şekilde CNN'lere bakmış olduk. Daha önceki yıllarda olan slide'ları appendikse atıyorlar.
+
+544
+02:28:45,620 --> 02:28:49,780
+Max Tooling'i daha ayrıntılı ayarlamışlar vs.
+
+545
+02:28:56,564 --> 02:29:05,763
+Yıldan yıla slide'lar biraz değişiyor. Apendikse atmışlar eski slide'ları. Silmek bense. İsteyen baksın gibi.
+
+546
+02:29:18,420 --> 02:29:20,719
+Bir sonraki slide'da ne var ona bakalım.
+
+547
+02:29:25,332 --> 02:29:27,551
+CNN Mimarileri var diyor.
+
+548
+02:30:15,636 --> 02:30:18,136
+Şimdi oraya...
+
+549
+02:30:22,036 --> 02:30:26,835
+CNN mimarilerini artık başka zamana bırakalım. Bir sonraki haftaya.
+
+550
+02:30:30,376 --> 02:30:37,115
+Birinci ödevi artık yapabilecek durumdasınız. Birinci ödevi neydi içeriye ona bir bakalım.
+
+551
+02:31:45,172 --> 02:31:51,652
+Şimdi birinci ödev Assignment 1'deki ne var diye bakmaya çalışıyorum.
+
+552
+02:32:21,459 --> 02:32:24,539
+Virtual Envining'i açmam gerekiyor.
+
+553
+02:32:37,268 --> 02:32:43,387
+Neydi? Juppay Terlap mıydı? Juppay Terlap. Juppay Terlap'tı sanki.
+
+554
+02:33:09,332 --> 02:33:10,351
+Şimdi...
+
+555
+02:33:14,195 --> 02:33:20,195
+Features, Image Features, Exercise.
+
+556
+02:33:25,299 --> 02:33:43,979
+Full Two-Layer Net. Neural Networkleri bugün gördük. Full Connected, Forward Pass, Backward Pass, ReLU etc. Bunu yapabilmeniz lazım.
+
+557
+02:33:45,979 --> 02:33:51,860
+Softmax'ı sanırım görmüştük zaten. Softmax sınıflayıcı.
+
+558
+02:33:57,332 --> 02:33:59,371
+K-n kaynayını gördük.
+
+559
+02:34:06,291 --> 02:34:08,291
+Fully connected nets.
+
+560
+02:34:13,587 --> 02:34:17,587
+Yine Networklerle ilgili
+
+561
+02:34:20,587 --> 02:34:27,587
+RMS Pro falan var. Optimizasyon algoritmaları. Gördük bunları.
+
+562
+02:34:32,084 --> 02:34:35,024
+Features dediği.
+
+563
+02:34:39,540 --> 02:34:54,780
+Yine nörel networkler vs. Yani bugün itibariyle bu ödevin hepsini yapabiliyorsunuz. Dolayısıyla ödevi vermiş oluyoruz. Zaten bir kısmını daha önceden yapabileceğinizi söylemiştim.
+
+564
+02:34:55,780 --> 02:35:02,840
+Şimdi bunun için iki hafta size süre vereyim.
+
+565
+02:35:06,804 --> 02:35:07,804
+Ön.
+
+566
+02:35:17,523 --> 02:35:18,243
+Bugün ne?
+
+567
+02:35:20,824 --> 02:35:22,383
+24'ü.
+
+568
+02:35:23,723 --> 02:35:28,343
+Yani 7 Kasım'a kadar şey, 24'ü bugün.
+
+569
+02:35:30,523 --> 02:35:36,003
+24 Ekim, 7 Kasım'a geliyor.
+
+570
+02:35:38,144 --> 02:35:43,923
+6 Kasım günü akşamına kadar size zaman vereceğim.
+
+571
+02:35:45,876 --> 02:36:09,556
+6 Kasım'da yüklemiş olmanız gerekiyor. Nasıl yüklenecek? O ayrıntıları şimdilik hala belirlemedim. Siz yapın. IPyMb'lerinizi hazır edin. Nasıl toplayacağımızı ben WhatsApp grubundan söylerim.
+
+572
+02:36:12,371 --> 02:36:16,171
+Başka soracağımız, konuşacağımız bir şey var mı?
+
+573
+02:36:28,468 --> 02:36:35,728
+Peki öyleyse, iyi hafta sonları diliyorum arkadaşlar.

@@ -1,0 +1,1871 @@
+1
+00:05:27,956 --> 00:05:29,475
+Arkadaşlar merhabalar.
+
+2
+00:05:34,196 --> 00:05:34,896
+Merhaba hocam.
+
+3
+00:05:39,764 --> 00:05:42,403
+[öğrenci] sen hazırlanmış mıydın?
+
+4
+00:05:43,603 --> 00:05:45,064
+Evet hocam hazırlanmıştım.
+
+5
+00:05:45,864 --> 00:05:47,343
+Tamam sen başla bir işin.
+
+6
+00:05:47,884 --> 00:05:48,244
+Tamam.
+
+7
+00:05:59,060 --> 00:06:00,860
+Tamam, ben başlayayım hocam isterseniz.
+
+8
+00:06:02,180 --> 00:06:06,620
+Bugün Lecture 10'i anlatacağım. Konumuz Video Understanding konusu.
+
+9
+00:06:07,620 --> 00:06:10,579
+Tabi burada konuyu anlatan kişiyle ilgili bilgi var.
+
+10
+00:06:10,680 --> 00:06:12,519
+Şimdi Image Classification ile başlamış.
+
+11
+00:06:12,800 --> 00:06:14,280
+Zaten bu bizim bildiğimiz bir şey.
+
+12
+00:06:14,480 --> 00:06:19,259
+Yani Image nasıl klasifik edeceğimizi hem bu derste hem de aslında bölümdeki birçok derste gösterilen bir şey.
+
+13
+00:06:20,019 --> 00:06:25,079
+Dolayısıyla burada bir Image var ve hedefimiz bunun hangi sınıfa ait olduğunu çeşitli sınıflar arasında bulmak.
+
+14
+00:06:25,875 --> 00:06:43,815
+Peki, burada fark olarak ne var diyecek olursanız, aslında bunu da daha önceki saitlerde, daha önceki derslerde görmüştük yine. Belki bir hatırlatma olarak bahsetmekte fayda var. Şimdi biz bir kedi sınıflandırdığımız zaman bu bir sınıflandırma problemi. Ama sadece sınıflandırma problemleri yok. Değişik çeşitli problemler de var.
+
+15
+00:06:44,627 --> 00:07:12,627
+Örneğin bunlardan bir tanesi semantik segmentasyon. Burada piksel bazlı olarak bu kedinin aslında görüntüde nerede olduğunu bulmaya çalışıyoruz. Yani bu görüntünün sadece kediye ait olduğunu değil ve konumunu da ayrıca burada bulmaya çalışıyoruz. Tabii ki diğer konumları da buluyoruz. İşte çimdir, ağaçlardır vs. bunların konumlarını da buluyoruz. Diğer taraftan Object Detection yapabiliriz. Yani bu objeyi bir box içine alabiliriz. Bunda çok çeşitli faydaları oluyor. Mesela tıbbi görüntülerde de çok faydalı oluyor.
+
+16
+00:07:12,627 --> 00:07:23,627
+Bu bir araçtır demek için çok faydası oluyor. Yine bu şekilde bir yaklaşım yapabiliriz. Daha sonra bu bounding box'ın içerisindeki objeyi ayrıca tanıyabiliriz.
+
+17
+00:07:23,627 --> 00:07:33,627
+Diğer taraftan da Instance Segmentation var. Burada da aslında segmentik segmentasyon gibi piksel bazlı.
+
+18
+00:07:33,627 --> 00:07:40,627
+Ama her bir objeyi burada ayrı ayrı olarak tanıyabiliyoruz. Yani buna köpektir diyoruz, buna kedidir diyoruz.
+
+19
+00:07:40,627 --> 00:08:08,627
+Belki bu Instance Segmentation ve Semantic Segmentation arasındaki fark tam olarak anlaşılmaz diye ben internetten şöyle bir görsel de buldum. Semantic Segmentation'da bu kişilere sadece person demek yeterli oluyor. Yani bunun bir insan olduğunu tanımlayabiliyoruz. Ama Instance Segmentation'a her bir Instance'ı ayrı ayrı tanımlıyoruz. Ve onları da farklı renge boyuyoruz. Yani aslında bounding box yaklaşımının da bir tık daha gelişmiş hali. Yani buna bir insan box'ı çiziyoruz. Buna bir insan box'ı çiziyoruz ama burada aslında piksel bazlı olarak bunu daha gelişmiş.
+
+20
+00:08:08,627 --> 00:08:10,627
+gelişmiş bir versiyonu burada görüyoruz.
+
+21
+00:08:11,540 --> 00:08:23,540
+Bundan bahsettikten sonra, burada Bandic Box için aldığımız bir segmentasyon görüyorsunuz. Gerçi burada piksel bazlı da boyamışız. Sanıyorum ki belki de Bandic Box için alıp sonrasında piksel bazlı boyanan bir örnek olabilir bu.
+
+22
+00:08:24,139 --> 00:08:33,480
+Fakat burada tabii bir akış söz konusu. Yani bir frame'de böyleyken bir başka frame'de bu hale gelebilir. Yani görüntü değişebilir, kayabilir. Hatta görüntü tamamen de değişebilir.
+
+23
+00:08:33,899 --> 00:08:39,320
+Örneğin bir diziyi izlediğimiz zaman bir frame'de başka bir sahne görürken diğerini farklı bir sahne görebiliriz.
+
+24
+00:08:39,539 --> 00:08:44,139
+Video olayına girdiğimiz zaman, olay çok daha farklı bir noktaya geliyor.
+
+25
+00:08:44,399 --> 00:08:46,459
+Oradaki en temel fark da buradaki T.
+
+26
+00:08:46,699 --> 00:08:49,779
+Yani işin içine bakıldığı zaman zaman giriyor.
+
+27
+00:08:50,039 --> 00:08:52,079
+Bu zaten bizim alışık olduğumuz bir format.
+
+28
+00:08:52,339 --> 00:08:57,199
+Genişlik var, yükseklik var ve bunun RGB olduğunu düşünürsek 3 boyutlu yansıması var.
+
+29
+00:08:57,459 --> 00:09:01,299
+Bir de bunu T ile çarptığımız zaman da aslında bu 4 boyutlu bir hale geliyor.
+
+30
+00:09:01,559 --> 00:09:03,339
+Yani 2 boyutlu bunu time'a eklenmiş halde.
+
+31
+00:09:03,599 --> 00:09:07,539
+Tabii ki bu time, yani saniye cinsinden düşünecek olursak bunu bir defa...
+
+32
+00:09:07,539 --> 00:09:17,519
+Frame ile çarpabiliriz. Bu time'ı da aslında Frame çarpı second olarak da düşünebiliriz. Özellikle güncel makinelerde Frame sayısının, saniyedeki Frame sayısının çok fazla arttığından bahsedebiliriz belki burada.
+
+33
+00:09:18,299 --> 00:09:25,720
+Şimdi diğer taraftan Video Classification ile başlamış. Yani az önce bir resim klasifi etmeyi gördük. Kedi resmini, kedi görüntüsünden tanıdık.
+
+34
+00:09:25,980 --> 00:09:27,759
+Peki bunu videoda nasıl yaparız?
+
+35
+00:09:28,279 --> 00:09:34,939
+Yani videoda da aslında en temel olarak aynı şekilde yaklaşabiliriz. Yani burada bir video vardır ve bizim hedefimiz burada. Bu videodan
+
+36
+00:09:35,539 --> 00:09:40,220
+Hangi aksiyonun olduğunu ya da hangi şu anki durumun ne olduğunu tahmin etmek.
+
+37
+00:09:40,659 --> 00:09:44,519
+Yani kediyle aslında aynı durumdayız şu an. Ama bunu tabii ki geliştirmemiz gerekiyor.
+
+38
+00:09:45,240 --> 00:09:50,679
+Burada da yine kedi resminden tahmin etmekle aynı durumu aslında vurgulamış.
+
+39
+00:09:50,799 --> 00:09:54,619
+Ama videoda tabii ki bunu bir aşama geliştirmek gerekiyor.
+
+40
+00:09:54,619 --> 00:09:59,179
+Fakat geliştirmeye başlamadan önce bazı problemler var. İşin içinde video girdiği zaman.
+
+41
+00:10:00,000 --> 00:10:08,039
+Çünkü mesela bu videoda zaman boyutundaki saniyede alınan frame sayısı çok fazla olduğu için bu da tabii ki boyuta yansıyor.
+
+42
+00:10:08,519 --> 00:10:15,379
+Her ne kadar sd bir görüntü olsa bile zaman arttığı zaman buradaki boyutların çok ciddi şekilde arttığını görüyoruz.
+
+43
+00:10:15,379 --> 00:10:22,159
+HD görüntü olduğu zaman bu daha da çok artıyor. Dolayısıyla hem çözünürlük olarak artıyoruz hem FPS olarak artıyoruz.
+
+44
+00:10:22,299 --> 00:10:27,980
+Yani ciddi şekilde bir boyut artışından bahsedebiliriz. Bu da tabii ki bizim model ettiğimiz.
+
+45
+00:10:28,000 --> 00:10:35,480
+Zaten görüntü işlerken bile model eğitmek çok uzun sürerken videoda bu bu sefer çok daha büyük bir hal alıyor.
+
+46
+00:10:36,039 --> 00:10:40,740
+O yüzden de burada... Hocam siz mi acaba bir katkıda bulunacaktınız?
+
+47
+00:10:43,680 --> 00:10:43,899
+Yok.
+
+48
+00:10:44,420 --> 00:10:48,659
+Tamam. Videoda dolayısıyla bu durumu çözmek gerekiyor.
+
+49
+00:10:48,779 --> 00:10:52,019
+Hani nasıl çözebiliriz diye buradaki slide tabii incelenmiş bu durum.
+
+50
+00:10:53,019 --> 00:10:55,019
+Şimdi burada tabii ki...
+
+51
+00:10:55,796 --> 00:11:13,236
+Raw videodan bahsediyoruz. Yani orijinal video. Uzun ve yüksek FPS'e sahip bir video. Daha sonra bunları demiş ki biz hepsini almayalım. Çünkü tüm bilgiler anlamlı olmayabilir ya da şöyle yeterince anlamlı olmayabilir. Yani videoda 60 FPS ile videoyu aldığımızı düşünelim.
+
+52
+00:11:23,796 --> 00:11:51,756
+Değişim beklemiyoruz. Eğer bir sahne değişimi yoksa. Dolayısıyla da biz hani burada diyor ki ayrı ayrı belirli aralıklarla bunu alalım. Ve daha sonra bunun test aşamasına geldiğimiz zaman da bu ayrı ayrı aldığımız görüntülerden tabii ki hani testingte ise hani şu kısımda mesela hangi aksiyon var bunu tahmin edelim. Bu kısımda hangi aksiyon var bunu tahmin edelim. Ve bu tahminimize göre ortalama bir değeri tahmin ederek nihai sonuca ulaşalım şeklinde bir yaklaşım mevcut. Burada tabii ki farkındaysanız.
+
+53
+00:11:51,796 --> 00:11:57,556
+Diyelim ki 20 tane var. 5 tanesini almış. Dolayısıyla çok ciddi bir şekilde boyuttan kazancımız oluyor.
+
+54
+00:11:58,276 --> 00:12:04,016
+Şimdi peki burada aldık görüntüleri bir şekilde. Tamam boyuttan kazandık. Bu görüntüleri artık nasıl işleyeceğiz?
+
+55
+00:12:04,115 --> 00:12:07,276
+Yani prediction kısmına nasıl geleceğiz? Burada da bundan bahsediyor.
+
+56
+00:12:07,855 --> 00:12:14,155
+İlk yaklaşım burada single frame CNN. Yani her bir frame var. Burada diyelim ki 2, 4, 7 tane frame var.
+
+57
+00:12:14,155 --> 00:12:19,796
+Her bir frame'ı ayrı ayrı CNN'e verelim. CNN'de bize bir çıktı tahmin etsin. Yani aslında bunun görüntüden hiçbir...
+
+58
+00:12:19,796 --> 00:12:47,776
+Bu adamın bir farkı yok. Yani 7 tane görüntüyü yan yana veriyoruz. Bu adam düz bir şekilde ileri doğru koştuğu için aslında bu hani çok belki de bu fotoğraf yani bu video için belki de kullanılabilir bir yöntem olabilir. En basit yaklaşım olarak her bir fotoğrafı ayrı ayrı CNN veriyor ve bunu tahmin ediyor. Daha sonra bu tahminleri muhtemelen burada Ensemble yapmıyor ama bir sonraki saatlerde Ensemble da yapacaktır. Bunlardan nihai video tahminini yapıyor. Yani diyor ki bu videodan 7 frame'inde de bu adam koşuyorsa bu video koşuyordur demek ki tahminini.
+
+59
+00:12:47,796 --> 00:13:10,716
+Bu şekilde yapabiliyoruz. Dediğim gibi en basit yaklaşım bu. Şimdi Date Fusion yaklaşımına gelecek olursak, burada ekstra olarak şurada bir flattened layer oluyor. Diyor ki, biz burada her bir çıktığı ayrı ayrı tahmin yapmayalım. Her bir çıktığı birleştirip, bunları CNN'lerin vektörlerini birleştirip tek bir çıktığı tahmini yapalım diyor.
+
+60
+00:13:15,796 --> 00:13:22,576
+Sonundaki o ensemble yöntemleri farklı olabilir ama oradaki birleştirmeyi burada CNN içerisinde yapıyor.
+
+61
+00:13:23,115 --> 00:13:27,135
+Ve dolayısıyla aslında bakıldığı zaman burada daha iyi bir yapı kurmuş oluyor.
+
+62
+00:13:27,135 --> 00:13:30,056
+Ki biraz sonra zaten bunların başarıları ile ilgili de bir slide var.
+
+63
+00:13:30,796 --> 00:13:32,536
+Burada peki neden Late Fusion deniliyor?
+
+64
+00:13:32,716 --> 00:13:35,216
+Onda sebebi şu, burada önce öz nitelikleri çıkartıyoruz.
+
+65
+00:13:35,355 --> 00:13:42,375
+Daha sonra birleştiriyoruz bu öz nitelikleri ve işte bir Multilary Perceptor'un da bir nihayet çıktı elde ediyoruz.
+
+66
+00:13:42,475 --> 00:13:43,796
+Dolayısıyla Late Fusion'daki...
+
+67
+00:13:43,796 --> 00:13:50,796
+Yani temel mantık önce o bilgileri elde ediyoruz daha sonra bunları birleştirip bir çıktı elde ediyoruz şeklinde düşünülebilir.
+
+68
+00:13:53,268 --> 00:14:10,408
+Burada pooling mekanizması da var. Average pooling olarak kullanılmış. Burada da ortalama bilgi alınıyor aslında. Bunu birleştirirken her bir CNN'den gelen bilginin ortalaması alınarak bir tahmin yapılıyor gibi de düşünülebiliriz.
+
+69
+00:14:10,408 --> 00:14:21,048
+Yani aslında yine aynı late fusion mekanizması burada da var. Yine görüntülerden bir vektör üretiyoruz ve bunları daha sonra birleştiriyoruz. Ama buradaki artık birleştirme yöntemimiz çok çeşitli olabiliyor.
+
+70
+00:14:21,268 --> 00:14:36,888
+Burada tabiki düşük seviyeli hareketleri birbirinden ayırmak zor oluyor. Şuradaki örneğin ayak hareketleri gibi CNN çünkü fotoğrafın tamamına odaklanıyor. Bu da belki ileriki slide'larda çözülüyor olacaktır yavaş yavaş.
+
+71
+00:14:43,187 --> 00:15:11,048
+Daha doğrusu şöyle bir kontrol edeyim. Şimdi Early Fusion'a geldiğimiz zaman da buradaki aslında tüm görüntüler birleştirilip daha sonra tek seferde bunlar CNN'e veriliyor. Yani ayrı ayrı CNN'ler daha sonrasında birleştirilmiyor. Late olarak, geç olarak birleştirilmiyor. Öncesinde birleştirilip bunun üzerinden bir CNN yapılmış oluyor. Bu da bir diğer farklı bir yaklaşım. Dolayısıyla Late Fusion ve Early Fusion burada sık kullanılan iki yöntem.
+
+72
+00:15:11,187 --> 00:15:16,187
+Bu arasındaki fark, aslında birleştirildikleri noktanın farkı oluyor.
+
+73
+00:15:16,187 --> 00:15:22,187
+Fakat burada da tabii ki bunları tek seferde birleştirdiğimiz için o akışı yakalayamıyoruz.
+
+74
+00:15:22,187 --> 00:15:26,187
+Dolayısıyla buradaki akışı yakalamak olarak da bir problemimiz var.
+
+75
+00:15:26,187 --> 00:15:28,939
+3D CNN'e geldiğimiz zamansa...
+
+76
+00:15:29,364 --> 00:15:35,703
+Bu sefer bunları sadece CNN'i düşünelim, konvolüsyonu biz iki boyutlu görüntü üzerinde yaptığımızı düşünelim.
+
+77
+00:15:36,043 --> 00:15:43,364
+Ki bununla ilgili de bir resim var aslında. İki boyutlu görüntüde biz bu konvolüsyonu yaptığımız zaman görüntü üzerinde bu filtreyi dolaştırıyorduk.
+
+78
+00:15:43,364 --> 00:15:49,024
+Bu filtrenin 5'e 5 olduğunu düşünelim. Filtrenin orta noktasını görüntünün en sol üstüne koyuyorduk.
+
+79
+00:15:49,124 --> 00:15:54,323
+Dolayısıyla orada bir ikilik kaybımız oluyordu soldan. En sağ getirdiğimiz zaman da sağdan ikilik kaybımız oluyordu.
+
+80
+00:15:54,823 --> 00:15:57,364
+Bunu böyle dümdüz bir şekilde dolaştırdığımız zaman...
+
+81
+00:15:57,364 --> 00:16:25,364
+28'lik çünkü iki soldan iki sağdan kaybettiğimizde böyle bir görüntü elde ediyorduk. Tabii ki bunu yaptığımız hareketi daha sonra bir alt satırda da yapmaya devam ediyorduk. Yine bir altta yapmaya devam ediyorduk. Dolayısıyla bir konvolüsyon filtremiz vardı. Onu tüm resimde dolaştırıyorduk ve bir çıktı elde ediyorduk. 3D CNN'de ise iki boyutlu hali bir de bu filtrenin dikeyde yani burada dolaştığını da düşünebiliriz. Yani burada 3 RGB'den dolayı ama bunun 20 olduğunu.
+
+82
+00:16:25,364 --> 00:16:53,004
+Yani aslında 20 tane frame var ya da 20 tane 3 RGB frame var. Dolayısıyla burada da bu şekilde geriye doğru bir dolaştırma mümkün. Yani hem sağ, sol ve bildiğimiz iki boyutlu CNN konvolüsyon yapısı hem de zamansız olarak bir dolaştırma yapacağız. İşte bu da 3D CNN oluyor aslında. Ama takdir edersiniz ki bu da oldukça hani o kadar fazla hareketi tüm resim üzerinde dolaştırmak tabii ki bir maliyet olacaktır zaman olarak.
+
+83
+00:16:53,364 --> 00:17:21,124
+Yine 3D konvolüsyonda da örneğin burada 6x6x6 filtreler kullanılmış. Burada bir giriş var. Yine bu girişin 2 boyutlu kısmını oluşturan yükseklik ve genişlik değerleri var. Bir zaman değeri var. Bir de burada bizim dolaştıracağımız filtre var. Bu filtreyi dolaştırıyoruz. Örneğin önce 6x6 filtre dolaştırılmış. Daha sonra bunun üzerinde daha belki detaylı bilgileri yakalamak için daha farklı filtreler de dolaştırılmış. En nihayetinde sonuçlar bir full connected.
+
+84
+00:17:21,364 --> 00:17:34,083
+Layer'da toplanıp bir Class Score üretilmiş. Yani aslında iki boyutlu konvolüsyondan dediğim gibi tek farkı artık sağ ve sol değil, zamansal olarak da bu konvolüsyon filtresini dolaştırabiliyoruz burada da.
+
+85
+00:17:34,804 --> 00:17:37,723
+Şimdi Early Fusion ve Late Fusion'a gelmiş olalım burada.
+
+86
+00:17:38,612 --> 00:17:52,192
+Şimdi burada Late Fusion yapısını görüyoruz aslında. Burada bir inputumuz var ve biz burada 12 tane filtre kullanmışız. Dolayısıyla burada bizim konvolüsyon, iki boyutlu konvolüsyon sonucunda böyle bir çıktığımız oluyor. Yani biz burada...
+
+87
+00:17:52,192 --> 00:17:59,791
+Bu resim üzerinden konvolüsyon filtrelerini dolaştırarak aslında filtrelerin sonuçlarını elde etmiş oluyoruz.
+
+88
+00:17:59,791 --> 00:18:06,491
+Daha sonra buradaki filtre sonuçlarını pooling ile alıyoruz. Yani aslında her bir sonucu değil. Bunların mesela average pooling olabilir bu.
+
+89
+00:18:06,491 --> 00:18:11,692
+Ortalamasını alarak biz burada aslında elde ettiğimiz sonucu birazcık daraltmış oluyoruz.
+
+90
+00:18:11,692 --> 00:18:20,192
+Pooling 2'de yaptığımız zaman örneğin, şuradaki 64x64, 16x16'ya geliyor. Bu max pooling ise oradaki 4x2.
+
+91
+00:18:20,192 --> 00:18:39,192
+Bu şekilde, bu şekilde öz nitelik vektörümüzde düşme gidiyoruz. Ardından bunun üzerinden yeniden konvolüsyon yapıyoruz. Yani bu sefer bu çıktığı daha anlamlı hale getirmek için yeniden filtreleri dolaştırıyoruz. Burada 12 filtre dolaştırmıştık mesela.
+
+92
+00:18:39,192 --> 00:18:48,192
+Ardından da bu sefer bu oluşan yeni filtre çıktılarını da birleştirip bir Global Average Pooling yapıyoruz. Daha sonra bu birleştirdiğimiz...
+
+93
+00:18:48,192 --> 00:18:55,991
+Bu sonuçtan da bir çıktı tahmin ediyoruz. Bu Late Fusion mekanizmasıydı. Öldü Fusion mekanizmasında ise...
+
+94
+00:18:56,723 --> 00:19:24,643
+Buraya incelediğimiz zaman aslında çok benzer bir yapı olduğunu görüyoruz. Fakat burada fark ettiyseniz, 12 tane filtre dolaştırdığımız zaman burada zamansal bilgiyi kaybettiğimizi görüyoruz. Çünkü aslında bunların hepsini biz tekte zaten birleştirmiştik. Ve bu birleştirdiğimiz yapı üzerinden dolaştırıyorduk. Yani burada aslında zamansal bilgiyi Global Average Pooling aşamasında kaybediyoruz. Yani sonrasında bunlar bu çıktılar birleştiriliyordu Late Fusion'da. Öyle Fusion'dayız.
+
+95
+00:19:24,723 --> 00:19:32,463
+Bu en başta birleştirilip ardından CNN yapıları resim, daha doğrusu görüntü üzerinde dolaştırılmış oluyordu.
+
+96
+00:19:33,023 --> 00:19:42,203
+3D CNN'e geldiğimiz zamansa bu kez de sadece bu konvolüsyon işleminin buradaki görüntünün height ve width değerlerinde olmadığını görüyoruz.
+
+97
+00:19:42,203 --> 00:19:47,283
+Zamansal bir konvolüsyon işlemi de olduğunu görüyoruz. Yani aslında zamandan da bir şeyler öğreniyoruz.
+
+98
+00:19:47,864 --> 00:19:52,523
+Tabii ki bunlar gitgide böyle yavaşlayan bir süreç. Çünkü 3D CNN'de özellikle o 3.
+
+99
+00:19:52,723 --> 00:19:59,723
+Bu iki boyutta hareket etmek diğer iki boyutta birlikte çarpıldığında çok fazla bir zamansal yükle getiriyor. Bunu da burada söyleyebiliriz.
+
+100
+00:20:00,852 --> 00:20:20,012
+Şimdi 2D konvolüsyon ve 3 boyutlu konvolüsyonu burada karşılaştırmış. Şimdi 2 boyutlu konvolüsyonla başlamış öncelikle. Burada bir filtremiz var ama filtrenin dediğim gibi 2 boyutlu olarak dolaştırdığımız için bizim aslında videomuzda bir T var. Burada 16'lık bir 16 saniyelik mesela diyelim ki bir T var ya da 16 frame'lik desek daha doğru olur sandımca.
+
+101
+00:20:21,940 --> 00:20:36,559
+Sabit olarak dolaştırmak durumundayız. Çünkü şu an iki boyutlu konvolüsyon yapıyoruz. Yani T16 olarak burada öne arkaya sağa sola dolaştırmıyoruz. Öne arkaya dolaştırmıyoruz. Çünkü bu zaten sabit. Ve bir output elde ediyoruz. Bu iki boyutlu konvolüsyondu.
+
+102
+00:20:36,559 --> 00:20:49,720
+Şimdi burada şöyle bir problem var. Bu hareketin mesela diyelim ki bir sahnede birisi alkışlıyor. Diyelim ki önce alkışlamıyor sonra 16 frame'in sonuna doğru alkışlamaya başlıyor. Diğer taraftansa
+
+103
+00:20:49,940 --> 00:20:51,940
+Burada ise düşünelim ki
+
+104
+00:20:52,115 --> 00:21:20,115
+Frame boyunca alkışlıyor, sonra alkışlamayı kesiyor. Yani aslında her iki durumda da alkışlamak eylemi var. Bu okey. İkisinde de bizim klasife edeceğimiz eylem alkışlamak eylemi. Ama burada T16'da bir sabit bir filtre burada dolaştırdığımız zaman elde ettiğimiz çıktılar farklı. Niye farklı? Çünkü şuradaki akış sonra alkışlarken buradaki akışta önce alkışlıyor ya da alkışlama süreleri değişiyor. Dolayısıyla aslında bu iki filtrenin elde edeceğimiz...
+
+105
+00:21:20,115 --> 00:21:33,115
+Sonuçlar farklı oluyor. Her iki filtrede de alkışlamayı beklerken sonuçlar farklı oluyor. Dolayısıyla burada da Temporal Shift Inveris dediği aslında bu. Yani Separate Filtreler...
+
+106
+00:21:33,663 --> 00:22:00,763
+Aynı motion olmasına rağmen biz farklı filtre öğreniyoruz. Çünkü sonuçlar farklı. Her ikisine de alkışlamak var ama biz bunu tek başına öğrenemiyoruz. Çünkü zamansal olarak bunun tam olarak zamanını kestiremediğimiz için bize farklı sonuçlar veriyor. İşte bunu çözen yöntem de aslında 3D konvolüsyon. 3D konvolüsyonu da bu sefer artık 16 değil, 3 ya da değişebilir bu tabii ki. Hani bizim konvolüsyon yapacağımız zaman eksenine göre. Burada ise artık şöyle bir avantajımız oluyor.
+
+107
+00:22:01,663 --> 00:22:29,663
+Bu arada biz bu T3'ten alkışlamak eylemini bulabiliyoruz. Çünkü artık bu bizim için yani üçlük zaman diliminde bu 224'lü 224'lük göründüğü de alkışlamanın bizim filtre ağırlık karşılığı neyse o önde de olsa arkada da olsa biz onu yakalayabiliriz. Çünkü arkaya geldiğimiz zaman bu sefer orada bulacak. Mesela önde videonun erken saniyelerine geldiğimiz zaman ise mesela orada bulamayacak ama videonun bir sonraki saniyesinde bulabilecek. Yani dolayısıyla biz aynı yapıyı kullanabiliyoruz. Ve dolayısıyla burada da bu in...
+
+108
+00:22:29,663 --> 00:22:44,124
+Invariant durumundan, yani bu değişkenlik durumundan, zamansal olarak değişkenlik durumundan etkilenmemiş oluyoruz. Çünkü burada olduğu gibi kaskat bir halde bunları değerlendirmiyoruz. Zamanı göre değerlendiriyoruz. Dolayısıyla bu da tabii ki 3D konvolüsyonun bir avantajı olmuş oluyor.
+
+109
+00:22:45,943 --> 00:22:48,543
+Burada da herhalde filtre bankası var diye düşünüyorum.
+
+110
+00:22:50,740 --> 00:23:18,740
+Şimdi burada tabi ki çok çeşitli veri setleri var. Bu veri setleri de aldıkça ağır veri setleri. İşte sport 1 milyon veri seti var. Burada 1 milyon tane YouTube görüntüsü var. Burada işte 487 tane spor farklı spor görüntüsüne göre labellanmış bu görüntüler. Tabi ki burada bu görüntülerin oldukça kalitesinin düşük olduğundan bahsedebilirim. Dolayısıyla çözünürlük olarak çok düşük videolar. Yine saniyeleri çok farklı olabiliyor. Yine ben bu veri setini inceleme imkanı var.
+
+111
+00:23:18,740 --> 00:23:45,220
+Bunu bulmuştum daha öncesinde de. Çok farklı mesela hani durup mesela diş fırçalamak eylemini düşünelim. Hiç diş fırçalamıyorken öylece duruyorken bir anda böyle diş fırçalama anına geçebiliyor ya da dans etmek olarak bir anda yürüyorken sonra bir anda dans etmeye başlayabiliyor gibi. Aslında oldukça zor bir şey buradan bunu tahmin etmek. Ama şöyle bir avantajımız var. Hani 1 milyon tane annotated video var. Dolayısıyla ground truth'larını biliyoruz. Ve bizim modelimiz de aslında bunun correct prediction'ını yapmaya çalışıyor.
+
+112
+00:23:46,740 --> 00:24:13,879
+Şimdi burada bir karşılaştırma var. Early Fusion ve Late Fusion. Yani önce mi bu öz nitelikleri birleştireceğiz, sonra mı birleştireceğiz kısmına gelindiği zaman da 3D senenin burada başarı elde ettiğini görüyoruz. Ki zaten böyle de aslında bekleniyordu. Ama tabii ki bunun dezavantajı da az önce de bahsettiğim gibi yavaş bir yöntem olması. Dolayısıyla 2014'ten beri sanıyorum oldukça ciddi bir başarı elde ediyoruz. Sports 1 milyon veri setinde ama yine de mesela başarının düşük kaldığını görebiliyoruz.
+
+113
+00:24:14,740 --> 00:24:30,219
+Zor veri setleri bunlar. Hala da üzerinde çalışılıyor diye biliyorum. Çok temel bir veri seti. Yine single frame performansında mesela çok kötü olmadığını görüyoruz. Ama early fusion, late fusion birbirine yakın olsa da 3D CNN'in önde olduğunu burada görebiliyoruz.
+
+114
+00:24:36,723 --> 00:24:58,463
+Zaman eksenindeki boyutu ne olacak diyebiliyor. Hani tartıştığımız zaman da burada aslında bir karşılaştırma var. Gördüğünüz gibi zaman ekseninde bu 3C3D denilen şey aslında zaman ekseninde üçlük bir görüntü alınması. Yani aslında 3x3x3 alıyor gibi düşünebiliriz bu. Yanlış hatırlamıyorsam bu da Facebook'un önerdiği bir yöntemdi.
+
+115
+00:24:58,463 --> 00:25:03,104
+Ve dolayısıyla aynı VCC gibi o da hatırlarsanız 3x3 konvolüsyonu dolaştırıyordu.
+
+116
+00:25:04,723 --> 00:25:15,563
+Benzer şekilde dolaştırıyor. Çok daha ağır bir model olduğunu görebiliyoruz. Dolayısıyla aslında bunu yapmak çok maliyetli oluyor. Ama...
+
+117
+00:25:15,571 --> 00:25:34,271
+Yani zaman ekseninde 3x3x3'lük bir model dolaştırmakta daha yüksek bir başarı elde edebiliyormuş. Yani yine aslında burada bir trade-off mevcut. Eğitim zamanında oldukça zor bir model eğitiyoruz, kapsamlı bir model eğitiyoruz ama başarı olarak da bunun bize bir katkısı olduğunu görüyoruz.
+
+118
+00:25:34,271 --> 00:25:41,271
+[öğrenci], orada şey de demek istiyor olabilir. VGG...
+
+119
+00:25:42,867 --> 00:26:00,715
+Şey için kullanılıyor çok fazla. Pre-trained model olarak kullanılıyor çok. Kullanıldı ya da. Hani bir fine tuning etmek için. Bu da zaten released model pre-trained diyor ya. Yani bu C3D'nin...
+
+120
+00:26:00,884 --> 00:26:12,183
+mod C3D'nin ağırlıklarını alıp direkt kullanabilirsiniz veya biraz fine tuning edip transfer learning yapıp kullanabilirsiniz gibi gözüküyor.
+
+121
+00:26:13,183 --> 00:26:14,923
+Tamamdır hocam. Teşekkür ederim.
+
+122
+00:26:18,103 --> 00:26:21,144
+Şimdi burada aslında biraz da farklı bir konuya geçmiş.
+
+123
+00:26:21,599 --> 00:26:28,779
+Bu hareketten aksiyon tanımlayabilir miyiz ya da nasıl tanımlayabiliriz olarak bir akışa geçmiş.
+
+124
+00:26:29,379 --> 00:26:35,859
+Burada da tabii bunun en temel yöntemi Optic Flow akışı oluyor. O da şöyle Optic Flow piksel bazlı olarak bunları inceliyor.
+
+125
+00:26:36,359 --> 00:26:42,439
+Şu T anı, bu da T artı bir anı. Bu kadının kolu buradan buraya geldiği zaman ama tabii ki şu kabul yapmak gerekiyor.
+
+126
+00:26:42,439 --> 00:26:49,579
+T ve T artı bir anı çok yakın anlar birbirine ve sahnenin değişmediği anlar. Hani bu iki kabul yapmak gerek.
+
+127
+00:26:49,599 --> 00:27:17,599
+Dolayısıyla bu koldaki piksel dağılımı, işte görüyorsunuz ten rengine yakın piksellerde dolaşırken, buradaki o piksel dağılımının buraya geldiğini görüyoruz. Yani aslında aynı piksel yapısı korunuyor ama hareket buradan buraya bir akış gösteriyor. Mesela bu elinde tuttuğu ok sanıyorum ki. Bu okun akışına bakalım. Bu videoda diyelim ki hani şurası 200'e 500 olsun mesela. 200'e 500 pikseline geldiğimiz zaman da oktaki o koyu...
+
+128
+00:27:17,599 --> 00:27:24,399
+Yani bu pikselin burada korunduğunu görüyoruz. Yani buradan buraya bu piksel değeri örnek veriyorum. Koyu bir renk olduğu için 50 ise.
+
+129
+00:27:25,079 --> 00:27:26,359
+Elinde tuttuğu yay.
+
+130
+00:27:27,119 --> 00:27:30,079
+Yay mı? Aynen. Ok sırtındaki aynen.
+
+131
+00:27:31,347 --> 00:27:57,567
+Burada da 50 ya da 55, 50. Hani o akışın düşük olduğunu görüyorken, buraya geldiğimiz zamansa burada değişimin çok yüksek olduğunu görüyoruz. Dolayısıyla bu ikisi arasındaki farkı aldığımız zaman bir akış görebiliriz. Ki burada da aslında yaptığı şey aynısı. Bu piksel ve bu piksel arasındaki farklara bakaraktan bir optik flow akışını görmüş oluyor. Displacement olarak, yer değiştirme olarak bunları bulmuş oluyor.
+
+132
+00:27:59,347 --> 00:28:08,928
+Yatay ve dikeyde ayrı ayrı olarak da inceleyebiliriz. Çünkü akışın hani X ve Y Direction'ını bildiğimiz için bunları yine bu şekilde inceleyebiliyoruz.
+
+133
+00:28:10,548 --> 00:28:36,408
+Şimdi burada farklı bir yönteme geçiyor. Tool Stream Networks diyor ki, biz hem burada bir akışa dair bir çıktı elde ettik. Yani işte bu şekilde bir çıktı elde ettik. Hem de biz spatial olarak zaten bunu çok kolay bir şekilde görüntü işleme yöntemleriyle bulabiliyoruz. O zaman biz bunları füze edelim. Yani hem bu görüntüyü CNN'e verelim. Ve CNN desin ki bu herhalde bir ok atma görüntüsüdür. Hem de bu akışı CNN'e verelim.
+
+134
+00:28:38,548 --> 00:29:06,548
+O da bir CNN yapısı zaten. Ona verdiğimiz zaman da o da desin ki bu akış bir ok atma akışıdır. O zaman biz her iki skoru füze ettiğimiz zaman da bu bize bir nihai tahmin verecektir. Yani hem akışı hem de frame'i değerlendirdiğimiz zaman da bu sonuca füze ettiğimizde ulaşabiliriz. Yaklaşımı burada mevcut ve başarılara baktığımız zaman tabi burada veri seti değişiyor. UCF 101'e geçiyor. Bu 101 tane sınıfın bulunduğu daha basit bir veri.
+
+135
+00:29:06,548 --> 00:29:34,428
+Çok daha hafif bir veriseti. Oraya geçtiği zaman da aslında 3D CNN'lerden çok çok daha başarılı bir sonuç elde ettiğini görüyoruz. Özellikle SVM ile birleştirildiğinde mesela ortalamayla birleştirmeye göre daha başarılı bir sonuç elde ediyor. Ve sadece special olarak ve temporal olarak yani zamansal ve mekansal olarak da değerlendirildiği zaman yine başarılı sonuçlar elde ediliyor. Yani aslında veriseti daha makul ve mantıklı bir veriseti. Öyle söyleyeyim.
+
+136
+00:29:34,548 --> 00:29:44,347
+Dolayısıyla sadece spesial olarak bir de değerlendirsek oluyor yani ama bunları birleştirip de hareketi birlikte değerlendirdiğimiz zaman başarı da bu sefer gerçekten güzel yerlere doğru çıkıyor.
+
+137
+00:29:45,428 --> 00:29:54,307
+Tabi burada uzun zamanlı structure'larda bu ne olacak? Yani şu an çok kısa structure'lar değerlendiriyoruz. Belki bir saniyelik, iki saniyelik videolar değerlendiriyoruz.
+
+138
+00:29:54,648 --> 00:29:59,988
+Ama bu bir akış olduğu zaman, bu bir hikaye olduğu zaman bu long term structure'lardan nasıl öğrenilir?
+
+139
+00:30:00,000 --> 00:30:10,000
+Bu konuda gerçek konusu önemli bir hal almış oluyor. Dolayısıyla burada aslında Recurrent Network yapısından ilk defa bu site de bahsetmeye başlıyor.
+
+140
+00:30:10,000 --> 00:30:12,000
+Recurrent Network yapısının burada...
+
+141
+00:30:12,468 --> 00:30:40,348
+Bir yapısı da mevcut. Ben direkt bunun üzerinden anlatacağım. Biz şimdi CNN'lerden sonuçlar buluyorduk. Daha doğrusu burada bir video akışı vardı. Bu video akışından belirli frame'ler almıştık. Hatta bu frame'leri dedik ki hep sık sık almayalım. Ara ara alalım ki daha bizim için makul ve mantıklı değişimler olsun. Tamam dedik. Ara ara aldık. Bu ara ara aldığımız frame'lerden CNN'ler elde ettik. Bu CNN'lerden de bir feature vektörler elde etmiştik. Hatta bunları CNN'lerin elde ettiğimize göre early fusion, late fusion.
+
+142
+00:30:40,468 --> 00:30:55,276
+Burada fark şu. CNN'leri yine elde ediyoruz. Ama bu sefer bu elde ettiğimiz CNN'lerin bir akış içerisinde olduğu bilgisine sahibiz. Yani bunlar artık bizim için ayrı değil. Buradaki CNN bir önceki CNN'lerden gelen bilgiyi...
+
+143
+00:30:55,380 --> 00:31:19,280
+D kendi hesaplarına katıyor. Ki bunun işte en büyük örneği zaten LSTM yapısı. Dolayısıyla biz burada diyelim ki ikinci örnek aldığımız frame'e geldik. Bu ikinci örnek aldığımız frame'de bir önceki frame'deki bilgiyi de kullanarak bir çıktı tahmini yapabiliriz. Bu tabii ki bize çok önemli bir şey sağlıyor. Yani zamansal olarak aslında önceki bilgileri kullanarak bir tahmin yapmamızı sağlıyor.
+
+144
+00:31:23,380 --> 00:31:27,340
+Bu örneği kullanarak bir tahmin yapabiliriz.
+
+145
+00:31:27,380 --> 00:31:28,380
+Burada
+
+146
+00:31:27,667 --> 00:31:55,667
+Farklı yaklaşımlar var. Mesela menu to one sonuçta biz nihayet olarak bir videoda classification yapacağız. Yani bir tahmin yapacağız. Bunu nasıl yapabiliriz yaklaşımları değişebiliyor. Mesela menu to one yaklaşımı. Burada aldığımız sonuçların hepsini böyle birleştirip birleştirip en son bir tahmin yapıyoruz. At the end of the video da tahmin yapıyoruz. Bunun farklı senaryoları var. Menu to menu. Yine aslında ilk öğrendiğimiz late fusion yapısına benzer bir şekilde burada hepsinin bir çıkışı.
+
+147
+00:31:55,667 --> 00:31:56,268
+Düşünün, bu savaş.
+
+148
+00:31:56,788 --> 00:32:16,387
+Ama şöyle bir fark var. Buradaki çıktı artık buradan da etkilenerek oluşan bir çıktı. Dolayısıyla aslında RNN mekanizmasını burada net bir şekilde görebiliyoruz. Yani burada bir çıktıya sahibiz, burada bir çıktıya sahibiz ama bu çıktı buradan da etkileniyor. En son çıktı hepsinden etkileniyor şeklinde. Daha sonra menü tü menü yani birçok burada çıktı elde edebiliyoruz.
+
+149
+00:32:24,788 --> 00:32:29,387
+Bunların çok farklı sayıda olduğunu düşündüğümüz zaman da bir memory problemi var.
+
+150
+00:32:29,387 --> 00:32:33,788
+Bunu da don'tpecprop olarak buradaki slide yorumlamış.
+
+151
+00:32:33,788 --> 00:32:38,788
+Yani bu konuda açıkçası katkısı olan varsa yardımcı olmasını beklerim.
+
+152
+00:32:38,788 --> 00:32:40,788
+Ama bu şekilde yorumlamış diyebilirim.
+
+153
+00:32:46,548 --> 00:33:08,788
+Şimdi tabiki burada CNNler bu videolardan lokal olarak öğreniyor. RNNler ise artık sadece lokal olarak değil, Previous bilgileri de kullanarak bir yapı elde ediyor. Dolayısıyla bu CNN ve RNN mekanizmasını nasıl birleştireceğimiz konusunda bir sonraki slide'larda bunu görüyor olacağız. Burada aslında bir grid yapısı görüyoruz.
+
+154
+00:33:10,451 --> 00:33:38,451
+Tüm, burada işte konvolüsyon layer'larımız var. Tüm layer'lar aslında hepsi bir öncekinden etkilenerek, zamansız olarak bir öncekinden etkilenerek oluşan yapı. Dolayısıyla bu da aslında RN'i bize tarif ediyor. Yani aslında RCN desem daha doğru olur. Recording Convolutional Network. Yani biz burada her layer'daki yapı aslında layer'lar bir sonraki layer'lara bilgi aktarıyor. Bu zaten elimizde olan bir yapıydı. Hani layer, layer. Biz bu konvolüsyon sonuçları.
+
+155
+00:33:38,451 --> 00:33:43,251
+Sonuçlarından bilgi öğreniyorduk. Hatta bu layer arttıkça Deep Neural Network'lere doğru gidiyorduk.
+
+156
+00:33:43,672 --> 00:33:49,692
+Ama artık burada bir fark var. Artık burada sağa doğru da yani time'a doğru da bir bilgi aktarışı mevcut.
+
+157
+00:33:49,932 --> 00:33:57,192
+Dolayısıyla hem previous layer'lerden hem de previous time step'lerden bir bilgi öğrenerek aslında nihai tahmini yapıyoruz.
+
+158
+00:33:57,192 --> 00:34:04,372
+Nihai tahmin dediğim gibi son katmandaki çıktıların tamamına göre de yapabiliriz. Son katmandaki son çıktığı göre de yapabiliriz.
+
+159
+00:34:06,451 --> 00:34:18,652
+Yaklaşımları burada değişiklik gösteriyor. Dolayısıyla 2D konvolüsyonda burada bu filtreyi böyle sağa sola öne arkaya dolaştırarak bir output feature elde ediyorduk.
+
+160
+00:34:19,603 --> 00:34:33,764
+Fakat RNN'e geldiğimiz zamansa artık şöyle bir fark var. Hem Time Step olarak bir önceki layer'lardan bilgi alıyoruz. Hem de Features olarak bir önceki layer'lardan, daha doğrusu bir önceki Time Step'ten bilgi alıyoruz.
+
+161
+00:34:33,764 --> 00:34:47,483
+Ve bu ikisini birleştirip aslında biz nihai bir network oluşturmuş oluyoruz. Tıpkı az önceki Greek Network gibi. Ve tabii ki bu yapılar konvolüsyonal olarak yani kendi içinde farklı.
+
+162
+00:34:47,603 --> 00:35:01,227
+Kendi içinde derinlikleri farklı olabilir ama nihai yapıda hem önceki timestepteki bilgiyi kullanıyoruz hem de önceki layer'lerdeki bilgiyi kullanarak biz bir çıktı elde edebiliyoruz.
+
+163
+00:35:05,076 --> 00:35:33,056
+Tabii ki bunun slow olduğundan bahsetmek mümkün. Çünkü bu yöntem paralel hale getirilemiyor. Yani biz buradaki çıktığı, belki şurada değil ama şurada daha kolay anlatılacaktır. Şuradaki çıktığı alabilmemiz için buradan sırasıyla akış içerisinde bu bilginin gelmesi gerekiyor. Dolayısıyla bu akışı beklememiz gerektiği için de bu işlemi paralelleştiremiyoruz. Yani önce şunun çıktısını beklememiz lazım. Sonra şu, sonra şu. En son artık buradaki çıktığı alabiliyoruz. Öyle olduğu için de burada bir slow.
+
+164
+00:35:33,076 --> 00:35:50,775
+problemimiz var ve paralel edilememe problemimiz var. Bunu çözen mekanizma ise Self-Attention mekanizması. Peki Self-Attention mekanizması bunu nasıl çözüyor derseniz, burada bir Q2SV values var. Yani Self-Attention mekanizması aslında buradaki bütün inputları alıp
+
+165
+00:35:51,251 --> 00:35:57,391
+ve bütün inputları aynı anda işleyip hangisine daha çok dikkat edileceğini söylüyor.
+
+166
+00:35:57,652 --> 00:36:05,851
+Buradaki inputların bir value değerleri var. Bir de bu inputların birbiriyle alakalarını işleyen query ve case değerleri var.
+
+167
+00:36:06,091 --> 00:36:12,751
+Ve daha sonra yani biz hangi bağlamdayız? Bizimle o bağlama hangi bağlam daha yakın olabilir?
+
+168
+00:36:13,011 --> 00:36:17,612
+Mesela biz bir cümlenin öznesini ararken o öznenin en baştaki
+
+169
+00:36:17,811 --> 00:36:35,091
+Cümlenin en başındaki mesela özne diyelim ki [öğrenci] ya da benim adım olsun [öğrenci] cümlenin fiiliyle öznesi arasındaki ilişkiyi ararken o aradaki yapıdan dolayı biz diyoruz ki özne işte en başındaki yapı muhtemelen bizim daha çok dikkat etmemiz gereken yapıdır.
+
+170
+00:36:35,091 --> 00:36:41,492
+Yani aradaki cümlelerle ilgilenmiyoruz. Dolayısıyla burada bir küerimiz var. Yani biz ne öğrenmek istiyoruz cümlenin öznesini mi öğrenmek istiyoruz diye.
+
+171
+00:36:42,112 --> 00:36:45,711
+Burada da bizim keyislerimiz var. Bunlar birleşip bir etenşim mekanizması oluşturuyor.
+
+172
+00:36:45,811 --> 00:36:55,811
+Yani attention mekanizması da bize diyor ki cümlenin başına dikkat et. Yani orası senin için daha önemli diyor. Ve orijinal değerler de geliyor tabii ki. Ve bu değerler de...
+
+173
+00:36:56,563 --> 00:37:24,563
+Ardından Residual Connection olarak, yani biz Attention'ı biliyoruz, nereye dikkat etmemiz gerektiğini biliyoruz. Ama bu feature'ları da kaybetmiyoruz. Feature'ları da buradan ekleyerek, Attention'ımızı da ekleyerek bir sonraki bloğa öyle gönderiyoruz. Yani aslında bu artık bir lokal bir blok değil, non-lokal bir blok. Çünkü diğer önceki bilgilerden de etkileniyoruz. Yani bir sonraki blokta bu sefer bu bloktaki Attention mekanizmasını ve buradaki Residual Connection'ları yani bilgileri kullanarak kendini kullanıyoruz.
+
+174
+00:37:24,563 --> 00:37:39,003
+İçerisindeki Attention ve Residual Connection'ları işleyecek. İşte bu yapı böyle arka arkaya birleşe birleşe birleşe birleşe en son nihayet çıktığı bize verecek. Ve bu da aslında bakıldığı zaman da Attention mekanizmasını oluşturuyor.
+
+175
+00:37:40,884 --> 00:38:01,083
+Şimdi burada inflating diyor. Yani aslında şöyle bir şey var. Biz resimlerden gelen bilgileri biliyoruz. Peki bu resimlerden daha doğrusu resimlerle ilgili çok ciddi bir databaseine sahibiz ve bunları kolay bir şekilde daha kolay bir şekilde işleyebiliyoruz. Şimdi bunu videolarda kullanabilir miyiz? Tarzında bir yaklaşım mevcut burada.
+
+176
+00:38:02,516 --> 00:38:30,496
+Burada örneğin bir video var. Bu videodan farklı farklı örnekler alarak kendi örneklem sayımızı arttırabilir miyiz? Yani bunları bu şekilde kendi aldığımız örnek sayısını bu şekilde daha doğrusu inflating olarak düşündüğümüz zaman hani şişirebilir miyiz anlamına geliyor. Örneğin biz 5x5 örnek alabiliriz. Bunu zamansal olarak da değişebilir. Yani 3 saniyelik bir örnek alabiliriz mesela. 2 saniyelik bir video o videodan örnek alabiliriz. 1 saniyelik bir örnek alabiliriz.
+
+177
+00:38:30,516 --> 00:38:53,215
+Yani aslında elimizdeki görüntü sayısını bu şekilde çok fazla hale getirmiş oluyoruz. Burada da görüldüğü gibi yine mesela 3x3'lük bloklardan 3 saniyelik bir örnek almış. Bu aslında farklı bir örnek oluyor. 5 saniyelik daha uzun bir şeyi değerlendirmiş. Yani daha uzun bir akışı değerlendirmiş. Burada ise mesela çok kısa bir saniyelik bir akışı değerlendirmiş. Bunların hepsini daha sonrasında concatenate etmiş.
+
+178
+00:38:58,420 --> 00:39:02,779
+Birçok defa farklı farklı örnekler alarak kopyaladığını görüyoruz.
+
+179
+00:39:02,779 --> 00:39:06,359
+Ve bu şekilde bunları inflate etmek mümkün hale geliyor.
+
+180
+00:39:07,476 --> 00:39:17,396
+Başarılarına bakıldığı zaman da Pre-Train olan modellerde yani hala hazırda eğitilmiş modelleri kullandığımız zaman sıfırdan model eğitmeye göre daha yüksek başarılar elde ettiğimizi görüyoruz.
+
+181
+00:39:17,396 --> 00:39:29,716
+Ve hepsini de elde ettiğimizi görüyoruz açıkçası. Dolayısıyla bu resimlerden bizim öğrendiğimiz bilgileri, bu devasa bilgiyi diyeyim çünkü çok fazla bu konuda veri seti mevcut, çok fazla Pre-Train model mevcut.
+
+182
+00:39:30,195 --> 00:39:35,476
+Onları da burada aslında 3 boyutlu hale geldiğimiz zaman kullanabileceğimizden ve hatta kullanmamızın da faydalı olabiliyor.
+
+183
+00:39:35,476 --> 00:39:36,816
+bizeyinden bahseden bir slide.
+
+184
+00:39:38,135 --> 00:39:38,836
+O da burada.
+
+185
+00:39:39,615 --> 00:39:41,195
+Burada Vision Transformer'lara
+
+186
+00:39:41,195 --> 00:39:43,236
+bir giriş yapmış. Aslında
+
+187
+00:39:43,236 --> 00:39:45,316
+Vision Transformer'ların detaylarını da çok fazla
+
+188
+00:39:45,316 --> 00:39:47,115
+işlememiş. Sanırım ki ilerleyen derslerde
+
+189
+00:39:47,115 --> 00:39:48,695
+işecektir. Çünkü önemli de bir konu.
+
+190
+00:39:49,316 --> 00:39:51,076
+Ama burada sadece bir giriş yapmış.
+
+191
+00:39:51,655 --> 00:39:53,436
+Orada da Vision Transformer'da
+
+192
+00:39:53,436 --> 00:39:55,155
+aslında temel olarak belki benim
+
+193
+00:39:55,155 --> 00:39:56,436
+anlatmam gereken şey şu.
+
+194
+00:39:57,336 --> 00:39:58,956
+Biz burada bir
+
+195
+00:39:58,956 --> 00:39:59,976
+attention yapımız var.
+
+196
+00:40:00,000 --> 00:40:27,940
+Ama artık videonun bulunduğu bu kernel'ı yani şurada bir resim açabilir miyim bilmiyorum. Bu yapıyı aslında biz transformer'larla patch patch yani ayrı ayrı inceliyoruz. Ve daha sonra bunları bir sıralı haline getirip bunlara bir pozisyon veriyoruz. Yani şu patch'teki bilgi bizim için ayrı bir bilgi oluyor. Şuradaki bilgi bizim için ayrı bir bilgi oluyor. Bu tabii ki hani ilk slaatlarda bahsedilen o minimal değişiklikleri inceleyemiyoruz tarzındaki problemi de çözen bir bilgi.
+
+197
+00:40:28,000 --> 00:40:55,920
+Ve bunu Vision Transformer olarak düşünüldüğünde aslında resimde kullanılan yöntemler, resimdeki farklı bölgelerdeki bilgileri kullanarak bir model eğitimi. Bunun video versiyonu da Vivid oluyor aslında. Video Vision Transformer oluyor. Ve buradaki yapılardan da temel olarak bahsediyor. Mesela Masked Auto Enkadorlar var. Videonun bir kısmını mesela alıyor, diğer kısmını maskeliyor ve oradan bir çıktı tahmin etmeye çalışıyor gibi.
+
+198
+00:40:56,000 --> 00:41:05,039
+Çok güncel çalışılan bir konu bu aslında. Burada mesela video masketi otoyankadurlara bakıldığı zaman başarının çok fazla artmış olduğunu görüyoruz.
+
+199
+00:41:05,039 --> 00:41:14,239
+Ve hani slide'ın en başında akışın başladığı bu CNN Per Frame'e geldiğimiz zaman başarının 1.5 kat kadar arttığını görüyoruz.
+
+200
+00:41:14,319 --> 00:41:21,259
+Hakikaten bu da ciddi şekilde başarı artışını gösteriyor. Yine LSM yani Recurrent yapılarını kullanmak başarıyı bir miktar arttırıyor.
+
+201
+00:41:21,899 --> 00:41:24,000
+Bunları Pre-Train olarak kullanmak yine daha çok...
+
+202
+00:41:24,000 --> 00:41:31,000
+Bu konuyu çok arttırıyor ama Transformer yapılarına geldiğimiz zaman başanın daha da ciddi şekilde ve trajik bir artışla arttığını görüyoruz.
+
+203
+00:41:34,324 --> 00:41:58,443
+Şimdi burada aksiyonu tahmin edebilir miyiz diye aslında bir yapı oluşmuş. Bilmiyorum hani bu konuda katkıda bulunmak isteyen var mı? Bizim elimizde bir appearance var, görünüm var. Bu hareketin bir slow hareketleri sonucunda oluşan bir değişim var. Bir de fast hareketleri sonucunda oluşan bir değişim var. Hani katkıda bulunmak isteyen varsa bunun hangi hareket olduğunu tahmin edebilir misiniz acaba?
+
+204
+00:42:04,659 --> 00:42:21,539
+Tamam o zaman ben bir sonraki slide'a geçeyim. Bu aslında bir halter hareketiydi. Yani biz hem şu anda hareketin olmadığı durumu biliyoruz. Hem hareketin az olduğu durumu biliyoruz. Hem de hareketin hızlı olduğunu biliyoruz. Dolayısıyla bunları 3 bilgiyi kullanarak bir tahmin burada yapabiliyoruz.
+
+205
+00:42:21,539 --> 00:42:32,619
+Ve bu tahminin sadece model bazında değil insan gözü bazında da az çok yapılabildiğini görüyoruz. Belki şu an sonuçları gördüğümüz zaman bunu yorumlayabiliriz. Bir halter kaldırıyor gibi bir görüntü var.
+
+206
+00:42:32,659 --> 00:42:42,639
+Burada herhangi bir aksiyon yok. Sadece görünüm var. Hızlı ve yavaş aksiyon olarak da burada yorumlanmış. Burada ikinci bir örnek koymuş. Hareketi tahmin edebilir miyiz diye.
+
+207
+00:42:43,188 --> 00:43:04,407
+Hani şu belki yapının neye benzediğini tahmin edebilirsek hani bir tek böyle insan yüzüne benziyor gibi. Dolayısıyla insan yüzünde şurada bir hareketler var gibi. Bu da makyaj aslında bakıldığı zaman. Yine bir görünüm var ve bu yavaş hareketler sonucunda oluşan bir akış var. Hızlı hareketler sonucunda oluşan bir akış var ve buradan tahmin yine yapabiliyoruz.
+
+208
+00:43:11,188 --> 00:43:16,827
+Tahmini zaten o en başındaki site'de da koyduğu gibi zaten güncel olarak yapılan bir konu.
+
+209
+00:43:17,172 --> 00:43:45,172
+Peki başka hangi konular var? Sadece videolardan aksiyon tahminleri yok. Videolarda uzun videolar ve sahneleri değişen videolar olduğu için bunları bir de lokalize ediyor. Yani koşma aşaması diyor. Şurada başlamış, şurada bitmiştir diyor. Dolayısıyla mesela jumping sıçrama aşaması diyor. Şurada başlamıştır, şurada bitmiştir diyor. Yani bir videonun içerisinde farklı aksiyonlar olabilir. Ve biz bunların başlangıç ve bitiş anlarına kadar tespit edebildiğimiz yöntem aslında Temp Prodactual Location 2018'de çıkmış.
+
+210
+00:43:45,172 --> 00:43:52,531
+Bir mekale gördüğünüz gibi. Bunun üzerinde de daha birçok gelişme olmuş aslında. Ama bu da bu konunun başlangıç noktalarından bir tanesi.
+
+211
+00:43:54,011 --> 00:43:59,172
+Diğeri yer ve konum bilgisinin bulunduğu yapı. Mesela burada...
+
+212
+00:43:59,615 --> 00:44:17,976
+Telefonla konuşuyor diyor ama hangi hareketin bunu gösterdiğini bir de bounding box içine alıp da anlatıyor. Telefona bakıyor diyor, telefonu cevaplıyor diyor. Dolayısıyla burada aslında uzdansal olarak da bu bilgiyi yerine tespit edebildiğimiz hareket akışı da burada diyebilirim. Bu da yine farklı bir çalışma konusu tabii ki.
+
+213
+00:44:18,996 --> 00:44:44,356
+Temporal Streamler yani akışlar bir akış içerisinde biz bunu tahmin ediyoruz. Burada neler oluyor diye. Burada işte self-etension mekanizmaları az önce bahsettiğim gibi mevcut. Stream Networkler mevcut. Yine o hani hem değişimi hem de CNN mekanizmasıyla görüntüyü alan hem görüntüyü hem de görüntüdeki değişimi birlikte füzyılayan mekanizmalar mevcut. Burada da örnekler var.
+
+214
+00:44:46,164 --> 00:44:52,604
+Yine bir diğer çalışma konusu da audio ve kimin konuştuğunu ayırt etme.
+
+215
+00:44:53,076 --> 00:45:20,576
+Yöntemi yani aslında hem ses işliyor hem de görüntü işliyor ve buna bakarak şu anda diyor ki işte her ikisi de konuşuyor diyor. Şu anda diyor ki sadece diyor buradaki speaker konuşuyor diyor. Şu an sadece sağdaki speaker konuşuyor diyor. Dolayısıyla bu konuda çalışma alanları da yine mevcut. Yani konuşan kişiyi bu şekilde de ayırt edebiliyoruz ki bunun mesela 2021 yılında hani biraz daha güncel bir artık çalışma konusu haline geldiğini söyleyebiliriz. Yine hani CVPR'de yayınlanmış çok bildiğiniz gibi nitelikli bir görüntü işleme dergisi.
+
+216
+00:45:21,076 --> 00:45:45,216
+Yine müzikalı enstrümanları ayırt edebiliyor. Yani şu an hangi enstrüman çalıyor ya da hangisinden ses geliyor gibi bir ayırt etme mevcut. Yine bu da çalışılan konulardan bir tanesi. Burada bunun iç yapısına dair çeşitli enkoder dekoder yapılarından şöyle bir genel bahsetmiş. Burada bunu efficient yapmayla ilgili bazı yapılardan bahsetmiş.
+
+217
+00:45:46,739 --> 00:46:02,460
+Ama dediğim gibi bunlar çok temel olarak sadece ismini vererek geçmiş. Burada Efficient olarak kullanılan mesela Movinets varmış. Belki merak eden kişiler daha sonrasında bunu araştırabilir. Ama çok da güncel olabilecek konulardan bir tanesi bu da.
+
+218
+00:46:04,692 --> 00:46:07,112
+Diğer taraftan bu mesela biraz enteresan.
+
+219
+00:46:07,192 --> 00:46:09,992
+Malt Model Ego Centric Video Understanding.
+
+220
+00:46:09,992 --> 00:46:29,652
+Burada bir insan gözüyle, aslında insan gözlüğünü takıyor ve aslında bu filmlerde gördüğümüz gibi dolaşıp bu video aksiyonlarını tahmin etme ya da belki konuşan kişileri, az önce hani o speech kısmında bahsetmiştim, konuşan kişileri analiz etme gibi bir yapı mevcut.
+
+221
+00:46:30,291 --> 00:46:32,692
+Burada da 2024 yani aslında en güncel...
+
+222
+00:46:32,692 --> 00:46:58,172
+Şu an bu site'in verdiği çalışma bu. Burada bu tahminler yapılabiliyor. Yani bir gözlüğe takılan bir mekanizmleri olabilir. İnsan gözü şeklinde ortamı görerek oradaki artık bizim ne öğretiyorsak konuşan kişiyi mi ayırt etmesini istiyoruz, klasifi mi etmesini istiyoruz ya da belki birisinin tanımasını mı istiyoruz gibi ya da belki database'den tanıdığı kişilerin isimlerini vermesini istiyoruz, onlarla ilgili bilgi vermesini istiyoruz. Öyle bir database'e sahibiz diyelim ki.
+
+223
+00:47:00,692 --> 00:47:28,152
+Çalışmalar yine mevcutmuş. Tabii ki bunu video olarak yapıyoruz. Çünkü sürekli bir akış var. Yani bunu sadece görüntü olarak yapmak herhalde çok da başarı getirmeyecektir. Bunu LLM'lerle de destekliyoruz. Tabii 2024 yılında çıkarılmış. Yani aslında bu bizim biraz proje konumuzla da benzer. Hani biz projede tabii resimden yazı üreteceğiz ama videolardan da çeşitli LLM'lerle bu yazıları üretmek mümkün oluyor. Bu da yine oldukça güncel bir çalışma konusu şeklinde.
+
+224
+00:47:28,692 --> 00:47:30,188
+Bu konuda örnekleri tamamlayabilirim.
+
+225
+00:47:34,291 --> 00:47:40,871
+Teşekkür ediyorum [öğrenci]. Bu 10. lecture'ın tümü müydü, yarısı mıydı?
+
+226
+00:47:41,152 --> 00:47:47,071
+Tümüydü hocam. Çünkü diğer yarısını sunacak arkadaş katılmayacağını bana söyledi. Ben de tamamlamak istedim.
+
+227
+00:47:47,071 --> 00:47:59,551
+Tamam, iyi yaptın. Teşekkür ediyoruz. Bir sonraki slide'ı anlatacak arkadaş burada mı? 11. slide'ı anlatacak.
+
+228
+00:48:00,916 --> 00:48:07,536
+Arkadaşlar, [öğrenci] ve [öğrenci] yazmışım.
+
+229
+00:48:21,748 --> 00:48:25,068
+Bunlar ses çıkmadı gibi.
+
+230
+00:48:36,179 --> 00:48:37,499
+Kaç haftamız var?
+
+231
+00:48:48,340 --> 00:48:51,340
+Şu anda kaçıncı haftadayız?
+
+232
+00:48:52,940 --> 00:48:54,539
+Şu an 9'dayız hocam.
+
+233
+00:48:56,259 --> 00:48:58,239
+9. haftadayız değil mi?
+
+234
+00:49:11,027 --> 00:49:12,027
+Evet.
+
+235
+00:49:16,052 --> 00:49:23,012
+Şimdi [öğrenci] yok, [öğrenci] yok. Sırada ne var acaba bir bakalım.
+
+236
+00:49:24,512 --> 00:49:29,372
+Hocam ikisi de burada chatten yazıyor. Belki chati görmüyorsanız arkadaşlar da herhalde mikrofon açamıyorlar.
+
+237
+00:49:29,372 --> 00:49:39,552
+Evet. Yani şöyle haftada bir buçuk slide gitmeyi düşünüyorduk.
+
+238
+00:49:44,083 --> 00:50:02,263
+[öğrenci] da biraz hızlıca anlattı. Şöyle yapalım, artık bu hafta burada bırakalım. Gelecek haftaya iki haftalık, bundan sonra iki slide, iki slide gidecek şekilde hazırlanalım.
+
+239
+00:50:02,263 --> 00:50:10,863
+[öğrenci], [öğrenci], [öğrenci], [öğrenci]. Üçümüz, yani bu grup, 11-12. slide'lar hazır olsun haftaya.
+
+240
+00:50:11,507 --> 00:50:12,619
+Olur mu?
+
+241
+00:50:22,387 --> 00:50:22,887
+Tamam.
+
+242
+00:50:28,884 --> 00:50:46,923
+Yine bir schedule'ına bakalım bunun. 231 schedule'ı. Ödevlerinizin, projelerinizin vesaire durumu ne?
+
+243
+00:50:55,539 --> 00:51:04,999
+Notlandırmayı açıkladılar mı birinci ödeviniz için?
+
+244
+00:51:10,771 --> 00:51:12,612
+Araştırma görevlisi arkadaşlar.
+
+245
+00:51:25,907 --> 00:51:29,407
+Evet, açıklanmamış. Tamam, onları bir dürteyim ben.
+
+246
+00:51:34,087 --> 00:51:38,947
+Şimdi bu hafta için proje proposalları bu hafta mıydı?
+
+247
+00:51:46,771 --> 00:52:08,452
+Bilgisayarla görme ödevler, sınavlar. Proje önerisi. 27.11 son günüymüş. Katıldı, katıldı, katıldı, katıldı, katıldı. Evet, bayağı bir katılan var.
+
+248
+00:52:09,271 --> 00:52:12,891
+Buradakilerin projelerini bir konuşalım bence bitirmeden önce.
+
+249
+00:52:14,547 --> 00:52:17,287
+Kim projesini konuşmak ister?
+
+250
+00:52:30,675 --> 00:52:35,675
+Daha sonradan şöyle, yani notlanacak bu.
+
+251
+00:52:37,675 --> 00:52:52,675
+Project Proposal'ınızı, tabii bizim için de zor oluyor. Şimdi 3 Project Proposal, 3 tane de ödev, 6 tane ödevi ayarla, işte geç mi kaldı, şudur budur. Tekrarı zor oluyor.
+
+252
+00:52:55,295 --> 00:53:14,435
+Artık kabul etmeyeceğim ben. Project Proposal'ı şey olarak puan alamazsınız fakat devam edin. Project Proposal'ın çok yüksek bir puanı olmayacaktır. Bana da söyleyebilirsiniz. Yine konuşabiliriz ama artık resmi olarak almayayım.
+
+253
+00:53:21,396 --> 00:53:29,016
+Şimdi kim görüşmek ister? Görüşmek isteyen var mı? [öğrenci] burada mı? [öğrenci].
+
+254
+00:53:37,780 --> 00:53:39,619
+[öğrenci] burada gözüküyor.
+
+255
+00:53:40,360 --> 00:53:41,700
+Hocam sesim geliyor mu?
+
+256
+00:53:43,039 --> 00:53:43,700
+Efendim?
+
+257
+00:53:44,240 --> 00:53:45,139
+Sesim geliyor mu?
+
+258
+00:53:45,780 --> 00:53:46,519
+Geliyor [öğrenci].
+
+259
+00:53:48,519 --> 00:53:53,780
+Kulaklığın şarjı bitmiş de takamadım. Bilgisayara konuşuyorum o sebeple sordum.
+
+260
+00:53:55,000 --> 00:53:59,680
+Ya sesim geliyor dedim ama öyle bir geldi ki hiçbir şey anlamadım.
+
+261
+00:54:01,119 --> 00:54:02,740
+İstersen chatten yaz.
+
+262
+00:54:05,235 --> 00:54:23,715
+Hoparlörde de bir sıkıntı vardı. Diğer hoparlörlere de bağlayamadım. Senin sesinde de bir şey var. Kulaklığımın şarjı bitmiş. Tamam yani chatten yazabilirsin. Anladım.
+
+263
+00:54:31,380 --> 00:54:47,179
+Bunun son günü dündü. Ödevler, sınavlar. Bunu ne yapabilir? Tek tek, bakamıyorum herhalde. Hepsini indirmem mi gerekiyor? Yüklenen dosyaları indir.
+
+264
+00:55:04,115 --> 00:55:06,115
+Çayın XeroTube
+
+265
+00:55:23,380 --> 00:55:25,380
+[öğrenci]
+
+266
+00:55:35,795 --> 00:55:37,595
+Şimdi [öğrenci] seninkine bakalım.
+
+267
+00:55:59,764 --> 00:56:22,063
+Afet Yönetimi, yasa dışı yapılaşma takibi ve şehir planlaması gibi kritik alanlarda eyleme geçirilebilir öngörüler sağlamak amacıyla yüksek çözünürlüklü uydu görüntülerini otomatik analiz edip doğal dille raporlayan bir uzaktan algılama görüntü başlıklandırma.
+
+268
+00:56:25,396 --> 00:56:28,376
+Teorik Altyapısı Zoo ve Arkadaşları.
+
+269
+00:56:32,820 --> 00:56:35,720
+Bunun verisi var mı [öğrenci]?
+
+270
+00:56:58,900 --> 00:57:00,900
+Sesim geliyor mu [öğrenci]?
+
+271
+00:57:04,884 --> 00:57:06,123
+Çete yazabilirsin.
+
+272
+00:57:14,291 --> 00:57:32,192
+Yani şimdi veri seti olması gerekiyor ya, eğitim yapabilmek için, sonuçlarını bulabilmek için veri seti var. Bu senin kendi başına yaptığın bir şey değil mi? Bizim Ali Can hocalar falan böyle bir şey yapıyor. O grupta falan mısın?
+
+273
+00:57:37,876 --> 00:57:39,876
+Tamam.
+
+274
+00:57:49,043 --> 00:57:51,344
+Yani ne olacak? Resmi alıp
+
+275
+00:57:55,956 --> 00:57:58,776
+Resmi alıp şey mi yapacak?
+
+276
+00:58:03,347 --> 00:58:04,387
+Öğ...
+
+277
+00:58:11,443 --> 00:58:13,903
+Tarif mi edecek? Resmi tarif mi edecek?
+
+278
+00:58:23,155 --> 00:58:24,268
+Peki.
+
+279
+00:58:30,356 --> 00:58:39,816
+Eğer aynı projeyi şey yapıyorsanız, birebir aynı bu şekilde değiştirmek lazım aslında ya.
+
+280
+00:58:46,547 --> 00:58:53,128
+İlk olarak yükleyeninkini kabul edip diğerinden değiştirme, diğerinkinden değiştirme isteriz.
+
+281
+00:59:05,396 --> 00:59:07,396
+Nereye indirdim ben onu?
+
+282
+00:59:42,068 --> 00:59:46,427
+Peki, [öğrenci] burada mı? [öğrenci].
+
+283
+00:59:57,972 --> 01:00:01,172
+Veya özellikle bakılmasını isteyen var mı?
+
+284
+01:00:03,012 --> 01:00:05,972
+Buradaki kişilerin bakalım diye düşünüyorum da.
+
+285
+01:00:12,596 --> 01:00:16,416
+[öğrenci]'e sorduk. [öğrenci] sen gönderemedin galiba.
+
+286
+01:00:19,215 --> 01:00:19,896
+Evet, şu an.
+
+287
+01:00:20,775 --> 01:00:22,556
+Sorundan anladığım kadarıyla.
+
+288
+01:00:28,556 --> 01:00:31,755
+[öğrenci].
+
+289
+01:00:38,708 --> 01:00:41,268
+Sen yükledin mi?
+
+290
+01:00:46,291 --> 01:00:47,571
+Yüklemişsin.
+
+291
+01:00:57,396 --> 01:01:00,796
+Bu da sen miydin aynısı diye? Sanki bu da aynısı.
+
+292
+01:01:01,676 --> 01:01:02,736
+RSI CD.
+
+293
+01:01:19,731 --> 01:01:24,592
+[öğrenci] aynısı demiş. [öğrenci] de aynısı demiş.
+
+294
+01:01:42,356 --> 01:01:49,176
+Birebir aynısı. Hatta şey bile aynı. Blue, Rojel, Bentore falan.
+
+295
+01:01:54,036 --> 01:01:55,980
+Çok benziyor yani.
+
+296
+01:02:03,123 --> 01:02:05,443
+[öğrenci], [öğrenci] mi bakmıştık?
+
+297
+01:02:23,059 --> 01:02:25,059
+[öğrenci] ve arkadaşlarım.
+
+298
+01:02:27,059 --> 01:02:29,059
+Luga arkadaşlarım.
+
+299
+01:02:47,315 --> 01:03:00,795
+Başka veri seti yok mu piyasada? Direkt yani neden böyle bir şey yaptınız? Üç kişi aynı veri setini seçmiş olabilir gerçi.
+
+300
+01:03:02,575 --> 01:03:11,015
+Hocanın sesin geliyor mu? Geliyor. Galiba en kapsamlı veri seti oydu. O sebeple onu seçmiştim ben.
+
+301
+01:03:11,015 --> 01:03:12,135
+Tamam.
+
+302
+01:03:17,043 --> 01:03:34,003
+Birebir aynı şey değil de belki veri seti aynı olur ama uygulaması biraz farklı olabilir. Projelerde bir renklilik, değişiklik yapabilsek iyi olurdu.
+
+303
+01:03:34,803 --> 01:03:42,563
+Hocam o zaman ilk işinin aynı kalacak, diğerleri projenin kapsamını veya direkt projenin kendisini değiştirmesi gerekecek.
+
+304
+01:03:42,563 --> 01:03:44,443
+Evet, evet.
+
+305
+01:03:47,380 --> 01:03:50,799
+Çok fazla veri seti yok demiş [öğrenci].
+
+306
+01:03:57,876 --> 01:04:05,036
+Peki, başka şeylere bakalım. Ne var? Diğerlerini de bir gözden geçirelim. Ondan sonra konuşalım.
+
+307
+01:04:08,315 --> 01:04:12,436
+[öğrenci] burada galiba. [öğrenci] buradaydı.
+
+308
+01:04:22,804 --> 01:04:26,584
+[öğrenci]'ı görmüştüm ama çıkmış galiba. [öğrenci].
+
+309
+01:04:28,584 --> 01:04:30,444
+[öğrenci].
+
+310
+01:04:32,004 --> 01:04:35,304
+Evet. [öğrenci] sen ne demişsin?
+
+311
+01:04:59,603 --> 01:05:04,123
+Visual Genome Veri Seti ne kullanacağız demişsin, doğru mu?
+
+312
+01:05:06,443 --> 01:05:07,244
+Evet.
+
+313
+01:05:10,931 --> 01:05:12,931
+Ne var o verisiyetinde?
+
+314
+01:05:22,643 --> 01:05:28,503
+Bir açıklayabilir misin buraya tam olarak? Ne demişsin?
+
+315
+01:06:14,420 --> 01:06:16,420
+Ya şöyle aslında...
+
+316
+01:06:20,052 --> 01:06:44,351
+108.000 veri seti diyor. Aslında şöyle yapalım. Veri seti sabit kalabilir de çalışmayı bina ettiğiniz paperları değiştirtelim. Herkes aynı paper üzerine çalışmasını bina ederse aynı proje çıkar. Öyle mi yapsak acaba?
+
+317
+01:06:46,643 --> 01:06:55,043
+Biraz daha bakalım şimdi. [öğrenci]'ınkine bakalım. Seninki veri setinde QA Pairs var diyorsun öyle mi?
+
+318
+01:06:59,123 --> 01:07:07,303
+Ne tür verisiyetleri bunlar? İçerisinde ne tür imgeler var? Belirli bir şey var mı?
+
+319
+01:07:17,588 --> 01:07:43,788
+Yok, [öğrenci]'i daha sana geçmedik. [öğrenci]'dayız. Şeyi [öğrenci]... Pardon. Kullanacağın veri setinin belirli bir teması var mı? Genel bir veri seti mi? Hani RSI değil sanki uzaktan algılanma veri seti gibi görünüyor.
+
+320
+01:07:44,371 --> 01:07:45,995
+Visual Genome
+
+321
+01:08:04,659 --> 01:08:11,239
+Genel bir veriseti. Güzel. [öğrenci] seninki güzel gözüküyor.
+
+322
+01:08:15,239 --> 01:08:18,159
+Yani iyi de bir veriseti gibi gözüküyor.
+
+323
+01:08:21,811 --> 01:08:23,072
+[öğrenci]'e bir bakalım.
+
+324
+01:08:26,072 --> 01:08:26,851
+[öğrenci]
+
+325
+01:08:33,043 --> 01:08:34,323
+[öğrenci]
+
+326
+01:08:40,051 --> 01:08:44,371
+Kuş türlerinin tanınması.
+
+327
+01:08:57,971 --> 01:09:02,391
+Bunu kabul edemiyorum. Çünkü bu bir sınıflama problemi [öğrenci].
+
+328
+01:09:06,068 --> 01:09:18,208
+Yani bu bir tekst üretme problemi değil. 200 tane sınıf, kuş sınıfı var. Sınıflar belli.
+
+329
+01:09:24,979 --> 01:09:28,819
+Tekrardan proje önerisinde bulunman gerekecek.
+
+330
+01:09:32,659 --> 01:09:48,319
+Yani artık onu şey olarak yapın. Hani bunu sıfır vermeyeceğim. Yine bir proje önerisi yükledin. Önerini kabul etmesem de notunu vereceğim. Fakat nasıl yapalım bunu?
+
+331
+01:09:55,347 --> 01:09:58,747
+İkinci bir proje enerjisi fırsatı vermemiz lazım size.
+
+332
+01:10:00,407 --> 01:10:02,467
+Olmazsa bir hafta daha verelim.
+
+333
+01:10:04,927 --> 01:10:07,868
+Ha şöyle, o kuşun detaylarını anlatırsa olur.
+
+334
+01:10:09,007 --> 01:10:14,608
+Yani kuş cinsini verip geçmemesi lazım.
+
+335
+01:10:14,608 --> 01:10:16,807
+Ya kuşun ne yaptığını anlatacak.
+
+336
+01:10:16,967 --> 01:10:20,608
+Hani sabit bir kümeden...
+
+337
+01:10:21,460 --> 01:10:30,479
+Tekst seçmeyecek. Sınırsız. Kendisi oluşturacak cümleleri anlatabiliyor muyum?
+
+338
+01:10:34,323 --> 01:10:48,163
+Dolayısıyla bu haliyle olmaz. Dediğim gibi bu bir sınıflama problemi. Biz tekst üretme problemi olsun istiyoruz. [öğrenci].
+
+339
+01:10:55,699 --> 01:10:57,420
+[öğrenci]'a bakıyorum.
+
+340
+01:10:59,500 --> 01:11:00,619
+[öğrenci].
+
+341
+01:11:04,532 --> 01:11:18,192
+DDX diye bir datastik kullanmayı düşünüyorum. Ama onun öncesinde kendi datamı toplayıp etiketlemeyi düşünüyorum. Eğer yeterince datayı yeterince hızlı şekilde işaretleyebilirsem kendi datamla devam edeceğim.
+
+342
+01:11:19,271 --> 01:11:21,371
+Eğer etiketleyemezsem DD değil.
+
+343
+01:11:21,371 --> 01:11:22,891
+Probleminiz ne?
+
+344
+01:11:24,572 --> 01:11:27,192
+Hocam, biz otonom araç geliştiriyoruz otokarda.
+
+345
+01:11:27,811 --> 01:11:28,112
+Evet.
+
+346
+01:11:29,252 --> 01:11:30,371
+Hem görüntü...
+
+347
+01:11:30,771 --> 01:11:41,532
+Hem de görüntüye ken attığımdan bazı veriler ekleyerek o görüntüdeki olan durumu açıklayan bir model etmeyi düşünüyorum.
+
+348
+01:11:42,532 --> 01:11:51,211
+Baktığım paperda da buna benzer bir yapı var. Bunu tekrarlamaya çalışacağım. Ama öncelikle kendi verimle yapmaya çalışacağım.
+
+349
+01:11:54,707 --> 01:12:05,547
+Yani görüntü arabanın harici kameradan çekilmiş resmi mi? Sahne ne olacak yoksa araba içinden mi?
+
+350
+01:12:06,627 --> 01:12:14,067
+Araba içinden dışarı gören kameralarla sürüş logo gibi bir şey diyebiliriz.
+
+351
+01:12:14,967 --> 01:12:20,007
+Araba şu an kızlanıyor çünkü önü boş gibi çıkkılar üretmesini hedefliyorum.
+
+352
+01:12:20,827 --> 01:12:21,268
+Anladım.
+
+353
+01:12:22,420 --> 01:12:25,600
+Şöyle güzel bir şeye benziyor.
+
+354
+01:12:34,707 --> 01:13:01,167
+Yapılanların loglanması için değil mi? Evet. Ama sende video olacak ya da resim üzerinden mi çalışacaksın? Hocam videolardan frameler çıkarma hedefliyorum. Evet, bugünkü dersteki video ama iki boyutlu resim gibi çalışacaksın öyle mi?
+
+355
+01:13:02,899 --> 01:13:06,779
+Tamam.
+
+356
+01:13:14,676 --> 01:13:31,056
+Burada şey de olacak mı? Mesela resim harici girdi de olacak mı? Çünkü arabaya bu. Bilmiyorum siz de verisiyetiniz nasıl? Arabaya hani gazı köklediğini falan biliyor mu o sistem? Yani gaza bastığında.
+
+357
+01:13:32,056 --> 01:13:40,976
+Görselin üstüne kenatından verilerek diyorlar. Vitesi, arabanın hızını falan, direksiyon açısını falan görsele ekliyorlar. Oradan öğrenmesini öğretiyorlar modeli.
+
+358
+01:13:41,332 --> 01:13:45,612
+Anladım. Yani model her şeyi direkt resimden alsın diyor.
+
+359
+01:13:46,992 --> 01:13:50,811
+Evet. Ben de onu tekrarlamaya çalışacağım ne kadar olursa.
+
+360
+01:13:51,731 --> 01:14:00,152
+Anladım. Tamam. Tamam. Seninki de güzeli benziyor. [öğrenci]'na bakalım.
+
+361
+01:14:12,979 --> 01:14:16,139
+Anlık görseli yorumlayıp şarkı öneren sistem.
+
+362
+01:14:27,604 --> 01:14:34,604
+Hocam, bir fotoğraf yüklediği zaman, o görselle ilgili yorum yapabilen veri setleri var.
+
+363
+01:14:34,604 --> 01:14:37,604
+Hani bu veri setlerini kullanırım ve o görselle ilgili yorum yapar.
+
+364
+01:14:37,604 --> 01:14:42,604
+Ardından da o yaptığı yorumda belki bir sentiment analiz gibi bir şey olabilir.
+
+365
+01:14:42,604 --> 01:14:47,604
+O yaptığı yorumu daha sonra hashtaglerini falan çıkartarak, bir de hani şarkı önerisi ekstra.
+
+366
+01:14:47,604 --> 01:14:55,604
+Benim bir şarkı veri tabanım olur mesela. Örnek veriyorum %30 pozitif ise, bizim Image Captioning modelinin sonucu.
+
+367
+01:14:55,604 --> 01:15:03,463
+%30 pozitif veri tabanında o ayarda bir şarkı bulup şu şarkıyı dinlemelisin gibi bir öneri yazan bir sistem gibi düşünmüştüm.
+
+368
+01:15:04,463 --> 01:15:07,504
+Bana sınıflama problemi gibi geldi bu anlattıkların.
+
+369
+01:15:08,184 --> 01:15:10,744
+Ama bir açıklama yaptığı için...
+
+370
+01:15:10,744 --> 01:15:22,744
+Sentiment analizi sadece sevdi sevmedi falan gibi sınıflar küme içerisindeki belirli bir kümeye sığacak sınıflarsa sınıflama...
+
+371
+01:15:23,028 --> 01:15:26,507
+Sonra o sınıflara uygun bir resim bulma da sınıflama.
+
+372
+01:15:27,847 --> 01:15:32,408
+Ama bunları hocam image captioning üzerinden yapıyor. Yani önce görselden bir metin üretiyor.
+
+373
+01:15:32,408 --> 01:15:41,788
+Ben sonra captioning yapacağım. Diğerleri captioning üzerinden diyorsun. Direkt resim üzerinden sentiment analizi yapmayacak.
+
+374
+01:15:42,739 --> 01:16:10,159
+Resim üzerinden bir captioning yapacak. Captioning'teki keywordlere göre sentiment analizi yapacak. Yani aslında sentiment analizi ve şarkı kısmı bir proje oluşturabilmek için de. Asıl olay captioning kısmı bir model. O model oluştuktan sonra bir captioning yapacak. Veri setinde belirttim orada. O captioning üzerinden ek olarak yapacak. En sonunda da şöyle bir şey yazacak. Mesela iki kişi dışarıda örnek yürürüm yürüyor. Şarkı önerisi de daha sonraki cümlede gelecek.
+
+375
+01:16:10,739 --> 01:16:25,879
+Ama ben tam ne yapacağını toparlayamadım. Şimdi amacını tam ne işe yarayacak anlayamadım.
+
+376
+01:16:27,028 --> 01:16:53,228
+Hocam, şöyle mesela anlık olarak biz dışarıda dolaşıyoruz. Hani anlık olarak bizim duygu durumumuza göre belki kendimizi çekebiliriz ya da dışarısını çekebiliriz. İçinde bulunduğumuz duruma göre, hani orada Proposal'da bir örnek de yazmıştım. Mesela sahilde dolaşıyoruz. Hani sahil fotoğrafını çektiğimiz zaman onu bize açıklayacak. Hani şu an işte sahilde dolaşıyorsun gibi ya da sahilde dolaşan bir kişi var ve şarkı önerim şu gibi bir sistem. Yani anlık dinleyebileceğimiz bir şarkı önermesini istemiştim.
+
+377
+01:16:54,195 --> 01:17:15,435
+Peki verin var mı bunun için? Sanki gereksiz şekilde işi büyütmüşsün gibi geliyor bana. Resimden, bizim projemiz için resimden yazı üretmen yeterli.
+
+378
+01:17:20,159 --> 01:17:44,340
+Şarkı sınıflama ekleyeceksin falan. Hani sanki bizim projemiz için gereksiz gibi geliyor. O kısmı sen kafanda bir proje varsa sonra tamamlayabilirsin. Bu proje kapsamında bence resimlerden yazı üretmeye.
+
+379
+01:17:45,971 --> 01:17:56,511
+Elinde böyle bir gezi varsa şey olamaz mı? Mesela bir gün boyunca olan resimlerinden o gün ne yaptığının logunu çıkarsın.
+
+380
+01:17:58,551 --> 01:18:02,751
+Olabilir hocam. Hepsini ayrı ayrı yorumlayıp ondan sonra kesişim kümesini almak gibi mi mesela?
+
+381
+01:18:04,531 --> 01:18:09,511
+İşte bilmiyorum. Buna uygun bir literatür araması yapabilir misin? Yani tam ben de bilmiyorum.
+
+382
+01:18:10,003 --> 01:18:23,363
+Yani bu şey de yapılabilir. Birden fazla nesne mesela elinde bir özet yazısı olur. Her yeni resim geldikçe özet yazısını değiştirebilir mesela.
+
+383
+01:18:24,304 --> 01:18:28,963
+Yani burada girdi hem tekst hem imge oluyor. Çıktı tekst oluyor.
+
+384
+01:18:31,572 --> 01:18:40,512
+Tamam. Mesela hocam o bir gün olayını, hani ben bir araştırıyorum, bir gün, günün farklı saatlerinde sanıyorum ki bir fotoğraf yüklüyor. Ve onun daha sonrasında bir özetini yapıyor gibi.
+
+385
+01:18:41,192 --> 01:18:41,532
+Aynen.
+
+386
+01:18:42,371 --> 01:18:43,672
+Tamam, tamam. Teşekkür ederim.
+
+387
+01:18:43,672 --> 01:18:55,391
+Yani direkt aklıma gelen bir şey. Hani senin şu anki şeyin, basit bir şekilde o da olur da hani resimde ne var?
+
+388
+01:18:58,387 --> 01:19:09,648
+Açıkla. Bu standart image captioning olur. Projeyi biraz daha enteresan hale getirmek istersek, mesela böyle bir proje olabilir, böyle bir şey var mı bilmiyorum yani.
+
+389
+01:19:10,347 --> 01:19:11,208
+Tamamdır hocam.
+
+390
+01:19:12,887 --> 01:19:22,208
+Ama bunun veri seti var mı hazır elinde? Yani böyle bir şeyi eğitebilmek için elinde zaten fotoğraflar ve...
+
+391
+01:19:23,060 --> 01:19:30,479
+Caption'lar olacak ki onunla eğitebilesin ki tekrar onu kullanabilirsin yani.
+
+392
+01:19:32,280 --> 01:19:39,220
+Hocam o bahsettiğin veri seti çok hani temel fotoğraflar, farklı tür fotoğraflar ve caption'lar barındıran bir veri setiydi. O yüzden onu yazdım. Flickr.
+
+393
+01:19:39,239 --> 01:19:40,380
+Var bir veri seti.
+
+394
+01:19:41,340 --> 01:19:42,760
+Yani var gibi duruyor açıkçası.
+
+395
+01:19:42,780 --> 01:19:44,920
+18 bin Flickr 30 bin demişsin.
+
+396
+01:19:45,340 --> 01:19:45,700
+Evet.
+
+397
+01:19:46,979 --> 01:19:47,780
+Tamam olabilir.
+
+398
+01:19:49,779 --> 01:19:56,819
+Flickr zaten resim paylaşım platformu değil mi? Onların captionlarını mı kullanmışlar?
+
+399
+01:19:57,479 --> 01:20:01,479
+Aynen hocam. Cagle'da vardı hatta böyle 4.5 GB'lık bir veri seti.
+
+400
+01:20:03,619 --> 01:20:04,260
+Tamam.
+
+401
+01:20:07,079 --> 01:20:09,639
+Yani belki şeye bile bakmanız gerek olabilir aslında.
+
+402
+01:20:10,420 --> 01:20:32,180
+Model, eğitilmiş model var mı ona da bakmanız gerekebilir. Çünkü elinizde güçlü donanım yok bildiğim kadarıyla. Şirkette çalışan arkadaşlarım belki olabilir ama normal bir yerde çalışmayan birisinin elinde güçlü bir donanım olmayabilir. Belki şeye de bakmak lazım.
+
+403
+01:20:38,292 --> 01:20:44,692
+Veri Seti var mı? Artı Pre-trained, önceden eğitilmiş model var mı?
+
+404
+01:20:45,212 --> 01:20:49,552
+Yani Fine Tuning yaparak işin içinden çıkabilir miyim?
+
+405
+01:20:51,612 --> 01:20:56,212
+Çünkü 4 GB'lık bir veri seti, resimler...
+
+406
+01:20:58,512 --> 01:21:03,892
+Bilmiyorum bilgisayarınızın gücü nedir ama zorlayabilir yani.
+
+407
+01:21:08,884 --> 01:21:14,264
+Ben ikinci bir proje önerisi açacağım.
+
+408
+01:21:19,644 --> 01:21:24,664
+Ona tekrar projesini değiştirmek isteyenler yüklesin.
+
+409
+01:21:31,347 --> 01:21:33,347
+Şimdi...
+
+410
+01:21:34,347 --> 01:21:36,347
+[öğrenci]'dı.
+
+411
+01:21:38,347 --> 01:21:41,347
+[öğrenci]'a baktık. [öğrenci]'ya bakmadık.
+
+412
+01:21:44,884 --> 01:22:01,923
+[öğrenci]. O da zaten söylemiştin değil mi [öğrenci]? Evet hocam. Benimki de RSD. Yine benzer bir projeydi. Uydu üzerinden askeri raporlar çıkarmayı hedefliyordum.
+
+413
+01:22:05,747 --> 01:22:06,947
+Askeri rapor.
+
+414
+01:22:07,768 --> 01:22:15,007
+Yani askeri olur veya başka türlü çeşitli raporlar yani çıkarmaya defiyordu. Bu benzer bir proje.
+
+415
+01:22:15,007 --> 01:22:31,487
+Şimdi şöyle, mesela burada enteresan başka şeyler olabiliyor. Yani mesela eğer aynı yerin belirli zaman aralıklarında fotoğrafı varsa elinizde, mesela farkların yorumlanması olabiliyor.
+
+416
+01:22:32,948 --> 01:22:46,948
+Ormanların çölleşmesi, çölleşme durumu veyahut gece kondolaşma durumu gibi.
+
+417
+01:22:48,948 --> 01:22:56,288
+Bu şekilde bir araştırsanıza, bu veriseti başka ne amaçlarla kullanılmış?
+
+418
+01:22:57,583 --> 01:23:07,484
+Resimden okudum, Caption'ı çıkarttım. Olabilir ama, biraz şey kaçabilir.
+
+419
+01:23:07,484 --> 01:23:18,183
+Hani enteresan olmayabilir. Bir de aynı veri setini kullanabilirsiniz ama aynı paper'a...
+
+420
+01:23:19,891 --> 01:23:25,291
+Yani şey yapmayın, birebir aynı şeyi yapmanızdan korkuyorum. Anlatabiliyor muyum?
+
+421
+01:23:27,492 --> 01:23:39,771
+Anladım hocam. Siz eğer ikinci bir proje önerisi açacaksanız, ödevi, tekrardan bakarım ben başka projelere de, veri setlerine de.
+
+422
+01:23:39,771 --> 01:23:43,891
+Yani şöyle, ben bunu araştırma görevlilerine söyleyeyim.
+
+423
+01:23:45,492 --> 01:23:55,432
+Hatta direkt burada bile halledebiliriz. Burada bunun bir yükleme raporu falan var mı? Kim ne zaman yüklemiş?
+
+424
+01:23:59,444 --> 01:24:13,043
+Bir de bir Excel açabilir miyiz? Diğer arkadaşların projesini görelim, aynı şeyi seçmeyelim. İkinci defada. Direkt şeye mi yüklensin diyorsun?
+
+425
+01:24:14,244 --> 01:24:17,564
+Yani aynen bir Excel dosyasına herkesin editleyebileceği yazılsın.
+
+426
+01:24:20,324 --> 01:24:22,004
+Olabilir, olabilir.
+
+427
+01:24:24,463 --> 01:24:29,844
+Herkes kısa bir cümleyle en azından ne yaptığını açıklasın değil mi?
+
+428
+01:24:30,984 --> 01:24:33,384
+Evet, bir de veri setini paylaşabiliriz.
+
+429
+01:24:33,423 --> 01:24:42,244
+Veri setidir, kullandığı paperlardır. İyi kötü bir açıklasın. İnsanlar da ayak ayağa basmamaya çalışsın diyorsun değil mi?
+
+430
+01:24:48,180 --> 01:24:59,220
+Tamam, öyle bir şey de yapalım. Bak onu söylediğin daha iyi oldu. Aslında direkt öyle bir Excel üzerinden gitseydik böyle bir karışıklık da ortaya çıkmamış olurdu. Haklısın.
+
+431
+01:25:03,180 --> 01:25:08,520
+Katılım tarihi diye bir şey var.
+
+432
+01:25:10,068 --> 01:25:33,228
+Şimdi mesela RSID'yi kullanan ve hemen hemen benzer olan [öğrenci] vardı. Başka kim vardı? Hocam ben vardım. [öğrenci]. [öğrenci] vardı. Bir kişi daha vardı sanki. Kim vardı? Hocam [öğrenci] vardı. [öğrenci] vardı.
+
+433
+01:25:34,387 --> 01:25:39,148
+Şimdi bu neye göre sıralamış kayıt tarihi?
+
+434
+01:25:43,252 --> 01:25:50,212
+[öğrenci] 27.11.25'de, 18.19'da. [öğrenci].
+
+435
+01:25:57,844 --> 01:26:04,524
+[öğrenci] senin yüklediğin zamanı yazmıyor. Bu başka bir [öğrenci] ama. [öğrenci] [öğrenci].
+
+436
+01:26:07,344 --> 01:26:18,463
+[öğrenci] [öğrenci] 27.11.22'de. [öğrenci] 27.11.18'de yüklemişti. [öğrenci] sen, [öğrenci] senden öne geçti.
+
+437
+01:26:25,332 --> 01:26:27,592
+Ya isimlerinizi unutuyorum kusura bakmayın.
+
+438
+01:26:27,832 --> 01:26:29,392
+Hocam bir de [öğrenci] vardı.
+
+439
+01:26:29,972 --> 01:26:31,452
+[öğrenci] vardı değil mi?
+
+440
+01:26:35,539 --> 01:26:49,920
+[öğrenci] da 27.11.23'te yüklemiş. Yani burada [öğrenci]'inkini kabul ederiz. Diğer ikinizin projesini yenileseniz iyi olur arkadaşlar.
+
+441
+01:26:51,920 --> 01:26:58,779
+[öğrenci] sizden 3 saat falan önce yüklemiş. 3-4 saat. Bakayım tekrar [öğrenci]'e.
+
+442
+01:27:07,891 --> 01:27:08,391
+Hadi.
+
+443
+01:27:14,228 --> 01:27:27,788
+[öğrenci] gitti. Neyse yani [öğrenci]'inkini kabul ediyoruz. Orijinal olarak. Diğerlerine, diğer ikinizinki yeni bir şeye baksanız iyi olur.
+
+444
+01:27:32,668 --> 01:27:37,788
+Ben şimdi asistanlardan isteyeyim. Bunların üzerinden bir gitsinler.
+
+445
+01:27:38,931 --> 01:27:45,811
+Birbirine aşırı benzer olanlarını bir ortaya çıkarsınlar. Onlardan yeniden proje isteyelim.
+
+446
+01:27:48,811 --> 01:27:52,511
+Dediğiniz gibi bir tane de Excel'e şeyi de yazalım.
+
+447
+01:28:00,083 --> 01:28:02,083
+Zaten şurada...
+
+448
+01:28:16,275 --> 01:28:17,635
+Proje konuları diyelim.
+
+449
+01:28:26,355 --> 01:28:34,755
+İsim, soy isim, no, şey olarak da.
+
+450
+01:28:37,971 --> 01:28:45,311
+Konuyu kısaca açıklayalım.
+
+451
+01:28:49,311 --> 01:28:58,231
+Temel alınan yazılar.
+
+452
+01:29:03,380 --> 01:29:19,260
+Kullanılan veri setleri. Hazır modelleri de yazayım mı? Öneğitilmiş modeller.
+
+453
+01:29:22,707 --> 01:29:33,368
+Tamam arkadaşlar, ben bunu şimdi size paylaşacağım WhatsApp grubundan. Oradan artık devam edebiliriz. Başka konuşacağımız bir şey var mı?
+
+454
+01:29:35,667 --> 01:29:37,768
+Hocam, benim bir sorum olacaktı da.
+
+455
+01:29:38,131 --> 01:29:59,112
+[öğrenci]'ın projesine, isim yanlış değilse. Olmaz demiştiniz ya, çünkü bir klasifikasyon problemi dediniz. Orada mesela ben aynı veri setine bakmıştım. Her kuş için açıklamalar var orada. 4-5 tane kuş başına, görsel başına daha doğrusu.
+
+456
+01:30:01,591 --> 01:30:03,692
+Açıklama nasıl açıklama mesela?
+
+457
+01:30:04,404 --> 01:30:29,864
+Hangi tür olduğu, kanatlarının rengi, gagası vs. bu tarz. Tam hatırlamıyorum. Mesela bunu anlatsa, oradaki kuşun özelliklerini anlatsa böyle bir doğa izleme projesi gibi olmaz mı bu? Gelecek seçeceğim veri seti için tahmin etmeye çalışıyorum da. Nasıl bir şey seçmem gerekiyor, karışmasın yine benimki de.
+
+458
+01:30:30,323 --> 01:30:38,724
+Yani şöyle, resimden kanat uzunluğunu çıkarma biraz zor.
+
+459
+01:30:41,076 --> 01:30:52,416
+Kanat uzunluğu değil de hani kanadının rengi şekli bilmiyorum artık ne yazılarsa captioninglara. Mesela bu şekilde bir captioning yapsa o görsel için bu da sayılmaz mı? Bu da mı?
+
+460
+01:30:52,416 --> 01:30:52,436
+Bu da mı?
+
+461
+01:30:52,436 --> 01:30:53,416
+Bu da sayılır.
+
+462
+01:30:53,416 --> 01:31:08,416
+Şöyle, captionı önce sınıflayıp sonra oluşturuyorsanız olmaz. Yani diyelim ki cümleyi model yazacak. Eğer cümleyi model yazıyorsa...
+
+463
+01:31:08,916 --> 01:31:35,316
+Olabilir yani. Bunu şöyle yapabilirsiniz. Bunun eğitimini mesela o verilen bilgileri karıştırıp verirsiniz. Eğitim verisi olarak. Yani diyelim ki kuşun cinsi bu, kanat uzunluğu bu, rengi bu. Birincisine böyle verdiniz. Kanat uzunluğu cins renk. İkincisine renk kanat uzunluğu cins gibi böyle.
+
+464
+01:31:35,988 --> 01:31:42,731
+Bilgileri karıştırıp verirsiniz. Dolayısıyla hani...
+
+465
+01:31:48,500 --> 01:31:58,720
+Bu şekilde çıktı direkt şey olacaksa, çıktı modelin yaptığı bir cümle olacaksa o zaman olabilir.
+
+466
+01:32:01,500 --> 01:32:05,300
+Tamamdır hocam, netleşsin diye sormuştum. Teşekkür ederim.
+
+467
+01:32:15,572 --> 01:32:21,931
+Peki. Haftaya görüşürüz diyorum arkadaşlar.
+
+468
+01:32:28,692 --> 01:32:29,452
+İyi günler.
