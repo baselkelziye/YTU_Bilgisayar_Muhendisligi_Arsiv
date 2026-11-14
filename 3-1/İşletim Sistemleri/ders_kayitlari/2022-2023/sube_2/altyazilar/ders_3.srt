@@ -1,0 +1,2803 @@
+1
+00:16:43,700 --> 00:16:44,100
+Oca?
+
+2
+00:16:51,892 --> 00:16:53,672
+Derse ne zaman başlayacağız?
+
+3
+00:17:18,771 --> 00:17:20,011
+Tamam sağ olun hocam, ekran yoktu.
+
+4
+00:18:45,203 --> 00:18:49,703
+Arkadaşlar, merhabalar. Seste sıkıntı var mı acaba?
+
+5
+00:18:50,563 --> 00:18:51,203
+Yok hocam, geliyor.
+
+6
+00:18:52,743 --> 00:19:00,703
+Tamamdır. Bugün bazı arkadaşlarımızın sınavı var. Bir de bölümde çoğu yerde sınav var.
+
+7
+00:19:00,963 --> 00:19:05,604
+Ben biraz öksürüyorum. Onun için online yapmak durumunda kaldık.
+
+8
+00:19:11,059 --> 00:19:14,940
+Ekran görüntüsü de şu an var ben de diyorum.
+
+9
+00:19:16,599 --> 00:19:17,539
+Geldi hocam.
+
+10
+00:19:25,299 --> 00:19:28,379
+İşaretledik, yazdıklarımı görüyorsunuz değil mi? Şöyle işaretledim.
+
+11
+00:19:28,839 --> 00:19:29,619
+Evet hocam, geliyor.
+
+12
+00:19:29,740 --> 00:19:30,740
+Tamam, teşekkür ederim.
+
+13
+00:19:31,639 --> 00:19:37,399
+Evet, son dersimizde, proseslerle alakalı son konu olan deadlock'ı tamamlamıştık.
+
+14
+00:19:38,419 --> 00:19:40,960
+Bugün main memory'nin belli bir kısmını bitireceğiz.
+
+15
+00:19:41,639 --> 00:19:43,440
+Diğer grup da bu konuya yeni başlıyor.
+
+16
+00:19:45,364 --> 00:19:59,264
+Derse başlamadan şunu da sorayım. Bu mail sistemlerinde de sıkıntı vardı. Ben de hepinizin maillerini sistemden elde edip manuel göndermeye çalıştım. Mail ulaştı mı? Bir veya iki tane gelmiş olabilir.
+
+17
+00:19:59,644 --> 00:20:00,663
+Üç tane geldi hocam.
+
+18
+00:20:00,663 --> 00:20:01,244
+Üç tane geldi.
+
+19
+00:20:03,384 --> 00:20:05,044
+Bol bol gelmiş. İyi güzel.
+
+20
+00:20:06,223 --> 00:20:09,644
+Haftaya saat 16'da olacak sınavımız inşallah.
+
+21
+00:20:10,420 --> 00:20:13,140
+Bu bilgi de geldiyse sıkıntı yok, devam edebiliriz.
+
+22
+00:20:14,220 --> 00:20:17,000
+Şimdi, Mail Memory Management'tan kastımız nedir?
+
+23
+00:20:18,060 --> 00:20:25,360
+Bir bilgisayar sisteminde işletim sistemi genel koordinasyonu ve kontrolü yaparken,
+
+24
+00:20:27,860 --> 00:20:34,160
+komutların koşturulması, verilerin işlenmesi için bir kere işlemciye ihtiyaç duyuyor.
+
+25
+00:20:34,708 --> 00:20:39,268
+Fakat işlemcinin bu komut ve dataları bir yerden temin etmesi lazım.
+
+26
+00:20:40,188 --> 00:20:43,428
+Bu ya registerlar olacak ya da main memory olacak.
+
+27
+00:20:44,128 --> 00:20:53,748
+Registerlar kapasitesi itibariyle yeterli olmadığı için, bütün program ve dataları yeterli miktarda barındıramadığı için illaki main memory'e ihtiyacı var.
+
+28
+00:20:54,579 --> 00:21:05,679
+Main Memor'dan daha yüksek kapasiteli olan disk dediğimiz art, sold status veya işte tape gibi ortamlar da var ama bu sefer işlemcinin buna doğrudan erişimi mümkün değil.
+
+29
+00:21:06,399 --> 00:21:12,740
+Dolayısıyla CPU dediğimiz yapı, register'ları geçersek burada bir bus yapısı var.
+
+30
+00:21:13,399 --> 00:21:19,240
+Bu bus yapısı adres bus, data bus, kontrol bus demiştik ve burada bir Main Memor olacak.
+
+31
+00:21:20,243 --> 00:21:39,203
+Bu mail memoria erişecek. Mail memorinin işletim sistemi tarafından CPU tarafından da verimli bir şekilde kullanılabilmesi, ayrıca kullanıcı tarafından da memnun edilebilmesi için iyi bir şekilde planlanması, programlanması, kontrolü ve koordine edilmesi gerekiyor.
+
+32
+00:21:40,144 --> 00:21:47,583
+İlk işletim sistemlerine baktığımız zaman mail memoria da sadece işletim sistemi ve bir tane program belki kullanılıyordu.
+
+33
+00:21:48,180 --> 00:21:59,800
+İkinci bir program, multi programming yoktu. Daha sonra tarihsel girişim türenini dikkate aldığımızda, çoklu program, çoklu thread, çoklu proses, hepsi mümkün halde.
+
+34
+00:22:00,480 --> 00:22:08,480
+Ama bu bellek kapasitesi sınırlı olduğu için bir şekilde yönetilmesi ve optimize edilmesi gereken bir şey var.
+
+35
+00:22:09,420 --> 00:22:14,400
+Bu konumuz ve bundan sonraki chapter 9, bununla alakalı virtual memory management.
+
+36
+00:22:14,932 --> 00:22:32,211
+Derste ilerleyebildiğimiz kadar kalan derslerimizde ilerleyeceğiz. Ben bugün bir kısmını anlatacağım. Eğer bugün yetişmezse gelecek hafta derste de kalan kısmını tamamlarız bir saat. Dörde kadar daha sonra ara verebiliriz. Ama bugün yetiştirirsem gelecek hafta ders yapmayacağım. Sınavımız olduğu için sınavımızda çalışabileceksiniz.
+
+37
+00:22:34,612 --> 00:22:36,211
+Amaçlar burada...
+
+38
+00:22:37,268 --> 00:22:45,448
+Farklı şekillerde belleğin organize edilmesi, yönetilmesiyle alakalı teknikler, kullanmanın yaklaşımlar. Bunlardan bahsedeceğiz.
+
+39
+00:22:47,208 --> 00:22:51,827
+Şunu geçen hafta hızlıca söyledim. Aynen buraları bir kısmına anlatmıştım. Tekrar edeyim hızlıca.
+
+40
+00:22:51,827 --> 00:23:02,008
+Bir kere programın koşturulabilmesi, verilerin işlenebilmesi için kalıcı bellekten seste bir sıkıntım var arkadaşlar.
+
+41
+00:23:05,587 --> 00:23:07,028
+Bana gayet düzgün geliyor hocam.
+
+42
+00:23:07,867 --> 00:23:10,067
+Ben ne olur hocam, arkadaşın interneti şey olabilir.
+
+43
+00:23:10,728 --> 00:23:22,647
+Tamam, pek. Programın koşturulabilmesi, verilerin işlenebilmesi için bir kere disk üzerinden verilerin veya programların her şeyin mail memoya getirilmesi lazım.
+
+44
+00:23:22,647 --> 00:23:24,347
+Proses haline geldiğinde.
+
+45
+00:23:25,728 --> 00:23:28,647
+CPU'nun erişebildiği yegane.
+
+46
+00:23:28,688 --> 00:23:36,968
+Bellekler, ya registerlar ya da mail. Registerlar da ya, CPU'nun içerisinde ya da işte cache dediğimiz yapılar şeklinde.
+
+47
+00:23:37,088 --> 00:23:42,108
+Cache doğrudan register değil ama benzer mantıkla oluşturuyor. Ancak bunlara ulaşılıyor.
+
+48
+00:23:43,288 --> 00:23:50,568
+Ve bu bir adreslerin streami, akışı olarak memory ünitesi görülüyor işlemde.
+
+49
+00:23:50,568 --> 00:23:53,748
+Ve veriler gidip gidip geliyorlar. Adres bas.
+
+50
+00:23:54,420 --> 00:24:02,660
+Verinin geleceği adresi ifade ediyordu veya yazılacağı adresi ifade ediyordu. Kontrol bas okumam yapılacak, yazmam yapılacak bunu söylüyordu.
+
+51
+00:24:03,400 --> 00:24:07,740
+Data bas da gelen konutların, dataların dışlı gidip gelmesi falan bununla alakalı.
+
+52
+00:24:08,560 --> 00:24:15,500
+CPU arkadaşlar genellikle register'lara bir time clock'unda, zamanı clock'unda erişim sağlayabiliyor.
+
+53
+00:24:15,500 --> 00:24:20,240
+Fakat main memory'e erişim biraz daha cycle gerektiriyor. Örnek.
+
+54
+00:24:20,723 --> 00:24:26,463
+Mesela şöyle bir komut yazsak, add komutu ax, 8 diyelim.
+
+55
+00:24:27,123 --> 00:24:30,003
+Şimdi komutu getirdikten sonra bunu çözdük.
+
+56
+00:24:30,503 --> 00:24:33,643
+Ne yapacağız? ax'in içerisindeki değer zaten işlemcinin içinde.
+
+57
+00:24:34,243 --> 00:24:36,263
+Buna doğrulan bir krop saygında erişebiliriz.
+
+58
+00:24:36,343 --> 00:24:38,603
+8 de zaten immediate address denemoduyla.
+
+59
+00:24:39,303 --> 00:24:40,743
+Bu hızlı bir şekilde işletilebilir.
+
+60
+00:24:40,983 --> 00:24:48,083
+Ama şöyle bir komut olsaydı, ax'in gösterdiği yerdeki değeri bellekten getir.
+
+61
+00:24:48,559 --> 00:25:00,220
+Sonra bx'in gösterdiği yerdeki değeri getir. Bu nedir? ax'in gösterdiği yerdeki değere ax'in değerini artı bx'in değerini yani bellek adresi olarak getir.
+
+62
+00:25:00,500 --> 00:25:03,179
+Şimdi konutu almak için bir gittik geldik.
+
+63
+00:25:03,827 --> 00:25:07,587
+Sonra operantları getireceğiz. ax'in içerisindeki değeri getireceğiz.
+
+64
+00:25:07,807 --> 00:25:11,447
+Bellek örneğin ax bin gösteriyorsa bin ne ola adresinden veri getireceğiz.
+
+65
+00:25:11,548 --> 00:25:15,248
+bx'i getireceğiz, bx'in gösterdiği değeri. Bunları toplayıp tekrar gideceğiz.
+
+66
+00:25:15,387 --> 00:25:20,607
+İşte bu çok fazla zaman gerektiren, tek bir block cycle'ında meydana gelmeyen durumlar.
+
+67
+00:25:20,688 --> 00:25:24,107
+Buna causing yani bekleme, stall diyebiliriz.
+
+68
+00:25:24,564 --> 00:25:31,584
+Cache memory'nin main memory ile CPU register'ları arasında olduğunu söylemiştik bakılacak yer açısından.
+
+69
+00:25:32,324 --> 00:25:34,724
+Bu yönetilmesi gereken bir şey arkadaşlar.
+
+70
+00:25:35,284 --> 00:25:38,024
+Yönetimden kastımız memory management tercihleri.
+
+71
+00:25:38,104 --> 00:25:43,423
+Bir diğer önemli husus da bellek bölgesinin konunun korunması.
+
+72
+00:25:43,744 --> 00:25:44,544
+Neden korunması?
+
+73
+00:25:45,284 --> 00:25:50,384
+Bizim bellek dediğimiz yapı, çoklu programlar veya çok prosesli, multi-threadli yapılarda
+
+74
+00:25:51,028 --> 00:26:06,488
+Bir şekilde izole edilmesi gerekiyor. İşte burada P1 prosesi var, burada P2 prosesi var. Belki bu prosesler kendi işlerinde multi-threat bir şekilde ayrılacak. Bir proses izin verilmediği için bir başka prosesin adres uzayına erişememesi gerekiyor.
+
+75
+00:26:07,488 --> 00:26:10,248
+Veya kullanıcılar seviyesinde bakarsak.
+
+76
+00:26:10,612 --> 00:26:22,152
+A kullanıcısının P1 prosesine bir başka kullanıcı doğrudan erişememesi, onun adres uzayına erişememesi gerekiyor. Bunları işletim sisteminin bir şekilde garanti altına alacaktır.
+
+77
+00:26:23,112 --> 00:26:34,692
+Şimdi burada çoklu programlamanın hayatımıza işletim sistemlerine girmesiyle beraber bazı bilgilerin hem koruma adına hem de yönetim adına saklanması gerekiyor.
+
+78
+00:26:35,220 --> 00:26:48,240
+Bunlardan bir tanesi base ve limit registerlar. Bir program çalıştırılıp proses haline geldiğinde bu prosesin hangi adresten başlayıp ne kadarlık bir yer aldığını tutan ekstra bilgilere ihtiyaç var.
+
+79
+00:26:49,059 --> 00:26:59,319
+Bunu program counter'da mesela birer arttır arttırı komutları getiriyoruz ama bu birer arttırımlar veya gelecek bakılacak yerler hangi aralıkta bunu bir yerden tutmamız gerekiyor ayrıca.
+
+80
+00:26:59,319 --> 00:27:02,099
+İşte bunlara base ve limit register diyoruz.
+
+81
+00:27:02,415 --> 00:27:08,735
+Base Register programın proses haline gelip belleğe yüklendikten sonra nereden başlayacağını bize soruyor.
+
+82
+00:27:08,875 --> 00:27:11,935
+Limit Register'da nerede sonlanacağını ifade ediyor.
+
+83
+00:27:11,995 --> 00:27:21,415
+Aslında bir anında bu eğer hexadecimal dersek veya decimal olarak düşünsek şu aradaki fark sizin prosesinizin uzunluğunu ifade edecektir.
+
+84
+00:27:22,096 --> 00:27:26,076
+Ve CPU bir erişim sağlarken bir kontrol yapması gerekiyor.
+
+85
+00:27:27,251 --> 00:27:35,132
+Bakılacak yer şu iki alanın, bu alanın içerisinde başka bir yere mi erişiyorum, başka bir yerin dışına mı erişiyorum gibi kontroller yapacaklar.
+
+86
+00:27:35,911 --> 00:27:43,751
+Bunun basit bir algoritması. Eğer CPU adresimiz, base adresten büyük veya eşitse, büyük veya eşitse yes durumudur, kabul durumudur.
+
+87
+00:27:43,891 --> 00:27:50,011
+Ama bunun değil ise, yani küçükse, o zaman burada bir sıkıntı var, burada bir thread, interrupt ortaya çıkacak.
+
+88
+00:27:50,387 --> 00:28:11,168
+Base artı limitin de küçüğü olacak. Biraz önceki şeyde oldum. Yani base artı limite eşit olmayacak veya base artı limitten büyük olmayacak. O zaman da bir trap durum var. Eğer bu iki sınırı sağlıyorsak doğru bir bellek bölgesine erişmesiz demektir. Bu eriştiğimiz yerden istediğimiz komut veya dataları okuma yazma işlemleri yapabiliyoruz.
+
+89
+00:28:17,428 --> 00:28:21,708
+Adreslerin binding edilmesi, bağlanması ile alakalı bir mekanizma karşımıza çıktı.
+
+90
+00:28:22,288 --> 00:28:32,828
+Bir kere şunu bilelim, disk'teki bir program, belleğe getirilmek üzere hazır olduğunda ve execute üzerine hazır olduğunda bir tane input queue'ya alınıyor.
+
+91
+00:28:33,008 --> 00:28:35,668
+Doğrudan belleğe de gelmiyor, belli bir kuyruk orada var.
+
+92
+00:28:36,128 --> 00:28:42,008
+Nasıl ki CPU schedule edilirken kuyruk, ready queue vardı, burada da input queue'dan bahsediyoruz.
+
+93
+00:28:42,668 --> 00:28:44,528
+Yalnız burada şuna dikkat edeceğiz.
+
+94
+00:28:45,268 --> 00:28:54,148
+Normalde programların başlangıç adreslerinin bir şekilde belirlenmesi lazım veya proseslerin belirlenmesi lazım.
+
+95
+00:28:54,148 --> 00:29:02,168
+Bu kullanıcı tarafından kodun derlenmesi veya edit edilmesi aşamasında önceden tespit edecek bir şey değil.
+
+96
+00:29:02,688 --> 00:29:08,728
+Biz kodumuzu çalıştırmadan önce 300. adreste otursun diyemiyoruz. Bunu işletim sistemi en uygun yeri bularak diyor.
+
+97
+00:29:10,963 --> 00:29:28,304
+Programı işte main ile C açısından düşünecek olursak main ile başlayıp işte return sıfırla biten adresleri bir şekilde mantıksal bir mekanizmaya mantıksal bir sıraya oturtmamız lazım. Burada bahsettiğimiz mantıksal adresleme sıfırıncı satırdan başlar eninci satıra kadar gider.
+
+98
+00:29:29,236 --> 00:29:37,096
+Biz doğrudan belleğin fiziksel adresini, belleğin fiziksel adresinden kastımız, bellek böyle bir dizi şeklinde, işte 4 gigabyte diyoruz.
+
+99
+00:29:37,655 --> 00:29:44,076
+Sıfırıncı byte, birinci byte, ikinci byte, işte 4 gigabyte kaç byte'e kadar gider? 2 üzeri 30.
+
+100
+00:29:44,788 --> 00:29:49,788
+2 kadardır. Yani şurası 2 üzeri 32, eksi 1'e kadarki bu byte kâdık olur.
+
+101
+00:29:49,788 --> 00:29:54,788
+Biz doğrudan 0. byte'a erişeceğiz dediğimizde böyle bir byte fiziksel olarak buraya erişmiyoruz.
+
+102
+00:29:54,788 --> 00:30:02,788
+Kendimiz mantıksal bir yere erişeceğiz demektir. Onun için şu çok uyumlu bir şey de zaten inconvenient.
+
+103
+00:30:02,788 --> 00:30:10,572
+Çünkü o zaman herkes kendi kafasına göre bir yer ayırt etmeye çalışır. Bu da ortalığı karman çorman eder.
+
+104
+00:30:11,731 --> 00:30:20,192
+Bu aşamada belleğin adreslenmesi konusundan söz edin mi? Birkaç farklı şekilde adresten bahsedeceğiz.
+
+105
+00:30:21,451 --> 00:30:27,451
+Sports Code'da kullandığımız adresler biraz önce de söylediğimiz sembolik yani çok gerçek olmayan şeyler.
+
+106
+00:30:28,011 --> 00:30:39,211
+Derlenmiş bir kod üzerinde relocatable address dediğimiz yeniden yerleştirilebilir, yeniden yer bulunabilir bir adres dediğimiz bir şey geliyor derlenmiş koda.
+
+107
+00:30:39,796 --> 00:30:59,516
+Bu da ne demek? Bir program çalıştı, belleğe girdi. Belleğe girdikten sonra bellekten belli bir süre çıkıp tekrar geri gelmesi gerekiyor. Dolayısıyla burada bellekteki bulunan adresi daha sonra tekrardan değiştirilebilir olması gerekiyor. Bu bilgi sizin proses kontrol bloğunuzda ayrıca saklanıyor.
+
+108
+00:30:59,988 --> 00:31:24,188
+Programın hangi adreste, bellekte, hangi fiziksel adreste bahir başladığını size söyleyebilecek taban adresini tabii söylüyor. Bir register tutacağız bunun malekalı. Linker veya loader açısından baktığımızda bu relocatable adresle absolute adresler birbirine relocated adresle absolute adrese mutlak adresle bir adrese bağlı.
+
+109
+00:31:26,960 --> 00:31:43,559
+Erişmek istediğim işte program şurada başlıyor mesela. Buradan 30 satır sonrasına gideceksiniz. Şurada bir tane kod var veya data var. Oraya ulaşmakla alakalı. Bunların hepsi bir adres uzayını bir başka adrese dönüştüren mekanizmalar.
+
+110
+00:31:43,988 --> 00:31:58,988
+Biz hani C'de işte diyoruz ki pointer'la adreslere erişelim, işte belli bir yere erişiyoruz, belli bir yere erişemiz. Ama biz kabul ediyoruz ki işte main 0'ıncı satırsa ondan sonra birinci satır sonra ikinci satır böyle erişip devam edip gidecek. Ama işlemci açısından bu...
+
+111
+00:31:59,923 --> 00:32:15,403
+Bellekten getirilecek farklı komut ve datalar şekline dönüşeceği için illaki fiziksele dönüşmesi gerekiyor. Yoksa her bir programın kendine ait sıfırıncı satırı bellekteki gerçek fiziksel sıfırıncı satır. Yani remin o bacağıyla alakalı bir şey değil.
+
+112
+00:32:16,763 --> 00:32:20,543
+Şurada adresin türlerini tekrardan söylemiş.
+
+113
+00:32:23,155 --> 00:32:29,355
+Bazen absolute code dediğimiz kodlar için adres belirlemesi yapabiliyoruz.
+
+114
+00:32:29,975 --> 00:32:32,955
+Önceden bilinen memori lokasyonlar için bunlar ne olabilir?
+
+115
+00:32:33,076 --> 00:32:37,655
+Bir interrupt vektöründeki interrupt rutinlerinin adreslerinin tutulması.
+
+116
+00:32:37,655 --> 00:32:43,955
+1-2-3-4 numaralı adreste şu olacak, diğer adreste bu olacak gibi önceden bilinebilir adresler.
+
+117
+00:32:44,855 --> 00:32:46,415
+Bu compile tamamı zamanında.
+
+118
+00:32:46,963 --> 00:33:14,083
+Şimdi load time'da program belleğe yüklenirken relocatable kodlar, relocatable adresler üretilmesi gerekiyor. Çünkü biz compile time'da programın hangi satırının kaçıncı adreste saklanacağını bilemiyoruz. Bu load time'da elde edilir bir şey. Execution time'da yani programın çalıştırılması, koşturulması aşamasında aslında burada şu oluyor. Burada bir adres binding edilmesi, bağlanması
+
+119
+00:33:14,579 --> 00:33:41,099
+runtime'a kadar bekletiliyor, geciktiriliyor. Burada ne olabilir? Çünkü bellek bölgesi aralarında bir değişiklik meydana gelebilir. Ne zamanki egzekücün olduğu orada kesin adres hesabı gerçekleşecek. Bunların adreslerini kontrol edilmesi için bir hardware support'un olması, işte base verici, limit register var gibi bir şeylerin olması gerekiyor. Bu bilgilerin bir yerlerde ayrıca tutulması lazım. Çünkü biz programımızı çalıştırdığımız zaman,
+
+120
+00:33:41,556 --> 00:34:00,695
+Bu programa ait hangi bellek bölgesinin kullanılacağını bilmiyoruz. İşletim sistemi bize buradan bir yer ayırıyor. Bu ayırdığı yeri bir yerlerde tekrar tekrar kullanılmak üzere saklıyoruz. En basitinden şuradaki mekanizma için işte base'e de ihtiyacımız var, limit'e de ihtiyacımız var. Bunun sürekli kontrol edilmesi lazım.
+
+121
+00:34:00,855 --> 00:34:08,876
+Burada CPU'nun adres istemesinden kastımız da şu. En basitinden program counter'ı düşünelim. Program counter önce sıfırınca satırdan başladı.
+
+122
+00:34:09,235 --> 00:34:23,475
+O komut geldi, çözüldü, execute edildi. Yani fetch yapıldı, decode yapıldı, execute yapıldı ve bu komutla işimiz bitti. Program counter ne yapacak? Yeni komutun işte bir arttırılarak program counter 1'i gösterecek mesela.
+
+123
+00:34:23,775 --> 00:34:32,615
+O arada memora adres registerlar, başka başka instruction registerlar, assembly'den bildiğiniz veya komputer organizasyonundan bildiğiniz konular, onları geçiyoruz.
+
+124
+00:34:32,735 --> 00:34:35,715
+Şimdi o artık işlemcinin içerisinde olması gereken şeyler.
+
+125
+00:34:35,835 --> 00:34:39,175
+Ama işletim sistemi açısından baktığımızda ne olacak?
+
+126
+00:34:39,635 --> 00:34:48,055
+Her bir program kantörün gösterdiği yerden getirilecek konuklar veya datalar, datalar için de bu söz konusu, şöyle bir kontrolün yapılması gerekiyor.
+
+127
+00:34:48,055 --> 00:34:51,775
+İşte bu kontrolü yaparken de buradaki registerları dikkatli bir şekilde...
+
+128
+00:34:51,775 --> 00:35:01,076
+kontrol edilmesi lazım. Ne için? Dersin başında da söylediğimiz en azından şu protection için veya programın, prosesin tutarlı bir şekilde devam etmesi için.
+
+129
+00:35:02,335 --> 00:35:11,076
+Burada bunun şeması var. İşte bir compile kodun, bir kodun derlemesi geliştirilmesinden çalıştırılmasına kadar ki aşamaları söylemişiz.
+
+130
+00:35:13,115 --> 00:35:16,235
+Hangi aşamalarda, hangi adresle var? Burada şunu da söyleyelim.
+
+131
+00:35:19,891 --> 00:35:30,011
+Bir modül siz MET kütüphanesinden sinus diye bir şey kullanıyorsun. Bunun link aşamasında bunun da bir adresi var mesela.
+
+132
+00:35:30,579 --> 00:35:49,779
+İşte siz include yaptığınızı ile, mat kütüphanesinde bir şeyleri eklediniz. Sonuçta bu değerlenmiş bir kod daha önceden. Bunun buraya link edilmesi lazım. Bunun da bir adresi bulacak. Loading time'da aslında hem kendi programınızın hem de kullandığınız library'lerin hatta sistem library'lerin adreslerinin de bağlanması.
+
+133
+00:35:56,367 --> 00:36:05,407
+Linux'ta bunun farklı karşılıkları var. Neydi onları? Şurada shared library'ler dediğimiz şeylere karşılık geliyor.
+
+134
+00:36:06,247 --> 00:36:13,587
+Evet, genel olarak adres uzayını biz iki farklı şekilde sınıflandırabiliriz en genel haliyle.
+
+135
+00:36:14,228 --> 00:36:37,548
+Bunlar bir tanesi lojik adres, diğeri fiziksel adres. Lojik adres dediğimiz sanal, gerçek olmayan, mantıksal, CPU tarafından üretilemiyor. Yani ben program counter veya başka bir şekilde işte bir registerla bir bellekte sekizinci adrese ulaşmak istiyorum. Bu komut olabilir, data olabilir. Data nasıl olur? Biraz önce söylediğim gibi add dedik mesela.
+
+136
+00:36:38,032 --> 00:36:58,231
+AX Register'ın gösterdiği bellek bölgesindeki değeri getir, ona 8 ekle. İşte şu bir şekilde bellekten getirilmesi gereken bir şey. Ve bu bellekten getirilecek bir şeyi bir adres üretimiyle yapacağız. İşte bu 8 doğru. Şimdi bellekin 8. bölgesine gitmek değil, programın içerisinde, o program adres uzayının içerisindeki 8. adresine gideceğiz demektir.
+
+137
+00:37:04,596 --> 00:37:21,076
+Bellek'in bacaklarıyla alakalı şeyler. Bütün program tarafından üretilen lojik adreslerin kümesine lojik adres uzayı, program tarafından üretilen fiziksel adreslerin kümesine de fiziksel adres uzayı diyoruz.
+
+138
+00:37:21,715 --> 00:37:42,775
+Şimdi execution time'da lojik ve fiziksel adresler illaki farklılık gösterecek. Neden? Çünkü address binding diye bir şey var. Her prosesin veya programın kendine ait 8. satırı, 10. satırı var. Hep işlem birden 8.8 diye gidecek. Ama o hangi prosesse aitse farklı farklı bellek bölgelerinden verirler. Gidip gelecektir.
+
+139
+00:37:43,476 --> 00:38:08,636
+Şimdi bunu kontrol eden, bu adres değişimini kontrol eden bir unit var. Memory Management Ünitesi. Bu bir hardware device. Runtime'da fiziksel veya virtual sanal adresi fiziksel adrese map ediyor, eşleştiriyor. Bunun farklı farklı aşamalarını göreceğiz slide boyunca. Bu en basitinden en daha günümüzde kullanılan nelerdir?
+
+140
+00:38:09,043 --> 00:38:14,783
+Slide'da ona göre düzenlenmiş bir şey. Bu şefterin kalanını da onlardan söylüyoruz.
+
+141
+00:38:15,723 --> 00:38:22,923
+Şimdi bunun hem temel bilinmesi gereken şey relocation register dediğimiz bir register arkadaşlar.
+
+142
+00:38:23,983 --> 00:38:31,304
+Sizin process control bloğunuzdan programınızı çalıştırdıktan sonra, belliğe geldikten sonra hangi adres, başlangıç adresi?
+
+143
+00:38:31,764 --> 00:38:37,123
+Prosesinize atandıysa, tahsis edildiyse, location register içerisinde bu yazılıyor.
+
+144
+00:38:38,284 --> 00:38:47,203
+Mesela ve bu prosesiniz içerisinde farklı segmentler varsa, bu segmentler için farklı, farklı location registerlar ifade hazırlanıyor.
+
+145
+00:38:47,724 --> 00:38:53,744
+Ve bu adresler üzerinden, lojik adresten, fiziksel adrese geçişler sağlanıyor.
+
+146
+00:38:54,744 --> 00:38:58,543
+Biz kullanıcı program olarak lojik adresten mesuruz.
+
+147
+00:38:58,943 --> 00:39:09,824
+Hiçbir zaman fiziksel adresle işimiz yok ama işlemci gerek duyuruna bir yere erişmeye gerektiğinde işletim sistemi ona ve bu memory management'ı unit fiziksel adresi ona sunacaktır.
+
+148
+00:39:10,503 --> 00:39:12,703
+Demek ki relocation register bizim için önemli bir şey.
+
+149
+00:39:14,123 --> 00:39:23,764
+Burada adres binding ile alakalı mekanizmaları göreceğiz. En basit, dynamic relocation dediğimiz relocation register kullanan bir mekanizm.
+
+150
+00:39:24,115 --> 00:39:28,036
+Burada bir CPU'muz var, memory management unitimiz var, relay'miz var.
+
+151
+00:39:28,936 --> 00:39:32,416
+Burada bir kere kullanmak istediğimiz bir rutin vardı.
+
+152
+00:39:32,416 --> 00:39:38,735
+Bu arada şunu da söyleyeyim de arkadaşlar, şu 4 relocation register 8086'dan kastımız ne olabilir?
+
+153
+00:39:38,936 --> 00:39:39,836
+Aslında bir gördünüz.
+
+154
+00:39:44,179 --> 00:39:46,119
+AX, BX, CX, TX falan mı hocam?
+
+155
+00:39:46,579 --> 00:39:49,920
+Yok, onlar general purposes register dediğimiz şeyler.
+
+156
+00:39:51,460 --> 00:39:55,579
+Bir program, assembly programı hatırlarsanız farklı segmentlerden oluşurdu.
+
+157
+00:39:55,659 --> 00:40:02,659
+Bunlardan bir tanesi hot segmentti, bir tanesi stack segmentti, bir tanesi extra segmentti, öbürü neydi?
+
+158
+00:40:03,219 --> 00:40:12,119
+Data segmenti değil mi? Şimdi kod segmente erişmeniz için kod segmentin bulunduğu bir başlangıç noktasına ihtiyaç var.
+
+159
+00:40:12,119 --> 00:40:16,500
+İşte bunun kod segmentin relocation register'ı, stack segmentin relocation register'ı.
+
+160
+00:40:16,899 --> 00:40:25,619
+Çünkü biz şimdilik yeni durum yani güncel eskiden bütün prosesi aynı noktada, aynı bellekte birleşik olarak biliyorduk ama.
+
+161
+00:40:26,159 --> 00:40:53,559
+Bunu segmentlere ayırdığınızda bu segmentleri kendi içerisinde farklı farklı noktalarda tutabileceğiz. Onun için farklı dört tane segment rejisteri var. Hatta kod segmenti nasıl ayarlıyordunuz? Şöyle bir şey yapılabiliyor muydu? Move, cs, 10 desek bile mesela böyle bir şey mümkün müydü? Yok. Niye mümkün değil? Onun için önceden yani direktten ad dediniz ya adres şeyinden mi ötürü neydi?
+
+162
+00:40:54,016 --> 00:40:55,936
+Yani CSPARTİ bir şey atıyorduk.
+
+163
+00:40:55,936 --> 00:41:01,176
+Yani bunu anlatırken size şey demişlerdi, kod segmente inmediği adresleme modu mümkün değil demişlerdir.
+
+164
+00:41:01,256 --> 00:41:05,296
+Halbuki bununla alakalı doğrudan bir mekanizma yok. Donanım seviyesinde mekanizma yok.
+
+165
+00:41:05,775 --> 00:41:08,016
+Önce ne yaparsınız? Kod segmente işte...
+
+166
+00:41:08,403 --> 00:41:18,764
+AX register'ına falan bir şey yazarsınız, işte 10 dersiniz. Daha sonra AX'i kod segmenti atarsınız, kod segment ayarlanır. Aynısı diğer segmentler için de geçerliydi.
+
+167
+00:41:18,764 --> 00:41:30,543
+İşte bu adreslerin hesaplanması meselesi, yani bu relocation register'lar üzerinden olacak. Doğrudan, ha deyince kod segment'e immediate olarak veri kopyalayamıyoruz.
+
+168
+00:41:31,315 --> 00:41:37,835
+Şimdi, Memory Management Unit'ın, Dynamic Relocation'ı dediğimiz şey, Relocation Registrularına nasıl olacak?
+
+169
+00:41:38,475 --> 00:41:41,315
+Bu ilk başta düşündüğümüz çok basit bir mekanizma arkadaşlar.
+
+170
+00:41:42,175 --> 00:41:49,595
+Nedir? CPU'nuz program çalıştı, program kantörü bir şeyler istiyor, belli komut ve dataları istiyor.
+
+171
+00:41:49,595 --> 00:41:53,135
+Ne yapıyor? Ben de 346. adrese erişmek istiyorum.
+
+172
+00:41:53,684 --> 00:42:16,564
+Programınızın proses haline geldikten sonra işletim sistemi tarafından atanan başlangıç adres de örneğin şurada bir yer olsun. 1400. adres olsun. 14000. adres. 346. satıra erişmek istediğinizde memory management'in en basit bir şekilde doğrusal bir şekilde ne yapıyor? Bunun üzerine 346'yı ekliyor ve oradaki fiziksel adresi elde ediyorsunuz.
+
+173
+00:42:17,492 --> 00:42:28,952
+Tabii bu şu açıdan sıkıntılı bir şey. Tek bir tane değer var, tek bir tane proses var. Belki kolay ama her zaman işimizi görmüyor. Basit bir mantık ama bunun gelişmiş hallini göreceğiz.
+
+174
+00:42:29,752 --> 00:42:41,912
+Şimdi bu linking aşamasında birkaç farklı terimden bahsedelim. Birincisi statik linking, diğeri dinamik linking. Normalde başta dinamik olarak vermiş de burada statiği de açıklıyoruz.
+
+175
+00:42:42,675 --> 00:42:54,336
+Şimdi sistemle alakalı library'ler ve loader tarafından daha önce combine edilmiş program kodları static link olarak ifade ediyor.
+
+176
+00:42:54,336 --> 00:43:02,815
+Bu işte hangi program, hangi adreste çalışacak önceden belli olanları. Fakat bu günümüzde çok çok mümkün değil.
+
+177
+00:43:03,443 --> 00:43:27,243
+Çok eski sistemlerde belki kullanılabilecek bir şey. Dynamic Linking'de execution time'a kadar belli olmayan execution time esnasında işte hangi yer müsaitse, belleyim neresi müsaitse buradan verilen bir şey. Şimdi burada dinamik linkin içerisinde şunu da düşünmeniz lazım. Bir program yazdık. İşte bunlar kendi kodlarınız. Şurada mesela sinus diye bir şey çağırıyor.
+
+178
+00:43:27,827 --> 00:43:32,747
+Sinüsü biz genelde nereden çağırırız? mat.h gibi bir kütüphane olur veya printf diyelim.
+
+179
+00:43:33,387 --> 00:43:40,068
+mat.h'ın tamamını programınıza inkludetmek, dahil etmek çok iyi bir şey değil.
+
+180
+00:43:40,807 --> 00:43:42,407
+Sadece biz burada sinüsü kullanmıyoruz.
+
+181
+00:43:43,127 --> 00:43:49,608
+Tamamını ettiğimizde, gereksiz dahil ettiğimizde çok fazla yer istiraf olacaktır hem bellik hem de zaman açısından.
+
+182
+00:43:49,608 --> 00:43:54,327
+İşte burada sadece sinüsü ileride çağıracak.
+
+183
+00:43:54,900 --> 00:44:09,880
+Ve burada bir bellek bölgesine geçici yer tutacak, stop dediğimiz küçük bir kod parçacığı tutuluyor. Ne zaman ki buraya satır geldi, gidecek sinüsün derlenmiş hali, shared library olarak bilinen hali buraya getirip bazlanacak.
+
+184
+00:44:10,380 --> 00:44:19,260
+Ve siz hem met.arch'ın tamamını getirmekten kurtulacaksınız, hem de belleği optimizel şekilde kullanabileceksiniz. Burada bir replacement.
+
+185
+00:44:19,824 --> 00:44:39,724
+Normal bağlı olan rutinden gerçekleştiriyor ve execution daha sonra çalışıyor. İşte burada sıra geldiğinde o sinüs hesaplaması gerçekleştiriyor. İşletim sistemi neyi kontrol ediyor burada? Bu rutin dediğimiz, işte sinüs vesaire neyse bir prosesin memori adresinde olup olmadığını kontrol ediyor.
+
+186
+00:44:40,211 --> 00:44:55,251
+Eğer memory adresimiz de değilse işte bu stop sayesinde gidip onun sadece ilgili kısmını getiriyoruz. Buna da dynamic linking diyoruz. Özellikle library kullandığımız durumlar için çok çok önemli. Library'nin tamamını getirmemek adına.
+
+187
+00:44:55,872 --> 00:45:04,971
+Unix sistemlerde buna shared library deniyor. Sl diye danediyorum uzantısı vardır. Windows'da da buna diğerlerle dosyası diyoruz.
+
+188
+00:45:05,523 --> 00:45:12,583
+Özellikle eskiden Visual Basic programlama yaparken, yani 1032'lere program edilirken, DLL dosyalarına ihtiyaç duyuluyordu.
+
+189
+00:45:13,243 --> 00:45:20,123
+Bu DLL dosyalar da belki çok büyük şeyler ama siz OPP dosyanın içerisinde belli bir kısmı, belli bir segmenti parçaya alacaksınız.
+
+190
+00:45:20,243 --> 00:45:23,643
+İşte ilgili kısım sadece getirilebiliyor arkadaşlar.
+
+191
+00:45:24,963 --> 00:45:27,423
+Şimdi geldik. Bir başka kavram.
+
+192
+00:45:27,987 --> 00:45:37,228
+Tamam, proses şu bahsettiğimiz şey çalışırken bir yer ayrıldı. Ama multi programmingin olduğunu düşündüğünde şöyle bir durum var.
+
+193
+00:45:37,228 --> 00:45:50,507
+Bazı prosesler uzun süredir I.O. yapıyor olabilir. Uzun süreli I.O. yapıyor olabilir. Veya bir şey bekliyorlar. İşlemci de çalışma. Bellekle de boş boş duruyor.
+
+194
+00:45:54,356 --> 00:46:07,236
+İnteraktiviteyi kötüleştiren bir şey. Çok istenmemiş bir bölge. İstenmeyen bu. Dolayısıyla bunu gidip acil ihtiyac olan bir proses'e ait bellek bölgesinin değişim yapılması gerekir.
+
+195
+00:46:07,236 --> 00:46:18,596
+İşte bir tane proses gelecek kuyruktan buraya gelecek. Bu işleme, biz hatırlarsanız midterm scheduling parlamından bahsetmiştik. Scheduling hapsanında. Swapping diyoruz.
+
+196
+00:46:21,844 --> 00:46:32,884
+Bir prosesten alınıp, elinden alınıp, bir başka prosesin execution için bellek belgesine getirilmesi. Daha sonra o proses tekrar gelecek. Örneğin, I.O. yaparken I.O. işlemi bitti, gelecek gibi.
+
+197
+00:46:34,284 --> 00:46:43,844
+Buna swap in ve swap out diyoruz. Şurada şeyleri var. İşte swap out yapmak bir proses var. Main memori duruyor. Bunu geçici olarak P1 prosesini...
+
+198
+00:46:44,639 --> 00:46:51,399
+Harddiske göndermek demek. Bir başka P2 prosesinde Harddiske'den main numarayı almak demek.
+
+199
+00:46:52,340 --> 00:46:55,539
+Şimdi bu ilk bakışta güzel bir şeymiş gibi görünüyor.
+
+200
+00:46:55,539 --> 00:46:58,960
+İşte ne yapalım daha çok prosesi alalım.
+
+201
+00:46:59,559 --> 00:47:04,420
+Fakat burada da şöyle bir durum var. Harddiske yazmak çok şey değil.
+
+202
+00:47:05,039 --> 00:47:07,500
+Kolay bir şey değil. Hızlı bir...
+
+203
+00:47:07,668 --> 00:47:30,768
+Olacak bir şey değil. Çünkü haritası çok çok yavaş. Neye göre? RAM'e göre veya işte işlemci hızına göre. Bu birazcık sıkıntılı. Demek ki SWEP'in SWEP'u alıyor. Şimdi bunun priority-based versiyonu da rollout, rollin. Proseslerin şeylerine göre, bir öncelik anlendirme algoritmasına göre yapılması rollout ve rollin oluyor. Bir şekilde SWEP yapılıyor aslında.
+
+204
+00:47:31,795 --> 00:47:45,975
+Şimdi günümüzdeki bilgisayarlarda bu kısmen muhafaza edilen bir özellik. Kullanılması gerekli, kötü zamanlar için kullanalım diye bileceğimiz bir özellik olarak kalmış.
+
+205
+00:47:53,523 --> 00:48:00,003
+Threshold'da eşit değerini aşılırsa, bellek kullanımı açısından, bu aktif hale getirilebiliyor.
+
+206
+00:48:00,703 --> 00:48:07,003
+Ve daha sonra tekrar normal sınırlara bellek kullanımı düşerse, disable haline getirip kapatılıyor.
+
+207
+00:48:07,923 --> 00:48:09,364
+Yani çok tercih edilen bir şey değil.
+
+208
+00:48:10,452 --> 00:48:33,811
+Bellek, mesela megahertzler seviyesinde veya gigahertzler seviyesinde belleğimiz varken, işte RPM dediğimiz, 7200 RPM falan günümüzdeki hard diskler bile bu hıza daha çok yaklaşamıyor. Dolayısıyla gitmek, bir prosesi götürmek, öbür prosesi getirmek çok uzun bir süre. Belki o sırada IO yapma işlemi bitecek. O proses mesela göndereceğimiz proses tekrar çalışmaya başlayacak.
+
+209
+00:48:34,228 --> 00:48:46,108
+İşlemci çünkü veya IO cihazları belki çok çok hızlı işini bitirdi, geldi. Bu aşıdan verimsizliği azaltmak adına bundan pek hoşlanım diye birazcık var geçirmiş diyebiliriz.
+
+210
+00:48:47,168 --> 00:48:57,648
+Evet, mantıklı da bu dedik. Şimdi burada context switching time üzerine swapping'i de eklersek çok çok ciddi süreler karşımıza geliyor.
+
+211
+00:48:58,420 --> 00:49:11,560
+Şimdi CPU'ya bir sonraki konacak komut için bir context switching time gerekiyordu. Ama bu proses memory'de değilse o zaman bir de memoriye gelmesi için süre gelecek.
+
+212
+00:49:11,923 --> 00:49:18,144
+Tamam, prosesi biz, işte bir px prosesini CPU'ya koymaya kapaya koyduk. İşletim sistemi olarak buna karar verdik.
+
+213
+00:49:18,144 --> 00:49:24,284
+Ama şuna da dikkat etmemiz gerekiyor. O proses, main memory'de ise doğrudan CPU'ya koyabiliriz.
+
+214
+00:49:24,344 --> 00:49:30,203
+Main memory'de ise, artistten alıp main memory'ye getirmemiz gerekiyor. İşte o alıp getirmenin de bir süresi var.
+
+215
+00:49:30,983 --> 00:49:37,784
+Dolayısıyla bu da artabiliyor bazı durumları. Örnek, 100 MB'lik bir prosesimiz var. Şu an bellek üzerinde.
+
+216
+00:49:38,096 --> 00:49:43,355
+Bunu çıkartıp bir başka prosesi belleğe getirmek istiyoruz ve onu çalıştırmak istiyoruz.
+
+217
+00:49:43,935 --> 00:49:48,416
+Bunun bir context switching time'ı var yani ama bunun üzerine artı bir şey giriyoruz.
+
+218
+00:49:48,536 --> 00:49:57,876
+İşte o artı bir şey şu. 100 megabaytlık prosesin 50 megabayt bölü saniyelik yani 2 saniyede bir swap out yapılması lazım.
+
+219
+00:49:58,635 --> 00:50:03,716
+Kalan 2 saniyede öbür prosesin swap in yapılması lazım. Oldu 4 saniyede.
+
+220
+00:50:04,596 --> 00:50:16,796
+Tabi bu belki hızlar biraz abartı gelebilir de bu 4 saniyelik prosesin context switching time'ına, app olarak, swap time'ı çok çok fazla bir şey.
+
+221
+00:50:17,396 --> 00:50:21,636
+Onun için birazcık çok, yani günümüzde çok tercih edilmiyor diyebiliriz.
+
+222
+00:50:21,636 --> 00:50:29,796
+Tabi bunu gerektiğinde biraz daha şeyi azaltarak, yani bu swapping işlemini azaltarak.
+
+223
+00:50:30,164 --> 00:50:56,744
+yapılıyor arkadaşlar. Daha önceden ne kadar yer kullanılacağını, ne kadar memoriye ihtiyaç olacağını bilinlebilirse biraz adalatılabilir denmiş. Bu da çok gerçekçi bir senaryo değil. Bu işi yaparken de system call'lar kullanılıyor. Bilgisayar işletim sistemini uyarmak için. Bellek bölgesine bir ihtiyacımız varsa request memory veya release memory dediğimiz şeyler kullanılıyor. Bunu C'den nasıl hatırlıyorsunuz siz?
+
+224
+00:51:01,460 --> 00:51:13,619
+Bunun bir şeyi var. Mesela request etmek istediğinizde bir manvok gibi veya release gibi, release etmek istediğinizde free gibi kullanıyorsunuz. Bunun da proses seviyesindeki halini düşünün.
+
+225
+00:51:16,180 --> 00:51:27,100
+Bir de arkadaşlar, swapping ile alakalı bir diğer sıkıntı da şu, veri tabanı gibi uygulamalar. Veri tabanı nasıl? Disk üzerindeki bir yapısı aslında.
+
+226
+00:51:27,891 --> 00:51:31,572
+Disk veri yapılarına genellikle veri tabanı diyebiliriz.
+
+227
+00:51:32,692 --> 00:51:34,471
+Çünkü veri tabanında bir veri yapısı.
+
+228
+00:51:35,992 --> 00:51:36,952
+Hangi türü olursa olsun.
+
+229
+00:51:37,891 --> 00:51:42,572
+Sürekli olarak bu tarz veri yapıları verileri şeye kaydeler.
+
+230
+00:51:43,351 --> 00:51:45,711
+Diske kaydeler veya diskten veri getirir götür.
+
+231
+00:51:45,711 --> 00:51:49,675
+Şimdi burada biz bir swapping yaptığımızda...
+
+232
+00:51:49,907 --> 00:52:06,047
+Örneğin, bir proses var. Bu proses, belleyim, diskin bir yerinde duruyor. Bu proses sürekli bu sistem veriyi okuyup yazıyor. Tamam mı? Veri tabanı uygulaması olarak düşünün bunu. Bir main memory'de veri tabanı uygulamasının verileri var. Gidiyor, bu sürekli bunu şey yapıyor.
+
+233
+00:52:06,047 --> 00:52:15,228
+Şimdi ben bunu bir strap outsweeping yaptığında, bunu gideceğim başka bir yere yedeklemem gerekecek. Şimdi ne oldu? Double buffering dediğimiz.
+
+234
+00:52:15,891 --> 00:52:32,671
+Bir sıkıntı ortaya çıktı. Belleyi fazladan. Zaten bu uygulamalar kendisi bellekli bir yer tutuyor. Disk üzerinde bir yerleri var. Yedekleme yapıyorlar. Bir de biz buna threading, thread, out gibi bir şey yaparsak ekstra bir hem kopyalama hem de bellek açısından bir overhead ortaya çıkartıyor.
+
+235
+00:52:40,692 --> 00:52:47,831
+Yani belleği çok böyle boş alan azaldığında kullanılabilen motifiye versiyonlarını görebiliyoruz.
+
+236
+00:52:49,268 --> 00:53:01,748
+Mobil sistemlere bakacak olursak, şu ana kadar ki kullandığımız bilgisayar sistemleri RAM'e sahip olan, yani Random Access Memory mekanizmasına sahip olan bir şey.
+
+237
+00:53:01,748 --> 00:53:06,688
+Burada swapping yapmak makul olabilir, kısmen. Kötü de desek belki gerekebilir.
+
+238
+00:53:07,208 --> 00:53:14,427
+Fakat mobil sistemlerdeki bellek, ana bellek, flash memory tabanlı olduğu için flash memory'nin şöyle bir özelliği var.
+
+239
+00:53:14,900 --> 00:53:41,099
+Çok sık yazıp silme gerçekleştirirseniz, bizim şu flash listler de öyledir, yani memori sticklerimiz. Çok sık yazıp silme gerçekleştirirseniz bunların belli bir ömrü vardır, ömrü tükenir, belli bir yerden kullanamazsınız. Yani yaz sil, yaz sil bir yere kadar. Dolayısıyla swapping de çok fazla yapılacağı için bu tipik olarak desteklenmeyen bir şey. Onun için çok fazla burada göremiyoruz. İşte iOS sistemlerde
+
+240
+00:53:41,588 --> 00:53:54,668
+Face Story'ı gönüllü olarak uygulamaları sonlandırıyor. Yani eğer bellek belli bir yerden doluysa bunlar tamamen sonlanıyor ve tamamen free ediliyor.
+
+241
+00:53:54,668 --> 00:53:57,668
+Android sistemlerde de eğer...
+
+242
+00:53:58,516 --> 00:54:05,236
+Bir dolma varsa, belli bir yerden sonra alarm verdiyse uygulamaları terminat ediyor.
+
+243
+00:54:05,496 --> 00:54:08,536
+Yani karşınıza gelmiştir uygulamalarda, telefonlarda görürsünüz.
+
+244
+00:54:09,236 --> 00:54:13,016
+Tabi bu application state'ini bir yere yazıyor, flash'a yazıyor.
+
+245
+00:54:13,656 --> 00:54:18,896
+Hızlı başlatmak için daha sonra kaldığı yerden program belli bir yerden devam etsin diye bu imkanı sağlıyor.
+
+246
+00:54:20,076 --> 00:54:26,016
+Aşağıda işte diğer algoritmaların bununla alakalı farklı mekanizmalarını konuşacağız demiş.
+
+247
+00:54:26,835 --> 00:54:39,975
+Şimdi, bu belleğin organize edilmesinde multi-programming olacak dedik. Bu multi-programming'i sağlamak için bir kere şuna ihtiyacımız var.
+
+248
+00:54:40,755 --> 00:54:45,915
+Belleğin allocate edilmesi, mekansal olarak süreklilik gerektiren bir şey.
+
+249
+00:54:46,291 --> 00:54:58,112
+Biz bunu genelde programlama öğretirken öğrencilere deriz ki mesela elimizde bir dizi var 10 elemanlı. Bu dizinin bütün elemanları ne olması gerekir? Birbirine ardışık bir şekilde saklanması gerekir. Link ile listeler farklı tabi.
+
+250
+00:54:58,932 --> 00:55:13,112
+Şimdi burada prosesler için de bir proses, diğer proses için yer ayrılığında örneğin burası P1 prosesi diyelim. Şurada mesela OS var, şurada da P2 prosesi olsun. P1 prosesine ait bütün verileri normalde.
+
+251
+00:55:13,684 --> 00:55:20,724
+süreklilik olacak şekilde saklanması, kıvlanması. İşte buna contiguous deniyor.
+
+252
+00:55:21,384 --> 00:55:26,443
+Zamanındaki süreklilik continuous, buradaki mekansal süreklilik de contiguous.
+
+253
+00:55:27,563 --> 00:55:32,244
+Hatta contagious diye bir şey var, bunu bilmiyorum, yanlış bir bakarsın isterseniz.
+
+254
+00:55:32,364 --> 00:55:33,304
+Bu da bulaşıcı demek.
+
+255
+00:55:33,963 --> 00:55:34,503
+Evet hocam.
+
+256
+00:55:35,603 --> 00:55:37,624
+Bu da ona yakın bir kelime.
+
+257
+00:55:38,068 --> 00:55:45,428
+Şimdi, mail memory, işletim sistemi ve kullanıcı prosesleri için bu allocation'ın sağlaması lazım.
+
+258
+00:55:46,308 --> 00:55:53,788
+Ama mail memory'in de bir sıkıntısı var. Kısıtlı. Prosesler çok fazla ama kısıtlı bir bellek bölgesi var karşımızda.
+
+259
+00:55:54,708 --> 00:56:00,608
+İlk başlarda, early method olarak, contiguous allocation, yani söylenmiş ve uygulanmış.
+
+260
+00:56:01,308 --> 00:56:04,448
+Proses bir yerden başlar, bir yere kadar devam eder.
+
+261
+00:56:04,980 --> 00:56:28,880
+Fakat burada bu segmentler arasında şöyle bir sıkıntı karşınıza geliyor. İşte burada bir proses var. Şurada şöyle bir proses var ama bakın şurası boş. Buranın boş kalması verimsizliğe sebep oluyor. Tamam P1 çıkacak, ondan sonra yerine başkası gelecek derken bir sürü proses geride bellek bekleyecek. Yani işlemciye gelemedik, belleğe de gelemedik. Öyle bir sıkıntımız var.
+
+262
+00:56:30,291 --> 00:56:49,211
+İşletim Sistemi burada kesinlikle bir yere sahip ama daha sonra buna user prosesleri ve her bir proses için belli bir segment ayırlaması gerekiyor. İlk düşünce bu şekilde. İşletim Sistemi ve diğerleri şeklinde de bunu söyleriz. Ama ne var bir süreklilik var arkadaşlar.
+
+263
+00:56:50,003 --> 00:57:01,324
+Relocation Register burada neyi kullanıyor? Bir prosesin bir başka prosesine karşı, yani address binding için kullanılıyor, prosesler arası protection için, address play protection için kullanılıyor gibi gibi.
+
+264
+00:57:02,084 --> 00:57:09,564
+Burada base register'dan, limit register'dan bahsetmiştik. Memory Management Unit'te belli bir şekilde dinamik bağlama yapıyor.
+
+265
+00:57:09,564 --> 00:57:15,943
+Logic adresi, fiziksel adrese dönüştürüyordu ve istediğimiz adrese çok fazla süreklilik olduğu için ulaşabiliyoruz.
+
+266
+00:57:15,983 --> 00:57:17,064
+Yani şöyle bir sıkıntı yok.
+
+267
+00:57:18,003 --> 00:57:31,463
+Bir tanesi buradaysa P1 prosesi. Arada başka bir proses olsun. Şu arayı şöyle şey yapalım bir başka proses. P1'in devamı burada. Şimdi ben memory management ünitte bir adres hesabı yaptığımda mesela 300. adrese ulaşacağım.
+
+268
+00:57:32,148 --> 00:57:39,027
+Relocation Register'ımı da şurayı gösteriyor. Şimdi buradan 300 ekleyince acaba burada bir yerine ulaşacağız? Yoksa şuraya ulaşma olasılığımız da mı var?
+
+269
+00:57:39,507 --> 00:57:48,887
+Şimdi bu bir sıkıntı. Birden fazla parçalı olma durumuna geleceğiz. Tam Contiguous Allocation'ı sağlandı. Onun için yeni mekanizmalara ihtiyaç duyacağız.
+
+270
+00:57:50,407 --> 00:57:54,827
+Peki bu sefer böyle bir Contiguous olduğundan eminsek.
+
+271
+00:57:55,135 --> 00:58:07,215
+Baştaki algoritmayı niye çevirebiliriz? Yani şöyle bir durum yok. Hepsi bir yerde. Böyle bir durumdan bahsetmiyoruz. O zaman ne olacak? Lojik adres üretildi. Bu lojik adres bizim limit register'ımızdan küçükse.
+
+272
+00:58:07,764 --> 00:58:14,923
+Ve aynı zamanda relocation register'ı buna eklersek kesinlikle ve kesinlikle fiziksel adresi elde ederiz.
+
+273
+00:58:15,324 --> 00:58:23,604
+Mesela limit register'ımız en fazla 800 olsun diyoruz. Eğer 800'den küçük bir değer verdiysek amenla relocation register'ı buna ekle doğrudan ulaş.
+
+274
+00:58:26,420 --> 00:58:37,080
+mekansal bellek üzerinde bir süreklilik var. Bundan eminiz. İş kullanılıyor. Sadece sıkıntı ne? Şu şartın olması yani büyük veya eşit olması durumunda bir sıkıntı olacak.
+
+275
+00:58:38,260 --> 00:58:44,640
+Peki bu durumda şöyle bir sıkıntıyla karşılaşacağız. Ona doğru geliyoruz.
+
+276
+00:58:45,019 --> 00:58:53,039
+Multiple partition allocation. Tamam bir proses için belki tek bir sürekli yer ayırdık ama birden fazla.
+
+277
+00:58:53,519 --> 00:59:00,900
+Prosesin olduğundan veya birden fazla programın olduğundan yani multiprogramik seviyesinin arttığını düşünün.
+
+278
+00:59:01,600 --> 00:59:05,559
+Bu multiprogramik seviyesi şu şekilde limitleniyor arkadaşlar.
+
+279
+00:59:06,360 --> 00:59:11,320
+Yer kalmadığı için veya boş yerleri verimli bir şekilde kullanamadığınız için ne oluyor?
+
+280
+00:59:11,900 --> 00:59:15,620
+Bir problemle karşılaşıyoruz. Bunun farklı farklı çözümlerine gelmişler.
+
+281
+00:59:15,620 --> 00:59:17,280
+Şimdi önce temel kavramlara bakalım.
+
+282
+00:59:17,907 --> 00:59:37,208
+Birincisi, variable partition size düşünülmüş, efficiency olarak. Demişler ki P5 prozese şu kadarlık, alfa kadarlık yer vereyim, öbürüne beta kadarlık yer vereyim. Bunlar birbirinden farklı olsun. Herkes rahat rahat gönlüne göre sürekli bir şekilde kalksın. Amaç ne? Şuradaki işi kolay yapabilir.
+
+283
+00:59:37,588 --> 00:59:46,268
+İlk bakıştaki düşünce güzel. Ama karşınıza ne geliyor? İşte şu an mesela şu ilk durumda, birinci durumda buraya hiçbir proses giremeyecek. Çünkü bellek dolu.
+
+284
+00:59:46,888 --> 00:59:58,028
+Proses 8'i çıkardık. Tamam, güzel, bayağı da yer açıldı. Şimdiye kadar da sıkıntı yok. Proses 9 geldi. Güzel, şu kadar da yer kaldı. Bu da iyi. Proses 10 geldi. Burada da buraya kadar bir şey geldi.
+
+285
+01:00:03,903 --> 01:00:21,384
+Fazla bir yere sahip olsa buraya giremeyecek. İşte şu fragmentation dediğimiz, hatta buna external fragmentation diyeceğiz. Böyle bir sıkıntıyla karşı karşıya geliyoruz. Ama burada şunu da düşünün, bu şu şekilde anlamlı hale geliyor. Şimdi prosesin belki tamamı burada belirikte kalmak zorunda değil.
+
+286
+01:00:31,903 --> 01:00:35,903
+Daha fazla prosese yer verebileceğiz yeterince.
+
+287
+01:00:36,603 --> 01:00:43,603
+Bu konuya da zaten bundan sonraki chapter virtual memory management dediğimiz oradaki kavramlarla anlam tasılıyor bu söylediğim şey.
+
+288
+01:00:43,603 --> 01:00:45,503
+Buna da dikkat edelim.
+
+289
+01:00:46,783 --> 01:00:48,903
+İşte şu boşluklara all deniyor.
+
+290
+01:00:49,423 --> 01:00:53,423
+Bir proses bellekten çıkarttığında olan boşluk dediğimiz şey.
+
+291
+01:00:54,003 --> 01:01:16,423
+Eğer çok fazla bir yer gerektirmiyorsa, yani yeterince bir yer varsa, proses ulaştığında buna bir yer tahsis ediliyor. Proses çıktığında bu ilgili kısım boşaltılıyor. İşletim sisteminin burada şunu da tutması lazım. Ben hangi prosesi nereye atadım ve boşta olan yerler nereler? Bunların mutlaka bir yerlerde tutulması lazım.
+
+292
+01:01:16,820 --> 01:01:38,000
+allocation, allocated partitions, free partitions. Bunu nerede tutacak? Bunu da bellekte şurada bir yerde tutacak. Dikkat edin. O zaman bu ekstra bir buraya yük getiriyor mu? Getiriyor. Yani onu da hesaba katalım. Şimdi bu allocation için şuradaki gelen prosesleri böyle gelişigüzel değil de belli bir mantığa göre yerleştirelim diye.
+
+293
+01:01:38,516 --> 01:01:43,536
+Dynamic Storage Application Problem için 3, hatta bundan türüyen bir tane daha var.
+
+294
+01:01:43,635 --> 01:01:45,296
+Bunu da Next Fit diyeceğiz.
+
+295
+01:01:46,296 --> 01:01:48,216
+4 tane algoritma söylenmiş.
+
+296
+01:01:48,336 --> 01:01:49,876
+Birinci algoritmamız First Fit.
+
+297
+01:01:50,756 --> 01:01:57,776
+Her bir proses geldiğinde bunun büyüklüğüne uyan ilk yeri buna tahsis ediyoruz.
+
+298
+01:01:57,776 --> 01:01:59,036
+First Fit'te.
+
+299
+01:01:59,827 --> 01:02:09,447
+Örneğin, şöyle bir arama yapacağım. Bakıyorum, işte şurada bir segment var, burada bir segment var. Bunlar boş. Burası uyuyor mu? Uyuyor. Uyuyorsa direkt buraya. Hiç arka tarafa bakmam.
+
+300
+01:02:09,447 --> 01:02:11,207
+Best Fit
+
+301
+01:02:12,019 --> 01:02:32,980
+Şimdi diyor ki, bu boş yerlerin azaltılmasını isteyebiliriz. Çünkü bir kısmı dolu, mesela şurası dolu, şurası boş, şurası dolu. Yani böyle bir boş var, bir dolu var. Şimdi ben bir tanesini gelip şuraya sığıyor diye doğrudan buraya yerleştirirsem, acaba şurada boşluk kalır mı? Yani şu kadar kısmı dolu oldu.
+
+302
+01:02:33,440 --> 01:02:55,659
+Şuradaki kısmı boş oldu. Şöyle iyice karalayayım. Bu kıpkırmızı olan yer boş boşuna duracak. Bu boşlukları azaltmak için gelen prosesin büyüklüğüne en yakın olan yeri seçiyorum. Şurası ilk bulduğu yer, bu en yakın yeri seçiyorum. Dolayısıyla burada bir aslında arama gerçekleştirecek. Bunu azaltırken aramak için bir süre ortaya çıkıyor.
+
+303
+01:02:56,179 --> 01:03:10,255
+Warsfit de diyor ki, ben diyor hiç ona bakmam. Olabildiğince büyük bir yer seçerim. Tamam mı? Prosesimin sığabileceğinden daha fazla bir yer seçerim. Benden sonrası, benden sonrası gelene...
+
+304
+01:03:10,255 --> 01:03:31,276
+Ve yer kalsın. Bunu aynı şey gibi düşünün. Otoparklarda veya yollarda arabaları park ediyorlar. Gidip arabanızı, şurada bir tane araç var, şurada da bir tane araç var, ne bileyim bir de şurada tek başına araç var. Siz getirip aracınızı şuraya koysanız belki şuraya bir başkası sığamayacak. Sizin yanlış park etmenizden veya öndekilerin yanlış park etmenizden kaynaklı.
+
+305
+01:03:31,668 --> 01:03:42,648
+Belki burada en büyük kaynaklı şey hatalı biz oluyoruz. Şimdi bu best fit belki bunu yapıyor. Sizin araç en uygun burası. Ama şurada çok fazla yer kalma ihtimali var.
+
+306
+01:03:43,731 --> 01:03:49,231
+Worst Fit de diyor ki, ben diyor olabildiğince en büyük yerlerden bir tanesini boşluklardan birine koyayım.
+
+307
+01:03:49,731 --> 01:03:52,592
+Benden sonra diyor bayağı boş kalsın, boş yer kalsın.
+
+308
+01:03:53,032 --> 01:03:57,472
+Ve bu sayede bir sonraki gelecek proses için yer kalma ihtimali artsın.
+
+309
+01:03:57,972 --> 01:03:58,612
+Mekanizma bu.
+
+310
+01:03:59,391 --> 01:04:03,911
+Next Fit dediğimiz algoritma da First Fit'in birazcık geliştirilmişi.
+
+311
+01:04:08,788 --> 01:04:31,548
+Yerden itibaren bakıyor. İşte biz bir yere allocate yaptık. İşte böyle bir sürü yer var. En son şuraya allocate. Bundan sonrakilerde şu şarta uygun bir yere bakıyor. Şimdi bunun simülasyon çalışmaları yapılmış. Yani deneysel çalışmalar yapılmış. Gerçek hayatta belki uygun sonuçlar elde edilmemişim ama simülasyon üzerinde first fitin ve best fitin.
+
+312
+01:04:32,755 --> 01:04:41,495
+Hız ve storage'ın yani bellek aralığındaki bu boş yerlerin kullanımla alakalı başarım açısından WordState'e göre daha uygun olduğu tespit edilmiş.
+
+313
+01:04:41,576 --> 01:04:47,995
+Ama gerçek hayatta her zaman bu simülasyonlar doğru ve istenildiği kadar sonuçlar vermemiştir.
+
+314
+01:04:48,556 --> 01:04:51,875
+Bu sonuçların verilmemesinin sebebi de şu arkadaşlar.
+
+315
+01:04:52,695 --> 01:04:55,576
+Fragmentation dediğimiz parçalanma.
+
+316
+01:04:58,900 --> 01:05:21,220
+Belli'ye yerleştikten sonra boş kalan alanlarıyla alakalı. Burada iki çeşit oluyor. Birincisi external fragmentation, ikincisi internal fragmentation. Şimdi bunları şöyle açıklayalım. Şimdi prosesler için belli bir alan veriliyor. Şimdi burası mesela işte en tane byte için bir alan. Sizin bir payback prosesimiz geldi.
+
+317
+01:05:21,679 --> 01:05:38,980
+Örneğin şu kadar yere ihtiyaç var. Siz bunu buraya sığdırdınız. Ve şurayı bir başka prosese tahsis edemiyorsunuz. Yani burası tamamen sizin. Boşluğuyla, dolusuyla hepsi size ait. N tane byte'in mesela, N-1 tane byte'in kullanılıyor. İşte şuna internal fragmentation diyoruz.
+
+318
+01:05:39,572 --> 01:05:52,412
+Az da olsa bir şey. Mesela internal fragmentation ne olur? Eğer burada n tane byte varsa, siz n-1 tanesini kullandıysanız, bir tane byte şey olursa bu iyi bir, yani en az olması gereken durum.
+
+319
+01:05:52,832 --> 01:06:00,412
+En kötü durum nedir? Size bu kadar bir yer ayrıldı. Sadece bir tanesini kullandınız. Geri kalan n-1 tane boş kaldı.
+
+320
+01:06:01,072 --> 01:06:24,512
+Internal fragmentation ama en kötü durum. External fragmentation ise, processlerin kullandıkları alanlar var, bellek alanları var. İşte burada bir tane, burada bir tane. Şurayı kullanıyorsunuz, şurayı bir başkası kullanıyor ama şurayı kimse kullanamıyor. İki proses arası. Bir başka proses, yeterli bir proses gelse girecek yere yerleşecek ama yerleşemiyor. İşte buna da external fragmentation diyoruz.
+
+321
+01:06:24,947 --> 01:06:36,967
+First Fit'in analizlerine bakılmış ve burada demiş ki N tane blocks allocate edildiğinde bunun yarısı kadar alan fragmentation'a gidiyor.
+
+322
+01:06:37,587 --> 01:06:41,407
+Gerek internal fragmentation gerek external fragmentation gidiyor.
+
+323
+01:06:41,407 --> 01:06:52,147
+Yani üçte biri unusable olan neredeyse 50% rule'a göre ifade ederse bunu da böyle bir kıstas vermiş.
+
+324
+01:06:52,628 --> 01:07:00,228
+Unusable olarak belleği boşa boşa, ne diyorlar, ne derler, kullanmış oluyorsunuz, işgal etmiş oluyorsunuz.
+
+325
+01:07:00,427 --> 01:07:02,327
+Internal ve external fragmentation da bu.
+
+326
+01:07:02,847 --> 01:07:08,407
+Şimdi bunun azaltılması için, şuraya geleceğim, bırakacağım, onu da sonra bir ara verelim.
+
+327
+01:07:09,108 --> 01:07:15,327
+Azaltılması için neyi? Özellikle external fragmentation azaltmak için bir yaklaşım derim.
+
+328
+01:07:15,327 --> 01:07:16,628
+Siz olsanız ne yaparsınız?
+
+329
+01:07:17,364 --> 01:07:22,943
+Yani şu compaction dediğimiz kelimeyi düşünmeyelim. Siz ne yapabilirsiniz?
+
+330
+01:07:26,043 --> 01:07:35,823
+Örneğin şurada bir proses var. Ondan sonra şurada ufacık bir yer var. Hani şunları şöyle diyelim. Şurada şöyle bir yer var. Ondan sonra şurada şöyle bir yer var.
+
+331
+01:07:36,763 --> 01:07:42,103
+Yani prosesler, şu aradaki boşluklar olmasa belki buraya bir kişiyi de alacağız.
+
+332
+01:07:45,108 --> 01:08:01,807
+Sıklaştırmak gerekiyor değil mi arkadaşlar? Compaction demek sıklaştırmak değil. Bu sıklaştırmaktan kastımız da bu prosesi alalım, şunun dibine getirelim, şu aradaki şey olsun. Obürünü alalım, buraya yukarıya gidelim, bunu alalım, bunu yukarıya gidelim. Mantık olarak sıklaştırıp bir prosesi daha yer açalım mantığı da geliyor.
+
+333
+01:08:02,807 --> 01:08:09,807
+Güzel, karmaşık bir şekilde duran, delik deşik olmuş bellek bölgesini birazcık derne toplu hale getiriyorsunuz. Fakat...
+
+334
+01:08:10,367 --> 01:08:34,907
+Bu location register'ların güncellenmesi anlamına geliyor. Bu bir. Çünkü execution time yaparken siz bir yandan belleyi alacaksınız, başka bir yere göndereceksiniz belleyi alın sayını. Location register'ın güncellenmesi gerekiyor. Bu bir. Peki o prosesler bir yandan işlemciye gidip geliyor, çalıştırılıyor. Burada şöyle bir sıkıntı var. Ya ayı yapıyor olabilir, ya çalışıyor olabilir. O zaman prosesin çalışmasını durduracaksınız.
+
+335
+01:08:35,956 --> 01:08:39,256
+Her şey duracak. Bir şekilde stop edeceğiz, donacağız.
+
+336
+01:08:39,731 --> 01:08:53,512
+Durun iki dakika, şunları bir yerleştirelim diyeceğiz. O arada sistemin kapanması demek ki burada işletim sistemi belki duyduğumuzda ama interaktiviteyi düşüren çok çok kötü bir şey olur. Bütün proseslerim durmaz demek. Yani ekrandan görüntü bile gidebilir. Öyle bir sıkıntı olabilir.
+
+337
+01:08:54,211 --> 01:09:07,711
+Ayrıca bir I.O. yapılırken, şimdi I.O. yapılıp belleğe gelecek, belleğe nereye gelmesi gerektiğini önceden biliyorduk. Şimdi biz bunu yeniden değiştirdiğimizde bu sefer sistemin kafası karışabilir. Yani gelecek olan I.O. verilerinin eğer bufferları yok.
+
+338
+01:09:07,731 --> 01:09:28,432
+Yoksa, relocation register'ı doğrudan okunuyorsa ne yapar? Eski bellek bölgesine yazmaya çalışır. Bu da ekstradan sıkıntılarla sebep olabilir. Şimdi bu sıkıntılar sebebiyle bu şekilde bir bellek organizasyonu yapılması çok uygun görülmemiş. Yani bunu yapan çok çok eski sistemler belki vardır hala ama bundan da vazgeçilmiş durumda.
+
+339
+01:09:35,380 --> 01:09:48,120
+Bir mantıkla çalışan farklı yaklaşımlar getirilmiş. Şimdi saatimiz sam 2.10 dakika ara verelim. Geldiğimiz zaman buradan devam ederiz. 2.10 geçe görüşmek üzere.
+
+340
+01:19:54,195 --> 01:19:55,496
+Evet, ses geliyor mu arkadaşlar?
+
+341
+01:19:57,615 --> 01:19:58,136
+Geliyor hocam.
+
+342
+01:19:59,615 --> 01:20:09,335
+Şimdi derse başlamadan hem de bir muhabbet da alsın, biraz daha iyi bir şey olsun, farklı bir konu olsun diye bir paylaşım, iki tane linköy derdim.
+
+343
+01:20:10,076 --> 01:20:17,155
+Birincisi, Bikent Üniversitesi'nde bu da bizim önceliğim öğrenciliğimizde bir projeydi, Open Course diye.
+
+344
+01:20:17,779 --> 01:20:29,879
+İlkent Üniversitesi'nin video kors sitesine bakarsanız, şurada güzel, farklı bölümlere ait bazı dersler verilmiş. Şanslı eski işletim sisteminde de bunlardan bir tanesi yanlış oldu.
+
+345
+01:20:30,819 --> 01:20:43,039
+Computer Engineering. İbrahim Çorpoğlu, şu an kendisi profesördür orada. İşletim sisteminin dersleri var. Böyle 40-45 dakika, 50 dakikalık sectionlar halinde bildiğim kadarıyla.
+
+346
+01:20:43,728 --> 01:20:48,408
+Havsiye ederim. Biz bu derste belli bir yere kadar geleceğiz, nereye kadar geleceğiz?
+
+347
+01:20:49,388 --> 01:20:56,528
+İşte memory'in hemen hemen yarısına kadar geliyoruz. Virtual memory'i de alırsak protection'e kadar konuları anlatıyor.
+
+348
+01:20:57,368 --> 01:21:01,188
+Tabii buradaki ders 3 artı 2'lik bir dersdi bizdeki kadar şey değil.
+
+349
+01:21:02,648 --> 01:21:08,167
+Bir yerden sonrası bizde zaten file organization ve computer security diye iki tane ders var. Oraya gidiyor.
+
+350
+01:21:08,948 --> 01:21:10,847
+Yani o derslerde daha detaylı anlatılıyor.
+
+351
+01:21:11,444 --> 01:21:31,824
+Bunun için mesela şundan sonrası gereksiz bile bizim için ama buradaki dersleri de ilerisi adına sistem bilgisine sahip olmanız, hakim olmanız adına tavsiye ederim. İbrahim Hoca açıkçası Türkiye için bir şanstır. Keşke dersleri Türkçe anlattığı bir ders serisi de olsa.
+
+352
+01:21:32,372 --> 01:21:39,292
+Bu konuda sayılı kişilerden bir tanesidir. Ben de kendisine çok fazla istifa etmişimdir.
+
+353
+01:21:40,652 --> 01:21:46,711
+Yani ben kendimi bu konuda daha başlarda belki %1, %2 anca görüyorum ama kendisi bir deryadır. O konuda tavsiye ederim.
+
+354
+01:21:47,412 --> 01:21:50,372
+Bir diğer şey de MIT'nin OpenCourseWare'inde yine...
+
+355
+01:21:51,380 --> 01:21:55,220
+Software Construction galiba öyle bir dersti. Yanlış hatırlamıyorsam.
+
+356
+01:21:56,479 --> 01:22:00,239
+Şu size verildiğin linkten o diğer sayfalarını bulabilirsiniz.
+
+357
+01:22:01,760 --> 01:22:05,700
+Bunun altında, ben geri geleyim de neyse kaybetmeyelim,
+
+358
+01:22:06,380 --> 01:22:12,860
+işte proses senkronizasyonuyla alakalı bizim deadlock vs. bununla alakalı güzel reading parçaları var.
+
+359
+01:22:13,180 --> 01:22:15,819
+Örnekleriyle, kodlarıyla falan gayet detaylı.
+
+360
+01:22:16,192 --> 01:22:20,032
+Bunları da incelemeleri tavsiye ederim. Zaman zaman ben de faydalanıyorum.
+
+361
+01:22:21,711 --> 01:22:28,211
+Evet, bu muhabbeti arada böyle eklemiş oldum. Online ders olmayınca belki biraz bunları söylemem zor olurdu.
+
+362
+01:22:28,391 --> 01:22:33,172
+Bu dersin en azından linkler falan kalıcı oluyor. Sizin de bir yerlere kaydetme imkanınız olur.
+
+363
+01:22:34,772 --> 01:22:41,192
+Şimdi, segmentation diye devam edelim. Şimdi buraya nereden geldik? Biz fragmentation yaparak...
+
+364
+01:22:42,163 --> 01:22:56,043
+Belleyi Malk programming'e uygun hale getirmek için parçaladık. Ama burada bir sıkıntıyla karşılaştık. Bu sıkıntı external fragmentation ve internal fragmentation. Bu da Belley'in verimsiz kullanımına neden oldu.
+
+365
+01:22:56,943 --> 01:23:07,884
+Hepsinde de dikkat edin ne var? Prosesler contiguous allocation'a sahip. Yani 8. proses belli bir yerden başlıyor, belli bir yerden bitiyor.
+
+366
+01:23:09,811 --> 01:23:18,912
+Biz bu prosesleri belleğe öyle bir dağıtalım ki şu fragmentation dediğimiz özellikle external fragmentation neredeyse yok hale gelebilir mi?
+
+367
+01:23:19,912 --> 01:23:26,431
+Veya internal fragmentation'ı daha az bir şekilde daha iyileştirebilir miyiz? Bununla alakalı bir düşünce.
+
+368
+01:23:26,791 --> 01:23:31,592
+Bu ilk aşamamız segmentation dediğim. Daha sonra buna paging gelecek.
+
+369
+01:23:31,592 --> 01:23:35,592
+Şimdi memory management üzerinde belleğin...
+
+370
+01:23:36,224 --> 01:23:54,023
+görünümü, kullanıcı görünümü farklılaştırmak istiyoruz. Şimdi biz biliyoruz ki bizim programlarımız, en baştan alalım, farklı segmentlerden oluşurlar. Örneğin programın main fonksiyonu vardır. Ayrı prosedürler ve fonksiyonlar, metotlar, objeler, metotlar vardır.
+
+371
+01:23:54,484 --> 01:24:20,484
+Objeler tanımlarsınız. Lokal varaybınlar, global varaybınlar vardır. Ortak bloklarımız var. Bellekin stack segmenti vardı. Burada da stack bölgesi, heap bölgesi var. Bazı dizilerimiz var. Şimdi bunların program çalışırken her birini biz bir arada tutmuyoruz. Programlamayı genellikle modüler yapıyoruz. Burada da bu modülleri birbiriyle uyumlu olacak şekilde belleğe dağıtsak diyebilirim.
+
+372
+01:24:20,948 --> 01:24:36,868
+Yaklaşım ortaya bakıyor. Bu dağıtma işini lojik adresler üzerinden yapıyoruz. Çünkü programı zaten biz buna göre yazıyoruz arkadaşlar. Biz şunu hiçbir zaman yapmıyoruz. Ben mail programın içerisindeyim. SQRT'yi ne yapıyorum? İsmiyle veya konfisyon pointer ile çağırıyorum.
+
+373
+01:24:37,332 --> 01:24:51,131
+Benim için security'nin yani main program mesela 500. satırda fiziksel olarak saklanacak olsun. Security'nin 900. satırda yazılmış olmasıyla veya 300. satırda yazılmış olmasıyla bir sıkıntım var mı? Yok.
+
+374
+01:24:51,667 --> 01:24:56,948
+İstediği yerde olabilir. Önemli olan ben çağırınca o fonksiyon gelsin, yapacağı işi yapsın, gitsin.
+
+375
+01:24:57,608 --> 01:25:06,807
+Veya stack segmentin, işte kullandığım local variable'ların fonksiyon çağrısında sakladığım değişkenlerin işte stack segmentte saklanacağını biliyoruz.
+
+376
+01:25:07,147 --> 01:25:11,339
+Ama stack segmentin hangi adreste tutulacağı benim için değil. İşte bunu...
+
+377
+01:25:11,380 --> 01:25:24,319
+Bellek üzerinde, lojik olarak, bu şekilde user space'de gördüğümüz programda bir şey, bellek üzerinde de bu şekilde ayrık bir şekilde bir prosesi parçalamak, parçalara ayırmak ve yerleştirmek üzerine dayalı bir şeydir.
+
+378
+01:25:24,399 --> 01:25:26,079
+Segmentasyon mantığı bu.
+
+379
+01:25:26,540 --> 01:25:30,720
+Bakın bu sayede, özellikle birazdan şunları da düşüneceğiz.
+
+380
+01:25:31,188 --> 01:25:50,708
+Boş yerleri yönetebilmek bir proses için belki daha kolay hale gelecek. Bir başka proses geldiğinde bunun daha şeyini alacağız. Bunu sayfalama ile birleştireceğiz. Sayfalama ile ileride demand page yi diyeceğiz bir sonraki şepterde. Bunların hepsi bir araya geldiğinde bellek çok çok daha verimli bir kullanıma gelecek. Bu adım adım aslında bir mühendislik tasarımı şekilde düşünebilirsiniz.
+
+381
+01:25:51,708 --> 01:25:58,288
+Peki burada segmentation architecture nasıl olacak? Tamam ben mesela bir prosesin bir, iki, üç, dört molu parçalarla oluşuyor.
+
+382
+01:25:58,739 --> 01:26:07,699
+Şimdi her birisine bir relocation register gibi bir şey koyabilirim ama şimdi öyle bir adres hesabı yapacağım ki o hangi segmente düşecek onunca onun bulunması lazım.
+
+383
+01:26:08,219 --> 01:26:15,239
+Şimdi kod segment, stack segment gibi birinci parçanın relocation registerı, dördüncü parçanın relocation register diye ayırdım.
+
+384
+01:26:15,659 --> 01:26:19,399
+Ama burası kod mu içeriyor, burası stack mi içeriyor bunu bilmiyoruz.
+
+385
+01:26:19,399 --> 01:26:26,739
+İşte bunu tutan bir lojik adres şeklinde tutan ikililerden biri bu mimariye uçuruyorsunuz.
+
+386
+01:26:26,739 --> 01:26:32,420
+Sonra segment numarası ve offset adresi deniyor. Şimdi segment tablolarında bu bilgiler saklanıyor arkadaşlar.
+
+387
+01:26:32,559 --> 01:26:37,139
+Ve bir fiziksel adres hesabı da gerçekleşecek. Bir sonraki örneğe bakarız şimdi.
+
+388
+01:26:37,760 --> 01:26:41,600
+Bu fiziksel adres hesabında bir base ve limit register'ımız vardı.
+
+389
+01:26:42,459 --> 01:26:50,579
+Bu fiziksel adresin başlangıç noktasını gösterecek bir ikili birincisi. Limitte uzunluğunu tutacak. Böyle bir şeyle hesap yapacağız.
+
+390
+01:26:51,604 --> 01:26:56,164
+Bu iş için işte segment table base register, segment table length register dediğimiz.
+
+391
+01:26:56,724 --> 01:27:00,324
+Ayrıca registerlar da hani donanım seviyesinde bunlar sağlanabilir.
+
+392
+01:27:00,504 --> 01:27:02,463
+Ne yapıyor? İşte bu neyi gösteriyor?
+
+393
+01:27:04,604 --> 01:27:08,104
+Bellekteki segment tablosunun bulunduğu yeri gösteriyor.
+
+394
+01:27:08,184 --> 01:27:11,744
+Sonuçta ben bir yerde arama yapacaksam o arayacağım tabloyu da tutacağım.
+
+395
+01:27:12,203 --> 01:27:17,084
+Veya bir arama yapacaksam o tabloyu hangi aralıkta arayacağım bunu da bilmem gerekiyor.
+
+396
+01:27:17,164 --> 01:27:19,524
+Segment tablosunun da ne olması lazım?
+
+397
+01:27:19,604 --> 01:27:24,203
+Bölünebilir, bölünemez. Yani contagious, contagious, non-contagious durumuna bakmamız gerekiyor.
+
+398
+01:27:25,504 --> 01:27:34,024
+Burada bir de protection için, acaba ben bir yere erişeceğim ama bu yer gerçekten bu prosesle mi alakalı? Bunun için bir koruma.
+
+399
+01:27:34,484 --> 01:27:47,144
+Amaç diyor. Validation bit tutuyoruz. Veya okuma yazma ayrıcalıklarla, özelliklerle alakalı tutulacak başka şeyler tutulabiliyor. Koruma için de bu yapılıyor. Birincisi parçalamak için, diğeri koruma için.
+
+400
+01:27:47,144 --> 01:27:58,184
+İşte bu partition bits dediğimiz segmentlerle alakalı, işte kodun share edilebilmesiyle alakalı, segmentler arasında kodun share edilebilmesiyle alakalı.
+
+401
+01:28:01,460 --> 01:28:11,940
+değişken uzunlukta olması söz konusu. Burada memory allocation bir dynamic storage allocation problemine dönüşebiliyor.
+
+402
+01:28:12,639 --> 01:28:23,619
+Ve aşağıda şurada bir örnek verilmiş. Mantık şu şekilde arkadaşlar. Ben biraz önceki gibi segmentlerimi, işte prosesimi farklı parçalara böleceğim ve bunları segmente edeceğim.
+
+403
+01:28:24,059 --> 01:28:29,159
+İşte bir yerde bir duracak, bir yerde bir duracak. Ve bunu bir segment tablosu üzerinden yapacak.
+
+404
+01:28:29,587 --> 01:28:53,747
+CPU bir adres üretecek ve bu adres bir ikiliden oluşacak. Şu S dediğim şey segmenti gösterecek bana. D de displacement. Yani buna ekleyeceğim bir sayısal değer. Şimdi S'yi gideceğim, burada arayacağım ve buradan bir değer elde edeceğim. Buna limit değer ediyorum. Diyor ki acaba bu hangi segmentte bulacak ve bu limitin base değerini buradan buluyor.
+
+405
+01:28:55,380 --> 01:29:00,440
+Limitten küçükse, aradığım yerden küçükse o zaman buraya geçiyor. Yoksa hata ver.
+
+406
+01:29:01,200 --> 01:29:06,420
+Base değerini de buna ekle. Basit bir yine toplama işlemi ama biraz ön kontrollü toplama işlemi.
+
+407
+01:29:06,860 --> 01:29:12,300
+Buna ekleniyor ve gidip bir prosesin hangi segmentin hangi adresine ulaşacağımızı buluyoruz.
+
+408
+01:29:13,220 --> 01:29:16,579
+Burada mantık budur. Yalnız burada şöyle bir sıkıntı var.
+
+409
+01:29:18,440 --> 01:29:21,979
+Segment uzunlukları değişkenlik gösterdiği için
+
+410
+01:29:22,899 --> 01:29:49,599
+Doğrudan ekleme açısından biraz sıkıntı var. Yani birisi 500K'lık, 512K'lık, öbürü 1024K'lık, farklı segmentler, prosesler böyle parçalara bölünür. Dolayısıyla ben buradan bir adres üretince, mantıksal adres üretince, örneğin 800. adres ürettim. Şuradaki eşleştirmenin doğru bir şekilde yapılması lazım. Bunun için de paging dediğimiz biraz daha gelişmiş bir mekanizma kullanılıyor.
+
+411
+01:29:50,931 --> 01:29:58,051
+Şimdi bu pagingde bir kere fiziksel adresleri non-contiguous şekilde tutabiliyoruz. Süreklilik şart değil.
+
+412
+01:29:58,051 --> 01:30:06,851
+Ve neresi müsaitse oraya prosesimizi alloket ediyoruz. Bu bizim external fragmentation'dan kurtulmamızı sağlayabiliyor.
+
+413
+01:30:07,188 --> 01:30:16,608
+Ve değişik boyutlarda memori bölgelerine ulaşmamızın da engeli.
+
+414
+01:30:16,888 --> 01:30:24,228
+Çünkü pagingde prosesleri ve belleği eşit uzunluklu ve sabit uzunluklu parçalara ayırıyoruz.
+
+415
+01:30:24,888 --> 01:30:31,988
+Örnek diyor ki, divide fiziksel belleği frame olarak adlandırılan sabit uzunluklu bölgelere.
+
+416
+01:30:32,756 --> 01:30:54,015
+Bakın, biraz önceki segmentation'da burada paging yaparak bir kere belleği frame'lere böldük. Bakın, belleği bölüyoruz. Uygulamayı da, logic memory'i de sayfalara bölüyoruz. Bu da yine sabit uzunluktu. Genellikle işte ikinin katları şeklinde 512 byte, 16 megabyte şekilde.
+
+417
+01:30:54,511 --> 01:31:09,011
+Parçalara bölelim. Tabi burada free olan frame'lerin, yani şurada frame'lerimiz var, bizim burada application'ımız var. Bunu lojik olarak böldük. İşte dedi ki şurası birinci sayfa, burası birinci sayfa, bunlar page. Şurası da main memory.
+
+418
+01:31:10,391 --> 01:31:17,412
+Böldükten sonra işte burada boş yerler nelerdir, hangi frame'ler boştur bunun bilgisini işletim sistemi tutacak.
+
+419
+01:31:18,003 --> 01:31:25,304
+Ve n tane size'dan oluşan page çalıştırmak için n tane frame'e ihtiyacımız var.
+
+420
+01:31:25,484 --> 01:31:26,423
+Buradan yükleyeceğiz.
+
+421
+01:31:27,023 --> 01:31:33,764
+Bunun n tane size'ı varsa, n tane page'i varsa mail numara tarafında n tane frame'e ihtiyaç var.
+
+422
+01:31:33,844 --> 01:31:34,523
+Bu neyi sağlar?
+
+423
+01:31:34,523 --> 01:31:41,224
+Bir kere, prosesler ne olursa olsun, uzunluğu ne olursa olsun, n tane de olsa, n tane de olsa,
+
+424
+01:31:41,779 --> 01:32:01,359
+Şuradaki şeyler de sabit. Bunların uzunu da sabit. External fragmentation olmuyor. Çünkü bir prosesten artar, boş bir yer kalmayacak. Internal fragmentation olabilir yalnız. Çünkü ben 512'lik page'ler diyelim. Bu 512, bu 512, bu 512, şurası 511 diye bir tane daha page olsun.
+
+425
+01:32:01,747 --> 01:32:14,027
+1 byte'lık internal fragmentation olabilir. En iyi durumda, en kötü durumda da şu 512, 512, şurası 1 byte olur. O zaman 511 byte boş internal fragmentation'a gider.
+
+426
+01:32:14,967 --> 01:32:17,567
+Şimdi burada sayfa tablosu dediğimiz.
+
+427
+01:32:18,068 --> 01:32:32,568
+Bir dönüşüm aracı tutuyoruz. Biraz önce segmentation tablolar tutuyordum. Burada da sayfa tablolar açacağız. Şuradaki yaklaşıma uygun. Bu variable size de segmentation, buradaki fixed size dediğimiz şey.
+
+428
+01:32:34,644 --> 01:32:53,084
+Hala ne duruyor? Internal fragmentation ihtimali var. Buna da yapacak çok bir şey yok. Şimdi burada adres translation'ı nasıl gerçekleşecek? CPU'dan üretilen adres bit olarak iki parçaya bölünüyor. Birincisi bunun acaba bu prosesin aradığımız yeri hangi page'de ve bunun offset numarası nedir?
+
+429
+01:32:58,863 --> 01:33:14,384
+P tanesi de page number üzerine geliyor. Şimdi ben P tane bitim, page number söyleyeceksem ben 2 üzeri P kadar veya işte N tane bitim varsa, buraya N'ye gidiyorsa, buraya M eksine 2 üzeri M eksi N tane sayfa ifade edebilirim.
+
+430
+01:33:15,683 --> 01:33:25,643
+Bu uzayda toplam 2 üzeri N tane şey olacak. Onu da söyleyebiliriz. Dolayısıyla burada bir numara üreteceğiz. Bir de burada offset olacak. Bu ikisini birleştirip adrese erişeceğiz.
+
+431
+01:33:26,079 --> 01:33:49,940
+Mantık şu şekilde burada. Bir kere prosesler için page uzunlukları şey. Bakın bu da bir frame uzunluğu. Bu frame uzunluğu kadar prosesinde page'leri var. Ben buradan bir adres ürettiğimde bunun ilk belli bir byte'ı işte 6 byte, 10 byte, 12 byte neyse gidiyorum bu page tablosundan sorguluyorum. Bu page tablosu bana hangi frame'de olduğunu soruyor. Örneğin şu frame'de.
+
+432
+01:33:51,796 --> 01:33:58,195
+Logic adres tarafından buradaki displacement değeriyle birleştirdiğimde işte buradan 0, 0, 0, 0 bir şey geldi.
+
+433
+01:33:58,456 --> 01:34:02,675
+Kalan D'yi de buraya getirdiğinde ilgili adresi buradan bulabiliyoruz. Tamam mı?
+
+434
+01:34:03,655 --> 01:34:08,155
+Bu da paging. External fragmentation yok. Internal fragmentation olma ihtimali var.
+
+435
+01:34:09,115 --> 01:34:15,296
+Peki, örneğimize bakalım. Şimdi bu logic memory de, yani logic memory dediğimiz şey bizim prosesimiz aslında.
+
+436
+01:34:15,296 --> 01:34:15,576
+Bu.
+
+437
+01:34:16,148 --> 01:34:22,648
+Prosesin sıfırıncı page'i, birinci page'i, şunlar sabit uzunlukta, şunlarla eşit olacak şekilde.
+
+438
+01:34:23,268 --> 01:34:27,968
+Bellek ediyor ki page type table sıfırıncı page'in bir nolu frame'de olacakmış.
+
+439
+01:34:28,528 --> 01:34:33,327
+İkinci page'in üç nolu frame'de olacakmış. Üçüncü page'in yedi nolu frame'de olacakmış.
+
+440
+01:34:34,108 --> 01:34:38,688
+Biz önce şuradan mesela, işte burası mesela ne diyelim.
+
+441
+01:34:39,283 --> 01:35:03,283
+256, 256, 256 hesabı kolayca 256 diye gitsin. Oysa bu da 256, 256, 256 diye gidecek. Mesela bu logic memory yani prosesin içerisinde 600. satıra bir şekilde erişmek istiyor. Şimdi 600. satır nerede? Şurada. O zaman ben buradan 600. satırın
+
+442
+01:35:03,583 --> 01:35:30,064
+Displacement değerini bulacağım. 600-512 dediğim şey ne oluyor? 88 mi oluyor? 98 evet. Şurada 88. Peki 600 bölü 256 dersen ne oluyor? İşte 512. Şu da 2. İkinci page de 88. satırdan bir şey. O zaman ben önce ikinci pejin acaba kaçıncı frame'de olduğunu buluyorum.
+
+443
+01:35:30,463 --> 01:35:52,764
+Üçüncü frame. Bu üçüncü frame'in şuradaki adresini bana bit olarak söylüyor. İşte nedir bu üçün adresi? 0, 0, 0, şöyle 1, 1. Sonra buraya 88 bilgisi geliyor. 88 de artık şuradan kaldığı yerden devam ediyor. O 88'in binary karşılığında buraya getiyorsunuz ve buradaki o ilgili adrese erişim sağlayabiliyorsunuz. Burayı anladık mı bu mantığı?
+
+444
+01:35:55,380 --> 01:36:04,279
+Demek ki page uzunluğunu bölüm yaparak, bölme yaparak elde ettiğim bölümü hangi page'de olabileceğimi bulmak için kullandım.
+
+445
+01:36:04,960 --> 01:36:08,600
+Bölümden kalanı da hani çıkardık ama bölümden kalanı da işte 88.
+
+446
+01:36:09,420 --> 01:36:12,199
+Bu ilgili page'deki kaçıncı satır?
+
+447
+01:36:12,199 --> 01:36:14,979
+Önce gittim page tablomdan frame numaramı öğrendim.
+
+448
+01:36:15,460 --> 01:36:18,139
+O frame numarasına 88 bilgisini ekledim.
+
+449
+01:36:18,699 --> 01:36:19,659
+Ve sonucu elde ettim.
+
+450
+01:36:19,719 --> 01:36:21,059
+Burada anlaşılmayan bir şey var mı?
+
+451
+01:36:24,148 --> 01:36:35,708
+Evet, fena değil. Şimdi mesela, logic memorimiz şöyle neye eşittir iki, mye eşittir dört olduğunda, biraz önceki işte bu neyi, myi verdi ya şurada.
+
+452
+01:36:36,847 --> 01:36:46,347
+Şunu düşünün. Page offsetimiz iki, m dört. Yani şurası m tane bitse, yani dört bitlik bir durum var.
+
+453
+01:36:47,731 --> 01:36:54,271
+1, 2, 3, 4. Şu ikisi N'ye gelecek. Bu ikisi de M'ye gelecek. M-N'ye gelecek demektir.
+
+454
+01:36:54,992 --> 01:37:03,351
+Şimdi diyor ki burada logic memory'de ben o zaman 4 şeyle 244 16 farklı harça ayarlayabilirim.
+
+455
+01:37:03,792 --> 01:37:10,604
+Şimdi mesela E diye bir satır var. Bu nerede? Bunlar ikişer ikişer gideceği için sonuçta...
+
+456
+01:37:10,644 --> 01:37:36,944
+Şurası 4 farklı değer alabilir, 2 bit olduğunda. İşte burası 0, 0, 0, 1, 1, 1, 1, 0 diye gelir. Ben G'yi arıyorsam o zaman bu 6'nın olduğu yerde yani birinci şurada o zaman gideceğim buradan biri bulacağım. İşte bu da 6. frame'deymiş. 6. frame nerede? İşte şurada bir yerde. G'yi bu şekilde tespit edebiliyor. Tabi bir dakika yok 6. frame.
+
+457
+01:37:37,908 --> 01:37:46,088
+0, 1, 2, 3, 4, 5, 6. Şurada bakacağız arkadaşlar. Şunlar frame numaraları değil. Bu başlangıç adresleri, görsel alması.
+
+458
+01:37:46,648 --> 01:37:54,208
+Altıncı frame'imiz burada. Ve bu altıncı frame'de E, F, G, H bakın. Üçüncü satıra gideceğiz. Üçüncü satırda G'yi bulmuş olacağız.
+
+459
+01:37:54,428 --> 01:37:58,728
+Tamam mı? Şu tablodan çok rahat olabiliyoruz. Bu da bunun bir örneği olsun.
+
+460
+01:37:58,728 --> 01:38:02,428
+Şimdi, peki.
+
+461
+01:38:03,859 --> 01:38:25,479
+Bunu aslında paging'i niye benzetebiliriz? Şimdi siz herhangi bir kitap okuyacaksınız. Şöyle kitap diyelim. Şu an okuduğunuz aktif bir sayfa var ve bu kitap işte 1024 tane sayfa. Bunu şöyle düşünün. O kitabın her gibi bir sayfasını okuduğunuzu düşünün ve siz 1024 gün boyunca bu kitabı okuyacaksınız.
+
+462
+01:38:26,068 --> 01:38:32,148
+Düşünce şu, siz o okuyacağınız sayfayı yanınızda taşıyın, geri kalan ağırlık yapmayı yanınızda taşımayın.
+
+463
+01:38:32,847 --> 01:38:37,467
+İlgili olan kısımlar, sadece siz hangi sayfayla ilgilisiniz onu alacaksınız.
+
+464
+01:38:37,467 --> 01:38:38,488
+Bu şekilde.
+
+465
+01:38:39,148 --> 01:38:47,587
+Eğer page devinizin size'ını arttırırsanız veya azaltırsanız burada internal fragmentation'ı değiştirme ihtimali var.
+
+466
+01:38:47,688 --> 01:38:52,707
+Şimdi page size çok küçük olursa internal fragmentation olasılığı azalıyor değil mi?
+
+467
+01:38:53,268 --> 01:39:17,807
+Yani ben 256 dedim. Eğer processlerimden artan kalan biraz önce 88 mi artmıştı mesela? Şurada 256, 256. Hadi şurada bir blok daha olsun. Şurada da işte tamamı değil de şu kadarı dolu. İşte ne bileyim burayı da 256 yer katlayacağım ama belki bunu 156'sını kullandık, 100 boş yerde. Ama ben bu processlerin, page'lerinin sayısını yani page sayfa boyutunu azaltsam, mesela 128 yapsam.
+
+468
+01:39:18,144 --> 01:39:44,404
+Şurada 128 iki tane, burada 128 iki tane, burada 128 iki tane, bu 128 iki tane. Ne oldu? Şuraya 156 demiştik. 128'i mi kullandık? 128'i kaldı. İşte ikinci 128'den kalan şurada az bir şey. 256, pardon ne oluyor? 156-128 kadar bir boş yer kalıyor. Internal fragmentation'ı azaltmış oluyoruz. Peki bunu yaparken başka bir şey oluyor mu? Daha kötü bir şey.
+
+469
+01:39:46,931 --> 01:39:51,891
+Bunun bir dezavantajı, page size azaltmak işe yaradığı gibi bir dezavantajı olabilir mi sizce?
+
+470
+01:40:01,140 --> 01:40:02,079
+[öğrenci].
+
+471
+01:40:07,539 --> 01:40:08,560
+[öğrenci] burada mısınız?
+
+472
+01:40:13,268 --> 01:40:15,787
+Ben mi hocam? [öğrenci].
+
+473
+01:40:16,327 --> 01:40:17,447
+Ben değilmiş, pardon.
+
+474
+01:40:18,007 --> 01:40:18,188
+Evet.
+
+475
+01:40:19,707 --> 01:40:20,427
+[öğrenci].
+
+476
+01:40:22,927 --> 01:40:23,967
+Buradayım hocam.
+
+477
+01:40:25,787 --> 01:40:33,107
+[öğrenci], ben mesela page size'ımı azaltırsam, internal fragmentation'ı azalttım.
+
+478
+01:40:34,167 --> 01:40:37,087
+Peki bu başka bir yan etkiye neden olabilir mi?
+
+479
+01:40:37,987 --> 01:40:39,827
+Ne gibi bir şey olabilir? Bir düşünelim üzerinde.
+
+480
+01:40:40,979 --> 01:40:58,420
+Şimdi şurada page tablomu tutuyorum değil mi? Sıfıra bir, bire iki. Page tablonun boyutunu azaltınca ne olacak? Sıfırıncı page. Bir, iki, üç, dört, beş, altı. Önceden üç tane page vardı. Belki sekiz tane page tutacağım. Öyle değil mi?
+
+481
+01:40:58,420 --> 01:41:03,779
+Hı hı. E ne oldu? Page tablosunun boyu arttı.
+
+482
+01:41:04,948 --> 01:41:17,068
+Peki, page tablosunu ben nerede tutuyorum? Onu da fiziksel bellekte tutuyorum. Yani bellekte daha kısa bir tablo tutmak varken bu sefer daha uzun tablo tutup belleği yine verimsiz kullanacağım.
+
+483
+01:41:17,668 --> 01:41:20,048
+Burada bir optimizasyon problemi ortaya çıkıyor.
+
+484
+01:41:20,048 --> 01:41:20,448
+Evet.
+
+485
+01:41:21,608 --> 01:41:22,488
+Teşekkürler.
+
+486
+01:41:23,248 --> 01:41:30,368
+Şimdi her zaman işte belleği internal fragmentation'ı yok edelim diye bu
+
+487
+01:41:30,868 --> 01:41:55,768
+Şeyi birer birer birer birer düşünürsek çok kötü bir şey oluyor. Yani page size bir bile yapabilirsiniz. Ama belleğin uzunluğu kadar bir page table olur. Attığınız taş ürküttüğünüz kurbağa değmez gibi öyle düşünelim. Mesela page size'ımız 2048 bytes ise, process size'ımız dair şu kadar bytes ise ne olacak? Bunu buna böldüğünde 35 tane page artı 1086 tane byte kalıyor.
+
+488
+01:41:56,372 --> 01:42:02,172
+O zaman internal fragmentation'ımız ne oluyor? 2048'den bunu çıkarttınız. Şu kadar boşta yer kaldı.
+
+489
+01:42:02,772 --> 01:42:12,072
+Peki bu bir frame'i bir byte olarak azatsak ortalama fragmentation 1 bölü 2 olacak.
+
+490
+01:42:12,072 --> 01:42:15,892
+Tamam azaltınca şu şeyi azalttık. Yani ne oldu?
+
+491
+01:42:16,572 --> 01:42:18,988
+İşte 2048 tane byte...
+
+492
+01:42:19,699 --> 01:42:26,899
+Değil de bir byte kabul ettik. 72.766 tane byte ile prosesimiz varsa bu kadar page'imiz oldu.
+
+493
+01:42:26,899 --> 01:42:34,100
+Ama 72.766 tane page table uzadı. Uzaması demek o da bir sıkıntı.
+
+494
+01:42:34,100 --> 01:42:45,699
+Bunun için Solaris 8 kilobyte ve 4 megabyte ile birlikte kullanan page size'lar verilmiş. Yerine geldiğinde onu, yerine geldiğinde onu kullanıyor.
+
+495
+01:42:47,507 --> 01:43:12,707
+Optimizasyon problemi aslında. Burada hani bunun en uygun şekilde kontrol edeceğiz. Çünkü page table üzerinde arama yaparken yani bu da bir maliyet sonuçta ve arama maliyetini belki hash yaptık. İşte ikiyi doğrudan bulduk. Bununla beraber ne sıkıntısı var? Bu tablo uzadıkça bir kere bellekten ayrıca yer o tablo için tahsis etmemiz gerekecek.
+
+496
+01:43:14,612 --> 01:43:21,092
+Şimdi bir de burada framelerin boş olanlarının listesini tutmak gerekiyor arkadaşlar.
+
+497
+01:43:21,092 --> 01:43:27,311
+Şimdi diyor ki sistem allocation yapmadan önce 13, 14, 18, 20, 15 bu frameler boş.
+
+498
+01:43:27,971 --> 01:43:34,891
+Ve ben yeni bir proses olarak gelmek istiyorum. 4 tane tablom var. Bir kere bu tablom 4 tane şey 4 tane page'im var.
+
+499
+01:43:35,283 --> 01:43:46,583
+Bu dört tane page'e gideceğim. Hangisi müsaitse? İşte diyeceğim ki sıfıra on dördü ver, bire on üçü ver, ikiye on sekiz ver, üçe yirmiyi ver ve bu şekilde allocation yapalım.
+
+500
+01:43:46,663 --> 01:43:56,263
+Şimdi free frameless ne oldu? Ayrıca ne yapmam gerekiyor? Bir de boş olanların listesini tutmam gerekiyor. Dolayısıyla bu page size'ı değiştirmek başka başka sorunlara.
+
+501
+01:43:56,743 --> 01:43:59,583
+Yani bir şeyi düzeltirken öbür şeyi değiştirmiş olabiliyoruz.
+
+502
+01:44:00,020 --> 01:44:07,720
+İşte page table'ların implementasyonuyla alakalı, çünkü bunlar bellekte tutulacağı için birazcık sıkıntılı bir şey olmuş.
+
+503
+01:44:07,840 --> 01:44:11,480
+Şimdi bunun için yardımcı bir eleman olsa demişler.
+
+504
+01:44:11,956 --> 01:44:22,816
+Hem bu page table üzerinde arama maliyetinden hem de sıklıkla yapılan aramaların daha hızlı bir şekilde erişilip bir de alan maliyetini kurtarmak alanında bir şeyler yapalım denilmiş.
+
+505
+01:44:23,356 --> 01:44:27,436
+Bunun için de kullanılan yapı Translation Look Aspect Buffers TLB.
+
+506
+01:44:28,096 --> 01:44:34,836
+Bu bir yardımcı associatif memory dediğimiz cache benzeri, cache bellek benzeri bir şey de yapılıyor.
+
+507
+01:44:35,476 --> 01:44:37,096
+Donanım diyelim onlara artık.
+
+508
+01:44:37,811 --> 01:44:50,211
+Burada page table base register neyi? Page table'ın adresini gösteriyordu. Page table length register bu da bunun size'ını gösteriyordu. Tamam bunlar var ama şu arama maliyetini biraz daha azaltmak gerekiyor.
+
+509
+01:44:50,211 --> 01:44:59,832
+Bunun için TLB dediğimiz şeyden, şuradaydı evet buraya geleceğiz. TLB'den faydalanıyoruz. Bu.
+
+510
+01:45:00,595 --> 01:45:22,275
+Bir yerde arama yaparken yapacağımız şey yukarıdan aşağıya arama yapmak. Yani sıfır nerede, bir nerede, iki nerede bunlara tek tek bakmak. Linear search gibi belki değil ama yine yavaş bir süreç. Biz de bellek üzerinde arama yapıyoruz arkadaşlar. Yani şu page table'lar bellek üzerinde olduğu için gidip yine bellekten okuma yazma, sorgulama yapacağız. O açıdan yavaşlatıcı bir şey.
+
+511
+01:45:24,307 --> 01:45:44,127
+Paralelmiş gibi düşünün ve tek clock cycle'da işlemci içerisinde bunun aramasını sağlayacak bir şeye gerek var. Öyle bir bellek olsun. Paralel search yapacağız. Ben page'imi vereceğim. O bana doğrudan frame'i verecek ama ben mesela dördüncü page'i arıyorum. Dördüncü page'i bunların her birisi de tek bir clock cycle'da arayacak bir mekanizm olacak.
+
+512
+01:45:44,595 --> 01:45:49,615
+Yoksa bir buna bak, sonra buna bak, sonra buna bak değil. Eş zamanlı. Bunun için paralellikten bahsediyoruz.
+
+513
+01:45:50,195 --> 01:45:55,715
+Bunu yapan bir mekanizma olursa arama maliyetini çok çok azaltırız ve daha şey yaparız.
+
+514
+01:45:56,175 --> 01:46:01,675
+İşte bu TLB'nin mantığı şu. CPU'dan üretilen biraz önceki bizim şemamız biraz daha detaylandı.
+
+515
+01:46:02,255 --> 01:46:11,795
+Ne oldu? Buradan bir P arayacağız. Page numarasını arayacağız. Page numarası eğer şu olmasaydı biraz önceki şekilde gidip buradan bir frame numarası öğrenmeye bağlıydı.
+
+516
+01:46:12,435 --> 01:46:21,376
+Ama diyor ki TLV, sıklıkla kullanılan page ve frame eşleştirmeleri burada bir cep bellek gibi, cache bellek gibi tutulur.
+
+517
+01:46:22,096 --> 01:46:29,615
+Ve tek bir clock cycle'ında elde edilir. Normalde biz bunu burada arasaydık örneğin 100 milisaniyeydi.
+
+518
+01:46:30,475 --> 01:46:35,935
+Ama bu biraz daha hani şey bir de gideceğiz ne yapacağız burada bulduktan sonra bir de burada arayacağız.
+
+519
+01:46:35,935 --> 01:46:39,056
+Bir de buna da 100 milisaniye dedim. Toplam 200 milisaniye.
+
+520
+01:46:39,252 --> 01:46:45,032
+Fakat şu çok çok daha hızlanacak. Şimdi burada bulduktan sonra eğer varsa, hit ise, TLB hit,
+
+521
+01:46:45,391 --> 01:46:53,231
+Buna bilgisayar donanımında cache nomorilere de cache hit veya cache miss deniyor. Aramak veya bulmak veya bulamamak.
+
+522
+01:46:53,752 --> 01:47:01,212
+Bulduysak ne yapıyoruz? Doğrudan oraya gidiyoruz. Dolayısıyla şurada bulmanın, aramanın maliyeti artı şurada bulmanın maliyeti ikisi toplanıyor.
+
+523
+01:47:01,792 --> 01:47:08,212
+Eğer burada bulamadıysak yine buraya gideceğiz. Şimdi bu da bellek üzerinde bir yerde olduğu için şu maliyete yakın bir maliyet burada da olacak.
+
+524
+01:47:08,212 --> 01:47:13,391
+Toplamda belki 200 milisaniyeye yakın bir şey ama şu 100 artı belki 130 milisaniye gibi.
+
+525
+01:47:13,391 --> 01:47:28,032
+Bir şeyde daha kısa sürede hesaplama yapacak. Bir ön işlem. Burada bu tasarım TLB Heat Ratio dediğimiz veya Cash Heat Ratio dediğimiz bir oranla ölçülüyor aslında.
+
+526
+01:47:28,435 --> 01:47:54,876
+Hatta bu bilgisayar satın alırken bazı işte dokumentasyonlarda görülür. Hit ratio, işte bir şeyi arayıp bulma oranı yüzde doksanlardaysa demek ki buraya çok gidip bakmıyor. Yüzde doksan oranında orada bulursa çok çok daha hızlı çalışıyor diye düşünebiliriz. Bunun hesabı EAT diye ifadeler, Effective Access Timeline söyleniyor. Burada bir look up, yani sözlükten arayıp bulmak gibi bir hesap yapılıyor aslında.
+
+527
+01:47:56,180 --> 01:48:07,880
+Belli bir bellek bölgesinden ve bu sayede %10'a kadar memory access time'ı hatta ondan daha da az da daha az sürede memory access time iyileştirilebiliyor.
+
+528
+01:48:08,340 --> 01:48:12,840
+Yani 100 milisaniyede yapılacak bir şey, milisaniyedeye geçen nano saniyeler demek lazım.
+
+529
+01:48:12,960 --> 01:48:14,580
+Çünkü gigaerselerden bahsediyoruz.
+
+530
+01:48:15,620 --> 01:48:19,540
+%10'u düşünün yani 100'ü 10'a düşünün ondan daha az bir süre.
+
+531
+01:48:19,540 --> 01:48:22,540
+Şöyle bir örneğimiz var. Diyor ki bir TLV üzerinde.
+
+532
+01:48:23,216 --> 01:48:30,124
+Bulma oranımız %80 olsun. Bulamama oranımız %20. O zaman bulma oranı...
+
+533
+01:48:30,292 --> 01:48:58,292
+Ve burada hata payı, işte epsilon dediğimiz şey 20 nanosaniye ise bulma oranını buraya 80 dediniz. Şurası da ne oldu? 20 oldu. Bir defa belleğe erişmek varken 1 artı epsilon, yani şuradan bahsediyorum. Şurada 1, bir de bunun epsilon değeri şuraya erişmek var. Burada %80 oranında burası gelecek. Şurada da 2 artı epsilon. Ne oluyor? 2 artı epsilon eksi alfa. Bunu 100 nanosaniye süren bir bellek erişimi için hesaplamıyorum.
+
+534
+01:48:58,292 --> 01:49:04,551
+hesapladığınızda normalde 200 nanosaniyede bulacakken bunu 120 nanosaniyeye indirgemiş oluyorsunuz.
+
+535
+01:49:04,916 --> 01:49:16,815
+Eğer bu oran, cash miss hit oranı %99'a çıkarsa, ki genelde %90 üzerindedir günümüzde, ne oluyor? Bu 101 nanosaniyeye düşüyor. 200'ü 101'e düşürülmüş.
+
+536
+01:49:17,216 --> 01:49:25,416
+Hocam nasıl düştü? Ben önce şu yapı olmasaydı gelip buradan arayacaktım. Şimdi buradan aramak demek bellekten aramaktan bir şey farkı yok.
+
+537
+01:49:25,496 --> 01:49:30,676
+Çünkü burada işletim sistemi oturuyor. İşletim sisteminin içerisinde page table diye bir şey var. Gidip oradan sorabiliyoruz.
+
+538
+01:49:31,060 --> 01:49:48,120
+Dolayısıyla yine bellekten sorgulamak gerekiyor. 100 birim sorgulama için. 100 birim de tekrar aradığımızı bulmak için ve oradaki veriyi getirmek için oldu 200. Ama bu sorgulamayı bir mertebesine falan indirgediğimizde çok çok daha hızlı bir erişim sağlayabiliyoruz.
+
+539
+01:49:49,203 --> 01:50:06,564
+Evet, bu sayfalama tekniğinin en çok şeyi bu. Şimdi gelelim bir de burada protection ile alakalı sayfalamada neler yapılabilir? Tamam, hız açısından veya işte contiguous durumundan contiguous'a çevirdik, yönetebildik. Burada güzel bir çözüm ürettik.
+
+540
+01:50:06,564 --> 01:50:13,644
+Şimdi memory protection arkadaşlar, burada ekstra bir protection bit ile ilişkilendirerek,
+
+541
+01:50:14,036 --> 01:50:19,376
+Buraya okuma yazma erişiminin mümkün olmayacağını gösteren bir şey söylenebilir.
+
+542
+01:50:20,395 --> 01:50:29,355
+Ayrıca burada bunu sadece page verinde execution'un yapılabilir veya diğerlerini yapılabilir. Bunlar ayrıca söylenebilir.
+
+543
+01:50:29,355 --> 01:50:37,555
+Burada söylenen kullanılan bit aslında valid biti. Burada valid olursa yani 0 ve 1 şeklinde modellenecek.
+
+544
+01:50:37,939 --> 01:50:45,939
+Bu ilgili page prosese legal bir erişim yapılabilir veya unlegal bir erişim yapılabilir söyleyeceğiz.
+
+545
+01:50:46,460 --> 01:50:53,679
+Ve bu page table length register üzerinde belki bir şeyle de yapılabilir ama very demanded biti burada kullanılıyor.
+
+546
+01:50:58,511 --> 01:51:08,431
+Ne derler? Geçersiz kılan, ihlal eden bir erişim ve bir durum ne oluyor? Bir trap ile karşılaşıyor ve oraya erişim sağlanamaz şeklinde bir uyarı veriliyor.
+
+547
+01:51:08,971 --> 01:51:19,831
+Örneğin ben page 0'ı ikinci frame'e, page 1'i üçüncü frame'e, page 2'yi dörde, 3'ü işte 7'ye, 4'ü, 8'e, 5'i, 9'a.
+
+548
+01:51:20,916 --> 01:51:46,216
+Şimdi böyle 6, 7, 8, 9 diye acaba gider mi şeklinde? Şurası bakın page numaraları, şurası da diğerleri. Şimdi bunu bu şekilde devam ettirip gitsek 6. page diye bir şey yok. O zaman 6. page'e dair bir koruma sağlamak gerekiyor. Çünkü şurada bu frame numarası olabilir. İşte bunları inverted bit yaparak, 0 veya 1 yaparak ne yapmış oluyoruz? Güvenliği de sağlamış olabiliyoruz.
+
+549
+01:51:47,604 --> 01:52:09,963
+Şimdi bir diğer şey, güzel taraf, bu paging mekanizmasında shared page'ler. Burada şöyle örnek verelim. Siz 5 tane Word dosyası açtınız, ödev yapıyorsunuz. Şimdi Word dosyasında ne var? Arka planda çalışan bir sürü thread'ler var, prosesler var. Yani arkada çalışan rutinler var. İşte kimisi yazım denetimi yapıyor, kimisi bir şey yapıyor.
+
+550
+01:52:10,452 --> 01:52:18,332
+Sizin kodunuz, siz işte birinde yazı yazıyorsunuz, öbürinde ne bileyim bir şey okuyorsunuz, işte birinde başka bir şey yapıyorsunuz, 5 tane ödeviniz var diye.
+
+551
+01:52:18,992 --> 01:52:25,152
+Şimdi her birisi için sıfırdan word prosesinin altındaki rutinleri tekrardan belleğe yüklemeye gerek yok.
+
+552
+01:52:26,011 --> 01:52:32,171
+Yani sen yazıyı bolt yap dediğinde, seçtiğin yazıyı bolt yap dediğinde o bolt yapan bir rutin arkada çalışacak kod.
+
+553
+01:52:32,791 --> 01:52:35,652
+O kod parçacını tekrar tekrar belleğe yüklemeye gerek yok.
+
+554
+01:52:36,115 --> 01:52:45,296
+Eğer sizin kodunuz reentrant ise, yani kodun prosesler arasında share edilebilmesi mümkünse, ne yapıyorsunuz?
+
+555
+01:52:45,356 --> 01:52:49,756
+Bazı rutinleri shared code olarak bir defa ya mahsus belliye yüklüyorsunuz.
+
+556
+01:52:49,856 --> 01:52:52,235
+Diğer prosesler oradaki shared code'u kullanıyor.
+
+557
+01:52:52,235 --> 01:53:00,235
+Burada tek sıkıntı, yazdığınız kodlar bizim de sizi çok böyle uyardığımız bir global değişken kullanmamayız.
+
+558
+01:53:01,971 --> 01:53:06,891
+Statik değişken kullanmamanız, modulariteye dikkat etmeniz gerekiyor.
+
+559
+01:53:07,532 --> 01:53:11,132
+Modüler olmayan bir kod yazdınız. Shared olmaz. Reentrant olmaz.
+
+560
+01:53:11,828 --> 01:53:34,088
+Ondan sonra global değişken kullanılır. Örneğin ben şuradaki bir yazıyı şey bolt yaptığımda öbür dosyada da aynı yerin bolt olmaması lazım. Eğer siz onu bir hani buradaki teksti global değişken olarak atadıysanız hem oradaki hem oradaki şey olur. Çünkü burada ne var? Shared, paste bir yapı var. Her birisi ayrı bir proses olarak doğrudan çalışmıyor. Ortak bir yapıdan bahsediyoruz.
+
+561
+01:53:39,828 --> 01:53:57,808
+Editör 1, Editör 2, Editör 3 rutinlerini kullanıyor. P2 prosesimiz de Editör 1, Editör 2, Editör 3. P3 prosesi de bunu kullanıyor. Buradaki datalar farklı. Birinde işte ödev var, öbüründe ne bileyim kitap var, öbüründe başka bir şey var ve bunlara pageler atalım. Şimdi page table, pardon arkadaşlar bir saniye.
+
+562
+01:54:22,899 --> 01:54:25,379
+Evet. Arkadaşlar kusura bakmayın.
+
+563
+01:54:26,899 --> 01:54:27,839
+Görümleri aradılar.
+
+564
+01:54:28,919 --> 01:54:38,079
+Şimdi, her bir prosesin ortak alanları, bakın işte page tablolarına baktığımızda 3, 4, 6, 3, 4, 6 farklı olan veriler nerede?
+
+565
+01:54:38,079 --> 01:54:40,859
+İşte şunun datası birde tutulacakmış.
+
+566
+01:54:41,231 --> 01:55:05,731
+Bunun datası 7'de tutulacakmış, bunun datası 2'de tutulacakmış. Ve bu sayede biz proses başına bu durumdan bakacak olursak 6 tane sayfanın ve buradaki 6 tane frame'in gereksiz yere belleği işgal etmesinin önüne geçebiliyoruz. Shared pages sayesinde. Ama ne olacak? Şu shared olan alanlar, şunlar reentrant olacak. Örneğin bir proses bloklandığı tekrar oraya geldiğinde mesela ben...
+
+567
+01:55:06,612 --> 01:55:19,612
+P2 prosesini işlemciye götürdüm. Çalıştı, geldi. Sonra P1 prosesi geldi. Şimdi P2'nin kalanını devam ettirmemesi gerekiyor. Editör 1, Editör 2, Editör 3 modelleri. Yeniden P1 için...
+
+568
+01:55:20,243 --> 01:55:37,423
+Sıfırdan bir şey açması gerekiyor. Dolayısıyla yerel değişkenleri vesairesi olacak ama global değişkenler olursa, statik değişkenler olursa ne olur? P2'nin verisi P1'e gider, P1'in verisi P3'e gider. Her şey karma üçünün olur. Onun için kodun dikkatli bir şekilde yazılmış olması gerekiyor.
+
+569
+01:55:38,163 --> 01:55:47,104
+Şimdi, page tablolarının structure'larından bahsederken farklı yaklaşımlar burada, page table üzerinde sorgulama yapacağız sonuçta.
+
+570
+01:55:47,764 --> 01:55:49,543
+Burada da bunu bahsedelim.
+
+571
+01:55:51,024 --> 01:55:55,644
+Genellikle modern bilgisayarlarda 32 bitlik logical adresler kullanıyor arkadaşlar.
+
+572
+01:55:55,644 --> 01:55:59,644
+Yani 2 üzeri 32 tane adres hesabı yapabiliyorsunuz.
+
+573
+01:55:59,904 --> 01:56:04,043
+Burada da page size'ları 2-4 kilobyte olacak kadar.
+
+574
+01:56:04,467 --> 01:56:29,587
+Yani bu kadar şeye bölünebiliyor. Dolayısıyla bunu buna böldüğünüzde 2 üzeri 20 eder. 2 üzeri 20 de nedir? 1 megabyte ediyor değil mi? 2 üzeri 11 kilobyte, 2 üzeri 1 megabyte eder. 1 megabyte kadar, yani 2 üzeri 20 tane page tutabiliyorsunuz. Eğer her bir entry'niz 4 byte'dan büyükse,
+
+575
+01:56:30,228 --> 01:56:35,228
+4 MB'lik fiziksel address space'imize her bir...
+
+576
+01:56:35,667 --> 01:57:03,307
+PageTable için ihtiyaç var. Bu bilgi neye sebep oluyor arkadaşlar? PageTable'ın uzaması demek, arama maliyetinin güçleşmesi demek. Tamam güzel de PageTable'da birazcık uzarsa arama işlemleri sıkıntılı olacak. Ve PageTable'ın kontücüyüs olmasının da bir problemi ortaya çıkıyor. Bunun için yaklaşık bu problemleri çözmek için farklı yaklaşımlar önerilmiş. Birincisi hierarşik paging.
+
+577
+01:57:03,667 --> 01:57:15,607
+Öbürü hashed page table, öbürü de inverted page table. Bakın hepsinde bir page'e karşılık, bir frame yani pi page'ine karşılık, fc frame'e tutulacak.
+
+578
+01:57:15,867 --> 01:57:23,907
+Ama yaklaşım biraz farklılaşacak. Şimdi hiyerarşiye baktığımızda biz biraz önce adres sorgulamamızı nasıl yaptık?
+
+579
+01:57:23,987 --> 01:57:31,027
+İşte şunu ikiye böldük, şuradan bir page bilgisi aldık, bu page bilgisinden gittik, frame'i öğrendik, frame'le de beraber şunu birleştirdik, şey yapmıştık.
+
+580
+01:57:31,347 --> 01:57:53,228
+Acaba diyor ki şunu iki parçaya mı bölsek? Şu birinci page tablosuna baksa, bu öbür page tablosuna baksa dolayısıyla hem kontücüyüs olma olasılığını, durumunu ortadan kaldırıyoruz. İki farklı tablomuz olabilir. Hem de bir tablo daha küçük öbürün işte ona göre değişik. Belki yarısından bulabilme ihtimalimiz olacak.
+
+581
+01:57:54,068 --> 01:57:55,307
+Yaklaşım şu şekilde.
+
+582
+01:57:55,859 --> 01:58:23,619
+Şimdi dıştaki bir page table'ımız var. Bir de içteki page table'ımız var. Örneğin şu dıştaki page table'ı göstersin. Şu da içteki page table'ların değerlerini göstersin. Önce dıştakine bakarım diyor. İşte 1 ile 500 arası şuradakilerden elde edilecekmiş. Yani ben bakıyorum. Önce mesela 888. adres page table'larda mesela 512 olsun. O zaman burada değil, burada olacak. Buradaysa o zaman onu burada arayacağım. Yani şuralara şuralara bakmaya gerek olmayacak.
+
+583
+01:58:23,859 --> 01:58:33,139
+Buradan bulduğum şey de, işte 929 ise şuradan olacak, 900 ise buradan olacak, hangi yerden bulursam, işte birinci page, ikinci page, bunlar alt page'de.
+
+584
+01:58:34,399 --> 01:58:38,299
+Doğrudan hesaplama yapabileceğim. Biraz daha hiyerarşik bir şey. Tabi bu iki seviyeli.
+
+585
+01:58:38,739 --> 01:58:52,640
+Aslında bu iki seviyeli olduğu durumda, şurada da bahsettiğim şekilde, sizin 32 bitiniz varsa, offset değerinizi 10'a kadar söylerseniz, 12 bitini birine, 10 bitini diğerine, dıştaki, içteki şekilde bölümlersiniz.
+
+586
+01:58:52,640 --> 01:58:56,720
+Ve bu forward mapping page dediğimiz şeklinde söylüyor.
+
+587
+01:58:57,395 --> 01:59:24,975
+Burada p1 index of outer page, p2 index of inner page, bir de bunun displacement var. Yani displacement'ı sonuç olarak nereye ekleyeceğiz? p2'ye ekleyeceğiz. Ama önce p1'den p2'ye geçiyoruz, p2'den bulduğumuzun üzerine displacement'ı ekliyoruz. Aynen şu şekilde, şu daha güzel anlatıyor. Ben ürettiğim bir logic adresin ilk işte bilmem kaç byte'ından, şey bitinden, 12 bitinden gittim.
+
+588
+01:59:25,395 --> 01:59:45,275
+Hangi outer page'de olduğunu buldum. Daha sonra gittim buradan inner page'ini buldum. O inner page'den de gittim. Displacement'ı buradan bu frame numara serdim. Ona da displacement değerini ekledim. Ne oldu? Doğrudan erişimi sağlamış olduk. Bu bir yaklaşım. Bunu 64 bit lojik adres üzerinde uygularsak.
+
+589
+01:59:45,844 --> 02:00:00,000
+Tabi biraz da şey farklılaşacak. İşte page size 4 kilobyte olduğunu kabul edelim. O zaman 2 üzeri 52 tane entity var. Çünkü 2 üzeri 64 bölü 2 üzeri 12 ne oluyor? 2 üzeri 50.
+
+590
+02:00:00,000 --> 02:00:23,320
+252 tane entity. Şimdi bunu yönetebilmek çok çok daha zor. 252 tane uzunluklu page'i yönetmek yerine işte diyor ki outer page'de 242, 250 42 tane şey olsun, inner page'de de 2 üzeri 10 tane olsun. Aynen şurada olduğu gibi iki tane şey olacak ve buna yönelik bir arama daha mümkün hale gelecek. Veya bunu biraz daha tree level yapalım dersek.
+
+591
+02:00:23,728 --> 02:00:50,928
+P1, P2, P3 ve displacement var. Önce dıştakinden, en dışındakinden bakacağız. Daha sonra biraz daha içe, daha sonra biraz daha içe. Kademeli, kademeli ne yapacağız? Yani birisi üçüncü sınıflar, birisi ikinci sınıflar, birisi birinci sınıflar. Biz nasıl öğrenci numaralarınızı verirken, işte yıl bilgisini veriyorsak burada da bu bilgilerin her bir bitim başlangıç değerlerinin anlamı olacak. Mantığı anlaşıldı mı? Buraya kadar da sorumuz var mı?
+
+592
+02:00:54,036 --> 02:01:05,216
+Saat 50 geçiyor. Şunu bitirelim arkadaşlar ya. Zaten işletim sistemleri örneklerine gelecek sıra. Bitirelim. En azından 8. çeptere de son dersimizde zaman kalır.
+
+593
+02:01:05,216 --> 02:01:17,216
+Şimdi bu arama işlemini hashed page tablerıyla yapmanın da bir şeyi var. Genellikle address space'i 32 bitten fazla. 32 bitten fazla olunca...
+
+594
+02:01:17,555 --> 02:01:27,555
+2 üzeri 32 tane bütün durumlara bakmak biraz zor. Burada kriptografik olarak güvenli bir...
+
+595
+02:01:27,988 --> 02:01:43,708
+Hash fonksiyonu kullanırsa, yani olabildiğince çakışma az olursa veya çakışma olursa da çakışmayı çözecek mekanizmalar kullanırsa, işte Chain Element dediğimiz tutulursa arama miktarı biraz daha azaltılıyor.
+
+596
+02:01:43,828 --> 02:01:52,188
+Çünkü 2 üzeri 32 taneye bakmak var. Bir de ne bileyim Node 500'e göre arama yapsak bunun çok çok daha azaltma imkanımız var.
+
+597
+02:01:52,884 --> 02:02:16,843
+Tabii bu 64 bit adreslerde clustered page table olarak ifade ediliyor. Mantığı şu şekilde. Şimdi ben bir p değeri üreteceğim işlemlerden. Bu p değeri önce bir hash fonksiyonundan geçiriyorum. Bakın hash table'ım var. Ve bu hash table'ın üzerinden yine biraz önceki gibi frame numarasını bulacağım.
+
+598
+02:02:17,268 --> 02:02:28,008
+Q'ya, S, P, Y, R. Bakın şunlar hep frame numaraları. Ama önce tablodan tek tek arama yapmak yerine burada doğrudan hash fonksiyonu yardımıyla buluyorum.
+
+599
+02:02:28,568 --> 02:02:34,307
+Şimdi hashing'te collision olursa iki tane yaklaşım vardı. Bunlar neydi? Veri yapılarından hatırlarsınız.
+
+600
+02:02:37,368 --> 02:02:39,368
+Biri neydi? Open'la başlıyordu.
+
+601
+02:02:45,332 --> 02:03:05,352
+Open, Open Addressing. Peki nasıl çalışıyor [öğrenci]? Öbürü de Separate Chaining. Open Addressing'de ne vardı? İşte şuradaki bir şey mesela buraya yerleştiyse, o eğer varsa bir kollijin varsa bir sonrakine bakıyoruz.
+
+602
+02:03:05,811 --> 02:03:10,492
+Orada yoksa bir sonrakine veya işte iki sonraki, dört sonraki gibi farklı yaklaşımlar kullanıyorum.
+
+603
+02:03:10,992 --> 02:03:14,811
+Separate chaining de, yanlış hatırlamıyorsam işte closed bilmem ne bunun bir adı daha vardı.
+
+604
+02:03:15,391 --> 02:03:18,271
+İşte burada bir collision varsa burada bir linkli liste tutuyorsunuz.
+
+605
+02:03:19,072 --> 02:03:24,212
+Örneğin mesela burada mod aldığımızda modu mesela mod 18 diyelim.
+
+606
+02:03:24,372 --> 02:03:26,532
+Mod 18'e göre sonu 7 ile bitenler.
+
+607
+02:03:27,351 --> 02:03:31,431
+7 ile bitenler işte mod 18'den kalan 7 olanlar.
+
+608
+02:03:31,988 --> 02:03:53,548
+İşte şurada birincisi, burada ikincisi. Burada böyle bir arama gerçekleşiyor. Dolayısıyla şu hash fonksiyonu biraz hızlandırmış oluyor. İşte Q'nun, buradan bir değer elde ettik. Bu Q'ya S olabilir ve P'ye R olabilir. Artık ben bu P'yi aradığım için bu değil, buna bakacağım. Dolayısıyla burada yine bir O, N'e giden bir arama var.
+
+609
+02:03:54,336 --> 02:04:05,155
+Tamamına bakmaktan çok çok daha iyi. Enin çok büyük değerlerine bakmaktansa enin çok daha küçük değerlerine bakıyoruz ve buradan elde ettiğimiz reyi displacement değerlini eşleştirip fiziksel adresi buluyoruz.
+
+610
+02:04:06,055 --> 02:04:17,435
+Şimdi bir diğer şey, bu da güzel bir yaklaşım, diyor ki page table ile, şimdi şu ana kadar nasıl yapıyoruz? Page table, frame number eşleştiriyoruz.
+
+611
+02:04:21,779 --> 02:04:34,639
+Frame Number'ları bir kere unique. Yani çünkü fiziksel bellek adreslerinin parçalarını gösteriyor. O zaman bunu tersten yapalım. Frame Number ile Page Table Number'larını eşleştirelim.
+
+612
+02:04:34,639 --> 02:04:40,899
+İşte 8. Frame'de prosesin 3. page'i olacak. Ama bu yeterli bir şey değil.
+
+613
+02:04:41,300 --> 02:04:44,779
+Bir de buna PID, prosesin ID bilgisini ekleyeceğiz.
+
+614
+02:04:45,340 --> 02:04:49,199
+İşte şu prosesin üçüncü page'i sekizinci tablodadır.
+
+615
+02:04:49,380 --> 02:04:52,520
+Bu daha hızlı arama imkanı bize sağlayacak.
+
+616
+02:04:53,079 --> 02:04:54,028
+Biraz daha...
+
+617
+02:04:54,036 --> 02:04:58,515
+Bunu TLB ile birlikte kullanarak belki daha hızlandırmak imkanı olacak.
+
+618
+02:04:59,136 --> 02:05:03,716
+Ve neyi azaltıyormuş? Bakın decreases memory needed to store each page table.
+
+619
+02:05:03,855 --> 02:05:08,876
+Her bir page table'unu store etmek için gerekli belleği azaltacak.
+
+620
+02:05:09,015 --> 02:05:10,296
+Fakat neyi arttırıyor bu da?
+
+621
+02:05:10,720 --> 02:05:20,699
+We need to search the table when a page reference equals. Yani page referansın olduğu durumda arama maliyetini arttıracak bir şey var.
+
+622
+02:05:20,699 --> 02:05:34,779
+Tabi bunun çözümü için de hash table'ları ve TLB'leri kullanmak gerekli. Tabi burada shared memory olduğu durumda implementasyonun nasıl olacağını dair ekstra problemler ortaya çıkmış. Güzel bir yaklaşım ama.
+
+623
+02:05:35,152 --> 02:05:57,652
+Başka şeyleri var. Ben CPU'dan bir adres ürettiğimde, P adresi üretiyorum. Ama bu P adresi üzerine, page table üzerinde PID'ye göre bir frame numarasını buluyoruz. Ve buradan elde ettiğimiz bu i değerini Displace Boot'la değiştirip doğrudan, Displace Boot'la eşleştirip doğrudan o adrese ulaşabiliyoruz.
+
+624
+02:05:58,100 --> 02:06:17,619
+Şimdi bundan sonra Oracle'ın Folaris'inde nasıl bir yaklaşım kullanılmış? Yani işletim sistemin örneklerine geçiyor. Mesela 64 bit işletim sisteminde neler var? Buraya kadar bahsettiğim işte hangi yaklaşımlar kullanılmış? Intel mimarisinin 32 ve 64 mimarisinde neler vardır?
+
+625
+02:06:18,064 --> 02:06:39,324
+Yani endüstri çiftlerinin en yaygın olanı olduğu için burada Pentium CPU'larından bahsediyor. İşte current mevcut işlemcilerden bahsediyor. Mesela Intel 32 Architecture'da segmentation ve segmentation ve pagingin bir arada kullanıldığını görüyoruz.
+
+626
+02:06:39,680 --> 02:06:59,300
+Her segment 4 GB'a kadar olabiliyormuş. 16 K'ya kadar segmentler var bir proses taşına ve iki parçaya ayrılıyormuş. Birinci parçası 8 K'lık segmentler, proseslere özel. İkinci parçası 8 K'ya kadar prosesler arasında paylaşılabilen şeyler.
+
+627
+02:06:59,300 --> 02:07:03,300
+Local Distributor Table, Global Distributor Table diye.
+
+628
+02:07:03,859 --> 02:07:13,380
+Sonra CPU'nun ürettiği lojik adreslerin nasıl olacağını buradan hani inceleyebilirsiniz. Ne oluyor işte? 13, 8 daha, pardon 13.
+
+629
+02:07:14,100 --> 02:07:42,100
+15-16 bitlik bir sistemde nasıl bir şey yapılacak, şu dönüşümler yapılacak memory management üniversite. Bunu görüyoruz. Segmentasyonun nasıl olduğu, işte bir selector var, bu selector'dan bir descriptor bulup bunları toplayıp offsetle çalışacak. Bakın çok çok benzer bir yapı. Paging architecture'nın nasıl olduğunu, hangi pagelerde nasıl erişim sağlayacak. İşte 4 kilobaytelik pageler var, 4 megabaytelik pageler var. Buna göre bir sorgulama yapılıyor.
+
+630
+02:07:42,100 --> 02:07:46,460
+Yani bir yeraşik yaklaşımdan söz edebiliriz bunlar da.
+
+631
+02:07:47,140 --> 02:07:55,560
+Intel mimarisi bittikten sonra mesela Intel CX-86, 64 mimarisi artık günümüzün klasik kullanılan mimarisinden sonra.
+
+632
+02:07:56,199 --> 02:07:58,159
+Bir de ARM architecture'ına bakıyor.
+
+633
+02:07:58,300 --> 02:08:02,079
+Mesela bu mobil uygulamalarda çok kullanılan bir çiftir ARM.
+
+634
+02:08:03,252 --> 02:08:28,132
+32 bitlik şey var. Bu risk mimarisiyle aslında şey, Intel daha çok Sysk mimarisi üzerinde. Pageler bakın 4 kilobyte 16 kilobyte'miş. Section diye ifade edilmiş. 1 megabyte ile 16 megabyte section olarak ifade edilen pageler varmış. One level paging sectionlar için, two level pageler de smaller, daha küçük pageler için ifade ediliyor.
+
+635
+02:08:28,671 --> 02:08:35,891
+Two levels of TLB'ler varmış. TLB'yi burada da görüyoruz. Detayları kitabımızda da var arkadaşlar. Hani okuyabilirsiniz.
+
+636
+02:08:37,572 --> 02:08:43,692
+İyi, tamam. Saat 5.3'den önce konuyu bitirmiş olduk. Sorunuz var mı?
+
+637
+02:08:47,475 --> 02:09:13,515
+Sorunuz yoksa ben devam edeceğim. Çok kısa bir şeye giriş yapacağım. Ondan sonra vize hakkında konuşacağız. Şimdi bu paging mekanizması arkadaşlar, dikkat ederseniz bir prosesin bütün page'leri hala bellekte. Bu da yetmemiş günümüzde. Tamam, güzel bazı şeyler uygulanmış.
+
+638
+02:09:14,036 --> 02:09:35,376
+Pageler işte parçalanmış. Non-continuous değil, contiguous değil. Ondan sonra external fragmentation yok. Internal fragmentation azalmış. Ondan sonra page'in aranıp bulunması için farklı TLB'ler, cache'ler falan kullanılmış. İşte hiyerarşik olarak yaklaşımlar sunulmuş. Güzel. Ama hala bir prosesin bütün pageleri nerede?
+
+639
+02:09:35,956 --> 02:09:42,596
+MainMemory'de veya n tane prosesin bütün şeyleri, page'leri MainMemory'de.
+
+640
+02:09:42,596 --> 02:09:48,796
+Şimdi Virtual Memory zamanımız kalır mı bilmiyorum da işte buna bakacağız son haftalarda.
+
+641
+02:09:49,655 --> 02:09:52,316
+Ya 14. haftada gelecek hafta ders yapmamayı düşünüyorum bunun için.
+
+642
+02:09:53,076 --> 02:10:01,036
+Virtual Memory diyor ki ben ana belleğin dışında bilgisayarın diskini, art diskini
+
+643
+02:10:01,492 --> 02:10:24,232
+Bir kısmı ana bellekmiş gibi kullanayım. Yani benim burada bir hard diskim var. Onun belli bir kısmını ana bellekmiş gibi kullanacağım. Ve ana bellekten swiping, swap out yapıyoruz ya, yapmak gerekiyor ya, ona benzer bir mantıkla çok kullanılmayan pageleri burada tutayım. Yine process'in belli bir kısmı mail memuride, belli bir kısmı da burada tutuyoruz.
+
+644
+02:10:24,724 --> 02:10:42,283
+İhtiyaç duyulduğunda, page'leri buradan oraya alayım. Dolayısıyla, işte 5 tane proses varsa, belki 8 tane prosesi bellekte o anda tutabileceğim ama her prosesin her page'i şeyde olmayacak. İşte bu virtual memory yaklaşımı. Sanal bellek.
+
+645
+02:10:42,640 --> 02:10:56,400
+Hatta bu Windows'da arttırılabiliyor belli bir yere kadar. Harddiskin belli bir bölgesini bu iş için kullanıyor. Neden belli bir bölge? Çünkü Harddis dediğimiz şey okuması, yazması, arayıp bulması biraz daha zor bir şey. Onun için belli bir bölge burada tutuluyor.
+
+646
+02:10:56,400 --> 02:11:07,760
+Şimdi burada yapılacak olan şey, memory üzerinden bulunan mapping işleminde bazı sayfaları fiziksel belleğe, disklere kaydetmek.
+
+647
+02:11:08,148 --> 02:11:14,948
+Şurada address space'i yeri gelince anlatacağım ve burada bahsedilen bu yaklaşımın adı da demand page'i. Bunu unutmayın.
+
+648
+02:11:15,887 --> 02:11:24,588
+Demand page'i bir swapper yardımıyla bir prosesin bazı sayfalarını gerektiğinde swap edip veya tamamını da olabilir.
+
+649
+02:11:25,788 --> 02:11:29,748
+Gerektiğinde de başka bir prosesin sayfalarını main memoriye getirmek için kuruluyor.
+
+650
+02:11:29,748 --> 02:11:33,648
+Şimdi burada bazı algoritmalar seçeceğiz. Bu algoritmaların çıkış noktası şu.
+
+651
+02:11:34,355 --> 02:11:38,916
+Ve deadlock olduğunda çözüm yöntemlerinin son sayfalarında bir şey anlatmıştık.
+
+652
+02:11:39,576 --> 02:11:46,556
+İşte prosesler istedikleri kaynaklara erişemedikleri için farklı sebeplerden, dört tane sebepten, dördünün de aynı anda olduğundan ne oluyordu?
+
+653
+02:11:46,636 --> 02:11:51,076
+Deadlock olabiliyordu. Bu deadlock'ı çözmenin yollarından bir tanesi işte birini kurban seçiyordunuz.
+
+654
+02:11:51,076 --> 02:11:54,256
+Ama hep aynı kişi kurban olabiliyordu, aynı proses kurban olabiliyordu.
+
+655
+02:11:54,756 --> 02:11:59,996
+Burada da bir kurban seçme mantığıyla, ileride var o victim diye geçecek slide'larda.
+
+656
+02:12:00,659 --> 02:12:08,600
+Bazı proseslerin veya bazı sayfaların gidip artiste saklanması ve bazılarını işte buraya getirilmesi.
+
+657
+02:12:08,840 --> 02:12:15,539
+O kurban seçilecek şey de, şurada bahsedilen birkaç algoritma var.
+
+658
+02:12:17,760 --> 02:12:18,460
+Oraya bir gireyim.
+
+659
+02:12:20,460 --> 02:12:22,920
+Bu iki konu birbirini tamamlayan şeyler.
+
+660
+02:12:23,539 --> 02:12:46,179
+Diyor ki bir page number'larım var. Tabii bunlara frame olarak söylenmiş. First to first out mantığıyla buna bakacağız. Bu birincisi. Ondan sonra optimal algorithm dediğimiz bir başka, least recently used dediğimiz bir başka algoritm var. Bu gelen frame ile aslında page'lerin şurada frame'lerle eşleştireceğiz.
+
+661
+02:12:46,644 --> 02:13:12,644
+İşte 3 tane yerim varsa hardtiste 7 geldi tamam, 0 geldi tamam, 1 geldi tamam, şimdi 2. Şimdi 2 gelecek ama en uzun zamandır kimi kullanmıyorum? 1'i kullanmışım, 0'ı kullanmışım. 7'de işi bitmiş çıkmış. Pardon, 7'yi en uzun zamandır kullanmıyorum, 2'yi onun yerine getiriyorum. Sonra 0 gelecek, 0 zaten var, 3 gelecek, 3 yok. En uzun zamandır kimi kullanmıyorum? 1'i kullanmıyorum. Mesela bunu...
+
+662
+02:13:13,043 --> 02:13:22,803
+Birilerini dışarıya atıp birilerini içeriye almayla alakalı bir yaklaşım sergiliyor. Bunu birazcık inceleriz. Bu konuyu da okuyun.
+
+663
+02:13:25,171 --> 02:13:33,171
+Belki şeyde olmasa bile, ikinci sınavda olmasa bile, inanç sınavında virtual memory'den de sizin sorununuzu tutabiliriz.
+
+664
+02:13:33,271 --> 02:13:43,191
+Onun için buradaki detaylarda, bakın ben 14. hafta, yani okulda olamasam bile uzaktan ders saatimizde bu konuyu anlatmak istiyorum.
+
+665
+02:13:43,891 --> 02:13:49,411
+Chapter 10'umuz var, Chapter 10'da File Organization ile alakalı, File Organization ile bizim ayrı bir dersimiz olduğu için.
+
+666
+02:13:49,792 --> 02:13:56,992
+Bu konuya zaten girmiyoruz. Zaten 2 artı 0 ama 2 artı 2'lik bir derste yetişmez bu kadar çapura girmek.
+
+667
+02:13:57,572 --> 02:14:02,152
+Onun için en son belki 9. çapları da anlatıp dönemi kapatacağız.
+
+668
+02:14:02,252 --> 02:14:03,332
+Şimdi gelelim sınav hakkında.
+
+669
+02:14:04,552 --> 02:14:07,771
+Saat biz önce sınavı 1'e koyalım diye düşündük arkadaşlar.
+
+670
+02:14:07,932 --> 02:14:11,592
+Bölümde yeterince sınıf yokmuş. Dolayısıyla o sıkıntıyı yaşadık.
+
+671
+02:14:11,956 --> 02:14:27,856
+12-1 arasına koyalım dedik. 12-1 arasında da başka bir sınav olmuş. Bir de öğrenci arkadaşlarımın yetişme vesaire başka bir ders olduğu durumlarını düşünerek mecburen ve bölümünde direktifiyle saat 16'da sınav yapacağız.
+
+672
+02:14:28,836 --> 02:14:36,836
+Chapter 8'in sonuna kadar diğer grup geldi mi bilmiyorum ama onlar da bugün Chapter 8'i inceleyeceklerdi. Onlar nereye kadar geldiyse.
+
+673
+02:14:37,279 --> 02:14:59,559
+Belki yarısına geldiler, belki birden önce bitirdiler. Bu anlattığım bugünkü memory management sonusu dahil geriye kadarki bütün sorulardan artı Red Hat tarafından ve Enes hocaların size anlattığı, uygulamada anlattığı, işte process management, semaphore falan onunla alakalı slide'larda sınavda sorumlu olacaksınız.
+
+674
+02:14:59,559 --> 02:15:02,039
+Bugün Cihan hocayla konuştuk ayak üstü.
+
+675
+02:15:03,123 --> 02:15:09,144
+Bu sınavda sorulacak olan sorunların belli bir kısmı retet ve uygulamadan gelecek.
+
+676
+02:15:09,743 --> 02:15:14,824
+Belli bir kısmı buradaki teorik konulardan gelecek ve biz 35-40'a yakın soru planlıyoruz.
+
+677
+02:15:15,003 --> 02:15:20,423
+Soruların şekli, çoklu cevap, çoklu şey falan onlar birinci sınavdaki aynısıdır.
+
+678
+02:15:21,304 --> 02:15:22,104
+Orada bir değişiklik yok.
+
+679
+02:15:22,864 --> 02:15:29,104
+Süreyi de soruların çözülme zorluğu ve sayısına göre ayarlarız diye konuştuk.
+
+680
+02:15:29,619 --> 02:15:35,179
+Zannediyorum işte bir 50-55 dakikalık bir sınav olur eğer 40 soru olursa.
+
+681
+02:15:35,859 --> 02:15:38,679
+Tabii 40 soru olması sizin açtığınızdan faydanıza bence.
+
+682
+02:15:39,299 --> 02:15:44,099
+Kolay soruların oranı artar. En ufak bir kolay şeyi bile sorma imkanımız oluyor.
+
+683
+02:15:44,799 --> 02:15:48,619
+Biz şunu çok yapmıyoruz. Kelime trikleriyle sizi yanıltıcı...
+
+684
+02:15:49,136 --> 02:15:57,656
+Sizi zorlayıcı sorular sormayız. Yani burada iz var, ar var onları falan kafanıza takmayın. Doğrudan oradaki seçeneklerin doğruluğuna ve yanlışlığına bakın.
+
+685
+02:15:58,336 --> 02:16:07,756
+Ve uyduruk kelimelerle çok fazla sizin kafanızı bulandırmak istemiyoruz. Olmayan bir kavramı oraya sokup, ya acaba böyle bir kavram var mıydı, bu doğru muydu, yanlış muydu değil.
+
+686
+02:16:08,576 --> 02:16:12,676
+Kavramların doğruluğu, kavramlar arasındaki ilişkilerin doğruluğuna dikkat etmemiz.
+
+687
+02:16:13,087 --> 02:16:40,007
+Dersleri az çok dinle değilseniz, kitabı da okuyorsanız veya slide'lardan bir şekilde kendiniz çıkarım yaparak konuya çalışıyorsanız çok zor olmuyor. Bir sınav, birinci vizenin ortalaması, diğer gruba göre yaklaşık bir arkadaşımız demişti, 8-9 puan yüksekmişiz. Herhalde siz de çalışıyorsunuz, bir şeyler öğreniyorsunuz. Bu benim anlatmamla olan bir şey de değildir. Sizin de gayretiniz var. İnşallah bu gayretin neticesini.
+
+688
+02:16:40,500 --> 02:16:44,600
+İkinci sınavda da alırsınız diye tahmin ediyoruz. Sizin sorunuz var mı?
+
+689
+02:16:52,051 --> 02:16:54,051
+[öğrenci], yeterl açık olmayı yaptım mı?
+
+690
+02:17:02,067 --> 02:17:19,227
+Evet. Peki, sorunuz yoksa arkadaşlar haftaya görüşmek üzere. Ben dersin olup olmayacağı hakkında size ayrıca bilgi vereceğim ama normal sınavımız saat 16'dadır. Bilginiz olsun. Hepinize şimdiden başarılar dilerim. İyi akşamlar.
+
+691
+02:17:19,427 --> 02:17:20,487
+Sağ olun hocam, iyi akşamlar.
+
+692
+02:17:20,727 --> 02:17:21,307
+İyi akşamlar.
+
+693
+02:17:21,307 --> 02:17:23,527
+İyi akşamlar hocam.
+
+694
+02:17:34,739 --> 02:17:39,739
+Merhaba.
+
+695
+02:17:51,188 --> 02:17:51,648
+Evet.
+
+696
+02:17:59,796 --> 02:18:05,195
+Şimdi bitirme projesinden kastımız birinci şey lisans projesinin yüksek lisansını.
+
+697
+02:18:07,436 --> 02:18:09,416
+Siz lisans öğrencisiniz.
+
+698
+02:18:10,115 --> 02:18:20,155
+Şimdi şöyle, finallerin ilk haftasının ilk günü, pazartesi günü, biz online olarak sizden rapor, ondan sonra bir video dinki.
+
+699
+02:18:20,155 --> 02:18:23,736
+Ara proje ise ayrıca bir de şey istiyoruz.
+
+700
+02:18:24,275 --> 02:18:27,615
+Makale, bunun teslim edilmesi gerekmiyor.
+
+701
+02:18:29,675 --> 02:18:35,275
+İşte finallerin ilk haftası. Ben akademik takvimin tam şey şu an önümde de yok.
