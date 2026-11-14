@@ -1,0 +1,1083 @@
+1
+00:02:56,372 --> 00:02:59,532
+Günaydın arkadaşlar hepinize. Birazdan başlayacağız.
+
+2
+00:06:38,963 --> 00:06:41,324
+Günaydın arkadaşlar hepinize. Sesim geliyor mu acaba?
+
+3
+00:06:44,884 --> 00:06:45,824
+Evet hocam.
+
+4
+00:06:46,484 --> 00:06:50,244
+Sesim giriyorsa, chat kısmından bire basabilirsiniz, kolaylıkla.
+
+5
+00:06:51,024 --> 00:06:54,783
+Masa üstünden katılanlar varsa, onlar için kolaylıkla olabilir.
+
+6
+00:06:55,704 --> 00:06:57,324
+Sesle de tabii cevap verebilirsiniz.
+
+7
+00:06:59,484 --> 00:07:00,244
+Teşekkürler.
+
+8
+00:07:00,924 --> 00:07:03,364
+Bu dönem Matik 2 dersini beraber işleyeceğiz arkadaşlar.
+
+9
+00:07:05,044 --> 00:07:11,024
+Öncelikle, dersin nasıl işleneceğinden bahsedeyim.
+
+10
+00:07:11,956 --> 00:07:26,936
+Uzaktan eğitim kararı verildi bu dönem için. Dolayısıyla uzaktan eğitimle devam edecek. Yine geçen dönemlerdeki gibi, geçen dönem mat 1 aldınız. Ondaki gibi yine devam edeceğiz.
+
+11
+00:07:31,636 --> 00:07:49,415
+Öncelikle, dersle ilgili bilgi alışverişi için ve sorularınız olursa, hem benim hem de, hem benden hem de arkadaşlarınızdan bilgi alabilmek için, iletişimde kalabilmek için, bir WhatsApp grubu kurabilirsiniz. O grubun linkini bana da atarsanız sevinirim.
+
+12
+00:07:51,415 --> 00:07:57,616
+Ben de vakit buldukça, sorularınıza cevap veririm. Ya da sınavlarla ilgili durumlar olabilir.
+
+13
+00:08:00,276 --> 00:08:09,975
+Bunun için bir WhatsApp grubu kurarsanız sevinirim. Daha çok hangi bölüm var, hangi bölüm neredenseniz yazabilir misiniz chat kısmına?
+
+14
+00:08:19,764 --> 00:08:25,884
+Elektrik, harita, biyomühendislik, kimya, ağırlıklı olarak biyomühendislik herhalde.
+
+15
+00:08:33,203 --> 00:08:33,703
+güzel.
+
+16
+00:08:41,139 --> 00:08:48,079
+Matiki dersinde öncelikle dizi ve serilerden başlayacağız.
+
+17
+00:08:49,319 --> 00:08:51,700
+Diziler ve serilerle başlayacağız.
+
+18
+00:08:52,319 --> 00:08:58,799
+Ancak daha sonra devamında aslında çok değişkenli fonksiyonları işleyeceğiz.
+
+19
+00:08:58,879 --> 00:09:01,299
+Çok değişkenli fonksiyonlarla devam edeceğiz.
+
+20
+00:09:01,460 --> 00:09:08,480
+Çok değişkenli fonksiyonlara giriş içinde vektörlerden ve kutupsal koordinatlardan bahsedeceğiz.
+
+21
+00:09:10,707 --> 00:09:24,908
+Daha sonra zaten çok değişkenli fonksiyonların integrasyonlarını yapacağız. Normalde tek değişkenli fonksiyonlarda integral almıştık burada. Birden fazla değişkene sahip olan çok değişkenli fonksiyonlar için integrasyonu yapacağız.
+
+22
+00:09:29,812 --> 00:09:50,951
+Bu ders için yardımcı olabilecek kitaplar Thomas'ın Kalkülüsü var, ikinci cildi. Thomas'ın Kalkülüsü'ndeki ilgili konulara bakılabilir. Bunun Türkçe çevirisi de var. Türkçe çevirisini de eğer bulabilirsiniz, satın alabilirsiniz, ondan yararlanabilirsiniz. Bir de Salih Çelik ve Sultan Çelik Matematik Analiz 2 var.
+
+23
+00:09:51,572 --> 00:10:00,251
+Bununla da ilgili konulara bakabilirsiniz. Bu kitaplardan yararlanabilirsiniz. Ama derslerde zaten ders notlarını ben sizinle paylaşacağım.
+
+24
+00:10:02,611 --> 00:10:07,467
+İlk hafta bir WhatsApp grubu...
+
+25
+00:10:12,724 --> 00:10:15,104
+Kurdunuz mu arkadaşlar? Yoksa ben mi kurayım?
+
+26
+00:14:36,692 --> 00:14:50,511
+İlk hafta öncelikle dizilerle başlayacağız. Dizilerde önemli olan bizim için, dizi bildiğimiz gibi belli kurala göre oluşturulmuş sayılar dizilerine dizi diyoruz.
+
+27
+00:14:50,511 --> 00:15:03,312
+Belli kurala göre oluşturulmuş bir fonksiyon aslında dizi. Dizide bizi ilgilendiren, dizinin bir sayıya yakın sayıp yakın samadığı, bu sayı,
+
+28
+00:15:05,908 --> 00:15:15,388
+Eğer bir sayıya dizinin terimleri sonsuza kadar arttıkça yaklaşıyorsa, buna yakınsak olduğu nokta diyoruz.
+
+29
+00:15:15,388 --> 00:15:32,048
+Ya da dizinin terimleri, terim numaralarını arttırdıkça sonsuza kadar, eğer dizinin terimleri de sonsuza kadar büyüyorsa, yani bir sayıya yakınlaşmıyorsa, yakınsamıyorsa, bu durumda da ıraksak diyoruz.
+
+30
+00:15:33,076 --> 00:15:43,735
+Bununla ilgili belli teoremler var. Sandviç sıkıştırma teoremi, fonksiyon teoremi ve sıkça rastlanan limitler var. Bunları işleyeceğiz.
+
+31
+00:15:44,735 --> 00:15:47,115
+Ve daha sonra monoton dizilerden bahsedeceğiz.
+
+32
+00:15:48,516 --> 00:15:56,836
+Dizilerden sonra da aslında dizileri kullanacağımız yer olan serileri işleyeceğiz.
+
+33
+00:15:58,016 --> 00:15:59,615
+Serilerde neden önemli diziler?
+
+34
+00:16:00,000 --> 00:16:11,120
+Sonsuz bir seri, aslında sonsuz tane toplamından oluşan bir toplam sembolü şeklinde ifade edilmiş.
+
+35
+00:16:12,200 --> 00:16:24,000
+Bir dizinin bütün terimlerin toplamından oluşan bir yapı, toplam sembolüyle gösteriyoruz seriyi. Sonsuz tane terim var. Bu sonsuz tane terimi topluyoruz.
+
+36
+00:16:24,980 --> 00:16:33,000
+İşte bu sonsuz tane terimden oluşan serinin toplamını hesaplayabilmek için kısmi toplamlar dizisi oluşturacağız.
+
+37
+00:16:33,900 --> 00:16:50,980
+Yani serinin belli sayıda terimini, önce bir tane terimini, sonra ilk iki terimini, sonra ilk üç terimini, sonra ilk dört terimini, sonra ilk beş terimini, sonra n tane terimini, daha sonra da n artı bir tane terimini toplayarak bu şekilde bir...
+
+38
+00:16:51,440 --> 00:17:11,580
+dizi oluşturacağız. Bu ziyede, kısmi toplamlar dizisi diyeceğiz. Eğer bu kısmi toplamlar dizisi yakınsaksa, incelediğimiz seri de yakınsaktır diyeceğiz. Eğer bu kısmi toplamlar dizisi ıraksaksa, incelediğimiz seri de ıraksaktır diyeceğiz.
+
+39
+00:17:15,955 --> 00:17:18,235
+Bununla ilgili özellikleri vereceğiz.
+
+40
+00:17:20,195 --> 00:17:24,555
+Ve seri tiplerine gireceğiz. P serisi, harmonik serisi.
+
+41
+00:17:25,555 --> 00:17:33,435
+Daha sonra da serilerin yakınsaklığını, ıraksaklığını test edebilmek için
+
+42
+00:17:33,435 --> 00:17:40,555
+P serisi, harmonik seri ve integral testi gibi testlerle
+
+43
+00:17:42,016 --> 00:18:08,216
+Bilinen serilerin özelliklerini kullanarak, yani bir seri yakınsaktır ya da ıraksaktır, bunu kolaylıkla tespit edebildiğimiz seri tipleri var. Bunları kullanarak karşılaştırma testini işleyeceğiz. Seriler için testleri işleyeceğiz. Seriler için testler nedir? Bildiğimiz yakınsak olduğunu bildiğimiz, ıraksak olduğunu bildiğimiz serileri, özelliklerini bilmediğimiz
+
+44
+00:18:08,980 --> 00:18:19,120
+serilerle kıyaslayacağız. Yani bir seri yakınsaksa, onunla kıyaslayabildiğiniz başka bir seri de yakınsak olacak. Terim terime küçük ya da terim terime büyük olup olmamasına bakacağız.
+
+45
+00:18:19,680 --> 00:18:35,120
+Aynı zamanda limit karşılaştırma testi, oran testi ve kök testi gibi testlerle de serilerin yapısını inceleyeceğiz. Daha sonra seriler için bir özel durum olan alternat serilere bakacağız. Bu serilerde
+
+46
+00:18:35,380 --> 00:18:48,360
+Bir terim negatif, bir terim pozitif şekilde tanımlanmış seriler. Bunları inceleyeceğiz. Daha sonra da fonksiyonların serilerine bakacağız. Bunlar da kuvvet serileri. Yani x'i içeren serilerden bahsedeceğiz.
+
+47
+00:18:49,420 --> 00:19:01,500
+Bu kuvvet serilerinde de terim terime integrasyon, Taylor ve Maclaurin serileri, en ince mertebelen Taylor polinomuna bakacağız. Daha sonra da Taylor serisinin uygulaması.
+
+48
+00:19:02,740 --> 00:19:07,259
+ve belirsiz durumdaki limitleri hesaplamaya bakacağız.
+
+49
+00:19:08,680 --> 00:19:13,700
+Bundan sonra artık çok değişkenli fonksiyonlara yavaş yavaş girişe yapıyoruz.
+
+50
+00:19:13,700 --> 00:19:26,099
+Çok değişkenli fonksiyonlara girmeden önce çok değişkenli fonksiyonlarda kullanabileceğimiz ya da genel olarak birden fazla değişkene veya farklı boyutlara
+
+51
+00:19:26,496 --> 00:19:36,996
+Geçiş yapabileceğimiz bazı özel durumları incelemeye başlayacağız. Bunlardan ilki parametrik eğriler, parametrik doğrular.
+
+52
+00:19:37,696 --> 00:19:44,936
+Parametrizasyonu göreceğiz. Parametrizasyon nedir? Yani mesela biz x-y düzleminde çalışıyorduk.
+
+53
+00:19:46,115 --> 00:19:51,356
+x-y düzleminde, yani iki boyutlu düzlemde, üçüncü bir boyut eklersek.
+
+54
+00:19:51,827 --> 00:20:06,147
+X'e, X'te, Y'ye, Y'te dersek, X ve Y'te bağlı değişkenler olursa, yani bir zaman değişkeni eklersek, bir parametrizasyon yaparsak ne olur? Bunların hesaplamaları nasıl yapılır? Buna bakacağız. Daha sonra da kutupsal koordinatlara geçeceğiz.
+
+55
+00:20:06,147 --> 00:20:18,407
+Kutupsal koordinatlarda, X'ye düzlemini bir açıya ve uzunluğa bağlı olan bir düzleme taşıyacağız. Yani nasıl?
+
+56
+00:20:19,380 --> 00:20:24,800
+Biz normalde, x, y düzleminde çalışıyorduk.
+
+57
+00:20:25,760 --> 00:20:27,440
+İki boyutlu uzayda çalışıyorduk.
+
+58
+00:20:27,980 --> 00:20:42,500
+Kutupsal koordinatlarda, biz x, y düzlemini, bir, r uzunluğuna bağlı, ve bir, teta açısına bağlı, boyuta taşıyacağız.
+
+59
+00:20:46,912 --> 00:20:50,692
+Herhangi bir noktayı uzayda x'ye olarak gösteriyor.
+
+60
+00:20:54,612 --> 00:21:07,912
+Mesela şurada bir nokta aldık. Bunun bir x değişkeni var, bir de y değişkeni var. Ya da bir x ekseninde karşılığı var, bir y ekseninde karşılığı var.
+
+61
+00:21:08,912 --> 00:21:21,211
+Kutupsal koordinatlarda ne yapacağız? Kutupsal koordinatlarda x ve y yerine düzlemde bir nokta aldık. Bu noktanın bir r uzunluğu var, yarı çapı.
+
+62
+00:21:22,740 --> 00:21:35,059
+Bir R yarı çapı var, bir de teta açısı var. X ekseninden yaptığı ya da düzlemden doğrudan yaptığı, herhangi bir doğrudan yaptığı, X eksen olarak alacağız bunu.
+
+63
+00:21:37,579 --> 00:21:48,820
+Buradaki bir noktayı R teta ile göstereceğiz. Buradaki R, bunun uzunluğu, yarı çapı bu noktaya kadar merkezden,
+
+64
+00:21:49,172 --> 00:21:55,412
+O noktasından, O noktasından buraya kadar olan kısma, X 80'indeki karşılığı diyorduk.
+
+65
+00:21:56,251 --> 00:22:02,572
+O noktasından, merkezden, Y'de karşı geldiği noktaya da Y diyorduk.
+
+66
+00:22:02,971 --> 00:22:05,172
+X'e Y koordinatlarıyla gösteriyorduk bir noktayı.
+
+67
+00:22:06,132 --> 00:22:15,172
+Buradaysa, orijinden, bu noktaya kadar olan uzunluğu, R yarı çapı, orijinle, bu R uzunluğu,
+
+68
+00:22:16,339 --> 00:22:20,679
+oluşturan, Doğru'nun yaptığı açıyı da teta açısıyla göstereceğiz.
+
+69
+00:22:21,919 --> 00:22:34,719
+Buna göre işlemler yapacağız. Sinüs, teta, kosünüs, teta'ya göre ve kutupsal koordinatlarda, kutupsal ve kartezyen koordinatlar arasında ilişkiyi kullanarak bazı grafik çizimlerini yapacağız.
+
+70
+00:22:35,239 --> 00:22:42,059
+Alanları ve uzunlukları hesaplayacağız. Düzlemde alanı hesaplayacağız ve kutupsal eğrinin uzunluğunu hesaplayacağız.
+
+71
+00:22:43,124 --> 00:22:57,184
+Daha sonra vektörlere geçeceğiz. Vektörler nedir? Zaten vektörleri ortaokul, lisede tekrar tekrar gördünüz.
+
+72
+00:23:01,395 --> 00:23:04,715
+yönü ve doğrultusu olan uzunluktu.
+
+73
+00:23:05,675 --> 00:23:15,415
+3 boyutlu uzayda vektörler, uzayda doğru, bir doğrunun parametrik denklemi, uzaydaki bir düzlem için denklem,
+
+74
+00:23:16,596 --> 00:23:20,375
+ve daha sonra da vektör değerli fonksiyonlara geçeceğiz.
+
+75
+00:23:20,375 --> 00:23:24,375
+Yani bir RT fonksiyonunu,
+
+76
+00:23:25,299 --> 00:23:46,920
+x, t, i artı, y, t, j, artı, z, t, k şeklinde ifade edip, bir vektör değerli fonksiyonun nasıl incelenmesi gerektiğine bakacağız. Uzayda eğriler ve t'lerine, limit ve sürekliliğini inceleyeceğiz. Fonksiyonun hız vektörü, ivme vektörü, türev kuralları ve bir uzay eğrisi boyunca yayınlığına bakacağız.
+
+77
+00:23:46,920 --> 00:23:48,907
+Daha sonra...
+
+78
+00:23:50,675 --> 00:23:58,675
+vektörlere bu şekilde bahsettikten sonra artık çok değişkenli fonksiyonlara geçeceğiz.
+
+79
+00:23:59,475 --> 00:24:03,675
+Burası aslında çok değişkenli fonksiyonlara kadar olan kısım.
+
+80
+00:24:04,596 --> 00:24:06,275
+Dersin ilk kısmı sayılır.
+
+81
+00:24:06,275 --> 00:24:11,975
+Burada ağırlıklı olarak seriler var.
+
+82
+00:24:12,375 --> 00:24:16,115
+Diziler, seriler, kuvvet serileri.
+
+83
+00:24:16,511 --> 00:24:28,511
+Kutupsal koordinatlar ve vektörler var. Daha sonra vektör değerli fonksiyonlar var. Bundan sonra artık çok değişkenli fonksiyonlara geçeceğiz.
+
+84
+00:24:28,511 --> 00:24:43,851
+Çok değişkenli fonksiyonlar, kısmi türevler, kapalı türev, iki değişkenli fonksiyon lineerleştirip buraya kadar devam edecek. Bundan sonrası da aslında yine çok değişkenli fonksiyonun
+
+85
+00:24:44,276 --> 00:24:53,936
+integrasyonuyla alakalı, yani iki katlı integraller, ve hacim hesabıyla ilgili.
+
+86
+00:24:54,456 --> 00:24:57,816
+Yani bundan sonrası artık çok değişkenli fonksiyonlarla ilgili olacak.
+
+87
+00:24:57,816 --> 00:25:02,715
+Yani matiki dersinde aslında daha çok, çok değişkenli fonksiyonlar işlenecek.
+
+88
+00:25:03,056 --> 00:25:07,816
+Ağırlıklı olarak, iyi olarak bilmemiz gereken konu, çok değişkenli fonksiyonlar.
+
+89
+00:25:10,132 --> 00:25:25,612
+Bu çok değişkenli fonksiyonlara kadar olan kısımdan sonsuz diziler, seriler, kutupsal koordinatlar, vektörler ve biraz da çok değişkenli fonksiyonlara giriş yaptıktan sonra bir zeyniz olacak.
+
+90
+00:25:27,512 --> 00:25:34,992
+Çok değişkenli fonksiyonların öncelikle tanım kümelerine ve değer kümelerine bakacağız. Nasıl inceleniyor? Normal fonksiyonlarda nasıldı?
+
+91
+00:25:36,051 --> 00:25:49,591
+İki değişkenli fonksiyonlarda nasıl? İki değişkenli fonksiyonların grafikleri ve seviye eğrileri nelerdir? Üç değişkenli fonksiyonlar ve bunların çizdikleri eğriler yapılara bahsedeceğiz.
+
+92
+00:25:49,591 --> 00:25:59,591
+Yani iki boyutlu uzayda bir fonksiyon ya bir doğru çizer ya bir eğri çizer. Ancak üç boyutlu uzayda...
+
+93
+00:26:01,460 --> 00:26:11,200
+x, y ve z eksenleri dersek, bir küre çizebilir mesela. Çok iki değişkenli bir fonksiyon.
+
+94
+00:26:15,284 --> 00:26:23,423
+Ya da bir elipsoid çizebilir. O da yine 3 boyutlu bir cisim. Şu şekilde.
+
+95
+00:26:26,963 --> 00:26:42,844
+Tabi bu sonsuza uzanan bir z ekseni. Bu da x, re, y eksenleri. Bu şekilde şekiller çizilir. Bunlara bakacağız. Bir düzlem oluşturabilir. Yani bir doğru yerine 3 boyutlu uzayda bir düzlem oluşturabilir.
+
+96
+00:26:43,603 --> 00:26:49,203
+Küre, elipsoid, eliptik paraboluid, silindir, koni bunlar nedir? Bu şekilleri nasıl oluşturursalar bunlara bakacağız.
+
+97
+00:26:52,243 --> 00:26:55,203
+Ve ikiden fazla değişkenli fonksiyonlarla bakacağız.
+
+98
+00:26:57,223 --> 00:27:02,983
+Daha sonra da çok değişkenli fonksiyonun türevi nasıl alınır buna bakacağız.
+
+99
+00:27:03,824 --> 00:27:05,824
+Çok değişkenli fonksiyonun türevi nasıl alınır?
+
+100
+00:27:06,703 --> 00:27:13,603
+Çok değişkenli fonksiyonların türevi için kısmi türev diye bir türev tanımlayacağız.
+
+101
+00:27:14,804 --> 00:27:19,764
+Normalde türevi dy bölü dx de tanımlamıştık.
+
+102
+00:27:24,627 --> 00:27:33,487
+Buradaki türevi de dz bölü z eşittir artık fx'ye fonksiyonuna bağlı bir fonksiyonundan bahsedeceğiz.
+
+103
+00:27:35,907 --> 00:27:47,487
+Buradaki türevi böyle bir işaretle dz bölü dx ve dz bölü.
+
+104
+00:27:48,627 --> 00:27:56,407
+dy ile ifade edeceğiz ve bunların tanımlarını yapacağız. Bu türevler nasıl tanımlanır? Kısmi türev nedir? Bunlardan bahsedeceğiz.
+
+105
+00:27:57,567 --> 00:28:06,707
+Daha sonra ikinci mertebeden kısmi türev nedir? Karışık türev teoremi. Daha yüksek mertebeden kısmi türevler nasıl alınır? Bunlardan bahsedeceğiz.
+
+106
+00:28:07,187 --> 00:28:12,527
+Diferansiyelleni bilmeden bahsedeceğiz. Bir zincir kuralından bahsedeceğiz.
+
+107
+00:28:14,291 --> 00:28:21,351
+Sonra kapalı türeve yeniden bakış. Kapalı türevin çok değişkenli fonksiyonlar için nasıl incelendiğini bakacağız.
+
+108
+00:28:22,371 --> 00:28:27,311
+Ve 3 değişkenli fonksiyonlar, t düzlemler bunlara bakacağız.
+
+109
+00:28:28,451 --> 00:28:33,731
+Daha sonra 2 değişkenli bir fonksiyonu nasıl lineerleştiririz, nasıl diferansiyerini alırız.
+
+110
+00:28:34,096 --> 00:28:58,896
+Ve çok değişkenli fonksiyonlar için ekstremum değerler nasıl hesaplanır? Yani maksimum ve minimum nasıl hesaplanır? Kritik noktalar nedir? Yerel ekstremumlar için ikinci türev testine bakacağız. Sonra da bir ikinci bize gözüküyor. Ondan sonra katlı integrallere geçeceğiz. Yani iki katlı integraller nasıl hesaplanır? Çok değişkenli fonksiyon integrali nasıl hesaplanır?
+
+111
+00:29:01,907 --> 00:29:05,887
+İki katlı integral, şöyle iki tane integral olacak.
+
+112
+00:29:07,367 --> 00:29:09,587
+dx, dy olacak mesela.
+
+113
+00:29:10,927 --> 00:29:15,187
+Burada da bir, x'e ve y'ye bağlı bir fonksiyon olacak.
+
+114
+00:29:16,067 --> 00:29:18,567
+Bunun hesaplamasını yapacağız, nasıl yapıldığına bakacağız.
+
+115
+00:29:18,567 --> 00:29:22,827
+Daha sonra da integrasyonun sınırlarına bakacağız arkadaşlar.
+
+116
+00:29:25,548 --> 00:29:27,087
+Genel olarak bu şekilde.
+
+117
+00:29:29,844 --> 00:29:32,504
+Bir de
+
+118
+00:29:37,236 --> 00:29:53,156
+Geçen dönem biliyorsunuz, Matiki dersinde, Mart, şu anda hangi aydayız? Mart'tayız, evet. Geçen dönem aslında Şubat'ta falan açıktı okul. Mart civarıda zaten pandemi patlamıştı.
+
+119
+00:30:15,635 --> 00:30:23,996
+Pandemi patlayınca okullar kapandı. O dönemde sistem biraz yavaştı. Bazı sorunlar vardı sistemde.
+
+120
+00:30:26,336 --> 00:30:30,836
+Ben de YouTube kanalı açtım.
+
+121
+00:30:33,576 --> 00:30:42,096
+Bu YouTube kanalında aslında o zaman serilere falan gelmemiştik. Daha sonra tabii serilerle ilgili yine
+
+122
+00:30:42,996 --> 00:30:55,056
+Bunlar tabi mat bir ama serilerle ilgili yine bir kısım da ekledim. Serilere giriş, seriler nedir, diziler nedir, dizilerin tanımı ile ilgili bir kısım da ekledim.
+
+123
+00:31:19,508 --> 00:31:36,868
+İnternetiniz düşükse ya da internet bağlantısında sorun yaşanan bir yerde oturuyorsanız da şurada kaliteyi düşürebilirsiniz. Yani 144p yapabilirsiniz. Bu şekilde biraz daha düşük kalitede olur. Ama telefondan falan izlerseniz yine yeterli netliğe ulaşırsınız diye düşünüyorum.
+
+124
+00:31:42,708 --> 00:31:47,127
+Diziler konusunu buradan dinlemenizi tavsiye ediyorum.
+
+125
+00:31:50,675 --> 00:32:00,491
+Yani dizi nedir temel olarak. Buradan bir dinleyin. Bu YouTube kanalından yararlanabilirsiniz. Bir de...
+
+126
+00:32:03,763 --> 00:32:15,263
+Bugün dizilerden başlayacağız. Diziler için ders notunuzu vereyim. Dersle ilgili sorunuz var mı?
+
+127
+00:33:51,380 --> 00:34:16,460
+Şimdi dizilerle dersimize başlayalım. Eğer dersin içeriğiyle ilgili, yapısıyla ilgili bir sorunuz yoksa, yavaş yavaş başlayalım. Bugün biraz giriş yapacağız, yarın devam edeceğiz. Benim bir toplantım var, akademik kurul toplantısı var. Bugün burada katılmak zorunda olduğum, rektörün katıldığı bir toplantı.
+
+128
+00:34:17,139 --> 00:34:22,199
+Dolayısıyla bugünkü dersi biraz kısa tutacağız. Yarınki derste devam edeceğiz arkadaşlar.
+
+129
+00:34:23,119 --> 00:34:28,539
+Dizi nedir? Belirli bir kurala göre sıralanmış sayılar topluluğuna dizi diyoruz.
+
+130
+00:34:30,679 --> 00:34:39,539
+Yani bu ne demek? Bir an, bir fonksiyon, belli bir kurala göre numaralandırılmış.
+
+131
+00:34:40,340 --> 00:34:52,800
+İfadelerden oluşuyor. En eşitir birden sonsuza kadar anlerden oluşuyor. Yani a1, a2, a3, nokta nokta, an ve an artı 1, an artı 2. Böyle devam ediyor.
+
+132
+00:34:53,300 --> 00:35:04,880
+Bu ane dizinin genel terimi diyoruz. Bu genel terim, eninci terim de denebilir. Dizinin kuralını belirliyor. Yani mesela an
+
+133
+00:35:06,452 --> 00:35:26,492
+Belli bir kurala göre oluşturulacak. Diyelim ki, 1 bölü n ise eğer, bizim dizimiz, 1, 1 için 1, 2 için, yani a2, 1 bölü 2, 3 için, 1 bölü 3, şeklinde, devam eden bir yapıya sahip olacak.
+
+134
+00:35:33,876 --> 00:35:38,876
+Devam eden bir yapıya sahip olacak arkadaşlar. Buna biz dizi diyeceğiz.
+
+135
+00:35:41,456 --> 00:35:50,735
+Bu dizilerde bizi ilgilendiren nedir? Bu dizi bir sayıya yakınsıyor mu, yakınsamıyor mu yoksa, yakınsak mı, ıraksak mı? Bu bizi ilgilendiriyor.
+
+136
+00:35:55,347 --> 00:36:06,927
+sayısına dizinin indisi diyeceğiz. Yani AN teriminin dizideki kaçıncı eleman olduğunu belirleyecek. Mesela A2, ikinci eleman, A3, üçüncü eleman gibi gibi.
+
+137
+00:36:07,688 --> 00:36:12,547
+Mesela bir dizi olarak AN terimini N kare seçelim.
+
+138
+00:36:12,547 --> 00:36:13,967
+Yani
+
+139
+00:36:14,483 --> 00:36:37,543
+AN genel terimi N'in karesiymiş. N eşittir 1 için 1'in karesi, N eşittir 2 için 2'nin karesi, N eşittir 3 için 3'ün karesi, N eşittir 4 için 4'ün karesi, nokta nokta N kare, N artı 1'in karesi, N artı 2'nin karesi. Bu şekilde sonsuna kadar devam eden bir yapıdan bahsediyoruz arkadaşlar.
+
+140
+00:36:40,788 --> 00:36:50,248
+Dolayısıyla aslında her dizi, z artı dediği burada, pozitif tam sayılar tümesi üzerinde tanımlanmış, real değerli bir fonksiyondur.
+
+141
+00:36:50,768 --> 00:36:53,988
+Aslında her dizi bir fonksiyondur.
+
+142
+00:36:54,748 --> 00:37:00,728
+Belli bir kurala göre dizilmiş, sonsuza kadar giden sayılardan oluşan bir yapıdır aslında.
+
+143
+00:37:01,827 --> 00:37:04,268
+Fn de a n'dir.
+
+144
+00:37:04,268 --> 00:37:06,387
+Ama dediğimiz gibi,
+
+145
+00:37:07,860 --> 00:37:15,159
+Bu şekilde sayılardan oluşturularak dizilmiş bir yapı olduğu için biz bunu dizi olarak tanımlıyoruz.
+
+146
+00:37:16,440 --> 00:37:23,840
+F'n eşittir an dersek de pozitif tam sayılardan real sayılara giden bir fonksiyondur arkadaşlar.
+
+147
+00:37:24,400 --> 00:37:31,820
+Aslında burada en inci terimini tanımlıyoruz dizi dediğimiz zaman. Bu sıralanmış sayılar topluluğunu ifade ediyoruz.
+
+148
+00:37:34,900 --> 00:38:01,140
+Ve bazı dizi örneklerine bakalım. Mesela, buraya kadar anlaşılmayan bir şey var mı? Dizinin tanımı ile ilgili. Dizi nedir? Nasıl oluşturulur? Dizi ne demektir? Yine YouTube kanalına da attım bir saatlik bir anlatım var. Onu da dinleyebilirsiniz arkadaşlar. Dizinin ne olduğu ile ilgili. Ve dizideki temel kavramlarla ilgili.
+
+149
+00:38:01,844 --> 00:38:24,104
+Onu da yine dinlemenizi tavsiye ediyorum. Ama zaten onları da yarın işleyeceğiz. Yine de önden bir dinlerseniz sizin için fayda olur. Zaten bugünkü dersi kısırmak zorundayım. Çünkü toplantım var. Siz de bugünkü ders süresinde onu dinleyebilirsiniz, isterseniz. Bunu tabii yine size bırakıyorum.
+
+150
+00:38:27,104 --> 00:38:28,743
+Dizi örneklerine bakalım.
+
+151
+00:38:29,396 --> 00:38:36,676
+1 bölü n olursa genel terimi, 1, 1 bölü 2, 1 bölü 3 şeklinde gider.
+
+152
+00:38:38,056 --> 00:38:49,115
+Diyelim ki, eksi 1 üzeri n, 1 bölü n şeklinde ise, n eşittir 1 için, eksi 1 üzeri n, eksi 1 üzeri 1, eksi 1 olur.
+
+153
+00:38:50,003 --> 00:39:03,463
+En eşittir 2 için, eksi 1'in karesi artı 1 olur. 1 bölende 1 bölü 2 olur. Artı 1 bölü 2 olur. Eksi 1 bölü 3, artı 1 bölü 4. Bu şekilde bir eksi bir artı olarak bu dizi oluşturulur arkadaşlar.
+
+154
+00:39:05,463 --> 00:39:15,463
+Ya da 1 bölü 1 artı n kare dizisine bakalım. Bu dizide 1 bölü 1 artı 1'in karesi.
+
+155
+00:39:16,211 --> 00:39:33,171
+1 bölü 1 artı 2'nin karesi, burası 1 artı 2'nin karesi, 2'nin karesi de 4, 1 artı 4, 1 bölü 5 oldu. 1 artı 3'ün karesi, 1 artı 9, 1 bölü 10 oldu. 1 bölü 17 bu şekilde devam ediyor arkadaşlar.
+
+156
+00:39:35,572 --> 00:39:43,431
+Eğer dizinin genel terimini A en artı 2 eşittir, A en artı A en artı 1 şeklinde vermişse ve ilk iki terimini de vermek durumunda burada.
+
+157
+00:39:43,532 --> 00:39:48,172
+A 1 eşittir 1, A 2 eşittir 1 şeklinde ilk iki terimi de vermiş.
+
+158
+00:39:48,872 --> 00:39:52,332
+Bu A en dizinin diyor ilk altı terimini yazıyoruz.
+
+159
+00:39:53,152 --> 00:39:59,551
+Bu dizinin kuralı A en artı 2 kendinden önceki terimlerin toplamıymış.
+
+160
+00:40:00,788 --> 00:40:10,587
+Yani A1, 1, A2, 1 ise A3, A1 artı A2 imiş. Yani bu da 1 artı 1'den 2 oluyor.
+
+161
+00:40:11,168 --> 00:40:16,268
+A4, A2 artı A3'miş. Kendinden önceki iki terimin toplamı. Bu da 1 artı 2, 3 oluyor.
+
+162
+00:40:17,528 --> 00:40:26,908
+A5, A3 artı A4, bu da 5 oluyor. A6'da A5 artı A4, şu iki terimi topluyoruz. 5 artı 3, 8 oluyor.
+
+163
+00:40:27,411 --> 00:40:51,951
+Aslında biz buna zaten bilinen bir dizi olan Fibonacci dizisi diyoruz. Fibonacci dizisinde 1 artı 1, 2, 1 artı 2, 3, kendinden önceki iki terim 2 artı 3, 5, bunu veriyor. Bu şekilde sıralanan bir dizi. Buna Fibonacci dizisi deniyor. Özel bir dizi.
+
+164
+00:41:02,068 --> 00:41:20,347
+a n de size, a n eşittir, n çarpı a n eksi 1 şeklinde verilmişse, a n'in ilk 4 terimini yazınız demiş, a 1 eşittir 1, a 2 eşittir nedir? 2 çarpı a 1'dir.
+
+165
+00:41:21,228 --> 00:41:27,588
+a 3 de, 3 çarpı, kendinden önceki terimle çarpıyoruz, 3 çarpı a 2'dir.
+
+166
+00:41:28,403 --> 00:41:51,783
+A4'te 4 çarpı A3'tür. Sırasıyla bunları alalım. A1 1'miş, 2 çarpı A1, 2 çarpı 1, 2 oldu. 3A2, A2 2'ydi, 3 çarpı 2'den 6 oldu. A4'te 4 çarpı A3'den 4 çarpı 6 oldu, 24 oldu. AN'de bu şekilde oluşturulmuş oldu. 1, 2, 6, 24, 120. Bakın bu da faktöriyel dizisi oldu.
+
+167
+00:41:52,244 --> 00:41:56,244
+1! 2! 3! 4! 5! 5!
+
+168
+00:41:56,244 --> 00:42:03,244
+Kendinden önceki terimlerin çarpımı şeklinde oluşan bir dizi oluşturmuş olduk arkadaşlar.
+
+169
+00:42:03,244 --> 00:42:06,244
+Yani faktör yerlerden oluşan bir dizi olmuş oldu.
+
+170
+00:42:06,244 --> 00:42:16,244
+1! 2! 3! 4! n! n! şekline gidecek.
+
+171
+00:42:17,300 --> 00:42:20,640
+4 faktör, yani böyle böyle giden bir dizi oldu.
+
+172
+00:42:28,947 --> 00:42:30,107
+Gördünüz mü arkadaşlar?
+
+173
+00:42:32,787 --> 00:42:34,607
+Dizilerde işlemler nasıl yapılır?
+
+174
+00:42:35,207 --> 00:42:35,947
+Şimdi bunlara bakalım.
+
+175
+00:42:36,107 --> 00:42:37,947
+Aslında dizinin yapısı zaten ne demiştik?
+
+176
+00:42:38,007 --> 00:42:39,188
+Bir fonksiyondur demiştik.
+
+177
+00:42:39,268 --> 00:42:40,827
+Fonksiyondan çok farklı değil.
+
+178
+00:42:44,007 --> 00:42:46,607
+İki tane dizi olsun elimizde.
+
+179
+00:42:47,688 --> 00:42:49,747
+A'n ve B'n dizileri.
+
+180
+00:42:51,427 --> 00:42:53,347
+Bu şekilde iki tane dizi alalım.
+
+181
+00:42:54,036 --> 00:43:13,336
+Alfa, bir sabit sayı olsun. Real sayı olsun mesela alfa. Alfa çarpı am dizisi aslında, dizinin bütün terimlerini alfayla çarptığımız durum demek oluyor. Bütün terimleri alfayla çarpıyoruz. A1'i alfayla çarpıyoruz. Alfa A1.
+
+182
+00:43:14,387 --> 00:43:32,648
+A2'yi alfa ile çarpıyoruz. Alfa çarpı A2. Ve AN terimini de alfa ile çarpıyoruz. Hepsini alfa ile çarpıyoruz. Dolayısıyla aslında dizi alfa çarpı AN dizisi haline gelmiş oldu. Yani dizinin genel terimi alfa çarpı AN olmuş oldu arkadaşlar.
+
+183
+00:43:35,148 --> 00:43:38,028
+AN artı BN dizisi.
+
+184
+00:43:40,563 --> 00:43:44,804
+İzinin bütün terimlerini sırayla numarasına göre topluyoruz, sırasıyla.
+
+185
+00:43:45,344 --> 00:43:46,983
+Birinci numaralı terimleri topluyoruz.
+
+186
+00:43:47,043 --> 00:43:52,443
+A1 artı B1, A2 artı B2, iki numaralı terimler, N numaralı terimler.
+
+187
+00:43:55,423 --> 00:43:56,923
+Ya da çıkartıyoruz.
+
+188
+00:43:57,103 --> 00:43:58,603
+Toplama ve çıkarma işlemi bu şekilde.
+
+189
+00:43:59,603 --> 00:44:00,963
+A, N bölü B, N'de.
+
+190
+00:44:02,003 --> 00:44:04,203
+B, N sıfırdan farklı olmak zorunda.
+
+191
+00:44:04,916 --> 00:44:11,636
+Tabii ki tanımlı olması için A1 bölü B1, A2 bölü B2, A1 bölü BN şeklinde devam ediyor arkadaşlar.
+
+192
+00:44:16,755 --> 00:44:19,515
+Buraya kadar anlaşılmıyor bir kısım var mı arkadaşlar?
+
+193
+00:45:33,619 --> 00:45:35,880
+Şimdi dizilerin bazı özelliklerine bakalım.
+
+194
+00:45:38,679 --> 00:45:40,219
+Sınırlı diziler.
+
+195
+00:45:41,800 --> 00:45:43,300
+Sınırlı dizi ne demek?
+
+196
+00:45:44,079 --> 00:45:58,840
+Eğer an terimlerini bir m sayısıyla üstten küçük eşit yapabiliyorsak, böyle bir m sayısı bulabiliyorsak, an dizinin üstten sınırlı dizi diyeceğiz.
+
+197
+00:45:59,507 --> 00:46:13,867
+AN terimlerinin tamamı, bütün AN terimleri, büyük M sayısından küçük eşit olacak şekilde bir M sayısı varsa arkadaşlar, bu diziye üstten sınırlı dizi diyeceğiz.
+
+198
+00:46:14,807 --> 00:46:18,827
+Bu büyük M sayısı, AN için bir üst sınırdır.
+
+199
+00:46:20,507 --> 00:46:23,567
+Eğer, büyük M AN için bir üst sınır,
+
+200
+00:46:24,211 --> 00:46:30,471
+ve M'den küçük hiçbir sayı A en için üst sınırda ise, M'ye en küçük üst sınır denir.
+
+201
+00:46:31,612 --> 00:46:33,291
+Şu en küçük üst sınır.
+
+202
+00:46:34,992 --> 00:46:35,971
+Benzer şekilde
+
+203
+00:46:43,603 --> 00:46:49,063
+AN dizisinin terimleri, bir küçük M sayısından her zaman büyük eşitse.
+
+204
+00:46:50,463 --> 00:46:55,463
+Yani alttan küçük bir M sayısıyla sınırlandırılabiliyorsa AN terimleri.
+
+205
+00:46:57,043 --> 00:47:02,243
+Bu AN dizisine alttan sınırlı dizi denir ve M'ye de alt sınır denir.
+
+206
+00:47:03,184 --> 00:47:08,443
+M'den büyük hiçbir sayı A için alt sınırı ise de M'ye en büyük alt sınır denir.
+
+207
+00:47:08,644 --> 00:47:09,523
+Yani E bas denir.
+
+208
+00:47:13,588 --> 00:47:22,088
+AN dizisi hem alttan hem üstten sınırlı ise AN sınırlı dizi denir. Değilse de sınırsız dizi denir. Şimdi örneklere bakalım.
+
+209
+00:47:29,427 --> 00:47:39,648
+Mesela, bildiğimiz n dizisi, 1, 2, 3, 4, 5, n, bu şekilde giden dizi, alttan ne ile sınırlıdır arkadaşlar?
+
+210
+00:47:42,007 --> 00:47:44,648
+1 ile sınırlıdır. Bunun bütün terimleri birden büyüktür değil mi?
+
+211
+00:47:46,028 --> 00:47:49,488
+Ve birden küçük, her rea sayı ile sınırlıdır.
+
+212
+00:47:51,327 --> 00:47:54,867
+Yani en büyük alt sınırı, alt sınırlarının en büyüğü birdir.
+
+213
+00:47:55,635 --> 00:47:57,175
+Dizi üstten sınırlı mıdır?
+
+214
+00:47:59,536 --> 00:48:03,395
+Sonsuza giden bir dizi. Dolayısıyla üstten sınırlı olduğunu söyleyemeyiz.
+
+215
+00:48:04,796 --> 00:48:12,876
+Yani üstten sınırsız bir dizidir. Dolayısıyla alttan ve üstten sınırlayamadığımız için buna biz sınırsız dizi diyeceğiz arkadaşlar.
+
+216
+00:48:22,804 --> 00:48:23,903
+Şimdi diğerine bakalım.
+
+217
+00:48:25,844 --> 00:48:33,344
+AN dizisi, 1 bölü 2, 2 bölü 3, 3 bölü 4, n bölü n artı 1 şeklinde bir dizi.
+
+218
+00:48:34,963 --> 00:48:36,583
+Bu dizi sınırlı mıdır? Bakalım.
+
+219
+00:48:41,108 --> 00:48:47,788
+n bölü n artı 1 her zaman birden küçüktür. Dolayısıyla en küçük üst sınırı 1 olacak.
+
+220
+00:48:48,608 --> 00:48:53,148
+Alttan neyle sınırdır bu sayı? Her zaman bakın 1 bölü 2'den büyük değerler alıyor.
+
+221
+00:48:54,608 --> 00:49:03,068
+Dolayısıyla en büyük alt sınır da 1 bölü 2'dir. Yani bütün an'ler 1 bölü 2'den büyük eşittir.
+
+222
+00:49:11,764 --> 00:49:18,264
+ve anler her zaman birden küçük eşittir. Dolayısıyla bu dizi bir sınırlı dizidir arkadaşlar.
+
+223
+00:49:31,284 --> 00:49:33,764
+Sınırlılıkla ilgili anlaşılmayan bir yer var mı arkadaşlar?
+
+224
+00:50:16,148 --> 00:50:25,168
+O birden küçüktür aslında da, eşitliğe gerek yok da diyebiliriz tabii, fark etmez. Şöyle de diyebiliriz arkadaşlar.
+
+225
+00:50:30,708 --> 00:50:32,128
+Hiçbir zaman 1 olmaz bu.
+
+226
+00:50:33,148 --> 00:50:34,408
+Hiçbir zaman 1 olmaz.
+
+227
+00:50:35,248 --> 00:50:37,548
+Ama 1'e oldukça yakın değerler alır.
+
+228
+00:50:37,788 --> 00:50:41,088
+Aslında dolayısıyla üstten 1 ile sınırlıdır diyoruz.
+
+229
+00:50:42,408 --> 00:50:44,108
+Üstten 1 ile sınırlıdır.
+
+230
+00:50:47,248 --> 00:50:51,427
+Aslında üst sınırlarının en küçüğü de dolayısıyla 1'dir.
+
+231
+00:50:53,887 --> 00:50:55,692
+Çünkü 1'den daha...
+
+232
+00:50:57,108 --> 00:51:11,408
+Küçük bir sınır belirleyemiyoruz. Sonsuza kadar gidiyor. En bölü, en artı bir. Eni sonsuza götürdüğümüzde birden büyük de belirleyemiyoruz. Dolayısıyla birle sınırlıdır diyoruz arkadaşlar.
+
+233
+00:51:20,788 --> 00:51:23,288
+Evet, burada anlaşılmayan bir şey var mı arkadaşlar?
+
+234
+00:51:32,755 --> 00:52:00,523
+Monoton dizilere bakalım. Monoton dizilerde eğer an 3 kişidir, an artı 1 şeklinde ise yani an'ler bir sonraki teriminden küçük eşitse yani an artı 1 her zaman an'den ya eşit
+
+235
+00:52:00,563 --> 00:52:01,603
+Ya da büyükse.
+
+236
+00:52:02,883 --> 00:52:04,623
+Buna bir azalmayan dizi diyoruz.
+
+237
+00:52:05,843 --> 00:52:06,343
+Ya burada,
+
+238
+00:52:07,803 --> 00:52:09,983
+a n'den büyük terim a n'i eşittir,
+
+239
+00:52:10,583 --> 00:52:11,343
+ya da büyüktür.
+
+240
+00:52:11,683 --> 00:52:13,983
+Dolayısıyla bir azalma durumu yoktur.
+
+241
+00:52:13,983 --> 00:52:16,263
+Buna biz azalmayan dizi diyeceğiz.
+
+242
+00:52:17,103 --> 00:52:18,603
+Yani dolayısıyla a n artı 1,
+
+243
+00:52:19,403 --> 00:52:21,543
+a n'i bu tarafa attığımızda,
+
+244
+00:52:25,043 --> 00:52:30,923
+AN artı 1 bölü AN büyüktür 1 ise, bu dizi azalmayandır, diyeceğiz arkadaşlar.
+
+245
+00:52:31,864 --> 00:52:43,563
+AN artı 1 küçük eşittir AN ise, yani AN'den sonraki terim, AN'den küçük ya da eşitse, AN dizisi artmayan dizidir arkadaşlar.
+
+246
+00:52:44,204 --> 00:52:50,043
+Artmayan dizidir. Yani AN artı 1 bölü AN, küçüktür 1 ise AN artmayan dizidir.
+
+247
+00:52:50,835 --> 00:52:55,715
+Azalmayan veya artmayan diziye ise, monoton dizi denir arkadaşlar.
+
+248
+00:52:58,835 --> 00:53:01,995
+Peki bir dizi monoton mudur, değil midir, buna nasıl bakacağız?
+
+249
+00:53:03,055 --> 00:53:10,135
+Bunu da, n bölü n artı bir dizisi için mesela bakalım, monoton mudur, değil midir? Bunu inceleyelim.
+
+250
+00:53:10,135 --> 00:53:11,915
+Bunu da şöyle inceleyeceğiz.
+
+251
+00:53:16,672 --> 00:53:29,492
+n artı 1 bölü n artı 2 şeklinde, a n artı 1, n artı 1 bölü n artı 2, a n de n bölü n artı 1 şeklinde. Bu birden büyük mü, küçük mü, ona bakacağız değil mi?
+
+252
+00:53:31,892 --> 00:53:43,711
+a n artı 1 bölü a n'in birden küçük mü, büyük mü olduğuna bakacağız. n kare artı 2, n artı 1 bölü n kare artı 2'n de, şurası bakın, n kare artı 2'n, burası n kare artı 2'n, burası 1 fazla.
+
+253
+00:53:44,275 --> 00:53:53,915
+Dolayısıyla bu ifade 1'den büyüktür. O zaman, an artı 1, an'den büyüktür. Dolayısıyla an azalmayan bir dizidir. Yani monoton bir dizidir.
+
+254
+00:53:54,895 --> 00:54:08,955
+Diyeceğiz arkadaşlar. Peki bu dizi monoton budur. Diziyi vermiş. Bizim genel terimini bulmamızı istiyor. Bu dizinin genel terimi 1 bölü 2 üzeri n-1'dir. Çünkü 1 verin bakın 1 oluyor. 2 verin.
+
+255
+00:54:09,264 --> 00:54:34,444
+1 bölü 2 oluyor. 3 verin, 1 bölü 2'nin karesi oluyor. 1 bölü 2 üzeri 3 eksi 1, 1 bölü 2'nin karesi oluyor. Bu dizi monoton mudur? AN artı 1 bölü AN alacağız. 1 bölü 2 üzeri N, bölü 1 bölü 2 üzeri N eksi 1'den. 1 bölü 2 çıkıyor. Bu da birden küçüktür. Dolayısıyla AN artmayan bir dizidir. Yani dolayısıyla sonuç olarak monoton dizidir diyeceğiz arkadaşlar.
+
+256
+00:54:36,659 --> 00:55:01,500
+Yani böylelikle, monoton diziyi de tanımlamış olduk arkadaşlar. Monotonlukla ilgili anlaşılmayan bir kısım var mı? Aine artı bir bölü Aine alıyoruz ve bakıyoruz. Birden küçük mü, büyük mü? Ona göre bir değerlendirme yapıyoruz. Artmayan ya da azalmayan bir dizi elde edersek, buna monoton dizi diyeceğiz.
+
+257
+00:56:30,579 --> 00:56:32,420
+Anlaşılır, bir an var mı arkadaşlar?
+
+258
+00:56:39,476 --> 00:56:44,815
+Dediğim gibi bugün bir toplantım var, ona katılmam gerekiyor. Ona gideceğim, yarın devam edeceğiz.
+
+259
+00:56:46,775 --> 00:56:53,476
+Bugünkü, şu ana kadar işlediğimiz kısmı tekrar dinleyebilirsiniz ya da...
+
+260
+00:56:57,748 --> 00:57:02,748
+Youtube kanalında dizilerle ilgili anlattığım kısım var. Hazırlık olarak veya şu an zaten...
+
+261
+00:57:28,052 --> 00:57:31,172
+Bu diziler kısmını dinleyin arkadaşlar.
+
+262
+00:57:34,900 --> 00:57:41,020
+Ders ilk defa alıyorsanız, ana vaktiniz, onu çektiğiniz kısımlar olabilir, yakınsaklık, kıramdan iyi öğrenmeniz gerekiyor.
+
+263
+00:57:51,284 --> 00:58:07,963
+Buradaki kısmı dikkatli bir şekilde, yavaş bir şekilde dinleyin arkadaşlar. Yarın dizilerdeki bir dizinin limitinden devam edeceğiz arkadaşlar. Sorunuz yoksa dersi bitiriyorum. Kendinize iyi bakın.
+
+264
+00:58:13,427 --> 00:58:22,648
+Yine sorularınız varsa arkadaşlar, şu ana kadar işlediğimiz kısımla ilgili ya da dersle ilgili, Whatsapp grubundan da yazabilirsiniz.
+
+265
+00:58:23,608 --> 00:58:31,307
+Yine Whatsapp grubundan soru sorabilirsiniz. Sorduğunuz sorulara eğer bilen arkadaşlarınız varsa, hızlı bir şekilde cevap verirse sevinirim.
+
+266
+00:58:31,407 --> 00:58:36,007
+Birbirinize yardımcı olsanız güzel olur. Ben de zaten vakit buldukça cevap yazacağım.
+
+267
+00:58:36,788 --> 00:58:42,027
+Ama siz cevap yazarsınız birbirinize. Hem kendiniz öğrenmiş olursunuz, hem de araştırmış olursunuz.
+
+268
+00:58:43,127 --> 00:58:45,547
+Birbirinize de yardımcı olun arkadaşlar.
+
+269
+00:58:48,268 --> 00:58:49,127
+Bugünlük bu kadar.
+
+270
+00:58:56,596 --> 00:59:01,036
+Bu dersler zaten sistemde kaydediliyor. Onları da dinleyebilirsiniz arkadaşlar.
+
+271
+00:59:07,539 --> 00:59:09,660
+Teşekkürler, hepinize iyi günler arkadaşlar.
