@@ -1,0 +1,1351 @@
+1
+00:08:24,211 --> 00:08:45,711
+Aydın arkadaşlar, bugün de dersi online yapmaya karar verdim. Dün size mesaj gönderdim. Ve dikkatimi şu çekti, şu an derse katılan 19 öğrenci var. Yani sınıfta yapmaya göre sanki katılım biraz daha iyi oluyor online ders yapınca.
+
+2
+00:08:46,419 --> 00:09:04,599
+Güzel. Belki bundan sonra zaten öğrenci sunumları başladığında da yani sizlerin sunumlarını online olarak devam ettiririz ve böylece daha seri bir sunum programı gerçekleştirebiliriz diye düşünüyorum.
+
+3
+00:09:05,620 --> 00:09:32,340
+Ben üniversitedeyim. Üniversiteden ders anlatıyorum online'da ama burada internet zaman zaman düşebiliyor. Umarım çok büyük bir sıkıntı yaşamam. Kablolu internet bağlantısı yaptığım halde bazen kablodan veya başka problemlerden hat gidebiliyor. Bakalım, umarım verimli bir ders olur.
+
+4
+00:09:32,820 --> 00:09:56,780
+Şimdi ben önce size yine bir haftalık program açarak başlayacağım. Bunu göstermemdeki amaç nedir? Biz neredeyiz? Biraz bunu ve bundan sonraki planlarımızı konuşmak için paylaşıyorum.
+
+5
+00:10:00,000 --> 00:10:02,100
+11. haftadayız.
+
+6
+00:10:02,644 --> 00:10:29,644
+Geriye kaldı dört hafta. Ben bu hafta size yine konu akışında küçük bir değişiklik yaptım ve recurrent neural networkleri anlatacağım. Bundan sonra 6 Mayıs'ta bir hafta daha dersimiz olacak. Bu misafir hoca davet edeceğimi söylemiştim. Onunla ilgili zamanlama sorunu yaşadık ve bu hafta yerine önümüzdeki haftaya onu...
+
+7
+00:10:30,644 --> 00:10:50,663
+Davet edeceğim. Bu durumda Object Detection ve Segmentation konuları, burada iki haftada dağıtılmış gibi görünen konuları aslında birleştirerek bir hafta, 6 Mayıs haftasında gerçekleştirmiş olacağız, anlatmış olacağız.
+
+8
+00:10:50,663 --> 00:10:58,644
+Ve ben bu hafta konu olarak size Recurrent Neural Networkleri anlatacağım. Önemli bir konu bu da.
+
+9
+00:10:58,644 --> 00:11:14,064
+Bu programa yerleştirmemiştim ama bundan sonraki akış içerisinde olmasını planladığım bir konu başlığı. Daha sonra ne yapıyoruz? Son 3 hafta proje sunumları başlayacak.
+
+10
+00:11:25,331 --> 00:11:35,991
+Sunumları dinlemeye çalışacağız. Yetişmezse de video çekip paylaşmamızı isteyeceğim.
+
+11
+00:11:37,351 --> 00:11:43,652
+Şimdi akışta bir küçük değişiklik daha yapma durumu oldu.
+
+12
+00:11:43,652 --> 00:11:49,951
+Şöyle, ben size bir midterm, bir yıl içi sınavı yaptım. Bir homework planlıyordum.
+
+13
+00:11:52,563 --> 00:12:04,604
+Eski görüntü işleme konularından olmasın, yeni konularından olsun derken baya bir ilerledik ve şu an projeye odaklandığınızı da biliyorum.
+
+14
+00:12:04,604 --> 00:12:17,884
+O nedenle şöyle bir değişiklik yapacağım. Proje ve ödev için toplam %30 yani ödev için olan kısmı birleştirerek sadece projeye %30 diyeceğim.
+
+15
+00:12:20,563 --> 00:12:47,683
+Projenin %30'luk etkisi içerisinde mutlaka uygulama yapma mecburiyeti var. Yani o proje içerisindeki veri seti veya ona benzer bir veri setiyle projede anlatılan yöntem ve buna ilave sizin, ben de bunun dışında şunu ekledim, bunu çalıştırdım, şu sonuçları aldım diye.
+
+16
+00:12:48,244 --> 00:13:09,923
+Bir proje sunumu yapmanızı bekliyorum. O nedenle bu ağırlığı tamamını projeye vermiş olacağız ve %30 olacak projenin yıl sonu değerlendirmedeki oranı yani bir midterm exam kadar bir ağırlığı olmuş olacak.
+
+17
+00:13:16,244 --> 00:13:31,504
+Ödev verebilirdim fakat projeye olan odak çalışmanızı bölmek istemedim. O nedenle ayrı bir ödev yerine proje içerisindeki uygulamaya ağırlık vermenizi rica ediyorum.
+
+18
+00:13:31,504 --> 00:13:41,403
+Ve bu doğrultuda da bunun yıl sonu notuna etkisini arttırdığımı da belirtmek istiyorum.
+
+19
+00:13:42,227 --> 00:13:57,048
+Önden size böyle bir küçük duyuru yapmış olayım. Görüş, öneri ve yorumlarınızı sohbet bölümünden yazabilirsiniz. Orayı takip edeceğim.
+
+20
+00:14:01,008 --> 00:14:04,048
+Bu haftaki konu başlığımız olan...
+
+21
+00:14:04,596 --> 00:14:19,792
+Recurrent Neural Network'lerden devam edelim. Ben az önce belirttiğim gibi, önceki senelerde bu konuyu anlatmıyordum. Bu sene ekledim ve çok ilginç bir konu ve dersimizle de...
+
+22
+00:14:19,792 --> 00:14:39,792
+Vision bağlantılı olduğu için ekleme ihtiyacı duydum. Çok uzun bir ders olmayacak. Burada Recurrent Neural Network'lerin anlatıldığı yine size hep bahsettiğim Stanford Üniversitesi'nin CS231N kodlu dersi.
+
+23
+00:14:44,980 --> 00:14:57,000
+Deep Learning, Computer Vision with Deep Learning diye bir ders. Bunun içerisinde yedinci hafta anlatılan bir konu başlığı.
+
+24
+00:15:01,812 --> 00:15:13,652
+Şimdi bir slide akışı içerisinde ufak atlamalar yapacağım. Ders akışıyla ilgili ek bilgiler verilmiş. Bazı bölümlerde bunları pas geçiyorum.
+
+25
+00:15:13,652 --> 00:15:26,632
+Ve doğrudan bizim konu başlığımız olan Recurrent Neural Network'lere geçiyoruz. Şöyle yapalım.
+
+26
+00:15:39,220 --> 00:15:46,220
+Şimdi bu yapay sinir ağlarında ve derin öğrenme modellerinde...
+
+27
+00:15:47,860 --> 00:16:02,440
+Bu örneğe ki struktürü tarif etmek için ilk olarak en basit haliyle bir input ve bir output olan bir yapı ile başlayalım diyor.
+
+28
+00:16:02,580 --> 00:16:05,900
+Ve buna Vanilla Neural Networks diyor.
+
+29
+00:16:05,900 --> 00:16:11,279
+Bunu şöyle hayal edebiliriz. Bu bir deep learning modeli.
+
+30
+00:16:15,860 --> 00:16:37,000
+Görüntüyü verdim ya da C-Fartan dataset'in içerisinde 10 farklı sınıfa ait görüntüler vardı. Bu görüntülerin her birini bu sisteme input olarak veriyorum. Sistem bana ne söylüyor? Bu vermiş olduğum giriş görüntüsünün hangi sınıfa ait olduğunu söylüyor.
+
+31
+00:16:37,000 --> 00:16:43,400
+İşte bu bir kedi midir, bu bir otomobil midir gibi.
+
+32
+00:16:43,860 --> 00:16:53,680
+Bu yapıya one-to-one structure diyor. Bir input'u var, bir output'u var ve bu yapıya vanilla neural network adı veriliyor.
+
+33
+00:16:55,539 --> 00:17:17,579
+Recurrent Neural Network'lerde ise şöyle bir yapıya doğru gidiyor. Yine bir tane girişiniz var. Bu giriş ile ilgili birden fazla çıktı üretiyor. Buna one to many diyor. One input, many output anlamında.
+
+34
+00:17:23,539 --> 00:17:39,599
+Image Captioning örneği gösterilebilir. Yani bir görüntüyle ilgili bir başlık, bir kelime grubuyla o görüntüyü tarif etme konusunda bir model eğitmiş olabilirim.
+
+35
+00:17:39,599 --> 00:17:46,099
+Bu durumda benim modelimin girdisi bir image olacak.
+
+36
+00:17:46,644 --> 00:17:56,804
+Bu modelin çıktısı ise Sequence of Words. Yani bir kelime dizisi, kelimeler dizisi olmuş olacak.
+
+37
+00:17:56,804 --> 00:18:04,644
+Buna One to Many dediği mimari tanımını yapıyor.
+
+38
+00:18:06,043 --> 00:18:12,703
+Bir diğer örnek Many to One. Birden fazla girdi var.
+
+39
+00:18:13,119 --> 00:18:21,099
+Ve bu birden fazla girdiği, verdiği yapıda tek bir tane çıktı üretiyor.
+
+40
+00:18:22,291 --> 00:18:28,731
+Action Prediction örneğini vermiş. Yani hangi amaçla kullanabiliriz?
+
+41
+00:18:28,731 --> 00:18:40,931
+Biz bir video sequence içerisinde koşan bir adam videosu verdik ya da zıplayan bir adam videosu verdik.
+
+42
+00:18:41,331 --> 00:18:50,071
+Burada videoda gördüğümüz kişinin hangi hareketi yaptığını bulmasını istiyoruz.
+
+43
+00:18:50,291 --> 00:19:07,291
+Bu modelin koşuyor mu, zıplıyor mu, oturuyor mu gibi bu tarz aksiyonların tahmini için kullanılan bir modelde girdimiz birden fazladır.
+
+44
+00:19:08,431 --> 00:19:14,971
+Çünkü video frame'lerini arka arkaya veriyoruz ve bu modelin bir çıktısı var.
+
+45
+00:19:14,971 --> 00:19:18,271
+Hangi aksiyonu gerçekleştirdiğini.
+
+46
+00:19:18,291 --> 00:19:33,551
+Ne bize söylüyor? Koşmak, yürümek, oturmak, zıplamak gibi. Bu yapıya da many to one diyor. Birden fazla girdimiz var, bir tane çıktımız var anlamında.
+
+47
+00:19:35,443 --> 00:19:50,143
+Ve menu to menu dediği yapıda ise lütfen dikkat edin birden fazla girdimiz var. Yine birden fazla çıktımız söz konusu.
+
+48
+00:19:50,143 --> 00:20:00,000
+Buna örnek olarak video captioning demiş bu defa. Yani girdimiz daha önceki...
+
+49
+00:20:00,000 --> 00:20:09,380
+Yapıda One to Many'ydi. Bir tane image veriyoruz. Bunu image captioning ile tarif eden kelimeler dizisini bulduruyorduk.
+
+50
+00:20:09,695 --> 00:20:21,935
+Bu tek bir görüntü üzerinden yapıyordu. En sağda verdiğimiz örnek Many to Many dediğimiz birden fazla girdi, birden fazla çıktı örneğinde.
+
+51
+00:20:21,935 --> 00:20:37,695
+Arka arkaya gelen video frame'leri var. Bu video frame'leriyle ilgili üretmiş olduğu başlık video captioning dediğimiz uygulama örneğini göstereceğiz.
+
+52
+00:20:37,695 --> 00:20:44,996
+Öncelikle de gösterebiliriz. Burada gördüğümüz tüm yapılarda aslında şuna dikkatinizi çekmek isterim.
+
+53
+00:20:46,644 --> 00:21:09,284
+Birden fazla girdi verdiğimiz yapı da bir output üretirken, tek girdi verdiğimizde de aynı şey söz konusu. Bir sonraki output'u veya üçüncü output'u üretirken ilk girdiden de veya ikinci girdiden de faydalanarak bir output üretiyor.
+
+54
+00:21:09,284 --> 00:21:14,284
+Yani geçmişe bakarak bir...
+
+55
+00:21:14,644 --> 00:21:25,564
+Sonuç üretiyor. Bu Recurrent Neural Network buradan geliyor ve tekrarlayan anlamı taşıyor.
+
+56
+00:21:25,564 --> 00:21:32,384
+Burada Man to Man'in bir başka örneğini de vermiş. Video Classification on Frame Level demiş.
+
+57
+00:21:33,443 --> 00:21:37,104
+Şimdi Recurrent Neural Network nedir?
+
+58
+00:21:37,587 --> 00:21:44,587
+Bir x girdisi var. Bundan bir y çıktısı üretirken şurada gördüğümüz bölümde
+
+59
+00:21:44,655 --> 00:21:47,135
+Hidden Layer içerisinde diyelim.
+
+60
+00:21:48,076 --> 00:21:52,996
+Ürettiği state'i kendi içerisine tekrar input olarak veriyor.
+
+61
+00:21:52,996 --> 00:22:00,375
+Bu tekrarlayan demek ve bu yapı Recurrent Neural Network ismini alıyor.
+
+62
+00:22:00,836 --> 00:22:03,115
+Böylece aslında şunu yapmış oluyoruz.
+
+63
+00:22:03,496 --> 00:22:08,655
+X'de arka arkaya gelen bir sayı dizisi olabilir.
+
+64
+00:22:09,275 --> 00:22:12,655
+Bu bir önceki durumda gelen...
+
+65
+00:22:12,655 --> 00:22:31,175
+İmputa bağlı ürettiği, hidden layer'ın ürettiği output'u ya da hidden layer'ın nöronunun ürettiği skoru kendi üzerinde bir sonraki girdiğiyle beraber kullanabileceği bir input haline getiriyor.
+
+66
+00:22:31,175 --> 00:22:40,175
+Bu recurrent neural network'leri açık haline bakacak olursak aslında şunu...
+
+67
+00:22:40,655 --> 00:22:52,315
+görebiliriz. Burada key idea için. RNN have an internal state that is updated as a sequence is processed diyor.
+
+68
+00:22:57,011 --> 00:23:06,751
+Internal State dediği State'i bir sonraki aşamada input olarak verdiğini belirtiyor.
+
+69
+00:23:07,271 --> 00:23:13,172
+Unrolled Recurrent Neural Network diye baktığımızda aslında yaptığı şey şu.
+
+70
+00:23:13,172 --> 00:23:16,172
+Az önce görmüş olduğumuz tek yapıyı...
+
+71
+00:23:16,756 --> 00:23:27,476
+Açarak bize ifade ediyor. Bunu açık hale getirdiğimizde aslında şunu görüyoruz. Burada tek bir X girişi vardı.
+
+72
+00:23:27,968 --> 00:23:33,388
+Ve bunun arka arkaya bu X girişinden aslında farklı inputlar geliyor.
+
+73
+00:23:34,088 --> 00:23:42,768
+Bunu biraz daha ardışıl formda nasıl çalıştığını anlayabileceğimiz açık hale getirip bakarsak diyor.
+
+74
+00:23:43,327 --> 00:23:46,768
+İkinci slide'da gördüğümüz formu elde ederiz.
+
+75
+00:23:46,768 --> 00:23:53,268
+Yani şunu söylüyor. Bir Recurrent Neural Network yapısının X inputu var.
+
+76
+00:23:53,779 --> 00:24:05,339
+İçeride bir Hidden Layer var. Bu Hidden Layer bir aktivasyon fonksiyonundan geçiyor ve y çıkışını üretiyor. Bu Hidden Layer'ın aldığı değeri...
+
+77
+00:24:06,099 --> 00:24:27,019
+X'den gelecek olan bir sonraki zaman da bir sonraki zaman akışı içerisindeki bir sonraki input için burada sol tarafta bir önceki input için üretmiş olduğu nöronun bu state'e de bir input olarak girdiğini gösteriyor.
+
+78
+00:24:31,892 --> 00:24:42,892
+T eşik bir anı, T eşik iki anı bir sonraki durum demek bu. Bir sonraki durum da bir önceki girdiğinin ürettiği...
+
+79
+00:24:44,884 --> 00:24:50,284
+Hidden Layer'da ürettiği değeri de buraya bir input olarak katmış oluyoruz.
+
+80
+00:24:50,284 --> 00:25:05,604
+Bu, bu şekilde devam ediyor. T eşit 1 anı, T eşit 2 anı, T eşit 3 anında gelen input içinde, bu arka arkaya gelen video frame'leri de olabilir, arka arkaya gelen kelimeler de olabilir.
+
+81
+00:25:06,264 --> 00:25:12,884
+Bir video frame olduğunu varsayalım. Önceki video frame'leri için ürettiği sonucu,
+
+82
+00:25:12,884 --> 00:25:19,443
+Bu da aslında bu frame'i değerlendirirken bir input olarak kullandığı anlamına geliyor.
+
+83
+00:25:19,988 --> 00:25:47,708
+Dolayısıyla aslında bir önceki şekilde kendi üzerine tekrarlayan yani ürettiği, hidden layer'ın ürettiği, aktivasyon fonksiyonunun ürettiği çıktığı tekrar bir input olarak alması demek daha açık haliyle bu formda slide'da gördüğümüz gibi arka arkaya gelen yeni inputlarla bir önceki state'in nasıl input olarak
+
+84
+00:25:47,988 --> 00:25:52,528
+Sonucu etki ettiğini göstermiş oluyor.
+
+85
+00:25:52,528 --> 00:25:53,807
+Burada
+
+86
+00:25:55,028 --> 00:26:04,587
+Recurrent Neural Network'lerdeki Hidden State Update'inin nasıl olduğunu ve hesaplamaların nasıl olduğunu ifade ediyor.
+
+87
+00:26:05,168 --> 00:26:12,888
+Şurada XT dediği Input Vector at some time step demiş.
+
+88
+00:26:13,188 --> 00:26:19,867
+Yani bu T anındaki X vektöründeki input'u gösteriyor.
+
+89
+00:26:22,932 --> 00:26:24,592
+Hidden Layer
+
+90
+00:26:24,592 --> 00:26:40,712
+t-1 anındaki yani bir önceki state'deki durumunu gösteriyor. Buna ya da değerini gösteriyor diyelim. Buna old state demiş, yeşille boyamış renkler bir anlam ifade ediyor.
+
+91
+00:26:52,592 --> 00:26:54,764
+Bir...
+
+92
+00:26:54,771 --> 00:27:05,692
+Bu fonksiyondan geçiriyor. Bu fonksiyonda bizim bildiğimiz işte bir W matrisi yani bir weight matrisiyle çarpması işlemi.
+
+93
+00:27:05,692 --> 00:27:22,652
+Ve bu işlemin sonucu HT dediğimiz New State'i ifade ediyor. HT eksi bir Old State. HT dediğimiz ise New State yani yeni state'i gösteriyor.
+
+94
+00:27:27,700 --> 00:27:30,340
+Peki output'u nasıl oluşturuyor?
+
+95
+00:27:30,340 --> 00:27:41,620
+Aslında bir önceki slide'da gördüğümüz hidden layer'daki new state'i temsil eden HT'yi,
+
+96
+00:27:42,340 --> 00:27:50,580
+burada gördüğümüz gibi bir WHT weight matrisiyle çarparak YT dediğimiz output'u üretiyor.
+
+97
+00:27:50,720 --> 00:27:55,140
+YT, T anındaki çıktığı bize gösteriyor.
+
+98
+00:27:58,675 --> 00:28:16,695
+O zaman burada X1 bu hani on roll edilmiş yani açılmış haliyle bir recurrent neural network inceleyecek olursak X1 girişi, burada bir yapay sinir ağı katmanı var.
+
+99
+00:28:16,695 --> 00:28:25,695
+Bunun bir önceki katmandan gelen bir state, old state değeri var. Buna H0 demiş.
+
+100
+00:28:26,675 --> 00:28:36,475
+X2 girişinin Y2 çıkısını ürettiği bölümdeki bir önceki state'den gelen inputuna H1 demiş.
+
+101
+00:28:37,375 --> 00:28:50,775
+Gördüğünüz üzere burada artık şu isimler yani Hidden Layer'ın ürettiği değeri bize eklemiş bu slide'da.
+
+102
+00:28:53,460 --> 00:28:57,940
+Şimdi biraz daha detaylı bakacak olursak.
+
+103
+00:28:58,220 --> 00:29:00,680
+Yani ilk olarak ne demiştik?
+
+104
+00:29:00,680 --> 00:29:04,539
+Bizim t state'inde bir x input'umuz var.
+
+105
+00:29:04,960 --> 00:29:13,099
+Old state dediğimiz bir önceki state'den gelen hidden layer'ın ürettiği old state değerimiz var.
+
+106
+00:29:13,480 --> 00:29:16,799
+Ve ht de current state'i gösteriyor.
+
+107
+00:29:17,279 --> 00:29:20,759
+Biz bunu hesaplamayı hedefliyoruz.
+
+108
+00:29:21,460 --> 00:29:23,240
+Bu yapı içerisinde.
+
+109
+00:29:25,079 --> 00:29:26,720
+Bu arada şunu da söylüyor.
+
+110
+00:29:26,720 --> 00:29:38,079
+W dediği matriz, the same function and the same set of parameters are used at every time step diyor.
+
+111
+00:29:38,544 --> 00:29:50,524
+Her zaman adımında aynı fonksiyonu ve aynı parametreleri, yani W matrisi değişmiyor diyor. Bu yine önemli bir nokta.
+
+112
+00:29:55,284 --> 00:30:05,524
+Bunu aktivasyon fonksiyonundan geçirmiş. Burada tanjant hiperbolik aktivasyon fonksiyonunu koymuş. Bunu atlayacağım. Çünkü biz tanjant hiperbolik yerine
+
+113
+00:30:05,935 --> 00:30:12,795
+Genelde Rectified Linear Unit kullanıyoruz. O yüzden bu slide'ı atlıyorum.
+
+114
+00:30:12,795 --> 00:30:21,895
+Şimdi burada güzel bir örnek var. Aslında bunun üzerinden size Recurrent Neural Networkleri anlatmak daha kolay olacak.
+
+115
+00:30:24,884 --> 00:30:44,003
+Lisans da hatırlarsınız belki, Computer Organization dersinde bir state diagram ve state machine kavramı anlatılır. Hatta bu başka derslerde de sanırım diskret matematikte falan da anlatılıyor.
+
+116
+00:30:44,003 --> 00:30:52,824
+Öyle bir örnek vermiş ve bunu gerçekleştirecek bir yapı kurgulamak istiyoruz diyor. Vanilla RNN demiş.
+
+117
+00:30:52,884 --> 00:30:57,084
+Burada Recurrent Neural Networkler için bir konkret ekzampıl diyor.
+
+118
+00:30:57,084 --> 00:31:00,983
+Ve bu örneğin amacı şu.
+
+119
+00:31:01,683 --> 00:31:08,543
+Manually creating a recurrent network for detecting repeated ones.
+
+120
+00:31:09,783 --> 00:31:13,884
+Arka arkaya gelen, tekrarlayan birileri bulabilen.
+
+121
+00:31:14,240 --> 00:31:31,799
+Bir Recurrent Neural Network yapısı tasarlayalım diyor. X girişini gösteriyor. Burada Recurrent Neural Network var. Burada da Y çıkısı var. O zaman X dediğimiz şey bir zaman serisi ve arka arkaya T eşit sıfır anında sıfır girdisi geliyor diyor.
+
+122
+00:31:42,240 --> 00:31:56,619
+Ve amacımız aslında arka arkaya gelen X girişinden arka arkaya gelen birilerin varlığını tespit etmek ve bu oluştuğunda Y al kutunda bunu göstermek.
+
+123
+00:31:56,619 --> 00:32:07,579
+Lütfen dikkat edin. X girdisi Y çıktısı için. X girdisi 0 ise Y 0'dır diyor. 1 ise 0'dır.
+
+124
+00:32:07,935 --> 00:32:24,096
+Sıfırsa sıfırdır. Birse sıfırdır. Burada tekrar bir bir geldiğinde, lütfen dikkat edin, bir önceki state'de de bir vardı. Arkasından ikinci bir geldiğinde, yani repeated once dediği durum oluştu.
+
+125
+00:32:24,511 --> 00:32:30,932
+Arka arkaya gelen birileri gördüğünde burada bir bir çıktısı üretti. Gördük mü?
+
+126
+00:32:30,932 --> 00:32:40,491
+İşte bu aslında tam olarak recurrent neural networklerin çalışma mantığını göstermek için güzel bir örnek.
+
+127
+00:32:40,971 --> 00:32:48,932
+Diyor ki bir önceki state'de ne olduğunu bilebilirsem ben ancak arka arkaya gelen bu birileri tanıyabilirim.
+
+128
+00:32:49,872 --> 00:32:52,432
+İşte burada RNN dediği şu arada.
+
+129
+00:32:52,511 --> 00:33:05,571
+Veriyi aktarırken aslında yaptığımız şey bir önceki state'deki durumu bir sonraki state'e bildirerek bu arka arkaya oluşan iki bir durumunu tespit edebilmemizi sağlayacak diyor.
+
+130
+00:33:05,571 --> 00:33:09,872
+O açıdan çok aydınlatıcı bir örnek olduğunu düşünüyorum.
+
+131
+00:33:10,672 --> 00:33:16,751
+Ve bunu güzel bir koda dökmüş nasıl yapıldığını tarif etmek için.
+
+132
+00:33:21,364 --> 00:33:30,504
+Yapımız aslında Many to Many Sequence Modeling Task kullanacağız diyor.
+
+133
+00:33:30,504 --> 00:33:36,183
+Ve burada bir xt girdisi var.
+
+134
+00:33:36,884 --> 00:33:39,963
+ht-1 dediği old state'imiz var.
+
+135
+00:33:40,423 --> 00:33:41,923
+Ve bu ikisinden bir.
+
+136
+00:33:42,324 --> 00:33:49,844
+New state üretiyoruz ve bu new state'e bakarak da bir y çıktısı üretiyoruz.
+
+137
+00:33:50,663 --> 00:33:57,804
+Diyor ki burada, how could we create an RNN to do this?
+
+138
+00:33:59,004 --> 00:34:03,104
+And what information should be captured in the hidden state?
+
+139
+00:34:09,940 --> 00:34:18,940
+Tutulması gereken bilgi nedir diye, ne olmalıdır diye soruyor. Bu herhalde siz de tahmin edersiniz ki...
+
+140
+00:34:21,427 --> 00:34:40,367
+Tutmamız gereken bilgi şu, ben burada şu gelen x girdisi için bir output üretirken bir önceki state'de bir olup olmadığı bilgisini yani old state'i bilmek isterim. Old state'de bir x girişinden bir gelmiş mi gelmemiş mi bunu bilmek isterim.
+
+141
+00:34:49,427 --> 00:34:53,827
+Bu bilgiyi tekrar input olarak veren bu structure olacak.
+
+142
+00:34:55,268 --> 00:34:57,547
+Burada da cevabını vermiş bu sorunun.
+
+143
+00:34:57,547 --> 00:35:00,907
+Previous input and current value for x.
+
+144
+00:35:01,280 --> 00:35:09,640
+Yani ben hem bir önceki durumu hem de mevcut X girişine bakarak bunu söyleyebilirim diyor.
+
+145
+00:35:09,640 --> 00:35:17,420
+Yani burada Hidden State'in görevinin ne olduğunu, neyi tutması gerektiğini söylüyordu.
+
+146
+00:35:18,000 --> 00:35:20,840
+Bunu bu şekilde cevaplamış olduk diyor.
+
+147
+00:35:29,280 --> 00:35:43,159
+Gördüğümüz Hidden State değeri oluşturmuş. Bu bir vektör olarak tanımlanmış. Şurada x girdisi de bir zaman serisi olarak vektör olarak veriliyor.
+
+148
+00:35:43,159 --> 00:35:52,579
+Ve bu Current, Previous ve One dediği 3 satırlık bir Column Vector olarak tanımlanıyor.
+
+149
+00:35:52,960 --> 00:36:06,960
+Bakın, ilk değeri bu vektörün current input'u gösterecek. İkinci satırı previous value'yu gösterecek.
+
+150
+00:36:07,060 --> 00:36:10,619
+X girişinden önceki gelen değer neydi?yi gösterecek.
+
+151
+00:36:11,260 --> 00:36:16,659
+Ve bu üç satırlık vektörün üçüncü satırı da daima bir olacak diyor.
+
+152
+00:36:16,659 --> 00:36:17,640
+Tamam.
+
+153
+00:36:18,387 --> 00:36:26,387
+Şehir bu. Böyle bir kalım vektör oluşturuyor. Ve sağda da lütfen dikkat edin. H0 dediği şey ise...
+
+154
+00:36:26,943 --> 00:36:39,003
+En başta, yani bu x girdisi ilk geldiğinde, ilk değeri aldığında bundan önceki Hidden State'in aldığı değer nedir bilmiyoruz.
+
+155
+00:36:39,623 --> 00:36:44,863
+Bunu Initialization Value ya da Initialization Vector gibi düşünün.
+
+156
+00:36:45,243 --> 00:36:53,063
+Başlangıcı bu Hidden State'in başlangıcı 0, 0, 1 olsun diyor.
+
+157
+00:36:53,063 --> 00:36:54,923
+Ve bu şekilde başlatıyor.
+
+158
+00:36:54,943 --> 00:37:13,283
+Sonra tabii ki bu döngü içerisinde burada gördüğümüz yapıya yani birinci satırı current, ikincisi previous ve son satırda bir olacak şekilde tutulacak. Ama başlangıçta böyle bir değerle başlayalım diyor.
+
+159
+00:37:21,748 --> 00:37:38,988
+Şurada gördüğümüz işlemleri, yani XT'yi bir WXH vektörüyle çarpacak. Bu WXH'ı önce burada tanımlıyor. Şurada bir WHH matrisi var, onu burada tanımlıyor.
+
+160
+00:37:41,972 --> 00:38:02,292
+Bunun dışında şurada WHY var. Yani Current State'i gösteren HT'li bir WHY ile çarpıp Rectified Linear Unit'ten geçirip YT'yi üretiyoruz.
+
+161
+00:38:09,664 --> 00:38:19,344
+X-Sequence dediğimiz arka arkaya işte X girişinden gelen sayıların gösterildiği bu sayı dizisi verilmiş.
+
+162
+00:38:21,523 --> 00:38:40,123
+HT Previews olarak yani Hidden State'in Previews Values'u 0, 0, 1 olarak alınacak demiştik. Bunu gösteriyor. Ve içeride de şu döngü içerisinde de bu işlemleri yapıyor. Fakat burada diyor ki Code is Missing Parts.
+
+163
+00:38:40,467 --> 00:39:02,807
+Bu kod tam değil, eksik bölümleri var ve tümünü şu linkten görebilirsiniz. Buradan gidip bu bölümde incelenebilir. Şöyle birazcık koda bakacak olursak, az önce belirttiğim gibi x girişini çarptığımız wxh şurada tanımlanmış.
+
+164
+00:39:08,148 --> 00:39:23,448
+Bu ht'yi hesaplarken kullandığımız çarpma işlemi, whh madresiyle old state'i gösteren ht-1'i çarpıyoruz demiştik.
+
+165
+00:39:23,448 --> 00:39:27,868
+İşte bu whh madresini burada gösteriyor.
+
+166
+00:39:33,619 --> 00:39:55,399
+Copy over current value from previous hidden state to be previous diyor. Yani burada yaptığı şey current value, copy over current value from previous hidden state to the previous, to be previous. Bir önceki hale getiriyor diyor.
+
+167
+00:40:00,000 --> 00:40:05,039
+gelen değeri tuttuğumuz göz bu.
+
+168
+00:40:05,639 --> 00:40:10,519
+ht-1'in ilk satırı current value'yu gösteriyordu.
+
+169
+00:40:10,519 --> 00:40:23,439
+Bunu bir sonraki state'de old state'i gösterecek şekle dönüştürüyoruz.
+
+170
+00:40:23,500 --> 00:40:25,139
+Nerede yazıyorduk onu? Şurada.
+
+171
+00:40:25,568 --> 00:40:35,068
+Current, haşt'nin birinci satırı Current'ı gösteriyor. İkincisi Preview'u gösteriyor. Üçüncüsü ise 1 olmalı demiştik.
+
+172
+00:40:36,847 --> 00:40:47,628
+Burada 1, 0, 0 ile çarptığında Current'ı Preview'a kaydırmış oluyorsunuz diyor.
+
+173
+00:40:49,907 --> 00:41:03,507
+Bu şekilde işlemleri arka arkaya yapıyoruz. Burada hemen paylaşımı durdurup sizde bu kodun tamamını açacağım. Ben bunu çalıştırdım.
+
+174
+00:41:12,659 --> 00:41:14,960
+Bulacağız. Şurada olması lazım.
+
+175
+00:41:28,820 --> 00:41:35,760
+İlk anda şunlar olduğu zaman iş yapmak çok zorlaşıyor. Evet, şurada. Tamamdır.
+
+176
+00:41:38,240 --> 00:41:40,220
+Burada çıkarsak olacak. Evet.
+
+177
+00:41:40,220 --> 00:41:52,300
+Kod bu. Orada tanımlı olan H0 Initial State değeri.
+
+178
+00:41:52,820 --> 00:41:58,380
+WXH, WHH, WYH
+
+179
+00:41:58,804 --> 00:42:26,224
+Bunlar tanımlıydı. Aynı şekilde verdik. X in dediği X girişine arka arkaya uygulanan sayı dizisi bu. T eşit sıfır, T eşit bir anı, iki anı, üç anı. Şurada arka arkaya gelen birler burada. Yani tam şurada bir Y çıktısının bir olması gerekiyor. Bunu da anlayabilmek için şu bir önceki state'de bir olduğunu görmesi gerekiyor.
+
+180
+00:42:26,804 --> 00:42:37,704
+Bu işlemleri ben bu verdiği sırada tanımlayıp çalıştırdığımda bu sonucu görebiliyorum.
+
+181
+00:42:38,923 --> 00:42:44,724
+Ne yapıyor? X girdisi burada verilmiş. Y çıktısı ise bir alt satırında.
+
+182
+00:42:45,215 --> 00:43:11,215
+Ve tam karşı karşıya gelmiş. Burada da görüyorsunuz ki arka arkaya gelen iki tane bir ve ikinci bir geldiğinde burada bir output bir üretmiş. Aynı şey şurada geçerli. Bir bir input geldiğinde şurada bir bir output üretmiş gibi. Bunları görebiliyorsunuz. Bu kodu oradan...
+
+183
+00:43:11,731 --> 00:43:18,532
+İndirip siz de çalıştırabilirsiniz bu akışı görmek için.
+
+184
+00:43:32,563 --> 00:43:33,664
+Light'a geçelim.
+
+185
+00:43:49,300 --> 00:44:01,640
+Sanıyorum. Ben bu örneğin Recurrent Neural Network yapısını anlatmak için iyi bir örnek olduğunu düşünüyorum. Gerçekten güzel seçilmiş bir örnek.
+
+186
+00:44:04,700 --> 00:44:16,520
+Old state'i current state içerisinde değerlendirme aşamasında nasıl kullandığını da görmüş olduk.
+
+187
+00:44:16,916 --> 00:44:27,456
+Burada tekrar yaptığı işlem adımlarını bir grafik üzerinden tarif ediyor. Bir x girdimiz var diyor.
+
+188
+00:44:27,456 --> 00:44:39,775
+Burada bir weight vektörle çarpıyoruz ama bir önceki state'i ya da old state dediğimiz state'i
+
+189
+00:44:39,795 --> 00:45:03,075
+Burada ikisini birlikte Current Input ile Alt State'i birlikte değerlendirip bir H1 çıktısı üretiyoruz. Bunun arkasından yeni gelen X2 girdisi ile H1'i birlikte değerlendiriyoruz ve bu iki girdiden yeni bir H2 üretiyoruz.
+
+190
+00:45:03,668 --> 00:45:28,927
+Yani bu yine unrode edilmiş, yani açılmış hali bu yapının. Aslında Structure'da böyle arka arkaya yazılmış hidden layer'lar yok. Siz de gördünüz, bir döngü içerisinde aslında aynı şeyi, modülü tekrar tekrar çağırarak işlem yapıyoruz. Kodda gördüğünüz gibi.
+
+191
+00:45:29,492 --> 00:45:48,112
+Bunu neden söyledim? Bu şu açıdan önemli. Bu aslında aynı döngünün içerisinde tekrar tekrar çağırarak çalıştırdığımız için sistemin biraz yavaş çalışmasına da neden oluyor diğer taraftan. Bu da önemli bir nokta.
+
+192
+00:45:48,563 --> 00:46:14,163
+Tüm akışı burada bir grafik üzerinde de göstermiş. Ve yine önemli bir nokta. Diyor ki, reuse the same weight matrix at every time step. Şurada kullandığımız W matrizi yani weight matrizi tüm inputlar için input değişiyor.
+
+193
+00:46:14,771 --> 00:46:19,871
+Alt-State değişiyor ama W matrisi değişmiyor diyor.
+
+194
+00:46:19,871 --> 00:46:27,871
+Ve bu çiftlerin her birini böyle ayrı ayrı bir çift olarak gösterdiğimizde de,
+
+195
+00:46:29,831 --> 00:46:37,411
+Many Input, Many Output yani Many to Many dediğimiz Structure'ı kullanmış oluyoruz diyor.
+
+196
+00:46:41,152 --> 00:46:57,492
+Çıktı katmanının bir loss değeri var. Burada L1, L2, L3 diye gösterilmiş. Daha sonra bu loss değerleri toplanarak bir ortalama loss hesaplanıyor. Bu şekilde işleyebiliyor.
+
+197
+00:46:57,492 --> 00:47:02,492
+Diğer bir çözüm başka bir mimari yapıda.
+
+198
+00:47:03,039 --> 00:47:28,659
+Many Input, One Output olabilirdi bu diyor. Bu durumda da yine aynı W matrisini kullanıyoruz. Tüm bu çarpma işlemlerinde. Fakat tek bir çıktı üretiyoruz. Y çıktısı Many Input, One Output modeli için verilmiş bir çizim.
+
+199
+00:47:30,708 --> 00:47:47,708
+Fakat dolaylı yoldan da olsa buradaki Y çıkışına aslında şu Old State'lerdeki tüm katmanlardan bir katkı olduğunu ifade ediyor.
+
+200
+00:47:49,876 --> 00:48:08,016
+Diğer bir mimari yapı, one to many olabilirdi. Başta anlattığımız yapılara örnek olarak. Yani one to many örneğini neyle ilişkilendirmiştik? Bir tane input image'imiz var. Bu input image için biz ne yapıyoruz?
+
+201
+00:48:10,420 --> 00:48:17,140
+Image Captioning yapıyoruz ve Sequence of Word yani arka arkaya bir kelime dizisi üretiyoruz.
+
+202
+00:48:17,140 --> 00:48:26,980
+İşte diyoruz ki resimde bir vazo var, vazonun içinde çiçek var, onun yanında kitaplar var falan gibi.
+
+203
+00:48:27,660 --> 00:48:36,880
+Bu arka arkaya ürettiğimiz kelimeler bizim burada gösterdiğimiz Y çıkışlarını gösteriyor, X input imici gösteriyor.
+
+204
+00:48:38,420 --> 00:48:43,120
+Neuronetwork'te aynı W matrisini kullanarak bu işi yapıyoruz diyor.
+
+205
+00:48:43,632 --> 00:48:59,892
+Peki bu durumda diğer input ne olacak? Yani sadece burada Hidden State ya da Preview State'den gelen Old State inputuyla neyi girdi alacağım? Bu boş mu kalacak?
+
+206
+00:48:59,892 --> 00:49:09,732
+Bunun içinde aslında güzel bir çözümü var. Zaten bu mimariyi birazdan gösterdiğim örnekle de ilişkilendireceksiniz.
+
+207
+00:49:11,632 --> 00:49:35,632
+Yerleştirmemiz gereken şey bir önceki state'in çıktısı olmalıdır diyor. Ya da sıfır olabilir diyor burada verdiği örnekte. Ama ideali şu, burada ürettiği Y1 çıktısını şurada input olarak vermek ve bundan bir...
+
+208
+00:49:36,884 --> 00:49:49,684
+Y2 üretmek, bu ürettiği Y2'yi burada tekrar input verip, Allstate ile bu input'u birleştirip bir Y3 üretmek şeklinde düşünülebilir.
+
+209
+00:49:50,584 --> 00:49:57,003
+Bu yapı bize neyi hatırlatıyor? Aslında bir kelimeden sonra hangi kelime gelir?
+
+210
+00:49:57,003 --> 00:50:03,164
+Bir kelimeyi biliyorsam arkasından gelecek olan kelimeyi ya da harfi bilmem gibi.
+
+211
+00:50:03,679 --> 00:50:27,959
+Doğal dil işlemeye doğru bağlanan bir yapı söz konusu. Bu yapı da diyor ki biz bir loss hesabı yapıyoruz ve bu kayıp fonksiyonunu hesaplarken tüm girdileri baştan sona verip hepsi üzerinden bir loss hesaplamak mümkün.
+
+212
+00:50:38,579 --> 00:50:53,320
+Bu kayıp fonksiyonu hesabından sonra hatanın geriye yayılımı işlemini yaparak tüm ağırlıklarda bir güncelleme yapılabilir.
+
+213
+00:50:53,700 --> 00:50:58,440
+Ama bu yapıyı biz aslında bölerek de yapabiliriz.
+
+214
+00:50:58,579 --> 00:51:04,260
+Yani tüm X girdisi az önce mesela verdiğimiz örnekte 20 tane input vardı.
+
+215
+00:51:04,260 --> 00:51:06,579
+Bu bir video sequence gibi düşünüyor.
+
+216
+00:51:06,579 --> 00:51:21,139
+Arka arkaya gelen 20 tane frame'i de verebilirsiniz veya bunu parçalayarak truncated dediği form, parçalayarak backpropagation through time dediği formda verebilirsiniz.
+
+217
+00:51:21,139 --> 00:51:30,539
+İlk parça için bu işlemi yaptık. Sonra arkasına ikinci parçayı ve üçüncü parçayı ekledik. Yani üçe bölerek bu bütünü.
+
+218
+00:51:32,244 --> 00:51:34,544
+Tamamlayabiliriz diyor.
+
+219
+00:51:37,108 --> 00:51:52,848
+Burada yine dil modellerine doğru geçiyor. Çünkü biz Image Captioning'den bahsettiğimizde bir giriş görüntüsü veriyoruz ve bu giriş görüntüsüyle ilgili bir kelime dizisi üretiyoruz.
+
+220
+00:51:52,848 --> 00:52:01,368
+O zaman doğal dil işleme tarafındaki dil modellerine doğru giriş yapmamız anlamına giriyor.
+
+221
+00:52:01,728 --> 00:52:04,108
+Burada güzel bir örnek vermiş.
+
+222
+00:52:05,108 --> 00:52:19,008
+Hello kelimesini almış. Harf harf bu sisteme bir input olarak veriyor ve input layer'ın ilk karakteri, input karakteri.
+
+223
+00:52:19,311 --> 00:52:45,151
+H olsun, işte hello yazısının bütün harflerine arka arkaya giriyor. Ve burada bakın dört satır var. Bu dört satırda her bir satır bir harfi binary olarak temsil ediyor diyor. Ve bir işte ilk satırın bir olması dört binary sayı var. Dört bitlik.
+
+224
+00:52:45,519 --> 00:53:02,359
+İlk satırı birse H harfini, ikinci satır birse E harfini, üçüncü satır birse L harfini ve hello iki tane L arka arkaya yine üçüncü satır bir şeklinde bir input olarak vermiş.
+
+225
+00:53:02,359 --> 00:53:07,399
+Burada example training sequence diyor ve hello.
+
+226
+00:53:09,076 --> 00:53:15,735
+kelimesinin harflerini input olarak veriyor. Bu arkadan bir hidden layer'a
+
+227
+00:53:15,760 --> 00:53:24,800
+ve oradan bir output layer'a ulaşıyor ve output layer'da aslında şunu tahmin etmeye çalışıyoruz.
+
+228
+00:53:24,800 --> 00:53:35,760
+h harfinden sonra hangi harf gelir? Şimdi burada dikkat. Birinci harfi biliyorum, ikinci harfi tahmin etmeye çalışıyorum.
+
+229
+00:53:38,963 --> 00:53:49,183
+İkinci harfin E olduğunu biliyorum. Aynı zamanda şuradan gelen bağlantıyla ilk harfin de H olduğunu biliyorum.
+
+230
+00:53:49,683 --> 00:53:57,243
+O yüzden artık iki tane harfi bilerek üçüncü harfin ne olacağını tahmin etmeye çalışıyorum.
+
+231
+00:53:57,243 --> 00:54:02,384
+Ve burada L harfi gelecek diyor üçüncü harf olarak.
+
+232
+00:54:03,315 --> 00:54:31,315
+Bu yapı işte tam olarak şurada vermiş olduğu bir önceki katmandan gelen old state bilgisi, bir önceki state'in durumunu bir sonraki state'e bildirdiği için aslında arka arkaya gelen iki kelimeyi bilerek üçüncü kelimeyi, üç kelimeyi bilerek dördüncü kelimeyi ya da harfi tahmin etme şeklinde çalışıyoruz.
+
+233
+00:54:31,315 --> 00:54:57,315
+Ama tabi burada birden fazla katman eklenebilir. Output Layer'ın çıktısına bir Softmax eklenerek bunlar yüzdelik şeklinde ifade edilebilir. Bunu zaten görüntüde de yapıyorduk. Aynı mantığı burada tekrar gösteriyor.
+
+234
+00:55:01,043 --> 00:55:10,244
+Ben böyle anlatıyorum da arkadaşlar sizler ne durumdasınız? Her şey yolunda mı? Bir sorayım bakayım.
+
+235
+00:55:12,244 --> 00:55:25,163
+Sınıfıma. Anlamadığınız yerler olursa slide numarası vererek bana hocam şurayı anlamadık diyebilirsiniz.
+
+236
+00:55:25,163 --> 00:55:28,183
+Dersde misiniz? Koptunuz mu?
+
+237
+00:55:29,204 --> 00:55:31,523
+Hocam teşekkürler. Her şey gayet güzel gidiyor.
+
+238
+00:55:32,043 --> 00:55:43,784
+Takip ediyor musunuz? Evet, [öğrenci]. Teşekkür ederim. Dinliyoruz hocam. Peki. Yani ben kendi kendine konuşmuyorum inşallah dedim. Evet, dinliyoruz.
+
+239
+00:55:43,784 --> 00:55:56,164
+Dediğim gibi lütfen anlaşılmayan bir şey varsa slide numarasını vererek bana soru sorabilirsiniz. Şurada slide numarası. Şu an 65. slide'dayım. Tamam mı?
+
+240
+00:55:59,123 --> 00:56:16,203
+Evet, şimdi bu verdiğim örnekte dediğim gibi harf veriyor ve bu harf için burada tabii bu hidden layer'ın previous state olmadığı için onu göstermemiş ama
+
+241
+00:56:16,688 --> 00:56:42,248
+Bunun için bir output üretiyor ve bu outputu bir softmax katmanından geçirerek lütfen dikkat edin 4 satır var. Bu 4 satırda en büyük yüzde 0,84 ile 2. satırda. Dolayısıyla 2. satırın 1 olması E demekti. Burada H inputunu verdiğinde outputta E'yi üretiyor bize.
+
+242
+00:56:42,867 --> 00:56:53,268
+Daha sonra arka arkaya harfler gelecek. H ve E geldiğinde bu katmanda yaptığımız işlem...
+
+243
+00:56:57,268 --> 00:57:21,147
+Aslında yaptığımız işlem, bir önceki state'de gelen harfi de biliyorum. Bunun H harfini biliyorum. Şurada Recurrent Neural Network ile bir Old State, Current State bağlantısı var. Bu bağlantı sayesinde ve mevcut gelen harfe de bakarak bir sonraki harfi L olarak tahmin ediyorum.
+
+244
+00:57:24,467 --> 00:57:39,807
+Bu sofmax katmanı çıktısı %50 olasılıklı 3. harf diyor. 3. harf dediğimiz harf de inputta L'yi gösteriyordu. Bunun L harfi olduğunu bize ifade ediyor.
+
+245
+00:57:40,275 --> 00:57:53,976
+Bu şekilde bir yapıdan bahsediyoruz. Yine doğal bil işlemeci arkadaşlar burada aslında şunu da hemen ekleyebilir.
+
+246
+00:57:56,884 --> 00:58:12,244
+Word Embedding dediğimiz Embeddingleri de bu yapıya ekleyebiliriz. Bakın burada artık ne yapmış? Embedding Layer dediği bir Layer ekleyerek bu şekilde ilerlemiş.
+
+247
+00:58:13,139 --> 00:58:29,780
+Güzel konular ve bizim tarafta yani Vision tarafında da özellikle Image Captioning için kullanabileceğimiz bir structure'ı bize tarif ediyor ve bunun nasıl kullanılacağını gösteriyor.
+
+248
+00:58:30,119 --> 00:58:36,519
+Şimdi şu bölümleri atlayacağım. Sadece örnek çıktıkların olduğu kısma geçeceğim.
+
+249
+00:58:41,139 --> 00:58:41,920
+Vermiş.
+
+250
+00:58:44,420 --> 00:58:53,800
+Trade-off da şunu söylüyor. Nedir bu modelin ya da mimarinin avantajları ve dezavantajları? Buna bakacak olursak.
+
+251
+00:58:53,800 --> 00:59:02,780
+RNN'ler için can process any length of input, no context length demiş.
+
+252
+00:59:05,780 --> 00:59:11,880
+Herhangi bir uzunlukta bir girdiği için işlem yapabilme kabiliyeti var diyor.
+
+253
+00:59:12,880 --> 00:59:20,900
+Computation for step T can use information from many steps back.
+
+254
+00:59:29,487 --> 00:59:41,307
+Önceki adımlardan gelen tüm bilgiyi kullanabilir diyor. Çünkü o bağlantıyı gördünüz sizde.
+
+255
+00:59:41,307 --> 00:59:48,067
+Model size does not increase for longer input.
+
+256
+00:59:51,795 --> 01:00:09,375
+Arka arkaya gelen T inputlarının uzunluğu ne olursa olsun aslında model size artmıyor, değişmiyor. Bu bir avantaj da diyebiliriz bazı açılardan. Az önce söylediğim gibi dezavantaj da olabilir.
+
+257
+01:00:16,724 --> 01:00:23,724
+Hesaplama birimini arka arkaya kullanmış oluyorsunuz.
+
+258
+01:00:23,724 --> 01:00:36,584
+The same rates are applied on every time step. So there is symmetry in how inputs are processed.
+
+259
+01:00:38,483 --> 01:00:57,383
+Yani bu da yine işlemi kolaylaştırıyor. Aynı weightlerin kullanılıyor olması bir avantaj olarak görünüyor. Peki RNN'lerin dezavantajı nedir diye bakacak olursak. Burada birinci sırada hemen şunu görüyoruz.
+
+260
+01:00:57,715 --> 01:01:13,195
+Recurrent Neural Network Matching, computation is slow demiş. Bu yapılar yavaş çalışıyor diyor. Aslında mimari tasarımdan kaynaklı biraz da.
+
+261
+01:01:15,507 --> 01:01:33,527
+Kodlama yapısını küçük tutmak için oluşturulmuş bir yapı var. Bu da aynı modülün arka arkaya tekrar tekrar kullanılmasını gerektiriyor ve bu da paralel proses yapmanın önüne geçiyor ve işlem hızını yavaşlatıyor.
+
+262
+01:01:35,367 --> 01:01:39,987
+Bu da dezavantajları olarak verilmiş.
+
+263
+01:01:39,987 --> 01:01:40,747
+Peki.
+
+264
+01:01:42,132 --> 01:01:48,491
+Burada Image Captioning ile ilgili bir örnek yapıyı tarif ediyor.
+
+265
+01:01:48,943 --> 01:01:56,344
+Bir giriş görüntüsü veriyoruz ve bu giriş görüntüsünü yine aslında bir CNN mimarisinden geçiriyoruz.
+
+266
+01:01:56,344 --> 01:02:05,443
+Ve bu CNN mimarisi bu giriş görüntüsünde işte Convolutional Neural Networkler üzerinden feature ekstrat ediyor.
+
+267
+01:02:05,923 --> 01:02:08,183
+Ve bu featurelerle biz ne yapıyoruz?
+
+268
+01:02:08,344 --> 01:02:10,344
+Flatten edilmiş bir...
+
+269
+01:02:13,684 --> 01:02:33,583
+Fully Connected Layer Input'u oluşturuyoruz. Arka arkaya burada yine bazı Fully Connected katmanlar var. Bu katmanın sonunda elde ettiği vektörü Recurrent Neural Network'i input olarak veriyor.
+
+270
+01:02:41,599 --> 01:03:07,019
+Buradaki nörona input olarak bağlamış. Ve bu nöronun çıktısı strov yani hasır şapka tahmini yapacak. İlk kelimeyi buluyor. Daha sonra strovu bir sonraki state de input olarak alıyor.
+
+271
+01:03:07,519 --> 01:03:15,280
+Recurrent Neural Network'ün Previous State'den gelen inputu da buradan sol taraftan geldi.
+
+272
+01:03:15,280 --> 01:03:25,360
+Yani ben Stroke'u biliyorum. Aynı zamanda şu Convolutional Neural Network'ten gelen bilgi de yine bende var.
+
+273
+01:03:25,980 --> 01:03:31,280
+Ve bu bilgiyi birleştirerek hat kelimesini buluyorum.
+
+274
+01:03:32,280 --> 01:03:32,719
+Gibi.
+
+275
+01:03:33,072 --> 01:03:44,152
+Burada hati input olarak veriyor ve bir end yani ben bu caption'ı tamamladım anlamında bir sonuç üretiyor.
+
+276
+01:03:45,072 --> 01:03:54,911
+Burada değişik örnekler var. İşte bir test imici vermiş. Bunu bir convolutional neural network'ten geçiriyor. Bakın imici aldık.
+
+277
+01:03:55,184 --> 01:04:18,003
+İki katman convolution'ın max pooling işleminden geçti. Tekrar aynı işlemler arka arkaya yapıldı. Şurada tek fark, lütfen dikkat, diyor ki en sonunda hani biz ImageNet'te bin tane sınıf için output üretiyorduk. Bu iki katmanı dışarıda bırak.
+
+278
+01:04:22,931 --> 01:04:44,791
+Feature Vektörü al. Bir Recurrent Neural Network'e input olarak bağla. Bu Recurrent Neural Network'ün Previous State'i gibi input olarak buradan var. Şurada Start başlatıyorsunuz.
+
+279
+01:04:45,300 --> 01:05:08,320
+Ve ilk y0 çıktısı birinci kelime olacak diyor. Birinci kelime straw, yine hasır dedi mesela. Ve straw'u input olarak aldık. Şurada da previous state'den gelen yine bir bilgiyle bunu bu katmanda birleştirdim.
+
+280
+01:05:11,092 --> 01:05:31,792
+hat üretti bana. hat'i bir sonraki katmanın input'u aldım. Yine bir önceki state'den, previous state'den gelen bilgi var. Ve bunlar birleştirildi. AND token'ını oluşturdu diyor.
+
+281
+01:05:32,340 --> 01:05:38,740
+Bu şekilde çalışan bir mimari yapı ve burada değişik örnekler sunulmuş.
+
+282
+01:05:47,180 --> 01:05:57,020
+Doğru bir şey. Yerde duran bir valizin içerisinde oturan bir kedi diyor. Oldukça başarılı bir.
+
+283
+01:05:57,619 --> 01:06:15,159
+Image Caption'in çalışması. A cat is sitting on a tree branch. Ağacın bu dalında oturan bir kedi demiş. A dog is running in the grass with a frisbee.
+
+284
+01:06:16,244 --> 01:06:26,643
+Oldukça başarılı. Tabi burada bu modelleri train etmek için oldukça büyük bir veri setiyle çalışıyorsunuz.
+
+285
+01:06:26,764 --> 01:06:36,023
+Ve bu veri setiyle train ettiğiniz model artık görmediği test örnekleri için de bu tahminleri yapabilir hale geliyor.
+
+286
+01:06:41,619 --> 01:06:43,219
+Hocam ben bir şey sorabilir miyim?
+
+287
+01:06:44,440 --> 01:06:44,900
+Buyurun.
+
+288
+01:06:46,659 --> 01:06:56,079
+87. sayfada örneğin iki tane alt tutumuz vardı ya. Mesela üç tane alt tut yapabiliyor muyuz bunu? Kendimiz mi beliriyoruz yoksa algoritma bunu kendisi mi belirliyor? Nasıl oluyor?
+
+289
+01:06:57,360 --> 01:06:59,420
+Mesela şapkanın rengini de söyleyebilirdi örneğin.
+
+290
+01:07:03,420 --> 01:07:04,059
+Aslında...
+
+291
+01:07:04,148 --> 01:07:29,228
+Bu aşamada bulabildiklerini getiriyor diye biliyorum. Ondan çok emin değilim ama bulabildiklerini getiriyor ve artık başka bir şey üretemiyorsa orada sonlandırıyor. Yani burada sen bir uzunluk tanımlamıyorsun. Başka feature çıkartamadığı için mesela burada diyebilirdik ki deniz kenarında falan değil mi? Arkadan deniz görünüyor mesela.
+
+292
+01:07:29,728 --> 01:07:31,807
+Ama böyle bir şey eklememiş.
+
+293
+01:07:32,288 --> 01:07:33,788
+3 tane artı türetmiş.
+
+294
+01:07:34,420 --> 01:07:40,400
+Doğruluğunu nasıl test ediyor o zaman? Diyelim ki ben orada doğruluğunu test ederken şapkanın rengini de yazdım. Ya da başka bir şey yazdım.
+
+295
+01:07:40,780 --> 01:07:54,420
+Güzel, çok güzel bir soru. Teşekkür ediyorum. Aslında her resmin böyle yazılmış metinleri var. Yani şu test görüntüsü için a cat is sitting on a tree branch diyor ya, bu ürettiği output'u gösteriyor.
+
+296
+01:07:54,420 --> 01:08:01,420
+Ama bu resmi 10 kişiye gösteriyorlar ve 10 kişiye diyorlar ki bu resimle ilgili bir cümle yazsan ne yazardın?
+
+297
+01:08:02,675 --> 01:08:22,175
+Anlatabiliyor muyum? Bu 10 kişinin yazdığı cümlelerde bizim modelimizin ürettiği cümleyi karşılaştırıp ne kadar tutarlı, kaç kelime buldu, örtüştü ve bunlar üzerinden bir skor hesaplıyoruz.
+
+298
+01:08:22,836 --> 01:08:43,676
+Güzel bir soru. Yani şöyle düşün. Aslında bu fotoğrafa bakarak yorum yazan kişi varsayalım ki 10 tane kelime yazdı. Ağacın kabuğundan, yaprağın rengine, çiçeğine kadar şeyler yazdı. Ama biz sadece bunun 5 tanesini bulduk.
+
+299
+01:08:43,904 --> 01:08:51,043
+O zaman bu örtüşen 5 tane üzerinden bir puan alıyorsun. Diyorsun ki %50 buldum. Anlatabildim mi?
+
+300
+01:08:51,043 --> 01:09:03,604
+Yani burada bir başarı kriteri var tabii ki. O başarı kriterleri, tanımlı başarı kriterleri doğal dil işleme dersinde daha detaylı görürsünüz.
+
+301
+01:09:04,203 --> 01:09:11,244
+Meteor vardı, birkaç farklı metrik daha vardı bu şekilde. Bunları karşılaştırıp puanlayabilen.
+
+302
+01:09:12,564 --> 01:09:14,064
+Anladım hocam, teşekkür ederim.
+
+303
+01:09:14,463 --> 01:09:15,224
+Rica ederim.
+
+304
+01:09:16,943 --> 01:09:23,644
+Evet, yani örnekler oldukça başarılı ama tabii ki her şey bu kadar her zaman başarılı diyor.
+
+305
+01:09:23,824 --> 01:09:30,084
+Değil, burada da diyor ki, failure cases diyor. Yani başarısız olduğu case'ler de var.
+
+306
+01:09:30,703 --> 01:09:36,984
+Buradaki ilk örnekte, a woman is holding a cat in her hand demiş.
+
+307
+01:09:37,503 --> 01:09:53,804
+Yani kadının elinde bir kedi tuttuğunu söylüyor. Belki işte kadının giydiği kürk orada bir kedi olarak algılanmasına sebep oluyor. Bu mesela yanlış bir tahmin.
+
+308
+01:10:00,000 --> 01:10:22,100
+Örtüşmeyle sizin bulduğunuz kelimeler arasında örtüşmeye bakılıyor. Örtüşmeye uymayan, sizin fazladan bulduğunuz, mesela burada fazladan bulduğu ket kelimesi içinde bir ceza puanı var. Yani sadece örtüşenlere bakmıyor, örtüşmeyen, senin fazladan bulduğun içinde bir ceza puanı üretiyor.
+
+309
+01:10:23,028 --> 01:10:38,048
+İşte burada mesela yine yanlış bir örnek. A person holding a computer mouse on a desk demiş. Elinde cep telefonu tutuyor aslında. Yanlış tahmin yapmış.
+
+310
+01:10:46,131 --> 01:10:56,811
+Topuğu fırlatmıyor, muhtemelen topuğu tutmaya çalışıyor gibi başarısız örnekleri de göstermiş.
+
+311
+01:10:58,871 --> 01:11:05,231
+Ve yine bu çalışmaların bir diğer örneği olarak Visual Question Answering demiş.
+
+312
+01:11:06,291 --> 01:11:12,631
+Soru soruyorsunuz, bu soruya cevap üretebiliyorsunuz gibi örnekler var.
+
+313
+01:11:13,231 --> 01:11:32,731
+Burada aşağıda verilmiş olan yeşil doğru cevabı, kırmızı ise yanlışları gösteriyor. Bunlar çok yeni çalışmalar değil aslında. Aşağıda da bunların şeyleri verilmiş. TVPR'da 2016'da sunulmuş bir çalışma diyor.
+
+314
+01:11:35,231 --> 01:11:39,692
+Visual Dialog, Conversation About Images.
+
+315
+01:11:40,692 --> 01:11:47,692
+Resimle ilgili size bilgisayar cevap veriyor. Sorular soruyorsunuz yine.
+
+316
+01:11:48,471 --> 01:11:51,551
+Böyle ilginç örnekleri var.
+
+317
+01:11:54,592 --> 01:11:57,592
+Ve olayı RNN Varyants demiş.
+
+318
+01:11:58,256 --> 01:12:16,256
+LSTM'lere doğru götürüyor. LSTM aslında Long Short Term Memory kavramı Neural Competition dergisinde 1997 yılında yapılan bir çalışmayla ilk olarak sunuldu diyor.
+
+319
+01:12:16,256 --> 01:12:26,216
+Ve bu çalışmaların aslında bir ucu az önce de söylediğim gibi doğal dil işlemeye ve bu büyük dil modellerine.
+
+320
+01:12:26,256 --> 01:12:41,115
+Doğru gidiyor. Bundan sonrasında ben daha fazla girmeyeceğim bu şeye, elestiyem konusuna. Dediğim gibi bugün zaten kısa bir ders yapacağımı söylemiştim.
+
+321
+01:12:41,115 --> 01:12:53,355
+Umarım aklımızda biraz bu RNN mimarisinin ne olduğu, nasıl çalıştığıyla ilgili bir fikir olmuştur diye.
+
+322
+01:12:53,876 --> 01:12:54,876
+Ümit ediyorum.
+
+323
+01:12:56,876 --> 01:12:58,876
+Güzel bir...
+
+324
+01:12:59,667 --> 01:13:15,247
+Akış ve gerçekten şu anda kompütür vizyonu tek başına kullanmak değil, bu şekilde doğal dil işlemeyle birleştirerek bunu metne dökmek en çok istenen çalışmaların başında geliyor.
+
+325
+01:13:16,047 --> 01:13:19,167
+Sağlıkla ilgili yaptığımız çalışmalarda da öyle.
+
+326
+01:13:19,167 --> 01:13:27,667
+Mesela radyologlar bizden artık şunu bekliyorlar. Ben bir tomografi görüntüsünü verdiğimde sadece tomografi görüntüsü...
+
+327
+01:13:27,667 --> 01:13:43,467
+Üniversitesinin üzerinde lezyon olan bölgeleri işaretleyip bırakmayayım. Radyoluğun yazdığı raporu yazabilen bir yapay zeka modeli üretebilirim. Bunu istiyor artık sektör.
+
+328
+01:13:43,467 --> 01:13:49,467
+Dolayısıyla biz Computer Vision tarafında yaptığımız işi...
+
+329
+01:13:49,876 --> 01:14:13,456
+Doğal dil işleme ile metne dökmek zorundayız ve doğal dil işleme çalışan arkadaşlarla birlikte çalışmalıyız. Bu iki alanı kaynaştırmak gerektiği kanaatindeyim. Bu haftalık benim söyleyeceklerim bu kadar. Bir hafta, bir saatlik bir blog ders gibi yapmış oldum.
+
+330
+01:14:14,131 --> 01:14:22,791
+Tekrar soru sormak isterseniz eğer sorabilirsiniz. Sizi dinliyorum.
+
+331
+01:14:26,355 --> 01:14:33,036
+Ters ışık olduğu için böyle çok karanlık bir şey oluyor ama arkadan, pencereden ışık geliyor.
+
+332
+01:14:34,475 --> 01:14:34,695
+Evet.
+
+333
+01:14:35,876 --> 01:14:40,495
+Derste 31, 30 kişi olmuş. Güzel. Evet.
+
+334
+01:14:46,260 --> 01:14:50,440
+Peki, yorum yapan yok, soru soran yok.
+
+335
+01:14:55,300 --> 01:15:05,940
+Pekala, dersi kapatacağım. Çıkmadan önce bir ellerinizi göreyim bakayım. Kimler beni dinliyormuş sayayım ben de.
+
+336
+01:15:07,280 --> 01:15:09,560
+Evet, 14 kişi el kaldırdı.
+
+337
+01:15:11,188 --> 01:15:29,007
+Derste 31 kişi var. 18, 19, 20 kişi el kaldırdı. 3'te ikisi burada, 3'te biri yok sınıfın. Evet, 22 kişi olduk. Güzel, peki.
+
+338
+01:15:29,908 --> 01:15:52,668
+Teşekkür ediyorum arkadaşlar. Böyle online yapmak sanırım oldukça pratik oluyor. Haftaya dediğim gibi güzel bir ders olacak. Mutlaka katılın. Detection ve segmentation konularını yeni doktora mezunumuz bir arkadaşımıza anlatacak. Haftaya görüşmek üzere. Hoşçakalın.
